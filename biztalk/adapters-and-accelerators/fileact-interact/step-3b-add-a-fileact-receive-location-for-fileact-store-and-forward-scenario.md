@@ -1,0 +1,83 @@
+---
+title: "手順 3 b: FILEACT の受信場所が FileAct ストア アンド フォワードのシナリオの追加 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 0f30bb7d-1efb-4350-8809-be35f5634ea0
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 2c717d23886860363ca9c94d1eec79195f873fff
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-store-and-forward-scenario"></a><span data-ttu-id="820f3-102">手順 3 b: FILEACT の受信場所が FileAct ストア アンド フォワードのシナリオを追加</span><span class="sxs-lookup"><span data-stu-id="820f3-102">Step 3B: Add a FILEACT Receive Location for the FileAct Store and Forward Scenario</span></span>
+<span data-ttu-id="820f3-103">この手順を開始する前に行う必要があります[手順 3A: FileAct ストア アンド フォワードのシナリオのファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="820f3-103">Before you begin this step, you must complete [Step 3A: Add a FILE Receive Location for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md).</span></span>  
+  
+### <a name="to-add-an-fileact-receive-location"></a><span data-ttu-id="820f3-104">FILEACT、受信場所を追加するには</span><span class="sxs-lookup"><span data-stu-id="820f3-104">To add an FILEACT receive location</span></span>  
+  
+1.  <span data-ttu-id="820f3-105">開始**BizTalk Server 管理**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-105">Start **BizTalk Server Administration**.</span></span>  
+  
+2.  <span data-ttu-id="820f3-106">コンソール ツリーで、BizTalk グループを展開し、受信ポートを作成する BizTalk アプリケーションの順に展開します。</span><span class="sxs-lookup"><span data-stu-id="820f3-106">In the console tree, expand the BizTalk group, and then expand the BizTalk application for which you want to create a receive port.</span></span>  
+  
+3.  <span data-ttu-id="820f3-107">右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート。**</span><span class="sxs-lookup"><span data-stu-id="820f3-107">Right-click **Receive Ports**, point to **New**, and then click **One-way Receive Port.**</span></span>  
+  
+4.  <span data-ttu-id="820f3-108">**受信ポートのプロパティ**ウィンドウで、受信ポート名 Tutorial_FA_HandleRequestOneWay_SnF です。</span><span class="sxs-lookup"><span data-stu-id="820f3-108">In the **Receive Port Properties** window, name the receive port, Tutorial_FA_HandleRequestOneWay_SnF.</span></span>  
+  
+5.  <span data-ttu-id="820f3-109">**受信ポートのプロパティ** ウィンドウで、**受信場所** タブで、をクリックして**新規**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-109">In the **Receive Port Properties** window, on the **Receive Locations** tab, click **New**.</span></span>  
+  
+6.  <span data-ttu-id="820f3-110">**受信場所のプロパティ**ウィンドウで、**全般** タブから、**トランスポートの種類**ドロップダウン リストで、 **FILEACT**とをクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-110">In the **Receive Location Properties** window, on the **General** tab, from the **Transport type** drop-down list, select **FILEACT**, and then click **Configure**.</span></span>  
+  
+7.  <span data-ttu-id="820f3-111">**FILEACT トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="820f3-111">In the **FILEACT Transport Properties** dialog box, do the following:</span></span>  
+  
+    |<span data-ttu-id="820f3-112">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="820f3-112">**Use this**</span></span>|<span data-ttu-id="820f3-113">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="820f3-113">**To do this**</span></span>|  
+    |------------------|--------------------|  
+    |<span data-ttu-id="820f3-114">**Password**</span><span class="sxs-lookup"><span data-stu-id="820f3-114">**Password**</span></span>|<span data-ttu-id="820f3-115">SAG への接続に使用するパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="820f3-115">Type the password you use to connect to SAG.</span></span> <span data-ttu-id="820f3-116">詳細については、SAG のヘルプを参照してください。</span><span class="sxs-lookup"><span data-stu-id="820f3-116">See SAG Help for more information.</span></span>|  
+    |<span data-ttu-id="820f3-117">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="820f3-117">**User name**</span></span>|<span data-ttu-id="820f3-118">SAG への接続に使用するユーザー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="820f3-118">Type the user name you use to connect to SAG.</span></span>|  
+    |<span data-ttu-id="820f3-119">**アプリケーション名**</span><span class="sxs-lookup"><span data-stu-id="820f3-119">**Application name**</span></span>|<span data-ttu-id="820f3-120">サーバーを入力\<アプリケーション インターフェイス名 >、SAG のボックス ルーティング セット。</span><span class="sxs-lookup"><span data-stu-id="820f3-120">Type the Server \<Application Interface Name> for the SAG box routing set.</span></span>|  
+    |<span data-ttu-id="820f3-121">**暗号化モード**</span><span class="sxs-lookup"><span data-stu-id="820f3-121">**Crypto Mode**</span></span>|<span data-ttu-id="820f3-122">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-122">From the drop-down list, select **Advanced**.</span></span>|  
+    |<span data-ttu-id="820f3-123">**FACrypto モード**</span><span class="sxs-lookup"><span data-stu-id="820f3-123">**FACrypto Mode**</span></span>|<span data-ttu-id="820f3-124">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-124">From the drop-down list, select **Advanced**.</span></span>|  
+    |<span data-ttu-id="820f3-125">**し**</span><span class="sxs-lookup"><span data-stu-id="820f3-125">**LogMessages**</span></span>|<span data-ttu-id="820f3-126">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-126">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="820f3-127">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="820f3-127">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
+    |<span data-ttu-id="820f3-128">**MemberRef**</span><span class="sxs-lookup"><span data-stu-id="820f3-128">**MemberRef**</span></span>|<span data-ttu-id="820f3-129">ドロップダウン リストから選択**ResponsePayload**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-129">From the drop-down list, select **ResponsePayload**.</span></span>|  
+    |<span data-ttu-id="820f3-130">**否認不可インジケーター**</span><span class="sxs-lookup"><span data-stu-id="820f3-130">**Non-Repudiation Indicator**</span></span>|<span data-ttu-id="820f3-131">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-131">From the drop-down list, select **FALSE**.</span></span>|  
+    |<span data-ttu-id="820f3-132">**応答側**</span><span class="sxs-lookup"><span data-stu-id="820f3-132">**Responder**</span></span>|<span data-ttu-id="820f3-133">適切な入力\<レスポンダー > SWIFT でのプロビジョニングに基づく文字列。</span><span class="sxs-lookup"><span data-stu-id="820f3-133">Type the appropriate \<Responder> string, based on your provisioning with SWIFT.</span></span>|  
+    |<span data-ttu-id="820f3-134">**ResponseCrypto**</span><span class="sxs-lookup"><span data-stu-id="820f3-134">**ResponseCrypto**</span></span>|<span data-ttu-id="820f3-135">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-135">From the drop-down list, select **FALSE**.</span></span>|  
+    |<span data-ttu-id="820f3-136">**受信確認のインジケーター**</span><span class="sxs-lookup"><span data-stu-id="820f3-136">**Acknowledgement Indicator**</span></span>|<span data-ttu-id="820f3-137">ドロップダウン リストから選択**ResponsePayload**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-137">From the drop-down list, select **ResponsePayload**.</span></span>|  
+    |<span data-ttu-id="820f3-138">**FileCompression**</span><span class="sxs-lookup"><span data-stu-id="820f3-138">**FileCompression**</span></span>|<span data-ttu-id="820f3-139">ドロップダウン リストから [なし] を選択します。</span><span class="sxs-lookup"><span data-stu-id="820f3-139">From the drop-down list, select None.</span></span>|  
+    |<span data-ttu-id="820f3-140">**PhysicalFolderName**</span><span class="sxs-lookup"><span data-stu-id="820f3-140">**PhysicalFolderName**</span></span>|<span data-ttu-id="820f3-141">サーバー上のフォルダーの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="820f3-141">Type the name of the folder on the server.</span></span> <span data-ttu-id="820f3-142">たとえば、C:\Fileact\ServerLocation です。</span><span class="sxs-lookup"><span data-stu-id="820f3-142">For example, C:\Fileact\ServerLocation.</span></span>|  
+    |<span data-ttu-id="820f3-143">**SubscribeFileEvents**</span><span class="sxs-lookup"><span data-stu-id="820f3-143">**SubscribeFileEvents**</span></span>|<span data-ttu-id="820f3-144">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-144">From the drop-down list, select **FALSE**.</span></span>|  
+    |<span data-ttu-id="820f3-145">**TransferAnswer**</span><span class="sxs-lookup"><span data-stu-id="820f3-145">**TransferAnswer**</span></span>|<span data-ttu-id="820f3-146">ドロップダウン リストから選択**Accepted**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-146">From the drop-down list, select **Accepted**.</span></span>|  
+    |<span data-ttu-id="820f3-147">**AllFileEvents**</span><span class="sxs-lookup"><span data-stu-id="820f3-147">**AllFileEvents**</span></span>|<span data-ttu-id="820f3-148">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-148">From the drop-down list, select **TRUE**.</span></span>|  
+    |<span data-ttu-id="820f3-149">**イベントのエンドポイント**</span><span class="sxs-lookup"><span data-stu-id="820f3-149">**Event end-point**</span></span>|<span data-ttu-id="820f3-150">適切な SAG エンドポイントを入力します。</span><span class="sxs-lookup"><span data-stu-id="820f3-150">Type the appropriate SAG end-point.</span></span>|  
+    |<span data-ttu-id="820f3-151">**FullFileStatus**</span><span class="sxs-lookup"><span data-stu-id="820f3-151">**FullFileStatus**</span></span>|<span data-ttu-id="820f3-152">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-152">From the drop-down list, select **TRUE**.</span></span>|  
+    |<span data-ttu-id="820f3-153">**Timeout**</span><span class="sxs-lookup"><span data-stu-id="820f3-153">**Timeout**</span></span>|<span data-ttu-id="820f3-154">適切なタイムアウトが発生するまでの秒数を入力します。</span><span class="sxs-lookup"><span data-stu-id="820f3-154">Type an appropriate number of seconds before timeout should occur.</span></span>|  
+    |<span data-ttu-id="820f3-155">**キューを取得します。**</span><span class="sxs-lookup"><span data-stu-id="820f3-155">**Acquire queue**</span></span>|<span data-ttu-id="820f3-156">SWIFT でのプロビジョニングに基づく、キュー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="820f3-156">Type the queue name, based on your provisioning with SWIFT.</span></span>|  
+    |<span data-ttu-id="820f3-157">**ForceAcquire**</span><span class="sxs-lookup"><span data-stu-id="820f3-157">**ForceAcquire**</span></span>|<span data-ttu-id="820f3-158">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-158">From the drop-down list, select **TRUE**.</span></span>|  
+    |<span data-ttu-id="820f3-159">**Order by**</span><span class="sxs-lookup"><span data-stu-id="820f3-159">**Order by**</span></span>|<span data-ttu-id="820f3-160">ドロップダウン リストから選択**FileAct**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-160">From the drop-down list, select **FileAct**.</span></span>|  
+    |<span data-ttu-id="820f3-161">**プッシュ セッション**</span><span class="sxs-lookup"><span data-stu-id="820f3-161">**Push session**</span></span>|<span data-ttu-id="820f3-162">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-162">From the drop-down list, select **TRUE**.</span></span>|  
+    |<span data-ttu-id="820f3-163">**回復モード**</span><span class="sxs-lookup"><span data-stu-id="820f3-163">**Recovery mode**</span></span>|<span data-ttu-id="820f3-164">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-164">From the drop-down list, select **FALSE**.</span></span>|  
+    |<span data-ttu-id="820f3-165">**SNL エンドポイント**</span><span class="sxs-lookup"><span data-stu-id="820f3-165">**SNL end-point**</span></span>|<span data-ttu-id="820f3-166">SAG ルーティング セットの適切なエンドポイントを入力します。</span><span class="sxs-lookup"><span data-stu-id="820f3-166">Type the appropriate end-point for the SAG routing set.</span></span> <span data-ttu-id="820f3-167">この値は、SAG で構成されている SnL エンドポイントと一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="820f3-167">This value should match the SnL endpoint you configured in SAG.</span></span>|  
+  
+8.  <span data-ttu-id="820f3-168">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="820f3-168">Click **OK**.</span></span>  
+  
+9. <span data-ttu-id="820f3-169">**受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="820f3-169">In the **Receive Location Properties** window, on the **General** tab, do the following:</span></span>  
+  
+    |<span data-ttu-id="820f3-170">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="820f3-170">**Use this**</span></span>|<span data-ttu-id="820f3-171">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="820f3-171">**To do this**</span></span>|  
+    |------------------|--------------------|  
+    |<span data-ttu-id="820f3-172">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="820f3-172">**Receive handler**</span></span>|<span data-ttu-id="820f3-173">ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-173">From the drop-down list, select **BizTalkServerIsolatedHost**.</span></span>|  
+    |<span data-ttu-id="820f3-174">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="820f3-174">**Receive pipeline**</span></span>|<span data-ttu-id="820f3-175">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="820f3-175">From the drop-down list, select **XMLReceive**.</span></span>|  
+  
+10. <span data-ttu-id="820f3-176">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="820f3-176">Click **OK**.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="820f3-177">参照</span><span class="sxs-lookup"><span data-stu-id="820f3-177">See Also</span></span>  
+ <span data-ttu-id="820f3-178">[手順 3: 送信ポートを作成し、FileAct ストア アンド フォワードのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md) </span><span class="sxs-lookup"><span data-stu-id="820f3-178">[Step 3: Create Send Ports and Receive Ports for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md) </span></span>  
+ <span data-ttu-id="820f3-179">[手順 3: ファイルの受信場所が FileAct ストア アンド フォワードのシナリオを追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="820f3-179">[Step 3A: Add a FILE Receive Location for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md) </span></span>  
+ <span data-ttu-id="820f3-180">[手順 3 C: Sw:HandleFileRequest と Sw:HandleSnFRequest FileAct ストア アンド フォワードのシナリオについてメッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md) </span><span class="sxs-lookup"><span data-stu-id="820f3-180">[Step 3C: Add a FILE Send Port to Capture the Sw:HandleFileRequest and Sw:HandleSnFRequest Messages for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md) </span></span>  
+ [<span data-ttu-id="820f3-181">ステップ 3 D: FileAct ストア アンド フォワードのシナリオの FILEACT 送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="820f3-181">Step 3D: Add a FILEACT Send Port for the FileAct Store and Forward Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)

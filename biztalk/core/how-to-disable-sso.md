@@ -1,0 +1,51 @@
+---
+title: "SSO を無効にする方法 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- disabling, SSO
+- SSO, disabling
+- managing [SSO], disabling
+ms.assetid: 0fe4f87a-d7c2-4af6-afee-1065bc4a5285
+caps.latest.revision: "12"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 5c8069ffb291b64d832a1d3ce483e7ab09be655f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-disable-sso"></a><span data-ttu-id="cec99-102">SSO を無効にする方法</span><span class="sxs-lookup"><span data-stu-id="cec99-102">How to Disable SSO</span></span>
+<span data-ttu-id="cec99-103">MMC スナップインまたはコマンド ラインを使用して、シングル サインオン システムを全面的に無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="cec99-103">You can disable the entire Single Sign-On system by using either the MMC Snap-In or the command line.</span></span>  
+  
+ <span data-ttu-id="cec99-104">最新のグローバル情報を取得するために SSO データベースをポーリングするので、すべてのシングル サインオン サーバーが無効になるまでに、若干の遅延が発生します。</span><span class="sxs-lookup"><span data-stu-id="cec99-104">There will be a short delay for all Single Sign-On Servers to be disabled, as they poll the SSO database for the latest global information.</span></span>  
+  
+### <a name="to-disable-enterprise-single-sign-on-using-the-mmc-snap-in"></a><span data-ttu-id="cec99-105">MMC スナップインでエンタープライズ シングル サインオンを無効にするには</span><span class="sxs-lookup"><span data-stu-id="cec99-105">To disable Enterprise Single Sign-On using the MMC Snap-In</span></span>  
+  
+1.  <span data-ttu-id="cec99-106">**開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、クリックして**SSO 管理**です。</span><span class="sxs-lookup"><span data-stu-id="cec99-106">On the **Start** menu, click **All Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+  
+2.  <span data-ttu-id="cec99-107">ENTSSO MMC スナップインの [スコープ] ウィンドウで、展開、**エンタープライズ シングル サインオン**ノード。</span><span class="sxs-lookup"><span data-stu-id="cec99-107">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+  
+3.  <span data-ttu-id="cec99-108">右クリック**システム**、クリックして**を無効にする**です。</span><span class="sxs-lookup"><span data-stu-id="cec99-108">Right-click **System**, and then click **Disable**.</span></span>  
+  
+### <a name="to-disable-enterprise-single-sign-on-using-the-command-line"></a><span data-ttu-id="cec99-109">コマンド ラインでエンタープライズ シングル サインオンを無効にするには</span><span class="sxs-lookup"><span data-stu-id="cec99-109">To disable Enterprise Single Sign-On using the command line</span></span>  
+  
+1.  <span data-ttu-id="cec99-110">**開始** メニューのをクリックして**実行**、し、入力**cmd**です。</span><span class="sxs-lookup"><span data-stu-id="cec99-110">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+  
+2.  <span data-ttu-id="cec99-111">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="cec99-111">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="cec99-112">既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="cec99-112">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+3.  <span data-ttu-id="cec99-113">型**ssomanage – disablesso**です。</span><span class="sxs-lookup"><span data-stu-id="cec99-113">Type **ssomanage –disablesso**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="cec99-114">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="cec99-114">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="cec99-115">参照</span><span class="sxs-lookup"><span data-stu-id="cec99-115">See Also</span></span>  
+ <span data-ttu-id="cec99-116">[SSO を有効にする方法](../core/how-to-enable-sso.md) </span><span class="sxs-lookup"><span data-stu-id="cec99-116">[How to Enable SSO](../core/how-to-enable-sso.md) </span></span>  
+ [<span data-ttu-id="cec99-117">SSO の使用</span><span class="sxs-lookup"><span data-stu-id="cec99-117">Using SSO</span></span>](../core/using-sso.md)

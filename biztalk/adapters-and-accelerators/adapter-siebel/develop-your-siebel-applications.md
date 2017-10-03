@@ -1,0 +1,67 @@
+---
+title: "BizTalk server、Siebel アプリケーションの開発 |Microsoft ドキュメント"
+description: "Siebel を WCF を使用してアプリケーションを作成または BizTalk Server と BizTalk アダプター パック (BAP)"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 2bc04906-6d64-433c-b357-797ec5883279
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 3c1535a3aa7861effdad998d4d997fbcdfced02c
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="develop-your-siebel-applications"></a><span data-ttu-id="4b1bd-103">Siebel アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-103">Develop your Siebel applications</span></span>
+
+## <a name="overview"></a><span data-ttu-id="4b1bd-104">概要</span><span class="sxs-lookup"><span data-stu-id="4b1bd-104">Overview</span></span>
+<span data-ttu-id="4b1bd-105">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-105">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] is a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding.</span></span> <span data-ttu-id="4b1bd-106">クライアント アプリケーションが使用できる、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel の成果物の操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-106">Client applications can consume the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to invoke operations on Siebel artifacts.</span></span> <span data-ttu-id="4b1bd-107">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]消費されることができます。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-107">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] can be consumed:</span></span>  
+  
+-   <span data-ttu-id="4b1bd-108">を介して、物理ポートには、BizTalk Server ソリューションでのバインドです。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-108">Through a physical port binding in a BizTalk Server solution.</span></span>  
+  
+-   <span data-ttu-id="4b1bd-109">クライアント プロキシのインスタンス上のメソッドの呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-109">By invoking methods on an instance of a client proxy.</span></span>  
+  
+-   <span data-ttu-id="4b1bd-110">としてホストされる WCF サービスを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-110">As a hosted WCF service.</span></span>  
+  
+-   <span data-ttu-id="4b1bd-111">WCF チャネル モデルを使用するコードでのチャネル インスタンス経由で SOAP メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-111">By sending SOAP messages over a channel instance in code that uses the WCF channel model.</span></span>  
+  
+-   <span data-ttu-id="4b1bd-112">ADO.NET インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-112">Through an ADO.NET interface.</span></span>  
+  
+## <a name="biztalk-vs-wcf-service-vs-wcf-channel-vs-adonet"></a><span data-ttu-id="4b1bd-113">BizTalk と WCF サービスと WCF チャネルと ADO.NET</span><span class="sxs-lookup"><span data-stu-id="4b1bd-113">BizTalk vs WCF service vs WCF channel vs ADO.NET</span></span>
+ <span data-ttu-id="4b1bd-114">次の表では:</span><span class="sxs-lookup"><span data-stu-id="4b1bd-114">The following table:</span></span>  
+  
+-   <span data-ttu-id="4b1bd-115">Siebel システムを使用して、実行できるさまざまな操作を一覧表示、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-115">Lists the different operations that can be performed on a Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
+  
+-   <span data-ttu-id="4b1bd-116">アプローチのかを示します ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、WCF サービスのモデル、WCF チャネル モデル、または ADO.NET インターフェイス)、操作を実行するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-116">Indicates which of the approaches ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], WCF service model, WCF channel model, or ADO.NET interface) can be used to perform the operations.</span></span>  
+  
+-   <span data-ttu-id="4b1bd-117">選択した方法を使用するタスクの実行に関する詳細情報へのリンクを示します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-117">Provides links to more information about performing the task using the chosen approach.</span></span>  
+  
+|<span data-ttu-id="4b1bd-118">タスク</span><span class="sxs-lookup"><span data-stu-id="4b1bd-118">Task</span></span>|<span data-ttu-id="4b1bd-119">BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="4b1bd-119">BizTalk Server</span></span>|<span data-ttu-id="4b1bd-120">WCF サービスのモデル</span><span class="sxs-lookup"><span data-stu-id="4b1bd-120">WCF Service Model</span></span>|<span data-ttu-id="4b1bd-121">WCF チャネル モデル</span><span class="sxs-lookup"><span data-stu-id="4b1bd-121">WCF Channel Model</span></span>|<span data-ttu-id="4b1bd-122">ADO.NET インターフェイス</span><span class="sxs-lookup"><span data-stu-id="4b1bd-122">ADO.NET Interface</span></span>|  
+|----------|--------------------|-----------------------|-----------------------|-----------------------|  
+|<span data-ttu-id="4b1bd-123">ビジネス コンポーネントの基本的な Insert、Update、Delete、およびクエリの操作</span><span class="sxs-lookup"><span data-stu-id="4b1bd-123">Basic Insert, Update, Delete, and Query operations on business components</span></span>|[<span data-ttu-id="4b1bd-124">ビジネス コンポーネントを使用して BizTalk Server と Siebel アダプターに対する操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-124">Run Operations on Business Components Using BizTalk Server and the Siebel adapter</span></span>](run-operations-on-business-components-using-the-siebel-adapter-in-biztalk.md)|[<span data-ttu-id="4b1bd-125">WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-125">Run Operations on Business Components with the Siebel adapter using the WCF Service Model</span></span>](run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)|[<span data-ttu-id="4b1bd-126">WCF チャネル モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-126">Run Operations on Business Components with the Siebel adapter using the WCF Channel Model</span></span>](run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)|<span data-ttu-id="4b1bd-127">[Siebel ビジネス コンポーネントに対して選択クエリを実行](run-a-select-query-on-business-components-with-siebel.md)**注:**を使用して、SELECT 操作を実行することができますのみ、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-127">[Run a SELECT Query on Business Components with Siebel](run-a-select-query-on-business-components-with-siebel.md) **Note:**  You can only perform a SELECT operation using the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)].</span></span>|  
+|<span data-ttu-id="4b1bd-128">MVG フィールドのビジネス コンポーネントに対する操作</span><span class="sxs-lookup"><span data-stu-id="4b1bd-128">Operations on business components with MVG fields</span></span>|[<span data-ttu-id="4b1bd-129">MVG フィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-129">Run Operations on Business Components with MVG Fields Using BizTalk Server and the Siebel adapter</span></span>](run-operations-on-business-components-with-mvg-fields-using-the-siebel-adapter.md)|[<span data-ttu-id="4b1bd-130">WCF サービス モデルを使用して、Siebel アダプターと MVG フィールドのビジネス コンポーネントでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-130">Run Operations on Business Components with MVG Fields with the Siebel adapter using the WCF Service Model</span></span>](work-with-mvp-fields-using-the-siebel-adapter-and-the-wcf-service-model.md)|||  
+|<span data-ttu-id="4b1bd-131">候補リストのフィールドのビジネス コンポーネントに対する操作</span><span class="sxs-lookup"><span data-stu-id="4b1bd-131">Operations on business components with picklist fields</span></span>|[<span data-ttu-id="4b1bd-132">候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントに対する操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-132">Run Operations on Business Components with Picklist Fields Using BizTalk Server and the Siebel adapter</span></span>](run-tasks-on-business-components-with-picklist-fields-using-the-siebel-adapter.md)||||  
+|<span data-ttu-id="4b1bd-133">ビジネス サービスを呼び出す</span><span class="sxs-lookup"><span data-stu-id="4b1bd-133">Invoking business services</span></span>|[<span data-ttu-id="4b1bd-134">ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出し</span><span class="sxs-lookup"><span data-stu-id="4b1bd-134">Invoke Business Service Methods Using BizTalk Server and the Siebel adapter</span></span>](invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter.md)|||[<span data-ttu-id="4b1bd-135">Siebel ビジネス サービスの実行操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-135">Run an EXECUTE Operation on Business Services with Siebel</span></span>](run-an-execute-operation-on-business-services-with-siebel.md)|  
+|<span data-ttu-id="4b1bd-136">統合オブジェクトとのビジネス サービスを呼び出す</span><span class="sxs-lookup"><span data-stu-id="4b1bd-136">Invoking business services with integration objects</span></span>|[<span data-ttu-id="4b1bd-137">Siebel アダプターを使用して統合オブジェクトでのビジネス サービス メソッドを呼び出す</span><span class="sxs-lookup"><span data-stu-id="4b1bd-137">Invoke Business Service Methods with Integration Objects using the Siebel adapter</span></span>](run-business-service-methods-with-integration-objects-using-the-siebel-adapter.md)||||  
+
+## <a name="next-steps"></a><span data-ttu-id="4b1bd-138">次の手順</span><span class="sxs-lookup"><span data-stu-id="4b1bd-138">Next steps</span></span>  
+ <span data-ttu-id="4b1bd-139">このセクションのトピックでは提供情報、プロシージャ、および例を使用するアプリケーションを開発するため、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]両方で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]ソリューションのプログラミングします。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-139">The topics in this section provide information, procedures, and examples to help you develop applications that consume the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] in both [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] programming solutions.</span></span> 
+
+- [<span data-ttu-id="4b1bd-140">Siebel システムへの接続を作成します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-140">Create a connection to the Siebel system</span></span>](create-a-connection-to-the-siebel-system.md)
+- [<span data-ttu-id="4b1bd-141">Visual Studio での Siebel 操作のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-141">Get Metadata for Siebel Operations in Visual Studio</span></span>](get-metadata-for-siebel-operations-in-visual-studio.md)
+- [<span data-ttu-id="4b1bd-142">メタデータのノード Id</span><span class="sxs-lookup"><span data-stu-id="4b1bd-142">Metadata Node IDs</span></span>](metadata-node-ids1.md)
+- [<span data-ttu-id="4b1bd-143">バインドのプロパティの使用</span><span class="sxs-lookup"><span data-stu-id="4b1bd-143">Working with the binding properties</span></span>](read-about-biztalk-adapter-for-siebel-binding-properties.md)
+- [<span data-ttu-id="4b1bd-144">Siebel アダプターを使用して BizTalk アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-144">Develop BizTalk applications using the Siebel adapter</span></span>](develop-biztalk-applications-using-the-siebel-adapter.md)
+- [<span data-ttu-id="4b1bd-145">WCF サービス モデルを使用してアプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-145">Develop applications using the WCF Service Model</span></span>](develop-siebel-applications-using-the-wcf-service-model.md)
+- [<span data-ttu-id="4b1bd-146">WCF チャネル モデルを使用してアプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-146">Develop applications using the WCF Channel Model</span></span>](develop-siebel-applications-using-the-wcf-channel-model3.md)
+- [<span data-ttu-id="4b1bd-147">Siebel eBusiness Applications の .NET Framework データ プロバイダーを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-147">Use the .NET Framework Data Provider for Siebel eBusiness Applications</span></span>](use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)
+- [<span data-ttu-id="4b1bd-148">SharePoint での Siebel アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-148">Use the Siebel Adapter with SharePoint</span></span>](use-the-siebel-adapter-with-sharepoint.md)
+- [<span data-ttu-id="4b1bd-149">サンプル</span><span class="sxs-lookup"><span data-stu-id="4b1bd-149">Samples</span></span>](samples-for-the-siebel-adapter.md)
+- [<span data-ttu-id="4b1bd-150">BizTalk adapter 用 Siebel eBusiness Applications ServiceModel メタデータ ユーティリティ ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b1bd-150">Using the ServiceModel Metadata Utility Tool with the BizTalk Adapter for Siebel eBusiness Applications</span></span>](use-the-servicemodel-metadata-utility-with-the-siebel-adapter.md)

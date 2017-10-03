@@ -1,0 +1,51 @@
+---
+title: "その他のファイルと BizTalk アプリケーションの設定を削除する方法 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- managing [applications], deleting settings
+- managing [applications], deleting files
+- undeploying, settings
+- applications, undeploying
+- undeploying, files
+ms.assetid: b947831a-c988-435c-92ec-45f3fd6967de
+caps.latest.revision: "17"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: e9ad98e0f0fc1e65281a1d8195be4f4a708d004f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-remove-other-files-and-settings-for-a-biztalk-application"></a><span data-ttu-id="84a0a-102">BizTalk アプリケーションのその他のファイルと設定を削除する方法</span><span class="sxs-lookup"><span data-stu-id="84a0a-102">How to Remove Other Files and Settings for a BizTalk Application</span></span>
+<span data-ttu-id="84a0a-103">このトピックは、アプリケーションをアンインストールするときに、削除できませんを BizTalk アプリケーションのファイルと設定を削除する方法について説明 (で説明した[を BizTalk アプリケーションをアンインストールする方法](../core/how-to-uninstall-a-biztalk-application.md))。</span><span class="sxs-lookup"><span data-stu-id="84a0a-103">This topic describes how to remove files and settings for a BizTalk application that may not be removed when you uninstall the application (which is described in [How to Uninstall a BizTalk Application](../core/how-to-uninstall-a-biztalk-application.md)).</span></span> <span data-ttu-id="84a0a-104">たとえば、証明書、COM と COM+ のレジストリ エントリ、および COM ファイルは、アンインストール時にこれらを削除する処理後のスクリプトがアプリケーションに含まれていない場合は、削除されません。</span><span class="sxs-lookup"><span data-stu-id="84a0a-104">For example, certificates, COM and COM+ registry entries, and COM files are not removed unless the application included a post-processing script that removed them on uninstallation.</span></span>  
+  
+> [!CAUTION]
+>  <span data-ttu-id="84a0a-105">共有アイテムを削除する前に、それらのアイテムが別のアプリケーションで使用されていないことを確認してください。共有されているアイテムを削除すると、そのアイテムを使用するアプリケーションが正常に機能しなくなります。</span><span class="sxs-lookup"><span data-stu-id="84a0a-105">Before removing any shared items, make certain that no other applications are using them, or the applications will not function correctly.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="84a0a-106">処理後のスクリプトを使用して、この削除を自動化することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="84a0a-106">We recommend that you automate this removal by using a post-processing script.</span></span> <span data-ttu-id="84a0a-107">詳細については、次を参照してください。[前処理および後処理のスクリプトをアプリケーションの展開のカスタマイズを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="84a0a-107">For more information, see [Using Pre- and Post-processing Scripts to Customize Application Deployment](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md).</span></span>  
+  
+-   <span data-ttu-id="84a0a-108">**証明書を削除します。**</span><span class="sxs-lookup"><span data-stu-id="84a0a-108">**Delete Certificates.**</span></span> <span data-ttu-id="84a0a-109">証明書ストアから証明書を削除するには、証明書マネージャー (certmgr.exe) コマンド ライン ツールを使用する方法と、証明書スナップインを使用する方法の 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="84a0a-109">There are two ways to delete certificates from the certificate store: by using the Certificate Manager (certmgr.exe) command-line tool or the Certificates snap-in.</span></span> <span data-ttu-id="84a0a-110">Certmgr.exe は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール前提条件の 1 つである .NET SDK と共にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="84a0a-110">Certmgr.exe is installed with the .NET SDK, which is one of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation prerequisites.</span></span> <span data-ttu-id="84a0a-111">certmgr.exe は、手動で、または処理後のスクリプトから起動できます。</span><span class="sxs-lookup"><span data-stu-id="84a0a-111">You can run certmgr.exe manually, or you can run it from a post-processing script.</span></span> <span data-ttu-id="84a0a-112">Certmgr.exe の使用に関する詳細については、次を参照してください。[証明書マネージャー ツール (certmgr.exe)](http://go.microsoft.com/fwlink/?LinkId=56198) 、Microsoft Web サイトです。</span><span class="sxs-lookup"><span data-stu-id="84a0a-112">For more information about using certmgr.exe, see [Certificate Manager Tool (certmgr.exe)](http://go.microsoft.com/fwlink/?LinkId=56198) at the Microsoft Web site.</span></span>  
+  
+     <span data-ttu-id="84a0a-113">証明書スナップインは、Windows Server 2008 および Windows Vista の両方に含まれています。</span><span class="sxs-lookup"><span data-stu-id="84a0a-113">The Certificates snap-in is included in both Windows Server 2008 and Windows Vista.</span></span> <span data-ttu-id="84a0a-114">証明書を削除するには、スナップインを開いて (詳細については、オペレーティング システムのヘルプの「[証明書] スナップインを起動する」を参照)、証明書を削除します (詳細については、証明書ヘルプの「証明書を削除する」を参照)。</span><span class="sxs-lookup"><span data-stu-id="84a0a-114">To delete a certificate, open the snap-in, as described in "Starting the Certificates snap-in" in Help for your operating system, and then delete the certificate as described in "Delete a certificate" in Certificates Help.</span></span>  
+  
+-   <span data-ttu-id="84a0a-115">**Windows レジストリからアセンブリを削除します。**</span><span class="sxs-lookup"><span data-stu-id="84a0a-115">**Remove assemblies from the Windows Registry.**</span></span> <span data-ttu-id="84a0a-116">Windows レジストリから .NET アセンブリおよび BizTalk アセンブリを削除するには、regsvcs または regasm を使用します。これらのツールは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール前提条件の 1 つである .NET SDK に含まれています。</span><span class="sxs-lookup"><span data-stu-id="84a0a-116">To remove .NET and BizTalk assemblies from the Windows registry, use regsvcs or regasm, which are included with the .NET SDK, which is one of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation prerequisites.</span></span> <span data-ttu-id="84a0a-117">リファレンス情報について、次を参照してください。 [.NET サービス インストール ツール (Regsvcs.exe)](http://go.microsoft.com/fwlink/?LinkId=56199)と[アセンブリ登録ツール (Regasm.exe)](http://go.microsoft.com/fwlink/?LinkId=56200) 、Microsoft Web サイトです。</span><span class="sxs-lookup"><span data-stu-id="84a0a-117">For reference information, see [.NET Services Installation Tool (Regsvcs.exe)](http://go.microsoft.com/fwlink/?LinkId=56199) and [Assembly Registration Tool (Regasm.exe)](http://go.microsoft.com/fwlink/?LinkId=56200) at the Microsoft Web site.</span></span>  
+  
+-   <span data-ttu-id="84a0a-118">**Windows レジストリから COM コンポーネントを削除します。**</span><span class="sxs-lookup"><span data-stu-id="84a0a-118">**Remove COM components from the Windows Registry.**</span></span> <span data-ttu-id="84a0a-119">Windows レジストリから COM コンポーネントを削除するには、regsvr32 を使用します。</span><span class="sxs-lookup"><span data-stu-id="84a0a-119">To remove COM components from the Windows Registry, use regsvr32.</span></span> <span data-ttu-id="84a0a-120">詳細については、対象オペレーティング システムのヘルプの「Regsvr32」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="84a0a-120">For reference information, see "Regsvr32" in Help for your operating system.</span></span> <span data-ttu-id="84a0a-121">このツールは、Windows Server 2008 および Windows Vista Professional の両方に含まれています。</span><span class="sxs-lookup"><span data-stu-id="84a0a-121">This tool is included in both Windows Server 2008 and Windows Vista Professional.</span></span>  
+  
+-   <span data-ttu-id="84a0a-122">**グローバル アセンブリ キャッシュ (GAC) からアセンブリをアンインストールします。**</span><span class="sxs-lookup"><span data-stu-id="84a0a-122">**Uninstall assemblies from the global assembly cache (GAC).**</span></span> <span data-ttu-id="84a0a-123">アセンブリは、GAC から自動的にはアンインストールされません。</span><span class="sxs-lookup"><span data-stu-id="84a0a-123">Assemblies are not automatically uninstalled from the GAC.</span></span> <span data-ttu-id="84a0a-124">アセンブリは、手動で、またはスクリプトを使用して GAC からアンインストールできます。</span><span class="sxs-lookup"><span data-stu-id="84a0a-124">You can uninstall an assembly from the GAC manually or by using a script.</span></span> <span data-ttu-id="84a0a-125">詳細については、次を参照してください。 [GAC からアセンブリをアンインストールする方法](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4)です。</span><span class="sxs-lookup"><span data-stu-id="84a0a-125">For more information, see [How to Uninstall an Assembly from the GAC](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4).</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="84a0a-126">前提条件</span><span class="sxs-lookup"><span data-stu-id="84a0a-126">Prerequisites</span></span>  
+ <span data-ttu-id="84a0a-127">このトピックで説明されているファイルおよび設定を削除するには、削除する対象に応じて、Windows レジストリ、GAC、または証明書ストアに対する書き込みアクセス許可を持つアカウントでログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="84a0a-127">To remove the files and settings described in this topic, you must be logged on with Write permissions on the Windows Registry, the GAC, or the certificate store, depending on what you want to remove.</span></span> <span data-ttu-id="84a0a-128">詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="84a0a-128">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="84a0a-129">参照</span><span class="sxs-lookup"><span data-stu-id="84a0a-129">See Also</span></span>  
+ <span data-ttu-id="84a0a-130">[BizTalk アプリケーションを展開解除](../core/undeploying-biztalk-applications.md) </span><span class="sxs-lookup"><span data-stu-id="84a0a-130">[Undeploying BizTalk Applications](../core/undeploying-biztalk-applications.md) </span></span>  
+ [<span data-ttu-id="84a0a-131">BizTalk アプリケーションをアンインストールする方法</span><span class="sxs-lookup"><span data-stu-id="84a0a-131">How to Uninstall a BizTalk Application</span></span>](../core/how-to-uninstall-a-biztalk-application.md)

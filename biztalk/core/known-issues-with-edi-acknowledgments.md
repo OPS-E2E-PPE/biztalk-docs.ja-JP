@@ -1,0 +1,42 @@
+---
+title: "EDI 受信確認に関する既知の問題 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: a769a78e-8a49-4aa4-899e-e9f54fdd5f37
+caps.latest.revision: "12"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: f02ef54ed8786f8ead12e16fad880040dbcadc8d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="known-issues-with-edi-acknowledgments"></a><span data-ttu-id="59478-102">EDI 受信確認に関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="59478-102">Known Issues with EDI Acknowledgments</span></span>
+<span data-ttu-id="59478-103">このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の EDI 受信確認に関する既知の問題について説明します。</span><span class="sxs-lookup"><span data-stu-id="59478-103">This topic describes known issues with EDI acknowledgments in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+  
+## <a name="ak102-in-a-997-acknowledgment-can-be-negative"></a><span data-ttu-id="59478-104">997 受信確認の AK102 が負の値になる可能性がある</span><span class="sxs-lookup"><span data-stu-id="59478-104">AK102 in a 997 Acknowledgment Can Be Negative</span></span>  
+ <span data-ttu-id="59478-105">X12 997 受信確認の AK102 データ要素 (グループ制御番号) が、負の値になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="59478-105">The AK102 data element (group control number) in an X12 997 acknowledgment can be a negative value.</span></span> <span data-ttu-id="59478-106">AK102 データ要素が負の値である受信確認は、負のグループ制御番号には意味がないにもかかわらず、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって行われる検証に合格します。</span><span class="sxs-lookup"><span data-stu-id="59478-106">An acknowledgment with a negative AK102 data element will pass the validation performed by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], even though a negative group control number is not meaningful.</span></span>  
+  
+## <a name="a-contrl-receipt-may-report-a-status-of-accepted-when-part-of-the-message-is-rejected"></a><span data-ttu-id="59478-107">メッセージの一部が拒否されても、CONTRL 受信確認で受理の状態がレポートされる可能性がある</span><span class="sxs-lookup"><span data-stu-id="59478-107">A CONTRL Receipt May Report a Status of Accepted when Part of the Message Is Rejected</span></span>  
+ <span data-ttu-id="59478-108">CONTRL 受信確認 (EDIFACT 技術確認) では、受信した EDIFACT メッセージが重複している場合、またはエンベロープにエラー (文字セットの問題など) がある場合にのみ、[拒否] 状態がレポートされます。</span><span class="sxs-lookup"><span data-stu-id="59478-108">A CONTRL receipt (EDIFACT technical acknowledgment) reports a status of “Rejected” only when the incoming EDIFACT message is a duplicate or there are errors in the envelope (for example, an issue with the character set).</span></span> <span data-ttu-id="59478-109">EDIFACT では、X12 による TA1 受信確認の TA104 フィールドでのレポートとは、CONTRL 技術確認で「インターチェンジを受理 (ただしエラーが発生)」状態がレポートされません。</span><span class="sxs-lookup"><span data-stu-id="59478-109">EDIFACT does not report a state of “Interchange accepted with errors” in the CONTRL technical acknowledgment, as X12 does in the TA104 field in a TA1 acknowledgment.</span></span> <span data-ttu-id="59478-110">EDIFACT メッセージの一部が受理された場合、CONTRL 技術確認では [受理] がレポートされます。</span><span class="sxs-lookup"><span data-stu-id="59478-110">If part of the EDIFACT message is accepted, the CONTRL technical acknowledgment will report “Accepted”.</span></span> <span data-ttu-id="59478-111">シナリオによっては、メッセージの一部が拒否されても、CONTRL 受信確認では [受理] の状態がレポートされます。</span><span class="sxs-lookup"><span data-stu-id="59478-111">In some scenarios, part of the message will be rejected, but the CONTRL acknowledgment will still report a status of “Accepted”.</span></span> <span data-ttu-id="59478-112">このようなシナリオでは、UCI5 要素でエラーがレポートされる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="59478-112">In such scenarios, the UCI5 element may report the error.</span></span>  
+  
+## <a name="x12-acknowledgments-will-show-accepted-for-a-preserved-interchange-suspend-interchange-on-error-when-a-group-header-or-trailer-is-in-error"></a><span data-ttu-id="59478-113">グループ ヘッダーまたはトレーラにエラーがある場合、X12 受信確認によって保存済みインターチェンジ (エラーで中断されたインターチェンジ) に対して [受理] が表示される</span><span class="sxs-lookup"><span data-stu-id="59478-113">X12 Acknowledgments Will Show Accepted for a Preserved Interchange (Suspend Interchange on Error) When a Group Header or Trailer is in Error</span></span>  
+ <span data-ttu-id="59478-114">X12 メッセージの受信バッチ処理オプションが [インターチェンジの保存 - エラー発生時にインターチェンジを中断] に設定されており、グループ ヘッダーまたはトレーラのフィールドが無効である場合は、TA1 および 997 受信確認で [受理] の状態がレポートされます。</span><span class="sxs-lookup"><span data-stu-id="59478-114">If the inbound batch processing option for an X12 message is set to “Preserve Interchange – suspend interchange on error”, and a field in the group header or trailer is invalid, the status will be reported as Accepted in both TA1 and 997 acknowledgments.</span></span> <span data-ttu-id="59478-115">EDI 状態レポートおよびトランザクション セットの詳細でも [受理] の状態が示されます。</span><span class="sxs-lookup"><span data-stu-id="59478-115">The EDI status report and transaction set details will also indicate a status of Accepted.</span></span> <span data-ttu-id="59478-116">これは、インターチェンジが中断され、イベント ビューアのエラーでインターチェンジの中断が示されている場合でも、発生します。</span><span class="sxs-lookup"><span data-stu-id="59478-116">This occurs even though the interchange will be suspended, and an error in the Event Viewer will indicate that the interchange was suspended.</span></span>  
+  
+ <span data-ttu-id="59478-117">TA1 受信確認では [受理] の状態が示されます。これは、GS ヘッダーおよび GE トレーラではなく、ISA ヘッダーおよび IEA トレーラが正しいことを確認する目的があるためです。</span><span class="sxs-lookup"><span data-stu-id="59478-117">The TA1 acknowledgment will show a status of Accepted because it is intended to verify the correctness of the ISA header and IEA trailer, but not the correctness of the GS header and GE trailer.</span></span> <span data-ttu-id="59478-118">ただし、997 受信確認でも [受理] 状態が示されます。</span><span class="sxs-lookup"><span data-stu-id="59478-118">However, the 997 acknowledgment will also show a status of Accepted.</span></span>  
+  
+## <a name="if-groups-in-an-interchange-have-the-same-name-the-status-report-will-show-twice-as-many-acknowledgments"></a><span data-ttu-id="59478-119">インターチェンジ内のグループの名前が同じである場合に、状態レポートに 2 倍の数の受信確認が表示される</span><span class="sxs-lookup"><span data-stu-id="59478-119">If groups in an interchange have the same name, the status report will show twice as many acknowledgments</span></span>  
+ <span data-ttu-id="59478-120">同じ名前の複数のグループを持つ EDI インターチェンジを BizTalk Server で処理する場合は、EDI インターチェンジと関連する ACK の状態レポートに、2 倍の数の機能確認が表示されます。</span><span class="sxs-lookup"><span data-stu-id="59478-120">If BizTalk Server processes an EDI interchange with multiple groups that have the same name, the EDI Interchange and Correlated ACK status report will list twice as many functional acknowledgments as expected.</span></span> <span data-ttu-id="59478-121">たとえば、インターチェンジ内の 2 つのグループが同じ名前である場合、状態レポートには 2 つでなく 4 つの受信確認が表示されます。</span><span class="sxs-lookup"><span data-stu-id="59478-121">For example, if two groups in an interchange have the same name, the status report will list four acknowledgments, rather than two.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="59478-122">参照</span><span class="sxs-lookup"><span data-stu-id="59478-122">See Also</span></span>  
+ <span data-ttu-id="59478-123">[EDI 処理に関する既知の問題](../core/known-issues-with-edi-processing.md) </span><span class="sxs-lookup"><span data-stu-id="59478-123">[Known Issues with EDI Processing](../core/known-issues-with-edi-processing.md) </span></span>  
+ <span data-ttu-id="59478-124">[EDI 受信確認を送信します。](../core/sending-an-edi-acknowledgment.md) </span><span class="sxs-lookup"><span data-stu-id="59478-124">[Sending an EDI Acknowledgment](../core/sending-an-edi-acknowledgment.md) </span></span>  
+ <span data-ttu-id="59478-125">[受信した確認の処理](../core/processing-a-received-acknowledgment.md) </span><span class="sxs-lookup"><span data-stu-id="59478-125">[Processing a Received Acknowledgment](../core/processing-a-received-acknowledgment.md) </span></span>  
+ [<span data-ttu-id="59478-126">EDI 受信確認を構成します。</span><span class="sxs-lookup"><span data-stu-id="59478-126">Configuring EDI Acknowledgments</span></span>](../core/configuring-edi-acknowledgments.md)
