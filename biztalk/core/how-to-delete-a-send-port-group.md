@@ -1,0 +1,48 @@
+---
+title: "送信ポート グループを削除する方法 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- send port groups, deleting
+- managing [send port groups], deleting
+- deleting, send port groups
+ms.assetid: 90c01e58-d35c-4cb2-ac6d-92199199fb42
+caps.latest.revision: "16"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 86ddecbe657b8ea52a47133c5237bbad6a10b2f0
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-delete-a-send-port-group"></a>送信ポート グループを削除する方法
+このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポート グループを BizTalk アプリケーションから削除する方法について説明します。 送信ポート グループを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも送信ポート グループが削除されます。 送信ポート グループを削除しても、そこに含まれる送信ポートは削除されません。  
+  
+ 送信ポート グループを削除できるのは、次の条件を満たしている場合だけです。  
+  
+-   送信ポート グループにオーケストレーションがバインドされていない:  次の手順で、バインドを解除するには大文字と小文字の場合は、[オーケストレーションをバインド解除する方法](../core/how-to-unbind-an-orchestration.md)です。  
+  
+-   送信ポート グループが停止および参加解除されている:  停止し、送信ポートを参加解除の手順については、次を参照してください。[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)と[送信ポートまたは送信ポート グループを停止する方法](../core/how-to-stop-a-send-port-or-send-port-group.md)です。  
+  
+-   送信ポート グループがパーティで参照されていない:  パーティから送信ポート グループへの参照を削除する方法の詳細については、次を参照してください。[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)です。  
+  
+## <a name="prerequisites"></a>前提条件  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+  
+### <a name="to-delete-a-send-port-group"></a>送信ポート グループを削除するには  
+  
+1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+  
+2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、BizTalk グループを展開し、**アプリケーション**、し、削除する送信ポート グループを含むアプリケーションを展開します。  
+  
+3.  をクリックして**送信ポート グループ**送信ポート グループを右クリックし、クリックして**削除**です。  
+  
+## <a name="see-also"></a>参照  
+ [作成して、送信ポート グループを構成します。](../core/creating-and-configuring-send-port-groups.md)

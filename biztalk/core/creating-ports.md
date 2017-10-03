@@ -1,0 +1,108 @@
+---
+title: "ポートの作成 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ports, creating
+- receive ports
+- creating, send ports
+- creating, ports
+- Configuration database [BizTalk Server], connecting
+- receive ports, creating
+- send ports
+- send ports, creating
+ms.assetid: 4f99f884-5b84-4f9f-8cec-dd5da259ba7f
+caps.latest.revision: "16"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: fdb7ff7d93b754285e9ed0eb627ca24b113bd2a5
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="creating-ports"></a>ポートの作成
+シングル サインオン用の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信ポートと受信ポートを作成するには、次の手順を実行します。  
+  
+## <a name="creating-a-send-port"></a>送信ポートの作成  
+  
+#### <a name="to-create-a-send-port"></a>送信ポートを作成するには  
+  
+1.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、し、必要な展開アプリケーション。  
+  
+2.  右クリック**送信ポート**、 をポイント**新規**、クリックして**静的な送信請求-応答送信ポート**です。  
+  
+3.  **送信ポートのプロパティ** ダイアログ ボックスで、次の操作します。  
+  
+    1.  たとえば、送信ポートの名前を入力`SSOSendToPeopleSoft`です。  
+  
+    2.  **型**ドロップダウン リストで、 **PeopleSoft**です。  
+  
+    3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
+  
+    4.  送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。  
+  
+    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
+  
+    6.  をクリックして**構成**送信ポートを構成します。  
+  
+4.  **PeopleSoft トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
+  
+    1.  展開**アダプターに必要なプロパティ**、入力と**アプリケーション サーバーのパス**、 **JAVA_HOME**、**ユーザー名**、 **パスワード**、および Peoplesoft システムに接続するための Jar ファイルです。  
+  
+         ログオン情報を設定する必要はありません。  
+  
+    2.  一覧で、PeopleSoft システムを表すよう作成した SSO 関連アプリケーションを選択します。  
+  
+    3.  **SSO を使用する****はい**です。  
+  
+    4.  **[OK]**をクリックします。  
+  
+5.  **[OK]**をクリックします。  
+  
+## <a name="creating-a-receive-port"></a>作成する、受信ポート  
+  
+#### <a name="to-create-a-receive-port"></a>受信ポートを作成するには  
+  
+1.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、し、必要な展開アプリケーション。  
+  
+2.  右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向受信ポート**です。  
+  
+3.  **受信ポートのプロパティ** ウィンドウで、**全般** ページで、次の操作します。  
+  
+    1.  **名前**フィールドに「`ReceiveFromTIBCOEMS`です。  
+  
+    2.  **認証**グループ ボックスで、認証の使用時のメッセージの処理方法を指定します。  
+  
+    3.  選択、**失敗したメッセージの有効化のルーティングを**チェック ボックスをオンします。  
+  
+4.  **受信場所** ページで、次の操作します。  
+  
+    1.  **[新規作成]**をクリックします。  
+  
+    2.  **受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。  
+  
+    3.  **型**ドロップダウン一覧で、トランスポートの種類を選択してから、**受信ハンドラー**ドロップダウン一覧で、トランスポート アドレスを選択します。  
+  
+    4.  **受信パイプライン**ドロップダウン リストで、受信パイプラインを選択します。  
+  
+    5.  **スケジュール**] ページで、[、**開始日**と**終了日**ドキュメントの受信を制限します。  
+  
+    6.  選択、**有効にするサービス時間帯**チェック ボックスをオンします。  
+  
+    7.  **[OK]**をクリックします。  
+  
+5.  **受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。  
+  
+6.  **追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。  
+  
+7.  **[OK]**をクリックします。  
+  
+## <a name="see-also"></a>参照  
+ [シングル サインオンを使用します。](../core/using-single-sign-on2.md)

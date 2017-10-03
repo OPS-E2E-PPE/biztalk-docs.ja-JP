@@ -1,0 +1,74 @@
+---
+title: "BizTalk Server を使用して SAP から受信 tRFC の呼び出しを受け取る |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- tRFC calls, receiving using BizTalk Server
+- tRFCs, sample
+ms.assetid: 500eedea-3d27-478c-a64c-903a1fa2b02f
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: b3ad06768a5156b71d4d0da77b778f22d3d09fbb
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="receive-inbound-trfc-calls-from-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP から受信 tRFC の呼び出しを受信します。
+TRFC サーバーの呼び出しは、トランザクションの RFC サーバー呼び出しです。 トランザクションのコンテキストでの RFC の受信に必要なオーケストレーションは、SAP システムから送信されるその他の受信 RFC を受信するオーケストレーションに似ています。 ただし、Rfc がトランザクションのコンテキストで受信したかどうかを確認する特定のタスクを実行する必要があります。 SAP システムを使用して、受信の RFC の受信の詳細については、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[BizTalk Server を使用して、SAP からの受信 RFC 呼び出しの受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md)です。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、SAP システムからの着信 tRFC の呼び出しの受信をサポートを参照してください[SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。  
+  
+ SAP システムから送信された着信の tRFC の受信は、次の相違点と、着信 RFC の受信と同様です。  
+  
+1.  スキーマの生成中に、デザイン時に必ず選択してから tRFC、 **TRFC**ノード。  
+  
+2.  実行時に、必ずバインディング プロパティを設定してください**TidDatabaseConnectionString**です。 このプロパティは、TID を格納する SQL データベースに接続する接続文字列を取得します。 サンプルの接続文字列は、ようになります。  
+  
+    ```  
+    Data Source=<myServerAddress>;Initial Catalog=<myDataBase>;User Id=<myUsername>;Password=<myPassword>;  
+    ```  
+  
+     バインディング プロパティとその設定方法の詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
+  
+    > [!IMPORTANT]
+    >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ ウィザードをインストールする SQL スクリプト、SapAdapter-DbScript-Install.sql、SQL Server でデータベースおよびデータベース オブジェクトを作成する SQL Server の管理者によって実行する必要があります。 インストールされている通常の*\<インストール ドライブ >: プログラム FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]*です。  
+    >   
+    >  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Tid を永続化するこれらのオブジェクトを使用します。 そのため、SQL Server の管理者ことを確認、ユーザー名、接続文字列の一部がストアド プロシージャを実行するための十分な特権を持つように指定します。 Windows ユーザーがデータベースにストアド プロシージャを実行するための十分なアクセス許可を持っていれば、Windows 認証のこともできます。  
+  
+3.  アダプターがインストールされているコンピューターで MSDTC を有効にすることを確認します。 MSDTC を有効にするのには、次の手順を実行します。  
+  
+    1.  コンポーネント サービス MMC スナップインを起動します。  
+  
+    2.  コンポーネント サービス MMC スナップインで、左側のウィンドウから、展開**コンポーネント サービス**、展開**コンピューター**を右クリックして**マイ コンピューター**、 をクリック**プロパティ**です。  
+  
+    3.  **マイ コンピューター プロパティ**ダイアログ ボックスで、をクリックして、 **MSDTC**タブです。  
+  
+    4.  **トランザクション構成**セクションで、をクリックして、**セキュリティ構成**ボタンをクリックします。  
+  
+    5.  **セキュリティ構成**ダイアログ ボックスで、**ネットワーク DTC アクセス**チェック ボックスをオンし、をクリックして、**リモート クライアントを許可する**チェック ボックスをオンします。  
+  
+    6.  **トランザクション マネージャー通信** セクションで、select、**受信を許可する**と**送信を許可する**チェック ボックスです。  
+  
+    7.  **セキュリティの構成**ダイアログ ボックスで、をクリックして**OK**です。  
+  
+    8.  をクリックして**はい**ダイアログ ボックスに通知、MSDTC サービスが再開されることにします。 MSDTC サービスを再起動すると、をクリックして**OK**  ダイアログ ボックス。  
+  
+    9. **マイ コンピューター プロパティ**ダイアログ ボックスで、をクリックして**OK**です。  
+  
+4.  既に追加されていない場合、Windows ファイアウォールの例外一覧に MSDTC を追加します。 次のコマンドを実行します。  
+  
+    ```  
+    netsh firewall set allowedprogram %windir%\system32\msdtc.exe MSDTC enable  
+    ```  
+  
+> [!IMPORTANT]
+>  TRFC の受信呼び出しは、「トランザクション」のコンテキスト内の SAP システムから Idoc を受信中に使用されます。  
+  
+## <a name="see-also"></a>参照  
+[BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md)
