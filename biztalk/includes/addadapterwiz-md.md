@@ -1,0 +1,1 @@
+<span data-ttu-id="8659b-101">アダプター メタデータの追加ウィザード</span><span class="sxs-lookup"><span data-stu-id="8659b-101">Add Adapter Metadata Wizard</span></span>

@@ -1,0 +1,57 @@
+---
+title: "手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマの生成 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: ab0bc1a7-8bcd-4110-88e6-4eddf0b57068
+caps.latest.revision: "4"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: facb5d638ed82e1632e434a2a9c9063a2c3daa68
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="step-5-on-premises-generate-the-schema-for-inserting-a-message-inito-salesorder-table"></a><span data-ttu-id="dfc05-102">手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-102">Step 5 (On Premises): Generate the Schema for Inserting a Message inito SalesOrder Table</span></span>
+<span data-ttu-id="dfc05-103">ビジネス シナリオに従って、X12 販売注文メッセージは、Contoso から送信される必要があります挿入される Northwind の**SalesOrder**テーブルの場合は、注文、数量が 100 より大きい。</span><span class="sxs-lookup"><span data-stu-id="dfc05-103">According to the business scenario, the X12 sales order message sent from Contoso must be inserted into Northwind’s **SalesOrder** table if the quantity ordered is greater than 100.</span></span> <span data-ttu-id="dfc05-104">メッセージを挿入する、 **SalesOrder**テーブルのスキーマを生成する必要があります、**挿入**テーブルで操作します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-104">To insert a message into a **SalesOrder** table, you must generate the schema for the **Insert** operation on the table.</span></span> <span data-ttu-id="dfc05-105">このトピックでは、作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション、およびしを使用して、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]を実行するためのスキーマを生成する、**挿入**での操作、 **SalesOrder**テーブル。</span><span class="sxs-lookup"><span data-stu-id="dfc05-105">In this topic, you will create a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution, and then use the [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] to generate the schema for performing an **Insert** operation on the **SalesOrder** table.</span></span>  
+  
+### <a name="to-generate-the-schema-for-insert-operation-on-salesorder-table"></a><span data-ttu-id="dfc05-106">SalesOrder テーブルで挿入操作を行うスキーマを生成するには</span><span class="sxs-lookup"><span data-stu-id="dfc05-106">To generate the schema for Insert operation on SalesOrder table</span></span>  
+  
+1.  <span data-ttu-id="dfc05-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Visual Studio プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-107">Create a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Visual Studio project.</span></span> <span data-ttu-id="dfc05-108">Visual Studio から**ファイル** メニューのをクリックして**新規**、クリックして**プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-108">From the Visual Studio **File** menu, click **New**, and then click **Project**.</span></span> <span data-ttu-id="dfc05-109">**新しいプロジェクト**ダイアログ ボックスで、インストール済みのテンプレートの一覧からクリックして**BizTalk プロジェクト**、し、**空[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-109">In the **New Project** dialog box, from the list of installed templates, click **BizTalk Projects**, and then select **Empty [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Project**.</span></span> <span data-ttu-id="dfc05-110">プロジェクト名を入力してください。 `OrderProcessingDemo`  をクリックし、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-110">For the project name enter `OrderProcessingDemo` and then click **OK**.</span></span>  
+  
+2.  <span data-ttu-id="dfc05-111">ソリューション エクスプ ローラーでプロジェクト名を右クリックし、**追加**、クリックして**生成した項目の追加**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-111">Right-click the project name in Solution Explorer, point to **Add**, and then click **Add Generated Items**.</span></span>  
+  
+3.  <span data-ttu-id="dfc05-112">**生成した項目の追加**ダイアログ ボックスで、**アダプター サービスの使用**、クリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-112">In the **Add Generated Items** dialog box, select **Consume Adapter Service**, and then click **Add**.</span></span> <span data-ttu-id="dfc05-113">[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="dfc05-113">The [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] opens.</span></span>  
+  
+4.  <span data-ttu-id="dfc05-114">**バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-114">From the **Select a binding** drop-down list, select **sqlBinding**, and then click **Configure**.</span></span>  
+  
+5.  <span data-ttu-id="dfc05-115">**アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リストで、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="dfc05-115">In the **Configure Adapter** dialog box, click the **Security** tab, and from the **Client credential  type** drop-down list, do one of the following:</span></span>  
+  
+    |<span data-ttu-id="dfc05-116">このボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="dfc05-116">Click this</span></span>|<span data-ttu-id="dfc05-117">目的</span><span class="sxs-lookup"><span data-stu-id="dfc05-117">To do this</span></span>|  
+    |----------------|----------------|  
+    |<span data-ttu-id="dfc05-118">**なし**</span><span class="sxs-lookup"><span data-stu-id="dfc05-118">**None**</span></span>|<span data-ttu-id="dfc05-119">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-119">Connect to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="dfc05-120">**Windows**</span><span class="sxs-lookup"><span data-stu-id="dfc05-120">**Windows**</span></span>|<span data-ttu-id="dfc05-121">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-121">Connect to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="dfc05-122">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="dfc05-122">**Username**</span></span>|<span data-ttu-id="dfc05-123">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-123">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="dfc05-124">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="dfc05-124">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="dfc05-125">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-125">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+  
+6.  <span data-ttu-id="dfc05-126">クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-126">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="dfc05-127">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI](http://msdn.microsoft.com/library/dd788089.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-127">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)], see [SQL Server Connection URI](http://msdn.microsoft.com/library/dd788089.aspx).</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="dfc05-128">接続パラメーターに予約済みの文字が含まれている場合、そのままを指定する必要がありますのでは、 **URI プロパティ** タブでは、エスケープ文字を使用せずします。</span><span class="sxs-lookup"><span data-stu-id="dfc05-128">If the connection parameters contain any reserved characters, you must specify them as-is in the **URI Properties** tab, that is, without using any escape characters.</span></span> <span data-ttu-id="dfc05-129">ただし、URI で直接指定する場合、 **URI の構成**フィールドと接続パラメーターは、予約文字を含める、適切なエスケープ文字を使用して接続パラメーターを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dfc05-129">However, if you specify the URI directly in the **Configure a URI** field and the connection parameters contain reserved characters, you must specify the connection parameters using proper escape characters.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="dfc05-130">[URI のプロパティ] タブで値を指定しないと、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] により URI が `mssql://.//` になります。</span><span class="sxs-lookup"><span data-stu-id="dfc05-130">If you do not specify any values in the URI property tab, the [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] puts the URI as `mssql://.//`.</span></span> <span data-ttu-id="dfc05-131">このような場合、アダプターは既定のデータベースと、ローカル コンピューター上の既定のデータベース インスタンスに接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-131">In such a case, the adapter connects to the default database and the default database instance on the local computer.</span></span>  
+  
+7.  <span data-ttu-id="dfc05-132">**アダプターの構成**ダイアログ ボックスで、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-132">In the **Configure Adapter** dialog box, click **OK**.</span></span> <span data-ttu-id="dfc05-133">**アダプター サービスの使用**ダイアログ ボックスで、をクリックして**接続**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-133">In the **Consume Adapter Service** dialog box, click **Connect**.</span></span>  
+  
+8.  <span data-ttu-id="dfc05-134">**カテゴリを選択**ボックスで、展開**テーブル**、をクリックし、 **SalesOrder**テーブル。</span><span class="sxs-lookup"><span data-stu-id="dfc05-134">From the **Select a category** box, expand **Tables**, and then click the **SalesOrder** table.</span></span>  
+  
+9. <span data-ttu-id="dfc05-135">**利用可能なカテゴリと操作**ボックスで、**挿入**、 をクリックして**追加**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-135">From the **Available categories and operations** box, select **Insert**, click **Add**, and then click **OK**.</span></span> <span data-ttu-id="dfc05-136">ソリューション エクスプローラーに新しい項目が追加されます。</span><span class="sxs-lookup"><span data-stu-id="dfc05-136">New items are added to the Solution Explorer.</span></span> <span data-ttu-id="dfc05-137">スキーマ ファイル (**TableOperation.dbo.SalesOrder.xsd**) は、生成されたスキーマでは挿入操作を実行する場合、 **SalesOrder**テーブル。</span><span class="sxs-lookup"><span data-stu-id="dfc05-137">The schema file (**TableOperation.dbo.SalesOrder.xsd**) is the generated schema for performing an Insert operation on the **SalesOrder** table.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="dfc05-138">参照</span><span class="sxs-lookup"><span data-stu-id="dfc05-138">See Also</span></span>  
+ [<span data-ttu-id="dfc05-139">チュートリアル 4: BizTalk Server 2013 を使用するハイブリッド アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-139">Tutorial 4: Creating a Hybrid Application Using BizTalk Server 2013</span></span>](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)

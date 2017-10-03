@@ -1,0 +1,1 @@
+<span data-ttu-id="21795-101">.NET Framework Data Provider 用 mySAP Business Suite</span><span class="sxs-lookup"><span data-stu-id="21795-101">.NET Framework Data Provider for mySAP Business Suite</span></span>

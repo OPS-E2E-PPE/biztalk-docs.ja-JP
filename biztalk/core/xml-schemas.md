@@ -1,0 +1,47 @@
+---
+title: "XML スキーマ |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 1ec364e7-866d-4164-be91-be75a40ce878
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: a11f84733a3a48a93b0148ec5eb95f8222f8ad91
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="xml-schemas"></a><span data-ttu-id="c6351-102">XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="c6351-102">XML Schemas</span></span>
+<span data-ttu-id="c6351-103">XML スキーマは、XML で表されるビジネス ドキュメントの詳細情報を記述します。</span><span class="sxs-lookup"><span data-stu-id="c6351-103">An XML schema describes a business document that is represented in XML.</span></span> <span data-ttu-id="c6351-104">Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、ビジネス ドキュメントの正規の表現として XML を使用するので、受信ドキュメントおよび送信ドキュメントの変換が必要ありません。</span><span class="sxs-lookup"><span data-stu-id="c6351-104">Because Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] uses XML as its canonical representation for business documents, inbound and outbound documents do not require any translation.</span></span> <span data-ttu-id="c6351-105">また、すべてのスキーマで使用できる基本的なプロパティだけを使用して、XML スキーマを BizTalk エディターで作成できるので、スキーマ エディター拡張機能を有効にする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="c6351-105">XML schemas can be created in BizTalk Editor using only the basic set of properties that are available within all schemas, and do not require any schema editor extensions to be enabled.</span></span>  
+  
+ <span data-ttu-id="c6351-106">[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] で XML スキーマを作成する方法はいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="c6351-106">There are several ways in which you can create XML schemas in [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].</span></span> <span data-ttu-id="c6351-107">たとえば、次のオブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="c6351-107">These include:</span></span>  
+  
+-   <span data-ttu-id="c6351-108">**新しいスキーマを作成する**です。</span><span class="sxs-lookup"><span data-stu-id="c6351-108">**Creating a new schema**.</span></span> <span data-ttu-id="c6351-109">このスキーマ作成の方法には、新しいスキーマを BizTalk プロジェクトに追加することも含まれます。</span><span class="sxs-lookup"><span data-stu-id="c6351-109">This method of schema creation involves adding a new schema to a BizTalk project.</span></span> <span data-ttu-id="c6351-110">**ソリューション エクスプ ローラー**を BizTalk プロジェクトを右クリックし、**追加**、 をクリックして**新しい項目の**、順にクリック**スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="c6351-110">In **Solution Explorer**, right-click the BizTalk project, click **Add**, click **New Item**, and then click **Schema**.</span></span> <span data-ttu-id="c6351-111">スキーマ ツリー ビューでさまざまなノードを追加してスキーマの構造を構築します。</span><span class="sxs-lookup"><span data-stu-id="c6351-111">Build up the structure of the schema by adding various nodes in the schema tree view.</span></span>  
+  
+-   <span data-ttu-id="c6351-112">**他のスキーマと組み合わせて新しいスキーマを作成する**です。</span><span class="sxs-lookup"><span data-stu-id="c6351-112">**Creating a new schema, in conjunction with other schemas**.</span></span> <span data-ttu-id="c6351-113">: 複雑なスキーマを実際に使用するとき、一般的には、既存の他のスキーマで提供されている型を使用して、メッセージのスキーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="c6351-113">For complex schemas in the real world, you are more likely to build the schemas for your messages by using types provided in other existing schemas.</span></span> <span data-ttu-id="c6351-114">XSD (XML Schema Definition) 言語の概念 (スキーマのインポート、包含、および再定義) を使用することにより、他のスキーマで既に定義されている型を利用できます。</span><span class="sxs-lookup"><span data-stu-id="c6351-114">By using the XML Schema definition (XSD) language concepts of importing, including, and redefining schemas, you can take advantage of types already defined in other schemas.</span></span> <span data-ttu-id="c6351-115">詳細については、同時に複数のスキーマを使用して、次を参照してください。[スキーマを使用して他のスキーマを](../core/schemas-that-use-other-schemas.md)です。</span><span class="sxs-lookup"><span data-stu-id="c6351-115">For more information about using multiple schemas together, see [Schemas That Use Other Schemas](../core/schemas-that-use-other-schemas.md).</span></span>  
+  
+-   <span data-ttu-id="c6351-116">**インスタンス メッセージからスキーマを生成する**です。</span><span class="sxs-lookup"><span data-stu-id="c6351-116">**Generating a schema from an instance message**.</span></span> <span data-ttu-id="c6351-117">: インスタンス メッセージが整形式 XML で構成されていれば、特定のインスタンス メッセージに対応する XML スキーマを生成できます。</span><span class="sxs-lookup"><span data-stu-id="c6351-117">You can generate an XML schema that corresponds to a particular instance message as long as that instance message consists of well-formed XML.</span></span> <span data-ttu-id="c6351-118">使用して、**生成した項目の追加 -  *\<BizTalk プロジェクト名 >*** ダイアログ ボックスをクリックしてアクセス**生成した項目の追加**上、**プロジェクト** ] メニューの [この種類のスキーマ生成操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="c6351-118">Use the **Add Generated Items - *\<BizTalk Project Name>*** dialog box, accessed by clicking **Add Generated Items** on the **Project** menu, to perform this type of schema generation operation.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="c6351-119">この生成操作は、XML スキーマを生成する場合のみ使用できます。プロパティ スキーマやフラット ファイル スキーマには使用できません。</span><span class="sxs-lookup"><span data-stu-id="c6351-119">This type of generation operation can only be used to generate XML schemas, not property schemas or flat file schemas.</span></span>  
+  
+-   <span data-ttu-id="c6351-120">**スキーマを古いスキーマ仕様言語から XSD へ移行**です。</span><span class="sxs-lookup"><span data-stu-id="c6351-120">**Migrating a schema from an older schema specification language to XSD**.</span></span> <span data-ttu-id="c6351-121">: 以前のバージョンの BizTalk Server で開発された XDR (XML-Data Reduced) 形式のスキーマを基に、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の XML スキーマを生成できます。</span><span class="sxs-lookup"><span data-stu-id="c6351-121">You can generate an XML schema for [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] from a schema that was developed by using a previous version of BizTalk Server, which stored schemas in XML-Data Reduced (XDR) format.</span></span> <span data-ttu-id="c6351-122">使用される XSD 形式に古い XDR スキーマを移行する方法について[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を参照してください[以前のバージョンの BizTalk Server からのスキーマの移行](../core/schema-migration-from-previous-versions-of-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="c6351-122">For more information about how to migrate older XDR schemas to the XSD format used by [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], see [Schema Migration from Previous Versions of BizTalk Server](../core/schema-migration-from-previous-versions-of-biztalk-server.md).</span></span>  
+  
+     <span data-ttu-id="c6351-123">また、DTD (Document Type Definition) 構文で表記されるドキュメント スキーマから、XSD に基づいた XML スキーマを生成できます。</span><span class="sxs-lookup"><span data-stu-id="c6351-123">You can also generate an XML schema based on XSD from a document schema expressed by using the Document Type Definition (DTD) syntax.</span></span>  
+  
+     <span data-ttu-id="c6351-124">使用して、**生成した項目の追加 -  *\<BizTalk プロジェクト名 >*** ダイアログ ボックスをクリックしてアクセス**生成した項目の追加**上、**プロジェクト** ] メニューの [この種類のスキーマ生成操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="c6351-124">Use the **Add Generated Items - *\<BizTalk Project Name>*** dialog box, accessed by clicking **Add Generated Items** on the **Project** menu, to perform this type of schema generation operation.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="c6351-125">これらの生成操作は、XML スキーマを生成する場合のみ使用できます。プロパティ スキーマやフラット ファイル スキーマには使用できません。</span><span class="sxs-lookup"><span data-stu-id="c6351-125">These types of generation operations can only be used to generate XML schemas, not property schemas or flat file schemas.</span></span>  
+  
+ <span data-ttu-id="c6351-126">スキーマの作成にどの方法を使用していても、スキーマを変更して、対応するインスタンス メッセージを完全に説明できます。</span><span class="sxs-lookup"><span data-stu-id="c6351-126">Whichever schema creation technique you use, you will continue by modifying the schema so that it provides a sufficiently complete description of its corresponding instance messages.</span></span> <span data-ttu-id="c6351-127">これらのタスクを開始するを参照してください。 [、スキーマ内のノードを管理する](../core/managing-the-nodes-within-a-schema.md)、[ノードのプロパティの設定](../core/how-to-set-node-properties.md)、および[既存ノードの操作](../core/working-with-existing-nodes.md)です。</span><span class="sxs-lookup"><span data-stu-id="c6351-127">To get started on these tasks, see [Managing the Nodes Within a Schema](../core/managing-the-nodes-within-a-schema.md), [Setting Node Properties](../core/how-to-set-node-properties.md), and [Working with Existing Nodes](../core/working-with-existing-nodes.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="c6351-128">参照</span><span class="sxs-lookup"><span data-stu-id="c6351-128">See Also</span></span>  
+ [<span data-ttu-id="c6351-129">BizTalk スキーマの種類</span><span class="sxs-lookup"><span data-stu-id="c6351-129">Different Types of BizTalk Schemas</span></span>](../core/different-types-of-biztalk-schemas.md)

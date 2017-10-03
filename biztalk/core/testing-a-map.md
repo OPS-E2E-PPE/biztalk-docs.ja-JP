@@ -1,0 +1,67 @@
+---
+title: "マップのテスト |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 265afd62-3c1d-4b9a-9f51-176b9b079241
+caps.latest.revision: "13"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: aee4c59783dd72e94ee222c0ee165c7c8f90a32f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="testing-a-map"></a><span data-ttu-id="063a0-102">マップのテスト</span><span class="sxs-lookup"><span data-stu-id="063a0-102">Testing a Map</span></span>
+<span data-ttu-id="063a0-103">デザイン時に EDI プロジェクトのマップをテストできます。</span><span class="sxs-lookup"><span data-stu-id="063a0-103">You can test a map in an EDI project at design time.</span></span> <span data-ttu-id="063a0-104">それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。</span><span class="sxs-lookup"><span data-stu-id="063a0-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="063a0-105">このトピックの内容を設定して使用する方法を説明します、**マップのテスト**XML ツール拡張の機能です。</span><span class="sxs-lookup"><span data-stu-id="063a0-105">This topic describes how to set up and use the **Test Map** feature of the XML Tool extension.</span></span>  
+  
+ <span data-ttu-id="063a0-106">送信元ドキュメントを指定し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が (架空のデータを使用して) 生成したインスタンスを保存するフォルダーを指定して、マップをテストします。</span><span class="sxs-lookup"><span data-stu-id="063a0-106">You test a map by specifying a source document and specifying a folder where [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will save a generated instance (with fictitious data).</span></span> <span data-ttu-id="063a0-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が送信元ドキュメントを処理し、EDI スキーマに従って送信先ドキュメントを生成するのに使用する、区切り記号を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="063a0-107">You need to set the delimiters that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to process the source document and generate the destination document according to EDI schemas.</span></span> <span data-ttu-id="063a0-108">これは、すべての値は true、 **TestMap**マップのプロパティ ページでプロパティを入力:**インスタンスの生成**、 **XML**、または**ネイティブ**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-108">This is true for all values of the **TestMap** input property in the map's property pages: **Generate Instance**, **XML**, or **Native**.</span></span> <span data-ttu-id="063a0-109">場合は true である**インスタンスの生成**ため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インスタンスの生成に使用するどのような区切り記号を知る必要があります。</span><span class="sxs-lookup"><span data-stu-id="063a0-109">It is true for **Generate Instance** because [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] needs to know what delimiters to use to generate the instance.</span></span> <span data-ttu-id="063a0-110">場合は true である**XML**または**ネイティブ**ため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ネイティブのフラット ファイルまたは XML ファイルを解釈する方法を理解する必要があります。</span><span class="sxs-lookup"><span data-stu-id="063a0-110">It is true for **XML** or **Native** because [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] needs to know how to interpret the native flat file or the XML file.</span></span> <span data-ttu-id="063a0-111">さらに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が出力ファイルを生成するときに使用する区切り記号も設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="063a0-111">You also need to set the delimiters that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use when generating the output file.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="063a0-112">前提条件</span><span class="sxs-lookup"><span data-stu-id="063a0-112">Prerequisites</span></span>  
+ <span data-ttu-id="063a0-113">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="063a0-113">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.</span></span>  
+  
+### <a name="to-test-a-map"></a><span data-ttu-id="063a0-114">マップをテストするには</span><span class="sxs-lookup"><span data-stu-id="063a0-114">To test a map</span></span>  
+  
+1.  <span data-ttu-id="063a0-115">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、テストするマップをプロジェクトに追加し、そのマップの送信元スキーマおよび送信先スキーマをプロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="063a0-115">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], add the map that you want to test to a project, and add the source and destination schemas for that map to the project.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="063a0-116">マップをテストするプロジェクトをビルドする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="063a0-116">You do not have to build the project to test the map.</span></span>  
+  
+2.  <span data-ttu-id="063a0-117">マップを右クリックし、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-117">Right-click the map and click **Properties**.</span></span>  
+  
+3.  <span data-ttu-id="063a0-118">**プロパティ**ウィンドウで、設定**TestMap 入力の検証**に**True**入力ファイルを送信元スキーマに対して検証する場合。</span><span class="sxs-lookup"><span data-stu-id="063a0-118">In the **Properties** window, set **Validate TestMap Input** to **True** if you want to validate the input file against the source schema.</span></span> <span data-ttu-id="063a0-119">設定**TestMap 出力の検証**に**True**出力ファイルを送信先スキーマに対して検証する場合。</span><span class="sxs-lookup"><span data-stu-id="063a0-119">Set **Validate TestMap Output** to **True** if you want to validate the output file against the destination schema.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="063a0-120">マップをテストする場合、 **TestMap の入力**プロパティに設定**ネイティブ**と**TestMap 入力の検証**と**TestMap 出力の検証**プロパティを設定**False**検証は実行されます。</span><span class="sxs-lookup"><span data-stu-id="063a0-120">If you test a map with the **TestMap Input** property set to **Native** and the **Validate TestMap Input** and **Validate TestMap Output** properties set to **False**, validation will still be performed.</span></span> <span data-ttu-id="063a0-121">これは、ネイティブ形式の入力ファイルが XML 形式に変換され、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が XML をスキーマに対して検証するためです。</span><span class="sxs-lookup"><span data-stu-id="063a0-121">This occurs because the native-formatted input file will be converted into XML format, and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will validate the XML against the schema.</span></span> <span data-ttu-id="063a0-122">入力インスタンスに検証の問題がある場合は、検証メカニズム エラーが通知されますが、 **TestMap 入力の検証**と**TestMap 出力の検証**にプロパティが設定されて**False**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-122">If there are validation issues in the input instance, the validation mechanism will post errors, even though the **Validate TestMap Input** and **Validate TestMap Output** properties are set to **False**.</span></span>  
+  
+4.  <span data-ttu-id="063a0-123">設定**TestMap の入力**に**ネイティブ**.edi 拡張子を持つ入力ファイルです。</span><span class="sxs-lookup"><span data-stu-id="063a0-123">Set **TestMap Input** to **Native** for an input file that has an .edi extension.</span></span> <span data-ttu-id="063a0-124">設定**XML** .xml 拡張子がある場合。</span><span class="sxs-lookup"><span data-stu-id="063a0-124">Set it to **XML** if it has an .xml extension.</span></span> <span data-ttu-id="063a0-125">設定**TestMap の入力**に**インスタンスの生成**が[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]入力インスタンスを手動で指定するではなく、入力インスタンスを生成します。</span><span class="sxs-lookup"><span data-stu-id="063a0-125">Set **TestMap Input** to **Generate Instance** to have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generate an input instance, rather than you designating an input instance manually.</span></span>  
+  
+5.  <span data-ttu-id="063a0-126">設定**TestMap 出力の**に**ネイティブ**.edi 拡張子を持つ出力ファイル。</span><span class="sxs-lookup"><span data-stu-id="063a0-126">Set **TestMap Output** to **Native** for an output file that has an .edi extension.</span></span> <span data-ttu-id="063a0-127">設定**XML** .xml 拡張子がある場合。</span><span class="sxs-lookup"><span data-stu-id="063a0-127">Set it to **XML** if it has an .xml extension.</span></span>  
+  
+6.  <span data-ttu-id="063a0-128">**TestMap の入力インスタンス**、マップをテストして、オンにするために使用する入力インスタンスを参照し、**開く**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-128">For **TestMap Input Instance**, browse to the input instance that you want to be used to test the map, select it, and then **Open**.</span></span> <span data-ttu-id="063a0-129">このプロパティを空白のままにする場合は、設定**TestMap の入力**に**インスタンスの生成**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-129">If you want to leave this property blank, set **TestMap Input** to **Generate Instance**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="063a0-130">いずれかの入力インスタンスを指定する必要が**TestMap の入力インスタンス**設定または**TestMap の入力**に**インスタンスの生成**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-130">You have to either designate an input instance for **TestMap Input Instance** or set **TestMap Input** to **Generate Instance**.</span></span> <span data-ttu-id="063a0-131">設定されていないと、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="063a0-131">If not, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will generate an error.</span></span>  
+  
+7.  <span data-ttu-id="063a0-132">**TestMap 出力インスタンス**で、出力インスタンスを保存、出力インスタンスの名前を入力し、をクリックする場所を参照**保存**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-132">For **TestMap Output Instance**, browse to the location you want to save the output instance at, enter a name for the output instance, and then click **Save**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="063a0-133">出力インスタンスを指定しないと、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が出力ファイルを作成し、フォルダーに出力ファイルを格納して、ファイル名とパスを示します。</span><span class="sxs-lookup"><span data-stu-id="063a0-133">If you do not designate an output instance, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will create an output file, place the output file into a folder, and indicate the file name and path.</span></span>  
+  
+8.  <span data-ttu-id="063a0-134">テストをクリックする地図を右クリックして**マップのテスト**です。</span><span class="sxs-lookup"><span data-stu-id="063a0-134">Right-click the map you are testing, and then click **Test Map**.</span></span>  
+  
+9. <span data-ttu-id="063a0-135">X12 で**EDI インスタンスのプロパティ** ダイアログ ボックスで、すべてのプロパティに入力と出力インスタンスの設定の整合性があることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="063a0-135">In the X12 **EDI Instance Properties** dialog box, make sure that all properties are consistent with the settings for the input and output instances.</span></span>  
+  
+    > [!NOTE]
+    >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="063a0-136">表示されます、 **EDI インスタンスのプロパティ**TestMap プロセス中に 2 回 ダイアログ ボックス: 入力メッセージ インスタンスを解釈するためには、1 回、1 回は出力メッセージ インスタンスを生成するためです。</span><span class="sxs-lookup"><span data-stu-id="063a0-136"> will display the **EDI Instance Properties** dialog box twice during the TestMap process: once for interpreting the input message instance and once for generating the output message instance.</span></span> <span data-ttu-id="063a0-137">ただし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はダイアログ ボックスを 3 回以上表示したり、EDI スキーマ以外のダイアログ ボックスを表示したりすることがあります。</span><span class="sxs-lookup"><span data-stu-id="063a0-137">However, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may display the dialog box more than just twice and may display the dialog box for non-EDI schema.</span></span> <span data-ttu-id="063a0-138">場合は、クリックして**OK**  ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="063a0-138">If so, click **OK** to close the dialog box.</span></span>  
+  
+10. <span data-ttu-id="063a0-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="063a0-139">Click **OK**.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="063a0-140">参照</span><span class="sxs-lookup"><span data-stu-id="063a0-140">See Also</span></span>  
+ [<span data-ttu-id="063a0-141">デザイン時 XML ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="063a0-141">Using Design-Time XML Tools</span></span>](../core/using-design-time-xml-tools.md)

@@ -1,0 +1,1 @@
+<span data-ttu-id="b45e4-101">BizTalk Server 2016</span><span class="sxs-lookup"><span data-stu-id="b45e4-101">BizTalk Server 2016</span></span>

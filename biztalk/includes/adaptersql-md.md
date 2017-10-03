@@ -1,0 +1,1 @@
+<span data-ttu-id="babca-101">Microsoft BizTalk Adapter 用 SQL Server</span><span class="sxs-lookup"><span data-stu-id="babca-101">Microsoft BizTalk Adapter for SQL Server</span></span>

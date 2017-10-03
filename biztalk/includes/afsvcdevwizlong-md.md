@@ -1,0 +1,1 @@
+<span data-ttu-id="f312c-101">WCF LOB アダプター サービス開発ウィザード</span><span class="sxs-lookup"><span data-stu-id="f312c-101">WCF LOB Adapter Service Development Wizard</span></span>

@@ -1,0 +1,43 @@
+---
+title: "BFILE データ型を含むテーブルに対する操作 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 0d7ebeb9-c2d6-4024-a169-263b947eeeb1
+caps.latest.revision: "4"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 122d821754fb6df447067d18f6f5da02b79058e4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="operations-on-tables-that-contain-bfile-data-types"></a><span data-ttu-id="02a40-102">BFILE データ型を含むテーブルでの操作</span><span class="sxs-lookup"><span data-stu-id="02a40-102">Operations on Tables That Contain BFILE Data Types</span></span>
+<span data-ttu-id="02a40-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]テーブルやストアド プロシージャで BFILE データ型をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="02a40-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] supports the BFILE data type in tables and stored procedures.</span></span> 
+
+## <a name="bfile-data-types"></a><span data-ttu-id="02a40-104">BFILE データ型</span><span class="sxs-lookup"><span data-stu-id="02a40-104">BFILE data types</span></span>
+<span data-ttu-id="02a40-105">次の表は、実行操作に基づいて、アダプターによって公開される BFILE データ型と、LOB 成果物 (テーブルまたはプロシージャ) アクセスをまとめたものです。</span><span class="sxs-lookup"><span data-stu-id="02a40-105">The following table summarizes the BFILE data type exposed by the adapter based on the operation performed and the LOB artifact (table/procedure) accessed:</span></span>  
+  
+|<span data-ttu-id="02a40-106">成果物</span><span class="sxs-lookup"><span data-stu-id="02a40-106">Artifact</span></span>|<span data-ttu-id="02a40-107">操作</span><span class="sxs-lookup"><span data-stu-id="02a40-107">Operation</span></span>|<span data-ttu-id="02a40-108">BFILE col/param の公開されているデータ型</span><span class="sxs-lookup"><span data-stu-id="02a40-108">Data type exposed for BFILE col/param</span></span>|<span data-ttu-id="02a40-109">コメント</span><span class="sxs-lookup"><span data-stu-id="02a40-109">Comments</span></span>|  
+|--------------|---------------|--------------------------------------------|--------------|  
+|<span data-ttu-id="02a40-110">TABLE</span><span class="sxs-lookup"><span data-stu-id="02a40-110">TABLE</span></span>|<span data-ttu-id="02a40-111">INSERT</span><span class="sxs-lookup"><span data-stu-id="02a40-111">INSERT</span></span>|<span data-ttu-id="02a40-112">文字列</span><span class="sxs-lookup"><span data-stu-id="02a40-112">String</span></span>|<span data-ttu-id="02a40-113">Oracle directory の論理パス ファイルを表す BFILE 列に挿入します。</span><span class="sxs-lookup"><span data-stu-id="02a40-113">Represents the logical Oracle directory path to the file to be inserted into the BFILE column</span></span><br /><br /> <span data-ttu-id="02a40-114">例:</span><span class="sxs-lookup"><span data-stu-id="02a40-114">E.g.</span></span> <span data-ttu-id="02a40-115">ここで、MYDIR は Oracle では、論理ディレクトリ MYDIR/screen.jpg</span><span class="sxs-lookup"><span data-stu-id="02a40-115">MYDIR/screen.jpg where MYDIR is a logical directory in Oracle</span></span>|  
+|<span data-ttu-id="02a40-116">TABLE</span><span class="sxs-lookup"><span data-stu-id="02a40-116">TABLE</span></span>|<span data-ttu-id="02a40-117">UPDATE</span><span class="sxs-lookup"><span data-stu-id="02a40-117">UPDATE</span></span>|<span data-ttu-id="02a40-118">文字列</span><span class="sxs-lookup"><span data-stu-id="02a40-118">String</span></span>|<span data-ttu-id="02a40-119">Oracle directory の論理パス ファイルを表す BFILE 列を更新するには</span><span class="sxs-lookup"><span data-stu-id="02a40-119">Represents the logical Oracle directory path to the file to be updated into the BFILE column</span></span>|  
+|<span data-ttu-id="02a40-120">TABLE</span><span class="sxs-lookup"><span data-stu-id="02a40-120">TABLE</span></span>|<span data-ttu-id="02a40-121">SELECT</span><span class="sxs-lookup"><span data-stu-id="02a40-121">SELECT</span></span>|<span data-ttu-id="02a40-122">byte[]</span><span class="sxs-lookup"><span data-stu-id="02a40-122">byte[]</span></span>|<span data-ttu-id="02a40-123">BFILE を構成するバイナリ データを表します</span><span class="sxs-lookup"><span data-stu-id="02a40-123">Represents the binary data constituting the BFILE</span></span>|  
+|<span data-ttu-id="02a40-124">ストアド プロシージャ</span><span class="sxs-lookup"><span data-stu-id="02a40-124">STORED PROC</span></span>|<span data-ttu-id="02a40-125">PARAM で</span><span class="sxs-lookup"><span data-stu-id="02a40-125">IN PARAM</span></span>|<span data-ttu-id="02a40-126">文字列</span><span class="sxs-lookup"><span data-stu-id="02a40-126">String</span></span>|<span data-ttu-id="02a40-127">Oracle directory の論理パス ファイルを表す BFILE 列に挿入します。</span><span class="sxs-lookup"><span data-stu-id="02a40-127">Represents the logical Oracle directory path to the file to be inserted into the BFILE column</span></span><br /><br /> <span data-ttu-id="02a40-128">例:</span><span class="sxs-lookup"><span data-stu-id="02a40-128">E.g.</span></span> <span data-ttu-id="02a40-129">ここで、MYDIR は Oracle では、論理ディレクトリ MYDIR/screen.jpg</span><span class="sxs-lookup"><span data-stu-id="02a40-129">MYDIR/screen.jpg where MYDIR is a logical directory in Oracle</span></span>|  
+|<span data-ttu-id="02a40-130">ストアド プロシージャ</span><span class="sxs-lookup"><span data-stu-id="02a40-130">STORED PROC</span></span>|<span data-ttu-id="02a40-131">OUT パラメーター</span><span class="sxs-lookup"><span data-stu-id="02a40-131">OUT PARAM</span></span>|<span data-ttu-id="02a40-132">文字列</span><span class="sxs-lookup"><span data-stu-id="02a40-132">String</span></span>|<span data-ttu-id="02a40-133">Oracle directory の論理パス ファイルを表す BFILE 列に挿入します。</span><span class="sxs-lookup"><span data-stu-id="02a40-133">Represents the logical Oracle directory path to the file to be inserted into the BFILE column</span></span><br /><br /> <span data-ttu-id="02a40-134">例:</span><span class="sxs-lookup"><span data-stu-id="02a40-134">E.g.</span></span> <span data-ttu-id="02a40-135">ここで、MYDIR は Oracle では、論理ディレクトリ MYDIR/screen.jpg</span><span class="sxs-lookup"><span data-stu-id="02a40-135">MYDIR/screen.jpg where MYDIR is a logical directory in Oracle</span></span>|  
+|<span data-ttu-id="02a40-136">ストアド プロシージャ</span><span class="sxs-lookup"><span data-stu-id="02a40-136">STORED PROC</span></span>|<span data-ttu-id="02a40-137">INOUT パラメーター</span><span class="sxs-lookup"><span data-stu-id="02a40-137">INOUT PARAM</span></span>|<span data-ttu-id="02a40-138">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="02a40-138">Not Supported</span></span>|-|  
+  
+ <span data-ttu-id="02a40-139">特別な操作`Read_<LOBColName>`BFILE データ型を持つテーブルでサポートされても、 \<LOBColName > テーブルの LOB 列名を指定します。</span><span class="sxs-lookup"><span data-stu-id="02a40-139">The special operation `Read_<LOBColName>` is also supported on tables with BFILE data type, where \<LOBColName> is the LOB column name in the table.</span></span> <span data-ttu-id="02a40-140">`Update_<LOBColName>` BFILE データ型の操作がサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="02a40-140">The `Update_<LOBColName>` operation is not supported for BFILE data type.</span></span> <span data-ttu-id="02a40-141">アダプターのクライアントは、更新操作を使用またはできます。</span><span class="sxs-lookup"><span data-stu-id="02a40-141">Adapter clients can alternately use the Update operation.</span></span>  
+  
+## <a name="more-good-info"></a><span data-ttu-id="02a40-142">詳細な情報</span><span class="sxs-lookup"><span data-stu-id="02a40-142">More good info</span></span>  
+  
+-   <span data-ttu-id="02a40-143">`Read_<LOBColName>`と`Update_<LOBColName>`操作で、[インターフェイス テーブル、インターフェイス ビュー、テーブル、およびビューを含む LOB データに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)です。</span><span class="sxs-lookup"><span data-stu-id="02a40-143">The `Read_<LOBColName>` and `Update_<LOBColName>` operations, see [Operations on Interface Tables, Interface Views, Tables, and Views That Contain LOB Data](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="02a40-144">参照</span><span class="sxs-lookup"><span data-stu-id="02a40-144">See Also</span></span>  
+ <span data-ttu-id="02a40-145">[どのような操作をアダプターであるを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)</span><span class="sxs-lookup"><span data-stu-id="02a40-145">[What Operations Can be Performed Using the Adapter?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)</span></span>

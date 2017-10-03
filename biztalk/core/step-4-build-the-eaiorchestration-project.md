@@ -1,0 +1,62 @@
+---
+title: "手順 4: EAIOrchestration プロジェクトのビルド |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 66e4b161-c5ac-404c-9ee5-4c0322fc40f3
+caps.latest.revision: "34"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 992d903fc64740cb9ec4bda762ee5ac032e51a77
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="step-4-build-the-eaiorchestration-project"></a><span data-ttu-id="c09a8-102">ステップ 4: EAIOrchestration プロジェクトのビルド</span><span class="sxs-lookup"><span data-stu-id="c09a8-102">Step 4: Build the EAIOrchestration Project</span></span>
+<span data-ttu-id="c09a8-103">![4 のステップ 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="c09a8-103">![Step 4 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  
+  
+ <span data-ttu-id="c09a8-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="c09a8-104">**Time to complete:** 5 minutes</span></span>  
+  
+ <span data-ttu-id="c09a8-105">**目標:** EAIOrchestration プロジェクト アセンブリにコンパイルするこの手順でします。</span><span class="sxs-lookup"><span data-stu-id="c09a8-105">**Objective:** In this step, you compile the EAIOrchestration project into an assembly.</span></span>  
+  
+ <span data-ttu-id="c09a8-106">**目的:** BizTalk Server には、.NET アセンブリにコンパイルするすべての成果物が必要です。</span><span class="sxs-lookup"><span data-stu-id="c09a8-106">**Purpose:** BizTalk Server requires all the artifacts to be compiled into .NET assemblies.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="c09a8-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="c09a8-107">Prerequisites</span></span>  
+ <span data-ttu-id="c09a8-108">このステップを開始する前に、以下の要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="c09a8-108">Note the following requirements before you begin this step:</span></span>  
+  
+-   <span data-ttu-id="c09a8-109">このステップを開始する前に、次のステップを完了しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="c09a8-109">Before you begin this step you must complete the following steps:</span></span>  
+  
+    -   [<span data-ttu-id="c09a8-110">手順 1: EAIOrchestration プロジェクトをソリューションに追加します。</span><span class="sxs-lookup"><span data-stu-id="c09a8-110">Step 1: Add EAIOrchestration Project to the Solution</span></span>](../core/step-1-add-eaiorchestration-project-to-the-solution.md)  
+  
+    -   [<span data-ttu-id="c09a8-111">手順 2: ビジネス プロセスを定義します。</span><span class="sxs-lookup"><span data-stu-id="c09a8-111">Step 2: Define the Business Process</span></span>](../core/step-2-define-the-business-process.md)  
+  
+    -   [<span data-ttu-id="c09a8-112">手順 3: オーケストレーションのポートを追加します。</span><span class="sxs-lookup"><span data-stu-id="c09a8-112">Step 3: Add Ports to the Orchestration</span></span>](../core/step-3-add-ports-to-the-orchestration.md)  
+  
+## <a name="procedures"></a><span data-ttu-id="c09a8-113">手順</span><span class="sxs-lookup"><span data-stu-id="c09a8-113">Procedures</span></span>  
+  
+#### <a name="to-build-the-eaiorchestration-project"></a><span data-ttu-id="c09a8-114">EAIOrchestration プロジェクトをビルドするには</span><span class="sxs-lookup"><span data-stu-id="c09a8-114">To build the EAIOrchestration project</span></span>  
+  
+-   <span data-ttu-id="c09a8-115">ソリューション エクスプ ローラーで右クリック**EAIOrchestration**、クリックして**ビルド**です。</span><span class="sxs-lookup"><span data-stu-id="c09a8-115">In Solution Explorer, right-click **EAIOrchestration**, and then click **Build**.</span></span>  
+  
+     <span data-ttu-id="c09a8-116">画面の下部に、次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="c09a8-116">The bottom of the screen should display:</span></span>  
+  
+    ```  
+    ========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========  
+    ```  
+  
+## <a name="what-did-i-just-do"></a><span data-ttu-id="c09a8-117">でしただけは何ですか。</span><span class="sxs-lookup"><span data-stu-id="c09a8-117">What did I just do?</span></span>  
+ <span data-ttu-id="c09a8-118">このステップでは、EAIOrchestration プロジェクトをコンパイルしました。</span><span class="sxs-lookup"><span data-stu-id="c09a8-118">In this step, you compiled the EAIOrchestration project.</span></span>  
+  
+## <a name="next-steps"></a><span data-ttu-id="c09a8-119">次の手順</span><span class="sxs-lookup"><span data-stu-id="c09a8-119">Next steps</span></span>  
+ <span data-ttu-id="c09a8-120">では、EAISolution ソリューションを展開する[レッスン 3: ソリューションの配置](../core/lesson-3-deploy-the-solution.md)です。</span><span class="sxs-lookup"><span data-stu-id="c09a8-120">You deploy the EAISolution solution in [Lesson 3: Deploy the Solution](../core/lesson-3-deploy-the-solution.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="c09a8-121">参照</span><span class="sxs-lookup"><span data-stu-id="c09a8-121">See Also</span></span>  
+ <span data-ttu-id="c09a8-122">[手順 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md) </span><span class="sxs-lookup"><span data-stu-id="c09a8-122">[Step 1: Add EAIOrchestration Project to the Solution](../core/step-1-add-eaiorchestration-project-to-the-solution.md) </span></span>  
+ <span data-ttu-id="c09a8-123">[手順 2: ビジネス プロセスを定義します。](../core/step-2-define-the-business-process.md) </span><span class="sxs-lookup"><span data-stu-id="c09a8-123">[Step 2: Define the Business Process](../core/step-2-define-the-business-process.md) </span></span>  
+ [<span data-ttu-id="c09a8-124">手順 3: オーケストレーションのポートを追加します。</span><span class="sxs-lookup"><span data-stu-id="c09a8-124">Step 3: Add Ports to the Orchestration</span></span>](../core/step-3-add-ports-to-the-orchestration.md)
