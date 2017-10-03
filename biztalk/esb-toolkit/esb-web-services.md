@@ -1,0 +1,36 @@
+---
+title: "Web サービスの ESB |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: c122ecdd-344a-4f76-9c73-bf692d479c09
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 94e6f59770e14e14ed9599d0c26bae187f340e59
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="esb-web-services"></a><span data-ttu-id="6d28f-102">ESB Web サービス</span><span class="sxs-lookup"><span data-stu-id="6d28f-102">ESB Web Services</span></span>
+<span data-ttu-id="6d28f-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]次の Web サービスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6d28f-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] contains the following Web services:</span></span>  
+  
+-   <span data-ttu-id="6d28f-104">**Itinerary 入り口 Web サービスです。**これらのサービスは、外部のメッセージを受け入れるし、処理のためのメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="6d28f-104">**Itinerary On-ramp Web services.**These services accept external messages and submit the messages for processing.</span></span> <span data-ttu-id="6d28f-105">日程の内容を実行するサービスを記述するメタデータおよび処理命令が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6d28f-105">The content of an itinerary contains metadata and processing instructions that describe which services to execute.</span></span> <span data-ttu-id="6d28f-106">ルーティング サービスは、するメッセージのルーティング変換サービスでは、メッセージを変換する方法を指定するときにエンドポイントを定義します。</span><span class="sxs-lookup"><span data-stu-id="6d28f-106">Routing services define the endpoints to which the message should be routed, while transformation services specify how messages should be transformed.</span></span> <span data-ttu-id="6d28f-107">これらのサービス処理をサポート一方向と双方向の両方 (要求-応答)。asmx サービスと Windows Communication Foundation (WCF) の両方の実装が提供されます。</span><span class="sxs-lookup"><span data-stu-id="6d28f-107">These services support both one-way and two-way (request-response) processing; both ASMX and Windows Communication Foundation (WCF) implementations are provided.</span></span> <span data-ttu-id="6d28f-108">行程入り口 Web は、サービスをメッセージの種類の特定、メッセージ型を受け入れるようにします。</span><span class="sxs-lookup"><span data-stu-id="6d28f-108">The Itinerary On-ramp Web services are not message type–specific, so they accept any message type.</span></span>  
+  
+-   <span data-ttu-id="6d28f-109">**競合回避モジュールの Web サービスです。**このサービスは、競合回避モジュールのフレームワークでサポートされている解決メカニズムに基づいて ESB エンドポイントを検索するには、Microsoft ESB リゾルバー Framework を呼び出す外部アプリケーションを使用します。</span><span class="sxs-lookup"><span data-stu-id="6d28f-109">**Resolver Web service.**This service allows external applications to call the Microsoft ESB Resolver Framework to look up ESB endpoints based on resolution mechanisms supported by the Resolver Framework.</span></span> <span data-ttu-id="6d28f-110">サービスは、asmx サービスと WCF の両方の実装も提供します。</span><span class="sxs-lookup"><span data-stu-id="6d28f-110">The service also offers both ASMX and WCF implementations.</span></span>  
+  
+-   <span data-ttu-id="6d28f-111">**Web サービスを変換します。**このサービスでは、Microsoft BizTalk Server の実行がマップの実行は BizTalk Server に基づいていませんアプリケーションを BizTalk Server の機能を拡張する、メッセージ ボックスの永続化のオーバーヘッドなしにマップします。</span><span class="sxs-lookup"><span data-stu-id="6d28f-111">**Transformation Web service.**This service allows execution of Microsoft BizTalk Server maps without the overhead of Message Box persistence, extending the capability of BizTalk Server map execution to applications that are not based on BizTalk Server.</span></span> <span data-ttu-id="6d28f-112">サービスは、asmx サービスと WCF の両方の実装を提供します。</span><span class="sxs-lookup"><span data-stu-id="6d28f-112">The service offers both ASMX and WCF implementations.</span></span>  
+  
+-   <span data-ttu-id="6d28f-113">**例外処理の Web サービスです。**このサービスは、外部ソースからの例外メッセージを受け入れると、フォールト processor パイプラインを使用してルートは正規化、追跡、および例外のメッセージを ESB 管理ポータルに公開します。</span><span class="sxs-lookup"><span data-stu-id="6d28f-113">**Exception Handling Web service.**This service accepts exception messages from external sources and routes using the fault processor pipeline will normalize, track, and publish the exception message to the ESB Management Portal.</span></span> <span data-ttu-id="6d28f-114">サービスは、asmx サービスと WCF の両方の実装を提供します。</span><span class="sxs-lookup"><span data-stu-id="6d28f-114">The service offers both ASMX and WCF implementations.</span></span>  
+  
+-   <span data-ttu-id="6d28f-115">**UDDI Web サービスです。**このサービスにより、サービス名、ビジネスのプロバイダー、またはビジネス カテゴリに基づくエンドポイントを検索するには、アプリケーションとユーザー以外の場合はアプリケーションやユーザー、ビジネスのプロバイダー、サービスを操作することもできに格納されているカテゴリ、UDDI のリポジトリ。</span><span class="sxs-lookup"><span data-stu-id="6d28f-115">**UDDI Web service.**This service enables applications and users to look up endpoints based on the service name, business provider, or business category; it also allows applications and users to manipulate the business providers, services, and categories stored in a UDDI repository.</span></span> <span data-ttu-id="6d28f-116">これは、ESB の管理ポータルおよびサード パーティ プロバイダーによって使用されるキーのインフラストラクチャ サービスです。</span><span class="sxs-lookup"><span data-stu-id="6d28f-116">This is a key infrastructure service used by the ESB Management Portal and third-party providers.</span></span>  
+  
+-   <span data-ttu-id="6d28f-117">**BizTalk Operations Web サービスです。**この ASMX ベースのサービスは、BizTalk Server ホスト、オーケストレーション、アプリケーション、およびユーザーとサード パーティ内のコンピューターの場所に関係なく、アプリケーションとホストの状態を簡単にクエリを有効にすると、状態に関する情報を公開BizTalk Server グループです。</span><span class="sxs-lookup"><span data-stu-id="6d28f-117">**BizTalk Operations Web service.**This ASMX-based service exposes information about BizTalk Server hosts, orchestration, applications, and status, enabling users and third parties to easily query for application and host status, regardless of the location of computer(s) within the BizTalk Server group.</span></span> <span data-ttu-id="6d28f-118">クエリには、メッセージの状態とフロー、状態の変更、現在のサービス インスタンス、およびメッセージの詳細を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="6d28f-118">Queries can include message status and flow, status changes, current service instances, and message details.</span></span> <span data-ttu-id="6d28f-119">サービスを更新できますも受信場所。</span><span class="sxs-lookup"><span data-stu-id="6d28f-119">The service can also update receive locations.</span></span> <span data-ttu-id="6d28f-120">これは、ESB の管理ポータルおよびサード パーティ プロバイダーによって使用されるキーのインフラストラクチャ サービスです。</span><span class="sxs-lookup"><span data-stu-id="6d28f-120">This is a key infrastructure service used by the ESB Management Portal and third-party providers.</span></span>  
+  
+ <span data-ttu-id="6d28f-121">一部として提供される Web サービスの詳細については、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を参照してください[BizTalk ESB Toolkit の Web サービスを使用して](../esb-toolkit/using-the-biztalk-esb-toolkit-web-services.md)です。</span><span class="sxs-lookup"><span data-stu-id="6d28f-121">For more information about the Web services provided as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], see [Using the BizTalk ESB Toolkit Web Services](../esb-toolkit/using-the-biztalk-esb-toolkit-web-services.md).</span></span>

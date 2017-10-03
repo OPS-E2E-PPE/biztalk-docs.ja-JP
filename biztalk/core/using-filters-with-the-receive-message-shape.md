@@ -1,0 +1,59 @@
+---
+title: "受信メッセージ図形にフィルターを使用して |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- filters, receive messages
+- messages, filters
+ms.assetid: 5310039b-6719-4971-933a-2da0573fb5e7
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 1434e9704e073cfef1503ef550409e6d6414bb7c
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="using-filters-with-the-receive-message-shape"></a><span data-ttu-id="878d2-102">受信メッセージ図形にフィルターを使用します。</span><span class="sxs-lookup"><span data-stu-id="878d2-102">Using Filters With the Receive Message Shape</span></span>
+<span data-ttu-id="878d2-103">フィルター式は、"アクティブ化" プロパティに対して値 True を指定するオーケストレーションの受信図形に適用できる、オプションのパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="878d2-103">A filter expression is an optional parameter that can be applied to an orchestration receive shape that specifies a value of True for the Activate property.</span></span> <span data-ttu-id="878d2-104">フィルター式が指定された場合、受信メッセージがフィルター式で指定された条件に一致する場合にのみ、オーケストレーションがアクティブ化されます。</span><span class="sxs-lookup"><span data-stu-id="878d2-104">If a filter expression is specified then the orchestration will only be activated if an incoming message matches the condition(s) specified in the filter expression.</span></span> <span data-ttu-id="878d2-105">フィルター式が指定されていない場合は、オーケストレーションがサブスクライブする受信メッセージによって、オーケストレーションがアクティブ化されます。</span><span class="sxs-lookup"><span data-stu-id="878d2-105">If no filter expression is specified then any incoming message that the orchestration subscribes to will activate the orchestration.</span></span>  
+  
+ <span data-ttu-id="878d2-106">フィルター式を作成するには、式の左側にある受信メッセージのプロパティを式の右側にある定数と比較します。</span><span class="sxs-lookup"><span data-stu-id="878d2-106">To create a filter expression, you compare a property of an incoming message on the left side of the expression with a constant on the right side of the expression.</span></span> <span data-ttu-id="878d2-107">複数の式に AND および OR 演算子を適用することによって、複合式を作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="878d2-107">You can also create compound expressions by applying the AND and OR operators to two or more expressions.</span></span> <span data-ttu-id="878d2-108">フィルター式を空のままにすることもできます。この場合、すべてのメッセージが受け入れられます。</span><span class="sxs-lookup"><span data-stu-id="878d2-108">You can also leave blank the filter expression, in which case all messages will be accepted.</span></span>  
+  
+ <span data-ttu-id="878d2-109">フィルター式は以下のようになります。</span><span class="sxs-lookup"><span data-stu-id="878d2-109">A filter expression might look like the following:</span></span>  
+  
+```  
+InvoiceSchema.Quantity >= 1000  
+```  
+  
+ <span data-ttu-id="878d2-110">この例では、受信メッセージはオーケストレーションに提示されます。</span><span class="sxs-lookup"><span data-stu-id="878d2-110">In this example, an incoming message is presented to the orchestration.</span></span> <span data-ttu-id="878d2-111">オーケストレーションがアクティブ化**受信**図形 (、**アクティベーション**プロパティに設定されている**True**ように、特定のメッセージの受信を実行するオーケストレーション)、適用される前のフィルター式を使用します。</span><span class="sxs-lookup"><span data-stu-id="878d2-111">The orchestration has an activation **Receive** shape (the **Activation** property is set to **True** so that receipt of a certain message will cause the orchestration to be run) with the preceding filter expression applied to it.</span></span> <span data-ttu-id="878d2-112">名前空間に Quantity という名前のプロパティを持つ受信メッセージを期待**InvoiceSchema**です。</span><span class="sxs-lookup"><span data-stu-id="878d2-112">The incoming message is expected to have property called Quantity in the namespace **InvoiceSchema**.</span></span> <span data-ttu-id="878d2-113">このオーケストレーションは、1000 以上のアイテムに対する請求書のみ受け付けるため、ランタイム エンジンは実行する前に受信メッセージを確認します。</span><span class="sxs-lookup"><span data-stu-id="878d2-113">The orchestration accepts only invoices for 1000 or more items, so the runtime engine checks the incoming message before it runs.</span></span>  
+  
+ <span data-ttu-id="878d2-114">次の表に、フィルター式で使用可能な演算子を示します。</span><span class="sxs-lookup"><span data-stu-id="878d2-114">The following table shows operators that you can use in filter expressions.</span></span>  
+  
+|<span data-ttu-id="878d2-115">演算子</span><span class="sxs-lookup"><span data-stu-id="878d2-115">Operator</span></span>|<span data-ttu-id="878d2-116">Description</span><span class="sxs-lookup"><span data-stu-id="878d2-116">Description</span></span>|<span data-ttu-id="878d2-117">例</span><span class="sxs-lookup"><span data-stu-id="878d2-117">Example</span></span>|  
+|--------------|-----------------|-------------|  
+|==|<span data-ttu-id="878d2-118">一致します。</span><span class="sxs-lookup"><span data-stu-id="878d2-118">equal to</span></span>|<span data-ttu-id="878d2-119">ReqMsg(Total) == 100</span><span class="sxs-lookup"><span data-stu-id="878d2-119">ReqMsg(Total) == 100</span></span>|  
+|<span data-ttu-id="878d2-120">!=</span><span class="sxs-lookup"><span data-stu-id="878d2-120">!=</span></span>|<span data-ttu-id="878d2-121">等しくないです。</span><span class="sxs-lookup"><span data-stu-id="878d2-121">not equal to</span></span>|<span data-ttu-id="878d2-122">ReqMsg(Total) != 100</span><span class="sxs-lookup"><span data-stu-id="878d2-122">ReqMsg(Total) != 100</span></span>|  
+|<|<span data-ttu-id="878d2-123">小さい</span><span class="sxs-lookup"><span data-stu-id="878d2-123">less than</span></span>|<span data-ttu-id="878d2-124">ReqMsg(Total) \< 100</span><span class="sxs-lookup"><span data-stu-id="878d2-124">ReqMsg(Total) \< 100</span></span>|  
+|>|<span data-ttu-id="878d2-125">大きい</span><span class="sxs-lookup"><span data-stu-id="878d2-125">greater than</span></span>|<span data-ttu-id="878d2-126">ReqMsg(Total) > 100</span><span class="sxs-lookup"><span data-stu-id="878d2-126">ReqMsg(Total) > 100</span></span>|  
+|<=|<span data-ttu-id="878d2-127">以下に</span><span class="sxs-lookup"><span data-stu-id="878d2-127">less than or equal to</span></span>|<span data-ttu-id="878d2-128">ReqMsg(Total) \<100 を =</span><span class="sxs-lookup"><span data-stu-id="878d2-128">ReqMsg(Total) \<= 100</span></span>|  
+|>=|<span data-ttu-id="878d2-129">大きいまたは等しい</span><span class="sxs-lookup"><span data-stu-id="878d2-129">greater than or equal to</span></span>|<span data-ttu-id="878d2-130">ReqMsg(Total) > = 100</span><span class="sxs-lookup"><span data-stu-id="878d2-130">ReqMsg(Total) >= 100</span></span>|  
+|<span data-ttu-id="878d2-131">存在する</span><span class="sxs-lookup"><span data-stu-id="878d2-131">exists</span></span>|<span data-ttu-id="878d2-132">存在する</span><span class="sxs-lookup"><span data-stu-id="878d2-132">exists</span></span>|<span data-ttu-id="878d2-133">ReqMsg(Description) exists</span><span class="sxs-lookup"><span data-stu-id="878d2-133">ReqMsg(Description) exists</span></span>|  
+  
+> [!NOTE]
+>  <span data-ttu-id="878d2-134">たとえばフィルター式の文字列値を引用符で囲まれた: reqmsg (description) =「注文書の状態」です。</span><span class="sxs-lookup"><span data-stu-id="878d2-134">String values in filter expressions are enclosed in quotation marks, for example: ReqMsg(Description) = "Purchase Order Status".</span></span> <span data-ttu-id="878d2-135">フィルター式では文字値を使用できません。</span><span class="sxs-lookup"><span data-stu-id="878d2-135">You cannot use a character value in a filter expression.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="878d2-136">アクティブ化受信が直接バインド ポートに関連付けられており、その後、フィルターでテストされたプロパティに対する同じ値を持つ同じ種類のメッセージを送信する場合、無限ループが作成されます。</span><span class="sxs-lookup"><span data-stu-id="878d2-136">If your activate receive is associated with a direct-bound port, and you subsequently send a message of the same type with the same value for the property tested in your filter, you will create an infinite loop.</span></span> <span data-ttu-id="878d2-137">メッセージはメッセージ ボックスに送られますが、フィルター条件に一致するため、そこで再度取得されます。</span><span class="sxs-lookup"><span data-stu-id="878d2-137">The message will go to the MessageBox, where it will be picked up again because it matches the filter criteria.</span></span> <span data-ttu-id="878d2-138">これを避けるには、別のプロパティに対してフィルター処理を行い、別の種類のメッセージを送信するか、同じ種類のメッセージを送信する前にプロパティの値を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="878d2-138">To avoid this, you should either filter on a different property, send a message of a different type, or be sure to change the value of the property before sending out a message of the same type.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="878d2-139">参照</span><span class="sxs-lookup"><span data-stu-id="878d2-139">See Also</span></span>  
+ <span data-ttu-id="878d2-140">[受信図形を構成する方法](../core/how-to-configure-the-receive-shape.md) </span><span class="sxs-lookup"><span data-stu-id="878d2-140">[How to Configure the Receive Shape](../core/how-to-configure-the-receive-shape.md) </span></span>  
+ <span data-ttu-id="878d2-141">[オーケストレーションでの相関関係の使用](../core/using-correlations-in-orchestrations.md) </span><span class="sxs-lookup"><span data-stu-id="878d2-141">[Using Correlations in Orchestrations](../core/using-correlations-in-orchestrations.md) </span></span>  
+ <span data-ttu-id="878d2-142">[識別フィールドおよびプロパティ フィールドの使用](../core/using-distinguished-fields-and-property-fields.md) </span><span class="sxs-lookup"><span data-stu-id="878d2-142">[Using Distinguished Fields and Property Fields](../core/using-distinguished-fields-and-property-fields.md) </span></span>  
+ [<span data-ttu-id="878d2-143">オーケストレーションでメッセージの使用</span><span class="sxs-lookup"><span data-stu-id="878d2-143">Using Messages in Orchestrations</span></span>](../core/using-messages-in-orchestrations.md)

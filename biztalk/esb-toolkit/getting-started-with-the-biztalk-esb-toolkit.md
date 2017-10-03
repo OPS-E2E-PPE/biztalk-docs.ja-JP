@@ -1,0 +1,48 @@
+---
+title: "BizTalk ESB Toolkit の概要 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 59fee2fc-6689-445a-aaf7-2b0aafa71db5
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: d1570cb5b132c716de0e81318122f3f8949c2d0f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="getting-started-with-the-biztalk-esb-toolkit"></a><span data-ttu-id="aa807-102">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="aa807-102">Getting Started with the BizTalk ESB Toolkit</span></span>
+<span data-ttu-id="aa807-103">このトピックは、設計と操作のための概念を説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コンポーネントとサービスの ESB が有効なソリューションを構築するために使用します。</span><span class="sxs-lookup"><span data-stu-id="aa807-103">This topic explains the concepts for the design and operation of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] components and services used to build ESB-enabled solutions.</span></span> <span data-ttu-id="aa807-104">このトピックには、次のトピックのセクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="aa807-104">This topic includes the following topic sections:</span></span>  
+  
+-   [<span data-ttu-id="aa807-105">BizTalk ESB Toolkit のアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="aa807-105">Architecture of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/architecture-of-the-biztalk-esb-toolkit.md)  
+  
+-   [<span data-ttu-id="aa807-106">メッセージ フローを理解します。</span><span class="sxs-lookup"><span data-stu-id="aa807-106">Understanding Message Flow</span></span>](../esb-toolkit/understanding-message-flow.md)  
+  
+-   [<span data-ttu-id="aa807-107">一般的なユース ケース</span><span class="sxs-lookup"><span data-stu-id="aa807-107">Typical Use Cases</span></span>](../esb-toolkit/typical-use-cases.md)  
+  
+## <a name="using-the-biztalk-esb-toolkit-documentation"></a><span data-ttu-id="aa807-108">BizTalk ESB Toolkit のドキュメントを使用します。</span><span class="sxs-lookup"><span data-stu-id="aa807-108">Using the BizTalk ESB Toolkit Documentation</span></span>  
+ <span data-ttu-id="aa807-109">関連する特定のトピックに関する他の情報[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、次のリソースを参照してください。</span><span class="sxs-lookup"><span data-stu-id="aa807-109">For additional information regarding specific topics related to [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], see the following resources.</span></span>  
+  
+|<span data-ttu-id="aa807-110">情報</span><span class="sxs-lookup"><span data-stu-id="aa807-110">Information</span></span>|<span data-ttu-id="aa807-111">リンク</span><span class="sxs-lookup"><span data-stu-id="aa807-111">Link</span></span>|  
+|-----------------|----------|  
+|<span data-ttu-id="aa807-112">ESB アーキテクチャの概念の詳細について</span><span class="sxs-lookup"><span data-stu-id="aa807-112">To learn more about the concepts of an ESB architecture</span></span>|[<span data-ttu-id="aa807-113">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="aa807-113">Introduction to the BizTalk ESB Toolkit</span></span>](../esb-toolkit/introduction-to-the-biztalk-esb-toolkit.md)|  
+|<span data-ttu-id="aa807-114">効率的の機能と利点を理解します。[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-114">To better understand the features and benefits of [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-115">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="aa807-115">Overview of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/overview-of-the-biztalk-esb-toolkit.md)|  
+|<span data-ttu-id="aa807-116">一部として含まれるコンポーネントを表示するには[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-116">To see the components included as part of [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-117">BizTalk ESB Toolkit の内容</span><span class="sxs-lookup"><span data-stu-id="aa807-117">Contents of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/contents-of-the-biztalk-esb-toolkit.md)|  
+|<span data-ttu-id="aa807-118">アーキテクチャに関する詳細については、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-118">To learn more about the architecture of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-119">BizTalk ESB Toolkit のアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="aa807-119">Architecture of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/architecture-of-the-biztalk-esb-toolkit.md)|  
+|<span data-ttu-id="aa807-120">主なシナリオを調べるには[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-120">To explore key scenarios for the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-121">主要なシナリオおよび開発タスク</span><span class="sxs-lookup"><span data-stu-id="aa807-121">Key Scenarios and Development Tasks</span></span>](../esb-toolkit/key-scenarios-and-development-tasks.md)|  
+|<span data-ttu-id="aa807-122">一般的なユース ケースを調べるには[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-122">To examine common use cases for the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-123">一般的なユース ケース</span><span class="sxs-lookup"><span data-stu-id="aa807-123">Typical Use Cases</span></span>](../esb-toolkit/typical-use-cases.md)|  
+|<span data-ttu-id="aa807-124">ESB Web サービスの詳細について</span><span class="sxs-lookup"><span data-stu-id="aa807-124">To learn more about the ESB Web services</span></span>|[<span data-ttu-id="aa807-125">BizTalk ESB Toolkit の Web サービスの使用</span><span class="sxs-lookup"><span data-stu-id="aa807-125">Using the BizTalk ESB Toolkit Web Services</span></span>](../esb-toolkit/using-the-biztalk-esb-toolkit-web-services.md)|  
+|<span data-ttu-id="aa807-126">ESB 例外管理システムの詳細について</span><span class="sxs-lookup"><span data-stu-id="aa807-126">To learn more about the ESB exception management system</span></span>|[<span data-ttu-id="aa807-127">ESB 例外管理を使用します。</span><span class="sxs-lookup"><span data-stu-id="aa807-127">Using ESB Exception Management</span></span>](../esb-toolkit/using-esb-exception-management.md)|  
+|<span data-ttu-id="aa807-128">詳細について、日程と旅程デザイナー</span><span class="sxs-lookup"><span data-stu-id="aa807-128">To learn more about the itineraries and the Itinerary Designer</span></span>|[<span data-ttu-id="aa807-129">Itinerary Designer を使用して日程を作成します。</span><span class="sxs-lookup"><span data-stu-id="aa807-129">Creating Itineraries Using Itinerary Designer</span></span>](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)|  
+|<span data-ttu-id="aa807-130">Java Message Service (JMS) MQ Series のメッセージング システムと BizTalk Server を統合するには</span><span class="sxs-lookup"><span data-stu-id="aa807-130">To integrate Java Message Service (JMS) MQ Series messaging systems with BizTalk Server</span></span>|[<span data-ttu-id="aa807-131">インストールして、JMS MQRFH2 コンポーネント サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="aa807-131">Installing and Running the JMS MQRFH2 Component Sample</span></span>](../esb-toolkit/installing-and-running-the-jms-mqrfh2-component-sample.md)|  
+|<span data-ttu-id="aa807-132">監視と管理の機能に関する詳細については、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-132">To learn more about the monitoring and management features of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-133">BizTalk ESB Toolkit を使用した管理</span><span class="sxs-lookup"><span data-stu-id="aa807-133">Administration with the BizTalk ESB Toolkit</span></span>](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)|  
+|<span data-ttu-id="aa807-134">一部として含まれているサンプル アプリケーションを確認するには[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-134">To examine sample applications included as part of [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-135">BizTalk ESB Toolkit のサンプル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="aa807-135">BizTalk ESB Toolkit Sample Applications</span></span>](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)|  
+|<span data-ttu-id="aa807-136">3 番目の部分で構成サービスの管理ツールを統合するには</span><span class="sxs-lookup"><span data-stu-id="aa807-136">To integrate third-part service governance tools</span></span>|[<span data-ttu-id="aa807-137">SOA ガバナンスの統合</span><span class="sxs-lookup"><span data-stu-id="aa807-137">SOA Governance Integration</span></span>](../esb-toolkit/soa-governance-integration.md)|  
+|<span data-ttu-id="aa807-138">変更および拡張を[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa807-138">To modify and extend the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]</span></span>|[<span data-ttu-id="aa807-139">変更して、BizTalk ESB Toolkit の拡張</span><span class="sxs-lookup"><span data-stu-id="aa807-139">Modifying and Extending the BizTalk ESB Toolkit</span></span>](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)|

@@ -1,0 +1,1 @@
+<span data-ttu-id="69ee9-101">.NET Framework Data Provider 用 Siebel eBusiness Applications</span><span class="sxs-lookup"><span data-stu-id="69ee9-101">.NET Framework Data Provider for Siebel eBusiness Applications</span></span>
