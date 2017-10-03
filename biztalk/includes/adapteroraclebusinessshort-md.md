@@ -1,0 +1,1 @@
+<span data-ttu-id="d8a86-101">Oracle E-Business アダプター</span><span class="sxs-lookup"><span data-stu-id="d8a86-101">Oracle E-Business adapter</span></span>

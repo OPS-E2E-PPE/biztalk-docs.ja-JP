@@ -1,0 +1,1 @@
+<span data-ttu-id="d714d-101">取引先管理</span><span class="sxs-lookup"><span data-stu-id="d714d-101">Trading Partner Management</span></span>

@@ -1,0 +1,45 @@
+---
+title: "パフォーマンス基準を確立する |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 181011d1-aa74-43fe-b05a-30b043956d70
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 5317445a5cf7e1e0b3fc07ab6ac301c764501460
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="establishing-performance-criteria"></a><span data-ttu-id="6a4ad-102">パフォーマンス基準を確立します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-102">Establishing Performance Criteria</span></span>
+<span data-ttu-id="6a4ad-103">BizTalk Server ソリューションのパフォーマンスの目標は、通常、2 つのカテゴリ、スループットや待機時間のいずれかに分類されます。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-103">The performance goals of a BizTalk Server solution typically fall into one of two categories, throughput or latency.</span></span> <span data-ttu-id="6a4ad-104">このトピックでは、スループットや、BizTalk Server ソリューションの待機時間を評価するときに考慮すべき要因について説明します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-104">This topic describes the factors that should be considered when evaluating the throughput or latency of a BizTalk Server solution.</span></span>  
+  
+> [!NOTE]  
+>  <span data-ttu-id="6a4ad-105">多くの場合、スループットまたは BizTalk Server ソリューションの待機時間を最適化するには、競合している目標を表します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-105">Optimizing throughput or latency of a BizTalk Server solution often represents conflicting goals.</span></span> <span data-ttu-id="6a4ad-106">たとえばを向上する可能性があります、バッチ サイズを増やすことで、ファイルのスループットの受信アダプターが、待機時間が短縮するとします。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-106">For example, you might improve the throughput of the file receive adapter by increasing the batch size, but doing so would reduce latency.</span></span> <span data-ttu-id="6a4ad-107">このシナリオでは、アダプターはバッチ サイズを大きく、さらに、特定のメッセージのエンド ツー エンドの待機時間が減るのメッセージを蓄積する時間がかかります。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-107">In this scenario the adapter takes longer to accumulate messages for a larger batch size, which in turn will reduce end-to-end latency for a given message.</span></span>  
+  
+## <a name="factors-affecting-throughput-of-a-biztalk-server-solution"></a><span data-ttu-id="6a4ad-108">BizTalk Server ソリューションのスループットに影響する要因</span><span class="sxs-lookup"><span data-stu-id="6a4ad-108">Factors affecting throughput of a BizTalk Server solution</span></span>  
+ <span data-ttu-id="6a4ad-109">**スループット**- BizTalk Server ソリューションで指定された時間間隔内で処理できるドキュメントの数として広く測定します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-109">**Throughput**- Broadly measured as the number of documents that a BizTalk Server solution can process within a given time interval.</span></span>  
+  
+ <span data-ttu-id="6a4ad-110">スループットに影響する要因は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-110">Factors that affect throughput include:</span></span>  
+  
+-   <span data-ttu-id="6a4ad-111">**メッセージのサイズ**– サイズの大きいメッセージがメッセージのマップに変換され、マッピング操作中に、ファイル システムにバッファリングするようにのに十分な場合に特に、小さいメッセージは、以上のオーバーヘッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-111">**Message size** – Larger messages consume more overhead than smaller messages, especially if the messages are transformed with a map and are large enough so that they are buffered to the file system during the mapping operation.</span></span> <span data-ttu-id="6a4ad-112">メッセージのサイズが BizTalk Server のパフォーマンスに与える影響の詳細については、次を参照してください。[どのように BizTalk Server プロセス サイズの大きいメッセージ](http://go.microsoft.com/fwlink/?LinkId=139293)(http://go.microsoft.com/fwlink/?LinkId=139293)。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-112">For more information about how message size affects BizTalk Server performance, see [How BizTalk Server Processes Large Messages](http://go.microsoft.com/fwlink/?LinkId=139293) (http://go.microsoft.com/fwlink/?LinkId=139293).</span></span>  
+  
+-   <span data-ttu-id="6a4ad-113">**メッセージ形式**-2 つの主な形式を XML ファイルまたはフラット ファイルのいずれかで BizTalk Server にメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-113">**Message format** - Messages are received into BizTalk Server in one of two primary formats, XML files or flat files.</span></span> <span data-ttu-id="6a4ad-114">フラット ファイルは、BizTalk メッセージング エンジンによって処理される XML 形式に変換する必要があります、ため追加のオーバーヘッドがフラット ファイルの処理で発生します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-114">Because flat files must be translated into the XML format to be processed by the BizTalk Messaging engine, additional overhead is incurred by the processing of flat files.</span></span>  
+  
+-   <span data-ttu-id="6a4ad-115">**アダプターの要件**– 別のアダプターは、さまざまなパフォーマンス機能を多くの場合があります。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-115">**Adapter requirements** – Different adapters frequently have varying performance capabilities.</span></span> <span data-ttu-id="6a4ad-116">たとえば、MSDTC トランザクション サポートが必要なアダプターには、追加のオーバーヘッド/縮小と比べるとパフォーマンスを MSDTC トランザクションを使用しないアダプターは発生させます。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-116">For example, adapters that require MSDTC transaction support will incur additional overhead/reduced performance as compared to an adapter that does not use MSDTC transactions.</span></span> <span data-ttu-id="6a4ad-117">BizTalk ソリューションで使用されるアダプターは、取引先の要件や内部のビジネス ニーズに応じて異なります。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-117">Adapters used by the BizTalk solution will vary depending on your trading partner’s requirements and/or internal business needs.</span></span>  
+  
+-   <span data-ttu-id="6a4ad-118">**オーケストレーションの処理要件**– オーケストレーションがカプセル化するための優れた柔軟性を提供し、BizTalk で受信したメッセージをビジネス プロセスを適用します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-118">**Orchestration processing requirements** – Orchestrations provide great flexibility for encapsulating and applying business processes to messages received by BizTalk.</span></span> <span data-ttu-id="6a4ad-119">同時には、オーケストレーションは、BizTalk Server ソリューションのスループットを見積もる場合に考慮する必要がありますのオーバーヘッドを消費します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-119">At the same time, orchestrations consume overhead, which must be considered when estimating the throughput of a BizTalk Server solution.</span></span>  
+  
+-   <span data-ttu-id="6a4ad-120">**ピーク負荷要件**– 測定規則的でドキュメント処理の大部分は必ずしも発生しません。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-120">**Peak load requirements** – Most document processing does not necessarily occur in a measured orderly fashion.</span></span> <span data-ttu-id="6a4ad-121">など、BizTalk Server ソリューションは、営業時間の終了時に、その処理負荷の大きな割合を維持することがあります。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-121">For example, a BizTalk Server solution may sustain a large percentage of its processing load at the close of a business day.</span></span> <span data-ttu-id="6a4ad-122">したがってピーク負荷要件と、BizTalk Server ソリューションの最大持続可能なスループット (MST) 点を考慮してアカウントのスループットの条件を確立するときにします。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-122">Therefore peak load requirements and the Maximum Sustainable Throughput (MST) of a BizTalk Server solution should be taken into account when establishing throughput criteria.</span></span> <span data-ttu-id="6a4ad-123">詳細については、BizTalk Server ソリューションの MST を測定を参照してください[測定最大エンジン スループット](http://go.microsoft.com/fwlink/?LinkID=154388)(http://go.microsoft.com/fwlink/?。LinkID = 154388) および[維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID = 153815)。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-123">For more information about measuring the MST of a BizTalk Server solution, see [Measuring Maximum Sustainable Engine Throughput](http://go.microsoft.com/fwlink/?LinkID=154388) (http://go.microsoft.com/fwlink/?LinkID=154388) and [Measuring Maximum Sustainable Tracking Throughput](http://go.microsoft.com/fwlink/?LinkID=153815) (http://go.microsoft.com/fwlink/?LinkID=153815).</span></span>  
+  
+-   <span data-ttu-id="6a4ad-124">**ドキュメント追跡の要件**: ドキュメント追跡のオーバーヘッドは追加、システムにします。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-124">**Document tracking requirements** – Document tracking imposes additional overhead on the system.</span></span> <span data-ttu-id="6a4ad-125">ドキュメント追跡の要件は、BizTalk ソリューションのスループットの目標を見積もるときに、主要な考慮事項をする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-125">Document tracking requirements should be a primary consideration when estimating the throughput goals of a BizTalk solution.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="6a4ad-126">参照</span><span class="sxs-lookup"><span data-stu-id="6a4ad-126">See Also</span></span>  
+ [<span data-ttu-id="6a4ad-127">BizTalk Server のパフォーマンスをテストする方法</span><span class="sxs-lookup"><span data-stu-id="6a4ad-127">BizTalk Server Performance Testing Methodology</span></span>](../technical-guides/biztalk-server-performance-testing-methodology.md)

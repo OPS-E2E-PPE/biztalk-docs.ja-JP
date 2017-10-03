@@ -1,0 +1,36 @@
+---
+title: "BizTalk Server データベースを維持するためのベスト プラクティス |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 93333f41-ee83-4b64-b381-66584a7d5551
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: b5f6cf1fadf5c039c53e6cca46792c4660353d0c
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="best-practices-for-maintaining-biztalk-server-databases"></a><span data-ttu-id="9b5ae-102">BizTalk Server データベースを維持するためのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="9b5ae-102">Best Practices for Maintaining BizTalk Server Databases</span></span>
+<span data-ttu-id="9b5ae-103">このトピックの一覧を維持するためのベスト プラクティス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-103">This topic lists some best practices for maintaining [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.</span></span>  
+  
+-   <span data-ttu-id="9b5ae-104">SQL Server で、SQL Server エージェントが実行されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-104">Make sure the SQL Server Agent is running on the SQL Server.</span></span> <span data-ttu-id="9b5ae-105">SQL Server エージェントが停止したときに、データベースのメンテナンスを担当する組み込みの BizTalk SQL Server エージェント ジョブは実行できません。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-105">When the SQL Server Agent is stopped, the built-in BizTalk SQL Server Agent jobs that are responsible for database maintenance cannot run.</span></span> <span data-ttu-id="9b5ae-106">この動作により、データベースの増大して、この成長のパフォーマンスの問題が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-106">This behavior causes database growth, and this growth may cause performance issues.</span></span> <span data-ttu-id="9b5ae-107">SQL Server エージェント ジョブの監視については、次を参照してください。 [SQL Server エージェント ジョブの監視](../technical-guides/monitoring-sql-server-agent-jobs.md)です。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-107">For information about monitoring SQL Server Agent Jobs see [Monitoring SQL Server Agent Jobs](../technical-guides/monitoring-sql-server-agent-jobs.md).</span></span>  
+  
+-   <span data-ttu-id="9b5ae-108">SQL Server LDF と MDF ファイルが別々 のドライブに確認してください。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-108">Make sure the SQL Server LDF and MDF files are on separate drives.</span></span> <span data-ttu-id="9b5ae-109">同じドライブ上、BizTalkMsgBoxDb と BizTalkDTADb データベースの LDF と MDF ファイルと、ディスクの競合する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-109">Having the LDF and MDF files for the BizTalkMsgBoxDb and BizTalkDTADb databases on the same drive may result in disk contention.</span></span>  
+  
+-   <span data-ttu-id="9b5ae-110">メッセージ本文が必要ない場合、追跡を有効にしません。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-110">Do not enable message body tracking, if not required.</span></span> <span data-ttu-id="9b5ae-111">多くの場合、メッセージ本文の追跡を開発し、ソリューションをトラブルシューティングするときに有効にすることがあります。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-111">Frequently, you may want to enable message body tracking while you develop and troubleshoot a solution.</span></span> <span data-ttu-id="9b5ae-112">その場合は、メッセージ本文の追跡が完了したら無効にすることを確認します。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-112">If so, make sure you disable message body tracking when you are done.</span></span> <span data-ttu-id="9b5ae-113">メッセージ本文の追跡を保持する有効な場合、BizTalk Server データベースの拡大します。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-113">If you keep message body tracking enabled, the BizTalk Server databases grow.</span></span> <span data-ttu-id="9b5ae-114">メッセージ本文の追跡を有効にする必要があるビジネス ニーズがあれば、いることを確認、 **TrackedMessages_Copy_BizTalkMsgBoxDb**と**DTA Purge and Archive** SQL Server エージェント ジョブを実行しています。正常にします。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-114">If you have a business need that requires you to enable message body tracking, confirm that the **TrackedMessages_Copy_BizTalkMsgBoxDb** and **DTA Purge and Archive** SQL Server Agent jobs are running successfully.</span></span>  
+  
+-   <span data-ttu-id="9b5ae-115">通常、小規模なトランザクション ログには、パフォーマンス向上が発生することです。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-115">Typically, smaller transaction logs cause better performance.</span></span> <span data-ttu-id="9b5ae-116">トランザクション ログを小さく保ち、構成、 **BizTalk Server のバックアップ**より頻繁に実行する SQL Server エージェント ジョブ。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-116">To keep the transaction logs smaller, configure the **Backup BizTalk Server** SQL Server Agent job to run more frequently.</span></span> <span data-ttu-id="9b5ae-117">詳細については、次を参照してください。、 [BizTalk Server データベースの最適化のホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkId=153594) (http://go.microsoft.com/fwlink/?LinkId=153594)。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-117">For more information, see the [BizTalk Server Database Optimization white paper](http://go.microsoft.com/fwlink/?LinkId=153594) (http://go.microsoft.com/fwlink/?LinkId=153594).</span></span>  
+  
+-   <span data-ttu-id="9b5ae-118">使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既存を評価するベスト プラクティス アナライザー (BPA)[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開します。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-118">Use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Best Practices Analyzer (BPA) to evaluate an existing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployment.</span></span> <span data-ttu-id="9b5ae-119">BPA は、多数のデータベースに関連するチェックを実行します。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-119">The BPA performs numerous database-related checks.</span></span> <span data-ttu-id="9b5ae-120">BizTalk Server のベスト プラクティス アナライザー ツールをダウンロードする[BizTalk Server のベスト プラクティス アナライザー ツール](http://go.microsoft.com/fwlink/?LinkId=83317)(http://go.microsoft.com/fwlink/?LinkId=83317)。</span><span class="sxs-lookup"><span data-stu-id="9b5ae-120">You can download the BizTalk Server Best Practices Analyzer tool from [BizTalk Server Best Practices Analyzer tool](http://go.microsoft.com/fwlink/?LinkId=83317) (http://go.microsoft.com/fwlink/?LinkId=83317).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="9b5ae-121">参照</span><span class="sxs-lookup"><span data-stu-id="9b5ae-121">See Also</span></span>  
+ <span data-ttu-id="9b5ae-122">[チェックリスト: を維持し、BizTalk Server データベースのトラブルシューティング](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md) </span><span class="sxs-lookup"><span data-stu-id="9b5ae-122">[Checklist: Maintaining and Troubleshooting BizTalk Server Databases](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md) </span></span>  
+ [<span data-ttu-id="9b5ae-123">BizTalk Server データベース テーブルの大規模な成長</span><span class="sxs-lookup"><span data-stu-id="9b5ae-123">Large-growing BizTalk Server Database Tables</span></span>](../technical-guides/large-growing-biztalk-server-database-tables.md)
