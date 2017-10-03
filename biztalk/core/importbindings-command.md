@@ -1,0 +1,65 @@
+---
+title: "ImportBindings コマンド |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 6b8dd1ee-1719-4cd1-b503-b004f312daeb
+caps.latest.revision: "25"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 576f9055e7b70ab43cc150f208f8c55789f28da8
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="importbindings-command"></a>ImportBindings コマンド
+XML ベースのバインド ファイルから、BizTalk アプリケーションまたはグループにバインドをインポートします。 バインド可能性がありますがからエクスポートされたアセンブリ、アプリケーション、またはグループ、」の説明に従って[バインドのエクスポート](../core/exporting-bindings6.md)です。 バインドがどこからエクスポートされたかによって、ApplicationName パラメーターと GroupLevel パラメーターの作用が異なります。 詳細については、後の「解説」を参照してください。  
+  
+> [!NOTE]
+>  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で生成されたバインド ファイルでは、アプリケーションが指定されません。 これらは、既定のアプリケーションにインポートされます。  
+  
+## <a name="usage"></a>使用方法  
+ **BTSTask ImportBindings-ソース**:*値*[**- GroupLevel** & #124 です。**- ApplicationName**:*値*] [**-サーバー**:*値*] [**-データベース**:*値*] [**- ImportTrackingSettings**:*値*] [**- ExcludeParties**]
+  
+## <a name="parameters"></a>パラメーター  
+  
+|パラメーター|必須|値|  
+|---------------|--------------|-----------|  
+|**-ソース**(または**-ように**、「解説」を参照してください)|必須|インポートするバインド ファイルの完全パス (ファイル名を含む)。 パスにスペースが含まれる場合は、二重引用符 (") で囲む必要があります。|  
+|**-GroupLevel** (または**-g**、「解説」を参照してください)|省略可|バインド ファイルを現在のグループにインポートするためのオプション。 このパラメーターを指定した場合は、/ApplicationName は指定しません。|  
+|**-ApplicationName** (または**-a**、「解説」を参照してください)|省略可|バインドをインポートする BizTalk アプリケーションの名前。 名前には、スペースが含まれている場合は、二重引用符 (") で囲む必要があります。 アプリケーションが存在している必要があります。アプリケーションが存在しない場合、インポート操作は失敗します。 このパラメーターを指定しなかった場合、既定の BizTalk アプリケーションが使用されます。 このパラメーターを指定した場合は、/GroupLevel は指定しません。|  
+|**-サーバー** (または**-Se**、「解説」を参照してください)|省略可|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
+|**-データベース**(または**-d**、「解説」を参照してください)|省略可|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+| **-ImportTrackingSettings** | 省略可 | 始まる新しい[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]です。 <br /><br />これには、グローバル追跡の設定のインポート オプションがオーバーライドされます。 "True"の値は、追跡設定をインポートできます。 False には、追跡の設定のインポートが許可されていません。 |
+| **-ExcludeParties** | 省略可 | 始まる新しい[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]です。 <br /><br />指定した場合は、バインド ファイルからパーティ情報を除外します。 |
+  
+## <a name="sample"></a>サンプル  
+ 次のコマンドは、既定の BizTalk グループの MyApplication というアプリケーションにバインドをインポートします。  
+  
+`BTSTask ImportBindings -ApplicationName:MyApplication -Source:C:\Bindings\Binding1.xml`
+  
+ 次のコマンドは、SQL Server インスタンス (MY_Server) 上で実行されている BizTalk 管理データベースで定義されたグループにバインドをインポートします。  
+  
+ `BTSTask ImportBindings -GroupLevel -Server:MY_Server -Database:BiztalkMgmtDb -Source:C:\Bindings\Binding1.xml`
+  
+## <a name="remarks"></a>解説  
+ パラメーターの大文字と小文字は区別されません。 パラメーター名は、すべて入力する必要はありません。最初の数文字 (一意に特定できるだけの文字数) を入力するだけで構いません。  
+  
+ バインドのエクスポート元としては、アセンブリ、アプリケーション、グループが考えられます。 次の表に示すように、ApplicationName パラメーターと GroupLevel パラメーターの作用は、バインドがどこからエクスポートされたかによって異なります。  
+  
+|バインドのエクスポート元|ApplicationName パラメーターの作用|GroupLevel パラメーターの作用|  
+|----------------------------|-----------------------------------------------|------------------------------------------|  
+|アセンブリからエクスポートされたバインド|ApplicationName で指定されたアプリケーションには、バインド ファイルのエクスポート元アセンブリと同じ名前のアセンブリが含まれている必要があります。 それ以外の場合、インポート操作が失敗します。|現在のグループには、バインド ファイルのエクスポート元のアセンブリおよびアプリケーションと同じ名前のアセンブリおよびアプリケーションが含まれている必要があります。 それ以外の場合、インポートは失敗します。|  
+|アプリケーションからエクスポートされたバインド|バインド ファイルのエクスポート元アプリケーションは、ApplicationName で指定されたアプリケーションと同じ名前であることが必要です。 それ以外の場合、インポート操作が失敗します。|バインド ファイルのエクスポート元アプリケーションは、バインドをインポートするグループのアプリケーションと同じ名前であることが必要です。 それ以外の場合、インポート操作が失敗します。|  
+|グループからエクスポートされたバインド|バインド ファイルのエクスポート元グループには、ApplicationName で指定されたアプリケーションと同じ名前のアプリケーションが存在していることが必要です。 それ以外の場合、インポート操作が失敗します。|バインドのインポートは、対応するアプリケーション間で行われます。 つまり、エクスポート元グループにおけるアプリケーションのバインドは、現在のグループで同じ名前を持つアプリケーションにインポートされます。|  
+  
+## <a name="see-also"></a>参照  
+ [BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)   
+ [BizTalk グループにバインドをインポートする方法](../core/how-to-import-bindings-into-a-biztalk-group.md)   
+ [BizTalk アプリケーションにバインドをインポートする方法](../core/how-to-import-bindings-into-a-biztalk-application.md)
