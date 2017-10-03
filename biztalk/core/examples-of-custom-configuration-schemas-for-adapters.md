@@ -18,19 +18,19 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="examples-of-custom-configuration-schemas-for-adapters"></a>アダプターのカスタム構成スキーマの例
-このセクションでは、アダプターの構成スキーマをカスタマイズする方法を次の例を示します。  
+# <a name="examples-of-custom-configuration-schemas-for-adapters"></a><span data-ttu-id="49a78-102">アダプターのカスタム構成スキーマの例</span><span class="sxs-lookup"><span data-stu-id="49a78-102">Examples of Custom Configuration Schemas for Adapters</span></span>
+<span data-ttu-id="49a78-103">このセクションでは、アダプターの構成スキーマをカスタマイズする方法を次の例を示します。</span><span class="sxs-lookup"><span data-stu-id="49a78-103">This section provides the following examples for how to customize configuration schemas for adapters:</span></span>  
   
--   **例 1** baf:designer 拡張と baf:description 拡張を使用してアダプターのプロパティ ページを表す完全なカスタム XSD スキーマ ファイルを示しています。  
+-   <span data-ttu-id="49a78-104">**例 1** baf:designer 拡張と baf:description 拡張を使用してアダプターのプロパティ ページを表す完全なカスタム XSD スキーマ ファイルを示しています。</span><span class="sxs-lookup"><span data-stu-id="49a78-104">**Example 1** shows a complete custom XSD schema file representing an adapter property page using the baf:designer and baf:description extensions.</span></span>  
   
--   **例 2**用のカスタム プロパティ値ウィンドウを作成する方法を示す、baf:designer 拡張と baf:description 拡張を使用しても、 **BatchSize** 1 と 99 の間の値のみを受け入れるプロパティです。  
+-   <span data-ttu-id="49a78-105">**例 2**用のカスタム プロパティ値ウィンドウを作成する方法を示す、baf:designer 拡張と baf:description 拡張を使用しても、 **BatchSize** 1 と 99 の間の値のみを受け入れるプロパティです。</span><span class="sxs-lookup"><span data-stu-id="49a78-105">**Example 2** also uses the baf:designer and baf:description extensions to show how to create a custom property value window for the **BatchSize** property that only accepts values between 1 and 99, inclusive.</span></span>  
   
--   **例 3** baf:Password を 8 文字に制限する方法を示します。 既定では、22 文字まで使用できます。  
+-   <span data-ttu-id="49a78-106">**例 3** baf:Password を 8 文字に制限する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="49a78-106">**Example 3** shows how to limit the baf:Password to 8 characters.</span></span> <span data-ttu-id="49a78-107">既定では、22 文字まで使用できます。</span><span class="sxs-lookup"><span data-stu-id="49a78-107">By default, it allows 22 characters.</span></span>  
   
--   **例 4** XSD パターンがサポートされていないために、プロパティ値に対するパターン照合制約を実装する方法を示します。  
+-   <span data-ttu-id="49a78-108">**例 4** XSD パターンがサポートされていないために、プロパティ値に対するパターン照合制約を実装する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="49a78-108">**Example 4** shows how to implement pattern-matching constraints on property values because XSD patterns are not supported.</span></span>  
   
-## <a name="example-1"></a>例 1  
- この例では、完全なカスタム XSD スキーマを示します。 このスキーマは、baf:designer 拡張と baf:description 拡張を使用してアダプターのプロパティ ページを表します。  
+## <a name="example-1"></a><span data-ttu-id="49a78-109">例 1</span><span class="sxs-lookup"><span data-stu-id="49a78-109">Example 1</span></span>  
+ <span data-ttu-id="49a78-110">この例では、完全なカスタム XSD スキーマを示します。</span><span class="sxs-lookup"><span data-stu-id="49a78-110">This example shows a complete custom XSD schema.</span></span> <span data-ttu-id="49a78-111">このスキーマは、baf:designer 拡張と baf:description 拡張を使用してアダプターのプロパティ ページを表します。</span><span class="sxs-lookup"><span data-stu-id="49a78-111">It represents an adapter property page using the baf:designer and baf:description extensions.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -88,8 +88,8 @@ ms.lasthandoff: 09/20/2017
 </xs:schema>  
 ```  
   
-## <a name="example-2"></a>例 2  
- この例では、baf:designer 拡張と baf:description 拡張機能を使用して、カスタム プロパティ値ウィンドウを作成する方法を示して、 **BatchSize** 1 と 99 の間の値のみを受け入れるプロパティです。  
+## <a name="example-2"></a><span data-ttu-id="49a78-112">例 2</span><span class="sxs-lookup"><span data-stu-id="49a78-112">Example 2</span></span>  
+ <span data-ttu-id="49a78-113">この例では、baf:designer 拡張と baf:description 拡張機能を使用して、カスタム プロパティ値ウィンドウを作成する方法を示して、 **BatchSize** 1 と 99 の間の値のみを受け入れるプロパティです。</span><span class="sxs-lookup"><span data-stu-id="49a78-113">This example uses the baf:designer and baf:description extensions to show how to create a custom property value window for the **BatchSize** property that only accepts values between 1 and 99, inclusive.</span></span>  
   
 ```  
    <xs:element name="BatchSize">  
@@ -110,8 +110,8 @@ ms.lasthandoff: 09/20/2017
         </xs:element>  
 ```  
   
-## <a name="example-3"></a>例 3  
- この例では、baf:Password を 8 文字までに制限する方法を示します。 既定では、22 文字まで使用できます。  
+## <a name="example-3"></a><span data-ttu-id="49a78-114">例 3</span><span class="sxs-lookup"><span data-stu-id="49a78-114">Example 3</span></span>  
+ <span data-ttu-id="49a78-115">この例では、baf:Password を 8 文字までに制限する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="49a78-115">This example shows how to limit the baf:Password to 8 characters.</span></span> <span data-ttu-id="49a78-116">既定では、22 文字まで使用できます。</span><span class="sxs-lookup"><span data-stu-id="49a78-116">By default, it allows 22 characters.</span></span>  
   
 ```  
 <xs:element name="AdapterPassword">  
@@ -133,12 +133,12 @@ ms.lasthandoff: 09/20/2017
         </xs:element>  
 ```  
   
-## <a name="example-4"></a>例 4  
- XSD パターンがサポートされていないため、この例では、プロパティ値に対するパターン照合制約を実装する方法を示します。  
+## <a name="example-4"></a><span data-ttu-id="49a78-117">例 4</span><span class="sxs-lookup"><span data-stu-id="49a78-117">Example 4</span></span>  
+ <span data-ttu-id="49a78-118">XSD パターンがサポートされていないため、この例では、プロパティ値に対するパターン照合制約を実装する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="49a78-118">This example shows how to implement pattern-matching constraints on property values because XSD patterns are not supported.</span></span>  
   
- などのフィールド**ClientIdentifier** 3 文字の数値の文字列は、常にします。 10 のプロパティ値は無効ですが、010 は有効です。 次の構成スキーマ フラグメントを定義、 **ClientIdentifier**プロパティです。 **ClientIdentifierConverter**パターンに一致するアダプターのアセンブリに実装されているクラスを実装します。 この場合、カスタム型コンバーターは、値を 3 桁の文字列 (000 ～ 999) だけに制限します。 構成スキーマでは、baf:converter ノードがアセンブリを含んでいることを確認して、完全な名前を正しく入力します。 ユーザーが無効な値を入力しようとすると、プロパティ ページで検証エラーが発生して例外メッセージがポップアップ表示されます。  
+ <span data-ttu-id="49a78-119">などのフィールド**ClientIdentifier** 3 文字の数値の文字列は、常にします。</span><span class="sxs-lookup"><span data-stu-id="49a78-119">Fields such as **ClientIdentifier** are always a three-character numeric string.</span></span> <span data-ttu-id="49a78-120">10 のプロパティ値は無効ですが、010 は有効です。</span><span class="sxs-lookup"><span data-stu-id="49a78-120">A property value of 10 is not valid, whereas 010 is valid.</span></span> <span data-ttu-id="49a78-121">次の構成スキーマ フラグメントを定義、 **ClientIdentifier**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="49a78-121">The following configuration schema fragment defines a **ClientIdentifier** property.</span></span> <span data-ttu-id="49a78-122">**ClientIdentifierConverter**パターンに一致するアダプターのアセンブリに実装されているクラスを実装します。</span><span class="sxs-lookup"><span data-stu-id="49a78-122">The **ClientIdentifierConverter** class, implemented in your adapter assembly, implements pattern matching.</span></span> <span data-ttu-id="49a78-123">この場合、カスタム型コンバーターは、値を 3 桁の文字列 (000 ～ 999) だけに制限します。</span><span class="sxs-lookup"><span data-stu-id="49a78-123">In this case, the custom type converter restricts values to a string of exactly three digits (000 to 999).</span></span> <span data-ttu-id="49a78-124">構成スキーマでは、baf:converter ノードがアセンブリを含んでいることを確認して、完全な名前を正しく入力します。</span><span class="sxs-lookup"><span data-stu-id="49a78-124">In the configuration schema, make sure the baf:converter node has the assembly and type full name set correctly.</span></span> <span data-ttu-id="49a78-125">ユーザーが無効な値を入力しようとすると、プロパティ ページで検証エラーが発生して例外メッセージがポップアップ表示されます。</span><span class="sxs-lookup"><span data-stu-id="49a78-125">If the user attempts to enter a value that is not valid, an exception message pops up when a validation error occurs in the property page.</span></span>  
   
- アダプター プロパティ ページの構成スキーマで次のコードを使用できます。  
+ <span data-ttu-id="49a78-126">アダプター プロパティ ページの構成スキーマで次のコードを使用できます。</span><span class="sxs-lookup"><span data-stu-id="49a78-126">You can use the following code in the adapter property page configuration schemas.</span></span>  
   
 ```  
         <xs:element name="ClientIdentifier" type="xs:string">  
@@ -154,7 +154,7 @@ ms.lasthandoff: 09/20/2017
         </xs:element>  
 ```  
   
- アダプターのアセンブリに、次のコードを配置できます。  
+ <span data-ttu-id="49a78-127">アダプターのアセンブリに、次のコードを配置できます。</span><span class="sxs-lookup"><span data-stu-id="49a78-127">You can place the following code in your adapter assembly.</span></span>  
   
 ```  
 using System;  
@@ -200,5 +200,5 @@ namespace Microsoft.BizTalk.TestAdapter
 }  
 ```  
   
-## <a name="see-also"></a>参照  
- [アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)
+## <a name="see-also"></a><span data-ttu-id="49a78-128">参照</span><span class="sxs-lookup"><span data-stu-id="49a78-128">See Also</span></span>  
+ [<span data-ttu-id="49a78-129">アダプター フレームワーク構成スキーマの拡張機能</span><span class="sxs-lookup"><span data-stu-id="49a78-129">Adapter Framework Configuration Schema Extensions</span></span>](../core/adapter-framework-configuration-schema-extensions.md)

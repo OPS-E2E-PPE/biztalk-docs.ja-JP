@@ -21,10 +21,10 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="completing-the-exception-message"></a>例外完了メッセージ
-例外のフローを完了するには、エラー メッセージ_3 を追加するための送信図形を監視対象フォルダに追加します。  
+# <a name="completing-the-exception-message"></a><span data-ttu-id="88677-102">例外完了メッセージ</span><span class="sxs-lookup"><span data-stu-id="88677-102">Completing the Exception Message</span></span>
+<span data-ttu-id="88677-103">例外のフローを完了するには、エラー メッセージ_3 を追加するための送信図形を監視対象フォルダに追加します。</span><span class="sxs-lookup"><span data-stu-id="88677-103">To complete the flow of the exception, add a Send shape to add the fault Message_3 to a monitored folder.</span></span>  
   
  ![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")  
   
-## <a name="see-also"></a>参照  
- [BizTalk Server 例外処理の使用](../core/using-biztalk-server-exception-handling2.md)
+## <a name="see-also"></a><span data-ttu-id="88677-104">参照</span><span class="sxs-lookup"><span data-stu-id="88677-104">See Also</span></span>  
+ [<span data-ttu-id="88677-105">BizTalk Server 例外処理の使用</span><span class="sxs-lookup"><span data-stu-id="88677-105">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)

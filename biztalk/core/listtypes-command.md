@@ -18,38 +18,38 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="listtypes-command"></a>ListTypes コマンド
-追加できるアイテムの種類のすべてを一覧表示[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、 **AddResource**コマンド。 詳細については、 **AddResource**コマンドを参照してください[AddResource コマンド](../core/addresource-command.md)です。  
+# <a name="listtypes-command"></a><span data-ttu-id="2dda3-102">ListTypes コマンド</span><span class="sxs-lookup"><span data-stu-id="2dda3-102">ListTypes Command</span></span>
+<span data-ttu-id="2dda3-103">追加できるアイテムの種類のすべてを一覧表示[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、 **AddResource**コマンド。</span><span class="sxs-lookup"><span data-stu-id="2dda3-103">Lists all of the artifact types that you can add to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] by using the **AddResource** command.</span></span> <span data-ttu-id="2dda3-104">詳細については、 **AddResource**コマンドを参照してください[AddResource コマンド](../core/addresource-command.md)です。</span><span class="sxs-lookup"><span data-stu-id="2dda3-104">For more information about the **AddResource** command, see [AddResource Command](../core/addresource-command.md).</span></span>  
   
- サポートされているアイテムの種類の完全修飾名は次のとおりです。  
+ <span data-ttu-id="2dda3-105">サポートされているアイテムの種類の完全修飾名は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2dda3-105">The fully qualified names of the supported artifact types are as follows:</span></span>  
   
--   .NET アセンブリ: System.BizTalk:Assembly  
+-   <span data-ttu-id="2dda3-106">.NET アセンブリ: System.BizTalk:Assembly</span><span class="sxs-lookup"><span data-stu-id="2dda3-106">.NET assembly: System.BizTalk:Assembly</span></span>  
   
--   BAM 定義: System.BizTalk:Bam  
+-   <span data-ttu-id="2dda3-107">BAM 定義: System.BizTalk:Bam</span><span class="sxs-lookup"><span data-stu-id="2dda3-107">BAM definition: System.BizTalk:Bam</span></span>  
   
--   BizTalk アセンブリ: System.BizTalk:BizTalkAssembly  
+-   <span data-ttu-id="2dda3-108">BizTalk アセンブリ: System.BizTalk:BizTalkAssembly</span><span class="sxs-lookup"><span data-stu-id="2dda3-108">BizTalk assembly: System.BizTalk:BizTalkAssembly</span></span>  
   
--   BizTalk バインド ファイル: System.BizTalk:BizTalkBinding  
+-   <span data-ttu-id="2dda3-109">BizTalk バインド ファイル: System.BizTalk:BizTalkBinding</span><span class="sxs-lookup"><span data-stu-id="2dda3-109">BizTalk binding file: System.BizTalk:BizTalkBinding</span></span>  
   
--   セキュリティ証明書: System.BizTalk:Certificate  
+-   <span data-ttu-id="2dda3-110">セキュリティ証明書: System.BizTalk:Certificate</span><span class="sxs-lookup"><span data-stu-id="2dda3-110">Security certificate: System.BizTalk:Certificate</span></span>  
   
--   COM コンポーネント: System.BizTalk:Com  
+-   <span data-ttu-id="2dda3-111">COM コンポーネント: System.BizTalk:Com</span><span class="sxs-lookup"><span data-stu-id="2dda3-111">COM component: System.BizTalk:Com</span></span>  
   
--   アドホック ファイル: System.BizTalk:File  
+-   <span data-ttu-id="2dda3-112">アドホック ファイル: System.BizTalk:File</span><span class="sxs-lookup"><span data-stu-id="2dda3-112">Ad hoc file: System.BizTalk:File</span></span>  
   
--   処理後のスクリプト: System.BizTalk:PostProcessingScript  
+-   <span data-ttu-id="2dda3-113">処理後のスクリプト: System.BizTalk:PostProcessingScript</span><span class="sxs-lookup"><span data-stu-id="2dda3-113">Postprocessing script: System.BizTalk:PostProcessingScript</span></span>  
   
--   スクリプトを前処理: System.BizTalk:PreProcessingScript  
+-   <span data-ttu-id="2dda3-114">スクリプトを前処理: System.BizTalk:PreProcessingScript</span><span class="sxs-lookup"><span data-stu-id="2dda3-114">Preprocessing script: System.BizTalk:PreProcessingScript</span></span>  
   
--   ポリシーまたはルール: System.BizTalk:Rules  
+-   <span data-ttu-id="2dda3-115">ポリシーまたはルール: System.BizTalk:Rules</span><span class="sxs-lookup"><span data-stu-id="2dda3-115">Policy or rule: System.BizTalk:Rules</span></span>  
   
--   仮想ディレクトリ: System.BizTalk:WebDirectory  
+-   <span data-ttu-id="2dda3-116">仮想ディレクトリ: System.BizTalk:WebDirectory</span><span class="sxs-lookup"><span data-stu-id="2dda3-116">Virtual directory: System.BizTalk:WebDirectory</span></span>  
   
 > [!NOTE]
->  名前空間の競合を防ぐため、単独の型名 (Assembly など) ではなく、完全な型名 (System.BizTalk:Assembly) を使用するようにしてください。  
+>  <span data-ttu-id="2dda3-117">名前空間の競合を防ぐため、単独の型名 (Assembly など) ではなく、完全な型名 (System.BizTalk:Assembly) を使用するようにしてください。</span><span class="sxs-lookup"><span data-stu-id="2dda3-117">To avoid namespace conflicts, you should always use the full type name (such as System.BizTalk:Assembly) rather than the type name alone (such as Assembly).</span></span>  
   
-## <a name="usage"></a>使用方法  
- **BTSTask ListTypes**  
+## <a name="usage"></a><span data-ttu-id="2dda3-118">使用方法</span><span class="sxs-lookup"><span data-stu-id="2dda3-118">Usage</span></span>  
+ <span data-ttu-id="2dda3-119">**BTSTask ListTypes**</span><span class="sxs-lookup"><span data-stu-id="2dda3-119">**BTSTask ListTypes**</span></span>  
   
-## <a name="see-also"></a>参照  
- [BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)
+## <a name="see-also"></a><span data-ttu-id="2dda3-120">参照</span><span class="sxs-lookup"><span data-stu-id="2dda3-120">See Also</span></span>  
+ [<span data-ttu-id="2dda3-121">BTSTask コマンド ライン リファレンス</span><span class="sxs-lookup"><span data-stu-id="2dda3-121">BTSTask Command-Line Reference</span></span>](../core/btstask-command-line-reference.md)

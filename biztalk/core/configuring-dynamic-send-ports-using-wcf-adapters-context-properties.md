@@ -23,8 +23,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-dynamic-send-ports-using-wcf-adapters-context-properties"></a>WCF アダプタ コンテキスト プロパティによる動的送信ポートの構成
-WCF アダプタ用の動的送信ポートを構成することができます。 URI、アクション、およびバインドのプロパティを受信メッセージから決定されで指定して可能性があります、**式**図形を次の Wcf-nettcp アダプタで示すようにします。  
+# <a name="configuring-dynamic-send-ports-using-wcf-adapters-context-properties"></a><span data-ttu-id="a1ad7-102">WCF アダプタ コンテキスト プロパティによる動的送信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="a1ad7-102">Configuring Dynamic Send Ports Using WCF Adapters Context Properties</span></span>
+<span data-ttu-id="a1ad7-103">WCF アダプタ用の動的送信ポートを構成することができます。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-103">You can configure dynamic send ports for WCF adapters.</span></span> <span data-ttu-id="a1ad7-104">URI、アクション、およびバインドのプロパティを受信メッセージから決定されで指定して可能性があります、**式**図形を次の Wcf-nettcp アダプタで示すようにします。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-104">The URI, action, and binding might be determined from a property on an incoming message, and then specified in the **Expression** shape, as shown in the following WCF-NetTcp adapter:</span></span>  
   
 ```  
 MessageOut=MessageIn;  
@@ -35,7 +35,7 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.Address)="net.tcp://localhost:8001/ne
 DynamicSendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-NetTcp";  
 ```  
   
- 次のコードで WCF コンテキスト プロパティを指定する方法の例を示します、**式**Wcf-custom アダプターの図形。  
+ <span data-ttu-id="a1ad7-105">次のコードで WCF コンテキスト プロパティを指定する方法の例を示します、**式**Wcf-custom アダプターの図形。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-105">The following code shows an example of how to specify the WCF context properties in the **Expression** shape for a WCF-Custom adapter:</span></span>  
   
 ```  
 MessageOut=MessageIn;  
@@ -46,38 +46,38 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.Address)="net.tcp://localhost:8001/cu
 DynamicSendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";  
 ```  
   
- WCF コンテキスト プロパティを指定する際の考慮事項を次に示します。  
+ <span data-ttu-id="a1ad7-106">WCF コンテキスト プロパティを指定する際の考慮事項を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-106">Considerations when specifying WCF context properties are as follows:</span></span>  
   
--   複数のアダプターにマップできるアドレスが存在します。 たとえば、「http://」または「https://」で始まるアドレスは、HTTP アダプタだけでなく、WCF-BasicHttp アダプタ、WCF-WsHttp アダプタ、または WCF-Custom アダプタでも処理することができます。 別の例として、上のサンプル コードでは、どちらも「net.tcp://」で始まるアドレスを使用していますが、2 番目のサンプル コードではカスタム バインドを使用するので、アドレスの処理には、WCF-Custom アダプタを使用する必要があります。 そのため、正しいアダプターを識別する必要があります構成する、省略可能な**Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、**式**図形のアダプターを使用するとします。  
+-   <span data-ttu-id="a1ad7-107">複数のアダプターにマップできるアドレスが存在します。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-107">There are addresses that can be mapped to multiple adapters.</span></span> <span data-ttu-id="a1ad7-108">たとえば、「http://」または「https://」で始まるアドレスは、HTTP アダプタだけでなく、WCF-BasicHttp アダプタ、WCF-WsHttp アダプタ、または WCF-Custom アダプタでも処理することができます。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-108">For example, an address that starts with http:// or https:// can be handled by the HTTP adapter as well as by the WCF-BasicHttp, WCF-WsHttp, or WCF-Custom adapters.</span></span> <span data-ttu-id="a1ad7-109">別の例として、上のサンプル コードでは、どちらも「net.tcp://」で始まるアドレスを使用していますが、2 番目のサンプル コードではカスタム バインドを使用するので、アドレスの処理には、WCF-Custom アダプタを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-109">For another example, in the above sample code, both of them are using the address starts with net.tcp://, yet because the second sample code uses custom binding, WCF-Custom adapter should be used to handle the address.</span></span> <span data-ttu-id="a1ad7-110">そのため、正しいアダプターを識別する必要があります構成する、省略可能な**Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、**式**図形のアダプターを使用するとします。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-110">Therefore, to identify the correct adapter, you must configure the optional **Microsoft.XLANGs.BaseTypes.TransportType** field in an **Expression** shape with the adapter that you want to use.</span></span>  
   
     > [!NOTE]
-    >  アドレスの先頭で http:// または https://、しを指定しない場合、 **Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、既定では、BizTalk エンジンを使用して、HTTP アダプター。  
+    >  <span data-ttu-id="a1ad7-111">アドレスの先頭で http:// または https://、しを指定しない場合、 **Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、既定では、BizTalk エンジンを使用して、HTTP アダプター。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-111">If the address starts with http:// or https://, and if you do not specify the **Microsoft.XLANGs.BaseTypes.TransportType** field, by default, the BizTalk engine will use the HTTP adapter.</span></span>  
   
--   **WCF です。BindingType**名前でバインドを識別します。 次のいずれかを指定できます。  
+-   <span data-ttu-id="a1ad7-112">**WCF です。BindingType**名前でバインドを識別します。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-112">The **WCF.BindingType** identifies the binding by name.</span></span> <span data-ttu-id="a1ad7-113">次のいずれかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-113">It can be one of the following:</span></span>  
   
-    -   basicHttpBinding  
+    -   <span data-ttu-id="a1ad7-114">basicHttpBinding</span><span class="sxs-lookup"><span data-stu-id="a1ad7-114">basicHttpBinding</span></span>  
   
-    -   customBinding  
+    -   <span data-ttu-id="a1ad7-115">customBinding</span><span class="sxs-lookup"><span data-stu-id="a1ad7-115">customBinding</span></span>  
   
-    -   netMsmqBinding  
+    -   <span data-ttu-id="a1ad7-116">netMsmqBinding</span><span class="sxs-lookup"><span data-stu-id="a1ad7-116">netMsmqBinding</span></span>  
   
-    -   netNamedPipeBinding  
+    -   <span data-ttu-id="a1ad7-117">netNamedPipeBinding</span><span class="sxs-lookup"><span data-stu-id="a1ad7-117">netNamedPipeBinding</span></span>  
   
-    -   netTcpBinding  
+    -   <span data-ttu-id="a1ad7-118">netTcpBinding</span><span class="sxs-lookup"><span data-stu-id="a1ad7-118">netTcpBinding</span></span>  
   
-    -   wsFederationHttpBinding  
+    -   <span data-ttu-id="a1ad7-119">wsFederationHttpBinding</span><span class="sxs-lookup"><span data-stu-id="a1ad7-119">wsFederationHttpBinding</span></span>  
   
-    -   wsHttpBinding  
+    -   <span data-ttu-id="a1ad7-120">wsHttpBinding</span><span class="sxs-lookup"><span data-stu-id="a1ad7-120">wsHttpBinding</span></span>  
   
-     上の一覧は、拡張できます。 たとえば、FtpBinding などの独自のバインドを一覧に追加できます。  
+     <span data-ttu-id="a1ad7-121">上の一覧は、拡張できます。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-121">The above list can be extended.</span></span> <span data-ttu-id="a1ad7-122">たとえば、FtpBinding などの独自のバインドを一覧に追加できます。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-122">For example, you can add your own binding to it such as FtpBinding.</span></span>  
   
--   **WCF です。BindingConfiguration**バインドの種類のバインド構成を指定します。 このプロパティは、コンピュータの構成ファイルに登録されているバインドを受け取ります。 WCF 構成ファイルのバインド構成で使用される形式と同じ形式の XML 構成ファイルも受け取ります。  
+-   <span data-ttu-id="a1ad7-123">**WCF です。BindingConfiguration**バインドの種類のバインド構成を指定します。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-123">The **WCF.BindingConfiguration** specifies the binding configuration for the binding type.</span></span> <span data-ttu-id="a1ad7-124">このプロパティは、コンピュータの構成ファイルに登録されているバインドを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-124">It takes any binding that are registered in the machine configuration file.</span></span> <span data-ttu-id="a1ad7-125">WCF 構成ファイルのバインド構成で使用される形式と同じ形式の XML 構成ファイルも受け取ります。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-125">It also takes the XML configuration in the same format as used in the binding configuration in the WCF configuration file.</span></span>  
   
--   追加の WCF プロパティの指定が必要になる場合があります。 入力**WCF**式エディターで IntelliSense 機能がすべての利用可能なコンテキスト プロパティを一覧する必要があります。 WCF コンテキスト プロパティの詳細については、次を参照してください。 [WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。  
+-   <span data-ttu-id="a1ad7-126">追加の WCF プロパティの指定が必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-126">You may need to specify additional WCF properties.</span></span> <span data-ttu-id="a1ad7-127">入力**WCF**式エディターで IntelliSense 機能がすべての利用可能なコンテキスト プロパティを一覧する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-127">You can type **WCF** in the Expression Editor, and the IntelliSense feature should list all the available context properties.</span></span> <span data-ttu-id="a1ad7-128">WCF コンテキスト プロパティの詳細については、次を参照してください。 [WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-128">For more information about WCF context properties, see [WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md).</span></span>  
   
- 前の例を構成する方法を示して**WCF です。アクション**単一の操作でします。 複数アクションのマッピング シナリオの場合、WCF アダプタは、動的送信ポートでの複数アクションのマッピングの使用をサポートしていません。 設定できるは、実際のアクションだけ、 **WCF です。アクション**コンテキスト プロパティとしての上に表示します。  
+ <span data-ttu-id="a1ad7-129">前の例を構成する方法を示して**WCF です。アクション**単一の操作でします。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-129">The preceding examples show how to configure **WCF.Action** with a single action.</span></span> <span data-ttu-id="a1ad7-130">複数アクションのマッピング シナリオの場合、WCF アダプタは、動的送信ポートでの複数アクションのマッピングの使用をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-130">For multiple actions mapping scenarios, WCF adapter do not support using multiple actions mapping with dynamic send ports.</span></span> <span data-ttu-id="a1ad7-131">設定できるは、実際のアクションだけ、 **WCF です。アクション**コンテキスト プロパティとしての上に表示します。</span><span class="sxs-lookup"><span data-stu-id="a1ad7-131">You can just set the actual action in the **WCF.Action** context property as showing in above.</span></span>  
   
-## <a name="see-also"></a>参照  
- [送信アダプタの WCF の SOAP アクションの指定](../core/specifying-soap-actions-for-wcf-send-adapters.md)   
- [動的ポートに値を代入する式を使用する方法](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md)   
- [ポートのバインド](../core/port-bindings.md)
+## <a name="see-also"></a><span data-ttu-id="a1ad7-132">参照</span><span class="sxs-lookup"><span data-stu-id="a1ad7-132">See Also</span></span>  
+ <span data-ttu-id="a1ad7-133">[送信アダプタの WCF の SOAP アクションの指定](../core/specifying-soap-actions-for-wcf-send-adapters.md) </span><span class="sxs-lookup"><span data-stu-id="a1ad7-133">[Specifying SOAP Actions for WCF Send Adapters](../core/specifying-soap-actions-for-wcf-send-adapters.md) </span></span>  
+ <span data-ttu-id="a1ad7-134">[動的ポートに値を代入する式を使用する方法](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md) </span><span class="sxs-lookup"><span data-stu-id="a1ad7-134">[How to Use Expressions to Assign Values to Dynamic Ports](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md) </span></span>  
+ [<span data-ttu-id="a1ad7-135">ポートのバインド</span><span class="sxs-lookup"><span data-stu-id="a1ad7-135">Port Bindings</span></span>](../core/port-bindings.md)

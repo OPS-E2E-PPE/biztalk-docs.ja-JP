@@ -18,93 +18,93 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-an-outgoing-batch"></a>送信バッチの構成
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でトランザクション セットを EDI インターチェンジへバッチ処理する方法を定義するには、アグリーメントに対して 1 つ以上のバッチ構成を作成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でそのアグリーメントに関連付けられ、バッチのフィルター条件を満たすインターチェンジはすべて、そのバッチ構成の同じリリース条件に従ってバッチ処理されてリリースされます。  
+# <a name="configuring-an-outgoing-batch"></a><span data-ttu-id="e14c0-102">送信バッチの構成</span><span class="sxs-lookup"><span data-stu-id="e14c0-102">Configuring an Outgoing Batch</span></span>
+<span data-ttu-id="e14c0-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でトランザクション セットを EDI インターチェンジへバッチ処理する方法を定義するには、アグリーメントに対して 1 つ以上のバッチ構成を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e14c0-103">To define the way that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] batches transaction sets into an EDI interchange, you must create one or more batch configurations for an agreement.</span></span> <span data-ttu-id="e14c0-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でそのアグリーメントに関連付けられ、バッチのフィルター条件を満たすインターチェンジはすべて、そのバッチ構成の同じリリース条件に従ってバッチ処理されてリリースされます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-104">All interchanges that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] associates to that agreement and that meet the filter criteria for a batch will be batched and released according to the same release criteria for that batch configuration.</span></span>  
   
- バッチ構成には、バッチ名、バッチ ID、フィルター定義、グループ定義、バッチ リリース条件、およびバッチ アクティベーション条件が含まれます。 すべてのプロパティとバッチに関連するオプションが [利用可能な**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ**] ダイアログ ボックス。 アグリーメントのバッチ構成を作成するを参照してください。 [(X12) をバッチ処理構成](../core/configuring-batching-x12.md)です。  
-  
-> [!NOTE]
->  バッチのドキュメント標準はアグリーメント プロパティ自体から確認されます。 たとえば、X12 メッセージ用のアグリーメントである場合、バッチのドキュメント標準は X12 になります。  
-  
-## <a name="batch-categories"></a>バッチ カテゴリ  
- 右上隅にあるドロップダウン リストを使用して、**バッチ構成**ページを指定するバッチ構成が表示されます。  
-  
--   **すべて**: すべてのバッチ構成を表示します。  
-  
--   **アクティブな**: アクティブなバッチ構成のみを表示します。  
-  
--   **非アクティブな**: 非アクティブなバッチ構成のみを表示します。  
-  
-## <a name="batch-identification"></a>バッチ識別子  
- バッチ ID には、バッチ名、説明、バッチ ID、およびバッチ処理オーケストレーション インスタンス ID が含まれます。  
-  
-### <a name="batch-name"></a>バッチ名  
- バッチ構成がで指定されたバッチ名に基づいて作成**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。 複数のバッチで同じ構成設定を共有できますが、一意のバッチ名が必要です。  
-  
-### <a name="batch-description"></a>バッチの説明  
- [バッチの説明] ボックスはバッチ構成の説明を示します。  
-  
-### <a name="batch-id"></a>バッチ ID。  
- バッチ ID がによって自動的に生成された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で新しいバッチ構成を作成するときに、**バッチ構成**ページ。 この値は、特定のバッチ構成のバッチ フィルターに一致する受信インターチェンジを示す BatchMarker パイプライン コンポーネントにより使用されます。 また、この値は特定のバッチ構成と関連付けられたバッチ処理オーケストレーションのサブスクリプション フィルターとしても使用されます。  
-  
-### <a name="orchestration-instance-id"></a>オーケストレーション インスタンス ID  
- このバッチ構成に対してアクティブになったバッチ オーケストレーション インスタンスのオーケストレーション インスタンス ID です。  
-  
-## <a name="batch-filter"></a>バッチ フィルター  
- バッチで適用されるバッチ フィルタ定義に基づいて作成、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。 このフィルターで、バッチ処理するトランザクション セットまたはメッセージを指定します。 このフィルターの値は、バッチ オーケストレーションのインスタンスがアクティブになっているときに変更できます。 フィルターを変更しても、バッチのリリース条件には影響しません。  
+ <span data-ttu-id="e14c0-105">バッチ構成には、バッチ名、バッチ ID、フィルター定義、グループ定義、バッチ リリース条件、およびバッチ アクティベーション条件が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-105">Batch configuration consists of a batch name, batch ID, filter definition, group definition, batch release criteria, and batch activation criteria.</span></span> <span data-ttu-id="e14c0-106">すべてのプロパティとバッチに関連するオプションが [利用可能な**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ**] ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="e14c0-106">All properties and options related to batches are available on the **Batch Configuration** page of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="e14c0-107">アグリーメントのバッチ構成を作成するを参照してください。 [(X12) をバッチ処理構成](../core/configuring-batching-x12.md)です。</span><span class="sxs-lookup"><span data-stu-id="e14c0-107">To create a batch configuration for an agreement, see [Configuring Batching (X12)](../core/configuring-batching-x12.md).</span></span>  
   
 > [!NOTE]
->  アクティブなバッチのバッチ フィルターを変更した場合、この情報が Biztalk Server でキャッシュされ、新しいフィルター条件がアクティブになるまでに 15 分かかります。 この更新間隔は変更できません。  
+>  <span data-ttu-id="e14c0-108">バッチのドキュメント標準はアグリーメント プロパティ自体から確認されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-108">The document standard for the batch is ascertained from the agreement properties itself.</span></span> <span data-ttu-id="e14c0-109">たとえば、X12 メッセージ用のアグリーメントである場合、バッチのドキュメント標準は X12 になります。</span><span class="sxs-lookup"><span data-stu-id="e14c0-109">For example, if the agreement is for X12 messages, the document standard for the batches will be X12.</span></span>  
+  
+## <a name="batch-categories"></a><span data-ttu-id="e14c0-110">バッチ カテゴリ</span><span class="sxs-lookup"><span data-stu-id="e14c0-110">Batch Categories</span></span>  
+ <span data-ttu-id="e14c0-111">右上隅にあるドロップダウン リストを使用して、**バッチ構成**ページを指定するバッチ構成が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-111">Use the drop-down list on the top-right corner of the **Batch Configuration** page to determine which batch configurations are displayed.</span></span>  
+  
+-   <span data-ttu-id="e14c0-112">**すべて**: すべてのバッチ構成を表示します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-112">**All**: Display all batch configurations.</span></span>  
+  
+-   <span data-ttu-id="e14c0-113">**アクティブな**: アクティブなバッチ構成のみを表示します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-113">**Active**: Display only the active batch configurations.</span></span>  
+  
+-   <span data-ttu-id="e14c0-114">**非アクティブな**: 非アクティブなバッチ構成のみを表示します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-114">**Inactive**: Display only the inactive batch configurations.</span></span>  
+  
+## <a name="batch-identification"></a><span data-ttu-id="e14c0-115">バッチ識別子</span><span class="sxs-lookup"><span data-stu-id="e14c0-115">Batch Identification</span></span>  
+ <span data-ttu-id="e14c0-116">バッチ ID には、バッチ名、説明、バッチ ID、およびバッチ処理オーケストレーション インスタンス ID が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-116">Batch identification contains batch name, description, batch ID, and the batching orchestration instance ID.</span></span>  
+  
+### <a name="batch-name"></a><span data-ttu-id="e14c0-117">バッチ名</span><span class="sxs-lookup"><span data-stu-id="e14c0-117">Batch Name</span></span>  
+ <span data-ttu-id="e14c0-118">バッチ構成がで指定されたバッチ名に基づいて作成**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="e14c0-118">A batch configuration is created based on the batch name specified in **Batch Configuration** page of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="e14c0-119">複数のバッチで同じ構成設定を共有できますが、一意のバッチ名が必要です。</span><span class="sxs-lookup"><span data-stu-id="e14c0-119">Multiple batches can share the same configuration settings, but must have a unique batch name.</span></span>  
+  
+### <a name="batch-description"></a><span data-ttu-id="e14c0-120">バッチの説明</span><span class="sxs-lookup"><span data-stu-id="e14c0-120">Batch Description</span></span>  
+ <span data-ttu-id="e14c0-121">[バッチの説明] ボックスはバッチ構成の説明を示します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-121">Batch description text box provides a description of the batch configuration.</span></span>  
+  
+### <a name="batch-id"></a><span data-ttu-id="e14c0-122">バッチ ID。</span><span class="sxs-lookup"><span data-stu-id="e14c0-122">Batch ID</span></span>  
+ <span data-ttu-id="e14c0-123">バッチ ID がによって自動的に生成された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で新しいバッチ構成を作成するときに、**バッチ構成**ページ。</span><span class="sxs-lookup"><span data-stu-id="e14c0-123">The batch ID is generated automatically by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] when a new batch configuration is created in the **Batch Configuration** page.</span></span> <span data-ttu-id="e14c0-124">この値は、特定のバッチ構成のバッチ フィルターに一致する受信インターチェンジを示す BatchMarker パイプライン コンポーネントにより使用されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-124">This value is used by the BatchMarker pipeline component to flag incoming interchanges that match the batch filter of a specific batch configuration.</span></span> <span data-ttu-id="e14c0-125">また、この値は特定のバッチ構成と関連付けられたバッチ処理オーケストレーションのサブスクリプション フィルターとしても使用されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-125">This value is also used as a subscription filter of the batching orchestration associated with a specific batch configuration.</span></span>  
+  
+### <a name="orchestration-instance-id"></a><span data-ttu-id="e14c0-126">オーケストレーション インスタンス ID</span><span class="sxs-lookup"><span data-stu-id="e14c0-126">Orchestration Instance ID</span></span>  
+ <span data-ttu-id="e14c0-127">このバッチ構成に対してアクティブになったバッチ オーケストレーション インスタンスのオーケストレーション インスタンス ID です。</span><span class="sxs-lookup"><span data-stu-id="e14c0-127">The orchestration instance ID of the batch orchestration instance that is activated for this batch configuration.</span></span>  
+  
+## <a name="batch-filter"></a><span data-ttu-id="e14c0-128">バッチ フィルター</span><span class="sxs-lookup"><span data-stu-id="e14c0-128">Batch Filter</span></span>  
+ <span data-ttu-id="e14c0-129">バッチで適用されるバッチ フィルタ定義に基づいて作成、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="e14c0-129">A batch is created based upon the batch filter definition applied in the **Batch Configuration** page of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="e14c0-130">このフィルターで、バッチ処理するトランザクション セットまたはメッセージを指定します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-130">In this filter, you determine which transaction sets or messages will be batched.</span></span> <span data-ttu-id="e14c0-131">このフィルターの値は、バッチ オーケストレーションのインスタンスがアクティブになっているときに変更できます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-131">You can change the value of this filter while an instance of the batch orchestration is activated.</span></span> <span data-ttu-id="e14c0-132">フィルターを変更しても、バッチのリリース条件には影響しません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-132">Changing the filter does not affect the batch release criteria.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="e14c0-133">アクティブなバッチのバッチ フィルターを変更した場合、この情報が Biztalk Server でキャッシュされ、新しいフィルター条件がアクティブになるまでに 15 分かかります。</span><span class="sxs-lookup"><span data-stu-id="e14c0-133">If you change the batch filter for an active batch, it will take 15 minutes for the new filter criteria to become active as this information is cached by Biztalk Server.</span></span> <span data-ttu-id="e14c0-134">この更新間隔は変更できません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-134">This refresh interval cannot be modified.</span></span>  
 >   
->  新しいフィルターをすぐにアクティブにする場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホスト プロセスを再開します。  
+>  <span data-ttu-id="e14c0-135">新しいフィルターをすぐにアクティブにする場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホスト プロセスを再開します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-135">To force the new filter to become active immediately, restart the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] host process.</span></span>  
   
- 送信バッチには、複数のグループを含めることができますが、トランザクションの種類ごとに含められるグループは 1 つだけです。 グループには、複数のトランザクション セットを含めることができますが、各トランザクション セットのトランザクションの種類が同じでなければなりません。  
+ <span data-ttu-id="e14c0-136">送信バッチには、複数のグループを含めることができますが、トランザクションの種類ごとに含められるグループは 1 つだけです。</span><span class="sxs-lookup"><span data-stu-id="e14c0-136">Outgoing batches can include multiple groups, but only one group per transaction type.</span></span> <span data-ttu-id="e14c0-137">グループには、複数のトランザクション セットを含めることができますが、各トランザクション セットのトランザクションの種類が同じでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-137">A group can contain multiple transaction sets, but each must have the same transaction type.</span></span>  
   
- 複数のバッチ構成で同じバッチ フィルターを共有できます。ドキュメントが複数のバッチ フィルターに一致する場合、ドキュメントは一致するすべてのバッチにルーティングされます。  
+ <span data-ttu-id="e14c0-138">複数のバッチ構成で同じバッチ フィルターを共有できます。ドキュメントが複数のバッチ フィルターに一致する場合、ドキュメントは一致するすべてのバッチにルーティングされます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-138">Multiple batch configurations can share the same batch filter, if a document matches more than one batch filter it will be routed to all matching batches.</span></span>  
   
-## <a name="group-definition"></a>グループ定義  
- バッチ出力内でのグループの構成方法は、アグリーメント プロパティの機能グループ ヘッダー (X12 の場合は GS、EDIFACT の場合は UNG) を定義することによって指定します。 グループは、X12 の場合はトランザクション セット識別コード (ST1)、EDIFACT の場合はメッセージの種類 (UNH2.1) と、バージョン、およびターゲットの名前空間に従って定義されます。 たとえば、1 つのインターチェンジに、1 つのメッセージの種類で構成される 1 つのグループと、別のメッセージの種類で構成されるもう 1 つのグループを含めることができます。 グループの構成の詳細については、次を参照してください。 [EDI プロパティを設定する](../core/configuring-edi-properties.md)です。  
-  
-> [!NOTE]
->  インターチェンジ内のグループの順序は定義されません。  
-  
-## <a name="batch-release-criteria"></a>バッチ リリース条件  
- バッチはで設定された条件に従ってリリースされます、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。 バッチは、次のいずれかの方法でリリースできます。  
-  
--   スケジュール (時間単位、日単位、または週単位) に従って実行する。  
-  
--   グループで特定の数のトランザクション セットを使用できるときに実行する。  
-  
--   インターチェンジで特定の数のトランザクション セットを使用できるときに実行する。  
-  
--   バッチ処理で特定の数の文字を使用できるときに実行する。  
-  
--   外部アプリケーションによって外部トリガーが実行されると[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
-  
- 選択した場合、**空のバッチ通知を送信**プロパティを**バッチ スケジュール**ダイアログ ボックスで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バッチのメッセージがない場合でも送信がスケジュールされているときに、空のバッチ メッセージが送信されますバッチ処理オーケストレーションによって受信されます。  
-  
-## <a name="batch-activation-criteria"></a>バッチ アクティベーション条件  
- バッチは、バッチ アクティベーション条件が満たされている場合にのみ、バッチ リリース条件に従ってリリースされます。 オーケストレーションのインスタンスをアクティブ化する必要がありますキーを押す、**開始**ボタンをクリックして、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。 バッチ構成に対するオーケストレーションのインスタンスが作成されます。 場合、**開始**ボタンがクリックしてできる状態で、バッチ構成に対するオーケストレーションのインスタンスがアクティブになっていません。  
-  
- キーを押した後、**開始**ボタン、メッセージは、次に該当する場合にのみ、バッチの収集は。  
-  
--   メッセージがバッチ フィルターの条件を満たしている。  
-  
--   日付と時刻に入力された日時より後は、**開始**フィールドです。  
-  
--   日付と時刻が前に入力された値には、**によって終了**フィールド、または、バッチ処理の数がの発生回数以下、 **(出現数) の後に終了**フィールド、または、 **終了日なし**オプションを選択します。 3 つすべてのオプションが 利用可能な**終了**セクションです。  
-  
- アクティベーション条件が設定されている、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。  
-  
- した後、**開始**をバッチ処理オーケストレーションのインスタンスをアクティブ化するボタン、メッセージは収集されませんバッチ用に指定された日時になるまで、**開始**プロパティが渡されます。  **バッチ構成** ページで、**をすぐに開始**が選択されていないと、**開始**クリックする時刻前の値に設定されているdatetime**開始**ボタン、バッチ処理オーケストレーションがアクティブで、すぐが開始されます。 アクティベーションの日時が将来に設定されている場合は、その日時になるとバッチ処理が開始されます。  
-  
- 設定することができます、**開始**datetime datetime は、将来にします。 ただしをクリックした場合、**開始**ボタン、**開始**datetime が今後は、オーケストレーション インスタンスはアクティブになります。 ただし、[開始] 日時が発生するまでメッセージは収集されません。 BatchMarker パイプライン コンポーネントは、開始日の時刻になるまで、メッセージをルーティング オーケストレーションまたはバッチ処理オーケストレーションにルーティングするために必要なプロパティを昇格しません。 そのため、メッセージはバッチ処理されません。 しかし、そのメッセージをサブスクライブしている送信ポートまたはオーケストレーションによって、個別のメッセージとして取得されます。 BatchMarker パイプライン コンポーネントの動作の詳細については、次を参照してください。[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)です。  
-  
-## <a name="batch-termination-criteria"></a>バッチ終了条件  
- 後にバッチに対して収集するメッセージが失われます、**によって終了**datetime の前後で出現回数、 **(出現数) の後に終了**プロパティです。 バッチ処理オーケストレーションを非アクティブ化したくない場合は、選択、**終了日がない**オプション。  
+## <a name="group-definition"></a><span data-ttu-id="e14c0-139">グループ定義</span><span class="sxs-lookup"><span data-stu-id="e14c0-139">Group Definition</span></span>  
+ <span data-ttu-id="e14c0-140">バッチ出力内でのグループの構成方法は、アグリーメント プロパティの機能グループ ヘッダー (X12 の場合は GS、EDIFACT の場合は UNG) を定義することによって指定します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-140">You determine how groups will be composed in the batch output by defining the Functional Group Headers (GS for X12 and UNG for EDIFACT) in the agreement properties.</span></span> <span data-ttu-id="e14c0-141">グループは、X12 の場合はトランザクション セット識別コード (ST1)、EDIFACT の場合はメッセージの種類 (UNH2.1) と、バージョン、およびターゲットの名前空間に従って定義されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-141">Groups are defined according to their Transaction Set Identifier (ST1) for X12 or the Message Type (UNH2.1) for EDIFACT, their version, and their target namespace.</span></span> <span data-ttu-id="e14c0-142">たとえば、1 つのインターチェンジに、1 つのメッセージの種類で構成される 1 つのグループと、別のメッセージの種類で構成されるもう 1 つのグループを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-142">For example, an interchange can contain one group composed of one message type, and a second group composed of another message type.</span></span> <span data-ttu-id="e14c0-143">グループの構成の詳細については、次を参照してください。 [EDI プロパティを設定する](../core/configuring-edi-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="e14c0-143">For more information on configuring groups, see [Configuring EDI Properties](../core/configuring-edi-properties.md).</span></span>  
   
 > [!NOTE]
->  場合、 **(出現数) の後に終了**プロパティが選択されているが、空のバッチ通知をバッチ アクティベーションの範囲を終了するために必要な発生回数まで増えです。 通常であれば空のバッチ通知が送信される状態 (バッチ送信のスケジュールが設定されているものの、バッチ処理オーケストレーションでメッセージが受信されていない) が発生したが、空のバッチ通知が構成されていないために通知が送信されない場合にも、発生回数は加算されます。  
+>  <span data-ttu-id="e14c0-144">インターチェンジ内のグループの順序は定義されません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-144">The order of groups within an interchange is not defined.</span></span>  
   
-## <a name="see-also"></a>参照  
- [送信 EDI メッセージをバッチ処理](../core/batching-outgoing-edi-messages.md)
+## <a name="batch-release-criteria"></a><span data-ttu-id="e14c0-145">バッチ リリース条件</span><span class="sxs-lookup"><span data-stu-id="e14c0-145">Batch Release Criteria</span></span>  
+ <span data-ttu-id="e14c0-146">バッチはで設定された条件に従ってリリースされます、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="e14c0-146">Batches will be released according to criteria set in the **Batch Configuration** page of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="e14c0-147">バッチは、次のいずれかの方法でリリースできます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-147">Batches can be released in any of the following ways:</span></span>  
+  
+-   <span data-ttu-id="e14c0-148">スケジュール (時間単位、日単位、または週単位) に従って実行する。</span><span class="sxs-lookup"><span data-stu-id="e14c0-148">According to a schedule, on an hourly, daily, or weekly basis.</span></span>  
+  
+-   <span data-ttu-id="e14c0-149">グループで特定の数のトランザクション セットを使用できるときに実行する。</span><span class="sxs-lookup"><span data-stu-id="e14c0-149">When a specific number of transaction sets is available for a group.</span></span>  
+  
+-   <span data-ttu-id="e14c0-150">インターチェンジで特定の数のトランザクション セットを使用できるときに実行する。</span><span class="sxs-lookup"><span data-stu-id="e14c0-150">When a specific number of transaction sets is available for an interchange.</span></span>  
+  
+-   <span data-ttu-id="e14c0-151">バッチ処理で特定の数の文字を使用できるときに実行する。</span><span class="sxs-lookup"><span data-stu-id="e14c0-151">When a specific number of characters is available for batch processing.</span></span>  
+  
+-   <span data-ttu-id="e14c0-152">外部アプリケーションによって外部トリガーが実行されると[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="e14c0-152">When an external trigger is executed by an application external to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+  
+ <span data-ttu-id="e14c0-153">選択した場合、**空のバッチ通知を送信**プロパティを**バッチ スケジュール**ダイアログ ボックスで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バッチのメッセージがない場合でも送信がスケジュールされているときに、空のバッチ メッセージが送信されますバッチ処理オーケストレーションによって受信されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-153">If you select the **Send empty batch signal** property on the **Batch Schedule** dialog box, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will send an empty batch message when the batch is scheduled to be sent even if no messages have been received by the batching orchestration.</span></span>  
+  
+## <a name="batch-activation-criteria"></a><span data-ttu-id="e14c0-154">バッチ アクティベーション条件</span><span class="sxs-lookup"><span data-stu-id="e14c0-154">Batch Activation Criteria</span></span>  
+ <span data-ttu-id="e14c0-155">バッチは、バッチ アクティベーション条件が満たされている場合にのみ、バッチ リリース条件に従ってリリースされます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-155">Batches will be released according to the batch release criteria only when the batch activation criterion has been met.</span></span> <span data-ttu-id="e14c0-156">オーケストレーションのインスタンスをアクティブ化する必要がありますキーを押す、**開始**ボタンをクリックして、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="e14c0-156">To activate an instance of the orchestration, you must press the **Start** button in the **Batch Configuration** page of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="e14c0-157">バッチ構成に対するオーケストレーションのインスタンスが作成されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-157">This creates an instance of the orchestration for the batch configuration.</span></span> <span data-ttu-id="e14c0-158">場合、**開始**ボタンがクリックしてできる状態で、バッチ構成に対するオーケストレーションのインスタンスがアクティブになっていません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-158">If the **Start** button is available for clicking, an instance of the orchestration for the batch configuration is not currently activated.</span></span>  
+  
+ <span data-ttu-id="e14c0-159">キーを押した後、**開始**ボタン、メッセージは、次に該当する場合にのみ、バッチの収集は。</span><span class="sxs-lookup"><span data-stu-id="e14c0-159">After you press the **Start** button, messages will be collected for a batch only if the following are true:</span></span>  
+  
+-   <span data-ttu-id="e14c0-160">メッセージがバッチ フィルターの条件を満たしている。</span><span class="sxs-lookup"><span data-stu-id="e14c0-160">The messages meet the criteria in the batch filter.</span></span>  
+  
+-   <span data-ttu-id="e14c0-161">日付と時刻に入力された日時より後は、**開始**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="e14c0-161">The date and time are after the datetime entered in the **Start** field.</span></span>  
+  
+-   <span data-ttu-id="e14c0-162">日付と時刻が前に入力された値には、**によって終了**フィールド、または、バッチ処理の数がの発生回数以下、 **(出現数) の後に終了**フィールド、または、 **終了日なし**オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="e14c0-162">The date and time are before the value entered in the **End by** field, or the numbers of batches processed is less than or equal to the number of occurrences in the **End after (occurrences)** field, or the **No end date** option is selected.</span></span> <span data-ttu-id="e14c0-163">3 つすべてのオプションが 利用可能な**終了**セクションです。</span><span class="sxs-lookup"><span data-stu-id="e14c0-163">All the three options are available under the **Termination** section.</span></span>  
+  
+ <span data-ttu-id="e14c0-164">アクティベーション条件が設定されている、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="e14c0-164">The activation criteria are set in the **Batch Configuration** page of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span>  
+  
+ <span data-ttu-id="e14c0-165">した後、**開始**をバッチ処理オーケストレーションのインスタンスをアクティブ化するボタン、メッセージは収集されませんバッチ用に指定された日時になるまで、**開始**プロパティが渡されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-165">After you have pressed the **Start** button to activate an instance of the batching orchestration, messages will not be collected for a batch until the time mentioned for the **Start** property has passed.</span></span>  <span data-ttu-id="e14c0-166">**バッチ構成** ページで、**をすぐに開始**が選択されていないと、**開始**クリックする時刻前の値に設定されているdatetime**開始**ボタン、バッチ処理オーケストレーションがアクティブで、すぐが開始されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-166">In the **Batch Configuration** page, if **Start immediately** is not selected and the **Start** datetime is set to a value prior to the time at which you press the **Start** button, batching will start as soon as the orchestration is active.</span></span> <span data-ttu-id="e14c0-167">アクティベーションの日時が将来に設定されている場合は、その日時になるとバッチ処理が開始されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-167">If the activation datetime is in the future, batching will start at that time.</span></span>  
+  
+ <span data-ttu-id="e14c0-168">設定することができます、**開始**datetime datetime は、将来にします。</span><span class="sxs-lookup"><span data-stu-id="e14c0-168">You can set the **Start** datetime to be a datetime in the future.</span></span> <span data-ttu-id="e14c0-169">ただしをクリックした場合、**開始**ボタン、**開始**datetime が今後は、オーケストレーション インスタンスはアクティブになります。 ただし、[開始] 日時が発生するまでメッセージは収集されません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-169">However, if you click the **Start** button when the **Start** datetime is in the future, the orchestration instance will be activated, but no messages will be collected until the start datetime occurs.</span></span> <span data-ttu-id="e14c0-170">BatchMarker パイプライン コンポーネントは、開始日の時刻になるまで、メッセージをルーティング オーケストレーションまたはバッチ処理オーケストレーションにルーティングするために必要なプロパティを昇格しません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-170">The BatchMarker pipeline component will not promote the appropriate properties needed to route a message to the routing orchestration or the batching orchestration until the start datetime.</span></span> <span data-ttu-id="e14c0-171">そのため、メッセージはバッチ処理されません。</span><span class="sxs-lookup"><span data-stu-id="e14c0-171">As a result, the message will not be batched.</span></span> <span data-ttu-id="e14c0-172">しかし、そのメッセージをサブスクライブしている送信ポートまたはオーケストレーションによって、個別のメッセージとして取得されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-172">However, the messages will be picked up by any send port or orchestration subscribing to them as individual messages.</span></span> <span data-ttu-id="e14c0-173">BatchMarker パイプライン コンポーネントの動作の詳細については、次を参照してください。[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)です。</span><span class="sxs-lookup"><span data-stu-id="e14c0-173">For more information on what the BatchMarker pipeline component does, see [Assembling a Batched EDI Interchange](../core/assembling-a-batched-edi-interchange.md).</span></span>  
+  
+## <a name="batch-termination-criteria"></a><span data-ttu-id="e14c0-174">バッチ終了条件</span><span class="sxs-lookup"><span data-stu-id="e14c0-174">Batch Termination Criteria</span></span>  
+ <span data-ttu-id="e14c0-175">後にバッチに対して収集するメッセージが失われます、**によって終了**datetime の前後で出現回数、 **(出現数) の後に終了**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="e14c0-175">Messages will cease to be collected for a batch after the **End by** datetime or after the number of occurrences in the **End after (occurrences)** property.</span></span> <span data-ttu-id="e14c0-176">バッチ処理オーケストレーションを非アクティブ化したくない場合は、選択、**終了日がない**オプション。</span><span class="sxs-lookup"><span data-stu-id="e14c0-176">If you do not want the batching orchestration to be deactivated, select the **No end date** option.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="e14c0-177">場合、 **(出現数) の後に終了**プロパティが選択されているが、空のバッチ通知をバッチ アクティベーションの範囲を終了するために必要な発生回数まで増えです。</span><span class="sxs-lookup"><span data-stu-id="e14c0-177">If the **End after (occurrences)** property has been selected, empty batch signals count toward the number of occurrences required to end the batch activation range.</span></span> <span data-ttu-id="e14c0-178">通常であれば空のバッチ通知が送信される状態 (バッチ送信のスケジュールが設定されているものの、バッチ処理オーケストレーションでメッセージが受信されていない) が発生したが、空のバッチ通知が構成されていないために通知が送信されない場合にも、発生回数は加算されます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-178">The number of occurrences will also be incremented if the conditions that would normally lead to an empty batch signal occur (no messages have been received by the batching orchestration when the batch is scheduled to be sent), but no empty batch signal is sent because the signal is not configured.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="e14c0-179">参照</span><span class="sxs-lookup"><span data-stu-id="e14c0-179">See Also</span></span>  
+ [<span data-ttu-id="e14c0-180">送信 EDI メッセージをバッチ処理</span><span class="sxs-lookup"><span data-stu-id="e14c0-180">Batching Outgoing EDI Messages</span></span>](../core/batching-outgoing-edi-messages.md)

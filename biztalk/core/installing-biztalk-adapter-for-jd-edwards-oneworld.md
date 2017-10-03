@@ -19,8 +19,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="installing-biztalk-adapter-for-jd-edwards-oneworld"></a>BizTalk Adapter for JD Edwards OneWorld のインストール
-Microsoft BizTalk Adapter for JD Edwards OneWorld のインストールの詳細については、Microsoft BizTalk Adapters for Enterprise Applications のインストール ガイドを参照してください。 番組ガイドの最新バージョンのダウンロードを入手するには、最新の情報を確認してください、[ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=196039"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039)です。  
+# <a name="installing-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="2f1dd-102">BizTalk Adapter for JD Edwards OneWorld のインストール</span><span class="sxs-lookup"><span data-stu-id="2f1dd-102">Installing BizTalk Adapter for JD Edwards OneWorld</span></span>
+<span data-ttu-id="2f1dd-103">Microsoft BizTalk Adapter for JD Edwards OneWorld のインストールの詳細については、Microsoft BizTalk Adapters for Enterprise Applications のインストール ガイドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f1dd-103">For information about installing Microsoft BizTalk Adapter for JD Edwards OneWorld, see the Microsoft BizTalk Adapters for Enterprise Applications installation guide.</span></span> <span data-ttu-id="2f1dd-104">番組ガイドの最新バージョンのダウンロードを入手するには、最新の情報を確認してください、[ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=196039"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039)です。</span><span class="sxs-lookup"><span data-stu-id="2f1dd-104">To ensure that you are reading the most up-to-date information, download the latest version of the guide at [HYPERLINK "http://go.microsoft.com/fwlink/?LinkId=196039" \t "_blank" http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039).</span></span>  
   
-## <a name="see-also"></a>参照  
- [作業の開始](../core/getting-started-with-biztalk-adapter-for-jd-edwards-oneworld.md)
+## <a name="see-also"></a><span data-ttu-id="2f1dd-105">参照</span><span class="sxs-lookup"><span data-stu-id="2f1dd-105">See Also</span></span>  
+ [<span data-ttu-id="2f1dd-106">作業の開始</span><span class="sxs-lookup"><span data-stu-id="2f1dd-106">Getting Started</span></span>](../core/getting-started-with-biztalk-adapter-for-jd-edwards-oneworld.md)

@@ -22,11 +22,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="messaging-biztalk-server-samples-folder"></a>メッセージングの (BizTalk Server Samples フォルダ)
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、メッセージ サンプルが 1 つ用意されています。 ここでは、このメッセージ サンプルで示される機能に関する詳細、サンプルの構築と実行の手順、および期待される効果について説明します。  
+# <a name="messaging-biztalk-server-samples-folder"></a><span data-ttu-id="c8a39-102">メッセージングの (BizTalk Server Samples フォルダ)</span><span class="sxs-lookup"><span data-stu-id="c8a39-102">Messaging (BizTalk Server Samples Folder)</span></span>
+<span data-ttu-id="c8a39-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、メッセージ サンプルが 1 つ用意されています。</span><span class="sxs-lookup"><span data-stu-id="c8a39-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes a single messaging sample in its software development kit (SDK).</span></span> <span data-ttu-id="c8a39-104">ここでは、このメッセージ サンプルで示される機能に関する詳細、サンプルの構築と実行の手順、および期待される効果について説明します。</span><span class="sxs-lookup"><span data-stu-id="c8a39-104">This section provides detailed information about the functionality demonstrated by the message sample, instructions for building and running the sample, and the results you can expect.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="c8a39-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="c8a39-105">In This Section</span></span>  
   
--   [CBRSample (BizTalk Server サンプル)](../core/cbrsample-biztalk-server-sample.md)です。 インスタンス メッセージをコンテンツに基づいてルーティングする方法を示します。  
+-   <span data-ttu-id="c8a39-106">[CBRSample (BizTalk Server サンプル)](../core/cbrsample-biztalk-server-sample.md)です。</span><span class="sxs-lookup"><span data-stu-id="c8a39-106">[CBRSample (BizTalk Server Sample)](../core/cbrsample-biztalk-server-sample.md).</span></span> <span data-ttu-id="c8a39-107">インスタンス メッセージをコンテンツに基づいてルーティングする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c8a39-107">Demonstrates how to route instance messages based on their content.</span></span>  
   
--   [エラー処理 (BizTalk Server Samples フォルダ)](../core/error-handling-biztalk-server-samples-folder.md)です。 CBR アプリケーションのエラー処理機能を構築する方法を示します。
+-   <span data-ttu-id="c8a39-108">[エラー処理 (BizTalk Server Samples フォルダ)](../core/error-handling-biztalk-server-samples-folder.md)です。</span><span class="sxs-lookup"><span data-stu-id="c8a39-108">[Error Handling (BizTalk Server Samples Folder)](../core/error-handling-biztalk-server-samples-folder.md).</span></span> <span data-ttu-id="c8a39-109">CBR アプリケーションのエラー処理機能を構築する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c8a39-109">Demonstrates how to build an error handling functionality for the CBR application.</span></span>

@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="managing-maps-within-projects"></a>プロジェクト内のマップの管理
-このセクションでは、マップ全体を操作するための手順を説明 — たとえば、マップでは、スキーマを指定する、マップの作成に関する手順、マップの保存します。 リンクおよび functoid を使用して、マッピング構造の作成方法の詳細については、次を参照してください。 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)です。  
+# <a name="managing-maps-within-projects"></a><span data-ttu-id="b2a6f-102">プロジェクト内のマップの管理</span><span class="sxs-lookup"><span data-stu-id="b2a6f-102">Managing Maps Within Projects</span></span>
+<span data-ttu-id="b2a6f-103">このセクションでは、マップ全体を操作するための手順を説明 — たとえば、マップでは、スキーマを指定する、マップの作成に関する手順、マップの保存します。</span><span class="sxs-lookup"><span data-stu-id="b2a6f-103">This section provides step-by-step instructions for working with entire maps—for example, the steps involved in creating a map, specifying the schemas in the map, and saving maps.</span></span> <span data-ttu-id="b2a6f-104">リンクおよび functoid を使用して、マッピング構造の作成方法の詳細については、次を参照してください。 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)です。</span><span class="sxs-lookup"><span data-stu-id="b2a6f-104">For information about building the mapping structure using links and functoids, see [Using Functoids to Create More Complex Mappings](../core/using-functoids-to-create-more-complex-mappings.md).</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="b2a6f-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="b2a6f-105">In This Section</span></span>  
   
--   [新しいマップを作成する方法](../core/how-to-create-new-maps.md)  
+-   [<span data-ttu-id="b2a6f-106">新しいマップを作成する方法</span><span class="sxs-lookup"><span data-stu-id="b2a6f-106">How to Create New Maps</span></span>](../core/how-to-create-new-maps.md)  
   
--   [既存のマップを追加する方法](../core/how-to-add-existing-maps.md)  
+-   [<span data-ttu-id="b2a6f-107">既存のマップを追加する方法</span><span class="sxs-lookup"><span data-stu-id="b2a6f-107">How to Add Existing Maps</span></span>](../core/how-to-add-existing-maps.md)  
   
--   [開く、保存、終了、およびマップの名前を変更する方法](../core/how-to-open-save-close-and-rename-maps.md)  
+-   [<span data-ttu-id="b2a6f-108">開く、保存、終了、およびマップの名前を変更する方法</span><span class="sxs-lookup"><span data-stu-id="b2a6f-108">How to Open, Save, Close, and Rename Maps</span></span>](../core/how-to-open-save-close-and-rename-maps.md)  
   
--   [スキーマを置換する方法](../core/how-to-replace-schemas.md)
+-   [<span data-ttu-id="b2a6f-109">スキーマを置換する方法</span><span class="sxs-lookup"><span data-stu-id="b2a6f-109">How to Replace Schemas</span></span>](../core/how-to-replace-schemas.md)

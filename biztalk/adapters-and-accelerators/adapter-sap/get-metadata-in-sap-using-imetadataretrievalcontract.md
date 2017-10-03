@@ -23,51 +23,51 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="get-metadata-in-sap-using-imetadataretrievalcontract"></a>IMetadataRetrievalContract を使用して SAP のメタデータを取得します。
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公開、 **IMetadataRetrievalContract**は Web サービス記述言語 (WSDL) ドキュメントの形式でメタデータを取得して SAP システムのアイテムを検索および参照を使用できるエンドポイント操作です。  
+# <a name="get-metadata-in-sap-using-imetadataretrievalcontract"></a><span data-ttu-id="1129c-102">IMetadataRetrievalContract を使用して SAP のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-102">Get Metadata in SAP using IMetadataRetrievalContract</span></span>
+<span data-ttu-id="1129c-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公開、 **IMetadataRetrievalContract**は Web サービス記述言語 (WSDL) ドキュメントの形式でメタデータを取得して SAP システムのアイテムを検索および参照を使用できるエンドポイント操作です。</span><span class="sxs-lookup"><span data-stu-id="1129c-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] exposes an **IMetadataRetrievalContract**endpoint that you can use to browse and search for SAP system artifacts and to retrieve metadata in the form of a Web Services Description Language (WSDL) document for operations.</span></span>  
   
- **IMetadataRetrievalContract**インターフェイスは、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]とメタデータの参照、検索、および検索の機能を提供します。 加え、 **IMetadataRetrievalContract** 、インターフェイス、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]公開、 **MetadataRetrievalClient**インターフェイスを実装するクラス。 使用するか、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**を使用するメタデータ; 参照、検索、およびメタデータを取得する公開されたメソッドは各ケースで同じです。  
+ <span data-ttu-id="1129c-104">**IMetadataRetrievalContract**インターフェイスは、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]とメタデータの参照、検索、および検索の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="1129c-104">The **IMetadataRetrievalContract** interface is implemented by the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] and provides metadata browse, search, and retrieval capabilities.</span></span> <span data-ttu-id="1129c-105">加え、 **IMetadataRetrievalContract** 、インターフェイス、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]公開、 **MetadataRetrievalClient**インターフェイスを実装するクラス。</span><span class="sxs-lookup"><span data-stu-id="1129c-105">In addition to the **IMetadataRetrievalContract** interface, the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] exposes the **MetadataRetrievalClient** class, which implements the interface.</span></span> <span data-ttu-id="1129c-106">使用するか、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**を使用するメタデータ; 参照、検索、およびメタデータを取得する公開されたメソッドは各ケースで同じです。</span><span class="sxs-lookup"><span data-stu-id="1129c-106">You can use either an **IMetadataRetrievalContract** channel or a **MetadataRetrievalClient** to work with metadata; the methods exposed to browse, search, and retrieve metadata are the same in each case.</span></span>  
   
- 次のセクションでは、使用する方法に関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。  
+ <span data-ttu-id="1129c-107">次のセクションでは、使用する方法に関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="1129c-107">The following sections provide information about how to use the **IMetadataRetrievalContract** interface.</span></span>  
   
-## <a name="the-imetadataretrievalcontract-interface"></a>IMetadataRetrievalContract インターフェイス  
- 次の表を使用するときに使用される重要なクラスに関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。  
+## <a name="the-imetadataretrievalcontract-interface"></a><span data-ttu-id="1129c-108">IMetadataRetrievalContract インターフェイス</span><span class="sxs-lookup"><span data-stu-id="1129c-108">The IMetadataRetrievalContract Interface</span></span>  
+ <span data-ttu-id="1129c-109">次の表を使用するときに使用される重要なクラスに関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="1129c-109">The following table provides information about important classes that are used when you work with the **IMetadataRetrievalContract** interface.</span></span>  
   
-|クラスまたはインターフェイス|Description|  
+|<span data-ttu-id="1129c-110">クラスまたはインターフェイス</span><span class="sxs-lookup"><span data-stu-id="1129c-110">Class or Interface</span></span>|<span data-ttu-id="1129c-111">Description</span><span class="sxs-lookup"><span data-stu-id="1129c-111">Description</span></span>|  
 |------------------------|-----------------|  
-|**IMetadataRetrievalContract**インターフェイス<br /><br /> (Microsoft.ServiceModel.Channels)|定義、**参照**、**検索**、および**GetMetadata**メソッドです。 いずれかを使用してこれらのメソッドを呼び出す、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**アダプター メタデータを使用します。|  
-|**MetadataRetrievalClient**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|実装して、 **IMetadataRetrievalContract**インターフェイスです。 このクラスのインスタンスを作成し、提供することで、SAP システムのように構成することができます、 **SAPBinding**と**EndpointAddress**です。 メタデータを使用するには、そのメソッドを呼び出すことができます。|  
-|**MetadataRetrievalNode**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|アダプター メタデータのノードを表します。 **参照**と**検索**メソッドには、この種類のノードが返されます、 **GetMetadata**メソッドには、パラメーターとしてこの型のノードです。|  
-|**ServiceDescription**クラス<br /><br /> (System.Web.Services.Description)|作成および有効な WSDL ドキュメント ファイルの書式設定する手段を提供します。 **GetMetadata**メソッドを返します、 **ServiceDescription**オブジェクト。|  
+|<span data-ttu-id="1129c-112">**IMetadataRetrievalContract**インターフェイス</span><span class="sxs-lookup"><span data-stu-id="1129c-112">**IMetadataRetrievalContract** interface</span></span><br /><br /> <span data-ttu-id="1129c-113">(Microsoft.ServiceModel.Channels)</span><span class="sxs-lookup"><span data-stu-id="1129c-113">(Microsoft.ServiceModel.Channels)</span></span>|<span data-ttu-id="1129c-114">定義、**参照**、**検索**、および**GetMetadata**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="1129c-114">Defines the **Browse**, **Search**, and **GetMetadata** methods.</span></span> <span data-ttu-id="1129c-115">いずれかを使用してこれらのメソッドを呼び出す、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**アダプター メタデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="1129c-115">You invoke these methods either by using an **IMetadataRetrievalContract** channel or a **MetadataRetrievalClient** to work with adapter metadata.</span></span>|  
+|<span data-ttu-id="1129c-116">**MetadataRetrievalClient**クラス</span><span class="sxs-lookup"><span data-stu-id="1129c-116">**MetadataRetrievalClient** class</span></span><br /><br /> <span data-ttu-id="1129c-117">(Microsoft.ServiceModel.Channels)</span><span class="sxs-lookup"><span data-stu-id="1129c-117">(Microsoft.ServiceModel.Channels)</span></span>|<span data-ttu-id="1129c-118">実装して、 **IMetadataRetrievalContract**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="1129c-118">Implements the **IMetadataRetrievalContract** interface.</span></span> <span data-ttu-id="1129c-119">このクラスのインスタンスを作成し、提供することで、SAP システムのように構成することができます、 **SAPBinding**と**EndpointAddress**です。</span><span class="sxs-lookup"><span data-stu-id="1129c-119">You can create an instance of this class and configure it for your SAP system by providing an **SAPBinding** and an **EndpointAddress**.</span></span> <span data-ttu-id="1129c-120">メタデータを使用するには、そのメソッドを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="1129c-120">Then you can invoke its methods to work with metadata.</span></span>|  
+|<span data-ttu-id="1129c-121">**MetadataRetrievalNode**クラス</span><span class="sxs-lookup"><span data-stu-id="1129c-121">**MetadataRetrievalNode** class</span></span><br /><br /> <span data-ttu-id="1129c-122">(Microsoft.ServiceModel.Channels)</span><span class="sxs-lookup"><span data-stu-id="1129c-122">(Microsoft.ServiceModel.Channels)</span></span>|<span data-ttu-id="1129c-123">アダプター メタデータのノードを表します。</span><span class="sxs-lookup"><span data-stu-id="1129c-123">Represents a metadata node on the adapter.</span></span> <span data-ttu-id="1129c-124">**参照**と**検索**メソッドには、この種類のノードが返されます、 **GetMetadata**メソッドには、パラメーターとしてこの型のノードです。</span><span class="sxs-lookup"><span data-stu-id="1129c-124">The **Browse** and **Search** methods return nodes of this type, and the **GetMetadata** method takes nodes of this type as a parameter.</span></span>|  
+|<span data-ttu-id="1129c-125">**ServiceDescription**クラス</span><span class="sxs-lookup"><span data-stu-id="1129c-125">**ServiceDescription** class</span></span><br /><br /> <span data-ttu-id="1129c-126">(System.Web.Services.Description)</span><span class="sxs-lookup"><span data-stu-id="1129c-126">(System.Web.Services.Description)</span></span>|<span data-ttu-id="1129c-127">作成および有効な WSDL ドキュメント ファイルの書式設定する手段を提供します。</span><span class="sxs-lookup"><span data-stu-id="1129c-127">Provides a means of creating and formatting a valid WSDL document file.</span></span> <span data-ttu-id="1129c-128">**GetMetadata**メソッドを返します、 **ServiceDescription**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="1129c-128">The **GetMetadata** method returns a **ServiceDescription** object.</span></span>|  
   
- 詳細については、 **IMetadataRetrievalContract** 、インターフェイス、 **MetadataRetrievalClient**クラス、および**MetadataRetrievalNode**クラスは、を参照してください**Microsoft.ServiceModel.Channels**での参照をマネージ[http://go.microsoft.com/fwlink/?LinkId=105566](http://go.microsoft.com/fwlink/?LinkId=105566)です。  
+ <span data-ttu-id="1129c-129">詳細については、 **IMetadataRetrievalContract** 、インターフェイス、 **MetadataRetrievalClient**クラス、および**MetadataRetrievalNode**クラスは、を参照してください**Microsoft.ServiceModel.Channels**での参照をマネージ[http://go.microsoft.com/fwlink/?LinkId=105566](http://go.microsoft.com/fwlink/?LinkId=105566)です。</span><span class="sxs-lookup"><span data-stu-id="1129c-129">For more information about the **IMetadataRetrievalContract** interface, the **MetadataRetrievalClient** class, and the **MetadataRetrievalNode** class; see the **Microsoft.ServiceModel.Channels** managed reference at [http://go.microsoft.com/fwlink/?LinkId=105566](http://go.microsoft.com/fwlink/?LinkId=105566).</span></span>  
   
-### <a name="metadata-node-ids"></a>メタデータのノード Id  
- アダプターは、ノードの階層ツリーとしてそのメタデータを整理します。 このツリー構造内では、メタデータのノードの 2 つの種類があります。  
+### <a name="metadata-node-ids"></a><span data-ttu-id="1129c-130">メタデータのノード Id</span><span class="sxs-lookup"><span data-stu-id="1129c-130">Metadata Node IDs</span></span>  
+ <span data-ttu-id="1129c-131">アダプターは、ノードの階層ツリーとしてそのメタデータを整理します。</span><span class="sxs-lookup"><span data-stu-id="1129c-131">The adapter organizes its metadata as a hierarchical tree of nodes.</span></span> <span data-ttu-id="1129c-132">このツリー構造内では、メタデータのノードの 2 つの種類があります。</span><span class="sxs-lookup"><span data-stu-id="1129c-132">Within this tree structure there are two types of metadata nodes:</span></span>  
   
--   **操作のノード**SAP アイテムで、アダプターを表示する操作を表します。 操作のノードは、ツリーのリーフです。  
+-   <span data-ttu-id="1129c-133">**操作のノード**SAP アイテムで、アダプターを表示する操作を表します。</span><span class="sxs-lookup"><span data-stu-id="1129c-133">**Operation nodes** represent operations that the adapter surfaces on SAP artifacts.</span></span> <span data-ttu-id="1129c-134">操作のノードは、ツリーのリーフです。</span><span class="sxs-lookup"><span data-stu-id="1129c-134">Operation nodes are the leaves of the tree.</span></span>  
   
--   **カテゴリ ノード**アダプターでの操作に SAP アイテムと直接対応しない SAP アイテムのグループを表します。 カテゴリのノードがツリーの分岐その他のカテゴリ ノードおよび操作のノードが含まれます。 たとえば、RFC 機能グループまたは SAP ビジネス オブジェクトは、カテゴリのノードとして表されます。  
+-   <span data-ttu-id="1129c-135">**カテゴリ ノード**アダプターでの操作に SAP アイテムと直接対応しない SAP アイテムのグループを表します。</span><span class="sxs-lookup"><span data-stu-id="1129c-135">**Category nodes** represent SAP artifacts and groupings of SAP artifacts that do not directly correspond to an operation on the adapter.</span></span> <span data-ttu-id="1129c-136">カテゴリのノードがツリーの分岐その他のカテゴリ ノードおよび操作のノードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="1129c-136">Category nodes are the branches of the tree; they contain other category nodes and/or operation nodes.</span></span> <span data-ttu-id="1129c-137">たとえば、RFC 機能グループまたは SAP ビジネス オブジェクトは、カテゴリのノードとして表されます。</span><span class="sxs-lookup"><span data-stu-id="1129c-137">For example, RFC functional groups or SAP business objects are represented as category nodes.</span></span>  
   
- アダプター メタデータの各ノードが一意のノード ID で識別されます。 メタデータのノード、アダプターによって公開される Id の詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。 これらのノード Id を使用して使用すると、ターゲット SAP アイテムを指定する、 **IMetadataRetrievalContract**インターフェイスを参照、検索、およびメタデータを取得します。 定義されている定数を使用することができます`Microsoft.Adapters.SAP.SAPAdapterConstants.MetadataConstants`と`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`メタデータ ノード Id を構築するためです。  
+ <span data-ttu-id="1129c-138">アダプター メタデータの各ノードが一意のノード ID で識別されます。</span><span class="sxs-lookup"><span data-stu-id="1129c-138">Each metadata node surfaced by the adapter is identified by a unique node ID.</span></span> <span data-ttu-id="1129c-139">メタデータのノード、アダプターによって公開される Id の詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。</span><span class="sxs-lookup"><span data-stu-id="1129c-139">For more information about the metadata node IDs surfaced by the adapter, see [Metadata Node IDs](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md).</span></span> <span data-ttu-id="1129c-140">これらのノード Id を使用して使用すると、ターゲット SAP アイテムを指定する、 **IMetadataRetrievalContract**インターフェイスを参照、検索、およびメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-140">You use these node IDs to specify target SAP artifacts when you use the **IMetadataRetrievalContract** interface to browse, search, and retrieve metadata.</span></span> <span data-ttu-id="1129c-141">定義されている定数を使用することができます`Microsoft.Adapters.SAP.SAPAdapterConstants.MetadataConstants`と`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`メタデータ ノード Id を構築するためです。</span><span class="sxs-lookup"><span data-stu-id="1129c-141">You can use the constants defined in `Microsoft.Adapters.SAP.SAPAdapterConstants.MetadataConstants` and `Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants` to help you construct metadata node IDs.</span></span>  
   
-### <a name="binding-properties"></a>バインドのプロパティ  
- 使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用する必要がありますを指定する、 **SAPBinding**を作成する場合、インスタンス。  
+### <a name="binding-properties"></a><span data-ttu-id="1129c-142">バインドのプロパティ</span><span class="sxs-lookup"><span data-stu-id="1129c-142">Binding Properties</span></span>  
+ <span data-ttu-id="1129c-143">使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用する必要がありますを指定する、 **SAPBinding**を作成する場合、インスタンス。</span><span class="sxs-lookup"><span data-stu-id="1129c-143">Whether you use an **IMetadataRetrievalContract** channel or an **IMetadataRetrievalClient** to work with metadata, you must specify an **SAPBinding** when you create the instance.</span></span>  
   
- アダプターがメタデータを生成する方法に影響を与えるいくつかのバインド プロパティがあります。 これらのプロパティは次のとおりです。  
+ <span data-ttu-id="1129c-144">アダプターがメタデータを生成する方法に影響を与えるいくつかのバインド プロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="1129c-144">There are several binding properties that affect how the adapter generates metadata.</span></span> <span data-ttu-id="1129c-145">これらのプロパティは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="1129c-145">These properties are:</span></span>  
   
--   **GenerateFlatfileCompatibleIdocSchema**  
+-   <span data-ttu-id="1129c-146">**GenerateFlatfileCompatibleIdocSchema**</span><span class="sxs-lookup"><span data-stu-id="1129c-146">**GenerateFlatfileCompatibleIdocSchema**</span></span>  
   
--   **ReceiveIDocFormat**  
+-   <span data-ttu-id="1129c-147">**ReceiveIDocFormat**</span><span class="sxs-lookup"><span data-stu-id="1129c-147">**ReceiveIDocFormat**</span></span>  
   
--   **EnableSafeTyping**  
+-   <span data-ttu-id="1129c-148">**EnableSafeTyping**</span><span class="sxs-lookup"><span data-stu-id="1129c-148">**EnableSafeTyping**</span></span>  
   
--   **FlatFileSegmentIndicator**  
+-   <span data-ttu-id="1129c-149">**FlatFileSegmentIndicator**</span><span class="sxs-lookup"><span data-stu-id="1129c-149">**FlatFileSegmentIndicator**</span></span>  
   
- メタデータの取得オブジェクトを開く前に、アプリケーションに必要な値をこれらのバインディング プロパティを設定することを確認する必要があります。 SAP アダプターのバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
+ <span data-ttu-id="1129c-150">メタデータの取得オブジェクトを開く前に、アプリケーションに必要な値をこれらのバインディング プロパティを設定することを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1129c-150">You should ensure that these binding properties are set to the values required for your application before you open the metadata retrieval object.</span></span> <span data-ttu-id="1129c-151">SAP アダプターのバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="1129c-151">For more information about the SAP adapter binding properties, see [Read about  BizTalk Adapter for mySAP Business Suite Binding Properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
   
-### <a name="browsing-metadata-nodes"></a>メタデータのノードを参照  
- 使用する、**参照**を親ノードに含まれているすべてのメタデータのノードを返すメソッド。 次の例は、SAP システムでは、最初の 3 つの RFC 機能グループの参照します。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。  
+### <a name="browsing-metadata-nodes"></a><span data-ttu-id="1129c-152">メタデータのノードを参照</span><span class="sxs-lookup"><span data-stu-id="1129c-152">Browsing Metadata Nodes</span></span>  
+ <span data-ttu-id="1129c-153">使用する、**参照**を親ノードに含まれているすべてのメタデータのノードを返すメソッド。</span><span class="sxs-lookup"><span data-stu-id="1129c-153">You use the **Browse** method to return all the metadata nodes that are contained in a parent node.</span></span> <span data-ttu-id="1129c-154">次の例は、SAP システムでは、最初の 3 つの RFC 機能グループの参照します。</span><span class="sxs-lookup"><span data-stu-id="1129c-154">The following example browses for the first three RFC functional groups on the SAP system.</span></span> <span data-ttu-id="1129c-155">この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。</span><span class="sxs-lookup"><span data-stu-id="1129c-155">In this example, **client** is an instance of **MetadataRetrievalClient**.</span></span>  
   
 ```  
 // The first parameter is the node ID.   
@@ -77,10 +77,10 @@ IMetadataRetrievalNode[] nodes = client.Browse(Microsoft.Adapters.SAP.SAPAdapter
 ```  
   
 > [!IMPORTANT]
->  カテゴリのノードを参照することができますのみ操作のノードを参照することはできません。  
+>  <span data-ttu-id="1129c-156">カテゴリのノードを参照することができますのみ操作のノードを参照することはできません。</span><span class="sxs-lookup"><span data-stu-id="1129c-156">You can only browse category nodes; you cannot browse operation nodes.</span></span>  
   
-### <a name="searching-for-metadata-nodes"></a>メタデータのノードの検索  
- 使用する、**検索**の親ノードに含まれるノードの検索を実行するメソッド。 アスタリスクを指定することができます (\*) ワイルドカード文字です。 この文字は、0 個以上の文字と一致します。 次の例は、文字列"BAPI"が含まれるすべての Rfc の検索を示しています。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。  
+### <a name="searching-for-metadata-nodes"></a><span data-ttu-id="1129c-157">メタデータのノードの検索</span><span class="sxs-lookup"><span data-stu-id="1129c-157">Searching for Metadata Nodes</span></span>  
+ <span data-ttu-id="1129c-158">使用する、**検索**の親ノードに含まれるノードの検索を実行するメソッド。</span><span class="sxs-lookup"><span data-stu-id="1129c-158">You use the **Search** method to perform a search for nodes contained by a parent node.</span></span> <span data-ttu-id="1129c-159">アスタリスクを指定することができます (\*) ワイルドカード文字です。</span><span class="sxs-lookup"><span data-stu-id="1129c-159">You can specify the asterisk (\*) wildcard character.</span></span> <span data-ttu-id="1129c-160">この文字は、0 個以上の文字と一致します。</span><span class="sxs-lookup"><span data-stu-id="1129c-160">This character matches zero or more characters.</span></span> <span data-ttu-id="1129c-161">次の例は、文字列"BAPI"が含まれるすべての Rfc の検索を示しています。</span><span class="sxs-lookup"><span data-stu-id="1129c-161">The following example shows a search for all RFCs that contain the string "BAPI".</span></span> <span data-ttu-id="1129c-162">この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。</span><span class="sxs-lookup"><span data-stu-id="1129c-162">In this example, **client** is an instance of **MetadataRetrievalClient**.</span></span>  
   
 ```  
 // Search for all nodes that contain "BAPI" under the RFC node.  
@@ -90,10 +90,10 @@ IMetadataRetrievalNode[] nodes = client.Search(Microsoft.Adapters.SAP.SAPAdapter
 ```  
   
 > [!IMPORTANT]
->  検索は、限られた一連のノードでのみサポートされます。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。  
+>  <span data-ttu-id="1129c-163">検索は、限られた一連のノードでのみサポートされます。</span><span class="sxs-lookup"><span data-stu-id="1129c-163">Searching is only supported on a limited set of nodes.</span></span> <span data-ttu-id="1129c-164">検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。</span><span class="sxs-lookup"><span data-stu-id="1129c-164">For more information about the nodes on which search is supported and about the wildcard character supported in search expressions, see [Metadata Node IDs](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md).</span></span>  
   
-### <a name="retrieving-metadata-wsdl-for-operations"></a>操作のメタデータ (WSDL) を取得します。  
- 使用する、 **GetMetadata**操作のノードのグループに対するサービスの説明 (WSDL ドキュメント) を取得します。 次の例では、BAPI_TRANSACTION_COMMIT RFC のサービスの説明を取得します。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。 操作ノードのノードの ID がその操作の操作のメッセージと同じことに注意してください。  
+### <a name="retrieving-metadata-wsdl-for-operations"></a><span data-ttu-id="1129c-165">操作のメタデータ (WSDL) を取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-165">Retrieving Metadata (WSDL) for Operations</span></span>  
+ <span data-ttu-id="1129c-166">使用する、 **GetMetadata**操作のノードのグループに対するサービスの説明 (WSDL ドキュメント) を取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-166">You use the **GetMetadata** method to retrieve a service description (WSDL document) for a group of operation nodes.</span></span> <span data-ttu-id="1129c-167">次の例では、BAPI_TRANSACTION_COMMIT RFC のサービスの説明を取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-167">The following example retrieves a service description for the BAPI_TRANSACTION_COMMIT RFC.</span></span> <span data-ttu-id="1129c-168">この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。</span><span class="sxs-lookup"><span data-stu-id="1129c-168">In this example, **client** is an instance of **MetadataRetrievalClient**.</span></span> <span data-ttu-id="1129c-169">操作ノードのノードの ID がその操作の操作のメッセージと同じことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="1129c-169">Note that the node ID for an operation node is equivalent to the message action for that operation.</span></span>  
   
 ```  
 // Get a WSDL document that specifies a contract that contains the  
@@ -107,12 +107,12 @@ System.Web.Services.Description.ServiceDescription description = client.GetMetad
 ```  
   
 > [!IMPORTANT]
->  内の操作のノードを指定する必要がありますのみ、 **GetMetadata**メソッドです。  
+>  <span data-ttu-id="1129c-170">内の操作のノードを指定する必要がありますのみ、 **GetMetadata**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="1129c-170">You should only specify operation nodes in the **GetMetadata** method.</span></span>  
   
-### <a name="using-a-metadataretrievalclient"></a>使用して、MetadataRetrievalClient  
- 作成と使用、 **MetadataRetrievalClient**他の WCF クライアントは、ほぼ同じです。 エンドポイントとのインスタンスを指定して、クライアントを作成する**SAPBinding**です。 構成で宣言またはコードで強制的に、これを行うことができます。 次のメソッドを呼び出し、 **MetadataRetrievalClient**を参照するには、検索、およびアダプターからメタデータを取得します。  
+### <a name="using-a-metadataretrievalclient"></a><span data-ttu-id="1129c-171">使用して、MetadataRetrievalClient</span><span class="sxs-lookup"><span data-stu-id="1129c-171">Using a MetadataRetrievalClient</span></span>  
+ <span data-ttu-id="1129c-172">作成と使用、 **MetadataRetrievalClient**他の WCF クライアントは、ほぼ同じです。</span><span class="sxs-lookup"><span data-stu-id="1129c-172">Creating and using a **MetadataRetrievalClient** is much the same as any other WCF client.</span></span> <span data-ttu-id="1129c-173">エンドポイントとのインスタンスを指定して、クライアントを作成する**SAPBinding**です。</span><span class="sxs-lookup"><span data-stu-id="1129c-173">You create the client by specifying an endpoint and an instance of **SAPBinding**.</span></span> <span data-ttu-id="1129c-174">構成で宣言またはコードで強制的に、これを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="1129c-174">You can do this either declaratively in configuration or imperatively in your code.</span></span> <span data-ttu-id="1129c-175">次のメソッドを呼び出し、 **MetadataRetrievalClient**を参照するには、検索、およびアダプターからメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-175">You then invoke the methods of the **MetadataRetrievalClient** to browse, search, and retrieve metadata from the adapter.</span></span>  
   
- 次の例を使用する方法を示しています、 **MetadataRetrievalClient**を参照するには、検索、およびメタデータを取得、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ <span data-ttu-id="1129c-176">次の例を使用する方法を示しています、 **MetadataRetrievalClient**を参照するには、検索、およびメタデータを取得、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="1129c-176">The following example shows how to use a **MetadataRetrievalClient** to browse, search, and retrieve metadata from the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
   
 ```  
 using System;  
@@ -213,7 +213,7 @@ namespace SapMetaDataBrowseClient
 }  
 ```  
   
- 次のコンソールでこのプログラムの出力は、次に示します。 それぞれのメソッドに返されるメタデータの取得のノードの構造を確認できます。 プログラムは、また、ファイルを検索によって返されるノードで構成されるサービス コントラクトを説明する WSDL ドキュメントを書き込みます。 (ほとんどの SAP インストールでは、サービスの説明が含まれません、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK 操作します。)  
+ <span data-ttu-id="1129c-177">次のコンソールでこのプログラムの出力は、次に示します。</span><span class="sxs-lookup"><span data-stu-id="1129c-177">The following shows the output of this program on the console.</span></span> <span data-ttu-id="1129c-178">それぞれのメソッドに返されるメタデータの取得のノードの構造を確認できます。</span><span class="sxs-lookup"><span data-stu-id="1129c-178">You can see the structure of the metadata retrieval nodes returned for each method.</span></span> <span data-ttu-id="1129c-179">プログラムは、また、ファイルを検索によって返されるノードで構成されるサービス コントラクトを説明する WSDL ドキュメントを書き込みます。</span><span class="sxs-lookup"><span data-stu-id="1129c-179">The program also writes a WSDL document that describes a service contract consisting of the nodes returned by the search to a file.</span></span> <span data-ttu-id="1129c-180">(ほとんどの SAP インストールでは、サービスの説明が含まれません、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK 操作します。)</span><span class="sxs-lookup"><span data-stu-id="1129c-180">(For most SAP installations, the service description will contain the BAPI_TRANSACTION_COMMIT and BAPI_TRANSACTION_ROLLBACK operations.)</span></span>  
   
 ```  
 Browse results for the root node:  
@@ -274,8 +274,8 @@ NodeId = http://Microsoft.LobServices.Sap/2007/03/Rfc/BAPI_TRANSACTION_ROLLBACK
   
 ```  
   
-## <a name="using-an-imetadataretrievalcontract-channel"></a>IMetadataRetrievalContract チャネルを使用します。  
- 作成することも、 **IMetadataRetrievalContract**チャネルし、このチャネルを使用して、参照、検索、およびアダプターからメタデータを取得します。 (メソッドのシグネチャが同じである、 **MetadataRetrievalClient**クラスです)。その方法を次の例に示します。  
+## <a name="using-an-imetadataretrievalcontract-channel"></a><span data-ttu-id="1129c-181">IMetadataRetrievalContract チャネルを使用します。</span><span class="sxs-lookup"><span data-stu-id="1129c-181">Using an IMetadataRetrievalContract Channel</span></span>  
+ <span data-ttu-id="1129c-182">作成することも、 **IMetadataRetrievalContract**チャネルし、このチャネルを使用して、参照、検索、およびアダプターからメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-182">You can also create an **IMetadataRetrievalContract** channel and then use this channel to browse, search, and retrieve metadata from the adapter.</span></span> <span data-ttu-id="1129c-183">(メソッドのシグネチャが同じである、 **MetadataRetrievalClient**クラスです)。その方法を次の例に示します。</span><span class="sxs-lookup"><span data-stu-id="1129c-183">(The method signatures are the same as for the **MetadataRetrievalClient** class.) The following example shows how to do this.</span></span>  
   
 ```  
 …  
@@ -297,5 +297,5 @@ MetadataRetrievalNode[] nodes = channel.Search(Microsoft.Adapters.SAP.SAPAdapter
 …  
 ```  
   
-## <a name="see-also"></a>参照  
- [SAP からメタデータをプログラムで取得します。](../../adapters-and-accelerators/adapter-sap/get-metadata-programmatically-from-sap.md)
+## <a name="see-also"></a><span data-ttu-id="1129c-184">参照</span><span class="sxs-lookup"><span data-stu-id="1129c-184">See Also</span></span>  
+ [<span data-ttu-id="1129c-185">SAP からメタデータをプログラムで取得します。</span><span class="sxs-lookup"><span data-stu-id="1129c-185">Retrieving Metadata Programmatically from SAP</span></span>](../../adapters-and-accelerators/adapter-sap/get-metadata-programmatically-from-sap.md)

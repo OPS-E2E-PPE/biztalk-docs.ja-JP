@@ -22,9 +22,9 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-send-ports"></a>送信ポートの作成
-シングル サインオン (SSO) および関連アプリケーションを使用する送信ポートを作成した場合は、ユーザー名とパスワードのパラメーターは入力する必要はありません。 選択した**はい**の**SSO を使用する**、一覧から TIBCO Rendezvous システムを表すために作成した SSO 関連アプリケーションを選択します。  
+# <a name="creating-send-ports"></a><span data-ttu-id="fde6f-102">送信ポートの作成</span><span class="sxs-lookup"><span data-stu-id="fde6f-102">Creating Send Ports</span></span>
+<span data-ttu-id="fde6f-103">シングル サインオン (SSO) および関連アプリケーションを使用する送信ポートを作成した場合は、ユーザー名とパスワードのパラメーターは入力する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="fde6f-103">When you create a send port that uses Single Sign-On (SSO) and the affiliate application, you do not enter the User name and Password parameters.</span></span> <span data-ttu-id="fde6f-104">選択した**はい**の**SSO を使用する**、一覧から TIBCO Rendezvous システムを表すために作成した SSO 関連アプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="fde6f-104">You select **Yes** for **Use SSO**, and then you select the SSO affiliate application that you created to represent the TIBCO Rendezvous system from the list.</span></span>  
   
-## <a name="see-also"></a>参照  
- [関連アプリケーションの作成](../core/creating-affiliate-applications1.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on5.md)
+## <a name="see-also"></a><span data-ttu-id="fde6f-105">参照</span><span class="sxs-lookup"><span data-stu-id="fde6f-105">See Also</span></span>  
+ <span data-ttu-id="fde6f-106">[関連アプリケーションの作成](../core/creating-affiliate-applications1.md) </span><span class="sxs-lookup"><span data-stu-id="fde6f-106">[Creating Affiliate Applications](../core/creating-affiliate-applications1.md) </span></span>  
+ [<span data-ttu-id="fde6f-107">シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="fde6f-107">Using Single Sign-On</span></span>](../core/using-single-sign-on5.md)

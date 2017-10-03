@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---too-many-data-inputs-to-node"></a>エラー - ノードへのデータ入力が多すぎます
-**エラー コード**  
+# <a name="error---too-many-data-inputs-to-node"></a><span data-ttu-id="9509e-102">エラー - ノードへのデータ入力が多すぎます</span><span class="sxs-lookup"><span data-stu-id="9509e-102">Error - Too Many Data Inputs to Node</span></span>
+<span data-ttu-id="9509e-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="9509e-103">**Error Code**</span></span>  
   
- btm1005  
+ <span data-ttu-id="9509e-104">btm1005</span><span class="sxs-lookup"><span data-stu-id="9509e-104">btm1005</span></span>  
   
- **説明**  
+ <span data-ttu-id="9509e-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="9509e-105">**Explanation**</span></span>  
   
- 多くへの入力リンクの数よりも、送信先スキーマのノードに接続しているリンクがある、**ループ**functoid のノードの祖先のノードに接続されています。 この 2 種類のリンクの数は、一致している必要があります。  
+ <span data-ttu-id="9509e-106">多くへの入力リンクの数よりも、送信先スキーマのノードに接続しているリンクがある、**ループ**functoid のノードの祖先のノードに接続されています。</span><span class="sxs-lookup"><span data-stu-id="9509e-106">There are a greater number of links connected to the indicated node in the destination schema than the number of input links to the **Looping** functoid that is connected to an ancestor node of the indicated node.</span></span> <span data-ttu-id="9509e-107">この 2 種類のリンクの数は、一致している必要があります。</span><span class="sxs-lookup"><span data-stu-id="9509e-107">The number of links of the former and latter types should match.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="9509e-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="9509e-108">**User Action**</span></span>  
   
- 作業のやり直しのノードにされ、接続されているリンクの数、**ループ**functoid が、祖先ノードに接続されている一致するものとします。
+ <span data-ttu-id="9509e-109">作業のやり直しのノードにされ、接続されているリンクの数、**ループ**functoid が、祖先ノードに接続されている一致するものとします。</span><span class="sxs-lookup"><span data-stu-id="9509e-109">Rework the number of links connected to the indicated node and to the **Looping** functoid connected to the ancestor node so that they match.</span></span>

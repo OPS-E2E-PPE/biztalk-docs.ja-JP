@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---native-parsing"></a>エラー - ネイティブ解析
-**エラー コード**  
+# <a name="error---native-parsing"></a><span data-ttu-id="03841-102">エラー - ネイティブ解析</span><span class="sxs-lookup"><span data-stu-id="03841-102">Error - Native Parsing</span></span>
+<span data-ttu-id="03841-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="03841-103">**Error Code**</span></span>  
   
- btm1041  
+ <span data-ttu-id="03841-104">btm1041</span><span class="sxs-lookup"><span data-stu-id="03841-104">btm1041</span></span>  
   
- **説明**  
+ <span data-ttu-id="03841-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="03841-105">**Explanation**</span></span>  
   
- マップのテスト操作用に指定されたネイティブの入力インスタンス メッセージ ファイルを解析できませんでした。その結果、解析エラーが生成されました。  
+ <span data-ttu-id="03841-106">マップのテスト操作用に指定されたネイティブの入力インスタンス メッセージ ファイルを解析できませんでした。その結果、解析エラーが生成されました。</span><span class="sxs-lookup"><span data-stu-id="03841-106">The native input instance message file specified for the Test Map operation could not be parsed, and generated the indicated parsing error.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="03841-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="03841-107">**User Action**</span></span>  
   
- 適宜、解析エラーを参考にして、マップに関連付けられている送信元スキーマか、指定されているファイルのネイティブな入力インスタンス メッセージ、またはその両方を修正してください。
+ <span data-ttu-id="03841-108">適宜、解析エラーを参考にして、マップに関連付けられている送信元スキーマか、指定されているファイルのネイティブな入力インスタンス メッセージ、またはその両方を修正してください。</span><span class="sxs-lookup"><span data-stu-id="03841-108">As appropriate, and using the indicated parsing error, correct either the source schema associated with the map or the native input instance message in the specified file, or both.</span></span>

@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-return-true-or-false-from-a-policy"></a>ポリシーから True または False を返す方法
-ポリシーで戻り値の型を直接指定することはできません。 ただし、次に示すファクトの種類の 1 つをポリシーに渡し、このファクトの値をポリシーで `true` または `false` に変更して、ポリシーの実行後にプロパティ、要素、または列の値を確認することができます。  
+# <a name="how-to-return-true-or-false-from-a-policy"></a><span data-ttu-id="58834-102">ポリシーから True または False を返す方法</span><span class="sxs-lookup"><span data-stu-id="58834-102">How to Return True or False from a Policy</span></span>
+<span data-ttu-id="58834-103">ポリシーで戻り値の型を直接指定することはできません。</span><span class="sxs-lookup"><span data-stu-id="58834-103">You cannot specify a return type for a policy directly.</span></span> <span data-ttu-id="58834-104">ただし、次に示すファクトの種類の 1 つをポリシーに渡し、このファクトの値をポリシーで `true` または `false` に変更して、ポリシーの実行後にプロパティ、要素、または列の値を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="58834-104">However, you can pass one of the following types of facts to the policy, have the policy change the value of the fact to `true` or `false`, and then check the value of the property/element/column after the policy is executed:</span></span>  
   
--   `Boolean` 型のプロパティを持つ .NET オブジェクト  
+-   <span data-ttu-id="58834-105">`Boolean` 型のプロパティを持つ .NET オブジェクト</span><span class="sxs-lookup"><span data-stu-id="58834-105">A .NET object with a property of type `Boolean`</span></span>  
   
--   `Boolean` 型の要素を持つ XML ドキュメント  
+-   <span data-ttu-id="58834-106">`Boolean` 型の要素を持つ XML ドキュメント</span><span class="sxs-lookup"><span data-stu-id="58834-106">An XML document with an element of type `Boolean`</span></span>  
   
--   `Boolean` 型の列を持つデータベース テーブル
+-   <span data-ttu-id="58834-107">`Boolean` 型の列を持つデータベース テーブル</span><span class="sxs-lookup"><span data-stu-id="58834-107">A database table with a column of type `Boolean`</span></span>

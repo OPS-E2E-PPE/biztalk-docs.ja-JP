@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error--the-scripting-functoid-that-connects-to-target-node-39039-has-an-error-in-its-39xslt-call-template39-definition-39139"></a>エラー-スクリプト functoid、ターゲット ノード &#39; に接続します。{0} & #39 以外の場合は、エラーが原因でその & #39 です。Xslt 呼び出しテンプレート &#39;定義: &#39; \  & #39 です。
-**エラー コード**  
+# <a name="error--the-scripting-functoid-that-connects-to-target-node-39039-has-an-error-in-its-39xslt-call-template39-definition-39139"></a><span data-ttu-id="22e99-102">エラー-スクリプト functoid、ターゲット ノード &#39; に接続します。{0} & #39 以外の場合は、エラーが原因でその & #39 です。Xslt 呼び出しテンプレート &#39;定義: &#39; \  & #39 です。</span><span class="sxs-lookup"><span data-stu-id="22e99-102">Error- The Scripting functoid, that connects to target node &#39;{0}&#39;, has an error in its &#39;Xslt Call-Template&#39; definition: &#39;{1}&#39;</span></span>
+<span data-ttu-id="22e99-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="22e99-103">**Error Code**</span></span>  
   
- btm1082  
+ <span data-ttu-id="22e99-104">btm1082</span><span class="sxs-lookup"><span data-stu-id="22e99-104">btm1082</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="22e99-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="22e99-105">**User Action**</span></span>  
   
- スクリプト Functoid について指定された XSLT 呼び出しテンプレート スクリプトを修正します。
+ <span data-ttu-id="22e99-106">スクリプト Functoid について指定された XSLT 呼び出しテンプレート スクリプトを修正します。</span><span class="sxs-lookup"><span data-stu-id="22e99-106">Correct the xslt call template script specified for the script functoid.</span></span>

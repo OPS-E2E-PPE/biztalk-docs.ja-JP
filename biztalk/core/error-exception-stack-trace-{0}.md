@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---exception-stack-trace-0"></a>エラー - 例外スタック トレース: {0}
-**エラー コード**  
+# <a name="error---exception-stack-trace-0"></a><span data-ttu-id="b4b67-102">エラー - 例外スタック トレース: {0}</span><span class="sxs-lookup"><span data-stu-id="b4b67-102">Error - Exception Stack Trace: {0}</span></span>
+<span data-ttu-id="b4b67-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="b4b67-103">**Error Code**</span></span>  
   
- btm1024  
+ <span data-ttu-id="b4b67-104">btm1024</span><span class="sxs-lookup"><span data-stu-id="b4b67-104">btm1024</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="b4b67-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="b4b67-105">**User Action**</span></span>  
   
- [なし] :
+ <span data-ttu-id="b4b67-106">[なし] :</span><span class="sxs-lookup"><span data-stu-id="b4b67-106">None.</span></span>

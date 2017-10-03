@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---the-output-csharp-is-stored-in-the-following-file-ltfile---0gt"></a>エラー - CSharp が次のファイルに格納されている出力: &lt;file:---{0}&gt;
-**エラー コード**  
+# <a name="error---the-output-csharp-is-stored-in-the-following-file-ltfile---0gt"></a><span data-ttu-id="a1ea8-102">エラー - CSharp が次のファイルに格納されている出力: &lt;file:---{0}&gt;</span><span class="sxs-lookup"><span data-stu-id="a1ea8-102">Error - The output CSharp is stored in the following file: &lt;file:---{0}&gt;</span></span>
+<span data-ttu-id="a1ea8-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="a1ea8-103">**Error Code**</span></span>  
   
- btm1059  
+ <span data-ttu-id="a1ea8-104">btm1059</span><span class="sxs-lookup"><span data-stu-id="a1ea8-104">btm1059</span></span>  
   
- **説明**  
+ <span data-ttu-id="a1ea8-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="a1ea8-105">**Explanation**</span></span>  
   
- これは単なる情報メッセージです。 出力ファイルを表示するには、リンクをクリックします。  
+ <span data-ttu-id="a1ea8-106">これは単なる情報メッセージです。</span><span class="sxs-lookup"><span data-stu-id="a1ea8-106">This is just an information message.</span></span> <span data-ttu-id="a1ea8-107">出力ファイルを表示するには、リンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a1ea8-107">Click on the link to view the output file.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="a1ea8-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="a1ea8-108">**User Action**</span></span>  
   
- [なし] :
+ <span data-ttu-id="a1ea8-109">[なし] :</span><span class="sxs-lookup"><span data-stu-id="a1ea8-109">None.</span></span>

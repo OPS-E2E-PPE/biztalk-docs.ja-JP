@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="bam-command-line-tools"></a>BAM コマンド ライン ツール
-ここでは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] に付属の BAM コマンド ライン ツールに関するリファレンス情報を提供します。  
+# <a name="bam-command-line-tools"></a><span data-ttu-id="0d409-103">BAM コマンド ライン ツール</span><span class="sxs-lookup"><span data-stu-id="0d409-103">BAM Command-Line Tools</span></span>
+<span data-ttu-id="0d409-104">ここでは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] に付属の BAM コマンド ライン ツールに関するリファレンス情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="0d409-104">This section provides reference information for the BAM command-line tools included with Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].</span></span>  
   
-## <a name="available-tools"></a>使用可能なツール 
+## <a name="available-tools"></a><span data-ttu-id="0d409-105">使用可能なツール</span><span class="sxs-lookup"><span data-stu-id="0d409-105">Available tools</span></span> 
   
--   [BAM 管理ユーティリティ](../core/bam-management-utility.md)  
+-   [<span data-ttu-id="0d409-106">BAM 管理ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="0d409-106">BAM Management Utility</span></span>](../core/bam-management-utility.md)  
   
--   [追跡プロファイルの展開ユーティリティ](../core/tracking-profile-deployment-utility.md)  
+-   [<span data-ttu-id="0d409-107">追跡プロファイルの展開ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="0d409-107">Tracking Profile Deployment Utility</span></span>](../core/tracking-profile-deployment-utility.md)  
   
--   [通知用の BAM コマンド ライン スクリプトはサービス構成ファイル](../core/bam-command-line-script-for-notification-services-configuration-files.md)
+-   [<span data-ttu-id="0d409-108">通知用の BAM コマンド ライン スクリプトはサービス構成ファイル</span><span class="sxs-lookup"><span data-stu-id="0d409-108">BAM Command-Line Script for Notification Services Configuration Files</span></span>](../core/bam-command-line-script-for-notification-services-configuration-files.md)

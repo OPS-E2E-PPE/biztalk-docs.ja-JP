@@ -18,24 +18,24 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-edi-properties"></a>EDI のプロパティの構成
-このセクションでは、X12 でエンコードされたメッセージと EDIFACT でエンコードされたメッセージの両方の EDI アグリーメントのプロパティを定義する方法について説明します。  
+# <a name="configuring-edi-properties"></a><span data-ttu-id="89643-102">EDI のプロパティの構成</span><span class="sxs-lookup"><span data-stu-id="89643-102">Configuring EDI Properties</span></span>
+<span data-ttu-id="89643-103">このセクションでは、X12 でエンコードされたメッセージと EDIFACT でエンコードされたメッセージの両方の EDI アグリーメントのプロパティを定義する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="89643-103">This section describes how to define EDI agreement properties, both for X12- and EDIFACT-encoded messages.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="89643-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="89643-104">In This Section</span></span>  
   
--   [パーティの全般プロパティを構成します。](../core/configuring-general-party-properties.md)  
+-   [<span data-ttu-id="89643-105">パーティの全般プロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="89643-105">Configuring General Party Properties</span></span>](../core/configuring-general-party-properties.md)  
   
--   [ビジネス プロファイル プロパティの構成](../core/configuring-business-profile-properties.md)  
+-   [<span data-ttu-id="89643-106">ビジネス プロファイル プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="89643-106">Configuring Business Profile Properties</span></span>](../core/configuring-business-profile-properties.md)  
   
--   [エンコード アグリーメントのプロパティを構成します。](../core/configuring-encoding-agreement-properties.md)  
+-   [<span data-ttu-id="89643-107">エンコード アグリーメントのプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="89643-107">Configuring Encoding Agreement Properties</span></span>](../core/configuring-encoding-agreement-properties.md)  
   
--   [別のアグリーメント プロパティの再利用](../core/reusing-properties-from-another-agreement.md)  
+-   [<span data-ttu-id="89643-108">別のアグリーメント プロパティの再利用</span><span class="sxs-lookup"><span data-stu-id="89643-108">Reusing Properties from Another Agreement</span></span>](../core/reusing-properties-from-another-agreement.md)  
   
-## <a name="see-also"></a>参照  
- [開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md)   
- [EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)   
- [アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)   
- [アグリーメントの解決と送信 EDI メッセージのスキーマの決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)   
- [パーティの EDI ソリューションの構成](../core/configuring-edi-properties.md)   
- [グローバルまたはフォールバック アグリーメント プロパティの構成](../core/configuring-global-or-fallback-agreement-properties.md)   
- [EDI パーティに関する既知の問題](../core/known-issues-with-edi-parties.md)
+## <a name="see-also"></a><span data-ttu-id="89643-109">参照</span><span class="sxs-lookup"><span data-stu-id="89643-109">See Also</span></span>  
+ <span data-ttu-id="89643-110">[開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md) </span><span class="sxs-lookup"><span data-stu-id="89643-110">[Developing and Configuring BizTalk Server EDI Solutions](../core/developing-and-configuring-biztalk-server-edi-solutions.md) </span></span>  
+ <span data-ttu-id="89643-111">[EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md) </span><span class="sxs-lookup"><span data-stu-id="89643-111">[The Role of Agreements in EDI Processing](../core/the-role-of-agreements-in-edi-processing.md) </span></span>  
+ <span data-ttu-id="89643-112">[アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md) </span><span class="sxs-lookup"><span data-stu-id="89643-112">[Agreement Resolution, Schema Discovery, and Authorization for Received EDI Messages](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md) </span></span>  
+ <span data-ttu-id="89643-113">[アグリーメントの解決と送信 EDI メッセージのスキーマの決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md) </span><span class="sxs-lookup"><span data-stu-id="89643-113">[Agreement Resolution and Schema Determination for Outgoing EDI Messages](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md) </span></span>  
+ <span data-ttu-id="89643-114">[パーティの EDI ソリューションの構成](../core/configuring-edi-properties.md) </span><span class="sxs-lookup"><span data-stu-id="89643-114">[Configuring a Party for an EDI Solution](../core/configuring-edi-properties.md) </span></span>  
+ <span data-ttu-id="89643-115">[グローバルまたはフォールバック アグリーメント プロパティの構成](../core/configuring-global-or-fallback-agreement-properties.md) </span><span class="sxs-lookup"><span data-stu-id="89643-115">[Configuring Global or Fallback Agreement Properties](../core/configuring-global-or-fallback-agreement-properties.md) </span></span>  
+ [<span data-ttu-id="89643-116">EDI パーティに関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="89643-116">Known Issues with EDI Parties</span></span>](../core/known-issues-with-edi-parties.md)

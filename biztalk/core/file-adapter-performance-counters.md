@@ -18,42 +18,42 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="file-adapter-performance-counters"></a>ファイル アダプターのパフォーマンス カウンター
-パフォーマンス カウンターを使用すると、サービスによってサイトまたはシステムで実行されている作業の具体的な側面を監視できます。 パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。  
+# <a name="file-adapter-performance-counters"></a><span data-ttu-id="dc15c-102">ファイル アダプターのパフォーマンス カウンター</span><span class="sxs-lookup"><span data-stu-id="dc15c-102">File Adapter Performance Counters</span></span>
+<span data-ttu-id="dc15c-103">パフォーマンス カウンターを使用すると、サービスによってサイトまたはシステムで実行されている作業の具体的な側面を監視できます。</span><span class="sxs-lookup"><span data-stu-id="dc15c-103">Performance counters allow you to monitor specific aspects of work performed on the site or system by service.</span></span> <span data-ttu-id="dc15c-104">パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="dc15c-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span>  
   
- 次のパフォーマンス カウンターは各ホスト インスタンスにアクセスできる、 **biztalk: ファイル受信アダプター**と**biztalk: ファイル送信アダプター**パフォーマンス オブジェクト カテゴリ。  
+ <span data-ttu-id="dc15c-105">次のパフォーマンス カウンターは各ホスト インスタンスにアクセスできる、 **biztalk: ファイル受信アダプター**と**biztalk: ファイル送信アダプター**パフォーマンス オブジェクト カテゴリ。</span><span class="sxs-lookup"><span data-stu-id="dc15c-105">The following performance counters are accessible for each host instance under the **BizTalk:FILE Receive Adapter** and the **BizTalk:FILE Send Adapter** performance object categories:</span></span>  
   
-|**カテゴリ**|**カウンター**|**Description**|  
+|<span data-ttu-id="dc15c-106">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="dc15c-106">**Category**</span></span>|<span data-ttu-id="dc15c-107">**カウンター**</span><span class="sxs-lookup"><span data-stu-id="dc15c-107">**Counter**</span></span>|<span data-ttu-id="dc15c-108">**Description**</span><span class="sxs-lookup"><span data-stu-id="dc15c-108">**Description**</span></span>|  
 |------------------|-----------------|---------------------|  
-|BizTalk:ファイル受信アダプター|Bytes received|ファイル受信アダプターによって受信された合計バイト数。 このカウンターは、アダプターがファイル システムからメッセージを完全に読み取った後で増やされます。|  
-||Byte received/Sec|ファイル受信アダプターが 1 秒あたりに受信したバイト数。 このカウンターの対象となるのは、ファイル アダプターがファイル システムから完全に読み取ったメッセージだけです。|  
-||Delete retries|ファイル受信アダプターが、読み取ったファイルの削除を試みた回数。|  
-||Lock failures|ファイル受信アダプターがファイルのロックに失敗した回数。|  
-||Lock failures/sec|ファイル受信アダプターがファイルのロックに失敗した 1 秒あたりの回数。|  
-||Messages received|ファイル受信アダプターが受信したメッセージの総数。 このカウンターは、ファイル受信アダプターがファイル システムからメッセージを完全に読み取った後で増やされます。|  
-||Messages received/Sec|ファイル受信アダプターが 1 秒あたりに受信したメッセージ数。 このカウンターの対象となるのは、ファイル受信アダプターがファイル システムから完全に読み取ったメッセージだけです。|  
-||Time to build batch|ファイル受信アダプターがバッチの作成に要した平均時間。|  
-|BizTalk:ファイル送信アダプター|Bytes sent|ファイル送信アダプターによって送信された合計バイト数。 カウンターは、メッセージがファイル システムに完全に書き込まれた場合にのみ増やされます。|  
-||Bytes sent/Sec|ファイル送信アダプターによって送信された 1 秒あたりのバイト数。 このカウンターの対象となるのは、ファイル システムに完全に書き込まれたメッセージだけです。|  
-||Messages sent|ファイル送信アダプターによって送信されたメッセージの総数。 カウンターは、メッセージがファイル システムに完全に書き込まれた場合にのみ増やされます。|  
-||Messages Sent/sec|ファイル送信アダプターによって送信された 1 秒あたりのメッセージ数。 このカウンターの対象となるのは、ファイル システムに完全に書き込まれたメッセージだけです。|  
+|<span data-ttu-id="dc15c-109">BizTalk:ファイル受信アダプター</span><span class="sxs-lookup"><span data-stu-id="dc15c-109">BizTalk:FILE Receive Adapter</span></span>|<span data-ttu-id="dc15c-110">Bytes received</span><span class="sxs-lookup"><span data-stu-id="dc15c-110">Bytes received</span></span>|<span data-ttu-id="dc15c-111">ファイル受信アダプターによって受信された合計バイト数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-111">Total number of bytes received by the file receive adapter.</span></span> <span data-ttu-id="dc15c-112">このカウンターは、アダプターがファイル システムからメッセージを完全に読み取った後で増やされます。</span><span class="sxs-lookup"><span data-stu-id="dc15c-112">The counter is incremented after a message is completely read by the adapter from the file system.</span></span>|  
+||<span data-ttu-id="dc15c-113">Byte received/Sec</span><span class="sxs-lookup"><span data-stu-id="dc15c-113">Byte received/Sec</span></span>|<span data-ttu-id="dc15c-114">ファイル受信アダプターが 1 秒あたりに受信したバイト数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-114">Number of bytes received by the file receive adapter per second.</span></span> <span data-ttu-id="dc15c-115">このカウンターの対象となるのは、ファイル アダプターがファイル システムから完全に読み取ったメッセージだけです。</span><span class="sxs-lookup"><span data-stu-id="dc15c-115">The counter applies only to messages that have been completely read by the file adapter from the file system.</span></span>|  
+||<span data-ttu-id="dc15c-116">Delete retries</span><span class="sxs-lookup"><span data-stu-id="dc15c-116">Delete retries</span></span>|<span data-ttu-id="dc15c-117">ファイル受信アダプターが、読み取ったファイルの削除を試みた回数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-117">Number of times the file receive adapter attempts to delete a file that has been read.</span></span>|  
+||<span data-ttu-id="dc15c-118">Lock failures</span><span class="sxs-lookup"><span data-stu-id="dc15c-118">Lock failures</span></span>|<span data-ttu-id="dc15c-119">ファイル受信アダプターがファイルのロックに失敗した回数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-119">Number of times the file receive adapter failed to lock the file.</span></span>|  
+||<span data-ttu-id="dc15c-120">Lock failures/sec</span><span class="sxs-lookup"><span data-stu-id="dc15c-120">Lock failures/sec</span></span>|<span data-ttu-id="dc15c-121">ファイル受信アダプターがファイルのロックに失敗した 1 秒あたりの回数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-121">Number of times the file receive adapter failed to lock the file per second.</span></span>|  
+||<span data-ttu-id="dc15c-122">Messages received</span><span class="sxs-lookup"><span data-stu-id="dc15c-122">Messages received</span></span>|<span data-ttu-id="dc15c-123">ファイル受信アダプターが受信したメッセージの総数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-123">Total number of messages received by the file receive adapter.</span></span> <span data-ttu-id="dc15c-124">このカウンターは、ファイル受信アダプターがファイル システムからメッセージを完全に読み取った後で増やされます。</span><span class="sxs-lookup"><span data-stu-id="dc15c-124">The counter is incremented after a message is completely read by the file receive adapter from the file system.</span></span>|  
+||<span data-ttu-id="dc15c-125">Messages received/Sec</span><span class="sxs-lookup"><span data-stu-id="dc15c-125">Messages received/Sec</span></span>|<span data-ttu-id="dc15c-126">ファイル受信アダプターが 1 秒あたりに受信したメッセージ数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-126">Number of messages received by the file receive adapter per second.</span></span> <span data-ttu-id="dc15c-127">このカウンターの対象となるのは、ファイル受信アダプターがファイル システムから完全に読み取ったメッセージだけです。</span><span class="sxs-lookup"><span data-stu-id="dc15c-127">The counter applies only to messages that have been completely read by the file receive adapter from the file system.</span></span>|  
+||<span data-ttu-id="dc15c-128">Time to build batch</span><span class="sxs-lookup"><span data-stu-id="dc15c-128">Time to build batch</span></span>|<span data-ttu-id="dc15c-129">ファイル受信アダプターがバッチの作成に要した平均時間。</span><span class="sxs-lookup"><span data-stu-id="dc15c-129">Average time taken by file receive adapter to build a batch.</span></span>|  
+|<span data-ttu-id="dc15c-130">BizTalk:ファイル送信アダプター</span><span class="sxs-lookup"><span data-stu-id="dc15c-130">BizTalk:FILE Send Adapter</span></span>|<span data-ttu-id="dc15c-131">Bytes sent</span><span class="sxs-lookup"><span data-stu-id="dc15c-131">Bytes sent</span></span>|<span data-ttu-id="dc15c-132">ファイル送信アダプターによって送信された合計バイト数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-132">Total number of bytes sent by the file send adapter.</span></span> <span data-ttu-id="dc15c-133">カウンターは、メッセージがファイル システムに完全に書き込まれた場合にのみ増やされます。</span><span class="sxs-lookup"><span data-stu-id="dc15c-133">The counter is incremented only for messages that have been completely written to file system.</span></span>|  
+||<span data-ttu-id="dc15c-134">Bytes sent/Sec</span><span class="sxs-lookup"><span data-stu-id="dc15c-134">Bytes sent/Sec</span></span>|<span data-ttu-id="dc15c-135">ファイル送信アダプターによって送信された 1 秒あたりのバイト数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-135">Number of bytes sent by the file send adapter per second.</span></span> <span data-ttu-id="dc15c-136">このカウンターの対象となるのは、ファイル システムに完全に書き込まれたメッセージだけです。</span><span class="sxs-lookup"><span data-stu-id="dc15c-136">The counter applies only to messages that have been completely written to file system.</span></span>|  
+||<span data-ttu-id="dc15c-137">Messages sent</span><span class="sxs-lookup"><span data-stu-id="dc15c-137">Messages sent</span></span>|<span data-ttu-id="dc15c-138">ファイル送信アダプターによって送信されたメッセージの総数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-138">Total number of messages sent by the file send adapter.</span></span> <span data-ttu-id="dc15c-139">カウンターは、メッセージがファイル システムに完全に書き込まれた場合にのみ増やされます。</span><span class="sxs-lookup"><span data-stu-id="dc15c-139">The counter is incremented only for messages that have been completely written to file system.</span></span>|  
+||<span data-ttu-id="dc15c-140">Messages Sent/sec</span><span class="sxs-lookup"><span data-stu-id="dc15c-140">Messages sent/Sec</span></span>|<span data-ttu-id="dc15c-141">ファイル送信アダプターによって送信された 1 秒あたりのメッセージ数。</span><span class="sxs-lookup"><span data-stu-id="dc15c-141">Number of messages sent by the file send adapter per second.</span></span> <span data-ttu-id="dc15c-142">このカウンターの対象となるのは、ファイル システムに完全に書き込まれたメッセージだけです。</span><span class="sxs-lookup"><span data-stu-id="dc15c-142">The counter applies only to messages that have been completely written to file system.</span></span>|  
   
-## <a name="to-access-performance-counters"></a>パフォーマンス カウンターにアクセスするには  
- パフォーマンス カウンターにアクセスするには、次の手順を実行します。  
+## <a name="to-access-performance-counters"></a><span data-ttu-id="dc15c-143">パフォーマンス カウンターにアクセスするには</span><span class="sxs-lookup"><span data-stu-id="dc15c-143">To access performance counters</span></span>  
+ <span data-ttu-id="dc15c-144">パフォーマンス カウンターにアクセスするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dc15c-144">Use the following steps to access the performance counters.</span></span>  
   
-#### <a name="if-you-are-using-windows-2008"></a>Windows 2008 を使用している場合  
+#### <a name="if-you-are-using-windows-2008"></a><span data-ttu-id="dc15c-145">Windows 2008 を使用している場合</span><span class="sxs-lookup"><span data-stu-id="dc15c-145">If you are using Windows 2008</span></span>  
   
-1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**パフォーマンス モニター**です。  
+1.  <span data-ttu-id="dc15c-146">をクリックして**開始**、 をポイント**管理ツール**、順にクリック**パフォーマンス モニター**です。</span><span class="sxs-lookup"><span data-stu-id="dc15c-146">Click **Start**, point to **Administrative Tools**, and then click **Performance Monitor**.</span></span>  
   
-2.  **パフォーマンス モニター** ] ダイアログ ボックスで、展開**の監視ツールを**[**パフォーマンス モニター**、順にクリック**追加**です。  
+2.  <span data-ttu-id="dc15c-147">**パフォーマンス モニター** ] ダイアログ ボックスで、展開**の監視ツールを**[**パフォーマンス モニター**、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="dc15c-147">In the **Performance Monitor** dialog box, expand **Monitoring Tools**, select **Performance Monitor**, and then click **Add**.</span></span>  
   
-3.  **カウンターの追加** ダイアログ ボックスから、**使用可能なカウンター**一覧で、展開、 **biztalk: ファイル**パフォーマンス カウンター オブジェクトおよび監視するカウンターの選択  
+3.  <span data-ttu-id="dc15c-148">**カウンターの追加** ダイアログ ボックスから、**使用可能なカウンター**一覧で、展開、 **biztalk: ファイル**パフォーマンス カウンター オブジェクトおよび監視するカウンターの選択</span><span class="sxs-lookup"><span data-stu-id="dc15c-148">In the **Add Counters** dialog box, from the **Available Counters** list, expand the **BizTalk:FILE** performance counter object and select the counters to be monitored</span></span>  
   
-4.  **インスタンスの選択したオブジェクト**一覧をクリックして、選択したカウンターを監視する特定のインスタンスを選択**追加**です。  使用可能なカウンターのすべてのインスタンスを選択するには、次のように選択します。 \<**すべてのインスタンス**>。  
+4.  <span data-ttu-id="dc15c-149">**インスタンスの選択したオブジェクト**一覧をクリックして、選択したカウンターを監視する特定のインスタンスを選択**追加**です。</span><span class="sxs-lookup"><span data-stu-id="dc15c-149">In the **Instances of Selected object** list, select the specific instances to be monitored for the selected counters and then click **Add**.</span></span>  <span data-ttu-id="dc15c-150">使用可能なカウンターのすべてのインスタンスを選択するには、次のように選択します。 \<**すべてのインスタンス**>。</span><span class="sxs-lookup"><span data-stu-id="dc15c-150">To select all available counter instances, select \<**All instances**>.</span></span>  
   
-5.  カウンターを追加すると、をクリックして**OK**です。  
+5.  <span data-ttu-id="dc15c-151">カウンターを追加すると、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="dc15c-151">After adding the counters, click **OK**.</span></span>  
   
-     選択したパフォーマンス カウンターが表示されます、**パフォーマンス モニター**画面。  
+     <span data-ttu-id="dc15c-152">選択したパフォーマンス カウンターが表示されます、**パフォーマンス モニター**画面。</span><span class="sxs-lookup"><span data-stu-id="dc15c-152">The selected performance counters appear on the **Performance Monitor** screen.</span></span>  
   
-## <a name="see-also"></a>参照  
- [パフォーマンス維持の計画](../core/planning-for-sustained-performance.md)
+## <a name="see-also"></a><span data-ttu-id="dc15c-153">参照</span><span class="sxs-lookup"><span data-stu-id="dc15c-153">See Also</span></span>  
+ [<span data-ttu-id="dc15c-154">パフォーマンス維持の計画</span><span class="sxs-lookup"><span data-stu-id="dc15c-154">Planning for Sustained Performance</span></span>](../core/planning-for-sustained-performance.md)

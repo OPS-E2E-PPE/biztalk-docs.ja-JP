@@ -25,60 +25,60 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="hl7-message-structure"></a>HL7 メッセージの構造体
-HL7 メッセージは、トリガー イベントに関連付けられている階層構造です。 標準 HL7 は、「() を作成するデータをシステム間でやり取りの必要性医療保険の実際のイベント」としてトリガー イベントを定義します。 各トリガー イベントは、メッセージは、トリガ イベントをサポートするために必要なデータの種類を定義する抽象メッセージに関連付けられます。 抽象のメッセージは、セグメントのコレクションであり、繰り返しとこれらのセグメントを含めることのルールが含まれます。 次の表は、トリガー イベント A04 – 患者の登録に関連付けられている抽象メッセージの例を示します。  
+# <a name="hl7-message-structure"></a><span data-ttu-id="00c22-102">HL7 メッセージの構造体</span><span class="sxs-lookup"><span data-stu-id="00c22-102">HL7 Message Structure</span></span>
+<span data-ttu-id="00c22-103">HL7 メッセージは、トリガー イベントに関連付けられている階層構造です。</span><span class="sxs-lookup"><span data-stu-id="00c22-103">An HL7 message is a hierarchical structure associated with a trigger event.</span></span> <span data-ttu-id="00c22-104">標準 HL7 は、「() を作成するデータをシステム間でやり取りの必要性医療保険の実際のイベント」としてトリガー イベントを定義します。</span><span class="sxs-lookup"><span data-stu-id="00c22-104">The HL7 standard defines trigger event as "an event in the real world of health care (that) creates the need for data to flow among systems".</span></span> <span data-ttu-id="00c22-105">各トリガー イベントは、メッセージは、トリガ イベントをサポートするために必要なデータの種類を定義する抽象メッセージに関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="00c22-105">Each trigger event is associated with an abstract message that defines the type of data that the message needs to support the trigger event.</span></span> <span data-ttu-id="00c22-106">抽象のメッセージは、セグメントのコレクションであり、繰り返しとこれらのセグメントを含めることのルールが含まれます。</span><span class="sxs-lookup"><span data-stu-id="00c22-106">The abstract message is a collection of segments, and includes the rules of repetition and inclusion for those segments.</span></span> <span data-ttu-id="00c22-107">次の表は、トリガー イベント A04 – 患者の登録に関連付けられている抽象メッセージの例を示します。</span><span class="sxs-lookup"><span data-stu-id="00c22-107">The following table shows an example of an abstract message associated with the trigger event A04 – Register Patient.</span></span>  
   
-|トリガー イベント|抽象メッセージ|  
+|<span data-ttu-id="00c22-108">トリガー イベント</span><span class="sxs-lookup"><span data-stu-id="00c22-108">Trigger event</span></span>|<span data-ttu-id="00c22-109">抽象メッセージ</span><span class="sxs-lookup"><span data-stu-id="00c22-109">Abstract message</span></span>|  
 |-------------------|----------------------|  
-|ADT ^ A04 ^ ADT_A01|受付、放電、および転送|  
-|MSH|メッセージ ヘッダー|  
-|EVN|[イベントの種類]|  
-|PID|患者の識別|  
-|[PD1]|追加の人口統計|  
-|[{ロール}]|ロール|  
-|[{NK1}]|年/関連するパーティの 次へ|  
-|PV1|患者のアクセス|  
-|[PV2]|患者訪問 - 追加情報|  
-|[{ロール}]|ロール|  
-|[{DB1}]|障害のある情報|  
-|[{OBX}]|監視/結果|  
-|[{AL1}]|Allergy 情報|  
-|[{DG1}]|診断情報|  
-|[DRG]|関連するグループの診断|  
-|[{||  
-|PR1|手順|  
-|[{ロール}]|ロール|  
-|}]||  
-|[{GT1}]|保証|  
-|[{||  
-|IN1|保険|  
-|[入力 2]|保険の追加情報|  
-|[{IN3}]|保険の追加情報の証明書です。|  
-|[{ロール}]|ロール|  
-|}]||  
-|[口座]|誤って情報|  
-|[UB1]|ユニバーサルの課金情報|  
-|[UB2]|ユニバーサル Bill 92 情報|  
-|[PDA]|患者死と Autopsy|  
+|<span data-ttu-id="00c22-110">ADT ^ A04 ^ ADT_A01</span><span class="sxs-lookup"><span data-stu-id="00c22-110">ADT^A04^ADT_A01</span></span>|<span data-ttu-id="00c22-111">受付、放電、および転送</span><span class="sxs-lookup"><span data-stu-id="00c22-111">Admissions, Discharge, and Transfer</span></span>|  
+|<span data-ttu-id="00c22-112">MSH</span><span class="sxs-lookup"><span data-stu-id="00c22-112">MSH</span></span>|<span data-ttu-id="00c22-113">メッセージ ヘッダー</span><span class="sxs-lookup"><span data-stu-id="00c22-113">Message Header</span></span>|  
+|<span data-ttu-id="00c22-114">EVN</span><span class="sxs-lookup"><span data-stu-id="00c22-114">EVN</span></span>|<span data-ttu-id="00c22-115">[イベントの種類]</span><span class="sxs-lookup"><span data-stu-id="00c22-115">Event Type</span></span>|  
+|<span data-ttu-id="00c22-116">PID</span><span class="sxs-lookup"><span data-stu-id="00c22-116">PID</span></span>|<span data-ttu-id="00c22-117">患者の識別</span><span class="sxs-lookup"><span data-stu-id="00c22-117">Patient Identification</span></span>|  
+|<span data-ttu-id="00c22-118">[PD1]</span><span class="sxs-lookup"><span data-stu-id="00c22-118">[  PD1  ]</span></span>|<span data-ttu-id="00c22-119">追加の人口統計</span><span class="sxs-lookup"><span data-stu-id="00c22-119">Additional Demographics</span></span>|  
+|<span data-ttu-id="00c22-120">[{ロール}]</span><span class="sxs-lookup"><span data-stu-id="00c22-120">[{ ROL }]</span></span>|<span data-ttu-id="00c22-121">ロール</span><span class="sxs-lookup"><span data-stu-id="00c22-121">Role</span></span>|  
+|<span data-ttu-id="00c22-122">[{NK1}]</span><span class="sxs-lookup"><span data-stu-id="00c22-122">[{ NK1 }]</span></span>|<span data-ttu-id="00c22-123">年/関連するパーティの 次へ</span><span class="sxs-lookup"><span data-stu-id="00c22-123">Next of Kin / Associated Parties</span></span>|  
+|<span data-ttu-id="00c22-124">PV1</span><span class="sxs-lookup"><span data-stu-id="00c22-124">PV1</span></span>|<span data-ttu-id="00c22-125">患者のアクセス</span><span class="sxs-lookup"><span data-stu-id="00c22-125">Patient Visit</span></span>|  
+|<span data-ttu-id="00c22-126">[PV2]</span><span class="sxs-lookup"><span data-stu-id="00c22-126">[  PV2  ]</span></span>|<span data-ttu-id="00c22-127">患者訪問 - 追加情報</span><span class="sxs-lookup"><span data-stu-id="00c22-127">Patient Visit - Additional Information</span></span>|  
+|<span data-ttu-id="00c22-128">[{ロール}]</span><span class="sxs-lookup"><span data-stu-id="00c22-128">[{ ROL }]</span></span>|<span data-ttu-id="00c22-129">ロール</span><span class="sxs-lookup"><span data-stu-id="00c22-129">Role</span></span>|  
+|<span data-ttu-id="00c22-130">[{DB1}]</span><span class="sxs-lookup"><span data-stu-id="00c22-130">[{ DB1 }]</span></span>|<span data-ttu-id="00c22-131">障害のある情報</span><span class="sxs-lookup"><span data-stu-id="00c22-131">Disability Information</span></span>|  
+|<span data-ttu-id="00c22-132">[{OBX}]</span><span class="sxs-lookup"><span data-stu-id="00c22-132">[{ OBX }]</span></span>|<span data-ttu-id="00c22-133">監視/結果</span><span class="sxs-lookup"><span data-stu-id="00c22-133">Observation/Result</span></span>|  
+|<span data-ttu-id="00c22-134">[{AL1}]</span><span class="sxs-lookup"><span data-stu-id="00c22-134">[{ AL1 }]</span></span>|<span data-ttu-id="00c22-135">Allergy 情報</span><span class="sxs-lookup"><span data-stu-id="00c22-135">Allergy Information</span></span>|  
+|<span data-ttu-id="00c22-136">[{DG1}]</span><span class="sxs-lookup"><span data-stu-id="00c22-136">[{ DG1 }]</span></span>|<span data-ttu-id="00c22-137">診断情報</span><span class="sxs-lookup"><span data-stu-id="00c22-137">Diagnosis Information</span></span>|  
+|<span data-ttu-id="00c22-138">[DRG]</span><span class="sxs-lookup"><span data-stu-id="00c22-138">[  DRG  ]</span></span>|<span data-ttu-id="00c22-139">関連するグループの診断</span><span class="sxs-lookup"><span data-stu-id="00c22-139">Diagnosis Related Group</span></span>|  
+|<span data-ttu-id="00c22-140">[{</span><span class="sxs-lookup"><span data-stu-id="00c22-140">[{</span></span>||  
+|<span data-ttu-id="00c22-141">PR1</span><span class="sxs-lookup"><span data-stu-id="00c22-141">PR1</span></span>|<span data-ttu-id="00c22-142">手順</span><span class="sxs-lookup"><span data-stu-id="00c22-142">Procedures</span></span>|  
+|<span data-ttu-id="00c22-143">[{ロール}]</span><span class="sxs-lookup"><span data-stu-id="00c22-143">[{ ROL }]</span></span>|<span data-ttu-id="00c22-144">ロール</span><span class="sxs-lookup"><span data-stu-id="00c22-144">Role</span></span>|  
+|<span data-ttu-id="00c22-145">}]</span><span class="sxs-lookup"><span data-stu-id="00c22-145">}]</span></span>||  
+|<span data-ttu-id="00c22-146">[{GT1}]</span><span class="sxs-lookup"><span data-stu-id="00c22-146">[{ GT1 } ]</span></span>|<span data-ttu-id="00c22-147">保証</span><span class="sxs-lookup"><span data-stu-id="00c22-147">Guarantor</span></span>|  
+|<span data-ttu-id="00c22-148">[{</span><span class="sxs-lookup"><span data-stu-id="00c22-148">[{</span></span>||  
+|<span data-ttu-id="00c22-149">IN1</span><span class="sxs-lookup"><span data-stu-id="00c22-149">IN1</span></span>|<span data-ttu-id="00c22-150">保険</span><span class="sxs-lookup"><span data-stu-id="00c22-150">Insurance</span></span>|  
+|<span data-ttu-id="00c22-151">[入力 2]</span><span class="sxs-lookup"><span data-stu-id="00c22-151">[  IN2 ]</span></span>|<span data-ttu-id="00c22-152">保険の追加情報</span><span class="sxs-lookup"><span data-stu-id="00c22-152">Insurance Additional Information</span></span>|  
+|<span data-ttu-id="00c22-153">[{IN3}]</span><span class="sxs-lookup"><span data-stu-id="00c22-153">[{ IN3 }]</span></span>|<span data-ttu-id="00c22-154">保険の追加情報の証明書です。</span><span class="sxs-lookup"><span data-stu-id="00c22-154">Insurance Additional Information - Cert.</span></span>|  
+|<span data-ttu-id="00c22-155">[{ロール}]</span><span class="sxs-lookup"><span data-stu-id="00c22-155">[{ ROL }]</span></span>|<span data-ttu-id="00c22-156">ロール</span><span class="sxs-lookup"><span data-stu-id="00c22-156">Role</span></span>|  
+|<span data-ttu-id="00c22-157">}]</span><span class="sxs-lookup"><span data-stu-id="00c22-157">}]</span></span>||  
+|<span data-ttu-id="00c22-158">[口座]</span><span class="sxs-lookup"><span data-stu-id="00c22-158">[  ACC  ]</span></span>|<span data-ttu-id="00c22-159">誤って情報</span><span class="sxs-lookup"><span data-stu-id="00c22-159">Accident Information</span></span>|  
+|<span data-ttu-id="00c22-160">[UB1]</span><span class="sxs-lookup"><span data-stu-id="00c22-160">[  UB1  ]</span></span>|<span data-ttu-id="00c22-161">ユニバーサルの課金情報</span><span class="sxs-lookup"><span data-stu-id="00c22-161">Universal Bill Information</span></span>|  
+|<span data-ttu-id="00c22-162">[UB2]</span><span class="sxs-lookup"><span data-stu-id="00c22-162">[  UB2  ]</span></span>|<span data-ttu-id="00c22-163">ユニバーサル Bill 92 情報</span><span class="sxs-lookup"><span data-stu-id="00c22-163">Universal Bill 92 Information</span></span>|  
+|<span data-ttu-id="00c22-164">[PDA]</span><span class="sxs-lookup"><span data-stu-id="00c22-164">[  PDA  ]</span></span>|<span data-ttu-id="00c22-165">患者死と Autopsy</span><span class="sxs-lookup"><span data-stu-id="00c22-165">Patient Death and Autopsy</span></span>|  
   
- 上記の角かっこ"["、"]"セグメントまたはセグメントのグループが中かっこの中に、省略可能であることを示す"{"、"}"セグメントまたはセグメントの繰り返しのグループを指定します。  
+ <span data-ttu-id="00c22-166">上記の角かっこ"["、"]"セグメントまたはセグメントのグループが中かっこの中に、省略可能であることを示す"{"、"}"セグメントまたはセグメントの繰り返しのグループを指定します。</span><span class="sxs-lookup"><span data-stu-id="00c22-166">The brackets above "[", "]" indicate that a segment or group of segments is optional, while braces "{", "}" indicate the segment or group of segments repeat.</span></span>  
   
- セグメントは、特定のデータ型に準拠した各フィールドのグループです。 フィールドには、単純または複雑な構造を持つことができます。 そのデータ型の定義で定義されたルールに従ってコンポーネントで構成されます。 複雑なデータ型をサポートするために一部のコンポーネントは可能性がありますのサブコンポーネントで構成されます。  
+ <span data-ttu-id="00c22-167">セグメントは、特定のデータ型に準拠した各フィールドのグループです。</span><span class="sxs-lookup"><span data-stu-id="00c22-167">A segment is a group of fields each of which conforms to a particular data type.</span></span> <span data-ttu-id="00c22-168">フィールドには、単純または複雑な構造を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="00c22-168">Fields can have a simple or complex structure.</span></span> <span data-ttu-id="00c22-169">そのデータ型の定義で定義されたルールに従ってコンポーネントで構成されます。</span><span class="sxs-lookup"><span data-stu-id="00c22-169">They consist of components according to the rules defined in their data-type definition.</span></span> <span data-ttu-id="00c22-170">複雑なデータ型をサポートするために一部のコンポーネントは可能性がありますのサブコンポーネントで構成されます。</span><span class="sxs-lookup"><span data-stu-id="00c22-170">In order to support the more complex data types, some components may consist of subcomponents.</span></span>  
   
 > [!NOTE]
->  HL7 メッセージの使用をエンコーディングに区切り記号が指定されているファクトは、データを分割する新しい方法を紹介する開発者の機能を制限します。 することはできませんサブ サブコンポーネントは、新しい種類の区切り文字を発明が必要であるためです。  
+>  <span data-ttu-id="00c22-171">HL7 メッセージの使用をエンコーディングに区切り記号が指定されているファクトは、データを分割する新しい方法を紹介する開発者の機能を制限します。</span><span class="sxs-lookup"><span data-stu-id="00c22-171">The fact that HL7 message encoding uses specified delimiters limits the ability of a developer to introduce new ways of subdividing the data.</span></span> <span data-ttu-id="00c22-172">することはできませんサブ サブコンポーネントは、新しい種類の区切り文字を発明が必要であるためです。</span><span class="sxs-lookup"><span data-stu-id="00c22-172">There can be no sub-subcomponent, since this would require invention of a new delimiter type.</span></span>  
   
- 最初の HL7 仕様では、抽象メッセージは定義しませんでした。 抽象のメッセージは、トリガー イベントに関連付けられているセグメントのパターンです。 同様に、HL7 メッセージには、同時に、繰り返し表示するか、グループに分割するセグメントのコレクションが含まれます。 最初の HL7 仕様では、セグメント グループは定義しませんでした。 V2.3.1、開始して、今後のバージョンで続行、XML エンコードをサポートする必要がによりこれを変更します。 たとえば、上のトリガー イベントの表に、メッセージの構造の名前は"ADT_A01" これは、同じパターン セグメントが A01 – Patient の許可をサポートするために使用されるのです。 便宜上、メッセージ構造の名前に対応 (HL7 ドキュメント内の配置) の観点から、最初は、それらを使用するイベントをトリガーします。 同様に、グループとして、トリガー イベント上の表に入力 2、IN3、およびロールを含む IN1 で始まるセグメントのグループが繰り返されます。 その名前、以降のバージョン 2.5 では、「保険」グループ。  
+ <span data-ttu-id="00c22-173">最初の HL7 仕様では、抽象メッセージは定義しませんでした。</span><span class="sxs-lookup"><span data-stu-id="00c22-173">The first HL7 specifications did not define the abstract message.</span></span> <span data-ttu-id="00c22-174">抽象のメッセージは、トリガー イベントに関連付けられているセグメントのパターンです。</span><span class="sxs-lookup"><span data-stu-id="00c22-174">The abstract message is the pattern of segments associated with a trigger event.</span></span> <span data-ttu-id="00c22-175">同様に、HL7 メッセージには、同時に、繰り返し表示するか、グループに分割するセグメントのコレクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="00c22-175">Similarly, HL7 messages contain collections of segments that repeat together, or segment groups.</span></span> <span data-ttu-id="00c22-176">最初の HL7 仕様では、セグメント グループは定義しませんでした。</span><span class="sxs-lookup"><span data-stu-id="00c22-176">The first HL7 specifications did not define segment groups.</span></span> <span data-ttu-id="00c22-177">V2.3.1、開始して、今後のバージョンで続行、XML エンコードをサポートする必要がによりこれを変更します。</span><span class="sxs-lookup"><span data-stu-id="00c22-177">Starting with V2.3.1, and continuing in the subsequent versions, this changed due to the need to support XML encoding.</span></span> <span data-ttu-id="00c22-178">たとえば、上のトリガー イベントの表に、メッセージの構造の名前は"ADT_A01"</span><span class="sxs-lookup"><span data-stu-id="00c22-178">For example, in the Trigger Event table above, the name of the message structure is "ADT_A01".</span></span> <span data-ttu-id="00c22-179">これは、同じパターン セグメントが A01 – Patient の許可をサポートするために使用されるのです。</span><span class="sxs-lookup"><span data-stu-id="00c22-179">This is the same pattern of segments used to support A01 – Admit Patient.</span></span> <span data-ttu-id="00c22-180">便宜上、メッセージ構造の名前に対応 (HL7 ドキュメント内の配置) の観点から、最初は、それらを使用するイベントをトリガーします。</span><span class="sxs-lookup"><span data-stu-id="00c22-180">For convenience, the names of message structures correspond to the first (in terms of placement within the HL7 document) trigger event that uses them.</span></span> <span data-ttu-id="00c22-181">同様に、グループとして、トリガー イベント上の表に入力 2、IN3、およびロールを含む IN1 で始まるセグメントのグループが繰り返されます。</span><span class="sxs-lookup"><span data-stu-id="00c22-181">Similarly, the group of segments in the Trigger Event table above that starts with IN1, including IN2, IN3, and ROL, repeats as a group.</span></span> <span data-ttu-id="00c22-182">その名前、以降のバージョン 2.5 では、「保険」グループ。</span><span class="sxs-lookup"><span data-stu-id="00c22-182">Its name—starting with Version 2.5 is "Insurance" group.</span></span>  
   
- バージョン 2 では、バージョン間の互換性規則は、標準の今後のバージョンが以前のバージョンが無効になる構造を含めないことを要求することでインターフェイスの進化をサポートします。 これは、トリガー イベントを削除しないことを使用しないトリガー イベント別の目的や別の抽象メッセージ本来よりも必要があります。 抽象メッセージの場合に、メッセージからセグメントを削除することはできないこともすることができます、セグメント (必須) オプションや、繰り返しセグメント非繰り返しことを意味します。 セグメントを追加する場合は、行う必要があります、最後のメッセージまたはメッセージ内の繰り返しのグループの最後にします。  
+ <span data-ttu-id="00c22-183">バージョン 2 では、バージョン間の互換性規則は、標準の今後のバージョンが以前のバージョンが無効になる構造を含めないことを要求することでインターフェイスの進化をサポートします。</span><span class="sxs-lookup"><span data-stu-id="00c22-183">In Version 2, the inter-version compatibility rules support evolution of interfaces by requiring that subsequent versions of the standard not include structures that invalidate prior versions.</span></span> <span data-ttu-id="00c22-184">これは、トリガー イベントを削除しないことを使用しないトリガー イベント別の目的や別の抽象メッセージ本来よりも必要があります。</span><span class="sxs-lookup"><span data-stu-id="00c22-184">This requires that you do not remove a trigger event and that you do not use a trigger event for a different purpose or with a different abstract message than originally intended.</span></span> <span data-ttu-id="00c22-185">抽象メッセージの場合に、メッセージからセグメントを削除することはできないこともすることができます、セグメント (必須) オプションや、繰り返しセグメント非繰り返しことを意味します。</span><span class="sxs-lookup"><span data-stu-id="00c22-185">For abstract messages, this implies that you cannot remove a segment from a message, nor can you make a mandatory segment optional or a repeating segment non-repeating.</span></span> <span data-ttu-id="00c22-186">セグメントを追加する場合は、行う必要があります、最後のメッセージまたはメッセージ内の繰り返しのグループの最後にします。</span><span class="sxs-lookup"><span data-stu-id="00c22-186">If you add a segment, you must do so at the end of a message or at the end of a repeating group within a message.</span></span>  
   
- 次の関数の[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) これらの要件をサポートします。  
+ <span data-ttu-id="00c22-187">次の関数の[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) これらの要件をサポートします。</span><span class="sxs-lookup"><span data-stu-id="00c22-187">The following functions of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) support these requirements:</span></span>  
   
--   すべてのイベントを発生させると、メッセージのサポートは、バージョン 2.1 以降を起動し、V2.5 まで構造体します。  
+-   <span data-ttu-id="00c22-188">すべてのイベントを発生させると、メッセージのサポートは、バージョン 2.1 以降を起動し、V2.5 まで構造体します。</span><span class="sxs-lookup"><span data-stu-id="00c22-188">Support of all trigger events and message structures starting with V2.1 and continuing through V2.5.</span></span>  
   
--   セグメントの追加しセグメントを必要に応じて調整、および繰り返しを介してローカライズのサポート。  
+-   <span data-ttu-id="00c22-189">セグメントの追加しセグメントを必要に応じて調整、および繰り返しを介してローカライズのサポート。</span><span class="sxs-lookup"><span data-stu-id="00c22-189">Support of localization through adding segments and tailoring segment optionally and repetition.</span></span>  
   
-## <a name="see-also"></a>参照  
- [HL7 メッセージの処理](../../adapters-and-accelerators/accelerator-hl7/processing-hl7-messages.md)   
- [メッセージの処理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   
- [HL7 2.X スキーマの使用](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-x-schemas.md)
+## <a name="see-also"></a><span data-ttu-id="00c22-190">参照</span><span class="sxs-lookup"><span data-stu-id="00c22-190">See Also</span></span>  
+ <span data-ttu-id="00c22-191">[HL7 メッセージの処理](../../adapters-and-accelerators/accelerator-hl7/processing-hl7-messages.md) </span><span class="sxs-lookup"><span data-stu-id="00c22-191">[Processing HL7 Messages](../../adapters-and-accelerators/accelerator-hl7/processing-hl7-messages.md) </span></span>  
+ <span data-ttu-id="00c22-192">[メッセージの処理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md) </span><span class="sxs-lookup"><span data-stu-id="00c22-192">[Message Processing](../../adapters-and-accelerators/accelerator-hl7/message-processing.md) </span></span>  
+ [<span data-ttu-id="00c22-193">HL7 2.X スキーマの使用</span><span class="sxs-lookup"><span data-stu-id="00c22-193">Using HL7 2.X Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-x-schemas.md)

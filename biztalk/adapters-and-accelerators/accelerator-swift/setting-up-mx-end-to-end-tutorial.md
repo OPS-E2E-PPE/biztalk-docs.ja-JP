@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="setting-up-mx-end-to-end-tutorial"></a>MX エンド ツー エンドのチュートリアルを設定します。
-次の手順では、MX エンド ツー エンド チュートリアルを実行するための手順が強調表示します。  
+# <a name="setting-up-mx-end-to-end-tutorial"></a><span data-ttu-id="3206b-102">MX エンド ツー エンドのチュートリアルを設定します。</span><span class="sxs-lookup"><span data-stu-id="3206b-102">Setting up MX End-to-End Tutorial</span></span>
+<span data-ttu-id="3206b-103">次の手順では、MX エンド ツー エンド チュートリアルを実行するための手順が強調表示します。</span><span class="sxs-lookup"><span data-stu-id="3206b-103">The steps below highlight the steps required to execute the MX End-to-End tutorial.</span></span>  
   
--   [環境の設定](../../adapters-and-accelerators/accelerator-swift/setting-the-environment.md)  
+-   [<span data-ttu-id="3206b-104">環境の設定</span><span class="sxs-lookup"><span data-stu-id="3206b-104">Setting the Environment</span></span>](../../adapters-and-accelerators/accelerator-swift/setting-the-environment.md)  
   
--   [BizTalk プロジェクトの作成](../../adapters-and-accelerators/accelerator-swift/creating-biztalk-projects.md)  
+-   [<span data-ttu-id="3206b-105">BizTalk プロジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="3206b-105">Creating BizTalk Projects</span></span>](../../adapters-and-accelerators/accelerator-swift/creating-biztalk-projects.md)  
   
--   [受信/送信ポートの作成](../../adapters-and-accelerators/accelerator-swift/creating-receive-send-ports.md)
+-   [<span data-ttu-id="3206b-106">受信/送信ポートの作成</span><span class="sxs-lookup"><span data-stu-id="3206b-106">Creating Receive/Send Ports</span></span>](../../adapters-and-accelerators/accelerator-swift/creating-receive-send-ports.md)

@@ -23,41 +23,41 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="lesson-1-adding-flat-file-receive-port-and-location"></a>レッスン 1: フラット ファイルの追加の受信ポートと受信場所
-受信ポートは、常に、受信ポートを追加するときに構成する必要がある、関連付けられている受信場所を持ちます。 受信場所では、受信メッセージとメッセージの処理に使用するパイプラインの特定のアドレスを定義します。  
+# <a name="lesson-1-adding-flat-file-receive-port-and-location"></a><span data-ttu-id="18638-102">レッスン 1: フラット ファイルの追加の受信ポートと受信場所</span><span class="sxs-lookup"><span data-stu-id="18638-102">Lesson 1: Adding Flat File Receive Port and Location</span></span>
+<span data-ttu-id="18638-103">受信ポートは、常に、受信ポートを追加するときに構成する必要がある、関連付けられている受信場所を持ちます。</span><span class="sxs-lookup"><span data-stu-id="18638-103">The receive port always has an associated receive location that you must configure when you add the receive port.</span></span> <span data-ttu-id="18638-104">受信場所では、受信メッセージとメッセージの処理に使用するパイプラインの特定のアドレスを定義します。</span><span class="sxs-lookup"><span data-stu-id="18638-104">A receive location defines a specific address for an incoming message and the pipeline that you use to process the message.</span></span>  
   
-### <a name="to-add-a-receive-port"></a>受信ポートを追加するには  
+### <a name="to-add-a-receive-port"></a><span data-ttu-id="18638-105">受信ポートを追加するには</span><span class="sxs-lookup"><span data-stu-id="18638-105">To add a receive port</span></span>  
   
-1.  BizTalk Server 管理コンソールで、右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート**です。  
+1.  <span data-ttu-id="18638-106">BizTalk Server 管理コンソールで、右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="18638-106">In the BizTalk Server Administration Console, right-click **Receive Ports**, point to **New**, and then click **One-way Receive Port**.</span></span>  
   
-2.  受信ポートのプロパティ ダイアログ ボックスで、**名前**ボックスに、入力**MT103_FlatFile_ReceivePort**です。  
+2.  <span data-ttu-id="18638-107">受信ポートのプロパティ ダイアログ ボックスで、**名前**ボックスに、入力**MT103_FlatFile_ReceivePort**です。</span><span class="sxs-lookup"><span data-stu-id="18638-107">In the Receive Port Properties dialog box, in the **Name** box, type **MT103_FlatFile_ReceivePort**.</span></span>  
   
-3.  をクリックして**適用**をクリックして、ポートのバインド**OK**です。  
+3.  <span data-ttu-id="18638-108">をクリックして**適用**をクリックして、ポートのバインド**OK**です。</span><span class="sxs-lookup"><span data-stu-id="18638-108">Click **Apply** to bind the port, and then click **OK**.</span></span>  
   
-4.  BizTalk Server 管理コンソールで、右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
+4.  <span data-ttu-id="18638-109">BizTalk Server 管理コンソールで、右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="18638-109">In the BizTalk Server Administration Console, right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
   
-5.  [受信ポート] ダイアログ ボックスのをクリックして**MT103_FlatFile_ReceivePort**、クリックして**OK**です。  
+5.  <span data-ttu-id="18638-110">[受信ポート] ダイアログ ボックスのをクリックして**MT103_FlatFile_ReceivePort**、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="18638-110">In the Select a Receive Port dialog box, click **MT103_FlatFile_ReceivePort**, and then click **OK**.</span></span>  
   
-6.  受信場所のプロパティ ダイアログ ボックスで、**名前**ボックスに、入力**MT103_FlatFile_ReceiveLocation**です。  
+6.  <span data-ttu-id="18638-111">受信場所のプロパティ ダイアログ ボックスで、**名前**ボックスに、入力**MT103_FlatFile_ReceiveLocation**です。</span><span class="sxs-lookup"><span data-stu-id="18638-111">In the Receive Location Properties dialog box, in the **Name** box, type **MT103_FlatFile_ReceiveLocation**.</span></span>  
   
-7.  **トランスポート**] セクションの**型**テキスト ボックスがドロップダウン リストをクリックし、[**ファイル**です。  
+7.  <span data-ttu-id="18638-112">**トランスポート**] セクションの**型**テキスト ボックスがドロップダウン リストをクリックし、[**ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="18638-112">In the **Transport** section, for the **Type** text box, click the drop-down list, and then select **FILE**.</span></span>  
   
-8.  クリックして、**構成**型のドロップダウン リストの右側にあるボタンです。  
+8.  <span data-ttu-id="18638-113">クリックして、**構成**型のドロップダウン リストの右側にあるボタンです。</span><span class="sxs-lookup"><span data-stu-id="18638-113">Click the **Configure** button to the right of the Type drop-down list.</span></span>  
   
-9. [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。  
+9. <span data-ttu-id="18638-114">[FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="18638-114">In the FILE Transport Properties dialog box, click **Browse**.</span></span>  
   
-10. フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ >: \Labs\Inbound**フォルダー、およびクリック**新しいフォルダーの作成**です。  
+10. <span data-ttu-id="18638-115">フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ >: \Labs\Inbound**フォルダー、およびクリック**新しいフォルダーの作成**です。</span><span class="sxs-lookup"><span data-stu-id="18638-115">In the Browse For Folder dialog box, move to the **\<drive>:\Labs\Inbound** folder, and then click **Make New Folder**.</span></span>  
   
-11. 作成、 **FlatFile**フォルダー **\<ドライブ >: \Labs\Inbound**、順にクリック**[ok]**です。  
+11. <span data-ttu-id="18638-116">作成、 **FlatFile**フォルダー **\<ドライブ >: \Labs\Inbound**、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="18638-116">Create a **FlatFile** folder in **\<drive>:\Labs\Inbound**, and then click **OK**.</span></span>  
   
-12. **ファイル マスク**ボックスに、入力 **\*.txt**、順にクリック**OK**です。  
+12. <span data-ttu-id="18638-117">**ファイル マスク**ボックスに、入力 **\*.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="18638-117">In the **File mask** box, type **\*.txt**, and then click **OK**.</span></span>  
   
-13. 受信場所のプロパティ ダイアログ ボックスでいることを確認**BizTalkServerApplication**として入力された、**受信ハンドラー**ボックス。  
+13. <span data-ttu-id="18638-118">受信場所のプロパティ ダイアログ ボックスでいることを確認**BizTalkServerApplication**として入力された、**受信ハンドラー**ボックス。</span><span class="sxs-lookup"><span data-stu-id="18638-118">In the Receive Location Properties dialog box, ensure that **BizTalkServerApplication** is entered for the **Receive handler** box.</span></span>  
   
-14. **受信パイプライン**ボックスで、 **MT103ReceivePipeline**ドロップダウン リストからです。  
+14. <span data-ttu-id="18638-119">**受信パイプライン**ボックスで、 **MT103ReceivePipeline**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="18638-119">For the **Receive Pipeline** box, select **MT103ReceivePipeline** from the drop-down list.</span></span>  
   
-15. をクリックして**適用**、順にクリック**OK**です。  
+15. <span data-ttu-id="18638-120">をクリックして**適用**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="18638-120">Click **Apply**, and then click **OK**.</span></span>  
   
-16. BizTalk Server 管理コンソールで、をクリックして**受信場所**を右クリックして**MT103_FlatFile_ReceiveLocation**、クリックして**を有効にする**です。  
+16. <span data-ttu-id="18638-121">BizTalk Server 管理コンソールで、をクリックして**受信場所**を右クリックして**MT103_FlatFile_ReceiveLocation**、クリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="18638-121">In the BizTalk Server Administration Console, click **Receive Locations**, right-click **MT103_FlatFile_ReceiveLocation**, and then click **Enable**.</span></span>  
   
- 進みます[レッスン 2: XML 送信ポートを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)です。
+ <span data-ttu-id="18638-122">進みます[レッスン 2: XML 送信ポートを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)です。</span><span class="sxs-lookup"><span data-stu-id="18638-122">Proceed to [Lesson 2: Adding an XML Send Port](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md).</span></span>

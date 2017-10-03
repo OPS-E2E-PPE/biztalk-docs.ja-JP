@@ -24,13 +24,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="management-and-tracking-architecture"></a>アーキテクチャの管理および追跡
-このトピックでは、コンポーネントとアーキテクチャの管理および追跡について説明します。  
+# <a name="management-and-tracking-architecture"></a><span data-ttu-id="e0855-102">アーキテクチャの管理および追跡</span><span class="sxs-lookup"><span data-stu-id="e0855-102">Management and Tracking Architecture</span></span>
+<span data-ttu-id="e0855-103">このトピックでは、コンポーネントとアーキテクチャの管理および追跡について説明します。</span><span class="sxs-lookup"><span data-stu-id="e0855-103">This topic discusses the components and architecture management and tracking.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="e0855-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e0855-104">In This Section</span></span>  
   
--   [ビジネス アクティビティ監視 (BAM)](../core/business-activity-monitoring-bam.md)  
+-   [<span data-ttu-id="e0855-105">ビジネス アクティビティ監視 (BAM)</span><span class="sxs-lookup"><span data-stu-id="e0855-105">Business Activity Monitoring (BAM)</span></span>](../core/business-activity-monitoring-bam.md)  
   
--   [メッセージとインスタンスの追跡の計画](../core/planning-for-message-and-instance-tracking.md)  
+-   [<span data-ttu-id="e0855-106">メッセージとインスタンスの追跡の計画</span><span class="sxs-lookup"><span data-stu-id="e0855-106">Planning for Message and Instance Tracking</span></span>](../core/planning-for-message-and-instance-tracking.md)  
   
--   [追跡データベースのレコード サイズ](../core/record-size-in-tracking-databases.md)
+-   [<span data-ttu-id="e0855-107">追跡データベースのレコード サイズ</span><span class="sxs-lookup"><span data-stu-id="e0855-107">Record Size in Tracking Databases</span></span>](../core/record-size-in-tracking-databases.md)

@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---duplicate-property-field-promotion"></a>エラー - フィールドの昇格が重複したプロパティ
-**エラー コード**  
+# <a name="error---duplicate-property-field-promotion"></a><span data-ttu-id="61261-102">エラー - フィールドの昇格が重複したプロパティ</span><span class="sxs-lookup"><span data-stu-id="61261-102">Error - Duplicate Property Field Promotion</span></span>
+<span data-ttu-id="61261-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="61261-103">**Error Code**</span></span>  
   
- BEC2016  
+ <span data-ttu-id="61261-104">BEC2016</span><span class="sxs-lookup"><span data-stu-id="61261-104">BEC2016</span></span>  
   
- **説明**  
+ <span data-ttu-id="61261-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="61261-105">**Explanation**</span></span>  
   
- このスキーマに複数のノードは、同じプロパティ フィールドとして昇格されている、**フィールド要素**同じプロパティ スキーマのノードです。  
+ <span data-ttu-id="61261-106">このスキーマに複数のノードは、同じプロパティ フィールドとして昇格されている、**フィールド要素**同じプロパティ スキーマのノードです。</span><span class="sxs-lookup"><span data-stu-id="61261-106">Multiple nodes in this schema are being promoted as Property Fields to the same **Field Element** node in the same property schema.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="61261-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="61261-107">**User Action**</span></span>  
   
- 使用して、**プロパティ フィールド**のタブ、**プロパティの昇格** ダイアログ ボックスを使用してアクセス、**プロパティの昇格**のプロパティ、**スキーマ**以外に、同じ関連付けられているプロパティ フィールドの昇格のいずれかをすべて削除するノード、**フィールド要素**プロパティ スキーマのノードです。 新規に追加することがあります**フィールド要素**ノード、プロパティ スキーマを削除したプロモーションを独自に再度昇格できるように**フィールド要素**ノード。
+ <span data-ttu-id="61261-108">使用して、**プロパティ フィールド**のタブ、**プロパティの昇格** ダイアログ ボックスを使用してアクセス、**プロパティの昇格**のプロパティ、**スキーマ**以外に、同じ関連付けられているプロパティ フィールドの昇格のいずれかをすべて削除するノード、**フィールド要素**プロパティ スキーマのノードです。</span><span class="sxs-lookup"><span data-stu-id="61261-108">Use the **Property Fields** tab of the **Promote Properties** dialog box, accessed through the **Promote Properties** property of the **Schema** node, to delete all but one of the Property Field promotions that are associated with the same **Field Element** node in the property schema.</span></span> <span data-ttu-id="61261-109">新規に追加することがあります**フィールド要素**ノード、プロパティ スキーマを削除したプロモーションを独自に再度昇格できるように**フィールド要素**ノード。</span><span class="sxs-lookup"><span data-stu-id="61261-109">You may want to add new **Field Element** nodes to the property schema so that the deleted promotions can be re-promoted to their own **Field Element** nodes.</span></span>

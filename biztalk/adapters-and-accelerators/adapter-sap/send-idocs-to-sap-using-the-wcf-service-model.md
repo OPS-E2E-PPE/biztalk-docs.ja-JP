@@ -21,41 +21,41 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="send-idocs-to-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して sap Idoc を送信します。
-内部的には、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] 2 つの次の Rfc のいずれかを呼び出すことによって、Idoc を SAP システムに送信します。  
+# <a name="send-idocs-to-sap-using-the-wcf-service-model"></a><span data-ttu-id="877c2-102">WCF サービス モデルを使用して sap Idoc を送信します。</span><span class="sxs-lookup"><span data-stu-id="877c2-102">Send IDOCs to SAP using the WCF Service Model</span></span>
+<span data-ttu-id="877c2-103">内部的には、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] 2 つの次の Rfc のいずれかを呼び出すことによって、Idoc を SAP システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="877c2-103">Internally, the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] sends IDOCs to the SAP system by invoking one of the two following RFCs:</span></span>  
   
--   Idoc のバージョン 3 の IDOC_INBOUND_ASYNCHRONOUS します。  
+-   <span data-ttu-id="877c2-104">Idoc のバージョン 3 の IDOC_INBOUND_ASYNCHRONOUS します。</span><span class="sxs-lookup"><span data-stu-id="877c2-104">IDOC_INBOUND_ASYNCHRONOUS for version 3 IDOCs.</span></span>  
   
--   Idoc のバージョン 2 の INBOUND_IDOC_PROCESS します。  
+-   <span data-ttu-id="877c2-105">Idoc のバージョン 2 の INBOUND_IDOC_PROCESS します。</span><span class="sxs-lookup"><span data-stu-id="877c2-105">INBOUND_IDOC_PROCESS for version 2 IDOCs.</span></span>  
   
- IDOC をアダプターに送信するには、適切な RFC (または tRFC); を呼び出すことによってただし、アダプターに Idoc を送信するのに、2 つの次の操作を使用することもできます。  
+ <span data-ttu-id="877c2-106">IDOC をアダプターに送信するには、適切な RFC (または tRFC); を呼び出すことによってただし、アダプターに Idoc を送信するのに、2 つの次の操作を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="877c2-106">You can send an IDOC to the adapter by invoking the appropriate RFC (or tRFC); however, you can also use the two following operations to send IDOCs to the adapter:</span></span>  
   
--   **SendIdoc** IDOC のルート ノードの直下に表示します。 SendIdoc 操作 (厳密に型指定された) データを文字列としての IDOC の送信、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+-   <span data-ttu-id="877c2-107">**SendIdoc** IDOC のルート ノードの直下に表示します。</span><span class="sxs-lookup"><span data-stu-id="877c2-107">**SendIdoc** is surfaced directly under the IDOC root node.</span></span> <span data-ttu-id="877c2-108">SendIdoc 操作 (厳密に型指定された) データを文字列としての IDOC の送信、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="877c2-108">The SendIdoc operation sends the IDOC as string (weakly-typed) data to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
   
--   **送信**は idoc ごとに個別に確認します。 送信操作を厳密に型指定されたデータとしての IDOC の送信、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+-   <span data-ttu-id="877c2-109">**送信**は idoc ごとに個別に確認します。</span><span class="sxs-lookup"><span data-stu-id="877c2-109">**Send** is surfaced individually for each IDOC.</span></span> <span data-ttu-id="877c2-110">送信操作を厳密に型指定されたデータとしての IDOC の送信、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="877c2-110">The Send operation sends the IDOC as strongly-typed data to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
   
- これらの操作では、アダプターに IDOC データを送信する方法を決定、方法には送信されません SAP システムへ。 アダプターは常に、適切な tRFC を使用して、SAP システムに IDOC を送信します。  
+ <span data-ttu-id="877c2-111">これらの操作では、アダプターに IDOC データを送信する方法を決定、方法には送信されません SAP システムへ。</span><span class="sxs-lookup"><span data-stu-id="877c2-111">These operations determine how the IDOC data is sent to the adapter, not how it is sent to the SAP system.</span></span> <span data-ttu-id="877c2-112">アダプターは常に、適切な tRFC を使用して、SAP システムに IDOC を送信します。</span><span class="sxs-lookup"><span data-stu-id="877c2-112">The adapter always sends the IDOC to the SAP system by using the appropriate tRFC.</span></span>  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] IDOC の送信、tRFC として送信と SendIdoc の両方の操作が (コミット) IDOC を確認するために使用 GUID パラメーターを公開します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP トランザクション ID (TID)、tRFC に関連付けられていると、この GUID を内部的にマップします。 2 つの方法のいずれかで IDOC を確認できます。  
+ <span data-ttu-id="877c2-113">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] IDOC の送信、tRFC として送信と SendIdoc の両方の操作が (コミット) IDOC を確認するために使用 GUID パラメーターを公開します。</span><span class="sxs-lookup"><span data-stu-id="877c2-113">Because the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] sends the IDOC as a tRFC, both the Send and SendIdoc operations expose a GUID parameter that you use to confirm (commit) the IDOC.</span></span> <span data-ttu-id="877c2-114">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP トランザクション ID (TID)、tRFC に関連付けられていると、この GUID を内部的にマップします。</span><span class="sxs-lookup"><span data-stu-id="877c2-114">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] internally maps this GUID with the SAP transaction ID (TID) that is associated with the tRFC.</span></span> <span data-ttu-id="877c2-115">2 つの方法のいずれかで IDOC を確認できます。</span><span class="sxs-lookup"><span data-stu-id="877c2-115">You can confirm the IDOC in one of two ways:</span></span>  
   
--   使用して、 **AutoConfirmSentIdocs**プロパティをバインドします。 このバインドのプロパティ設定されている場合**true**アダプターが IDOC を送信するために使用 tRFC を自動的に確認します。  
+-   <span data-ttu-id="877c2-116">使用して、 **AutoConfirmSentIdocs**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="877c2-116">By using the **AutoConfirmSentIdocs** binding property.</span></span> <span data-ttu-id="877c2-117">このバインドのプロパティ設定されている場合**true**アダプターが IDOC を送信するために使用 tRFC を自動的に確認します。</span><span class="sxs-lookup"><span data-stu-id="877c2-117">If this binding property is set to **true**, the adapter automatically confirms the tRFC used to send the IDOC.</span></span>  
   
--   RfcConfirmTransID を呼び出しています。 IDOC に関連付けられている GUID を持つには、この操作を呼び出します。  
+-   <span data-ttu-id="877c2-118">RfcConfirmTransID を呼び出しています。</span><span class="sxs-lookup"><span data-stu-id="877c2-118">By invoking RfcConfirmTransID.</span></span> <span data-ttu-id="877c2-119">IDOC に関連付けられている GUID を持つには、この操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="877c2-119">You invoke this operation with the GUID associated with the IDOC.</span></span>  
   
- 次のセクションでは、SendIdoc と送信操作を使用して SAP システムへの Idoc を送信する方法を示します。 詳細については、tRFC として IDOC を送信するため、次を参照してください。 [WCF サービス モデルを使用して SAP で tRFCs を呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-trfcs-in-sap-using-the-wcf-service-model.md)です。  
+ <span data-ttu-id="877c2-120">次のセクションでは、SendIdoc と送信操作を使用して SAP システムへの Idoc を送信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="877c2-120">The following sections show you how to send IDOCs to an SAP system by using the SendIdoc and Send operations.</span></span> <span data-ttu-id="877c2-121">詳細については、tRFC として IDOC を送信するため、次を参照してください。 [WCF サービス モデルを使用して SAP で tRFCs を呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-trfcs-in-sap-using-the-wcf-service-model.md)です。</span><span class="sxs-lookup"><span data-stu-id="877c2-121">For more information to help you send an IDOC as a tRFC, see [Invoke tRFCs in SAP by using the WCF Service Model](../../adapters-and-accelerators/adapter-sap/invoke-trfcs-in-sap-using-the-wcf-service-model.md).</span></span>  
   
-## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
+## <a name="the-wcf-client-class"></a><span data-ttu-id="877c2-122">WCF クライアント クラス</span><span class="sxs-lookup"><span data-stu-id="877c2-122">The WCF Client Class</span></span>  
   
-### <a name="the-sendidoc-operation"></a>SendIdoc 操作  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サーフェスの文字列形式で IDOC を送信する 1 つの操作 (およびサービス コントラクト)。 サービス コントラクトの名前は"Idoc"で WCF クライアント クラスが**IdocClient**です。  
+### <a name="the-sendidoc-operation"></a><span data-ttu-id="877c2-123">SendIdoc 操作</span><span class="sxs-lookup"><span data-stu-id="877c2-123">The SendIdoc Operation</span></span>  
+ <span data-ttu-id="877c2-124">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サーフェスの文字列形式で IDOC を送信する 1 つの操作 (およびサービス コントラクト)。</span><span class="sxs-lookup"><span data-stu-id="877c2-124">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces a single operation (and service contract) to send an IDOC in string format.</span></span> <span data-ttu-id="877c2-125">サービス コントラクトの名前は"Idoc"で WCF クライアント クラスが**IdocClient**です。</span><span class="sxs-lookup"><span data-stu-id="877c2-125">The name of the service contract is "Idoc" and the WCF client class is **IdocClient**.</span></span>  
   
- このクライアントを使用して、任意の IDOC を SAP に送信できます。 1 つのメソッドが含まれている**SendIdoc**、2 つのパラメーターを受け取る。  
+ <span data-ttu-id="877c2-126">このクライアントを使用して、任意の IDOC を SAP に送信できます。</span><span class="sxs-lookup"><span data-stu-id="877c2-126">You can send any IDOC to SAP by using this client.</span></span> <span data-ttu-id="877c2-127">1 つのメソッドが含まれている**SendIdoc**、2 つのパラメーターを受け取る。</span><span class="sxs-lookup"><span data-stu-id="877c2-127">It contains a single method, **SendIdoc**, that takes two parameters:</span></span>  
   
--   **idocData** IDOC データを格納する文字列です  
+-   <span data-ttu-id="877c2-128">**idocData** IDOC データを格納する文字列です</span><span class="sxs-lookup"><span data-stu-id="877c2-128">**idocData** is a string that contains the IDOC data</span></span>  
   
--   **guid** SAP TID に割り当てられた GUID です。  
+-   <span data-ttu-id="877c2-129">**guid** SAP TID に割り当てられた GUID です。</span><span class="sxs-lookup"><span data-stu-id="877c2-129">**guid** is the GUID that is mapped to the SAP TID.</span></span>  
   
- 次のコードは、SendIdoc 操作に対して生成される WCF クライアントを示しています。  
+ <span data-ttu-id="877c2-130">次のコードは、SendIdoc 操作に対して生成される WCF クライアントを示しています。</span><span class="sxs-lookup"><span data-stu-id="877c2-130">The following code shows the WCF client that is generated for the SendIdoc operation.</span></span>  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -66,16 +66,16 @@ public partial class IdocClient : System.ServiceModel.ClientBase<Idoc>, Idoc {
 }  
 ```  
   
-### <a name="the-send-operation"></a>送信操作  
- 送信操作は、厳密に型指定されたデータを使用するため、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] IDOC ごとに一意のサービス コントラクトを表示します。 このコントラクトが IDOC の種類、バージョン、リリース番号、および (該当する場合)、CIM 型に基づいて、インターフェイスなど、WCF クライアント クラスの名前が生成されます。 たとえば、WCF クライアント クラスは、"IdocORDERS03V3R620"が、インターフェイス ORDERS03.v3.620 IDOC に対するという名前が**IdocORDERS03V3R620Client**です。  
+### <a name="the-send-operation"></a><span data-ttu-id="877c2-131">送信操作</span><span class="sxs-lookup"><span data-stu-id="877c2-131">The Send Operation</span></span>  
+ <span data-ttu-id="877c2-132">送信操作は、厳密に型指定されたデータを使用するため、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] IDOC ごとに一意のサービス コントラクトを表示します。</span><span class="sxs-lookup"><span data-stu-id="877c2-132">Because the Send operation uses strongly-typed data, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces a unique service contract for each IDOC.</span></span> <span data-ttu-id="877c2-133">このコントラクトが IDOC の種類、バージョン、リリース番号、および (該当する場合)、CIM 型に基づいて、インターフェイスなど、WCF クライアント クラスの名前が生成されます。</span><span class="sxs-lookup"><span data-stu-id="877c2-133">The name of the interface (and the WCF client class) generated for this contract is based on the IDOC type, version, release number, and CIM type (if relevant).</span></span> <span data-ttu-id="877c2-134">たとえば、WCF クライアント クラスは、"IdocORDERS03V3R620"が、インターフェイス ORDERS03.v3.620 IDOC に対するという名前が**IdocORDERS03V3R620Client**です。</span><span class="sxs-lookup"><span data-stu-id="877c2-134">For example for the ORDERS03.v3.620 IDOC, the interface is named "IdocORDERS03V3R620" and the WCF client class is **IdocORDERS03V3R620Client**.</span></span>  
   
- IDOC の種類ごとに一意のクライアントを生成する必要があります。 このクライアントには、1 つのメソッドが含まれています。**送信**、2 つのパラメーターを受け取る。  
+ <span data-ttu-id="877c2-135">IDOC の種類ごとに一意のクライアントを生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877c2-135">You must generate a unique client for each different type of IDOC.</span></span> <span data-ttu-id="877c2-136">このクライアントには、1 つのメソッドが含まれています。**送信**、2 つのパラメーターを受け取る。</span><span class="sxs-lookup"><span data-stu-id="877c2-136">This client contains a single method, **Send**, that takes two parameters:</span></span>  
   
--   **idocData** IDOC の厳密に型指定されたデータを表すクラスです。  
+-   <span data-ttu-id="877c2-137">**idocData** IDOC の厳密に型指定されたデータを表すクラスです。</span><span class="sxs-lookup"><span data-stu-id="877c2-137">**idocData** is a class that represents the strongly-typed IDOC data.</span></span>  
   
--   **guid** SAP TID にマップされている GUID の文字列表現です。  
+-   <span data-ttu-id="877c2-138">**guid** SAP TID にマップされている GUID の文字列表現です。</span><span class="sxs-lookup"><span data-stu-id="877c2-138">**guid** is a string representation of the GUID that is mapped to the SAP TID.</span></span>  
   
- 次のコードでは、送信操作が ORDERS03.v3.620 IDOC の表示に対して生成される WCF クライアントを示します。  
+ <span data-ttu-id="877c2-139">次のコードでは、送信操作が ORDERS03.v3.620 IDOC の表示に対して生成される WCF クライアントを示します。</span><span class="sxs-lookup"><span data-stu-id="877c2-139">The following code shows the WCF client that is generated for the Send operation surfaced for the ORDERS03.v3.620 IDOC.</span></span>  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -88,20 +88,20 @@ public partial class IdocORDERS03V3R620Client : System.ServiceModel.ClientBase<I
 }  
 ```  
   
-## <a name="how-to-create-an-application-to-send-idocs"></a>Idoc を送信するアプリケーションを作成する方法  
- IDOC を SAP システムを送信するには、次の手順を実行します。  
+## <a name="how-to-create-an-application-to-send-idocs"></a><span data-ttu-id="877c2-140">Idoc を送信するアプリケーションを作成する方法</span><span class="sxs-lookup"><span data-stu-id="877c2-140">How to Create an Application to Send IDOCs</span></span>  
+ <span data-ttu-id="877c2-141">IDOC を SAP システムを送信するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="877c2-141">To send an IDOC to an SAP system, perform the following steps.</span></span>  
   
-#### <a name="to-send-an-idoc-to-an-sap-system"></a>IDOC を SAP システムに送信するには  
+#### <a name="to-send-an-idoc-to-an-sap-system"></a><span data-ttu-id="877c2-142">IDOC を SAP システムに送信するには</span><span class="sxs-lookup"><span data-stu-id="877c2-142">To send an IDOC to an SAP system</span></span>  
   
-1.  WCF クライアント クラスを生成します。 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) で WCF クライアント クラスを生成する作業する Idoc を対象とします。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [SAP ソリューションの成果物のため、WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)です。 Idoc を明示的に確認する場合は、RfcConfirmTransID 操作用の WCF クライアントを生成することを確認します。 操作は、次のノードの下で確認できます。  
+1.  <span data-ttu-id="877c2-143">WCF クライアント クラスを生成します。</span><span class="sxs-lookup"><span data-stu-id="877c2-143">Generate a WCF client class.</span></span> <span data-ttu-id="877c2-144">使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) で WCF クライアント クラスを生成する作業する Idoc を対象とします。</span><span class="sxs-lookup"><span data-stu-id="877c2-144">Use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the ServiceModel Metadata Utility Tool (svcutil.exe) to generate the WCF client class that targets the IDOCs with which you want to work.</span></span> <span data-ttu-id="877c2-145">WCF クライアントを生成する方法の詳細については、次を参照してください。 [SAP ソリューションの成果物のため、WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="877c2-145">For more information about how to generate a WCF client, see [Generating a WCF Client or a WCF Service Contract for SAP Solution Artifacts](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md).</span></span> <span data-ttu-id="877c2-146">Idoc を明示的に確認する場合は、RfcConfirmTransID 操作用の WCF クライアントを生成することを確認します。</span><span class="sxs-lookup"><span data-stu-id="877c2-146">If you want to explicitly confirm IDOCs, make sure that you generate the WCF client for the RfcConfirmTransID operation.</span></span> <span data-ttu-id="877c2-147">操作は、次のノードの下で確認できます。</span><span class="sxs-lookup"><span data-stu-id="877c2-147">Operations can be found under the following nodes:</span></span>  
   
-    -   SendIdoc 操作です。 直接ノードの下、IDOC です。  
+    -   <span data-ttu-id="877c2-148">SendIdoc 操作です。</span><span class="sxs-lookup"><span data-stu-id="877c2-148">SendIdoc operation.</span></span> <span data-ttu-id="877c2-149">直接ノードの下、IDOC です。</span><span class="sxs-lookup"><span data-stu-id="877c2-149">Directly under the IDOC node.</span></span>  
   
-    -   送信操作です。 ターゲットの IDOC の種類、バージョンおよびリリースの番号に対応するノードです。  
+    -   <span data-ttu-id="877c2-150">送信操作です。</span><span class="sxs-lookup"><span data-stu-id="877c2-150">Send operation.</span></span> <span data-ttu-id="877c2-151">ターゲットの IDOC の種類、バージョンおよびリリースの番号に対応するノードです。</span><span class="sxs-lookup"><span data-stu-id="877c2-151">Under the node corresponding to the type, version and release number of the target IDOC.</span></span>  
   
-    -   RfcConfirmTransID 操作です。 直接ノードの下、TRFC です。  
+    -   <span data-ttu-id="877c2-152">RfcConfirmTransID 操作です。</span><span class="sxs-lookup"><span data-stu-id="877c2-152">RfcConfirmTransID operation.</span></span> <span data-ttu-id="877c2-153">直接ノードの下、TRFC です。</span><span class="sxs-lookup"><span data-stu-id="877c2-153">Directly under the TRFC node.</span></span>  
   
-2.  手順 1 で生成された WCF クライアント クラスのインスタンスを作成し、クライアントのバインディングを指定します。 クライアントのバインディングを指定するには、バインドと WCF クライアントが使用するエンドポイント アドレスを指定する必要があります。 これは、コードで命令として記述または構成で宣言によって行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [、SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)です。 次のコードは、構成からの送信操作) の IdocClient を初期化し、SAP システムの資格情報を設定します。  
+2.  <span data-ttu-id="877c2-154">手順 1 で生成された WCF クライアント クラスのインスタンスを作成し、クライアントのバインディングを指定します。</span><span class="sxs-lookup"><span data-stu-id="877c2-154">Create an instance of the WCF client class generated in step 1, and specify a client binding.</span></span> <span data-ttu-id="877c2-155">クライアントのバインディングを指定するには、バインドと WCF クライアントが使用するエンドポイント アドレスを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877c2-155">Specifying a client binding involves specifying the binding and endpoint address that the WCF client will use.</span></span> <span data-ttu-id="877c2-156">これは、コードで命令として記述または構成で宣言によって行うことができます。</span><span class="sxs-lookup"><span data-stu-id="877c2-156">You can do this either imperatively in code or declaratively in configuration.</span></span> <span data-ttu-id="877c2-157">クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [、SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)です。</span><span class="sxs-lookup"><span data-stu-id="877c2-157">For more information about how to specify a client binding, see [Configure a Client Binding for the SAP System](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md).</span></span> <span data-ttu-id="877c2-158">次のコードは、構成からの送信操作) の IdocClient を初期化し、SAP システムの資格情報を設定します。</span><span class="sxs-lookup"><span data-stu-id="877c2-158">The following code initializes an IdocClient (for the Send operation) from configuration and sets the credentials for the SAP system.</span></span>  
   
     ```  
     SAPBinding binding = new SAPBinding();  
@@ -115,20 +115,20 @@ public partial class IdocORDERS03V3R620Client : System.ServiceModel.ClientBase<I
     idocClient.ClientCredentials.UserName.Password = "YourPassword";;  
     ```  
   
-3.  IDOC を送信する場合は、アダプターを確認後に SAP システムで tRFC、設定、 **AutoConfirmSentIdocs**にプロパティのバインド**true**です。 これは、WCF クライアントを開く前に行う必要があります。  
+3.  <span data-ttu-id="877c2-159">IDOC を送信する場合は、アダプターを確認後に SAP システムで tRFC、設定、 **AutoConfirmSentIdocs**にプロパティのバインド**true**です。</span><span class="sxs-lookup"><span data-stu-id="877c2-159">If you want the adapter to confirm the tRFC on the SAP system after it sends the IDOC, set the **AutoConfirmSentIdocs** binding property to **true**.</span></span> <span data-ttu-id="877c2-160">これは、WCF クライアントを開く前に行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="877c2-160">You must do this before you open the WCF client.</span></span>  
   
     ```  
     // Set AutoConfirmSentIdocs property to true  
     binding.AutoConfirmSentIdocs = true;  
     ```  
   
-4.  WCF クライアントを開きます。  
+4.  <span data-ttu-id="877c2-161">WCF クライアントを開きます。</span><span class="sxs-lookup"><span data-stu-id="877c2-161">Open the WCF client.</span></span>  
   
     ```  
     idocClient.Open();  
     ```  
   
-5.  SAP システムに IDOC を送信する手順 2. で作成された WCF クライアントで適切なメソッドを呼び出します。 GUID を格納しているかに設定されている変数を渡すことができます**null**の**guid**パラメーター。 GUID を指定しない場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]操作のいずれかが生成されます (**guid**は、 **ref**パラメーター)。 次のコードは、文字列の形式で IDOC ファイルから読み取り、SendIdoc 操作を使用して SAP システムに送信します。  
+5.  <span data-ttu-id="877c2-162">SAP システムに IDOC を送信する手順 2. で作成された WCF クライアントで適切なメソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="877c2-162">Invoke the appropriate method on the WCF client created in step 2 to send the IDOC to the SAP system.</span></span> <span data-ttu-id="877c2-163">GUID を格納しているかに設定されている変数を渡すことができます**null**の**guid**パラメーター。</span><span class="sxs-lookup"><span data-stu-id="877c2-163">You can pass a variable that contains a GUID or that is set to **null** for the **guid** parameter.</span></span> <span data-ttu-id="877c2-164">GUID を指定しない場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]操作のいずれかが生成されます (**guid**は、 **ref**パラメーター)。</span><span class="sxs-lookup"><span data-stu-id="877c2-164">If you do not specify a GUID, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] generates one for the operation (**guid** is a **ref** parameter).</span></span> <span data-ttu-id="877c2-165">次のコードは、文字列の形式で IDOC ファイルから読み取り、SendIdoc 操作を使用して SAP システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="877c2-165">The following code reads an IDOC (in string format) from a file and sends it to the SAP system by using the SendIdoc operation.</span></span>  
   
     ```  
     // Read IDOC into string variable  
@@ -145,20 +145,20 @@ public partial class IdocORDERS03V3R620Client : System.ServiceModel.ClientBase<I
     idocClient.SendIdoc(idocData, ref adapterTxGuid);  
     ```  
   
-6.  設定しなかった場合、 **AutoConfirmSentIdocs**にプロパティのバインド**true** (手順 3. で)、しを確認してください、SAP システムで tRFC です。 呼び出す必要がありますこれを行うには、 **RfcConfirmTransID**メソッドを**TrfcClient** (作成は表示されません)。 手順 4. のパラメーターで返される GUID を指定します。  
+6.  <span data-ttu-id="877c2-166">設定しなかった場合、 **AutoConfirmSentIdocs**にプロパティのバインド**true** (手順 3. で)、しを確認してください、SAP システムで tRFC です。</span><span class="sxs-lookup"><span data-stu-id="877c2-166">If you did not set the **AutoConfirmSentIdocs** binding property to **true** (in step 3), then you must confirm the tRFC on the SAP system.</span></span> <span data-ttu-id="877c2-167">呼び出す必要がありますこれを行うには、 **RfcConfirmTransID**メソッドを**TrfcClient** (作成は表示されません)。</span><span class="sxs-lookup"><span data-stu-id="877c2-167">To do this you must invoke the **RfcConfirmTransID** method on a **TrfcClient** (creation not shown).</span></span> <span data-ttu-id="877c2-168">手順 4. のパラメーターで返される GUID を指定します。</span><span class="sxs-lookup"><span data-stu-id="877c2-168">Specify the GUID returned in step 4 for the parameter.</span></span>  
   
     ```  
     trfcClient.RfcConfirmTransID(adapterTxGuid);  
     ```  
   
-7.  WCF クライアントを閉じる (および**TrfcClient**使用されている場合、) が完了したら (したら Idoc を送信した後) を使用しています。  
+7.  <span data-ttu-id="877c2-169">WCF クライアントを閉じる (および**TrfcClient**使用されている場合、) が完了したら (したら Idoc を送信した後) を使用しています。</span><span class="sxs-lookup"><span data-stu-id="877c2-169">Close the WCF client (and **TrfcClient**, if used) when you are done using it (after you have finished sending IDOCs).</span></span>  
   
     ```  
     idocClient.Close();   
     ```  
   
-### <a name="example"></a>例  
- 次の例は、SendIdoc メソッドを使用して、IDOC を SAP システムに送信します。 IDOC は ORDERS03.txt ファイルから読み取られます。 このファイルには、ORDERS03 が含まれています。V3.620 IDOC、;、サンプルの値が含まれていますただし、SendIdoc 操作は、任意の IDOC の送信に使用できます。  
+### <a name="example"></a><span data-ttu-id="877c2-170">例</span><span class="sxs-lookup"><span data-stu-id="877c2-170">Example</span></span>  
+ <span data-ttu-id="877c2-171">次の例は、SendIdoc メソッドを使用して、IDOC を SAP システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="877c2-171">The following example sends an IDOC to an SAP system by using the SendIdoc method.</span></span> <span data-ttu-id="877c2-172">IDOC は ORDERS03.txt ファイルから読み取られます。</span><span class="sxs-lookup"><span data-stu-id="877c2-172">The IDOC is read from a file, ORDERS03.txt.</span></span> <span data-ttu-id="877c2-173">このファイルには、ORDERS03 が含まれています。V3.620 IDOC、;、サンプルの値が含まれていますただし、SendIdoc 操作は、任意の IDOC の送信に使用できます。</span><span class="sxs-lookup"><span data-stu-id="877c2-173">This file contains an ORDERS03.V3.620 IDOC and is included with the samples; however, the SendIdoc operation can be used to send any IDOC.</span></span>  
   
 ```  
 using System;  
@@ -261,5 +261,5 @@ namespace SapIdocStringClientSM
 }  
 ```  
   
-## <a name="see-also"></a>参照  
-[WCF サービス モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-service-model.md)
+## <a name="see-also"></a><span data-ttu-id="877c2-174">参照</span><span class="sxs-lookup"><span data-stu-id="877c2-174">See Also</span></span>  
+[<span data-ttu-id="877c2-175">WCF サービス モデルを使用してアプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="877c2-175">Develop applications using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-service-model.md)

@@ -18,10 +18,10 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk"></a>サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力
-多くの場合、アダプターのコンシューマーは、対象の基幹業務システムに資格情報を渡す必要があります。 この機能を提供するには、WCF サービスの動作を提供する必要があります。  
+# <a name="use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="db788-102">サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力</span><span class="sxs-lookup"><span data-stu-id="db788-102">Use a service behavior to enter credentials with the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="db788-103">多くの場合、アダプターのコンシューマーは、対象の基幹業務システムに資格情報を渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="db788-103">Many times, adapter consumers will be required to pass credentials to the target line of business system.</span></span> <span data-ttu-id="db788-104">この機能を提供するには、WCF サービスの動作を提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="db788-104">To provide this functionality, you will need to provide a WCF service behavior.</span></span>  
   
- 次のコード例では、サービスの動作を派生させる方法を示します。 アダプターに、アダプターのコンシューマーから取得した資格情報を委任します。 アダプターは、資格情報を認証するのに基幹業務プロトコルを使用する必要があります。 資格情報が認証されると、サービスが基幹業務アプリケーションからの着信イベントのリッスンを開始することができます。  
+ <span data-ttu-id="db788-105">次のコード例では、サービスの動作を派生させる方法を示します。</span><span class="sxs-lookup"><span data-stu-id="db788-105">The following example code demonstrates how to derive a service behavior.</span></span> <span data-ttu-id="db788-106">アダプターに、アダプターのコンシューマーから取得した資格情報を委任します。</span><span class="sxs-lookup"><span data-stu-id="db788-106">It delegates the credentials obtained from the consumer of the adapter to the adapter.</span></span> <span data-ttu-id="db788-107">アダプターは、資格情報を認証するのに基幹業務プロトコルを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="db788-107">The adapter then must use line-of-business protocols to authenticate the credentials.</span></span> <span data-ttu-id="db788-108">資格情報が認証されると、サービスが基幹業務アプリケーションからの着信イベントのリッスンを開始することができます。</span><span class="sxs-lookup"><span data-stu-id="db788-108">Once the credentials are authenticated, the service can start listening for incoming events from the line of business application.</span></span>  
   
 ```  
 /// <summary>  
@@ -62,7 +62,7 @@ public class InboundClientCredentialsServiceBehavior : ClientCredentials, IServi
 }  
 ```  
   
- 次のコード例では、サービスの動作を使用して、アダプターに資格情報を渡す方法を示します。  
+ <span data-ttu-id="db788-109">次のコード例では、サービスの動作を使用して、アダプターに資格情報を渡す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="db788-109">The following example code shows how to use the service behavior to pass credentials to the adapter.</span></span>  
   
 ```  
 // Create a ServiceHost for the EchoServiceImpl type  
@@ -86,5 +86,5 @@ Console.ReadLine();
 host.Close();  
 ```  
   
-## <a name="see-also"></a>参照  
- [WCF LOB Adapter SDK を使用して、開発のベスト プラクティス](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a><span data-ttu-id="db788-110">参照</span><span class="sxs-lookup"><span data-stu-id="db788-110">See Also</span></span>  
+ [<span data-ttu-id="db788-111">WCF LOB Adapter SDK を使用して、開発のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="db788-111">Development best practices using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)

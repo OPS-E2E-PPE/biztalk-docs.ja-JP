@@ -18,43 +18,43 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="interchange-aggregation-report"></a>インターチェンジの集計レポート
-このレポートでは、同じ EDI エンコードの種類、送信者パーティ、受信者パーティ、および方向を共有する EDI インターチェンジの数を示すレコードが 1 つ提供されます。 このレポートには、個別のインターチェンジの詳細情報は含まれません。  
+# <a name="interchange-aggregation-report"></a><span data-ttu-id="2530a-102">インターチェンジの集計レポート</span><span class="sxs-lookup"><span data-stu-id="2530a-102">Interchange Aggregation Report</span></span>
+<span data-ttu-id="2530a-103">このレポートでは、同じ EDI エンコードの種類、送信者パーティ、受信者パーティ、および方向を共有する EDI インターチェンジの数を示すレコードが 1 つ提供されます。</span><span class="sxs-lookup"><span data-stu-id="2530a-103">This report provides one record that indicates the number of EDI interchanges that share the same EDI encoding type, sender party, receiver party, and direction.</span></span> <span data-ttu-id="2530a-104">このレポートには、個別のインターチェンジの詳細情報は含まれません。</span><span class="sxs-lookup"><span data-stu-id="2530a-104">This report does not provide details about the individual interchanges.</span></span>  
   
- この状態レポートを表示するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで [グループ ハブ] ページの最下部にある [インターチェンジの集計レポート] リンクをクリックします。  
+ <span data-ttu-id="2530a-105">この状態レポートを表示するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで [グループ ハブ] ページの最下部にある [インターチェンジの集計レポート] リンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="2530a-105">This status report is displayed by clicking the Interchange Aggregation Report link at the bottom of the Group Hub page in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
   
-## <a name="fields-in-the-status-report"></a>状態レポート内のフィールド  
- インターチェンジの集計レポートには、各レコードに関する次の情報が表示されます。  
+## <a name="fields-in-the-status-report"></a><span data-ttu-id="2530a-106">状態レポート内のフィールド</span><span class="sxs-lookup"><span data-stu-id="2530a-106">Fields in the Status Report</span></span>  
+ <span data-ttu-id="2530a-107">インターチェンジの集計レポートには、各レコードに関する次の情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2530a-107">The Interchange Aggregation Report displays the following information for each record:</span></span>  
   
--   同じ EDI エンコードの種類、送信者パーティ、受信者パーティ、および方向を共有するインターチェンジの数  
+-   <span data-ttu-id="2530a-108">同じ EDI エンコードの種類、送信者パーティ、受信者パーティ、および方向を共有するインターチェンジの数</span><span class="sxs-lookup"><span data-stu-id="2530a-108">A count of how many interchanges share the same EDI encoding type, sender party, receiver party, and direction</span></span>  
   
--   レコード内の各インターチェンジの送信者パーティ  
+-   <span data-ttu-id="2530a-109">レコード内の各インターチェンジの送信者パーティ</span><span class="sxs-lookup"><span data-stu-id="2530a-109">The Sender Party for each interchange in the record</span></span>  
   
--   レコード内の各インターチェンジの受信者パーティ  
+-   <span data-ttu-id="2530a-110">レコード内の各インターチェンジの受信者パーティ</span><span class="sxs-lookup"><span data-stu-id="2530a-110">The Receiver Party for each interchange in the record</span></span>  
   
--   レコード内の各インターチェンジの方向 (受信または送信)  
+-   <span data-ttu-id="2530a-111">レコード内の各インターチェンジの方向 (受信または送信)</span><span class="sxs-lookup"><span data-stu-id="2530a-111">The Direction (receive or send) of each interchange in the record</span></span>  
   
--   時間範囲内の最初のインターチェンジが送信または受信された日付と時刻 (初回開始日時)  
+-   <span data-ttu-id="2530a-112">時間範囲内の最初のインターチェンジが送信または受信された日付と時刻 (初回開始日時)</span><span class="sxs-lookup"><span data-stu-id="2530a-112">The date and time at which the earliest interchange in the time range was sent or received (Earliest Started Date/Time)</span></span>  
   
     > [!NOTE]
-    >  受け取ったドキュメントで、インターチェンジに指定された日付が YYMMDD 形式であり、YY が 75 以上である場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では年を 19YY と表示します。 日付が 75 未満である場合は、20YY として表示されます。  
+    >  <span data-ttu-id="2530a-113">受け取ったドキュメントで、インターチェンジに指定された日付が YYMMDD 形式であり、YY が 75 以上である場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では年を 19YY と表示します。</span><span class="sxs-lookup"><span data-stu-id="2530a-113">For received documents, if the date specified in the interchange is YYMMDD format and YY is greater than or equal to 75, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will display the year as 19YY.</span></span> <span data-ttu-id="2530a-114">日付が 75 未満である場合は、20YY として表示されます。</span><span class="sxs-lookup"><span data-stu-id="2530a-114">If the date is less than 75, it will be displayed as 20YY.</span></span>  
     >   
-    >  たとえば、インターチェンジを受信した場合を値が 991113 ISA09、最も早い開始の日付/時刻は 11/13/1999 としてレポートに表示されます。  
+    >  <span data-ttu-id="2530a-115">たとえば、インターチェンジを受信した場合を値が 991113 ISA09、最も早い開始の日付/時刻は 11/13/1999 としてレポートに表示されます。</span><span class="sxs-lookup"><span data-stu-id="2530a-115">For example, if you receive an interchange that contains the value 991113 in ISA09, the Earliest Started Date/time will be listed in the report as 11/13/1999.</span></span>  
   
--   時間範囲内の最後のインターチェンジが送信または受信された日付と時刻 (前回終了日時)  
+-   <span data-ttu-id="2530a-116">時間範囲内の最後のインターチェンジが送信または受信された日付と時刻 (前回終了日時)</span><span class="sxs-lookup"><span data-stu-id="2530a-116">The date and time at which the latest interchange in the time range was sent or received (Latest Ended Date/Time)</span></span>  
   
--   レコード内の各インターチェンジの EDI エンコードの種類  
+-   <span data-ttu-id="2530a-117">レコード内の各インターチェンジの EDI エンコードの種類</span><span class="sxs-lookup"><span data-stu-id="2530a-117">The EDI encoding type for each interchange in the record</span></span>  
   
-## <a name="fields-in-the-query-expression-for-the-status-report"></a>状態レポートのクエリ式のフィールド  
- 表示されるデータを指定するクエリ式のフィールドを変更することにより、インターチェンジ集計レポートをカスタマイズできます。 使用できるフィールドは以下のとおりです。  
+## <a name="fields-in-the-query-expression-for-the-status-report"></a><span data-ttu-id="2530a-118">状態レポートのクエリ式のフィールド</span><span class="sxs-lookup"><span data-stu-id="2530a-118">Fields in the Query Expression for the Status Report</span></span>  
+ <span data-ttu-id="2530a-119">表示されるデータを指定するクエリ式のフィールドを変更することにより、インターチェンジ集計レポートをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="2530a-119">You can customize the Interchange Aggregation Report by changing the fields in the query expression that determines the data displayed.</span></span> <span data-ttu-id="2530a-120">使用できるフィールドは以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2530a-120">The following fields are available:</span></span>  
   
 |||||  
 |-|-|-|-|  
-|クエリ式のフィールド|有効な演算子|潜在的な値|既定で含まれますか。|  
-|検索|[等しい]|インターチェンジの集計レポート|指定あり (必須)|  
-|インターチェンジの日時|[以下]<br /><br /> [以上]|特定の日時<br /><br /> [今日]<br /><br /> 昨日|はい<br /><br /> 注: は小で 1 回、クエリ式に 2 回含めることが-演算子と、大きい値が 1 回よりも-演算子は、範囲を指定します。|  
-|[最大一致数]|[等しい]|整数 (既定値 50)|はい|  
-|Direction|[等しい]|すべて (既定)<br /><br /> Receive<br /><br /> Send|不可|  
-|受信者パーティ名|[等しい]|すべて (既定)<br /><br /> 特定のパーティ名 (AN 文字列)|不可|  
-|送信者パーティ名|[等しい]|すべて (既定)<br /><br /> 特定のパーティ名 (AN 文字列)|不可|  
-|[状態]|[等しい]<br /><br /> 等しくないです。|受理<br /><br /> 受理 (ただしエラーが発生)<br /><br /> 送信済み<br /><br /> すべて<br /><br /> 確認が必要<br /><br /> 確認は不要<br /><br /> 拒否しました|不可|
+|<span data-ttu-id="2530a-121">クエリ式のフィールド</span><span class="sxs-lookup"><span data-stu-id="2530a-121">Query Expression Field</span></span>|<span data-ttu-id="2530a-122">有効な演算子</span><span class="sxs-lookup"><span data-stu-id="2530a-122">Potential Operators</span></span>|<span data-ttu-id="2530a-123">潜在的な値</span><span class="sxs-lookup"><span data-stu-id="2530a-123">Potential Values</span></span>|<span data-ttu-id="2530a-124">既定で含まれますか。</span><span class="sxs-lookup"><span data-stu-id="2530a-124">Included By Default?</span></span>|  
+|<span data-ttu-id="2530a-125">検索</span><span class="sxs-lookup"><span data-stu-id="2530a-125">Search for</span></span>|<span data-ttu-id="2530a-126">[等しい]</span><span class="sxs-lookup"><span data-stu-id="2530a-126">Equals</span></span>|<span data-ttu-id="2530a-127">インターチェンジの集計レポート</span><span class="sxs-lookup"><span data-stu-id="2530a-127">Interchange Aggregation Report</span></span>|<span data-ttu-id="2530a-128">指定あり (必須)</span><span class="sxs-lookup"><span data-stu-id="2530a-128">Yes (required)</span></span>|  
+|<span data-ttu-id="2530a-129">インターチェンジの日時</span><span class="sxs-lookup"><span data-stu-id="2530a-129">Interchange Date Time</span></span>|<span data-ttu-id="2530a-130">[以下]</span><span class="sxs-lookup"><span data-stu-id="2530a-130">Less Than or Equals</span></span><br /><br /> <span data-ttu-id="2530a-131">[以上]</span><span class="sxs-lookup"><span data-stu-id="2530a-131">Greater Than or Equals</span></span>|<span data-ttu-id="2530a-132">特定の日時</span><span class="sxs-lookup"><span data-stu-id="2530a-132">Specific Date Time</span></span><br /><br /> <span data-ttu-id="2530a-133">[今日]</span><span class="sxs-lookup"><span data-stu-id="2530a-133">Today</span></span><br /><br /> <span data-ttu-id="2530a-134">昨日</span><span class="sxs-lookup"><span data-stu-id="2530a-134">Today - 1</span></span>|<span data-ttu-id="2530a-135">はい</span><span class="sxs-lookup"><span data-stu-id="2530a-135">Yes</span></span><br /><br /> <span data-ttu-id="2530a-136">注: は小で 1 回、クエリ式に 2 回含めることが-演算子と、大きい値が 1 回よりも-演算子は、範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="2530a-136">Note: Can be included twice in the query expression, once with a less-than operator and once with a greater-than operator, to provide a range.</span></span>|  
+|<span data-ttu-id="2530a-137">[最大一致数]</span><span class="sxs-lookup"><span data-stu-id="2530a-137">Maximum Matches</span></span>|<span data-ttu-id="2530a-138">[等しい]</span><span class="sxs-lookup"><span data-stu-id="2530a-138">Equals</span></span>|<span data-ttu-id="2530a-139">整数 (既定値 50)</span><span class="sxs-lookup"><span data-stu-id="2530a-139">Integer (default of 50)</span></span>|<span data-ttu-id="2530a-140">はい</span><span class="sxs-lookup"><span data-stu-id="2530a-140">Yes</span></span>|  
+|<span data-ttu-id="2530a-141">Direction</span><span class="sxs-lookup"><span data-stu-id="2530a-141">Direction</span></span>|<span data-ttu-id="2530a-142">[等しい]</span><span class="sxs-lookup"><span data-stu-id="2530a-142">Equals</span></span>|<span data-ttu-id="2530a-143">すべて (既定)</span><span class="sxs-lookup"><span data-stu-id="2530a-143">All (default)</span></span><br /><br /> <span data-ttu-id="2530a-144">Receive</span><span class="sxs-lookup"><span data-stu-id="2530a-144">Receive</span></span><br /><br /> <span data-ttu-id="2530a-145">Send</span><span class="sxs-lookup"><span data-stu-id="2530a-145">Send</span></span>|<span data-ttu-id="2530a-146">不可</span><span class="sxs-lookup"><span data-stu-id="2530a-146">No</span></span>|  
+|<span data-ttu-id="2530a-147">受信者パーティ名</span><span class="sxs-lookup"><span data-stu-id="2530a-147">Receiver Party Name</span></span>|<span data-ttu-id="2530a-148">[等しい]</span><span class="sxs-lookup"><span data-stu-id="2530a-148">Equals</span></span>|<span data-ttu-id="2530a-149">すべて (既定)</span><span class="sxs-lookup"><span data-stu-id="2530a-149">All (default)</span></span><br /><br /> <span data-ttu-id="2530a-150">特定のパーティ名 (AN 文字列)</span><span class="sxs-lookup"><span data-stu-id="2530a-150">Specific party name (AN string)</span></span>|<span data-ttu-id="2530a-151">不可</span><span class="sxs-lookup"><span data-stu-id="2530a-151">No</span></span>|  
+|<span data-ttu-id="2530a-152">送信者パーティ名</span><span class="sxs-lookup"><span data-stu-id="2530a-152">Sender Party Name</span></span>|<span data-ttu-id="2530a-153">[等しい]</span><span class="sxs-lookup"><span data-stu-id="2530a-153">Equals</span></span>|<span data-ttu-id="2530a-154">すべて (既定)</span><span class="sxs-lookup"><span data-stu-id="2530a-154">All (default)</span></span><br /><br /> <span data-ttu-id="2530a-155">特定のパーティ名 (AN 文字列)</span><span class="sxs-lookup"><span data-stu-id="2530a-155">Specific party name (AN string)</span></span>|<span data-ttu-id="2530a-156">不可</span><span class="sxs-lookup"><span data-stu-id="2530a-156">No</span></span>|  
+|<span data-ttu-id="2530a-157">[状態]</span><span class="sxs-lookup"><span data-stu-id="2530a-157">Status</span></span>|<span data-ttu-id="2530a-158">[等しい]</span><span class="sxs-lookup"><span data-stu-id="2530a-158">Equals</span></span><br /><br /> <span data-ttu-id="2530a-159">等しくないです。</span><span class="sxs-lookup"><span data-stu-id="2530a-159">Not Equals</span></span>|<span data-ttu-id="2530a-160">受理</span><span class="sxs-lookup"><span data-stu-id="2530a-160">Accepted</span></span><br /><br /> <span data-ttu-id="2530a-161">受理 (ただしエラーが発生)</span><span class="sxs-lookup"><span data-stu-id="2530a-161">Accepted with Errors</span></span><br /><br /> <span data-ttu-id="2530a-162">送信済み</span><span class="sxs-lookup"><span data-stu-id="2530a-162">Sent</span></span><br /><br /> <span data-ttu-id="2530a-163">すべて</span><span class="sxs-lookup"><span data-stu-id="2530a-163">All</span></span><br /><br /> <span data-ttu-id="2530a-164">確認が必要</span><span class="sxs-lookup"><span data-stu-id="2530a-164">Ack Expected</span></span><br /><br /> <span data-ttu-id="2530a-165">確認は不要</span><span class="sxs-lookup"><span data-stu-id="2530a-165">Ack Not Expected</span></span><br /><br /> <span data-ttu-id="2530a-166">拒否しました</span><span class="sxs-lookup"><span data-stu-id="2530a-166">Rejected</span></span>|<span data-ttu-id="2530a-167">不可</span><span class="sxs-lookup"><span data-stu-id="2530a-167">No</span></span>|

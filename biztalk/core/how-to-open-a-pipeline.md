@@ -19,20 +19,20 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-open-a-pipeline"></a>パイプラインを開く方法
-パイプライン ファイルを開くと、パイプライン デザイナーが表示され、定義されたパイプラインとそのステージがデザイン領域に表示されます。 また、パイプライン デザイナー ツールボックスおよびプロパティ ウィンドウが表示されます (まだ表示されていない場合)。  
+# <a name="how-to-open-a-pipeline"></a><span data-ttu-id="39464-102">パイプラインを開く方法</span><span class="sxs-lookup"><span data-stu-id="39464-102">How to Open a Pipeline</span></span>
+<span data-ttu-id="39464-103">パイプライン ファイルを開くと、パイプライン デザイナーが表示され、定義されたパイプラインとそのステージがデザイン領域に表示されます。</span><span class="sxs-lookup"><span data-stu-id="39464-103">Opening a pipeline file causes Pipeline Designer to appear with the defined pipeline and its stages in the design area.</span></span> <span data-ttu-id="39464-104">また、パイプライン デザイナー ツールボックスおよびプロパティ ウィンドウが表示されます (まだ表示されていない場合)。</span><span class="sxs-lookup"><span data-stu-id="39464-104">In addition, the Pipeline Designer Toolbox and the Properties window will appear if they are not already open.</span></span>  
   
-### <a name="to-open-a-pipeline"></a>パイプラインを開くには  
+### <a name="to-open-a-pipeline"></a><span data-ttu-id="39464-105">パイプラインを開くには</span><span class="sxs-lookup"><span data-stu-id="39464-105">To open a pipeline</span></span>  
   
-1.  ソリューション エクスプローラーで、開くパイプラインをダブルクリックします。  
+1.  <span data-ttu-id="39464-106">ソリューション エクスプローラーで、開くパイプラインをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="39464-106">In Solution Explorer, double-click the pipeline you want to open.</span></span>  
   
-     - または -  
+     <span data-ttu-id="39464-107">- または -</span><span class="sxs-lookup"><span data-stu-id="39464-107">—Or—</span></span>  
   
-2.  ソリューション エクスプ ローラーで、パイプラインを選択し、**ビュー**  メニューのをクリックして**開く**です。  
+2.  <span data-ttu-id="39464-108">ソリューション エクスプ ローラーで、パイプラインを選択し、**ビュー**  メニューのをクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="39464-108">In Solution Explorer, select the pipeline, and then on the **View** menu, click **Open**.</span></span>  
   
-## <a name="see-also"></a>参照  
- [新しいパイプラインを作成する方法](../core/how-to-create-a-new-pipeline.md)   
- [パイプラインを保存する方法](../core/how-to-save-a-pipeline.md)   
- [ツールボックスの使用方法](../core/how-to-use-the-toolbox.md)   
- [キーボードで移動する方法](../core/how-to-navigate-with-the-keyboard.md)   
- [パイプライン デザイナーでパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)
+## <a name="see-also"></a><span data-ttu-id="39464-109">参照</span><span class="sxs-lookup"><span data-stu-id="39464-109">See Also</span></span>  
+ <span data-ttu-id="39464-110">[新しいパイプラインを作成する方法](../core/how-to-create-a-new-pipeline.md) </span><span class="sxs-lookup"><span data-stu-id="39464-110">[How to Create a New Pipeline](../core/how-to-create-a-new-pipeline.md) </span></span>  
+ <span data-ttu-id="39464-111">[パイプラインを保存する方法](../core/how-to-save-a-pipeline.md) </span><span class="sxs-lookup"><span data-stu-id="39464-111">[How to Save a Pipeline](../core/how-to-save-a-pipeline.md) </span></span>  
+ <span data-ttu-id="39464-112">[ツールボックスの使用方法](../core/how-to-use-the-toolbox.md) </span><span class="sxs-lookup"><span data-stu-id="39464-112">[How to Use the Toolbox](../core/how-to-use-the-toolbox.md) </span></span>  
+ <span data-ttu-id="39464-113">[キーボードで移動する方法](../core/how-to-navigate-with-the-keyboard.md) </span><span class="sxs-lookup"><span data-stu-id="39464-113">[How to Navigate with the Keyboard](../core/how-to-navigate-with-the-keyboard.md) </span></span>  
+ [<span data-ttu-id="39464-114">パイプライン デザイナーでパイプラインの作成</span><span class="sxs-lookup"><span data-stu-id="39464-114">Creating Pipelines with Pipeline Designer</span></span>](../core/creating-pipelines-with-pipeline-designer.md)

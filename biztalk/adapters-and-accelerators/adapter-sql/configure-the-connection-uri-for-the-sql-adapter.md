@@ -18,167 +18,167 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configure-the-connection-uri-for-the-sql-adapter"></a>SQL アダプターの接続 URI を構成します。
-接続 URI は、SQL Server への接続に必要なパラメーターを含む接続文字列です。 使用しているときに、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]で[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]メタデータを生成する SQL Server に接続する URI を指定する必要があります。 構成、送信または受信ポートを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、操作を実行する SQL Server に接続する URI を指定する必要があります。  
+# <a name="configure-the-connection-uri-for-the-sql-adapter"></a><span data-ttu-id="de6a6-102">SQL アダプターの接続 URI を構成します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-102">Configure the connection URI for the SQL adapter</span></span>
+<span data-ttu-id="de6a6-103">接続 URI は、SQL Server への接続に必要なパラメーターを含む接続文字列です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-103">A connection URI is a connection string that contains parameters required to connect to SQL Server.</span></span> <span data-ttu-id="de6a6-104">使用しているときに、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]で[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]メタデータを生成する SQL Server に接続する URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="de6a6-104">While using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you must specify the URI to connect to SQL Server to generate the metadata.</span></span> <span data-ttu-id="de6a6-105">構成、送信または受信ポートを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、操作を実行する SQL Server に接続する URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="de6a6-105">While configuring a send or receive port using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the URI to connect to SQL Server to perform operations.</span></span>  
   
-## <a name="enter-the-connection-uri-from-visual-studio"></a>Visual Studio からの接続 URI を入力します。  
- [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、接続 URI を使用して、指定することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。  
+## <a name="enter-the-connection-uri-from-visual-studio"></a><span data-ttu-id="de6a6-106">Visual Studio からの接続 URI を入力します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-106">Enter the connection URI from Visual Studio</span></span>  
+ <span data-ttu-id="de6a6-107">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、接続 URI を使用して、指定することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-107">From [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you can specify the connection URI using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)].</span></span>  
   
-### <a name="use-the-consume-adapter-service-add-in"></a>使用して、アダプターを使用する追加のサービス  
+### <a name="use-the-consume-adapter-service-add-in"></a><span data-ttu-id="de6a6-108">使用して、アダプターを使用する追加のサービス</span><span class="sxs-lookup"><span data-stu-id="de6a6-108">Use the Consume Adapter Service Add-in</span></span>  
   
-1.  BizTalk プロジェクトを右クリックし、順にポイント**追加**、クリックして**生成した項目の追加**です。  
+1.  <span data-ttu-id="de6a6-109">BizTalk プロジェクトを右クリックし、順にポイント**追加**、クリックして**生成した項目の追加**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-109">Right-click your BizTalk project, point to **Add**, and then click **Add Generated Items**.</span></span>  
   
-2.  **生成した項目の追加** ダイアログ ボックスで、次の操作します。  
+2.  <span data-ttu-id="de6a6-110">**生成した項目の追加** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-110">In the **Add Generated Items** dialog box, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="de6a6-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de6a6-111">Use this</span></span>|<span data-ttu-id="de6a6-112">目的</span><span class="sxs-lookup"><span data-stu-id="de6a6-112">To do this</span></span>|  
     |--------------|----------------|  
-    |**カテゴリ**|をクリックして**アダプター サービスの使用**です。|  
-    |**[テンプレート]**|をクリックして**アダプター サービスの使用**です。|  
+    |<span data-ttu-id="de6a6-113">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="de6a6-113">**Categories**</span></span>|<span data-ttu-id="de6a6-114">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-114">Click **Consume Adapter Service**.</span></span>|  
+    |<span data-ttu-id="de6a6-115">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="de6a6-115">**Templates**</span></span>|<span data-ttu-id="de6a6-116">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-116">Click **Consume Adapter Service**.</span></span>|  
   
-3.  開始する、**アダプター サービスの使用**ダイアログ ボックスで、をクリックして**追加**です。  
+3.  <span data-ttu-id="de6a6-117">開始する、**アダプター サービスの使用**ダイアログ ボックスで、をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-117">To start the **Consume Adapter Service** dialog box, click **Add**.</span></span>  
   
-4.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**sqlBinding**、順にクリック**構成**です。  
+4.  <span data-ttu-id="de6a6-118">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**sqlBinding**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-118">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **sqlBinding**, and then click **Configure**.</span></span>  
   
-5.  **アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブです。**クライアント資格情報の種類**ボックスの一覧で、次のいずれかの操作します。  
+5.  <span data-ttu-id="de6a6-119">**アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブです。**クライアント資格情報の種類**ボックスの一覧で、次のいずれかの操作します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-119">In the **Configure Adapter** dialog box, click the **Security** tab. From the **Client credential type** list, do one of the following:</span></span>  
   
     > [!NOTE]
-    >  SQL server で記録される Windows ユーザーを追加する必要があります Windows 認証を使用して SQL Server に接続する場合」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。  
+    >  <span data-ttu-id="de6a6-120">SQL server で記録される Windows ユーザーを追加する必要があります Windows 認証を使用して SQL Server に接続する場合」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-120">If you are connecting to SQL Server using Windows Authentication, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server Using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
   
-    |このボタンをクリックします。|目的|  
+    |<span data-ttu-id="de6a6-121">このボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-121">Click this</span></span>|<span data-ttu-id="de6a6-122">目的</span><span class="sxs-lookup"><span data-stu-id="de6a6-122">To do this</span></span>|  
     |----------------|----------------|  
-    |**なし**|Windows 認証を使用して SQL Server に接続します。|  
-    |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |<span data-ttu-id="de6a6-123">**なし**</span><span class="sxs-lookup"><span data-stu-id="de6a6-123">**None**</span></span>|<span data-ttu-id="de6a6-124">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-124">Connect to SQL Server by using Windows authentication.</span></span>|  
+    |<span data-ttu-id="de6a6-125">**Windows**</span><span class="sxs-lookup"><span data-stu-id="de6a6-125">**Windows**</span></span>|<span data-ttu-id="de6a6-126">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-126">Connect to SQL Server by using Windows authentication.</span></span>|  
+    |<span data-ttu-id="de6a6-127">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="de6a6-127">**Username**</span></span>|<span data-ttu-id="de6a6-128">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-128">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="de6a6-129">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-129">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="de6a6-130">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-130">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
-6.  クリックして、 **URI プロパティ**タブをクリックし、他のパラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+6.  <span data-ttu-id="de6a6-131">クリックして、 **URI プロパティ**タブをクリックし、他のパラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-131">Click the **URI Properties** tab, and specify values for different parameters.</span></span> <span data-ttu-id="de6a6-132">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-132">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
-7.  クリックして、**バインド プロパティ**タブをクリックし、値を指定、バインドのプロパティの場合は、スキーマを生成する前に必要なです。 バインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  
+7.  <span data-ttu-id="de6a6-133">クリックして、**バインド プロパティ**タブをクリックし、値を指定、バインドのプロパティの場合は、スキーマを生成する前に必要なです。</span><span class="sxs-lookup"><span data-stu-id="de6a6-133">Click the **Binding Properties** tab, and specify values for the binding properties, if any, which are required before generating the schema.</span></span> <span data-ttu-id="de6a6-134">バインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-134">For more information about binding properties, see [Read about the BizTalk Adapter for SQL Server adapter Binding Properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  
   
-8.  **[OK]**をクリックします。  
+8.  <span data-ttu-id="de6a6-135">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-135">Click **OK**.</span></span>  
   
-### <a name="use-the-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードを使用します。  
+### <a name="use-the-add-adapter-metadata-wizard"></a><span data-ttu-id="de6a6-136">アダプター メタデータの追加ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-136">Use the Add Adapter Metadata wizard</span></span>  
   
-1.  BizTalk プロジェクトを右クリックし、**追加**、クリックして**生成した項目の追加**です。  
+1.  <span data-ttu-id="de6a6-137">BizTalk プロジェクトを右クリックし、**追加**、クリックして**生成した項目の追加**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-137">Right-click the BizTalk project, point to **Add**, and then click **Add Generated Items**.</span></span>  
   
-2.  **生成した項目の追加** ダイアログ ボックスで、次の操作します。  
+2.  <span data-ttu-id="de6a6-138">**生成した項目の追加** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-138">In the **Add Generated Items** dialog box, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="de6a6-139">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de6a6-139">Use this</span></span>|<span data-ttu-id="de6a6-140">目的</span><span class="sxs-lookup"><span data-stu-id="de6a6-140">To do this</span></span>|  
     |--------------|----------------|  
-    |**カテゴリ**|をクリックして**アダプターを追加**です。|  
-    |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
+    |<span data-ttu-id="de6a6-141">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="de6a6-141">**Categories**</span></span>|<span data-ttu-id="de6a6-142">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-142">Click **Add Adapter**.</span></span>|  
+    |<span data-ttu-id="de6a6-143">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="de6a6-143">**Templates**</span></span>|<span data-ttu-id="de6a6-144">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-144">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  **[追加]**をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+3.  <span data-ttu-id="de6a6-145">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-145">Click **Add**.</span></span> <span data-ttu-id="de6a6-146">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-146">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
-4.  アダプターの追加ウィザードで選択**WCF-SQL**です。 BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。  
+4.  <span data-ttu-id="de6a6-147">アダプターの追加ウィザードで選択**WCF-SQL**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-147">In the Add Adapter Wizard, select **WCF-SQL**.</span></span> <span data-ttu-id="de6a6-148">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="de6a6-148">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
-    >  BizTalk で構成されている WCF SQL ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。  
+    >  <span data-ttu-id="de6a6-149">BizTalk で構成されている WCF SQL ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-149">If you already have a WCF-SQL port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  **[次へ]**をクリックします。  
+5.  <span data-ttu-id="de6a6-150">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-150">Click **Next**.</span></span>  
   
-6.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、順にクリック**構成**.  
+6.  <span data-ttu-id="de6a6-151">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、順にクリック**構成**.</span><span class="sxs-lookup"><span data-stu-id="de6a6-151">In the **Consume Adapter Service** dialog box, from the **Select a binding** drop-down list, select **sqlBinding**, and then click **Configure**.</span></span>  
   
-7.  **アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リスト ボックスで、次のいずれかの操作。  
+7.  <span data-ttu-id="de6a6-152">**アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リスト ボックスで、次のいずれかの操作。</span><span class="sxs-lookup"><span data-stu-id="de6a6-152">In the **Configure Adapter** dialog box, click the **Security** tab, and from the **Client credential  type** drop-down list box, do one of the following:</span></span>  
   
     > [!NOTE]
-    >  SQL server で記録される Windows ユーザーを追加する必要があります Windows 認証を使用して SQL Server に接続する場合」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。  
+    >  <span data-ttu-id="de6a6-153">SQL server で記録される Windows ユーザーを追加する必要があります Windows 認証を使用して SQL Server に接続する場合」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-153">If you are connecting to SQL Server using Windows Authentication, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server Using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
   
-    |このボタンをクリックします。|目的|  
+    |<span data-ttu-id="de6a6-154">このボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-154">Click this</span></span>|<span data-ttu-id="de6a6-155">目的</span><span class="sxs-lookup"><span data-stu-id="de6a6-155">To do this</span></span>|  
     |----------------|----------------|  
-    |**なし**|Windows 認証を使用して SQL Server に接続します。|  
-    |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |<span data-ttu-id="de6a6-156">**なし**</span><span class="sxs-lookup"><span data-stu-id="de6a6-156">**None**</span></span>|<span data-ttu-id="de6a6-157">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-157">Connect to SQL Server by using Windows authentication.</span></span>|  
+    |<span data-ttu-id="de6a6-158">**Windows**</span><span class="sxs-lookup"><span data-stu-id="de6a6-158">**Windows**</span></span>|<span data-ttu-id="de6a6-159">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-159">Connect to SQL Server by using Windows authentication.</span></span>|  
+    |<span data-ttu-id="de6a6-160">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="de6a6-160">**Username**</span></span>|<span data-ttu-id="de6a6-161">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-161">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="de6a6-162">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-162">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="de6a6-163">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-163">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
-8.  クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+8.  <span data-ttu-id="de6a6-164">クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-164">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="de6a6-165">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-165">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
-9. クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。 バインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  
-  
-    > [!NOTE]
-    >  既存の WCF-SQL 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。 バインドのプロパティは、送信ポートの構成から取得されます。 ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。 このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。 ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。  
-  
-10. **[OK]**をクリックします。  
-  
-## <a name="enter-the-connection-uri-from-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールから、接続 URI を入力します。  
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または WCF SQL ポートの構成の一部として接続 URI を指定することができます。  
-  
-### <a name="enter-the-connection-uri-for-the-wcf-custom-port"></a>WCF カスタム ポートの接続 URI を入力してください。  
-  
-1.  開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
-  
-2.  コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、ポートを作成し、をクリックする、アプリケーションの順に展開および**送信ポート**または**受信ポート**です。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
-  
-3.  ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。  
+9. <span data-ttu-id="de6a6-166">クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-166">Click the **Binding Properties** tab, and then specify values for the binding properties, if any, required by the operations you want to target.</span></span> <span data-ttu-id="de6a6-167">バインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-167">For more information about binding properties, see [Read about the BizTalk Adapter for SQL Server adapter Binding Properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  
   
     > [!NOTE]
-    >  受信ポートの場所のプロパティ ダイアログ ボックスを表示するをクリックして、**受信場所の**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**です。  
+    >  <span data-ttu-id="de6a6-168">既存の WCF-SQL 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="de6a6-168">If you selected an existing WCF-SQL send port, you need not specify the binding properties.</span></span> <span data-ttu-id="de6a6-169">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-169">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="de6a6-170">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-170">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="de6a6-171">このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-171">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="de6a6-172">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-172">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-4.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。  
+10. <span data-ttu-id="de6a6-173">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-173">Click **OK**.</span></span>  
   
-5.  **アドレス (URI)**テキスト ボックスで、接続の SQL Server に接続する URI を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+## <a name="enter-the-connection-uri-from-the-biztalk-server-administration-console"></a><span data-ttu-id="de6a6-174">BizTalk Server 管理コンソールから、接続 URI を入力します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-174">Enter the connection URI from the BizTalk Server Administration Console</span></span>  
+ <span data-ttu-id="de6a6-175">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または WCF SQL ポートの構成の一部として接続 URI を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-175">From the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you can specify the connection URI as part of the WCF-Custom or a WCF-SQL port configuration.</span></span>  
   
-6.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。**バインディングの種類**ドロップダウン リストで、 **sqlBinding**です。  
+### <a name="enter-the-connection-uri-for-the-wcf-custom-port"></a><span data-ttu-id="de6a6-176">WCF カスタム ポートの接続 URI を入力してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-176">Enter the connection URI for the WCF-Custom port</span></span>  
   
-7.  送信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスをクリックして、**資格情報**タブをクリックし、次のいずれかの操作します。  
+1.  <span data-ttu-id="de6a6-177">開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="de6a6-177">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
   
-    -   選択、**シングル サインオンを使用しない**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。  
+2.  <span data-ttu-id="de6a6-178">コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、ポートを作成し、をクリックする、アプリケーションの順に展開および**送信ポート**または**受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-178">In the console tree, expand **BizTalk Group**, then expand **Applications**, and then expand the application under which you want to create a port, and click **Send Ports** or **Receive Ports**.</span></span> <span data-ttu-id="de6a6-179">右側のウィンドウでは、ポートを作成または既存のポートを選択できます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-179">In the right pane, you can choose to create a port or select an existing port.</span></span>  
   
-        > [!NOTE]
-        >  Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。 SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。  
-  
-    -   選択、**を使用してシングル サインオン**オプション、および関連するエンタープライズ シングル サインオン (SSO) アプリケーションを指定します。  
-  
-8.  受信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**他の**タブをクリックし、次のいずれかの操作します。  
-  
-    -   選択**ユーザー アカウント**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。  
-  
-        > [!NOTE]
-        >  Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。 SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。  
-  
-    -   選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
-  
-9. **[OK]**をクリックします。  
-  
-### <a name="enter-the-connection-uri-for-the-wcf-sql-port"></a>WCF SQL ポートの接続 URI を入力してください。  
-  
-1.  開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
-  
-2.  WCF-SQL アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 手順については、次を参照してください。 [SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)です。  
-  
-3.  コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、ポートを作成し、をクリックする、アプリケーションの順に展開および**送信ポート**または**受信ポート**です。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
-  
-4.  ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストは、前に追加する WCF-SQL アダプターを選択し、をクリックして**構成**です。  
+3.  <span data-ttu-id="de6a6-180">ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-180">In the port properties dialog box, from the **Type** drop-down list, select **WCF-Custom**, and then click **Configure**.</span></span>  
   
     > [!NOTE]
-    >  受信ポートの場所のプロパティ ダイアログ ボックスを表示するをクリックして、**受信場所の**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**です。  
+    >  <span data-ttu-id="de6a6-181">受信ポートの場所のプロパティ ダイアログ ボックスを表示するをクリックして、**受信場所の**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-181">To see the location properties dialog box for a receive port, click the **Receive Location** tab on the left pane of the port properties dialog box, and then click **New**.</span></span>  
   
-5.  トランスポートのプロパティ ダイアログ ボックスをクリックして、**全般**タブです。  
+4.  <span data-ttu-id="de6a6-182">**Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="de6a6-182">In the **WCF-Custom Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-6.  クリックして、**構成**ボタンをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+5.  <span data-ttu-id="de6a6-183">**アドレス (URI)**テキスト ボックスで、接続の SQL Server に接続する URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-183">In the **Address (URI)** text box, specify the connection URI to connect to SQL Server.</span></span> <span data-ttu-id="de6a6-184">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-184">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
-7.  トランスポートのプロパティ ダイアログ ボックスをクリックして、**バインディング**タブし、バインドのプロパティの値を指定します。  
+6.  <span data-ttu-id="de6a6-185">**Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。**バインディングの種類**ドロップダウン リストで、 **sqlBinding**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-185">In the **WCF-Custom Transport Properties** dialog box, click the **Binding** tab. From the **Binding Type** drop-down list, select **sqlBinding**.</span></span>  
+  
+7.  <span data-ttu-id="de6a6-186">送信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスをクリックして、**資格情報**タブをクリックし、次のいずれかの操作します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-186">If you are creating a send port, in the **WCF-Custom Transport Properties** dialog box, click the **Credentials** tab, and do one of the following:</span></span>  
+  
+    -   <span data-ttu-id="de6a6-187">選択、**シングル サインオンを使用しない**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-187">Select the **Do not use Single Sign-On** option, and specify the user name and password to connect to SQL Server.</span></span> <span data-ttu-id="de6a6-188">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-188">Note that the user name and password are case-sensitive.</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="de6a6-189">Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-189">If you want to connect to SQL Server using Windows authentication, specify a blank user name and password.</span></span> <span data-ttu-id="de6a6-190">SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-190">Before you do this, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server Using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
+  
+    -   <span data-ttu-id="de6a6-191">選択、**を使用してシングル サインオン**オプション、および関連するエンタープライズ シングル サインオン (SSO) アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-191">Select the **Use Single Sign-On** option, and specify an affiliate Enterprise Single Sign-on (SSO) application.</span></span>  
+  
+8.  <span data-ttu-id="de6a6-192">受信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**他の**タブをクリックし、次のいずれかの操作します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-192">If you are creating a receive port, in the **WCF-Custom Transport Properties** dialog box, click the **Other** tab, and do one of the following:</span></span>  
+  
+    -   <span data-ttu-id="de6a6-193">選択**ユーザー アカウント**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-193">Select **User account** option, and specify the user name and password to connect to SQL Server.</span></span> <span data-ttu-id="de6a6-194">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-194">Note that the user name and password are case-sensitive.</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="de6a6-195">Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-195">If you want to connect to SQL Server using Windows authentication, specify a blank user name and password.</span></span> <span data-ttu-id="de6a6-196">SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-196">Before you do this, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server Using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
+  
+    -   <span data-ttu-id="de6a6-197">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-197">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
+  
+9. <span data-ttu-id="de6a6-198">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-198">Click **OK**.</span></span>  
+  
+### <a name="enter-the-connection-uri-for-the-wcf-sql-port"></a><span data-ttu-id="de6a6-199">WCF SQL ポートの接続 URI を入力してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-199">Enter the connection URI for the WCF-SQL port</span></span>  
+  
+1.  <span data-ttu-id="de6a6-200">開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="de6a6-200">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+2.  <span data-ttu-id="de6a6-201">WCF-SQL アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="de6a6-201">Add the WCF-SQL adapter to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="de6a6-202">手順については、次を参照してください。 [SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-202">For instructions, see [Adding the SQL Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md).</span></span>  
+  
+3.  <span data-ttu-id="de6a6-203">コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、ポートを作成し、をクリックする、アプリケーションの順に展開および**送信ポート**または**受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-203">In the console tree, expand **BizTalk Group**, then expand **Applications**, and then expand the application under which you want to create a port, and click **Send Ports** or **Receive Ports**.</span></span> <span data-ttu-id="de6a6-204">右側のウィンドウでは、ポートを作成または既存のポートを選択できます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-204">In the right pane, you can choose to create a port or select an existing port.</span></span>  
+  
+4.  <span data-ttu-id="de6a6-205">ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストは、前に追加する WCF-SQL アダプターを選択し、をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-205">In the port properties dialog box, from the **Type** drop-down list, select the WCF-SQL adapter you added earlier, and then click **Configure**.</span></span>  
   
     > [!NOTE]
-    >  バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいてが表示されます。 たとえば、通知に関連するバインド プロパティ利用できない通知が受信操作には、受信ポートの構成を必要とするために、送信ポートを構成するときにします。  
+    >  <span data-ttu-id="de6a6-206">受信ポートの場所のプロパティ ダイアログ ボックスを表示するをクリックして、**受信場所の**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-206">To see the location properties dialog box for a receive port, click the **Receive Location** tab on the left pane of the port properties dialog box, and then click **New**.</span></span>  
   
-8.  トランスポートのプロパティ ダイアログ ボックスで、送信ポートを作成する場合にクリックして、**資格情報**タブをクリックし、次のいずれかの操作します。  
+5.  <span data-ttu-id="de6a6-207">トランスポートのプロパティ ダイアログ ボックスをクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="de6a6-207">In the transport properties dialog box, click the **General** tab.</span></span>  
   
-    -   選択、**シングル サインオンを使用しない**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。  
+6.  <span data-ttu-id="de6a6-208">クリックして、**構成**ボタンをクリックし、接続パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-208">Click the **Configure** button and provide values for the connection parameters.</span></span> <span data-ttu-id="de6a6-209">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-209">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
+  
+7.  <span data-ttu-id="de6a6-210">トランスポートのプロパティ ダイアログ ボックスをクリックして、**バインディング**タブし、バインドのプロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-210">In the transport properties dialog box, click the **Binding** tab and specify values for binding properties.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="de6a6-211">バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいてが表示されます。</span><span class="sxs-lookup"><span data-stu-id="de6a6-211">The binding properties are displayed based on whether you are configuring a send port or a receive port.</span></span> <span data-ttu-id="de6a6-212">たとえば、通知に関連するバインド プロパティ利用できない通知が受信操作には、受信ポートの構成を必要とするために、送信ポートを構成するときにします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-212">For example, binding properties related to notifications are not available while configuring a send port because notifications are inbound operations and require a receive port configuration.</span></span>  
+  
+8.  <span data-ttu-id="de6a6-213">トランスポートのプロパティ ダイアログ ボックスで、送信ポートを作成する場合にクリックして、**資格情報**タブをクリックし、次のいずれかの操作します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-213">If you are creating a send port, in the transport properties dialog box, click the **Credentials** tab, and do one of the following:</span></span>  
+  
+    -   <span data-ttu-id="de6a6-214">選択、**シングル サインオンを使用しない**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-214">Select the **Do not use Single Sign-On** option, and specify the user name and password to connect to SQL Server.</span></span> <span data-ttu-id="de6a6-215">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-215">Note that the user name and password are case-sensitive.</span></span>  
   
         > [!NOTE]
-        >  Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。 SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。  
+        >  <span data-ttu-id="de6a6-216">Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-216">If you want to connect to SQL Server using Windows authentication, specify a blank user name and password.</span></span> <span data-ttu-id="de6a6-217">SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-217">Before you do this, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server Using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
   
-    -   選択、**を使用してシングル サインオン**オプション、および関連するエンタープライズ シングル サインオン (SSO) アプリケーションを指定します。  
+    -   <span data-ttu-id="de6a6-218">選択、**を使用してシングル サインオン**オプション、および関連するエンタープライズ シングル サインオン (SSO) アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-218">Select the **Use Single Sign-On** option, and specify an affiliate Enterprise Single Sign-on (SSO) application.</span></span>  
   
-9. トランスポートのプロパティ ダイアログ ボックスで、受信ポートを作成する場合にクリックして、**他**タブをクリックし、次のいずれかの操作します。  
+9. <span data-ttu-id="de6a6-219">トランスポートのプロパティ ダイアログ ボックスで、受信ポートを作成する場合にクリックして、**他**タブをクリックし、次のいずれかの操作します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-219">If you are creating a receive port, in the transport properties dialog box, click the **Other** tab, and do one of the following:</span></span>  
   
-    -   選択**ユーザー アカウント**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。  
+    -   <span data-ttu-id="de6a6-220">選択**ユーザー アカウント**オプション、およびユーザー名と SQL Server への接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-220">Select **User account** option, and specify the user name and password to connect to SQL Server.</span></span> <span data-ttu-id="de6a6-221">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="de6a6-221">Note that the user name and password are case-sensitive.</span></span>  
   
         > [!NOTE]
-        >  Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。 SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。  
+        >  <span data-ttu-id="de6a6-222">Windows 認証を使用して SQL Server に接続する場合は、空白のユーザー名とパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-222">If you want to connect to SQL Server using Windows authentication, specify a blank user name and password.</span></span> <span data-ttu-id="de6a6-223">SQL Server にで記録される Windows ユーザーを追加する必要があります、これを行う前に」の説明に従って[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="de6a6-223">Before you do this, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server Using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
   
-    -   選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
+    -   <span data-ttu-id="de6a6-224">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="de6a6-224">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-10. **[OK]**をクリックします。  
+10. <span data-ttu-id="de6a6-225">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6a6-225">Click **OK**.</span></span>  
   
-## <a name="see-also"></a>参照  
-[SQL アダプタを BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="de6a6-226">参照</span><span class="sxs-lookup"><span data-stu-id="de6a6-226">See Also</span></span>  
+[<span data-ttu-id="de6a6-227">SQL アダプタを BizTalk アプリケーションを開発する構成要素</span><span class="sxs-lookup"><span data-stu-id="de6a6-227">Building blocks to develop BizTalk applications with the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

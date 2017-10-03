@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---duplicate-distinguished-field-promotion"></a>エラー - 識別フィールドの重複の昇格
-**エラー コード**  
+# <a name="error---duplicate-distinguished-field-promotion"></a><span data-ttu-id="fb098-102">エラー - 識別フィールドの重複の昇格</span><span class="sxs-lookup"><span data-stu-id="fb098-102">Error - Duplicate Distinguished Field Promotion</span></span>
+<span data-ttu-id="fb098-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="fb098-103">**Error Code**</span></span>  
   
- BEC2015  
+ <span data-ttu-id="fb098-104">BEC2015</span><span class="sxs-lookup"><span data-stu-id="fb098-104">BEC2015</span></span>  
   
- **説明**  
+ <span data-ttu-id="fb098-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="fb098-105">**Explanation**</span></span>  
   
- このスキーマのノードが、識別フィールドとして複数回昇格を試行しています。  
+ <span data-ttu-id="fb098-106">このスキーマのノードが、識別フィールドとして複数回昇格を試行しています。</span><span class="sxs-lookup"><span data-stu-id="fb098-106">The indicated node in this schema is being promoted more than once as a Distinguished Field.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="fb098-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="fb098-107">**User Action**</span></span>  
   
- 使用して、**識別フィールド**のタブ、**プロパティの昇格** ダイアログ ボックスを使用してアクセス、**プロパティの昇格**のプロパティ、**スキーマ**をすべて削除が、このスキーマ内の同じノードに関連付けられている識別フィールドの昇格のいずれかのノードです。
+ <span data-ttu-id="fb098-108">使用して、**識別フィールド**のタブ、**プロパティの昇格** ダイアログ ボックスを使用してアクセス、**プロパティの昇格**のプロパティ、**スキーマ**をすべて削除が、このスキーマ内の同じノードに関連付けられている識別フィールドの昇格のいずれかのノードです。</span><span class="sxs-lookup"><span data-stu-id="fb098-108">Use the **Distinguished Fields** tab of the **Promote Properties** dialog box, accessed through the **Promote Properties** property of the **Schema** node, to delete all but one of the Distinguished Field promotions that are associated with the same node in this schema.</span></span>

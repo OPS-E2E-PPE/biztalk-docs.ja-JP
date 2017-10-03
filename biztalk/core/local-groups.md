@@ -21,10 +21,10 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="local-groups"></a>ローカル グループ
-BizTalk Server と必要なすべてのソフトウェアを 1 台のコンピュータにインストールした場合、既定では、必要な Windows グループ アカウントとユーザー アカウントが構成マネージャで作成されます。 BizTalk Server では、ローカル グループ アカウントとローカル ユーザー アカウントは、単一コンピューター構成でのみサポートされます。  
+# <a name="local-groups"></a><span data-ttu-id="e0e99-102">ローカル グループ</span><span class="sxs-lookup"><span data-stu-id="e0e99-102">Local Groups</span></span>
+<span data-ttu-id="e0e99-103">BizTalk Server と必要なすべてのソフトウェアを 1 台のコンピュータにインストールした場合、既定では、必要な Windows グループ アカウントとユーザー アカウントが構成マネージャで作成されます。</span><span class="sxs-lookup"><span data-stu-id="e0e99-103">The Configuration Manager creates the necessary Windows group and user accounts for you by default if you install BizTalk Server and all prerequisite software on a single computer.</span></span> <span data-ttu-id="e0e99-104">BizTalk Server では、ローカル グループ アカウントとローカル ユーザー アカウントは、単一コンピューター構成でのみサポートされます。</span><span class="sxs-lookup"><span data-stu-id="e0e99-104">BizTalk Server supports local group and user accounts only in single computer configurations.</span></span>  
   
-## <a name="see-also"></a>参照  
- [ドメイン グループ](../core/domain-groups.md)   
- [BizTalk Server 2013 および 2013 R2 のインストール概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)   
- [BizTalk Server の Windows グループ アカウントとユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)
+## <a name="see-also"></a><span data-ttu-id="e0e99-105">参照</span><span class="sxs-lookup"><span data-stu-id="e0e99-105">See Also</span></span>  
+ <span data-ttu-id="e0e99-106">[ドメイン グループ](../core/domain-groups.md) </span><span class="sxs-lookup"><span data-stu-id="e0e99-106">[Domain Groups](../core/domain-groups.md) </span></span>  
+ <span data-ttu-id="e0e99-107">[BizTalk Server 2013 および 2013 R2 のインストール概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5) </span><span class="sxs-lookup"><span data-stu-id="e0e99-107">[Installation Overview for BizTalk Server 2013 and 2013 R2](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5) </span></span>  
+ [<span data-ttu-id="e0e99-108">BizTalk Server の Windows グループ アカウントとユーザー アカウント</span><span class="sxs-lookup"><span data-stu-id="e0e99-108">Windows Groups and User Accounts in BizTalk Server</span></span>](../core/windows-groups-and-user-accounts-in-biztalk-server.md)

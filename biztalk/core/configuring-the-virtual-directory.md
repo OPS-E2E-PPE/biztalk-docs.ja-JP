@@ -21,43 +21,43 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-the-virtual-directory"></a>仮想ディレクトリの構成
-このトピックでは、仮想ディレクトリを構成してユーザーのアプリケーションを確認する手順を示します。  
+# <a name="configuring-the-virtual-directory"></a><span data-ttu-id="46bcf-102">仮想ディレクトリの構成</span><span class="sxs-lookup"><span data-stu-id="46bcf-102">Configuring the Virtual Directory</span></span>
+<span data-ttu-id="46bcf-103">このトピックでは、仮想ディレクトリを構成してユーザーのアプリケーションを確認する手順を示します。</span><span class="sxs-lookup"><span data-stu-id="46bcf-103">This topic shows the procedures for configuring the virtual directory and verifying the application for a user.</span></span>  
   
-## <a name="configuring-the-directory"></a>ディレクトリの構成  
+## <a name="configuring-the-directory"></a><span data-ttu-id="46bcf-104">ディレクトリの構成</span><span class="sxs-lookup"><span data-stu-id="46bcf-104">Configuring the Directory</span></span>  
   
-#### <a name="to-configure-the-virtual-directory"></a>仮想ディレクトリを構成するには  
+#### <a name="to-configure-the-virtual-directory"></a><span data-ttu-id="46bcf-105">仮想ディレクトリを構成するには</span><span class="sxs-lookup"><span data-stu-id="46bcf-105">To configure the virtual directory</span></span>  
   
-1.  %systemdrive% で、仮想ディレクトリとして構成するフォルダーを作成します。  
+1.  <span data-ttu-id="46bcf-106">%systemdrive% で、仮想ディレクトリとして構成するフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="46bcf-106">On the %systemdrive%, create a folder to be configured as a virtual directory.</span></span>  
   
-2.  をクリックして**開始**、 をポイント**プログラム**、 をクリックして**管理ツール**、 をクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
+2.  <span data-ttu-id="46bcf-107">をクリックして**開始**、 をポイント**プログラム**、 をクリックして**管理ツール**、 をクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-107">Click **Start**, point to **Programs**, click **Administrative Tools**, and click **Internet Information Services (IIS) Manager**.</span></span>  
   
-3.  展開**\<サーバー名 >**順に展開**サイト**です。  
+3.  <span data-ttu-id="46bcf-108">展開**\<サーバー名 >**順に展開**サイト**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-108">Expand **\<server name>** and then expand **Sites**.</span></span>  
   
-4.  右クリック**Default Web Site**  をクリック**仮想ディレクトリの追加**です。  
+4.  <span data-ttu-id="46bcf-109">右クリック**Default Web Site**  をクリック**仮想ディレクトリの追加**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-109">Right-click **Default Web Site** and click **Add Virtual Directory**.</span></span>  
   
-5.  **仮想ディレクトリの追加** ダイアログ ボックスで、別名を入力します。  
+5.  <span data-ttu-id="46bcf-110">**仮想ディレクトリの追加** ダイアログ ボックスで、別名を入力します。</span><span class="sxs-lookup"><span data-stu-id="46bcf-110">In the **Add Virtual Directory** dialog box, type the alias.</span></span>  
   
-6.  手順 1. で作成したフォルダーのパスを入力します。 またはをクリックして**([...])**フォルダーの場所を参照します。  
+6.  <span data-ttu-id="46bcf-111">手順 1. で作成したフォルダーのパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="46bcf-111">Type the path of the folder created in step 1.</span></span> <span data-ttu-id="46bcf-112">またはをクリックして**([...])**フォルダーの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="46bcf-112">Alternatively, click **(…)** to browse to the folder location.</span></span>  
   
-7.  **[OK]**をクリックします。 下のフォルダーが表示されます、 **Default Web Site**フォルダーです。  
+7.  <span data-ttu-id="46bcf-113">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46bcf-113">Click **OK**.</span></span> <span data-ttu-id="46bcf-114">下のフォルダーが表示されます、 **Default Web Site**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="46bcf-114">The folder is displayed under the **Default Web Site** folder.</span></span>  
   
-8.  フォルダーを右クリックし、をクリックして**アプリケーションへの変換**です。  
+8.  <span data-ttu-id="46bcf-115">フォルダーを右クリックし、をクリックして**アプリケーションへの変換**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-115">Right-click the folder and click **Convert to Application**.</span></span>  
   
-9. **アプリケーションの追加**ダイアログ ボックスで、をクリックして**OK**です。 フォルダーがアプリケーションに変換されます (アイコンがフォルダー アイコンから Web サイト アイコンに変化します)。  
+9. <span data-ttu-id="46bcf-116">**アプリケーションの追加**ダイアログ ボックスで、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-116">In the **Add Application** dialog box, click **OK**.</span></span> <span data-ttu-id="46bcf-117">フォルダーがアプリケーションに変換されます (アイコンがフォルダー アイコンから Web サイト アイコンに変化します)。</span><span class="sxs-lookup"><span data-stu-id="46bcf-117">The folder is converted to an application (you can see the change in the icon – from a folder icon to the Web site icon).</span></span>  
   
-## <a name="verifying-an-application-for-a-user"></a>ユーザーに対するアプリケーションの確認  
- インターネット インフォメーション サービス (IIS) アプリケーションは高分離レベルで実行されます。したがって、次の手順を使用して、このアプリケーションが BizTalk Server 分離ホスト ユーザー グループのユーザーのコンテキストで実行できることを確認する必要があります。  
+## <a name="verifying-an-application-for-a-user"></a><span data-ttu-id="46bcf-118">ユーザーに対するアプリケーションの確認</span><span class="sxs-lookup"><span data-stu-id="46bcf-118">Verifying an Application for a User</span></span>  
+ <span data-ttu-id="46bcf-119">インターネット インフォメーション サービス (IIS) アプリケーションは高分離レベルで実行されます。したがって、次の手順を使用して、このアプリケーションが BizTalk Server 分離ホスト ユーザー グループのユーザーのコンテキストで実行できることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="46bcf-119">Internet Information Services (IIS) applications run in high isolation; therefore, you must verify that the application can run in the context of a user in the BizTalk Server Isolated Host Users group by using the following procedure.</span></span>  
   
-#### <a name="to-verify-an-application-for-a-user"></a>ユーザーのアプリケーションを検証するには  
+#### <a name="to-verify-an-application-for-a-user"></a><span data-ttu-id="46bcf-120">ユーザーのアプリケーションを検証するには</span><span class="sxs-lookup"><span data-stu-id="46bcf-120">To verify an application for a user</span></span>  
   
-1.  コントロール パネルで、開く**管理ツール**、クリックして**コンポーネント サービス**です。  
+1.  <span data-ttu-id="46bcf-121">コントロール パネルで、開く**管理ツール**、クリックして**コンポーネント サービス**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-121">In Control Panel, open **Administrative Tools**, and then click **Component Services**.</span></span>  
   
-2.  COM + アプリケーションに移動**コンポーネント サービス**です。  
+2.  <span data-ttu-id="46bcf-122">COM + アプリケーションに移動**コンポーネント サービス**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-122">Navigate to the COM+ application in **Component Services**.</span></span>  
   
-3.  COM + アプリケーションを右クリックし、をクリックして**プロパティ**です。  
+3.  <span data-ttu-id="46bcf-123">COM + アプリケーションを右クリックし、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="46bcf-123">Right-click the COM+ application, and click **Properties**.</span></span>  
   
-4.  をクリックして**識別**BizTalk Server グループのメンバーであるユーザーにこの COM + アプリケーションを実行する id を変更するとします。  
+4.  <span data-ttu-id="46bcf-124">をクリックして**識別**BizTalk Server グループのメンバーであるユーザーにこの COM + アプリケーションを実行する id を変更するとします。</span><span class="sxs-lookup"><span data-stu-id="46bcf-124">Click **Identify** and change the identity under which this COM+ application runs to a user that is a member of a BizTalk Server group.</span></span>  
   
-## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+## <a name="see-also"></a><span data-ttu-id="46bcf-125">参照</span><span class="sxs-lookup"><span data-stu-id="46bcf-125">See Also</span></span>  
+ [<span data-ttu-id="46bcf-126">シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="46bcf-126">Using Single Sign-On</span></span>](../core/using-single-sign-on3.md)

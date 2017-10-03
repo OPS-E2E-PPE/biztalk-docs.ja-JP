@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---second-input-to-cumulative-functoid-not-valid"></a>エラー - 累積 Functoid の無効を 2 番目の入力
-**エラー コード**  
+# <a name="error---second-input-to-cumulative-functoid-not-valid"></a><span data-ttu-id="da64c-102">エラー - 累積 Functoid の無効を 2 番目の入力</span><span class="sxs-lookup"><span data-stu-id="da64c-102">Error - Second Input to Cumulative Functoid Not Valid</span></span>
+<span data-ttu-id="da64c-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="da64c-103">**Error Code**</span></span>  
   
- btm1031  
+ <span data-ttu-id="da64c-104">btm1031</span><span class="sxs-lookup"><span data-stu-id="da64c-104">btm1031</span></span>  
   
- **説明**  
+ <span data-ttu-id="da64c-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="da64c-105">**Explanation**</span></span>  
   
- 指定された**累積**functoid が、2 番目の入力パラメーターが無効です。 累積 Functoid への 2 番目の入力パラメーターは、送信元スキーマ内の累積の実行対象の範囲を示す正の整数である必要があります。  
+ <span data-ttu-id="da64c-106">指定された**累積**functoid が、2 番目の入力パラメーターが無効です。</span><span class="sxs-lookup"><span data-stu-id="da64c-106">The indicated **Cumulative** functoid has a second input parameter that is not valid.</span></span> <span data-ttu-id="da64c-107">累積 Functoid への 2 番目の入力パラメーターは、送信元スキーマ内の累積の実行対象の範囲を示す正の整数である必要があります。</span><span class="sxs-lookup"><span data-stu-id="da64c-107">The second input parameter to cumulative functoids must be a positive integer that indicates the range within the source schema over which the accumulation will be performed.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="da64c-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="da64c-108">**User Action**</span></span>  
   
- 選択し**累積的な**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、 **Functoid 入力の順序**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid > Functoid**  ダイアログ ボックスを確実に 2 番目の入力パラメーター、存在する場合、正の整数。
+ <span data-ttu-id="da64c-109">選択し**累積的な**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、 **Functoid 入力の順序**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid > Functoid**  ダイアログ ボックスを確実に 2 番目の入力パラメーター、存在する場合、正の整数。</span><span class="sxs-lookup"><span data-stu-id="da64c-109">Select the indicated **Cumulative** functoid, click the ellipsis (**...**) button associated with the **Order Functoid Inputs** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure \<Functoid> Functoid** dialog box, ensure that the second input parameter, if any, is a positive integer.</span></span>

@@ -22,88 +22,88 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-delete-a-messagebox-database"></a>メッセージ ボックス データベースを削除する方法
-BizTalk グループからメッセージ ボックス データベースを削除するには、BizTalk 管理コンソールまたは Windows Management Instrumentation (WMI) を使用します。 メッセージ ボックス データベースは BizTalk グループから削除するか、または BizTalk Server の展開から完全に削除することができます。  
+# <a name="how-to-delete-a-messagebox-database"></a><span data-ttu-id="b2ebb-102">メッセージ ボックス データベースを削除する方法</span><span class="sxs-lookup"><span data-stu-id="b2ebb-102">How to Delete a MessageBox Database</span></span>
+<span data-ttu-id="b2ebb-103">BizTalk グループからメッセージ ボックス データベースを削除するには、BizTalk 管理コンソールまたは Windows Management Instrumentation (WMI) を使用します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-103">You use the BizTalk Administration Console or Windows Management Instrumentation (WMI) to remove a MessageBox database from a BizTalk group.</span></span> <span data-ttu-id="b2ebb-104">メッセージ ボックス データベースは BizTalk グループから削除するか、または BizTalk Server の展開から完全に削除することができます。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-104">You can remove a MessageBox database from a BizTalk group, or you can delete it from your BizTalk Server deployment entirely.</span></span>  
   
- たとえば、テスト目的に使用したデータベースなど、使用しなくなったメッセージ ボックス データベースを削除することができます。  
+ <span data-ttu-id="b2ebb-105">たとえば、テスト目的に使用したデータベースなど、使用しなくなったメッセージ ボックス データベースを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-105">For example, you can delete a MessageBox database you are no longer using, such as a database used for testing purposes.</span></span>  
   
- BizTalk Server の展開からメッセージ ボックス データベースを完全に削除するには、次の 8 つの手順を実行します。  
+ <span data-ttu-id="b2ebb-106">BizTalk Server の展開からメッセージ ボックス データベースを完全に削除するには、次の 8 つの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-106">There are eight steps to permanently and completely removing MessageBox databases from your BizTalk Server deployment:</span></span>  
   
-1.  新しいメッセージの公開を無効にします。  
+1.  <span data-ttu-id="b2ebb-107">新しいメッセージの公開を無効にします。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-107">Disable new message publication.</span></span>  
   
-     メッセージ ボックス データベースを削除する前に、新しいメッセージの公開を無効にする必要があります。 新しいメッセージの公開を無効にする方法については、次を参照してください。[新しいメッセージの公開を無効にする方法](../core/how-to-disable-new-message-publication.md)です。  
+     <span data-ttu-id="b2ebb-108">メッセージ ボックス データベースを削除する前に、新しいメッセージの公開を無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-108">You must disable the publication of new messages before you delete a MessageBox database.</span></span> <span data-ttu-id="b2ebb-109">新しいメッセージの公開を無効にする方法については、次を参照してください。[新しいメッセージの公開を無効にする方法](../core/how-to-disable-new-message-publication.md)です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-109">For information about disabling new message publication, see [How to Disable New Message Publication](../core/how-to-disable-new-message-publication.md).</span></span>  
   
-2.  キャッシュ更新間隔に指定した時間が経過するまで待ちます。  
+2.  <span data-ttu-id="b2ebb-110">キャッシュ更新間隔に指定した時間が経過するまで待ちます。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-110">Wait for the cache refresh interval to expire.</span></span>  
   
-     新しいメッセージの公開を無効にした後、データベースをすぐに削除することはできず、待機時間が発生します。 待機時間は、CacheRefreshInterval の 2 倍の長さとして定義されています。 CacheRefreshInterval の既定値は 60 秒です。 使用する、**グループのプロパティ**キャッシュ更新間隔を変更するダイアログ ボックス。  
+     <span data-ttu-id="b2ebb-111">新しいメッセージの公開を無効にした後、データベースをすぐに削除することはできず、待機時間が発生します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-111">After you disable the publication of new messages, you must wait before you delete the database.</span></span> <span data-ttu-id="b2ebb-112">待機時間は、CacheRefreshInterval の 2 倍の長さとして定義されています。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-112">The wait time is defined as twice the length of the CacheRefreshInterval.</span></span> <span data-ttu-id="b2ebb-113">CacheRefreshInterval の既定値は 60 秒です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-113">The default value of CacheRefreshInterval is 60 seconds.</span></span> <span data-ttu-id="b2ebb-114">使用する、**グループのプロパティ**キャッシュ更新間隔を変更するダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-114">You use the **Group Properties** dialog box to change the Cache Refresh.</span></span>  
   
-3.  BizTalk グループからメッセージ ボックス データベースを削除します。  
+3.  <span data-ttu-id="b2ebb-115">BizTalk グループからメッセージ ボックス データベースを削除します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-115">Remove the MessageBox database from the BizTalk Group.</span></span>  
   
-     BizTalk グループからメッセージ ボックス データベースを削除すると、BizTalk 管理データベースからメッセージ ボックス データベースの参照が削除されます。  
+     <span data-ttu-id="b2ebb-116">BizTalk グループからメッセージ ボックス データベースを削除すると、BizTalk 管理データベースからメッセージ ボックス データベースの参照が削除されます。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-116">Removing the MessageBox database from the BizTalk Group removes the MessageBox reference from the BizTalk Management database.</span></span>  
   
-4.  削除したメッセージ ボックス データベースへのキャッシュされた接続を含むホスト インスタンスを再起動します。  
+4.  <span data-ttu-id="b2ebb-117">削除したメッセージ ボックス データベースへのキャッシュされた接続を含むホスト インスタンスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-117">Restart host instances that contain cached connections to the MessageBox database.</span></span>  
   
-     ホスト インスタンスにランタイム エンジンからキャッシュされたデータベースへの接続がある場合、データベースを SQL Server から物理的に削除する前に、ホスト インスタンスを再起動する必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを起動する方法](../core/how-to-start-a-host-instance.md)です。  
+     <span data-ttu-id="b2ebb-118">ホスト インスタンスにランタイム エンジンからキャッシュされたデータベースへの接続がある場合、データベースを SQL Server から物理的に削除する前に、ホスト インスタンスを再起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-118">You must restart the host instance before physically deleting the database from SQL Server if cached database connections from the run-time engine are present.</span></span> <span data-ttu-id="b2ebb-119">ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを起動する方法](../core/how-to-start-a-host-instance.md)です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-119">For information about starting a host instance, see [How to Start a Host Instance](../core/how-to-start-a-host-instance.md).</span></span>  
   
-5.  データベースにアクセスする、実行中のホスト インスタンスをすべて停止します。 実行中のホスト インスタンスを停止する方法については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)です。  
+5.  <span data-ttu-id="b2ebb-120">データベースにアクセスする、実行中のホスト インスタンスをすべて停止します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-120">Stop all in-progress host instances that access the database.</span></span> <span data-ttu-id="b2ebb-121">実行中のホスト インスタンスを停止する方法については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-121">For information about stopping an in-progress host instance, see [How to Stop a Host Instance](../core/how-to-stop-a-host-instance.md).</span></span>  
   
-     プライマリ以外のメッセージ ボックス データベースを削除する場合は、実行中のホスト インスタンスを停止する前に、そのメッセージ ボックスへの新しいメッセージの公開を無効にして、次の点を確認する必要があります。  
+     <span data-ttu-id="b2ebb-122">プライマリ以外のメッセージ ボックス データベースを削除する場合は、実行中のホスト インスタンスを停止する前に、そのメッセージ ボックスへの新しいメッセージの公開を無効にして、次の点を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-122">If you are removing a non-primary MessageBox database, before stopping an in-progress host instance, you should first disable publication of new messages to that message box and make sure that:</span></span>  
   
-    -   メッセージ ボックスに実行中のサービス インスタンスがないこと。  
+    -   <span data-ttu-id="b2ebb-123">メッセージ ボックスに実行中のサービス インスタンスがないこと。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-123">There are no running service instances remaining in the message box.</span></span>  
   
-    -   メッセージ ボックスに中断されたインスタンスやその他のインスタンスが残っていないこと。  
+    -   <span data-ttu-id="b2ebb-124">メッセージ ボックスに中断されたインスタンスやその他のインスタンスが残っていないこと。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-124">There are no suspended (or any other remaining) instances left in the message box.</span></span>  
   
-    -   BAM 追跡データが BizTalk 追跡 (BizTalkDTADb) データベースに移動されている (TrackingData テーブルが空になっている) こと。  
+    -   <span data-ttu-id="b2ebb-125">BAM 追跡データが BizTalk 追跡 (BizTalkDTADb) データベースに移動されている (TrackingData テーブルが空になっている) こと。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-125">BAM tracked data has been moved to the BizTalk Tracking (BizTalkDTADb) database (TrackingData table should be empty).</span></span>  
   
-    -   追跡メッセージ本文が BizTalk 追跡 (BizTalkDTADb) データベースに移動されていること。  
+    -   <span data-ttu-id="b2ebb-126">追跡メッセージ本文が BizTalk 追跡 (BizTalkDTADb) データベースに移動されていること。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-126">Tracked message bodies have been moved to the BizTalk Tracking (BizTalkDTADb) database.</span></span>  
   
-6.  バックグラウンドで実行されている SQL Server エージェントのジョブが完了していることを確認します。  
+6.  <span data-ttu-id="b2ebb-127">バックグラウンドで実行されている SQL Server エージェントのジョブが完了していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-127">Ensure that the background SQL Server Agent job is finished.</span></span>  
   
-     メッセージ ボックス データベースを BizTalk Server の展開から完全に削除する前に、バックグラウンドで実行中の SQL Server エージェントのジョブが追跡されたメッセージ本文をすべて TrackingSpool テーブルに転送し終えたことを確認し、TrackingSpool テーブルをバックアップする必要があります。 バックグラウンドで実行中の SQL Server エージェントのジョブの状態を確認する方法の詳細については、SQL Server Books Online を参照してください。  
+     <span data-ttu-id="b2ebb-128">メッセージ ボックス データベースを BizTalk Server の展開から完全に削除する前に、バックグラウンドで実行中の SQL Server エージェントのジョブが追跡されたメッセージ本文をすべて TrackingSpool テーブルに転送し終えたことを確認し、TrackingSpool テーブルをバックアップする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-128">Before you permanently delete a MessageBox database from your BizTalk Server deployment, you should first ensure that the background SQL Server Agent job has finished transferring all tracked message bodies to the TrackingSpool table, and then back up the TrackingSpool tables.</span></span> <span data-ttu-id="b2ebb-129">バックグラウンドで実行中の SQL Server エージェントのジョブの状態を確認する方法の詳細については、SQL Server Books Online を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-129">For information about checking the status of a background SQL Server Agent job, see SQL Server Books Online.</span></span>  
   
-7.  TrackingSpool テーブルをバックアップします。  
+7.  <span data-ttu-id="b2ebb-130">TrackingSpool テーブルをバックアップします。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-130">Back up the TrackingSpool tables.</span></span>  
   
-     追跡されたメッセージ本文は、TrackingSpool テーブルを外部の記憶域にバックアップするまで、メッセージ ボックス データベースから削除されません。 バックアップを行う前に、バックグラウンドで実行中の SQL Server エージェントのジョブにより、Spool テーブルから TrackingSpool テーブルにメッセージ本文が転送されます。 手動による SQL Server テーブルのバックアップの詳細については、SQL Server Books Online を参照してください。  
+     <span data-ttu-id="b2ebb-131">追跡されたメッセージ本文は、TrackingSpool テーブルを外部の記憶域にバックアップするまで、メッセージ ボックス データベースから削除されません。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-131">Tracked message bodies remain in the MessageBox database until you manually back up the TrackingSpool tables into external storage.</span></span> <span data-ttu-id="b2ebb-132">バックアップを行う前に、バックグラウンドで実行中の SQL Server エージェントのジョブにより、Spool テーブルから TrackingSpool テーブルにメッセージ本文が転送されます。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-132">Before the backup happens, a background SQL Server Agent job transfers the message bodies from the Spool table to the TrackingSpool table.</span></span> <span data-ttu-id="b2ebb-133">手動による SQL Server テーブルのバックアップの詳細については、SQL Server Books Online を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-133">For information about manually backing up SQL Server tables, see SQL Server Books Online.</span></span>  
   
-8.  SQL Server からデータベースを削除します。  
+8.  <span data-ttu-id="b2ebb-134">SQL Server からデータベースを削除します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-134">Remove the database from SQL Server.</span></span>  
   
-     メッセージ ボックス データベースは、BizTalk グループから削除しても、Microsoft SQL Server から物理的に削除されるわけではありません。 メッセージ ボックス データベースを完全に削除するには、BizTalk グループからデータベースを削除した後に SQL Server Enterprise Manager または SQL Server Management Studio を使用してデータベースを削除します。  
+     <span data-ttu-id="b2ebb-135">メッセージ ボックス データベースは、BizTalk グループから削除しても、Microsoft SQL Server から物理的に削除されるわけではありません。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-135">Deleting a MessageBox database from a BizTalk Group does not physically remove the database from Microsoft SQL Server.</span></span> <span data-ttu-id="b2ebb-136">メッセージ ボックス データベースを完全に削除するには、BizTalk グループからデータベースを削除した後に SQL Server Enterprise Manager または SQL Server Management Studio を使用してデータベースを削除します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-136">To permanently delete the MessageBox database, you must remove it by using SQL Server Enterprise Manager or SQL Server Management Studio after it is removed from the BizTalk Group.</span></span>  
   
-## <a name="prerequisites"></a>前提条件  
- メッセージ ボックス データベースを管理する管理者は、必要なユーザー権利が必要です。 メッセージ ボックス データベースの管理と新しいメッセージの公開の無効化には、次のユーザー権利が必要です。  
+## <a name="prerequisites"></a><span data-ttu-id="b2ebb-137">前提条件</span><span class="sxs-lookup"><span data-stu-id="b2ebb-137">Prerequisites</span></span>  
+ <span data-ttu-id="b2ebb-138">メッセージ ボックス データベースを管理する管理者は、必要なユーザー権利が必要です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-138">Administrators who manage MessageBox databases must have the required user rights.</span></span> <span data-ttu-id="b2ebb-139">メッセージ ボックス データベースの管理と新しいメッセージの公開の無効化には、次のユーザー権利が必要です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-139">You must have the following user rights to manage MessageBox databases and disable new message publication:</span></span>  
   
--   BizTalk Server Administrators グループのメンバーとしてログオンする必要があります。  
+-   <span data-ttu-id="b2ebb-140">BizTalk Server Administrators グループのメンバーとしてログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-140">You must be logged on as a member of the BizTalk Server Administrators group.</span></span>  
   
--   データベースが存在するコンピューターの SQL Server 管理者である必要があります。  
+-   <span data-ttu-id="b2ebb-141">データベースが存在するコンピューターの SQL Server 管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-141">You must be a SQL Server Administrator on the computer where the database exists.</span></span>  
   
-### <a name="to-delete-a-messagebox-database-from-a-biztalk-group"></a>BizTalk グループからメッセージ ボックス データベースを削除するには  
+### <a name="to-delete-a-messagebox-database-from-a-biztalk-group"></a><span data-ttu-id="b2ebb-142">BizTalk グループからメッセージ ボックス データベースを削除するには</span><span class="sxs-lookup"><span data-stu-id="b2ebb-142">To delete a MessageBox database from a BizTalk Group</span></span>  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  <span data-ttu-id="b2ebb-143">をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-143">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)][BizTalk グループ]、をクリックして**プラットフォームの設定**、クリックして**メッセージ ボックス**です。  
+2.  <span data-ttu-id="b2ebb-144">コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)][BizTalk グループ]、をクリックして**プラットフォームの設定**、クリックして**メッセージ ボックス**です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-144">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, click **Platform Settings**, and then click **Message Boxes**.</span></span>  
   
-3.  詳細ウィンドウで、削除、およびをクリックする、メッセージ ボックス データベースを右クリックして**プロパティ**です。  
+3.  <span data-ttu-id="b2ebb-145">詳細ウィンドウで、削除、およびをクリックする、メッセージ ボックス データベースを右クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-145">In the details pane, right-click the message box database you want to remove, and then click **Properties**.</span></span>  
   
-4.  **メッセージ ボックスのプロパティ**ダイアログ ボックスで、**新しいメッセージの公開を無効にする**チェック ボックスをオンします。  
+4.  <span data-ttu-id="b2ebb-146">**メッセージ ボックスのプロパティ**ダイアログ ボックスで、**新しいメッセージの公開を無効にする**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-146">In the **Message Box Properties** dialog box, select the **Disable new message publication** check box.</span></span>  
   
-5.  BizTalk Server 管理コンソールの [グループ ハブ] ページを使用して、削除するメッセージ ボックス データベースに退避または中断されたメッセージ インスタンスがないことを確認します。  
+5.  <span data-ttu-id="b2ebb-147">BizTalk Server 管理コンソールの [グループ ハブ] ページを使用して、削除するメッセージ ボックス データベースに退避または中断されたメッセージ インスタンスがないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-147">Use the Group Hub page in the BizTalk Server Administration Console to verify that no message instances are dehydrated or suspended on the MessageBox database you are deleting.</span></span>  
   
-6.  CacheRefreshInterval の 2 倍 の長さの時間待機します。 CacheRefreshInterval の既定値は 60 秒です。  
+6.  <span data-ttu-id="b2ebb-148">CacheRefreshInterval の 2 倍 の長さの時間待機します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-148">Wait for a period of time twice the length of the CacheRefreshInterval.</span></span> <span data-ttu-id="b2ebb-149">CacheRefreshInterval の既定値は 60 秒です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-149">The default value of CacheRefreshInterval is 60 seconds.</span></span>  
   
-7.  詳細ウィンドウで、削除、およびをクリックする、メッセージ ボックス データベースを右クリックして**削除**です。  
+7.  <span data-ttu-id="b2ebb-150">詳細ウィンドウで、削除、およびをクリックする、メッセージ ボックス データベースを右クリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-150">In the details pane, right-click the MessageBox database that you want to delete, and click **Delete**.</span></span>  
   
-8.  警告メッセージを読み、をクリックして**OK**です。  
+8.  <span data-ttu-id="b2ebb-151">警告メッセージを読み、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-151">After reading the warning message, click **OK**.</span></span>  
   
-9. コンソール ツリーで、[BizTalk グループ]、をクリックして**プラットフォームの設定**、クリックして**ホスト インスタンス**です。  
+9. <span data-ttu-id="b2ebb-152">コンソール ツリーで、[BizTalk グループ]、をクリックして**プラットフォームの設定**、クリックして**ホスト インスタンス**です。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-152">In the console tree, expand the BizTalk group, click **Platform Settings**, and then click **Host Instances**.</span></span>  
   
-10. 詳細ペインで、実行中のホスト インスタンスを右クリックし、停止してから再起動します (この操作は、実行中のすべてのホスト インスタンスに対して行います)。  
+10. <span data-ttu-id="b2ebb-153">詳細ペインで、実行中のホスト インスタンスを右クリックし、停止してから再起動します (この操作は、実行中のすべてのホスト インスタンスに対して行います)。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-153">In the details pane, right-click all running host instances, and stop and restart each one.</span></span>  
   
-11. メッセージ ボックス データベースが存在するサーバーで、使用している SQL Server のバージョンに応じて SQL Server Enterprise Manager または SQL Server Management Studio を開き、データベースを削除します。  
+11. <span data-ttu-id="b2ebb-154">メッセージ ボックス データベースが存在するサーバーで、使用している SQL Server のバージョンに応じて SQL Server Enterprise Manager または SQL Server Management Studio を開き、データベースを削除します。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-154">On the server where the MessageBox database resides, open SQL Server Enterprise Manager or SQL Server Management Studio, depending on which version of SQL Server you are using, and then delete the database.</span></span>  
   
-     SQL Server でデータベースを削除する方法の詳細については、SQL Server Books Online を参照してください。  
+     <span data-ttu-id="b2ebb-155">SQL Server でデータベースを削除する方法の詳細については、SQL Server Books Online を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2ebb-155">For information about how to delete a database in SQL Server, see SQL Server Books Online.</span></span>  
   
-## <a name="see-also"></a>参照  
- [メッセージ ボックス データベースの管理](../core/managing-messagebox-databases.md)   
- [新しいメッセージ ボックス データベースを追加する方法](../core/how-to-add-a-new-messagebox-database.md)   
- [新しいメッセージの公開を無効にする方法](../core/how-to-disable-new-message-publication.md)   
- [メッセージ ボックス データベース](../core/the-messagebox-database.md)
+## <a name="see-also"></a><span data-ttu-id="b2ebb-156">参照</span><span class="sxs-lookup"><span data-stu-id="b2ebb-156">See Also</span></span>  
+ <span data-ttu-id="b2ebb-157">[メッセージ ボックス データベースの管理](../core/managing-messagebox-databases.md) </span><span class="sxs-lookup"><span data-stu-id="b2ebb-157">[Managing MessageBox Databases](../core/managing-messagebox-databases.md) </span></span>  
+ <span data-ttu-id="b2ebb-158">[新しいメッセージ ボックス データベースを追加する方法](../core/how-to-add-a-new-messagebox-database.md) </span><span class="sxs-lookup"><span data-stu-id="b2ebb-158">[How to Add a New MessageBox Database](../core/how-to-add-a-new-messagebox-database.md) </span></span>  
+ <span data-ttu-id="b2ebb-159">[新しいメッセージの公開を無効にする方法](../core/how-to-disable-new-message-publication.md) </span><span class="sxs-lookup"><span data-stu-id="b2ebb-159">[How to Disable New Message Publication](../core/how-to-disable-new-message-publication.md) </span></span>  
+ [<span data-ttu-id="b2ebb-160">メッセージ ボックス データベース</span><span class="sxs-lookup"><span data-stu-id="b2ebb-160">The MessageBox Database</span></span>](../core/the-messagebox-database.md)

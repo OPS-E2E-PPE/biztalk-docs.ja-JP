@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---unspecified-fatal-error"></a>エラー - 特定できない致命的なエラー
-**エラー コード**  
+# <a name="error---unspecified-fatal-error"></a><span data-ttu-id="d3f5f-102">エラー - 特定できない致命的なエラー</span><span class="sxs-lookup"><span data-stu-id="d3f5f-102">Error - Unspecified Fatal Error</span></span>
+<span data-ttu-id="d3f5f-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="d3f5f-103">**Error Code**</span></span>  
   
- BEC1001、BEC2004、BEC3001  
+ <span data-ttu-id="d3f5f-104">BEC1001、BEC2004、BEC3001</span><span class="sxs-lookup"><span data-stu-id="d3f5f-104">BEC1001, BEC2004, BEC3001</span></span>  
   
- **説明**  
+ <span data-ttu-id="d3f5f-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="d3f5f-105">**Explanation**</span></span>  
   
- スキーマのコンパイル中に、特定できない致命的なエラーが発生しました。  
+ <span data-ttu-id="d3f5f-106">スキーマのコンパイル中に、特定できない致命的なエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="d3f5f-106">An unspecified fatal error has occurred during schema compilation.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="d3f5f-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="d3f5f-107">**User Action**</span></span>  
   
- スキーマ ファイルが有効で、壊れていないことを確認してください。
+ <span data-ttu-id="d3f5f-108">スキーマ ファイルが有効で、壊れていないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="d3f5f-108">Make sure the schema file is valid and not corrupted.</span></span>

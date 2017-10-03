@@ -21,53 +21,53 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="approving-a-message"></a>メッセージを承認します。
-このセクションでは、修復および検証されているメッセージを承認する方法について説明します。  
+# <a name="approving-a-message"></a><span data-ttu-id="d085e-102">メッセージを承認します。</span><span class="sxs-lookup"><span data-stu-id="d085e-102">Approving a Message</span></span>
+<span data-ttu-id="d085e-103">このセクションでは、修復および検証されているメッセージを承認する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d085e-103">This section describes how to approve a message that has been repaired and verified.</span></span>  
   
-### <a name="to-approve-a-message"></a>メッセージを承認するには  
+### <a name="to-approve-a-message"></a><span data-ttu-id="d085e-104">メッセージを承認するには</span><span class="sxs-lookup"><span data-stu-id="d085e-104">To approve a message</span></span>  
   
-1.  Internet Explorer で、http://localhost/sites/bassite で MRSR サイトを開きます。  
+1.  <span data-ttu-id="d085e-105">Internet Explorer で、http://localhost/sites/bassite で MRSR サイトを開きます。</span><span class="sxs-lookup"><span data-stu-id="d085e-105">In Internet Explorer, open your MRSR site at http://localhost/sites/bassite.</span></span>  
   
-2.  [ホーム] ウィンドウ**ドキュメント**です。  
+2.  <span data-ttu-id="d085e-106">[ホーム] ウィンドウ**ドキュメント**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-106">In the Home window, click **Documents**.</span></span>  
   
-3.  ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして  **\<*部門名*> _Approver * *。  
+3.  <span data-ttu-id="d085e-107">ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして  **\<*部門名*> _Approver * *。</span><span class="sxs-lookup"><span data-stu-id="d085e-107">In the Documents window, under **Document Libraries**, click **\<*Department name*>_Approver**.</span></span>  
   
-4.  \<部門名 > _Approver ウィンドウで、をクリックして**受信トレイ**です。  
+4.  <span data-ttu-id="d085e-108">\<部門名 > _Approver ウィンドウで、をクリックして**受信トレイ**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-108">In the \<Department name>_Approver window, click **Inbox**.</span></span>  
   
-5.  受信トレイ ウィンドウで、メッセージのタイトルにポイント メッセージのタイトルの右側にある矢印をクリックし、をクリックして**Microsoft Office InfoPath で編集**です。  
+5.  <span data-ttu-id="d085e-109">受信トレイ ウィンドウで、メッセージのタイトルにポイント メッセージのタイトルの右側にある矢印をクリックし、をクリックして**Microsoft Office InfoPath で編集**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-109">In the Inbox window, point to the title of the message, click the arrow to the right of the message title, and then click **Edit in Microsoft Office InfoPath**.</span></span>  
   
-6.  SWIFT アクセラレータのウィンドウで、 [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウで、をクリックして**エラー**です。 示すようにエラーを確認、**解析と XML 検証エラー**ボックスで、 **BRE 妥当性確認エラー**ボックス、および**ランタイム エラー**ボックス。  
+6.  <span data-ttu-id="d085e-110">SWIFT アクセラレータのウィンドウで、 [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウで、をクリックして**エラー**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-110">In the SWIFT Accelerator pane of the [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)][!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007 window, click **Errors**.</span></span> <span data-ttu-id="d085e-111">示すようにエラーを確認、**解析と XML 検証エラー**ボックスで、 **BRE 妥当性確認エラー**ボックス、および**ランタイム エラー**ボックス。</span><span class="sxs-lookup"><span data-stu-id="d085e-111">Review any errors shown in the **Parse and XML Validation Errors** box, the **BRE Validation Errors** box, and the **Runtime Errors** box.</span></span>  
   
-7.  [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、エラーの位置までスクロールし、エラーが修正されたことを確認してください。 クリックして元のエラーを参照してください**エラー**現在のロールで: ペイン、およびエラー ペインのいずれかで、エラーの表示を承認します。 クリックして、メッセージのバージョンの未修理と修復されたバージョンを比較することもできます。**メッセージの詳細**、現在のロールで: ウィンドウを承認します。  
+7.  <span data-ttu-id="d085e-112">[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、エラーの位置までスクロールし、エラーが修正されたことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="d085e-112">In the [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form, scroll to the location of the error and verify that the error has been corrected.</span></span> <span data-ttu-id="d085e-113">クリックして元のエラーを参照してください**エラー**現在のロールで: ペイン、およびエラー ペインのいずれかで、エラーの表示を承認します。</span><span class="sxs-lookup"><span data-stu-id="d085e-113">You can see what the original error was by clicking **Errors** in the Current Role: Approve pane, and viewing the error in one of the error panes.</span></span> <span data-ttu-id="d085e-114">クリックして、メッセージのバージョンの未修理と修復されたバージョンを比較することもできます。**メッセージの詳細**、現在のロールで: ウィンドウを承認します。</span><span class="sxs-lookup"><span data-stu-id="d085e-114">You can also compare the unrepaired and repaired versions of the message by clicking **Message Details** in the Current Role: Approve pane.</span></span>  
   
-8.  メッセージを検証するためには、をクリックして**検証**、現在のロールで: ウィンドウを承認し、をクリックして**検証メッセージ**です。 結果ペインがメッセージを表示することを確認してください。**メッセージが有効では**します。  
+8.  <span data-ttu-id="d085e-115">メッセージを検証するためには、をクリックして**検証**、現在のロールで: ウィンドウを承認し、をクリックして**検証メッセージ**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-115">To ensure that the message will validate, click **Validation** in the Current Role: Approve pane, and then click **Validate Message**.</span></span> <span data-ttu-id="d085e-116">結果ペインがメッセージを表示することを確認してください。**メッセージが有効では**します。</span><span class="sxs-lookup"><span data-stu-id="d085e-116">Verify that the Results pane displays the message **The message is valid**.</span></span>  
   
-9. ドキュメントに加えられた変更の承認した場合、 [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウで、をクリックして**送信**です。  
-  
-    > [!NOTE]
-    >  クリックすると、**送信**、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]メッセージで XML 検証を実行します。 検証が成功しなかった場合は、続行する前に検証エラーを修正する必要があります。  
-  
-10. [Submit Message] ダイアログ ボックスで、 **Accept**変更が受け入れと共に、承認されたメッセージを送信するためです。 をクリックして**拒否**拒否変更と共に、メッセージを送信するためです。 をクリックして**キャンセル**送信をキャンセルし、フォームに戻る。  
+9. <span data-ttu-id="d085e-117">ドキュメントに加えられた変更の承認した場合、 [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウで、をクリックして**送信**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-117">If you approve of the changes that have been made to the document, in the [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)][!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007 window, click **Submit**.</span></span>  
   
     > [!NOTE]
-    >  メッセージの変更を受け入れる場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ BRE 検証を行います。  
+    >  <span data-ttu-id="d085e-118">クリックすると、**送信**、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]メッセージで XML 検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="d085e-118">When you click **Submit**, [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] performs XML validation on the message.</span></span> <span data-ttu-id="d085e-119">検証が成功しなかった場合は、続行する前に検証エラーを修正する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d085e-119">If the validation is not successful, you must fix the validation errors before proceeding.</span></span>  
+  
+10. <span data-ttu-id="d085e-120">[Submit Message] ダイアログ ボックスで、 **Accept**変更が受け入れと共に、承認されたメッセージを送信するためです。</span><span class="sxs-lookup"><span data-stu-id="d085e-120">In the Submit Message dialog box, click **Accept** to submit the approved message with changes accepted.</span></span> <span data-ttu-id="d085e-121">をクリックして**拒否**拒否変更と共に、メッセージを送信するためです。</span><span class="sxs-lookup"><span data-stu-id="d085e-121">Click **Reject** to submit the message with changes rejected.</span></span> <span data-ttu-id="d085e-122">をクリックして**キャンセル**送信をキャンセルし、フォームに戻る。</span><span class="sxs-lookup"><span data-stu-id="d085e-122">Click **Cancel** to cancel the submission and return to the form.</span></span>  
   
     > [!NOTE]
-    >  メッセージの変更を却下した場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ワークフローの最初のステージにメッセージが返されます (作成または修復) し、修復ワークフローをリセットします。  
-  
-11. デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書承認用に作成) の署名に使用する証明書を選択します。 をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。 **[次へ]**をクリックします。  
+    >  <span data-ttu-id="d085e-123">メッセージの変更を受け入れる場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ BRE 検証を行います。</span><span class="sxs-lookup"><span data-stu-id="d085e-123">If you accept the message changes, [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] performs BRE validations on the message.</span></span>  
   
     > [!NOTE]
-    >  デジタル署名の有効性を確認する をクリックして**デジタル署名**上、**ツール** メニューの デジタル署名を確認し、をクリックする をクリックして**ビュー署名済みフォーム**. 表示できます (フォームのみ署名できるワークフローごとに 1 回のユーザーによって)、フォーム以前に署名するロールをクリックして**デジタル署名**上、**ツール**メニュー。 このロールの別の署名を追加する必要がある場合に、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]管理コンソールです。  
+    >  <span data-ttu-id="d085e-124">メッセージの変更を却下した場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ワークフローの最初のステージにメッセージが返されます (作成または修復) し、修復ワークフローをリセットします。</span><span class="sxs-lookup"><span data-stu-id="d085e-124">If you reject the message changes, [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] returns the message to the first stage of the workflow (create or repair) and resets the repair workflow.</span></span>  
   
-12. デジタル署名のウィザード ページでコメントを入力するためには、をクリックして**完了**です。  
+11. <span data-ttu-id="d085e-125">デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書承認用に作成) の署名に使用する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="d085e-125">On the Digital Signature Wizard page for selecting the certificate to sign the form, select the certificate that you want to use to sign the form (the certificate that you created for the approver).</span></span> <span data-ttu-id="d085e-126">をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。</span><span class="sxs-lookup"><span data-stu-id="d085e-126">Click **View Certificate** if you want to verify that you are using the correct signature.</span></span> <span data-ttu-id="d085e-127">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d085e-127">Click **Next**.</span></span>  
   
-13. デジタル署名ウィザードのページで、フォームを検証するため、署名は、メッセージが正しいことを確認します。 をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。 をクリックして**署名する前にこのコンテンツを確認した**をクリックし、**記号**です。  
+    > [!NOTE]
+    >  <span data-ttu-id="d085e-128">デジタル署名の有効性を確認する をクリックして**デジタル署名**上、**ツール** メニューの デジタル署名を確認し、をクリックする をクリックして**ビュー署名済みフォーム**.</span><span class="sxs-lookup"><span data-stu-id="d085e-128">To verify the validity of a digital signature, click **Digital Signatures** on the **Tools** menu, click the digital signature that you want to verify, and then click **View Signed Form**.</span></span> <span data-ttu-id="d085e-129">表示できます (フォームのみ署名できるワークフローごとに 1 回のユーザーによって)、フォーム以前に署名するロールをクリックして**デジタル署名**上、**ツール**メニュー。</span><span class="sxs-lookup"><span data-stu-id="d085e-129">You can also see which roles have signed the form previously (a form can only be signed by a person once per workflow) by clicking **Digital Signatures** on the **Tools** menu.</span></span> <span data-ttu-id="d085e-130">このロールの別の署名を追加する必要がある場合に、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="d085e-130">If you need to add another signature for this role, do so in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] Management Console.</span></span>  
   
-14. デジタル署名の確認 ウィンドウで、をクリックして**閉じる**です。  
+12. <span data-ttu-id="d085e-131">デジタル署名のウィザード ページでコメントを入力するためには、をクリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-131">On the Digital Signature Wizard page for entering comments, click **Finish**.</span></span>  
   
-15. [送信の成功] ダイアログ ボックスで、 **OK**です。  
+13. <span data-ttu-id="d085e-132">デジタル署名ウィザードのページで、フォームを検証するため、署名は、メッセージが正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="d085e-132">On the Digital Signature Wizard page for verifying the form, verify that the message that you are signing is correct.</span></span> <span data-ttu-id="d085e-133">をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。</span><span class="sxs-lookup"><span data-stu-id="d085e-133">Click **View Certificate** if you want to verify that you are using the correct signature.</span></span> <span data-ttu-id="d085e-134">をクリックして**署名する前にこのコンテンツを確認した**をクリックし、**記号**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-134">Click **I have verified this content before signing**, and then click **Sign**.</span></span>  
   
-16. 閉じる、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]ウィンドウです。  
+14. <span data-ttu-id="d085e-135">デジタル署名の確認 ウィンドウで、をクリックして**閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-135">In the Verify Digital Signature window, click **Close**.</span></span>  
   
-17. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、送信メッセージを受信し、設定したフォルダーを開きます。 フォルダーが承認されたメッセージが含まれていることを確認します。 メッセージをメッセージが修復されたことを確認するテキスト エディターで開きます。
+15. <span data-ttu-id="d085e-136">[送信の成功] ダイアログ ボックスで、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="d085e-136">In the Submission Success dialog box, click **OK**.</span></span>  
+  
+16. <span data-ttu-id="d085e-137">閉じる、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="d085e-137">Close the [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] window.</span></span>  
+  
+17. <span data-ttu-id="d085e-138">[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、送信メッセージを受信し、設定したフォルダーを開きます。</span><span class="sxs-lookup"><span data-stu-id="d085e-138">In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, open the folder that you set up to receive sent messages.</span></span> <span data-ttu-id="d085e-139">フォルダーが承認されたメッセージが含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d085e-139">Verify that the folder contains the approved message.</span></span> <span data-ttu-id="d085e-140">メッセージをメッセージが修復されたことを確認するテキスト エディターで開きます。</span><span class="sxs-lookup"><span data-stu-id="d085e-140">Open the message in a text editor to verify that the message has been repaired.</span></span>

@@ -24,63 +24,63 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-define-bam-aggregations"></a>BAM 集計を定義する方法
-BAM では、次の 2 種類のデータ集計がサポートされます。  
+# <a name="how-to-define-bam-aggregations"></a><span data-ttu-id="0e888-102">BAM 集計を定義する方法</span><span class="sxs-lookup"><span data-stu-id="0e888-102">How to Define BAM Aggregations</span></span>
+<span data-ttu-id="0e888-103">BAM では、次の 2 種類のデータ集計がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="0e888-103">BAM supports two types of data aggregation:</span></span>  
   
--   オンライン分析処理 (OLAP) 集計  
+-   <span data-ttu-id="0e888-104">オンライン分析処理 (OLAP) 集計</span><span class="sxs-lookup"><span data-stu-id="0e888-104">Online analytical processing (OLAP) aggregations</span></span>  
   
--   リアルタイム集計 (RTA)  
+-   <span data-ttu-id="0e888-105">リアルタイム集計 (RTA)</span><span class="sxs-lookup"><span data-stu-id="0e888-105">Real-time aggregations (RTA)</span></span>  
   
- BAM では、OLAP 集計を実装するために Microsoft SQL Analysis Services が使用されます。  
+ <span data-ttu-id="0e888-106">BAM では、OLAP 集計を実装するために Microsoft SQL Analysis Services が使用されます。</span><span class="sxs-lookup"><span data-stu-id="0e888-106">BAM uses Microsoft SQL Server Analysis Services to implement OLAP aggregations.</span></span>  
   
- RTA を定義する BAM プライマリ インポート データベースでは、トリガーを構成する必要があります。  
+ <span data-ttu-id="0e888-107">RTA を定義する BAM プライマリ インポート データベースでは、トリガーを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0e888-107">You must configure the triggers on the BAM Primary Import database that define RTA.</span></span>  
   
-### <a name="to-define-olap-aggregations"></a>OLAP 集計を定義するには  
+### <a name="to-define-olap-aggregations"></a><span data-ttu-id="0e888-108">OLAP 集計を定義するには</span><span class="sxs-lookup"><span data-stu-id="0e888-108">To define OLAP aggregations</span></span>  
   
-1.  BAM Excel ブックで、ビューを作成し、PivotTable レポートにディメンションとメジャーを少なくとも 1 つずつ追加し、RTA ツール バー ボタンを非表示にしてブックを保存します。  
+1.  <span data-ttu-id="0e888-109">BAM Excel ブックで、ビューを作成し、PivotTable レポートにディメンションとメジャーを少なくとも 1 つずつ追加し、RTA ツール バー ボタンを非表示にしてブックを保存します。</span><span class="sxs-lookup"><span data-stu-id="0e888-109">In the BAM Excel workbook, create a view, add at least one dimension and one measure to the PivotTable report, clear the RTA toolbar button, and then save the workbook.</span></span>  
   
-    -   BAM ブックを開く方法については、ビューを作成して、ディメンション、メジャーを追加するを参照してください[BAM ビューを定義する](../core/defining-a-bam-view.md)です。  
+    -   <span data-ttu-id="0e888-110">BAM ブックを開く方法については、ビューを作成して、ディメンション、メジャーを追加するを参照してください[BAM ビューを定義する](../core/defining-a-bam-view.md)です。</span><span class="sxs-lookup"><span data-stu-id="0e888-110">For information about opening the BAM workbook, creating a view, and adding dimensions and measures, see [Defining a BAM View](../core/defining-a-bam-view.md).</span></span>  
   
-2.  ブックを展開します。  
+2.  <span data-ttu-id="0e888-111">ブックを展開します。</span><span class="sxs-lookup"><span data-stu-id="0e888-111">Deploy the workbook.</span></span>  
   
-    -   ブックを展開するの指示に従って、 [BAM 定義を展開する方法](../core/how-to-deploy-bam-definitions.md)です。  
+    -   <span data-ttu-id="0e888-112">ブックを展開するの指示に従って、 [BAM 定義を展開する方法](../core/how-to-deploy-bam-definitions.md)です。</span><span class="sxs-lookup"><span data-stu-id="0e888-112">To deploy the workbook, follow the instructions in [How to Deploy BAM Definitions](../core/how-to-deploy-bam-definitions.md).</span></span>  
   
-3.  ソリューション開発者は、使用、 **DirectEventStream**クラス、BAM プライマリ インポート データベースにイベントをインポートします。  
+3.  <span data-ttu-id="0e888-113">ソリューション開発者は、使用、 **DirectEventStream**クラス、BAM プライマリ インポート データベースにイベントをインポートします。</span><span class="sxs-lookup"><span data-stu-id="0e888-113">A solutions developer uses the **DirectEventStream** class to import events into the BAM Primary Import database.</span></span>  
   
-    -   については、 **DirectEventStream**クラスを参照してください[DirectEventStream クラス](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.directeventstream.aspx)です。  
+    -   <span data-ttu-id="0e888-114">については、 **DirectEventStream**クラスを参照してください[DirectEventStream クラス](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.directeventstream.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="0e888-114">For information about the **DirectEventStream** class, see [DirectEventStream Class](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.directeventstream.aspx).</span></span>  
   
-4.  キューブ更新データ変換サービス (DTS) パッケージを実行します。  
+4.  <span data-ttu-id="0e888-115">キューブ更新データ変換サービス (DTS) パッケージを実行します。</span><span class="sxs-lookup"><span data-stu-id="0e888-115">Run the update cube Data Transformation Services (DTS) package.</span></span>  
   
-    -   キューブ更新 DTS パッケージの実行方法の詳細については、次を参照してください。[の BAM DTS パッケージ](../core/bam-dts-packages.md)です。  
+    -   <span data-ttu-id="0e888-116">キューブ更新 DTS パッケージの実行方法の詳細については、次を参照してください。[の BAM DTS パッケージ](../core/bam-dts-packages.md)です。</span><span class="sxs-lookup"><span data-stu-id="0e888-116">For information about running the update cube DTS package, see [BAM DTS Packages](../core/bam-dts-packages.md).</span></span>  
   
-5.  ブックのライブ データの最新コピーを開き、OLAP 集計を表示します。  
+5.  <span data-ttu-id="0e888-117">ブックのライブ データの最新コピーを開き、OLAP 集計を表示します。</span><span class="sxs-lookup"><span data-stu-id="0e888-117">Open the most recent live data copy of the workbook to see the OLAP aggregations.</span></span>  
   
     > [!IMPORTANT]
-    >  セキュリティ上の理由により、BAM ではブックの既存ライブ データのコピーが削除されません。 代わりに、ライブ データのコピーのファイル名がインクリメントされます。  
+    >  <span data-ttu-id="0e888-118">セキュリティ上の理由により、BAM ではブックの既存ライブ データのコピーが削除されません。</span><span class="sxs-lookup"><span data-stu-id="0e888-118">For security reasons, BAM does not delete existing live data copies of the workbook.</span></span> <span data-ttu-id="0e888-119">代わりに、ライブ データのコピーのファイル名がインクリメントされます。</span><span class="sxs-lookup"><span data-stu-id="0e888-119">Instead, BAM increments the file name of the live data copy.</span></span>  
   
-### <a name="to-define-the-rta"></a>RTA を定義するには  
+### <a name="to-define-the-rta"></a><span data-ttu-id="0e888-120">RTA を定義するには</span><span class="sxs-lookup"><span data-stu-id="0e888-120">To define the RTA</span></span>  
   
-1.  BAM Excel ブックで、ビューを作成し、PivotTable レポートに 1 つ以上のディメンションと 1 つのメジャーを追加し、RTA ツール バー ボタンを選択してブックを保存します。  
+1.  <span data-ttu-id="0e888-121">BAM Excel ブックで、ビューを作成し、PivotTable レポートに 1 つ以上のディメンションと 1 つのメジャーを追加し、RTA ツール バー ボタンを選択してブックを保存します。</span><span class="sxs-lookup"><span data-stu-id="0e888-121">In the BAM Excel workbook, create a view, add at least one dimension and one measure to the PivotTable report, select the RTA toolbar button, and then save the workbook.</span></span>  
   
     > [!WARNING]
-    >  同じ BAM アクティビティを使用する RTA を複数定義しないでください。 そのような RTA を複数定義した場合、BAM データをアーカイブしたときに RTA データが不正確になります。  
+    >  <span data-ttu-id="0e888-122">同じ BAM アクティビティを使用する RTA を複数定義しないでください。</span><span class="sxs-lookup"><span data-stu-id="0e888-122">Do not define multiple RTAs that use the same BAM activity.</span></span> <span data-ttu-id="0e888-123">そのような RTA を複数定義した場合、BAM データをアーカイブしたときに RTA データが不正確になります。</span><span class="sxs-lookup"><span data-stu-id="0e888-123">If you do so, the RTA data will be incorrect when you archive the BAM data.</span></span>  
   
-    -   BAM ブックを開く方法については、ビューを作成して、ディメンション、メジャーを追加するを参照してください「ビジネス アクティビティ ビューの定義」および「集計の定義、*情報ワーカー ユーザー ガイド*です。  
+    -   <span data-ttu-id="0e888-124">BAM ブックを開く方法については、ビューを作成して、ディメンション、メジャーを追加するを参照してください「ビジネス アクティビティ ビューの定義」および「集計の定義、*情報ワーカー ユーザー ガイド*です。</span><span class="sxs-lookup"><span data-stu-id="0e888-124">For information about opening the BAM workbook, creating a view, and adding dimensions and measures, see "Defining a Business Activity View" and "Defining Aggregations" in the *Information Workers User Guide*.</span></span>  
   
-2.  ブックを展開します。  
+2.  <span data-ttu-id="0e888-125">ブックを展開します。</span><span class="sxs-lookup"><span data-stu-id="0e888-125">Deploy the workbook.</span></span>  
   
-    -   ブックを展開するの指示に従って、 [BAM 定義を展開する方法](../core/how-to-deploy-bam-definitions.md)です。  
+    -   <span data-ttu-id="0e888-126">ブックを展開するの指示に従って、 [BAM 定義を展開する方法](../core/how-to-deploy-bam-definitions.md)です。</span><span class="sxs-lookup"><span data-stu-id="0e888-126">To deploy the workbook, follow the instructions in [How to Deploy BAM Definitions](../core/how-to-deploy-bam-definitions.md).</span></span>  
   
-3.  ソリューション開発者は、使用、 **DirectEventStream**クラス、BAM プライマリ インポート データベースにイベントをインポートします。  
+3.  <span data-ttu-id="0e888-127">ソリューション開発者は、使用、 **DirectEventStream**クラス、BAM プライマリ インポート データベースにイベントをインポートします。</span><span class="sxs-lookup"><span data-stu-id="0e888-127">A solutions developer uses the **DirectEventStream** class to import events into the BAM Primary Import database.</span></span>  
 
   
-4.  ブックのライブ データの最新コピーを開き、RTA を表示します。  
+4.  <span data-ttu-id="0e888-128">ブックのライブ データの最新コピーを開き、RTA を表示します。</span><span class="sxs-lookup"><span data-stu-id="0e888-128">Open the most recent live data copy of the workbook to see the RTAs.</span></span>  
   
     > [!IMPORTANT]
-    >  セキュリティ上の理由により、BAM ではブックの既存ライブ データのコピーが削除されません。 代わりに、ライブ データのコピーのファイル名がインクリメントされます。  
+    >  <span data-ttu-id="0e888-129">セキュリティ上の理由により、BAM ではブックの既存ライブ データのコピーが削除されません。</span><span class="sxs-lookup"><span data-stu-id="0e888-129">For security reasons, BAM does not delete existing live data copies of the workbook.</span></span> <span data-ttu-id="0e888-130">代わりに、ライブ データのコピーのファイル名がインクリメントされます。</span><span class="sxs-lookup"><span data-stu-id="0e888-130">Instead, BAM increments the file name of the live data copy.</span></span>  
   
-## <a name="see-also"></a>参照  
- [BAM DTS パッケージ](../core/bam-dts-packages.md)   
- [BAM 定義を展開する方法](../core/how-to-deploy-bam-definitions.md)   
- [OLAP および RTA 接続文字列プロパティの更新](../core/updating-olap-and-rta-connection-string-properties.md)   
- [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)
+## <a name="see-also"></a><span data-ttu-id="0e888-131">参照</span><span class="sxs-lookup"><span data-stu-id="0e888-131">See Also</span></span>  
+ <span data-ttu-id="0e888-132">[BAM DTS パッケージ](../core/bam-dts-packages.md) </span><span class="sxs-lookup"><span data-stu-id="0e888-132">[BAM DTS Packages](../core/bam-dts-packages.md) </span></span>  
+ <span data-ttu-id="0e888-133">[BAM 定義を展開する方法](../core/how-to-deploy-bam-definitions.md) </span><span class="sxs-lookup"><span data-stu-id="0e888-133">[How to Deploy BAM Definitions](../core/how-to-deploy-bam-definitions.md) </span></span>  
+ <span data-ttu-id="0e888-134">[OLAP および RTA 接続文字列プロパティの更新](../core/updating-olap-and-rta-connection-string-properties.md) </span><span class="sxs-lookup"><span data-stu-id="0e888-134">[Updating OLAP and RTA Connection String Properties](../core/updating-olap-and-rta-connection-string-properties.md) </span></span>  
+ [<span data-ttu-id="0e888-135">BAM 動的インフラストラクチャの管理</span><span class="sxs-lookup"><span data-stu-id="0e888-135">Managing the BAM Dynamic Infrastructure</span></span>](../core/managing-the-bam-dynamic-infrastructure.md)

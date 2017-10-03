@@ -19,51 +19,51 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="get-metadata-in-oracle-database-using-imetadataretrievalcontract"></a>IMetadataRetrievalContract を使用して Oracle データベース内のメタデータを取得します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公開、 **IMetadataRetrievalContract**形式の Web サービス記述言語 (WSDL での操作のメタデータを取得して Oracle データベース アイテムを検索および参照を使用できるエンドポイント) ドキュメント。  
+# <a name="get-metadata-in-oracle-database-using-imetadataretrievalcontract"></a><span data-ttu-id="83413-102">IMetadataRetrievalContract を使用して Oracle データベース内のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="83413-102">Get Metadata in Oracle Database Using IMetadataRetrievalContract</span></span>
+<span data-ttu-id="83413-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公開、 **IMetadataRetrievalContract**形式の Web サービス記述言語 (WSDL での操作のメタデータを取得して Oracle データベース アイテムを検索および参照を使用できるエンドポイント) ドキュメント。</span><span class="sxs-lookup"><span data-stu-id="83413-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes an **IMetadataRetrievalContract**endpoint that you can use to browse and search for Oracle database artifacts and to retrieve metadata for operations in the form of a Web Services Description Language (WSDL) document.</span></span>  
   
- **IMetadataRetrievalContract**インターフェイスは、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]とメタデータの参照、検索、および検索の機能を提供します。 加え、 **IMetadataRetrievalContract** 、インターフェイス、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]公開、 **MetadataRetrievalClient**インターフェイスを実装するクラス。 使用するか、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**を使用するメタデータ; 参照、検索、およびメタデータを取得する公開されたメソッドは各ケースで同じです。  
+ <span data-ttu-id="83413-104">**IMetadataRetrievalContract**インターフェイスは、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]とメタデータの参照、検索、および検索の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="83413-104">The **IMetadataRetrievalContract** interface is implemented by the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] and provides metadata browse, search, and retrieval capabilities.</span></span> <span data-ttu-id="83413-105">加え、 **IMetadataRetrievalContract** 、インターフェイス、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]公開、 **MetadataRetrievalClient**インターフェイスを実装するクラス。</span><span class="sxs-lookup"><span data-stu-id="83413-105">In addition to the **IMetadataRetrievalContract** interface, the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] exposes the **MetadataRetrievalClient** class, which implements the interface.</span></span> <span data-ttu-id="83413-106">使用するか、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**を使用するメタデータ; 参照、検索、およびメタデータを取得する公開されたメソッドは各ケースで同じです。</span><span class="sxs-lookup"><span data-stu-id="83413-106">You can use either an **IMetadataRetrievalContract** channel or a **MetadataRetrievalClient** to work with metadata; the methods exposed to browse, search, and retrieve metadata are the same in each case.</span></span>  
   
- 次のセクションでは、使用する方法に関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。  
+ <span data-ttu-id="83413-107">次のセクションでは、使用する方法に関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="83413-107">The following sections provide information about how to use the **IMetadataRetrievalContract** interface.</span></span>  
   
-## <a name="the-imetadataretrievalcontract-interface"></a>IMetadataRetrievalContract インターフェイス  
- 次の表を使用するときに使用される重要なクラスに関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。  
+## <a name="the-imetadataretrievalcontract-interface"></a><span data-ttu-id="83413-108">IMetadataRetrievalContract インターフェイス</span><span class="sxs-lookup"><span data-stu-id="83413-108">The IMetadataRetrievalContract Interface</span></span>  
+ <span data-ttu-id="83413-109">次の表を使用するときに使用される重要なクラスに関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="83413-109">The following table provides information about important classes that are used when you work with the **IMetadataRetrievalContract** interface.</span></span>  
   
-|クラスまたはインターフェイス|Description|  
+|<span data-ttu-id="83413-110">クラスまたはインターフェイス</span><span class="sxs-lookup"><span data-stu-id="83413-110">Class or Interface</span></span>|<span data-ttu-id="83413-111">Description</span><span class="sxs-lookup"><span data-stu-id="83413-111">Description</span></span>|  
 |------------------------|-----------------|  
-|**IMetadataRetrievalContract**インターフェイス<br /><br /> (Microsoft.ServiceModel.Channels)|定義、**参照**、**検索**、および**GetMetadata**メソッドです。 いずれかを使用してこれらのメソッドを呼び出す、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**アダプター メタデータを使用します。|  
-|**MetadataRetrievalClient**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|実装して、 **IMetadataRetrievalContract**インターフェイスです。 このクラスのインスタンスを作成し、提供することにより、Oracle データベースのように構成することができます、 **OracleDBBinding**と**EndpointAddress**です。 メタデータを使用するには、そのメソッドを呼び出すことができます。|  
-|**MetadataRetrievalNode**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|アダプター メタデータのノードを表します。 **参照**と**検索**メソッドには、この種類のノードが返されます、 **GetMetadata**メソッドには、パラメーターとしてこの型のノードです。|  
-|**ServiceDescription**クラス<br /><br /> (System.Web.Services.Description)|作成および有効な WSDL ドキュメント ファイルの書式設定する手段を提供します。 **GetMetadata**メソッドを返します、 **ServiceDescription**オブジェクト。|  
+|<span data-ttu-id="83413-112">**IMetadataRetrievalContract**インターフェイス</span><span class="sxs-lookup"><span data-stu-id="83413-112">**IMetadataRetrievalContract** interface</span></span><br /><br /> <span data-ttu-id="83413-113">(Microsoft.ServiceModel.Channels)</span><span class="sxs-lookup"><span data-stu-id="83413-113">(Microsoft.ServiceModel.Channels)</span></span>|<span data-ttu-id="83413-114">定義、**参照**、**検索**、および**GetMetadata**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="83413-114">Defines the **Browse**, **Search**, and **GetMetadata** methods.</span></span> <span data-ttu-id="83413-115">いずれかを使用してこれらのメソッドを呼び出す、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**アダプター メタデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="83413-115">You invoke these methods either by using an **IMetadataRetrievalContract** channel or a **MetadataRetrievalClient** to work with adapter metadata.</span></span>|  
+|<span data-ttu-id="83413-116">**MetadataRetrievalClient**クラス</span><span class="sxs-lookup"><span data-stu-id="83413-116">**MetadataRetrievalClient** class</span></span><br /><br /> <span data-ttu-id="83413-117">(Microsoft.ServiceModel.Channels)</span><span class="sxs-lookup"><span data-stu-id="83413-117">(Microsoft.ServiceModel.Channels)</span></span>|<span data-ttu-id="83413-118">実装して、 **IMetadataRetrievalContract**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="83413-118">Implements the **IMetadataRetrievalContract** interface.</span></span> <span data-ttu-id="83413-119">このクラスのインスタンスを作成し、提供することにより、Oracle データベースのように構成することができます、 **OracleDBBinding**と**EndpointAddress**です。</span><span class="sxs-lookup"><span data-stu-id="83413-119">You can create an instance of this class and configure it for your Oracle database by providing an **OracleDBBinding** and an **EndpointAddress**.</span></span> <span data-ttu-id="83413-120">メタデータを使用するには、そのメソッドを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="83413-120">Then you can invoke its methods to work with metadata.</span></span>|  
+|<span data-ttu-id="83413-121">**MetadataRetrievalNode**クラス</span><span class="sxs-lookup"><span data-stu-id="83413-121">**MetadataRetrievalNode** class</span></span><br /><br /> <span data-ttu-id="83413-122">(Microsoft.ServiceModel.Channels)</span><span class="sxs-lookup"><span data-stu-id="83413-122">(Microsoft.ServiceModel.Channels)</span></span>|<span data-ttu-id="83413-123">アダプター メタデータのノードを表します。</span><span class="sxs-lookup"><span data-stu-id="83413-123">Represents a metadata node on the adapter.</span></span> <span data-ttu-id="83413-124">**参照**と**検索**メソッドには、この種類のノードが返されます、 **GetMetadata**メソッドには、パラメーターとしてこの型のノードです。</span><span class="sxs-lookup"><span data-stu-id="83413-124">The **Browse** and **Search** methods return nodes of this type, and the **GetMetadata** method takes nodes of this type as a parameter.</span></span>|  
+|<span data-ttu-id="83413-125">**ServiceDescription**クラス</span><span class="sxs-lookup"><span data-stu-id="83413-125">**ServiceDescription** class</span></span><br /><br /> <span data-ttu-id="83413-126">(System.Web.Services.Description)</span><span class="sxs-lookup"><span data-stu-id="83413-126">(System.Web.Services.Description)</span></span>|<span data-ttu-id="83413-127">作成および有効な WSDL ドキュメント ファイルの書式設定する手段を提供します。</span><span class="sxs-lookup"><span data-stu-id="83413-127">Provides a means of creating and formatting a valid WSDL document file.</span></span> <span data-ttu-id="83413-128">**GetMetadata**メソッドを返します、 **ServiceDescription**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="83413-128">The **GetMetadata** method returns a **ServiceDescription** object.</span></span>|  
   
  
-### <a name="metadata-node-ids"></a>メタデータのノード Id  
- アダプターは、ノードの階層ツリーとしてそのメタデータを整理します。 このツリー構造内では、メタデータのノードの 2 つの種類があります。  
+### <a name="metadata-node-ids"></a><span data-ttu-id="83413-129">メタデータのノード Id</span><span class="sxs-lookup"><span data-stu-id="83413-129">Metadata Node IDs</span></span>  
+ <span data-ttu-id="83413-130">アダプターは、ノードの階層ツリーとしてそのメタデータを整理します。</span><span class="sxs-lookup"><span data-stu-id="83413-130">The adapter organizes its metadata as a hierarchical tree of nodes.</span></span> <span data-ttu-id="83413-131">このツリー構造内では、メタデータのノードの 2 つの種類があります。</span><span class="sxs-lookup"><span data-stu-id="83413-131">Within this tree structure there are two types of metadata nodes:</span></span>  
   
--   **操作のノード**Oracle データベース アイテムで、アダプターを表示する操作を表します。 操作のノードは、ツリーのリーフです。  
+-   <span data-ttu-id="83413-132">**操作のノード**Oracle データベース アイテムで、アダプターを表示する操作を表します。</span><span class="sxs-lookup"><span data-stu-id="83413-132">**Operation nodes** represent operations that the adapter surfaces on Oracle database artifacts.</span></span> <span data-ttu-id="83413-133">操作のノードは、ツリーのリーフです。</span><span class="sxs-lookup"><span data-stu-id="83413-133">Operation nodes are the leaves of the tree.</span></span>  
   
--   **カテゴリ ノード**アダプターでの操作に Oracle のデータベース成果物と直接対応していない Oracle データベース アイテムのグループを表します。 カテゴリのノードがツリーの分岐その他のカテゴリ ノードおよび操作のノードが含まれます。 たとえば、Oracle のテーブルおよびパッケージは、カテゴリのノードとして表されます。  
+-   <span data-ttu-id="83413-134">**カテゴリ ノード**アダプターでの操作に Oracle のデータベース成果物と直接対応していない Oracle データベース アイテムのグループを表します。</span><span class="sxs-lookup"><span data-stu-id="83413-134">**Category nodes** represent Oracle database artifacts and groupings of Oracle database artifacts that do not directly correspond to an operation on the adapter.</span></span> <span data-ttu-id="83413-135">カテゴリのノードがツリーの分岐その他のカテゴリ ノードおよび操作のノードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="83413-135">Category nodes are the branches of the tree; they contain other category nodes and/or operation nodes.</span></span> <span data-ttu-id="83413-136">たとえば、Oracle のテーブルおよびパッケージは、カテゴリのノードとして表されます。</span><span class="sxs-lookup"><span data-stu-id="83413-136">For example, Oracle tables and packages are represented as category nodes.</span></span>  
   
- アダプター メタデータの各ノードが一意のノード ID で識別されます。 メタデータのノード、アダプターによって公開される Id の詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)です。 これらのノード Id を使用して、使用する場合は、Oracle データベース成果物のターゲットを指定する、 **IMetadataRetrievalContract**インターフェイスを参照、検索、およびメタデータを取得します。  
+ <span data-ttu-id="83413-137">アダプター メタデータの各ノードが一意のノード ID で識別されます。</span><span class="sxs-lookup"><span data-stu-id="83413-137">Each metadata node surfaced by the adapter is identified by a unique node ID.</span></span> <span data-ttu-id="83413-138">メタデータのノード、アダプターによって公開される Id の詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)です。</span><span class="sxs-lookup"><span data-stu-id="83413-138">For more information about the metadata node IDs surfaced by the adapter, see [Metadata Node IDs](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md).</span></span> <span data-ttu-id="83413-139">これらのノード Id を使用して、使用する場合は、Oracle データベース成果物のターゲットを指定する、 **IMetadataRetrievalContract**インターフェイスを参照、検索、およびメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="83413-139">You use these node IDs to specify target Oracle database artifacts when you use the **IMetadataRetrievalContract** interface to browse, search, and retrieve metadata.</span></span>  
   
-### <a name="binding-properties"></a>バインドのプロパティ  
- 使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用する必要がありますを指定する、 **OracleDBBinding**ときにします。インスタンスを作成します。  
+### <a name="binding-properties"></a><span data-ttu-id="83413-140">バインドのプロパティ</span><span class="sxs-lookup"><span data-stu-id="83413-140">Binding Properties</span></span>  
+ <span data-ttu-id="83413-141">使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用する必要がありますを指定する、 **OracleDBBinding**ときにします。インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="83413-141">Whether you use an **IMetadataRetrievalContract** channel or an **IMetadataRetrievalClient** to work with metadata, you must specify an **OracleDBBinding** when you create the instance.</span></span>  
   
- アダプターがメタデータを生成する方法に影響を与えるいくつかのバインド プロパティがあります。 これらのプロパティは次のとおりです。  
+ <span data-ttu-id="83413-142">アダプターがメタデータを生成する方法に影響を与えるいくつかのバインド プロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="83413-142">There are several binding properties that affect how the adapter generates metadata.</span></span> <span data-ttu-id="83413-143">これらのプロパティは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="83413-143">These properties are:</span></span>  
   
--   **EnableSafeTyping**  
+-   <span data-ttu-id="83413-144">**EnableSafeTyping**</span><span class="sxs-lookup"><span data-stu-id="83413-144">**EnableSafeTyping**</span></span>  
   
--   **UseSchemaInNamespace**  
+-   <span data-ttu-id="83413-145">**UseSchemaInNamespace**</span><span class="sxs-lookup"><span data-stu-id="83413-145">**UseSchemaInNamespace**</span></span>  
   
--   **PollingStatement**  
+-   <span data-ttu-id="83413-146">**PollingStatement**</span><span class="sxs-lookup"><span data-stu-id="83413-146">**PollingStatement**</span></span>  
   
 > [!IMPORTANT]
->  設定する必要があります、POLLINGSTMT 操作のメタデータを取得する場合、 **PollingStatement**プロパティをバインドします。  
+>  <span data-ttu-id="83413-147">設定する必要があります、POLLINGSTMT 操作のメタデータを取得する場合、 **PollingStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="83413-147">If you want to retrieve metadata for the POLLINGSTMT operation you must set the **PollingStatement** binding property.</span></span>  
   
- メタデータの取得オブジェクトを開く前に、アプリケーションに必要な値をこれらのバインディング プロパティを設定することを確認する必要があります。 詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインドのプロパティを参照してください[Oracle データベース アダプターのバインドのプロパティについてお読み](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)です。  
+ <span data-ttu-id="83413-148">メタデータの取得オブジェクトを開く前に、アプリケーションに必要な値をこれらのバインディング プロパティを設定することを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="83413-148">You should ensure that these binding properties are set to the values required for your application before you open the metadata retrieval object.</span></span> <span data-ttu-id="83413-149">詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインドのプロパティを参照してください[Oracle データベース アダプターのバインドのプロパティについてお読み](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="83413-149">For more information about the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).</span></span>  
   
-### <a name="browsing-metadata-nodes"></a>メタデータのノードを参照  
- 使用する、**参照**を親ノードに含まれているすべてのメタデータのノードを返すメソッド。 次の例は、Oracle データベースでの最初の 3 つのスキーマを参照します。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。  
+### <a name="browsing-metadata-nodes"></a><span data-ttu-id="83413-150">メタデータのノードを参照</span><span class="sxs-lookup"><span data-stu-id="83413-150">Browsing Metadata Nodes</span></span>  
+ <span data-ttu-id="83413-151">使用する、**参照**を親ノードに含まれているすべてのメタデータのノードを返すメソッド。</span><span class="sxs-lookup"><span data-stu-id="83413-151">You use the **Browse** method to return all the metadata nodes that are contained in a parent node.</span></span> <span data-ttu-id="83413-152">次の例は、Oracle データベースでの最初の 3 つのスキーマを参照します。</span><span class="sxs-lookup"><span data-stu-id="83413-152">The following example browses for the first three schemas on the Oracle database.</span></span> <span data-ttu-id="83413-153">この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。</span><span class="sxs-lookup"><span data-stu-id="83413-153">In this example, **client** is an instance of **MetadataRetrievalClient**.</span></span>  
   
 ```  
 // The first parameter is the node ID.   
@@ -73,10 +73,10 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!IMPORTANT]
->  カテゴリのノードを参照することができますのみ操作のノードを参照することはできません。  
+>  <span data-ttu-id="83413-154">カテゴリのノードを参照することができますのみ操作のノードを参照することはできません。</span><span class="sxs-lookup"><span data-stu-id="83413-154">You can only browse category nodes; you cannot browse operation nodes.</span></span>  
   
-### <a name="searching-for-metadata-nodes"></a>メタデータのノードの検索  
- 使用する、**検索**の親ノードに含まれるノードの検索を実行するメソッド。 アダプターは、検索式以外のワイルドカード文字をサポートしていますたとえばパーセント (%) を指定する 0 個以上の文字と一致するワイルドカード文字です。 次の例では、文字列"EMP"を含む SCOTT スキーマ内のすべてのテーブルの検索を示します。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。  
+### <a name="searching-for-metadata-nodes"></a><span data-ttu-id="83413-155">メタデータのノードの検索</span><span class="sxs-lookup"><span data-stu-id="83413-155">Searching for Metadata Nodes</span></span>  
+ <span data-ttu-id="83413-156">使用する、**検索**の親ノードに含まれるノードの検索を実行するメソッド。</span><span class="sxs-lookup"><span data-stu-id="83413-156">You use the **Search** method to perform a search for nodes contained by a parent node.</span></span> <span data-ttu-id="83413-157">アダプターは、検索式以外のワイルドカード文字をサポートしていますたとえばパーセント (%) を指定する 0 個以上の文字と一致するワイルドカード文字です。</span><span class="sxs-lookup"><span data-stu-id="83413-157">The adapter supports wildcard characters in search expressions; for example you can specify the percent (%) wildcard character to match zero or more characters.</span></span> <span data-ttu-id="83413-158">次の例では、文字列"EMP"を含む SCOTT スキーマ内のすべてのテーブルの検索を示します。</span><span class="sxs-lookup"><span data-stu-id="83413-158">The following example shows a search for all the tables in the SCOTT schema that contain the string "EMP".</span></span> <span data-ttu-id="83413-159">この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。</span><span class="sxs-lookup"><span data-stu-id="83413-159">In this example, **client** is an instance of **MetadataRetrievalClient**.</span></span>  
   
 ```  
 // Search for all nodes that contain "EMP" under the SCOTT.Table node.  
@@ -87,10 +87,10 @@ IMetadataRetrievalNode[] nodes = client.Search("http://Microsoft.LobServices.Ora
 ```  
   
 > [!IMPORTANT]
->  検索は、限られた一連のノードでのみサポートされます。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)です。  
+>  <span data-ttu-id="83413-160">検索は、限られた一連のノードでのみサポートされます。</span><span class="sxs-lookup"><span data-stu-id="83413-160">Searching is only supported on a limited set of nodes.</span></span> <span data-ttu-id="83413-161">検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)です。</span><span class="sxs-lookup"><span data-stu-id="83413-161">For more information about the nodes on which search is supported and about the wildcard characters supported in search expressions, see [Metadata Node IDs](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md).</span></span>  
   
-### <a name="retrieving-metadata-wsdl-for-operations"></a>操作のメタデータ (WSDL) を取得します。  
- 使用する、 **GetMetadata**操作のノードのグループに対するサービスの説明 (WSDL ドキュメント) を取得します。 次の例では、アダプターが、SCOTT のサーフェスを操作のすべてを含むサービスの説明を取得します。そのノード ID を指定することで、EMP テーブル この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。  
+### <a name="retrieving-metadata-wsdl-for-operations"></a><span data-ttu-id="83413-162">操作のメタデータ (WSDL) を取得します。</span><span class="sxs-lookup"><span data-stu-id="83413-162">Retrieving Metadata (WSDL) for Operations</span></span>  
+ <span data-ttu-id="83413-163">使用する、 **GetMetadata**操作のノードのグループに対するサービスの説明 (WSDL ドキュメント) を取得します。</span><span class="sxs-lookup"><span data-stu-id="83413-163">You use the **GetMetadata** method to retrieve a service description (WSDL document) for a group of operation nodes.</span></span> <span data-ttu-id="83413-164">次の例では、アダプターが、SCOTT のサーフェスを操作のすべてを含むサービスの説明を取得します。そのノード ID を指定することで、EMP テーブル</span><span class="sxs-lookup"><span data-stu-id="83413-164">The following example retrieves a service description that contains all of the operations that the adapter surfaces for the SCOTT.EMP table by specifying its node ID.</span></span> <span data-ttu-id="83413-165">この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。</span><span class="sxs-lookup"><span data-stu-id="83413-165">In this example, **client** is an instance of **MetadataRetrievalClient**.</span></span>  
   
 ```  
 // Get a service description that contains all of the operations   
@@ -105,20 +105,20 @@ System.Web.Services.Description.ServiceDescription description = client.GetMetad
 ```  
   
 > [!IMPORTANT]
->  **IsOperation**プロパティをカテゴリのノードと操作のノードが true の場合は false にする必要があります。  
+>  <span data-ttu-id="83413-166">**IsOperation**プロパティをカテゴリのノードと操作のノードが true の場合は false にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="83413-166">The **IsOperation** property should be false for category nodes and true for operation nodes.</span></span>  
   
-### <a name="using-a-metadataretrievalclient"></a>使用して、MetadataRetrievalClient  
- 作成と使用、 **MetadataRetrievalClient**他の WCF クライアントは、ほぼ同じです。 エンドポイントとのインスタンスを指定して、クライアントを作成する**OracleDBBinding**です。 構成で宣言またはコードで強制的に、これを行うことができます。 次のメソッドを呼び出し、 **MetadataRetrievalClient**を参照するには、検索、およびアダプターからメタデータを取得します。  
+### <a name="using-a-metadataretrievalclient"></a><span data-ttu-id="83413-167">使用して、MetadataRetrievalClient</span><span class="sxs-lookup"><span data-stu-id="83413-167">Using a MetadataRetrievalClient</span></span>  
+ <span data-ttu-id="83413-168">作成と使用、 **MetadataRetrievalClient**他の WCF クライアントは、ほぼ同じです。</span><span class="sxs-lookup"><span data-stu-id="83413-168">Creating and using a **MetadataRetrievalClient** is much the same as any other WCF client.</span></span> <span data-ttu-id="83413-169">エンドポイントとのインスタンスを指定して、クライアントを作成する**OracleDBBinding**です。</span><span class="sxs-lookup"><span data-stu-id="83413-169">You create the client by specifying an endpoint and an instance of **OracleDBBinding**.</span></span> <span data-ttu-id="83413-170">構成で宣言またはコードで強制的に、これを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="83413-170">You can do this either declaratively in configuration or imperatively in your code.</span></span> <span data-ttu-id="83413-171">次のメソッドを呼び出し、 **MetadataRetrievalClient**を参照するには、検索、およびアダプターからメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="83413-171">You then invoke the methods of the **MetadataRetrievalClient** to browse, search, and retrieve metadata from the adapter.</span></span>  
   
- 次の例を使用する方法を示しています、 **MetadataRetrievalClient**を参照するには、検索、およびメタデータを取得、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 この例を示しています。  
+ <span data-ttu-id="83413-172">次の例を使用する方法を示しています、 **MetadataRetrievalClient**を参照するには、検索、およびメタデータを取得、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="83413-172">The following example shows how to use a **MetadataRetrievalClient** to browse, search, and retrieve metadata from the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="83413-173">この例を示しています。</span><span class="sxs-lookup"><span data-stu-id="83413-173">The example demonstrates:</span></span>  
   
--   Oracle データベース スキーマのメタデータのツリーのルート ノードを参照しています。  
+-   <span data-ttu-id="83413-174">Oracle データベース スキーマのメタデータのツリーのルート ノードを参照しています。</span><span class="sxs-lookup"><span data-stu-id="83413-174">Browsing the root node of the metadata tree for Oracle Database schemas.</span></span>  
   
--   名前に文字列"EMP"を含む SCOTT スキーマ内のテーブルを検索します。  
+-   <span data-ttu-id="83413-175">名前に文字列"EMP"を含む SCOTT スキーマ内のテーブルを検索します。</span><span class="sxs-lookup"><span data-stu-id="83413-175">Searching for the tables in the SCOTT schema with names that contain the string "EMP".</span></span>  
   
--   すべての SCOTT にサポートされる操作のメタデータを取得しています。EMP テーブルにカテゴリ ノードを渡すことによって、 **GetMetadata**メソッドです。  
+-   <span data-ttu-id="83413-176">すべての SCOTT にサポートされる操作のメタデータを取得しています。EMP テーブルにカテゴリ ノードを渡すことによって、 **GetMetadata**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="83413-176">Retrieving metadata for all of the operations supported for the SCOTT.EMP table by passing a category node to the **GetMetadata** method.</span></span>  
   
--   POLLINGSTMT 操作のノードを渡すことによって、POLLINGSTMT 操作のメタデータの取得、 **GetMetadata**メソッド.  
+-   <span data-ttu-id="83413-177">POLLINGSTMT 操作のノードを渡すことによって、POLLINGSTMT 操作のメタデータの取得、 **GetMetadata**メソッド.</span><span class="sxs-lookup"><span data-stu-id="83413-177">Retrieving metadata for the POLLINGSTMT operation by passing the POLLINGSTMT operation node to the **GetMetadata** method..</span></span>  
   
 ```  
 using System;  
@@ -231,7 +231,7 @@ namespace OracleMetadataRetrieval
 }  
 ```  
   
- 次のコンソールでこのプログラムの出力は、次に示します。 各メソッドによって返されるメタデータの取得のノードの構造を確認できます。 また、プログラムは 2 つの WSDL ドキュメントをファイルに書き込みます。  
+ <span data-ttu-id="83413-178">次のコンソールでこのプログラムの出力は、次に示します。</span><span class="sxs-lookup"><span data-stu-id="83413-178">The following shows the output of this program on the console.</span></span> <span data-ttu-id="83413-179">各メソッドによって返されるメタデータの取得のノードの構造を確認できます。</span><span class="sxs-lookup"><span data-stu-id="83413-179">You can see the structure of the metadata retrieval nodes returned by each method.</span></span> <span data-ttu-id="83413-180">また、プログラムは 2 つの WSDL ドキュメントをファイルに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="83413-180">The program also writes two WSDL documents to files.</span></span>  
   
 ```  
 Browse results for the root node:  
@@ -271,8 +271,8 @@ NodeId = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP1
         Description = Table.EMP1  
 ```  
   
-## <a name="using-an-imetadataretrievalcontract-channel"></a>IMetadataRetrievalContract チャネルを使用します。  
- 作成することも、 **IMetadataRetrievalContract**チャネルし、このチャネルを使用して、参照、検索、およびアダプターからメタデータを取得します。 (メソッドのシグネチャが同じである、 **MetadataRetrievalClient**クラスです)。その方法を次の例に示します。  
+## <a name="using-an-imetadataretrievalcontract-channel"></a><span data-ttu-id="83413-181">IMetadataRetrievalContract チャネルを使用します。</span><span class="sxs-lookup"><span data-stu-id="83413-181">Using an IMetadataRetrievalContract Channel</span></span>  
+ <span data-ttu-id="83413-182">作成することも、 **IMetadataRetrievalContract**チャネルし、このチャネルを使用して、参照、検索、およびアダプターからメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="83413-182">You can also create an **IMetadataRetrievalContract** channel and then use this channel to browse, search, and retrieve metadata from the adapter.</span></span> <span data-ttu-id="83413-183">(メソッドのシグネチャが同じである、 **MetadataRetrievalClient**クラスです)。その方法を次の例に示します。</span><span class="sxs-lookup"><span data-stu-id="83413-183">(The method signatures are the same as for the **MetadataRetrievalClient** class.) The following example shows how to do this.</span></span>  
   
 ```  
 …  
@@ -294,5 +294,5 @@ MetadataRetrievalNode[] nodes = channel.Search("http://Microsoft.LobServices.Ora
 …  
 ```  
   
-## <a name="see-also"></a>参照  
- [Oracle データベースからメタデータをプログラムで取得します。](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-programmatically-from-the-oracle-database.md)
+## <a name="see-also"></a><span data-ttu-id="83413-184">参照</span><span class="sxs-lookup"><span data-stu-id="83413-184">See Also</span></span>  
+ [<span data-ttu-id="83413-185">Oracle データベースからメタデータをプログラムで取得します。</span><span class="sxs-lookup"><span data-stu-id="83413-185">Get Metadata Programmatically from the Oracle Database</span></span>](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-programmatically-from-the-oracle-database.md)

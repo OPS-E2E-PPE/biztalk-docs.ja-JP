@@ -18,55 +18,55 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-4-create-a-receive-port-for-accepting-the-batch-message"></a>手順 4: 作成、バッチ メッセージを受け入れるための受信ポート
-このステップでは、作成し、受信のバッチを受信するポートを構成します。  
+# <a name="step-4-create-a-receive-port-for-accepting-the-batch-message"></a><span data-ttu-id="ce06f-102">手順 4: 作成、バッチ メッセージを受け入れるための受信ポート</span><span class="sxs-lookup"><span data-stu-id="ce06f-102">Step 4: Create a Receive Port for Accepting the Batch Message</span></span>
+<span data-ttu-id="ce06f-103">このステップでは、作成し、受信のバッチを受信するポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-103">In this step, you create and configure a port to receive the incoming batch.</span></span>  
   
- 要求-応答を (双方向) 作成するシナリオには、生成が含まれているためアプリケーションに受け入れられるように、バッチ内の個々 のメッセージの受信確認の受信ポート、します。 双方向のモードでは、受信パイプラインの前のメッセージの受信確認 (ACK) が生成されるまで、MLLP の受信アダプターは、新しい受信メッセージを受け入れません。  
+ <span data-ttu-id="ce06f-104">要求-応答を (双方向) 作成するシナリオには、生成が含まれているためアプリケーションに受け入れられるように、バッチ内の個々 のメッセージの受信確認の受信ポート、します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-104">You create a request-response (two-way) receive port, because the scenario includes the generation of application-accept acknowledgments for the individual messages in the batch.</span></span> <span data-ttu-id="ce06f-105">双方向のモードでは、受信パイプラインの前のメッセージの受信確認 (ACK) が生成されるまで、MLLP の受信アダプターは、新しい受信メッセージを受け入れません。</span><span class="sxs-lookup"><span data-stu-id="ce06f-105">In two-way mode, the MLLP receive adapter will not accept a new incoming message until the receive pipeline has generated the acknowledgment (ACK) for the previous message.</span></span>  
   
-## <a name="create-the-receive-port-for-accepting-the-batch-message"></a>バッチ メッセージを受け付ける受信ポートを作成します。  
+## <a name="create-the-receive-port-for-accepting-the-batch-message"></a><span data-ttu-id="ce06f-106">バッチ メッセージを受け付ける受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-106">Create the receive port for accepting the batch message</span></span>  
   
-1.  開いている**BizTalk Server 管理コンソール**、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、展開し、 **BizTalk アプリケーション 1**です。  
+1.  <span data-ttu-id="ce06f-107">開いている**BizTalk Server 管理コンソール**、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、展開し、 **BizTalk アプリケーション 1**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-107">Open **BizTalk Server Administration**, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, and then expand **BizTalk Application 1**.</span></span>  
   
     > [!NOTE]
-    >  BizTalk Server 管理コンソール開くこともできますから Visual Studio 内をクリックして**BizTalk Server 管理コンソール**で、**ツール**メニュー。  
+    >  <span data-ttu-id="ce06f-108">BizTalk Server 管理コンソール開くこともできますから Visual Studio 内をクリックして**BizTalk Server 管理コンソール**で、**ツール**メニュー。</span><span class="sxs-lookup"><span data-stu-id="ce06f-108">The BizTalk Server Administration Console can also be opened from within Visual Studio by clicking **BizTalk Server Administration** in the **Tools** menu.</span></span>  
   
-2.  右クリック**受信ポート****新規**、し、**要求-応答受信ポート**です。  
+2.  <span data-ttu-id="ce06f-109">右クリック**受信ポート****新規**、し、**要求-応答受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-109">Right-click **Receive Ports**, select **New**, and then select **Request Response Receive Port**.</span></span>  
 
-3.  **名前**、入力**Tutorial_2WayReceive**です。  
+3.  <span data-ttu-id="ce06f-110">**名前**、入力**Tutorial_2WayReceive**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-110">For the **Name**, enter **Tutorial_2WayReceive**.</span></span>  
 
-4.  選択**適用**、ポートをバインドし、選択**受信場所**です。  
+4.  <span data-ttu-id="ce06f-111">選択**適用**、ポートをバインドし、選択**受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-111">Select **Apply** to bind the port, and then select **Receive Locations**.</span></span>  
   
-5.  選択**新しい**です。  
+5.  <span data-ttu-id="ce06f-112">選択**新しい**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-112">Select **New**.</span></span>  
 
-6.  **名前**、入力**Tutorial_2WayReceive**です。
+6.  <span data-ttu-id="ce06f-113">**名前**、入力**Tutorial_2WayReceive**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-113">For the **Name**, enter **Tutorial_2WayReceive**.</span></span>
 
-7. **トランスポート**セクションで、**型**、し、 **MLLP**ドロップダウン リストからです。  
+7. <span data-ttu-id="ce06f-114">**トランスポート**セクションで、**型**、し、 **MLLP**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ce06f-114">In the **Transport** section, select **Type**, and then select **MLLP** from the drop-down list.</span></span>  
   
-8. **[構成]**を選択します。 **MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。  
+8. <span data-ttu-id="ce06f-115">**[構成]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-115">Select **Configure**.</span></span> <span data-ttu-id="ce06f-116">**MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-116">In **MLLP Transport Properties**, configure the following, and then select **OK**.</span></span>  
 
-    |プロパティ|目的|  
+    |<span data-ttu-id="ce06f-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ce06f-117">Use this</span></span>|<span data-ttu-id="ce06f-118">目的</span><span class="sxs-lookup"><span data-stu-id="ce06f-118">To do this</span></span>|  
     |---|---|  
-    |**接続再試行時間 (秒)**|始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。 <br/><br/>削除済みまたは閉じている接続の再接続を試行する前に待機する時間の上限。 場合に適用**によって接続が開始される**に設定されている**ローカル**です。<br/><br/>既定値は、20 秒です。|
-    |**によって開始される接続**| 始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。 <br/><br/>入力**ローカル**MLLP の受信場所をリモートの LOB サーバーへの接続を開始します。 これは、新しいオプションです。<br/><br/>入力**リモート**MLLP の受信場所で、リモートの LOB サーバーからの接続をリッスンするように続行します。 これは、下位互換性のある既定のオプションです。<br/><br/>既定値は Remote です。| 
-    |**接続名**|入力**2 ウェイ**です。|  
-    |**ホスト名**|特定[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]と以前のバージョン。 <br/><br/>入力**localhost**です。|  
-    |**ローカルのホスト名**|始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。 <br/><br/>DNS 名またはローカルの IP アドレスを入力[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]です。 入力することも**localhost**です。|  
-    |**[ポート]**|特定[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]と以前のバージョン。 <br/><br/>設定**21000**です。|  
-    |**ローカル ポート**|始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。 <br/><br/>LocalHost 接続の TCP ポート番号を入力します。 場合にのみ適用**によって接続が開始される**は**リモート**です。 <br/><br/>設定**21000**です。|
-    |**リモート ホスト**|始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。 <br/><br/>DNS 名またはリモートの LOB サーバーの IP アドレスを入力します。 場合に適用**によって接続が開始される**に設定されている**ローカル**です。|  
-    |**リモートのポート**|始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。 <br/><br/>リモート ホスト接続への TCP ポート番号を入力します。 場合に適用**によって接続が開始される**に設定されている**ローカル**です。<br/><br/>設定**21000**です。|  
+    |<span data-ttu-id="ce06f-119">**接続再試行時間 (秒)**</span><span class="sxs-lookup"><span data-stu-id="ce06f-119">**Connect retry time (sec)**</span></span>|<span data-ttu-id="ce06f-120">始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-120">New starting with [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].</span></span> <br/><br/><span data-ttu-id="ce06f-121">削除済みまたは閉じている接続の再接続を試行する前に待機する時間の上限。</span><span class="sxs-lookup"><span data-stu-id="ce06f-121">The upper limit of time to wait before attempting to reconnect a dropped or closed connection.</span></span> <span data-ttu-id="ce06f-122">場合に適用**によって接続が開始される**に設定されている**ローカル**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-122">Applicable when **Connection Initiated by** is set to **Local**.</span></span><br/><br/><span data-ttu-id="ce06f-123">既定値は、20 秒です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-123">Default is 20 seconds.</span></span>|
+    |<span data-ttu-id="ce06f-124">**によって開始される接続**</span><span class="sxs-lookup"><span data-stu-id="ce06f-124">**Connection initiated by**</span></span>| <span data-ttu-id="ce06f-125">始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-125">New starting with [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].</span></span> <br/><br/><span data-ttu-id="ce06f-126">入力**ローカル**MLLP の受信場所をリモートの LOB サーバーへの接続を開始します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-126">Enter **Local** for the MLLP receive location to initiate the connection to a remote LOB server.</span></span> <span data-ttu-id="ce06f-127">これは、新しいオプションです。</span><span class="sxs-lookup"><span data-stu-id="ce06f-127">This is the new option.</span></span><br/><br/><span data-ttu-id="ce06f-128">入力**リモート**MLLP の受信場所で、リモートの LOB サーバーからの接続をリッスンするように続行します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-128">Enter **Remote** for the MLLP receive location to continue to listen for a connection from the remote LOB server.</span></span> <span data-ttu-id="ce06f-129">これは、下位互換性のある既定のオプションです。</span><span class="sxs-lookup"><span data-stu-id="ce06f-129">This is the backwards-compatible default option.</span></span><br/><br/><span data-ttu-id="ce06f-130">既定値は Remote です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-130">Default is Remote.</span></span>| 
+    |<span data-ttu-id="ce06f-131">**接続名**</span><span class="sxs-lookup"><span data-stu-id="ce06f-131">**Connection Name**</span></span>|<span data-ttu-id="ce06f-132">入力**2 ウェイ**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-132">Enter **2Way**.</span></span>|  
+    |<span data-ttu-id="ce06f-133">**ホスト名**</span><span class="sxs-lookup"><span data-stu-id="ce06f-133">**Host name**</span></span>|<span data-ttu-id="ce06f-134">特定[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]と以前のバージョン。</span><span class="sxs-lookup"><span data-stu-id="ce06f-134">Specific to [!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)] and older versions.</span></span> <br/><br/><span data-ttu-id="ce06f-135">入力**localhost**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-135">Enter **localhost**.</span></span>|  
+    |<span data-ttu-id="ce06f-136">**ローカルのホスト名**</span><span class="sxs-lookup"><span data-stu-id="ce06f-136">**Local Host name**</span></span>|<span data-ttu-id="ce06f-137">始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-137">New starting with [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].</span></span> <br/><br/><span data-ttu-id="ce06f-138">DNS 名またはローカルの IP アドレスを入力[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-138">Enter the DNS name or IP address of the local [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="ce06f-139">入力することも**localhost**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-139">You can also enter **localhost**.</span></span>|  
+    |<span data-ttu-id="ce06f-140">**[ポート]**</span><span class="sxs-lookup"><span data-stu-id="ce06f-140">**Port**</span></span>|<span data-ttu-id="ce06f-141">特定[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]と以前のバージョン。</span><span class="sxs-lookup"><span data-stu-id="ce06f-141">Specific to [!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)] and older versions.</span></span> <br/><br/><span data-ttu-id="ce06f-142">設定**21000**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-142">Set to **21000**.</span></span>|  
+    |<span data-ttu-id="ce06f-143">**ローカル ポート**</span><span class="sxs-lookup"><span data-stu-id="ce06f-143">**Local Port**</span></span>|<span data-ttu-id="ce06f-144">始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-144">New starting with [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].</span></span> <br/><br/><span data-ttu-id="ce06f-145">LocalHost 接続の TCP ポート番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-145">Enter the TCP port number for the LocalHost connection.</span></span> <span data-ttu-id="ce06f-146">場合にのみ適用**によって接続が開始される**は**リモート**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-146">Applicable only when **Connection Initiated by** is **Remote**.</span></span> <br/><br/><span data-ttu-id="ce06f-147">設定**21000**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-147">Set to **21000**.</span></span>|
+    |<span data-ttu-id="ce06f-148">**リモート ホスト**</span><span class="sxs-lookup"><span data-stu-id="ce06f-148">**Remote Host**</span></span>|<span data-ttu-id="ce06f-149">始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-149">New starting with [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].</span></span> <br/><br/><span data-ttu-id="ce06f-150">DNS 名またはリモートの LOB サーバーの IP アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-150">Enter the DNS name or IP address of the remote LOB server.</span></span> <span data-ttu-id="ce06f-151">場合に適用**によって接続が開始される**に設定されている**ローカル**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-151">Applicable when **Connection Initiated by** is set to **Local**.</span></span>|  
+    |<span data-ttu-id="ce06f-152">**リモートのポート**</span><span class="sxs-lookup"><span data-stu-id="ce06f-152">**Remote Port**</span></span>|<span data-ttu-id="ce06f-153">始まる新しい[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-153">New starting with [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].</span></span> <br/><br/><span data-ttu-id="ce06f-154">リモート ホスト接続への TCP ポート番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-154">Enter the TCP port number for the remote host connection.</span></span> <span data-ttu-id="ce06f-155">場合に適用**によって接続が開始される**に設定されている**ローカル**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-155">Applicable when **Connection Initiated by** is set to **Local**.</span></span><br/><br/><span data-ttu-id="ce06f-156">設定**21000**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-156">Set to **21000**.</span></span>|  
 
-9. 受信場所のプロパティで、次のように選択します。  
+9. <span data-ttu-id="ce06f-157">受信場所のプロパティで、次のように選択します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-157">In the Receive Location properties, select the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="ce06f-158">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ce06f-158">Use this</span></span>|<span data-ttu-id="ce06f-159">目的</span><span class="sxs-lookup"><span data-stu-id="ce06f-159">To do this</span></span>|  
     |--------------|----------------|  
-    |**受信ハンドラー**|選択**BizTalkServerApplication**ドロップダウン リストから|  
-    |**受信パイプライン**|選択**BTAHL72XPipelines.BTAHL72XReceivePipeline**|  
-    |**送信パイプライン**|選択**BTAHL72XPipelines.BTAHL72XSendPipeline**|  
+    |<span data-ttu-id="ce06f-160">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="ce06f-160">**Receive Handler**</span></span>|<span data-ttu-id="ce06f-161">選択**BizTalkServerApplication**ドロップダウン リストから</span><span class="sxs-lookup"><span data-stu-id="ce06f-161">Select **BizTalkServerApplication** from the drop-down list</span></span>|  
+    |<span data-ttu-id="ce06f-162">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="ce06f-162">**Receive Pipeline**</span></span>|<span data-ttu-id="ce06f-163">選択**BTAHL72XPipelines.BTAHL72XReceivePipeline**</span><span class="sxs-lookup"><span data-stu-id="ce06f-163">Select **BTAHL72XPipelines.BTAHL72XReceivePipeline**</span></span>|  
+    |<span data-ttu-id="ce06f-164">**送信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="ce06f-164">**Send Pipeline**</span></span>|<span data-ttu-id="ce06f-165">選択**BTAHL72XPipelines.BTAHL72XSendPipeline**</span><span class="sxs-lookup"><span data-stu-id="ce06f-165">Select **BTAHL72XPipelines.BTAHL72XSendPipeline**</span></span>|  
 
-11. **[OK]** を選択して変更を保存します。  
+11. <span data-ttu-id="ce06f-166">**[OK]** を選択して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-166">Select **OK** to save your changes.</span></span>  
   
-12. 右クリックして、作成した受信場所を有効にし、**を有効にする**です。  
+12. <span data-ttu-id="ce06f-167">右クリックして、作成した受信場所を有効にし、**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="ce06f-167">Enable the receive location you just created by right-clicking it, and then select **Enable**.</span></span>  
   
-## <a name="next-step"></a>次の手順
-[手順 5: メッセージを配信する送信ポートを作成します。](../../adapters-and-accelerators/accelerator-hl7/step-5-create-a-send-port-to-deliver-messages.md)
+## <a name="next-step"></a><span data-ttu-id="ce06f-168">次の手順</span><span class="sxs-lookup"><span data-stu-id="ce06f-168">Next step</span></span>
+[<span data-ttu-id="ce06f-169">手順 5: メッセージを配信する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="ce06f-169">Step 5: Create a Send Port to Deliver Messages</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-5-create-a-send-port-to-deliver-messages.md)

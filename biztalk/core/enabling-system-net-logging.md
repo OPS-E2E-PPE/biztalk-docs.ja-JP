@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="enabling-systemnet-logging"></a>System.Net のログ記録の有効化
-ログ記録を有効にすることができます、`System.Net`と`System.Net.Sockets` [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] BTSNtSvc.exe サービスの名前空間。 これにより、BizTalk Server のインストールでの問題の特定に役立つ情報が記録された詳細なログ ファイルを作成できます。  
+# <a name="enabling-systemnet-logging"></a><span data-ttu-id="cb068-102">System.Net のログ記録の有効化</span><span class="sxs-lookup"><span data-stu-id="cb068-102">Enabling System.Net Logging</span></span>
+<span data-ttu-id="cb068-103">ログ記録を有効にすることができます、`System.Net`と`System.Net.Sockets` [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] BTSNtSvc.exe サービスの名前空間。</span><span class="sxs-lookup"><span data-stu-id="cb068-103">You can enable logging for the `System.Net` and `System.Net.Sockets`[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] namespace for the BTSNtSvc.exe service.</span></span> <span data-ttu-id="cb068-104">これにより、BizTalk Server のインストールでの問題の特定に役立つ情報が記録された詳細なログ ファイルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="cb068-104">This will cause a detailed log file to be created containing information that may help you identify issues with your BizTalk Server installation.</span></span>  
   
 > [!NOTE]
->  これは、Microsoft [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] の機能の 1 つであり、[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] 以降に対応しています。  
+>  <span data-ttu-id="cb068-105">これは、Microsoft [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] の機能の 1 つであり、[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] 以降に対応しています。</span><span class="sxs-lookup"><span data-stu-id="cb068-105">This is a feature of the Microsoft [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] and will work in [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] or later.</span></span>  
   
- アプリケーション構成ファイルを変更することでトレースが有効になっている**BTSNtSvc.exe**、 **BTSNtSvc.exe.config**です。このファイルは BizTalk Server のインストール パスにあります。つまり、BizTalk Server が既定の場所にインストールされていれば、BtsNtSvc.exe は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] ディレクトリにあります。  
+ <span data-ttu-id="cb068-106">アプリケーション構成ファイルを変更することでトレースが有効になっている**BTSNtSvc.exe**、 **BTSNtSvc.exe.config**です。このファイルは BizTalk Server のインストール パスにあります。つまり、BizTalk Server が既定の場所にインストールされていれば、BtsNtSvc.exe は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="cb068-106">Tracing is enabled by modifying the application configuration file for **BTSNtSvc.exe**,  **BTSNtSvc.exe.config**. It can be found in the BizTalk Server installation path; if you installed BizTalk Server to the default location, BtsNtSvc.exe will be in the directory [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].</span></span>  
   
- 変更する**BTSNtSvc.exe.config**構成ファイルを開き、以下のコードを貼り付け、`<configuration>`メモ帳または使い慣れたテキスト エディターを使用して要素。  
+ <span data-ttu-id="cb068-107">変更する**BTSNtSvc.exe.config**構成ファイルを開き、以下のコードを貼り付け、`<configuration>`メモ帳または使い慣れたテキスト エディターを使用して要素。</span><span class="sxs-lookup"><span data-stu-id="cb068-107">To modify **BTSNtSvc.exe.config**, open the configuration file and paste the code below into the `<configuration>` element using Notepad or your favorite text editor.</span></span>  
   
 ```  
 <system.diagnostics>  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
 </system.diagnostics>  
 ```  
   
- ログ ファイルは、BTSNtSvc.exe を含む同じディレクトリに書き込まれます。 既定の場所にインストールした場合に書き込まは[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]します。  
+ <span data-ttu-id="cb068-108">ログ ファイルは、BTSNtSvc.exe を含む同じディレクトリに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="cb068-108">The log file will be written to the same directory that contains BTSNtSvc.exe.</span></span> <span data-ttu-id="cb068-109">既定の場所にインストールした場合に書き込まは[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="cb068-109">If you installed to the default location, it will be written to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].</span></span>  
   
-## <a name="see-also"></a>参照  
- [ネットワークのトレースの解釈](http://go.microsoft.com/fwlink/?LinkId=78679)
+## <a name="see-also"></a><span data-ttu-id="cb068-110">参照</span><span class="sxs-lookup"><span data-stu-id="cb068-110">See Also</span></span>  
+ [<span data-ttu-id="cb068-111">ネットワークのトレースの解釈</span><span class="sxs-lookup"><span data-stu-id="cb068-111">Interpreting Network Tracing</span></span>](http://go.microsoft.com/fwlink/?LinkId=78679)

@@ -21,110 +21,110 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="httprequestresponse"></a>HTTPRequestResponse
-HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet Server API (ISAPI) フィルターを使用して ASP.NET アプリケーションと [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションの通信を行う方法を示します。  
+# <a name="httprequestresponse"></a><span data-ttu-id="6f979-102">HTTPRequestResponse</span><span class="sxs-lookup"><span data-stu-id="6f979-102">HTTPRequestResponse</span></span>
+<span data-ttu-id="6f979-103">HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet Server API (ISAPI) フィルターを使用して ASP.NET アプリケーションと [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションの通信を行う方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6f979-103">The HTTPRequestResponse sample demonstrates how to use the Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet Server Application Programming Interface (ISAPI) filter to allow an ASP.NET application to communicate with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration.</span></span>  
   
-## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、ASP.NET アプリケーションは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ISAPI フィルターに要求を送信します。 オーケストレーションは、このメッセージを受信し、同期応答を使用して ASP.NET アプリケーションにメッセージを返します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ISAPI フィルターを使用することにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションと ASP.NET アプリケーションの統合を実現できます。  
+## <a name="what-this-sample-does"></a><span data-ttu-id="6f979-104">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="6f979-104">What This Sample Does</span></span>  
+ <span data-ttu-id="6f979-105">このサンプルでは、ASP.NET アプリケーションは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ISAPI フィルターに要求を送信します。</span><span class="sxs-lookup"><span data-stu-id="6f979-105">In this sample, the ASP.NET application submits a request to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ISAPI filter.</span></span> <span data-ttu-id="6f979-106">オーケストレーションは、このメッセージを受信し、同期応答を使用して ASP.NET アプリケーションにメッセージを返します。</span><span class="sxs-lookup"><span data-stu-id="6f979-106">The orchestration then consumes this message and returns it to the ASP.NET application using a synchronous response.</span></span> <span data-ttu-id="6f979-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ISAPI フィルターを使用することにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションと ASP.NET アプリケーションの統合を実現できます。</span><span class="sxs-lookup"><span data-stu-id="6f979-107">You achieve the integration between the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration and the ASP.NET application by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ISAPI filter.</span></span>  
   
- このサンプルでは、以下の手順を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と ASP.NET アプリケーションの間で、注文書 (PO) および PO の受信確認メッセージを交換します。  
+ <span data-ttu-id="6f979-108">このサンプルでは、以下の手順を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と ASP.NET アプリケーションの間で、注文書 (PO) および PO の受信確認メッセージを交換します。</span><span class="sxs-lookup"><span data-stu-id="6f979-108">In this sample, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and an ASP.NET application exchange purchase order (PO) and PO acknowledgement messages using the following sequence of steps:</span></span>  
   
-1.  ASP.NET アプリケーションが HTTP 要求を使用して、XML PO メッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信します。  
+1.  <span data-ttu-id="6f979-109">ASP.NET アプリケーションが HTTP 要求を使用して、XML PO メッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信します。</span><span class="sxs-lookup"><span data-stu-id="6f979-109">An ASP.NET application, using an HTTP request, submits an XML PO message to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は XML PO メッセージを受け取り、XML PO 受信確認メッセージを構築します。その後、そのメッセージを HTTP 応答で ASP.NET アプリケーションに返します。  
+2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="6f979-110"> は XML PO メッセージを受け取り、XML PO 受信確認メッセージを構築します。その後、そのメッセージを HTTP 応答で ASP.NET アプリケーションに返します。</span><span class="sxs-lookup"><span data-stu-id="6f979-110"> receives the XML PO message and constructs an XML PO acknowledgement message, and then sends that message back to the ASP.NET application in the HTTP response.</span></span>  
   
- ASP.NET アプリケーションは XML PO 受信確認応答を受け取り、応答から抽出されたステータス情報で Web フォームを更新します。  
+ <span data-ttu-id="6f979-111">ASP.NET アプリケーションは XML PO 受信確認応答を受け取り、応答から抽出されたステータス情報で Web フォームを更新します。</span><span class="sxs-lookup"><span data-stu-id="6f979-111">The ASP.NET application receives the XML PO acknowledgement response and refreshes the Web form with status information extracted from the response.</span></span>  
   
-## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\AdaptersUsage\HTTPRequestResponse\  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="6f979-112">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="6f979-112">Where to Find This Sample</span></span>  
+ <span data-ttu-id="6f979-113">*\<サンプル パス >*\AdaptersUsage\HTTPRequestResponse\\</span><span class="sxs-lookup"><span data-stu-id="6f979-113">*\<Samples Path>*\AdaptersUsage\HTTPRequestResponse\\</span></span>  
   
- 次の表は、このサンプルのファイルとその目的を示しています。  
+ <span data-ttu-id="6f979-114">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="6f979-114">The following table shows the files in this sample and describes their purpose.</span></span>  
   
-|ファイル|Description|  
+|<span data-ttu-id="6f979-115">ファイル</span><span class="sxs-lookup"><span data-stu-id="6f979-115">File(s)</span></span>|<span data-ttu-id="6f979-116">Description</span><span class="sxs-lookup"><span data-stu-id="6f979-116">Description</span></span>|  
 |---------------|-----------------|  
-|Cleanup.bat|必要に応じて、アセンブリの展開の解除とグローバル アセンブリ キャッシュ (GAC) からのアセンブリの削除、送信および受信ポートの削除、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリの削除などを行います。|  
-|HTTPRequestResponse.btproj、HTTPRequestResponse.sln|HTTP 要求の受信、PO メッセージの処理、および応答の発行を行う BizTalk プロジェクトのプロジェクト ファイルおよびソース ファイルを提供します。|  
-|HTTPRequestResponseBinding.xml|ポートのバインドなど、自動化されたセットアップを提供します。|  
-|POAck.xsd、POSchema.xsd|PO 受信確認および PO .xml ファイルのスキーマをそれぞれ提供します。|  
-|POReceiveOrchestration.odx|PO の受信、PO の処理、および PO 受信確認を行う [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを提供します。|  
-|Setup.bat|このサンプルを作成および初期化します。|  
-|\RequestResponse フォルダー内<br /><br /> AssemblyInfo.cs、default.aspx、default.aspx.cs、Global.asax、Global.asax.cs、RequestResponse.csproj、RequestResponse.csproj.webinfo、RequestResponse.sln、Web.config|このサンプルのドライバーとして機能する ASP.NET アプリケーションを構成するファイル (プロジェクト ファイルとソリューション ファイル、ASPX ファイル、Microsoft Visual C# .NET ソース ファイルなど) を含みます。|  
+|<span data-ttu-id="6f979-117">Cleanup.bat</span><span class="sxs-lookup"><span data-stu-id="6f979-117">Cleanup.bat</span></span>|<span data-ttu-id="6f979-118">必要に応じて、アセンブリの展開の解除とグローバル アセンブリ キャッシュ (GAC) からのアセンブリの削除、送信および受信ポートの削除、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリの削除などを行います。</span><span class="sxs-lookup"><span data-stu-id="6f979-118">Undeploys assemblies and removes them from the global assembly cache (GAC); removes send and receive ports; removes Microsoft Internet Information Services (IIS) virtual directories as needed.</span></span>|  
+|<span data-ttu-id="6f979-119">HTTPRequestResponse.btproj、HTTPRequestResponse.sln</span><span class="sxs-lookup"><span data-stu-id="6f979-119">HTTPRequestResponse.btproj, HTTPRequestResponse.sln</span></span>|<span data-ttu-id="6f979-120">HTTP 要求の受信、PO メッセージの処理、および応答の発行を行う BizTalk プロジェクトのプロジェクト ファイルおよびソース ファイルを提供します。</span><span class="sxs-lookup"><span data-stu-id="6f979-120">Provides project and source files for the BizTalk project that receives the HTTP request, processes the PO message, and issues the response.</span></span>|  
+|<span data-ttu-id="6f979-121">HTTPRequestResponseBinding.xml</span><span class="sxs-lookup"><span data-stu-id="6f979-121">HTTPRequestResponseBinding.xml</span></span>|<span data-ttu-id="6f979-122">ポートのバインドなど、自動化されたセットアップを提供します。</span><span class="sxs-lookup"><span data-stu-id="6f979-122">Provides automated setup such as port binding.</span></span>|  
+|<span data-ttu-id="6f979-123">POAck.xsd、POSchema.xsd</span><span class="sxs-lookup"><span data-stu-id="6f979-123">POAck.xsd, POSchema.xsd</span></span>|<span data-ttu-id="6f979-124">PO 受信確認および PO .xml ファイルのスキーマをそれぞれ提供します。</span><span class="sxs-lookup"><span data-stu-id="6f979-124">Provides schemas for the PO acknowledgement and PO .xml files, respectively.</span></span>|  
+|<span data-ttu-id="6f979-125">POReceiveOrchestration.odx</span><span class="sxs-lookup"><span data-stu-id="6f979-125">POReceiveOrchestration.odx</span></span>|<span data-ttu-id="6f979-126">PO の受信、PO の処理、および PO 受信確認を行う [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを提供します。</span><span class="sxs-lookup"><span data-stu-id="6f979-126">Provides a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration that receives the PO, processes it, and issues the PO acknowledgement.</span></span>|  
+|<span data-ttu-id="6f979-127">Setup.bat</span><span class="sxs-lookup"><span data-stu-id="6f979-127">Setup.bat</span></span>|<span data-ttu-id="6f979-128">このサンプルを作成および初期化します。</span><span class="sxs-lookup"><span data-stu-id="6f979-128">Builds and initializes this sample.</span></span>|  
+|<span data-ttu-id="6f979-129">\RequestResponse フォルダー内</span><span class="sxs-lookup"><span data-stu-id="6f979-129">In the \RequestResponse folder:</span></span><br /><br /> <span data-ttu-id="6f979-130">AssemblyInfo.cs、default.aspx、default.aspx.cs、Global.asax、Global.asax.cs、RequestResponse.csproj、RequestResponse.csproj.webinfo、RequestResponse.sln、Web.config</span><span class="sxs-lookup"><span data-stu-id="6f979-130">AssemblyInfo.cs, default.aspx, default.aspx.cs, Global.asax, Global.asax.cs, RequestResponse.csproj, RequestResponse.csproj.webinfo, RequestResponse.sln, Web.config</span></span>|<span data-ttu-id="6f979-131">このサンプルのドライバーとして機能する ASP.NET アプリケーションを構成するファイル (プロジェクト ファイルとソリューション ファイル、ASPX ファイル、Microsoft Visual C# .NET ソース ファイルなど) を含みます。</span><span class="sxs-lookup"><span data-stu-id="6f979-131">Contains files that constitute the ASP.NET application that serves as a driver for this sample, including project and solution files, ASPX files, Microsoft Visual C# .NET source files, and so on.</span></span>|  
   
-## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- 次の手順を使用して、HTTPRequestResponse サンプルをビルドおよび初期化します。  
+## <a name="building-and-initializing-this-sample"></a><span data-ttu-id="6f979-132">このサンプルのビルドと初期化</span><span class="sxs-lookup"><span data-stu-id="6f979-132">Building and Initializing This Sample</span></span>  
+ <span data-ttu-id="6f979-133">次の手順を使用して、HTTPRequestResponse サンプルをビルドおよび初期化します。</span><span class="sxs-lookup"><span data-stu-id="6f979-133">Use the following procedure to build and initialize the HTTPRequestResponse sample.</span></span>  
   
-#### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
+#### <a name="to-build-and-initialize-this-sample"></a><span data-ttu-id="6f979-134">このサンプルを作成および初期化するには</span><span class="sxs-lookup"><span data-stu-id="6f979-134">To build and initialize this sample</span></span>  
   
-1.  コマンド ウィンドウで、次のフォルダーに移動します。  
+1.  <span data-ttu-id="6f979-135">コマンド ウィンドウで、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="6f979-135">In a command window, navigate to the following folder:</span></span>  
   
-     \<*パスのサンプル*> \AdaptersUsage\HTTPRequestResponse  
+     <span data-ttu-id="6f979-136">\<*パスのサンプル*> \AdaptersUsage\HTTPRequestResponse</span><span class="sxs-lookup"><span data-stu-id="6f979-136">\<*Samples Path*>\AdaptersUsage\HTTPRequestResponse</span></span>  
   
-2.  次の操作を実行する Setup.bat ファイルを実行します。  
+2.  <span data-ttu-id="6f979-137">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="6f979-137">Run the file Setup.bat, which performs the following actions:</span></span>  
   
-    -   このサンプルを実行する ASP.NET アプリケーションをコンパイルし構成します。  
+    -   <span data-ttu-id="6f979-138">このサンプルを実行する ASP.NET アプリケーションをコンパイルし構成します。</span><span class="sxs-lookup"><span data-stu-id="6f979-138">Compiles and configures the ASP.NET application used to drive this sample.</span></span>  
   
         > [!NOTE]
-        >  IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを**.Net Framework v4.0**です。  
+        >  <span data-ttu-id="6f979-139">IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを**.Net Framework v4.0**です。</span><span class="sxs-lookup"><span data-stu-id="6f979-139">While creating application pool in IIS Manager, set the **DefaultAppPool** .NET Framework version to **.Net Framework v4.0**.</span></span>  
   
-    -   このサンプルで使用する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションをコンパイルし、展開します。  
+    -   <span data-ttu-id="6f979-140">このサンプルで使用する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションをコンパイルし、展開します。</span><span class="sxs-lookup"><span data-stu-id="6f979-140">Compiles and deploys the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration used in this sample.</span></span>  
   
-    -   コンパイルし、展開、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。  
+    -   <span data-ttu-id="6f979-141">コンパイルし、展開、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。</span><span class="sxs-lookup"><span data-stu-id="6f979-141">Compiles and deploys the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] projects for this sample.</span></span>  
   
-    -   必要な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ポートを作成しバインドします。  
+    -   <span data-ttu-id="6f979-142">必要な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ポートを作成しバインドします。</span><span class="sxs-lookup"><span data-stu-id="6f979-142">Creates and binds the necessary [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ports.</span></span>  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを開始します。  
+    -   <span data-ttu-id="6f979-143">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="6f979-143">Starts the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration.</span></span>  
   
         > [!IMPORTANT]
-        >  Web アプリケーションを実装するサンプル コード (Default.aspx.cs) を変更して環境を反映する必要があります。  
+        >  <span data-ttu-id="6f979-144">Web アプリケーションを実装するサンプル コード (Default.aspx.cs) を変更して環境を反映する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6f979-144">You must change the sample code that implements the Web application (Default.aspx.cs) to reflect your environment:</span></span>  
         >   
-        >  http://\<*サーバー名*>/\<*仮想 dir*> >/btshttpreceive.dll ここで`<servername>`に投稿するWebサーバーの名前を指定します`<`*仮想 dir* `>`このファイルが存在する仮想ディレクトリです。  
+        >  <span data-ttu-id="6f979-145">http://\<*サーバー名*>/\<*仮想 dir*> >/btshttpreceive.dll ここで`<servername>`に投稿するWebサーバーの名前を指定します`<`*仮想 dir* `>`このファイルが存在する仮想ディレクトリです。</span><span class="sxs-lookup"><span data-stu-id="6f979-145">http://\<*server name*>/\<*virtual dir*>/BTSHTTPReceive.dll where `<servername>` is the name of the Web server you are posting to, and `<`*virtual dir*`>` is the virtual directory where this file resides.</span></span>  
   
         > [!NOTE]
-        >  このサンプルを実行する前に、BizTalk がビルド プロセス中および初期化プロセス中にエラーを報告していないことを確認してください。  
+        >  <span data-ttu-id="6f979-146">このサンプルを実行する前に、BizTalk がビルド プロセス中および初期化プロセス中にエラーを報告していないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="6f979-146">You should confirm that BizTalk did not report any errors during the build and initialization process before attempting to run this sample.</span></span>  
   
         > [!NOTE]
-        >  開き、Setup.bat ファイルを実行せずにこのサンプルのプロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。 このキー ペアは、生成されたアセンブリの署名に使用します。 プロジェクトをビルドする前に、default.aspx.resx および Global.asax.resx への参照を RequestResponse.csproj ファイルから手動で削除する必要もあります。  
+        >  <span data-ttu-id="6f979-147">開き、Setup.bat ファイルを実行せずにこのサンプルのプロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6f979-147">If you choose to open and build the projects in this sample without running the file Setup.bat, you must first create a strong name key pair using the .NET Framework Strong Name Utility (sn.exe).</span></span> <span data-ttu-id="6f979-148">このキー ペアは、生成されたアセンブリの署名に使用します。</span><span class="sxs-lookup"><span data-stu-id="6f979-148">Use this key pair to sign the resulting assemblies.</span></span> <span data-ttu-id="6f979-149">プロジェクトをビルドする前に、default.aspx.resx および Global.asax.resx への参照を RequestResponse.csproj ファイルから手動で削除する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="6f979-149">You must also manually remove the references to default.aspx.resx and Global.asax.resx from the file RequestResponse.csproj before attempting to build that project.</span></span>  
   
         > [!NOTE]
-        >  Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
+        >  <span data-ttu-id="6f979-150">Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。</span><span class="sxs-lookup"><span data-stu-id="6f979-150">To undo changes made by Setup.bat, run Cleanup.bat.</span></span> <span data-ttu-id="6f979-151">Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。</span><span class="sxs-lookup"><span data-stu-id="6f979-151">You must run Cleanup.bat before running Setup.bat a second time.</span></span>  
   
         > [!NOTE]
-        >  構成する必要があり、受信アダプターを HTTP を使用するように IIS を有効にします。 詳細については、次を参照してください。 [HTTP の受信場所の IIS を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)です。  
+        >  <span data-ttu-id="6f979-152">構成する必要があり、受信アダプターを HTTP を使用するように IIS を有効にします。</span><span class="sxs-lookup"><span data-stu-id="6f979-152">You must configure and enable IIS to use the HTTP receive adapter.</span></span> <span data-ttu-id="6f979-153">詳細については、次を参照してください。 [HTTP の受信場所の IIS を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)です。</span><span class="sxs-lookup"><span data-stu-id="6f979-153">For more information, see [How to Configure IIS for an HTTP Receive Location](../core/how-to-configure-iis-for-an-http-receive-location.md).</span></span>  
   
-3.  Setup.bat ファイルを実行すると、このサンプルの仮想ディレクトリが構成され、既定の Web サイトに関連付けられた IIS アプリケーション プールで実行されるよう設定されます。  このサンプルでのユーザーのコンテキストで実行する仮想ディレクトリを構成する、 **BizTalk Isolated Host Users**と**IIS_IURS**ユーザー グループを新しいを実行する仮想ディレクトリを構成する必要がありますIIS アプリケーション プール。 仮想ディレクトリを新しい IIS アプリケーション プールで実行するよう構成するには、次の手順を実行します。  
+3.  <span data-ttu-id="6f979-154">Setup.bat ファイルを実行すると、このサンプルの仮想ディレクトリが構成され、既定の Web サイトに関連付けられた IIS アプリケーション プールで実行されるよう設定されます。</span><span class="sxs-lookup"><span data-stu-id="6f979-154">The setup.bat file configures the virtual directory for this sample to run in the IIS application pool associated with the default web site.</span></span>  <span data-ttu-id="6f979-155">このサンプルでのユーザーのコンテキストで実行する仮想ディレクトリを構成する、 **BizTalk Isolated Host Users**と**IIS_IURS**ユーザー グループを新しいを実行する仮想ディレクトリを構成する必要がありますIIS アプリケーション プール。</span><span class="sxs-lookup"><span data-stu-id="6f979-155">To configure the virtual directory for this sample to run under the context of a user in the **BizTalk Isolated Host Users** and **IIS_IURS** user groups, you should configure the virtual directory to run in a new IIS application pool.</span></span> <span data-ttu-id="6f979-156">仮想ディレクトリを新しい IIS アプリケーション プールで実行するよう構成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="6f979-156">Configure the virtual directory to run in a new IIS application pool by completing the following steps:</span></span>  
   
     > [!NOTE]
-    >  別の SDK サンプル用に新しいアプリケーション プールを作成済みの場合は、次の最後の手順に進むことができます。  
+    >  <span data-ttu-id="6f979-157">別の SDK サンプル用に新しいアプリケーション プールを作成済みの場合は、次の最後の手順に進むことができます。</span><span class="sxs-lookup"><span data-stu-id="6f979-157">If you have already created a new application pool for another SDK sample then you can proceed to the last step below.</span></span>  
   
-    1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
+    1.  <span data-ttu-id="6f979-158">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.</span><span class="sxs-lookup"><span data-stu-id="6f979-158">Click **Start**, point to **All Programs**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-    2.  **インターネット インフォメーション サービス (IIS) マネージャー**に移動し、**アプリケーション プール**フォルダーです。  
+    2.  <span data-ttu-id="6f979-159">**インターネット インフォメーション サービス (IIS) マネージャー**に移動し、**アプリケーション プール**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="6f979-159">In the **Internet Information Services (IIS) Manager**, navigate to the **Application Pools** folder.</span></span>  
   
-    3.  右クリックし、**アプリケーション プール**フォルダーとクリック**新規**、**アプリケーション プールしています.**  
+    3.  <span data-ttu-id="6f979-160">右クリックし、**アプリケーション プール**フォルダーとクリック**新規**、**アプリケーション プールしています.**</span><span class="sxs-lookup"><span data-stu-id="6f979-160">Right-click the **Application Pools** folder and click **New**, **Application Pool...**</span></span>  
   
-    4.  名前を入力、**アプリケーション プール ID:** BizTalkSDKSamples などのことを確認、**新しいアプリケーション プールに既定の設定を使用して**オプションが選択されているし、をクリックして**OK**に新しいアプリケーション プールを作成します。  
+    4.  <span data-ttu-id="6f979-161">名前を入力、**アプリケーション プール ID:** BizTalkSDKSamples などのことを確認、**新しいアプリケーション プールに既定の設定を使用して**オプションが選択されているし、をクリックして**OK**に新しいアプリケーション プールを作成します。</span><span class="sxs-lookup"><span data-stu-id="6f979-161">Enter a name for the **Application Pool ID:** such as BizTalkSDKSamples, verify that the **Use default settings for new application pool** option is selected and click **OK** to create the new application pool.</span></span>  
   
-    5.  新しいアプリケーション プールを右クリックし、をクリックして**プロパティ**です。  
+    5.  <span data-ttu-id="6f979-162">新しいアプリケーション プールを右クリックし、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="6f979-162">Right-click the new application pool and then click **Properties**.</span></span>  
   
-    6.  をクリックして、 **Identity**プロパティ ダイアログ ボックスのタブ ボックスし、このアプリケーション プールのメンバーであるユーザーを実行する id を変更する、 **BizTalk Isolated Host Users**ユーザー グループ。  このユーザーは、ローカルのメンバーでもある必要があります**IIS_IURS**ユーザー グループ。  
+    6.  <span data-ttu-id="6f979-163">をクリックして、 **Identity**プロパティ ダイアログ ボックスのタブ ボックスし、このアプリケーション プールのメンバーであるユーザーを実行する id を変更する、 **BizTalk Isolated Host Users**ユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="6f979-163">Click the **Identity** tab of the properties dialog box and change the identity under which this application pool runs to a user that is a member of the **BizTalk Isolated Host Users** user group.</span></span>  <span data-ttu-id="6f979-164">このユーザーは、ローカルのメンバーでもある必要があります**IIS_IURS**ユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="6f979-164">This user should also be a member of the local **IIS_IURS** user group.</span></span>  
   
-    7.  この SDK サンプルの仮想ディレクトリを、新しいアプリケーション プールで実行するよう構成します。 **アプリケーション プール**設定は、**仮想ディレクトリ**仮想ディレクトリのプロパティ ダイアログ ボックスのタブです。 このサンプルで作成される仮想ディレクトリは、HttpRequestResponseSample という名前になります。  
+    7.  <span data-ttu-id="6f979-165">この SDK サンプルの仮想ディレクトリを、新しいアプリケーション プールで実行するよう構成します。</span><span class="sxs-lookup"><span data-stu-id="6f979-165">Configure the virtual directory for this SDK sample to run under the new application pool.</span></span> <span data-ttu-id="6f979-166">**アプリケーション プール**設定は、**仮想ディレクトリ**仮想ディレクトリのプロパティ ダイアログ ボックスのタブです。</span><span class="sxs-lookup"><span data-stu-id="6f979-166">The **Application pool** setting is available on the **Virtual Directory** tab of the Virtual Directory properties dialog box.</span></span> <span data-ttu-id="6f979-167">このサンプルで作成される仮想ディレクトリは、HttpRequestResponseSample という名前になります。</span><span class="sxs-lookup"><span data-stu-id="6f979-167">The virtual directory created for this sample is HttpRequestResponseSample.</span></span>  
   
-## <a name="running-this-sample"></a>このサンプルの実行  
- 次の手順を使用して、HTTPRequestResponse サンプルを実行します。  
+## <a name="running-this-sample"></a><span data-ttu-id="6f979-168">このサンプルの実行</span><span class="sxs-lookup"><span data-stu-id="6f979-168">Running This Sample</span></span>  
+ <span data-ttu-id="6f979-169">次の手順を使用して、HTTPRequestResponse サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="6f979-169">Use the following procedure to run the HTTPRequestResponse sample.</span></span>  
   
-#### <a name="to-run-this-sample"></a>このサンプルを実行するには  
+#### <a name="to-run-this-sample"></a><span data-ttu-id="6f979-170">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="6f979-170">To run this sample</span></span>  
   
-1.  Internet Explorer で http://localhost/RequestResponse/ に移動します。  
+1.  <span data-ttu-id="6f979-171">Internet Explorer で http://localhost/RequestResponse/ に移動します。</span><span class="sxs-lookup"><span data-stu-id="6f979-171">In Internet Explorer, navigate to http://localhost/RequestResponse/.</span></span>  
   
-2.  Web フォームで、必要なフィールドに入力し、をクリックして**Place Order**して注文を送信します。  
+2.  <span data-ttu-id="6f979-172">Web フォームで、必要なフィールドに入力し、をクリックして**Place Order**して注文を送信します。</span><span class="sxs-lookup"><span data-stu-id="6f979-172">Complete the necessary fields in the Web form, and then click **Place Order** to submit your order.</span></span>  
   
-3.  応答を受信した後、Web フォームが更新される際に注文のステータスを確認します。  
+3.  <span data-ttu-id="6f979-173">応答を受信した後、Web フォームが更新される際に注文のステータスを確認します。</span><span class="sxs-lookup"><span data-stu-id="6f979-173">Observe the status of your order when the Web form refreshes after receiving a response.</span></span>  
   
-## <a name="comments"></a>コメント  
- **BTSHTTPReceiveISAPI**このサンプルで使用する拡張機能が 1 台のコンピューターの既定のインストールで動作するよう構成します。 このサンプルに追加の構成を拡張するを参照してください。 [HTTP アダプター](../core/http-adapter.md)です。  
+## <a name="comments"></a><span data-ttu-id="6f979-174">コメント</span><span class="sxs-lookup"><span data-stu-id="6f979-174">Comments</span></span>  
+ <span data-ttu-id="6f979-175">**BTSHTTPReceiveISAPI**このサンプルで使用する拡張機能が 1 台のコンピューターの既定のインストールで動作するよう構成します。</span><span class="sxs-lookup"><span data-stu-id="6f979-175">The **BTSHTTPReceiveISAPI** extension used in this sample is configured to work on a single computer default installation.</span></span> <span data-ttu-id="6f979-176">このサンプルに追加の構成を拡張するを参照してください。 [HTTP アダプター](../core/http-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="6f979-176">To extend this sample for additional configurations, see [HTTP Adapter](../core/http-adapter.md).</span></span>  
   
- このサンプルは、Web フォームまたは一般的な HTTP を介して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを送信するために必要なアプリケーションに拡張できます。 このサンプルの ASP.NET アプリケーションの部分を拡張すると、さらに多くの情報をクエリして、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを送信する前にその他の処理を実行できます。  
+ <span data-ttu-id="6f979-177">このサンプルは、Web フォームまたは一般的な HTTP を介して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを送信するために必要なアプリケーションに拡張できます。</span><span class="sxs-lookup"><span data-stu-id="6f979-177">You can extend this sample to applications that are required to submit data to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] through a Web form, or through HTTP in general.</span></span> <span data-ttu-id="6f979-178">このサンプルの ASP.NET アプリケーションの部分を拡張すると、さらに多くの情報をクエリして、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを送信する前にその他の処理を実行できます。</span><span class="sxs-lookup"><span data-stu-id="6f979-178">By extending the ASP.NET application portion of this sample, you can query for more information and perform other preprocessing before submitting the data to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-## <a name="see-also"></a>参照  
- [HTTP アダプタのサンプル](../core/http-adapter-samples.md)
+## <a name="see-also"></a><span data-ttu-id="6f979-179">参照</span><span class="sxs-lookup"><span data-stu-id="6f979-179">See Also</span></span>  
+ [<span data-ttu-id="6f979-180">HTTP アダプタのサンプル</span><span class="sxs-lookup"><span data-stu-id="6f979-180">HTTP Adapter Samples</span></span>](../core/http-adapter-samples.md)

@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---failure-writing-xml-type-blob-file-ltfile---0gt-error-1"></a>エラー - XML Type Blob ファイルの書き込みに失敗しました (&lt;file:---{0}&gt;)。 エラー: {1}
-**エラー コード**  
+# <a name="error---failure-writing-xml-type-blob-file-ltfile---0gt-error-1"></a><span data-ttu-id="9ba96-103">エラー - XML Type Blob ファイルの書き込みに失敗しました (&lt;file:---{0}&gt;)。</span><span class="sxs-lookup"><span data-stu-id="9ba96-103">Error - Failure writing XML Type Blob file (&lt;file:---{0}&gt;).</span></span> <span data-ttu-id="9ba96-104">エラー: {1}</span><span class="sxs-lookup"><span data-stu-id="9ba96-104">Error: {1}</span></span>
+<span data-ttu-id="9ba96-105">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="9ba96-105">**Error Code**</span></span>  
   
- btm1062  
+ <span data-ttu-id="9ba96-106">btm1062</span><span class="sxs-lookup"><span data-stu-id="9ba96-106">btm1062</span></span>  
   
- **説明**  
+ <span data-ttu-id="9ba96-107">**説明**</span><span class="sxs-lookup"><span data-stu-id="9ba96-107">**Explanation**</span></span>  
   
- このエラーは、マッパー コンパイラがビルド タスクによって指定された場所に xml BLOB ファイルを作成できない場合に発生します。  
+ <span data-ttu-id="9ba96-108">このエラーは、マッパー コンパイラがビルド タスクによって指定された場所に xml BLOB ファイルを作成できない場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="9ba96-108">This occurs when mapper compiler is not able to create the xml blob file in the location specified by the build task.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="9ba96-109">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="9ba96-109">**User Action**</span></span>  
   
- メッセージ (エラー {1})i に含まれるエラー メッセージを確認します。 権限がないことを示す例外である場合は、プロジェクトの出力フォルダーに対する書き込みアクセス許可を保持していない可能性があります。
+ <span data-ttu-id="9ba96-110">メッセージ (エラー {1})i に含まれるエラー メッセージを確認します。</span><span class="sxs-lookup"><span data-stu-id="9ba96-110">Check the error message included in the message (Error {1})i.</span></span> <span data-ttu-id="9ba96-111">権限がないことを示す例外である場合は、プロジェクトの出力フォルダーに対する書き込みアクセス許可を保持していない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="9ba96-111">If it is an UnAuthorised exception, then you may not have write permission for the project output folder.</span></span>

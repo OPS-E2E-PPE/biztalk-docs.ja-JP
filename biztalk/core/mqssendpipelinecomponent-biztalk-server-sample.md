@@ -23,242 +23,242 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent (BizTalk Server サンプル)
-このサンプルでは、一連の MQSeries プロパティ値を XML ファイルから読み取って、メッセージに適用する、パイプライン コンポーネントの作成方法を示します。  
+# <a name="mqssendpipelinecomponent-biztalk-server-sample"></a><span data-ttu-id="7dade-102">MQSSendPipelineComponent (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="7dade-102">MQSSendPipelineComponent (BizTalk Server Sample)</span></span>
+<span data-ttu-id="7dade-103">このサンプルでは、一連の MQSeries プロパティ値を XML ファイルから読み取って、メッセージに適用する、パイプライン コンポーネントの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7dade-103">This sample demonstrates how to write a pipeline component that reads a set of MQSeries property values from an XML file and applies them to a message.</span></span>  
   
-## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルは、パイプライン コンポーネント プロジェクトおよびパイプライン コンポーネントを利用するパイプライン プロジェクトの 2 つの [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトで構成されています。  
+## <a name="what-this-sample-does"></a><span data-ttu-id="7dade-104">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="7dade-104">What This Sample Does</span></span>  
+ <span data-ttu-id="7dade-105">このサンプルは、パイプライン コンポーネント プロジェクトおよびパイプライン コンポーネントを利用するパイプライン プロジェクトの 2 つの [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトで構成されています。</span><span class="sxs-lookup"><span data-stu-id="7dade-105">This sample is composed of two [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] projects, a pipeline component project and a pipeline project that makes use of the pipeline component.</span></span>  
   
-## <a name="where-to-find-this-sample"></a>このサンプルの場所  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="7dade-106">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="7dade-106">Where to Find This Sample</span></span>  
   
--   *\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
+-   <span data-ttu-id="7dade-107">*\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent</span><span class="sxs-lookup"><span data-stu-id="7dade-107">*\<SamplesPath>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent</span></span>  
   
--   *\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
+-   <span data-ttu-id="7dade-108">*\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline</span><span class="sxs-lookup"><span data-stu-id="7dade-108">*\<SamplesPath>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline</span></span>  
   
- 次の表は、このサンプルのファイルとその目的を示しています。  
+ <span data-ttu-id="7dade-109">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="7dade-109">The following table shows the files in this sample and describes their purpose.</span></span>  
   
-|**ファイル**|**Description**|  
+|<span data-ttu-id="7dade-110">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="7dade-110">**File**</span></span>|<span data-ttu-id="7dade-111">**Description**</span><span class="sxs-lookup"><span data-stu-id="7dade-111">**Description**</span></span>|  
 |--------------|---------------------|  
-|SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.sln、<br /><br /> SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.csproj|パイプライン コンポーネントのプロジェクト ファイルとソリューション ファイルです。|  
-|SetMQSeriesHeaderPropertyComponent\CSetMQSeriesHeaderPropertyComponent.cs|パイプライン コンポーネントの Visual C#® ソース ファイルです。|  
-|SetMQSeriesHeaderPropertyComponent\SetMQSMQMDHdrProps.xml|パイプライン コンポーネントによって読み取られ、使用される MQSeries プロパティです。|  
-|SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.btproj、<br /><br /> SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.sln|BizTalk パイプラインのプロジェクト ファイルとソリューション ファイルです。|  
-|SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.snk|BizTalk パイプライン プロジェクトの厳密な名前のキー ファイルです。|  
-|SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.btp|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプラインです。|  
+|<span data-ttu-id="7dade-112">SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.sln、</span><span class="sxs-lookup"><span data-stu-id="7dade-112">SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.sln,</span></span><br /><br /> <span data-ttu-id="7dade-113">SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.csproj</span><span class="sxs-lookup"><span data-stu-id="7dade-113">SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.csproj</span></span>|<span data-ttu-id="7dade-114">パイプライン コンポーネントのプロジェクト ファイルとソリューション ファイルです。</span><span class="sxs-lookup"><span data-stu-id="7dade-114">The project and solution files for the pipeline component.</span></span>|  
+|<span data-ttu-id="7dade-115">SetMQSeriesHeaderPropertyComponent\CSetMQSeriesHeaderPropertyComponent.cs</span><span class="sxs-lookup"><span data-stu-id="7dade-115">SetMQSeriesHeaderPropertyComponent\CSetMQSeriesHeaderPropertyComponent.cs</span></span>|<span data-ttu-id="7dade-116">パイプライン コンポーネントの Visual C#® ソース ファイルです。</span><span class="sxs-lookup"><span data-stu-id="7dade-116">The Visual C#® source file for the pipeline component.</span></span>|  
+|<span data-ttu-id="7dade-117">SetMQSeriesHeaderPropertyComponent\SetMQSMQMDHdrProps.xml</span><span class="sxs-lookup"><span data-stu-id="7dade-117">SetMQSeriesHeaderPropertyComponent\SetMQSMQMDHdrProps.xml</span></span>|<span data-ttu-id="7dade-118">パイプライン コンポーネントによって読み取られ、使用される MQSeries プロパティです。</span><span class="sxs-lookup"><span data-stu-id="7dade-118">The MQSeries properties read and used by the pipeline component.</span></span>|  
+|<span data-ttu-id="7dade-119">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.btproj、</span><span class="sxs-lookup"><span data-stu-id="7dade-119">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.btproj,</span></span><br /><br /> <span data-ttu-id="7dade-120">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.sln</span><span class="sxs-lookup"><span data-stu-id="7dade-120">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.sln</span></span>|<span data-ttu-id="7dade-121">BizTalk パイプラインのプロジェクト ファイルとソリューション ファイルです。</span><span class="sxs-lookup"><span data-stu-id="7dade-121">The project and solution files for the BizTalk pipeline.</span></span>|  
+|<span data-ttu-id="7dade-122">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.snk</span><span class="sxs-lookup"><span data-stu-id="7dade-122">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.snk</span></span>|<span data-ttu-id="7dade-123">BizTalk パイプライン プロジェクトの厳密な名前のキー ファイルです。</span><span class="sxs-lookup"><span data-stu-id="7dade-123">The strong naming key file for the BizTalk pipeline project.</span></span>|  
+|<span data-ttu-id="7dade-124">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.btp</span><span class="sxs-lookup"><span data-stu-id="7dade-124">SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.btp</span></span>|<span data-ttu-id="7dade-125">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプラインです。</span><span class="sxs-lookup"><span data-stu-id="7dade-125">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipeline.</span></span>|  
   
-## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- アプリケーションを作成するには、次の手順を実行します。  
+## <a name="how-to-use-this-sample"></a><span data-ttu-id="7dade-126">このサンプルの使用方法</span><span class="sxs-lookup"><span data-stu-id="7dade-126">How to Use This Sample</span></span>  
+ <span data-ttu-id="7dade-127">アプリケーションを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="7dade-127">To create the application, you must complete the following steps:</span></span>  
   
-1.  アプリケーション用のフォルダーを作成します。  
+1.  <span data-ttu-id="7dade-128">アプリケーション用のフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="7dade-128">Create the folders for the application.</span></span>  
   
-2.  パイプライン コンポーネント用に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトを変更してコンパイルします。  
+2.  <span data-ttu-id="7dade-129">パイプライン コンポーネント用に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトを変更してコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="7dade-129">Modify and compile the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for the pipeline component.</span></span>  
   
-3.  コンパイルしたアセンブリとヘッダー ファイルを適切なフォルダーにコピーします。  
+3.  <span data-ttu-id="7dade-130">コンパイルしたアセンブリとヘッダー ファイルを適切なフォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="7dade-130">Copy the compiled assembly and the header file to the appropriate folders.</span></span>  
   
-4.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] パイプライン用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトを変更します。  
+4.  <span data-ttu-id="7dade-131">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] パイプライン用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトを変更します。</span><span class="sxs-lookup"><span data-stu-id="7dade-131">Modify the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipeline.</span></span>  
   
-5.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプライン プロジェクトをコンパイルして展開します。  
+5.  <span data-ttu-id="7dade-132">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプライン プロジェクトをコンパイルして展開します。</span><span class="sxs-lookup"><span data-stu-id="7dade-132">Compile and deploy the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipeline project.</span></span>  
   
-6.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所を設定します。  
+6.  <span data-ttu-id="7dade-133">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所を設定します。</span><span class="sxs-lookup"><span data-stu-id="7dade-133">Set up a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location.</span></span>  
   
-7.  MQSeries キューを作成します。  
+7.  <span data-ttu-id="7dade-134">MQSeries キューを作成します。</span><span class="sxs-lookup"><span data-stu-id="7dade-134">Create a MQSeries queue.</span></span>  
   
-8.  送信ポートを設定します。  
+8.  <span data-ttu-id="7dade-135">送信ポートを設定します。</span><span class="sxs-lookup"><span data-stu-id="7dade-135">Set up a send port.</span></span>  
   
-9. 受信場所を有効にして送信ポートを開始します。  
+9. <span data-ttu-id="7dade-136">受信場所を有効にして送信ポートを開始します。</span><span class="sxs-lookup"><span data-stu-id="7dade-136">Enable the receive location and start the send port.</span></span>  
   
-## <a name="creating-the-folders-for-the-application"></a>アプリケーション用のフォルダーの作成  
- この手順では、アプリケーション用の適切なフォルダーを作成します。  
+## <a name="creating-the-folders-for-the-application"></a><span data-ttu-id="7dade-137">アプリケーション用のフォルダーの作成</span><span class="sxs-lookup"><span data-stu-id="7dade-137">Creating the Folders for the Application</span></span>  
+ <span data-ttu-id="7dade-138">この手順では、アプリケーション用の適切なフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="7dade-138">This procedure creates the appropriate folders for the application.</span></span>  
   
-#### <a name="to-create-the-folders-for-the-application"></a>アプリケーション用のフォルダーを作成するには  
+#### <a name="to-create-the-folders-for-the-application"></a><span data-ttu-id="7dade-139">アプリケーション用のフォルダーを作成するには</span><span class="sxs-lookup"><span data-stu-id="7dade-139">To create the folders for the application</span></span>  
   
-1.  という名前のフォルダーを作成する**temp** C:\ ドライブが既に存在しない場合にします。  
+1.  <span data-ttu-id="7dade-140">という名前のフォルダーを作成する**temp** C:\ ドライブが既に存在しない場合にします。</span><span class="sxs-lookup"><span data-stu-id="7dade-140">Create a folder named **temp** on your C:\ drive if it does not already exist.</span></span>  
   
-2.  下のフォルダーを作成、 **C:\temp**という名前のディレクトリ**Pickup3**です。  
+2.  <span data-ttu-id="7dade-141">下のフォルダーを作成、 **C:\temp**という名前のディレクトリ**Pickup3**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-141">Create a folder under the **C:\temp** directory named **Pickup3**.</span></span>  
   
-## <a name="modifying-and-compiling-the-project-for-the-pipeline-component"></a>パイプライン コンポーネント用のプロジェクトの変更とコンパイル  
- この手順では、パイプライン コンポーネント用に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトを変更してコンパイルします。  
+## <a name="modifying-and-compiling-the-project-for-the-pipeline-component"></a><span data-ttu-id="7dade-142">パイプライン コンポーネント用のプロジェクトの変更とコンパイル</span><span class="sxs-lookup"><span data-stu-id="7dade-142">Modifying and Compiling the Project for the Pipeline Component</span></span>  
+ <span data-ttu-id="7dade-143">この手順では、パイプライン コンポーネント用に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトを変更してコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="7dade-143">This procedure modifies and compiles the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for the pipeline component.</span></span>  
   
-#### <a name="to-modify-and-compile-the-project-for-the-pipeline-component"></a>パイプライン コンポーネント用にプロジェクトを変更およびコンパイルするには  
+#### <a name="to-modify-and-compile-the-project-for-the-pipeline-component"></a><span data-ttu-id="7dade-144">パイプライン コンポーネント用にプロジェクトを変更およびコンパイルするには</span><span class="sxs-lookup"><span data-stu-id="7dade-144">To modify and compile the project for the pipeline component</span></span>  
   
-1.  ソリューション ファイルをダブルクリックして**SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.sln**でソリューションを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  
+1.  <span data-ttu-id="7dade-145">ソリューション ファイルをダブルクリックして**SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.sln**でソリューションを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="7dade-145">Double-click the solution file, **SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent.sln** to open the solution in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-2.  クラス ファイルをダブルクリックして**CSetMQSeriesHeaderPropertyComponent.cs**でクラス ファイルを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  
+2.  <span data-ttu-id="7dade-146">クラス ファイルをダブルクリックして**CSetMQSeriesHeaderPropertyComponent.cs**でクラス ファイルを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="7dade-146">Double-click the class file **CSetMQSeriesHeaderPropertyComponent.cs** to open the class file in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-3.  変数を見つけて**samplesDir**、場所にこの変数が設定されていることを確認**C:\temp**です。  
+3.  <span data-ttu-id="7dade-147">変数を見つけて**samplesDir**、場所にこの変数が設定されていることを確認**C:\temp**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-147">Locate the variable **samplesDir**, verify that this variable is set to the location **C:\temp**.</span></span>  
   
-4.  ソリューション エクスプ ローラーでソリューションを右クリックし、をクリックして**ビルド**です。 ある dll プロジェクトをコンパイルこれは、 **SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent\bin\Debug\\** ディレクトリ。  
+4.  <span data-ttu-id="7dade-148">ソリューション エクスプ ローラーでソリューションを右クリックし、をクリックして**ビルド**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-148">Right-click the solution in the Solution Explorer and click **Build**.</span></span> <span data-ttu-id="7dade-149">ある dll プロジェクトをコンパイルこれは、 **SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent\bin\Debug\\** ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="7dade-149">This will compile the project into a dll located in the **SetMQSeriesHeaderPropertyComponent\SetMQSeriesHeaderPropertyComponent\bin\Debug\\** directory.</span></span>  
   
-## <a name="copying-the-assembly-and-header-file-to-appropriate-folders"></a>適切なフォルダーへのアセンブリとヘッダー ファイルのコピー  
- この手順では、コンパイルしたアセンブリとヘッダー ファイルを適切なフォルダーにコピーします。  
+## <a name="copying-the-assembly-and-header-file-to-appropriate-folders"></a><span data-ttu-id="7dade-150">適切なフォルダーへのアセンブリとヘッダー ファイルのコピー</span><span class="sxs-lookup"><span data-stu-id="7dade-150">Copying the Assembly and Header File to Appropriate Folders</span></span>  
+ <span data-ttu-id="7dade-151">この手順では、コンパイルしたアセンブリとヘッダー ファイルを適切なフォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="7dade-151">This procedure copies the compiled assembly and the header file to the appropriate folders.</span></span>  
   
-#### <a name="to-copy-the-compiled-assembly-and-header-file-to-the-appropriate-folders"></a>コンパイルしたアセンブリとヘッダー ファイルを適切なフォルダーにコピーするには  
+#### <a name="to-copy-the-compiled-assembly-and-header-file-to-the-appropriate-folders"></a><span data-ttu-id="7dade-152">コンパイルしたアセンブリとヘッダー ファイルを適切なフォルダーにコピーするには</span><span class="sxs-lookup"><span data-stu-id="7dade-152">To copy the compiled assembly and header file to the appropriate folders</span></span>  
   
-1.  コンパイル済みのアセンブリをコピー **SetMQSeriesHeaderPropertyComponent.dll** BizTalk パイプライン コンポーネント フォルダーにします。 BizTalk パイプライン コンポーネント フォルダーの既定の場所は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Pipeline Components です。  
+1.  <span data-ttu-id="7dade-153">コンパイル済みのアセンブリをコピー **SetMQSeriesHeaderPropertyComponent.dll** BizTalk パイプライン コンポーネント フォルダーにします。</span><span class="sxs-lookup"><span data-stu-id="7dade-153">Copy the compiled assembly **SetMQSeriesHeaderPropertyComponent.dll** to the BizTalk pipeline components folder.</span></span> <span data-ttu-id="7dade-154">BizTalk パイプライン コンポーネント フォルダーの既定の場所は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Pipeline Components です。</span><span class="sxs-lookup"><span data-stu-id="7dade-154">The default location for the BizTalk pipeline components folder is [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Pipeline Components.</span></span>  
   
-2.  MQHeader プロパティ ファイルをコピー **SetMQSMQMDHdrProps.xml**を**C:\temp**ディレクトリ。  
+2.  <span data-ttu-id="7dade-155">MQHeader プロパティ ファイルをコピー **SetMQSMQMDHdrProps.xml**を**C:\temp**ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="7dade-155">Copy the MQHeader properties file **SetMQSMQMDHdrProps.xml** to the **C:\temp** directory.</span></span>  
   
-## <a name="modifying-the-project-for-the-biztalk-server-pipeline"></a>BizTalk Server パイプライン用のプロジェクトの変更  
- この手順では、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] パイプライン用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトを変更します。  
+## <a name="modifying-the-project-for-the-biztalk-server-pipeline"></a><span data-ttu-id="7dade-156">BizTalk Server パイプライン用のプロジェクトの変更</span><span class="sxs-lookup"><span data-stu-id="7dade-156">Modifying the Project for the BizTalk Server Pipeline</span></span>  
+ <span data-ttu-id="7dade-157">この手順では、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] パイプライン用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトを変更します。</span><span class="sxs-lookup"><span data-stu-id="7dade-157">This procedure modifies the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipeline.</span></span>  
   
-#### <a name="to-modify-the-project-for-the-biztalk-server-pipeline"></a>BizTalk Server パイプライン用にプロジェクトを変更するには  
+#### <a name="to-modify-the-project-for-the-biztalk-server-pipeline"></a><span data-ttu-id="7dade-158">BizTalk Server パイプライン用にプロジェクトを変更するには</span><span class="sxs-lookup"><span data-stu-id="7dade-158">To modify the project for the BizTalk Server pipeline</span></span>  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックして、ソリューションを開く**SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.sln**です。  
+1.  <span data-ttu-id="7dade-159">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックして、ソリューションを開く**SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.sln**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-159">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution by double-clicking the solution file, **SetMQSeriesHeaderPropertyPipeline\SetMQSeriesHeaderPropertyPipeline.sln**.</span></span>  
   
-2.  プロジェクトの厳密な名前キー ファイルを作成します。 この操作を行うには、次の手順を実行します。  
+2.  <span data-ttu-id="7dade-160">プロジェクトの厳密な名前キー ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="7dade-160">Create a strong name key file for the project.</span></span> <span data-ttu-id="7dade-161">この操作を行うには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="7dade-161">To do that, do the following:</span></span>  
   
-    1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを開きます。  
+    1.  <span data-ttu-id="7dade-162">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="7dade-162">Open a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Command prompt.</span></span>  
   
-    2.  ディレクトリに移動\<サンプル パス > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent です。  
+    2.  <span data-ttu-id="7dade-163">ディレクトリに移動\<サンプル パス > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent です。</span><span class="sxs-lookup"><span data-stu-id="7dade-163">Change directories to \<SamplesPath>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent.</span></span>  
   
-    3.  次のように入力します。  
+    3.  <span data-ttu-id="7dade-164">次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="7dade-164">Type the following:</span></span>  
   
          `sn -k MQSSendPipelineComponent.snk`  
   
-    4.  Enter キーを押します。 これにより、キー ファイルが作成されます。  
+    4.  <span data-ttu-id="7dade-165">Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="7dade-165">Press ENTER.</span></span> <span data-ttu-id="7dade-166">これにより、キー ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="7dade-166">This will create the key file.</span></span>  
   
-3.  **ソリューション エクスプ ローラー**プロジェクトを右クリックしをクリックして、**プロパティ**を ([center] ウィンドウで) プロジェクトのプロジェクト デザイナーを起動します。  
+3.  <span data-ttu-id="7dade-167">**ソリューション エクスプ ローラー**プロジェクトを右クリックしをクリックして、**プロパティ**を ([center] ウィンドウで) プロジェクトのプロジェクト デザイナーを起動します。</span><span class="sxs-lookup"><span data-stu-id="7dade-167">In **Solution Explorer**, right-click the project and click **Properties** to launch Project Designer for the project (in the center window).</span></span>  
   
-    1.  プロジェクト デザイナーでクリックして**署名**タブです。  
+    1.  <span data-ttu-id="7dade-168">プロジェクト デザイナーでクリックして**署名**タブです。</span><span class="sxs-lookup"><span data-stu-id="7dade-168">In the Project Designer, click **Signing** tab.</span></span>  
   
-    2.  右側のペインで、**アセンブリに署名**オプション.  
+    2.  <span data-ttu-id="7dade-169">右側のペインで、**アセンブリに署名**オプション.</span><span class="sxs-lookup"><span data-stu-id="7dade-169">In the right-hand pane, select the **Sign the assembly** option..</span></span>  
   
-    3.  ドロップダウン リストをクリックして、**厳密な名前キー ファイルを選択して** をクリックし、**参照**です。  
+    3.  <span data-ttu-id="7dade-170">ドロップダウン リストをクリックして、**厳密な名前キー ファイルを選択して** をクリックし、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-170">Click drop-down list for the **Choose a strong name key file** option, and click **Browse**.</span></span>  
   
-    4.  参照\<サンプル パス > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk をクリックして**開く**です。  
+    4.  <span data-ttu-id="7dade-171">参照\<サンプル パス > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk をクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-171">Browse to \<SamplesPath>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk, click **Open**.</span></span>  
   
-4.  先ほど作成したパイプライン コンポーネントに既に追加されて、**プリアセンブル**このパイプライン プロジェクトのステージ。 このコンポーネントがまだ追加されていない場合は、次の手順に従って追加する必要があります。  
+4.  <span data-ttu-id="7dade-172">先ほど作成したパイプライン コンポーネントに既に追加されて、**プリアセンブル**このパイプライン プロジェクトのステージ。</span><span class="sxs-lookup"><span data-stu-id="7dade-172">The pipeline component that you created earlier is already added to the **Pre-Assemble** stage of this pipeline project.</span></span> <span data-ttu-id="7dade-173">このコンポーネントがまだ追加されていない場合は、次の手順に従って追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7dade-173">If this component was not already added you would need to complete the following steps to add it:</span></span>  
   
-    1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] IDE をクリックして、**ツールボックス**左側にあるタブ。  
+    1.  <span data-ttu-id="7dade-174">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] IDE をクリックして、**ツールボックス**左側にあるタブ。</span><span class="sxs-lookup"><span data-stu-id="7dade-174">In the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] IDE, click the **Toolbox** tab on the left side.</span></span>  
   
-    2.  右クリックし、**ツールボックス**、 をクリック**アイテムの選択**です。  
+    2.  <span data-ttu-id="7dade-175">右クリックし、**ツールボックス**、 をクリック**アイテムの選択**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-175">Right-click the **Toolbox**, and click **Choose Items**.</span></span>  
   
-    3.  **ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk パイプライン コンポーネント**] タブで、[、 **MQseries ヘッダー プロパティを設定するカスタム コンポーネント**コンポーネント、およびをクリックして**OK**です。  
+    3.  <span data-ttu-id="7dade-176">**ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk パイプライン コンポーネント**] タブで、[、 **MQseries ヘッダー プロパティを設定するカスタム コンポーネント**コンポーネント、およびをクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-176">In the **Choose Toolbox Items** dialog box, click the **BizTalk Pipeline Components** tab, select the **Custom Component to Set MQseries header properties**component, and then click **OK**.</span></span>  
   
-    4.  ドラッグ、 **MQseries ヘッダー プロパティを設定するカスタム コンポーネント**コンポーネントを**プリアセンブル**このパイプラインのステージ。  
+    4.  <span data-ttu-id="7dade-177">ドラッグ、 **MQseries ヘッダー プロパティを設定するカスタム コンポーネント**コンポーネントを**プリアセンブル**このパイプラインのステージ。</span><span class="sxs-lookup"><span data-stu-id="7dade-177">Drag the **Custom Component to Set MQseries header properties**component to the **Pre-Assemble** stage of this pipeline.</span></span>  
   
-## <a name="compiling-and-deploying-the-pipeline-project"></a>パイプライン プロジェクトのコンパイルと展開  
- この手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプライン プロジェクトをコンパイルして展開します。  
+## <a name="compiling-and-deploying-the-pipeline-project"></a><span data-ttu-id="7dade-178">パイプライン プロジェクトのコンパイルと展開</span><span class="sxs-lookup"><span data-stu-id="7dade-178">Compiling and Deploying the Pipeline Project</span></span>  
+ <span data-ttu-id="7dade-179">この手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプライン プロジェクトをコンパイルして展開します。</span><span class="sxs-lookup"><span data-stu-id="7dade-179">This procedure compiles and deploys the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipeline project.</span></span>  
   
-#### <a name="to-compile-and-deploy-the-pipeline-project"></a>パイプライン プロジェクトをコンパイルおよび展開するには  
+#### <a name="to-compile-and-deploy-the-pipeline-project"></a><span data-ttu-id="7dade-180">パイプライン プロジェクトをコンパイルおよび展開するには</span><span class="sxs-lookup"><span data-stu-id="7dade-180">To compile and deploy the pipeline project</span></span>  
   
-1.  ソリューション エクスプ ローラー ウィンドウで、ソリューションを右クリックし、をクリックして**ソリューションの配置**です。 これにより、ソリューションがビルドされ、アセンブリが BizTalk 管理データベースに展開されます。  
+1.  <span data-ttu-id="7dade-181">ソリューション エクスプ ローラー ウィンドウで、ソリューションを右クリックし、をクリックして**ソリューションの配置**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-181">In the Solution Explorer window, right-click the solution, and then click **Deploy Solution**.</span></span> <span data-ttu-id="7dade-182">これにより、ソリューションがビルドされ、アセンブリが BizTalk 管理データベースに展開されます。</span><span class="sxs-lookup"><span data-stu-id="7dade-182">This builds the solution and deploys the assembly to the BizTalk Management database.</span></span>  
   
-2.  次の手順に従って、アセンブリが BizTalk 管理データベースに展開されたことを確認します。  
+2.  <span data-ttu-id="7dade-183">次の手順に従って、アセンブリが BizTalk 管理データベースに展開されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="7dade-183">Verify the Assembly was deployed to the BizTalk Management database:</span></span>  
   
-    1.  BizTalk 管理コンソールを開きます。  
+    1.  <span data-ttu-id="7dade-184">BizTalk 管理コンソールを開きます。</span><span class="sxs-lookup"><span data-stu-id="7dade-184">Open the BizTalk Administration Console.</span></span>  
   
-    2.  クリックして展開**BizTalk グループ [\<servername >:\<管理データベース >]**を展開し、をクリックし、**アセンブリ**フォルダーです。  
+    2.  <span data-ttu-id="7dade-185">クリックして展開**BizTalk グループ [\<servername >:\<管理データベース >]**を展開し、をクリックし、**アセンブリ**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="7dade-185">Click to expand **BizTalk Group [\<servername>:\<management database>]**, and then click to expand the **Assemblies** folder.</span></span>  
   
-         展開されたパイプライン アセンブリは、の下に表示する必要があります、**アセンブリ**フォルダーです。  
+         <span data-ttu-id="7dade-186">展開されたパイプライン アセンブリは、の下に表示する必要があります、**アセンブリ**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="7dade-186">The deployed pipeline assembly should be visible under the **Assemblies** folder.</span></span>  
   
-## <a name="creating-the-receive-location"></a>作成する、受信場所  
- この手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所を作成します。  
+## <a name="creating-the-receive-location"></a><span data-ttu-id="7dade-187">作成する、受信場所</span><span class="sxs-lookup"><span data-stu-id="7dade-187">Creating the Receive Location</span></span>  
+ <span data-ttu-id="7dade-188">この手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="7dade-188">This procedure creates a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location.</span></span>  
   
-#### <a name="to-create-the-receive-location"></a>受信場所を作成するには  
+#### <a name="to-create-the-receive-location"></a><span data-ttu-id="7dade-189">受信場所を作成するには</span><span class="sxs-lookup"><span data-stu-id="7dade-189">To create the receive location</span></span>  
   
-1.  BizTalk Server 管理コンソールで、右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート**です。  
+1.  <span data-ttu-id="7dade-190">BizTalk Server 管理コンソールで、右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-190">In the BizTalk Server Administration Console, right-click **Receive Ports**, point to **New**, and then click **One-way Receive Port**.</span></span>  
   
-2.  **一方向受信ポートのプロパティ** ダイアログ ボックスで、**名前**ボックスに「MQReply」を入力し、 をクリック**OK**です。  
+2.  <span data-ttu-id="7dade-191">**一方向受信ポートのプロパティ** ダイアログ ボックスで、**名前**ボックスに「MQReply」を入力し、 をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-191">In the **One-way Receive Port Properties** dialog box, in the **Name** box type "MQReply" and click **OK**.</span></span>  
   
-3.  左側のウィンドウでをクリックして**受信場所** タブをクリックして**新規**です。  
+3.  <span data-ttu-id="7dade-192">左側のウィンドウでをクリックして**受信場所** タブをクリックして**新規**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-192">In the left pane, click **Receive Locations** tab, and then click **New**.</span></span>  
   
-4.  **受信場所のプロパティ** ダイアログ ボックスで、**名前**フィールドに「ReceiveFile」を入力します。  
+4.  <span data-ttu-id="7dade-193">**受信場所のプロパティ** ダイアログ ボックスで、**名前**フィールドに「ReceiveFile」を入力します。</span><span class="sxs-lookup"><span data-stu-id="7dade-193">In the **Receive Location Properties** dialog box, in the **Name** field, type "ReceiveFile".</span></span>  
   
-5.  **トランスポートの種類**ボックスで、**ファイル**です。  
+5.  <span data-ttu-id="7dade-194">**トランスポートの種類**ボックスで、**ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-194">In the **Transport Type** box, select **FILE**.</span></span>  
   
-6.  **受信ハンドラー**フィールドで、 **BizTalkServerApplication**です。  
+6.  <span data-ttu-id="7dade-195">**受信ハンドラー**フィールドで、 **BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-195">In the **Receive Handler** field, select **BizTalkServerApplication**.</span></span>  
   
-7.  **受信パイプライン**フィールドで、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**です。  
+7.  <span data-ttu-id="7dade-196">**受信パイプライン**フィールドで、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-196">In the **Receive pipeline** field, select **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**.</span></span>  
   
-8.  **受信フォルダー**フィールドに「C:\temp\Pickup3」を入力します。  
+8.  <span data-ttu-id="7dade-197">**受信フォルダー**フィールドに「C:\temp\Pickup3」を入力します。</span><span class="sxs-lookup"><span data-stu-id="7dade-197">In the **Receive folder** field, type "C:\temp\Pickup3".</span></span>  
   
-9. **ファイル マスク**フィールドに「"*.\*"です。  
+9. <span data-ttu-id="7dade-198">**ファイル マスク**フィールドに「"*.\*"です。</span><span class="sxs-lookup"><span data-stu-id="7dade-198">In the **File mask** field, type "*.\*".</span></span>  
   
-10. をクリックして**OK**、順にクリック**ok**を終了するには、もう一度、**受信場所のプロパティ** ダイアログ ボックス。  
+10. <span data-ttu-id="7dade-199">をクリックして**OK**、順にクリック**ok**を終了するには、もう一度、**受信場所のプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="7dade-199">Click **OK**, and then click **OK** again to exit the **Receive Location Properties** dialog box.</span></span>  
   
-## <a name="creating-a-mqseries-queue-through-the-mqseries-explorer"></a>MQSeries エクスプローラーを使用した MQSeries キューの作成  
- MQSeries Server for Windows のインストールに必要なアクセス許可があればは、アダプターのダイアログ ボックスで、使用して MQSeries キューを作成し、次の手順をスキップできます。  
+## <a name="creating-a-mqseries-queue-through-the-mqseries-explorer"></a><span data-ttu-id="7dade-200">MQSeries エクスプローラーを使用した MQSeries キューの作成</span><span class="sxs-lookup"><span data-stu-id="7dade-200">Creating a MQSeries Queue Through the MQSeries Explorer</span></span>  
+ <span data-ttu-id="7dade-201">MQSeries Server for Windows のインストールに必要なアクセス許可があればは、アダプターのダイアログ ボックスで、使用して MQSeries キューを作成し、次の手順をスキップできます。</span><span class="sxs-lookup"><span data-stu-id="7dade-201">If you have the required permissions to the MQSeries Server for Windows installation, you can create the MQSeries queue through the adapter dialog boxes, and can skip this next procedure.</span></span>  
   
- このようなアクセス許可を持っていない場合は、次の手順に従って、IBM WebSphere MQ エクスプローラーを使用してキューを作成できます。  
+ <span data-ttu-id="7dade-202">このようなアクセス許可を持っていない場合は、次の手順に従って、IBM WebSphere MQ エクスプローラーを使用してキューを作成できます。</span><span class="sxs-lookup"><span data-stu-id="7dade-202">If you do not have such access, you can use the following procedure to create the queue using the IBM WebSphere MQ Explorer.</span></span>  
   
-#### <a name="to-create-a-mqseries-queue-through-the-mqseries-explorer"></a>MQSeries エクスプローラーを使用して MQSeries キューを作成するには  
+#### <a name="to-create-a-mqseries-queue-through-the-mqseries-explorer"></a><span data-ttu-id="7dade-203">MQSeries エクスプローラーを使用して MQSeries キューを作成するには</span><span class="sxs-lookup"><span data-stu-id="7dade-203">To create a MQSeries queue through the MQSeries Explorer</span></span>  
   
-1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。  
+1.  <span data-ttu-id="7dade-204">をクリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-204">Click **Start**, point to **Programs**, point to **IBM WebSphere MQ**, and then click **WebSphere MQ Explorer**.</span></span>  
   
-2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーは、通常の名前**qm _**\<*machine_name*> 場所*machine_name*お使いのコンピューターの名前を指定します。  
+2.  <span data-ttu-id="7dade-205">ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="7dade-205">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="7dade-206">既定のキュー マネージャーは、通常の名前**qm _**\<*machine_name*> 場所*machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="7dade-206">The default queue manager is typically named **QM_**\<*machine_name*> where *machine_name* is the name of your computer.</span></span>  
   
-3.  右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。  
+3.  <span data-ttu-id="7dade-207">右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-207">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
-4.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**SETHEADER**、クリックして**[ok]**です。  
+4.  <span data-ttu-id="7dade-208">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**SETHEADER**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-208">In **Create Local Queue** dialog box, in **Queue Name**, type **SETHEADER**, and then click **OK**.</span></span>  
   
-## <a name="creating-the-send-port-and-mqseries-queue"></a>送信ポートと MQSeries キューの作成  
- この手順では、出力メッセージ用の送信ポートを作成します。 MQSeries キューは、送信ポートがまだ作成されていない場合に送信ポートを作成したときにも作成されます。  
+## <a name="creating-the-send-port-and-mqseries-queue"></a><span data-ttu-id="7dade-209">送信ポートと MQSeries キューの作成</span><span class="sxs-lookup"><span data-stu-id="7dade-209">Creating the Send Port and MQSeries Queue</span></span>  
+ <span data-ttu-id="7dade-210">この手順では、出力メッセージ用の送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="7dade-210">This procedure creates the send port for the output message.</span></span> <span data-ttu-id="7dade-211">MQSeries キューは、送信ポートがまだ作成されていない場合に送信ポートを作成したときにも作成されます。</span><span class="sxs-lookup"><span data-stu-id="7dade-211">The MQSeries queue is also created when you create the send port if you have not already created it.</span></span>  
   
-#### <a name="to-create-the-send-port-and-mqseries-queue"></a>送信ポートと MQSeries キューを作成するには  
+#### <a name="to-create-the-send-port-and-mqseries-queue"></a><span data-ttu-id="7dade-212">送信ポートと MQSeries キューを作成するには</span><span class="sxs-lookup"><span data-stu-id="7dade-212">To create the send port and MQSeries queue</span></span>  
   
-1.  右クリック**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
+1.  <span data-ttu-id="7dade-213">右クリック**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-213">Right-click **Send Ports**, point to **New**, and then click **Static One-way Send Port**.</span></span>  
   
-2.  **送信ポートのプロパティ** ダイアログ ボックスで、**名前**ボックスに「mqsolicitresponse"です。  
+2.  <span data-ttu-id="7dade-214">**送信ポートのプロパティ** ダイアログ ボックスで、**名前**ボックスに「mqsolicitresponse"です。</span><span class="sxs-lookup"><span data-stu-id="7dade-214">In the **Send Port Properties** dialog box, in the **Name** box, type "MQSolicitResponse".</span></span>  
   
-3.  **トランスポートの種類**ボックスで、 **MQSeries**です。  
+3.  <span data-ttu-id="7dade-215">**トランスポートの種類**ボックスで、 **MQSeries**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-215">In the **Transport Type** box, select **MQSeries**.</span></span>  
   
-4.  **送信パイプライン**ボックスで、 **[setmqseriesheaderpropertypipeline.setmqseriesheaderssendpipeline]**です。  
+4.  <span data-ttu-id="7dade-216">**送信パイプライン**ボックスで、 **[setmqseriesheaderpropertypipeline.setmqseriesheaderssendpipeline]**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-216">In the **Send pipeline** box, select **SetMQSeriesHeaderPropertyPipeline.SetMQSeriesHeadersSendPipeline**.</span></span>  
   
-5.  **フィルター**、次の名前/値ペアを持つ新しいエントリを追加します。  
+5.  <span data-ttu-id="7dade-217">**フィルター**、次の名前/値ペアを持つ新しいエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="7dade-217">In **Filters**, add a new entry with the following name/value pairs:</span></span>  
   
-    -   設定**プロパティ**に"BTS です。ReceivePortName"です。  
+    -   <span data-ttu-id="7dade-218">設定**プロパティ**に"BTS です。ReceivePortName"です。</span><span class="sxs-lookup"><span data-stu-id="7dade-218">Set **Property** to "BTS.ReceivePortName".</span></span>  
   
-    -   設定**演算子**「= =」にします。  
+    -   <span data-ttu-id="7dade-219">設定**演算子**「= =」にします。</span><span class="sxs-lookup"><span data-stu-id="7dade-219">Set **Operator** to "==".</span></span>  
   
-    -   設定**値**を"ReceiveFile"です。  
+    -   <span data-ttu-id="7dade-220">設定**値**を"ReceiveFile"です。</span><span class="sxs-lookup"><span data-stu-id="7dade-220">Set **Value** to "ReceiveFile".</span></span>  
   
         > [!NOTE]
-        >  これにより、ReceiveFile 受信ポートで受信したメッセージをサブスクライブするように送信ポートが設定されます。  
+        >  <span data-ttu-id="7dade-221">これにより、ReceiveFile 受信ポートで受信したメッセージをサブスクライブするように送信ポートが設定されます。</span><span class="sxs-lookup"><span data-stu-id="7dade-221">This sets the send port to subscribe to messages that arrive on the ReceiveFile receive port.</span></span>  
   
-6.  をクリックして**トランスポート**です。  
+6.  <span data-ttu-id="7dade-222">をクリックして**トランスポート**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-222">Click **Transport**.</span></span>  
   
-7.  **アドレス (URI)**フィールドで省略記号 (...) ボタンをクリックします。  
+7.  <span data-ttu-id="7dade-223">**アドレス (URI)**フィールドで省略記号 (...) ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7dade-223">In the **Address (URI)** field, click the ellipsis (…) button.</span></span>  
   
-8.  **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**フィールドで省略記号 (...) ボタンをクリックします。  
+8.  <span data-ttu-id="7dade-224">**MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**フィールドで省略記号 (...) ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7dade-224">In the **MQSeries Transport Properties** dialog box, in the **Queue Definition** field, click the ellipsis (…) button.</span></span>  
   
-9. **キュー定義** ダイアログ ボックスで、**サーバー名**フィールドに、コンピューター名を入力します。  
+9. <span data-ttu-id="7dade-225">**キュー定義** ダイアログ ボックスで、**サーバー名**フィールドに、コンピューター名を入力します。</span><span class="sxs-lookup"><span data-stu-id="7dade-225">In the **Queue Definition** dialog box, in the **Server Name** field, type your computer name.</span></span>  
   
-10. **キュー マネージャー**フィールドで、既定のキュー マネージャーを選択します。  
+10. <span data-ttu-id="7dade-226">**キュー マネージャー**フィールドで、既定のキュー マネージャーを選択します。</span><span class="sxs-lookup"><span data-stu-id="7dade-226">In the **Queue Manager** field, select the default queue manager.</span></span>  
   
-11. キューのフィールドに「SETHEADER」を入力し、、クリックして**エクスポート**です。  
+11. <span data-ttu-id="7dade-227">キューのフィールドに「SETHEADER」を入力し、、クリックして**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-227">In the Queue field, type "SETHEADER", and then click **Export**.</span></span>  
   
-12. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**実行**すべてのダイアログを終了するまでです。  
+12. <span data-ttu-id="7dade-228">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**実行**すべてのダイアログを終了するまでです。</span><span class="sxs-lookup"><span data-stu-id="7dade-228">In the **Export** dialog box, click **Create Queue**, and then click **OK** or **Done** until you have exited all dialog.</span></span>  
   
-## <a name="enabling-the-receive-location-and-starting-the-send-port"></a>受信場所の有効化と送信ポートの開始  
- この手順では、受信場所を有効化し、送信ポートを開始します。  
+## <a name="enabling-the-receive-location-and-starting-the-send-port"></a><span data-ttu-id="7dade-229">受信場所の有効化と送信ポートの開始</span><span class="sxs-lookup"><span data-stu-id="7dade-229">Enabling the Receive Location and Starting the Send Port</span></span>  
+ <span data-ttu-id="7dade-230">この手順では、受信場所を有効化し、送信ポートを開始します。</span><span class="sxs-lookup"><span data-stu-id="7dade-230">This procedure enables the receive location and start the send port.</span></span>  
   
-#### <a name="to-enable-the-receive-location-and-start-the-send-port"></a>受信場所を有効にして送信ポートを開始するには  
+#### <a name="to-enable-the-receive-location-and-start-the-send-port"></a><span data-ttu-id="7dade-231">受信場所を有効にして送信ポートを開始するには</span><span class="sxs-lookup"><span data-stu-id="7dade-231">To enable the receive location and start the send port</span></span>  
   
-1.  BizTalk Server 管理コンソールで **受信ポート**です。  
+1.  <span data-ttu-id="7dade-232">BizTalk Server 管理コンソールで **受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-232">In the BizTalk Server Administration console, click **Receive Ports**.</span></span>  
   
-2.  詳細ウィンドウで右クリックし、 **MQIn**受信場所をクリックして**を有効にする**です。  
+2.  <span data-ttu-id="7dade-233">詳細ウィンドウで右クリックし、 **MQIn**受信場所をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-233">In the details pane, right-click the **MQIn** receive location and click **Enable**.</span></span>  
   
-3.  詳細ウィンドウで右クリックし、 **SetMQHeader**送信ポートをクリックして**開始**です。  
+3.  <span data-ttu-id="7dade-234">詳細ウィンドウで右クリックし、 **SetMQHeader**送信ポートをクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-234">In the details pane, right-click the **SetMQHeader** send port and click **Start**.</span></span>  
   
-## <a name="testing-the-application"></a>アプリケーションのテスト  
- この手順では、アプリケーションをテストします。  
+## <a name="testing-the-application"></a><span data-ttu-id="7dade-235">アプリケーションのテスト</span><span class="sxs-lookup"><span data-stu-id="7dade-235">Testing the Application</span></span>  
+ <span data-ttu-id="7dade-236">この手順では、アプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="7dade-236">This procedure tests the application.</span></span>  
   
-#### <a name="to-test-the-application"></a>アプリケーションをテストするには  
+#### <a name="to-test-the-application"></a><span data-ttu-id="7dade-237">アプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="7dade-237">To test the application</span></span>  
   
-1.  ファイルを配置、 **C:\Temp\Pickup3**フォルダーです。  
+1.  <span data-ttu-id="7dade-238">ファイルを配置、 **C:\Temp\Pickup3**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="7dade-238">Put a file into the **C:\Temp\Pickup3** folder.</span></span>  
   
-2.  WebSphere MQ エクスプローラーを起動し、SETHEADER キューをダブルクリックして、SETHEADER キュー内のメッセージを検証します。  
+2.  <span data-ttu-id="7dade-239">WebSphere MQ エクスプローラーを起動し、SETHEADER キューをダブルクリックして、SETHEADER キュー内のメッセージを検証します。</span><span class="sxs-lookup"><span data-stu-id="7dade-239">Launch the WebSphere MQ Explorer and double-click the SETHEADER queue to examine the message(s) in the SETHEADER queue.</span></span>  
   
-     SETHEADER キュー内のメッセージのすべてのコンテキスト プロパティを表示するには、次の手順に従います。  
+     <span data-ttu-id="7dade-240">SETHEADER キュー内のメッセージのすべてのコンテキスト プロパティを表示するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="7dade-240">To see all of the context properties for the messages in the SETHEADER queue, complete the following steps:</span></span>  
   
-    1.  ダブルクリックして、 **SETHEADER**を表示するキュー、 **Message Browser**  ダイアログ ボックス。  
+    1.  <span data-ttu-id="7dade-241">ダブルクリックして、 **SETHEADER**を表示するキュー、 **Message Browser**  ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="7dade-241">Double-click the **SETHEADER** queue to display the **Message Browser** dialog box.</span></span>  
   
-    2.  **Message Browser**ダイアログ ボックスで、をクリックして**列**を表示する、**メッセージの表示/非表示列** ダイアログ ボックス。  
+    2.  <span data-ttu-id="7dade-242">**Message Browser**ダイアログ ボックスで、をクリックして**列**を表示する、**メッセージの表示/非表示列** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="7dade-242">In the **Message Browser** dialog box, click **Columns** to display the **Show/Hide Columns for Messages** dialog box.</span></span>  
   
-    3.  **使用可能な列**で表示するのには、各エントリをダブルクリックして、 **Message Browser**クリックしてダイアログ ボックスで、 **OK**です。  
+    3.  <span data-ttu-id="7dade-243">**使用可能な列**で表示するのには、各エントリをダブルクリックして、 **Message Browser**クリックしてダイアログ ボックスで、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="7dade-243">Under **Available Columns**, double-click each entry to make it visible in the **Message Browser** dialog box, and then click **OK**.</span></span>  
   
-3.  各メッセージのメッセージ コンテキスト プロパティに表示するか、 **Message Browser**  ダイアログ ボックス。  
+3.  <span data-ttu-id="7dade-244">各メッセージのメッセージ コンテキスト プロパティに表示するか、 **Message Browser**  ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="7dade-244">The message context properties for each message should be visible in the **Message Browser** dialog box.</span></span>  
   
-## <a name="see-also"></a>参照  
- [MQSeries アダプタ サンプル](../core/mqseries-adapter-samples.md)
+## <a name="see-also"></a><span data-ttu-id="7dade-245">参照</span><span class="sxs-lookup"><span data-stu-id="7dade-245">See Also</span></span>  
+ [<span data-ttu-id="7dade-246">MQSeries アダプタ サンプル</span><span class="sxs-lookup"><span data-stu-id="7dade-246">MQSeries Adapter Samples</span></span>](../core/mqseries-adapter-samples.md)

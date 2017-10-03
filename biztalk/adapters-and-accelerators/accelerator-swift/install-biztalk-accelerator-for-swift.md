@@ -19,83 +19,83 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="install-biztalk-accelerator-for-swift"></a>BizTalk Accelerator を SWIFT をインストールします。
-インストール[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]の BizTalk Server にします。 
+# <a name="install-biztalk-accelerator-for-swift"></a><span data-ttu-id="5d101-102">BizTalk Accelerator を SWIFT をインストールします。</span><span class="sxs-lookup"><span data-stu-id="5d101-102">Install BizTalk Accelerator for SWIFT</span></span>
+<span data-ttu-id="5d101-103">インストール[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]の BizTalk Server にします。</span><span class="sxs-lookup"><span data-stu-id="5d101-103">Install [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)] on BizTalk Server.</span></span> 
 
-\<!---前のテキスト
--   [BizTalk Accelerator for SWIFT のインストール ガイド](http://go.microsoft.com/fwlink/?LinkId=198120)    
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Readme、\Program Files\Microsoft BizTalk Accelerator for SWIFT の \Documentation フォルダーにあります。  
+<span data-ttu-id="5d101-104">\<!---前のテキスト</span><span class="sxs-lookup"><span data-stu-id="5d101-104">\<!--- Previous text</span></span>
+-   [<span data-ttu-id="5d101-105">BizTalk Accelerator for SWIFT のインストール ガイド</span><span class="sxs-lookup"><span data-stu-id="5d101-105">Installation Guide for BizTalk Accelerator for SWIFT</span></span>](http://go.microsoft.com/fwlink/?LinkId=198120)    
+-   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="5d101-106">[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Readme、\Program Files\Microsoft BizTalk Accelerator for SWIFT の \Documentation フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="5d101-106"> [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Readme, located in the \Program Files\Microsoft BizTalk Accelerator for SWIFT \Documentation folder.</span></span>  
 -->
 
-## <a name="hardware-and-software-requirements"></a>ハードウェアとソフトウェアの要件
+## <a name="hardware-and-software-requirements"></a><span data-ttu-id="5d101-107">ハードウェアとソフトウェアの要件</span><span class="sxs-lookup"><span data-stu-id="5d101-107">Hardware and software requirements</span></span>
 
-ハードウェアとソフトウェアの最小要件は、同じ[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]です。
+<span data-ttu-id="5d101-108">ハードウェアとソフトウェアの最小要件は、同じ[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5d101-108">The minimum hardware and software requirements are the same as [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)].</span></span>
 
-|  |BizTalk の要件  |SQL と OS の要件 |  
+|  |<span data-ttu-id="5d101-109">BizTalk の要件</span><span class="sxs-lookup"><span data-stu-id="5d101-109">BizTalk requirements</span></span>  |<span data-ttu-id="5d101-110">SQL と OS の要件</span><span class="sxs-lookup"><span data-stu-id="5d101-110">SQL and OS requirements</span></span> |  
 |---------|---------|--------- | 
-| [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [BizTalk Server 2016 のハードウェア/ソフトウェア要件](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md) | **SQL Server のハードウェアおよびソフトウェア要件**: <br/>[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)<br/>[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)<br/><br/>**Windows サーバーのハードウェア要件**: <br/>[Windows Server 2016](https://technet.microsoft.com/windows-server-docs/get-started/server-basics)<br/>[Windows Server 2012](https://technet.microsoft.com/library/jj134246.aspx) |
-| [!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)] <br/><br/> [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)] 2013 | [BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md) |**SQL Server のハードウェアおよびソフトウェア要件**: <br/>[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)<br/>[SQL Server 2012](https://msdn.microsoft.com/library/ms143506(v=sql.110).aspx)<br/>[SQL Server 2008 R2](https://msdn.microsoft.com/library/ms143506(v=sql.105).aspx)<br/><br/>**Windows サーバーのハードウェア要件**: <br/>[Windows Server 2012](https://technet.microsoft.com/library/jj134246.aspx)<br/>[Windows Server 2008 R2](https://technet.microsoft.com/library/dd379511(v=ws.10).aspx)  |
+| [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [<span data-ttu-id="5d101-111">BizTalk Server 2016 のハードウェア/ソフトウェア要件</span><span class="sxs-lookup"><span data-stu-id="5d101-111">Hardware and Software Requirements for BizTalk Server 2016</span></span>](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md) | <span data-ttu-id="5d101-112">**SQL Server のハードウェアおよびソフトウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="5d101-112">**SQL Server hardware and software requirements**:</span></span> <br/><span data-ttu-id="5d101-113">[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)</span><span class="sxs-lookup"><span data-stu-id="5d101-113">[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)</span></span><br/><span data-ttu-id="5d101-114">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span><span class="sxs-lookup"><span data-stu-id="5d101-114">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span></span><br/><br/><span data-ttu-id="5d101-115">**Windows サーバーのハードウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="5d101-115">**Windows Server hardware requirements**:</span></span> <br/>[<span data-ttu-id="5d101-116">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="5d101-116">Windows Server 2016</span></span>](https://technet.microsoft.com/windows-server-docs/get-started/server-basics)<br/>[<span data-ttu-id="5d101-117">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="5d101-117">Windows Server 2012</span></span>](https://technet.microsoft.com/library/jj134246.aspx) |
+| [!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)] <br/><br/> [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="5d101-118"> 2013</span><span class="sxs-lookup"><span data-stu-id="5d101-118"> 2013</span></span> | [<span data-ttu-id="5d101-119">BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア</span><span class="sxs-lookup"><span data-stu-id="5d101-119">Hardware and Software Requirements for BizTalk Server 2013 and 2013 R2</span></span>](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md) |<span data-ttu-id="5d101-120">**SQL Server のハードウェアおよびソフトウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="5d101-120">**SQL Server hardware and software requirements**:</span></span> <br/><span data-ttu-id="5d101-121">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span><span class="sxs-lookup"><span data-stu-id="5d101-121">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span></span><br/><span data-ttu-id="5d101-122">[SQL Server 2012](https://msdn.microsoft.com/library/ms143506(v=sql.110).aspx)</span><span class="sxs-lookup"><span data-stu-id="5d101-122">[SQL Server 2012](https://msdn.microsoft.com/library/ms143506(v=sql.110).aspx)</span></span><br/><span data-ttu-id="5d101-123">[SQL Server 2008 R2](https://msdn.microsoft.com/library/ms143506(v=sql.105).aspx)</span><span class="sxs-lookup"><span data-stu-id="5d101-123">[SQL Server 2008 R2](https://msdn.microsoft.com/library/ms143506(v=sql.105).aspx)</span></span><br/><br/><span data-ttu-id="5d101-124">**Windows サーバーのハードウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="5d101-124">**Windows Server hardware requirements**:</span></span> <br/>[<span data-ttu-id="5d101-125">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="5d101-125">Windows Server 2012</span></span>](https://technet.microsoft.com/library/jj134246.aspx)<br/><span data-ttu-id="5d101-126">[Windows Server 2008 R2](https://technet.microsoft.com/library/dd379511(v=ws.10).aspx)</span><span class="sxs-lookup"><span data-stu-id="5d101-126">[Windows Server 2008 R2](https://technet.microsoft.com/library/dd379511(v=ws.10).aspx)</span></span>  |
 
 > [!TIP] 
-> ここにリストされているのは最小のハードウェア要件です。 環境はそれぞれ異なり、ご使用の環境ではこれらを超える要件が必要となる可能性は十分あります。 「[BizTalk Server ソリューションのインストール、サイズ変更、配置、およびメンテナンスを行うための推奨事項](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)」を参照してください。 
+> <span data-ttu-id="5d101-127">ここにリストされているのは最小のハードウェア要件です。</span><span class="sxs-lookup"><span data-stu-id="5d101-127">The hardware requirements listed are the minimum.</span></span> <span data-ttu-id="5d101-128">環境はそれぞれ異なり、ご使用の環境ではこれらを超える要件が必要となる可能性は十分あります。</span><span class="sxs-lookup"><span data-stu-id="5d101-128">Every environment is different and there's a very good chance that your environment may need more.</span></span> <span data-ttu-id="5d101-129">「[BizTalk Server ソリューションのインストール、サイズ変更、配置、およびメンテナンスを行うための推奨事項](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5d101-129">See [Recommendations for Installing, Sizing, Deploying, and Maintaining a BizTalk Server Solution](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx).</span></span> 
 
-## <a name="install-swift"></a>SWIFT をインストールします。
+## <a name="install-swift"></a><span data-ttu-id="5d101-130">SWIFT をインストールします。</span><span class="sxs-lookup"><span data-stu-id="5d101-130">Install SWIFT</span></span>
 
-### <a name="before-you-begin"></a>アンインストールの準備
+### <a name="before-you-begin"></a><span data-ttu-id="5d101-131">アンインストールの準備</span><span class="sxs-lookup"><span data-stu-id="5d101-131">Before you begin</span></span>
 
-* メンバーであるアカウントでサインインする、BizTalk Server 管理者グループ。 
-* BizTalk Server のダウンロード、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]のセットアップ、`\BizTalk Accelerators`フォルダーです。
-* BizTalk Server をインストールする必要があります、SQL Server を実行する必要があります。
-* サイレント インストールはサポートしますが、必要とされる追加の構成手順が複雑なのためお勧めできません。
-* A4SWIFT セットアップは、常にで動作、`/InstallPlatform`引数。 結果として、常に msvcr71.dll、mfc71u.dll、msvcp71.dll、およびインストール atl71.dll は Visual Studio の必要なです。 これらの DLL ファイルをインストール、`%WINDIR%\System32`フォルダー、かどうか、Dll 前にインストールされたか。
+* <span data-ttu-id="5d101-132">メンバーであるアカウントでサインインする、BizTalk Server 管理者グループ。</span><span class="sxs-lookup"><span data-stu-id="5d101-132">Sign in using an account that is a member of the the BizTalk Server Administrators group.</span></span> 
+* <span data-ttu-id="5d101-133">BizTalk Server のダウンロード、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]のセットアップ、`\BizTalk Accelerators`フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="5d101-133">In your BizTalk Server download, the [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] setup is in the `\BizTalk Accelerators` folder.</span></span>
+* <span data-ttu-id="5d101-134">BizTalk Server をインストールする必要があります、SQL Server を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5d101-134">BizTalk Server must be installed, and SQL Server must be running.</span></span>
+* <span data-ttu-id="5d101-135">サイレント インストールはサポートしますが、必要とされる追加の構成手順が複雑なのためお勧めできません。</span><span class="sxs-lookup"><span data-stu-id="5d101-135">A silent installation is supported, but is not recommended due to the complexity of the additional configuration steps that are required.</span></span>
+* <span data-ttu-id="5d101-136">A4SWIFT セットアップは、常にで動作、`/InstallPlatform`引数。</span><span class="sxs-lookup"><span data-stu-id="5d101-136">The A4SWIFT setup always runs with the `/InstallPlatform` argument.</span></span> <span data-ttu-id="5d101-137">結果として、常に msvcr71.dll、mfc71u.dll、msvcp71.dll、およびインストール atl71.dll は Visual Studio の必要なです。</span><span class="sxs-lookup"><span data-stu-id="5d101-137">As a result, the setup always installs msvcr71.dll, mfc71u.dll, msvcp71.dll, and atl71.dll, which are required for Visual Studio.</span></span> <span data-ttu-id="5d101-138">これらの DLL ファイルをインストール、`%WINDIR%\System32`フォルダー、かどうか、Dll 前にインストールされたか。</span><span class="sxs-lookup"><span data-stu-id="5d101-138">The setup installs these DLL files into the `%WINDIR%\System32` folder, whether the DLLs have been previously installed or not.</span></span>
 
-### <a name="default-installation"></a>既定のインストール
+### <a name="default-installation"></a><span data-ttu-id="5d101-139">既定のインストール</span><span class="sxs-lookup"><span data-stu-id="5d101-139">Default installation</span></span>
 
-1. 実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。
-2. **[インストール]**を選択します。
-3. **[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。 **[次へ]** を選択します。
-4. ライセンス契約を読み、クリックして**Accept**です。
-5. 選択**完了**、し、**次**です。
-6. 確認、**概要**ページ。 変更するには、次のように選択します。**戻る**です。
+1. <span data-ttu-id="5d101-140">実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。</span><span class="sxs-lookup"><span data-stu-id="5d101-140">Run the [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe** as Administrator.</span></span>
+2. <span data-ttu-id="5d101-141">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-141">Select **Install**.</span></span>
+3. <span data-ttu-id="5d101-142">**[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。</span><span class="sxs-lookup"><span data-stu-id="5d101-142">Enter your **User name**, your **Organization**, and your product key.</span></span> <span data-ttu-id="5d101-143">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-143">Select **Next**.</span></span>
+4. <span data-ttu-id="5d101-144">ライセンス契約を読み、クリックして**Accept**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-144">Read the licensing agreement, and then select **Accept**.</span></span>
+5. <span data-ttu-id="5d101-145">選択**完了**、し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-145">Select **Complete**, and then select **Next**.</span></span>
+6. <span data-ttu-id="5d101-146">確認、**概要**ページ。</span><span class="sxs-lookup"><span data-stu-id="5d101-146">Review the **Summary** page.</span></span> <span data-ttu-id="5d101-147">変更するには、次のように選択します。**戻る**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-147">To make any changes, select **Back**.</span></span>
 
-    システム再起動後に自動的にログオンするには、**[設定]** を選択して、サインイン アカウントを入力します。 これは、セットアップ中にのみ有効です。 セットアップが完了すると、この設定は無効になります。
+    <span data-ttu-id="5d101-148">システム再起動後に自動的にログオンするには、**[設定]** を選択して、サインイン アカウントを入力します。</span><span class="sxs-lookup"><span data-stu-id="5d101-148">To enable auto-logon after a system reboot, select **Set**, and enter the sign-in account.</span></span> <span data-ttu-id="5d101-149">これは、セットアップ中にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="5d101-149">This is only enabled during the setup.</span></span> <span data-ttu-id="5d101-150">セットアップが完了すると、この設定は無効になります。</span><span class="sxs-lookup"><span data-stu-id="5d101-150">When setup is complete, this setting is disabled.</span></span>
 
-    **[インストール]**を選択します。
+    <span data-ttu-id="5d101-151">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-151">Select **Install**.</span></span>
  
-7. 選択**完了**を完了するとします。 ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。
+7. <span data-ttu-id="5d101-152">選択**完了**を完了するとします。</span><span class="sxs-lookup"><span data-stu-id="5d101-152">Select **Finish** when complete.</span></span> <span data-ttu-id="5d101-153">ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。</span><span class="sxs-lookup"><span data-stu-id="5d101-153">A setup log file is generated in a temp folder, similar to: `C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`.</span></span>
 
 > [!NOTE] 
-> 場合**構成ウィザードの実行**がインストールの完了 ページで、選択されている、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]をクリックしたときに、構成ウィザードが自動的に実行されます**完了**です。 
+> <span data-ttu-id="5d101-154">場合**構成ウィザードの実行**がインストールの完了 ページで、選択されている、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]をクリックしたときに、構成ウィザードが自動的に実行されます**完了**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-154">If **Run Configuration Wizard** is selected on the Installation Completed page, the [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard runs automatically when you click **Finish**.</span></span> 
 
 
-### <a name="custom-installation"></a>カスタム インストール
+### <a name="custom-installation"></a><span data-ttu-id="5d101-155">カスタム インストール</span><span class="sxs-lookup"><span data-stu-id="5d101-155">Custom installation</span></span>
 
-1. 実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。
-2. **[インストール]**を選択します。
-3. **[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。 **[次へ]** を選択します。
-4. ライセンス契約を読み、クリックして**Accept**です。
-5. 選択**カスタム**、し、**次**です。
-6. コンポーネントを選択してから**次**:
+1. <span data-ttu-id="5d101-156">実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。</span><span class="sxs-lookup"><span data-stu-id="5d101-156">Run the [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe** as Administrator.</span></span>
+2. <span data-ttu-id="5d101-157">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-157">Select **Install**.</span></span>
+3. <span data-ttu-id="5d101-158">**[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。</span><span class="sxs-lookup"><span data-stu-id="5d101-158">Enter your **User name**, your **Organization**, and your product key.</span></span> <span data-ttu-id="5d101-159">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-159">Select **Next**.</span></span>
+4. <span data-ttu-id="5d101-160">ライセンス契約を読み、クリックして**Accept**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-160">Read the licensing agreement, and then select **Accept**.</span></span>
+5. <span data-ttu-id="5d101-161">選択**カスタム**、し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-161">Select **Custom**, and then select **Next**.</span></span>
+6. <span data-ttu-id="5d101-162">コンポーネントを選択してから**次**:</span><span class="sxs-lookup"><span data-stu-id="5d101-162">Select your components, and then select **Next**:</span></span>
 
-    | 選択するオプション | 目的 |
+    | <span data-ttu-id="5d101-163">選択するオプション</span><span class="sxs-lookup"><span data-stu-id="5d101-163">Select this</span></span> | <span data-ttu-id="5d101-164">目的</span><span class="sxs-lookup"><span data-stu-id="5d101-164">To do this</span></span> |
     | --- | --- |
-    | A4Swift のコンポーネント | BizTalk Server に SWIFT メッセージの処理 (スキーマの解決、解析、検証) するために必要 |
-    | メッセージの修復と調整 | パイプライン、オーケストレーション、および実行時のスキーマをインストールします。 SQL Server のメッセージング、修復、および調整の A4SWIFT データベースを作成します。 |
-    | メッセージ repair and new submission の web コンポーネント | Message Repair and New Submission の web サービスを検証、証明書のセキュリティ、履歴、および BIC 参照を作成するのには、コンポーネントをインストールします。 |
-    | ソフトウェア開発キット (SDK) | Visual Studio のサンプル ソース コード、ツールキット、および starter プロジェクトが含まれています。 | 
-    | BRE 配置ユーティリティ | 既に展開されている SWIFT のメッセージの種類に関連付ける、ビジネス ルール エンジン (BRE) ポリシーを配置するためのユーティリティ。 |
-    | チュートリアル | Iincludes 指示と BizTalk Server では、迅速なソリューションを開発するためのサンプルです。 |
-    | ツール | A4SWIFT の開発用ツールが含まれます。 |
-    | ソース | A4SWIFT の開発のソース コードのサンプルをインストールします。 |
+    | <span data-ttu-id="5d101-165">A4Swift のコンポーネント</span><span class="sxs-lookup"><span data-stu-id="5d101-165">A4Swift components</span></span> | <span data-ttu-id="5d101-166">BizTalk Server に SWIFT メッセージの処理 (スキーマの解決、解析、検証) するために必要</span><span class="sxs-lookup"><span data-stu-id="5d101-166">Required to process (schema resolution, parsing, validation) of SWIFT messages with BizTalk Server</span></span> |
+    | <span data-ttu-id="5d101-167">メッセージの修復と調整</span><span class="sxs-lookup"><span data-stu-id="5d101-167">Message repair and reconciliation</span></span> | <span data-ttu-id="5d101-168">パイプライン、オーケストレーション、および実行時のスキーマをインストールします。</span><span class="sxs-lookup"><span data-stu-id="5d101-168">Install pipelines, orchestrations, and runtime schemas.</span></span> <span data-ttu-id="5d101-169">SQL Server のメッセージング、修復、および調整の A4SWIFT データベースを作成します。</span><span class="sxs-lookup"><span data-stu-id="5d101-169">Creates the A4SWIFT database in SQL Server for messaging, repair, and reconciliation.</span></span> |
+    | <span data-ttu-id="5d101-170">メッセージ repair and new submission の web コンポーネント</span><span class="sxs-lookup"><span data-stu-id="5d101-170">Web components for message repair and new submission</span></span> | <span data-ttu-id="5d101-171">Message Repair and New Submission の web サービスを検証、証明書のセキュリティ、履歴、および BIC 参照を作成するのには、コンポーネントをインストールします。</span><span class="sxs-lookup"><span data-stu-id="5d101-171">Installs the component for Message Repair and New Submission that create web services for validation, certificate security, history, and BIC lookup.</span></span> |
+    | <span data-ttu-id="5d101-172">ソフトウェア開発キット (SDK)</span><span class="sxs-lookup"><span data-stu-id="5d101-172">Software Development Kit (SDK)</span></span> | <span data-ttu-id="5d101-173">Visual Studio のサンプル ソース コード、ツールキット、および starter プロジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="5d101-173">Includes sample source code, toolkits, and starter projects for Visual Studio.</span></span> | 
+    | <span data-ttu-id="5d101-174">BRE 配置ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="5d101-174">BRE Deployment Utility</span></span> | <span data-ttu-id="5d101-175">既に展開されている SWIFT のメッセージの種類に関連付ける、ビジネス ルール エンジン (BRE) ポリシーを配置するためのユーティリティ。</span><span class="sxs-lookup"><span data-stu-id="5d101-175">Utility for deploying Business Rule Engine (BRE) policies associated with SWIFT message types that are already deployed.</span></span> |
+    | <span data-ttu-id="5d101-176">チュートリアル</span><span class="sxs-lookup"><span data-stu-id="5d101-176">Tutorial</span></span> | <span data-ttu-id="5d101-177">Iincludes 指示と BizTalk Server では、迅速なソリューションを開発するためのサンプルです。</span><span class="sxs-lookup"><span data-stu-id="5d101-177">Iincludes instructions and samples for developing a SWIFT solution in BizTalk Server.</span></span> |
+    | <span data-ttu-id="5d101-178">ツール</span><span class="sxs-lookup"><span data-stu-id="5d101-178">Tools</span></span> | <span data-ttu-id="5d101-179">A4SWIFT の開発用ツールが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5d101-179">Includes tools for A4SWIFT development.</span></span> |
+    | <span data-ttu-id="5d101-180">ソース</span><span class="sxs-lookup"><span data-stu-id="5d101-180">Source</span></span> | <span data-ttu-id="5d101-181">A4SWIFT の開発のソース コードのサンプルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="5d101-181">Installs sample source code for A4SWIFT development.</span></span> |
     
-6. 確認、**概要**ページ。 変更するには、次のように選択します。**戻る**です。
+6. <span data-ttu-id="5d101-182">確認、**概要**ページ。</span><span class="sxs-lookup"><span data-stu-id="5d101-182">Review the **Summary** page.</span></span> <span data-ttu-id="5d101-183">変更するには、次のように選択します。**戻る**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-183">To make any changes, select **Back**.</span></span>
 
-    **[インストール]**を選択します。
+    <span data-ttu-id="5d101-184">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-184">Select **Install**.</span></span>
  
-7. 選択**完了**を完了するとします。 ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。
+7. <span data-ttu-id="5d101-185">選択**完了**を完了するとします。</span><span class="sxs-lookup"><span data-stu-id="5d101-185">Select **Finish** when complete.</span></span> <span data-ttu-id="5d101-186">ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。</span><span class="sxs-lookup"><span data-stu-id="5d101-186">A setup log file is generated in a temp folder, similar to: `C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`.</span></span>
 
 > [!NOTE]
-> 場合**構成ウィザードの実行**がインストールの完了 ページで、選択されている、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]をクリックしたときに、構成ウィザードが自動的に実行されます**完了**です。 
+> <span data-ttu-id="5d101-187">場合**構成ウィザードの実行**がインストールの完了 ページで、選択されている、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]をクリックしたときに、構成ウィザードが自動的に実行されます**完了**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-187">If **Run Configuration Wizard** is selected on the Installation Completed page, the [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard runs automatically when you click **Finish**.</span></span> 
 
-## <a name="next-steps"></a>次の手順
-[SWIFT の BizTalk アクセラレータを構成します。](../../adapters-and-accelerators/accelerator-swift/configure-biztalk-accelerator-for-swift.md)
+## <a name="next-steps"></a><span data-ttu-id="5d101-188">次の手順</span><span class="sxs-lookup"><span data-stu-id="5d101-188">Next steps</span></span>
+[<span data-ttu-id="5d101-189">SWIFT の BizTalk アクセラレータを構成します。</span><span class="sxs-lookup"><span data-stu-id="5d101-189">Configure BizTalk Accelerator for SWIFT </span></span>](../../adapters-and-accelerators/accelerator-swift/configure-biztalk-accelerator-for-swift.md)

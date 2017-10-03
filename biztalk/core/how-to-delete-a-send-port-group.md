@@ -22,27 +22,27 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-delete-a-send-port-group"></a>送信ポート グループを削除する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポート グループを BizTalk アプリケーションから削除する方法について説明します。 送信ポート グループを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも送信ポート グループが削除されます。 送信ポート グループを削除しても、そこに含まれる送信ポートは削除されません。  
+# <a name="how-to-delete-a-send-port-group"></a><span data-ttu-id="e4806-102">送信ポート グループを削除する方法</span><span class="sxs-lookup"><span data-stu-id="e4806-102">How to Delete a Send Port Group</span></span>
+<span data-ttu-id="e4806-103">このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポート グループを BizTalk アプリケーションから削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e4806-103">This topic describes how use the BizTalk Server Administration console to delete a send port group from a BizTalk application.</span></span> <span data-ttu-id="e4806-104">送信ポート グループを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも送信ポート グループが削除されます。</span><span class="sxs-lookup"><span data-stu-id="e4806-104">When you do this, the send port group is also deleted from the BizTalk Management database for the group.</span></span> <span data-ttu-id="e4806-105">送信ポート グループを削除しても、そこに含まれる送信ポートは削除されません。</span><span class="sxs-lookup"><span data-stu-id="e4806-105">Deleting a send port group does not delete any send ports that it contains.</span></span>  
   
- 送信ポート グループを削除できるのは、次の条件を満たしている場合だけです。  
+ <span data-ttu-id="e4806-106">送信ポート グループを削除できるのは、次の条件を満たしている場合だけです。</span><span class="sxs-lookup"><span data-stu-id="e4806-106">You can delete a send port group only if it meets the following conditions:</span></span>  
   
--   送信ポート グループにオーケストレーションがバインドされていない:  次の手順で、バインドを解除するには大文字と小文字の場合は、[オーケストレーションをバインド解除する方法](../core/how-to-unbind-an-orchestration.md)です。  
+-   <span data-ttu-id="e4806-107">送信ポート グループにオーケストレーションがバインドされていない: </span><span class="sxs-lookup"><span data-stu-id="e4806-107">An orchestration is not bound to the send port group.</span></span> <span data-ttu-id="e4806-108">次の手順で、バインドを解除するには大文字と小文字の場合は、[オーケストレーションをバインド解除する方法](../core/how-to-unbind-an-orchestration.md)です。</span><span class="sxs-lookup"><span data-stu-id="e4806-108">If this is the case, you can remove the binding by following the instructions in [How to Unbind an Orchestration](../core/how-to-unbind-an-orchestration.md).</span></span>  
   
--   送信ポート グループが停止および参加解除されている:  停止し、送信ポートを参加解除の手順については、次を参照してください。[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)と[送信ポートまたは送信ポート グループを停止する方法](../core/how-to-stop-a-send-port-or-send-port-group.md)です。  
+-   <span data-ttu-id="e4806-109">送信ポート グループが停止および参加解除されている: </span><span class="sxs-lookup"><span data-stu-id="e4806-109">The send port group is both stopped and unenlisted.</span></span> <span data-ttu-id="e4806-110">停止し、送信ポートを参加解除の手順については、次を参照してください。[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)と[送信ポートまたは送信ポート グループを停止する方法](../core/how-to-stop-a-send-port-or-send-port-group.md)です。</span><span class="sxs-lookup"><span data-stu-id="e4806-110">For instructions on stopping and unenlisting a send port, see [How to Unenlist a Send Port or Send Port Group](../core/how-to-unenlist-a-send-port-or-send-port-group.md) and [How to Stop a Send Port or Send Port Group](../core/how-to-stop-a-send-port-or-send-port-group.md).</span></span>  
   
--   送信ポート グループがパーティで参照されていない:  パーティから送信ポート グループへの参照を削除する方法の詳細については、次を参照してください。[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)です。  
+-   <span data-ttu-id="e4806-111">送信ポート グループがパーティで参照されていない: </span><span class="sxs-lookup"><span data-stu-id="e4806-111">The send port group is not referenced by a party.</span></span> <span data-ttu-id="e4806-112">パーティから送信ポート グループへの参照を削除する方法の詳細については、次を参照してください。[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)です。</span><span class="sxs-lookup"><span data-stu-id="e4806-112">For instructions on removing a reference to a send port group from a party, see [How to View or Edit a Party](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca).</span></span>  
   
-## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+## <a name="prerequisites"></a><span data-ttu-id="e4806-113">前提条件</span><span class="sxs-lookup"><span data-stu-id="e4806-113">Prerequisites</span></span>  
+ <span data-ttu-id="e4806-114">このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4806-114">To perform the procedure in this topic, you must be logged on as a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="e4806-115">詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="e4806-115">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
   
-### <a name="to-delete-a-send-port-group"></a>送信ポート グループを削除するには  
+### <a name="to-delete-a-send-port-group"></a><span data-ttu-id="e4806-116">送信ポート グループを削除するには</span><span class="sxs-lookup"><span data-stu-id="e4806-116">To delete a send port group</span></span>  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  <span data-ttu-id="e4806-117">をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="e4806-117">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、BizTalk グループを展開し、**アプリケーション**、し、削除する送信ポート グループを含むアプリケーションを展開します。  
+2.  <span data-ttu-id="e4806-118">コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、BizTalk グループを展開し、**アプリケーション**、し、削除する送信ポート グループを含むアプリケーションを展開します。</span><span class="sxs-lookup"><span data-stu-id="e4806-118">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, expand **Applications**, and then expand the application containing the send port group that you want to delete.</span></span>  
   
-3.  をクリックして**送信ポート グループ**送信ポート グループを右クリックし、クリックして**削除**です。  
+3.  <span data-ttu-id="e4806-119">をクリックして**送信ポート グループ**送信ポート グループを右クリックし、クリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="e4806-119">Click **Send Port Groups**, right-click the send port group, and then click **Delete**.</span></span>  
   
-## <a name="see-also"></a>参照  
- [作成して、送信ポート グループを構成します。](../core/creating-and-configuring-send-port-groups.md)
+## <a name="see-also"></a><span data-ttu-id="e4806-120">参照</span><span class="sxs-lookup"><span data-stu-id="e4806-120">See Also</span></span>  
+ [<span data-ttu-id="e4806-121">作成して、送信ポート グループを構成します。</span><span class="sxs-lookup"><span data-stu-id="e4806-121">Creating and Configuring Send Port Groups</span></span>](../core/creating-and-configuring-send-port-groups.md)

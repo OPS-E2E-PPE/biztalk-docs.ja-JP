@@ -24,8 +24,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-a-wmi-sink-for-auditing-and-logging-events"></a>監査イベントおよびログ記録用の WMI シンクを作成します。
-次のサンプル コードを使用して作成することができます、 [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Management Instrumentation (WMI) シンクの監査とイベントのログ記録を監視します。  
+# <a name="creating-a-wmi-sink-for-auditing-and-logging-events"></a><span data-ttu-id="28689-102">監査イベントおよびログ記録用の WMI シンクを作成します。</span><span class="sxs-lookup"><span data-stu-id="28689-102">Creating a WMI Sink for Auditing and Logging Events</span></span>
+<span data-ttu-id="28689-103">次のサンプル コードを使用して作成することができます、 [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Management Instrumentation (WMI) シンクの監査とイベントのログ記録を監視します。</span><span class="sxs-lookup"><span data-stu-id="28689-103">You can use the following sample code to create a [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Management Instrumentation (WMI) sink to monitor auditing and logging events:</span></span>  
   
  `//Create the WMI query and Event watcher and subscribe to events`  
   
@@ -35,5 +35,5 @@ ms.lasthandoff: 09/20/2017
   
  `//Do what you want with the event`  
   
-## <a name="see-also"></a>参照  
- [プログラミング ガイド](../../adapters-and-accelerators/accelerator-hl7/programming-guide1.md)
+## <a name="see-also"></a><span data-ttu-id="28689-104">参照</span><span class="sxs-lookup"><span data-stu-id="28689-104">See Also</span></span>  
+ [<span data-ttu-id="28689-105">プログラミング ガイド</span><span class="sxs-lookup"><span data-stu-id="28689-105">Programming Guide</span></span>](../../adapters-and-accelerators/accelerator-hl7/programming-guide1.md)

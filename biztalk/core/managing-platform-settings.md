@@ -22,15 +22,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="managing-platform-settings"></a>プラットフォームの設定の管理
-このセクションのトピックでは、ホスト、ホスト インスタンス、サーバー、メッセージ ボックス データベースの管理方法と、アダプターの使用方法について説明します。  
+# <a name="managing-platform-settings"></a><span data-ttu-id="678d7-102">プラットフォームの設定の管理</span><span class="sxs-lookup"><span data-stu-id="678d7-102">Managing Platform Settings</span></span>
+<span data-ttu-id="678d7-103">このセクションのトピックでは、ホスト、ホスト インスタンス、サーバー、メッセージ ボックス データベースの管理方法と、アダプターの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="678d7-103">The topics in this section describe how to manage hosts, host instances, servers, MessageBox databases, and how to use adapters.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="678d7-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="678d7-104">In This Section</span></span>  
   
--   [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)  
+-   [<span data-ttu-id="678d7-105">BizTalk ホストとホスト インスタンスの管理</span><span class="sxs-lookup"><span data-stu-id="678d7-105">Managing BizTalk Hosts and Host Instances</span></span>](../core/managing-biztalk-hosts-and-host-instances.md)  
   
--   [サーバーを管理します。](../core/managing-servers.md)  
+-   [<span data-ttu-id="678d7-106">サーバーを管理します。</span><span class="sxs-lookup"><span data-stu-id="678d7-106">Managing Servers</span></span>](../core/managing-servers.md)  
   
--   [メッセージ ボックス データベースの管理](../core/managing-messagebox-databases.md)  
+-   [<span data-ttu-id="678d7-107">メッセージ ボックス データベースの管理</span><span class="sxs-lookup"><span data-stu-id="678d7-107">Managing MessageBox Databases</span></span>](../core/managing-messagebox-databases.md)  
   
--   [アダプターを使用します。](../core/using-adapters.md)
+-   [<span data-ttu-id="678d7-108">アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="678d7-108">Using Adapters</span></span>](../core/using-adapters.md)

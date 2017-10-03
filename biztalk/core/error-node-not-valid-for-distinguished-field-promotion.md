@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---node-not-valid-for-distinguished-field-promotion"></a>エラー - ノードが識別フィールドの昇格では無効です。
-**エラー コード**  
+# <a name="error---node-not-valid-for-distinguished-field-promotion"></a><span data-ttu-id="4ef68-102">エラー - ノードが識別フィールドの昇格では無効です。</span><span class="sxs-lookup"><span data-stu-id="4ef68-102">Error - Node Not Valid For Distinguished Field Promotion</span></span>
+<span data-ttu-id="4ef68-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="4ef68-103">**Error Code**</span></span>  
   
- BEC2014  
+ <span data-ttu-id="4ef68-104">BEC2014</span><span class="sxs-lookup"><span data-stu-id="4ef68-104">BEC2014</span></span>  
   
- **説明**  
+ <span data-ttu-id="4ef68-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="4ef68-105">**Explanation**</span></span>  
   
- 対象のノードには、必要なテキスト コンテンツを含めることができないため、そのノードを識別フィールドとして昇格できません。 のみ**フィールド要素**ノード、**フィールド属性**ノード、または**レコード**混合コンテンツまたは単純なコンテンツを持つノードを識別フィールドとして昇格されることができます。  
+ <span data-ttu-id="4ef68-106">対象のノードには、必要なテキスト コンテンツを含めることができないため、そのノードを識別フィールドとして昇格できません。</span><span class="sxs-lookup"><span data-stu-id="4ef68-106">The indicated node cannot be promoted as a Distinguished Field because it cannot contain the required text content.</span></span> <span data-ttu-id="4ef68-107">のみ**フィールド要素**ノード、**フィールド属性**ノード、または**レコード**混合コンテンツまたは単純なコンテンツを持つノードを識別フィールドとして昇格されることができます。</span><span class="sxs-lookup"><span data-stu-id="4ef68-107">Only **Field Element** nodes, **Field Attribute** nodes, or **Record** nodes with mixed or simple content can be promoted as Distinguished Fields.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="4ef68-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="4ef68-108">**User Action**</span></span>  
   
- 使用して、**識別フィールド**のタブ、**プロパティの昇格**ダイアログ ボックス、許可されていないプロパティの昇格を削除します。
+ <span data-ttu-id="4ef68-109">使用して、**識別フィールド**のタブ、**プロパティの昇格**ダイアログ ボックス、許可されていないプロパティの昇格を削除します。</span><span class="sxs-lookup"><span data-stu-id="4ef68-109">Use the **Distinguished Fields** tab of the **Promote Properties** dialog box to remove the disallowed property promotion.</span></span>

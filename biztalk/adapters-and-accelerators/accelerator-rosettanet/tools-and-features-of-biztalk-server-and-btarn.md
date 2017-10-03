@@ -23,15 +23,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="tools-and-features-of-biztalk-server-and-btarn"></a>BizTalk Server および BTARN のツールおよび機能
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のユーザーは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Server のロール ベースの機能やツールに加えて、ハイテク製造業界向けにカスタマイズされた [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 固有のツールや機能にもアクセスできます。 ここでは、それらの機能やツールについて説明します。  
+# <a name="tools-and-features-of-biztalk-server-and-btarn"></a><span data-ttu-id="71f67-102">BizTalk Server および BTARN のツールおよび機能</span><span class="sxs-lookup"><span data-stu-id="71f67-102">Tools and Features of BizTalk Server and BTARN</span></span>
+<span data-ttu-id="71f67-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のユーザーは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Server のロール ベースの機能やツールに加えて、ハイテク製造業界向けにカスタマイズされた [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 固有のツールや機能にもアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="71f67-103">Users of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] have access to the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Server role-based features and tools, as well as [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]-specific tools and features customized to the high-technology manufacturing industry.</span></span> <span data-ttu-id="71f67-104">ここでは、それらの機能やツールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="71f67-104">This section describes those features and tools.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="71f67-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="71f67-105">In This Section</span></span>  
   
--   [ロール ベースの製品](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)  
+-   [<span data-ttu-id="71f67-106">ロール ベースの製品</span><span class="sxs-lookup"><span data-stu-id="71f67-106">A Role-Based Product</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)  
   
--   [BizTalk のデザイン時ツール](../../adapters-and-accelerators/accelerator-rosettanet/biztalk-design-time-tools.md)  
+-   [<span data-ttu-id="71f67-107">BizTalk のデザイン時ツール</span><span class="sxs-lookup"><span data-stu-id="71f67-107">BizTalk Design-Time Tools</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/biztalk-design-time-tools.md)  
   
--   [管理およびランタイム ツール](../../adapters-and-accelerators/accelerator-rosettanet/administration-and-run-time-tools.md)  
+-   [<span data-ttu-id="71f67-108">管理およびランタイム ツール</span><span class="sxs-lookup"><span data-stu-id="71f67-108">Administration and Run-Time Tools</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/administration-and-run-time-tools.md)  
   
--   [分析ツール](../../adapters-and-accelerators/accelerator-rosettanet/analysis-tools1.md)
+-   [<span data-ttu-id="71f67-109">分析ツール</span><span class="sxs-lookup"><span data-stu-id="71f67-109">Analysis Tools</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/analysis-tools1.md)

@@ -18,93 +18,93 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-general-settings-x12"></a>全般的な設定の構成 (X12)
-全般設定で指定する項目は、アグリーメント名、使用するプロトコル (X12 または EDIFACT)、このアグリーメントを結ぶパーティとプロファイル、およびこのアグリーメントを介して処理される全メッセージに対してレポート機能を有効にするかどうかです。 また、アグリーメントの中でパーティの連絡先情報を指定することもできます。  
+# <a name="configuring-general-settings-x12"></a><span data-ttu-id="d2992-102">全般的な設定の構成 (X12)</span><span class="sxs-lookup"><span data-stu-id="d2992-102">Configuring General Settings (X12)</span></span>
+<span data-ttu-id="d2992-103">全般設定で指定する項目は、アグリーメント名、使用するプロトコル (X12 または EDIFACT)、このアグリーメントを結ぶパーティとプロファイル、およびこのアグリーメントを介して処理される全メッセージに対してレポート機能を有効にするかどうかです。</span><span class="sxs-lookup"><span data-stu-id="d2992-103">As part of the general settings, you specify agreement name, the protocol it will use (X12 or EDIFACT), the parties and profiles that the agreement is between, and whether to have reporting enabled for all messages processed through the agreement.</span></span> <span data-ttu-id="d2992-104">また、アグリーメントの中でパーティの連絡先情報を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="d2992-104">You can also specify the party contact information as part of the agreement.</span></span>  
   
-## <a name="prerequisites"></a>前提条件  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
+## <a name="prerequisites"></a><span data-ttu-id="d2992-105">前提条件</span><span class="sxs-lookup"><span data-stu-id="d2992-105">Prerequisites</span></span>  
+ <span data-ttu-id="d2992-106">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2992-106">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
   
-### <a name="to-configure-general-agreement-settings"></a>アグリーメントの全般設定を構成するには  
+### <a name="to-configure-general-agreement-settings"></a><span data-ttu-id="d2992-107">アグリーメントの全般設定を構成するには</span><span class="sxs-lookup"><span data-stu-id="d2992-107">To configure general agreement settings</span></span>  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**パーティ**し、コンソール ツリーで、、**パーティとビジネス プロファイル**] ページで、アグリーメントの一部にする必要があるビジネス プロファイルを右クリックします。作成し、[**新規**、クリックして**アグリーメント**です。  
+1.  <span data-ttu-id="d2992-108">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**パーティ**し、コンソール ツリーで、、**パーティとビジネス プロファイル**] ページで、アグリーメントの一部にする必要があるビジネス プロファイルを右クリックします。作成し、[**新規**、クリックして**アグリーメント**です。</span><span class="sxs-lookup"><span data-stu-id="d2992-108">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, click **Parties** in the console tree, and in the **Parties and Business Profiles** page, right-click a business profile that must be part of the agreement that you are creating, point to **New**, and then click **Agreement**.</span></span>  
   
-2.  次の表は、さまざまなプロパティと値をプロパティに指定する、**全般プロパティ**ページ。  
+2.  <span data-ttu-id="d2992-109">次の表は、さまざまなプロパティと値をプロパティに指定する、**全般プロパティ**ページ。</span><span class="sxs-lookup"><span data-stu-id="d2992-109">The following tables list the different properties and the values to be specified for the properties in the **General Properties** page.</span></span>  
   
-    1.  **アグリーメントのパラメーター**セクションで、次の操作します。  
+    1.  <span data-ttu-id="d2992-110">**アグリーメントのパラメーター**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="d2992-110">In the **Agreement Parameters** section, do the following:</span></span>  
   
-        |プロパティ|目的|  
+        |<span data-ttu-id="d2992-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d2992-111">Use this</span></span>|<span data-ttu-id="d2992-112">目的</span><span class="sxs-lookup"><span data-stu-id="d2992-112">To do this</span></span>|  
         |--------------|----------------|  
-        |**名前**|このアグリーメントの名前を指定します。|  
-        |**ID**|アグリーメントの一意な ID が表示されます。 このテキスト ボックスは編集できませんしをクリックした後、アグリーメント ID が表示されます**適用**の最初の時刻と設定が受け入れられます。|  
-        |**[状態]**|アグリーメントの状態を指定します。 既定では、アグリーメントの作成、 **Active**状態です。 場合は、作成した最初の select があるときに無効にするアグリーメント**無効になっている**ドロップダウン リストからです。|  
-        |**[プロトコル]**|アグリーメントのプロトコルを指定します。 X12 エンコード プロトコルの選択**X12**ドロップダウン リストからです。|  
+        |<span data-ttu-id="d2992-113">**名前**</span><span class="sxs-lookup"><span data-stu-id="d2992-113">**Name**</span></span>|<span data-ttu-id="d2992-114">このアグリーメントの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2992-114">Specify a name for the agreement</span></span>|  
+        |<span data-ttu-id="d2992-115">**ID**</span><span class="sxs-lookup"><span data-stu-id="d2992-115">**ID**</span></span>|<span data-ttu-id="d2992-116">アグリーメントの一意な ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d2992-116">Lists unique identification for the agreement.</span></span> <span data-ttu-id="d2992-117">このテキスト ボックスは編集できませんしをクリックした後、アグリーメント ID が表示されます**適用**の最初の時刻と設定が受け入れられます。</span><span class="sxs-lookup"><span data-stu-id="d2992-117">This text box is not editable and will display the agreement ID after you click **Apply** for the first time and settings are accepted.</span></span>|  
+        |<span data-ttu-id="d2992-118">**[状態]**</span><span class="sxs-lookup"><span data-stu-id="d2992-118">**Status**</span></span>|<span data-ttu-id="d2992-119">アグリーメントの状態を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2992-119">Specifies the status of the agreement.</span></span> <span data-ttu-id="d2992-120">既定では、アグリーメントの作成、 **Active**状態です。</span><span class="sxs-lookup"><span data-stu-id="d2992-120">By default, an agreement is created in an **Active** state.</span></span> <span data-ttu-id="d2992-121">場合は、作成した最初の select があるときに無効にするアグリーメント**無効になっている**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="d2992-121">If you want the agreement to be disabled when it is first created, select **Disabled** from the drop-down list.</span></span>|  
+        |<span data-ttu-id="d2992-122">**[プロトコル]**</span><span class="sxs-lookup"><span data-stu-id="d2992-122">**Protocol**</span></span>|<span data-ttu-id="d2992-123">アグリーメントのプロトコルを指定します。</span><span class="sxs-lookup"><span data-stu-id="d2992-123">Specifies the protocol for the agreement.</span></span> <span data-ttu-id="d2992-124">X12 エンコード プロトコルの選択**X12**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="d2992-124">For an X12 encoding protocol, select **X12** from the drop-down list.</span></span>|  
   
-    2.  **最初のパートナーと**セクションで、次の操作します。  
+    2.  <span data-ttu-id="d2992-125">**最初のパートナーと**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="d2992-125">In the **First Partner** section, do the following:</span></span>  
   
-        |プロパティ|目的|  
+        |<span data-ttu-id="d2992-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d2992-126">Use this</span></span>|<span data-ttu-id="d2992-127">目的</span><span class="sxs-lookup"><span data-stu-id="d2992-127">To do this</span></span>|  
         |--------------|----------------|  
-        |**名前**|このアグリーメントの作成に使用するビジネス プロファイルが属するパートナーの名前が表示されます。 このテキスト ボックスは編集できません。|  
-        |**プロファイル**|このアグリーメントの作成に使用するプロファイルの名前を表示します。 このテキスト ボックスは編集できません。|  
-        |**プロトコル セット**|ビジネス プロファイルの一部として X12 プロトコル セットを作成した場合は、ドロップダウン リストからそのセットを選択できます。 ビジネス プロファイルの一部として X12 プロトコル セットを作成していない場合は、空白のまま残しておきます。|  
+        |<span data-ttu-id="d2992-128">**名前**</span><span class="sxs-lookup"><span data-stu-id="d2992-128">**Name**</span></span>|<span data-ttu-id="d2992-129">このアグリーメントの作成に使用するビジネス プロファイルが属するパートナーの名前が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d2992-129">Displays the partner name that has the business profile for which you are creating the agreement.</span></span> <span data-ttu-id="d2992-130">このテキスト ボックスは編集できません。</span><span class="sxs-lookup"><span data-stu-id="d2992-130">This text box is not editable.</span></span>|  
+        |<span data-ttu-id="d2992-131">**プロファイル**</span><span class="sxs-lookup"><span data-stu-id="d2992-131">**Profile**</span></span>|<span data-ttu-id="d2992-132">このアグリーメントの作成に使用するプロファイルの名前を表示します。</span><span class="sxs-lookup"><span data-stu-id="d2992-132">Displays the name of the profile for which you are creating the agreement.</span></span> <span data-ttu-id="d2992-133">このテキスト ボックスは編集できません。</span><span class="sxs-lookup"><span data-stu-id="d2992-133">This text box is not editable.</span></span>|  
+        |<span data-ttu-id="d2992-134">**プロトコル セット**</span><span class="sxs-lookup"><span data-stu-id="d2992-134">**Protocol Set**</span></span>|<span data-ttu-id="d2992-135">ビジネス プロファイルの一部として X12 プロトコル セットを作成した場合は、ドロップダウン リストからそのセットを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d2992-135">If you created an X12 protocol set as part of the business profile, you can select that from the drop-down list.</span></span> <span data-ttu-id="d2992-136">ビジネス プロファイルの一部として X12 プロトコル セットを作成していない場合は、空白のまま残しておきます。</span><span class="sxs-lookup"><span data-stu-id="d2992-136">If you did not create an X12 protocol set as part of the business profile, you can leave this empty.</span></span>|  
   
-    3.  **2 番目のパートナー**セクションで、次の操作します。  
+    3.  <span data-ttu-id="d2992-137">**2 番目のパートナー**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="d2992-137">In the **Second Partner** section, do the following:</span></span>  
   
-        |プロパティ|目的|  
+        |<span data-ttu-id="d2992-138">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d2992-138">Use this</span></span>|<span data-ttu-id="d2992-139">目的</span><span class="sxs-lookup"><span data-stu-id="d2992-139">To do this</span></span>|  
         |--------------|----------------|  
-        |**名前**|ドロップダウン リストから、アグリーメントの作成に使用するビジネス プロファイルが属するパーティを選択します。|  
-        |**プロファイル**|ドロップダウン リストから、アグリーメントの作成に使用するプロファイルを選択します。|  
-        |**プロトコル セット**|ビジネス プロファイルの一部として X12 プロトコル セットを作成した場合は、ドロップダウン リストからそのセットを選択できます。 ビジネス プロファイルの一部として X12 プロトコル セットを作成していない場合は、空白のまま残しておきます。|  
+        |<span data-ttu-id="d2992-140">**名前**</span><span class="sxs-lookup"><span data-stu-id="d2992-140">**Name**</span></span>|<span data-ttu-id="d2992-141">ドロップダウン リストから、アグリーメントの作成に使用するビジネス プロファイルが属するパーティを選択します。</span><span class="sxs-lookup"><span data-stu-id="d2992-141">From the drop-down select a party that has the business profile with which you want to create an agreement.</span></span>|  
+        |<span data-ttu-id="d2992-142">**プロファイル**</span><span class="sxs-lookup"><span data-stu-id="d2992-142">**Profile**</span></span>|<span data-ttu-id="d2992-143">ドロップダウン リストから、アグリーメントの作成に使用するプロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="d2992-143">From the drop-down select a profile with which you want to create an agreement.</span></span>|  
+        |<span data-ttu-id="d2992-144">**プロトコル セット**</span><span class="sxs-lookup"><span data-stu-id="d2992-144">**Protocol Set**</span></span>|<span data-ttu-id="d2992-145">ビジネス プロファイルの一部として X12 プロトコル セットを作成した場合は、ドロップダウン リストからそのセットを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d2992-145">If you created an X12 protocol set as part of the business profile, you can select that from the drop-down list.</span></span> <span data-ttu-id="d2992-146">ビジネス プロファイルの一部として X12 プロトコル セットを作成していない場合は、空白のまま残しておきます。</span><span class="sxs-lookup"><span data-stu-id="d2992-146">If you did not create an X12 protocol set as part of the business profile, you can leave this empty.</span></span>|  
   
         > [!TIP]
-        >  キーを押して`CTRL`は、アグリーメントの一部にする、いずれかのビジネス プロファイルを右クリックし、 をポイントするビジネス プロファイルを選択して**新規**、順にクリック**アグリーメント**です。 値は、パートナー名と、両方のパートナーのビジネス プロファイルで自動的に設定されますが、**アグリーメントのプロパティ** ダイアログ ボックス。  
+        >  <span data-ttu-id="d2992-147">キーを押して`CTRL`は、アグリーメントの一部にする、いずれかのビジネス プロファイルを右クリックし、 をポイントするビジネス プロファイルを選択して**新規**、順にクリック**アグリーメント**です。</span><span class="sxs-lookup"><span data-stu-id="d2992-147">Press `CTRL`, select the business profiles that will be part of the agreement, right-click either business profile, point to **New**, and then click **Agreement**.</span></span> <span data-ttu-id="d2992-148">値は、パートナー名と、両方のパートナーのビジネス プロファイルで自動的に設定されますが、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="d2992-148">The values for partner name and business profiles for both the partners will be automatically populated in the **Agreement Properties** dialog box.</span></span>  
   
         > [!NOTE]
-        >  2 つのタブが横に追加された別のプロファイルを選択するとすぐに、**全般**タブです。各タブは、2 つのパーティ間の一方向の X12 アグリーメントを表します。 このタブを使用して、インターチェンジやトランザクション セット関連の設定を指定します。 詳細については、次を参照してください。[インターチェンジの設定を構成する (X12)](../core/configuring-interchange-settings-x12.md)と[構成トランザクション セットの設定 (X12)](../core/configuring-transaction-set-settings-x12.md)です。  
+        >  <span data-ttu-id="d2992-149">2 つのタブが横に追加された別のプロファイルを選択するとすぐに、**全般**タブです。各タブは、2 つのパーティ間の一方向の X12 アグリーメントを表します。</span><span class="sxs-lookup"><span data-stu-id="d2992-149">As soon as you select the other profile, two tabs are added next to the **General** tab. Each tab represents a one-way X12 agreement between the two parties.</span></span> <span data-ttu-id="d2992-150">このタブを使用して、インターチェンジやトランザクション セット関連の設定を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2992-150">You use the tabs to specify interchange and transaction set related settings in the tabs.</span></span> <span data-ttu-id="d2992-151">詳細については、次を参照してください。[インターチェンジの設定を構成する (X12)](../core/configuring-interchange-settings-x12.md)と[構成トランザクション セットの設定 (X12)](../core/configuring-transaction-set-settings-x12.md)です。</span><span class="sxs-lookup"><span data-stu-id="d2992-151">For more information, see [Configuring Interchange Settings (X12)](../core/configuring-interchange-settings-x12.md) and [Configuring Transaction Set Settings (X12)](../core/configuring-transaction-set-settings-x12.md).</span></span>  
   
-    4.  選択、**を有効にするアグリーメント**チェック ボックスをアグリーメントを有効にし、次の操作します。  
+    4.  <span data-ttu-id="d2992-152">選択、**を有効にするアグリーメント**チェック ボックスをアグリーメントを有効にし、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="d2992-152">Select the **Enable Agreement** check box to enable the agreement and do the following:</span></span>  
   
-        |プロパティ|目的|  
+        |<span data-ttu-id="d2992-153">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d2992-153">Use this</span></span>|<span data-ttu-id="d2992-154">目的</span><span class="sxs-lookup"><span data-stu-id="d2992-154">To do this</span></span>|  
         |--------------|----------------|  
-        |**From**|アグリーメントが有効となる日時を選択します。|  
-        |**終了日がないです。**|アグリーメントの有効期限を設定しない場合はこのオプションを選択します。|  
-        |**終了日します。**|アグリーメントが有効期限となる日時を指定するにはこのオプションを選択します。|  
+        |<span data-ttu-id="d2992-155">**From**</span><span class="sxs-lookup"><span data-stu-id="d2992-155">**From**</span></span>|<span data-ttu-id="d2992-156">アグリーメントが有効となる日時を選択します。</span><span class="sxs-lookup"><span data-stu-id="d2992-156">Select the date and time from which the agreement will be valid.</span></span>|  
+        |<span data-ttu-id="d2992-157">**終了日がないです。**</span><span class="sxs-lookup"><span data-stu-id="d2992-157">**No End Date**</span></span>|<span data-ttu-id="d2992-158">アグリーメントの有効期限を設定しない場合はこのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="d2992-158">Select this option if you do not want to set an end date when the agreement is disabled.</span></span>|  
+        |<span data-ttu-id="d2992-159">**終了日します。**</span><span class="sxs-lookup"><span data-stu-id="d2992-159">**End By**</span></span>|<span data-ttu-id="d2992-160">アグリーメントが有効期限となる日時を指定するにはこのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="d2992-160">Select this option and specify the date and time until which the agreement will be valid.</span></span>|  
   
-    5.  **共通のホスト設定**セクションで、次の操作します。  
+    5.  <span data-ttu-id="d2992-161">**共通のホスト設定**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="d2992-161">In the **Common Host Settings** section, do the following:</span></span>  
   
-        |プロパティ|目的|  
+        |<span data-ttu-id="d2992-162">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d2992-162">Use this</span></span>|<span data-ttu-id="d2992-163">目的</span><span class="sxs-lookup"><span data-stu-id="d2992-163">To do this</span></span>|  
         |--------------|----------------|  
-        |**エラーをイベント ログに記録**|オンにすると、EDI エンジン (EDI パイプライン、バッチ処理オーケストレーション、ルーティング オーケストレーションなど) で生成されるすべてのエラーが、コンテキスト情報と共に、Windows イベント ビューアーに記録されます。|  
-        |**警告イベント ログを記録します。**|オンにすると、EDI エンジン (EDI パイプライン、バッチ処理オーケストレーション、ルーティング オーケストレーションなど) で生成されるすべての警告が、コンテキスト情報と共に、Windows イベント ビューアーに記録されます。|  
-        |**レポートで有効にします。**|すべての EDI メッセージ (受信および送信) の状態エントリを表示するには、このオプションを選択で、 **EDI インターチェンジと関連する ACK の状態**のタブ、**グループの概要** ページで、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 オフの場合、状態エントリは表示されません。|  
-        |**レポート作成用のメッセージ ペイロードを格納**|選択した場合は**レポートをオンに**追跡 (BizTalkDTADb) データベースの EDI テーブルにトランザクションを保存するには、このオプションの設定を選択します。|  
+        |<span data-ttu-id="d2992-164">**エラーをイベント ログに記録**</span><span class="sxs-lookup"><span data-stu-id="d2992-164">**Log errors to event log**</span></span>|<span data-ttu-id="d2992-165">オンにすると、EDI エンジン (EDI パイプライン、バッチ処理オーケストレーション、ルーティング オーケストレーションなど) で生成されるすべてのエラーが、コンテキスト情報と共に、Windows イベント ビューアーに記録されます。</span><span class="sxs-lookup"><span data-stu-id="d2992-165">Select this option if you want to log any errors generated by the EDI engine (EDI pipelines, batching orchestration, routing orchestration, etc.), with contextual information, to the Windows Event Viewer.</span></span>|  
+        |<span data-ttu-id="d2992-166">**警告イベント ログを記録します。**</span><span class="sxs-lookup"><span data-stu-id="d2992-166">**Log warnings to event log**</span></span>|<span data-ttu-id="d2992-167">オンにすると、EDI エンジン (EDI パイプライン、バッチ処理オーケストレーション、ルーティング オーケストレーションなど) で生成されるすべての警告が、コンテキスト情報と共に、Windows イベント ビューアーに記録されます。</span><span class="sxs-lookup"><span data-stu-id="d2992-167">Select this option if you want to log any warnings generated by the EDI engine (EDI pipelines, batching orchestration, routing orchestration, etc.), with contextual information, to the Windows Event Viewer.</span></span>|  
+        |<span data-ttu-id="d2992-168">**レポートで有効にします。**</span><span class="sxs-lookup"><span data-stu-id="d2992-168">**Turn ON reporting**</span></span>|<span data-ttu-id="d2992-169">すべての EDI メッセージ (受信および送信) の状態エントリを表示するには、このオプションを選択で、 **EDI インターチェンジと関連する ACK の状態**のタブ、**グループの概要** ページで、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="d2992-169">Select this option to display status entries for all EDI messages (incoming and outgoing) on the **EDI Interchange and Correlated ACK Status** tab of the **Group Overview** page in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span> <span data-ttu-id="d2992-170">オフの場合、状態エントリは表示されません。</span><span class="sxs-lookup"><span data-stu-id="d2992-170">If unchecked, no status entries will be displayed.</span></span>|  
+        |<span data-ttu-id="d2992-171">**レポート作成用のメッセージ ペイロードを格納**</span><span class="sxs-lookup"><span data-stu-id="d2992-171">**Store message payload for reporting**</span></span>|<span data-ttu-id="d2992-172">選択した場合は**レポートをオンに**追跡 (BizTalkDTADb) データベースの EDI テーブルにトランザクションを保存するには、このオプションの設定を選択します。</span><span class="sxs-lookup"><span data-stu-id="d2992-172">If you selected **Turn ON reporting**, select this option to store transaction sets in the EDI tables of the tracking (BizTalkDTADb) database.</span></span>|  
   
-3.  **全般** タブで、**連絡先情報** ページで、次の操作します。  
+3.  <span data-ttu-id="d2992-173">**全般** タブで、**連絡先情報** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="d2992-173">In the **General** tab, on the **Contact Information** page, do the following:</span></span>  
   
-    1.  **連絡先 1**  タブを使用するアグリーメントを作成するパーティのプロファイルの連絡先情報を入力します。 このデータは参考用であり、BizTalk ランタイムでは使用されません。  
+    1.  <span data-ttu-id="d2992-174">**連絡先 1**  タブを使用するアグリーメントを作成するパーティのプロファイルの連絡先情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="d2992-174">In the **Contact1** tab, enter the contact information for the party’s profile with which you are creating an agreement.</span></span> <span data-ttu-id="d2992-175">このデータは参考用であり、BizTalk ランタイムでは使用されません。</span><span class="sxs-lookup"><span data-stu-id="d2992-175">This data is for information purposes only; it will not be used by the BizTalk Runtime.</span></span>  
   
-    2.  連絡先の別のタブを追加する をクリックして、**新しい連絡先**タブです。  
+    2.  <span data-ttu-id="d2992-176">連絡先の別のタブを追加する をクリックして、**新しい連絡先**タブです。</span><span class="sxs-lookup"><span data-stu-id="d2992-176">To add another tab for contact, click the **New Contact** tab.</span></span>  
   
-    3.  連絡先 タブを削除しても**削除**タブ ページの右上隅にあるからです。  
+    3.  <span data-ttu-id="d2992-177">連絡先 タブを削除しても**削除**タブ ページの右上隅にあるからです。</span><span class="sxs-lookup"><span data-stu-id="d2992-177">To delete a contact tab, click **Delete** from the top right corner of the tab page.</span></span>  
   
         > [!NOTE]
-        >  削除することはできません、**連絡先 1**タブです。削除できるのは、追加したタブだけです。  
+        >  <span data-ttu-id="d2992-178">削除することはできません、**連絡先 1**タブです。削除できるのは、追加したタブだけです。</span><span class="sxs-lookup"><span data-stu-id="d2992-178">You cannot delete the **Contact1** tab. You can only delete the new tabs that you add.</span></span>  
   
-4.  **全般** タブで、**追加プロパティ** ページで、次の操作します。  
+4.  <span data-ttu-id="d2992-179">**全般** タブで、**追加プロパティ** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="d2992-179">In the **General** tab, on the **Additional Properties** page, do the following:</span></span>  
   
     > [!NOTE]
-    >  このページで指定する情報は、BizTalk Server による処理には使用されません。このデータは参考用です。  
+    >  <span data-ttu-id="d2992-180">このページで指定する情報は、BizTalk Server による処理には使用されません。このデータは参考用です。</span><span class="sxs-lookup"><span data-stu-id="d2992-180">The information you specify on this page is not used by the BizTalk Server for any processing; this data is for information purposes only.</span></span>  
   
-    1.  **追加プロパティ**グリッドで、パーティまたはアグリーメントに関連する情報を追加する名前と値のペアを入力します。  パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。 名前と値の組み合わせは、必要な数だけ追加できます。  
+    1.  <span data-ttu-id="d2992-181">**追加プロパティ**グリッドで、パーティまたはアグリーメントに関連する情報を追加する名前と値のペアを入力します。</span><span class="sxs-lookup"><span data-stu-id="d2992-181">In the **Additional Properties** grid, enter name-value pairs for any information that you want to add related to the party or agreement.</span></span>  <span data-ttu-id="d2992-182">パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="d2992-182">Enter a name-value pair to store any information about the party.</span></span> <span data-ttu-id="d2992-183">名前と値の組み合わせは、必要な数だけ追加できます。</span><span class="sxs-lookup"><span data-stu-id="d2992-183">You can add as many name-value pairs as you want.</span></span>  
   
-         名前と値のペアを削除、行を選択し、をクリックする**削除**右上隅からです。  
+         <span data-ttu-id="d2992-184">名前と値のペアを削除、行を選択し、をクリックする**削除**右上隅からです。</span><span class="sxs-lookup"><span data-stu-id="d2992-184">To delete a name-value pair, select the row and click **Delete** from the top-right corner.</span></span>  
   
-    2.  **テキスト 1**、**テキスト 2**、および**アグリーメント**テキスト ボックスでは、パーティとのアグリーメントに関する情報を入力します。  
+    2.  <span data-ttu-id="d2992-185">**テキスト 1**、**テキスト 2**、および**アグリーメント**テキスト ボックスでは、パーティとのアグリーメントに関する情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="d2992-185">In the **Text 1**, **Text 2**, and **Agreement** text boxes, enter information about the agreement with a party.</span></span>  
   
         > [!IMPORTANT]
-        >  クリックすると**[ok]**または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。 その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。 これらは、ISA5 isa8 の値で、**識別子**各一方向アグリーメント タブのページです。  
+        >  <span data-ttu-id="d2992-186">クリックすると**[ok]**または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d2992-186">If you click **OK** or **Apply** after providing all the values listed in this page, you will get an error.</span></span> <span data-ttu-id="d2992-187">その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。</span><span class="sxs-lookup"><span data-stu-id="d2992-187">That is because the mandatory values to create an agreement are not yet provided.</span></span> <span data-ttu-id="d2992-188">これらは、ISA5 isa8 の値で、**識別子**各一方向アグリーメント タブのページです。</span><span class="sxs-lookup"><span data-stu-id="d2992-188">These are ISA5 to ISA8 values on the **Identifiers** page of each one-way agreement tab.</span></span>  
   
-## <a name="next-steps"></a>次の手順  
- ここで、アグリーメントのインターチェンジまたはトランザクション セットの設定を構成する必要があります。 手順を参照してください[インターチェンジの設定を構成する (X12)](../core/configuring-interchange-settings-x12.md)または[構成トランザクション セットの設定 (X12)](../core/configuring-transaction-set-settings-x12.md)です。  
+## <a name="next-steps"></a><span data-ttu-id="d2992-189">次の手順</span><span class="sxs-lookup"><span data-stu-id="d2992-189">Next Steps</span></span>  
+ <span data-ttu-id="d2992-190">ここで、アグリーメントのインターチェンジまたはトランザクション セットの設定を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2992-190">You must now configure the interchange or transaction set settings for the agreement.</span></span> <span data-ttu-id="d2992-191">手順を参照してください[インターチェンジの設定を構成する (X12)](../core/configuring-interchange-settings-x12.md)または[構成トランザクション セットの設定 (X12)](../core/configuring-transaction-set-settings-x12.md)です。</span><span class="sxs-lookup"><span data-stu-id="d2992-191">For instructions see [Configuring Interchange Settings (X12)](../core/configuring-interchange-settings-x12.md) or [Configuring Transaction Set Settings (X12)](../core/configuring-transaction-set-settings-x12.md).</span></span>  
   
-## <a name="see-also"></a>参照  
- [X12 固有のアグリーメント プロパティの構成](../core/configuring-x12-specific-agreement-properties.md)
+## <a name="see-also"></a><span data-ttu-id="d2992-192">参照</span><span class="sxs-lookup"><span data-stu-id="d2992-192">See Also</span></span>  
+ [<span data-ttu-id="d2992-193">X12 固有のアグリーメント プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="d2992-193">Configuring X12-Specific Agreement Properties</span></span>](../core/configuring-x12-specific-agreement-properties.md)

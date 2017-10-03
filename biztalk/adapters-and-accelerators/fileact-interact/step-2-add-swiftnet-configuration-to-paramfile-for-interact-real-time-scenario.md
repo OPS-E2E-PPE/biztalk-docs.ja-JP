@@ -18,75 +18,75 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-real-time-scenario"></a>手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオの対話
-SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。 手順を完了する必要があります、プロシージャを開始する前に[手順 1: 対話リアルタイム シナリオでは、SWIFT アダプターを構成](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)です。  
+# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-real-time-scenario"></a><span data-ttu-id="8d469-102">手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオの対話</span><span class="sxs-lookup"><span data-stu-id="8d469-102">Step 2: Add SWIFTNet Configuration to the Paramfile for the InterAct Real-Time Scenario</span></span>
+<span data-ttu-id="8d469-103">SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8d469-103">The Server message partners created in SAG must be specified in the SWIFTNet paramfile to enable Receivers to initialize with these values.</span></span> <span data-ttu-id="8d469-104">手順を完了する必要があります、プロシージャを開始する前に[手順 1: 対話リアルタイム シナリオでは、SWIFT アダプターを構成](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="8d469-104">Before you begin the procedure, you must complete the instructions in [Step 1: Configure the SWIFT Adapter for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md).</span></span>  
   
-### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a>Paramfile SWIFTNet 構成を追加するには  
+### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a><span data-ttu-id="8d469-105">Paramfile SWIFTNet 構成を追加するには</span><span class="sxs-lookup"><span data-stu-id="8d469-105">To add SWIFTNet configuration to the paramfile</span></span>  
   
-1.  メモ帳などのテキスト エディターで、paramfile を開きます。  
+1.  <span data-ttu-id="8d469-106">メモ帳などのテキスト エディターで、paramfile を開きます。</span><span class="sxs-lookup"><span data-stu-id="8d469-106">Open the paramfile in a text editor, such as Notepad.</span></span>  
   
-     Paramfile がある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile  
+     <span data-ttu-id="8d469-107">Paramfile がある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile</span><span class="sxs-lookup"><span data-stu-id="8d469-107">The paramfile is typically located at: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile</span></span>  
   
-2.  Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示された変更を行います。  
+2.  <span data-ttu-id="8d469-108">Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示された変更を行います。</span><span class="sxs-lookup"><span data-stu-id="8d469-108">In the paramfile, make the highlighted change to specify the Server Message partner name:</span></span>  
   
-     username:snlowner  
+     <span data-ttu-id="8d469-109">username:snlowner</span><span class="sxs-lookup"><span data-stu-id="8d469-109">username:snlowner</span></span>  
   
-     subsystem_name:InteractStub  
+     <span data-ttu-id="8d469-110">subsystem_name:InteractStub</span><span class="sxs-lookup"><span data-stu-id="8d469-110">subsystem_name:InteractStub</span></span>  
   
-     \#subsystem_group:InteractRT  
+     <span data-ttu-id="8d469-111">\#subsystem_group:InteractRT</span><span class="sxs-lookup"><span data-stu-id="8d469-111">\#subsystem_group:InteractRT</span></span>  
   
-     \#subsystem_dependency:Support、群  
+     <span data-ttu-id="8d469-112">\#subsystem_dependency:Support、群</span><span class="sxs-lookup"><span data-stu-id="8d469-112">\#subsystem_dependency:Support,Swarm</span></span>  
   
-     subsystem_nature: 重大  
+     <span data-ttu-id="8d469-113">subsystem_nature: 重大</span><span class="sxs-lookup"><span data-stu-id="8d469-113">subsystem_nature:critical</span></span>  
   
-     subsystem_start:  
+     <span data-ttu-id="8d469-114">subsystem_start:</span><span class="sxs-lookup"><span data-stu-id="8d469-114">subsystem_start:</span></span>  
   
-     **起動"snlreceiver - SagMessagePartner \<Interact RT 用サーバー MessagePartnerName > AdapterMode Interact"**  
+     <span data-ttu-id="8d469-115">**起動"snlreceiver - SagMessagePartner \<Interact RT 用サーバー MessagePartnerName > AdapterMode Interact"**</span><span class="sxs-lookup"><span data-stu-id="8d469-115">**spawn "snlreceiver -SagMessagePartner \<Server MessagePartnerName for Interact RT > -AdapterMode Interact"**</span></span>  
   
-     * 終了  
+     <span data-ttu-id="8d469-116">* 終了</span><span class="sxs-lookup"><span data-stu-id="8d469-116">*END</span></span>  
   
-     subsystem_stop:  
+     <span data-ttu-id="8d469-117">subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="8d469-117">subsystem_stop:</span></span>  
   
-     * KILL9:snlreceiver  
+     <span data-ttu-id="8d469-118">* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="8d469-118">*KILL9:snlreceiver</span></span>  
   
-     * 終了  
+     <span data-ttu-id="8d469-119">* 終了</span><span class="sxs-lookup"><span data-stu-id="8d469-119">*END</span></span>  
   
-     subsystem_status:  
+     <span data-ttu-id="8d469-120">subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="8d469-120">subsystem_status:</span></span>  
   
-     * NB:1:snlreceiver  
+     <span data-ttu-id="8d469-121">* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="8d469-121">*NB:1:snlreceiver</span></span>  
   
-     * 終了  
+     <span data-ttu-id="8d469-122">* 終了</span><span class="sxs-lookup"><span data-stu-id="8d469-122">*END</span></span>  
   
-     start_event:SNL001:subsystem InteractStub が稼働  
+     <span data-ttu-id="8d469-123">start_event:SNL001:subsystem InteractStub が稼働</span><span class="sxs-lookup"><span data-stu-id="8d469-123">start_event:SNL001:subsystem InteractStub is up</span></span>  
   
-     stop_event:SNL002:subsystem InteractStub がダウンしています。  
+     <span data-ttu-id="8d469-124">stop_event:SNL002:subsystem InteractStub がダウンしています。</span><span class="sxs-lookup"><span data-stu-id="8d469-124">stop_event:SNL002:subsystem InteractStub is down</span></span>  
   
-     \#subsystem_name:User  
+     <span data-ttu-id="8d469-125">\#subsystem_name:User</span><span class="sxs-lookup"><span data-stu-id="8d469-125">\#subsystem_name:User</span></span>  
   
-     \## subsystem_group:user  
+     <span data-ttu-id="8d469-126">\## subsystem_group:user</span><span class="sxs-lookup"><span data-stu-id="8d469-126">\##subsystem_group:user</span></span>  
   
-     \## subsystem_dependency:  
+     <span data-ttu-id="8d469-127">\## subsystem_dependency:</span><span class="sxs-lookup"><span data-stu-id="8d469-127">\##subsystem_dependency:</span></span>  
   
-     \#subsystem_nature: 重大  
+     <span data-ttu-id="8d469-128">\#subsystem_nature: 重大</span><span class="sxs-lookup"><span data-stu-id="8d469-128">\#subsystem_nature:critical</span></span>  
   
-     \#subsystem_start:  
+     <span data-ttu-id="8d469-129">\#subsystem_start:</span><span class="sxs-lookup"><span data-stu-id="8d469-129">\#subsystem_start:</span></span>  
   
-     \#* 終了  
+     <span data-ttu-id="8d469-130">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="8d469-130">\#*END</span></span>  
   
-     \#subsystem_stop:  
+     <span data-ttu-id="8d469-131">\#subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="8d469-131">\#subsystem_stop:</span></span>  
   
-     \#* 終了  
+     <span data-ttu-id="8d469-132">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="8d469-132">\#*END</span></span>  
   
-     \#subsystem_status:  
+     <span data-ttu-id="8d469-133">\#subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="8d469-133">\#subsystem_status:</span></span>  
   
-     #<a name="end"></a>* 終了  
+     #<a name="end"></a><span data-ttu-id="8d469-134">* 終了</span><span class="sxs-lookup"><span data-stu-id="8d469-134">*END</span></span>  
   
-     #<a name="starteventsnl001subsystem-user-is-up"></a>ユーザーが稼働 start_event:SNL001:subsystem です。  
+     #<a name="starteventsnl001subsystem-user-is-up"></a><span data-ttu-id="8d469-135">ユーザーが稼働 start_event:SNL001:subsystem です。</span><span class="sxs-lookup"><span data-stu-id="8d469-135">start_event:SNL001:subsystem User is up</span></span>  
   
-     #<a name="stopeventsnl002subsystem-user-is-down"></a>ユーザーがダウンして stop_event:SNL002:subsystem  
+     #<a name="stopeventsnl002subsystem-user-is-down"></a><span data-ttu-id="8d469-136">ユーザーがダウンして stop_event:SNL002:subsystem</span><span class="sxs-lookup"><span data-stu-id="8d469-136">stop_event:SNL002:subsystem User is down</span></span>  
   
-## <a name="see-also"></a>参照  
- [リアルタイムのシナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)   
- [手順 1: 構成用のアダプターを SWIFT、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)   
- [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [手順 4: テスト、リアルタイムのエンド ツー エンド シナリオの対話](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)
+## <a name="see-also"></a><span data-ttu-id="8d469-137">参照</span><span class="sxs-lookup"><span data-stu-id="8d469-137">See Also</span></span>  
+ <span data-ttu-id="8d469-138">[リアルタイムのシナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="8d469-138">[InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md) </span></span>  
+ <span data-ttu-id="8d469-139">[手順 1: 構成用のアダプターを SWIFT、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="8d469-139">[Step 1: Configure the SWIFT Adapter for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md) </span></span>  
+ <span data-ttu-id="8d469-140">[手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="8d469-140">[Step 3: Create Send and Receive Ports for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span></span>  
+ [<span data-ttu-id="8d469-141">手順 4: テスト、リアルタイムのエンド ツー エンド シナリオの対話</span><span class="sxs-lookup"><span data-stu-id="8d469-141">Step 4: Test the InterAct Real-Time End-to-End Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)

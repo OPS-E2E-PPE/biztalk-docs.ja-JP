@@ -18,54 +18,54 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>生成して、SharePoint サイトで MT/MX フォームの発行
-**生成して、SharePoint サイトで MT/MX フォームを公開します。**  
+# <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a><span data-ttu-id="86f4b-102">生成して、SharePoint サイトで MT/MX フォームの発行</span><span class="sxs-lookup"><span data-stu-id="86f4b-102">Generating and Publishing MT/MX Forms on the SharePoint Site</span></span>
+<span data-ttu-id="86f4b-103">**生成して、SharePoint サイトで MT/MX フォームを公開します。**</span><span class="sxs-lookup"><span data-stu-id="86f4b-103">**To generate and publish MT/MX forms on a SharePoint site:**</span></span>  
   
-1.  フォーム ジェネレーター ユーティリティをダウンロードし、ローカル コンピューターに保存します。  
+1.  <span data-ttu-id="86f4b-104">フォーム ジェネレーター ユーティリティをダウンロードし、ローカル コンピューターに保存します。</span><span class="sxs-lookup"><span data-stu-id="86f4b-104">Download the Form Generator Utility and save it locally on the computer.</span></span>  
   
-2.  開く、 **FormGenerator.sln**上のダウンロード フォルダーから、ソリューションをコンパイルします。  
+2.  <span data-ttu-id="86f4b-105">開く、 **FormGenerator.sln**上のダウンロード フォルダーから、ソリューションをコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="86f4b-105">Open the **FormGenerator.sln** from the folder downloaded above and compile the solution.</span></span>  
   
-3.  コマンド プロンプトでコンパイルされた実行可能ファイル (FormGenerator.exe) のフォルダーにアクセスします。 たとえば、デバッグ モードでこのユーティリティを構築した場合は、アクセス、 **.\bin\debug**フォルダーです。  
+3.  <span data-ttu-id="86f4b-106">コマンド プロンプトでコンパイルされた実行可能ファイル (FormGenerator.exe) のフォルダーにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="86f4b-106">At a command prompt, access the folder of compiled executable (FormGenerator.exe).</span></span> <span data-ttu-id="86f4b-107">たとえば、デバッグ モードでこのユーティリティを構築した場合は、アクセス、 **.\bin\debug**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="86f4b-107">For example, if you have built the utility in debug mode, access the **..\bin\debug** folder.</span></span>  
   
-4.  入力 FormGenerator.exe [-b] [-\<いいえ。 テンプレート フォルダーのパス >]  
+4.  <span data-ttu-id="86f4b-108">入力 FormGenerator.exe [-b] [-\<いいえ。</span><span class="sxs-lookup"><span data-stu-id="86f4b-108">Type FormGenerator.exe [-b] [-\<No.</span></span> <span data-ttu-id="86f4b-109">テンプレート フォルダーのパス >]</span><span class="sxs-lookup"><span data-stu-id="86f4b-109">of Template folder paths>]</span></span>  
   
-     `<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`」をご覧ください。 パラメーターを新しく作成したフォルダー名に置き換えます。  
+     <span data-ttu-id="86f4b-110">`<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="86f4b-110">`<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`.</span></span> <span data-ttu-id="86f4b-111">パラメーターを新しく作成したフォルダー名に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="86f4b-111">Replace the parameters with the newly-created folder names.</span></span>  
   
-5.  上記のコマンドは、MX メッセージの修復に必要なエンベロープ スキーマも生成されます。  
+5.  <span data-ttu-id="86f4b-112">上記のコマンドは、MX メッセージの修復に必要なエンベロープ スキーマも生成されます。</span><span class="sxs-lookup"><span data-stu-id="86f4b-112">The above command will also generate the Envelope schema needed for MX message repair.</span></span>  
   
-6.  出力フォルダーに移動して\<DestinationFolderPath >。 \<DestinationFolderPath >、フォームを生成する InfoPath フォーム テンプレートのフォルダーを開きます。 たとえば、MT103 InfoPath フォームを作成する場合は、し、DestinationFolderPath、MT103 フォルダーを開くし、TemplateDS.sln を開きます。  
+6.  <span data-ttu-id="86f4b-113">出力フォルダーに移動して\<DestinationFolderPath >。</span><span class="sxs-lookup"><span data-stu-id="86f4b-113">Go to output folder \<DestinationFolderPath>.</span></span> <span data-ttu-id="86f4b-114">\<DestinationFolderPath >、フォームを生成する InfoPath フォーム テンプレートのフォルダーを開きます。</span><span class="sxs-lookup"><span data-stu-id="86f4b-114">In \<DestinationFolderPath>, open the folder of the InfoPath form template for which you want to generate the form.</span></span> <span data-ttu-id="86f4b-115">たとえば、MT103 InfoPath フォームを作成する場合は、し、DestinationFolderPath、MT103 フォルダーを開くし、TemplateDS.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="86f4b-115">For example, if you want to generate the MT103 InfoPath form, then open the MT103 folder at the DestinationFolderPath and open the TemplateDS.sln.</span></span>  
   
-7.  ソリューション エクスプ ローラーでダブルクリックして、 **manifest.xsf**です。 開いたを取得するには、しばらく時間がかかります InfoPath フォームのデザイン ファイルが開きます。  
+7.  <span data-ttu-id="86f4b-116">ソリューション エクスプ ローラーでダブルクリックして、 **manifest.xsf**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-116">In the Solution Explorer, double click the **manifest.xsf**.</span></span> <span data-ttu-id="86f4b-117">開いたを取得するには、しばらく時間がかかります InfoPath フォームのデザイン ファイルが開きます。</span><span class="sxs-lookup"><span data-stu-id="86f4b-117">It will open the design file of the InfoPath form which will take some time to get opened.</span></span>  
   
     > [!NOTE]
-    >  MX メッセージ manifest.xsf は、2 ~ 5 分に開く取得にかかる場合があります。  
+    >  <span data-ttu-id="86f4b-118">MX メッセージ manifest.xsf は、2 ~ 5 分に開く取得にかかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="86f4b-118">The MX messages manifest.xsf might take 2-5 minutes to get opened.</span></span>  
   
-8.  Manifest.xsf に移動**ツール]、[フォームのオプション - > セキュリティおよび信頼**メニュー オプション。 チェック、**完全信頼**オプションは、アクセス許可を有効にする必要があります。  
+8.  <span data-ttu-id="86f4b-119">Manifest.xsf に移動**ツール]、[フォームのオプション - > セキュリティおよび信頼**メニュー オプション。</span><span class="sxs-lookup"><span data-stu-id="86f4b-119">In the manifest.xsf, go to **Tools ->Form Options-> Security and Trust** menu option.</span></span> <span data-ttu-id="86f4b-120">チェック、**完全信頼**オプションは、アクセス許可を有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="86f4b-120">Check the **Full Trust** option must be enabled for the permission.</span></span>  
   
-9. 選択、**このフォーム テンプレートの署名**チェック ボックスをオンします。 をクリックして**証明書を選択**です。 これには、フォームに署名する証明書を選択します。 **[OK]**をクリックします。  
+9. <span data-ttu-id="86f4b-121">選択、**このフォーム テンプレートの署名**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="86f4b-121">Select the **Sign this form Template** checkbox.</span></span> <span data-ttu-id="86f4b-122">をクリックして**証明書を選択**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-122">Click **Select certificate**.</span></span> <span data-ttu-id="86f4b-123">これには、フォームに署名する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="86f4b-123">In this, select the certificate with which you want to sign the form.</span></span> <span data-ttu-id="86f4b-124">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="86f4b-124">Click **OK**.</span></span>  
   
-10. 保存**manifest.xsf**です。  
+10. <span data-ttu-id="86f4b-125">保存**manifest.xsf**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-125">Save **manifest.xsf**.</span></span>  
   
-11. 移動して**ビューのデザイン タスク]-> [**です。 デザイン タスク ウィンドウで、をクリックして**フォーム テンプレートの発行**オプション。  
+11. <span data-ttu-id="86f4b-126">移動して**ビューのデザイン タスク]-> [**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-126">Go to **View -> Design Tasks**.</span></span> <span data-ttu-id="86f4b-127">デザイン タスク ウィンドウで、をクリックして**フォーム テンプレートの発行**オプション。</span><span class="sxs-lookup"><span data-stu-id="86f4b-127">On the Design Tasks pane, click **Publish Form Template** option.</span></span>  
   
-12. 発行ウィザード ウィンドウで次のように選択します。**ネットワークの場所に** をクリック**次**です。  
+12. <span data-ttu-id="86f4b-128">発行ウィザード ウィンドウで次のように選択します。**ネットワークの場所に** をクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-128">In the publishing wizard window, select **To a network location** and click **Next**.</span></span>  
   
-13. フォーム テンプレートのパスとファイル名 ボックスで、次のように入力します**http://localhost/sites/BASSite/Templates/\<MessageType > .xsn**および種類 **\<MessageType >**フォーム。テンプレート名 テキスト ボックスをクリック**次**です。  
+13. <span data-ttu-id="86f4b-129">フォーム テンプレートのパスとファイル名 ボックスで、次のように入力します**http://localhost/sites/BASSite/Templates/\<MessageType > .xsn**および種類 **\<MessageType >**フォーム。テンプレート名 テキスト ボックスをクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-129">In the Form template path and file name textbox, type **http://localhost/sites/BASSite/Templates/\<MessageType>.xsn** and type **\<MessageType>** in the Form Template name textbox and click **Next**.</span></span>  
   
-14. **[次へ]**をクリックします。  
+14. <span data-ttu-id="86f4b-130">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="86f4b-130">Click **Next**.</span></span>  
   
-15. をクリックして**発行および閉じる**です。  
+15. <span data-ttu-id="86f4b-131">をクリックして**発行および閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-131">Click **Publish and close**.</span></span>  
   
-16. Internet Explorer で、SharePoint サイトを開く**http://localhost/sites/bassite/templates**です。  
+16. <span data-ttu-id="86f4b-132">Internet Explorer で、SharePoint サイトを開く**http://localhost/sites/bassite/templates**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-132">In the Internet Explorer, open your SharePoint site **http://localhost/sites/bassite/templates**.</span></span>  
   
-17. 指す **\<MessageType >**、横にある下矢印をクリックし、をクリックして、**プロパティの編集**です。  
+17. <span data-ttu-id="86f4b-133">指す **\<MessageType >**、横にある下矢印をクリックし、をクリックして、**プロパティの編集**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-133">Point to **\<MessageType>**, click the down arrow next to it, and then click **Edit Properties**.</span></span>  
   
-18. テンプレートで:\< MessageType > ウィンドウで、[Namespace] ボックスで。  
+18. <span data-ttu-id="86f4b-134">テンプレートで:\< MessageType > ウィンドウで、[Namespace] ボックスで。</span><span class="sxs-lookup"><span data-stu-id="86f4b-134">In the Templates:\< MessageType> window, in the Namespace box:</span></span>  
   
-    -   MT InfoPath フォームを生成する場合は、入力: **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
+    -   <span data-ttu-id="86f4b-135">MT InfoPath フォームを生成する場合は、入力: **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**</span><span class="sxs-lookup"><span data-stu-id="86f4b-135">If you are generating MT InfoPath forms, type: **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**</span></span>  
   
-    -   MX InfoPath フォームを生成する場合は、入力: **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName >**  
+    -   <span data-ttu-id="86f4b-136">MX InfoPath フォームを生成する場合は、入力: **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName >**</span><span class="sxs-lookup"><span data-stu-id="86f4b-136">If you are generating MX InfoPath forms, type: **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_\<MessageName>**</span></span>  
   
-         これは、対応するテンプレートを使用してメッセージ インスタンスを特定するに役立ちます。  
+         <span data-ttu-id="86f4b-137">これは、対応するテンプレートを使用してメッセージ インスタンスを特定するに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="86f4b-137">This will help in identifying the message instance with the corresponding template.</span></span>  
   
-19. をクリックして**を保存して閉じます**です。
+19. <span data-ttu-id="86f4b-138">をクリックして**を保存して閉じます**です。</span><span class="sxs-lookup"><span data-stu-id="86f4b-138">Click **Save and Close**.</span></span>

@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-configure-native-pipeline-components"></a>ネイティブ パイプライン コンポーネントを構成する方法
-次のコードは、`IPersistPropertyBag` インターフェイスを使用してネイティブ パイプライン コンポーネントを構成する方法を示しています。  
+# <a name="how-to-configure-native-pipeline-components"></a><span data-ttu-id="fda4a-102">ネイティブ パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="fda4a-102">How to Configure Native Pipeline Components</span></span>
+<span data-ttu-id="fda4a-103">次のコードは、`IPersistPropertyBag` インターフェイスを使用してネイティブ パイプライン コンポーネントを構成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="fda4a-103">The following code shows how to configure native pipeline components using the `IPersistPropertyBag` interface.</span></span>  
   
 ```  
     [ComponentCategory(CategoryTypes.CATID_PipelineComponent)]  

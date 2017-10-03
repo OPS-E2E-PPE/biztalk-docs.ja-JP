@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="import-and-export-errors"></a>インポートおよびエクスポート エラー
-ここでは、WCF のインポートおよびエクスプローラーのエラーを診断および解決するための詳細について説明します。  
+# <a name="import-and-export-errors"></a><span data-ttu-id="bea1b-102">インポートおよびエクスポート エラー</span><span class="sxs-lookup"><span data-stu-id="bea1b-102">Import and Export Errors</span></span>
+<span data-ttu-id="bea1b-103">ここでは、WCF のインポートおよびエクスプローラーのエラーを診断および解決するための詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="bea1b-103">This section contains detailed information for diagnosing and resolving WCF Import and Export errors.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="bea1b-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="bea1b-104">In This Section</span></span>  
   
--   [構成をエクスポートできません。](../core/unable-to-export-configuration.md)  
+-   [<span data-ttu-id="bea1b-105">構成をエクスポートできません。</span><span class="sxs-lookup"><span data-stu-id="bea1b-105">Unable to export configuration</span></span>](../core/unable-to-export-configuration.md)  
   
--   [クライアント エンドポイント構成をインポートできません。](../core/unable-to-import-client-endpoint-configuration.md)  
+-   [<span data-ttu-id="bea1b-106">クライアント エンドポイント構成をインポートできません。</span><span class="sxs-lookup"><span data-stu-id="bea1b-106">Unable to import client endpoint configuration</span></span>](../core/unable-to-import-client-endpoint-configuration.md)  
   
--   [構成をインポートできません。](../core/unable-to-import-configuration.md)  
+-   [<span data-ttu-id="bea1b-107">構成をインポートできません。</span><span class="sxs-lookup"><span data-stu-id="bea1b-107">Unable to import configuration</span></span>](../core/unable-to-import-configuration.md)  
   
--   [サービス エンドポイント構成をインポートできません。](../core/unable-to-import-service-endpoint-configuration.md)
+-   [<span data-ttu-id="bea1b-108">サービス エンドポイント構成をインポートできません。</span><span class="sxs-lookup"><span data-stu-id="bea1b-108">Unable to import service endpoint configuration.</span></span>](../core/unable-to-import-service-endpoint-configuration.md)

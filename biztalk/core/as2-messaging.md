@@ -18,14 +18,14 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="as2-messaging"></a>AS2 メッセージング
-このセクションでは、AS2 メッセージと Message Disposition Notification (MDN) メッセージについて説明します。 次の各トピックは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって AS2 メッセージと MDN メッセージがどのように処理されるかを理解するうえで役立つ情報を提供します。 AS2 メッセージと MDN メッセージの詳細については、次を参照してください。 [RFC 4130「Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
+# <a name="as2-messaging"></a><span data-ttu-id="c8849-102">AS2 メッセージング</span><span class="sxs-lookup"><span data-stu-id="c8849-102">AS2 Messaging</span></span>
+<span data-ttu-id="c8849-103">このセクションでは、AS2 メッセージと Message Disposition Notification (MDN) メッセージについて説明します。</span><span class="sxs-lookup"><span data-stu-id="c8849-103">This section contains descriptions of AS2 and Message Disposition Notification (MDN) messages.</span></span> <span data-ttu-id="c8849-104">次の各トピックは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって AS2 メッセージと MDN メッセージがどのように処理されるかを理解するうえで役立つ情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="c8849-104">These topics contain information that will help you understand how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes AS2 and MDN messages.</span></span> <span data-ttu-id="c8849-105">AS2 メッセージと MDN メッセージの詳細については、次を参照してください。 [RFC 4130「Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212))。</span><span class="sxs-lookup"><span data-stu-id="c8849-105">For complete information about AS2 and MDN messages, see [RFC 4130, "MIME-Based Secure Peer-to-Peer Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212)).</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="c8849-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="c8849-106">In This Section</span></span>  
   
--   [AS2 メッセージ](../core/as2-messages.md)  
+-   [<span data-ttu-id="c8849-107">AS2 メッセージ</span><span class="sxs-lookup"><span data-stu-id="c8849-107">AS2 Messages</span></span>](../core/as2-messages.md)  
   
--   [MDN メッセージ](../core/mdn-messages.md)  
+-   [<span data-ttu-id="c8849-108">MDN メッセージ</span><span class="sxs-lookup"><span data-stu-id="c8849-108">MDN Messages</span></span>](../core/mdn-messages.md)  
   
-## <a name="see-also"></a>参照  
- [AS2 ソリューションのアーキテクチャ](../core/as2-solution-architecture.md)
+## <a name="see-also"></a><span data-ttu-id="c8849-109">参照</span><span class="sxs-lookup"><span data-stu-id="c8849-109">See Also</span></span>  
+ [<span data-ttu-id="c8849-110">AS2 ソリューションのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="c8849-110">AS2 Solution Architecture</span></span>](../core/as2-solution-architecture.md)

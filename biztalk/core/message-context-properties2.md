@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="message-context-properties"></a>メッセージ コンテキスト プロパティ
-BizTalk Server のメッセージ コンテキストのプロパティを使用すると、TIBCO Enterprise Message Service のメッセージ記述子フィールドの割り当てと読み取りを行うことができます。  
+# <a name="message-context-properties"></a><span data-ttu-id="679cb-102">メッセージ コンテキスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="679cb-102">Message Context Properties</span></span>
+<span data-ttu-id="679cb-103">BizTalk Server のメッセージ コンテキストのプロパティを使用すると、TIBCO Enterprise Message Service のメッセージ記述子フィールドの割り当てと読み取りを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="679cb-103">You can assign and read TIBCO Enterprise Message Service message descriptor fields through the BizTalk Server message context properties.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="679cb-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="679cb-104">In This Section</span></span>  
   
--   [BizTalk Server でのメッセージ コンテキスト プロパティ](../core/message-context-properties-in-biztalk-server.md)  
+-   [<span data-ttu-id="679cb-105">BizTalk Server でのメッセージ コンテキスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="679cb-105">Message Context Properties in BizTalk Server</span></span>](../core/message-context-properties-in-biztalk-server.md)  
   
--   [TIBCO Enterprise Message Service のメッセージ記述子のプロパティ](../core/tibco-enterprise-message-service-message-descriptor-properties.md)  
+-   [<span data-ttu-id="679cb-106">TIBCO Enterprise Message Service のメッセージ記述子のプロパティ</span><span class="sxs-lookup"><span data-stu-id="679cb-106">TIBCO Enterprise Message Service Message Descriptor Properties</span></span>](../core/tibco-enterprise-message-service-message-descriptor-properties.md)  
   
--   [チュートリアル: メッセージ コンテキスト プロパティの使用](../core/tutorial-using-message-context-properties.md)
+-   [<span data-ttu-id="679cb-107">チュートリアル: メッセージ コンテキスト プロパティの使用</span><span class="sxs-lookup"><span data-stu-id="679cb-107">Tutorial: Using Message Context Properties</span></span>](../core/tutorial-using-message-context-properties.md)

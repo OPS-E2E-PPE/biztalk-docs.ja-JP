@@ -18,93 +18,93 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-processing-in-biztalk-server"></a>BizTalk Server での EDI の処理
-このトピックでは、EDI メッセージの受信側と送信側の処理、および EDI メッセージングの実現における取引先アグリーメントの役割について説明します。  
+# <a name="edi-processing-in-biztalk-server"></a><span data-ttu-id="1ecb0-102">BizTalk Server での EDI の処理</span><span class="sxs-lookup"><span data-stu-id="1ecb0-102">EDI Processing in BizTalk Server</span></span>
+<span data-ttu-id="1ecb0-103">このトピックでは、EDI メッセージの受信側と送信側の処理、および EDI メッセージングの実現における取引先アグリーメントの役割について説明します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-103">This topic provides an overview of receive-side and send-side processing of EDI messages, and how trading partner agreements can help achieve EDI messaging.</span></span>  
   
-## <a name="trading-partner-agreements-for-edi-processing"></a>EDI 処理の取引先アグリーメント  
- 取引先アグリーメントは、[!INCLUDE[prague](../includes/prague-md.md)] における EDI のサポートで重要な役割を果たします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における EDI 処理に関連したほとんどの構成機能および管理機能は、ビジネス プロファイル間の取引先アグリーメントを構成することによって実行されます。 アグリーメントには、両方の取引先の特定のビジネス プロファイルから、共通する双方向のメッセージ処理プロパティがまとめられます。 アグリーメントは、各ビジネス プロファイルに対して定義されたプロトコル設定に基づいて作成されます。 2 つのビジネス プロファイル間に取引先アグリーメントを実装するには、メッセージを交換する各ビジネス プロファイルのプロパティを定義します。 各ビジネス プロファイルのプロパティはインターチェンジ受信者およびインターチェンジ送信者として設定します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信メッセージの処理または送信メッセージの生成を行うには、関係するアグリーメントと、メッセージに適用するスキーマを認識する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がアグリーメントを特定できない場合は、フォールバック取引先アグリーメントの TPM インターフェイスで定義されているプロパティを使用します。  
+## <a name="trading-partner-agreements-for-edi-processing"></a><span data-ttu-id="1ecb0-104">EDI 処理の取引先アグリーメント</span><span class="sxs-lookup"><span data-stu-id="1ecb0-104">Trading Partner Agreements for EDI Processing</span></span>  
+ <span data-ttu-id="1ecb0-105">取引先アグリーメントは、[!INCLUDE[prague](../includes/prague-md.md)] における EDI のサポートで重要な役割を果たします。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-105">Trading partner agreements play a key role in EDI support in [!INCLUDE[prague](../includes/prague-md.md)].</span></span> <span data-ttu-id="1ecb0-106">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における EDI 処理に関連したほとんどの構成機能および管理機能は、ビジネス プロファイル間の取引先アグリーメントを構成することによって実行されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-106">Most configuration and administrative functions related to EDI processing in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are performed by configuring the trading partner agreements between business profiles.</span></span> <span data-ttu-id="1ecb0-107">アグリーメントには、両方の取引先の特定のビジネス プロファイルから、共通する双方向のメッセージ処理プロパティがまとめられます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-107">Agreements bring together common bi-directional message processing properties from specific business profiles of both partners.</span></span> <span data-ttu-id="1ecb0-108">アグリーメントは、各ビジネス プロファイルに対して定義されたプロトコル設定に基づいて作成されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-108">Agreements are built upon the protocol settings defined for each business profile.</span></span> <span data-ttu-id="1ecb0-109">2 つのビジネス プロファイル間に取引先アグリーメントを実装するには、メッセージを交換する各ビジネス プロファイルのプロパティを定義します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-109">You implement a trading partner agreement between two business profiles by defining properties for each business profile that will be exchanging messages.</span></span> <span data-ttu-id="1ecb0-110">各ビジネス プロファイルのプロパティはインターチェンジ受信者およびインターチェンジ送信者として設定します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-110">You set properties for each business profile as an interchange receiver and as an interchange sender.</span></span> <span data-ttu-id="1ecb0-111">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信メッセージの処理または送信メッセージの生成を行うには、関係するアグリーメントと、メッセージに適用するスキーマを認識する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-111">To process an incoming message or generate an outgoing message, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] needs to know the agreement that it resolves to, and the schema that applies to the message.</span></span> <span data-ttu-id="1ecb0-112">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がアグリーメントを特定できない場合は、フォールバック取引先アグリーメントの TPM インターフェイスで定義されているプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-112">If [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cannot determine the agreement, it will use the properties defined in the TPM interface for the fallback trading partner agreement.</span></span>  
   
- TPM には EDIFACT プロパティ用および X12 プロパティ用の 2 つの主要なエンコード プロトコル設定のセットがあります。 これら 2 つのプロパティ セットはよく似ています。 プロトコル設定の詳細については、次を参照してください。[プロトコル設定](../core/protocol-settings.md)です。 契約の詳細については、次を参照してください。[取引先アグリーメント](../core/trading-partner-agreement.md)です。 プロトコル設定と取引先アグリーメントは、取引先管理 (TPM) ユーザー インターフェイスで設定します。 TPM の画面は、**パーティ**のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、開発者でなくても EDI 処理を構成できます。  
+ <span data-ttu-id="1ecb0-113">TPM には EDIFACT プロパティ用および X12 プロパティ用の 2 つの主要なエンコード プロトコル設定のセットがあります。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-113">There are two major sets of encoding protocol settings in TPM: one for EDIFACT properties and one for X12 properties.</span></span> <span data-ttu-id="1ecb0-114">これら 2 つのプロパティ セットはよく似ています。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-114">The two sets of properties are closely parallel.</span></span> <span data-ttu-id="1ecb0-115">プロトコル設定の詳細については、次を参照してください。[プロトコル設定](../core/protocol-settings.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-115">For more information about the protocol settings, see [Protocol Settings](../core/protocol-settings.md).</span></span> <span data-ttu-id="1ecb0-116">契約の詳細については、次を参照してください。[取引先アグリーメント](../core/trading-partner-agreement.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-116">For more information about agreements, see [Trading Partner Agreement](../core/trading-partner-agreement.md).</span></span> <span data-ttu-id="1ecb0-117">プロトコル設定と取引先アグリーメントは、取引先管理 (TPM) ユーザー インターフェイスで設定します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-117">You set the protocol settings and the trading partner agreement in the Trading Partner Management (TPM) user interface.</span></span> <span data-ttu-id="1ecb0-118">TPM の画面は、**パーティ**のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-118">The TPM screens are in the **Parties** node of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="1ecb0-119">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、開発者でなくても EDI 処理を構成できます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-119">You do not have to be a developer to configure EDI processing in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
- 詳細については、どのように取引のパートナー アグリーメント EDI 処理に役立つ、次を参照してください。 [EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)です。  
+ <span data-ttu-id="1ecb0-120">詳細については、どのように取引のパートナー アグリーメント EDI 処理に役立つ、次を参照してください。 [EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-120">For more information about how trading partner agreements help in EDI processing, see [The Role of Agreements in EDI Processing](../core/the-role-of-agreements-in-edi-processing.md).</span></span>  
   
-## <a name="edi-receive-side-processing"></a>受信側の EDI 処理  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDI メッセージを受信すると、EDI 受信パイプラインでメッセージを処理します。 受信パイプラインは、以下の基本的な処理を実行します。  
+## <a name="edi-receive-side-processing"></a><span data-ttu-id="1ecb0-121">受信側の EDI 処理</span><span class="sxs-lookup"><span data-stu-id="1ecb0-121">EDI Receive-Side Processing</span></span>  
+ <span data-ttu-id="1ecb0-122">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDI メッセージを受信すると、EDI 受信パイプラインでメッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-122">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI message, it processes the message in the EDI receive pipeline.</span></span> <span data-ttu-id="1ecb0-123">受信パイプラインは、以下の基本的な処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-123">The receive pipeline performs the following basic processing:</span></span>  
   
--   取引先アグリーメントの参照およびスキーマの決定を行います。  
-  
-    > [!NOTE]
-    >  以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。 そのため、受信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。 [!INCLUDE[prague](../includes/prague-md.md)] では、パーティ (取引先) は取引先アグリーメントとは異なるため、取引先アグリーメントだけが検索されます。  
+-   <span data-ttu-id="1ecb0-124">取引先アグリーメントの参照およびスキーマの決定を行います。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-124">Trading partner agreement lookup and schema determination.</span></span>  
   
     > [!NOTE]
-    >  メッセージが解決されるすべてのアグリーメントが無効になっている場合、メッセージは中断されます。 また、イベント ログに警告が記録されます。  
-  
--   1 つの EDI メッセージに複数のインターチェンジが含まれている場合、インターチェンジを分割し、各インターチェンジを別々に処理します (この機能が有効な場合)。 詳細については、次を参照してください。 [、の複数インターチェンジの受信、単一メッセージ内の有効化](../core/enabling-the-receiving-of-multiple-interchanges-in-a-single-message.md)です。  
-  
--   各 EDI インターチェンジを解析し、X12 または EDIFACT でエンコードされたデータを XML ドキュメントに変換します。  
-  
--   EDI 標準、パートナー アグリーメント、およびメッセージ スキーマに従ってエンベロープとそのメッセージを検証します。  
-  
--   インターチェンジがバッチ処理されている場合は、バッチ処理されているインターチェンジを分割して、トランザクション セットごとに XML ファイルを作成し、バッチ処理に必要なプロパティを昇格させるか、インターチェンジを保持します。  
-  
--   受信確認を生成します。  
-  
--   EDI エンベロープをコンテキスト プロパティに変換し、EDI 処理のための他のプロパティを昇格させます。  
-  
--   バッチ処理を制御するプロパティを昇格させます。 これには、バッチ解除されたトランザクション セットを複数のパーティに送信することが含まれることもあります。  
-  
- 受信側の EDI 処理を使用する場合は、次の点を考慮する必要があります。  
-  
--   受信場所では、あらゆる種類のトランスポートを使用できます。  
-  
--   受信側の EDI 処理の詳細については、次を参照してください。[どのように BizTalk Server 受信 EDI メッセージ](../core/how-biztalk-server-receives-edi-messages.md)です。  
-  
--   受信パイプラインで EDI 逆アセンブラーによって実行される特定の処理の詳細については、次を参照してください。 [「EDI 逆アセンブラーの動作](../core/how-the-edi-disassembler-works.md)です。  
-  
-## <a name="edi-batch-processing"></a>EDI バッチ処理  
- 受信メッセージがバッチである場合、EDI 受信パイプラインは構成に応じて、バッチ処理されたインターチェンジをその構成トランザクション セットに分割するか、バッチ処理されたインターチェンジを保持します。 EDIReceive パイプラインは BatchMarker パイプライン コンポーネントを使用して、バッチ処理するインターチェンジをすべてバッチ処理オーケストレーションまたはルーティング オーケストレーションにルーティングします。  
-  
- 受信側の処理の後、バッチ処理の対象のトランザクション セットはバッチ処理オーケストレーションによって処理されます。 バッチ処理オーケストレーションは、フィルター条件、アクティベーションの範囲、およびリリース条件に基づいてバッチを作成します。  
-  
- バッチ処理されていない EDI トランザクション セットをバッチに送信する必要がある場合は、ルーティング オーケストレーションがトランザクション セットを処理します。 一致するバッチのそれぞれに対してトランザクション セットのコピーが作成されます。  
-  
- バッチ処理で実行される特定の処理の詳細については、次を参照してください。[着信バッチの処理](../core/processing-incoming-batches.md)または[送信 EDI メッセージのバッチ処理](../core/batching-outgoing-edi-messages.md)です。  
-  
-## <a name="edi-send-side-processing"></a>送信側の EDI 処理  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で送信 EDI メッセージを生成して送信すると、EDI 送信パイプラインでメッセージが処理されます。 送信パイプラインは、以下の処理を実行します。  
-  
--   取引先アグリーメントの参照およびスキーマの決定を行います。  
+    >  <span data-ttu-id="1ecb0-125">以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-125">In the previous versions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], a party definition also included the agreement definition.</span></span> <span data-ttu-id="1ecb0-126">そのため、受信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-126">So, when the receive pipeline looked up the party properties, it would internally look for the agreement definition within the party definition and then process the messages accordingly.</span></span> <span data-ttu-id="1ecb0-127">[!INCLUDE[prague](../includes/prague-md.md)] では、パーティ (取引先) は取引先アグリーメントとは異なるため、取引先アグリーメントだけが検索されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-127">With [!INCLUDE[prague](../includes/prague-md.md)], because the party (or trading partner) is distinct from the trading partner agreement, the receive pipeline looks for the trading partner agreement specifically.</span></span>  
   
     > [!NOTE]
-    >  以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。 そのため、送信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。 [!INCLUDE[prague](../includes/prague-md.md)]パーティ (取引先) は具体的には、次のように取引先アグリーメントの取引先アグリーメントの送信パイプラインの検索とは異なりますがであるためです。  
+    >  <span data-ttu-id="1ecb0-128">メッセージが解決されるすべてのアグリーメントが無効になっている場合、メッセージは中断されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-128">If all the agreements that a message resolves to are disabled, the message will be suspended.</span></span> <span data-ttu-id="1ecb0-129">また、イベント ログに警告が記録されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-129">A warning is also logged in the Event log.</span></span>  
+  
+-   <span data-ttu-id="1ecb0-130">1 つの EDI メッセージに複数のインターチェンジが含まれている場合、インターチェンジを分割し、各インターチェンジを別々に処理します (この機能が有効な場合)。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-130">If a single EDI message contains multiple interchanges, splits the interchanges and processes each interchange separately (if enabled).</span></span> <span data-ttu-id="1ecb0-131">詳細については、次を参照してください。 [、の複数インターチェンジの受信、単一メッセージ内の有効化](../core/enabling-the-receiving-of-multiple-interchanges-in-a-single-message.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-131">For more information, see [Enabling the Receiving of Multiple Interchanges in a Single Message](../core/enabling-the-receiving-of-multiple-interchanges-in-a-single-message.md).</span></span>  
+  
+-   <span data-ttu-id="1ecb0-132">各 EDI インターチェンジを解析し、X12 または EDIFACT でエンコードされたデータを XML ドキュメントに変換します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-132">Parses each EDI interchange, converting the X12- or EDIFACT-encoded data into an XML document.</span></span>  
+  
+-   <span data-ttu-id="1ecb0-133">EDI 標準、パートナー アグリーメント、およびメッセージ スキーマに従ってエンベロープとそのメッセージを検証します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-133">Validates the envelope and its message according to the EDI standards, the partner agreement, and the message schemas.</span></span>  
+  
+-   <span data-ttu-id="1ecb0-134">インターチェンジがバッチ処理されている場合は、バッチ処理されているインターチェンジを分割して、トランザクション セットごとに XML ファイルを作成し、バッチ処理に必要なプロパティを昇格させるか、インターチェンジを保持します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-134">If the interchange is batched, either splits the batched interchange, creating an XML file for each transaction set and promoting properties required for batch processing, or preserves the interchange.</span></span>  
+  
+-   <span data-ttu-id="1ecb0-135">受信確認を生成します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-135">Generates an acknowledgment.</span></span>  
+  
+-   <span data-ttu-id="1ecb0-136">EDI エンベロープをコンテキスト プロパティに変換し、EDI 処理のための他のプロパティを昇格させます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-136">Converts the EDI envelope into context properties, and promotes other properties for EDI processing.</span></span>  
+  
+-   <span data-ttu-id="1ecb0-137">バッチ処理を制御するプロパティを昇格させます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-137">Promotes properties that control batch processing.</span></span> <span data-ttu-id="1ecb0-138">これには、バッチ解除されたトランザクション セットを複数のパーティに送信することが含まれることもあります。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-138">This can include sending debatched transaction sets to multiple parties.</span></span>  
+  
+ <span data-ttu-id="1ecb0-139">受信側の EDI 処理を使用する場合は、次の点を考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-139">Following are some considerations that you must make while using EDI receive-side processing:</span></span>  
+  
+-   <span data-ttu-id="1ecb0-140">受信場所では、あらゆる種類のトランスポートを使用できます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-140">The receive location can use any type of transport type.</span></span>  
+  
+-   <span data-ttu-id="1ecb0-141">受信側の EDI 処理の詳細については、次を参照してください。[どのように BizTalk Server 受信 EDI メッセージ](../core/how-biztalk-server-receives-edi-messages.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-141">For more information about EDI receive-side processing, see [How BizTalk Server Receives EDI Messages](../core/how-biztalk-server-receives-edi-messages.md).</span></span>  
+  
+-   <span data-ttu-id="1ecb0-142">受信パイプラインで EDI 逆アセンブラーによって実行される特定の処理の詳細については、次を参照してください。 [「EDI 逆アセンブラーの動作](../core/how-the-edi-disassembler-works.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-142">For more information about the specific processing performed by the EDI Disassembler in the receive pipeline, see [How the EDI Disassembler Works](../core/how-the-edi-disassembler-works.md).</span></span>  
+  
+## <a name="edi-batch-processing"></a><span data-ttu-id="1ecb0-143">EDI バッチ処理</span><span class="sxs-lookup"><span data-stu-id="1ecb0-143">EDI Batch Processing</span></span>  
+ <span data-ttu-id="1ecb0-144">受信メッセージがバッチである場合、EDI 受信パイプラインは構成に応じて、バッチ処理されたインターチェンジをその構成トランザクション セットに分割するか、バッチ処理されたインターチェンジを保持します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-144">If the incoming message is a batch, the EDI receive pipeline will either split the batched interchange into its constituent transaction sets, or preserve the batched interchange, depending on the configuration.</span></span> <span data-ttu-id="1ecb0-145">EDIReceive パイプラインは BatchMarker パイプライン コンポーネントを使用して、バッチ処理するインターチェンジをすべてバッチ処理オーケストレーションまたはルーティング オーケストレーションにルーティングします。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-145">The EDIReceive pipeline uses the BatchMarker pipeline component to route any interchanges that are to be batched to the batching orchestration or the routing orchestration.</span></span>  
+  
+ <span data-ttu-id="1ecb0-146">受信側の処理の後、バッチ処理の対象のトランザクション セットはバッチ処理オーケストレーションによって処理されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-146">After receive-side processing, transaction sets to be batched for sending will be processed by the batching orchestration.</span></span> <span data-ttu-id="1ecb0-147">バッチ処理オーケストレーションは、フィルター条件、アクティベーションの範囲、およびリリース条件に基づいてバッチを作成します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-147">The batching orchestration will create a batch based upon filter criteria, an activation range, and release criteria.</span></span>  
+  
+ <span data-ttu-id="1ecb0-148">バッチ処理されていない EDI トランザクション セットをバッチに送信する必要がある場合は、ルーティング オーケストレーションがトランザクション セットを処理します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-148">If unbatched EDI transaction sets need to be sent to batches, a routing orchestration will process the transaction sets.</span></span> <span data-ttu-id="1ecb0-149">一致するバッチのそれぞれに対してトランザクション セットのコピーが作成されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-149">A copy of the transaction set will be created for each matching batch.</span></span>  
+  
+ <span data-ttu-id="1ecb0-150">バッチ処理で実行される特定の処理の詳細については、次を参照してください。[着信バッチの処理](../core/processing-incoming-batches.md)または[送信 EDI メッセージのバッチ処理](../core/batching-outgoing-edi-messages.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-150">For more information about the specific processing performed in batching, see [Processing Incoming Batches](../core/processing-incoming-batches.md) or [Batching Outgoing EDI Messages](../core/batching-outgoing-edi-messages.md).</span></span>  
+  
+## <a name="edi-send-side-processing"></a><span data-ttu-id="1ecb0-151">送信側の EDI 処理</span><span class="sxs-lookup"><span data-stu-id="1ecb0-151">EDI Send-Side Processing</span></span>  
+ <span data-ttu-id="1ecb0-152">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で送信 EDI メッセージを生成して送信すると、EDI 送信パイプラインでメッセージが処理されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-152">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generates and sends an outgoing EDI message, it processes the message in the EDI send pipeline.</span></span> <span data-ttu-id="1ecb0-153">送信パイプラインは、以下の処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-153">The send pipeline performs the following processing:</span></span>  
+  
+-   <span data-ttu-id="1ecb0-154">取引先アグリーメントの参照およびスキーマの決定を行います。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-154">Trading partner agreement lookup and schema determination.</span></span>  
   
     > [!NOTE]
-    >  メッセージが解決されるすべてのアグリーメントが無効になっている場合、メッセージは中断されます。  また、イベント ログに警告が記録されます。  
+    >  <span data-ttu-id="1ecb0-155">以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-155">In the previous versions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], a party definition also included the agreement definition.</span></span> <span data-ttu-id="1ecb0-156">そのため、送信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-156">So, when the send pipeline looked up the party properties, it would internally look for the agreement definition within the party definition and then process the messages accordingly.</span></span> <span data-ttu-id="1ecb0-157">[!INCLUDE[prague](../includes/prague-md.md)]パーティ (取引先) は具体的には、次のように取引先アグリーメントの取引先アグリーメントの送信パイプラインの検索とは異なりますがであるためです。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-157">With [!INCLUDE[prague](../includes/prague-md.md)], because the party (or trading partner) is distinct from the trading partner agreement, the send pipeline looks for the trading partner agreement specifically.</span></span>  
   
--   EDI メッセージをシリアル化し、X12 または EDIFACT でエンコードされたデータに XML ドキュメントを変換します。  
+    > [!NOTE]
+    >  <span data-ttu-id="1ecb0-158">メッセージが解決されるすべてのアグリーメントが無効になっている場合、メッセージは中断されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-158">If all the agreements that a message resolves to are disabled, the message will be suspended.</span></span>  <span data-ttu-id="1ecb0-159">また、イベント ログに警告が記録されます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-159">A warning is also logged in the Event log.</span></span>  
   
--   X12 の区切り文字としても使用される文字がメッセージ データに含まれる場合は、ペイロードの文字を別の文字に置き換えるように送信パイプラインを構成できます。  
+-   <span data-ttu-id="1ecb0-160">EDI メッセージをシリアル化し、X12 または EDIFACT でエンコードされたデータに XML ドキュメントを変換します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-160">Serializes the EDI message, converting the XML document into X12- or EDIFACT-encoded data.</span></span>  
   
--   EDI メッセージがバッチ処理されたインターチェンジの場合、送信パイプラインは、バッチ処理オーケストレーションでバッチが構築された後、BizTalk MessageBox からインターチェンジを取得します。  
+-   <span data-ttu-id="1ecb0-161">X12 の区切り文字としても使用される文字がメッセージ データに含まれる場合は、ペイロードの文字を別の文字に置き換えるように送信パイプラインを構成できます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-161">If the message data contains characters that are also used as X12 separators, the send pipeline can be configured to replace the characters in the payload with another character.</span></span>  
   
--   送信メッセージを検証します。  
+-   <span data-ttu-id="1ecb0-162">EDI メッセージがバッチ処理されたインターチェンジの場合、送信パイプラインは、バッチ処理オーケストレーションでバッチが構築された後、BizTalk MessageBox からインターチェンジを取得します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-162">If the EDI message is a batched interchange, the send pipeline picks up the interchange from the BizTalk MessageBox after the batching orchestration has built the batch.</span></span>  
   
--   実行時に指定されたパーティのプロパティまたは EDI エンベロープのプロパティに従って、EDI エンベロープを作成します。  
+-   <span data-ttu-id="1ecb0-163">送信メッセージを検証します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-163">Validates the outgoing message.</span></span>  
   
--   受信した受信確認を処理します。  
+-   <span data-ttu-id="1ecb0-164">実行時に指定されたパーティのプロパティまたは EDI エンベロープのプロパティに従って、EDI エンベロープを作成します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-164">Creates the EDI envelope according to the party properties or EDI envelope properties specified at runtime.</span></span>  
   
- 送信側の EDI 処理を使用する場合は、次の点を考慮する必要があります。  
+-   <span data-ttu-id="1ecb0-165">受信した受信確認を処理します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-165">Processes acknowledgments received.</span></span>  
   
--   送信ポートでは、あらゆる種類のトランスポートを使用できます。  
+ <span data-ttu-id="1ecb0-166">送信側の EDI 処理を使用する場合は、次の点を考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-166">Following are some considerations that you must make while using EDI send-side processing:</span></span>  
   
--   送信側の EDI 処理の詳細については、次を参照してください。[どのように BizTalk Server 送信 EDI メッセージ](../core/how-biztalk-server-sends-edi-messages.md)です。  
+-   <span data-ttu-id="1ecb0-167">送信ポートでは、あらゆる種類のトランスポートを使用できます。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-167">The send port can use any type of transport.</span></span>  
   
--   送信パイプラインで実行される特定の処理の詳細については、次を参照してください。 [「EDI アセンブラーの動作](../core/how-the-edi-assembler-works.md)です。  
+-   <span data-ttu-id="1ecb0-168">送信側の EDI 処理の詳細については、次を参照してください。[どのように BizTalk Server 送信 EDI メッセージ](../core/how-biztalk-server-sends-edi-messages.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-168">For more information about EDI send-side processing, see [How BizTalk Server Sends EDI Messages](../core/how-biztalk-server-sends-edi-messages.md).</span></span>  
   
-## <a name="see-also"></a>参照  
- [BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server1.md)   
- [EDI のサポートに関する問題](../core/edi-support-issues.md)   
- [EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)   
- [BizTalk Server が EDI メッセージを受信する方法](../core/how-biztalk-server-receives-edi-messages.md)   
- [BizTalk Server が EDI メッセージを送信する方法](../core/how-biztalk-server-sends-edi-messages.md)   
- [開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+-   <span data-ttu-id="1ecb0-169">送信パイプラインで実行される特定の処理の詳細については、次を参照してください。 [「EDI アセンブラーの動作](../core/how-the-edi-assembler-works.md)です。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-169">For more information about the specific processing performed in the send pipeline, see [How the EDI Assembler Works](../core/how-the-edi-assembler-works.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="1ecb0-170">参照</span><span class="sxs-lookup"><span data-stu-id="1ecb0-170">See Also</span></span>  
+ <span data-ttu-id="1ecb0-171">[BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server1.md) </span><span class="sxs-lookup"><span data-stu-id="1ecb0-171">[EDI Support in BizTalk Server](../core/edi-support-in-biztalk-server1.md) </span></span>  
+ <span data-ttu-id="1ecb0-172">[EDI のサポートに関する問題](../core/edi-support-issues.md) </span><span class="sxs-lookup"><span data-stu-id="1ecb0-172">[EDI Support Issues](../core/edi-support-issues.md) </span></span>  
+ <span data-ttu-id="1ecb0-173">[EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md) </span><span class="sxs-lookup"><span data-stu-id="1ecb0-173">[The Role of Agreements in EDI Processing](../core/the-role-of-agreements-in-edi-processing.md) </span></span>  
+ <span data-ttu-id="1ecb0-174">[BizTalk Server が EDI メッセージを受信する方法](../core/how-biztalk-server-receives-edi-messages.md) </span><span class="sxs-lookup"><span data-stu-id="1ecb0-174">[How BizTalk Server Receives EDI Messages](../core/how-biztalk-server-receives-edi-messages.md) </span></span>  
+ <span data-ttu-id="1ecb0-175">[BizTalk Server が EDI メッセージを送信する方法](../core/how-biztalk-server-sends-edi-messages.md) </span><span class="sxs-lookup"><span data-stu-id="1ecb0-175">[How BizTalk Server Sends EDI Messages](../core/how-biztalk-server-sends-edi-messages.md) </span></span>  
+ [<span data-ttu-id="1ecb0-176">開発および BizTalk Server EDI ソリューションを構成します。</span><span class="sxs-lookup"><span data-stu-id="1ecb0-176">Developing and Configuring BizTalk Server EDI Solutions</span></span>](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

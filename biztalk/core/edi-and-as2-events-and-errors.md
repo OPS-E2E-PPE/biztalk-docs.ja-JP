@@ -18,5 +18,5 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-and-as2-events-and-errors"></a>EDI および AS2 イベントとエラー
-ここでは、電子データ交換 (EDI) のイベント情報を示します。
+# <a name="edi-and-as2-events-and-errors"></a><span data-ttu-id="b287e-102">EDI および AS2 イベントとエラー</span><span class="sxs-lookup"><span data-stu-id="b287e-102">EDI and AS2 Events and Errors</span></span>
+<span data-ttu-id="b287e-103">ここでは、電子データ交換 (EDI) のイベント情報を示します。</span><span class="sxs-lookup"><span data-stu-id="b287e-103">This section contains event information for electronic data interchange (EDI).</span></span>

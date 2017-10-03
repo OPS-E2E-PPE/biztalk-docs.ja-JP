@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="administering-fin-response-reconciliation"></a>FIN 対応調整を管理します。
-このセクションでは、FIN 対応調整の構成を設定するための手順を説明します。  
+# <a name="administering-fin-response-reconciliation"></a><span data-ttu-id="01e2c-102">FIN 対応調整を管理します。</span><span class="sxs-lookup"><span data-stu-id="01e2c-102">Administering FIN Response Reconciliation</span></span>
+<span data-ttu-id="01e2c-103">このセクションでは、FIN 対応調整の構成を設定するための手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="01e2c-103">This section provides procedures for setting the configuration for FIN Response Reconciliation.</span></span>  
   
- このセクションには、次のトピックが含まれています。  
+ <span data-ttu-id="01e2c-104">このセクションには、次のトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="01e2c-104">This section contains:</span></span>  
   
--   [FRR 遅延タイムアウトの設定](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)  
+-   [<span data-ttu-id="01e2c-105">FRR 遅延タイムアウトの設定</span><span class="sxs-lookup"><span data-stu-id="01e2c-105">Setting the FRR Delay Time-Out</span></span>](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)  
   
--   [BAM 追跡を無効にします。](../../adapters-and-accelerators/accelerator-swift/disabling-bam-tracking.md)
+-   [<span data-ttu-id="01e2c-106">BAM 追跡を無効にします。</span><span class="sxs-lookup"><span data-stu-id="01e2c-106">Disabling BAM Tracking</span></span>](../../adapters-and-accelerators/accelerator-swift/disabling-bam-tracking.md)

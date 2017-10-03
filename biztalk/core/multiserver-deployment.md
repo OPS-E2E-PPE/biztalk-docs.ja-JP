@@ -25,132 +25,132 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="multiserver-deployment"></a>マルチサーバー展開
-このトピックでは、Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを、マルチサーバー環境に設定および展開する場合の考慮事項について説明します。  
+# <a name="multiserver-deployment"></a><span data-ttu-id="4fa36-102">マルチサーバー展開</span><span class="sxs-lookup"><span data-stu-id="4fa36-102">Multiserver Deployment</span></span>
+<span data-ttu-id="4fa36-103">このトピックでは、Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを、マルチサーバー環境に設定および展開する場合の考慮事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-103">This topic discusses multiserver setup and deployment considerations for the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adapter for Windows SharePoint Services.</span></span>  
   
-## <a name="installing-the-windows-sharepoint-services-adapter-in-a-multiserver-deployment"></a>マルチサーバー展開への Windows SharePoint Services アダプターのインストール  
- Windows SharePoint Service アダプター Web サービス コンポーネントを選択すると、送受信されるドキュメントを Windows SharePoint Services アダプターが Windows SharePoint Services 経由で処理するために必要なソフトウェアがインストールされます。 この Web サービスは、Windows SharePoint Services がインストールされているサーバーにインストールする必要があります。  
+## <a name="installing-the-windows-sharepoint-services-adapter-in-a-multiserver-deployment"></a><span data-ttu-id="4fa36-104">マルチサーバー展開への Windows SharePoint Services アダプターのインストール</span><span class="sxs-lookup"><span data-stu-id="4fa36-104">Installing the Windows SharePoint Services adapter in a multiserver deployment</span></span>  
+ <span data-ttu-id="4fa36-105">Windows SharePoint Service アダプター Web サービス コンポーネントを選択すると、送受信されるドキュメントを Windows SharePoint Services アダプターが Windows SharePoint Services 経由で処理するために必要なソフトウェアがインストールされます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-105">Selecting the Windows SharePoint Service Adapter Web Service component installs the necessary software for the Windows SharePoint Services adapter to process incoming and outgoing documents through Windows SharePoint Services.</span></span> <span data-ttu-id="4fa36-106">この Web サービスは、Windows SharePoint Services がインストールされているサーバーにインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-106">This Web service must be installed on the server where Windows SharePoint Services is installed.</span></span>  
   
- アダプター Web サービスでは、複数の SharePoint サイトを、同一の IIS サイトにあるか、異なる IIS サイトにあるかにかかわらず、処理できます。  
+ <span data-ttu-id="4fa36-107">アダプター Web サービスでは、複数の SharePoint サイトを、同一の IIS サイトにあるか、異なる IIS サイトにあるかにかかわらず、処理できます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-107">The adapter Web service can handle multiple SharePoint sites regardless of whether they are on the same IIS site or on different IIS sites.</span></span>  
   
- Windows SharePoint Services アダプターには、次の 3 つのコンポーネントがあります。  
+ <span data-ttu-id="4fa36-108">Windows SharePoint Services アダプターには、次の 3 つのコンポーネントがあります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-108">The Windows SharePoint Services Adapter has three components:</span></span>  
   
--   ランタイム コンポーネント  
+-   <span data-ttu-id="4fa36-109">ランタイム コンポーネント</span><span class="sxs-lookup"><span data-stu-id="4fa36-109">Runtime components</span></span>  
   
--   デザイン時コンポーネント  
+-   <span data-ttu-id="4fa36-110">デザイン時コンポーネント</span><span class="sxs-lookup"><span data-stu-id="4fa36-110">Design time components</span></span>  
   
--   アダプター Web サービス  
+-   <span data-ttu-id="4fa36-111">アダプター Web サービス</span><span class="sxs-lookup"><span data-stu-id="4fa36-111">Adapter Web service</span></span>  
   
- アダプター ランタイムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能によって自動的にインストールおよび構成されます。 アダプターのデザイン時コンポーネントは、その他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 機能によってインストールおよび構成されます。 デザイン時コンポーネントを操作するには、管理ツール、開発ツール、SDK に含まれているツールか、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能を使用して、Windows SharePoint Services ポートを作成します。 ランタイム コンポーネントおよびデザイン時コンポーネントの構成オプションは、カスタマイズできません。 Windows SharePoint Services アダプター Web サービス オプションのみをカスタマイズすることができます。  
+ <span data-ttu-id="4fa36-112">アダプター ランタイムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能によって自動的にインストールおよび構成されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-112">The adapter runtime is installed and configured automatically by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Runtime feature.</span></span> <span data-ttu-id="4fa36-113">アダプターのデザイン時コンポーネントは、その他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 機能によってインストールおよび構成されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-113">The adapter design time components are installed and configured with other [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] features.</span></span> <span data-ttu-id="4fa36-114">デザイン時コンポーネントを操作するには、管理ツール、開発ツール、SDK に含まれているツールか、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能を使用して、Windows SharePoint Services ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-114">You interact with the design time components by creating Windows SharePoint Services ports through tools that are included in the Administration Tools, Developer Tools, and SDK or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Runtime features.</span></span> <span data-ttu-id="4fa36-115">ランタイム コンポーネントおよびデザイン時コンポーネントの構成オプションは、カスタマイズできません。</span><span class="sxs-lookup"><span data-stu-id="4fa36-115">You cannot customize any configuration options for runtime and design time components.</span></span> <span data-ttu-id="4fa36-116">Windows SharePoint Services アダプター Web サービス オプションのみをカスタマイズすることができます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-116">You can customize only the Windows SharePoint Services adapter Web Service options.</span></span>  
   
- SharePoint Enabled Hosts グループのメンバーのみをアダプター Web サービスを呼び出す権限が付与されます。 Windows SharePoint Services アダプター ランタイムで必要な Windows SharePoint Services のアクセス許可の詳細については、セキュリティ」セクションを参照してください。 [Windows SharePoint Services アダプターは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)です。  
-  
-> [!NOTE]
->  BAS をインストールするとき、Windows SharePoint Services アダプター Web サービス コンポーネントが自動的に選択されます。  
-  
-#### <a name="to-install-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプターをインストールするには  
-  
-1.  インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)です。  
-  
-2.  **コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加のソフトウェア** **Windows SharePoint Services アダプターWeb サービス**です。  
+ <span data-ttu-id="4fa36-117">SharePoint Enabled Hosts グループのメンバーのみをアダプター Web サービスを呼び出す権限が付与されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-117">Only members of the SharePoint Enabled Hosts group will have permissions to invoke the adapter Web service.</span></span> <span data-ttu-id="4fa36-118">Windows SharePoint Services アダプター ランタイムで必要な Windows SharePoint Services のアクセス許可の詳細については、セキュリティ」セクションを参照してください。 [Windows SharePoint Services アダプターは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-118">For more information about the Windows SharePoint Services permissions needed by the Windows SharePoint Services adapter runtime, see the security section in [What Is the Windows SharePoint Services Adapter?](../core/what-is-the-windows-sharepoint-services-adapter.md).</span></span>  
   
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをホストするコンピューター、および Windows SharePoint Services を実行するコンピューターでセットアップと構成を実行する必要があります。  
+>  <span data-ttu-id="4fa36-119">BAS をインストールするとき、Windows SharePoint Services アダプター Web サービス コンポーネントが自動的に選択されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-119">The Windows SharePoint Services adapter Web service component will be automatically selected if you choose to install BAS.</span></span>  
   
-## <a name="configuring-the-windows-sharepoint-services-adapter-web-service-in-a-multiserver-deployment"></a>マルチサーバー展開の Windows SharePoint Services アダプター Web サービスの構成  
- Windows SharePoint Services アダプターは、BizTalk Server 構成を使用して構成します。 これらのツールの詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)です。  
+#### <a name="to-install-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="4fa36-120">Windows SharePoint Services アダプターをインストールするには</span><span class="sxs-lookup"><span data-stu-id="4fa36-120">To install the Windows SharePoint Services adapter</span></span>  
   
-### <a name="using-a-custom-configuration"></a>ユーザー構成の使用  
- BizTalk Server 構成では、ローカル コンピューターにインストールした機能の構成状態に関する高レベルの分析が提供されます。 このツールを使用すると、機能の構成と構成解除、セキュリティ設定の構成、および他のコンピューターの構成のインポートとエクスポートを行えます。  
+1.  <span data-ttu-id="4fa36-121">インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-121">Install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="4fa36-122">詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-122">For more information, see [Installation Overview for BizTalk Server 2013 and 2013 R2](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5).</span></span>  
   
- 使用して、 **Windows SharePoint Services**ページはこのコンピューターに Windows SharePoint Services アダプターを構成します。 次の表は、構成のオプションを示しています。  
+2.  <span data-ttu-id="4fa36-123">**コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加のソフトウェア** **Windows SharePoint Services アダプターWeb サービス**です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-123">On the **Component Installation** screen, under **Available Components**, under **Additional Software**, select **Windows SharePoint Services Adapter Web service**.</span></span>  
   
-|プロパティ|目的|  
+> [!NOTE]
+>  <span data-ttu-id="4fa36-124">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをホストするコンピューター、および Windows SharePoint Services を実行するコンピューターでセットアップと構成を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-124">You must run setup and configuration on the computer that hosts the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime and the computer running Windows SharePoint Services.</span></span>  
+  
+## <a name="configuring-the-windows-sharepoint-services-adapter-web-service-in-a-multiserver-deployment"></a><span data-ttu-id="4fa36-125">マルチサーバー展開の Windows SharePoint Services アダプター Web サービスの構成</span><span class="sxs-lookup"><span data-stu-id="4fa36-125">Configuring the Windows SharePoint Services adapter Web service in a multiserver deployment</span></span>  
+ <span data-ttu-id="4fa36-126">Windows SharePoint Services アダプターは、BizTalk Server 構成を使用して構成します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-126">You configure the Windows SharePoint Services adapter using the BizTalk Server Configuration.</span></span> <span data-ttu-id="4fa36-127">これらのツールの詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-127">For more information about these tools, see [Configuration Overview for BizTalk Server 2013 and 2013 R2](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72).</span></span>  
+  
+### <a name="using-a-custom-configuration"></a><span data-ttu-id="4fa36-128">ユーザー構成の使用</span><span class="sxs-lookup"><span data-stu-id="4fa36-128">Using a custom configuration</span></span>  
+ <span data-ttu-id="4fa36-129">BizTalk Server 構成では、ローカル コンピューターにインストールした機能の構成状態に関する高レベルの分析が提供されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-129">The BizTalk Server Configuration provides a high-level analysis of the configuration state of the features you have installed on the local computer.</span></span> <span data-ttu-id="4fa36-130">このツールを使用すると、機能の構成と構成解除、セキュリティ設定の構成、および他のコンピューターの構成のインポートとエクスポートを行えます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-130">The tool allows you to configure and unconfigure features, configure security settings, and import and export configurations from other computers.</span></span>  
+  
+ <span data-ttu-id="4fa36-131">使用して、 **Windows SharePoint Services**ページはこのコンピューターに Windows SharePoint Services アダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-131">Use the **Windows SharePoint Services** page to configure the Windows SharePoint Services adapter on this computer.</span></span> <span data-ttu-id="4fa36-132">次の表は、構成のオプションを示しています。</span><span class="sxs-lookup"><span data-stu-id="4fa36-132">The following table lists the configuration options.</span></span>  
+  
+|<span data-ttu-id="4fa36-133">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4fa36-133">Use this</span></span>|<span data-ttu-id="4fa36-134">目的</span><span class="sxs-lookup"><span data-stu-id="4fa36-134">To do this</span></span>|  
 |--------------|----------------|  
-|**このコンピューターで Windows SharePoint Services アダプターを有効にします。**|選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**をこのコンピューターでアダプターを有効にします。|  
-|**Windows グループ**|**Windows グループ**一覧は、BizTalk SharePoint Adapter Enabled Hosts Windows グループの編集可能なビューを提供します。|  
-|**Windows SharePoint Services アダプター Web サイト**|Windows SharePoint Services アダプター Web サービスをホストする Web サイトを選択します。|  
+|<span data-ttu-id="4fa36-135">**このコンピューターで Windows SharePoint Services アダプターを有効にします。**</span><span class="sxs-lookup"><span data-stu-id="4fa36-135">**Enable Windows SharePoint Services Adapter on this computer**</span></span>|<span data-ttu-id="4fa36-136">選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**をこのコンピューターでアダプターを有効にします。</span><span class="sxs-lookup"><span data-stu-id="4fa36-136">Select **Enable Windows SharePoint Services Adapter on this computer** to enable the adapter on this computer.</span></span>|  
+|<span data-ttu-id="4fa36-137">**Windows グループ**</span><span class="sxs-lookup"><span data-stu-id="4fa36-137">**Windows group**</span></span>|<span data-ttu-id="4fa36-138">**Windows グループ**一覧は、BizTalk SharePoint Adapter Enabled Hosts Windows グループの編集可能なビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-138">The **Windows group** list provides a view that you can edit of the BizTalk SharePoint Adapter Enabled Hosts Windows group.</span></span>|  
+|<span data-ttu-id="4fa36-139">**Windows SharePoint Services アダプター Web サイト**</span><span class="sxs-lookup"><span data-stu-id="4fa36-139">**Windows SharePoint Services Adapter Web site**</span></span>|<span data-ttu-id="4fa36-140">Windows SharePoint Services アダプター Web サービスをホストする Web サイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-140">Select the Web site that will host the Windows SharePoint Services adapter Web service.</span></span>|  
   
- ユーザー構成を使用して Windows SharePoint Services アダプターを構成する際は、次のことが行われます。  
+ <span data-ttu-id="4fa36-141">ユーザー構成を使用して Windows SharePoint Services アダプターを構成する際は、次のことが行われます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-141">When you configure the Windows SharePoint Services adapter using custom configuration, the following happens:</span></span>  
   
--   別の Windows グループを指定しない限り、既定で SharePoint Enabled Hosts Windows グループが作成されます。  
+-   <span data-ttu-id="4fa36-142">別の Windows グループを指定しない限り、既定で SharePoint Enabled Hosts Windows グループが作成されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-142">The SharePoint Enabled Hosts Windows group is created by default unless you specify another Windows group</span></span>  
   
--   別の Web サイトを指定しない限り、Windows SharePoint Services アダプターのホストには既定の Web サイトが使用されます。  
+-   <span data-ttu-id="4fa36-143">別の Web サイトを指定しない限り、Windows SharePoint Services アダプターのホストには既定の Web サイトが使用されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-143">The Default Web Site is used to host the Windows SharePoint Services adapter unless you specify another Web site</span></span>  
   
--   BTSSharePointAdapterWSAppPool アプリケーション プールが、Windows SharePoint Services アプリケーション プールを実行するために使用するアカウントで実行されるように作成および構成されます。  
+-   <span data-ttu-id="4fa36-144">BTSSharePointAdapterWSAppPool アプリケーション プールが、Windows SharePoint Services アプリケーション プールを実行するために使用するアカウントで実行されるように作成および構成されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-144">The BTSSharePointAdapterWSAppPool application pool is created and configured to run under the account that is also used to run the Windows SharePoint Services application pool</span></span>  
   
--   BTSharePointAdapterWS 仮想アプリケーションが、BTSSharePointAdapterWSAppPool アプリケーション プールで実行されるように作成および構成されます。  
+-   <span data-ttu-id="4fa36-145">BTSharePointAdapterWS 仮想アプリケーションが、BTSSharePointAdapterWSAppPool アプリケーション プールで実行されるように作成および構成されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-145">The BTSharePointAdapterWS virtual application is created and configured to run in the BTSSharePointAdapterWSAppPool application pool</span></span>  
   
 > [!NOTE]
->  この仮想ディレクトリが既に存在する場合は、構成を行ってもメタベースのプロパティが更新されません。 仮想ディレクトリを削除して、構成を再実行する必要があります。  
+>  <span data-ttu-id="4fa36-146">この仮想ディレクトリが既に存在する場合は、構成を行ってもメタベースのプロパティが更新されません。</span><span class="sxs-lookup"><span data-stu-id="4fa36-146">If this virtual directory already exists, configuration will not update the properties in the metabase.</span></span> <span data-ttu-id="4fa36-147">仮想ディレクトリを削除して、構成を再実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-147">You must delete the virtual directory and run configuration again.</span></span>  
   
--   BTSharePointAdapterWS 仮想アプリケーションに Web サービスが含められます。  
+-   <span data-ttu-id="4fa36-148">BTSharePointAdapterWS 仮想アプリケーションに Web サービスが含められます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-148">The BTSharePointAdapterWS virtual application contains the Web service</span></span>  
   
- BizTalk Server の構成の詳細については、次を参照してください。[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)です。  
+ <span data-ttu-id="4fa36-149">BizTalk Server の構成の詳細については、次を参照してください。[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-149">For more information about the BizTalk Server Configuration, see [Import and Export BizTalk Server Configuration](../install-and-config-guides/import-and-export-biztalk-server-configuration.md).</span></span>  
   
-##### <a name="to-configure-the-windows-sharepoint-services-adapter-by-using-custom-configuration"></a>ユーザー設定を使用して Windows SharePoint Services アダプターを構成するには  
+##### <a name="to-configure-the-windows-sharepoint-services-adapter-by-using-custom-configuration"></a><span data-ttu-id="4fa36-150">ユーザー設定を使用して Windows SharePoint Services アダプターを構成するには</span><span class="sxs-lookup"><span data-stu-id="4fa36-150">To configure the Windows SharePoint Services adapter by using custom configuration</span></span>  
   
-1.  **BizTalk Server 構成**、select、 **SharePoint アダプター**ノード。  
+1.  <span data-ttu-id="4fa36-151">**BizTalk Server 構成**、select、 **SharePoint アダプター**ノード。</span><span class="sxs-lookup"><span data-stu-id="4fa36-151">In the **BizTalk Server Configuration**, select the **SharePoint adapter** node.</span></span>  
   
-2.  選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**です。  
+2.  <span data-ttu-id="4fa36-152">選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-152">Select **Enable Windows SharePoint Services Adapter on this computer**.</span></span>  
   
-3.  **Windows グループ**は、Windows SharePoint Services アダプターを使用する Windows グループを選択します。 既定では、SharePoint Enabled Hosts です。  
+3.  <span data-ttu-id="4fa36-153">**Windows グループ**は、Windows SharePoint Services アダプターを使用する Windows グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-153">Under **Windows Group**, select the Windows group you will be using for the Windows SharePoint Services adapter.</span></span> <span data-ttu-id="4fa36-154">既定では、SharePoint Enabled Hosts です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-154">By default, this is SharePoint Enabled Hosts.</span></span>  
   
-4.  **Windows SharePoint Services アダプター Web サイト**ドロップダウン ボックスで、Web サイトのアダプター コンポーネントをインストールします。 特に選択しない場合、既定の Web サイトが選択されます。  
+4.  <span data-ttu-id="4fa36-155">**Windows SharePoint Services アダプター Web サイト**ドロップダウン ボックスで、Web サイトのアダプター コンポーネントをインストールします。</span><span class="sxs-lookup"><span data-stu-id="4fa36-155">In the **Windows SharePoint Services Adapter Web Site** drop-down box, select the Web site where the adapter components will be installed.</span></span> <span data-ttu-id="4fa36-156">特に選択しない場合、既定の Web サイトが選択されます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-156">By default, this is the Default Web Site.</span></span>  
   
     > [!NOTE]
-    >  他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントがインストールされていないリモート SharePoint Server コンピューターに Windows SharePoint Services アダプター Web サイトをインストールする構成は、完全にサポートされている構成です。  
+    >  <span data-ttu-id="4fa36-157">他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントがインストールされていないリモート SharePoint Server コンピューターに Windows SharePoint Services アダプター Web サイトをインストールする構成は、完全にサポートされている構成です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-157">The installation of the Windows SharePoint Services Adapter Web site on a remote SharePoint Server computer that does not have any other [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] components installed is a fully supported configuration.</span></span>  
   
-5.  [**構成の適用**] をクリックします。  
+5.  <span data-ttu-id="4fa36-158">[**構成の適用**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fa36-158">Click **Apply Configuration**.</span></span>  
   
-## <a name="considerations-for-a-multiserver-deployment"></a>マルチサーバー展開に関する考慮事項  
+## <a name="considerations-for-a-multiserver-deployment"></a><span data-ttu-id="4fa36-159">マルチサーバー展開に関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="4fa36-159">Considerations for a multiserver deployment</span></span>  
  ![](../core/media/adapters-wss-multiserver-screenshot01.gif "Adapters_WSS_Multiserver_Screenshot01")  
   
-### <a name="general-considerations"></a>全般的な考慮事項  
- マルチサーバー環境で Windows SharePoint Services アダプターを設定および展開する際は、次のことを考慮してください。  
+### <a name="general-considerations"></a><span data-ttu-id="4fa36-160">全般的な考慮事項</span><span class="sxs-lookup"><span data-stu-id="4fa36-160">General considerations</span></span>  
+ <span data-ttu-id="4fa36-161">マルチサーバー環境で Windows SharePoint Services アダプターを設定および展開する際は、次のことを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="4fa36-161">When you set up and deploy the Windows SharePoint Services adapter in a multiserver environment, consider the following:</span></span>  
   
--   各サーバー上で、BizTalk Service アカウントを SharePoint Enabled Hosts Windows グループに追加します。  
+-   <span data-ttu-id="4fa36-162">各サーバー上で、BizTalk Service アカウントを SharePoint Enabled Hosts Windows グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-162">Add the BizTalk Service account to the SharePoint Enabled Hosts Windows group on each server.</span></span>  
   
--   SharePoint のサーバーの管理ツールを使用して、SharePoint Enabled Hosts グループを SharePoint の関係者ロールに追加します。  
+-   <span data-ttu-id="4fa36-163">SharePoint のサーバーの管理ツールを使用して、SharePoint Enabled Hosts グループを SharePoint の関係者ロールに追加します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-163">Add the SharePoint Enabled Hosts group to the SharePoint Contributors role using the SharePoint Central Administration tool.</span></span>  
   
--   [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] では、SharePoint アダプター Web サービスを実行する ID に次のアクセス許可が必要です。  
+-   <span data-ttu-id="4fa36-164">[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] では、SharePoint アダプター Web サービスを実行する ID に次のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-164">On [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)], the identity under which the SharePoint Adapter Web Service runs needs the following permissions:</span></span>  
   
-     **読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**フォルダーです。 64 ビット バージョンの Windows を使用する場合と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、アクセス許可に設定する必要があります、 **%program Files (x86) \Microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**  
+     <span data-ttu-id="4fa36-165">**読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="4fa36-165">**Read** permissions on the **Program Files\Microsoft BizTalk Server \<version>\Business Activity Services\BTSharePointV3AdapterWS** folder.</span></span> <span data-ttu-id="4fa36-166">64 ビット バージョンの Windows を使用する場合と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、アクセス許可に設定する必要があります、 **%program Files (x86) \Microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**</span><span class="sxs-lookup"><span data-stu-id="4fa36-166">If using a 64-bit version of Windows and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], permissions need to be set on the **Program Files (x86)\Microsoft BizTalk Server \<version>\Business Activity Services\BTSharePointV3AdapterWS**</span></span>  
   
-     **読み取り**次のレジストリ キーに対する権限: **hkey_local_machine \software\microsoft\shared Server\Extensions\12.0\Secure\ConfigDB**です。  
+     <span data-ttu-id="4fa36-167">**読み取り**次のレジストリ キーに対する権限: **hkey_local_machine \software\microsoft\shared Server\Extensions\12.0\Secure\ConfigDB**です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-167">**Read** permission on the following registry key: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Web Server\Extensions\12.0\Secure\ConfigDB**.</span></span>  
   
-     SharePoint データベースを含む SQL Server に対するログオン アクセス許可。  
+     <span data-ttu-id="4fa36-168">SharePoint データベースを含む SQL Server に対するログオン アクセス許可。</span><span class="sxs-lookup"><span data-stu-id="4fa36-168">Logon permissions on the SQL Server that contains the Sharepoint databases.</span></span>  
   
-     メンバー、**パブリック**と**WSS_Content_Application_Pools** SharePoint 構成データベース内のロール。  
+     <span data-ttu-id="4fa36-169">メンバー、**パブリック**と**WSS_Content_Application_Pools** SharePoint 構成データベース内のロール。</span><span class="sxs-lookup"><span data-stu-id="4fa36-169">A member of the **Public** and **WSS_Content_Application_Pools** roles within the SharePoint configuration database.</span></span>  
   
-     メンバー、**パブリック**と**db 所有者**SharePoint コンテンツ データベース内のロール。  
+     <span data-ttu-id="4fa36-170">メンバー、**パブリック**と**db 所有者**SharePoint コンテンツ データベース内のロール。</span><span class="sxs-lookup"><span data-stu-id="4fa36-170">A member of the **Public** and **db owner** roles within the SharePoint content database.</span></span>  
   
--   Web サービスをインストールする Web サイトは、SharePoint Services Web サイトとして拡張しておく必要があります。  
+-   <span data-ttu-id="4fa36-171">Web サービスをインストールする Web サイトは、SharePoint Services Web サイトとして拡張しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-171">The Web site that you install the Web service on must be extended as a SharePoint Services Web site.</span></span>  
   
--   Windows SharePoint Services アダプターは、サイレント インストールでインストールおよび構成できます。 詳細については、次を参照してください。[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)です。  
+-   <span data-ttu-id="4fa36-172">Windows SharePoint Services アダプターは、サイレント インストールでインストールおよび構成できます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-172">You can install and configure the Windows SharePoint Services adapter using a silent installation.</span></span> <span data-ttu-id="4fa36-173">詳細については、次を参照してください。[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-173">For more information, see [Appendix A: Silent Installation](../install-and-config-guides/appendix-a-silent-installation.md).</span></span>  
   
-### <a name="considerations-for-network-load-balancing-nlb"></a>ネットワーク負荷分散 (NLB) に関する考慮事項  
- Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを使用すると、同一グループ内に構成されている複数の BizTalk サーバーと共に Windows SharePoint Services サーバーを NLB クラスターにすることができます。 この場合、SharePoint のマニュアルで推奨されているように、Windows SharePoint Services を NLB クラスターにインストールする必要があります。  
+### <a name="considerations-for-network-load-balancing-nlb"></a><span data-ttu-id="4fa36-174">ネットワーク負荷分散 (NLB) に関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="4fa36-174">Considerations for network load balancing (NLB)</span></span>  
+ <span data-ttu-id="4fa36-175">Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを使用すると、同一グループ内に構成されている複数の BizTalk サーバーと共に Windows SharePoint Services サーバーを NLB クラスターにすることができます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-175">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adapter for Windows SharePoint Services supports NLB clustering of the Windows SharePoint Services servers along with multiple BizTalk servers that are configured in the same group.</span></span> <span data-ttu-id="4fa36-176">この場合、SharePoint のマニュアルで推奨されているように、Windows SharePoint Services を NLB クラスターにインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-176">For this, Windows SharePoint Services must be installed on the NLB cluster as recommended by SharePoint documentation.</span></span>  
   
- NLB を設定したマルチサーバー環境で Windows SharePoint Services アダプターを設定および展開する際は、次のことを考慮してください。  
+ <span data-ttu-id="4fa36-177">NLB を設定したマルチサーバー環境で Windows SharePoint Services アダプターを設定および展開する際は、次のことを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="4fa36-177">When you set up and deploy the Windows SharePoint Services adapter in a multiserver environment with NLB, consider the following:</span></span>  
   
--   既存の BizTalk 管理データベースを指すようにオプションを選択することによって、Windows SharePoint Services を構成します。 1 台目のコンピューターで作成した BizTalk 管理データベースを指すように設定します。 これは、Windows SharePoint Services に対して、Web サーバー環境を使用することを示す操作です。 既存のコンテンツ データベースを指すことによって、Web サイトを拡張します。  
+-   <span data-ttu-id="4fa36-178">既存の BizTalk 管理データベースを指すようにオプションを選択することによって、Windows SharePoint Services を構成します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-178">Configure Windows SharePoint Services by selecting the option to point to an existing BizTalk Management database.</span></span> <span data-ttu-id="4fa36-179">1 台目のコンピューターで作成した BizTalk 管理データベースを指すように設定します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-179">Point to the BizTalk Management database created on the first computer.</span></span> <span data-ttu-id="4fa36-180">これは、Windows SharePoint Services に対して、Web サーバー環境を使用することを示す操作です。</span><span class="sxs-lookup"><span data-stu-id="4fa36-180">This indicates to Windows SharePoint Services that you intend to have a Web server environment.</span></span> <span data-ttu-id="4fa36-181">既存のコンテンツ データベースを指すことによって、Web サイトを拡張します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-181">Extend the Web site by pointing to the existing content database.</span></span>  
   
--   Web サーバー環境内の各 Windows SharePoint Services コンピューターで、同一の Web サイト (ポート 80 の既定の Web サイトなど) を拡張する必要があります。  
+-   <span data-ttu-id="4fa36-182">Web サーバー環境内の各 Windows SharePoint Services コンピューターで、同一の Web サイト (ポート 80 の既定の Web サイトなど) を拡張する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-182">You must extend the same Web site (for example, the default Web site on port 80) on each Windows SharePoint Services computer in the Web server environment.</span></span>  
   
--   BTSharePointAdapterWS を各 NLB ホストと同様にインストールおよび構成する必要があります。 構成する必要がある NLB 設定を次に示します。  
+-   <span data-ttu-id="4fa36-183">BTSharePointAdapterWS を各 NLB ホストと同様にインストールおよび構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-183">The BTSharePointAdapterWS must be installed and configured the same way on each of the NLB hosts.</span></span> <span data-ttu-id="4fa36-184">構成する必要がある NLB 設定を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4fa36-184">You must configure the following NLB settings:</span></span>  
   
-    -   プロトコル: TCP  
+    -   <span data-ttu-id="4fa36-185">プロトコル: TCP</span><span class="sxs-lookup"><span data-stu-id="4fa36-185">Protocol: TCP</span></span>  
   
-    -   ポート: 80 (Windows SharePoint Services アダプター Web サービスがインストールおよび構成された IIS Web サイトの HTTP ポート)  
+    -   <span data-ttu-id="4fa36-186">ポート: 80 (Windows SharePoint Services アダプター Web サービスがインストールおよび構成された IIS Web サイトの HTTP ポート)</span><span class="sxs-lookup"><span data-stu-id="4fa36-186">Ports: 80 (The HTTP Port of the IIS Web site where the Windows SharePoint Services adapter Web service has been installed and configured)</span></span>  
   
-    -   フィルターのモード: 複数ホスト  
+    -   <span data-ttu-id="4fa36-187">フィルターのモード: 複数ホスト</span><span class="sxs-lookup"><span data-stu-id="4fa36-187">Filtering mode: Multiple host</span></span>  
   
-    -   関係: なし  
+    -   <span data-ttu-id="4fa36-188">関係: なし</span><span class="sxs-lookup"><span data-stu-id="4fa36-188">Affinity: None</span></span>  
   
 > [!NOTE]
->  この設定はサイトが HTTPS 用に構成されていない場合にのみ使用できます。 HTTPS を構成しているサイトに BTSharePointAdapterWS Web サービスをインストールする場合、単一クライアントの関係を使用する必要があります。  
+>  <span data-ttu-id="4fa36-189">この設定はサイトが HTTPS 用に構成されていない場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="4fa36-189">This setting can be used only if the site is not configured for HTTPS.</span></span> <span data-ttu-id="4fa36-190">HTTPS を構成しているサイトに BTSharePointAdapterWS Web サービスをインストールする場合、単一クライアントの関係を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa36-190">If the BTSharePointAdapterWS Web service is installed on a site with HTTPS, then you must use Single-client affinity.</span></span>  
   
-## <a name="see-also"></a>参照  
- [Windows SharePoint Services アダプター](../core/windows-sharepoint-services-adapter.md)   
- [シングル サーバー配置](../core/single-server-deployment.md)
+## <a name="see-also"></a><span data-ttu-id="4fa36-191">参照</span><span class="sxs-lookup"><span data-stu-id="4fa36-191">See Also</span></span>  
+ <span data-ttu-id="4fa36-192">[Windows SharePoint Services アダプター](../core/windows-sharepoint-services-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="4fa36-192">[Windows SharePoint Services Adapter](../core/windows-sharepoint-services-adapter.md) </span></span>  
+ [<span data-ttu-id="4fa36-193">シングル サーバー配置</span><span class="sxs-lookup"><span data-stu-id="4fa36-193">Single-Server Deployment</span></span>](../core/single-server-deployment.md)

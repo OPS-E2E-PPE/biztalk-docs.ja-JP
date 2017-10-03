@@ -19,23 +19,23 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="sapclientfactory-class-in-the-sap-adapter"></a>SAP アダプターで SAPClientFactory クラス
-次のセクションではメソッドとプロパティの一覧表示、 **SAPClientFactory**クラスです。 これは、派生元**System.Data.Common.DbProviderFactory**です。  
+# <a name="sapclientfactory-class-in-the-sap-adapter"></a><span data-ttu-id="e2027-102">SAP アダプターで SAPClientFactory クラス</span><span class="sxs-lookup"><span data-stu-id="e2027-102">SAPClientFactory class in the SAP adapter</span></span>
+<span data-ttu-id="e2027-103">次のセクションではメソッドとプロパティの一覧表示、 **SAPClientFactory**クラスです。</span><span class="sxs-lookup"><span data-stu-id="e2027-103">The following section lists the methods and properties for the **SAPClientFactory** class.</span></span> <span data-ttu-id="e2027-104">これは、派生元**System.Data.Common.DbProviderFactory**です。</span><span class="sxs-lookup"><span data-stu-id="e2027-104">This is derived from **System.Data.Common.DbProviderFactory**.</span></span>  
   
-## <a name="supported-properties"></a>サポートされているプロパティ  
+## <a name="supported-properties"></a><span data-ttu-id="e2027-105">サポートされているプロパティ</span><span class="sxs-lookup"><span data-stu-id="e2027-105">Supported Properties</span></span>  
   
-|名前|取得/設定|Description|  
+|<span data-ttu-id="e2027-106">名前</span><span class="sxs-lookup"><span data-stu-id="e2027-106">Name</span></span>|<span data-ttu-id="e2027-107">取得/設定</span><span class="sxs-lookup"><span data-stu-id="e2027-107">Get/Set</span></span>|<span data-ttu-id="e2027-108">Description</span><span class="sxs-lookup"><span data-stu-id="e2027-108">Description</span></span>|  
 |----------|--------------|-----------------|  
-|**インスタンス**|-|SAPClientFactory のシングルトン インスタンス|  
+|<span data-ttu-id="e2027-109">**インスタンス**</span><span class="sxs-lookup"><span data-stu-id="e2027-109">**Instance**</span></span>|-|<span data-ttu-id="e2027-110">SAPClientFactory のシングルトン インスタンス</span><span class="sxs-lookup"><span data-stu-id="e2027-110">Singleton instance of SAPClientFactory</span></span>|  
   
-## <a name="supported-methods"></a>サポートされているメソッド  
+## <a name="supported-methods"></a><span data-ttu-id="e2027-111">サポートされているメソッド</span><span class="sxs-lookup"><span data-stu-id="e2027-111">Supported Methods</span></span>  
   
-|名前|Description|  
+|<span data-ttu-id="e2027-112">名前</span><span class="sxs-lookup"><span data-stu-id="e2027-112">Name</span></span>|<span data-ttu-id="e2027-113">Description</span><span class="sxs-lookup"><span data-stu-id="e2027-113">Description</span></span>|  
 |----------|-----------------|  
-|**CreateCommand()**|SAPCommand のインスタンスを作成します。|  
-|**CreateConnection()**|SAPConnection のインスタンスを作成します。|  
-|**CreateConnectionStringBuilder()**|SAPConnectionStringBuilder のインスタンスを作成します。|  
-|**CreateParameter()**|SAPParameter のインスタンスを作成します。|  
+|<span data-ttu-id="e2027-114">**CreateCommand()**</span><span class="sxs-lookup"><span data-stu-id="e2027-114">**CreateCommand()**</span></span>|<span data-ttu-id="e2027-115">SAPCommand のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e2027-115">Creates an instance of SAPCommand</span></span>|  
+|<span data-ttu-id="e2027-116">**CreateConnection()**</span><span class="sxs-lookup"><span data-stu-id="e2027-116">**CreateConnection()**</span></span>|<span data-ttu-id="e2027-117">SAPConnection のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e2027-117">Creates an instance of SAPConnection</span></span>|  
+|<span data-ttu-id="e2027-118">**CreateConnectionStringBuilder()**</span><span class="sxs-lookup"><span data-stu-id="e2027-118">**CreateConnectionStringBuilder()**</span></span>|<span data-ttu-id="e2027-119">SAPConnectionStringBuilder のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e2027-119">Creates an instance of SAPConnectionStringBuilder</span></span>|  
+|<span data-ttu-id="e2027-120">**CreateParameter()**</span><span class="sxs-lookup"><span data-stu-id="e2027-120">**CreateParameter()**</span></span>|<span data-ttu-id="e2027-121">SAPParameter のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e2027-121">Creates an instance of SAPParameter</span></span>|  
   
-## <a name="see-also"></a>参照  
- [SAP アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-sap/extend-ado-net-interfaces-with-the-sap-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="e2027-122">参照</span><span class="sxs-lookup"><span data-stu-id="e2027-122">See Also</span></span>  
+ [<span data-ttu-id="e2027-123">SAP アダプターと ADO.NET インターフェイスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="e2027-123">Extend ADO.NET Interfaces with the SAP adapter</span></span>](../../adapters-and-accelerators/adapter-sap/extend-ado-net-interfaces-with-the-sap-adapter.md)

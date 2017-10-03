@@ -19,17 +19,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="message-versioning-support"></a>メッセージ バージョン管理のサポート
-[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]操作に対して表示されるメッセージ アクション、名前空間、およびノード Id でバージョン文字列の要素を含めることでバージョン管理をサポートしています。 現在のバージョンは、http://Microsoft.LobServices.Siebel/2007/03 です。 つまり、Siebel リポジトリ内のアカウント ビジネス オブジェクトの挿入操作の場合、アダプターによって公開される挿入操作は、次。  
+# <a name="message-versioning-support"></a><span data-ttu-id="5737b-102">メッセージ バージョン管理のサポート</span><span class="sxs-lookup"><span data-stu-id="5737b-102">Message Versioning Support</span></span>
+<span data-ttu-id="5737b-103">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]操作に対して表示されるメッセージ アクション、名前空間、およびノード Id でバージョン文字列の要素を含めることでバージョン管理をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="5737b-103">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] supports versioning by including a version string component in the message actions, namespaces, and node IDs surfaced for operations.</span></span> <span data-ttu-id="5737b-104">現在のバージョンは、http://Microsoft.LobServices.Siebel/2007/03 です。</span><span class="sxs-lookup"><span data-stu-id="5737b-104">The current version is http://Microsoft.LobServices.Siebel/2007/03.</span></span> <span data-ttu-id="5737b-105">つまり、Siebel リポジトリ内のアカウント ビジネス オブジェクトの挿入操作の場合、アダプターによって公開される挿入操作は、次。</span><span class="sxs-lookup"><span data-stu-id="5737b-105">This means that for an Insert operation on an Account business object in the Siebel repository, the Insert operation surfaced by the adapter has the following:</span></span>  
   
--   ノード ID: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
+-   <span data-ttu-id="5737b-106">ノード ID: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert</span><span class="sxs-lookup"><span data-stu-id="5737b-106">Node ID: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert</span></span>  
   
--   メッセージのアクション: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
+-   <span data-ttu-id="5737b-107">メッセージのアクション: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert</span><span class="sxs-lookup"><span data-stu-id="5737b-107">Message action: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert</span></span>  
   
--   Namespace: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Operation  
+-   <span data-ttu-id="5737b-108">Namespace: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Operation</span><span class="sxs-lookup"><span data-stu-id="5737b-108">Namespace: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Operation</span></span>  
   
 > [!NOTE]
->  この機能は、アダプターの以前のバージョンとの下位互換性を提供しません。  
+>  <span data-ttu-id="5737b-109">この機能は、アダプターの以前のバージョンとの下位互換性を提供しません。</span><span class="sxs-lookup"><span data-stu-id="5737b-109">This feature does not provide backward compatibility with the earlier versions of the adapter.</span></span>  
   
-## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter for Siebel eBusiness Applications のメッセージ スキーマ](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)
+## <a name="see-also"></a><span data-ttu-id="5737b-110">参照</span><span class="sxs-lookup"><span data-stu-id="5737b-110">See Also</span></span>  
+ [<span data-ttu-id="5737b-111">メッセージと BizTalk Adapter for Siebel eBusiness Applications のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="5737b-111">Messages and Message Schemas for BizTalk Adapter for Siebel eBusiness Applications</span></span>](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)

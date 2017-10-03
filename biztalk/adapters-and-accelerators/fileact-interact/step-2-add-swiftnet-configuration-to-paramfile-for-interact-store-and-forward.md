@@ -18,78 +18,78 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a>手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ
-SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。  
+# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a><span data-ttu-id="74d29-102">手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ</span><span class="sxs-lookup"><span data-stu-id="74d29-102">Step 2: Add SWIFTNet Configuration to the Paramfile for the InterAct Store and Forward Scenario</span></span>
+<span data-ttu-id="74d29-103">SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="74d29-103">The Server message partners created in SAG must be specified in the SWIFTNet paramfile to enable Receivers to initialize with these values.</span></span>  
   
- この手順を開始する前に行う必要があります[手順 1: SWIFT アダプター InterAct ストア アンド フォワード シナリオ用に構成](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)です。  
+ <span data-ttu-id="74d29-104">この手順を開始する前に行う必要があります[手順 1: SWIFT アダプター InterAct ストア アンド フォワード シナリオ用に構成](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="74d29-104">Before you begin this step, you must complete [Step 1: Configure the SWIFT Adapter for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md).</span></span>  
   
-### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a>Paramfile SWIFTNet 構成を追加するには  
+### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a><span data-ttu-id="74d29-105">Paramfile SWIFTNet 構成を追加するには</span><span class="sxs-lookup"><span data-stu-id="74d29-105">To add SWIFTNet configuration to the paramfile</span></span>  
   
-1.  メモ帳などのテキスト エディターで、paramfile を開きます。  
+1.  <span data-ttu-id="74d29-106">メモ帳などのテキスト エディターで、paramfile を開きます。</span><span class="sxs-lookup"><span data-stu-id="74d29-106">Open the paramfile in a text editor, such as Notepad.</span></span>  
   
     > [!NOTE]
-    >  Paramfile がある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile です。  
+    >  <span data-ttu-id="74d29-107">Paramfile がある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile です。</span><span class="sxs-lookup"><span data-stu-id="74d29-107">The paramfile is typically located at: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile.</span></span>  
   
-2.  Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示された変更を行います。  
+2.  <span data-ttu-id="74d29-108">Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示された変更を行います。</span><span class="sxs-lookup"><span data-stu-id="74d29-108">In the paramfile, make the highlighted change to specify the Server Message partner name:</span></span>  
   
-     username:snlowner  
+     <span data-ttu-id="74d29-109">username:snlowner</span><span class="sxs-lookup"><span data-stu-id="74d29-109">username:snlowner</span></span>  
   
-     subsystem_name:InteractStub  
+     <span data-ttu-id="74d29-110">subsystem_name:InteractStub</span><span class="sxs-lookup"><span data-stu-id="74d29-110">subsystem_name:InteractStub</span></span>  
   
-     \#subsystem_group:Interactsnf  
+     <span data-ttu-id="74d29-111">\#subsystem_group:Interactsnf</span><span class="sxs-lookup"><span data-stu-id="74d29-111">\#subsystem_group:Interactsnf</span></span>  
   
-     \#subsystem_dependency:Support、群  
+     <span data-ttu-id="74d29-112">\#subsystem_dependency:Support、群</span><span class="sxs-lookup"><span data-stu-id="74d29-112">\#subsystem_dependency:Support,Swarm</span></span>  
   
-     subsystem_nature: 重大  
+     <span data-ttu-id="74d29-113">subsystem_nature: 重大</span><span class="sxs-lookup"><span data-stu-id="74d29-113">subsystem_nature:critical</span></span>  
   
-     subsystem_start:  
+     <span data-ttu-id="74d29-114">subsystem_start:</span><span class="sxs-lookup"><span data-stu-id="74d29-114">subsystem_start:</span></span>  
   
-     **起動"snlreceiver - SagMessagePartner \<Interact SnF 用サーバー MessagePartnerName > AdapterMode Interact"**  
+     <span data-ttu-id="74d29-115">**起動"snlreceiver - SagMessagePartner \<Interact SnF 用サーバー MessagePartnerName > AdapterMode Interact"**</span><span class="sxs-lookup"><span data-stu-id="74d29-115">**spawn "snlreceiver -SagMessagePartner \<Server MessagePartnerName for Interact SnF> -AdapterMode Interact"**</span></span>  
   
-     * 終了  
+     <span data-ttu-id="74d29-116">* 終了</span><span class="sxs-lookup"><span data-stu-id="74d29-116">*END</span></span>  
   
-     subsystem_stop:  
+     <span data-ttu-id="74d29-117">subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="74d29-117">subsystem_stop:</span></span>  
   
-     * KILL9:snlreceiver  
+     <span data-ttu-id="74d29-118">* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="74d29-118">*KILL9:snlreceiver</span></span>  
   
-     * 終了  
+     <span data-ttu-id="74d29-119">* 終了</span><span class="sxs-lookup"><span data-stu-id="74d29-119">*END</span></span>  
   
-     subsystem_status:  
+     <span data-ttu-id="74d29-120">subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="74d29-120">subsystem_status:</span></span>  
   
-     * NB:1:snlreceiver  
+     <span data-ttu-id="74d29-121">* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="74d29-121">*NB:1:snlreceiver</span></span>  
   
-     * 終了  
+     <span data-ttu-id="74d29-122">* 終了</span><span class="sxs-lookup"><span data-stu-id="74d29-122">*END</span></span>  
   
-     start_event:SNL001:subsystem InteractStubSnF が稼働  
+     <span data-ttu-id="74d29-123">start_event:SNL001:subsystem InteractStubSnF が稼働</span><span class="sxs-lookup"><span data-stu-id="74d29-123">start_event:SNL001:subsystem InteractStubSnF is up</span></span>  
   
-     stop_event:SNL002:subsystem InteractStubSnF がダウンしています。  
+     <span data-ttu-id="74d29-124">stop_event:SNL002:subsystem InteractStubSnF がダウンしています。</span><span class="sxs-lookup"><span data-stu-id="74d29-124">stop_event:SNL002:subsystem InteractStubSnF is down</span></span>  
   
-     \#subsystem_name:User  
+     <span data-ttu-id="74d29-125">\#subsystem_name:User</span><span class="sxs-lookup"><span data-stu-id="74d29-125">\#subsystem_name:User</span></span>  
   
-     \## subsystem_group:user  
+     <span data-ttu-id="74d29-126">\## subsystem_group:user</span><span class="sxs-lookup"><span data-stu-id="74d29-126">\##subsystem_group:user</span></span>  
   
-     \## subsystem_dependency:  
+     <span data-ttu-id="74d29-127">\## subsystem_dependency:</span><span class="sxs-lookup"><span data-stu-id="74d29-127">\##subsystem_dependency:</span></span>  
   
-     \#subsystem_nature: 重大  
+     <span data-ttu-id="74d29-128">\#subsystem_nature: 重大</span><span class="sxs-lookup"><span data-stu-id="74d29-128">\#subsystem_nature:critical</span></span>  
   
-     \#subsystem_start:  
+     <span data-ttu-id="74d29-129">\#subsystem_start:</span><span class="sxs-lookup"><span data-stu-id="74d29-129">\#subsystem_start:</span></span>  
   
-     \#* 終了  
+     <span data-ttu-id="74d29-130">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="74d29-130">\#*END</span></span>  
   
-     \#subsystem_stop:  
+     <span data-ttu-id="74d29-131">\#subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="74d29-131">\#subsystem_stop:</span></span>  
   
-     \#* 終了  
+     <span data-ttu-id="74d29-132">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="74d29-132">\#*END</span></span>  
   
-     \#subsystem_status:  
+     <span data-ttu-id="74d29-133">\#subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="74d29-133">\#subsystem_status:</span></span>  
   
-     \#* 終了  
+     <span data-ttu-id="74d29-134">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="74d29-134">\#*END</span></span>  
   
-     #<a name="starteventsnl001subsystem-user-is-up"></a>ユーザーが稼働 start_event:SNL001:subsystem です。  
+     #<a name="starteventsnl001subsystem-user-is-up"></a><span data-ttu-id="74d29-135">ユーザーが稼働 start_event:SNL001:subsystem です。</span><span class="sxs-lookup"><span data-stu-id="74d29-135">start_event:SNL001:subsystem User is up</span></span>  
   
-     #<a name="stopeventsnl002subsystem-user-is-down"></a>ユーザーがダウンして stop_event:SNL002:subsystem  
+     #<a name="stopeventsnl002subsystem-user-is-down"></a><span data-ttu-id="74d29-136">ユーザーがダウンして stop_event:SNL002:subsystem</span><span class="sxs-lookup"><span data-stu-id="74d29-136">stop_event:SNL002:subsystem User is down</span></span>  
   
-## <a name="see-also"></a>参照  
- [ストアと順方向 (プッシュ) シナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)   
- [手順 1: InterAct ストアと転送シナリオ SWIFT のアダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)   
- [手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
- [手順 4: InterAct ストアと転送のエンド ツー エンド シナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)
+## <a name="see-also"></a><span data-ttu-id="74d29-137">参照</span><span class="sxs-lookup"><span data-stu-id="74d29-137">See Also</span></span>  
+ <span data-ttu-id="74d29-138">[ストアと順方向 (プッシュ) シナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="74d29-138">[InterAct Store and Forward (Push) Scenario](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md) </span></span>  
+ <span data-ttu-id="74d29-139">[手順 1: InterAct ストアと転送シナリオ SWIFT のアダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="74d29-139">[Step 1: Configure the SWIFT Adapter for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md) </span></span>  
+ <span data-ttu-id="74d29-140">[手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="74d29-140">[Step 3: Create Send Ports and Receive Ports for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md) </span></span>  
+ [<span data-ttu-id="74d29-141">手順 4: InterAct ストアと転送のエンド ツー エンド シナリオをテストします。</span><span class="sxs-lookup"><span data-stu-id="74d29-141">Step 4: Test the InterAct Store and Forward End-to-End Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)

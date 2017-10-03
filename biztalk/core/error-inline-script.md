@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---inline-script"></a>エラー - インライン スクリプト
-**エラー コード**  
+# <a name="error---inline-script"></a><span data-ttu-id="4d2fb-102">エラー - インライン スクリプト</span><span class="sxs-lookup"><span data-stu-id="4d2fb-102">Error - Inline Script</span></span>
+<span data-ttu-id="4d2fb-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="4d2fb-103">**Error Code**</span></span>  
   
- btm1021  
+ <span data-ttu-id="4d2fb-104">btm1021</span><span class="sxs-lookup"><span data-stu-id="4d2fb-104">btm1021</span></span>  
   
- **説明**  
+ <span data-ttu-id="4d2fb-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="4d2fb-105">**Explanation**</span></span>  
   
- 指定された、指定されたインライン スクリプト**スクリプト**functoid には、構文エラーが含まれています。  
+ <span data-ttu-id="4d2fb-106">指定された、指定されたインライン スクリプト**スクリプト**functoid には、構文エラーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4d2fb-106">The inline script provided for the indicated **Scripting** functoid contains a syntax error.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="4d2fb-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="4d2fb-107">**User Action**</span></span>  
   
- 選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウでし、 **[Functoid スクリプトの**ダイアログ ボックスで、正しい、構文エラーです。
+ <span data-ttu-id="4d2fb-108">選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウでし、 **[Functoid スクリプトの**ダイアログ ボックスで、正しい、構文エラーです。</span><span class="sxs-lookup"><span data-stu-id="4d2fb-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure Functoid Script** dialog box, correct the syntax error(s).</span></span>

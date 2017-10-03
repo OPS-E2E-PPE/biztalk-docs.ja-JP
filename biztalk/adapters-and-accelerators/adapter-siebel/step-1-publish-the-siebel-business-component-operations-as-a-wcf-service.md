@@ -18,167 +18,167 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を公開します。
-![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
+# <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a><span data-ttu-id="31c7e-102">手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-102">Step 1: Publish the Siebel Business Component Operations as a WCF Service</span></span>
+<span data-ttu-id="31c7e-103">![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span><span class="sxs-lookup"><span data-stu-id="31c7e-103">![Step 1 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span></span>  
   
- **所要時間:** 10 分  
+ <span data-ttu-id="31c7e-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="31c7e-104">**Time to complete:** 10 minutes</span></span>  
   
- **目標:**インターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスト環境でホストできる WCF サービスを生成する、WCF アダプター サービス開発ウィザードを使用することができます。 このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。  
+ <span data-ttu-id="31c7e-105">**目標:**インターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスト環境でホストできる WCF サービスを生成する、WCF アダプター サービス開発ウィザードを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-105">**Objective:** You can use the WCF Adapter Service Development Wizard to generate a WCF service that can be hosted in a hosting environment such as Internet Information Services (IIS) or Windows Process Activation Service (WAS).</span></span> <span data-ttu-id="31c7e-106">このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-106">This topic demonstrates how to use the wizard to generate a WCF service file.</span></span>  
   
-## <a name="prerequisites"></a>前提条件  
- ウィザードを実行する前に、次のようにインストールします。  
+## <a name="prerequisites"></a><span data-ttu-id="31c7e-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="31c7e-107">Prerequisites</span></span>  
+ <span data-ttu-id="31c7e-108">ウィザードを実行する前に、次のようにインストールします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-108">Before running the wizard, install the following:</span></span>  
   
--   [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]いずれかで、**完了**オプションまたは**カスタム**オプション (を選択して**ツール**は、このオプションで)。 これには、WCF アダプター サービス開発ウィザードの Visual Studio テンプレートがインストールされます。  
+-   [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]<span data-ttu-id="31c7e-109">いずれかで、**完了**オプションまたは**カスタム**オプション (を選択して**ツール**は、このオプションで)。</span><span class="sxs-lookup"><span data-stu-id="31c7e-109"> either with the **Complete** option or the **Custom** option (and choosing **Tools** within this option).</span></span> <span data-ttu-id="31c7e-110">これには、WCF アダプター サービス開発ウィザードの Visual Studio テンプレートがインストールされます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-110">This installs the Visual Studio template for the WCF Adapter Service Development Wizard.</span></span>  
   
 -   [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]  
   
--   必要な Siebel クライアント。  
+-   <span data-ttu-id="31c7e-111">必要な Siebel クライアント。</span><span class="sxs-lookup"><span data-stu-id="31c7e-111">The required Siebel client.</span></span>  
   
- これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
+ <span data-ttu-id="31c7e-112">これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-112">For more information about these prerequisites, see the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation guide.</span></span> <span data-ttu-id="31c7e-113">インストール ガイドがインストールされている通常\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-113">The installation guide is typically installed at \<installation drive>:\Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.</span></span>  
   
-### <a name="to-publish-the-siebel-business-components-as-a-wcf-service"></a>Siebel ビジネス コンポーネントを WCF サービスとして公開するには  
+### <a name="to-publish-the-siebel-business-components-as-a-wcf-service"></a><span data-ttu-id="31c7e-114">Siebel ビジネス コンポーネントを WCF サービスとして公開するには</span><span class="sxs-lookup"><span data-stu-id="31c7e-114">To publish the Siebel Business Components as a WCF Service</span></span>  
   
-1.  開始[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、プロジェクトを作成します。  
+1.  <span data-ttu-id="31c7e-115">開始[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-115">Start [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], and then create a project.</span></span>  
   
-2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
+2.  <span data-ttu-id="31c7e-116">**新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-116">In the **New Project** dialog box, from the **Project types** pane, select **Visual C#**.</span></span> <span data-ttu-id="31c7e-117">**テンプレート**ペインで、 **WCF アダプタ サービス**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-117">From the **Templates** pane, select **WCF Adapter Service**.</span></span>  
   
-     またはから、**プロジェクトの種類**] ウィンドウで、展開**Visual c#**、し、[ **Web**です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
+     <span data-ttu-id="31c7e-118">またはから、**プロジェクトの種類**] ウィンドウで、展開**Visual c#**、し、[ **Web**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-118">Alternatively, from the **Project types** pane, expand **Visual C#**, and then select **Web**.</span></span> <span data-ttu-id="31c7e-119">**テンプレート**ペインで、 **WCF アダプタ サービス**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-119">From the **Templates** pane, select **WCF Adapter Service**.</span></span>  
   
     > [!NOTE]
-    >  インストールした場合[!INCLUDE[vs2010](../../includes/vs2010-md.md)]Web 開発コンポーネントと、 **WCF アダプタ サービス**テンプレートもサポートされてから、**新しい web サイト**オプション。  
+    >  <span data-ttu-id="31c7e-120">インストールした場合[!INCLUDE[vs2010](../../includes/vs2010-md.md)]Web 開発コンポーネントと、 **WCF アダプタ サービス**テンプレートもサポートされてから、**新しい web サイト**オプション。</span><span class="sxs-lookup"><span data-stu-id="31c7e-120">If you installed [!INCLUDE[vs2010](../../includes/vs2010-md.md)] with the Web Development component, the **WCF Adapter Service** template is also available from the **New Website** option.</span></span>  
   
-3.  名前と、ソリューションの場所を指定し、クリックして**OK**です。 WCF アダプター サービス開発ウィザードを開始します。  
+3.  <span data-ttu-id="31c7e-121">名前と、ソリューションの場所を指定し、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-121">Specify a name and location for the solution, and then click **OK**.</span></span> <span data-ttu-id="31c7e-122">WCF アダプター サービス開発ウィザードを開始します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-122">The WCF Adapter Service Development Wizard starts.</span></span>  
   
-4.  [ようこそ] ページで、をクリックして**次**です。  
+4.  <span data-ttu-id="31c7e-123">[ようこそ] ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-123">On the Welcome page, click **Next**.</span></span>  
   
-5.  操作の選択 ページで、Siebel システムへの接続への接続文字列を指定します。 そのためには次を行います。  
+5.  <span data-ttu-id="31c7e-124">操作の選択 ページで、Siebel システムへの接続への接続文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-124">On the Choose Operations page, specify a connection string to connect to the Siebel system.</span></span> <span data-ttu-id="31c7e-125">そのためには次を行います。</span><span class="sxs-lookup"><span data-stu-id="31c7e-125">To do so:</span></span>  
   
-    1.  **バインディングを選択**一覧で、をクリックして**siebelBinding**、クリックして**構成**です。  
+    1.  <span data-ttu-id="31c7e-126">**バインディングを選択**一覧で、をクリックして**siebelBinding**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-126">In the **Select a binding** list, click **siebelBinding**, and then click **Configure**.</span></span>  
   
-    2.  **アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブです。  
+    2.  <span data-ttu-id="31c7e-127">**アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-127">In the **Configure Adapter** dialog box, click the **Security** tab.</span></span>  
   
-    3.  **クライアント資格情報の種類**一覧で、 **Username**、し、ユーザー名と Siebel システムへの接続にパスワードを指定します。  
+    3.  <span data-ttu-id="31c7e-128">**クライアント資格情報の種類**一覧で、 **Username**、し、ユーザー名と Siebel システムへの接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-128">In the **Client credential type** list, select **Username**, and then specify the user name and password to connect to the Siebel system.</span></span>  
   
-    4.  クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]を参照してください[Creat Siebel システム接続 URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。  
-  
-        > [!NOTE]
-        >  接続パラメーター (XML の特殊文字) などの予約文字を含める場合は、そのままを指定する必要がありますのでは、 **URI プロパティ** タブでは、エスケープ文字を使用せずします。 ただし、URI で直接指定する場合、 **URI の構成**フィールドと接続パラメーターは、予約文字を含める、適切なエスケープ文字を使用して接続パラメーターを指定する必要があります。  
-  
-    5.  クリックして、**バインド プロパティ**タブをクリックし、対象となる操作に、必要な場合、バインド プロパティの値を指定します。  
-  
-         バインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Siebel のバインド プロパティ読む](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)です。  
-  
-    6.  をクリックして**OK**、順にクリック**接続**です。 接続が確立されると、接続状態は表示**接続**です。  
-  
-6.  操作の選択] ページで、[、**選択コントラクト型**一覧で、をクリックして**クライアント (送信操作)**です。  
-  
-7.  **カテゴリを選択**ボックスで、展開、Siebel**ビジネス オブジェクト**Siebel リポジトリ内のビジネス オブジェクトの一覧を表示するノードです。 この例では、次の操作を行います。  
-  
-    1.  展開して、**アカウント**クリックして、ビジネス オブジェクト、**アカウント**ビジネス コンポーネントです。  
-  
-    2.  **利用可能なカテゴリと操作**ボックスで、選択、**クエリ**操作、およびクリック**追加**です。 選択した操作が記載されて、**カテゴリと操作を追加**ボックス。  
-  
-         ![Siebel ビジネス コンポーネント操作の選択](../../adapters-and-accelerators/adapter-siebel/media/ed0cb649-dc4d-49ce-9541-c491c9cc9ac9.gif "ed0cb649-dc4d-49ce-9541-c491c9cc9ac9")  
-  
-8.  操作の選択 ページで、をクリックして**次**です。  
-  
-9. [サービスの構成とエンドポイントの動作] ページで、サービスとエンドポイント動作を構成する値を指定します。  
-  
-    1.  **サービス動作構成**ボックスで、次の値を指定します。  
-  
-        |プロパティの|値を指定します。|  
-        |----------------------|-----------------------|  
-        |EnableMetadataExchange|これを設定して**True** metadata exchange エンドポイントを作成します。 値を設定する**True**、サービス メタデータを Ws-metadata Exchange (MEX) や HTTP/GET 要求などの標準化プロトコルを使用して利用できるようにします。<br /><br /> 既定値は**False**です。|  
-        |IncludeExceptionDetailsinFault|これを設定して**True**デバッグのためのクライアントに返される SOAP エラーの詳細にマネージ例外情報を含めます。 既定値は**False**です。|  
-        |名前|サービス動作の構成の名前です。|  
-        |UseServiceCertificate|WCF のメッセージ レベルのセキュリティ モードを使用するかどうかを指定します。 既定値は**True**です。<br /><br /> このチュートリアルでは、設定する必要がこれ**False**です。|  
-        |FindValue|X.509 証明書ストアで検索する値を指定する文字列。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |StoreLocation|サービスがクライアントの証明書の検証に使用できる証明書ストアの場所を指定する値。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |StoreName|開く X.509 証明書ストアの名前です。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |X509FindType|実行する X.509 検索の種類。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
+    4.  <span data-ttu-id="31c7e-129">クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-129">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="31c7e-130">詳細については、接続 URI の[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]を参照してください[Creat Siebel システム接続 URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-130">For more information about the connection URI for the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], see [Creat the Siebel System Connection URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md).</span></span>  
   
         > [!NOTE]
-        >  証明書および関連付けられたプロパティの詳細についてを参照してください「X509ClientCertificateCredentialsElement プロパティ」 [http://go.microsoft.com/fwlink/?LinkId=103771](http://go.microsoft.com/fwlink/?LinkId=103771)です。  
+        >  <span data-ttu-id="31c7e-131">接続パラメーター (XML の特殊文字) などの予約文字を含める場合は、そのままを指定する必要がありますのでは、 **URI プロパティ** タブでは、エスケープ文字を使用せずします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-131">If the connection parameters contain any reserved characters (such as XML special characters), you must specify them as-is in the **URI Properties** tab, that is, without using any escape characters.</span></span> <span data-ttu-id="31c7e-132">ただし、URI で直接指定する場合、 **URI の構成**フィールドと接続パラメーターは、予約文字を含める、適切なエスケープ文字を使用して接続パラメーターを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31c7e-132">However, if you specify the URI directly in the **Configure a URI** field and the connection parameters contain reserved characters, you must specify the connection parameters using proper escape characters.</span></span>  
   
-    2.  **エンドポイント動作の構成**ボックスで、次の値を指定します。  
+    5.  <span data-ttu-id="31c7e-133">クリックして、**バインド プロパティ**タブをクリックし、対象となる操作に、必要な場合、バインド プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-133">Click the **Binding Properties** tab, and then specify values for the binding properties, if any, required for the operations you want to target.</span></span>  
   
-        |プロパティの|値を指定します。|  
+         <span data-ttu-id="31c7e-134">バインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Siebel のバインド プロパティ読む](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-134">For more information about binding properties, see [Read about BizTalk Adapter for Siebel Binding Properties](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span></span>  
+  
+    6.  <span data-ttu-id="31c7e-135">をクリックして**OK**、順にクリック**接続**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-135">Click **OK**, and then click **Connect**.</span></span> <span data-ttu-id="31c7e-136">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-136">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+  
+6.  <span data-ttu-id="31c7e-137">操作の選択] ページで、[、**選択コントラクト型**一覧で、をクリックして**クライアント (送信操作)**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-137">On the Choose Operations page, in the **Select contract type** list, click **Client (Outbound operations)**.</span></span>  
+  
+7.  <span data-ttu-id="31c7e-138">**カテゴリを選択**ボックスで、展開、Siebel**ビジネス オブジェクト**Siebel リポジトリ内のビジネス オブジェクトの一覧を表示するノードです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-138">In the **Select a category** box, expand the Siebel **Business Objects** node to see the list of business objects in the Siebel repository.</span></span> <span data-ttu-id="31c7e-139">この例では、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="31c7e-139">For this example, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="31c7e-140">展開して、**アカウント**クリックして、ビジネス オブジェクト、**アカウント**ビジネス コンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-140">Expand the **Account** business object, and then click the **Account** business component.</span></span>  
+  
+    2.  <span data-ttu-id="31c7e-141">**利用可能なカテゴリと操作**ボックスで、選択、**クエリ**操作、およびクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-141">In the **Available categories and operations** box, select the **Query** operation, and then click **Add**.</span></span> <span data-ttu-id="31c7e-142">選択した操作が記載されて、**カテゴリと操作を追加**ボックス。</span><span class="sxs-lookup"><span data-stu-id="31c7e-142">The selected operation is listed in the **Added categories and operations** box.</span></span>  
+  
+         <span data-ttu-id="31c7e-143">![Siebel ビジネス コンポーネント操作の選択](../../adapters-and-accelerators/adapter-siebel/media/ed0cb649-dc4d-49ce-9541-c491c9cc9ac9.gif "ed0cb649-dc4d-49ce-9541-c491c9cc9ac9")</span><span class="sxs-lookup"><span data-stu-id="31c7e-143">![Select Siebel business component operations](../../adapters-and-accelerators/adapter-siebel/media/ed0cb649-dc4d-49ce-9541-c491c9cc9ac9.gif "ed0cb649-dc4d-49ce-9541-c491c9cc9ac9")</span></span>  
+  
+8.  <span data-ttu-id="31c7e-144">操作の選択 ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-144">On the Choose Operations page, click **Next**.</span></span>  
+  
+9. <span data-ttu-id="31c7e-145">[サービスの構成とエンドポイントの動作] ページで、サービスとエンドポイント動作を構成する値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-145">On the Configure Service and Endpoint Behaviors page, specify values to configure the service and endpoint behavior.</span></span>  
+  
+    1.  <span data-ttu-id="31c7e-146">**サービス動作構成**ボックスで、次の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-146">In the **Service Behavior Configuration** box, specify values for the following:</span></span>  
+  
+        |<span data-ttu-id="31c7e-147">プロパティの</span><span class="sxs-lookup"><span data-stu-id="31c7e-147">For the property</span></span>|<span data-ttu-id="31c7e-148">値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-148">Specify the value</span></span>|  
         |----------------------|-----------------------|  
-        |[認証の種類]|-この設定**ClientCredentialUserNamePassword**を WCF サービスを使用しているとき、ユーザー名とパスワードを指定するようにクライアントを有効にします。<br /><br /> -この設定**HTTPUserNamePassword** HTTP ヘッダーの一部としてユーザー名とパスワードを指定するクライアントを有効にします。<br /><br /> -この設定**自動**を通じて資格情報を指定するクライアントを最初に有効にする、 **ClientCredential**インターフェイスです。 これが失敗した場合、クライアントは HTTP ヘッダーの一部として資格情報を渡すことができます。<br /><br /> 既定値は**自動**です。WCF サービスを使用する Microsoft Office SharePoint Server のこの設定の値として**HTTPUserNamePassword**です。|  
-        |名前|エンドポイント動作の構成の名前を指定します。|  
-        |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。<br /><br /> **注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
-        |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。<br /><br /> **注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
+        |<span data-ttu-id="31c7e-149">EnableMetadataExchange</span><span class="sxs-lookup"><span data-stu-id="31c7e-149">EnableMetadataExchange</span></span>|<span data-ttu-id="31c7e-150">これを設定して**True** metadata exchange エンドポイントを作成します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-150">Set this to **True** to create a metadata exchange endpoint.</span></span> <span data-ttu-id="31c7e-151">値を設定する**True**、サービス メタデータを Ws-metadata Exchange (MEX) や HTTP/GET 要求などの標準化プロトコルを使用して利用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-151">By setting this to **True**, you make the service metadata available using standardized protocols, such as WS-Metadata Exchange (MEX) and HTTP/GET requests.</span></span><br /><br /> <span data-ttu-id="31c7e-152">既定値は**False**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-152">Default is **False**.</span></span>|  
+        |<span data-ttu-id="31c7e-153">IncludeExceptionDetailsinFault</span><span class="sxs-lookup"><span data-stu-id="31c7e-153">IncludeExceptionDetailsinFault</span></span>|<span data-ttu-id="31c7e-154">これを設定して**True**デバッグのためのクライアントに返される SOAP エラーの詳細にマネージ例外情報を含めます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-154">Set this to **True** to include managed exception information in detail of SOAP faults returned to the client for debugging purposes.</span></span> <span data-ttu-id="31c7e-155">既定値は**False**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-155">Default is **False**.</span></span>|  
+        |<span data-ttu-id="31c7e-156">名前</span><span class="sxs-lookup"><span data-stu-id="31c7e-156">Name</span></span>|<span data-ttu-id="31c7e-157">サービス動作の構成の名前です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-157">Name for the service behavior configuration.</span></span>|  
+        |<span data-ttu-id="31c7e-158">UseServiceCertificate</span><span class="sxs-lookup"><span data-stu-id="31c7e-158">UseServiceCertificate</span></span>|<span data-ttu-id="31c7e-159">WCF のメッセージ レベルのセキュリティ モードを使用するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-159">Specifies whether you want to use the message level security mode of WCF.</span></span> <span data-ttu-id="31c7e-160">既定値は**True**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-160">Default is **True**.</span></span><br /><br /> <span data-ttu-id="31c7e-161">このチュートリアルでは、設定する必要がこれ**False**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-161">For this tutorial, you must set this to **False**.</span></span>|  
+        |<span data-ttu-id="31c7e-162">FindValue</span><span class="sxs-lookup"><span data-stu-id="31c7e-162">FindValue</span></span>|<span data-ttu-id="31c7e-163">X.509 証明書ストアで検索する値を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="31c7e-163">A string that specifies the value to search for in the X.509 certificate store.</span></span><br /><br /> <span data-ttu-id="31c7e-164">**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-164">**Note:** Specify a value for this property only if **UseServiceCertificate** is set to **True**.</span></span>|  
+        |<span data-ttu-id="31c7e-165">StoreLocation</span><span class="sxs-lookup"><span data-stu-id="31c7e-165">StoreLocation</span></span>|<span data-ttu-id="31c7e-166">サービスがクライアントの証明書の検証に使用できる証明書ストアの場所を指定する値。</span><span class="sxs-lookup"><span data-stu-id="31c7e-166">A value that specifies the location of the certificate store that the service can use to validate the client's certificate.</span></span><br /><br /> <span data-ttu-id="31c7e-167">**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-167">**Note:** Specify a value for this property only if **UseServiceCertificate** is set to **True**.</span></span>|  
+        |<span data-ttu-id="31c7e-168">StoreName</span><span class="sxs-lookup"><span data-stu-id="31c7e-168">StoreName</span></span>|<span data-ttu-id="31c7e-169">開く X.509 証明書ストアの名前です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-169">Name of the X.509 certificate store to open.</span></span><br /><br /> <span data-ttu-id="31c7e-170">**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-170">**Note:** Specify a value for this property only if **UseServiceCertificate** is set to **True**.</span></span>|  
+        |<span data-ttu-id="31c7e-171">X509FindType</span><span class="sxs-lookup"><span data-stu-id="31c7e-171">X509FindType</span></span>|<span data-ttu-id="31c7e-172">実行する X.509 検索の種類。</span><span class="sxs-lookup"><span data-stu-id="31c7e-172">The type of X.509 search to be executed.</span></span><br /><br /> <span data-ttu-id="31c7e-173">**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-173">**Note:** Specify a value for this property only if **UseServiceCertificate** is set to **True**.</span></span>|  
   
-     次の図は、値を指定して、サービスの構成とエンドポイントの動作 ページを示します。  
+        > [!NOTE]
+        >  <span data-ttu-id="31c7e-174">証明書および関連付けられたプロパティの詳細についてを参照してください「X509ClientCertificateCredentialsElement プロパティ」 [http://go.microsoft.com/fwlink/?LinkId=103771](http://go.microsoft.com/fwlink/?LinkId=103771)です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-174">For more information about the certificates and the associated properties, see "X509ClientCertificateCredentialsElement Properties" at [http://go.microsoft.com/fwlink/?LinkId=103771](http://go.microsoft.com/fwlink/?LinkId=103771).</span></span>  
   
-     ![サービスとエンドポイントの動作 ページを構成する](../../adapters-and-accelerators/adapter-sap/media/0a286b0c-7f0d-46c5-9b56-29bef3a1deea.gif "0a286b0c-7f0d-46c5-9b56-29bef3a1deea")  
+    2.  <span data-ttu-id="31c7e-175">**エンドポイント動作の構成**ボックスで、次の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-175">In the **Endpoint Behavior Configuration** box, specify values for the following:</span></span>  
   
-10. サービスの構成およびエンドポイントの動作 ページで、**次**です。  
+        |<span data-ttu-id="31c7e-176">プロパティの</span><span class="sxs-lookup"><span data-stu-id="31c7e-176">For the property</span></span>|<span data-ttu-id="31c7e-177">値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-177">Specify the value</span></span>|  
+        |----------------------|-----------------------|  
+        |<span data-ttu-id="31c7e-178">[認証の種類]</span><span class="sxs-lookup"><span data-stu-id="31c7e-178">Authentication Type</span></span>|<span data-ttu-id="31c7e-179">-この設定**ClientCredentialUserNamePassword**を WCF サービスを使用しているとき、ユーザー名とパスワードを指定するようにクライアントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-179">- Set this to **ClientCredentialUserNamePassword** to enable the clients to specify the user name and password while consuming the WCF service.</span></span><br /><br /> <span data-ttu-id="31c7e-180">-この設定**HTTPUserNamePassword** HTTP ヘッダーの一部としてユーザー名とパスワードを指定するクライアントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-180">- Set this to **HTTPUserNamePassword** to enable clients to specify user name and password as part of the HTTP header.</span></span><br /><br /> <span data-ttu-id="31c7e-181">-この設定**自動**を通じて資格情報を指定するクライアントを最初に有効にする、 **ClientCredential**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-181">- Set this to **Auto** to first enable clients to specify credentials through the **ClientCredential** interface.</span></span> <span data-ttu-id="31c7e-182">これが失敗した場合、クライアントは HTTP ヘッダーの一部として資格情報を渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-182">If this fails, clients can pass credentials as part of the HTTP header.</span></span><br /><br /> <span data-ttu-id="31c7e-183">既定値は**自動**です。WCF サービスを使用する Microsoft Office SharePoint Server のこの設定の値として**HTTPUserNamePassword**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-183">Default is **Auto**. For Microsoft Office SharePoint Server to consume the WCF service, you should set this as **HTTPUserNamePassword**.</span></span>|  
+        |<span data-ttu-id="31c7e-184">名前</span><span class="sxs-lookup"><span data-stu-id="31c7e-184">Name</span></span>|<span data-ttu-id="31c7e-185">エンドポイント動作の構成の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-185">Specify a name for the endpoint behavior configuration.</span></span>|  
+        |<span data-ttu-id="31c7e-186">UsernameHeader</span><span class="sxs-lookup"><span data-stu-id="31c7e-186">UsernameHeader</span></span>|<span data-ttu-id="31c7e-187">ユーザー名ヘッダーの名前です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-187">Name for the user name header.</span></span> <span data-ttu-id="31c7e-188">この例では、指定**MyUserHeader**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-188">For this example, specify **MyUserHeader**.</span></span> <span data-ttu-id="31c7e-189">HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-189">For more information about HTTP headers, see "Support for Custom HTTP and SOAP Headers" at [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692).</span></span><br /><br /> <span data-ttu-id="31c7e-190">**注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-190">**Note:** You must specify a value for this property if the **Authentication Type** is set to **HTTPUserNamePassword**.</span></span> <span data-ttu-id="31c7e-191">場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-191">If **Authentication Type** is set to **Auto**, this property is optional.</span></span>|  
+        |<span data-ttu-id="31c7e-192">PasswordHeader</span><span class="sxs-lookup"><span data-stu-id="31c7e-192">PasswordHeader</span></span>|<span data-ttu-id="31c7e-193">パスワード ヘッダーの名前です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-193">Name for the password header.</span></span> <span data-ttu-id="31c7e-194">この例では、指定**MyPassHeader**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-194">For this example, specify **MyPassHeader**.</span></span> <span data-ttu-id="31c7e-195">HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-195">For more information about HTTP headers, see "Support for Custom HTTP and SOAP Headers" at [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692).</span></span><br /><br /> <span data-ttu-id="31c7e-196">**注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-196">**Note:** You must specify a value for this property if the **Authentication Type** is set to **HTTPUserNamePassword**.</span></span> <span data-ttu-id="31c7e-197">場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-197">If **Authentication Type** is set to **Auto**, this property is optional.</span></span>|  
   
-11. サービス エンドポイントのバインドの構成とアドレス ページで、**を構成するコントラクトを選択**ボックスには、操作の選択 ページでは、操作を選択した Siebel ビジネス コンポーネントのコントラクトが一覧表示されます。 **[選択したコントラクトの操作**ボックスには、各成果物の管理の選択] ページを選択した操作が表示されます。  
+     <span data-ttu-id="31c7e-198">次の図は、値を指定して、サービスの構成とエンドポイントの動作 ページを示します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-198">The following figure shows the Configure Service and Endpoint Behaviors page with the specified values.</span></span>  
   
-12. **されたコントラクトのバインディングとアドレスを構成する**ボックスで、次の値を指定します。  
+     <span data-ttu-id="31c7e-199">![サービスとエンドポイントの動作 ページを構成する](../../adapters-and-accelerators/adapter-sap/media/0a286b0c-7f0d-46c5-9b56-29bef3a1deea.gif "0a286b0c-7f0d-46c5-9b56-29bef3a1deea")</span><span class="sxs-lookup"><span data-stu-id="31c7e-199">![Configure Service and Endpoint Behaviors page](../../adapters-and-accelerators/adapter-sap/media/0a286b0c-7f0d-46c5-9b56-29bef3a1deea.gif "0a286b0c-7f0d-46c5-9b56-29bef3a1deea")</span></span>  
   
-    |プロパティの|値を指定します。|  
+10. <span data-ttu-id="31c7e-200">サービスの構成およびエンドポイントの動作 ページで、**次**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-200">On the Configure Service and Endpoint Behaviors page, click **Next**.</span></span>  
+  
+11. <span data-ttu-id="31c7e-201">サービス エンドポイントのバインドの構成とアドレス ページで、**を構成するコントラクトを選択**ボックスには、操作の選択 ページでは、操作を選択した Siebel ビジネス コンポーネントのコントラクトが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-201">On the Configure Service Endpoint Binding and Address page, the **Select a contract to configure** box lists the contracts for the Siebel business components for which you selected the operations on the Choose Operations page.</span></span> <span data-ttu-id="31c7e-202">**[選択したコントラクトの操作**ボックスには、各成果物の管理の選択] ページを選択した操作が表示されます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-202">The **Operations under the selected contract** box displays the operations you selected for each artifact on the Choose Operations page.</span></span>  
+  
+12. <span data-ttu-id="31c7e-203">**されたコントラクトのバインディングとアドレスを構成する**ボックスで、次の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-203">In the **Configure the address and binding for the contract** box, specify values for the following:</span></span>  
+  
+    |<span data-ttu-id="31c7e-204">プロパティの</span><span class="sxs-lookup"><span data-stu-id="31c7e-204">For the property</span></span>|<span data-ttu-id="31c7e-205">値を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-205">Specify the value</span></span>|  
     |----------------------|-----------------------|  
-    |バインドの構成|ウィザードは、基本 HTTP バインドのみをサポートします。 バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。<br /><br /> 省略記号ボタンをクリックして**([...])** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。<br /><br /> 公開されるその他のバインディングの詳細についてを参照してください「BasicHttpBindingElement メンバー」 [http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)です。|  
-    |[エンドポイント名]|コントラクトのエンドポイント名を指定します。|  
+    |<span data-ttu-id="31c7e-206">バインドの構成</span><span class="sxs-lookup"><span data-stu-id="31c7e-206">Binding Configuration</span></span>|<span data-ttu-id="31c7e-207">ウィザードは、基本 HTTP バインドのみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-207">The wizard only supports basic HTTP binding.</span></span> <span data-ttu-id="31c7e-208">バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-208">So, the binding configuration field is automatically populated to *System.ServiceModel.Configuration.BasicHttpBindingElement*.</span></span><br /><br /> <span data-ttu-id="31c7e-209">省略記号ボタンをクリックして**([...])** HTTP バインディングのプロパティを変更します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-209">Click the ellipsis button **(…)** to change the properties for HTTP binding.</span></span> <span data-ttu-id="31c7e-210">セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-210">To use a secure communication channel, you must always set the **Mode** property to **Transport**.</span></span> <span data-ttu-id="31c7e-211">ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-211">The wizard sets the default value for the **Mode** property as **Transport**.</span></span><br /><br /> <span data-ttu-id="31c7e-212">公開されるその他のバインディングの詳細についてを参照してください「BasicHttpBindingElement メンバー」 [http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-212">For more information about the other bindings exposed, see "BasicHttpBindingElement Members" at [http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773).</span></span>|  
+    |<span data-ttu-id="31c7e-213">[エンドポイント名]</span><span class="sxs-lookup"><span data-stu-id="31c7e-213">Endpoint Name</span></span>|<span data-ttu-id="31c7e-214">コントラクトのエンドポイント名を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-214">Specify an endpoint name for the contract.</span></span>|  
   
-     このページの他のフィールドは、前のページで指定した値に基づいて自動的に入力します。  
+     <span data-ttu-id="31c7e-215">このページの他のフィールドは、前のページで指定した値に基づいて自動的に入力します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-215">The other fields on this page are automatically populated based on the values you specified in the earlier pages.</span></span>  
   
-     **[適用]**をクリックします。 この手順はすべて、コントラクトの下に表示されます、**を構成するコントラクトを選択**ボックス。  
+     <span data-ttu-id="31c7e-216">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-216">Click **Apply**.</span></span> <span data-ttu-id="31c7e-217">この手順はすべて、コントラクトの下に表示されます、**を構成するコントラクトを選択**ボックス。</span><span class="sxs-lookup"><span data-stu-id="31c7e-217">Perform this step for all the contracts displayed under the **Select a contract to configure** box.</span></span>  
   
     > [!NOTE]
-    >  このページの任意の値を指定しない場合は、すべてのコントラクトの既定値が受け入れられます。  
+    >  <span data-ttu-id="31c7e-218">このページの任意の値を指定しない場合は、すべてのコントラクトの既定値が受け入れられます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-218">If you do not specify any values on this page, the default values are accepted for all the contracts.</span></span>  
   
-     次の図は、サービス エンドポイントのバインドの構成と指定した値とアドレス ページを示します。  
+     <span data-ttu-id="31c7e-219">次の図は、サービス エンドポイントのバインドの構成と指定した値とアドレス ページを示します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-219">The following figure shows the Configure Service Endpoint Binding and Address page with the specified values.</span></span>  
   
-     ![サービス エンドポイントのバインドとアドレスの構成](../../adapters-and-accelerators/adapter-siebel/media/467d3e18-027d-4218-9d72-0740c1f559e3.gif "467d3e18-027d-4218-9d72-0740c1f559e3")  
+     <span data-ttu-id="31c7e-220">![サービス エンドポイントのバインドとアドレスの構成](../../adapters-and-accelerators/adapter-siebel/media/467d3e18-027d-4218-9d72-0740c1f559e3.gif "467d3e18-027d-4218-9d72-0740c1f559e3")</span><span class="sxs-lookup"><span data-stu-id="31c7e-220">![Configure Service Endpoint Binding and Address](../../adapters-and-accelerators/adapter-siebel/media/467d3e18-027d-4218-9d72-0740c1f559e3.gif "467d3e18-027d-4218-9d72-0740c1f559e3")</span></span>  
   
-13. サービス エンドポイントのバインドの構成とアドレス ページで、をクリックして**次**です。 [概要] ページには、選択された Siebel ビジネス コンポーネントと、その、下にある操作を各ビジネス コンポーネントを選択して、コントラクトのツリー構造が一覧表示します。  
+13. <span data-ttu-id="31c7e-221">サービス エンドポイントのバインドの構成とアドレス ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-221">On the Configure Service Endpoint Binding and Address page, click **Next**.</span></span> <span data-ttu-id="31c7e-222">[概要] ページには、選択された Siebel ビジネス コンポーネントと、その、下にある操作を各ビジネス コンポーネントを選択して、コントラクトのツリー構造が一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-222">The Summary page lists a tree structure of the contracts for the selected Siebel business components and, under that, the operations selected for each business component.</span></span>  
   
-14. 概要を確認し、をクリックして**完了**です。  
+14. <span data-ttu-id="31c7e-223">概要を確認し、をクリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-223">Review the summary, and then click **Finish**.</span></span>  
   
-15. ウィザードは、WCF サービスを作成し、次のファイルを追加、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。  
+15. <span data-ttu-id="31c7e-224">ウィザードは、WCF サービスを作成し、次のファイルを追加、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="31c7e-224">The wizard creates a WCF service and adds the following files to the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] project:</span></span>  
   
-    1.  .svc ファイルです。 これは、WCF サービスのファイルです。 ウィザードでは、各コントラクトに対して 1 つのファイルを生成します。  
+    1.  <span data-ttu-id="31c7e-225">.svc ファイルです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-225">.svc file.</span></span> <span data-ttu-id="31c7e-226">これは、WCF サービスのファイルです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-226">This is the WCF service file.</span></span> <span data-ttu-id="31c7e-227">ウィザードでは、各コントラクトに対して 1 つのファイルを生成します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-227">The wizard generates one file for each contract.</span></span>  
   
-    2.  Web.config ファイルです。  
+    2.  <span data-ttu-id="31c7e-228">Web.config ファイルです。</span><span class="sxs-lookup"><span data-stu-id="31c7e-228">Web.config file.</span></span>  
   
-    3.  サービス コード (.cs ファイル)。  
+    3.  <span data-ttu-id="31c7e-229">サービス コード (.cs ファイル)。</span><span class="sxs-lookup"><span data-stu-id="31c7e-229">Service code (.cs file).</span></span>  
   
-16. WCF サービスを発行します。  
+16. <span data-ttu-id="31c7e-230">WCF サービスを発行します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-230">Publish the WCF service.</span></span>  
   
-    1.  SSL には、インターネット インフォメーション サービス (IIS) を有効にすることを確認します。 IIS の SSL を有効にする方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)です。  
+    1.  <span data-ttu-id="31c7e-231">SSL には、インターネット インフォメーション サービス (IIS) を有効にすることを確認します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-231">Make sure SSL is enabled for Internet Information Services (IIS).</span></span> <span data-ttu-id="31c7e-232">IIS の SSL を有効にする方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-232">For instructions on how to enable SSL for IIS, see [http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170).</span></span>  
   
-    2.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**発行**です。  
+    2.  <span data-ttu-id="31c7e-233">ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**発行**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-233">Right-click the project in Solution Explorer, and then click **Publish**.</span></span>  
   
-    3.  **Web の発行** ダイアログ ボックスで、WCF サービスの URL を指定します。 例:  
+    3.  <span data-ttu-id="31c7e-234">**Web の発行** ダイアログ ボックスで、WCF サービスの URL を指定します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-234">In the **Publish Web** dialog box, specify a URL for the WCF service.</span></span> <span data-ttu-id="31c7e-235">例:</span><span class="sxs-lookup"><span data-stu-id="31c7e-235">For example:</span></span>  
   
         ```  
         https://<computer_name>/Siebel_Account/  
         ```  
   
-    4.  **コピー**ボックスで、クリックして**すべてのプロジェクト ファイル**です。  
+    4.  <span data-ttu-id="31c7e-236">**コピー**ボックスで、クリックして**すべてのプロジェクト ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-236">From the **Copy** box, click **All project files**.</span></span>  
   
-    5.  **[パブリッシュ]**をクリックします。  
+    5.  <span data-ttu-id="31c7e-237">**[パブリッシュ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-237">Click **Publish**.</span></span>  
   
-17. WCF サービスが正常に公開されていることを確認します。  
+17. <span data-ttu-id="31c7e-238">WCF サービスが正常に公開されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-238">Verify that the WCF service is published successfully.</span></span>  
   
-    1.  IIS の Microsoft 管理コンソールを起動します。 をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス**です。  
+    1.  <span data-ttu-id="31c7e-239">IIS の Microsoft 管理コンソールを起動します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-239">Start the IIS Microsoft Management Console.</span></span> <span data-ttu-id="31c7e-240">をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-240">Click **Start**, point to **Administrative Tools**, and then click **Internet Information Services**.</span></span>  
   
-    2.  サービスを発行したノードに移動します。 **Siebel_Account**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名 >**  >  **Web サイト** > **既定の Web サイト** > **Siebel_Account**です。  
+    2.  <span data-ttu-id="31c7e-241">サービスを発行したノードに移動します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-241">Navigate to the node where you published the service.</span></span> <span data-ttu-id="31c7e-242">**Siebel_Account**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名 >**  >  **Web サイト** > **既定の Web サイト** > **Siebel_Account**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-242">For the **Siebel_Account** service, navigate to **Internet Information Services** > **\<Computer Name>** > **Web Sites** > **Default Web Site** > **Siebel_Account**.</span></span>  
   
-    3.  右側のペインで BusinessObjects_Account_Account_Operation.svc ファイルを右クリックし、をクリックして**参照**です。  
+    3.  <span data-ttu-id="31c7e-243">右側のペインで BusinessObjects_Account_Account_Operation.svc ファイルを右クリックし、をクリックして**参照**です。</span><span class="sxs-lookup"><span data-stu-id="31c7e-243">On the right pane, right-click the BusinessObjects_Account_Account_Operation.svc file, and then click **Browse**.</span></span>  
   
-    4.  WSDL を取得するための URL を使用して、Web ページが表示されます。 Svcutil コマンドを使用してメタデータの取得をテストすることがあります。 たとえば、Siebel_Account サービスのメタデータを取得するコマンドには。  
+    4.  <span data-ttu-id="31c7e-244">WSDL を取得するための URL を使用して、Web ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-244">The Web page shows up with the URL for retrieving the WSDL.</span></span> <span data-ttu-id="31c7e-245">Svcutil コマンドを使用してメタデータの取得をテストすることがあります。</span><span class="sxs-lookup"><span data-stu-id="31c7e-245">You may want to test metadata retrieval using the svcutil command.</span></span> <span data-ttu-id="31c7e-246">たとえば、Siebel_Account サービスのメタデータを取得するコマンドには。</span><span class="sxs-lookup"><span data-stu-id="31c7e-246">For example, the command to retrieve metadata for the Siebel_Account service is:</span></span>  
   
         ```  
         svcutil.exe https://localhost/Siebel_Account/BusinessObjects_Account_Account_Operation.svc?wsdl  
         ```  
   
-## <a name="next-steps"></a>次の手順  
- Siebel ビジネス コンポーネントの WCF サービスがあるようになりました。 ビジネス データ カタログ定義エディターを使用すると、Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成できます。 参照してください[手順 2: Siebel ビジネス コンポーネント操作のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)手順についてはします。 アプリケーション定義ファイルは、LOB データが格納されているとは、格納されている形式を識別します。  
+## <a name="next-steps"></a><span data-ttu-id="31c7e-247">次の手順</span><span class="sxs-lookup"><span data-stu-id="31c7e-247">Next Steps</span></span>  
+ <span data-ttu-id="31c7e-248">Siebel ビジネス コンポーネントの WCF サービスがあるようになりました。</span><span class="sxs-lookup"><span data-stu-id="31c7e-248">You now have a WCF service for the Siebel business component.</span></span> <span data-ttu-id="31c7e-249">ビジネス データ カタログ定義エディターを使用すると、Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="31c7e-249">Use the Business Data Catalog Definition Editor to create an application definition file for the Siebel business component operations.</span></span> <span data-ttu-id="31c7e-250">参照してください[手順 2: Siebel ビジネス コンポーネント操作のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)手順についてはします。</span><span class="sxs-lookup"><span data-stu-id="31c7e-250">See [Step 2: Create an Application Definition File for Siebel Business Component Operations](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md) for instructions.</span></span> <span data-ttu-id="31c7e-251">アプリケーション定義ファイルは、LOB データが格納されているとは、格納されている形式を識別します。</span><span class="sxs-lookup"><span data-stu-id="31c7e-251">The application definition file identifies where the LOB data is stored and the format in which it is stored.</span></span>  
   
-## <a name="see-also"></a>参照  
- [チュートリアル 1: SharePoint サイト上の Siebel システムからのデータの表示](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+## <a name="see-also"></a><span data-ttu-id="31c7e-252">参照</span><span class="sxs-lookup"><span data-stu-id="31c7e-252">See Also</span></span>  
+ [<span data-ttu-id="31c7e-253">チュートリアル 1: SharePoint サイト上の Siebel システムからのデータの表示</span><span class="sxs-lookup"><span data-stu-id="31c7e-253">Tutorial 1: Presenting Data From a Siebel System on a SharePoint Site</span></span>](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

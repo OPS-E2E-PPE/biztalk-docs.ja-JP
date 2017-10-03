@@ -21,17 +21,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="troubleshooting-and-known-issues-in-hl7"></a>HL7 のトラブルシューティングと既知の問題
-問題のトラブルシューティング、解決策、およびに関する既知の問題、[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]です。  
+# <a name="troubleshooting-and-known-issues-in-hl7"></a><span data-ttu-id="de214-102">HL7 のトラブルシューティングと既知の問題</span><span class="sxs-lookup"><span data-stu-id="de214-102">Troubleshooting and known issues in HL7</span></span>
+<span data-ttu-id="de214-103">問題のトラブルシューティング、解決策、およびに関する既知の問題、[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="de214-103">Troubleshooting issues, resolutions, and known issues with the [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)].</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="de214-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="de214-104">In this section</span></span>  
   
--   [受信確認のトラブルシューティング](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-acknowledgments.md)
+-   [<span data-ttu-id="de214-105">受信確認のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="de214-105">Troubleshooting Acknowledgments</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-acknowledgments.md)
 
-- [バッチ処理のトラブルシューティング](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-batching.md)
+- [<span data-ttu-id="de214-106">バッチ処理のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="de214-106">Troubleshooting Batching</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-batching.md)
 
-- [エラーのトラブルシューティング](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-errors.md)
+- [<span data-ttu-id="de214-107">エラーのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="de214-107">Troubleshooting Errors</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-errors.md)
 
-- [その他の問題のトラブルシューティング](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-other-issues.md)
+- [<span data-ttu-id="de214-108">その他の問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="de214-108">Troubleshooting Other Issues</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-other-issues.md)
   
--   [既知の問題](../../adapters-and-accelerators/accelerator-hl7/known-issues1.md)
+-   [<span data-ttu-id="de214-109">既知の問題</span><span class="sxs-lookup"><span data-stu-id="de214-109">Known Issues</span></span>](../../adapters-and-accelerators/accelerator-hl7/known-issues1.md)

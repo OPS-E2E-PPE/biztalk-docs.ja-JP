@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="preparing-to-use-the-tutorialhl7main"></a>Tutorial_hl7_main を使用する準備をしています
-このチュートリアルを使用する前に、このセクションで、タスクを実行する必要があります。  
+# <a name="preparing-to-use-the-tutorialhl7main"></a><span data-ttu-id="9cfe6-102">Tutorial_hl7_main を使用する準備をしています</span><span class="sxs-lookup"><span data-stu-id="9cfe6-102">Preparing to Use the Tutorial_hl7_main</span></span>
+<span data-ttu-id="9cfe6-103">このチュートリアルを使用する前に、このセクションで、タスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9cfe6-103">You need to perform the tasks in this section before you use the tutorial.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="9cfe6-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="9cfe6-104">In This Section</span></span>  
   
--   [チュートリアルのフォルダーを作成します。](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folder.md)  
+-   [<span data-ttu-id="9cfe6-105">チュートリアルのフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="9cfe6-105">Create the Tutorial Folder</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folder.md)  
   
--   [QRY^Q01.txt ファイルを作成します。](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)  
+-   [<span data-ttu-id="9cfe6-106">QRY^Q01.txt ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="9cfe6-106">Create the QRY^Q01.txt File</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)  
   
--   [DSR.txt ファイルを作成します。](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md)
+-   [<span data-ttu-id="9cfe6-107">DSR.txt ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="9cfe6-107">Create the DSR.txt File</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md)

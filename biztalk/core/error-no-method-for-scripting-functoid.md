@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---no-method-for-scripting-functoid"></a>エラー - スクリプト Functoid のメソッドが存在しません
-**エラー コード**  
+# <a name="error---no-method-for-scripting-functoid"></a><span data-ttu-id="7fe58-102">エラー - スクリプト Functoid のメソッドが存在しません</span><span class="sxs-lookup"><span data-stu-id="7fe58-102">Error - No Method for Scripting Functoid</span></span>
+<span data-ttu-id="7fe58-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="7fe58-103">**Error Code**</span></span>  
   
- btm1009  
+ <span data-ttu-id="7fe58-104">btm1009</span><span class="sxs-lookup"><span data-stu-id="7fe58-104">btm1009</span></span>  
   
- **説明**  
+ <span data-ttu-id="7fe58-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="7fe58-105">**Explanation**</span></span>  
   
- **スクリプト メソッド**の指定されたプロパティ**スクリプト**functoid がいなくても設定されていない、**スクリプトの種類**プロパティは、外部アセンブリが含まれていることを示しますこのスクリプト**スクリプト**functoid です。  
+ <span data-ttu-id="7fe58-106">**スクリプト メソッド**の指定されたプロパティ**スクリプト**functoid がいなくても設定されていない、**スクリプトの種類**プロパティは、外部アセンブリが含まれていることを示しますこのスクリプト**スクリプト**functoid です。</span><span class="sxs-lookup"><span data-stu-id="7fe58-106">The **Script Method** property of the indicated **Scripting** functoid has not been set even though the **Script Type** property indicates that an external assembly contains the script for this **Scripting** functoid.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="7fe58-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="7fe58-107">**User Action**</span></span>  
   
- 選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウで、適切な値を設定し、 **[Functoid スクリプトの構成**ダイアログ ボックスを含む、**スクリプト メソッド**プロパティです。
+ <span data-ttu-id="7fe58-108">選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウで、適切な値を設定し、 **[Functoid スクリプトの構成**ダイアログ ボックスを含む、**スクリプト メソッド**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="7fe58-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then set the appropriate values in the **Configure Functoid Script** dialog box, including the **Script Method** property.</span></span>

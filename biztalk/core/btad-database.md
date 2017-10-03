@@ -19,9 +19,9 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="btaddatabase"></a>BTAD_Database
-アプリケーションのインポート時に処理前および処理後のスクリプトを実行すると、BTAD_Database 環境変数が設定されます。 この変数は、グループの BizTalk 管理データベースの名前を指定します。  
+# <a name="btaddatabase"></a><span data-ttu-id="5a3c3-102">BTAD_Database</span><span class="sxs-lookup"><span data-stu-id="5a3c3-102">BTAD_Database</span></span>
+<span data-ttu-id="5a3c3-103">アプリケーションのインポート時に処理前および処理後のスクリプトを実行すると、BTAD_Database 環境変数が設定されます。</span><span class="sxs-lookup"><span data-stu-id="5a3c3-103">When pre- and post-processing scripts run on application import, the BTAD_Database environment variable is set.</span></span> <span data-ttu-id="5a3c3-104">この変数は、グループの BizTalk 管理データベースの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="5a3c3-104">It specifies the name of the BizTalk Management database for the group.</span></span>  
   
-## <a name="see-also"></a>参照  
- [前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md)   
- [環境変数が展開の状態を指定する方法](../core/how-environment-variables-indicate-deployment-state.md)
+## <a name="see-also"></a><span data-ttu-id="5a3c3-105">参照</span><span class="sxs-lookup"><span data-stu-id="5a3c3-105">See Also</span></span>  
+ <span data-ttu-id="5a3c3-106">[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md) </span><span class="sxs-lookup"><span data-stu-id="5a3c3-106">[Pre- and Post-processing Script Environment Variables](../core/pre-and-post-processing-script-environment-variables.md) </span></span>  
+ [<span data-ttu-id="5a3c3-107">環境変数が展開の状態を指定する方法</span><span class="sxs-lookup"><span data-stu-id="5a3c3-107">How Environment Variables Indicate Deployment State</span></span>](../core/how-environment-variables-indicate-deployment-state.md)

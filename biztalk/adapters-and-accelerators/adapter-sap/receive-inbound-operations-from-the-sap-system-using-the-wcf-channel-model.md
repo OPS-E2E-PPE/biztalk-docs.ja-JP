@@ -22,37 +22,37 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して、SAP システムからの受信操作を受信します。
-RFC サーバーとして動作し、受信 (IDOC を送信する、RFC を呼び出すなど)、SAP システムによって呼び出される操作、経由での SAP プログラム ID からのメッセージをリッスンできるチャネル リスナーを作成する必要があります、 **System.ServiceModel.Channels.IReplyChannel**チャネル形状です。  
+# <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a><span data-ttu-id="8c685-102">WCF チャネル モデルを使用して、SAP システムからの受信操作を受信します。</span><span class="sxs-lookup"><span data-stu-id="8c685-102">Receive Inbound Operations from the SAP System Using the WCF Channel Model</span></span>
+<span data-ttu-id="8c685-103">RFC サーバーとして動作し、受信 (IDOC を送信する、RFC を呼び出すなど)、SAP システムによって呼び出される操作、経由での SAP プログラム ID からのメッセージをリッスンできるチャネル リスナーを作成する必要があります、 **System.ServiceModel.Channels.IReplyChannel**チャネル形状です。</span><span class="sxs-lookup"><span data-stu-id="8c685-103">To act as an RFC server and receive operations invoked by the SAP system (such as sending an IDOC or invoking an RFC), you must create a channel listener that can listen for messages from a SAP Program ID over a **System.ServiceModel.Channels.IReplyChannel** channel shape.</span></span>  
   
- チャネル リスナー (**System.ServiceModel.Channels.IChannelListener**) は、WCF 通信オブジェクトを特定の WCF エンドポイントからメッセージを受信するために使用できます。 チャネル リスナーは、どのクライアント (SAP システム) によって呼び出されたメッセージを受信して、サービスでチャネルを作成することができます、ファクトリとして機能します。 チャネル リスナーを作成する、 **Microsoft.Adapters.SAP.SAPBinding**オブジェクトを呼び出すことによって、 **BuildChannelListener**メソッドです。 SAP 接続元となる受信操作はこのメソッドを受信する SAP プログラム ID を指定する URI を指定します。  
+ <span data-ttu-id="8c685-104">チャネル リスナー (**System.ServiceModel.Channels.IChannelListener**) は、WCF 通信オブジェクトを特定の WCF エンドポイントからメッセージを受信するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="8c685-104">A channel listener (**System.ServiceModel.Channels.IChannelListener**) is a WCF communication object that can be used to receive messages from specific WCF endpoints.</span></span> <span data-ttu-id="8c685-105">チャネル リスナーは、どのクライアント (SAP システム) によって呼び出されたメッセージを受信して、サービスでチャネルを作成することができます、ファクトリとして機能します。</span><span class="sxs-lookup"><span data-stu-id="8c685-105">The channel listener functions as a factory from which you can create channels over which messages invoked by a client (the SAP system) can be received by your service.</span></span> <span data-ttu-id="8c685-106">チャネル リスナーを作成する、 **Microsoft.Adapters.SAP.SAPBinding**オブジェクトを呼び出すことによって、 **BuildChannelListener**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="8c685-106">You create a channel listener by from a **Microsoft.Adapters.SAP.SAPBinding** object by invoking the **BuildChannelListener** method.</span></span> <span data-ttu-id="8c685-107">SAP 接続元となる受信操作はこのメソッドを受信する SAP プログラム ID を指定する URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="8c685-107">You supply an SAP connection URI that specifies the SAP Program ID from which inbound operations will be received to this method.</span></span>  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]をサポートしている、 **IReplyChannel**チャネル形状です。 **IReplyChannel**チャネルが受信要求-応答メッセージ交換パターンをサポートします。 つまり、外部プログラムが、チャネルとプログラム経由で要求メッセージを送信するパターンは、応答を返します。  
+ <span data-ttu-id="8c685-108">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]をサポートしている、 **IReplyChannel**チャネル形状です。</span><span class="sxs-lookup"><span data-stu-id="8c685-108">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports the **IReplyChannel** channel shape.</span></span> <span data-ttu-id="8c685-109">**IReplyChannel**チャネルが受信要求-応答メッセージ交換パターンをサポートします。</span><span class="sxs-lookup"><span data-stu-id="8c685-109">**IReplyChannel** channels support an inbound request-response message exchange pattern.</span></span> <span data-ttu-id="8c685-110">つまり、外部プログラムが、チャネルとプログラム経由で要求メッセージを送信するパターンは、応答を返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-110">That is, a pattern in which an external program sends a request message over the channel and your program returns a response.</span></span>  
   
- 受信操作を使用する方法の概要については、 **IReplyChannel** WCF では、次を参照してください。[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)です。
+ <span data-ttu-id="8c685-111">受信操作を使用する方法の概要については、 **IReplyChannel** WCF では、次を参照してください。[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="8c685-111">For an overview of how to receive operations using an **IReplyChannel** in WCF, see [Service Channel-Level Programming](https://msdn.microsoft.com/library/ms789029.aspx).</span></span>
   
- このセクションでは、特定の SAP システムから、操作を受信するのには、次のトピックについて説明します。  
+ <span data-ttu-id="8c685-112">このセクションでは、特定の SAP システムから、操作を受信するのには、次のトピックについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8c685-112">This section covers the following topics that are specific to receiving operations from a SAP system:</span></span>  
   
--   チャネル リスナーを使用して特定の操作に対してフィルター処理する方法です。  
+-   <span data-ttu-id="8c685-113">チャネル リスナーを使用して特定の操作に対してフィルター処理する方法です。</span><span class="sxs-lookup"><span data-stu-id="8c685-113">How to filter for specific operations using the channel listener.</span></span>  
   
--   SAP システムで例外を発生させる方法です。  
+-   <span data-ttu-id="8c685-114">SAP システムで例外を発生させる方法です。</span><span class="sxs-lookup"><span data-stu-id="8c685-114">How to raise an exception on the SAP system.</span></span>  
   
--   SAP アダプターから着信フラット ファイル Idoc をストリーミングします。  
+-   <span data-ttu-id="8c685-115">SAP アダプターから着信フラット ファイル Idoc をストリーミングします。</span><span class="sxs-lookup"><span data-stu-id="8c685-115">Streaming inbound flat-file IDOCs from the SAP adapter.</span></span>  
   
--   SAP システムからの受信操作をする方法。  
+-   <span data-ttu-id="8c685-116">SAP システムからの受信操作をする方法。</span><span class="sxs-lookup"><span data-stu-id="8c685-116">How to receive operations from the SAP system.</span></span>  
   
-## <a name="how-do-i-filter-operations-using-the-channel-listener"></a>チャネル リスナーを使用して操作をフィルター処理する方法  
+## <a name="how-do-i-filter-operations-using-the-channel-listener"></a><span data-ttu-id="8c685-117">チャネル リスナーを使用して操作をフィルター処理する方法</span><span class="sxs-lookup"><span data-stu-id="8c685-117">How Do I Filter Operations Using the Channel Listener?</span></span>  
   
-### <a name="using-an-inboundactioncollection-to-filter-operations"></a>InboundActionCollection を使用して、操作をフィルター処理するには  
- [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]提供、 **Microsoft.ServiceModel.Channels.InboundActionCollection**を有効にすると、チャネル リスナーによって受信され、アプリケーション コードに渡す操作をフィルター処理するためのクラスです。 特定の操作をフィルターするには、リスナー エンドポイント URI を使用してこのクラスのインスタンスを作成します。 (要求) メッセージ アクションを追加する対象の各操作のコレクション。 最後に、受信アクションのコレクションに追加、 **System.ServiceModel.Channels.BindingParameterCollection**オブジェクトし、チャネル リスナーの作成への呼び出しにこのバインディング パラメーターのコレクションを渡します。  
+### <a name="using-an-inboundactioncollection-to-filter-operations"></a><span data-ttu-id="8c685-118">InboundActionCollection を使用して、操作をフィルター処理するには</span><span class="sxs-lookup"><span data-stu-id="8c685-118">Using an InboundActionCollection to Filter Operations</span></span>  
+ <span data-ttu-id="8c685-119">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]提供、 **Microsoft.ServiceModel.Channels.InboundActionCollection**を有効にすると、チャネル リスナーによって受信され、アプリケーション コードに渡す操作をフィルター処理するためのクラスです。</span><span class="sxs-lookup"><span data-stu-id="8c685-119">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] provides the **Microsoft.ServiceModel.Channels.InboundActionCollection** class to enable you to filter operations that are received by a channel listener and passed to your application code.</span></span> <span data-ttu-id="8c685-120">特定の操作をフィルターするには、リスナー エンドポイント URI を使用してこのクラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="8c685-120">To filter for specific operations, you create an instance of this class by using the listener endpoint URI.</span></span> <span data-ttu-id="8c685-121">(要求) メッセージ アクションを追加する対象の各操作のコレクション。</span><span class="sxs-lookup"><span data-stu-id="8c685-121">Then you add the (request) message action for each target operation to the collection.</span></span> <span data-ttu-id="8c685-122">最後に、受信アクションのコレクションに追加、 **System.ServiceModel.Channels.BindingParameterCollection**オブジェクトし、チャネル リスナーの作成への呼び出しにこのバインディング パラメーターのコレクションを渡します。</span><span class="sxs-lookup"><span data-stu-id="8c685-122">Finally, you add the inbound action collection to a **System.ServiceModel.Channels.BindingParameterCollection** object and then pass this binding parameter collection into the call to create the channel listener.</span></span>  
   
- 場合は、SAP システムは、受信アクションのコレクションに含まれていない操作を呼び出します。  
+ <span data-ttu-id="8c685-123">場合は、SAP システムは、受信アクションのコレクションに含まれていない操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8c685-123">If the SAP system invokes an operation that is not in the inbound action collection:</span></span>  
   
--   [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムを次のメッセージで例外の例外を呼び出し元に返します。"Rfc サーバーでの着信 RFC 呼び出し [RFC_NAME] が処理されない"です。 このメッセージで [RFC_NAME] は、RFC (たとえば、IDOC_INBOUND_ASYNCHRONOUS) の名前。  
+-   <span data-ttu-id="8c685-124">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムを次のメッセージで例外の例外を呼び出し元に返します。"Rfc サーバーでの着信 RFC 呼び出し [RFC_NAME] が処理されない"です。</span><span class="sxs-lookup"><span data-stu-id="8c685-124">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] returns an EXCEPTION exception to the caller on the SAP system with the following message: "The incoming RFC call [RFC_NAME] on the Rfc Server is not handled".</span></span> <span data-ttu-id="8c685-125">このメッセージで [RFC_NAME] は、RFC (たとえば、IDOC_INBOUND_ASYNCHRONOUS) の名前。</span><span class="sxs-lookup"><span data-stu-id="8c685-125">In this message, [RFC_NAME] is the name of the RFC (for example, IDOC_INBOUND_ASYNCHRONOUS).</span></span>  
   
--   アダプターをスロー、 **Microsoft.ServiceModel.Channels.Common.AdapterException**を受信した操作を示すメッセージを使用します。 この例外を使用する方法の例は、このトピックの最後の例を参照してください。  
+-   <span data-ttu-id="8c685-126">アダプターをスロー、 **Microsoft.ServiceModel.Channels.Common.AdapterException**を受信した操作を示すメッセージを使用します。</span><span class="sxs-lookup"><span data-stu-id="8c685-126">The adapter throws a **Microsoft.ServiceModel.Channels.Common.AdapterException** with a message that indicates the operation that was received.</span></span> <span data-ttu-id="8c685-127">この例外を使用する方法の例は、このトピックの最後の例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8c685-127">For an example of how to use this exception, see the example at the end of this topic.</span></span>  
   
- 次のコード例を使用する方法を示しています、 **InboundActionCollection** Z_RFC_MKD_DIV、単一の RFC のフィルター処理するチャネル リスナーを作成します。  
+ <span data-ttu-id="8c685-128">次のコード例を使用する方法を示しています、 **InboundActionCollection** Z_RFC_MKD_DIV、単一の RFC のフィルター処理するチャネル リスナーを作成します。</span><span class="sxs-lookup"><span data-stu-id="8c685-128">The following code example shows how to use an **InboundActionCollection** to create a channel listener that filters for a single RFC, Z_RFC_MKD_DIV.</span></span>  
   
 ```  
 // The connection Uri must specify listener parameters (or an R-type destination in saprfc.ini)  
@@ -78,20 +78,20 @@ bpcol.Add(actions);
 listener = binding.BuildChannelListener<IReplyChannel>(listeneraddress, bpcol);  
 ```  
   
-### <a name="manually-filtering-operations"></a>手動でフィルター処理  
- チャネル リスナーに対する受信アクション コレクションを指定しない場合、SAP システムによって呼び出されたすべての操作は、コードに渡されます。 受信要求のメッセージのアクションをチェックしてこのような操作を手動でフィルターできます。  
+### <a name="manually-filtering-operations"></a><span data-ttu-id="8c685-129">手動でフィルター処理</span><span class="sxs-lookup"><span data-stu-id="8c685-129">Manually Filtering Operations</span></span>  
+ <span data-ttu-id="8c685-130">チャネル リスナーに対する受信アクション コレクションを指定しない場合、SAP システムによって呼び出されたすべての操作は、コードに渡されます。</span><span class="sxs-lookup"><span data-stu-id="8c685-130">If you do not specify an inbound action collection for the channel listener, then all operations invoked by the SAP system will be passed to your code.</span></span> <span data-ttu-id="8c685-131">受信要求のメッセージのアクションをチェックしてこのような操作を手動でフィルターできます。</span><span class="sxs-lookup"><span data-stu-id="8c685-131">You can manually filter such operations by checking the message action of inbound requests.</span></span>  
   
- 内容に基づいて操作をフィルター処理するシナリオもあります。 たとえばでの Idoc を受信している場合。  
+ <span data-ttu-id="8c685-132">内容に基づいて操作をフィルター処理するシナリオもあります。</span><span class="sxs-lookup"><span data-stu-id="8c685-132">There may also be scenarios in which you want to filter an operation based on its content.</span></span> <span data-ttu-id="8c685-133">たとえばでの Idoc を受信している場合。</span><span class="sxs-lookup"><span data-stu-id="8c685-133">For example if you are receiving IDOCs in:</span></span>  
   
--   文字列の形式 (、 **ReceiveIDocFormat**プロパティのバインドは、**文字列**) 以外の場合はすべて、ReceiveIdoc 操作を使用して Idoc を受信します。  
+-   <span data-ttu-id="8c685-134">文字列の形式 (、 **ReceiveIDocFormat**プロパティのバインドは、**文字列**) 以外の場合はすべて、ReceiveIdoc 操作を使用して Idoc を受信します。</span><span class="sxs-lookup"><span data-stu-id="8c685-134">String format (the **ReceiveIDocFormat** binding property is **String**); all IDOCs are received using the ReceiveIdoc operation.</span></span>  
   
--   Rfc 形式 (、 **ReceiveIDocFormat**プロパティのバインドは**Rfc**) 以外の場合はすべて IDOC_INBOUND_ASYNCHRONOUS RFC または INBOUND_IDOC_PROCESS RFC を使用して Idoc を受信します。  
+-   <span data-ttu-id="8c685-135">Rfc 形式 (、 **ReceiveIDocFormat**プロパティのバインドは**Rfc**) 以外の場合はすべて IDOC_INBOUND_ASYNCHRONOUS RFC または INBOUND_IDOC_PROCESS RFC を使用して Idoc を受信します。</span><span class="sxs-lookup"><span data-stu-id="8c685-135">Rfc format (the **ReceiveIDocFormat** binding property is **Rfc**); all IDOCs are received using either the IDOC_INBOUND_ASYNCHRONOUS RFC or the INBOUND_IDOC_PROCESS RFC.</span></span>  
   
- 実装することも、このシナリオでは、特定の IDOC パラメーター (IDOC の種類) など、コード内に基づくフィルター処理します。  
+ <span data-ttu-id="8c685-136">実装することも、このシナリオでは、特定の IDOC パラメーター (IDOC の種類) など、コード内に基づくフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="8c685-136">In this scenario you may want to implement filtering based on specific IDOC parameters (such as the IDOC type) in your code.</span></span>  
   
- 操作を手動でフィルター処理するときにエラーを返すことができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]処理しない操作します。 これにより、SAP システムで、呼び出し元に例外の例外が発生します。 SAP で例外が発生したくない場合は、空の応答を返すこともできます。  
+ <span data-ttu-id="8c685-137">操作を手動でフィルター処理するときにエラーを返すことができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]処理しない操作します。</span><span class="sxs-lookup"><span data-stu-id="8c685-137">When you filter operations manually, you can return a fault to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] for operations that you don't handle.</span></span> <span data-ttu-id="8c685-138">これにより、SAP システムで、呼び出し元に例外の例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="8c685-138">This will raise the EXCEPTION exception to the caller on the SAP System.</span></span> <span data-ttu-id="8c685-139">SAP で例外が発生したくない場合は、空の応答を返すこともできます。</span><span class="sxs-lookup"><span data-stu-id="8c685-139">You can also return an empty response if you don't want to raise an exception on SAP.</span></span>  
   
- 次のコードでは、Z_RFC_MKD_DIV 操作を手動でフィルター処理する方法を示します。  
+ <span data-ttu-id="8c685-140">次のコードでは、Z_RFC_MKD_DIV 操作を手動でフィルター処理する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8c685-140">The following code shows how to filter manually for the Z_RFC_MKD_DIV operation.</span></span>  
   
 ```  
 // Get the message from the channel  
@@ -114,25 +114,25 @@ else
 }  
 ```  
   
-## <a name="how-do-i-raise-an-exception-on-the-sap-system"></a>SAP システムで例外を発生させる方法  
- SAP システムで、呼び出し元にエラーを示すには、SOAP エラーにより要求メッセージに返信することができます。 SOAP エラーに戻ったら、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプターは、SAP システムで、呼び出し元に、例外の例外を返します。 例外メッセージは、SOAP エラーの要素から作成されます。  
+## <a name="how-do-i-raise-an-exception-on-the-sap-system"></a><span data-ttu-id="8c685-141">SAP システムで例外を発生させる方法</span><span class="sxs-lookup"><span data-stu-id="8c685-141">How Do I Raise an Exception on the SAP System?</span></span>  
+ <span data-ttu-id="8c685-142">SAP システムで、呼び出し元にエラーを示すには、SOAP エラーにより要求メッセージに返信することができます。</span><span class="sxs-lookup"><span data-stu-id="8c685-142">To indicate an error to the caller on the SAP system you can reply to a request message with a SOAP fault.</span></span> <span data-ttu-id="8c685-143">SOAP エラーに戻ったら、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプターは、SAP システムで、呼び出し元に、例外の例外を返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-143">When you return a SOAP fault to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], the adapter returns an EXCEPTION exception to the caller on the SAP system.</span></span> <span data-ttu-id="8c685-144">例外メッセージは、SOAP エラーの要素から作成されます。</span><span class="sxs-lookup"><span data-stu-id="8c685-144">The exception message is created from the elements of the SOAP fault.</span></span>  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次の優先順位に従って SAP 例外のメッセージを作成します。  
+ <span data-ttu-id="8c685-145">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次の優先順位に従って SAP 例外のメッセージを作成します。</span><span class="sxs-lookup"><span data-stu-id="8c685-145">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] creates the message for the SAP EXCEPTION according to the following order of precedence:</span></span>  
   
-1.  SOAP エラー詳細オブジェクトが含まれている場合は、アダプターが文字列に詳細をシリアル化し、例外メッセージがこの文字列に設定されています。  
+1.  <span data-ttu-id="8c685-146">SOAP エラー詳細オブジェクトが含まれている場合は、アダプターが文字列に詳細をシリアル化し、例外メッセージがこの文字列に設定されています。</span><span class="sxs-lookup"><span data-stu-id="8c685-146">If the SOAP fault contains a detail object, the adapter serializes the detail to a string and the exception message is set to this string.</span></span>  
   
-2.  SOAP エラーの理由が含まれている場合、例外メッセージは、その値に設定されます。  
+2.  <span data-ttu-id="8c685-147">SOAP エラーの理由が含まれている場合、例外メッセージは、その値に設定されます。</span><span class="sxs-lookup"><span data-stu-id="8c685-147">If the SOAP fault contains a reason, the exception message is set to its value.</span></span>  
   
-3.  それ以外の場合、アダプターがシリアル化、 **MessageFault**文字列と、例外メッセージをオブジェクト自体がこの文字列に設定します。  
+3.  <span data-ttu-id="8c685-148">それ以外の場合、アダプターがシリアル化、 **MessageFault**文字列と、例外メッセージをオブジェクト自体がこの文字列に設定します。</span><span class="sxs-lookup"><span data-stu-id="8c685-148">Otherwise, the adapter serializes the **MessageFault** object itself to a string and the exception message is set to this string.</span></span>  
   
 > [!NOTE]
->  アダプターでは、SAP システムで発生する例外で返された例外メッセージを作成するのにエラー メッセージのみが使用します。したがって、これらのエンティティに設定した値が決定できます。  
+>  <span data-ttu-id="8c685-149">アダプターでは、SAP システムで発生する例外で返された例外メッセージを作成するのにエラー メッセージのみが使用します。したがって、これらのエンティティに設定した値が決定できます。</span><span class="sxs-lookup"><span data-stu-id="8c685-149">The adapter only uses the fault message to create the exception message returned in the exception raised on the SAP system; therefore, the values that you set for these entities is completely up to you.</span></span>  
   
- WCF の提供、 **System.ServiceModel.Channels.MessageFault** SOAP エラーのメモリ内表現をカプセル化するクラス。 ボリュームを使用して、静的のいずれかのオーバー ロードされた**MessageFault.CreateFault**元となることができますし、エラー メッセージを作成する、適切なを起動して、新しい SOAP エラーを作成するメソッド**Message.CreateMessage**オーバー ロードします。 WCF は、のオーバー ロードも用意されています。 **CreateMessage**を使用せず、エラー メッセージを作成する、 **MessageFault**オブジェクト。  
+ <span data-ttu-id="8c685-150">WCF の提供、 **System.ServiceModel.Channels.MessageFault** SOAP エラーのメモリ内表現をカプセル化するクラス。</span><span class="sxs-lookup"><span data-stu-id="8c685-150">WCF provides the **System.ServiceModel.Channels.MessageFault** class to encapsulate an in-memory representation of a SOAP fault.</span></span> <span data-ttu-id="8c685-151">ボリュームを使用して、静的のいずれかのオーバー ロードされた**MessageFault.CreateFault**元となることができますし、エラー メッセージを作成する、適切なを起動して、新しい SOAP エラーを作成するメソッド**Message.CreateMessage**オーバー ロードします。</span><span class="sxs-lookup"><span data-stu-id="8c685-151">You can use any of the static, overloaded **MessageFault.CreateFault** methods to create a new SOAP fault from which you can then create a fault message by invoking the appropriate **Message.CreateMessage** overload.</span></span> <span data-ttu-id="8c685-152">WCF は、のオーバー ロードも用意されています。 **CreateMessage**を使用せず、エラー メッセージを作成する、 **MessageFault**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="8c685-152">WCF also provides overloads of **CreateMessage** that create a fault message without using a **MessageFault** object.</span></span>  
   
- 使用する、 **System.ServiceModel.Channels.RequestContext.Reply**をアダプターにフォールト メッセージを返すメソッド。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メッセージ アクションの値を設定することができますので、エラー メッセージのメッセージのアクションは無視されます。  
+ <span data-ttu-id="8c685-153">使用する、 **System.ServiceModel.Channels.RequestContext.Reply**をアダプターにフォールト メッセージを返すメソッド。</span><span class="sxs-lookup"><span data-stu-id="8c685-153">You use the **System.ServiceModel.Channels.RequestContext.Reply** method to return the fault message to the adapter.</span></span> <span data-ttu-id="8c685-154">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メッセージ アクションの値を設定することができますので、エラー メッセージのメッセージのアクションは無視されます。</span><span class="sxs-lookup"><span data-stu-id="8c685-154">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] ignores the message action for fault messages, so you can set the message action to any value.</span></span>  
   
- 次の例は、エラー メッセージを返す方法を示します、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 この例では、チャネル リスナーとチャネルを作成する手順を省略します。  
+ <span data-ttu-id="8c685-155">次の例は、エラー メッセージを返す方法を示します、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="8c685-155">The following example shows how to return a fault message to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="8c685-156">この例では、チャネル リスナーとチャネルを作成する手順を省略します。</span><span class="sxs-lookup"><span data-stu-id="8c685-156">This example omits the steps to create the channel listener and channel.</span></span>  
   
 ```  
 RequestContext rc = channel.ReceiveRequest();  
@@ -148,22 +148,22 @@ Message faultMessage = Message.CreateMessage(MessageVersion.Default, new FaultCo
 rc.Reply(faultMessage);  
 ```  
   
-## <a name="streaming-inbound-flat-file-idocs-from-the-sap-adapter"></a>SAP アダプターからの着信フラット ファイル Idoc のストリーミング  
- (String) の Idoc の受信 ReceiveIdoc 操作で、アダプターからのフラット ファイルが表示されます。 IDOC データは、この操作で 1 つのノードの下の文字列として表されます。 このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートします。 ノード値のストリーミングを実行するのを呼び出すことによって ReceiveIdoc 操作の要求メッセージを使用する必要があります、 **Message.WriteBodyContents**メソッドを**System.Xml.XmlDictionaryWriter**ですIDOC データをストリーミングできます。 これを行う方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)です。  
+## <a name="streaming-inbound-flat-file-idocs-from-the-sap-adapter"></a><span data-ttu-id="8c685-157">SAP アダプターからの着信フラット ファイル Idoc のストリーミング</span><span class="sxs-lookup"><span data-stu-id="8c685-157">Streaming Inbound Flat-File IDOCs from the SAP Adapter</span></span>  
+ <span data-ttu-id="8c685-158">(String) の Idoc の受信 ReceiveIdoc 操作で、アダプターからのフラット ファイルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="8c685-158">You receive flat-file (string) IDOCs from the adapter in the inbound ReceiveIdoc operation.</span></span> <span data-ttu-id="8c685-159">IDOC データは、この操作で 1 つのノードの下の文字列として表されます。</span><span class="sxs-lookup"><span data-stu-id="8c685-159">The IDOC data is represented as a string under a single node in this operation.</span></span> <span data-ttu-id="8c685-160">このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="8c685-160">For this reason, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports node-value streaming on the request message.</span></span> <span data-ttu-id="8c685-161">ノード値のストリーミングを実行するのを呼び出すことによって ReceiveIdoc 操作の要求メッセージを使用する必要があります、 **Message.WriteBodyContents**メソッドを**System.Xml.XmlDictionaryWriter**ですIDOC データをストリーミングできます。</span><span class="sxs-lookup"><span data-stu-id="8c685-161">To perform node-value streaming, you must consume the request message for the ReceiveIdoc operation by invoking the **Message.WriteBodyContents** method with a **System.Xml.XmlDictionaryWriter** that is capable of streaming the IDOC data.</span></span> <span data-ttu-id="8c685-162">これを行う方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)です。</span><span class="sxs-lookup"><span data-stu-id="8c685-162">For information about how to do this, see [Streaming Flat-File IDOCs in SAP using the WCF Channel Model](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md).</span></span>  
   
-## <a name="how-do-i-receive-operations-from-a-sap-system-using-an-ireplychannel"></a>IReplyChannel を使用して SAP システムから操作を受信する方法  
- WCF チャネル モデルを使用して SAP システムからの操作を受信するには、次の手順を実行します。  
+## <a name="how-do-i-receive-operations-from-a-sap-system-using-an-ireplychannel"></a><span data-ttu-id="8c685-163">IReplyChannel を使用して SAP システムから操作を受信する方法</span><span class="sxs-lookup"><span data-stu-id="8c685-163">How Do I Receive Operations from a SAP System Using an IReplyChannel?</span></span>  
+ <span data-ttu-id="8c685-164">WCF チャネル モデルを使用して SAP システムからの操作を受信するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="8c685-164">To receive operations from a SAP system by using the WCF channel model, perform the following steps.</span></span>  
   
-#### <a name="to-receive-operations-from-the-sap-system-using-an-ireplychannel"></a>操作を IReplyChannel を使用して、SAP システムから受信するには  
+#### <a name="to-receive-operations-from-the-sap-system-using-an-ireplychannel"></a><span data-ttu-id="8c685-165">操作を IReplyChannel を使用して、SAP システムから受信するには</span><span class="sxs-lookup"><span data-stu-id="8c685-165">To receive operations from the SAP system using an IReplyChannel</span></span>  
   
-1.  インスタンスを作成する**SAPBinding**を受信する操作のために必要なバインドのプロパティを設定します。 設定する必要がありますには、少なくとも、 **AcceptCredentialsInUri**バインディング プロパティを true に設定します。 TRFC サーバーとして機能しを設定する必要があります、 **TidDatabaseConnectionString**プロパティをバインドします。 バインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
+1.  <span data-ttu-id="8c685-166">インスタンスを作成する**SAPBinding**を受信する操作のために必要なバインドのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="8c685-166">Create an instance of **SAPBinding** and set the binding properties required to for the operations you want to receive.</span></span> <span data-ttu-id="8c685-167">設定する必要がありますには、少なくとも、 **AcceptCredentialsInUri**バインディング プロパティを true に設定します。</span><span class="sxs-lookup"><span data-stu-id="8c685-167">At a minimum you must set the **AcceptCredentialsInUri** binding property to true.</span></span> <span data-ttu-id="8c685-168">TRFC サーバーとして機能しを設定する必要があります、 **TidDatabaseConnectionString**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="8c685-168">To act as a tRFC server, you must set the **TidDatabaseConnectionString** binding property.</span></span> <span data-ttu-id="8c685-169">バインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="8c685-169">For more information about binding properties, see [Read about BizTalk Adapter for mySAP Business Suite Binding Properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
   
     ```  
     SAPBinding binding = new SAPBinding();  
     binding.AcceptCredentialsInUri = true;  
     ```  
   
-2.  作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)です。  
+2.  <span data-ttu-id="8c685-170">作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。</span><span class="sxs-lookup"><span data-stu-id="8c685-170">Create a **BindingParameterCollection** and add an **InboundActionCollection** that contains the actions of the operations that you want to receive.</span></span> <span data-ttu-id="8c685-171">アダプターでは、その他のすべての操作の SAP システムに例外を返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-171">The adapter will return an exception to the SAP system for all other operations.</span></span> <span data-ttu-id="8c685-172">このステップは省略可能です。</span><span class="sxs-lookup"><span data-stu-id="8c685-172">This step is optional.</span></span> <span data-ttu-id="8c685-173">詳細については、次を参照してください。 [WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)です。</span><span class="sxs-lookup"><span data-stu-id="8c685-173">For more information, see [Receiving Inbound Operations from the SAP System Using the WCF Channel Model](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md).</span></span>  
   
     ```  
     InboundActionCollection actions = new InboundActionCollection(listeneraddress);  
@@ -172,7 +172,7 @@ rc.Reply(faultMessage);
     bpcol.Add(actions);  
     ```  
   
-3.  呼び出してチャネル リスナーを作成する**BuildChannelListener < IReplyChannel\>** メソッドを**SAPBinding**して開きます。 このメソッドにパラメーターの 1 つとしては、SAP 接続 URI を指定します。 接続 URI は、SAP システムで、RFC 変換先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3. も指定するこのチャネル リスナーを作成するときにします。  
+3.  <span data-ttu-id="8c685-174">呼び出してチャネル リスナーを作成する**BuildChannelListener < IReplyChannel\>** メソッドを**SAPBinding**して開きます。</span><span class="sxs-lookup"><span data-stu-id="8c685-174">Create a channel listener by invoking **BuildChannelListener<IReplyChannel\>** method on the **SAPBinding** and open it.</span></span> <span data-ttu-id="8c685-175">このメソッドにパラメーターの 1 つとしては、SAP 接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="8c685-175">You specify the SAP connection URI as one of the parameters to this method.</span></span> <span data-ttu-id="8c685-176">接続 URI は、SAP システムで、RFC 変換先のパラメーターを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="8c685-176">The connection URI must contain parameters for an RFC Destination on the SAP system.</span></span> <span data-ttu-id="8c685-177">SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="8c685-177">For more information about the SAP connection URI, see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span> <span data-ttu-id="8c685-178">作成した場合、 **BindingParameterCollection**手順 3. も指定するこのチャネル リスナーを作成するときにします。</span><span class="sxs-lookup"><span data-stu-id="8c685-178">If you created a **BindingParameterCollection** in step 3, you also specify this when you create the channel listener.</span></span>  
   
     ```  
     Uri listeneraddress =  
@@ -181,35 +181,35 @@ rc.Reply(faultMessage);
     listener.Open();  
     ```  
   
-4.  取得、 **IReplyChannel**を呼び出してチャネル、 **AcceptChannel**リスナーでメソッドを開きます。  
+4.  <span data-ttu-id="8c685-179">取得、 **IReplyChannel**を呼び出してチャネル、 **AcceptChannel**リスナーでメソッドを開きます。</span><span class="sxs-lookup"><span data-stu-id="8c685-179">Get an **IReplyChannel** channel by invoking the **AcceptChannel** method on the listener and open it.</span></span>  
   
     ```  
     IReplyChannel channel = listener.AcceptChannel();  
     channel.Open();  
     ```  
   
-5.  呼び出す**ReceiveRequest**チャネル アダプターから次の操作の要求メッセージを取得します。  
+5.  <span data-ttu-id="8c685-180">呼び出す**ReceiveRequest**チャネル アダプターから次の操作の要求メッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="8c685-180">Invoke **ReceiveRequest** on the channel to get the request message for the next operation from the adapter.</span></span>  
   
     ```  
     RequestContext rc = channel.ReceiveRequest();  
     ```  
   
-6.  アダプターによって送信された要求メッセージを消費します。 要求メッセージを取得する、 **RequestMessage**のプロパティ、 **RequestContext**です。 いずれかを使用してメッセージを処理することができます、 **XmlReader**または**XmlDictionaryWriter**です。  
+6.  <span data-ttu-id="8c685-181">アダプターによって送信された要求メッセージを消費します。</span><span class="sxs-lookup"><span data-stu-id="8c685-181">Consume the request message sent by the adapter.</span></span> <span data-ttu-id="8c685-182">要求メッセージを取得する、 **RequestMessage**のプロパティ、 **RequestContext**です。</span><span class="sxs-lookup"><span data-stu-id="8c685-182">You get the request message from the **RequestMessage** property of the **RequestContext**.</span></span> <span data-ttu-id="8c685-183">いずれかを使用してメッセージを処理することができます、 **XmlReader**または**XmlDictionaryWriter**です。</span><span class="sxs-lookup"><span data-stu-id="8c685-183">You can consume the message using either an **XmlReader** or an **XmlDictionaryWriter**.</span></span>  
   
     ```  
     XmlReader reader = (XmlReader)rc.RequestMessage.GetReaderAtBodyContents();  
     ```  
   
-7.  SAP システムへの応答またはエラーを返すことによって、操作を完了します。  
+7.  <span data-ttu-id="8c685-184">SAP システムへの応答またはエラーを返すことによって、操作を完了します。</span><span class="sxs-lookup"><span data-stu-id="8c685-184">Complete the operation by returning a response or fault to the SAP system:</span></span>  
   
-    1.  メッセージを処理し、アダプターに応答メッセージを返すことによって、SAP システムへの応答を返します。 この例では、空のメッセージを返します。  
+    1.  <span data-ttu-id="8c685-185">メッセージを処理し、アダプターに応答メッセージを返すことによって、SAP システムへの応答を返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-185">Process the message and return a response to the SAP system by returning the response message to the adapter.</span></span> <span data-ttu-id="8c685-186">この例では、空のメッセージを返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-186">This example returns an empty message.</span></span>  
   
         ```  
         respMessage = Message.CreateMessage(MessageVersion.Default, rc.RequestMessage.Headers.Action + "/response");  
         rc.Reply(respMessage);  
         ```  
   
-    2.  アダプターにフォールト メッセージを返すことによって、SAP システムに例外を返します。 メッセージ アクション、エラー コードと理由の任意の値を使用することができます。  
+    2.  <span data-ttu-id="8c685-187">アダプターにフォールト メッセージを返すことによって、SAP システムに例外を返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-187">Return an exception to the SAP system by returning a fault message to the adapter.</span></span> <span data-ttu-id="8c685-188">メッセージ アクション、エラー コードと理由の任意の値を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="8c685-188">You can use any value for the message action, fault code, and reason.</span></span>  
   
         ```  
         MessageFault fault = MessageFault.CreateFault(new FaultCode("ProcFault"), "Processing Error");  
@@ -217,38 +217,38 @@ rc.Reply(faultMessage);
         rc.Reply(respMessage);  
         ```  
   
-8.  メッセージを送信した後は、要求コンテキストを閉じます。  
+8.  <span data-ttu-id="8c685-189">メッセージを送信した後は、要求コンテキストを閉じます。</span><span class="sxs-lookup"><span data-stu-id="8c685-189">Close the request context after you have sent the message.</span></span>  
   
     ```  
     rc.Close();  
     ```  
   
-9. 要求の処理を完了すると、チャネルを閉じます。  
+9. <span data-ttu-id="8c685-190">要求の処理を完了すると、チャネルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="8c685-190">Close the channel when you have completed processing the request.</span></span>  
   
     ```  
     channel.Close()  
     ```  
   
     > [!IMPORTANT]
-    >  操作の処理が完了した後は、チャネルを閉じる必要があります。 チャネルを閉じない、コードの動作に影響を与える可能性があります。  
+    >  <span data-ttu-id="8c685-191">操作の処理が完了した後は、チャネルを閉じる必要があります。</span><span class="sxs-lookup"><span data-stu-id="8c685-191">You must close the channel after you have finished processing the operation.</span></span> <span data-ttu-id="8c685-192">チャネルを閉じない、コードの動作に影響を与える可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8c685-192">Failure to close the channel may affect the behavior of your code.</span></span>  
   
-10. SAP システムからの操作の受信が完了したら、リスナーを閉じます。  
+10. <span data-ttu-id="8c685-193">SAP システムからの操作の受信が完了したら、リスナーを閉じます。</span><span class="sxs-lookup"><span data-stu-id="8c685-193">Close the listener when you are finished receiving operations from the SAP system.</span></span>  
   
     ```  
     listener.Close()  
     ```  
   
     > [!IMPORTANT]
-    >  完了したら、リスナーを明示的に閉じる必要がありますを使用します。それ以外の場合、プログラムが正常に動作しない可能性があります。 リスナーを閉じる、リスナーを使用して作成されるチャネルは閉じられません。 各チャネル リスナーを使用して作成を明示的に閉じる必要があります。  
+    >  <span data-ttu-id="8c685-194">完了したら、リスナーを明示的に閉じる必要がありますを使用します。それ以外の場合、プログラムが正常に動作しない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8c685-194">You must explicitly close the listener when you are done using it; otherwise, your program may not behave properly.</span></span> <span data-ttu-id="8c685-195">リスナーを閉じる、リスナーを使用して作成されるチャネルは閉じられません。</span><span class="sxs-lookup"><span data-stu-id="8c685-195">Closing the listener does not close channels created using the listener.</span></span> <span data-ttu-id="8c685-196">各チャネル リスナーを使用して作成を明示的に閉じる必要があります。</span><span class="sxs-lookup"><span data-stu-id="8c685-196">You must also explicitly close each channel created using the listener.</span></span>  
   
-### <a name="example"></a>例  
- 次の例では、RFC、SAP システムから Z_RFC_MKD_DIV を受信します。 この RFC では、2 つの数値を除算します。 この例では実装を使用して、 **InboundActionCollection** Z_RFC_MKD_DIV 操作とは、次のメッセージを受信したときにフィルター処理します。  
+### <a name="example"></a><span data-ttu-id="8c685-197">例</span><span class="sxs-lookup"><span data-stu-id="8c685-197">Example</span></span>  
+ <span data-ttu-id="8c685-198">次の例では、RFC、SAP システムから Z_RFC_MKD_DIV を受信します。</span><span class="sxs-lookup"><span data-stu-id="8c685-198">The following example receives an RFC, Z_RFC_MKD_DIV from the SAP system.</span></span> <span data-ttu-id="8c685-199">この RFC では、2 つの数値を除算します。</span><span class="sxs-lookup"><span data-stu-id="8c685-199">This RFC divides two numbers.</span></span> <span data-ttu-id="8c685-200">この例では実装を使用して、 **InboundActionCollection** Z_RFC_MKD_DIV 操作とは、次のメッセージを受信したときにフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="8c685-200">The implementation in this example uses an **InboundActionCollection** to filter for the Z_RFC_MKD_DIV operation and does the following when a message is received:</span></span>  
   
--   除数がゼロ以外の場合は、除算の結果をコンソールに出力し、SAP システムを返します。  
+-   <span data-ttu-id="8c685-201">除数がゼロ以外の場合は、除算の結果をコンソールに出力し、SAP システムを返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-201">If the divisor is non-zero, it writes the result of the division to the console and returns it to the SAP system.</span></span>  
   
--   除数がゼロの場合は、メソッド結果の例外メッセージをコンソールに出力し、SAP システムにエラーを返します。  
+-   <span data-ttu-id="8c685-202">除数がゼロの場合は、メソッド結果の例外メッセージをコンソールに出力し、SAP システムにエラーを返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-202">If the divisor is zero, it writes the resulting exception message to the console and returns a fault to the SAP system.</span></span>  
   
--   SAP システムで他の操作を送信する場合は、コンソールにメッセージを書き込みます。 この場合、アダプター自体は、SAP システムにエラーを返します。  
+-   <span data-ttu-id="8c685-203">SAP システムで他の操作を送信する場合は、コンソールにメッセージを書き込みます。</span><span class="sxs-lookup"><span data-stu-id="8c685-203">If any other operation is sent by the SAP system, it writes a message to the console.</span></span> <span data-ttu-id="8c685-204">この場合、アダプター自体は、SAP システムにエラーを返します。</span><span class="sxs-lookup"><span data-stu-id="8c685-204">In this case, the adapter itself returns a fault to the SAP system.</span></span>  
   
 ```  
 using System;  
@@ -443,5 +443,5 @@ namespace SapRfcServerCM
 }  
 ```  
   
-## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="8c685-205">参照</span><span class="sxs-lookup"><span data-stu-id="8c685-205">See Also</span></span>  
+[<span data-ttu-id="8c685-206">WCF チャネル モデルを使用してアプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="8c685-206">Develop applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

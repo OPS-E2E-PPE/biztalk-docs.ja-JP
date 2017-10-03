@@ -18,67 +18,67 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-a-receive-port-for-messages-over-as2"></a>AS2 経由でのメッセージの受信ポートの構成
-EDI または非 EDI ペイロードを持つ AS2 メッセージを受信するには、メッセージを受信してパーティに応答を返すための HTTP 受信ポートを作成します。  
+# <a name="configuring-a-receive-port-for-messages-over-as2"></a><span data-ttu-id="f2693-102">AS2 経由でのメッセージの受信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="f2693-102">Configuring a Receive Port for Messages over AS2</span></span>
+<span data-ttu-id="f2693-103">EDI または非 EDI ペイロードを持つ AS2 メッセージを受信するには、メッセージを受信してパーティに応答を返すための HTTP 受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f2693-103">To receive an AS2 message with an EDI or non-EDI payload, create an HTTP receive port to receive the message and return a response back to the party.</span></span>  
   
- MDN が同期的に返される場合、受信ポートは双方向の要求 - 応答受信ポートである必要があります。 受信ポートの受信場所は AS2 メッセージを受信し、双方向受信ポートに関連付けられた送信ポートは同期 MDN を送信します。  
+ <span data-ttu-id="f2693-104">MDN が同期的に返される場合、受信ポートは双方向の要求 - 応答受信ポートである必要があります。</span><span class="sxs-lookup"><span data-stu-id="f2693-104">If the MDN will be returned synchronously, the receive port must be a two-way request-response receive port.</span></span> <span data-ttu-id="f2693-105">受信ポートの受信場所は AS2 メッセージを受信し、双方向受信ポートに関連付けられた送信ポートは同期 MDN を送信します。</span><span class="sxs-lookup"><span data-stu-id="f2693-105">A receive location in the receive port will receive the AS2 message, while the send port associated with the two-way receive port will send the synschronous MDN.</span></span>  
   
- MDN が非同期で返される場合、受信ポートは一方向受信ポートにすることができます。これは、MDN を個別の動的送信ポート経由で返す必要があるためです。 HTTP 応答は、一方向ポートか双方向ポートかにかかわらず、受信ポートによって返されます。 AS2 メッセージを受信するように双方向受信ポートを設定し、非同期 MDN を返すと、双方向受信場所の送信ポートを経由して HTTP 応答が返されます。  
+ <span data-ttu-id="f2693-106">MDN が非同期で返される場合、受信ポートは一方向受信ポートにすることができます。これは、MDN を個別の動的送信ポート経由で返す必要があるためです。</span><span class="sxs-lookup"><span data-stu-id="f2693-106">If the MDN will be returned asynchronously, the receive port can be a one-way receive port, because the MDN must be returned over a separate dynamic send port.</span></span> <span data-ttu-id="f2693-107">HTTP 応答は、一方向ポートか双方向ポートかにかかわらず、受信ポートによって返されます。</span><span class="sxs-lookup"><span data-stu-id="f2693-107">An HTTP response will be returned by the receive port, whether it is a one-way or two-way port.</span></span> <span data-ttu-id="f2693-108">AS2 メッセージを受信するように双方向受信ポートを設定し、非同期 MDN を返すと、双方向受信場所の送信ポートを経由して HTTP 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="f2693-108">If you set up a two-way receive port to receive an AS2 message, while returning an asynchronoius MDN, the HTTP response will be returned over the send port of the two-way receive location.</span></span>  
   
 > [!NOTE]
->  AS2 メッセージの受信に使用される双方向受信ポートを、MDN メッセージの受信に使用しないでください。 MDN メッセージは、静的な一方向の受信ポートで受信する必要があります。 MDN に要求/応答受信ポートを使用すると、着信 MDN に応答して 200OK メッセージが返されなくなるため、MDN 送信の不要な再試行が行われます。  
+>  <span data-ttu-id="f2693-109">AS2 メッセージの受信に使用される双方向受信ポートを、MDN メッセージの受信に使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="f2693-109">The two-way receive port used to receive AS2 messages should not be used to receive MDN messages.</span></span> <span data-ttu-id="f2693-110">MDN メッセージは、静的な一方向の受信ポートで受信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f2693-110">MDN messages should be received on a static one-way receive port.</span></span> <span data-ttu-id="f2693-111">MDN に要求/応答受信ポートを使用すると、着信 MDN に応答して 200OK メッセージが返されなくなるため、MDN 送信の不要な再試行が行われます。</span><span class="sxs-lookup"><span data-stu-id="f2693-111">Using a request/response receive port for an MDN would prevent a 200OK message from being returned in response to the incoming MDN, thereby causing unnecessary retries of the MDN transmission.</span></span>  
   
- 次の構成を使用して受信ポートを作成します。  
+ <span data-ttu-id="f2693-112">次の構成を使用して受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f2693-112">Create the receive port with the following configuration:</span></span>  
   
-|場所|プロパティ|設定|  
+|<span data-ttu-id="f2693-113">場所</span><span class="sxs-lookup"><span data-stu-id="f2693-113">Location</span></span>|<span data-ttu-id="f2693-114">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f2693-114">Property</span></span>|<span data-ttu-id="f2693-115">設定</span><span class="sxs-lookup"><span data-stu-id="f2693-115">Setting</span></span>|  
 |--------------|--------------|-------------|  
-|**受信ポートのプロパティ: 全般**|[ポートの種類]|要求-応答|  
-|**受信場所のプロパティ: 全般**|トランスポートの種類|HTTP**注:** EDIINT/AS2 でエンコードされたメッセージを転送するため、HTTP アダプタのみを使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。|  
-|**受信場所のプロパティ: 全般**|[受信ハンドラー]|BizTalkServerIsolatedHost|  
-|**受信場所のプロパティ: 全般**|受信パイプライン。|-AS2EdiReceive (ペイロードが場合 EDI でエンコードされた)<br />-AS2Receive (ペイロードが EDI でエンコードされた) 場合**注:** AS2EdiReceive パイプラインを使用する場合は、BizTalk Application Users グループで、BizTalk 分離ホスト インスタンス プロセスを実行しているユーザー アカウントを追加する必要があります。 AS2EdiReceive パイプラインは、BizTalk 分離ホスト インスタンス プロセスで実行されます。 AS2EdiReceive パイプラインは SSO ストアにアクセスします。この場合、ユーザーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users グループに属している必要があります。|  
-|**受信場所のプロパティ: 全般**|[送信パイプライン]|AS2Send|  
-|**HTTP トランスポートのプロパティ**|仮想ディレクトリと ISAPI 拡張|/\<仮想ディレクトリの名前 > >/btshttpreceive.dll|  
-|**HTTP トランスポートのプロパティ**|要求 - 応答の返すコンテンツの種類|text/xml|  
+|<span data-ttu-id="f2693-116">**受信ポートのプロパティ: 全般**</span><span class="sxs-lookup"><span data-stu-id="f2693-116">**Receive Port Properties: General**</span></span>|<span data-ttu-id="f2693-117">[ポートの種類]</span><span class="sxs-lookup"><span data-stu-id="f2693-117">Port type</span></span>|<span data-ttu-id="f2693-118">要求-応答</span><span class="sxs-lookup"><span data-stu-id="f2693-118">Request-Response</span></span>|  
+|<span data-ttu-id="f2693-119">**受信場所のプロパティ: 全般**</span><span class="sxs-lookup"><span data-stu-id="f2693-119">**Receive Location Properties: General**</span></span>|<span data-ttu-id="f2693-120">トランスポートの種類</span><span class="sxs-lookup"><span data-stu-id="f2693-120">Transport Type</span></span>|<span data-ttu-id="f2693-121">HTTP**注:** EDIINT/AS2 でエンコードされたメッセージを転送するため、HTTP アダプタのみを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f2693-121">HTTP **Note:**  Only the HTTP adapter can be used for transporting EDIINT/AS2-encoded messages.</span></span> <span data-ttu-id="f2693-122">このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="f2693-122">This transport will not work with an adapter other than the HTTP adapter.</span></span>|  
+|<span data-ttu-id="f2693-123">**受信場所のプロパティ: 全般**</span><span class="sxs-lookup"><span data-stu-id="f2693-123">**Receive Location Properties: General**</span></span>|<span data-ttu-id="f2693-124">[受信ハンドラー]</span><span class="sxs-lookup"><span data-stu-id="f2693-124">Receive handler</span></span>|<span data-ttu-id="f2693-125">BizTalkServerIsolatedHost</span><span class="sxs-lookup"><span data-stu-id="f2693-125">BizTalkServerIsolatedHost</span></span>|  
+|<span data-ttu-id="f2693-126">**受信場所のプロパティ: 全般**</span><span class="sxs-lookup"><span data-stu-id="f2693-126">**Receive Location Properties: General**</span></span>|<span data-ttu-id="f2693-127">受信パイプライン。</span><span class="sxs-lookup"><span data-stu-id="f2693-127">Receive pipeline</span></span>|<span data-ttu-id="f2693-128">-AS2EdiReceive (ペイロードが場合 EDI でエンコードされた)</span><span class="sxs-lookup"><span data-stu-id="f2693-128">-   AS2EdiReceive (if the payload is EDI-encoded)</span></span><br /><span data-ttu-id="f2693-129">-AS2Receive (ペイロードが EDI でエンコードされた) 場合**注:** AS2EdiReceive パイプラインを使用する場合は、BizTalk Application Users グループで、BizTalk 分離ホスト インスタンス プロセスを実行しているユーザー アカウントを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f2693-129">-   AS2Receive (if the payload is not EDI-encoded) **Note:**  When using the AS2EdiReceive pipeline, you must add the user account that the BizTalk Isolated Host Instance process is running under to the BizTalk Application Users group.</span></span> <span data-ttu-id="f2693-130">AS2EdiReceive パイプラインは、BizTalk 分離ホスト インスタンス プロセスで実行されます。</span><span class="sxs-lookup"><span data-stu-id="f2693-130">The AS2EdiReceive pipeline executes in the BizTalk Isolated Host Instance process.</span></span> <span data-ttu-id="f2693-131">AS2EdiReceive パイプラインは SSO ストアにアクセスします。この場合、ユーザーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users グループに属している必要があります。</span><span class="sxs-lookup"><span data-stu-id="f2693-131">The AS2EdiReceive pipeline accesses the SSO store, which requires that the user is in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users group.</span></span>|  
+|<span data-ttu-id="f2693-132">**受信場所のプロパティ: 全般**</span><span class="sxs-lookup"><span data-stu-id="f2693-132">**Receive Location Properties: General**</span></span>|<span data-ttu-id="f2693-133">[送信パイプライン]</span><span class="sxs-lookup"><span data-stu-id="f2693-133">Send pipeline</span></span>|<span data-ttu-id="f2693-134">AS2Send</span><span class="sxs-lookup"><span data-stu-id="f2693-134">AS2Send</span></span>|  
+|<span data-ttu-id="f2693-135">**HTTP トランスポートのプロパティ**</span><span class="sxs-lookup"><span data-stu-id="f2693-135">**HTTP Transport Properties**</span></span>|<span data-ttu-id="f2693-136">仮想ディレクトリと ISAPI 拡張</span><span class="sxs-lookup"><span data-stu-id="f2693-136">Virtual directory plus ISAPI extension</span></span>|<span data-ttu-id="f2693-137">/\<仮想ディレクトリの名前 > >/btshttpreceive.dll</span><span class="sxs-lookup"><span data-stu-id="f2693-137">/\<name of virtual directory>/BTSHTTPReceive.dll</span></span>|  
+|<span data-ttu-id="f2693-138">**HTTP トランスポートのプロパティ**</span><span class="sxs-lookup"><span data-stu-id="f2693-138">**HTTP Transport Properties**</span></span>|<span data-ttu-id="f2693-139">要求 - 応答の返すコンテンツの種類</span><span class="sxs-lookup"><span data-stu-id="f2693-139">Request-Response Return content type</span></span>|<span data-ttu-id="f2693-140">text/xml</span><span class="sxs-lookup"><span data-stu-id="f2693-140">text/xml</span></span>|  
   
-## <a name="functionality-of-the-receive-location-in-synchronous-and-asynchronous-modes"></a>同期モードおよび非同期モードでの受信場所の機能  
- 双方向の受信ポートは次の処理を実行して、EDI/AS2 メッセージを受信および処理し、応答を返します。  
+## <a name="functionality-of-the-receive-location-in-synchronous-and-asynchronous-modes"></a><span data-ttu-id="f2693-141">同期モードおよび非同期モードでの受信場所の機能</span><span class="sxs-lookup"><span data-stu-id="f2693-141">Functionality of the Receive Location in Synchronous and Asynchronous Modes</span></span>  
+ <span data-ttu-id="f2693-142">双方向の受信ポートは次の処理を実行して、EDI/AS2 メッセージを受信および処理し、応答を返します。</span><span class="sxs-lookup"><span data-stu-id="f2693-142">The two-way receive port does the following to receive and process an EDI/AS2 message and return a response:</span></span>  
   
--   HTTP 経由で AS2 メッセージを受信します。  
+-   <span data-ttu-id="f2693-143">HTTP 経由で AS2 メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="f2693-143">Receive the AS2 message over HTTP.</span></span>  
   
--   AS2EDIReceive 受信パイプライン (EDI エンコード メッセージの場合) または AS2Receive 受信パイプライン (EDI でエンコードされていないメッセージの場合) を使用して、AS2 メッセージを処理します。 このプロセスの詳細については、次を参照してください。[受信 AS2 メッセージを処理](../core/processing-an-incoming-as2-message.md)です。  
+-   <span data-ttu-id="f2693-144">AS2EDIReceive 受信パイプライン (EDI エンコード メッセージの場合) または AS2Receive 受信パイプライン (EDI でエンコードされていないメッセージの場合) を使用して、AS2 メッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="f2693-144">Process the AS2 message using the AS2EDIReceive receive pipeline (for EDI-encoded messages) or the AS2Receive receive pipeline (for messages that are not encoded in EDI).</span></span> <span data-ttu-id="f2693-145">このプロセスの詳細については、次を参照してください。[受信 AS2 メッセージを処理](../core/processing-an-incoming-as2-message.md)です。</span><span class="sxs-lookup"><span data-stu-id="f2693-145">For more information on this process, see [Processing an Incoming AS2 Message](../core/processing-an-incoming-as2-message.md).</span></span>  
   
--   受信メッセージの次のコンテキスト プロパティを設定します。  
+-   <span data-ttu-id="f2693-146">受信メッセージの次のコンテキスト プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="f2693-146">Set the following context properties on the received message:</span></span>  
   
-    -   `IsAS2PayloadMessage == True` (ペイロード メッセージのため)  
+    -   <span data-ttu-id="f2693-147">`IsAS2PayloadMessage == True` (ペイロード メッセージのため)</span><span class="sxs-lookup"><span data-stu-id="f2693-147">`IsAS2PayloadMessage == True` (because it is a payload message)</span></span>  
   
-    -   `IsEmptyMDNResponse == False` (空の MDN ではないため)  
+    -   <span data-ttu-id="f2693-148">`IsEmptyMDNResponse == False` (空の MDN ではないため)</span><span class="sxs-lookup"><span data-stu-id="f2693-148">`IsEmptyMDNResponse == False` (because it is not an empty MDN)</span></span>  
   
--   メッセージが EDI エンコードの場合、EDI ファイルを逆アセンブルし、XML ファイルを生成して MessageBox にドロップします。 各 XML ファイルの `BTS.MessageType` のコンテキスト プロパティを、名前空間を持つスキーマ名に設定します。  
+-   <span data-ttu-id="f2693-149">メッセージが EDI エンコードの場合、EDI ファイルを逆アセンブルし、XML ファイルを生成して MessageBox にドロップします。</span><span class="sxs-lookup"><span data-stu-id="f2693-149">If the message is EDI-encoded, disassemble the EDI file, generate XML files, and drop them into the MessageBox.</span></span> <span data-ttu-id="f2693-150">各 XML ファイルの `BTS.MessageType` のコンテキスト プロパティを、名前空間を持つスキーマ名に設定します。</span><span class="sxs-lookup"><span data-stu-id="f2693-150">Set the context property of `BTS.MessageType` for each XML file to the schema name with namespace.</span></span>  
   
--   メッセージが EDI エンコードではない場合は、ネイティブ形式のメッセージを MessageBox にドロップします。  
+-   <span data-ttu-id="f2693-151">メッセージが EDI エンコードではない場合は、ネイティブ形式のメッセージを MessageBox にドロップします。</span><span class="sxs-lookup"><span data-stu-id="f2693-151">If the message is not EDI-encoded, drop the message in its native format into the MessageBox.</span></span>  
   
--   AS2EdiReceive 受信パイプラインを使用して MDN ファイルを生成します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)です。 メッセージの次のコンテキスト プロパティを設定します。  
+-   <span data-ttu-id="f2693-152">AS2EdiReceive 受信パイプラインを使用して MDN ファイルを生成します (有効になっている場合)。</span><span class="sxs-lookup"><span data-stu-id="f2693-152">Generate the MDN file, if enabled, using the AS2EdiReceive receive pipeline.</span></span> <span data-ttu-id="f2693-153">このプロセスの詳細については、次を参照してください。[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)です。</span><span class="sxs-lookup"><span data-stu-id="f2693-153">For more information on this process, see [Generating an Outgoing MDN](../core/generating-an-outgoing-mdn.md).</span></span> <span data-ttu-id="f2693-154">メッセージの次のコンテキスト プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="f2693-154">Set the following context properties on the message:</span></span>  
   
-    -   `EdiIntAS.IsAS2AsynchronousMdn == False` (同期モードの場合)  
+    -   <span data-ttu-id="f2693-155">`EdiIntAS.IsAS2AsynchronousMdn == False` (同期モードの場合)</span><span class="sxs-lookup"><span data-stu-id="f2693-155">`EdiIntAS.IsAS2AsynchronousMdn == False` (if in synchronous mode)</span></span>  
   
-    -   `EdiIntAS.IsAS2AsynchronousMdn== True` (非同期モードの場合)  
+    -   <span data-ttu-id="f2693-156">`EdiIntAS.IsAS2AsynchronousMdn== True` (非同期モードの場合)</span><span class="sxs-lookup"><span data-stu-id="f2693-156">`EdiIntAS.IsAS2AsynchronousMdn== True` (if in asynchronous mode)</span></span>  
   
--   同期モードの場合、AS2Send 送信パイプラインを使用して MDN ファイルを送信します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。 [、送信 MDN を送信する](../core/sending-an-outgoing-mdn.md)です。  
+-   <span data-ttu-id="f2693-157">同期モードの場合、AS2Send 送信パイプラインを使用して MDN ファイルを送信します (有効になっている場合)。</span><span class="sxs-lookup"><span data-stu-id="f2693-157">If in synchronous mode, send the MDN file, if enabled, using the AS2Send send pipeline.</span></span> <span data-ttu-id="f2693-158">このプロセスの詳細については、次を参照してください。 [、送信 MDN を送信する](../core/sending-an-outgoing-mdn.md)です。</span><span class="sxs-lookup"><span data-stu-id="f2693-158">For more information on this process, see [Sending an Outgoing MDN](../core/sending-an-outgoing-mdn.md).</span></span>  
   
--   非同期モードの場合、MDN ファイルが有効な場合は、そのファイルを MessageBox にルーティングします (MDN ファイルの取得および送信に使用される個別の動的送信ポート)。  
+-   <span data-ttu-id="f2693-159">非同期モードの場合、MDN ファイルが有効な場合は、そのファイルを MessageBox にルーティングします (MDN ファイルの取得および送信に使用される個別の動的送信ポート)。</span><span class="sxs-lookup"><span data-stu-id="f2693-159">If in asynchronous mode, route the MDN file, if enabled, to the MessageBox (for a separate dynamic send port to pick it up and send it).</span></span>  
   
--   非同期モードの場合、非同期で返される完全な MDN 以外に空の MDN を生成します。 メッセージの次のコンテキスト プロパティを設定します。  
+-   <span data-ttu-id="f2693-160">非同期モードの場合、非同期で返される完全な MDN 以外に空の MDN を生成します。</span><span class="sxs-lookup"><span data-stu-id="f2693-160">If in asynchronous mode, generate an empty MDN in addition to the complete MDN that it returns asynchronously.</span></span> <span data-ttu-id="f2693-161">メッセージの次のコンテキスト プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="f2693-161">Set the following context properties on the message:</span></span>  
   
     -   `IsAS2PayloadMessage == False`  
   
     -   `IsEmptyMDNResponse == True`  
   
--   非同期モードの場合、受信ポートと送信パーティ間の HTTP 接続を経由して元の送信者に HTTP 応答を返し、元の送信者がその接続を閉じます。 これは、同期接続は完全な MDN によって切断されないためです。  
+-   <span data-ttu-id="f2693-162">非同期モードの場合、受信ポートと送信パーティ間の HTTP 接続を経由して元の送信者に HTTP 応答を返し、元の送信者がその接続を閉じます。</span><span class="sxs-lookup"><span data-stu-id="f2693-162">If in asynchronous mode, return the HTTP response to the original sender over the HTTP connection between the receive port and the sending party, which closes that connection.</span></span> <span data-ttu-id="f2693-163">これは、同期接続は完全な MDN によって切断されないためです。</span><span class="sxs-lookup"><span data-stu-id="f2693-163">This is necessary because the synchronous connection is not closed by the complete MDN.</span></span>  
   
--   確認メッセージを生成し (有効になっている場合)、MessageBox にドロップします。 `BTS.MessageType` のコンテキスト プロパティを、確認管理スキーマに設定します。  
+-   <span data-ttu-id="f2693-164">確認メッセージを生成し (有効になっている場合)、MessageBox にドロップします。</span><span class="sxs-lookup"><span data-stu-id="f2693-164">Generate an acknowledgment message, if enabled, and drop it into the MessageBox.</span></span> <span data-ttu-id="f2693-165">`BTS.MessageType` のコンテキスト プロパティを、確認管理スキーマに設定します。</span><span class="sxs-lookup"><span data-stu-id="f2693-165">Set the context property of `BTS.MessageType` to the acknowledgment control schema.</span></span>  
   
-## <a name="see-also"></a>参照  
- [AS2 ソリューションのポートを構成します。](../core/configuring-ports-for-an-as2-solution.md)   
- [入力方向の AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)   
- [送信 MDN の生成](../core/generating-an-outgoing-mdn.md)   
- [送信 MDN を送信します。](../core/sending-an-outgoing-mdn.md)
+## <a name="see-also"></a><span data-ttu-id="f2693-166">参照</span><span class="sxs-lookup"><span data-stu-id="f2693-166">See Also</span></span>  
+ <span data-ttu-id="f2693-167">[AS2 ソリューションのポートを構成します。](../core/configuring-ports-for-an-as2-solution.md) </span><span class="sxs-lookup"><span data-stu-id="f2693-167">[Configuring Ports for an AS2 Solution](../core/configuring-ports-for-an-as2-solution.md) </span></span>  
+ <span data-ttu-id="f2693-168">[入力方向の AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md) </span><span class="sxs-lookup"><span data-stu-id="f2693-168">[Processing an Incoming AS2 Message](../core/processing-an-incoming-as2-message.md) </span></span>  
+ <span data-ttu-id="f2693-169">[送信 MDN の生成](../core/generating-an-outgoing-mdn.md) </span><span class="sxs-lookup"><span data-stu-id="f2693-169">[Generating an Outgoing MDN](../core/generating-an-outgoing-mdn.md) </span></span>  
+ [<span data-ttu-id="f2693-170">送信 MDN を送信します。</span><span class="sxs-lookup"><span data-stu-id="f2693-170">Sending an Outgoing MDN</span></span>](../core/sending-an-outgoing-mdn.md)

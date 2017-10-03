@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error--testmap-used-the-following-file-ltfile---0gt-as-input-to-the-map"></a>次のファイルを使用してエラー-TestMap: &lt;file:---{0}&gt;マップへの入力として。
-**エラー コード**  
+# <a name="error--testmap-used-the-following-file-ltfile---0gt-as-input-to-the-map"></a><span data-ttu-id="5a56a-103">次のファイルを使用してエラー-TestMap: &lt;file:---{0}&gt;マップへの入力として。</span><span class="sxs-lookup"><span data-stu-id="5a56a-103">Error- TestMap used the following file: &lt;file:---{0}&gt; as input to the map.</span></span>
+<span data-ttu-id="5a56a-104">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="5a56a-104">**Error Code**</span></span>  
   
- btm1079  
+ <span data-ttu-id="5a56a-105">btm1079</span><span class="sxs-lookup"><span data-stu-id="5a56a-105">btm1079</span></span>  
   
- **説明**  
+ <span data-ttu-id="5a56a-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="5a56a-106">**Explanation**</span></span>  
   
- これは単なる情報メッセージです。 マップのテスト操作用の入力として使用されているファイルを表示するには、リンクをクリックします。  
+ <span data-ttu-id="5a56a-107">これは単なる情報メッセージです。</span><span class="sxs-lookup"><span data-stu-id="5a56a-107">This is just an information message.</span></span> <span data-ttu-id="5a56a-108">マップのテスト操作用の入力として使用されているファイルを表示するには、リンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a56a-108">Click on the link to view the file being used as input for test map operation.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="5a56a-109">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="5a56a-109">**User Action**</span></span>  
   
- なし
+ <span data-ttu-id="5a56a-110">なし</span><span class="sxs-lookup"><span data-stu-id="5a56a-110">None</span></span>

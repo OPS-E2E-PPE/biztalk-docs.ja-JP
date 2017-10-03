@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-tibco-enterprise-message-service-receive-handlers"></a>TIBCO Enterprise Message Service 受信ハンドラーの作成
-TIBCO Enterprise Message Service の受信元は、特定のキューまたはトピックを登録して関連メッセージを受信するリスナー サービスです。 BizTalk Adapter for TIBCO Enterprise Message Service は、新しいセッションを開いて、最初に TIBCO Enterprise Message Service を登録し、その後、メッセージを受信するためにポーリングを継続します。 このセクションでは、TIBCO Enterprise Message Service に接続するために受信ポートを設定する方法と、実行時に TIBCO EMS と対話するためにオーケストレーションに XML を含める方法について説明します。  
+# <a name="creating-tibco-enterprise-message-service-receive-handlers"></a><span data-ttu-id="d5528-102">TIBCO Enterprise Message Service 受信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="d5528-102">Creating TIBCO Enterprise Message Service Receive Handlers</span></span>
+<span data-ttu-id="d5528-103">TIBCO Enterprise Message Service の受信元は、特定のキューまたはトピックを登録して関連メッセージを受信するリスナー サービスです。</span><span class="sxs-lookup"><span data-stu-id="d5528-103">TIBCO Enterprise Message Service receiver is a listener service that registers a particular Queue or Topic and receives the relative messages.</span></span> <span data-ttu-id="d5528-104">BizTalk Adapter for TIBCO Enterprise Message Service は、新しいセッションを開いて、最初に TIBCO Enterprise Message Service を登録し、その後、メッセージを受信するためにポーリングを継続します。</span><span class="sxs-lookup"><span data-stu-id="d5528-104">BizTalk Adapter for TIBCO Enterprise Message Service first registers with TIBCO Enterprise Message Service by opening a new session, and then it continues polling to receive messages..</span></span> <span data-ttu-id="d5528-105">このセクションでは、TIBCO Enterprise Message Service に接続するために受信ポートを設定する方法と、実行時に TIBCO EMS と対話するためにオーケストレーションに XML を含める方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d5528-105">This section explains how to set the receive port to connect to TIBCO Enterprise Message Service and how to include XML in your orchestration to interact with TIBCO EMS at run time.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="d5528-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="d5528-106">In This Section</span></span>  
   
--   [作成する方法には、TIBCO Enterprise Message Service 受信ポート](../core/how-to-create-receive-ports-in-tibco-enterprise-message-service.md)  
+-   [<span data-ttu-id="d5528-107">作成する方法には、TIBCO Enterprise Message Service 受信ポート</span><span class="sxs-lookup"><span data-stu-id="d5528-107">How to Create Receive Ports in TIBCO Enterprise Message Service</span></span>](../core/how-to-create-receive-ports-in-tibco-enterprise-message-service.md)  
   
--   [TIBCO Enterprise Message Service トランスポート プロパティの設定、受信ポート](../core/set-tibco-enterprise-message-service-transport-properties-for-the-receive-port.md)  
+-   [<span data-ttu-id="d5528-108">TIBCO Enterprise Message Service トランスポート プロパティの設定、受信ポート</span><span class="sxs-lookup"><span data-stu-id="d5528-108">Setting TIBCO Enterprise Message Service Transport Properties for the Receive Port</span></span>](../core/set-tibco-enterprise-message-service-transport-properties-for-the-receive-port.md)  
   
--   [設定する方法 TIBCO Enterprise Message Service 用の受信パイプライン](../core/how-to-set-receive-pipelines-for-tibco-enterprise-message-service.md)
+-   [<span data-ttu-id="d5528-109">設定する方法 TIBCO Enterprise Message Service 用の受信パイプライン</span><span class="sxs-lookup"><span data-stu-id="d5528-109">How to Set Receive Pipelines for TIBCO Enterprise Message Service</span></span>](../core/how-to-set-receive-pipelines-for-tibco-enterprise-message-service.md)

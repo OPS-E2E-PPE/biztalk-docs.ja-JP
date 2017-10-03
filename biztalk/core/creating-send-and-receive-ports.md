@@ -29,68 +29,68 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-send-and-receive-ports"></a>作成する送信ポートと受信ポート
-次の手順を使用して、BizTalk Adapter for JD Edwards OneWorld 用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信ポートおよび受信ポートを作成します。  
+# <a name="creating-send-and-receive-ports"></a><span data-ttu-id="54753-102">作成する送信ポートと受信ポート</span><span class="sxs-lookup"><span data-stu-id="54753-102">Creating Send and Receive Ports</span></span>
+<span data-ttu-id="54753-103">次の手順を使用して、BizTalk Adapter for JD Edwards OneWorld 用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信ポートおよび受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="54753-103">Use the following procedures to create [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send and receive ports for BizTalk Adapter for JD Edwards OneWorld.</span></span>  
   
-## <a name="creating-a-port"></a>ポートを作成します。  
+## <a name="creating-a-port"></a><span data-ttu-id="54753-104">ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="54753-104">Creating a Port</span></span>  
   
-#### <a name="to-create-a-send-port"></a>送信ポートを作成するには  
+#### <a name="to-create-a-send-port"></a><span data-ttu-id="54753-105">送信ポートを作成するには</span><span class="sxs-lookup"><span data-stu-id="54753-105">To create a send port</span></span>  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  <span data-ttu-id="54753-106">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="54753-106">Click **Start**, point to **All Programs**, point to **Microsoft BizTalk Server**, and then click **BizTalk Server Administration**.</span></span>  
   
-2.  BizTalk Server 管理コンソールで、次のように展開します**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、を展開**アプリケーション**、の順に展開し、。送信ポートを作成するアプリケーション。  
+2.  <span data-ttu-id="54753-107">BizTalk Server 管理コンソールで、次のように展開します**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、を展開**アプリケーション**、の順に展開し、。送信ポートを作成するアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="54753-107">In the BizTalk Server Administration console, expand **BizTalk Server Administration**, expand **BizTalk Group**, and expand **Applications**, and then expand the application for which you want to create a send port.</span></span>  
   
-3.  右クリック**送信ポート** をクリック**新規**、クリックして**静的な送信請求-応答ポート**です。  
+3.  <span data-ttu-id="54753-108">右クリック**送信ポート** をクリック**新規**、クリックして**静的な送信請求-応答ポート**です。</span><span class="sxs-lookup"><span data-stu-id="54753-108">Right-click **Send Ports** and click **New**, and then click **Static Solicit-Response Port**.</span></span>  
   
-4.  **送信ポートのプロパティ** ダイアログ ボックスで、次の操作します。  
+4.  <span data-ttu-id="54753-109">**送信ポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="54753-109">In the **Send Port Properties** dialog box, do the following:</span></span>  
   
-    -   **名前**ボックスに、送信ポートの名前を入力 (たとえば、 `SSOSendToJDE OneWorld`)。  
+    -   <span data-ttu-id="54753-110">**名前**ボックスに、送信ポートの名前を入力 (たとえば、 `SSOSendToJDE OneWorld`)。</span><span class="sxs-lookup"><span data-stu-id="54753-110">In the **Name** box, type a send port name (for example, `SSOSendToJDE OneWorld`).</span></span>  
   
-    -   **型**ドロップダウン リストで、 **JDEdwards**です。  
+    -   <span data-ttu-id="54753-111">**型**ドロップダウン リストで、 **JDEdwards**です。</span><span class="sxs-lookup"><span data-stu-id="54753-111">From the **Type** drop-down list, select **JDEdwards**.</span></span>  
   
-    -   **送信ハンドラー**ドロップダウン リストで、送信ハンドラーのアドレスを選択します。  
+    -   <span data-ttu-id="54753-112">**送信ハンドラー**ドロップダウン リストで、送信ハンドラーのアドレスを選択します。</span><span class="sxs-lookup"><span data-stu-id="54753-112">From the **Send handler** drop-down list, select the send handler address.</span></span>  
   
-    -   **送信パイプライン** **microsoft.biztalk.defaultpipelines.xmltransmit**です。  
+    -   <span data-ttu-id="54753-113">**送信パイプライン** **microsoft.biztalk.defaultpipelines.xmltransmit**です。</span><span class="sxs-lookup"><span data-stu-id="54753-113">For the **Send Pipeline**, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
   
-    -   **受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**です。  
+    -   <span data-ttu-id="54753-114">**受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**です。</span><span class="sxs-lookup"><span data-stu-id="54753-114">For the **Receive Pipeline**, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
-5.  **[OK]**をクリックします。  
+5.  <span data-ttu-id="54753-115">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="54753-115">Click **OK**.</span></span>  
   
-## <a name="creating-a-receive-port"></a>作成する、受信ポート  
+## <a name="creating-a-receive-port"></a><span data-ttu-id="54753-116">作成する、受信ポート</span><span class="sxs-lookup"><span data-stu-id="54753-116">Creating a Receive Port</span></span>  
   
-#### <a name="to-create-a-receive-port"></a>受信ポートを作成するには  
+#### <a name="to-create-a-receive-port"></a><span data-ttu-id="54753-117">受信ポートを作成するには</span><span class="sxs-lookup"><span data-stu-id="54753-117">To create a receive port</span></span>  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  <span data-ttu-id="54753-118">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="54753-118">Click **Start**, point to **All Programs**, point to **Microsoft BizTalk Server**, and then click **BizTalk Server Administration**.</span></span>  
   
-2.  BizTalk Server 管理コンソールで、次のように展開します**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、を展開**アプリケーション**、の順に展開し、。送信ポートを作成するアプリケーション。  
+2.  <span data-ttu-id="54753-119">BizTalk Server 管理コンソールで、次のように展開します**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、を展開**アプリケーション**、の順に展開し、。送信ポートを作成するアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="54753-119">In the BizTalk Server Administration console, expand **BizTalk Server Administration**, expand **BizTalk Group**, and expand **Applications**, and then expand the application for which you want to create a send port.</span></span>  
   
-3.  右クリック**受信ポート** をクリック**新規**、クリックして**一方向の受信ポート**です。  
+3.  <span data-ttu-id="54753-120">右クリック**受信ポート** をクリック**新規**、クリックして**一方向の受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="54753-120">Right-click **Receive Ports** and click **New**, and then click **One-way Receive Port**.</span></span>  
   
-     **一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、クリックしてして**[ok]**です。  
+     <span data-ttu-id="54753-121">**一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、クリックしてして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="54753-121">On the **One-Way Receive Port Properties** screen, in the **Name** field, type `ReceiveFromHttp`, and then click **OK**.</span></span>  
   
-4.  次の情報を入力、**一方向受信ポートのプロパティ**ウィンドウ。  
+4.  <span data-ttu-id="54753-122">次の情報を入力、**一方向受信ポートのプロパティ**ウィンドウ。</span><span class="sxs-lookup"><span data-stu-id="54753-122">Enter the following information in the **One-way Receive Port Properties** window:</span></span>  
   
-    -   **名前**フィールドに「`ReceiveFromHTTP`です。  
+    -   <span data-ttu-id="54753-123">**名前**フィールドに「`ReceiveFromHTTP`です。</span><span class="sxs-lookup"><span data-stu-id="54753-123">In the **Name** field, type `ReceiveFromHTTP`.</span></span>  
   
-    -   **トランスポートの種類** **HTTP**です。  
+    -   <span data-ttu-id="54753-124">**トランスポートの種類** **HTTP**です。</span><span class="sxs-lookup"><span data-stu-id="54753-124">For the **Transport Type**, select **HTTP**.</span></span>  
   
-5.  [アドレス (URI)] の省略記号ボタン ([...]) をクリックします。  
+5.  <span data-ttu-id="54753-125">[アドレス (URI)] の省略記号ボタン ([...]) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="54753-125">Click the ellipsis (…) button in the address (URI).</span></span>  
   
      ![](../core/media/siebeladapter-32-ssodemo-httptransport.gif "SiebelAdapter_32_SSODemo_HTTPTransport")  
   
-    1.  仮想ディレクトリと ISAPI 拡張 /mySSODemo/BTSHTTPReceive.dll を設定します。  
+    1.  <span data-ttu-id="54753-126">仮想ディレクトリと ISAPI 拡張 /mySSODemo/BTSHTTPReceive.dll を設定します。</span><span class="sxs-lookup"><span data-stu-id="54753-126">Set the Virtual directory plus ISAPI extension, /mySSODemo/BTSHTTPReceive.dll.</span></span>  
   
-    2.  選択**関連付けハンドルを返す成功**です。  
+    2.  <span data-ttu-id="54753-127">選択**関連付けハンドルを返す成功**です。</span><span class="sxs-lookup"><span data-stu-id="54753-127">Select **Return correlation handle on success**.</span></span>  
   
-    3.  選択**を使用してシングル サインオン**、順にクリック**OK**です。  
+    3.  <span data-ttu-id="54753-128">選択**を使用してシングル サインオン**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="54753-128">Select **Use Single Sign-On**, and then click **OK**.</span></span>  
   
-6.  **受信ハンドラー**ドロップダウン リストで、 **BizTalkServerIsolatedHost**です。  
+6.  <span data-ttu-id="54753-129">**受信ハンドラー**ドロップダウン リストで、 **BizTalkServerIsolatedHost**です。</span><span class="sxs-lookup"><span data-stu-id="54753-129">In the **Receive Handler** drop-down list, select **BizTalkServerIsolatedHost**.</span></span>  
   
      ![](../core/media/siebeladapter-33-ssodemo-receivelocationproperty.gif "SiebelAdapter_33_SSODemo_ReceiveLocationProperty")  
   
-7.  **受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**をクリックし、 **ok**です。  
+7.  <span data-ttu-id="54753-130">**受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**をクリックし、 **ok**です。</span><span class="sxs-lookup"><span data-stu-id="54753-130">For the **Receive Pipeline**, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**, and then click **OK**.</span></span>  
   
-## <a name="see-also"></a>参照  
- [JD Edwards OneWorld 送信ハンドラーの作成](../core/creating-jd-edwards-oneworld-send-handlers.md)   
- [JD Edwards OneWorld トランスポートのプロパティを設定する方法](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+## <a name="see-also"></a><span data-ttu-id="54753-131">参照</span><span class="sxs-lookup"><span data-stu-id="54753-131">See Also</span></span>  
+ <span data-ttu-id="54753-132">[JD Edwards OneWorld 送信ハンドラーの作成](../core/creating-jd-edwards-oneworld-send-handlers.md) </span><span class="sxs-lookup"><span data-stu-id="54753-132">[Creating JD Edwards OneWorld Send Handlers](../core/creating-jd-edwards-oneworld-send-handlers.md) </span></span>  
+ <span data-ttu-id="54753-133">[JD Edwards OneWorld トランスポートのプロパティを設定する方法](../core/how-to-set-jd-edwards-oneworld-transport-properties.md) </span><span class="sxs-lookup"><span data-stu-id="54753-133">[How to Set JD Edwards OneWorld Transport Properties](../core/how-to-set-jd-edwards-oneworld-transport-properties.md) </span></span>  
+ [<span data-ttu-id="54753-134">シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="54753-134">Using Single Sign-On</span></span>](../core/using-single-sign-on3.md)

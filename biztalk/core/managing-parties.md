@@ -24,95 +24,95 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="managing-parties"></a>パーティの管理
-使用して、**パーティ** ノードを設定できます (パーティ) のビジネス パートナーまたは社内の部署 (ビジネス プロファイル) を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションが連携します。 詳細については、次を参照してください。[取引パートナー](../core/trading-partners-and-business-profiles.md)です。  
+# <a name="managing-parties"></a><span data-ttu-id="75203-102">パーティの管理</span><span class="sxs-lookup"><span data-stu-id="75203-102">Managing Parties</span></span>
+<span data-ttu-id="75203-103">使用して、**パーティ** ノードを設定できます (パーティ) のビジネス パートナーまたは社内の部署 (ビジネス プロファイル) を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションが連携します。</span><span class="sxs-lookup"><span data-stu-id="75203-103">Using the **Parties** node, you can set up business partners (parties) or internal departments (business profiles) with which [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solutions interact.</span></span> <span data-ttu-id="75203-104">詳細については、次を参照してください。[取引パートナー](../core/trading-partners-and-business-profiles.md)です。</span><span class="sxs-lookup"><span data-stu-id="75203-104">For more information, see [Trading Partners](../core/trading-partners-and-business-profiles.md).</span></span>  
 
-パーティは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して作成および構成できます。 BizTalk Server にパーティを作成してから、オーケストレーションを使用して、パーティと連携する場合があります。 パーティは、ロールを通じてオーケストレーションと連携します。 たとえば、オーケストレーションに出荷ロールがあるとします。 出荷業者には、1 つ以上のパーティが関連付けられます。 オーケストレーションで最も低コストの商品の出荷業者を決定する際に、出荷業者ロールのパーティの価格を比較できます。  
+<span data-ttu-id="75203-105">パーティは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して作成および構成できます。</span><span class="sxs-lookup"><span data-stu-id="75203-105">You can create and configure a party using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span> <span data-ttu-id="75203-106">BizTalk Server にパーティを作成してから、オーケストレーションを使用して、パーティと連携する場合があります。</span><span class="sxs-lookup"><span data-stu-id="75203-106">After you create a party in BizTalk Server, it is likely that you want to interact with that party using an orchestration.</span></span> <span data-ttu-id="75203-107">パーティは、ロールを通じてオーケストレーションと連携します。</span><span class="sxs-lookup"><span data-stu-id="75203-107">Parties interact with orchestrations through roles.</span></span> <span data-ttu-id="75203-108">たとえば、オーケストレーションに出荷ロールがあるとします。</span><span class="sxs-lookup"><span data-stu-id="75203-108">For example, you might have a shipping role in your orchestration.</span></span> <span data-ttu-id="75203-109">出荷業者には、1 つ以上のパーティが関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="75203-109">The shipper would have one or more parties associated with it.</span></span> <span data-ttu-id="75203-110">オーケストレーションで最も低コストの商品の出荷業者を決定する際に、出荷業者ロールのパーティの価格を比較できます。</span><span class="sxs-lookup"><span data-stu-id="75203-110">When the orchestration needs to decide the least expensive shipping company to use to ship an item, it can compare the prices of the parties in the shipper role.</span></span>  
   
- パーティを参加させて、特定のロールに関連付ける必要があります。 パーティを参加させることで、オーケストレーションとパーティを連携させることができます。 参照してください[参加させる、またはロールに対してパーティを参加解除方法](../core/how-to-enlist-or-unenlist-a-party-for-a-role.md)です。
+ <span data-ttu-id="75203-111">パーティを参加させて、特定のロールに関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="75203-111">You must enlist a party to tie it to a specific role.</span></span> <span data-ttu-id="75203-112">パーティを参加させることで、オーケストレーションとパーティを連携させることができます。</span><span class="sxs-lookup"><span data-stu-id="75203-112">Enlisting a party enables an orchestration to interact with the party.</span></span> <span data-ttu-id="75203-113">参照してください[参加させる、またはロールに対してパーティを参加解除方法](../core/how-to-enlist-or-unenlist-a-party-for-a-role.md)です。</span><span class="sxs-lookup"><span data-stu-id="75203-113">See [How to Enlist or Unenlist a Party for a Role](../core/how-to-enlist-or-unenlist-a-party-for-a-role.md).</span></span>
  
-## <a name="prerequisites"></a>前提条件  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
+## <a name="prerequisites"></a><span data-ttu-id="75203-114">前提条件</span><span class="sxs-lookup"><span data-stu-id="75203-114">Prerequisites</span></span>  
+ <span data-ttu-id="75203-115">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="75203-115">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
   
-## <a name="create-or-edit-a-party"></a>パーティを作成または更新
+## <a name="create-or-edit-a-party"></a><span data-ttu-id="75203-116">パーティを作成または更新</span><span class="sxs-lookup"><span data-stu-id="75203-116">Create or edit a party</span></span>
   
-1.  開いている**BizTalk Server 管理**です。  展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]を BizTalk グループを展開しを右クリックして**パーティ****新規**、し、**パーティ**です。  
+1.  <span data-ttu-id="75203-117">開いている**BizTalk Server 管理**です。</span><span class="sxs-lookup"><span data-stu-id="75203-117">Open **BizTalk Server Administration**.</span></span>  <span data-ttu-id="75203-118">展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]を BizTalk グループを展開しを右クリックして**パーティ****新規**、し、**パーティ**です。</span><span class="sxs-lookup"><span data-stu-id="75203-118">Expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, right-click **Parties**, select **New**, and then select **Party**.</span></span>  
   
-2.  **全般** ページで、次の操作します。  
+2.  <span data-ttu-id="75203-119">**全般** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="75203-119">On the **General** page, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="75203-120">プロパティ</span><span class="sxs-lookup"><span data-stu-id="75203-120">Use this</span></span>|<span data-ttu-id="75203-121">目的</span><span class="sxs-lookup"><span data-stu-id="75203-121">To do this</span></span>|  
     |--------------|----------------|  
-    |**名前**|パーティ名を入力します。|  
-    |**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**|パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。 **重要:**に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。 **注:**このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。|  
-    |**追加のプロパティ – 名前/値**|パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。 名前と値の組み合わせは、必要な数だけ追加できます。 **注**: どのような処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。|  
-    |**Del**|選択すると、選択した名前と値のペアを削除します。|  
+    |<span data-ttu-id="75203-122">**名前**</span><span class="sxs-lookup"><span data-stu-id="75203-122">**Name**</span></span>|<span data-ttu-id="75203-123">パーティ名を入力します。</span><span class="sxs-lookup"><span data-stu-id="75203-123">Enter a party name.</span></span>|  
+    |<span data-ttu-id="75203-124">**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**</span><span class="sxs-lookup"><span data-stu-id="75203-124">**Local BizTalk processes messages received by the party or supports sending messages from this party**</span></span>|<span data-ttu-id="75203-125">パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="75203-125">Select this checkbox to specify that the party represents the same trading partner that also hosts [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="75203-126">**重要:**に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="75203-126">**Important:**  For a two-party TPM solution that uses out-of-the-box pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you must select this check box for at least one party.</span></span> <span data-ttu-id="75203-127">**注:**このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。</span><span class="sxs-lookup"><span data-stu-id="75203-127">**Note:**  If you clear this check box, some properties will be disabled while creating the agreements for this party.</span></span>|  
+    |<span data-ttu-id="75203-128">**追加のプロパティ – 名前/値**</span><span class="sxs-lookup"><span data-stu-id="75203-128">**Additional Properties – Name / Value**</span></span>|<span data-ttu-id="75203-129">パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="75203-129">Enter a name-value pair to store any information about the party.</span></span> <span data-ttu-id="75203-130">名前と値の組み合わせは、必要な数だけ追加できます。</span><span class="sxs-lookup"><span data-stu-id="75203-130">You can add as many name-value pairs as you want.</span></span> <span data-ttu-id="75203-131">**注**: どのような処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。</span><span class="sxs-lookup"><span data-stu-id="75203-131">**Note**:  The name-value pairs are not used by the BizTalk Server for any processing; this data is for information purposes only.</span></span>|  
+    |<span data-ttu-id="75203-132">**Del**</span><span class="sxs-lookup"><span data-stu-id="75203-132">**Delete**</span></span>|<span data-ttu-id="75203-133">選択すると、選択した名前と値のペアを削除します。</span><span class="sxs-lookup"><span data-stu-id="75203-133">Select to delete the selected name-value pair.</span></span>|  
   
-3.  **送信ポート** ページで、次の操作を行います。  
+3.  <span data-ttu-id="75203-134">**送信ポート** ページで、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="75203-134">On the **Send Ports** page, do the following.</span></span>  
   
     > [!NOTE]
-    >  [!INCLUDE[prague](../includes/prague-md.md)] では、送信ポートの関連付けをアグリーメント レベルで行います。 **送信ポート**下位互換性は、パーティのプロパティの一部として使用可能なページです。 送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。 ただし、その逆は真ではありません。 送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。  
+    >  <span data-ttu-id="75203-135">[!INCLUDE[prague](../includes/prague-md.md)] では、送信ポートの関連付けをアグリーメント レベルで行います。</span><span class="sxs-lookup"><span data-stu-id="75203-135">In [!INCLUDE[prague](../includes/prague-md.md)], the send port association is done at the agreement level.</span></span> <span data-ttu-id="75203-136">**送信ポート**下位互換性は、パーティのプロパティの一部として使用可能なページです。</span><span class="sxs-lookup"><span data-stu-id="75203-136">The **Send Ports** page available as part of the party properties is purely for backward compatibility.</span></span> <span data-ttu-id="75203-137">送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。</span><span class="sxs-lookup"><span data-stu-id="75203-137">Whenever you associate a send port with an agreement, the send port setting is also propagated to the party setting and you can see the send port association in this page as well.</span></span> <span data-ttu-id="75203-138">ただし、その逆は真ではありません。</span><span class="sxs-lookup"><span data-stu-id="75203-138">However, the reverse is not true.</span></span> <span data-ttu-id="75203-139">送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="75203-139">You cannot associate a send port with a party and then have that send port be automatically available as part of the agreement settings.</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="75203-140">プロパティ</span><span class="sxs-lookup"><span data-stu-id="75203-140">Use this</span></span>|<span data-ttu-id="75203-141">目的</span><span class="sxs-lookup"><span data-stu-id="75203-141">To do this</span></span>|  
     |--------------|----------------|  
-    |**送信ポートの名前**|ドロップダウン リストから、このパーティにバインドする送信ポートを選択します。|  
-    |**送信ポートの URI**|送信ポートのアドレスを表示します。|  
-    |**[削除]**|選択した送信ポートをパーティから削除するを選択します。|  
-    |**プロパティ**|選択すると表示、**送信ポートのプロパティ**選択した送信ポートのダイアログ ボックス。|  
+    |<span data-ttu-id="75203-142">**送信ポートの名前**</span><span class="sxs-lookup"><span data-stu-id="75203-142">**Send ports - Name**</span></span>|<span data-ttu-id="75203-143">ドロップダウン リストから、このパーティにバインドする送信ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="75203-143">From the drop-down list, select a send port to bind to this party.</span></span>|  
+    |<span data-ttu-id="75203-144">**送信ポートの URI**</span><span class="sxs-lookup"><span data-stu-id="75203-144">**Send ports - URI**</span></span>|<span data-ttu-id="75203-145">送信ポートのアドレスを表示します。</span><span class="sxs-lookup"><span data-stu-id="75203-145">Displays the send port address.</span></span>|  
+    |<span data-ttu-id="75203-146">**[削除]**</span><span class="sxs-lookup"><span data-stu-id="75203-146">**Remove**</span></span>|<span data-ttu-id="75203-147">選択した送信ポートをパーティから削除するを選択します。</span><span class="sxs-lookup"><span data-stu-id="75203-147">Select to remove the selected send port from the party.</span></span>|  
+    |<span data-ttu-id="75203-148">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="75203-148">**Properties**</span></span>|<span data-ttu-id="75203-149">選択すると表示、**送信ポートのプロパティ**選択した送信ポートのダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="75203-149">Select to display the **Send Port Properties** dialog box for the selected send port.</span></span>|  
   
-4.  **証明書** ページで、次の操作します。  
+4.  <span data-ttu-id="75203-150">**証明書** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="75203-150">On the **Certificate** page, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="75203-151">プロパティ</span><span class="sxs-lookup"><span data-stu-id="75203-151">Use this</span></span>|<span data-ttu-id="75203-152">目的</span><span class="sxs-lookup"><span data-stu-id="75203-152">To do this</span></span>|  
     |--------------|----------------|  
-    |**参照**|表示するを選択して、**証明書の選択**ダイアログ ボックスで、パーティに送信されるメッセージに適用するローカル コンピューターまたはその他のユーザーの証明書ストアから署名証明書を選択します。|  
-    |**共通名**|選択した証明書の説明を表示します。|  
-    |**拇印**|パーティの解決および署名の確認に使用される秘密キー証明書の拇印を表示します。 証明書の拇印には、HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH、H は 16 進数字 (0 ~ 9 の数字) または a ~ F の文字の形式があります。|  
-    |**証明書を削除します。**|表示されている証明書の削除を選択します。|  
+    |<span data-ttu-id="75203-153">**参照**</span><span class="sxs-lookup"><span data-stu-id="75203-153">**Browse**</span></span>|<span data-ttu-id="75203-154">表示するを選択して、**証明書の選択**ダイアログ ボックスで、パーティに送信されるメッセージに適用するローカル コンピューターまたはその他のユーザーの証明書ストアから署名証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="75203-154">Select to display the **Select Certificate** dialog box, where you select the signature certificate from the Local Machine or Other People certificate store to apply to messages transmitted to the party.</span></span>|  
+    |<span data-ttu-id="75203-155">**共通名**</span><span class="sxs-lookup"><span data-stu-id="75203-155">**Common Name**</span></span>|<span data-ttu-id="75203-156">選択した証明書の説明を表示します。</span><span class="sxs-lookup"><span data-stu-id="75203-156">Displays a description of the selected certificate.</span></span>|  
+    |<span data-ttu-id="75203-157">**拇印**</span><span class="sxs-lookup"><span data-stu-id="75203-157">**Thumbprint**</span></span>|<span data-ttu-id="75203-158">パーティの解決および署名の確認に使用される秘密キー証明書の拇印を表示します。</span><span class="sxs-lookup"><span data-stu-id="75203-158">Displays the thumbprint of the private key certificate that is used for party resolution and signature verification.</span></span> <span data-ttu-id="75203-159">証明書の拇印には、HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH、H は 16 進数字 (0 ~ 9 の数字) または a ~ F の文字の形式があります。</span><span class="sxs-lookup"><span data-stu-id="75203-159">The certificate thumbprint has the format HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH, where H is a hexadecimal digit (a number from 0 through 9 or a letter from A through F).</span></span>|  
+    |<span data-ttu-id="75203-160">**証明書を削除します。**</span><span class="sxs-lookup"><span data-stu-id="75203-160">**Remove certificate**</span></span>|<span data-ttu-id="75203-161">表示されている証明書の削除を選択します。</span><span class="sxs-lookup"><span data-stu-id="75203-161">Select to remove the displayed certificate.</span></span>|  
   
-5.  選択**適用**、プロパティを受け入れるかを選択する**OK**構成設定を完了します。 どちらの操作を行った場合も、設定が有効になります。  
+5.  <span data-ttu-id="75203-162">選択**適用**、プロパティを受け入れるかを選択する**OK**構成設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="75203-162">Select **Apply** to accept the properties, or select **OK** to complete the configuration setting.</span></span> <span data-ttu-id="75203-163">どちらの操作を行った場合も、設定が有効になります。</span><span class="sxs-lookup"><span data-stu-id="75203-163">Either action will validate the settings</span></span>  
 
-### <a name="update-an-existing-party"></a>既存のパーティを更新します。
-パーティをロールに参加させ、ポートをバインドした後、次の操作を行うことができます。  
+### <a name="update-an-existing-party"></a><span data-ttu-id="75203-164">既存のパーティを更新します。</span><span class="sxs-lookup"><span data-stu-id="75203-164">Update an existing party</span></span>
+<span data-ttu-id="75203-165">パーティをロールに参加させ、ポートをバインドした後、次の操作を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="75203-165">After a party is enlisted to a role and the ports are bound, you can:</span></span>  
   
--   パーティの名前と説明を編集します。  
--   パーティの証明書を編集します。  
--   パーティがホストする組織かどうかを指定します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
+-   <span data-ttu-id="75203-166">パーティの名前と説明を編集します。</span><span class="sxs-lookup"><span data-stu-id="75203-166">Edit the party's name and description</span></span>  
+-   <span data-ttu-id="75203-167">パーティの証明書を編集します。</span><span class="sxs-lookup"><span data-stu-id="75203-167">Edit the party's certificate</span></span>  
+-   <span data-ttu-id="75203-168">パーティがホストする組織かどうかを指定します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]</span><span class="sxs-lookup"><span data-stu-id="75203-168">Specify whether the party is for the organization hosting [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]</span></span>
 
-1. **BizTalk Server 管理コンソール**を選択して**パーティ**です。
+1. <span data-ttu-id="75203-169">**BizTalk Server 管理コンソール**を選択して**パーティ**です。</span><span class="sxs-lookup"><span data-stu-id="75203-169">In **BizTalk Server Administration**, and select **Parties**.</span></span>
 
-2. **パーティとビジネス プロファイル**ウィンドウ、表示または編集するパーティを右クリックして、選択**プロパティ**です。  
+2. <span data-ttu-id="75203-170">**パーティとビジネス プロファイル**ウィンドウ、表示または編集するパーティを右クリックして、選択**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="75203-170">In the **Parties and Business Profiles** pane, right-click the party you want to view or edit, and then select **Properties**.</span></span>  
 
-3. 表示またはプロパティを編集します。 
+3. <span data-ttu-id="75203-171">表示またはプロパティを編集します。</span><span class="sxs-lookup"><span data-stu-id="75203-171">View or edit the properties.</span></span> 
 
-4. 選択**適用**、プロパティを受け入れるかを選択する**OK**構成設定を完了します。 どちらの操作は、設定を検証します。  
+4. <span data-ttu-id="75203-172">選択**適用**、プロパティを受け入れるかを選択する**OK**構成設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="75203-172">Select **Apply** to accept the properties, or select **OK** to complete the configuration setting.</span></span> <span data-ttu-id="75203-173">どちらの操作は、設定を検証します。</span><span class="sxs-lookup"><span data-stu-id="75203-173">Either action validate the settings.</span></span>  
 
-## <a name="delete-a-party"></a>パーティを削除する
-使用してパーティを削除、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
+## <a name="delete-a-party"></a><span data-ttu-id="75203-174">パーティを削除する</span><span class="sxs-lookup"><span data-stu-id="75203-174">Delete a party</span></span>
+<span data-ttu-id="75203-175">使用してパーティを削除、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="75203-175">Delete the party using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
   
 > [!IMPORTANT]
->  ロールに参加しているパーティは削除できません。 パーティを削除する前に、そのパーティが参加しているすべてのロールから参加を解除する必要があります。 参照してください[参加させる、またはロールに対してパーティを参加解除方法](../core/how-to-enlist-or-unenlist-a-party-for-a-role.md)です。 
+>  <span data-ttu-id="75203-176">ロールに参加しているパーティは削除できません。</span><span class="sxs-lookup"><span data-stu-id="75203-176">You can only delete a party that is not enlisted in a role.</span></span> <span data-ttu-id="75203-177">パーティを削除する前に、そのパーティが参加しているすべてのロールから参加を解除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="75203-177">Before you can delete a party, you must first un-enlist it from any of the roles where it is enlisted.</span></span> <span data-ttu-id="75203-178">参照してください[参加させる、またはロールに対してパーティを参加解除方法](../core/how-to-enlist-or-unenlist-a-party-for-a-role.md)です。</span><span class="sxs-lookup"><span data-stu-id="75203-178">See [How to Enlist or Unenlist a Party for a Role](../core/how-to-enlist-or-unenlist-a-party-for-a-role.md).</span></span> 
 
-1. **BizTalk Server 管理コンソール****パーティ**を削除し、選択するパーティを右クリックして**削除**です。  
+1. <span data-ttu-id="75203-179">**BizTalk Server 管理コンソール****パーティ**を削除し、選択するパーティを右クリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="75203-179">In **BizTalk Server Administration**, select **Parties**, right-click the party you want to delete, and then select **Delete**.</span></span>  
   
-2.  **パーティ削除の確認**ダイアログ ボックスで、**はい**パーティを削除します。  
+2.  <span data-ttu-id="75203-180">**パーティ削除の確認**ダイアログ ボックスで、**はい**パーティを削除します。</span><span class="sxs-lookup"><span data-stu-id="75203-180">In the **Confirm delete party** dialog box, select **Yes** to delete the party.</span></span>  
 
-## <a name="search-for-a-party"></a>パーティの検索
-使用することができます、多数のパーティを作成した場合、**検索**オプションを表示するパーティを表示します。  
+## <a name="search-for-a-party"></a><span data-ttu-id="75203-181">パーティの検索</span><span class="sxs-lookup"><span data-stu-id="75203-181">Search for a party</span></span>
+<span data-ttu-id="75203-182">使用することができます、多数のパーティを作成した場合、**検索**オプションを表示するパーティを表示します。</span><span class="sxs-lookup"><span data-stu-id="75203-182">If you have a large number of parties created, you can use the **Search** option to  display the parties that you want to see.</span></span>  
 
-1. **BizTalk Server 管理コンソール****パーティ**です。
+1. <span data-ttu-id="75203-183">**BizTalk Server 管理コンソール****パーティ**です。</span><span class="sxs-lookup"><span data-stu-id="75203-183">In **BizTalk Server Administration**, select **Parties**.</span></span>
 
-3.  **パーティとビジネス プロファイル**ペインの右上隅の上に検索文字列を入力してください、**検索パーティ**テキスト ボックス、および検索アイコンを選択します。 Enter キーを押して検索を開始することもできます。  
+3.  <span data-ttu-id="75203-184">**パーティとビジネス プロファイル**ペインの右上隅の上に検索文字列を入力してください、**検索パーティ**テキスト ボックス、および検索アイコンを選択します。</span><span class="sxs-lookup"><span data-stu-id="75203-184">In the **Parties and Business Profiles** pane, towards the top right corner, enter a search string in the **Search Party** text box, and select the search icon.</span></span> <span data-ttu-id="75203-185">Enter キーを押して検索を開始することもできます。</span><span class="sxs-lookup"><span data-stu-id="75203-185">You can also press ENTER to start the search.</span></span>  
   
-     検索時には次の点を考慮してください。  
+     <span data-ttu-id="75203-186">検索時には次の点を考慮してください。</span><span class="sxs-lookup"><span data-stu-id="75203-186">You must consider the following points while using search:</span></span>  
   
-    -   検索文字列と小文字は区別されません。
+    -   <span data-ttu-id="75203-187">検索文字列と小文字は区別されません。</span><span class="sxs-lookup"><span data-stu-id="75203-187">The search string is not case-sensitive</span></span>
   
-    -   名前 (サブ文字列の検索) 内のテキストを検索することができます。 たとえば、'ar' を検索した場合は、検索文字列で始まるパーティ (Artist など) または名前に検索文字列が含まれているパーティ (Party1 など) が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールに表示されます。  
+    -   <span data-ttu-id="75203-188">名前 (サブ文字列の検索) 内のテキストを検索することができます。</span><span class="sxs-lookup"><span data-stu-id="75203-188">You can search for text within the name (sub-string search).</span></span> <span data-ttu-id="75203-189">たとえば、'ar' を検索した場合は、検索文字列で始まるパーティ (Artist など) または名前に検索文字列が含まれているパーティ (Party1 など) が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールに表示されます。</span><span class="sxs-lookup"><span data-stu-id="75203-189">For example, if you search for ‘ar’, the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console displays the parties that either start with the search string (e.g. Artist) or the parties that have the search string in their name (e.g. Party1).</span></span>  
   
-    -   検索操作は、パーティ名に制限されます。  
+    -   <span data-ttu-id="75203-190">検索操作は、パーティ名に制限されます。</span><span class="sxs-lookup"><span data-stu-id="75203-190">The search operation is limited to party names.</span></span>  
   
-4.  検索結果をクリアするには、検索テキスト ボックスの横にある赤い 'x' を選択します。  
+4.  <span data-ttu-id="75203-191">検索結果をクリアするには、検索テキスト ボックスの横にある赤い 'x' を選択します。</span><span class="sxs-lookup"><span data-stu-id="75203-191">To clear the search results, select the red 'x' next to the search text box.</span></span>  
   
-## <a name="see-also"></a>参照  
- [ロール リンクの管理](../core/managing-role-links.md)   
- [パーティの解決パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-party-resolution-pipeline-component.md)  
- [EDI および AS2 ソリューションの管理](../core/managing-edi-and-as2-solutions.md)
+## <a name="see-also"></a><span data-ttu-id="75203-192">参照</span><span class="sxs-lookup"><span data-stu-id="75203-192">See Also</span></span>  
+ <span data-ttu-id="75203-193">[ロール リンクの管理](../core/managing-role-links.md) </span><span class="sxs-lookup"><span data-stu-id="75203-193">[Managing Role Links](../core/managing-role-links.md) </span></span>  
+ [<span data-ttu-id="75203-194">パーティの解決パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="75203-194">How to Configure the Party Resolution Pipeline Component</span></span>](../core/how-to-configure-the-party-resolution-pipeline-component.md)  
+ [<span data-ttu-id="75203-195">EDI および AS2 ソリューションの管理</span><span class="sxs-lookup"><span data-stu-id="75203-195">Managing EDI and AS2 Solutions</span></span>](../core/managing-edi-and-as2-solutions.md)

@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="business-process-management-solution-reference"></a>ビジネス プロセス管理ソリューション リファレンス
-このセクションでは、ソリューションに使用されるファイルの一覧とオーケストレーションで使用されるメッセージの一覧を提供します。  
+# <a name="business-process-management-solution-reference"></a><span data-ttu-id="76b8e-102">ビジネス プロセス管理ソリューション リファレンス</span><span class="sxs-lookup"><span data-stu-id="76b8e-102">Business Process Management Solution Reference</span></span>
+<span data-ttu-id="76b8e-103">このセクションでは、ソリューションに使用されるファイルの一覧とオーケストレーションで使用されるメッセージの一覧を提供します。</span><span class="sxs-lookup"><span data-stu-id="76b8e-103">This section provides lists of the files in the solution and the messages in the orchestrations.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="76b8e-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="76b8e-104">In This Section</span></span>  
   
--   [ビジネス プロセス管理ソリューションのファイル一覧](../core/file-inventory-for-the-business-process-management-solution.md)  
+-   [<span data-ttu-id="76b8e-105">ビジネス プロセス管理ソリューションのファイル一覧</span><span class="sxs-lookup"><span data-stu-id="76b8e-105">File Inventory for the Business Process Management Solution</span></span>](../core/file-inventory-for-the-business-process-management-solution.md)  
   
--   [ビジネス プロセス管理ソリューションのメッセージ リファレンス](../core/message-reference-for-the-business-process-management-solution.md)
+-   [<span data-ttu-id="76b8e-106">ビジネス プロセス管理ソリューションのメッセージ リファレンス</span><span class="sxs-lookup"><span data-stu-id="76b8e-106">Message Reference for the Business Process Management Solution</span></span>](../core/message-reference-for-the-business-process-management-solution.md)

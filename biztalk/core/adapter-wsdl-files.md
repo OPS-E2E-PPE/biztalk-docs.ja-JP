@@ -18,12 +18,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="adapter-wsdl-files"></a>アダプター WSDL ファイル
-Web サービス記述言語 (WSDL) ファイルの選択し、では、入力アダプター メタデータの追加ウィザードで、 **インポートするサービス**ページ。 ウィザードは、サービスによって公開され、ユーザーが選択した WSDL ファイルを読み取ります。 その後、XSD ファイルとオーケストレーションを作成して BizTalk プロジェクトに追加します。  
+# <a name="adapter-wsdl-files"></a><span data-ttu-id="ad2d3-102">アダプター WSDL ファイル</span><span class="sxs-lookup"><span data-stu-id="ad2d3-102">Adapter WSDL Files</span></span>
+<span data-ttu-id="ad2d3-103">Web サービス記述言語 (WSDL) ファイルの選択し、では、入力アダプター メタデータの追加ウィザードで、 **インポートするサービス**ページ。</span><span class="sxs-lookup"><span data-stu-id="ad2d3-103">In the Add Adapter Metadata Wizard the Web Services Description Language (WSDL) file is selected and input on the **Select Services to Import** page.</span></span> <span data-ttu-id="ad2d3-104">ウィザードは、サービスによって公開され、ユーザーが選択した WSDL ファイルを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="ad2d3-104">The wizard reads the WSDL files exposed by the service and selected by the user.</span></span> <span data-ttu-id="ad2d3-105">その後、XSD ファイルとオーケストレーションを作成して BizTalk プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="ad2d3-105">It then creates and adds an XSD file and an orchestration in the BizTalk project.</span></span>  
   
- サンプル ファイル アダプターでは、Service1.wsdl ファイルに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がプロジェクトに追加する XSD 定義が含まれています。 Service1.wsdl ファイルを変更することも、BizTalk プロジェクトに追加する XSD 定義を含む独自の WSDL ファイルを作成することもできます。  
+ <span data-ttu-id="ad2d3-106">サンプル ファイル アダプターでは、Service1.wsdl ファイルに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がプロジェクトに追加する XSD 定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ad2d3-106">In the sample file adapter, the Service1.wsdl file contains the XSD definitions that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adds to the project.</span></span> <span data-ttu-id="ad2d3-107">Service1.wsdl ファイルを変更することも、BizTalk プロジェクトに追加する XSD 定義を含む独自の WSDL ファイルを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="ad2d3-107">You may choose to modify the Service1.wsdl file or create your own WSDL file that contains the XSD definitions to add to your BizTalk project.</span></span>  
   
- 次のコードは、Service1.wsdl ファイルの一部です。  
+ <span data-ttu-id="ad2d3-108">次のコードは、Service1.wsdl ファイルの一部です。</span><span class="sxs-lookup"><span data-stu-id="ad2d3-108">The following code is from the Service1.wsdl file:</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

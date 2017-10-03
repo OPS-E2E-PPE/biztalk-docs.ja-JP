@@ -18,25 +18,25 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="the-as2-decoder-failed-processing-because-the-mdn-signing-did-not-match-our-request"></a>MDN の署名が要求と一致しなかったため、AS2 デコーダーの処理は失敗しました
-## <a name="details"></a>詳細  
+# <a name="the-as2-decoder-failed-processing-because-the-mdn-signing-did-not-match-our-request"></a><span data-ttu-id="43487-102">MDN の署名が要求と一致しなかったため、AS2 デコーダーの処理は失敗しました</span><span class="sxs-lookup"><span data-stu-id="43487-102">The AS2 Decoder failed processing because the MDN signing did not match our request</span></span>
+## <a name="details"></a><span data-ttu-id="43487-103">詳細</span><span class="sxs-lookup"><span data-stu-id="43487-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|AS2 エンジン|  
-|シンボル名|AS2DecoderMdnSigningMismatchFailureDuringProcessing|  
-|メッセージ テキスト|MDN の署名が要求と一致しなかったため、AS2 デコーダの処理は失敗しました。  MDN メッセージの詳細は次のとおり: AS2-から:"{0}"AS2-を:「\ 」MessageID:「\ {2 \}」OriginalMessageID:「\ {3\}」|  
+|<span data-ttu-id="43487-104">製品名</span><span class="sxs-lookup"><span data-stu-id="43487-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="43487-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="43487-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|<span data-ttu-id="43487-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="43487-106">Event ID</span></span>|-|  
+|<span data-ttu-id="43487-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="43487-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="43487-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="43487-108"> EDI</span></span>|  
+|<span data-ttu-id="43487-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="43487-109">Component</span></span>|<span data-ttu-id="43487-110">AS2 エンジン</span><span class="sxs-lookup"><span data-stu-id="43487-110">AS2 Engine</span></span>|  
+|<span data-ttu-id="43487-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="43487-111">Symbolic Name</span></span>|<span data-ttu-id="43487-112">AS2DecoderMdnSigningMismatchFailureDuringProcessing</span><span class="sxs-lookup"><span data-stu-id="43487-112">AS2DecoderMdnSigningMismatchFailureDuringProcessing</span></span>|  
+|<span data-ttu-id="43487-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="43487-113">Message Text</span></span>|<span data-ttu-id="43487-114">MDN の署名が要求と一致しなかったため、AS2 デコーダの処理は失敗しました。</span><span class="sxs-lookup"><span data-stu-id="43487-114">The AS2 Decoder failure processing because the MDN signing did not match our request.</span></span>  <span data-ttu-id="43487-115">MDN メッセージの詳細は次のとおり: AS2-から:"{0}"AS2-を:「\ 」MessageID:「\ {2 \}」OriginalMessageID:「\ {3\}」</span><span class="sxs-lookup"><span data-stu-id="43487-115">Details of the MDN message are as follows:  AS2-From:"{0}" AS2-To:"{1}" MessageID:"{2}" OriginalMessageID:"{3}"</span></span>|  
   
-## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、MDN は署名されていたが、署名が要求されていなかったか、または MDN は署名されていなかったが、署名が要求されていたため、受信パイプラインが受信 MDN を処理できなかったことを示します。  
+## <a name="explanation"></a><span data-ttu-id="43487-116">説明</span><span class="sxs-lookup"><span data-stu-id="43487-116">Explanation</span></span>  
+ <span data-ttu-id="43487-117">このエラー/警告/情報イベントは、MDN は署名されていたが、署名が要求されていなかったか、または MDN は署名されていなかったが、署名が要求されていたため、受信パイプラインが受信 MDN を処理できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="43487-117">This Error/Warning/Information event indicates that the receive pipeline could not process the incoming MDN either because the MDN was signed, but signing wasn't requested for the MDN, or the MDN was unsigned, but signing was requested for the MDN.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、次のいずれかの操作を行います。  
+## <a name="user-action"></a><span data-ttu-id="43487-118">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="43487-118">User Action</span></span>  
+ <span data-ttu-id="43487-119">このエラーを解決するには、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="43487-119">To resolve this error, do one of the following:</span></span>  
   
-1.  MDN に対する署名要求を要求に合わせて変更します。 そのためには、[AS2 のプロパティ] ダイアログ ボックスの [パーティ - AS2 メッセージの受信者] ページを開き、[MDN の要求] プロパティをオンにして、[署名付き MDN を要求する] プロパティをオンまたはオフにします。  
+1.  <span data-ttu-id="43487-120">MDN に対する署名要求を要求に合わせて変更します。</span><span class="sxs-lookup"><span data-stu-id="43487-120">Change the signature request for the MDN to match the request.</span></span> <span data-ttu-id="43487-121">そのためには、[AS2 のプロパティ] ダイアログ ボックスの [パーティ - AS2 メッセージの受信者] ページを開き、[MDN の要求] プロパティをオンにして、[署名付き MDN を要求する] プロパティをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="43487-121">To do so, open the Party as AS2 Message Receiver page of the AS2 Properties dialog box, and with the "Request MDN" property selected, either select or clear the "Request signed MDN" property.</span></span>  
   
-2.  元の AS2 メッセージの受信者に連絡し、MDN に署名が必要かどうかについて解決します。
+2.  <span data-ttu-id="43487-122">元の AS2 メッセージの受信者に連絡し、MDN に署名が必要かどうかについて解決します。</span><span class="sxs-lookup"><span data-stu-id="43487-122">Contact the receiver of the original AS2 message to resolve whether MDNs should be signed or not.</span></span>

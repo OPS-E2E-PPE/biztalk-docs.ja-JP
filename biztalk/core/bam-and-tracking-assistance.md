@@ -21,13 +21,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="bam-and-tracking-assistance"></a>BAM と追跡サポート
-クリックして BAM ポータルによるアシスタンスを要求することができます、**アシスタンス**アクティビティの状態 ページでボタンをクリックします。  
+# <a name="bam-and-tracking-assistance"></a><span data-ttu-id="1a78c-102">BAM と追跡サポート</span><span class="sxs-lookup"><span data-stu-id="1a78c-102">BAM and Tracking Assistance</span></span>
+<span data-ttu-id="1a78c-103">クリックして BAM ポータルによるアシスタンスを要求することができます、**アシスタンス**アクティビティの状態 ページでボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="1a78c-103">You can request assistance through the BAM portal by clicking the **Assistance** button on the Activity Status page.</span></span>  
   
- サポート要求はアプリケーション イベント ログに記録されます。 イベントのソースは BAM Web サービスであり、イベント ID は 1000 になります。  
+ <span data-ttu-id="1a78c-104">サポート要求はアプリケーション イベント ログに記録されます。</span><span class="sxs-lookup"><span data-stu-id="1a78c-104">The assistance request is placed in the Application Event log.</span></span> <span data-ttu-id="1a78c-105">イベントのソースは BAM Web サービスであり、イベント ID は 1000 になります。</span><span class="sxs-lookup"><span data-stu-id="1a78c-105">The source for the requests is the BAM Web service and the Event ID is 1000.</span></span>  
   
- [説明] フィールドのメッセージ本文には、要求の件名、問題の説明、BizTalk サービス インスタンス ID、メッセージ ID、BizTalk 管理データベース サーバー名、および BizTalk 管理データベース名が含まれます。  
+ <span data-ttu-id="1a78c-106">[説明] フィールドのメッセージ本文には、要求の件名、問題の説明、BizTalk サービス インスタンス ID、メッセージ ID、BizTalk 管理データベース サーバー名、および BizTalk 管理データベース名が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1a78c-106">The message body is in the Description field and contains the subject of the request, the text of the problem description, the BizTalk service instance ID, the message ID, the BizTalk Management database server, and the BizTalk Management Database name.</span></span>  
   
-## <a name="see-also"></a>参照  
- [BizTalk Server の監視](../core/monitoring-biztalk-server.md)   
- [アシスタンスを要求します。](../core/request-assistance.md)
+## <a name="see-also"></a><span data-ttu-id="1a78c-107">参照</span><span class="sxs-lookup"><span data-stu-id="1a78c-107">See Also</span></span>  
+ <span data-ttu-id="1a78c-108">[BizTalk Server の監視](../core/monitoring-biztalk-server.md) </span><span class="sxs-lookup"><span data-stu-id="1a78c-108">[Monitoring BizTalk Server](../core/monitoring-biztalk-server.md) </span></span>  
+ [<span data-ttu-id="1a78c-109">アシスタンスを要求します。</span><span class="sxs-lookup"><span data-stu-id="1a78c-109">Request Assistance</span></span>](../core/request-assistance.md)

@@ -21,62 +21,62 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a>手順 7: ビルドと LOBWebApplication SDK サンプルの展開
-ここでは、Fabrikam が PIP (Partner Interface Process) 要求を Contoso に送信するために使用する基幹業務 (LOB) アプリケーションを作成します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK フォルダーに LOBWebApplication プロジェクトがあります。 Web アプリケーションを実行するためには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成した後で、LOBWebApplication プロジェクトをビルドする必要があります。  
+# <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a><span data-ttu-id="5ce3c-102">手順 7: ビルドと LOBWebApplication SDK サンプルの展開</span><span class="sxs-lookup"><span data-stu-id="5ce3c-102">Step 7: Building and Deploying the LOBWebApplication SDK Sample</span></span>
+<span data-ttu-id="5ce3c-103">ここでは、Fabrikam が PIP (Partner Interface Process) 要求を Contoso に送信するために使用する基幹業務 (LOB) アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-103">In this step, you create the line-of-business (LOB) application that Fabrikam uses to submit Partner Interface Process (PIP) requests to Contoso.</span></span> <span data-ttu-id="5ce3c-104">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK フォルダーに LOBWebApplication プロジェクトがあります。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-104">You can find the LOBWebApplication project in the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK folder.</span></span> <span data-ttu-id="5ce3c-105">Web アプリケーションを実行するためには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成した後で、LOBWebApplication プロジェクトをビルドする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-105">To run the Web application, you have to create a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Information Services (IIS) virtual directory, and then build the LOBWebApplication project.</span></span>  
   
-### <a name="to-create-the-lobwebapplication-virtual-directory"></a>LOBWebApplication 仮想ディレクトリを作成するには  
+### <a name="to-create-the-lobwebapplication-virtual-directory"></a><span data-ttu-id="5ce3c-106">LOBWebApplication 仮想ディレクトリを作成するには</span><span class="sxs-lookup"><span data-stu-id="5ce3c-106">To create the LOBWebApplication virtual directory</span></span>  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
+1.  <span data-ttu-id="5ce3c-107">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.</span><span class="sxs-lookup"><span data-stu-id="5ce3c-107">Click **Start**, point to **All Programs**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-2.  インターネット インフォメーション サービス マネージャー ウィンドウで、 **< computer_name > (ローカル コンピューター)**、順に展開**Websites**です。  
+2.  <span data-ttu-id="5ce3c-108">インターネット インフォメーション サービス マネージャー ウィンドウで、 **< computer_name > (ローカル コンピューター)**、順に展開**Websites**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-108">In the Internet Information Services Manager window, expand **<computer_name> (local computer)**, and then expand **Web Sites**.</span></span>  
   
-3.  右クリック**既定の Web サイト**、 をポイント**新規**、クリックして**仮想ディレクトリ**です。  
+3.  <span data-ttu-id="5ce3c-109">右クリック**既定の Web サイト**、 をポイント**新規**、クリックして**仮想ディレクトリ**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-109">Right-click **Default Web Site**, point to **New**, and then click **Virtual Directory**.</span></span>  
   
-4.  **Welcometo 仮想ディレクトリの作成ウィザード**] ページで [**次**です。  
+4.  <span data-ttu-id="5ce3c-110">**Welcometo 仮想ディレクトリの作成ウィザード**] ページで [**次**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-110">On the **Welcometo the Virtual Directory Creation Wizard** page, click **Next**.</span></span>  
   
-5.  **仮想ディレクトリ エイリアス**] ページの [、**エイリアス**ボックスに、入力**LOBWebApplication**、順にクリック**次**です。  
+5.  <span data-ttu-id="5ce3c-111">**仮想ディレクトリ エイリアス**] ページの [、**エイリアス**ボックスに、入力**LOBWebApplication**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-111">On the **Virtual Directory Alias** page, in the **Alias** box, type **LOBWebApplication**, and then click **Next**.</span></span>  
   
-6.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**です。 フォルダーの参照 ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobwebapplication**、およびをクリックして**OK**です。 **[次へ]**をクリックします。  
+6.  <span data-ttu-id="5ce3c-112">**Web サイトのコンテンツのディレクトリ**] ページで [**参照**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-112">On the **Web Site Content Directory** page, click **Browse**.</span></span> <span data-ttu-id="5ce3c-113">フォルダーの参照 ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobwebapplication**、およびをクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-113">In the Browse For Folder dialog box, move to ***\<drive>*:\Program Files\Microsoft BizTalk \<version> Accelerator for RosettaNet\SDK\LOBWebApplication**, and then click **OK**.</span></span> <span data-ttu-id="5ce3c-114">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-114">Click **Next**.</span></span>  
   
-7.  **仮想ディレクトリのアクセス許可**] ページで、選択を解除**読み取り**[ **(ASP) などのスクリプトを実行**、順にクリック**[次へ]**です。  
+7.  <span data-ttu-id="5ce3c-115">**仮想ディレクトリのアクセス許可**] ページで、選択を解除**読み取り**[ **(ASP) などのスクリプトを実行**、順にクリック**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-115">On the **Virtual Directory Access Permissions** page, deselect **Read**, select **Run scripts (such as ASP)**, and then click **Next**.</span></span>  
   
-8.  **仮想ディレクトリの作成ウィザードを正常に完了しました** ページで、をクリックして**完了**仮想ディレクトリを作成します。  
+8.  <span data-ttu-id="5ce3c-116">**仮想ディレクトリの作成ウィザードを正常に完了しました** ページで、をクリックして**完了**仮想ディレクトリを作成します。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-116">On the **You have successfully completed the Virtual Directory Creation Wizard** page, click **Finish** to create the virtual directory.</span></span>  
   
-### <a name="to-exclude-the-lobwebapplication-web-site-from-the-sharepoint-configuration"></a>SharePoint 構成から LOBWebApplication Web サイトを除外するには  
+### <a name="to-exclude-the-lobwebapplication-web-site-from-the-sharepoint-configuration"></a><span data-ttu-id="5ce3c-117">SharePoint 構成から LOBWebApplication Web サイトを除外するには</span><span class="sxs-lookup"><span data-stu-id="5ce3c-117">To exclude the LOBWebApplication Web site from the SharePoint configuration</span></span>  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリック**SharePoint サーバーの全体管理**です。  
+1.  <span data-ttu-id="5ce3c-118">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリック**SharePoint サーバーの全体管理**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-118">Click **Start**, point to **All Programs**, point to **Administrative Tools**, and then click **SharePoint Central Administration**.</span></span>  
   
-2.  **サーバーの全体管理**Web ページの**仮想サーバーの構成**セクションで、**拡張またはアップグレードの virtual server**です。  
+2.  <span data-ttu-id="5ce3c-119">**サーバーの全体管理**Web ページの**仮想サーバーの構成**セクションで、**拡張またはアップグレードの virtual server**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-119">On the **Central Administration** Web page, in the **Virtual Server Configuration** section, select **Extend or upgrade virtual server**.</span></span>  
   
-3.  コンピューターで構成されている URL が表示されない場合にクリックして**完全な一覧**です。  
+3.  <span data-ttu-id="5ce3c-120">コンピューターで構成されている URL が表示されない場合にクリックして**完全な一覧**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-120">If you do not see the URL configured on the computer, click **Complete list**.</span></span>  
   
-4.  **仮想サーバーのリスト**] ページで、[ **Default Web Site**です。  
+4.  <span data-ttu-id="5ce3c-121">**仮想サーバーのリスト**] ページで、[ **Default Web Site**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-121">On the **Virtual Server List** page, select **Default Web Site**.</span></span>  
   
-5.  **仮想サーバーの管理**セクションで、**管理パスの定義**です。  
+5.  <span data-ttu-id="5ce3c-122">**仮想サーバーの管理**セクションで、**管理パスの定義**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-122">In the **Virtual Server Management** section, click **Define managed paths**.</span></span>  
   
-6.  **新しいパスの追加**セクションで、**パス**ボックスに、入力**/LOBWebApplication**です。  
+6.  <span data-ttu-id="5ce3c-123">**新しいパスの追加**セクションで、**パス**ボックスに、入力**/LOBWebApplication**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-123">In the **Add New Path** section, in the **Path** box, type **/LOBWebApplication**.</span></span>  
   
-7.  **型**を選択**エクスクルード パス**、順にクリック**OK**です。  
+7.  <span data-ttu-id="5ce3c-124">**型**を選択**エクスクルード パス**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-124">For **Type**, select **Excluded Path**, and then click **OK**.</span></span>  
   
-### <a name="to-build-the-lobwebapplication-project"></a>LOBWebApplication プロジェクトをビルドするには  
+### <a name="to-build-the-lobwebapplication-project"></a><span data-ttu-id="5ce3c-125">LOBWebApplication プロジェクトをビルドするには</span><span class="sxs-lookup"><span data-stu-id="5ce3c-125">To build the LOBWebApplication project</span></span>  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Visual Studio 2008**、順にクリック**Microsoft Visual Studio 2008**です。  
+1.  <span data-ttu-id="5ce3c-126">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Visual Studio 2008**、順にクリック**Microsoft Visual Studio 2008**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-126">Click **Start**, point to **All Programs**, point to **Microsoft Visual Studio 2008**, and then click **Microsoft Visual Studio 2008**.</span></span>  
   
-2.  **[ファイル]** メニューの **[開く]**をポイントし、 **[プロジェクト/ソリューション]**をクリックします。  
+2.  <span data-ttu-id="5ce3c-127">**[ファイル]** メニューの **[開く]**をポイントし、 **[プロジェクト/ソリューション]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-127">On the **File** menu, point to **Open**, and then click **Project/Solution**.</span></span>  
   
-3.  プロジェクトを開く ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobwebapplication**を選択**LOBWebApplication.sln**ソリューション ファイル、およびクリック**開く**です。  
+3.  <span data-ttu-id="5ce3c-128">プロジェクトを開く ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobwebapplication**を選択**LOBWebApplication.sln**ソリューション ファイル、およびクリック**開く**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-128">In the Open Project dialog box, move to ***\<drive>*:\Program Files\Microsoft BizTalk \<version> Accelerator for RosettaNet\SDK\LOBWebApplication**, select the **LOBWebApplication.sln** solution file, and then click **Open**.</span></span>  
   
-4.  ソリューション エクスプ ローラーで右クリック**http://localhost/LOBWebApplication**、クリックして**参照の追加**です。  
+4.  <span data-ttu-id="5ce3c-129">ソリューション エクスプ ローラーで右クリック**http://localhost/LOBWebApplication**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-129">In Solution Explorer, right-click **http://localhost/LOBWebApplication**, and then click **Add Reference**.</span></span>  
   
-5.  [参照の追加] ダイアログ ボックスで、**参照**です。 [参照の追加] ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \bin**フォルダーです。  
+5.  <span data-ttu-id="5ce3c-130">[参照の追加] ダイアログ ボックスで、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-130">In the Add Reference dialog box, click **Browse**.</span></span> <span data-ttu-id="5ce3c-131">[参照の追加] ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \bin**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-131">In the Add Reference dialog box, move to ***\<drive>*:\Program Files\Microsoft BizTalk \<version> Accelerator for RosettaNet\Bin** folder.</span></span>  
   
-6.  Bin フォルダーから次のように選択します。、 **Microsoft.Solutions.BTARN.ConfigurationManager.dll**と**Microsoft.Solutions.BTARN.Shared.dll**アセンブリ、およびクリック**開きます。**  
+6.  <span data-ttu-id="5ce3c-132">Bin フォルダーから次のように選択します。、 **Microsoft.Solutions.BTARN.ConfigurationManager.dll**と**Microsoft.Solutions.BTARN.Shared.dll**アセンブリ、およびクリック**開きます。**</span><span class="sxs-lookup"><span data-stu-id="5ce3c-132">From the Bin folder, select the **Microsoft.Solutions.BTARN.ConfigurationManager.dll** and **Microsoft.Solutions.BTARN.Shared.dll** assemblies, and then click **Open.**</span></span>  
   
-7.  をクリックして**OK**を閉じる、**参照の追加** ダイアログ ボックス。  
+7.  <span data-ttu-id="5ce3c-133">をクリックして**OK**を閉じる、**参照の追加** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-133">Click **OK** to close the **Add Reference** dialog box.</span></span>  
   
-8.  ソリューション エクスプ ローラーで右クリック**ソリューション 'LOBWebApplication'**  をクリックし、**ソリューションのビルド**です。  
+8.  <span data-ttu-id="5ce3c-134">ソリューション エクスプ ローラーで右クリック**ソリューション 'LOBWebApplication'**  をクリックし、**ソリューションのビルド**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-134">In Solution Explorer, right-click **Solution 'LOBWebApplication'** and then click **Build Solution**.</span></span>  
   
-9. 右クリック**default.aspx**、クリックして**スタート ページとして設定**です。  
+9. <span data-ttu-id="5ce3c-135">右クリック**default.aspx**、クリックして**スタート ページとして設定**です。</span><span class="sxs-lookup"><span data-stu-id="5ce3c-135">Right-click **default.aspx**, and then click **Set as Start Page**.</span></span>  
   
-## <a name="see-also"></a>参照  
- [ダブル アクション チュートリアルのテスト](../../adapters-and-accelerators/accelerator-rosettanet/testing-the-double-action-tutorial.md)
+## <a name="see-also"></a><span data-ttu-id="5ce3c-136">参照</span><span class="sxs-lookup"><span data-stu-id="5ce3c-136">See Also</span></span>  
+ [<span data-ttu-id="5ce3c-137">ダブル アクション チュートリアルのテスト</span><span class="sxs-lookup"><span data-stu-id="5ce3c-137">Testing the Double Action Tutorial</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/testing-the-double-action-tutorial.md)

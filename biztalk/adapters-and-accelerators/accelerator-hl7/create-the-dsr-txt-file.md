@@ -18,12 +18,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="create-the-dsrtxt-file"></a>DSR.txt ファイルを作成します。
-応答 DSR.txt メッセージ ファイルを作成するのにには、次の手順を使用します。 チュートリアルのシナリオを確認するのに、このファイルを後で使用されます。  
+# <a name="create-the-dsrtxt-file"></a><span data-ttu-id="8f397-102">DSR.txt ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="8f397-102">Create the DSR.txt File</span></span>
+<span data-ttu-id="8f397-103">応答 DSR.txt メッセージ ファイルを作成するのにには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="8f397-103">Use the following procedure to create the response DSR.txt message file.</span></span> <span data-ttu-id="8f397-104">チュートリアルのシナリオを確認するのに、このファイルを後で使用されます。</span><span class="sxs-lookup"><span data-stu-id="8f397-104">You will use this file later to verify the tutorial scenario.</span></span>  
   
-### <a name="to-create-the-dsrtxt-file"></a>DSR.txt ファイルを作成するには  
+### <a name="to-create-the-dsrtxt-file"></a><span data-ttu-id="8f397-105">DSR.txt ファイルを作成するには</span><span class="sxs-lookup"><span data-stu-id="8f397-105">To create the DSR.txt file</span></span>  
   
-1.  メモ帳などのエディターを開き、次のテキストをエディターにコピーします。  
+1.  <span data-ttu-id="8f397-106">メモ帳などのエディターを開き、次のテキストをエディターにコピーします。</span><span class="sxs-lookup"><span data-stu-id="8f397-106">Open an editor, such as Notepad, and copy the following text into the editor:</span></span>  
   
     ```  
     MSH|^~\&|HIS||ADT||19990505||DSR^Q01|ZXT23469|P|2.4  
@@ -39,6 +39,6 @@ ms.lasthandoff: 09/20/2017
     DSP|||CO2 25 [20-30] MEQ/L STAT|LB  
     ```  
   
-2.  ファイルに保存**DSR.txt**で、 \<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative Tutorial フォルダー、および閉じエディター。  
+2.  <span data-ttu-id="8f397-107">ファイルに保存**DSR.txt**で、 \<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative Tutorial フォルダー、および閉じエディター。</span><span class="sxs-lookup"><span data-stu-id="8f397-107">Save the file as **DSR.txt** in the \<*drive*:>\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\Interrogative Tutorial folder, and then close the editor.</span></span>  
   
- 進みます[手順 1: 一般的なヘッダーと受信確認スキーマ作成して展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)です。
+ <span data-ttu-id="8f397-108">進みます[手順 1: 一般的なヘッダーと受信確認スキーマ作成して展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)です。</span><span class="sxs-lookup"><span data-stu-id="8f397-108">Proceed to [Step 1: Create and Deploy Common Header and Acknowledgment Schemas](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md).</span></span>

@@ -25,14 +25,14 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-use-the-group-shape"></a>グループ図形を使用する方法
+# <a name="how-to-use-the-group-shape"></a><span data-ttu-id="17f63-102">グループ図形を使用する方法</span><span class="sxs-lookup"><span data-stu-id="17f63-102">How to Use the Group Shape</span></span>
 ![](../core/media/ebiz-orch-group.gif "ebiz_orch_group")  
-グループ図形  
+<span data-ttu-id="17f63-103">グループ図形</span><span class="sxs-lookup"><span data-stu-id="17f63-103">Group shape</span></span>  
   
-## <a name="annotations-and-placeholders"></a>注釈とプレースホルダー  
- 使用することができます、**グループ**図形を追加するには、まだ機能のプレース ホルダーとして使用するか、内に行われるアクションについての注釈にします。  
+## <a name="annotations-and-placeholders"></a><span data-ttu-id="17f63-104">注釈とプレースホルダー</span><span class="sxs-lookup"><span data-stu-id="17f63-104">Annotations and placeholders</span></span>  
+ <span data-ttu-id="17f63-105">使用することができます、**グループ**図形を追加するには、まだ機能のプレース ホルダーとして使用するか、内に行われるアクションについての注釈にします。</span><span class="sxs-lookup"><span data-stu-id="17f63-105">You can use the **Group** shape as a placeholder for functionality yet to be added, or you can use it to make annotations about what actions take place within it.</span></span>  
   
- 名前プロパティに、**グループ**図形は最大 512 文字を使用できます。 注釈を入力することができます、**名前**プロパティと、図形が折りたたまれている場合、名前全体が表示されます。 図形が展開されているときは、名前が切り詰められて表示されます。  
+ <span data-ttu-id="17f63-106">名前プロパティに、**グループ**図形は最大 512 文字を使用できます。</span><span class="sxs-lookup"><span data-stu-id="17f63-106">The name property on the **Group** shape can be up to 512 characters long.</span></span> <span data-ttu-id="17f63-107">注釈を入力することができます、**名前**プロパティと、図形が折りたたまれている場合、名前全体が表示されます。</span><span class="sxs-lookup"><span data-stu-id="17f63-107">You can type annotations into the **Name** property and, when the shape is collapsed, the entire name will be displayed.</span></span> <span data-ttu-id="17f63-108">図形が展開されているときは、名前が切り詰められて表示されます。</span><span class="sxs-lookup"><span data-stu-id="17f63-108">When the shape is expanded, the name is truncated.</span></span>  
   
-## <a name="see-also"></a>参照  
- [フロー制御図形を構成します。](../core/configuring-flow-control-shapes.md)
+## <a name="see-also"></a><span data-ttu-id="17f63-109">参照</span><span class="sxs-lookup"><span data-stu-id="17f63-109">See Also</span></span>  
+ [<span data-ttu-id="17f63-110">フロー制御図形を構成します。</span><span class="sxs-lookup"><span data-stu-id="17f63-110">Configuring Flow Control Shapes</span></span>](../core/configuring-flow-control-shapes.md)

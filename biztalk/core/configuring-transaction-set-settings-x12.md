@@ -18,18 +18,18 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-transaction-set-settings-x12"></a>トランザクション セットの設定の構成 (X12)
-X12 トランザクション セットの設定では、2 つのパーティ間で交換されるトランザクション セットを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で処理する方法を定義しています。  
+# <a name="configuring-transaction-set-settings-x12"></a><span data-ttu-id="dd64a-102">トランザクション セットの設定の構成 (X12)</span><span class="sxs-lookup"><span data-stu-id="dd64a-102">Configuring Transaction Set Settings (X12)</span></span>
+<span data-ttu-id="dd64a-103">X12 トランザクション セットの設定では、2 つのパーティ間で交換されるトランザクション セットを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で処理する方法を定義しています。</span><span class="sxs-lookup"><span data-stu-id="dd64a-103">X12 transaction set settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the transaction sets being exchanged between two parties.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="dd64a-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="dd64a-104">In This Section</span></span>  
   
--   [トランザクション セットの構成 (X12) ボックスの一覧](../core/configuring-transaction-set-list-x12.md)  
+-   [<span data-ttu-id="dd64a-105">トランザクション セットの構成 (X12) ボックスの一覧</span><span class="sxs-lookup"><span data-stu-id="dd64a-105">Configuring Transaction Set List (X12)</span></span>](../core/configuring-transaction-set-list-x12.md)  
   
--   [検証の構成 (X12 トランザクション セットの設定)](../core/configuring-validation-x12-transaction-set-settings.md)  
+-   [<span data-ttu-id="dd64a-106">検証の構成 (X12 トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="dd64a-106">Configuring Validation (X12-Transaction Set Settings)</span></span>](../core/configuring-validation-x12-transaction-set-settings.md)  
   
--   [ローカル ホスト設定の構成 (X12 トランザクション セットの設定)](../core/configuring-local-host-settings-x12-transaction-set-settings.md)  
+-   [<span data-ttu-id="dd64a-107">ローカル ホスト設定の構成 (X12 トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="dd64a-107">Configuring Local Host Settings (X12-Transaction Set Settings)</span></span>](../core/configuring-local-host-settings-x12-transaction-set-settings.md)  
   
--   [エンベロープ (X12 トランザクション セットの設定) の構成](../core/configuring-envelopes-x12-transaction-set-settings.md)  
+-   [<span data-ttu-id="dd64a-108">エンベロープ (X12 トランザクション セットの設定) の構成</span><span class="sxs-lookup"><span data-stu-id="dd64a-108">Configuring Envelopes (X12-Transaction Set Settings)</span></span>](../core/configuring-envelopes-x12-transaction-set-settings.md)  
   
-## <a name="see-also"></a>参照  
- [X12 固有のアグリーメント プロパティの構成](../core/configuring-x12-specific-agreement-properties.md)
+## <a name="see-also"></a><span data-ttu-id="dd64a-109">参照</span><span class="sxs-lookup"><span data-stu-id="dd64a-109">See Also</span></span>  
+ [<span data-ttu-id="dd64a-110">X12 固有のアグリーメント プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="dd64a-110">Configuring X12-Specific Agreement Properties</span></span>](../core/configuring-x12-specific-agreement-properties.md)

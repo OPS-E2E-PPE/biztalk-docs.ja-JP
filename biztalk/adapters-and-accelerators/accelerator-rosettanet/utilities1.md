@@ -21,27 +21,27 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="utilities"></a>ユーティリティ
-このセクションでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) などのユーティリティの使用方法を説明します。  
+# <a name="utilities"></a><span data-ttu-id="ae2a3-102">ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="ae2a3-102">Utilities</span></span>
+<span data-ttu-id="ae2a3-103">このセクションでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) などのユーティリティの使用方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="ae2a3-103">This section provides instructions for using several utilities included in the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK).</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="ae2a3-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="ae2a3-104">In This Section</span></span>  
   
--   [BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)  
+-   [<span data-ttu-id="ae2a3-105">BtarnClean</span><span class="sxs-lookup"><span data-stu-id="ae2a3-105">BtarnClean</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)  
   
--   [BtarnConfig](../../adapters-and-accelerators/accelerator-rosettanet/btarnconfig.md)  
+-   [<span data-ttu-id="ae2a3-106">BtarnConfig</span><span class="sxs-lookup"><span data-stu-id="ae2a3-106">BtarnConfig</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/btarnconfig.md)  
   
--   [CertWizard](../../adapters-and-accelerators/accelerator-rosettanet/certwizard.md)  
+-   [<span data-ttu-id="ae2a3-107">CertWizard</span><span class="sxs-lookup"><span data-stu-id="ae2a3-107">CertWizard</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/certwizard.md)  
   
--   [LOBApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobapplication.md)  
+-   [<span data-ttu-id="ae2a3-108">LOBApplication</span><span class="sxs-lookup"><span data-stu-id="ae2a3-108">LOBApplication</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/lobapplication.md)  
   
--   [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)  
+-   [<span data-ttu-id="ae2a3-109">LOBWebApplication</span><span class="sxs-lookup"><span data-stu-id="ae2a3-109">LOBWebApplication</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)  
   
--   [ループバック](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)  
+-   [<span data-ttu-id="ae2a3-110">ループバック</span><span class="sxs-lookup"><span data-stu-id="ae2a3-110">Loopback</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)  
   
--   [メッセージ エディタ パイプライン コンポーネント](../../adapters-and-accelerators/accelerator-rosettanet/message-editor-pipeline-component.md)  
+-   [<span data-ttu-id="ae2a3-111">メッセージ エディタ パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ae2a3-111">Message Editor Pipeline Component</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-editor-pipeline-component.md)  
   
--   [Message Inspector パイプライン コンポーネント](../../adapters-and-accelerators/accelerator-rosettanet/message-inspector-pipeline-component.md)  
+-   [<span data-ttu-id="ae2a3-112">Message Inspector パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ae2a3-112">Message Inspector Pipeline Component</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-inspector-pipeline-component.md)  
   
--   [SchemaValidator](../../adapters-and-accelerators/accelerator-rosettanet/schemavalidator.md)  
+-   [<span data-ttu-id="ae2a3-113">SchemaValidator</span><span class="sxs-lookup"><span data-stu-id="ae2a3-113">SchemaValidator</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/schemavalidator.md)  
   
--   [TestCrypto](../../adapters-and-accelerators/accelerator-rosettanet/testcrypto.md)
+-   [<span data-ttu-id="ae2a3-114">TestCrypto</span><span class="sxs-lookup"><span data-stu-id="ae2a3-114">TestCrypto</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/testcrypto.md)

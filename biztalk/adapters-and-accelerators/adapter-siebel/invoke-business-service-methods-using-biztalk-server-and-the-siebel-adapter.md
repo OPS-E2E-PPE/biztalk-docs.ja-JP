@@ -21,148 +21,148 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a>ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出し
-Siebel ビジネス サービスは、Siebel の直接呼び出すことができるビジネス メソッドのコレクションです。 方法の詳細については[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]Siebel システムでのビジネス サービスを呼び出すサポートを参照してください[の Siebel ビジネス サービスを運用](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)です。 SOAP の構造の詳細については、ビジネス サービス操作を実行するメッセージを参照してください[ビジネス サービス操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)です。  
+# <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a><span data-ttu-id="f7d85-102">ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出し</span><span class="sxs-lookup"><span data-stu-id="f7d85-102">Invoke Business Service Methods Using BizTalk Server and the Siebel adapter</span></span>
+<span data-ttu-id="f7d85-103">Siebel ビジネス サービスは、Siebel の直接呼び出すことができるビジネス メソッドのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="f7d85-103">A Siebel business service is a collection of business methods that can be directly invoked in Siebel.</span></span> <span data-ttu-id="f7d85-104">方法の詳細については[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]Siebel システムでのビジネス サービスを呼び出すサポートを参照してください[の Siebel ビジネス サービスを運用](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-104">For more information about how the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] supports invoking business services in a Siebel system, see [Operations on Business Services in Siebel](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md).</span></span> <span data-ttu-id="f7d85-105">SOAP の構造の詳細については、ビジネス サービス操作を実行するメッセージを参照してください[ビジネス サービス操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-105">For more information about the structure of SOAP messages for performing business service operations, see [Message Schemas for Business Service Operations](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md).</span></span>  
   
-## <a name="how-to-invoke-business-services"></a>ビジネス サービスを呼び出す方法ですか。  
- Siebel システムを使用して、操作を実行、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明した手順のタスクでは、 [Siebel アダプターと BizTalk アプリケーションを作成するビルド ブロック](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)です。 ビジネス サービスを呼び出すには、これらのタスクです。  
+## <a name="how-to-invoke-business-services"></a><span data-ttu-id="f7d85-106">ビジネス サービスを呼び出す方法ですか。</span><span class="sxs-lookup"><span data-stu-id="f7d85-106">How to Invoke Business Services?</span></span>  
+ <span data-ttu-id="f7d85-107">Siebel システムを使用して、操作を実行、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明した手順のタスクでは、 [Siebel アダプターと BizTalk アプリケーションを作成するビルド ブロック](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-107">Performing an operation on a Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Building blocks to create BizTalk applications with the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md).</span></span> <span data-ttu-id="f7d85-108">ビジネス サービスを呼び出すには、これらのタスクです。</span><span class="sxs-lookup"><span data-stu-id="f7d85-108">To invoke a business service, these tasks are:</span></span>  
   
-1.  BizTalk プロジェクトを作成し、呼び出し先のビジネス サービス メソッドのスキーマを生成します。  
+1.  <span data-ttu-id="f7d85-109">BizTalk プロジェクトを作成し、呼び出し先のビジネス サービス メソッドのスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-109">Create a BizTalk project and generate schema for the business service method you want to invoke.</span></span>  
   
-2.  Siebel システムからメッセージを送受信するための BizTalk プロジェクトでメッセージを作成します。  
+2.  <span data-ttu-id="f7d85-110">Siebel システムからメッセージを送受信するための BizTalk プロジェクトでメッセージを作成します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-110">Create messages in the BizTalk project for sending and receiving messages from the Siebel system.</span></span>  
   
-3.  Siebel システムで、ビジネス サービス メソッドを呼び出すオーケストレーションを作成します。  
+3.  <span data-ttu-id="f7d85-111">Siebel システムで、ビジネス サービス メソッドを呼び出すオーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-111">Create orchestration to invoke a business service method in the Siebel system.</span></span>  
   
-4.  構築し、BizTalk プロジェクトを展開します。  
+4.  <span data-ttu-id="f7d85-112">構築し、BizTalk プロジェクトを展開します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-112">Build and deploy the BizTalk project.</span></span>  
   
-5.  BizTalk アプリケーションを作成する物理送信ポートと受信ポートを構成します。  
+5.  <span data-ttu-id="f7d85-113">BizTalk アプリケーションを作成する物理送信ポートと受信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-113">Configure the BizTalk application by creating physical send and receive ports.</span></span>  
   
-6.  BizTalk アプリケーションを起動します。  
+6.  <span data-ttu-id="f7d85-114">BizTalk アプリケーションを起動します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-114">Start the BizTalk application.</span></span>  
   
- このトピックでは、これらのタスクを実行する手順を説明します。  
+ <span data-ttu-id="f7d85-115">このトピックでは、これらのタスクを実行する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-115">This topic provides instructions to perform these tasks.</span></span>  
   
-## <a name="sample-based-on-this-topic"></a>このトピックの内容に基づくサンプル  
- サンプルは、BusinessService、このトピックの内容に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 詳細については、次を参照してください。 [Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)です。  
+## <a name="sample-based-on-this-topic"></a><span data-ttu-id="f7d85-116">このトピックの内容に基づくサンプル</span><span class="sxs-lookup"><span data-stu-id="f7d85-116">Sample Based On This Topic</span></span>  
+ <span data-ttu-id="f7d85-117">サンプルは、BusinessService、このトピックの内容に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-117">A sample, BusinessService, based on this topic is also provided with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="f7d85-118">詳細については、次を参照してください。 [Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-118">For more information, see [Samples for the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md).</span></span>  
   
-## <a name="generating-schema"></a>スキーマを生成します。  
- このトピックでは、ビジネス サービス メソッドを呼び出す方法を示すためを生成用のスキーマ、 **Execute**によって公開されるメソッド、**タイムスタンプ**ビジネス サービス。 参照してください[Siebel 操作の Visual Studio でのメタデータを取得する](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)スキーマを生成する方法についての詳細。  
+## <a name="generating-schema"></a><span data-ttu-id="f7d85-119">スキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-119">Generating Schema</span></span>  
+ <span data-ttu-id="f7d85-120">このトピックでは、ビジネス サービス メソッドを呼び出す方法を示すためを生成用のスキーマ、 **Execute**によって公開されるメソッド、**タイムスタンプ**ビジネス サービス。</span><span class="sxs-lookup"><span data-stu-id="f7d85-120">In this topic, to demonstrate how to invoke a business service method, we will generate schema for the **Execute** method exposed by the **TimeStamp** business service.</span></span> <span data-ttu-id="f7d85-121">参照してください[Siebel 操作の Visual Studio でのメタデータを取得する](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)スキーマを生成する方法についての詳細。</span><span class="sxs-lookup"><span data-stu-id="f7d85-121">See [Retrieving Metadata for Siebel Operations in Visual Studio](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md) for more information about how to generate schema.</span></span>  
   
-## <a name="defining-messages-and-message-types"></a>メッセージとメッセージの種類を定義します。  
- 以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 BizTalk プロジェクトのオーケストレーションの種類からのメッセージに最初の手順で生成したスキーマをリンクする必要があります。  
+## <a name="defining-messages-and-message-types"></a><span data-ttu-id="f7d85-122">メッセージとメッセージの種類を定義します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-122">Defining Messages and Message Types</span></span>  
+ <span data-ttu-id="f7d85-123">以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-123">The schema that you generated earlier describes the "types" required for the messages in the orchestration.</span></span> <span data-ttu-id="f7d85-124">メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-124">A message is typically a variable, the type for which is defined by the corresponding schema.</span></span> <span data-ttu-id="f7d85-125">BizTalk プロジェクトのオーケストレーションの種類からのメッセージに最初の手順で生成したスキーマをリンクする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f7d85-125">You must link the schema you generated in the first step to the messages from the Orchestration view of the BizTalk project.</span></span>  
   
- このトピックでは、2 つのメッセージを作成する必要があります: Siebel システムと他の応答を受信する要求を送信する 1 つです。  
+ <span data-ttu-id="f7d85-126">このトピックでは、2 つのメッセージを作成する必要があります: Siebel システムと他の応答を受信する要求を送信する 1 つです。</span><span class="sxs-lookup"><span data-stu-id="f7d85-126">For this topic, you must create two messages—one to send a request to the Siebel system and the other to receive a response.</span></span>  
   
- メッセージを作成し、スキーマにそれらをリンクするには、次の手順を実行します。  
+ <span data-ttu-id="f7d85-127">メッセージを作成し、スキーマにそれらをリンクするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-127">Perform the following steps to create messages and link them to the schema:</span></span>  
   
-#### <a name="to-create-messages-and-link-to-schema"></a>メッセージを作成し、スキーマにリンクするには  
+#### <a name="to-create-messages-and-link-to-schema"></a><span data-ttu-id="f7d85-128">メッセージを作成し、スキーマにリンクするには</span><span class="sxs-lookup"><span data-stu-id="f7d85-128">To create messages and link to schema</span></span>  
   
-1.  オーケストレーションの種類、BizTalk プロジェクトを開くまだ開いていない場合。 をクリックして**ビュー**、 をポイント**その他のウィンドウ**、 をクリック**オーケストレーション**です。  
+1.  <span data-ttu-id="f7d85-129">オーケストレーションの種類、BizTalk プロジェクトを開くまだ開いていない場合。</span><span class="sxs-lookup"><span data-stu-id="f7d85-129">Open the orchestration view the BizTalk project, if not already open.</span></span> <span data-ttu-id="f7d85-130">をクリックして**ビュー**、 をポイント**その他のウィンドウ**、 をクリック**オーケストレーション**です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-130">Click **View**, point to **Other Windows**, and click **Orchestration View**.</span></span>  
   
-2.  **オーケストレーション ビュー**を右クリックして**メッセージ**、クリックして**新しいメッセージ**です。  
+2.  <span data-ttu-id="f7d85-131">**オーケストレーション ビュー**を右クリックして**メッセージ**、クリックして**新しいメッセージ**です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-131">In the **Orchestration View**, right-click **Messages**, and then click **New Message**.</span></span>  
   
-3.  右クリックし、新規メッセージを作成および選択**プロパティ ウィンドウ**します。  
+3.  <span data-ttu-id="f7d85-132">右クリックし、新規メッセージを作成および選択**プロパティ ウィンドウ**します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-132">Right-click the newly create message and select **Properties Window**.</span></span>  
   
-4.  **プロパティ**ウィンドウ**Message_1**を次の操作します。  
+4.  <span data-ttu-id="f7d85-133">**プロパティ**ウィンドウ**Message_1**を次の操作します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-133">In the **Properties** pane for **Message_1**, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="f7d85-134">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f7d85-134">Use this</span></span>|<span data-ttu-id="f7d85-135">目的</span><span class="sxs-lookup"><span data-stu-id="f7d85-135">To do this</span></span>|  
     |--------------|----------------|  
-    |[Identifier]|型**要求**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*BusinessService.SiebelBindingSchema.Execute*ここで、 *BusinessService* BizTalk プロジェクトの名前を指定します。 *SiebelBindingSchema*を呼び出すために生成されたスキーマは、 *Execute*ビジネス サービスのメソッドです。|  
+    |<span data-ttu-id="f7d85-136">[Identifier]</span><span class="sxs-lookup"><span data-stu-id="f7d85-136">Identifier</span></span>|<span data-ttu-id="f7d85-137">型**要求**です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-137">Type **Request**.</span></span>|  
+    |<span data-ttu-id="f7d85-138">メッセージの種類</span><span class="sxs-lookup"><span data-stu-id="f7d85-138">Message Type</span></span>|<span data-ttu-id="f7d85-139">ドロップダウン リストから、展開**スキーマ**を選択して*BusinessService.SiebelBindingSchema.Execute*ここで、 *BusinessService* BizTalk プロジェクトの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-139">From the drop-down list, expand **Schemas**, and select *BusinessService.SiebelBindingSchema.Execute*, where *BusinessService* is the name of your BizTalk project.</span></span> <span data-ttu-id="f7d85-140">*SiebelBindingSchema*を呼び出すために生成されたスキーマは、 *Execute*ビジネス サービスのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="f7d85-140">*SiebelBindingSchema* is the schema generated for invoking the *Execute* business service method.</span></span>|  
   
-5.  新しいメッセージを作成する前の手順を繰り返します。 **プロパティ**新しいメッセージ ウィンドウ、次の操作します。  
+5.  <span data-ttu-id="f7d85-141">新しいメッセージを作成する前の手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-141">Repeat the previous step to create a new message.</span></span> <span data-ttu-id="f7d85-142">**プロパティ**新しいメッセージ ウィンドウ、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-142">In the **Properties** pane for the new message, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="f7d85-143">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f7d85-143">Use this</span></span>|<span data-ttu-id="f7d85-144">目的</span><span class="sxs-lookup"><span data-stu-id="f7d85-144">To do this</span></span>|  
     |--------------|----------------|  
-    |[Identifier]|型**応答**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*BusinessService.SiebelBindingSchema.ExecuteResponse*です。|  
+    |<span data-ttu-id="f7d85-145">[Identifier]</span><span class="sxs-lookup"><span data-stu-id="f7d85-145">Identifier</span></span>|<span data-ttu-id="f7d85-146">型**応答**です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-146">Type **Response**.</span></span>|  
+    |<span data-ttu-id="f7d85-147">メッセージの種類</span><span class="sxs-lookup"><span data-stu-id="f7d85-147">Message Type</span></span>|<span data-ttu-id="f7d85-148">ドロップダウン リストから、展開**スキーマ**を選択して*BusinessService.SiebelBindingSchema.ExecuteResponse*です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-148">From the drop-down list, expand **Schemas**, and select *BusinessService.SiebelBindingSchema.ExecuteResponse*.</span></span>|  
   
-## <a name="setting-up-the-orchestration"></a>オーケストレーションを設定します。  
- 使用する BizTalk オーケストレーションを作成する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ビジネス サービスを呼び出すためです。 このオーケストレーションでの要求メッセージを削除する受信場所が、定義されています。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]このメッセージを消費し、Siebel システムに渡します。 Siebel システムからの応答は、別の場所に保存されます。 ビジネス サービス メソッドを呼び出すための一般的なオーケストレーションにが含まれます。  
+## <a name="setting-up-the-orchestration"></a><span data-ttu-id="f7d85-149">オーケストレーションを設定します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-149">Setting up the Orchestration</span></span>  
+ <span data-ttu-id="f7d85-150">使用する BizTalk オーケストレーションを作成する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ビジネス サービスを呼び出すためです。</span><span class="sxs-lookup"><span data-stu-id="f7d85-150">You must create a BizTalk orchestration to use [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for invoking a business service.</span></span> <span data-ttu-id="f7d85-151">このオーケストレーションでの要求メッセージを削除する受信場所が、定義されています。</span><span class="sxs-lookup"><span data-stu-id="f7d85-151">In this orchestration, you drop a request message at a defined receive location.</span></span> <span data-ttu-id="f7d85-152">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]このメッセージを消費し、Siebel システムに渡します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-152">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] consumes this message and passes it on to the Siebel system.</span></span> <span data-ttu-id="f7d85-153">Siebel システムからの応答は、別の場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-153">The response from the Siebel system is saved to another location.</span></span> <span data-ttu-id="f7d85-154">ビジネス サービス メソッドを呼び出すための一般的なオーケストレーションにが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-154">A typical orchestration for invoking Business Service methods would contain:</span></span>  
   
--   Siebel にメッセージを送信し、応答を受信する図形を送受信します。  
+-   <span data-ttu-id="f7d85-155">Siebel にメッセージを送信し、応答を受信する図形を送受信します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-155">Send and receive shapes to send messages to Siebel and receive responses.</span></span>  
   
--   一方向の受信ポートを Siebel に送信する要求メッセージを受信します。  
+-   <span data-ttu-id="f7d85-156">一方向の受信ポートを Siebel に送信する要求メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-156">A one-way receive port to receive request messages to send to Siebel.</span></span>  
   
--   Siebel に要求メッセージを送信し、応答を受信するポートを双方向に送信します。  
+-   <span data-ttu-id="f7d85-157">Siebel に要求メッセージを送信し、応答を受信するポートを双方向に送信します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-157">A two-way send port to send request messages to Siebel and receive responses.</span></span>  
   
--   Siebel からフォルダーに、応答を送信する一方向の送信ポートです。  
+-   <span data-ttu-id="f7d85-158">Siebel からフォルダーに、応答を送信する一方向の送信ポートです。</span><span class="sxs-lookup"><span data-stu-id="f7d85-158">A one-way send port to send the responses from Siebel to a folder.</span></span>  
   
- 呼び出し元のサンプル オーケストレーション、 *Execute*のメソッド、*タイムスタンプ*ビジネス サービス、次のようになります。  
+ <span data-ttu-id="f7d85-159">呼び出し元のサンプル オーケストレーション、 *Execute*のメソッド、*タイムスタンプ*ビジネス サービス、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="f7d85-159">A sample orchestration for calling the *Execute* method for the *TimeStamp* business service resembles the following:</span></span>  
   
- ![ビジネス サービスを呼び出すオーケストレーション](../../adapters-and-accelerators/adapter-siebel/media/5a776e5d-855f-4d1b-8d26-7de747b1865d.gif "5a776e5d-855f-4d1b-8d26-7de747b1865d")  
+ <span data-ttu-id="f7d85-160">![ビジネス サービスを呼び出すオーケストレーション](../../adapters-and-accelerators/adapter-siebel/media/5a776e5d-855f-4d1b-8d26-7de747b1865d.gif "5a776e5d-855f-4d1b-8d26-7de747b1865d")</span><span class="sxs-lookup"><span data-stu-id="f7d85-160">![Orchestration to invoke a business service](../../adapters-and-accelerators/adapter-siebel/media/5a776e5d-855f-4d1b-8d26-7de747b1865d.gif "5a776e5d-855f-4d1b-8d26-7de747b1865d")</span></span>  
   
-### <a name="adding-message-shapes"></a>メッセージの構築図形を追加します。  
- メッセージの構築図形のごとに、次のプロパティを指定することを確認してください。 示されている名前、*図形*列が上記のオーケストレーションで表示される、メッセージの構築図形の名前を示します。  
+### <a name="adding-message-shapes"></a><span data-ttu-id="f7d85-161">メッセージの構築図形を追加します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-161">Adding Message Shapes</span></span>  
+ <span data-ttu-id="f7d85-162">メッセージの構築図形のごとに、次のプロパティを指定することを確認してください。</span><span class="sxs-lookup"><span data-stu-id="f7d85-162">Make sure you specify the following properties for each of the message shapes.</span></span> <span data-ttu-id="f7d85-163">示されている名前、*図形*列が上記のオーケストレーションで表示される、メッセージの構築図形の名前を示します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-163">The names listed in the *Shape* column are the names of the message shapes as displayed in the orchestration above.</span></span>  
   
-|図形|図形の種類|[プロパティ]|  
+|<span data-ttu-id="f7d85-164">図形</span><span class="sxs-lookup"><span data-stu-id="f7d85-164">Shape</span></span>|<span data-ttu-id="f7d85-165">図形の種類</span><span class="sxs-lookup"><span data-stu-id="f7d85-165">Shape Type</span></span>|<span data-ttu-id="f7d85-166">[プロパティ]</span><span class="sxs-lookup"><span data-stu-id="f7d85-166">Properties</span></span>|  
 |-----------|----------------|----------------|  
-|ReceiveXML|Receive|-設定**名前**に*ReceiveXML*<br />-設定**アクティブ**に*は True。*|  
-|SendToLOB|Send|-設定**名前**に*SendToLOB*|  
-|ReceiveResponse|Receive|-設定**名前**に*ReceiveResponse*<br />-設定**アクティブ**に*False*|  
-|SendResponse|Send|-設定**名前**に*SendResponse*|  
+|<span data-ttu-id="f7d85-167">ReceiveXML</span><span class="sxs-lookup"><span data-stu-id="f7d85-167">ReceiveXML</span></span>|<span data-ttu-id="f7d85-168">Receive</span><span class="sxs-lookup"><span data-stu-id="f7d85-168">Receive</span></span>|<span data-ttu-id="f7d85-169">-設定**名前**に*ReceiveXML*</span><span class="sxs-lookup"><span data-stu-id="f7d85-169">-   Set **Name** to *ReceiveXML*</span></span><br /><span data-ttu-id="f7d85-170">-設定**アクティブ**に*は True。*</span><span class="sxs-lookup"><span data-stu-id="f7d85-170">-   Set **Activate** to *True*</span></span>|  
+|<span data-ttu-id="f7d85-171">SendToLOB</span><span class="sxs-lookup"><span data-stu-id="f7d85-171">SendToLOB</span></span>|<span data-ttu-id="f7d85-172">Send</span><span class="sxs-lookup"><span data-stu-id="f7d85-172">Send</span></span>|<span data-ttu-id="f7d85-173">-設定**名前**に*SendToLOB*</span><span class="sxs-lookup"><span data-stu-id="f7d85-173">-   Set **Name** to *SendToLOB*</span></span>|  
+|<span data-ttu-id="f7d85-174">ReceiveResponse</span><span class="sxs-lookup"><span data-stu-id="f7d85-174">ReceiveResponse</span></span>|<span data-ttu-id="f7d85-175">Receive</span><span class="sxs-lookup"><span data-stu-id="f7d85-175">Receive</span></span>|<span data-ttu-id="f7d85-176">-設定**名前**に*ReceiveResponse*</span><span class="sxs-lookup"><span data-stu-id="f7d85-176">-   Set **Name** to *ReceiveResponse*</span></span><br /><span data-ttu-id="f7d85-177">-設定**アクティブ**に*False*</span><span class="sxs-lookup"><span data-stu-id="f7d85-177">-   Set **Activate** to *False*</span></span>|  
+|<span data-ttu-id="f7d85-178">SendResponse</span><span class="sxs-lookup"><span data-stu-id="f7d85-178">SendResponse</span></span>|<span data-ttu-id="f7d85-179">Send</span><span class="sxs-lookup"><span data-stu-id="f7d85-179">Send</span></span>|<span data-ttu-id="f7d85-180">-設定**名前**に*SendResponse*</span><span class="sxs-lookup"><span data-stu-id="f7d85-180">-   Set **Name** to *SendResponse*</span></span>|  
   
-### <a name="adding-ports"></a>ポートの追加  
- 論理ポートごとに、次のプロパティを指定することを確認してください。 示されている名前、*ポート*オーケストレーションで表示される、列が、ポートの名前を示します。  
+### <a name="adding-ports"></a><span data-ttu-id="f7d85-181">ポートの追加</span><span class="sxs-lookup"><span data-stu-id="f7d85-181">Adding Ports</span></span>  
+ <span data-ttu-id="f7d85-182">論理ポートごとに、次のプロパティを指定することを確認してください。</span><span class="sxs-lookup"><span data-stu-id="f7d85-182">Make sure you specify the following properties for each of the logical ports.</span></span> <span data-ttu-id="f7d85-183">示されている名前、*ポート*オーケストレーションで表示される、列が、ポートの名前を示します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-183">The names listed in the *Port* column are the names of the ports as displayed in the orchestration.</span></span>  
   
-|ポート|[プロパティ]|  
+|<span data-ttu-id="f7d85-184">ポート</span><span class="sxs-lookup"><span data-stu-id="f7d85-184">Port</span></span>|<span data-ttu-id="f7d85-185">[プロパティ]</span><span class="sxs-lookup"><span data-stu-id="f7d85-185">Properties</span></span>|  
 |----------|----------------|  
-|FileIn|-設定**識別子**に*FileIn*<br />-設定**型**に*FileInType*<br />-設定**通信パターン**に*一方向*<br />-設定**通信方向**に*受信*|  
-|LOBPort|-設定**識別子**に*LOBPort*<br />-設定**型**に*LOBPortType*<br />-設定**通信パターン**に*要求-応答*<br />-設定**通信方向**に*送受信*|  
-|SaveResponse|-設定**識別子**に*SaveResponse*<br />-設定**型**に*SaveResponseType*<br />-設定**通信パターン**に*一方向*<br />-設定**通信方向**に*送信*|  
+|<span data-ttu-id="f7d85-186">FileIn</span><span class="sxs-lookup"><span data-stu-id="f7d85-186">FileIn</span></span>|<span data-ttu-id="f7d85-187">-設定**識別子**に*FileIn*</span><span class="sxs-lookup"><span data-stu-id="f7d85-187">-   Set **Identifier** to *FileIn*</span></span><br /><span data-ttu-id="f7d85-188">-設定**型**に*FileInType*</span><span class="sxs-lookup"><span data-stu-id="f7d85-188">-   Set **Type** to *FileInType*</span></span><br /><span data-ttu-id="f7d85-189">-設定**通信パターン**に*一方向*</span><span class="sxs-lookup"><span data-stu-id="f7d85-189">-   Set **Communication Pattern** to *One-Way*</span></span><br /><span data-ttu-id="f7d85-190">-設定**通信方向**に*受信*</span><span class="sxs-lookup"><span data-stu-id="f7d85-190">-   Set **Communication Direction** to *Receive*</span></span>|  
+|<span data-ttu-id="f7d85-191">LOBPort</span><span class="sxs-lookup"><span data-stu-id="f7d85-191">LOBPort</span></span>|<span data-ttu-id="f7d85-192">-設定**識別子**に*LOBPort*</span><span class="sxs-lookup"><span data-stu-id="f7d85-192">-   Set **Identifier** to *LOBPort*</span></span><br /><span data-ttu-id="f7d85-193">-設定**型**に*LOBPortType*</span><span class="sxs-lookup"><span data-stu-id="f7d85-193">-   Set **Type** to *LOBPortType*</span></span><br /><span data-ttu-id="f7d85-194">-設定**通信パターン**に*要求-応答*</span><span class="sxs-lookup"><span data-stu-id="f7d85-194">-   Set **Communication Pattern** to *Request-Response*</span></span><br /><span data-ttu-id="f7d85-195">-設定**通信方向**に*送受信*</span><span class="sxs-lookup"><span data-stu-id="f7d85-195">-   Set **Communication Direction** to *Send-Receive*</span></span>|  
+|<span data-ttu-id="f7d85-196">SaveResponse</span><span class="sxs-lookup"><span data-stu-id="f7d85-196">SaveResponse</span></span>|<span data-ttu-id="f7d85-197">-設定**識別子**に*SaveResponse*</span><span class="sxs-lookup"><span data-stu-id="f7d85-197">-   Set **Identifier** to *SaveResponse*</span></span><br /><span data-ttu-id="f7d85-198">-設定**型**に*SaveResponseType*</span><span class="sxs-lookup"><span data-stu-id="f7d85-198">-   Set **Type** to *SaveResponseType*</span></span><br /><span data-ttu-id="f7d85-199">-設定**通信パターン**に*一方向*</span><span class="sxs-lookup"><span data-stu-id="f7d85-199">-   Set **Communication Pattern** to *One-Way*</span></span><br /><span data-ttu-id="f7d85-200">-設定**通信方向**に*送信*</span><span class="sxs-lookup"><span data-stu-id="f7d85-200">-   Set **Communication Direction** to *Send*</span></span>|  
   
-## <a name="specify-messages-for-action-shapes-and-connect-to-ports"></a>アクション図形のメッセージを指定し、ポートに接続  
- 次の表は、プロパティと、メッセージのアクション図形およびポートにリンクすることを指定するために設定するには、その値を指定します。 示されている名前、*図形*列が上記のオーケストレーションで表示される、メッセージの構築図形の名前を示します。  
+## <a name="specify-messages-for-action-shapes-and-connect-to-ports"></a><span data-ttu-id="f7d85-201">アクション図形のメッセージを指定し、ポートに接続</span><span class="sxs-lookup"><span data-stu-id="f7d85-201">Specify Messages for Action Shapes and Connect to Ports</span></span>  
+ <span data-ttu-id="f7d85-202">次の表は、プロパティと、メッセージのアクション図形およびポートにリンクすることを指定するために設定するには、その値を指定します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-202">The following table specifies the properties and their values to be set to specify messages for action shapes and linking them to the ports.</span></span> <span data-ttu-id="f7d85-203">示されている名前、*図形*列が上記のオーケストレーションで表示される、メッセージの構築図形の名前を示します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-203">The names listed in the *Shape* column are the names of the message shapes as displayed in the orchestration above.</span></span>  
   
-|図形|[プロパティ]|  
+|<span data-ttu-id="f7d85-204">図形</span><span class="sxs-lookup"><span data-stu-id="f7d85-204">Shape</span></span>|<span data-ttu-id="f7d85-205">[プロパティ]</span><span class="sxs-lookup"><span data-stu-id="f7d85-205">Properties</span></span>|  
 |-----------|----------------|  
-|ReceiveXML|-設定**メッセージ**に*要求*<br />-設定**操作**に*FileIn.ServiceInvoke.Request*|  
-|SendToLOB|-設定**メッセージ**に*要求*<br />-設定**操作**に*LOBPort.ServiceInvoke.Request*|  
-|ReceiveResponse|-設定**メッセージ**に*応答*<br />-設定**操作**に*LOBPort.ServiceInvoke.Response*|  
-|SendResponse|-設定**メッセージ**に*応答*<br />-設定**操作**に*SaveResponse.ServiceInvoke.Request*|  
+|<span data-ttu-id="f7d85-206">ReceiveXML</span><span class="sxs-lookup"><span data-stu-id="f7d85-206">ReceiveXML</span></span>|<span data-ttu-id="f7d85-207">-設定**メッセージ**に*要求*</span><span class="sxs-lookup"><span data-stu-id="f7d85-207">-   Set **Message** to *Request*</span></span><br /><span data-ttu-id="f7d85-208">-設定**操作**に*FileIn.ServiceInvoke.Request*</span><span class="sxs-lookup"><span data-stu-id="f7d85-208">-   Set **Operation** to *FileIn.ServiceInvoke.Request*</span></span>|  
+|<span data-ttu-id="f7d85-209">SendToLOB</span><span class="sxs-lookup"><span data-stu-id="f7d85-209">SendToLOB</span></span>|<span data-ttu-id="f7d85-210">-設定**メッセージ**に*要求*</span><span class="sxs-lookup"><span data-stu-id="f7d85-210">-   Set **Message** to *Request*</span></span><br /><span data-ttu-id="f7d85-211">-設定**操作**に*LOBPort.ServiceInvoke.Request*</span><span class="sxs-lookup"><span data-stu-id="f7d85-211">-   Set **Operation** to *LOBPort.ServiceInvoke.Request*</span></span>|  
+|<span data-ttu-id="f7d85-212">ReceiveResponse</span><span class="sxs-lookup"><span data-stu-id="f7d85-212">ReceiveResponse</span></span>|<span data-ttu-id="f7d85-213">-設定**メッセージ**に*応答*</span><span class="sxs-lookup"><span data-stu-id="f7d85-213">-   Set **Message** to *Response*</span></span><br /><span data-ttu-id="f7d85-214">-設定**操作**に*LOBPort.ServiceInvoke.Response*</span><span class="sxs-lookup"><span data-stu-id="f7d85-214">-   Set **Operation** to *LOBPort.ServiceInvoke.Response*</span></span>|  
+|<span data-ttu-id="f7d85-215">SendResponse</span><span class="sxs-lookup"><span data-stu-id="f7d85-215">SendResponse</span></span>|<span data-ttu-id="f7d85-216">-設定**メッセージ**に*応答*</span><span class="sxs-lookup"><span data-stu-id="f7d85-216">-   Set **Message** to *Response*</span></span><br /><span data-ttu-id="f7d85-217">-設定**操作**に*SaveResponse.ServiceInvoke.Request*</span><span class="sxs-lookup"><span data-stu-id="f7d85-217">-   Set **Operation** to *SaveResponse.ServiceInvoke.Request*</span></span>|  
   
- これらのプロパティを指定した後、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
+ <span data-ttu-id="f7d85-218">これらのプロパティを指定した後、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-218">After you have specified these properties, the message shapes and ports are connected and your orchestration is complete.</span></span>  
   
- 今すぐ BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 詳細については、次を参照してください。[オーケストレーションのビルド方法](../../core/how-to-build-orchestrations.md)と[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)です。 
+ <span data-ttu-id="f7d85-219">今すぐ BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-219">You must now build the BizTalk solution and deploy it to a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="f7d85-220">詳細については、次を参照してください。[オーケストレーションのビルド方法](../../core/how-to-build-orchestrations.md)と[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-220">For more information, see [How to Build Orchestrations](../../core/how-to-build-orchestrations.md) and [Deploying BizTalk Assemblies from Visual Studio into a BizTalk Application](../../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md).</span></span> 
   
-## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 以前に作成したオーケストレーションが下に表示、BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションの構成の詳細については、次を参照してください。[アプリケーションを作成する方法](../../core/how-to-create-an-application.md)です。  
+## <a name="configuring-the-biztalk-application"></a><span data-ttu-id="f7d85-221">BizTalk アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-221">Configuring the BizTalk Application</span></span>  
+ <span data-ttu-id="f7d85-222">以前に作成したオーケストレーションが下に表示、BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。</span><span class="sxs-lookup"><span data-stu-id="f7d85-222">After you have deployed the BizTalk project, the orchestration you created earlier is listed under the **Orchestrations** pane in the BizTalk Server Administration console.</span></span> <span data-ttu-id="f7d85-223">BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f7d85-223">You must use the BizTalk Server Administration console to configure the application.</span></span> <span data-ttu-id="f7d85-224">アプリケーションの構成の詳細については、次を参照してください。[アプリケーションを作成する方法](../../core/how-to-create-an-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-224">For more information about configuring an application, see [How to Create an Application](../../core/how-to-create-an-application.md).</span></span>  
   
- アプリケーションの構成が含まれます。  
+ <span data-ttu-id="f7d85-225">アプリケーションの構成が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-225">Configuring an application involves:</span></span>  
   
--   アプリケーションのホストを選択します。  
+-   <span data-ttu-id="f7d85-226">アプリケーションのホストを選択します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-226">Selecting a host for the application.</span></span>  
   
--   BizTalk Server 管理コンソールで物理ポートにオーケストレーションで作成したポートをマッピングします。 このオーケストレーションの次の操作を行う必要があります。  
+-   <span data-ttu-id="f7d85-227">BizTalk Server 管理コンソールで物理ポートにオーケストレーションで作成したポートをマッピングします。</span><span class="sxs-lookup"><span data-stu-id="f7d85-227">Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console.</span></span> <span data-ttu-id="f7d85-228">このオーケストレーションの次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="f7d85-228">For this orchestration you must:</span></span>  
   
-    -   ハード ディスクと、要求メッセージをドロップする場所、対応するファイル ポート上の場所を定義します。 BizTalk オーケストレーションは、要求メッセージを消費し、Siebel システムに送信します。  
+    -   <span data-ttu-id="f7d85-229">ハード ディスクと、要求メッセージをドロップする場所、対応するファイル ポート上の場所を定義します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-229">Define a location on the hard disk and a corresponding file port where you will drop a request message.</span></span> <span data-ttu-id="f7d85-230">BizTalk オーケストレーションは、要求メッセージを消費し、Siebel システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-230">The BizTalk orchestration will consume the request message and send it to the Siebel system.</span></span>  
   
-    -   ハード ディスクと、対応する file ポートを BizTalk オーケストレーションが Siebel システムからの応答を含む応答メッセージをドロップする場所に場所を定義します。  
+    -   <span data-ttu-id="f7d85-231">ハード ディスクと、対応する file ポートを BizTalk オーケストレーションが Siebel システムからの応答を含む応答メッセージをドロップする場所に場所を定義します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-231">Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response message containing the response from the Siebel system.</span></span>  
   
-    -   メッセージを送信する Siebel システムへの物理 Wcf-custom または WCF Siebel 送信ポートを定義します。 送信ポートでアクションを指定することもあります。 ポートを作成する方法については、次を参照してください。 [Siebel アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)です。
+    -   <span data-ttu-id="f7d85-232">メッセージを送信する Siebel システムへの物理 Wcf-custom または WCF Siebel 送信ポートを定義します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-232">Define a physical WCF-Custom or WCF-Siebel send port to send messages to the Siebel system.</span></span> <span data-ttu-id="f7d85-233">送信ポートでアクションを指定することもあります。</span><span class="sxs-lookup"><span data-stu-id="f7d85-233">You must also specify the action in the send port.</span></span> <span data-ttu-id="f7d85-234">ポートを作成する方法については、次を参照してください。 [Siebel アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-234">For information about how to create ports, see [Manually configure a physical port binding to the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md).</span></span>
   
         > [!NOTE]
-        >  使用してスキーマを生成する、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートするには、BizTalk 管理コンソールから (発信) の送信ポートを作成します。 詳細については、次を参照してください。 [Siebel するポートのバインド ファイルを使用する物理ポートのバインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)です。
+        >  <span data-ttu-id="f7d85-235">使用してスキーマを生成する、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-235">Generating the schema using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file containing information about the ports and the actions to be set for those ports.</span></span> <span data-ttu-id="f7d85-236">このバインド ファイルをインポートするには、BizTalk 管理コンソールから (発信) の送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-236">You can import this binding file from the BizTalk Administration Console to create send ports (for outbound calls).</span></span> <span data-ttu-id="f7d85-237">詳細については、次を参照してください。 [Siebel するポートのバインド ファイルを使用する物理ポートのバインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-237">For more information, see [Configure a physical port binding using a port binding file to Siebel](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md).</span></span>
   
-## <a name="starting-the-application"></a>アプリケーションの起動  
- 実行するための BizTalk アプリケーションを起動する必要があります、 *Execute*メソッドを*タイムスタンプ*で Siebel ビジネス サービス。 BizTalk アプリケーションの起動方法の詳細については、次を参照してください。 [BizTalk アプリケーションを起動](../../core/how-to-start-and-stop-a-biztalk-application.md)または[オーケストレーションを開始](../../core/how-to-start-an-orchestration.md)です。
+## <a name="starting-the-application"></a><span data-ttu-id="f7d85-238">アプリケーションの起動</span><span class="sxs-lookup"><span data-stu-id="f7d85-238">Starting the Application</span></span>  
+ <span data-ttu-id="f7d85-239">実行するための BizTalk アプリケーションを起動する必要があります、 *Execute*メソッドを*タイムスタンプ*で Siebel ビジネス サービス。</span><span class="sxs-lookup"><span data-stu-id="f7d85-239">You must start the BizTalk application for executing the *Execute* method on the *TimeStamp* business service in Siebel.</span></span> <span data-ttu-id="f7d85-240">BizTalk アプリケーションの起動方法の詳細については、次を参照してください。 [BizTalk アプリケーションを起動](../../core/how-to-start-and-stop-a-biztalk-application.md)または[オーケストレーションを開始](../../core/how-to-start-an-orchestration.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-240">For instructions on starting a BizTalk application, see [Start a BizTalk Application](../../core/how-to-start-and-stop-a-biztalk-application.md) or [Start an Orchestration](../../core/how-to-start-an-orchestration.md).</span></span>
   
- この段階で確認します。  
+ <span data-ttu-id="f7d85-241">この段階で確認します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-241">At this stage, make sure:</span></span>  
   
--   ファイルは、オーケストレーションが実行中の要求メッセージを受信するポートを受信します。  
+-   <span data-ttu-id="f7d85-242">ファイルは、オーケストレーションが実行中の要求メッセージを受信するポートを受信します。</span><span class="sxs-lookup"><span data-stu-id="f7d85-242">The FILE receive port to receive request messages for the orchestration is running.</span></span>  
   
--   オーケストレーションから応答メッセージを受信する FILE 送信ポートが実行されています。  
+-   <span data-ttu-id="f7d85-243">オーケストレーションから応答メッセージを受信する FILE 送信ポートが実行されています。</span><span class="sxs-lookup"><span data-stu-id="f7d85-243">The FILE send port to receive the response messages from the orchestration is running.</span></span>  
   
--   Siebel システムへのメッセージを送信する Wcf-custom または WCF Siebel 送信ポートが実行されています。  
+-   <span data-ttu-id="f7d85-244">Siebel システムへのメッセージを送信する Wcf-custom または WCF Siebel 送信ポートが実行されています。</span><span class="sxs-lookup"><span data-stu-id="f7d85-244">The WCF-Custom or WCF-Siebel send port to send messages to the Siebel system is running.</span></span>  
   
--   操作の BizTalk オーケストレーションが実行されています。  
+-   <span data-ttu-id="f7d85-245">操作の BizTalk オーケストレーションが実行されています。</span><span class="sxs-lookup"><span data-stu-id="f7d85-245">The BizTalk orchestration for the operation is running.</span></span>  
   
-## <a name="executing-the-operation"></a>操作の実行  
- ファイルに要求メッセージを削除する必要がありますの受信場所。 要求メッセージのスキーマは、このトピックの前半で生成したスキーマに入力してください。 参照してください[ビジネス サービス操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)ビジネス サービスを呼び出すためのスキーマの詳細についてはします。 など、要求メッセージを呼び出し、 *Execute*メソッドを*タイムスタンプ*ビジネス サービスは。  
+## <a name="executing-the-operation"></a><span data-ttu-id="f7d85-246">操作の実行</span><span class="sxs-lookup"><span data-stu-id="f7d85-246">Executing the Operation</span></span>  
+ <span data-ttu-id="f7d85-247">ファイルに要求メッセージを削除する必要がありますの受信場所。</span><span class="sxs-lookup"><span data-stu-id="f7d85-247">You must drop the request message to the FILE receive location.</span></span> <span data-ttu-id="f7d85-248">要求メッセージのスキーマは、このトピックの前半で生成したスキーマに入力してください。</span><span class="sxs-lookup"><span data-stu-id="f7d85-248">The schema of the request message must confirm to the schema you generated earlier in this topic.</span></span> <span data-ttu-id="f7d85-249">参照してください[ビジネス サービス操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)ビジネス サービスを呼び出すためのスキーマの詳細についてはします。</span><span class="sxs-lookup"><span data-stu-id="f7d85-249">See [Message Schemas for Business Service Operations](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md) for more information about the schema for invoking a business service.</span></span> <span data-ttu-id="f7d85-250">など、要求メッセージを呼び出し、 *Execute*メソッドを*タイムスタンプ*ビジネス サービスは。</span><span class="sxs-lookup"><span data-stu-id="f7d85-250">For example, the request message to invoke the *Execute* method on the *TimeStamp* business service is:</span></span>  
   
 ```  
 <Execute xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/TimeStamp/Operation" />  
 ```  
   
- オーケストレーションは、要求メッセージを消費し、Siebel システムに渡されます。 Siebel システムからの応答は、ファイル送信場所に保存されます。 上記の要求メッセージに対する応答は次のとおりです。  
+ <span data-ttu-id="f7d85-251">オーケストレーションは、要求メッセージを消費し、Siebel システムに渡されます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-251">The orchestration consumes the request message and passes it to the Siebel system.</span></span> <span data-ttu-id="f7d85-252">Siebel システムからの応答は、ファイル送信場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-252">The response from the Siebel system is saved at the FILE send location.</span></span> <span data-ttu-id="f7d85-253">上記の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f7d85-253">The response for the above request message is:</span></span>  
   
 ```  
 \<?xml version="1.0" encoding="utf-8"?>  
@@ -173,11 +173,11 @@ Siebel ビジネス サービスは、Siebel の直接呼び出すことがで�
 </ExecuteResponse>  
 ```  
   
-## <a name="possible-exceptions"></a>可能性のある例外  
- 例外に関する情報のビジネス サービスを使用して操作を実行中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラーの Siebel アダプターと処理](../../adapters-and-accelerators/adapter-siebel/exceptions-and-error-handling-with-the-siebel-adapter.md)です。  
+## <a name="possible-exceptions"></a><span data-ttu-id="f7d85-254">可能性のある例外</span><span class="sxs-lookup"><span data-stu-id="f7d85-254">Possible Exceptions</span></span>  
+ <span data-ttu-id="f7d85-255">例外に関する情報のビジネス サービスを使用して操作を実行中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラーの Siebel アダプターと処理](../../adapters-and-accelerators/adapter-siebel/exceptions-and-error-handling-with-the-siebel-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-255">For information about the exceptions you might encounter while performing an operation on business service using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Exceptions and Error Handling with the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/exceptions-and-error-handling-with-the-siebel-adapter.md).</span></span>  
   
-## <a name="best-practices"></a>ベスト プラクティス  
- 展開して、BizTalk プロジェクトを構成することが後、は、バインド ファイルと呼ばれる XML ファイルに構成設定をエクスポートできます。 バインド ファイルを生成したできるように、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありません、ファイルから構成設定をインポートすることができます。 バインド ファイルの詳細については、次を参照してください。 [Siebel アダプターのアダプターのバインドを再利用](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md)です。
+## <a name="best-practices"></a><span data-ttu-id="f7d85-256">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="f7d85-256">Best Practices</span></span>  
+ <span data-ttu-id="f7d85-257">展開して、BizTalk プロジェクトを構成することが後、は、バインド ファイルと呼ばれる XML ファイルに構成設定をエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-257">After you have deployed and configured the BizTalk project, you can export configuration settings to an XML file called the bindings file.</span></span> <span data-ttu-id="f7d85-258">バインド ファイルを生成したできるように、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありません、ファイルから構成設定をインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="f7d85-258">Once you generate a bindings file, you can import the configuration settings from the file so that you do not need to create the send ports, receive ports, etc. for the same orchestration.</span></span> <span data-ttu-id="f7d85-259">バインド ファイルの詳細については、次を参照してください。 [Siebel アダプターのアダプターのバインドを再利用](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7d85-259">For more information about binding files, see [Reuse adapter bindings in the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md).</span></span>
   
-## <a name="see-also"></a>参照  
-[Siebel アダプターと BizTalk アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="f7d85-260">参照</span><span class="sxs-lookup"><span data-stu-id="f7d85-260">See Also</span></span>  
+[<span data-ttu-id="f7d85-261">Siebel アダプターと BizTalk アプリケーションを作成する構成要素</span><span class="sxs-lookup"><span data-stu-id="f7d85-261">Building blocks to create BizTalk Applications with the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)

@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-9-restart-biztalk-serverhl7main"></a>手順 9: BizTalk Server_hl7_main を再起動します。
-このステップで再起動して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルでは、変更するためにします。  
+# <a name="step-9-restart-biztalk-serverhl7main"></a><span data-ttu-id="17565-102">手順 9: BizTalk Server_hl7_main を再起動します。</span><span class="sxs-lookup"><span data-stu-id="17565-102">Step 9: Restart BizTalk Server_hl7_main</span></span>
+<span data-ttu-id="17565-103">このステップで再起動して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルでは、変更するためにします。</span><span class="sxs-lookup"><span data-stu-id="17565-103">In this step, you restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] in order for the changes you made in this tutorial to take effect.</span></span>  
   
-### <a name="to-restart-biztalk-server"></a>BizTalk Server を再起動するには  
+### <a name="to-restart-biztalk-server"></a><span data-ttu-id="17565-104">BizTalk Server を再起動するには</span><span class="sxs-lookup"><span data-stu-id="17565-104">To restart BizTalk Server</span></span>  
   
-1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft [!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)]** 、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  <span data-ttu-id="17565-105">をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft [!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)]** 、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="17565-105">Click **Start**, point to **Programs**, point to **Microsoft [!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)]**, and then click **BizTalk Server Administration**.</span></span>  
   
-2.  Microsoft BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**プラットフォームの設定**、 をクリックし、**のホスト インスタンスの**します。  
+2.  <span data-ttu-id="17565-106">Microsoft BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**プラットフォームの設定**、 をクリックし、**のホスト インスタンスの**します。</span><span class="sxs-lookup"><span data-stu-id="17565-106">In the Microsoft BizTalk Server Administration console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then click **Host Instances**.</span></span>  
   
-3.  ホスト インスタンス ペインで右クリック**BizTalkServerApplication**、クリックして**再起動**です。  
+3.  <span data-ttu-id="17565-107">ホスト インスタンス ペインで右クリック**BizTalkServerApplication**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="17565-107">In the Host Instances pane, right-click **BizTalkServerApplication**, and then click **Restart**.</span></span>  
   
- 進みます[手順 10: Interrogative シナリオを確認してください](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)です。
+ <span data-ttu-id="17565-108">進みます[手順 10: Interrogative シナリオを確認してください](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="17565-108">Proceed to [Step 10: Verify the Interrogative Scenario](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md).</span></span>

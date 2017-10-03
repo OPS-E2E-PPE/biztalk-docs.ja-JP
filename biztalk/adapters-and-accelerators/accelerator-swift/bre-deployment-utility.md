@@ -21,51 +21,51 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="bre-deployment-utility"></a>BRE 配置ユーティリティ
-BRE 配置ユーティリティを使用を発行し、ビジネス ルール エンジン (BRE) ボキャブラリと SWIFT スキーマに必要なポリシーを展開することができます。 メッセージの種類の BRE 検証を有効にするには、公開およびこれらのボキャブラリおよびポリシーの展開が必要です。  
+# <a name="bre-deployment-utility"></a><span data-ttu-id="39aa3-102">BRE 配置ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="39aa3-102">BRE Deployment Utility</span></span>
+<span data-ttu-id="39aa3-103">BRE 配置ユーティリティを使用を発行し、ビジネス ルール エンジン (BRE) ボキャブラリと SWIFT スキーマに必要なポリシーを展開することができます。</span><span class="sxs-lookup"><span data-stu-id="39aa3-103">You can use the BRE Deployment Utility to publish and deploy the Business Rule Engine (BRE) vocabularies and policies required for a SWIFT schema.</span></span> <span data-ttu-id="39aa3-104">メッセージの種類の BRE 検証を有効にするには、公開およびこれらのボキャブラリおよびポリシーの展開が必要です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-104">Publishing and deploying these vocabularies and policies is required to enable BRE validation for the message type.</span></span>  
   
- SWIFT 標準リリース ガイド (SRGs) を使用して、必要な規則を識別するしを使用して、ビジネス ルールを展開することも、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ボキャブラリとポリシーを展開するビジネス ルール作成ツールです。 ただし、BRE 配置ユーティリティを使用することははるかに簡単です。  
+ <span data-ttu-id="39aa3-105">SWIFT 標準リリース ガイド (SRGs) を使用して、必要な規則を識別するしを使用して、ビジネス ルールを展開することも、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ボキャブラリとポリシーを展開するビジネス ルール作成ツールです。</span><span class="sxs-lookup"><span data-stu-id="39aa3-105">You can also deploy business rules by using the SWIFT Standards Release Guides (SRGs) to identify the required rules, and then using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Business Rule Composer tool to deploy the vocabularies and policies.</span></span> <span data-ttu-id="39aa3-106">ただし、BRE 配置ユーティリティを使用することははるかに簡単です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-106">However, using the BRE Deployment Utility is much easier.</span></span>  
   
- BRE 配置ユーティリティの実行、次の場合。  
+ <span data-ttu-id="39aa3-107">BRE 配置ユーティリティの実行、次の場合。</span><span class="sxs-lookup"><span data-stu-id="39aa3-107">The BRE Deployment Utility accomplishes the following:</span></span>  
   
--   指定した展開済みのアセンブリを調査し、アセンブリの展開されているメッセージ スキーマを決定します。  
+-   <span data-ttu-id="39aa3-108">指定した展開済みのアセンブリを調査し、アセンブリの展開されているメッセージ スキーマを決定します。</span><span class="sxs-lookup"><span data-stu-id="39aa3-108">Examines the deployed assembly that you specify and determines the message schemas that you deployed for the assembly.</span></span>  
   
--   発行、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_CodeLists.xml と[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]に必要な _Functions.xml ボキャブラリ[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ビジネス ルールの処理です。  
+-   <span data-ttu-id="39aa3-109">発行、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_CodeLists.xml と[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]に必要な _Functions.xml ボキャブラリ[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ビジネス ルールの処理です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-109">Publishes the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_CodeLists.xml and [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_Functions.xml vocabularies required for [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] business rules processing.</span></span>  
   
--   ポリシーを展開、SWIFT 基本 (参照ポリシー、パーティの識別子のポリシー、およびネットワーク ルール ポリシー) メッセージ スキーマに関連付けられているし、発行します。  
+-   <span data-ttu-id="39aa3-110">ポリシーを展開、SWIFT 基本 (参照ポリシー、パーティの識別子のポリシー、およびネットワーク ルール ポリシー) メッセージ スキーマに関連付けられているし、発行します。</span><span class="sxs-lookup"><span data-stu-id="39aa3-110">Publishes and deploys the SWIFT base policies (reference policy, party identifier policy, and network rule policies) associated with the message schemas.</span></span>  
   
--   公開し、マスター ポリシーと各メッセージ スキーマに関連付けられている検証ポリシーを展開します。  
+-   <span data-ttu-id="39aa3-111">公開し、マスター ポリシーと各メッセージ スキーマに関連付けられている検証ポリシーを展開します。</span><span class="sxs-lookup"><span data-stu-id="39aa3-111">Publishes and deploys the master policy and validation policy associated with each message schema.</span></span>  
   
--   これは、すべての手順を示すログ ファイルを生成します。 このファイルで BREDeploymentLog.txt、 \<*ドライブ*>: \Documents and settings \all \all Data フォルダーです。  
-  
-    > [!NOTE]
-    >  BRE 配置ユーティリティ配置しません BIC マスター ポリシーおよび BIC 検証ポリシー。 ルール エンジン展開ウィザードを使用して、これらを展開する必要があります。  
+-   <span data-ttu-id="39aa3-112">これは、すべての手順を示すログ ファイルを生成します。</span><span class="sxs-lookup"><span data-stu-id="39aa3-112">Generates a log file that indicates all the steps that it takes.</span></span> <span data-ttu-id="39aa3-113">このファイルで BREDeploymentLog.txt、 \<*ドライブ*>: \Documents and settings \all \all Data フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="39aa3-113">This file is BREDeploymentLog.txt in the \<*drive*>:\Documents and Settings\All Users\Application Data folder.</span></span>  
   
     > [!NOTE]
-    >  インストールした場合[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]で既定以外のディレクトリ (C:\Program files \microsoft 以外[!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)])、または 64 ビット コンピューターで作業している、BRE 配置ユーティリティは正しく動きません内のパスを変更するまで、BREDeployment.exe.config ファイルです。 この構成ファイルにある、 \<*ドライブ*>: \Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\SDK\Tools フォルダーです。 ユーティリティの構成を更新するには、メモ帳で、BREDeployment.exe.config を開き、基本ポリシー、スキーマ、およびボキャブラリのディレクトリのフォルダーを変更します。  
-  
- 配置ユーティリティを使用して、展開解除と、ポリシーとボキャブラリを非公開にこのプロセスを反転させることができますも。 このユーティリティが両方の展開を機能の展開を解除します。  
-  
-### <a name="to-use-the-bre-deployment-utility"></a>BRE 配置ユーティリティを使用するには  
-  
-1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk Accelerator 用 SWIFT**、順にクリック**BRE 配置ユーティリティ**です。  
-  
-2.  BRE 配置ユーティリティでクリックして**参照**です。  
-  
-3.  展開済みのアセンブリまたはアセンブリの公開、ボキャブラリとポリシーを展開し、をクリックしたい選択**OK**です。  
-  
-4.  をクリックして**展開**です。  
+    >  <span data-ttu-id="39aa3-114">BRE 配置ユーティリティ配置しません BIC マスター ポリシーおよび BIC 検証ポリシー。</span><span class="sxs-lookup"><span data-stu-id="39aa3-114">The BRE Deployment Utility does not deploy the BIC Master Policy and BIC Validation Policy.</span></span> <span data-ttu-id="39aa3-115">ルール エンジン展開ウィザードを使用して、これらを展開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="39aa3-115">You must deploy these using the Rule Engine Deployment wizard.</span></span>  
   
     > [!NOTE]
-    >  そのアセンブリを展開するスキーマに基づいて、BRE 配置ユーティリティは、プロセス実行を関連するルールを特定し、BRE を使用するために発行することです。 完了したら、BRE 配置ユーティリティが表示されます、次のメッセージ:**配置が完了したら**です。 ビジネス ルール作成ツールを使用すると、展開の成功を確認します。  
+    >  <span data-ttu-id="39aa3-116">インストールした場合[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]で既定以外のディレクトリ (C:\Program files \microsoft 以外[!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)])、または 64 ビット コンピューターで作業している、BRE 配置ユーティリティは正しく動きません内のパスを変更するまで、BREDeployment.exe.config ファイルです。</span><span class="sxs-lookup"><span data-stu-id="39aa3-116">If you have installed [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] in a non-default directory (other than C:\Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]), or you are working on a 64-bit computer, the BRE Deployment Utility will not work correctly until you change the paths in the BREDeployment.exe.config file.</span></span> <span data-ttu-id="39aa3-117">この構成ファイルにある、 \<*ドライブ*>: \Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\SDK\Tools フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="39aa3-117">This configuration file is located in the \<*drive*>:\Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\SDK\Tools folder.</span></span> <span data-ttu-id="39aa3-118">ユーティリティの構成を更新するには、メモ帳で、BREDeployment.exe.config を開き、基本ポリシー、スキーマ、およびボキャブラリのディレクトリのフォルダーを変更します。</span><span class="sxs-lookup"><span data-stu-id="39aa3-118">To update the utility's configuration, open BREDeployment.exe.config in Notepad, and change the folders for the base policies, schemas, and vocabulary directories.</span></span>  
+  
+ <span data-ttu-id="39aa3-119">配置ユーティリティを使用して、展開解除と、ポリシーとボキャブラリを非公開にこのプロセスを反転させることができますも。</span><span class="sxs-lookup"><span data-stu-id="39aa3-119">You can also use the deployment utility to reverse this process, undeploying and unpublishing the policies and vocabularies.</span></span> <span data-ttu-id="39aa3-120">このユーティリティが両方の展開を機能の展開を解除します。</span><span class="sxs-lookup"><span data-stu-id="39aa3-120">The utility has both deploy and undeploy functionality.</span></span>  
+  
+### <a name="to-use-the-bre-deployment-utility"></a><span data-ttu-id="39aa3-121">BRE 配置ユーティリティを使用するには</span><span class="sxs-lookup"><span data-stu-id="39aa3-121">To use the BRE Deployment Utility</span></span>  
+  
+1.  <span data-ttu-id="39aa3-122">をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk Accelerator 用 SWIFT**、順にクリック**BRE 配置ユーティリティ**です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-122">Click **Start**, point to **Programs**, point to **Microsoft BizTalk Accelerator for SWIFT**, and then click **BRE Deployment Utility**.</span></span>  
+  
+2.  <span data-ttu-id="39aa3-123">BRE 配置ユーティリティでクリックして**参照**です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-123">In the BRE Deployment Utility, click **Browse**.</span></span>  
+  
+3.  <span data-ttu-id="39aa3-124">展開済みのアセンブリまたはアセンブリの公開、ボキャブラリとポリシーを展開し、をクリックしたい選択**OK**です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-124">Select the deployed assembly or assemblies for which you want to publish and deploy vocabularies and policies, and then click **OK**.</span></span>  
+  
+4.  <span data-ttu-id="39aa3-125">をクリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-125">Click **Deploy**.</span></span>  
   
     > [!NOTE]
-    >  ポリシーとボキャブラリを展開解除する をクリックして**Undeploy**です。 展開解除プロセスは、他の展開済みのポリシーによって使用される可能性があります A4SWIFT_CodeLists.xml と A4SWIFT_Functions.xml ボキャブラリを展開解除されません。  
-  
-5.  検索\<*ドライブ*>: \Documents and settings \all \all データをユーティリティには、ログが作成されたことを確認ファイル BREDeploymentLog.txt です。  
+    >  <span data-ttu-id="39aa3-126">そのアセンブリを展開するスキーマに基づいて、BRE 配置ユーティリティは、プロセス実行を関連するルールを特定し、BRE を使用するために発行することです。</span><span class="sxs-lookup"><span data-stu-id="39aa3-126">Based on the schemas that you deployed with that assembly, the BRE Deployment Utility goes through the process of identifying the related rules and publishing them for use with the BRE.</span></span> <span data-ttu-id="39aa3-127">完了したら、BRE 配置ユーティリティが表示されます、次のメッセージ:**配置が完了したら**です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-127">When complete, the BRE Deployment Utility displays the following message: **Deployment has completed**.</span></span> <span data-ttu-id="39aa3-128">ビジネス ルール作成ツールを使用すると、展開の成功を確認します。</span><span class="sxs-lookup"><span data-stu-id="39aa3-128">Use the Business Rule Composer to verify successful deployment.</span></span>  
   
     > [!NOTE]
-    >  各配置手順を確認するテキスト エディターを使用して、ログ ファイルを開くことができます。  
+    >  <span data-ttu-id="39aa3-129">ポリシーとボキャブラリを展開解除する をクリックして**Undeploy**です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-129">To undeploy the policies and vocabularies, click **Undeploy**.</span></span> <span data-ttu-id="39aa3-130">展開解除プロセスは、他の展開済みのポリシーによって使用される可能性があります A4SWIFT_CodeLists.xml と A4SWIFT_Functions.xml ボキャブラリを展開解除されません。</span><span class="sxs-lookup"><span data-stu-id="39aa3-130">The undeploy process does not undeploy the A4SWIFT_CodeLists.xml and A4SWIFT_Functions.xml vocabularies, which might be used by other deployed policies.</span></span>  
   
-## <a name="see-also"></a>参照  
- [ツール](../../adapters-and-accelerators/accelerator-swift/tools.md)
+5.  <span data-ttu-id="39aa3-131">検索\<*ドライブ*>: \Documents and settings \all \all データをユーティリティには、ログが作成されたことを確認ファイル BREDeploymentLog.txt です。</span><span class="sxs-lookup"><span data-stu-id="39aa3-131">Locate \<*drive*>:\Documents and Settings\All Users\Application Data to confirm that the utility created the log file BREDeploymentLog.txt.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="39aa3-132">各配置手順を確認するテキスト エディターを使用して、ログ ファイルを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="39aa3-132">You can open the log file by using a text editor to confirm each deployment step.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="39aa3-133">参照</span><span class="sxs-lookup"><span data-stu-id="39aa3-133">See Also</span></span>  
+ [<span data-ttu-id="39aa3-134">ツール</span><span class="sxs-lookup"><span data-stu-id="39aa3-134">Tools</span></span>](../../adapters-and-accelerators/accelerator-swift/tools.md)

@@ -18,17 +18,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="about-business-rules"></a>ビジネス ルールの概要
-ここでは、ビジネス ルールの概要と、ルール エンジンによってビジネス ルールを実行する方法について説明します。  
+# <a name="about-business-rules"></a><span data-ttu-id="615fb-102">ビジネス ルールの概要</span><span class="sxs-lookup"><span data-stu-id="615fb-102">About Business Rules</span></span>
+<span data-ttu-id="615fb-103">ここでは、ビジネス ルールの概要と、ルール エンジンによってビジネス ルールを実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="615fb-103">This section describes what business rules are, and explain how the rule engine executes business rules.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="615fb-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="615fb-104">In This Section</span></span>  
   
--   [ルール](../core/rules.md)  
+-   [<span data-ttu-id="615fb-105">ルール</span><span class="sxs-lookup"><span data-stu-id="615fb-105">Rules</span></span>](../core/rules.md)  
   
--   [ポリシー](../core/policies.md)  
+-   [<span data-ttu-id="615fb-106">ポリシー</span><span class="sxs-lookup"><span data-stu-id="615fb-106">Policies</span></span>](../core/policies.md)  
   
--   [ボキャブラリ](../core/vocabularies.md)  
+-   [<span data-ttu-id="615fb-107">ボキャブラリ</span><span class="sxs-lookup"><span data-stu-id="615fb-107">Vocabularies</span></span>](../core/vocabularies.md)  
   
--   [ファクト](../core/facts.md)  
+-   [<span data-ttu-id="615fb-108">ファクト</span><span class="sxs-lookup"><span data-stu-id="615fb-108">Facts</span></span>](../core/facts.md)  
   
--   [ルール エンジン](../core/rule-engine.md)
+-   [<span data-ttu-id="615fb-109">ルール エンジン</span><span class="sxs-lookup"><span data-stu-id="615fb-109">Rule Engine</span></span>](../core/rule-engine.md)

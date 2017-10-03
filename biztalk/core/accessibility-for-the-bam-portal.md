@@ -21,8 +21,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="accessibility-for-the-bam-portal"></a>BAM ポータルのユーザー補助機能
-BAM ポータルでは、Microsoft Internet Explorer の標準的なユーザー補助機能がサポートされています。 Internet Explorer のユーザー補助機能に関する詳細については、次を参照してください。 [Internet Explorer 7 のユーザー補助機能](https://www.microsoft.com/en-us/Accessibility/windows)します。  
+# <a name="accessibility-for-the-bam-portal"></a><span data-ttu-id="f2311-102">BAM ポータルのユーザー補助機能</span><span class="sxs-lookup"><span data-stu-id="f2311-102">Accessibility for the BAM Portal</span></span>
+<span data-ttu-id="f2311-103">BAM ポータルでは、Microsoft Internet Explorer の標準的なユーザー補助機能がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="f2311-103">The BAM portal supports standard accessibility features for Microsoft Internet Explorer.</span></span> <span data-ttu-id="f2311-104">Internet Explorer のユーザー補助機能に関する詳細については、次を参照してください。 [Internet Explorer 7 のユーザー補助機能](https://www.microsoft.com/en-us/Accessibility/windows)します。</span><span class="sxs-lookup"><span data-stu-id="f2311-104">For more information about the accessibility features of Internet Explorer, see [Accessibility in Internet Explorer 7](https://www.microsoft.com/en-us/Accessibility/windows).</span></span>  
   
-## <a name="see-also"></a>参照  
- [BAM ポータル](../core/bam-portal.md)
+## <a name="see-also"></a><span data-ttu-id="f2311-105">参照</span><span class="sxs-lookup"><span data-stu-id="f2311-105">See Also</span></span>  
+ [<span data-ttu-id="f2311-106">BAM ポータル</span><span class="sxs-lookup"><span data-stu-id="f2311-106">BAM Portal</span></span>](../core/bam-portal.md)

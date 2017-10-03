@@ -19,21 +19,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="engine-control-functions"></a>エンジン制御関数
-このセクションでは、アプリケーションまたはポリシーがルール エンジンの作業メモリ内のファクトを制御できるようにするビジネス ルール エンジンの制御関数に関連する動作について説明します。 作業メモリ内に存在するファクトによって、評価される条件と実行されるアクションが決まります。  
+# <a name="engine-control-functions"></a><span data-ttu-id="065d9-102">エンジン制御関数</span><span class="sxs-lookup"><span data-stu-id="065d9-102">Engine Control Functions</span></span>
+<span data-ttu-id="065d9-103">このセクションでは、アプリケーションまたはポリシーがルール エンジンの作業メモリ内のファクトを制御できるようにするビジネス ルール エンジンの制御関数に関連する動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="065d9-103">This section explains the behaviors associated with several Business Rule engine control functions that allow an application or policy to control the facts in the rule engine's working memory.</span></span> <span data-ttu-id="065d9-104">作業メモリ内に存在するファクトによって、評価される条件と実行されるアクションが決まります。</span><span class="sxs-lookup"><span data-stu-id="065d9-104">The presence of facts in the working memory drives the conditions that are evaluated and the actions that are executed.</span></span>  
   
- このセクションの内容を調べ、 **Assert**、 **Retract**、 **RetractByType**、 **Reassert**、および**更新**異なるファクト関数: .NET オブジェクト、 **TypedXmlDocument**、 **DataConnection**、および**TypedDataTable**です。  
+ <span data-ttu-id="065d9-105">このセクションの内容を調べ、 **Assert**、 **Retract**、 **RetractByType**、 **Reassert**、および**更新**異なるファクト関数: .NET オブジェクト、 **TypedXmlDocument**、 **DataConnection**、および**TypedDataTable**です。</span><span class="sxs-lookup"><span data-stu-id="065d9-105">This section examines the **Assert**, **Retract**, **RetractByType**, **Reassert**, and **Update** functions for different facts: .NET objects, **TypedXmlDocument**, **DataConnection**, and **TypedDataTable**.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="065d9-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="065d9-106">In This Section</span></span>  
   
--   [Filter](../core/assert.md)  
+-   [<span data-ttu-id="065d9-107">Filter</span><span class="sxs-lookup"><span data-stu-id="065d9-107">Assert</span></span>](../core/assert.md)  
   
--   [取り消し](../core/retract.md)  
+-   [<span data-ttu-id="065d9-108">取り消し</span><span class="sxs-lookup"><span data-stu-id="065d9-108">Retract</span></span>](../core/retract.md)  
   
--   [RetractByType](../core/retractbytype.md)  
+-   [<span data-ttu-id="065d9-109">RetractByType</span><span class="sxs-lookup"><span data-stu-id="065d9-109">RetractByType</span></span>](../core/retractbytype.md)  
   
--   [再アサート](../core/reassert.md)  
+-   [<span data-ttu-id="065d9-110">再アサート</span><span class="sxs-lookup"><span data-stu-id="065d9-110">Reassert</span></span>](../core/reassert.md)  
   
--   [Update](../core/update1.md)  
+-   [<span data-ttu-id="065d9-111">Update</span><span class="sxs-lookup"><span data-stu-id="065d9-111">Update</span></span>](../core/update1.md)  
   
--   [停止](../core/halt.md)
+-   [<span data-ttu-id="065d9-112">停止</span><span class="sxs-lookup"><span data-stu-id="065d9-112">Halt</span></span>](../core/halt.md)

@@ -21,38 +21,38 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターのインストールに関するをトラブルシューティングします。
-Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するのにはトラブルシューティングの手法の使用について説明しもいくつかの既知の問題を示します。  
+# <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a><span data-ttu-id="47de0-102">Oracle データベース アダプターのインストールに関するをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="47de0-102">Troubleshoot installation issues with the Oracle Database adapter</span></span>
+<span data-ttu-id="47de0-103">Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。</span><span class="sxs-lookup"><span data-stu-id="47de0-103">Installation of the Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] copies the product binaries on the computer and registers the bindings for each adapter.</span></span> <span data-ttu-id="47de0-104">このセクションでは、インストール エラーを解決するのにはトラブルシューティングの手法の使用について説明しもいくつかの既知の問題を示します。</span><span class="sxs-lookup"><span data-stu-id="47de0-104">This section discusses using troubleshooting techniques to resolve installation errors, and also lists some known issues.</span></span>  
   
-## <a name="logging-messages-for-setup-actions"></a>セットアップ操作のログ メッセージ  
- [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムをインストールする標準的なタスクを実行する、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 さらに、セットアップでは、アダプターのバインドの登録などの特定のカスタム アクションも実行します。 セットアップを実行する標準的なだけでなくカスタムの操作のメッセージをログに記録できます。  
+## <a name="logging-messages-for-setup-actions"></a><span data-ttu-id="47de0-105">セットアップ操作のログ メッセージ</span><span class="sxs-lookup"><span data-stu-id="47de0-105">Logging Messages for Setup Actions</span></span>  
+ <span data-ttu-id="47de0-106">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムをインストールする標準的なタスクを実行する、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="47de0-106">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program performs the standard task of installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="47de0-107">さらに、セットアップでは、アダプターのバインドの登録などの特定のカスタム アクションも実行します。</span><span class="sxs-lookup"><span data-stu-id="47de0-107">Additionally, the setup also performs certain custom actions such as registering the adapter bindings.</span></span> <span data-ttu-id="47de0-108">セットアップを実行する標準的なだけでなくカスタムの操作のメッセージをログに記録できます。</span><span class="sxs-lookup"><span data-stu-id="47de0-108">You can log messages for both the standard as well as custom actions that the setup performs.</span></span>  
   
--   [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] MSI を使用してアダプターに固有のファイルをインストールします。 したがって、セットアップのログ記録は、標準の MSI ログです。 
+-   <span data-ttu-id="47de0-109">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] MSI を使用してアダプターに固有のファイルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="47de0-109">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup installs the adapter-specific files using an MSI.</span></span> <span data-ttu-id="47de0-110">したがって、セットアップのログ記録は、標準の MSI ログです。</span><span class="sxs-lookup"><span data-stu-id="47de0-110">Therefore, the logging for the setup is the standard MSI logging.</span></span> 
   
--   セットアップ プログラムを実行するカスタム アクションのすべてのログは %temp%\adaptersetup.log です。 ログ ファイルにトレースが失敗した場合、トレースもイベント ログにできます。  
+-   <span data-ttu-id="47de0-111">セットアップ プログラムを実行するカスタム アクションのすべてのログは %temp%\adaptersetup.log です。</span><span class="sxs-lookup"><span data-stu-id="47de0-111">All logs for the custom actions that the setup program performs are available at %TEMP%\adaptersetup.log.</span></span> <span data-ttu-id="47de0-112">ログ ファイルにトレースが失敗した場合、トレースもイベント ログにできます。</span><span class="sxs-lookup"><span data-stu-id="47de0-112">If the tracing to the log file fails, the traces are also available in the event log.</span></span>  
   
-##  <a name="BKMK_OraDBBinding"></a>アダプターのバインドの登録に失敗します。  
- **問題**  
+##  <span data-ttu-id="47de0-113"><a name="BKMK_OraDBBinding"></a>アダプターのバインドの登録に失敗します。</span><span class="sxs-lookup"><span data-stu-id="47de0-113"><a name="BKMK_OraDBBinding"></a> Setup fails to register adapter bindings</span></span>  
+ <span data-ttu-id="47de0-114">**問題**</span><span class="sxs-lookup"><span data-stu-id="47de0-114">**Problem**</span></span>  
   
- Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ ウィザードは、アダプターのバインドの登録に失敗するが、アダプターのインストールが続行されます。  
+ <span data-ttu-id="47de0-115">Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ ウィザードは、アダプターのバインドの登録に失敗するが、アダプターのインストールが続行されます。</span><span class="sxs-lookup"><span data-stu-id="47de0-115">The Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup wizard fails to register the adapter bindings, but proceeds with the adapter installation.</span></span>  
   
- **原因**  
+ <span data-ttu-id="47de0-116">**原因**</span><span class="sxs-lookup"><span data-stu-id="47de0-116">**Cause**</span></span>  
   
- 問題があります[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]インストール、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]インストール、または壊れている可能性が machine.config ファイルです。 アダプターのバインドは、machine.config ファイルに書き込まれます。  
+ <span data-ttu-id="47de0-117">問題があります[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]インストール、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]インストール、または壊れている可能性が machine.config ファイルです。</span><span class="sxs-lookup"><span data-stu-id="47de0-117">This might result due to problems with [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] installation, [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] installation, or the machine.config file being corrupt.</span></span> <span data-ttu-id="47de0-118">アダプターのバインドは、machine.config ファイルに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="47de0-118">The adapter bindings are written to the machine.config file.</span></span>  
   
- **解決策**  
+ <span data-ttu-id="47de0-119">**解決策**</span><span class="sxs-lookup"><span data-stu-id="47de0-119">**Resolution**</span></span>  
   
-手動で登録、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインド。 
+<span data-ttu-id="47de0-120">手動で登録、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインド。</span><span class="sxs-lookup"><span data-stu-id="47de0-120">Manually register the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding:</span></span> 
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  <span data-ttu-id="47de0-121">コンピューター上の machine.config ファイルに移動します。</span><span class="sxs-lookup"><span data-stu-id="47de0-121">Navigate to the machine.config file on the computer.</span></span> <span data-ttu-id="47de0-122">たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。</span><span class="sxs-lookup"><span data-stu-id="47de0-122">For example, on a 32-bit platform, the machine.config is available under \<system drive>:\WINDOWS\Microsoft.NET\Framework\\<version\>\CONFIG.</span></span>  
   
-     このパスに\<バージョン > は .NET Framework のバージョン。  
+     <span data-ttu-id="47de0-123">このパスに\<バージョン > は .NET Framework のバージョン。</span><span class="sxs-lookup"><span data-stu-id="47de0-123">In this path, \<version> is the version of the .NET Framework.</span></span>  
   
-2.  テキスト エディターを使用してファイルを開きます。  
+2.  <span data-ttu-id="47de0-124">テキスト エディターを使用してファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="47de0-124">Open the file by using a text editor.</span></span>  
   
-3.  登録する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインド。  
+3.  <span data-ttu-id="47de0-125">登録する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインド。</span><span class="sxs-lookup"><span data-stu-id="47de0-125">To register the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding:</span></span>  
   
-    1.  要素"system.serviceModel"を検索し、その下にある、次を追加します。  
+    1.  <span data-ttu-id="47de0-126">要素"system.serviceModel"を検索し、その下にある、次を追加します。</span><span class="sxs-lookup"><span data-stu-id="47de0-126">Search for the element "system.serviceModel" and add the following under it:</span></span>  
   
         ```  
         <client>  
@@ -60,75 +60,75 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
         </client>  
         ```  
   
-    2.  "BindingElementExtensions"system.serviceModel\extensions 下にある要素を検索します。  
+    2.  <span data-ttu-id="47de0-127">"BindingElementExtensions"system.serviceModel\extensions 下にある要素を検索します。</span><span class="sxs-lookup"><span data-stu-id="47de0-127">Search for the element "bindingElementExtensions" under system.serviceModel\extensions.</span></span>  
   
-    3.  不足している検索[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインドします。 "BindingElementExtensions"ノードの下の次のセクションを追加します。  
+    3.  <span data-ttu-id="47de0-128">不足している検索[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインドします。</span><span class="sxs-lookup"><span data-stu-id="47de0-128">Look for the missing [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding.</span></span> <span data-ttu-id="47de0-129">"BindingElementExtensions"ノードの下の次のセクションを追加します。</span><span class="sxs-lookup"><span data-stu-id="47de0-129">Add the following section under the "bindingElementExtensions" node.</span></span>  
   
-         [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を追加します。  
+         <span data-ttu-id="47de0-130">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を追加します。</span><span class="sxs-lookup"><span data-stu-id="47de0-130">For [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], add:</span></span>  
   
         ```  
         <add name="oracleDBAdapter" type="Microsoft.Adapters.OracleDB.OracleDBAdapterExtensionElement,Microsoft.Adapters.OracleDB, Version=<version>, Culture=neutral, PublicKeyToken=<public key>" />  
         ```  
   
-    4.  "BindingExtensions"system.serviceModel\extensions 下にある要素を検索します。  
+    4.  <span data-ttu-id="47de0-131">"BindingExtensions"system.serviceModel\extensions 下にある要素を検索します。</span><span class="sxs-lookup"><span data-stu-id="47de0-131">Search for the element "bindingExtensions" under system.serviceModel\extensions.</span></span>  
   
-    5.  不足している検索[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインドします。 "BindingExtensions"ノードの下の次のセクションを追加します。  
+    5.  <span data-ttu-id="47de0-132">不足している検索[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインドします。</span><span class="sxs-lookup"><span data-stu-id="47de0-132">Look for the missing [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding.</span></span> <span data-ttu-id="47de0-133">"BindingExtensions"ノードの下の次のセクションを追加します。</span><span class="sxs-lookup"><span data-stu-id="47de0-133">Add the following section under the "bindingExtensions" node.</span></span>  
   
-         [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を追加します。  
+         <span data-ttu-id="47de0-134">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を追加します。</span><span class="sxs-lookup"><span data-stu-id="47de0-134">For [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], add:</span></span>  
   
         ```  
         <add name="oracleDBBinding" type="Microsoft.Adapters.OracleDB.OracleDBAdapterBindingSection,Microsoft.Adapters.OracleDB, Version=<version>, Culture=neutral, PublicKeyToken=<public key>" />  
         ```  
   
     > [!NOTE]
-    >  公開キーとバージョンを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)です。  
+    >  <span data-ttu-id="47de0-135">公開キーとバージョンを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)です。</span><span class="sxs-lookup"><span data-stu-id="47de0-135">For information about how to determine the public key and the version, see [Determining the Public Key and Version](#BKMK_PubKey).</span></span>  
   
-4.  machine.config ファイルを保存して閉じます。  
+4.  <span data-ttu-id="47de0-136">machine.config ファイルを保存して閉じます。</span><span class="sxs-lookup"><span data-stu-id="47de0-136">Save and close the machine.config file.</span></span>  
   
-####  <a name="BKMK_PubKey"></a>公開キーとバージョンを決定します。  
- 公開キーを確認するには、次の手順を実行[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+####  <span data-ttu-id="47de0-137"><a name="BKMK_PubKey"></a>公開キーとバージョンを決定します。</span><span class="sxs-lookup"><span data-stu-id="47de0-137"><a name="BKMK_PubKey"></a> Determining the Public Key and Version</span></span>  
+ <span data-ttu-id="47de0-138">公開キーを確認するには、次の手順を実行[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="47de0-138">Perform the following steps to determine the public key for [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
   
-1.  Windows ディレクトリの通常 C:\WINDOWS\assembly に移動します。  
+1.  <span data-ttu-id="47de0-139">Windows ディレクトリの通常 C:\WINDOWS\assembly に移動します。</span><span class="sxs-lookup"><span data-stu-id="47de0-139">Navigate to the Windows directory, typically C:\WINDOWS\assembly.</span></span>  
   
-2.  公開キーと、バージョンを対象し、なるを選択し、DLL を右クリックして**プロパティ**です。 次の表に、dll の名前[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+2.  <span data-ttu-id="47de0-140">公開キーと、バージョンを対象し、なるを選択し、DLL を右クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="47de0-140">Right-click the DLL for which you want the public key and the version, and then select **Properties**.</span></span> <span data-ttu-id="47de0-141">次の表に、dll の名前[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="47de0-141">The following table lists the name of the DLL for [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
   
-    |[アダプター]|DLL の名前|  
+    |<span data-ttu-id="47de0-142">[アダプター]</span><span class="sxs-lookup"><span data-stu-id="47de0-142">Adapter</span></span>|<span data-ttu-id="47de0-143">DLL の名前</span><span class="sxs-lookup"><span data-stu-id="47de0-143">Name of the DLL</span></span>|  
     |-------------|---------------------|  
-    |[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]|Microsoft.Adapters.OracleDB|  
+    |[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]|<span data-ttu-id="47de0-144">Microsoft.Adapters.OracleDB</span><span class="sxs-lookup"><span data-stu-id="47de0-144">Microsoft.Adapters.OracleDB</span></span>|  
   
-3.  **全般** タブの値と比較、**公開キー トークンの**ラベルは、DLL の公開キーを指定します。 同様に、値のに対して、**バージョン**ラベルは、DLL のバージョン番号を指定します。  
+3.  <span data-ttu-id="47de0-145">**全般** タブの値と比較、**公開キー トークンの**ラベルは、DLL の公開キーを指定します。</span><span class="sxs-lookup"><span data-stu-id="47de0-145">On the **General** tab, the value against the **Public Key Token** label specifies the public key for the DLL.</span></span> <span data-ttu-id="47de0-146">同様に、値のに対して、**バージョン**ラベルは、DLL のバージョン番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="47de0-146">Similarly, value against the **Version** label specifies the version number for the DLL.</span></span>  
   
-4.  公開キーをコピーし、をクリックして**キャンセル**です。  
+4.  <span data-ttu-id="47de0-147">公開キーをコピーし、をクリックして**キャンセル**です。</span><span class="sxs-lookup"><span data-stu-id="47de0-147">Copy the public key, and then click **Cancel**.</span></span>  
   
-##  <a name="BKMK_ConsumeBinding"></a>64 ビット インストールで アダプター サービスのアドインまたはアダプター サービス参照の追加プラグインを使用しているときにエラー  
- **問題**  
+##  <span data-ttu-id="47de0-148"><a name="BKMK_ConsumeBinding"></a>64 ビット インストールで アダプター サービスのアドインまたはアダプター サービス参照の追加プラグインを使用しているときにエラー</span><span class="sxs-lookup"><span data-stu-id="47de0-148"><a name="BKMK_ConsumeBinding"></a> Error while using the Consume Adapter Service add-in or Add Adapter Service Reference plug-in on a 64-bit installation</span></span>  
+ <span data-ttu-id="47de0-149">**問題**</span><span class="sxs-lookup"><span data-stu-id="47de0-149">**Problem**</span></span>  
   
- 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の 64 ビット バージョンを実行する 64 ビット コンピューターで、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]次のエラーが発生します。  
+ <span data-ttu-id="47de0-150">使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の 64 ビット バージョンを実行する 64 ビット コンピューターで、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]次のエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="47de0-150">Using the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] on a 64-bit computer running 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] results in the following error:</span></span>  
   
 ```  
 No valid adapters are installed on this machine  
 ```  
   
- **原因**  
+ <span data-ttu-id="47de0-151">**原因**</span><span class="sxs-lookup"><span data-stu-id="47de0-151">**Cause**</span></span>  
   
- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] System.ServiceModel、machine.config ファイルには登録されている WCF カスタム バインドは、します。 64 ビット プラットフォームに 2 つの machine.config ファイル、32 ビット アプリケーションで使用されるものと、他の 64 ビット アプリケーションで使用されるあります。 そのため、64 ビット バージョンをインストールするときに、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]、セットアップ ウィザードは、machine.config ファイルの 64 ビット バージョンのバインドを登録します。 ただし、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 32 ビット プロセスとして実行し、そのため起動、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、プラグイン、machine.config ファイルの 32 ビット バージョンのバインドをチェックし、エラーが失敗しました。  
+ <span data-ttu-id="47de0-152">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] System.ServiceModel、machine.config ファイルには登録されている WCF カスタム バインドは、します。</span><span class="sxs-lookup"><span data-stu-id="47de0-152">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] is a WCF custom binding, which is registered under System.ServiceModel in the machine.config file.</span></span> <span data-ttu-id="47de0-153">64 ビット プラットフォームに 2 つの machine.config ファイル、32 ビット アプリケーションで使用されるものと、他の 64 ビット アプリケーションで使用されるあります。</span><span class="sxs-lookup"><span data-stu-id="47de0-153">A 64-bit platform has two machine.config files, one used by the 32-bit applications and the other used by the 64-bit applications.</span></span> <span data-ttu-id="47de0-154">そのため、64 ビット バージョンをインストールするときに、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]、セットアップ ウィザードは、machine.config ファイルの 64 ビット バージョンのバインドを登録します。</span><span class="sxs-lookup"><span data-stu-id="47de0-154">So, when you install the 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], the setup wizard registers the bindings in the 64-bit version of the machine.config file.</span></span> <span data-ttu-id="47de0-155">ただし、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 32 ビット プロセスとして実行し、そのため起動、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、プラグイン、machine.config ファイルの 32 ビット バージョンのバインドをチェックし、エラーが失敗しました。</span><span class="sxs-lookup"><span data-stu-id="47de0-155">However, [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] runs as a 32-bit process and hence when you launch the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], the plug-in checks for the bindings in the 32-bit version of the machine.config file and fails giving an error.</span></span>  
   
- **解決策**  
+ <span data-ttu-id="47de0-156">**解決策**</span><span class="sxs-lookup"><span data-stu-id="47de0-156">**Resolution**</span></span>  
   
--   32 ビットおよび 64 ビット バージョンの両方をインストール、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 64 ビット[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。  
+-   <span data-ttu-id="47de0-157">32 ビットおよび 64 ビット バージョンの両方をインストール、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 64 ビット[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。</span><span class="sxs-lookup"><span data-stu-id="47de0-157">Install both the 32-bit and 64-bit versions of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] on a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span>  
   
     > [!IMPORTANT]
-    >  64 ビットのみが必要[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。 32 ビットおよび 64 ビットのサイド バイ サイド インストール[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]1 台のコンピューターではサポートされません。  
+    >  <span data-ttu-id="47de0-158">64 ビットのみが必要[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。</span><span class="sxs-lookup"><span data-stu-id="47de0-158">You must only have a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span> <span data-ttu-id="47de0-159">32 ビットおよび 64 ビットのサイド バイ サイド インストール[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]1 台のコンピューターではサポートされません。</span><span class="sxs-lookup"><span data-stu-id="47de0-159">Side-by-side installation of 32-bit and 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] on a single computer is not supported.</span></span>  
   
--   Oracle クライアント 11.1.0.6 パッチ セット 11.1.0.7 に Oracle Data Access Components の 32 ビットおよび 64 ビット両方のバージョンをインストールします。  
+-   <span data-ttu-id="47de0-160">Oracle クライアント 11.1.0.6 パッチ セット 11.1.0.7 に Oracle Data Access Components の 32 ビットおよび 64 ビット両方のバージョンをインストールします。</span><span class="sxs-lookup"><span data-stu-id="47de0-160">Install both the 32-bit and 64-bit versions of the Oracle Data Access Components for Oracle Client 11.1.0.6 with Patch Set 11.1.0.7.</span></span>  
   
     > [!NOTE]
-    >  アプリケーションは ODP.NET の最新のバージョンで動作を確認するには、"ポリシー Dll"コンピューターにインストールされているし、GAC に登録が必要です。 詳細については、次を参照してください。 [Oracle Data Provider for .NET](http://go.microsoft.com/fwlink/p/?LinkId=92834) Oracle の web サイトです。  
+    >  <span data-ttu-id="47de0-161">アプリケーションは ODP.NET の最新のバージョンで動作を確認するには、"ポリシー Dll"コンピューターにインストールされているし、GAC に登録が必要です。</span><span class="sxs-lookup"><span data-stu-id="47de0-161">To make sure your application works with the most recent version of ODP.NET, you must have the "policy DLLs" installed on the computer and registered in the GAC.</span></span> <span data-ttu-id="47de0-162">詳細については、次を参照してください。 [Oracle Data Provider for .NET](http://go.microsoft.com/fwlink/p/?LinkId=92834) Oracle の web サイトです。</span><span class="sxs-lookup"><span data-stu-id="47de0-162">For more information, see [Oracle Data Provider for .NET](http://go.microsoft.com/fwlink/p/?LinkId=92834) on Oracle's website.</span></span>  
   
-##  <a name="BKMK_InvalidBinding"></a>BizTalk Server 管理コンソールで、64 ビット インストールでの Oracle データベース アダプターのポートの構成中に無効なバインド エラー  
- **問題**  
+##  <span data-ttu-id="47de0-163"><a name="BKMK_InvalidBinding"></a>BizTalk Server 管理コンソールで、64 ビット インストールでの Oracle データベース アダプターのポートの構成中に無効なバインド エラー</span><span class="sxs-lookup"><span data-stu-id="47de0-163"><a name="BKMK_InvalidBinding"></a> Invalid binding error while configuring Oracle database adapter ports in BizTalk Server Administration Console on a 64-bit installation</span></span>  
+ <span data-ttu-id="47de0-164">**問題**</span><span class="sxs-lookup"><span data-stu-id="47de0-164">**Problem**</span></span>  
   
- アダプターのポートを構成しようとすると[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、次のエラーを取得します。  
+ <span data-ttu-id="47de0-165">アダプターのポートを構成しようとすると[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、次のエラーを取得します。</span><span class="sxs-lookup"><span data-stu-id="47de0-165">When you try to configure a port for the adapter in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you get the following error:</span></span>  
   
 ```  
 "Unable to create binding configuration element for editing. Check the values of the BindingType and BindingConfiguration properties.  
@@ -136,21 +136,21 @@ No valid adapters are installed on this machine
 Verify the binding extension is registered in machine.config."  
 ```  
   
- **原因**  
+ <span data-ttu-id="47de0-166">**原因**</span><span class="sxs-lookup"><span data-stu-id="47de0-166">**Cause**</span></span>  
   
- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] System.ServiceModel、machine.config ファイルには登録されている WCF カスタム バインドは、します。 64 ビット プラットフォームに 2 つの machine.config ファイル、32 ビット アプリケーションで使用されるものと、他の 64 ビット アプリケーションで使用されるあります。 そのため、64 ビット バージョンをインストールするときに、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]、セットアップ ウィザードは、machine.config ファイルの 64 ビット バージョンのバインドを登録します。 ただし、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、32 ビット プロセスとして実行されるされため、アダプターのポートを構成するときに、machine.config ファイルの 32 ビット バージョンのバインドを確認エラーは失敗します。  
+ <span data-ttu-id="47de0-167">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] System.ServiceModel、machine.config ファイルには登録されている WCF カスタム バインドは、します。</span><span class="sxs-lookup"><span data-stu-id="47de0-167">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] is a WCF custom binding, which is registered under System.ServiceModel in the machine.config file.</span></span> <span data-ttu-id="47de0-168">64 ビット プラットフォームに 2 つの machine.config ファイル、32 ビット アプリケーションで使用されるものと、他の 64 ビット アプリケーションで使用されるあります。</span><span class="sxs-lookup"><span data-stu-id="47de0-168">A 64-bit platform has two machine.config files, one used by the 32-bit applications and the other used by the 64-bit applications.</span></span> <span data-ttu-id="47de0-169">そのため、64 ビット バージョンをインストールするときに、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]、セットアップ ウィザードは、machine.config ファイルの 64 ビット バージョンのバインドを登録します。</span><span class="sxs-lookup"><span data-stu-id="47de0-169">So, when you install the 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], the setup wizard registers the bindings in the 64-bit version of the machine.config file.</span></span> <span data-ttu-id="47de0-170">ただし、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、32 ビット プロセスとして実行されるされため、アダプターのポートを構成するときに、machine.config ファイルの 32 ビット バージョンのバインドを確認エラーは失敗します。</span><span class="sxs-lookup"><span data-stu-id="47de0-170">However, [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console runs as a 32-bit process and hence when you configure a port for the adapter, it checks for the bindings in the 32-bit version of the machine.config file and fails giving an error.</span></span>  
   
- **解決策**  
+ <span data-ttu-id="47de0-171">**解決策**</span><span class="sxs-lookup"><span data-stu-id="47de0-171">**Resolution**</span></span>  
   
--   32 ビットおよび 64 ビット バージョンの両方をインストール、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 64 ビット[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。  
+-   <span data-ttu-id="47de0-172">32 ビットおよび 64 ビット バージョンの両方をインストール、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 64 ビット[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。</span><span class="sxs-lookup"><span data-stu-id="47de0-172">Install both the 32-bit and 64-bit versions of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] on a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span>  
   
     > [!IMPORTANT]
-    >  64 ビットのみが必要[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。 32 ビットおよび 64 ビットのサイド バイ サイド インストール[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]1 台のコンピューターではサポートされません。  
+    >  <span data-ttu-id="47de0-173">64 ビットのみが必要[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]インストールします。</span><span class="sxs-lookup"><span data-stu-id="47de0-173">You must only have a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span> <span data-ttu-id="47de0-174">32 ビットおよび 64 ビットのサイド バイ サイド インストール[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]1 台のコンピューターではサポートされません。</span><span class="sxs-lookup"><span data-stu-id="47de0-174">Side-by-side installation of 32-bit and 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] on a single computer is not supported.</span></span>  
   
--   Oracle クライアント 11.1.0.6 パッチ セット 11.1.0.7 に Oracle Data Access Components の 32 ビットおよび 64 ビット両方のバージョンをインストールします。  
+-   <span data-ttu-id="47de0-175">Oracle クライアント 11.1.0.6 パッチ セット 11.1.0.7 に Oracle Data Access Components の 32 ビットおよび 64 ビット両方のバージョンをインストールします。</span><span class="sxs-lookup"><span data-stu-id="47de0-175">Install both the 32-bit and 64-bit versions of the Oracle Data Access Components for Oracle Client 11.1.0.6 with Patch Set 11.1.0.7.</span></span>  
   
     > [!NOTE]
-    >  アプリケーションは ODP.NET の最新のバージョンで動作を確認するには、"ポリシー Dll"コンピューターにインストールされているし、GAC に登録が必要です。 詳細については、次を参照してください。 [Oracle Data Provider for .NET](http://go.microsoft.com/fwlink/p/?LinkId=92834) Oracle の web サイトです。 
+    >  <span data-ttu-id="47de0-176">アプリケーションは ODP.NET の最新のバージョンで動作を確認するには、"ポリシー Dll"コンピューターにインストールされているし、GAC に登録が必要です。</span><span class="sxs-lookup"><span data-stu-id="47de0-176">To make sure your application works with the most recent version of ODP.NET, you must have the "policy DLLs" installed on the computer and registered in the GAC.</span></span> <span data-ttu-id="47de0-177">詳細については、次を参照してください。 [Oracle Data Provider for .NET](http://go.microsoft.com/fwlink/p/?LinkId=92834) Oracle の web サイトです。</span><span class="sxs-lookup"><span data-stu-id="47de0-177">For more information, see [Oracle Data Provider for .NET](http://go.microsoft.com/fwlink/p/?LinkId=92834) on Oracle website.</span></span> 
   
-## <a name="see-also"></a>参照  
-[Oracle データベース アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-the-oracle-database-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="47de0-178">参照</span><span class="sxs-lookup"><span data-stu-id="47de0-178">See Also</span></span>  
+[<span data-ttu-id="47de0-179">Oracle データベース アダプターをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="47de0-179">Troubleshoot the Oracle Database adapter</span></span>](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-the-oracle-database-adapter.md)

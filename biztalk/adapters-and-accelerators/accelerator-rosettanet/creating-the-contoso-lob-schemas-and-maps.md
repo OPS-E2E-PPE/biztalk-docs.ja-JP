@@ -24,13 +24,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-the-contoso-lob-schemas-and-maps"></a>Contoso LOB スキーマとマップの作成
-ここでは、Contoso 組織が ERP システムで使用する基幹業務 (LOB) スキーマを作成します。 受信および送信の RosettaNet メッセージの種類と、Contoso の内部メッセージの間のデータ変換を作成するために、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] マッパー ツールを使用します。  
+# <a name="creating-the-contoso-lob-schemas-and-maps"></a><span data-ttu-id="05a09-102">Contoso LOB スキーマとマップの作成</span><span class="sxs-lookup"><span data-stu-id="05a09-102">Creating the Contoso LOB Schemas and Maps</span></span>
+<span data-ttu-id="05a09-103">ここでは、Contoso 組織が ERP システムで使用する基幹業務 (LOB) スキーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="05a09-103">In this section, you create the line-of-business (LOB) schemas that the Contoso organization uses in their ERP system.</span></span> <span data-ttu-id="05a09-104">受信および送信の RosettaNet メッセージの種類と、Contoso の内部メッセージの間のデータ変換を作成するために、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] マッパー ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="05a09-104">You use the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] Mapper tool to create data transformations between the internal Contoso messages and the inbound and outbound RosettaNet message types.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="05a09-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="05a09-105">In This Section</span></span>  
   
--   [手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-new-biztalk-solution-for-contoso-price-and-availability-request.md)  
+-   [<span data-ttu-id="05a09-106">手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成</span><span class="sxs-lookup"><span data-stu-id="05a09-106">Step 1: Creating a New BizTalk Solution for the Contoso Price and Availability Request</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-new-biztalk-solution-for-contoso-price-and-availability-request.md)  
   
--   [手順 2: Price and Availability プロジェクトの BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)  
+-   [<span data-ttu-id="05a09-107">手順 2: Price and Availability プロジェクトの BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="05a09-107">Step 2: Creating the Contoso LOB Application Schemas for the Price and Availability Project Using BizTalk Editor</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)  
   
--   [手順 3: Price and Availability プロジェクトの BizTalk マッパーを使用して用の Contoso LOB アプリケーション マップの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)
+-   [<span data-ttu-id="05a09-108">手順 3: Price and Availability プロジェクトの BizTalk マッパーを使用して用の Contoso LOB アプリケーション マップの作成</span><span class="sxs-lookup"><span data-stu-id="05a09-108">Step 3: Creating the Contoso LOB Application Maps for the Price and Availability Project Using BizTalk Mapper</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)

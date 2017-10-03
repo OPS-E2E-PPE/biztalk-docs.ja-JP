@@ -21,8 +21,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="document-structure-enforcement-in-the-flat-file-assembler-pipeline-component"></a>フラット ファイル アセンブラー パイプライン コンポーネントにおけるドキュメント構造の強化
-フラット ファイル アセンブラーでドキュメントまたはエンベロープ スキーマが明示的に参照されている場合、参照されたスキーマに対応するメッセージ タイプのドキュメントだけが処理されます。 その他すべてのドキュメントは、該当するスキーマが配置されていたとしても、処理から除外されます。  
+# <a name="document-structure-enforcement-in-the-flat-file-assembler-pipeline-component"></a><span data-ttu-id="c3cd3-102">フラット ファイル アセンブラー パイプライン コンポーネントにおけるドキュメント構造の強化</span><span class="sxs-lookup"><span data-stu-id="c3cd3-102">Document Structure Enforcement in the Flat File Assembler Pipeline Component</span></span>
+<span data-ttu-id="c3cd3-103">フラット ファイル アセンブラーでドキュメントまたはエンベロープ スキーマが明示的に参照されている場合、参照されたスキーマに対応するメッセージ タイプのドキュメントだけが処理されます。</span><span class="sxs-lookup"><span data-stu-id="c3cd3-103">If document or envelope schemas are explicitly referenced in the Flat File Assembler, the Flat File Assembler ensures that only documents with the message type corresponding to referenced schemas are processed.</span></span> <span data-ttu-id="c3cd3-104">その他すべてのドキュメントは、該当するスキーマが配置されていたとしても、処理から除外されます。</span><span class="sxs-lookup"><span data-stu-id="c3cd3-104">All the other documents are not processed even though a schema may be deployed for them.</span></span>  
   
 > [!NOTE]
->  エンベロープ スキーマは最初のメッセージからのみ取得されます。 エンベロープのプロパティは常に最初のメッセージから取得されます。
+>  <span data-ttu-id="c3cd3-105">エンベロープ スキーマは最初のメッセージからのみ取得されます。</span><span class="sxs-lookup"><span data-stu-id="c3cd3-105">The envelope schema is taken from the first message only.</span></span> <span data-ttu-id="c3cd3-106">エンベロープのプロパティは常に最初のメッセージから取得されます。</span><span class="sxs-lookup"><span data-stu-id="c3cd3-106">The properties for the envelope are always taken from the first message.</span></span>

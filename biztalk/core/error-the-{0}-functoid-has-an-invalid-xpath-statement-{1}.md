@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a>エラー -、 &quot;{0}&quot; functoid が、無効な xpath ステートメント: {1} です。
-**エラー コード**  
+# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a><span data-ttu-id="28508-103">エラー -、 &quot;{0}&quot; functoid が、無効な xpath ステートメント: {1} です。</span><span class="sxs-lookup"><span data-stu-id="28508-103">Error - The &quot;{0}&quot; functoid has an invalid xpath statement: {1}.</span></span>
+<span data-ttu-id="28508-104">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="28508-104">**Error Code**</span></span>  
   
- btm1018  
+ <span data-ttu-id="28508-105">btm1018</span><span class="sxs-lookup"><span data-stu-id="28508-105">btm1018</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="28508-106">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="28508-106">**User Action**</span></span>  
   
- なし
+ <span data-ttu-id="28508-107">なし</span><span class="sxs-lookup"><span data-stu-id="28508-107">None</span></span>

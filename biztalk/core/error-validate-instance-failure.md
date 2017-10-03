@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---validate-instance-failure"></a>エラー - インスタンスの検証エラー
-**説明**  
+# <a name="error---validate-instance-failure"></a><span data-ttu-id="d7029-102">エラー - インスタンスの検証エラー</span><span class="sxs-lookup"><span data-stu-id="d7029-102">Error - Validate Instance Failure</span></span>
+<span data-ttu-id="d7029-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="d7029-103">**Explanation**</span></span>  
   
- **インスタンスの検証**コマンドは、インスタンス メッセージ ファイルがスキーマに準拠していることを検証できませんでした。  
+ <span data-ttu-id="d7029-104">**インスタンスの検証**コマンドは、インスタンス メッセージ ファイルがスキーマに準拠していることを検証できませんでした。</span><span class="sxs-lookup"><span data-stu-id="d7029-104">The **Validate Instance** command failed to validate that the indicated instance message file conforms to the indicated schema.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="d7029-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="d7029-105">**User Action**</span></span>  
   
- エラー メッセージを調査して、インスタンスの検証エラーの原因を特定します。
+ <span data-ttu-id="d7029-106">エラー メッセージを調査して、インスタンスの検証エラーの原因を特定します。</span><span class="sxs-lookup"><span data-stu-id="d7029-106">Examine the accompanying error messages to determine the cause of the instance validation failure.</span></span>

@@ -24,142 +24,142 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-2-creating-public-and-private-certificates"></a>手順 2: パブリックおよびプライベート証明書の作成
-この手順で作成した証明機関を使用する[手順 1: 証明機関 &#91; を作成します。RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)を使用して、Contoso と Fabrikam 組織パブリックおよびプライベート証明書を生成します。  
+# <a name="step-2-creating-public-and-private-certificates"></a><span data-ttu-id="1c61f-102">手順 2: パブリックおよびプライベート証明書の作成</span><span class="sxs-lookup"><span data-stu-id="1c61f-102">Step 2: Creating Public and Private Certificates</span></span>
+<span data-ttu-id="1c61f-103">この手順で作成した証明機関を使用する[手順 1: 証明機関 &#91; を作成します。RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)を使用して、Contoso と Fabrikam 組織パブリックおよびプライベート証明書を生成します。</span><span class="sxs-lookup"><span data-stu-id="1c61f-103">In this step, you use the Certification Authority created in [Step 1: Creating a Certification Authority &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md) to generate the public and private certificates that the Contoso and Fabrikam organizations use.</span></span>  
   
-### <a name="to-generate-the-contoso-and-fabrikam-encryption-certificates"></a>Contoso および Fabrikam の暗号化証明書を生成するには  
+### <a name="to-generate-the-contoso-and-fabrikam-encryption-certificates"></a><span data-ttu-id="1c61f-104">Contoso および Fabrikam の暗号化証明書を生成するには</span><span class="sxs-lookup"><span data-stu-id="1c61f-104">To generate the Contoso and Fabrikam encryption certificates</span></span>  
   
-1.  証明機関として使用したコンピューターから、Internet Explorer を使用して http://<Contoso のコンピューター名>/certsrv を開きます。  
+1.  <span data-ttu-id="1c61f-105">証明機関として使用したコンピューターから、Internet Explorer を使用して http://<Contoso のコンピューター名>/certsrv を開きます。</span><span class="sxs-lookup"><span data-stu-id="1c61f-105">On the computer you used as the Certification Authority, in Internet Explorer, locate and open http://<contoso_computername>/certsrv.</span></span>  
   
-2.  **ようこそ** ページで、をクリックして**証明書を要求**です。  
+2.  <span data-ttu-id="1c61f-106">**ようこそ** ページで、をクリックして**証明書を要求**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-106">On the **Welcome** page, click **Request a certificate**.</span></span>  
   
-3.  **証明書を要求**] ページで [**高度な証明書の要求**です。  
+3.  <span data-ttu-id="1c61f-107">**証明書を要求**] ページで [**高度な証明書の要求**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-107">On the **Request a Certificate** page, click **advanced certificate request**.</span></span>  
   
-4.  **証明書の要求の高度な** ページで、をクリックして**作成してこの CA への要求を送信**です。  
+4.  <span data-ttu-id="1c61f-108">**証明書の要求の高度な** ページで、をクリックして**作成してこの CA への要求を送信**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-108">On the **Advanced Certificate Request** page, click **Create and submit a request to this CA**.</span></span>  
   
-5.  **証明書の要求の高度な** ページで、次の操作します。  
+5.  <span data-ttu-id="1c61f-109">**証明書の要求の高度な** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="1c61f-109">On the **Advanced Certificate Request** page, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="1c61f-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1c61f-110">Use this</span></span>|<span data-ttu-id="1c61f-111">目的</span><span class="sxs-lookup"><span data-stu-id="1c61f-111">To do this</span></span>|  
     |--------------|----------------|  
-    |**名前**|型**Fabrikam Encryption**です。|  
-    |**電子メール**|型 **jdoe@fabrikam.com**です。|  
-    |**Company**|型**Fabrikam**です。|  
-    |**部門**|型**テスト**です。|  
-    |**City**|型**テスト**です。|  
-    |**状態**|型**テスト**です。|  
-    |**国/地域**|型**米国**です。|  
-    |**必要な証明書の種類**|選択**電子メール保護証明書**ドロップ ダウン リストからです。|  
-    |**キー使用法**|選択、 **Exchange**オプション。|  
-    |**キーのオプション**|次のチェック ボックスをオンにします。<br /><br /> -   **キー エクスポート可能としてマークします。**<br />-   **ローカル コンピューター証明書ストアに証明書を保存します。**|  
-    |**表示名**|型**Fabrikam Encryption**です。|  
+    |<span data-ttu-id="1c61f-112">**名前**</span><span class="sxs-lookup"><span data-stu-id="1c61f-112">**Name**</span></span>|<span data-ttu-id="1c61f-113">型**Fabrikam Encryption**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-113">Type **Fabrikam Encryption**.</span></span>|  
+    |<span data-ttu-id="1c61f-114">**電子メール**</span><span class="sxs-lookup"><span data-stu-id="1c61f-114">**E-Mail**</span></span>|<span data-ttu-id="1c61f-115">型 **jdoe@fabrikam.com**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-115">Type **jdoe@fabrikam.com**.</span></span>|  
+    |<span data-ttu-id="1c61f-116">**Company**</span><span class="sxs-lookup"><span data-stu-id="1c61f-116">**Company**</span></span>|<span data-ttu-id="1c61f-117">型**Fabrikam**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-117">Type **Fabrikam**.</span></span>|  
+    |<span data-ttu-id="1c61f-118">**部門**</span><span class="sxs-lookup"><span data-stu-id="1c61f-118">**Department**</span></span>|<span data-ttu-id="1c61f-119">型**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-119">Type **Test**.</span></span>|  
+    |<span data-ttu-id="1c61f-120">**City**</span><span class="sxs-lookup"><span data-stu-id="1c61f-120">**City**</span></span>|<span data-ttu-id="1c61f-121">型**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-121">Type **Test**.</span></span>|  
+    |<span data-ttu-id="1c61f-122">**状態**</span><span class="sxs-lookup"><span data-stu-id="1c61f-122">**State**</span></span>|<span data-ttu-id="1c61f-123">型**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-123">Type **Test**.</span></span>|  
+    |<span data-ttu-id="1c61f-124">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="1c61f-124">**Country/Region**</span></span>|<span data-ttu-id="1c61f-125">型**米国**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-125">Type **US**.</span></span>|  
+    |<span data-ttu-id="1c61f-126">**必要な証明書の種類**</span><span class="sxs-lookup"><span data-stu-id="1c61f-126">**Type of Certificate Needed**</span></span>|<span data-ttu-id="1c61f-127">選択**電子メール保護証明書**ドロップ ダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="1c61f-127">Select **E-Mail Protection Certificate** from the drop down list.</span></span>|  
+    |<span data-ttu-id="1c61f-128">**キー使用法**</span><span class="sxs-lookup"><span data-stu-id="1c61f-128">**Key Usage**</span></span>|<span data-ttu-id="1c61f-129">選択、 **Exchange**オプション。</span><span class="sxs-lookup"><span data-stu-id="1c61f-129">Select the **Exchange** option.</span></span>|  
+    |<span data-ttu-id="1c61f-130">**キーのオプション**</span><span class="sxs-lookup"><span data-stu-id="1c61f-130">**Additional Key Options**</span></span>|<span data-ttu-id="1c61f-131">次のチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="1c61f-131">Place a check in the following options:</span></span><br /><br /> <span data-ttu-id="1c61f-132">-   **キー エクスポート可能としてマークします。**</span><span class="sxs-lookup"><span data-stu-id="1c61f-132">-   **Mark keys as exportable**</span></span><br /><span data-ttu-id="1c61f-133">-   **ローカル コンピューター証明書ストアに証明書を保存します。**</span><span class="sxs-lookup"><span data-stu-id="1c61f-133">-   **Store certificate in the local computer certificate store**</span></span>|  
+    |<span data-ttu-id="1c61f-134">**表示名**</span><span class="sxs-lookup"><span data-stu-id="1c61f-134">**Friendly Name**</span></span>|<span data-ttu-id="1c61f-135">型**Fabrikam Encryption**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-135">Type **Fabrikam Encryption**.</span></span>|  
   
-6.  をクリックして**送信**、順にクリック**はい**で**Web アクセスの確認** ダイアログ ボックス。  
+6.  <span data-ttu-id="1c61f-136">をクリックして**送信**、順にクリック**はい**で**Web アクセスの確認** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="1c61f-136">Click **Submit**, and then click **Yes** in **Web Access Confirmation** dialog box.</span></span>  
   
-7.  **証明書は発行**] ページで [**この証明書をインストール**です。  
+7.  <span data-ttu-id="1c61f-137">**証明書は発行**] ページで [**この証明書をインストール**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-137">On the **Certificate Issued** page, click **Install this certificate**.</span></span>  
   
-8.  手順 1. ~ 7. で情報を変更する、**名前**ボックスに、**識別情報**セクションおよび**フレンドリ名**ボックス**Contoso暗号化**です。  
+8.  <span data-ttu-id="1c61f-138">手順 1. ~ 7. で情報を変更する、**名前**ボックスに、**識別情報**セクションおよび**フレンドリ名**ボックス**Contoso暗号化**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-138">Repeat steps 1-7, changing the information in the **Name** box in the **Identifying Information** section and the **Friendly Name** box to **Contoso Encryption**.</span></span>  
   
-### <a name="to-generate-the-contoso-and-fabrikam-signing-certificates"></a>Contoso および Fabrikam の署名証明書を生成するには  
+### <a name="to-generate-the-contoso-and-fabrikam-signing-certificates"></a><span data-ttu-id="1c61f-139">Contoso および Fabrikam の署名証明書を生成するには</span><span class="sxs-lookup"><span data-stu-id="1c61f-139">To generate the Contoso and Fabrikam Signing Certificates</span></span>  
   
-1.  Internet Explorer で、http://<Contoso のコンピューター名>/certsrv を検索して開きます。  
+1.  <span data-ttu-id="1c61f-140">Internet Explorer で、http://<Contoso のコンピューター名>/certsrv を検索して開きます。</span><span class="sxs-lookup"><span data-stu-id="1c61f-140">In Internet Explorer, locate and open http://<contoso_computername>/certsrv.</span></span>  
   
-2.  **ようこそ** ページで、をクリックして**証明書を要求**です。  
+2.  <span data-ttu-id="1c61f-141">**ようこそ** ページで、をクリックして**証明書を要求**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-141">On the **Welcome** page, click **Request a certificate**.</span></span>  
   
-3.  **証明書を要求**] ページで [**高度な証明書の要求**です。  
+3.  <span data-ttu-id="1c61f-142">**証明書を要求**] ページで [**高度な証明書の要求**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-142">On the **Request a Certificate** page, click **advanced certificate request**.</span></span>  
   
-4.  **証明書の要求の高度な** ページで、をクリックして**作成してこの CA への要求を送信**です。  
+4.  <span data-ttu-id="1c61f-143">**証明書の要求の高度な** ページで、をクリックして**作成してこの CA への要求を送信**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-143">On the **Advanced Certificate Request** page, click **Create and submit a request to this CA**.</span></span>  
   
-5.  **証明書の要求の高度な** ページで、次の操作します。  
+5.  <span data-ttu-id="1c61f-144">**証明書の要求の高度な** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="1c61f-144">On the **Advanced Certificate Request** page, do the following:</span></span>  
   
-    |プロパティ|目的|  
+    |<span data-ttu-id="1c61f-145">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1c61f-145">Use this</span></span>|<span data-ttu-id="1c61f-146">目的</span><span class="sxs-lookup"><span data-stu-id="1c61f-146">To do this</span></span>|  
     |--------------|----------------|  
-    |**名前**|型**Fabrikam Signature**です。|  
-    |**電子メール**|型 **jdoe@fabrikam.com**です。|  
-    |**Company**|型**Fabrikam**です。|  
-    |**部門**|型**テスト**です。|  
-    |**City**|型**テスト**です。|  
-    |**状態**|型**テスト**です。|  
-    |**国/地域**|型**米国**です。|  
-    |**必要な証明書の種類**|選択**電子メール保護証明書**ドロップ ダウン リストの場合。|  
-    |**キー使用法**|選択、**署名**オプション。|  
-    |**キーのオプション**|次のチェック ボックスをオンにします。<br /><br /> -   **キー エクスポート可能としてマークします。**<br />-   **ローカル コンピューター証明書ストアに証明書を保存します。**|  
-    |**表示名**|型**Fabrikam Signature**です。|  
+    |<span data-ttu-id="1c61f-147">**名前**</span><span class="sxs-lookup"><span data-stu-id="1c61f-147">**Name**</span></span>|<span data-ttu-id="1c61f-148">型**Fabrikam Signature**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-148">Type **Fabrikam Signature**.</span></span>|  
+    |<span data-ttu-id="1c61f-149">**電子メール**</span><span class="sxs-lookup"><span data-stu-id="1c61f-149">**E-Mail**</span></span>|<span data-ttu-id="1c61f-150">型 **jdoe@fabrikam.com**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-150">Type **jdoe@fabrikam.com**.</span></span>|  
+    |<span data-ttu-id="1c61f-151">**Company**</span><span class="sxs-lookup"><span data-stu-id="1c61f-151">**Company**</span></span>|<span data-ttu-id="1c61f-152">型**Fabrikam**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-152">Type **Fabrikam**.</span></span>|  
+    |<span data-ttu-id="1c61f-153">**部門**</span><span class="sxs-lookup"><span data-stu-id="1c61f-153">**Department**</span></span>|<span data-ttu-id="1c61f-154">型**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-154">Type **Test**.</span></span>|  
+    |<span data-ttu-id="1c61f-155">**City**</span><span class="sxs-lookup"><span data-stu-id="1c61f-155">**City**</span></span>|<span data-ttu-id="1c61f-156">型**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-156">Type **Test**.</span></span>|  
+    |<span data-ttu-id="1c61f-157">**状態**</span><span class="sxs-lookup"><span data-stu-id="1c61f-157">**State**</span></span>|<span data-ttu-id="1c61f-158">型**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-158">Type **Test**.</span></span>|  
+    |<span data-ttu-id="1c61f-159">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="1c61f-159">**Country/Region**</span></span>|<span data-ttu-id="1c61f-160">型**米国**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-160">Type **US**.</span></span>|  
+    |<span data-ttu-id="1c61f-161">**必要な証明書の種類**</span><span class="sxs-lookup"><span data-stu-id="1c61f-161">**Type of Certificate Needed**</span></span>|<span data-ttu-id="1c61f-162">選択**電子メール保護証明書**ドロップ ダウン リストの場合。</span><span class="sxs-lookup"><span data-stu-id="1c61f-162">Select **E-Mail Protection Certificate**.from the drop down list.</span></span>|  
+    |<span data-ttu-id="1c61f-163">**キー使用法**</span><span class="sxs-lookup"><span data-stu-id="1c61f-163">**Key Usage**</span></span>|<span data-ttu-id="1c61f-164">選択、**署名**オプション。</span><span class="sxs-lookup"><span data-stu-id="1c61f-164">Select the **Signature** option.</span></span>|  
+    |<span data-ttu-id="1c61f-165">**キーのオプション**</span><span class="sxs-lookup"><span data-stu-id="1c61f-165">**Additional Key Options**</span></span>|<span data-ttu-id="1c61f-166">次のチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="1c61f-166">Place a check in the following options:</span></span><br /><br /> <span data-ttu-id="1c61f-167">-   **キー エクスポート可能としてマークします。**</span><span class="sxs-lookup"><span data-stu-id="1c61f-167">-   **Mark keys as exportable**</span></span><br /><span data-ttu-id="1c61f-168">-   **ローカル コンピューター証明書ストアに証明書を保存します。**</span><span class="sxs-lookup"><span data-stu-id="1c61f-168">-   **Store certificate in the local computer certificate store**</span></span>|  
+    |<span data-ttu-id="1c61f-169">**表示名**</span><span class="sxs-lookup"><span data-stu-id="1c61f-169">**Friendly Name**</span></span>|<span data-ttu-id="1c61f-170">型**Fabrikam Signature**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-170">Type **Fabrikam Signature**.</span></span>|  
   
-6.  をクリックして**送信**、順にクリック**はい**証明書を要求するように求められたらです。  
+6.  <span data-ttu-id="1c61f-171">をクリックして**送信**、順にクリック**はい**証明書を要求するように求められたらです。</span><span class="sxs-lookup"><span data-stu-id="1c61f-171">Click **Submit**, and then click **Yes** when asked to request the certificate.</span></span>  
   
-7.  **証明書は発行**] ページで [**この証明書をインストール**です。  
+7.  <span data-ttu-id="1c61f-172">**証明書は発行**] ページで [**この証明書をインストール**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-172">On the **Certificate Issued** page, click **Install this certificate**.</span></span>  
   
-8.  手順 1. ~ 7. で情報を変更する、**名前**ボックスに、**識別情報**セクションおよび**フレンドリ名**ボックス**Contoso署名**です。  
+8.  <span data-ttu-id="1c61f-173">手順 1. ~ 7. で情報を変更する、**名前**ボックスに、**識別情報**セクションおよび**フレンドリ名**ボックス**Contoso署名**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-173">Repeat steps 1-7, changing the information in the **Name** box in the **Identifying Information** section and the **Friendly Name** box to **Contoso Signature**.</span></span>  
   
-### <a name="to-generate-private-certificates-for-the-encryption-and-signature-certificates"></a>暗号化証明書および署名証明書のプライベート証明書を生成するには  
+### <a name="to-generate-private-certificates-for-the-encryption-and-signature-certificates"></a><span data-ttu-id="1c61f-174">暗号化証明書および署名証明書のプライベート証明書を生成するには</span><span class="sxs-lookup"><span data-stu-id="1c61f-174">To generate private certificates for the Encryption and Signature certificates</span></span>  
   
-1.  をクリックして**開始**、 をクリックして**実行**、型**MMC**、順にクリック**ok**です。  
+1.  <span data-ttu-id="1c61f-175">をクリックして**開始**、 をクリックして**実行**、型**MMC**、順にクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-175">Click **Start**, click **Run**, type **MMC**, and then click **OK**.</span></span>  
   
-2.  コンソール 1 ウィンドウで、上、**ファイル** メニューのをクリックして**スナップインの追加と削除**です。  
+2.  <span data-ttu-id="1c61f-176">コンソール 1 ウィンドウで、上、**ファイル** メニューのをクリックして**スナップインの追加と削除**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-176">In the Console1 window, on the **File** menu, click **Add/Remove Snap-in**.</span></span>  
   
-3.  スナップインの追加と削除 ダイアログ ボックスで、上、**スタンドアロン** タブで、をクリックして**追加**です。  
+3.  <span data-ttu-id="1c61f-177">スナップインの追加と削除 ダイアログ ボックスで、上、**スタンドアロン** タブで、をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-177">In the Add/Remove Snap-in dialog box, on the **Standalone** tab, click **Add**.</span></span>  
   
-4.  スタンドアロン スナップインの追加 ダイアログ ボックスで、選択、**証明書**スナップインから、**利用できるスタンドアロン スナップイン**一覧をクリックして**追加**です。  
+4.  <span data-ttu-id="1c61f-178">スタンドアロン スナップインの追加 ダイアログ ボックスで、選択、**証明書**スナップインから、**利用できるスタンドアロン スナップイン**一覧をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-178">In the Add Standalone Snap-in dialog box, select the **Certificates** snap-in from the **Available Standalone Snap-ins** list, and then click **Add**.</span></span>  
   
-5.  証明書スナップイン] ダイアログ ボックスで選択**[ユーザー アカウント**、順にクリック**次**です。  
+5.  <span data-ttu-id="1c61f-179">証明書スナップイン] ダイアログ ボックスで選択**[ユーザー アカウント**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-179">In the Certificates snap-in dialog box, select **My user account**, and then click **Next**.</span></span>  
   
-6.  コンピューターの選択] ダイアログ ボックス [**完了**です。  
+6.  <span data-ttu-id="1c61f-180">コンピューターの選択] ダイアログ ボックス [**完了**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-180">In the Select Computer dialog box, click **Finish**.</span></span>  
   
-7.  [スタンドアロン スナップインの追加] ダイアログ ボックスで、**閉じる**です。  
+7.  <span data-ttu-id="1c61f-181">[スタンドアロン スナップインの追加] ダイアログ ボックスで、**閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-181">In the Add Standalone Snap-in dialog box, click **Close**.</span></span>  
   
-8.  [スナップインの追加と削除] ダイアログ ボックスで、 **OK**です。  
+8.  <span data-ttu-id="1c61f-182">[スナップインの追加と削除] ダイアログ ボックスで、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-182">In the Add/Remove Snap-in dialog box, click **OK**.</span></span>  
   
-9. コンソール 1 ウィンドウで **証明書 (ローカル コンピューター)**、展開**個人**、順にクリック**証明書**です。  
+9. <span data-ttu-id="1c61f-183">コンソール 1 ウィンドウで **証明書 (ローカル コンピューター)**、展開**個人**、順にクリック**証明書**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-183">In the Console1 window, expand **Certificates (Local Computer)**, expand **Personal**, and then click **Certificates**.</span></span>  
   
-10. 右側のペインで右クリックし、 **Fabrikam Encryption**をポイントし、証明書の**すべてのタスク**、クリックして**エクスポート**です。  
+10. <span data-ttu-id="1c61f-184">右側のペインで右クリックし、 **Fabrikam Encryption**をポイントし、証明書の**すべてのタスク**、クリックして**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-184">In the right pane, right-click the **Fabrikam Encryption** certificate, point to **All Tasks**, and then click **Export**.</span></span>  
   
-11. **証明書のエクスポート ウィザードへようこそ** ページで、をクリックして**次**です。  
+11. <span data-ttu-id="1c61f-185">**証明書のエクスポート ウィザードへようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-185">On the **Welcome to the Certificate Export Wizard** page, click **Next**.</span></span>  
   
-12. **秘密キーのエクスポート** ページで、 **はい、秘密キーをエクスポート**、順にクリック**次**。  
+12. <span data-ttu-id="1c61f-186">**秘密キーのエクスポート** ページで、 **はい、秘密キーをエクスポート**、順にクリック**次**。</span><span class="sxs-lookup"><span data-stu-id="1c61f-186">On the **Export Private Key** page, select **Yes, export the private key**, and then click **Next**.</span></span>  
   
-13. **エクスポート ファイルの形式**ことを確認 ページで、 **Personal Information Exchange**唯一のオプションを選択するは、をクリックして**次**です。  
+13. <span data-ttu-id="1c61f-187">**エクスポート ファイルの形式**ことを確認 ページで、 **Personal Information Exchange**唯一のオプションを選択するは、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-187">On the **Export File Format** page, make sure that **Personal Information Exchange** is the only option selected, and then click **Next**.</span></span>  
   
-14. **パスワード**] ページの [、**パスワード**と**パスワードの確認**ボックスに「 **mysecret**、クリックしてして**[次へ]**.  
+14. <span data-ttu-id="1c61f-188">**パスワード**] ページの [、**パスワード**と**パスワードの確認**ボックスに「 **mysecret**、クリックしてして**[次へ]**.</span><span class="sxs-lookup"><span data-stu-id="1c61f-188">On the **Password** page, in the **Password** and **Confirm Password** boxes, type **mysecret**, and then click **Next**.</span></span>  
   
-15. **ファイルにエクスポート**] ページで [**参照**です。  
+15. <span data-ttu-id="1c61f-189">**ファイルにエクスポート**] ページで [**参照**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-189">On the **File To Export** page, click **Browse**.</span></span>  
   
-16. **名前を付けて保存**ファイル パスを使用して証明書を保存 ダイアログ ボックス、 *\<ドライブ >*: \Certs\Fabrikam Private Encryption.pfx です。  
+16. <span data-ttu-id="1c61f-190">**名前を付けて保存**ファイル パスを使用して証明書を保存 ダイアログ ボックス、 *\<ドライブ >*: \Certs\Fabrikam Private Encryption.pfx です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-190">In the **Save As** dialog box, save the certificate using the file path *\<drive>*:\Certs\Fabrikam Private Encryption.pfx.</span></span>  
   
-17. **エクスポートするファイル**] ページで [**次**です。  
+17. <span data-ttu-id="1c61f-191">**エクスポートするファイル**] ページで [**次**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-191">On the **File to Export** page, click **Next**.</span></span>  
   
-18. **証明書のエクスポート ウィザードの完了**] ページで [**完了**です。  
+18. <span data-ttu-id="1c61f-192">**証明書のエクスポート ウィザードの完了**] ページで [**完了**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-192">On the **Completing the Certificate Export Wizard** page, click **Finish**.</span></span>  
   
-19. エクスポートを成功を示すポップアップで証明書のエクスポート ウィザード、をクリックして**OK**です。  
+19. <span data-ttu-id="1c61f-193">エクスポートを成功を示すポップアップで証明書のエクスポート ウィザード、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-193">In the Certificate Export Wizard popup indicating a successful export, click **OK**.</span></span>  
   
-20. Fabrikam 署名証明書を生成するため、ファイル名 Fabrikam Private Signature.pfx を使用して、手順 10. ～ 19. を繰り返します。  
+20. <span data-ttu-id="1c61f-194">Fabrikam 署名証明書を生成するため、ファイル名 Fabrikam Private Signature.pfx を使用して、手順 10. ～ 19. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="1c61f-194">Repeat steps 10-19 for the Fabrikam Signature certificate using the file name Fabrikam Private Signature.pfx.</span></span>  
   
-21. Contoso 署名証明書および Contoso 暗号化証明書を生成するため、それぞれファイル名 Contoso Private Signature.pfx と Contoso Private Encryption.pfx を使用して、手順 10. ～ 19. を繰り返します。  
+21. <span data-ttu-id="1c61f-195">Contoso 署名証明書および Contoso 暗号化証明書を生成するため、それぞれファイル名 Contoso Private Signature.pfx と Contoso Private Encryption.pfx を使用して、手順 10. ～ 19. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="1c61f-195">Repeat steps 10-19 for the Contoso Signature and Contoso Encryption certificates using the file names Contoso Private Signature.pfx and Contoso Private Encryption.pfx, respectively.</span></span>  
   
-### <a name="to-generate-public-certificates-for-the-encryption-and-signature-certificates"></a>暗号化証明書および署名証明書のパブリック証明書を生成するには  
+### <a name="to-generate-public-certificates-for-the-encryption-and-signature-certificates"></a><span data-ttu-id="1c61f-196">暗号化証明書および署名証明書のパブリック証明書を生成するには</span><span class="sxs-lookup"><span data-stu-id="1c61f-196">To generate public certificates for the Encryption and Signature certificates</span></span>  
   
-1.  コンソール 1 ウィンドウで、**証明書-現在のユーザー**、展開**個人**をクリックし、**証明書**です。  
+1.  <span data-ttu-id="1c61f-197">コンソール 1 ウィンドウで、**証明書-現在のユーザー**、展開**個人**をクリックし、**証明書**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-197">In the Console1 window, expand **Certificates – Current User**, expand **Personal**, and then click **Certificates**.</span></span>  
   
-2.  右クリックし、 **Fabrikam Encryption**をポイントし、証明書の**すべてのタスク**、クリックして**エクスポート**です。  
+2.  <span data-ttu-id="1c61f-198">右クリックし、 **Fabrikam Encryption**をポイントし、証明書の**すべてのタスク**、クリックして**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-198">Right-click the **Fabrikam Encryption** certificate, point to **All Tasks**, and then click **Export**.</span></span>  
   
-3.  **証明書のエクスポート ウィザードへようこそ** ページで、をクリックして**次**です。  
+3.  <span data-ttu-id="1c61f-199">**証明書のエクスポート ウィザードへようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-199">On the **Welcome to the Certificate Export Wizard** page, click **Next**.</span></span>  
   
-4.  **秘密キーのエクスポート**] ページで、[**いいえ、秘密キーをエクスポートしません**、クリックして**[次へ]**です。  
+4.  <span data-ttu-id="1c61f-200">**秘密キーのエクスポート**] ページで、[**いいえ、秘密キーをエクスポートしません**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-200">On the **Export Private Key** page, select **No, do not export the private key**, and then click **Next**.</span></span>  
   
-5.  **エクスポート ファイルの形式**] ページで [**次**です。  
+5.  <span data-ttu-id="1c61f-201">**エクスポート ファイルの形式**] ページで [**次**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-201">On the **Export File Format** page, click **Next**.</span></span>  
   
-6.  **ファイルにエクスポート**] ページで [**参照**です。  
+6.  <span data-ttu-id="1c61f-202">**ファイルにエクスポート**] ページで [**参照**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-202">On the **File To Export** page, click **Browse**.</span></span>  
   
-7.  名前を付けて保存 ダイアログ ボックスで、入力**\<ドライブ >: \Certs**の**で保存**、 **Fabrikam Public Encryption.cer**として**ファイル名**、および **\*.cer**の**型として保存**、順にクリック**保存**です。  
+7.  <span data-ttu-id="1c61f-203">名前を付けて保存 ダイアログ ボックスで、入力**\<ドライブ >: \Certs**の**で保存**、 **Fabrikam Public Encryption.cer**として**ファイル名**、および **\*.cer**の**型として保存**、順にクリック**保存**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-203">In the Save As dialog box, enter **\<drive>:\Certs** for **Save in**, **Fabrikam Public Encryption.cer** as **File name**, and **\*.cer** for **Save as type**, and then click **Save**.</span></span>  
   
-8.  **エクスポートするファイル**] ページで [**次**です。  
+8.  <span data-ttu-id="1c61f-204">**エクスポートするファイル**] ページで [**次**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-204">On the **File to Export** page, click **Next**.</span></span>  
   
-9. **証明書のエクスポート ウィザードの完了**] ページで [**完了**です。  
+9. <span data-ttu-id="1c61f-205">**証明書のエクスポート ウィザードの完了**] ページで [**完了**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-205">On the **Completing the Certificate Export Wizard** page, click **Finish**.</span></span>  
   
-10. エクスポートを成功を示すポップアップで証明書のエクスポート ウィザード、をクリックして**OK**です。  
+10. <span data-ttu-id="1c61f-206">エクスポートを成功を示すポップアップで証明書のエクスポート ウィザード、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1c61f-206">In the Certificate Export Wizard popup indicating a successful export, click **OK**.</span></span>  
   
-11. Fabrikam 署名証明書を生成するため、ファイル名 Fabrikam Public Signature.cer を使用して、手順 1. ～ 9. を繰り返します。  
+11. <span data-ttu-id="1c61f-207">Fabrikam 署名証明書を生成するため、ファイル名 Fabrikam Public Signature.cer を使用して、手順 1. ～ 9. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="1c61f-207">Repeat steps 1-9 for the Fabrikam Signature certificate using the file name Fabrikam Public Signature.cer.</span></span>  
   
-12. Contoso 署名証明書および Contoso 暗号化証明書を生成するため、それぞれファイル名 Contoso Public Signature.cer と Contoso Public Encryption.cer を使用して、手順 1. ～ 9. を繰り返します。  
+12. <span data-ttu-id="1c61f-208">Contoso 署名証明書および Contoso 暗号化証明書を生成するため、それぞれファイル名 Contoso Public Signature.cer と Contoso Public Encryption.cer を使用して、手順 1. ～ 9. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="1c61f-208">Repeat steps 1-9 for the Contoso Signature and Contoso Encryption certificates using the file names Contoso Public Signature.cer and Contoso Public Encryption.cer, respectively.</span></span>  
   
-## <a name="see-also"></a>参照  
- [手順 3: パブリックおよびプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)
+## <a name="see-also"></a><span data-ttu-id="1c61f-209">参照</span><span class="sxs-lookup"><span data-stu-id="1c61f-209">See Also</span></span>  
+ [<span data-ttu-id="1c61f-210">手順 3: パブリックおよびプライベート証明書のインポート</span><span class="sxs-lookup"><span data-stu-id="1c61f-210">Step 3: Importing Public and Private Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)

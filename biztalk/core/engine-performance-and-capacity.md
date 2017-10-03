@@ -25,13 +25,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="engine-performance-and-capacity"></a>エンジンのパフォーマンスおよび容量
-エンジンのパフォーマンスと容量は、BizTalk Server ソリューションを計画するときの重要な考慮事項です。 エンジンのパフォーマンスとは、ドキュメントを長時間にわたって処理する能力で、エンジンの容量とは、受信したもののまだ処理されていないドキュメントのバックログを BizTalk Server システムで維持する能力です。  
+# <a name="engine-performance-and-capacity"></a><span data-ttu-id="19bb6-102">エンジンのパフォーマンスおよび容量</span><span class="sxs-lookup"><span data-stu-id="19bb6-102">Engine Performance and Capacity</span></span>
+<span data-ttu-id="19bb6-103">エンジンのパフォーマンスと容量は、BizTalk Server ソリューションを計画するときの重要な考慮事項です。</span><span class="sxs-lookup"><span data-stu-id="19bb6-103">Engine performance and capacity are important considerations when planning your BizTalk Server solution.</span></span> <span data-ttu-id="19bb6-104">エンジンのパフォーマンスとは、ドキュメントを長時間にわたって処理する能力で、エンジンの容量とは、受信したもののまだ処理されていないドキュメントのバックログを BizTalk Server システムで維持する能力です。</span><span class="sxs-lookup"><span data-stu-id="19bb6-104">Engine performance is the ability to process documents over time and engine capacity is the ability of your BizTalk Server system to maintain a backlog of documents that have been received but not yet processed.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="19bb6-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="19bb6-105">In This Section</span></span>  
   
--   [維持可能なパフォーマンスとは何ですか。](../core/what-is-sustainable-performance.md)  
+-   [<span data-ttu-id="19bb6-106">維持可能なパフォーマンスとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="19bb6-106">What Is Sustainable Performance?</span></span>](../core/what-is-sustainable-performance.md)  
   
--   [エンジンの永続性と持続性](../core/engine-persistence-and-durability.md)  
+-   [<span data-ttu-id="19bb6-107">エンジンの永続性と持続性</span><span class="sxs-lookup"><span data-stu-id="19bb6-107">Engine Persistence and Durability</span></span>](../core/engine-persistence-and-durability.md)  
   
--   [維持可能な最大のエンジン スループットの測定](../core/measuring-maximum-sustainable-engine-throughput.md)
+-   [<span data-ttu-id="19bb6-108">維持可能な最大のエンジン スループットの測定</span><span class="sxs-lookup"><span data-stu-id="19bb6-108">Measuring Maximum Sustainable Engine Throughput</span></span>](../core/measuring-maximum-sustainable-engine-throughput.md)

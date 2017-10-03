@@ -18,98 +18,98 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-group-structural-element"></a>EDI のグループ構造体要素
-グループには、1 つ以上のトランザクション セットが含まれます。 1 つ EDIFACT のグループには、同じ種類のトランザクション セットが含まれる必要があります。 X12 グループには、類似した種類のトランザクション セット (トランザクション セットとグループ (GS01-ST01) のマッピングに基づく) または同じ種類のトランザクション セットが含まれる場合があります。 1 つのグループ (GS01) 内で同時にできるリスト類似した X12 トランザクション セット (ST01)、次の表。  
+# <a name="edi-group-structural-element"></a><span data-ttu-id="5a06e-102">EDI のグループ構造体要素</span><span class="sxs-lookup"><span data-stu-id="5a06e-102">EDI Group Structural Element</span></span>
+<span data-ttu-id="5a06e-103">グループには、1 つ以上のトランザクション セットが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5a06e-103">The group contains one or more transaction sets.</span></span> <span data-ttu-id="5a06e-104">1 つ EDIFACT のグループには、同じ種類のトランザクション セットが含まれる必要があります。</span><span class="sxs-lookup"><span data-stu-id="5a06e-104">An EDIFACT group must contain transaction sets of the same type.</span></span> <span data-ttu-id="5a06e-105">X12 グループには、類似した種類のトランザクション セット (トランザクション セットとグループ (GS01-ST01) のマッピングに基づく) または同じ種類のトランザクション セットが含まれる場合があります。</span><span class="sxs-lookup"><span data-stu-id="5a06e-105">An X12 group may contain transaction sets of similar type (based on the transaction set – group (GS01-ST01) mapping) or transaction sets of the same type.</span></span> <span data-ttu-id="5a06e-106">1 つのグループ (GS01) 内で同時にできるリスト類似した X12 トランザクション セット (ST01)、次の表。</span><span class="sxs-lookup"><span data-stu-id="5a06e-106">The table below lists similar X12 transaction sets (ST01), which can occur together in a single group (GS01).</span></span>  
   
-|GS01|ST01|  
+|<span data-ttu-id="5a06e-107">GS01</span><span class="sxs-lookup"><span data-stu-id="5a06e-107">GS01</span></span>|<span data-ttu-id="5a06e-108">ST01</span><span class="sxs-lookup"><span data-stu-id="5a06e-108">ST01</span></span>|  
 |----------|----------|  
-|CF|844|  
-|CF|849|  
-|DX|894|  
-|DX|895|  
-|FR|821|  
-|FR|827|  
-|GC (GC)|920|  
-|GC (GC)|924|  
-|GC (GC)|925|  
-|GC (GC)|926|  
-|HC|837|  
-|HC|837_D|  
-|HC|837_I|  
-|HC|837_P|  
-|IA|110|  
-|IA|980|  
-|IO|310|  
-|IO|312|  
-|ME|198|  
-|ME|200|  
-|ME|201|  
-|ME|245|  
-|ME|261|  
-|ME|262|  
-|ME|263|  
-|ME|833|  
-|ME|872|  
-|MG|203|  
-|MG|206|  
-|MG|259|  
-|MG|260|  
-|MG|264|  
-|MG|266|  
-|OG|875|  
-|OG|876|  
-|PK|196|  
-|PK|839|  
-|QG|878|  
-|QG|879|  
-|QG|888|  
-|QG|889|  
-|QG|896|  
-|QO|313|  
-|QO|315|  
-|RO|300|  
-|RO|301|  
-|RO|303|  
-|RQ|836|  
-|RQ|840|  
-|RS|869|  
-|RS|870|  
-|SL|135|  
-|SL|139|  
-|SO|302|  
-|SO|311|  
-|SO|317|  
-|SO|319|  
-|SO|322|  
-|SO|323|  
-|SO|324|  
-|SO|325|  
-|SO|326|  
-|SO|361|  
-|TO|197|  
-|TO|199|  
-|TO|265|  
-|TO|485|  
-|TO|486|  
-|TP|460|  
-|TP|463|  
-|TP|466|  
-|TP|468|  
-|TP|490|  
-|TP|492|  
-|TP|494|  
-|WA|140|  
-|WA|141|  
-|WA|142|  
-|WA|143|  
+|<span data-ttu-id="5a06e-109">CF</span><span class="sxs-lookup"><span data-stu-id="5a06e-109">CF</span></span>|<span data-ttu-id="5a06e-110">844</span><span class="sxs-lookup"><span data-stu-id="5a06e-110">844</span></span>|  
+|<span data-ttu-id="5a06e-111">CF</span><span class="sxs-lookup"><span data-stu-id="5a06e-111">CF</span></span>|<span data-ttu-id="5a06e-112">849</span><span class="sxs-lookup"><span data-stu-id="5a06e-112">849</span></span>|  
+|<span data-ttu-id="5a06e-113">DX</span><span class="sxs-lookup"><span data-stu-id="5a06e-113">DX</span></span>|<span data-ttu-id="5a06e-114">894</span><span class="sxs-lookup"><span data-stu-id="5a06e-114">894</span></span>|  
+|<span data-ttu-id="5a06e-115">DX</span><span class="sxs-lookup"><span data-stu-id="5a06e-115">DX</span></span>|<span data-ttu-id="5a06e-116">895</span><span class="sxs-lookup"><span data-stu-id="5a06e-116">895</span></span>|  
+|<span data-ttu-id="5a06e-117">FR</span><span class="sxs-lookup"><span data-stu-id="5a06e-117">FR</span></span>|<span data-ttu-id="5a06e-118">821</span><span class="sxs-lookup"><span data-stu-id="5a06e-118">821</span></span>|  
+|<span data-ttu-id="5a06e-119">FR</span><span class="sxs-lookup"><span data-stu-id="5a06e-119">FR</span></span>|<span data-ttu-id="5a06e-120">827</span><span class="sxs-lookup"><span data-stu-id="5a06e-120">827</span></span>|  
+|<span data-ttu-id="5a06e-121">GC (GC)</span><span class="sxs-lookup"><span data-stu-id="5a06e-121">GC</span></span>|<span data-ttu-id="5a06e-122">920</span><span class="sxs-lookup"><span data-stu-id="5a06e-122">920</span></span>|  
+|<span data-ttu-id="5a06e-123">GC (GC)</span><span class="sxs-lookup"><span data-stu-id="5a06e-123">GC</span></span>|<span data-ttu-id="5a06e-124">924</span><span class="sxs-lookup"><span data-stu-id="5a06e-124">924</span></span>|  
+|<span data-ttu-id="5a06e-125">GC (GC)</span><span class="sxs-lookup"><span data-stu-id="5a06e-125">GC</span></span>|<span data-ttu-id="5a06e-126">925</span><span class="sxs-lookup"><span data-stu-id="5a06e-126">925</span></span>|  
+|<span data-ttu-id="5a06e-127">GC (GC)</span><span class="sxs-lookup"><span data-stu-id="5a06e-127">GC</span></span>|<span data-ttu-id="5a06e-128">926</span><span class="sxs-lookup"><span data-stu-id="5a06e-128">926</span></span>|  
+|<span data-ttu-id="5a06e-129">HC</span><span class="sxs-lookup"><span data-stu-id="5a06e-129">HC</span></span>|<span data-ttu-id="5a06e-130">837</span><span class="sxs-lookup"><span data-stu-id="5a06e-130">837</span></span>|  
+|<span data-ttu-id="5a06e-131">HC</span><span class="sxs-lookup"><span data-stu-id="5a06e-131">HC</span></span>|<span data-ttu-id="5a06e-132">837_D</span><span class="sxs-lookup"><span data-stu-id="5a06e-132">837_D</span></span>|  
+|<span data-ttu-id="5a06e-133">HC</span><span class="sxs-lookup"><span data-stu-id="5a06e-133">HC</span></span>|<span data-ttu-id="5a06e-134">837_I</span><span class="sxs-lookup"><span data-stu-id="5a06e-134">837_I</span></span>|  
+|<span data-ttu-id="5a06e-135">HC</span><span class="sxs-lookup"><span data-stu-id="5a06e-135">HC</span></span>|<span data-ttu-id="5a06e-136">837_P</span><span class="sxs-lookup"><span data-stu-id="5a06e-136">837_P</span></span>|  
+|<span data-ttu-id="5a06e-137">IA</span><span class="sxs-lookup"><span data-stu-id="5a06e-137">IA</span></span>|<span data-ttu-id="5a06e-138">110</span><span class="sxs-lookup"><span data-stu-id="5a06e-138">110</span></span>|  
+|<span data-ttu-id="5a06e-139">IA</span><span class="sxs-lookup"><span data-stu-id="5a06e-139">IA</span></span>|<span data-ttu-id="5a06e-140">980</span><span class="sxs-lookup"><span data-stu-id="5a06e-140">980</span></span>|  
+|<span data-ttu-id="5a06e-141">IO</span><span class="sxs-lookup"><span data-stu-id="5a06e-141">IO</span></span>|<span data-ttu-id="5a06e-142">310</span><span class="sxs-lookup"><span data-stu-id="5a06e-142">310</span></span>|  
+|<span data-ttu-id="5a06e-143">IO</span><span class="sxs-lookup"><span data-stu-id="5a06e-143">IO</span></span>|<span data-ttu-id="5a06e-144">312</span><span class="sxs-lookup"><span data-stu-id="5a06e-144">312</span></span>|  
+|<span data-ttu-id="5a06e-145">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-145">ME</span></span>|<span data-ttu-id="5a06e-146">198</span><span class="sxs-lookup"><span data-stu-id="5a06e-146">198</span></span>|  
+|<span data-ttu-id="5a06e-147">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-147">ME</span></span>|<span data-ttu-id="5a06e-148">200</span><span class="sxs-lookup"><span data-stu-id="5a06e-148">200</span></span>|  
+|<span data-ttu-id="5a06e-149">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-149">ME</span></span>|<span data-ttu-id="5a06e-150">201</span><span class="sxs-lookup"><span data-stu-id="5a06e-150">201</span></span>|  
+|<span data-ttu-id="5a06e-151">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-151">ME</span></span>|<span data-ttu-id="5a06e-152">245</span><span class="sxs-lookup"><span data-stu-id="5a06e-152">245</span></span>|  
+|<span data-ttu-id="5a06e-153">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-153">ME</span></span>|<span data-ttu-id="5a06e-154">261</span><span class="sxs-lookup"><span data-stu-id="5a06e-154">261</span></span>|  
+|<span data-ttu-id="5a06e-155">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-155">ME</span></span>|<span data-ttu-id="5a06e-156">262</span><span class="sxs-lookup"><span data-stu-id="5a06e-156">262</span></span>|  
+|<span data-ttu-id="5a06e-157">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-157">ME</span></span>|<span data-ttu-id="5a06e-158">263</span><span class="sxs-lookup"><span data-stu-id="5a06e-158">263</span></span>|  
+|<span data-ttu-id="5a06e-159">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-159">ME</span></span>|<span data-ttu-id="5a06e-160">833</span><span class="sxs-lookup"><span data-stu-id="5a06e-160">833</span></span>|  
+|<span data-ttu-id="5a06e-161">ME</span><span class="sxs-lookup"><span data-stu-id="5a06e-161">ME</span></span>|<span data-ttu-id="5a06e-162">872</span><span class="sxs-lookup"><span data-stu-id="5a06e-162">872</span></span>|  
+|<span data-ttu-id="5a06e-163">MG</span><span class="sxs-lookup"><span data-stu-id="5a06e-163">MG</span></span>|<span data-ttu-id="5a06e-164">203</span><span class="sxs-lookup"><span data-stu-id="5a06e-164">203</span></span>|  
+|<span data-ttu-id="5a06e-165">MG</span><span class="sxs-lookup"><span data-stu-id="5a06e-165">MG</span></span>|<span data-ttu-id="5a06e-166">206</span><span class="sxs-lookup"><span data-stu-id="5a06e-166">206</span></span>|  
+|<span data-ttu-id="5a06e-167">MG</span><span class="sxs-lookup"><span data-stu-id="5a06e-167">MG</span></span>|<span data-ttu-id="5a06e-168">259</span><span class="sxs-lookup"><span data-stu-id="5a06e-168">259</span></span>|  
+|<span data-ttu-id="5a06e-169">MG</span><span class="sxs-lookup"><span data-stu-id="5a06e-169">MG</span></span>|<span data-ttu-id="5a06e-170">260</span><span class="sxs-lookup"><span data-stu-id="5a06e-170">260</span></span>|  
+|<span data-ttu-id="5a06e-171">MG</span><span class="sxs-lookup"><span data-stu-id="5a06e-171">MG</span></span>|<span data-ttu-id="5a06e-172">264</span><span class="sxs-lookup"><span data-stu-id="5a06e-172">264</span></span>|  
+|<span data-ttu-id="5a06e-173">MG</span><span class="sxs-lookup"><span data-stu-id="5a06e-173">MG</span></span>|<span data-ttu-id="5a06e-174">266</span><span class="sxs-lookup"><span data-stu-id="5a06e-174">266</span></span>|  
+|<span data-ttu-id="5a06e-175">OG</span><span class="sxs-lookup"><span data-stu-id="5a06e-175">OG</span></span>|<span data-ttu-id="5a06e-176">875</span><span class="sxs-lookup"><span data-stu-id="5a06e-176">875</span></span>|  
+|<span data-ttu-id="5a06e-177">OG</span><span class="sxs-lookup"><span data-stu-id="5a06e-177">OG</span></span>|<span data-ttu-id="5a06e-178">876</span><span class="sxs-lookup"><span data-stu-id="5a06e-178">876</span></span>|  
+|<span data-ttu-id="5a06e-179">PK</span><span class="sxs-lookup"><span data-stu-id="5a06e-179">PK</span></span>|<span data-ttu-id="5a06e-180">196</span><span class="sxs-lookup"><span data-stu-id="5a06e-180">196</span></span>|  
+|<span data-ttu-id="5a06e-181">PK</span><span class="sxs-lookup"><span data-stu-id="5a06e-181">PK</span></span>|<span data-ttu-id="5a06e-182">839</span><span class="sxs-lookup"><span data-stu-id="5a06e-182">839</span></span>|  
+|<span data-ttu-id="5a06e-183">QG</span><span class="sxs-lookup"><span data-stu-id="5a06e-183">QG</span></span>|<span data-ttu-id="5a06e-184">878</span><span class="sxs-lookup"><span data-stu-id="5a06e-184">878</span></span>|  
+|<span data-ttu-id="5a06e-185">QG</span><span class="sxs-lookup"><span data-stu-id="5a06e-185">QG</span></span>|<span data-ttu-id="5a06e-186">879</span><span class="sxs-lookup"><span data-stu-id="5a06e-186">879</span></span>|  
+|<span data-ttu-id="5a06e-187">QG</span><span class="sxs-lookup"><span data-stu-id="5a06e-187">QG</span></span>|<span data-ttu-id="5a06e-188">888</span><span class="sxs-lookup"><span data-stu-id="5a06e-188">888</span></span>|  
+|<span data-ttu-id="5a06e-189">QG</span><span class="sxs-lookup"><span data-stu-id="5a06e-189">QG</span></span>|<span data-ttu-id="5a06e-190">889</span><span class="sxs-lookup"><span data-stu-id="5a06e-190">889</span></span>|  
+|<span data-ttu-id="5a06e-191">QG</span><span class="sxs-lookup"><span data-stu-id="5a06e-191">QG</span></span>|<span data-ttu-id="5a06e-192">896</span><span class="sxs-lookup"><span data-stu-id="5a06e-192">896</span></span>|  
+|<span data-ttu-id="5a06e-193">QO</span><span class="sxs-lookup"><span data-stu-id="5a06e-193">QO</span></span>|<span data-ttu-id="5a06e-194">313</span><span class="sxs-lookup"><span data-stu-id="5a06e-194">313</span></span>|  
+|<span data-ttu-id="5a06e-195">QO</span><span class="sxs-lookup"><span data-stu-id="5a06e-195">QO</span></span>|<span data-ttu-id="5a06e-196">315</span><span class="sxs-lookup"><span data-stu-id="5a06e-196">315</span></span>|  
+|<span data-ttu-id="5a06e-197">RO</span><span class="sxs-lookup"><span data-stu-id="5a06e-197">RO</span></span>|<span data-ttu-id="5a06e-198">300</span><span class="sxs-lookup"><span data-stu-id="5a06e-198">300</span></span>|  
+|<span data-ttu-id="5a06e-199">RO</span><span class="sxs-lookup"><span data-stu-id="5a06e-199">RO</span></span>|<span data-ttu-id="5a06e-200">301</span><span class="sxs-lookup"><span data-stu-id="5a06e-200">301</span></span>|  
+|<span data-ttu-id="5a06e-201">RO</span><span class="sxs-lookup"><span data-stu-id="5a06e-201">RO</span></span>|<span data-ttu-id="5a06e-202">303</span><span class="sxs-lookup"><span data-stu-id="5a06e-202">303</span></span>|  
+|<span data-ttu-id="5a06e-203">RQ</span><span class="sxs-lookup"><span data-stu-id="5a06e-203">RQ</span></span>|<span data-ttu-id="5a06e-204">836</span><span class="sxs-lookup"><span data-stu-id="5a06e-204">836</span></span>|  
+|<span data-ttu-id="5a06e-205">RQ</span><span class="sxs-lookup"><span data-stu-id="5a06e-205">RQ</span></span>|<span data-ttu-id="5a06e-206">840</span><span class="sxs-lookup"><span data-stu-id="5a06e-206">840</span></span>|  
+|<span data-ttu-id="5a06e-207">RS</span><span class="sxs-lookup"><span data-stu-id="5a06e-207">RS</span></span>|<span data-ttu-id="5a06e-208">869</span><span class="sxs-lookup"><span data-stu-id="5a06e-208">869</span></span>|  
+|<span data-ttu-id="5a06e-209">RS</span><span class="sxs-lookup"><span data-stu-id="5a06e-209">RS</span></span>|<span data-ttu-id="5a06e-210">870</span><span class="sxs-lookup"><span data-stu-id="5a06e-210">870</span></span>|  
+|<span data-ttu-id="5a06e-211">SL</span><span class="sxs-lookup"><span data-stu-id="5a06e-211">SL</span></span>|<span data-ttu-id="5a06e-212">135</span><span class="sxs-lookup"><span data-stu-id="5a06e-212">135</span></span>|  
+|<span data-ttu-id="5a06e-213">SL</span><span class="sxs-lookup"><span data-stu-id="5a06e-213">SL</span></span>|<span data-ttu-id="5a06e-214">139</span><span class="sxs-lookup"><span data-stu-id="5a06e-214">139</span></span>|  
+|<span data-ttu-id="5a06e-215">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-215">SO</span></span>|<span data-ttu-id="5a06e-216">302</span><span class="sxs-lookup"><span data-stu-id="5a06e-216">302</span></span>|  
+|<span data-ttu-id="5a06e-217">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-217">SO</span></span>|<span data-ttu-id="5a06e-218">311</span><span class="sxs-lookup"><span data-stu-id="5a06e-218">311</span></span>|  
+|<span data-ttu-id="5a06e-219">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-219">SO</span></span>|<span data-ttu-id="5a06e-220">317</span><span class="sxs-lookup"><span data-stu-id="5a06e-220">317</span></span>|  
+|<span data-ttu-id="5a06e-221">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-221">SO</span></span>|<span data-ttu-id="5a06e-222">319</span><span class="sxs-lookup"><span data-stu-id="5a06e-222">319</span></span>|  
+|<span data-ttu-id="5a06e-223">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-223">SO</span></span>|<span data-ttu-id="5a06e-224">322</span><span class="sxs-lookup"><span data-stu-id="5a06e-224">322</span></span>|  
+|<span data-ttu-id="5a06e-225">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-225">SO</span></span>|<span data-ttu-id="5a06e-226">323</span><span class="sxs-lookup"><span data-stu-id="5a06e-226">323</span></span>|  
+|<span data-ttu-id="5a06e-227">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-227">SO</span></span>|<span data-ttu-id="5a06e-228">324</span><span class="sxs-lookup"><span data-stu-id="5a06e-228">324</span></span>|  
+|<span data-ttu-id="5a06e-229">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-229">SO</span></span>|<span data-ttu-id="5a06e-230">325</span><span class="sxs-lookup"><span data-stu-id="5a06e-230">325</span></span>|  
+|<span data-ttu-id="5a06e-231">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-231">SO</span></span>|<span data-ttu-id="5a06e-232">326</span><span class="sxs-lookup"><span data-stu-id="5a06e-232">326</span></span>|  
+|<span data-ttu-id="5a06e-233">SO</span><span class="sxs-lookup"><span data-stu-id="5a06e-233">SO</span></span>|<span data-ttu-id="5a06e-234">361</span><span class="sxs-lookup"><span data-stu-id="5a06e-234">361</span></span>|  
+|<span data-ttu-id="5a06e-235">TO</span><span class="sxs-lookup"><span data-stu-id="5a06e-235">TO</span></span>|<span data-ttu-id="5a06e-236">197</span><span class="sxs-lookup"><span data-stu-id="5a06e-236">197</span></span>|  
+|<span data-ttu-id="5a06e-237">TO</span><span class="sxs-lookup"><span data-stu-id="5a06e-237">TO</span></span>|<span data-ttu-id="5a06e-238">199</span><span class="sxs-lookup"><span data-stu-id="5a06e-238">199</span></span>|  
+|<span data-ttu-id="5a06e-239">TO</span><span class="sxs-lookup"><span data-stu-id="5a06e-239">TO</span></span>|<span data-ttu-id="5a06e-240">265</span><span class="sxs-lookup"><span data-stu-id="5a06e-240">265</span></span>|  
+|<span data-ttu-id="5a06e-241">TO</span><span class="sxs-lookup"><span data-stu-id="5a06e-241">TO</span></span>|<span data-ttu-id="5a06e-242">485</span><span class="sxs-lookup"><span data-stu-id="5a06e-242">485</span></span>|  
+|<span data-ttu-id="5a06e-243">TO</span><span class="sxs-lookup"><span data-stu-id="5a06e-243">TO</span></span>|<span data-ttu-id="5a06e-244">486</span><span class="sxs-lookup"><span data-stu-id="5a06e-244">486</span></span>|  
+|<span data-ttu-id="5a06e-245">TP</span><span class="sxs-lookup"><span data-stu-id="5a06e-245">TP</span></span>|<span data-ttu-id="5a06e-246">460</span><span class="sxs-lookup"><span data-stu-id="5a06e-246">460</span></span>|  
+|<span data-ttu-id="5a06e-247">TP</span><span class="sxs-lookup"><span data-stu-id="5a06e-247">TP</span></span>|<span data-ttu-id="5a06e-248">463</span><span class="sxs-lookup"><span data-stu-id="5a06e-248">463</span></span>|  
+|<span data-ttu-id="5a06e-249">TP</span><span class="sxs-lookup"><span data-stu-id="5a06e-249">TP</span></span>|<span data-ttu-id="5a06e-250">466</span><span class="sxs-lookup"><span data-stu-id="5a06e-250">466</span></span>|  
+|<span data-ttu-id="5a06e-251">TP</span><span class="sxs-lookup"><span data-stu-id="5a06e-251">TP</span></span>|<span data-ttu-id="5a06e-252">468</span><span class="sxs-lookup"><span data-stu-id="5a06e-252">468</span></span>|  
+|<span data-ttu-id="5a06e-253">TP</span><span class="sxs-lookup"><span data-stu-id="5a06e-253">TP</span></span>|<span data-ttu-id="5a06e-254">490</span><span class="sxs-lookup"><span data-stu-id="5a06e-254">490</span></span>|  
+|<span data-ttu-id="5a06e-255">TP</span><span class="sxs-lookup"><span data-stu-id="5a06e-255">TP</span></span>|<span data-ttu-id="5a06e-256">492</span><span class="sxs-lookup"><span data-stu-id="5a06e-256">492</span></span>|  
+|<span data-ttu-id="5a06e-257">TP</span><span class="sxs-lookup"><span data-stu-id="5a06e-257">TP</span></span>|<span data-ttu-id="5a06e-258">494</span><span class="sxs-lookup"><span data-stu-id="5a06e-258">494</span></span>|  
+|<span data-ttu-id="5a06e-259">WA</span><span class="sxs-lookup"><span data-stu-id="5a06e-259">WA</span></span>|<span data-ttu-id="5a06e-260">140</span><span class="sxs-lookup"><span data-stu-id="5a06e-260">140</span></span>|  
+|<span data-ttu-id="5a06e-261">WA</span><span class="sxs-lookup"><span data-stu-id="5a06e-261">WA</span></span>|<span data-ttu-id="5a06e-262">141</span><span class="sxs-lookup"><span data-stu-id="5a06e-262">141</span></span>|  
+|<span data-ttu-id="5a06e-263">WA</span><span class="sxs-lookup"><span data-stu-id="5a06e-263">WA</span></span>|<span data-ttu-id="5a06e-264">142</span><span class="sxs-lookup"><span data-stu-id="5a06e-264">142</span></span>|  
+|<span data-ttu-id="5a06e-265">WA</span><span class="sxs-lookup"><span data-stu-id="5a06e-265">WA</span></span>|<span data-ttu-id="5a06e-266">143</span><span class="sxs-lookup"><span data-stu-id="5a06e-266">143</span></span>|  
   
 > [!NOTE]
->  HIPAA 5010 グループでは、1 つのグループ内に異なるバージョンのトランザクション セットが許可されます。  
+>  <span data-ttu-id="5a06e-267">HIPAA 5010 グループでは、1 つのグループ内に異なるバージョンのトランザクション セットが許可されます。</span><span class="sxs-lookup"><span data-stu-id="5a06e-267">A HIPAA 5010 group also allows transaction sets of different versions within a single group.</span></span>  
   
- トランザクション セットの処理中に例外が発生した場合は、EDI パーティのプロパティを使用して、インターチェンジ全体を停止するか、エラーが発生したトランザクション セットのみを停止するかが決定されます。  
+ <span data-ttu-id="5a06e-268">トランザクション セットの処理中に例外が発生した場合は、EDI パーティのプロパティを使用して、インターチェンジ全体を停止するか、エラーが発生したトランザクション セットのみを停止するかが決定されます。</span><span class="sxs-lookup"><span data-stu-id="5a06e-268">If an exception is encountered when processing a transaction set, EDI party properties are used to determine if the entire interchange or only the failing transaction set is suspended.</span></span>  
   
- グループは機能グループ ヘッダー (X12 では GS、EDIFACT では UNG) で始まり、機能グループ トレーラー (X12 では GE、EDIFACT では UNE) で終わる必要があります。 グループ ヘッダーには、送信者と受信者コード、日付と時刻、ヘッダーとトレーラー、機能グループ、およびその他の情報内に含まれる可能性があるトランザクション セットのコレクションを定義するグループの識別子に一致する制御番号が含まれています。 グループ トレーラーには、グループ内のトランザクション セットの数を示す要素が含まれます。  
+ <span data-ttu-id="5a06e-269">グループは機能グループ ヘッダー (X12 では GS、EDIFACT では UNG) で始まり、機能グループ トレーラー (X12 では GE、EDIFACT では UNE) で終わる必要があります。</span><span class="sxs-lookup"><span data-stu-id="5a06e-269">A group must start with a Functional Group Header (GS in X12 or UNG in EDIFACT), and it must end with a Functional Group Trailer (GE in X12 or UNE in EDIFACT).</span></span> <span data-ttu-id="5a06e-270">グループ ヘッダーには、送信者と受信者コード、日付と時刻、ヘッダーとトレーラー、機能グループ、およびその他の情報内に含まれる可能性があるトランザクション セットのコレクションを定義するグループの識別子に一致する制御番号が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5a06e-270">The Group Header contains sender and receiver codes, a date and time, a control number that matches the header and trailer, a group identifier that defines the collection of transaction sets that may be included within the functional group, and other information.</span></span> <span data-ttu-id="5a06e-271">グループ トレーラーには、グループ内のトランザクション セットの数を示す要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="5a06e-271">The Group Trailer has an element that indicates the number of transaction sets within the group.</span></span>  
   
- グループは、EDIFACT インターチェンジでは省略可能です。 EDIFACT インターチェンジの場合は、グループが存在しない場合でも複数のトランザクション セットに含めることができます (UNG セグメントが存在しない)。 この場合、すべてのトランザクション セットは同じ種類でなければなりません。これは、1 つのグループに含まれるトランザクション セットは同じ種類である必要があるためです。 たとえば、1 つのグループ内、または複数のグループを含んでいない 1 つのインターチェンジ内に、APERAK トランザクション セットと ORDERS トランザクション セットの両方を含めることはできません。  
+ <span data-ttu-id="5a06e-272">グループは、EDIFACT インターチェンジでは省略可能です。</span><span class="sxs-lookup"><span data-stu-id="5a06e-272">A group is optional in an EDIFACT interchange.</span></span> <span data-ttu-id="5a06e-273">EDIFACT インターチェンジの場合は、グループが存在しない場合でも複数のトランザクション セットに含めることができます (UNG セグメントが存在しない)。</span><span class="sxs-lookup"><span data-stu-id="5a06e-273">An EDIFACT interchange can contain multiple transaction sets even if no group is present (the UNG segment is not present).</span></span> <span data-ttu-id="5a06e-274">この場合、すべてのトランザクション セットは同じ種類でなければなりません。これは、1 つのグループに含まれるトランザクション セットは同じ種類である必要があるためです。</span><span class="sxs-lookup"><span data-stu-id="5a06e-274">In this case, the transaction sets must all be of the same type, as transaction sets in a single group must be of the same type.</span></span> <span data-ttu-id="5a06e-275">たとえば、1 つのグループ内、または複数のグループを含んでいない 1 つのインターチェンジ内に、APERAK トランザクション セットと ORDERS トランザクション セットの両方を含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="5a06e-275">For example, APERAK and ORDERS transaction sets could not both be present in a single group or in an interchange that does not have multiple groups.</span></span>  
   
- グループは、X12 インターチェンジでは必須です。
+ <span data-ttu-id="5a06e-276">グループは、X12 インターチェンジでは必須です。</span><span class="sxs-lookup"><span data-stu-id="5a06e-276">A group is required in an X12 interchange.</span></span>

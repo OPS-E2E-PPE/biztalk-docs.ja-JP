@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="interceptor-configuration-schema"></a>インターセプタ構成スキーマ
-このセクションには、共通のインターセプタ構成スキーマが示されています。  
+# <a name="interceptor-configuration-schema"></a><span data-ttu-id="b9750-102">インターセプタ構成スキーマ</span><span class="sxs-lookup"><span data-stu-id="b9750-102">Interceptor Configuration Schema</span></span>
+<span data-ttu-id="b9750-103">このセクションには、共通のインターセプタ構成スキーマが示されています。</span><span class="sxs-lookup"><span data-stu-id="b9750-103">This section contains the common interceptor configuration schema.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -199,7 +199,7 @@ ms.lasthandoff: 09/20/2017
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>参照  
- [インターセプター構成ファイル](../core/interceptor-configuration-file.md)   
- [Windows Workflow Foundation スキーマ](../core/windows-workflow-foundation-schema.md)   
- [Windows Communication Foundation スキーマ](../core/windows-communication-foundation-schema.md)
+## <a name="see-also"></a><span data-ttu-id="b9750-104">参照</span><span class="sxs-lookup"><span data-stu-id="b9750-104">See Also</span></span>  
+ <span data-ttu-id="b9750-105">[インターセプター構成ファイル](../core/interceptor-configuration-file.md) </span><span class="sxs-lookup"><span data-stu-id="b9750-105">[Interceptor Configuration File](../core/interceptor-configuration-file.md) </span></span>  
+ <span data-ttu-id="b9750-106">[Windows Workflow Foundation スキーマ](../core/windows-workflow-foundation-schema.md) </span><span class="sxs-lookup"><span data-stu-id="b9750-106">[Windows Workflow Foundation Schema](../core/windows-workflow-foundation-schema.md) </span></span>  
+ [<span data-ttu-id="b9750-107">Windows Communication Foundation スキーマ</span><span class="sxs-lookup"><span data-stu-id="b9750-107">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)

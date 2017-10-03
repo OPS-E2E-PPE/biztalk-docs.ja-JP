@@ -21,37 +21,37 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-create-a-send-port"></a>送信ポートを作成する方法
-JD Edwards EnterpriseOne 用の BizTalk Server 送信ポートを作成するには、次の手順を使用します。  
+# <a name="how-to-create-a-send-port"></a><span data-ttu-id="02517-102">送信ポートを作成する方法</span><span class="sxs-lookup"><span data-stu-id="02517-102">How to Create a Send Port</span></span>
+<span data-ttu-id="02517-103">JD Edwards EnterpriseOne 用の BizTalk Server 送信ポートを作成するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="02517-103">Use the following procedure to create BizTalk Server send ports for JD Edwards EnterpriseOne.</span></span>  
   
-### <a name="to-create-a-send-port"></a>送信ポートを作成するには  
+### <a name="to-create-a-send-port"></a><span data-ttu-id="02517-104">送信ポートを作成するには</span><span class="sxs-lookup"><span data-stu-id="02517-104">To create a send port</span></span>  
   
-1.  [送信ポート] ノードを右クリックします。  
+1.  <span data-ttu-id="02517-105">[送信ポート] ノードを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="02517-105">Right-click the Send Ports node.</span></span>  
   
-2.  をクリックして**送信ポートの追加**です。  
+2.  <span data-ttu-id="02517-106">をクリックして**送信ポートの追加**です。</span><span class="sxs-lookup"><span data-stu-id="02517-106">Click **Add Send Port**.</span></span>  
   
-3.  **新しい送信ポートを作成**ダイアログ ボックスで、**静的な送信請求-応答ポート**から、**送信ポートの種類の指定**ボックスの一覧し、をクリックして**OK**.  
+3.  <span data-ttu-id="02517-107">**新しい送信ポートを作成**ダイアログ ボックスで、**静的な送信請求-応答ポート**から、**送信ポートの種類の指定**ボックスの一覧し、をクリックして**OK**.</span><span class="sxs-lookup"><span data-stu-id="02517-107">In the **Create New Send Port** dialog box, select **Static Solicit-Response Port** from the **Specify the type of Send Port** list, and click **OK**.</span></span>  
   
-     **静的な送信請求-応答送信ポート プロパティ**ウィンドウが開きます。  
+     <span data-ttu-id="02517-108">**静的な送信請求-応答送信ポート プロパティ**ウィンドウが開きます。</span><span class="sxs-lookup"><span data-stu-id="02517-108">The **Static Solicit-Response Send Port Properties** window opens.</span></span>  
   
-4.  たとえば、送信ポートの名前を入力`SSOSendToJDEEntOne`です。  
+4.  <span data-ttu-id="02517-109">たとえば、送信ポートの名前を入力`SSOSendToJDEEntOne`です。</span><span class="sxs-lookup"><span data-stu-id="02517-109">Type a name for the send port, for example, `SSOSendToJDEEntOne`.</span></span>  
   
-5.  をクリックして**トランスポート**左側のウィンドウでします。  
+5.  <span data-ttu-id="02517-110">をクリックして**トランスポート**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="02517-110">Click **Transport** in the left pane.</span></span>  
   
-6.  をクリックして**トランスポートの種類**を選択して**[jdeentone]**です。  
+6.  <span data-ttu-id="02517-111">をクリックして**トランスポートの種類**を選択して**[jdeentone]**です。</span><span class="sxs-lookup"><span data-stu-id="02517-111">Click **Transport Type**, and select **JDEEntOne**.</span></span>  
   
-7.  選択、**アドレス (URI)**、省略記号 (...) ボタンをクリックします。  
+7.  <span data-ttu-id="02517-112">選択、**アドレス (URI)**、省略記号 (...) ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="02517-112">Select the **Address (URI)**, and click the ellipsis (…) button.</span></span>  
   
-     JD Edwards EnterpriseOne**トランスポートのプロパティ** ダイアログ ボックスが表示されます。  
+     <span data-ttu-id="02517-113">JD Edwards EnterpriseOne**トランスポートのプロパティ** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="02517-113">The JD Edwards EnterpriseOne **Transport Properties** dialog box appears.</span></span>  
   
-8.  型`myJDEEntOneSSO`の**論理システム名**です。  
+8.  <span data-ttu-id="02517-114">型`myJDEEntOneSSO`の**論理システム名**です。</span><span class="sxs-lookup"><span data-stu-id="02517-114">Type `myJDEEntOneSSO` for the **Logical System Name**.</span></span>  
   
-9. 選択**はい**の**SSO を使用して**です。  
+9. <span data-ttu-id="02517-115">選択**はい**の**SSO を使用して**です。</span><span class="sxs-lookup"><span data-stu-id="02517-115">Select **Yes** for **Use SSO**.</span></span>  
   
-10. 一覧で、JD Edwards EnterpriseOne システムを表すよう作成したシングル サインオン (SSO) 関連アプリケーションを選択します。  
+10. <span data-ttu-id="02517-116">一覧で、JD Edwards EnterpriseOne システムを表すよう作成したシングル サインオン (SSO) 関連アプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="02517-116">In the drop-down list, select the Single Sign-On (SSO) affiliate application that you created to represent the JD Edwards EnterpriseOne system.</span></span>  
   
-     をクリックして**OK**入力した情報を確認します。  
+     <span data-ttu-id="02517-117">をクリックして**OK**入力した情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="02517-117">Click **OK** to confirm the information you entered.</span></span>  
   
-## <a name="see-also"></a>参照  
- [関連アプリケーションの作成](../core/creating-affiliate-applications4.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on1.md)
+## <a name="see-also"></a><span data-ttu-id="02517-118">参照</span><span class="sxs-lookup"><span data-stu-id="02517-118">See Also</span></span>  
+ <span data-ttu-id="02517-119">[関連アプリケーションの作成](../core/creating-affiliate-applications4.md) </span><span class="sxs-lookup"><span data-stu-id="02517-119">[Creating Affiliate Applications](../core/creating-affiliate-applications4.md) </span></span>  
+ [<span data-ttu-id="02517-120">シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="02517-120">Using Single Sign-On</span></span>](../core/using-single-sign-on1.md)

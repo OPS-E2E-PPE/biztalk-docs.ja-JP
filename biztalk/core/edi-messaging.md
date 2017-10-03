@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-messaging"></a>EDI メッセージ
-このセクションでは、EDI 標準および EDI メッセージの構造について説明します。  
+# <a name="edi-messaging"></a><span data-ttu-id="a9c48-102">EDI メッセージ</span><span class="sxs-lookup"><span data-stu-id="a9c48-102">EDI Messaging</span></span>
+<span data-ttu-id="a9c48-103">このセクションでは、EDI 標準および EDI メッセージの構造について説明します。</span><span class="sxs-lookup"><span data-stu-id="a9c48-103">This section contains description of the EDI standards and the structure of an EDI message.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="a9c48-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="a9c48-104">In This Section</span></span>  
   
--   [EDI メッセージの構造](../core/edi-message-structure.md)  
+-   [<span data-ttu-id="a9c48-105">EDI メッセージの構造</span><span class="sxs-lookup"><span data-stu-id="a9c48-105">EDI Message Structure</span></span>](../core/edi-message-structure.md)  
   
--   [EDI 受信確認構造](../core/edi-acknowledgment-structure.md)  
+-   [<span data-ttu-id="a9c48-106">EDI 受信確認構造</span><span class="sxs-lookup"><span data-stu-id="a9c48-106">EDI Acknowledgment Structure</span></span>](../core/edi-acknowledgment-structure.md)  
   
--   [EDI スキーマ](../core/edi-schemas.md)  
+-   [<span data-ttu-id="a9c48-107">EDI スキーマ</span><span class="sxs-lookup"><span data-stu-id="a9c48-107">EDI Schemas</span></span>](../core/edi-schemas.md)  
   
--   [EDI 文字セット](../core/edi-character-sets.md)
+-   [<span data-ttu-id="a9c48-108">EDI 文字セット</span><span class="sxs-lookup"><span data-stu-id="a9c48-108">EDI Character Sets</span></span>](../core/edi-character-sets.md)

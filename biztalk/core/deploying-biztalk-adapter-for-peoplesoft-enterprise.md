@@ -19,9 +19,9 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="deploying-biztalk-adapter-for-peoplesoft-enterprise"></a>BizTalk Adapter for PeopleSoft Enterprise の展開
-ここでは、BizTalk Adapter for PeopleSoft Enterprise の展開に関する情報を示します。  
+# <a name="deploying-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="df060-102">BizTalk Adapter for PeopleSoft Enterprise の展開</span><span class="sxs-lookup"><span data-stu-id="df060-102">Deploying BizTalk Adapter for PeopleSoft Enterprise</span></span>
+<span data-ttu-id="df060-103">ここでは、BizTalk Adapter for PeopleSoft Enterprise の展開に関する情報を示します。</span><span class="sxs-lookup"><span data-stu-id="df060-103">This section provides information about deploying BizTalk Adapter for PeopleSoft Enterprise.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="df060-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="df060-104">In This Section</span></span>  
   
--   [ポートとアセンブリの展開](../core/deploying-ports-and-assemblies5.md)
+-   [<span data-ttu-id="df060-105">ポートとアセンブリの展開</span><span class="sxs-lookup"><span data-stu-id="df060-105">Deploying Ports and Assemblies</span></span>](../core/deploying-ports-and-assemblies5.md)

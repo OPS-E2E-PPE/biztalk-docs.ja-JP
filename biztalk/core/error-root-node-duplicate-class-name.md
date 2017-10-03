@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---root-node-duplicate-class-name"></a>エラー - ルート ノードの重複するクラス名
-**エラー コード**  
+# <a name="error---root-node-duplicate-class-name"></a><span data-ttu-id="06e44-102">エラー - ルート ノードの重複するクラス名</span><span class="sxs-lookup"><span data-stu-id="06e44-102">Error - Root Node Duplicate Class Name</span></span>
+<span data-ttu-id="06e44-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="06e44-103">**Error Code**</span></span>  
   
- BEC2013  
+ <span data-ttu-id="06e44-104">BEC2013</span><span class="sxs-lookup"><span data-stu-id="06e44-104">BEC2013</span></span>  
   
- **説明**  
+ <span data-ttu-id="06e44-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="06e44-105">**Explanation**</span></span>  
   
- **RootNode TypeName**スキーマのルート ノードのすべてのプロパティを一意にする必要があります。 このスキーマのルート ノードの 2 つ以上見つかりましたの同じ値を持つ、 **RootNode TypeName**プロパティです。  
+ <span data-ttu-id="06e44-106">**RootNode TypeName**スキーマのルート ノードのすべてのプロパティを一意にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="06e44-106">The **RootNode TypeName** property of all of the root nodes in a schema must be unique.</span></span> <span data-ttu-id="06e44-107">このスキーマのルート ノードの 2 つ以上見つかりましたの同じ値を持つ、 **RootNode TypeName**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="06e44-107">Two or more of the root nodes in this schema have been found to have the same value for their **RootNode TypeName** properties.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="06e44-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="06e44-108">**User Action**</span></span>  
   
- 関連するルート ノードの順に選択、ことを指定する値を確認する、 **RootNode TypeName**プロパティが有効かつ一意です。
+ <span data-ttu-id="06e44-109">関連するルート ノードの順に選択、ことを指定する値を確認する、 **RootNode TypeName**プロパティが有効かつ一意です。</span><span class="sxs-lookup"><span data-stu-id="06e44-109">Select the relevant root nodes in turn, ensuring that the values you supply for their **RootNode TypeName** properties are valid and unique.</span></span>

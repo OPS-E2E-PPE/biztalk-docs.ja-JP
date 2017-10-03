@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-the-wcf-customisolated-adapter"></a>WCF-CustomIsolated アダプターの構成
-このセクションでは、WCF-CustomIsolated アダプターを構成する方法について説明します。  
+# <a name="configuring-the-wcf-customisolated-adapter"></a><span data-ttu-id="fe09e-102">WCF-CustomIsolated アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="fe09e-102">Configuring the WCF-CustomIsolated Adapter</span></span>
+<span data-ttu-id="fe09e-103">このセクションでは、WCF-CustomIsolated アダプターを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="fe09e-103">This section describes how to configure a WCF-CustomIsolated adapter.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="fe09e-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="fe09e-104">In This Section</span></span>  
   
--   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
+-   [<span data-ttu-id="fe09e-105">Wcf-customisolated 受信場所を構成する方法</span><span class="sxs-lookup"><span data-stu-id="fe09e-105">How to Configure a WCF-CustomIsolated Receive Location</span></span>](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [Wcf-customisolated 受信ハンドラーを構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-handler.md)
+-   [<span data-ttu-id="fe09e-106">Wcf-customisolated 受信ハンドラーを構成する方法</span><span class="sxs-lookup"><span data-stu-id="fe09e-106">How to Configure a WCF-CustomIsolated Receive Handler</span></span>](../core/how-to-configure-a-wcf-customisolated-receive-handler.md)

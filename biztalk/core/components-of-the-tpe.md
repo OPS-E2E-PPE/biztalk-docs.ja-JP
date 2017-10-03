@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="components-of-the-tpe"></a>TPE のコンポーネント
-このセクションでは、TPE のユーザー インターフェイスおよび実行される機能について説明します。  
+# <a name="components-of-the-tpe"></a><span data-ttu-id="6e8d6-102">TPE のコンポーネント</span><span class="sxs-lookup"><span data-stu-id="6e8d6-102">Components of the TPE</span></span>
+<span data-ttu-id="6e8d6-103">このセクションでは、TPE のユーザー インターフェイスおよび実行される機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="6e8d6-103">This section contains information about the TPE user interface and the functions it performs.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="6e8d6-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="6e8d6-104">In This Section</span></span>  
   
--   [TPE のメニュー オプション](../core/tpe-menu-options.md)  
+-   [<span data-ttu-id="6e8d6-105">TPE のメニュー オプション</span><span class="sxs-lookup"><span data-stu-id="6e8d6-105">TPE Menu Options</span></span>](../core/tpe-menu-options.md)  
   
--   [アクティビティ ビューとは何ですか。](../core/what-is-an-activity-view.md)  
+-   [<span data-ttu-id="6e8d6-106">アクティビティ ビューとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="6e8d6-106">What Is an Activity View?</span></span>](../core/what-is-an-activity-view.md)  
   
--   [イベント ソース ビューとは何ですか。](../core/what-is-the-source-event-view.md)  
+-   [<span data-ttu-id="6e8d6-107">イベント ソース ビューとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="6e8d6-107">What Is the Source Event View?</span></span>](../core/what-is-the-source-event-view.md)  
   
--   [TPE アクティビティ ビューのノード](../core/tpe-activity-view-nodes.md)
+-   [<span data-ttu-id="6e8d6-108">TPE アクティビティ ビューのノード</span><span class="sxs-lookup"><span data-stu-id="6e8d6-108">TPE Activity View Nodes</span></span>](../core/tpe-activity-view-nodes.md)

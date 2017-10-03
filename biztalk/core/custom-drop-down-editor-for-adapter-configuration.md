@@ -18,10 +18,10 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="custom-drop-down-editor-for-adapter-configuration"></a>アダプター構成のカスタム ドロップダウン エディター
-カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワードを入力するためのドロップダウン テキスト ボックスを表示するクラス。 **GetEditStyle**オーバーライド**UIEditorEditStyle.DropDown**ドロップダウン サブコントロールを示すです。 サービス メソッド**DropDownControl**と**CloseDropDown**で作成されたコントロールを管理**CreatePassword**です。  
+# <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="2ef42-102">アダプター構成のカスタム ドロップダウン エディター</span><span class="sxs-lookup"><span data-stu-id="2ef42-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
+<span data-ttu-id="2ef42-103">カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワードを入力するためのドロップダウン テキスト ボックスを表示するクラス。</span><span class="sxs-lookup"><span data-stu-id="2ef42-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="2ef42-104">**GetEditStyle**オーバーライド**UIEditorEditStyle.DropDown**ドロップダウン サブコントロールを示すです。</span><span class="sxs-lookup"><span data-stu-id="2ef42-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="2ef42-105">サービス メソッド**DropDownControl**と**CloseDropDown**で作成されたコントロールを管理**CreatePassword**です。</span><span class="sxs-lookup"><span data-stu-id="2ef42-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  
   
- 次のコードはカスタム ドロップダウン エディターのクラス定義です。  
+ <span data-ttu-id="2ef42-106">次のコードはカスタム ドロップダウン エディターのクラス定義です。</span><span class="sxs-lookup"><span data-stu-id="2ef42-106">The following code is the class definition for the custom drop-down editor:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -93,8 +93,8 @@ namespace AdapterManagement.ComponentModel {
 } // Microsoft.BizTalk.Adapter.Framework.ComponentModel  
 ```  
   
-## <a name="see-also"></a>参照  
- [カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md)   
- [アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md)   
- [アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md)   
- [アダプターの高度な構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="2ef42-107">参照</span><span class="sxs-lookup"><span data-stu-id="2ef42-107">See Also</span></span>  
+ <span data-ttu-id="2ef42-108">[カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="2ef42-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
+ <span data-ttu-id="2ef42-109">[アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="2ef42-109">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
+ <span data-ttu-id="2ef42-110">[アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="2ef42-110">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
+ [<span data-ttu-id="2ef42-111">アダプターの高度な構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="2ef42-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)

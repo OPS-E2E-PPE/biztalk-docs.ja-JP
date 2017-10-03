@@ -21,42 +21,42 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="managing-the-bam-dynamic-infrastructure"></a>BAM 動的インフラストラクチャの管理
-ビジネス アクティビティの監視 (BAM) 機能では、SQL とオンライン分析処理 (OLAP) のインフラストラクチャに動的に生成されるインフラストラクチャを使用します。 管理者は、BAM 管理ユーティリティを使用して、ビジネス アナリストが作成する BAM 定義ブックまたは XML ファイルを展開します。  
+# <a name="managing-the-bam-dynamic-infrastructure"></a><span data-ttu-id="8fd58-102">BAM 動的インフラストラクチャの管理</span><span class="sxs-lookup"><span data-stu-id="8fd58-102">Managing the BAM Dynamic Infrastructure</span></span>
+<span data-ttu-id="8fd58-103">ビジネス アクティビティの監視 (BAM) 機能では、SQL とオンライン分析処理 (OLAP) のインフラストラクチャに動的に生成されるインフラストラクチャを使用します。</span><span class="sxs-lookup"><span data-stu-id="8fd58-103">Business Activity Monitoring (BAM) features use a dynamically generated SQL and online analytical processing (OLAP) infrastructure.</span></span> <span data-ttu-id="8fd58-104">管理者は、BAM 管理ユーティリティを使用して、ビジネス アナリストが作成する BAM 定義ブックまたは XML ファイルを展開します。</span><span class="sxs-lookup"><span data-stu-id="8fd58-104">Administrators use the BAM Management utility to deploy the BAM definition workbook or XML file, which the business analyst develops.</span></span>  
   
- BAM 動的インフラストラクチャは、BAM ブック ビュー、BAM の展開、BAM データ変換サービス (DTS) パッケージ、および BAM データベースで構成されています。 BAM 動的インフラストラクチャの詳細については、次を参照してください。 [BAM 動的インフラストラクチャ](../core/bam-dynamic-infrastructure.md)です。  
+ <span data-ttu-id="8fd58-105">BAM 動的インフラストラクチャは、BAM ブック ビュー、BAM の展開、BAM データ変換サービス (DTS) パッケージ、および BAM データベースで構成されています。</span><span class="sxs-lookup"><span data-stu-id="8fd58-105">The BAM dynamic infrastructure consists of the BAM workbook views, BAM deployments, the BAM Data Transformation Services (DTS) packages, and the BAM databases.</span></span> <span data-ttu-id="8fd58-106">BAM 動的インフラストラクチャの詳細については、次を参照してください。 [BAM 動的インフラストラクチャ](../core/bam-dynamic-infrastructure.md)です。</span><span class="sxs-lookup"><span data-stu-id="8fd58-106">For more information about the BAM dynamic infrastructure, see [BAM Dynamic Infrastructure](../core/bam-dynamic-infrastructure.md).</span></span>  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の構成時に、BizTalk Server によって次の BAM データベースが作成されます。  
+ <span data-ttu-id="8fd58-107">[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の構成時に、BizTalk Server によって次の BAM データベースが作成されます。</span><span class="sxs-lookup"><span data-stu-id="8fd58-107">BizTalk Server creates the following BAM databases when you configure [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]:</span></span>  
   
--   BAM プライマリ インポート (BAMPrimaryImport) データベース  
+-   <span data-ttu-id="8fd58-108">BAM プライマリ インポート (BAMPrimaryImport) データベース</span><span class="sxs-lookup"><span data-stu-id="8fd58-108">BAM Primary Import (BAMPrimaryImport) database</span></span>  
   
--   BAM スター スキーマ (BAMStarSchema) データベース (オプション)  
+-   <span data-ttu-id="8fd58-109">BAM スター スキーマ (BAMStarSchema) データベース (オプション)</span><span class="sxs-lookup"><span data-stu-id="8fd58-109">BAM Star Schema (BAMStarSchema) database (optional)</span></span>  
   
--   BAM 分析 (BAMAnalysis) データベース (オプション)  
+-   <span data-ttu-id="8fd58-110">BAM 分析 (BAMAnalysis) データベース (オプション)</span><span class="sxs-lookup"><span data-stu-id="8fd58-110">BAM Analysis (BAMAnalysis) database (optional)</span></span>  
   
--   BAM アーカイブ (BAMArchive) データベース  
+-   <span data-ttu-id="8fd58-111">BAM アーカイブ (BAMArchive) データベース</span><span class="sxs-lookup"><span data-stu-id="8fd58-111">BAM Archive (BAMArchive) database</span></span>  
   
- BAM データベースについては、次を参照してください。 [BAM データベースを管理する](../core/managing-bam-databases.md)です。  
+ <span data-ttu-id="8fd58-112">BAM データベースについては、次を参照してください。 [BAM データベースを管理する](../core/managing-bam-databases.md)です。</span><span class="sxs-lookup"><span data-stu-id="8fd58-112">For information about the BAM databases, see [Managing BAM Databases](../core/managing-bam-databases.md).</span></span>  
   
- 管理者は、このセクションで説明している BAM インフラストラクチャの次の管理作業を行います。  
+ <span data-ttu-id="8fd58-113">管理者は、このセクションで説明している BAM インフラストラクチャの次の管理作業を行います。</span><span class="sxs-lookup"><span data-stu-id="8fd58-113">Administrators perform the following management tasks for the BAM infrastructure, which are described in this section:</span></span>  
   
--   BAM 定義と BAM ビューの展開および展開解除  
+-   <span data-ttu-id="8fd58-114">BAM 定義と BAM ビューの展開および展開解除</span><span class="sxs-lookup"><span data-stu-id="8fd58-114">Deploy and undeploy BAM definitions and views</span></span>  
   
--   BAS ビューへのユーザー アクセスの管理  
+-   <span data-ttu-id="8fd58-115">BAS ビューへのユーザー アクセスの管理</span><span class="sxs-lookup"><span data-stu-id="8fd58-115">Manage user access to BAM views</span></span>  
   
--   BAM DTS パッケージの実行  
+-   <span data-ttu-id="8fd58-116">BAM DTS パッケージの実行</span><span class="sxs-lookup"><span data-stu-id="8fd58-116">Run the BAM DTS packages</span></span>  
   
--   BAM データベースのバックアップ  
+-   <span data-ttu-id="8fd58-117">BAM データベースのバックアップ</span><span class="sxs-lookup"><span data-stu-id="8fd58-117">Back up the BAM databases</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="8fd58-118">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="8fd58-118">In This Section</span></span>  
   
--   [BAM 定義を管理します。](../core/managing-bam-definitions.md)
+-   [<span data-ttu-id="8fd58-119">BAM 定義を管理します。</span><span class="sxs-lookup"><span data-stu-id="8fd58-119">Managing BAM Definitions</span></span>](../core/managing-bam-definitions.md)
   
--   [BAM セキュリティの管理](../core/managing-bam-security.md)  
+-   [<span data-ttu-id="8fd58-120">BAM セキュリティの管理</span><span class="sxs-lookup"><span data-stu-id="8fd58-120">Managing BAM Security</span></span>](../core/managing-bam-security.md)  
   
--   [集計の管理](../core/managing-aggregations.md) 
+-   [<span data-ttu-id="8fd58-121">集計の管理</span><span class="sxs-lookup"><span data-stu-id="8fd58-121">Managing Aggregations</span></span>](../core/managing-aggregations.md) 
   
--   [BAM データベースの管理](../core/managing-bam-databases.md)
+-   [<span data-ttu-id="8fd58-122">BAM データベースの管理</span><span class="sxs-lookup"><span data-stu-id="8fd58-122">Managing BAM Databases</span></span>](../core/managing-bam-databases.md)
   
-## <a name="see-also"></a>参照  
- [BAM の管理](../core/managing-bam.md)
+## <a name="see-also"></a><span data-ttu-id="8fd58-123">参照</span><span class="sxs-lookup"><span data-stu-id="8fd58-123">See Also</span></span>  
+ [<span data-ttu-id="8fd58-124">BAM の管理</span><span class="sxs-lookup"><span data-stu-id="8fd58-124">Managing BAM</span></span>](../core/managing-bam.md)

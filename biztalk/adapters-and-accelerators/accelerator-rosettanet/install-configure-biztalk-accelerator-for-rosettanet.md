@@ -16,156 +16,156 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="install-biztalk-accelerator-for-rosettanet"></a>BizTalk Accelerator を RosettaNet をインストールします。
+# <a name="install-biztalk-accelerator-for-rosettanet"></a><span data-ttu-id="e3d81-103">BizTalk Accelerator を RosettaNet をインストールします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-103">Install BizTalk Accelerator for RosettaNet</span></span>
 
-## <a name="overview"></a>概要
-RosettaNet (BTARN) 用 Microsoft BizTalk Accelerator をインストールします。
+## <a name="overview"></a><span data-ttu-id="e3d81-104">概要</span><span class="sxs-lookup"><span data-stu-id="e3d81-104">Overview</span></span>
+<span data-ttu-id="e3d81-105">RosettaNet (BTARN) 用 Microsoft BizTalk Accelerator をインストールします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-105">Install the Microsoft BizTalk Accelerator for RosettaNet (BTARN).</span></span>
   
 > [!NOTE]
->  Enterprise エディションの BizTalk Server に、RosettaNet (BTARN) のみ、Enterprise エディションの BizTalk アクセラレータをインストールできます。 、BizTalk Server の Standard Edition でのみ、Standard エディションの BizTalk Accelerator に RosettaNet (BTARN) をインストールできます。  
+>  <span data-ttu-id="e3d81-106">Enterprise エディションの BizTalk Server に、RosettaNet (BTARN) のみ、Enterprise エディションの BizTalk アクセラレータをインストールできます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-106">On the Enterprise Edition of BizTalk Server, you can install only the Enterprise Edition of BizTalk Accelerator for RosettaNet (BTARN).</span></span> <span data-ttu-id="e3d81-107">、BizTalk Server の Standard Edition でのみ、Standard エディションの BizTalk Accelerator に RosettaNet (BTARN) をインストールできます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-107">On the Standard Edition of BizTalk Server, you can install only the Standard Edition of BizTalk Accelerator for RosettaNet (BTARN).</span></span>  
   
- BTARN のインストールには、次の項目が含まれます。  
+ <span data-ttu-id="e3d81-108">BTARN のインストールには、次の項目が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-108">The BTARN installation includes the following:</span></span>  
   
--   BTARN 管理  
+-   <span data-ttu-id="e3d81-109">BTARN 管理</span><span class="sxs-lookup"><span data-stu-id="e3d81-109">BTARN Administration</span></span>  
   
--   BizTalk Orchestration Designer XLANG スケジュール (Partner Interface Process パターン)  
+-   <span data-ttu-id="e3d81-110">BizTalk Orchestration Designer XLANG スケジュール (Partner Interface Process パターン)</span><span class="sxs-lookup"><span data-stu-id="e3d81-110">BizTalk Orchestration Designer XLANG schedules (Partner Interface Process patterns)</span></span>  
   
--   RosettaNet Implementation Framework (RNIF)  
+-   <span data-ttu-id="e3d81-111">RosettaNet Implementation Framework (RNIF)</span><span class="sxs-lookup"><span data-stu-id="e3d81-111">RosettaNet Implementation Framework (RNIF)</span></span>  
   
--   BTARN データベース  
+-   <span data-ttu-id="e3d81-112">BTARN データベース</span><span class="sxs-lookup"><span data-stu-id="e3d81-112">BTARN database</span></span>  
   
--   HTTP フロント エンドの Web アプリケーション  
+-   <span data-ttu-id="e3d81-113">HTTP フロント エンドの Web アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e3d81-113">HTTP front end Web applications</span></span>  
   
-## <a name="hardware-and-software-requirements"></a>ハードウェアとソフトウェアの要件
+## <a name="hardware-and-software-requirements"></a><span data-ttu-id="e3d81-114">ハードウェアとソフトウェアの要件</span><span class="sxs-lookup"><span data-stu-id="e3d81-114">Hardware and software requirements</span></span>
 
-ハードウェアとソフトウェアの最小要件は、BizTalk Server と同じです。
+<span data-ttu-id="e3d81-115">ハードウェアとソフトウェアの最小要件は、BizTalk Server と同じです。</span><span class="sxs-lookup"><span data-stu-id="e3d81-115">The minimum hardware and software requirements are the same as BizTalk Server.</span></span>
 
-|  |BizTalk の要件  |SQL と OS の要件 |  
+|  |<span data-ttu-id="e3d81-116">BizTalk の要件</span><span class="sxs-lookup"><span data-stu-id="e3d81-116">BizTalk requirements</span></span>  |<span data-ttu-id="e3d81-117">SQL と OS の要件</span><span class="sxs-lookup"><span data-stu-id="e3d81-117">SQL and OS requirements</span></span> |  
 |---------|---------|--------- | 
-| [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [BizTalk Server 2016 のハードウェア/ソフトウェア要件](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md) | **SQL Server のハードウェアおよびソフトウェア要件**: <br/>[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)<br/>[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)<br/><br/>**Windows サーバーのハードウェア要件**: <br/>[Windows Server 2016](https://technet.microsoft.com/windows-server-docs/get-started/server-basics)<br/>[Windows Server 2012](https://technet.microsoft.com/library/jj134246.aspx) |
-| [!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)] <br/><br/> BizTalk Server 2013 | [BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md) |**SQL Server のハードウェアおよびソフトウェア要件**: <br/>[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)<br/>[SQL Server 2012](https://msdn.microsoft.com/library/ms143506(v=sql.110).aspx)<br/>[SQL Server 2008 R2](https://msdn.microsoft.com/library/ms143506(v=sql.105).aspx)<br/><br/>**Windows サーバーのハードウェア要件**: <br/>[Windows Server 2012](https://technet.microsoft.com/library/jj134246.aspx)<br/>[Windows Server 2008 R2](https://technet.microsoft.com/library/dd379511(v=ws.10).aspx)  |
+| [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [<span data-ttu-id="e3d81-118">BizTalk Server 2016 のハードウェア/ソフトウェア要件</span><span class="sxs-lookup"><span data-stu-id="e3d81-118">Hardware and Software Requirements for BizTalk Server 2016</span></span>](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md) | <span data-ttu-id="e3d81-119">**SQL Server のハードウェアおよびソフトウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="e3d81-119">**SQL Server hardware and software requirements**:</span></span> <br/><span data-ttu-id="e3d81-120">[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)</span><span class="sxs-lookup"><span data-stu-id="e3d81-120">[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)</span></span><br/><span data-ttu-id="e3d81-121">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span><span class="sxs-lookup"><span data-stu-id="e3d81-121">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span></span><br/><br/><span data-ttu-id="e3d81-122">**Windows サーバーのハードウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="e3d81-122">**Windows Server hardware requirements**:</span></span> <br/>[<span data-ttu-id="e3d81-123">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="e3d81-123">Windows Server 2016</span></span>](https://technet.microsoft.com/windows-server-docs/get-started/server-basics)<br/>[<span data-ttu-id="e3d81-124">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="e3d81-124">Windows Server 2012</span></span>](https://technet.microsoft.com/library/jj134246.aspx) |
+| [!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)] <br/><br/> <span data-ttu-id="e3d81-125">BizTalk Server 2013</span><span class="sxs-lookup"><span data-stu-id="e3d81-125">BizTalk Server 2013</span></span> | [<span data-ttu-id="e3d81-126">BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア</span><span class="sxs-lookup"><span data-stu-id="e3d81-126">Hardware and Software Requirements for BizTalk Server 2013 and 2013 R2</span></span>](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md) |<span data-ttu-id="e3d81-127">**SQL Server のハードウェアおよびソフトウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="e3d81-127">**SQL Server hardware and software requirements**:</span></span> <br/><span data-ttu-id="e3d81-128">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span><span class="sxs-lookup"><span data-stu-id="e3d81-128">[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)</span></span><br/><span data-ttu-id="e3d81-129">[SQL Server 2012](https://msdn.microsoft.com/library/ms143506(v=sql.110).aspx)</span><span class="sxs-lookup"><span data-stu-id="e3d81-129">[SQL Server 2012](https://msdn.microsoft.com/library/ms143506(v=sql.110).aspx)</span></span><br/><span data-ttu-id="e3d81-130">[SQL Server 2008 R2](https://msdn.microsoft.com/library/ms143506(v=sql.105).aspx)</span><span class="sxs-lookup"><span data-stu-id="e3d81-130">[SQL Server 2008 R2](https://msdn.microsoft.com/library/ms143506(v=sql.105).aspx)</span></span><br/><br/><span data-ttu-id="e3d81-131">**Windows サーバーのハードウェア要件**:</span><span class="sxs-lookup"><span data-stu-id="e3d81-131">**Windows Server hardware requirements**:</span></span> <br/>[<span data-ttu-id="e3d81-132">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="e3d81-132">Windows Server 2012</span></span>](https://technet.microsoft.com/library/jj134246.aspx)<br/><span data-ttu-id="e3d81-133">[Windows Server 2008 R2](https://technet.microsoft.com/library/dd379511(v=ws.10).aspx)</span><span class="sxs-lookup"><span data-stu-id="e3d81-133">[Windows Server 2008 R2](https://technet.microsoft.com/library/dd379511(v=ws.10).aspx)</span></span>  |
 
 > [!TIP] 
-> ここにリストされているのは最小のハードウェア要件です。 環境はそれぞれ異なり、ご使用の環境ではこれらを超える要件が必要となる可能性は十分あります。 「[BizTalk Server ソリューションのインストール、サイズ変更、配置、およびメンテナンスを行うための推奨事項](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)」を参照してください。 
+> <span data-ttu-id="e3d81-134">ここにリストされているのは最小のハードウェア要件です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-134">The hardware requirements listed are the minimum.</span></span> <span data-ttu-id="e3d81-135">環境はそれぞれ異なり、ご使用の環境ではこれらを超える要件が必要となる可能性は十分あります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-135">Every environment is different and there's a very good chance that your environment may need more.</span></span> <span data-ttu-id="e3d81-136">「[BizTalk Server ソリューションのインストール、サイズ変更、配置、およびメンテナンスを行うための推奨事項](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3d81-136">See [Recommendations for Installing, Sizing, Deploying, and Maintaining a BizTalk Server Solution](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx).</span></span> 
 
-## <a name="install-and-configure"></a>[インストールと構成]
+## <a name="install-and-configure"></a><span data-ttu-id="e3d81-137">[インストールと構成]</span><span class="sxs-lookup"><span data-stu-id="e3d81-137">Install and configure</span></span>
 
-### <a name="before-you-begin"></a>アンインストールの準備
+### <a name="before-you-begin"></a><span data-ttu-id="e3d81-138">アンインストールの準備</span><span class="sxs-lookup"><span data-stu-id="e3d81-138">Before you begin</span></span>
 
-* BTARN データベースの BTARN は、SQL Server コンピューター名とデータベース名のプロパティのみを構成します。 このプロパティについての情報は、レジストリに格納されます。
-* メンバーであるアカウントでサインインする、BizTalk Server 管理者グループ。 
-* BTARN セットアップは、BizTalk Server のダウンロードに、`\BizTalk Accelerators`フォルダーです。
-* BizTalk Server をインストールする必要があります、SQL Server を実行する必要があります。
-* BTARN と BizTalk Server の両方は、ソフトウェアの前提条件として Microsoft .NET Framework を必要とします。 お使いのコンピューターにインストールされている .NET Framework の複数のバージョンがある場合は、BtarnAPP Web アプリケーションが .NET Framework 4.0 クラシックを参照していることを確認します。 この構成は、インターネット インフォメーション サービス (IIS) マネージャーで行えます。  
-* BizTalk ホスト インスタンス アカウントおよび BizTalk 分離ホスト インスタンス アカウントは同じである必要があります。 それ以外の場合、BTARN は正しく機能しません。  
-* BTARN では、個々 のサービス アカウントとグループではなく、のみ、BizTalk Server 管理者グループまたは BizTalk Application Users グループに追加することができます。  
-* IIS 分離モードを構成して、BTSHTTPReceive.dll 用の WebService 拡張を作成する必要があります。 詳細については、"404 Not found エラー、HTTP 要求を送信するときに"エントリにある「のトラブルシューティング: 問題と解決策」トピックを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=188560](http://go.microsoft.com/fwlink/?LinkId=188560)です。 またを参照してください[HTTP の受信場所の IIS を構成する方法](../../core/how-to-configure-iis-for-an-http-receive-location.md)です。  
-* サーバーを追加する (http:// <*サーバー名*>) をローカル インターネット ゾーンに Internet Explorer のセキュリティ オプション。  
-*  既定以外のポートを使用するリモート SQL インスタンスを使用して BTARN を構成する場合は、Microsoft SQL Server クライアント ツールをローカル コンピューターにインストールする必要があります。 詳細については、「[複数コンピューター環境の BizTalk Server Installation Guide](../../install-and-config-guides/install-biztalk-server-in-a-multi-computer-environment.md)です。
-*  BizTalk Server の構成時にロール - BizTalk 管理者、BizTalk ホスト ユーザー、および BizTalk 分離ホスト ユーザーの別のグループを使用する必要があります。  
-*  BTARN は、BTARN データベースを構成する SQL インスタンス用に作成されたエイリアスの使用をサポートしていません。  
+* <span data-ttu-id="e3d81-139">BTARN データベースの BTARN は、SQL Server コンピューター名とデータベース名のプロパティのみを構成します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-139">For the BTARN database, BTARN only configures the SQL Server computer name and database name properties.</span></span> <span data-ttu-id="e3d81-140">このプロパティについての情報は、レジストリに格納されます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-140">Information about these properties is stored in the registry.</span></span>
+* <span data-ttu-id="e3d81-141">メンバーであるアカウントでサインインする、BizTalk Server 管理者グループ。</span><span class="sxs-lookup"><span data-stu-id="e3d81-141">Sign in using an account that is a member of the the BizTalk Server Administrators group.</span></span> 
+* <span data-ttu-id="e3d81-142">BTARN セットアップは、BizTalk Server のダウンロードに、`\BizTalk Accelerators`フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="e3d81-142">In your BizTalk Server download, the BTARN setup is in the `\BizTalk Accelerators` folder.</span></span>
+* <span data-ttu-id="e3d81-143">BizTalk Server をインストールする必要があります、SQL Server を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-143">BizTalk Server must be installed, and SQL Server must be running.</span></span>
+* <span data-ttu-id="e3d81-144">BTARN と BizTalk Server の両方は、ソフトウェアの前提条件として Microsoft .NET Framework を必要とします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-144">Both BTARN and BizTalk Server require Microsoft .NET Framework as software prerequisite.</span></span> <span data-ttu-id="e3d81-145">お使いのコンピューターにインストールされている .NET Framework の複数のバージョンがある場合は、BtarnAPP Web アプリケーションが .NET Framework 4.0 クラシックを参照していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-145">If you have multiple versions of .NET Framework installed on your computer, make sure that the BtarnAPP Web application is referencing .NET Framework 4.0 classic.</span></span> <span data-ttu-id="e3d81-146">この構成は、インターネット インフォメーション サービス (IIS) マネージャーで行えます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-146">You can configure this by using the Internet Information Services (IIS) Manager.</span></span>  
+* <span data-ttu-id="e3d81-147">BizTalk ホスト インスタンス アカウントおよび BizTalk 分離ホスト インスタンス アカウントは同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-147">The BizTalk Host Instance Account and the BizTalk Isolated Host Instance Account should be the same.</span></span> <span data-ttu-id="e3d81-148">それ以外の場合、BTARN は正しく機能しません。</span><span class="sxs-lookup"><span data-stu-id="e3d81-148">Otherwise, BTARN does not function correctly.</span></span>  
+* <span data-ttu-id="e3d81-149">BTARN では、個々 のサービス アカウントとグループではなく、のみ、BizTalk Server 管理者グループまたは BizTalk Application Users グループに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-149">BTARN allows you to add only individual service accounts, and not groups, to the BizTalk Server Administrators group or the BizTalk Application Users group.</span></span>  
+* <span data-ttu-id="e3d81-150">IIS 分離モードを構成して、BTSHTTPReceive.dll 用の WebService 拡張を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-150">You need to create a WebService extension for BTSHTTPReceive.dll, configuring the IIS isolation mode.</span></span> <span data-ttu-id="e3d81-151">詳細については、"404 Not found エラー、HTTP 要求を送信するときに"エントリにある「のトラブルシューティング: 問題と解決策」トピックを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=188560](http://go.microsoft.com/fwlink/?LinkId=188560)です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-151">For more information, see the "404 Not found error when sending a HTTP request" entry in the "Troubleshooting: Issues and Resolutions" topic at [http://go.microsoft.com/fwlink/?LinkId=188560](http://go.microsoft.com/fwlink/?LinkId=188560).</span></span> <span data-ttu-id="e3d81-152">またを参照してください[HTTP の受信場所の IIS を構成する方法](../../core/how-to-configure-iis-for-an-http-receive-location.md)です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-152">Also, see [How to Configure IIS for an HTTP Receive Location](../../core/how-to-configure-iis-for-an-http-receive-location.md).</span></span>  
+* <span data-ttu-id="e3d81-153">サーバーを追加する (http:// <*サーバー名*>) をローカル インターネット ゾーンに Internet Explorer のセキュリティ オプション。</span><span class="sxs-lookup"><span data-stu-id="e3d81-153">Add your server (http://<*server name*>) to the Local Internet zone in the Internet Explorer security options.</span></span>  
+*  <span data-ttu-id="e3d81-154">既定以外のポートを使用するリモート SQL インスタンスを使用して BTARN を構成する場合は、Microsoft SQL Server クライアント ツールをローカル コンピューターにインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-154">If a remote SQL instance using non default port is used for configuring BTARN, then the SQL Server Client Tools must be installed locally.</span></span> <span data-ttu-id="e3d81-155">詳細については、「[複数コンピューター環境の BizTalk Server Installation Guide](../../install-and-config-guides/install-biztalk-server-in-a-multi-computer-environment.md)です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-155">For details, see [BizTalk Server Installation Guide for multicomputer environment](../../install-and-config-guides/install-biztalk-server-in-a-multi-computer-environment.md).</span></span>
+*  <span data-ttu-id="e3d81-156">BizTalk Server の構成時にロール - BizTalk 管理者、BizTalk ホスト ユーザー、および BizTalk 分離ホスト ユーザーの別のグループを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-156">A separate group must be used for role - BizTalk Administrator, BizTalk Host Users, and BizTalk Isolated Host Users during the configuration of BizTalk Server.</span></span>  
+*  <span data-ttu-id="e3d81-157">BTARN は、BTARN データベースを構成する SQL インスタンス用に作成されたエイリアスの使用をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="e3d81-157">BTARN does not support the use of alias created for SQL instance to configure the BTARN database.</span></span>  
 
-### <a name="install-btarn"></a>BTARN をインストールします。
+### <a name="install-btarn"></a><span data-ttu-id="e3d81-158">BTARN をインストールします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-158">Install BTARN</span></span>
 
-1.  BTARN の実行**setup.exe**管理者として。
+1.  <span data-ttu-id="e3d81-159">BTARN の実行**setup.exe**管理者として。</span><span class="sxs-lookup"><span data-stu-id="e3d81-159">Run the BTARN **setup.exe** as Administrator.</span></span>
   
-2.  **[インストール]**を選択します。  
+2.  <span data-ttu-id="e3d81-160">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-160">Select **Install**.</span></span>  
   
-3.  **顧客情報**ページで、ユーザー名、組織、およびプロダクト キーを入力し、をクリックして**次**です。  
+3.  <span data-ttu-id="e3d81-161">**顧客情報**ページで、ユーザー名、組織、およびプロダクト キーを入力し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-161">On the **Customer Information** page, type your user name, organization, and the product key, and then click **Next**.</span></span>  
   
-4.  **使用許諾契約書**ページ、使用許諾契約書を読み、クリックして**Accept**です。  
+4.  <span data-ttu-id="e3d81-162">**使用許諾契約書**ページ、使用許諾契約書を読み、クリックして**Accept**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-162">On the **License Agreement** page, read the End User License Agreement, and then click **Accept**.</span></span>  
   
     > [!NOTE]
-    >  インストールを続行するには、使用許諾契約書に同意する必要があります。  
+    >  <span data-ttu-id="e3d81-163">インストールを続行するには、使用許諾契約書に同意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-163">If you do not accept the license agreement, you cannot continue with the installation.</span></span>  
   
-5.  **インストール オプション**] ページで、[**完了**完全インストールまたは**カスタム**の部分的なインストールします。 インストール パスが正しいことを確認し、をクリックして**次**です。  
+5.  <span data-ttu-id="e3d81-164">**インストール オプション**] ページで、[**完了**完全インストールまたは**カスタム**の部分的なインストールします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-164">On the **Installation Options** page, select **Complete** for a full installation or **Custom** for a partial installation.</span></span> <span data-ttu-id="e3d81-165">インストール パスが正しいことを確認し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-165">Ensure the installation path is correct, and then click **Next**.</span></span>  
   
     > [!NOTE]
-    >  選択した場合**カスタム**からをインストールするコンポーネントを選択して、**カスタム インストール**ページ。 SDK またはドキュメント コンポーネントのみをインストールすることを選択する場合は、セットアップ プログラムを実行する前にインストールされている .NET Framework が必要です。  
+    >  <span data-ttu-id="e3d81-166">選択した場合**カスタム**からをインストールするコンポーネントを選択して、**カスタム インストール**ページ。</span><span class="sxs-lookup"><span data-stu-id="e3d81-166">If you select **Custom**, select the components to install from the **Custom Installation** page.</span></span> <span data-ttu-id="e3d81-167">SDK またはドキュメント コンポーネントのみをインストールすることを選択する場合は、セットアップ プログラムを実行する前にインストールされている .NET Framework が必要です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-167">If you select to install SDK or Documentation components only, you must have .NET Framework installed before running the setup program.</span></span>  
   
-6.  **概要** ページで、コンポーネントをインストールして、をクリックし、確認**インストール**です。 **インストールの進行状況**画面には、インストール手順の進行状況が表示されます。  
+6.  <span data-ttu-id="e3d81-168">**概要** ページで、コンポーネントをインストールして、をクリックし、確認**インストール**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-168">On the **Summary** page, review the components you are installing, and then click **Install**.</span></span> <span data-ttu-id="e3d81-169">**インストールの進行状況**画面には、インストール手順の進行状況が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-169">The **Installation Progress** screen displays the progress of the installation procedure.</span></span>  
   
-7.  **のインストールを完了** ページで、ことを確認、**構成ウィザードの実行**ボックスを選択して、をクリックして**完了**です。  
+7.  <span data-ttu-id="e3d81-170">**のインストールを完了** ページで、ことを確認、**構成ウィザードの実行**ボックスを選択して、をクリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-170">On the **Installation Completed** page, ensure the **Run Configuration Wizard** box is selected, and then click **Finish**.</span></span>  
   
-     BTARN 構成ウィザードが開きます。 次に、BTARN を構成します。  
+     <span data-ttu-id="e3d81-171">BTARN 構成ウィザードが開きます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-171">The BTARN Configuration Wizard opens.</span></span> <span data-ttu-id="e3d81-172">次に、BTARN を構成します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-172">Next, you configure BTARN.</span></span>  
   
     > [!IMPORTANT]
-    >  セットアップが完了したら、表示、BTARN の構成が失敗する BTARN HTTP フロント エンド機能のみをインストールするカスタム インストールを実行する場合、"機能のオブジェクトを作成できませんでした: WebApp"エラーです。 このような場合は、2 つのファイルをコピー (**Microsoft.VC80.ATL.manifest**と**atl80.dll**) BizTalk Server を使用しているコンピューターからにインストールされている、BTARN HTTP フロント エンド機能をインストールしたコンピューターにします。  
+    >  <span data-ttu-id="e3d81-173">セットアップが完了したら、表示、BTARN の構成が失敗する BTARN HTTP フロント エンド機能のみをインストールするカスタム インストールを実行する場合、"機能のオブジェクトを作成できませんでした: WebApp"エラーです。</span><span class="sxs-lookup"><span data-stu-id="e3d81-173">If you perform a custom installation to install only the BTARN HTTP Front End feature, BTARN configuration may fail after setup is complete, displaying the "Failed to create object for feature: WebApp" error.</span></span> <span data-ttu-id="e3d81-174">このような場合は、2 つのファイルをコピー (**Microsoft.VC80.ATL.manifest**と**atl80.dll**) BizTalk Server を使用しているコンピューターからにインストールされている、BTARN HTTP フロント エンド機能をインストールしたコンピューターにします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-174">If this occurs, copy two files (**Microsoft.VC80.ATL.manifest** and **atl80.dll**) from a computer with BizTalk Server installed on it, to the computer where you installed the BTARN HTTP Front End feature.</span></span>  
     >   
-    >  2 つのファイルのソース フォルダーは、Visual Studio が BizTalk Server と同じコンピューターにインストールされている場合*< ドライブ\>*: \Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL です。 BizTalk server の 2 つのファイルのソース フォルダーの下のフォルダーは、Visual Studio が BizTalk server にインストールされていない場合*< ドライブ\>*: \WINDOWS\WinSxS です。 ファイルのバージョンは、8.0.50727.42 です。 HTTP フロント エンド機能がインストールされているコンピューター上の宛先フォルダーは、BTARN のインストール ディレクトリ (既定では、 *< ドライブ\>*: \Program Files\Microsoft BTARN)。  
+    >  <span data-ttu-id="e3d81-175">2 つのファイルのソース フォルダーは、Visual Studio が BizTalk Server と同じコンピューターにインストールされている場合*< ドライブ\>*: \Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-175">If Visual Studio is installed on the same computer as BizTalk Server, the source folder for the two files is *<drive\>*:\Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL.</span></span> <span data-ttu-id="e3d81-176">BizTalk server の 2 つのファイルのソース フォルダーの下のフォルダーは、Visual Studio が BizTalk server にインストールされていない場合*< ドライブ\>*: \WINDOWS\WinSxS です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-176">If Visual Studio is not installed on the BizTalk server, the source folder for the two files on the BizTalk server is a folder under *<drive\>*:\WINDOWS\WinSxS.</span></span> <span data-ttu-id="e3d81-177">ファイルのバージョンは、8.0.50727.42 です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-177">The version of the files should be 8.0.50727.42.</span></span> <span data-ttu-id="e3d81-178">HTTP フロント エンド機能がインストールされているコンピューター上の宛先フォルダーは、BTARN のインストール ディレクトリ (既定では、 *< ドライブ\>*: \Program Files\Microsoft BTARN)。</span><span class="sxs-lookup"><span data-stu-id="e3d81-178">The destination folder on the computer where you have installed the HTTP Front End feature is the BTARN installation directory (by default, *<drive\>*:\Program Files\Microsoft BTARN).</span></span>  
     >   
-    >  HTTP フロント エンド機能がインストールされて、コンピューターにこれらのファイルをコピーしたら、次のように再実行して**Configuration.exe**です。  
+    >  <span data-ttu-id="e3d81-179">HTTP フロント エンド機能がインストールされて、コンピューターにこれらのファイルをコピーしたら、次のように再実行して**Configuration.exe**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-179">After you have copied these files to the computer with the HTTP Front End feature installed, rerun **Configuration.exe**.</span></span>  
   
-### <a name="configure-btarn"></a>BTARN を構成します。  
+### <a name="configure-btarn"></a><span data-ttu-id="e3d81-180">BTARN を構成します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-180">Configure BTARN</span></span>  
 
 > [!TIP]
- >  BTARN を構成する前に IIS でのハンドラー マッピング .NET Framework がマップになっていることを確認します。 また、BTARN を構成する場合は、IIS_WPG グループを手動で作成する必要があります。  
+ >  <span data-ttu-id="e3d81-181">BTARN を構成する前に IIS でのハンドラー マッピング .NET Framework がマップになっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-181">Before configuring BTARN, make sure you map .NET Framework under Handler Mappings in IIS.</span></span> <span data-ttu-id="e3d81-182">また、BTARN を構成する場合は、IIS_WPG グループを手動で作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-182">Also, when configuring BTARN, you may need to create the IIS_WPG group manually.</span></span>  
    
-1.  **Microsoft BTARN 構成ウィザード**] ページで、[**基本的な構成**を既定の設定で、サーバーを構成するのにまたは**カスタム構成**に高度な構成オプションを使用してサーバーを構成します。  
+1.  <span data-ttu-id="e3d81-183">**Microsoft BTARN 構成ウィザード**] ページで、[**基本的な構成**を既定の設定で、サーバーを構成するのにまたは**カスタム構成**に高度な構成オプションを使用してサーバーを構成します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-183">On the **Microsoft BTARN Configuration Wizard** page, select **Basic configuration** to configure the server with default settings, or **Custom configuration** to configure the server using advanced configuration options.</span></span>  
   
     > [!NOTE]
-    >  ローカル管理者アカウントを使用して BTARN を構成する場合は、入力としてアカウント*< マシン名\>\\< 管理者名\>*で、**ユーザー ID**フィールド、**サービス資格情報**領域。  
+    >  <span data-ttu-id="e3d81-184">ローカル管理者アカウントを使用して BTARN を構成する場合は、入力としてアカウント*< マシン名\>\\< 管理者名\>*で、**ユーザー ID**フィールド、**サービス資格情報**領域。</span><span class="sxs-lookup"><span data-stu-id="e3d81-184">If you want to configure BTARN using a local administrator account, enter the account as *<machine name\>\\<administrator name\>* in the **User ID** field of the **Service Credential** area.</span></span>  
   
-2.  **データベース サーバー名**テキスト ボックスで、表示されるサーバー名が正しいことを確認します。 **サービス資格情報**領域で、サービスを実行するアカウントのユーザー名 (ドメイン) とパスワードを入力します。 をクリックして**構成**です。  
+2.  <span data-ttu-id="e3d81-185">**データベース サーバー名**テキスト ボックスで、表示されるサーバー名が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-185">In the **Database server name** text box, verify that the server name displayed is correct.</span></span> <span data-ttu-id="e3d81-186">**サービス資格情報**領域で、サービスを実行するアカウントのユーザー名 (ドメイン) とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-186">In the **Service credential** area, enter the user name (with domain) and password for the account that the services will run under.</span></span> <span data-ttu-id="e3d81-187">をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-187">Click **Configure**.</span></span>  
   
-3.  自分のアカウントに管理者特権がある場合は、クリックして**はい**構成を続行します。  
+3.  <span data-ttu-id="e3d81-188">自分のアカウントに管理者特権がある場合は、クリックして**はい**構成を続行します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-188">If your account has administrative privileges, click **Yes** to proceed with the configuration.</span></span>  
   
-4.  選択した場合**基本的な構成**ステップ 1 で、構成するコンポーネントの一覧を確認してください。、**概要**クリックしてダイアログ ボックスで、**次**です。 手順 10 に進みます。  
+4.  <span data-ttu-id="e3d81-189">選択した場合**基本的な構成**ステップ 1 で、構成するコンポーネントの一覧を確認してください。、**概要**クリックしてダイアログ ボックスで、**次**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-189">If you selected **Basic configuration** in step 1, verify the list of components to be configured in the **Summary** dialog box, and then click **Next**.</span></span> <span data-ttu-id="e3d81-190">手順 10 に進みます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-190">Go to step 10.</span></span>  
   
-5.  選択した場合は**カスタム構成**ステップ 1 で、次の手順を実行します。  
-  
-    > [!NOTE]
-    >  BTARN のデータベース名に特殊文字が使用されていると、BTARN の構成に失敗します。  
-  
-6.  ランタイムを構成するため、 **Microsoft BTRAN 構成**ダイアログ ボックスで、をクリックして**ランタイム**左側のウィンドウでします。 右の**ランタイム** ウィンドウで、をクリックして**このコンピューターでランタイム機能を有効にする**です。 データベースの既存のグループを参加させるには、クリア**を新しいデータベース グループを作成する**です。 適切な Web サーバー名、ポート番号、データ ストア、アプリケーション プール サービス アカウント、および BizTalk HTTP 受信仮想フォルダーを選択します。  
-  
-7.  WebApps 機能を構成する、 **Microsoft BTRAN 構成**ダイアログ ボックスで、をクリックして**WebApps**をクリックして、左側のウィンドウ**このコンピューターでランタイム機能を有効にします。**. 適切な BizTalk Server の名前を入力し、ポート番号、または、既定の設定を選択します。 適切な Web アプリケーション仮想フォルダーを選択します。  
-  
-8.  [**構成の適用**] をクリックします。  
-  
-9. **概要** ページで、をクリックして**次**です。  
-  
-10. **構成完了** ページで、をクリックして**完了**です。  
+5.  <span data-ttu-id="e3d81-191">選択した場合は**カスタム構成**ステップ 1 で、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-191">If you selected **Custom configuration** in step 1, perform the following steps:</span></span>  
   
     > [!NOTE]
-    >  BTARN のインストール後に、BAS ビジネス ユーザー、ビジネス マネージャー、およびビジネス管理者の各グループにシステム管理者がユーザーを追加する必要があります。 システム管理者が自分自身をこれらのグループに追加する場合は、ユーザーをグループに追加してから一度ログオフし、再度ログオンする必要があります。
+    >  <span data-ttu-id="e3d81-192">BTARN のデータベース名に特殊文字が使用されていると、BTARN の構成に失敗します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-192">BTARN configuration will fail if you use a special character in the name of any of the BTARN databases.</span></span>  
+  
+6.  <span data-ttu-id="e3d81-193">ランタイムを構成するため、 **Microsoft BTRAN 構成**ダイアログ ボックスで、をクリックして**ランタイム**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-193">To configure the runtime, in the **Microsoft BTRAN Configuration** dialog box, click **Runtime** in the left pane.</span></span> <span data-ttu-id="e3d81-194">右の**ランタイム** ウィンドウで、をクリックして**このコンピューターでランタイム機能を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-194">In the right **Runtime** pane, click **Enable the Runtime feature on this computer**.</span></span> <span data-ttu-id="e3d81-195">データベースの既存のグループを参加させるには、クリア**を新しいデータベース グループを作成する**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-195">To join an existing database group, clear **Do you want to create a new database group**.</span></span> <span data-ttu-id="e3d81-196">適切な Web サーバー名、ポート番号、データ ストア、アプリケーション プール サービス アカウント、および BizTalk HTTP 受信仮想フォルダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-196">Select the appropriate Web server name, port number, data stores, Application Pool service account, and BizTalk HTTP Receive virtual folder.</span></span>  
+  
+7.  <span data-ttu-id="e3d81-197">WebApps 機能を構成する、 **Microsoft BTRAN 構成**ダイアログ ボックスで、をクリックして**WebApps**をクリックして、左側のウィンドウ**このコンピューターでランタイム機能を有効にします。**.</span><span class="sxs-lookup"><span data-stu-id="e3d81-197">To configure the WebApps feature, in the **Microsoft BTRAN Configuration** dialog box, click **WebApps** in the left pane, and then click **Enable the Runtime feature on this computer**.</span></span> <span data-ttu-id="e3d81-198">適切な BizTalk Server の名前を入力し、ポート番号、または、既定の設定を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-198">Enter the appropriate BizTalk Server name and port number, or select the defaults.</span></span> <span data-ttu-id="e3d81-199">適切な Web アプリケーション仮想フォルダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-199">Select the appropriate Web application virtual folder.</span></span>  
+  
+8.  <span data-ttu-id="e3d81-200">[**構成の適用**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-200">Click **Apply Configuration**.</span></span>  
+  
+9. <span data-ttu-id="e3d81-201">**概要** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-201">On the **Summary** page, click **Next**.</span></span>  
+  
+10. <span data-ttu-id="e3d81-202">**構成完了** ページで、をクリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-202">On the **Configuration Completed** page, click **Finish**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="e3d81-203">BTARN のインストール後に、BAS ビジネス ユーザー、ビジネス マネージャー、およびビジネス管理者の各グループにシステム管理者がユーザーを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-203">After you install BTARN, your system administrator must add users to the BAS Business User, Business Manager, and Business Administrator groups.</span></span> <span data-ttu-id="e3d81-204">システム管理者が自分自身をこれらのグループに追加する場合は、ユーザーをグループに追加してから一度ログオフし、再度ログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-204">If you are a system administrator, you will have to populate these groups and log off, and then log in adding yourself to the groups.</span></span>
   
     > [!WARNING]
-    >  次の 3 つの異なるグループは、BizTalk 管理者、BizTalk ホスト ユーザー、および BizTalk Isolated Host Users の BizTalk Server を構成するときに使用する必要があります。  
+    >  <span data-ttu-id="e3d81-205">次の 3 つの異なるグループは、BizTalk 管理者、BizTalk ホスト ユーザー、および BizTalk Isolated Host Users の BizTalk Server を構成するときに使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-205">Three different groups must be used while configuring BizTalk Server for BizTalk Administrator, BizTalk Host Users, and BizTalk Isolated Host Users.</span></span>  
 
-## <a name="start-the-artifacts"></a>成果物を開始します。
-BTARN のオーケストレーション、送信ポート、および受信場所は自動的に開始されません BTARN を構成した後です。
+## <a name="start-the-artifacts"></a><span data-ttu-id="e3d81-206">成果物を開始します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-206">Start the artifacts</span></span>
+<span data-ttu-id="e3d81-207">BTARN のオーケストレーション、送信ポート、および受信場所は自動的に開始されません BTARN を構成した後です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-207">The BTARN orchestrations, send ports, and receive locations are not automatically started after you configure BTARN.</span></span>
   
 > [!NOTE]
->  PrivateInitiatorProcess と PrivateResponderProcess の各オーケストレーションを開始する前に、PrivateInitiator_To_LOB と PrivateResponder_To_LOB の各送信ポートを開始する必要があります。  
+>  <span data-ttu-id="e3d81-208">PrivateInitiatorProcess と PrivateResponderProcess の各オーケストレーションを開始する前に、PrivateInitiator_To_LOB と PrivateResponder_To_LOB の各送信ポートを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-208">Start the PrivateInitiator_To_LOB and PrivateResponder_To_LOB send ports before you can start the PrivateInitiatorProcess and PrivateResponderProcess orchestrations.</span></span>  
   
--   インターネット インフォメーション サービス (IIS) 仮想サーバーを SSL (Secure Sockets Layer) を使用して構成したコンピューターでは、クライアント証明書を受け入れるように仮想サーバーを構成する必要があります。 参照してください[手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にする](step-4-enabling-secure-sockets-layer-in-iis.md)で、[ダブル アクション チュートリアル](double-action-tutorial.md)です。
+-   <span data-ttu-id="e3d81-209">インターネット インフォメーション サービス (IIS) 仮想サーバーを SSL (Secure Sockets Layer) を使用して構成したコンピューターでは、クライアント証明書を受け入れるように仮想サーバーを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-209">On computers where you have configured an Internet Information Services (IIS) virtual server with Secure Sockets Layer (SSL), you must configure the virtual server to accept the client certificate.</span></span> <span data-ttu-id="e3d81-210">参照してください[手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にする](step-4-enabling-secure-sockets-layer-in-iis.md)で、[ダブル アクション チュートリアル](double-action-tutorial.md)です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-210">See [Step 4: Enabling Secure Sockets Layer in IIS](step-4-enabling-secure-sockets-layer-in-iis.md) in the [Double Action Tutorial](double-action-tutorial.md).</span></span>
   
  
-1.  開いている**BizTalk Server 管理コンソール**を管理者として。  
+1.  <span data-ttu-id="e3d81-211">開いている**BizTalk Server 管理コンソール**を管理者として。</span><span class="sxs-lookup"><span data-stu-id="e3d81-211">Open **BizTalk Server Administration** as an administrator.</span></span>  
   
-2.  展開**BizTalk グループ**、展開**アプリケーション**、順に展開**BizTalk アプリケーション 1**です。  
+2.  <span data-ttu-id="e3d81-212">展開**BizTalk グループ**、展開**アプリケーション**、順に展開**BizTalk アプリケーション 1**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-212">Expand **BizTalk Group**, expand **Applications**, and then expand **BizTalk Application 1**.</span></span>  
   
-3.  をクリックして**送信ポート**です。 右側のペインでが開始されていない各送信ポートを右クリックし、をクリックして**開始**です。  
+3.  <span data-ttu-id="e3d81-213">をクリックして**送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-213">Click **Send Ports**.</span></span> <span data-ttu-id="e3d81-214">右側のペインでが開始されていない各送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-214">In the right pane, for each send port that is not started, right-click and then click **Start**.</span></span>  
   
-4.  をクリックして**受信ポート**と**受信場所**です。 右側のウィンドウで各受信場所に対して、開始されていないを右クリックし、をクリックして**開始**です。  
+4.  <span data-ttu-id="e3d81-215">をクリックして**受信ポート**と**受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-215">Click **Receive Ports** and **Receive Locations**.</span></span> <span data-ttu-id="e3d81-216">右側のウィンドウで各受信場所に対して、開始されていないを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-216">In the right pane, for each receive location that is not started, right-click and then click **Start**.</span></span>  
   
     > [!NOTE]
-    >  PrivateInitiatorProcess と PrivateResponderProcess のオーケストレーションを開始する前に、PrivateInitiator_To_LOB と PrivateResponder_To_LOB の送信ポートを開始する必要があります。  
+    >  <span data-ttu-id="e3d81-217">PrivateInitiatorProcess と PrivateResponderProcess のオーケストレーションを開始する前に、PrivateInitiator_To_LOB と PrivateResponder_To_LOB の送信ポートを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3d81-217">You must start the PrivateInitiator_To_LOB and PrivateResponder_To_LOB send ports before you can start the PrivateInitiatorProcess and PrivateResponderProcess orchestrations.</span></span>  
   
-5.  をクリックして**オーケストレーション**と**受信場所**です。 右側のペインでが開始されていない各オーケストレーションを右クリックし、をクリックして**開始**です。  
+5.  <span data-ttu-id="e3d81-218">をクリックして**オーケストレーション**と**受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-218">Click **Orchestrations** and **Receive Locations**.</span></span> <span data-ttu-id="e3d81-219">右側のペインでが開始されていない各オーケストレーションを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-219">In the right pane, for each orchestration that is not started, right-click and then click **Start**.</span></span>  
   
-## <a name="restart-your-computer"></a>コンピューターを再起動します。  
+## <a name="restart-your-computer"></a><span data-ttu-id="e3d81-220">コンピューターを再起動します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-220">Restart your computer</span></span>  
   
-コンピューターを再起動して、構成およびアクセス許可に対する変更を適用します。  
+<span data-ttu-id="e3d81-221">コンピューターを再起動して、構成およびアクセス許可に対する変更を適用します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-221">Restart your computer to apply any modifications made in configuration and permissions.</span></span>  
   
 > [!NOTE]
->  開発者は、開発、ステージング、またはテストのために、単一のサーバーに BTARN をインストールして構成することができます。 その場合、このサーバーを使用して独自のコードを作成し、テストしたうえで、運用環境に移行します。  
+>  <span data-ttu-id="e3d81-222">開発者は、開発、ステージング、またはテストのために、単一のサーバーに BTARN をインストールして構成することができます。</span><span class="sxs-lookup"><span data-stu-id="e3d81-222">Developers may choose to install and configure BTARN on a single server for development, staging, or testing purposes.</span></span> <span data-ttu-id="e3d81-223">その場合、このサーバーを使用して独自のコードを作成し、テストしたうえで、運用環境に移行します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-223">Developers use this server to write their own custom code and test it before moving it to production.</span></span>  
   
- 1 台のサーバーに BTARN をインストールする方法の詳細については、次を参照してください。、[ループバック チュートリアル](loopback-tutorial.md)です。
+ <span data-ttu-id="e3d81-224">1 台のサーバーに BTARN をインストールする方法の詳細については、次を参照してください。、[ループバック チュートリアル](loopback-tutorial.md)です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-224">For more information about installing BTARN on a single server, see the [Loopback Tutorial](loopback-tutorial.md).</span></span>
   
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a><span data-ttu-id="e3d81-225">次の手順</span><span class="sxs-lookup"><span data-stu-id="e3d81-225">Next steps</span></span>  
   
-* [RosettaNet accelerator をアップグレードします。](upgrade-biztalk-accelerator-for-rosettanet.md)
-* [RosettaNet accelerator をアンインストールします。](uninstall-biztalk-accelerator-for-rosettanet.md)
-* [インストールのトラブルシューティングし、既知のインストールの問題を参照してください。](troubleshoot-known-issues-installation.md)
+* [<span data-ttu-id="e3d81-226">RosettaNet accelerator をアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-226">Upgrade the RosettaNet accelerator</span></span>](upgrade-biztalk-accelerator-for-rosettanet.md)
+* [<span data-ttu-id="e3d81-227">RosettaNet accelerator をアンインストールします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-227">Uninstall the RosettaNet accelerator</span></span>](uninstall-biztalk-accelerator-for-rosettanet.md)
+* [<span data-ttu-id="e3d81-228">インストールのトラブルシューティングし、既知のインストールの問題を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3d81-228">Troubleshoot the installation and see the known install issues</span></span>](troubleshoot-known-issues-installation.md)

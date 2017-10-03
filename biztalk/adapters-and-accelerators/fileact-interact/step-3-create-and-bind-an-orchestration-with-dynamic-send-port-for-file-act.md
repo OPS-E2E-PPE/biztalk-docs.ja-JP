@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-3-create-and-bind-an-orchestration-with-dynamic-send-port--for-the-file-act-store-and-forward-pull-scenario"></a>手順 3: を作成し、ファイル Act ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド
-手順を完了、[手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)のこのセクションの手順を開始する前にします。
+# <a name="step-3-create-and-bind-an-orchestration-with-dynamic-send-port--for-the-file-act-store-and-forward-pull-scenario"></a><span data-ttu-id="39104-102">手順 3: を作成し、ファイル Act ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド</span><span class="sxs-lookup"><span data-stu-id="39104-102">Step 3: Create and bind an orchestration with dynamic send port  for the File Act Store and Forward (Pull) Scenario</span></span>
+<span data-ttu-id="39104-103">手順を完了、[手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)のこのセクションの手順を開始する前にします。</span><span class="sxs-lookup"><span data-stu-id="39104-103">Complete the steps in the [Step 2C: Add a FILEACT Send Port for the FileAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md) before you begin the steps in this section.</span></span>
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a><span data-ttu-id="39104-104">次の手順</span><span class="sxs-lookup"><span data-stu-id="39104-104">Next steps</span></span>
   
--   [手順 3: FileAct ストア アンド フォワード (プル) シナリオの動的送信ポート用のオーケストレーションを作成します。](../../adapters-and-accelerators/fileact-interact/step-3a-create-orchestration-for-dynamic-send-port-fileact-store-and-forward.md)  
+-   [<span data-ttu-id="39104-105">手順 3: FileAct ストア アンド フォワード (プル) シナリオの動的送信ポート用のオーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="39104-105">Step 3A: Create an orchestration for dynamic send port for FileAct Store and Forward (Pull) Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-3a-create-orchestration-for-dynamic-send-port-fileact-store-and-forward.md)  
   
--   [手順 3 b: FileAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md)
+-   [<span data-ttu-id="39104-106">手順 3 b: FileAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド</span><span class="sxs-lookup"><span data-stu-id="39104-106">Step 3B: Bind the orchestration with dynamic send port for FileAct Store and Forward (Pull) Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md)

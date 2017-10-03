@@ -18,16 +18,16 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-disable-a-bam-primary-import-database-reference"></a>BAM プライマリ インポート データベースへの参照を無効にする方法 
-管理者を使用して、**無効参照**指定された BAM プライマリ インポート データベースへの参照を無効にするコマンド。  
+# <a name="how-to-disable-a-bam-primary-import-database-reference"></a><span data-ttu-id="d5bde-102">BAM プライマリ インポート データベースへの参照を無効にする方法 </span><span class="sxs-lookup"><span data-stu-id="d5bde-102">How to Disable a BAM Primary Import Database Reference</span></span>
+<span data-ttu-id="d5bde-103">管理者を使用して、**無効参照**指定された BAM プライマリ インポート データベースへの参照を無効にするコマンド。</span><span class="sxs-lookup"><span data-stu-id="d5bde-103">Administrators use the **disable-reference** command to disable a reference to a specified BAM Primary Import database.</span></span>  
   
-### <a name="to-disable-a-reference-to-a-bam-primary-import-database"></a>BAM プライマリ インポート データベースへの参照を無効にするには  
+### <a name="to-disable-a-reference-to-a-bam-primary-import-database"></a><span data-ttu-id="d5bde-104">BAM プライマリ インポート データベースへの参照を無効にするには</span><span class="sxs-lookup"><span data-stu-id="d5bde-104">To disable a reference to a BAM Primary Import database</span></span>  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1.  <span data-ttu-id="d5bde-105">次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="d5bde-105">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
+2.  <span data-ttu-id="d5bde-106">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。</span><span class="sxs-lookup"><span data-stu-id="d5bde-106">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
   
-3.  コマンド ライン プロンプトで、次を入力: **bm 無効参照 TargetServer:\<対象サーバー > - TargetDatabase:\<対象データベース > [-サーバー:\<サーバー >] [-データベース:\<データベース >]**ここで、  **\<** *ターゲット サーバー*  **>** 先の SQL サーバーの名前に置き換え指定されたターゲットの BAM プライマリ インポート データベース\<*ターゲット データベース*> が存在します。 **Enter**キーを押します。  
+3.  <span data-ttu-id="d5bde-107">コマンド ライン プロンプトで、次を入力: **bm 無効参照 TargetServer:\<対象サーバー > - TargetDatabase:\<対象データベース > [-サーバー:\<サーバー >] [-データベース:\<データベース >]**ここで、  **\<** *ターゲット サーバー*  **>** 先の SQL サーバーの名前に置き換え指定されたターゲットの BAM プライマリ インポート データベース\<*ターゲット データベース*> が存在します。</span><span class="sxs-lookup"><span data-stu-id="d5bde-107">Type the following at the command line prompt: **bm disable-reference -TargetServer:\<target server> -TargetDatabase:\<target database>[ -Server:\<server> ][ -Database:\<database> ]**, where **\<***target server***>** is replaced by the name of the SQL server on which the target BAM Primary Import database specified by \<*target database*> resides.</span></span> <span data-ttu-id="d5bde-108">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="d5bde-108">Press **ENTER**.</span></span>  
   
-## <a name="see-also"></a>参照  
- [BAM 管理ユーティリティ](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="d5bde-109">参照</span><span class="sxs-lookup"><span data-stu-id="d5bde-109">See Also</span></span>  
+ [<span data-ttu-id="d5bde-110">BAM 管理ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="d5bde-110">BAM Management Utility</span></span>](../core/bam-management-utility.md)

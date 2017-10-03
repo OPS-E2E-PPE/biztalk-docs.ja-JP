@@ -25,84 +25,84 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="operations-on-bapis-in-sap"></a>SAP での Bapi の操作
-ビジネス アプリケーション プログラミング インターフェイス (BAPI) は、外部プロセスによって呼び出すことができる SAP ビジネス オブジェクトのメソッドです。 Bapi のでは、SAP システムでトランザクションです。  
+# <a name="operations-on-bapis-in-sap"></a><span data-ttu-id="fcbad-102">SAP での Bapi の操作</span><span class="sxs-lookup"><span data-stu-id="fcbad-102">Operations on BAPIs in SAP</span></span>
+<span data-ttu-id="fcbad-103">ビジネス アプリケーション プログラミング インターフェイス (BAPI) は、外部プロセスによって呼び出すことができる SAP ビジネス オブジェクトのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="fcbad-103">A Business Application Programming Interface (BAPI) is a method of a SAP business object that can be called by an external process.</span></span> <span data-ttu-id="fcbad-104">Bapi のでは、SAP システムでトランザクションです。</span><span class="sxs-lookup"><span data-stu-id="fcbad-104">BAPIs are transactional on the SAP system.</span></span>  
   
- [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]サポートの BAPI は送信方向で呼び出します。 2 つの方法で Bapi を表示します。  
+ <span data-ttu-id="fcbad-105">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]サポートの BAPI は送信方向で呼び出します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-105">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports BAPI calls in the outbound direction.</span></span> <span data-ttu-id="fcbad-106">2 つの方法で Bapi を表示します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-106">It surfaces BAPIs in two ways:</span></span>  
   
--   **RFC として**です。 適切な RFC を呼び出すことによって直接 BAPI を呼び出すことができます。  
+-   <span data-ttu-id="fcbad-107">**RFC として**です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-107">**As an RFC**.</span></span> <span data-ttu-id="fcbad-108">適切な RFC を呼び出すことによって直接 BAPI を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-108">You can invoke a BAPI directly by invoking the appropriate RFC.</span></span>  
   
--   **ビジネス オブジェクトのメソッドとして**です。 アダプターでは、ビジネス オブジェクトのメソッドとして Bapi をサーフェスを使用するときに、メタデータを取得するのに役立つ便利な機能として、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]または[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。  
+-   <span data-ttu-id="fcbad-109">**ビジネス オブジェクトのメソッドとして**です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-109">**As methods of business objects**.</span></span> <span data-ttu-id="fcbad-110">アダプターでは、ビジネス オブジェクトのメソッドとして Bapi をサーフェスを使用するときに、メタデータを取得するのに役立つ便利な機能として、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]または[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-110">The adapter surfaces BAPIs as methods of business objects as a convenience to help you retrieve metadata when you use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] or the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span>  
   
 > [!IMPORTANT]
->  RFC としてまたはビジネス オブジェクトのメソッドとして、アダプターでの BAPI を呼び出すことができます。アダプターの BAPI の起動方法に関係なく常に呼び出します SAP の BAPI、RFC インターフェイスを使用します。  
+>  <span data-ttu-id="fcbad-111">RFC としてまたはビジネス オブジェクトのメソッドとして、アダプターでの BAPI を呼び出すことができます。アダプターの BAPI の起動方法に関係なく常に呼び出します SAP の BAPI、RFC インターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-111">You can invoke a BAPI on the adapter as an RFC or as a method of a business object; but regardless of how you invoke the BAPI on the adapter, it always invokes the BAPI on SAP through the RFC interface.</span></span>  
   
- アダプターは、BAPI トランザクションをサポートします。 SAP の BAPI のトランザクション モデルでは、作業 (LUW) の 1 つの論理ユニットをいくつかの Bapi を結合することができます。 SAP LUW では、データベースの更新を含むトランザクションに関係するすべての手順で構成されます。  
+ <span data-ttu-id="fcbad-112">アダプターは、BAPI トランザクションをサポートします。</span><span class="sxs-lookup"><span data-stu-id="fcbad-112">The adapter supports BAPI transactions.</span></span> <span data-ttu-id="fcbad-113">SAP の BAPI のトランザクション モデルでは、作業 (LUW) の 1 つの論理ユニットをいくつかの Bapi を結合することができます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-113">The BAPI transaction model on SAP enables users to combine several BAPIs into one logical unit of work (LUW).</span></span> <span data-ttu-id="fcbad-114">SAP LUW では、データベースの更新を含むトランザクションに関係するすべての手順で構成されます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-114">An SAP LUW consists of all the steps involved in a transaction including updating the database.</span></span>  
   
- このセクションのトピックでは、ビジネス オブジェクトとしての Bapi の表示方法と、アダプターによって BAPI トランザクション (LUWs) をサポートする方法について説明します。  
+ <span data-ttu-id="fcbad-115">このセクションのトピックでは、ビジネス オブジェクトとしての Bapi の表示方法と、アダプターによって BAPI トランザクション (LUWs) をサポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-115">The topics in this section explain how BAPIs are surfaced as business objects and how BAPI transactions (LUWs) are supported by the adapter.</span></span>  
  
   
-## <a name="bapi-operations-as-business-object-methods"></a>BAPI 操作 (としてビジネス オブジェクトのメソッド)  
- アダプター サーフェスの Bapi のようにビジネス オブジェクト メソッドを使用する場合は、メタデータを取得するのに役立つ便利な機能として、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]または[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 アダプターは、RFC インターフェイスを使用して SAP システムでの Bapi を常に呼び出します。  
+## <a name="bapi-operations-as-business-object-methods"></a><span data-ttu-id="fcbad-116">BAPI 操作 (としてビジネス オブジェクトのメソッド)</span><span class="sxs-lookup"><span data-stu-id="fcbad-116">BAPI Operations (as Business Object Methods)</span></span>  
+ <span data-ttu-id="fcbad-117">アダプター サーフェスの Bapi のようにビジネス オブジェクト メソッドを使用する場合は、メタデータを取得するのに役立つ便利な機能として、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]または[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-117">The adapter surfaces BAPIs as business objects methods as a convenience to help you retrieve metadata when you use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] or the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="fcbad-118">アダプターは、RFC インターフェイスを使用して SAP システムでの Bapi を常に呼び出します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-118">The adapter always invokes BAPIs on the SAP system using the RFC interface.</span></span>  
   
- アダプターは、送信操作の適切なビジネス オブジェクトの下の操作として名前によって Bapi を表示します。 ビジネス オブジェクトは、機能グループ アダプターでの BAPI カテゴリ ノードの下で収集されます。 (参照したり、ビジネス オブジェクト、および下での Bapi の検索、 **BAPI**ノードを使用するときに、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)])。  
+ <span data-ttu-id="fcbad-119">アダプターは、送信操作の適切なビジネス オブジェクトの下の操作として名前によって Bapi を表示します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-119">The adapter surfaces BAPIs by name as operations under the appropriate business object for outbound operations.</span></span> <span data-ttu-id="fcbad-120">ビジネス オブジェクトは、機能グループ アダプターでの BAPI カテゴリ ノードの下で収集されます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-120">Business objects are collected by functional group under the BAPI category node by the adapter.</span></span> <span data-ttu-id="fcbad-121">(参照したり、ビジネス オブジェクト、および下での Bapi の検索、 **BAPI**ノードを使用するときに、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)])。</span><span class="sxs-lookup"><span data-stu-id="fcbad-121">(You can browse or search for business objects and BAPIs under the **BAPI** node when you use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].)</span></span>  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Bapi で、次をサポートしています。  
+ <span data-ttu-id="fcbad-122">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Bapi で、次をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="fcbad-122">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports the following on BAPIs:</span></span>  
   
--   インポートのパラメーター  
+-   <span data-ttu-id="fcbad-123">インポートのパラメーター</span><span class="sxs-lookup"><span data-stu-id="fcbad-123">IMPORT parameters</span></span>  
   
--   パラメーターをエクスポートします。  
+-   <span data-ttu-id="fcbad-124">パラメーターをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="fcbad-124">EXPORT parameters</span></span>  
   
--   変化させるパラメーター  
+-   <span data-ttu-id="fcbad-125">変化させるパラメーター</span><span class="sxs-lookup"><span data-stu-id="fcbad-125">CHANGING parameters</span></span>  
   
--   テーブル パラメーター  
+-   <span data-ttu-id="fcbad-126">テーブル パラメーター</span><span class="sxs-lookup"><span data-stu-id="fcbad-126">Table parameters</span></span>  
   
- メッセージの構造と Bapi のビジネス オブジェクト メソッドとして表示されるに使用する SOAP アクションの詳細については、次を参照してください。 [BAPI 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-bapi-operations.md)です。  
+ <span data-ttu-id="fcbad-127">メッセージの構造と Bapi のビジネス オブジェクト メソッドとして表示されるに使用する SOAP アクションの詳細については、次を参照してください。 [BAPI 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-bapi-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-127">For more information about the message structures and SOAP actions used for BAPIs surfaced as business object methods, see [Message Schemas for BAPI Operations](../../adapters-and-accelerators/adapter-sap/message-schemas-for-bapi-operations.md).</span></span>  
   
-## <a name="bapi-transactions"></a>BAPI のトランザクション  
- 呼び出すと、BAPI、SAP システムで、LUW の一部では常にします。 これは、機能は、RFC としてまたはビジネス オブジェクトのメソッドとして、BAPI を呼び出すかどうかに当てはまります。 RFC SDK では、同じ LUW の一部として同じ SAP 接続経由で送信されたすべての Bapi を扱います。 呼び出しの後にコミットするか、接続でトランザクションをロールバックして、[次へ] の BAPI 接続経由で送信された新しい LUW を開始します。  
+## <a name="bapi-transactions"></a><span data-ttu-id="fcbad-128">BAPI のトランザクション</span><span class="sxs-lookup"><span data-stu-id="fcbad-128">BAPI Transactions</span></span>  
+ <span data-ttu-id="fcbad-129">呼び出すと、BAPI、SAP システムで、LUW の一部では常にします。</span><span class="sxs-lookup"><span data-stu-id="fcbad-129">When you invoke a BAPI, it is always part of an LUW on the SAP system.</span></span> <span data-ttu-id="fcbad-130">これは、機能は、RFC としてまたはビジネス オブジェクトのメソッドとして、BAPI を呼び出すかどうかに当てはまります。</span><span class="sxs-lookup"><span data-stu-id="fcbad-130">This is true whether you invoke the BAPI as an RFC or as a method of a business object.</span></span> <span data-ttu-id="fcbad-131">RFC SDK では、同じ LUW の一部として同じ SAP 接続経由で送信されたすべての Bapi を扱います。</span><span class="sxs-lookup"><span data-stu-id="fcbad-131">The RFC SDK treats all BAPIs sent over the same SAP connection as part of the same LUW.</span></span> <span data-ttu-id="fcbad-132">呼び出しの後にコミットするか、接続でトランザクションをロールバックして、[次へ] の BAPI 接続経由で送信された新しい LUW を開始します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-132">After a call to commit or roll back the transaction on a connection, the next BAPI sent over the connection begins a new LUW.</span></span>  
   
- コミットまたはトランザクションをロールバックするには、BAPI_TRANSACTION_COMMIT または BAPI_TRANSACTION_ROLLBACK を呼び出します。 アダプターは、これら 2 つの Bapi を表示します。  
+ <span data-ttu-id="fcbad-133">コミットまたはトランザクションをロールバックするには、BAPI_TRANSACTION_COMMIT または BAPI_TRANSACTION_ROLLBACK を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-133">You call BAPI_TRANSACTION_COMMIT or BAPI_TRANSACTION_ROLLBACK to commit or roll back the transaction.</span></span> <span data-ttu-id="fcbad-134">アダプターは、これら 2 つの Bapi を表示します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-134">The adapter surfaces these two BAPIs:</span></span>  
   
--   RFC 操作として [基準] ノードの下。  
+-   <span data-ttu-id="fcbad-135">RFC 操作として [基準] ノードの下。</span><span class="sxs-lookup"><span data-stu-id="fcbad-135">Under the Basis node as RFC operations.</span></span>  
   
--   各ビジネス オブジェクト。  
+-   <span data-ttu-id="fcbad-136">各ビジネス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="fcbad-136">Under each business object.</span></span>  
   
- トランザクションでの Bapi を制御するがすべて送信する (コミットまたはロールバック、トランザクションへの呼び出しを含む) と同じ SAP 接続経由のことを確認します。 これを行うことができます。  
+ <span data-ttu-id="fcbad-137">トランザクションでの Bapi を制御するがすべて送信する (コミットまたはロールバック、トランザクションへの呼び出しを含む) と同じ SAP 接続経由のことを確認します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-137">You control the BAPIs in a transaction by ensuring that they are all sent over the same SAP connection (including the call to commit or roll back the transaction).</span></span> <span data-ttu-id="fcbad-138">これを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-138">You can do this in:</span></span>  
   
--   BizTalk ソリューションを使用して、 **ConnectionState**メッセージ コンテキスト プロパティを同じ接続を使用して、トランザクションでの Bapi を送信することを確認してください。 このプロパティは、アダプターによって提示されるし、BizTalk オーケストレーションでメッセージを送信するための接続を明示的に制御を提供します。  
+-   <span data-ttu-id="fcbad-139">BizTalk ソリューションを使用して、 **ConnectionState**メッセージ コンテキスト プロパティを同じ接続を使用して、トランザクションでの Bapi を送信することを確認してください。</span><span class="sxs-lookup"><span data-stu-id="fcbad-139">BizTalk Solutions by using the **ConnectionState** message context property to ensure that the BAPIs in a transaction are sent using the same connection.</span></span> <span data-ttu-id="fcbad-140">このプロパティは、アダプターによって提示されるし、BizTalk オーケストレーションでメッセージを送信するための接続を明示的に制御を提供します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-140">This property is surfaced by the adapter and provides you with explicit control over the connection used to send a message in a BizTalk orchestration.</span></span>  
   
-     BizTalk Server を使用したトランザクションの BAPI を実行するため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のメッセージ コンテキスト プロパティをサポートしています。  
+     <span data-ttu-id="fcbad-141">BizTalk Server を使用したトランザクションの BAPI を実行するため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のメッセージ コンテキスト プロパティをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="fcbad-141">For performing BAPI transactions using BizTalk Server, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports the following message context properties.</span></span>  
   
-    |フィールド|Description|  
+    |<span data-ttu-id="fcbad-142">フィールド</span><span class="sxs-lookup"><span data-stu-id="fcbad-142">Field</span></span>|<span data-ttu-id="fcbad-143">Description</span><span class="sxs-lookup"><span data-stu-id="fcbad-143">Description</span></span>|  
     |-----------|-----------------|  
-    |OPEN|トランザクションの新しいチャネルを開きます。|  
-    |再利用します。|トランザクションの既存のチャネルを再利用できます。|  
-    |CLOSE|トランザクションをコミットし、既存のチャネルを閉じます。|  
-    |中止|トランザクションを中止して、既存のチャネルを閉じます。|  
+    |<span data-ttu-id="fcbad-144">OPEN</span><span class="sxs-lookup"><span data-stu-id="fcbad-144">OPEN</span></span>|<span data-ttu-id="fcbad-145">トランザクションの新しいチャネルを開きます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-145">Opens a new channel for the transaction.</span></span>|  
+    |<span data-ttu-id="fcbad-146">再利用します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-146">REUSE</span></span>|<span data-ttu-id="fcbad-147">トランザクションの既存のチャネルを再利用できます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-147">Reuse existing channel for the transaction.</span></span>|  
+    |<span data-ttu-id="fcbad-148">CLOSE</span><span class="sxs-lookup"><span data-stu-id="fcbad-148">CLOSE</span></span>|<span data-ttu-id="fcbad-149">トランザクションをコミットし、既存のチャネルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-149">Commit the transaction and close the existing channel.</span></span>|  
+    |<span data-ttu-id="fcbad-150">中止</span><span class="sxs-lookup"><span data-stu-id="fcbad-150">ABORT</span></span>|<span data-ttu-id="fcbad-151">トランザクションを中止して、既存のチャネルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-151">Abort the transaction and close the existing channel.</span></span>|  
   
-     詳細については、次を参照してください。 [BizTalk Server を使用して SAP での BAPI トランザクションの実行](../../adapters-and-accelerators/adapter-sap/run-bapi-transactions-in-sap-using-biztalk-server.md)です。  
+     <span data-ttu-id="fcbad-152">詳細については、次を参照してください。 [BizTalk Server を使用して SAP での BAPI トランザクションの実行](../../adapters-and-accelerators/adapter-sap/run-bapi-transactions-in-sap-using-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-152">For more information, see [Run BAPI Transactions in SAP using BizTalk Server](../../adapters-and-accelerators/adapter-sap/run-bapi-transactions-in-sap-using-biztalk-server.md).</span></span>  
   
     > [!NOTE]
-    >  設定するかどうかを確認、 **EnableBizTalkCompatibilityMode**BizTalk Server を使用してトランザクションを実行するときに、プロパティをバインドします。  
+    >  <span data-ttu-id="fcbad-153">設定するかどうかを確認、 **EnableBizTalkCompatibilityMode**BizTalk Server を使用してトランザクションを実行するときに、プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="fcbad-153">Make sure you set the **EnableBizTalkCompatibilityMode**binding property when performing transactions using BizTalk Server.</span></span>  
   
--   サービス モデル ソリューションを WCF トランザクションでの Bapi を同じ WCF クライアントを使用して送信されることを保証します。 詳細については、次を参照してください。 [WCF サービスのモデルを使用して SAP での Bapi の呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-bapis-in-sap-using-the-wcf-service-model.md)です。  
+-   <span data-ttu-id="fcbad-154">サービス モデル ソリューションを WCF トランザクションでの Bapi を同じ WCF クライアントを使用して送信されることを保証します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-154">WCF service model solutions by ensuring that the BAPIs in a transaction are sent using the same WCF client.</span></span> <span data-ttu-id="fcbad-155">詳細については、次を参照してください。 [WCF サービスのモデルを使用して SAP での Bapi の呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-bapis-in-sap-using-the-wcf-service-model.md)です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-155">For more information, see [Invoke BAPIs in SAP using WCF Service Model](../../adapters-and-accelerators/adapter-sap/invoke-bapis-in-sap-using-the-wcf-service-model.md).</span></span>  
   
--   WCF チャネル モデル ソリューションにより、同じ WCF チャネル経由で送信されるトランザクションでの Bapi です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)です。  
+-   <span data-ttu-id="fcbad-156">WCF チャネル モデル ソリューションにより、同じ WCF チャネル経由で送信されるトランザクションでの Bapi です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-156">WCF channel model solutions by ensuring that the BAPIs in a transaction are sent over the same WCF channel.</span></span> <span data-ttu-id="fcbad-157">詳細については、次を参照してください。 [WCF チャネル モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)です。</span><span class="sxs-lookup"><span data-stu-id="fcbad-157">For more information, see [Develop applications using the WCF Channel Model](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md).</span></span>  
   
-### <a name="limitations-on-bapi-transactions"></a>BAPI のトランザクションに関する制限事項  
- BAPI のトランザクションで、次の制限が適用されます。  
+### <a name="limitations-on-bapi-transactions"></a><span data-ttu-id="fcbad-158">BAPI のトランザクションに関する制限事項</span><span class="sxs-lookup"><span data-stu-id="fcbad-158">Limitations on BAPI Transactions</span></span>  
+ <span data-ttu-id="fcbad-159">BAPI のトランザクションで、次の制限が適用されます。</span><span class="sxs-lookup"><span data-stu-id="fcbad-159">The following restrictions apply on BAPI transactions:</span></span>  
   
--   1 つ LUW 内の同じインスタンスで次の 2 つの書き込みアクセスを有効にすることはできません。 たとえば、注文を作成し、同じトランザクションで更新することはできません。  
+-   <span data-ttu-id="fcbad-160">1 つ LUW 内の同じインスタンスで次の 2 つの書き込みアクセスを有効にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="fcbad-160">It is not possible to make two write accesses on the same instance within one LUW.</span></span> <span data-ttu-id="fcbad-161">たとえば、注文を作成し、同じトランザクションで更新することはできません。</span><span class="sxs-lookup"><span data-stu-id="fcbad-161">For example, you cannot create an order and update it in the same transaction.</span></span>  
   
--   トランザクションを使用して、BAPI を実行するときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、送信ポートの 1 つのホスト インスタンス上のすべてのメッセージを送信する必要があります。  
+-   <span data-ttu-id="fcbad-162">トランザクションを使用して、BAPI を実行するときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、送信ポートの 1 つのホスト インスタンス上のすべてのメッセージを送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fcbad-162">When performing BAPI a transaction using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], all the messages must be sent over a single host instance of the send port.</span></span>  
   
--   インスタンスが作成された場合、更新、または BAPI の書き込みを使用して、削除、読み取り BAPI は BAPI の書き込みがコミットされるまで、最新のデータを表示できません。  
+-   <span data-ttu-id="fcbad-163">インスタンスが作成された場合、更新、または BAPI の書き込みを使用して、削除、読み取り BAPI は BAPI の書き込みがコミットされるまで、最新のデータを表示できません。</span><span class="sxs-lookup"><span data-stu-id="fcbad-163">If an instance is created, updated, or deleted by using a write BAPI, a read BAPI cannot view the most recent data until the write BAPI is committed.</span></span>  
   
--   呼び出す、LUW 外部のクライアントは、同じ SAP 接続で、LUW を含むすべての Bapi を呼び出す必要があります。  
+-   <span data-ttu-id="fcbad-164">呼び出す、LUW 外部のクライアントは、同じ SAP 接続で、LUW を含むすべての Bapi を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="fcbad-164">An external client that invokes an LUW should call all the BAPIs that the LUW contains on the same SAP connection.</span></span>  
   
 > [!IMPORTANT]
->  Bapi のリリース 3.1 に属しているは、その実装の一部として、COMMIT WORK を呼び出します。 意味これら Bapi ことはできません、LUW での Bapi の他の付属 (トランザクションをコミットする) ためです。 詳細については、SAP のマニュアルを参照してください。  
+>  <span data-ttu-id="fcbad-165">Bapi のリリース 3.1 に属しているは、その実装の一部として、COMMIT WORK を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="fcbad-165">BAPIs that belong to Release 3.1 call COMMIT WORK as part of their implementation.</span></span> <span data-ttu-id="fcbad-166">意味これら Bapi ことはできません、LUW での Bapi の他の付属 (トランザクションをコミットする) ためです。</span><span class="sxs-lookup"><span data-stu-id="fcbad-166">This means that these BAPIs cannot be included with other BAPIs in an LUW (because they will commit the transaction).</span></span> <span data-ttu-id="fcbad-167">詳細については、SAP のマニュアルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="fcbad-167">For more information, see the SAP documentation.</span></span>  
   
-## <a name="see-also"></a>参照  
- [どのような操作をアダプターであるを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)
+## <a name="see-also"></a><span data-ttu-id="fcbad-168">参照</span><span class="sxs-lookup"><span data-stu-id="fcbad-168">See Also</span></span>  
+ <span data-ttu-id="fcbad-169">[どのような操作をアダプターであるを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)</span><span class="sxs-lookup"><span data-stu-id="fcbad-169">[What Operations Can be Performed Using the Adapter?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)</span></span>

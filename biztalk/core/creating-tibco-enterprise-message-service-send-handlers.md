@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating--tibco-enterprise-message-service-send-handlers"></a>TIBCO Enterprise Message Service 送信ハンドラーの作成
-ここでは、送信ポートを設定して TIBCO Enterprise Message Service (EMS) に接続する方法、およびオーケストレーションに XML を入れ実行時に TIBCO EMS と連携する方法を説明します。  
+# <a name="creating--tibco-enterprise-message-service-send-handlers"></a><span data-ttu-id="29e45-102">TIBCO Enterprise Message Service 送信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="29e45-102">Creating  TIBCO Enterprise Message Service Send Handlers</span></span>
+<span data-ttu-id="29e45-103">ここでは、送信ポートを設定して TIBCO Enterprise Message Service (EMS) に接続する方法、およびオーケストレーションに XML を入れ実行時に TIBCO EMS と連携する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="29e45-103">This section explains how to set the send port to connect to TIBCO Enterprise Message Service (EMS) and how to include XML in your orchestration to interact with TIBCO EMS at run time.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="29e45-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="29e45-104">In This Section</span></span>  
   
--   [TIBCO Enterprise Message Service の送信ポートを作成する方法](../core/how-to-create-send-ports-for-tibco-enterprise-message-service.md)  
+-   [<span data-ttu-id="29e45-105">TIBCO Enterprise Message Service の送信ポートを作成する方法</span><span class="sxs-lookup"><span data-stu-id="29e45-105">How to Create Send Ports for TIBCO Enterprise Message Service</span></span>](../core/how-to-create-send-ports-for-tibco-enterprise-message-service.md)  
   
--   [送信ポートの TIBCO Enterprise Message Service トランスポート プロパティの設定](../core/setting-tibco-enterprise-message-service-transport-properties-for-the-send-port.md)  
+-   [<span data-ttu-id="29e45-106">送信ポートの TIBCO Enterprise Message Service トランスポート プロパティの設定</span><span class="sxs-lookup"><span data-stu-id="29e45-106">Setting TIBCO Enterprise Message Service Transport Properties for the Send Port</span></span>](../core/setting-tibco-enterprise-message-service-transport-properties-for-the-send-port.md)  
   
--   [TIBCO Enterprise Message Service の送信パイプラインを設定する方法](../core/how-to-set-send-pipelines-for-tibco-enterprise-message-service.md)
+-   [<span data-ttu-id="29e45-107">TIBCO Enterprise Message Service の送信パイプラインを設定する方法</span><span class="sxs-lookup"><span data-stu-id="29e45-107">How to Set Send Pipelines for TIBCO Enterprise Message Service</span></span>](../core/how-to-set-send-pipelines-for-tibco-enterprise-message-service.md)

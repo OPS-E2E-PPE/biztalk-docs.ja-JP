@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step3-create-an-orchestration-with--dynamic-send-port-for-the-interact-store-and-forward-pull-scenario"></a>手順 3: InterAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションを作成します。
-このセクションの手順を開始する前に」の手順を完了する必要があります、[手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポート追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md)セクションです。  
+# <a name="step3-create-an-orchestration-with--dynamic-send-port-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="7ed4b-102">手順 3: InterAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="7ed4b-102">Step3: Create an orchestration with  dynamic send port for the InterAct Store and Forward (Pull) Scenario</span></span>
+<span data-ttu-id="7ed4b-103">このセクションの手順を開始する前に」の手順を完了する必要があります、[手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポート追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md)セクションです。</span><span class="sxs-lookup"><span data-stu-id="7ed4b-103">Before you begin the steps in this section, you must complete the steps in the [Step 2C: Add an INTERACT Send Port for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md) section.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="7ed4b-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="7ed4b-104">In This Section</span></span>  
   
--   [手順 3: InterAct ストアと転送 (するプル) シナリオの動的送信ポートのオーケストレーションを作成します。](../../adapters-and-accelerators/fileact-interact/step-3a-create-orchestration-for-dynamic-send-port-interact-store-and-forward.md)  
+-   [<span data-ttu-id="7ed4b-105">手順 3: InterAct ストアと転送 (するプル) シナリオの動的送信ポートのオーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="7ed4b-105">Step 3A: Create an orchestration for dynamic send port for InterAct Store and Forward (Pull) Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-3a-create-orchestration-for-dynamic-send-port-interact-store-and-forward.md)  
   
--   [手順 3 b: InterAct ストアと転送 (するプル) シナリオ用の動的送信ポートにオーケストレーションをバインド](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-port-for-interact-scenario.md)
+-   [<span data-ttu-id="7ed4b-106">手順 3 b: InterAct ストアと転送 (するプル) シナリオ用の動的送信ポートにオーケストレーションをバインド</span><span class="sxs-lookup"><span data-stu-id="7ed4b-106">Step 3B: Bind the orchestration with dynamic send port for InterAct Store and Forward (Pull) Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-port-for-interact-scenario.md)

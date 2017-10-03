@@ -21,16 +21,16 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="biztalk-server-architecture"></a>BizTalk Server のアーキテクチャ
-このセクションでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のアーキテクチャと内部機能の詳細について説明します。  
+# <a name="biztalk-server-architecture"></a><span data-ttu-id="e8eb9-102">BizTalk Server のアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="e8eb9-102">BizTalk Server Architecture</span></span>
+<span data-ttu-id="e8eb9-103">このセクションでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のアーキテクチャと内部機能の詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="e8eb9-103">This section provides detailed information on the architecture and internal workings of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="e8eb9-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e8eb9-104">In This Section</span></span>  
   
--   [ランタイム アーキテクチャ](../core/runtime-architecture.md)  
+-   [<span data-ttu-id="e8eb9-105">ランタイム アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="e8eb9-105">Runtime Architecture</span></span>](../core/runtime-architecture.md)  
   
--   [管理と追跡アーキテクチャ](../core/management-and-tracking-architecture.md)  
+-   [<span data-ttu-id="e8eb9-106">管理と追跡アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="e8eb9-106">Management and Tracking Architecture</span></span>](../core/management-and-tracking-architecture.md)  
   
--   [EDI および AS2 ソリューションのアーキテクチャ](../core/edi-and-as2-solution-architecture.md)  
+-   [<span data-ttu-id="e8eb9-107">EDI および AS2 ソリューションのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="e8eb9-107">EDI and AS2 Solution Architecture</span></span>](../core/edi-and-as2-solution-architecture.md)  
   
 
    

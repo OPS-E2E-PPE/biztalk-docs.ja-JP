@@ -21,10 +21,10 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="completing-the-exception-message"></a>例外完了メッセージ
-### <a name="to-complete-the-exception-message"></a>例外メッセージを完了するには  
+# <a name="completing-the-exception-message"></a><span data-ttu-id="24f02-102">例外完了メッセージ</span><span class="sxs-lookup"><span data-stu-id="24f02-102">Completing the Exception Message</span></span>
+### <a name="to-complete-the-exception-message"></a><span data-ttu-id="24f02-103">例外メッセージを完了するには</span><span class="sxs-lookup"><span data-stu-id="24f02-103">To complete the exception message</span></span>  
   
--   例外のフローを完了するには、エラー メッセージ_3 を追加するための送信図形を監視対象フォルダーに追加します。  
+-   <span data-ttu-id="24f02-104">例外のフローを完了するには、エラー メッセージ_3 を追加するための送信図形を監視対象フォルダーに追加します。</span><span class="sxs-lookup"><span data-stu-id="24f02-104">To complete the exception flow, add a Send shape to put the fault Message_3 into a monitored folder.</span></span>  
   
-## <a name="see-also"></a>参照  
- [BizTalk Server 例外処理の使用](../core/using-biztalk-server-exception-handling5.md)
+## <a name="see-also"></a><span data-ttu-id="24f02-105">参照</span><span class="sxs-lookup"><span data-stu-id="24f02-105">See Also</span></span>  
+ [<span data-ttu-id="24f02-106">BizTalk Server 例外処理の使用</span><span class="sxs-lookup"><span data-stu-id="24f02-106">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling5.md)

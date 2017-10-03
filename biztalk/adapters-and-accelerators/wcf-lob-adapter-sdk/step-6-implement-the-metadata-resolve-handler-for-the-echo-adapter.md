@@ -18,17 +18,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter"></a>手順 6: エコー アダプター メタデータの解決ハンドラーを実装します。
-![手順 9 の 6](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")  
+# <a name="step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter"></a><span data-ttu-id="83009-102">手順 6: エコー アダプター メタデータの解決ハンドラーを実装します。</span><span class="sxs-lookup"><span data-stu-id="83009-102">Step 6: Implement the Metadata Resolve Handler for the Echo Adapter</span></span>
+<span data-ttu-id="83009-103">![手順 9 の 6](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span><span class="sxs-lookup"><span data-stu-id="83009-103">![Step 6 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span></span>  
   
- **所要時間:** 45 分  
+ <span data-ttu-id="83009-104">**所要時間:** 45 分</span><span class="sxs-lookup"><span data-stu-id="83009-104">**Time to complete:** 45 minutes</span></span>  
   
- 実装するこの手順で、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイスに操作を解決するには、エコー アダプターのメタデータを入力します。 アダプターの機能に関係なく、このインターフェイスを実装する必要があります。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterMetadataResolverHandler を要求する派生クラスが自動的に生成されます。  
+ <span data-ttu-id="83009-105">実装するこの手順で、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイスに操作を解決するには、エコー アダプターのメタデータを入力します。</span><span class="sxs-lookup"><span data-stu-id="83009-105">In this step, you implement the `Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler` interface to resolve operation and type metadata for the echo adapter.</span></span> <span data-ttu-id="83009-106">アダプターの機能に関係なく、このインターフェイスを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="83009-106">Regardless of your adapter's capability, you must implement this interface.</span></span> <span data-ttu-id="83009-107">[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterMetadataResolverHandler を要求する派生クラスが自動的に生成されます。</span><span class="sxs-lookup"><span data-stu-id="83009-107">The [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdapterMetadataResolverHandler for you.</span></span>  
   
- 次のセクションでは、このインターフェイスを実装する方法について理解を深めるために EchoAdapterMetadataResolverHandler クラスを更新します。 この手順を完了したときに、エコー アダプターのハンドラーを解決する作業のメタデータがあります。  
+ <span data-ttu-id="83009-108">次のセクションでは、このインターフェイスを実装する方法について理解を深めるために EchoAdapterMetadataResolverHandler クラスを更新します。</span><span class="sxs-lookup"><span data-stu-id="83009-108">In the following section, you update the EchoAdapterMetadataResolverHandler class to get a better understanding on how to implement this interface.</span></span> <span data-ttu-id="83009-109">この手順を完了したときに、エコー アダプターのハンドラーを解決する作業のメタデータがあります。</span><span class="sxs-lookup"><span data-stu-id="83009-109">When you complete this step, you have a working metadata resolve handler for the echo adapter.</span></span>  
   
-## <a name="prerequisites"></a>前提条件  
- この手順を開始する前にする必要がありますが正常に完了しました[手順 5: エコー アダプターのメタデータの検索ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)です。 次の操作と種類のクラスを理解する必要があります。  
+## <a name="prerequisites"></a><span data-ttu-id="83009-110">前提条件</span><span class="sxs-lookup"><span data-stu-id="83009-110">Prerequisites</span></span>  
+ <span data-ttu-id="83009-111">この手順を開始する前にする必要がありますが正常に完了しました[手順 5: エコー アダプターのメタデータの検索ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="83009-111">Before you begin this step, you must have successfully completed [Step 5: Implement the Metadata Search Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md).</span></span> <span data-ttu-id="83009-112">次の操作と種類のクラスを理解する必要があります。</span><span class="sxs-lookup"><span data-stu-id="83009-112">You must also understand the following operation and type classes:</span></span>  
   
 -   `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata`  
   
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 -   `Microsoft.ServiceModel.Channels.Common.ComplexQualifiedType`  
   
-## <a name="the-imetadataresolverhandler-interface"></a>IMetadataResolverHandler インターフェイス  
+## <a name="the-imetadataresolverhandler-interface"></a><span data-ttu-id="83009-113">IMetadataResolverHandler インターフェイス</span><span class="sxs-lookup"><span data-stu-id="83009-113">The IMetadataResolverHandler Interface</span></span>  
   
 ```  
 public interface IMetadataResolverHandler : IConnectionHandler, IDisposable  
@@ -60,38 +60,38 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   }  
 ```  
   
- 次の表では、各メソッドの実行内容について説明します。  
+ <span data-ttu-id="83009-114">次の表では、各メソッドの実行内容について説明します。</span><span class="sxs-lookup"><span data-stu-id="83009-114">The following table describes what each method does:</span></span>  
   
-|**メソッド名**|**Description**|  
+|<span data-ttu-id="83009-115">**メソッド名**</span><span class="sxs-lookup"><span data-stu-id="83009-115">**Method Name**</span></span>|<span data-ttu-id="83009-116">**Description**</span><span class="sxs-lookup"><span data-stu-id="83009-116">**Description**</span></span>|  
 |---------------------|---------------------|  
-|IsOperationMetadataValid|型のメタデータが指定した日時以降に変更されていない場合、true を返します|  
-|IsTypeMetadataValid|指定した型のメタデータが有効かどうかを示すブール値を返します。|  
-|ResolveOperationMetadata|対応する操作 ID を解決します。`Microsoft.ServiceModel.Channels.Common.OperationMetadata`|  
-|ResolveTypeMetadata|な typeId で指定されたメタデータを対応する解決`Microsoft.ServiceModel.Channels.Common.TypeMetadata`です。|  
+|<span data-ttu-id="83009-117">IsOperationMetadataValid</span><span class="sxs-lookup"><span data-stu-id="83009-117">IsOperationMetadataValid</span></span>|<span data-ttu-id="83009-118">型のメタデータが指定した日時以降に変更されていない場合、true を返します</span><span class="sxs-lookup"><span data-stu-id="83009-118">Returns a true if the type metadata has not changed since the date and time specified</span></span>|  
+|<span data-ttu-id="83009-119">IsTypeMetadataValid</span><span class="sxs-lookup"><span data-stu-id="83009-119">IsTypeMetadataValid</span></span>|<span data-ttu-id="83009-120">指定した型のメタデータが有効かどうかを示すブール値を返します。</span><span class="sxs-lookup"><span data-stu-id="83009-120">Returns a Boolean value that indicates whether the specified type metadata is valid.</span></span>|  
+|<span data-ttu-id="83009-121">ResolveOperationMetadata</span><span class="sxs-lookup"><span data-stu-id="83009-121">ResolveOperationMetadata</span></span>|<span data-ttu-id="83009-122">対応する操作 ID を解決します。`Microsoft.ServiceModel.Channels.Common.OperationMetadata`</span><span class="sxs-lookup"><span data-stu-id="83009-122">Resolves an operation ID to corresponding `Microsoft.ServiceModel.Channels.Common.OperationMetadata`</span></span>|  
+|<span data-ttu-id="83009-123">ResolveTypeMetadata</span><span class="sxs-lookup"><span data-stu-id="83009-123">ResolveTypeMetadata</span></span>|<span data-ttu-id="83009-124">な typeId で指定されたメタデータを対応する解決`Microsoft.ServiceModel.Channels.Common.TypeMetadata`です。</span><span class="sxs-lookup"><span data-stu-id="83009-124">Resolves a supplied metadata typeId to a corresponding `Microsoft.ServiceModel.Channels.Common.TypeMetadata`.</span></span>|  
   
-### <a name="to-implement-the-isoperationmetadatavalid-method"></a>IsOperationMetadataValid メソッドを実装するには  
+### <a name="to-implement-the-isoperationmetadatavalid-method"></a><span data-ttu-id="83009-125">IsOperationMetadataValid メソッドを実装するには</span><span class="sxs-lookup"><span data-stu-id="83009-125">To implement the IsOperationMetadataValid method</span></span>  
   
-1.  ソリューション エクスプ ローラーで、 **EchoAdapterMetadataResolverHandler.cs**ファイル。  
+1.  <span data-ttu-id="83009-126">ソリューション エクスプ ローラーで、 **EchoAdapterMetadataResolverHandler.cs**ファイル。</span><span class="sxs-lookup"><span data-stu-id="83009-126">In Solution Explorer, double-click the **EchoAdapterMetadataResolverHandler.cs** file.</span></span>  
   
-2.  Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内のをポイント**アウトライン**、クリックして**アウトラインの中止**です。  
+2.  <span data-ttu-id="83009-127">Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内のをポイント**アウトライン**、クリックして**アウトラインの中止**です。</span><span class="sxs-lookup"><span data-stu-id="83009-127">In the Visual Studio editor, right-click anywhere within the editor, in the context menu, point to **Outlining**, and then click **Stop Outlining**.</span></span>  
   
-3.  Visual Studio エディターで、検索、 **IsOperationMetadataValid**このメソッド内のメソッドは、既存のすべてのメタデータを指定した操作が有効であることを示す次の 1 つのステートメントでを置換します。  
-  
-    ```csharp  
-    return true;  
-    ```  
-  
-### <a name="to-implement-the-istypemetadatavalid-method"></a>IsTypeMetadataValid メソッドを実装するには  
-  
--   Visual Studio エディターで、検索、 **IsTypeMetadataValid**このメソッド内のメソッドは、既存のすべての指定した型のメタデータが無効であることを示す次の 1 つのステートメントでを置換します。  
+3.  <span data-ttu-id="83009-128">Visual Studio エディターで、検索、 **IsOperationMetadataValid**このメソッド内のメソッドは、既存のすべてのメタデータを指定した操作が有効であることを示す次の 1 つのステートメントでを置換します。</span><span class="sxs-lookup"><span data-stu-id="83009-128">In the Visual Studio editor, find the **IsOperationMetadataValid** method, inside this method, replace the existing with the following single statement to indicate that every specified operation metadata is valid.</span></span>  
   
     ```csharp  
     return true;  
     ```  
   
-### <a name="to-implement-the-resolveoperationmetadata-method"></a>ResolveOperationMetadata メソッドを実装するには  
+### <a name="to-implement-the-istypemetadatavalid-method"></a><span data-ttu-id="83009-129">IsTypeMetadataValid メソッドを実装するには</span><span class="sxs-lookup"><span data-stu-id="83009-129">To implement the IsTypeMetadataValid method</span></span>  
   
-1.  Visual Studio エディターで、検索、 **ResolveOperationMetadata** OnReceiveEcho 操作、void OnReceiveEcho (Uri パス、長い fileLength) を解決するのには次のように、既存の代わりにこのメソッド内のメソッドです。  
+-   <span data-ttu-id="83009-130">Visual Studio エディターで、検索、 **IsTypeMetadataValid**このメソッド内のメソッドは、既存のすべての指定した型のメタデータが無効であることを示す次の 1 つのステートメントでを置換します。</span><span class="sxs-lookup"><span data-stu-id="83009-130">In the Visual Studio editor, find the **IsTypeMetadataValid** method, inside this method, replace the existing with the following single statement to indicate that every specified type metadata is valid.</span></span>  
+  
+    ```csharp  
+    return true;  
+    ```  
+  
+### <a name="to-implement-the-resolveoperationmetadata-method"></a><span data-ttu-id="83009-131">ResolveOperationMetadata メソッドを実装するには</span><span class="sxs-lookup"><span data-stu-id="83009-131">To implement the ResolveOperationMetadata method</span></span>  
+  
+1.  <span data-ttu-id="83009-132">Visual Studio エディターで、検索、 **ResolveOperationMetadata** OnReceiveEcho 操作、void OnReceiveEcho (Uri パス、長い fileLength) を解決するのには次のように、既存の代わりにこのメソッド内のメソッドです。</span><span class="sxs-lookup"><span data-stu-id="83009-132">In the Visual Studio editor, find the **ResolveOperationMetadata** method, inside this method, replace the existing with the following to resolve the OnReceiveEcho operation, void OnReceiveEcho(Uri path, long fileLength).</span></span>  
   
     ```csharp  
     extraTypeMetadataResolved = null;  
@@ -114,7 +114,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
             return om;  
     ```  
   
-2.  エコー/EchoStrings 操作、string[] EchoStrings(string data) を解決するのには、次の追加を続行します。  
+2.  <span data-ttu-id="83009-133">エコー/EchoStrings 操作、string[] EchoStrings(string data) を解決するのには、次の追加を続行します。</span><span class="sxs-lookup"><span data-stu-id="83009-133">Continue adding the following to resolve the Echo/EchoStrings operation, string[] EchoStrings(string data).</span></span>  
   
     ```csharp  
     case "Echo/EchoStrings":  
@@ -131,7 +131,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
         return om;  
     ```  
   
-3.  エコー/EchoStrings 操作、string[] EchoStrings(string data) を解決するのには、次のロジックを追加していきます。  
+3.  <span data-ttu-id="83009-134">エコー/EchoStrings 操作、string[] EchoStrings(string data) を解決するのには、次のロジックを追加していきます。</span><span class="sxs-lookup"><span data-stu-id="83009-134">Continue adding the following logic to resolve the Echo/EchoStrings operation, string[] EchoStrings(string data).</span></span>  
   
     ```csharp  
     case "Echo/EchoGreetings":  
@@ -149,7 +149,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
         return om;  
     ```  
   
-4.  続けて、CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath) 操作を解決するのには、次のロジックを追加します。  
+4.  <span data-ttu-id="83009-135">続けて、CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath) 操作を解決するのには、次のロジックを追加します。</span><span class="sxs-lookup"><span data-stu-id="83009-135">Continue adding the following logic to resolve the CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath) operation.</span></span>  
   
     ```csharp  
     case "Echo/EchoCustomGreetingFromFile":  
@@ -173,7 +173,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
     ```  
   
-5.  既定のケースを処理するには、次の追加を続行します。  
+5.  <span data-ttu-id="83009-136">既定のケースを処理するには、次の追加を続行します。</span><span class="sxs-lookup"><span data-stu-id="83009-136">Continue adding the following to handle default case.</span></span>  
   
     ```csharp  
         default:  
@@ -181,9 +181,9 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-### <a name="to-implement-the-resolvetypemetadata-method"></a>ResolveTypeMetadata メソッドを実装するには  
+### <a name="to-implement-the-resolvetypemetadata-method"></a><span data-ttu-id="83009-137">ResolveTypeMetadata メソッドを実装するには</span><span class="sxs-lookup"><span data-stu-id="83009-137">To implement the ResolveTypeMetadata method</span></span>  
   
--   Visual Studio エディターで、検索、 **ResolveTypeMetadata**を返すには、次のように、既存の代わりにこのメソッド内のメソッド、`Microsoft.ServiceModel.Channels.Common.TypeMetadata`オブジェクト。  
+-   <span data-ttu-id="83009-138">Visual Studio エディターで、検索、 **ResolveTypeMetadata**を返すには、次のように、既存の代わりにこのメソッド内のメソッド、`Microsoft.ServiceModel.Channels.Common.TypeMetadata`オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="83009-138">In the Visual Studio editor, find the **ResolveTypeMetadata** method, inside this method, replace the existing with the following to return a `Microsoft.ServiceModel.Channels.Common.TypeMetadata` object.</span></span>  
   
     ```csharp  
     extraTypeMetadataResolved = null;  
@@ -221,17 +221,17 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
     ```  
   
-### <a name="to-define-the-custom-greeting-type-metadata-class"></a>カスタムの案内応答型のメタデータ クラスを定義するには  
+### <a name="to-define-the-custom-greeting-type-metadata-class"></a><span data-ttu-id="83009-139">カスタムの案内応答型のメタデータ クラスを定義するには</span><span class="sxs-lookup"><span data-stu-id="83009-139">To define the custom greeting type metadata class</span></span>  
   
-1.  ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。  
+1.  <span data-ttu-id="83009-140">ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="83009-140">In Solution Explorer, right-click the **Echo Adapter** project, point to **Add**, and then click **New Item**.</span></span>  
   
-2.  **新しい項目の追加**ダイアログ ボックスで、**テンプレート**をクリックして**クラス**です。  
+2.  <span data-ttu-id="83009-141">**新しい項目の追加**ダイアログ ボックスで、**テンプレート**をクリックして**クラス**です。</span><span class="sxs-lookup"><span data-stu-id="83009-141">In the **Add New Item** dialog box, under **Templates**, click **Class**.</span></span>  
   
-3.  **名前**テキスト ボックスで、「 **CustomGreetingTypeMetadata**です。  
+3.  <span data-ttu-id="83009-142">**名前**テキスト ボックスで、「 **CustomGreetingTypeMetadata**です。</span><span class="sxs-lookup"><span data-stu-id="83009-142">In the **Name** text box, type **CustomGreetingTypeMetadata**.</span></span>  
   
-4.  **[追加]**をクリックします。  
+4.  <span data-ttu-id="83009-143">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="83009-143">Click **Add**.</span></span>  
   
-5.  Visual Studio エディターでは、次のように、既存のコードを置き換えます。  
+5.  <span data-ttu-id="83009-144">Visual Studio エディターでは、次のように、既存のコードを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="83009-144">In the Visual Studio editor, replace the existing code with the following:</span></span>  
   
     ```csharp  
     using System;  
@@ -348,21 +348,21 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**です。  
+6.  <span data-ttu-id="83009-145">Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="83009-145">In Visual Studio, from the **File** menu, click **Save All**.</span></span>  
   
-### <a name="to-create-the-custom-greeting-xml-schema-definition"></a>カスタムの案内応答 XML スキーマ定義を作成するには  
+### <a name="to-create-the-custom-greeting-xml-schema-definition"></a><span data-ttu-id="83009-146">カスタムの案内応答 XML スキーマ定義を作成するには</span><span class="sxs-lookup"><span data-stu-id="83009-146">To create the custom greeting XML schema definition</span></span>  
   
-1.  ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。  
+1.  <span data-ttu-id="83009-147">ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="83009-147">In Solution Explorer, right-click the **Echo Adapter** project, point to **Add**, and then click **New Item**.</span></span>  
   
-2.  **新しい項目の追加**ダイアログ ボックスで、**テンプレート**をクリックして**XML スキーマ**です。  
+2.  <span data-ttu-id="83009-148">**新しい項目の追加**ダイアログ ボックスで、**テンプレート**をクリックして**XML スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="83009-148">In the **Add New Item** dialog box, under **Templates**, click **XML Schema**.</span></span>  
   
-3.  **名前**テキスト ボックスで、「 **CustomGreeting**です。  
+3.  <span data-ttu-id="83009-149">**名前**テキスト ボックスで、「 **CustomGreeting**です。</span><span class="sxs-lookup"><span data-stu-id="83009-149">In the **Name** text box, type **CustomGreeting**.</span></span>  
   
-4.  **[追加]**をクリックします。  
+4.  <span data-ttu-id="83009-150">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="83009-150">Click **Add**.</span></span>  
   
-5.  ソリューション エクスプ ローラーで右クリックし、 **CustomGreeting.xsd**ファイルして選択**コードの表示**です。  
+5.  <span data-ttu-id="83009-151">ソリューション エクスプ ローラーで右クリックし、 **CustomGreeting.xsd**ファイルして選択**コードの表示**です。</span><span class="sxs-lookup"><span data-stu-id="83009-151">In Solution Explorer, right-click the **CustomGreeting.xsd** file and choose **View Code**.</span></span>  
   
-6.  Visual Studio エディターで CustomGreeting スキーマの定義を開始する次のコードを既存のコードを置き換えることで開始します。  
+6.  <span data-ttu-id="83009-152">Visual Studio エディターで CustomGreeting スキーマの定義を開始する次のコードを既存のコードを置き換えることで開始します。</span><span class="sxs-lookup"><span data-stu-id="83009-152">In the Visual Studio editor, begin by replacing the existing code with the following code that begins the definition of the CustomGreeting schema:</span></span>  
   
     ```csharp  
     <?xml version="1.0" encoding="utf-8" ?>   
@@ -375,20 +375,20 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xs:schema>  
     ```  
   
-     次のコードでは、CustomGreeting スキーマの定義を開始します。  
+     <span data-ttu-id="83009-153">次のコードでは、CustomGreeting スキーマの定義を開始します。</span><span class="sxs-lookup"><span data-stu-id="83009-153">with the following code that begins the definition of the CustomGreeting schema:</span></span>  
   
     ```csharp  
     <?xml version="1.0" encoding="utf-16"?>  
     <xsd:schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="echov2://microsoft.adapters.samples.echov2/PreDefinedTypes" elementFormDefault="qualified" targetNamespace="echov2://microsoft.adapters.samples.echov2/PreDefinedTypes" xmlns:xsd ="http://www.w3.org/2001/XMLSchema">  
     ```  
   
-7.  CustomGreeting 要素を定義するには、次を追加します。  
+7.  <span data-ttu-id="83009-154">CustomGreeting 要素を定義するには、次を追加します。</span><span class="sxs-lookup"><span data-stu-id="83009-154">Add the following to define the CustomGreeting element:</span></span>  
   
     ```csharp  
     <xsd:element name="greeting" type="CustomGreeting" />  
     ```  
   
-8.  CustomGreeting 複合型の定義を追加します。  
+8.  <span data-ttu-id="83009-155">CustomGreeting 複合型の定義を追加します。</span><span class="sxs-lookup"><span data-stu-id="83009-155">Now add the definition of the CustomGreeting complex type:</span></span>  
   
     ```csharp  
     <xsd:complexType name="CustomGreeting">  
@@ -399,7 +399,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:complexType>  
     ```  
   
-9. UsAddress 複合型を追加することによって、CustomGreeting スキーマ定義を続行します。  
+9. <span data-ttu-id="83009-156">UsAddress 複合型を追加することによって、CustomGreeting スキーマ定義を続行します。</span><span class="sxs-lookup"><span data-stu-id="83009-156">Continue the CustomGreeting schema definition by adding the  UsAddress complex type:</span></span>  
   
     ```csharp  
     <xsd:complexType name="UsAddress">  
@@ -413,7 +413,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:complexType>  
     ```  
   
-10. PostalCode 単純型とスキーマの終了タグの追加、CustomGreeting スキーマの定義を完了します。  
+10. <span data-ttu-id="83009-157">PostalCode 単純型とスキーマの終了タグの追加、CustomGreeting スキーマの定義を完了します。</span><span class="sxs-lookup"><span data-stu-id="83009-157">Complete the definition of the CustomGreeting schema by adding the PostalCode simple type and the closing tag for the schema:</span></span>  
   
     ```csharp  
       <xsd:simpleType name="PostalCode">  
@@ -424,20 +424,20 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:schema>  
     ```  
   
-11. 埋め込みリソースとして扱われるために、このファイルのビルド アクションを今すぐ更新します。 Visual Studio ソリューション ウィンドウで、これには、ファイルを右クリックして、**プロパティ**です。 ビルド アクションを変更する**None**に**埋め込みリソース**です。  
+11. <span data-ttu-id="83009-158">埋め込みリソースとして扱われるために、このファイルのビルド アクションを今すぐ更新します。</span><span class="sxs-lookup"><span data-stu-id="83009-158">Now update the build action for this file so it is treated as an embedded resource.</span></span> <span data-ttu-id="83009-159">Visual Studio ソリューション ウィンドウで、これには、ファイルを右クリックして、**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="83009-159">To do this, in the Visual Studio solution pane, right-click the file and choose **Properties**.</span></span> <span data-ttu-id="83009-160">ビルド アクションを変更する**None**に**埋め込みリソース**です。</span><span class="sxs-lookup"><span data-stu-id="83009-160">Change Build Action from **None** to **Embedded Resource**.</span></span>  
   
-12. Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**です。  
+12. <span data-ttu-id="83009-161">Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="83009-161">In Visual Studio, from the **File** menu, click **Save All**.</span></span>  
   
 > [!NOTE]
->  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 7: エコー アダプターの同期送信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)です。  
+>  <span data-ttu-id="83009-162">これで作業が保存されました。</span><span class="sxs-lookup"><span data-stu-id="83009-162">You saved your work.</span></span> <span data-ttu-id="83009-163">安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 7: エコー アダプターの同期送信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="83009-163">You can safely close Visual Studio at this time or go to the next step, [Step 7: Implement the Synchronous Outbound Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md).</span></span>  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- エコー アダプターの機能を解決するメタデータを実装されているだけです。  
+## <a name="what-did-i-just-do"></a><span data-ttu-id="83009-164">でしただけは何ですか。</span><span class="sxs-lookup"><span data-stu-id="83009-164">What Did I Just Do?</span></span>  
+ <span data-ttu-id="83009-165">エコー アダプターの機能を解決するメタデータを実装されているだけです。</span><span class="sxs-lookup"><span data-stu-id="83009-165">You just implemented the metadata resolving capability for the echo adapter.</span></span>  
   
-## <a name="next-steps"></a>次の手順  
- 次の手順では、エコー アダプターの同期送信ハンドラーを実装します。 ビルドし、同期受信ハンドラーを実装し、エコー アダプターを展開します。  
+## <a name="next-steps"></a><span data-ttu-id="83009-166">次の手順</span><span class="sxs-lookup"><span data-stu-id="83009-166">Next Steps</span></span>  
+ <span data-ttu-id="83009-167">次の手順では、エコー アダプターの同期送信ハンドラーを実装します。</span><span class="sxs-lookup"><span data-stu-id="83009-167">In the next step, you implement the synchronous outbound handler for the Echo Adapter.</span></span> <span data-ttu-id="83009-168">ビルドし、同期受信ハンドラーを実装し、エコー アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="83009-168">You then implement the synchronous inbound handler and then build and deploy the Echo Adapter.</span></span>  
   
-## <a name="see-also"></a>参照  
- [手順 5: エコー アダプターのメタデータの検索ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)   
- [手順 7: エコー アダプターの同期送信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)   
- [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="83009-169">参照</span><span class="sxs-lookup"><span data-stu-id="83009-169">See Also</span></span>  
+ <span data-ttu-id="83009-170">[手順 5: エコー アダプターのメタデータの検索ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="83009-170">[Step 5: Implement the Metadata Search Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md) </span></span>  
+ <span data-ttu-id="83009-171">[手順 7: エコー アダプターの同期送信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="83009-171">[Step 7: Implement the Synchronous Outbound Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md) </span></span>  
+ [<span data-ttu-id="83009-172">チュートリアル 1: エコー アダプターを開発します。</span><span class="sxs-lookup"><span data-stu-id="83009-172">Tutorial 1: Develop the Echo Adapter</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

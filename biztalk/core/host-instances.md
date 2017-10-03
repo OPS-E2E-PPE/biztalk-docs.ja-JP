@@ -21,17 +21,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="host-instances"></a>ホスト インスタンス
-A*ホスト インスタンス*BizTalk Server でホストの物理的なインストールします。 ホスト インスタンスのインストールには、Windows Management Instrumentation (WMI) または BizTalk 管理コンソールを使用します。 BizTalk Server は複数のホスト インスタンスをサポートできます。  
+# <a name="host-instances"></a><span data-ttu-id="e7f7b-102">ホスト インスタンス</span><span class="sxs-lookup"><span data-stu-id="e7f7b-102">Host Instances</span></span>
+<span data-ttu-id="e7f7b-103">A*ホスト インスタンス*BizTalk Server でホストの物理的なインストールします。</span><span class="sxs-lookup"><span data-stu-id="e7f7b-103">A *host instance* is the physical installation of a host in a BizTalk Server.</span></span> <span data-ttu-id="e7f7b-104">ホスト インスタンスのインストールには、Windows Management Instrumentation (WMI) または BizTalk 管理コンソールを使用します。</span><span class="sxs-lookup"><span data-stu-id="e7f7b-104">An administrator uses Windows Management Instrumentation (WMI) or the BizTalk Administration Console to install host instances.</span></span> <span data-ttu-id="e7f7b-105">BizTalk Server は複数のホスト インスタンスをサポートできます。</span><span class="sxs-lookup"><span data-stu-id="e7f7b-105">A BizTalk Server can support multiple host instances.</span></span>  
   
- 次の図に、サーバー、ホスト、およびホスト インスタンスの関係を示します。  
+ <span data-ttu-id="e7f7b-106">次の図に、サーバー、ホスト、およびホスト インスタンスの関係を示します。</span><span class="sxs-lookup"><span data-stu-id="e7f7b-106">The following figure shows the relationship between servers, hosts, and host instances.</span></span>  
   
- ![ホスト、ホスト インスタンス、およびサーバーの関係](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")  
-ホスト、ホスト インスタンス、およびサーバー間のリレーションシップ  
+ <span data-ttu-id="e7f7b-107">![ホスト、ホスト インスタンス、およびサーバーの関係](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")</span><span class="sxs-lookup"><span data-stu-id="e7f7b-107">![Hosts, host instances, and server relationships](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")</span></span>  
+<span data-ttu-id="e7f7b-108">ホスト、ホスト インスタンス、およびサーバー間のリレーションシップ</span><span class="sxs-lookup"><span data-stu-id="e7f7b-108">Relationship between hosts, host instances, and servers</span></span>  
   
- ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)です。  
+ <span data-ttu-id="e7f7b-109">ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)です。</span><span class="sxs-lookup"><span data-stu-id="e7f7b-109">For more information about Hosts, see [Hosts](../core/hosts.md).</span></span>  
   
-## <a name="see-also"></a>参照  
- [ホスト](../core/hosts.md)   
- [BizTalk ホストとホスト インスタンスを管理します。](../core/managing-biztalk-hosts-and-host-instances.md)   
- [エンティティ](../core/entities.md)
+## <a name="see-also"></a><span data-ttu-id="e7f7b-110">参照</span><span class="sxs-lookup"><span data-stu-id="e7f7b-110">See Also</span></span>  
+ <span data-ttu-id="e7f7b-111">[ホスト](../core/hosts.md) </span><span class="sxs-lookup"><span data-stu-id="e7f7b-111">[Hosts](../core/hosts.md) </span></span>  
+ <span data-ttu-id="e7f7b-112">[BizTalk ホストとホスト インスタンスを管理します。](../core/managing-biztalk-hosts-and-host-instances.md) </span><span class="sxs-lookup"><span data-stu-id="e7f7b-112">[Managing BizTalk Hosts and Host Instances](../core/managing-biztalk-hosts-and-host-instances.md) </span></span>  
+ [<span data-ttu-id="e7f7b-113">エンティティ</span><span class="sxs-lookup"><span data-stu-id="e7f7b-113">Entities</span></span>](../core/entities.md)

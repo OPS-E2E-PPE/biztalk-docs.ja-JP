@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="get-more-samples"></a>その他のサンプルの入手
-新しいサンプルは、MSDN デベロッパー センターで使用可能な[http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185)です。  
+# <a name="get-more-samples"></a><span data-ttu-id="598d5-102">その他のサンプルの入手</span><span class="sxs-lookup"><span data-stu-id="598d5-102">Get More Samples</span></span>
+<span data-ttu-id="598d5-103">新しいサンプルは、MSDN デベロッパー センターで使用可能な[http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185)です。</span><span class="sxs-lookup"><span data-stu-id="598d5-103">New samples are available at the MSDN Developer Center at [http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185).</span></span>  
   
-## <a name="see-also"></a>参照  
- [SDK のサンプル](../core/samples-in-the-sdk.md)
+## <a name="see-also"></a><span data-ttu-id="598d5-104">参照</span><span class="sxs-lookup"><span data-stu-id="598d5-104">See Also</span></span>  
+ [<span data-ttu-id="598d5-105">SDK のサンプル</span><span class="sxs-lookup"><span data-stu-id="598d5-105">Samples in the SDK</span></span>](../core/samples-in-the-sdk.md)

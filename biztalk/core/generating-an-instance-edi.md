@@ -18,85 +18,85 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="generating-an-instance-edi"></a>インスタンスの生成 (EDI)
-デザイン時に、EDI スキーマからメッセージ インスタンスを生成できます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。  
+# <a name="generating-an-instance-edi"></a><span data-ttu-id="9b42d-102">インスタンスの生成 (EDI)</span><span class="sxs-lookup"><span data-stu-id="9b42d-102">Generating an Instance (EDI)</span></span>
+<span data-ttu-id="9b42d-103">デザイン時に、EDI スキーマからメッセージ インスタンスを生成できます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-103">You can generate a message instance from an EDI schema at design time.</span></span> <span data-ttu-id="9b42d-104">それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span>  
   
- 完全なバッチ化されたインターチェンジ (インターチェンジ ヘッダーとグループ ヘッダーを含む) を生成することも、トランザクション セット (インターチェンジ ヘッダーとグループ ヘッダーを含まない) を生成することもできます。 完全なインターチェンジを生成する操作を実行すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、1 つのインターチェンジ ヘッダー、スキーマごとに 1 つのグループ、および各スキーマのグループごとに 3 つの同一なトランザクション セットを含むファイルが生成されます。 トランザクション セットを生成する操作を実行すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、1 つのトランザクション セットだけを含むファイルが生成されます。  
+ <span data-ttu-id="9b42d-105">完全なバッチ化されたインターチェンジ (インターチェンジ ヘッダーとグループ ヘッダーを含む) を生成することも、トランザクション セット (インターチェンジ ヘッダーとグループ ヘッダーを含まない) を生成することもできます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-105">You can generate either a complete batched interchange (with interchange and group headers) or a transaction set (without interchange and group headers).</span></span> <span data-ttu-id="9b42d-106">完全なインターチェンジを生成する操作を実行すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、1 つのインターチェンジ ヘッダー、スキーマごとに 1 つのグループ、および各スキーマのグループごとに 3 つの同一なトランザクション セットを含むファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-106">If you execute the operation to generate a complete interchange, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will generate a file with one interchange header, a group for each schema, and three identical transaction sets per group for each schema.</span></span> <span data-ttu-id="9b42d-107">トランザクション セットを生成する操作を実行すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、1 つのトランザクション セットだけを含むファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-107">If you execute the operation to generate a transaction set, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will generate a file with a single transaction set.</span></span>  
   
- 完全なバッチ化されたインターチェンジを生成するには、バッチ スキーマに対してインスタンス生成コマンドを実行します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によってプロジェクト内のメッセージ スキーマが検出され、それらのスキーマに対するトランザクション セットが自動的に含められます。  
+ <span data-ttu-id="9b42d-108">完全なバッチ化されたインターチェンジを生成するには、バッチ スキーマに対してインスタンス生成コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-108">To generate a complete batched interchange, you execute the generate-instance command on the batch schema.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="9b42d-109"> によってプロジェクト内のメッセージ スキーマが検出され、それらのスキーマに対するトランザクション セットが自動的に含められます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-109"> will detect the message schemas in the project, and will automatically include transaction sets for those schemas.</span></span>  
   
- 1 つのトランザクション セットを生成するには、メッセージ スキーマに対してインスタンス生成コマンドを実行します。 その場合、バッチ スキーマをプロジェクトに追加する必要はありません。 生成されたインスタンスにはインターチェンジ ヘッダーおよびグループ ヘッダーが含まれないので、機能 EDI インターチェンジを作成する場合はそれらを手動で追加する必要があります。  
+ <span data-ttu-id="9b42d-110">1 つのトランザクション セットを生成するには、メッセージ スキーマに対してインスタンス生成コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-110">To generate a single transaction set, you execute the generate-instance command on a message schema.</span></span> <span data-ttu-id="9b42d-111">その場合、バッチ スキーマをプロジェクトに追加する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="9b42d-111">In this case, the batch schema does not need to be added to the project.</span></span> <span data-ttu-id="9b42d-112">生成されたインスタンスにはインターチェンジ ヘッダーおよびグループ ヘッダーが含まれないので、機能 EDI インターチェンジを作成する場合はそれらを手動で追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9b42d-112">The generated instance will not include an interchange or group header, however, so you will have to add those manually to have a functional EDI interchange.</span></span>  
   
- インスタンスを生成する際には、そのインスタンスで使用する構成 (区切り記号や構文識別子など) を指定するためのダイアログ ボックスが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に表示されます。  
+ <span data-ttu-id="9b42d-113">インスタンスを生成する際には、そのインスタンスで使用する構成 (区切り記号や構文識別子など) を指定するためのダイアログ ボックスが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に表示されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-113">When you generate an instance, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] displays a dialog box in which you specify the configuration used in that instance, including separators and the syntax identifier.</span></span>  
   
-## <a name="prerequisites"></a>前提条件  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
+## <a name="prerequisites"></a><span data-ttu-id="9b42d-114">前提条件</span><span class="sxs-lookup"><span data-stu-id="9b42d-114">Prerequisites</span></span>  
+ <span data-ttu-id="9b42d-115">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="9b42d-115">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.</span></span>  
   
-### <a name="to-generate-an-instance-of-a-batched-interchange"></a>バッチ化されたインターチェンジのインスタンスを生成するには  
+### <a name="to-generate-an-instance-of-a-batched-interchange"></a><span data-ttu-id="9b42d-116">バッチ化されたインターチェンジのインスタンスを生成するには</span><span class="sxs-lookup"><span data-stu-id="9b42d-116">To generate an instance of a batched interchange</span></span>  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。 ソリューション エクスプローラーで、プロジェクトに、メッセージ インスタンスに含めるトランザクション セットの種類ごとに 1 つのメッセージ スキーマを追加します。 エンコードの種類に応じたバッチ スキーマ (Edifact_BatchSchema.xsd または X12_BatchSchema.xsd) をプロジェクトに追加します。  
-  
-    > [!NOTE]
-    >  バッチ スキーマは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI フォルダーにあります。  
+1.  <span data-ttu-id="9b42d-117">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-117">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open a project.</span></span> <span data-ttu-id="9b42d-118">ソリューション エクスプローラーで、プロジェクトに、メッセージ インスタンスに含めるトランザクション セットの種類ごとに 1 つのメッセージ スキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-118">Add a message schema to the project in Solution Explorer for each type of transaction set that you want in the message instance.</span></span> <span data-ttu-id="9b42d-119">エンコードの種類に応じたバッチ スキーマ (Edifact_BatchSchema.xsd または X12_BatchSchema.xsd) をプロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-119">Add the batch schema for the type of encoding to the project: either Edifact_BatchSchema.xsd or X12_BatchSchema.xsd.</span></span>  
   
     > [!NOTE]
-    >  インスタンスを生成する際にプロジェクトをビルドする必要はありません。  
-  
-2.  ソリューション エクスプ ローラーで、バッチ スキーマを右クリックし、をクリックして**プロパティ**です。  
-  
-3.  **プロパティ**ウィンドウで、設定**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**です。 選択すると**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。 選択すると**XML**の XML ファイルが生成されます。  
-  
-4.  **出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。  
+    >  <span data-ttu-id="9b42d-120">バッチ スキーマは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="9b42d-120">The batch schemas are located in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI folder.</span></span>  
   
     > [!NOTE]
-    >  出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。 ファイル名は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [出力] ウィンドウに表示されます。  
+    >  <span data-ttu-id="9b42d-121">インスタンスを生成する際にプロジェクトをビルドする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="9b42d-121">You do not have to build the project to generate an instance.</span></span>  
+  
+2.  <span data-ttu-id="9b42d-122">ソリューション エクスプ ローラーで、バッチ スキーマを右クリックし、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-122">Right-click the batch schema in Solution Explorer, and then click **Properties**.</span></span>  
+  
+3.  <span data-ttu-id="9b42d-123">**プロパティ**ウィンドウで、設定**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-123">In the **Properties** window, set **Generate Instance Output Type** to **Native** or **XML**.</span></span> <span data-ttu-id="9b42d-124">選択すると**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-124">Selecting **Native** will prompt generation of a flat file with a .txt extension.</span></span> <span data-ttu-id="9b42d-125">選択すると**XML**の XML ファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-125">Selecting **XML** will prompt generation of an XML file.</span></span>  
+  
+4.  <span data-ttu-id="9b42d-126">**出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-126">For **Output Instance Filename**, enter a name or browse to a file and select the file.</span></span>  
   
     > [!NOTE]
-    >  既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。  
-  
-5.  バッチ スキーマを右クリックし、をクリックして**インスタンスの生成**です。  
-  
-6.  **EDI インスタンスのプロパティ**ダイアログ ボックスで、そのインスタンスで使用して、をクリックする、区切り記号、識別子、およびその他の構成オプションを選択**OK**です。  
-  
-7.  操作が成功したことを確認、**出力**ウィンドウです。  
-  
-8.  ファイルを表示するには、キーを押して**コントロール**でリンクをクリックし、**出力**ウィンドウです。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
+    >  <span data-ttu-id="9b42d-127">出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-127">If you do not enter a value for the output instance filename, one will be chosen for you.</span></span> <span data-ttu-id="9b42d-128">ファイル名は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [出力] ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-128">The filename will be displayed in the Output window of [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
     > [!NOTE]
-    >  837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。 詳細については、次を参照してください。[に関する既知の問題の EDI ソリューションで XML ツールの使用と](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)です。  
+    >  <span data-ttu-id="9b42d-129">既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-129">If you select an existing file, the contents of the existing file will be replaced with the content generated by this operation.</span></span>  
   
-### <a name="to-generate-an-instance-of-a-transaction-set"></a>トランザクション セットのインスタンスを生成するには  
+5.  <span data-ttu-id="9b42d-130">バッチ スキーマを右クリックし、をクリックして**インスタンスの生成**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-130">Right-click the batch schema and then click **Generate Instance**.</span></span>  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。 インスタンスを生成するトランザクション セットの種類に応じたスキーマを追加します。  
+6.  <span data-ttu-id="9b42d-131">**EDI インスタンスのプロパティ**ダイアログ ボックスで、そのインスタンスで使用して、をクリックする、区切り記号、識別子、およびその他の構成オプションを選択**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-131">In the **EDI Instance Properties** dialog box, select the separators, identifiers, and other configuration options to be used in that instance, and then click **OK**.</span></span>  
   
-    > [!NOTE]
-    >  トランザクション セットのインスタンスを生成する際に、プロジェクトにバッチ スキーマを追加する必要はありません。  
+7.  <span data-ttu-id="9b42d-132">操作が成功したことを確認、**出力**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="9b42d-132">Verify that the operation worked in the **Output** window.</span></span>  
   
-    > [!NOTE]
-    >  インスタンスを生成する際にプロジェクトをビルドする必要はありません。  
-  
-2.  ソリューション エクスプ ローラーで、メッセージ スキーマを右クリックし、をクリックして**プロパティ**です。  
-  
-3.  [プロパティ] ウィンドウで次のように設定します。**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**です。 選択すると**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。 選択すると**XML**の XML ファイルが生成されます。  
-  
-4.  **出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。  
+8.  <span data-ttu-id="9b42d-133">ファイルを表示するには、キーを押して**コントロール**でリンクをクリックし、**出力**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="9b42d-133">To view the file, press **Control** and click the link in the **Output** window.</span></span> [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]<span data-ttu-id="9b42d-134"> の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-134"> will display the contents of the file in the BizTalk Editor window.</span></span>  
   
     > [!NOTE]
-    >  出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。 ファイル名が表示されます、**出力**のウィンドウ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
+    >  <span data-ttu-id="9b42d-135">837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-135">When generating an instance that contains an 837I, 837D, or 837P, the value of GS08 will be incorrectly set to 00401.</span></span> <span data-ttu-id="9b42d-136">詳細については、次を参照してください。[に関する既知の問題の EDI ソリューションで XML ツールの使用と](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-136">For more information, see [Known Issues with XML Tools Used with EDI Solutions](../core/known-issues-with-xml-tools-used-with-edi-solutions.md).</span></span>  
+  
+### <a name="to-generate-an-instance-of-a-transaction-set"></a><span data-ttu-id="9b42d-137">トランザクション セットのインスタンスを生成するには</span><span class="sxs-lookup"><span data-stu-id="9b42d-137">To generate an instance of a transaction set</span></span>  
+  
+1.  <span data-ttu-id="9b42d-138">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-138">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open a project.</span></span> <span data-ttu-id="9b42d-139">インスタンスを生成するトランザクション セットの種類に応じたスキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-139">Add the schema for the type of transaction set that you want to generate an instance for.</span></span>  
   
     > [!NOTE]
-    >  既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。  
+    >  <span data-ttu-id="9b42d-140">トランザクション セットのインスタンスを生成する際に、プロジェクトにバッチ スキーマを追加する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="9b42d-140">You do not have to add the batch schema to the project to generate an instance of a transaction set.</span></span>  
   
-5.  メッセージ スキーマを右クリックし、をクリックして**インスタンスの生成**です。  
+    > [!NOTE]
+    >  <span data-ttu-id="9b42d-141">インスタンスを生成する際にプロジェクトをビルドする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="9b42d-141">You do not have to build the project to generate an instance.</span></span>  
   
-6.  **EDI インスタンスのプロパティ** ダイアログ ボックスで、構成オプションを選択して、をクリックして**OK**です。  
+2.  <span data-ttu-id="9b42d-142">ソリューション エクスプ ローラーで、メッセージ スキーマを右クリックし、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-142">Right-click the message schema in Solution Explorer, and then click **Properties**.</span></span>  
   
-7.  内のメッセージがあることを確認、**出力**操作が成功したことを示すウィンドウです。  
+3.  <span data-ttu-id="9b42d-143">[プロパティ] ウィンドウで次のように設定します。**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-143">In the Properties window, set **Generate Instance Output Type** to **Native** or **XML**.</span></span> <span data-ttu-id="9b42d-144">選択すると**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-144">Selecting **Native** will prompt generation of a flat file with a .txt extension.</span></span> <span data-ttu-id="9b42d-145">選択すると**XML**の XML ファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-145">Selecting **XML** will prompt generation of an XML file.</span></span>  
   
-8.  ファイルを表示するには、キーを押して**コントロール**出力 ウィンドウで、リンクをクリックします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
+4.  <span data-ttu-id="9b42d-146">**出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-146">For **Output Instance Filename**, enter a name or browse to a file and select the file.</span></span>  
   
-9. 機能 EDI メッセージを作成する場合は、テキスト エディターで、メッセージにインターチェンジ ヘッダーとグループ ヘッダーを追加します。  
+    > [!NOTE]
+    >  <span data-ttu-id="9b42d-147">出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-147">If you do not enter a value for the output instance filename, one will be chosen for you.</span></span> <span data-ttu-id="9b42d-148">ファイル名が表示されます、**出力**のウィンドウ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-148">The filename will be displayed in the **Output** window of [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-## <a name="see-also"></a>参照  
- [デザイン時 XML ツールを使用します。](../core/using-design-time-xml-tools.md)   
- [インスタンス (EDI) の検証](../core/validating-an-instance-edi.md)
+    > [!NOTE]
+    >  <span data-ttu-id="9b42d-149">既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-149">If you select an existing file, the contents of the existing file will be replaced with the content generated by this operation.</span></span>  
+  
+5.  <span data-ttu-id="9b42d-150">メッセージ スキーマを右クリックし、をクリックして**インスタンスの生成**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-150">Right-click the message schema and then click **Generate Instance**.</span></span>  
+  
+6.  <span data-ttu-id="9b42d-151">**EDI インスタンスのプロパティ** ダイアログ ボックスで、構成オプションを選択して、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9b42d-151">In the **EDI Instance Properties** dialog box, select the configuration options that you want, and then click **OK**.</span></span>  
+  
+7.  <span data-ttu-id="9b42d-152">内のメッセージがあることを確認、**出力**操作が成功したことを示すウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="9b42d-152">Verify that there is a message in the **Output** window indicating that the operation succeeded.</span></span>  
+  
+8.  <span data-ttu-id="9b42d-153">ファイルを表示するには、キーを押して**コントロール**出力 ウィンドウで、リンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9b42d-153">To view the file, press **Control** and click the link in the Output window.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="9b42d-154"> の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-154"> will display the contents of the file in the BizTalk Editor window.</span></span>  
+  
+9. <span data-ttu-id="9b42d-155">機能 EDI メッセージを作成する場合は、テキスト エディターで、メッセージにインターチェンジ ヘッダーとグループ ヘッダーを追加します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-155">To make a functional EDI message, add the interchange and group headers to the message in a text editor.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="9b42d-156">参照</span><span class="sxs-lookup"><span data-stu-id="9b42d-156">See Also</span></span>  
+ <span data-ttu-id="9b42d-157">[デザイン時 XML ツールを使用します。](../core/using-design-time-xml-tools.md) </span><span class="sxs-lookup"><span data-stu-id="9b42d-157">[Using Design-Time XML Tools](../core/using-design-time-xml-tools.md) </span></span>  
+ [<span data-ttu-id="9b42d-158">インスタンス (EDI) の検証</span><span class="sxs-lookup"><span data-stu-id="9b42d-158">Validating an Instance (EDI)</span></span>](../core/validating-an-instance-edi.md)

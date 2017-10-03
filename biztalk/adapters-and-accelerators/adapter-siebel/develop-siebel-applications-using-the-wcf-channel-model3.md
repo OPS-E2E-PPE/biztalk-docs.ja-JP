@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="develop-siebel-applications-using-the-wcf-channel-model3"></a>WCF チャネル Model3 を使用した Siebel アプリケーションを開発します。
-このセクションでは、チャネルを使用して、チャネルと Siebel で実行できる操作の作成に関する情報を示します。  
+# <a name="develop-siebel-applications-using-the-wcf-channel-model3"></a><span data-ttu-id="9736f-102">WCF チャネル Model3 を使用した Siebel アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="9736f-102">Develop Siebel Applications Using the WCF Channel Model3</span></span>
+<span data-ttu-id="9736f-103">このセクションでは、チャネルを使用して、チャネルと Siebel で実行できる操作の作成に関する情報を示します。</span><span class="sxs-lookup"><span data-stu-id="9736f-103">This section provides information about creating a channel and the operations that you can perform on Siebel using the channel.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="9736f-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="9736f-104">In This Section</span></span>  
   
--   [Siebel を使用して、チャネルを作成します。](../../adapters-and-accelerators/adapter-siebel/create-a-channel-using-siebel.md)  
+-   [<span data-ttu-id="9736f-105">Siebel を使用して、チャネルを作成します。</span><span class="sxs-lookup"><span data-stu-id="9736f-105">Create a Channel using Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/create-a-channel-using-siebel.md)  
   
--   [WCF チャネル モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。](../../adapters-and-accelerators/adapter-siebel/run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)
+-   [<span data-ttu-id="9736f-106">WCF チャネル モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="9736f-106">Run Operations on Business Components with the Siebel adapter using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-siebel/run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)

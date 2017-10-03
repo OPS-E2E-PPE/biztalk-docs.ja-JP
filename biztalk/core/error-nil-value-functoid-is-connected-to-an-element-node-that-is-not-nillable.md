@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error--a-nil-value-functoid-is-connected-to-a-target-element-node-39039-which-is-not-nillable"></a>エラー-Nil 値 functoid が、ターゲット要素ノード &#39; に接続されています。{0} &#39;これは、nillable はできません。
-**エラー コード**  
+# <a name="error--a-nil-value-functoid-is-connected-to-a-target-element-node-39039-which-is-not-nillable"></a><span data-ttu-id="26fd0-103">エラー-Nil 値 functoid が、ターゲット要素ノード &#39; に接続されています。{0} &#39;これは、nillable はできません。</span><span class="sxs-lookup"><span data-stu-id="26fd0-103">Error- A Nil Value functoid is connected to a target element node &#39;{0}&#39; which is not nillable.</span></span>
+<span data-ttu-id="26fd0-104">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="26fd0-104">**Error Code**</span></span>  
   
- btm1080  
+ <span data-ttu-id="26fd0-105">btm1080</span><span class="sxs-lookup"><span data-stu-id="26fd0-105">btm1080</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="26fd0-106">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="26fd0-106">**User Action**</span></span>  
   
- ターゲット ノードを Nillable にするか、Nil 値 Functoid へのリンクを削除します。
+ <span data-ttu-id="26fd0-107">ターゲット ノードを Nillable にするか、Nil 値 Functoid へのリンクを削除します。</span><span class="sxs-lookup"><span data-stu-id="26fd0-107">Either make that target node nillable or remove the link to the nil value functoid.</span></span>

@@ -19,12 +19,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="mappings-enlisted-party-node"></a>Mappings (Enlisted Party ノード)
-バインド ファイルの Mappings ノードは、パーティ ポートとロール ポートの種類の操作の間のマッピングを記述するすべての Mapping ノードの親ノードです。  
+# <a name="mappings-enlisted-party-node"></a><span data-ttu-id="b5382-102">Mappings (Enlisted Party ノード)</span><span class="sxs-lookup"><span data-stu-id="b5382-102">Mappings (Enlisted Party Node)</span></span>
+<span data-ttu-id="b5382-103">バインド ファイルの Mappings ノードは、パーティ ポートとロール ポートの種類の操作の間のマッピングを記述するすべての Mapping ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="b5382-103">The Mappings node of a binding file is the parent node for all of the Mapping nodes which describe the mapping between a party port and role port type operation.</span></span>  
   
-## <a name="nodes-in-the-mappings-node"></a>Mappings ノード内のノード  
- 次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
+## <a name="nodes-in-the-mappings-node"></a><span data-ttu-id="b5382-104">Mappings ノード内のノード</span><span class="sxs-lookup"><span data-stu-id="b5382-104">Nodes in the Mappings node</span></span>  
+ <span data-ttu-id="b5382-105">次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="b5382-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|<span data-ttu-id="b5382-106">**名前**</span><span class="sxs-lookup"><span data-stu-id="b5382-106">**Name**</span></span>|<span data-ttu-id="b5382-107">**ノード型**</span><span class="sxs-lookup"><span data-stu-id="b5382-107">**Node Type**</span></span>|<span data-ttu-id="b5382-108">**データ型**</span><span class="sxs-lookup"><span data-stu-id="b5382-108">**Data Type**</span></span>|<span data-ttu-id="b5382-109">**Description**</span><span class="sxs-lookup"><span data-stu-id="b5382-109">**Description**</span></span>|<span data-ttu-id="b5382-110">**制限**</span><span class="sxs-lookup"><span data-stu-id="b5382-110">**Restrictions**</span></span>|<span data-ttu-id="b5382-111">**コメント**</span><span class="sxs-lookup"><span data-stu-id="b5382-111">**Comments**</span></span>|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[マッピング](../core/mapping-mappings-node.md)|レコード|EnlistedPartyMapping (ComplexType)|パーティ ポートとロール ポートの種類の操作の間のマッピングを指定します。|任意|既定値: なし|
+|[<span data-ttu-id="b5382-112">マッピング</span><span class="sxs-lookup"><span data-stu-id="b5382-112">Mapping</span></span>](../core/mapping-mappings-node.md)|<span data-ttu-id="b5382-113">レコード</span><span class="sxs-lookup"><span data-stu-id="b5382-113">Record</span></span>|<span data-ttu-id="b5382-114">EnlistedPartyMapping (ComplexType)</span><span class="sxs-lookup"><span data-stu-id="b5382-114">EnlistedPartyMapping (ComplexType)</span></span>|<span data-ttu-id="b5382-115">パーティ ポートとロール ポートの種類の操作の間のマッピングを指定します。</span><span class="sxs-lookup"><span data-stu-id="b5382-115">Specifies the mapping between a party port and role port type operation.</span></span>|<span data-ttu-id="b5382-116">任意</span><span class="sxs-lookup"><span data-stu-id="b5382-116">Not required</span></span>|<span data-ttu-id="b5382-117">既定値: なし</span><span class="sxs-lookup"><span data-stu-id="b5382-117">Default value: none</span></span>|

@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-biztalk-accelerator-for-rosettanet-works"></a>BizTalk Accelerator for RosettaNet のしくみ
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]上に構築により、ハイテク製造ソリューションを提供[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 これは、RNIF (RosettaNet Implementation Framework) および PIP (Partner Interface Processes) のサポートを提供し、メッセージ処理をカスタマイズするコンポーネントをハイテク製造アプリケーションに追加することにより行います。  
+# <a name="how-biztalk-accelerator-for-rosettanet-works"></a><span data-ttu-id="3d138-102">BizTalk Accelerator for RosettaNet のしくみ</span><span class="sxs-lookup"><span data-stu-id="3d138-102">How BizTalk Accelerator for RosettaNet Works</span></span>
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="3d138-103">®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]上に構築により、ハイテク製造ソリューションを提供[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3d138-103">® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] provides a high-technology manufacturing solution by building on [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="3d138-104">これは、RNIF (RosettaNet Implementation Framework) および PIP (Partner Interface Processes) のサポートを提供し、メッセージ処理をカスタマイズするコンポーネントをハイテク製造アプリケーションに追加することにより行います。</span><span class="sxs-lookup"><span data-stu-id="3d138-104">It does so by providing support for RosettaNet Implementation Framework (RNIF) and Partner Interface Processes (PIPs), and adding components that customize the message processing to high-technology manufacturing applications.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="3d138-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="3d138-105">In This Section</span></span>  
   
--   [BTARN でのメッセージ フロー](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)  
+-   [<span data-ttu-id="3d138-106">BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="3d138-106">Message Flow in BTARN</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)  
   
--   [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)
+-   [<span data-ttu-id="3d138-107">BTARN でのメッセージ処理</span><span class="sxs-lookup"><span data-stu-id="3d138-107">Message Processing in BTARN</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

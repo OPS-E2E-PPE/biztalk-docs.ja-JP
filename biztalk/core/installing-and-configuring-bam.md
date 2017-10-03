@@ -19,12 +19,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="install-and-configure-bam"></a>インストールして BAM を構成します。
-ビジネス アクティビティ監視 (BAM) は、BizTalk Server のインストールに含まれています。 インストールして、単一サーバー、または BizTalk Server と同じように、複数コンピューター環境で、BAM を構成することができます。 
+# <a name="install-and-configure-bam"></a><span data-ttu-id="2f815-103">インストールして BAM を構成します。</span><span class="sxs-lookup"><span data-stu-id="2f815-103">Install and configure BAM</span></span>
+<span data-ttu-id="2f815-104">ビジネス アクティビティ監視 (BAM) は、BizTalk Server のインストールに含まれています。</span><span class="sxs-lookup"><span data-stu-id="2f815-104">Business Activity Monitoring (BAM) is included with the BizTalk Server installation.</span></span> <span data-ttu-id="2f815-105">インストールして、単一サーバー、または BizTalk Server と同じように、複数コンピューター環境で、BAM を構成することができます。</span><span class="sxs-lookup"><span data-stu-id="2f815-105">You can install and configure BAM on a single server, or in a multi-computer environment, just like BizTalk Server:</span></span> 
   
--   複数のコンピューターのインストール:[のインストールと複数コンピューター環境で BAM を構成します。](http://go.microsoft.com/fwlink/p/?LinkID=208597)  
+-   <span data-ttu-id="2f815-106">複数のコンピューターのインストール:[のインストールと複数コンピューター環境で BAM を構成します。](http://go.microsoft.com/fwlink/p/?LinkID=208597)</span><span class="sxs-lookup"><span data-stu-id="2f815-106">Multicomputer installation: [Install and Configure BAM in a Multi-Computer Environment](http://go.microsoft.com/fwlink/p/?LinkID=208597)</span></span>  
   
--   シングル サーバー インストール: [BizTalk Server がインストールおよびアップグレード ガイド](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)
+-   <span data-ttu-id="2f815-107">シングル サーバー インストール: [BizTalk Server がインストールおよびアップグレード ガイド](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)</span><span class="sxs-lookup"><span data-stu-id="2f815-107">Single server installation: [BizTalk Server install & upgrade guides](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)</span></span>
   
-## <a name="see-also"></a>参照  
- [BizTalk Server の Windows グループ アカウントとユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)
+## <a name="see-also"></a><span data-ttu-id="2f815-108">参照</span><span class="sxs-lookup"><span data-stu-id="2f815-108">See Also</span></span>  
+ [<span data-ttu-id="2f815-109">BizTalk Server の Windows グループ アカウントとユーザー アカウント</span><span class="sxs-lookup"><span data-stu-id="2f815-109">Windows Groups and User Accounts in BizTalk Server</span></span>](../core/windows-groups-and-user-accounts-in-biztalk-server.md)

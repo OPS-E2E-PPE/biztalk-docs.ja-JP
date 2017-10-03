@@ -21,13 +21,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-the-smtp-adapter"></a>SMTP アダプタの構成
-このセクションでは、SMTP アダプタを構成する方法について説明します。  
+# <a name="configuring-the-smtp-adapter"></a><span data-ttu-id="66d52-102">SMTP アダプタの構成</span><span class="sxs-lookup"><span data-stu-id="66d52-102">Configuring the SMTP Adapter</span></span>
+<span data-ttu-id="66d52-103">このセクションでは、SMTP アダプタを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="66d52-103">This section describes how to configure an SMTP adapter.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="66d52-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="66d52-104">In This Section</span></span>  
   
--   [SMTP 送信ハンドラを構成する方法](../core/how-to-configure-an-smtp-send-handler.md)  
+-   [<span data-ttu-id="66d52-105">SMTP 送信ハンドラを構成する方法</span><span class="sxs-lookup"><span data-stu-id="66d52-105">How to Configure an SMTP Send Handler</span></span>](../core/how-to-configure-an-smtp-send-handler.md)  
   
--   [SMTP 送信ポートを構成する方法](../core/how-to-configure-an-smtp-send-port.md)  
+-   [<span data-ttu-id="66d52-106">SMTP 送信ポートを構成する方法</span><span class="sxs-lookup"><span data-stu-id="66d52-106">How to Configure an SMTP Send Port</span></span>](../core/how-to-configure-an-smtp-send-port.md)  
   
--   [SMTP アダプター プロパティ スキーマおよびプロパティ](../core/smtp-adapter-property-schema-and-properties.md)
+-   [<span data-ttu-id="66d52-107">SMTP アダプター プロパティ スキーマおよびプロパティ</span><span class="sxs-lookup"><span data-stu-id="66d52-107">SMTP Adapter Property Schema and Properties</span></span>](../core/smtp-adapter-property-schema-and-properties.md)

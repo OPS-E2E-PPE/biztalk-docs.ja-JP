@@ -19,9 +19,9 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="deploying-biztalk-adapter-for-jd-edwards-oneworld"></a>BizTalk Adapter for JD Edwards OneWorld の展開
-このセクションでは、BizTalk Adapter for JD Edwards OneWorld の展開の詳細について説明します。  
+# <a name="deploying-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="665b0-102">BizTalk Adapter for JD Edwards OneWorld の展開</span><span class="sxs-lookup"><span data-stu-id="665b0-102">Deploying BizTalk Adapter for JD Edwards OneWorld</span></span>
+<span data-ttu-id="665b0-103">このセクションでは、BizTalk Adapter for JD Edwards OneWorld の展開の詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="665b0-103">This section provides information about deploying Microsoft BizTalk Adapter for JD Edwards OneWorld.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="665b0-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="665b0-104">In This Section</span></span>  
   
--   [ポートとアセンブリの展開](../core/deploying-ports-and-assemblies4.md)
+-   [<span data-ttu-id="665b0-105">ポートとアセンブリの展開</span><span class="sxs-lookup"><span data-stu-id="665b0-105">Deploying Ports and Assemblies</span></span>](../core/deploying-ports-and-assemblies4.md)

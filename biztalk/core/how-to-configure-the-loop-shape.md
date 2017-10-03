@@ -23,12 +23,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-configure-the-loop-shape"></a>ループ図形を構成する方法
+# <a name="how-to-configure-the-loop-shape"></a><span data-ttu-id="20ab1-102">ループ図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="20ab1-102">How to Configure the Loop Shape</span></span>
 ![](../core/media/ebiz-orch-loop.gif "ebiz_orch_loop")  
-ループ図形  
+<span data-ttu-id="20ab1-103">ループ図形</span><span class="sxs-lookup"><span data-stu-id="20ab1-103">Loop shape</span></span>  
   
-### <a name="to-configure-a-loop-shape"></a>ループ図形を構成するには  
+### <a name="to-configure-a-loop-shape"></a><span data-ttu-id="20ab1-104">ループ図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="20ab1-104">To configure a Loop shape</span></span>  
   
-1.  BizTalk 式エディターが表示されていない場合を右クリックし、**ループ**図形をクリックして**ブール式の編集**、[プロパティ] ウィンドウで次のようにクリックしますまたは、**省略記号**(。**...**) ボタンをクリックして、**式**プロパティです。  
+1.  <span data-ttu-id="20ab1-105">BizTalk 式エディターが表示されていない場合を右クリックし、**ループ**図形をクリックして**ブール式の編集**、[プロパティ] ウィンドウで次のようにクリックしますまたは、**省略記号**(。**...**) ボタンをクリックして、**式**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="20ab1-105">If BizTalk Expression Editor is not visible, right-click the **Loop** shape and click **Edit Boolean Expression**, or in the Properties window, click the **Ellipsis** (**...**) button for the **Expression** property.</span></span>  
   
-2.  BizTalk 式エディターで、反復条件のブール式を作成します。 詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)です。
+2.  <span data-ttu-id="20ab1-106">BizTalk 式エディターで、反復条件のブール式を作成します。</span><span class="sxs-lookup"><span data-stu-id="20ab1-106">In BizTalk Expression Editor, create a Boolean expression for the iteration condition.</span></span> <span data-ttu-id="20ab1-107">詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)です。</span><span class="sxs-lookup"><span data-stu-id="20ab1-107">For more information, see [Requirements and Limitations for Expressions](../core/requirements-and-limitations-for-expressions.md).</span></span>

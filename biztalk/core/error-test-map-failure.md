@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---test-map-failure"></a>エラー - マップのテスト エラー
-**エラー コード**  
+# <a name="error---test-map-failure"></a><span data-ttu-id="ecea4-102">エラー - マップのテスト エラー</span><span class="sxs-lookup"><span data-stu-id="ecea4-102">Error - Test Map Failure</span></span>
+<span data-ttu-id="ecea4-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="ecea4-103">**Error Code**</span></span>  
   
- btm1054  
+ <span data-ttu-id="ecea4-104">btm1054</span><span class="sxs-lookup"><span data-stu-id="ecea4-104">btm1054</span></span>  
   
- **説明**  
+ <span data-ttu-id="ecea4-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="ecea4-105">**Explanation**</span></span>  
   
- マップに対する、マップのテスト操作に失敗しました。  
+ <span data-ttu-id="ecea4-106">マップに対する、マップのテスト操作に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="ecea4-106">The Test Map operation failed for the indicated map.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="ecea4-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="ecea4-107">**User Action**</span></span>  
   
- 関連するエラー メッセージを参考にして、このマップのテスト操作が失敗した原因を特定し、マップか、このマップに関連付けられている送信元スキーマおよび送信先スキーマ、またはその両方に必要な変更を加えます。
+ <span data-ttu-id="ecea4-108">関連するエラー メッセージを参考にして、このマップのテスト操作が失敗した原因を特定し、マップか、このマップに関連付けられている送信元スキーマおよび送信先スキーマ、またはその両方に必要な変更を加えます。</span><span class="sxs-lookup"><span data-stu-id="ecea4-108">Using the accompanying error message(s), determine the cause of failure for the Test Map operation, make the necessary changes to the map or its associated source and destination schemas, or both.</span></span>

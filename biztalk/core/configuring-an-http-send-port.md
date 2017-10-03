@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-an-http-send-port"></a>HTTP 送信ポートの構成
-このセクションでは、HTTP 送信ポートを構成する方法について説明します。  
+# <a name="configuring-an-http-send-port"></a><span data-ttu-id="91fe0-102">HTTP 送信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="91fe0-102">Configuring an HTTP Send Port</span></span>
+<span data-ttu-id="91fe0-103">このセクションでは、HTTP 送信ポートを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="91fe0-103">This section describes how to configure an HTTP send port.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="91fe0-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="91fe0-104">In This Section</span></span>  
   
--   [HTTP 送信ポートを構成する方法](../core/how-to-configure-an-http-send-port.md)  
+-   [<span data-ttu-id="91fe0-105">HTTP 送信ポートを構成する方法</span><span class="sxs-lookup"><span data-stu-id="91fe0-105">How to Configure an HTTP Send Port</span></span>](../core/how-to-configure-an-http-send-port.md)  
   
--   [送信先 URL のプロパティに関する制限事項](../core/restrictions-on-the-destination-url-property.md)
+-   [<span data-ttu-id="91fe0-106">送信先 URL のプロパティに関する制限事項</span><span class="sxs-lookup"><span data-stu-id="91fe0-106">Restrictions on the Destination URL Property</span></span>](../core/restrictions-on-the-destination-url-property.md)

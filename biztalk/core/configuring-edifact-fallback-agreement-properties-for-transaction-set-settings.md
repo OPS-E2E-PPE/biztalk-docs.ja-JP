@@ -18,14 +18,14 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-edifact-fallback-agreement-properties-for-transaction-set-settings"></a>トランザクション セット設定の EDIFACT フォールバック アグリーメント プロパティの構成
-EDIFACT トランザクション セットの設定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で 2 つのパーティ間で交換されるトランザクション セットを処理する方法を定義します。  
+# <a name="configuring-edifact-fallback-agreement-properties-for-transaction-set-settings"></a><span data-ttu-id="965c5-102">トランザクション セット設定の EDIFACT フォールバック アグリーメント プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="965c5-102">Configuring EDIFACT Fallback Agreement Properties for Transaction Set Settings</span></span>
+<span data-ttu-id="965c5-103">EDIFACT トランザクション セットの設定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で 2 つのパーティ間で交換されるトランザクション セットを処理する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="965c5-103">EDIFACT transaction set settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the transaction sets being exchanged between two parties.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="965c5-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="965c5-104">In This Section</span></span>  
   
--   [フォールバック ローカル ホスト設定の構成 (EDIFACT トランザクション セットの設定)](../core/configuring-fallback-local-host-settings-edifact-transaction-set-settings.md)  
+-   [<span data-ttu-id="965c5-105">フォールバック ローカル ホスト設定の構成 (EDIFACT トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="965c5-105">Configuring Fallback Local Host Settings (EDIFACT-Transaction Set Settings)</span></span>](../core/configuring-fallback-local-host-settings-edifact-transaction-set-settings.md)  
   
--   [フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定)](../core/configuring-fallback-envelope-properties-edifact-transaction-set-settings.md)  
+-   [<span data-ttu-id="965c5-106">フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="965c5-106">Configuring Fallback Envelope Properties (EDIFACT-Transaction Set Settings)</span></span>](../core/configuring-fallback-envelope-properties-edifact-transaction-set-settings.md)  
   
-## <a name="see-also"></a>参照  
- [EDIFACT フォールバック アグリーメント プロパティの構成](../core/configuring-edifact-fallback-agreement-properties.md)
+## <a name="see-also"></a><span data-ttu-id="965c5-107">参照</span><span class="sxs-lookup"><span data-stu-id="965c5-107">See Also</span></span>  
+ [<span data-ttu-id="965c5-108">EDIFACT フォールバック アグリーメント プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="965c5-108">Configuring EDIFACT Fallback Agreement Properties</span></span>](../core/configuring-edifact-fallback-agreement-properties.md)

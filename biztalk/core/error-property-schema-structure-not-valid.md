@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---property-schema-structure-not-valid"></a>エラー - プロパティ スキーマの構造が無効です。
-**エラー コード**  
+# <a name="error---property-schema-structure-not-valid"></a><span data-ttu-id="0101d-102">エラー - プロパティ スキーマの構造が無効です。</span><span class="sxs-lookup"><span data-stu-id="0101d-102">Error - Property Schema Structure Not Valid</span></span>
+<span data-ttu-id="0101d-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="0101d-103">**Error Code**</span></span>  
   
- BEC2007  
+ <span data-ttu-id="0101d-104">BEC2007</span><span class="sxs-lookup"><span data-stu-id="0101d-104">BEC2007</span></span>  
   
- **説明**  
+ <span data-ttu-id="0101d-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="0101d-105">**Explanation**</span></span>  
   
- このプロパティ スキーマの構造が無効であることが検出されました。 プロパティ スキーマの構造は 1 つまたは複数に制限されて**フィールド要素**ノードの子として、**スキーマ**ノード。  
+ <span data-ttu-id="0101d-106">このプロパティ スキーマの構造が無効であることが検出されました。</span><span class="sxs-lookup"><span data-stu-id="0101d-106">This property schema was found to have a structure that is not valid.</span></span> <span data-ttu-id="0101d-107">プロパティ スキーマの構造は 1 つまたは複数に制限されて**フィールド要素**ノードの子として、**スキーマ**ノード。</span><span class="sxs-lookup"><span data-stu-id="0101d-107">The structure of property schemas is limited to one or more **Field Element** nodes as children of the **Schema** node.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="0101d-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="0101d-108">**User Action**</span></span>  
   
- このプロパティ スキーマの構造を修正できるように、**スキーマ**ノードのみが**フィールド要素**の子ノードです。
+ <span data-ttu-id="0101d-109">このプロパティ スキーマの構造を修正できるように、**スキーマ**ノードのみが**フィールド要素**の子ノードです。</span><span class="sxs-lookup"><span data-stu-id="0101d-109">Correct the structure of this property schema so that the **Schema** node only has **Field Element** nodes as children.</span></span>

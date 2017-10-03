@@ -18,12 +18,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-4c-create-a-test-instance-for-the-interact-store-and-forward-pull-scenario"></a>手順 4 C: InterAct ストア アンド フォワード (プル) シナリオのテスト インスタンスを作成
-この手順を開始する前に行う必要があります[手順 3 b: InterAct ストアと転送 (するプル) シナリオ用の動的送信ポートにオーケストレーションをバインド](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-port-for-interact-scenario.md)です。  
+# <a name="step-4c-create-a-test-instance-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="78fa2-102">手順 4 C: InterAct ストア アンド フォワード (プル) シナリオのテスト インスタンスを作成</span><span class="sxs-lookup"><span data-stu-id="78fa2-102">Step 4C: Create a Test Instance for the InterAct Store and Forward (Pull) Scenario</span></span>
+<span data-ttu-id="78fa2-103">この手順を開始する前に行う必要があります[手順 3 b: InterAct ストアと転送 (するプル) シナリオ用の動的送信ポートにオーケストレーションをバインド](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-port-for-interact-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="78fa2-103">Before you begin this step, you must complete [Step 3B: Bind the orchestration with dynamic send port for InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-port-for-interact-scenario.md).</span></span>  
   
-### <a name="to-create-a-test-instance"></a>テスト インスタンスを作成するには  
+### <a name="to-create-a-test-instance"></a><span data-ttu-id="78fa2-104">テスト インスタンスを作成するには</span><span class="sxs-lookup"><span data-stu-id="78fa2-104">To create a test instance</span></span>  
   
-1.  メモ帳などのテキスト エディターで、新しいファイルを開くし、以下を貼り付けます。  
+1.  <span data-ttu-id="78fa2-105">メモ帳などのテキスト エディターで、新しいファイルを開くし、以下を貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="78fa2-105">Open a new file in a text editor, such as Notepad, and paste the following:</span></span>  
   
     ```  
     SwInt-ExchangeRequest>  
@@ -36,9 +36,9 @@ ms.lasthandoff: 09/20/2017
   
     ```  
   
-2.  ExchangeReqSimple.xml という名前のファイルを保存します。  
+2.  <span data-ttu-id="78fa2-106">ExchangeReqSimple.xml という名前のファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="78fa2-106">Save the File with the name ExchangeReqSimple.xml.</span></span>  
   
-3.  メモ帳などのテキスト エディターで、新しいファイルを開くし、以下を貼り付けます。  
+3.  <span data-ttu-id="78fa2-107">メモ帳などのテキスト エディターで、新しいファイルを開くし、以下を貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="78fa2-107">Open a new file in a text editor, such as Notepad, and paste the following:</span></span>  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -58,9 +58,9 @@ ms.lasthandoff: 09/20/2017
   
     ```  
   
-4.  名前 acquirequeue.xml でファイルを保存します。  
+4.  <span data-ttu-id="78fa2-108">名前 acquirequeue.xml でファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="78fa2-108">Save the File with the name acquirequeue.xml.</span></span>  
   
-## <a name="see-also"></a>参照  
- [手順 4 a: InterAct ストア アンド フォワード (プル) シナリオの SWIFTNet サービスを開始](../../adapters-and-accelerators/fileact-interact/step-4a-start-swiftnet-service-for-the-interact-store-and-forward-scenario.md)   
- [手順 4 b: 送信ポートの開始し、InterAct ストア アンド フォワード (プル) シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
- [手順 4 D: InterAct ストア アンド フォワード (プル) シナリオの有効なインスタンスをテストします。](../../adapters-and-accelerators/fileact-interact/step-4d-test-a-valid-instance-for-interact-store-and-forward-pull-scenario.md)
+## <a name="see-also"></a><span data-ttu-id="78fa2-109">参照</span><span class="sxs-lookup"><span data-stu-id="78fa2-109">See Also</span></span>  
+ <span data-ttu-id="78fa2-110">[手順 4 a: InterAct ストア アンド フォワード (プル) シナリオの SWIFTNet サービスを開始](../../adapters-and-accelerators/fileact-interact/step-4a-start-swiftnet-service-for-the-interact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="78fa2-110">[Step 4A: Start the SWIFTNet Service for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-4a-start-swiftnet-service-for-the-interact-store-and-forward-scenario.md) </span></span>  
+ <span data-ttu-id="78fa2-111">[手順 4 b: 送信ポートの開始し、InterAct ストア アンド フォワード (プル) シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-send-and-receive-ports-for-interact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="78fa2-111">[Step 4B: Start the Send Ports and Receive Ports for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-4b-start-send-and-receive-ports-for-interact-store-and-forward-scenario.md) </span></span>  
+ [<span data-ttu-id="78fa2-112">手順 4 D: InterAct ストア アンド フォワード (プル) シナリオの有効なインスタンスをテストします。</span><span class="sxs-lookup"><span data-stu-id="78fa2-112">Step 4D: Test a Valid Instance for the InterAct Store and Forward (Pull) Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/step-4d-test-a-valid-instance-for-interact-store-and-forward-pull-scenario.md)

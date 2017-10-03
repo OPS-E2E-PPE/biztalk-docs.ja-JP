@@ -18,12 +18,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="adapter-getschema-method"></a>アダプターの GetSchema メソッド
-参照されている WSDL ファイルが、スキーマ参照のみを含み、埋め込みスキーマを含まないものとします。 この場合、使用して、 **GetSchema**のメソッド、 **IAdapterConfig**インターフェイス WSDL ファイル内から参照されるスキーマを読み込めません。  
+# <a name="adapter-getschema-method"></a><span data-ttu-id="e4a32-102">アダプターの GetSchema メソッド</span><span class="sxs-lookup"><span data-stu-id="e4a32-102">Adapter GetSchema Method</span></span>
+<span data-ttu-id="e4a32-103">参照されている WSDL ファイルが、スキーマ参照のみを含み、埋め込みスキーマを含まないものとします。</span><span class="sxs-lookup"><span data-stu-id="e4a32-103">Suppose the referenced WSDL file contains only schema references and does not contain embedded schemas.</span></span> <span data-ttu-id="e4a32-104">この場合、使用して、 **GetSchema**のメソッド、 **IAdapterConfig**インターフェイス WSDL ファイル内から参照されるスキーマを読み込めません。</span><span class="sxs-lookup"><span data-stu-id="e4a32-104">In this case, you use the **GetSchema** method of the **IAdapterConfig** interface to load a schema referenced from within a WSDL file.</span></span>  
   
- ファイル アダプターのサンプルのコードを変更、 **GetSchema** WSDL ファイルに含まれていない外部 XSD ファイルを返すには、AdapterManagement.cs のメソッドです。  
+ <span data-ttu-id="e4a32-105">ファイル アダプターのサンプルのコードを変更、 **GetSchema** WSDL ファイルに含まれていない外部 XSD ファイルを返すには、AdapterManagement.cs のメソッドです。</span><span class="sxs-lookup"><span data-stu-id="e4a32-105">In the file adapter sample, modify the code in the **GetSchema** method of AdapterManagement.cs to return any external XSD files that are not included with the WSDL files.</span></span>  
   
- 次のコードは、 **GetSchema** AdapterManagement.cs ファイルのメソッドです。 Service1.wsdl ファイルには埋め込みスキーマが含まれるので、ここでは Null を返します。 そうでない場合は、XSD スキーマ ファイルに対応する文字列を返す必要があります。  
+ <span data-ttu-id="e4a32-106">次のコードは、 **GetSchema** AdapterManagement.cs ファイルのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="e4a32-106">The following code is from the **GetSchema** method of the AdapterManagement.cs file.</span></span> <span data-ttu-id="e4a32-107">Service1.wsdl ファイルには埋め込みスキーマが含まれるので、ここでは Null を返します。</span><span class="sxs-lookup"><span data-stu-id="e4a32-107">It returns null here because the Service1.wsdl file contains embedded schemas.</span></span> <span data-ttu-id="e4a32-108">そうでない場合は、XSD スキーマ ファイルに対応する文字列を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4a32-108">If that were not the case, a string corresponding to an XSD schema file would need to be returned.</span></span>  
   
 ```  
 /// <summary>  

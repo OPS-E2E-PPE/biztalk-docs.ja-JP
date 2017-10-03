@@ -18,39 +18,39 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-add-value-mapping-functoids-to-a-map"></a>マップに値のマッピング Functoid を追加する方法
-**値のマッピング**functoid は、最初のパラメーターが true の場合に、2 番目のパラメーターの値を返します。 この Functoid は、主にフィールドの属性をレコードの属性に変更する場合に使用します。  
+# <a name="how-to-add-value-mapping-functoids-to-a-map"></a><span data-ttu-id="f7997-102">マップに値のマッピング Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="f7997-102">How to Add Value Mapping Functoids to a Map</span></span>
+<span data-ttu-id="f7997-103">**値のマッピング**functoid は、最初のパラメーターが true の場合に、2 番目のパラメーターの値を返します。</span><span class="sxs-lookup"><span data-stu-id="f7997-103">The **Value Mapping** functoid returns the value of its second parameter if its first parameter is true.</span></span> <span data-ttu-id="f7997-104">この Functoid は、主にフィールドの属性をレコードの属性に変更する場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="f7997-104">A common use of the functoid is to change the attributes of a field into the attributes of a record.</span></span>  
   
- 概要については、**値のマッピング**functoid を参照してください[値のマッピング Functoid](../core/value-mapping-functoid.md)です。  
+ <span data-ttu-id="f7997-105">概要については、**値のマッピング**functoid を参照してください[値のマッピング Functoid](../core/value-mapping-functoid.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7997-105">For conceptual information about the **Value Mapping** functoid, see [Value Mapping Functoid](../core/value-mapping-functoid.md).</span></span>  
   
-### <a name="to-add-the-value-mapping-functoid-to-a-map-and-configure-it"></a>マップに値のマッピング Functoid を追加して構成するには  
+### <a name="to-add-the-value-mapping-functoid-to-a-map-and-configure-it"></a><span data-ttu-id="f7997-106">マップに値のマッピング Functoid を追加して構成するには</span><span class="sxs-lookup"><span data-stu-id="f7997-106">To add the Value Mapping functoid to a map and configure it</span></span>  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス active をクリックして、**高度な Functoid** functoid のカテゴリを選択するタブです。  
+1.  <span data-ttu-id="f7997-107">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス active をクリックして、**高度な Functoid** functoid のカテゴリを選択するタブです。</span><span class="sxs-lookup"><span data-stu-id="f7997-107">With the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Toolbox active, click the **Advanced Functoids** tab to select that category of functoids.</span></span>  
   
-     選択したカテゴリに含まれる高度な Functoid の一覧が表示されます。  
+     <span data-ttu-id="f7997-108">選択したカテゴリに含まれる高度な Functoid の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="f7997-108">The list of advanced functoids in the chosen category appears.</span></span>  
   
-2.  ドラッグ、**値のマッピング**functoid (![](../core/media/bts-tls-valmap.gif "bts_tls_valmap")) をグリッド ページの適切な場所にツールボックスからです。  
-  
-    > [!NOTE]
-    >  Functoid は表示されているグリッド ページに配置されます。 別のグリッド ページに functoid を配置する場合は、その他のグリッド ページを最初に表示する必要があります。  
+2.  <span data-ttu-id="f7997-109">ドラッグ、**値のマッピング**functoid (![](../core/media/bts-tls-valmap.gif "bts_tls_valmap")) をグリッド ページの適切な場所にツールボックスからです。</span><span class="sxs-lookup"><span data-stu-id="f7997-109">Drag the **Value Mapping** functoid (![](../core/media/bts-tls-valmap.gif "bts_tls_valmap")) from the Toolbox to the appropriate location on a grid page.</span></span>  
   
     > [!NOTE]
-    >  複数の Functoid を同時に使用するマップを構築する場合は、相対的な位置 (左右) に注意する必要があります。 Functoids は左から順に実行されます。 1 つの Functoid からの出力は、これよりも右にある Functoid にのみ入力することができます。  
-  
-3.  最初の入力パラメーターを確立するために、**値のマッピング**functoid をドラッグして、入力リンクを作成、**値のマッピング**functoid、送信元スキーマ内のレコードまたはフィールド ノードに、または別の functoid を左は、Boolean データ型を持つおよびを"true"または"false"の入力値が生成されます。  
+    >  <span data-ttu-id="f7997-110">Functoid は表示されているグリッド ページに配置されます。</span><span class="sxs-lookup"><span data-stu-id="f7997-110">The functoid will be placed on the displayed grid page.</span></span> <span data-ttu-id="f7997-111">別のグリッド ページに functoid を配置する場合は、その他のグリッド ページを最初に表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f7997-111">If you want to put the functoid onto a different grid page, you need to display that other grid page first.</span></span>  
   
     > [!NOTE]
-    >  ドラッグすることも、反対方向にドラッグするブール値のソース、**値のマッピング**functoid です。  
+    >  <span data-ttu-id="f7997-112">複数の Functoid を同時に使用するマップを構築する場合は、相対的な位置 (左右) に注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f7997-112">If you are constructing a map using more than one functoid together, you need to consider their relative left to right placement.</span></span> <span data-ttu-id="f7997-113">Functoids は左から順に実行されます。</span><span class="sxs-lookup"><span data-stu-id="f7997-113">Functoids are executed from left to right.</span></span> <span data-ttu-id="f7997-114">1 つの Functoid からの出力は、これよりも右にある Functoid にのみ入力することができます。</span><span class="sxs-lookup"><span data-stu-id="f7997-114">The output of a functoid can only be input to another functoid that is farther to the right.</span></span>  
   
-4.  2 番目の入力パラメーターを設定する、**値のマッピング**functoid をドラッグして、入力リンクを作成、**値のマッピング**レコードをドラッグするか、送信元スキーマのレコードまたはフィールド ノードを functoidまたはフィールド ノードに、送信元スキーマ、**値のマッピング**functoid です。  
-  
-    > [!NOTE]
-    >  2 番目の入力パラメーターを**値のマッピング**functoid もできる別の functoid の出力からの左側にします。 該当する Functoid を別の Functoid へドラッグして、このような入力ソースを表すリンクを作成します。  
-  
-5.  出力パラメーターを使用する、**値のマッピング**functoid をドラッグして、出力リンクを作成、**値のマッピング**レコードまたはフィールド レコード フィールドをドラッグするか、送信先スキーマの functoid変換先スキーマ、**値のマッピング**functoid です。  
+3.  <span data-ttu-id="f7997-115">最初の入力パラメーターを確立するために、**値のマッピング**functoid をドラッグして、入力リンクを作成、**値のマッピング**functoid、送信元スキーマ内のレコードまたはフィールド ノードに、または別の functoid を左は、Boolean データ型を持つおよびを"true"または"false"の入力値が生成されます。</span><span class="sxs-lookup"><span data-stu-id="f7997-115">To establish the first input parameter for the **Value Mapping** functoid, create an input link by dragging the **Value Mapping** functoid to a record or field node in the source schema, or to another functoid to its left, that has a Boolean data type and that will produce an input value of "true" or "false".</span></span>  
   
     > [!NOTE]
-    >  その他の functoid の出力と同様、**値のマッピング**functoid が別の functoid への入力として使用できます。  
+    >  <span data-ttu-id="f7997-116">ドラッグすることも、反対方向にドラッグするブール値のソース、**値のマッピング**functoid です。</span><span class="sxs-lookup"><span data-stu-id="f7997-116">You can also drag in the opposite direction, dragging the source of the Boolean value to the **Value Mapping** functoid.</span></span>  
   
-## <a name="see-also"></a>参照  
- [マップへの高度な Functoid の追加](../core/adding-advanced-functoids-to-a-map.md)
+4.  <span data-ttu-id="f7997-117">2 番目の入力パラメーターを設定する、**値のマッピング**functoid をドラッグして、入力リンクを作成、**値のマッピング**レコードをドラッグするか、送信元スキーマのレコードまたはフィールド ノードを functoidまたはフィールド ノードに、送信元スキーマ、**値のマッピング**functoid です。</span><span class="sxs-lookup"><span data-stu-id="f7997-117">To establish the second input parameter for the **Value Mapping** functoid, create an input link by dragging the **Value Mapping** functoid to a record or field node in the source schema, or by dragging a record or field node in the source schema to the **Value Mapping** functoid.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="f7997-118">2 番目の入力パラメーターを**値のマッピング**functoid もできる別の functoid の出力からの左側にします。</span><span class="sxs-lookup"><span data-stu-id="f7997-118">The second input parameter to the **Value Mapping** functoid can also be from the output of another functoid to its left.</span></span> <span data-ttu-id="f7997-119">該当する Functoid を別の Functoid へドラッグして、このような入力ソースを表すリンクを作成します。</span><span class="sxs-lookup"><span data-stu-id="f7997-119">Create the links that represent such sources of input by dragging one of the relevant functoids to the other relevant functoid.</span></span>  
+  
+5.  <span data-ttu-id="f7997-120">出力パラメーターを使用する、**値のマッピング**functoid をドラッグして、出力リンクを作成、**値のマッピング**レコードまたはフィールド レコード フィールドをドラッグするか、送信先スキーマの functoid変換先スキーマ、**値のマッピング**functoid です。</span><span class="sxs-lookup"><span data-stu-id="f7997-120">To use the output parameter from the **Value Mapping** functoid, create an output link by dragging the **Value Mapping** functoid to a record or field in the destination schema, or by dragging a record field in the destination schema to the **Value Mapping** functoid.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="f7997-121">その他の functoid の出力と同様、**値のマッピング**functoid が別の functoid への入力として使用できます。</span><span class="sxs-lookup"><span data-stu-id="f7997-121">As with other functoids, the output of the **Value Mapping** functoid can serve as input to another functoid.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="f7997-122">参照</span><span class="sxs-lookup"><span data-stu-id="f7997-122">See Also</span></span>  
+ [<span data-ttu-id="f7997-123">マップへの高度な Functoid の追加</span><span class="sxs-lookup"><span data-stu-id="f7997-123">Adding Advanced Functoids to a Map</span></span>](../core/adding-advanced-functoids-to-a-map.md)

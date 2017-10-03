@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---too-many-logical-inputs-to-node"></a>エラー - ノードへの論理入力が多すぎます
-**エラー コード**  
+# <a name="error---too-many-logical-inputs-to-node"></a><span data-ttu-id="c7673-102">エラー - ノードへの論理入力が多すぎます</span><span class="sxs-lookup"><span data-stu-id="c7673-102">Error - Too Many Logical Inputs to Node</span></span>
+<span data-ttu-id="c7673-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="c7673-103">**Error Code**</span></span>  
   
- btm1006  
+ <span data-ttu-id="c7673-104">btm1006</span><span class="sxs-lookup"><span data-stu-id="c7673-104">btm1006</span></span>  
   
- **説明**  
+ <span data-ttu-id="c7673-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="c7673-105">**Explanation**</span></span>  
   
- 入力リンクの数よりも、送信先スキーマのノードに接続している論理リンク数がある、**ループ**functoid のノードの祖先のノードに接続されています。 この 2 種類のリンクの数は、一致している必要があります。  
+ <span data-ttu-id="c7673-106">入力リンクの数よりも、送信先スキーマのノードに接続している論理リンク数がある、**ループ**functoid のノードの祖先のノードに接続されています。</span><span class="sxs-lookup"><span data-stu-id="c7673-106">There are a greater number of logical links connected to the indicated node in the destination schema than the number of input links to the **Looping** functoid that is connected to an ancestor node of the indicated node.</span></span> <span data-ttu-id="c7673-107">この 2 種類のリンクの数は、一致している必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7673-107">The number of links of the former and latter types should match.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="c7673-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="c7673-108">**User Action**</span></span>  
   
- 作業のやり直しのノードにされ、接続されているリンクの数、**ループ**functoid が、祖先ノードに接続されている一致するものとします。
+ <span data-ttu-id="c7673-109">作業のやり直しのノードにされ、接続されているリンクの数、**ループ**functoid が、祖先ノードに接続されている一致するものとします。</span><span class="sxs-lookup"><span data-stu-id="c7673-109">Rework the number of links connected to the indicated node and to the **Looping** functoid connected to the ancestor node so that they match.</span></span>

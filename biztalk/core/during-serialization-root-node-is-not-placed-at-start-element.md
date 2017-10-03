@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="during-serialization-root-node-is-not-placed-at-start-element"></a>シリアル化中にルート ノードが開始要素に配置されません
-## <a name="details"></a>詳細  
+# <a name="during-serialization-root-node-is-not-placed-at-start-element"></a><span data-ttu-id="7b0e8-102">シリアル化中にルート ノードが開始要素に配置されません</span><span class="sxs-lookup"><span data-stu-id="7b0e8-102">During serialization root node is not placed at start element</span></span>
+## <a name="details"></a><span data-ttu-id="7b0e8-103">詳細</span><span class="sxs-lookup"><span data-stu-id="7b0e8-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|-|  
-|メッセージ テキスト|シリアル化中にルート ノードが開始要素に配置されません|  
+|<span data-ttu-id="7b0e8-104">製品名</span><span class="sxs-lookup"><span data-stu-id="7b0e8-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="7b0e8-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="7b0e8-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|<span data-ttu-id="7b0e8-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="7b0e8-106">Event ID</span></span>|-|  
+|<span data-ttu-id="7b0e8-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="7b0e8-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="7b0e8-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="7b0e8-108"> EDI</span></span>|  
+|<span data-ttu-id="7b0e8-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="7b0e8-109">Component</span></span>|<span data-ttu-id="7b0e8-110">EDI エンジン</span><span class="sxs-lookup"><span data-stu-id="7b0e8-110">EDI Engine</span></span>|  
+|<span data-ttu-id="7b0e8-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="7b0e8-111">Symbolic Name</span></span>|-|  
+|<span data-ttu-id="7b0e8-112">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="7b0e8-112">Message Text</span></span>|<span data-ttu-id="7b0e8-113">シリアル化中にルート ノードが開始要素に配置されません</span><span class="sxs-lookup"><span data-stu-id="7b0e8-113">During serialization root node is not placed at start element</span></span>|  
   
-## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、トランザクション セットが ST または UNH ヘッダーで始まらないため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。  
+## <a name="explanation"></a><span data-ttu-id="7b0e8-114">説明</span><span class="sxs-lookup"><span data-stu-id="7b0e8-114">Explanation</span></span>  
+ <span data-ttu-id="7b0e8-115">このエラー/警告/情報イベントは、トランザクション セットが ST または UNH ヘッダーで始まらないため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="7b0e8-115">This Error/Warning/Information event indicates that the receive pipeline could not process an incoming interchange because the transaction set does not start with an ST or UNH header.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、インターチェンジの各トランザクション セットが ST セグメント (X12 インターチェンジの場合) または UNH セグメント (EDIFACT インターチェンジの場合) で始まることを確認し、インターチェンジを再送信します。
+## <a name="user-action"></a><span data-ttu-id="7b0e8-116">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="7b0e8-116">User Action</span></span>  
+ <span data-ttu-id="7b0e8-117">このエラーを解決するには、インターチェンジの各トランザクション セットが ST セグメント (X12 インターチェンジの場合) または UNH セグメント (EDIFACT インターチェンジの場合) で始まることを確認し、インターチェンジを再送信します。</span><span class="sxs-lookup"><span data-stu-id="7b0e8-117">To resolve this error, ensure that each of the transaction sets in an interchange starts with an ST segment (for X12 interchanges) or an UNH segment (for EDIFACT interchanges), and then resubmit the interchange.</span></span>

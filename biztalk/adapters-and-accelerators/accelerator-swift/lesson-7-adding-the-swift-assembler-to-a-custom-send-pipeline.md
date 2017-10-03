@@ -22,13 +22,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline"></a>レッスン 7: カスタム送信パイプラインに SWIFT アセンブラーを追加します。
-このレッスンでは、パイプラインに SWIFT カスタム アセンブラー (ASM) を追加します。  
+# <a name="lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline"></a><span data-ttu-id="416d8-102">レッスン 7: カスタム送信パイプラインに SWIFT アセンブラーを追加します。</span><span class="sxs-lookup"><span data-stu-id="416d8-102">Lesson 7: Adding the SWIFT Assembler to a Custom Send Pipeline</span></span>
+<span data-ttu-id="416d8-103">このレッスンでは、パイプラインに SWIFT カスタム アセンブラー (ASM) を追加します。</span><span class="sxs-lookup"><span data-stu-id="416d8-103">In this lesson, you add the SWIFT custom assembler (ASM) to your pipeline.</span></span>  
   
-### <a name="to-add-the-swift-assembler-pipeline-component-to-the-pipeline"></a>SWIFT アセンブラー パイプライン コンポーネントをパイプラインに追加するには  
+### <a name="to-add-the-swift-assembler-pipeline-component-to-the-pipeline"></a><span data-ttu-id="416d8-104">SWIFT アセンブラー パイプライン コンポーネントをパイプラインに追加するには</span><span class="sxs-lookup"><span data-stu-id="416d8-104">To add the SWIFT assembler pipeline component to the pipeline</span></span>  
   
-1.  **BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ、 **SWIFT アセンブラー**を**ここにドロップ**下のボックス、**アセンブル**内の図形**BizTalk パイプライン デザイナ**です。  
+1.  <span data-ttu-id="416d8-105">**BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ、 **SWIFT アセンブラー**を**ここにドロップ**下のボックス、**アセンブル**内の図形**BizTalk パイプライン デザイナ**です。</span><span class="sxs-lookup"><span data-stu-id="416d8-105">In the **BizTalk Pipeline Components Toolbox**, drag the **SWIFT Assembler** to the **Drop Here** box below the **Assemble** shape in **BizTalk Pipeline Designer**.</span></span>  
   
-2.  **ファイル**メニューの **すべて保存**して変更を保存します。  
+2.  <span data-ttu-id="416d8-106">**ファイル**メニューの **すべて保存**して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="416d8-106">On the **File** menu, select **Save All** to save your changes.</span></span>  
   
- 進みます[レッスン 9: ビルドしてアセンブリを配置する](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)です。
+ <span data-ttu-id="416d8-107">進みます[レッスン 9: ビルドしてアセンブリを配置する](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)です。</span><span class="sxs-lookup"><span data-stu-id="416d8-107">Proceed to [Lesson 9: Building and Deploying the Assembly](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md).</span></span>

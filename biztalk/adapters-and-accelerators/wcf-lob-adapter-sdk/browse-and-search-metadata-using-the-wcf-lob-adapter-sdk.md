@@ -18,17 +18,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="browse-and-search-metadata-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用してメタデータを参照および検索
-このセクションでは、それぞれ IMetadataBrowseHandler と IMetadataSearchHandler を実装することによって、アダプターでの参照および検索機能を公開する方法に関する情報を提供します。  
+# <a name="browse-and-search-metadata-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="40753-102">WCF LOB Adapter SDK を使用してメタデータを参照および検索</span><span class="sxs-lookup"><span data-stu-id="40753-102">Browse and search metadata using the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="40753-103">このセクションでは、それぞれ IMetadataBrowseHandler と IMetadataSearchHandler を実装することによって、アダプターでの参照および検索機能を公開する方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="40753-103">This section provides information about how to expose browse and search functionality with an adapter by implementing IMetadataBrowseHandler and IMetadataSearchHandler, respectively.</span></span>  
   
-## <a name="imetadatabrowsehandler"></a>IMetadataBrowseHandler  
- アダプターをプロジェクトに追加すると、IMetadataBrowseHandler はカテゴリと、アダプターをサポートする操作の参照を許可します。 これにより、アダプターのコンシューマー、デザイン時にメタデータ情報を表示して、クライアントの処理を必要とする操作のみを選択します。  
+## <a name="imetadatabrowsehandler"></a><span data-ttu-id="40753-104">IMetadataBrowseHandler</span><span class="sxs-lookup"><span data-stu-id="40753-104">IMetadataBrowseHandler</span></span>  
+ <span data-ttu-id="40753-105">アダプターをプロジェクトに追加すると、IMetadataBrowseHandler はカテゴリと、アダプターをサポートする操作の参照を許可します。</span><span class="sxs-lookup"><span data-stu-id="40753-105">When adding an adapter to a project, IMetadataBrowseHandler allows browsing of the categories and operations that the adapter supports.</span></span> <span data-ttu-id="40753-106">これにより、アダプターのコンシューマー、デザイン時にメタデータ情報を表示して、クライアントの処理を必要とする操作のみを選択します。</span><span class="sxs-lookup"><span data-stu-id="40753-106">This allows the adapter consumer to view metadata information at design time, and to select only the operations that the client process requires.</span></span>  
   
- 使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、IMetadataBrowseHandler に入力アダプターをプロジェクトに追加するには**選択コントラクト型**、**カテゴリを選択**、および**利用可能なカテゴリと操作**ボックス。  
+ <span data-ttu-id="40753-107">使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、IMetadataBrowseHandler に入力アダプターをプロジェクトに追加するには**選択コントラクト型**、**カテゴリを選択**、および**利用可能なカテゴリと操作**ボックス。</span><span class="sxs-lookup"><span data-stu-id="40753-107">When using the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to add an adapter to a project, the IMetadataBrowseHandler populates the **Select contract type**, **Select a Category**, and **Available categories and operations** boxes.</span></span>  
   
- ![参照操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")  
+ <span data-ttu-id="40753-108">![参照操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")</span><span class="sxs-lookup"><span data-stu-id="40753-108">![Browse Operations](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")</span></span>  
   
- 次の例では、IMetadataBrowseHandler を実装する方法を示します。 カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。  
+ <span data-ttu-id="40753-109">次の例では、IMetadataBrowseHandler を実装する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="40753-109">The following example demonstrates how to implement IMetadataBrowseHandler.</span></span> <span data-ttu-id="40753-110">カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。</span><span class="sxs-lookup"><span data-stu-id="40753-110">It constructs a MetadataRetrievalNode array containing information on the categories and operations that the adapter supports.</span></span>  
   
 ```csharp  
 public class EchoAdapterMetadataBrowseHandler : EchoAdapterHandlerBase, IMetadataBrowseHandler  
@@ -99,14 +99,14 @@ public class EchoAdapterMetadataBrowseHandler : EchoAdapterHandlerBase, IMetadat
     }  
 ```  
   
-## <a name="imetadatasearchhandler"></a>IMetadataSearchHandler  
- アダプターで IMetadataSearchHandler を実装する操作名の一部など、検索語句を入力して、デザイン時に使用可能な操作を検索する機能を提供します。 これは、アダプターは、返される操作を制限するための検索値を入力するため、多くの操作を含まれている場合に非常に役立ちます。  
+## <a name="imetadatasearchhandler"></a><span data-ttu-id="40753-111">IMetadataSearchHandler</span><span class="sxs-lookup"><span data-stu-id="40753-111">IMetadataSearchHandler</span></span>  
+ <span data-ttu-id="40753-112">アダプターで IMetadataSearchHandler を実装する操作名の一部など、検索語句を入力して、デザイン時に使用可能な操作を検索する機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="40753-112">Implementing IMetadataSearchHandler within an adapter provides the ability to search for available operations at design time by entering a search term, such as a portion of an operation name.</span></span> <span data-ttu-id="40753-113">これは、アダプターは、返される操作を制限するための検索値を入力するため、多くの操作を含まれている場合に非常に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="40753-113">This is very useful if your adapter contains many operations, since you can enter search values to limit the operations returned.</span></span>  
   
- 使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]IMetadataSearchHandler 解決で入力文字列を検索する際、プロジェクトにアダプターを追加するには**カテゴリで検索**ボックス、および照合の一覧の項目を返します、 **利用可能なカテゴリと操作**ボックス。  
+ <span data-ttu-id="40753-114">使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]IMetadataSearchHandler 解決で入力文字列を検索する際、プロジェクトにアダプターを追加するには**カテゴリで検索**ボックス、および照合の一覧の項目を返します、 **利用可能なカテゴリと操作**ボックス。</span><span class="sxs-lookup"><span data-stu-id="40753-114">When using the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to add an adapter to a project, the IMetadataSearchHandler resolves search strings entered in the **Search in category** box, and returns a list of matching items in the **Available categories and operations** box.</span></span>  
   
- ![検索操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/48dc9ca6-8697-42bf-9419-5fa35a19937f.gif "48dc9ca6-8697-42bf-9419-5fa35a19937f")  
+ <span data-ttu-id="40753-115">![検索操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/48dc9ca6-8697-42bf-9419-5fa35a19937f.gif "48dc9ca6-8697-42bf-9419-5fa35a19937f")</span><span class="sxs-lookup"><span data-stu-id="40753-115">![Search Operations](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/48dc9ca6-8697-42bf-9419-5fa35a19937f.gif "48dc9ca6-8697-42bf-9419-5fa35a19937f")</span></span>  
   
- 検索を実行することもできます。 op の形式でクエリ文字列として検索する値を渡すことによって = 値 WSDL またはアダプターのプロキシを生成するときに svcutil.exe を使用します。 エコー/EchoStrings 操作情報のみを返す svcutil.exe を使用する例を次に示します。  
+ <span data-ttu-id="40753-116">検索を実行することもできます。 op の形式でクエリ文字列として検索する値を渡すことによって = 値 WSDL またはアダプターのプロキシを生成するときに svcutil.exe を使用します。</span><span class="sxs-lookup"><span data-stu-id="40753-116">You can also perform searches with svcutil.exe when generating WSDL or proxy for an adapter, by passing the search value as a query string in the format of op=value.</span></span> <span data-ttu-id="40753-117">エコー/EchoStrings 操作情報のみを返す svcutil.exe を使用する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="40753-117">The following is an example of using svcutil.exe to return only the Echo/EchoStrings operation information.</span></span>  
   
 ```  
 svcutil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op=Echo/EchoStrings” /target:metadata  
@@ -114,9 +114,9 @@ svcutil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op
 ```  
   
 > [!NOTE]
->  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]エコー *、% エコー % などの既定ワイルドカード検索機能は提供されません。 ワイルドカードまたは機能に一致するパターンを実装するアダプターの作成者の責任です。  
+>  <span data-ttu-id="40753-118">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]エコー *、% エコー % などの既定ワイルドカード検索機能は提供されません。</span><span class="sxs-lookup"><span data-stu-id="40753-118">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] does not provide a default wildcard search functionality such as Echo* or %Echo%.</span></span> <span data-ttu-id="40753-119">ワイルドカードまたは機能に一致するパターンを実装するアダプターの作成者の責任です。</span><span class="sxs-lookup"><span data-stu-id="40753-119">It is up to the adapter author to implement wildcard or pattern matching functionality.</span></span>  
   
- 次の例では、IMetadataSearchHandler を実装する方法を示します。 カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。  
+ <span data-ttu-id="40753-120">次の例では、IMetadataSearchHandler を実装する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="40753-120">The following example demonstrates how to implement IMetadataSearchHandler.</span></span> <span data-ttu-id="40753-121">カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。</span><span class="sxs-lookup"><span data-stu-id="40753-121">It constructs a MetadataRetrievalNode array containing information about the categories and operations that the adapter supports.</span></span>  
   
 ```csharp  
 public class EchoAdapterMetadataSearchHandler : EchoAdapterHandlerBase, IMetadataSearchHandler  
@@ -188,5 +188,5 @@ public class EchoAdapterMetadataSearchHandler : EchoAdapterHandlerBase, IMetadat
     }  
 ```  
   
-## <a name="see-also"></a>参照  
- [開発アクティビティ](../../esb-toolkit/development-activities.md)
+## <a name="see-also"></a><span data-ttu-id="40753-122">参照</span><span class="sxs-lookup"><span data-stu-id="40753-122">See Also</span></span>  
+ [<span data-ttu-id="40753-123">開発アクティビティ</span><span class="sxs-lookup"><span data-stu-id="40753-123">Development Activities</span></span>](../../esb-toolkit/development-activities.md)

@@ -26,23 +26,23 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-configure-the-suspend-shape"></a>中断図形を構成する方法
+# <a name="how-to-configure-the-suspend-shape"></a><span data-ttu-id="60d57-102">中断図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="60d57-102">How to Configure the Suspend Shape</span></span>
 ![](../core/media/ebiz-orch-suspend.gif "ebiz_orch_suspend")  
-中断図形  
+<span data-ttu-id="60d57-103">中断図形</span><span class="sxs-lookup"><span data-stu-id="60d57-103">Suspend shape</span></span>  
   
- オーケストレーション インスタンスが中断されると、エラーがログに記録されます。 管理者が状況を診断しやすいよう、このエラーに添えるメッセージ文字列を指定できます。  
+ <span data-ttu-id="60d57-104">オーケストレーション インスタンスが中断されると、エラーがログに記録されます。</span><span class="sxs-lookup"><span data-stu-id="60d57-104">When an orchestration instance is suspended, an error is logged.</span></span> <span data-ttu-id="60d57-105">管理者が状況を診断しやすいよう、このエラーに添えるメッセージ文字列を指定できます。</span><span class="sxs-lookup"><span data-stu-id="60d57-105">You can specify a message string to accompany the error to help the administrator diagnose the situation.</span></span>  
   
- すべてのオーケストレーション インスタンスの状態情報が保存され、管理者は、オーケストレーション インスタンスを再開する場合に再開します。  
-  
-> [!NOTE]
->  場合、 **Suspend**同期的に呼び出されたオーケストレーションに図形が存在する (と同様、**呼び出す**図形) 別のオーケストレーションによって、入れ子になったインスタンスすべてを囲んでいるオーケストレーション インスタンスは、中断されます。  
+ <span data-ttu-id="60d57-106">すべてのオーケストレーション インスタンスの状態情報が保存され、管理者は、オーケストレーション インスタンスを再開する場合に再開します。</span><span class="sxs-lookup"><span data-stu-id="60d57-106">All of the state information for the orchestration instance is saved, and is reinstated if and when the administrator resumes the orchestration instance.</span></span>  
   
 > [!NOTE]
->  配置することはできません、 **Suspend**をアトミック トランザクション内部の図形です。  
+>  <span data-ttu-id="60d57-107">場合、 **Suspend**同期的に呼び出されたオーケストレーションに図形が存在する (と同様、**呼び出す**図形) 別のオーケストレーションによって、入れ子になったインスタンスすべてを囲んでいるオーケストレーション インスタンスは、中断されます。</span><span class="sxs-lookup"><span data-stu-id="60d57-107">If a **Suspend** shape exists in an orchestration that has been called synchronously (as with the **Call** shape) by another orchestration, the nested instance and all enclosing orchestration instances will be suspended.</span></span>  
   
-### <a name="to-configure-a-suspend-shape"></a>中断図形を構成するには  
+> [!NOTE]
+>  <span data-ttu-id="60d57-108">配置することはできません、 **Suspend**をアトミック トランザクション内部の図形です。</span><span class="sxs-lookup"><span data-stu-id="60d57-108">You cannot place a **Suspend** shape inside an atomic transaction.</span></span>  
   
--   使用することができます、**エラー メッセージ**プロパティをテキストを指定するときにログに記録、 **Suspend**図形が検出されました。 このテキストはリテラル文字列、またはに評価される式が適用される場合があります、 **System.String**です。  
+### <a name="to-configure-a-suspend-shape"></a><span data-ttu-id="60d57-109">中断図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="60d57-109">To configure a Suspend shape</span></span>  
+  
+-   <span data-ttu-id="60d57-110">使用することができます、**エラー メッセージ**プロパティをテキストを指定するときにログに記録、 **Suspend**図形が検出されました。</span><span class="sxs-lookup"><span data-stu-id="60d57-110">You can use the **Error Message** property to specify text that you want to be logged when a **Suspend** shape is encountered.</span></span> <span data-ttu-id="60d57-111">このテキストはリテラル文字列、またはに評価される式が適用される場合があります、 **System.String**です。</span><span class="sxs-lookup"><span data-stu-id="60d57-111">This text may be a literal string, or an expression that evaluates to a **System.String**.</span></span>  
   
     > [!CAUTION]
-    >  リテラル文字列を入力する場合は、二重引用符で囲む必要があります。
+    >  <span data-ttu-id="60d57-112">リテラル文字列を入力する場合は、二重引用符で囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="60d57-112">If you enter a literal string, you must enclose it in quotation marks.</span></span>

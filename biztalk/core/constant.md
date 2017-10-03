@@ -18,10 +18,10 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="constant"></a>定数
-1 つの定数値をスタックにプッシュします。  
+# <a name="constant"></a><span data-ttu-id="33d13-102">定数</span><span class="sxs-lookup"><span data-stu-id="33d13-102">Constant</span></span>
+<span data-ttu-id="33d13-103">1 つの定数値をスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="33d13-103">Pushes a single constant value onto the stack.</span></span>  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a><span data-ttu-id="33d13-104">構文</span><span class="sxs-lookup"><span data-stu-id="33d13-104">Syntax</span></span>  
   
 ```  
   
@@ -30,16 +30,16 @@ ms.lasthandoff: 09/20/2017
 </ic:Operation>  
 ```  
   
-#### <a name="parameters"></a>パラメーター  
- 定数値。  
+#### <a name="parameters"></a><span data-ttu-id="33d13-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="33d13-105">Parameters</span></span>  
+ <span data-ttu-id="33d13-106">定数値。</span><span class="sxs-lookup"><span data-stu-id="33d13-106">Constant value.</span></span>  
   
-## <a name="pushed-value"></a>プッシュされた値  
- 定数値が含まれた文字列。  
+## <a name="pushed-value"></a><span data-ttu-id="33d13-107">プッシュされた値</span><span class="sxs-lookup"><span data-stu-id="33d13-107">Pushed Value</span></span>  
+ <span data-ttu-id="33d13-108">定数値が含まれた文字列。</span><span class="sxs-lookup"><span data-stu-id="33d13-108">String containing the constant value.</span></span>  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a><span data-ttu-id="33d13-109">解説</span><span class="sxs-lookup"><span data-stu-id="33d13-109">Remarks</span></span>  
   
-## <a name="example"></a>例  
- 次のサンプル フィルター式を使用して、**定数**で使用される、値をプッシュする操作、 **Equals**操作が現在のアクティビティ名が"FoodAndDrinksPolicy"であることを確認します。  
+## <a name="example"></a><span data-ttu-id="33d13-110">例</span><span class="sxs-lookup"><span data-stu-id="33d13-110">Example</span></span>  
+ <span data-ttu-id="33d13-111">次のサンプル フィルター式を使用して、**定数**で使用される、値をプッシュする操作、 **Equals**操作が現在のアクティビティ名が"FoodAndDrinksPolicy"であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="33d13-111">The following sample filter expression uses the **Constant** operation to push a value that will then be used in an **Equals** operation to ensure that the current activity name is "FoodAndDrinksPolicy".</span></span>  
   
 ```  
 <ic:Filter>  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
 </ic:Filter>  
 ```  
   
- これは、一般的な使用パターン、**定数**操作します。  
+ <span data-ttu-id="33d13-112">これは、一般的な使用パターン、**定数**操作します。</span><span class="sxs-lookup"><span data-stu-id="33d13-112">This is a common usage pattern for the **Constant** operation.</span></span>  
   
-## <a name="see-also"></a>参照  
- [インターセプタの操作](../core/interceptor-operations.md)
+## <a name="see-also"></a><span data-ttu-id="33d13-113">参照</span><span class="sxs-lookup"><span data-stu-id="33d13-113">See Also</span></span>  
+ [<span data-ttu-id="33d13-114">インターセプタの操作</span><span class="sxs-lookup"><span data-stu-id="33d13-114">Interceptor Operations</span></span>](../core/interceptor-operations.md)

@@ -18,31 +18,31 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="unconfigure-or-remove-biztalk-accelerator-for-swift"></a>構成を解除または for SWIFT BizTalk Accelerator を削除します。
-変更したり、Microsoft の削除[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]を実行して、コンピューターから、**セットアップ ウィザード**またはを使用して、**コントロール パネルの** です。  
+# <a name="unconfigure-or-remove-biztalk-accelerator-for-swift"></a><span data-ttu-id="54932-102">構成を解除または for SWIFT BizTalk Accelerator を削除します。</span><span class="sxs-lookup"><span data-stu-id="54932-102">Unconfigure or remove BizTalk Accelerator for SWIFT</span></span>
+<span data-ttu-id="54932-103">変更したり、Microsoft の削除[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]を実行して、コンピューターから、**セットアップ ウィザード**またはを使用して、**コントロール パネルの** です。</span><span class="sxs-lookup"><span data-stu-id="54932-103">You can change or remove Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] from your computer by running the **Setup Wizard** or by using the **Control Panel**.</span></span>  
 
-## <a name="change-or-update-your-a4swift-installation"></a>変更や、A4SWIFT インストール環境を更新  
+## <a name="change-or-update-your-a4swift-installation"></a><span data-ttu-id="54932-104">変更や、A4SWIFT インストール環境を更新</span><span class="sxs-lookup"><span data-stu-id="54932-104">Change or update your A4SWIFT installation</span></span>  
   
-1.  開く、**コントロール パネルの** 、順にダブルクリック**プログラムのアンインストール**です。  
+1.  <span data-ttu-id="54932-105">開く、**コントロール パネルの** 、順にダブルクリック**プログラムのアンインストール**です。</span><span class="sxs-lookup"><span data-stu-id="54932-105">Open the **Control Panel**, and then double-click **Uninstall a Program**.</span></span>  
   
-2.  Microsoft を右クリックし、プログラムの一覧で**BizTalk Accelerator 用 SWIFT**、し、**変更**です。  
+2.  <span data-ttu-id="54932-106">Microsoft を右クリックし、プログラムの一覧で**BizTalk Accelerator 用 SWIFT**、し、**変更**です。</span><span class="sxs-lookup"><span data-stu-id="54932-106">In the list of programs, right-click Microsoft **BizTalk Accelerator for SWIFT**, and then select **Change**.</span></span>  
   
-3.  **プログラムのメンテナンス** ページで、**変更**、し、**次**です。  
+3.  <span data-ttu-id="54932-107">**プログラムのメンテナンス** ページで、**変更**、し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="54932-107">On the **Program Maintenance** page, select **Modify**, and then select **Next**.</span></span>  
   
-4.  **カスタム インストール** ページで、変更または削除し、選択するコンポーネントを選択して**次**です。  
+4.  <span data-ttu-id="54932-108">**カスタム インストール** ページで、変更または削除し、選択するコンポーネントを選択して**次**です。</span><span class="sxs-lookup"><span data-stu-id="54932-108">On the **Custom Installation** page, select the components you want to change or remove, and then select **Next**.</span></span>  
   
   
-## <a name="remove-a4swift-from-your-computer"></a>A4SWIFT をコンピューターから削除します。  
+## <a name="remove-a4swift-from-your-computer"></a><span data-ttu-id="54932-109">A4SWIFT をコンピューターから削除します。</span><span class="sxs-lookup"><span data-stu-id="54932-109">Remove A4SWIFT from your computer</span></span>  
   
-1.  開く、**コントロール パネルの** 、順にダブルクリック**プログラムのアンインストール**です。  
+1.  <span data-ttu-id="54932-110">開く、**コントロール パネルの** 、順にダブルクリック**プログラムのアンインストール**です。</span><span class="sxs-lookup"><span data-stu-id="54932-110">Open the **Control Panel**, and then double-click **Uninstall a Program**.</span></span>  
   
-2.  Microsoft を右クリックし、プログラムの一覧で**BizTalk Accelerator 用 SWIFT**、し、**アンインストール**です。  
+2.  <span data-ttu-id="54932-111">Microsoft を右クリックし、プログラムの一覧で**BizTalk Accelerator 用 SWIFT**、し、**アンインストール**です。</span><span class="sxs-lookup"><span data-stu-id="54932-111">In the list of programs, right-click Microsoft **BizTalk Accelerator for SWIFT**, and then select **Uninstall**.</span></span>  
   
-3.  **プログラムのメンテナンス** ページで、**削除**、し、**次**です。  
+3.  <span data-ttu-id="54932-112">**プログラムのメンテナンス** ページで、**削除**、し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="54932-112">In the **Program Maintenance** page, select **Remove**, and then select **Next**.</span></span>  
   
-4.  **概要**] ページで、[**アンインストール**です。  
+4.  <span data-ttu-id="54932-113">**概要**] ページで、[**アンインストール**です。</span><span class="sxs-lookup"><span data-stu-id="54932-113">On the **Summary** page, select **Uninstall**.</span></span>  
   
     > [!NOTE]
-    >  プログラムのアンインストール、構成を解除し、その削除[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]です。  
+    >  <span data-ttu-id="54932-114">プログラムのアンインストール、構成を解除し、その削除[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="54932-114">The Uninstall program unconfigures, and then removes [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)].</span></span>  
   
-5.  完了すると、選択**完了**です。  
+5.  <span data-ttu-id="54932-115">完了すると、選択**完了**です。</span><span class="sxs-lookup"><span data-stu-id="54932-115">When completed, select **Finish**.</span></span>  

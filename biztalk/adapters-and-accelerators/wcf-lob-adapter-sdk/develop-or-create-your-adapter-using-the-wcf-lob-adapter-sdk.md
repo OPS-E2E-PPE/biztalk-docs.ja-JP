@@ -18,31 +18,31 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="develop-or-create-your-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して、アダプターの作成や開発
-このセクションの内容には使用してアダプターを開発する開発者向けの情報が含まれています、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 アダプターの開発が完了した後は通常、使用されるか .NET でまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]操作とデータを目的となる対象の基幹業務システムにアクセスする手段としての開発者。  
+# <a name="develop-or-create-your-adapter-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="3ebf0-102">WCF LOB Adapter SDK を使用して、アダプターの作成や開発</span><span class="sxs-lookup"><span data-stu-id="3ebf0-102">Develop or create your adapter using the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="3ebf0-103">このセクションの内容には使用してアダプターを開発する開発者向けの情報が含まれています、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-103">This section contains information for developers who are creating adapters using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="3ebf0-104">アダプターの開発が完了した後は通常、使用されるか .NET でまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]操作とデータを目的となる対象の基幹業務システムにアクセスする手段としての開発者。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-104">Once the adapter has been developed, it is usually consumed by either .NET or [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] developers as a way to access operations and data in a desired target line-of-business system.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="3ebf0-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="3ebf0-105">In This Section</span></span>  
   
--   [WCF LOB Adapter SDK を使用して、開発のベスト プラクティス](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-106">WCF LOB Adapter SDK を使用して、開発のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="3ebf0-106">Development Best Practices using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)  
   
--   [WCF LOB Adapter SDK の WSDL プロキシで使用する名前空間](../../adapters-and-accelerators/wcf-lob-adapter-sdk/use-namespaces-with-the-wsdl-proxy-in-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-107">WCF LOB Adapter SDK の WSDL プロキシで使用する名前空間</span><span class="sxs-lookup"><span data-stu-id="3ebf0-107">Use namespaces with the WSDL-Proxy in the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/use-namespaces-with-the-wsdl-proxy-in-the-wcf-lob-adapter-sdk.md)  
   
--   [WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマを説明します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-108">WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマを説明します。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-108">Describe the WSDL PortType Documentation Schema with the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk.md)  
   
--   [WCF LOB Adapter SDK と、アダプター バージョンを管理します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/manage-adapter-versioning-with-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-109">WCF LOB Adapter SDK と、アダプター バージョンを管理します。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-109">Manage adapter versioning with the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/manage-adapter-versioning-with-the-wcf-lob-adapter-sdk.md)  
   
--   [サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力](../../adapters-and-accelerators/wcf-lob-adapter-sdk/use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-110">サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力</span><span class="sxs-lookup"><span data-stu-id="3ebf0-110">Use a Service Behavior to enter credentials with the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk.md)  
   
--   [WCF LOB Adapter SDK を使用するバインディングのプロパティとしてアダプターの設定を公開します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-111">WCF LOB Adapter SDK を使用するバインディングのプロパティとしてアダプターの設定を公開します。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-111">Expose adapter settings as binding property using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk.md)  
   
--   [参照と WCF LOB Adapter SDK を使用してメタデータを検索](../../adapters-and-accelerators/wcf-lob-adapter-sdk/browse-and-search-metadata-using-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-112">参照と WCF LOB Adapter SDK を使用してメタデータを検索</span><span class="sxs-lookup"><span data-stu-id="3ebf0-112">Browse and Search Metadata using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/browse-and-search-metadata-using-the-wcf-lob-adapter-sdk.md)  
   
--   [トランザクションのサポート](../../core/transaction-support.md)  
+-   [<span data-ttu-id="3ebf0-113">トランザクションのサポート</span><span class="sxs-lookup"><span data-stu-id="3ebf0-113">Transaction Support</span></span>](../../core/transaction-support.md)  
   
--   [WCF LOB Adapter SDK を使用して、IIS でアダプターをホストします。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk.md) 
+-   [<span data-ttu-id="3ebf0-114">WCF LOB Adapter SDK を使用して、IIS でアダプターをホストします。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-114">Host an adapter in IIS using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk.md) 
   
--   [WCF LOB Adapter SDK を使用して作成されたアダプターを使用します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-an-adapter-created-using-the-wcf-lob-adapter-sdk.md)  
+-   [<span data-ttu-id="3ebf0-115">WCF LOB Adapter SDK を使用して作成されたアダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-115">Consume an Adapter created using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-an-adapter-created-using-the-wcf-lob-adapter-sdk.md)  
   
-## <a name="see-also"></a>参照  
- [WCF LOB Adapter SDK を概要します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/get-started-with-the-with-the-wcf-lob-adapter-sdk.md)   
- [WCF アダプターのトラブルシューティング](../../core/troubleshooting-the-wcf-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="3ebf0-116">参照</span><span class="sxs-lookup"><span data-stu-id="3ebf0-116">See Also</span></span>  
+ <span data-ttu-id="3ebf0-117">[WCF LOB Adapter SDK を概要します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/get-started-with-the-with-the-wcf-lob-adapter-sdk.md) </span><span class="sxs-lookup"><span data-stu-id="3ebf0-117">[Get started with the WCF LOB Adapter SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/get-started-with-the-with-the-wcf-lob-adapter-sdk.md) </span></span>  
+ [<span data-ttu-id="3ebf0-118">WCF アダプターのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="3ebf0-118">Troubleshooting the WCF Adapters</span></span>](../../core/troubleshooting-the-wcf-adapters.md)

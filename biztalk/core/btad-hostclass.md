@@ -19,17 +19,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="btadhostclass"></a>BTAD_HostClass
-BTAD_HostClass は、処理が BizTalk 管理データベースとローカル コンピューターのどちらで実行されているかを示します。  
+# <a name="btadhostclass"></a><span data-ttu-id="3092e-102">BTAD_HostClass</span><span class="sxs-lookup"><span data-stu-id="3092e-102">BTAD_HostClass</span></span>
+<span data-ttu-id="3092e-103">BTAD_HostClass は、処理が BizTalk 管理データベースとローカル コンピューターのどちらで実行されているかを示します。</span><span class="sxs-lookup"><span data-stu-id="3092e-103">BTAD_HostClass indicates whether the operation is being performed on the BizTalk Management database or the local computer.</span></span>  
   
-## <a name="remarks"></a>解説  
- BTAD_HostClass で使用できる値を次の表に示します。  
+## <a name="remarks"></a><span data-ttu-id="3092e-104">解説</span><span class="sxs-lookup"><span data-stu-id="3092e-104">Remarks</span></span>  
+ <span data-ttu-id="3092e-105">BTAD_HostClass で使用できる値を次の表に示します。</span><span class="sxs-lookup"><span data-stu-id="3092e-105">The following table describes the possible values for BTAD_HostClass.</span></span>  
   
-|値|Description|  
+|<span data-ttu-id="3092e-106">値</span><span class="sxs-lookup"><span data-stu-id="3092e-106">Value</span></span>|<span data-ttu-id="3092e-107">Description</span><span class="sxs-lookup"><span data-stu-id="3092e-107">Description</span></span>|  
 |-----------|-----------------|  
-|ConfigurationDb|インポート処理が、グループの BizTalk 管理データベースで実行されていることを指定します。|  
-|BizTalkHostInstance|インストールまたはアンインストール処理が、ローカル コンピューターで実行されていることを指定します。|  
+|<span data-ttu-id="3092e-108">ConfigurationDb</span><span class="sxs-lookup"><span data-stu-id="3092e-108">ConfigurationDb</span></span>|<span data-ttu-id="3092e-109">インポート処理が、グループの BizTalk 管理データベースで実行されていることを指定します。</span><span class="sxs-lookup"><span data-stu-id="3092e-109">Specifies that the import operation is being performed on the BizTalk Management database for the group</span></span>|  
+|<span data-ttu-id="3092e-110">BizTalkHostInstance</span><span class="sxs-lookup"><span data-stu-id="3092e-110">BizTalkHostInstance</span></span>|<span data-ttu-id="3092e-111">インストールまたはアンインストール処理が、ローカル コンピューターで実行されていることを指定します。</span><span class="sxs-lookup"><span data-stu-id="3092e-111">Specifies that the install or uninstall operation is being performed on the local computer</span></span>|  
   
-## <a name="see-also"></a>参照  
- [前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md)   
- [環境変数が展開の状態を指定する方法](../core/how-environment-variables-indicate-deployment-state.md)
+## <a name="see-also"></a><span data-ttu-id="3092e-112">参照</span><span class="sxs-lookup"><span data-stu-id="3092e-112">See Also</span></span>  
+ <span data-ttu-id="3092e-113">[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md) </span><span class="sxs-lookup"><span data-stu-id="3092e-113">[Pre- and Post-processing Script Environment Variables](../core/pre-and-post-processing-script-environment-variables.md) </span></span>  
+ [<span data-ttu-id="3092e-114">環境変数が展開の状態を指定する方法</span><span class="sxs-lookup"><span data-stu-id="3092e-114">How Environment Variables Indicate Deployment State</span></span>](../core/how-environment-variables-indicate-deployment-state.md)

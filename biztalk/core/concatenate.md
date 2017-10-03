@@ -18,26 +18,26 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="concatenate"></a>連結
-スタックから上位 2 項目を削除し、その 2 つの項目を連結して、結果をスタックにプッシュします。  
+# <a name="concatenate"></a><span data-ttu-id="3fb71-102">連結</span><span class="sxs-lookup"><span data-stu-id="3fb71-102">Concatenate</span></span>
+<span data-ttu-id="3fb71-103">スタックから上位 2 項目を削除し、その 2 つの項目を連結して、結果をスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="3fb71-103">Removes the top two items from the stack, concatenates them, and then pushes the result onto the stack.</span></span>  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a><span data-ttu-id="3fb71-104">構文</span><span class="sxs-lookup"><span data-stu-id="3fb71-104">Syntax</span></span>  
   
 ```  
   
 <ic:Operation Name="Concatenate" />  
 ```  
   
-#### <a name="parameters"></a>パラメーター  
- スタックの上位 2 項目。  
+#### <a name="parameters"></a><span data-ttu-id="3fb71-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3fb71-105">Parameters</span></span>  
+ <span data-ttu-id="3fb71-106">スタックの上位 2 項目。</span><span class="sxs-lookup"><span data-stu-id="3fb71-106">Top two items on the stack.</span></span>  
   
-## <a name="pushed-value"></a>プッシュされた値  
- 連結操作の結果の文字列。  
+## <a name="pushed-value"></a><span data-ttu-id="3fb71-107">プッシュされた値</span><span class="sxs-lookup"><span data-stu-id="3fb71-107">Pushed Value</span></span>  
+ <span data-ttu-id="3fb71-108">連結操作の結果の文字列。</span><span class="sxs-lookup"><span data-stu-id="3fb71-108">String result of the concatenation operation.</span></span>  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a><span data-ttu-id="3fb71-109">解説</span><span class="sxs-lookup"><span data-stu-id="3fb71-109">Remarks</span></span>  
   
-## <a name="example"></a>例  
- 次に示す更新された式の例では、定数文字列 "Start:" が "EventTime" コンテキスト プロパティの値と連結され、データベース列 NewOrderCreateTime に保存されます。  
+## <a name="example"></a><span data-ttu-id="3fb71-110">例</span><span class="sxs-lookup"><span data-stu-id="3fb71-110">Example</span></span>  
+ <span data-ttu-id="3fb71-111">次に示す更新された式の例では、定数文字列 "Start:" が "EventTime" コンテキスト プロパティの値と連結され、データベース列 NewOrderCreateTime に保存されます。</span><span class="sxs-lookup"><span data-stu-id="3fb71-111">In the following example update expression, the constant string "Start:" is concatenated with the value of the "EventTime" context property and persisted to the database column NewOrderCreateTime.</span></span>  
   
 ```  
 <ic:Update DataItemName="NewOrderCreateTime" Type="NVARCHAR">  
@@ -53,5 +53,5 @@ ms.lasthandoff: 09/20/2017
 </ic:Update>  
 ```  
   
-## <a name="see-also"></a>参照  
- [インターセプタの操作](../core/interceptor-operations.md)
+## <a name="see-also"></a><span data-ttu-id="3fb71-112">参照</span><span class="sxs-lookup"><span data-stu-id="3fb71-112">See Also</span></span>  
+ [<span data-ttu-id="3fb71-113">インターセプタの操作</span><span class="sxs-lookup"><span data-stu-id="3fb71-113">Interceptor Operations</span></span>](../core/interceptor-operations.md)

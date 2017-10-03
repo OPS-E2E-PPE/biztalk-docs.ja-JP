@@ -50,18 +50,18 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="basic-and-complex-mapping-operations"></a>基本のマッピング操作と複雑なマッピング操作
-BizTalk マッパーは、単純な親子ツリー型の操作から、ループ レコードや階層を含む詳細で複雑な操作まで、さまざまなマッピング シナリオに対するソリューションを提供します。 マッピング シナリオの複雑さは、基本設定とビジネスのニーズによって異なります。: XML Schema definition (XSD) 言語では、かなり柔軟に構造化された形式を定義します。 ほぼすべてのマッピング シナリオは、2 つのカテゴリ (基本的なマッピングと複雑なマッピング) のいずれかに分類されます。  
+# <a name="basic-and-complex-mapping-operations"></a><span data-ttu-id="2bb8b-102">基本のマッピング操作と複雑なマッピング操作</span><span class="sxs-lookup"><span data-stu-id="2bb8b-102">Basic and Complex Mapping Operations</span></span>
+<span data-ttu-id="2bb8b-103">BizTalk マッパーは、単純な親子ツリー型の操作から、ループ レコードや階層を含む詳細で複雑な操作まで、さまざまなマッピング シナリオに対するソリューションを提供します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-103">BizTalk Mapper provides solutions for a variety of mapping scenarios ranging from simple parent-child tree-type operations to detailed, complex operations involving looping records and hierarchies.</span></span> <span data-ttu-id="2bb8b-104">マッピング シナリオの複雑さは、基本設定とビジネスのニーズによって異なります。: XML Schema definition (XSD) 言語では、かなり柔軟に構造化された形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-104">The complexity of a mapping scenario depends on your preferences and business needs—XML Schema definition (XSD) language gives you considerable flexibility in defining structured formats.</span></span> <span data-ttu-id="2bb8b-105">ほぼすべてのマッピング シナリオは、2 つのカテゴリ (基本的なマッピングと複雑なマッピング) のいずれかに分類されます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-105">Almost all mapping scenarios fall into one of two categories: basic mapping and complex mapping.</span></span>  
   
-## <a name="basic-mapping"></a>基本的なマッピング  
- 基本的なマッピングとは、最も一般的なマッピングのことをいいます。 基本的なマップでは、入力項目と出力項目が 1 対 1 の関係になります。 入力項目は、対応する 1 つの出力項目にのみマップされます。 さまざまな種類の変換および翻訳は複数の使用などの基本的なマッピングでは可能ですが*functoid*をコピーする値を操作する functoid をカスケードするには、基になるシナリオは比較的と単純です。 基本的なマッピング操作では、2 つの異なる親レコード (一度だけ発生する) に属するフィールドを、送信先スキーマの単一の親レコードに属するフィールドへマッピングすることもあります。  
+## <a name="basic-mapping"></a><span data-ttu-id="2bb8b-106">基本的なマッピング</span><span class="sxs-lookup"><span data-stu-id="2bb8b-106">Basic Mapping</span></span>  
+ <span data-ttu-id="2bb8b-107">基本的なマッピングとは、最も一般的なマッピングのことをいいます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-107">Basic mapping is the most common type of mapping you can create.</span></span> <span data-ttu-id="2bb8b-108">基本的なマップでは、入力項目と出力項目が 1 対 1 の関係になります。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-108">In a basic map, input and output items have a one-to-one relationship.</span></span> <span data-ttu-id="2bb8b-109">入力項目は、対応する 1 つの出力項目にのみマップされます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-109">An input item maps to one and only one output item.</span></span> <span data-ttu-id="2bb8b-110">さまざまな種類の変換および翻訳は複数の使用などの基本的なマッピングでは可能ですが*functoid*をコピーする値を操作する functoid をカスケードするには、基になるシナリオは比較的と単純です。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-110">Although many types of transformations and translations are possible with basic mapping, such as using multiple *functoids* and cascading functoids to manipulate the value being copied, the underlying scenario remains relatively simple.</span></span> <span data-ttu-id="2bb8b-111">基本的なマッピング操作では、2 つの異なる親レコード (一度だけ発生する) に属するフィールドを、送信先スキーマの単一の親レコードに属するフィールドへマッピングすることもあります。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-111">Basic mapping operations also include mapping fields from two different parent records (occurring only once) to fields under a single parent record in the destination schema.</span></span>  
   
-## <a name="complex-mapping"></a>複雑なマッピング  
- 複雑なマッピングは、1 つのインスタンスに対して複数回発生するレコードやフィールド、**レコード**または**フィールド要素**スキーマ ツリー内のノードです。 このようなノードがその**Max Occurs**あります。 1 つ以上の対応する要素、インスタンス メッセージを示すプロパティ 1 (1) よりも大きい値に設定します。 BizTalk マップが可変のマッピングには、この型を使用する場合 (とも呼ばれる*ループ*)、Extensible Stylesheet Language (XSL) スタイル シート コンパイラは、経由で生成するために反復処理する適切なループ パスを決定できる必要があります、必要な出力します。  
+## <a name="complex-mapping"></a><span data-ttu-id="2bb8b-112">複雑なマッピング</span><span class="sxs-lookup"><span data-stu-id="2bb8b-112">Complex Mapping</span></span>  
+ <span data-ttu-id="2bb8b-113">複雑なマッピングは、1 つのインスタンスに対して複数回発生するレコードやフィールド、**レコード**または**フィールド要素**スキーマ ツリー内のノードです。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-113">Complex mapping involves records or fields that occur multiple times for a single instance of the **Record** or **Field Element** node in the schema tree.</span></span> <span data-ttu-id="2bb8b-114">このようなノードがその**Max Occurs**あります。 1 つ以上の対応する要素、インスタンス メッセージを示すプロパティ 1 (1) よりも大きい値に設定します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-114">Such nodes have their **Max Occurs** property set to a value greater than one (1), indicating there may be more than one corresponding element in an instance message.</span></span> <span data-ttu-id="2bb8b-115">BizTalk マップが可変のマッピングには、この型を使用する場合 (とも呼ばれる*ループ*)、Extensible Stylesheet Language (XSL) スタイル シート コンパイラは、経由で生成するために反復処理する適切なループ パスを決定できる必要があります、必要な出力します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-115">When a BizTalk map uses this type of variable count mapping (also known as *looping*), the Extensible Stylesheet Language (XSL) style sheet compiler must be able to determine the proper loop path over which to iterate to produce the required output.</span></span>  
   
- 通常、送信元スキーマのループ レコードのフィールドを、送信先スキーマのループ レコードのフィールドにリンクできます。 入力インスタンス メッセージ内にある要素の数によって、出力インスタンス メッセージ内に作成される要素の数が決まります。 送信元スキーマおよび送信先スキーマを基にした、次の XSD フラグメントを考えてみます。  
+ <span data-ttu-id="2bb8b-116">通常、送信元スキーマのループ レコードのフィールドを、送信先スキーマのループ レコードのフィールドにリンクできます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-116">In general, you can link a field in a looping record in the source schema to a field in a looping record in the destination schema.</span></span> <span data-ttu-id="2bb8b-117">入力インスタンス メッセージ内にある要素の数によって、出力インスタンス メッセージ内に作成される要素の数が決まります。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-117">The number of corresponding elements in an input instance message determines the number of elements created in the output instance message.</span></span> <span data-ttu-id="2bb8b-118">送信元スキーマおよび送信先スキーマを基にした、次の XSD フラグメントを考えてみます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-118">Consider the following XSD fragments from example source and destination schemas.</span></span>  
   
-### <a name="source-schema-fragment"></a>送信元スキーマのフラグメント  
+### <a name="source-schema-fragment"></a><span data-ttu-id="2bb8b-119">送信元スキーマのフラグメント</span><span class="sxs-lookup"><span data-stu-id="2bb8b-119">Source Schema Fragment</span></span>  
   
 ```  
 <xs:element minOccurs="1" maxOccurs="5"  
@@ -76,7 +76,7 @@ BizTalk マッパーは、単純な親子ツリー型の操作から、ループ
   
 ```  
   
-### <a name="destination-schema-fragment"></a>送信先スキーマのフラグメント  
+### <a name="destination-schema-fragment"></a><span data-ttu-id="2bb8b-120">送信先スキーマのフラグメント</span><span class="sxs-lookup"><span data-stu-id="2bb8b-120">Destination Schema Fragment</span></span>  
   
 ```  
 <xs:element minOccurs="0" maxOccurs="unbounded"  
@@ -91,15 +91,15 @@ BizTalk マッパーは、単純な親子ツリー型の操作から、ループ
   
 ```  
   
- これらのフラグメントを説明します。  
+ <span data-ttu-id="2bb8b-121">これらのフラグメントを説明します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-121">In these fragments:</span></span>  
   
--   **SrcLoopingRecord**、**レコード**入力インスタンス メッセージ内のノードが 5 回に 1 つから発生することができます。 子も含まれています。**フィールド要素**ノード**Field1** (文字列) と**Field2** (整数)、親の各インスタンスに対して一度だけ発生します。  
+-   <span data-ttu-id="2bb8b-122">**SrcLoopingRecord**、**レコード**入力インスタンス メッセージ内のノードが 5 回に 1 つから発生することができます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-122">**SrcLoopingRecord**, a **Record** node in input instance messages, can occur from one to five times.</span></span> <span data-ttu-id="2bb8b-123">子も含まれています。**フィールド要素**ノード**Field1** (文字列) と**Field2** (整数)、親の各インスタンスに対して一度だけ発生します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-123">It also contains the child **Field Element** nodes **Field1** (a string) and **Field2** (an integer) that occur once for each instance of their parent.</span></span>  
   
--   **DstLoopingRecord**、**レコード**出力インスタンス メッセージ内のノードは、ゼロ (0) または複数の境界のない時間に発生することができます。 子も含まれています。**フィールド要素**ノード**FieldA** (文字列) と**FieldB** (整数)、親の各インスタンスに対して一度だけ発生します。  
+-   <span data-ttu-id="2bb8b-124">**DstLoopingRecord**、**レコード**出力インスタンス メッセージ内のノードは、ゼロ (0) または複数の境界のない時間に発生することができます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-124">**DstLoopingRecord**, a **Record** node in output instance messages, can occur zero (0) or more times, unbounded.</span></span> <span data-ttu-id="2bb8b-125">子も含まれています。**フィールド要素**ノード**FieldA** (文字列) と**FieldB** (整数)、親の各インスタンスに対して一度だけ発生します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-125">It also contains the child **Field Element** nodes **FieldA** (a string) and **FieldB** (an integer) that occur once for each instance of their parent.</span></span>  
   
- Field1 と FieldA、および Field2 と FieldB がマップされ、次に示す入力インスタンス メッセージのフラグメントがこれらをマップすると仮定した場合、出力インスタンス メッセージから次のフラグメントが生成されます。  
+ <span data-ttu-id="2bb8b-126">Field1 と FieldA、および Field2 と FieldB がマップされ、次に示す入力インスタンス メッセージのフラグメントがこれらをマップすると仮定した場合、出力インスタンス メッセージから次のフラグメントが生成されます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-126">Assuming that Field1 is mapped to FieldA and Field2 is mapped to FieldB, and that the following fragment from an input instance message has processed those mappings, the following fragment from an output instance message would be produced.</span></span>  
   
-### <a name="input-instance-message-fragment"></a>入力インスタンス メッセージのフラグメント  
+### <a name="input-instance-message-fragment"></a><span data-ttu-id="2bb8b-127">入力インスタンス メッセージのフラグメント</span><span class="sxs-lookup"><span data-stu-id="2bb8b-127">Input Instance Message Fragment</span></span>  
   
 ```  
 <SrcLoopingRecord>  
@@ -116,7 +116,7 @@ BizTalk マッパーは、単純な親子ツリー型の操作から、ループ
 </SrcLoopingRecord>  
 ```  
   
-### <a name="output-instance-message-fragment"></a>出力インスタンス メッセージのフラグメント  
+### <a name="output-instance-message-fragment"></a><span data-ttu-id="2bb8b-128">出力インスタンス メッセージのフラグメント</span><span class="sxs-lookup"><span data-stu-id="2bb8b-128">Output Instance Message Fragment</span></span>  
   
 ```  
 <DstLoopingRecord>  
@@ -133,12 +133,12 @@ BizTalk マッパーは、単純な親子ツリー型の操作から、ループ
 </DstLoopingRecord>  
 ```  
   
- 出現回数、 **SrcLoopingRecord** (3) の入力インスタンス メッセージ内の要素の出現回数を決定する、 **DstLoopingRecord**出力インスタンス メッセージ内の要素。  
+ <span data-ttu-id="2bb8b-129">出現回数、 **SrcLoopingRecord** (3) の入力インスタンス メッセージ内の要素の出現回数を決定する、 **DstLoopingRecord**出力インスタンス メッセージ内の要素。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-129">The number of occurrences of the **SrcLoopingRecord** element in the input instance message (3) determines the number of occurrences of the **DstLoopingRecord** element in the output instance message.</span></span>  
   
- BizTalk マッパーでサポートされていないマッピングでは、複数のループ パスが使用されます。 このようなマッピングでは、送信元スキーマの 2 つ以上のループ レコードに属するフィールドから、送信先スキーマの単一のルーピング レコードに属するフィールドへのマップ操作が行われます。 これは、問題、出力インスタンス メッセージで生成される要素の数を決定する効果的な方法はありません。 複数のループ パスを使用すると、送信先ノードが複数の送信元ループ パスを持つことを示す、マップのコンパイル警告が発生します。 ただし、これは単なる警告であり、最初の送信元ループ パスの繰り返し回数が使用されて、出力インスタンス メッセージに生成される要素の数が決定されます。 ループの動作を使用して明示的に制御を行う、**ループ**functoid です。  
+ <span data-ttu-id="2bb8b-130">BizTalk マッパーでサポートされていないマッピングでは、複数のループ パスが使用されます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-130">A type of mapping not supported by BizTalk Mapper is the use of multiple loop paths.</span></span> <span data-ttu-id="2bb8b-131">このようなマッピングでは、送信元スキーマの 2 つ以上のループ レコードに属するフィールドから、送信先スキーマの単一のルーピング レコードに属するフィールドへのマップ操作が行われます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-131">This type of mapping involves fields from two or more looping records in the source schema being mapped to fields within a single looping record in the destination schema.</span></span> <span data-ttu-id="2bb8b-132">これは、問題、出力インスタンス メッセージで生成される要素の数を決定する効果的な方法はありません。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-132">This presents a problem—there is no effective way to determine the number of elements to produce in the output instance message.</span></span> <span data-ttu-id="2bb8b-133">複数のループ パスを使用すると、送信先ノードが複数の送信元ループ パスを持つことを示す、マップのコンパイル警告が発生します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-133">Multiple loop paths result in a map compilation warning indicating that the destination node has multiple source loop paths.</span></span> <span data-ttu-id="2bb8b-134">ただし、これは単なる警告であり、最初の送信元ループ パスの繰り返し回数が使用されて、出力インスタンス メッセージに生成される要素の数が決定されます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-134">However, this is only a warning, and the number of iterations in the first source loop path is used to determine the number of elements produced in the output instance message.</span></span> <span data-ttu-id="2bb8b-135">ループの動作を使用して明示的に制御を行う、**ループ**functoid です。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-135">You can take explicit control of looping behavior by using the **Looping** functoid.</span></span>  
   
- Microsoft [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] では、テーブルドリブン ループという新しい種類のループを導入しています。 1 つ以上の定数、送信元スキーマからのリンク、または Functoid を組み合わせた入力インスタンス メッセージのデータに基づいて、出力インスタンス メッセージを使用する必要がある場合、テーブルドリブン ループは便利です。 この場合、出力インスタンス メッセージは、異なる定数を組み合わせた入力インスタンス メッセージの単一のレコードのデータに基づいて (または、入力インスタンス メッセージの複数のレコードのデータに基づいて)、複数のレコードを持つことができます。 詳細については、テーブルドリブン ループを使用して、**テーブル ループ**と**テーブル抽出**functoid を参照してください[テーブル ループ functoid とテーブル抽出 Functoid](../core/table-looping-and-table-extractor-functoids.md)です。  
+ <span data-ttu-id="2bb8b-136">Microsoft [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] では、テーブルドリブン ループという新しい種類のループを導入しています。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-136">Microsoft [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] introduced a new kind of looping called table-driven looping.</span></span> <span data-ttu-id="2bb8b-137">1 つ以上の定数、送信元スキーマからのリンク、または Functoid を組み合わせた入力インスタンス メッセージのデータに基づいて、出力インスタンス メッセージを使用する必要がある場合、テーブルドリブン ループは便利です。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-137">Table-driven looping is useful when your output instance message needs to be based on data from the input instance message, combined with one or more constants, links from the source schema, or functoids.</span></span> <span data-ttu-id="2bb8b-138">この場合、出力インスタンス メッセージは、異なる定数を組み合わせた入力インスタンス メッセージの単一のレコードのデータに基づいて (または、入力インスタンス メッセージの複数のレコードのデータに基づいて)、複数のレコードを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-138">In such cases, the output instance message can have multiple records based on data from a single record in the input instance message that is combined with different constants, or based on data coming from multiple records in the input instance message.</span></span> <span data-ttu-id="2bb8b-139">詳細については、テーブルドリブン ループを使用して、**テーブル ループ**と**テーブル抽出**functoid を参照してください[テーブル ループ functoid とテーブル抽出 Functoid](../core/table-looping-and-table-extractor-functoids.md)です。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-139">For more information about table-driven looping using the **Table Looping** and **Table Extractor** functoids, see [Table Looping and Table Extractor Functoids](../core/table-looping-and-table-extractor-functoids.md).</span></span>  
   
-## <a name="see-also"></a>参照  
- [マップ](../core/maps.md)   
- [BizTalk マッパーを使用してマップを作成します。](../core/creating-maps-using-biztalk-mapper.md)
+## <a name="see-also"></a><span data-ttu-id="2bb8b-140">参照</span><span class="sxs-lookup"><span data-stu-id="2bb8b-140">See Also</span></span>  
+ <span data-ttu-id="2bb8b-141">[マップ](../core/maps.md) </span><span class="sxs-lookup"><span data-stu-id="2bb8b-141">[Maps](../core/maps.md) </span></span>  
+ [<span data-ttu-id="2bb8b-142">BizTalk マッパーを使用してマップを作成します。</span><span class="sxs-lookup"><span data-stu-id="2bb8b-142">Creating Maps Using BizTalk Mapper</span></span>](../core/creating-maps-using-biztalk-mapper.md)

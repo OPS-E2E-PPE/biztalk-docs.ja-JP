@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---the-output-xml-type-blob-is-stored-in-the-following-file-ltfile---0gt-error-1"></a>エラー - XML Type Blob が、次のファイルに格納されている出力 (&lt;file:---{0}&gt;)。 エラー: {1}
-**エラー コード**  
+# <a name="error---the-output-xml-type-blob-is-stored-in-the-following-file-ltfile---0gt-error-1"></a><span data-ttu-id="de77e-103">エラー - XML Type Blob が、次のファイルに格納されている出力 (&lt;file:---{0}&gt;)。</span><span class="sxs-lookup"><span data-stu-id="de77e-103">Error - The output XML Type Blob is stored in the following file (&lt;file:---{0}&gt;).</span></span> <span data-ttu-id="de77e-104">エラー: {1}</span><span class="sxs-lookup"><span data-stu-id="de77e-104">Error: {1}</span></span>
+<span data-ttu-id="de77e-105">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="de77e-105">**Error Code**</span></span>  
   
- btm1061  
+ <span data-ttu-id="de77e-106">btm1061</span><span class="sxs-lookup"><span data-stu-id="de77e-106">btm1061</span></span>  
   
- **説明**  
+ <span data-ttu-id="de77e-107">**説明**</span><span class="sxs-lookup"><span data-stu-id="de77e-107">**Explanation**</span></span>  
   
- これは単なる情報メッセージです。 出力ファイルを表示するには、リンクをクリックします。  
+ <span data-ttu-id="de77e-108">これは単なる情報メッセージです。</span><span class="sxs-lookup"><span data-stu-id="de77e-108">This is just an information message.</span></span> <span data-ttu-id="de77e-109">出力ファイルを表示するには、リンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="de77e-109">Click on the link to view the output file.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="de77e-110">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="de77e-110">**User Action**</span></span>  
   
- [なし] :
+ <span data-ttu-id="de77e-111">[なし] :</span><span class="sxs-lookup"><span data-stu-id="de77e-111">None.</span></span>

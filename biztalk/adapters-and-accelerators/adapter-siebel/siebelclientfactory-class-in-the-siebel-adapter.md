@@ -22,8 +22,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="siebelclientfactory-class-in-the-siebel-adapter"></a>Siebel アダプターの SiebelClientFactory クラス
-ADO.NET クライアントにアクセスする、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]ジェネリック ADO.NET クラスとインターフェイスを使用します。 この機能を有効にする、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]継承、 **System.Data.Common.DbProviderFactory**クラスです。 クライアント プログラムは、次のようにクライアントを使用します。  
+# <a name="siebelclientfactory-class-in-the-siebel-adapter"></a><span data-ttu-id="3f865-102">Siebel アダプターの SiebelClientFactory クラス</span><span class="sxs-lookup"><span data-stu-id="3f865-102">SiebelClientFactory class in the Siebel adapter</span></span>
+<span data-ttu-id="3f865-103">ADO.NET クライアントにアクセスする、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]ジェネリック ADO.NET クラスとインターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="3f865-103">An ADO.NET client accesses the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] using generic ADO.NET classes and interfaces.</span></span> <span data-ttu-id="3f865-104">この機能を有効にする、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]継承、 **System.Data.Common.DbProviderFactory**クラスです。</span><span class="sxs-lookup"><span data-stu-id="3f865-104">To enable this feature, the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] inherits the **System.Data.Common.DbProviderFactory** class.</span></span> <span data-ttu-id="3f865-105">クライアント プログラムは、次のようにクライアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="3f865-105">The client program consumes the client as follows:</span></span>  
   
 ```  
   
@@ -31,25 +31,25 @@ DbProviderFactory factory = DbProviderFactories.GetFactory("Microsoft.Data.Siebe
 DbConnection connection = factory.CreateConnection();  
 ```  
   
- その他の方法は次のとおりです。  
+ <span data-ttu-id="3f865-106">その他の方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3f865-106">An alternative approach is as follows:</span></span>  
   
 ```  
 SiebelClientFactory factory = SiebelClientFactory.Instance;  
 DbConnection connection = factory.CreateConnection();  
 ```  
   
- SiebelClientFactory は Microsoft.Data.SiebelClient 名前空間に存在します。  
+ <span data-ttu-id="3f865-107">SiebelClientFactory は Microsoft.Data.SiebelClient 名前空間に存在します。</span><span class="sxs-lookup"><span data-stu-id="3f865-107">SiebelClientFactory exists in the namespace Microsoft.Data.SiebelClient.</span></span>  
   
-## <a name="supported-members"></a>サポートされているメンバー  
- **SiebelClientFactory**拡張**System.Data.CommonDbProviderFactory**です。  次の表の説明、メンバーを**SiebelClientFactory**をオーバーライドします。  
+## <a name="supported-members"></a><span data-ttu-id="3f865-108">サポートされているメンバー</span><span class="sxs-lookup"><span data-stu-id="3f865-108">Supported Members</span></span>  
+ <span data-ttu-id="3f865-109">**SiebelClientFactory**拡張**System.Data.CommonDbProviderFactory**です。</span><span class="sxs-lookup"><span data-stu-id="3f865-109">**SiebelClientFactory** extends **System.Data.CommonDbProviderFactory**.</span></span>  <span data-ttu-id="3f865-110">次の表の説明、メンバーを**SiebelClientFactory**をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="3f865-110">The following table provides a description of the members that **SiebelClientFactory** overrides.</span></span>  
   
-|名前|Description|  
+|<span data-ttu-id="3f865-111">名前</span><span class="sxs-lookup"><span data-stu-id="3f865-111">Name</span></span>|<span data-ttu-id="3f865-112">Description</span><span class="sxs-lookup"><span data-stu-id="3f865-112">Description</span></span>|  
 |----------|-----------------|  
-|**インスタンス**|これは、メンバー変数です。  SiebelClientFactory のシングルトン インスタンスを提供します。|  
-|**CreateCommand()**|SiebelCommand のインスタンスを作成します。|  
-|**CreateConnection()**|SiebelConnection のインスタンスを作成します。|  
-|**CreateConnectionStringBuilder()**|SiebelConnectionStringBuilder のインスタンスを作成します。|  
-|**CreateParameter()**|SiebelParameter のインスタンスを作成します。|  
+|<span data-ttu-id="3f865-113">**インスタンス**</span><span class="sxs-lookup"><span data-stu-id="3f865-113">**Instance**</span></span>|<span data-ttu-id="3f865-114">これは、メンバー変数です。</span><span class="sxs-lookup"><span data-stu-id="3f865-114">This is a member variable.</span></span>  <span data-ttu-id="3f865-115">SiebelClientFactory のシングルトン インスタンスを提供します。</span><span class="sxs-lookup"><span data-stu-id="3f865-115">It provides a singleton instance of SiebelClientFactory.</span></span>|  
+|<span data-ttu-id="3f865-116">**CreateCommand()**</span><span class="sxs-lookup"><span data-stu-id="3f865-116">**CreateCommand()**</span></span>|<span data-ttu-id="3f865-117">SiebelCommand のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3f865-117">Creates an instance of SiebelCommand.</span></span>|  
+|<span data-ttu-id="3f865-118">**CreateConnection()**</span><span class="sxs-lookup"><span data-stu-id="3f865-118">**CreateConnection()**</span></span>|<span data-ttu-id="3f865-119">SiebelConnection のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3f865-119">Creates an instance of SiebelConnection.</span></span>|  
+|<span data-ttu-id="3f865-120">**CreateConnectionStringBuilder()**</span><span class="sxs-lookup"><span data-stu-id="3f865-120">**CreateConnectionStringBuilder()**</span></span>|<span data-ttu-id="3f865-121">SiebelConnectionStringBuilder のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3f865-121">Creates an instance of SiebelConnectionStringBuilder.</span></span>|  
+|<span data-ttu-id="3f865-122">**CreateParameter()**</span><span class="sxs-lookup"><span data-stu-id="3f865-122">**CreateParameter()**</span></span>|<span data-ttu-id="3f865-123">SiebelParameter のインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3f865-123">Creates an instance of SiebelParameter.</span></span>|  
   
-## <a name="see-also"></a>参照  
- [Siebel アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="3f865-124">参照</span><span class="sxs-lookup"><span data-stu-id="3f865-124">See Also</span></span>  
+ [<span data-ttu-id="3f865-125">Siebel アダプターと ADO.NET インターフェイスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="3f865-125">Extend ADO.NET Interfaces with the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)

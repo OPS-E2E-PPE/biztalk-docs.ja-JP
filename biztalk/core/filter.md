@@ -18,20 +18,20 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="filter"></a>[フィルター]
-`Filter` 要素には、`Expression` または `true` に評価される `false` が含まれています。これに基づいて、イベントは処理またはスキップされます。  
+# <a name="filter"></a><span data-ttu-id="99f65-102">[フィルター]</span><span class="sxs-lookup"><span data-stu-id="99f65-102">Filter</span></span>
+<span data-ttu-id="99f65-103">`Filter` 要素には、`Expression` または `true` に評価される `false` が含まれています。これに基づいて、イベントは処理またはスキップされます。</span><span class="sxs-lookup"><span data-stu-id="99f65-103">The `Filter` element contains an `Expression` that evaluates to `true` or `false` and determines when an event should be processed or skipped.</span></span>  
   
-## <a name="format"></a>Format  
+## <a name="format"></a><span data-ttu-id="99f65-104">Format</span><span class="sxs-lookup"><span data-stu-id="99f65-104">Format</span></span>  
   
 ```  
 <ic:Filter>  
 </ic:Filter>  
 ```  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a><span data-ttu-id="99f65-105">解説</span><span class="sxs-lookup"><span data-stu-id="99f65-105">Remarks</span></span>  
   
-## <a name="example"></a>例  
- 次の例は、イベントに関連付けられたワークフローのユーザー キーが "DocumentUrl" と等しい場合に `true` に評価されるフィルタを定義します。  
+## <a name="example"></a><span data-ttu-id="99f65-106">例</span><span class="sxs-lookup"><span data-stu-id="99f65-106">Example</span></span>  
+ <span data-ttu-id="99f65-107">次の例は、イベントに関連付けられたワークフローのユーザー キーが "DocumentUrl" と等しい場合に `true` に評価されるフィルタを定義します。</span><span class="sxs-lookup"><span data-stu-id="99f65-107">The following example defines a filter that evaluates to `true` when the user key for the workflow associated with the event equals "DocumentUrl":</span></span>  
   
 ```  
 <ic:Filter>  
@@ -45,5 +45,5 @@ ms.lasthandoff: 09/20/2017
 </ic:Filter>  
 ```  
   
-## <a name="see-also"></a>参照  
- [インターセプタ OnEvent 要素](../core/interceptor-onevent-element.md)
+## <a name="see-also"></a><span data-ttu-id="99f65-108">参照</span><span class="sxs-lookup"><span data-stu-id="99f65-108">See Also</span></span>  
+ [<span data-ttu-id="99f65-109">インターセプタ OnEvent 要素</span><span class="sxs-lookup"><span data-stu-id="99f65-109">Interceptor OnEvent Element</span></span>](../core/interceptor-onevent-element.md)

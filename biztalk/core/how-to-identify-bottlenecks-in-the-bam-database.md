@@ -18,13 +18,13 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-identify-bottlenecks-in-the-bam-database"></a>BAM データベースのボトルネックを特定する方法
-BAM データベースのボトルネックを特定するには、次の手順を実行します。  
+# <a name="how-to-identify-bottlenecks-in-the-bam-database"></a><span data-ttu-id="edcc1-102">BAM データベースのボトルネックを特定する方法</span><span class="sxs-lookup"><span data-stu-id="edcc1-102">How to Identify Bottlenecks in the BAM Database</span></span>
+<span data-ttu-id="edcc1-103">BAM データベースのボトルネックを特定するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="edcc1-103">To identify bottlenecks in the BAM database, perform the following steps:</span></span>  
   
-1.  アクティブ インスタンス数が増えていないことを確認します。  
+1.  <span data-ttu-id="edcc1-104">アクティブ インスタンス数が増えていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="edcc1-104">Ensure that the Active Instances count is not climbing.</span></span>  
   
-2.  SQL エージェント サービスが実行されていることを確認します。  
+2.  <span data-ttu-id="edcc1-105">SQL エージェント サービスが実行されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="edcc1-105">Ensure that the SQL-Agent Service is running.</span></span>  
   
-3.  OLAP 分析が構成されている場合は、BAM_AN_ ジョブが定期的に実行されることを確認します。  
+3.  <span data-ttu-id="edcc1-106">OLAP 分析が構成されている場合は、BAM_AN_ ジョブが定期的に実行されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="edcc1-106">If OLAP Analysis is configured ensure that the BAM_AN_ job is running at periodic intervals.</span></span>  
   
-4.  BAM_DM_ (データ管理) ジョブが定期的に実行されるようにスケジュール済みであることを確認します。
+4.  <span data-ttu-id="edcc1-107">BAM_DM_ (データ管理) ジョブが定期的に実行されるようにスケジュール済みであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="edcc1-107">Ensure that BAM_DM_ (Data Maintenance) job is scheduled to run at periodic intervals.</span></span>
