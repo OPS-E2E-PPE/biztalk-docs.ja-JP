@@ -1,0 +1,1 @@
+SQL Server 2014 または SQL Server 2012 SP1

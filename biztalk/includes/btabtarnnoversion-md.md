@@ -1,0 +1,1 @@
+BizTalk Accelerator 用 RosettaNet

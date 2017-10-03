@@ -1,0 +1,1 @@
+Oracle E-Business アダプター
