@@ -1,0 +1,67 @@
+---
+title: "どのように Namespace サンプルは、動作を追加 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: c76a90a9-5898-43b3-98af-ff546dd97153
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 212364030353001cae0589d4d7562641db4b77e6
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-the-add-namespace-sample-works"></a>どのように Namespace サンプルは、動作を追加
+1、2、および 4 番目のテストを使用して、**追加 Namespace** NamespaceSampleReceivePipeline パイプラインにコンポーネントがあります。 これは、ルート ノードで、次のよう、名前空間のないドキュメントを入力します。  
+  
+```  
+<CanonicalOrder OrderID="OrderID_0" OrderDate="OrderDate_1" Status="Status_2">  
+```  
+  
+ 次の表は、プロパティ値の設定、**追加 Namespace**コンポーネントです。  
+  
+|プロパティ|型|値|  
+|--------------|----------|-----------|  
+|ExtractionNodeXPath|静的|(空)|  
+|NamespaceBase|静的|http://schemas.microsoft.biztalk.esb.test.com/test|  
+|NamespacePrefix|静的|esbTest|  
+|[区切り記号]|静的|/|  
+|Xpath|動的|/CanonicalOrder/@OrderID&#124;/CanonicalOrder/@OrderDate|  
+  
+ 表に示すプロパティの設定により、コンポーネントは 2 つの XPath クエリを実行することによって、XML ドキュメントを検索する/CanonicalOrder/@OrderIDと/CanonicalOrder/@OrderDate(指定された 2 つのクエリ、 **Xpath** 「パイプ」で区切られたプロパティ文字)。 これらのクエリの値を返す、 **OrderID**と**OrderDate**属性; ドキュメントのこの例では、ルート ノードの 2 つの値は、"OrderID_0"および"OrderDate_1"です。  
+  
+ コンポーネントでは、新しいルート名前空間を構築するためにこれらの値とその他のプロパティの値を使用します。 組み合わされて、 **NamespaceBase**、 **NamespacePrefix**、**区切り**と、次の形式で 2 つの XPath クエリからの値。  
+  
+```  
+xmlns:{NamespacePrefix}="{NamespaceBase}{Separator}{XPaths[1]}{Seperator}  
+                         {XPaths[2]}{Separator}...{XPaths[n]}"  
+```  
+  
+ 次のように、新しい名前空間が生成されます。  
+  
+```  
+xmlns:esbTest="http://schemas.microsoft.biztalk.esb.test.com/test  
+               /OrderID_0/OrderDate_1"  
+```  
+  
+ 処理した後にそのため、更新されたドキュメント、 **NamespaceSampleReceivePipeline**パイプラインは、次。  
+  
+```  
+<esbTest:CanonicalOrder xmlns:esbTest=  
+    "http://schemas.microsoft.biztalk.esb.test.com/test/OrderID_0  
+    /OrderDate_1" OrderID="OrderID_0" OrderDate="OrderDate_1"   
+    Status="Status_2">  
+```  
+  
+## <a name="using-the-extractionnodexpath-property"></a>ExtractionNodeXPath プロパティを使用します。  
+ 既定では、**追加 Namespace**名前空間とプレフィックスの情報を追加するときに、コンポーネントがメッセージ内の XML ドキュメントのルート要素を使用します。 設定することができます (エンベロープの特定のシナリオで、または受信ドキュメントの一部だけに関連性がある場合に便利です)、メッセージの本文として XML ドキュメントのサブセットのみを使用する場合、 **ExtractionNodeXPath** を強制的にプロパティ**Namespace を追加**結果メッセージとして使用するための指定した要素をシークするコンポーネントです。 たとえば、受信 CanonicalOrder メッセージを 1 つだけ持つことがわかっている場合**OrderDetails** 、そこに含まれるこのメッセージのコンシューマーを関連する要素を設定できます、 **ExtractionNodeXPath**へのパスを指定するプロパティ、 **OrderDetails**要素。 前に説明したパススルー テストに追加を使用して抽出でこのプロセスの例を見ることができます。  
+  
+> [!NOTE]
+>  **ExtractionNodeXPath**プロパティは、1 つだけの要素を返す XPath をする必要があります。 コンポーネントには、結果は要素ではない場合、または XPath クエリには複数の要素が返された場合に、例外が発生します。

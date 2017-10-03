@@ -1,0 +1,1 @@
+Microsoft BizTalk Adapter 用 Siebel eBusiness Applications
