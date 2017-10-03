@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="success---validate-instance-generated-xml-output"></a>成功 - 検証インスタンスには、XML 出力が生成されます。
-**説明**  
+# <a name="success---validate-instance-generated-xml-output"></a><span data-ttu-id="4c66c-102">成功 - 検証インスタンスには、XML 出力が生成されます。</span><span class="sxs-lookup"><span data-stu-id="4c66c-102">Success - Validate Instance Generated XML Output</span></span>
+<span data-ttu-id="4c66c-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="4c66c-103">**Explanation**</span></span>  
   
- インスタンスの検証で、XML 出力ファイルが生成されました。 このファイルには、XML と等価な、XML 以外の入力インスタンス メッセージが含まれています。  
+ <span data-ttu-id="4c66c-104">インスタンスの検証で、XML 出力ファイルが生成されました。</span><span class="sxs-lookup"><span data-stu-id="4c66c-104">The instance validation generated the indicated XML output file.</span></span> <span data-ttu-id="4c66c-105">このファイルには、XML と等価な、XML 以外の入力インスタンス メッセージが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4c66c-105">This file contains the XML equivalent of your non-XML input instance message.</span></span>  
   
- **ユーザーの操作**  
+ <span data-ttu-id="4c66c-106">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="4c66c-106">**User Action**</span></span>  
   
- 適宜、生成された XML 出力ファイルを調査します。
+ <span data-ttu-id="4c66c-107">適宜、生成された XML 出力ファイルを調査します。</span><span class="sxs-lookup"><span data-stu-id="4c66c-107">As appropriate, inspect the generated XML output file.</span></span>

@@ -18,29 +18,29 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10509"></a>シングル サインオン: イベント 10509
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10509"></a><span data-ttu-id="5d74c-102">シングル サインオン: イベント 10509</span><span class="sxs-lookup"><span data-stu-id="5d74c-102">Single Sign-On: Event 10509</span></span>
+## <a name="details"></a><span data-ttu-id="5d74c-103">詳細</span><span class="sxs-lookup"><span data-stu-id="5d74c-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10509|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|N\A|  
-|シンボル名|SSO_INFO_SERVICE_REMOVE_FAILED|  
-|メッセージ テキスト|SSO サービスを削除できませんでした。%r<br /><br /> エラー コード: %1|  
+|<span data-ttu-id="5d74c-104">製品名</span><span class="sxs-lookup"><span data-stu-id="5d74c-104">Product Name</span></span>|<span data-ttu-id="5d74c-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="5d74c-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="5d74c-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="5d74c-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="5d74c-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="5d74c-107">Event ID</span></span>|<span data-ttu-id="5d74c-108">10509</span><span class="sxs-lookup"><span data-stu-id="5d74c-108">10509</span></span>|  
+|<span data-ttu-id="5d74c-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="5d74c-109">Event Source</span></span>|<span data-ttu-id="5d74c-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="5d74c-110">ENTSSO</span></span>|  
+|<span data-ttu-id="5d74c-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="5d74c-111">Component</span></span>|<span data-ttu-id="5d74c-112">N\A</span><span class="sxs-lookup"><span data-stu-id="5d74c-112">N\A</span></span>|  
+|<span data-ttu-id="5d74c-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="5d74c-113">Symbolic Name</span></span>|<span data-ttu-id="5d74c-114">SSO_INFO_SERVICE_REMOVE_FAILED</span><span class="sxs-lookup"><span data-stu-id="5d74c-114">SSO_INFO_SERVICE_REMOVE_FAILED</span></span>|  
+|<span data-ttu-id="5d74c-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="5d74c-115">Message Text</span></span>|<span data-ttu-id="5d74c-116">SSO サービスを削除できませんでした。%r</span><span class="sxs-lookup"><span data-stu-id="5d74c-116">Failed to remove the SSO service.%r</span></span><br /><br /> <span data-ttu-id="5d74c-117">エラー コード: %1</span><span class="sxs-lookup"><span data-stu-id="5d74c-117">Error Code: %1</span></span>|  
   
-## <a name="explanation"></a>説明  
- このイベントは、ENTSSO サービスのアンインストールが失敗したことを示します。 このイベントは、エンタープライズ シングル サインオンの手動アンインストールの間にのみ発生します。  
+## <a name="explanation"></a><span data-ttu-id="5d74c-118">説明</span><span class="sxs-lookup"><span data-stu-id="5d74c-118">Explanation</span></span>  
+ <span data-ttu-id="5d74c-119">このイベントは、ENTSSO サービスのアンインストールが失敗したことを示します。</span><span class="sxs-lookup"><span data-stu-id="5d74c-119">This event indicates that the ENTSSO Service failed to uninstall.</span></span> <span data-ttu-id="5d74c-120">このイベントは、エンタープライズ シングル サインオンの手動アンインストールの間にのみ発生します。</span><span class="sxs-lookup"><span data-stu-id="5d74c-120">This event can only occur during a manual uninstallation of Enterprise Single Sign-On.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- このイベントを解決するには、次の手順を実行します。  
+## <a name="user-action"></a><span data-ttu-id="5d74c-121">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="5d74c-121">User Action</span></span>  
+ <span data-ttu-id="5d74c-122">このイベントを解決するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="5d74c-122">To resolve this event, do the following:</span></span>  
   
--   ENTSSO または他のサービスからの関連するエラーについては、システムおよびアプリケーションのイベント ログを確認します。  
+-   <span data-ttu-id="5d74c-123">ENTSSO または他のサービスからの関連するエラーについては、システムおよびアプリケーションのイベント ログを確認します。</span><span class="sxs-lookup"><span data-stu-id="5d74c-123">Check both the Application and System event logs for related errors from ENTSSO or other services.</span></span>  
   
- 詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+ <span data-ttu-id="5d74c-124">詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください: </span><span class="sxs-lookup"><span data-stu-id="5d74c-124">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
   
--   [SSO のインストール](../core/installing-sso.md)  
+-   [<span data-ttu-id="5d74c-125">SSO のインストール</span><span class="sxs-lookup"><span data-stu-id="5d74c-125">Installing SSO</span></span>](../core/installing-sso.md)  
   
--   [エンタープライズ シングル サインオンを実装します。](../core/implementing-enterprise-single-sign-on.md)
+-   [<span data-ttu-id="5d74c-126">エンタープライズ シングル サインオンを実装します。</span><span class="sxs-lookup"><span data-stu-id="5d74c-126">Implementing Enterprise Single Sign-On</span></span>](../core/implementing-enterprise-single-sign-on.md)

@@ -18,7 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="sap-adapter"></a>SAP アダプター
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、SAP アダプターをサポートしなくなりました。 同じ機能を実現するには、[!INCLUDE[adaptersap](../includes/adaptersap-md.md)] を使用することをお勧めします。  
+# <a name="sap-adapter"></a><span data-ttu-id="097f8-102">SAP アダプター</span><span class="sxs-lookup"><span data-stu-id="097f8-102">SAP Adapter</span></span>
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="097f8-103"> は、SAP アダプターをサポートしなくなりました。</span><span class="sxs-lookup"><span data-stu-id="097f8-103"> no longer supports the SAP Adapter.</span></span> <span data-ttu-id="097f8-104">同じ機能を実現するには、[!INCLUDE[adaptersap](../includes/adaptersap-md.md)] を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="097f8-104">We recommend you use [!INCLUDE[adaptersap](../includes/adaptersap-md.md)] to achieve the same functionality.</span></span>  
   
- 詳細については、次を参照してください。 [Microsoft BizTalk Adapter Pack ヘルプ](http://go.microsoft.com/fwlink/?LinkId=188969)(http://go.microsoft.com/fwlink/?LinkId=188969)。
+ <span data-ttu-id="097f8-105">詳細については、次を参照してください。 [Microsoft BizTalk Adapter Pack ヘルプ](http://go.microsoft.com/fwlink/?LinkId=188969)(http://go.microsoft.com/fwlink/?LinkId=188969)。</span><span class="sxs-lookup"><span data-stu-id="097f8-105">For more information, see [Microsoft BizTalk Adapter Pack Help](http://go.microsoft.com/fwlink/?LinkId=188969) (http://go.microsoft.com/fwlink/?LinkId=188969).</span></span>

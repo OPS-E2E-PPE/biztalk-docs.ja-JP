@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10605"></a>シングル サインオン: イベント 10605
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10605"></a><span data-ttu-id="28995-102">シングル サインオン: イベント 10605</span><span class="sxs-lookup"><span data-stu-id="28995-102">Single Sign-On: Event 10605</span></span>
+## <a name="details"></a><span data-ttu-id="28995-103">詳細</span><span class="sxs-lookup"><span data-stu-id="28995-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10605|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_DTC_IMPORT|  
-|メッセージ テキスト|DTC トランザクションをインポートできませんでした。 MSDTC がリモート操作用に正しく構成されていることを確認してください。 Details.%r のマニュアルを参照してください。<br /><br /> エラー コード: %1|  
+|<span data-ttu-id="28995-104">製品名</span><span class="sxs-lookup"><span data-stu-id="28995-104">Product Name</span></span>|<span data-ttu-id="28995-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="28995-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="28995-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="28995-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="28995-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="28995-107">Event ID</span></span>|<span data-ttu-id="28995-108">10605</span><span class="sxs-lookup"><span data-stu-id="28995-108">10605</span></span>|  
+|<span data-ttu-id="28995-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="28995-109">Event Source</span></span>|<span data-ttu-id="28995-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="28995-110">ENTSSO</span></span>|  
+|<span data-ttu-id="28995-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="28995-111">Component</span></span>|<span data-ttu-id="28995-112">なし</span><span class="sxs-lookup"><span data-stu-id="28995-112">N/A</span></span>|  
+|<span data-ttu-id="28995-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="28995-113">Symbolic Name</span></span>|<span data-ttu-id="28995-114">SSO_ERROR_DTC_IMPORT</span><span class="sxs-lookup"><span data-stu-id="28995-114">SSO_ERROR_DTC_IMPORT</span></span>|  
+|<span data-ttu-id="28995-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="28995-115">Message Text</span></span>|<span data-ttu-id="28995-116">DTC トランザクションをインポートできませんでした。</span><span class="sxs-lookup"><span data-stu-id="28995-116">Could not import a DTC transaction.</span></span> <span data-ttu-id="28995-117">MSDTC がリモート操作用に正しく構成されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="28995-117">Please check that MSDTC is configured correctly for remote operation.</span></span> <span data-ttu-id="28995-118">Details.%r のマニュアルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="28995-118">See documentation for details.%r</span></span><br /><br /> <span data-ttu-id="28995-119">エラー コード: %1</span><span class="sxs-lookup"><span data-stu-id="28995-119">Error Code: %1</span></span>|  
   
-## <a name="explanation"></a>説明  
- Microsoft 分散トランザクション コーディネーター (MSDTC) に問題があります。  
+## <a name="explanation"></a><span data-ttu-id="28995-120">説明</span><span class="sxs-lookup"><span data-stu-id="28995-120">Explanation</span></span>  
+ <span data-ttu-id="28995-121">Microsoft 分散トランザクション コーディネーター (MSDTC) に問題があります。</span><span class="sxs-lookup"><span data-stu-id="28995-121">There is a problem with the Microsoft Distributed Transaction Coordinator (MSDTC).</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- MSDTC の問題に関するヘルプを参照するには、次を参照してください。 [MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。
+## <a name="user-action"></a><span data-ttu-id="28995-122">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="28995-122">User Action</span></span>  
+ <span data-ttu-id="28995-123">MSDTC の問題に関するヘルプを参照するには、次を参照してください。 [MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。</span><span class="sxs-lookup"><span data-stu-id="28995-123">For help on MSDTC issues, see [Troubleshooting Problems with MSDTC](../core/troubleshooting-problems-with-msdtc.md).</span></span>

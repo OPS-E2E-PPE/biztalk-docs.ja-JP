@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10782"></a>シングル サインオン: イベント 10782
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10782"></a><span data-ttu-id="cb6c9-102">シングル サインオン: イベント 10782</span><span class="sxs-lookup"><span data-stu-id="cb6c9-102">Single Sign-On: Event 10782</span></span>
+## <a name="details"></a><span data-ttu-id="cb6c9-103">詳細</span><span class="sxs-lookup"><span data-stu-id="cb6c9-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10782|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_INVALID_FLAGS|  
-|メッセージ テキスト|指定されたフラグは有効でないか、互換性がありません。|  
+|<span data-ttu-id="cb6c9-104">製品名</span><span class="sxs-lookup"><span data-stu-id="cb6c9-104">Product Name</span></span>|<span data-ttu-id="cb6c9-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="cb6c9-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="cb6c9-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="cb6c9-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="cb6c9-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="cb6c9-107">Event ID</span></span>|<span data-ttu-id="cb6c9-108">10782</span><span class="sxs-lookup"><span data-stu-id="cb6c9-108">10782</span></span>|  
+|<span data-ttu-id="cb6c9-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="cb6c9-109">Event Source</span></span>|<span data-ttu-id="cb6c9-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="cb6c9-110">ENTSSO</span></span>|  
+|<span data-ttu-id="cb6c9-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="cb6c9-111">Component</span></span>|<span data-ttu-id="cb6c9-112">なし</span><span class="sxs-lookup"><span data-stu-id="cb6c9-112">N/A</span></span>|  
+|<span data-ttu-id="cb6c9-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="cb6c9-113">Symbolic Name</span></span>|<span data-ttu-id="cb6c9-114">ENTSSO_E_INVALID_FLAGS</span><span class="sxs-lookup"><span data-stu-id="cb6c9-114">ENTSSO_E_INVALID_FLAGS</span></span>|  
+|<span data-ttu-id="cb6c9-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="cb6c9-115">Message Text</span></span>|<span data-ttu-id="cb6c9-116">指定されたフラグは有効でないか、互換性がありません。</span><span class="sxs-lookup"><span data-stu-id="cb6c9-116">The specified flags are not valid or are incompatible with each other.</span></span>|  
   
-## <a name="explanation"></a>説明  
- 指定されたフラグは有効でないか、互換性がありません。  
+## <a name="explanation"></a><span data-ttu-id="cb6c9-117">説明</span><span class="sxs-lookup"><span data-stu-id="cb6c9-117">Explanation</span></span>  
+ <span data-ttu-id="cb6c9-118">指定されたフラグは有効でないか、互換性がありません。</span><span class="sxs-lookup"><span data-stu-id="cb6c9-118">The specified flags are not valid or are incompatible with each other.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- イベント ログを調べて、このアプリケーションの有効なフラグと無効なフラグ、および関連するエラーを確認します。
+## <a name="user-action"></a><span data-ttu-id="cb6c9-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="cb6c9-119">User Action</span></span>  
+ <span data-ttu-id="cb6c9-120">イベント ログを調べて、このアプリケーションの有効なフラグと無効なフラグ、および関連するエラーを確認します。</span><span class="sxs-lookup"><span data-stu-id="cb6c9-120">Check the event log to see this application’s valid and invalid flags, and for related errors.</span></span>

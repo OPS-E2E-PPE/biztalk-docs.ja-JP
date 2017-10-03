@@ -19,9 +19,9 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="planning-and-architecture"></a>計画および設計
-このセクションでは、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne と共に使用するために、JD Edwards EnterpriseOne を設定する場合に発生する可能性がある計画およびアーキテクチャの問題について説明します。  
+# <a name="planning-and-architecture"></a><span data-ttu-id="9d92f-102">計画および設計</span><span class="sxs-lookup"><span data-stu-id="9d92f-102">Planning and Architecture</span></span>
+<span data-ttu-id="9d92f-103">このセクションでは、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne と共に使用するために、JD Edwards EnterpriseOne を設定する場合に発生する可能性がある計画およびアーキテクチャの問題について説明します。</span><span class="sxs-lookup"><span data-stu-id="9d92f-103">This section discusses planning and architecture issues you might encounter while setting up JD Edwards EnterpriseOne for use with Microsoft BizTalk Adapter for JD Edwards EnterpriseOne.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="9d92f-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="9d92f-104">In This Section</span></span>  
   
--   [アーキテクチャ](../core/architecture-of-biztalk-adapter-for-jd-edwards-enterpriseone.md)
+-   [<span data-ttu-id="9d92f-105">アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="9d92f-105">Architecture</span></span>](../core/architecture-of-biztalk-adapter-for-jd-edwards-enterpriseone.md)

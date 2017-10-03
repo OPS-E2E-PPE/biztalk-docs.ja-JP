@@ -21,18 +21,18 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="querying-activity-relationships"></a>アクティビティ リレーションシップに対するクエリの実行
-アクティビティ リレーションシップ情報は、アクティビティごとに動的に生成される SQL ビューで閲覧できます。 クエリでのビューの名前は次のようになります。  
+# <a name="querying-activity-relationships"></a><span data-ttu-id="3f126-102">アクティビティ リレーションシップに対するクエリの実行</span><span class="sxs-lookup"><span data-stu-id="3f126-102">Querying Activity Relationships</span></span>
+<span data-ttu-id="3f126-103">アクティビティ リレーションシップ情報は、アクティビティごとに動的に生成される SQL ビューで閲覧できます。</span><span class="sxs-lookup"><span data-stu-id="3f126-103">The activity relationship information is available in a dynamically created SQL view for each activity.</span></span> <span data-ttu-id="3f126-104">クエリでのビューの名前は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="3f126-104">The name of this view is</span></span>  
   
- **bam _\<**  *アクティビティ* **> _AllRelationships**  
+ <span data-ttu-id="3f126-105">**bam _\<**  *アクティビティ* **> _AllRelationships**</span><span class="sxs-lookup"><span data-stu-id="3f126-105">**bam_\<** *Activity* **>_AllRelationships**</span></span>  
   
- ここで\<*アクティビティ*>、BAM 定義 XML 内の Activity 要素の Name 属性は、Excel 用 BAM アドインを使用して入力されたアクティビティ名と同じです。  
+ <span data-ttu-id="3f126-106">ここで\<*アクティビティ*>、BAM 定義 XML 内の Activity 要素の Name 属性は、Excel 用 BAM アドインを使用して入力されたアクティビティ名と同じです。</span><span class="sxs-lookup"><span data-stu-id="3f126-106">Where \<*Activity*> is the Name attribute of the Activity element in the BAM definition XML, which is the same as the Activity name entered using the BAM Add-in for Excel.</span></span>  
   
- リレーションシップ イベントは、特定のアクティビティのコンテキスト内で発生します。 たとえば、発注と出荷間のリレーションシップは、発注アクティビティのコンテキストで発生する場合、リレーションシップ レコードに表示されます**bam_PurchaseOrder_AllRelationships**ではなく**bam_Shipment_AllRelationships**です。 詳細については、次を参照してください。[アクティビティ リレーションシップ](../core/activity-relationships.md)です。  
+ <span data-ttu-id="3f126-107">リレーションシップ イベントは、特定のアクティビティのコンテキスト内で発生します。</span><span class="sxs-lookup"><span data-stu-id="3f126-107">The relationship events occur in the context of a specific activity.</span></span> <span data-ttu-id="3f126-108">たとえば、発注と出荷間のリレーションシップは、発注アクティビティのコンテキストで発生する場合、リレーションシップ レコードに表示されます**bam_PurchaseOrder_AllRelationships**ではなく**bam_Shipment_AllRelationships**です。</span><span class="sxs-lookup"><span data-stu-id="3f126-108">For example, if the relationship between Purchase Order and Shipment occurs in the context of the Purchase Order activity, the Relationship record will show up in **bam_PurchaseOrder_AllRelationships**, but not in **bam_Shipment_AllRelationships**.</span></span> <span data-ttu-id="3f126-109">詳細については、次を参照してください。[アクティビティ リレーションシップ](../core/activity-relationships.md)です。</span><span class="sxs-lookup"><span data-stu-id="3f126-109">For more information, see [Activity Relationships](../core/activity-relationships.md).</span></span>  
   
- 購入に関連するアクティビティの順序、両方のビューをクエリする必要がありますすべてを検索する**bam_PurchaseOrder_AllRelationships**のすべてのビューだけでなく**bam _\<***OtherActivity* **> _AllRelationships**ここで、 \< *OtherActivity*> 同じ BAM ビューで、アクティビティです。  
+ <span data-ttu-id="3f126-110">購入に関連するアクティビティの順序、両方のビューをクエリする必要がありますすべてを検索する**bam_PurchaseOrder_AllRelationships**のすべてのビューだけでなく**bam _\<***OtherActivity* **> _AllRelationships**ここで、 \< *OtherActivity*> 同じ BAM ビューで、アクティビティです。</span><span class="sxs-lookup"><span data-stu-id="3f126-110">To find all the related activities to a purchase order you need to query both the view **bam_PurchaseOrder_AllRelationships** as well as all views **bam_\<***OtherActivity***>_AllRelationships**, where \<*OtherActivity*> is the activity in the same BAM view.</span></span>  
   
- リレーションシップ レコードは、アクティビティ インスタンスの一部および」の説明に従って、インスタンス データとの同期を管理、[アクティビティ データのストレージ](../core/activity-data-storage.md)です。  
+ <span data-ttu-id="3f126-111">リレーションシップ レコードは、アクティビティ インスタンスの一部および」の説明に従って、インスタンス データとの同期を管理、[アクティビティ データのストレージ](../core/activity-data-storage.md)です。</span><span class="sxs-lookup"><span data-stu-id="3f126-111">The relationship records are part of the activity instance and they are maintained in synchronization with the instance data as described in [Activity Data Storage](../core/activity-data-storage.md).</span></span>  
   
-## <a name="see-also"></a>参照  
- [BAM データを照会します。](../core/querying-bam-data.md)
+## <a name="see-also"></a><span data-ttu-id="3f126-112">参照</span><span class="sxs-lookup"><span data-stu-id="3f126-112">See Also</span></span>  
+ [<span data-ttu-id="3f126-113">BAM データを照会します。</span><span class="sxs-lookup"><span data-stu-id="3f126-113">Querying BAM Data</span></span>](../core/querying-bam-data.md)

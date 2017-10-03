@@ -22,21 +22,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="plan-and-architect-your-biztalk-server-solution"></a>計画し、BizTalk Server ソリューションの設計
-このセクションでは、作業環境のプランニングに役立つ BizTalk Server の詳細について説明します。  
+# <a name="plan-and-architect-your-biztalk-server-solution"></a><span data-ttu-id="1e3da-102">計画し、BizTalk Server ソリューションの設計</span><span class="sxs-lookup"><span data-stu-id="1e3da-102">Plan and architect your BizTalk Server solution</span></span>
+<span data-ttu-id="1e3da-103">このセクションでは、作業環境のプランニングに役立つ BizTalk Server の詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="1e3da-103">This section provides information about BizTalk Server to help you plan your environment.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="1e3da-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="1e3da-104">In This Section</span></span>  
   
--   [BizTalk Server アーキテクチャ](../core/biztalk-server-architecture.md)  
+-   [<span data-ttu-id="1e3da-105">BizTalk Server アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="1e3da-105">BizTalk Server Architecture</span></span>](../core/biztalk-server-architecture.md)  
   
--   [パフォーマンスと容量の計画](../core/performance-and-capacity-planning.md)  
+-   [<span data-ttu-id="1e3da-106">パフォーマンスと容量の計画</span><span class="sxs-lookup"><span data-stu-id="1e3da-106">Performance and Capacity Planning</span></span>](../core/performance-and-capacity-planning.md)  
   
--   [高可用性の計画](../core/planning-for-high-availability3.md)  
+-   [<span data-ttu-id="1e3da-107">高可用性の計画</span><span class="sxs-lookup"><span data-stu-id="1e3da-107">Planning for High Availability</span></span>](../core/planning-for-high-availability3.md)  
   
--   [セキュリティの計画](../core/planning-for-security.md)  
+-   [<span data-ttu-id="1e3da-108">セキュリティの計画</span><span class="sxs-lookup"><span data-stu-id="1e3da-108">Planning for Security</span></span>](../core/planning-for-security.md)  
   
--   [ビジネス ソリューションのシナリオ](../core/scenarios-for-business-solutions.md)  
+-   [<span data-ttu-id="1e3da-109">ビジネス ソリューションのシナリオ</span><span class="sxs-lookup"><span data-stu-id="1e3da-109">Scenarios for Business Solutions</span></span>](../core/scenarios-for-business-solutions.md)  
   
--   [BizTalk Server がサイズの大きいメッセージを処理する方法](../core/how-biztalk-server-processes-large-messages.md)  
+-   [<span data-ttu-id="1e3da-110">BizTalk Server がサイズの大きいメッセージを処理する方法</span><span class="sxs-lookup"><span data-stu-id="1e3da-110">How BizTalk Server Processes Large Messages</span></span>](../core/how-biztalk-server-processes-large-messages.md)  
   
--   [BizTalk Server のシステム アーキテクチャの設計](../core/designing-the-system-architectures-for-biztalk-server.md)
+-   [<span data-ttu-id="1e3da-111">BizTalk Server のシステム アーキテクチャの設計</span><span class="sxs-lookup"><span data-stu-id="1e3da-111">Designing the System Architectures for BizTalk Server</span></span>](../core/designing-the-system-architectures-for-biztalk-server.md)

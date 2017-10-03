@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="secure-and-protect-your-biztalk-messages"></a>セキュリティで保護し、BizTalk メッセージを保護します。
-Microsoft® BizTalk® Server には、イントラネット内およびインターネット経由の両方で、ドキュメントを送受信するための標準のゲートウェイが用意されています。 可能な基幹業務の特性により、BizTalk Server との間に送信されたメッセージがこれらのメッセージおよび送信中に、BizTalk Server プロセスとストアの中にはその両方を含まれる情報を保護するための対策を検討してください。します。 ここでは、BizTalk Server のセキュリティ機能と、これらの機能を使用してデータと環境をセキュリティで保護する方法について説明します。  
+# <a name="secure-and-protect-your-biztalk-messages"></a><span data-ttu-id="c63d9-102">セキュリティで保護し、BizTalk メッセージを保護します。</span><span class="sxs-lookup"><span data-stu-id="c63d9-102">Secure and protect your BizTalk messages</span></span>
+<span data-ttu-id="c63d9-103">Microsoft® BizTalk® Server には、イントラネット内およびインターネット経由の両方で、ドキュメントを送受信するための標準のゲートウェイが用意されています。</span><span class="sxs-lookup"><span data-stu-id="c63d9-103">Microsoft® BizTalk® Server provides a standard gateway for sending and receiving documents both within an intranet and through the Internet.</span></span> <span data-ttu-id="c63d9-104">可能な基幹業務の特性により、BizTalk Server との間に送信されたメッセージがこれらのメッセージおよび送信中に、BizTalk Server プロセスとストアの中にはその両方を含まれる情報を保護するための対策を検討してください。します。</span><span class="sxs-lookup"><span data-stu-id="c63d9-104">Due to the possible business-critical nature of the messages sent to and from BizTalk Server, it is important to consider measures for securing these messages and the information they contain both as they are in transit and while BizTalk Server processes and stores them.</span></span> <span data-ttu-id="c63d9-105">ここでは、BizTalk Server のセキュリティ機能と、これらの機能を使用してデータと環境をセキュリティで保護する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="c63d9-105">This section provides information about the BizTalk Server security features, and how you can use them to secure your data and environment.</span></span>  
   
- BizTalk Server の展開のセキュリティ保護に関する詳細については、次を参照してください。 [BizTalk Server のシステム アーキテクチャの設計](../core/designing-the-system-architectures-for-biztalk-server.md)です。  
+ <span data-ttu-id="c63d9-106">BizTalk Server の展開のセキュリティ保護に関する詳細については、次を参照してください。 [BizTalk Server のシステム アーキテクチャの設計](../core/designing-the-system-architectures-for-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="c63d9-106">For more information about securing a BizTalk Server deployment, see [Designing the System Architectures for BizTalk Server](../core/designing-the-system-architectures-for-biztalk-server.md).</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="c63d9-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="c63d9-107">In This Section</span></span>  
   
--   [BizTalk Server のセキュリティ機能](../core/security-features-in-biztalk-server.md)  
+-   [<span data-ttu-id="c63d9-108">BizTalk Server のセキュリティ機能</span><span class="sxs-lookup"><span data-stu-id="c63d9-108">Security Features in BizTalk Server</span></span>](../core/security-features-in-biztalk-server.md)  
   
--   [メッセージ セキュリティの計画](../core/planning-message-security.md)  
+-   [<span data-ttu-id="c63d9-109">メッセージ セキュリティの計画</span><span class="sxs-lookup"><span data-stu-id="c63d9-109">Planning Message Security</span></span>](../core/planning-message-security.md)  
   
--   [アクセス制御とデータのセキュリティ](../core/access-control-and-data-security.md)
+-   [<span data-ttu-id="c63d9-110">アクセス制御とデータのセキュリティ</span><span class="sxs-lookup"><span data-stu-id="c63d9-110">Access Control and Data Security</span></span>](../core/access-control-and-data-security.md)

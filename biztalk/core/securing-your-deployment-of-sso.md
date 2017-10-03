@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="securing-your-deployment-of-sso"></a>SSO 展開のセキュリティで保護します。
-このセクションでは、エンタープライズ シングル サインオンの展開をセキュリティで保護するための一般的なシナリオを紹介します。 SQL Server で実行する操作の詳細な手順については、SQL Server のドキュメントを参照してください。  
+# <a name="securing-your-deployment-of-sso"></a><span data-ttu-id="a5804-102">SSO 展開のセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="a5804-102">Securing Your Deployment of SSO</span></span>
+<span data-ttu-id="a5804-103">このセクションでは、エンタープライズ シングル サインオンの展開をセキュリティで保護するための一般的なシナリオを紹介します。</span><span class="sxs-lookup"><span data-stu-id="a5804-103">This section outlines a typical scenario for secure deployment of Enterprise Single Sign-On.</span></span> <span data-ttu-id="a5804-104">SQL Server で実行する操作の詳細な手順については、SQL Server のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5804-104">For detailed procedures on the actions to take in SQL Server, see your SQL Server documentation.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="a5804-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="a5804-105">In This Section</span></span>  
   
--   [SSO 展開の概要](../core/sso-deployment-overview.md)  
+-   [<span data-ttu-id="a5804-106">SSO 展開の概要</span><span class="sxs-lookup"><span data-stu-id="a5804-106">SSO Deployment Overview</span></span>](../core/sso-deployment-overview.md)  
   
--   [展開プロセス](../core/deployment-process.md)
+-   [<span data-ttu-id="a5804-107">展開プロセス</span><span class="sxs-lookup"><span data-stu-id="a5804-107">Deployment Process</span></span>](../core/deployment-process.md)

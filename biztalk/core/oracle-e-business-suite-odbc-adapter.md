@@ -21,7 +21,7 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="oracle-e-business-suite-odbc-adapter"></a>Oracle E-Business Suite ODBC アダプタ
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は現在、Oracle E-Business Suite ODBC アダプターをサポートしていません。 同じ機能を実現するには、Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] を使用することをお勧めします。  
+# <a name="oracle-e-business-suite-odbc-adapter"></a><span data-ttu-id="38d2c-102">Oracle E-Business Suite ODBC アダプタ</span><span class="sxs-lookup"><span data-stu-id="38d2c-102">Oracle E-Business Suite ODBC Adapter</span></span>
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="38d2c-103"> は現在、Oracle E-Business Suite ODBC アダプターをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="38d2c-103"> no longer supports the Oracle E-Business Suite ODBC Adapter.</span></span> <span data-ttu-id="38d2c-104">同じ機能を実現するには、Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="38d2c-104">We recommend you use Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] to achieve the same functionality.</span></span>  
   
- 詳細については、次を参照してください。 [Microsoft BizTalk Adapter Pack ヘルプ](http://go.microsoft.com/fwlink/?LinkId=188969)(http://go.microsoft.com/fwlink/?LinkId=188969)。
+ <span data-ttu-id="38d2c-105">詳細については、次を参照してください。 [Microsoft BizTalk Adapter Pack ヘルプ](http://go.microsoft.com/fwlink/?LinkId=188969)(http://go.microsoft.com/fwlink/?LinkId=188969)。</span><span class="sxs-lookup"><span data-stu-id="38d2c-105">For more information, see [Microsoft BizTalk Adapter Pack Help](http://go.microsoft.com/fwlink/?LinkId=188969) (http://go.microsoft.com/fwlink/?LinkId=188969).</span></span>

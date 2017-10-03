@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-4-create-a-sample-xml-begindoc"></a>手順 4: サンプル XML BeginDoc を作成します。
-以下のコードを XML ファイルに保存します。 テストで、この例のステップを使用し、コード例で選択されている J.D. Edwards OneWorld オブジェクトの選択 [jde://csales/b4200310] を入力フォルダーと、指定した出力フォルダー (EndDocOut ポートにバインドされているフォルダー) を含んでいるにこれを削除することができます。  
+# <a name="step-4-create-a-sample-xml-begindoc"></a><span data-ttu-id="c18d7-102">手順 4: サンプル XML BeginDoc を作成します。</span><span class="sxs-lookup"><span data-stu-id="c18d7-102">Step 4: Create a Sample XML BeginDoc</span></span>
+<span data-ttu-id="c18d7-103">以下のコードを XML ファイルに保存します。</span><span class="sxs-lookup"><span data-stu-id="c18d7-103">Save the following into an XML file.</span></span> <span data-ttu-id="c18d7-104">テストで、この例のステップを使用し、コード例で選択されている J.D.</span><span class="sxs-lookup"><span data-stu-id="c18d7-104">If your test uses the steps in this example, and uses the example's J.D.</span></span> <span data-ttu-id="c18d7-105">Edwards OneWorld オブジェクトの選択 [jde://csales/b4200310] を入力フォルダーと、指定した出力フォルダー (EndDocOut ポートにバインドされているフォルダー) を含んでいるにこれを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="c18d7-105">Edwards OneWorld object selection, [JDE://CSALES/B4200310], you can drop this into the Input folder and what it come out the designated Out folder (the folder bound to the EndDocOut port).</span></span>  
   
 > [!NOTE]
->  一部の値は、J.D. Edwards OneWorld サーバーの場合は、たとえば、値 szCMComputerID に設定されています。  
+>  <span data-ttu-id="c18d7-106">一部の値は、J.D.</span><span class="sxs-lookup"><span data-stu-id="c18d7-106">You will have to modify some of the values to point to your J.D.</span></span> <span data-ttu-id="c18d7-107">Edwards OneWorld サーバーの場合は、たとえば、値 szCMComputerID に設定されています。</span><span class="sxs-lookup"><span data-stu-id="c18d7-107">Edwards OneWorld server, for example, the value set in szCMComputerID.</span></span>  
   
 ```  
 <ns0:F4211FSBeginDoc xmlns:ns0="http://schemas.microsoft.com/  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
 </ns0:F4211FSBeginDoc>  
 ```  
   
-## <a name="see-also"></a>参照  
- [手順 1: スキーマ DLL を参照します。](../core/step-1-reference-the-schema-dll2.md)   
- [手順 2: オーケストレーションを作成します。](../core/step-2-create-the-orchestration1.md)   
- [手順 3: が完了し、プロジェクトを実行](../core/step-3-complete-and-run-the-project2.md)
+## <a name="see-also"></a><span data-ttu-id="c18d7-108">参照</span><span class="sxs-lookup"><span data-stu-id="c18d7-108">See Also</span></span>  
+ <span data-ttu-id="c18d7-109">[手順 1: スキーマ DLL を参照します。](../core/step-1-reference-the-schema-dll2.md) </span><span class="sxs-lookup"><span data-stu-id="c18d7-109">[Step 1: Reference the Schema DLL](../core/step-1-reference-the-schema-dll2.md) </span></span>  
+ <span data-ttu-id="c18d7-110">[手順 2: オーケストレーションを作成します。](../core/step-2-create-the-orchestration1.md) </span><span class="sxs-lookup"><span data-stu-id="c18d7-110">[Step 2: Create the Orchestration](../core/step-2-create-the-orchestration1.md) </span></span>  
+ [<span data-ttu-id="c18d7-111">手順 3: が完了し、プロジェクトを実行</span><span class="sxs-lookup"><span data-stu-id="c18d7-111">Step 3: Complete and Run the Project</span></span>](../core/step-3-complete-and-run-the-project2.md)

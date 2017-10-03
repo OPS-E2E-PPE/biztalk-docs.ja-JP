@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10784"></a>シングル サインオン: イベント 10784
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10784"></a><span data-ttu-id="75390-102">シングル サインオン: イベント 10784</span><span class="sxs-lookup"><span data-stu-id="75390-102">Single Sign-On: Event 10784</span></span>
+## <a name="details"></a><span data-ttu-id="75390-103">詳細</span><span class="sxs-lookup"><span data-stu-id="75390-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10784|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_FILE_OPEN_FAILED|  
-|メッセージ テキスト|指定されたファイルを作成または開くことができませんでした。 ファイル名とアクセス許可を確認してください。|  
+|<span data-ttu-id="75390-104">製品名</span><span class="sxs-lookup"><span data-stu-id="75390-104">Product Name</span></span>|<span data-ttu-id="75390-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="75390-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="75390-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="75390-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="75390-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="75390-107">Event ID</span></span>|<span data-ttu-id="75390-108">10784</span><span class="sxs-lookup"><span data-stu-id="75390-108">10784</span></span>|  
+|<span data-ttu-id="75390-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="75390-109">Event Source</span></span>|<span data-ttu-id="75390-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="75390-110">ENTSSO</span></span>|  
+|<span data-ttu-id="75390-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="75390-111">Component</span></span>|<span data-ttu-id="75390-112">なし</span><span class="sxs-lookup"><span data-stu-id="75390-112">N/A</span></span>|  
+|<span data-ttu-id="75390-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="75390-113">Symbolic Name</span></span>|<span data-ttu-id="75390-114">ENTSSO_E_FILE_OPEN_FAILED</span><span class="sxs-lookup"><span data-stu-id="75390-114">ENTSSO_E_FILE_OPEN_FAILED</span></span>|  
+|<span data-ttu-id="75390-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="75390-115">Message Text</span></span>|<span data-ttu-id="75390-116">指定されたファイルを作成または開くことができませんでした。</span><span class="sxs-lookup"><span data-stu-id="75390-116">Could not create or open the specified file.</span></span> <span data-ttu-id="75390-117">ファイル名とアクセス許可を確認してください。</span><span class="sxs-lookup"><span data-stu-id="75390-117">Check the file name and access permissions.</span></span>|  
   
-## <a name="explanation"></a>説明  
- 指定されたファイルを作成または開くことができませんでした。  
+## <a name="explanation"></a><span data-ttu-id="75390-118">説明</span><span class="sxs-lookup"><span data-stu-id="75390-118">Explanation</span></span>  
+ <span data-ttu-id="75390-119">指定されたファイルを作成または開くことができませんでした。</span><span class="sxs-lookup"><span data-stu-id="75390-119">Could not create or open the specified file.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- ファイル名とアクセス許可を確認してください。
+## <a name="user-action"></a><span data-ttu-id="75390-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="75390-120">User Action</span></span>  
+ <span data-ttu-id="75390-121">ファイル名とアクセス許可を確認してください。</span><span class="sxs-lookup"><span data-stu-id="75390-121">Check the file name and access permissions.</span></span>

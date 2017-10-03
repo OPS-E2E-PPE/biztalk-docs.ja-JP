@@ -19,12 +19,12 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="receiveportref-port-node"></a>ReceivePortRef (Port ノード)
-バインド ファイルの Port ノードの ReceivePortRef ノードは、サービスによって参照される受信ポートに関する情報を指定します。  
+# <a name="receiveportref-port-node"></a><span data-ttu-id="db992-102">ReceivePortRef (Port ノード)</span><span class="sxs-lookup"><span data-stu-id="db992-102">ReceivePortRef (Port Node)</span></span>
+<span data-ttu-id="db992-103">バインド ファイルの Port ノードの ReceivePortRef ノードは、サービスによって参照される受信ポートに関する情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="db992-103">The ReceivePortRef node of the Port node of a binding file contains information about a receive port that is referenced by a service.</span></span>  
   
-## <a name="nodes-in-the-receiveportref-node"></a>ReceivePortRef ノード内のノード  
- 次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
+## <a name="nodes-in-the-receiveportref-node"></a><span data-ttu-id="db992-104">ReceivePortRef ノード内のノード</span><span class="sxs-lookup"><span data-stu-id="db992-104">Nodes in the ReceivePortRef node</span></span>  
+ <span data-ttu-id="db992-105">次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="db992-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|<span data-ttu-id="db992-106">**名前**</span><span class="sxs-lookup"><span data-stu-id="db992-106">**Name**</span></span>|<span data-ttu-id="db992-107">**ノード型**</span><span class="sxs-lookup"><span data-stu-id="db992-107">**Node Type**</span></span>|<span data-ttu-id="db992-108">**データ型**</span><span class="sxs-lookup"><span data-stu-id="db992-108">**Data Type**</span></span>|<span data-ttu-id="db992-109">**Description**</span><span class="sxs-lookup"><span data-stu-id="db992-109">**Description**</span></span>|<span data-ttu-id="db992-110">**制限**</span><span class="sxs-lookup"><span data-stu-id="db992-110">**Restrictions**</span></span>|<span data-ttu-id="db992-111">**コメント**</span><span class="sxs-lookup"><span data-stu-id="db992-111">**Comments**</span></span>|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|名前|属性|xs:string|サービスによって参照される受信ポートの名前を指定します。|任意|既定値: 空|
+|<span data-ttu-id="db992-112">名前</span><span class="sxs-lookup"><span data-stu-id="db992-112">Name</span></span>|<span data-ttu-id="db992-113">属性</span><span class="sxs-lookup"><span data-stu-id="db992-113">Attribute</span></span>|<span data-ttu-id="db992-114">xs:string</span><span class="sxs-lookup"><span data-stu-id="db992-114">xs:string</span></span>|<span data-ttu-id="db992-115">サービスによって参照される受信ポートの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="db992-115">Specifies the name of a receive port that is referenced by a service.</span></span>|<span data-ttu-id="db992-116">任意</span><span class="sxs-lookup"><span data-stu-id="db992-116">Not required</span></span>|<span data-ttu-id="db992-117">既定値: 空</span><span class="sxs-lookup"><span data-stu-id="db992-117">Default value: empty</span></span>|

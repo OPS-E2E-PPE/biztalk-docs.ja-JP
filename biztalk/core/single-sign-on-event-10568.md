@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10568"></a>シングル サインオン: イベント 10568
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10568"></a><span data-ttu-id="84009-102">シングル サインオン: イベント 10568</span><span class="sxs-lookup"><span data-stu-id="84009-102">Single Sign-On: Event 10568</span></span>
+## <a name="details"></a><span data-ttu-id="84009-103">詳細</span><span class="sxs-lookup"><span data-stu-id="84009-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10568|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_WARN_INVALID_APP_ADMIN_GROUP|  
-|メッセージ テキスト|アプリケーション管理者アカウントがアプリケーションの更新について有効ではありません。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> アプリケーション管理者: %2 %r<br /><br /> 無効なアカウント: %3 %r<br /><br /> エラー コード: %4|  
+|<span data-ttu-id="84009-104">製品名</span><span class="sxs-lookup"><span data-stu-id="84009-104">Product Name</span></span>|<span data-ttu-id="84009-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="84009-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="84009-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="84009-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="84009-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="84009-107">Event ID</span></span>|<span data-ttu-id="84009-108">10568</span><span class="sxs-lookup"><span data-stu-id="84009-108">10568</span></span>|  
+|<span data-ttu-id="84009-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="84009-109">Event Source</span></span>|<span data-ttu-id="84009-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="84009-110">ENTSSO</span></span>|  
+|<span data-ttu-id="84009-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="84009-111">Component</span></span>|<span data-ttu-id="84009-112">なし</span><span class="sxs-lookup"><span data-stu-id="84009-112">N/A</span></span>|  
+|<span data-ttu-id="84009-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="84009-113">Symbolic Name</span></span>|<span data-ttu-id="84009-114">SSO_WARN_INVALID_APP_ADMIN_GROUP</span><span class="sxs-lookup"><span data-stu-id="84009-114">SSO_WARN_INVALID_APP_ADMIN_GROUP</span></span>|  
+|<span data-ttu-id="84009-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="84009-115">Message Text</span></span>|<span data-ttu-id="84009-116">アプリケーション管理者アカウントがアプリケーションの更新について有効ではありません。%r</span><span class="sxs-lookup"><span data-stu-id="84009-116">The Application Administrators account is not valid for application update.%r</span></span><br /><br /> <span data-ttu-id="84009-117">アプリケーション名: %1 %r</span><span class="sxs-lookup"><span data-stu-id="84009-117">Application Name: %1%r</span></span><br /><br /> <span data-ttu-id="84009-118">アプリケーション管理者: %2 %r</span><span class="sxs-lookup"><span data-stu-id="84009-118">Application Administrators: %2%r</span></span><br /><br /> <span data-ttu-id="84009-119">無効なアカウント: %3 %r</span><span class="sxs-lookup"><span data-stu-id="84009-119">Invalid accounts: %3%r</span></span><br /><br /> <span data-ttu-id="84009-120">エラー コード: %4</span><span class="sxs-lookup"><span data-stu-id="84009-120">Error Code: %4</span></span>|  
   
-## <a name="explanation"></a>説明  
- 無効であるか、または存在しないアプリケーション管理者アカウントを更新しようとしました。  
+## <a name="explanation"></a><span data-ttu-id="84009-121">説明</span><span class="sxs-lookup"><span data-stu-id="84009-121">Explanation</span></span>  
+ <span data-ttu-id="84009-122">無効であるか、または存在しないアプリケーション管理者アカウントを更新しようとしました。</span><span class="sxs-lookup"><span data-stu-id="84009-122">You have attempted to update an Application Administrators account which is either invalid or does not exist.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- アカウントの名前が正しいことを確認します。
+## <a name="user-action"></a><span data-ttu-id="84009-123">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="84009-123">User Action</span></span>  
+ <span data-ttu-id="84009-124">アカウントの名前が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="84009-124">Check that the name of the account is correct.</span></span>

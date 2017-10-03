@@ -18,23 +18,23 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-11049"></a>シングル サインオン: イベント 11049
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-11049"></a><span data-ttu-id="41962-102">シングル サインオン: イベント 11049</span><span class="sxs-lookup"><span data-stu-id="41962-102">Single Sign-On: Event 11049</span></span>
+## <a name="details"></a><span data-ttu-id="41962-103">詳細</span><span class="sxs-lookup"><span data-stu-id="41962-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11049|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_DTC_FAILED|  
-|メッセージ テキスト|MSDTC を取得できませんでした。 SSO を正しく機能させるには MSDTC が必要です。|  
+|<span data-ttu-id="41962-104">製品名</span><span class="sxs-lookup"><span data-stu-id="41962-104">Product Name</span></span>|<span data-ttu-id="41962-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="41962-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="41962-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="41962-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="41962-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="41962-107">Event ID</span></span>|<span data-ttu-id="41962-108">11049</span><span class="sxs-lookup"><span data-stu-id="41962-108">11049</span></span>|  
+|<span data-ttu-id="41962-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="41962-109">Event Source</span></span>|<span data-ttu-id="41962-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="41962-110">ENTSSO</span></span>|  
+|<span data-ttu-id="41962-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="41962-111">Component</span></span>|<span data-ttu-id="41962-112">なし</span><span class="sxs-lookup"><span data-stu-id="41962-112">N/A</span></span>|  
+|<span data-ttu-id="41962-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="41962-113">Symbolic Name</span></span>|<span data-ttu-id="41962-114">SSO_ERROR_DTC_FAILED</span><span class="sxs-lookup"><span data-stu-id="41962-114">SSO_ERROR_DTC_FAILED</span></span>|  
+|<span data-ttu-id="41962-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="41962-115">Message Text</span></span>|<span data-ttu-id="41962-116">MSDTC を取得できませんでした。</span><span class="sxs-lookup"><span data-stu-id="41962-116">Could not get MSDTC.</span></span> <span data-ttu-id="41962-117">SSO を正しく機能させるには MSDTC が必要です。</span><span class="sxs-lookup"><span data-stu-id="41962-117">SSO requires MSDTC for correct operation.</span></span>|  
   
-## <a name="explanation"></a>説明  
- ENTSSO システムが、Microsoft 分散トランザクション コーディネーター (MSDTC) に接続できませんでした。  
+## <a name="explanation"></a><span data-ttu-id="41962-118">説明</span><span class="sxs-lookup"><span data-stu-id="41962-118">Explanation</span></span>  
+ <span data-ttu-id="41962-119">ENTSSO システムが、Microsoft 分散トランザクション コーディネーター (MSDTC) に接続できませんでした。</span><span class="sxs-lookup"><span data-stu-id="41962-119">The ENTSSO system could not connect to the Microsoft Distributed Transaction Coordinator (MSDTC).</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- MSDTC が現在動作しているかどうかを確認します。  
+## <a name="user-action"></a><span data-ttu-id="41962-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="41962-120">User Action</span></span>  
+ <span data-ttu-id="41962-121">MSDTC が現在動作しているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="41962-121">Check to see if MSDTC is currently operational.</span></span>  
   
- MSDTC の問題に関するヘルプを参照するには、次を参照してください。 [MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。
+ <span data-ttu-id="41962-122">MSDTC の問題に関するヘルプを参照するには、次を参照してください。 [MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。</span><span class="sxs-lookup"><span data-stu-id="41962-122">For help on MSDTC issues, see [Troubleshooting Problems with MSDTC](../core/troubleshooting-problems-with-msdtc.md).</span></span>

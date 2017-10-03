@@ -21,15 +21,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="performance-tips-and-tricks"></a>パフォーマンスのヒントとテクニック
-このセクションでは、BizTalk Server システムで最適なパフォーマンスを確保するために役立つヒントを説明します。  
+# <a name="performance-tips-and-tricks"></a><span data-ttu-id="6ace3-102">パフォーマンスのヒントとテクニック</span><span class="sxs-lookup"><span data-stu-id="6ace3-102">Performance Tips and Tricks</span></span>
+<span data-ttu-id="6ace3-103">このセクションでは、BizTalk Server システムで最適なパフォーマンスを確保するために役立つヒントを説明します。</span><span class="sxs-lookup"><span data-stu-id="6ace3-103">This section provides useful tips for ensuring optimal performance for your BizTalk Server system.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="6ace3-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="6ace3-104">In This Section</span></span>  
   
--   [パフォーマンスのボトルネックを特定します。](../core/identifying-performance-bottlenecks.md)  
+-   [<span data-ttu-id="6ace3-105">パフォーマンスのボトルネックを特定します。</span><span class="sxs-lookup"><span data-stu-id="6ace3-105">Identifying Performance Bottlenecks</span></span>](../core/identifying-performance-bottlenecks.md)  
   
--   [EPM スレッド プール サイズを設定](../core/setting-the-epm-threadpool-size.md)  
+-   [<span data-ttu-id="6ace3-106">EPM スレッド プール サイズを設定</span><span class="sxs-lookup"><span data-stu-id="6ace3-106">Setting the EPM Threadpool Size</span></span>](../core/setting-the-epm-threadpool-size.md)  
   
--   [DBNETLIB 例外の回避](../core/avoiding-dbnetlib-exceptions.md)  
+-   [<span data-ttu-id="6ace3-107">DBNETLIB 例外の回避</span><span class="sxs-lookup"><span data-stu-id="6ace3-107">Avoiding DBNETLIB Exceptions</span></span>](../core/avoiding-dbnetlib-exceptions.md)  
   
--   [メッセージ ボックスの待機時間に関する問題のトラブルシューティング](../core/troubleshooting-messagebox-latency-issues.md)
+-   [<span data-ttu-id="6ace3-108">メッセージ ボックスの待機時間に関する問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="6ace3-108">Troubleshooting MessageBox Latency Issues</span></span>](../core/troubleshooting-messagebox-latency-issues.md)

@@ -18,50 +18,50 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="partnermanagement-biztalk-server-sample"></a>PartnerManagement (BizTalk Server サンプル)
-PartnerManagement サンプルでパーティを管理する方法を示します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。  
+# <a name="partnermanagement-biztalk-server-sample"></a><span data-ttu-id="73ad0-102">PartnerManagement (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="73ad0-102">PartnerManagement (BizTalk Server Sample)</span></span>
+<span data-ttu-id="73ad0-103">PartnerManagement サンプルでパーティを管理する方法を示します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="73ad0-103">The PartnerManagement sample demonstrates how to manage parties in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by using the **ExplorerOM** administration objects.</span></span>  
   
-## <a name="prerequisites"></a>前提条件  
+## <a name="prerequisites"></a><span data-ttu-id="73ad0-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="73ad0-104">Prerequisites</span></span>  
   
--   このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
+-   <span data-ttu-id="73ad0-105">このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。</span><span class="sxs-lookup"><span data-stu-id="73ad0-105">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
   
--   Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、「 [実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)」を参照してください。  
+-   <span data-ttu-id="73ad0-106">Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。</span><span class="sxs-lookup"><span data-stu-id="73ad0-106">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="73ad0-107">詳細については、「 [実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="73ad0-107">For more information see [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
   
-## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、管理クラスを使用して、 **Microsoft.BizTalk.ExplorerOM**パーティを管理する名前空間。 パーティは、ビジネス プロセスで操作できる取引先またはバックエンド アプリケーションを表します。 パーティの詳細についてはドキュメントを参照して一般に、[パーティ](../core/parties.md)または[ロール リンクとサービス リンク ロール](../core/role-links-and-service-link-roles.md)です。 サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。 このトピックには、Windows PowerShell のスクリプト例も含まれています。 このサンプルは次の操作を示します。  
+## <a name="what-this-sample-does"></a><span data-ttu-id="73ad0-108">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="73ad0-108">What This Sample Does</span></span>  
+ <span data-ttu-id="73ad0-109">このサンプルでは、管理クラスを使用して、 **Microsoft.BizTalk.ExplorerOM**パーティを管理する名前空間。</span><span class="sxs-lookup"><span data-stu-id="73ad0-109">This sample demonstrates using the administrative classes from the **Microsoft.BizTalk.ExplorerOM** namespace to manage parties.</span></span> <span data-ttu-id="73ad0-110">パーティは、ビジネス プロセスで操作できる取引先またはバックエンド アプリケーションを表します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-110">Parties represent trading partners or back-end applications with which a business process can interact.</span></span> <span data-ttu-id="73ad0-111">パーティの詳細についてはドキュメントを参照して一般に、[パーティ](../core/parties.md)または[ロール リンクとサービス リンク ロール](../core/role-links-and-service-link-roles.md)です。</span><span class="sxs-lookup"><span data-stu-id="73ad0-111">For more information about parties in general, see the documentation for [Parties](../core/parties.md) or [Role Links and Service Link Roles](../core/role-links-and-service-link-roles.md).</span></span> <span data-ttu-id="73ad0-112">サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。</span><span class="sxs-lookup"><span data-stu-id="73ad0-112">The sample is written in Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].</span></span> <span data-ttu-id="73ad0-113">このトピックには、Windows PowerShell のスクリプト例も含まれています。</span><span class="sxs-lookup"><span data-stu-id="73ad0-113">A Windows PowerShell example script is also included in this topic.</span></span> <span data-ttu-id="73ad0-114">このサンプルは次の操作を示します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-114">The sample demonstrates the following operations:</span></span>  
   
--   カスタム エイリアスまたは標準エイリアスを持つ新しいパーティを作成し、既存の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信ポートをパーティに追加する。  
+-   <span data-ttu-id="73ad0-115">カスタム エイリアスまたは標準エイリアスを持つ新しいパーティを作成し、既存の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信ポートをパーティに追加する。</span><span class="sxs-lookup"><span data-stu-id="73ad0-115">Creating a new party with a custom or standard alias and adding existing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send ports to the party.</span></span>  
   
--   既存のロール リンクを持つ新しいパーティを BizTalk Server に参加させる。  
+-   <span data-ttu-id="73ad0-116">既存のロール リンクを持つ新しいパーティを BizTalk Server に参加させる。</span><span class="sxs-lookup"><span data-stu-id="73ad0-116">Enlisting the new party with an existing role link on the BizTalk server.</span></span>  
   
--   新しいパーティを参加解除する。  
+-   <span data-ttu-id="73ad0-117">新しいパーティを参加解除する。</span><span class="sxs-lookup"><span data-stu-id="73ad0-117">Un-enlisting the new party.</span></span>  
   
--   新しいパーティを削除する。  
+-   <span data-ttu-id="73ad0-118">新しいパーティを削除する。</span><span class="sxs-lookup"><span data-stu-id="73ad0-118">Deleting the new party.</span></span>  
   
-## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルは、SDK がある次の場所にあります。  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="73ad0-119">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="73ad0-119">Where To Find This Sample</span></span>  
+ <span data-ttu-id="73ad0-120">このサンプルは、SDK がある次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="73ad0-120">The sample is located in the following SDK location:</span></span>  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\PartnerManagement  
+ <span data-ttu-id="73ad0-121">\<*パスのサンプル*> \Admin\ExplorerOM\PartnerManagement</span><span class="sxs-lookup"><span data-stu-id="73ad0-121">\<*Samples Path*>\Admin\ExplorerOM\PartnerManagement</span></span>  
   
- 次の表は、このサンプルのファイルとその目的を示しています。  
+ <span data-ttu-id="73ad0-122">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="73ad0-122">The following table shows the files in this sample and describes their purpose.</span></span>  
   
-|ファイル|Description|  
+|<span data-ttu-id="73ad0-123">ファイル</span><span class="sxs-lookup"><span data-stu-id="73ad0-123">File(s)</span></span>|<span data-ttu-id="73ad0-124">Description</span><span class="sxs-lookup"><span data-stu-id="73ad0-124">Description</span></span>|  
 |---------------|-----------------|  
-|PartnerManagement.cs|このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。|  
-|PartnerManagement.sln と PartnerManagement.csproj|このサンプルのソリューション ファイルとプロジェクト ファイル。|  
+|<span data-ttu-id="73ad0-125">PartnerManagement.cs</span><span class="sxs-lookup"><span data-stu-id="73ad0-125">PartnerManagement.cs</span></span>|<span data-ttu-id="73ad0-126">このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。</span><span class="sxs-lookup"><span data-stu-id="73ad0-126">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span>|  
+|<span data-ttu-id="73ad0-127">PartnerManagement.sln と PartnerManagement.csproj</span><span class="sxs-lookup"><span data-stu-id="73ad0-127">PartnerManagement.sln and PartnerManagement.csproj</span></span>|<span data-ttu-id="73ad0-128">このサンプルのソリューション ファイルとプロジェクト ファイル。</span><span class="sxs-lookup"><span data-stu-id="73ad0-128">Solution and project files for the sample.</span></span>|  
   
-## <a name="building-and-running-this-sample"></a>このサンプルのビルドおよび実行  
- サンプルをビルドする前に、コードを 4 か所で変更し、BizTalk Server のサンプルをカスタマイズする必要があります。 これは、サンプルではパーティに関連付けられた送信ポートと参加のロールに任意の名前を使用しているためです。 したがって、サンプルに有効な名前を指定する必要があります。 このサンプルを示すためには、このトピックの内容について説明します最初に、次のディレクトリから PartyResolution サンプルのビルド: \<*サンプル パス*> \Orchestrations\PartyResolution。 この方法を使用するのは、有効なロール名と送信ポート名が BizTalk Server に存在することを確認し、サンプルの手順を示すことができるようにするためです。  
+## <a name="building-and-running-this-sample"></a><span data-ttu-id="73ad0-129">このサンプルのビルドおよび実行</span><span class="sxs-lookup"><span data-stu-id="73ad0-129">Building and Running This Sample</span></span>  
+ <span data-ttu-id="73ad0-130">サンプルをビルドする前に、コードを 4 か所で変更し、BizTalk Server のサンプルをカスタマイズする必要があります。</span><span class="sxs-lookup"><span data-stu-id="73ad0-130">Before you build the sample, you need to make four code modifications to customize the sample for the BizTalk server.</span></span> <span data-ttu-id="73ad0-131">これは、サンプルではパーティに関連付けられた送信ポートと参加のロールに任意の名前を使用しているためです。</span><span class="sxs-lookup"><span data-stu-id="73ad0-131">This is necessary because the sample uses arbitrary names for send ports associated with the party and an arbitrary role name for the enlistment.</span></span> <span data-ttu-id="73ad0-132">したがって、サンプルに有効な名前を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="73ad0-132">Therefore you need to provide valid names to the sample.</span></span> <span data-ttu-id="73ad0-133">このサンプルを示すためには、このトピックの内容について説明します最初に、次のディレクトリから PartyResolution サンプルのビルド: \<*サンプル パス*> \Orchestrations\PartyResolution。</span><span class="sxs-lookup"><span data-stu-id="73ad0-133">To demonstrate this sample, this topic describes first building the PartyResolution sample from the following directory: \<*Samples Path*>\Orchestrations\PartyResolution.</span></span> <span data-ttu-id="73ad0-134">この方法を使用するのは、有効なロール名と送信ポート名が BizTalk Server に存在することを確認し、サンプルの手順を示すことができるようにするためです。</span><span class="sxs-lookup"><span data-stu-id="73ad0-134">This approach is used to make sure a valid role name and send port names are present on the BizTalk server to demonstrate the sample procedures.</span></span>  
   
-#### <a name="to-build-this-sample"></a>このサンプルをビルドするには  
+#### <a name="to-build-this-sample"></a><span data-ttu-id="73ad0-135">このサンプルをビルドするには</span><span class="sxs-lookup"><span data-stu-id="73ad0-135">To build this sample</span></span>  
   
-1.  最初に、有効なロール名と送信ポート名をサンプルで使用できるよう、PartyResolution サンプルがビルドされ初期化されていることを確認します。 これがで「ビルドおよび初期化してこのサンプルの」というタイトルのセクションに記載されている[PartyResolution (BizTalk Server サンプル)](../core/partyresolution-biztalk-server-sample.md)です。  
+1.  <span data-ttu-id="73ad0-136">最初に、有効なロール名と送信ポート名をサンプルで使用できるよう、PartyResolution サンプルがビルドされ初期化されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-136">First make sure the PartyResolution sample has been built and initialized so that a valid role name and send port names can be used by the sample.</span></span> <span data-ttu-id="73ad0-137">これがで「ビルドおよび初期化してこのサンプルの」というタイトルのセクションに記載されている[PartyResolution (BizTalk Server サンプル)](../core/partyresolution-biztalk-server-sample.md)です。</span><span class="sxs-lookup"><span data-stu-id="73ad0-137">This is documented in the section entitled “Building and Initializing This Sample” in  [PartyResolution (BizTalk Server Sample)](../core/partyresolution-biztalk-server-sample.md).</span></span>  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル PartnerManagement.sln を開きます。  
+2.  <span data-ttu-id="73ad0-138">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル PartnerManagement.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="73ad0-138">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file PartnerManagement.sln.</span></span>  
   
-3.  ソリューション エクスプローラーでソース ファイル PartnerManagement.cs を開きます。  
+3.  <span data-ttu-id="73ad0-139">ソリューション エクスプローラーでソース ファイル PartnerManagement.cs を開きます。</span><span class="sxs-lookup"><span data-stu-id="73ad0-139">In Solution Explorer, open the source file PartnerManagement.cs.</span></span>  
   
-4.  という名前の関数までスクロール**CreateParty**と 2 つの送信ポート名、PartyResolution からサンプルまたは、BizTalk server 環境から有効な名前を使用して挿入します。 次のコード例では、PartyResolution サンプルの送信ポートを使用する変更を示しています。  
+4.  <span data-ttu-id="73ad0-140">という名前の関数までスクロール**CreateParty**と 2 つの送信ポート名、PartyResolution からサンプルまたは、BizTalk server 環境から有効な名前を使用して挿入します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-140">Scroll down into the function named **CreateParty** and insert the two send port names from the PartyResolution sample or use valid names from the BizTalk server environment.</span></span> <span data-ttu-id="73ad0-141">次のコード例では、PartyResolution サンプルの送信ポートを使用する変更を示しています。</span><span class="sxs-lookup"><span data-stu-id="73ad0-141">The following code example demonstrates the change using the send ports from the PartyResolution sample.</span></span>  
   
     ```  
     // Replacing arbitrary send port names with PartyResolution send port names ===  
@@ -73,7 +73,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
   
     ```  
   
-5.  という名前の関数までスクロール**EnlistParty** "shipmentrole"ロールの Supplier アセンブリを検索するように、foreach ループを変更し、参加リストで使用します。 次のコード例では、PartyResolution サンプルの ShipmentRole を使用する変更を示しています。  
+5.  <span data-ttu-id="73ad0-142">という名前の関数までスクロール**EnlistParty** "shipmentrole"ロールの Supplier アセンブリを検索するように、foreach ループを変更し、参加リストで使用します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-142">Scroll down into the function named **EnlistParty** and change the foreach loop so that it searches the Supplier assembly for a role named “ShipmentRole” to use with the enlistment.</span></span> <span data-ttu-id="73ad0-143">次のコード例では、PartyResolution サンプルの ShipmentRole を使用する変更を示しています。</span><span class="sxs-lookup"><span data-stu-id="73ad0-143">The following code example demonstrates the change to use the ShipmentRole from the PartyResolution sample.</span></span>  
   
     ```  
                 // Search for the “Shipmentrole” instead of “shipperRole”  
@@ -91,7 +91,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
   
     ```  
   
-6.  という名前の関数までスクロール**UnenlistParty** ShipmentRole の Supplier アセンブリを検索する foreach ループを変更します。 次のコード例に、この変更を示します。  
+6.  <span data-ttu-id="73ad0-144">という名前の関数までスクロール**UnenlistParty** ShipmentRole の Supplier アセンブリを検索する foreach ループを変更します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-144">Scroll down into the function named **UnenlistParty** and change the foreach loop to search the Supplier assembly for the ShipmentRole.</span></span> <span data-ttu-id="73ad0-145">次のコード例に、この変更を示します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-145">The following code example demonstrates this change.</span></span>  
   
     ```  
                 // Search for the “ShipmentRole” instead of “shipperRole”  
@@ -109,7 +109,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
   
     ```  
   
-7.  ShipmentRole を持つ新しいパーティを作成し、参加させた後、サンプルはすぐにパーティを参加解除し削除するようデザインされています。 メイン プロシージャに次のコード変更を追加して実行を一時停止し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで新しいパーティに作成した参加を表示できるようにします。  
+7.  <span data-ttu-id="73ad0-146">ShipmentRole を持つ新しいパーティを作成し、参加させた後、サンプルはすぐにパーティを参加解除し削除するようデザインされています。</span><span class="sxs-lookup"><span data-stu-id="73ad0-146">After creating and enlisting the new party with the ShipmentRole, the sample is designed to immediately un-enlist the party and delete it.</span></span> <span data-ttu-id="73ad0-147">メイン プロシージャに次のコード変更を追加して実行を一時停止し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで新しいパーティに作成した参加を表示できるようにします。</span><span class="sxs-lookup"><span data-stu-id="73ad0-147">Add the following code change to the main procedure to pause execution and allow you to view the created enlistment for the new party in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
   
     ```  
     static void Main(string[] args)  
@@ -126,26 +126,26 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
   
     ```  
   
-8.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。  
+8.  <span data-ttu-id="73ad0-148">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73ad0-148">On the **Build** menu, click **Build Solution**.</span></span>  
   
-#### <a name="to-run-this-sample"></a>このサンプルを実行するには  
+#### <a name="to-run-this-sample"></a><span data-ttu-id="73ad0-149">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="73ad0-149">To run this sample</span></span>  
   
-1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
+1.  <span data-ttu-id="73ad0-150">コマンド ウィンドウを開き、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-150">Open a command window and navigate to the following folder:</span></span>  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\PartnerManagement\bin\Debug  
+     <span data-ttu-id="73ad0-151">\<*パスのサンプル*> \Admin\ExplorerOM\PartnerManagement\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="73ad0-151">\<*Samples Path*>\Admin\ExplorerOM\PartnerManagement\bin\Debug</span></span>  
   
-2.  PartnerManagement.exe ファイルを実行します。  
+2.  <span data-ttu-id="73ad0-152">PartnerManagement.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-152">Run the file PartnerManagement.exe.</span></span>  
   
-3.  サンプルには、新しいパーティが作成され、参加しているメッセージが表示されたら、開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]新しいパーティがという名前の管理コンソールとビュー **FedEx**下にある、**パーティ**ノード。  
+3.  <span data-ttu-id="73ad0-153">サンプルには、新しいパーティが作成され、参加しているメッセージが表示されたら、開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]新しいパーティがという名前の管理コンソールとビュー **FedEx**下にある、**パーティ**ノード。</span><span class="sxs-lookup"><span data-stu-id="73ad0-153">When the sample displays the message that the new party is created and enlisted, open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console and view the new party named **FedEx** under the **Parties** node.</span></span>  
   
-4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、ツリー ビューを移動、 **ShipmentRole**  **Applications\BizTalk Application 1 \role Links**です。 ダブルクリックして**ShipmentRole**と**ShipmentAgency1**にマップされている、 **SupplierAdvice**操作と**ShipmentAgency2**マップされている、 **SupplierOrder**参加で操作します。  
+4.  <span data-ttu-id="73ad0-154">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、ツリー ビューを移動、 **ShipmentRole**  **Applications\BizTalk Application 1 \role Links**です。</span><span class="sxs-lookup"><span data-stu-id="73ad0-154">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, navigate the tree view to the **ShipmentRole** under **Applications\BizTalk Application 1\Role Links**.</span></span> <span data-ttu-id="73ad0-155">ダブルクリックして**ShipmentRole**と**ShipmentAgency1**にマップされている、 **SupplierAdvice**操作と**ShipmentAgency2**マップされている、 **SupplierOrder**参加で操作します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-155">Double-click **ShipmentRole** and notice **ShipmentAgency1** mapped to the **SupplierAdvice** operation and **ShipmentAgency2** mapped to the **SupplierOrder** operation in the enlistment.</span></span>  
   
-5.  コマンド ウィンドウで Enter キーを押すと、サンプルを参加解除し削除できます。  
+5.  <span data-ttu-id="73ad0-156">コマンド ウィンドウで Enter キーを押すと、サンプルを参加解除し削除できます。</span><span class="sxs-lookup"><span data-stu-id="73ad0-156">In the command window, press ENTER to allow the sample to un-enlist and delete the new party.</span></span>  
   
-6.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、パーティがからできなかったことを確認、 **ShipmentRole**から削除し、**パーティ**ノード。  
+6.  <span data-ttu-id="73ad0-157">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、パーティがからできなかったことを確認、 **ShipmentRole**から削除し、**パーティ**ノード。</span><span class="sxs-lookup"><span data-stu-id="73ad0-157">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, verify the party was un-enlisted from the **ShipmentRole** and deleted from the **Parties** node.</span></span>  
   
-## <a name="windows-powershell-script-example"></a>Windows PowerShell スクリプトの例  
- 次の Windows PowerShell スクリプトの例は、の同じ機能を示すために使用できます、 **ExplorerOM**クラス。  
+## <a name="windows-powershell-script-example"></a><span data-ttu-id="73ad0-158">Windows PowerShell スクリプトの例</span><span class="sxs-lookup"><span data-stu-id="73ad0-158">Windows PowerShell Script Example</span></span>  
+ <span data-ttu-id="73ad0-159">次の Windows PowerShell スクリプトの例は、の同じ機能を示すために使用できます、 **ExplorerOM**クラス。</span><span class="sxs-lookup"><span data-stu-id="73ad0-159">The following Windows PowerShell script example can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
   
 ```  
 #===============================================================#  
@@ -336,7 +336,7 @@ DeleteParty
   
 ```  
   
- 次に、PowerShell スクリプト例の実行による出力の例を示します。 スクリプトの実行が失敗した場合、PowerShell スクリプトがこのトピックの先頭にある要件の説明に従って有効になっていることを確認してください。  
+ <span data-ttu-id="73ad0-160">次に、PowerShell スクリプト例の実行による出力の例を示します。</span><span class="sxs-lookup"><span data-stu-id="73ad0-160">Here is example output from running the PowerShell example script.</span></span> <span data-ttu-id="73ad0-161">スクリプトの実行が失敗した場合、PowerShell スクリプトがこのトピックの先頭にある要件の説明に従って有効になっていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="73ad0-161">If the script fails to run, make sure PowerShell scripting is enabled according to the requirements note at the top of this topic.</span></span>  
   
 ```  
 PS C:\> .\PartnerManagement.ps1  
@@ -353,7 +353,7 @@ You can view the results in the BizTalk Server Administration console.
 Press <Enter> to unenlist and delete...  
 ```  
   
-## <a name="see-also"></a>参照  
- [パーティ](../core/parties.md)   
- [ロール リンクとサービス リンク ロール](../core/role-links-and-service-link-roles.md)   
- [管理者 (BizTalk Server Samples フォルダ)](../core/admin-biztalk-server-samples-folder.md)
+## <a name="see-also"></a><span data-ttu-id="73ad0-162">参照</span><span class="sxs-lookup"><span data-stu-id="73ad0-162">See Also</span></span>  
+ <span data-ttu-id="73ad0-163">[パーティ](../core/parties.md) </span><span class="sxs-lookup"><span data-stu-id="73ad0-163">[Parties](../core/parties.md) </span></span>  
+ <span data-ttu-id="73ad0-164">[ロール リンクとサービス リンク ロール](../core/role-links-and-service-link-roles.md) </span><span class="sxs-lookup"><span data-stu-id="73ad0-164">[Role Links and Service Link Roles](../core/role-links-and-service-link-roles.md) </span></span>  
+ [<span data-ttu-id="73ad0-165">管理者 (BizTalk Server Samples フォルダ)</span><span class="sxs-lookup"><span data-stu-id="73ad0-165">Admin (BizTalk Server Samples Folder)</span></span>](../core/admin-biztalk-server-samples-folder.md)

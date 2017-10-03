@@ -21,15 +21,15 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="patterns-in-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションのパターン
-このセクションでは、ビジネス プロセス管理ソリューションを作成する基本的なプログラミング パターンについて説明します。 ソリューションに関連するエンタープライズ パターンの検討から開始し、これらのパターンを BizTalk パターンに発展させます。 次に、これらのパターンがどのように BizTalk コンポーネントに変換され、それらのコンポーネントがどのようにアセンブリとアプリケーションに分類されるかを見ていきます。 最後のセクションでは、エンタープライズ パターン、BizTalk Server 固有のパターン、その他の一般的なプログラミング パターンを含めて、ソリューションで使用されているパターンの分類を示します。  
+# <a name="patterns-in-the-business-process-management-solution"></a><span data-ttu-id="86686-102">ビジネス プロセス管理ソリューションのパターン</span><span class="sxs-lookup"><span data-stu-id="86686-102">Patterns in the Business Process Management Solution</span></span>
+<span data-ttu-id="86686-103">このセクションでは、ビジネス プロセス管理ソリューションを作成する基本的なプログラミング パターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="86686-103">This section looks at the basic programming patterns making up the Business Process Management solution.</span></span> <span data-ttu-id="86686-104">ソリューションに関連するエンタープライズ パターンの検討から開始し、これらのパターンを BizTalk パターンに発展させます。</span><span class="sxs-lookup"><span data-stu-id="86686-104">It begins by considering the enterprise patterns involved in the solution and develops those patterns into BizTalk patterns.</span></span> <span data-ttu-id="86686-105">次に、これらのパターンがどのように BizTalk コンポーネントに変換され、それらのコンポーネントがどのようにアセンブリとアプリケーションに分類されるかを見ていきます。</span><span class="sxs-lookup"><span data-stu-id="86686-105">It then looks at how those patterns are translated into BizTalk components and how those components are then grouped into assemblies and applications.</span></span> <span data-ttu-id="86686-106">最後のセクションでは、エンタープライズ パターン、BizTalk Server 固有のパターン、その他の一般的なプログラミング パターンを含めて、ソリューションで使用されているパターンの分類を示します。</span><span class="sxs-lookup"><span data-stu-id="86686-106">The final section catalogs the patterns in the solution, whether those are enterprise patterns, BizTalk Server patterns, or other general programming patterns.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="86686-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="86686-107">In This Section</span></span>  
   
--   [パターンを使用したデザイン: ビジネス プロセス管理ソリューション](../core/designing-with-patterns-the-business-process-management-solution.md)  
+-   [<span data-ttu-id="86686-108">パターンを使用したデザイン: ビジネス プロセス管理ソリューション</span><span class="sxs-lookup"><span data-stu-id="86686-108">Designing with Patterns: the Business Process Management Solution</span></span>](../core/designing-with-patterns-the-business-process-management-solution.md)  
   
--   [ビジネス プロセス管理ソリューションのパターンの変換](../core/translating-the-patterns-of-the-business-process-management-solution.md)  
+-   [<span data-ttu-id="86686-109">ビジネス プロセス管理ソリューションのパターンの変換</span><span class="sxs-lookup"><span data-stu-id="86686-109">Translating the Patterns of the Business Process Management Solution</span></span>](../core/translating-the-patterns-of-the-business-process-management-solution.md)  
   
--   [ビジネス プロセス管理ソリューションで一部の設計原則](../core/some-design-principles-in-the-business-process-management-solution.md)  
+-   [<span data-ttu-id="86686-110">ビジネス プロセス管理ソリューションで一部の設計原則</span><span class="sxs-lookup"><span data-stu-id="86686-110">Some Design Principles in the Business Process Management Solution</span></span>](../core/some-design-principles-in-the-business-process-management-solution.md)  
   
--   [ビジネス プロセス管理ソリューションのパターン カタログ](../core/pattern-catalog-for-the-business-process-management-solution.md)
+-   [<span data-ttu-id="86686-111">ビジネス プロセス管理ソリューションのパターン カタログ</span><span class="sxs-lookup"><span data-stu-id="86686-111">Pattern Catalog for the Business Process Management Solution</span></span>](../core/pattern-catalog-for-the-business-process-management-solution.md)

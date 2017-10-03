@@ -18,28 +18,28 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10523"></a>シングル サインオン: イベント 10523
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10523"></a><span data-ttu-id="d842b-102">シングル サインオン: イベント 10523</span><span class="sxs-lookup"><span data-stu-id="d842b-102">Single Sign-On: Event 10523</span></span>
+## <a name="details"></a><span data-ttu-id="d842b-103">詳細</span><span class="sxs-lookup"><span data-stu-id="d842b-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10523|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|N\A|  
-|シンボル名|SSO_INFO_RESTORE_SECRET_OK|  
-|メッセージ テキスト|マスター シークレットが正常に作成されました。%r<br /><br /> ファイル名: %1 %r<br /><br /> 現在の MSID: %2 %r<br /><br /> 以前の MSID: %3 %r<br /><br /> クライアント ユーザー: %4 %r<br /><br /> クライアント コンピュータ: %5|  
+|<span data-ttu-id="d842b-104">製品名</span><span class="sxs-lookup"><span data-stu-id="d842b-104">Product Name</span></span>|<span data-ttu-id="d842b-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="d842b-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="d842b-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="d842b-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="d842b-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="d842b-107">Event ID</span></span>|<span data-ttu-id="d842b-108">10523</span><span class="sxs-lookup"><span data-stu-id="d842b-108">10523</span></span>|  
+|<span data-ttu-id="d842b-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="d842b-109">Event Source</span></span>|<span data-ttu-id="d842b-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="d842b-110">ENTSSO</span></span>|  
+|<span data-ttu-id="d842b-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="d842b-111">Component</span></span>|<span data-ttu-id="d842b-112">N\A</span><span class="sxs-lookup"><span data-stu-id="d842b-112">N\A</span></span>|  
+|<span data-ttu-id="d842b-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="d842b-113">Symbolic Name</span></span>|<span data-ttu-id="d842b-114">SSO_INFO_RESTORE_SECRET_OK</span><span class="sxs-lookup"><span data-stu-id="d842b-114">SSO_INFO_RESTORE_SECRET_OK</span></span>|  
+|<span data-ttu-id="d842b-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="d842b-115">Message Text</span></span>|<span data-ttu-id="d842b-116">マスター シークレットが正常に作成されました。%r</span><span class="sxs-lookup"><span data-stu-id="d842b-116">The master secrets were successfully restored.%r</span></span><br /><br /> <span data-ttu-id="d842b-117">ファイル名: %1 %r</span><span class="sxs-lookup"><span data-stu-id="d842b-117">File Name: %1%r</span></span><br /><br /> <span data-ttu-id="d842b-118">現在の MSID: %2 %r</span><span class="sxs-lookup"><span data-stu-id="d842b-118">Current MSID: %2%r</span></span><br /><br /> <span data-ttu-id="d842b-119">以前の MSID: %3 %r</span><span class="sxs-lookup"><span data-stu-id="d842b-119">Previous MSID: %3%r</span></span><br /><br /> <span data-ttu-id="d842b-120">クライアント ユーザー: %4 %r</span><span class="sxs-lookup"><span data-stu-id="d842b-120">Client User: %4%r</span></span><br /><br /> <span data-ttu-id="d842b-121">クライアント コンピュータ: %5</span><span class="sxs-lookup"><span data-stu-id="d842b-121">Client Computer: %5</span></span>|  
   
-## <a name="explanation"></a>説明  
- この情報イベントは、マスター シークレットが正常に作成されたことを示します。  
+## <a name="explanation"></a><span data-ttu-id="d842b-122">説明</span><span class="sxs-lookup"><span data-stu-id="d842b-122">Explanation</span></span>  
+ <span data-ttu-id="d842b-123">この情報イベントは、マスター シークレットが正常に作成されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="d842b-123">This Information event indicates that the master secrets were successfully restored.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
+## <a name="user-action"></a><span data-ttu-id="d842b-124">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="d842b-124">User Action</span></span>  
   
--   ユーザーの操作は必要ありません。  
+-   <span data-ttu-id="d842b-125">ユーザーの操作は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="d842b-125">No user action is necessary.</span></span>  
   
- 詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+ <span data-ttu-id="d842b-126">詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください: </span><span class="sxs-lookup"><span data-stu-id="d842b-126">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
   
--   [マスタ シークレットの管理](../core/managing-the-master-secret.md)  
+-   [<span data-ttu-id="d842b-127">マスタ シークレットの管理</span><span class="sxs-lookup"><span data-stu-id="d842b-127">Managing the Master Secret</span></span>](../core/managing-the-master-secret.md)  
   
--   [マスター シークレット サーバー](../core/master-secret-server.md)
+-   [<span data-ttu-id="d842b-128">マスター シークレット サーバー</span><span class="sxs-lookup"><span data-stu-id="d842b-128">Master Secret Server</span></span>](../core/master-secret-server.md)

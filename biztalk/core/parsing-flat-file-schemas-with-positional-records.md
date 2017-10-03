@@ -21,8 +21,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="parsing-flat-file-schemas-with-positional-records"></a>位置指定レコードのフラット ファイル スキーマの解析
-サイズの異なる位置指定レコードのあるフラット ファイル スキーマの解析時には、各スキーマ レコード内またはトレーラー内にタグを含めて、各位置指定レコードのサイズを指定する必要があります。 そうしないと、解析エンジンは最長レコード サイズを返します。  
+# <a name="parsing-flat-file-schemas-with-positional-records"></a><span data-ttu-id="cf989-102">位置指定レコードのフラット ファイル スキーマの解析</span><span class="sxs-lookup"><span data-stu-id="cf989-102">Parsing Flat File Schemas with Positional Records</span></span>
+<span data-ttu-id="cf989-103">サイズの異なる位置指定レコードのあるフラット ファイル スキーマの解析時には、各スキーマ レコード内またはトレーラー内にタグを含めて、各位置指定レコードのサイズを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf989-103">When parsing a flat file schema with positional records of unequal size, you must include a tag within each schema record or the trailer to indicate the size of each positional record.</span></span> <span data-ttu-id="cf989-104">そうしないと、解析エンジンは最長レコード サイズを返します。</span><span class="sxs-lookup"><span data-stu-id="cf989-104">Otherwise, the parsing engine returns the longest record size.</span></span>  
   
-## <a name="see-also"></a>参照  
- [フラット ファイル解析エンジンの使用](../core/using-the-flat-file-parsing-engine.md)
+## <a name="see-also"></a><span data-ttu-id="cf989-105">参照</span><span class="sxs-lookup"><span data-stu-id="cf989-105">See Also</span></span>  
+ [<span data-ttu-id="cf989-106">フラット ファイル解析エンジンの使用</span><span class="sxs-lookup"><span data-stu-id="cf989-106">Using the Flat File Parsing Engine</span></span>](../core/using-the-flat-file-parsing-engine.md)

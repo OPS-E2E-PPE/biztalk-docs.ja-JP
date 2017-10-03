@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-11063"></a>シングル サインオン: イベント 11063
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-11063"></a><span data-ttu-id="63fd0-102">シングル サインオン: イベント 11063</span><span class="sxs-lookup"><span data-stu-id="63fd0-102">Single Sign-On: Event 11063</span></span>
+## <a name="details"></a><span data-ttu-id="63fd0-103">詳細</span><span class="sxs-lookup"><span data-stu-id="63fd0-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11063|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_PS_MIIS_CALLBACK_ACCESS_DENIED|  
-|メッセージ テキスト|(MIIS に対する) パスワード同期サーバーのアクセスが拒否されました。%r|  
+|<span data-ttu-id="63fd0-104">製品名</span><span class="sxs-lookup"><span data-stu-id="63fd0-104">Product Name</span></span>|<span data-ttu-id="63fd0-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="63fd0-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="63fd0-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="63fd0-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="63fd0-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="63fd0-107">Event ID</span></span>|<span data-ttu-id="63fd0-108">11063</span><span class="sxs-lookup"><span data-stu-id="63fd0-108">11063</span></span>|  
+|<span data-ttu-id="63fd0-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="63fd0-109">Event Source</span></span>|<span data-ttu-id="63fd0-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="63fd0-110">ENTSSO</span></span>|  
+|<span data-ttu-id="63fd0-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="63fd0-111">Component</span></span>|<span data-ttu-id="63fd0-112">なし</span><span class="sxs-lookup"><span data-stu-id="63fd0-112">N/A</span></span>|  
+|<span data-ttu-id="63fd0-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="63fd0-113">Symbolic Name</span></span>|<span data-ttu-id="63fd0-114">SSO_ERROR_PS_MIIS_CALLBACK_ACCESS_DENIED</span><span class="sxs-lookup"><span data-stu-id="63fd0-114">SSO_ERROR_PS_MIIS_CALLBACK_ACCESS_DENIED</span></span>|  
+|<span data-ttu-id="63fd0-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="63fd0-115">Message Text</span></span>|<span data-ttu-id="63fd0-116">(MIIS に対する) パスワード同期サーバーのアクセスが拒否されました。%r</span><span class="sxs-lookup"><span data-stu-id="63fd0-116">Password sync server (for MIIS) access denied.%r</span></span>|  
   
-## <a name="explanation"></a>説明  
- MIIS コールバックのアクセスが拒否されました。 このエラーの原因として最も可能性が高いのは、ENTSSO システムと MIIS の間での Kerberos 認証の使用の失敗です。  
+## <a name="explanation"></a><span data-ttu-id="63fd0-117">説明</span><span class="sxs-lookup"><span data-stu-id="63fd0-117">Explanation</span></span>  
+ <span data-ttu-id="63fd0-118">MIIS コールバックのアクセスが拒否されました。</span><span class="sxs-lookup"><span data-stu-id="63fd0-118">MIIS Callback access has been denied.</span></span> <span data-ttu-id="63fd0-119">このエラーの原因として最も可能性が高いのは、ENTSSO システムと MIIS の間での Kerberos 認証の使用の失敗です。</span><span class="sxs-lookup"><span data-stu-id="63fd0-119">The most likely cause of this error is failure to use the Kerberos authentication between the ENTSSO system and MIIS.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- ENTSSO システムが Kerberos 認証を使用していることを確認します。 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)です。
+## <a name="user-action"></a><span data-ttu-id="63fd0-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="63fd0-120">User Action</span></span>  
+ <span data-ttu-id="63fd0-121">ENTSSO システムが Kerberos 認証を使用していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="63fd0-121">Confirm that your ENTSSO system is using Kerberos authentication.</span></span> <span data-ttu-id="63fd0-122">詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)です。</span><span class="sxs-lookup"><span data-stu-id="63fd0-122">For more information, see [SSO Security Recommendations](../core/sso-security-recommendations.md).</span></span>

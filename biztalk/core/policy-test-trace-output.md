@@ -21,14 +21,14 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="policy-test-trace-output"></a>ポリシー テストのトレース出力
-ポリシーをテストする際、ポリシー テスターは、バージョン情報ウィンドウに出力を表示します。 このセクションでは、トレースに含まれるアクティビティについて説明します。  
+# <a name="policy-test-trace-output"></a><span data-ttu-id="1274e-102">ポリシー テストのトレース出力</span><span class="sxs-lookup"><span data-stu-id="1274e-102">Policy Test Trace Output</span></span>
+<span data-ttu-id="1274e-103">ポリシーをテストする際、ポリシー テスターは、バージョン情報ウィンドウに出力を表示します。</span><span class="sxs-lookup"><span data-stu-id="1274e-103">When you test your policy, the policy tester displays the output in the version information window.</span></span> <span data-ttu-id="1274e-104">このセクションでは、トレースに含まれるアクティビティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="1274e-104">This section describes the activities included within the trace.</span></span>  
   
 > [!NOTE]
->  派生クラスがアサートされ、基本クラスのメンバーに直接ルールが記述されている場合は、基本クラスのインスタンスがアサートされ、条件がそのインスタンスに対して評価されます。  
+>  <span data-ttu-id="1274e-105">派生クラスがアサートされ、基本クラスのメンバーに直接ルールが記述されている場合は、基本クラスのインスタンスがアサートされ、条件がそのインスタンスに対して評価されます。</span><span class="sxs-lookup"><span data-stu-id="1274e-105">If a derived class is asserted but rules are written directly against members of the base class, an instance of the base class is asserted and conditions are evaluated against that instance.</span></span>  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="in-this-section"></a><span data-ttu-id="1274e-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="1274e-106">In This Section</span></span>  
   
--   [ビジネス ルールにおけるポリシー テストのトレース出力の情報](../core/policy-test-trace-output-information-for-business-rules.md)  
+-   [<span data-ttu-id="1274e-107">ビジネス ルールにおけるポリシー テストのトレース出力の情報</span><span class="sxs-lookup"><span data-stu-id="1274e-107">Policy Test Trace Output Information for Business Rules</span></span>](../core/policy-test-trace-output-information-for-business-rules.md)  
   
--   [ポリシー テストのトレース出力例](../core/policy-test-trace-output-examples.md)
+-   [<span data-ttu-id="1274e-108">ポリシー テストのトレース出力例</span><span class="sxs-lookup"><span data-stu-id="1274e-108">Policy Test Trace Output Examples</span></span>](../core/policy-test-trace-output-examples.md)

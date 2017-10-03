@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10801"></a>シングル サインオン: イベント 10801
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10801"></a><span data-ttu-id="0ad56-102">シングル サインオン: イベント 10801</span><span class="sxs-lookup"><span data-stu-id="0ad56-102">Single Sign-On: Event 10801</span></span>
+## <a name="details"></a><span data-ttu-id="0ad56-103">詳細</span><span class="sxs-lookup"><span data-stu-id="0ad56-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10801|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_INVALID_NOTIFICATION_TYPE|  
-|メッセージ テキスト|通知の種類が有効ではありません。|  
+|<span data-ttu-id="0ad56-104">製品名</span><span class="sxs-lookup"><span data-stu-id="0ad56-104">Product Name</span></span>|<span data-ttu-id="0ad56-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="0ad56-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="0ad56-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="0ad56-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="0ad56-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="0ad56-107">Event ID</span></span>|<span data-ttu-id="0ad56-108">10801</span><span class="sxs-lookup"><span data-stu-id="0ad56-108">10801</span></span>|  
+|<span data-ttu-id="0ad56-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="0ad56-109">Event Source</span></span>|<span data-ttu-id="0ad56-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="0ad56-110">ENTSSO</span></span>|  
+|<span data-ttu-id="0ad56-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="0ad56-111">Component</span></span>|<span data-ttu-id="0ad56-112">なし</span><span class="sxs-lookup"><span data-stu-id="0ad56-112">N/A</span></span>|  
+|<span data-ttu-id="0ad56-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="0ad56-113">Symbolic Name</span></span>|<span data-ttu-id="0ad56-114">ENTSSO_E_INVALID_NOTIFICATION_TYPE</span><span class="sxs-lookup"><span data-stu-id="0ad56-114">ENTSSO_E_INVALID_NOTIFICATION_TYPE</span></span>|  
+|<span data-ttu-id="0ad56-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="0ad56-115">Message Text</span></span>|<span data-ttu-id="0ad56-116">通知の種類が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="0ad56-116">The notification type is not valid.</span></span>|  
   
-## <a name="explanation"></a>説明  
- 通知の種類が有効ではありません。  
+## <a name="explanation"></a><span data-ttu-id="0ad56-117">説明</span><span class="sxs-lookup"><span data-stu-id="0ad56-117">Explanation</span></span>  
+ <span data-ttu-id="0ad56-118">通知の種類が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="0ad56-118">The notification type is not valid.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- アプリケーションを確認してください。
+## <a name="user-action"></a><span data-ttu-id="0ad56-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="0ad56-119">User Action</span></span>  
+ <span data-ttu-id="0ad56-120">アプリケーションを確認してください。</span><span class="sxs-lookup"><span data-stu-id="0ad56-120">Check your application.</span></span>

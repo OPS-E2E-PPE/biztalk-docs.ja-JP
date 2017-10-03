@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10829"></a>シングル サインオン: イベント 10829
-## <a name="details"></a>詳細  
+# <a name="single-sign-on-event-10829"></a><span data-ttu-id="bcdc3-102">シングル サインオン: イベント 10829</span><span class="sxs-lookup"><span data-stu-id="bcdc3-102">Single Sign-On: Event 10829</span></span>
+## <a name="details"></a><span data-ttu-id="bcdc3-103">詳細</span><span class="sxs-lookup"><span data-stu-id="bcdc3-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10829|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_PSADMIN_INVALID_ADAPTER_TYPE_2|  
-|メッセージ テキスト|アダプターのアプリケーションの種類が無効です。 有効なアプリケーションの種類は ‘パスワード同期アダプター’ または ‘パスワード同期グループ アダプター’ です。|  
+|<span data-ttu-id="bcdc3-104">製品名</span><span class="sxs-lookup"><span data-stu-id="bcdc3-104">Product Name</span></span>|<span data-ttu-id="bcdc3-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="bcdc3-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="bcdc3-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="bcdc3-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="bcdc3-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="bcdc3-107">Event ID</span></span>|<span data-ttu-id="bcdc3-108">10829</span><span class="sxs-lookup"><span data-stu-id="bcdc3-108">10829</span></span>|  
+|<span data-ttu-id="bcdc3-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="bcdc3-109">Event Source</span></span>|<span data-ttu-id="bcdc3-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="bcdc3-110">ENTSSO</span></span>|  
+|<span data-ttu-id="bcdc3-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="bcdc3-111">Component</span></span>|<span data-ttu-id="bcdc3-112">なし</span><span class="sxs-lookup"><span data-stu-id="bcdc3-112">N/A</span></span>|  
+|<span data-ttu-id="bcdc3-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="bcdc3-113">Symbolic Name</span></span>|<span data-ttu-id="bcdc3-114">ENTSSO_E_PSADMIN_INVALID_ADAPTER_TYPE_2</span><span class="sxs-lookup"><span data-stu-id="bcdc3-114">ENTSSO_E_PSADMIN_INVALID_ADAPTER_TYPE_2</span></span>|  
+|<span data-ttu-id="bcdc3-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="bcdc3-115">Message Text</span></span>|<span data-ttu-id="bcdc3-116">アダプターのアプリケーションの種類が無効です。</span><span class="sxs-lookup"><span data-stu-id="bcdc3-116">Invalid application type for adapter.</span></span> <span data-ttu-id="bcdc3-117">有効なアプリケーションの種類は ‘パスワード同期アダプター’ または ‘パスワード同期グループ アダプター’ です。</span><span class="sxs-lookup"><span data-stu-id="bcdc3-117">Valid application types are ‘Password Sync Adapter’ or ‘Password Sync Group Adapter’.</span></span>|  
   
-## <a name="explanation"></a>説明  
- アダプターのアプリケーションの種類が無効です。 有効なアプリケーションの種類は ‘パスワード同期アダプター’ または ‘パスワード同期グループ アダプター’ です。  
+## <a name="explanation"></a><span data-ttu-id="bcdc3-118">説明</span><span class="sxs-lookup"><span data-stu-id="bcdc3-118">Explanation</span></span>  
+ <span data-ttu-id="bcdc3-119">アダプターのアプリケーションの種類が無効です。</span><span class="sxs-lookup"><span data-stu-id="bcdc3-119">Invalid application type for adapter.</span></span> <span data-ttu-id="bcdc3-120">有効なアプリケーションの種類は ‘パスワード同期アダプター’ または ‘パスワード同期グループ アダプター’ です。</span><span class="sxs-lookup"><span data-stu-id="bcdc3-120">Valid application types are ‘Password Sync Adapter’ or ‘Password Sync Group Adapter’.</span></span>  
   
-## <a name="user-action"></a>ユーザーの操作  
- 有効なアプリケーションの種類の 1 つを使用します。
+## <a name="user-action"></a><span data-ttu-id="bcdc3-121">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="bcdc3-121">User Action</span></span>  
+ <span data-ttu-id="bcdc3-122">有効なアプリケーションの種類の 1 つを使用します。</span><span class="sxs-lookup"><span data-stu-id="bcdc3-122">Use one of the valid application types.</span></span>
