@@ -1,0 +1,54 @@
+---
+title: "手順 2: V2.4 用の共通のスキーマの作成 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: interrogative tutorial, common schemas
+ms.assetid: 333ae85a-a307-4ab1-97f4-4d7b986e91de
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 07260c5f0d161698545ff7fd5b5177a5374f3d04
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="step-2-create-common-schemas-for-v24"></a>手順 2: V2.4 の一般的なスキーマを作成します。
+V2.4 スキーマは、頻繁に参照されるスキーマは、クエリと応答メッセージ インスタンスの検証に使用します。  
+  
+### <a name="to-create-the-common-schemas-for-v24"></a>V2.4 の一般的なスキーマを作成するには  
+  
+1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+  
+2.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**一覧で、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
+  
+3.  **テンプレート**一覧で、 **BTAHL7V24Common プロジェクト**です。  
+  
+4.  **名前**フィールドに「 **Interrogative_24Schemas**です。  
+  
+5.  ソリューション フィールドで、選択**ソリューションに追加**、順にクリック**OK**です。  
+  
+     ソリューション エクスプ ローラーで、プロジェクトに 3 つのスキーマ (datatypes_24.xsd、segments_24.xsd、および tablevalues_24.xsd) が含まれていることを確認します。  
+  
+6.  ソリューション エクスプ ローラーで右クリック**Interrogative_24Schemas**プロジェクトをクリックして**プロパティ**です。  
+  
+7.  Interrogative_24Schemas プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**です。  
+  
+8.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンをクリックします。  
+  
+9. **アセンブリ キー ファイル** ダイアログ ボックスを参照\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative チュートリアルでは、をクリックして**key.snk**、クリックして**開く**です。  
+  
+10. Interrogative_24Schemas プロパティ ページ] ダイアログ ボックスで、[ **OK**して変更を保存します。  
+  
+11. ソリューション エクスプ ローラーで右クリック**Interrogative_24Schemas**プロジェクトをクリックして**展開**です。 をクリックして**OK**ソリューションに変更を保存するように求めるダイアログ ボックスにします。 成功メッセージが出力ウィンドウに表示を確認します。  
+  
+    > [!NOTE]
+    >  使用して、適切なメッセージが表示されない場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマをトラブルシューティングします。  
+  
+ 進みます[手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトを配置](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project-hl7-main.md)です。
