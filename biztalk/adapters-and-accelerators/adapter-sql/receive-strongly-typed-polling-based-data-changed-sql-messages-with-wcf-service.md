@@ -1,7 +1,8 @@
 ---
 title: "厳密に型指定されたポーリング ベース データが変更されてから受信 WCF サービスのモデルを使用して SQL Server |Microsoft ドキュメント"
+description: ".NET アプリケーションを使用して、型指定されたポーリングまたは WCF-SQL アダプターの BizTalk Server で WCF サービスを使用して、厳密に型指定されたポーリングを構成するには"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/09/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a56ed382f6fa9c106b091b62406feba2dffe704
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c616d2a9f10aae5dbf822676174a0de0d4816c19
+ms.sourcegitcommit: f9c6ea3c9cfb8a43f765c0d3b8b07dacaa21fc51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="receive-strongly-typed-polling-based-data-changed-messages-from-sql-server-using-wcf-service-model"></a>厳密に型指定されたポーリング ベース データが変更されてから受信 WCF サービスのモデルを使用して SQL Server
 構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server から厳密に型指定されたポーリング メッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。 厳密に型指定された結果セットを受信するシナリオで、厳密に型指定されたポーリングを使用する必要があります。 アダプターが厳密に型指定されたポーリングをサポートする方法の詳細については、次を参照してください。[呼び出しをポーリングを使用して受信するためのサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)です。  
@@ -68,7 +69,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
  これらのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 使用する方法の詳細については、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL サーバーのポーリングを読みます。  
   
-## <a name="configuring-strongly-typed-polling-in-the-wcf-service-model"></a>WCF サービス モデルで厳密に型指定されたポーリングを構成します。  
+## <a name="configure-strongly-typed-polling-in-the-wcf-service-model"></a>WCF サービス モデルで厳密に型指定されたポーリングを構成します。  
  受信する、**ポーリング**WCF サービス モデルを使用して操作を行う必要があります。  
   
 1.  WCF サービス コントラクト (インターフェイス) を生成、 **TypedPolling**アダプターによって公開されるメタデータから操作します。 これを行うには、使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 この例の WCF サービス コントラクトを生成するときに確認します。  
@@ -148,10 +149,8 @@ namespace SqlAdapterBindingNamespace {
 }  
 ```  
   
-## <a name="receiving-strongly-typed-inbound-messages-for-polling-operation"></a>厳密に型指定されたポーリング操作に対して受信メッセージの受信  
+## <a name="receive-strongly-typed-inbound-messages-for-polling-operation"></a>ポーリング操作の厳密に型指定されたメッセージを受信します。  
  このセクションの内容を使用して受信ポーリングの厳密に型指定されたメッセージを受信する .NET アプリケーションを記述する方法の手順を説明する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
-  
-#### <a name="to-receive-polling-messages-from-the-sql-adapter"></a>SQL アダプタからポーリング メッセージを受信するには  
   
 1.  使用して、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) およびためのヘルパー クラスを生成する、 **TypedPolling**操作します。 この例の WCF サービス コントラクトを生成するときに、次を指定することを確認します。  
   
@@ -268,7 +267,7 @@ namespace SqlAdapterBindingNamespace {
   
     ```  
     // Add service endpoint: be sure to specify TypedPolling_Employee as the contract  
-    Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?InboundID=Empliyee");  
+    Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?InboundID=Employee");  
     serviceHost.AddServiceEndpoint("TypedPolling_Employee", binding, ConnectionUri);  
     ```  
   
