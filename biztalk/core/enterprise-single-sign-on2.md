@@ -1,7 +1,8 @@
 ---
-title: "エンタープライズ シングル サインオン On2 |Microsoft ドキュメント"
+title: "エンタープライズ シングル サインオンの概要 |Microsoft ドキュメント"
+description: "BizTalk Server でメッセージを処理、およびして SSO の SSO チケットを使用して、affilicate アプリケーションについてください。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/11/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,18 +13,18 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4cf73307cc3b22beec8a3b8c10b232506fc674e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f242e11e31de957fee0c6cbf228094f7e40010d
+ms.sourcegitcommit: 5e6ef63416e8885a5ee91bd65618a842b3a0cc54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/12/2017
 ---
-# <a name="enterprise-single-sign-on"></a>エンタープライズ シングル サインオン
+# <a name="enterprise-single-sign-on-overview"></a>エンタープライズ シングル サインオンの概要
 数種類のアプリケーションに依存するビジネス プロセスでは、いくつかの異なるセキュリティ ドメインへのアクセスが必要になる場合があります。 たとえば、Microsoft Windows システムのアプリケーションにアクセスするときには、それに応じたセキュリティ資格情報のセットを使用する必要があり、IBM メインフレームのアプリケーションにアクセスするときには、RACF ユーザー名やパスワードなど、別の資格情報を使用する必要があります。 このような多くの資格情報を操作することはユーザーにとって不便なだけでなく、プロセスの自動化にとって大きな障害となります。 この問題に対処するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、エンタープライズ シングル サインオンが提供されます。  
   
  混乱しないで、すべてのアプリケーションの 1 つのログインを持っている人をできる機構はありません。 Windows ユーザー ID を Windows 以外のユーザー資格情報にマップする方法を提供するものです。 このサービスによって組織のエンタープライズ サインオンに関するすべての問題が解決されるわけではありませんが、さまざまなシステムのアプリケーションを使用するビジネス プロセスの作業をより単純化できます。  
   
-## <a name="creating-affiliate-application-for-non-windows-systems"></a>Windows 以外のシステム用の関連アプリケーションの作成  
+## <a name="create-affiliate-application-for-non-windows-systems"></a>非 Windows システム用の関連アプリケーションを作成します。  
  エンタープライズ シングル サインオンを使用する場合、管理者は、関連アプリケーションを定義します。各関連アプリケーションは、Windows 以外のシステムまたはアプリケーションを表します。 たとえば、関連アプリケーションは、IBM メインフレームで実行される CICS アプリケーション、UNIX で実行される SAP ERP システム、またはその他さまざまな種類のソフトウェアである場合があります。 これらの各アプリケーションには、認証用の独自のメカニズムがあるので、各アプリケーションには一意の資格情報が必要です。  
   
  エンタープライズ シングル サインオンにより、ユーザーの Windows ユーザー ID と 1 つ以上の関連アプリケーション用の資格情報とのマッピングが暗号化されて SSO データベースに格納されます。 このユーザーが関連アプリケーションにアクセスする必要があるとき、シングル サインオン (SSO) サーバーによりそのアプリケーション用の資格情報が SSO データベースから検索されます。 このしくみを次の図に示します。  

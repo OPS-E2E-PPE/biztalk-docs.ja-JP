@@ -1,99 +1,89 @@
 ---
-title: "HTTP の受信場所用に IIS を構成する方法 |Microsoft ドキュメント"
+title: "HTTP の受信場所の IIS を構成する |Microsoft ドキュメント"
+description: "IIS では、BTS HTTP 受信アプリケーションを作成し、BizTalk Server でのアプリケーション プールの設定のテスト"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/10/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- 64-bit support, HTTP adapters
-- HTTP adapters, IIS
-- configuring [HTTP adapters], IIS
-- receive locations, IIS
-- IIS, receive locations
-- HTTP adapters, 64-bit support
-- IIS, HTTP adapters
 ms.assetid: 1c420f46-01f1-4c9c-9144-d8d2acc8b0c4
 caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1daa535c546bef0b390f0f7f84c45d546ac0005
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e09768d6616a33a4900995f3dd3225fa34318b3c
+ms.sourcegitcommit: 75d35f6f230f0846c29a4b146c6d5b074e60b13c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/11/2017
 ---
-# <a name="how-to-configure-iis-for-an-http-receive-location"></a>HTTP の受信場所用に IIS を構成する方法
-使用中の Microsoft Windows のバージョンによって、HTTP アダプター受信場所を使用するための Microsoft インターネット インフォメーション サービス (IIS) の構成方法は異なります。  
+# <a name="configure-iis-for-an-http-receive-location"></a>HTTP の受信場所の IIS を構成します。
+HTTP は、場所が使用アプリケーション内では、インターネット インフォメーション サービス (IIS) を受信します。 このトピックに HTTP を有効にする手順は、IIS 内の場所を受信します。 
+
+オペレーティング システムに応じて、IIS アプリケーションを構成する手順が異なる場合があります。 として使用してこれらの手順、ガイドでは、ユーザー インターフェイスが、OS で異なる場合があります。
   
- 使用中のオペレーティング システムが [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] の場合、IIS 7.0 では、Web アプリケーションを保護するために 2 種類のアプリケーション分離モードが提供されています。 既定のモードは、ワーカー プロセス分離モードです。 HTTP アダプター受信場所は、どちらのモードでも動作するように構成できますが、セキュリティを強化するため、ワーカー プロセス分離モードを使用することをお勧めします。  
-  
-> [!NOTE]
->  オペレーティング システムが x64 エディションの[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]、64 ビット版の HTTP 受信アダプターがインストール、 *\<ドライブ >***\Program Files (x86) \Microsoft**[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\HttpReceive64**のディレクトリ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定です。 64 ビット版の HTTP 受信アダプターを 64 ビットのネイティブ モードで実行するには、コマンド ラインから次のスクリプトを実行する必要があります。  
->   
->  `cscript %SystemDrive%\inetpub\AdminScripts\adsutil.vbs set w3svc/AppPools/Enable32bitAppOnWin64 0`  
->   
->  `C:\WINDOWS\Microsoft.NET\Framework64\vX.X.XXXXX>aspnet_regiis.exe -i`  
+## <a name="32-bit-vs-64-bit"></a>32 ビットと 64 ビット
+
+HTTP の受信場所が、BTSHTTPReceive.dll を使用します。 32 ビットと DLL の 64 ビット バージョンがあります。 使用するバージョンを選択します。 64 ビット プロセスで使用可能なメモリがためがあるかどうかより大きなメッセージを処理する、64 ビット バージョンが最適な可能性があります。 
+
+**32 ビットのインストール場所**: *%program Files (x86) \Microsoft BizTalk Server\HttpReceive*です。
+**64 ビットのインストール場所**: *%program Files (x86) \Microsoft BizTalk Server\HttpReceive64*
+
+HTTP の 64 ビット バージョンを実行する 64 ビットのネイティブ モードで受信アダプター、コマンド プロンプトを開き、および次のスクリプトを実行します。  
+
+1. 型:`cscript %SystemDrive%\inetpub\AdminScripts\adsutil.vbs set w3svc/AppPools/Enable32bitAppOnWin64 0`  
+
+2. 型:`C:\WINDOWS\Microsoft.NET\Framework64\vX.X.XXXXX>aspnet_regiis.exe -i`  
   
 > [!NOTE]
 >  同一プロセスを共有する SOAP と HTTP を使用する IIS 構成は無効です。 プロセスごとに 1 つの分離受信場所のみを指定できます。  
   
-### <a name="to-configure-the-iis-70-worker-process-isolation-mode-to-work-with-the-http-adapter-receive-location"></a>HTTP アダプターを使用する IIS 7.0 ワーカー プロセス分離モードの受信場所を構成するには  
+##  <a name="configure-the-iis-application"></a>IIS アプリケーションを構成します。
   
-1.  をクリックして**開始**、] をポイント**設定**、順にクリック**コントロール パネルの [**です。  
+1.  開く**インターネット インフォメーション サービス**(開く**サーバー マネージャー****ツール**を選択し、**インターネット インフォメーション サービス マネージャー**). 
   
-2.  コントロール パネルで、ダブルクリック**管理ツール**です。  
-  
-3.  [管理ツール] をダブルクリック**インターネット インフォメーション サービス**です。  
-  
-4.  インターネット インフォメーション サービスでルート Web サーバーのエントリを選択します。 **機能ビュー**をダブルクリックして**ハンドラー マッピング**、[操作] ウィンドウで、クリックして**スクリプト マップの追加**です。  
+2.  IIS では、サーバー名を選択します。 **機能ビュー**をダブルクリックして**ハンドラー マッピング**です。 [操作] ウィンドウで、次のように選択します。**スクリプト マップの追加**です。  
   
     > [!NOTE]
-    >  Web サーバー レベルでスクリプトのマッピングを構成すると、すべての子 Web サイトにこのマッピングが適用されます。 マッピングを特定の Web サイトまたは仮想フォルダーに制限する場合は、Web サーバーではなくターゲット サイトまたはターゲット フォルダーを選択します。  
+    >  Web サーバー レベルでスクリプト マッピングを構成するときに、マッピングがすべての web サイトに適用されます。 特定の Web サイトまたは仮想フォルダーへのマッピングを制限する場合は、その web サイトまたはフォルダーを選択し、スクリプト マップを追加します。  
   
-5.  **スクリプト マップの追加** ダイアログ ボックスで、**要求パス**フィールドに「`BtsHttpReceive.dll`です。  
+3.  **スクリプト マップの追加****要求パス**、および種類`BtsHttpReceive.dll`です。  
   
-6.  **実行可能ファイル**フィールドで、省略記号ボタン (**.**) ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive です。 選択**BtsHttpReceive.dll**  をクリックし、 **OK**です。  
+4.  **実行可能ファイル**、省略記号 (**.**) を参照および[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive です。 選択**BtsHttpReceive.dll**、し、**開く**です。  
   
-7.  **名前**フィールドに「 `BizTalk HTTP Receive`、クリックしてして**要求の制限**です。  
+5.  **名前**、入力`BizTalk HTTP Receive`、し、**要求の制限**です。 このウィンドウには。
   
-8.  **要求の制限** ダイアログ ボックスをクリックして、**動詞**タブをクリックし**次の動詞のいずれかの**です。 入力`POST`動詞として。  
+    1. **動詞****次の動詞のいずれかの**、入力と`POST`です。  
   
-9. **アクセス**] タブで [**スクリプト**、クリックして**[ok]**です。  
+    2. **アクセス****スクリプト**、し、 **OK**。  
   
-10. ISAPI 拡張機能を許可するように求めるメッセージが表示されたら、 **[はい]**をクリックします。  
+    3. ISAPI 拡張を許可するメッセージが表示されたら、**はい**です。  
   
-11. 右クリック**アプリケーション プール**、 をポイント**新規**、クリックして**アプリケーション プール**です。  
-  
-12. **アプリケーション プールの追加** ダイアログ ボックスで、**名前**ボックスで、アプリケーション プールの名前を入力します。 選択**NET Framework v4.0.30319**  をクリックし、 **OK**です。  
+6. 新しいアプリケーション プールの作成 (を右クリックして**アプリケーション プール****アプリケーション プールの追加**)。 **名前**アプリケーション プール (など`BTSHTTPReceive`) を選択**NET Framework v4.0.30319**を選択し、 **OK**です。  
   
     > [!NOTE]
-    >  バージョン番号は、コンピューターにインストールされている .NET Framework のバージョンによって異なります。  
+    >  .NET バージョン番号は、コンピューターにインストールされている .NET Framework のバージョンによって異なる場合があります。  
   
-     新しいアプリケーション プールの一覧に含ま**アプリケーション プール**です。  
+     新しいアプリケーション プールが表示されます。  
   
-13. **アプリケーション プール**の**機能ビュー**、新しいアプリケーション プールを選択して、をクリックして**詳細設定**[操作] ウィンドウ。  
+7. 新しいアプリケーション プールを選択して開きます、**詳細設定**(**アクション**ウィンドウ)。 このウィンドウには。
+
+    - **32 ビット アプリケーションを有効にする**: 'Éý' **True**する場合は、32 ビット**BtsHttpReceive.dll**
+    - **モデルの処理** セクションで、 **Identity**: は、省略記号 (**.**) を選択**カスタム アカウント**、し**設定**のメンバーであるアカウントに、 **BizTalk Isolated Host Users**と**IIS_WPG**グループ。 [ **OK**] を選択します。 
   
-14. **詳細設定** ダイアログ ボックスで、**プロセス モデル**セクションで、 **Identity**フィールドで省略記号ボタンをクリックして (**.**) ボタンをクリックします。  
+8. Web サイトに新しいアプリケーションを追加 (を右クリックし、**既定の Web サイト****アプリケーションの追加**)。 このウィンドウには。
   
-15. **アプリケーション プール Id**ダイアログ ボックスで、**カスタム アカウント**、クリックして**設定**です。 **[OK]** をクリックして **[詳細設定]** ダイアログ ボックスを閉じます。  
+    1. **エイリアス**: アプリケーションに関連付けるエイリアスを入力 (など`BTS HTTP Receive`、し**選択**です。  
+    2. 作成した新しいアプリケーション プールを選択し、選択**OK**です。  
+    3. **物理パス**: は、省略記号 (**.**) を参照および[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive です。  
+    4. **テストの設定**にエラーがないことを確認する、 **Test-connection**  ダイアログ ボックス。 **閉じる**、し、 **OK**です。  
   
-16. IIS マネージャーで、開く、**サイト**フォルダーです。 右クリックし、 **Default Web Site**  をクリックし、**アプリケーションの追加**です。  
-  
-17. **アプリケーションの追加**ダイアログ ボックスで、**エイリアス**、クリックして、アプリケーションに関連付けるエイリアスを入力して**選択**です。  
-  
-18. **アプリケーション プールの選択**ダイアログ ボックスで、先ほど作成した新しいアプリケーション プールを選択し、をクリックして**OK**です。  
-  
-19. 省略記号ボタン (**.**) ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive、**物理パス**です。  
-  
-20. をクリックして**接続として**を入力し、**ユーザー名**と**パスワード**Administrators グループのメンバーであるし、ユーザー アカウントの**ok**.  
-  
-21. をクリックして**テストの設定**でエラーが表示されていないことを確認し、**接続のテスト** ダイアログ ボックス。 **[閉じる]**をクリックし、 **[OK]**をクリックします。  
-  
-22. 新しいアプリケーションの一覧に表示**既定の Web サイト**インターネット インフォメーション サービス (IIS) マネージャーでします。  
+    > [!TIP]
+    > テストの設定には、警告が返された場合は、フォルダーへのアクセス許可またはグループへのアクセス、アプリケーション プールの id がない可能性がします。 トラブルシューティング手順として、次のように選択します。**接続として**、入力、**ユーザー名**と**パスワード**Administrators グループのメンバーであるユーザー アカウントのです。 
+
+9. 新しいアプリケーションの表示の下に表示**既定の Web サイト**です。  
   
 ## <a name="see-also"></a>参照  
  [HTTP 受信場所を構成する方法](../core/how-to-configure-an-http-receive-location.md)

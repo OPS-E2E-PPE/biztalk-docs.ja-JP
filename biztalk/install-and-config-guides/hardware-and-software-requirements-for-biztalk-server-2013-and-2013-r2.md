@@ -1,7 +1,8 @@
 ---
 title: "BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア |Microsoft ドキュメント"
+description: "BizTalk Server 2013 および 2013 R2 をインストールするソフトウェアの前提条件とサポートされているバージョンを一覧表示します。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/09/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,11 +13,11 @@ caps.latest.revision: "34"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5202c6777b4296141bc74823834d54b97b7f1572
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d736c7850f40190ca21227e0f9d55de150636a6e
+ms.sourcegitcommit: 85e816bcdeb3d66ea5018cf88aea7059f74f7d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2"></a>BizTalk Server 2013 および 2013 R2 のハードウェア/ソフトウェア要件
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 および [!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)] の要件を示します。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  **コミュニティによる補足**: [BizTalk Server ソリューションのインストール、サイズ変更、展開、維持に関する推奨事項](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)  
   
-##  <a name="BKMK_SoftRequirements"></a> ソフトウェア要件  
+##  <a name="BKMK_SoftRequirements"></a>ソフトウェアの要件とサポートされるバージョン
  以下の表に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の実行に最小限必要なソフトウェアを示します。 これらの事前にインストールする必要のあるソフトウェアのインストール手順については、後のセクションで説明します。  
   
 |ソフトウェア|[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013|このソフトウェアを必要とする機能|  
@@ -49,6 +50,7 @@ ms.lasthandoff: 09/20/2017
 |**Microsoft SQL Server**|[!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)]<br/>[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] SP1<br /><br /> 最適なパフォーマンスを得るには、SQL Server の Enterprise Edition をお勧めします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SDK の全機能を使用する場合や、Visual Studio から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリを展開するには、SQL Server 開発ツールをインストールします。 <br /><br />**重要**  <ul><li>BAM リアルタイム集計 (RTA) は、SQL Server の Standard Edition ではサポートされません。 BAM RTA を使用するには、SQL Server Enterprise Edition をインストールする必要があります。</li><li>実稼働環境で SQL Server Express Edition を使用することはお勧めしません。 Express Edition には、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に必要な特定の機能が含まれていません。</li><li>[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バイナリ照合順序を除く、大文字と小文字を区別する/区別しないすべての SQL 照合順序がサポートされています。 バイナリ照合順序はサポートされません。</li></ul>|[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)]<br/>[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] SP1<br /><br /> 最適なパフォーマンスを得るには、SQL Server の Enterprise Edition をお勧めします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SDK の全機能を使用する場合や、Visual Studio から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリを展開するには、SQL Server 開発ツールをインストールします。 <br /><br />**重要**  <ul><li>BAM リアルタイム集計 (RTA) は、SQL Server の Standard Edition ではサポートされません。 BAM RTA を使用するには、SQL Server Enterprise Edition をインストールする必要があります。</li><li>実稼働環境で SQL Server Express Edition を使用することはお勧めしません。 Express Edition には、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に必要な特定の機能が含まれていません。</li><li>[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バイナリ照合順序を除く、大文字と小文字を区別する/区別しないすべての SQL 照合順序がサポートされています。 バイナリ照合順序はサポートされません。</li></ul>|これは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム、EDI、BAM に必要です。|  
 |**SQL Server Database Mail** / **SQL Server 2005 Notification Services**|[SQL Server データベース メール](http://msdn.microsoft.com/library/hh245116\(v=sql.120\).aspx)を構成します。|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] を使用する場合は、SQL Server 2005 Notification Services をインストールする必要があります。 Notification Services は [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] には含まれていません。 SQL Server 2005 Notification Services は、「[Microsoft SQL Server 2005 用 Feature Pack - 2008 年 12 月](http://go.microsoft.com/fwlink/p/?LinkId=154501)」からダウンロードします。<br /><br /> [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] を使用する場合は、[SQL Server データベース メール](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx)を構成します。|BAM 警告で使用されます。 <br /><br />**注:**  BAM 警告を使用する場合のみ必要です。|  
 |**SQLXML 4.0 Service Pack 1**|SQLXML 4.0 SP1 をインストールするには、「[SqlXml 4.0 Service Pack 1 (SP1)](http://www.microsoft.com/download/details.aspx?id=30403)」をご覧ください。|SQLXML 4.0 SP1 をインストールするには、「[Microsoft SQL Server 2008 用 Feature Pack](http://go.microsoft.com/fwlink/?LinkID=189325)」 (http://go.microsoft.com/fwlink/p/?LinkID=189325) をご覧ください。|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム、管理ツール、BAM で必要です。 SQL Server データベースで XML をサポートするためのソフトウェアです。開発するアプリケーションの中で XML とリレーショナル データを連携させることができるようになります。 たとえば、既存のリレーショナル データの XML ビューを作成して、XML ファイルと同じように操作することができます。|  
+|**LOB およびエンタープライズ システム** | [サポートされている基幹業務 (LOB) とエンタープライズ システム](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)サポートされているバージョンを一覧表示します。 | [サポートされている基幹業務 (LOB) とエンタープライズ システム](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)サポートされているバージョンを一覧表示します。 | BizTalk Adapter Pack でアダプターを使用する場合に必要です。 <br/><br/> [BizTalk Adapter Pack](../adapters-and-accelerators/biztalk-adapter-pack.md)使用可能なシステムのアダプタを一覧表示します。 |
   
 ##  <a name="BKMK_SPCUSupport"></a> Service Pack と累積した更新プログラムのサポート  
  すべての Service Pack、累積した更新プログラム、セキュリティ更新プログラム、修正プログラムは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でサポートされます。 [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、Visual Studio、その他のインストールされているプログラムの最新の更新プログラムを必ずインストールするようお勧めします。 マイクロソフト製品の Service Pack はその製品の基本サポートに基づいてサポートされます。 「[サポート ライフサイクル - 製品名一覧](http://go.microsoft.com/fwlink/p/?LinkID=151890)」で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、Visual Studio、その他のマイクロソフト プログラムをご覧ください。  

@@ -1,8 +1,9 @@
 ---
 title: "BizTalk Server 2016 でのハードウェアおよびソフトウェア |Microsoft ドキュメント"
+description: "BizTalk Server 2016 をインストールするソフトウェアの前提条件とサポートされているバージョンを一覧表示します。"
 ms.custom: 
 ms.prod: biztalk-server
-ms.date: 06/08/2017
+ms.date: 10/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -12,11 +13,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2542299e60936b7fa8a1a2e6c7d86a0db3a07893
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63993b544aead238d28623ab291887535e2f06ab
+ms.sourcegitcommit: 85e816bcdeb3d66ea5018cf88aea7059f74f7d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="hardware-and-software-requirements-for-biztalk-server-2016"></a>BizTalk Server 2016 のハードウェアとソフトウェアの要件
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 > ここにリストされているのは最小のハードウェア要件です。 環境はそれぞれ異なり、ご使用の環境ではこれらを超える要件が必要となる可能性は十分あります。 「[BizTalk Server ソリューションのインストール、サイズ変更、配置、およびメンテナンスを行うための推奨事項](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)」を参照してください。 
 
 
-## <a name="software-requirements"></a>ソフトウェア要件
+## <a name="software-requirements--supported-versions"></a>ソフトウェアの要件とサポートされるバージョン
 
 | ソフトウェア  |   バージョン |  このソフトウェアを必要とする機能 | 
 | --- | --- | --- | 
@@ -49,6 +50,7 @@ ms.lasthandoff: 09/20/2017
 | SQL Server データベース メール  | SQL Server に付属するバージョンです。 [SQL Server データベース メールを構成](https://msdn.microsoft.com/library/hh245116(v=sql.130).aspx)します。| 省略可。 <br/><br/>BAM 警告を使用する場合に必要です。 | 
 | SQL XML | SQL XML 4.0 Service Pack 1。 [SqlXml 4.0 Service Pack 1 (SP1) をダウンロード](https://www.microsoft.com/en-us/download/details.aspx?id=30403)します。 | BizTalk Server ランタイム、管理ツール、および BAM で必要です。 <br/><br/> SQLXML は、SQL Server データベースに対する XML サポートを有効にします。 SQLXML により、開発者は XML とリレーショナル データとのギャップを解消できます。 既存のリレーショナル データの XML ビューを作成し、XML ファイルと同じようにビューを操作することができます。 <br/><br/>**注**: <br/>これは、再頒布可能 CAB ファイルで自動的にインストールされます。 SQL XML には、CAB ファイルに含まれていない独自のソフトウェア要件 (`.NET Framework 3.5` や `.NET Framework 2.0` など) がある場合があります。 BizTalk Server からインターネットにアクセスできる場合、SQL XML ソフトウェア要件は自動的にインストールされます。 BizTalk Server がインターネットにアクセスできない場合は、SQL XML ソフトウェア要件を手動でインストールします。| 
 | WinSCP | WinSCP バージョン 5.7.7。 [WinSCP をダウンロード](http://winscp.net)します。| SFTP アダプターを使用する場合に必要です。 |
+|LOB およびエンタープライズ システム | [サポートされている基幹業務 (LOB) とエンタープライズ システム](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)サポートされているバージョンを一覧表示します。 | BizTalk Adapter Pack でアダプターを使用する場合に必要です。 <br/><br/> [BizTalk Adapter Pack](../adapters-and-accelerators/biztalk-adapter-pack.md)使用可能なシステムのアダプタを一覧表示します。 |
 
 ## <a name="service-pack-and-cumulative-update-support"></a>Service Pack と累積した更新プログラムのサポート
 
