@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSMQ adapters, examples
-- examples, MSMQ adapters
 ms.assetid: 1fb87b46-5656-42c0-be99-8ab66e51bb4d
 caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e6a3fda3082260338bd387dfe84fe48c7aed565
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41994da40d6471688193f7aca915535fcd52bfbe
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="large-message-to-msmq"></a>MSMQ にサイズの大きいメッセージ
 MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメント 4 メガバイト (MB) よりも大きいメッセージ キュー (MSMQ とも呼ばれます) から BizTalk MSMQ アダプターを使用して送信する方法を示します、 **MQSendLargeMessage** API によって実装されていませんMQRTLarge.dll です。  
@@ -29,7 +26,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
 1.  ユーザーが SendLargeMessage.exe を使用して、サイズの大きい .xml ファイルをローカル コンピューター上のキューに送信します。  
   
-2.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] はサイズの大きい .xml ファイルをキューから受信し、ローカル ディレクトリにコピーします。  
+2.  BizTalk Server では、キューからサイズの大きい .xml ファイルを受信し、ローカル ディレクトリにコピーします。  
   
  メッセージ キューの多くの操作は非同期です。 多くは、MSMQ API 呼び出し (たとえば、 **MQSendLargeMessage**)、要求された操作が完全に完了する前に、呼び出し元に戻ります。  
   
@@ -43,25 +40,25 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
  \<サンプル パス > \AdaptersUsage\MSMQLarge  
   
 > [!NOTE]
->  64 ビット バージョンの Windows を使用する場合と[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、サンプルにインストールされる、 **C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge**フォルダーです。  使用してこのドキュメントでその他の手順については、この変更に注意してください、 **C:\Program Files**フォルダーです。  
+>  サンプルにインストールする場合は、64 ビット バージョンの Windows および BizTalk Server を使用して、 **C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge**フォルダーです。  使用してこのドキュメントでその他の手順については、この変更に注意してください、 **C:\Program Files**フォルダーです。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
 |**ファイル**|**Description**|  
 |--------------|---------------------|  
-|**MQRTLarge.dll**|ネイティブのメッセージ キュー用のアドオンを提供します。 公開、 **MQSendLargeMessage**と**MQReceiveLargeMessage** Api です。<br /><br /> 64 ビット版の MQRTLarge.dll にアクセスするために、64 ビット版の Windows に [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] をインストールする必要があります。<br /><br /> [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] を使用しない MSMQ ソリューションでは、MQRTLarge.dll が依然として正常に機能する場合があります。 ただし、これはマイクロソフトがサポートする推奨構成でなく、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 環境の外部で使用した場合は予期せぬ結果が生じることがあります。|  
+|**MQRTLarge.dll**|ネイティブのメッセージ キュー用のアドオンを提供します。 公開、 **MQSendLargeMessage**と**MQReceiveLargeMessage** Api です。<br /><br /> 64 ビット版の MQRTLarge.dll にアクセスするのには、64 ビット バージョンの Windows で BizTalk Server をインストールする必要があります。<br /><br /> BizTalk Server なしの MSMQ ソリューションでは、引き続き、MQRTLarge.dll から正常に機能します。 ただし、これは Microsoft がサポートするための推奨構成ではありません、BizTalk Server 環境の外部で使用されている場合に、予期しない結果が発生する可能性があります。|  
 |||  
-|**Largemessages.sln という**|サンプルで使用する SendLargeMessage 実行可能ファイルを作成するための [!INCLUDE[vs2010](../includes/vs2010-md.md)] ソリューションを提供します。|  
-|**XMLCreator.sln**|XMLCreator 実行可能ファイルを作成して SDK サンプルのテスト用 .xml ファイルを生成するための [!INCLUDE[vs2010](../includes/vs2010-md.md)] ソリューションを提供します。|  
+|**Largemessages.sln という**|サンプルで使用する SendLargeMessage 実行可能ファイルを作成するための Visual Studio ソリューションを提供します。|  
+|**XMLCreator.sln**|XMLCreator 実行可能ファイルを作成して SDK サンプルのテスト用 .xml ファイルを生成するための Visual Studio ソリューションを提供します。|  
   
-## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a>BizTalk Server の構成と MSMQ キューの作成  
- [!INCLUDE[vs2010](../includes/vs2010-md.md)]、Microsoft メッセージ キュー、および [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] がインストールされていることを確認します。  
+## <a name="configure-biztalk-and-create-the-msmq-queue"></a>BizTalk の構成し、MSMQ キューの作成  
+ Visual Studio、Microsoft メッセージ キュー、および BizTalk Server がインストールされていることを確認します。  
   
 #### <a name="to-configure-biztalk-server"></a>BizTalk Server を構成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]を開き、 **C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln**ソリューション ファイルです。  サンプルをビルドします。  
+1.  Visual Studio で開く、 **C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln**ソリューション ファイルです。  サンプルをビルドします。  
   
-2.  作成、 **C:\Demo**ディレクトリ場所[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]MSMQ からのメッセージを配置します。  
+2.  作成、 **C:\Demo** BizTalk Server が MSMQ からメッセージを配置するディレクトリ。  
   
 3.  開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
   
@@ -119,7 +116,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
     3.  右クリック**MSMQReceiveLocation**、クリックして**を有効にする**です。  
   
-#### <a name="to-create-the-msmq-queue-in-windows-server-2008-r2-or-windows-server-2008-sp2"></a>Windows Server 2008 R2 または Windows Server 2008 SP2 で MSMQ キューを作成するには  
+#### <a name="to-create-the-msmq-queue-in-windows-server"></a>Windows Server の MSMQ キューを作成するには
   
 1.  をクリックして**開始**を右クリックして**コンピューター**、順にクリック**管理**です。  
   
@@ -133,7 +130,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
 6.  **[OK]**をクリックします。  
   
-#### <a name="to-create-the-msmq-queue-in-windows-7-or-windows-vista-sp2"></a>Windows 7 または Windows Vista SP2 で MSMQ キューを作成するには  
+#### <a name="to-create-the-msmq-queue-in-windows"></a>Windows で MSMQ キューを作成するには 
   
 1.  をクリックして**開始**を右クリックして**コンピューター**、順にクリック**管理**です。  
   
@@ -152,7 +149,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
 #### <a name="to-create-a-large-test-file"></a>サイズの大きいテスト ファイルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューションを開いて**C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**です。  
+1.  Visual Studio でソリューションを開いて**C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**です。  
   
 2.  プロジェクトをビルドおよび実行します。  
   
@@ -174,7 +171,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
     DIRECT=OS:localhost\private$\Test  "C:\Program Files\Microsoft BizTalk Server <version>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeFile.xml"  
     ```  
   
-3.  同じサイズのファイルが作成されたことを確認してください、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]内のコンピューター、 **C:\Demo**ディレクトリ。 これが MySendPort 送信ポートで識別されたディレクトリです。  
+3.  BizTalk Server コンピューターで、同じサイズのファイルが作成されたことを確認してください、 **C:\Demo**ディレクトリ。 これが MySendPort 送信ポートで識別されたディレクトリです。  
   
 ## <a name="comments"></a>コメント  
  SendLargeMessage.exe 参照、 **LargeMessages** API で、さらに、BizTalk メッセージ キュー大きいメッセージ用拡張機能 (MQRTLarge.dll) API を参照します。 メッセージ キューのサイズの大きいメッセージ用拡張機能 API はネイティブのメッセージ キュー用のアドオンで、ネイティブのメッセージ キューでは処理できない、4 MB の制限を超えるメッセージを処理できます。  

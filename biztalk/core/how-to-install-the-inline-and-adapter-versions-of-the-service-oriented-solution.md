@@ -1,5 +1,5 @@
 ---
-title: "指向ソリューションのインライン バージョンおよびアダプター バージョンのサービスをインストールする方法 |Microsoft ドキュメント"
+title: "インラインをインストールし、アダプター バージョンのサービス指向ソリューション |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,83 +7,27 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- certificate services
-- service solution tutorial, affiliat applications [SSO]
-- service solution tutorial, adapter version
-- service solution tutorial, Web services
-- service solution tutorial, definition files [BAM]
-- service solution tutorial, COM+ applications
-- service solution tutorial, virtual directories
-- service solution tutorial, testing connectivity
-- TI components
-- MQSeries queues, creating
-- service solution tutorial, deploying
-- service solution tutorial, MQSeries adapters
-- service solution tutorial, mainframe CICS applications
-- service solution tutorial, certificate services
-- service solution tutorial, back-end systems
-- service solution tutorial, MQSeries queues
-- service solution tutorial, remote environments
-- certificates, creating requests
-- service solution tutorial, starting service
-- service solution tutorial, TI components
-- service solution tutorial, inline version
-- CICS application
-- service solution tutorial, installing
-- service solution tutorial, deleting stub version
-- service solution tutorial, certificates
 ms.assetid: 6050cfe9-4e94-4a55-8b24-fbcc74d9e8f4
 caps.latest.revision: "97"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb7de8939037f9e7647c62c1164e3c3de3ab378c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbf374b4efb219f1221275819713787565a325b0
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution"></a>サービス指向ソリューションのインライン バージョンおよびアダプター バージョンをインストールする方法
 次の手順では、サービス指向ソリューションのインライン バージョンおよびアダプタ バージョンをコンピュータにインストールするための準備を行う方法、およびコンピュータにソリューションをインストールする方法について説明します。  
   
--   [サービス指向ソリューションのアダプターとインライン バージョンをインストールするコンピューターを準備します](#step1)  
-  
--   [サービス指向ソリューションのスタブ バージョンを削除します。](#step3)  
-  
--   [アクセスするサービス指向ソリューションのバックエンド システムを準備します。](#step5)  
-  
--   [セキュリティで保護されたソケット レイヤー (SSL) の Web サーバーを構成します。](#step7)  
-  
--   [バックエンド システム用の Web サービスを作成します。](#step9)  
-  
--   [サービス指向ソリューションの TI コンポーネントを作成します。](#step11)  
-  
--   [Web サービスのオーケストレーションの仮想ディレクトリを作成します。](#step13)  
-  
--   [ビルド サービス指向ソリューション](#step15)  
-  
--   [SSO 関連アプリケーションを作成します。](#step17)  
-  
--   [サービス指向ソリューションの BAM 定義ファイルを配置します。](#step19)  
-  
--   [配置サービス指向ソリューション](#step21)  
-  
--   [メインフレームが利用できない場合は、スタブ Pending Transactions Web サービスを構成します。](#step23)  
-  
--   [開始、サービス指向ソリューション](#step25)  
-  
 > [!NOTE]
->  サービス指向ソリューションはフォルダーにある\< *BizTalk Server のインストール フォルダー*> \SDK\Scenarios\SO です。  
-  
-> [!NOTE]
->  このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。  
+>  - サービス指向ソリューションはフォルダーにある\< *BizTalk Server のインストール フォルダー*> \SDK\Scenarios\SO です。  
+>  - このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。  
   
 ##  <a name="step1"></a>サービス指向ソリューションのアダプターとインライン バージョンをインストールするコンピューターを準備します  
   
-#### <a name="to-prepare-the-computer-for-installing-the-adapter-and-inline-versions-of-the-service-oriented-solution"></a>サービス指向ソリューションのアダプター バージョンおよびインライン バージョンをコンピューターにインストールするための準備を行うには  
-  
-1.  Windows SharePoint Services をインストールした場合 (ルートを除外)、既定の Web サイトの Windows SharePoint Services 管理パスから次のようにします  をクリック**開始**、 をポイント**すべてのプログラム**、 をポイント。**管理ツール**、クリックして**SharePoint サーバーの全体管理**です。  
+1.  Windows SharePoint Services をインストールした場合 (ルートを除外)、既定の Web サイトの Windows SharePoint Services 管理パスから次のようにします  をクリック**開始**、をポイント**すべてのプログラム**、 をポイント。**管理ツール**、クリックして**SharePoint サーバーの全体管理**です。  
   
     1.  **仮想サーバーの構成****仮想サーバーの設定を構成する**です。  
   
@@ -91,11 +35,11 @@ ms.lasthandoff: 09/20/2017
   
     3.  **仮想サーバーの設定**] ページで [**管理パスの定義**です。  
   
-    4.  **インクルード パス**のセクションで、**管理パスの定義** ページで、**ルート** をクリックし、**選択したパスの削除**です。  
+    4.  **インクルード パス**のセクションで、**管理パスの定義**] ページで、[**ルート**をクリックし、**選択したパスの削除**です。  
   
     5.  コマンド プロンプトで IISReset コマンドを実行します。  
   
-2.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、 をクリックして**コンピューターの管理**コンソール、および追加し、ローカルの Administrators グループに BizTalk サービス アカウント。  
+2.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**管理ツール**、をクリックして**コンピューターの管理**コンソール、および追加し、ローカルの Administrators グループに BizTalk サービス アカウント。  
   
 3.  コンピュータからログオフして、BizTalk サービス アカウントを使用してコンピュータにログオンします。  
   
@@ -111,9 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step3"></a>サービス指向ソリューションのスタブ バージョンを削除します。  
   
-#### <a name="to-remove-the-stub-version-of-the-service-oriented-solution"></a>サービス指向ソリューションのスタブ バージョンを削除するには  
-  
-1.  開く、 **BizTalk Server 管理コンソール**次のように: をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理**です。  
+1.  開く、 **BizTalk Server 管理コンソール**次のように: をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理**です。  
   
 2.  **BizTalk Server 管理コンソール**、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして**[btsscn.so.customerservice]**、クリックして**停止**です。 **アプリケーションの停止**ダイアログ ボックスで、**完全停止 - インスタンスを終了**、クリックして**停止**です。  
   
@@ -163,11 +105,11 @@ ms.lasthandoff: 09/20/2017
   
     -   `iisvdir /delete W3SVC/1/ROOT/Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker`  
   
-11. 次のようにインターネット インフォメーション サービス (IIS) マネージャーを開始: をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**をクリックして**インターネット インフォメーション サービス (IIS) マネージャー**です。  
+11. 次のようにインターネット インフォメーション サービス (IIS) マネージャーを開始: をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**管理ツール**をクリックして**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
     -   展開、**アプリケーション プール**の以前の Web アプリケーションを作成したアプリケーション プールを右クリックしをクリックして**削除**、順にクリック**[ok]**確認ダイアログでダイアログ ボックス。  
   
-12. をクリックして**開始**、 をポイント**コントロール パネルの** 、 をクリックして**プログラム追加と削除**、IBM WebSphere MQ Client for Windows をアンインストールします。  
+12. をクリックして**開始**、をポイント**コントロール パネルの** 、をクリックして**プログラム追加と削除**、IBM WebSphere MQ Client for Windows をアンインストールします。  
   
 13. 開始**Visual Studio コマンド プロンプト**し、スタブ バージョン用にインストールした amqmdnet.dll を削除するのには、次のコマンドを実行します。  
   
@@ -175,9 +117,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step5"></a>アクセスするサービス指向ソリューションのバックエンド システムを準備します。  
   
-#### <a name="to-install-the-required-applications-for-the-back-end-systems-for-the-service-oriented-solution-to-access"></a>サービス指向ソリューションがアクセスするバックエンド システムに必要なアプリケーションをインストールするには  
-  
-1.  ローカル コンピューターに IBM WebSphere MQ for Windows のバージョン 5.3 サーバーをインストールします。  
+1.  IBM WebSphere MQ for Windows Server、ローカル コンピューターにインストールします。  
   
     1.  すべての設定を既定のままにします。 セットアップ、**既定の構成**の最後に、 **WebSphere MQ ウィザードの準備**です。 キュー マネージャーは、qm _ という名前\<*コンピューター名*>。  
   
@@ -191,7 +131,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  **コンポーネントのインストール** ページで、展開、**追加のソフトウェア**ノードをクリックして**MQSeries エージェント**です。  
   
-    4.  **完了**ことを確認] ページで、 **[BizTalk MQSeries エージェント構成ウィザードの**が選択されていません。  
+    4.  **完了**ことを確認 ページで、 **BizTalk MQSeries エージェント構成ウィザードの**が選択されていません。  
   
     > [!NOTE]
     >  **MQSeries エージェント**for Windows がインストールされている チェック ボックスは、IBM WebSphere MQ の後にのみアクティブ化されています。  
@@ -207,11 +147,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  インストールし、メインフレームにアクセスした場合は、Microsoft Host Integration Server 2004 を構成します。 すべての設定を既定のままにします。  
   
-#### <a name="to-create-the-mqseries-queues"></a>MQSeries キューを作成するには  
+#### <a name="create-the-mqseries-queues"></a>MQSeries キューを作成します。  
   
 1.  WebSphere MQ エクスプ ローラーを開き、展開**キュー マネージャー**、キューを作成するキュー マネージャーを展開します。 通常、キュー マネージャーの名前 qm _ として\<*コンピューター名*>。  
   
-2.  WebSphere MQ エクスプ ローラーを右クリックして**キュー**、 をポイント**新規**をクリックして**ローカル キュー**のアダプター バージョン用の次のローカル キューを作成し、解決方法:  
+2.  WebSphere MQ エクスプ ローラーを右クリックして**キュー**、をポイント**新規**をクリックして**ローカル キュー**のアダプター バージョン用の次のローカル キューを作成し、解決方法:  
   
     -   AdapterSOAInputQueue  
   
@@ -235,9 +175,9 @@ ms.lasthandoff: 09/20/2017
   
     -   LastPaymentsOutputQueue  
   
-#### <a name="to-complete-configuration-of-the-mqseries-adapter"></a>MQSeries アダプターの構成を完了するには  
+#### <a name="complete-configuration-of-the-mqseries-adapter"></a>MQSeries アダプターの完全な構成  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk MQSeries エージェント構成ウィザード**です。  
+1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk MQSeries エージェント構成ウィザード**です。  
   
 2.  **ようこそ** ページで、をクリックして**次**です。  
   
@@ -249,7 +189,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  **MQSAgent COM + アプリケーションを作成する** ページで、をクリックして**次へ**、順にクリック**完了**上、**完了**ページ。  
   
-#### <a name="to-configure-the-mainframe-cics-application"></a>メインフレームの CICS アプリケーションを構成するには  
+#### <a name="configure-the-mainframe-cics-application"></a>メインフレームの CICS アプリケーションを構成します。  
   
 1.  メモ帳を使用して %BTSSolutionsPath%\SO\MFAccess\HISTIComponent フォルダーの bizcbl.txt とその "コピー ブック" (MainFrameProgramVTCS2Description.txt) を開き、内容を確認します。  
   
@@ -258,7 +198,7 @@ ms.lasthandoff: 09/20/2017
     -   MainFrameProgramVTCS2Descriptoin.txt には、入出力データ情報を記述する COMMAREA が記述されています。 COMMAREA は、呼び出し元プログラムと呼び出し先プログラムの間でデータをやり取りするために使用する連続したメモリ ブロックです。  
   
     > [!NOTE]
-    >  コピー ブックを使用してトランザクション インテグレーター (TI) メタデータ ファイルを生成し、[!INCLUDE[vs2010](../includes/vs2010-md.md)] で TI デザイナー プラグインを使用することもできます。  
+    >  また、TI デザイナー プラグインで Visual Studio を使用してトランザクション インテグレーター (TI) メタデータ ファイルを生成するのにコピー ブックを使用することができます。  
   
     > [!NOTE]
     >  以降のステップは正常な配置を行うために非常に重要な操作ですが、一般的には BizTalk Server 開発者は行いません。 メインフレームの担当者に依頼して、メインフレーム環境を適切に構成する必要があります。 このチュートリアルで必要なソフトウェアは、一般的にほとんどのメインフレーム環境にインストールされています。 最小のメインフレーム オペレーティング システムの環境の詳細については、Host Integration Server のマニュアルを参照してください。  
@@ -321,15 +261,15 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step7"></a>セキュリティで保護されたソケット レイヤー (SSL) の Web サーバーを構成します。  
   
-#### <a name="to-install-certificate-services"></a>証明書サービスをインストールするには  
+#### <a name="install-certificate-services"></a>証明書サービスをインストールします。  
   
-1.  をクリックして**開始**、] をポイント**コントロール パネルの [**、順にクリック**プログラム追加と削除**です。  
+1.  をクリックして**開始**、をポイント**コントロール パネルの** 、順にクリック**プログラム追加と削除**です。  
   
 2.  **プログラム追加と削除**ダイアログ ボックスで、をクリックして**Windows コンポーネントの追加/削除**です。  
   
 3.  **Windows コンポーネント ウィザード**を選択、**証明書サービス**、 をクリックして**次へ**、しに従って、画面に表示されるインストールを完了する指示します。  
   
-#### <a name="to-create-a-certificate-request"></a>証明書要求を作成するには  
+#### <a name="create-a-certificate-request"></a>証明書の要求を作成します。  
   
 1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト**を右クリックし、**既定の Web サイト**をクリックして**プロパティ**、をクリックして、**ディレクトリ セキュリティ** タブをクリックして**サーバー証明書**です。  
   
@@ -351,7 +291,7 @@ ms.lasthandoff: 09/20/2017
   
 10. **要求ファイルの概要** ページで、をクリックして**次へ**、順にクリック**完了**上、**完了**ページ。  
   
-#### <a name="to-submit-the-certificate-request-to-the-certification-authority"></a>証明機関に証明書の要求を送信するには  
+#### <a name="submit-the-certificate-request-to-the-certification-authority"></a>証明機関に証明書の要求を送信します。  
   
 1.  Internet Explorer で、[アドレス] ボックスで、次のように入力します。 `http://localhost/certsrvt`、ENTER キーを押します。  
   
@@ -361,15 +301,15 @@ ms.lasthandoff: 09/20/2017
   
 4.  "証明書の要求を作成するには"貼り付けますの手順で作成した c:\certreq.txt からすべてのテキストをコピー、**保存されている要求**ボックスに、**証明書の要求または更新の要求を送信**クリックして、ページ、**送信**です。  
   
-#### <a name="to-issue-a-certificate-using-certification-authority-management-tool"></a>証明機関管理ツールを使用して証明書を発行するには  
+#### <a name="issue-a-certificate-using-certification-authority-management-tool"></a>証明機関管理ツールを使用して証明書を発行します。  
   
-1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**証明機関**です。  
+1.  をクリックして**開始**、をポイント**管理ツール**、順にクリック**証明機関**です。  
   
 2.  **証明機関**コンソールで、証明機関の名前を展開し、展開、**保留中の要求**、前の手順では、ポイントに送信した証明書の要求を右クリックして**すべてのタスク**、クリックして**問題**です。  
   
 3.  閉じる、**証明機関**コンソールです。  
   
-#### <a name="to-download-the-certificate-to-the-web-server"></a>証明書を Web サーバーにダウンロードするには  
+#### <a name="download-the-certificate-to-the-web-server"></a>Web サーバーに証明書をダウンロードします。  
   
 1.  Internet Explorer で、[アドレス] ボックスで、次のように入力します。 `http://localhost/certsrvt`、ENTER キーを押します。  
   
@@ -381,7 +321,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **セキュリティ警告**ダイアログ ボックスで、をクリックして**保存**、し、証明書を c:\certnew.cer として保存します。  
   
-#### <a name="to-install-the-certificate-to-the-web-server"></a>Web サーバーに証明書をインストールするには  
+#### <a name="install-the-certificate-to-the-web-server"></a>Web サーバーに証明書をインストールします。  
   
 1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**証明書の要求を作成するし、をクリックして**プロパティ**です。  
   
@@ -400,8 +340,6 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step9"></a>バックエンド システム用の Web サービスを作成します。  
   
-#### <a name="to-create-a-new-iis-application-pool-for-the-pending-transaction-web-services"></a>Pending Transaction Web サービス用に新しいアプリケーション プールを作成するには  
-  
 1.  **インターネット インフォメーション サービス (IIS) マネージャー**を右クリックして**アプリケーション プール****新規**、し、 **のアプリケーションプール**.  
   
     > [!NOTE]
@@ -413,9 +351,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  **プロパティ** ページで、をクリックして、 **Identity**  タブで **構成可能**、入力、**ユーザー名**と**パスワード**、クリックして**OK**です。 このチュートリアルでは、BizTalk サービスが使用するユーザー アカウントとして同じものを使用します。  
   
-#### <a name="to-create-the-pendingtransactions-web-service-for-runtime"></a>ランタイム用の PendingTransactions Web サービスを作成するには  
+#### <a name="create-the-pendingtransactions-web-service-for-runtime"></a>ランタイム用の PendingTransactions Web サービスを作成します。  
   
-1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、 をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
+1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
   
      使用して、**仮想ディレクトリの作成ウィザード**、スタブ SAP Web サービスの次の仮想ディレクトリを作成します。  
   
@@ -433,9 +371,9 @@ ms.lasthandoff: 09/20/2017
   
     3.  **仮想ディレクトリ** タブで、設定、**アプリケーション プール**Pending Transaction Web サービスの新しい IIS アプリケーション プールの作成"するには」手順で作成したアプリケーション プールにします。  
   
-#### <a name="to-create-the-pendingtransactions-web-service-for-development-environment"></a>開発環境用の PendingTransactions Web サービスを作成するには  
+#### <a name="create-the-pendingtransactions-web-service-for-development-environment"></a>開発環境用の PendingTransactions Web サービスを作成します。  
   
-1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、 をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
+1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
   
      使用して、**仮想ディレクトリの作成ウィザード**、スタブ SAP Web サービスの次の仮想ディレクトリを作成します。  
   
@@ -454,9 +392,9 @@ ms.lasthandoff: 09/20/2017
   
     2.  **仮想ディレクトリ** タブで、設定、**アプリケーション プール**Pending Transaction Web サービスの新しい IIS アプリケーション プールの作成"するには」手順で作成したアプリケーション プールにします。  
   
-#### <a name="to-create-the-stub-sap-web-service"></a>スタブ SAP Web サービスを作成するには  
+#### <a name="create-the-stub-sap-web-service"></a>スタブ SAP Web サービスを作成します。  
   
-1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、 をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
+1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
   
      使用して、**仮想ディレクトリの作成ウィザード**、スタブ SAP Web サービスの次の仮想ディレクトリを作成します。  
   
@@ -474,7 +412,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step11"></a>サービス指向ソリューションの TI コンポーネントを作成します。  
   
-#### <a name="to-create-a-com-application-for-the-ti-component"></a>TI コンポーネント用の COM+ アプリケーションを作成するには  
+#### <a name="create-a-com-application-for-the-ti-component"></a>TI コンポーネント用の COM + アプリケーションを作成します。  
   
 1.  コマンド プロンプトで %systemroot%\system32\com\comexp.msc を実行します。  
   
@@ -488,7 +426,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  **アプリケーション ロールの追加**] ページで [**次**です。  
   
-    5.  **にユーザー ロールを追加** ページで、展開**CreatorOwner**、 をクリックして**ユーザー**、クリックして**追加**です。  
+    5.  **にユーザー ロールを追加** ページで、展開**CreatorOwner**、をクリックして**ユーザー**、クリックして**追加**です。  
   
     6.  **[ユーザーまたはグループ**] ダイアログ ボックスで、メインフレームにアクセスするために使用されるユーザー アカウントを選択します。 このチュートリアルでは、UserID ローカル アカウントを追加します。  
   
@@ -497,9 +435,9 @@ ms.lasthandoff: 09/20/2017
   
     7.  **完了**] ページで [**完了**です。  
   
-#### <a name="to-create-a-remote-environment-to-access-the-mainframe"></a>メインフレームにアクセスするためのリモート環境を作成するには  
+#### <a name="create-a-remote-environment-to-access-the-mainframe"></a>メインフレームにアクセスするリモート環境を作成します。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Host Integration Server 2004**、順にクリック**TI マネージャー**です。  
+1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft Host Integration Server 2004**、順にクリック**TI マネージャー**です。  
   
 2.  **TI マネージャー**コンソールで **トランザクション インテグレーター (構成)**、展開**Windows Initiated Processing**を右クリックして**リモート環境**、指す**新規**、順にクリック**リモート環境**です。  
   
@@ -513,9 +451,9 @@ ms.lasthandoff: 09/20/2017
   
     5.  **完了**] ページで [**完了**です。  
   
-#### <a name="to-create-the-ti-component-for-the-service-oriented-solution"></a>サービス指向ソリューション用の TI コンポーネントを作成するには  
+#### <a name="create-the-ti-component-for-the-service-oriented-solution"></a>サービス指向ソリューションの TI コンポーネントの作成します。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Host Integration Server 2004**、順にクリック**TI マネージャー**です。  
+1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft Host Integration Server 2004**、順にクリック**TI マネージャー**です。  
   
 2.  **TI マネージャー**コンソールで、をクリックして**トランザクション インテグレーター (構成)**をクリックして**Windows Initiated Processing**、順にクリック**オブジェクト**. 右クリック**オブジェクト**をクリックして**新規**、順にクリック**オブジェクト**です。  
   
@@ -525,11 +463,11 @@ ms.lasthandoff: 09/20/2017
   
     3.  **COM オブジェクトの環境特性の定義**] ページで、[ **BTSScn SO TI Component**の**COM + アプリケーション**、クリックして**[次へ]**.  
   
-    4.  **リモート環境の定義** ページで、前の手順で作成したリモート環境を選択して、**リモート環境では、し、次へ をクリックします。**  
+    4.  **リモート環境の定義**] ページで、前の手順で作成したリモート環境を選択して、**リモート環境では、し、[次へをクリックします。**  
   
     5.  **WIP オブジェクトの作成** ページで、をクリックして**次へ**、順にクリック**完了**上、**完了**ページ。  
   
-#### <a name="to-test-the-connectivity-to-the-mainframe"></a>メインフレームへの接続をテストするには  
+#### <a name="test-the-connectivity-to-the-mainframe"></a>メインフレームに接続をテストします。  
   
 1.  Windows エクスプローラーで %BTSSolutionsPath%\SO\MFAccess\HISTISimpleTester フォルダーを開き、Interop.SOHISTIUsingCOM.dll.reg ファイルをダブルクリックします。 これにより、ランタイム呼び出し可能ラッパー (RCW) を経由して TI コンポーネントを呼び出す HISTISimpleTester アプリケーションのレジストリ値が追加されます。  
   
@@ -540,8 +478,6 @@ ms.lasthandoff: 09/20/2017
     -   HISTISimpleTester アプリケーションでクリックして**Call Mainframe Program - COM を使用して**です。 メインフレームで実行されている COBOL アプリケーションから、5 レコードが返されます。  
   
 ##  <a name="step13"></a>Web サービスのオーケストレーションの仮想ディレクトリを作成します。  
-  
-#### <a name="to-create-the-virtual-directories-for-the-orchestration-web-services"></a>オーケストレーション Web サービス用の仮想ディレクトリを作成するには  
   
 1.  **インターネット インフォメーション サービス (IIS) マネージャー**を右クリックして**アプリケーション プール****新規**、し、 **のアプリケーションプール**.  
   
@@ -554,7 +490,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  このユーザーには、オーケストレーション プロキシ Web サービスを実行する権限が必要です。また、BizTalk Server 管理者グループ、SSO 管理者グループ、または SSO 関連管理者グループのいずれかにこのユーザーを追加する必要があります。  
   
-2.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、 をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
+2.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
   
      使用して、**仮想ディレクトリの作成ウィザード**、アダプター バージョン用の Web サービス プロキシの次の仮想ディレクトリを作成します。  
   
@@ -570,7 +506,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  **ディレクトリ セキュリティ** タブで、をクリックして**編集**で、**認証とアクセス制御**グループ ボックスで、**統合 Windows 認証のみ有効になっている**、し、その他のオフ**認証アクセス**チェック ボックスをオンします。 をクリックして**OK**を終了します。  
   
-4.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、 をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
+4.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
   
      使用して、**仮想ディレクトリの作成ウィザード**、インライン バージョン用の Web サービス プロキシの次の仮想ディレクトリを作成します。  
   
@@ -588,8 +524,6 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step15"></a>ビルド サービス指向ソリューション  
   
-#### <a name="to-build-the-service-oriented-solution"></a>サービス指向ソリューションをビルドするには  
-  
 -   コマンド プロンプトでディレクトリを変更 BTSSolutionsPath%\SO\BTSSoln、型 % `SetupBTSSoln.bat`、ENTER キーを押します。 SetupBTSSoln.bat では、次のタスクが実行されます。  
   
     -   SO ソリューションのアセンブリに署名を一意の厳密な名前キー (SNK) を作成します。  
@@ -601,8 +535,6 @@ ms.lasthandoff: 09/20/2017
     -   %BTSSolutionsPath%\Common フォルダーに SSOApplicationConfig を作成します。  
   
 ##  <a name="step17"></a>SSO 関連アプリケーションを作成します。  
-  
-#### <a name="to-create-the-sso-affiliate-applications"></a>SSO 関連アプリケーションを作成するには  
   
 1.  コマンド プロンプトを開いて、ディレクトリを %BTSSolutionsPath%\SO\BTSSoln\Scripts フォルダーに変更します。  
   
@@ -726,8 +658,6 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step19"></a>サービス指向ソリューションの BAM 定義ファイルを配置します。  
   
-#### <a name="to-deploy-the-bam-definition-file-for-the-service-oriented-solution"></a>サービス指向ソリューションの BAM 定義ファイルを展開するには  
-  
 1.  コマンド プロンプトを開いて、次のコマンドを入力し、&lt;localizedText&gt;Enter&lt;/localizedText&gt; キーを押して、BAM ユーティリティを参照するためのパスを設定します。  
   
     -   SET PATH=%PATH%;[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking"  
@@ -738,7 +668,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step21"></a>配置サービス指向ソリューション  
   
-#### <a name="to-edit-the-binding-files-for-the-service-oriented-solution"></a>サービス指向ソリューションのバインド ファイルを編集するには  
+#### <a name="update-the-binding-files-for-the-service-oriented-solution"></a>サービス指向ソリューションのバインド ファイルを更新します。  
   
 1.  コマンド プロンプトで、ディレクトリを %BTSSolutionsPath%\SO\BTSSoln\Scripts フォルダーに変更します。次に、メモ帳を使用して Deployallbinding.xml を開き、次のように編集します。  
   
@@ -771,7 +701,7 @@ ms.lasthandoff: 09/20/2017
   
     -   __MQ_QMANAGER_NAME のすべての出現を置換\_\_ MQSeries キュー マネージャ名。  
   
-#### <a name="to-deploy-the-service-oriented-solution"></a>サービス指向ソリューションを展開するには  
+#### <a name="deploy-the-service-oriented-solution"></a>サービス指向ソリューションを配置します。  
   
 -   コマンド プロンプトで、ディレクトリを %BTSSolutionsPath%\SO\BTSSoln\Scripts フォルダーに変更し、次のコマンドを入力して &lt;localizedText&gt;Enter&lt;/localizedText&gt; キーを押します。  
   
@@ -782,9 +712,9 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step23"></a>メインフレームが利用できない場合は、スタブ Pending Transactions Web サービスを構成します。  
   
-#### <a name="to-configure-the-stub-pending-transactions-web-service-for-using-the-adapter-version-without-a-mainframe"></a>スタブ Pending Transactions Web サービスを構成するには (メインフレームを使用せず、アダプター バージョンを使用する場合)  
+#### <a name="configure-the-stub-pending-transactions-web-service-for-using-the-adapter-version-without-a-mainframe"></a>スタブ Pending Transactions Web サービス (メインフレームせず、アダプター バージョンを使用して) を構成します。  
   
-1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、 をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
+1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
   
      使用して、**仮想ディレクトリの作成ウィザード**、スタブ Pending Transactions Web サービス アダプター バージョン用の次の仮想ディレクトリを作成します。  
   
@@ -808,9 +738,9 @@ ms.lasthandoff: 09/20/2017
   
     2.  すべてのダイアログ ボックスを閉じます。  
   
-#### <a name="to-configure-the-stub-pending-transactions-web-service-for-using-the-inline-version-without-a-mainframe"></a>スタブ Pending Transactions Web サービスを構成するには (メインフレームを使用せず、インライン バージョンを使用する場合)  
+#### <a name="configure-the-stub-pending-transactions-web-service-for-using-the-inline-version-without-a-mainframe"></a>スタブ Pending Transactions Web サービス (メインフレームではなく、インライン バージョンを使用して) を構成します。  
   
-1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、 をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
+1.  **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Websites**を右クリックし、**既定の Web サイト**、をポイント**新規**とをクリックして**仮想ディレクトリ**を実行する**仮想ディレクトリの作成ウィザード**です。  
   
      使用して、**仮想ディレクトリの作成ウィザード**、スタブ Pending Transactions Web サービス アダプター バージョン用の次の仮想ディレクトリを作成します。  
   
@@ -835,8 +765,6 @@ ms.lasthandoff: 09/20/2017
 5.  コマンド プロンプトで「`SetConfigValuesInSSO.cmd`」と入力し、Enter キーを押します。  
   
 ##  <a name="step25"></a>開始、サービス指向ソリューション  
-  
-#### <a name="to-start-the-service-oriented-solution"></a>サービス指向ソリューションを開始するには  
   
 1.  コマンド プロンプトを開き、ディレクトリを %BTSSolutionsPath%\SO\BTSSoln\Scripts フォルダーに変更して、次のコマンドを入力し Enter キーを押します。これにより、インライン バージョンおよびアダプター バージョン用のすべてのオーケストレーションが開始されます。  
   

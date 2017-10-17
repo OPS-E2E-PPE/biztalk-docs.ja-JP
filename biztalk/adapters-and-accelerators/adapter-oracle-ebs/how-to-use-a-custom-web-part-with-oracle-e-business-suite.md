@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c0cc9a3cbae11fd18cbe9a91249cf5d3cf42925
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f3b2888b21c2c59b01ddaf920d55ccadb79e326
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-use-a-custom-web-part-with-oracle-e-business-suite"></a>Oracle E-business Suite でカスタム web パーツを使用する方法
 このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。 カスタム Web パーツを使用するには、次の操作を行う必要があります。  
@@ -35,9 +35,8 @@ ms.lasthandoff: 09/20/2017
 -   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Oracle E-business Suite の成果物のためのアプリケーション定義ファイルを作成します。 詳細については、次を参照してください。[手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルを作成する](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)で[チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)です。  
   
 ##  <a name="Create_a_Custom_Web_Part"></a>手順 1: がカスタム Web パーツを作成します。  
- Visual Studio を使用してカスタム Web パーツを作成するには、次の操作を行います。  
   
-1.  開始[!INCLUDE[vs2010](../../includes/vs2010-md.md)]、し、プロジェクトを作成します。  
+1.  Visual Studio を起動し、プロジェクトを作成します。  
   
 2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。 **テンプレート**ペインで、**クラス ライブラリ**です。  
   
@@ -78,7 +77,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します。  
  SharePoint ポータルで使用できるようにする、Microsoft Office SharePoint Server Web パーツ ギャラリー、カスタムの Web パーツを追加する必要があります。 そのためには次を行います。  
   
-1.  SharePoint 3.0 サーバーの全体管理を開始します。 をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Office Server**、クリックして**SharePoint 3.0 サーバーの全体管理**.  
+1.  SharePoint 3.0 サーバーの全体管理を開始します。 をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft Office Server**、クリックして**SharePoint 3.0 サーバーの全体管理**.  
   
 2.  左側のナビゲーション ウィンドウでの共有サービス プロバイダー (SSP) カスタム Web パーツを追加する名前をクリックします。  
   
@@ -86,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  [サイト設定] ページで、をクリックして**Web パーツ**下にある、**ギャラリー**列です。  
   
-5.  Web パーツ ギャラリー ページで、カスタム Web パーツをギャラリーを追加する をクリックして**新規**です。 この時点でカスタム Web パーツでは、Web パーツ ギャラリー ページで使用できません。  
+5.  Web パーツ ギャラリー ページで、カスタム Web パーツをギャラリーを追加するをクリックして**新規**です。 この時点でカスタム Web パーツでは、Web パーツ ギャラリー ページで使用できません。  
   
 6.  [新しい Web パーツ] ページで、検索**CustomWebPart** (カスタムの Web パーツの名前) の一覧で、左側のチェック ボックスをオンにし、をクリックして**ギャラリー**ページの上部です。 これが追加されます、 **CustomWebPart** Web パーツ ギャラリー ページで入力します。  
   

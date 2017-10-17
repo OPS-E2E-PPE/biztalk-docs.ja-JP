@@ -12,11 +12,11 @@ caps.latest.revision: "46"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7c80859e83d915d835aa99b0456ca763ed267f4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38530cfdbde78e96fb41093c79b6a5d1bb8fd132
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスの発行
   
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
  このチュートリアルを完了すると、次のタスクを実行できるようになります。  
   
--   内から[!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用して、**展開**のローカル インスタンスに BizTalk アセンブリを展開するコマンドを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 これにより、アセンブリが含まれた BizTalk アプリケーションが作成されます。 BizTalk アセンブリには、オーケストレーション、パイプライン、スキーマ、マップなど、BizTalk ソリューションで使用するリソース情報が含まれます。  
+-   Visual Studio を使用して、**展開**のローカル インスタンスに BizTalk アセンブリを展開するコマンドを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 これにより、アセンブリが含まれた BizTalk アプリケーションが作成されます。 BizTalk アセンブリには、オーケストレーション、パイプライン、スキーマ、マップなど、BizTalk ソリューションで使用するリソース情報が含まれます。  
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールから、公開した [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスをホストするように WCF-NetMsmq 受信場所を構成する。  
   
@@ -42,9 +42,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>前提条件  
  このサンプルの手順を実行するには、使用する環境が次の前提条件を満たしている必要があります。  
   
--   サンプルを実行するコンピューターと、アセンブリをビルドおよび展開プロセスを実行するコンピューターの両方の必要な Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]、および Microsoft[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   アセンブリをビルドおよび展開プロセスと、サンプルを実行しているコンピューターを実行するコンピューターの両方では、Microsoft Windows Server、.NET Framework、および BizTalk Server が必要です。  
   
--   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)] が必要です。  
+-   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft Visual Studio が必要です。  
   
 -   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のセットアップ時にインストールするオプションです。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  抽出する WCFNetMsmqAdapterPublishing.exe **C:\WCFNetMsmqAdapterPublishing**です。  
   
-2.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]を開き、 **WCFNetMsmqAdapterPublishing.sln**ファイル。  
+2.  Visual Studio で開く、 **WCFNetMsmqAdapterPublishing.sln**ファイル。  
   
 3.  ソリューション エクスプ ローラーで、 **BizTalkApp**、開き、 **OrderProcess.odx**を確認します。 サンプル オーケストレーションは発注要求メッセージを受信し、注文応答メッセージを返します。  
   
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
   
     5.  IIS マネージャーで、中央のウィンドウでをクリックして**コンテンツ ビュー**アプリケーションのファイルを表示します。  
   
-    6.  右クリックし、 **Microsoft_Samples_BizTalk_WCF_NetMsmqPublishing_BizTalkApp_OrderProcess_PurchaseOrderRequestPort.svc**サービス ファイルを**BizTalk WCF サービス公開ウィザード**作成され、をクリックして**参照**です。 表示する Internet Explorer が開き、 **BizTalkServerInstance サービス**ことを示すページのインスタンス、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスが実行されています。 このページには、完全な WSDL アドレスも含まれます。サービス メタデータ ツール (svcutil.exe) を使用して、または [!INCLUDE[vs2010](../includes/vs2010-md.md)] 内からこのアドレスをコピーして使用することで、サービスのクライアント アプリケーションを作成するために使用できるプロキシ コードおよび構成ファイルを取得できます。  
+    6.  右クリックし、 **Microsoft_Samples_BizTalk_WCF_NetMsmqPublishing_BizTalkApp_OrderProcess_PurchaseOrderRequestPort.svc**サービス ファイルを**BizTalk WCF サービス公開ウィザード**作成され、をクリックして**参照**です。 表示する Internet Explorer が開き、 **BizTalkServerInstance サービス**ことを示すページのインスタンス、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスが実行されています。 ページには、完全な WSDL アドレスをコピーして、サービス メタデータ ツール (svcutil.exe) で使用することが表示されます。 または、ファイル システムから、Visual Studio 内でプロキシを取得するコードと、構成ファイルを、サービスのクライアント アプリケーションの作成に使用できます。  
   
     7.  完全な WSDL アドレスを使用してコマンドラインをクリップボードにコピー **BizTalkServerInstance サービス**ページが前の手順で Internet Explorer が示されます。  
   
@@ -205,11 +205,11 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="build-the-client-application"></a>クライアント アプリケーションをビルドします。  
   
-1.  開く、[!INCLUDE[vs2010](../includes/vs2010-md.md)]コマンド プロンプトを管理者に移動して、 **C:\WCFNetMsmqAdapterPublishing\WCFClient**フォルダーです。 このフォルダーに、プロキシ クラスおよびアプリケーション構成ファイルが保存されます。  
+1.  管理者として Visual Studio コマンド プロンプトを開きに移動、 **C:\WCFNetMsmqAdapterPublishing\WCFClient**フォルダーです。 このフォルダーに、プロキシ クラスおよびアプリケーション構成ファイルが保存されます。  
   
 2.  前の手順でコピーした、完全な WSDL アドレスを含む svcutil.exe コマンド ラインを貼り付け、Enter キーを押します。 これは、クラスを作成、プロキシ、 **BizTalkServiceInstance.cs**、およびアプリケーション構成ファイル、 **output.config**です。コマンド プロンプト ウィンドウは、最後のセクションで使用するため開いたままにします。  
   
-3.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューション エクスプ ローラーで右クリック**WCFClient**、をポイント**追加**、順にクリック**既存項目の**します。  
+3.  Visual Studio で、ソリューション エクスプ ローラーで右クリックし**WCFClient**、をポイント**追加**、クリックして**既存項目の**です。  
   
 4.  **既存項目の追加**ダイアログ ボックスを参照、 **WCFClient**フォルダーを選択**すべてのファイル (\*.\*)**で、**ファイルの種類**ドロップダウン リストで、 **BizTalkServiceInstance.cs**と**output.config**ファイル、および  をクリックして**追加**です。  
   
@@ -219,7 +219,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  展開**参照**、いることを確認し、 **WCFClient**プロジェクトが**System.ServiceModel.dll**参照します。  
   
-8.  右クリックし、 **WCFClient**プロジェクトし、選択**ビルド**です。 [!INCLUDE[vs2010](../includes/vs2010-md.md)] を開いたままにして、次のセクションに進みます。  
+8.  右クリックし、 **WCFClient**プロジェクトし、選択**ビルド**です。 次のセクションに、Visual Studio 開くおよび移動を維持します。  
   
 ## <a name="test-the-sample-solution-with-the-wcf-netmsmq-adapter"></a>Wcf-netmsmq アダプターを使用するサンプル ソリューションをテストします。  
   
@@ -227,7 +227,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**プラットフォームの設定**、展開**ホスト インスタンス**を右クリックして**BizTalkServerApplication**または別クリックして、ホスト インスタンスの適切な**再起動**です。 このステップは必須ではありませんが、この時点でサンプルが正しく動作することを確認しておくことをお勧めします。  
   
-3.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]の**デバッグ** メニューのをクリックして**デバッグなしで開始**WCFClient アプリケーションを実行します。 この操作で、サンプル メッセージが WCF-NetMsmq 受信場所に送信されます。 メッセージが送信されたことを示す次の出力メッセージが表示されます。  
+3.  Visual Studio での**デバッグ** メニューのをクリックして**デバッグなしで開始**WCFClient アプリケーションを実行します。 この操作で、サンプル メッセージが WCF-NetMsmq 受信場所に送信されます。 メッセージが送信されたことを示す次の出力メッセージが表示されます。  
   
      **Wcf-netmsmq 送信操作の呼び出しの受信場所**  
   
@@ -235,7 +235,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  任意のキーを押して、WCFClient アプリケーションを閉じてください。  
   
-5.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]コマンド プロンプトに移動して、 **C:\WCFNetMsmqAdapterPublishing\Out**フォルダー、し確認応答メッセージを返信 WCFClient アプリケーションが存在します。  
+5.  Visual Studio コマンド プロンプトで、 **C:\WCFNetMsmqAdapterPublishing\Out**フォルダーをクリックして確認応答メッセージを返信 WCFClient アプリケーションが存在します。  
   
 6.  Internet Explorer とビューで開く {GUID} .xml ファイルをダブルクリックして、 **OrderID**値は、サービスによって処理されます。  
   

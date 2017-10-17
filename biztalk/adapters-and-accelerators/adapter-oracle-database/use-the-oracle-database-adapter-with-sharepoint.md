@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2cf5be42a008cadba648739037797160386a42fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a5866344e666c9e9cb49af6c6d99211774a2758
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="use-the-oracle-database-adapter-with-sharepoint"></a>SharePoint での Oracle データベース アダプターを使用します。
 WCF アダプター サービス開発ウィザード[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]Oracle データベースと、Microsoft BizTalk Adapter for Oracle E-business Suite は、Microsoft SharePoint の外部のデータ ソースと直接使用される Microsoft BizTalk Adapter を有効にします。 この機能をサポートする追加サービス開発ウィザードが起動し、 **WCF アダプタ サービス**、新しい Visual c# の Web サイトを作成するためのテンプレート[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]です。 テンプレートが付属して、[!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)]です。 また、Microsoft Windows Communication Foundation (WCF) の基幹業務 (LOB) アダプター SDK をインストールする必要があります。  
@@ -39,8 +39,8 @@ WCF アダプター サービス開発ウィザード[!INCLUDE[btsVStudioNoVersi
  使用して、Microsoft BizTalk Adapter 用 Oracle データベースの例として次のサービス コントラクトが生成されました。 アダプターが、EMP テーブルへのアクセスを提供するよう構成します。  
   
 ```  
-[System.ServiceModel.ServiceContractAttribute()]  
-public interface ISCOTT_EMP {  
+    [System.ServiceModel.ServiceContractAttribute()]  
+    public interface ISCOTT_EMP {  
   
     [System.ServiceModel.OperationContractAttribute()]  
     SCOTT_EMP_Record[] ReadList(System.Nullable<int> Limit);  
@@ -62,7 +62,7 @@ public interface ISCOTT_EMP {
 }  
 ```  
   
-## <a name="creating-a-new-web-site-to-host-the-microsoft-biztalk-adapter-for-oracle-database-in-iis"></a>IIS での Oracle データベースの Microsoft BizTalk アダプターをホストする新しい Web サイトを作成します。  
+## <a name="create-a-new-web-site-to-host-the-oracle-database-in-iis"></a>IIS での Oracle データベースをホストする新しい Web サイトの作成します。  
  次の手順では、Oracle データベースをホストする Microsoft BizTalk Adapter 新しい WCF web サービスを作成する WCF アダプター サービス開発ウィザードを使用する例を提供します。 サービス コントラクトは、Sharepoint とは直接互換性操作が含まれます。 したがって、外部データ ソースとして it を直接使用できます。 Oracle データベースを使用してでの認証に、アダプターが構成されている、 **SCOTT**アカウント。 場合、 **SCOTT**アカウントがロックされている、SYSDBA として SQL Plus にログインして、アカウントのロックを解除することができます。  
   
 ```  
@@ -75,18 +75,18 @@ public interface ISCOTT_EMP {
 SQL> ALTER USER scott ACCOUNT UNLOCK;  
 ```  
   
-#### <a name="creating-the-new-web-site-project"></a>新しい Web サイト プロジェクトの作成  
+#### <a name="create-the-new-web-site-project"></a>新しい Web サイト プロジェクトを作成します。  
   
-1.  開始**Microsoft [!INCLUDE[vs2012](../../includes/vs2012-md.md)]**です。  
+1.  Visual Studio を開きます。   
   
-2.  [!INCLUDE[vs2010](../../includes/vs2010-md.md)]の**ファイル**メニューの [**新規**] をクリックし、**プロジェクト**です。  
+2.  Visual Studio での**ファイル**メニューの **新規**をクリックし、**プロジェクト**です。  
   
 3.  **新しいプロジェクト** ダイアログ ボックスで、展開**他の言語** をクリック**Visual c#**です。 検索、 **WCF アダプター サービス**テンプレートの一覧表示し、をクリックして選択します。  
   
     > [!NOTE]
     >  **WCF アダプタ サービス**テンプレートが利用できない場合、[!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)]がインストールされていません。 X64 システムでは、インストールの x86 と x64 の両方のバージョン、[!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)]です。  
   
-4.  指定**ScottEMP**  をクリックし、名前の**OK**です。 **WCF アダプター サービス開発ウィザード**を開始します。  
+4.  指定**ScottEMP** をクリックし、名前の**OK**です。 **WCF アダプター サービス開発ウィザード**を開始します。  
   
 5.  **概要** ページで、をクリックして**次**です。  
   
@@ -120,10 +120,10 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 20. クリックして、**ビルド**メニュー オプションをクリック**ソリューションのビルド**です。 プロジェクトのビルドがエラーなしで成功したことを確認します。  
   
-## <a name="publishing-the-new-service-to-iis"></a>新しいサービスを IIS に発行  
+## <a name="publish-the-new-service-to-iis"></a>新しいサービスを IIS に発行します。  
  この例では、ローカル IIS web サーバーに、アダプターのホスト サービスを発行します。  
   
-1.  ソリューション エクスプ ローラーで[!INCLUDE[vs2010](../../includes/vs2010-md.md)]を右クリックして、 **ScottEmp**プロジェクトし、をクリックして**プロパティ**です。 プロジェクト デザイナーのタブが表示されます。  
+1.  Visual Studio のソリューション エクスプ ローラーで右クリックし、 **ScottEmp**プロジェクトし、クリックして**プロパティ**です。 プロジェクト デザイナーのタブが表示されます。  
   
 2.  クリックして、 **Web**  タブのをクリックして、**を使用してローカル IIS Web サーバー**オプション。  
   
@@ -131,10 +131,9 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 4.  ブラウザーを開き、web サービス アドレスに**http://localhost/ScottEmp/ISCOTT_EMP.svc**です。 「サービスを作成しました」というメッセージを受信する必要があります、アダプタを示すが IIS でホストされています。  
   
-## <a name="adding-the-external-data-source-to-a-sharepoint-site-using-sharepoint-designer"></a>SharePoint Designer を使用して SharePoint サイトへの外部データ ソースの追加  
+## <a name="add-the-external-data-source-to-a-sharepoint-site-using-sharepoint-designer"></a>SharePoint Designer を使用して SharePoint サイトに外部データ ソースを追加します。  
  このセクションでは、外部データ ソースとして SharePoint Designer を使用して新しい Web サイトに、WCF サービスを追加する方法について説明します。  
   
-#### <a name="adding-the-external-data-source"></a>外部データ ソースを追加します。  
   
 1.  SharePoint デザイナーを開き、新しい Web サイトを作成します。  
   
@@ -166,7 +165,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 15. 」と入力して、新しい外部データ ソースを保存**Ctrl + s**です。  
   
-#### <a name="testing-the-external-data-source-connection"></a>外部データ ソース接続をテストします。  
+#### <a name="test-the-external-data-source-connection"></a>外部データ ソース接続をテストします。  
   
 1.  新しい web サイト をクリックして、**リストの作成とフォーム**ボタンをクリックします。 リストの作成および OracleEMP ダイアログ フォームが表示されます。  
   
@@ -178,6 +177,6 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 5.  クリックして、**ブラウザーでプレビュー** アダプターの ReadList 操作をテストするメニュー ボタンをクリックします。  
   
-## <a name="troubleshooting"></a>トラブルシューティング  
+## <a name="troubleshoot"></a>[トラブルシューティング]
   
--   64 ビット コンピューターでは 32 ビットの Oracle クライアント コンポーネントもインストールされていることを確認する必要があります。 これは、ため[!INCLUDE[vs2010](../../includes/vs2010-md.md)]のウィザードは開発時に 32 ビット コンポーネントへのアクセスを必要とする 32 ビット プロセスとして実行しているとします。
+-   64 ビット コンピューターでは 32 ビットの Oracle クライアント コンポーネントもインストールされていることを確認する必要があります。 Visual Studio とウィザードの開発時に 32 ビット コンポーネントへのアクセスを必要とする 32 ビット プロセスとして実行するためです。

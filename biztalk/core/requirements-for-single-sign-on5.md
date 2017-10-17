@@ -1,5 +1,5 @@
 ---
-title: "シングル サインオン On5 の要件 |Microsoft ドキュメント"
+title: "シングル サインオンの要件 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +7,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Single Sign-On, requirements [JD Edwards OneWorld adapters]
-- adapters [JD Edwards OneWorld adapters], Single Sign-On
-- SSO, requirements [JD Edwards OneWorld adapters]
-- Single Sign-On, enabling [JD Edwards OneWorld adapters]
 ms.assetid: 318b9977-ce24-48d6-971b-49a059a1bdbc
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b186eca2c24ef9c2731b66194a0543aba14e8bf1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2abd36879428c9d775251e20dd63f8778aa7b63
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 シングル サインオン (SSO) を使用するのには、次が必要です。  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft BizTalk Server 
   
--   [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Visual Studio  
   
 -   エンタープライズ シングル サインオン  
   
@@ -36,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  分離ホストは、信頼されている認証として構成する必要があります。  
   
-### <a name="to-enable-sso"></a>SSO を有効にするには  
+## <a name="enable-sso"></a>SSO を有効にします。  
   
 1.  **トランスポートのプロパティ**ウィンドウで、**はい**の**SSO を使用する**です。  
   

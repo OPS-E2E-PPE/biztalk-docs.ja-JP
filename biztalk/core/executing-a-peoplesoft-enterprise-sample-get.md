@@ -12,29 +12,29 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ae2233e1d98ff3fde5e27f54e8877fb4b73a96b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 101124b5992ba2fb6948ca2722700bb01bdc2a95
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="executing-a-peoplesoft-enterprise-sample-get"></a>PeopleSoft Enterprise Sample Get の実行
-PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムから PeopleSoft アダプターを使用してアクセスできます。 このアダプターは、Microsoft が [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
+# <a name="execute-a-peoplesoft-enterprise-sample-get"></a>PeopleSoft Enterprise Sample Get を実行します。
+PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムから PeopleSoft アダプターを使用してアクセスできます。 このアダプターは、付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。
   
  これは PeopleSoft ラボ作業の 2 パート目です。 1 パート目 (ラボ 1) では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] またはその他の Microsoft テクノロジを使用せずに、PeopleSoft システムに手動でアクセスし、データを変更しました。 このパート (ラボ 2) では、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトの一部として、BizTalk オーケストレーションを作成します。 PeopleSoft アダプターを使用して PeopleSoft システムのデータを取得するために、このオーケストレーションのポートを構成します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
   
 -   Microsoft BizTalk Adapters for Enterprise Applications  
   
--   Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Microsoft Visual Studio  
   
 -   Sun Systems Java Development Kit (JDK) バージョン 1.4 以降  
   
 > [!NOTE]
->  Microsoft BizTalk Adapters for Enterprise Applications のインストールおよび構成については、 [http://go.microsoft.com/fwlink/?LinkId=56392](http://go.microsoft.com/fwlink/?LinkId=56392)を参照してください。 このドキュメントには、JD Edwards、PeopleSoft、Oracle、Tibco、および Siebel LOB の各アダプターのキー構成情報が記載されています。  
+>  参照してください[をインストールし、エンタープライズ アプリケーション用のアダプターを構成](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)JD Edwards、PeopleSoft、および TIBCO アダプターのキーの構成についてはします。  
   
 ## <a name="lab-2---executing-a-peoplesoft-sample-get"></a>ラボ 2 - PeopleSoft Sample Get の実行  
  このラボでは、PeopleSoft システムに対して **Get** 操作を実行します。 具体的には、次のタスクを実行します。  
@@ -58,29 +58,23 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  **C:\Program files \microsoft BizTalk Adapters Enterprise Applications\PeopleSoft Enterprise(r) \Config の**  
   
- GET_CI_INFO コンポーネント インターフェイスを PeopleSoft にインストールする一般的な手順については、アダプターに付属しているインストール ガイドを参照するか、 [http://go.microsoft.com/fwlink/?LinkId=56392](http://go.microsoft.com/fwlink/?LinkId=56392)を参照してください。 これらのガイドは、PeopleSoft の操作に慣れた管理者向きです。  
+ GET_CI_INFO コンポーネント インターフェイスを PeopleSoft にインストールに関する一般的な手順についてで提供される[をインストールし、エンタープライズ アプリケーション用のアダプターを構成](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)です。 これらのガイドは、PeopleSoft の操作に慣れた管理者向きです。  
   
-### <a name="verifying-the-peoplesoft-prerequisites"></a>PeopleSoft の前提条件の確認  
+## <a name="step-1-confirm-the-peoplesoft-rerequisites"></a>手順 1: PeopleSoft rerequisites を確認します。  
  PeopleSoft アダプターに使用する BizTalk プロジェクトの作成を開始する前に、PeopleSoft へのアクセスに必要な条件がすべてセットアップされていることを確認します。  
   
-##### <a name="to-verify-the-peoplesoft-prerequisites"></a>PeopleSoft の前提条件を確認するには  
+1.  いることを確認、PSJOA です。JAR ファイルに存在する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] C:\psjars\ver841 フォルダー内のコンピューター。 (このファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上では異なる場所にある場合があります。 以下の構成では、ファイルがこの場所にあると想定しています)。  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターの C:\psjars\ver841 フォルダーに PSJOA.JAR ファイルが存在することを確認します  (このファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上では異なる場所にある場合があります。 以下の構成では、ファイルがこの場所にあると想定しています)。  
+2.  C:\Program files \microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r) \Config フォルダーに get_ci_info.pc ファイルが存在することを確認します。  
   
-2.  C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r)\Config フォルダーに get_ci_info.pc ファイルがあることを確認します。  
+3.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**コンソール ルート**、展開[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**の順に展開および**アダプター**です。 PeopleSoft アダプターがインストールされ、一覧に表示されていることを確認します。  
   
-3.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+     PeopleSoft アダプターがインストールされていない場合、BizTalk Adapters for Enterprise Applications をインストールします (前述の「前提条件」の項を参照してください)。 アダプターのインストール後、 **[アダプター]** を右クリックし、 **[新規作成 - アダプター]** をクリックして PeopleSoft アダプターをインストールします。 これを有効にするホスト インスタンスを再起動します。  
   
-4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**コンソール ルート**、展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**の順に展開および**アダプター**です。 PeopleSoft アダプターがインストールされ、一覧に表示されていることを確認します。  
-  
-     PeopleSoft アダプターがインストールされていない場合、BizTalk Adapters for Enterprise Applications をインストールします (前述の「前提条件」の項を参照してください)。 アダプターのインストール後、 **[アダプター]** を右クリックし、 **[新規作成 - アダプター]** をクリックして PeopleSoft アダプターをインストールします。 このインストールを完了するには、ホスト インスタンスを再起動する必要があります。  
-  
-### <a name="creating-a-send-port-for-peoplesoft"></a>PeopleSoft の送信ポートの作成  
+## <a name="step-2-create-a-send-port-for-peoplesoft"></a>手順 2: PeopleSoft の送信ポートを作成します。  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、PeopleSoft システムとの通信に使用する送信ポートが必要です。 この送信ポートは、最終的にオーケストレーションの論理ポートにバインドされます。  
   
-##### <a name="to-create-the-peoplesoft-send-port"></a>PeopleSoft の送信ポートを作成するには  
-  
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**コンソール ルート**、展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**、展開**BizTalk グループ**、展開**アプリケーション**の順に展開および**BizTalk.EnterpriseApplication です。**  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**コンソール ルート**、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**の順に展開および**BizTalk.EnterpriseApplication です。**  
   
 2.  **[送信ポート]**を右クリックし、 **[新規作成]**をクリックして、 **[静的な送信請求 - 応答の送信ポート]**を選択します。 **[送信ポートのプロパティ]** ダイアログ ボックスで、プロパティの次の値を入力します。  
   
@@ -114,10 +108,8 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 4.  **[OK]** を 2 回クリックしてダイアログ ボックスを閉じます。  
   
-### <a name="creating-a-biztalk-orchestration-project"></a>BizTalk オーケストレーション プロジェクトの作成  
+## <a name="step-3-create-a-biztalk-orchestration-project"></a>手順 3: BizTalk オーケストレーション プロジェクトを作成します。  
  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で BizTalk プロジェクトを作成し、プロジェクトのオーケストレーションを構成して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と PeopleSoft システム間の通信を処理します。 送信と受信のポートを追加し、プロジェクトをビルドしてから、プロジェクトを展開します。  
-  
-##### <a name="to-create-the-biztalk-orchestration-project-in-visual-studio"></a>Visual Studio で BizTalk オーケストレーション プロジェクトを作成するには  
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を開き、C:\LABS フォルダーに新しい BizTalk プロジェクトを作成します。 **[ファイル]** メニューの **[新規作成]**をクリックします。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[テンプレート]** セクションで **[空の BizTalk Server プロジェクト]** 入力`PS_Test`クリックして一意のプロジェクト名として**OK**です。  
   
@@ -148,7 +140,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  オーケストレーションを完成させるには、XML の送信と受信のためのポートを作成および構成する必要があります。 まず、 **Get** メソッドを含む最初の XML 入力ファイルを受け入れてオーケストレーションを開始できるように、新しい受信ポートをセットアップします。  
   
-##### <a name="to-configure-a-receive-port"></a>受信ポートを構成するには  
+#### <a name="configure-a-receive-port"></a>受信ポートを構成します。  
   
 1.  前の手順で開いた BizTalk Orchestration.odx ファイル内で、左のポート画面を右クリックし、 **[新しい構成済みのポート]**をクリックします。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
   
@@ -172,7 +164,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  次に、PeopleSoft **Get** メソッドに対する呼び出しからの場所の結果を含む XML ファイルを受け入れる送信ポートを作成します。 オーケストレーションでは、この送信ポートを介してディスクにこの XML ファイルを書き込むためにファイル アダプターを使用します。  
   
-##### <a name="to-configure-a-send-port"></a>送信ポートを構成するには  
+#### <a name="configure-a-send-port"></a>送信ポートを構成します。  
   
 1.  BizTalk Orchestration.odx ファイルで、左のポート画面を右クリックし、 **[新しい構成済みのポート]**をクリックします。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
   
@@ -196,7 +188,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  最後に、PeopleSoft システムに対する **Get** メソッドを含む最初の XML 入力ファイルを送信するために、送信/受信ポートを作成します。 また、このポートは、PeopleSoft システムでの **Get** メソッドの呼び出し結果である場所情報を含む XML ファイルも受信します。  
   
-##### <a name="to-configure-a-sendreceive-port"></a>送信/受信ポートを構成するには  
+#### <a name="configure-a-sendreceive-port"></a>送信/受信ポートを構成します。  
   
 1.  BizTalk Orchestration.odx ファイルで、右のポート画面を右クリックし、 **[新しい構成済みのポート]**をクリックします。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
   
@@ -218,7 +210,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  ここでは、2 つの **送信** 図形と 2 つの **受信** 図形をオーケストレーションに挿入し、作成したポートにリンクします。  
   
-##### <a name="to-add-send-and-receive-shapes"></a>送信図形と受信図形を追加するには  
+#### <a name="add-send-and-receive-shapes"></a>追加の送信と受信図形  
   
 1.  ツールボックスから **受信** コンポーネントをドラッグし、オーケストレーション (緑色の円) の先頭の真下にドロップします。 をクリックして、**受信**図形、および [プロパティ] ウィンドウで次のように入力します。`FromDisk`の、**名前**、設定と**Activate**に`true`です。 このように設定すると、この受信ポートでドキュメントを受信したときにオーケストレーションがアクティブになります。  
   
@@ -232,7 +224,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  このオーケストレーションでは、 **Get-Request** メッセージと **Get-Response** メッセージのみを使用しています。 オーケストレーションが (たとえば **UpdateEx** メソッドを使用して) データを更新する場合、別の Request/Response メッセージが必要です。  
   
-##### <a name="to-define-and-assign-messages-to-ports"></a>メッセージを定義し、ポートに割り当てるには  
+#### <a name="define-and-assign-messages-to-ports"></a>定義し、ポートへのメッセージの割り当てください  
   
 1.  左のポート画面で、 **[FileIn]** ポートの **[Request]** をクリックします。 [プロパティ] ウィンドウで、 **[メッセージの種類]**、 **[マルチパート メッセージ]**の順に展開し、 **[PS_Test.Get]**をクリックします。  
   
@@ -260,12 +252,10 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
      ![](../core/media/d16e02bc-954c-4aa2-99d6-3fee1222c730.gif "d16e02bc-954c-4aa2-99d6-3fee1222c730")  
   
-### <a name="building-and-deploying-the-project"></a>プロジェクトのビルドと展開  
+## <a name="step-4-build-and-deploy-the-project"></a>手順 4: ビルドし、プロジェクトの配置  
  BizTalk プロジェクトが完成したので、ビルドし、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に展開できます。  
   
-##### <a name="to-build-and-deploy-the-project"></a>プロジェクトをビルドして展開するには  
-  
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]** 、をポイント**Visual Studio Tools**、をクリックし、 **[!INCLUDE[vs2010](../includes/vs2010-md.md)]コマンド プロンプト**です。  
+1.  Visual Studio で、指す**Visual Studio Tools**、し、Visual Studio コマンド プロンプト * *。  
   
 2.  プロジェクトをビルドするには、厳密な名前キーファイルが必要です。コマンド プロンプトに次のように入力し、厳密な名前のキー ファイルを作成します。  
   
@@ -287,10 +277,10 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 10. ビルドが正常に完了したら、 **[PS_Test]** プロジェクトを右クリックし、 **[展開]**をクリックします。  
   
-### <a name="testing-the-application-and-viewing-the-xml-output"></a>アプリケーションのテストと XML 出力の表示  
+## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>手順 5: テスト アプリケーションと XML 出力を表示します。  
  次に、作成して展開したアプリケーションをテストします。 初めに、オーケストレーション プロセスを開始する XML ファイルを作成します。次に、アプリケーション内で XML ファイルを送受信するためのフォルダーを構成します。 アプリケーションの構成後は、アプリケーションを実行し、オーケストレーションが返す XML ファイルを表示します。  
   
-##### <a name="to-generate-the-xml-file-for-the-query"></a>クエリの XML ファイルを生成するには  
+#### <a name="generate-the-xml-file-for-the-query"></a>クエリの XML ファイルを生成します。  
   
 1.  ソリューション エクスプローラーで、 **LOCATIONService_LOCATION_x5d.xsd** をクリックしてファイルを開きます。  
   
@@ -304,11 +294,11 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
      ![](../core/media/ef65a96c-2daa-44db-ab95-d18b1fda934e.gif "ef65a96c-2daa-44db-ab95-d18b1fda934e")  
   
-##### <a name="to-configure-and-start-the-biztalk-application"></a>BizTalk アプリケーションを構成して開始するには  
+#### <a name="configure-and-start-the-biztalk-application"></a>構成および BizTalk アプリケーションの開始  
   
 1.  入力ファイルの受信と送出ファイルの送信のフォルダーを構成します。 移動して**C:\LABS\PS_TEST**という 2 つの新しいサブフォルダーを作成および`FileIn`と`FileOut`です。  
   
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**コンソール ルート**、展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして**PS_Test** をクリックし、**構成**です。  
+2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**コンソール ルート**、展開**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして**PS_Test** をクリックし、**構成**です。  
   
      ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   
@@ -386,7 +376,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
      ![](../core/media/7bf30707-c7c6-409f-af18-9c9dfeb0de58.gif "7bf30707-c7c6-409f-af18-9c9dfeb0de58")  
   
-##### <a name="to-test-the-orchestration"></a>オーケストレーションをテストするには  
+#### <a name="test-the-orchestration"></a>オーケストレーションをテストします。  
   
 1.  **C:\Labs\PS_Test** ディレクトリの **Samplequery.xml** ファイルを次のように変更します。  
   

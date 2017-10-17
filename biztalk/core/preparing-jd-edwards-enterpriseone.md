@@ -1,29 +1,15 @@
 ---
-title: "JD Edwards EnterpriseOne の準備 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- adapters [JD Edwards EnterpriseOne adapters], prerequisites
-- JD Edwards EnterpriseOne adapters, prerequisites
-- prerequisites, JD Edwards EnterpriseOne adapters
-ms.assetid: b284d91d-fdff-4bd3-a701-99729f349578
-caps.latest.revision: "9"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 36bf04fc7c18da35341340863c78239d5277ef57
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/installing-biztalk-adapter-for-jd-edwards-enterpriseone
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: dbda53860f44f10e9fc9120161947fa87b44fe80
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="preparing-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne の準備
-JD Edwards EnterpriseOne システムを Microsoft BizTalk Adapter for JD Edwards EnterpriseOne と使用するための準備方法の詳細については、エンタープライズ アプリケーション用 Microsoft BizTalk アダプターのインストール ガイドを参照してください。 番組ガイドの最新バージョンのダウンロードを入手するには、最新の情報を確認してください、 [http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039)です。  
+JD Edwards EnterpriseOne システムを使用する Microsoft BizTalk Adapter for JD Edwards EnterpriseOne の準備については、次を参照してください。、 [Microsoft BizTalk Adapters for Enterprise Applications インストール ガイド](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)です。
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for JD Edwards EnterpriseOne のインストール](../core/installing-biztalk-adapter-for-jd-edwards-enterpriseone.md)   

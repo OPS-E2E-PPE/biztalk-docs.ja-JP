@@ -1,5 +1,5 @@
 ---
-title: "シングル サインオン On3 の要件 |Microsoft ドキュメント"
+title: "シングル サインオンの要件 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +7,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Single Sign-On, requirements
-- SSO, enabling
-- Single Sign-On, enabling
-- SSO requirements
 ms.assetid: 7d5c406b-f548-4df0-8644-fdf6a812a989
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 005f095ae09b3018b9c8fe796520205103c7961a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 61932b44364670515f02f89a1441a5d54030bc94
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 シングル サインオン (SSO) を使用するために必要なものは次のとおりです。  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft BizTalk Server
   
--   [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Visual Studio  
   
 -   エンタープライズ シングル サインオン  
   
@@ -36,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   分離ホストは、信頼されている認証として構成する必要があります。  
   
-### <a name="to-enable-sso"></a>SSO を有効にするには  
+## <a name="enable-sso"></a>SSO を有効にします。  
   
 1.  **トランスポートのプロパティ**ウィンドウで、**はい**の**SSO を使用する**です。  
   

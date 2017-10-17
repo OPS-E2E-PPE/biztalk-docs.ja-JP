@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 503ce37fd06f91d5036f08c9eee752017c0ad21c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 85cef88de4e8fa05bb50840002a0f344b1f0b350
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="step-2-deploy-the-web-project"></a>手順 2: Web プロジェクトを展開します。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -28,11 +28,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>前提条件  
  この手順を完了する必要がありますを行った[手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)です。 Web サーバーは、HTTPS 通信を有効にインストールされている SSL 証明書も必要です。  
   
-### <a name="to-compile-and-deploy-the-web-project"></a>コンパイルし、Web プロジェクトを配置するには  
+## <a name="compile-and-deploy-the-web-project"></a>コンパイルして、Web プロジェクトの配置  
   
-1.  [!INCLUDE[vs2010](../../includes/vs2010-md.md)]、以前に作成された EchoWeb プロジェクトをロードします。  
+1.  Visual Studio では、以前に作成された EchoWeb プロジェクトを読み込みます。  
   
-2.  開く、[!INCLUDE[vs2010](../../includes/vs2010-md.md)]コマンド プロンプトです。  
+2.  Visual Studio コマンド プロンプトを開きます。  
   
 3.  C:\tutorials\echoweb フォルダーから、コマンド プロンプトで次のコマンドを入力し、ENTER キーを押します。  
   
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  **Web サイトの発行** ダイアログ ボックスの**ターゲットの場所**、入力**http://machinename/EchoWeb**です。 選択**このプリコンパイル済みサイトを更新できるように**、**固定名およびシングル ページ アセンブリを使用する**、および**プリコンパイル済みアセンブリに厳密な名前を有効にする**です。 **ファイルの場所をキー**フィールドで省略記号ボタンをクリックして**([...])**ボタンをクリックし、以前作成した EchoWebKey.snk ファイルを選択し、をクリックして**OK**です。  
   
-7.  Web サイトが正しく作成されたことを確認するには、Internet Explorer を起動、入力**ハイパーリンク"http://localhost/EchoWeb/EchoOutboundContract.svc"http://localhost/EchoWeb/EchoOutboundContract.svc**アドレス バーで、ENTER キーを押します。 EchoOutboundContractClient を説明する Web ページが表示されます。  
+7.  Web サイトが正しく作成されたことを確認するには、Internet Explorer を起動、入力**"http://localhost/EchoWeb/EchoOutboundContract.svc"**でアドレス バー、および、ENTER キーを押します。 EchoOutboundContractClient を説明する Web ページが表示されます。  
   
 ## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
  IIS に Web プロジェクトをパブリッシュしただけです。  

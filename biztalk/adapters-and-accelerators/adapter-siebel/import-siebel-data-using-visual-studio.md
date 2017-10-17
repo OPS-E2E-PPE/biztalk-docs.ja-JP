@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- SSIS
-- Data Provider for Siebel, importing Siebel data by using Visual Studio
 ms.assetid: 33701361-eca2-4795-a5e0-78162a98e9ba
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0671459b39462422768e42e18bf16336a469f43
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4479fbbfd704cea30b8981866d3b7a354ca7269f
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="import-siebel-data-using-visual-studio"></a>Siebel を Visual Studio を使用してデータをインポートします。
 このセクションでは、Microsoft の使用方法に関する情報を提供[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Siebel システムから SQL Server データベースにデータをインポートします。 また、作成し、このデータをインポートする SSIS パッケージを実行する方法の手順についても提供します。  
@@ -29,13 +26,10 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]がコンピューターにインストールされています。  
   
--   Microsoft[!INCLUDE[vs2010](../../includes/vs2010-md.md)]がコンピューターにインストールされています。  
+-   Microsoft Visual Studio は、コンピューターにインストールされています。  
   
-## <a name="importing-data-by-using-visual-studio"></a>Visual Studio を使用してデータをインポートします。  
- 使用してデータをインポートするのには、次の手順を実行[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]で[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。  
-  
-#### <a name="to-import-data-by-using-visual-studio"></a>Visual Studio を使用してデータをインポートするには  
-  
+## <a name="import-in-visual-studio"></a>Visual Studio でのインポート  
+ 
 1.  開始[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Integration Service プロジェクトを作成します。  
   
 2.  **プロジェクト**メニューの  **SSIS インポートおよびエクスポート ウィザード**です。 これは、SQL Server インポートおよびエクスポート ウィザードを起動します。  
@@ -92,18 +86,16 @@ ms.lasthandoff: 09/20/2017
   
 16. ウィザードでは、統合サービス プロジェクトに、SSIS パッケージを追加します。 統合サービス プロジェクトを保存します。  
   
-## <a name="running-the-ssis-package"></a>SSIS パッケージを実行します。  
+## <a name="run-the-ssis-package"></a>SSIS パッケージを実行します。  
  統合サービス プロジェクト内で、パッケージが作成されると、Siebel システムから SQL Server データベースにデータをインポートすることを実行できます。 パッケージを実行して Siebel データをインポートするのには、次の手順を実行します。  
-  
-#### <a name="to-run-the-package-from-visual-studio"></a>Visual Studio からパッケージを実行するには  
   
 1.  ソリューション エクスプ ローラーで SSIS パッケージに移動します。  
   
 2.  パッケージ名を右クリックし、**パッケージ実行**です。  
   
- パッケージの実行に関する詳細についてでパッケージの実行」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)です。 いずれかの SSIS パッケージに関連するその他の情報を参照してください"パッケージ操作方法に関するトピック (SSIS)"で[http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)です。  
+[Integration Services (SSIS) パッケージの実行](https://docs.microsoft.com/sql/integration-services/packages/run-integration-services-ssis-packages)詳細な情報を提供します。 
   
-## <a name="verifying-the-results"></a>結果の確認  
+## <a name="verify-the-results"></a>結果を確認します。  
  パッケージを実行すると、SQL Server にログオンし、Siebel データのインポート先となるデータベースに移動することによって結果を確認する必要があります。 パッケージを実行する必要がありますテーブルを作成したコピー先データベースにします。 このテーブルは、Siebel テーブルからの値に設定する必要があります。  
   
 ## <a name="see-also"></a>参照  

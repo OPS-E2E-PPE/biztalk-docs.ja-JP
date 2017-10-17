@@ -1,5 +1,5 @@
 ---
-title: "シングル サインオン On4 の要件 |Microsoft ドキュメント"
+title: "シングル サインオンの要件 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,30 +7,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Single Sign-On, requirements
-- SSO, enabling
-- Single Sign-On, enabling
-- SSO requirements
 ms.assetid: 645c7b3f-f860-4c20-b5ca-a8fb93736344
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15d7bdbf52869e5b13ae113716689bbb5b7ffec3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98d5164fa194f9a02314b897b267d9873879a9c0
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO EMS などのサーバー システムを表します。  
   
  シングル サインオンを使用するために必要なものは次のとおりです。  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft BizTalk Server
   
--   [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Visual Studio  
   
 -   エンタープライズ シングル サインオン  
   
@@ -38,7 +33,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) ではシ�
   
  分離ホストは、信頼された認証として構成する必要があります。  
   
-### <a name="to-enable-sso"></a>SSO を有効にするには  
+## <a name="enable-sso"></a>SSO を有効にします。  
   
 1.  **トランスポートのプロパティ**ウィンドウで、**はい**の**SSO を使用する**です。  
   

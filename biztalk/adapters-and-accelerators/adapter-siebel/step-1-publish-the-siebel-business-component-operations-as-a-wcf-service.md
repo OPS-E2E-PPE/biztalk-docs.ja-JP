@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 929a83ae28ed85da3c06c1e03b98677e0fca7f82
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1dc83a0531460f513d146e2d03d0ef7e0a7c529f
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を公開します。
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
  これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
   
-### <a name="to-publish-the-siebel-business-components-as-a-wcf-service"></a>Siebel ビジネス コンポーネントを WCF サービスとして公開するには  
+## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>WCF サービスとしての Siebel ビジネス コンポーネントを公開します。  
   
 1.  開始[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、プロジェクトを作成します。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
      またはから、**プロジェクトの種類**] ウィンドウで、展開**Visual c#**、し、[ **Web**です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
   
     > [!NOTE]
-    >  インストールした場合[!INCLUDE[vs2010](../../includes/vs2010-md.md)]Web 開発コンポーネントと、 **WCF アダプタ サービス**テンプレートもサポートされてから、**新しい web サイト**オプション。  
+    >  Web 開発コンポーネントでは、Visual Studio がインストールされている場合、 **WCF アダプタ サービス**テンプレートもサポートされてから、**新しい web サイト**オプション。  
   
 3.  名前と、ソリューションの場所を指定し、クリックして**OK**です。 WCF アダプター サービス開発ウィザードを開始します。  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 09/20/2017
         |X509FindType|実行する X.509 検索の種類。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
   
         > [!NOTE]
-        >  証明書および関連付けられたプロパティの詳細についてを参照してください「X509ClientCertificateCredentialsElement プロパティ」 [http://go.microsoft.com/fwlink/?LinkId=103771](http://go.microsoft.com/fwlink/?LinkId=103771)です。  
+        >  証明書および関連付けられたプロパティの詳細については、次を参照してください。 [X509ClientCertificateCredentialsElement プロパティ](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)です。
   
     2.  **エンドポイント動作の構成**ボックスで、次の値を指定します。  
   
@@ -121,7 +121,7 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティの|値を指定します。|  
     |----------------------|-----------------------|  
-    |バインドの構成|ウィザードは、基本 HTTP バインドのみをサポートします。 バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。<br /><br /> 省略記号ボタンをクリックして**([...])** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。<br /><br /> 公開されるその他のバインディングの詳細についてを参照してください「BasicHttpBindingElement メンバー」 [http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)です。|  
+    |バインドの構成|ウィザードは、基本 HTTP バインドのみをサポートします。 バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。<br /><br /> 省略記号ボタンをクリックして**([...])** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。<br /><br /> 公開されるその他のバインディングの詳細については、次を参照してください。 [BasicHttpBindingElement クラス](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)です。|  
     |[エンドポイント名]|コントラクトのエンドポイント名を指定します。|  
   
      このページの他のフィールドは、前のページで指定した値に基づいて自動的に入力します。  
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 16. WCF サービスを発行します。  
   
-    1.  SSL には、インターネット インフォメーション サービス (IIS) を有効にすることを確認します。 IIS の SSL を有効にする方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)です。  
+    1.  SSL には、インターネット インフォメーション サービス (IIS) を有効にすることを確認します。 参照してください[SSL を設定する方法](https://docs.microsoft.com/iis/manage/configuring-security/how-to-set-up-ssl-on-iis)です。
   
     2.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**発行**です。  
   
@@ -165,7 +165,7 @@ ms.lasthandoff: 09/20/2017
   
 17. WCF サービスが正常に公開されていることを確認します。  
   
-    1.  IIS の Microsoft 管理コンソールを起動します。 をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス**です。  
+    1.  IIS の Microsoft 管理コンソールを起動します。 をクリックして**開始**、をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス**です。  
   
     2.  サービスを発行したノードに移動します。 **Siebel_Account**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名 >**  >  **Web サイト** > **既定の Web サイト** > **Siebel_Account**です。  
   

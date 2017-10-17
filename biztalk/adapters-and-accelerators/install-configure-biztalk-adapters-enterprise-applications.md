@@ -11,8 +11,8 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0016d689340d5c75cdd50095779148dc9cfbceb7
-ms.sourcegitcommit: 28bf5fc184cf8cba620741421c919d52b8383997
+ms.openlocfilehash: 8fa1a09f3d9fa531cee51ecd0e94b99ab972ba13
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/17/2017
@@ -565,7 +565,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 **Component Interface Tester**ウィンドウが開きます。 キーは一覧表示されないはずです。 GET_CI_INFO にキーが含まれている場合、または別のオプションの選択がある場合は、アプリケーション デザイナーに戻るし、GET_CI_INFO からすべてのキーを削除します。  
   
-## <a name="install-the-adapters"></a>アダプターをインストールします。
+## <a name="install-steps"></a>インストール手順
  インストールする前にすることを確認して BizTalk Server と、アダプターのすべてのソフトウェア前提条件がインストールされています。 Setup を実行する前に、すべてのアプリケーションを閉じることをお勧めします。  
   
 1.  BizTalk Server を実行**Setup.exe****インストール Microsoft BizTalk Adapters**を選択し、 **Microsoft BizTalk Adapters for Enterprise Applications をインストール**。  
@@ -601,9 +601,9 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
 >  2. 型:`net user "CREATOR OWNER" /add`です。 これにより、CREATOR OWNER と呼ばれる新しいユーザーが作成されます。
 >  3. 型:`net localgroup Users /add`です。 これにより、ユーザーと呼ばれる新しいグループが作成されます。
   
-BizTalk Server にアダプターを追加するには、このトピックで「アダプターの BizTalk 管理コンソールの追加」を参照してください。
+BizTalk Server にアダプターを追加するには、このトピック内の「BizTalk 管理者にアダプターを追加する」を参照してください。
 
-## <a name="add-the-adapters-biztalk-admin-console"></a>アダプターの BizTalk 管理コンソールを追加します。
+## <a name="add-adapters-to-biztalk-admin"></a>BizTalk 管理者にアダプターを追加します。
   
 > [!NOTE]
 >  (1 台のコンピューター上のランタイムのみのインストールと別のコンピューター上の管理ツールのみインストール) の複数コンピューター環境に BizTalk をインストールする場合は、両方のコンピューターで for Enterprise Applications BizTalk アダプターをインストールする必要があります。  
@@ -616,7 +616,7 @@ BizTalk Server にアダプターを追加するには、このトピックで�
   
 4.  入力した名前を選択、**アダプター**一覧**OK**です。  
    
-## <a name="post-install-overview---jd-edwards-oneworld"></a>インストール後の JD Edwards OneWorld の概要  
+## <a name="post-install---jd-edwards-oneworld"></a>ポスト インストール-JD Edwards OneWorld  
  Microsoft BizTalk Adapter for JD Edwards OneWorld は、サポートされているデータベースおよびサーバー システムと Microsoft BizTalk Server とのインターフェイスとなる送信アダプターで構成されています。 送信アダプターでは、BizTalk Server からサーバー システムの呼び出しを起動することができます。 送信アダプター (BizTalk Server 管理の送信ハンドラー) の構成では、SQL データベースの場所を指定します。  
   
  BizTalk Adapter for JD Edwards OneWorld の使用方法、およびそのモデルと BizTalk Server モデル間のマッピングについては、アダプターのドキュメントを参照してください。  
@@ -653,7 +653,7 @@ BizTalk Server にアダプターを追加するには、このトピックで�
     -   Microsoft.BizTalk.Adapters.JDEProperties.dll    
     -   jdecba.dll  
   
-## <a name="post-install-overview---jd-edwards-enterpriseone"></a>インストール後の概要 - JD Edwards EnterpriseOne  
+## <a name="post-install---jd-edwards-enterpriseone"></a>ポスト インストール-JD Edwards EnterpriseOne  
  Microsoft BizTalk Adapter for JD Edwards EnterpriseOne には、サポートされているデータベースと BizTalk Server へのサーバー システムとのインターフェイスとなる送信アダプターが含まれています。 送信アダプターを使用すると、BizTalk Server からサーバー システムの呼び出しを起動することができます。  
   
  BizTalk Adapter for JD Edwards EnterpriseOne では、エンタープライズ シングル サインオン (SSO) のサポートを提供します。 SSO の使用を選択した場合、**トランスポートのプロパティ** ページで、資格情報は SSO 資格情報データベース内の関連アプリケーションが使用されます。 関連アプリケーションとは、資格情報を必要とするバック エンドのアプリケーションを表しています。  
@@ -683,7 +683,7 @@ BizTalk Server にアダプターを追加するには、このトピックで�
     -   sdk  
   
  
-## <a name="post-install-overview---peoplesoft-enterprise"></a>概要 - PeopleSoft Enterprise をインストール後  
+## <a name="post-install---peoplesoft-enterprise"></a>ポスト インストール-PeopleSoft Enterprise  
  Microsoft BizTalk Adapter for PeopleSoft Enterprise には、サポートされているデータベースと BizTalk Server へのサーバー システムのインターフェイスと送信アダプターが含まれています。 送信アダプターを使用すると、BizTalk Server からサーバー システムの呼び出しを起動することができます。 送信アダプター (BizTalk Server 管理の送信ハンドラー) の構成では、SQL データベースの場所を指定します。  
   
  BizTalk Adapter for PeopleSoft Enterprise では、エンタープライズ シングル サインオン (SSO) のサポートを提供します。 SSO の使用を選択した場合、**トランスポートのプロパティ** ページで、資格情報は SSO 資格情報データベース内の関連アプリケーションが使用されます。 関連アプリケーションとは、資格情報を必要とするバック エンドのアプリケーションを表しています。  
@@ -776,7 +776,7 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
   
  これにより、TIBCO.Rendezvous.dll で GAC の一覧が表示されます。 表示するには、一覧では、コントロール パネルの 開く**管理者ツール**、開かれている**Microsoft .NET Framework 構成**、開き、**アセンブリ キャッシュ**です。  
   
-## <a name="post-install-overview---tibco-enterprise-message-service"></a>インストール後の TIBCO Enterprise Message Service の概要  
+## <a name="post-install---tibco-enterprise-message-service"></a>インストール後、TIBCO Enterprise Message Service  
  Microsoft BizTalk Adapter 受信データ TIBCO Enterprise Message Service (EMS) が含まれています、サポートされているデータベースと BizTalk Server へのサーバー システムとのインターフェイスの機能を送信します。  
   
 -   受信側では、サーバー システムからの送信である呼び出しをリッスンします。  

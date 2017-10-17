@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62d1ffae1318f4d04f7bd61ef27dd24fd1d5a2b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a7fd507b301d20d84680cb626953d21b8a6e201
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-siebel-adapter"></a>Siebel アダプターでの運用上の問題をトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性が運用上の問題に関する情報をまとめて、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  
@@ -287,7 +287,7 @@ The current .NET type name of this root node is invalid (it is a reserved BizTal
 ###  <a name="BKMK_SiebelVS2008"></a>Visual Studio でのアダプターの使用時の無効なバインドの警告  
  **問題**  
   
- アプリケーションを作成するアダプターを使用すると[!INCLUDE[vs2010](../../includes/vs2010-md.md)]アダプターによって生成された構成ファイル (app.config) を開くと、次のような警告を参照してください。  
+ Visual Studio でアプリケーションを作成するアダプターを使用して、アダプターによって生成された構成ファイル (app.config) を開くと、次のような警告を参照してください。  
   
 ```  
 The element 'bindings' has invalid child element 'siebelBinding'. List of possible elements expected: 'basicHttpBinding, customBinding, ...  
