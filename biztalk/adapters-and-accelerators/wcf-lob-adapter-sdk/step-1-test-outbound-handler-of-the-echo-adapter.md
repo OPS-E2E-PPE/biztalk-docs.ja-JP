@@ -12,18 +12,18 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bf419a8ae3e6611f3d071cc94d274a5f2b0e00f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>手順 1: エコー アダプターの送信ハンドラーをテストします。
 ![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **完了時間:** 15 分  
   
- この手順では、エコー アダプターによって提供される 3 つの送信操作をテストします。 これは実行を使用して[!INCLUDE[vs2010](../../includes/vs2010-md.md)]、アダプター サービス参照を Visual Studio プラグインの追加とカスタム コード。  
+ この手順では、エコー アダプターによって提供される 3 つの送信操作をテストします。 これを行う Visual Studio では、アダプター サービス参照を Visual Studio プラグインの追加とカスタム コードを使用します。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を完了する必要がありますを行った[チュートリアル 1: エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)です。  
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **アダプター サービス参照の追加**画面で、バインディングを選択します。 これは、選択で**echoAdapterBindingV2**です。  
   
-3.  次に、アダプターとの接続のプロパティを構成する をクリックして**構成しています**.  これが表示されます、**アダプターの構成**画面。  
+3.  次に、アダプターとの接続のプロパティを構成する をクリックして**構成しています...**.  これが表示されます、**アダプターの構成**画面。  
   
 4.  **アダプターの構成**画面で、、 **URI プロパティ**タブで接続のプロパティを構成します。 カスタムのカテゴリのエコー アダプターが示されている通知:**接続**と**形式**です。 下にある、**形式**カテゴリで、変更**EchoInUpperCase**に**True**です。  
   
@@ -117,7 +117,7 @@ ms.lasthandoff: 09/20/2017
     </ns0:greeting>              
     ```  
   
-3.  メモ帳のメニューをクリックして**ファイル**を選択し**名前を付けて保存しています.**. "CustomGreetingInstance.xml"ファイル名の入力しのエンコーディングの Unicode を選択し、プロジェクト ディレクトリまたは別の適切な場所に保存します。 完全なパスとファイル名の後で参照に注意してください。  
+3.  メモ帳のメニューをクリックして**ファイル**を選択し**名前を付けて保存しています...**. "CustomGreetingInstance.xml"ファイル名の入力しのエンコーディングの Unicode を選択し、プロジェクト ディレクトリまたは別の適切な場所に保存します。 完全なパスとファイル名の後で参照に注意してください。  
   
 4.  ファイルが正常に保存されるときに、テキスト エディターを閉じます。  
   
@@ -188,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  EchoCustomGreetingsFromFile テスト コードでカスタムの案内応答は、前の手順で作成したファイルを使用しているかどうかを確認します。 ファイルの場所を反映するようにコードを変更します。  
   
-8.  [!INCLUDE[vs2010](../../includes/vs2010-md.md)]の**ファイル** メニューのをクリックして**すべて保存**です。  
+8.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
 9. アプリケーションを実行します。 次のような出力が表示されます。  
   
