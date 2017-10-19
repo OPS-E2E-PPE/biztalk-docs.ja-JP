@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 |使用して、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と SQL Server Reporting Services (SSRS)。|クライアント プログラムを使用できるようになりました、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SSRS プロジェクトに SAP バックエンドからデータをインポートし、データを使用してレポートを生成します。 使用する方法の詳細について、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]で、SSRS では、次を参照してください。 [SSRS と SAP 用データ プロバイダーを使用して](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)です。 SSRS の詳細については、次を参照してください。 [SQL Server Reporting Services](https://msdn.microsoft.com/library/ms159106.aspx)です。|  
 |SAP システムで定義されているクエリを呼び出すためのサポート|[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]操作を公開する、EXECQUERY、SAP システムで定義されているクエリを実行するために使用できます。 EXECQUERY 機能を使用する方法の詳細については、[SAP クエリの実行のサポートを参照してください。
 
-(https://msdn.microsoft.com/library/dd788118.aspx). |  
+](https://msdn.microsoft.com/library/dd788118.aspx).|  
 |使用するためのサポート、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]と Microsoft Office SharePoint Server (MOSS) |アダプターを使用して、MOSS ポータルに SAP システムからデータを表示することができます。 詳細については、次を参照してください[SAP アダプターを使用して、SharePoint と](../../adapters-and-accelerators/adapter-sap/use-the-sap-adapter-with-sharepoint.md)。 |。  
   
 ### <a name="metadata-related-features"></a>メタデータに関連する機能  
