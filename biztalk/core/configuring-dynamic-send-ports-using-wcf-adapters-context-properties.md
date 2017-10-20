@@ -48,10 +48,10 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
   
  WCF コンテキスト プロパティを指定する際の考慮事項を次に示します。  
   
--   複数のアダプターにマップできるアドレスが存在します。 たとえば、「http://」または「https://」で始まるアドレスは、HTTP アダプタだけでなく、WCF-BasicHttp アダプタ、WCF-WsHttp アダプタ、または WCF-Custom アダプタでも処理することができます。 別の例として、上のサンプル コードでは、どちらも「net.tcp://」で始まるアドレスを使用していますが、2 番目のサンプル コードではカスタム バインドを使用するので、アドレスの処理には、WCF-Custom アダプタを使用する必要があります。 そのため、正しいアダプターを識別する必要があります構成する、省略可能な**Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、**式**図形のアダプターを使用するとします。  
+-   複数のアダプターにマップできるアドレスが存在します。 たとえば、 http:// または https:// で始まるアドレスは、HTTP アダプタだけでなく、WCF-BasicHttp アダプタ、WCF-WsHttp アダプタ、または WCF-Custom アダプタでも処理することができます。 別の例として、上のサンプル コードでは、どちらも「net.tcp://」で始まるアドレスを使用していますが、2 番目のサンプル コードではカスタム バインドを使用するので、アドレスの処理には、WCF-Custom アダプタを使用する必要があります。 そのため、正しいアダプターを識別する必要があります構成する、省略可能な**Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、**式**図形のアダプターを使用するとします。  
   
     > [!NOTE]
-    >  アドレスの先頭で http:// または https://、しを指定しない場合、 **Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、既定では、BizTalk エンジンを使用して、HTTP アダプター。  
+    >  アドレスの先頭で http:// または https:// 、しを指定しない場合、 **Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、既定では、BizTalk エンジンを使用して、HTTP アダプター。  
   
 -   **WCF です。BindingType**名前でバインドを識別します。 次のいずれかを指定できます。  
   
