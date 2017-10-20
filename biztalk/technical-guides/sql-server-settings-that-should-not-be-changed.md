@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="default-settings-for-the-database-index-rebuilds-and-defragmentation"></a>データベースのインデックス再構築と最適化の既定の設定  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最適化インデックスはサポートされません。 "DBCC INDEXDEFRAG"および"ALTER INDEX… REORGANIZE..." ページ ロック、ブロックが発生することができを使用してデッドロックを使用しているのではサポートされていません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]("DBCC DBREINDEX"および"ALTER INDEX... の機能はサポートのデータベースのインデックスの再構築します。 REBUILD...")、メンテナンス期間中にのみ実行する必要がありますが、ときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]はデータを処理していません。 インデックスの再作成中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理は、データがサポートされていません。  
   
- 詳細については、Microsoft サポート技術情報の記事 917845 を参照してください["するブロックが発生する、BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、条件、またはその他の SQL Server の問題をデッドロック"](http://go.microsoft.com/fwlink/?LinkId=153429) (http://。go.microsoft.com/fwlink/ しますか。LinkId = 153429)。  
+ 詳細については、Microsoft サポート技術情報の記事 917845 を参照してください["するブロックが発生する、BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、条件、またはその他の SQL Server の問題をデッドロック"](http://go.microsoft.com/fwlink/?LinkId=153429) (http://go.microsoft.com/fwlink/?LinkId=153429)。  
   
  インデックスの断片化ができるだけ多くのパフォーマンスの問題の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]DSS システムまたはインデックス スキャンを実行する OLTP システムであるようです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]非常に選択的なクエリと更新プログラムおよび[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]またはインデックス スキャンのストアド プロシージャがテーブルに発生することはできません。  
   

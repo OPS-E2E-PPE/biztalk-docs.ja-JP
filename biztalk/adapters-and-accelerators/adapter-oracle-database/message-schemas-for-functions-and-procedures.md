@@ -69,16 +69,16 @@ Stored Procedure Overload 2:
   
 |メッセージ|操作|例|  
 |-------------|------------|-------------|  
-|ストアド プロシージャ要求|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Procedure/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT|  
-|ストアド プロシージャの応答|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Procedure/[SP_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/response|  
-|関数の要求|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Function/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID|  
-|関数の応答|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Function/[FN_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID/response|  
-|ストアド プロシージャの要求をパッケージ化|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Package/[PACKAGE_NAME]/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT|  
-|ストアド プロシージャの応答をパッケージ化|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Package/[PACKAGE_NAME]/[SP_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT/response|  
-|パッケージ化された関数の要求|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Package/[PACKAGE_NAME]/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID|  
-|パッケージ化された関数の応答|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Package/[PACKAGE_NAME]/[FN_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID/response|  
-|ストアド プロシージャのオーバー ロードされた要求|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Procedure/[SP_NAME]/[オーバー ロードする]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1|  
-|ストアド プロシージャの応答をオーバー ロード|[スキーマ] http://Microsoft.LobServices.OracleDB/2007/03//Procedure/[SP_NAME]/[オーバー ロード]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1/response|  
+|ストアド プロシージャ要求|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Procedure/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT|  
+|ストアド プロシージャの応答|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Procedure/[SP_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/response|  
+|関数の要求|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Function/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID|  
+|関数の応答|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Function/[FN_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID/response|  
+|ストアド プロシージャの要求をパッケージ化|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Package/[PACKAGE_NAME]/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT|  
+|ストアド プロシージャの応答をパッケージ化|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Package/[PACKAGE_NAME]/[SP_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT/response|  
+|パッケージ化された関数の要求|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Package/[PACKAGE_NAME]/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID|  
+|パッケージ化された関数の応答|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Package/[PACKAGE_NAME]/[FN_NAME]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID/response|  
+|ストアド プロシージャのオーバー ロードされた要求|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Procedure/[SP_NAME]/[オーバー ロードする]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1|  
+|ストアド プロシージャの応答をオーバー ロード|http://Microsoft.LobServices.OracleDB/2007/03/[スキーマ]/Procedure/[SP_NAME]/[オーバー ロード]/応答|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1/response|  
   
  [スキーマ] コレクションの Oracle の成果物を =たとえば、SCOTT です。  
   
