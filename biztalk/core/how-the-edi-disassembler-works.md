@@ -79,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
     -   ISA15  
   
-    -   LastInterchangeMessage = {True & #124 です。False}  
+    -   LastInterchangeMessage = {True &#124;です。False}  
   
     -   [MessageType]  
   

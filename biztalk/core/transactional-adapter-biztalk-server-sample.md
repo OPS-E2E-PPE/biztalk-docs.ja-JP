@@ -83,7 +83,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
   
 #### <a name="build-the-transactional-adapter-solution"></a>トランザクション アダプター ソリューションをビルドします。  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
 2.  参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AdaptersDevelopment\TransactionalAdapter、 をダブルクリック**TransactionalAdapter.sln**を開くにはこのソリューションで[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  
   
@@ -189,7 +189,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
   
 ## <a name="run-the-sample"></a>サンプルの実行  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft SQL Server 2008 R2** **SQL Server Management Studio**。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2008 R2** **SQL Server Management Studio**。  
   
 2.  **サーバーへの接続** ダイアログ ボックスで確認**サーバーの種類**に設定されている**データベース エンジン**、データベース サーバーに認証する資格情報を入力し、の選択**接続**です。  
   
