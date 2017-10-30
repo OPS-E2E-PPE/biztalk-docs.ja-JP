@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
 |サンプルのディレクトリ名|Description|  
 |---------------------------|-----------------|  
-|Oracle_Migration|Oracle データベースの BizTalk ODBC アダプターを使用して作成された BizTalk プロジェクトを使用する方法を示します (に付属して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]) と WCF ベースで利用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)](に付属して[!INCLUDE[adapterpack20](../../includes/adapterpack20-md.md)])。|  
+|Oracle_Migration|Oracle データベースの BizTalk ODBC アダプターを使用して作成された BizTalk プロジェクトを使用する方法を示します (に付属して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]) と WCF ベースで利用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] (に付属して[!INCLUDE[adapterpack20](../../includes/adapterpack20-md.md)])。|  
   
 ## <a name="see-also"></a>参照  
 [Oracle データベース アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)
