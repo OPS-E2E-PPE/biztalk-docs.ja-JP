@@ -104,7 +104,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-build-the-receiver-run-time-project"></a>レシーバー ランタイム プロジェクトをビルドするには  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
 2.  移動し、 \<*サンプル パス*>**"\AdaptersDevelopment\File Adapter\Runtime"**ディレクトリ、およびダブルクリック**DotNetFile.sln**.  
   
@@ -142,7 +142,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  BizTalk Server 管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ**をクリックして展開**プラットフォームの設定**.  
   
-3.  右クリックして**アダプター**、をクリックして**新規**、クリックして**アダプター**です。  
+3.  右クリックして**アダプター**、 をクリックして**新規**、クリックして**アダプター**です。  
   
 4.  **アダプターの追加** ダイアログ ボックスで、次の操作を行います。  
   
@@ -160,7 +160,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始****すべてのプログラム**を選択[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]を選択し、 **BizTalk Server 管理コンソール**です。  
   
-2.  BizTalk Server 管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ**をクリックして展開**プラットフォームの設定**をクリックして**ホスト インスタンス**です。 右ペインで、BizTalkServerApplication を選択します。  
+2.  BizTalk Server 管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ**をクリックして展開**プラットフォームの設定**をクリックして**ホスト インスタンス**です。 右ペインで、[BizTalkServerApplication] を選択します。  
   
 3.  結果ウィンドウで、ホスト インスタンス (通常は、コンピューター名) を右クリックし、をクリックして**再起動**です。  
   
@@ -168,7 +168,7 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-run-the-file-adapter-sample"></a>ファイル アダプターのサンプルを実行するには  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
 2.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のインストール ドライブに次のフォルダーを作成します。  
   
@@ -180,7 +180,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Windows エクスプ ローラーを閉じる、**ファイル** メニューのをクリックして**閉じる**です。  
   
-4.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+4.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
 5.  右クリックし、 **BizTalk Server 管理コンソール**ノード**既存グループに接続**です。  
   
@@ -210,7 +210,7 @@ ms.lasthandoff: 09/20/2017
   
 11. 下にある、 **BizTalk アプリケーション 1**  ノードをクリック**受信ポート**を選択して**新しい/一方向の受信ポート**です。  
   
-12. **新しい受信ポートを作成**] ダイアログ ボックスで、**受信ポートの種類を指定**ボックスで、**一方向の受信ポート**ドロップダウン リスト ボックスの一覧、および [ をクリックして**[Ok]**です。  
+12. **新しい受信ポートを作成** ダイアログ ボックスで、**受信ポートの種類を指定**ボックスで、**一方向の受信ポート**ドロップダウン リスト ボックスの一覧、および  をクリックして**Ok**です。  
   
 13. **受信ポートのプロパティ** ダイアログ ボックスで、**名前**ボックスに、入力**AdapterReceive**、クリックして**ok**です。  
   
@@ -279,7 +279,7 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-administer-the-file-adapter-sample"></a>ファイル アダプターのサンプルを管理するには  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
 2.  左側のウィンドウでをクリックして展開**アプリケーション**をクリックして展開**BizTalk アプリケーション 1**、 をクリック**受信場所**です。  
   
@@ -298,7 +298,7 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-stop-and-restart-the-host-instance"></a>停止して、ホスト インスタンスを再起動するには  
   
-1.  **BizTalk Server 管理コンソール**コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ**をクリックして展開**プラットフォームの設定** をクリック**ホスト インスタンス**です。 右ペインで、BizTalkServerApplication を選択します。  
+1.  **BizTalk Server 管理コンソール**コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ**をクリックして展開**プラットフォームの設定** をクリック**ホスト インスタンス**です。 右ペインで、[BizTalkServerApplication] を選択します。  
   
 2.  ホスト インスタンス (通常は、コンピューター名) を右クリックし、をクリックして**停止**です。  
   

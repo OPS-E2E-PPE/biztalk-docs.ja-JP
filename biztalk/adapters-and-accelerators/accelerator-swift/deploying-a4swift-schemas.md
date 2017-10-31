@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-a-strong-named-swift-project"></a>厳密な名前の SWIFT プロジェクトを作成するには  
   
-1.  Visual Studio で、**ファイル**、をポイント**新規**、クリックして**プロジェクト**です。  
+1.  Visual Studio で、[**ファイル**、] をポイント**新規**、クリックして**プロジェクト**です。  
   
 2.  新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**ペインで、 **BizTalk プロジェクト**フォルダーです。  
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 12. 右側のペインで、**プロパティ ページ**を下にスクロール ダイアログ ボックスで、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、をクリックし、省略記号ボタン () ボタンをクリックします。  
   
-13. **アセンブリ キー ファイル**ダイアログ ボックスを参照  **\<*ドライブ*>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]をクリックして**key.snk**、クリックして**開く**です。  
+13. **アセンブリ キー ファイル** ダイアログ ボックスを参照  **\<*ドライブ*>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]をクリックして**key.snk**、クリックして**開く**です。  
   
 14. **プロパティ ページ**ダイアログ ボックスで、をクリックして**OK**変更を保存します。  
   
