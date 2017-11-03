@@ -93,15 +93,15 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
   
  この例では、/SCOTT/EMP テーブルに対して挿入操作の WCF クライアント クラスを作成します。  
   
- **。 \svcutil"oracledb://User=SCOTT;パスワード =TIGER@ADAPTER? wsdl & op http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert を ="**  
+ **.\svcutil "oracledb://User=SCOTT;パスワード=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert"**  
   
  この例では、Insert および/SCOTT/EMP テーブルに対する削除操作の WCF クライアント クラスを作成します。  
   
- **。 \svcutil"oracledb://User=SCOTT;パスワード =TIGER@ADAPTER? wsdl & op = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert & op http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete を ="**  
+ **.\svcutil "oracledb://User=SCOTT;パスワード=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete"**  
   
  この例では、POLLLINGSTMT 操作の WCF サービス コントラクトを作成します。 (POLLINGSTMT 操作の WCF サービス コントラクトの生成に svcutil.exe を使用するには、ポーリング ステートメントを含む svcutil.exe の既定以外のバインディングを構成する必要があります)。  
   
- **。 \svcutil"oracledb://User=SCOTT;パスワード =TIGER@ADAPTER? wsdl & op http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT を ="**  
+ **.\svcutil "oracledb://User=SCOTT;パスワード=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT"**  
   
 > [!IMPORTANT]
 >  引用符で囲まれたコマンド ラインで、接続 URI を配置する必要があります。 それ以外の場合、svcutil.exe しようとすると操作のメタデータを取得する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]はサポートしていません。 これらの試行の結果は未定義です。  
