@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="rpc-error-occurs-when-connecting-to-a-client-computer"></a>クライアント コンピューターへの接続時に RPC エラーが発生する  
   
 ##### <a name="problem"></a>問題  
- ときにコマンドを実行するユーザーなど**ssomanage-displayapp***\<applicationname >*コンピューター、情報を取得するリモート SSO サーバーに接続しようとしましたここで、受信します。。次のエラー: エラー: 0x800706BA: RPC サーバーは使用できません。  
+ ときにコマンドを実行するユーザーなど**ssomanage-displayapp***\<applicationname >*コンピューター、情報を取得するリモート SSO サーバーに接続しようとしましたここで、受信します次のエラー: エラー: 0x800706BA: RPC サーバーは使用できません。  
   
 ##### <a name="cause"></a>原因  
  このエラーは、ユーザーが間違ったサーバー情報を指定した場合、またはリモート サーバーで SSO サービスを利用できない場合に発生します。  

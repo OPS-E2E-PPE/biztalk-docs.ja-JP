@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
  持つノードに循環参照が含まれている場合に、スキーマが、無限ループを含めることができます、 **Min Occurs**本質的には、終了条件を防止、1 つ以上のプロパティの値。 生成操作を終了するには、インスタンス メッセージの生成を強制終了させます。このため、生成されたインスタンス メッセージは、生成元のスキーマに準拠しません。 通常、このようなスキーマが問題となります。  
   
 ## <a name="validation-of-xml-instance-fails-for-document-schema-which-has-the-target-namespacehttpwwww3orgxml1998namespace"></a>ドキュメント スキーマのターゲットの名前空間が "http://www.w3.org/XML/1998/namespace" である場合、XML インスタンスの検証が失敗する  
- "ハイパーリンク"http://www.w3.org/XML/1998/namespace"http://www.w3.org/XML/1998/namespace"は、予約された名前空間のプレフィックスを持つが"XML"にする必要があります。 このプレフィックスを手動で "XML" に変更できます。
+ "ハイパーリンク "http://www.w3.org/XML/1998/namespace" http://www.w3.org/XML/1998/namespace" は、予約された名前空間のプレフィックスを持つが"XML"にする必要があります。 このプレフィックスを手動で "XML" に変更できます。
 
 ## <a name="see-also"></a>参照
 これらのプロパティの詳細について[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
