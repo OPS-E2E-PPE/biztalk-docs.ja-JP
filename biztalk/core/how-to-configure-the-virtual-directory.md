@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b1461ac2ea0ef9cfee71965fc2cc800d617d1d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 97af99271a4d63046d2a95a47caed7f145eaef24
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-configure-the-virtual-directory"></a>仮想ディレクトリを構成する方法
 このトピックでは、仮想ディレクトリを構成し、ユーザーのアプリケーションを検証する手順について説明します。  
@@ -47,4 +47,4 @@ ms.lasthandoff: 09/20/2017
 9. **アプリケーションの追加**ダイアログ ボックスで、をクリックして**OK**です。 フォルダーがアプリケーションに変換されます (アイコンがフォルダー アイコンから Web サイト アイコンに変化します)。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on2.md)
+ [アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

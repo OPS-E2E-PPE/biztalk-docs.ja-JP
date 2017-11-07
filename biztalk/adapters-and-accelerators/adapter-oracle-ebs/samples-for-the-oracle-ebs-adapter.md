@@ -1,7 +1,8 @@
 ---
-title: "Oracle EBS アダプター用のサンプル |Microsoft ドキュメント"
+title: "Oracle EBS アダプタ サンプル |Microsoft ドキュメント"
+description: "BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる oracle Enterprise Business Suite の WCF アダプタのサンプル"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05f4bd3d251872dc480c939ec864db9d61f14bd7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4069b7f5916291544ce76534e04b20af5680d69
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="samples-for-the-oracle-ebs-adapter"></a>Oracle EBS アダプター用のサンプル
 サンプルを[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]に分類されます。  
@@ -29,9 +30,12 @@ ms.lasthandoff: 09/20/2017
   
 -   Microsoft Office SharePoint Server のサンプル  
   
- サンプルはいただけます[http://go.microsoft.com/fwlink/p/?LinkID=196854](http://go.microsoft.com/fwlink/p/?LinkID=196854)です。 インターフェイスのテーブル、同時実行プログラム、テーブルを作成するための SQL スクリプトし、サンプルで使用されるパッケージも用のサンプルと共に使用できます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。  
+ サンプルはいただけます[BizTalk Adapter Pack 2010: Oracle E-business Suite アダプター サンプル](https://www.microsoft.com/download/details.aspx?id=6464)です。 インターフェイス テーブル、同時実行プログラム、テーブル、およびサンプルで使用されるパッケージを作成するための SQL スクリプトが含まれます。 
   
- 次の表には、名前と、サンプルの説明が含まれて、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。  
+> [!NOTE]
+> [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
+  
+ サンプルを次に示します。 
   
 ## <a name="biztalk-server-samples"></a>BizTalk Server のサンプル  
   
@@ -46,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 |PollingUsingSelectStatement|SELECT ステートメントを使用して、ポーリング クエリを構成しを使用して結果を受信する方法を示します、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。|  
 |PollingUsingStoredProc|使用して結果を受信およびストアド プロシージャを使用して、ポーリング クエリを構成する方法を示します、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。|  
   
-## <a name="wcf-service-model-samples"></a>WCF サービス モデルのサンプル  
+## <a name="wcf-service-model-sasamplesmples"></a>WCF サービス モデル Sasamplesmples  
   
 |サンプルのディレクトリ名|Description|  
 |---------------------------|-----------------|  
@@ -65,7 +69,7 @@ ms.lasthandoff: 09/20/2017
 |InsertOperation|アダプターを使用して Oracle E-business Suite のインターフェイス テーブルに対して挿入操作を実行する方法を示します。|  
 |SelectPolling_ChannelModel|SELECT ステートメントを使用してアダプターを使用して Oracle E-business Suite でのインターフェイス テーブルをポーリングする方法を示します。|  
   
-## <a name="microsoft-office-sharepoint-server-samples"></a>Microsoft Office SharePoint Server をサンプルします。  
+## <a name="microsoft-office-sharepoint-server-samples"></a>Microsoft Office SharePoint Server のサンプル  
   
 |サンプルのディレクトリ名|Description|  
 |---------------------------|-----------------|  

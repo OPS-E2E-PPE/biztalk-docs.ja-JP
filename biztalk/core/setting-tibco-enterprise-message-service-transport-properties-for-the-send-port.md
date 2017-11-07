@@ -1,33 +1,19 @@
 ---
-title: "送信ポートの TIBCO Enterprise Message Service トランスポート プロパティを設定 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- send ports, setting transport properties
-- transport properties, setting for send port
-- setting transport properties, send port
-ms.assetid: 156fa3d1-6c47-442b-9c5d-5bcd838115f8
-caps.latest.revision: "14"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: eba9a07a6b5991d832a0815a4eb63706c3bbbd3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 24e73be3b953cbd7f597a34a06f09d364ec0f4f4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="setting-tibco-enterprise-message-service-transport-properties-for-the-send-port"></a>TIBCO Enterprise Message Service 送信ポートのトランスポート プロパティの設定
+# <a name="set-send-port-transport-properties-for-the-send-port-for-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service の送信ポート、送信ポートのトランスポートのプロパティを設定します。
 TIBCO Enterprise Message Service トランスポート プロパティは、デザイン時に構成して実行時に使用します。 **トランスポートのプロパティ**ダイアログ ボックスで、パラメーターを設定する接続と資格情報を特定サーバーのシステムおよびアクセスしようとしているオブジェクトにします。  
   
  ![](../core/media/tib-tibcoemssendtransportpropertiess.gif "TIB_TIBCOEMSSendTransportPropertiess")  
   
-### <a name="to-specify-transport-properties"></a>トランスポートのプロパティを指定するには  
+## <a name="enter-transport-properties"></a>トランスポートのプロパティを入力してください。  
   
 1.  **トランスポートのプロパティ** ダイアログ ボックスで、展開**システム定義**、し、TIBCO EMS サーバーに接続に必要なすべての情報を入力します。  
   
@@ -75,5 +61,5 @@ TIBCO Enterprise Message Service トランスポート プロパティは、デ�
 7.  をクリックして**適用**、順にクリック**OK**です。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on4.md)   
- [TIBCO Enterprise Message Service 送信ハンドラーを作成します。](../core/creating-tibco-enterprise-message-service-send-handlers.md)
+ [アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-tibco-ems.md)  
+ [送信の成果物を作成します。](../core/creating-tibco-enterprise-message-service-send-handlers.md)

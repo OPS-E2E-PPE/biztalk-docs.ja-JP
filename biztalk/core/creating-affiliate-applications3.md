@@ -18,11 +18,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd1d7cf18d35825b9291cf85546f3a9dc157fe1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、シングル サインオン (SSO) を使用して関連アプリケーションを利用する方法について説明します。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-affiliate-application"></a>関連アプリケーションを作成するには  
   
-1.  **コントロール パネルの** 、開かれている**Services**、エンタープライズ シングル サインオン サービスが実行されていることを確認してください。  
+1.  **コントロール パネルの **、開かれている**Services**、エンタープライズ シングル サインオン サービスが実行されていることを確認してください。  
   
 2.  コマンド プロンプトで、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。  
   
@@ -122,4 +122,4 @@ ms.lasthandoff: 09/20/2017
 5.  関連アプリケーションが [BizTalk Adapter for JD Edwards OneWorld トランスポートのプロパティ] ダイアログ ボックスのドロップダウン リストに表示されます。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+ [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

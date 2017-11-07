@@ -1,32 +1,12 @@
 ---
-title: "Windows1 のイベントの追跡の使用 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- ETW
-- provider
-- Receiver Logging Provider
-- Transmitter Logging Provider
-- controller application
-- Management Logging Provider
-- consumer application
-- Event Tracing for Windows
-- BTATIBCORVTrace command
-ms.assetid: 9e0418e2-7938-4202-83b7-555a90348904
-caps.latest.revision: "6"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: b51ca273e63ce93ee1ce94a66d0d14a97f807767
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/troubleshooting-tibco-rendezvous/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 5c29b21ea36efe3fe0a63c5994b771e36e570ed3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションに変換されます、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  

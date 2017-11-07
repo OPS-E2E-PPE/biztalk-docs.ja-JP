@@ -7,21 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- message context properties, BizTalk Server
-- reply subjects
-- send handlers, BizTalk Server message context properties
-- replies
 ms.assetid: a065ba89-9fdb-47dc-9021-fb95cf347cdc
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c8e5ddb1feb02a015fdebd62d183d1b8442fe5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f0504e13115229f1325938e8ca48acc17fa5bc1d
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="biztalk-server-message-context-properties-send-handlers"></a>BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)
 BizTalk Server オーケストレーションの実行時には、メッセージ ペイロードに加えて、メッセージに含まれる補足情報にもアクセスできる必要があります。  
@@ -46,7 +41,12 @@ BizTalk Server オーケストレーションの実行時には、メッセー�
     OutgoingMsg(Rendezvous.SendSubject) = IncomingMsg  
     (Rendezvous.ReplySubject);  
     ```  
+## <a name="management-assembly"></a>アセンブリの管理
+TIBCO Rendezvous はメタデータ リポジトリを備えておらず、Microsoft BizTalk Adapter for TIBCO Rendezvous 管理アセンブリは参照機能またはスキーマ生成機能を備えていません。 したがって、ユーザーがスキーマを BizTalk Server に提供する必要があります。 詳細については、次を参照してください。[インストール、スキーマ、および制限事項](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)です。
+  
+ BizTalk Adapter for TIBCO Rendezvous には定義済みの型のスキーマが含まれます。 アダプターは、一部の特定のデータ型 (配列) のメッセージを生成するときに、これらの型を使用します。
+
   
 ## <a name="see-also"></a>参照  
  [TIBCO Rendezvous での送信ハンドラーのデータ型マッピング](../core/data-type-mapping-for-send-handlers-in-tibco-rendezvous.md)   
- [TIBCO Rendezvous 送信ハンドラーを作成します。](../core/creating-tibco-rendezvous-send-handlers.md)
+ [TIBCO Rendezvous 送信ハンドラーの作成](../core/creating-tibco-rendezvous-send-handlers.md)

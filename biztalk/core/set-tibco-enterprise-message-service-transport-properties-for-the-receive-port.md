@@ -1,26 +1,12 @@
 ---
-title: "TIBCO Enterprise Message Service トランスポート プロパティの設定、受信ポート |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- receive ports, setting transport properties
-- transport properties, setting for receive port
-- setting transport properties, receive port
-ms.assetid: bccddf84-d92e-469f-aa6f-4234c91a0be9
-caps.latest.revision: "12"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: d94229364e3bed8faaf1407603f17db76c70e6bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-receive-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 1a32564f9e0e9e81624b39ab0ba156e76b109497
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="setting-tibco-enterprise-message-service-transport-properties-for-the-receive-port"></a>TIBCO Enterprise Message Service 受信ポートのトランスポート プロパティの設定
 TIBCO Enterprise Message System (EMS) の受信場所を**URL**と**Target Namespace** TIBCO EMS システムには、必要な唯一の構成値。  
@@ -67,5 +53,4 @@ TIBCO Enterprise Message System (EMS) の受信場所を**URL**と**Target Names
 6.  をクリックして**適用**、順にクリック**OK**です。  
   
 ## <a name="see-also"></a>参照  
- [送信ポートの作成](../core/creating-send-ports1.md)   
- [TIBCO Enterprise Message Service を作成する受信ハンドラー](../core/creating-tibco-enterprise-message-service-receive-handlers.md)
+  [TIBCO Enterprise Message Service 受信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-receive-handlers.md)

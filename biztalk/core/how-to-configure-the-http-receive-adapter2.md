@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c39e55ca233ef9875d3d56d25312ef879e3c539
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ed6e40036308aa872a2d6ba23da8209ee9f80cfc
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-configure-the-http-receive-adapter"></a>HTTP 受信アダプターを構成する方法
 HTTP 受信アダプターを使用すると、メッセージを BizTalk Server に送信できます。 HTTP 受信アダプターは、インターネット インフォメーション サービス (IIS) プロセスでホストされる IIS の ISAPI 拡張です。  
@@ -39,4 +39,4 @@ HTTP 受信アダプターを使用すると、メッセージを BizTalk Server
 2.  IIS を再起動してすべての変更が反映されるようにします。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+ [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

@@ -1,29 +1,14 @@
 ---
-title: "構成の最適化 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Max Concurrent Calls parameter
-- optimizing, configuration
-- configuring, optimizing
-- messages, overload protection
-ms.assetid: df0ae17b-fcfa-4e00-893c-63f4972d3822
-caps.latest.revision: "10"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 72b185d7738ac48d9a1dc3631c7c9faec9ac4b60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2b0a1aa81971e3e086881e23bcfd6d7ba5d5799d
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="optimizing-configuration"></a>構成の最適化
+# <a name="optimize-configuration"></a>構成を最適化します。
 このセクションでは、BizTalk Adapter for PeopleSoft Enterprise の構成を最適化する方法について説明します。アダプターをセットアップするためのパラメーターについても説明します。  
   
 ## <a name="message-overload-protection"></a>メッセージ オーバーロードの保護  
@@ -31,7 +16,7 @@ ms.lasthandoff: 09/20/2017
   
  BizTalk Server は、送信アダプタに対してメッセージを送信するとき、まず、アダプタからバッチを受け取り、バッチで `TransmitMessage()` を呼び出して各メッセージを転送します。 この処理が完了すると、BizTalk Server はバッチで `Done()` を呼び出し、アダプタがバックエンドに対するメッセージ送信を開始します。 BizTalk Server が `Done` を呼び出す前に複数のバッチを取得した場合、`Done` コマンドは発行されないことがあります。 バッチ内に含めるメッセージの最大数を設定することで、バックエンドに送信するメッセージを制御できます。 このパラメータに加えた変更は、すぐに有効になります。 BizTalk Server は、SQL データベースに保存されているアダプター構成に対する変更を取得する必要があります。  
   
-#### <a name="to-change-the-max-concurrent-calls-parameter"></a>Max Concurrent Calls パラメーターを変更するには  
+## <a name="change-the-max-concurrent-calls-parameter"></a>Max Concurrent Calls パラメーターを変更します。  
   
 1.  **送信ポートのトランスポート プロパティ** ダイアログ ボックスで、入力、**接続**値。  
   
@@ -54,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 4.  選択**はい**の**SSO を使用する**でのシングル サインオンを使用します。  
   
     > [!NOTE]
-    >  詳細については、次を参照してください。[シングル サインオンを使用して](../core/using-single-sign-on2.md)です。  
+    >  詳細については、次を参照してください。[アダプターをセキュリティで保護された](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)です。 
   
 5.  一覧で関連アプリケーションを選択します。  
   

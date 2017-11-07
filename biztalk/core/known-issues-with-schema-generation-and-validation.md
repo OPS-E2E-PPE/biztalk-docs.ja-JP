@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b830e955b54ae8e3ba7fc05f21f22acd97f290a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a462ab04aad857bf87b189cafce14bb9c3747e8
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="known-issues-with-schema-generation-and-validation"></a>スキーマの生成と検証に関する既知の問題
 このトピックでは、スキーマの生成と検証に関する既知の問題について説明します。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
  持つノードに循環参照が含まれている場合に、スキーマが、無限ループを含めることができます、 **Min Occurs**本質的には、終了条件を防止、1 つ以上のプロパティの値。 生成操作を終了するには、インスタンス メッセージの生成を強制終了させます。このため、生成されたインスタンス メッセージは、生成元のスキーマに準拠しません。 通常、このようなスキーマが問題となります。  
   
 ## <a name="validation-of-xml-instance-fails-for-document-schema-which-has-the-target-namespacehttpwwww3orgxml1998namespace"></a>ドキュメント スキーマのターゲットの名前空間が "http://www.w3.org/XML/1998/namespace" である場合、XML インスタンスの検証が失敗する  
- "ハイパーリンク "http://www.w3.org/XML/1998/namespace" http://www.w3.org/XML/1998/namespace" は、予約された名前空間のプレフィックスを持つが"XML"にする必要があります。 このプレフィックスを手動で "XML" に変更できます。
+ ハイパーリンク"http://www.w3.org/XML/1998/namespace"は、予約された名前空間のプレフィックスを持つが"XML"にする必要があります。 このプレフィックスを手動で "XML" に変更できます。
 
 ## <a name="see-also"></a>参照
 これらのプロパティの詳細について[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。

@@ -1,28 +1,12 @@
 ---
-title: "Files2 のバインドのインポート |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- binding files, importing
-- assemblies, removing from database
-- importing binding files
-- target computers, cleaning
-- BizTalk assemblies, removing from database
-ms.assetid: 9e552a4b-06ec-4887-b17b-a625c137699f
-caps.latest.revision: "11"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 3783b21385c210c454bcd3d4c951f2200a6ec866
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 0bc5b29ff129b145d6b55cbe44ea3aa6a97def76
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="importing-binding-files"></a>バインド ファイルのインポート
 このトピックでは、BizTalk Adapter for JD Edwards EnterpriseOne の展開時のインポート プロセスについて説明します。 バインド ファイルとアセンブリを展開先のコンピューターに再展開すると、送信ポートと受信場所が、再インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
@@ -46,4 +30,4 @@ ms.lasthandoff: 09/20/2017
      **cscript RemoveSendPort.vbs\<送信ポートの名前 >**  
   
 ## <a name="see-also"></a>参照  
- [ポートとアセンブリの展開](../core/deploying-ports-and-assemblies3.md)
+ [インポート JD Edwards EnterpriseOne アプリケーション](../core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone.md)

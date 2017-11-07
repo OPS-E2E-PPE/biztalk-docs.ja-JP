@@ -1,28 +1,12 @@
 ---
-title: "JD Edwards EnterpriseOne の送信を設定する方法がパイプライン |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- JD Edwards EnterpriseOne adapters, send pipelines
-- send pipelines, configuring [JD Edwards EnterpriseOne adapters]
-- adapters [JD Edwards EnterpriseOne adapters], configuring
-- adapters [JD Edwards EnterpriseOne adapters], send pipelines
-- JD Edwards EnterpriseOne adapters, configuring
-ms.assetid: 4cfcecc1-febe-47c8-b75f-2b84defcdbbc
-caps.latest.revision: "9"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 8c9a6337195c8050afca1f12a015ec492db7f7ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 263f1f5d9441a30687df3e1a7a1170b7bf35e2fc
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-send-pipelines-for-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne の送信パイプラインを設定する方法
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne を選択することが必要です**XMLTransmit**と**XMLReceive**の送信および受信パイプラインをそれぞれします。  
@@ -47,5 +31,3 @@ Microsoft BizTalk Adapter for JD Edwards EnterpriseOne を選択することが�
   
 4.  **[OK]**をクリックします。  
   
-## <a name="see-also"></a>参照  
- [JD Edwards EnterpriseOne 送信ハンドラーの作成](../core/creating-jd-edwards-enterpriseone-send-handlers.md)

@@ -1,25 +1,12 @@
 ---
-title: "シングル サインオン On2 を使用して |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Single Sign-On
-- SSO
-ms.assetid: 994746bf-0839-45b3-857d-70f80814b6b9
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 0bab2b5fe6b78989113cc1d47f16e8ac8c85ebb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/security-in-biztalk-adapter-for-peoplesoft-enterprise/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2c278864c45e045cd04c539ad8b077c998242fe9
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="using-single-sign-on"></a>シングル サインオンを使用します。
 Microsoft BizTalk Adapter for PeopleSoft Enterprise ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、PeopleSoft などのサーバー システムを表します。  
@@ -28,7 +15,7 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise ではシングル サイン
   
 -   [シングル サインオンの要件](../core/requirements-for-single-sign-on2.md)  
   
--   [PeopleSoft Enterprise の単一のサインオンおよび BizTalk アダプター](../core/single-sign-on-and-biztalk-adapter-for-peoplesoft-enterprise.md)  
+-   [シングル サインオンと BizTalk Adapter for PeopleSoft Enterprise](../core/single-sign-on-and-biztalk-adapter-for-peoplesoft-enterprise.md)  
   
 -   [関連アプリケーションの作成](../core/creating-affiliate-applications2.md)  
   

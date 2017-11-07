@@ -1,5 +1,5 @@
 ---
-title: "シングル サインオンの要件 |Microsoft ドキュメント"
+title: "TIBCO EMS アダプターの SSO の要件 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,13 +12,15 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98d5164fa194f9a02314b897b267d9873879a9c0
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 805d14e056da665f8828ce0244f28ed9adc40ff4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
+
+## <a name="overview"></a>概要
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO EMS などのサーバー システムを表します。  
   
  シングル サインオンを使用するために必要なものは次のとおりです。  
@@ -31,7 +33,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) ではシ�
   
 -   SSO をサポートするサーバーのシステム  
   
- 分離ホストは、信頼された認証として構成する必要があります。  
+ 分離ホストは、信頼されている認証として構成する必要があります。
   
 ## <a name="enable-sso"></a>SSO を有効にします。  
   
@@ -45,4 +47,4 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) ではシ�
     >  作業を実行した後、SSO を使用して任意の Web 共有フォルダーへのリセットに注意してください**を共有しない**です。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用するアプリケーションが正しく更新またはアンインストールされません。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on4.md)
+[アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-tibco-ems.md)

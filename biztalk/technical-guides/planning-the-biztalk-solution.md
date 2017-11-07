@@ -12,13 +12,13 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74b7cbe23a6fc818428478859ea021d4fbf38546
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 337883ce2ca3b7f28def19898930d872928a8ce4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="planning-the-biztalk-solution"></a>BizTalk ソリューションの計画
+# <a name="plan-for-your-biztalk-solution"></a>BizTalk ソリューションを計画します。
 主な設計目標の 1 つ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]できるだけ多くの処理シナリオに対応するために最大限の柔軟性を提供することです。 この柔軟のための機能を最大限に使用で利用できるようにする方法を決定する主に、BizTalk ソリューションの開発者が直面する課題の 1 つは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最適なビジネス ニーズに対応します。 計画、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以下にまとめますフェーズに分けることができます。  
   
 ## <a name="scoping-the-solution"></a>ソリューションのスコープ  
@@ -186,7 +186,7 @@ ms.lasthandoff: 09/20/2017
 -   既定値と異なっている場合に使用されるすべてのソフトウェアとオペレーティング システムの機能の構成値  
   
 ## <a name="building-out-the-environment-for-the-solution"></a>ソリューションの環境の構築  
- インストール手順の詳細な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と必要な依存関係のソフトウェアをダウンロードできる BizTalk Server のインストール ガイドで見つかること[BizTalk Server 2010 ドキュメント](http://go.microsoft.com/fwlink/?LinkId=183138)(http://go.microsoft.com/fwlink/ しますか。LinkId = 183138)。  
+ インストール手順の詳細な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、およびソフトウェア要件を[BizTalk Server インストール ガイド](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)です。
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 層の計画](../technical-guides/planning-the-biztalk-server-tier.md)

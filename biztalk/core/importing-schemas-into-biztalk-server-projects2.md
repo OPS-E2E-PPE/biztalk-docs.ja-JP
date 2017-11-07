@@ -1,5 +1,5 @@
 ---
-title: "BizTalk Server Projects2 へのスキーマのインポート |Microsoft ドキュメント"
+title: "Visual Studio に JD Edwards EnterpriseOne のスキーマをインポート |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- importing schemas
-- schemas, importing into BizTalk Server projects
 ms.assetid: 640d5884-953a-46b6-b9dc-b931392a3059
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ebb0a39850029adec06986da5ddad1fc44c33ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: acd61cc8ab63d6859a8e10afb76f93c2f8cb2150
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>BizTalk Server プロジェクトへのスキーマのインポート
 ここでは、JD Edwards EnterpriseOne サーバーのブラウズ、および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトへのスキーマのインポートについて説明します。  
@@ -32,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
  JD Edwards EnterpriseOne ポートを作成後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトから Microsoft アダプター ウィザードを起動することで JD Edwards EnterpriseOne をブラウズできます。  
   
-### <a name="to-import-schemas-into-a-biztalk-server-project"></a>BizTalk Server プロジェクトにスキーマをインポートするには  
+## <a name="import-schemas-into-visual-studio"></a>Visual Studio にスキーマをインポートします。
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開きます。  
   
@@ -70,7 +67,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  スキーマの生成後に jdearglist.txt を変更した場合、スキーマを再生成してそのデータを更新する必要があります。 Jdearglist.txt の詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)です。  
   
-### <a name="to-select-the-schemas"></a>スキーマを選択するには  
+## <a name="select-the-schemas"></a>スキーマを選択します。  
   
 1.  **[インポートするサービス**] ページの最上位のノードを展開し、**ビジネス オブジェクト**ノードまたは**ビジネス サービス**ノード。  
   
@@ -89,5 +86,5 @@ ms.lasthandoff: 09/20/2017
   
 -   I は問い合わせ (Inquiry) を表します。  
   
-## <a name="see-also"></a>参照  
- [JD Edwards EnterpriseOne 送信ハンドラーの作成](../core/creating-jd-edwards-enterpriseone-send-handlers.md)
+## <a name="next-step"></a>次の手順
+[メッセージ コンテキストのプロパティの使用](../core/using-message-context-properties1.md)

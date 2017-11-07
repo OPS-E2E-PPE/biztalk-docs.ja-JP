@@ -13,13 +13,13 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9f7690c83fe9a79b4bda1dc515f9e79106b4ae6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d0fa84afa3ea857fff23cf112dc8bdc11f0c98dc
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="biztalk-server-whats-new-installation-configuration-and-upgrade"></a>BizTalk Server 新機能、インストール、構成、アップグレード
+# <a name="biztalk-server-whats-new-install-configuration-and-upgrade"></a>BizTalk Server 新機能、インストール、構成、およびアップグレード
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の新機能およびそのインストールおよび構成方法を説明します。 
 
 ## <a name="biztalk-versions"></a>BizTalk のバージョン
@@ -41,32 +41,32 @@ ms.lasthandoff: 09/20/2017
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションの開発、環境の監視、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の詳細な説明やその他の主要な手順の説明については、「[BizTalk Server の主要なドキュメント](../core/biztalk-server-core-documentation.md)」を参照してください。 
   
-## <a name="in-this-section"></a>このセクションの内容
+## <a name="next-steps"></a>次の手順
 
-[BizTalk Server 2016](../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md)
+- [BizTalk Server 2016: の新機能、およびインストール](../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md)
   
- [BizTalk Server 2013 R2 および 2013](../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)
+- [BizTalk Server 2013 R2 と 2013: 新機能、およびインストール](../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)
 
-[BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)
+- [BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)
 
-[BizTalk Server のクラスター構成](../install-and-config-guides/configure-biztalk-server-in-a-cluster.md)
+- [BizTalk Server のクラスター構成](../install-and-config-guides/configure-biztalk-server-in-a-cluster.md)
 
-[環境を最適化するための構成後の手順](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)
+- [環境を最適化するための構成後の手順](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)
 
-[BizTalk Server 構成の操作](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)
+- [BizTalk Server 構成の操作](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)
 
-[BizTalk Server データベースの統合](../install-and-config-guides/consolidate-the-biztalk-server-databases2.md)
+- [BizTalk Server データベースの統合](../install-and-config-guides/consolidate-the-biztalk-server-databases2.md)
 
-[構成フレームワークを使用した作業](../install-and-config-guides/working-with-the-configuration-framework.md)
+- [構成フレームワークを使用した作業](../install-and-config-guides/working-with-the-configuration-framework.md)
 
-[BizTalk Server の安全な展開](../install-and-config-guides/securing-your-biztalk-server-deployment.md)
+- [BizTalk Server の安全な展開](../install-and-config-guides/securing-your-biztalk-server-deployment.md)
 
-[BizTalk Server の削除 (アンインストールおよび構成の解除)](../install-and-config-guides/uninstall-and-unconfigure-biztalk-server-to-remove-it.md)
+- [BizTalk Server の削除 (アンインストールおよび構成の解除)](../install-and-config-guides/uninstall-and-unconfigure-biztalk-server-to-remove-it.md)
 
-[付録 A: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)
+- [付録 A: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)
 
-[付録 B: Microsoft SharePoint アダプターのインストール](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)
+- [付録 B: Microsoft SharePoint アダプターのインストール](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)
 
-[付録 C: 再配布可能な CAB ファイル](../install-and-config-guides/appendix-c-redistributable-cab-files.md)
+- [付録 C: 再配布可能な CAB ファイル](../install-and-config-guides/appendix-c-redistributable-cab-files.md)
 
-[付録 D: SMTP サーバーの作成](../install-and-config-guides/appendix-d-create-the-smtp-server.md)
+- [付録 D: SMTP サーバーの作成](../install-and-config-guides/appendix-d-create-the-smtp-server.md)

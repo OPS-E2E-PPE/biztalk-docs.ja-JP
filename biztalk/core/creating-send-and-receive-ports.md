@@ -23,11 +23,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 217a1d79dc4079c8f092985e00a1cd5636788e7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da4b117ca2d032ef1dc10731128acca903a51790
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-send-and-receive-ports"></a>作成する送信ポートと受信ポート
 次の手順を使用して、BizTalk Adapter for JD Edwards OneWorld 用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信ポートおよび受信ポートを作成します。  
@@ -91,6 +91,6 @@ ms.lasthandoff: 09/20/2017
 7.  **受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**をクリックし、 **ok**です。  
   
 ## <a name="see-also"></a>参照  
- [JD Edwards OneWorld 送信ハンドラーの作成](../core/creating-jd-edwards-oneworld-send-handlers.md)   
- [JD Edwards OneWorld トランスポートのプロパティを設定する方法](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+ [BizTalk 管理コンソールに、アイテムを追加します。](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   
+ [BizTalk 管理コンソールに、アイテムを追加します。](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   
+ [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

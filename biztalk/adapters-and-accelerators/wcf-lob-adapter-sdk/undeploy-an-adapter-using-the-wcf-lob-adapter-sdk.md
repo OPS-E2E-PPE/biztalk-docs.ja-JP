@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a8da6ff335460cbd957a33ac5074f65205dfb77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90208dd99a6b4ccdc8f3f55d2ad019baabe635ad
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用してアダプターを展開解除します。
 コンピューターからアダプターを展開解除するには、ユーザーは、次の 2 つのタスクを実行する必要があります。  
@@ -86,5 +86,4 @@ ms.lasthandoff: 09/20/2017
 4.  サービス構成エディタを閉じます。  
   
 ## <a name="see-also"></a>参照  
- [展開の制限事項](../../core/deployment-limitations1.md)   
  [WCF LOB アダプター SDK を使用して、アダプターを展開します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)

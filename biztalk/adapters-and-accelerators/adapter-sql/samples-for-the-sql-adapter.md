@@ -1,7 +1,8 @@
 ---
 title: "SQL アダプタ サンプル |Microsoft ドキュメント"
+description: "BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる SQL WCF アダプタのサンプル"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,13 +13,14 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf0e5f82bee9e13d9e19633f2c8ac6b62ce19e27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0729b18dc900800ed39ccae31acfdd37b38b4573
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="samples-for-the-sql-adapter"></a>SQL アダプタのサンプル
+
 サンプルを[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]に分類されます。  
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サンプル  
@@ -27,9 +29,12 @@ ms.lasthandoff: 09/20/2017
   
 -   WCF チャネル モデルのサンプル  
   
- サンプルは、 [BizTalk デベロッパー センター](https://msdn.microsoft.com/biztalk/biztalk-codesamples)です。 データベース、テーブル、プロシージャなどのサンプルで使用されるオブジェクトを作成するための SQL スクリプトも、サンプルと共に使用できます。  
+サンプルはいただけます[BizTalk Adapter Pack 2010: SQL アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=22455)です。 テーブル、データベースなどのサンプルで使用されるオブジェクトを作成するための SQL スクリプトと手順が含まれます。 
+
+> [!NOTE]
+> [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
   
- 次の一覧には、名前と、サンプルの説明が含まれています、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
+サンプルを次に示します。
   
 ## <a name="biztalk-server-samples"></a>BizTalk Server のサンプル  
   
@@ -41,9 +46,9 @@ ms.lasthandoff: 09/20/2017
 |TypedPolling|アダプターを使用して SQL Server データベースで厳密に型指定されたポーリングを実行する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。|  
 |FILESTREAMOperation|付いたアダプターを使用してデータベースを SQL Server 2008 での FILESTREAM 操作を実行する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。|  
 |IncrementalNotification|付いたアダプターを使用して SQL Server データベースからインクリメンタル通知を受信する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。|  
-|Employee_PurchaseOrder|サンプルがに基づいて[チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)です。|  
+|Employee_PurchaseOrder|サンプルがに基づいて[チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して](tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)です。|  
   
-## <a name="wcf-service-model-samples"></a>WCF サービス モデルのサンプル  
+## <a name="wcf-service-model-samples"></a>WCF サービス モデルのサンプル   
   
 |サンプルのディレクトリ名|Description|  
 |---------------------------|-----------------|  
@@ -58,7 +63,7 @@ ms.lasthandoff: 09/20/2017
 |TypedPolling_ServiceModel|メッセージを受信する厳密に型指定されたポーリング ベース データが変更されて、アダプターを使用して SQL Server データベースからの方法を示します。|  
 |Notification_ServiceModel|アダプターを使用して SQL Server データベースからクエリ通知を受信する方法を示します。|  
   
-## <a name="wcf-channel-model-samples"></a>WCF チャネル モデルのサンプル  
+## <a name="wcf-channel-model-samples"></a>WCF チャネル モデルのサンプル 
   
 |サンプルのディレクトリ名|Description|  
 |---------------------------|-----------------|  
@@ -66,4 +71,4 @@ ms.lasthandoff: 09/20/2017
 |Polling_ChannelModel|アダプターを使用して SQL Server データベースからデータ変更のポーリングに基づいたメッセージを受信する方法を示します。|  
   
 ## <a name="see-also"></a>参照  
-[SQL アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-your-sql-applications.md)
+[SQL アプリケーションを開発する](develop-your-sql-applications.md)

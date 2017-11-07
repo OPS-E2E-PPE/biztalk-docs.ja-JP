@@ -1,28 +1,12 @@
 ---
-title: "JD Edwards EnterpriseOne トランスポートのプロパティを設定 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Max Concurrent Calls parameter
-- JD Edwards EnterpriseOne adapters, transport properties
-- transport properties, configuring [JD Edwards EnterpriseOne adapters]
-- adapters [JD Edwards EnterpriseOne adapters], transport properties
-- Bootstrap Data Source properties
-ms.assetid: 7d258ee6-1cb3-4b88-ac41-49e639833574
-caps.latest.revision: "17"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 4ed3118230f2e4ae48676b297ac444da9c392221
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 71a1b75c9a602b196504fa9f06984f0ed9d52e05
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="setting-jd-edwards-enterpriseone-transport-properties"></a>JD Edwards EnterpriseOne トランスポートのプロパティの設定
 JD Edwards EnterpriseOne トランスポートのプロパティは、デザイン時および実行時に使用されます。 **トランスポートのプロパティ**ダイアログ ボックスで、パラメーターを設定する接続と資格情報を特定サーバーのシステムおよびアクセスしようとしているオブジェクトにします。  
@@ -34,7 +18,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
 > [!NOTE]
 >  エンタープライズ サーバー名およびポートの既定値は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で構成されています。 また、jdeinterop.ini というファイルからも読み込まれます。 ログオン エラーが発生した場合は、資格情報と値を確認してください。  
   
-### <a name="to-specify-transport-properties"></a>トランスポートのプロパティを指定するには  
+## <a name="enter-transport-properties"></a>トランスポートのプロパティを入力してください。  
   
 1.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、し、必要な展開アプリケーション。  
   
@@ -124,7 +108,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
 ### <a name="single-sign-on"></a>シングル サインオン  
  JD Edwards EnterpriseOne システムへのアクセスには、2 つの方法を使用できます。 1 つはログイン資格情報 (トランスポートのプロパティのログイン パラメーター) を使用する方法で、もう 1 つはシングル サインオン (SSO) を使用する方法です。 選択**はい**で、 **SSO を使用する**でのシングル サインオンを使用するフィールドです。  
   
- 詳細および基本的な手順をシングル サインオンの設定については、「[シングル サインオンを使用して](../core/using-single-sign-on1.md)です。  
+ 詳細および基本的な手順をシングル サインオンの設定については、「 [BizTalk adapter for JD Edwards EnterpriseOne のセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)です。
   
  さらに、一覧から関連アプリケーションを選択する必要があります。 エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、JD Edwards EnterpriseOne などのアプリケーションを表します。 BizTalk Adapter for JD Edwards EnterpriseOne は、アプリケーション ユーザーの資格情報を使用します。  
   
@@ -133,5 +117,4 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
  関連アプリケーションを作成する方法の詳細については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications4.md)です。 また、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オンライン ヘルプでも参照できます。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンと BizTalk Adapter JD Edwards EnterpriseOne for](../core/single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
- [JD Edwards EnterpriseOne 送信ハンドラーの作成](../core/creating-jd-edwards-enterpriseone-send-handlers.md)
+ [シングル サインオンと BizTalk Adapter for JD Edwards EnterpriseOne](../core/single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone.md)   

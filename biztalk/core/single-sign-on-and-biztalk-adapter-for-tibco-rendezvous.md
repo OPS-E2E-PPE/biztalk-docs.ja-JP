@@ -7,22 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- SSO, using with the adapter
-- Single Sign-On, using with the adapter
-- HTTP requests, processing
 ms.assetid: 52e698bb-38ba-4a12-b15a-d1581061d62f
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54529d8eefb351471ea1c2bd7278c744737b66f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 310a3448acd8bd70e617a9a5af650b55a12c9007
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-tibco-rendezvous"></a>シングル サインオンと BizTalk Adapter for TIBCO Rendezvous
+
+## <a name="overview"></a>概要
 シングル サインオン (SSO) を Microsoft BizTalk Adapter for TIBCO Rendezvous を使用するときに、アダプターは SSO 資格情報データベースから資格情報を取得します。そのためでサーバー システムのログオン資格情報を入力する必要はありません、**トランスポートのプロパティ**ウィンドウです。  
   
  デザイン時には、アダプターが、BizTalk Server プロジェクトを開始したユーザーのコンテキストで (指定された関連アプリケーションの) システムの資格情報を取得します。 このユーザーは、アプリケーション ユーザーである必要があります。 実行時には、SSO を使用するときにパススルーのシナリオで受信場所として [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP 受信アダプターを使用してください。  
@@ -37,4 +35,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [関連アプリケーションの作成](../core/creating-affiliate-applications1.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on5.md)
+[セキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)

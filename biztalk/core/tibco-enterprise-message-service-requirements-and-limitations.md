@@ -7,37 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- encryption
-- messages, compression
-- EMS limitations
-- message compression
-- API, adding to GAC
-- global assembly cache, adding API
-- GAC, adding TIBCO EMS API
-- system requirements
-- TIBCO.EMS.dll
-- EMS requirements
-- messages, encryption
 ms.assetid: 6e4c022c-e6a8-4ac5-b998-b0465002a31e
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81e49f4a74cce4414fd9d0b069a382d9facb03d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fcd386245ba06c2e3b5a5b92df7b7a7f01a1a749
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="tibco-enterprise-message-service-requirements-and-limitations"></a>TIBCO Enterprise Message Service の要件と制限事項
+
 ## <a name="system-requirements"></a>システム要件  
- Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、TIBCO Enterprise Message Service (EMS) バージョン 4.2 をサポートしています。 TIBCO EMS バージョン 4.2 には、クライアント SDK (TIBCO EMS C# API を使用) が含まれています。 BizTalk Adapter for TIBCO EMS は、この API を使用して TIBCO EMS とやり取りします。  
+含まれている TIBCO Enterprise Message Service には、クライアント SDK (TIBCO EMS c# API を使用) が含まれています。 BizTalk Adapter for TIBCO EMS は、この API を使用して TIBCO EMS とやり取りします。  
   
-## <a name="adding-the-api-to-the-gac"></a>GAC への API の追加  
+## <a name="add-the-api-to-the-gac"></a>API を GAC に追加します。  
  BizTalk Adapter for TIBCO EMS では、TIBCO EMS C# API である TIBCO.EMS.dll をグローバル アセンブリ キャッシュ (GAC) に追加する必要があります。 このアセンブリがインストールされていない場合、アダプターは例外をトリガーし、適切なメッセージを記録します。  
-  
-#### <a name="to-add-the-tibco-ems-c-api-to-the-gac"></a>TIBCO EMS c# API を GAC に追加するには  
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターに TIBCO EMS C# API をコピーします。  
   
@@ -65,4 +52,4 @@ ms.lasthandoff: 09/20/2017
 -   BizTalk TIBCO EMS アダプターを使用して、50 MB を超えるサイズのメッセージを送受信することはできません。 このサイズを超えた場合、System.OutOfMemoryException 例外が発生します。  
   
 ## <a name="see-also"></a>参照  
- [計画とアーキテクチャ](../core/planning-and-architecture16.md)
+ [計画および設計](../core/planning-and-architecture16.md)

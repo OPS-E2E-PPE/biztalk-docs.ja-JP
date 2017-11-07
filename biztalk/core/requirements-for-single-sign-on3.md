@@ -1,5 +1,5 @@
 ---
-title: "シングル サインオンの要件 |Microsoft ドキュメント"
+title: "TIBCO Rendevous アダプターの SSO の要件 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,13 +12,15 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61932b44364670515f02f89a1441a5d54030bc94
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 40cf27a3b96534239fa871bd04b90febee9beafe
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
+
+## <a name="prerequisites"></a>前提条件
 シングル サインオン (SSO) を使用するために必要なものは次のとおりです。  
   
 -   Microsoft BizTalk Server
@@ -43,4 +45,4 @@ ms.lasthandoff: 10/17/2017
 >  作業を実行した後、SSO を使用して任意の Web 共有フォルダーへのリセットに注意してください**を共有しない**です。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用するアプリケーションが正しく更新またはアンインストールされません。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on5.md)
+[セキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)

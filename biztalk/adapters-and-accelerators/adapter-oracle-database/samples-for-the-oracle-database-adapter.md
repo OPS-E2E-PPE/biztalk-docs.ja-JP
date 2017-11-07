@@ -1,27 +1,23 @@
 ---
-title: "Oracle データベース アダプターのサンプル |Microsoft ドキュメント"
+title: "Oracle データベース アダプター サンプル |Microsoft ドキュメント"
+description: "BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる oracle DB WCF アダプタのサンプル"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- samples, WCF channel model
-- samples, WCF service model
-- samples, BizTalk
-- samples, migration
 ms.assetid: 744f19ce-3126-4745-92dd-4f68443180fc
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4973c0b4ea54ef3b7692dbe4be19773acf1e6e7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5bfef9fcfce65d8aede1cd905a53469c565977f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="samples-for-the-oracle-database-adapter"></a>Oracle データベース アダプターのサンプル
 サンプルを[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]に分類されます。  
@@ -31,14 +27,16 @@ ms.lasthandoff: 09/20/2017
 -   WCF サービス モデルのサンプル  
   
 -   WCF チャネル モデルのサンプル  
+
   
--   移行のサンプル  
+サンプルはいただけます[BizTalk Adapter Pack 2010: Oracle データベース アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=4675)です。 テーブルと、サンプルで使用されるパッケージを作成するための SQL スクリプトが含まれます。 
+
+> [!NOTE]
+> [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
   
- サンプルはいただけます[http://go.microsoft.com/fwlink/p/?LinkID=196854](http://go.microsoft.com/fwlink/p/?LinkID=196854)です。 テーブル、パッケージなどを作成するための SQL スクリプト。 使用されるサンプルも用のサンプルと共に使用できます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+サンプルを次に示します。
   
- 次の一覧には、名前と、サンプルの説明が含まれています、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
-  
-## <a name="biztalk-server-samples"></a>BizTalk Server のサンプル  
+## <a name="biztalk-server-samples"></a>BizTalk Server のサンプル
   
 |サンプルのディレクトリ名|Description|  
 |---------------------------|-----------------|  
@@ -71,11 +69,6 @@ ms.lasthandoff: 09/20/2017
 |OracleStreamingDemo|エンド ツー エンドの UpdateLOB とテーブルの Select 操作を使用して LOB データのストリーミングを実行する方法を示します|  
 |OracleTransactedDmlCM|WCF チャネル モデルを使用して、トランザクションで Oracle データベースでの操作を実行する方法を示します。|  
   
-## <a name="migration-samples"></a>移行のサンプル  
-  
-|サンプルのディレクトリ名|Description|  
-|---------------------------|-----------------|  
-|Oracle_Migration|Oracle データベースの BizTalk ODBC アダプターを使用して作成された BizTalk プロジェクトを使用する方法を示します (に付属して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]) と WCF ベースで利用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] (に付属して[!INCLUDE[adapterpack20](../../includes/adapterpack20-md.md)])。|  
-  
+
 ## <a name="see-also"></a>参照  
-[Oracle データベース アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)
+[Oracle データベース アプリケーションの開発](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)

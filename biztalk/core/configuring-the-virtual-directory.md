@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a879fe776956c290fb895c7f0feb39b6088e268
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a5e74e297eba5dcc92d2008bcca90fdc7b325814
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="configuring-the-virtual-directory"></a>仮想ディレクトリの構成
 このトピックでは、仮想ディレクトリを構成してユーザーのアプリケーションを確認する手順を示します。  
@@ -60,4 +60,4 @@ ms.lasthandoff: 09/20/2017
 4.  をクリックして**識別**BizTalk Server グループのメンバーであるユーザーにこの COM + アプリケーションを実行する id を変更するとします。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+ [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

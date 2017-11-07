@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35b0d7fec5acc991ae6c141f57297b7511281be3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd8e20660a58b647388e7db2324abc5f9a7028e5
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects"></a>JD Edwards OneWorld スキーマを BizTalk Server プロジェクトにインポートする
 ここでは、JD Edwards OneWorld サーバーを参照し、スキーマを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトにインポートする方法について説明します。  
@@ -91,4 +91,4 @@ ms.lasthandoff: 09/20/2017
 >  --I は照会  
   
 ## <a name="see-also"></a>参照  
- [JD Edwards OneWorld 送信ハンドラーの作成](../core/creating-jd-edwards-oneworld-send-handlers.md)
+ [BizTalk 管理コンソールに、アイテムを追加します。](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)

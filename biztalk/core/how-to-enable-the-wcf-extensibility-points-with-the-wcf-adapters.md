@@ -1,5 +1,6 @@
 ---
-title: "WCF アダプターで WCF 機能拡張ポイントを有効にする方法 |Microsoft ドキュメント"
+title: "WCF アダプターで WCF 機能拡張ポイントを有効にする |Microsoft ドキュメント"
+description: "アセンブリをインストールし、machine.config の構成、拡張 BizTalk 管理者を追加作成する受信場所で BizTalk Server で WCF アダプターの WCF 機能拡張ポイントを有効にするには"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,31 +8,27 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- ports, WCF adapters
-- WCF adapters, extensibility ports
 ms.assetid: 0c2af105-5272-4a6a-95d2-066312ab788e
 caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e481521ba651fe8c1e66ea4f730d05375451f111
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be2980f3235552f263efbd4fce92c0042216b88c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a>WCF アダプターを使用して WCF 機能拡張ポイントを有効にする方法
-このトピックでは、WCF-Custom アダプタおよび WCF-CustomIsolated アダプタを使用して、動作拡張機能、バインド要素拡張機能、およびバインド拡張機能の 3 つの WCF 機能拡張ポイントを有効にする方法について説明します。 これを行うには、まず WCF 機能拡張ポイントを実装するアセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、コンピューターの machine.config ファイルを変更した後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して WCF-Custom アダプターまたは WCF-CustomIsolated アダプターを構成します。  
+次の 3 つの WCF 機能拡張ポイントを有効にする — 動作拡張機能、バインド要素の拡張機能、およびバインド拡張機能: Wcf-custom および Wcf-customisolated アダプタを使用しています。 これを行うには、まず WCF 機能拡張ポイントを実装するアセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、コンピューターの machine.config ファイルを変更した後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して WCF-Custom アダプターまたは WCF-CustomIsolated アダプターを構成します。  
   
- WCF 機能拡張ポイントの詳細についてで WCF の拡張」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=86380](http://go.microsoft.com/fwlink/?LinkId=86380)です。  
+参照してください[WCF の拡張](https://docs.microsoft.com/dotnet/framework/wcf/extending/extending-wcf)の詳細については、WCF 機能拡張ポイントです。
   
- WCF 機能拡張ポイントを有効にする方法の詳細についてを参照してください「SDK サンプル:: を使用してカスタム バインド拡張機能 with the Wcf-custom Adapters」 [http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185)です。  
-  
+ 
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行する必要がありますログインする必要がのメンバーであるアカウントを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者グループ。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+メンバーであるアカウントでサインイン、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者グループ。 [展開して、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)詳細な情報を提供します。  
   
-### <a name="to-install-assemblies-implementing-a-wcf-extensibility-point-in-the-gac"></a>WCF 機能拡張ポイントを実装するアセンブリを GAC にインストールするには  
+## <a name="install-assemblies-implementing-a-wcf-extensibility-point-in-the-gac"></a>GAC に WCF 機能拡張ポイントを実装するアセンブリをインストールします。  
   
 1.  WCF 機能拡張ポイントを実装するアセンブリを、ローカル コンピューター上のフォルダーにコピーします。  
   
@@ -52,7 +49,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  WCF アダプターの WCF 機能拡張ポイントを有効にするには、アダプターを実行している BizTalk ホスト インスタンスが、WCF 機能拡張ポイントが実装されているアセンブリを実行時に読み込む必要があります。  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-binding-extension"></a>WCF バインド拡張機能の machine.config ファイルを構成するには  
+## <a name="configure-the-machineconfig-file-for-a-wcf-binding-extension"></a>WCF バインド拡張機能の machine.config ファイルを構成します。  
   
 1.  コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。  
   
@@ -69,10 +66,8 @@ ms.lasthandoff: 09/20/2017
     ```  
   
     > [!NOTE]
-    >  コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
-  
-    > [!NOTE]
-    >  詳細については、  **<bindingExtensions>** 要素を参照してください"<bindingExtensions>"で[http://go.microsoft.com/fwlink/?LinkID=86180](http://go.microsoft.com/fwlink/?LinkID=86180)です。  
+    >  - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
+    >  - 参照してください[bindingExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingextensions)この要素上です。
   
 3.  メモ帳で、machine.config ファイルを保存します。  
   
@@ -81,9 +76,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  BizTalk ホスト インスタンスおよび [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの WCF 拡張機能ポイントを処理するには、WCF インフラストラクチャのすべてのコンピューターでこれらの手順を繰り返す必要があります。  
   
-### <a name="to-configure-a-wcf-binding-extension-by-using-the-biztalk-administration-console"></a>BizTalk 管理コンソールを使用して WCF バインド拡張機能を構成するには  
+## <a name="configure-a-wcf-binding-extension-by-using-the-biztalk-administration-console"></a>BizTalk 管理コンソールを使用して WCF バインド拡張機能を構成します。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  開いている**BizTalk Server 管理**です。  
   
     > [!NOTE]
     >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを既に開いている場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを再起動します。  
@@ -104,7 +99,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックしてすべての開いているダイアログ ボックスを閉じる、 **OK**ボタン、およびエラー メッセージとエラーがあるイベント ログが表示されないことを確認します。  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-binding-element-extension"></a>WCF バインド要素拡張機能の machine.config ファイルを構成するには  
+## <a name="configure-the-machineconfig-file-for-a-wcf-binding-element-extension"></a>WCF バインド要素拡張機能の machine.config ファイルを構成します。  
   
 1.  コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。  
   
@@ -121,10 +116,8 @@ ms.lasthandoff: 09/20/2017
     ```  
   
     > [!NOTE]
-    >  コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
-  
-    > [!NOTE]
-    >  詳細については、  **<bindingElementExtensions>** 要素を参照してください"<bindingElementExtensions>"で[http://go.microsoft.com/fwlink/?LinkId=86381](http://go.microsoft.com/fwlink/?LinkId=86381)です。  
+    > - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
+    > - 参照してください[bindingElementExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingelementextensions)この要素上です。
   
 3.  メモ帳で、machine.config ファイルを保存します。  
   
@@ -133,9 +126,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  BizTalk ホスト インスタンスおよび [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの WCF 拡張機能ポイントを処理するには、WCF インフラストラクチャのすべてのコンピューターでこれらの手順を繰り返す必要があります。  
   
-### <a name="to-configure-a-wcf-binding-element-extension-by-using-the-biztalk-administration-console"></a>BizTalk 管理コンソールを使用して WCF バインド要素拡張機能を構成するには  
+## <a name="configure-a-wcf-binding-element-extension-by-using-the-biztalk-administration-console"></a>BizTalk 管理コンソールを使用して WCF バインド要素拡張機能を構成します。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  開いている**BizTalk Server 管理**です。  
   
     > [!NOTE]
     >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを既に開いている場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを再起動します。  
@@ -163,13 +156,13 @@ ms.lasthandoff: 09/20/2017
     -   **バインディング**ボックスの一覧をバインド要素拡張を右クリックし、をクリックして**拡張機能を上へ移動**または**拡張機能を下へ移動**です。 最下位のバインド要素拡張機能、**バインディング**一覧は、チャネル スタックの一番下のコンポーネントに対応しています。 内の最上位のバインド要素、**バインディング**一覧は、通信スタックの一番上のコンポーネントに対応しています。  
   
         > [!NOTE]
-        >  詳細については、カスタム バインドのバインド要素の特定の順序で「カスタム バインディング」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=86383](http://go.microsoft.com/fwlink/?LinkId=86383)です。  
+        >  参照してください[カスタム バインド](https://docs.microsoft.com/dotnet/framework/wcf/extending/custom-bindings)詳細については、カスタム バインドのバインド要素の特定の順序に関するします。
   
 10. トランスポートのプロパティ ダイアログ ボックスで、他のトランスポートの設定を構成します。  
   
 11. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックしてすべての開いているダイアログ ボックスを閉じる、 **OK**ボタン、およびエラー メッセージとエラーがあるイベント ログが表示されないことを確認します。  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-behavior-extension"></a>WCF 動作拡張機能の machine.config ファイルを構成するには  
+## <a name="configure-the-machineconfig-file-for-a-wcf-behavior-extension"></a>WCF 動作拡張機能の machine.config ファイルを構成します。  
   
 1.  コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。  
   
@@ -186,10 +179,8 @@ ms.lasthandoff: 09/20/2017
     ```  
   
     > [!NOTE]
-    >  コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
-  
-    > [!NOTE]
-    >  詳細については、  **<behaviorExtensions>** 要素を参照してください"<behaviorExtensions>"で[http://go.microsoft.com/fwlink/?LinkId=86382](http://go.microsoft.com/fwlink/?LinkId=86382)です。  
+    >  - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
+    >  - 参照してください[behaviorExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/behaviorextensions)この要素上です。
   
 3.  メモ帳で、machine.config ファイルを保存します。  
   
@@ -198,9 +189,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  BizTalk ホスト インスタンスおよび [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの WCF 拡張機能ポイントを処理するには、WCF インフラストラクチャのすべてのコンピューターでこれらの手順を繰り返す必要があります。  
   
-### <a name="to-configure-a-wcf-behavior-extension-by-using-the-biztalk-administration-console"></a>BizTalk 管理コンソールを使用して WCF 動作拡張機能を構成するには  
+## <a name="configure-a-wcf-behavior-extension-by-using-the-biztalk-administration-console"></a>BizTalk 管理コンソールを使用して WCF 動作拡張機能を構成します。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  開いている**BizTalk Server 管理**です。  
   
     > [!NOTE]
     >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを既に開いている場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを再起動します。  
@@ -223,6 +214,6 @@ ms.lasthandoff: 09/20/2017
   
 8.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックしてすべての開いているダイアログ ボックスを閉じる、 **OK**ボタン、およびエラー メッセージとエラーがあるイベント ログが表示されないことを確認します。  
   
-### <a name="to-configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>SSL 証明書を使用して WCF-Custom 受信場所を構成するには  
+## <a name="configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>WCF カスタムを構成する SSL 証明書を使用して受信場所  
   
--   Wcf-custom 受信場所がなどを使用して HTTP カーネル モード ドライバー (HTTP.sys) が発生する場合、 **httpsTransport**通信用に Secure Sockets Layer (SSL)、受信場所のバインド要素は、証明書が必要各ソケット (IP アドレスとポートの組み合わせ) に登録されます。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細についてを参照してください「方法に:: 構成のポートで SSL 証明書を」 [http://go.microsoft.com/fwlink/?LinkId=86384](http://go.microsoft.com/fwlink/?LinkId=86384)です。
+-   Wcf-custom 受信場所がなどを使用して HTTP カーネル モード ドライバー (HTTP.sys) が発生する場合、 **httpsTransport**通信用に Secure Sockets Layer (SSL)、受信場所のバインド要素は、証明書が必要各ソケット (IP アドレスとポートの組み合わせ) に登録されます。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細については、次を参照してください。[操作方法: SSL 証明書を使用するポートを構成](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)です。

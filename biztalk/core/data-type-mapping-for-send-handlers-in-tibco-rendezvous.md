@@ -7,23 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- XML schemas, mapping to Redevous types
-- message mapping, examples
-- XML schemas, schema types
-- data type mapping, send handlers
-- examples, message mapping
-- send handlers, data type mapping
 ms.assetid: fa1a9233-8781-45a8-9c55-a18ecaa0f456
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6c54cb7ae684aa2f617ca615ed55703e331de46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bda336d149d373477b26efeb2e4b05de4aac7554
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a>TIBCO Rendezvous での送信ハンドラーのデータ型マッピング
 XML スキーマの種類は、TIBCO Rendezvous に型情報 (xsi:type=) が提供されている場合にのみ、TIBCO Rendezvous の型にマップできます。 サポートされない型はすべて、可能な場合は、文字列にマップされます。 マップできない場合、またはポート構成でこのオプションが無効である場合は、エラーが生成されます。  
@@ -111,4 +104,4 @@ xmlns:ns="some namespace for this message [value not important, unless the schem
  前のメッセージが構造化された TIBCO Rendezvous メッセージとして生成されると、6 つのフィールドがある最上位 TibcoMsg インスタンスになります。 最後のフィールドは、配列型の 2 つのフィールドで構成されるサブメッセージです (アイテム要素は TIBCO Rendezvous メッセージ フィールドにはマップされず、`array` 型のメッセージ フィールドの要素としてマップされます)。 型の仕様を持たない、MarketCap フィールドは文字列フィールドのメッセージとして送信されます。  
   
 ## <a name="see-also"></a>参照  
- [TIBCO Rendezvous 送信ハンドラーを作成します。](../core/creating-tibco-rendezvous-send-handlers.md)
+ [TIBCO Rendezvous 送信ハンドラーの作成](../core/creating-tibco-rendezvous-send-handlers.md)

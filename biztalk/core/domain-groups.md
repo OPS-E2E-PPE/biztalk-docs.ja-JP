@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: domain groups
 ms.assetid: 9adc090e-e18c-46b6-b985-49b200d42966
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 52fc5cc05718aa6d9e0ca89bc48467052fb916a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42833e24ee4b0ad8f78a8f60139d66ceb41a5f8f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="domain-groups"></a>ドメイン グループ
-また、ドメイン グループ アカウントとドメイン ユーザー アカウントは、単一および複数の両方のコンピュータ構成でサポートされます。 複数コンピュータ構成の場合、このセクション、およびインストール ガイドの「マルチサーバー環境に関する注意点 (Considerations for Multiserver Environments)」で示す要件を満たす必要があります。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)です。  
+# <a name="domain-groups-in-biztalk"></a>BIzTalk 内のドメイン グループ
+また、ドメイン グループ アカウントとドメイン ユーザー アカウントは、単一および複数の両方のコンピュータ構成でサポートされます。 複数コンピュータ構成の場合、このセクション、およびインストール ガイドの「マルチサーバー環境に関する注意点 (Considerations for Multiserver Environments)」で示す要件を満たす必要があります。 詳細については、次を参照してください。、[インストールの概要](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)です。  
   
+## <a name="before-you-begin"></a>アンインストールの準備
 -   BizTalk Server の構成にドメイン グループを使用する場合は、BizTalk Server を構成する前に、グループを手動で作成しておく必要があります。 構成マネージャーでは、ドメイン グループを作成できません。  
   
 -   ドメイン グループやユーザー アカウントを作成した後でグループ関連に従って、適切なグループにユーザー アカウントを追加[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)です。  
@@ -37,5 +37,5 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [ローカル グループ](../core/local-groups.md)   
- [BizTalk Server 2013 および 2013 R2 のインストール概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)   
+ [インストールの概要](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)   
  [BizTalk Server の Windows グループ アカウントとユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)

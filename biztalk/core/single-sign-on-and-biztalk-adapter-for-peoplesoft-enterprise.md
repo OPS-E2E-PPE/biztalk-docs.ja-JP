@@ -16,14 +16,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3335d2c41e8c8dad4eabcb9f7a63253bd30e7185
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2bb898906bfd3087ef909e59990a16ce16c2822c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-peoplesoft-enterprise"></a>シングル サインオンと BizTalk Adapter for PeopleSoft Enterprise
-シングル サインオン (SSO) を Microsoft BizTalk Adapter for PeopleSoft Enterprise を使用するときに、アダプターが SSO 資格情報データベースから資格情報を取得します。そのためでサーバー システムのログオン資格情報を入力する必要はありません、**トランスポートのプロパティ** ダイアログ ボックス。  
+シングル サインオン (SSO) を Microsoft BizTalk Adapter for PeopleSoft Enterprise を使用するときに、アダプターが SSO 資格情報データベースから資格情報を取得します。そのためでサーバー システムのログオン資格情報を入力する必要はありません、**トランスポートのプロパティ**] ダイアログ ボックス。  
   
  デザイン時には、BizTalk Adapter for PeopleSoft Enterprise が、BizTalk Server プロジェクトを開始したユーザーのコンテキストで (指定された関連アプリケーションの) システムの資格情報を取得します。 このユーザーは、アプリケーション ユーザーである必要があります。  
   
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [関連アプリケーションの作成](../core/creating-affiliate-applications2.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on2.md)
+ [アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

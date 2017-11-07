@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3bc4326d5821dd9fb672d8dabf9751a3fa2d816
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b4559a3d362d0d778c4d60cc485fa79e8e05efe
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="running-orchestrations"></a>オーケストレーションの実行
 次の手順では、オーケストレーションのビルド、展開、バインド、および開始の方法について説明します。  
@@ -85,4 +85,4 @@ ms.lasthandoff: 09/20/2017
      状態を変更する**を実行している**をクリックして**更新**、またはホスト インスタンスを右クリックし、をクリックして**更新**です。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+ [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

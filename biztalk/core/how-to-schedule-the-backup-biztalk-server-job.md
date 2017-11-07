@@ -1,69 +1,83 @@
 ---
-title: "バックアップの BizTalk Server のジョブをスケジュールする方法 |Microsoft ドキュメント"
+title: "バックアップの BizTalk Server のジョブのスケジュールを設定 |Microsoft ドキュメント"
+description: "BizTalk Server のバックアップ ジョブのパラメーターを構成および実行毎月、毎週、日単位、または 1 時間ごとに、スケジュールを設定"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/02/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- backing up, scheduling
-- backing up, backup jobs
-- scheduling, backup jobs
 ms.assetid: 6e89fff4-da87-4cdc-acc4-46f03c3269fc
 caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d6b40ae933874e1c25cb3a93dbbeab514ef5dfe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7f09ca97f65605ac3bf427d1c1fcc322a14feb53
+ms.sourcegitcommit: 9aaed443492b74729171fef79c634bff561af929
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="how-to-schedule-the-backup-biztalk-server-job"></a>BizTalk Server のバックアップ ジョブのスケジュールを設定する方法
+# <a name="schedule-the-backup-biztalk-server-job"></a>バックアップの BizTalk Server ジョブのスケジュール
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブは、SQL Server エージェント サービスにより設定されたスケジュールに従って実行されます。 バックアップの実行頻度を変更するには、SQL Server Management Studio を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブのスケジュールを変更します。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を実行するには、SQL Server sysadmin 固定サーバーの役割のメンバーであるアカウントを使用してログオンする必要があります。  
+SQL Server の sysadmin 固定サーバー ロールのメンバーであるアカウントでサインインします。  
   
-### <a name="to-schedule-the-backup-biztalk-server-job-sql-server-2008"></a>BizTalk Server のバックアップ ジョブ (SQL Server 2008) をスケジュールするには  
+## <a name="schedule-the-backup-biztalk-server-job"></a>BizTalk Server のバックアップ ジョブのスケジュール
   
-1.  を BizTalk 管理データベースが格納されているコンピューターでをクリックして**開始**、をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 R2**、をクリックして**Microsoft SQL Server Management Studio**です。  
+1.  BizTalk 管理データベースをホストする SQL Server で開く**SQL Server Management Studio**です。
+
+2.  **サーバーへの接続**、ここでデータベースが存在する、BizTalk Server は、認証の種類を選択します。 SQL Server の名前を入力し、**接続**です。  
   
-2.  **サーバーへの接続** ダイアログ ボックスで、BizTalk Server がデータベース、SQL Server の名前が存在するを指定し、適切な認証の種類をクリックし、**接続**です。  
+3.  オブジェクト エクスプ ローラーでダブルクリック**SQL Server エージェント**、し、**ジョブ**です。  
   
-3.  オブジェクト エクスプ ローラーをダブルクリックして**SQL Server エージェント**、クリックして**ジョブ**です。  
+4.  詳細ウィンドウで右クリック**Backup BizTalk Server (BizTalkMgmtDb)**、し、**プロパティ**です。  
   
-4.  詳細ウィンドウで右クリック**Backup BizTalk Server (BizTalkMgmtDb)**、クリックして**プロパティ**です。  
+5.  **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)****ページの選択****手順**です。  
   
-5.  **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)**ダイアログ ボックスで、**ページの選択**をクリックして**手順**です。  
+6.  **ジョブ ステップの一覧** **BackupFull**、し、**編集**です。  
   
-6.  **ジョブ ステップの一覧**をクリックして**BackupFull**、順にクリック**編集**です。  
-  
-7.  **ジョブ ステップのプロパティ - BackupFull**  ダイアログ ボックスで、**コマンド**ボックスで、完全バックアップを実行する間隔を頻度を変更することで、コマンドを編集: **'h'**(1 時間ごと)、**が '** (毎日) **'w'** (毎週)、 **am'** (毎月)、 **'y'** (毎年) をクリックし、 **ok**.  
+7.  **ジョブ ステップのプロパティ - BackupFull**で、**コマンド**ボックスで、完全バックアップを実行する頻度を変更することで、コマンドを更新します**'h'** (1 時間ごと)、**が '。** (毎日) **'w'** (毎週)、 **am'** (毎月)、 **'y'** (毎年)。 **[ OK]** を選択します。  
   
     > [!NOTE]
-    >  新しく設定した間隔で BizTalk Server のバックアップ ジョブが最初に実行される際には、完全バックアップが実行されます。  
+    >  BizTalk Server のバックアップ ジョブを初めて実行するには、完全バックアップが完了します。  
+    
+8.  追加の構成 **@frequency** パラメーター。  
   
-8.  **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)**ダイアログ ボックスで、**ページの選択**をクリックして**スケジュール**です。  
+    - **@ForceFullBackupAfterPartialSetFailure**: 既定値は**false**です。 ときに**false**次回のサイクル、完全バックアップが行われるまで、完全バックアップが失敗したら、システムが待機する場合、します。  
+    
+        > [!NOTE]
+        >  場合、  **@frequency** 設定が長い (毎週、月、毎年) などし、このパラメーターを設定**false**危険な可能性があります。 このシナリオである可能性がありますにこのフラグを設定することをお**true**です。 ときに**true**、毎回の障害が発生した、システム強制的に完全バックアップを作成します。 小さいパフォーマンスに影響がある可能性がありますが、回復可能なシステムが safter です。
   
-9. **スケジュール一覧**、 をクリックして**MarkAndBackupLogSched**、クリックして**編集**です。  
+    - **@BackupHour**: デフォルトの値は NULL です。 このパラメーターに直接関係する **@Frequency**です。 頻度を設定すると**h**完全バックアップを実行する曜日を 1 時間を設定する (時間単位)。 0 (深夜) から 23 (11 PM) までの値を選択できます。 空白の場合、完全バックアップには、1 時間ごとが実行されます。  
+    
+       > [!NOTE]
+        >  (たとえば、100 または-1) 0 ~ 23 の範囲外の数値でこのパラメーターを設定する場合、システム リテラルに 0 です。
   
-10. **ジョブ スケジュールのプロパティ - MarkAndBackupLogSched**スケジュールの種類を選択 ダイアログ ボックス**定期的**(既に選択されていない) 場合は、ドロップダウン リスト ボックスからです。  
+    - **@UseLocalTime**: ローカル時刻を使用する状態余分なパラメーターです。 既定では、ジョブは UTC 時刻で動作します。 したがってオーストラリア (これは、UTC + 10 時間) に住んでいる場合は、午前 0 時ではなく、午前 10 時、バックアップが実行されます。 ベスト プラクティスとしてお勧めこの**1** (true)。  
+  
+9.  **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)****ページの選択**をクリックして**スケジュール**です。  
+  
+10. **スケジュール一覧**、 をクリックして**MarkAndBackupLogSched**、クリックして**編集**です。  
+  
+11. **ジョブ スケジュールのプロパティ - MarkAndBackupLogSched**、スケジュールの種類の選択**定期的**ドロップダウン リストからです。  
   
      既定では、ジョブが 15 分おきに実行されるようにスケジュールが設定されます。  
+     
+    > [!NOTE]
+    >  に従って、要件が、運用環境以外の最初のテストには、この値を変更することができます。 頻繁なバックアップで低すぎる結果をこの値に設定し、SQL 環境内で負荷を背景に追加します。 この値が大きすぎるを設定すると、トランザクション ログのサイズを増やすことがあり、パフォーマンスに影響を与えます。 一部の状況で、既定値のままにしておくことをお勧めします。    
   
-11. 必要に応じて、スケジュールを更新し、をクリックして**OK**です。  
+12. 必要な場合、スケジュールを更新し、 **OK**です。  
   
     > [!NOTE]
-    >  SQL Server エージェント ジョブのスケジュール設定に関する詳細については、次を参照してください"[ジョブのスケジュール](http://go.microsoft.com/fwlink/?LinkId=195887)。"。  
+    >  [ジョブのスケジュール](https://docs.microsoft.com/sql/ssms/agent/schedule-a-job)詳細を示します。
   
-12. **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)**ダイアログ ボックスで、をクリックして**OK**です。  
+13. **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)**をクリックして**OK**です。  
   
-## <a name="see-also"></a>参照  
- [バックアップの BizTalk Server ジョブを構成する方法](../core/how-to-configure-the-backup-biztalk-server-job.md)   
- [ログ配布用に送信先システムを構成する方法](../core/how-to-configure-the-destination-system-for-log-shipping.md)   
- [データベースを復元する方法](../core/how-to-restore-your-databases.md)   
- [バックアップと復元に関する詳細情報](../core/advanced-information-about-backup-and-restore1.md)
+## <a name="more-good-stuff"></a>便利な機能  
+ [バックアップの BizTalk Server のジョブを構成します。](../core/how-to-configure-the-backup-biztalk-server-job.md)   
+ [ログ配布の送信先システムを構成します。](../core/how-to-configure-the-destination-system-for-log-shipping.md)   
+ [データベースを復元します。](../core/how-to-restore-your-databases.md)   
+ [バックアップおよび復元に関する詳細情報](../core/advanced-information-about-backup-and-restore1.md)

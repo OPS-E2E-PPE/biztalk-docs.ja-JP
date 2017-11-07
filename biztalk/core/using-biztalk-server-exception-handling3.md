@@ -7,22 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- exception handling, BizTalk Server
-- BizTalk Server exception handling
 ms.assetid: 9441e884-1de9-45d6-982b-911fc06b9d5c
 caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9745082ecbaae16b361e91978f065aacb701b600
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9342b8233951cf057a7efdcc524c66d99448c13
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="using-biztalk-server-exception-handling"></a>BizTalk Server 例外処理の使用
-このセクションでは、BizTalk Server の例外処理オブジェクトを使用してバックエンド サーバーの例外をトラップする方法を説明します。  
+# <a name="use-biztalk-server-exception-handling"></a>BizTalk Server 例外処理を使用します。
+
+## <a name="overview"></a>概要
+オーケストレーション内では、エラーと、バック エンド サーバーからの例外を処理する図形を追加します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

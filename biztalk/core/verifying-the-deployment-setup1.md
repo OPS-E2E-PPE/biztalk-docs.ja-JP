@@ -1,25 +1,12 @@
 ---
-title: "展開 Setup1 の検証 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- CLASSPATH, verifying
-- deployment, verifying setup
-ms.assetid: 6c719e4c-9a61-480f-a4e4-0a1c518d1364
-caps.latest.revision: "6"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: a5799d164dc2470236c3ab0286e38d19986a4d5a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 404ed3aecbaacf09067b2c8f62077e1f3a9de6d2
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="verifying-the-deployment-setup"></a>展開セットアップの確認
 BizTalk Server を使用してバインド ファイルをインポートする前に、以下の項目について確認する必要があります。  
@@ -28,7 +15,7 @@ BizTalk Server を使用してバインド ファイルをインポートする�
   
 -   新しいコンピューターに、応答用の同じフォルダーが存在する。同じでない場合は、バインド ファイルを編集します。  
   
--   JD Edwards EnterpriseOne システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。 詳細については、次を参照してください。[展開の制限事項](../core/deployment-limitations4.md)です。  
+-   JD Edwards EnterpriseOne システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。 
   
 ## <a name="see-also"></a>参照  
- [ポートとアセンブリの展開](../core/deploying-ports-and-assemblies3.md)
+ [インポート JD Edwards EnterpriseOne アプリケーション](../core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone.md)

@@ -1,5 +1,5 @@
 ---
-title: "Applications5 関連の作成 |Microsoft ドキュメント"
+title: "TIBCO EMS 用の関連アプリケーションの作成 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,32 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- applications, affiliate
-- Single Sign-On, tickets
-- affiliate applications
-- creating affiliate applications
-- tickets, SSO
-- affiliate applications, enabling XML
-- SSO tickets
 ms.assetid: 191e5b56-dab9-4bf3-9f89-a900907d64e0
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc6b42a6f3251d9e897af21fcb4207b6790e91cf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce5df15794886f9177f12f2a9e9a33e3ffdc335f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
+# <a name="create-affiliate-applications"></a>関連アプリケーションを作成します。
 次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用を開始する方法について説明します。  
   
 > [!NOTE]
 >  SSO エラーが発生した場合は、BizTalk Server の構成時にドメイン アカウントを使用したかどうかを確認してください。これは Enterprise SSO サービスの機能に影響します。 ドメイン アカウントで SSO のみ関数  
   
-### <a name="to-create-an-affiliate-application"></a>関連アプリケーションを作成するには  
+## <a name="create-an-affiliate-application"></a>関連アプリケーションを作成します。  
   
 1.  コントロール パネルで、開く**Services**、エンタープライズ シングル サインオン サービスが実行されていることを確認してください。  
   
@@ -75,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
  XML の例を使用する場合、関連アプリケーションである TIBCO EMS App には、コマンド プロンプトに表示される値が含まれています。  
   
-### <a name="to-create-single-sign-on-tickets"></a>シングル サインオン チケットを作成するには  
+## <a name="create-single-sign-on-tickets"></a>シングル サインオン チケットを作成します。  
   
 1.  次のコマンドを入力し、SSO チケットの動作を制御します。  
   
@@ -89,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
      **このコンピューターで使用中の SSO。操作が完了しました。**  
   
-### <a name="to-enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にするには  
+## <a name="enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
 1.  次のコマンドを入力します。  
   
@@ -120,4 +112,4 @@ ms.lasthandoff: 09/20/2017
      関連アプリケーションは、TIBCO EMS の BizTalk アダプターに表示されます。**トランスポートのプロパティ** ダイアログ ボックス。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on4.md)
+[アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-tibco-ems.md)

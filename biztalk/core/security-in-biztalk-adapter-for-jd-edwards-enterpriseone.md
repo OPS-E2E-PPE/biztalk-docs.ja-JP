@@ -1,29 +1,41 @@
 ---
-title: "BizTalk Adapter for JD Edwards EnterpriseOne のセキュリティ |Microsoft ドキュメント"
+title: "SSO を使用して JD Edwards EnterpriseOne を保護する |Microsoft ドキュメント"
+description: "BizTalk Server で Microsoft BizTalk Adapter JD Edwards EnterpriseOne を使用する場合のセキュリティの概要"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: security
 ms.assetid: 24c9802e-485d-4632-bc27-3285f35d34e3
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61cca6c81a19c0b510793fd0239ac4903dc586d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb669cc197fba3322a1c1736004aa0fd57b942d3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="security-in-biztalk-adapter-for-jd-edwards-enterpriseone"></a>BizTalk Adapter for JD Edwards EnterpriseOne のセキュリティ
+# <a name="security-in-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne のセキュリティ
+
+## <a name="overview"></a>概要
+
+Microsoft BizTalk Adapter for JD Edwards EnterpriseOne は、シングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、JD Edwards EnterpriseOne などのサーバー システムを表します。 
+
 このセクションでは、セキュリティで保護された環境で Microsoft BizTalk Server Adapter for JD Edwards EnterpriseOne を展開するためのガイドラインを示します。  
   
 > [!CAUTION]
->  クライアント ファイルが基幹業務アプリケーションに直接接続されるので、Microsoft BizTalk Server Adapter for JD Edwards EnterpriseOne は承認されたユーザーだけが使用できるように制限することを強くお勧めします。  
+>  承認されたユーザーだけに、BizTalk adapter for JD Edwards EnterpriseOne の使用を制限することをお勧めように、クライアント ファイルが基幹業務アプリケーションに直接接続します。  
   
-## <a name="in-this-section"></a>このセクションの内容  
- [シングル サインオンを使用します。](../core/using-single-sign-on1.md)
+## <a name="next-steps"></a>次の手順 
+  
+-   [シングル サインオンの要件](../core/requirements-for-single-sign-on1.md)  
+  
+-   [シングル サインオンと BizTalk Adapter for JD Edwards EnterpriseOne](../core/single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone.md)  
+  
+-   [関連アプリケーションの作成](../core/creating-affiliate-applications4.md)  
+  
+-   [送信ポートを作成する方法](../core/how-to-create-a-send-port1.md)

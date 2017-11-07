@@ -1,26 +1,12 @@
 ---
-title: "TIBCO Rendezvous から BizTalk Server を使用してメッセージを受信する |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- messages, receiving
-- receiving messages
-- memory use
-ms.assetid: 4eee9c3a-2966-4d5f-ba49-201bb488458c
-caps.latest.revision: "4"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 4ac81f269e19526f5466e8c12115d617b8171da3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/using-tibco-rendezvous-receive-ports-from-biztalk-server/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: b1738a0933b5f570edfd882778e50ebf7e2ca730
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="using-biztalk-server-from-tibco-rendezvous-to-receive-messages"></a>TIBCO Rendezvous から BizTalk Server を使用してメッセージを受信する
 Microsoft BizTalk Adapter for TIBCO Rendezvous は、複数のスレッドのキューからイベントをディスパッチします。 BizTalk Server の受信場所は、1 つの TIBCO Rendezvous イベント キューおよびそのディスパッチャー スレッドのプールと関連付けられています。  
@@ -32,4 +18,4 @@ Microsoft BizTalk Adapter for TIBCO Rendezvous は、複数のスレッドのキ
   
 ## <a name="see-also"></a>参照  
  [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)   
- [作成元の TIBCO Rendezvous 受信ハンドラー](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [TIBCO Rendezvous 受信ハンドラーの作成](../core/creating-tibco-rendezvous-receive-handlers.md)

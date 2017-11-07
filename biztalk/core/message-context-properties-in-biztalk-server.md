@@ -1,5 +1,6 @@
 ---
-title: "メッセージ コンテキスト プロパティを BizTalk Server で |Microsoft ドキュメント"
+title: "TIBCO EMS メッセージ コンテキスト プロパティを使用して |Microsoft ドキュメント"
+description: "BizTalk Server オーケストレーションで TIBCO Enterprise Message System のメッセージ記述子フィールドを使用します。"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,24 +8,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- message context properties, accessing
-- message context properties, BizTalk Server
 ms.assetid: 163ac2cf-0e2d-4780-b398-baa825f92b00
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75e92e458ec6927ab8e1bc6082cd9a71ee3e4387
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ef4f0d8c606724cec9c85551251cb003aa8a7e34
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="message-context-properties-in-biztalk-server"></a>BizTalk Server におけるメッセージのコンテキスト プロパティ
+# <a name="message-context-properties-in-tibco-ems"></a>TIBCO EMS メッセージ コンテキスト プロパティ
+
+## <a name="tibcoemspropertiesdll"></a>TibcoEMSProperties.dll
 BizTalk Server オーケストレーションから TIBCO Enterprise Message System のメッセージ記述子フィールドにアクセスするへの参照を追加する必要があります**Microsoft.BizTalk.Adapters.TibcoEMSProperties.dll**をプロジェクトにします。 このアセンブリにある **\<TIBCO EMS_Adapter_installation_directory > \bin**です。 この TIBCO EMS のプロパティ スキーマにアクセスすると、さらに多くのコンテキスト プロパティに、さまざまな BizTalk Server 開発ツールからアクセスできるようになります (オーケストレーション デザイナのメッセージ割り当て図形など)。  
   
-## <a name="accessing-context-properties"></a>コンテキスト プロパティへのアクセス  
+## <a name="access-context-properties"></a>コンテキスト プロパティにアクセスします。  
  コンテキスト プロパティにアクセスするには、TIBCO EMS 名前空間の使用できるプロパティのうちいずれかを指定します。 TIBCO EMS 用の BizTalk アダプタにバインドされたポートから受信したメッセージのコンテキスト プロパティを読み取るには、式の中で次の構文を使用します。  
   
 ```  
@@ -41,5 +41,7 @@ Message(TibcoEMS.Property)
 Message(TibcoEMS.Property) = value;  
 ```  
   
-## <a name="see-also"></a>参照  
- [メッセージ コンテキスト プロパティ](../core/message-context-properties2.md)
+## <a name="next-steps"></a>次の手順
+-   [TIBCO EMS メッセージ記述子のプロパティと値](../core/tibco-enterprise-message-service-message-descriptor-properties.md)  
+  
+-   [チュートリアル: メッセージ コンテキストのプロパティの使用](../core/tutorial-using-message-context-properties.md)

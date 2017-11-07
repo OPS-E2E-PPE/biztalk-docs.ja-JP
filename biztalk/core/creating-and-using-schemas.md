@@ -1,38 +1,35 @@
 ---
-title: "作成して、スキーマを使用して |Microsoft ドキュメント"
+title: "作成し、TIBCO でスキーマの使用 |Microsoft ドキュメント"
+description: "BizTalk エディターを使用してスキーマを作成する、BizTalk adapter for TIBCO Enterprise Message Service とターゲットの名前空間をスキーマの BizTalk Server の設定"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/23/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- generating schemas
-- schemas
-- creating schemas
-- schemas, generating
 ms.assetid: 3927b0b3-db3b-4494-b003-d930af734e58
 caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f10275c5ed0b887907c7b26b7d1ce8ad5003b099
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 707067ed0c48abb62d567098cd472b59bad302b0
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="creating-and-using-schemas"></a>作成して、スキーマの使用
+# <a name="create-and-use-tibco-schemas"></a>作成し、TIBCO スキーマを使用
+
+## <a name="overview"></a>概要
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) で使用するスキーマは、XML エディターまたは Visual Studio の BizTalk Server エディター (オーケストレーションでアダプターを使用する場合のみ) を使用して作成します。 スキーマには、想定している情報の種類を記述します。 このトピックの情報は、送信ハンドラーと受信ハンドラーの両方に適用されます。  
   
- BizTalk Adapter for TIBCO Enterprise Message Service で使用するスキーマを作成するときは、ターゲットの名前空間を含める必要があります。 BizTalk Server でターゲットの名前空間が必要なのは、特定のメッセージ インスタンスを特定のオーケストレーションに関連付けるキーとなるからです。 つまり、オーケストレーションでは特定のターゲットの名前空間を持つメッセージをサブスクライブし、そのターゲットの名前空間を持つ受信 XML メッセージが、メッセージをサブスクライブしたすべてのオーケストレーションに配信されます。 XML ドキュメント スキーマにターゲットの名前空間がない場合は、ルート要素の名前がキーとして使用されます。  
+BizTalk Adapter for TIBCO Enterprise Message Service で使用するスキーマを作成するときは、ターゲットの名前空間を含める必要があります。 BizTalk Server でターゲットの名前空間が必要なのは、特定のメッセージ インスタンスを特定のオーケストレーションに関連付けるキーとなるからです。 つまり、オーケストレーションでは特定のターゲットの名前空間を持つメッセージをサブスクライブし、そのターゲットの名前空間を持つ受信 XML メッセージが、メッセージをサブスクライブしたすべてのオーケストレーションに配信されます。 XML ドキュメント スキーマにターゲットの名前空間がない場合は、ルート要素の名前がキーとして使用されます。  
+
+次の手順では、ターゲットの名前空間を設定する方法と、スキーマを生成する方法を示します。  
   
-## <a name="generating-a-schema"></a>スキーマの生成  
- スキーマを生成する手順とターゲットの名前空間を設定する手順を次に示します。  
-  
-#### <a name="to-generate-a-schema-using-biztalk-editor"></a>BizTalk エディターを使用してスキーマを生成するには  
-  
+## <a name="generate-a-schema"></a>スキーマを生成します。    
+ 
 1.  BizTalk エディターで、プロジェクトを開きます。  
   
 2.  ソリューション エクスプ ローラーで右上で、で **追加**、し、**生成した項目の追加**です。  
@@ -43,9 +40,9 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) で使用�
   
 5.  をクリックして**参照**をクリックして、スキーマを生成する入力ファイルを検索する**OK**。  
   
-     次に、ターゲットの名前空間を設定する必要があります。  
+次に、ターゲットの名前空間を設定します。  
   
-#### <a name="to-set-the-target-namespace"></a>ターゲットの名前空間を設定するには  
+## <a name="set-the-target-namespace"></a>ターゲットの名前空間を設定します。  
   
 1.  BizTalk エディターで開き、スキーマ ファイルを右クリックして**\<スキーマ >**、し、**プロパティ**です。  
   

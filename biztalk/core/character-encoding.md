@@ -7,21 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- transaction support
-- character encoding
-- encoding characters
-- messages, character encoding
 ms.assetid: 0a0c21c8-3318-4533-9734-89302527cb67
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19d3204cae7b82e9d18325b223e5c3b7a2d40808
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 319ddd649e47e053fe2896d577f28b72602593e3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="character-encoding"></a>Character Encoding
 TIBCO Enterprise Message Service (EMS) は、TIBCO EMS 用の BizTalk アダプタで EMS に送信されるメッセージでのさまざまな文字エンコードをサポートします。 メッセージは、既定の UTF-8 エンコードを使用してエンコードされます。 メッセージを受信すると、アダプターはメッセージのエンコードを判断し、該当する文字列を UTF-8 に変換した後で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを渡します。 すべての文字変換に Microsoft .NET Framework のクラスが使用されます。そのため、アダプタは Microsoft .NET Framework に用意されている文字変換をサポートします。  

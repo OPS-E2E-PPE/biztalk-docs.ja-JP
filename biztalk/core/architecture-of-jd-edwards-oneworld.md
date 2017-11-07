@@ -1,5 +1,6 @@
 ---
 title: "JD Edwards OneWorld のアーキテクチャ |Microsoft ドキュメント"
+description: "デザイン時および実行時に BizTalk の JD Edwards OneWorld アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +8,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: architecture
 ms.assetid: 9200a090-a587-4b60-9447-d281580f2078
 caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1daee7d44152817da1ac536dd98cbaf898e2ac7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f866e5d72e392136d19c155785aaf6b71db2ce3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="architecture-of-jd-edwards-oneworld"></a>JD Edwards OneWorld のアーキテクチャ
-Microsoft BizTalk Adapter for JD Edwards OneWorld を使用すると、JD Edwards OneWorld のビジネス関数にアクセスできます。 JD Edwards OneWorld は、JDENet と呼ばれる独自のメッセージング アーキテクチャを使用して、クライアント コンピューターとサーバー コンピューター間の通信を処理します。 JDENet は、JAR ファイルは、Connector.jar および Kernel.jar で JD Edwards OneWorld コネクタ クラスによって実装されます。 通信は、TCP/IP をトランスポート プロトコルとして使用して実装されており、既定のポートは 6009 または 6010 です。 この値を設定する場所の詳細についてを参照してください[JD Edwards OneWorld トランスポートのプロパティを設定する方法](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)です。  
+Microsoft BizTalk Adapter for JD Edwards OneWorld を使用すると、JD Edwards OneWorld のビジネス関数にアクセスできます。 JD Edwards OneWorld は、JDENet と呼ばれる独自のメッセージング アーキテクチャを使用して、クライアント コンピューターとサーバー コンピューター間の通信を処理します。 JDENet は、JAR ファイルは、Connector.jar および Kernel.jar で JD Edwards OneWorld コネクタ クラスによって実装されます。 通信は、TCP/IP をトランスポート プロトコルとして使用して実装されており、既定のポートは 6009 または 6010 です。 この値を設定する場所の詳細についてを参照してください[アイテムを BizTalk 管理コンソールに追加](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)です。  
   
  **BizTalk Adapter for JD Edwards OneWorld のアーキテクチャ**  
   
@@ -83,5 +83,5 @@ Microsoft BizTalk Adapter for JD Edwards OneWorld を使用すると、JD Edward
 -   受信ポートは、BizTalk Server の XML ドキュメントを送信します。  
   
 ## <a name="see-also"></a>参照  
- [JD Edwards OneWorld トランスポートのプロパティを設定する方法](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)   
- [計画とアーキテクチャ](../core/planning-and-architecture17.md)
+ [BizTalk 管理コンソールに、アイテムを追加します。](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   
+ [計画および設計](../core/planning-and-architecture17.md)

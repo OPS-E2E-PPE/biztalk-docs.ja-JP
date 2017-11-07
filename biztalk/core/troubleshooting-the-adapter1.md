@@ -1,5 +1,5 @@
 ---
-title: "トラブルシューティング、Adapter1 |Microsoft ドキュメント"
+title: "JD Edwards EnterpriseOne アダプターのトラブルシューティング |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- JD Edwards EnterpriseOne adapters, wildcard characters
-- adapters [JD Edwards EnterpriseOne adapters], wildcard characters
-- wildcard characters, JD Edwards EnterpriseOne adapters
 ms.assetid: f5a55e52-039a-4aea-8251-b697fd061ddc
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b77b42854a58d7fe8ffafd177e91f327a7f5e7e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eac716a7567930509ebfd310cdaf9874286b349c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="troubleshooting-the-adapter"></a>アダプターのトラブルシューティング
 このトピックでは、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne の使用中に発生する可能性がある問題の特定と解決に役立つ情報を提供します。  
@@ -28,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="cannot-use-wildcards-in-send-port-properties"></a>送信ポートのプロパティにワイルドカードを使用できない  
  Adapter for JD Edwards Enterprise One では、以下の送信ポート プロパティ フィールドにワイルドカードを使用できません。  
   
--   [ユーザー名]  
+-   Username  
   
 -   JDE 環境  
   
@@ -72,5 +68,5 @@ ms.lasthandoff: 09/20/2017
     ```  
   
 ## <a name="see-also"></a>参照  
- [JD Edwards EnterpriseOne 用送信ポートを作成する方法](../core/how-to-create-send-ports-for-jd-edwards-enterpriseone.md)   
+ [アダプターを追加し、アイテムを作成します。](../core/adding-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
  [JD Edwards EnterpriseOne のトラブルシューティング](../core/troubleshooting-jd-edwards-enterpriseone.md)

@@ -1,27 +1,16 @@
 ---
-title: "JD Edwards OneWorld トランスポートのプロパティを設定する方法 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- setting transport properties
-- transport properties, setting
-ms.assetid: 6d38088b-a496-414e-aae6-d28c5d6398b6
-caps.latest.revision: "13"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 7abac3b468b8c76b8214e400366144b39f1e2741
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 5290f424bbeb5cf54e78c903c50a6c2d945bc8cc
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-jd-edwards-oneworld-transport-properties"></a>JD Edwards OneWorld トランスポートのプロパティを設定する方法
+
+## <a name="overview"></a>概要
 JD Edwards OneWorld の "トランスポート プロパティ" システム定義は、デザイン時および実行時のログオンに使用されます。 この資格情報を設定するのは、デザイン時に JD Edwards OneWorld ビジネス関数を参照するためと、実行時に呼び出しを行うためです。  
   
  JD Edwards OneWorld への接続が作成されるときに、接続オブジェクトにパラメーターが渡されます (ユーザー、パスワード、環境)。 JD Edwards OneWorld Application ビジネス関数のインスタンスが返されます。 資格情報には、さらにエンタープライズ サーバー/アプリケーション サーバーの名前、およびサービスがリッスンする定義済みの TCP/IP ポートが含まれます。  
@@ -31,12 +20,8 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
 > [!NOTE]
 >  入力値はすべて、大文字と小文字が区別されます。  
   
-## <a name="setting-properties"></a>プロパティの設定  
+## <a name="set-the-transport-properties"></a>トランスポートのプロパティを設定します。  
  **トランスポートのプロパティ**ダイアログ ボックスで、サーバーのシステムおよびアクセスしようとしているオブジェクトに固有の接続および資格情報パラメーターを設定します。  
-  
- このプロセスの手順は次のとおりです。  
-  
-#### <a name="to-set-transport-properties"></a>トランスポートのプロパティを設定するには  
   
 1.  資格情報を指定します。  
   
@@ -48,7 +33,7 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
   
 2.  シングル サインオン (SSO) を使用するのには、選択**はい**で、 **SSO を使用する**です。  
   
-     SSO を設定する方法の詳細については、次を参照してください。[シングル サインオンを使用して](../core/using-single-sign-on3.md)です。  
+     SSO を設定する方法の詳細については、次を参照してください[アダプターのセキュリティ。](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)  
   
 3.  一覧で関連アプリケーションを選択します。  
   
@@ -81,7 +66,7 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
   
      JD Edwards OneWorld にアクセスするには、BizTalk Adapter for JD Edwards OneWorld の接続パラメーターを設定する必要があります。  
   
-### <a name="adapter-required-properties"></a>アダプターに必要なプロパティ  
+## <a name="adapter-required-properties"></a>必要なアダプターのプロパティ  
  コントロール パネルでグローバル環境変数を設定しなかった場合は、このセクションで設定できます。  
   
 |パラメーター|Description|  
@@ -94,5 +79,3 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
 |ポート|データを交換するポート番号を入力 (たとえば、 `6009`)。|  
 |[ユーザー名]|JD Edwards OneWorld システムへのログオンに使用する JD Edwards OneWorld ユーザー名を入力します。|  
   
-## <a name="see-also"></a>参照  
- [JD Edwards OneWorld 送信ハンドラーの作成](../core/creating-jd-edwards-oneworld-send-handlers.md)

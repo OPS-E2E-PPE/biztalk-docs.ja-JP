@@ -1,5 +1,5 @@
 ---
-title: "Applications2 関連の作成 |Microsoft ドキュメント"
+title: "PeopleSoft Enterprise の関連アプリケーションの作成 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,23 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Single Sign-On, creating tickets
-- creating affiliate applications
-- tickets, SSO
-- affiliate applications, enabling XML
-- affiliate applications, creating
-- SSO tickets
 ms.assetid: 95151163-5aaf-4683-afb7-02949ccda3e1
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f39fbbfb62a9081937891b98e2b01a5e7f046e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4a77926fa9d98606770ad2fe7715a3b0ff66ea5c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用を開始する方法を示します。  
@@ -31,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  SSO エラーが発生した場合は、ときに使用したドメイン アカウント BizTalk Server を構成するように、エンタープライズ SSO サービスの機能に影響を確認します。 SSO はドメイン アカウントでのみ機能します。  
   
-### <a name="to-create-an-affiliate-application"></a>関連アプリケーションを作成するには  
+## <a name="create-an-affiliate-application"></a>関連アプリケーションを作成します。  
   
 1.  コントロール パネルで、開く**Services**、エンタープライズ シングル サインオン サービスが実行されていることを確認してください。  
   
@@ -74,9 +67,7 @@ ms.lasthandoff: 09/20/2017
     </SSO>  
     ```  
   
-## <a name="creating-single-sign-on-tickets"></a>シングル サインオン チケットの作成  
-  
-#### <a name="to-create-sso-tickets"></a>SSO チケットを作成するには  
+## <a name="create-single-sign-on-tickets"></a>シングル サインオン チケットを作成します。  
   
 1.  次のコマンドを入力し、SSO チケットの動作を制御します。  
   
@@ -90,9 +81,7 @@ ms.lasthandoff: 09/20/2017
   
      **このコンピューターで使用中の SSO。操作が完了しました。**  
   
-## <a name="enabling-the-affiliate-application-xml"></a>関連アプリケーション XML の有効化  
-  
-#### <a name="to-enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にするには  
+## <a name="enable-the-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
 1.  次のコマンドを入力します。  
   
@@ -123,4 +112,4 @@ ms.lasthandoff: 09/20/2017
 5.  関連アプリケーションが [BizTalk Adapter for PeopleSoft Enterprise トランスポートのプロパティ] ダイアログ ボックスに表示されます。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on2.md)
+ [アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

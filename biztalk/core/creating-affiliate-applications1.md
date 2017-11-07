@@ -1,5 +1,5 @@
 ---
-title: "Applications1 関連の作成 |Microsoft ドキュメント"
+title: "TIBCO Rendezvous 用のアプリケーションを作成する関連 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,23 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- applications, affiliate
-- Single Sign-On, tickets
-- affiliate applications
-- tickets, SSO
-- affiliate applications, enabling XML
-- SSO tickets
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f52c59caf451a2e0b55c775bf70a36a9a05ae9c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a286a80ef2c867dd196fcdce414f2d0ff3c8255c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用方法を説明します。 エンタープライズ シングル サインオンの使用方法の詳細については、Microsoft のドキュメントを参照してください。  
@@ -31,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  SSO エラーが発生した場合は、ときに使用したドメイン アカウント BizTalk Server を構成したように、エンタープライズ SSO サービスの機能に影響を確認します。 SSO はドメイン アカウントでのみ機能します。  
   
-### <a name="to-create-an-affiliate-application"></a>関連アプリケーションを作成するには  
+## <a name="create-an-affiliate-application"></a>関連アプリケーションを作成します。  
   
 1.  コントロール パネルで、開く**Services**、エンタープライズ シングル サインオン サービスが実行されていることを確認してください。  
   
@@ -72,7 +65,7 @@ ms.lasthandoff: 09/20/2017
     </SSO>  
     ```  
   
-### <a name="to-create-single-sign-on-tickets"></a>シングル サインオン チケットを作成するには  
+## <a name="create-single-sign-on-tickets"></a>シングル サインオン チケットを作成します。  
   
 1.  次のコマンドを入力し、SSO チケットの動作を制御します。  
   
@@ -86,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
      **このコンピューターで使用中の SSO。操作が完了しました。**  
   
-### <a name="to-enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にするには  
+## <a name="enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
 1.  次のコマンドを入力します。  
   
@@ -120,4 +113,3 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for TIBCO Rendezvous のセキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on5.md)

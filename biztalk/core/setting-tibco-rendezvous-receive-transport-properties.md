@@ -1,32 +1,19 @@
 ---
-title: "設定の TIBCO Rendezvous 受信トランスポートのプロパティ |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- transport properties, setting for receive ports
-- setting transport properties, receive
-ms.assetid: 56e0a51a-6505-43bf-a48b-de35f4b114df
-caps.latest.revision: "12"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 06ff1b3a11d6b95c2fb784e969363433dec3dc28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 48eb0c1694168fb1acf840a52dc793d0ed943a19
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="setting-tibco-rendezvous-receive-transport-properties"></a>TIBCO Rendezvous 受信トランスポートのプロパティを設定する
 メッセージをリッスンするように Microsoft BizTalk Adapter for TIBCO Rendezvous を構成するときは、どのサブジェクト名をリッスンするかを指定します。 必須のプロパティはこれだけです。  
   
  次の手順に従って、プロパティを指定してください。  
   
-### <a name="to-specify-tibco-rendezvous-transport-properties"></a>TIBCO Rendezvous トランスポートのプロパティを指定するには  
+## <a name="enter-tibco-rendezvous-transport-properties"></a>TIBCO Rendezvous トランスポートのプロパティを入力してください。  
   
 1.  [TIBCO Rendezvous トランスポートのプロパティ] ダイアログ ボックスで、展開**アダプターに必要なプロパティ**、入力、 **Rendezvous サブジェクト名**です。  
   
@@ -98,7 +85,7 @@ ms.lasthandoff: 09/20/2017
     1.  選択**はい**で、 **SSO を使用する**でのシングル サインオンを使用します。  
   
         > [!NOTE]
-        >  参照してください[シングル サインオンを使用して](../core/using-single-sign-on5.md)SSO をセットアップする方法についてはします。  
+        >  参照してください[セキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)SSO をセットアップする方法についてはします。  
   
     2.  一覧から関連アプリケーションを選択します。  
   
@@ -112,4 +99,4 @@ ms.lasthandoff: 09/20/2017
      TIBCO Rendezvous のメッセージを受信するには、BizTalk Adapter for TIBCO Rendezvous の接続パラメーターを設定する必要があります。  
   
 ## <a name="see-also"></a>参照  
- [作成元の TIBCO Rendezvous 受信ハンドラー](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [TIBCO Rendezvous 受信ハンドラーの作成](../core/creating-tibco-rendezvous-receive-handlers.md)

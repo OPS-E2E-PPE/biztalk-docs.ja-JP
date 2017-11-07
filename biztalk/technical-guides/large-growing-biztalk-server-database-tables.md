@@ -1,5 +1,5 @@
 ---
-title: "大規模な拡大 BizTalk Server データベース テーブル |Microsoft ドキュメント"
+title: "データベース テーブルの大きな成長 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,16 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f427862d90c119c831bffc59e1a6e55a25700a68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1253f57a38ea0658d15e536a4f7b614cc52aed7f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="large-growing-biztalk-server-database-tables"></a>BizTalk Server データベース テーブルの大規模な成長
 次の表、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通常が大きいものを拡大するテーブル。 このデータを使用すると、潜在的な問題が存在する場所を特定します。  
-  
+
+## <a name="tables-list"></a>テーブルの一覧
 |テーブル|Description|コメント|  
 |-----------|-----------------|--------------|  
 |*HostNameQ*_Suspended テーブル|このテーブルには、特定のホストの中断されたインスタンスに関連付けられている、スプール テーブル内のメッセージへの参照が含まれています。 次の表は、BizTalkMsgBoxDb データベースでです。|場合、 *HostNameQ*_Suspended テーブルの多くのレコードがある、テーブルに有効な中断されたインスタンスに表示される可能性がありますを含んでいる、**グループ ハブ**ページ。 これらのインスタンスを終了することができます。 これらのインスタンスが表示されない場合、**グループ ハブ**インスタンスはインスタンスをキャッシュして可能性がありますまたはルーティング エラー報告を孤立します。 中断されたインスタンスを終了したときに、このテーブル内の項目と、スプール テーブルおよびインスタンス テーブルに関連付けられている行をクリーンアップします。|  
@@ -30,6 +31,6 @@ ms.lasthandoff: 09/20/2017
 |TrackingData*_x_x*テーブル|このテーブルは、BizTalkMsgBoxDb データベースの Tracking Data Decode Service (TDDS) BizTalkDTADb データベースにイベントを移動する、追跡したイベントを格納します。|場合、TrackingData_*x_x*テーブルが大きい場合、いずれか、TDDS が実行されていないかが正常に実行されていません。 TDDS が実行されている場合は、イベント ログとエラー情報は、BizTalkDTADb データベースに TDDS_FailedTrackingData テーブルを確認します。|  
 |Tracking_Fragments*x*、Tracking_Parts*x*、Tracking_Spool*x*テーブル|これらの各テーブルの 2 つは、BizTalkMsgBoxDb と BizTalkDTADb データベースです。 1 つがオンラインで、もう一方はオフラインです。|**TrackedMessages_Copy_BizTalkMsgBoxDb** SQL Server エージェント ジョブは、これらのテーブルに、BizTalkDTADb データベースに直接追跡されたメッセージ本文を移動します。|  
 |dta_ServiceInstances テーブル|このテーブルは、BizTalkDTADb データベース内のサービス インスタンス追跡したイベントを格納します。|このテーブルが大きい場合、BizTalkDTADb データベースが大きい可能性があります。|  
-|dta_DebugTrace テーブル|このテーブルは、BizTalkDTADb データベース内のオーケストレーション デバッガーのイベントを格納します。|Dta_DebugTrace テーブルに多数のレコードがある場合は、オーケストレーション図形の追跡が使用されているまたは使用されています。 オーケストレーションのデバッグが通常の操作に必要でない場合は、オーケストレーション図形のすべてのオーケストレーションの追跡を無効にします。 オーケストレーション図形の追跡が既に無効になって、BizTalkMsgBoxDb データベースにバックログが存在する場合は、dta_DebugTrace テーブルは、TDDS が dta_DebugTrace テーブルに、このデータを移動し続けるためにを増大し続けることがあります。<br /><br /> BizTalkDTADb の追跡データベースのサイズを制御するには、グローバル追跡を無効にすることもできます。 詳細については、次を参照してください。[グローバル追跡を無効にする方法](http://go.microsoft.com/fwlink/p/?LinkId=153687)(http://go.microsoft.com/fwlink/p/?LinkId=153687)。 追跡データベースのサイズ変更に関するガイドラインの詳細については、次を参照してください。[追跡データベースのサイジング ガイドライン](http://go.microsoft.com/fwlink/p/?LinkId=153688)(http://go.microsoft.com/fwlink/p/?LinkId=153688)。|  
-|dta_MessageInOutEvents テーブル|次の表は、BizTalkDTADb データベースに追跡イベント メッセージを格納します。 これらの追跡対象のイベント メッセージには、メッセージのコンテキスト情報が含まれます。|Dta_DebugTrace テーブルと BizTalkTrackingDb データベースで dta_MessageInOutEvents テーブルが大きすぎる場合は、追跡ホストを停止した後に手動でテーブルを切り捨てることができます。 テーブルを切り捨てる方法についての手順で、952555、Microsoft サポート技術情報の記事のセクション"dta_DebugTrace table"の下の[を維持し、BizTalk Server データベースのトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/p/?LinkId=158847)(http://go.microsoft.com/fwlink/p/ しますか。LinkId = 158847)。|  
+|dta_DebugTrace テーブル|このテーブルは、BizTalkDTADb データベース内のオーケストレーション デバッガーのイベントを格納します。|Dta_DebugTrace テーブルに多数のレコードがある場合は、オーケストレーション図形の追跡が使用されているまたは使用されています。 オーケストレーションのデバッグが通常の操作に必要でない場合は、オーケストレーション図形のすべてのオーケストレーションの追跡を無効にします。 オーケストレーション図形の追跡が既に無効になって、BizTalkMsgBoxDb データベースにバックログが存在する場合は、dta_DebugTrace テーブルは、TDDS が dta_DebugTrace テーブルに、このデータを移動し続けるためにを増大し続けることがあります。<br /><br /> BizTalkDTADb の追跡データベースのサイズを制御するには、グローバル追跡を無効にすることもできます。 参照してください[グローバル追跡を無効にする方法](../core/how-to-turn-off-global-tracking.md)と[追跡データベースのサイズに関するガイドライン](../core/tracking-database-sizing-guidelines.md)です。|  
+|dta_MessageInOutEvents テーブル|次の表は、BizTalkDTADb データベースに追跡イベント メッセージを格納します。 これらの追跡対象のイベント メッセージには、メッセージのコンテキスト情報が含まれます。|Dta_DebugTrace テーブルと BizTalkTrackingDb データベースで dta_MessageInOutEvents テーブルが大きすぎる場合は、追跡ホストを停止した後に手動でテーブルを切り捨てることができます。 テーブルを切り捨てる方法については、"dta_DebugTrace table"の詳細を参照してください[KB 952555: を維持し、BizTalk Server データベースのトラブルシューティングを行う方法](https://support.microsoft.com/help/952555/how-to-maintain-and-troubleshoot-biztalk-server-databases)です。|  
 |dta_ServiceInstanceExceptions テーブル|次の表は、BizTalkDTADb データベースの中断されたサービス インスタンスのエラー情報を格納します。|Dta_ServiceInstanceExceptions の表は、通常が大きくなると定期的に、インスタンスが中断された環境でします。|

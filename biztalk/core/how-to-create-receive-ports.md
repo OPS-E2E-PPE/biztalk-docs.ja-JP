@@ -1,26 +1,12 @@
 ---
-title: "作成する方法の受信ポート |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- ports, receive
-- receive ports
-- creating receive ports
-ms.assetid: d390320e-12f1-4ead-b608-60bc1e273477
-caps.latest.revision: "7"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: e1ca5727422fd7519443cc290d35d0c2e24d499f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 0cd93bcd2d1855f137600214b6a07d52b6f52e4f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-receive-ports"></a>作成する方法の受信ポート
 Visual Studio を使用して受信ポートを作成するには、次の手順を実行します。  
@@ -62,4 +48,4 @@ Visual Studio を使用して受信ポートを作成するには、次の手順
 7.  **[OK]**をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [作成元の TIBCO Rendezvous 受信ハンドラー](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [TIBCO Rendezvous 受信ハンドラーの作成](../core/creating-tibco-rendezvous-receive-handlers.md)

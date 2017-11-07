@@ -1,30 +1,49 @@
 ---
 title: "BizTalk Adapter for PeopleSoft Enterprise のセキュリティ |Microsoft ドキュメント"
+description: "BizTalk で PeopleSoft Enterprise アダプターを使用するアプリケーションをセキュリティで保護するのにエンタープライズ シングル サインオン (SSO) を使用します。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/19/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: security
 ms.assetid: 2cfdf0db-6f83-4322-a57a-e373c7245700
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00c59060b416552f28fa54975fdc59f3b38d1b97
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bfbfea25bfad3a745f7f09c41302a556f4846b52
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="security-in-biztalk-adapter-for-peoplesoft-enterprise"></a>BizTalk Adapter for PeopleSoft Enterprise のセキュリティ
-このセクションでは、セキュリティで保護された環境で BizTalk Adapter for PeopleSoft Enterprise を展開するためのガイドラインを示します。  
+
+## <a name="overview"></a>概要
+Microsoft BizTalk Adapter for PeopleSoft Enterprise ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、PeopleSoft などのサーバー システムを表します。 
+
+このセクションを展開する Microsoft BizTalk Adapter for PeopleSoft Enterprise のセキュリティで保護された環境のガイドラインを提供します。  
   
 > [!CAUTION]
->  クライアント ファイルが基幹業務アプリケーションに直接接続されるので、BizTalk Adapter for PeopleSoft Enterprise は承認されたユーザーだけが使用できるように制限することを強くお勧めします。  
+>  承認されたユーザーだけに、BizTalk adapter for PeopleSoft Enterprise の使用を制限することをお勧めように、クライアント ファイルが基幹業務アプリケーションに直接接続します。  
+
+
+## <a name="next-steps"></a>次の手順 
   
-## <a name="in-this-section"></a>このセクションの内容  
+-   [シングル サインオンの要件](../core/requirements-for-single-sign-on2.md)  
   
--   [シングル サインオンを使用します。](../core/using-single-sign-on2.md)
+-   [シングル サインオンと BizTalk Adapter for PeopleSoft Enterprise](../core/single-sign-on-and-biztalk-adapter-for-peoplesoft-enterprise.md)  
+  
+-   [関連アプリケーションの作成](../core/creating-affiliate-applications2.md)  
+  
+-   [ポートの作成](../core/creating-ports.md)  
+  
+-   [仮想ディレクトリを構成する方法](../core/how-to-configure-the-virtual-directory.md)  
+  
+-   [HTTP 受信アダプターを構成する方法](../core/how-to-configure-the-http-receive-adapter1.md)  
+  
+-   [オーケストレーションの実行](../core/running-orchestrations2.md)  
+  
+-   [SSO プロジェクトの実行](../core/running-sso-projects1.md)

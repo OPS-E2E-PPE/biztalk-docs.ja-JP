@@ -1,5 +1,6 @@
 ---
 title: "TIBCO Rendezvous でのマッピングをメッセージ |Microsoft ドキュメント"
+description: "メッセージ フィールドと TIBCO Rendezvous の BizTalk アダプター内の XML へのメッセージ マッピング"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +8,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- messages, mapping
-- message mapping
-- message field elements
 ms.assetid: 62793bec-f076-425c-b25e-c4be5bd93cc8
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc5b3559067dbb998240a3fc814d890701e2591c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb80ea4f908aa50dc32755c333aa3ccf2ea4db91
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="message-mapping-in-tibco-rendezvous"></a>TIBCO Rendezvous でのメッセージ マッピング
 TIBCO Rendezvous メッセージは、ヘッダー情報と一連のメッセージ フィールドで構成されています。 ヘッダー情報は、メッセージ コンテキスト プロパティに直接マップされます。  
@@ -53,4 +50,4 @@ TIBCO Rendezvous メッセージは、ヘッダー情報と一連のメッセー
   
 ## <a name="see-also"></a>参照  
  [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)   
- [作成元の TIBCO Rendezvous 受信ハンドラー](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [TIBCO Rendezvous 受信ハンドラーの作成](../core/creating-tibco-rendezvous-receive-handlers.md)

@@ -1,5 +1,6 @@
 ---
-title: "チュートリアル: メッセージ コンテキスト プロパティの使用 |Microsoft ドキュメント"
+title: "チュートリアル: TIBCO EMS メッセージ コンテキスト プロパティを使用して |Microsoft ドキュメント"
+description: "BizTalk Server に、オーケストレーションで TIBCO Enterprise Message Service のメッセージ記述子フィールドを使用するステップ バイ ステップ ガイド"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +8,27 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- messages, changing priority
-- message context properties, tutorial
 ms.assetid: 6e52593b-5001-4740-89fb-e003e12d8e69
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f122215baa5660294e159e4f1d6967a2df5ba9b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f17b45afb28a497c0443f788a44d05307103c547
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="tutorial-using-message-context-properties"></a>チュートリアル: メッセージ コンテキスト プロパティの使用
+# <a name="tutorial-use-tibco-ems-message-descriptors"></a>チュートリアル: を使用して TIBCO EMS メッセージ記述子
+
+## <a name="overview"></a>概要
 このチュートリアルでは、BizTalk Server コンテキスト プロパティを使用して、オーケストレーションで TIBCO Enterprise Message Service (EMS) のメッセージ記述子フィールドを設定する方法について説明します。 このチュートリアルでは、受信ポートからメッセージを受信し、Microsoft BizTalk Adapter for TIBCO Enterprise Message Service にバインドされた送信ポートにそのメッセージを送信するオーケストレーションがあることを前提としています。  
   
  次の手順では、TibcoEMS.Priority コンテキスト プロパティの値を変更することで、TIBCO EMS メッセージの優先度を変更する方法について説明します。 BizTalk Server では、メッセージを変更できません。 そのため、プロパティ値を変更するには、作成および、新しいメッセージを変更する必要があります。 作成して、受信および送信図形の間でメッセージの割り当て図形を挿入することで、新しいメッセージを変更します。 ただし、TIBCO EMS プロパティにアクセスできるようにするために、最初にスキーマ DLL を参照する必要があります。  
   
-### <a name="to-reference-the-schema-dll"></a>スキーマ DLL を参照するには  
+## <a name="reference-the-schema-dll"></a>スキーマ DLL を参照します。  
   
-1.  開いている**ソリューション エクスプ ローラー** Visual Studio でします。  
+1.  Visual Studio で、BizTalk Server プロジェクトを開き**ソリューション エクスプ ローラー**です。  
   
 2.  右クリック**参照**を選択して**参照の追加**です。  
   
@@ -90,4 +90,4 @@ ms.lasthandoff: 09/20/2017
 21. 選択**バインド**、 **Enlist**、および**開始**BizTalk エクスプ ローラーで、オーケストレーションをテストします。  
   
 ## <a name="see-also"></a>参照  
- [メッセージ コンテキスト プロパティ](../core/message-context-properties2.md)
+[TIBCO EMS メッセージ コンテキスト プロパティ](../core/message-context-properties-in-biztalk-server.md)

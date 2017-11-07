@@ -1,5 +1,6 @@
 ---
-title: "チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用してデータを受信する |Microsoft ドキュメント"
+title: "チュートリアル: では、TIBCO Rendezvous アダプターを使用して、受信 |Microsoft ドキュメント"
+description: "BizTalk Server で TIBCO Rendezvous の BizTalk アダプタを使用して TIBCO システムからデータを受信するステップ バイ ステップ ガイド"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,49 +13,40 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de436413f10cf4882b5c4e4b21af7bac6a3234c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75aaba0cc2e455676e78381c04934dda30741a85
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data"></a>チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用したデータの受信
 BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデータを受信できます。 このチュートリアルでは、これを示す SDK サンプルについて説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   このサンプルをビルドして展開するには、アダプターが実行されている [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしてください。  
+このサンプルをビルドして展開するには、アダプターが実行されている [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしてください。  
   
-## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデータを受信します。 オーケストレーションがメッセージを処理し、ファイル アダプターを使用して、指定されたフォルダーにデータを XML ファイルとして書き込みます。  
+## <a name="about-the-sample"></a>サンプルについて 
+- このサンプルでは、BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデータを受信します。 オーケストレーションがメッセージを処理し、ファイル アダプターを使用して、指定されたフォルダーにデータを XML ファイルとして書き込みます。  
   
-## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
- このサンプルは、[!INCLUDE[vs2010](../includes/vs2010-md.md)] でデザインされ、BizTalk Adapter for TIBCO Enterprise Message Service を BizTalk オーケストレーションと組み合わせて使用する基本的な機能を紹介する目的で作成されました。  
+- このサンプルは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でデザインされ、BizTalk Adapter for TIBCO Enterprise Message Service を BizTalk オーケストレーションと組み合わせて使用する基本的な機能を紹介する目的で作成されました。  
   
-> [!NOTE]
->  このサンプルでは、処理するアプリケーション用の TIBCO からメッセージを送信する方法を理解していることを前提としています。  
+    > [!NOTE]
+    >  このサンプルでは、処理するアプリケーション用の TIBCO からメッセージを送信する方法を理解していることを前提としています。  
   
-## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルの既定の場所は、次のとおりです。  
+- サンプルの既定の場所は`C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\TIBCO(r) Rendezvous(r)\Sdk\OneWayReceive`、次のファイルが含まれています。 
   
- C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\TIBCO(r) Rendezvous(r)\Sdk\OneWayReceive  
+    |**ランタイム プロジェクト ファイル名**|**ランタイム プロジェクト ファイルの説明**|  
+    |---|---|  
+    |OneWayReceive.btproj、<br /><br /> OneWayReceive.sln|アプリケーションのプロジェクトおよびソリューション ファイル。|  
+    |PureMessage.xsd|アプリケーションのスキーマ ファイルです。|  
+    |TIBCORvOWR.odx|アプリケーションが使用するオーケストレーション。|  
+    |TIBCORv.snk|厳密な名前のキー ファイル。|  
   
- 次の表は、このサンプルのファイルとその目的を示しています。  
   
-|**ランタイム プロジェクト ファイル名**|**ランタイム プロジェクト ファイルの説明**|  
-|----------------------------------|------------------------------------------|  
-|OneWayReceive.btproj、<br /><br /> OneWayReceive.sln|アプリケーションのプロジェクトおよびソリューション ファイル。|  
-|PureMessage.xsd|アプリケーションのスキーマ ファイルです。|  
-|TIBCORvOWR.odx|アプリケーションが使用するオーケストレーション。|  
-|TIBCORv.snk|厳密な名前のキー ファイル。|  
+## <a name="step-1-add-the-adapter-to-biztalk-administration"></a>手順 1: アダプターを BizTalk 管理コンソールに追加します。
   
-## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
-  
-#### <a name="create-a-new-instance-of-the-biztalk-adapter-for-tibco-rendezvous"></a>BizTalk Adapter for TIBCO Rendezvous の新しいインスタンスを作成する  
-  
-1.  起動して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 をクリックして**開始**、**すべてのプログラム**、 [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]です。  
-  
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**プラットフォームの設定**、クリックして**アダプター**です。  
+1.  **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**プラットフォームの設定**、順にクリック**アダプター**です。  
   
 3.  右クリック**アダプター**を指す**新規**、**アダプターしています.** 表示する、**アダプター プロパティ**ダイアログ。  
   
@@ -62,19 +54,19 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
   
 5.  選択**TIBCO(r) Rendezvous(r)**で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。  
   
-#### <a name="create-a-biztalk-receive-port"></a>BizTalk 受信ポートを作成する  
+## <a name="step-2-create-a-receive-port"></a>手順 2: 作成、受信ポート  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**を展開して**BizTalk アプリケーション 1**、] をクリック**受信ポート**です。  
+1.  **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**受信ポート**です。  
   
 2.  受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.**を表示する、**受信ポートのプロパティ**ダイアログ。  
   
 3.  値を入力、**名前**フィールド、たとえば**TIBCORvOneWayRP**、 をクリック**OK**です。  
   
-#### <a name="create-a-biztalk-receive-location"></a>BizTalk の受信場所を作成する  
+## <a name="step-3-create-a-receive-location"></a>手順 3: 作成、受信場所  
   
 1.  右クリックし、新しい受信ポートをクリックし、**新規**、**受信場所の追加.** 表示する、**受信場所のプロパティ**ダイアログ。  
   
-2.  値を入力して、**名前**フィールド、たとえば**TIBCORvOneWayRL**です。  
+2.  値を入力して、**名前**フィールドです。 たとえば、入力**TIBCORvOneWayRL**です。  
   
 3.  使用可能なアダプターの一覧から TIBCO Rendezvous アダプターを選択して、**型**ドロップダウン リスト ボックスし、をクリックして、**構成**アダプターを表示するにはボタン**トランスポートのプロパティ**  ダイアログ ボックス。  
   
@@ -105,7 +97,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
     |ネットワーク|Rendezvous トランスポート ネットワーク パラメーター。|  
     |サービス|Rendezvous トランスポート サービス パラメーター。|  
   
-     プロパティの詳細については、次を参照してください。[設定 TIBCO Rendezvous 受信トランスポートのプロパティ](../core/setting-tibco-rendezvous-receive-transport-properties.md)です。  
+     プロパティの詳細については、次を参照してください。[受信作成の成果物](../core/creating-tibco-rendezvous-receive-handlers.md)です。  
   
 8.  **[OK]**をクリックします。  
   
@@ -113,7 +105,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
   
 10. 受信場所を右クリックし、をクリックして**を有効にする**です。  
   
-#### <a name="create-a-one-way-file-send-port"></a>一方向 FILE 送信ポートを作成する  
+## <a name="step-4-create-a-one-way-send-port"></a>手順 4: 一方向の送信ポートを作成します。  
   
 1.  送信ポートが使用する送信先フォルダー (たとえば、C:\FilesOut) を作成します。  
   
@@ -131,7 +123,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
   
 8.  送信ポートを右クリックし、をクリックして**開始**を参加させて、送信ポートを開始します。  
   
-#### <a name="build-and-deploy-the-project"></a>プロジェクトのビルドと展開  
+## <a name="step-5-build-and-deploy-the-project"></a>手順 5: ビルドし、プロジェクトの配置  
   
 1.  ソリューション エクスプ ローラーで OneWayReceive プロジェクトを右クリックし、をクリックして**プロパティ**プロジェクトのプロジェクト デザイナーを起動します。  
   
@@ -141,7 +133,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
   
 4.  ソリューション エクスプ ローラーで OneWayReceive プロジェクトを右クリックし、をクリックして**展開**プロジェクトをビルドしてアセンブリを展開する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成データベース。  
   
-#### <a name="bind-and-enlist-the-orchestration"></a>オーケストレーションをバインドして参加させる  
+## <a name="step-6-bind-enlist-and-start-the-orchestration"></a>手順 6: バインド、参加、およびオーケストレーションの開始  
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**を展開して**BizTalk アプリケーション 1**、] をクリック**オーケストレーション**です。  
   
@@ -161,13 +153,11 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
   
 6.  **[OK]**をクリックします。  
   
-#### <a name="start-the-orchestration"></a>オーケストレーションを開始します。  
+7. オーケストレーションを右クリックし、をクリックして**開始**を参加させて、オーケストレーションを開始します。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールでは、オーケストレーションを右クリックし、をクリックして**開始**を参加させて、オーケストレーションを開始します。  
+## <a name="step-7-confirm-the-application-receives-a-message"></a>手順 7: アプリケーションがメッセージを受信を確認します。  
   
-#### <a name="verify-that-the-application-receives-a-message"></a>アプリケーションがメッセージを受信することの確認  
-  
--   ファイル送信ポートの送信先として構成されているフォルダーを開いて、出力ドキュメントが生成されていることを確認します。  
+-   File 送信ポートに送信し、出力ドキュメントが生成されたことを確認してください。 構成されているフォルダーを開きます。  
   
  ドキュメント インスタンスが正常に処理された場合、次の一連のイベントが発生します。  
   

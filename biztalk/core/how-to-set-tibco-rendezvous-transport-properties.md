@@ -1,30 +1,17 @@
 ---
-title: "TIBCO Rendezvous トランスポートのプロパティを設定する方法 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- setting transport properties
-- transport properties, setting
-ms.assetid: db8e8a57-a942-44d7-a651-623aa614c6be
-caps.latest.revision: "13"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 9c9ff40d5319daa0a71d67aa3fd132c3d115923e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: b4fabb9146b4f559dd1a41b6e3b7da5ce9489d1f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-tibco-rendezvous-transport-properties"></a>TIBCO Rendezvous トランスポートのプロパティを設定する方法
 TIBCO Rendezvous トランスポートのプロパティは、実行時に使用されます。 **トランスポートのプロパティ** 画面で、生成されたメッセージを公開する TIBCO Rendezvous ドメインを識別する接続パラメーターを設定します。  
   
-### <a name="to-specify-tibco-rendezvous-transport-properties"></a>TIBCO Rendezvous トランスポートのプロパティを指定するには  
+## <a name="enter-tibco-rendezvous-transport-properties"></a>TIBCO Rendezvous トランスポートのプロパティを入力してください。  
   
 1.  **TIBCO Rendezvous トランスポートのプロパティ**画面で、展開**証明された送信者プロパティ**し、次の情報を入力します。  
   
@@ -71,7 +58,7 @@ TIBCO Rendezvous トランスポートのプロパティは、実行時に使用
     1.  選択**はい**で、 **SSO を使用する**でのシングル サインオンを使用します。  
   
         > [!NOTE]
-        >  参照してください[シングル サインオンを使用して](../core/using-single-sign-on5.md)SSO をセットアップする方法についてはします。  
+        >  参照してください[セキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)SSO をセットアップする方法についてはします。  
   
     2.  一覧から関連アプリケーションを選択します。  
   
@@ -85,4 +72,4 @@ TIBCO Rendezvous トランスポートのプロパティは、実行時に使用
      BizTalk Adapter for TIBCO Rendezvous にアクセスする TIBCO Rendezvous の接続パラメーターを設定する必要があります。  
   
 ## <a name="see-also"></a>参照  
- [TIBCO Rendezvous 送信ハンドラーを作成します。](../core/creating-tibco-rendezvous-send-handlers.md)
+ [TIBCO Rendezvous 送信ハンドラーの作成](../core/creating-tibco-rendezvous-send-handlers.md)

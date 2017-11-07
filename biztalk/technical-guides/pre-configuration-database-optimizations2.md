@@ -12,33 +12,24 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd8bb0ba839d656dd99959a3352ea8da42457d16
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f863ae780dd99a7f0aa7d9acc3884f860686c86
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="pre-configuration-database-optimizations"></a>事前構成データベースの最適化
 SQL Server が BizTalk Server 環境で再生される重要な役割、ためことが最も重要 SQL Server では、パフォーマンスを最適に構成されているチューニングできることです。 SQL Server が正しく実行するチューニングされなかった場合は、BizTalk Server で使用するデータベースがボトルネックになり、BizTalk Server 環境の全体的なパフォーマンスが低下します。 このトピックでは、BizTalk Server をインストールして、BizTalk Server データベースを構成する前に従う必要があります複数の SQL Server パフォーマンス最適化機能について説明します。  
   
 ## <a name="set-ntfs-file-allocation-unit"></a>NTFS ファイル アロケーション ユニットを設定します。  
- SQL Server では、そのデータを格納する**エクステント**、物理的に連続する 8 つの 8 K ページ、または 64 KB のコレクションであります。 そのため、ディスクのパフォーマンスを最適化するために、NTFS アロケーション ユニット サイズ 64 KB に設定「ディスク構成のベスト プラクティス」SQL Server のベスト プラクティスの記事のセクションの説明に従って[「デプロイメント前 I/O のベスト プラクティス」](http://go.microsoft.com/fwlink/?LinkId=140818) (http://go.microsoft.com/fwlink/ しますか。LinkId = 140818)。  
+ SQL Server では、そのデータを格納する**エクステント**、物理的に連続する 8 つの 8 K ページ、または 64 KB のコレクションであります。 そのため、ディスクのパフォーマンスを最適化するために、NTFS アロケーション ユニット サイズ 64 KB をに従って設定、「ディスク構成のベスト プラクティス」で[デプロイメント前 I/O のベスト プラクティス](https://msdn.microsoft.com/library/cc966412.aspx)です。  
   
 ## <a name="considerations-for-the-version-and-edition-of-sql-server"></a>バージョンおよびエディションの SQL Server に関する考慮事項  
  さまざまなバージョンおよびエディションの[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]のパフォーマンスに影響を与えるさまざまな機能を提供、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 などの状況で負荷の高いの 32 ビット バージョンで利用可能なデータベース ロック数[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]過ぎる可能性のある、これは、BizTalk ソリューションのパフォーマンスを低下させます。 テスト環境でロックの範囲外"エラーが発生した場合、64 ビット バージョンの SQL Server にメッセージ ボックス データベースを格納していることを検討してください。 64 ビット バージョンの SQL Server では、使用できるロックの数が大幅に増えます。  
   
- BizTalk 環境に必要なデータベース エンジンの機能を決定する場合は、次の表を検討してください。 大規模なエンタープライズ レベルのソリューションをクラスタ リングを必要とするサポート、BizTalk Server のログ配布のサポート、または Analysis Services がサポートし、必要があります[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]または[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]ハウスに Enterprise Edition、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース。  
-  
-|SQL Server のバージョンとエディション|64 ビットのサポート|複数インスタンスのサポート|クラスタ リングのサポート|Analysis Services|  
-|---------------------------------------|---------------------|-----------------------------|------------------------|-----------------------|  
-|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]Enterprise Edition|はい|はい (50)|はい|はい|  
-|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]Standard Edition|はい|はい (16)。|[はい] (2 ノード)|はい|  
-|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]Workgroup Edition|はい|はい (16)。|不可|不可|  
-|[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]Enterprise Edition|はい|可|可|はい|  
-|[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]Standard Edition|はい|はい|[はい] (2 ノード)|はい|  
-|[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]Workgroup Edition|不可|可|いいえ|不可|  
-  
- 各エディションでサポートされる機能の完全な一覧については[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]を参照してください[、エディションの SQL Server 2008 R2 でサポートされる機能](http://go.microsoft.com/fwlink/?LinkId=140465)(http://go.microsoft.com/fwlink/?LinkId=140465) で、[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]ドキュメント。  
+ BizTalk 環境に必要なデータベース エンジンの機能を決定する場合は、次の表を検討してください。 大規模なクラスタ リングが必要なエンタープライズ レベルのソリューションをサポート、BizTalk Server のログ配布のサポート、または Analysis Services がサポートしてホストする SQL Server Enterprise Edition が必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース。   
+
+ SQL Server のエディションでサポートされる機能の完全な一覧を参照してください。 [SQL Server のエディションとサポートされる機能](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-2016)します。
   
 ## <a name="database-planning-considerations"></a>データベースの計画に関する考慮事項  
  (たとえば、高速な SAN ディスクまたは高速の SCSI ディスクなど) の高速記憶域上にある SQL Server データベースをホストすることをお勧めします。 RAID 5 ではなく RAID 10 (1 + 0) は、raid 5 は、書き込みに遅いのでお勧めします。 新しい SAN ディスクに非常に大きなメモリ キャッシュ、があるは、このような場合、raid 選択重要ではないためです。 パフォーマンスを向上させるには、データベースおよびログ ファイルが別々 の物理ディスクに配置できます。  
@@ -46,7 +37,7 @@ SQL Server が BizTalk Server 環境で再生される重要な役割、ため�
  記憶域エリア ネットワーク (SAN) を使用する場合に、ホスト バス アダプター (HBA) のキューの深さをチューニングも検討します。 I/O のスループットに影響する可能性が大幅にあり、外のボックスの値は SQL Server の不十分であることができます。 テストが最適な値を確認する必要がない場合は、特定の仕入先推奨事項の適切な開始点として通常 64 のキューの深さは受け入れられます  
   
 ## <a name="install-the-latest-service-pack-and-cumulative-updates-for-sql-server"></a>SQL Server の最新の service pack と累積的な更新プログラムをインストールします。  
- 最新のサービス パックと用の最新の累積的な更新プログラムをインストール[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]と[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]サービス パックの最新の .NET Framework とします。  
+ SQL Server と .NET Framework の最新のサービス パックの最新のサービス パックと最新の累積的更新プログラムをインストールします。  
   
 ## <a name="install-sql-service-packs-and-cumulative-updates-on-both-biztalk-server-and-sql-server"></a>BizTalk Server と SQL Server の両方で SQL サービス パックと累積更新プログラムをインストールします。  
  SQL Server のサービス パックまたは累積的更新プログラムをインストールするときにもインストール service pack または累積更新プログラム、BizTalk Server コンピューター。 BizTalk Server では、SQL Server サービス パックおよび累積的な更新プログラムによって更新される SQL クライアント コンポーネントを使用します。  
@@ -60,13 +51,13 @@ SQL Server が BizTalk Server 環境で再生される重要な役割、ため�
 ## <a name="grant-the-account-which-is-used-for-sql-server-the-windows-lock-pages-in-memory-privilege"></a>Windows Lock Pages Memory 特権 In SQL Server に使用されるアカウントに付与します。  
  Windows Lock Pages in Memory 特権を SQL Server サービス アカウントを付与します。 これは、物理メモリにバッファー プールに割り当てられているメモリをロックすることにより、SQL Server プロセスのバッファー プール メモリのページングから Windows オペレーティング システムを防ぐために行う必要があります。  
   
- Windows のポリシーで、ラボ環境で**Lock Pages in Memory**オプションが既定で有効にします。 有効にする方法について、 **Lock Pages in Memory**オプションを参照してください[する方法: Lock Pages in Memory オプション (Windows) を有効にする](http://go.microsoft.com/fwlink/?LinkID=208267)(http://go.microsoft.com/fwlink/?LinkID=208267)。  
+ Windows のポリシーで、ラボ環境で**Lock Pages in Memory**オプションが既定で有効にします。 参照してください[Lock Pages in Memory オプションを有効にする](https://docs.microsoft.com/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows)です。  
   
 > [!IMPORTANT]  
->  SQL Server サービス アカウントの Windows Lock Pages in Memory 特権を付与するときに、いくつかの制限が適用されます。 詳細については、次の Microsoft サポート技術情報記事を参照してください。  
+>  SQL Server サービス アカウントの Windows Lock Pages in Memory 特権を付与するときに、いくつかの制限が適用されます。 次を参照してください。 
 >   
->  -   [918483、「64 ビット バージョンの SQL Server 2005 でバッファー プール メモリのページングを削減する方法」](http://go.microsoft.com/fwlink/?LinkID=148948) (http://go.microsoft.com/fwlink/?LinkID=148948)。  
-> -   [970070、「サポートする SQL Server 2005 Standard Edition 64 ビット システムと SQL Server 2008 Standard Edition 64 ビット システムでのロック済みページの」](http://go.microsoft.com/fwlink/?LinkId=160474) (http://go.microsoft.com/fwlink/?LinkId=160474)。  
+> - [バッファー プール拡張](https://docs.microsoft.com/sql/database-engine/configure-windows/buffer-pool-extension)  
+> - [Lock Pages in Memory オプションを有効にします。](https://docs.microsoft.com/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows)  
   
 ## <a name="grant-the-semanagevolumename-right-to-the-sql-server-service-account"></a>SQL Server サービス アカウントの権限を SE_MANAGE_VOLUME_NAME を与える  
  SQL Server サービスを実行しているアカウントは、' ボリュームの保守タスクを実行する ' Windows 特権を持つことを確認またはグループに属していることを確認します。 これによって、ファイルの瞬時初期化の確保最適なパフォーマンス、データベースの自動拡張する場合。  
@@ -82,7 +73,7 @@ sp_configure ‘Min Server memory (MB)’,(min size in MB)
  SQL Server のメモリの量を設定すると、前に、合計物理メモリから Windows Server に必要なメモリを差し引くことで適切なメモリ設定を決定します。 これは、SQL Server に割り当てるメモリの最大量です。  
   
 > [!NOTE]  
->  ホストする SQL Server を実行するコンピューターの BizTalk Server データベースもホストする場合、エンタープライズ シングル サインオン マスター シークレット サーバー、したい場合があります、エンタープライズ シングル サインオンを実行するための十分なメモリがあることを確認するには、この値を調整するにはサービス。 マスター シークレット サーバーの高可用性を実現する SQL Server クラスターでクラスター化されたエンタープライズ シングル サインオン サービスのインスタンスを実行することは珍しくの実習ではないです。 エンタープライズ シングル サインオン マスター シークレット サーバーをクラスタ リングの詳細については、トピックを参照してください。[マスター シークレット サーバーをクラスター化する方法](http://go.microsoft.com/fwlink/?LinkId=158251)(http://go.microsoft.com/fwlink/?LinkId=158251)、BizTalk Server のドキュメントにします。  
+>  ホストする SQL Server を実行するコンピューターの BizTalk Server データベースもホストする場合、エンタープライズ シングル サインオン マスター シークレット サーバー、したい場合があります、エンタープライズ シングル サインオンを実行するための十分なメモリがあることを確認するには、この値を調整するにはサービス。 マスター シークレット サーバーの高可用性を実現する SQL Server クラスターでクラスター化されたエンタープライズ シングル サインオン サービスのインスタンスを実行することは珍しくの実習ではないです。 参照してください[マスター シークレット サーバーをクラスタ リング](../technical-guides/clustering-the-master-secret-server.md)  
   
 ## <a name="split-the-tempdb-database-into-multiple-data-files-of-equal-size-on-each-sql-server-instance-used-by-biztalk-server"></a>Tempdb データベースを同じサイズの BizTalk Server で使用される各 SQL Server インスタンス上の複数のデータ ファイルに分割します。  
  SQL Server で使用される比例アルゴリズムは、データ ファイルのサイズに基づいているために、ことを確認するための tempdb データ ファイルと同じサイズのことが重要です。 サイズの異なるデータ ファイルが作成する場合、比例アルゴリズムは、それによってが無意味に複数のデータ ファイルを作成するすべてのファイル間での割り当てを展開するのではなく、GAM の割り当ての最大のファイルを使用します。 最適な数の tempdb データ ファイルは、ラッチの競合が tempdb での程度によって異なります。 一般的な則としてデータ ファイルの数は、ここで、Cpu の数は 8 プロセッサ コアと Cpu の数以下する必要があります。 8 個を超える cpu を搭載したサーバーでは、Cpu の数の半分のデータ ファイルの作成 (ここでも、のみがあるラッチの競合)。  
@@ -148,7 +139,6 @@ GO
 --!!md I:\MSSQL10.<instance>\MSSQL  
 --!!md I:\MSSQL10.<instance>\MSSQL\DATA  
 GO  
-  
 -- 9. Recycle SQL service in SQL Server Services node of sqlservermanager10.msc  
     --note, if running script from a UNC share, SSMS will report an error,   
       --but SQL Server Configuration Manager will open if its location is in %path%  
@@ -175,16 +165,16 @@ ALTER SERVER CONFIGURATION
 SET PROCESS AFFINITY CPU = 0 to 15  
 ```  
   
- 詳細については、次を参照してください。 [ALTER SERVER CONFIGURATION (TRANSACT-SQL)](http://go.microsoft.com/fwlink/?LinkID=208269) (http://go.microsoft.com/fwlink/?LinkID=208269)。  
+ 詳細については、次を参照してください。 [ALTER SERVER CONFIGURATION (TRANSACT-SQL)](https://docs.microsoft.com/sql/t-sql/statements/alter-server-configuration-transact-sql)です。
   
 ## <a name="configure-msdtc"></a>MSDTC を構成します。  
  SQL Server と BizTalk Server の間でトランザクションを容易にするため、Microsoft 分散トランザクション コーディネーター (MS DTC) を有効にする必要があります。 SQL Server で MSDTC を構成するには、トピックを参照して[オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン](../technical-guides/general-guidelines-for-improving-operating-system-performance.md)です。  
   
 ## <a name="enable-trace-flag-t1118-as-a-startup-parameter-for-all-instances-of-sql-server"></a>SQL Server のすべてのインスタンスの起動時のパラメーターとしてトレース フラグ-t1118 を実装を有効にします。  
- トレースを実装するフラグ –-t1118 を実装では、ほとんどすべての単一のページ割り当てを削除することで、SQL Server インスタンス間での競合を減らすことができます。 詳細については、マイクロソフト サポート技術情報の記事を参照してください。 [328551、"[prb]: tempdb データベースの同時実行制御の拡張機能"](http://go.microsoft.com/fwlink/?LinkID=153694) (http://go.microsoft.com/fwlink/?LinkID=153694)。  
+ トレースを実装するフラグ –-t1118 を実装では、ほとんどすべての単一のページ割り当てを削除することで、SQL Server インスタンス間での競合を減らすことができます。 詳細については、次を参照してください。 [KB 328551: PRB: tempdb データベースの同時実行制御の機能強化](https://support.microsoft.com/help/328551/concurrency-enhancements-for-the-tempdb-database)です。
   
 ## <a name="do-not-change-default-sql-server-settings-for-max-degree-of-parallelism-sql-server-statistics-or-database-index-rebuilds-and-defragmentation"></a>Max degree of parallelism、SQL Server 統計情報、またはデータベースのインデックス再構築と最適化の既定の SQL Server 設定を変更しません。  
- SQL Server インスタンスには、BizTalk Server データベースを格納する場合、は、変更すべき特定の SQL Server の設定です。 具体的には、SQL Server max degree of parallelism、メッセージ ボックス データベース、およびデータベースのインデックスの設定 SQL Server の統計を再構築し、最適化は変更できません。 詳細については、トピックを参照してください。 [SQL Server の設定を変更しないで](http://go.microsoft.com/fwlink/?LinkId=160068)(http://go.microsoft.com/fwlink/?LinkId=160068) で BizTalk Server 2010 Operations guide の「します。  
+ SQL Server インスタンスには、BizTalk Server データベースを格納する場合、は、変更すべき特定の SQL Server の設定です。 具体的には、SQL Server max degree of parallelism、メッセージ ボックス データベース、およびデータベースのインデックスの設定 SQL Server の統計を再構築し、最適化は変更できません。 参照してください[が変更されない SQL Server の設定](../technical-guides/sql-server-settings-that-should-not-be-changed.md)です。
   
 ## <a name="see-also"></a>参照  
- [データベースのパフォーマンスを最適化します。](../technical-guides/optimizing-database-performance.md)
+ [データベース パフォーマンスの最適化](../technical-guides/optimizing-database-performance.md)

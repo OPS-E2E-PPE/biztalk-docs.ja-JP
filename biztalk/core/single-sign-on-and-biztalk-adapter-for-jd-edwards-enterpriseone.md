@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 182e73ed45a1473286a301cf859e619cc5d21287
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8daa94a49be4d120180fca9fb82c07b3603cf95
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone"></a>シングル サインオンと BizTalk Adapter for JD Edwards EnterpriseOne
 Microsoft Adapter for JD Edwards EnterpriseOne でシングル サインオン (SSO) を使用すると、アダプターは SSO 資格情報データベースから資格情報を取得します。 したがって、する必要はありませんでサーバー システムのログオン資格情報を入力する、**トランスポートのプロパティ** ダイアログ ボックス。  
@@ -37,4 +37,4 @@ Microsoft Adapter for JD Edwards EnterpriseOne でシングル サインオン (
   
 ## <a name="see-also"></a>参照  
  [関連アプリケーションの作成](../core/creating-affiliate-applications4.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on1.md)
+ [BizTalk Adapter for JD Edwards EnterpriseOne のセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

@@ -1,26 +1,12 @@
 ---
-title: "TIBCO Rendezvous から BizTalk Server を使用してメッセージを送信する |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- messages, sending
-- sending messages
-- BizTalk Server, using from TIBCO Rendezvous
-ms.assetid: 72057d42-32b5-4748-81e4-5ffb89630f5a
-caps.latest.revision: "6"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: a4556ce5ca90b3c62f779d2df55e78c4506458d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/using-tibco-rendezvous-send-ports-from-biztalk-server/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: d4a4f4fce200089db0e29d09b3ea49af00f3792f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="using-biztalk-server-from-tibco-rendezvous-to-send-messages"></a>BizTalk Server を TIBCO Rendezvous から使用してメッセージを送信する
 Microsoft BizTalk Adapter for TIBCO Rendezvous は、非同期 API (Transport.Send) を使用します。 メッセージ コンテキスト プロパティを使用して、このアダプターが送信するメッセージの種類を指定できます。  
@@ -37,4 +23,4 @@ Microsoft BizTalk Adapter for TIBCO Rendezvous は、非同期 API (Transport.Se
   
 ## <a name="see-also"></a>参照  
  [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)   
- [TIBCO Rendezvous 送信ハンドラーを作成します。](../core/creating-tibco-rendezvous-send-handlers.md)
+ [TIBCO Rendezvous 送信ハンドラーの作成](../core/creating-tibco-rendezvous-send-handlers.md)

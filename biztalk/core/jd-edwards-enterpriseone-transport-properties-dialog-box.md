@@ -14,11 +14,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21bbb6b4469399aa1952d0a9bdcc41ff7e14c842
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f510009161a21e64d7bbf80c7b1fda20c0c018aa
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="jd-edwards-enterpriseone-transport-properties-dialog-box"></a>[JD Edwards EnterpriseOne トランスポートのプロパティ] ダイアログ ボックス
 [JD Edwards EnterpriseOne トランスポートのプロパティ] ダイアログ ボックスでは、アダプターに必要なプロパティを設定します。  
@@ -52,6 +52,6 @@ ms.lasthandoff: 09/20/2017
 |SSO の使用|選択**はい**SSO; を使用している場合、パスワードは必要ありませんここでします。|  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on1.md)   
+ [BizTalk Adapter for JD Edwards EnterpriseOne のセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
  [関連アプリケーションの作成](../core/creating-affiliate-applications4.md)   
  [BizTalk Adapter for JD Edwards EnterpriseOne の UI リファレンス](../core/ui-reference-for-biztalk-adapter-for-jd-edwards-enterpriseone.md)

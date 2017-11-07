@@ -1,5 +1,6 @@
 ---
-title: "オーケストレーションでのデザイン パターンを実装する |Microsoft ドキュメント"
+title: "オーケストレーションのデザイン パターンを実装する |Microsoft ドキュメント"
+description: "アグリゲーター、コンテンツ ベースのルーティング、動的ルーター、エラー処理、メッセージ ブローカー、および BizTalk Server での複数のデザイン パターン"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,39 +8,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Aggregator pattern, orchestrations
-- Error Handling pattern [orchestrations]
-- patterns, orchestrations
-- designing, orchestrations
-- orchestrations, designing
-- Exception Handling and Compensation pattern [orchestrations]
-- Parallel Convoy pattern [orchestrations]
-- Dynamic Router pattern [orchestrations]
-- orchestrations, patterns
-- patterns
-- Composed Message Processor pattern [orchestrations]
-- Suspend with Retry pattern, orchestrations
-- Calling Pipelines from Orchestration pattern [orchestrations]
-- Message Filter pattern [orchestrations]
-- Message Broker pattern [orchestrations]
-- Content-Based Router pattern [orchestrations]
-- Sequential Convoy pattern [orchestrations]
-- Scatter and Gather pattern [orchestrations]
-- Splitter pattern, orchestrations
-- Message Translator pattern [orchestrations]
 ms.assetid: f62ba955-018a-40e7-b303-497acc906019
 caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a4837ddf1199425a76a6fa82bbfd6e44615b6c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 290b31e8d5494c7a00eb02517e910fc877da9124
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="implementing-design-patterns-in-orchestrations"></a>オーケストレーションでのデザイン パターンの実装
+# <a name="implement-design-patterns-in-orchestrations"></a>オーケストレーションのデザイン パターンを実装します。
 ここでは、BizTalk Server の一般的なプログラミング パターンとエンタープライズ統合パターンについて説明します。 単一のパターン、または複数のパターンの組み合わせを利用してビジネス プロセスをデザインし、そのデザインを BizTalk オーケストレーション デザイナーの図形によって実装することができます。  
   
 ## <a name="design-patterns"></a>デザイン パターン  
@@ -83,13 +63,13 @@ throw(excp);
  メッセージ トランスレーターは、メッセージの形式を別の形式に変換するパターンです。 BizTalk マップを使用して、このパターンを実装することができます、**変換**オーケストレーションの図形です。 このパターンの例は、」の HelloOrchestration.odx を参照してください。 [HelloWorld (BizTalk Server サンプル)](../core/helloworld-biztalk-server-sample.md)です。  
   
 ### <a name="parallel-convoy"></a>パラレルなコンボイ  
- パラレルなコンボイは、複数の単一項目を結合し、個々の項目が単独では実現できない処理を可能にするパターンです。 関連する一連の項目は任意の順序で受信されることがありますが、BizTalk Server は、プロセスの開始前にそのメッセージのすべてを受信する必要があります。 このパターンの例は、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=56035](http://go.microsoft.com/fwlink/?LinkId=56035)です。  
+ パラレルなコンボイは、複数の単一項目を結合し、個々の項目が単独では実現できない処理を可能にするパターンです。 関連する一連の項目は任意の順序で受信されることがありますが、BizTalk Server は、プロセスの開始前にそのメッセージのすべてを受信する必要があります。 
   
 ### <a name="scatter-and-gather"></a>スキャッター/ギャザー  
- スキャッター/ギャザーは、複数の受信者にメッセージを送信し、各受信者から返されるメッセージを受信できるようにするパターンです。 このパターンは、分割パターンおよびアグリゲーター パターンを使用して実装できます。 アグリゲーター パターンを使用して、分割パターンを使用してから、結果をアセンブルし、下に配置する**並列アクション**図形です。 分割パターンの例は、SDK サンプル Implementing Scatter and Gather Pattern を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185)です。  
+ スキャッター/ギャザーは、複数の受信者にメッセージを送信し、各受信者から返されるメッセージを受信できるようにするパターンです。 このパターンは、分割パターンおよびアグリゲーター パターンを使用して実装できます。 アグリゲーター パターンを使用して、分割パターンを使用してから、結果をアセンブルし、下に配置する**並列アクション**図形です。 
   
 ### <a name="sequential-convoy"></a>シーケンシャルなコンボイ  
- シーケンシャルなコンボイは、複数の単一項目を結合し、個々の項目が単独では実現できない処理を可能にするパターンです。 シーケンシャルなコンボイは、事前定義された順序を持つ一連の関連する項目です。 項目は完全に同一である必要はありませんが、BizTalk Server は各項目を順番に受け取る必要があります。 このパターンの例は、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=56035](http://go.microsoft.com/fwlink/?LinkId=56035)です。  
+ シーケンシャルなコンボイは、複数の単一項目を結合し、個々の項目が単独では実現できない処理を可能にするパターンです。 シーケンシャルなコンボイは、事前定義された順序を持つ一連の関連する項目です。 項目は完全に同一である必要はありませんが、BizTalk Server は各項目を順番に受け取る必要があります。 
   
 ### <a name="splitter"></a>スプリッター  
  分割は、1 つのメッセージを複数のメッセージに分割するパターンです。  
@@ -98,4 +78,4 @@ throw(excp);
  中断後再試行は、オーケストレーションがエラー発生時にメッセージを中断できるようにするパターンです。 中断はループ内で発生するので、オーケストレーションでは中断してオペレーターの介入を求め、一定の回数だけ操作を再試行します。  
   
 ## <a name="see-also"></a>参照  
- [オーケストレーション フローのデザイン](../core/designing-orchestration-flow.md)
+ [オーケストレーション フローの設計](../core/designing-orchestration-flow.md)

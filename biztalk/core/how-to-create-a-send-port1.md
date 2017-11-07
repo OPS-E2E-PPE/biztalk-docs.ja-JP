@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61c82b199f7b8686556f2cbb53a90b0d4b59536e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf49b16da34c5341059db34d6874b7099ab54df6
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-a-send-port"></a>送信ポートを作成する方法
 JD Edwards EnterpriseOne 用の BizTalk Server 送信ポートを作成するには、次の手順を使用します。  
@@ -54,4 +54,4 @@ JD Edwards EnterpriseOne 用の BizTalk Server 送信ポートを作成するに
   
 ## <a name="see-also"></a>参照  
  [関連アプリケーションの作成](../core/creating-affiliate-applications4.md)   
- [シングル サインオンを使用します。](../core/using-single-sign-on1.md)
+ [BizTalk Adapter for JD Edwards EnterpriseOne のセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04d697028eb76cf922cf4bf5e5db85c561c67d00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f93396fc71c9e765104ac67835e006e57ca0ade
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="installing-and-running-the-dynamic-resolution-sample"></a>インストールして、動的な解決サンプルを実行します。
 動的解決サンプルでは、ESB ディスパッチャーと ESB ディスパッチャーの逆アセンブラー パイプライン コンポーネントの一般的な使用シナリオを示します。 これは、動的にエンドポイントの場所を解決するには、ルーティングのプロパティを設定し、解決するにはおよびオーケストレーションを使用しなくても、メッセージ レベルでの Microsoft BizTalk マップを実行するコンポーネントを使用する方法について説明します。 また、一方向と双方向の両方のメッセージング パターンを示します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
  \Source\Samples\DynamicResolution\Test\Data フォルダーにあるファイル NAOrderDoc.xml、(を除く、XPATH の競合回避モジュールを使用して) シナリオの使用をメッセージングすべて一方向受信への入力としての場所の名前 DynamicResolution_FILE です。 7 つの一方向メッセージングの例は、一意なバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
   
 ## <a name="two-way-messaging-scenarios"></a>双方向のメッセージング シナリオ  
- 双方向のすべてのメッセージング シナリオでは、ESB のサンプルを使用します。BizTalk に要求メッセージを発行する http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx にある NorthAmericanServices Web サービスです。 Microsoft InfoPath を使用してこの Web サービスを実行できるかなどから利用可能な Storm ユーティリティを使って[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409) ([http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409))。  
+ 双方向のすべてのメッセージング シナリオでは、ESB のサンプルを使用します。BizTalk に要求メッセージを発行する http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx にある NorthAmericanServices Web サービスです。 Microsoft InfoPath を使用してこの Web サービスを実行できるかなどから利用可能な Storm ユーティリティを使って[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)です。  
   
  それぞれの例は、動的にサンプル ESB にメッセージを送信するエンドポイントの URL を解決します。Http://localhost/ESB.CanadianServices/SubmitPOService.asmx にある CanadianServices Web サービスです。 例を実行するか、 **submitOrder**アクションまたは**submitPurchase**解決プロセスの結果に応じて、アクション。 双方向のメッセージング シナリオの受信場所は、DynamicResolutionReqResp_SOAP です。 10 の双方向メッセージングの例は、一意なバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
   
@@ -76,6 +76,6 @@ ms.lasthandoff: 09/20/2017
   
  このセクションのトピックは次のとおりです。  
   
--   [動的解決のサンプルをインストールします。](../esb-toolkit/installing-the-dynamic-resolution-sample.md)  
+-   [動的解決サンプルをインストールする](../esb-toolkit/installing-the-dynamic-resolution-sample.md)  
   
--   [動的解決のサンプルを実行します。](../esb-toolkit/running-the-dynamic-resolution-sample.md)
+-   [動的解決サンプルを実行する](../esb-toolkit/running-the-dynamic-resolution-sample.md)

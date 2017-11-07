@@ -1,26 +1,12 @@
 ---
-title: "設定する方法 TIBCO Enterprise Message Service 用の受信パイプライン |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- receive pipelines
-- setting receive pipelines
-- pipelines, receive
-ms.assetid: 2ae11a26-04db-40c7-bada-84d06c892293
-caps.latest.revision: "5"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: e805def8f1040511b24238641e070aa13a8d8c20
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-receive-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: d727d3969603e8ac6e180f524802ff4183faab5a
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-receive-pipelines-for-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service 用の受信パイプラインを設定する方法
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service を使用するには、受信ハンドラーと受信パイプラインを設定する必要があります。  
@@ -34,4 +20,4 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service を使用する�
 3.  **[OK]**をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [TIBCO Enterprise Message Service を作成する受信ハンドラー](../core/creating-tibco-enterprise-message-service-receive-handlers.md)
+ [TIBCO Enterprise Message Service 受信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-receive-handlers.md)

@@ -1,26 +1,12 @@
 ---
-title: "TIBCO Rendezvous の送信ポートを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- creating send ports
-- ports, send
-- send ports, creating
-ms.assetid: 0c8d9fdc-b273-4876-9f93-b5a85539a3c1
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 7d0b6e7dbb1a3b32979c94ec1af9483bd9fcb7cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 44da7839f0bee96db332dada214bdbc503067f56
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-send-ports-for-tibco-rendezvous"></a>TIBCO Rendezvous の送信ポートを作成する方法
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して送信ポートを作成するには、次の手順を実行します。  
@@ -39,9 +25,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
   
-    4.  送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。  
-  
-    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
+    4.  **送信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpipelines.xmltransmit]**です。 **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
   
     6.  をクリックして**構成**送信ポートを構成します。  
   
@@ -60,4 +44,4 @@ ms.lasthandoff: 09/20/2017
 5.  **[OK]**をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [TIBCO Rendezvous 送信ハンドラーを作成します。](../core/creating-tibco-rendezvous-send-handlers.md)
+ [TIBCO Rendezvous 送信ハンドラーの作成](../core/creating-tibco-rendezvous-send-handlers.md)

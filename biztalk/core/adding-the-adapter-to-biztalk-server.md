@@ -1,26 +1,12 @@
 ---
-title: "BizTalk Server にアダプターを追加する |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- adapters [JD Edwards OneWorld adapters], installing
-- installing, JD Edwards OneWorld adapters
-- JD Edwards OneWorld adapters, installing
-ms.assetid: e2018856-1943-48e9-b43f-7d527880e4bd
-caps.latest.revision: "12"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 63de8824112c9891c6d67eee424a84dd4968976c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 0491ac0f26b19a96d11cf633263010026961c58b
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="adding-the-adapter-to-biztalk-server"></a>BizTalk Server にアダプターを追加します。
 Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラーと送信ハンドラーの両方のフォルダーが含まれています。 送信ハンドラー フォルダーには、BizTalkServerApplication が含まれています。 BizTalk Adapter for JD Edwards OneWorld は作成可能です。BizTalk Server とインプロセスで実行され、分離されたホスト プロセスでは実行されません。  
@@ -61,4 +47,4 @@ Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラー
 ## <a name="see-also"></a>参照  
  [計画とアーキテクチャ](../core/planning-and-architecture17.md)   
  [BizTalk Adapter for JD Edwards OneWorld のセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)   
- [追加の BizTalk Adapter for JD Edwards OneWorld](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)
+ [BizTalk Adapter for JD Edwards OneWorld の追加](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)

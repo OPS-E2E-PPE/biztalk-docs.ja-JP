@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e42f93c6598f9b0a073b3e6a8a4530bfb5aefc27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2793ead474dc50eb3983d469752d3c03942e73e
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="running-sso-projects"></a>SSO プロジェクトの実行
 Internet Explorer からシングル サインオン (SSO) のサンプル プロジェクトを実行できます。  
@@ -39,4 +39,4 @@ Internet Explorer からシングル サインオン (SSO) のサンプル プ�
      この場合、資格情報を指定する必要はありません。  
   
 ## <a name="see-also"></a>参照  
- [シングル サインオンを使用します。](../core/using-single-sign-on3.md)
+ [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

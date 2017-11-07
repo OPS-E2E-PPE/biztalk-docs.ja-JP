@@ -1,26 +1,12 @@
 ---
-title: "TIBCO Enterprise Message Service の送信ポートを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- creating send ports
-- ports, send
-- send ports, creating
-ms.assetid: 6e569244-494e-4db4-8030-eda3b390d073
-caps.latest.revision: "9"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: bfadeb3306687bfcbea27c0df41973b12b003563
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 6b15d9d03ef967bcf7189ef756da8fc63a0eb3f6
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-send-ports-for-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service の送信ポートを作成する方法
 送信ポートを作成するには、次の手順を実行します。  
@@ -62,5 +48,4 @@ ms.lasthandoff: 09/20/2017
 5.  **[OK]**をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [送信ポートの TIBCO Enterprise Message Service トランスポート プロパティの設定](../core/setting-tibco-enterprise-message-service-transport-properties-for-the-send-port.md)   
- [TIBCO Enterprise Message Service 送信ハンドラーを作成します。](../core/creating-tibco-enterprise-message-service-send-handlers.md)
+  [TIBCO Enterprise Message Service 送信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-send-handlers.md)

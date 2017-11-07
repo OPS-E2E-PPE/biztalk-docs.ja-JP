@@ -1,27 +1,97 @@
 ---
-title: "BizTalk Adapter for PeopleSoft Enterprise の展開 |Microsoft ドキュメント"
+title: "PeopleSoft アプリケーションのインポート |Microsoft ドキュメント"
+description: "BizTalk Server に、PeopleSoft アダプターのアプリケーションをインポートする XML バインド ファイルを使用してインポートするときに、制限事項を読み取る"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/19/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: deployment
 ms.assetid: 2f53d1b4-e1df-41ff-b554-1bb1d20b9111
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94039b3f0b07c60726acfa8543d6e980e4df7258
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1dad4639c8432b5b9cc61935afadb0703a363045
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="deploying-biztalk-adapter-for-peoplesoft-enterprise"></a>BizTalk Adapter for PeopleSoft Enterprise の展開
+# <a name="deploy-biztalk-adapter-for-peoplesoft-enterprise"></a>BizTalk Adapter for PeopleSoft Enterprise 展開します。
 ここでは、BizTalk Adapter for PeopleSoft Enterprise の展開に関する情報を示します。  
+
+## <a name="overview"></a>概要
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、ターゲット コンピューター上でポートとアセンブリを複製できます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] により、送信ポートおよび受信場所の構成が XML ファイルにエクスポートされます。  
   
-## <a name="in-this-section"></a>このセクションの内容  
+ 使用する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]これらのタスクを実行します。  
   
--   [ポートとアセンブリの展開](../core/deploying-ports-and-assemblies5.md)
+-   BizTalk 構成データベースで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アセンブリを展開または削除します。  
+  
+-   グローバル アセンブリ キャッシュ (GAC) 内での、アセンブリのインストールまたはアンインストール  
+  
+-   バインド ファイルに対する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アセンブリのバインド情報のインポートまたはエクスポート  
+  
+使用する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとアセンブリを展開するを参照してください。 [BizTalk アプリケーションのバインドのエクスポート方法](../core/how-to-export-bindings-for-a-biztalk-application.md)です。  
+  
+> [!NOTE]
+>  Microsoft BizTalk Adapter for PeopleSoft Enterprise の場合のみ、ソース (開発) コンピューターで Visual Studio が必要です。 実稼動コンピュータでは Visual Studio は必要ありません。  
+
+## <a name="confirm-your-setup"></a>セットアップを確認します。
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用してバインド ファイルをインポートする前に、以下の項目について確認してください。  
+  
+-   CLASSPATH が PeopleSoft 固有のファイルの特定の場所を指している。 新しいコンピュータで、これらのファイルの場所が同じであることを確認します。同じでない場合は、バインド ファイルを編集します。  
+  
+-   新しいコンピュータで、応答用のフォルダが存在し、同じである。同じでない場合は、バインド ファイルを編集します。  
+  
+-   PeopleSoft Enterprise システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。 参照してください**制限**」を参照します。
+
+> [!NOTE]
+>  展開すると、受信場所の構成が上書きされます。 バインド ファイルとアセンブリを展開先のコンピュータに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
+  
+ バインド ファイルをインポートする方法を手順に沿ってを参照してください。[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)です。 
+  
+## <a name="clean-the-target-computer"></a>ターゲット コンピューターをクリーニングします。
+新しいアプリケーションの配置ターゲット コンピューターのクリーニング、送信ポートを削除、および受信場所をオーケストレーションにバインドされます。  
+  
+Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] が展開先のコンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除することができます。  
+  
+**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveSendPort.vbs の送信**  
+  
+**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveReceivePort.vbs の受信**  
+  
+たとえば、コマンド プロンプトで次のように実行します。  
+  
+```
+cscript RemoveSendPort.vbs \<Send port name>
+```
+
+## <a name="limitations"></a>制限事項
+によってエクスポートされるバインド ファイルにアスタリスク (*) でトランスポート アダプターのパスワードが格納されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、され、同じ形式で管理コンポーネントに渡されます。  
+  
+ バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次にファイルを使用してバインド情報をインポートするときに、トランスポート プロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。 または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が完了した後、バインド ファイルからパスワードを削除する必要があります。  
+  
+
+### <a name="work-around-the-password-limitation"></a>パスワードの制限を回避するには  
+
+**オプション 1**   
+  
+-   インポートする前に、アスタリスクをプレーン テキストで置き換えることによって、バインド ファイルを更新します。  
+  
+    > [!CAUTION]
+    >  この操作は、セキュリティ上の理由により推奨されていません。  
+  
+-   インポートする前に、無効な値 (つまり、正しくないパスワード)、アスタリスクを置き換えてバインディング fileby を更新します。 インポートした後で正しいパスワードを入力してください、**トランスポートのプロパティ**BizTalk Server 管理コンソールです。  
+  
+    > [!NOTE]
+    >  この対処方法を使用できるのは、対象のコンピューターに Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] がインストールされているか、カスタム ツールを開発する場合のみです。  
+  
+**オプション 2**  
+  
+-   パスワードではなく、エンタープライズ シングル サインオン (SSO) を使用します。 SSO オプションを使用するには、バインド ファイルをインポートする必要があります。  
+  
+- 論理システムと送信を確認し、サービスを受信します。 
+  
+## <a name="next-steps"></a>次の手順
+[BizTalk Server 例外処理を使用して、オーケストレーションで](../core/using-biztalk-server-exception-handling2.md)
