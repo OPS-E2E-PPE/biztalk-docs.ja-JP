@@ -1,31 +1,30 @@
 ---
-title: "開発 Applications4 |Microsoft ドキュメント"
+title: "PeopleSoft Enterprise のアプリケーションのアイテムを作成 |Microsoft ドキュメント"
+description: "BizTalk Server 管理および BizTalk Server で PeopleSoft Enterprise の BizTalk アダプターを使用する Visual Studio では、成果物を作成します。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/19/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- developing, applications
-- applications, developing
 ms.assetid: 2265f06a-ce5b-4401-aa32-d99c625cc95d
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6750319c341b2f1e56b2f9205f51c6f7e56f97b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5c2a273fe09fe02ff2c32749ff1dba270fafa0a
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="developing-applications"></a><span data-ttu-id="e6f84-102">アプリケーションの開発</span><span class="sxs-lookup"><span data-stu-id="e6f84-102">Developing Applications</span></span>
-<span data-ttu-id="e6f84-103">このセクションには、BizTalk Server アプリケーションを作成する開発者向けの情報が記載されています。</span><span class="sxs-lookup"><span data-stu-id="e6f84-103">This section contains information for developers who want to create BizTalk Server applications.</span></span> <span data-ttu-id="e6f84-104">含まれる情報を使用して、管理者によって管理されて通常これらのアプリケーションを作成すると、 [BizTalk Adapter for PeopleSoft Enterprise を管理する](../core/administering-biztalk-adapter-for-peoplesoft-enterprise.md)セクションです。</span><span class="sxs-lookup"><span data-stu-id="e6f84-104">When these applications are created, they are usually managed by an administrator who uses information found in the [Administering BizTalk Adapter for PeopleSoft Enterprise](../core/administering-biztalk-adapter-for-peoplesoft-enterprise.md) section.</span></span>  
+# <a name="create-your-application"></a><span data-ttu-id="1751e-103">アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="1751e-103">Create your application</span></span>
+<span data-ttu-id="1751e-104">このセクションには、BizTalk Server アプリケーションを作成し、BizTalk adapter for PeopleSoft Enterprise 作業する開発者向けの情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="1751e-104">This section contains information for developers who want to create BizTalk Server applications and work with BizTalk Adapter for PeopleSoft Enterprise.</span></span> <span data-ttu-id="1751e-105">これらのアプリケーションが作成されると、しすることができます[例外処理を追加](../core/using-biztalk-server-exception-handling2.md)をオーケストレーションにします。</span><span class="sxs-lookup"><span data-stu-id="1751e-105">Once these applications are created, then you can [add exception handling](../core/using-biztalk-server-exception-handling2.md) to your orchestration.</span></span> 
+
+
+## <a name="next-steps"></a><span data-ttu-id="1751e-106">次の手順</span><span class="sxs-lookup"><span data-stu-id="1751e-106">Next steps</span></span>
   
-## <a name="in-this-section"></a><span data-ttu-id="e6f84-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e6f84-105">In This Section</span></span>  
-  
--   [<span data-ttu-id="e6f84-106">PeopleSoft 送信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="e6f84-106">Creating PeopleSoft Send Handlers</span></span>](../core/creating-peoplesoft-send-handlers.md)  
-  
--   [<span data-ttu-id="e6f84-107">PeopleSoft からの受信</span><span class="sxs-lookup"><span data-stu-id="e6f84-107">Receiving from PeopleSoft</span></span>](../core/receiving-from-peoplesoft.md)
+-   [<span data-ttu-id="1751e-107">送信の成果物を作成します。</span><span class="sxs-lookup"><span data-stu-id="1751e-107">Create the send artifacts</span></span>](../core/creating-peoplesoft-send-handlers.md)  
+-   [<span data-ttu-id="1751e-108">Visual Studio プロジェクトにスキーマをインポートします。</span><span class="sxs-lookup"><span data-stu-id="1751e-108">Import Schemas into Visual Studio Projects</span></span>](../core/importing-peoplesoft-schemas-into-biztalk-server-projects.md)  
+-   [<span data-ttu-id="1751e-109">PeopleSoft からの受信</span><span class="sxs-lookup"><span data-stu-id="1751e-109">Receiving from PeopleSoft</span></span>](../core/receiving-from-peoplesoft.md)

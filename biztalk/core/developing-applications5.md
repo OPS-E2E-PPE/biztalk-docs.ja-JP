@@ -1,35 +1,35 @@
 ---
-title: "開発 Applications5 |Microsoft ドキュメント"
+title: "TIBCO EMS 用のアプリケーションのアイテムの作成 |Microsoft ドキュメント"
+description: "BizTalk Server 管理および BizTalk Server で TIBCO Enterprise Message Service の BizTalk アダプターを使用する Visual Studio では、成果物を作成します。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/23/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- developing, applications
-- applications, developing
 ms.assetid: 0c31dad4-bf5b-4c59-9cea-431122040d9d
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 231093cc57ae291ad6c34e8865819b2ec5ce28f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47085aad4d67d0f24503b0b068e857e573026691
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="developing-applications"></a><span data-ttu-id="dbce8-102">アプリケーションの開発</span><span class="sxs-lookup"><span data-stu-id="dbce8-102">Developing Applications</span></span>
-<span data-ttu-id="dbce8-103">このセクションには、BizTalk Server アプリケーションを作成し、BizTalk Server 用のアダプターを使用する開発者向けの情報が記載されています。</span><span class="sxs-lookup"><span data-stu-id="dbce8-103">This section contains information for developers who want to create BizTalk Server applications and work with adapters for BizTalk Server.</span></span> <span data-ttu-id="dbce8-104">含まれる情報を使用して、管理者によって管理されて通常これらのアプリケーションを作成したら、 [BizTalk Adapter for TIBCO Enterprise Message Service に管理](../core/administering-biztalk-adapter-for-tibco-enterprise-message-service.md)セクションです。</span><span class="sxs-lookup"><span data-stu-id="dbce8-104">After these applications are created, they are usually managed by an administrator who uses information found in the [Administering BizTalk Adapter for TIBCO Enterprise Message Service](../core/administering-biztalk-adapter-for-tibco-enterprise-message-service.md) section.</span></span>  
+# <a name="create-your-application"></a><span data-ttu-id="44d99-103">アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="44d99-103">Create your application</span></span>
+
+## <a name="overview"></a><span data-ttu-id="44d99-104">概要</span><span class="sxs-lookup"><span data-stu-id="44d99-104">Overview</span></span>
+<span data-ttu-id="44d99-105">このセクションには、BizTalk Server アプリケーションを作成し、TIBCO EMS 用のアダプターを使用する開発者向けの情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="44d99-105">This section contains information for developers who want to create BizTalk Server applications and work with adapters for TIBCO EMS.</span></span> <span data-ttu-id="44d99-106">これらのアプリケーションが作成されると、しすることができます[例外処理を追加](../core/using-biztalk-server-exception-handling5.md)をオーケストレーションにします。</span><span class="sxs-lookup"><span data-stu-id="44d99-106">Once these applications are created, then you can [add exception handling](../core/using-biztalk-server-exception-handling5.md) to your orchestration.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="dbce8-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="dbce8-105">In This Section</span></span>  
+## <a name="next-steps"></a><span data-ttu-id="44d99-107">次の手順</span><span class="sxs-lookup"><span data-stu-id="44d99-107">Next steps</span></span>
   
--   [<span data-ttu-id="dbce8-106">作成して、スキーマの使用</span><span class="sxs-lookup"><span data-stu-id="dbce8-106">Creating and Using Schemas</span></span>](../core/creating-and-using-schemas.md)  
+-   [<span data-ttu-id="44d99-108">作成し、スキーマを使用</span><span class="sxs-lookup"><span data-stu-id="44d99-108">Create and use schemas</span></span>](../core/creating-and-using-schemas.md)  
   
--   [<span data-ttu-id="dbce8-107">TIBCO Enterprise Message Service 送信ハンドラーを作成します。</span><span class="sxs-lookup"><span data-stu-id="dbce8-107">Creating  TIBCO Enterprise Message Service Send Handlers</span></span>](../core/creating-tibco-enterprise-message-service-send-handlers.md)  
+-   [<span data-ttu-id="44d99-109">送信の成果物を作成します。</span><span class="sxs-lookup"><span data-stu-id="44d99-109">Create send artifacts</span></span>](../core/creating-tibco-enterprise-message-service-send-handlers.md)  
   
--   [<span data-ttu-id="dbce8-108">TIBCO Enterprise Message Service を作成する受信ハンドラー</span><span class="sxs-lookup"><span data-stu-id="dbce8-108">Creating TIBCO Enterprise Message Service Receive Handlers</span></span>](../core/creating-tibco-enterprise-message-service-receive-handlers.md)  
+-   [<span data-ttu-id="44d99-110">作成の成果物の受信</span><span class="sxs-lookup"><span data-stu-id="44d99-110">Create receive artifacts</span></span>](../core/creating-tibco-enterprise-message-service-receive-handlers.md)  
   
--   [<span data-ttu-id="dbce8-109">メッセージ コンテキスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="dbce8-109">Message Context Properties</span></span>](../core/message-context-properties2.md)
+-   [<span data-ttu-id="44d99-111">TIBCO EMS メッセージ コンテキスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="44d99-111">TIBCO EMS message context properties</span></span>](../core/message-context-properties-in-biztalk-server.md)

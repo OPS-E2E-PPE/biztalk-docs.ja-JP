@@ -15,30 +15,30 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed6907a96c3c961a4df7d076ba9307f44627bfa2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6356a130b412ea849c79213ab55b000ea827f3a
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="how-to-configure-the-http-receive-adapter"></a><span data-ttu-id="19072-102">HTTP 受信アダプターを構成する方法</span><span class="sxs-lookup"><span data-stu-id="19072-102">How to Configure the HTTP Receive Adapter</span></span>
-<span data-ttu-id="19072-103">HTTP 受信アダプターを使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信できます。</span><span class="sxs-lookup"><span data-stu-id="19072-103">You can use the HTTP receive adapter to submit messages to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="19072-104">HTTP 受信アダプターは、インターネット インフォメーション サービス (IIS) プロセスでホストされる IIS の ISAPI 拡張です。</span><span class="sxs-lookup"><span data-stu-id="19072-104">The HTTP receive adapter is an Internet Information Services (IIS) ISAPI extension that is hosted in the IIS process.</span></span>  
+# <a name="how-to-configure-the-http-receive-adapter"></a><span data-ttu-id="7a535-102">HTTP 受信アダプターを構成する方法</span><span class="sxs-lookup"><span data-stu-id="7a535-102">How to Configure the HTTP Receive Adapter</span></span>
+<span data-ttu-id="7a535-103">HTTP 受信アダプターを使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信できます。</span><span class="sxs-lookup"><span data-stu-id="7a535-103">You can use the HTTP receive adapter to submit messages to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="7a535-104">HTTP 受信アダプターは、インターネット インフォメーション サービス (IIS) プロセスでホストされる IIS の ISAPI 拡張です。</span><span class="sxs-lookup"><span data-stu-id="7a535-104">The HTTP receive adapter is an Internet Information Services (IIS) ISAPI extension that is hosted in the IIS process.</span></span>  
   
-### <a name="to-configure-the-http-receive-adapter"></a><span data-ttu-id="19072-105">HTTP 受信アダプターを構成するには</span><span class="sxs-lookup"><span data-stu-id="19072-105">To configure the HTTP receive adapter</span></span>  
+### <a name="to-configure-the-http-receive-adapter"></a><span data-ttu-id="7a535-105">HTTP 受信アダプターを構成するには</span><span class="sxs-lookup"><span data-stu-id="7a535-105">To configure the HTTP receive adapter</span></span>  
   
-1.  <span data-ttu-id="19072-106">HTTP 受信アダプター (BTSHTTPReceive.dll) から **\<BizTalk > \HttpReceive >**など、シングル サインオン (SSO) プロジェクトが含まれているフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="19072-106">Copy the HTTP receive adapter (BTSHTTPReceive.dll) from **\<BizTalk>\HttpReceive>** to the folder that contains your Single Sign-On (SSO) project, for example:</span></span>  
+1.  <span data-ttu-id="7a535-106">HTTP 受信アダプター (BTSHTTPReceive.dll) から **\<BizTalk > \HttpReceive >**など、シングル サインオン (SSO) プロジェクトが含まれているフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="7a535-106">Copy the HTTP receive adapter (BTSHTTPReceive.dll) from **\<BizTalk>\HttpReceive>** to the folder that contains your Single Sign-On (SSO) project, for example:</span></span>  
   
-     <span data-ttu-id="19072-107">**< Adapter_install > \biztalk\SSO\mySSODemo**</span><span class="sxs-lookup"><span data-stu-id="19072-107">**<Adapter_install>\biztalk\SSO\mySSODemo**</span></span>  
+     <span data-ttu-id="7a535-107">**< Adapter_install > \biztalk\SSO\mySSODemo**</span><span class="sxs-lookup"><span data-stu-id="7a535-107">**<Adapter_install>\biztalk\SSO\mySSODemo**</span></span>  
   
-    1.  <span data-ttu-id="19072-108">新しい Web サービス拡張機能 mySSODemo を追加します。</span><span class="sxs-lookup"><span data-stu-id="19072-108">Add a new Web service extension mySSODemo.</span></span>  
+    1.  <span data-ttu-id="7a535-108">新しい Web サービス拡張機能 mySSODemo を追加します。</span><span class="sxs-lookup"><span data-stu-id="7a535-108">Add a new Web service extension mySSODemo.</span></span>  
   
-    2.  <span data-ttu-id="19072-109">コピーを見つけて**< BizTalk_install > \HttpReceive**など、SSO プロジェクトが含まれているフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="19072-109">Locate and copy **<BizTalk_install>\HttpReceive** to the folder that contains your SSO project, for example:</span></span>  
+    2.  <span data-ttu-id="7a535-109">コピーを見つけて**< BizTalk_install > \HttpReceive**など、SSO プロジェクトが含まれているフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="7a535-109">Locate and copy **<BizTalk_install>\HttpReceive** to the folder that contains your SSO project, for example:</span></span>  
   
-         <span data-ttu-id="19072-110">**< Adapter_install > \biztalk\SSO\mySSODemo\BTSHTTPReceive.dll です。**</span><span class="sxs-lookup"><span data-stu-id="19072-110">**<Adapter_install>\biztalk\SSO\mySSODemo\BTSHTTPReceive.dll.**</span></span>  
+         <span data-ttu-id="7a535-110">**< Adapter_install > \biztalk\SSO\mySSODemo\BTSHTTPReceive.dll です。**</span><span class="sxs-lookup"><span data-stu-id="7a535-110">**<Adapter_install>\biztalk\SSO\mySSODemo\BTSHTTPReceive.dll.**</span></span>  
   
-    3.  <span data-ttu-id="19072-111">MySSODemo Web サービス拡張機能の状態に設定**許可**です。</span><span class="sxs-lookup"><span data-stu-id="19072-111">Set the status of mySSODemo Web service extension to **Allowed**.</span></span>  
+    3.  <span data-ttu-id="7a535-111">MySSODemo Web サービス拡張機能の状態に設定**許可**です。</span><span class="sxs-lookup"><span data-stu-id="7a535-111">Set the status of mySSODemo Web service extension to **Allowed**.</span></span>  
   
-2.  <span data-ttu-id="19072-112">IIS を再起動して、すべての変更内容を適用します。</span><span class="sxs-lookup"><span data-stu-id="19072-112">Restart IIS to apply all changes.</span></span>  
+2.  <span data-ttu-id="7a535-112">IIS を再起動して、すべての変更内容を適用します。</span><span class="sxs-lookup"><span data-stu-id="7a535-112">Restart IIS to apply all changes.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="19072-113">参照</span><span class="sxs-lookup"><span data-stu-id="19072-113">See Also</span></span>  
- [<span data-ttu-id="19072-114">シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="19072-114">Using Single Sign-On</span></span>](../core/using-single-sign-on2.md)
+## <a name="see-also"></a><span data-ttu-id="7a535-113">参照</span><span class="sxs-lookup"><span data-stu-id="7a535-113">See Also</span></span>  
+ [<span data-ttu-id="7a535-114">アダプターをセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="7a535-114">Secure the adapter</span></span>](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)
