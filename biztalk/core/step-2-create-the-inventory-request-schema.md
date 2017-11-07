@@ -12,11 +12,11 @@ caps.latest.revision: "45"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5199b20a75b82e12ad76b96903538487a3128668
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 06000a734856c7b9f22e78a2d5a78c4585021a21
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="step-2-create-the-inventory-request-schema"></a>ステップ 2: 在庫要求スキーマの作成
 ![手順 5 の 2](../core/media/step-2of5.gif "Step_2of5")  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Microsoft Visual Studio**です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**開く**、クリックして**プロジェクト/ソリューション**です。  
+2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**開く**、クリックして**プロジェクト/ソリューション**です。  
   
 3.  **プロジェクトを開く** ダイアログ ボックスを参照、 **C:\BTSTutorials\EAISolution\EAISolution.sln**ソリューション ファイル、およびクリック**開く**です。  
   
@@ -76,13 +76,15 @@ ms.lasthandoff: 09/20/2017
   
 7.  型`ReqID`要素、およびし、ENTER キーを押して新しい名前として。  
   
-8.  手順 6 および 7 を 2 番目の子を作成するフィールドの要素を**ヘッダー**ノード、名前を付けます`OrderDate`です。  
+8.  手順 6 および 7 を 2 番目の子を作成するフィールドの要素を**ヘッダー**ノード、名前を付けます`OrderDate`です。
+
+9.  手順 6 および 7、3 番目の作成を子フィールド要素を**ヘッダー**ノード、名前を付けます`GrandTotal`です。
   
-9. スキーマ ツリー内を右クリックし、**項目**に**スキーマ ノードの挿入**、順にクリック**子レコード**です。  
+10. スキーマ ツリー内を右クリックし、**項目**に**スキーマ ノードの挿入**、順にクリック**子レコード**です。  
   
-10. 型`Item`子レコードとし、ENTER キーを押して新しい名前として。  
+11. 型`Item`子レコードとし、ENTER キーを押して新しい名前として。  
   
-11. スキーマ ツリー内を右クリックし、**項目**ノード、し、次の子フィールド要素を追加します。  
+12. スキーマ ツリー内を右クリックし、**項目**ノード、し、次の子フィールド要素を追加します。  
   
     -   `Description`  
   
@@ -117,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-promote-an-element"></a>要素を昇格するには  
   
-1.  スキーマ ツリー内を右クリックして**GrandTotal**、をポイント**昇格**、クリックして**クイック昇格**です。  
+1.  スキーマ ツリー内を右クリックして**GrandTotal**、 をポイント**昇格**、クリックして**クイック昇格**です。  
   
 2.  をクリックして**OK**プロパティ スキーマを追加することを確認します。  
   

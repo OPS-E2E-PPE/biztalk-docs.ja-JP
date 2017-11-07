@@ -1,5 +1,5 @@
 ---
-title: "BizTalk Adapter for TIBCO Rendezvous のメッセージ |Microsoft ドキュメント"
+title: "TIBCO Rendezvous アダプターでメッセージ |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,30 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- passing messages
-- TIBCO Rendezvous
-- messages
-- message passing
-- messages, passing
 ms.assetid: 12699550-22e7-4a11-a024-2302570970af
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4bc1eadbefdeb5c59df9a1b999ffdd3e530587a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b9c3aa4aeb613ea65f7e0d7385871c639afb6d8
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="messages-in-biztalk-adapter-for-tibco-rendezvous"></a>BizTalk Adapter for TIBCO Rendezvous のメッセージ
 BizTalk Adapter for TIBCO Rendezvous は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と TIBCO Rendezvous 間に双方向の接続を提供します。 このアダプターは、TIBCO Rendezvous API と BizTalk Adapter Framework API の両方を使用して、緊密な統合を提供します。  
   
 ## <a name="about-tibco-rendezvous"></a>TIBCO Rendezvous について  
- TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するソフトウェア製品です。 TIBCO では、C、C++、Java、Visual Basic および Microsoft Office Excel ワークシートにデータ フィードとその他の任意のアプリケーションを受信する Microsoft .NET Framework のメッセージング Api を提供します。 詳細については、次を参照してください。 [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)です。  
+ TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するプログラムです。 TIBCO では、C、C++、Java、Visual Basic および Microsoft Office Excel ワークシートにデータ フィードとその他の任意のアプリケーションを受信する Microsoft .NET Framework のメッセージング Api を提供します。 詳細については、次を参照してください。 [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)です。  
   
-### <a name="message-passing"></a>メッセージ パッシング  
+## <a name="message-passing"></a>メッセージ パッシング  
  メッセージを渡す概念はとても簡単です。  
   
 -   メッセージには、ピリオドで区切られた要素で構成される 1 つのサブジェクトがあります。 メッセージは 1 つの Rendezous デーモンに送信されますが、最終的に他の複数のデーモンに配信される場合があります。  
@@ -53,16 +47,16 @@ BizTalk Adapter for TIBCO Rendezvous は、[!INCLUDE[btsBizTalkServerNoVersion](
   
 -   デバッグ レベルを含むすべてのレベルのメッセージが Windows トレース ログに送信されます。  
   
-#### <a name="transmitter"></a>送信元  
+## <a name="transmitter"></a>送信元  
  BizTalk Adapter for TIBCO Rendezvous は、送信ポートごとに 1 つのランタイム エージェントを起動します。 TIBCO Rendezvous .NET Framework API を使用すると、グローバル スコープで文字エンコードを設定できます。 そのため、ポート構成オプションの 1 つはコード ページ番号です。 コード ページごとに異なるプロセスを開始することによって、アダプターはグローバル化に対して、より優れたサポートを提供できます。  
   
-#### <a name="receiver"></a>受信元  
+## <a name="receiver"></a>受信元  
  BizTalk Adapter for TIBCO Rendezvous は、受信場所ごとに 1 つのランタイム エージェントを起動します。  
   
-#### <a name="transactions"></a>トランザクション  
+## <a name="transactions"></a>トランザクション  
  TIBCO Rendezvous 製品はトランザクション対応ではありません。 TIBCO Rendezvous TX という別の製品が必要です。 BizTalk Adapter for TIBCO Rendezvous のこのリリースでは、トランザクションはサポートされていません。  
   
-#### <a name="security"></a>セキュリティ  
+## <a name="security"></a>セキュリティ  
  TIBCO Rendezvous は、TIBCO Rendezvous プログラムとデーモンの間の認証のみをサポートします。 承認または暗号化は実行しません。 TIBCO Rendezvous DataSecurity という別の製品が必要です。  
   
 ## <a name="see-also"></a>参照  
