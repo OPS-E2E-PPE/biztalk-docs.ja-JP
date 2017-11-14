@@ -1,4 +1,7 @@
 ---
+redirect_url: /biztalk/core/feature-pack-add-build-release-definitions/
+redirect_document_id: True
+ROBOTS: NOINDEX
 title: "BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services の構成 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
@@ -12,11 +15,11 @@ caps.latest.revision: "6"
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: 6368300c714811d5b3c42e07ebb804d26362bf85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95d8e9fc274793471335fc03bc38c82c1b3e3469
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a>BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services を構成します。
 自動的に展開する VSTS セットアップ[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。 
@@ -130,6 +133,3 @@ ms.lasthandoff: 09/20/2017
 
 12. 新しい名前を付けます**定義**、し、正しいパスを設定します。 
 13. 定義が保存されると、選択**新しいビルドをキュー**です。 次に、選択、**キュー エージェント**コミットにコメントを追加します。
-
-## <a name="next-step"></a>次の手順
-[自動展開用の JSON テンプレートを構成します。](../core/configure-the-json-template-for-automatic-deployment.md)

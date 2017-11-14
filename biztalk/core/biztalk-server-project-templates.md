@@ -1,38 +1,37 @@
 ---
-title: "BizTalk Server プロジェクト テンプレート |Microsoft ドキュメント"
+title: "Visual Studio プロジェクト テンプレート |Microsoft ドキュメント"
+description: ".Btproj、BPEL、BizTalk Server で使用される .btaproj Visual Studio テンプレートを説明します。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/07/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- projects, templates
-- templates, projects
 ms.assetid: c2b3d494-db80-4314-afcd-d08d5a26e211
 caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e84b7ce8e97110078c287a597c04692d7c4c08a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a9dc2932b6138c93270126f4b3b8ff1afbeb6c9d
+ms.sourcegitcommit: 068c17d5ac10874b79e8ec5648cea74411c6247c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="biztalk-server-project-templates"></a>BizTalk Server プロジェクト テンプレート
-インストールするときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、インストール プロセスを BizTalk Projects フォルダーの追加、**新しいプロジェクト** ダイアログ ボックス。 BizTalk Projects フォルダーには、空の BizTalk Server プロジェクトと、BizTalk Server BPEL インポート プロジェクトを作成するためのテンプレートが含まれています。  
-  
-> [!NOTE]
->  使用するための Biztalk プロジェクトを移行する[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を使用して、 [Visual Studio 変換ウィザード](http://go.microsoft.com/fwlink/?LinkId=124086)です。  
-  
- 次の表は、BizTalk プロジェクト テンプレートを示しています。  
+
+## <a name="overview"></a>概要
+インストールするときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、インストールで追加する BizTalk Projects フォルダー、**新しいプロジェクト** ダイアログ ボックス。 BizTalk Projects フォルダーには、空の BizTalk Server プロジェクト、BizTalk Server BPEL インポート プロジェクト、および BizTalk Server アプリケーション プロジェクトを作成するためのテンプレートが含まれています。
+
+## <a name="available-templates"></a>使用可能なテンプレート
+次の表では、これらのプロジェクト テンプレートについて説明します。  
   
 |プロパティ|目的|  
 |--------------|----------------|  
-|**空の BizTalk Server プロジェクト**|空の BizTalk Server プロジェクトを新規作成します。|  
-|**BizTalk Server BPEL インポート プロジェクト**|Business Process Execution Language (BPEL)、Web Services Description Language (WSDL)、または XML Schema Definition Language (XSD) ファイルを BizTalk プロジェクトにインポートします。|  
+|**空の BizTalk Server プロジェクト**|新しい空の BizTalk Server プロジェクトを作成します。|  
+|**BizTalk Server BPEL インポート プロジェクト**|ビジネス プロセスの実行 Language (BPEL)、Web サービス記述言語 (WSDL)、または XML スキーマ定義言語 (XSD) ファイルを BizTalk プロジェクトにインポートします。|  
+|**BizTalk Server アプリケーション プロジェクト (.btaproj)**|以降で[!INCLUDE[bts2016](../includes/bts2016-md.md)][機能パック 1](../core/configure-the-feature-pack.md)、またはそれ以降。 <br/><br/>自動的に展開して、Visual Studio Team Services (VSTS) を使用してアプリケーションを更新するために使用します。 プロジェクトに含まれる、 `BizTalkServerInventory.json` VSTS で、配置時に使用されるファイルです。 |  
   
 ## <a name="see-also"></a>参照  
- [BizTalk プロジェクトでの作業](../core/working-with-biztalk-projects.md)
+ [BizTalk プロジェクトの操作](../core/working-with-biztalk-projects.md)

@@ -1,7 +1,8 @@
 ---
-title: "環境のトークンと自動展開用の変数の構成 |Microsoft ドキュメント"
+title: "環境のトークンと変数を作成 |Microsoft ドキュメント\""
+description: "環境のトークンを使用するバインド ファイルを更新し、BizTalk Server アプリケーションの展開を自動化する VSTS で変数を作成"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/08/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -10,13 +11,13 @@ ms.topic: article
 ms.assetid: 28bb2d4a-f45c-466d-ba65-0ca8cad0bffd
 caps.latest.revision: "4"
 author: tordgladnordahl
-ms.author: tonordah
+ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d148f79fceb68b24feb45882ab89767369ed7e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d84fa393410e3084c87e762140530a45b0b78b5
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-environmental-tokens-and-variables-for-automatic-deployment"></a>環境のトークンと自動展開用の変数を構成します。
 Visual Studio Team Services (VSTS) の変数を使用して、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]バインド ファイルです。
@@ -28,42 +29,38 @@ Visual Studio Team Services (VSTS) の変数を使用して、[!INCLUDE[btsBizTa
 
 これらの変数は、VSTS の環境に固有であり、同じアプリケーションを複数の展開に使用できる[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]環境。 
 
-このトピックでは、VSTS ファイル内の変数、バインディング、および VSTS 内の変数を作成する方法追加する方法を示します。 
+VSTS 内の変数を作成する方法と、バインド ファイルに、VSTS 変数を追加する方法を説明します。 
 
-## <a name="configure-the-variables-in-your-biztalk-binding-file"></a>BizTalk バインド ファイル内の変数を構成します。
-
-次の例の一部、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]バインド ファイルの場合は、トークンを適用する方法を示しています。
+## <a name="add-variables-to-the-binding-file"></a>バインド ファイルに変数を追加します。
 
 1. アプリケーションのバインド ファイルを開きます。
 
-    ![BizTalk Feature Pack 1 をバインド 1](../core/media/biztalk-feature-pack-1-binding-1.png)
+    ![バインド ファイルを開く](../core/media/biztalk-feature-pack-1-binding-1.png)
 
 2. 変更する要素を検索します。
 
-    ![BizTalk Feature Pack 2 をバインド 1](../core/media/biztalk-feature-pack-1-binding-2.png)
+    ![要素を選択します。](../core/media/biztalk-feature-pack-1-binding-2.png)
     
 3. 設定済みの値を削除して、変数で置き換えます:`$(YourValue)`です。 たとえば、入力`$(SendPort1)`: 
 
-    ![BizTalk Feature Pack 1 が 3 のバインド](../core/media/biztalk-feature-pack-1-binding-3.png)
+    ![バインド ファイル](../core/media/biztalk-feature-pack-1-binding-3.png)
 
+4. 完了したら、バインド ファイルを保存し、JSON のビルド テンプレートに追加 (ステップの[手順 1: アプリケーションの追加の更新 (&)、プロジェクトの .json テンプレート](feature-pack-add-application-project.md))。
 
-4. 終了したら、バインド ファイルを保存し、JSON ビルド テンプレートに適用します。
-5. Visual Studio チーム サービス、ソリューションにサインインし、選択**ビルドし、リリースの**します。
-6. 移動して**リリース**です。 選択、**リリース定義**、新規に作成します。
-7. **環境****新しい環境を追加**、または既存の環境に変更します。 
+## <a name="create-the-variables-in-vsts"></a>VSTS で変数を作成します。
 
-    ![新しい環境を追加します。](../core/media/add-a-new-environment.png)
+1. VSTS アカウントに次のように選択します。**ビルドとリリースの**、を選択して**リリース**です。
 
-8. 省略記号ボタンをクリックし、選択**変数構成**:
+2. 選択、**リリース定義**を選択して**変数**:  
 
-    ![変数を構成します。](../core/media/configure-variables.png)
+    ![バインド ファイル](../core/media/vsts-release-variables.png)
 
-9. バインド ファイルに作成されたトークンの名前を使用して、各環境の変数を追加することで、値が異なる複数の環境にアプリケーションを展開できます。
+3. 選択**追加**、変数の名前と値を作成します。   
 
-    ![特定の環境変数](../core/media/environment-specific-variables.png)
-    
-10. 選択**OK**を新しい変数を保存します。
-11. ビルドが開始されると、値は、バインド ファイルから追加されます。
+    ![変数を構成します。](../core/media/environment-specific-variables.png)
 
-## <a name="next-step"></a>次の手順
-[VSTS を BizTalk アプリケーションを追加します。](../core/add-a-biztalk-server-application-to-visual-studio-team-services.md)
+4. **保存**変更します。 展開が開始されると、値は、バインド ファイルから追加されます。
+
+## <a name="see-also"></a>参照
+[Visual Studio Team Services の自動展開を構成します。](configure-automatic-deployment-with-visual-studio-team-services-in-biztalk.md)  
+[Feature Pack の構成](configure-the-feature-pack.md)

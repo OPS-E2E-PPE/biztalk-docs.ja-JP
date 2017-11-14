@@ -1,8 +1,8 @@
 ---
 title: "Power BI を有効にする |Microsoft ドキュメント"
-description: "BizTalk server 機能パックに Power BI テンプレートをインストールします。"
+description: "Power BI テンプレートを BizTalk Server 用 Feature Pack のインストールします。"
 ms.custom: fp1
-ms.date: 11/06/2017
+ms.date: 11/07/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -13,13 +13,13 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d3b3dde09351b9a0aa021ef28645cb114495152
-ms.sourcegitcommit: 30189176c44873e3de42cc5f2b8951da51ffd251
+ms.openlocfilehash: 7afe600ae96e624db0acb2f87f6ba131b3e101bd
+ms.sourcegitcommit: 2330f1eaa6a7bb09975c9e07e56c6595229fd423
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
 ---
-# <a name="configure-the-operational-data-feed-for-power-bi-with-biztalk-server"></a>BizTalk Server で Power BI にフィード オペレーション データを構成します。
+# <a name="configure-the-power-bi-operational-data-feed-in-biztalk-server"></a>Power BI の運用データを BizTalk Server でフィードを構成します。
 
 **以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**追跡を指定すると、Power BI テンプレートを使用して Power BI に送信します。 または、独自に作成します。 
 
@@ -46,6 +46,7 @@ ms.lasthandoff: 11/07/2017
 * ダウンロードしてインストール[Power BI Desktop](https://powerbi.microsoft.com/desktop/)ネットワーク アクセス権を持つ任意のコンピューターで、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * インストール[機能パック 1](https://www.microsoft.com/download/details.aspx?id=55100)で、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * IIS をインストール、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]です。 ほとんどの[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]環境では、IIS が既にインストールされています。 参照してください[Hardware and Software Requirements for BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)です。 開くことによって IIS がインストールされていることを確認**インターネット インフォメーション サービス マネージャー**です。 
+* 省略可。 インストールし、構成、 [Power BI Gateway](https://powerbi.microsoft.com/gateway/)接続[PowerBI.com](http://powerbi.microsoft.com)内部設置型の BizTalk Server とします。 オンプレミス BizTalk Server を使用していない場合は、ゲートウェイを必要ありません。
 
 ## <a name="step-1-enable-operational-data"></a>手順 1: オペレーション データを有効にします。
 
@@ -54,8 +55,15 @@ ms.lasthandoff: 11/07/2017
 3. 次のテキストで置き換えます`Default Web Site`、 `operationalDataServiceAppPool`、 `domain\user`、 `password`、および`domain\group`実際の値にします。
 
     ```Powershell
-    FeaturePack.ConfigureServices.ps1 -Service operationaldata -WebSiteName '<Default Web Site>' -ApplicationPool <operationalDataServiceAppPool> -ApplicationPoolUser <domain>\<user> -ApplicationPoolUserPassword <password> -AuthorizationRoles '<domain>\<group1>, <domain>\<group2>'
+    FeaturePack.ConfigureServices.ps1 -Service operationaldata -WebSiteName '<Default Web Site>' -ApplicationPool <operationalDataServiceAppPool> -ApplicationPoolUser <domain>\<user> -ApplicationPoolUserPassword <password> -AuthorizationRoles '<domain>\<group1>, <domain>\<group2>, <domain>\<user>, <domain>\<user2>'
     ```
+
+    * **サービス**: サービスを構成する (**OperationalData** Power BI 用)
+    * **WebSiteName**: サービスをホストする既存の IIS web サイトです。 既定値は**Default Web Site**です。
+    * **ApplicationPool**: アプリケーション プールが、サービスで使用します。 存在する場合は、新しいは作成されません。 既定値は**DefaultAppPool**です。
+    * **ApplicationPoolUser**: このユーザー id として実行するアプリケーション プールを構成します。 BizTalk Server Operator、またはより高い特権が必要です。
+    * **ApplicationPoolUserPassword**: ApplicationPoolUser のパスワード
+    * **AuthorizationAccount**: 承認済みのグループまたはこのサービスを使用するユーザーの一覧
 
     次の例では使用して、 `Default Web Site`、というアプリケーション プールを作成`PowerBIAppPool`、として、アプリケーション プールを実行、`bootcampbts2016\btsservice`アカウントを使用して`BIZTALK-serviceacct`により、ユーザー アカウントのパスワードとして、`BizTalk Server Administrators`アクセス許可をグループ化します。 次を入力するようにし、スペースを含む周囲の値を引用符で、1 つを含みます。 
 
@@ -67,7 +75,7 @@ ms.lasthandoff: 11/07/2017
     ![BizTalkMOperationalDataServer アプリケーション](../core/media/biztalkmanagementservice-apppool.png)
 
 
-4. 動作していることを確認する」を参照`http://localhost/OperationalDataService`です。 
+4. 動作していることを確認する」を参照`http://localhost/BizTalkOperationalDataService`です。 
 
     かどうかサインイン、前の手順で入力した domain \group のメンバーであるアカウントでサインインするように求められます (`-AuthorizationRoles 'BOOTCAMPBTS2016\BizTalk Server Administrators'`)。 
 
@@ -88,10 +96,10 @@ ms.lasthandoff: 11/07/2017
 2. 開く、`\Program Files (x86)\Microsoft BizTalk Server 2016\OperationalDataService`フォルダーを開き、`BizTalkOperationalData.pbit`ファイル。  
 ![開いている pbit ファイル](../core/media/operational-data-pbit.png)
 
-3. Power BI desktop が開き、URL のメッセージが表示されたら、します。 入力、 `http://localhost/<yourWebSite>` OData フィード用に作成した URL です。 たとえば、入力`http://localhost/OperationalDataService`です。 URL は、次のようにはなります。  
+3. Power BI desktop が開き、URL のメッセージが表示されたら、します。 入力、 `http://localhost/<yourWebSite>` OData フィード用に作成した URL です。 たとえば、入力`http://localhost/BizTalkOperationalDataService`です。 URL は、次のようにはなります。  
 ![URL を入力します](../core/media/operational-data-url.png)
 
-5. 選択**ロード**です。 ウィンドウを読み込んで BizTalkOperationalDataService.json ファイル内の別の oData ソースに接続します。 これが完了すると、ダッシュ ボードは、環境に関する詳細を示します。
+4. 選択**ロード**です。 ウィンドウを読み込んで BizTalkOperationalDataService.json ファイル内の別の oData ソースに接続します。 これが完了すると、ダッシュ ボードは、環境に関する詳細を示します。
 
 ## <a name="couldnt-authenticate"></a>認証できませんでした。
 表示された場合`couldn't authenticate with the credentials provided`メッセージは次のように、アプリケーション プール id は、BizTalk Server データベースへの十分なアクセスを持っていない可能性があります。 変更できます IIS 内の appPool id 多くの特権を持つアカウントになる可能性があります (をローカルの管理者特権を持つ) サインイン ユーザー アカウント。 
@@ -99,9 +107,9 @@ ms.lasthandoff: 11/07/2017
 ![指定された資格情報で認証できませんでした。](../core/media/operational-data-authentication-error.png)
 
 ## <a name="do-more"></a>複数の操作を行います
-これは、始まりにすぎません。 Power BI では、BizTalk Server にインストールできるゲートウェイもあります。 ゲートウェイを使用するには、ダッシュ ボードを発行、リアルタイムのデータを取得でき、ダッシュ ボードの更新スケジュールを作成できます。 次のブログに大変これらの手順を説明します。 
+これは、始まりにすぎません。 Power BI では、内部設置型 BizTalk Server にインストールできるゲートウェイもあります。 ゲートウェイを使用するには、ダッシュ ボードを発行、リアルタイムのデータを取得でき、ダッシュ ボードの更新スケジュールを作成できます。 次のブログに大変これらの手順を説明します。 
 
-[Power BI – 構成手順で BizTalk のオペレーション データを公開する方法](https://blog.sandro-pereira.com/2017/05/07/biztalk-server-2016-feature-pack-1-how-to-publish-biztalk-operational-data-power-bi-step-by-step-configuration-part-3/)
+* [Power BI – 構成手順で BizTalk のオペレーション データを公開する方法](https://blog.sandro-pereira.com/2017/05/07/biztalk-server-2016-feature-pack-1-how-to-publish-biztalk-operational-data-power-bi-step-by-step-configuration-part-3/)
 
 [ガイド付き学習](https://powerbi.microsoft.com/guided-learning/)はでも、最適な場所に Power BI に関する詳細、およびすべての処理を行うことができます。 
 

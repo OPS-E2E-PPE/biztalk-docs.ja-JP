@@ -1,4 +1,7 @@
 ---
+redirect_url: /biztalk/core/feature-pack-add-application-project/
+redirect_document_id: True
+ROBOTS: NOINDEX
 title: "Visual Studio Team Services への BizTalk Server アプリケーションの追加 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
@@ -12,11 +15,11 @@ caps.latest.revision: "4"
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: d3fc8c0253c8e2517f78c2d60fdc7c74a983bdbd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a6b7ba32c0077b3df107b00525bb34ef011e483
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-a-biztalk-server-application-to-visual-studio-team-services"></a>Visual Studio Team Services への BizTalk Server アプリケーションを追加します。
 追加、 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] VSTS 継続的インテグレーションを使用して自動的に展開するプロジェクトです。  
@@ -27,7 +30,7 @@ ms.lasthandoff: 09/20/2017
 
 ## <a name="prerequisites"></a>前提条件
 * インストール[機能パック 1](https://www.microsoft.com/download/details.aspx?id=55100)で、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
-* [自動展開用 VSTS を構成します。](../core/configure-visual-studio-team-services-to-deploy-biztalk-solutions-or-projects.md)
+* [手順 3: ビルドの作成し、定義のリリース](../core/feature-pack-add-build-release-definitions.md)
 * 知識と経験 Git と Visual Studio でリポジトリを使用します。 新しいリポジトリとバージョン管理する場合は、これら優れたリソースがあります。 
 
     [Git を説明します。](https://www.visualstudio.com/learn-git/)  

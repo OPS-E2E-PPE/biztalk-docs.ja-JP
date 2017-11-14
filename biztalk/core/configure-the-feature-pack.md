@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3d8cadb82cd6233c84566aa6a0bea55d90b08c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10ce63081fa3b392df3f900fb6a08ecfc7de4cae
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-the-feature-pack"></a>この機能パックを構成します。
 ## <a name="overview"></a>概要
@@ -25,11 +25,12 @@ ms.lasthandoff: 09/20/2017
 
 > [!NOTE]
 > [!INCLUDE[featurepack1](../includes/featurepack1.md)]Enterprise および Developer エディションと共に使用できるは[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]とき。 
-> * Software Assurance (SA) の使用  
 > 
->     または、
+> - Software Assurance (SA) の使用  
 > 
-> * 実行している[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]Enterprise Agreement を使用して azure
+>  または
+> 
+> - 実行している[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]Enterprise Agreement を使用して azure
 > 
 > [!INCLUDE[featurepack1](../includes/featurepack1.md)]その他のでは使用できません[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]edition、またはその他の[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]バージョン。 
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 
 ## <a name="feature-pack-1-updates"></a>機能パック 1 の更新
 
-#### <a name="send-tracking-data-to-application-insightscoresend-tracking-data-to-azure-application-insights-using-biztalk-servermd"></a>[追跡データを Application Insights に送信します。](../core/send-tracking-data-to-azure-application-insights-using-biztalk-server.md)
+#### <a name="send-tracking-data-to-application-insightscoresend-tracking-data-to-azure-application-insights-using-biztalk-servermd"></a>[追跡データを Application Insights に送信する](../core/send-tracking-data-to-azure-application-insights-using-biztalk-server.md)
 
 追跡データを分析、機械学習、診断などの機能を使用する Azure Application Insights に送信します。 
 
