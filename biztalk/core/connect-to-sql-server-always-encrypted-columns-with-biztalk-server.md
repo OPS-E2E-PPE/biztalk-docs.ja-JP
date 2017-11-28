@@ -1,7 +1,7 @@
 ---
 title: "BizTalk Server と SQL Server の Always Encrypted の列への接続 |Microsoft ドキュメント"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -9,14 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: fcc20a2b-daf9-4b7f-ae61-cb408e4bd04c
 caps.latest.revision: "4"
-author: tordgladnordahl
-ms.author: tonordah
+author: MandiOhlinger
+ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62b570fabda6a0e46f87c36b863e2b99e464020b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5e117bd91176589e998fc01eb2c613ac0da2bbc
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="connect-to-sql-server-always-encrypted-columns-with-biztalk-server"></a>BizTalk Server と SQL Server の Always Encrypted の列への接続します。
 WCF-SQL アダプターで Always Encrypted が有効に[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]を暗号化された列を照会します。  
@@ -29,7 +29,7 @@ WCF-SQL アダプターで Always Encrypted が有効に[!INCLUDE[btsBizTalkServ
 > [Always Encrypted (データベース エンジン)](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine)を理解し、詳細については、優れたリソース[!INCLUDE[btsSQLServerNoVersion_md](../includes/btssqlservernoversion-md.md)]機能します。
 
 ## <a name="prerequisites"></a>前提条件
-インストール[機能パック 1](https://www.microsoft.com/download/details.aspx?id=55100)上、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]です。
+インストール[Feature Pack 2](https://aka.ms/bts2016fp2)上、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]です。
 
 ## <a name="enable-always-encrypted"></a>Always Encrypted を有効にします。
 

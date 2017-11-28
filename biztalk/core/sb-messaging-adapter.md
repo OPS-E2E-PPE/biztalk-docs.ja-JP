@@ -1,7 +1,8 @@
 ---
-title: "Sb-messaging アダプター |Microsoft ドキュメント"
+title: "Service Bus メッセージング アダプター |Microsoft ドキュメント"
+description: "BizTalk Server で Azure Sb-messaging アダプターを使用してメッセージの送受信を行う"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/21/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,17 +13,24 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fb2eb8f532d72708dfca199f0eef794afdf77df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1775606a911d8ce23fd2999ad367053c4f8f72de
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="sb-messaging-adapter"></a>SB-Messaging アダプター
-Service Bus (**Sb-messaging**) を受信し、キュー、トピック、およびリレーなどの Service Bus エンティティから送信アダプターを使用します。 使用することができます、 **Sb-messaging**アダプター間の接続を確立する[!INCLUDE[winazure](../includes/winazure-md.md)]と内部設置型[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]これにより、一般的なハイブリッド アプリケーションを作成するユーザーを有効にするとします。 このセクションのトピックでは、手順を構成する方法について説明、 **Sb-messaging**受信場所および送信ポートを受信し、Service Bus エンティティからメッセージを送信します。  
+Service Bus (**Sb-messaging**) を受信し、キュー、トピック、およびリレーなどの Service Bus エンティティから送信アダプターを使用します。 使用することができます、 **Sb-messaging**アダプター、内部設置型の接続を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を Azure にします。
 
-## <a name="before-you-get-started"></a>始める前に
-Service Bus の認証に 2 つのメソッドを提供します。 アクセス制御サービス (ACS) と Shared Access Signature (SAS)。 Service Bus の認証に Shared Access Signature (SAS) を使用するにはお勧めします。 共有アクセス キー値として記載されて、 [Azure ポータル](https://portal.azure.com)です。
+**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]Feature Pack 2**、Service Bus Premium がサポートされています。 このアダプターを使用して送信ポートを構成するときに、パーティション分割されたキューおよびトピックにメッセージを送信することができます。 
+
+## <a name="authenticating-with-service-bus"></a>Service Bus を使用した認証
+Service Bus の認証に 2 つの方法を示します。 
+
+- アクセス制御サービス (ACS) 
+- Shared Access Signature (SAS)
+
+Service Bus での認証に Shared Access Signature (SAS) を使用することをお勧めします。 共有アクセス キー値として記載されて、 [Azure ポータル](https://portal.azure.com)です。
 
 Service Bus 名前空間を作成するときに、アクセス制御 (ACS) 名前空間は自動的に作成されません。 アクセス制御を使用して、この名前空間の発行者名および発行者キーの値が必要です。 これらの値は、Windows PowerShell を使用して、新しい ACS 名前空間を作成するときに使用できます。 これらの値は、Azure ポータルでは表示されません。
 
@@ -49,25 +57,20 @@ Service Bus 名前空間を作成するときに、アクセス制御 (ACS) 名�
     ConnectionString      : Endpoint=sb://biztalksbnamespace.servicebus.windows.net/;SharedSecretIssuer=owner;SharedSecretValue=abcdefghijklmnopqrstuvwxyz
     NamespaceType         : Messaging
     ```
-[新しい AzureSBNamespace](https://msdn.microsoft.com/library/dn495165.aspx)
+
+参照してください[New-azuresbnamespace](https://docs.microsoft.com/powershell/module/Azure/New-AzureSBNamespace)のガイダンスについてはします。
 
 ## <a name="receive-messages-from-service-bus"></a>Service Bus からメッセージを受信します。
   
-このセクションで構成する方法に関する情報を提供する、 **Sb-messaging**受信場所を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
-  
-> [!NOTE]
->  次の手順を完了する前にする必要がありますが既に追加して、一方向受信ポート。 参照してください[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)です。  
+1. BizTalk Server 管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**、し、アプリケーションを展開します。 
 
- 
-1.  BizTalk Server 管理コンソールで、 [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**アプリケーションを展開し、受信場所を作成する です。  
+2. 右クリック**受信ポート****新規**を選択し、**一方向受信ポート**です。 
+
+3. クリックし、名前を付けます**受信場所**です。 
+
+4. 選択**新規**、付けます、**名前**です。 **トランスポート**セクションで、 **Sb-messaging**から、**型**クリックしてドロップダウン リスト、**構成**です。  
   
-2.  左側のウィンドウで、[ **受信ポート** ] ノードをクリックし、右側のウィンドウで、新しい受信場所に関連付ける受信ポートを右クリックし、[ **プロパティ**] をクリックします。  
-  
-3.  [ **受信ポートのプロパティ** ] ダイアログ ボックスの左側のウィンドウで [ **受信場所**] を選択し、右側のウィンドウで [ **新規作成** ] をクリックして、新しい受信場所を作成します。  
-  
-4.  **受信場所のプロパティ** ダイアログ ボックスで、**トランスポート**セクションで、 **Sb-messaging**から、**型**ドロップダウン リスト、をクリックして**構成**受信場所のトランスポートのプロパティを構成します。  
-  
-5.  **Sb-messaging トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、次の操作します。  
+5. 構成、**全般**プロパティ。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
@@ -78,27 +81,28 @@ Service Bus 名前空間を作成するときに、アクセス制御 (ACS) 名�
     |**プリフェッチ数**|Service Bus キューまたはトピックから同時に受信するメッセージの数を指定します。 プリフェッチにより、キューまたはサブスクリプション クライアントは、受信操作を実行するときにサービスから追加のメッセージを読み込むことができます。 クライアントはこれらのメッセージをローカル キャッシュに格納します。 キャッシュのサイズは、ここで指定する [プリフェッチ数] プロパティの値によって決まります。<br /><br /> 詳細については、セクションを参照してください「プリフェッチ」 [https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements/](https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements/)<br /><br /> **既定値:** -1|  
     |**セッションを使用します。**|Service Bus セッションを使用してキューまたはサブスクリプションからメッセージを受信する場合は、このチェック ボックスをオンにします。|  
   
-6.  **認証** タブで、次の操作します。  
+6.  構成、**認証**プロパティ。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
     |**アクセス制御サービス**|認証に ACS を使用するにはこれを選択して次の値を指定します:<br /><br /> Service Bus アクセス制御サービス STS URI を入力します。 通常、URI は次のような形式になっています。<br /><br /> `https://<namespace>-sb.accesscontrol.windows.net/`<br /><br /> Service Bus 名前空間の発行者名を入力します。<br /><br /> Service Bus 名前空間の発行者キーを入力します。|  
     |**Shared Access Signature** (で始まる新しい[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)])|認証に Shared Access Signature (SAS) を使用する場合はこれを選択し、SAS キーの名前とキーの値を指定します。|  
   
-7.  **プロパティ** タブで、**ブローカー メッセージのプロパティの Namespace**フィールドに、アダプターのメッセージ コンテキスト プロパティとしてブローカー メッセージのプロパティを作成に使用する名前空間を指定受信したメッセージ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 さらに、仲介型メッセージのプロパティを昇格する場合は、選択、**仲介型メッセージ プロパティの昇格**チェック ボックスをオンします。  
+7.  **プロパティ**] タブの [、**ブローカー メッセージのプロパティの Namespace**、アダプターのメッセージ コンテキスト プロパティとしてブローカー メッセージのプロパティを作成に使用する名前空間を入力しますによって受信されたメッセージ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 仲介型メッセージのプロパティを昇格する場合は、選択、**仲介型メッセージ プロパティの昇格**チェック ボックスをオンします。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** を選択します。  
   
-9. [ **受信場所のプロパティ** ] ダイアログ ボックスで、受信場所を構成するための適切な値を入力し、[ **OK** ] をクリックして設定を保存します。 については、**受信場所のプロパティ**ダイアログ ボックスを参照してください[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)です。  
+9. 選択、**受信ハンドラー**、および**受信パイプライン**です。 **[OK]** を選択して変更を保存します。 [受信場所を作成](../core/how-to-create-a-receive-location.md)のガイダンスを紹介します。  
   
 ## <a name="send-messages-to-service-bus"></a>Service Bus にメッセージを送信します。
-このセクションで構成する方法に関する情報を提供する、 **Sb-messaging**送信ポートを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
   
-1.  BizTalk Server 管理コンソールで、新しい送信ポートを作成または変更する既存の送信ポートをダブルクリックします。 詳細については、次を参照してください。[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)です。 すべての送信ポートのオプションを構成し、指定**Sb-messaging**の**型**オプション、**トランスポート**のセクションで、**全般**タブ  
+1.  BizTalk Server 管理コンソールを右クリックして**送信ポート****新規**を選択し、**静的な一方向送信ポート**です。
+
+    [送信ポートを作成](../core/how-to-create-a-send-port2.md)のガイダンスを紹介します。
+
+2. 入力、**名前**です。 **トランスポート**、設定、**型**に**Sb-messaging**を選択して**構成**です。 
   
-2.  **全般**] タブの [、**トランスポート**セクションで、をクリックして、**構成**ボタンをクリックします。  
-  
-3.  **Sb-messaging トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、次の指定します。  
+3.  構成、**全般**プロパティ。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
@@ -108,18 +112,18 @@ Service Bus 名前空間を作成するときに、アクセス制御 (ACS) 名�
     |**送信タイムアウト**|送信操作が完了するまでの時間を示す期間値を指定します。<br /><br /> **既定値:** 1 分|  
     |**クローズ タイムアウト**|チャネルを閉じる操作が完了するまでの時間を示す期間値を指定します。<br /><br /> **既定値:** 1 分|  
   
-4.  **認証** タブで、次の操作します。  
+4.  構成、**認証**プロパティ。 
   
     |プロパティ|目的|  
     |--------------|----------------|  
     |**アクセス制御サービス**|認証に ACS を使用するにはこれを選択して次の値を指定します:<br /><br /> Service Bus アクセス制御サービス STS URI を入力します。 通常、URI は次のような形式になっています。<br /><br /> `https://<namespace>-sb.accesscontrol.windows.net/`<br /><br /> Service Bus 名前空間の発行者名を入力します。<br /><br /> Service Bus 名前空間の発行者キーを入力します。|  
     |**Shared Access Signature** (で始まる新しい[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)])|認証に Shared Access Signature (SAS) を使用する場合はこれを選択し、SAS キーの名前とキーの値を指定します。|  
   
-5.  **プロパティ**] タブの [、 **Namespace のユーザーには、ブローカー メッセージのプロパティが定義されている**フィールドに、として記述する BizTalk メッセージ コンテキスト プロパティを含む名前空間の指定ユーザー定義ブローカー メッセージのプロパティ、Service Bus キューに送る送信メッセージにします。 この名前空間に属しているすべてのプロパティは、ユーザー定義ブローカー メッセージのプロパティとしてメッセージに書き込まれます。 アダプターは、プロパティをブローカー メッセージのプロパティとして書き込むときに、この名前空間を無視します。 この名前空間は、書き込むプロパティを確認するためにのみ使用されます。  
+5.  **プロパティ** タブで、入力、 **Namespace のユーザーには、ブローカー メッセージのプロパティが定義されている**への送信メッセージを記述する BizTalk メッセージ コンテキスト プロパティを格納しています。Service Bus。 名前空間のすべてのプロパティは、ユーザー定義ブローカー メッセージのプロパティとしてメッセージに書き込まれます。 アダプターは、プロパティをブローカー メッセージのプロパティとして書き込むときに、この名前空間を無視します。 この名前空間は、書き込むプロパティを確認するためにのみ使用されます。  
   
-     BrokeredMessage プロパティの値を指定することもできます。 プロパティの詳細については、次を参照してください。 [BrokeredMessage プロパティ](https://msdn.microsoft.com/library/azure/microsoft.servicebus.messaging.brokeredmessage_properties.aspx)です。  
+     BrokeredMessage プロパティの値を入力することもできます。 これらのプロパティが説明されている[BrokeredMessage プロパティ](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.brokeredmessage)など、**パーティション キー**です。
   
-6.  をクリックして**[ok]**と**OK**もう一度設定を保存します。  
+6.  **[OK]** を選択して変更を保存します。  
   
 ## <a name="see-also"></a>参照
 [アダプターを使用します。](../core/using-adapters.md)

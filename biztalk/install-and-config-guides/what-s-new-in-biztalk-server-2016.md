@@ -1,8 +1,9 @@
 ---
-title: "どのような &#39; BizTalk Server 2016 の |Microsoft ドキュメント"
+title: "BizTalk Server 2016 の新機能 |Microsoft ドキュメント"
+description: "変更および強化、feature pack、アダプター、セキュリティ、追跡、パフォーマンス、および BizTalk Server 2016 での詳細を含む"
 ms.custom: 
 ms.prod: biztalk-server
-ms.date: 06/08/2017
+ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -12,22 +13,23 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f4b4b9d7f06bb74e0270d8d1bb232067c37ef12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa8e28b3c54afd130176e9bb19b2e0b1a59415d0
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="what39s-new-in-biztalk-server-2016"></a>どのような &#39; BizTalk Server 2016 の新機能として s
+# <a name="whats-new-in-biztalk-server-2016"></a>BizTalk Server 2016 の新機能
 [!INCLUDE[bts2016](../includes/bts2016-md.md)] の新機能について確認します。 
   
-## <a name="whats-new-in-biztalk-server-2016"></a>BizTalk Server 2016 の新機能  
+## <a name="new-in-biztalk-server-2016"></a>BizTalk Server 2016 の新機能  
   
 |機能|説明|  
 |-------------|-----------------|  
 |新しいプラットフォームのサポート|[!INCLUDE[bts2016](../includes/bts2016-md.md)] では、次の Microsoft プラットフォームのサポートを追加します。<br /><br /> -   Visual Studio 2015<br />-   Windows Server 2016<br />-   [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)]<br />-   Office 2016<br/><br/>[BizTalk Server 2016 のハードウェア/ソフトウェア要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)|  
+| Feature Pack 2 | 機能強化には、Azure Event Hubs アダプター、Azure blob ストレージ アカウント、サービス バスは、パーティションのサポートへのバックアップに API Management の近くの統合が含まれます。 <br/><br/>[Feature Pack のインストール](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[新機能が含まれている場合、およびその機能の構成を参照してください。](../core/configure-the-feature-pack.md) |
 | Feature Pack 1 | VSTS を使用しての自動展開のサポート、Azure Application Insights および Power BI への追跡データの送信、受信場所の高度なスケジュール オプションなどが含まれます。<br/><br/>[Feature Pack のインストール](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[新機能が含まれている場合、およびその機能の構成を参照してください。](../core/configure-the-feature-pack.md) |
-|[!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn 可用性グループ|サポートは次のとおりです。<br /><br /> -   オンプレミスおよび [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS 仮想マシンでの使用<br />-   運用環境のワークロード向けの使用<br />-   [!INCLUDE[winazure](../includes/winazure-md.md)] での高可用性 (HA) ソリューションを提供 <br/><br/>[SQL Server AlwaysOn を使用した高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> SQL 固有の要件および機能については、SQL Server のドキュメント内の [Always On AG での分散トランザクション](https://msdn.microsoft.com/library/ms366279.aspx)に関する記事を参照してください。|  
+|[!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn 可用性グループ|サポートは次のとおりです。<br /><br /> -   オンプレミスおよび [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS 仮想マシンでの使用<br />-   運用環境のワークロード向けの使用<br />-   [!INCLUDE[winazure](../includes/winazure-md.md)] での高可用性 (HA) ソリューションを提供 <br/><br/>[SQL Server AlwaysOn を使用した高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> 参照してください[分散トランザクションを常に AG](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring)任意の SQL 固有の要件と機能します。|  
 |運用環境の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Azure VM|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の Azure Virtual Machines が、運用環境で完全にサポートされるようになりました。 [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn を使用した高可用性ソリューションが実現可能になりました。<br/><br/>[SQL Server AlwaysOn を使用した高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)|  
 |ロジック アプリのアダプター|Azure でホストされている Logic Apps に接続し、Salesforce、SharePoint、CRM Online などのすべてのコネクタにアクセスします。 たとえば、BizTalk Server で注文を受信したり、ロジック アプリに接続したり、Salesforce を更新したりすることができます。<br/><br/>[ロジック アプリのアダプター](../core/logic-app-adapter.md)|  
 | ファイル アダプター | Azure Storage のファイル共有に接続します。 Azure のファイル共有からファイルを受信し、メッセージを Azure のファイル共有に送信できます。 <br/><br/>[ファイル アダプターを構成する](../core/configure-the-file-adapter.md)|
@@ -44,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 |BizTalk 管理|最新の外観に加えて、次のような追加の変更があります。<br /><br /> -   複数のホスト/ホスト インスタンスの設定を同時に構成します。 たとえば、複数のホスト インスタンスの .NET CLR 設定を同時に設定できます。<br />-   新しい検索機能を使用して、スキーマ、リソースなどのアプリケーションのアイテムをフィルター処理して見つけます。<br />-   保留中のメッセージをトラブルシューティングするときに、複数の保留メッセージを同時に 1 つのファイルに保存できます。<br /><br />[BizTalk Server 管理コンソールの使用](../core/using-the-biztalk-server-administration-console.md)|  
 |追加の更新プログラム|<ul><li>[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../includes/hl7-currentversion-firstref-md.md)] が基幹業務 (LOB) サーバーへの接続を開始し、その接続経由でメッセージをプッシュします。 LOB は接続を待機して、メッセージを送信します。 <br/><br/>これまでのバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の HL7 MLLP 受信アダプターは、LOB サーバーが HL7 に接続するのを待ってから、メッセージを送信していました。 LOB は HL7 に接続してから、メッセージを送信します。 </li><br/><li>Office Web コンポーネント (OWC) のインストールは省略可能になり、[プログラム] のリストで別に表示されています</li><br/><li>オーケストレーション インスタンス ID が XLANG FireEvent トレース出力に追加されます</li></ul>|   
   
-### <a name="deprecated--removed-list"></a>廃止予定と削除の一覧  
+## <a name="deprecated--removed-list"></a>廃止予定と削除の一覧  
   
 |プログラム|Status|代替|  
 |-------------|------------|-----------------|  
@@ -58,5 +60,10 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  これらの廃止機能の一部は、新しいバージョンの BizTalk に搭載されている場合があります。 そのような場合、次の点を考慮してください。  
 >   
->  -   機能が BizTalk 内で内部的に使用され、顧客のソリューションでの使用が考慮されていない場合があります。 その場合、顧客のソリューションではサポートされません。  
-> -   インターフェイスが Microsoft によって変更されており、公開できない場合があります。
+> -   機能は、BizTalk、内で内部的に使用される可能性があり、顧客のソリューションで使用するものではありません。 その場合、顧客のソリューションではサポートされません。  
+> -   インターフェイスは、Microsoft によって変更されている可能性があり、公開されていない場合があります。
+
+## <a name="next-steps"></a>次の手順
+[ハードウェアとソフトウェアの要件](hardware-and-software-requirements-for-biztalk-server-2016.md)  
+[セットアップおよびインストールの前提条件](set-up-and-install-prerequisites-for-biztalk-server-2016.md)  
+[BizTalk をインストールします。](install-biztalk-server-2016.md)

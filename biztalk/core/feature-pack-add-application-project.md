@@ -2,7 +2,7 @@
 title: "手順 1 - アプリケーションのプロジェクトと更新プログラムの json の追加 |Microsoft ドキュメント"
 description: "Visual Studio で、BizTalk Server アプリケーション プロジェクトを追加し、Dll、バインド ファイル、およびアプリケーションの Visual Studio Team Services の配置シーケンスで BizTalkServerInventory.json ファイルを更新"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46cb8a2072280e62cd8c3438521531f8cf3b55aa
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: a8d4b9773c9c7b23715b5ddae29c3c97f381da5e
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-1-add-the-biztalk-server-application-project-in-visual-studio"></a>手順 1: Visual Studio での BizTalk Server アプリケーション プロジェクトを追加します。
 
@@ -29,7 +29,7 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
 * 準備ができて、BizTalk プロジェクトに、XML バインド ファイルにパスがあります。 
 * VSTS アカウントや、コレクション、チーム プロジェクトの詳細を確認します。
 * 複製のリポジトリの操作など、git の概念を理解します。 
-* 必ず[機能パック 1](https://www.microsoft.com/download/details.aspx?id=55100)がインストールされています。
+* 必ず[Feature Pack 2](https://aka.ms/bts2016fp2)がインストールされています。
 
 ## <a name="add-the-application-project"></a>アプリケーション プロジェクトを追加します。
 
@@ -43,7 +43,7 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
 
     ![アプリケーション プロジェクトを追加します。](../core/media/add-application-project.png)
 
-5. ソリューション エクスプ ローラーで、新しく追加したアプリケーション プロジェクト (.btaproj) を右クリックし、選択**追加****参照**です。 展開して、**プロジェクト**タブをクリックし、BizTalk プロジェクト (VSTS を使用して配置するプロジェクト) を確認します。 **[ OK]** を選択します。  
+5. ソリューション エクスプ ローラーで、新しく追加したアプリケーション プロジェクト (.btaproj) を右クリックし、選択**追加****参照**です。 展開して、**プロジェクト**タブをクリックし、BizTalk プロジェクト (VSTS を使用して配置するプロジェクト) を確認します。 **[OK]** を選択します。  
     追加されると、展開**参照**追加したばかりの BizTalk プロジェクトを表示するアプリケーション プロジェクト (例: appProjectHelloWorld) の下。 
 
 6. ソリューション エクスプ ローラーで、アプリケーション プロジェクト (.btaproj) を右クリックし、選択**追加****既存項目の**と**追加**バインディングは、XML ファイルです。
@@ -52,6 +52,9 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
 
     ![バインド ファイルのプロパティ](../core/media/xml-binding-file-properties.png)
 
+8. 省略可。 新しく追加したアプリケーション プロジェクトを右クリックし **プロパティ**です。 カスタマイズ、**アプリケーション名**BizTalk 管理コンソールに表示します。  
+
+    ![アプリケーション名](../core/media/application-project-name.png)
 
 ## <a name="configure-the-json-template"></a>JSON テンプレートを構成します。
 
@@ -140,7 +143,7 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
 
     ![Team Services に接続します。](../core/media/connect-team-services.png)
 
-10. VSTS アカウントをコレクションとチーム プロジェクトを選択します。 **[ OK]** を選択します。 VSTS アカウントをまだ作成していない場合、作成 ([手順 2: VSTS トークンを作成する](feature-pack-create-vsts-token.md)のガイダンスを示します)。 作成後は、この手順に戻って、接続します。  
+10. VSTS アカウントをコレクションとチーム プロジェクトを選択します。 **[OK]** を選択します。 VSTS アカウントをまだ作成していない場合、作成 ([手順 2: VSTS トークンを作成する](feature-pack-create-vsts-token.md)のガイダンスを示します)。 作成後は、この手順に戻って、接続します。  
 
     ![コレクションとプロジェクトを選択します。](../core/media/team-collections-projects.png)
 
@@ -159,7 +162,7 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
 
 ## <a name="what-you-did"></a>どのような
 
-BizTalk プロジェクトでは、BizTalk アプリケーション プロジェクト (.btaproj) を追加します。 このプロジェクトは、VSTS を使用して、BizTalk Server プロジェクトの配置の自動化に使用されます。 アプリケーション プロジェクトを作成した後、BizTalk アプリケーションのプロジェクトへの参照を追加します。 次に、どのような Dll を使用するにはバインド ファイルを展開して、アプリケーションを展開する順序は、自動展開を指示する JSON ファイルを更新します。 
+BizTalk プロジェクトでは、BizTalk アプリケーション プロジェクト (.btaproj) を追加します。 このプロジェクトは、VSTS を使用して、BizTalk Server プロジェクトの配置の自動化に使用されます。 アプリケーション プロジェクトを作成した後、BizTalk プロジェクトへの参照が追加されます。 次に、どのような Dll を使用するにはバインド ファイルを展開して、アプリケーションを展開する順序は、自動展開を指示する JSON ファイルを更新します。 
 
 ## <a name="next-steps"></a>次の手順
 [手順 2: VSTS トークンを作成します。](feature-pack-create-vsts-token.md)  

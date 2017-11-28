@@ -13,11 +13,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7afe600ae96e624db0acb2f87f6ba131b3e101bd
-ms.sourcegitcommit: 2330f1eaa6a7bb09975c9e07e56c6595229fd423
+ms.openlocfilehash: 88b036aaeb50c2997e1c6b49ae1788a488be1b1a
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="configure-the-power-bi-operational-data-feed-in-biztalk-server"></a>Power BI の運用データを BizTalk Server でフィードを構成します。
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="prerequisites"></a>前提条件
 * ダウンロードしてインストール[Power BI Desktop](https://powerbi.microsoft.com/desktop/)ネットワーク アクセス権を持つ任意のコンピューターで、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
-* インストール[機能パック 1](https://www.microsoft.com/download/details.aspx?id=55100)で、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* インストール[Feature Pack 2](https://aka.ms/bts2016fp2)で、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * IIS をインストール、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]です。 ほとんどの[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]環境では、IIS が既にインストールされています。 参照してください[Hardware and Software Requirements for BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)です。 開くことによって IIS がインストールされていることを確認**インターネット インフォメーション サービス マネージャー**です。 
 * 省略可。 インストールし、構成、 [Power BI Gateway](https://powerbi.microsoft.com/gateway/)接続[PowerBI.com](http://powerbi.microsoft.com)内部設置型の BizTalk Server とします。 オンプレミス BizTalk Server を使用していない場合は、ゲートウェイを必要ありません。
 

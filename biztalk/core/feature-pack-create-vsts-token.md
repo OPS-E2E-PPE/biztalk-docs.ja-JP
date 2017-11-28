@@ -2,7 +2,7 @@
 title: "手順 2 - VSTS トークンを作成してエージェントのインストール |Microsoft ドキュメント"
 description: "複製を作成、VSTS セキュリティのアクセス トークン、VSTS プロジェクトを Visual Studio にし、BizTalk Server プロジェクトの展開を自動化するビルド エージェントをインストール"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46047f0bb6a536642d503d68bb4f9161ecdf7fc5
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: 77296d9f2325bebaba4f4fa1ce7c55034ef1ead6
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-2-create-the-token--install-the-agent"></a>手順 2: トークンを作成して (&)、エージェントのインストール
 
@@ -24,6 +24,9 @@ ms.lasthandoff: 11/09/2017
 PAT について詳しくは[VSTS と TFS の個人用アクセス トークンによるアクセスの認証](https://docs.microsoft.com/vsts/accounts/use-personal-access-tokens-to-authenticate)です。 
 
 トークンを作成した後は、ビルド エージェントをインストールして、このトークンを使用するように構成します。 
+
+## <a name="before-you-begin"></a>アンインストールの準備
+完全な[ステップ 1 - 追加のアプリケーション プロジェクトと json を更新](feature-pack-add-application-project.md)です。
 
 ## <a name="sign-into-vsts-and-create-the-token"></a>VSTS にサインインし、トークンの作成
 1. 移動して[https://app.vsaex.visualstudio.com/go/profile](https://app.vsaex.visualstudio.com/go/profile)、および職場または学校のアカウントでサインインします。 サインインした後、VSTS アカウントが一覧表示します。 次の例では、アカウントは**mandiaprojects.visualstudio.com**です。  
@@ -61,7 +64,7 @@ PAT について詳しくは[VSTS と TFS の個人用アクセス トークン�
 
 ## <a name="install-the-build-agent"></a>ビルド エージェントをインストールします。
 
-ビルド エージェントは、BizTalk 開発用コンピューターにインストールされます。 
+ビルド エージェントは、BizTalk 開発用コンピューターにインストールされます。 展開グループを使用する場合を展開するすべての BizTalk server でビルド エージェントがインストールされています。 次の手順では、1 台のコンピューターにビルド エージェントをインストールする方法を示します。 展開グループの使用に関する詳細については、「[展開グループ](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/index)です。
 
 1. VSTS アカウントとは何か、プロジェクトを開くなどの*https://YourAccountName.visualstudio.com/MyFirstProject*です。 設定アイコンを選択し、選択**エージェント キュー**:  
 

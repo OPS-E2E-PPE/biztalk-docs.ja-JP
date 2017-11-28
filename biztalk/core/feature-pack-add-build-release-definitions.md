@@ -2,7 +2,7 @@
 title: "手順 3 - ビルドとリリース定義を作成 |Microsoft ドキュメント"
 description: "Vsts、git または TFS リポジトリ内のプロジェクトをビルドし、BizTalk Server アプリケーションを配置するリリース定義を作成するビルド定義を作成します。"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,15 +11,18 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de86d35fd615d8c0f1eee1127804645067c4bf6e
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>手順 3: ビルドを作成し、リリース定義
 
 ビルドとリリース定義 Visual Studio Team Services となる作業は、おそらく VSTS 管理者が行う必要があります。ビルド定義が、git リポジトリ内で、プロジェクトをビルドし、リリース定義は、BizTalk Server 環境に展開します。 
+
+## <a name="before-you-begin"></a>アンインストールの準備
+完全な[エージェントをインストールして、手順 2 - 作成 VSTS トークン](feature-pack-create-vsts-token.md)です。
 
 ## <a name="add-the-build-tasks"></a>ビルド タスクを追加します。
 1. プロジェクトで、次のように選択します。**ビルドとリリースの**します。 [ビルド] タブを開きます。 作成、**新規**定義。
@@ -50,7 +53,7 @@ ms.lasthandoff: 11/09/2017
 
     ![VS ビルド タスクを追加します。](../core/media/vsts-add-publish-build-task.png)
 
-7. 選択、**成果物の発行**タスク、および優先入力**表示名**です。 **を発行するパス**、select、**しています.**ボタンをクリックし、アプリケーションのプロジェクト フォルダー (例: appProjectHelloWorld) を選択します。 **[ OK]** を選択します。
+7. 選択、**成果物の発行**タスク、および優先入力**表示名**です。 **を発行するパス**、select、**しています.**ボタンをクリックし、アプリケーションのプロジェクト フォルダー (例: appProjectHelloWorld) を選択します。 **[OK]** を選択します。
 
 8. **成果物名**任意に指定することができます。 選択**保存**です。 
 
@@ -88,7 +91,11 @@ ms.lasthandoff: 11/09/2017
 
 7. 選択、**展開**タスク、および値を入力します。 
 
-    **操作名**: 選択**新しい BizTalk アプリケーションを作成する**です。 このオプションは、新しいアプリケーションを展開します。 アプリケーションが既に存在する場合、その (完全に停止)、現在のアプリケーションをアンインストールし、新しいアプリケーションをインストールします。 継続的な統合が有効になっているでは、リポジトリで更新されるときに、そのアプリケーションが自動的に再です。 **既存の BizTalk アプリケーションを更新して**スキーマなどの変更を既に実行中のアプリケーションに追加します。 アプリケーションの完全再展開は必要ありません。
+    **操作名**: オプション: ***新しい BizTalk アプリケーションを作成する**: 新しいアプリケーションを展開します。 アプリケーションが既に存在する場合、その (完全に停止)、現在のアプリケーションをアンインストールし、新しいアプリケーションをインストールします。 継続的な統合が有効になっているでは、リポジトリで更新されるときに、そのアプリケーションが自動的に再です。 
+        * **既存の BizTalk アプリケーションを更新して**: スキーマなどの変更を既に実行中のアプリケーションに追加します。 アプリケーションの完全再展開は必要ありません。
+        * **BizTalk Server アプリケーションをインストール**:[アプリケーションをインストールする](../core/how-to-install-a-biztalk-application.md)、BizTalk 管理のコンピューター名、および展開パッケージのパスを入力するとします。
+
+        ![Deploy operations](../core/media/vsts-deploy-operations.png)
 
     **アプリケーション名**: 入力したテキストが BizTalk 管理コンソールでアプリケーション名になります。 **いない**BizTalk アプリケーション 1 を入力します。
 

@@ -1,8 +1,8 @@
 ---
-title: "追跡データを Azure Application Insights に送信 |Microsoft ドキュメント"
-description: "BizTalk Server で Azure Application Insights による追跡データの分析を有効にする feature pack をインストールします。"
-ms.custom: fp1
-ms.date: 11/06/2017
+title: "Application Insights または Event Hubs へのデータの追跡 |Microsoft ドキュメント"
+description: "Azure の Application Insights または BizTalk Server で Azure Event Hubs での追跡データの分析を有効にする feature pack をインストールします。"
+ms.custom: fp1, fp2
+ms.date: 11/16/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -13,52 +13,67 @@ caps.latest.revision: "10"
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a65ffd2c5ee76d857effde6ab82dddf17b3de4b
-ms.sourcegitcommit: 30189176c44873e3de42cc5f2b8951da51ffd251
+ms.openlocfilehash: 7a6fe0c50527f51b599bca5f51c7b8ed8fb7313e
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="send-tracking-data-to-azure-application-insights-using-biztalk-server"></a>BizTalk Server を使用して Azure Application Insights に追跡データを送信します。
+# <a name="send-biztalk-tracking-data-to-azure-application-insights-or-event-hubs"></a>BizTalk 追跡データを Azure の Application Insights または Event Hubs の送信します。
 
-**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**を処理し、追跡データを Azure Application Insights に送信することができます。 Application Insights の機能を使用すると、受信ポート、送信ポート、およびオーケストレーションからのインスタンスを追跡できます。
+**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**を処理し、追跡データを Azure Application Insights に送信することができます。 
           
-> [!IMPORTANT]
-> この機能は、現在、という名前の SQL インスタンスでは使用されません。
+**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]Feature Pack 2**:
+
+* Application Insights は、既定の SQL インスタンスと名前付きインスタンスの SQL サポートしています。
+* プロセスおよび追跡データを Azure Event Hubs に送信できます。
+
+受信ポート、送信ポート、およびオーケストレーションからのインスタンスを追跡するには、これらの Azure サービスを使用します。
 
 ## <a name="prerequisites"></a>前提条件
-* 新しいインスタンスを作成する[Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource)です。 そのプロパティでは、コピー、**インストルメンテーション キー**です。 準備する必要は、別のファイルに貼り付けます。 BizTalk Server 内でこのキーを使用します。 
-* インストール[機能パック 1](https://www.microsoft.com/download/details.aspx?id=55100)で、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* 新しいインスタンスを作成する[Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource)です。 BizTalk Server を使用して、**インストルメンテーション キー**を認証します。
+* 作成、 [Azure Event Hubs の名前空間とイベント ハブ](https://docs.microsoft.com/azure/event-hubs/event-hubs-create)です。 BizTalk Server では、SAS (名前空間レベル) またはイベント ハブ レベルのポリシーを使用して、認証します。
+* インストール[Feature Pack 2](https://aka.ms/bts2016fp2)で、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 
 ## <a name="enable-analytics-for-your-environment"></a>環境の分析を有効にします。
 
 1. 開く、 **BizTalk Server 管理コンソール**コンソールで、右クリックし、 **BizTalk グループ**を選択して**設定**です。 
 2. 確認**グループ レベルの分析を有効にする**です。
-3. **ターゲット型** **Application Insight**一覧からです。
-4. **接続パラメーター**、入力、Application Insights **[インストルメンテーション キー](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource)**  (Azure ポータルで使用可能)。 グループの設定は、次のようになります。 
-
+3. **ターゲット型** **Application Insight**または**Event Hub**一覧からです。
     ![環境の分析を有効にします。](../core/media/environmentsettingapplicationinishgt.PNG)
+
+4. **接続パラメーター**、select、**しています.**ボタン、および**サインイン**Azure アカウントにします。  
+
+    **Application Insights 用**  
+    選択、**サブスクリプション**、**リソース グループ**と、Application Insights インスタンス。
+
+    ![環境の分析を有効にします。](../core/media/analytics-group-application-insights.png)
+
+    **イベント ハブの**  
+    選択、**サブスクリプション**、**リソース グループ**、Event Hub の名前空間、およびイベント ハブ。 認証の場合は、名前空間レベル、またはイベント ハブ レベルでもエンティティの署名でアクセス署名 (SAS) を使用できます。 使用可能なキーに問題が自動的に入力されます内で構成した値[Azure](https://portal.azure.com)です。
+
+    ![環境の分析を有効にします。](../core/media/send-tracking-data-to-azure.png)
 
 5. **[OK]** を選択して変更を保存します。 
 
-有効にすると、 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] Application Insights にデータを送信する準備ができました。 次に、ポートやオーケストレーションに対する分析を有効にします。 
+有効にすると、 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] Azure リソースへのデータを送信する準備ができました。 次に、ポートやオーケストレーションに対する分析を有効にします。 
 
 ## <a name="enable-analytics-on-your-artifacts"></a>アイテムに対する分析を有効にします。
 
 1. BizTalk Server 管理 を右クリックし、**受信ポート**、**送信ポート**または**オーケストレーション**を選択して**追跡**です。
-2. **分析**、確認**Analytics を有効にする**次のようなです。 この設定は、追跡と Application Insights に成果物からのデータの送信を開始します。
+2. **分析**、確認**Analytics を有効にする**次のようなです。 この設定は、追跡、および成果物から Azure リソースへのデータの送信を開始します。
     
     ![オーケストレーションの追跡データ](../core/media/orchestrationsettingsapplicationinsight.PNG)
 
 3. **[OK]** を選択して変更を保存します。
 4. 追跡ホスト インスタンスを再起動し、BizTalk アプリケーションが開始されたことを確認します。
 
-次に、データを見るための Application Insights 内のクエリを実行します。  
-
 > [!TIP]
 > 組織のデータをさらに多くの把握するためには、他のシステムと、BizTalk Server の分析結果を接続します。
 
 ## <a name="view-your-data"></a>データを表示します。
+
+#### <a name="use-application-insights"></a>Application Insights を使用します。
 Application Insights にデータが送信されると、Azure 内で分析ツールを使用して、高度なクエリを作成し、データを分析できます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)です。
@@ -72,9 +87,14 @@ Application Insights にデータが送信されると、Azure 内で分析ツ�
 > [!TIP]
 > Azure の Application Insights は、強力なツールです。 Application Insights でのクエリを作成するのに役立つリソースがある[Application Insights で分析](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)とで作業を開始する場合でも[Application Insights とは?](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)です。
 
+#### <a name="use-event-hubs"></a>Event Hubs を使用します。
+Event Hubs にデータが送信されると、複数のデータを表示する方法があります。 Event Hubs の多くのユーザーを使用しているイベント ハブをキャプチャしてストリーミング データを Azure に読み込みます。 目的は、フォーカス データ キャプチャではなく、データ処理をするのです。 [イベント ハブのキャプチャ](https://docs.microsoft.com/azure/event-hubs/event-hubs-capture-overview)しくみ、およびを設定する方法について説明します。
+
+別のオプションでは、受信ポートと、イベント ハブのアダプターを使用して受信場所を作成します。 次に、フォルダーにデータを出力することができます。 この概念は、シナリオをテストする場合に最適な可能性があります。 [イベント ハブのアダプター](event-hubs-adapter.md) Event Hubs から BizTalk Server にメッセージを受信する手順について説明します。
+
 ## <a name="where-the-data-is-stored"></a>データの格納場所
 
-Application Insights 内で、非常に早く (、数分以内)、追跡データが表示されます。 しない場合、追跡ホストの問題があります。 SQL Server で分析データは、TrackingData_2_ で、BizTalkMsgBoxDb データベースに格納*x*テーブル。 SQL Server Management Studio では、これら 4 つのテーブルで上位 1000 行を返します。 データが存在する場合、追跡ホストに移行しないデータ、BizTalkDTADb データベース。 
+Azure リソース内で、非常に早く (、数分以内)、追跡データが表示されます。 しない場合、追跡ホストの問題があります。 SQL Server で分析データは、TrackingData_2_ で、BizTalkMsgBoxDb データベースに格納*x*テーブル。 SQL Server Management Studio では、これら 4 つのテーブルで上位 1000 行を返します。 データが存在する場合、追跡ホストに移行しないデータ、BizTalkDTADb データベース。 
 
 いくつか考えられる解決策:
 
@@ -88,4 +108,4 @@ Application Insights 内で、非常に早く (、数分以内)、追跡デー�
 ここで、もう一度 BizTalkMsgBoxDb TrackingData_2_x テーブルを照会します。 テーブルが空の場合は、データは、移動され、Application Insights での表示を開始する必要があります。
     
 ## <a name="see-also"></a>参照
- [この機能パックを構成します。](../core/configure-the-feature-pack.md)
+ [インストールして、機能パックを構成する.](../core/configure-the-feature-pack.md)
