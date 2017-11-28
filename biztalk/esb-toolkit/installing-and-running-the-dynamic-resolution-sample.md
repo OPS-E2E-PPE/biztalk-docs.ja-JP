@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="two-way-messaging-scenarios"></a>双方向のメッセージング シナリオ  
  双方向のすべてのメッセージング シナリオでは、ESB のサンプルを使用します。BizTalk に要求メッセージを発行する http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx にある NorthAmericanServices Web サービスです。 Microsoft InfoPath を使用してこの Web サービスを実行できるかなどから利用可能な Storm ユーティリティを使って[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)です。  
   
- それぞれの例は、動的にサンプル ESB にメッセージを送信するエンドポイントの URL を解決します。Http://localhost/ESB.CanadianServices/SubmitPOService.asmx にある CanadianServices Web サービスです。 例を実行するか、 **submitOrder**アクションまたは**submitPurchase**解決プロセスの結果に応じて、アクション。 双方向のメッセージング シナリオの受信場所は、DynamicResolutionReqResp_SOAP です。 10 の双方向メッセージングの例は、一意なバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
+ それぞれの例は、動的にサンプル ESB にメッセージを送信するエンドポイントの URL を解決します。http://localhost/ESB.CanadianServices/SubmitPOService.asmx にある CanadianServices Web サービスです。 例を実行するか、 **submitOrder**アクションまたは**submitPurchase**解決プロセスの結果に応じて、アクション。 双方向のメッセージング シナリオの受信場所は、DynamicResolutionReqResp_SOAP です。 10 の双方向メッセージングの例は、一意なバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
   
 ## <a name="binding-files"></a>バインド ファイル  
  このサンプルのバインド ファイルは \Source\Samples\DynamicResolution\Samples\Release をという名前のフォルダーにあります。  
