@@ -1,0 +1,1 @@
+<span data-ttu-id="ce87f-101">Oracle Database アダプター</span><span class="sxs-lookup"><span data-stu-id="ce87f-101">Oracle Database adapter</span></span>

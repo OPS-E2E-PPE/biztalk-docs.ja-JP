@@ -1,0 +1,58 @@
+---
+title: "手順 4: 作成のサンプル XML BeginDoc2 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 7cdda509-085f-4485-b488-c045d589ee96
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 65598296f7136dc47c747165c9f7aba20602be4f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="step-4-create-a-sample-xml-begindoc"></a><span data-ttu-id="eefc2-102">手順 4: サンプル XML BeginDoc を作成します。</span><span class="sxs-lookup"><span data-stu-id="eefc2-102">Step 4: Create a Sample XML BeginDoc</span></span>
+<span data-ttu-id="eefc2-103">次のコードを XML ファイルに保存します。</span><span class="sxs-lookup"><span data-stu-id="eefc2-103">Save the following code into an XML file.</span></span> <span data-ttu-id="eefc2-104">テストで、この例のステップを使用し、コード例で選択されている J.D.</span><span class="sxs-lookup"><span data-stu-id="eefc2-104">If your test uses the steps in this example, and uses the example's J.D.</span></span> <span data-ttu-id="eefc2-105">Edwards EnterpriseOne オブジェクト [JDE://CSALES/B4200310] を使用する場合、これを入力フォルダにドロップします。結果は、指定した出力フォルダ (EndDocOut ポートにバインドされたフォルダ) に書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="eefc2-105">Edwards EnterpriseOne object selection, [JDE://CSALES/B4200310], you can drop this into the Input folder and what it come out the designated Out folder (the folder bound to the EndDocOut port).</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="eefc2-106">一部の値は、J.D.</span><span class="sxs-lookup"><span data-stu-id="eefc2-106">You will have to modify some of the values to point to your J.D.</span></span> <span data-ttu-id="eefc2-107">Edwards EnterpriseOne サーバーを指すように変更する必要があります。たとえば、szCMComputerID に設定されている値がこれに該当します。</span><span class="sxs-lookup"><span data-stu-id="eefc2-107">Edwards EnterpriseOne server, for example, the value set in szCMComputerID.</span></span>  
+  
+```  
+<ns0:F4211FSBeginDoc xmlns:ns0="http://schemas.microsoft.com/  
+      [JDE://CSALES/B4200310]">  
+   <ns0:mnCMJobNumber></ns0:mnCMJobNumber>  
+   <ns0:cCMDocAction>A</ns0:cCMDocAction>  
+   <ns0:cCMProcessEdits>1</ns0:cCMProcessEdits>  
+   <ns0:szCMComputerID>BVISION02</ns0:szCMComputerID>  
+   <ns0:cCMUpdateWriteToWF>2</ns0:cCMUpdateWriteToWF>  
+   <ns0:szCMProgramID>XMLInterop</ns0:szCMProgramID>  
+   <ns0:szCMVersion>ZJDE0001</ns0:szCMVersion>  
+   <ns0:szOrderType>SO</ns0:szOrderType>  
+   <ns0:szBusinessUnit>M30</ns0:szBusinessUnit>  
+   <ns0:szOriginalOrderCo></ns0:szOriginalOrderCo>  
+   <ns0:szOriginalOrderNo></ns0:szOriginalOrderNo>  
+   <ns0:szOriginalOrderType></ns0:szOriginalOrderType>  
+   <ns0:mnAddressNumber>1001</ns0:mnAddressNumber>  
+   <ns0:jdOrderDate></ns0:jdOrderDate>  
+   <ns0:szReference></ns0:szReference>  
+   <ns0:cApplyFreightYN>Y</ns0:cApplyFreightYN>  
+   <ns0:szCurrencyCode></ns0:szCurrencyCode>  
+   <ns0:cWKSourceOfData></ns0:cWKSourceOfData>  
+   <ns0:cWKProcMode></ns0:cWKProcMode>  
+   <ns0:mnWKSuppressProcess>0</ns0:mnWKSuppressProcess>  
+   <ns0:cRetrieveOrderNo>1</ns0:cRetrieveOrderNo>  
+   <ns0:nSourceOfOrder>0</ns0:nSourceOfOrder>  
+</ns0:F4211FSBeginDoc>  
+```  
+  
+## <a name="see-also"></a><span data-ttu-id="eefc2-108">参照</span><span class="sxs-lookup"><span data-stu-id="eefc2-108">See Also</span></span>  
+ <span data-ttu-id="eefc2-109">[手順 1: スキーマ DLL を参照します。](../core/step-1-reference-the-schema-dll1.md) </span><span class="sxs-lookup"><span data-stu-id="eefc2-109">[Step 1: Reference the Schema DLL](../core/step-1-reference-the-schema-dll1.md) </span></span>  
+ <span data-ttu-id="eefc2-110">[手順 2: オーケストレーションを作成します。](../core/step-2-create-the-orchestration2.md) </span><span class="sxs-lookup"><span data-stu-id="eefc2-110">[Step 2: Create the Orchestration](../core/step-2-create-the-orchestration2.md) </span></span>  
+ [<span data-ttu-id="eefc2-111">手順 3: が完了し、プロジェクトを実行</span><span class="sxs-lookup"><span data-stu-id="eefc2-111">Step 3: Complete and Run the Project</span></span>](../core/step-3-complete-and-run-the-project1.md)

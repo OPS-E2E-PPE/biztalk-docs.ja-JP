@@ -1,0 +1,31 @@
+---
+title: "アプリケーションを .msi ファイルにエクスポートする方法 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: b7179e86-aa55-426b-a0db-19229ca5625a
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 600118718585401d9ba6c3158b6510af55c53e74
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-export-an-application-to-an-msi-file"></a><span data-ttu-id="1b20d-102">アプリケーションを .msi ファイルにエクスポートする方法</span><span class="sxs-lookup"><span data-stu-id="1b20d-102">How to Export an Application to an .msi File</span></span>
+<span data-ttu-id="1b20d-103">MSI ファイルのエクスポート ウィザードまたは BTSTask を使用すると、アプリケーションのアイテムを使用する新しい BizTalk グループにアプリケーションをインポートするのに .msi ファイルにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="1b20d-103">You can use the Export MSI File Wizard or BTSTask to export the application artifacts into an .msi file that you will use to import the application into a new BizTalk group.</span></span> <span data-ttu-id="1b20d-104">このプロセスでは、それを実行するコンピューターでアプリケーションもインストールされます。</span><span class="sxs-lookup"><span data-stu-id="1b20d-104">This process will also install the application on the computers that will run it.</span></span>  
+  
+## <a name="exporting-application-bindings-in-an-msi-file"></a><span data-ttu-id="1b20d-105">.Msi ファイル内のアプリケーション バインドをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="1b20d-105">Exporting Application Bindings in an .msi File</span></span>  
+ <span data-ttu-id="1b20d-106">.Msi ファイルにアプリケーションをエクスポートするときに、エクスポートするリソースを選択します。</span><span class="sxs-lookup"><span data-stu-id="1b20d-106">When you export an application into an .msi file, you select which resources to export.</span></span> <span data-ttu-id="1b20d-107">これらのリソースは、すべてまたは、展開したアセンブリのサブセットを含めることができますかで利用可能なバインドをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="1b20d-107">These resources can include all or a subset of the deployed assemblies or bindings that are available for export.</span></span>  
+  
+ <span data-ttu-id="1b20d-108">簡単に変更または追加を行うには後で、開発環境にアプリケーションをインポートするには、ことがある各アプリケーションのバインドをエクスポートし、アプリケーションに再度追加します。</span><span class="sxs-lookup"><span data-stu-id="1b20d-108">To make it easier to import the applications back into your development environment at a later time to make changes or additions, you may want to export the bindings for each application and then add them back into the applications.</span></span> <span data-ttu-id="1b20d-109">"BiztalkBinding"するリソースの種類を設定するときに、.msi ファイルに追加のバインド ファイルを追加できます。</span><span class="sxs-lookup"><span data-stu-id="1b20d-109">When you set the Resource type to "BiztalkBinding," you can add additional binding files to an .msi file.</span></span> <span data-ttu-id="1b20d-110">追加するバインド ファイルごとに、バインディングに適用される環境名 (テキスト フィールド) を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1b20d-110">For each binding file that you add, you must specify the environment name (text field) that the bindings should be applied to.</span></span> <span data-ttu-id="1b20d-111">インポート時にする必要になりますを現在インポート先環境名を選択します。</span><span class="sxs-lookup"><span data-stu-id="1b20d-111">Then on import, you will be asked to select the environment name to which you are presently importing.</span></span> <span data-ttu-id="1b20d-112">これらが一致する場合、バインド ファイルは、ターゲット グループに適用されます。</span><span class="sxs-lookup"><span data-stu-id="1b20d-112">If these match, then the binding file is applied to the target group.</span></span> <span data-ttu-id="1b20d-113">できますもを指定しない追加されたバインド ファイルは、一連のバインドを無条件ですべての環境に適用する原因となる環境の名前。</span><span class="sxs-lookup"><span data-stu-id="1b20d-113">You can also specify no environment name for the added binding file, which will cause the set of bindings to be applied to all environments unconditionally.</span></span>  
+  
+ <span data-ttu-id="1b20d-114">.Msi ファイルを使用して、どのそれ以外の場合、大幅な設定できる手動タスクの自動化します。</span><span class="sxs-lookup"><span data-stu-id="1b20d-114">Using an .msi file automates what can otherwise be a substantial set of manual tasks.</span></span> <span data-ttu-id="1b20d-115">運用環境ですることができますやすくアセンブリと共にアセンブリのバインドのトランスポートによって複数の BizTalk グループにアセンブリを配置します。</span><span class="sxs-lookup"><span data-stu-id="1b20d-115">In a production environment, you can make it easier to deploy an assembly into multiple BizTalk groups by transporting the bindings for the assembly along with the assembly.</span></span> <span data-ttu-id="1b20d-116">成果物の数が多い場合は、1 つの Windows インストーラー パッケージと 1 つ以上の他の Windows インストーラー パッケージにいくつかに成果物の一部をエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="1b20d-116">If your application contains a significant number of artifacts, you can export some of the artifacts into one Windows Installer package and some into one or more other Windows Installer packages.</span></span>  
+  
+ <span data-ttu-id="1b20d-117">アプリケーションをエクスポートする際に、次の点を検討してください。</span><span class="sxs-lookup"><span data-stu-id="1b20d-117">While exporting the application, you should consider some important points.</span></span> <span data-ttu-id="1b20d-118">たとえば、輸出することか、すべてのアプリケーションのアイテムまたはアイテムのみを追加または更新します。</span><span class="sxs-lookup"><span data-stu-id="1b20d-118">For example, you may either export all of the artifacts in the application or only the artifacts that you want to add or update.</span></span> <span data-ttu-id="1b20d-119">ファイル アイテムをエクスポートする場合は、アプリケーションで使用するバージョンであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="1b20d-119">If you export a file artifact, make sure that it is the version that you want to use in the application.</span></span> <span data-ttu-id="1b20d-120">このような複数の点および .msi ファイルに BizTalk アプリケーションのエクスポートの詳細についてを参照して[を BizTalk アプリケーションをエクスポートする方法](http://go.microsoft.com/fwlink/?LinkID=154848)(http://go.microsoft.com/fwlink/?LinkID=154848)。</span><span class="sxs-lookup"><span data-stu-id="1b20d-120">For more such points and for more information about exporting a BizTalk application into an .msi file, see [How to Export a BizTalk Application](http://go.microsoft.com/fwlink/?LinkID=154848) (http://go.microsoft.com/fwlink/?LinkID=154848).</span></span>

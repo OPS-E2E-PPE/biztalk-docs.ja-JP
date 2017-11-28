@@ -1,0 +1,278 @@
+---
+title: "チュートリアル (X12): EDI インターチェンジの送信 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 05533821-b9eb-44bc-af65-b6fb0b545137
+caps.latest.revision: "36"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: fc29d8739aeff07241c1491ba7ae96dcf7260372
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="walkthrough-x12-sending-edi-interchanges"></a><span data-ttu-id="97920-102">チュートリアル (X12): EDI インターチェンジの送信</span><span class="sxs-lookup"><span data-stu-id="97920-102">Walkthrough (X12): Sending EDI Interchanges</span></span>
+<span data-ttu-id="97920-103">このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して EDI インターチェンジの送信用のソリューションを作成する一連の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="97920-103">This walkthrough provides a set of step-by-step procedures that creates a solution for sending EDI interchanges using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="97920-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="97920-104">Prerequisites</span></span>  
+ <span data-ttu-id="97920-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="97920-105">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
+  
+## <a name="how-the-solution-sends-edi-interchanges"></a><span data-ttu-id="97920-106">ソリューションにより EDI インターチェンジを送信する方法</span><span class="sxs-lookup"><span data-stu-id="97920-106">How the Solution Sends EDI Interchanges</span></span>  
+ <span data-ttu-id="97920-107">このソリューションは次の処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="97920-107">The solution will do the following:</span></span>  
+  
+1.  <span data-ttu-id="97920-108">一方向の FILE 受信ポートは、Fabrikam から EDI メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="97920-108">A one-way FILE receive port receives an EDI message from Fabrikam.</span></span>  
+  
+2.  <span data-ttu-id="97920-109">EdiReceive パイプラインを使用して、受信ポートはメッセージをチェックし、XML に変換します。</span><span class="sxs-lookup"><span data-stu-id="97920-109">Using the EdiReceive pipeline, the receive port checks the message and converts it into XML.</span></span> <span data-ttu-id="97920-110">次に、受信ポートはテスト メッセージをメッセージ ボックスにドロップします。</span><span class="sxs-lookup"><span data-stu-id="97920-110">The receive port then drops the test message into the MeassageBox.</span></span>  
+  
+3.  <span data-ttu-id="97920-111">静的な一方向の送信ポートが、メッセージ ボックスから XML メッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="97920-111">A static one-way send port picks up the XML message from the MessageBox.</span></span>  
+  
+4.  <span data-ttu-id="97920-112">静的な一方向の送信ポートは、メッセージ スキーマと照合し、EDI メッセージを検証して、EDI メッセージを EDI インターチェンジにシリアル化した後、EDI メッセージを取引先である Contoso のローカル フォルダーに送信します。</span><span class="sxs-lookup"><span data-stu-id="97920-112">The static one-way send port validates the EDI message against the message schema, serializes the EDI message into an EDI interchange, and then sends the EDI message to the trading partner Contoso's local folder.</span></span>  
+  
+## <a name="the-functionality-in-this-solution"></a><span data-ttu-id="97920-113">このソリューションの機能</span><span class="sxs-lookup"><span data-stu-id="97920-113">The Functionality in this Solution</span></span>  
+ <span data-ttu-id="97920-114">このチュートリアルでは、以下の機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="97920-114">This walkthrough uses the following functionality:</span></span>  
+  
+-   <span data-ttu-id="97920-115">このチュートリアルでは、受信確認の受信はテストされません。</span><span class="sxs-lookup"><span data-stu-id="97920-115">Receiving an acknowledgment is not tested in this walkthrough.</span></span> <span data-ttu-id="97920-116">受信確認を受信する方法を理解するには、「実証[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認をバックアップします。](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)</span><span class="sxs-lookup"><span data-stu-id="97920-116">To understand how to receive an acknowledgment, see demonstrated [Walkthrough (X12): Receiving EDI Interchanges and Sending Back an Acknowledgement](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)</span></span>  
+  
+-   <span data-ttu-id="97920-117">このソリューションは、EDIFACT エンコードではなく X12 エンコードを使用するインターチェンジを対象に設計されています。</span><span class="sxs-lookup"><span data-stu-id="97920-117">The solution is designed for interchanges using X12 encoding, not EDIFACT encoding.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-118">HIPAA および EDIFACT エンコードに使用される構成は、X12 エンコードに使用される構成によく似ています。</span><span class="sxs-lookup"><span data-stu-id="97920-118">The configuration used for HIPAA and for EDIFACT encoding is closely parallel to that used for X12 encoding.</span></span>  
+  
+-   <span data-ttu-id="97920-119">EDI の種類の検証および拡張された検証は、送信インターチェンジに対して実行されます。</span><span class="sxs-lookup"><span data-stu-id="97920-119">EDI type and extended validation will be performed on the outgoing interchange.</span></span>  
+  
+-   <span data-ttu-id="97920-120">このソリューションでは、トランスポートの種類が FILE である静的な一方向の送信ポートが使用されます。</span><span class="sxs-lookup"><span data-stu-id="97920-120">The solution uses a static one-way send port with a FILE transport type.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-121">静的な一方向の送信ポートの代わりに、静的な双方向の送信ポートを使用して、インターチェンジの送信および受信確認の受信を行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="97920-121">Instead of a static one-way send port, you could use a static two-way send port to send the interchange and receive the acknowledgment.</span></span> <span data-ttu-id="97920-122">また、動的な一方向の送信ポートを使用してインターチェンジを送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="97920-122">You could also use a dynamic one-way send port to send the interchange.</span></span> <span data-ttu-id="97920-123">動的送信ポートを使用する方法については、次を参照してください。 [EDI インターチェンジの送信および受信確認を動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md)です。</span><span class="sxs-lookup"><span data-stu-id="97920-123">For more information on using a dynamic send port, see [Configuring a Dynamic Send Port to Send EDI Interchanges and Acknowledgments](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md).</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-124">HTTP アダプターと AS2 トランスポートを使用できます。</span><span class="sxs-lookup"><span data-stu-id="97920-124">You can use an HTTP adapter and AS2 transport.</span></span> <span data-ttu-id="97920-125">その方法の詳細については、次を参照してください。[チュートリアル (AS2): 同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)または[チュートリアル (AS2): 非同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-an-asynchronous-mdn.md)です。</span><span class="sxs-lookup"><span data-stu-id="97920-125">For more information on doing so, see [Walkthrough (AS2): Sending EDI over AS2 with a Synchronous MDN](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md) or [Walkthrough (AS2): Sending EDI over AS2 with an Asynchronous MDN](../core/walkthrough-as2-sending-edi-over-as2-with-an-asynchronous-mdn.md).</span></span>  
+  
+-   <span data-ttu-id="97920-126">EDI レポートが有効になり、インターチェンジの状態レポートに表示するトランザクション セットが保存されます。</span><span class="sxs-lookup"><span data-stu-id="97920-126">EDI reporting will be enabled, and transaction sets will be saved for viewing from the interchange status report.</span></span>  
+  
+-   <span data-ttu-id="97920-127">テスト目的の場合、このソリューションではテスト メッセージの受信に受信場所が使用されます。</span><span class="sxs-lookup"><span data-stu-id="97920-127">For testing purposes, the solution uses a receive location to receive a test message.</span></span>  
+  
+ <span data-ttu-id="97920-128">次の図は、静的な一方向の送信ポートを使用するこのソリューションのアーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="97920-128">The following figure shows the architecture for this solution, which uses a static one-way send port.</span></span>  
+  
+ <span data-ttu-id="97920-129">![EDI インターチェンジの送信](../core/media/6915024c-687c-4076-a730-3f7b9d2db7fb.gif "6915024c-687c-4076-a730-3f7b9d2db7fb")</span><span class="sxs-lookup"><span data-stu-id="97920-129">![Sending EDI interchanges](../core/media/6915024c-687c-4076-a730-3f7b9d2db7fb.gif "6915024c-687c-4076-a730-3f7b9d2db7fb")</span></span>  
+  
+## <a name="configuring-and-testing-the-walkthrough"></a><span data-ttu-id="97920-130">チュートリアルの構成とテスト</span><span class="sxs-lookup"><span data-stu-id="97920-130">Configuring and Testing the Walkthrough</span></span>  
+ <span data-ttu-id="97920-131">このソリューションに必要な手順は以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="97920-131">The procedures required for this solution include the following:</span></span>  
+  
+-   <span data-ttu-id="97920-132">BizTalk プロジェクトに必要なメッセージ スキーマを追加してビルドおよび展開し、送信インターチェンジを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で処理するときにそのスキーマを利用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="97920-132">Add the required message schema(s) to a BizTalk project, and then build and deploy the project, making the schemas available for use by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in processing the outbound interchange.</span></span>  
+  
+-   <span data-ttu-id="97920-133">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI インターチェンジを受信するための受信ポートと受信場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-133">Create a receive port and location for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to receive the EDI interchange.</span></span> <span data-ttu-id="97920-134">この受信場所は、Fabrikam が Contoso に送信する EDI インターチェンジをドロップするファイル フォルダーに関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="97920-134">This receive location is tied to the file folder where Fabrikam drops the EDI interchange to be sent to Contoso.</span></span> <span data-ttu-id="97920-135">受信場所では EdiReceive 受信パイプラインを使用します。</span><span class="sxs-lookup"><span data-stu-id="97920-135">The receive location will use an EdiReceive receive pipeline.</span></span>  
+  
+-   <span data-ttu-id="97920-136">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI インターチェンジを Contoso に送信するための送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-136">Create a send port for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send the EDI interchange to Contoso.</span></span> <span data-ttu-id="97920-137">このチュートリアルでは、静的な一方向の送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-137">In this walkthrough, you will create a static one-way send port.</span></span>  
+  
+-   <span data-ttu-id="97920-138">Fabrikam および Contoso の両方にパーティ (取引先) を作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-138">Create a party (trading partner) for both Fabrikam and Contoso.</span></span>  
+  
+-   <span data-ttu-id="97920-139">両方の取引先それぞれにビジネス プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-139">Create a business profile each for both the trading partners.</span></span>  
+  
+-   <span data-ttu-id="97920-140">受信するメッセージの EDI プロパティを構成して、2 つのプロファイル間のアグリーメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-140">Create an agreement between the two profiles by configuring the EDI properties for the message to be received.</span></span>  
+  
+-   <span data-ttu-id="97920-141">テスト EDI インターチェンジを使用して、このチュートリアルをテストします。</span><span class="sxs-lookup"><span data-stu-id="97920-141">Test the walkthrough using a test EDI interchange.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-142">テスト メッセージには、EDI インターフェイス開発チュートリアルで使用した SamplePO.txt ファイルを使用できます。</span><span class="sxs-lookup"><span data-stu-id="97920-142">For a test message, you can use the SamplePO.txt file that is used in the EDI Interface Developer tutorial.</span></span> <span data-ttu-id="97920-143">このファイルは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="97920-143">That file is shipped in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ folder.</span></span> <span data-ttu-id="97920-144">これは、X12 850 メッセージです。</span><span class="sxs-lookup"><span data-stu-id="97920-144">This is an X12 850 message.</span></span>  
+  
+### <a name="configuring-the-walkthrough"></a><span data-ttu-id="97920-145">チュートリアルの構成</span><span class="sxs-lookup"><span data-stu-id="97920-145">Configuring the Walkthrough</span></span>  
+ <span data-ttu-id="97920-146">ここでは、チュートリアルを構成する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="97920-146">This section describes the procedures to configure the walkthrough.</span></span>  
+  
+##### <a name="to-deploy-the-message-schema"></a><span data-ttu-id="97920-147">メッセージ スキーマを展開するには</span><span class="sxs-lookup"><span data-stu-id="97920-147">To deploy the message schema</span></span>  
+  
+1.  <span data-ttu-id="97920-148">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。</span><span class="sxs-lookup"><span data-stu-id="97920-148">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], create or open a BizTalk project.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-149">このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="97920-149">This topic assumes that you have already added a reference from your application to the BizTalk EDI Application, which contains EDI schemas, pipelines, and orchestrations.</span></span> <span data-ttu-id="97920-150">いない場合を参照してください。[を BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)です。</span><span class="sxs-lookup"><span data-stu-id="97920-150">If not, see [How to Add a Reference to the BizTalk Server EDI Application](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782).</span></span>  
+  
+2.  <span data-ttu-id="97920-151">プロジェクトを右クリックし、順にポイント**追加**、クリックして**既存項目の**します。</span><span class="sxs-lookup"><span data-stu-id="97920-151">Right-click your project, point to **Add**, and then click **Existing Item**.</span></span> <span data-ttu-id="97920-152">スキーマが [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にあるフォルダーに移動し、スキーマをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="97920-152">Move to the folder that your schema is in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI, and then double-click your schema.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-153">EDI スキーマが \XSD_Schema\EDI フォルダーに展開されていないが、実行、 **MicrosoftEdiXSDTemplates.exe** \XSD_Schema\EDI フォルダーに既定のフォルダーにして、スキーマ内のファイルです。</span><span class="sxs-lookup"><span data-stu-id="97920-153">If the EDI schemas have not been unzipped into the \XSD_Schema\EDI folders, execute the **MicrosoftEdiXSDTemplates.exe** file in the \XSD_Schema\EDI folder to unzip the schemas into the default folder.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-154">EDI インターフェイス開発チュートリアルで使用した SamplePO.txt ファイルを使用する場合は、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI フォルダーにある X12_00401_850.xsd スキーマを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="97920-154">If you use the SamplePO.txt file that is used in the EDI Interface Developer tutorial, you must use the X12_00401_850.xsd schema that is shipped in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI folder.</span></span> <span data-ttu-id="97920-155">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema フォルダーにある X12 850 スキーマは使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="97920-155">You must not use the X12 850 schema in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema folder.</span></span>  
+  
+3.  <span data-ttu-id="97920-156">アセンブリ キー ファイルをプロジェクトに追加し、アセンブリをビルドして展開します。</span><span class="sxs-lookup"><span data-stu-id="97920-156">Add the assembly key file to the project, and then build and deploy the assembly.</span></span>  
+  
+##### <a name="to-create-a-one-way-receive-port-for-fabrikam-to-receive-the-edi-interchange"></a><span data-ttu-id="97920-157">EDI インターチェンジを受信するための一方向の受信ポート (Fabrikam 用) を作成するには</span><span class="sxs-lookup"><span data-stu-id="97920-157">To create a one-way receive port (for Fabrikam) to receive the EDI interchange</span></span>  
+  
+1.  <span data-ttu-id="97920-158">Windows エクスプ ローラーで、インターチェンジを受信するローカル フォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-158">In Windows Explorer, create a local folder to receive the interchange in.</span></span>  
+  
+2.  <span data-ttu-id="97920-159">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックし、**受信ポート**ノードの下、 **BizTalk アプリケーション 1**に**新規**をクリックして**一方向受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="97920-159">In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Receive Ports** node under the **BizTalk Application 1** node, point to **New**, and then click **One-way Receive Port**.</span></span>  
+  
+3.  <span data-ttu-id="97920-160">受信ポートの名前を指定し、をクリックして**受信場所**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="97920-160">Name the receive port, and then click **Receive Locations** in the console tree.</span></span>  
+  
+4.  <span data-ttu-id="97920-161">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97920-161">Click **New**.</span></span>  
+  
+5.  <span data-ttu-id="97920-162">名前、受信場所は、select**ファイル**の**型**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="97920-162">Name the receive location, select **FILE** for **Type**, and then click **Configure**.</span></span>  
+  
+6.  <span data-ttu-id="97920-163">用のフォルダーを入力**受信フォルダー**、入力と **\*.txt**ファイル マスク。</span><span class="sxs-lookup"><span data-stu-id="97920-163">Enter a folder for **Receive folder**, and enter **\*.txt** for the file mask.</span></span>  
+  
+7.  <span data-ttu-id="97920-164">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97920-164">Click **OK**.</span></span>  
+  
+8.  <span data-ttu-id="97920-165">**受信パイプライン** **EdiReceive**です。</span><span class="sxs-lookup"><span data-stu-id="97920-165">For **Receive pipeline**, select **EdiReceive**.</span></span>  
+  
+9. <span data-ttu-id="97920-166">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="97920-166">Click **OK**, and then click **OK** again.</span></span>  
+  
+10. <span data-ttu-id="97920-167">コンソール ツリーでクリックして**受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="97920-167">In the console tree, click **Receive Locations**.</span></span> <span data-ttu-id="97920-168">**受信場所** ウィンドウで、右クリックし、受信場所をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="97920-168">In the **Receive Locations** pane, right-click your receive location, and then click **Enable**.</span></span>  
+  
+##### <a name="to-create-a-static-one-way-send-port-for-contoso-to-send-the-edi-interchange"></a><span data-ttu-id="97920-169">EDI インターチェンジを送信するための静的な一方向の送信ポート (Contoso 用) を作成するには</span><span class="sxs-lookup"><span data-stu-id="97920-169">To create a static one-way send port (for Contoso) to send the EDI interchange</span></span>  
+  
+1.  <span data-ttu-id="97920-170">Windows エクスプローラーで、EDI インターチェンジを送信する先のローカル フォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="97920-170">In Windows Explorer, create a local folder to send the EDI interchange to.</span></span>  
+  
+2.  <span data-ttu-id="97920-171">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックし、**送信ポート**ノードの下、 **BizTalk アプリケーション 1**に**新規**をクリックして**静的な一方向送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="97920-171">In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Send Ports** node under the **BizTalk Application 1** node, point to **New**, and then click **Static One-way Send Port**.</span></span>  
+  
+3.  <span data-ttu-id="97920-172">**送信ポートのプロパティ**ダイアログ ボックスで、送信ポートの名前。</span><span class="sxs-lookup"><span data-stu-id="97920-172">In the **Send Port Properties** dialog box, name the send port.</span></span>  
+  
+4.  <span data-ttu-id="97920-173">**トランスポート** セクションで、select、**型**など、**ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="97920-173">In the **Transport** section, select the **Type**, for example, **FILE**.</span></span>  
+  
+5.  <span data-ttu-id="97920-174">ファイルの種類を使用して、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="97920-174">If using a FILE type, click **Configure**.</span></span> <span data-ttu-id="97920-175">**コピー先フォルダー**インターチェンジを送信するフォルダーを参照します。</span><span class="sxs-lookup"><span data-stu-id="97920-175">In **Destination folder**, browse to a folder to send the interchange to.</span></span> <span data-ttu-id="97920-176">**ファイル名**、入力**%MessageID%.edi**です。</span><span class="sxs-lookup"><span data-stu-id="97920-176">For **File name**, enter **%MessageID%.edi**.</span></span> <span data-ttu-id="97920-177">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97920-177">Click **OK**.</span></span>  
+  
+6.  <span data-ttu-id="97920-178">**送信パイプライン** **EdiSend**です。</span><span class="sxs-lookup"><span data-stu-id="97920-178">In **Send pipeline**, select **EdiSend**.</span></span>  
+  
+7.  <span data-ttu-id="97920-179">コンソール ツリーで、次のように選択します。**フィルター**、しを使用して、メッセージをサブスクライブする送信ポートのフィルター式を入力します。</span><span class="sxs-lookup"><span data-stu-id="97920-179">In the console tree, select **Filters**, and enter a filter expression for the send port to use to subscribe to the message.</span></span> <span data-ttu-id="97920-180">たとえば、元のテスト メッセージを受信する受信場所をフィルター式として使用できます。</span><span class="sxs-lookup"><span data-stu-id="97920-180">For example, you could use the receive location that will receive the original test message as a filter expression.</span></span> <span data-ttu-id="97920-181">そのためには、**プロパティ**、入力**BTS です。ReceivePortName**;**演算子**、入力 **==** ; および**値**に作成した受信ポートの名前を入力Fabrikam から XML メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="97920-181">To do so, for **Property**, enter **BTS.ReceivePortName**; for **Operator**, enter **==**; and for **Value** enter the name of the receive port that you created to receive the XML message from Fabrikam.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-182">フィルター処理の対象には、別の任意のプロパティ (たとえば BTS.MessageType) を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="97920-182">You could filter on another property of your choice, for example, on BTS.MessageType.</span></span>  
+  
+8.  <span data-ttu-id="97920-183">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97920-183">Click **OK**.</span></span>  
+  
+9. <span data-ttu-id="97920-184">クリックして、**送信ポート**管理コンソールで、ノードは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="97920-184">Click the **Send Ports** node in the Administration Console, right-click your send port, and then click **Start**.</span></span>  
+  
+##### <a name="to-create-a-party-and-a-business-profile-for-fabrikam"></a><span data-ttu-id="97920-185">Fabrikam のパーティとビジネス プロファイルを作成するには</span><span class="sxs-lookup"><span data-stu-id="97920-185">To create a party and a business profile for Fabrikam</span></span>  
+  
+1.  <span data-ttu-id="97920-186">右クリックし、**パーティ**内のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをポイント**新規**、クリックして**パーティ**です。</span><span class="sxs-lookup"><span data-stu-id="97920-186">Right-click the **Parties** node in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, point to **New**, and then click **Party**.</span></span>  
+  
+2.  <span data-ttu-id="97920-187">パーティの名前を入力、**名前**テキスト ボックスに入力し**OK**です。</span><span class="sxs-lookup"><span data-stu-id="97920-187">Enter a name for the party in the **Name** text box, and then click **OK**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-188">選択して、**ローカルの BizTalk は、このパーティからメッセージを送信するパーティまたはサポートが受信したメッセージを処理** チェック ボックスを指定できますをホストしている同じ組織のパーティの作成中であること[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="97920-188">By selecting the **Local BizTalk processes messages received by the Party OR supports sending messages from this party** check box, you can specify that the party being created is for the same organization that is also hosting [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="97920-189">その指定に基づいて、アグリーメントを作成するときに一部のプロパティが有効または無効になります。</span><span class="sxs-lookup"><span data-stu-id="97920-189">Based on that, some properties will be enabled or disabled when you create an agreement.</span></span> <span data-ttu-id="97920-190">ただし、このチュートリアルでは、このチェック ボックスはオンのままでかまいません。</span><span class="sxs-lookup"><span data-stu-id="97920-190">However, for this walkthrough, you can leave this check box selected.</span></span>  
+  
+3.  <span data-ttu-id="97920-191">パーティ名を右クリックし、**新規**、クリックして**ビジネス プロファイル**です。</span><span class="sxs-lookup"><span data-stu-id="97920-191">Right-click the party name, point to **New**, and then click **Business Profile**.</span></span>  
+  
+4.  <span data-ttu-id="97920-192">**プロファイル プロパティ**ダイアログ ボックスの**全般** ページで、入力**fabrikam_profile**で、**名前**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="97920-192">In the **Profile Properties** dialog box, on the **General** page, enter **Fabrikam_Profile** in the **Name** text box.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-193">パーティを作成すると、プロファイルも作成されます。</span><span class="sxs-lookup"><span data-stu-id="97920-193">When you create a party, a profile is also created.</span></span> <span data-ttu-id="97920-194">新しいプロファイルを作成する代わりに、そのプロファイルの名前を変更して使用できます。</span><span class="sxs-lookup"><span data-stu-id="97920-194">You can rename and use that profile instead of creating a new one.</span></span> <span data-ttu-id="97920-195">プロファイルの名前を変更するプロファイルを右クリックし **プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="97920-195">To rename a profile, right-click the profile and select **Properties**.</span></span> <span data-ttu-id="97920-196">**全般** ページで、プロファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="97920-196">In the **General** page, specify a name for the profile.</span></span>  
+  
+##### <a name="to-create-a-party-and-a-business-profile-for-contoso"></a><span data-ttu-id="97920-197">Contoso のパーティとビジネス プロファイルを作成するには</span><span class="sxs-lookup"><span data-stu-id="97920-197">To create a party and a business profile for Contoso</span></span>  
+  
+1.  <span data-ttu-id="97920-198">右クリックし、**パーティ**内のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをポイント**新規**、クリックして**パーティ**です。</span><span class="sxs-lookup"><span data-stu-id="97920-198">Right-click the **Parties** node in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, point to **New**, and then click **Party**.</span></span>  
+  
+2.  <span data-ttu-id="97920-199">パーティの名前を入力、**名前**テキスト ボックスに入力し**OK**です。</span><span class="sxs-lookup"><span data-stu-id="97920-199">Enter a name for the party in the **Name** text box, and then click **OK**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-200">選択して、**ローカルの BizTalk は、このパーティからメッセージを送信するパーティまたはサポートが受信したメッセージを処理** チェック ボックスを指定できますをホストしている同じ組織のパーティの作成中であること[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="97920-200">By selecting the **Local BizTalk processes messages received by the Party OR supports sending messages from this party** check box, you can specify that the party being created is for the same organization that is also hosting [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="97920-201">その指定に基づいて、アグリーメントを作成するときに一部のプロパティが有効または無効になります。</span><span class="sxs-lookup"><span data-stu-id="97920-201">Based on that, some properties will be enabled or disabled when you create an agreement.</span></span> <span data-ttu-id="97920-202">ただし、このチュートリアルでは、このチェック ボックスはオンのままでかまいません。</span><span class="sxs-lookup"><span data-stu-id="97920-202">However, for this walkthrough, you can leave this check box selected.</span></span>  
+  
+3.  <span data-ttu-id="97920-203">パーティ名を右クリックし、**新規**、クリックして**ビジネス プロファイル**です。</span><span class="sxs-lookup"><span data-stu-id="97920-203">Right-click the party name, point to **New**, and then click **Business Profile**.</span></span>  
+  
+4.  <span data-ttu-id="97920-204">**プロファイル プロパティ**ダイアログ ボックスの**全般** ページで、入力**Contoso_Profile**で、**名前**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="97920-204">In the **Profile Properties** dialog box, on the **General** page, enter **Contoso_Profile** in the **Name** text box.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-205">パーティを作成すると、プロファイルも作成されます。</span><span class="sxs-lookup"><span data-stu-id="97920-205">When you create a party, a profile is also created.</span></span> <span data-ttu-id="97920-206">新しいプロファイルを作成する代わりに、そのプロファイルの名前を変更して使用できます。</span><span class="sxs-lookup"><span data-stu-id="97920-206">You can rename and use that profile instead of creating a new one.</span></span> <span data-ttu-id="97920-207">プロファイルの名前を変更するプロファイルを右クリックし **プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="97920-207">To rename a profile, right-click the profile and select **Properties**.</span></span> <span data-ttu-id="97920-208">**全般** ページで、プロファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="97920-208">In the **General** page, specify a name for the profile.</span></span>  
+  
+##### <a name="to-create-an-agreement-between-the-two-business-profiles"></a><span data-ttu-id="97920-209">2 つのビジネス プロファイル間のアグリーメントを作成するには</span><span class="sxs-lookup"><span data-stu-id="97920-209">To create an agreement between the two business profiles</span></span>  
+  
+1.  <span data-ttu-id="97920-210">右クリック**fabrikam_profile**、 をポイント**新規**、クリックして**アグリーメント**です。</span><span class="sxs-lookup"><span data-stu-id="97920-210">Right-click **Fabrikam_Profile**, point to **New**, and then click **Agreement**.</span></span>  
+  
+2.  <span data-ttu-id="97920-211">**全般プロパティ** ページの**名前**テキスト ボックスに、アグリーメントの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="97920-211">In the **General Properties** page, for the **Name** text box, enter a name for the agreement.</span></span>  
+  
+3.  <span data-ttu-id="97920-212">**プロトコル**ドロップダウン リストで、 **X12**です。</span><span class="sxs-lookup"><span data-stu-id="97920-212">From the **Protocol** drop-down list, select **X12**.</span></span>  
+  
+4.  <span data-ttu-id="97920-213">**2 番目のパートナー**  セクションから、**名前**ドロップダウン リストで、 **Contoso**です。</span><span class="sxs-lookup"><span data-stu-id="97920-213">In the **Second Partner** section, from the **Name** drop-down list, select **Contoso**.</span></span>  
+  
+5.  <span data-ttu-id="97920-214">**2 番目のパートナー**  セクションから、**プロファイル**ドロップダウン リストで、 **Contoso_Profile**です。</span><span class="sxs-lookup"><span data-stu-id="97920-214">In the **Second Partner** section, from the **Profile** drop-down list, select **Contoso_Profile**.</span></span>  
+  
+     <span data-ttu-id="97920-215">2 つの新しいタブの追加を取得 の横に表示されます、**全般**タブです。各タブに 1 つの一方向のアグリーメントを構成するようになっており、一方向の各アグリーメントが 1 つの完全なメッセージ トランザクション (メッセージの送信と受信確認の送信を含む) を表します。</span><span class="sxs-lookup"><span data-stu-id="97920-215">You will notice that two new tabs get added next to the **General** tab. Each tab is for configuring a one-way agreement and each one-way agreement represents one complete transaction of message (including message transfer and acknowledgement transfer).</span></span>  
+  
+6.  <span data-ttu-id="97920-216">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**、し、選択**reporting 用メッセージ ペイロードを格納**です。</span><span class="sxs-lookup"><span data-stu-id="97920-216">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**, and then select **Store message payload for reporting**.</span></span>  
+  
+7.  <span data-ttu-id="97920-217">次のタスクを実行、 **Fabrikam が Contoso ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="97920-217">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
+  
+    1.  <span data-ttu-id="97920-218">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="97920-218">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span>  
+  
+        > [!NOTE]
+        >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="97920-219"> では、アグリーメントの解決を実行するために、送信者と受信者の修飾子フィールドおよび ID フィールドを必ず指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="97920-219"> requires the qualifier and identifier fields for sender and receiver in order to perform agreement resolution.</span></span> <span data-ttu-id="97920-220">値と照合**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**とアグリーメントのプロパティで、インターチェンジ ヘッダーです。</span><span class="sxs-lookup"><span data-stu-id="97920-220">It will match the values of **ISA5**, **ISA6**, **ISA7**, and **ISA8** in the interchange header with those in the properties of an agreement.</span></span> <span data-ttu-id="97920-221">また、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、送信者の修飾子および識別子を照合して (受信者の修飾子および識別子は不要)、アグリーメントを解決します。</span><span class="sxs-lookup"><span data-stu-id="97920-221">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will also resolve the agreement by matching the sender qualifier and identifier (without the receiver qualifier and identifier).</span></span> <span data-ttu-id="97920-222">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アグリーメントを解決できない場合、フォールバック アグリーメントのプロパティが使用されます。</span><span class="sxs-lookup"><span data-stu-id="97920-222">If [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cannot resolve the agreement, it will use the fallback agreement properties.</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="97920-223">テスト メッセージとして「EDI インターフェイス開発チュートリアル」の SamplePO.txt ファイルを使用する場合は、設定**ISA5**に**ZZ**、 **ISA6**に**THEM**、 **ISA7**に**ZZ**、および**ISA8**に**米国**です。</span><span class="sxs-lookup"><span data-stu-id="97920-223">If you are using the SamplePO.txt file from the “EDI Interface Developer Tutorial” as your test message, set **ISA5** to **ZZ**, **ISA6** to **THEM**, **ISA7** to **ZZ**, and **ISA8** to **US**.</span></span>  
+  
+    2.  <span data-ttu-id="97920-224">**検証**ページで、、**インターチェンジの設定**セクションで、確認してください**重複している isa13 を確認**オプションがオフになっています。</span><span class="sxs-lookup"><span data-stu-id="97920-224">On the **Validation** page under the **Interchange Settings** section, make sure **Check for duplicate ISA13** option is unchecked.</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="97920-225">オフにすると、**重複している isa13 を確認して**プロパティでは、同じメッセージの複数のインスタンスを受信することができます。</span><span class="sxs-lookup"><span data-stu-id="97920-225">Clearing the **Check for duplicate ISA13** property enables you to receive multiple instances of the same message.</span></span>  
+  
+    3.  <span data-ttu-id="97920-226">**文字セットと区切り記号**ページで、**インターチェンジの設定** セクションで、選択、 **CR LF**オプション。</span><span class="sxs-lookup"><span data-stu-id="97920-226">On the **Charset and Separators** page under the **Interchange Settings** section, select the **CR LF** option.</span></span>  
+  
+    4.  <span data-ttu-id="97920-227">**送信ポート**ページで、**インターチェンジの設定**セクションには、Fabrikam から EDI インターチェンジを受信する送信ポートを関連付けます。</span><span class="sxs-lookup"><span data-stu-id="97920-227">On the **Send Ports** page under the **Interchange Settings** section, associate the send port that will be receiving the EDI interchange from Fabrikam.</span></span> <span data-ttu-id="97920-228">**送信ポート**グリッド 、**名前**列は、空のセルをクリックし、ドロップダウン リストから Fabrikam から EDI インターチェンジを受信するために作成した送信ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="97920-228">In the **Send ports** grid, under the **Name** column, click an empty cell, and from the drop-down list, select the send port created for receiving the EDI interchange from Fabrikam.</span></span>  
+  
+    5.  <span data-ttu-id="97920-229">**検証**ページで、**トランザクション セットの設定**セクションのままにして**EDI 型の検証**に、チェック**拡張された検証**.</span><span class="sxs-lookup"><span data-stu-id="97920-229">On the **Validation** page under the **Transaction Set Settings** section, leave **EDI Type Validation** checked and check **Extended validation**.</span></span>  
+  
+    6.  <span data-ttu-id="97920-230">使用するかどうかに付属する標準スキーマのいずれかの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の**ローカル ホストの設定**ページで、**トランザクション セットの設定**セクションで、選択するために使用するスキーマの名前空間受信インターチェンジを処理します。</span><span class="sxs-lookup"><span data-stu-id="97920-230">If you are using one of the standard schemas shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], on the **Local Host Settings** page under the **Transaction Set Settings** section, select the namespace for the schema to be used to process the incoming interchange.</span></span>  
+  
+        |<span data-ttu-id="97920-231">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97920-231">Use this</span></span>|<span data-ttu-id="97920-232">目的</span><span class="sxs-lookup"><span data-stu-id="97920-232">To do this</span></span>|  
+        |--------------|----------------|  
+        |<span data-ttu-id="97920-233">**[Default]**</span><span class="sxs-lookup"><span data-stu-id="97920-233">**Default**</span></span>|<span data-ttu-id="97920-234">列のチェック ボックスをオンにします</span><span class="sxs-lookup"><span data-stu-id="97920-234">Select the checkbox in the column</span></span>|  
+        |<span data-ttu-id="97920-235">**ST1 の場合**</span><span class="sxs-lookup"><span data-stu-id="97920-235">**For ST1**</span></span>|<span data-ttu-id="97920-236">選択**850 - 注文**です。</span><span class="sxs-lookup"><span data-stu-id="97920-236">Select **850 - Purchase Order**.</span></span>|  
+        |<span data-ttu-id="97920-237">**[GS2]**</span><span class="sxs-lookup"><span data-stu-id="97920-237">**GS2**</span></span>|<span data-ttu-id="97920-238">入力**THEM**です。</span><span class="sxs-lookup"><span data-stu-id="97920-238">Enter **THEM**.</span></span>|  
+        |<span data-ttu-id="97920-239">**Target Namespace**</span><span class="sxs-lookup"><span data-stu-id="97920-239">**Target Namespace**</span></span>|<span data-ttu-id="97920-240">選択**http://schemas.microsoft.com/BizTalk/EDI/X12/2006**です。</span><span class="sxs-lookup"><span data-stu-id="97920-240">Select **http://schemas.microsoft.com/BizTalk/EDI/X12/2006**.</span></span>|  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="97920-241">プロパティを設定すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、受信 850 インターチェンジの処理に使用するスキーマを決定できるようになります。</span><span class="sxs-lookup"><span data-stu-id="97920-241">Setting the properties enables [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to determine the schema to be used in processing the incoming 850 interchange.</span></span> <span data-ttu-id="97920-242">グリッド内の行に入力された [GS02] と [ST01] の値がインターチェンジに設定されている場合は、同じ行にあるターゲットの名前空間により、使用するスキーマが決定されます。</span><span class="sxs-lookup"><span data-stu-id="97920-242">If an interchange has the values of GS02 and ST01 that are entered on a line of the grid, then the target namespace for the same line will be used to determine the schema to be used.</span></span>  
+  
+    7.  <span data-ttu-id="97920-243">**エンベロープ**ページで、**トランザクション セットの設定**セクションで、グリッドの最初の行のすべての列の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="97920-243">On the **Envelopes** page under the **Transaction Set Settings** section, enter values for all columns in the first line of the grid.</span></span>  
+  
+        |<span data-ttu-id="97920-244">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97920-244">Use this</span></span>|<span data-ttu-id="97920-245">目的</span><span class="sxs-lookup"><span data-stu-id="97920-245">To do this</span></span>|  
+        |--------------|----------------|  
+        |<span data-ttu-id="97920-246">**[Default]**</span><span class="sxs-lookup"><span data-stu-id="97920-246">**Default**</span></span>|<span data-ttu-id="97920-247">チェック ボックスをオン、**既定**列です。</span><span class="sxs-lookup"><span data-stu-id="97920-247">Select the checkbox in the **Default** column.</span></span> <span data-ttu-id="97920-248">**注:** 、既定の値は、この行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**が使用される場合でもの値は、**トランザクションの種類**、**バージョン/リリース**、および**ターゲットの名前空間**の一致するものではありません、メッセージ。</span><span class="sxs-lookup"><span data-stu-id="97920-248">**Note:**  When you select this row as the default, the values for **GS1**, **GS2**, **GS3**, **GS7**, and **GS8** are used even if the values for **Transaction Type**, **Version/Release**, and **Target namespace** are not a match for the message.</span></span>|  
+        |<span data-ttu-id="97920-249">**トランザクションの種類**</span><span class="sxs-lookup"><span data-stu-id="97920-249">**Transaction Type**</span></span>|<span data-ttu-id="97920-250">テスト メッセージのメッセージの種類を選択して**850 - 注文**です。</span><span class="sxs-lookup"><span data-stu-id="97920-250">Select the message type of your test message, **850 - Purchase Order**.</span></span>|  
+        |<span data-ttu-id="97920-251">**バージョン/リリース**</span><span class="sxs-lookup"><span data-stu-id="97920-251">**Version/Release**</span></span>|<span data-ttu-id="97920-252">EDI のバージョンを入力**00401**です。</span><span class="sxs-lookup"><span data-stu-id="97920-252">Enter the EDI version, **00401**.</span></span>|  
+        |<span data-ttu-id="97920-253">**ターゲットの名前空間**</span><span class="sxs-lookup"><span data-stu-id="97920-253">**Target namespace**</span></span>|<span data-ttu-id="97920-254">選択**http://schemas.microsoft.com/BizTalk/Edi/X12/2006**です。</span><span class="sxs-lookup"><span data-stu-id="97920-254">Select **http://schemas.microsoft.com/BizTalk/Edi/X12/2006**.</span></span>|  
+        |<span data-ttu-id="97920-255">**GS1**</span><span class="sxs-lookup"><span data-stu-id="97920-255">**GS1**</span></span>|<span data-ttu-id="97920-256">テスト メッセージのメッセージの種類が選択されていることを確認**PO - 注文書 (850)**です。</span><span class="sxs-lookup"><span data-stu-id="97920-256">Verify that the message type of the test message is selected, **PO - Purchase Order (850)**.</span></span>|  
+        |<span data-ttu-id="97920-257">**[GS2]**</span><span class="sxs-lookup"><span data-stu-id="97920-257">**GS2**</span></span>|<span data-ttu-id="97920-258">アプリケーション送信者を表す値を入力します。</span><span class="sxs-lookup"><span data-stu-id="97920-258">Enter a value for the Application sender.</span></span>|  
+        |<span data-ttu-id="97920-259">**[GS3]**</span><span class="sxs-lookup"><span data-stu-id="97920-259">**GS3**</span></span>|<span data-ttu-id="97920-260">アプリケーション受信者を表す値を入力します。</span><span class="sxs-lookup"><span data-stu-id="97920-260">Enter a value for the Application receiver.</span></span>|  
+        |<span data-ttu-id="97920-261">**GS4**</span><span class="sxs-lookup"><span data-stu-id="97920-261">**GS4**</span></span>|<span data-ttu-id="97920-262">日付の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="97920-262">Select the date format that you want.</span></span> <span data-ttu-id="97920-263">**注:**ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="97920-263">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="97920-264">ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。</span><span class="sxs-lookup"><span data-stu-id="97920-264">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
+        |<span data-ttu-id="97920-265">**GS5**</span><span class="sxs-lookup"><span data-stu-id="97920-265">**GS5**</span></span>|<span data-ttu-id="97920-266">時刻の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="97920-266">Select the time format that you want.</span></span>|  
+        |<span data-ttu-id="97920-267">**GS7**</span><span class="sxs-lookup"><span data-stu-id="97920-267">**GS7**</span></span>|<span data-ttu-id="97920-268">選択**X の間に認可 Standards Committee X12**です。</span><span class="sxs-lookup"><span data-stu-id="97920-268">Select **X - Accredited Standards Committee X12**.</span></span>|  
+        |<span data-ttu-id="97920-269">**GS8**</span><span class="sxs-lookup"><span data-stu-id="97920-269">**GS8**</span></span>|<span data-ttu-id="97920-270">EDI のバージョンが入力されていることを確認**00401**です。</span><span class="sxs-lookup"><span data-stu-id="97920-270">Verify that the EDI version has been entered, **00401**.</span></span>|  
+  
+        > [!NOTE]
+        >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="97920-271">GS01、GS02、GS03、GS04、GS05、GS07、および入力した値に基づいて、送信する受信確認の GS08 の値が設定されます**トランザクション タイプ**、**バージョン/リリース**、および**ターゲット名前空間**です。</span><span class="sxs-lookup"><span data-stu-id="97920-271"> will set the values for GS01, GS02, GS03, GS04, GS05, GS07, and GS08 of the outbound acknowledgments based on the values entered for **Transaction Type**, **Version/Release**, and **Target namespace**.</span></span> <span data-ttu-id="97920-272">送信パイプラインは、トランザクション セットの種類、X12 バージョン、およびターゲットの名前空間と、メッセージ ヘッダー内の対応する値との照合を試みます。</span><span class="sxs-lookup"><span data-stu-id="97920-272">The send pipeline attempts to match the transaction set type, the X12 version, and the target namespace with the corresponding values in the header of the message.</span></span> <span data-ttu-id="97920-273">成功すると、その値が使用 GS に関連付けられている、**トランザクション タイプ**、**バージョン/リリース**、および**ターゲットの名前空間**値。</span><span class="sxs-lookup"><span data-stu-id="97920-273">If successful, it uses the GS values associated with the **Transaction Type**, **Version/Release**, and **Target namespace** values.</span></span>  
+  
+8.  <span data-ttu-id="97920-274">次のタスクを実行、 **Contoso が Fabrikam ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="97920-274">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-275">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="97920-275">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="97920-276">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**です。</span><span class="sxs-lookup"><span data-stu-id="97920-276">To successfully create an agreement, both one-way agreement tabs must have values defined for **ISA5**, **ISA6**, **ISA7**, and **ISA8**.</span></span>  
+  
+    1.  <span data-ttu-id="97920-277">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="97920-277">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="97920-278">テスト メッセージとして「EDI インターフェイス開発チュートリアル」の SamplePO.txt ファイルを使用する場合は、設定**ISA5**に**ZZ**、 **ISA6**に**米国**、 **ISA7**に**ZZ**、および**ISA8**に**THEM**です。</span><span class="sxs-lookup"><span data-stu-id="97920-278">If you are using the SamplePO.txt file from the “EDI Interface Developer Tutorial” as your test message, set **ISA5** to **ZZ**, **ISA6** to **US**, **ISA7** to **ZZ**, and **ISA8** to **THEM**.</span></span>  
+  
+9. <span data-ttu-id="97920-279">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97920-279">Click **Apply**.</span></span>  
+  
+10. <span data-ttu-id="97920-280">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97920-280">Click **OK**.</span></span> <span data-ttu-id="97920-281">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="97920-281">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="97920-282">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="97920-282">The newly added agreement is enabled by default.</span></span>  
+  
+### <a name="testing-the-walkthrough"></a><span data-ttu-id="97920-283">チュートリアルのテスト</span><span class="sxs-lookup"><span data-stu-id="97920-283">Testing the Walkthrough</span></span>  
+ <span data-ttu-id="97920-284">ここでは、チュートリアルをテストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="97920-284">This section provides information on how to test the walkthrough.</span></span>  
+  
+##### <a name="to-test-the-walkthrough"></a><span data-ttu-id="97920-285">チュートリアルをテストするには</span><span class="sxs-lookup"><span data-stu-id="97920-285">To test the walkthrough</span></span>  
+  
+1.  <span data-ttu-id="97920-286">Windows エクスプローラーで、テスト EDI インターチェンジをローカル受信フォルダーにドロップします。</span><span class="sxs-lookup"><span data-stu-id="97920-286">In Windows Explorer, drop the test EDI interchange into your local receive folder.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="97920-287">テスト メッセージには、EDI インターフェイス開発チュートリアルで使用した SamplePO.txt ファイルを使用できます。</span><span class="sxs-lookup"><span data-stu-id="97920-287">For a test message, you can use the SamplePO.txt file that is used in the EDI Interface Developer tutorial.</span></span> <span data-ttu-id="97920-288">このファイルは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="97920-288">That file is shipped in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial folder.</span></span> <span data-ttu-id="97920-289">これは、X12 850 メッセージです。</span><span class="sxs-lookup"><span data-stu-id="97920-289">This is an X12 850 message.</span></span> <span data-ttu-id="97920-290">このメッセージを使用する場合は、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI フォルダーにある X12_00401_850.xsd スキーマを展開しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="97920-290">If you use this message, you must have deployed the X12_00401_850.xsd schema that is shipped in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI folder.</span></span> <span data-ttu-id="97920-291">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema フォルダーにある X12 850 スキーマは使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="97920-291">You must not use the X12 850 schema in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema folder.</span></span>  
+  
+2.  <span data-ttu-id="97920-292">Windows エクスプローラーで、送信ポートに指定した送信先のフォルダーを開きます。</span><span class="sxs-lookup"><span data-stu-id="97920-292">In Windows Explorer, open the destination folder specified for the send port.</span></span> <span data-ttu-id="97920-293">アグリーメントのプロパティに入力した値と一致する ISA、GS、および ST ヘッダーを保持する出力 EDI インターチェンジがフォルダーに含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="97920-293">Verify that the folder contains an output EDI interchange that has ISA, GS, and ST headers that match the values that you entered in the agreement properties.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="97920-294">参照</span><span class="sxs-lookup"><span data-stu-id="97920-294">See Also</span></span>  
+ [<span data-ttu-id="97920-295">開発および BizTalk Server EDI ソリューションを構成します。</span><span class="sxs-lookup"><span data-stu-id="97920-295">Developing and Configuring BizTalk Server EDI Solutions</span></span>](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

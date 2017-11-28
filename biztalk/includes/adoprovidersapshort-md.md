@@ -1,0 +1,1 @@
+<span data-ttu-id="63b51-101">Data Provider 用 SAP</span><span class="sxs-lookup"><span data-stu-id="63b51-101">Data Provider for SAP</span></span>

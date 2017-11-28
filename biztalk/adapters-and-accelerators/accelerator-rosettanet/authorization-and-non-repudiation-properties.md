@@ -1,0 +1,67 @@
+---
+title: "承認と否認不可プロパティ |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- authorization properties
+- non-repudiation, properties
+ms.assetid: e752b95b-9dae-4403-8f3e-3a0a50acd519
+caps.latest.revision: "4"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 7018ac2d66455359215db78b17e80414d176f99f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="authorization-and-non-repudiation-properties"></a><span data-ttu-id="44505-102">承認と否認不可プロパティ</span><span class="sxs-lookup"><span data-stu-id="44505-102">Authorization and Non-Repudiation Properties</span></span>
+<span data-ttu-id="44505-103">このトピックでは、PIP (Partner Interface Process) の `Is Authorization Required`、`Non-Repudiation of Origin and Content`、および `Non-Repudiation Required (Acknowledgement of Receipt)` プロパティの動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="44505-103">This topic describes the behavior of the `Is Authorization Required`, `Non-Repudiation of Origin and Content`, and `Non-Repudiation Required (Acknowledgement of Receipt)` properties of Partner Interface Processes (PIPs).</span></span> <span data-ttu-id="44505-104">これらのプロパティの組み合わせについても説明を[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="44505-104">It also describes the combinations of these properties that [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] supports.</span></span>  
+  
+ <span data-ttu-id="44505-105">これらのプロパティを設定して、**アクティビティ**のプロセス構成設定」のプロセス構成プロパティ タブ、[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="44505-105">You set these properties on the **Activity** tab of the Process Configuration properties in the Process Configuration Settings section of the [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Management Console.</span></span> <span data-ttu-id="44505-106">詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)です。</span><span class="sxs-lookup"><span data-stu-id="44505-106">For more information, see [How to Create or Edit a Process Configuration](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md).</span></span>  
+  
+## <a name="property-behavior"></a><span data-ttu-id="44505-107">プロパティの動作</span><span class="sxs-lookup"><span data-stu-id="44505-107">Property Behavior</span></span>  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="44505-108"> は、`Is Authorization Required`、`Non-Repudiation of Origin and Content`、および `Non-Repudiation Required (Acknowledgement of Receipt)` プロパティの設定に従って、次のように動作します。</span><span class="sxs-lookup"><span data-stu-id="44505-108"> exhibits the following behavior according to the settings of the `Is Authorization Required`, `Non-Repudiation of Origin and Content`, and `Non-Repudiation Required (Acknowledgement of Receipt)` properties.</span></span>  
+  
+|<span data-ttu-id="44505-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="44505-109">Property</span></span>|<span data-ttu-id="44505-110">True の場合の動作</span><span class="sxs-lookup"><span data-stu-id="44505-110">Behavior when True</span></span>|<span data-ttu-id="44505-111">False の場合の動作</span><span class="sxs-lookup"><span data-stu-id="44505-111">Behavior when False</span></span>|  
+|--------------|------------------------|-------------------------|  
+|`Is Authorization Required`|<span data-ttu-id="44505-112">受信アクションまたはシグナル メッセージは署名が必要です。それ以外の場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]メッセージを拒否します。</span><span class="sxs-lookup"><span data-stu-id="44505-112">Incoming action or signal messages must be signed; otherwise, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] will reject the message.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="44505-113">個人またはロールは、アクティビティを実行する権限がない場合は、ビジネス ドキュメントを受け付けません。</span><span class="sxs-lookup"><span data-stu-id="44505-113"> does not accept the business document if the individual/role is not authorized to perform the activity.</span></span>|<span data-ttu-id="44505-114">着信アクション メッセージまたは着信シグナル メッセージが署名されている必要はありません。</span><span class="sxs-lookup"><span data-stu-id="44505-114">Incoming action or signal messages do not have to be signed.</span></span> <span data-ttu-id="44505-115">メッセージの RNIF ヘッダー部分のパートナー DUNS 番号に単純な承認が適用されます。</span><span class="sxs-lookup"><span data-stu-id="44505-115">Simple authorization will still be applied with the partner DUNS number from the RNIF header parts of the message.</span></span>|  
+|`Non-Repudiation of Origin and Content`|<span data-ttu-id="44505-116">送信アクションまたはシグナル メッセージに署名されます。</span><span class="sxs-lookup"><span data-stu-id="44505-116">Outgoing action or signal messages will be signed.</span></span> <span data-ttu-id="44505-117">アクション メッセージは、元の受信フォームで BTARNDATA データベースの MessageStorageOut テーブルに格納されます。</span><span class="sxs-lookup"><span data-stu-id="44505-117">Action messages will be stored in their original received form in the MessageStorageOut table of the BTARNDATA database.</span></span>|<span data-ttu-id="44505-118">送信アクションまたはシグナル メッセージは格納されません。</span><span class="sxs-lookup"><span data-stu-id="44505-118">Outgoing action or signal messages will not be stored.</span></span>|  
+|`Non-Repudiation Required (Acknowledgement of Receipt)`|<span data-ttu-id="44505-119">着信アクション メッセージまたは着信シグナル メッセージが署名されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="44505-119">Incoming action or signal messages must be signed.</span></span> <span data-ttu-id="44505-120">着信メッセージは、BTARNDATA データベースの MessageStorageIn テーブルに格納されます。</span><span class="sxs-lookup"><span data-stu-id="44505-120">The incoming message will be stored in the MessageStorageIn table in the BTARNDATA database.</span></span> <span data-ttu-id="44505-121">メッセージ ダイジェストが受信確認に含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="44505-121">A message digest must be included in the acknowledgement.</span></span>|<span data-ttu-id="44505-122">着信アクション メッセージまたは着信シグナル メッセージは格納されません。</span><span class="sxs-lookup"><span data-stu-id="44505-122">Incoming action or signal messages will not be stored.</span></span>|  
+  
+## <a name="property-support"></a><span data-ttu-id="44505-123">プロパティのサポート</span><span class="sxs-lookup"><span data-stu-id="44505-123">Property Support</span></span>  
+ <span data-ttu-id="44505-124">次の表に、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] の `Is Authorization Required`、`Non-Repudiation of Origin and Content`、および `Non-Repudiation Required (Acknowledgement of Receipt)` プロパティの組み合わせのサポートを示します。</span><span class="sxs-lookup"><span data-stu-id="44505-124">The following table shows [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] support for combinations of the `Is Authorization Required`, `Non-Repudiation of Origin and Content`, and `Non-Repudiation Required (Acknowledgement of Receipt)` properties.</span></span>  
+  
+> [!IMPORTANT]
+>  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="44505-125">両方アクション メッセージとシグナル メッセージ、またはアクション メッセージでも 1 つのメッセージに署名するか必要があります。</span><span class="sxs-lookup"><span data-stu-id="44505-125"> must either sign both action messages and signal messages, or neither action messages nor single messages.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="44505-126">機能は信号をサポートしていない、アクションの署名がない署名、またはその逆です。</span><span class="sxs-lookup"><span data-stu-id="44505-126"> does not support signing actions, but not signing signals, or vice versa.</span></span>  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="44505-127">[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が送信メッセージに署名した場合は、そのメッセージを BTARNArchive データベースの MessageStorageOut テーブルに保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="44505-127">If [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] signs an outbound message, it must save the message in the MessageStorageOut table of the BTARNArchive database.</span></span>  
+  
+|<span data-ttu-id="44505-128">認証の必要性します。</span><span class="sxs-lookup"><span data-stu-id="44505-128">Is Authorization Required</span></span>|<span data-ttu-id="44505-129">[発信元とコンテンツの否認不可]</span><span class="sxs-lookup"><span data-stu-id="44505-129">Non-Repudiation of Origin and Content</span></span>|<span data-ttu-id="44505-130">Non-Repudiation Required (Acknowledgement of Receipt)</span><span class="sxs-lookup"><span data-stu-id="44505-130">Non-Repudiation Required (Acknowledgement of Receipt)</span></span>|<span data-ttu-id="44505-131">BTARN によるサポートの有無</span><span class="sxs-lookup"><span data-stu-id="44505-131">Supported by BTARN?</span></span>|  
+|-------------------------------|--------------------------------------------|--------------------------------------------------------------|-------------------------|  
+|`False`|`False`|`False`|<span data-ttu-id="44505-132">はい</span><span class="sxs-lookup"><span data-stu-id="44505-132">Yes</span></span>|  
+|`False`|`False`|`True`|<span data-ttu-id="44505-133">なし*</span><span class="sxs-lookup"><span data-stu-id="44505-133">No*</span></span>|  
+|`False`|`True`|`False`|<span data-ttu-id="44505-134">なし * *</span><span class="sxs-lookup"><span data-stu-id="44505-134">No**</span></span>|  
+|`False`|`True`|`True`|<span data-ttu-id="44505-135">なし***</span><span class="sxs-lookup"><span data-stu-id="44505-135">No***</span></span>|  
+|`True`|`False`|`False`|<span data-ttu-id="44505-136">あり****</span><span class="sxs-lookup"><span data-stu-id="44505-136">Yes****</span></span>|  
+|`True`|`False`|`True`|<span data-ttu-id="44505-137">あり****</span><span class="sxs-lookup"><span data-stu-id="44505-137">Yes****</span></span>|  
+|`True`|`True`|`False`|<span data-ttu-id="44505-138">はい</span><span class="sxs-lookup"><span data-stu-id="44505-138">Yes</span></span>|  
+|`True`|`True`|`True`|<span data-ttu-id="44505-139">はい</span><span class="sxs-lookup"><span data-stu-id="44505-139">Yes</span></span>|  
+  
+ <span data-ttu-id="44505-140">\*[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]信号に署名して、アクションが署名されていないことが必要なためこの組み合わせはサポートしません。</span><span class="sxs-lookup"><span data-stu-id="44505-140">\* [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not support this combination because it requires that signals be signed and actions not be signed.</span></span>  
+  
+ <span data-ttu-id="44505-141">** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]アクションに署名して、信号が署名されていないことが必要とするため、この組み合わせを使用できません。</span><span class="sxs-lookup"><span data-stu-id="44505-141">** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not support this combination because it requires that actions be signed and signals not be signed.</span></span>  
+  
+ <span data-ttu-id="44505-142">*** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]否認不可に設定するため、この組み合わせをサポートしません`True`アクションとシグナルの両方のことを意味[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]承認を実行します。</span><span class="sxs-lookup"><span data-stu-id="44505-142">*** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not support this combination because setting non-repudiation to `True` for both actions and signals means that [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] is performing authorization.</span></span> <span data-ttu-id="44505-143">したがって、この組み合わせは有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="44505-143">Therefore, this combination is not valid.</span></span>  
+  
+ <span data-ttu-id="44505-144">**** `Is Authorization Required` を `True`、`Non-Repudiation of Origin and Content` を `False` に設定した場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] はメッセージを否認不可テーブルに格納します。</span><span class="sxs-lookup"><span data-stu-id="44505-144">**** When you set `Is Authorization Required` to `True` and `Non-Repudiation of Origin and Content` to `False`, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] stores the message in the non-repudiation table.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="44505-145">参照</span><span class="sxs-lookup"><span data-stu-id="44505-145">See Also</span></span>  
+ [<span data-ttu-id="44505-146">作成またはプロセス構成を編集する方法</span><span class="sxs-lookup"><span data-stu-id="44505-146">How to Create or Edit a Process Configuration</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)

@@ -1,0 +1,43 @@
+---
+title: "XML ツール拡張機能の使用 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 5613bf15-6c0a-4a82-b200-24d0801d7ece
+caps.latest.revision: "11"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: c18dd9bc820b994f53e9f3e157497337e93550c4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="using-the-xml-tool-extensions"></a><span data-ttu-id="2d7d6-102">XML ツール拡張の使用</span><span class="sxs-lookup"><span data-stu-id="2d7d6-102">Using the XML Tool Extensions</span></span>
+<span data-ttu-id="2d7d6-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の XML ツール拡張を使用すると、スキーマ、マップ、およびメッセージ インスタンスに対してタスクを実行できます。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-103">The XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enable you to perform tasks on schemas, maps, and message instances.</span></span> <span data-ttu-id="2d7d6-104">これらの拡張は、デザイン時に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境で使用します。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-104">You use these extensions at design time in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="2d7d6-105">実行できるタスクは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-105">The tasks you can perform are:</span></span>  
+  
+-   <span data-ttu-id="2d7d6-106">**スキーマの検証**です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-106">**Validating a schema**.</span></span> <span data-ttu-id="2d7d6-107">この操作では、EDI ルールに基づいて、EDI スキーマを検証します。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-107">This operation validates an EDI schema based on EDI rules.</span></span> <span data-ttu-id="2d7d6-108">詳細については、次を参照してください。[スキーマ (EDI) を検証する](../core/validating-a-schema-edi.md)です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-108">For more information, see [Validating a Schema (EDI)](../core/validating-a-schema-edi.md).</span></span>  
+  
+-   <span data-ttu-id="2d7d6-109">**メッセージ インスタンスの検証**です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-109">**Validating a message instance**.</span></span> <span data-ttu-id="2d7d6-110">この操作では、単一のトランザクション セット (インターチェンジ ヘッダーとグループ ヘッダーを含まない)、または複数のトランザクション セットを含む完全なバッチ化されたインターチェンジ (インターチェンジ ヘッダーとグループ ヘッダーを含む) を検証します。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-110">This operation validates a single transaction set (without interchange and group headers) or a complete batched interchange with multiple transaction sets (with interchange and group headers).</span></span> <span data-ttu-id="2d7d6-111">バッチ化されていないインターチェンジを検証するには、インターチェンジ ヘッダーとグループ ヘッダーをインスタンスから削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-111">To validate an unbatched interchange, you need to remove the interchange and group headers from the instance.</span></span> <span data-ttu-id="2d7d6-112">詳細については、次を参照してください。 [(EDI) インスタンスを検証する](../core/validating-an-instance-edi.md)です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-112">For more information, see [Validating an Instance (EDI)](../core/validating-an-instance-edi.md).</span></span>  
+  
+-   <span data-ttu-id="2d7d6-113">**メッセージ インスタンスを生成する**です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-113">**Generating a message instance**.</span></span> <span data-ttu-id="2d7d6-114">この操作では、完全なバッチ化されたインターチェンジ、またはインターチェンジ ヘッダーとグループ ヘッダーを含まないトランザクション セットを生成します。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-114">This operation generates either a complete batched interchange or a transaction set without interchange and group headers.</span></span> <span data-ttu-id="2d7d6-115">インスタンスの生成に使用する区切り記号や識別子などの形式を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-115">You must specify the separators, identifiers, and other formatting used to generate the instance.</span></span> <span data-ttu-id="2d7d6-116">詳細については、次を参照してください。[インスタンス (EDI) を生成する](../core/generating-an-instance-edi.md)です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-116">For more information, see [Generating an Instance (EDI)](../core/generating-an-instance-edi.md).</span></span>  
+  
+-   <span data-ttu-id="2d7d6-117">**マップのテスト**です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-117">**Testing a map**.</span></span> <span data-ttu-id="2d7d6-118">この操作では、処理対象ドキュメントとマップに基づき、架空のデータを使用した出力ドキュメントを生成します。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-118">This operation generates an output document (with fictitious data) based upon a source document and a map.</span></span> <span data-ttu-id="2d7d6-119">詳細については、次を参照してください。[マップのテスト](../core/testing-a-map.md)です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-119">For more information, see [Testing a Map](../core/testing-a-map.md).</span></span>  
+  
+-   <span data-ttu-id="2d7d6-120">**マップの検証**です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-120">**Validating a map**.</span></span> <span data-ttu-id="2d7d6-121">検証を行うと、マップの基になる XSLT を含むファイルと、拡張オブジェクトを含むファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-121">This operation generates a file containing the underlying XSLT of the map and a file containing extension objects.</span></span> <span data-ttu-id="2d7d6-122">詳細については、次を参照してください。[マップ (EDI) を検証する](../core/validating-a-map-edi.md)です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-122">For more information, see [Validating a Map (EDI)](../core/validating-a-map-edi.md).</span></span>  
+  
+ <span data-ttu-id="2d7d6-123">[!INCLUDE[prague](../includes/prague-md.md)] では、これらの拡張で EDI のスキーマ、マップ、およびメッセージ インスタンスを処理できます。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-123">In [!INCLUDE[prague](../includes/prague-md.md)], these extensions work on EDI schemas, maps, and message instances.</span></span> <span data-ttu-id="2d7d6-124">これらの拡張により、複雑な EDI のスキーマ、マップ、およびインターチェンジを、より効果的に処理できます。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-124">These extensions enable you to work more effectively with complex EDI schemas, maps, and interchanges.</span></span>  
+  
+ <span data-ttu-id="2d7d6-125">XML ツール拡張は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のセットアップ プログラムにより既定で有効化されます。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-125">XML Tool extensions are enabled by default by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup program.</span></span> <span data-ttu-id="2d7d6-126">ソリューション エクスプ ローラーの Visual Studio で、スキーマをダブルクリックする場合、**スキーマ エディター拡張機能**スキーマのプロパティに設定されて**EDI スキーマ エディタ拡張機能**します。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-126">If you double-click a schema in Solution Explorer of Visual Studio, the **Schema Editor Extensions** property of the schema is set to **EDI Schema Editor Extension**.</span></span> <span data-ttu-id="2d7d6-127">この設定は、XML ツール拡張を機能させるために必要です。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-127">This is required for the XML Tool extensions to function.</span></span> <span data-ttu-id="2d7d6-128">EDI 拡張機能を選択したままで、他のスキーマ エディター拡張機能を選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="2d7d6-128">You can select other schema editor extension while leaving the EDI extensions selected.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="2d7d6-129">参照</span><span class="sxs-lookup"><span data-stu-id="2d7d6-129">See Also</span></span>  
+ <span data-ttu-id="2d7d6-130">[インスタンス (EDI) の生成](../core/generating-an-instance-edi.md) </span><span class="sxs-lookup"><span data-stu-id="2d7d6-130">[Generating an Instance (EDI)](../core/generating-an-instance-edi.md) </span></span>  
+ <span data-ttu-id="2d7d6-131">[インスタンス (EDI) の検証](../core/validating-an-instance-edi.md) </span><span class="sxs-lookup"><span data-stu-id="2d7d6-131">[Validating an Instance (EDI)](../core/validating-an-instance-edi.md) </span></span>  
+ <span data-ttu-id="2d7d6-132">[スキーマ (EDI) の検証](../core/validating-a-schema-edi.md) </span><span class="sxs-lookup"><span data-stu-id="2d7d6-132">[Validating a Schema (EDI)](../core/validating-a-schema-edi.md) </span></span>  
+ <span data-ttu-id="2d7d6-133">[マップのテスト](../core/testing-a-map.md) </span><span class="sxs-lookup"><span data-stu-id="2d7d6-133">[Testing a Map](../core/testing-a-map.md) </span></span>  
+ [<span data-ttu-id="2d7d6-134">マップ (EDI) の検証</span><span class="sxs-lookup"><span data-stu-id="2d7d6-134">Validating a Map (EDI)</span></span>](../core/validating-a-map-edi.md)

@@ -1,0 +1,60 @@
+---
+title: "BizTalk エディターを使用してスキーマの作成 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 03fac91b-5b67-4baf-968c-294c525d3018
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: fb9e4c6496f43a9602ad56bc0e095d98f2da90d9
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="create-schemas-using-biztalk-editor"></a><span data-ttu-id="880ce-102">BizTalk エディターを使用してスキーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="880ce-102">Create Schemas Using BizTalk Editor</span></span>
+
+## <a name="overview"></a><span data-ttu-id="880ce-103">概要</span><span class="sxs-lookup"><span data-stu-id="880ce-103">Overview</span></span>
+<span data-ttu-id="880ce-104">BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境内で動作するツールです。</span><span class="sxs-lookup"><span data-stu-id="880ce-104">BizTalk Editor is a tool that runs within the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="880ce-105">BizTalk エディターを使用して、アプリケーションに必要なスキーマを作成、編集、および管理できます。</span><span class="sxs-lookup"><span data-stu-id="880ce-105">You can use it to create, edit, and manage schemas for use with your application.</span></span> <span data-ttu-id="880ce-106">BizTalk エディターは、レコードおよびフィールドを階層で表す独自のグラフィカル システムを使ってインスタンス メッセージの構造を表現します。また、定義されたスキーマは、XSD (XML Schema Definition) 言語を使って格納されます。</span><span class="sxs-lookup"><span data-stu-id="880ce-106">BizTalk Editor uses its own graphical system of hierarchical records and fields to represent the structure of instance messages, and uses the XML Schema definition (XSD) language to store the schemas that it defines.</span></span> <span data-ttu-id="880ce-107">この方法は、インスタンス メッセージを交換するときの形式に依存しません。</span><span class="sxs-lookup"><span data-stu-id="880ce-107">This is true regardless of the format in which instance messages are exchanged.</span></span> <span data-ttu-id="880ce-108">たとえば、取引先とのデータ交換にフラット ファイルが使用されるとします。</span><span class="sxs-lookup"><span data-stu-id="880ce-108">For example, suppose that you exchange flat files with a trading partner.</span></span> <span data-ttu-id="880ce-109">BizTalk Server は、BizTalk エディターで定義された XSD スキーマに基づいて、これらのフラット ファイルを XML 形式に変換したり、XML 形式のファイルをフラット ファイルに変換したりします。</span><span class="sxs-lookup"><span data-stu-id="880ce-109">As BizTalk Server processes those flat files, it converts them to and from an XML format that conforms to an XSD schema that you defined in BizTalk Editor.</span></span>  
+  
+ <span data-ttu-id="880ce-110">次の図に示したように、BizTalk エディターを使って作成したスキーマを、オーケストレーションに基づくビジネス プロセスで使用できます。</span><span class="sxs-lookup"><span data-stu-id="880ce-110">The schemas you create using BizTalk Editor can be used within an orchestrated business process, as shown in the following figure.</span></span>  
+  
+ ![](../core/media/ebiz-dev-busprcsh.gif "ebiz_dev_busprcsh")  
+  
+ <span data-ttu-id="880ce-111">スキーマは、アセンブラーおよび逆アセンブラーが、インスタンス メッセージの形式を変換するときにも使用されます (フラット ファイル形式と XML 形式間の変換など)。</span><span class="sxs-lookup"><span data-stu-id="880ce-111">Schemas are also used by assemblers and disassemblers for translating instance messages from one format to another, such as between a flat file format and XML.</span></span> <span data-ttu-id="880ce-112">インスタンス メッセージの変換では、インスタンス メッセージ内のデータを使って別の構造のインスタンス メッセージが構築されますが、こうしたインスタンス メッセージの変換においても、スキーマが重要な役割を果たしています。</span><span class="sxs-lookup"><span data-stu-id="880ce-112">Schemas also play an important role in instance message transformation, wherein the data in an instance message is used to construct an instance message with a different structure.</span></span> <span data-ttu-id="880ce-113">新しいインスタンス メッセージは、意味的に等価である場合があります。たとえば、同じ注文書にもさまざまな表現手段が考えられます。また、異なるインスタンス メッセージでも、データの一部または全体が、他のインスタンス メッセージから流用される場合もあります。</span><span class="sxs-lookup"><span data-stu-id="880ce-113">The new instance message might be semantically equivalent, such as different representations of a purchase order, or it might be a different but related type of instance message that requires some or all of the data from the original instance message in its content.</span></span>  
+  
+ <span data-ttu-id="880ce-114">なぜ、すべてのインスタンス メッセージを、XSD スキーマに準拠した XML 形式に変換するのでしょうか。その理由の 1 つとして、メッセージの構造を変換するためのプロセスを効率化することがあります。</span><span class="sxs-lookup"><span data-stu-id="880ce-114">An important reason for translating all instance messages into an XML format that conforms to an XSD schema is to simplify the process of transforming a message from one structure into another structure.</span></span> <span data-ttu-id="880ce-115">構文的な違いはあれ、メッセージの構造が、意味的には等価であるということはよくあることです。</span><span class="sxs-lookup"><span data-stu-id="880ce-115">Message structures are typically semantically equivalent despite their syntactic differences.</span></span> <span data-ttu-id="880ce-116">たとえば、あなたの会社とその取引先とで使われている注文書を考えてみてください。構造が異なっていても、そこに含まれている基本的な情報が同じであれば、相互間で自動的に変換することが可能です。</span><span class="sxs-lookup"><span data-stu-id="880ce-116">For example, you and your trading partner might structure your purchase orders differently, but the basic information they contain is the same, allowing them to be transformed back and forth automatically.</span></span> <span data-ttu-id="880ce-117">すべてのインスタンス メッセージを、対応する XSD スキーマに基づいて XML 形式に変換しておくことにより、そのインスタンス メッセージを XML 以外の形式に変換したり、特定の XML 構造を別の XML 構造に変換したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="880ce-117">By first converting all instance messages into an XML format governed by a corresponding XSD schema, the instance messages can be translated back and forth between XML and non-XML formats, and transformed from one XML structure to another.</span></span> <span data-ttu-id="880ce-118">インスタンス メッセージの変換とインスタンス メッセージの変換の違いの詳細については、次を参照してください。[データ変換](../core/data-transformation.md)です。</span><span class="sxs-lookup"><span data-stu-id="880ce-118">For more information about the distinction between instance message translation and instance message transformation, see [Data Transformation](../core/data-transformation.md).</span></span>  
+  
+ <span data-ttu-id="880ce-119">Microsoft Visual Studio 環境内で対をなすツールを BizTalk エディターには、BizTalk マッパーです。</span><span class="sxs-lookup"><span data-stu-id="880ce-119">The companion tool to BizTalk Editor within the Microsoft Visual Studio environment is BizTalk Mapper.</span></span> <span data-ttu-id="880ce-120">関連する 2 つのインスタンス メッセージの構造と形式を定義するスキーマを BizTalk エディターで作成した後、あるスキーマに基づいたインスタンス メッセージ (送信元インスタンス メッセージおよびスキーマ) を別のスキーマに基づくインスタンス メッセージ (送信先インスタンス メッセージおよびスキーマ) に変換する方法を、BizTalk マッパーを使ってグラフィカルに定義できます。</span><span class="sxs-lookup"><span data-stu-id="880ce-120">After you use BizTalk Editor to create the schemas that define the structure and format of a pair of related instance messages, you use BizTalk Mapper to graphically define how to transform an instance message conforming to one schema (the source instance message and schema) into an instance message conforming to another schema (the destination instance message and schema).</span></span> <span data-ttu-id="880ce-121">こうした変換の仕様は、XSLT (Extensible Stylesheet Language Transformations) を使って実装され、マップと呼ばれるファイルに格納されます。</span><span class="sxs-lookup"><span data-stu-id="880ce-121">The specification of such transformations is implemented using Extensible Stylesheet Language Transformations (XSLT) and persisted as files called maps.</span></span> <span data-ttu-id="880ce-122">BizTalk マッパーの概念と手順については、次を参照してください。 [BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)です。</span><span class="sxs-lookup"><span data-stu-id="880ce-122">For conceptual and procedural information about BizTalk Mapper, see [Creating Maps Using BizTalk Mapper](../core/creating-maps-using-biztalk-mapper.md).</span></span> <span data-ttu-id="880ce-123">BizTalk マッパーのプロパティおよび functoid のリファレンスについては、次を参照してください。、**マップ プロパティの参照**と**Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  </span><span class="sxs-lookup"><span data-stu-id="880ce-123">For reference information about BizTalk Mapper properties and functoids, see the **Map Property Reference** and **Functoid Reference**  [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
+  
+ <span data-ttu-id="880ce-124">BizTalk エディターでは、構造の含まれない空のスキーマを開いたり、既存の XSD スキーマを開いたりできるほか、XSD 以外のソースからスキーマを生成することもできます。</span><span class="sxs-lookup"><span data-stu-id="880ce-124">Using BizTalk Editor, you can open a blank schema that contains no structure, you can open an existing XSD schema, or you can generate a schema from a non-XSD source.</span></span> <span data-ttu-id="880ce-125">XSD 以外のソースからスキーマを生成した場合、BizTalk エディターは、そのソースの構造を解釈して、対応する XSD 表現のスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="880ce-125">When you generate a schema from a non-XSD source, BizTalk Editor interprets the structure of the source and produces a schema that is an XSD representation of it.</span></span> <span data-ttu-id="880ce-126">BizTalk エディターのスキーマ ツリー ビューに表示されたレコードおよびフィールドは自由に編集でき、その構造を BizTalk スキーマとして保存できます。</span><span class="sxs-lookup"><span data-stu-id="880ce-126">You can edit any records and fields that appear in the BizTalk Editor schema tree view, and then save the structure as a BizTalk schema.</span></span>  
+  
+ <span data-ttu-id="880ce-127">BizTalk エディターのキーボード ショートカットの使用方法の詳細については、次を参照してください。 [BizTalk エディターのキーボード ショートカット](../core/biztalk-editor-keyboard-shortcuts.md)です。</span><span class="sxs-lookup"><span data-stu-id="880ce-127">For information about using the keyboard shortcuts for BizTalk Editor, see [BizTalk Editor Keyboard Shortcuts](../core/biztalk-editor-keyboard-shortcuts.md).</span></span>  
+  
+## <a name="next-steps"></a><span data-ttu-id="880ce-128">次の手順</span><span class="sxs-lookup"><span data-stu-id="880ce-128">Next steps</span></span>
+  
+-   [<span data-ttu-id="880ce-129">スキーマの作成の計画</span><span class="sxs-lookup"><span data-stu-id="880ce-129">Planning for Schema Creation</span></span>](../core/planning-for-schema-creation.md)  
+  
+-   [<span data-ttu-id="880ce-130">インスタンス メッセージについて</span><span class="sxs-lookup"><span data-stu-id="880ce-130">About Instance Messages</span></span>](../core/about-instance-messages.md)  
+  
+-   [<span data-ttu-id="880ce-131">スキーマについて</span><span class="sxs-lookup"><span data-stu-id="880ce-131">About Schemas</span></span>](../core/about-schemas.md)  
+  
+-   [<span data-ttu-id="880ce-132">BizTalk エディターの使用</span><span class="sxs-lookup"><span data-stu-id="880ce-132">Using BizTalk Editor</span></span>](../core/using-biztalk-editor.md)  
+  
+-   [<span data-ttu-id="880ce-133">スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="880ce-133">Creating Schemas</span></span>](../core/creating-schemas.md)  
+  
+-   [<span data-ttu-id="880ce-134">BizTalk フラット ファイル スキーマ ウィザードを使用してスキーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="880ce-134">Creating Schemas Using BizTalk Flat File Schema Wizard</span></span>](../core/creating-schemas-using-biztalk-flat-file-schema-wizard.md)  
+  
+-   [<span data-ttu-id="880ce-135">スキーマのテスト</span><span class="sxs-lookup"><span data-stu-id="880ce-135">Testing Schemas</span></span>](../core/testing-schemas.md)  
+  
+-   [<span data-ttu-id="880ce-136">BizTalk エディターの拡張</span><span class="sxs-lookup"><span data-stu-id="880ce-136">Extending BizTalk Editor</span></span>](../core/extending-biztalk-editor.md)  
+  
+-   [<span data-ttu-id="880ce-137">スキーマを作成する際の考慮事項</span><span class="sxs-lookup"><span data-stu-id="880ce-137">Considerations When Creating Schemas</span></span>](../core/considerations-when-creating-schemas.md)  
+  
+-   [<span data-ttu-id="880ce-138">スキーマの生成と検証に関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="880ce-138">Known Issues with Schema Generation and Validation</span></span>](../core/known-issues-with-schema-generation-and-validation.md)

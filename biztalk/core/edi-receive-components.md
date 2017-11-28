@@ -1,0 +1,57 @@
+---
+title: "EDI の受信コンポーネント |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 1d3b82e8-1168-4c2c-bf1a-886b43ff8108
+caps.latest.revision: "14"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: cc53f4c592b767c8061fb1ed8134636322b35b9d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="edi-receive-components"></a><span data-ttu-id="75323-102">EDI の受信コンポーネント</span><span class="sxs-lookup"><span data-stu-id="75323-102">EDI Receive Components</span></span>
+<span data-ttu-id="75323-103">このトピックでは、EDI/AS2 メッセージ以外の EDI メッセージを処理するパイプラインおよびパイプライン コンポーネントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="75323-103">The pipeline and pipeline components described in this topic process EDI messages that are not EDI/AS2 messages.</span></span> <span data-ttu-id="75323-104">受信した edi/as2 または非 edi/as2 メッセージの処理に関する情報を次を参照してください。 [AS2 の受信コンポーネント](../core/as2-receive-components.md)です。</span><span class="sxs-lookup"><span data-stu-id="75323-104">For information about the processing of received EDI/AS2 or non-EDI/AS2 messages, see [AS2 Receive Components](../core/as2-receive-components.md).</span></span> <span data-ttu-id="75323-105">AS2 の受信コンポーネントは、AS2 の処理だけではなく、EDI の処理も実行します。</span><span class="sxs-lookup"><span data-stu-id="75323-105">Note that AS2 receive components perform EDI processing in addition to AS2 processing.</span></span>  
+  
+## <a name="edi-receive-pipeline"></a><span data-ttu-id="75323-106">EDI 受信パイプライン</span><span class="sxs-lookup"><span data-stu-id="75323-106">EDI Receive Pipeline</span></span>  
+ <span data-ttu-id="75323-107">EDI の受信処理は、EDI 受信パイプラインで実行されます。</span><span class="sxs-lookup"><span data-stu-id="75323-107">EDI receive processing is performed in the EDI Receive pipeline.</span></span> <span data-ttu-id="75323-108">このパイプラインは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] の Microsoft.BizTalk.Edi.EdiPipelines.dll にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="75323-108">This pipeline is installed in Microsoft.BizTalk.Edi.EdiPipelines.dll in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].</span></span> <span data-ttu-id="75323-109">このパイプラインは、任意のトランスポート経由で受信した EDI メッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="75323-109">This pipeline processes EDI messages received over any transport.</span></span> <span data-ttu-id="75323-110">HTTP 経由で受信した AS2 でエンコードされた EDI メッセージは処理されません。</span><span class="sxs-lookup"><span data-stu-id="75323-110">It does not process AS2-encoded EDI messages received over HTTP.</span></span> <span data-ttu-id="75323-111">AS2 でエンコードされた EDI メッセージの処理は、AS2 パイプラインで実行されます。</span><span class="sxs-lookup"><span data-stu-id="75323-111">Processing of AS2-encoded EDI messages is performed by the AS2 pipelines.</span></span> <span data-ttu-id="75323-112">AS2 受信パイプラインは、EDI メッセージの処理に EDI パイプラインと同じコンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="75323-112">The AS2 receive pipelines use the same components to process EDI messages as the EDI pipeline uses.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="75323-113">トランスポートの種類が HTTP であり、EDIReceive パイプラインを使用する受信場所を作成すると、セキュリティ上の問題が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="75323-113">A security issue could occur if you create a receive location that uses the EDIReceive pipeline and has a transport type of HTTP.</span></span> <span data-ttu-id="75323-114">EdiReceive パイプラインでは、HTTP の "200 OK" 受信確認は生成されません。</span><span class="sxs-lookup"><span data-stu-id="75323-114">The EdiReceive pipeline will not generate an HTTP "200 OK" acknowledgment.</span></span> <span data-ttu-id="75323-115">EDI の受信確認が返されないと、接続が正常に終了せず、開いたままになります。</span><span class="sxs-lookup"><span data-stu-id="75323-115">If no EDI acknowledgment is returned, the connection will not be terminated gracefully, but will remain open.</span></span> <span data-ttu-id="75323-116">接続は、接続タイムアウト期間が経過したときにタイムアウトになります。</span><span class="sxs-lookup"><span data-stu-id="75323-116">The connection will time out when the time-out period has expired.</span></span>  
+  
+ <span data-ttu-id="75323-117">EDIReceive パイプラインは、次のパイプライン コンポーネントで構成されます。</span><span class="sxs-lookup"><span data-stu-id="75323-117">The EDIReceive pipeline consists of the following pipeline components:</span></span>  
+  
+-   <span data-ttu-id="75323-118">EDI 逆アセンブラー</span><span class="sxs-lookup"><span data-stu-id="75323-118">EDI Disassembler</span></span>  
+  
+-   <span data-ttu-id="75323-119">BatchMarker です。</span><span class="sxs-lookup"><span data-stu-id="75323-119">BatchMarker.</span></span>  
+  
+## <a name="edi-receive-pipeline-components"></a><span data-ttu-id="75323-120">EDI 受信パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="75323-120">EDI Receive Pipeline Components</span></span>  
+ <span data-ttu-id="75323-121">EDIReceive パイプラインでは、次のパイプライン コンポーネントが使用されます。</span><span class="sxs-lookup"><span data-stu-id="75323-121">The EDIReceive pipeline use the following pipeline components.</span></span> <span data-ttu-id="75323-122">これらのコンポーネントが microsoft.biztalk.edi.pipelinecomponents.dll にインストールされている[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]パイプライン コンポーネント\\です。</span><span class="sxs-lookup"><span data-stu-id="75323-122">These components are installed in Microsoft.BizTalk.Edi.PipelineComponents.dll in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Pipeline Components\\.</span></span>  
+  
+### <a name="edi-disassembler"></a><span data-ttu-id="75323-123">EDI 逆アセンブラー</span><span class="sxs-lookup"><span data-stu-id="75323-123">EDI Disassembler</span></span>  
+ <span data-ttu-id="75323-124">EDI 逆アセンブラーは、EDIReceive パイプラインにおいて、受信した EDI エンコード インターチェンジの処理の大部分を行います。</span><span class="sxs-lookup"><span data-stu-id="75323-124">The EDI Disassembler performs most processing of received EDI-encoded interchanges in the EDIReceive Pipeline.</span></span> <span data-ttu-id="75323-125">EDI 逆アセンブラーが EDI メッセージを処理する方法については、次を参照してください。 [「EDI 逆アセンブラーの動作](../core/how-the-edi-disassembler-works.md)です。</span><span class="sxs-lookup"><span data-stu-id="75323-125">For information about how the EDI Disassembler processes EDI messages, see [How the EDI Disassembler Works](../core/how-the-edi-disassembler-works.md).</span></span>  
+  
+### <a name="batchmarker"></a><span data-ttu-id="75323-126">BatchMarker</span><span class="sxs-lookup"><span data-stu-id="75323-126">BatchMarker</span></span>  
+ <span data-ttu-id="75323-127">BatchMarker パイプライン コンポーネントは、バッチ化されたインターチェンジの処理に必要な BatchId、ToBeBatched、および ToBeRouted の各コンテキスト プロパティを昇格させることにより、インターチェンジをバッチ処理できるように準備します。</span><span class="sxs-lookup"><span data-stu-id="75323-127">The BatchMarker pipeline component prepares an interchange for batching by promoting the BatchId, ToBeBatched, and ToBeRouted context properties that are required for processing a batched interchange.</span></span> <span data-ttu-id="75323-128">BatchMarker コンポーネントがこれらのプロパティを設定する方法は、バッチ要素をサブスクライブしている取引先アグリーメントの数によって決まります。</span><span class="sxs-lookup"><span data-stu-id="75323-128">How the BatchMarker component sets these properties depends upon how many trading partner agreements subscribes to the batch element.</span></span>  
+  
+-   <span data-ttu-id="75323-129">バッチ要素をサブスクライブしているアグリーメントが 1 つだけの場合、BatchMarker コンポーネントは ToBeBatched コンテキスト プロパティを True に設定して、バッチ処理オーケストレーションがバッチ要素を取得するようにします。</span><span class="sxs-lookup"><span data-stu-id="75323-129">If only one agreement subscribes to the batch element, the BatchMarker component sets the ToBeBatched context property to True, so that the batching orchestration picks up the batch element.</span></span>  
+  
+-   <span data-ttu-id="75323-130">バッチ要素をサブスクライブしているアグリーメントが複数存在する場合、BatchMarker コンポーネントは ToBeRouted コンテキスト プロパティを True に設定して、ルーティング オーケストレーションがバッチ要素を取得するようにします。</span><span class="sxs-lookup"><span data-stu-id="75323-130">If more than one agreement subscribes to a batch element, the BatchMarker component sets the ToBeRouted context property to True, so that the routing orchestration picks up the batch element.</span></span> <span data-ttu-id="75323-131">また、BatchIds コンテキスト プロトコルを、バッチ ID のスペースで区切られた一覧に設定します。</span><span class="sxs-lookup"><span data-stu-id="75323-131">It also sets the BatchIds context property to a space delimited list of batch IDs.</span></span> <span data-ttu-id="75323-132">ルーティング オーケストレーションは、各バッチ ID についてバッチ要素のコピーを 1 つ作成し、バッチ要素の各コピーの ToBeBatched プロパティを True に設定して、バッチ処理オーケストレーションがすべてのコピーを取得するようにします。</span><span class="sxs-lookup"><span data-stu-id="75323-132">The routing orchestration will then make one copy of the batch element for each batch ID, and set the ToBeBatched property to True on each copy of the batch element, so that the batching orchestration will pick up all copies.</span></span>  
+  
+ <span data-ttu-id="75323-133">BatchMarker コンポーネントは、EDIReceive パイプラインの最後のステージ (取引先アグリーメントの解決) に含まれています。</span><span class="sxs-lookup"><span data-stu-id="75323-133">The BatchMarker component is included in the last stage (trading partner agreement resolution) of the EDIReceive pipeline.</span></span> <span data-ttu-id="75323-134">EDI メッセージを処理するすべてのパイプラインに BatchMarker パイプライン コンポーネントが含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="75323-134">All pipelines that will process EDI messages should include the BatchMarker pipeline component.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="75323-135">BatchMarker コンポーネントは、EDI メッセージを解析することなく取引先アグリーメントを解決するために、EDI 逆アセンブラーを含まない受信パイプラインに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="75323-135">The BatchMarker component can be included in a receive pipeline that does not include the EDI Dissassembler, in order to perform trading partner agreement resolution without parsing the EDI message.</span></span>  
+  
+ <span data-ttu-id="75323-136">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] および BatchMarker コンポーネントを使用して、非 EDI メッセージをバッチ処理できます。</span><span class="sxs-lookup"><span data-stu-id="75323-136">You can use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the BatchMarker component to batch non-EDI messages.</span></span> <span data-ttu-id="75323-137">詳細についてを参照してください「の処理非 EDI メッセージ BatchMarker コンポーネントで」の[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)です。</span><span class="sxs-lookup"><span data-stu-id="75323-137">For more information, see the "Processing Non-EDI Messages in the BatchMarker Component" section of [Assembling a Batched EDI Interchange](../core/assembling-a-batched-edi-interchange.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="75323-138">参照</span><span class="sxs-lookup"><span data-stu-id="75323-138">See Also</span></span>  
+ [<span data-ttu-id="75323-139">BizTalk Server が EDI メッセージを受信する方法</span><span class="sxs-lookup"><span data-stu-id="75323-139">How BizTalk Server Receives EDI Messages</span></span>](../core/how-biztalk-server-receives-edi-messages.md)

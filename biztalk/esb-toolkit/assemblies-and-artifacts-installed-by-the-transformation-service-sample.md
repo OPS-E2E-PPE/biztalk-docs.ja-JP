@@ -1,0 +1,41 @@
+---
+title: "アセンブリおよび変換サービスのサンプルがインストールされているアイテム |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 890c089a-749e-421f-a6eb-2e038cd2122e
+caps.latest.revision: "4"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: c7942e2e092b8d4407924cbce4f5e26193f3c3f1
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="assemblies-and-artifacts-installed-by-the-transformation-service-sample"></a><span data-ttu-id="ab77f-102">アセンブリと、変換サービスのサンプルがインストールされている成果物</span><span class="sxs-lookup"><span data-stu-id="ab77f-102">Assemblies and Artifacts Installed by the Transformation Service Sample</span></span>
+<span data-ttu-id="ab77f-103">次の表は、アセンブリおよびによってインストールされているアイテム、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]変換サービスのサンプルです。</span><span class="sxs-lookup"><span data-stu-id="ab77f-103">The following table lists the assemblies and artifacts installed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Transformation Service sample.</span></span>  
+  
+|<span data-ttu-id="ab77f-104">場所</span><span class="sxs-lookup"><span data-stu-id="ab77f-104">Location</span></span>|<span data-ttu-id="ab77f-105">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="ab77f-105">Category</span></span>|<span data-ttu-id="ab77f-106">コンポーネントの名前とバージョン</span><span class="sxs-lookup"><span data-stu-id="ab77f-106">Name and version of the component</span></span>|  
+|--------------|--------------|---------------------------------------|  
+|<span data-ttu-id="ab77f-107">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-107">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-108">オーケストレーション</span><span class="sxs-lookup"><span data-stu-id="ab77f-108">Orchestrations</span></span>|<span data-ttu-id="ab77f-109">(なし)</span><span class="sxs-lookup"><span data-stu-id="ab77f-109">(none)</span></span>|  
+|<span data-ttu-id="ab77f-110">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-110">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-111">送信ポート</span><span class="sxs-lookup"><span data-stu-id="ab77f-111">Send Ports</span></span>|<span data-ttu-id="ab77f-112">(なし)</span><span class="sxs-lookup"><span data-stu-id="ab77f-112">(none)</span></span>|  
+|<span data-ttu-id="ab77f-113">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-113">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-114">受信ポート</span><span class="sxs-lookup"><span data-stu-id="ab77f-114">Receive Ports</span></span>|<span data-ttu-id="ab77f-115">(なし)</span><span class="sxs-lookup"><span data-stu-id="ab77f-115">(none)</span></span>|  
+|<span data-ttu-id="ab77f-116">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-116">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-117">受信場所</span><span class="sxs-lookup"><span data-stu-id="ab77f-117">Receive Locations</span></span>|<span data-ttu-id="ab77f-118">(なし)</span><span class="sxs-lookup"><span data-stu-id="ab77f-118">(none)</span></span>|  
+|<span data-ttu-id="ab77f-119">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-119">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-120">スキーマ</span><span class="sxs-lookup"><span data-stu-id="ab77f-120">Schemas</span></span>|<span data-ttu-id="ab77f-121">GlobalBank.ESB.TransformServices.Schemas.RetailOrder バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-121">GlobalBank.ESB.TransformServices.Schemas.RetailOrder Version 2.0.0.0</span></span>|  
+|||<span data-ttu-id="ab77f-122">GlobalBank.ESB.TransformServices.Schemas.OrderConfirmation バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-122">GlobalBank.ESB.TransformServices.Schemas.OrderConfirmation Version 2.0.0.0</span></span>|  
+|||<span data-ttu-id="ab77f-123">GlobalBank.ESB.TransformServices.Schemas.CanonicalOrder バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-123">GlobalBank.ESB.TransformServices.Schemas.CanonicalOrder Version 2.0.0.0</span></span>|  
+|<span data-ttu-id="ab77f-124">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-124">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-125">パイプライン</span><span class="sxs-lookup"><span data-stu-id="ab77f-125">Pipelines</span></span>|<span data-ttu-id="ab77f-126">(なし)</span><span class="sxs-lookup"><span data-stu-id="ab77f-126">(none)</span></span>|  
+|<span data-ttu-id="ab77f-127">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-127">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-128">リソース</span><span class="sxs-lookup"><span data-stu-id="ab77f-128">Resources</span></span>|<span data-ttu-id="ab77f-129">GlobalBank.ESB.TransformServices.Maps バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-129">GlobalBank.ESB.TransformServices.Maps Version 2.0.0.0</span></span>|  
+|||<span data-ttu-id="ab77f-130">GlobalBank.ESB.TransformServices.Schemas バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-130">GlobalBank.ESB.TransformServices.Schemas Version 2.0.0.0</span></span>|  
+|<span data-ttu-id="ab77f-131">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-131">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-132">ポリシー</span><span class="sxs-lookup"><span data-stu-id="ab77f-132">Policies</span></span>|<span data-ttu-id="ab77f-133">(なし)</span><span class="sxs-lookup"><span data-stu-id="ab77f-133">(none)</span></span>|  
+|<span data-ttu-id="ab77f-134">BizTalk アプリケーション GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="ab77f-134">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="ab77f-135">マップ</span><span class="sxs-lookup"><span data-stu-id="ab77f-135">Maps</span></span>|<span data-ttu-id="ab77f-136">GlobalBank.ESB.TransformServices.Maps.CanonicalOrder_To_OrderConfirmation バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-136">GlobalBank.ESB.TransformServices.Maps.CanonicalOrder_To_OrderConfirmation Version 2.0.0.0</span></span>|  
+|||<span data-ttu-id="ab77f-137">GlobalBank.ESB.TransformServices.Maps.RetailOrder_To_CanonicalOrder バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-137">GlobalBank.ESB.TransformServices.Maps.RetailOrder_To_CanonicalOrder Version 2.0.0.0</span></span>|  
+|<span data-ttu-id="ab77f-138">グローバル アセンブリ キャッシュ</span><span class="sxs-lookup"><span data-stu-id="ab77f-138">Global assembly cache</span></span>|<span data-ttu-id="ab77f-139">アセンブリ</span><span class="sxs-lookup"><span data-stu-id="ab77f-139">Assemblies</span></span>|<span data-ttu-id="ab77f-140">GlobalBank.ESB.TransformServices.Maps バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-140">GlobalBank.ESB.TransformServices.Maps Version 2.0.0.0</span></span>|  
+|||<span data-ttu-id="ab77f-141">GlobalBank.ESB.TransformServices.Schemas バージョン 2.0.0.0 以降</span><span class="sxs-lookup"><span data-stu-id="ab77f-141">GlobalBank.ESB.TransformServices.Schemas Version 2.0.0.0</span></span>|  
+|<span data-ttu-id="ab77f-142">%Program Files %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ab77f-142">%Program Files%\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline Components</span></span>|<span data-ttu-id="ab77f-143">パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ab77f-143">Pipeline components</span></span>|<span data-ttu-id="ab77f-144">(なし)</span><span class="sxs-lookup"><span data-stu-id="ab77f-144">(none)</span></span>|

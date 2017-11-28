@@ -1,0 +1,35 @@
+---
+title: "マップを作成する場合は |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: maps, planning
+ms.assetid: e86af976-b989-4e24-80d5-3a9a3ac4e443
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 9499dc20e31d996d41ae4f43ac50b6aec729080d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="planning-to-create-maps"></a><span data-ttu-id="9d793-102">マップ作成の計画</span><span class="sxs-lookup"><span data-stu-id="9d793-102">Planning to Create Maps</span></span>
+<span data-ttu-id="9d793-103">マップを使用して、あるスキーマに準拠している入力メッセージを別のスキーマに準拠している出力メッセージに変換します。</span><span class="sxs-lookup"><span data-stu-id="9d793-103">You use maps to convert input messages conforming to one schema into output messages conforming to a different schema.</span></span> <span data-ttu-id="9d793-104">これらの変換は、簡単な場合と非常に複雑な場合があります。また、情報の計算や統合も行われます。</span><span class="sxs-lookup"><span data-stu-id="9d793-104">These conversions may be simple or quite complex, involving calculations and consolidation of information.</span></span>  
+  
+ <span data-ttu-id="9d793-105">次の表は、マップの作成を計画するときに検討する必要がある項目を示しています。</span><span class="sxs-lookup"><span data-stu-id="9d793-105">The following table lists some of the questions that you need to answer when you plan to create maps.</span></span>  
+  
+|<span data-ttu-id="9d793-106">計画段階の考慮事項</span><span class="sxs-lookup"><span data-stu-id="9d793-106">Planning question</span></span>|<span data-ttu-id="9d793-107">推奨</span><span class="sxs-lookup"><span data-stu-id="9d793-107">Recommendation</span></span>|  
+|-----------------------|--------------------|  
+|<span data-ttu-id="9d793-108">どのマップを作成する必要があるか</span><span class="sxs-lookup"><span data-stu-id="9d793-108">What maps do I need to create?</span></span>|<span data-ttu-id="9d793-109">Microsoft で処理するビジネス ドキュメントの一覧を作成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="9d793-109">Make a list of the business documents that you will process with Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="9d793-110">この一覧には、注文書、請求書、出荷情報などが含まれます。</span><span class="sxs-lookup"><span data-stu-id="9d793-110">Such a list might include, for example, a purchase order, an invoice, a shipping confirmation, and so on.</span></span> <span data-ttu-id="9d793-111">リスト含めることもこのような各ビジネス ドキュメントの 1 つ以上の別の取引先から受信する 1 つの取引先から受信した注文書の構造が発注書の構造と異なる場合など。</span><span class="sxs-lookup"><span data-stu-id="9d793-111">The list might also include more than one of each such business document, such as when the structure of a purchase order you receive from one trading partner is different than the structure of a purchase order you receive from another trading partner.</span></span><br /><br /> <span data-ttu-id="9d793-112">一覧を参照し、異なる形式にするドキュメントまたは一般的な形式に変換して適切な処理を行うドキュメントを決定します。</span><span class="sxs-lookup"><span data-stu-id="9d793-112">Go through the list and decide which of the documents need to be in a different format, or which documents are best handled by conversion to a common format.</span></span>|  
+|<span data-ttu-id="9d793-113">マップが必要な場所はどこか</span><span class="sxs-lookup"><span data-stu-id="9d793-113">Where do I need maps?</span></span>|<span data-ttu-id="9d793-114">送信ポート、受信ポート、およびビジネス プロセスを表すオーケストレーションでマップを使用できます。</span><span class="sxs-lookup"><span data-stu-id="9d793-114">You can use maps in send ports, receive ports, and in orchestrations representing business processes.</span></span> <span data-ttu-id="9d793-115">ドキュメントを変換する場所を検討してください。</span><span class="sxs-lookup"><span data-stu-id="9d793-115">Consider where you want or need to convert documents.</span></span>|  
+|<span data-ttu-id="9d793-116">変換する古いマップはあるか</span><span class="sxs-lookup"><span data-stu-id="9d793-116">Do I have old maps to convert?</span></span>|<span data-ttu-id="9d793-117">[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009 で作成されたマップは、変更しないで移行できます。</span><span class="sxs-lookup"><span data-stu-id="9d793-117">Maps created in [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009 should migrate without modification.</span></span> <span data-ttu-id="9d793-118">移行されたマップは、十分な時間をかけてテストしてください。</span><span class="sxs-lookup"><span data-stu-id="9d793-118">Allocate enough time to test the migrated maps.</span></span> <span data-ttu-id="9d793-119">ただし、それより古いバージョンの BizTalk で作成されたマップは、[!INCLUDE[prague](../includes/prague-md.md)] で開けない場合があります。</span><span class="sxs-lookup"><span data-stu-id="9d793-119">However, maps created in older versions of BizTalk may not necessarily open in [!INCLUDE[prague](../includes/prague-md.md)].</span></span> <span data-ttu-id="9d793-120">**注:**より前のバージョンで作成されたマップ[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]が機能では正確に[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]または[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 です。</span><span class="sxs-lookup"><span data-stu-id="9d793-120">**Note:**  Maps created in the versions prior to [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] may work accurately in [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009.</span></span> <span data-ttu-id="9d793-121">マップで開けません可能性がありますが、[!INCLUDE[prague](../includes/prague-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="9d793-121">But, those maps may not open in [!INCLUDE[prague](../includes/prague-md.md)].</span></span> <br /><br /> <span data-ttu-id="9d793-122">含むマップ**スクリプト**functoid またはカスタム functoid が追加作業が必要です。</span><span class="sxs-lookup"><span data-stu-id="9d793-122">Maps containing **Scripting** functoids or custom functoids may require additional work.</span></span> <span data-ttu-id="9d793-123">詳細については、次を参照してください。 [Functoid の移行](../core/migrating-functoids.md)です。</span><span class="sxs-lookup"><span data-stu-id="9d793-123">For more information, see [Migrating Functoids](../core/migrating-functoids.md).</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="9d793-124">参照</span><span class="sxs-lookup"><span data-stu-id="9d793-124">See Also</span></span>  
+ <span data-ttu-id="9d793-125">[マップの概要](../core/about-maps.md) </span><span class="sxs-lookup"><span data-stu-id="9d793-125">[About Maps](../core/about-maps.md) </span></span>  
+ [<span data-ttu-id="9d793-126">Functoid の移行</span><span class="sxs-lookup"><span data-stu-id="9d793-126">Migrating Functoids</span></span>](../core/migrating-functoids.md)

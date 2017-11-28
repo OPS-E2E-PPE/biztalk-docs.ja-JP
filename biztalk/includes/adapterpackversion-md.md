@@ -1,0 +1,1 @@
+<span data-ttu-id="f5011-101">BizTalk Adapter Pack バージョン</span><span class="sxs-lookup"><span data-stu-id="f5011-101">BizTalk Adapter Pack version</span></span>

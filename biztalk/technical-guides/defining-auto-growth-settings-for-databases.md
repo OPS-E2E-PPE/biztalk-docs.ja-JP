@@ -1,0 +1,30 @@
+---
+title: "データベースの自動拡張設定を定義する |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: dd86dd49-6505-4673-b413-d3af729dfca9
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 2d702898cdaab8f9993fdc9b901e34f51ba6941c
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="defining-auto-growth-settings-for-databases"></a><span data-ttu-id="8e0c1-102">データベースの自動拡張設定を定義します。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-102">Defining Auto-Growth Settings for Databases</span></span>
+<span data-ttu-id="8e0c1-103">データベースの自動拡張は、の代わりに、メッセージ ボックス データベースと BizTalk 追跡データベースの特にのパーセント値のメガバイト数が固定に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-103">You should set database auto-growth to a fixed number of megabytes instead of to a percentage, especially for the MessageBox and BizTalk Tracking databases.</span></span> <span data-ttu-id="8e0c1-104">BizTalk アプリケーションとスループット、に応じて、メッセージ ボックス データベースおよび追跡データベースを非常に大きい取得できます。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-104">Depending on your BizTalk application and throughput, the MessageBox and Tracking databases can get quite large.</span></span> <span data-ttu-id="8e0c1-105">パーセンテージを自動拡張を設定した場合、自動拡張できますかなり大きくなる場合もします。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-105">If you set auto-growth to a percentage, then the auto-growth can be substantial as well.</span></span>  
+  
+## <a name="how-instant-file-initialization-works"></a><span data-ttu-id="8e0c1-106">どの瞬時ファイル初期化 Works</span><span class="sxs-lookup"><span data-stu-id="8e0c1-106">How Instant File Initialization Works</span></span>  
+ <span data-ttu-id="8e0c1-107">SQL Server では、ファイルのサイズを大きく、ときに、新しい領域最初初期化を使用する前に、必要があります。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-107">When SQL Server increases the size of a file, it must first initialize the new space before it can be used.</span></span> <span data-ttu-id="8e0c1-108">これは、ブロッキング操作を含む空のページで、新しい領域の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-108">This is a blocking operation that involves filling the new space with empty pages.</span></span> [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)]<span data-ttu-id="8e0c1-109">「ファイルの瞬時初期化」をサポートしている Windows Server 2003 以降を実行して、後で、または</span><span class="sxs-lookup"><span data-stu-id="8e0c1-109"> or later running on Windows Server 2003 or later supports “instant file initialization.”</span></span> <span data-ttu-id="8e0c1-110">これは、ファイルの拡張操作のパフォーマンスに与える影響を大幅に減らすことができます。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-110">This can greatly reduce the performance impact of a file growth operation.</span></span> <span data-ttu-id="8e0c1-111">詳細については、次を参照してください。 ["データベース ファイルの初期化"](http://go.microsoft.com/fwlink/?LinkId=101579) (http://go.microsoft.com/fwlink/?LinkId=101579) SQL Server のドキュメントにします。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-111">For more information, see ["Database File Initialization"](http://go.microsoft.com/fwlink/?LinkId=101579) (http://go.microsoft.com/fwlink/?LinkId=101579) in the SQL Server documentation.</span></span> <span data-ttu-id="8e0c1-112">このトピックでは、ファイルの瞬時初期化を有効にする際に必要な手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-112">This topic outlines the steps that must be taken to enable instant file initialization.</span></span>  
+  
+## <a name="enabling-instant-file-initialization"></a><span data-ttu-id="8e0c1-113">ファイルの瞬時初期化を有効にします。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-113">Enabling Instant File Initialization</span></span>  
+ <span data-ttu-id="8e0c1-114">インスタント有効にする方法の手順は、初期化ファイルを参照してください[「データベース ファイルの初期化」](http://go.microsoft.com/fwlink/?LinkId=101579) (http://go.microsoft.com/fwlink/?LinkId=101579) SQL Server のドキュメントにします。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-114">For steps on enabling instant file initialization, see ["Database File Initialization"](http://go.microsoft.com/fwlink/?LinkId=101579) (http://go.microsoft.com/fwlink/?LinkId=101579) in the SQL Server documentation.</span></span> <span data-ttu-id="8e0c1-115">ファイル グループを作成すると、移動、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース テーブル、インデックス、および適切なファイル グループにログ ファイルで「付録 B-推奨される BizTalk Server データベース構成」推奨事項に従い、 ["BizTalkサーバーのデータベースの最適化」ホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-115">For creating file groups and moving the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database tables, indexes, and log files into the appropriate file groups, follow the recommendations in "Appendix B - Recommended BizTalk Server Database Configuration" in the ["BizTalk Server Database Optimization" white paper](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578).</span></span> <span data-ttu-id="8e0c1-116">理想的にはファイル グループをサポートするファイルのサイズを事前に割り当てられるし、可能な場合は、静的なサイズに設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-116">Ideally the size of files supporting the file groups should be pre-allocated and if possible, set to a static size.</span></span>  
+  
+ <span data-ttu-id="8e0c1-117">ファイルを構成し、システムが新しい静的なサイズが決定的確立されていない場合は、**自動拡張を有効にする**オプションし、ファイル拡張を指定**メガバイト単位で**です。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-117">If the system is new and the static sizes have not been definitively established, then configure files with the **Enable Autogrowth** option and specify file growth **In Megabytes**.</span></span> <span data-ttu-id="8e0c1-118">拡張増分値を超える 100 MB (サイズの大きいファイル)、10 MB (中規模ファイル用)、または 1 MB (小さなファイル用)、通常場合があります。</span><span class="sxs-lookup"><span data-stu-id="8e0c1-118">The growth increment should generally be no larger than 100 MB (for large files), 10 MB (for medium-sized files), or 1 MB (for small files).</span></span>

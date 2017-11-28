@@ -1,0 +1,60 @@
+---
+title: "検証 (X12 トランザクション セットの設定) の構成 |Microsoft ドキュメント"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 0245be7f-d212-43b1-bfef-cbcbd851b5c0
+caps.latest.revision: "17"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 880a8d1e31cbb10f570dcf5e7422a1e61b5cc8d3
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configuring-validation-x12-transaction-set-settings"></a><span data-ttu-id="10af4-102">検証の構成 (X12 トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="10af4-102">Configuring Validation (X12-Transaction Set Settings)</span></span>
+<span data-ttu-id="10af4-103">トランザクション セット検証の設定では、BizTalk Server がパーティから受信したトランザクション セットを検証する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="10af4-103">The transaction set validation settings define how BizTalk Server validates the transaction sets received from a party.</span></span> <span data-ttu-id="10af4-104">検証設定の一部として、BizTalk Server が受信したインターチェンジに対して実行する検証の種類を指定できます。</span><span class="sxs-lookup"><span data-stu-id="10af4-104">As part of validation settings you can specify which type of validation BizTalk Server will perform on an incoming interchange</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="10af4-105">このトピックは、HIPAA 検証の設定にも関連します。</span><span class="sxs-lookup"><span data-stu-id="10af4-105">This topic applies also to HIPAA validation settings.</span></span>  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="10af4-106">プロパティは無効では、このページをオフにした場合でも、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェック ボックスを作成するパーティを作成するときに、アグリーメント。</span><span class="sxs-lookup"><span data-stu-id="10af4-106">No properties are disabled on this page even if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box while creating the party for which you are creating the agreement.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="10af4-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="10af4-107">Prerequisites</span></span>  
+ <span data-ttu-id="10af4-108">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="10af4-108">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
+  
+### <a name="to-configure-validation-settings"></a><span data-ttu-id="10af4-109">検証の設定を構成するには</span><span class="sxs-lookup"><span data-stu-id="10af4-109">To configure validation settings</span></span>  
+  
+1.  <span data-ttu-id="10af4-110">X12 エンコード アグリーメント」の説明に従って作成[全般設定を構成する (X12)](../core/configuring-general-settings-x12.md)です。</span><span class="sxs-lookup"><span data-stu-id="10af4-110">Create an X12 encoding agreement as described in [Configuring General Settings (X12)](../core/configuring-general-settings-x12.md).</span></span> <span data-ttu-id="10af4-111">既存のアグリーメントを更新するでアグリーメントを右クリックし、**パーティとビジネス プロファイル** ページで、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="10af4-111">To update an existing agreement, right-click the agreement in the **Parties and Business Profiles** page, and click **Properties**.</span></span>  
+  
+2.  <span data-ttu-id="10af4-112">一方向アグリーメント タブの下にある**トランザクション セットの設定**セクションで、**検証**です。</span><span class="sxs-lookup"><span data-stu-id="10af4-112">On a one-way agreement tab, under **Transaction Set Settings** section, click **Validation**.</span></span>  
+  
+3.  <span data-ttu-id="10af4-113">グリッドで、異なるトランザクション セットに対して異なる検証設定を定義できます。</span><span class="sxs-lookup"><span data-stu-id="10af4-113">In the grid, you can define different validation settings for different transaction sets.</span></span> <span data-ttu-id="10af4-114">**検証** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="10af4-114">In the **Validation** page, do the following:</span></span>  
+  
+    |<span data-ttu-id="10af4-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="10af4-115">Use this</span></span>|<span data-ttu-id="10af4-116">目的</span><span class="sxs-lookup"><span data-stu-id="10af4-116">To do this</span></span>|  
+    |--------------|----------------|  
+    |<span data-ttu-id="10af4-117">**[Default]**</span><span class="sxs-lookup"><span data-stu-id="10af4-117">**Default**</span></span>|<span data-ttu-id="10af4-118">既定の検証設定を定義する場合に、チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="10af4-118">Select the check box to define a default validation setting.</span></span>|  
+    |<span data-ttu-id="10af4-119">**トランザクションの種類**</span><span class="sxs-lookup"><span data-stu-id="10af4-119">**Transaction Type**</span></span>|<span data-ttu-id="10af4-120">列の空のセルをクリックし、ドロップダウンの一覧からトランザクションの種類を選択します。</span><span class="sxs-lookup"><span data-stu-id="10af4-120">Click the empty cell in the column and from the drop-down select a transaction type.</span></span>|  
+    |<span data-ttu-id="10af4-121">**Edi 型の検証**</span><span class="sxs-lookup"><span data-stu-id="10af4-121">**Edi Type Validation**</span></span>|<span data-ttu-id="10af4-122">このインターチェンジの受信者に対する EDI (データ要素) 検証を有効にするオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="10af4-122">Select this to enable EDI (data element) validation on the interchange receiver.</span></span> <span data-ttu-id="10af4-123">この検証は、トランザクション セット データ要素で EDI 検証を実行し、データ型、長さの制限、および空のデータ要素と末尾の区切り記号を検証します。</span><span class="sxs-lookup"><span data-stu-id="10af4-123">This validation performs EDI validation on transaction-set data elements, validating data types, length restrictions, and empty data elements and training separators.</span></span> <span data-ttu-id="10af4-124">詳細については、次を参照してください。 [EDI の種類 (データ要素) 検証](../core/edi-type-data-element-validation.md)です。</span><span class="sxs-lookup"><span data-stu-id="10af4-124">For more information, see [EDI Type (Data Element) Validation](../core/edi-type-data-element-validation.md).</span></span> <span data-ttu-id="10af4-125">**注:**スキーマ注釈で有効になって場合クロス フィールド/セグメント検証が実行される場合でも、このプロパティが選択されていません。</span><span class="sxs-lookup"><span data-stu-id="10af4-125">**Note:**  Even if this property is not selected, cross-field/segment validation will be performed if it is turned on in the schema annotation.</span></span>|  
+    |<span data-ttu-id="10af4-126">**拡張された検証**</span><span class="sxs-lookup"><span data-stu-id="10af4-126">**Extended validation**</span></span>|<span data-ttu-id="10af4-127">インターチェンジ送信者から受信したインターチェンジの拡張された (BizTalk XSD) 検証を有効にする場合に選択します。</span><span class="sxs-lookup"><span data-stu-id="10af4-127">Select this to enable extended (BizTalk XSD) validation of interchanges received from the interchange sender.</span></span> <span data-ttu-id="10af4-128">これには、フィールド長、省略可能性、および XSD データ型検証に加えて、繰り返し回数の検証が含まれます。</span><span class="sxs-lookup"><span data-stu-id="10af4-128">This includes validation of field length, optionality, and repeat count in addition to XSD data type validation.</span></span> <span data-ttu-id="10af4-129">詳細については、次を参照してください。[拡張された (BTS-XSD) 検証](../core/extended-bts-xsd-validation.md)です。</span><span class="sxs-lookup"><span data-stu-id="10af4-129">For more information, see [Extended (BTS-XSD) Validation](../core/extended-bts-xsd-validation.md).</span></span> <span data-ttu-id="10af4-130">**注:**場合にのみ、このチェック ボックスを選択する**Edi 型の検証**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="10af4-130">**Note:**  You can select this check box only if **Edi Type Validation** is selected.</span></span>|  
+    |<span data-ttu-id="10af4-131">**先頭および末尾のゼロおよび空白を許可します。**</span><span class="sxs-lookup"><span data-stu-id="10af4-131">**Allow leading and trailing zeroes and spaces**</span></span>|<span data-ttu-id="10af4-132">EDI インターチェンジのデータ要素が、先頭 (または末尾) の 0 または末尾のスペースにより長さの要件に準拠していなくても、それらを削除することで長さの要件に準拠するのであれば、パーティから受信した EDI インターチェンジの検証は失敗しないことを指定する場合にオンにします。</span><span class="sxs-lookup"><span data-stu-id="10af4-132">Select to specify that an EDI interchange received from the party will not fail validation if a data element in an EDI interchange does not conform to its length requirement because of leading (or trailing) zeroes or trailing spaces, but does conform to its length requirement when they are removed.</span></span> <span data-ttu-id="10af4-133">**注:**場合にのみ、このチェック ボックスを選択する**Edi 型の検証**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="10af4-133">**Note:**  You can select this check box only if **Edi Type Validation** is selected.</span></span>|  
+    |<span data-ttu-id="10af4-134">**末尾の区切り記号のポリシー**</span><span class="sxs-lookup"><span data-stu-id="10af4-134">**Trailing Separator Policy**</span></span>|<span data-ttu-id="10af4-135">-**できません**インターチェンジ送信者から受信したインターチェンジに末尾の区切り記号および区切り文字を許可したくない場合。</span><span class="sxs-lookup"><span data-stu-id="10af4-135">-   Select **Not Allowed** if you do not want to allow trailing delimiters and separators in an interchange received from the interchange sender.</span></span> <span data-ttu-id="10af4-136">インターチェンジに末尾の区切り記号が含まれている場合は、インターチェンジが無効と宣言されます。</span><span class="sxs-lookup"><span data-stu-id="10af4-136">If the interchange contains trailing delimiters and separators, it will be declared invalid.</span></span><br /><span data-ttu-id="10af4-137">-**オプション**インターチェンジの有無にかかわらず、末尾の区切り記号および区切り文字を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="10af4-137">-   Select **Optional** to accept interchanges with or without trailing delimiters and separators.</span></span><br /><span data-ttu-id="10af4-138">-**必須**場合は、受信したインターチェンジは、末尾の区切り記号および区切り文字を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="10af4-138">-   Select **Mandatory** if the received interchange must contain trailing delimiters and separators.</span></span>|  
+  
+     <span data-ttu-id="10af4-139">特定のインターチェンジに対する検証設定を定義するために、必要な数だけ行を追加できます。</span><span class="sxs-lookup"><span data-stu-id="10af4-139">You can add as many rows as you want to define validation settings for specific interchanges.</span></span>  
+  
+     <span data-ttu-id="10af4-140">検証の設定を削除する行を選択し、をクリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="10af4-140">To delete a validation setting, select the row and click **Delete**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="10af4-141">グリッド内でプロパティを編集する方法は多少複雑です。</span><span class="sxs-lookup"><span data-stu-id="10af4-141">Editing the properties in the grid can be a little difficult.</span></span> <span data-ttu-id="10af4-142">編集しているし、で同じプロパティを編集して行を選択する代わりに、**選択した行を編集**セクションです。</span><span class="sxs-lookup"><span data-stu-id="10af4-142">Instead, you can select the row to be editing and then edit the same properties in the **Edit Selected Row** section.</span></span> <span data-ttu-id="10af4-143">ここで指定した設定が、選択した行に反映されます。</span><span class="sxs-lookup"><span data-stu-id="10af4-143">The settings you provide here are reflected in the selected row.</span></span>  
+  
+4.  <span data-ttu-id="10af4-144">をクリックして**適用**構成を続行する前に、変更を受け入れるか、をクリックする**OK**を変更を検証し、ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="10af4-144">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="10af4-145">参照</span><span class="sxs-lookup"><span data-stu-id="10af4-145">See Also</span></span>  
+ [<span data-ttu-id="10af4-146">トランザクション セットの構成設定 (X12)</span><span class="sxs-lookup"><span data-stu-id="10af4-146">Configuring Transaction Set Settings (X12)</span></span>](../core/configuring-transaction-set-settings-x12.md)

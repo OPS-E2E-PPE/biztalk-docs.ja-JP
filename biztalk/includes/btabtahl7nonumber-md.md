@@ -1,0 +1,1 @@
+<span data-ttu-id="cd3af-101">BizTalk Accelerator 用 HL7</span><span class="sxs-lookup"><span data-stu-id="cd3af-101">BizTalk Accelerator for HL7</span></span>

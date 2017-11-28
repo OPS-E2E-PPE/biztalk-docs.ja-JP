@@ -1,0 +1,1 @@
+<span data-ttu-id="3c260-101">仮想マシン</span><span class="sxs-lookup"><span data-stu-id="3c260-101">virtual machine</span></span>

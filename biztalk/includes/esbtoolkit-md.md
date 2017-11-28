@@ -1,0 +1,1 @@
+<span data-ttu-id="b3d51-101">Microsoft BizTalk ESB Toolkit</span><span class="sxs-lookup"><span data-stu-id="b3d51-101">Microsoft BizTalk ESB Toolkit</span></span>
