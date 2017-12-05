@@ -16,18 +16,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b9640f542a55d028f3df8715c49df0e9e9ad370
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b6300c12e7bc28de0dc81af9eae23699338ed3d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-edit-the-partner-interface-process"></a>手順 3: Partner Interface Process を編集します。
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® インターネット インフォメーション サービス (IIS) に SSL (Secure Sockets Layer) 証明書が構成されていない場合に、PIP (Partner Interface Process) 構成設定を編集してセキュリティで保護されたトランスポートを無効にします。 ループバック シナリオでは着信メッセージと送信メッセージの署名はサポートされていないため、チュートリアルを続行するには既定の設定を変更する必要があります。 STD_0C1_R01.02 PIP を変更します。  
   
 ### <a name="to-edit-the-std0c1r0102-pip"></a>STD_0C1_R01.02 PIP を編集するには  
   
-1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン > Accelerator for RosettaNet**をクリックして**プロセス構成設定**を右クリックして**STD_0C1_R01.02**、クリックして**プロパティ**です。  
+1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン\>Accelerator for RosettaNet**をクリックして**プロセス構成設定**を右クリックして**STD_0C1_R01.02**、クリックして**プロパティ**です。  
   
 2.  STD_0C1_R01.02Properties ダイアログ ボックスで、**アクティビティ** タブで、設定、**はセキュリティで保護されたトランスポートに必要な**オプションを`False`です。 この手順は、IIS Web サーバーに SSL 証明書がない場合にのみ実行します。  
   
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [手順 4: 取引先アグリーメントを作成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-4-create-a-trade-agreement.md)   
- [承認と否認不可プロパティ](../../adapters-and-accelerators/accelerator-rosettanet/authorization-and-non-repudiation-properties.md)
+ [承認プロパティと否認不可プロパティ](../../adapters-and-accelerators/accelerator-rosettanet/authorization-and-non-repudiation-properties.md)

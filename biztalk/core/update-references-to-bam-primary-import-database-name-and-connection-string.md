@@ -23,11 +23,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b56264155ed9f739669da1cb6f646adac0f9db55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23efa3df9c59732c8459018a886f7f499d268eff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>BAM プライマリ インポート データベース名および接続文字列への参照を更新する方法
 BAMPrimaryImport データベースをバックアップしておくと、システムまたはデータに障害が発生したときに、別のコンピューターにバックアップを復元し、その名前を変更することができます。  
@@ -61,31 +61,31 @@ BAMPrimaryImport データベースをバックアップしておくと、シス
   
     -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamManagementService\Web.Config.  
   
-         置換、  *\<ServerName >* 、新しいサーバー名の文字列と *\<DatabaseName >*で新しいデータベースの名前。 次の接続文字列を更新します。  
+         置換、  *\<ServerName\>*  、新しいサーバー名の文字列と *\<DatabaseName\>* で新しいデータベースの名前。 次の接続文字列を更新します。  
   
-         \<appSettings >  
+         \<appSettings\>  
   
-         < キーを追加"BamServer"の値を = ="*\<ServerName >*"/\>  
+         < キーを追加"BamServer"の値を = ="*\<ServerName\>*"/\>  
   
-         < キーを追加"BamDatabase"の値を = ="*\<DatabaseName >*"/\>  
+         < キーを追加"BamDatabase"の値を = ="*\<DatabaseName\>*"/\>  
   
-         \<キーを追加"MaxResultRows"の値を = =「2000」/>  
+         \<キーを追加"MaxResultRows"の値を = =「2000」/\>  
   
-         \</appSettings >  
+         \</appSettings\>  
   
     -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamQueryService\Web.Config.  
   
-         置換、  *\<ServerName >* 、新しいサーバー名の文字列と *\<DatabaseName >*で新しいデータベースの名前。 次の接続文字列を更新します。  
+         置換、  *\<ServerName\>*  、新しいサーバー名の文字列と *\<DatabaseName\>* で新しいデータベースの名前。 次の接続文字列を更新します。  
   
-         \<appSettings >  
+         \<appSettings\>  
   
-         < キーを追加"BamServer"の値を = ="*\<ServerName >*"/\>  
+         \<キーを追加"BamServer"の値を = ="*\<ServerName\>*"/\>  
   
-         <add key="BamDatabase" value="*<DatabaseName>*" />  
+         \<キーを追加"BamDatabase"の値を = ="*\<DatabaseName\>*"/\>  
   
-         <add key="MaxResultRows" value="2000" />  
+         \<キーを追加"MaxResultRows"の値を = =「2000」/\>  
   
-         </appSettings>  
+         \</appSettings\>  
   
 5.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
@@ -146,4 +146,4 @@ BAMPrimaryImport データベースをバックアップしておくと、シス
 14. 不完全なアクティビティ インスタンスを解決するには、次を参照してください。[不完全なアクティビティ インスタンスの解決方法](../core/how-to-resolve-incomplete-activity-instances.md)です。  
   
 ## <a name="see-also"></a>参照  
- [バックアップおよび BAM を復元します。](../core/backing-up-and-restoring-bam.md)
+ [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

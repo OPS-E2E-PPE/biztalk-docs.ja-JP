@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8c9a99c0efaacac233c339d9279c837744892fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 76b3d26e9f1dd14463d153c89316b3cf3da0338d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a>手順 3: 複数の単体テストを同時に実行するロード テストを作成します。
 ロード テストの実行のいずれかの複数のインスタンスまたは複数の単体テストをアプリケーションのパフォーマンスと負荷を処理する能力を測定するようにします。 Visual Studio 2010 のロード テストの主要なコンポーネントは次のとおりです。  
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
 12. をクリックして**完了**を新しいロード テスト ウィザードを閉じます。  
   
-13. をクリックして、**ファイル**メニュー**保存\<ロード テストの名前 > として .loadtest**です。  
+13. をクリックして、**ファイル**メニュー**保存\<ロード テストの名前\>として .loadtest**です。  
   
     > [!NOTE]  
     >  この例では<Load Test Name>ファイルの名前が既に手動で変更されていない限り、Visual Studio 2010、通常の loadtestx.loadtest により、ロード テストのファイルに割り当てられた名前になります。  
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/20/2017
     |パフォーマンス カテゴリ|パフォーマンス カウンター|  
     |--------------------------|-------------------------|  
     |プロセッサ|_Total カウンター インスタンスのプロセッサ時間 (%)|  
-    |Biztalk: メッセージ ボックス: 一般的なカウンター|スプールのサイズ、  *\<BizTalk メッセージ ボックス データベース名 >*:*\<SQL Server インスタンス名 >*カウンター インスタンス。 **注:***\<BizTalk メッセージ ボックス データベース名 >*と *\<SQL Server インスタンス名 >* BizTalk の実際の名前の単なるプレース ホルダーメッセージ ボックス データベースと BizTalk メッセージ ボックス データベースを格納する SQL Server インスタンス。   これらのプレース ホルダーは、BizTalk メッセージ ボックス データベースと関連付けられている SQL Server インスタンスの実際の名前に置き換える必要があります。|  
+    |Biztalk: メッセージ ボックス: 一般的なカウンター|スプールのサイズ、  *\<BizTalk メッセージ ボックス データベース名\>*:*\<SQL Server インスタンス名\>*カウンター インスタンス。 **注:***\<BizTalk メッセージ ボックス データベース名\>*と *\<SQL Server インスタンス名\>*だけのプレース ホルダー、BizTalk メッセージ ボックス データベースおよび BizTalk メッセージ ボックス データベースを格納する SQL Server インスタンスの実際の名前。   これらのプレース ホルダーは、BizTalk メッセージ ボックス データベースと関連付けられている SQL Server インスタンスの実際の名前に置き換える必要があります。|  
     |BizTalk:メッセージング|受信ホスト カウンター インスタンスの受信/秒を説明します。<br /><br /> ドキュメント処理数/秒の送信ホスト カウンター インスタンス。|  
     |BizTalk:Message Agent|ドキュメントのメッセージ配信の受信速度では、ホストが表示されます。|  
     |BizTalk:Message Agent|メッセージは、ドキュメントの送信ホストの送信速度を公開します。|  

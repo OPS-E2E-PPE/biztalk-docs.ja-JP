@@ -16,11 +16,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c934ec415f336074534ed1add342530bcf2023b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2209d38099bcb440bbb836c7107b0cd106e1d596
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="read-about-the-oracle-database-adapter-binding-properties"></a>Oracle データベース アダプターのバインドのプロパティをについてください。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]いくつかのバインド プロパティを表示します。 これらのプロパティを設定するには、アダプターの動作の一部を制御できます。 このセクションの内容について説明します、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]プロパティをバインドします。 アクセスする方法に .NET プログラミングを使用するかのプロパティを設定しても示しています、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]物理ポートのバインド。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 |**UseAmbientTransaction**|トランザクション|指定するかどうか、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]呼び出し元によって提供されるトランザクション コンテキストを使用して操作を実行します。 既定値は**True**、つまり、あるアダプター常に操作を実行トランザクションのコンテキストで、クライアントがトランザクションのコンテキストを提供するいると仮定した場合します。 トランザクションに参加しているその他のリソースがある場合は、作成された接続 System.Transaction に参加させる、MSDTC トランザクションに昇格します。<br /><br /> ただし、アダプターはトランザクションのコンテキストで操作を実行しないシナリオがあります。 例:<br /><br /> 、Oracle での単純な選択操作の実行中には (送信ポート) のデータベースです。<br /><br /> -While が選択操作を実行し、DELETE ステートメントまたはストアド プロシージャ (受信ポート) を呼び出すことによって、テーブルへの変更を含まないポーリング ステートメントを指定します。<br /><br /> これら両方の操作では、データベース テーブルには、すべての更新は行いませんでき、そのため、MSDTC トランザクションを使用するこれらの操作を昇格するパフォーマンス オーバーヘッドが発生します。 このようなシナリオでは、false にバインディング プロパティを設定できますできるように、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]トランザクション コンテキストでの操作は行いません。<br /><br /> **注:**はデータベースに変更を加えないで操作に対してのみ適切では、トランザクションのコンテキストで操作を実行していません。 データベース内のデータを更新する操作、ことをお勧めそれ以外の場合、true にバインディング プロパティを設定するか、受信または送信操作を実行しているかどうかに応じて、メッセージの損失または重複メッセージが発生する可能性があります。|bool (System.Boolean)|  
 |**GeneratedUserTypesAssemblyFilePath**|UDT .NET 型の生成: デザイン時|アダプターによって生成されるメタデータの生成中に、メタデータで使用されているすべての Udt を含む DLL のパスと名前を指定します。 パッケージ、ストアド プロシージャ、または Udt を使用する関数のメタデータを生成する場合は、DLL の名前を指定する必要があります。 名前は、DLL を指定することはテーブルやビューを持つ Udt のオプションです。 生成された DLL は、実行可能ファイルと同じ場所に保存されます。<br /><br /> このバインドのプロパティがメタデータの生成中にのみ必要です。<br /><br /> **注:** 1 つのみのファイル名を指定する必要があります。 Udt メタデータには、アダプターは、指定した名前の 1 つのファイルを生成します。 名前を指定しない場合、アダプターは、GUID 名前を持つ DLL を生成します。 このバインドのプロパティは BizTalk Server での構成中に、 **Wcf-oracledb**受信または送信ポート。|string|  
 |**GeneratedUserTypesAssemblyKeyFilePath**|UDT .NET 型の生成: デザイン時|厳密に型指定されたアセンブリを作成するアダプターを使用するキー ファイルのパスと名前を指定します。<br /><br /> このバインディング プロパティは、省略可能なメタデータを生成するときにのみが必要です。<br /><br /> **注:**構成中にこのバインドのプロパティが BizTalk Server で使用できるは、 **Wcf-oracledb**受信または送信ポート。|string|  
-|**UserAssembliesLoadPath**|UDT .NET 型の生成 – 実行時|セミコロンで区切られた、メタデータの生成中に、アダプターを作成する、Dll の名前を指定します。 これらの Dll が指定した場所に保存されます、 **GeneratedUserTypesAssemblyFilePath**メタデータの生成中にプロパティをバインドします。 次の場所に、これらの Dll を手動でコピーする必要があります。<br /><br /> **BizTalk プロジェクトの**: BTSNTSvc.exe と同じ場所にある Dll をコピーします。 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]、これは、通常で使用可能な\<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]です。<br /><br /> **.NET プロジェクトの**: Dll を .NET プロジェクト フォルダー内 \bin\Development フォルダーにコピーします。<br /><br /> このバインドのプロパティが、Oracle データベースで操作を実行するメッセージの送受信中にのみ必要です。|string|  
+|**UserAssembliesLoadPath**|UDT .NET 型の生成 – 実行時|セミコロンで区切られた、メタデータの生成中に、アダプターを作成する、Dll の名前を指定します。 これらの Dll が指定した場所に保存されます、 **GeneratedUserTypesAssemblyFilePath**メタデータの生成中にプロパティをバインドします。 次の場所に、これらの Dll を手動でコピーする必要があります。<br /><br /> **BizTalk プロジェクトの**: BTSNTSvc.exe と同じ場所にある Dll をコピーします。 これは通常で使用可能な BizTalk Server の\<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。<br /><br /> **.NET プロジェクトの**: Dll を .NET プロジェクト フォルダー内 \bin\Development フォルダーにコピーします。<br /><br /> このバインドのプロパティが、Oracle データベースで操作を実行するメッセージの送受信中にのみ必要です。|string|  
 |**AcceptCredentialsInUri**|表示されません、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。|Oracle の接続 URI が Oracle データベースのユーザーの資格情報を含めることができるかどうかを指定します。 既定値は**False**、接続 URI でユーザー資格情報を無効にします。 場合**AcceptCredentialsInUri**は**False** 、Oracle 接続 URI には、ユーザーの資格情報が含まれています、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]例外をスローします。 設定することができます**AcceptCredentialsInUri**に**True**場合は、URI で資格情報を指定する必要があります。 詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。|bool (System.Boolean)|  
   
 ## <a name="how-do-i-set-oracle-binding-properties"></a>Oracle のバインドのプロパティを設定する方法は?  
@@ -86,4 +86,4 @@ ms.lasthandoff: 09/20/2017
 -   使用する WCF ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を参照してください[BizTalk アダプターに、ServiceModel メタデータ ユーティリティ ツールを使用して Oracle データベースの](../../adapters-and-accelerators/adapter-oracle-database/use-the-servicemodel-metadata-utility-with-the-oracle-db-adapter-in-biztalk.md)します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk アプリケーション展開の開発タスク](../../core/development-tasks-for-biztalk-application-deployment.md)
+ [BizTalk アプリケーション展開の開発作業](../../core/development-tasks-for-biztalk-application-deployment.md)

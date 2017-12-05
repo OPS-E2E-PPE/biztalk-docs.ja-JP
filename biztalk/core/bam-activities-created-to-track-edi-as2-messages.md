@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f255f2bb71ecef857860fdd5c512f4320b35cc95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c7da7ac08a8f26e21b2c648670730db136392471
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-activities-created-to-track-edi-as2-messages"></a>EDI、AS2 メッセージの追跡に作成された BAM アクティビティ
-[!INCLUDE[prague](../includes/prague-md.md)] には、EDI および AS2 状態レポート用に作成された BAM アクティビティが含まれています。 これらのアクティビティによって、状態レポートに表示するデータが決定されます。 このトピックでは、BAM アクティビティとそこで定義されるフィールド、および BAM アクティビティの特定のフィールドで定義される列挙値について説明します。  
+BizTalk Server には、EDI および AS2 状態レポート用に作成された BAM アクティビティが含まれています。 これらのアクティビティによって、状態レポートに表示するデータが決定されます。 このトピックでは、BAM アクティビティとそこで定義されるフィールド、および BAM アクティビティの特定のフィールドで定義される列挙値について説明します。  
   
  カスタム BAM アクティビティを作成して、カスタム状態レポートを作成することができます。 カスタム アクティビティは、標準のアクティビティの 1 つを基にすることができます。 また、BizTalkDTADb データベースの EdiMessageContent テーブルにクエリを実行して、カスタム状態レポートからメッセージの内容を表示することもできます。 詳細については、後述の「EdiMessageContent テーブルへのクエリの実行」を参照してください。  
   
@@ -81,4 +81,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 状態レポートのデータを格納する方法](../core/how-data-is-stored-for-edi-and-as2-status-reports.md)   
- [送信バッチの受信のトランザクション セットの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)
+ [受信トランザクション セットと送信パッチの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)

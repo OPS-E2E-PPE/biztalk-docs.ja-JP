@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78aa75762e40bfcdd033a057610cb34f38825dd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05524abd4cd57b8d804ab5995072905392fd3645
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a>手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ
 SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。  
@@ -44,7 +44,7 @@ SAG で作成されたサーバー メッセージのパートナーは、これ
   
      subsystem_start:  
   
-     **起動"snlreceiver - SagMessagePartner \<Interact SnF 用サーバー MessagePartnerName > AdapterMode Interact"**  
+     **起動"snlreceiver - SagMessagePartner \<Interact SnF 用サーバー MessagePartnerName\> AdapterMode Interact"**  
   
      * 終了  
   
@@ -92,4 +92,4 @@ SAG で作成されたサーバー メッセージのパートナーは、これ
  [ストアと順方向 (プッシュ) シナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)   
  [手順 1: InterAct ストアと転送シナリオ SWIFT のアダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)   
  [手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
- [手順 4: InterAct ストアと転送のエンド ツー エンド シナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)
+ [手順 4: InterAct ストア アンド フォワード エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)

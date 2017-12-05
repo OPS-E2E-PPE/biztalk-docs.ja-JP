@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d09bb2fd72d9b1882b4e0a9eb329da7e080e6fe5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90c59c586f0d7f1d02ad406baec694cf4e22ff24
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-adapter-faq-wcf-endpoints"></a>WCF アダプター FAQ: WCF エンドポイント
 ## <a name="what-are-two-endpoints-options-can-be-created-by-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF サービス公開ウィザードで作成できる 2 つのエンドポイント オプションは何ですか。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  WCF エンドポイントは、アドレス、バインド、およびコントラクトで構成されます。 ウィザードでメタデータ専用エンドポイントを作成する場合、既存の受信場所からアドレスとバインドの詳細が取得されます。 コントラクト情報は、BizTalk オーケストレーション内にあるスキーマで定義されますが、ウィザードを使用して手動で作成することもできます。 選択した場合**BizTalk オーケストレーションを WCF サービスとして発行**、メタデータ専用エンドポイントでは、オーケストレーション アセンブリからのメッセージとポートの種類を使用して、コントラクトを定義します。  
   
- 選択した場合**スキーマを WCF サービスとして公開**ウィザードでは、既存の入力と出力スキーマのサービスやオペレーション名を指定することによって、サービス定義を定義することができます。 メタデータを公開後に参照できるように、ウィザードにより .svc ファイルと IIS 仮想ディレクトリが作成されます。 BizTalk WCF サービス公開ウィザードの httpGetEnabled 属性された web.config ファイルも作成されます、 \<serviceMetadata > 要素が true に設定します。 これにより、メタデータが公開され、参照可能になります。 そのデータを使用して HTTP 経由での GET 要求を通じてアクセスできる BizTalk 受信場所用にサービス メタデータを公開する場合は、`?wsdl`サービスの URL の末尾にします。  
+ 選択した場合**スキーマを WCF サービスとして公開**ウィザードでは、既存の入力と出力スキーマのサービスやオペレーション名を指定することによって、サービス定義を定義することができます。 メタデータを公開後に参照できるように、ウィザードにより .svc ファイルと IIS 仮想ディレクトリが作成されます。 BizTalk WCF サービス公開ウィザードの httpGetEnabled 属性された web.config ファイルも作成されます、 \<serviceMetadata\>要素が true に設定します。 これにより、メタデータが公開され、参照可能になります。 そのデータを使用して HTTP 経由での GET 要求を通じてアクセスできる BizTalk 受信場所用にサービス メタデータを公開する場合は、`?wsdl`サービスの URL の末尾にします。  
   
 ## <a name="are-service-endpoints-hosted-in-iis-and-why"></a>サービス エンドポイントは IIS でホストされますか。それはなぜですか。  
  はい。サービス エンドポイントは次の分離アダプターのいずれかを使用して IIS でホストされます。  

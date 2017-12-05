@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b5b77ca46be2e6a3fb4c882947eb47829f591ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3bdbd4845ddc1dff698274492f33ec69d659188
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="approving-a-message"></a>メッセージを承認します。
 このセクションでは、修復および検証されているメッセージを承認する方法について説明します。  
@@ -30,9 +30,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  [ホーム] ウィンドウ**ドキュメント**です。  
   
-3.  ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして  **\<*部門名*> _Approver * *。  
+3.  ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして  **\<*部門名*\>_Approver * *。  
   
-4.  \<部門名 > _Approver ウィンドウで、をクリックして**受信トレイ**です。  
+4.  \<部門名\>_Approver ウィンドウで、をクリックして**受信トレイ**です。  
   
 5.  受信トレイ ウィンドウで、メッセージのタイトルにポイント メッセージのタイトルの右側にある矢印をクリックし、をクリックして**Microsoft Office InfoPath で編集**です。  
   

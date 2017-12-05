@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6c8af93f93e6acba6a0d2cffb69186715ccd49e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b73b4379944db548a30898403239ffcf9704791a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-the-itinerary-on-ramp-sample-works"></a>Itinerary 入り口サンプルの動作
 サンプル行程テスト用クライアント アプリケーションがビルドされたら、クライアント アプリケーションのウィンドウでコントロールを使用して作成した日程を含む SOAP ヘッダーのセットがディスクから指定されたメッセージ ファイルを読み込み、itinerary ヘッダーをメッセージに追加し、ESB 行程入り口処理を通じてに送信します。 旅行計画は、応答を生成する場合、アプリケーションは、応答を収集し、アプリケーション ウィンドウに表示します。  
@@ -54,13 +54,13 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  それぞれの実際のコンテンツ**\<リゾルバー >**要素に上記のリストで、行をラップするために使用する空白文字が含まれていません。  
+>  それぞれの実際のコンテンツ**\<リゾルバー\>** 要素に上記のリストで、行をラップするために使用する空白文字が含まれていません。  
   
  Itinerary 前の構成で定義されている 3 つの手順を次に示します。  
   
 1.  BizTalk ビジネス ルール エンジン (BRE) を使用して ResolverMap ポリシーを使用して、メッセージを変換する Microsoft.Practices.ESB.Services.Transform オーケストレーションを実行します。  
   
-2.  変換されたメッセージをルーティング Microsoft.Practices.ESB.Services.Routing1 を使用して複数の場所にルーティングする Microsoft.Practices.ESB.Services.Routing オーケストレーションを実行します。  **\<ResolverGroups >**セクションが含まれています、 **\<リゾルバー >**要素とこの識別子は、接続文字列を定義します。  
+2.  変換されたメッセージをルーティング Microsoft.Practices.ESB.Services.Routing1 を使用して複数の場所にルーティングする Microsoft.Practices.ESB.Services.Routing オーケストレーションを実行します。  **\<ResolverGroups\>** セクションが含まれています、 **\<リゾルバー\>** 要素とこの識別子は、接続文字列を定義します。  
   
 3.  このサンプルで提供される ProcessAndRespond オーケストレーションを実行します。 このオーケストレーションの実装の応答として送信要求メッセージのコピー行程テスト クライアントに返送します。  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ddb40109ff402f1c1794a90e591a43e11407fba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cc742b41735f31b0da43560c19df4beb4f126d6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-delete-an-affiliate-application"></a>関連アプリケーションを削除する方法
 MMC スナップインまたはコマンド ラインを使用して、指定した関連アプリケーションを SSO データベースから削除することができます。  
@@ -43,9 +43,9 @@ MMC スナップインまたはコマンド ラインを使用して、指定し
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – deleteapp *\<アプリケーション名 >***ここで、 *\<アプリケーション名 >*関連アプリケーションの名前を指定します。SSO データベースから削除します。  
+3.  型**ssomanage – deleteapp *\<アプリケーション名\>***ここで、 *\<アプリケーション名\>*の名前を指定します。SSO データベースから削除する関連アプリケーションです。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

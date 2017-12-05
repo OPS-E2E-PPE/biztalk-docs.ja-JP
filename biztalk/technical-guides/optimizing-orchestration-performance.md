@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbd45901afb229cf884390c2a5120deac0daa90d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b4f8a3b0bcc58fbed428152bb9f55c34d867258a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-orchestration-performance"></a>オーケストレーションのパフォーマンスを最適化します。
 このトピックでは、BizTalk Server ソリューションのオーケストレーションを使用するためのベスト プラクティスについて説明します。 これには、推奨事項が含まれます。  
@@ -220,7 +220,7 @@ public static XmlDocument FromMsg(XLANGMessage old)
 }  
 ```  
   
- 別の方法は、スキーマに基づく .NET クラスを作成することです。 これにかかる時間にドキュメントの読み込みよりも少ないメモリ、 **XmlDocument**オブジェクトだけでなく .NET 開発者向けのスキーマの要素に簡単にアクセスを提供します。 BizTalk スキーマを基にクラスを生成するには、Visual Studio に付属する xsd.exe ツールを使用できます。 たとえば、実行している**xsd.exe \<schema.xsd >/classes** ItemB、ItemC、ItemA をという名前のフィールドを含む、単純なスキーマに対して次のクラスが生成されます。  
+ 別の方法は、スキーマに基づく .NET クラスを作成することです。 これにかかる時間にドキュメントの読み込みよりも少ないメモリ、 **XmlDocument**オブジェクトだけでなく .NET 開発者向けのスキーマの要素に簡単にアクセスを提供します。 BizTalk スキーマを基にクラスを生成するには、Visual Studio に付属する xsd.exe ツールを使用できます。 たとえば、実行している**xsd.exe \<schema.xsd\> /classes** ItemB、ItemC、ItemA をという名前のフィールドを含む、単純なスキーマに対して次のクラスが生成されます。  
   
 ```csharp  
 //------------------------------------------------------------------------------  
@@ -349,7 +349,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
 -   [Charles Young ブログ、BizTalk Server 2006: 補正モデル](http://go.microsoft.com/fwlink/?LinkId=158017)(http://go.microsoft.com/fwlink/?LinkId=158017)。  
   
     > [!NOTE]  
-    >  このブログで書き込まれたときに[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]念頭ブログで説明した原則にも適用[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+    >  このブログで書き込まれたときに[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]念頭ブログで説明した原則にも適用 BizTalk Server です。  
   
 ## <a name="considerations-when-using-maps-in-orchestrations"></a>オーケストレーションでマップを使用する際の考慮事項  
  オーケストレーションでマップを使用する場合は、次の考慮事項が適用されます。  
@@ -359,4 +359,4 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
 -   マップを使用して、複数のフィールドを 1 つのフィールドで集計している場合、識別フィールドまたはオーケストレーションの変数が設定されている昇格したプロパティを使用して、結果セットを累積してください。  
   
 ## <a name="see-also"></a>参照  
- [パフォーマンスを最適化します。](../technical-guides/optimizing-performance.md)
+ [パフォーマンスの最適化](../technical-guides/optimizing-performance.md)

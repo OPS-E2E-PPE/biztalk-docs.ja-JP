@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7cac65ac29af9983ec3024677bc8eedc86c924b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c99c14f16df3f6b98555a4006706eb7804f24a34
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="checklist-planning-for-operations-in-a-secure-environment"></a>チェックリスト: がセキュリティで保護された環境での操作の計画
 実行している[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セキュリティで保護された環境での展開と構成の追加の手順が必要です。 オペレーティング システムの既定のインストールが必要を使用しないこれらのアカウントが、シナリオに制限の厳しいセキュリティ ポリシーが適用されたときに、このセクションの情報はアカウントにする必要があります。 サーバーに適用される制限のレベルが異なる場合がありますが、次の情報を選択し、ほとんどのケースを反映する必要がありますが、適切な開始点です。  
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="registry-settings"></a>レジストリ設定  
  レジストリ エディターを起動する をクリックして**開始**、 をクリックして**実行**、し、、**実行** ダイアログ ボックスで、「 `regedit` ENTER キーを押します。  
   
-|[キー]|ユーザー|Permissions|詳細|  
+|Key|ユーザー|Permissions|詳細|  
 |---------|----------|-----------------|-------------|  
 |Hklm \ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  
 |Hklm \ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
 |プロセスのメモリ クォータの調整|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
 |走査チェックのバイパス|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
 |グローバル オブジェクトの作成|[SQL Server サービス アカウント]|SSIS サービスで必要です。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|委任に対して信頼されているコンピューターとユーザーのアカウントを有効にします。|SQL Server サービス アカウント、SQL Server サーバーでは、BizTalk Server サーバー、SQL Server クラスター名|BizTalk Server で必要です。 サーバー名は、フォーム\<servername >$ です。 詳細については、次を参照してください。[する方法: SQL Server フェールオーバー クラスターで Kerberos 認証を有効にする](http://go.microsoft.com/fwlink/?LinkId=157417)(http://go.microsoft.com/fwlink/?LinkId=157417)。|  
+|委任に対して信頼されているコンピューターとユーザーのアカウントを有効にします。|SQL Server サービス アカウント、SQL Server サーバーでは、BizTalk Server サーバー、SQL Server クラスター名|BizTalk Server で必要です。 サーバー名は、フォーム\<servername\>$ です。 詳細については、次を参照してください。[する方法: SQL Server フェールオーバー クラスターで Kerberos 認証を有効にする](http://go.microsoft.com/fwlink/?LinkId=157417)(http://go.microsoft.com/fwlink/?LinkId=157417)。|  
 |サービスとしてログオン|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
 |サービスとしてログオン|SSO サービス アカウント|エンタープライズ シングル サインオン サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)。|  
 |バッチ ジョブとしてログオンします。|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
@@ -117,7 +117,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="registry-settings"></a>レジストリ設定  
  レジストリ エディターを起動する をクリックして**開始**、 をクリックして**実行**、し、、**実行** ダイアログ ボックスで、「 `regedit` ENTER キーを押します。  
   
-|[キー]|ユーザー|Permissions|詳細|  
+|Key|ユーザー|Permissions|詳細|  
 |---------|----------|-----------------|-------------|  
 |Hklm \ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  
 |Hklm \ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  

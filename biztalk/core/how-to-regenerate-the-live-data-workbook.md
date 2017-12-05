@@ -12,14 +12,14 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fcabebb1429fae8531753a8a3aede5595bb148f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3e98ac5f02363c02ff422f44397fbf1f0e3b4c0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-regenerate-the-live-data-workbook"></a>ライブ データ ブックを再生成する方法
-BAM ライブ データ ブックが失われるか破損した場合、BAM 管理ユーティリティを使用してブックを再生成できます。 [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] のライブ データ ブックは [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] と互換性がないため、このプロセスは [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にアップグレードする場合にも役立ちます。  
+BAM ライブ データ ブックが失われるか破損した場合、BAM 管理ユーティリティを使用してブックを再生成できます。 このプロセスからにアップグレードする際にも役立ちます[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]ライブ データ ブック以降の BizTalk Server に[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]BizTalk Server と互換性がありません。  
   
  一般的な手順は次のとおりです。  
   
@@ -27,7 +27,7 @@ BAM ライブ データ ブックが失われるか破損した場合、BAM 管�
   
 -   PivotTable レポートを再作成します。 get-defxml コマンドを使用して取得した XML にはアクティビティとビューしか含まれていないため、Excel 用の BAM アドインを使用して PivotTable レポートを再作成する必要があります。  
   
--   PivotTable レポートの名前を変更します。 この手順は、[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にアップグレードする場合に必要です。 これは、必要な[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]、BAM によって BAM ブックの名前の 2 つのセット。 表示名と内部名です。 BAM 定義を取得すると、XML にはブックの内部名が含まれます。 PivotTable レポートの名前を変更して、ライブ データ ブックがデータベースに適切に接続できるようにする必要があります。  
+-   PivotTable レポートの名前を変更します。 この手順はからアップグレードする場合は、必要[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]BizTalk Server にします。 これは、必要な[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]、BAM によって BAM ブックの名前の 2 つのセット。 表示名と内部名です。 BAM 定義を取得すると、XML にはブックの内部名が含まれます。 PivotTable レポートの名前を変更して、ライブ データ ブックがデータベースに適切に接続できるようにする必要があります。  
   
 -   BAM 管理ユーティリティを使用してライブ データ ブックを再生成します。  
   
@@ -61,12 +61,12 @@ BAM ライブ データ ブックが失われるか破損した場合、BAM 管�
   
 1.  クリックしてメモ帳を使用して BAM 定義を取得するときに作成した abc.xml ファイルを開く**開始**をクリックすると、**実行**、メモ帳」と入力[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\abc.xml をクリックし、 **[Ok]**です。  
   
-2.  検索、\<キャプション > の下にタグ付け\<BAMDefinition >\\< 拡張子\>\\< OWC\>\\< PivotTableView\>\\<ピボット テーブル\>\\< PivotView\>\\< ラベル\>です。 このタグの内容は、いずれかの PivotTable レポートの内部名です。 次を配置することにより、他のピボット テーブル レポートの内部名を見つけることができます\<Caption > タグです。 開いている**mynewbook.xls**し、ピボット テーブル レポートの名前を変更する配置名を使用します。  
+2.  検索、\<キャプション\>下にあるタグ\<BAMDefinition\>\\< 拡張子\>\\< OWC\>\\< PivotTableView\> \\< ピボット テーブル\>\\< PivotView\>\\< ラベル\>です。 このタグの内容は、いずれかの PivotTable レポートの内部名です。 次を配置することにより、他のピボット テーブル レポートの内部名を見つけることができます\<キャプション\>タグ。 開いている**mynewbook.xls**し、ピボット テーブル レポートの名前を変更する配置名を使用します。  
   
 3.  更新したブックを保存します。  
   
     > [!NOTE]
-    >  この手順を実行する必要があるのは、[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にアップグレードしている場合だけです。  
+    >  アップグレードする場合にのみ、この手順を実行する必要があります[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]BizTalk Server にします。  
   
 ### <a name="to-regenerate-the-bam-live-data-workbook"></a>BAM ライブ データ ブックを再生成するには  
   

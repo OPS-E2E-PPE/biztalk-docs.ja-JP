@@ -17,11 +17,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27462716832631fc2a36d577b39e3ff5431b858b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35c33b914ecbb9f385e5546d100b7572b4b48b6a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-run-the-service-oriented-solution"></a>サービス指向ソリューションの実行方法
 次の手順では、単一のコンピュータでサービス指向ソリューションを実行および検証する方法について説明します。 Payment Tracker シミュレーターを開始してから、SOAP トランスポートまたは MQSeries トランスポートを使用して、要求を送信できます (アダプター バージョンおよびインライン バージョンのサービス指向ソリューションには個別の手順を使用します)。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-send-requests-by-soap-transport-using-the-client-application-stub-version"></a>クライアント アプリケーション (スタブ バージョン) で SOAP トランスポートによる要求を送信するには  
   
-1.  コマンド プロンプトを開き、ディレクトリに移動、 \< *BizTalk Server のインストール ディレクトリ*> \SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release とし、BTSScnSOSimpleClient.exe を実行します。  
+1.  コマンド プロンプトを開き、ディレクトリに移動、 \< *BizTalk Server のインストール ディレクトリ*\>\SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release とし、BTSScnSOSimpleClient.exe を実行します。  
   
 2.  文字を入力、 **RequestType**、 **RequestSource**、および**RequestID**テキスト ボックス。  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-send-requests-using-the-client-application-adapter-version"></a>クライアント アプリケーション (アダプタ バージョン) での要求を送信するには  
   
-1.  コマンド プロンプトを開き、ディレクトリに移動\< *BizTalk Server のインストール ディレクトリ*> \SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug してから実行して、PaymentTracker を開始する、次のコマンドシミュレーターの場合:  
+1.  コマンド プロンプトを開き、ディレクトリに移動\< *BizTalk Server のインストール ディレクトリ*\>\SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug と、次のコマンドを起動し実行しますPaymentTracker シミュレーターの場合:  
   
      `BTSScnSOPaymentTracker.exe LastPaymentsInputQueue LastPaymentsOutputQueue <`*キュー マネージャ名* `> 5 [<` *チャネル定義*`>]`  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
     -   Payment Tracker シミュレータを起動したままにします。  
   
-2.  コマンド プロンプトを開き、ディレクトリに移動、 \< *BizTalk Server のインストール ディレクトリ*> \SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release とし、BTSScnSOSimpleClient.exe を実行します。  
+2.  コマンド プロンプトを開き、ディレクトリに移動、 \< *BizTalk Server のインストール ディレクトリ*\>\SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release とし、BTSScnSOSimpleClient.exe を実行します。  
   
 3.  BTSScnSOSimpleClient.exe で、次に示すように、SOAP トランスポートによる要求を送信します。  
   
@@ -103,13 +103,13 @@ ms.lasthandoff: 09/20/2017
   
     3.  選択**MQSeries**で、 **Select Transport and Parameters**グループ ボックス。  
   
-    4.  型\<*キュー マネージャ名*> で、**キュー マネージャー**テキスト ボックス。 Qm _\<*コンピューター名を*> の既定値は、 \<*キュー マネージャ名*>。  
+    4.  型\<*キュー マネージャ名*\>で、**キュー マネージャー**テキスト ボックス。 Qm _\<*コンピューター名を*\>の既定値は、 \<*キュー マネージャ名*\>です。  
   
     5.  型`AdapterSOAInputQueue`で、 **Input Queue**テキスト ボックス。  
   
     6.  型`AdapterSOAOutputQueue`で、**出力キュー**テキスト ボックス。  
   
-    7.  型\<*チャネル定義*> で、**チャネル定義**ボックス。 S _\<*コンピューター名を*>/tcp/\<*コンピューター名を*> (1414) の既定値は、 \<*チャネル定義*>。  
+    7.  型\<*チャネル定義*\>で、**チャネル定義**ボックス。 S _\<*コンピューター名を*\>/tcp/\<*コンピューター名を*\>(1414) の既定値は、 \< *チャネル定義*\>です。  
   
     8.  型`ZipCode`で、**名前**下のテキスト ボックス**Authentication Elements**、内の文字を入力し、**値**テキスト ボックス。  
   
@@ -125,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-send-requests-using-the-client-application-inline-version"></a>クライアント アプリケーション (インライン バージョン) での要求を送信するには  
   
-1.  コマンド プロンプトを開き、ディレクトリに移動\< *BizTalk Server のインストール ディレクトリ*> \SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug してから実行して、PaymentTracker を開始する、次のコマンドシミュレーターの場合:  
+1.  コマンド プロンプトを開き、ディレクトリに移動\< *BizTalk Server のインストール ディレクトリ*\>\SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug してから実行して、次のコマンドを開始する、PaymentTracker シミュレーターの場合:  
   
      `BTSScnSOPaymentTracker.exe LastPaymentsInputQueue LastPaymentsOutputQueue <`*キュー マネージャ名* `> 5 [<` *チャネル定義*`>]`  
   
@@ -142,7 +142,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  アダプタ バージョンとインライン バージョンでは、同じ MQSeries キュー (LastPaymentsOutputQueue) が使用されます。 2 つのバージョンの競合状態を避けるには、MQSeries キューで受信を待機しているアダプタのバージョンの受信場所を無効にします。  
   
-3.  コマンド プロンプトを開き、ディレクトリに移動、 \< *BizTalk Server のインストール ディレクトリ*> \SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release とし、BTSScnSOSimpleClient.exe を実行します。  
+3.  コマンド プロンプトを開き、ディレクトリに移動、 \< *BizTalk Server のインストール ディレクトリ*\>\SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release とし、BTSScnSOSimpleClient.exe を実行します。  
   
 4.  BTSScnSOSimpleClient.exe で、次に示すように、SOAP トランスポートによる要求を送信します。  
   
@@ -174,13 +174,13 @@ ms.lasthandoff: 09/20/2017
   
     3.  選択**MQSeries**で、 **Select Transport and Parameters**グループ ボックス。  
   
-    4.  型\<*キュー マネージャ名*> で、**キュー マネージャー**テキスト ボックス。 Qm _\<*コンピューター名を*> の既定値は、 \<*キュー マネージャ名*>。  
+    4.  型\<*キュー マネージャ名*\>で、**キュー マネージャー**テキスト ボックス。 Qm _\<*コンピューター名を*\>の既定値は、 \<*キュー マネージャ名*\>です。  
   
     5.  型`InlineSOAInputQueue`で、 **Input Queue**テキスト ボックス。  
   
     6.  型`InlineSOAOutputQueue`で、**出力キュー**テキスト ボックス。  
   
-    7.  型\<*チャネル定義*> で、**チャネル定義**ボックス。 S _\<*コンピューター名を*>/tcp/\<*コンピューター名を*> (1414) の既定値は、 \<*チャネル定義*>。  
+    7.  型\<*チャネル定義*\>で、**チャネル定義**ボックス。 S _\<*コンピューター名を*\>/tcp/\<*コンピューター名を*\>(1414) の既定値は、 \< *チャネル定義*\>です。  
   
     8.  型`ZipCode`で、**名前**下のテキスト ボックス**Authentication Elements**、内の文字を入力し、**値**テキスト ボックス。  
   
@@ -196,4 +196,4 @@ ms.lasthandoff: 09/20/2017
  [サービス指向ソリューションをインストールする前に](../core/before-installing-the-service-oriented-solution.md)   
  [指向ソリューションのスタブ バージョンのサービスをインストールする方法](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   
  [指向ソリューションのインライン バージョンおよびアダプター バージョンのサービスをインストールする方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
- [開発者のコンピュータ設定、サービス指向ソリューション](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [サービス指向ソリューションに対する開発者のコンピューター設定](../core/developer-machine-setup-for-the-service-oriented-solution.md)

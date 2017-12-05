@@ -19,11 +19,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1381ee4e5c2b90a96c52b59d125ec3121af02a4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbb7ea650a2845d8ebdcdcc2204f8346c5737c43
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-the-sso-database"></a>SSO データベースを更新する方法
 SSO データベースのグローバル情報 (マスター シークレット サーバー ID、アカウント名、データベースの監査、チケットのタイムアウト、資格情報キャッシュのタイムアウトなど) は、MMC スナップインまたはコマンド ラインを使用して変更できます。  
@@ -79,9 +79,9 @@ SSO データベースのグローバル情報 (マスター シークレット 
   
 1.  をクリックして**開始**、 をクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – updatedb\<更新プログラム ファイル >**ここで、 **\<更新プログラム ファイル >**はパスとファイルの名前。  
+3.  型**ssomanage – updatedb\<更新ファイル\>**ここで、 **\<更新ファイル\>**はパスとファイルの名前。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

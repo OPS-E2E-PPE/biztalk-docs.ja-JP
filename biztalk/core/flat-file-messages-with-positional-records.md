@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26c9e4551abcbd0fba32b21fb8e4205bece6e82f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42ad36873c5b252afb185f5e341de923942dea73
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="flat-file-messages-with-positional-records"></a>位置指定のレコードのあるフラット ファイル メッセージ
 フラット ファイル インスタンス メッセージ内の位置指定レコードには、事前に定義された長さの個別のフィールド (データ項目) が含まれています。 フィールドは、これらの長さに従って解析されます。 次に示す､フラット ファイル インスタンス メッセージの位置指定レコードを例として考えてみます。ここでは、出荷先住所を記載し、最初の行に各フィールドに予約される文字数が示されています。  
@@ -65,7 +65,7 @@ US        Alice Smith         123 Maple Street    Mill Valley    CA 90952
   
 -   特定の文字数ではなく特定のバイト数で指定したフィールド長を持つ位置指定レコード。 詳細については、次を参照してください。[位置 (バイト単位) をカウント](../core/position-counting-in-bytes.md)です。  
   
- 位置指定フラット ファイルを使用する方法を理解するために、サンプルの FlatFileReceive フォルダーと FlatFileSend フォルダー \Program Files\Microsoft にを参照してください。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples\Pipelines\AssemblerDisassembler\\です。  
+ 位置指定フラット ファイルを使用する方法を理解するために、サンプルの FlatFileReceive フォルダーと FlatFileSend フォルダー \Program Files\Microsoft BizTalk Server\SDK\Samples\Pipelines\AssemblerDisassembler にを参照してください。\\です。  
   
 > [!NOTE]
 >  設定する必要がありますが、フラット ファイルに区切られたおよび位置指定レコードの両方が含まれている場合、**構造**にルート ノードのプロパティ**Delimited**と**構造**のプロパティいずれかにレコード ノードの下位**区切り記号付き**または**位置指定**に応じて。  

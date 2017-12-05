@@ -7,22 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- sustainable load test
-- maximum sustainable throughput (MST), testing
-- LoadGen tool
-- LoadGen tool, downloading
-- testing, engine maximum sustainable throughput
 ms.assetid: e54667b9-7262-43c8-a013-9242eb062daf
 caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df522748a2d4522e691fb4f579c3fdd26c788e4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dd5b9a2697cb96bb2d042b9fee6a15317f35971c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a>エンジンの MST を測定するためのテスト シナリオ
 このセクションでは、BizTalk システムを次の 3 つの負荷レベルで起動したときの効率性を測定するために実装したテスト シナリオについて説明します。  
@@ -59,7 +53,7 @@ ms.lasthandoff: 09/20/2017
  テスト シナリオは非常に単純です。 負荷生成ツール LoadGen 2007 をロード ドライバー サーバーにインストールし、ファイル アダプターによって監視される共有に、ファイルのコピーを送信します。 負荷生成ツールにより、入力ファイル インスタンスのコピーがファイル共有に均等に配布されます。  
   
 > [!NOTE]
->  LoadGen 2007 ツールはダウンロード[http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841)です。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールは、ダウンロード[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)です。 MSMQ アダプターで LoadGen を使用する方法については、次を参照してください。 [MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)です。  
+>  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)です。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールは、ダウンロード[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)です。 MSMQ アダプターで LoadGen を使用する方法については、次を参照してください。 [MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)です。  
   
  BizTalk ファイル アダプターは、ファイル共有を監視してメッセージをメッセージ ボックスに公開するように構成されています。 受信図形と送信図形のみを含んでいる簡単なオーケストレーションで、公開されたメッセージをサブスクライブします。 オーケストレーションによってメッセージ ボックスに公開されたメッセージは、ファイル送信ポートで取得されて共通の共有に送信され、SAN で定義されます。 出力 SAN 共有に到着したファイルは、テストの実行中にファイルがこの共有に蓄積されるのを回避するために、直ちに削除されます。  
   
@@ -101,15 +95,13 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  負荷をいくら生成してもスプール テーブルが無制限に拡大しない場合、システムで最も低速な部分は処理/送信側ではなく、受信側であるということになります。  
   
-> [!NOTE]
->  維持可能なロード テストとオーバードライブ ロード テストには SQL Server 2000 を使用し、フラッドゲート ロード テストには SQL Server 2005 を使用しました。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
+
+## <a name="next"></a>Next
   
 -   [Microsoft BizTalk LoadGen 2007 ツールの使用](../core/using-the-microsoft-biztalk-loadgen-2007-tool.md)  
   
 -   [維持可能なロード テスト](../core/sustainable-load-test.md)  
   
--   [オーバー ドライブ ロード テスト](../core/overdrive-load-test.md)  
+-   [オーバードライブ ロード テスト](../core/overdrive-load-test.md)  
   
--   [フラッド ゲート ロード テスト](../core/floodgate-load-test.md)
+-   [フラッドゲート ロード テスト](../core/floodgate-load-test.md)

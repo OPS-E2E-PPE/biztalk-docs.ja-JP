@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b06c7383dee805612a3f599148f1d631891ace79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4bd438725b53362cda1b041af697283e68d77ba7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-the-resolver-service-sample"></a>リゾルバー サービスのサンプルをインストールします。
 このセクションでは、リゾルバー サービスのサンプルをインストールするプロセスについて説明します。 リゾルバー サービスに依存して、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア ソリューションです。 インストール、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コアは自動的にコピーして、適切な場所にこのサンプルに必要な中核となるアセンブリをインストールします。  
@@ -42,4 +42,4 @@ ms.lasthandoff: 09/20/2017
 |||ResolveMap|  
 |BizTalk アプリケーション GlobalBank.ESB|マップ|(なし)|  
 |グローバル アセンブリ キャッシュ|アセンブリ|(なし)|  
-|%Program Files %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline コンポーネント|パイプライン コンポーネント|(なし)|
+|%Program Files %\\BizTalk Server\Pipeline コンポーネント|パイプライン コンポーネント|(なし)|

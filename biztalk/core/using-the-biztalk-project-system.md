@@ -17,16 +17,16 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e55e1280f4054c431f53aa21fa16123f11509f7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c5b8c3a83d75219b9e52fd2ab13124480d772832
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-biztalk-project-system"></a>BizTalk プロジェクト システムの使用
 BizTalk プロジェクト システムを使用すると、BizTalk ソリューションを Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境で作成、編成、および構成できます。 このセクションの各トピックおよび手順では、BizTalk プロジェクト システムを使用して、さまざまな作業を行う方法について説明しています。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] プロジェクト システムでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で他の Microsoft Build Engine (MSBuild) プロジェクトを扱う際に使用されるものと同じプロジェクト管理の原則や手順が適用されます。 このセクションでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で動作するアプリケーションの作成で行われる共通の作業手順について説明します。  
+ BizTalk Server プロジェクト システムでは、同じプロジェクト管理の原則と内の他の Microsoft Build Engine (MSBuild) プロジェクトで使用するプロシージャ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。 このセクションでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で動作するアプリケーションの作成で行われる共通の作業手順について説明します。  
   
  MSBuild の詳細については、MSBuild のリファレンス セクションを参照してください、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]連結ヘルプ コレクション[http://go.microsoft.com/fwlink/?LinkId=193567](http://go.microsoft.com/fwlink/?LinkId=193567)です。  
   
@@ -131,4 +131,4 @@ BizTalk プロジェクト システムを使用すると、BizTalk ソリュー
  [ビジネス ルール作成ツールの Windows](../core/windows-of-the-business-rule-composer.md)   
  [BizTalk エディターの使用](../core/using-biztalk-editor.md)   
  [BizTalk マッパーの使用](../core/using-biztalk-mapper.md)   
- [開発者用ツール](../core/developer-tools.md)
+ [開発ツール](../core/developer-tools.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6752a9f379cf8739e67420e1acb971959e6850d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f81189e34346d377686dac79b44e5a9b34889dc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-sql-adapter"></a>SQL アダプターのパフォーマンス カウンターを使用します。
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムによって作成のパフォーマンス カウンター カテゴリ"[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]"アダプター パックのインストールと共にします。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  `<endpointId>`として派生`<sql_server_name>, <instance_name>, <database_name>`です。  
   
- \<ActionId > は、次のように派生します。  
+ \<ActionId\>は次のように派生します。  
   
 -   接続を開くには、アクション ID「開く」です。  
   

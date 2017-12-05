@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: acf5cb36908031f9256f25dd68435003b74d2633
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e495be91cc80e072f58a1e8149feb64773f1e51
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-6-configuring-the-biztalk-orchestration-servers"></a>手順 6: オーケストレーションの BizTalk Server を構成します。
 このセクションでは、BizTalk オーケストレーション サーバーの構成のガイドラインを示します。  
@@ -34,12 +34,12 @@ ms.lasthandoff: 09/20/2017
   
     -   DTC が、ファイアウォールの内側にある場合は、構成を参照してください。[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]分散トランザクション コーディネーター (DTC) に「ファイアウォール経由の作業がある[http://go.microsoft.com/fwlink/?linkid=48872](http://go.microsoft.com/fwlink/?linkid=48872)です。  
   
-2.  BizTalk Server の追加のソフトウェアの前提条件をインストールしてインストールして構成[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]」の説明に従って、[オーケストレーション サーバー上の BizTalk Server の構成をインストールおよび](../../adapters-and-accelerators/accelerator-swift/installing-and-configuring-biztalk-server-on-the-orchestration-servers.md)です。  
+2.  BizTalk Server の追加のソフトウェアの前提条件のインストール、インストールして」の説明に従って、BizTalk Server を構成する[オーケストレーション サーバー上の BizTalk Server の構成をインストールおよび](../../adapters-and-accelerators/accelerator-swift/installing-and-configuring-biztalk-server-on-the-orchestration-servers.md)です。  
   
 3.  インストールし、構成[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]インストール」の説明に従って、[のインストールと BizTalk Accelerator for SWIFT メッセージング サーバー上を構成する](../../adapters-and-accelerators/accelerator-swift/installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers.md)です。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [インストールして、オーケストレーション サーバーに BizTalk Server を構成します。](../../adapters-and-accelerators/accelerator-swift/installing-and-configuring-biztalk-server-on-the-orchestration-servers.md)  
+-   [オーケストレーション サーバーに BizTalk Server をインストールして構成する](../../adapters-and-accelerators/accelerator-swift/installing-and-configuring-biztalk-server-on-the-orchestration-servers.md)  
   
--   [インストールと BizTalk Accelerator をオーケストレーション サーバーに SWIFT の構成](../../adapters-and-accelerators/accelerator-swift/install-and-configure-biztalk-accelerator-for-swift-on-orchestration-servers.md)
+-   [オーケストレーション サーバーに BizTalk Accelerator for SWIFT をインストールして構成する](../../adapters-and-accelerators/accelerator-swift/install-and-configure-biztalk-accelerator-for-swift-on-orchestration-servers.md)

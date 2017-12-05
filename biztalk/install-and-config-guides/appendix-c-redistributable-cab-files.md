@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6049ac62e8a8b55ff6bbfe241f716c2ea9570d34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1a1f2b6866a2841abaa248479430a7584db3a0b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="appendix-c-redistributable-cab-files"></a>付録 C: 再配布可能な CAB ファイル
 これらの CAB ファイルは BizTalk Server セットアップで利用されます。
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 
 - SQL XML には、CAB ファイルに含まれていない独自のソフトウェア要件 (`.NET Framework 3.5` や `.NET Framework 2.0` など) がある場合があります。 BizTalk Server からインターネットにアクセスできる場合、SQL XML ソフトウェア要件は自動的にインストールされます。 BizTalk Server がインターネットにアクセスできない場合は、SQL XML ソフトウェア要件を手動でインストールします。
 
-- CAB ファイルのインストール パスはインストール フォルダーの **Setup.xml** ファイルにも表示されます ([!INCLUDE[btsBizTalkServerPathx64_md](../includes/btsbiztalkserverpathx64-md.md)]\<ご利用のバージョン>)。
+- CAB ファイルのインストール パスが記載されても、 **Setup.xml**インストール フォルダー内のファイル ([!INCLUDE[btsBizTalkServerPathx64_md](../includes/btsbiztalkserverpathx64-md.md)]\<バージョン\>)。
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に必要なソフトウェアの一部は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のセットアップ実行時にコンピューターにインストールされます。  
   

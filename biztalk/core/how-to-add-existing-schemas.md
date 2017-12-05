@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4be40f1bf0e1ee9cec7d3598e13a1b2a16cc451
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6ba8f76bd0f306c23ce270217ac3b2aca8b9ccc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-add-existing-schemas"></a>既存のスキーマを追加する方法
 既存のスキーマを既存の BizTalk プロジェクトに追加したい場合があります。 このトピックでは、必要な手順について説明します。  
@@ -27,9 +27,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  **[プロジェクト]** メニューの **[既存項目の追加]**をクリックします。  
   
-3.  **既存項目の追加 - \<* BizTalk ProjectName*> * * ダイアログ ボックスで、スキーマの場所を参照、スキーマを選択してをクリックして**開く**です。  
+3.  **既存項目の追加 - \<* BizTalk ProjectName*\>* * ダイアログ ボックスで、スキーマの場所を参照、スキーマを選択してをクリックして**を開く**.  
   
      既存のスキーマが BizTalk プロジェクトに追加されます。BizTalk エディターで表示するには、手動で開く必要があります。  
   
 ## <a name="see-also"></a>参照  
- [プロジェクト内のスキーマを管理します。](../core/managing-schemas-within-projects.md)
+ [プロジェクト内のスキーマの管理](../core/managing-schemas-within-projects.md)

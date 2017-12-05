@@ -16,17 +16,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb64ba0d14fe2b3f2d551ab851537cd16d1b7940
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5667d2f6a9f18bbccbdebc0d5dc36ad73e4867ec
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-trfc-operations"></a>TRFC 操作のメッセージ スキーマ
 Transactiostructnal リモート関数呼び出し (tRFCs) は、作業 (LUW) の論理単位での RFC 呼び出しの実行に使用されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]受信 tRFC の呼び出しのため LUW あたり複数 tRFCs をサポートしています。 送信 (クライアント) tRFC の呼び出しのため、アダプターは、LUW; で tRFC は 1 つのみをサポートできます。そのための LUW に作成 SAP クライアント tRFC の呼び出しごとにします。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]tRFC 操作をサポートするを参照してください[SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。 このセクションでは、メッセージ スキーマと tRFC 操作のアクションについて説明します。  
   
 ## <a name="message-structure-for-trfc-operations"></a>TRFC 操作のメッセージの構造  
- 各 tRFC 操作は、要求メッセージと応答 (応答) メッセージで構成されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システム トランザクション ID (TID) を SAP システムで LUW を識別する GUID を関連付けます。 この GUID は、どちらの tRFC 要求と応答メッセージ内で使用できる、 \<TransactionalRfcOperationIdentifier > 要素。  
+ 各 tRFC 操作は、要求メッセージと応答 (応答) メッセージで構成されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システム トランザクション ID (TID) を SAP システムで LUW を識別する GUID を関連付けます。 この GUID は、どちらの tRFC 要求と応答メッセージ内で使用できる、 \<TransactionalRfcOperationIdentifier\>要素。  
   
 -   送信 tRFC の呼び出しのため、tRFC 要求メッセージでアダプターに GUID を渡すことができます。 GUID を指定しない場合、アダプターでは、いずれかが生成されます。 アダプターは、常に tRFC 応答メッセージの GUID を返します。 SAP システムで TID を確認する RfcConfirmTransID 操作では、この GUID を渡します。  
   
@@ -39,9 +39,9 @@ Transactiostructnal リモート関数呼び出し (tRFCs) は、作業 (LUW) �
   
 |操作|XML データ構造|Description|  
 |---------------|-------------------|-----------------|  
-|tRFC<br /><br /> ([RFC_NAME])|`<[RFC_NAME] xmlns="[VERSION]/Trfc/">   <IN1_PARAM_NAME>v1</IN1_PARAM_NAME>   <IN2_PARAM_NAME>v2</IN2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Trfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   …   <TransactionalRfcOperationIdentifier>GUID   </TransactionalRfcOperationIdentifier> </[RFC_NAME]>`|SAP システムで tRFC を呼び出します。<br /><br /> に変更するインポートしてテーブル パラメーターがサポートされます。<br /><br /> -インポートし、SAP 構造体の型、SAP テーブル型または SAP 単純なデータ型のパラメーターを変更できます。<br /><br /> -tRFC クライアント呼び出しには、出力側で返される値はありません。 SAP では、入力側の値のみを使用して非同期的に実行します。<br /><br /> \<TransactionalRfcOperationIdentifier > 要素。<br /><br /> -送信 tRFC の呼び出しの GUID がこの要素で、アダプターで SAP TID にマップする必要がありますを指定することができます。 GUID が指定されていない場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]いずれかを生成し、tRFC の SAP TID にマップします。<br /><br /> -着信 tRFC の呼び出しに対しては、アダプターは、この要素内の SAP TID にマップされている GUID を渡します。|  
-|tRFC 応答<br /><br /> ([RFC_NAME] 応答)。|`<[RFC_NAME]Response xmlns="[VERSION]/Trfc/">   <TransactionalRfcOperationIdentifier>GUID   </TransactionalRfcOperationIdentifier> </[RFC_NAME]Response>`|RFC が SAP システムに送信されたことを示します。<br /><br /> -tRFC クライアント呼び出しには、出力側で返される値はありません。 SAP では、入力側の値のみを使用して非同期的に実行します。<br /><br /> \<TransactionalRfcOperationIdentifier > 要素。<br /><br /> -に対して送信 tRFC の呼び出しは、アダプターは、この要素で tRFC の SAP TID に関連付けられている GUID を送信します。<br /><br /> -着信 tRFC の呼び出しのため、要求メッセージで、アダプターによって送信された GUID をオプションで返すことができます。|  
-|RfcConfirmTransID<br /><br /> (RfcConfirmTransID)|`<RfcConfirmTransID xmlns="[VERSION]/Trfc/">   <TransactionalRfcOperationIdentifier>GUID   </TransactionalRfcOperationIdentifier> </RfcConfirmTransID>`|RfcConfirmTransID 操作は、SAP システムに対して送信 tRFC 操作で使用される TID を確認します。<br /><br /> \<TransactionalRfcOperationIdentifier > 要素には、送信 tRFC の呼び出しに関連付けられている TID にマップされている GUID が含まれています。 これは、tRFC 応答メッセージにアダプターによって返された GUID の値を設定する必要があります。<br /><br /> RfcConfirmTransID 操作に関する詳細については、次を参照してください。[特別な操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)です。|  
+|tRFC<br /><br /> ([RFC_NAME])|`<[RFC_NAME] xmlns="[VERSION]/Trfc/">   <IN1_PARAM_NAME>v1</IN1_PARAM_NAME>   <IN2_PARAM_NAME>v2</IN2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Trfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   …   <TransactionalRfcOperationIdentifier>GUID   </TransactionalRfcOperationIdentifier> </[RFC_NAME]>`|SAP システムで tRFC を呼び出します。<br /><br /> に変更するインポートしてテーブル パラメーターがサポートされます。<br /><br /> -インポートし、SAP 構造体の型、SAP テーブル型または SAP 単純なデータ型のパラメーターを変更できます。<br /><br /> -tRFC クライアント呼び出しには、出力側で返される値はありません。 SAP では、入力側の値のみを使用して非同期的に実行します。<br /><br /> \<TransactionalRfcOperationIdentifier\>要素。<br /><br /> -送信 tRFC の呼び出しの GUID がこの要素で、アダプターで SAP TID にマップする必要がありますを指定することができます。 GUID が指定されていない場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]いずれかを生成し、tRFC の SAP TID にマップします。<br /><br /> -着信 tRFC の呼び出しに対しては、アダプターは、この要素内の SAP TID にマップされている GUID を渡します。|  
+|tRFC 応答<br /><br /> ([RFC_NAME] 応答)。|`<[RFC_NAME]Response xmlns="[VERSION]/Trfc/">   <TransactionalRfcOperationIdentifier>GUID   </TransactionalRfcOperationIdentifier> </[RFC_NAME]Response>`|RFC が SAP システムに送信されたことを示します。<br /><br /> -tRFC クライアント呼び出しには、出力側で返される値はありません。 SAP では、入力側の値のみを使用して非同期的に実行します。<br /><br /> \<TransactionalRfcOperationIdentifier\>要素。<br /><br /> -に対して送信 tRFC の呼び出しは、アダプターは、この要素で tRFC の SAP TID に関連付けられている GUID を送信します。<br /><br /> -着信 tRFC の呼び出しのため、要求メッセージで、アダプターによって送信された GUID をオプションで返すことができます。|  
+|RfcConfirmTransID<br /><br /> (RfcConfirmTransID)|`<RfcConfirmTransID xmlns="[VERSION]/Trfc/">   <TransactionalRfcOperationIdentifier>GUID   </TransactionalRfcOperationIdentifier> </RfcConfirmTransID>`|RfcConfirmTransID 操作は、SAP システムに対して送信 tRFC 操作で使用される TID を確認します。<br /><br /> \<TransactionalRfcOperationIdentifier\>要素には、送信 tRFC の呼び出しに関連付けられている TID にマップされている GUID が含まれています。 これは、tRFC 応答メッセージにアダプターによって返された GUID の値を設定する必要があります。<br /><br /> RfcConfirmTransID 操作に関する詳細については、次を参照してください。[特別な操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)です。|  
 |RfcConfirmTransIDResponse<br /><br /> (RfcConfirmTransIDResponse)|`<RfcConfirmTransIDResponse xmlns="[VERSION]/Trfc/"> </RfcConfirmTransIDResponse>`|示します、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムで TID を確認しています。|  
   
  [バージョン]、メッセージのバージョン文字列を =たとえば、http://Microsoft.LobServices.Sap/2007/03 です。  

@@ -17,14 +17,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a90090c55dcbb0f8e55296d2711d5e4b36cd346
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e54a532d33e4f84eb5f1ecea67f957d415344a7c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="important-security-notes-for-the-business-rule-engine"></a>ビジネス ルール エンジンの重要なセキュリティに関する注意事項
-このトピックでは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の既知のセキュリティの問題点とセキュリティのリスクを軽減するために行う操作手順について説明します。  
+このトピックでは、Microsoft BizTalk Server とセキュリティ上のリスクを軽減するために行う手順の既知のセキュリティ問題についてまとめます。  
   
 ## <a name="malicious-schema-input-causing-denial-of-service-attack"></a>サービス拒否の攻撃を発生させる悪質なスキーマ入力  
  ファクトをアサートすると、各ルールは、ポリシー内のサポートされている種類と一致する各オブジェクトを確認します。 セレクターによって渡されたスキーマに含まれる要素のいずれかを使用するポリシー内に、あるルールが存在すると仮定します。 この要素/属性がセレクターと一致する場合にこのインスタンスが数千回繰り返されると、このようなすべてのインスタンスがアサートされます。この結果、パフォーマンスが低下し、サービスの拒否攻撃 (DoS) が起こる可能性があります。  

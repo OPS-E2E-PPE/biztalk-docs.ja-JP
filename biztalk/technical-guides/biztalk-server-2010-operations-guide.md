@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 886dc607f0d133392b522a13ec15026a0f421f40
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5078cdc0a4b2d28e81daf2247cb0f1f35b3d6288
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-2010-operations-guide"></a>BizTalk Server 2010 操作ガイド
 Microsoft® BizTalk® Server 2010 操作ガイドへようこそ。 実装と特に IT プロフェッショナル向けに、BizTalk ソリューションの管理に関連するすべてのユーザーにとって価値のあるリソースにするには、このガイドを作成しました。  
@@ -24,13 +24,13 @@ Microsoft® BizTalk® Server 2010 操作ガイドへようこそ。 実装と特
  Chm、pdf、または docx フォームでは、このガイドのコピーをダウンロードするには[Microsoft BizTalk Server 2010 操作ガイド](http://go.microsoft.com/fwlink/?LinkId=212652)(http://go.microsoft.com/fwlink/?LinkId=212652)。  
   
 ## <a name="which-versions-of-biztalk-server-does-the-guide-cover"></a>このガイドはどのバージョンの BizTalk Server をカバーしますか。  
- このガイドの要求を満たす[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ですぐに開始運用の準備に役立つ情報を提供し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップします。  
+ このガイドは BizTalk Server の要求を満たす、運用の準備について説明するとすぐに開始、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップします。  
   
 > [!NOTE]
 >  操作ガイド」を参照してくださいに[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]または[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]を参照してください[http://go.microsoft.com/fwlink/?LinkID=130458](http://go.microsoft.com/fwlink/?LinkID=130458)です。  
   
 ## <a name="where-do-i-start"></a>ここで行いますか。  
- 計画、展開、および管理の機能面に従ってガイドを編成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールします。 これらの機能面に従ってため読み取ることができます。 ただし、チェックリストことが最も要求後の情報を実現する、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ユーザー補助の簡単操作の次の表に、ドキュメント内のすべてのチェックリストを分類している運用ガイド 』 おです。  
+ 計画、展開、および管理の機能面に従ってガイドを編成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールします。 これらの機能面に従ってため読み取ることができます。 ただし、チェックリストことが最も収集後は、BizTalk Server オペレーション ガイドの情報を実現するには、私たちが分類ユーザー補助の簡単操作の次の表に、ドキュメント内のすべてのチェックリスト。  
   
 |||  
 |-|-|  

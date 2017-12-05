@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 913e8c0a3f44673d5bf06bf48d7c1ccf8b7a4ee2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e2e2dc6fe0c1427ac959ce77d6ff4f46b4f4285
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-enterprise-message-service-to-send-data"></a>チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用したデータの送信
 BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO システムにデータを送信できます。 このチュートリアルでは、これを示す SDK サンプルについて説明します。  
@@ -31,7 +31,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO
  このサンプルでは、ファイル フォルダーから XML ファイルを取得し、そのファイルをオーケストレーションに送信し、BizTalk Adapter for TIBCO Enterprise Message Service を使用して TIBCO システム内にレコードを作成します。  
   
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
- このサンプルは、[!INCLUDE[vs2010](../includes/vs2010-md.md)] でデザインされ、BizTalk Adapter for TIBCO Enterprise Message Service を BizTalk オーケストレーションと組み合わせて使用する基本的な機能を紹介する目的で作成されました。  
+ このサンプルは、Visual Studio でデザインでは、BizTalk オーケストレーションで TIBCO Enterprise Message Service の BizTalk アダプターを使用して基本的な機能を示しています。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルの既定の場所は、次のとおりです。  

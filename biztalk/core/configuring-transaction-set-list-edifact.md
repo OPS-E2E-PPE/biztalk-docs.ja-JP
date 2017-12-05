@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f6b4d9a5aae6c8758d3a6d4f46d18f9a820fabd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a95feac48f7cb5137e95a34bf46c38811bb75c51
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-transaction-set-list-edifact"></a>トランザクション セットの一覧の構成 (EDIFACT)
-[!INCLUDE[prague](../includes/prague-md.md)] では、EDI インターチェンジの処理中に常に含めるまたは除外する必要のあるトランザクション セットの一覧を定義できます。 ここでは、トランザクション セットの一覧を作成する方法について説明します。  
+BizTalk Server では、含まれているまたは EDI インターチェンジを処理中に除外する必要がありますは常にトランザクション セットのリストを定義することができます。 ここでは、トランザクション セットの一覧を作成する方法について説明します。  
   
 > [!IMPORTANT]
 >  プロパティは無効では、このページをオフにした場合でも、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェック ボックスを作成するパーティを作成するときに、アグリーメント。  
@@ -50,4 +50,4 @@ ms.lasthandoff: 09/20/2017
 7.  をクリックして**適用**構成を続行する前に、変更を受け入れるか、をクリックする**OK**を変更を検証し、ダイアログ ボックスを閉じます。  
   
 ## <a name="see-also"></a>参照  
- [トランザクション セットの構成設定 (EDIFACT)](../core/configuring-transaction-set-settings-edifact.md)
+ [トランザクション セットの設定を構成する (EDIFACT)](../core/configuring-transaction-set-settings-edifact.md)

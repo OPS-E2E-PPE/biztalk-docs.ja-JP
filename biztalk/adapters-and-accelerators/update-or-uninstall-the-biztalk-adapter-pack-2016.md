@@ -13,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51c30fa3b107113991a8b4893fa2626a53d67159
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb0dd0b9d778f878df9a06efdfc0f41754403690
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update-or-uninstall-the-biztalk-adapter-pack-2016"></a>更新または BizTalk アダプター パック 2016 のアンインストール
 変更またはアンインストールする方法、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。
@@ -97,7 +97,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="uninstall-or-remove-the-biztalk-adapter-pack"></a>アンインストールするか、BizTalk Adapter Pack を削除します。  
   
 > [!IMPORTANT]
->  TRFC 機能を使用する SQL Server データベースでテーブルを作成した場合、 [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]、アンインストールする前に手動で削除する必要があります、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールのコピー、`SapAdapter-DbScript-Uninstall.sql`ファイルを通常*\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*です。 作成したテーブルを削除するには、このファイルを実行します。  
+>  TRFC 機能を使用する SQL Server データベースでテーブルを作成した場合、 [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]、アンインストールする前に手動で削除する必要があります、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールのコピー、`SapAdapter-DbScript-Uninstall.sql`ファイルを通常*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*です。 作成したテーブルを削除するには、このファイルを実行します。  
   
 次の手順を削除する、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]コンピューターからです。 あるかどうかを確認、[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]セットアップ ウィザードを実行する前にインストールします。  
   
@@ -137,7 +137,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="remove-the-bindings"></a>バインドを削除します。  
  次の手順を完了*のみ*machine.config ファイルから、アダプターのバインドまたは .NET Framework Data Provider の登録を削除するセットアップ ウィザードが失敗した場合。  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な*\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG*です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な*\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG*です。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   

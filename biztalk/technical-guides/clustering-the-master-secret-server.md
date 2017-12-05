@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 674cbf64e11817c951d3841ebdc9f6ee979c0e8c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f37997582cbd94d8bbb5eaee829eead0af85ad2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="clustering-the-master-secret-server"></a>マスター シークレット サーバーをクラスタ リング
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]アプリケーション サービスがインストールされているエンタープライズ シングル サインオン (SSO) サービスに依存してハード コーディングされたを維持[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 SSO サービスは、開始する場合は、マスター シークレット サーバーと通信できる必要があります。 マスター シークレット サーバーのフォールト トレランスを提供する、マスター シークレット サーバーで SSO サービスをクラスター化することをお勧めします。 詳細については、次を参照してください。[高可用性 SSO インストール オプション](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838) で[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+BizTalk Server アプリケーション サービスと共にインストールされているエンタープライズ シングル サインオン (SSO) サービスに依存してハード コーディングされたを保持する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 SSO サービスは、開始する場合は、マスター シークレット サーバーと通信できる必要があります。 マスター シークレット サーバーのフォールト トレランスを提供する、マスター シークレット サーバーで SSO サービスをクラスター化することをお勧めします。 詳細については、次を参照してください。[高可用性 SSO インストール オプション](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838)、BizTalk Server のヘルプ。  
   
 ## <a name="preparing-for-clustering-the-master-secret-server"></a>マスター シークレット サーバーをクラスターの準備  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
  マスター シークレット サーバーをクラスタ リングの詳細な手順については、次を参照してください。[マスター シークレット サーバーをクラスター化する方法](http://go.microsoft.com/fwlink/?LinkId=156839)(http://go.microsoft.com/fwlink/?LinkId=156839) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   
 ## <a name="see-also"></a>参照  
- [新しいマスター シークレット サーバーを手動で指定します。](../technical-guides/designating-a-new-master-secret-server-manually.md)
+ [新しいマスター シークレット サーバーを手動で指定する](../technical-guides/designating-a-new-master-secret-server-manually.md)

@@ -24,11 +24,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8510172517d58475d855d258b72b16271835dbc1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d484f3a28896528ac2ab9367a8a7a0bbe3604801
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a4swift-web-service-security"></a>A4SWIFT Web サービスのセキュリティ
 [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]安全性の高いハイブリッド セキュリティ モデルの既定の Web サービスがインストールされています。 Web サービスの間で信頼の境界が存在する IIS/ASP.NET モデルで、[!INCLUDE[btsWinSharePointSvcsNoVersion](../../includes/btswinsharepointsvcsnoversion-md.md)]サイト、および[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]データベース。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
  間のセキュリティで保護された通信にインターネット プロトコル セキュリティ (IPSec) を実装することも[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]です。  
   
- IPSec の実装との間の通信を保護するための詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]、「セキュリティで保護する展開の BizTalk Server」を参照してください[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ IPSec の実装との間の通信を保護するための詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]、"セキュリティで保護する、展開の BizTalk Server"BizTalk Server のヘルプを参照してください。  
   
   
 ## <a name="message-level-security"></a>メッセージ レベルのセキュリティ  

@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c894ab80926d2fad66af540c492dd053570aaa4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1eb4f21cf9311399ef6092b95fa818547679a240
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-a-simple-business-policy"></a>チュートリアル: 単純なビジネス ポリシーを作成します。
 このチュートリアルは、ビジネス ルール作成ツールを使用してという名前の単純なビジネス ポリシーを作成する手順を示します**ProcessPurchaseOrder**という名前のルールを含む**ApprovedRule**です。 **ApprovedRule**ルールは、ユーザーが、ファクトとして XML ドキュメントを送信するを必要としの値を設定、**ステータス**フィールドをドキュメントに**Approved**場合、の値**数量**フィールドは、以下を**500**です。  
@@ -106,7 +106,7 @@ ms.lasthandoff: 09/20/2017
 8.  [プロパティ] ウィンドウでの値を変更、**ドキュメントの種類**プロパティから**PO**に**RuleTest.PO**です。  
   
     > [!NOTE]
-    >  という名前の BizTalk プロジェクトを作成して**RuleTest**後半、[チュートリアル: オーケストレーションからポリシーを呼び出す](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)チュートリアルです。 チュートリアルでは、追加点で、 **PO.xsd**ファイルをプロジェクトを呼び出すオーケストレーションを作成、 **ProcessPurchaseOrder**ポリシー、およびポリシーをテストします。 オーケストレーションからポリシーをテストするを変更することを確認する必要があります、**ドキュメントの種類**プロパティを**\<プロジェクト名 >.\<SchemaName >**、これは**RuleTest.PO**ここでします。  
+    >  という名前の BizTalk プロジェクトを作成して**RuleTest**後半、[チュートリアル: オーケストレーションからポリシーを呼び出す](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)チュートリアルです。 チュートリアルでは、追加点で、 **PO.xsd**ファイルをプロジェクトを呼び出すオーケストレーションを作成、 **ProcessPurchaseOrder**ポリシー、およびポリシーをテストします。 オーケストレーションからポリシーをテストするを変更することを確認する必要があります、**ドキュメントの種類**プロパティを**\<プロジェクト名\>.\<SchemaName\>**、これは**RuleTest.PO**ここでします。  
   
      ![BRE &#45;チュートリアル &#45;ChangeDocType](../core/media/e9a370fd-d9b2-48f0-ad0e-85a5428a9c21.gif "e9a370fd-d9b2-48f0-ad0e-85a5428a9c21")  
   
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
      ![ビジネス ルール作成ツール &#45; DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")  
   
-14. [THEN] ペインでをクリックして**\<値を入力 >**し入力**Approved**です。  
+14. [THEN] ペインでをクリックして**\<値を入力\>**し入力**Approved**です。  
   
 15. ポリシー エクスプ ローラー ウィンドウで右クリック**バージョン 1.0 (未保存)**、クリックして**保存**です。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 103eb58223ba4acd61d909640bacda76d08efe8c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42f8328268b82a377bb6d73f3bd7305122a830c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-application-for-interception"></a>傍受のために Windows Communication Foundation アプリケーションを構成する方法
 BAM アクティビティ データの収集を開始するには、まず BAM インターセプター ソフトウェアをインストールし、BAM [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] インターセプターを使用するようにアプリケーションを構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] およびその依存関係がインストールされ、BizTalk グループが少なくとも 1 つ作成されていることを前提とします。  
@@ -31,7 +31,7 @@ BAM アクティビティ データの収集を開始するには、まず BAM �
   
 -   BAM マネージャーのコマンド ライン ツール (bm.exe) を使用してインターセプター構成ファイルを作成する必要があります。  
   
--   ホスト アプリケーションを実行しているユーザーは、適切な BAM アクティビティ イベント ライターのメンバーである必要があります (bam _\<アクティビティ > _EventWriter) SQL サーバーの役割、インターセプタ構成情報の読み取りと書き込み、BAM にアプリケーションを有効にするにはアクティビティ。  
+-   ホスト アプリケーションを実行しているユーザーは、適切な BAM アクティビティ イベント ライターのメンバーである必要があります (bam _\<アクティビティ\>_EventWriter) SQL サーバーの役割、インターセプタ構成情報の読み取りし、書き込みをアプリケーションを有効にするにはBAM アクティビティ。  
   
 -   サーバーおよびクライアント アプリケーションの App.config ファイルを、BAM 追跡サービスを読み込むように変更する必要があります。 App.config ファイルの変更後にアプリケーションを再起動する必要があります。  
   
@@ -50,9 +50,9 @@ BAM アクティビティ データの収集を開始するには、まず BAM �
   
 4.  bm.exe を使用して次のように監視モデルを展開します。  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 展開すべて-definitionfile:\<*definitionfile.xml*>  
+     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 展開すべて-definitionfile:\<*definitionfile.xml*\>  
   
-     置換するかどうかを確認\< *definitionfile.xml*> を展開する監視モデル ファイルの名前に置き換えます。 詳細については、次を参照してください。[インターセプター管理コマンド](../core/interceptor-management-commands.md)です。  
+     置換するかどうかを確認\< *definitionfile.xml* \>を展開する監視モデル ファイルの名前に置き換えます。 詳細については、次を参照してください。[インターセプター管理コマンド](../core/interceptor-management-commands.md)です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -72,9 +72,9 @@ BAM アクティビティ データの収集を開始するには、まず BAM �
   
 4.  bm.exe を使用して、次のようにインターセプター構成ファイルを展開します。  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 展開インターセプター-filename:\<*icfile.xml*>  
+     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 展開インターセプター-filename:\<*icfile.xml*\>  
   
-     置換するかどうかを確認\< *icfile.xml*> を展開するインターセプター構成ファイルの名前に置き換えます。  
+     置換するかどうかを確認\< *icfile.xml* \>を展開するインターセプター構成ファイルの名前に置き換えます。  
   
     > [!NOTE]
     >  使用することができます、 **-Force:true**インターセプタ構成ファイル内のものと同じ名前の既存のイベント ソースを上書きするフラグ。 これを行う場合を使用して、既存の構成をバックアップすることを確認、 **get インターセプター**コマンド。 –Force:True フラグを使用すると、上書きされるイベント ソースを参照するインターセプター構成が削除される可能性があります。  

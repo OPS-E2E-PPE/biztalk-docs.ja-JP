@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a28af058ac4750426f66dc6e290bc6a02bf2efd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 927afa60dc65fb014f0d44305db5e7f6e78b803b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="interceptor-configuration-expressions"></a>インターセプタ構成式
 BAM インターセプタ構成ファイルは、フィルタ式を使用してアクティビティを識別し、データ式を使用してストレージのデータ要素を作成して、そのデータ要素を関連付け ID または継続トークンとして使用したり、同様の目的で使用します。 その目的に関係なく、個々の式は `expression` 要素によってインターセプタ構成ファイル内に指定され、式には後置表記法とも呼ばれる逆ポーランド表記法 (RPN: Reverse Polish Notation) を使用した 1 つまたは複数の演算子が含まれています。  
@@ -115,7 +115,7 @@ BAM インターセプタ構成ファイルは、フィルタ式を使用して�
 ### <a name="data-expressions"></a>データ式  
  データ式は、単一の文字列データ値を定義するために使用されます。 データ式は、`Filter` 要素で囲まれていない任意の式です。 データ式は、`OnEvent` 要素の `CorrelationID`、`ContinuationToken`、`Reference`、および `Update` で使用されます。  
   
- これは、BAM アクティビティ データベースをラベル付きタイム スタンプで更新するための一般的な要件です。 イベントの設定として書式設定文字列が開始された時刻をキャプチャするたとえば、"開始: \<EventTime >"です。 これを行うには、次のような式を使用する必要があります (+ は連結を表します)。  
+ これは、BAM アクティビティ データベースをラベル付きタイム スタンプで更新するための一般的な要件です。 イベントの設定として書式設定文字列が開始された時刻をキャプチャするたとえば、"開始: \<EventTime\>"です。 これを行うには、次のような式を使用する必要があります (+ は連結を表します)。  
   
  `"Start: " + GetContextProperty(EventTime)`  
   
@@ -153,7 +153,7 @@ BAM インターセプタ構成ファイルは、フィルタ式を使用して�
 >  データ式では比較演算 "And" および "Equals" は使用しないでください。 この演算を使用すると、インターセプタ構成ファイルを展開するときにエラーが発生します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [インターセプタの操作](../core/interceptor-operations.md)  
+ [インターセプターの操作](../core/interceptor-operations.md)  
   
 ## <a name="see-also"></a>参照  
- [インターセプタ構成ファイルの構造](../core/structure-of-an-interceptor-configuration-file.md)
+ [インターセプター構成ファイルの構造](../core/structure-of-an-interceptor-configuration-file.md)

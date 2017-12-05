@@ -32,11 +32,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f89959b1900ce03717f2bb28efda7651c5008e7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a78dabdaefc430fe88e0a5e39d533ee34f0d3db1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-an-infopath-form-to-repair-a-message-or-submit-a-new-message"></a>InfoPath フォームを使用してメッセージを修復または、新しいメッセージを送信
 修復、確認、承認、またはメッセージを作成で作業をする、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム内から開くこと、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] MRSR Web サイトです。 MRSR サイトに含まれる、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]各メッセージの種類のフォームと[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]未解析のメッセージの形式です。 Message Repair and New Submission、開くことができます、適切な MRSR ドキュメント ライブラリに修復、検証、または承認が必要なメッセージを送信します。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
  MRSR サイトでは、メッセージに対して操作を実行するには、そのメッセージの種類の InfoPath フォームを配置する必要があります。 これには、メッセージに必要なテンプレート ドキュメント ライブラリに InfoPath フォームが読み込まれます。  
   
 ## <a name="verifying-a-message"></a>メッセージの検証  
- 修復ワークフローは、検証ステージを含めることができます。 この段階では、修理会社は、メッセージを修復した後、検証機能を確認メッセージの修復が正しいこと。 内のメッセージを開くには、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームから、\<部門名 > _RekeyVerify MRSR サイトでライブラリを文書化し、修復をメッセージに内容が正しいことを確認します。 データを鍵更新、キー更新を必要とする特定のフィールドにもする必要があります。 すべての検証段階は、再生成する必要があります (存在する場合) のフィールドをカスタマイズできますが、キー更新が必要です。 キーの再検証の詳細については、次を参照してください。 [Message Repair and New Submission の特別な処理](../../adapters-and-accelerators/accelerator-swift/special-processing-in-message-repair-and-new-submission.md)です。  
+ 修復ワークフローは、検証ステージを含めることができます。 この段階では、修理会社は、メッセージを修復した後、検証機能を確認メッセージの修復が正しいこと。 内のメッセージを開くには、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームから、\<部門名\>_RekeyVerify MRSR サイトでライブラリを文書化し、修復をメッセージに内容が正しいことを確認します。 データを鍵更新、キー更新を必要とする特定のフィールドにもする必要があります。 すべての検証段階は、再生成する必要があります (存在する場合) のフィールドをカスタマイズできますが、キー更新が必要です。 キーの再検証の詳細については、次を参照してください。 [Message Repair and New Submission の特別な処理](../../adapters-and-accelerators/accelerator-swift/special-processing-in-message-repair-and-new-submission.md)です。  
   
  すべての可能なステージで構成されるワークフローには、1 つまたは複数の検証段階が含まれています。 ただし、ワークフローが検証ステージを含める必要はありません。  
   

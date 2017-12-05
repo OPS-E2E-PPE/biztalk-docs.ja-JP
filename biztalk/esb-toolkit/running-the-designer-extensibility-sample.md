@@ -12,18 +12,18 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b26c483568e1ceb05679d7548721c1cce818fde
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 69659359af123af7d9239241128cae06934d9a54
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="running-the-designer-extensibility-sample"></a>デザイナーの機能拡張のサンプルを実行します。
 デザイナーの機能拡張のサンプルでは、2 つのサンプル エクステンダーを使用して、カスタム競合回避モジュールとの itinerary サービス、デザイン時構成オプションをようにする方法を示します。  
   
  **デザイナーの機能拡張のサンプルを実行するには**  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]を起動します。  
+1.  Visual Studio を起動します。  
   
 2.  Visual Studio で、指す**新規**上、**ファイル** メニューをクリックして**プロジェクト**です。  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 22. 設定、 **SomeResolverValue**プロパティを**テスト**に version プロパティを設定および**1.0**です。  
   
-23. クリックして、 **ItineraryService2**要素をモデル化し、[プロパティ] ウィンドウで次のように設定します、**行程サービス エクステンダー**プロパティを**出口行程サービス拡張**。.  
+23. クリックして、 **ItineraryService2**要素をモデル化し、[プロパティ] ウィンドウで次のように設定します、**行程サービス エクステンダー**プロパティを**出口行程サービス拡張**.  
   
 24. 設定、**出口**プロパティを**OffRamp1 > 送信ハンドラー**です。  
   

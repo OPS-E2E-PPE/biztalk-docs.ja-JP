@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8dfdedb58e4372caed38c7c272cbaaf65fefbcb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbe53def02f42c59cf5e40380c898f47695c19da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a>machine.config からバインド拡張機能を取得中にエラーが発生しました
 ## <a name="details"></a>詳細  
@@ -58,6 +58,6 @@ ms.lasthandoff: 09/20/2017
         ```  
   
 > [!NOTE]
->  上記のコードは、WCF 拡張機能 タブにも追加できます。拡張機能が必要な場合、受信側を参照してください、 **\<ホスト名 > プロパティ ダイアログ ボックスで、WCF 拡張機能**タブ (Wcf-custom または Wcf-customisolated アダプターの受信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。 拡張機能が必要な場合、送信側を参照してください。 **\<ホスト名 > プロパティ ダイアログ ボックスで、WCF 拡張機能** タブ (Wcf-custom アダプターの送信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+>  上記のコードは、WCF 拡張機能 タブにも追加できます。拡張機能が必要な場合、受信側を参照してください、 **\<ホスト名\>プロパティ ダイアログ ボックスで、WCF 拡張機能**タブ (Wcf-custom または Wcf-customisolated アダプターの受信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。 拡張機能が必要な場合、送信側を参照してください。 **\<ホスト名\>プロパティ ダイアログ ボックスで、WCF 拡張機能** タブ (Wcf-custom アダプターの送信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
   
  3. 管理コンソールを閉じ、開き直します。 WCF-Custom アダプターのカスタム動作を確認できるようになります。また、管理コンソールを開くと、ポートは有効なままです。

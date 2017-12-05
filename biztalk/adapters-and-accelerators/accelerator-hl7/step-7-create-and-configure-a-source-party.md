@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32539b1c352ac1fd2b60d2acd4c5ee975e2c3d18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ba84bd9a0ab8c6f7d5ccd24b27e90ef9c441b93
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-create-and-configure-a-source-party"></a>手順 7: を作成し、送信元パーティを構成します。
 このステップでは、送信元パーティを構成して、送信メッセージのメッセージ ヘッダーの変換を有効にする送信ポートを割り当てるを作成します。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **[OK]**をクリックします。  
   
-6.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン > Accelerator 用 HL7**、クリックして**BTAHL7構成のエクスプ ローラー**です。  
+6.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**をクリックして**BTAHL7 構成エクスプ ローラー**です。  
   
 7.  BTAHL7 構成エクスプ ローラーで、上、**パーティ** タブで、をクリックして**Tutorial_BatchSource**です。  
   

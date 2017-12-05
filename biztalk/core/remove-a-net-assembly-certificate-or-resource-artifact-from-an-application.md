@@ -31,11 +31,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a82ffc63ff041aec1e9151e8198e2a7c3e74b3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12196886285a84b391eb3037064f36f08aa5b1fe
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-remove-a-net-assembly-certificate-or-other-resource-artifact-from-an-application"></a>.NET アセンブリ、証明書またはその他のリソース アイテムをアプリケーションから削除する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンドラインを使用して BizTalk アプリケーションから、次のリソース アイテムを削除する方法について説明します。 このトピックの手順を実行すると、BizTalk 管理データベースからアイテムが削除されます。 ただし、ファイル システム、証明書ストア、インターネット インフォメーション サービス (IIS)、または Windows レジストリからは削除されません。 また、バインド ファイルを削除した場合、バインド ファイルが削除されるのみで、バインドそのものは変更されません。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで、[[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理]、削除するリソース アイテムが含まれる BizTalk グループ、リソース アイテムが含まれるアプリケーションの順に展開します。  
+2.  コンソール ツリーで、BizTalk Server 管理コンソールを展開し、削除するには、リソース アイテムが含まれる BizTalk グループを展開し、成果物を含むアプリケーションの順に展開します。  
   
 3.  クリックして、**リソース**フォルダーは、アイテムを右クリックし、をクリックして**削除**です。  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43c5110a7918ad9a7542be53e4b13126c863fe00
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: d4a452d61b3bdb5f5d0fee9e0916811645938d70
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>JD Edwards EnterpriseOne アプリケーションをインポートします。
   
@@ -65,7 +65,7 @@ Microsoft Visual Studio が展開先のコンピューターにインストー�
 たとえば、コマンド プロンプトで次のように実行します。  
   
 ```
-cscript RemoveSendPort.vbs \<Send port name>
+cscript RemoveSendPort.vbs \<Send port name\>
 ```
   
 ## <a name="limitations"></a>制限事項

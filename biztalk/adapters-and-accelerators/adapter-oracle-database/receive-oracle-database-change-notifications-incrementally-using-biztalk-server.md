@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b700382d96b24b24470617749e810c7cce2d2f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eebcd37124e0ddde2171f21b233ca8bd8ce23f55
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-oracle-database-change-notifications-incrementally-using-biztalk-server"></a>BizTalk Server を使用して増分値 Oracle データベースの変更通知を受信します。
 > [!IMPORTANT]
@@ -303,7 +303,7 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
 -   アダプターは、次のような通知メッセージを受信します。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    \<?xml version="1.0" encoding="utf-8" ?\>   
     <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>OracleDBBinding</Source>   
@@ -316,27 +316,27 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
 -   アダプターでは、PROCESS_RECORDS プロシージャを実行します。 Oracle データベースから次の応答では、プロシージャのです。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <PROCESS_RECORDSResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
       <TABLE_DATA>  
-        \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-          \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-            \<xs:complexType>  
-              \<xs:sequence>  
-                \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                  \<xs:complexType>  
-                    \<xs:sequence>  
-                      \<xs:element minOccurs="0" name="TID" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
-                    \</xs:sequence>  
-                  \</xs:complexType>  
-                \</xs:element>  
-              \</xs:sequence>  
-            \</xs:complexType>  
-          \</xs:element>  
-        \</xs:schema>  
-        \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+          <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                  <xs:complexType>  
+                    <xs:sequence>  
+                      <xs:element minOccurs="0" name="TID" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
+                    </xs:sequence>  
+                  </xs:complexType>  
+                </xs:element>  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:schema>  
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
         <NewDataSet xmlns="">  
           <NewTable>  
             <TID>1</TID>   
@@ -350,7 +350,7 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
           ......  
           ......  
         </NewDataSet>  
-        \</diffgr:diffgram>  
+        </diffgr:diffgram>  
       </TABLE_DATA>  
     </PROCESS_RECORDSResponse>  
     ```  
@@ -360,7 +360,7 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
 -   PROCESS_RECORDS プロシージャでは、'y' に処理を設定する行も更新します。 そのため、アダプターは、更新操作に別の通知を受け取ります。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -383,29 +383,29 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
 -   2 番目の通知後、アダプターは再度 PROCESS_RECORDS プロシージャを実行します。 ただし、今すぐに処理された列が設定されているレコードがないため ' n '、プロシージャは、次のような空の応答を返します。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <PROCESS_RECORDSResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
       <TABLE_DATA>  
-        \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-          \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-            \<xs:complexType>  
-              \<xs:sequence>  
-                \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                  \<xs:complexType>  
-                    \<xs:sequence>  
-                      \<xs:element minOccurs="0" name="TID" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
-                    \</xs:sequence>  
-                  \</xs:complexType>  
-                \</xs:element>  
-              \</xs:sequence>  
-            \</xs:complexType>  
-          \</xs:element>  
-        \</xs:schema>  
-        \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+          <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                  <xs:complexType>  
+                    <xs:sequence>  
+                      <xs:element minOccurs="0" name="TID" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
+                    </xs:sequence>  
+                  </xs:complexType>  
+                </xs:element>  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:schema>  
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
           <NewDataSet xmlns="" />   
-        \</diffgr:diffgram>  
+        </diffgr:diffgram>  
       </TABLE_DATA>  
     </PROCESS_RECORDSResponse>  
     ```  

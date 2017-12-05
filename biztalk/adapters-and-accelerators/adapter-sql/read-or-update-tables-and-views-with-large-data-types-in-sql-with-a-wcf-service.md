@@ -12,18 +12,18 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c673e5c31c0498bb82fe7979d2855765f4c9bf35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1da0def828c1dbfa8511dc61b529fa02cb53ca5a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL の大規模なデータ型を持つテーブルとビューの操作を実行します。
-[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。 このような列からデータを読み取る、アダプターのクライアントは、Select 操作を使用できます。 アダプターの一連の公開を挿入またはこのような列にデータを更新、\<*column_name*> 操作、場所\< *column_name*> の型 varchar (列の名前を指定しますmax)、nvarchar (max)、または varbinary (max)。  
+[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。 このような列からデータを読み取る、アダプターのクライアントは、Select 操作を使用できます。 アダプターの一連の公開を挿入またはこのような列にデータを更新、\<*column_name* \>操作、場所\< *column_name* \>名前を指定します型 varchar (max)、nvarchar (max)、または varbinary (max) 列。  
   
  さらに、SQL Server でテキスト ドキュメントやイメージなどの非構造化データを格納 varbinay(max) 列を持つことができます。 このような非構造化データには、FILESTREAM データは呼び出されます。 FILESTREAM データは、ファイル システム上のファイルとして格納することができます。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] Varbinary (max) 型の列に FILESTREAM データを入力するクライアントを有効にします。 [FILESTREAM ストレージ](https://docs.microsoft.com/sql/relational-databases/blob/filestream-sql-server)の詳細についてはします。 
   
- このトピックの内容が行う必要があります、特定のタスクに関する情報を提供、コンピューター上には、SQL Server とを挿入または FILESTREAM データを更新できるアダプターのクライアントを実行しているコンピューターを実行しています。 このトピックの内容についても説明セットを実行する\<*column_name*> FILESTREAM データを挿入する操作。  
+ このトピックの内容が行う必要があります、特定のタスクに関する情報を提供、コンピューター上には、SQL Server とを挿入または FILESTREAM データを更新できるアダプターのクライアントを実行しているコンピューターを実行しています。 このトピックの内容についても説明セットを実行する\<*column_name* \> FILESTREAM データを挿入する操作。  
   
 > [!NOTE]
 >  ユーザー定義型の列を含むテーブルでの操作を実行する場合、必ずするを参照してください[テーブルと、SQL アダプターを使用してユーザー定義型を持つビューに対して操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)です。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
  これらのタスクを完了するがすべて設定するを挿入または SQL Server データベース テーブル内の FILESTREAM データを更新します。  
   
 ## <a name="how-this-topic-demonstrates-operations-on-large-data-types"></a>このトピックの内容が大量のデータ型に対する操作を示しています  
- セットを実行する方法をデモンストレーションする\<*column_name*> ラージ データ型とテーブルでの操作にあるテーブルを見て**レコード**、列を持つ**Id**と**ドキュメント**:  
+ セットを実行する方法をデモンストレーションする\<*column_name* \> 、大規模なデータ型でテーブルに対する操作にあるテーブルを見て**レコード**、列を持つ**Id**と**ドキュメント**:  
   
 -   **レコード**サンプルに用意されている SQL スクリプトを実行してすべてのデータのテーブルを作成します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)です。  
   
@@ -75,9 +75,9 @@ ms.lasthandoff: 09/20/2017
   
 |操作|メソッド シグネチャ|  
 |---------------|----------------------|  
-|設定\<*column_name*>|public void セット\<*column_name*> (フィルター、byte[] データを文字列) です。|  
+|設定\<*column_name*\>|public void セット\<*column_name*\>(フィルター、byte[] データを文字列) です。|  
   
- \<*column_name*> ラージ データ型の列の名前を = です。  
+ \<*column_name* \>大量のデータ型の列の名前を = です。  
   
  たとえば、次のコードにはメソッド シグネチャに関するの WCF クライアント クラスを生成、 **SetDocument**で操作、**レコード**既定の"dbo"スキーマの下の表。  
   
@@ -90,14 +90,14 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
  このスニペットで**TableOp_dbo_RecordsClient**によって生成された SqlAdapterBindingClient.cs で WCF クラスの名前を指定します、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
   
 ### <a name="parameters-for-operations-on-columns-of-large-data-types"></a>大規模なデータ型の列に対する操作のパラメーター  
- このセクションでは、セットに必要なパラメーター\<*column_name*> 操作します。  
+ このセクションでは、セットに必要なパラメーター\<*column_name* \>操作します。  
   
 |[パラメーター名]|Description|  
 |--------------------|-----------------|  
 |文字列フィルター|アダプターが大量のデータ型の列のレコードを更新を基に WHERE 句を指定します。|  
 |byte[] データ|大規模なデータ型の列を更新する必要があります値を指定します。|  
   
- セット\<*column_name*> 操作は任意の値を返しません。  
+ セット\<*column_name* \>操作は任意の値を返しません。  
   
 ## <a name="creating-a-wcf-client-to-invoke-operations-on-columns-of-large-data-types"></a>大規模なデータ型の列に対する操作を呼び出すに WCF クライアントを作成します。  
  WCF クライアントを使用して SQL Server で操作の実行に必要なアクションの汎用的なセットは、一連のタスクで説明されている[SQL アダプターで WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-sql/overview-of-the-wcf-service-model-with-the-sql-adapter.md)です。 このセクションを呼び出すための WCF クライアントを作成する方法について説明、 **SetDocument**での操作、**レコード**テーブル。 アダプターを公開、 **SetDocument**ラージ データ型の列のデータを更新する操作。  
@@ -173,4 +173,4 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
 9. プロジェクトをビルドし、それを実行します。 アプリケーションの更新プログラム、**ドキュメント**内の列、**レコード**テーブル。  
   
 ## <a name="see-also"></a>参照  
-[WCF サービス モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[WCF サービス モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

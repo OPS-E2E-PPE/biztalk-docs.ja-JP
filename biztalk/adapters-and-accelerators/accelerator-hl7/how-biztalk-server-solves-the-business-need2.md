@@ -15,19 +15,19 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0014541d7826a8d19d3f92b38608167316453475
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5dcc7ee1b77c91cc4bbc52384a23347ce3e9a0f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-biztalk-server-solves-the-business-need"></a>BizTalk Server がビジネス ニーズを解決する方法
-医療を解決するためにシステムの統合を必要がある BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) の機能を拡張[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]医療システム用です。  
+医療を解決するためにシステムの統合を必要がある BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) の機能を拡張[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]医療システム用の BizTalk Server です。  
   
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]の上にアクセラレータがインストール[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]、説明、テクノロジの機能の概要を提供することによって[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、機能の詳細を[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]追加すると、について方法 2 つのテクノロジを展開することができます。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]セットアップは、BizTalk Server 上にアクセラレータをインストール、説明、テクノロジの機能の概要を提供することによって[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、機能の説明を[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]追加するとのディスカッション方法 2 つのテクノロジを展開することができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [BizTalk Server とのシステム統合](../../adapters-and-accelerators/accelerator-hl7/systems-integration-with-biztalk-server1.md)  
   
--   [BizTalk Server に追加する BizTalk Accelerator 用 HL7](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)
+-   [BizTalk Accelerator for HL7 により BizTalk Server に追加される機能](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)

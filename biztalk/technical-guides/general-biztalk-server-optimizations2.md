@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d4777545d7522a1f8ca61e9209669b489ebcb30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 622844e282b9b0206f92979827406a324cd2f86f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="general-biztalk-server-optimizations"></a>BizTalk Server の一般的な最適化
 増やすには次の推奨事項を使用することができます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス。 このトピックで示した最適化が後に適用されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールして構成します。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]  
 >  追加のホスト インスタンスを作成する利点があるときに欠点がありますも潜在的な多数のホスト インスタンスが作成される場合。 各ホスト インスタンスは、メッセージ ボックス データベースに対して追加の負荷を生成し、コンピューターのリソース (CPU、メモリ、スレッド) などを使用する Windows サービス (BTSNTSvc.exe) です。  
   
- BizTalk Server ホストのプロパティの変更の詳細についてを参照してください「どのようにするホスト プロパティの変更」、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkId=101588](http://go.microsoft.com/fwlink/?LinkId=101588)です。  
+ BizTalk Server ホストのプロパティの変更の詳細については、「どのようにするホスト プロパティの変更」、BizTalk Server ヘルプでを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=101588](http://go.microsoft.com/fwlink/?LinkId=101588)です。  
   
 ## <a name="configure-a-dedicated-tracking-host"></a>専用の追跡ホストを構成します。  
  BizTalk Server は、メインのオーケストレーションとメッセージング エンジンは実際に移動しないメッセージ、BizTalk 追跡または BAM データベースに直接ビジネス プロセスを実行するがプライマリ ジョブからこれらのエンジンをそらすこれは、スループット、に対して最適化されます。 代わりに、BizTalk Server は、メッセージ ボックス データベース、メッセージのままにし、BizTalk 追跡データベースへの移行を必須としてマークを付けます。 バック グラウンド プロセス (追跡ホスト) し、BizTalk 追跡データベースおよび BAM データベースにメッセージを移動します。 追跡はリソースの処理を要する操作のため、独立したホスト作成してください専用の追跡、追跡がメッセージの処理に専用ホストを持つことの影響を最小限に抑えること。  
@@ -48,13 +48,13 @@ ms.lasthandoff: 09/20/2017
   
 -   データが移動されていないために、メッセージ ボックス データベースから削除できません。  
   
--   データのデコードに追跡サービスが停止したときに追跡インターセプターは引き続きファイア アンド メッセージ ボックス データベースに追跡データを書き込みます。 データが移動されていない場合は、一定期間のパフォーマンスに影響を与えるメッセージ ボックス データベースになります肥大化、これにより、します。 場合でも、カスタム プロパティは追跡されませんまたは BAM プロファイルが設定されていない、既定では一部のデータは、追跡 (など、パイプラインは、受信/送信イベントおよびオーケストレーションのイベント)。 データのデコードに追跡サービスを実行しないようにする場合は、すべての追跡インターセプターをデータベースにデータ保存しないようにオフにします。 グローバル追跡を無効にするを参照してください「オン オフ グローバルの追跡方法」で、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589)です。 選択的に追跡イベントを無効にするのにには、BizTalk Server 管理コンソールを使用します。  
+-   データのデコードに追跡サービスが停止したときに追跡インターセプターは引き続きファイア アンド メッセージ ボックス データベースに追跡データを書き込みます。 データが移動されていない場合は、一定期間のパフォーマンスに影響を与えるメッセージ ボックス データベースになります肥大化、これにより、します。 場合でも、カスタム プロパティは追跡されませんまたは BAM プロファイルが設定されていない、既定では一部のデータは、追跡 (など、パイプラインは、受信/送信イベントおよびオーケストレーションのイベント)。 データのデコードに追跡サービスを実行しないようにする場合は、すべての追跡インターセプターをデータベースにデータ保存しないようにオフにします。 グローバル追跡を無効にするを参照してください「にオフ グローバルの追跡の方法」BizTalk server でヘルプを[http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589)です。 選択的に追跡イベントを無効にするのにには、BizTalk Server 管理コンソールを使用します。  
   
  追跡ホストは、BizTalk サーバー (1 つが失敗した場合の冗長構成) を実行するには、少なくとも 2 台のコンピューターで実行する必要があります。 最適なパフォーマンスが必要には、少なくとも 1 つの追跡メッセージ ボックス データベースごとにホストのインスタンス。 追跡ホスト インスタンスの実際の数になります (N は + 1)、ここで N = メッセージ ボックス データベースの数。 「+ 1」の追跡をホストしているコンピューターのいずれかに失敗した場合は、冗長性のため、します。  
   
  追跡ホスト インスタンスが特定のメッセージ ボックス データベースの追跡データを移動しますが、されません 1 つ以上の追跡ホスト インスタンスの特定のメッセージ ボックス データベースのデータを移動します。 たとえば、3 つのメッセージ ボックス データベースと 2 つのホスト インスタンスの追跡がある場合は、そのホスト インスタンスのいずれかの必要があります、メッセージ ボックス データベースの 2 つのデータを移動します。 追跡を配布して、3 番目のホスト インスタンスの追跡を追加する BizTalk Server を実行している別のコンピューターへの作業をホストします。 このシナリオでは、複数の追跡ホストの配布と 4 つ目のホスト インスタンスの追跡を追加する機能しますが、余分なは、フォールト トレランスのホスト インスタンスを追跡します。  
   
- BAM イベント バス サービスの詳細については、次のトピックを参照してください、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+ BAM イベント バス サービスの詳細については、BizTalk Server ヘルプの次のトピックを参照してください。  
   
 -   「BAM イベント バス サービスを管理する」 [http://go.microsoft.com/fwlink/?LinkId=101590](http://go.microsoft.com/fwlink/?LinkId=101590)です。  
   
@@ -187,12 +187,12 @@ ms.lasthandoff: 09/20/2017
 6.  BizTalk ホスト インスタンスを再起動します。  
   
 ## <a name="disable-tracking-for-orchestrations-send-ports-receive-ports-and-pipelines-when-tracking-is-not-required"></a>オーケストレーションの追跡を無効にする、送信ポート、受信ポート、およびパイプラインを追跡が必要ないです。  
- 追跡のためデータには、メッセージ ボックス データベースに書き込み、その後、BizTalk 追跡データベースに非同期的に移動する BizTalk Server 内でオーバーヘッドがパフォーマンスが生じます。 追跡は、ビジネス要件ではない場合は、オーバーヘッドを削減し、パフォーマンスが向上するための追跡を無効になります。 追跡の構成に関する詳細については、「を構成する追跡を使用して、BizTalk Server 管理コンソール」を参照してください、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkID=106742](http://go.microsoft.com/fwlink/?LinkID=106742)です。  
+ 追跡のためデータには、メッセージ ボックス データベースに書き込み、その後、BizTalk 追跡データベースに非同期的に移動する BizTalk Server 内でオーバーヘッドがパフォーマンスが生じます。 追跡は、ビジネス要件ではない場合は、オーバーヘッドを削減し、パフォーマンスが向上するための追跡を無効になります。 追跡の構成の詳細については、「を構成する追跡を使用して、BizTalk Server 管理コンソール」BizTalk Server でのヘルプを参照してください。 [http://go.microsoft.com/fwlink/?LinkID=106742](http://go.microsoft.com/fwlink/?LinkID=106742)です。  
   
 ## <a name="decrease-the-purging-period-for-the-dta-purge-and-archive-job-from-7-days-to-2-days-in-high-throughput-scenarios"></a>DTA Purge and Archive ジョブから 7 日間で高スループットのシナリオ 2 日間に、パージ period を短縮します。  
  既定では、BizTalk Server でのデータを追跡するため、パージ間隔は 7 日間に設定します。 高スループットのシナリオでは、メッセージ ボックスおよびさらに悪い影響メッセージの処理スループットのパフォーマンスに影響を与えるは最終的に追跡データベース内のデータを過剰なビルドではこのことがあります。  
   
- 高スループットのシナリオでは、ハードとソフト 7 日間の既定値から 2 日間に間隔をパージを減らします。 削除間隔を構成する方法の詳細についてを参照してください「方法を構成、DTA Purge とアーカイブ ジョブ」、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkID=104908](http://go.microsoft.com/fwlink/?LinkID=104908)です。  
+ 高スループットのシナリオでは、ハードとソフト 7 日間の既定値から 2 日間に間隔をパージを減らします。 削除間隔を構成する方法の詳細については、「方法を構成、DTA Purge とアーカイブ ジョブ」BizTalk Server でヘルプを参照してください[http://go.microsoft.com/fwlink/?LinkID=104908](http://go.microsoft.com/fwlink/?LinkID=104908)です。  
   
 ## <a name="install-the-latest-service-packs"></a>最新のサービス パックをインストールします。  
  パフォーマンスの問題が発生する可能性を修正できる修正プログラムが含まれてとして、BizTalk Server と .NET Framework の両方の最新の service pack をインストールする必要があります。  

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5b82a8251504e1f9ff7b62c4e1cc813d4740a83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e845960a85ebe2ebf90b8549634a0097676c80c5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-party"></a>X12 の上限にエラー確認の生成に失敗しましたトランザクション パーティ
 ## <a name="details"></a>詳細  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|イベント ソース|BizTalk Server EDI|  
 |コンポーネント|EDI エンジン|  
 |シンボル名|-|  
 |メッセージ テキスト|パーティ {0} の X12 トランザクション セット制御番号が、許容される上限に到達したため、受信確認の生成に失敗しました。 パートナー アグリーメント マネージャーで、[Party in sender role] の [ST 2] フィールドに移動して、カウンターをリセットしてください。|  

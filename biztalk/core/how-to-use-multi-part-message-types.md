@@ -25,11 +25,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f87f210c4b0d2969edc9ddfa27b1d8494310eb6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4e4a07b88e832d99f586d10cdf8af4dbea3af3e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-multi-part-message-types"></a>マルチパート メッセージの種類を使用する方法
 各メッセージには、マルチパート メッセージの種類、0 個以上のメッセージ部分で構成されるメッセージ構造の記述があります。 これらの部分は、XSD (XML Schema Definition) 言語スキーマまたは .NET クラスによって定義されます。 独自のマルチパート メッセージの種類を定義したり、既存の .NET クラスおよびスキーマを使用することもできます。  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  マルチパート メッセージの種類、および提供されたメッセージ部分に名前を付けます。  
   
-     名前を割り当てることによって他のパーツを追加するには、マルチパート メッセージの種類は、1 つ以上のメッセージ部分を必要とする場合、\<新規 > メッセージ部分です。  
+     名前を割り当てることによって他のパーツを追加するには、マルチパート メッセージの種類は、1 つ以上のメッセージ部分を必要とする場合、\<新規\>メッセージ部分です。  
   
 4.  各メッセージ部分と、.NET クラスまたはスキーマなどの種類を関連付けます。  
   
@@ -101,4 +101,4 @@ ms.lasthandoff: 09/20/2017
  **IBaseMessage.AddPart メソッド (COM)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]  
  [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)   
  [識別フィールドおよびプロパティ フィールドの使用](../core/using-distinguished-fields-and-property-fields.md)   
- [オーケストレーションでメッセージの使用](../core/using-messages-in-orchestrations.md)
+ [オーケストレーションでのメッセージの使用](../core/using-messages-in-orchestrations.md)

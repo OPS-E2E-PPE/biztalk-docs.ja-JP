@@ -17,14 +17,14 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 058a1fce8105a3147fb2e537a9182e7d886bb953
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb9a8cfb173881b3ec6c6e346bcd9f2d3ec54b87
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="logging-configuration"></a>ログの構成
-同時に、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]と[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]医療機関病院、クリニック、看護住宅などのトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションのアクティビティおよびトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプタ経由で転送します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]米国規格協会 ANSI accredited ヘルス レベル 7 (HL7) をリアルタイムで医療のデータを交換プロバイダーのネットワークで医療/管理用のアプリケーションによって使用される標準のメッセージングをサポートします。  
+同時に、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]医療機関病院、クリニック、看護住宅などのトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションのアクティビティおよびトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプタ経由で転送します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]米国規格協会 ANSI accredited ヘルス レベル 7 (HL7) をリアルタイムで医療のデータを交換プロバイダーのネットワークで医療/管理用のアプリケーションによって使用される標準のメッセージングをサポートします。  
   
  Accelerator システムを通過する HL7 メッセージは非常に重要となります。 たとえば、データは、患者の医療や金融取引可能性があります。 HL7 のセキュリティとプライバシーの規制に準拠するには、システム管理者は、次の操作できる必要があります。  
   
@@ -36,6 +36,6 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ログ記録処理について](../../adapters-and-accelerators/accelerator-hl7/about-the-logging-process.md)  
+-   [ログ処理の概要](../../adapters-and-accelerators/accelerator-hl7/about-the-logging-process.md)  
   
--   [ログの構成](../../adapters-and-accelerators/accelerator-hl7/configuring-logging.md)
+-   [ログ記録の構成](../../adapters-and-accelerators/accelerator-hl7/configuring-logging.md)

@@ -16,18 +16,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09b07843a6e010021b00a1ffa7c3010977d1d3c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea38eb106b3554b72885355aaa9aef4928f4fda2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-custom-data-types-in-schemas"></a>スキーマでカスタム データ型を作成します。
-カスタム データ型を作成するには、datatypes_ で\<*バージョン*> .xsd 共通のスキーマです。 既存のデータ型、基本データ型、またはテーブルで定義された列挙体のカスタム データ型を作成できます。  
+カスタム データ型を作成するには、datatypes_ で\<*バージョン*\>.xsd 共通のスキーマです。 既存のデータ型、基本データ型、またはテーブルで定義された列挙体のカスタム データ型を作成できます。  
   
 ### <a name="to-create-a-z-data-type"></a>Z データ型を作成するには  
   
-1.  ソリューション エクスプ ローラーの Visual Studio で、共通のデータ型のスキーマ ファイルを開きます (**datatypes_\<*バージョン*> .xsd * *)、をクリックして**開く**です。  
+1.  ソリューション エクスプ ローラーの Visual Studio で、共通のデータ型のスキーマ ファイルを開きます (**datatypes_\<*バージョン*\>.xsd * *)、をクリックして**を開く**.  
   
 2.  BizTalk エディターを右クリックして**HL7DefinedDataTypes**、 をポイント**スキーマ ノードの挿入**、クリックして**子レコード**をコンポーネントのデータ型を作成またはをクリックするには**子要素**を単純なデータ型を作成します。  
   
@@ -40,4 +40,4 @@ ms.lasthandoff: 09/20/2017
  [宣言されている Z セグメントを作成します。](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md)   
  [スキーマのカスタム テーブルの作成](../../adapters-and-accelerators/accelerator-hl7/creating-custom-tables-in-schemas.md)   
  [列挙型を拡張します。](../../adapters-and-accelerators/accelerator-hl7/extending-enumerations.md)   
- [宣言されていない Z セグメントの処理](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)
+ [未宣言の Z セグメントの処理](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)

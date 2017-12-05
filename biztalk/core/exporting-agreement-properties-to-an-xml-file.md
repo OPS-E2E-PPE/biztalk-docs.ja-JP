@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d16a378c266b9243562e867c1041e009cabb9efc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a2091482bfda8110fc36dc0431b80093b715695
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="exporting-agreement-properties-to-an-xml-file"></a>XML ファイルへのアグリーメント プロパティのエクスポート
 このセクションでは、アグリーメントのプロパティを XML テンプレート ファイルにエクスポートする方法について説明します。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-export-agreement-properties-to-an-xml-file"></a>アグリーメントのプロパティを XML ファイルにエクスポートするには  
   
-1.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理コンソールで、をクリックして、**パーティ**ノードの下、 **BizTalk Server 管理コンソール**と**BizTalk グループ**ノード。 **パーティとビジネス プロファイル** ページで、パーティとし、設定をエクスポートするアグリーメントのあるビジネス プロファイル をクリックします。  
+1.  BizTalk Server 管理コンソールで、をクリックして、**パーティ**ノードの下、 **BizTalk Server 管理コンソール**と**BizTalk グループ**ノード。 **パーティとビジネス プロファイル** ページで、パーティとし、設定をエクスポートするアグリーメントのあるビジネス プロファイル をクリックします。  
   
 2.  **パーティとビジネス プロファイル**] ページの [、**契約**セクションで、プロパティをエクスポートし、をクリックするアグリーメントを右クリックして**プロパティ**です。  
   
@@ -38,4 +38,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [別のアグリーメント プロパティの再利用](../core/reusing-properties-from-another-agreement.md)   
- [アグリーメントのプロパティを XML ファイルからインポートします。](../core/importing-agreement-properties-from-an-xml-file.md)
+ [XML ファイルからのアグリーメント プロパティのインポート](../core/importing-agreement-properties-from-an-xml-file.md)

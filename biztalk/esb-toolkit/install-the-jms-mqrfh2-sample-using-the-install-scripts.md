@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b3606d53f692ff52779eeac3505fd8062bed28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: edb3102fabc84818cb42fcdcba6a034d085bdcc4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-jms-mqrfh2-sample-using-the-install-scripts"></a>インストール スクリプトを使用して、JMS MQRFH2 サンプルをインストールします。
 このセクションでは、JMS MQRFH2 で提供するインストール スクリプトを使用してサンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **実行** ダイアログ ボックスで、「 **cmd**、ENTER キーを押します。  
   
-5.  次のコマンド実行交換、 *\<パス >*をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\JMS\Install\Scripts\\)。  
+5.  次のコマンド実行交換、 *\<パス\>*をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\JMS\Install\Scripts\\):  
   
     ```  
     <path>\Setup_bin.cmd  

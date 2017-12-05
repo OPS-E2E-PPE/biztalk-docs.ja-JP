@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4899ec5f03e3474e61e4272ffd0612c77c90ea32
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a22b49a921b957c0fb36f9e6b6925c991cc3cf6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---index-functoid-has-too-many-indexes"></a>エラー - インデックス Functoid にインデックスが多すぎます
 **エラー コード**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **ユーザーの操作**  
   
- 選択し**インデックス**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid > Functoid**ダイアログ ボックスで、削除を選択しをクリックすると、余分なインデックス入力パラメーター、![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")それぞれのボタンをクリックします。
+ 選択し**インデックス**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid\>Functoid**ダイアログ ボックスで、削除を選択しをクリックすると、余分なインデックス入力パラメーター、 ![ ] (../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")それぞれのボタンをクリックします。

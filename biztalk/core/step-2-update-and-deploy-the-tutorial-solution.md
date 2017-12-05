@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca9f035eb97190c5a8999f73138d371e7dfddf98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67fd3d34f25dd409121a3a21c9eb419b4aadce6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-update-and-deploy-the-tutorial-solution"></a>手順 2: 更新し、チュートリアルのソリューションを展開
 ![手順 2 の 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-2of9.gif "Step_2of9")  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  コンソール ツリーで、 **Inbound_EDI プロパティ ページ**ダイアログ ボックスで、**展開**し、、**サーバー**フィールドでは、コンピューター名を入力することを確認してください。  
   
-5.  コンソール ツリーでクリックして**署名**し、**アセンブリに署名**です。 **強力なキー名ファイルを選択して** \<**新規しています.**> を入力および**keyfile.snk**として、**キー ファイル名**です。 クリア**キーファイルをパスワードで保護する**順にクリック**OK**です。  
+5.  コンソール ツリーでクリックして**署名**し、**アセンブリに署名**です。 **強力なキー名ファイルを選択して** \<**新規しています.** \>入力と**keyfile.snk**として、**キー ファイル名**です。 クリア**キーファイルをパスワードで保護する**順にクリック**OK**です。  
   
 6.  閉じる、 **Inbound_EDI プロパティ ページ** ダイアログ ボックス。  
   
@@ -59,10 +59,10 @@ ms.lasthandoff: 09/20/2017
   
 4.  ソリューション エクスプ ローラーで右クリックし、 **Inbound_EDI**プロジェクトを選択**展開**プロジェクトを配置します。  
   
-5.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開**BizTalk Server 管理コンソール**、 **BizTalk グループ**、**アプリケーション**、 \< **すべての成果物**> し、**リソース**です。 いることを確認、 **Inbound_EDI**アセンブリが一覧表示します。  
+5.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開**BizTalk Server 管理コンソール**、 **BizTalk グループ**、**アプリケーション**、 \< **すべての成果物**\>し、**リソース**です。 いることを確認、 **Inbound_EDI**アセンブリが一覧表示します。  
   
 ## <a name="next-steps"></a>次の手順  
  組織のパーティとビジネス プロファイルを構成する (**OrderSystem**)」の説明に従って、[手順 3: 組織のパーティとビジネス プロファイルを構成します。](../core/step-3-configure-a-party-and-business-profile-for-your-organization1.md)  
   
 ## <a name="see-also"></a>参照  
- [手順 1: EDI インターフェイス開発チュートリアルの準備します。](../core/step-1-prepare-for-the-edi-interface-developer-tutorial.md)
+ [手順 1: EDI インターフェイス開発チュートリアルのための準備](../core/step-1-prepare-for-the-edi-interface-developer-tutorial.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ec15331afee0f66944c836289a984e65b5c754e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42f0a645553a933a99f408036754a1d70b1dda47
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-the-home-organization"></a>手順 1: ホーム組織を作成します。
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用してホーム組織を作成します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-the-home-organization"></a>ホーム組織を作成するには  
   
-1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン > Accelerator for RosettaNet**を右クリックして**ホーム組織**、をクリックして**新規**、クリックして**ホーム組織**です。  
+1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン\>Accelerator for RosettaNet**を右クリックして**ホーム組織**をクリックして**新規**をクリックし、**ホーム組織**です。  
   
 2.  新しいホーム組織のプロパティ ダイアログ ボックスで、**全般** タブで、次の操作します。  
   
@@ -54,4 +54,4 @@ ms.lasthandoff: 09/20/2017
 4.  をクリックして**適用**、し**OK**です。  
   
 ## <a name="see-also"></a>参照  
- [手順 2: パートナー組織を作成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-the-partner-organization.md)
+ [手順 2: 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-the-partner-organization.md)

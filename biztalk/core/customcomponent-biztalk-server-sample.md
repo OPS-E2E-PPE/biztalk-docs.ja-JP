@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e178faee3ed05d4d77eec8f4da182c7dcd21a67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7fd774848dec1ae54541e749a0cc551bf7c42d49
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="customcomponent-biztalk-server-sample"></a>CustomComponent (BizTalk Server サンプル)
 CustomComponent サンプルは、ストリームされたメッセージを変更するカスタム パイプライン コンポーネントを作成して使用する方法を示します。 このサンプルは、パイプライン デザイナにおけるカスタム パイプライン コンポーネントの構成方法も示します。  
@@ -38,7 +38,7 @@ CustomComponent サンプルは、ストリームされたメッセージを変�
 4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、特定のフォルダー内のファイルにテキスト メッセージを書き込みます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Pipelines\CustomComponent\  
+ \<*パスのサンプル*\>\Pipelines\CustomComponent\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -62,13 +62,13 @@ CustomComponent サンプルは、ストリームされたメッセージを変�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Pipelines\CustomComponent  
+     \<*パスのサンプル*\>\Pipelines\CustomComponent  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプル用の入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
-         \<*パスのサンプル*> \Pipelines\CustomComponent  
+         \<*パスのサンプル*\>\Pipelines\CustomComponent  
   
     -   このサンプル用に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルし、展開します。  
   
@@ -100,7 +100,7 @@ CustomComponent サンプルは、ストリームされたメッセージを変�
   
 1.  テキスト ファイル Input1.txt のコピーを、フォルダ In に貼り付けます。  
   
-2.  テキスト ファイルが Out フォルダに作成されることを確認します。このファイルには、ファイル Input.txt の内容が格納されますが、受信パイプラインによって先頭にテキストが挿入され、送信パイプラインによって最後にテキストが追加されます。 このファイルの名前の形式が\< *MessageID*> .xml、場所 *\<MessageID >*メッセージを一意に識別する GUID が生成されます。  
+2.  テキスト ファイルが Out フォルダに作成されることを確認します。このファイルには、ファイル Input.txt の内容が格納されますが、受信パイプラインによって先頭にテキストが挿入され、送信パイプラインによって最後にテキストが追加されます。 このファイルの名前の形式が\< *MessageID*\>、.xml、  *\<MessageID\>* メッセージを一意に識別する GUID が生成.  
   
 ## <a name="comments"></a>コメント  
  以下の手順を実行すると、パイプライン デザイナで構成済みのパイプラインを表示することができます。  
@@ -114,4 +114,4 @@ CustomComponent サンプルは、ストリームされたメッセージを変�
 4.  内の FixMsg コンポーネントをクリックして**プリアセンブル**デザイン サーフェイス上のステージ。 なお、 **AppendData**プロパティに設定されている**で追加するデータの送信パイプライン文字列**です。  
   
 ## <a name="see-also"></a>参照  
- [パイプライン (BizTalk Server Samples フォルダ)](../core/pipelines-biztalk-server-samples-folder.md)
+ [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

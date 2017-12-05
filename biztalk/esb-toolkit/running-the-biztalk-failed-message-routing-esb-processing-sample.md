@@ -12,16 +12,16 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a19f8c29c22638be97ae62dfea88d0d2feca6c55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81a2b225e5316d16e31d2ed2ca830387dc14048d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="running-the-biztalk-failed-message-routing-esb-processing-sample"></a>メッセージのルーティング ESB 処理サンプル BizTalk を実行できませんでした。
-Microsoft BizTalk できませんでしたメッセージ ルーティング ESB 処理サンプルでは、使用する方法を示しています、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を管理、シリアル化、および内のすべての条件下で発生する例外をレンダリングする汎用メカニズムとして例外管理フレームワーク[!INCLUDE[prague](../includes/prague-md.md)]. これには、BizTalk 失敗のメッセージのルーティング メカニズムとフォールトによって生成されたメッセージから、オーケストレーション内での例外管理フレームワークによって生成される例外が含まれます。  
+Microsoft BizTalk できませんでしたメッセージ ルーティング ESB 処理サンプルでは、使用する方法を示しています、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]管理、シリアル化、および BizTalk ですべての条件下で発生する例外をレンダリングする汎用メカニズムとして例外管理フレームワークサーバー。 これには、BizTalk 失敗のメッセージのルーティング メカニズムとフォールトによって生成されたメッセージから、オーケストレーション内での例外管理フレームワークによって生成される例外が含まれます。  
   
- BizTalk 失敗のメッセージのルーティング メカニズムは、エラー処理機能の[!INCLUDE[prague](../includes/prague-md.md)]以外の場合は、それを使用して、デザイナーは、従来の代わりとしてのエラーのメッセージの自動処理を指定できます (ここで既定値) の動作失敗した配置するための「中断」キューにメッセージです。 これは、処理のルートに、送信ポートやオーケストレーションなど、サブスクライブしているルーティング先に、エラー メッセージを自動化できます。 エラー メッセージおよびメッセージ コンテキストに昇格する特定のメッセージング失敗に関連するプロパティを選択したすべての以前昇格させたプロパティが降格と元のメッセージのクローンであります。  
+ BizTalk 失敗のメッセージのルーティング メカニズムは BizTalk Server のエラー処理の機能使用すると、デザイナーには、従来の代わりとしてのエラーのメッセージの自動処理を指定できます (ここで既定値) の動作を配置するには、「中断」キューにメッセージが失敗しました。 これは、処理のルートに、送信ポートやオーケストレーションなど、サブスクライブしているルーティング先に、エラー メッセージを自動化できます。 エラー メッセージおよびメッセージ コンテキストに昇格する特定のメッセージング失敗に関連するプロパティを選択したすべての以前昇格させたプロパティが降格と元のメッセージのクローンであります。  
   
  受信ポートまたは送信ポートでメッセージのルーティングに失敗しました BizTalk メカニズムを有効にするを選択、**失敗したメッセージの有効化のルーティングを**チェック ボックス、図 1 に示すようにします。  
   

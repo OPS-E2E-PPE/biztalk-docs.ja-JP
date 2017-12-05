@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6950326994e99dcbc2ecff49a36f7441f3c219d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b22607193ed7c345388a6435e2d58c16b8986370
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-command-line-script-for-notification-services-configuration-files"></a>Notification Services 構成ファイル用の BAM コマンド ライン スクリプト
 管理者は、ProcessBamNSFiles.vbs スクリプトを使用して、BAM 警告の SQL Server Notification Services の動作をカスタマイズできます。 このスクリプトを使用して、Notification Services のアプリケーション定義ファイル (ADF) や Notification Services の構成ファイルを取得できます。 これらのファイルに変更を加えた後、スクリプトを使って変更内容を適用できます。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="get-command"></a>Get コマンド  
  **使用方法**  
   
- **cscript ProcessBamNSFiles-取得\<構成ファイルのパス > \<ADF ファイルのパス >\<プライマリ インポート サーバー >\<プライマリ インポート データベース >**  
+ **cscript ProcessBamNSFiles-取得\<構成ファイルのパス\> \<ADF ファイルのパス\>\<プライマリ インポート サーバー\> \<プライマリ インポート データベース  \>**  
   
 |パラメーター|Description|  
 |---------------|-----------------|  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="update-command"></a>Update コマンド  
  **使用方法**  
   
- **cscript ProcessBamNSFiles-更新\<configfilepath >\<構成ファイルのパス > \<primaryimport サーバー >\<プライマリ インポート データベース >**  
+ **cscript ProcessBamNSFiles-更新\<configfilepath\> \<構成ファイルのパス\>\<primaryimport サーバー\> \<プライマリ インポート データベース  \>**  
   
 |パラメーター|Description|  
 |---------------|-----------------|  

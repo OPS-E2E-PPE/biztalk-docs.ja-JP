@@ -12,16 +12,16 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d45355100e728220745620e1c0df3552f523f649
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5072a49c9edc5dc8ce03ec819d6042b640b94a47
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="handle-transactions-with-the-oracle-database-adapter"></a>Oracle データベース アダプターでトランザクションを処理します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]Oracle データベースで操作を実行中のトランザクションを開始しません。 代わりに、アダプターは、アダプターのクライアントによって提供されるトランザクション コンテキストを使用して操作を実行します。 使用してトランザクションで操作を実行するために、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、する必要があります。  
   
--   アダプターのクライアントのトランザクションを有効にします。 例については、トランザクションを有効にする[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]を選択する必要があります、 **Use-transaction**  チェック ボックス、**トランザクション**の領域、**メッセージ**タブに移動して、Wcf-custom または Wcf-oracledb ポートです。  
+-   アダプターのクライアントのトランザクションを有効にします。 たとえば、BizTalk Server のトランザクションを有効にする必要がありますを選択する、 **Use-transaction**  チェック ボックス、**トランザクション**の領域、**メッセージ**WCF カスタム タブまたはWcf-oracledb ポートです。  
   
 -   値を設定、 **UseAmbientTransaction**にプロパティのバインド**True**アダプターでします。 バインディング プロパティの詳細については、次を参照してください。 [Oracle データベースのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)です。  
   
@@ -41,4 +41,4 @@ ms.lasthandoff: 09/20/2017
  受信側に表示される操作の詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[アダプター画面 Oracle メタデータをどのようにしますか?](https://msdn.microsoft.com/library/cc185310(v=bts.10).aspx)です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Adapter 用 Oracle Database の概要](../../adapters-and-accelerators/adapter-oracle-database/overview-of-biztalk-adapter-for-oracle-database.md)
+ [BizTalk Adapter for Oracle Database の概要](../../adapters-and-accelerators/adapter-oracle-database/overview-of-biztalk-adapter-for-oracle-database.md)

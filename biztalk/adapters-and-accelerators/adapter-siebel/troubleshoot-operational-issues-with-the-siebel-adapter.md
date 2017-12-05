@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a7fd507b301d20d84680cb626953d21b8a6e201
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 1ff6e36afd7cecc967069fd3ecf5414c6afdb014
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-siebel-adapter"></a>Siebel アダプターでの運用上の問題をトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性が運用上の問題に関する情報をまとめて、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  
@@ -81,7 +81,7 @@ Connecting to the system LOB has failed. Retrieving the COM class factory for co
   
  **解決策**  
   
- Siebel Web クライアントのサポートされているバージョンがコンピューターにインストールされていることを確認してください。 サポートされているクライアントのインストール ガイドおよび Siebel のサーバー バージョンを参照してください。 インストール ガイドは\<システム ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
+ Siebel Web クライアントのサポートされているバージョンがコンピューターにインストールされていることを確認してください。 サポートされているクライアントのインストール ガイドおよび Siebel のサーバー バージョンを参照してください。 インストール ガイドは\<システム ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
   
 ###  <a name="BKMK_SiebelXMLRetrieve"></a>65536 以上のノードを持つ Xml を取得中にエラー  
  **問題**  
@@ -118,9 +118,9 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
  サンプルの app.config をようになります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <endpointBehaviors>  
         <behavior name="NewBehavior">  
@@ -132,7 +132,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
       <endpoint   behaviorConfiguration="NewBehavior" binding="siebelBinding"  
        contract="IOutboundContract" name="siebel_ICalculator" />  
     </client>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -161,7 +161,7 @@ Error saving properties.
   
  Siebel システムを使用して、すべての操作を実行するときに、アダプターは、次のエラーを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  
   
--   **の[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  
@@ -182,7 +182,7 @@ Error saving properties.
   
 ```  
 Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argument:  
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<operation_name>" Action="<action>" />  
 </BtsActionMapping>  
 ```  
@@ -232,7 +232,7 @@ Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argume
   
 ```  
 Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect Action   
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<op_name>" Action="<action>" />  
 </BtsActionMapping>. Correct the specified Action, or refer to the documentation on the allowed formats for the Actions.  
 ```  

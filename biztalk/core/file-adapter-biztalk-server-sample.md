@@ -15,17 +15,17 @@ caps.latest.revision: "46"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be2392f7a74b12ddd0c030922b166bb9a701ae88
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de68c57c6b435f85edf630a7b224c5d58ffd0cd6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>ファイル アダプター (BizTalk Server サンプル)
-ファイル アダプター サンプルは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] で機能するよう Microsoft Visual C# .NET で記述されています。 このサンプルでは動的アダプターまたは静的アダプターのいずれかをビルドするコードが提供されますが、  以下では静的アダプターの概要手順のみを説明します。 静的アダプターとは、静的な一連のスキーマが付属した、カスタム ユーザー インターフェイスのないアダプターのことです。 動的アダプターにはカスタム ユーザー インターフェイスが備わっており、動的な一連のスキーマが付属していることもあります。 静的アダプターと動的アダプターでは両方とも、アダプターの追加ウィザードを使用してスキーマを BizTalk プロジェクトに追加できます。  
+ファイル アダプター サンプルは、Microsoft Visual c# .NET で Microsoft BizTalk Server を使用する書き込まれます。 このサンプルでは動的アダプターまたは静的アダプターのいずれかをビルドするコードが提供されますが、  以下では静的アダプターの概要手順のみを説明します。 静的アダプターとは、静的な一連のスキーマが付属した、カスタム ユーザー インターフェイスのないアダプターのことです。 動的アダプターにはカスタム ユーザー インターフェイスが備わっており、動的な一連のスキーマが付属していることもあります。 静的アダプターと動的アダプターでは両方とも、アダプターの追加ウィザードを使用してスキーマを BizTalk プロジェクトに追加できます。  
   
 > [!NOTE]
->  ファイル アダプター サンプルは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] に付属のネイティブ ファイル アダプターと同じではありません。 したがって、このサンプルで使用するトランスポートの種類を選択する際は、[FILE] ではなく [静的] を選択してください。  
+>  ファイル アダプター サンプルは、BizTalk Server に付属しているネイティブ ファイル アダプターと同じではありません。 したがって、このサンプルで使用するトランスポートの種類を選択する際は、[FILE] ではなく [静的] を選択してください。  
   
  カスタム ユーザー インターフェイスと動的な一連のスキーマを備えた動的アダプターを使用する場合、アダプター管理側ではコードを追加する必要があります。 動的な一連のスキーマの使用をより深く理解するを参照してください[動的デザイン時アダプター構成](../core/dynamic-design-time-adapter-configuration.md)です。  
   
@@ -35,10 +35,10 @@ ms.lasthandoff: 09/20/2017
  このサンプル ファイル アダプターは、他のカスタム アダプターを作成する際にテンプレートとして使用できます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*>**\AdaptersDevelopment\File アダプター**  
+ \<*パスのサンプル*\>**\AdaptersDevelopment\File アダプター**  
   
 > [!NOTE]
->  既定の場所\<*サンプル パス*> は*%programfiles%*\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples とき[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]が 32 ビット バージョンを実行するコンピューターにインストールされています。Windows です。 既定の場所\<*サンプル パス*> は*%programfiles (x86) %*\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples とき[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]が 64 ビットを実行するコンピューターにインストールされています。Windows のバージョンです。 関連付けられている値を決定する、 *%programfiles%*または*%programfiles (x86) %*環境変数の型**echo %programfiles%**または**echo %%Programfiles (x86) %**コマンド プロンプトに ENTER キーを押します。 64 ビット オペレーティング システムでこのサンプルを実行している場合は、.reg ファイルからのいずれかのすべての参照を変更する必要があります。 **%programfiles%**に**%programfiles (x86) %** .reg ファイルを実行する前にします。  
+>  既定の場所\<*サンプル パス*\>は*%programfiles%*\Microsoft BizTalk Server\SDK\Samples 32 ビットを実行するコンピューターに BizTalk Server がインストールされている場合Windows のバージョンです。 既定の場所\<*サンプル パス*\>は*%programfiles (x86) %*\Microsoft BizTalk Server\SDK\Samples 64 を実行するコンピューターに BizTalk Server がインストールされている場合ビット版 Windows です。 関連付けられている値を決定する、 *%programfiles%*または*%programfiles (x86) %*環境変数の型**echo %programfiles%**または**echo %%Programfiles (x86) %**コマンド プロンプトに ENTER キーを押します。 64 ビット オペレーティング システムでこのサンプルを実行している場合は、.reg ファイルからのいずれかのすべての参照を変更する必要があります。 **%programfiles%**に**%programfiles (x86) %** .reg ファイルを実行する前にします。  
   
  このサンプルに含まれるファイルとその目的を次の表に示します。  
   
@@ -92,11 +92,11 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  管理者としてコマンド プロンプトを実行します。  
   
-2.  現在のディレクトリを変更、 \<*サンプル パス*>**\AdaptersDevelopment\BaseAdapter\v1.0.2**ディレクトリ。  
+2.  現在のディレクトリを変更、 \<*サンプル パス*\>**\AdaptersDevelopment\BaseAdapter\v1.0.2**ディレクトリ。  
   
 3.  コマンド プロンプトで次のように入力します。 **sn – k BaseAdapter.snk**し、ENTER キーを押します。 以前に実行されているその他のサンプルの結果としてこの .snk ファイルが既にあります。 この場合は、手順 4. に進んでください。  
   
-4.  現在のディレクトリを変更、 \<*サンプル パス*>\\**AdaptersDevelopment\File Adapter\Runtime**ディレクトリ。  
+4.  現在のディレクトリを変更、 \<*サンプル パス*\>\\**AdaptersDevelopment\File Adapter\Runtime**ディレクトリ。  
   
 5.  コマンド プロンプトで次のように入力します。 **sn – k DotNetFileAdapter.snk**し、ENTER キーを押します。  
   
@@ -106,7 +106,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
-2.  移動し、 \<*サンプル パス*>**"\AdaptersDevelopment\File Adapter\Runtime"**ディレクトリ、およびダブルクリック**DotNetFile.sln**.  
+2.  移動し、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Runtime"**ディレクトリ、およびダブルクリック**DotNetFile.sln**.  
   
 3.  ソリューション エクスプ ローラーで、アダプタのレシーバ ランタイム プロジェクトをリビルドを右クリックして**DotNetFile**、順にクリック**リビルド**です。  
   
@@ -114,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-build-the-adapter-design-time-project"></a>アダプター デザイン時のプロジェクトをビルドするには  
   
-1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*>**"\AdaptersDevelopment\File Adapter\Design time \adapter Management"**ディレクトリ、およびをダブルクリック**AdapterManagement.sln**です。  
+1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Design time \adapter Management"**ディレクトリ、およびをダブルクリック**AdapterManagement.sln**です。  
   
 2.  ソリューション エクスプ ローラーで右クリック**AdapterManagement**、順にクリック**リビルド**です。  
   
@@ -122,12 +122,12 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-register-the-sample-static-adapter"></a>サンプルの静的アダプターを登録するには  
   
-1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*>**"\AdaptersDevelopment\File アダプター"**ディレクトリ。  
+1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File アダプター"**ディレクトリ。  
   
 2.  サンプル アダプターをレジストリに追加するにはダブルクリック**StaticAdapterManagement.reg**です。  
   
     > [!NOTE]
-    >  StaticAdapterManagement.reg には、C:\Program files \microsoft にハードコードされたパスが含まれています。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\\です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を %ProgramFiles%\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\ ディレクトリにインストールしなかった場合、BizTalk Server 2009 または BizTalk Server 2006 R2 から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] へアップグレードした場合、または 64 ビット版 Windows を実行しているコンピューターに [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] をインストールした場合は、StaticAdapterManagement.reg ファイルのパスを適切に修正する必要があります。 既定では、 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 、%programfiles (x86) %\Microsoft がインストールされている[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\ ディレクトリに 64 ビット バージョンの Windows を実行しているコンピューター。 "InboundAssemblyPath"、"OutboundAssemblyPath"、および "AdapterMgmtAssemblyPath" の値に関連付けられたパスを更新し、指定されたファイルの正しい場所を指すようにします。  
+    >  StaticAdapterManagement.reg には、C:\Program files \microsoft BizTalk Server へのハードコードされたパスが含まれています。\\です。 インストールしていない場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]%ProgramFiles%\Microsoft BizTalk server で BizTalk Server 2009 または BizTalk Server 2006 R2 から BizTalk Server のインストールをアップグレードする場合、または BizTalk Server を実行しているコンピューターにインストールした場合は、ディレクトリ、64 ビット バージョンの Windows で、ファイル StaticAdapterManagement.reg のパスを適切に変更する必要があります。 既定では、BizTalk Server は、%programfiles(x86) %\Microsoft 64 ビット バージョンの Windows を実行しているコンピューター上の BizTalk server \ ディレクトリにインストールされます。 "InboundAssemblyPath"、"OutboundAssemblyPath"、および "AdapterMgmtAssemblyPath" の値に関連付けられたパスを更新し、指定されたファイルの正しい場所を指すようにします。  
   
     > [!IMPORTANT]
     >  BizTalk を 64 ビット コンピューターにインストールする場合は、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **StaticAdapterManagement.reg**レジストリ ファイル。  
@@ -170,13 +170,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
-2.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のインストール ドライブに次のフォルダーを作成します。  
+2.  BizTalk Server のインストール ドライブに、次のフォルダーを作成します。  
   
-    -   *\<ドライブ >*:**\Temp**  
+    -   *\<ドライブ\>*:**\Temp**  
   
-    -   *\<ドライブ >*:**\Temp\Send**  
+    -   *\<ドライブ\>*:**\Temp\Send**  
   
-    -   *\<ドライブ >*:**\Temp\Receive**  
+    -   *\<ドライブ\>*:**\Temp\Receive**  
   
 3.  Windows エクスプ ローラーを閉じる、**ファイル** メニューのをクリックして**閉じる**です。  
   
@@ -205,7 +205,7 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|型**AdapterSend**です。|  
-    |**トランスポートの種類**|選択**静的**クリックしてドロップダウン リストから**構成**です。<br /><br /> -、**ディレクトリ**ボックスに、入力 ***\<ドライブ >*: \Temp\Send**です。<br />-、**ファイル モード**ボックスで、 **CreateNew**です。<br />-、**ファイル名**ボックスに、入力**%MessageID%.xml**です。<br />- **OK**です。<br />- **URI**フィールドを表示する必要があります ***\<ドライブ >*: \Temp\Send\\%MessageID%.xml**です。|  
+    |**トランスポートの種類**|選択**静的**クリックしてドロップダウン リストから**構成**です。<br /><br /> -、**ディレクトリ**ボックスに、入力 ***\<ドライブ\>*: \Temp\Send**です。<br />-、**ファイル モード**ボックスで、 **CreateNew**です。<br />-、**ファイル名**ボックスに、入力**%MessageID%.xml**です。<br />- **OK**です。<br />- **URI**フィールドを表示する必要があります ***\<ドライブ\>*: \Temp\Send\\%MessageID%.xml**です。|  
     |**送信パイプライン**|選択**PassThruTransmit (Microsoft.BizTalk.DefaultPipelines.PassThruTransmit)**、順にクリック**OK**です。|  
   
 11. 下にある、 **BizTalk アプリケーション 1**  ノードをクリック**受信ポート**を選択して**新しい/一方向の受信ポート**です。  
@@ -224,7 +224,7 @@ ms.lasthandoff: 09/20/2017
     |--------------|----------------|  
     |**名前**|型**AdapterReceiveLocation**|  
     |**トランスポートの種類**|選択**静的**ヒット、ドロップダウン リストから**構成**にこれらの残りのプロパティにアクセスします。|  
-    |**URI**|省略記号ボタンをクリックする (**.**).<br />-、**数 Of Files In Batch**ボックスに、入力**20**です。<br />-、**ディレクトリ**ボックスに、入力 ***\<ドライブ >*: \Temp\Receive**です。<br />-、**ファイル マスク**プロパティに設定されている **\*.xml**です。<br />-、**のポーリング間隔**ボックスに、入力**5**、 をクリック**OK**です。<br />-、 **URI**ラベルを含む ***\<ドライブ >*: \Temp\Receive\\\*.xml**です。|  
+    |**URI**|省略記号ボタンをクリックする (**.**).<br />-、**数 Of Files In Batch**ボックスに、入力**20**です。<br />-、**ディレクトリ**ボックスに、入力 ***\<ドライブ\>*: \Temp\Receive**です。<br />-、**ファイル マスク**プロパティに設定されている **\*.xml**です。<br />-、**のポーリング間隔**ボックスに、入力**5**、 をクリック**OK**です。<br />-、 **URI**ラベルを含む ***\<ドライブ\>*: \Temp\Receive\\\*.xml**です。|  
     |**受信ハンドラー**|選択**BizTalkServerApplication**ドロップダウン リストからです。|  
     |**受信パイプライン**|選択**XMLReceive**ドロップダウン リストからです。|  
   
@@ -239,7 +239,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Visual Studio コマンド プロンプト**です。  
   
-2.  コマンド プロンプトでは、現在のディレクトリを変更する、 \<*サンプル パス*>**\AdaptersDevelopment\File Adapter\BizTalk Project\Adapter ハーネス**ディレクトリ。  
+2.  コマンド プロンプトでは、現在のディレクトリを変更する、 \<*サンプル パス*\>**\AdaptersDevelopment\File Adapter\BizTalk Project\Adapter ハーネス**ディレクトリ。  
   
 3.  コマンド プロンプトで次のように入力します。 **sn – k AdapterHarness.snk**、とし、enter キーを押します。  
   
@@ -310,11 +310,11 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-test-the-sample-static-adapter-runtime"></a>サンプルの静的アダプターをランタイムでテストするには  
   
-1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*>**\AdaptersDevelopment\File アダプター**ディレクトリ、および InstanceXML.xml ファイルをクリップボードにコピーします。  
+1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**\AdaptersDevelopment\File アダプター**ディレクトリ、および InstanceXML.xml ファイルをクリップボードにコピーします。  
   
-2.  移動*\<ドライブ >*:**\Temp\Receive**し、Instance.xml ファイルをフォルダーに貼り付けます。  
+2.  移動*\<ドライブ\>*:**\Temp\Receive**し、Instance.xml ファイルをフォルダーに貼り付けます。  
   
-     場合、送信と受信を使用しているアダプターからファイルを移動する必要があります、 *\<ドライブ >*:**\Temp\Receive**フォルダーを*\<ドライブ >*:**\Temp\Send**フォルダーです。  
+     場合、送信と受信を使用しているアダプターからファイルを移動する必要があります、 *\<ドライブ\>*:**\Temp\Receive**フォルダーを*\<ドライブ\>* :**\Temp\Send**フォルダーです。  
   
 ##### <a name="to-test-the-sample-add-adapter-wizard-functionality-for-the-sample-static-adapter"></a>サンプルの静的アダプターで、サンプルのアダプターの追加ウィザード機能をテストするには  
   

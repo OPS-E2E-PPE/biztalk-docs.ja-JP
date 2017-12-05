@@ -12,18 +12,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baaca02ac076c79be004ed7b3d2c0f4fffce6ff9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ddbc35fecd2412632f0c4a81750a3662e6e7bf11
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edifact-contrl-acknowledgment"></a>EDIFACT CONTRL 確認
 CONTRL 確認 (ACK) は、EDIFACT エンコード メッセージの技術確認および機能確認として機能します。 技術確認としての CONTRL メッセージは、インターチェンジの受信を示します。 機能確認としての CONTRL メッセージは、エラーまたはサポートされていない機能の一覧を含んでおり、受信したインターチェンジ、グループ、またはメッセージの受理または拒否を示します。  
   
  CONTRL メッセージの全文は、機能確認として機能します。 機能確認の各セクションは、技術確認のために再使用されます。 送信元パーティまたはグローバル プロパティでは、技術と機能の両方の Ack をパーティのプロパティで選択した、BizTalk Server は次の 2 つの CONTRL メッセージを生成: 技術 CONTRL 確認と機能 CONTRL 確認です。  
   
- CONTRL 確認は、efact _ に準拠している\<バージョン番号 > >_contrl.xsd スキーマです。  
+ CONTRL 確認は、efact _ に準拠している\<バージョン番号\>>_contrl.xsd スキーマです。  
   
 ## <a name="technical-acknowledgement"></a>技術確認  
  技術確認は、インターチェンジの受信に関する次の内容を意味します。  

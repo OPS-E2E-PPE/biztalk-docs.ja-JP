@@ -41,11 +41,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c668b3123483de1d53afa8ca74cf9d7d2376ecea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8dd0ebb22bcf6253604e4e8bf7fd858deb776b0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="defining-a-business-rule-for-a-private-process-orchestration"></a>プライベート プロセス オーケストレーションのビジネス ルールの定義
 受信確認プライベート プロセスで使用するビジネス ルールを定義できます。 これにより、プライベート プロセス オーケストレーションを停止することなく、ビジネス ルールを大幅に変更できます。 このプロセスでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ビジネス ルール エンジンを使用します。 このプロセスには以下の手順が含まれます。  
@@ -56,11 +56,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  プライベート プロセス オーケストレーションからのビジネス ルールの呼び出し。 これは、追加、**ルールの呼び出し**オーケストレーションへの図形です。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、サンプルが含まれています[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]ビジネス ポリシー、samplebtarnpolicy.xml、で\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for RosettaNet\。SDK\PipAutomation\3A4 です。 詳細については、次を参照してください。[サンプル BTARN ビジネス ポリシー](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)です。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、サンプルが含まれています[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]ビジネス ポリシー、samplebtarnpolicy.xml、で\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。Accelerator for rosettanet \sdk\pipautomation\3a4 です。 詳細については、次を参照してください。[サンプル BTARN ビジネス ポリシー](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)です。  
   
  PIP3A4PrivateResponder.odx オーケストレーションは、ビジネス ルールを組み込んでいる PIP (Partner Interface Process) 固有の応答側プライベート プロセスを実装する方法を示すプライベート プロセス オーケストレーションのサンプルです。 このサンプルの詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
   
- ボキャブラリとポリシーの詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] の「ビジネス ルールを使用した開発」トピックを参照してください。  
+ ボキャブラリおよびポリシーの詳細については、BizTalk Server で「ビジネス ルールの開発」トピックを参照してください。  
   
 ### <a name="to-add-a-new-vocabulary"></a>新しいボキャブラリを追加するには  
   
@@ -170,11 +170,11 @@ ms.lasthandoff: 09/20/2017
 11. オーケストレーション デザイン ウィンドウで、入力の追加など、ビジネス ポリシーに関連付けられている処理に必要なすべての他の図形、**デシジョン**図形の下、**ルールの呼び出し**図形です。  
   
     > [!NOTE]
-    >  使用する方法の例については、**ルールの呼び出し**オーケストレーションに図形を BTARN SDK に付属の PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 これは、 \<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
+    >  使用する方法の例については、**ルールの呼び出し**オーケストレーションに図形を BTARN SDK に付属の PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 これは、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
   
 12. **[OK]**をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [プログラミング ガイド](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)   
  [サンプル BTARN ビジネス ポリシー](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)   
- [ビジネス ルールを使用して、3A4 プライベート応答側オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)
+ [ビジネス ルールを使用した 3A4 プライベート レスポンダー オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)

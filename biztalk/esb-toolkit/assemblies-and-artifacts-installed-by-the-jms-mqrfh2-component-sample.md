@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2dfd8aaa2b47c0acea6421fe6c50acb49127c13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b1d5035f5379972521c36fb8bef5b6aba8157aa6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-jms-mqrfh2-component-sample"></a>アセンブリおよび JMS MQRFH2 コンポーネント サンプルがインストールされているアイテム
 次の表は、アセンブリおよびによってインストールされているアイテム、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 コンポーネント サンプルです。  
@@ -38,4 +38,4 @@ ms.lasthandoff: 09/20/2017
 |BizTalk アプリケーション GlobalBank.ESB|マップ||  
 |グローバル アセンブリ キャッシュ|アセンブリ|GlobalBank.ESB.JMS.Pipelines バージョン 1.0.0.0|  
 |||GlobalBank.ESB.JMS.Processes バージョン 1.0.0.0|  
-|%Program Files %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline コンポーネント|パイプライン コンポーネント||
+|%Program Files %\\BizTalk Server\Pipeline コンポーネント|パイプライン コンポーネント||

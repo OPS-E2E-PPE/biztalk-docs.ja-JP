@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c295834f00781cc92a6aa47d01374c80b485149d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0aff501e5bf59d6ae22d9ad2a00e0e5ff5ad4605
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-custom-rfcs-for-the-data-provider-for-sap"></a>SAP 用データ プロバイダーのカスタム Rfc をインストールします。
 MySAP Business Suite の SAP システムにアクセスする .NET Framework データ プロバイダーを使用する場合は、カスタムの Rfc をインストールします。
@@ -31,7 +31,7 @@ MySAP Business Suite の SAP システムにアクセスする .NET Framework �
   
 -   EXECQUERY 操作の実行、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] Z_EXECUTE_SAP_QUERY RFC が必要です。  
   
-SAP システムでこれらの操作を実行するには、SAP システムでこれらのカスタム Rfc をインストールする必要があります。 インストールする場合、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と共に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、セットアップ プログラムによってコピーの RFC トランスポート、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]圧縮ファイル (customRFC.zip) システムでアダプターをインストールするとします。 Zip ファイルが通常にインストールされている*\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft .NET Framework Data Provider 用 mySAP Business Suite*です。 
+SAP システムでこれらの操作を実行するには、SAP システムでこれらのカスタム Rfc をインストールする必要があります。 インストールする場合、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と共に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、セットアップ プログラムによってコピーの RFC トランスポート、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]圧縮ファイル (customRFC.zip) システムでアダプターをインストールするとします。 Zip ファイルが通常にインストールされている*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft .NET Framework Data Provider 用 mySAP Business Suite*です。 
   
  Zip ファイルを抽出するには、後に 4 つのデータ ファイルが表示されます、2 つの次の名前付けパターン K9 * です。BI1 (たとえば、K900534 に似ています。BI1)、およびその他の 2 つ次のパターン R9\*です。BI1 (たとえば、R900534 に似ています。BI1)。  
   
@@ -217,11 +217,11 @@ SAP システムでこれらの操作を実行するには、SAP システムで
   
     |||  
     |-|-|  
-    |OUT_TABLEHEADER|\<一般的なメタデータを T000 >|  
-    |OUT_TECHNICALSETTINGS|\<技術的なデータベース レベルのメタデータを T000 >|  
-    |OUT_RECORDLENGTH|\<SAP バージョンに依存する >|  
-    |OUT_RECORDCOUNT|\<SE16 T000 を使用しているシステムでクライアントの数を確認 >|  
-    |OUT_ZDATATABLE|\<T000 で SE 16 を使用してソース データにこの結果を確認して >|  
+    |OUT_TABLEHEADER|\<T000 一般的なメタデータ\>|  
+    |OUT_TECHNICALSETTINGS|\<T000 技術的なデータベース レベルのメタデータ\>|  
+    |OUT_RECORDLENGTH|\<SAP バージョンによって異なります\>|  
+    |OUT_RECORDCOUNT|\<SE16 T000 を使用しているシステムでクライアントの数を確認します。\>|  
+    |OUT_ZDATATABLE|\<T000 で SE 16 を使用して、ソース データと結果を確認します。\>|  
     |OUT_RETURN_TAB|S 001 成功|  
   
 ## <a name="remove-the-rfc-for-the-data-provider-for-sap"></a>SAP 用データ プロバイダーの RFC を削除します。  
@@ -241,5 +241,5 @@ SAP システムでこれらの操作を実行するには、SAP システムで
      詳細については、SAP 単位管理者に問い合わせてください。  
      
 ## <a name="next"></a>Next
-[MySAP Business Suite の BizTalk アダプターを理解します。](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)  
-[SAP アダプタ チュートリアル](../../adapters-and-accelerators/adapter-sap/sap-adapter-tutorials.md)
+[BizTalk Adapter for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)  
+[SAP アダプター チュートリアル](../../adapters-and-accelerators/adapter-sap/sap-adapter-tutorials.md)

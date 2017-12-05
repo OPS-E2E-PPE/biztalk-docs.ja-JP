@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec68ad7e60033c0830eaf9977e1edf8ab45847d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89a3722d6d8e1d4b730341dfaf16d60af1686f21
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-9-test-the-solution"></a>手順 9: ソリューションをテストします。
 このトピックでは、EDI アグリーメントが展開されている HTTP エンドポイントに X12 840 販売注文メッセージを送信することで、ハイブリッド アプリケーションをテストします。 販売注文メッセージのサンプルは次のようになります。  
@@ -74,7 +74,7 @@ IEA*1*000000025~
 4.  使用して**MessageSender**別のメッセージがこの時間、数量の値の設定を送信するメッセージの順序付けに*99*です。 現時点では、そのレコードは挿入されません、 **SalesOrder**テーブル。 代わりに、メッセージは、注文数量が 100 未満のメッセージを受信するために指定したファイルの場所にコピーされます。 受信したメッセージには、次のようになります。  
   
     ```  
-    \<ns1:SalesOrder xmlns:ns0="http://schemas.microsoft.com/BizTalk/EDI/X12/2006" xmlns:ns1="http://ECommerceSalesOrder.Inbound">  
+    <ns1:SalesOrder xmlns:ns0="http://schemas.microsoft.com/BizTalk/EDI/X12/2006" xmlns:ns1="http://ECommerceSalesOrder.Inbound">  
       <CompanyCode>co</CompanyCode>  
       <PartID>1</PartID>  
       <Quantity>99</Quantity>  
@@ -94,7 +94,7 @@ IEA*1*000000025~
       </Contact>  
       <Comments>Order from Partnerco</Comments>  
       <DateNow>2012-06-19</DateNow>  
-    \</ns1:SalesOrder>  
+    </ns1:SalesOrder>  
   
     ```  
   

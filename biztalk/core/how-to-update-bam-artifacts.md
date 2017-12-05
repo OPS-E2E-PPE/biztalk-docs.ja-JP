@@ -17,11 +17,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e377a455089127c9dc219846ec3f66e3322924cc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f80499881c075c805bc5949942644dcece5075fb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-bam-artifacts"></a>BAM アイテムを更新する方法
 管理者を使用して、**更新すべて**コマンドを BAM プライマリ インポート データベースに展開されたアイテムを更新します。 指定する BAM 定義は、更新するアイテムについての情報を含んでいる XML ファイルまたは Excel ブックのいずれかです。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm 更新すべて-definitionfile:\<def ファイル >**です。  
+3.  型**bm 更新すべて-definitionfile:\<def ファイル\>**です。  
   
 4.  **Enter**キーを押します。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b51b98d1d9172b40b36cfd496e8bb9c511e5c19
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 584cad0c850b85ef7c920da1611adbdc464d7250
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-box-performance-counters"></a>メッセージ ボックスのパフォーマンス カウンター
 パフォーマンス カウンターを使用すると、サービスによってサイトまたはシステムで実行されている作業の具体的な側面を監視できます。 パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **カウンターの追加** ダイアログ ボックスから、**使用可能なカウンター**一覧で、いずれかを選択**BizTalk:Message Box:general Counters**または**biztalk: メッセージ ボックス: ホスト カウンター**です。 選択したパフォーマンス カウンター オブジェクトを展開し、監視するカウンターを選択します。  
   
-4.  **インスタンスの選択したオブジェクト**一覧をクリックして、選択したカウンターを監視する特定のインスタンスを選択**追加**です。  使用可能なカウンターのすべてのインスタンスを選択するには、次のように選択します。 \<**すべてのインスタンス**>。  
+4.  **インスタンスの選択したオブジェクト**一覧をクリックして、選択したカウンターを監視する特定のインスタンスを選択**追加**です。  使用可能なカウンターのすべてのインスタンスを選択するには、次のように選択します。 \<**すべてのインスタンス**\>です。  
   
 5.  カウンターを追加すると、をクリックして**OK**です。  
   

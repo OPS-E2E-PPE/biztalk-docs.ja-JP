@@ -12,16 +12,16 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf7b49ad5b8a7a383538ecef5a1dbadbc0dac3af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c38d00cbaf5d34aa880f5efd1d9e9a59d59c4e0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="adapter-registration-file"></a>アダプターの登録ファイル
 カスタム アダプター コードを正常にビルドしたら、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録する必要があります。 これを行うには、レジストリを適切なアダプターの設定で更新します。 レジストリ ファイルは手動で記述できますが、正確かつ複雑な情報を入力する必要があるため、手動での記述はエラーを招く原因となります。 推奨される方法は、アダプターのレジストリ ウィザードを実行することです。 アダプターのレジストリ ウィザードには、最初からレジストリ ファイルを作成するのとまったく同じオプションが用意されており、ファイルでエラーが発生する可能性を減らすことができます。 アダプター レジストリ ウィザードの詳細については、次を参照してください。[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)です。  
   
- StaticAdapterManagement.reg ファイルと DynamicAdapterManagement.reg ファイル*\<ドライブ >*: \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples\AdaptersDevelopment\File Adapter です。 これらのファイルのいずれかを実行すると (ダブルクリックするか、右クリックすることができを選択し、**マージ**)、レジストリでサンプル ファイル アダプターを登録し、アセンブリをグローバル アセンブリ キャッシュにインストールします。 カスタム アダプターを登録するための最適な方法としては、アダプターのレジストリ ウィザードを使用して新しいレジストリ ファイルを作成することをお勧めします。 カスタムの静的アダプターがサンプル アダプターに似ている場合は、作成する代わりに既存のレジストリ ファイルを変更し、StaticAdapterManagement.reg ファイルの次のプロパティを開いて変更します。  
+ StaticAdapterManagement.reg ファイルと DynamicAdapterManagement.reg ファイル*\<ドライブ\>*: \Program Files\Microsoft BizTalk Server\SDK\Samples\AdaptersDevelopment\File アダプター。 これらのファイルのいずれかを実行すると (ダブルクリックするか、右クリックすることができを選択し、**マージ**)、レジストリでサンプル ファイル アダプターを登録し、アセンブリをグローバル アセンブリ キャッシュにインストールします。 カスタム アダプターを登録するための最適な方法としては、アダプターのレジストリ ウィザードを使用して新しいレジストリ ファイルを作成することをお勧めします。 カスタムの静的アダプターがサンプル アダプターに似ている場合は、作成する代わりに既存のレジストリ ファイルを変更し、StaticAdapterManagement.reg ファイルの次のプロパティを開いて変更します。  
   
 -   **制約**  
   
@@ -99,7 +99,7 @@ Windows Registry Editor Version 5.00
   
 2.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
-3.  インストール ドライブに移動[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]に移動し、  **<**  `drive` **>: \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\Samples\AdaptersUsage\File アダプター**です。  
+3.  BizTalk Server のインストール ドライブに移動しに移動し、  **<**  `drive` **>: \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\Samples\AdaptersUsage\File アダプター**です。  
   
 4.  サンプル アダプターをレジストリに追加するにはダブルクリック**StaticAdapterManagement.reg**です。(動的ファイル アダプター、レジストリに追加実行する場合**DynamicAdapterManagement.reg**代わりに、そのファイルに適切な使用します)。  
   

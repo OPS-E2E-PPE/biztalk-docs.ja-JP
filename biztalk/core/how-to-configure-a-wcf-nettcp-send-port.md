@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8992a2c37295c7badab856e7a92a8f083ac9123b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f46c4b521c754bd2096916a03e356262dfa4d46
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-wcf-nettcp-send-port"></a>WCF-NetTcp 送信ポートを構成する方法
 WCF-NetTcp 送信ポートは、プログラムまたは BizTalk 管理コンソールを使用して構成できます。  
@@ -32,7 +32,7 @@ WCF-NetTcp 送信ポートは、プログラムまたは BizTalk 管理コンソ
 |プロパティ名|型|Description|  
 |-------------------|----------|-----------------|  
 |**Identity**|XML Blob<br /><br /> 例:<br /><br /> &lt;id&gt;<br /><br /> &lt;userPrincipalName 値 ="username@contoso.com"/&gt;<br /><br /> &lt;/identity&gt;|この送信ポートが必要とするサービスの ID を指定します。 これらの設定により、この送信ポートでサービスを認証できます。 クライアントとサービスの間のハンドシェイク プロセスでは、Windows Communication Foundation (WCF) インフラストラクチャによって、この要素の値と予期されるサービスの ID が照合されます。<br /><br /> 既定値は空の文字列です。|  
-|**StaticAction**|文字列|指定して、 **SOAPAction**送信メッセージのヘッダー フィールド。 このプロパティは、メッセージ コンテキスト プロパティからも設定できます**WCF です。アクション**パイプラインまたはオーケストレーションでします。 2 つの異なる方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 シングル アクション形式では、このプロパティを設定するかどうかは、http://contoso.com/Svc/Op1 など —、 **SOAPAction**ヘッダーは常に送信メッセージの設定をこのプロパティで指定された値にします。<br /><br /> 送信アクション マッピング形式でこのプロパティを設定する場合**SOAPAction**ヘッダーはによって決定されます、 **BTS です。操作**コンテキスト プロパティです。 たとえば、このプロパティは、次の XML 形式に設定されている場合、 **BTS です。操作**プロパティを Op1 に設定は、WCF 送信アダプタでは、http://contoso.com/Svc/Op1 を使用、送信を**SOAPAction**ヘッダー。<br /><br /> \<BtsActionMapping ><br /><br /> \<操作名"Op1"アクションを = ="http://contoso.com/Svc/Op1"/><br /><br /> \<操作名"Op2"アクションを = ="http://contoso.com/Svc/Op2"/><br /><br /> \</BtsActionMapping ><br /><br /> 送信メッセージには、オーケストレーション ポートから場合、オーケストレーション インスタンスは動的に設定、 **BTS です。操作**ポートの操作の名前を持つプロパティです。 コンテンツ ベースのルーティングと、送信メッセージのルーティングされる場合は、設定、 **BTS です。操作**パイプライン コンポーネントのプロパティです。<br /><br /> 既定値は空の文字列です。|  
+|**StaticAction**|文字列|指定して、 **SOAPAction**送信メッセージのヘッダー フィールド。 このプロパティは、メッセージ コンテキスト プロパティからも設定できます**WCF です。アクション**パイプラインまたはオーケストレーションでします。 2 つの異なる方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 シングル アクション形式では、このプロパティを設定するかどうかは、http://contoso.com/Svc/Op1 など —、 **SOAPAction**ヘッダーは常に送信メッセージの設定をこのプロパティで指定された値にします。<br /><br /> 送信アクション マッピング形式でこのプロパティを設定する場合**SOAPAction**ヘッダーはによって決定されます、 **BTS です。操作**コンテキスト プロパティです。 たとえば、このプロパティは、次の XML 形式に設定されている場合、 **BTS です。操作**プロパティを Op1 に設定は、WCF 送信アダプタでは、http://contoso.com/Svc/Op1 を使用、送信を**SOAPAction**ヘッダー。<br /><br /> \<BtsActionMapping\><br /><br /> \<操作名"Op1"アクションを = ="http://contoso.com/Svc/Op1"/\><br /><br /> \<操作名"Op2"アクションを = ="http://contoso.com/Svc/Op2"/\><br /><br /> \</BtsActionMapping\><br /><br /> 送信メッセージには、オーケストレーション ポートから場合、オーケストレーション インスタンスは動的に設定、 **BTS です。操作**ポートの操作の名前を持つプロパティです。 コンテンツ ベースのルーティングと、送信メッセージのルーティングされる場合は、設定、 **BTS です。操作**パイプライン コンポーネントのプロパティです。<br /><br /> 既定値は空の文字列です。|  
 |**OpenTimeout**|**System.TimeSpan**|チャネルを開く操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
 |**SendTimeout**|**System.TimeSpan**|送信操作が完了するまでの間隔を示す期間値を指定します。 送信請求 - 応答の送信ポートを使用する場合は、サービスから大きいメッセージが返される場合でも、この値には対話処理がすべて完了するまでの時間を指定します。<br /><br /> 既定値:00:01:00|  
 |**CloseTimeout**|**System.TimeSpan**|チャネルを閉じる操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
@@ -78,7 +78,7 @@ WCF-NetTcp 送信ポートは、プログラムまたは BizTalk 管理コンソ
   
  次の形式を使用してプロパティを設定できます。  
   
- \<CustomProps >  
+ \<CustomProps\>  
   
 ```  
   <UseSSO vt="11">0</UseSSO>  
@@ -141,4 +141,4 @@ explorer.SaveChanges();
  [WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)   
  [WCF アダプターの証明書のインストール](../core/installing-certificates-for-the-wcf-adapters.md)   
  [Wcf-nettcp アダプターを構成します。](../core/configuring-the-wcf-nettcp-adapter.md)   
- [WCF アダプター コンテキスト プロパティを使用して動的送信ポートの構成](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)
+ [WCF アダプター コンテキスト プロパティによる動的送信ポートの構成](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00c603a3a0c52d735441858af6a2f602c30d1f51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d235fa0f6882ecd9e180aabd26999b1d7f73390
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-deploying-the-policy"></a>チュートリアル: ポリシーを展開します。
 このチュートリアルでを展開する手順、 **ProcessPurchaseOrder**次の 3 つの方法でポリシー。  
@@ -268,7 +268,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  参照、および XML ファイルをダブルクリックして (**C:\BRE-Walkthroughs\ProcessPOFromAdmin.xml**) の最初の手順で作成しました。  
   
-4.  展開**\<すべてのアイテム >** **アプリケーション**です。  
+4.  展開**\<すべての成果物\>** **アプリケーション**です。  
   
 5.  をクリックして**ポリシー**のバージョン 1.3 を表示する必要があります、 **ProcessPurchaseOrder**が一覧にします。  
   
@@ -413,7 +413,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  ボキャブラリが含まれている 1 番目の BRL ファイルから、XML コンテンツ全体をコピーします。  
   
-    3.  ルール セット ブロックのコピー (で始まる、 \<ruleset > タグと末尾には、 \</ruleset > タグ)、2 番目の BRL ファイルからです。  
+    3.  ルール セット ブロックのコピー (で始まる、 \<ruleset\>タグと末尾には、 \</ruleset\>タグ)、2 番目の BRL ファイルからです。  
   
     4.  新しいファイルを保存します。 この単一の XML ファイルを作成するをインポートすることができます、 **POVocabulary**ボキャブラリと**ProcessPurchaseOrder**ポリシー。  
   

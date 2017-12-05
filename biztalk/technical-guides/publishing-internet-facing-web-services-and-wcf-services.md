@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38ee916aaa5e158160f2096b0ba9b2678dd6b8d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e466c4fc2a5f83f5a8445601235b53f44404a912
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="publishing-internet-facing-web-services-and-wcf-services"></a>インターネットに接続された Web サービスと WCF サービスの発行
 複数の方法を使用するには発行のため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスと WCF サービスをインターネット。  
@@ -25,12 +25,12 @@ ms.lasthandoff: 09/20/2017
   
 -   実行するコンピューターに配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]境界ネットワークのドメインに、Web サービスまたは WCF サービスを発行します。  
   
--   使用して[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]クラウドの Web サービスまたは WCF サービスを Azure AppFabric Service Bus リレー エンドポイントとして公開する機能を有効化します。  
+-   Azure AppFabric Service Bus リレー エンドポイントとして、Web サービスまたは WCF サービスを公開するのにには、BizTalk Server クラウドの有効化の機能を使用します。  
   
 ## <a name="using-a-reverse-proxy"></a>リバース プロキシを使用します。  
  発行のための従来のアプローチがされてこの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスと WCF サービスです。 リバース プロキシ ルールを使用して、境界ネットワーク内と、境界ネットワークにある BizTalk サーバーが存在する必要があります。 リバース プロキシ ルールだけで、HTTP および SOAP に要求を転送、境界ネットワークから実行しているコンピューター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イントラネット ドメインにします。  
   
- 詳細については、リバース プロキシを使用して、次のトピックを参照してください。[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ 詳細については、リバース プロキシを使用して、BizTalk Server ヘルプの次のトピックを参照してください。  
   
 -   ["サンプル アーキテクチャ: HTTP アダプタと SOAP アダプタ"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)。  
   

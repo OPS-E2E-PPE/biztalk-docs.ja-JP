@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d21b558f75824340718f7bd6efa3f10ae9926ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27d2e0ed3c8298287471b60d87b199fcfc800e61
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="performing-bottleneck-testing-and-tuning"></a>テストとチューニングのボトルネックを実行します。
 システムのボトルネックを確認し、それに応じてシステムをチューニングするパフォーマンスのテストを完了する必要があります。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="testing-the-end-to-end-system"></a>エンド ツー エンド システムをテストします。  
  エンド ツー エンドのパフォーマンスのについては説明しませんが、アプリケーション サブシステムのパフォーマンスを分離する効果的な方法は上記で説明されているため入力と出力のレートのテストです。 同じ共有リソース (たとえば、メッセージ ボックス データベース) に対して競合する複数のリソースが開始されるまで、いくつかのボトルネックを識別できないため、エンド ツー エンドのパフォーマンスをテストすることも必要があります。  
   
- 負荷を生成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、Microsoft BizTalk LoadGen 2007 ツールの使用を検討します。 LoadGen 2007 ツールの詳細については、次を参照してください。 [Microsoft BizTalk LoadGen 2007](http://go.microsoft.com/fwlink/?LinkID=59841) (http://go.microsoft.com/fwlink/?LinkID=59841)。  
+ 負荷を生成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、Microsoft BizTalk LoadGen 2007 ツールの使用を検討します。 ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)です。  
   
  生成用のレポートのパフォーマンスを分析して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、パフォーマンス分析のログ (PAL) のツールの使用を検討します。 PAL ツールの詳細については、次を参照してください。[パフォーマンス分析のログ (PAL) のツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)です。  
   

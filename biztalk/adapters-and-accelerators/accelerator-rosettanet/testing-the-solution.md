@@ -15,15 +15,15 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4692035aed17f8432eb2bb515fa75df61be8047f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7af2cab529344f499ff006a6cd99401ae63c4668
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="testing-the-solution"></a>ソリューションをテストします。
-ここでは、完成したソリューションをテストします。 Fabrikam ソリューションで作成した LOBWebApplication ツールを使用して、Contoso LOB アプリケーションに 3A2 PIP 要求を送信します。 作成した Contoso のプライベート オーケストレーションは、SQL Adapter for [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] を使用して、Contoso ベースの 3A2 Price and Availability 要求を ERP システムに送信します。 ERP システムからの応答を受信すると、オーケストレーションはビジネス ルール エンジンを呼び出し、作成した緊急時に必要なビジネス ポリシーを実行します。  
+ここでは、完成したソリューションをテストします。 Fabrikam ソリューションで作成した LOBWebApplication ツールを使用して、Contoso LOB アプリケーションに 3A2 PIP 要求を送信します。 作成した Contoso のプライベート オーケストレーションは、BizTalk Server の SQL アダプタを使用して、ERP システムに Contoso のベース 3 a 2 Price and Availability 要求を送信します。 ERP システムからの応答を受信すると、オーケストレーションはビジネス ルール エンジンを呼び出し、作成した緊急時に必要なビジネス ポリシーを実行します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Fabrikam サンプルを使用して Price and Availability Request の作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-price-and-availability-request-with-the-fabrikam-sample.md)
+-   [Fabrikam サンプルを使用した Price and Availability 要求の作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-price-and-availability-request-with-the-fabrikam-sample.md)

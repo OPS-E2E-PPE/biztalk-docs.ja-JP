@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87e2750a16d2c65b5838b6d61f27cbd2b2ff9885
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cfc247aa1ab9ec7cb6f056cd45df54bc324990ad
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="prepare-for-the-double-action-tutorial"></a>ダブル アクション チュートリアルを準備します。
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  BTARN オーケストレーションを開始するなど、RosettaNet accelerator を完全に構成することを確認します。 参照してください[をインストールして構成する](install-configure-biztalk-accelerator-for-rosettanet.md)です。
   
--   このチュートリアルでは、ループバック アグリーメントを持つ 1 台のコンピューターではなく 2 台のコンピューターを使用して、実際のシナリオをシミュレートします。 このチュートリアルで使用するコンピューター名は、プレースホルダーとして示されます。 選択した実際のコンピューター名でそのプレース ホルダーを置き換えます。 たとえば、コンピューター、Contoso ソリューションを実行している場合は、という名前の**Contoso**のチュートリアルでは置換\\ \\< contoso**_** *コンピューター*> そのコンピューターの名前を持つ。  
+-   このチュートリアルでは、ループバック アグリーメントを持つ 1 台のコンピューターではなく 2 台のコンピューターを使用して、実際のシナリオをシミュレートします。 このチュートリアルで使用するコンピューター名は、プレースホルダーとして示されます。 選択した実際のコンピューター名でそのプレース ホルダーを置き換えます。 たとえば、コンピューター、Contoso ソリューションを実行している場合は、という名前の**Contoso**のチュートリアルでは置換\\ \\< contoso**_** *コンピューター* \>そのコンピューターの名前を持つ。  
   
 -   このチュートリアルでは、Contoso と Fabrikam の間で証明書を使用する、セキュリティで保護された通信の使用を推奨します。 を必要として、それぞれのコンピューターでインストールするには、すべての証明書を生成する必要があります。  
   
@@ -37,8 +37,8 @@ ms.lasthandoff: 09/20/2017
   
 -   [手順 1: 証明機関の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)  
   
--   [手順 2: パブリックおよびプライベート証明書の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)  
+-   [手順 2: パブリック証明書とプライベート証明書の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)  
   
--   [手順 3: パブリックおよびプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)  
+-   [手順 3: パブリック証明書とプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)  
   
--   [手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にします。](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)
+-   [手順 4: IIS で Secure Sockets Layer の有効化](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)

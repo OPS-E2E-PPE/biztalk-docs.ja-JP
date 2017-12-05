@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5499c9535ff822dfec8097185ef17d8d7999e1f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a277149a47fa60dda4df9291ec437ac67c518fdd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-considerations"></a>メッセージの考慮事項
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信、受信、変換、およびメッセージの処理の広範な機能セットを提供します。 これらの機能が含まれます。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]  
     >  参照してください[オーケストレーションのパフォーマンスの最適化](../technical-guides/optimizing-orchestration-performance.md)でオーケストレーションを使用するときに従うベスト プラクティスに関するガイダンスについて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 トピックを参照して[オーケストレーション デザイナーを使用してオーケストレーションを作成する](http://go.microsoft.com/fwlink/?LinkId=158997)(http://go.microsoft.com/fwlink/?LinkId=158997) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーション デザイナーの使用の詳細についてはドキュメントです。  
   
- このトピックの残りの部分で処理されるメッセージのサイズ、複雑さ、および配布のプロファイルに関連するパフォーマンスの考慮事項を説明します、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]環境。  
+ このトピックの残りの部分では、BizTalk Server 環境で処理されるメッセージのサイズ、複雑さ、および配布のプロファイルに関連するパフォーマンスの考慮事項について説明します。  
   
 ## <a name="message-size-considerations"></a>メッセージのサイズに関する考慮事項  
  BizTalk Server には、メッセージのサイズに制限はありません、ときに実際の制限値との依存関係する必要がありますサイズの大きいメッセージより多くの処理リソースを必要とするために、メッセージのサイズを最小化します。 同様のメッセージのサイズが増えると、全体的なスループット (1 秒あたりに処理されるメッセージ) が減少します。 ときにシナリオを設計し、容量の計画は、メッセージの平均サイズ、メッセージの種類、および BizTalk Server で処理するメッセージの数を検討します。 不必要に長く属性とタグ名を使用しないでください。可能であれば、50 文字の長さを保持します。 たとえば、1 バイトしかのメッセージ サイズを 200 文字タグ名を使わないでください。  

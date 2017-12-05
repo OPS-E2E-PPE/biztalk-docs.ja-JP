@@ -16,11 +16,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a5e8057837012d27a877117a169c2cd04fa3d8d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e70271967086f530ce5421348c118a74019dd366
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="helloworld-biztalk-server-sample"></a>HelloWorld (BizTalk Server サンプル)
 HelloWorld サンプルは、BizTalk オーケストレーションを使用して、XML メッセージ (注文書) を関連する別の種類のメッセージ (請求書) に変換する方法を示すものです。  
@@ -40,7 +40,7 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
  詳細については、**変換**図形は、「[変換図形を構成する方法](../core/how-to-configure-the-transform-shape.md)です。 マップのビルドの詳細については、次を参照してください。 [BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)です。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Orchestrations\HelloWorld\  
+ \<*パスのサンプル*\>\Orchestrations\HelloWorld\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -61,13 +61,13 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Orchestrations\HelloWorld  
+     \<*パスのサンプル*\>\Orchestrations\HelloWorld  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプルの入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
-         \<*パスのサンプル*> \Orchestrations\HelloWorld  
+         \<*パスのサンプル*\>\Orchestrations\HelloWorld  
   
     -   コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。  
   
@@ -84,7 +84,7 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
   
 1.  ファイル SamplePOInput.xml のコピーに、**で**フォルダーです。  
   
-2.  作成した .xml ファイルを確認、**アウト**フォルダーです。 このファイルには、入力ファイル SamplePOInput.xml から作成された XML 請求書が格納されます。 このファイルの名前の形式が\< *MessageID*> .xml、場所 *\<MessageID >*メッセージを一意に識別する GUID が生成されます。  
+2.  作成した .xml ファイルを確認、**アウト**フォルダーです。 このファイルには、入力ファイル SamplePOInput.xml から作成された XML 請求書が格納されます。 このファイルの名前の形式が\< *MessageID*\>、.xml、  *\<MessageID\>* メッセージを一意に識別する GUID が生成.  
   
 ## <a name="uninstalling-this-sample"></a>このサンプルのアンインストール  
   
@@ -92,9 +92,9 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Orchestrations\HelloWorld\  
+     \<*パスのサンプル*\>\Orchestrations\HelloWorld\  
   
 2.  Cleanup.bat を実行します。  
   
 ## <a name="see-also"></a>参照  
- [オーケストレーション (BizTalk Server Samples フォルダ)](../core/orchestrations-biztalk-server-samples-folder.md)
+ [オーケストレーション (BizTalk Server サンプル フォルダー)](../core/orchestrations-biztalk-server-samples-folder.md)

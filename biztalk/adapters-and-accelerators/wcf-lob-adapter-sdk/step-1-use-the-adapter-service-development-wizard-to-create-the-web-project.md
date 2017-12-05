@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a63953b0928915a8fea5b357722cd4e34f1b900c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1144b7e6827882b37f6f9991a7315cdc3cdbb88d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用します。
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -68,12 +68,12 @@ ms.lasthandoff: 09/20/2017
     |**EchoInUpperCase**|False|  
   
     > [!NOTE]
-    >  ここで選択した URI のプロパティは、作成に使用する、 \<**クライアント**>\<**エンドポイント**> web.config ファイル内の要素。  
+    >  ここで選択した URI のプロパティは、作成に使用する、 \<**クライアント**\>\<**エンドポイント**\> web.config ファイル内の要素。  
   
 4.  クリックして、**バインド プロパティ**タブです。クリックして、既定値に注意してください**OK**です。  
   
     > [!NOTE]
-    >  バインディングの値の生成に使用される、 \<**バインド**>\<**echoAdapterBindingV2**> web.config ファイル内の要素。  
+    >  バインディングの値の生成に使用される、 \<**バインド**\>\<**echoAdapterBindingV2** \> web.config ファイル内の要素。  
   
 ### <a name="to-select-the-contract-and-operations"></a>コントラクトと操作を選択するには  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  検索用語を入力することも、**カテゴリで検索**検索用語が含まれているすべての操作を検索するフィールドです。  
   
-3.  **利用可能なカテゴリと操作**一覧で、[ **EchoGreetings** ] をクリック**追加**です。 これにより、EchoGreetings 操作に、移動、**カテゴリと操作を追加** ボックスの一覧。 ここで選択した操作は、ウィザードによって生成されたクライアント プロキシ コードをクライアント アプリケーションに公開されます。  
+3.  **利用可能なカテゴリと操作**一覧で、**[EchoGreetings]** をクリック**追加**です。 これにより、EchoGreetings 操作に、移動、**カテゴリと操作を追加** ボックスの一覧。 ここで選択した操作は、ウィザードによって生成されたクライアント プロキシ コードをクライアント アプリケーションに公開されます。  
   
      ![コントラクトと操作の選択](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/de497b32-c820-480f-84f3-a9d0d2ded86b.gif "de497b32-c820-480f-84f3-a9d0d2ded86b")  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 09/20/2017
     |**名前**|customServiceBehavior|  
     |**UseServiceCertificate**|False|  
   
-     これらの値が、使用、 \< **serviceBehaviors**>。  
+     これらの値が、使用、 \< **serviceBehaviors**\>です。  
   
 2.  次の値を入力**エンドポイント動作の構成**:  
   
@@ -135,4 +135,4 @@ ms.lasthandoff: 09/20/2017
  をビルドし、Web プロジェクトの配置を続行[手順 2: Web プロジェクトの配置](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

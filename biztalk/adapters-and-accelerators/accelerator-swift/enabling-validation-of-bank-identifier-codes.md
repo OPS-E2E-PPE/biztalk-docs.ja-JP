@@ -13,11 +13,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a9869bdeaeed638c2cc8c3bf3ace869a0124f73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3868906d4f61242b1344a02147e4e71307d67d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>銀行識別コードの検証を有効にします。
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]スキーマでは、SWIFT インターチェンジのドキュメントで指定された銀行識別コード (BICs) が SWIFT 定義 BIC データ形式に準拠していることを確認してください。 A4SWIFT は、データベース内の顧客が指定した BIC リストに対して BICs の検証もサポートします。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-customize-the-bic-master-policy"></a>BIC マスター ポリシーをカスタマイズするには  
   
-1.  (メモ帳など)、XML エディターを開きを参照  **<*ドライブ*プログラム files \ Microsoft BizTalk Accelerator for SWIFT\<バージョン > メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン > \Base ポリシー * *。  
+1.  (メモ帳など)、XML エディターを開きを参照  **<*ドライブ*プログラム files \ Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFTMessages\A4SWIFT SRG\<バージョン\>\Base ポリシー * *。  
   
 2.  開いている**BIC_Master_Policy.xml**です。 次の既存の文字列を新しい値に置き換えます。  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  ポリシー ストア] ページで、[ **SQL Server 名**を選択、 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] BizTalk データベースを格納します。 **選択したサーバーの構成データベース** **BizTalkRuleEngineDb**、順にクリック**次へ**です。  
   
-8.  インポート ルール エンジン ポリシー/ボキャブラリ ファイル ページを参照  **<*ドライブ*\Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン > メッセージ Pack\SWIFTMessages\A4SWIFT SRG\<バージョン > \Base * *、ポリシーのをクリックして**BIC_Master_Policy.xml**、 をクリックして**開く**、順にクリック**次**です。  
+8.  インポート ルール エンジン ポリシー/ボキャブラリ ファイル ページを参照  **<*ドライブ*\Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージの Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Base * *、ポリシーのをクリックして**BIC_Master_Policy.xml**、 をクリックして**開く**をクリックして**次**です。  
   
 9. 準備完了 ページで、データを確認し、をクリックして**次**です。  
   
@@ -103,4 +103,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [BRE ポリシーの扱い](../../adapters-and-accelerators/accelerator-swift/working-with-bre-policies.md)   
- [A4SWIFT データベース内の Bicplus テーブルを管理します。](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)
+ [A4SWIFT データベース内の Bicplus テーブルを管理する](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)

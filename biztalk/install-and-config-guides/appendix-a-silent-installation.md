@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5ece3e8aa8469d1b47d256a0001bebce950b7c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c03568f86b8c3b609fed74a9faf7f6057614151c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="appendix-a-silent-installation"></a>付録 A: サイレント インストール
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のサイレント インストールの作成手順を示します。  
@@ -31,18 +31,18 @@ ms.lasthandoff: 09/20/2017
 |------------------|------------|-----------------|  
 |/HELP、/?、または /H||ヘルプおよびクイック リファレンスを表示します。|  
 |/QUIET||セットアップ実行中のユーザー インターフェイス (すべてのダイアログ ボックス、エラー、ユーザー入力を求めるプロンプト) の表示を抑制します。 メッセージはすべて、セットアップ ログ ファイルに記録されます。 **注:** /QUIET フラグは、アップグレードのときは指定できません。アップグレードの場合は、選択されたオプションをユーザーが確認する必要があるからです。|  
-|/CABPATH|\<*CAB ファイルの場所*>|再配布可能な CAB ファイルの場所を指定します。|  
-|/S|\<*構成 XML ファイル*>|この構成ファイルの中で指定されている機能のサイレント インストールが実行されます。 **注:** すべての機能をインストールするには、構成 XML ファイルの `InstalledFeature` パラメータに ALL を指定します。|  
+|/CABPATH|\<*CAB ファイルの場所*\>|再配布可能な CAB ファイルの場所を指定します。|  
+|/S|\<*構成 XML ファイル*\>|この構成ファイルの中で指定されている機能のサイレント インストールが実行されます。 **注:** すべての機能をインストールするには、構成 XML ファイルの `InstalledFeature` パラメータに ALL を指定します。|  
 |/PASSIVE||パッシブ インストールを実行します。 セットアップ プログラムは、進行状況バーのみを表示します。|  
 |/NORESTART||再起動プロンプトを表示せずに、インストール終了時に自動的に再起動します。|  
 |/FORCERESTART||インストール完了後、強制的に再起動します。|  
 |/PROMPTRESTART||再起動する前に、ユーザーに確認を求めます。|  
 |/X または /UNINSTALL||[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をアンインストールします。|  
-|/L|\<ログ ファイル > [i] [w] [e] [a] [r] [u] [c] [m] [p] [v] [*]|指定したパスのログ ファイルに情報を書き込みます。 Windows インストーラーのログ記録モードは必ず "詳細" となります。また、既存のファイルに情報が追加されます。<br /><br /> ログに記録される情報を指定するフラグは、次のとおりです。<br /><br /> i - 状態を示すメッセージ<br /><br /> w - 致命的でない警告<br /><br /> e - すべてのエラー メッセージ<br /><br /> a - アクションの起動<br /><br /> r - アクション固有の記録<br /><br /> u - ユーザーの要求<br /><br /> c - 初期のユーザー インターフェイス パラメーター<br /><br /> m - メモリ不足<br /><br /> p - ターミナル プロパティ<br /><br /> v - 詳細出力<br /><br /> * - すべて|  
+|/L|\<Logfile\> [i] [w] [e] [a] [r] [u] [c] [m] [p] [v] [*]|指定したパスのログ ファイルに情報を書き込みます。 Windows インストーラーのログ記録モードは必ず "詳細" となります。また、既存のファイルに情報が追加されます。<br /><br /> ログに記録される情報を指定するフラグは、次のとおりです。<br /><br /> i - 状態を示すメッセージ<br /><br /> w - 致命的でない警告<br /><br /> e - すべてのエラー メッセージ<br /><br /> a - アクションの起動<br /><br /> r - アクション固有の記録<br /><br /> u - ユーザーの要求<br /><br /> c - 初期のユーザー インターフェイス パラメーター<br /><br /> m - メモリ不足<br /><br /> p - ターミナル プロパティ<br /><br /> v - 詳細出力<br /><br /> * - すべて|  
 |/IGNOREDEPENDENCIES||ダウンロード可能な必要コンポーネントのチェックをバイパスします。|  
-|/INSTALLDIR \<*インストール パス*>|\<*プログラム ファイル フォルダー*>|製品のインストール場所の完全パスを指定します。|  
-|/COMPANYNAME|\<*会社名*>|会社名または組織名を設定します。|  
-|/USERNAME|\<*ユーザー名*>|ユーザー名を設定します。|  
+|/INSTALLDIR \<*インストール パス*\>|\<*プログラム ファイル フォルダー\>*|製品のインストール場所の完全パスを指定します。|  
+|/COMPANYNAME|\<*会社名*\>|会社名または組織名を設定します。|  
+|/USERNAME|\<*ユーザー名*\>|ユーザー名を設定します。|  
 |/ADDLOCAL ALL||すべての機能をインストールします。 ADDLOCAL コマンドの詳細については、「[ADDLOCAL コマンドの値の一覧](http://go.microsoft.com/fwlink/p/?LinkID=189319)」をご覧ください。|  
 |/REMOVE ALL||すべての機能を削除します。|  
 |/REPAIR ALL||すべての機能を修復します。|  

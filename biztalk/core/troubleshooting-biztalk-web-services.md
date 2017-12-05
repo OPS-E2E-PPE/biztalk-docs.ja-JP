@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 666b08e0c7992f8660d005bef51d26c8f51bbed5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1b768bf667969c4adc8119b6d9d89c0ed79fc32
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-biztalk-web-services"></a>BizTalk Web サービスのトラブルシューティング
 このセクションでは、Web サービスの一般的な問題を特定し、解決するためのヒントについて説明します。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="general-troubleshooting"></a>一般的なトラブルシューティング  
   
 ### <a name="enabling-web-services-publishing-wizard-tracing"></a>Web サービス公開ウィザードのトレースを有効にする  
- コメントを解除して、BizTalk Web サービス公開ウィザードをデバッグするトレースを有効にする、\<追加 > BTSWebSvcWiz.exe.config ファイル内のノードです。 Web サービス公開ウィザードからトレース情報の取得の詳細については、次を参照してください。 [BTSWebSvcWiz.exe.config を変更する方法](../core/how-to-modify-btswebsvcwiz-exe-config.md)です。  
+ コメントを解除して、BizTalk Web サービス公開ウィザードをデバッグするトレースを有効にする、\<追加\>BTSWebSvcWiz.exe.config ファイル内のノードです。 Web サービス公開ウィザードからトレース情報の取得の詳細については、次を参照してください。 [BTSWebSvcWiz.exe.config を変更する方法](../core/how-to-modify-btswebsvcwiz-exe-config.md)です。  
   
 ### <a name="enabling-soap-message-tracing"></a>SOAP メッセージ トレースを有効にする  
  SOAP メッセージ トレースを有効にすることにより、SOAP 拡張を使用して Web サービス公開アプリケーションをデバッグできます。 SOAP 拡張機能の詳細については、次を参照してください。[する方法: SOAP 拡張機能を実装](http://go.microsoft.com/fwlink/?LinkId=62314)です。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  公開済みの Web サービスをデバッグするには、web.config ファイルにスイッチを追加して、公開済みの Web サービスから返される例外の詳細レベルを制御します。 スイッチは**ThrowDetailedError**に設定すると、 **True**サーバー プロキシは、公開された Web サービスをデバッグできるように、Web クライアントには、内部例外情報を返します。  
   
- 次の XML コードは、 **ThrowDetailedError**スイッチ下にある web.config ファイルに表示される、 \<appSettings > ノード。  
+ 次の XML コードは、 **ThrowDetailedError**スイッチ下にある web.config ファイルに表示される、 \<appSettings\>ノード。  
   
 ```  
 <appSettings>  
@@ -160,7 +160,7 @@ ms.lasthandoff: 09/20/2017
   
  これらの詳細については、関連する考慮事項を参照してください、[に関する考慮事項と Web サービスを使用](../core/considerations-when-consuming-web-services.md)です。  
   
-### <a name="why-am-i-getting-errors-publishing-my-schema-that-uses-the-include-element"></a>スキーマを使用する公開エラーは入手して、\<含める > 要素しますか?  
+### <a name="why-am-i-getting-errors-publishing-my-schema-that-uses-the-include-element"></a>スキーマを使用する公開エラーは入手して、\<含める\>要素しますか?  
  循環参照が含まれる場合、スキーマを発行できません (インクルードされるスキーマが、**含める**をインクルードするスキーマの要素) または未解決**schemaLocation**属性。  
   
  制限の詳細については、**含める**要素を参照してください[Include 要素のバインディング サポート](http://go.microsoft.com/fwlink/?LinkId=62312)です。 Web サービス公開ウィザードでは、.NET Framework 2.0 の XSD.exe と同じ制限事項詳細については、次を参照してください。 [Import 要素のバインディング サポート](http://go.microsoft.com/fwlink/?LinkId=119606)です。  
@@ -170,7 +170,7 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-modify-the-generated-web-project-for-envelope-schemas"></a>エンベロープ スキーマの生成された Web プロジェクトを変更するには  
   
-1.  開く、  *\<myWebService >*。 >.asmx.cs ファイル。  
+1.  開く、  *\<myWebService\>*。 >.asmx.cs ファイル。  
   
 2.  ファイルで `bodyTypeAssemblyQualifiedName = <dll.name.version>``bodyTypeAssemblyQualifiedName = null` を  に変更します。  
   

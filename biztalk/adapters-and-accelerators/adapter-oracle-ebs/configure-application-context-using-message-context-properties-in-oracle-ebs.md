@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43f0128b0d1da7ddfb9a29b697d5d5073f69dd33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89f08c50036dd070d51a8685dc4d47ceaa231737
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-application-context-using-message-context-properties-in-oracle-e-business-suite"></a>Oracle E-business Suite でのメッセージ コンテキスト プロパティを使用して、アプリケーションのコンテキストを構成します。
 使用して Oracle E-business Suite の成果物の操作を実行する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーションのコンテキストを適切に設定する必要があります。 次のように、アプリケーションのコンテキストを設定できます。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **参照の追加**ダイアログ ボックスで、 をクリックして、**参照**タブをクリックし、場所を参照し、場所 BizTalk プロパティ スキーマ DLL の[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]は使用できます。  
   
-     この DLL`Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`がインストールされている、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]で\<*インストール ドライブ*>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin です。  
+     この DLL`Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`がインストールされている、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]で\<*インストール ドライブ*\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin です。  
   
 4.  DLL を選択し、クリックして**追加**です。  
   
@@ -74,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  右クリック**リソース**、 をポイント**追加**、クリックして**BizTalk アセンブリ**です。  
   
-    4.  **リソースの追加**ダイアログ ボックスで、をクリックして**追加**は、BizTalk アセンブリ ファイルを含むフォルダーに移動\<*インストール ドライブ*>: \Program files \microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin です。 選択、`Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`ファイルを開き、をクリックして**開く**です。  
+    4.  **リソースの追加**ダイアログ ボックスで、をクリックして**追加**は、BizTalk アセンブリ ファイルを含むフォルダーに移動\<*インストール ドライブ*\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin です。 選択、`Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`ファイルを開き、をクリックして**開く**です。  
   
     5.  **オプション** タブで、BizTalk アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールするためのオプションを指定し、をクリックして**OK**です。  
   

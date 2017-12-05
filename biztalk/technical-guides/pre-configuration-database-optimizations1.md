@@ -12,17 +12,17 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c1333f956afc4411ff8b105c777214467155ae7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad75319054ced87d449ee50c8e0fea65ab108ade
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="pre-configuration-database-optimizations"></a>事前構成データベースの最適化
 BizTalk Server は、Microsoft SQL Server で最大 13 個の独立したデータベースの作成を必要とするデータベースを非常に大量に消費するアプリケーションです。 ため、BizTalk Server 環境で SQL Server が再生される重要な役割がきわめて重要 SQL Server では、パフォーマンスを最適に構成されているチューニングがあります。 SQL Server が正しく実行するチューニングされなかった場合は、BizTalk Server で使用するデータベースがボトルネックになり、BizTalk Server 環境の全体的なパフォーマンスが低下します。 このトピックでは、BizTalk Server をインストールして、BizTalk Server データベースを構成する前に従う必要があります複数の SQL Server パフォーマンス最適化機能について説明します。  
   
 ## <a name="set-ntfs-file-allocation-unit"></a>NTFS ファイル アロケーション ユニットを設定します。  
- SQL Server では、そのデータを格納する**エクステント**、8 8 K ページのグループがあります。 そのため、ディスクのパフォーマンスを最適化するために、NTFS アロケーション ユニット サイズ 64 KB に設定のベスト プラクティス記事「デプロイメント前 I/O のベスト プラクティス」で利用可能な SQL Server の"ディスク構成のベスト プラクティス"セクションで説明した[http://go.microsoft.com/fwlink/ しますか。LinkId = 140818](http://go.microsoft.com/fwlink/?LinkId=140818)です。 SQL Server のページとエクステントの詳細については、次を参照してください。、[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]オンライン ブックの「[ページとエクステントについて](http://go.microsoft.com/fwlink/?LinkId=148939)(ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=148939"http://go.microsoft.com/fwlink/?LinkId=148939)。  
+ SQL Server では、そのデータを格納する**エクステント**、8 8 K ページのグループがあります。 そのため、ディスクのパフォーマンスを最適化するために、NTFS アロケーション ユニット サイズ 64 KB に設定のベスト プラクティス記事「デプロイメント前 I/O のベスト プラクティス」で利用可能な SQL Server の"ディスク構成のベスト プラクティス"セクションで説明した[http://go.microsoft.com/fwlink/ しますか。LinkId = 140818](http://go.microsoft.com/fwlink/?LinkId=140818)です。 SQL Server の詳細についてはページとエクステントのトピックを参照して、SQL Server オンライン ブック[ページとエクステントについて](http://go.microsoft.com/fwlink/?LinkId=148939)(ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=148939"http://go.microsoft.com/fwlink/?LinkId=148939)。  
   
 ## <a name="database-planning-considerations"></a>データベースの計画に関する考慮事項  
  ホストすることをお勧め、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] (たとえば、高速な SAN ディスクまたは高速の SCSI ディスクなど) の高速記憶域上のデータベースです。 RAID 5 ではなく RAID 10 (1 + 0) は、raid 5 が書き込み時に遅いためお勧めします。 新しい SAN ディスクでは、このような場合は、RAID の選択は、重要ではないで非常に大きなメモリ キャッシュがあります。 パフォーマンスを向上させるには、データベースおよびログ ファイルが別々 の物理ディスクに配置できます。  
@@ -53,7 +53,7 @@ sp_configure ‘Min Server memory (MB)’,(min size in MB)
  SQL Server のメモリの量を設定すると、前に、合計物理メモリから Windows Server に必要なメモリを差し引くことで適切なメモリ設定を決定します。 これは、SQL Server に割り当てるメモリの最大量です。  
   
 > [!NOTE]  
->  ホストする SQL Server を実行するコンピューターが、BizTalk Server データベースもホストする場合、エンタープライズ シングル サインオン マスター シークレット サーバー、したい場合があります、エンタープライズ シングル サインオンを実行するための十分なメモリがあることを確認するには、この値を調整するにはサービス。 マスター シークレット サーバーの高可用性を実現する SQL Server クラスターでクラスター化されたエンタープライズ シングル サインオン サービスのインスタンスを実行することは珍しくの実習ではないです。 エンタープライズ シングル サインオン マスター シークレット サーバーをクラスタ リングの詳細についてを参照してください"Cluster Server する方法、マスター シークレット"で、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ドキュメント[http://go.microsoft.com/fwlink/?LinkID=106874](http://go.microsoft.com/fwlink/?LinkID=106874)です。  
+>  ホストする SQL Server を実行するコンピューターが、BizTalk Server データベースもホストする場合、エンタープライズ シングル サインオン マスター シークレット サーバー、したい場合があります、エンタープライズ シングル サインオンを実行するための十分なメモリがあることを確認するには、この値を調整するにはサービス。 マスター シークレット サーバーの高可用性を実現する SQL Server クラスターでクラスター化されたエンタープライズ シングル サインオン サービスのインスタンスを実行することは珍しくの実習ではないです。 エンタープライズ シングル サインオン マスター シークレット サーバーをクラスタ リングの詳細についてを参照してください"Cluster Server する方法、マスター シークレット"で BizTalk server のマニュアルで[http://go.microsoft.com/fwlink/?LinkID=106874](http://go.microsoft.com/fwlink/?LinkID=106874)です。  
   
 ## <a name="split-the-tempdb-database-into-multiple-data-files-of-equal-size-on-each-sql-server-instance-used-by-biztalk-server"></a>Tempdb データベースを同じサイズの BizTalk Server で使用される各 SQL Server インスタンス上の複数のデータ ファイルに分割します。  
  プロポーショナル フィル アルゴリズムを使用しているために重要なことを確認するための tempdb データ ファイルと同じサイズの[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データ ファイルのサイズに基づきます。 このアルゴリズムが、いることを確認しようとしています。[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ほぼ同時に、最大容量に届くようにそのファイル内の空き領域に比例して各ファイルの残りがいっぱいになった。 サイズの異なるデータ ファイルが作成する場合、比例アルゴリズムは、それによってが無意味に複数のデータ ファイルを作成するすべてのファイル間での割り当てを展開するのではなく、GAM の割り当ての最大のファイルを使用します。 少なくとも SQL Server に割り当てられているプロセッサの数と等しくなります tempdb データベースのデータ ファイルの数を構成する必要があります。  

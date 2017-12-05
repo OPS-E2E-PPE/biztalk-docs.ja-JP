@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b97c3b6fe5e743e6bf19c979b994cc7eb5a942de
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d15442da8afd4829245b742bdd45af8f7d1f832
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="remove-receive-port-biztalk-server-sample"></a>受信ポート (BizTalk Server サンプル) の削除
 受信ポートの削除のサンプルでは、1 つ以上の受信ポートを削除する方法を示します。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  サンプルは、次の SDK の場所に配置されます。  
   
- \<*パスのサンプル*> \Admin\WMI\Remove Port\ の受信  
+ \<*パスのサンプル*\>\Admin\WMI\Remove 受信 Port\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -61,12 +61,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\WMI\Remove Port\VBScript\ の受信  
+     \<*パスのサンプル*\>\Admin\WMI\Remove 受信 Port\VBScript\  
   
 2.  cscript プログラムを使用し、次のコマンド ライン引数を渡して、ファイル RemoveReceivePort.vbs を実行します。  
   
-     **\<**   
-     ***ReceivePortName* >**です。 削除する受信ポートの名前。 受信ポート名に空白が含まれている場合は、名前を引用符で囲みます。  
+     **\<** ***ReceivePortName* \>**です。 削除する受信ポートの名前。 受信ポート名に空白が含まれている場合は、名前を引用符で囲みます。  
   
      例:  
   
@@ -80,4 +79,4 @@ ms.lasthandoff: 09/20/2017
  スクリプト ファイル RemoveReceivePort.vbs には、実行する操作についての説明が記された詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
   
 ## <a name="see-also"></a>参照  
- [管理 WMI (BizTalk Server Samples フォルダ)](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

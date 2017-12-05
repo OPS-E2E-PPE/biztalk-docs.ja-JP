@@ -21,11 +21,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aee15dc6fffefd550a5b12c662d4df76ca09c1fa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c2f2cd505aca89bbe72221b3a895dd21945cb5e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="envelopeprocessing-biztalk-server-sample"></a>EnvelopeProcessing (BizTalk Server サンプル)
 EnvelopeProcessing サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプラインでメッセージおよびメッセージ エンベロープを処理する方法を示します。 さらに、フラット ファイル メッセージを XML メッセージに変換する方法も示します。  
@@ -97,13 +97,13 @@ EnvelopeProcessing サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../inc
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<サンプル パス >*\Pipelines\AssemblerDisassembler\EnvelopeProcessing  
+     *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\EnvelopeProcessing  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプルの入力フォルダ (EnvInput) と出力フォルダ (EnvOutput) を作成します。  
   
-         *\<サンプル パス >*\Pipelines\AssemblerDisassembler\EnvelopeProcessing\  
+         *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\EnvelopeProcessing\  
   
     -   このサンプル用に Visual Studio プロジェクトをコンパイルおよび展開します。  
   
@@ -153,4 +153,4 @@ EnvelopeProcessing サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../inc
 -   **BTSTask RemoveApp** FlatFileReceiveApplication を削除するには  
   
 ## <a name="see-also"></a>参照  
- [パイプライン AssemblerDisassembler (BizTalk Server Samples フォルダ)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)
+ [Pipelines-AssemblerDisassembler (BizTalk Server サンプル フォルダー)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)

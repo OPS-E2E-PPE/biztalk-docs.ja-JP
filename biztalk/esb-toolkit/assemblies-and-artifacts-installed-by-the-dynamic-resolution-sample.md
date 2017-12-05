@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f564d2faceca0753d37bd9c045e403f5f016734
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee337b56c6e0901de6b02b28df69101ad3aaf3ff
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-dynamic-resolution-sample"></a>アセンブリと動的な解決サンプルがインストールされている成果物
 次の表は、アセンブリおよびによってインストールされているアイテム、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]動的解決のサンプルです。  
@@ -54,4 +54,4 @@ ms.lasthandoff: 09/20/2017
 |グローバル アセンブリ キャッシュ|アセンブリ|GlobalBank.ESB.DynamicResolution.Pipelines バージョン 2.0.0.0 以降|  
 |||GlobalBank.ESB.DynamicResolution.Schemas バージョン 2.0.0.0 以降|  
 |||GlobalBank.ESB.DynamicResolution.Transforms バージョン 2.0.0.0 以降|  
-|%Program Files %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline コンポーネント|パイプライン コンポーネント|(なし)|
+|%Program Files %\\BizTalk Server\Pipeline コンポーネント|パイプライン コンポーネント|(なし)|

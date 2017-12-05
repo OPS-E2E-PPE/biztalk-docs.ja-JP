@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b68a924fba60d4f0162e80dde0ab06b515765558
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63a719299ef6678b9fd38a936d84ba9b1f57a85b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="database-functoids"></a>データベース Functoid
 **データベース**functoid が、出力インスタンス メッセージで使用するためのデータベースからデータを抽出します。 
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
  この図では、送信元スキーマは受信する注文書を表し、送信先スキーマは詳細な出荷通知を表しています。 **データベース検索**functoid が適切なデータベース テーブルから適切なレコードを検索します。 **値抽出**functoid は、参照レコードから適切な列を抽出します。 **エラーを返す**functoid は、実行時にエラー (接続の障害などがある場合は、エラー情報を含む文字列を出力します。  
   
- 前の例では、最初の入力パラメーターがから取得、 **StoreID**フィールド、入力方向の注文書、および残りの 3 つの入力パラメーターは定数で構成されている、**構成\<Functoid > Functoid**のダイアログ ボックス、**データベース検索**functoid です。 4 つの入力パラメーターすべての値を提供するために、送信元スキーマからのリンクを作成できます。  
+ 前の例では、最初の入力パラメーターがから取得、 **StoreID**フィールド、入力方向の注文書、および残りの 3 つの入力パラメーターは定数で構成されている、**構成\<Functoid\> Functoid**のダイアログ ボックス、**データベース検索**functoid です。 4 つの入力パラメーターすべての値を提供するために、送信元スキーマからのリンクを作成できます。  
   
 > [!NOTE]
 >  * など一部の Microsoft SQL Server データ型を使用することはできません**テキスト**、 **ntext**、および**イメージ**、参照値として、**データベース検索**functoid です。 この Functoid には、テキスト文字列として表すことができるデータ型が必要です。  

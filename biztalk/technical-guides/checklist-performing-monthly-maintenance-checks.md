@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40f5e5d7d6c6732c203ac7a34308c546388206c3
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: a637e80363e16f7a910bad98fee1843dd7dd891a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-complete-monthly-maintenance-checks-in-biztalk-server"></a>チェックリスト: BizTalk Server で確認の完了の毎月の保守
 このトピックの内容が毎月の信頼性、管理、セキュリティ、およびパフォーマンスのメンテナンス チェックの実行に必要な手順について説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
 |個別のホスト (信頼性チェック) を使用して、場合は、不安定なコードが使用されているかどうかを判断します。|[BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)|  
 |すべての新しい BizTalk アプリケーション (信頼性を確認) の機能テストを実行します。|-   [アプリケーションのテスト](../technical-guides/testing-an-application.md)<br />-   [BizTalk アプリケーションの展開のステージング作業](../core/staging-tasks-for-biztalk-application-deployment.md)|  
 |構成および BizTalk Server のバックアップ ジョブ (信頼性チェック) をスケジュールします。|-   [バックアップの BizTalk Server ジョブを構成する方法](../core/how-to-configure-the-backup-biztalk-server-job.md)<br />-   [バックアップの BizTalk Server のジョブをスケジュールする方法](../core/how-to-schedule-the-backup-biztalk-server-job.md)|  
-|各 BizTalk コンピューター (整合性チェック) で、一連のアセンブリの正しいバージョンがインストールされていることを確認します。|使用して、 **BizTalk アセンブリ チェッカーとリモート GAC**ツール (BTSAssemblyChecker.exe)、BizTalk 管理データベースに展開されたアセンブリのバージョンを確認し、すべてのGACに正しく登録されていることを確認するには[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。 このツールを使用すると、特定の BizTalk アプリケーションのアイテムを含むすべてのアセンブリが BizTalk のすべてのノードにインストールされていることを確認します。 このツールは、サイド バイ サイド展開アプローチを使用する場合に特に各 BizTalk コンピューターで、一連のアセンブリの正しいバージョンがインストールされていることを確認する方法を純色のバージョン管理と組み合わせてに特に便利です。 このツールはで利用可能な[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Support\Tools\x86\BTSAssemblyChecker.exe にあるインストール メディア。|  
+|各 BizTalk コンピューター (整合性チェック) で、一連のアセンブリの正しいバージョンがインストールされていることを確認します。|使用して、 **BizTalk アセンブリ チェッカーとリモート GAC**ツール (BTSAssemblyChecker.exe)、BizTalk 管理データベースに展開されたアセンブリのバージョンを確認し、すべてのGACに正しく登録されていることを確認するには[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。 このツールを使用すると、特定の BizTalk アプリケーションのアイテムを含むすべてのアセンブリが BizTalk のすべてのノードにインストールされていることを確認します。 このツールは、サイド バイ サイド展開アプローチを使用する場合に特に各 BizTalk コンピューターで、一連のアセンブリの正しいバージョンがインストールされていることを確認する方法を純色のバージョン管理と組み合わせてに特に便利です。 このツールは Support\Tools\x86\BTSAssemblyChecker.exe で BizTalk Server のインストール メディアで使用できます。|  
 |不要な BizTalk アプリケーション、成果物、および構成 (管理チェック) があるかどうかを決定します。|-すべて不要な BizTalk アプリケーション、成果物、および構成を削除します。<br />、BizTalk アプリケーションまたは成果物の削除の詳細については BTSTask コマンド ライン ツールを使用して参照してください[RemoveApp コマンド](../core/removeapp-command.md)です。<br />BizTalk Server 管理コンソールまたは BTSTask コマンド ライン ツールを使用してアプリケーションからアイテムを削除する方法の詳細については、次を参照してください。[アプリケーションからアイテムを削除する方法](../core/how-to-remove-an-artifact-from-an-application.md)です。|  
 |BizTalk Server 管理コンソール、承認されていない変更 (管理チェック) を確認します。|[BizTalk Server 管理コンソールの使用](../core/using-the-biztalk-server-administration-console.md)|  
 |承認されていない変更 (管理チェック) のためには、BTSNTSvc.exe.config を確認します。|[BTSNTSvc.exe.config ファイル](../core/btsntsvc-exe-config-file.md)|  

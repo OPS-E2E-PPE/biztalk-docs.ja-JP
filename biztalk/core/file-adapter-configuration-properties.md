@@ -19,11 +19,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c027d5ab993c2110dbcbd6d992859d0d1d4ac7d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe578337d7137f3c9973ec4d57f195ead94ad908
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="file-adapter-configuration-properties"></a>ファイル アダプター構成プロパティ
 次の表に、ファイル アダプターの受信場所に設定できる構成プロパティを示します。  
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 |プロパティ名|型|Description|制限|コメント|  
 |-------------------|----------|-----------------|------------------|--------------|  
-|[ユーザー名]|VT_BSTR|ネットワーク共有に対する必要な権限がファイル アダプターのホスト インスタンスにない場合に、代替資格情報を指定します。|なし|形式でユーザー名を指定する\<ドメイン > \username です。|  
+|Username|VT_BSTR|ネットワーク共有に対する必要な権限がファイル アダプターのホスト インスタンスにない場合に、代替資格情報を指定します。|なし|形式でユーザー名を指定する\<ドメイン\>\username です。|  
 |UseTempFileOnWrite|VT_BOOL|ターゲット フォルダに書き込むときに一時ファイルを使用することを指定します。 ファイルの書き込みが終了すると、Filename プロパティで指定されている値に変更されます。|このプロパティは、CopyMode プロパティが値 2 (新規作成) に設定されている場合にのみ、-1 (true) に設定できます。<br /><br /> 有効な値は、<br /><br /> -1 (true)<br />-0 (false)|既定値は 0 (false) です。|  
 |CopyMode|VT_UI4|ファイルにメッセージを書き込むときに使用するコピー モードを定義します。|有効な値は、<br /><br /> -0 (追加)<br />-1 (上書き)<br />-2 (新規作成)|既定値は 2 (新規作成) です。|  
 |FileName|VT_BSTR|ファイル送信ハンドラーがメッセージを書き込む先のファイル名を指定します。|このプロパティの制限については、次を参照してください。[ファイル マスクおよびファイル名のプロパティに関する制限](http://msdn.microsoft.com/library/d8f5afd0-a61f-4c9b-8a57-4792e3054769)です。|既定値は %MessageID%.xml です。|  

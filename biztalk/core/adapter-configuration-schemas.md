@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2afa0e2f06471d90326b0dd8e2b83b8d4c38a82b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89ca7d02c756fdbdf819e1a15069a95d0784d764
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adapter-configuration-schemas"></a>アダプター構成スキーマ
 アダプターのデザイン時構成では、さまざまな種類のスキーマを使用します。 プロパティ値の可視性とスコープに応じて、さまざまなスキーマを変更して使用します。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
  ![](../core/media/ebiz-prog-custad-sh.gif "ebiz_prog_custad_sh")  
 TransmitHandler.xsd ファイルによって作成される送信ハンドラー プロパティ ページ  
   
- 使用に注意してください、 \<baf:designer >、 \<baf:displayname >、および\<baf:description > 次に示す TransmitHandler.xsd コード内のタグ。 これらは、アダプター フレームワークによって提供されているカスタム装飾であり、このようなプロパティ ページの生成を高速化します。  
+ 使用に注意してください、 \<baf:designer\>、 \<baf:displayname\>、および\<baf:description\>次に示す TransmitHandler.xsd コード内のタグ。 これらは、アダプター フレームワークによって提供されているカスタム装飾であり、このようなプロパティ ページの生成を高速化します。  
   
  すべてのアダプター フレームワーク内で使用できる装飾の一覧は、次を参照してください。[アダプター フレームワーク構成スキーマの装飾タグ](../core/adapter-framework-configuration-schema-decoration-tags.md)です。  
   
@@ -106,7 +106,7 @@ number of threads per CPU to execute in the thread pool</baf:description>
  ![](../core/media/ebiz-prog-custad-sp.gif "ebiz_prog_custad_sp")  
 サンプル ファイル アダプターの送信ポート プロパティ ページを示します  
   
- 送信ポートの構成が含まれている下の TransmitLocation.xsd ファイルに注意してください、 \<baf:designer >、 \<baf:displayname >、および\<baf:description > タグで、送信ハンドラの場合にも、使用する場合と同じように、\<baf:category > タグです。 このカテゴリ タグを使用すると、複数のプロパティをグループ化できます。 カテゴリが複数ある場合は、展開したり折りたたんだりできます。また、カテゴリに含まれるプロパティの上には、そのカテゴリがヘッダーとして灰色で表示されます。 詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。  
+ 送信ポートの構成が含まれている下の TransmitLocation.xsd ファイルに注意してください、 \<baf:designer\>、 \<baf:displayname\>、および\<baf:description\>とまったく同様に、タグ送信ハンドラーもパラメーターを使用して、 \<baf:category\>タグ。 このカテゴリ タグを使用すると、複数のプロパティをグループ化できます。 カテゴリが複数ある場合は、展開したり折りたたんだりできます。また、カテゴリに含まれるプロパティの上には、そのカテゴリがヘッダーとして灰色で表示されます。 詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。  
   
  このスキーマには URI フィールドも含まれています。 これは、送信ポート プロパティ ページのフィールド情報をすべて入力した後に表示されるページに、アダプターによる検証処理中に自動入力されます。  
   

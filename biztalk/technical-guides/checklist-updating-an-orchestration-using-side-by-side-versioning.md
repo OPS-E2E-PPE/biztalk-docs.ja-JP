@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 110eb0df6373d8679fed0431c91d10a6633e0610
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a8e9ed9f260b7b7b8b269e6a4b5e22411ce05b5c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-updating-an-orchestration-using-side-by-side-versioning"></a>チェックリスト: サイド バイ サイドのバージョン管理を使用してオーケストレーションを更新します。
 オーケストレーションへの変更をマップなど、他の成果物の変更よりも複雑にすることができます。 有効期間が短いオーケストレーションがあれば、し、単純な更新プログラムは十分であります。 長時間のオーケストレーションまたは既存のインスタンスを終了することはできませんがある場合、サイド バイ サイドのバージョン管理は唯一の選択肢です。  
@@ -28,9 +28,9 @@ ms.lasthandoff: 09/20/2017
 |オーケストレーションに必要な変更を行った後は、アセンブリのバージョン番号をインクリメントします。|[アセンブリを更新する方法](../technical-guides/how-to-update-an-assembly.md)|  
 |Visual Studio から BizTalk アプリケーションにアセンブリを展開し、アセンブリをテストします。 **注:**アセンブリを GAC にインストールする展開オプションを選択するかどうかを確認します。|[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](http://go.microsoft.com/fwlink/?LinkID=154719)(http://go.microsoft.com/fwlink/?LinkID=154719)。|  
 |.Msi ファイルに、テスト環境にアプリケーションからアセンブリをエクスポートします。|[アプリケーションを .msi ファイルにエクスポートする方法](../technical-guides/how-to-export-an-application-to-an-msi-file.md)|  
-|.Msi ファイルを更新するオーケストレーションを含む、運用環境で BizTalk アプリケーションにインポートします。 **注:**次の手順を使用するには、実稼働環境に展開すると、アセンブリをテストします。|[アプリケーションを .msi ファイルからインポートする方法](../technical-guides/how-to-import-an-application-from-an-msi-file.md)|  
+|.Msi ファイルを更新するオーケストレーションを含む、運用環境で BizTalk アプリケーションにインポートします。 **注:**次の手順を使用するには、実稼働環境に展開すると、アセンブリをテストします。|[.msi ファイルのアプリケーションをインポートする方法](../technical-guides/how-to-import-an-application-from-an-msi-file.md)|  
 |元のオーケストレーションとして同じバインディングを使用して、更新されたオーケストレーションをバインドします。|[オーケストレーションのバインドを構成する方法](http://go.microsoft.com/fwlink/?LinkId=154850)(http://go.microsoft.com/fwlink/?LinkId=154850)。|  
-|元のオーケストレーションを参加解除して、更新されたオーケストレーションを開始します。 **注:**メッセージの消失を回避するのにはこのプログラムで実行します。|プログラムによって、オーケストレーションの展開に関する詳細については、次を参照してください。[展開とプログラム、オーケストレーションの新しいバージョンを開始](http://go.microsoft.com/fwlink/?LinkId=154851)(http://go.microsoft.com/fwlink/?LinkId=154851)。<br /><br /> オーケストレーションを手動で展開の詳細についてでは、次を参照してください。[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。<br /><br /> -   [オーケストレーションを参加解除する方法](http://go.microsoft.com/fwlink/?LinkId=154852)(http://go.microsoft.com/fwlink/?LinkId=154852)。<br />-   [オーケストレーションを参加させる方法](http://go.microsoft.com/fwlink/?LinkId=154853)(http://go.microsoft.com/fwlink/?LinkId=154853)。<br />-   [オーケストレーションを開始する方法](http://go.microsoft.com/fwlink/?LinkId=154854)(http://go.microsoft.com/fwlink/?LinkId=154854)。|  
+|元のオーケストレーションを参加解除して、更新されたオーケストレーションを開始します。 **注:**メッセージの消失を回避するのにはこのプログラムで実行します。|プログラムによって、オーケストレーションの展開に関する詳細については、次を参照してください。[展開とプログラム、オーケストレーションの新しいバージョンを開始](http://go.microsoft.com/fwlink/?LinkId=154851)(http://go.microsoft.com/fwlink/?LinkId=154851)。<br /><br /> オーケストレーションを手動で展開の詳細については、BizTalk Server ヘルプでは、次を参照してください。<br /><br /> -   [オーケストレーションを参加解除する方法](http://go.microsoft.com/fwlink/?LinkId=154852)(http://go.microsoft.com/fwlink/?LinkId=154852)。<br />-   [オーケストレーションを参加させる方法](http://go.microsoft.com/fwlink/?LinkId=154853)(http://go.microsoft.com/fwlink/?LinkId=154853)。<br />-   [オーケストレーションを開始する方法](http://go.microsoft.com/fwlink/?LinkId=154854)(http://go.microsoft.com/fwlink/?LinkId=154854)。|  
 |システム監視グループ ハブを使用して元のオーケストレーションのバージョンのインスタンスがクエリ ビュー ページします。|[オーケストレーションのインスタンスの情報を表示する方法](http://go.microsoft.com/fwlink/?LinkId=154855)(http://go.microsoft.com/fwlink/?LinkId=154855)。|  
 |すべてのアクティブ、退避済み、および中断されたインスタンスが完了したら、アプリケーションから元のオーケストレーションの展開を解除します。|[オーケストレーションをアプリケーションから削除する方法](http://go.microsoft.com/fwlink/?LinkId=154856)(http://go.microsoft.com/fwlink/?LinkId=154856)。|  
 |必要に応じて、アプリケーションを実行する各コンピューターの GAC から元のアセンブリ バージョンをアンインストールします。|[GAC からアセンブリをアンインストールする方法](http://go.microsoft.com/fwlink/?LinkId=154857)(http://go.microsoft.com/fwlink/?LinkId=154857)。|  

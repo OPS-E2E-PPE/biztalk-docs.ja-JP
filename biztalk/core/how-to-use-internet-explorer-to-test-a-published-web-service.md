@@ -1,5 +1,6 @@
 ---
-title: "Internet Explorer を使用して、公開された Web サービスをテストする方法 |Microsoft ドキュメント"
+title: "BizTalk web サービスをテスト |Microsoft ドキュメント"
+description: "構成する受信場所と、web ブラウザーで BizTalk web サービスをテストする web.config"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,31 +8,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- modifying, receive locations
-- Web services, Internet Explorer
-- testing, Web services
-- receive locations, modifying
-- Web services, modifying
-- modifying, Web.config file
-- Web.config file
-- Web services, Web.config file
-- HTTP-GET
-- Web services, testing
-- Web services, HTTP-GET
-- modifying, Web services
 ms.assetid: 4dc2171d-4abe-43db-b4bc-e484048c6430
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 687078a14d8cb2163c9795c68f65171e7b82467c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 48a35373735102bd75d1c388da29b06d4392ba18
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="how-to-use-internet-explorer-to-test-a-published-web-service"></a>Internet Explorer を使用して、公開された Web サービスをテストする方法
+# <a name="test-a-biztalk-web-service"></a>BizTalk Web サービスをテストします。
+
+## <a name="overview"></a>概要
 Web クライアント アプリケーションを記述せずに、公開済み Web サービスをテストできます。 Internet Explorer などの Web ブラウザを使用して、公開済み Web サービスをテストできます。 Web ブラウザを使用して公開済み Web サービスにアクセスできますが、テストできるのは、単純な型パラメータを使用する Web メソッドを持つ Web サービスのみです。 Web ブラウザーで、Web メソッドをテストするには、受信ポートで使用される要求と応答メッセージのメッセージ部分できるだけ単純型など**System.String**または**System.Int32**です。 メッセージ部分がメッセージ型としてスキーマを使用している場合、ブラウザで Web メソッドをテストすることはできません。  
   
  HTTP-GET または HTTP-POST を使用して公開済み Web サービスをテストするには、SOAP アダプタの BizTalk 受信場所を構成し、公開済み Web サービスの Web.config ファイルを変更する必要があります。  
@@ -56,14 +46,14 @@ Web クライアント アプリケーションを記述せずに、公開済み
   
  既定では、Web サービスは HTTP-SOAP プロトコルを使用するようウィザードにより構成されます。 HTTP-GET および HTTP-POST は明示的に無効になっています。 Web ブラウザを使用して Web サービスをテストするには、HTTP-GET を有効にする必要があります。  
   
-### <a name="to-modify-the-webconfig-file-for-the-published-web-service"></a>公開済み Web サービスの Web.config ファイルを変更するには  
+## <a name="update-the-webconfig"></a>Web.config を更新します。
   
 1.  公開済み Web サービスの Web.config ファイルを開きます。  
   
     > [!NOTE]
     >  Web.config ファイルは、Web サービスを格納する IIS 仮想ルートとして構成したディレクトリ内にあります。  
   
-2.  検索、\<プロトコル > セクション。  
+2.  検索、\<プロトコル\>セクション。  
   
     ```  
     <webServices>  
@@ -76,11 +66,11 @@ Web クライアント アプリケーションを記述せずに、公開済み
     </webServices>  
     ```  
   
-3.  HTTP GET をテストするには、HTTP POST、または、ローカル コンピューターからの HTTP POST でから対応する行が削除、\<プロトコル > セクションでします。  
+3.  HTTP GET をテストするには、HTTP POST、または、ローカル コンピューターからの HTTP POST でから対応する行が削除、\<プロトコル\>セクションです。  
   
- 構成オプションの詳細についてを参照してください"構成オプションの XML Web サービス作成された ASP.NET を使用して"、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[http://go.microsoft.com/fwlink/?LinkId=62264](http://go.microsoft.com/fwlink/?LinkId=62264)です。  
+ 構成オプションの詳細については、次を参照してください。 [ASP.NET を使用して作成した XML Web サービスの構成オプション](https://msdn.microsoft.com/library/b2c0ew36.aspx)です。 
   
-#### <a name="to-access-a-web-service-with-internet-explorer"></a>Internet Explorer を使用して Web サービスにアクセスするには  
+#### <a name="access-a-web-service-with-internet-explorer"></a>Internet Explorer で Web サービスへのアクセスします。  
   
 -   Internet explorer で、**アドレス**ボックスに、形式を使用して Web サービスの URL を入力 **http://*servername*/*apppath*/ *webservicename*.asmx * *。  
   
@@ -92,7 +82,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
   
  Web サービスの説明には、特定の Web サービスがサポートするすべての Web サービス メソッドが表示されます。 [Web サービスの説明] ページには、使用できる Web メソッドへのリンクと、Web サービスの説明が含まれます。  
   
-#### <a name="to-test-a-web-service-with-internet-explorer-using-http-get"></a>Internet Explorer で HTTP-GET を使用して Web サービスをテストするには  
+#### <a name="test-a-web-service-with-internet-explorer-using-http-get"></a>HTTP GET を使用する Internet Explorer で Web サービスをテストします。  
   
 1.  [Web サービスの説明] ページにアクセスし、一覧表示されている Web メソッドの 1 つをクリックします。  
   
@@ -105,7 +95,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
     <double>74.5</double>  
     ```  
   
-#### <a name="to-test-a-web-service-with-internet-explorer-using-http-get-alternate-method"></a>Internet Explorer で HTTP-GET を使用して Web サービスをテストするには (別の方法)  
+#### <a name="test-a-web-service-with-internet-explorer-using-http-get-alternate-method"></a>HTTP GET (代替手段) を使用する Internet Explorer で Web サービスをテストします。  
   
 1.  Internet explorer で、**アドレス**ボックスに、形式を使用して Web サービスの URL を入力***http://servername/vdir/webservicename.asmx/Methodname?parameter=value***です。  
   
@@ -123,7 +113,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
 2.  Enter キーを押します。 Web ブラウザに、サーバーからの XML 応答が表示されます。  
   
     > [!NOTE]
-    >  HTTP-POST を使用して Web サービスを呼び出すこともできます。 詳細およびサンプルについて、Web ブラウザーから XML Web サービスの呼び出しで「方法に:: アクセス XML Web サービス ブラウザーから」を参照してください、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[http://go.microsoft.com/fwlink/?LinkId=62265](http://go.microsoft.com/fwlink/?LinkId=62265)です。  
+    >  HTTP-POST を使用して Web サービスを呼び出すこともできます。 詳細およびサンプル Web ブラウザーから XML Web サービスの呼び出しについてを参照してください[ブラウザーから XML Web サービスにアクセス](https://msdn.microsoft.com/library/45fez2a8.aspx)です。  
   
 ## <a name="see-also"></a>参照  
  [公開済み Web サービスのテスト](../core/testing-published-web-services.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b01765cc47b0d8eafffcf30160ce9ee6c840003d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec243c1d1ed1093241e4dc6120c3703fbf2e4542
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle E-business Suite での要求のセットをを呼び出す
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]Oracle E-business Suite で要求のセットを実行できます。 セットは、1 つまたは複数の段階的に分けられ、各ステージには、一連レポートと同時実行プログラムにはが含まれています。 を要求します。 アダプターが要求のセットをサポートする方法の詳細については、次を参照してください。[要求設定に対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)です。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 |操作|メソッド シグネチャ|  
 |---------------|----------------------|  
-|要求のセット|パブリック\<型を返す >\<要求セット名 > (param 1、param 2、...)|  
+|要求のセット|パブリック\<型を返す\>\<要求セット名\>(param 1、param 2、...)|  
   
  たとえば、次のコードにはメソッド シグネチャに関するの WCF クライアント クラスを生成、 **reqset_singlestage**セットを要求します。  
   

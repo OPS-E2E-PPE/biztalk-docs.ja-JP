@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9b2299407986ef2fca53304b536c5ce89625941
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 362aa1f81158c9d9f1135c9bff25c64d7d745953
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-an-exec-statement-in-sap"></a>SAP の EXEC ステートメントの構文
 次のセクションでは、に対して EXEC ステートメントを実装するための文法仕様をについて説明します、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。 いくつかの場合、構文は若干異なること TRANSACT-SQL 構文に注意してください。  
@@ -30,11 +30,11 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
 -   **rfc_name**実行関数の呼び出しの名前を指定します。  
   
--   **< argument_element >** :: = @param_name = [0, 1] \<const > {[入力 (&) #124 です。出力]} [0, 1]  
+-   **< argument_element >** :: = @param_name = [0, 1] \<const\> {[入力 (&) #124 です。出力]} [0, 1]  
   
     -   **param_name**関数インターフェイスで定義されたパラメーター名を指定します。  
   
-    -   **\<const >** :: 整数 &#124; = real &#124; 文字列 &#124; しますか? & #124 です。NULL & #124 です。xml_element  
+    -   **\<const\>**  :: 整数 &#124; = real &#124; 文字列 &#124; しますか? &#124;です。NULL &#124;です。xml_element  
   
 -   **オプション**データを表示する方法のオプションを提供します。 使用可能なオプションは次のとおりです。  
   
@@ -59,7 +59,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     <FIELDNAME_2 xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">value</FIELDNAME_2>  
     ...  
     ...  
-\</ PARAM_NAME>  
+</ PARAM_NAME>  
 ```  
   
  テーブルの xml_element には、次のようになります。  
@@ -74,7 +74,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     <STRUCT_NAME/>  
     ...  
     ...  
-\</ PARAM_NAME>  
+</ PARAM_NAME>  
 ```  
   
  たとえば、構造体型の XML 要素は、次するようになります。  
@@ -158,4 +158,4 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     >  SELECT ステートメントで、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返します`TIMS`.NET として値をフィールド`System.TimeSpan`オブジェクト。 SELECT ステートメントの詳細については、次を参照してください。 [SAP の SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)です。  
   
 ## <a name="see-also"></a>参照  
- [.NET Framework Data Provider for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [.NET Framework Data Provider for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

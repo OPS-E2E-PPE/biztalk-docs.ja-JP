@@ -17,11 +17,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5af783a5f2315aa39fc3ab49f727583b1bbf7d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65eb19845bf4e103b4abe2466e58fb09a96c23c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-operations-on-the-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースに対する操作を呼び出す
 に対して操作を呼び出すことができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を使用して、 **IRequestChannel**または**IOutputChannel**図形をアダプターにメッセージを送信します。 基本的なパターンは、バインドを使用して、必要なチャネル形状をチャネル ファクトリを作成する (**OracleDBBinding**) と接続 URI から作成されたエンドポイント。 作成し、**メッセージ**をターゲットの操作用のメッセージ スキーマに準拠する SOAP メッセージを表すインスタンス。 これを送信することができますし、**メッセージ**を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]チャネル ファクトリから作成されたチャネルを使用しています。 使用している場合、 **IRequestChannel**応答を受信します。 Oracle データベースで操作の実行に問題がある場合、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]スロー、 **Microsoft.ServiceModel.Channels.Common.TargetSystemException**です。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>IRequestChannel のインスタンスを使用して、操作を呼び出す方法  
   
-1.  チャネル ファクトリを作成 (**ChannelFactory\<IRequestChannel >**)。 これを行うには、バインドを指定する必要があります (**OracleDBBinding**) およびエンドポイント アドレス。 コードで命令として記述または構成で宣言によって、バインドとエンドポイント アドレスを指定できます。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、次を参照してください。 [Oracle データベースを使用して、チャネルの作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)です。  
+1.  チャネル ファクトリを作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**OracleDBBinding**) およびエンドポイント アドレス。 コードで命令として記述または構成で宣言によって、バインドとエンドポイント アドレスを指定できます。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、次を参照してください。 [Oracle データベースを使用して、チャネルの作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)です。  
   
     ```  
     // Create a binding  
@@ -147,7 +147,7 @@ ms.lasthandoff: 09/20/2017
   
  同じ手順を使用してメッセージを送信する、 **IOutputChannel**以外の図形します。  
   
--   作成する、 **ChannelFactory\<IOutputChannel >**手順 1 でします。  
+-   作成する、 **ChannelFactory\<IOutputChannel\>** 手順 1 でします。  
   
 -   呼び出す、**送信**手順 6. でチャネル上のメソッドです。 `channel.Send(messageIn);`」をご覧ください。  
   
@@ -177,7 +177,7 @@ namespace RequestChanneSample
         {  
             // The Select operation request message  
             const string selectRequestString =  
-                "\<Select xmlns=\"http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY\">" +  
+                "\<Select xmlns=\"http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY\"\>" +  
                     "<COLUMN_NAMES>*</COLUMN_NAMES>" +  
                     "<FILTER>ACCOUNT = 100002</FILTER>" +  
                 "</Select>";  

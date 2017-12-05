@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ac1d379f2e68431f197f2db339cd0ac9f50c92e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 11b4e17a4435c5d9e6e99cd3ed471fa8819923e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario"></a>ステップ 3 D: InterAct ストアと転送シナリオの対話の送信ポートの追加
 完全な[手順 3 C: InterAct ストアと転送シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)この手順を開始する前にします。
@@ -41,11 +41,11 @@ ms.lasthandoff: 09/20/2017
     |**ユーザー名**|SAG 接続を適切なユーザー名を設定します。|  
     |**メッセージの形式**|**InteractMessage**|  
     |**否認不可インジケーター**|**FALSE**|  
-    |**要求の種類**|適切な入力\<RequestType > SWIFT でのプロビジョニングに基づく文字列。|  
+    |**要求の種類**|適切な入力\<RequestType\> SWIFT でのプロビジョニングに基づく文字列。|  
     |**ResponseCrypto**|**FALSE**|  
-    |**要求元**|適切な入力\<RequestorDN > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**応答側**|適切な入力\<ResponderDN > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**サービス名**|適切な入力\<サービス名 > SWIFT でのプロビジョニングに基づきます。|  
+    |**要求元**|適切な入力\<RequestorDN\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**応答側**|適切な入力\<ResponderDN\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**サービス名**|適切な入力\<サービス名\>SWIFT でのプロビジョニングに基づきます。|  
     |**配信通知**|ドロップダウン リストから選択**FALSE**です。|  
     |**通知キュー**|SWIFT でのプロビジョニングに基づく、適切なキュー名を入力します。|  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
  [手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
  [手順 3: ファイルの受信場所が、対話ストアと転送シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)   
  [手順 3 b: 追加、対話の受信場所が、対話ストアと転送シナリオ](../../adapters-and-accelerators/fileact-interact/step-3b-add-interact-receive-location-for-interact-store-and-forward-scenario.md)   
- [手順 3 C: InterAct ストアと転送シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
+ [手順 3C: InterAct ストア アンド フォワード シナリオ用に Sw:HandleRequest メッセージをキャプチャするためにファイルの送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  

@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 101124b5992ba2fb6948ca2722700bb01bdc2a95
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 29cf6bba03e6a43bb3fdedf0742741e48ac22dd6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a>PeopleSoft Enterprise Sample Get を実行します。
 PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムから PeopleSoft アダプターを使用してアクセスできます。 このアダプターは、付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。
@@ -98,11 +98,11 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
          このパスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の Java SDK インストールに固有のパスです。  
   
-    3.  **パスワード**: \<PeopleSoft パスワードを入力 >  
+    3.  **パスワード**: \<PeopleSoft パスワードを入力してください\>  
   
     4.  **[PeopleSoft 8.x JAR ファイル]**: **C:\PSJARS\VER841\PSJOA.JAR**  
   
-    5.  **ユーザー名:** \<PeopleSoft UserID を入力 >  
+    5.  **ユーザー名:** \<PeopleSoft UserID を入力してください\>  
   
      ![](../core/media/7bf30707-c7c6-409f-af18-9c9dfeb0de58.gif "7bf30707-c7c6-409f-af18-9c9dfeb0de58")  
   
@@ -288,7 +288,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
      `C:\LABS\PS_TEST\SAMPLEQUERY.XML`  
   
-3.  クリックして **OK.** [プロパティ] ウィンドウで選択**\<スキーマ >**設定と**ルート参照: 取得**です。  
+3.  クリックして **OK.** [プロパティ] ウィンドウで選択**\<スキーマ\>**設定と**ルート参照: 取得**です。  
   
 4.  **LOCATIONService_LOCATION_x5d.xsd** を右クリックし、 **[インスタンスの生成]**をクリックします。 **SampleQuery.xml** ファイルが生成されます。 このファイルは、オーケストレーション プロセスを開始するアダプターに対する入力として、受信場所にドロップされます。  
   
@@ -298,13 +298,13 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 1.  入力ファイルの受信と送出ファイルの送信のフォルダーを構成します。 移動して**C:\LABS\PS_TEST**という 2 つの新しいサブフォルダーを作成および`FileIn`と`FileOut`です。  
   
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**コンソール ルート**、展開**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして**PS_Test** をクリックし、**構成**です。  
+2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**コンソール ルート**、展開**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして**PS_Test** ] をクリックし、**構成**です。  
   
      ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   
-3.  **[Orchestration_1]** を選択し、 **[ホスト]** ドロップダウン ボックスをクリックします。 [ **BizTalkServerApplication**] を選択します。  
+3.  **[Orchestration_1]** を選択し、 **[ホスト]** ドロップダウン ボックスをクリックします。 **[BizTalkServerApplication]** を選択します。  
   
-4.  **受信ポート**をクリックして**\<なし >**です。 ドロップダウン リストの **[新しい受信ポート]**を選択します。  
+4.  **受信ポート**をクリックして **\<None\>**です。 ドロップダウン リストの **[新しい受信ポート]**を選択します。  
   
 5.  **名前**、型`FileInPort`、順にクリック**OK**です。 受信場所を指定する必要があるというメッセージ ボックスが表示されます。 **[OK]**をクリックし、 **[新規作成]**をクリックします。  
   
@@ -326,7 +326,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
      ![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")  
   
-8.  をクリックして**\<なし >**の**PeopleSoft_Port**ドロップダウン リストでします。  
+8.  をクリックして **\<None\>** の**PeopleSoft_Port**ドロップダウン リストでします。  
   
 9. **[新しい送信ポート]** を選択し、プロパティに次の値を選択または入力します。  
   
@@ -348,15 +348,15 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
          このパスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の Java SDK インストールに固有のパスです。  
   
-    3.  **パスワード**: \<PeopleSoft パスワードを入力 >  
+    3.  **パスワード**: \<PeopleSoft パスワードを入力してください\>  
   
     4.  **[PeopleSoft 8.x JAR ファイル]**: **C:\PSJARS\VER841\PSJOA.JAR**  
   
-     **ユーザー名:** \<PeopleSoft UserID を入力 >  
+     **ユーザー名:** \<PeopleSoft UserID を入力してください\>  
   
 11. **[OK]** を 2 回クリックしてダイアログ ボックスを閉じます。  
   
-12. 構成 Applicationwindow、クリックして**\<なし >**の**FileOut**ドロップダウン リストでします。  
+12. 構成 Applicationwindow、クリックして **\<None\>** の**FileOut**ドロップダウン リストでします。  
   
 13. **[新しい送信ポート]** を選択し、プロパティの値を次のとおりに入力または選択します。  
   
@@ -397,7 +397,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
      ![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-b200-c3c550079ccb")  
   
-     この返されたレコード データは、PeopleSoft ラボ 1 での PeopleSoft システムに対するクエリで返された内容と一致する必要があります。 値を比較して、ラボ 1 で取得、具体的には、 **Address1**と**住所 2**線にはここで示した、 **\<場所: ADDRESS1 >**および**\<場所: 住所 2 >**フィールド、ことを確認することができます、**取得**メソッドが正常に動作します。  
+     この返されたレコード データは、PeopleSoft ラボ 1 での PeopleSoft システムに対するクエリで返された内容と一致する必要があります。 値を比較して、ラボ 1 で取得、具体的には、 **Address1**と**住所 2**線にはここで示した、 **\<場所: ADDRESS1\>**と**\<場所: 住所 2\>** フィールド、ことを確認することができます、**取得**メソッドが正常に動作します。  
   
 ## <a name="summary"></a>概要  
  このラボでは、PeopleSoft システムにアクセスするための前提条件が適切にセットアップされていることを最初に確認しました。 次に、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、オーケストレーションが含まれる新しい BizTalk プロジェクトを作成しました。 また、BizTalk オーケストレーションを構成し、PeopleSoft アダプターを使用して PeopleSoft システムのデータを取得しました。 オーケストレーションを構成するために、送信ポート、受信ポート、および送信/受信ポートを作成しました。 これらのポートを PeopleSoft アダプターにバインドし、メッセージを適切なポートに割り当てました。  

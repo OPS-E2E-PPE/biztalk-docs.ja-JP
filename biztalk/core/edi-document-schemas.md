@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db79e5e4421719a936f68c409c166f9eac38605c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b96089f7f76af1183f457202bb2e22b5be7f146
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-document-schemas"></a>EDI ドキュメント スキーマ
 ドキュメント スキーマは、EDI トランザクション ドキュメントの種類のボディを定義します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 -   EDIFACT の場合 – `http://schemas.microsoft.com/BizTalk/EDI/EDIFACT/2006`  
   
 ## <a name="schema-naming-convention"></a>スキーマの名前付け規則  
- X12 および EDIFACT エンコードの種類の名前付け規則は\<エンコード > _\<バージョン >\<リリース >\_\<Doctype >。 たとえば、X12 864 ドキュメントの種類 (バージョン 004、リリース 01) の場合は X12_00401_864.xsd スキーマ、EDIFACT AUTHOR ドキュメントの種類 (バージョン D01、リリース C) の場合は EDIFACT_D01C_AUTHOR.xsd スキーマのようになります。  
+ X12 および EDIFACT エンコードの種類の名前付け規則は\<エンコード\>_\<バージョン\>\<リリース\>\_\<Doctype\>です。 たとえば、X12 864 ドキュメントの種類 (バージョン 004、リリース 01) の場合は X12_00401_864.xsd スキーマ、EDIFACT AUTHOR ドキュメントの種類 (バージョン D01、リリース C) の場合は EDIFACT_D01C_AUTHOR.xsd スキーマのようになります。  
   
 > [!NOTE]
 >  EDIFACT スキーマのスキーマ名では、大文字と小文字が区別されます。 たとえば、EFACT_D98B_ORDERS と EFACT_d98B_Orders は 2 つの異なるスキーマです。  

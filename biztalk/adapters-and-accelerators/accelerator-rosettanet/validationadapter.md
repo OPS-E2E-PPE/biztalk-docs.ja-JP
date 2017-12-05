@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fd80934cef17f930f5dc587bbdbf3f4b87c67e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a325a561017c6efaf6d6aefe2e271c834c13a363
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="validationadapter"></a>ValidationAdapter
 ValidationAdapter のサンプルは、応答側パブリック プロセスでメッセージに対して特殊な検証ルールを実行する方法を示しています。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] では、送信または受信パイプライン、およびオーケストレーションで検証がネイティブに実行されます。 追加の検証を実行する場合は、検証アダプターを作成します。 追加の検証には、クロスフィールド検証ルールや、XSD を使用して実装できないビジネス固有の検証ルールを含めることができます。  
@@ -25,7 +25,7 @@ ValidationAdapter のサンプルは、応答側パブリック プロセスで�
   
  ValidationAdapter はパブリック プロセス オーケストレーションで使用されるため、そのオーケストレーションをホストしている BizTalk ホスト サービスと同じ資格情報の下に実行されます。  
   
- ValidationAdapter サンプルにある\<*ドライブ*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for \sdk\validationadapter です。  
+ ValidationAdapter サンプルにある\<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\ValidationAdapter です。  
   
 ## <a name="demonstrates"></a>使用例  
  ValidationAdapter サンプルは、サービス コンテンツでの電子メール アドレスの検証を示します。 このサンプルでは、`IValidateRNIFMessageParts` インターフェイスを実装します。 電子メール アドレスが正しい形式でない場合は `RNIFException` が返されます。 XML ドキュメント**preambleToValidate**、 **serviceHeaderToValidate**、 **deliveryHeaderToValidate**、および**serviceContentToValidate**検証を定義します。  
@@ -52,4 +52,4 @@ ValidationAdapter のサンプルは、応答側パブリック プロセスで�
 5.  下矢印をクリックして**クラス名**、検証アダプタ クラスを選択し、クリックして**OK**です。  
   
 ## <a name="see-also"></a>参照  
- [アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)
+ [アダプター サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)

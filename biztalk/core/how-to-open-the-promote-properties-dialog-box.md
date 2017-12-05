@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59cebe24ffdc1a72608dd3b3301aed94d2804052
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10633851eaffe6e08f230da8552514cd976f23a8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-open-the-promote-properties-dialog-box"></a>[プロパティの昇格] ダイアログ ボックスを開く方法
 管理しているプロパティの昇格、**プロパティの昇格** ダイアログ ボックス。 このトピックでは、昇格させたプロパティを管理するためのダイアログ ボックスを開く方法について説明します。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-open-the-promote-properties-dialog-box-from-the-schema-node"></a>[スキーマ] ノードから [プロパティの昇格] ダイアログ ボックスを開くには  
   
-1.  スキーマ ツリーで、選択、 **\<スキーマ >**ノード。  
+1.  スキーマ ツリーで、選択、 **\<スキーマ\>**ノード。  
   
 2.  [プロパティ] ウィンドウで、省略記号ボタンをクリックして (**.**) の値フィールドのボタン、**プロパティの昇格**プロパティです。  
   
@@ -45,4 +45,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [プロパティの昇格](../core/promoting-properties.md)   
  [プロパティ スキーマを作成する方法](../core/how-to-create-property-schemas.md)   
- [メッセージ処理を制御するメッセージの内容を使用する方法](../core/ways-to-use-message-content-to-control-message-processing.md)
+ [メッセージ処理を管理するためのメッセージの内容の使用方法](../core/ways-to-use-message-content-to-control-message-processing.md)

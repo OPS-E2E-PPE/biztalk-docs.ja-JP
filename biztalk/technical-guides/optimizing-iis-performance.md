@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5b8cae6700328c68c8b6113c8719cf14f76a22c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 93f1bca77aea5aa6c75521e46edc8fc4d01b2d73
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="optimizing-iis-performance"></a>IIS のパフォーマンスを最適化します。
 ## <a name="apply-iis-configuration-options-to-improve-iis-performance"></a>IIS のパフォーマンスを向上させるために IIS の構成オプションを適用します。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  必要に応じてをクリックして**適用**で、**アクション**ウィンドウです。  
   
- ASP.NET アプリケーションおよび Web サービスを指定することでデバッグを無効にする、\<コンパイル デバッグ ="false"/> の web アプリケーションの web.config ファイルでセクションです。  
+ ASP.NET アプリケーションおよび Web サービスを指定することでデバッグを無効にする、\<コンパイル デバッグ ="false"\> web アプリケーションの web.config ファイルのセクションです。  
   
 ### <a name="tune-the-value-of-the-asp-threads-per-processor-limit-property"></a>ASP スレッドごとのプロセッサ制限プロパティの値を調整します。  
  ASP**スレッドあたりプロセッサ数の上限**プロパティは、IIS を作成できる 1 プロセッサあたりのワーカー スレッドの最大数を指定します。 プロセッサ使用率が 50% 以上を満たすまで以上のプロセッサあたりのスレッド制限に対して、値を増やします。 この設定できるに大きな影響を Web アプリケーションのスケーラビリティと、サーバーのパフォーマンス一般にします。 このプロパティは、同時に実行できる ASP 要求の最大数を定義するため、ASP アプリケーションが外部コンポーネントへの拡張の呼び出しを行う場合を除いて、既定値にこの設定する必要がありますしたまま。 この場合、スレッドあたりプロセッサ数の上限の値を大きくことがあります。 これにより、サーバーへの同時要求を処理するスレッドを作成できます。 スレッドあたりプロセッサ数の上限の既定値は 25 です。 このプロパティの推奨最大値は 100 です。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  クリックして展開**制限プロパティ****動作**、 をクリックして**スレッドあたりプロセッサ数の上限**、目的の値を入力**スレッドあたりプロセッサ数の上限**  をクリック**適用**で、**アクション**ウィンドウです。  
   
- プロパティを変更する方法について、\<制限 > 要素の IIS 7.5 または 7.0 \<asp > 要素を参照してください[ASP 制限\<制限 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ プロパティを変更する方法について、\<制限\>要素 IIS 7.5 または 7.0 の\<asp\>要素を参照してください[ASP 制限\<制限\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  このプロパティは、サーバー レベルでのみ適用できる、このプロパティの変更は、サーバー上で実行されるすべての Web サイトに影響します。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  クリックして展開**制限プロパティ**[**動作**、] をクリックして**キューの長さ**、目的の値を入力**キューの長さ**し、をクリックして**適用**で、**アクション**ウィンドウです。  
   
- プロパティを変更する方法について、\<制限 > 要素の IIS 7.5 または 7.0 \<asp > 要素を参照してください[ASP 制限\<制限 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ プロパティを変更する方法について、\<制限\>要素 IIS 7.5 または 7.0 の\<asp\>要素を参照してください[ASP 制限\<制限\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  このプロパティは、サーバー レベルでのみ適用できる、このプロパティの変更は、サーバー上で実行されるすべての Web サイトに影響します。  
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/20/2017
  IIS 7.5 で ASP.NET スレッドの使用法を構成する方法の詳細については、次を参照してください。 [IIS 7.0 で ASP.NET スレッドの使用に関する Thomas Marquardt のブログ](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)。  
   
 ### <a name="configure-aspnet-4-maxconcurrentrequests-for-iis-7570-integrated-mode"></a>IIS 7.5 または 7.0 統合モード用の ASP.NET 4 MaxConcurrentRequests を構成します。  
- .NET Framework 4、maxConcurrentRequestsPerCPU の既定の設定に膨大な数は 5000 し、そのため、のに十分な非同期要求を同時に実行します。 詳細については、次を参照してください。 [ \<applicationPool > 要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
+ .NET Framework 4、maxConcurrentRequestsPerCPU の既定の設定に膨大な数は 5000 し、そのため、のに十分な非同期要求を同時に実行します。 詳細については、次を参照してください。 [ \<applicationPool\>要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
   
  IIS 7.5 または 7.0 統合モードでは、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 内の MaxConcurrentRequestsPerCPU をという名前の DWORD は CPU ごとの同時要求の数を決定します。 既定では、レジストリ キーが存在しないと、CPU あたりの要求の数は 5000 に制限されます。  
   
@@ -120,4 +120,4 @@ ms.lasthandoff: 09/20/2017
     3.  必要な圧縮オプションを設定し、クリックして**適用**で、**アクション**ウィンドウです。  
   
 ## <a name="see-also"></a>参照  
- [パフォーマンスを最適化します。](../technical-guides/optimizing-performance.md)
+ [パフォーマンスの最適化](../technical-guides/optimizing-performance.md)

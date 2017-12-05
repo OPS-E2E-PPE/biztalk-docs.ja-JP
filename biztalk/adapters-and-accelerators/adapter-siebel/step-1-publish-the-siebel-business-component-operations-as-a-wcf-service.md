@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dc83a0531460f513d146e2d03d0ef7e0a7c529f
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: fe869b76a155acb326420c3d5c29850548d8b7ff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を公開します。
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -34,7 +34,7 @@ ms.lasthandoff: 10/17/2017
   
 -   必要な Siebel クライアント。  
   
- これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
+ これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
   
 ## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>WCF サービスとしての Siebel ビジネス コンポーネントを公開します。  
   
@@ -165,9 +165,9 @@ ms.lasthandoff: 10/17/2017
   
 17. WCF サービスが正常に公開されていることを確認します。  
   
-    1.  IIS の Microsoft 管理コンソールを起動します。 をクリックして**開始**、をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス**です。  
+    1.  IIS の Microsoft 管理コンソールを起動します。 をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス**です。  
   
-    2.  サービスを発行したノードに移動します。 **Siebel_Account**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名 >**  >  **Web サイト** > **既定の Web サイト** > **Siebel_Account**です。  
+    2.  サービスを発行したノードに移動します。 **Siebel_Account**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名\>**  > **Websites** > **既定の Web サイト** > **Siebel_Account**です。  
   
     3.  右側のペインで BusinessObjects_Account_Account_Operation.svc ファイルを右クリックし、をクリックして**参照**です。  
   
@@ -181,4 +181,4 @@ ms.lasthandoff: 10/17/2017
  Siebel ビジネス コンポーネントの WCF サービスがあるようになりました。 ビジネス データ カタログ定義エディターを使用すると、Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成できます。 参照してください[手順 2: Siebel ビジネス コンポーネント操作のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)手順についてはします。 アプリケーション定義ファイルは、LOB データが格納されているとは、格納されている形式を識別します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: SharePoint サイト上の Siebel システムからのデータの表示](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [チュートリアル 1: Siebel システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

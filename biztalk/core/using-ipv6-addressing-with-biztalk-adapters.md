@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e77defa2351bf8e180b63b8da5c6a8c4e0e5a4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 446125cbe164cfebfe7635975c5fd1825a026081
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-ipv6-addressing-with-biztalk-adapters"></a>BizTalk アダプターにおける IPv6 アドレス指定の使用
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] オペレーティング システムにインストールされている場合に、IPv6 アドレス指定の使用がサポートされています。 このトピックでは、UNC パスに対して IPv6 アドレスを指定するために使用される命名規則、リテラル IPv6 アドレスを指定するための命名規則、および HTTP アダプターと SOAP アダプターでの IPv6 スコープ識別子の使用について説明します。  
@@ -31,10 +31,10 @@ ms.lasthandoff: 09/20/2017
  たとえば、2001:DB8:2a:1005:230:48ff:fe73:989d という IPv6 アドレスを使用してコンピューター上のファイル共有を参照する URI は、次のようになります。  
   
 ```  
-\\2001-DB8-2a-1005-230-48ff-fe73-989d.ipv6-literal.net\<sharename>  
+\\2001-DB8-2a-1005-230-48ff-fe73-989d.ipv6-literal.net\<sharename\>  
 ```  
   
- ここで\< *sharename*> ターゲット コンピューター上のファイル共有の名前を指定します。  
+ ここで\< *sharename* \>ターゲット コンピューター上のファイル共有の名前を指定します。  
   
 > [!NOTE]
 >  ファイル送信ハンドラーとファイル受信ハンドラーが実行されているホスト インスタンスのユーザー アカウントが、ファイル共有に対する適切なアクセス許可を持っていることを確認します。 ファイル アダプターでファイルを受信するために必要なフォルダーのアクセス許可の詳細については、次を参照してください。[ファイル受信ハンドラーを構成する方法](http://msdn.microsoft.com/library/68333bb6-d79b-4a82-9742-230f62d535c4)です。 ファイル アダプターを持つファイルを送信するときに必要なフォルダーのアクセス許可の詳細については、次を参照してください。[ファイル アダプターに関する既知の問題](../core/known-issues-with-the-file-adapter.md)です。 ファイル アダプターで使用するためにサポートされているファイル システムについては、次を参照してください。 [http://support.microsoft.com/kb/815070](http://support.microsoft.com/kb/815070)です。  
@@ -68,9 +68,9 @@ fe80::550c:489f:e65e:aef3%258
 |SMTP 送信|不可|不可|  
 |SQL 送受信|不可|不可|  
 |ファイル送受信|いいえ (セクションを参照して**UNC パスに対して使用される IPv6 アドレス命名規則**)|不可|  
-|HTTP 送受信|はい|はい|  
-|MQSeries 送受信|はい|不可|  
-|MSMQ 送受信|はい|不可|  
-|SOAP 送信|はい|はい|  
-|SOAP 受信|はい|不可|  
-|WCF 送受信|はい|不可|
+|HTTP 送受信|可|可|  
+|MQSeries 送受信|可|不可|  
+|MSMQ 送受信|可|不可|  
+|SOAP 送信|可|可|  
+|SOAP 受信|可|不可|  
+|WCF 送受信|可|不可|

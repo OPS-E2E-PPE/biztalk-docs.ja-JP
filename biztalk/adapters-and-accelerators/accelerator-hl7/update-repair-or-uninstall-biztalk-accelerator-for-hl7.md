@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb49cdff18e880c91034aaf7d2ab81500c40dbab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e5b4fa1dba322e830114a76a0ca69134edbb1d06
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>更新、修復、または BizTalk Accelerator を HL7 のアンインストール
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  インストールを変更すると[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]、エンド ツー エンドのチュートリアルは自動的に実行されません。 
 > 
-> このチュートリアルを実行し、変更後のインストールが正しく実行されることを確認してくださいから手動でチュートリアルを実行、 ***\<ドライブ >*** **\Program Files\Microsoft BizTalk\<バージョン >HL7\SDK\End エンドツー エンド チュートリアルのアクセラレータ**フォルダーです。
+> このチュートリアルを実行し、変更後のインストールが正しく実行されることを確認してくださいから手動でチュートリアルを実行、 ***\<ドライブ\>*** **\Program Files\Microsoft BizTalk \<バージョン\>HL7\SDK\End エンドツー エンド チュートリアルのアクセラレータ**フォルダーです。
   
 1. 実行、 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] **setup.exe**を管理者として 
   
@@ -101,4 +101,4 @@ ms.lasthandoff: 09/20/2017
 3.  [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] をアンインストールします。  
   
 ## <a name="see-also"></a>参照  
-[インストールまたは Microsoft BizTalk Accelerator 用 HL7 にアップグレード](../../adapters-and-accelerators/accelerator-hl7/install-or-upgrade-microsoft-biztalk-accelerator-for-hl7.md)
+[Microsoft BizTalk Accelerator for HL7 のインストールまたはアップグレード](../../adapters-and-accelerators/accelerator-hl7/install-or-upgrade-microsoft-biztalk-accelerator-for-hl7.md)

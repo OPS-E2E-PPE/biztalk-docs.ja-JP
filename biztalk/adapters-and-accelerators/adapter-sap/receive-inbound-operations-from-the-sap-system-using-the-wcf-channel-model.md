@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1265a2b7205e372ba9f3769fcc95ea9ac3aeff9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b76ae42cf0ffc26b818e35d83f59e64158b923a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して、SAP システムからの受信操作を受信します。
 RFC サーバーとして動作し、受信 (IDOC を送信する、RFC を呼び出すなど)、SAP システムによって呼び出される操作、経由での SAP プログラム ID からのメッセージをリッスンできるチャネル リスナーを作成する必要があります、 **System.ServiceModel.Channels.IReplyChannel**チャネル形状です。  
@@ -363,7 +363,7 @@ namespace SapRfcServerCM
   
                         Console.WriteLine("RESULT =\t" + result_out.ToString());  
   
-                        string out_xml = "\<Z_RFC_MKD_DIVResponse xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"><RESULT>" + result_out + "</RESULT></Z_RFC_MKD_DIVResponse>";  
+                        string out_xml = "<Z_RFC_MKD_DIVResponse xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"><RESULT>" + result_out + "</RESULT></Z_RFC_MKD_DIVResponse>";  
                         StringReader sr = new StringReader(out_xml);  
                         reader = XmlReader.Create(sr);  
   
@@ -444,4 +444,4 @@ namespace SapRfcServerCM
 ```  
   
 ## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

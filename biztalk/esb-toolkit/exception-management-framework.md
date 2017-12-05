@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 593937dca387d79a127117ee96005b3dc48fbdc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e4d4d19caebb667e822b15b937d9045a26493a57
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="exception-management-framework"></a>例外管理フレームワーク
-ESB 例外管理フレームワーク内で発生する可能性がありますのあるすべての例外を管理するためメッセージ指向の統合されたエラーの生成メカニズムを提供する、[!INCLUDE[prague](../includes/prague-md.md)]環境。 ESB 例外管理フレームワークでは、メッセージ BizTalk Server できませんでしたメッセージのルーティング機構からに加えて、例外の発行サービス経由で公開された例外のメッセージを受信できます。  
+ESB 例外管理フレームワークでは、BizTalk Server 環境内で発生したすべての例外を管理するための統一されたメッセージ指向フォールト生成メカニズムを提供します。 ESB 例外管理フレームワークでは、メッセージ BizTalk Server できませんでしたメッセージのルーティング機構からに加えて、例外の発行サービス経由で公開された例外のメッセージを受信できます。  
   
  フレームワークは、エラー メッセージの作成、発行、および BizTalk Server 2006 で初めて導入された、BizTalk Server 失敗したメッセージのルーティング機能をレプリケートする、オーケストレーション プロセスからの管理の API を提供します。 さらに、フレームワークを拡充、ビジネス アクティビティ監視 (BAM) 追跡と表示の例外管理データベースに、最終的な出力を公開および報告における、ESB で適用するすべての例外を正規化する機能を提供します。管理ポータル。  
   

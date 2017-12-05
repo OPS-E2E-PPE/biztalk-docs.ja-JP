@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e16020afb17d17c8add8e973ade0cd0c5cfcbbc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 040fee5fab56a1e54b777fc7548b8ff28e5b07ec
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a>PIP からの整形式メッセージ インスタンスを作成します。
 ここでは、整形式のメッセージ インスタンスを生成する方法を説明します。 PIP (Partner Interface Process) からメッセージ インスタンスのテンプレートを生成できます。 その後、データを追加する前に、それが整形式になるように、そのテンプレートを変更する必要があります。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
   
-3.  検索\<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanetsdk \schemas に移動をクリックして**RNPIPs.btproj**をクリックして**開く**です。  
+3.  検索\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanetsdk \schemas に移動をクリックして**RNPIPs.btproj**、クリックして**開く**です。  
   
 4.  ソリューション エクスプ ローラーで、 **Rnpip**、し、インスタンスを作成する PIP を右クリックします。  
   

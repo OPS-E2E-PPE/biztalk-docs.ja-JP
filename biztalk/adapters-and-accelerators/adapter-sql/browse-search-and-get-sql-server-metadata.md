@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5abb42ff1cae700077c44c391a1112c7309048c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba7a1b7644cc3a2e3e00b7a931250932359ab7b7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-search-and-get-sql-server-metadata"></a>参照、検索、および SQL Server のメタデータの取得
 メタデータを[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]SQL Server データベースからのサーフェスがアダプターを使用して、SQL Server データベースと通信するためのメッセージの構造について説明します。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   テーブル、ビュー、プロシージャ、スカラー関数、およびテーブル値関数では、操作します。 たとえば、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サーフェス Insert、Update、Select、および削除の EMPLOYEE テーブルの操作可能性があります。  
   
--   セット\<列名 > をストリーミング方式で大量のデータ値を書き込むためのアダプターのクライアントを有効にするテーブルとビューを操作します。 設定操作は、これらのテーブルと次のデータ型の列を含むビューのみ返されます。 varchar (max)、nvarchar (max)、または varbinary (max)。 詳細については、次を参照してください。[テーブルとビューを SQL アダプターを使用して大規模なデータ型を含む Operations](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)です。  
+-   セット\<列名\>をストリーミング方式で大量のデータ値を書き込むためのアダプターのクライアントを有効にするテーブルとビューを操作します。 設定操作は、これらのテーブルと次のデータ型の列を含むビューのみ返されます。 varchar (max)、nvarchar (max)、または varbinary (max)。 詳細については、次を参照してください。[テーブルとビューを SQL アダプターを使用して大規模なデータ型を含む Operations](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)です。  
   
 -   SQL Server の任意の SQL ステートメントを実行するアダプターのクライアントを有効にする ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作です。 これらの操作の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)です。  
   

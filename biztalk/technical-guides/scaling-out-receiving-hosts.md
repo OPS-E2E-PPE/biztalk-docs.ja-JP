@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 843e20e76f7320555a0cfab5af5103ce3fd597d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f0a58d7dfa022c3921abb5b426dacdf387095c2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="scaling-out-receiving-hosts"></a>スケール アウト受信ホスト
-受信ホストを高可用性にする必要がありますがある 2 つ以上の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]各受信ホストのインスタンスを実行しているコンピューター。 スケール アウト受信ホストには、可用性を向上させる[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]メッセージングを頻繁に実行を展開します。 こうすることで、受信ホストが実行するオーケストレーション処理を最小限に抑えながら、さまざまなタイプのメッセージを高速かつ高い信頼性でルーティングさせることができます。  
+受信ホストを高可用性にする必要がありますがある 2 つ以上の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]各受信ホストのインスタンスを実行しているコンピューター。 スケール アウト受信ホスト メッセージングを頻繁に実行する BizTalk Server 展開の可用性が向上します。 こうすることで、受信ホストが実行するオーケストレーション処理を最小限に抑えながら、さまざまなタイプのメッセージを高速かつ高い信頼性でルーティングさせることができます。  
   
  オーケストレーション処理やメッセージ送信を行うホストから受信ホストを分離することは、環境のセキュリティとスケーラビリティ強化にもつながります。各ホストのセキュリティやスケーラビリティを他のホストと切り離して捉えることができるためです。 たとえば、処理ホストや送信ホストには一切コンピューターを追加することなく、受信ホストにのみ 2 台のコンピューター (ホスト インスタンス) を追加することもできます。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
  受信ポートの構成では、必要に応じてマップを指定します。 受信場所の構成のドキュメントの前処理に使用するパイプラインを指定する必要があります。 指定された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロセスで、ドキュメント マップに、ドキュメントを前処理する、ドキュメントを受信からすべての情報を処理します。 これは、インプロセス ホスト インスタンスと分離ホスト インスタンスの両方で同じです。  
   
 ## <a name="scaling-out-in-process-receiving-hosts"></a>ホストのスケール アウト プロセスでの受信  
- 次の図に示しています、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]別のコンピューターで各ホストの 2 つ用意することによって、受信ホスト インスタンスの高可用性を実現した展開します。 この図では、処理と送信元ホストが使用できないこと強く、ホストに割り当てられている BizTalk アイテムを処理する 1 つだけのホスト インスタンスがあるために注意してください。  
+ 次の図は、別のコンピューター上の 2 つのホスト インスタンスごとのことで、受信ホストの高可用性を実現した BizTalk Server の展開を示します。 この図では、処理と送信元ホストが使用できないこと強く、ホストに割り当てられている BizTalk アイテムを処理する 1 つだけのホスト インスタンスがあるために注意してください。  
   
  ![メッセージを受信するための複数のホスト](../core/media/tdi-ha-scalereceive.gif "TDI_HA_ScaleReceive")  
   
@@ -52,15 +52,15 @@ ms.lasthandoff: 09/20/2017
  この構成で高可用性を実現するには、各コンピューターが 3 つのホスト インスタンスを実行します。 3 つの会社の列ごとに 1 つのインスタンス。 各会社に対応するホスト インスタンスには、その会社と通信するための受信場所およびパイプラインが保持されます。 通常の操作中にスケール アウト受信アダプターの前に必要な作業を行っている限り、メッセージング負荷が分散、3 つのホスト インスタンス間でホストごとにします。 1 つのコンピューターの特定のホスト インスタンスで障害が発生した場合、その他の 2 つのコンピューターで実行されているホスト インスタンスが処理を引き継ぐため、サービスの可用性は維持されます。  
   
 ## <a name="scaling-out-isolated-receiving-hosts"></a>受信ホストを分離されたスケール アウト  
- ホスト インスタンスだけでなく、プロセスのスケーリングと受信ホストの高可用性を実現するは、展開で実装する特定のアダプターによっても異なります。 各アダプターには、プロトコルごとの特性があるため、計画と導入もそれぞれのケースによって異なります。 ただし、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、すべてのアダプターに対して同じ高可用性ソリューションを適用できます。これは、主にコンピューターとホスト インスタンスの増設を通じて行うことになります。  
+ ホスト インスタンスだけでなく、プロセスのスケーリングと受信ホストの高可用性を実現するは、展開で実装する特定のアダプターによっても異なります。 各アダプターには、プロトコルごとの特性があるため、計画と導入もそれぞれのケースによって異なります。 ただし、BizTalk Server には、すべてのアダプターの主に、追加のコンピューターとホスト インスタンスで同じ高可用性ソリューションを適用することができます。  
   
- 受信メッセージを複数のホスト コンピューターに分散して高可用性を確保する際、使用するプロトコルによっては、受信アダプターに追加のメカニズムが必要になる場合もあります。 たとえば、 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] (それ以外の場合は、Web サービス アダプターと呼ばれます)、HTTP または SOAP アダプターを使用するソリューションは、次の図に示すようにロード バランサーなどネットワーク負荷分散 (NLB) 受信の負荷を分散させるを必要とします。  
+ 受信メッセージを複数のホスト コンピューターに分散して高可用性を確保する際、使用するプロトコルによっては、受信アダプターに追加のメカニズムが必要になる場合もあります。 たとえば、次の図に示すように、(それ以外の場合は、Web サービス アダプターと呼ばれます)、HTTP または SOAP アダプターを使用する BizTalk Server ソリューションは、ロード バランサーなどネットワーク負荷分散 (NLB) 受信の負荷を分散が必要です。  
   
  ![受信ホストのスケール アウト分離](../technical-guides/media/cb38ec25-bfb0-4a55-8464-b7918b6fc746.gif "cb38ec25-bfb0-4a55-8464-b7918b6fc746")  
   
- 最も一般的なアダプターの高可用性に関するガイドラインの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、「BizTalk Server 受信アダプターの拡張」セクションを参照して[Scaled-Out 受信ホスト](http://go.microsoft.com/fwlink/?LinkId=151283)(http://go.microsoft.com/fwlink/しますか?LinkId = 151283) で[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+ 最も一般的なアダプターの高可用性に関するガイドラインの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、「BizTalk Server 受信アダプターの拡張」セクションを参照して[Scaled-Out 受信ホスト](http://go.microsoft.com/fwlink/?LinkId=151283)(http://go.microsoft.com/fwlink/しますか?LinkId = 151283) BizTalk Server ヘルプの「します。  
   
 ## <a name="see-also"></a>参照  
  [受信ホストをクラスタ リング](../technical-guides/clustering-receiving-hosts.md)   
  [スケール アウト処理の各ホスト](../technical-guides/scaling-out-processing-hosts.md)   
- [スケール アウト送信ホスト](../technical-guides/scaling-out-sending-hosts.md)
+ [送信ホストのスケールアウト](../technical-guides/scaling-out-sending-hosts.md)

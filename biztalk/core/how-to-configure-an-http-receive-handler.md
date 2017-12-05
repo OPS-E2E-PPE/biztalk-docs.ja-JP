@@ -21,11 +21,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0380804039d45efbe3db06b6fc072a3afb8b6b48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b199ac25fea412e9912e7989ff1f16e6e0e8d9d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-an-http-receive-handler"></a>HTTP 受信ハンドラを構成する方法
 次の手順を実行して、HTTP 受信ハンドラのプロパティを構成します。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  **[OK]**をクリックします。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] は、単一メッセージを非常に高速に処理するのではなく、バッチ メッセージを効果的に処理するように設計されています。 したがって、この受信ハンドラーを双方向 (要求 - 応答) の受信場所で使用する場合は、次の手順に従うことで、待機時間を最小限に抑えることができます。  
+ BizTalk Server では、メッセージのバッチを効果的に処理し、1 つのメッセージを非常に高速処理を行わないように設計されています。 したがって、この受信ハンドラーを双方向 (要求 - 応答) の受信場所で使用する場合は、次の手順に従うことで、待機時間を最小限に抑えることができます。  
   
 -   設定、**バッチ サイズ**プロパティを 1 の値にします。  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
  ログオン アカウントとして指定されているアカウントに付与、 **BizTalkServerIsolatedHost**ホスト インスタンスの読み取りおよび書き込みアクセス許可に関連付けられているディレクトリを**TEMP**と**TMP**環境変数。 ログオン アカウントを特定する、 **BizTalkServerIsolatedHost**インスタンスで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**、展開**ホスト インスタンス**を右クリックし、 **BizTalkServerIsolatedHost**ホスト右側のペインでインスタンス化し、クリックして**プロパティ**です。 ホスト インスタンスで使用するログオン アカウントが横に表示されている、**ログオン**ラベル。  
   
 ## <a name="see-also"></a>参照  
- [HTTP アダプタの構成](../core/configuring-the-http-adapter.md)
+ [HTTP アダプターの構成](../core/configuring-the-http-adapter.md)

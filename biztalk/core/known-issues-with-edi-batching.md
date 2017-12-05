@@ -12,11 +12,11 @@ caps.latest.revision: "38"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e550a80cf8a7bbd6ae5e2b214c57d15427f919f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 537a0591ba45a209fd3f22c0a993a99baac58d7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-edi-batching"></a>EDI バッチ処理に関する既知の問題
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバッチ処理に関する既知の問題について説明します。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
  64 ビット コンピューター上の WOW で BatchControlMessageRecvLoc 受信場所を実行する場合は、バッチ処理オーケストレーションを別のホストで実行する必要があります。 受信場所と同じホストで実行すると、バッチ処理オーケストレーションが WOW でも実行されるため、64 ビット コンピューターで実行する利点がなくなります。  
   
 ## <a name="a-batch-can-be-picked-up-by-an-unintended-send-port"></a>予期しない送信ポートによってバッチが取得される  
- バッチ処理オーケストレーションを発行すると、インターチェンジと、2 つのプロパティを昇格させます。: ToBeBatched = False と DestinationPartyName = \< *PartyName*>。 これらのプロパティの一方または両方をサブスクライブする送信ポートは、これらのバッチ インターチェンジを取得できます。 送信ポートがこれらの取得対象のバッチ インターチェンジを取得するよう、送信ポートのフィルターを必ず構成してください。  
+ バッチ処理オーケストレーションを発行すると、インターチェンジと、2 つのプロパティを昇格させます。: ToBeBatched = False と DestinationPartyName = \< *PartyName*\>です。 これらのプロパティの一方または両方をサブスクライブする送信ポートは、これらのバッチ インターチェンジを取得できます。 送信ポートがこれらの取得対象のバッチ インターチェンジを取得するよう、送信ポートのフィルターを必ず構成してください。  
   
 ## <a name="a-batch-element-count-greater-than-the-required-number-of-transaction-sets-for-a-batch-may-not-prompt-batch-release"></a>バッチ要素数がバッチに必要なトランザクション セット数より多い場合に、バッチがリリースされないことがある  
  バッチのリリース条件が、グループまたはインターチェンジごとのトランザクション セット数に基づいている場合は、バッチ要素数が、リリースされるバッチに必要なトランザクション セット数より多くても、バッチがリリースされないことがあります。 これは、受信確認を有効にしており、その受信確認をバッチに追加するようにバッチのフィルター条件を設定している場合に発生します。 この場合、グループ (またはインターチェンジ) 内のバッチ要素数は、グループ (またはインターチェンジ) ごとのトランザクション セット数より多くなります。 その場合は、グループ (またはインターチェンジ) ごとのトランザクション セット数がバッチ リリースに必要な数より少なければ、バッチがリリースされませんが、同時に、バッチ要素数がバッチ リリースに必要なトランザクション セット数よりも多くなります。  
@@ -113,7 +113,7 @@ ms.lasthandoff: 09/20/2017
   
  以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、メッセージを複数のバッチ構成で処理する必要がある場合、パーティ ID のスペース区切りリストを EDI.DestinationParties プロパティに設定していました。 ルーティング オーケストレーションは、EDI.ToBeBatched が True に設定され、EDI.DestinationParties プロパティを持つメッセージをサブスクライブし、EDI.DestinationParties プロパティに含まれるパーティ ID のリストを使用して各 ID 用のメッセージを作成し、メッセージをバッチ オーケストレーションに渡していました。  パーティ ID を使用してバッチを判断していたのは、各パーティ構成が保持できるバッチ構成が 1 つだけだったからです。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、各パーティは複数のバッチ構成を保持できます。したがってパーティ ID だけを使用して、利用するバッチ構成を判断することはできません。  メッセージを複数のバッチ構成で処理する必要があることを示すには、メッセージの EDI.BatchIDs プロパティに、メッセージの送信先であるバッチ ID のスペース区切りリストを設定する必要があります。  
+ BizTalk Server で、各パーティはパーティ ID だけを使用して使用するバッチ構成を確認するための十分なが不要になったため複数のバッチ構成を持つことができます。  メッセージを複数のバッチ構成で処理する必要があることを示すには、メッセージの EDI.BatchIDs プロパティに、メッセージの送信先であるバッチ ID のスペース区切りリストを設定する必要があります。  
   
 > [!NOTE]
 >  EDI.DestinationPartyId プロパティを使用して単一のパーティ ID のみによりマークされたメッセージを処理すると、メッセージはアップグレード バッチ オーケストレーションによって処理されます。 詳細については、次を参照してください。[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)です。  

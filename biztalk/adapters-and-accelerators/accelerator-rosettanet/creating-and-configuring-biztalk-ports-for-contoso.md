@@ -19,17 +19,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4440d80568ee49bf589c78758f490d8caefbb256
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7264d2eaa5c3ce249bc1077f7754d93eecdd786a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-and-configuring-biztalk-ports-for-contoso"></a>作成して、Contoso の BizTalk ポートの構成
-ここでは、現在のソリューションを [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] に統合します。 この統合を行う前に、グローバル アセンブリ キャッシュ (GAC) にアセンブリをインストールし、構成データベースで構成します。 次に、SQL アダプターと HTTP アダプターを使用する送信ポートを作成および構成します。  
+このセクションに現在のソリューションを統合[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server です。 この統合を行う前に、グローバル アセンブリ キャッシュ (GAC) にアセンブリをインストールし、構成データベースで構成します。 次に、SQL アダプターと HTTP アダプターを使用する送信ポートを作成および構成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: Contoso アセンブリへの厳密な名前の割り当てください。](../../adapters-and-accelerators/accelerator-rosettanet/step-1-assigning-a-strong-name-to-the-contoso-assembly.md)  
+-   [手順 1: Contoso アセンブリへの厳密な名前の割り当て](../../adapters-and-accelerators/accelerator-rosettanet/step-1-assigning-a-strong-name-to-the-contoso-assembly.md)  
   
 -   [手順 2: Contoso 3 a 2 Price and Availability クエリ/応答シナリオ用のポートの作成](step-2-create-ports-for-contoso-3a2-price-and-availability-query.md)

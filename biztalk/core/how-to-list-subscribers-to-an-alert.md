@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d62f962847cf0e48929e11040bf1de226d567b6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 909854abd251d94fa71ce963c3714f6d664153c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-subscribers-to-an-alert"></a>警告のサブスクライバーを一覧表示する方法
 管理者を使用して、 **get サブスクリプション**コマンドに指定された警告のサブスクライバーのすべてを一覧表示します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm get サブスクリプション-ビュー:\<ビュー名 >-警告:\<警告名 >**です。  
+3.  型**bm get サブスクリプション-ビュー:\<ビュー名\>-警告:\<警告名\>**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

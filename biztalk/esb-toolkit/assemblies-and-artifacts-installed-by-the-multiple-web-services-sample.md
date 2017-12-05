@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d667d960a21aa9851540b9762b6ea8086d67984
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1cbb1ccd6d015cfa07037f270b501023e5490fec
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-multiple-web-services-sample"></a>アセンブリと、複数の Web サービス サンプルがインストールされている成果物
 次の表には、アセンブリと、複数の Web サービス サンプルのインストールされている他の成果物が一覧表示します。  
@@ -36,4 +36,4 @@ ms.lasthandoff: 09/20/2017
 |||MessageEnrichment.Transforms.OrderDocAndGetOrderDetailsToInventoryOrder バージョン 1.0.0.0|  
 |グローバル アセンブリ キャッシュ|アセンブリ|ESB です。MultipleWebServices.Maps バージョン 2.0.0.0 以降|  
 |||ESB です。MultipleWebServices.Orchestrations バージョン 2.0.0.0 以降|  
-|%Program Files %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline コンポーネント|パイプライン コンポーネント||
+|%Program Files %\\BizTalk Server\Pipeline コンポーネント|パイプライン コンポーネント||

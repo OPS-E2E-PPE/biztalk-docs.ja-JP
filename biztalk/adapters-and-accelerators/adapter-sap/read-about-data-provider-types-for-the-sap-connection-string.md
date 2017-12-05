@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1a27fa8b09addc7874e6056f0b467c7f874a41e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e77219fb74b7af377953a3761c4d9f241b3a8bd0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-about-data-provider-types-for-the-sap-connection-string"></a>SAP 接続文字列のデータ プロバイダーの種類の説明を読む
 SAP システムへの接続を確立するには、ときは、接続文字列の形式で ADO.NET クライアントが SAP 接続のプロパティを指定してください。 SAP ADO 接続文字列の形式は、ようになります。  
@@ -52,7 +52,7 @@ SAP システムへの接続を確立するには、ときは、接続文字列�
 |システム番号 (SYSNR)|A|SAP システム番号|  
 |アプリケーション サーバー グループ名 (グループ)|B|SAP サーバー グループの名前。 これは、負荷分散の接続内のアプリケーション サーバーの任意のグループです。|  
 |メッセージ サーバー ホスト (MSHOST)|B|SAP メッセージ サーバー ホストの名前|  
-|メッセージ サーバー サービス (MSSERV)|B|指定されている SAP メッセージ サーバー サービスの名前、\<システム ドライブ >: \WINDOWS\system32\drivers\etc\services ファイル。 値を指定しない場合、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]これがあることを前提としています"いる sapms\<R/3 システム名 >"です。 たとえば、R/3 システム名が DV1 の場合は、アダプターはメッセージ サーバーのサービス名"sapmsDV1"であると仮定します。<br /><br /> ただし、サービス ファイルのエントリが異なる場合は、その値を指定する必要があります。|  
+|メッセージ サーバー サービス (MSSERV)|B|指定されている SAP メッセージ サーバー サービスの名前、\<システム ドライブ\>: \WINDOWS\system32\drivers\etc\services ファイル。 値を指定しない場合、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]これがあることを前提としています"いる sapms\<R/3 システム名\>"です。 たとえば、R/3 システム名が DV1 の場合は、アダプターはメッセージ サーバーのサービス名"sapmsDV1"であると仮定します。<br /><br /> ただし、サービス ファイルのエントリが異なる場合は、その値を指定する必要があります。|  
 |R/3 システム名 (R3NAME)|B|SAP R/3 の名前です。|  
 |移行先 (追加先)|D|Saprfc.ini ファイルから接続パラメーターを取得します。|  
 |クライアント (クライアント)|A、B、D|SAP クライアント番号|  
@@ -110,4 +110,4 @@ ASHOST=SAPSERVER; SYSNR=00; CLIENT=800; LANG=EN; USER=YourUserName; PASSWD=",@/:
 >  1 つだけの接続の種類の A、B、または D. の接続パラメーターを指定する必要があります。たとえば、接続文字列で、アプリケーション サーバーのホストを指定する場合必要がありますいないを指定するメッセージ サーバーのホスト名または、R3NAME。  
   
 ## <a name="see-also"></a>参照  
- [使用して、.NET Framework Data Provider 用 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [.NET Framework Data Provider for mySAP Business Suite の使用](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

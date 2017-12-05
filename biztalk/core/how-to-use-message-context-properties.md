@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f5e222567c60596f572412bdcae9aadf6025ee0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 084eae49777b62b190e8e090c0b1045d301d420b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-message-context-properties"></a>メッセージ コンテキストのプロパティの使用方法
 システム プロパティとは、BizTalk メッセージング エンジンとそのコンポーネントによって主に内部で使用されるプロパティです。 一般的に、これらのプロパティのエンジンによって設定されている値を変更することは、エンジンの実行ロジックに影響を与えるため推奨されません。 ただし、変更できるプロパティは数多くあります。  
@@ -55,7 +55,7 @@ MySubject= MyMessage(POP3.Subject);
 |BTS.InterchangeSequenceNumber|受信アダプターからメッセージを受け取った後、メッセージ ボックス データベースに公開する前に、メッセージング エンジンによって昇格されます。|xs:int|インターチェンジのドキュメントのシーケンス番号を示します。 ドキュメントが個別のドキュメントに逆アセンブルされるインターチェンジの一部でない場合は、この値は 1 をなります。 プロパティは、オーケストレーション、送信パイプラインで読み取ることができ、アダプターを送信します。|  
 |BTS.IsDynamicSend|メッセージ コンテキストで設定できます。 このプロパティは昇格されず、送信操作にのみ適用されます。|xs:boolean|送信操作が動的送信ポートを使用して行われる場合、メッセージング エンジンによって値が true に設定されメッセージ コンテキストに書き込まれます。 送信パイプラインで静的送信ポート用に動的にプロパティを設定する場合は、この値を true に設定する必要があります。|  
 |BTS.MessageDestination|このプロパティは、GetNext() からメッセージが返されたときに、逆アセンブラー パイプライン コンポーネントによって受信パイプラインで設定できます。|xs:string|このプロパティは、主に逆アセンブラーの [回復可能なインターチェンジ処理] のサポートに使用され、メッセージをメッセージ ボックスに公開するか、または保留キューに入れて中断するかを制御します。 パイプラインでインターチェンジに無効なメッセージが検出された場合、メッセージを中断して処理を続行するには、MessageDestination = SuspendQueue を設定します。またこれによって、エンジンが逆アセンブラーで GetNext() を呼び出したときにメッセージを返すことができます。<br /><br /> 有効な値:<br /><br /> -既定値です。 プロパティが存在しない場合、メッセージは有効と見なされ、メッセージ ボックスに公開されます。<br />-SuspendQueue です。 メッセージング エンジンにメッセージを中断するよう指示します。 **注:**パイプライン/マッピング メッセージと、アダプター (ワイヤ メッセージなど) によって送信されるメッセージではなく、中断されたメッセージが表示されます。|  
-|BTS.MessageType|メッセージ解析中に逆アセンブラー パイプライン コンポーネントによって昇格されます。|xs:string|メッセージの種類を指定します。 メッセージの種類がドキュメント スキーマの名前空間とドキュメントのルート ノードの組み合わせとして定義されている: http://\<*MyNamespace*>#\<*MyRoot*>。|  
+|BTS.MessageType|メッセージ解析中に逆アセンブラー パイプライン コンポーネントによって昇格されます。|xs:string|メッセージの種類を指定します。 メッセージの種類がドキュメント スキーマの名前空間とドキュメントのルート ノードの組み合わせとして定義されている: http://&lt です*MyNamespace*>#<*MyRoot*>。|  
 |BTS.OutboundTransportLocation|このプロパティをメッセージ コンテキストに設定すると、メッセージング エンジンによって昇格されます。 このプロパティは、オーケストレーションが送信ポートにメッセージを送信する場合に、暗黙的にメッセージ コンテキストに設定されます。 このプロパティは、オーケストレーションまたはパイプラインで明示的に設定することもできます。|xs:string|メッセージが送信された送信先 URI を指定します。 URI など含めることはアダプター プレフィックス**http://**です。 アダプター プレフィックスは、メッセージング エンジンで、メッセージを送信するときに使用するアダプターの種類を決定するのに使用されます。 場合は、両方のアダプター プレフィックスと**BTS です。OutboundTransportType**プロパティが設定されているアダプターの種類から**BTS です。OutboundTransportType**常に、プレフィックス、アダプターの種類よりも優先されます。<br /><br /> 有効な値:<br /><br /> BizTalk メッセージ キュー: **DIRECT =**、**プライベート =**、および**パブリック =**<br /><br /> ファイル: **file://**<br /><br /> FTP: **FTP://**<br /><br /> HTTP: **http://**と**https://**<br /><br /> SMTP: **mailto:**<br /><br /> SOAP: **SOAP://**<br /><br /> SQL: **SQL://**|  
 |BTS.OutboundTransportType|このプロパティをメッセージ コンテキストに設定すると、メッセージング エンジンによって昇格されます。 このプロパティは、オーケストレーションが送信ポートにメッセージを送信する場合に、暗黙的にコンテキストに設定されます。 このプロパティを設定することも明示的にオーケストレーションまたはパイプライン。|xs:string|メッセージの送信に使用するアダプターの種類を指定します。 使用可能なアダプターの種類は**ファイル**、 **FTP**、 **HTTP**、 **SMTP**、 **SOAP**、および**SQL**です。<br /><br /> このプロパティに設定される値とアドレスで指定されるアダプター プレフィックスは、大文字と小文字を区別しません。|  
 |BTS.PropertiesToUpdate|再送信または中断されたエラー メッセージの一部のプロパティ値を予約する場合、アダプターによってこのプロパティが設定されます。<br /><br /> つまり、メッセージが再送信または再開された場合、指定したプロパティがコンテキストに設定されます。|xs:string|プロパティ名、名前空間、および値を表す要素を持つ XML 文字列を含んでいます。|  
@@ -85,7 +85,7 @@ MySubject= MyMessage(POP3.Subject);
   
  パイプライン コンポーネントとアダプターに関連付けられたプロパティとプロパティ スキーマについての追加情報は、以下のトピックを参照してください。  
   
--   [ファイル アダプタ プロパティ スキーマおよびプロパティ](../core/file-adapter-property-schema-and-properties.md)
+-   [ファイル アダプター プロパティ スキーマおよびプロパティ](../core/file-adapter-property-schema-and-properties.md)
   
 -   [FTP アダプター プロパティ スキーマおよびプロパティ](../core/ftp-adapter-property-schema-and-properties.md)  
   
@@ -99,11 +99,11 @@ MySubject= MyMessage(POP3.Subject);
   
 -   [BizTalk Framework スキーマおよびプロパティ](../core/biztalk-framework-schema-and-properties.md)  
   
--   [MQSeries アダプターのプロパティ](../core/mqseries-adapter-properties.md)  
+-   [MQSeries アダプター プロパティ](../core/mqseries-adapter-properties.md)  
   
--   [POP3 アダプタ プロパティ スキーマおよびプロパティ](../core/pop3-adapter-property-schema-and-properties.md)  
+-   [POP3 アダプター プロパティ スキーマおよびプロパティ](../core/pop3-adapter-property-schema-and-properties.md)  
   
--   [Windows SharePoint Services アダプターのプロパティのリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)  
+-   [Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)  
   
 -   [MIME/SMIME プロパティ スキーマおよびプロパティ](../core/mime-smime-property-schema-and-properties.md)  
   

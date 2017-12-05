@@ -12,18 +12,18 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3563fe263a3921979c7a0c143112b1bbe9d73790
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e04bbce8870e4f0e8c0edb278511f2a6791d62d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-biztalk-server-2013-and-2013-r2"></a>BizTalk Server 2013 および 2013 R2 のインストール
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール手順を示します。  
   
 ## <a name="before-you-get-started"></a>始める前に
 
--   **アカウント名** – 可能な場合は常に既定のアカウント名を使用してください。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のセットアップでは自動的に既定のアカウントが入力されます。 ドメイン内に複数の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループがある場合は、競合を防ぐためアカウント名を変更してください。 場合は、名前を変更する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のみをサポートしている\< *NetBIOS ドメイン名*>\\<*ユーザー*> サービス アカウントおよび Windowsグループ。  
+-   **アカウント名** – 可能な場合は常に既定のアカウント名を使用してください。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のセットアップでは自動的に既定のアカウントが入力されます。 ドメイン内に複数の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループがある場合は、競合を防ぐためアカウント名を変更してください。 場合は、名前を変更する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のみをサポートしている\< *NetBIOS ドメイン名*\>\\<*ユーザー* \>サービスアカウントおよび Windows グループ。  
   
 -   **アカウント名と BAM 管理 Web サービス** – [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、BAM 管理 Web サービス ユーザーに対して、ビルトイン アカウントまたはパスワードなしのアカウントはサポートされていません。 Web サービスが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースにアクセスするときに、これらのアカウントでセキュリティの脅威が生じる場合があります。  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  [**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成**] を開きます。  
   
-    2.  BAM ポータルを構成し、[**BAM ポータル Web サイト**] の一覧から新しい Web サイトを選択します。  
+    2.  BAM ポータルを構成し、**[BAM ポータル Web サイト]** の一覧から新しい Web サイトを選択します。  
   
 -   **コミュニティによる補足**: 閲覧:  
   
@@ -62,17 +62,17 @@ ms.lasthandoff: 09/20/2017
   
 1.  開いているプログラムをすべて閉じます。 管理者として [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストーラーを実行します。  
   
-2.  [**スタート**] で [**Microsoft BizTalk Server のインストール**] を選択します。  
+2.  **[スタート]** で **[Microsoft BizTalk Server のインストール]** を選択します。  
   
-3.  [**ユーザー情報**] で、ユーザー名、組織、プロダクト キーを入力して [**次へ**] を選択します。  
+3.  **[ユーザー情報]** で、ユーザー名、組織、プロダクト キーを入力して **[次へ]** を選択します。  
   
-4.  [**ライセンス契約**] に同意し、[**次へ**] をクリックします。  
+4.  **[ライセンス契約]** に同意し、**[次へ]** をクリックします。  
   
-5.  [**カスタマー エクスペリエンス向上プログラム**] で、参加希望かどうかを選択し、[**次へ**] を選択します。  
+5.  **[カスタマー エクスペリエンス向上プログラム]** で、参加希望かどうかを選択し、**[次へ]** を選択します。  
   
      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はカスタマー エクスペリエンス向上プログラムに参加しています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の機能の使用状況レポートに関する有益なフィードバックを Microsoft に提供することを選択できます。 収集されるデータは匿名であり、個人を特定できるものではありません。 このプログラムでは、機能の使用状況の統計情報が収集されます。 お客様にこのプログラムに参加していただくことによって、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のさまざまな機能の信頼性とパフォーマンスが向上します。 このプログラムの詳細およびプライバシー ポリシーについては、「[Microsoft BizTalk Server CEIP プライバシー ポリシー](http://go.microsoft.com/fwlink/p/?LinkId=188553)」を参照してください。  
   
-6.  [**インストールするコンポーネント**] で、インストール可能なコンポーネントの一覧から必要なコンポーネントを選択します。  
+6.  **[インストールするコンポーネント]** で、インストール可能なコンポーネントの一覧から必要なコンポーネントを選択します。  
 
     |機能|説明|  
     |-------------|-----------------|  
@@ -96,23 +96,23 @@ ms.lasthandoff: 09/20/2017
     |**BAM イベント**|Windows Workflow Foundation および Windows Communication Foundation のインターセプター。 カスタム アプリケーションから BAM データベースにイベントを送信する BAM イベント API も含まれます。|  
     |**プロジェクト ビルド コンポーネント**|このツールを使用すると、Visual Studio を使用しなくても [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソリューションをビルドできます。|  
 
-7. 既定のインストール先を使用するか、[**参照**] を選択して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール先を選択します。 [**次へ**] を選択します。  
+7. 既定のインストール先を使用するか、**[参照]** を選択して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール先を選択します。 **[次へ]** を選択します。  
   
 8.  ADOMD.NET などの必須コンポーネントがコンピューターにインストールされていない場合は、セットアップで必要な再配布可能コンポーネントをインストールできます。 次のいずれかを実行できます。  
   
-    -   [**必要な再配布可能コンポーネントを Web から自動的にインストールする**] を選択します。  
+    -   **[必要な再配布可能コンポーネントを Web から自動的にインストールする]** を選択します。  
     
          または  
   
-    -   CAB ファイルを既にダウンロードしている場合は、[**必要な再配布可能コンポーネントを CAB ファイルから自動的にインストールする**] を選択します。 このオプションを選択した場合は、CAB ファイルの場所を参照できます。  
+    -   CAB ファイルを既にダウンロードしている場合は、**[必要な再配布可能コンポーネントを CAB ファイルから自動的にインストールする]** を選択します。 このオプションを選択した場合は、CAB ファイルの場所を参照できます。  
   
-9.  [**概要**] で、正しいコンポーネントが選択されていることを確認します。 システム再起動後に自動的にログオンするには、[**設定**] を選択してログオン情報を入力します。 自動ログオンが有効になるのは、セットアップ実行中の再起動に対してのみであり、セットアップが完了すると無効になります。  
+9.  **[概要]** で、正しいコンポーネントが選択されていることを確認します。 システム再起動後に自動的にログオンするには、**[設定]** を選択してログオン情報を入力します。 自動ログオンが有効になるのは、セットアップ実行中の再起動に対してのみであり、セットアップが完了すると無効になります。  
   
-10. [**インストール**] をクリックしてインストール プロセスを開始します。  
+10. **[インストール]** をクリックしてインストール プロセスを開始します。  
   
-11. [**Microsoft Update のセットアップ**] で、基本設定を行い、[**次へ**] を選択します。  
+11. **[Microsoft Update のセットアップ]** で、基本設定を行い、**[次へ]** を選択します。  
   
-12. [**インストールの完了**] で、[**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成の開始**] チェック ボックスをオフにして、[**終了**] を選択します。  
+12. **[インストールの完了]** で、[**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成の開始**] チェック ボックスをオフにして、**[終了]** を選択します。  
   
 ## <a name="additional"></a>追加情報  
   

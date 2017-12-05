@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a4ad59760d6efddcfe946c0ee13c26ee0f8ca1d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a295bacf263e3ecad9a9aa081fb0d5d3be2f635
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-save-rename-and-close-schemas"></a>スキーマの保存、名前変更、および終了の方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、スキーマは XSD (XML Schema Definition) 言語ファイルであり、ファイル システムに .xsd という拡張子で格納されます。 BizTalk エディターを使用したスキーマの作成には、スキーマ ファイルの保存と終了、場合によっては、ファイル名の変更といった作業が常に伴います。 このトピックでは、こうした基本操作に必要な手順について説明します。  
@@ -25,12 +25,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  必要に応じて、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウ上部にある適切なタブをクリックして、保存するスキーマの BizTalk エディターをアクティブにします。  
   
-2.  **ファイル** メニューのをクリックして**保存*\<スキーマの名前 >***です。  
+2.  **ファイル** メニューのをクリックして**保存*\<名前のスキーマ\>***です。  
   
      スキーマに対する変更がまだ保存されていなかった場合、スキーマを保存すると、メイン編集ウィンドウ上部のタブに表示される名前からアスタリスク (*) が消えます。このアスタリスクは、変更内容が保存されていないことを示すマークです。  
   
 > [!NOTE]
->  クリックして、新しい名前でスキーマを保存することができます**保存*\<スキーマの名前 >*として**上、**ファイル**メニュー。  
+>  クリックして、新しい名前でスキーマを保存することができます**保存*\<名前のスキーマ\>*として**上、**ファイル**メニュー。  
   
 > [!NOTE]
 >  スキーマを保存するには、プロジェクト内をクリックして変更されたすべての項目の保存の一部として**すべてを保存**で、**ファイル**メニュー。  
@@ -59,4 +59,4 @@ ms.lasthandoff: 09/20/2017
      BizTalk エディターによってスキーマが終了されます。  
   
 ## <a name="see-also"></a>参照  
- [プロジェクト内のスキーマを管理します。](../core/managing-schemas-within-projects.md)
+ [プロジェクト内のスキーマの管理](../core/managing-schemas-within-projects.md)

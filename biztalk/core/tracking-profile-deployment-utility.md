@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c4d261069b83741413e255a3f8bacd6dd9260d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 672879df2c1c5217d8a9710dad000609dd95d0c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tracking-profile-deployment-utility"></a>追跡プロファイルの展開ユーティリティ
 開発者は、bttdeploy ユーティリティを使用して、追跡プロファイルを BAM インフラストラクチャに適用したり、追跡プロファイルを BAM インフラストラクチャから削除したりできます。 追跡プロファイル エディター (TPE) で、[追跡プロファイルの適用] メニュー オプションをクリックしても、bttdeploy ユーティリティと同じ機能を使用できます。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 |オプション|Description|  
 |------------|-----------------|  
 |/h または /?|省略可能: bttdeploy の構文を表示します。|  
-|/mgdb\<サーバー名 [, ポート] >\\< データベース名\>|省略可能: 管理サーバー、ポート、およびプロファイルを適用するデータベース名を指定します。 **注:**このパラメーターを使用する場合、ポートは省略可能です。|  
+|/mgdb\<サーバー名 [, ポート]\>\\< データベース名\>|省略可能: 管理サーバー、ポート、およびプロファイルを適用するデータベース名を指定します。 **注:**このパラメーターを使用する場合、ポートは省略可能です。|  
 |/remove|省略可能: は、追跡プロファイルは、BAM データベースから削除することを指定します。|  
 |filename|適用または削除する追跡プロファイルのファイル名です。|  
   

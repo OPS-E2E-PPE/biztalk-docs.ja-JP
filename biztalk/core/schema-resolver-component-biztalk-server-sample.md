@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37ec562cbc64d15e66d2f265c52606817169bb85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22b59a0606b3cb30827078e28a89d0a51f52c430
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schema-resolver-component-biztalk-server-sample"></a>スキーマ リゾルバ コンポーネント (BizTalk Server サンプル)
 スキーマ リゾルバ コンポーネントのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] フラット ファイル逆アセンブラ コンポーネントの機能を拡張する方法を示します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
  スキーマ リゾルバ コンポーネントは、フラット ファイル逆アセンブラ コンポーネントのスキーマを選択する、もう 1 つの方法を示します。 このサンプルでは、4 つのスキーマが定義されており、各スキーマのメッセージの最初の 2 文字は一意です。 一意である最初の 2 文字、および対応するスキーマの間でマッピングが定義されます。 入力メッセージがスキーマ リゾルバ コンポーネントに提供されると、最初の 2 文字が読み取られ、対応するドキュメントに使用するスキーマが決定されて、メッセージ コンテキストでスキーマ情報が保存された後に、標準のフラット ファイル逆アセンブラ コンポーネントが呼び出されます。 標準フラット ファイル逆アセンブラ コンポーネントはメッセージ コンテキストからスキーマ情報を読み取り、そのスキーマを使用してドキュメントを解析します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Pipelines\SchemaResolverComponent\  
+ *\<パスのサンプル\>*\Pipelines\SchemaResolverComponent\  
   
  次の表は、このサンプルで使用したファイルを示し、その目的を説明しています。  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、ディレクトリを次のフォルダに変更します (cd)。  
   
-     *\<サンプル パス >*\Pipelines\SchemaResolverComponent  
+     *\<パスのサンプル\>*\Pipelines\SchemaResolverComponent  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -76,9 +76,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
-1.  POInstance.txt、PRInstance.txt、SOInstance.txt、および SRInstance.txt ファイルを受信場所にドロップ\<*インストール パス*> \SDK\Samples\Pipelines\SchemaResolverComponent\In  
+1.  POInstance.txt、PRInstance.txt、SOInstance.txt、および SRInstance.txt ファイルを受信場所にドロップ\<*インストール パス*\>\SDK\Samples\Pipelines\SchemaResolverComponent\In  
   
-2.  書き込まれた 4 つの .xml ファイルを確認、 \<Installdir > \SDK\Samples\Pipelines\SchemaResolverComponent\Out フォルダです。  
+2.  書き込まれた 4 つの .xml ファイルを確認、 \<Installdir\>\SDK\Samples\Pipelines\SchemaResolverComponent\Out フォルダです。  
   
 ## <a name="see-also"></a>参照  
- [パイプライン (BizTalk Server Samples フォルダ)](../core/pipelines-biztalk-server-samples-folder.md)
+ [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

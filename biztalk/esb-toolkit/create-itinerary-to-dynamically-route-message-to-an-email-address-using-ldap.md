@@ -12,15 +12,15 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14ea2f3dcb144b0b3d1ddf835ba3a5ae6a33bb8c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 751eaf381b762372652bb77ddf6f00ffe43971c2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-create-an-itinerary-to-dynamically-route-a-message-to-an-email-address-using-an-ldap-query"></a>方法: 動的に LDAP クエリを使用する電子メール アドレスにメッセージをルーティングする日程を作成します。
 ## <a name="goal"></a>[目標]  
- このセクションでは、LDAP (ライトウェイト ディレクトリ アクセス プロトコル) 経由での電子メール アドレスにクエリを実行し、解決済みのエンドポイントを使用する電子メール メッセージを送信する旅程を作成する方法を示します、 [!INCLUDE[prague](../includes/prague-md.md)] SMTP アダプター。  
+ このセクションでは、LDAP (ライトウェイト ディレクトリ アクセス プロトコル) 経由での電子メール アドレスにクエリを実行し、BizTalk Server SMTP アダプタを使用してエンドポイントを解決する電子メール メッセージを送信する旅程を作成する方法を示します。  
   
  このトピックでは、次の手順を行います。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-domain-specific-language-dsl-model"></a>ESB itinerary ドメイン固有言語 (DSL) モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -181,4 +181,4 @@ ms.lasthandoff: 09/20/2017
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [動的な解決を使用して、ルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [動的な解決とルーティングを利用する](../esb-toolkit/using-dynamic-resolution-and-routing.md)

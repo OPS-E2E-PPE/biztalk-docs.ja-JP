@@ -12,11 +12,11 @@ caps.latest.revision: "49"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c54646d106abe1824ce39de5a550f5f591bae882
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3c85d550e7a1429e18035629517017c90b44c9e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter"></a>チュートリアル: Wcf-basichttp アダプターで WCF サービスの使用
   
@@ -31,9 +31,9 @@ ms.lasthandoff: 09/20/2017
   
  このチュートリアルを完了すると、次のタスクを実行できるようになります。  
   
--   内から[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用して、**展開**コマンドを含むアセンブリを展開する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションおよび[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスのローカル インスタンスを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 これにより、アセンブリが含まれた BizTalk アプリケーションが作成されます。  
+-   内から[!INCLUDE[btsCoName](../includes/btsconame-md.md)]Visual Studio を使用して、**展開**コマンドを含むアセンブリを展開する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションおよび[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスのローカル インスタンスを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 これにより、アセンブリが含まれた BizTalk アプリケーションが作成されます。  
   
--   内から[!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用して、 **BizTalk WCF サービス使用ウィザード**を生成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]スキーマと型を使用するために必要な[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 論理ポートへのバインドに使用できる空のオーケストレーションも生成されます。 このオーケストレーションは、スキーマおよび型と共にコンパイルおよび展開されます。 ただし、これは単なる純粋な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージング シナリオなので、オーケストレーション ワークフロー処理は空で、このサンプルでは使用されません。  
+-   Visual Studio を使用して、 **BizTalk WCF サービス使用ウィザード**を生成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]スキーマと型を使用するために必要な[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 論理ポートへのバインドに使用できる空のオーケストレーションも生成されます。 このオーケストレーションは、スキーマおよび型と共にコンパイルおよび展開されます。 ただし、これは単なる純粋な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージング シナリオなので、オーケストレーション ワークフロー処理は空で、このサンプルでは使用されません。  
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールから、WCF-BasicHttp 送信ポートを使用するコンテンツ ベースのルーティングを構成する。 構成、 **SOAPAction**ヘッダーをターゲット[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスが受信します。  
   
@@ -44,11 +44,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>前提条件  
  このサンプルの手順を実行するには、使用する環境が次の前提条件を満たしている必要があります。  
   
--   サンプルを実行するコンピューターと、アセンブリをビルドおよび展開プロセスを実行するコンピューターの両方の必要な Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]、および Microsoft[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   サンプルを実行するコンピューターと、アセンブリをビルドおよび展開プロセスを実行するコンピューターの両方の必要な Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]、および Microsoft BizTalk Server です。  
   
--   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)] が必要です。  
+-   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft Visual Studio が必要です。  
   
--   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のセットアップ時にインストールするオプションです。  
+-   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft BizTalk Server のセットアップ時にインストールするオプションです。  
   
 -   管理タスクの実行に使用するコンピューターで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソール内の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション設定を構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーであるユーザー アカウントとして実行する必要があります。 また、アプリケーションの展開、ホスト インスタンスの管理、およびその他の必要なタスクを実行するには、このユーザー アカウントはローカル管理者グループのメンバーである必要もあります。  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  自己解凍形式実行**WCFBasicHttpSendAdapter.exe**ファイルし、ファイルを**C:\WCFBasicHttpSendAdapter**フォルダーです。  
   
-2.  開く、 **C:\WCFBasicHttpSendAdapter\WCFBasicHttpSendAdapter.sln**で[!INCLUDE[vs2010](../includes/vs2010-md.md)]です。  
+2.  開く、 **C:\WCFBasicHttpSendAdapter\WCFBasicHttpSendAdapter.sln** Visual Studio でします。  
   
 3.  ソリューション エクスプ ローラーで、展開、 **BasicHttpWCFServiceConsuming**プロジェクト。 このプロジェクトは、送信ポートにより呼び出される [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスです。 インターネット インフォメーション サービス (IIS) を使用して管理対象ホスト環境でホストされます。 IIS のホスティングでは、メッセージベースのアクティブ化を使用して、サービスのアクティブ化と有効期間を管理します。 展開**App_Code**を開き、 **OrderProcess.cs**を確認します。 これは、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスを介して発注要求メッセージを受信する、 **OrderRequest**メソッドです。 OrderProcess.cs ファイルには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスのインターフェイスの定義と実装が含まれます。 これは、注文を返します経由で応答メッセージ、 **OrderResponse**メソッドです。  
   
@@ -72,13 +72,13 @@ ms.lasthandoff: 09/20/2017
     <%@ServiceHost language=c# Debug="true" Service="Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming.OrderProcessServiceType" %>  
     ```  
   
-5.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューション エクスプ ローラーで開く**Web.config**を確認します。 IIS でホストされるときは、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスは、コンソール アプリケーションでホストされるときの app.config ファイルではなく、Web.config ファイルを使用して構成されます。  
+5.  ソリューション エクスプ ローラーで、Visual Studio で開きます**Web.config**を確認します。 IIS でホストされるときは、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスは、コンソール アプリケーションでホストされるときの app.config ファイルではなく、Web.config ファイルを使用して構成されます。  
   
-    -   確認して、 **httpGetEnabled**の属性、 \< **serviceMetaData**> 要素に設定されている`true`できるように、 **BizTalk WCF サービス使用ウィザード**サービスのメタデータを使用することができます。  
+    -   確認して、 **httpGetEnabled**の属性、 \< **serviceMetaData** \>要素に設定されている`true`できるように、 **BizTalk WCF サービスウィザードを使用**サービスのメタデータを使用することができます。  
   
-    -   確認して、**モード**の属性、 \<**セキュリティ**> 要素に設定されている**None**です。 このチュートリアルを使用するため、**なし**セキュリティ モード、Web のこのサービスをホストするアプリケーションは、匿名アクセスを許可するように構成する必要があります。  
+    -   確認して、**モード**の属性、 \<**セキュリティ**\>要素に設定されている**None**です。 このチュートリアルを使用するため、**なし**セキュリティ モード、Web のこのサービスをホストするアプリケーションは、匿名アクセスを許可するように構成する必要があります。  
   
-6.  **Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。 右クリックし、 **BasicHttpWcfServiceConsuming**プロジェクトをクリックして**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リストをクリックして**\<新規 >**、入力と`keyfile.snk`で、**キー ファイルの名前** テキスト ボックス.  オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
+6.  **Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。 右クリックし、 **BasicHttpWcfServiceConsuming**プロジェクトをクリックして**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規\>**、入力と`keyfile.snk`で、**キー ファイル名** テキスト ボックス。  オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
   
 7.  ソリューション エクスプ ローラーで右クリック**BasicHttpWcfServiceConsuming**、順にクリック**リビルド**です。  
   
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
   
 9. 次の手順に従い、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスをホストする Web アプリケーションを構成します。  
   
-    1.  をクリックして**開始**、をポイント**管理者ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
+    1.  をクリックして**開始**、 をポイント**管理者ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
     2.  このサービスが実行されるアプリケーション プールを作成します。 右クリック**アプリケーション プール**をクリックして**アプリケーション プールの追加.**アプリケーション プールの名前を入力し、クリックして**OK**です。  
   
@@ -108,7 +108,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="add-the-schemas-and-types-for-the-wcf-basichttp-adapter-to-the-sample-biztalk-application"></a>サンプル BizTalk アプリケーションに、スキーマと Wcf-basichttp アダプターの種類を追加します。  
   
-1.  アダプターは [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスを呼び出すので、メタデータを使用してそのサービスに対してその呼び出しを実行する方法について、スキーマおよび型の情報を必要とします。 **BizTalkApp**を消費するアーティファクトを提供、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューション エクスプ ローラーで右クリック**BizTalkApp**、をクリックして**追加**、クリックして**生成した項目の追加**です。  
+1.  アダプターは [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスを呼び出すので、メタデータを使用してそのサービスに対してその呼び出しを実行する方法について、スキーマおよび型の情報を必要とします。 **BizTalkApp**を消費するアーティファクトを提供、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 Visual Studio で、ソリューション エクスプ ローラーで右クリックし**BizTalkApp**をクリックして**追加**、順にクリック**生成した項目の追加**です。  
   
 2.  **生成した項目の追加** ダイアログ ボックスで、**テンプレート**セクションで、 **Consume WCF サービス**、クリックして**追加**です。  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **BizTalk WCF サービス使用ウィザードの完了** ページで、をクリックして**完了**です。  
   
-8.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューション エクスプ ローラーで、 **BizTalk WCF サービス使用ウィザード**次のファイルが生成されます。  
+8.  Visual Studio で、ソリューション エクスプ ローラーで、 **BizTalk WCF サービス使用ウィザード**次のファイルが生成されます。  
   
     -   オーケストレーション ファイル**OrderProcessServiceType.odx**です。 このオーケストレーションにはワークフロー ステージはありません。 ただし、オーケストレーションに追加し、論理ポートにバインドして、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスを使用できます。 オーケストレーションには、このサンプルで使用されるポートの種類やマルチパート メッセージの種類などの BizTalk の重要な型が含まれます。 この情報を表示する をダブルクリック、 **OrderProcessServiceType.odx**オーケストレーションです。 をクリックして**ビュー**、 をクリックして**その他のウィンドウ**、 をクリック**オーケストレーション**です。 展開**型**、展開**ポートの種類**、順に展開**IOrderProcess**です。 表示されます、**送信**メソッドです。 そのメソッドを展開して表示されます、 **OrderRequest**と**OrderResponse**ポートの種類。 各ポートの種類と表示 をクリックして、**説明**フィールド入力と出力メッセージのプロパティ ブラウザーで、各種の WSDL を参照してください。 をクリックして**マルチパート メッセージの種類**を表示し、 **OrderRequest**と**OrderResponse**マルチパート メッセージの種類。 クリックして、**説明**フィールドとビューの WDSL メッセージの各メッセージの種類の名前。  
   
@@ -142,17 +142,17 @@ ms.lasthandoff: 09/20/2017
   
 1.  次の手順に従い、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを展開します。  
   
-    1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューション エクスプ ローラーで右クリック**BizTalkApp**、クリックして**プロパティ**です。  
+    1.  Visual Studio で、ソリューション エクスプ ローラーで右クリック**BizTalkApp**、クリックして**プロパティ**です。  
   
     2.  **プロジェクト デザイナー**ウィンドウで、をクリックして**展開**タブをクリックし、変更、**サーバー**の別のデータベース サーバーを使用する場合は、プロパティ、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理データベース。 アプリケーション名を確認して**WCFBasicHttpSendAdapter**です。  
   
-    3.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューション エクスプ ローラーで右クリック**BizTalkApp**、順にクリック**リビルド**です。  
+    3.  Visual Studio で、ソリューション エクスプ ローラーで右クリック**BizTalkApp**、順にクリック**リビルド**です。  
   
-    4.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、ソリューション エクスプ ローラーで右クリック**BizTalkApp**、クリックして**展開**です。  これは、Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BizTalkApp アセンブリとを展開、GAC に成果物、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]という名前のアプリケーション**WCFBasicHttpSendAdapter**です。  
+    4.  Visual Studio で、ソリューション エクスプ ローラーで右クリック**BizTalkApp**、クリックして**展開**です。  これは、Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BizTalkApp アセンブリとを展開、GAC に成果物、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]という名前のアプリケーション**WCFBasicHttpSendAdapter**です。  
   
 2.  次の手順に従い、BizTalk アプリケーションの WCF-BasicHttp 送信ポートを構成します。  
   
-    1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+    1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
     2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **BizTalk グループ**、展開**アプリケーション**を右クリックして**WCFBasicHttpSendAdapter** ]をポイント**インポート**、クリックして**バインド**です。  
   
@@ -183,11 +183,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  一方向の静的受信ポートおよび FILE 受信場所を作成します。 受信ポートとは、1 つ以上の受信場所に対する論理的なコンテナーです。 ファイル アダプターによって選択されたサンプル [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージをここにドロップしてから、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスに送信します。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFBasicHttpSendAdapter**を右クリックして**受信ポート**、をポイント**新規**、クリックして**一方向受信ポート**です。  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WCFBasicHttpSendAdapter**を右クリックして**受信ポート**、] をポイント**新規**、クリックして**一方向受信ポート**です。  
   
     2.  **受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「 `WCFBasicSendAdapter.ReceivePurchaseOrder`、クリックしてして**ok**です。  
   
-    3.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**WCFBasicHttpSendAdapter.ReceivePurchaseOrder**、をポイント**新規**、クリックして**受信場所の**.  
+    3.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**WCFBasicHttpSendAdapter.ReceivePurchaseOrder**、 をポイント**新規**、クリックして**受信場所の**.  
   
     4.  **受信場所のプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WCFBasicSendAdapter.ReceivePurchaseOrder.FILE`です。  
   
@@ -199,13 +199,13 @@ ms.lasthandoff: 09/20/2017
   
 4.  前のステップで作成した FILE 受信場所から WCF-BasicHttp 送信ポートにメッセージをルーティングするフィルターを作成します。 ポートに関連付けられたフィルターは SQL の "where" 句と同じように機能し、true と評価されるとメッセージがそのポートに送られます。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFBasicHttpSendAdapter**、をクリックして**送信ポート**、順にダブルクリック**WCFSendPort_OrderProcessServiceType_ServiceEndpoint**です。  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WCFBasicHttpSendAdapter**、] をクリックして**送信ポート**、順にダブルクリック**WCFSendPort_OrderProcessServiceType_ServiceEndpoint**です。  
   
-    2.  **送信ポートのプロパティ**] ダイアログ ボックスで、**フィルター** ] タブで [ **BTS です。ReceivePortName**で、**プロパティ**フィールドに「`WCFBasicSendAdapter.ReceivePurchaseOrder`で、**値**フィールド、および [をクリックして**OK**です。 このフィルター式は、受信メッセージを WCFBasicSendAdapter.ReceivePurchaseOrder 受信ポートからこの WCF-BasicHttp 送信ポートにルーティングします。  
+    2.  **送信ポートのプロパティ** ダイアログ ボックスで、**フィルター**  タブで  **BTS です。ReceivePortName**で、**プロパティ**フィールドに「`WCFBasicSendAdapter.ReceivePurchaseOrder`で、**値**フィールド、および  をクリックして**OK**です。 このフィルター式は、受信メッセージを WCFBasicSendAdapter.ReceivePurchaseOrder 受信ポートからこの WCF-BasicHttp 送信ポートにルーティングします。  
   
 5.  サンプル アプリケーションの 2 つの FILE 送信ポートを作成します。 最初の送信ポートは、出力応答メッセージを [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスから FILE ポートに送信します。 2 番目の送信ポートは、クライアントに対して定義されている [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスから送信されるエラー メッセージを処理するために使用されます。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFBasicHttpSendAdapter**を右クリックして**送信ポート**、をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WCFBasicHttpSendAdapter**を右クリックして**送信ポート**、] をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
   
     2.  **送信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WCFBasicSendAdapter.SendPurchaseOrder.FILE`です。  
   
@@ -217,7 +217,7 @@ ms.lasthandoff: 09/20/2017
   
     6.  **送信ポートのプロパティ**ダイアログ ボックスで、をクリックして**OK**です。  
   
-    7.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFBasicHttpSendAdapter**を右クリックして**送信ポート**、をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
+    7.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WCFBasicHttpSendAdapter**を右クリックして**送信ポート**、] をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
   
     8.  **送信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WCFAdapterErrorSend.FILE`です。  
   
@@ -225,11 +225,11 @@ ms.lasthandoff: 09/20/2017
   
     10. **FILE トランスポートのプロパティ**ダイアログ ボックスの**全般**] タブの [、**コピー先フォルダー**テキスト ボックスで、「 `C:\WCFBasicHttpSendAdapter\WCFAdapterErrorOut\`、順にクリック**ok**.  
   
-    11. **送信ポートのプロパティ**] ダイアログ ボックスで、**フィルター** ] タブで [ **WCF です。IsFault**で、**プロパティ**フィールドに「`True`で、**値**フィールド、および [をクリックして**OK**です。 アプリケーション内で、例外またはエラーをチェックして検出できる、 **WCF です。IsFault**呼び出し元に送信されるメッセージのプロパティです。 このプロパティに設定する**True**送信されるメッセージが SOAP エラー メッセージである場合。 このフィルター式は、エラー メッセージをサンプル [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスからこの FILE 送信ポートにルーティングします。  
+    11. **送信ポートのプロパティ** ダイアログ ボックスで、**フィルター**  タブで  **WCF です。IsFault**で、**プロパティ**フィールドに「`True`で、**値**フィールド、および  をクリックして**OK**です。 アプリケーション内で、例外またはエラーをチェックして検出できる、 **WCF です。IsFault**呼び出し元に送信されるメッセージのプロパティです。 このプロパティに設定する**True**送信されるメッセージが SOAP エラー メッセージである場合。 このフィルター式は、エラー メッセージをサンプル [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスからこの FILE 送信ポートにルーティングします。  
   
 6.  次の手順で、サンプル アプリケーションのホスト名とバインドを指定します。  
   
-     [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFBasicHttpSendAdapter**、展開**オーケストレーション**を右クリックし、 **Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BizTalkApp.OrderProcessServiceTypeClient**オーケストレーションをクリックして**プロパティ**、をクリックして**バインド**設定してください**ホスト**に**BizTalkServerApplication**、順にクリック**OK**構成を保存します。  
+     [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WCFBasicHttpSendAdapter**、展開**オーケストレーション**を右クリックし、 **Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BizTalkApp.OrderProcessServiceTypeClient**オーケストレーションをクリックして**プロパティ**、] をクリックして**バインド**設定してください**ホスト**に**BizTalkServerApplication**、順にクリック**OK**構成を保存します。  
   
 ## <a name="test-the-sample-solution-with-the-wcf-basichttp-send-adapter"></a>テスト サンプル ソリューションで、Wcf-basichttp 送信アダプター  
   
@@ -247,9 +247,9 @@ ms.lasthandoff: 09/20/2017
   
 7.  コマンド プロンプトで**C:\WCFBasicHttpSendAdapter\TestData\WCFBasicSendAdapter.OrderRequest.Invalid.xml**を**C:\WCFBasicHttpSendAdapter\OrderRequestIn**フォルダーです。 このメッセージには無効な名前空間が含まれており、そのため [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスはエラー メッセージを返します。  
   
-8.  チェック、 **C:\WCFBasicHttpSendAdapter\WCFAdapterErrorOut**からのエラー メッセージを含む XML ファイルのフォルダー、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 見て、 \< **faultstring**> フィールドに無効なメッセージ本文のエラー メッセージの原因を表示します。  
+8.  チェック、 **C:\WCFBasicHttpSendAdapter\WCFAdapterErrorOut**からのエラー メッセージを含む XML ファイルのフォルダー、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 見て、 \< **faultstring** \>フィールドに無効なメッセージ本文のエラー メッセージの原因を表示します。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル: Wcf-basichttp アダプタを使用して WCF サービスの発行](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
  [BizTalk WCF サービス使用ウィザードを使用して WCF サービスを使用する方法](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)   
- [WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)
+ [WCF アダプターのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)

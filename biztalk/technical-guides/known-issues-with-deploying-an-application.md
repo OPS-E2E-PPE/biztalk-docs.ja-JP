@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09970e43bd53306a6394eeffc4c2e642a8333dbc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7fa139469ea8718c3d4430235ffb576195e67a7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-deploying-an-application"></a>アプリケーションの配置に関する既知の問題
 ## <a name="deploying-a-biztalk-application"></a>BizTalk アプリケーションの展開  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="exporting-a-biztalk-application"></a>BizTalk アプリケーションをエクスポートします。  
  **Windows Vista で .msi ファイルをインストールするときに、誤ったエラーが表示されることができます。**  
   
- 使用してエクスポートされた .msi パッケージをインストールするときに[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]で[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Windows Vista® で実行されている、次の誤ったエラーが表示される、"、インストーラーは、予期しないエラーがこのパッケージのインストールにしました。 このパッケージに問題がある可能性があります。 エラー コード: 2869。" このエラーを解決するには、最初にインポートを使用してパッケージ[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]再度エクスポートし、パッケージをインストールします。  
+ 使用してエクスポートされた .msi パッケージをインストールするときに[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]Windows Vista® で実行されている BizTalk Server で、次の誤ったエラーが表示される、"、インストーラーは、予期しないエラーがこのパッケージのインストールにしました。 このパッケージに問題がある可能性があります。 エラー コード: 2869。" このエラーを修正するには、BizTalk Server を使用してパッケージを最初にインポートし、再度エクスポートしてパッケージをインストールします。  
   
 ## <a name="importing-a-biztalk-application"></a>BizTalk アプリケーションをインポートします。  
  **パスワードは、アプリケーションに追加されたファイルのバインドから削除されません。**  
@@ -55,4 +55,4 @@ ms.lasthandoff: 09/20/2017
  別のアプリケーションのプロパティ スキーマを使用するアプリケーションの送信ポートにフィルターを作成し、そのアプリケーションを新しい BizTalk グループにインポートした場合、そのアプリケーションをインストールおよび起動しても、フィルターは正しく機能せず、スキーマが欠落していることを伝える警告も発生しません。 この問題は、スキーマが欠落しているアプリケーションをインストールする前に、必要なスキーマを含んでいるアプリケーションをインポートすれば解決できます。  
   
 ## <a name="see-also"></a>参照  
- [アプリケーションを展開します。](../technical-guides/deploying-an-application.md)
+ [アプリケーションの展開](../technical-guides/deploying-an-application.md)

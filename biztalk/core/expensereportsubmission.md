@@ -15,11 +15,11 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 993d1874a95da2501636f941f1436fec894e87f6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c450e2e39f2498722f9eb8d09430294927cb05f8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="expensereportsubmission"></a>ExpenseReportSubmission
 ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ クライアントのドキュメントを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションに送信する方法を示すものです。  
@@ -41,7 +41,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
 4.  このサンプルでは示していませんが、実際はエンタープライズ リソース プランニング (ERP) システムなどの他のアプリケーションがこのワークシート ファイルを取得し、さらに処理を行います。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \AdaptersUsage\ExpenseReportSubmission\  
+ \<*パスのサンプル*\>\AdaptersUsage\ExpenseReportSubmission\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -60,7 +60,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersUsage\ExpenseReportSubmission  
+     \<*パスのサンプル*\>\AdaptersUsage\ExpenseReportSubmission  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -126,7 +126,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
   
     4.  をクリックして**追加**を表示する、 **Add file**  ダイアログ ボックス。  
   
-    5.  をクリックして**参照**を表示する、**開く** ダイアログ ボックスに移動して *\<BizTalk Server のインストール フォルダー >*\HttpReceive\BTSHTTPReceive.dll とをクリックして**開く**をクリックし、 **ok**です。  
+    5.  をクリックして**参照**を表示する、**開く** ダイアログ ボックスに移動して *\<BizTalk Server のインストール フォルダー\>*\HttpReceive\BTSHTTPReceive.dll をクリック**開く**、をクリックして**OK**です。  
   
     6.  ためのオプションを有効にする**拡張機能の状態を許可 に設定** をクリック**OK**です。  
   
@@ -175,4 +175,4 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
 |503 サービス利用不可、その他 400 ～ 500 番台の大半の HTTP コード|ホストが実行されていることと、サービスが展開され、正しいポートにバインドされて開始されていることを確認します。|  
   
 ## <a name="see-also"></a>参照  
- [アダプタ サンプル – 使用状況](../core/adapter-samples-usage.md)
+ [アダプタ サンプル – 使用法](../core/adapter-samples-usage.md)

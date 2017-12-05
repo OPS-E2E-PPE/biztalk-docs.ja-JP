@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9210e8ecc251cee06dafda3aeb3111074521be1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e159734c7d6028eb7f54354140c40757cb212b3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-batch-schemas"></a>EDI のバッチ スキーマ
 保存されたインターチェンジが BizTalk Server で処理される際には、以下の 3 つ以上のスキーマが使用されます。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 |X12_BatchSchema|X12InterchangeXML|http://schemas.microsoft.com/Edi/X12_BatchSchema|  
 |Edifact_BatchSchema|EdifactInterchangeXML|http://schemas.microsoft.com/Edi/Edifact|  
   
- 受信パイプラインによって生成された XML インスタンス ドキュメントの種類は定数でなければ (\<エンコード > _BatchSchema.xml) し、この正規形式のスキーマを参照します。 このインスタンスはオーケストレーションのマップで使用できますが、使用前にドキュメントの種類と名前空間を変更して、必要な実際のスキーマをマップする必要があります。  
+ 受信パイプラインによって生成された XML インスタンス ドキュメントの種類は定数でなければ (\<エンコード\>_BatchSchema.xml) し、この正規形式のスキーマを参照します。 このインスタンスはオーケストレーションのマップで使用できますが、使用前にドキュメントの種類と名前空間を変更して、必要な実際のスキーマをマップする必要があります。  
   
  バッチ スキーマは BaseArtifacts.dll に配置されるので、プロジェクトのデザイン時に指定する必要はありません。  
   

@@ -19,11 +19,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f056b05c492e0ca4151c5a70652ee74ea46a464
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41956d9e10cba87e0e1a1f44d49dd8ec8b6039bc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httpsso-biztalk-server-sample"></a>HTTPSSO (BizTalk Server サンプル)
 HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタでエンタープライズ シングル サインオン (SSO) を使用する方法を示します。  
@@ -65,7 +65,7 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
  コマンド ライン ユーティリティ ssomanage.exe を使用して関連アプリケーションやユーザー マッピングの作成など、SSO を構成する方法を示すサンプルについては、次を参照してください。[管理 (BizTalk Server サンプル)](../core/manage-biztalk-server-sample.md)です。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \SSO\HTTPSSO\  
+ \<*パスのサンプル*\>\SSO\HTTPSSO\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -101,11 +101,11 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
   
     -   **Microsoft.BizTalk.ExplorerOM**です。 既定では、Microsoft.BizTalk.ExplorerOM.dll ファイルは、フォルダーにあります[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Developer Tools\\です。  
   
-    -   **Microsoft.BizTalk.SSOClient.Interop**です。 既定では、Microsoft.BizTalk.Interop.SSOClient.dll ファイル フォルダーにある、 \< *ProgramFiles*> でのシングル サインオン \Common Files\Enterprise\\です。  
+    -   **Microsoft.BizTalk.SSOClient.Interop**です。 既定では、Microsoft.BizTalk.Interop.SSOClient.dll ファイル フォルダーにある、 \< *ProgramFiles*\>でのシングル サインオン \Common Files\Enterprise\\です。  
   
      これにより、次のフォルダに実行可能ファイル SsoSample.exe が作成されます。  
   
-     \<*パスのサンプル*> \SSO\HTTPSSO\bin\Debug\  
+     \<*パスのサンプル*\>\SSO\HTTPSSO\bin\Debug\  
   
 ## <a name="running-this-sample"></a>このサンプルの実行  
   
@@ -116,7 +116,7 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
   
 1.  次のフォルダにある実行可能ファイル SsoSample.exe を実行します。  
   
-     \<*パスのサンプル*> \SSO\HTTPSSO\bin\Debug\  
+     \<*パスのサンプル*\>\SSO\HTTPSSO\bin\Debug\  
   
      このサンプルのウィザードが開きます。  
   
@@ -142,7 +142,7 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
   
 8.  実行される IIS、SSO、および BizTalk の各構成に対応する状態メッセージを確認します。 このフェーズで実行されるコードを検索することができます、 **IisConfigurator**、 **SsoConfigurator**、および**BtsConfigurator**ファイル SsoSample.cs で定義されたクラスです。 構成が完了した後にをクリックして**次**です。  
   
-9. ウィザード アプリケーションの最後のページ上の既定の設定を受け入れる**でブラウザーを開始**(チェック ボックスがオンし、テキスト ボックスに URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<メッセージ/>)、をクリックして**完了**です。  
+9. ウィザード アプリケーションの最後のページ上の既定の設定を受け入れる**でブラウザーを開始**(チェック ボックスがオンし、テキスト ボックスに URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?<message/>)、クリックして**完了**です。  
   
      Internet Explorer のインスタンスが開き、Northwinds SQL データベースの Employee テーブルに追加した従業員データのサンプルが表示されます。  
   
@@ -159,11 +159,11 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
   
 -   最初の仮想ディレクトリは Windows 統合認証で構成され、BizTalk HTTP 受信 ISAPI 拡張に対応します。 次のフォルダにある .dll ファイル BTSHTTPReceive.dll に関連付ける必要があります。  
   
-     \<*インストール パス*> \HttpReceive  
+     \<*インストール パス*\>\HttpReceive  
   
 -   2 番目の仮想ディレクトリは基本認証で構成され、ユーザーを認証するためにユーザー ID とパスワードを受け取るバックエンド システムをシミュレートします。 次のフォルダにある ASPX ファイル ValidateUser.aspx と EmployeeData.aspx のいずれかに関連付ける必要があります。  
   
-     \<*パスのサンプル*> \SSO\HTTPSSO\Scripts  
+     \<*パスのサンプル*\>\SSO\HTTPSSO\Scripts  
   
  SsoSample.exe ウィザード アプリケーションを使用して、1 つ以上の関連アプリケーションを構成できます。 これらの関連アプリケーションごとに、1 つまたは複数のユーザー マッピングを作成できます。 これらの各ユーザー マッピングは、Windows ユーザー アカウントを、特定のバックエンド システムへのアクセスに使用するアカウントにマップします。 このサンプルでは、そのアカウントは、実際のバックエンド システムをシミュレートする 2 番目の IIS 仮想ディレクトリでの認証に使用する、ローカル Windows アカウントです。  
   
@@ -171,7 +171,7 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
   
 -   Internet Explorer で、次の URL を直接参照します。  
   
-     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<メッセージ/>  
+     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?<message/>  
   
 -   ウィザード アプリケーションを再実行します。ただし、最初のページの構成チェック ボックスをすべてオフにします。  
   
@@ -194,4 +194,4 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
     ```  
   
 ## <a name="see-also"></a>参照  
- [SSO (BizTalk Server Samples フォルダ)](../core/sso-biztalk-server-samples-folder.md)
+ [SSO (BizTalk Server Samples フォルダー)](../core/sso-biztalk-server-samples-folder.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c33e49e82f9ebbf8856dd447989d7557558c0e4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c1900b0f775d918f7408ed581b35e6e143cd08d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuration-parameters-for-send-and-receive-adapters"></a>構成パラメーターを送信および受信アダプター
 このセクションでは、構成パラメーターを最小限に抑える下位層プロトコル (MLLP) アダプターの送受信を提供します。 これらのパラメーターは 2 つの型に分類されます。 文字をブロックし、ネットワーク接続のパラメーターです。  
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/20/2017
  パラメーターを設定、ネットワーク接続 MLLP トランスポートのプロパティのいずれかの送信ポートまたは受信場所が MLLP のトランスポートの種類を使用できます。 ためには、BizTalk Server 管理コンソールを開き、該当する場合に、送信ポートまたは受信場所のフォルダーに移動、特定の送信ポートを右クリックしてまたは受信場所をクリックして**プロパティ**をクリックして**構成**です。  
   
 ## <a name="block-characters"></a>文字のブロック  
- これらのパラメーターは、特殊文字を HL7 メッセージ MLLP アダプター経由で送信または受信したを囲む必要があります。 これらの文字は、次の形式で、ブロックを形成: \<SB >*DDD*\<EB >\<CR > ここで、 *DDD*メッセージ データの略\<SB> 開始ブロック文字で\<EB > end ブロックの文字と\<CR > は、復帰、戻り値。  
+ これらのパラメーターは、特殊文字を HL7 メッセージ MLLP アダプター経由で送信または受信したを囲む必要があります。 これらの文字は、次の形式で、ブロックを形成: \<SB\>*DDD*\<EB\>\<CR\>ここで、 *DDD*意味メッセージ データの\<SB\>開始ブロック文字で\<EB\> end ブロックの文字と\<CR\>は、復帰、戻り値。  
   
 |パラメーター|新しく使用する機能|  
 |---------------|---------|  
-|**\<CR > キャリッジ リターン**|バイト値 (16 進数形式) をキャリッジ リターン (末尾バイトの後に 2 番目のバイト ラッパー) を使用します。 省略可。|  
-|**\<EB > End ブロック文字**|末尾バイト (メッセージ トレーラー ラッパー) を使用するバイト値。 ASCII \<FS > など、 \<1 c >。|  
-|**\<SB > 開始ブロック文字**|先頭バイト (メッセージ ヘッダーのラッパー) を使用するバイト値。 ASCII \<VT > など、 \<0b >。|  
+|**\<CR\>キャリッジ リターン**|バイト値 (16 進数形式) をキャリッジ リターン (末尾バイトの後に 2 番目のバイト ラッパー) を使用します。 省略可。|  
+|**\<EB\> End ブロック文字**|末尾バイト (メッセージ トレーラー ラッパー) を使用するバイト値。 ASCII \<FS\>など、 \<1 c\>です。|  
+|**\<SB\>開始ブロック文字**|先頭バイト (メッセージ ヘッダーのラッパー) を使用するバイト値。 ASCII \<VT\>など、 \<0b\>です。|  
   
 ## <a name="deliverymode"></a>DeliveryMode  
  インスタンス ファイルが順番に、または誤った順序で、順序どおりの順序に配信されるかどうかを制御配信モード パラメーターを使用するとします。 各受信場所がファイルのシーケンス インスタンスの独自の配信します。  
@@ -65,4 +65,4 @@ ms.lasthandoff: 09/20/2017
  [MLLP でエンコードされたメッセージの処理](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   
  [MLLP の受信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)   
  [MLLP 送信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-send-adapter-processing.md)   
- [Ack を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)
+ [ACK を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e47c269516ba73ab1e61664d200db207110e98e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c1b69c522f01f2561ea8145c11dec3e36b5cd4e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-stored-procedures-having-a-for-xml-clause-in-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server での FOR XML 句を持つストアド プロシージャを実行します。
 SQL SELECT ステートメントでは、行セットではなく XML としてクエリ結果を返す FOR XML 句を持つことができます。 また、ストアド プロシージャを FOR XML 句を伴う SELECT ステートメントを持つことができます。 [FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)の詳細についてはします。
@@ -86,7 +86,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
          これを行う sqltypes.xsd スキーマは、BizTalk プロジェクトに既に追加されたためです。  
   
-    4.  スキーマのターゲット名前空間を指定します。 クリックして、 **\<スキーマ >**ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。 このトピックの付与と名前空間`http://ForXmlStoredProcs/namespace`です。  
+    4.  スキーマのターゲット名前空間を指定します。 クリックして、 **\<スキーマ\>**ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。 このトピックの付与と名前空間`http://ForXmlStoredProcs/namespace`です。  
   
 ## <a name="generating-schema-for-the-request-message-to-invoke-the-stored-procedure"></a>ストアド プロシージャを呼び出す要求メッセージのスキーマを生成します。  
  使用することが要求メッセージのスキーマを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]で BizTalk プロジェクトから[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 このトピックでは、GET_EMP_DETAILS_FOR_XML ストアド プロシージャのスキーマを生成します。 使用してスキーマを生成する方法の詳細についての[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を参照してください[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)です。  
@@ -227,9 +227,9 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
  オーケストレーションはメッセージを使用して、SQL Server データベースに送信します。 SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージ用の SQL Server データベースからの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Root xmlns="http://ForXmlStoredProcs/namespace">  
-  \<Adapt_Doc.dbo.Employee Employee_ID="10765" Name="John" Designation="asdfaf" Salary="3434.00" Last_Modified="AAAAAAAANso=" Status="0" xmlns="" />  
+  <Adapt_Doc.dbo.Employee Employee_ID="10765" Name="John" Designation="asdfaf" Salary="3434.00" Last_Modified="AAAAAAAANso=" Status="0" xmlns="" />  
 </Root>  
 ```  
   
@@ -239,4 +239,4 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
  展開して、BizTalk プロジェクトを構成することが後、は、バインド ファイルと呼ばれる XML ファイルに構成設定をエクスポートできます。 バインド ファイルを生成したできるように、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありません、ファイルから構成設定をインポートすることができます。 バインド ファイルの詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)です。  
   
 ## <a name="see-also"></a>参照  
-[SQL アダプターを使用して BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[SQL アダプターを使用して BizTalk アプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

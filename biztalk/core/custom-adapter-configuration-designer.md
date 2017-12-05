@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e876892b3eef9e5dd47c51c64997d84a0f0dc98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5cff46f95062eff856653b6114f76f89ac17efd1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="custom-adapter-configuration-designer"></a>カスタム アダプター構成デザイナー
 .NET クラス ライブラリには、カスタム デザイナーを構築する必要があります。 カスタム デザイナーは、アダプターの DLL に組み込むことも、個別の DLL として構築することもできます。 デザイナー アセンブリを構築した後は、説明やカテゴリと同様に、装飾を介して参照する必要があります。 参照は、使用するアセンブリの指定、および完全修飾されたクラス名の指定によって実行します。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
  アセンブリをグローバル アセンブリ キャッシュに追加するには、そのアセンブリをグローバル アセンブリ キャッシュにドラッグするか、GACUTIL を使用します。  
   
- このデザイナーを使用するには、装飾の値として、完全修飾されたクラス名、コンマ、グローバル アセンブリ キャッシュのアセンブリ エントリ (アセンブリ名、バージョン、カルチャ、公開キー トークン) を指定します。 使用して\<エディター > の文字装飾を**UITypeEditor**実装と\<コンバーター > の文字装飾を**TypeConverter**実装します。  
+ このデザイナーを使用するには、装飾の値として、完全修飾されたクラス名、コンマ、グローバル アセンブリ キャッシュのアセンブリ エントリ (アセンブリ名、バージョン、カルチャ、公開キー トークン) を指定します。 使用して\<エディター\>の装飾**UITypeEditor**実装と\<コンバーター\>の装飾**TypeConverter**の実装.  
   
  XSD ファイルでカスタム デザイナーを初期化する方法を次のコード例に示します。  
   
@@ -75,4 +75,4 @@ ms.lasthandoff: 09/20/2017
  [アダプター構成のカスタム ドロップダウン エディター](../core/custom-drop-down-editor-for-adapter-configuration.md)   
  [アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md)   
  [アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md)   
- [アダプターの高度な構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)
+ [アダプターの詳細構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ce151a83389fe5f0b3884446b5b793d1b58c618
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b00fc7d49024cec6f9c300444646da82069e16cc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-adding-project-references"></a>レッスン 2: プロジェクト参照の追加
 プロジェクト参照を追加する、パイプライン Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll ファイル内にある既定の実行時のスキーマにアクセスできるようにします。 このアセンブリ ファイルには、メッセージ型の解決に必要な昇格させたプロパティを持つヘッダー スキーマが含まれています。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [参照の追加] ダイアログ ボックス、**参照**タブです。  
   
-3.  参照  **\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\Assemblies * *。  
+3.  参照  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\Assemblies * *。  
   
 4.  選択、 **Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**ファイル。  
   

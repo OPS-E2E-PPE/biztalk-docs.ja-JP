@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c38a58e376bbc8908ff0fe578aa54cbb009c58d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d8489c484bdb88a292b998d31e7c6de90e0937c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-enabling-biztalk-server-to-send-and-receive-messages-from-salesforce"></a>BizTalk Server で Salesforce からのメッセージの送受信を有効にする手順 3 d:
 REST インターフェイスを使用してメッセージを送信する際は、Salesforce で認証する必要があります。 Salesforce でサポートされている REST 呼び出しのための認証方法は、Salesforce の REST インターフェイスの起動に使用する WCF-WebHttp アダプターの既定では利用できません。 そのため、カスタムの WCF エンドポイントの動作を作成し、Salesforce REST インターフェイスを起動するよう構成した WCF-WebHttp 送信アダプターにアタッチします。  
@@ -231,7 +231,7 @@ REST インターフェイスを使用してメッセージを送信する際は
   
     -   `BehaviorExtensionElement` から派生するクラスを作成する  
   
-    -   BehavaiorExtensionElement を登録、\<拡張子 >\\< behaviorExtensions\>要素名を使用して、machine.config 内の要素。  
+    -   BehavaiorExtensionElement を登録、\<拡張\>\\< behaviorExtensions\>要素名を使用して、machine.config 内の要素。  
   
      さらに、WCF-WebHttp アダプターの構成 UI から使用できるように、このクラスに構成プロパティを追加します。  
   
@@ -320,4 +320,4 @@ REST インターフェイスを使用してメッセージを送信する際は
  このトピックでは、Salesforce で認証するためのカスタム動作を追加し、Salesforce 応答に名前空間を追加するためのカスタム パイプラインを追加しました。 これらのカスタム コンポーネントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで物理ポートを構成する際に使用します。  
   
 ## <a name="see-also"></a>参照  
- [手順 3: Visual Studio での BizTalk Server ソリューションを作成します。](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)
+ [手順 3: Visual Studio での BizTalk Server ソリューションの作成](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)

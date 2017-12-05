@@ -20,11 +20,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b00e29b51eac2c58ac7843cca75994efceb4085
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a9be49eab2560cc9e9eab5a29456a27f92760e5d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="lobwebapplication"></a>LOBWebApplication
 LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web アプリケーションをシミュレートして、ASPX ページから取引先にアクションまたは応答メッセージを送信するために使用します。  
@@ -32,7 +32,7 @@ LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web ア
  ASPX ページをセットアップした後、ページを起動してメッセージのパラメーター (ホーム組織と取引先組織、PIP コード、PIP バージョン、PIP インスタンス ID、およびメッセージ カテゴリ) を入力します。 その後、サービス コンテンツを変更してメッセージを送信できます。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*> \Program Files\Microsoft BizTalk 2013 Accelerator for rosettanet \sdk\lobwebapplication  
+ \<*ドライブ*\>\Program Files\Microsoft BizTalk 2013 Accelerator for rosettanet \sdk\lobwebapplication  
   
 ## <a name="adding-a-virtual-server-for-lobwebapplication"></a>LOBWebApplication 用の仮想サーバーの追加  
   
@@ -40,13 +40,13 @@ LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web ア
   
 1.  をクリックして**開始**、 をポイント**シリアルキー**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
   
-2.  インフォメーション サービス マネージャで、展開**\<コンピューター名 > (ローカル コンピューター)**、展開**Web サイト**、し、右クリックし、**既定の Web サイト**です。  
+2.  インフォメーション サービス マネージャで、展開**\<コンピューター名\>(ローカル コンピューター)**、展開**Web サイト**、し、右クリックし、 **Default Web Site**.  
   
 3.  をポイント**新規**、クリックして**仮想ディレクトリ**です。  
   
 4.  **仮想ディレクトリの作成ウィザード** ページで、をクリックして**次**など、サイトのエイリアスを入力し、 **LOBWebApplication**です。  
   
-5.  **Web サイトのコンテンツのディレクトリ** ページで **参照**に移動\<*ドライブ*> \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\LOBWebApplication、 をクリックして**OK**、クリックして**次へ**です。  
+5.  **Web サイトのコンテンツのディレクトリ** ページで、をクリックして**参照**に移動\<*ドライブ*\>\Program Files\Microsoft BizTalk 2013 Accelerator 用\Sdk\lobwebapplication、 をクリックして**OK**、順にクリック**次へ**です。  
   
 6.  **仮想ディレクトリのアクセス許可**] ページで、[**読み取り**と**スクリプトを実行する**、順にクリック**[次へ]**です。 **[完了]**をクリックします。  
   
@@ -62,18 +62,18 @@ LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web ア
   
 #### <a name="to-build-lobwebapplication"></a>LOBWebApplication を構築するには  
   
-1.  [!INCLUDE[vs2012](../../includes/vs2012-md.md)]を起動します。  
+1.  Visual Studio を起動します。  
   
 2.  **ファイル**、 をポイント**開く**、順にクリック**ソリューションを開く**です。  
   
-3.  移動\<*ドライブ*> \Program Files\Microsoft BizTalk 2013 Accelerator for rosettanet \sdk\lobwebapplication、選択**LOBWebApplication.sln**、クリックして**開いている**です。  
+3.  移動\<*ドライブ*\>\Program Files\Microsoft BizTalk 2013 Accelerator for rosettanet \sdk\lobwebapplication、選択**LOBWebApplication.sln**をクリックして**開いている**です。  
   
     > [!NOTE]
     >  LOBWebApplication 用の仮想サーバーを追加していない場合、ソリューションは [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で正常に開きません。  
   
 4.  右クリック**参照**、クリックして**参照の追加**です。  
   
-5.  **参照の追加**ダイアログ ボックスで、をクリックして**参照**に移動\<*ドライブ*>: \Program Files\Microsoft BizTalk 2013 Accelerator for rosettanet \binMicrosoft.Solutions.BTARN.ConfigurationManager.dll および Microsoft.Solutions.BTARN.Shared.dll ファイルを選択し、クリックして**開く**です。  
+5.  **参照の追加**ダイアログ ボックスで、をクリックして**参照**に移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk 2013 Accelerator 用Rosettanet \bin、Microsoft.Solutions.BTARN.ConfigurationManager.dll および Microsoft.Solutions.BTARN.Shared.dll ファイルを選択し、をクリックして**開く**です。  
   
 6.  右クリック**LOBWebApplication**、クリックして**ビルド**です。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ab7f1c75baf5a974fdbc10deb1651fcce1c7d51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab603f12e1f2c431f83af00dc79b57a9e416c251
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario"></a>手順 1: 構成用のアダプターを SWIFT、リアルタイムのシナリオの対話
 次の手順では、Interact アダプターの送信ハンドラーを構成する方法について説明します。 一覧された要件を完了する必要があります、プロシージャを開始する前に[、チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)です。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
-    |**引数**|次の引数を入力: **SagMessagePartner**\<SAG で対話するクライアントのメッセージのパートナーが作成された >**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
+    |**引数**|次の引数を入力: **SagMessagePartner**\<SAG で対話するクライアントのメッセージのパートナーが作成された\>**注:**引数で、クライアントは、MessagePartner します。SAG で構成されます。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
     |**LogMessageBody**|ドロップダウン リストから選択`FALSE`です。 **注:**に設定した場合`TRUE`、追跡データベースにメッセージ本文を保存します。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
     |**し**|ドロップダウン リストから選択`TRUE`です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
  [手順 1: 構成用のアダプターを SWIFT、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)   
  [手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-real-time-scenario.md)   
  [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [手順 4: テスト、リアルタイムのエンド ツー エンド シナリオの対話](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)
+ [手順 4: InterAct リアルタイム エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)

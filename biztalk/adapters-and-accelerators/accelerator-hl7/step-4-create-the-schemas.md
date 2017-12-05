@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbc70a0a00916f0e2b76f4245f80d488bf026bc8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ce9ea850632327e257909e1c7d4b60117865e46
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-create-the-schemas"></a>手順 4: スキーマを作成します。
 この手順で新しいプロジェクトを作成する (**BTAHL7 プロジェクト**) このプロジェクトの成果物を含む: スキーマ、マップ、およびオーケストレーションです。 スキーマを作成し、(**Doorbell.xsd**) を既存のスキーマを選択して受信の XML でエンコードされたメッセージ (**ADT_A04_22_GLO_DEF.xsd**) HL7 エンコードされたメッセージの送信。 これらのスキーマを使用して、オーケストレーション内で交換されるメッセージの構造を定義します。  
@@ -37,12 +37,12 @@ ms.lasthandoff: 09/20/2017
   
 5.  **ソリューション**フィールドで、**ソリューションに追加**です。  
   
-6.  **場所**フィールドであることを確認  **\<*ドライブ*>: \Tutorial\BTAHL7V22Common** はパスです。  
+6.  **場所**フィールドであることを確認  **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common** はパスです。  
   
 7.  をクリックして**OK**新しいプロジェクトを開きます。  
   
     > [!NOTE]
-    >  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーに新しいプロジェクトを追加します。 プロジェクト フォルダーを追加して内のファイルを作成、 \<*ドライブ*>: \Tutorial\\**BTAHL7V22Common**プロジェクト フォルダーです。  
+    >  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーに新しいプロジェクトを追加します。 プロジェクト フォルダーを追加して内のファイルを作成、 \<*ドライブ*\>: \Tutorial\\**BTAHL7V22Common**プロジェクト フォルダーです。  
   
 8.  ソリューション エクスプ ローラーで右クリックし、 **BTAHL7 プロジェクト**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。  
   
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
   
 11. をクリックして**追加**に空のスキーマを BizTalk エディターで開きます。  
   
-12. **\<スキーマ >**ツリーで、右クリックし、**ルート**ノードをクリックして**の名前を変更**です。  
+12. **\<スキーマ\>**ツリーで、右クリックし、**ルート**ノードをクリックして**の名前を変更**です。  
   
 13. 型**DoorbellRoot**新しい名前は、およびキーを押します**Enter**です。  
   
@@ -89,9 +89,9 @@ ms.lasthandoff: 09/20/2017
   
 21. ソリューション エクスプ ローラーで、[ **BTAHL7 プロジェクト**を右クリックして**参照**] をクリックし、**参照の追加**です。  
   
-22. [参照の追加] ダイアログ ボックス、**参照**タブです。**検索対象の**ボックスに移動\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Drop\Bin です。 をクリックして**Microsoft.Solutions.BTAHL7.HL7Schemas.dll**、 をクリックして**追加**、順にクリック**OK**です。  
+22. [参照の追加] ダイアログ ボックス、**参照**タブです。**検索対象の**ボックスに移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド チュートリアルのアクセラレータ\Tutorial_BTAHL7Drop\Bin です。 をクリックして**Microsoft.Solutions.BTAHL7.HL7Schemas.dll**、 をクリックして**追加**、順にクリック**OK**です。  
   
  進みます[手順 5: スキーマのプロパティを昇格させる](../../adapters-and-accelerators/accelerator-hl7/step-5-promote-schema-properties.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

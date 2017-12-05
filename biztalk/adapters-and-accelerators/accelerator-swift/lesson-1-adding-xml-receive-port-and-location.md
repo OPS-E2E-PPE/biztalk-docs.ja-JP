@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 186cbb4e021a281ab834f04097f005c2597fbd37
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d01f9457404e135027f35f1402575efeec311e2e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-xml-receive-port-and-location"></a>レッスン 1: XML の受信ポートと受信場所を追加します。
 受信ポートとは、類似する受信場所の論理的なグループです。 受信場所は、受信メッセージとメッセージを処理するために使用するパイプラインの特定のアドレス (URL またはファイルの場所) などを定義します。  
@@ -51,9 +51,9 @@ ms.lasthandoff: 09/20/2017
   
 10. クリックして、**構成**型のドロップダウン リストの右側にあるボタンです。  
   
-11. [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。 移動、 **\<ドライブ >: \Labs**フォルダー、およびクリック**新しいフォルダーの作成**です。  
+11. [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。 移動、 **\<ドライブ\>: \Labs**フォルダー、およびクリック**新しいフォルダーの作成**です。  
   
-12. フォルダーの参照 ダイアログ ボックスで、作成、**受信**フォルダー **\<ドライブ >: \Labs**、し、作成、 **XMLFile**フォルダー  **\<ドライブ >: \Labs\Inbound**です。 **[OK]**をクリックします。  
+12. フォルダーの参照 ダイアログ ボックスで、作成、**受信**フォルダー **\<ドライブ\>: \Labs**、し、作成、 **XMLFile** 内のフォルダー**\<ドライブ\>: \Labs\Inbound**です。 **[OK]**をクリックします。  
   
 13. FILE トランスポートのプロパティ ダイアログ ボックスでいることを確認 **\*.xml**で入力した、**ファイル マスク**ボックスし、をクリックして**OK**です。  
   

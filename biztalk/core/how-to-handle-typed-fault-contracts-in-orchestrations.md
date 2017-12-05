@@ -17,14 +17,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89de313960324ea39ffc8e4eaa4905849dc38b8a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a7643c4a39785018368572d721eed3ef6545c6b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-handle-typed-fault-contracts-in-orchestrations"></a>オーケストレーション内の型指定されたエラー コントラクトを処理する方法
-このトピックでは、オーケストレーション内から WCF サービスを使用する際に、型指定されたエラー コントラクトを処理する方法について説明します。 WCF サービスを使用している必要があります、オーケストレーションで型指定されたエラー例外を処理する、 **FaultContractAttribute**サービス操作に適用される以外の場合は、エラーをスローしてを使用してそのため、 **FaultException**\<T > T が任意の有効なデータ コントラクトまたは WCF サービスからのシリアル化可能な型を指定できます。  
+このトピックでは、オーケストレーション内から WCF サービスを使用する際に、型指定されたエラー コントラクトを処理する方法について説明します。 WCF サービスを使用している必要があります、オーケストレーションで型指定されたエラー例外を処理する、 **FaultContractAttribute**サービス操作に適用される以外の場合は、エラーをスローしてを使用してそのため、 **FaultException**\<T\> T が任意の有効なデータ コントラクトまたは WCF サービスからのシリアル化可能な型を指定できます。  
   
 ## <a name="procedures"></a>手順  
   
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクト、ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**追加**、クリックして**生成した項目の追加**です。  
   
-2.  **生成した項目の追加 - \<** *プロジェクト名* **>**   ダイアログ ボックスで、**テンプレート** セクションで、選択**Consume WCF サービス**、クリックして**追加**です。  
+2.  **生成した項目の追加 - \<** *プロジェクト名* **\>**   ダイアログ ボックスで、**テンプレート** セクションで、選択**Consume WCF サービス**、クリックして**追加**です。  
   
 3.  **BizTalk WCF サービス使用ウィザードへようこそ** ページで、をクリックして**次**です。  
   

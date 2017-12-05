@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46bbb5a1c796149f762ce438aed7df5c256bf465
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e48eb329a50dda26555e76dd54dd4f4d33cb2c98
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuration-parameters-that-affect-adapter-performance"></a>アダプターのパフォーマンスに影響する構成パラメーター
 このセクションでは、BizTalk Server アダプターのパフォーマンスに影響する可能性のある構成設定について説明します。  
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/20/2017
   
 |**パラメーター**|**構成ファイルのセクション**|**既定値**|**推奨値**|  
 |-------------------|---------------------------------------|-----------------------|---------------------------|  
-|**minFreeThreads**<br /><br /> 新しい要求を実行できるようにするフリー スレッドの最小数。 ASP.NET は、処理の完了に追加のスレッドが必要な要求のために、この数のフリー スレッドを維持します。|\<httpRuntime >|8|88 * Web アプリケーションをホストしているサーバー上のプロセッサ数。|  
-|**minFreeLocalRequestFreeThreads**<br /><br /> 新しいローカル要求を実行できるようにするために、ASP.NET で保持できるフリー スレッドの最小数。 処理中にローカル ホストに対して子要求が発行される場合に備えて、ローカル ホストから着信する要求のために、この数のスレッドが予約されます。 これにより、Web サーバーへの再帰的な再入でデッドロックが発生するのを防ぐことができます。|\<httpRuntime >|4|76 * Web アプリケーションをホストしているサーバー上のプロセッサの数。|  
-|**executionTimeout**<br /><br /> ASP.NET によって自動的にシャットダウンされるまでに要求を実行できる最大秒数を示します。|\<httpRuntime >|90|90|  
-|**maxconnection**<br /><br /> 特定の IP アドレスに対して作成できる接続数を決定します。|\<connectionManagement >|2<br /><br /> これを 2 の値に設定すると、HTTP 1.1 用 IETF RFC の仕様に準拠し、ユーザー シナリオに適しますが、高スループットには適していません。|12 * Web アプリケーションをホストしているサーバー上のプロセッサの数。|  
-|**maxWorkerThreads**<br /><br /> プロセスで使用される、CPU ごとのワーカー スレッドの最大数を構成します。|\<processModel >|20|100**注:**この値が暗黙的に乗算サーバー上のプロセッサの数。|  
-|**minWorkerThreads**|\<processModel >|1|**maxWorkerThreads** /2**注:** minWorkerThreads パラメーターが既定では、構成ファイルではありません。 追加する必要があります。 **注:**この値が暗黙的に乗算サーバー上のプロセッサの数。|  
-|**maxIoThreads**<br /><br /> 使用される完了スレッド数を制限するために ASP.NET によって使用されます。|\<processModel >|20|100<br /><br /> この値にはサーバー上のプロセッサの数が暗黙的に乗算されます。|  
+|**minFreeThreads**<br /><br /> 新しい要求を実行できるようにするフリー スレッドの最小数。 ASP.NET は、処理の完了に追加のスレッドが必要な要求のために、この数のフリー スレッドを維持します。|\<httpRuntime\>|8|88 * Web アプリケーションをホストしているサーバー上のプロセッサ数。|  
+|**minFreeLocalRequestFreeThreads**<br /><br /> 新しいローカル要求を実行できるようにするために、ASP.NET で保持できるフリー スレッドの最小数。 処理中にローカル ホストに対して子要求が発行される場合に備えて、ローカル ホストから着信する要求のために、この数のスレッドが予約されます。 これにより、Web サーバーへの再帰的な再入でデッドロックが発生するのを防ぐことができます。|\<httpRuntime\>|4|76 * Web アプリケーションをホストしているサーバー上のプロセッサの数。|  
+|**executionTimeout**<br /><br /> ASP.NET によって自動的にシャットダウンされるまでに要求を実行できる最大秒数を示します。|\<httpRuntime\>|90|90|  
+|**maxconnection**<br /><br /> 特定の IP アドレスに対して作成できる接続数を決定します。|\<connectionManagement\>|2<br /><br /> これを 2 の値に設定すると、HTTP 1.1 用 IETF RFC の仕様に準拠し、ユーザー シナリオに適しますが、高スループットには適していません。|12 * Web アプリケーションをホストしているサーバー上のプロセッサの数。|  
+|**maxWorkerThreads**<br /><br /> プロセスで使用される、CPU ごとのワーカー スレッドの最大数を構成します。|\<processModel\>|20|100**注:**この値が暗黙的に乗算サーバー上のプロセッサの数。|  
+|**minWorkerThreads**|\<processModel\>|1|**maxWorkerThreads** /2**注:** minWorkerThreads パラメーターが既定では、構成ファイルではありません。 追加する必要があります。 **注:**この値が暗黙的に乗算サーバー上のプロセッサの数。|  
+|**maxIoThreads**<br /><br /> 使用される完了スレッド数を制限するために ASP.NET によって使用されます。|\<processModel\>|20|100<br /><br /> この値にはサーバー上のプロセッサの数が暗黙的に乗算されます。|  
   
  Web サービスをホストしているコンピューターで ASP.NET 2.0 以降を実行し、設定することができるかどうか**autoConfig = true**で最適にするのには、次の設定を自動的に構成を Machine.config ファイルの processModel セクションマシン構成に基づいたパフォーマンス:  
   
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **MinLocalRequestFreeThreads** httpRuntime 要素の属性です。  
   
--   **MaxConnection**の属性、 \<connectionManagement > 要素 (ネットワーク設定)。  
+-   **MaxConnection**の属性、 \<connectionManagement\>要素 (ネットワーク設定)。  
   
 > [!NOTE]
 >  **ProcessModel**セクションでは、Machine.config ファイル内でのみ設定することができ、サーバーで実行されているすべての ASP.NET アプリケーションに影響します。  
@@ -80,4 +80,4 @@ ms.lasthandoff: 09/20/2017
 3.  レジストリ エディターを閉じます。  
   
 ## <a name="see-also"></a>参照  
- [パフォーマンスと容量の計画](../core/performance-and-capacity-planning.md)
+ [パフォーマンスおよび容量の計画](../core/performance-and-capacity-planning.md)

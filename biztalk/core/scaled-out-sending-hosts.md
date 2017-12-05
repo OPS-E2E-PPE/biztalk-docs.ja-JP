@@ -28,11 +28,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1fb8ac3fe3752702ed3e1aa2795e521d7173618
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 50659e267731caafe4bad6dabe89944cb16c0c98
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="scaled-out-sending-hosts"></a>送信ホストのスケールアウト
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信機能に高い可用性を確保するには、送信ホストをスケールアウトします。 メッセージを送信するためのホストにコンピューターを追加し、複数の送信ホスト インスタンスを実行することによって冗長性と可用性を高めることができます。  
@@ -50,8 +50,8 @@ ms.lasthandoff: 09/20/2017
  MSMQ 送信アダプターの高可用性を確保するためには、MSMQ サービスをクラスター化し、このクラスター化した MSMQ サービスと同じグループとなるように BizTalk ホストをクラスター化して構成します。さらに、MSMQ 送信ハンドラーが、このクラスター化された BizTalk ホストで実行されるように構成する必要があります。 MSMQ アダプターによって開始されたトランザクションの送信の一貫性を確保するは、これを行う必要があります。 詳細については、次を参照してください。[化されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)です。  
   
 ### <a name="high-availability-for-the-windows-sharepoint-services-send-adapter"></a>Windows SharePoint Services 送信アダプターの高可用性  
- Windows SharePoint Services 送信アダプターに高可用性を確保するには、送信ホストに複数のコンピューターを追加し、各ホスト コンピューターの送信ポートで、同じドキュメント ライブラリが参照されるように構成します。 Windows SharePoint Services アダプターは、SharePoint コンピューターに BizTalk がインストールされている Windows SharePoint Services web サービスを呼び出すことによって SharePoint にメッセージを送信します。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]SharePoint の NLB 環境を指す HTTP URL に同じメッセージをプッシュする複数のホスト インスタンスで、同じ送信ポートを実行することによって、SharePoint 受信アダプターの高可用性を提供します。  
+ Windows SharePoint Services 送信アダプターに高可用性を確保するには、送信ホストに複数のコンピューターを追加し、各ホスト コンピューターの送信ポートで、同じドキュメント ライブラリが参照されるように構成します。 Windows SharePoint Services アダプターは、SharePoint コンピューターに BizTalk がインストールされている Windows SharePoint Services web サービスを呼び出すことによって SharePoint にメッセージを送信します。 BizTalk Server は、SharePoint の NLB 環境を指す HTTP URL に同じメッセージをプッシュする複数のホスト インスタンスで、同じ送信ポートを実行することによって、SharePoint 受信アダプターの高可用性を提供します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk ホストの高可用性を実現します。](../core/providing-high-availability-for-biztalk-hosts.md)   
- [クラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)
+ [クラスター化されたホストでのアダプター ハンドラーの実行に関する注意点](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c9953bb5e8b1e9827189e5b618f2760297c5678
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f65b98871f054d96caa278e48de19ad669157b1f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-api-biztalk-server-sample"></a>BAM API (BizTalk Server サンプル)
 BAM API サンプルでは、BAM API の呼び出しを監視することが重要な情報を保存するアプリケーションに組み込む方法を示します。  
@@ -97,7 +97,7 @@ BAM API サンプルでは、BAM API の呼び出しを監視することが重�
  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ソリューションに加えて、このサンプルにはアクティビティを定義する Microsoft [!INCLUDE[btsExcel](../includes/btsexcel-md.md)] ファイルも含まれています。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルを見つけることができます*\<サンプル パス >*\BAM\BamApiSample です。  
+ このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamApiSample です。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -124,16 +124,16 @@ BAM API サンプルでは、BAM API の呼び出しを監視することが重�
   
 #### <a name="to-run-the-bam-api-sample"></a>BAM API サンプルを実行するには  
   
-1.  コマンド プロンプトを開き、実行*\<サンプル パス >*\BAM\ BamApiSample\setup.bat です。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。  
+1.  コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\ BamApiSample\setup.bat です。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。  
   
-2.  開始[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開き、 *\<サンプル パス >*\BAM\ BamApiSample\BamApiSample.sln ソリューションです。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者として [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を起動します。  
+2.  開始[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開き、 *\<サンプル パス\>*\BAM\ BamApiSample\BamApiSample.sln ソリューションです。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者として [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を起動します。  
   
     > [!IMPORTANT]
     >  BamApiSample.cs ファイルの `//#define Interceptor` の行をコメント化します。この行から "//" を削除しないでください。 BAM API サンプルでは、`#if Interceptor` プリプロセッサ ディレクティブ内にないコードのみを使用します。  
   
 3.  ソリューションをビルドします。  
   
-4.  実行*\<サンプル パス >*\BAM\BamApiSample\bin\debug\BamApiSample.exe です。  
+4.  実行*\<パスのサンプル\>*\BAM\BamApiSample\bin\debug\BamApiSample.exe です。  
   
      出力は、次のようになります。  
   
@@ -163,10 +163,10 @@ BAM API サンプルでは、BAM API の呼び出しを監視することが重�
   
 2.  SQL Server Management Studio で、サーバーを展開し、**データベース**、展開**BAMPrimaryImport**の順に展開および**テーブル**です。  
   
-3.  右クリック**dbo.bam_BAMApiInvoice_Active**  をクリックし、**テーブルを開く**です。 使用している場合[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]をクリックして**上位 1000 行を選択して**です。  
+3.  右クリック**dbo.bam_BAMApiInvoice_Active**  をクリックし、**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_BAMApiInvoice_Active テーブルの内容が右側のウィンドウに表示されます。 テーブルの各行は、開始されているが、完了していない BAMApiInvoice アクティビティを表します。  
   
-4.  右クリック**dbo.bam_BAMApiPo_Completed**  をクリックし、**テーブルを開く**です。 使用している場合[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]をクリックして**上位 1000 行を選択して**です。  
+4.  右クリック**dbo.bam_BAMApiPo_Completed**  をクリックし、**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_BAMApiPo_Completed テーブルの内容が右側のウィンドウに表示されます。 テーブルの各行は、完了した BAMApiPo アクティビティを表します。

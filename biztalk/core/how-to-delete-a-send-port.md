@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f55b4e08fa03380c3361a44b7989301b606732d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63355f742f12fbbaf57ccde7a1406dbb694ee073
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-delete-a-send-port"></a>送信ポートを削除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートを BizTalk アプリケーションから削除する方法について説明します。 送信ポートを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも送信ポート グループが削除されます。  
@@ -48,9 +48,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで、[[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理]、[BizTalk グループ]、[アプリケーション] の順に展開し、削除する送信ポートを含むアプリケーションを展開します。  
+2.  コンソール ツリーで、BizTalk Server 管理コンソールを展開し、BizTalk グループを展開し、アプリケーションを展開およびを削除する送信ポートを含んでいるアプリケーションの順に展開  
   
 3.  をクリックして**送信ポート**送信ポートを右クリックし、クリックして**削除**です。  
   
 ## <a name="see-also"></a>参照  
- [作成して、送信ポートの構成](../core/creating-and-configuring-send-ports.md)
+ [送信ポートの作成および構成](../core/creating-and-configuring-send-ports.md)

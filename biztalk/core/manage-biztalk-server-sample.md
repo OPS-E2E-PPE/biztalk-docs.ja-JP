@@ -17,11 +17,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15a94bf916550d9a2eada9b8f354432b4c154ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4234614cc9f00809f8922999ae96e6f254989c6a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="manage-biztalk-server-sample"></a>管理 (BizTalk Server サンプル)
 シングル サインオン (SSO) 管理のサンプルは、以下の種類の管理操作を実行するために、コマンド ライン ユーティリティ ssomanage.exe で使用できる .xml ファイルを構成する方法を示します。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
  このサンプルには、上記の種類の操作のそれぞれに対する XSD とサンプル .xml ファイルのペアが含まれています。 サンプル .xml ファイルの値は有効ではありません。 各自の要件に合わせて値を変更する必要があります。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\SSO\Manage\  
+ *\<パスのサンプル\>*\SSO\Manage\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -95,4 +95,4 @@ ms.lasthandoff: 09/20/2017
  このサンプルに付属しているサンプル .xml ファイルを変更した後、特に変更によってファイルに機密情報を追加する場合は、これらのファイルをファイル システム内で十分に保護してください。 たとえば、これらのファイルを不注意で共有ファイルに格納しないようにしてください。  
   
 ## <a name="see-also"></a>参照  
- [SSO (BizTalk Server Samples フォルダ)](../core/sso-biztalk-server-samples-folder.md)
+ [SSO (BizTalk Server Samples フォルダー)](../core/sso-biztalk-server-samples-folder.md)

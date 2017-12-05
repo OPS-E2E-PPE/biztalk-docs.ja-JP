@@ -20,11 +20,11 @@ caps.latest.revision: "54"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea377f83f6e9c104d1bbd0b2e59923fb11f8fe65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 611544e77de738c904fa673b56dbec75fd17d4bd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-destination-system-for-log-shipping"></a>ログ配布用に送信先システムを構成する方法
 ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。 ログ配布を使用すると、送信元システムのトランザクション ログを送信先システムに自動的に送信できます。 送信先システムは、トランザクション ログを復元する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースです。 ソース データベースと密接に同期を維持します。  
@@ -83,9 +83,9 @@ ms.lasthandoff: 09/20/2017
   
     1.  送信先システムで有効にする **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)**です。  
   
-    2.  クエリ ウィンドウで、置き換える *\<MyLogShippingSolution >*わかりやすい記述には、単一引用符で囲みます。  
+    2.  クエリ ウィンドウで、置き換える *\<MyLogShippingSolution\>* わかりやすい記述には、単一引用符で囲みます。  
   
-    3.  クエリ ウィンドウで、置き換える *\<BizTalkServerManagementDatabaseName >*と *\<BizTalkServerManagementDatabaseServer >*の場所と名前で、ソース BizTalk 管理データベース、単一引用符で囲みます。  
+    3.  クエリ ウィンドウで、置き換える *\<BizTalkServerManagementDatabaseName\>* と *\<BizTalkServerManagementDatabaseServer\>* と名前と、単一引用符で囲まれたソース BizTalk 管理データベースの場所。  
   
     > [!NOTE]
     >  複数の送信元サーバーがある場合は、各送信元サーバーをそれぞれ独自の送信先サーバーに復元できます。 各送信先サーバーでの **@SourceServerName = null**パラメーター、置換*null*単一引用符で囲まれている適切な送信元サーバーの名前を持つ (たとえば、  **@SourceServerName = 'MySourceServer'**)。  
@@ -119,9 +119,9 @@ ms.lasthandoff: 09/20/2017
   
 10. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で、次のフォルダーを開きます。  
   
-     32 ビット コンピューター: %SystemDrive%\Program files \microsoft BizTalk Server\<バージョン > \Schema\Restore  
+     32 ビット コンピューター: %SystemDrive%\Program files \microsoft BizTalk Server\<バージョン\>\Schema\Restore  
   
-     64 ビット コンピューター: %SystemDrive%\Program Files (x86) \Microsoft BizTalk Server\<バージョン > \Bins32\Schema\Restore  
+     64 ビット コンピューター: %SystemDrive%\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\Bins32\Schema\Restore  
   
 11. 右クリック**SampleUpdateInfo.xml**を選択して**編集**です。 次の操作を行います。  
   
@@ -146,7 +146,7 @@ ms.lasthandoff: 09/20/2017
   
 13. BAM またはルール エンジンを使用する場合は、必要に応じてこれらの行をコメント解除してください。  
   
-14. カスタム データベースがあれば、下に追加、  **\<OtherDatabases >**セクションです。 参照してください[カスタム データベースをバックアップする方法](../core/how-to-back-up-custom-databases.md)です。  
+14. カスタム データベースがあれば、下に追加、  **\<OtherDatabases\>** セクションです。 参照してください[カスタム データベースをバックアップする方法](../core/how-to-back-up-custom-databases.md)です。  
   
 15. ファイルの編集を終了したら、ファイルを保存して閉じます。  
   

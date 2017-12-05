@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58e06eb1b606217aea6fe5e40ac645a2eaf623c2
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: e4e15310442d12c0b2604eb0d22b071ff6c57212
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a>JD Edwards OneWorld サンプル クエリを実行します。
 JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムからアクセスするには、JD Edwards OneWorld アダプターを使用します。 このアダプターは、付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。
@@ -77,7 +77,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
 
 1.  開いている**BizTalk Server 管理コンソール**、展開**コンソール ルート**、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**プラットフォームの設定**の順に展開および**アダプター**です。  
   
-    確認、 **JDE_OneWorld**アダプターが一覧表示します。 JD Edwards OneWorld アダプターがインストールされていない場合は、BizTalk Adapters for Enterprise Applications をインストールしてください (前の「前提条件」の項を参照してください)。 アダプターをインストールしたらを右クリックし**アダプター** をクリックし、 **New - Adapter** JD Edwards OneWorld アダプターをインストールします。 これを有効にするホスト インスタンスを再起動します。  
+    確認、 **JDE_OneWorld**アダプターが一覧表示します。 JD Edwards OneWorld アダプターがインストールされていない場合は、BizTalk Adapters for Enterprise Applications をインストールしてください (前の「前提条件」の項を参照してください)。 アダプターをインストールしたらを右クリックし**アダプター**  をクリックし、 **New - Adapter** JD Edwards OneWorld アダプターをインストールします。 これを有効にするホスト インスタンスを再起動します。  
   
 2. 展開**アプリケーション**の順に展開および**BizTalk アプリケーション 1**です。  
   
@@ -95,13 +95,13 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 4.  **[構成]**をクリックし、次のプロパティ値を入力します。  
   
-    1.  **ホスト:** \<JDEOW ホスト名を入力 >  
+    1.  **ホスト:** \<JDEOW ホスト名を入力してください\>  
   
     2.  **JAVA_HOME:**`C:\j2sdk1.4.2_08`  
   
-    3.  **JDEdwards 環境:** \<JDEOW 環境を入力 >  
+    3.  **JDEdwards 環境:** \<JDEOW 環境を入力してください\>  
   
-    4.  **JDEdwards JAR ファイル:** \<JAR ファイルの完全なパスを入力 >  
+    4.  **JDEdwards JAR ファイル:** \<JAR ファイルの完全なパスを入力してください\>  
   
          `C:\JDEOWJars\BTSLIBInterop.jar; C:\JDEOWJars\Connector.jar; C:\JDEOWJars\Kernel.jar;C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\J.D. Edwards OneWorld®\Classes\JDEJAccess.jar`  
   
@@ -109,7 +109,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
     6.  **ポート:**  `6009`  
   
-    7.  **ユーザー名:** \<JD Edwards のユーザー名を入力 >  
+    7.  **ユーザー名:** \<JD Edwards のユーザー名を入力\>  
   
      ![](../core/media/jdeow-transportproperties-configurebutton.gif "JDEOW_TransportProperties_ConfigureButton")  
   
@@ -283,15 +283,15 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 1.  ソリューション エクスプ ローラーで、 **N0100041Service_N0100041.xsd**ファイルを開きます。  
   
-2.  右クリック**N0100041Service_N0100041.xsd** をクリックし、**プロパティ**です。 **[出力インスタンス ファイル名]** に、サンプル XML のパスとファイル名を次のとおりに入力します。  
+2.  右クリック**N0100041Service_N0100041.xsd**  をクリックし、**プロパティ**です。 **[出力インスタンス ファイル名]** に、サンプル XML のパスとファイル名を次のとおりに入力します。  
   
      `C:\LABS\JDE_OW_TEST\SAMPLE.XML`  
   
-3.  クリックして **OK.** [プロパティ] ウィンドウで選択**\<スキーマ >**設定と**ルート参照:**に`AddressBookMasterMBF`です。 これにより、生成された XML のみを含む、**クエリ**xml です。  
+3.  クリックして **OK.** [プロパティ] ウィンドウで選択**\<スキーマ\>**設定と**ルート参照:**に`AddressBookMasterMBF`です。 これにより、生成された XML のみを含む、**クエリ**xml です。  
   
      ![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")  
   
-4.  右クリック**N0100041Service_N0100041.xsd** をクリックし、**インスタンスの生成**です。 これにより生成、 **Sample.xml**ファイル。 このファイルは、オーケストレーション プロセスを開始するアダプターに対する入力として、受信場所にドロップされます。  
+4.  右クリック**N0100041Service_N0100041.xsd**  をクリックし、**インスタンスの生成**です。 これにより生成、 **Sample.xml**ファイル。 このファイルは、オーケストレーション プロセスを開始するアダプターに対する入力として、受信場所にドロップされます。  
   
 #### <a name="configure-and-start-the-biztalk-application"></a>構成および BizTalk アプリケーションの開始  
   
@@ -303,9 +303,9 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      ![](../core/media/jdeow-configureapplicationjde-ow-test.gif "JDEOW_ConfigureApplicationJDE_OW_Test")  
   
-4.  **[Orchestration_1]** を選択し、 **[ホスト]** ドロップダウン ボックスをクリックします。 [ **BizTalkServerApplication**] を選択します。  
+4.  **[Orchestration_1]** を選択し、 **[ホスト]** ドロップダウン ボックスをクリックします。 **[BizTalkServerApplication]** を選択します。  
   
-5.  **受信ポート**をクリックして**\<なし >**です。 ドロップダウン リストの **[新しい受信ポート]**を選択します。  
+5.  **受信ポート**をクリックして **\<None\>**です。 ドロップダウン リストの **[新しい受信ポート]**を選択します。  
   
 6.  **名前**、型`JDE_FileIn_Port`、順にクリック**OK**です。 受信場所を指定する必要があるというメッセージ ボックスが表示されます。 **[OK]**をクリックし、 **[新規作成]**をクリックします。  
   
@@ -327,7 +327,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      ![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")  
   
-9. をクリックして**\<なし >**の**JDE_OW_Port**ドロップダウン リストでします。  
+9. をクリックして **\<None\>** の**JDE_OW_Port**ドロップダウン リストでします。  
   
 10. 選択**新しい送信ポートを**を選択するか、プロパティに次の値を入力します。  
   
@@ -341,11 +341,11 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 11. **[構成]**をクリックし、次のプロパティ値を入力します。  
   
-     **ホスト:** \<JDEOW ホスト名を入力 >  
+     **ホスト:** \<JDEOW ホスト名を入力してください\>  
   
      **JAVA_HOME:**`C:\j2sdk1.4.2_08`  
   
-     **JDEdwards 環境:** \<JDEOW 環境を入力 >  
+     **JDEdwards 環境:** \<JDEOW 環境を入力してください\>  
   
      **JDEdwards JAR ファイル:**<enter full path of JAR files>  
   
@@ -361,7 +361,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 12. **[OK]** を 2 回クリックしてダイアログ ボックスを閉じます。  
   
-13. 構成 Applicationwindow、クリックして**\<なし >**の**JDE_FileOut**ドロップダウン リストでします。  
+13. 構成 Applicationwindow、クリックして **\<None\>** の**JDE_FileOut**ドロップダウン リストでします。  
   
 14. **[新しい送信ポート]** を選択し、プロパティの値を次のとおりに入力または選択します。  
   

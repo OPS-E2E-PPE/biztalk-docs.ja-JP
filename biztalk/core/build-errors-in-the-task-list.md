@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1bfd5b9f7b974b00d63831484ecbaa44e2568fa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3aeef8ac3defc17f4c9bf0fbddedf6d389a1263e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="build-errors-in-the-task-list"></a>タスク一覧内のビルド エラー
 プロジェクト (ソリューション) をビルドすると、個別のエラーおよび警告がタスク一覧に表示され、結果は出力ウィンドウに表示されます。  
@@ -89,7 +89,7 @@ POAckMsg = XMLDOM;
 ## <a name="you-receive-a-use-of-unconstructed-message-error-when-building-your-project"></a>プロジェクトのビルド時に発生する "未構築のメッセージが使用されました" エラー  
   
 ### <a name="problem"></a>問題  
- BizTalk プロジェクトをコンパイルするときに、エラー"未構築のメッセージの使用 '\<メッセージ >'"です。  
+ BizTalk プロジェクトをコンパイルするときに、エラー"未構築のメッセージの使用 '\<メッセージ\>'"です。  
   
 ### <a name="cause"></a>原因  
  未構築のメッセージを使用する場合、このエラーが発生した、**送信**図形です。  
@@ -121,10 +121,10 @@ POAckMsg = XMLDOM;
 ### <a name="resolution"></a>解決策  
  オーケストレーションが別のオーケストレーションによって呼び出されない場合のいずれかを構成する必要があります、**受信**アクティブ化受信である図形です。 構成の詳細については、**受信**関連付けへのリンクを含む図形を参照してください[受信図形を構成する方法](../core/how-to-configure-the-receive-shape.md)です。  
   
-## <a name="you-receive-the-error-assembly-generation-failed----referenced-assembly-assembly-does-not-have-a-strong-name-when-building-your-solution"></a>エラーが発生する"アセンブリの生成に失敗しました--参照されたアセンブリ '\<アセンブリ >' は厳密な名前がありません"ソリューションをビルドする場合  
+## <a name="you-receive-the-error-assembly-generation-failed----referenced-assembly-assembly-does-not-have-a-strong-name-when-building-your-solution"></a>エラーが発生する"アセンブリの生成に失敗しました--参照されたアセンブリ '\<アセンブリ\>' は厳密な名前がありません"ソリューションをビルドする場合  
   
 ### <a name="problem"></a>問題  
- エラーが発生する"アセンブリの生成に失敗しました--参照されたアセンブリ '\<アセンブリ >' は厳密な名前がありません"ときにオーケストレーションを持つソリューションを構築します。  
+ エラーが発生する"アセンブリの生成に失敗しました--参照されたアセンブリ '\<アセンブリ\>' は厳密な名前がありません"ときにオーケストレーションを持つソリューションを構築します。  
   
 ### <a name="cause"></a>原因  
  この問題は、署名されていない参照アセンブリの型がオーケストレーション内で使用されている場合に発生します。  

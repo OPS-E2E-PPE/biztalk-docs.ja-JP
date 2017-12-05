@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 923bc73e6ee778cbf960300902c7f631dc5d9f5b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e95e61fa4152cdd7485175240b6481f3d28cfc7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edifact-contrl-message-as-functional-acknowledgment"></a>機能確認としての EDIFACT CONTRL メッセージ
 ビジネス プロファイル設定または取引先アグリーメント (2 つのビジネス プロファイル間でアグリーメントが定義されていない場合はフォールバック アグリーメント) で機能確認を生成するように選択した場合、またはメッセージの UNB9 フィールドが "1" に設定されている場合、機能確認 (ACK) として CONTRL メッセージが生成されます。 この確認では、インターチェンジの構文チェックの結果が報告されます。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 >  CONTRL メッセージには、受信したインターチェンジからコピーされる複数の必須データ要素が含まれています。 インターチェンジ内のデータ要素が欠落しているか、構文が無効である場合、構文が有効な CONTRL メッセージを生成できません。 この場合は、CONTRL メッセージ以外の方法でエラーを報告する必要があります。  
   
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、受信したインターチェンジに 1 つ以上の CONTRL メッセージのみが含まれている場合、応答として CONTRL メッセージ (受信確認、受理、または拒否) が送信されます。 [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] では、受信したインターチェンジに 1 つ以上の CONTRL メッセージのみが含まれている場合、応答として CONTRL メッセージ (受信確認、受理、または拒否) は送信されません。 受信した CONTRL メッセージのエラーは、CONTRL メッセージ以外の方法で報告する必要があります。 データ メッセージが含まれているインターチェンジに 1 つ以上の CONTRL メッセージが含まれている場合、そのインターチェンジへの応答として生成される CONTRL メッセージは、受信したインターチェンジに CONTRL メッセージが含まれていなかったものとして生成されます。  
+>  BizTalk Server では、CONTRL メッセージ (受信確認、受理、または拒否) がのみ 1 つ以上の CONTRL メッセージを含む受信したインターチェンジへの応答で送信されます。 [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] では、受信したインターチェンジに 1 つ以上の CONTRL メッセージのみが含まれている場合、応答として CONTRL メッセージ (受信確認、受理、または拒否) は送信されません。 受信した CONTRL メッセージのエラーは、CONTRL メッセージ以外の方法で報告する必要があります。 データ メッセージが含まれているインターチェンジに 1 つ以上の CONTRL メッセージが含まれている場合、そのインターチェンジへの応答として生成される CONTRL メッセージは、受信したインターチェンジに CONTRL メッセージが含まれていなかったものとして生成されます。  
   
  **SG ループ**  
   

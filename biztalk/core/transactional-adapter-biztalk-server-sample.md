@@ -12,11 +12,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfad3a99d313a8007962cf56f403243c72f6a377
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f934857103952a035159cc08678c8ce8c8e51a56
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>Transactional Adapter (BizTalk Server サンプル)
 Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージの処理中にデータベースに対して明示的な Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションを作成および使用する方法を示すものです。  
@@ -32,7 +32,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Samples\AdaptersDevelopment\TransactionalAdapter。 管理構成プロジェクトは \Admin フォルダーにあり、ランタイム プロジェクトは \Runtime フォルダーにあります。  
+ \<*パスのサンプル*\>\Samples\AdaptersDevelopment\TransactionalAdapter。 管理構成プロジェクトは \Admin フォルダーにあり、ランタイム プロジェクトは \Runtime フォルダーにあります。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -98,7 +98,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
 2.  トランザクション アダプター データをレジストリに追加するにはダブルクリック**TransactionalAdmin.reg**です。  
   
     > [!NOTE]
-    >  **TransactionalAdmin.reg** C:\Program files \microsoft にハードコードされたパスが含まれています[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\\です。 既定の場所に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしなかった場合や、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストールを以前のバージョンからアップグレードした場合は、TransactionalAdmin.reg ファイルを変更して適切なパスを指定する必要があります。 "InboundAssemblyPath"、"OutboundAssemblyPath"、および "AdapterMgmtAssemblyPath" の値に関連付けられたパスを、指定されたファイルの正しい場所を指すように更新します。  
+    >  **TransactionalAdmin.reg** C:\Program files \microsoft BizTalk Server へのハードコードされたパスが含まれています\\です。 既定の場所に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしなかった場合や、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストールを以前のバージョンからアップグレードした場合は、TransactionalAdmin.reg ファイルを変更して適切なパスを指定する必要があります。 "InboundAssemblyPath"、"OutboundAssemblyPath"、および "AdapterMgmtAssemblyPath" の値に関連付けられたパスを、指定されたファイルの正しい場所を指すように更新します。  
   
     > [!IMPORTANT]
     >  BizTalk を 64 ビット コンピューターにインストールする場合は、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **TransactionalAdmin.reg**レジストリ ファイル。  

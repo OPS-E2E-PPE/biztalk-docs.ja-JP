@@ -15,15 +15,15 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4cd2cd1eadf3dc6f11a6e3178258caaaf88006d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4102d459d5b579491f42747f1d3fe0dd3d381b71
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="backing-up-the-a4swift-database"></a>A4SWIFT データベースをバックアップします。
 日常的に、致命的な障害のリスクを低減するため、BizTalk Server および A4SWIFT のシステムのデータベースをバックアップしてください。 BizTalk Server ソース システム、および A4SWIFT データベースにこれらのデータベースがあります。 に加えて、リスクを低減するには、これはすることもできます大きなサイズに拡大できる A4SWIFT 履歴ファイルを削除します。  
   
- BizTalk Server ソース システム内のデータベースのバックアップの詳細についてを参照してください「および復元する BizTalk Server データベースのバックアップ」で、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。 このトピックでは、BizTalk データベースのバックアップを使用する BizTalk Server のバックアップ ジョブについて説明します。  
+ BizTalk Server 送信元システムで、データベースのバックアップの詳細については、BizTalk Server ヘルプの「および復元する BizTalk Server データベースのバックアップ」」を参照してください。 このトピックでは、BizTalk データベースのバックアップを使用する BizTalk Server のバックアップ ジョブについて説明します。  
   
- A4SWIFT データベースのバックアップの詳細については、トピックでは、「方法に戻るをカスタム データベース」を参照してください。[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。 このトピックでは、カスタムの A4SWIFT データベースを含めるに BizTalk Server のバックアップ ジョブを変更する方法について説明します。
+ A4SWIFT データベースをバックアップする方法については、BizTalk Server ヘルプの「方法に戻るをカスタム データベース」のトピックを参照してください。 このトピックでは、カスタムの A4SWIFT データベースを含めるに BizTalk Server のバックアップ ジョブを変更する方法について説明します。

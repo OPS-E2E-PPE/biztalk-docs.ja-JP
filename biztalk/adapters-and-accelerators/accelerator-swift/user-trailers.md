@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4dc2d7f2a3dd21d35bb33fa625f59aa27c04e656
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff907e262088acd188028282fe2e03441071358a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="user-trailers"></a>ユーザーのトレーラー
 ユーザーのトレーラー、CHK トレーラーを除くはオプションであり、存在する場合は、次の順序で発生します。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
     where <authentication-result> = 8!h  
     ```  
   
--   **独自の認証コード (PAC を) トレーラです。** 二重認証オプションを使用する場合にのみ、PAC トレーラーは FIN コピー サービス内で使用されます。 ブロック 5 の FIN ユーザー-ユーザーへのメッセージには、存在する場合、MAC トレーラーの直後に、PAC トレーラーが含まれます。 この結果が計算される 115、フィールドの値、メッセージのブロック 4 のフィールドの抽出に存在する場合、および\<認証結果 > コピー サービスの認証では二重の MAC トレーラーのです。  
+-   **独自の認証コード (PAC を) トレーラです。** 二重認証オプションを使用する場合にのみ、PAC トレーラーは FIN コピー サービス内で使用されます。 ブロック 5 の FIN ユーザー-ユーザーへのメッセージには、存在する場合、MAC トレーラーの直後に、PAC トレーラーが含まれます。 この結果が計算される 115、フィールドの値、メッセージのブロック 4 のフィールドの抽出に存在する場合、および\<認証結果\>コピー サービスの認証では二重の MAC トレーラーのです。  
   
      その結果、PAC の計算でブロックのインジケーター (CrLf-) が含まれているし、フィールドは次のように定義されます。  
   

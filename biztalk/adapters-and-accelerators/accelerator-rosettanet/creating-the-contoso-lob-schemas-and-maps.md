@@ -18,19 +18,19 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f204efd00858f3f4204848f4fb4a0dcef5233b3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 45f9fd544b690031a14a53b829e5647890bf8e67
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-the-contoso-lob-schemas-and-maps"></a>Contoso LOB スキーマとマップの作成
-ここでは、Contoso 組織が ERP システムで使用する基幹業務 (LOB) スキーマを作成します。 受信および送信の RosettaNet メッセージの種類と、Contoso の内部メッセージの間のデータ変換を作成するために、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] マッパー ツールを使用します。  
+ここでは、Contoso 組織が ERP システムで使用する基幹業務 (LOB) スキーマを作成します。 使用する、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server マッパー ツールを Contoso の内部メッセージおよび受信と送信の RosettaNet メッセージの種類間のデータ変換を作成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-new-biztalk-solution-for-contoso-price-and-availability-request.md)  
+-   [手順 1: Contoso Price and Availability Request のための新しい BizTalk ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-new-biztalk-solution-for-contoso-price-and-availability-request.md)  
   
--   [手順 2: Price and Availability プロジェクトの BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)  
+-   [手順 2: BizTalk エディターを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション スキーマの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)  
   
--   [手順 3: Price and Availability プロジェクトの BizTalk マッパーを使用して用の Contoso LOB アプリケーション マップの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)
+-   [手順 3: BizTalk マッパーを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション マップの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)

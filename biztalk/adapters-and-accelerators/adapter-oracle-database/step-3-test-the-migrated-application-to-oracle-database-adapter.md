@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 144313f742bd4256319ff35435a401b4228093dd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30b5871aee85316b9885bd1ec22f4118c83743d1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-test-the-migrated-application-to-oracle-database-adapter"></a>手順 3: Oracle データベース アダプターに移行したアプリケーションをテストします。
 ![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
@@ -36,20 +36,20 @@ ms.lasthandoff: 09/20/2017
 1.  Oracle_Migration フォルダーから OracleInsert.xml 要求メッセージをコピーします。 この要求メッセージは、vPrev Oracle データベース アダプターによって生成されたスキーマに準拠しています。 送信マップを使用して、Wcf-custom 送信ポートに変換 WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]し、Oracle データベースに送信します。  
   
     ```  
-    \<ns0:Insert xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]">  
-      \<ns0:Rows>  
-        \<ns0:InsertRecord>  
-          \<ns0:NAME>Customer_1\</ns0:NAME>  
-          \<ns0:STREET>Street_1\</ns0:STREET>  
-          \<ns0:CITY>City_1\</ns0:CITY>  
-        \</ns0:InsertRecord>  
-        \<ns0:InsertRecord>  
-          \<ns0:NAME>Customer_2\</ns0:NAME>  
-          \<ns0:STREET>Street_2\</ns0:STREET>  
-          \<ns0:CITY>City_2\</ns0:CITY>  
-        \</ns0:InsertRecord>  
-      \</ns0:Rows>  
-    \</ns0:Insert>  
+    <ns0:Insert xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]">  
+      <ns0:Rows>  
+        <ns0:InsertRecord>  
+          <ns0:NAME>Customer_1</ns0:NAME>  
+          <ns0:STREET>Street_1</ns0:STREET>  
+          <ns0:CITY>City_1</ns0:CITY>  
+        </ns0:InsertRecord>  
+        <ns0:InsertRecord>  
+          <ns0:NAME>Customer_2</ns0:NAME>  
+          <ns0:STREET>Street_2</ns0:STREET>  
+          <ns0:CITY>City_2</ns0:CITY>  
+        </ns0:InsertRecord>  
+      </ns0:Rows>  
+    </ns0:Insert>  
     ```  
   
 2.  貼り付けをファイルにマップされているフォルダーに要求メッセージの受信場所。  
@@ -57,8 +57,8 @@ ms.lasthandoff: 09/20/2017
 3.  オーケストレーションは、要求メッセージを使用して、Oracle データベースに送信します。 WCF ベースのスキーマに準拠するスキーマで、Oracle データベースからの応答が受信した[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev Oracle データベース アダプター用のスキーマにします。 Oracle データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 上記の要求メッセージに対する応答は次のとおりです。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8"?>  
-    \<ns0:InsertResponse xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]">\</ns0:InsertResponse>  
+    <?xml version="1.0" encoding="utf-8"?>  
+    <ns0:InsertResponse xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]"></ns0:InsertResponse>  
     ```  
   
 ## <a name="see-also"></a>参照  

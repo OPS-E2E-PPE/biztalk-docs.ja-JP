@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4566a810489a9f6c46424a525908aa5a2fbb6bee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9bc96c3b591baf81806182b6c3e988a46dd208ba
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-scripts-to-deploy-applications"></a>スクリプトを使用してアプリケーションを展開するには
 スクリプトを使用して、可能な場合は、BizTalk アプリケーションを展開する必要があります。 スクリプト、展開プロセス中に人的ミスのリスクが軽減されます。 深さの展開手順も文書化する必要があります。 非常に詳細な手順とスクリプトのないものを文書化する必要があります。 これには、外部システムと Microsoft 以外のコンポーネントの展開のすべての変更を文書化が含まれます。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 -   [BizTalk Server アプリケーションの展開を理解する](http://go.microsoft.com/fwlink/?LinkId=101599)(http://go.microsoft.com/fwlink/?LinkId=101599)  
   
     > [!NOTE]  
-    >  この後者の記事にも適用されます[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+    >  この後者の記事は、BizTalk Server にも適用されます。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: BizTalk Server を構成します。](../technical-guides/checklist-configuring-biztalk-server.md)
+ [チェックリスト: BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)

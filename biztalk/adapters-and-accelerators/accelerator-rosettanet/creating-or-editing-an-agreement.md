@@ -21,11 +21,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c49ca06bb8177f76344cdb8ff14c612a7aa52a71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ea033770504b0e0024a831e0ad8d8727603046e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-or-editing-an-agreement"></a>作成するか、契約の編集
 ここでは、取引先アグリーメント (TPA) の作成方法または編集方法について説明します。 取引先アグリーメントは、2 つの取引先の間に、ID、PIP (Partner Interface Process)、アクション URL、シグナル URL、同期 URL、関連付けられたプロトコルなどのリレーションシップを構成します。  
@@ -54,9 +54,9 @@ ms.lasthandoff: 09/20/2017
 |**全般**|**0A1 アグリーメント**|エラーが発生した場合に、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] がエラー通知メッセージ (0A1 PIP) を返すかどうかを示します。<br /><br /> 指定できます**非 0A1** (既定) または**0A1**です。<br /><br /> 必要があります**非 0A1** CIDX 用です。|  
 |**全般**|**使用方法**|アグリーメントが使用するシナリオの種類を示します。<br /><br /> 指定できます**テスト**(既定) または**運用**です。|  
 |**全般**<br /><br /> (**アプリケーション アダプター**領域)|**アセンブリ名**|ファイル システムから選択できる ApplicationAdapter のファイル名。<br /><br /> 既定値は空の文字列です。|  
-|**全般**<br /><br /> (**アプリケーション アダプター領域**)|**クラス名**|[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が使用する ApplicationAdapter のクラス名。<br /><br /> 既定値は\<なし > です。|  
+|**全般**<br /><br /> (**アプリケーション アダプター領域**)|**クラス名**|[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が使用する ApplicationAdapter のクラス名。<br /><br /> 既定値は\<none\>です。|  
 |**全般**<br /><br /> (**検証アダプター領域**)|**アセンブリ名**|ファイル システムから選択できる ValidationAdapter のファイル名。 既定値は空の文字列です。|  
-|**全般**<br /><br /> (**検証アダプター領域**)|**クラス名**|[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が使用する ValidationAdapter のクラス名。<br /><br /> 既定値は\<なし > です。|  
+|**全般**<br /><br /> (**検証アダプター領域**)|**クラス名**|[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が使用する ValidationAdapter のクラス名。<br /><br /> 既定値は\<none\>です。|  
 |**ポート**|**アクションの URL**|ホーム組織がアクション メッセージを送信する先の URL。 たとえば、http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> このフィールドは、次の項目がすべて該当する場合に必須です。<br /><br /> -**同期**プロセス構成設定は`False`します。<br /><br /> -**シングル アクション**プロセス構成設定は`True`します。<br /><br /> -**ホーム ロール**アグリーメントの設定が**イニシエーター**です。<br /><br /> これは、も必要なフィールドは、次に該当する場合 (この場合は、**シグナル URL**フィールドも必須です)。<br /><br /> -**同期**プロセス構成設定は`False`します。<br /><br /> -**シングル アクション**プロセス構成設定は`False`します。<br /><br /> このフィールドは、"http://domain"または"https://domain"のいずれかで始まる 1-有効な URI を入力する必要があります。|  
 |**ポート**|**シグナル URL**|ホーム組織がシグナル メッセージを送信する先の URL。 たとえば、http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> このフィールドは、次の項目が該当する場合に必須です。<br /><br /> -**同期**プロセス構成設定は`False`します。<br /><br /> -**シングル アクション**プロセス構成設定は`True`します。<br /><br /> -**ホーム ロール**アグリーメントの設定が**レスポンダー**です。<br /><br /> これは、も必要なフィールドは、次に該当する場合 (この場合は、**アクション URL**フィールドも必須です)。<br /><br /> -**同期**プロセス構成設定は`False`します。<br /><br /> -**シングル アクション**プロセス構成設定は`False`します。<br /><br /> このフィールドには、"http://domain" または "https://domain" のいずれかで始まる、有効な URI を入力する必要があります。|  
 |**ポート**|**同期 URL**|ホーム組織が HTTP アダプターを介して接続を確立するために使用する URL。 たとえば、http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> このフィールドは、次の項目が該当する場合に必須です。<br /><br /> -**同期**プロセス構成設定は`True`します。<br /><br /> -**ホーム ロール**アグリーメントの設定が**イニシエーター**です。<br /><br /> このフィールドには、"http://domain" または "https://domain" のいずれかで始まる、有効な URI を入力する必要があります。|  
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  編集、およびをクリックするアグリーメントを右クリックして**プロパティ**です。  
   
-4.   **\<** *契約名* **>** プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは必要に応じて設定を変更します。 これらの設定の詳細については、上の表を参照してください。  
+4.   **\<** *契約名* **\>** プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは必要に応じて設定を変更します。 これらの設定の詳細については、上の表を参照してください。  
   
 5.  **[OK]**をクリックします。  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4416534bdd73e8ae6eeeca28165ebc62c11bfc92
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb8516ceb780e64c4f4a01370de0e7c40098f3da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-add-orchestration-variables"></a>オーケストレーション変数を追加する方法
 オーケストレーションの種類 ウィンドウでは、オーケストレーションのプロパティを管理することができます (とも呼ばれる**サービス**プロパティ)、パラメーター、ポート、メッセージ、およびその他の変数です。 ポートおよびメッセージに加えて、整数型の変数、ブール変数、文字列変数、または .NET クラスの変数を作成できます。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 3.  変数と .NET クラスなどの種類を関連付けます。  
   
     > [!NOTE]
-    >  **型**ドロップダウン リストには、次の定義済み変数の型が含まれています:**ブール**、**バイト**、 **datetime**、 **10 進**、**二重**、 **int16**、 **int32**、 **int64**、 **sbyte**、**単一**、**文字列**、 **timespan**、 **uint16**、 **uint32**、および**uint64**です。 選択して、.NET データ型とクラスをアクセスすることも **\<.NET クラス >**、これにより、**成果物の種類の選択** ダイアログ ボックス。  
+    >  **型**ドロップダウン リストには、次の定義済み変数の型が含まれています:**ブール**、**バイト**、 **datetime**、 **10 進**、**二重**、 **int16**、 **int32**、 **int64**、 **sbyte**、**単一**、**文字列**、 **timespan**、 **uint16**、 **uint32**、および**uint64**です。 選択して、.NET データ型とクラスをアクセスすることも **\<.NET クラス.\>** 、これにより、**成果物の種類の選択** ダイアログ ボックス。  
   
 4.  定義済みの変数の型を選択する場合、変数の初期値を指定することができます。 [プロパティ] ウィンドウで、設定、**初期値**プロパティです。  
   

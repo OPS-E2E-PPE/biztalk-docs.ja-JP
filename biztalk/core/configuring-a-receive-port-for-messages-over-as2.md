@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f1a024769b0728873d6cf217e3028d2c5532055
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 324d8a7faf3ce21630502f219d033fb797aa3fc6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-a-receive-port-for-messages-over-as2"></a>AS2 経由でのメッセージの受信ポートの構成
 EDI または非 EDI ペイロードを持つ AS2 メッセージを受信するには、メッセージを受信してパーティに応答を返すための HTTP 受信ポートを作成します。  
@@ -37,7 +37,7 @@ EDI または非 EDI ペイロードを持つ AS2 メッセージを受信する
 |**受信場所のプロパティ: 全般**|[受信ハンドラー]|BizTalkServerIsolatedHost|  
 |**受信場所のプロパティ: 全般**|受信パイプライン。|-AS2EdiReceive (ペイロードが場合 EDI でエンコードされた)<br />-AS2Receive (ペイロードが EDI でエンコードされた) 場合**注:** AS2EdiReceive パイプラインを使用する場合は、BizTalk Application Users グループで、BizTalk 分離ホスト インスタンス プロセスを実行しているユーザー アカウントを追加する必要があります。 AS2EdiReceive パイプラインは、BizTalk 分離ホスト インスタンス プロセスで実行されます。 AS2EdiReceive パイプラインは SSO ストアにアクセスします。この場合、ユーザーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users グループに属している必要があります。|  
 |**受信場所のプロパティ: 全般**|[送信パイプライン]|AS2Send|  
-|**HTTP トランスポートのプロパティ**|仮想ディレクトリと ISAPI 拡張|/\<仮想ディレクトリの名前 > >/btshttpreceive.dll|  
+|**HTTP トランスポートのプロパティ**|仮想ディレクトリと ISAPI 拡張|/\<仮想ディレクトリの名前\>>/btshttpreceive.dll|  
 |**HTTP トランスポートのプロパティ**|要求 - 応答の返すコンテンツの種類|text/xml|  
   
 ## <a name="functionality-of-the-receive-location-in-synchronous-and-asynchronous-modes"></a>同期モードおよび非同期モードでの受信場所の機能  
@@ -81,4 +81,4 @@ EDI または非 EDI ペイロードを持つ AS2 メッセージを受信する
  [AS2 ソリューションのポートを構成します。](../core/configuring-ports-for-an-as2-solution.md)   
  [入力方向の AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)   
  [送信 MDN の生成](../core/generating-an-outgoing-mdn.md)   
- [送信 MDN を送信します。](../core/sending-an-outgoing-mdn.md)
+ [送信 MDN の送信](../core/sending-an-outgoing-mdn.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "50"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be7c36900c39f46f636077c5c9d0cb630265cc80
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5374ba63ba8eb4193c3ef4990e8c169646a3528b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-management-utility"></a>BAM 管理ユーティリティ
 BAM 管理ユーティリティは、BAM インフラストラクチャのあらゆる要素を管理、保守するために、ビジネス アクティビティ監視 (BAM) 定義の管理者によって使用されます。  
@@ -38,7 +38,7 @@ BAM 管理ユーティリティは、BAM インフラストラクチャのあら
 > [!NOTE]
 >  BAM コマンドを適切に動作させるためには、BAM 管理ユーティリティを実行するコンピューターのロケール設定が、展開されている BAM 定義の作成に使用したロケールと一致している必要があります。 たとえばを実行する場合、 **get ビュー**構成されているコンピューターのロケールが英語とフランス語ロケールのコンピューターで、データベースに対して設定することはできませんをリセットしない限り、返されたビュー名を使用する、コンピューターをフランス語ロケール。  
   
- BAM 管理ユーティリティを使用すると、サーバーに対して追跡構成を生成したり展開したりできます。 BAM 管理ユーティリティにあるコマンド ライン ツールは、 \<*インストール パス*> \Program Files\Microsoft BizTalk Server\<バージョン > \Tracking\BM.exe です。  
+ BAM 管理ユーティリティを使用すると、サーバーに対して追跡構成を生成したり展開したりできます。 BAM 管理ユーティリティにあるコマンド ライン ツールは、 \<*インストール パス*\>\Program Files\Microsoft BizTalk Server\<バージョン\>\Tracking\BM.exe です。  
   
 > [!IMPORTANT]
 >  BAM 管理ユーティリティを実行するには、メンバーである、 **db_owner**の BAM プライマリ インポート、BAM スター スキーマ、および BAM アーカイブ データベースの SQL Server データベース ロール。 また、BAM 警告に関連する更新を行う場合には、BAM 警告データベースに対する sysadmin アクセス許可も必要です。  
@@ -65,7 +65,7 @@ BAM 管理ユーティリティは、BAM インフラストラクチャのあら
   
 -   [データベース コマンド](../core/database-commands.md)  
   
--   [BAM 定義 (監視モデル) コマンドの展開](../core/deployment-of-bam-definition-observation-model-commands.md)  
+-   [BAM 定義 (監視モデル) の展開コマンド](../core/deployment-of-bam-definition-observation-model-commands.md)  
   
 -   [インフラストラクチャ管理コマンド](../core/infrastructure-management-commands.md)  
   
@@ -73,7 +73,7 @@ BAM 管理ユーティリティは、BAM インフラストラクチャのあら
   
 -   [ビュー管理コマンド](../core/view-management-commands.md)  
   
--   [警告管理コマンド](../core/alert-management-commands.md)  
+-   [Alert Management コマンド](../core/alert-management-commands.md)  
   
 -   [ユーザー管理コマンド](../core/user-management-commands.md)  
   
@@ -86,7 +86,7 @@ BAM 管理ユーティリティは、BAM インフラストラクチャのあら
   
 #### <a name="to-display-the-help-file-for-the-bam-management-utility"></a>BAM 管理ユーティリティのヘルプ ファイルを表示するには  
   
-1.  コマンド プロンプトから次のディレクトリを参照: C:\Program files \microsoft BizTalk Server\<バージョン > \Tracking\\です。  
+1.  コマンド プロンプトから次のディレクトリを参照: C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking\\です。  
   
 2.  型**bm**または**bm ヘルプ**です。  
   

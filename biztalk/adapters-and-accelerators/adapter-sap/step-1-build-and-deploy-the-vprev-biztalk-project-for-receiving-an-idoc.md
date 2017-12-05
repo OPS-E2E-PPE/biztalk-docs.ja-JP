@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad9654f295f0f43b720b7ac77aec4ac6315f78ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f99971a421530e4901c8bbac6533809a0f2f273c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-build-and-deploy-the-vprev-biztalk-project-for-receiving-an-idoc"></a>手順 1: 構築して、IDOC を受信するため vPrev BizTalk プロジェクトを配置
 ![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  コマンド プロンプトで、キー ファイルを作成するフォルダーに移動します。 たとえば、入力**cd C:\Sample**、ENTER キーを押します。  
   
-    3.  コマンド プロンプトで次のように入力します。 **sn-k\<キー ファイルの名前 > .snk**、ENTER キーを押します。  
+    3.  コマンド プロンプトで次のように入力します。 **sn-k\<キー ファイルの名前\>.snk**、ENTER キーを押します。  
   
 2.  ソリューション エクスプ ローラーで、BizTalk ソリューション名を右クリックし、をクリックして**プロパティ**です。 **プロパティ ページ** ダイアログ ボックスで、次の操作します。  
   
@@ -67,4 +67,4 @@ ms.lasthandoff: 09/20/2017
  作成および構成する Wcf-custom 受信ポートと WCF ベースを使用して SAP システムから Idoc を受信するように構成[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]」の説明に従って、[手順 2: Wcf-custom 一方向受信ポートを構成](../../adapters-and-accelerators/adapter-sap/step-2-configure-a-wcf-custom-one-way-receive-port.md)です。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 4: SAP を移行する BizTalk プロジェクトの IDOC を受信](../../adapters-and-accelerators/adapter-sap/tutorial-4-migrating-an-sap-receive-idoc-biztalk-project.md)
+ [チュートリアル 4: SAP の IDOC 受信 BizTalk プロジェクトを移行する](../../adapters-and-accelerators/adapter-sap/tutorial-4-migrating-an-sap-receive-idoc-biztalk-project.md)

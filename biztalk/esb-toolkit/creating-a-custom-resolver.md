@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef1d583389189e09a0b9e0e5157ce5466004c03a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57fb0073437c32c8a8f064a4c77f267ee6806858
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-resolver"></a>カスタム競合回避モジュールを作成します。
 競合回避モジュールとアダプターのプロバイダー フレームワーク実装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]ディスパッチャーをという名前のパイプライン コンポーネントと ItineraryReceive および ItinerarySend という名前のパイプラインを使用します。  
@@ -172,7 +172,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
 1.  実装するクラスを持つアセンブリを作成、 **IResolveProvider**インターフェイスし、が含まれています、**解決**のインスタンスとの競合回避モジュールのファクトを返すメソッド、**ディクショナリ**クラスです。  
   
-2.  Esb.config ファイルを使用して構成を追加して、競合回避モジュールを登録、 **\<リゾルバー >**としてルート モニカーを格納する要素、**名前**属性と完全修飾アセンブリ名として、**型**属性。  
+2.  Esb.config ファイルを使用して構成を追加して、競合回避モジュールを登録、 **\<リゾルバー\>** としてルート モニカーを格納する要素、**名前**属性と完全にアセンブリの修飾名として、**型**属性。  
   
 3.  (省略可能)ルート モニカーとクエリ パラメーターを定義するスキーマを作成し、ESB で保存します。Schemas.Resolvers フォルダーです。 名前が既存の ESB 名前付け規則; に従う必要があります。つまり、"_Resolution.xsd"が付いたルート モニカーの名前を使用する必要があります。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a032070876df6bea0579a159d527a6ad903e2ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6309da02c84b9c317e0743a8ca2199237e835abb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="apply-iis-configuration-settings"></a>IIS 構成設定を適用します。
 既定では、SOAP、HTTP、HTTP ベース WCF アダプター (および通常の .NET) を開きます. のみに 2 つの同時実行 HTTP 接続各 BizTalk ホスト インスタンスからの特定の移行先サーバーに たとえばがある場合、SOAP 送信ポートを送信するメッセージを**http://www.contoso.com/SomeWebService.asmx**、し、既定で各ホスト インスタンスで実行されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]に2つの同時実行HTTP接続を開く**www.contoso.com**、送信する必要があるメッセージの数に関係なく。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  必要に応じてをクリックして**適用**で、**アクション**ウィンドウです。  
   
- ASP.NET アプリケーションおよび Web サービスを指定することでデバッグを無効にする、\<コンパイル デバッグ ="false"/> の web アプリケーションの web.config ファイルでセクションです。  
+ ASP.NET アプリケーションおよび Web サービスを指定することでデバッグを無効にする、\<コンパイル デバッグ ="false"\> web アプリケーションの web.config ファイルのセクションです。  
   
 ## <a name="tune-the-value-of-the-asp-threads-per-processor-limit-property"></a>ASP スレッドごとのプロセッサ制限プロパティの値を調整します。  
  ASP**スレッドあたりプロセッサ数の上限**プロパティは、IIS を作成できる 1 プロセッサあたりのワーカー スレッドの最大数を指定します。 プロセッサ使用率が 50% 以上を満たすまで以上のプロセッサあたりのスレッド制限に対して、値を増やします。 この設定できるに大きな影響を Web アプリケーションのスケーラビリティと、サーバーのパフォーマンス一般にします。 このプロパティは、同時に実行できる ASP 要求の最大数を定義するため、ASP アプリケーションが外部コンポーネントへの拡張の呼び出しを行う場合を除いて、既定値にこの設定する必要がありますしたまま。 この場合、スレッドあたりプロセッサ数の上限の値を大きくことがあります。 これにより、サーバーへの同時要求を処理するスレッドを作成できます。 スレッドあたりプロセッサ数の上限の既定値は 25 です。 このプロパティの推奨最大値は 100 です。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  クリックして展開**制限プロパティ****動作**、 をクリックして**スレッドあたりプロセッサ数の上限**、目的の値を入力**スレッドあたりプロセッサ数の上限**  をクリック**適用**で、**アクション**ウィンドウです。  
   
- プロパティを変更する方法について、\<制限 > 要素は、IIS 7.0 の\<asp > 要素を参照してください[ASP 制限\<制限 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ プロパティを変更する方法について、\<制限\>IIS 7.0 の要素\<asp\>要素を参照してください[ASP 制限\<制限\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  このプロパティは、サーバー レベルでのみ適用できる、このプロパティの変更は、サーバー上で実行されるすべての Web サイトに影響します。  
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  クリックして展開**制限プロパティ**[**動作**、] をクリックして**キューの長さ**、目的の値を入力**キューの長さ**し、をクリックして**適用**で、**アクション**ウィンドウです。  
   
- プロパティを変更する方法について、\<制限 > 要素は、IIS 7.0 の\<asp > 要素を参照してください[ASP 制限\<制限 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ プロパティを変更する方法について、\<制限\>IIS 7.0 の要素\<asp\>要素を参照してください[ASP 制限\<制限\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  このプロパティは、サーバー レベルでのみ適用できる、このプロパティの変更は、サーバー上で実行されるすべての Web サイトに影響します。  
@@ -105,4 +105,4 @@ ms.lasthandoff: 09/20/2017
  WCF サービスが実稼働環境でトレースを無効にするには、構成エディター ツール (SvcConfigEditor.exe) を使用します。 構成エディター ツールの詳細については、次を参照してください。[構成エディター ツール (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070)。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: BizTalk Server を構成します。](../technical-guides/checklist-configuring-biztalk-server.md)
+ [チェックリスト: BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)

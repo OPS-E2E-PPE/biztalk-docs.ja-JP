@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cec35363cca2f20b38e8a2ecf8bdaf36306f6554
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b9a4985629427e44b8ca85f324c89ab719cf249
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-9-build-and-deploy-the-echo-adapter"></a>手順 9: ビルドをエコー アダプターの展開
 ![手順 9 の 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  クリックして、**アセンブリに署名**タブです。  
   
-4.  選択**\<新規… >**厳密な名前のファイルのです。 ファイル名の入力を求め、入力**EchoAdapter.snk**保護するオプションでは、パスワード、キー ファイルの選択を解除し、クリックして**OK**です。  
+4.  選択**\<新規作成しています.\>** 厳密な名前のファイルです。 ファイル名の入力を求め、入力**EchoAdapter.snk**保護するオプションでは、パスワード、キー ファイルの選択を解除し、クリックして**OK**です。  
   
 5.  クリックして、**アプリケーション**タブです。  
   
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  次のコマンドを入力します。  
   
-     **gacutil.exe/if"\<**  *assembly\Microsoft.Adapters.Samples.EchoV2.dll へのパス* **>"**  
+     **gacutil.exe/if"\<**  *assembly\Microsoft.Adapters.Samples.EchoV2.dll へのパス*  **\>"**  
   
      これにより、アセンブリが GAC にインストールされて、同じアセンブリ名を持つ既存のアセンブリは上書きされます。  
   
 ### <a name="to-register-the-echo-adapter-with-windows-communication-foundation"></a>Windows Communication Foundation にエコー アダプターを登録するには  
   
-1.  Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、をクリックして**開始**をクリックして**実行**、型**メモ帳\<Windows のインストール パス > \Microsoft.NET\Framework\\< バージョン\>\CONFIG\machine.config**、クリックして**OK**です。  
+1.  Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、をクリックして**開始**をクリックして**実行**、型**メモ帳\<Windows のインストール パス\>\Microsoft.NET\Framework\\< バージョン\>\CONFIG\machine.config**、クリックして**OK**です。  
   
 2.  Machine.config ファイルを更新します。 Machine.config に system.serviceModel セクションが含まれていない場合は、ルート タグの終わりの前に、構成ファイルの末尾に次のセクションを追加します。  
   
@@ -122,4 +122,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [手順 8: エコー アダプターの同期受信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)   
- [チュートリアル 2: .NET からエコー アダプターを使用します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)
+ [チュートリアル 2: .NET からエコー アダプターを使用する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)

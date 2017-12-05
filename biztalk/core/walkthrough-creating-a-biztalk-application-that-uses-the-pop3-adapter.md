@@ -19,11 +19,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1af0d60eab23a3cbfff67a8b4b11dc73fb49afe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e677a4fb68ad4f6991585c191c8065a60b3fc337
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>チュートリアル: POP3 アダプターを使用する BizTalk アプリケーションの作成
 このセクションでは、POP3 アダプタを使用する簡単な Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成する手順について説明します。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**管理ツール**、順にクリック**POP3 サービス**です。  
   
-2.  展開 *\<servername >*メールボックスを作成するにはドメイン をクリックします。  
+2.  展開 *\<servername\>* メールボックスを作成するにはドメイン をクリックします。  
   
 3.  **POP3 サービス**ダイアログ ボックスの右側のウィンドウで、クリックして、**メールボックスの追加**オプション。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="create-the-receive-location"></a>受信場所を作成します。  
  受信場所を作成するには、次の手順を実行します。  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールが既定のデータベースをダブルクリックして **\<**  *machine_name***>。&Gt;.biztalkmgmtdb.dbo**ここで、 *machine_name*お使いのコンピューターの名前を指定します。 をクリックして**アプリケーション**をクリックし、 **[biztalk.application.1]**です。  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールが既定のデータベースをダブルクリックして **\<**  *machine_name***\>です。>.biztalkmgmtdb.dbo**ここで、 *machine_name*お使いのコンピューターの名前を指定します。 をクリックして**アプリケーション**をクリックし、 **[biztalk.application.1]**です。  
   
 2.  右クリック**受信ポート**をクリックして**新規**、 をクリックして**一方向受信ポート**です。  
   
@@ -161,4 +161,4 @@ ms.lasthandoff: 09/20/2017
 2.  フォルダ内のドキュメントをダブルクリックし、ドキュメントの内容をメモ帳で表示します。  
   
 ## <a name="see-also"></a>参照  
- [POP3 アダプターとは何ですか。](../core/what-is-the-pop3-adapter.md)
+ [POP3 アダプターについて](../core/what-is-the-pop3-adapter.md)

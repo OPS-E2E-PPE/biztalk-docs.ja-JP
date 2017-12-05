@@ -15,18 +15,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 760865f6f69559031b10bc9f4e609bbb3cfffa33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e88ec7506a299476dccb6ef9f9d0125768ea80b6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="defining-a-custom-bam-view-for-message-repair-and-new-submission-data"></a>Message Repair and 新しい送信データのカスタム BAM ビューを定義します。
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]セットアップでは、ビジネス アクティビティとビジネス ビューを定義する BAM 定義ファイルを提供します。 そのビューを使用する BAM 定義ファイルを展開することができますか、BAM 定義ファイルに追加できるカスタム ビューを作成することができます。  
   
- BAM 定義ファイルはで MrsrActivities.xml *\<ドライブ >*: \Program Files\Microsoft BizTalk Accelerator for SWIFT\BAMTracking です。 メッセージ アクティビティと RepairView ビューを定義します。 Bm を使用した MrsrActivities.xml の展開の詳細については、配置ユーティリティを参照してください[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+ BAM 定義ファイルはで MrsrActivities.xml *\<ドライブ\>*: \Program Files\Microsoft BizTalk Accelerator for SWIFT\BAMTracking です。 メッセージ アクティビティと RepairView ビューを定義します。 MrsrActivities.xml を bm を使用して、展開の詳細について展開ユーティリティ、BizTalk Server ヘルプを参照してください。  
   
- ビジネス アクティビティ監視ビュー ウィザードで BAM ブックからカスタム ビューを作成します。 カスタム ビューの作成に関する詳細については、「BAM ビューを作成する」を参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]情報ワーカーに役立ちます。  
+ ビジネス アクティビティ監視ビュー ウィザードで BAM ブックからカスタム ビューを作成します。 カスタム ビューの作成に関する詳細については、「BAM ビューを作成する」を参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 情報ワーカーのヘルプ。  
   
  MrsrActivities.xml でメッセージ アクティビティには、カスタム ビューに追加することができますを次の項目が含まれています。  
   
@@ -48,5 +48,5 @@ ms.lasthandoff: 09/20/2017
 |最後のステージ|ワークフロー (常にメッセージがここでは前に、の段階) で完了した最後の手順|ビジネス データ - Text|  
 |[状態]|次の値をとります。<br /><br /> 完成した (正常終了した場合)<br />-リセットしての理由 (ワークフローのワークフローが再起動される場合は、リセット)<br />障害の発生し、(場合は、正常に完了しなかったメッセージが拒否されたか、タイムアウト) の理由します。<br /><br /> このデータは常に存在します。|ビジネス データ - Text|  
 |Department|部門のポリシーに従って MRSRRepair オーケストレーションによって選択されている部門 (に依存する、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]機関)|ビジネス データ - Text|  
-|[ユーザー名]|前のステージに関連付けられているユーザーの名前 (上記の段階を参照してください)|ビジネス データ - Text|  
+|Username|前のステージに関連付けられているユーザーの名前 (上記の段階を参照してください)|ビジネス データ - Text|  
 |現在のステージ|MRSRRepair オーケストレーションに (たとえば、受信トレイ) メッセージが配信ワークフロー ステップです。<br /><br /> このデータは、メッセージのメッセージの修復が完了しない限り存在します。|ビジネス データ - Text|

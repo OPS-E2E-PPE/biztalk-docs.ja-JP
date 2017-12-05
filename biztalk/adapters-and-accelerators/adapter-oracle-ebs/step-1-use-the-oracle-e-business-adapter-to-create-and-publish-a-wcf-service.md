@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c03f11ad2849b3d46e9e489a1657aa043fb0e61
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ac179adbc2e49b767ecae2a68676c5692dcd385
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>手順 1: Oracle E-business アダプターを使用して作成して、WCF サービスを発行するには
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)][!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。  
   
- これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
+ これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
   
 > [!NOTE]
 >  作成する Microsoft Office SharePoint Server のサンプルに用意されている create_apps_artifacts.sql スクリプトを実行する必要があります、 **MS_SAMPLE_EMPLOYEE**インターフェイス テーブルに、**アプリケーション オブジェクト ライブラリ**アプリケーションです。 このインターフェイスのテーブルは、このチュートリアルで使用されます。  
@@ -186,7 +186,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
     ```  
   
     > [!NOTE]
-    >  SSL が有効な場所には、WCF サービスを公開する必要があります。 値、つまり、**ターゲットの場所**ボックスは、"https://"を始める必要があります。 ユーザーの資格情報は、HTTP ヘッダーに渡されるため、ウィザードは自動的に SSL 暗号化を意味するセキュリティ モードとして「トランスポート」を使用するアダプターのバインドの動作を構成します。 もちろん、戻っておよびの値を変更するために web.config ファイルを編集できます、 **\<セキュリティ モード >**パラメーターは、SSL を使用して常に推奨される選択肢機密情報がクリア テキストで転送がある場合、HTTP ヘッダー。  
+    >  SSL が有効な場所には、WCF サービスを公開する必要があります。 値、つまり、**ターゲットの場所**ボックスは、"https://"を始める必要があります。 ユーザーの資格情報は、HTTP ヘッダーに渡されるため、ウィザードは自動的に SSL 暗号化を意味するセキュリティ モードとして「トランスポート」を使用するアダプターのバインドの動作を構成します。 もちろん、戻っておよびの値を変更するために web.config ファイルを編集できます、 **\<セキュリティ モード\>**パラメーターは、SSL を使用して常に推奨される選択肢機密情報がクリア テキストで転送がある場合HTTP ヘッダーのテキストです。  
   
 3.  **コピー**ボックスで、クリックして**すべてのプロジェクト ファイル**です。  
   
@@ -196,7 +196,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
   
     1.  IIS の Microsoft 管理コンソールを起動します。 をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-    2.  サービスを発行したノードに移動します。 **MS_SAMPLE_EMPLOYEE**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名 >**  > **Websites** > **既定の Web サイト** > **MS_SAMPLE_EMPLOYEE**です。  
+    2.  サービスを発行したノードに移動します。 **MS_SAMPLE_EMPLOYEE**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名\>**  > **Websites** > **既定の Web サイト** > **MS_SAMPLE_EMPLOYEE**です。  
   
     3.  右側のペインで InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.svc ファイルを右クリックし、をクリックして**参照**です。  
   

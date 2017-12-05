@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97fa5f9d0eebeeaf7a7dcb264feb33373e48484d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 379ef13914d7c6136d39e4a394a9299c709785fc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースで特定のタスクを完了する通知メッセージの処理
 使用することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベース テーブルへの変更の通知を受信します。 ただし、アダプターのみ通知を送信することレコードの一部挿入、更新されると、またはされた特定のデータベース テーブルで削除します。 後処理これらのレコードには、クライアント アプリケーション自体で処理される必要があります。 このトピックでは、Oracle データベースから受信した通知の種類に基づいてテーブル内のレコードを処理する方法のシナリオ ベースの説明を示します。  
@@ -141,7 +141,7 @@ ms.lasthandoff: 09/20/2017
   
  サンプル オーケストレーションには、次のようになります。  
   
- ![Post & #45 を実行するオーケストレーション以外の通知タスク](../../adapters-and-accelerators/adapter-oracle-database/media/40c637ea-dbec-47a8-b53b-58d6820093b4.gif "40c637ea-dbec-47a8-b53b-58d6820093b4")  
+ ![Post &#45;を実行するオーケストレーション以外の通知タスク](../../adapters-and-accelerators/adapter-oracle-database/media/40c637ea-dbec-47a8-b53b-58d6820093b4.gif "40c637ea-dbec-47a8-b53b-58d6820093b4")  
   
 ### <a name="adding-message-shapes"></a>メッセージの構築図形を追加します。  
  メッセージの構築図形のごとに、次のプロパティを指定することを確認してください。 図形 列に表示名は、単に記載されているオーケストレーションに表示されるメッセージの構築図形の名前です。  
@@ -154,7 +154,7 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションの式図形をなどの目的は、受信した通知メッセージの種類を抽出する xpath クエリにです。 Xpath クエリを作成する前に、通知メッセージの形式について見てみましょう。 一般的な通知メッセージには、次のようになります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
   <Details>  
     <NotificationDetails>  
@@ -178,7 +178,7 @@ ms.lasthandoff: 09/20/2017
   
      このトピックの名前を変数として**NotificationType**です。  
   
--   値を抽出する xpath クエリを作成、\<情報 > タグです。 Xpath クエリは、次のようになります。  
+-   値を抽出する xpath クエリを作成、\<情報\>タグ。 Xpath クエリは、次のようになります。  
   
     ```  
     NotificationType = xpath(NotifyReceive,"string(/*[local-name()='Notification']/*[local-name()='Info']/text())");  
@@ -274,7 +274,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   **NotifyOnListenerStart**に設定されているプロパティのバインド**True**、次のメッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>OracleDBBinding</Source>   
@@ -287,7 +287,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   ACCOUNTACTIVITY テーブルにレコードを挿入します。 次のような通知メッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -310,7 +310,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   ACCOUNTACTIVITY テーブル内のレコードを更新します。 次のような通知メッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -333,7 +333,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   ACCOUNTACTIVITY テーブルからレコードを削除します。 次のような通知メッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
       <Details>  
         <NotificationDetails>  

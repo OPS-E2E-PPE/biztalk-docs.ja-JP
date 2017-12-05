@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f6bc29589f0546dda3841221fcce3ab91d704ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0bd7c03e4cfa586a0dddd2579931bd5f30d293fa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendports-biztalk-server-sample"></a>SendPorts (BizTalk Server サンプル)
 SendPorts サンプルを列挙しを使用して送信ポートを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラスです。  
@@ -61,7 +61,7 @@ SendPorts サンプルを列挙しを使用して送信ポートを管理する�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\SendPorts  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -82,7 +82,7 @@ SendPorts サンプルを列挙しを使用して送信ポートを管理する�
   
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\SendPorts\bin\Debug  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts\bin\Debug  
   
 2.  SendPorts.exe ファイルを実行します。  
   
@@ -339,4 +339,4 @@ DeleteSendPorts() completed.
 ```  
   
 ## <a name="see-also"></a>参照  
- [Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM (BizTalk Server Samples フォルダー)](../core/admin-explorerom-biztalk-server-samples-folder.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b0e9be1934374d1aa8def379560f675493c590d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 339e80776dac32e25f96da5c62675f1a8d6075ee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-message-acknowledgments"></a>メッセージの受信確認を構成します。
 使用する、[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]構成エクスプ ローラー**受信確認**タブを受信し、生成された受信確認の受信確認プロパティを指定します。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-open-btahl7-configuration-explorer"></a>BTAHL7 構成エクスプ ローラーを開く  
   
--   をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk\<バージョン > Accelerator 用 HL7**、クリックして**BTAHL7構成のエクスプ ローラー**です。  
+-   をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**、クリックして**BTAHL7 構成エクスプ ローラー**です。  
   
 ### <a name="to-configure-message-acknowledgments"></a>メッセージの受信確認を構成するには  
   
@@ -60,4 +60,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [確認の構成の設定](../../adapters-and-accelerators/accelerator-hl7/ack-configuration-settings.md)   
  [確認の設定](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-settings.md)   
- [作成して、受信確認の処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)
+ [受信確認の作成と処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)

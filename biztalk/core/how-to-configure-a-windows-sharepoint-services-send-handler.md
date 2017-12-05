@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 654fb0eb246cdc8507d1830afce29ebd71fe6a4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8e110fb2a671fc839fb96cfdc2ad03169649e6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-windows-sharepoint-services-send-handler"></a>Windows SharePoint Services 送信ハンドラを構成する方法
 次の手順を使用して、Windows SharePoint Services 送信ハンドラが関連付けられているホストを変更します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-change-global-variables-for-a-windows-sharepoint-services-send-handler"></a>Windows SharePoint Services 送信ハンドラのグローバル変数を変更するには  
   
-1.  BizTalk Server 管理コンソールをクリックして展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**、クリックして展開し、 **BizTalk グループ [\<servername >:\<管理データベース >**をクリックして展開**プラットフォームの設定**、クリックして展開し、**アダプター**です。 フォルダの下にアダプタの一覧が表示されます。  
+1.  BizTalk Server 管理コンソールをクリックして展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**、クリックして展開し、 **BizTalk グループ [\<servername\>:\<管理データベース\>]**をクリックして展開**プラットフォームの設定**、クリックして展開し、**アダプター**です。 フォルダの下にアダプタの一覧が表示されます。  
   
 2.  をクリックして**Windows SharePoint Services**、右側のウィンドウで、構成、およびをクリックする送信ハンドラを右クリックし、**プロパティ**です。  
   
@@ -50,4 +50,4 @@ ms.lasthandoff: 09/20/2017
  [送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)   
  [Windows SharePoint Services アダプターのプロパティのリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)   
  [Windows SharePoint Services アダプターの式](../core/windows-sharepoint-services-adapter-expressions.md)   
- [Windows SharePoint Services 列の型のサポート](../core/supported-windows-sharepoint-services-column-types.md)
+ [サポートされている Windows SharePoint Services 列の型](../core/supported-windows-sharepoint-services-column-types.md)

@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-peoplesoft-enterprise/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8a2b78ee2e8ec75c6ce83a8b78d1e779f012f324
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 907c21377a6affd5a99576137a5babaa1626c135
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="import-binding-files"></a>バインド ファイルをインポートします。
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 11/07/2017
   
 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] が展開先のコンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除することができます。  
   
-**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveSendPort.vbs の送信**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveSendPort.vbs の送信**  
   
-**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveReceivePort.vbs の受信**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove 受信 Port\VBScript\RemoveReceivePort.vbs**  
   
 たとえば、コマンド プロンプトで次のように実行します。  
   
-**cscript RemoveSendPort.vbs\<送信ポートの名前 >**  
+**cscript RemoveSendPort.vbs\<送信ポートの名前\>**  
   

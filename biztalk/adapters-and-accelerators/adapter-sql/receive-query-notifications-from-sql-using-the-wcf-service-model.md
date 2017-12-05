@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5507bbb21d1b5648a10be2230dd4476eacca1c78
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b21d2123b646a02669a9da65efc5069931e64c69
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL のクエリ通知を受信します。
 このトピックの内容を構成する方法を示しています、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server データベースからクエリ通知メッセージを受信します。 通知を示すためには、テーブル、従業員、"Status"列を含むを検討してください。 このテーブルに新しいレコードが挿入されると、[状態] 列の値は 0 に設定します。 [状態] 列が「0」であるすべてのレコードを取得する SQL ステートメントを使用して通知を登録することによって通知を受信するアダプターを構成します。 これを行うための SQL ステートメントを指定することによって、 **NotificationStatement**プロパティをバインドします。 アダプターのクライアントは、通知を受信した後、SQL Server データベースで、それ以降の作業を実行するためのロジックを格納できます。 わかりやすくするため、この例では、アダプターのクライアントが「0」として、[状態] 列を持つテーブル内のすべてのレコードを一覧表示します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
 |プロパティのバインド|Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|受信操作を実行することを指定します。 通知メッセージを受信するには、これを設定**通知**です。|  
-|**NotificationStatement**|SQL ステートメントを指定します (選択または EXEC \<*ストアド プロシージャ*>) のクエリ通知を登録するために使用します。 アダプターは、指定された SQL ステートメントの変更の結果セットの場合にのみ、SQL Server から通知メッセージを取得します。|  
+|**NotificationStatement**|SQL ステートメントを指定します (選択または EXEC \<*ストアド プロシージャ*\>) のクエリ通知を登録するために使用します。 アダプターは、指定された SQL ステートメントの変更の結果セットの場合にのみ、SQL Server から通知メッセージを取得します。|  
 |**NotifyOnListenerStart**|リスナーが開始されたときに、アダプターがアダプターのクライアントに通知を送信するかどうかを指定します。|  
   
  これらのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 使用する方法の詳細については、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]さらに通知を受信する SQL Server から、読み取る。  
@@ -174,7 +174,7 @@ namespace SqlAdapterBindingNamespace {
   
                 Console.WriteLine("The details of the newly added employee are:");  
                 Console.WriteLine("********************************************");  
-                for (int i = 0; i \< selectRecords.Length; i++)  
+                for (int i = 0; i < selectRecords.Length; i++)  
                 {  
                     Console.WriteLine("Employee Name      : " + selectRecords[i].Name);  
                     Console.WriteLine("Employee Designation: " + selectRecords[i].Designation);  

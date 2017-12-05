@@ -17,14 +17,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf40cf5a81188dae0174199f16229daf61115796
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cce166c5d05b8ce48f513420e247e8f35ca1d509
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-soap-headers-in-wcf-messages-with-pipeline-components"></a>パイプライン コンポーネントでの WCF メッセージにおける SOAP ヘッダーの使用
-パイプライン コンポーネントの WCF アダプタでカスタム SOAP ヘッダーを設定できます。 コンテキスト プロパティ名の組み合わせを使用する**OutboundCustomHeaders**、およびターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**です。 使用すると、 **OutboundCustomHeaders**プロパティ、プロパティには、 \<**ヘッダー**> 要素をルート要素として。 内のすべてのカスタム SOAP ヘッダーに配置する必要があります、 \<**ヘッダー**> 要素。 カスタム SOAP ヘッダーの値が空の文字列の場合は、割り当てる必要があります\<**ヘッダー**>\</**ヘッダー**> または\< **ヘッダー**/> に、 **OutboundCustomHeaders**プロパティです。 WCF アダプタで SOAP ヘッダーを使用する方法の詳細についてを参照してください、with the WCF Adapters」カスタム SOAP ヘッダーを使用して、SDK サンプルから[http://go.microsoft.com/fwlink/?LinkId=79960](http://go.microsoft.com/fwlink/?LinkId=79960)です。  
+パイプライン コンポーネントの WCF アダプタでカスタム SOAP ヘッダーを設定できます。 コンテキスト プロパティ名の組み合わせを使用する**OutboundCustomHeaders**、およびターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**です。 使用すると、 **OutboundCustomHeaders**プロパティ、プロパティには、 \<**ヘッダー** \>ルート要素としての要素。 内のすべてのカスタム SOAP ヘッダーに配置する必要があります、 \<**ヘッダー** \>要素。 カスタム SOAP ヘッダーの値が空の文字列の場合は、割り当てる必要があります\<**ヘッダー**\>\</**ヘッダー** \>または\<**ヘッダー** / \>を**OutboundCustomHeaders**プロパティです。 WCF アダプタで SOAP ヘッダーを使用する方法の詳細についてを参照してください、with the WCF Adapters」カスタム SOAP ヘッダーを使用して、SDK サンプルから[http://go.microsoft.com/fwlink/?LinkId=79960](http://go.microsoft.com/fwlink/?LinkId=79960)です。  
   
  次のコード例は、という名前のプロパティの送信パイプライン コンポーネントでカスタム SOAP ヘッダーを設定**OutboundCustomHeaders**:  
   

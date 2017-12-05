@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65bcb2681cceb450995b18b7dc00d3d8f5a44d30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 59bff4a6b5962410b758f73895105eac280fa6c8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-exception-management-samples"></a>アセンブリおよび例外管理のサンプルがインストールされているアイテム
 次の表には、アセンブリおよび ESB 例外管理サンプル用にインストールされた他のアイテムが一覧表示します。  
@@ -48,4 +48,4 @@ ms.lasthandoff: 09/20/2017
 |||GlobalBank.ESB.ExceptionHandling.Processes バージョン 2.0.0.0 以降|  
 |||GlobalBank.ESB.ExceptionHandling.Schemas バージョン 2.0.0.0 以降|  
 |||GlobalBank.ESB.ExceptionHandling.Pipelines バージョン 2.0.0.0 以降|  
-|%Program Files %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline コンポーネント|パイプライン コンポーネント||
+|%Program Files %\\BizTalk Server\Pipeline コンポーネント|パイプライン コンポーネント||

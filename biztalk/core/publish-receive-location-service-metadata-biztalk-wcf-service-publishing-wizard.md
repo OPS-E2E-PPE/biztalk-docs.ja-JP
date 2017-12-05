@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93f739620b16514df26c836d645af41b8be0e8eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2dce9a66465285dc16f8de804c7a6e99fa7e62a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-bound-to-an-orchestration-port"></a>BizTalk WCF サービス公開ウィザードを使用してオーケストレーション ポートにバインドされた WCF 受信場所にサービス メタデータを公開する方法
 WCF サービスを作成して、オーケストレーション ポートにバインドされた既存の WCF 受信場所にサービス メタデータを公開するには、BizTalk WCF サービス公開ウィザードを使用します。  
@@ -72,7 +72,7 @@ WCF サービスを作成して、オーケストレーション ポートにバ
   
      ![WCF サービスのプロパティ ページ](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
   
-9. **WCF サービスの場所**] ページの [、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (http://localhost/\<*BizTalk アセンブリ名*>)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはをクリックして**参照** Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
+9. **WCF サービスの場所**] ページの [、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (http://localhost/ <*BizTalk アセンブリ名*>)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはをクリックして**を参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
   
     -   **既存のプロジェクトを上書きします。** : このオプションは、Web ディレクトリが存在する場合のみ選択できます。 このオプションを選択すると、同じ場所にのみ公開できます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
   
@@ -83,10 +83,10 @@ WCF サービスを作成して、オーケストレーション ポートにバ
      ![WCF サービスの場所 ページ](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
   
     > [!NOTE]
-    >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーで発行するプロジェクト名を入力として http://\<*servername*>/\<*WCF サービスの場所*>。  
+    >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーで発行するプロジェクト名を入力として http://&lt です*servername*>/<*WCF サービスの場所*>。  
   
     > [!NOTE]
-    >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、http://\<*servername*>: 8080/\<*WCF サービスの場所*>。  
+    >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、http://&lt*servername*>: 8080/<*WCF サービスの場所*>。  
   
     > [!NOTE]
     >  ウィザードで Web アプリケーションの App_DataTemp フォルダーに作成される BindingInfo.xml ファイルは、パイプラインの既定値を使用します。 受信パイプラインの既定値は、 **Microsoft.BizTalk.DefaultPipelines.XMLReceive**パイプライン、および既定値、送信パイプラインは、 **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**パイプライン。  
@@ -106,7 +106,7 @@ WCF サービスを作成して、オーケストレーション ポートにバ
   
 2.  コマンド プロンプトを開き、BizTalk WCF サービス公開ウィザードが %SystemDrive%\InetPub で WCF サービスを作成する場所のフォルダーに移動\\、メモ帳を使用して Web.config ファイルを開きます。  
   
-3.  メモ帳で、内部の次の行を追加、  **\<system.web >**要素。  
+3.  メモ帳で、内部の次の行を追加、  **\<system.web\>** 要素。  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -127,7 +127,7 @@ WCF サービスを作成して、オーケストレーション ポートにバ
   
     1.  メモ帳で、%SystemDrive%\InetPub で、BizTalk WCF サービス公開ウィザードが、WCF サービスを作成するフォルダーの Web.config を開き\\です。  
   
-    2.  メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、  **\<serviceMetadata >**要素を、次の行と同様に false にします。  
+    2.  メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、  **\<serviceMetadata\>** 要素を、次の行と同様に false にします。  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  
@@ -135,4 +135,4 @@ WCF サービスを作成して、オーケストレーション ポートにバ
   
 ## <a name="see-also"></a>参照  
  [BizTalk WCF サービス公開ウィザードを使用して、コンテンツ ベース ルーティングの WCF 受信場所用にサービス メタデータを公開する方法](../core/publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing.md)   
- [チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスの発行](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)
+ [チュートリアル: WCF-NetMsmq アダプターを使用した WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)

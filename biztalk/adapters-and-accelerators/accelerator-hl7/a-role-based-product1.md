@@ -13,14 +13,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f3bd77d048df1cb97b5b87676fc5d9e6fa6413e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14e294282169018282c0468ff16f0223e8f24c90
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-role-based-product"></a>ロール ベースの製品
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) で、次の説明に従って、ユーザーのロールの適切な環境の機能とツールを提供します。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) で、次の説明に従って、ユーザーのロールの適切な環境の機能とツールを提供します。  
   
 -   開発者用のツールが組み込ま[!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]です。 開発者はソリューションやソリューション エクスプ ローラーでプロジェクトを管理し、BizTalk のデザイン時ツールをすぐにアクセスできます。  
   

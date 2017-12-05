@@ -1,7 +1,7 @@
 ---
 title: "データベースのパフォーマンスの計画 |Microsoft ドキュメント"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/29/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,34 +12,35 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1338088acc91a45572ae1b49131d99f6c58cb739
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 878320cf7c6a5762626087964033430afcf611cf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-database-performance"></a>データベースのパフォーマンスの計画
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、非常に高くデータベース処理を要するアプリケーションで Microsoft 最大 13 個の独立したデータベースを作成することがあります[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。 データベース処理を要するの性質[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、適切なバージョンとエディションを選択する重要な要素は[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]を格納する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。 実行しているコンピューターのパフォーマンスを最適化するために[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]そのハウス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース」を参照し、推奨事項に従い、 [BizTalk Server データベースの最適化](http://go.microsoft.com/fwlink/?LinkID=101578)ホワイト ペーパー ([http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578))。  
+
+## <a name="overview"></a>概要
+Microsoft BizTalk Server は非常に高くデータベース処理を要するアプリケーションの Microsoft SQL Server に最大 13 個ある異なるデータベースの作成が必要な場合があります。 BizTalk Server のデータベース処理を要する性質があるためには重要な意味、適切なバージョンと、BizTalk Server データベースを格納する SQL Server のエディションを選択することです。 BizTalk Server データベースを格納する SQL Server を実行しているコンピューターのパフォーマンスを最適化する」を参照し、推奨事項に従い、 [BizTalk Server データベースの最適化](optimizing-database-performance.md)です。
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]どちらのデータベースをインストールする必要があります[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]または[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]です。  
-  
+
 > [!NOTE]  
->  このホワイト ペーパーが他のバージョンの書き込み中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、に対して同じ推奨事項を使用する[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]と[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]  / [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]です。  
+>  このガイドは、BizTalk Server と SQL Server の他のバージョンの書き込みは、中に新しいバージョンを同じの推奨事項を使用できます。
   
 ## <a name="considerations-for-sql-server-editions"></a>SQL Server のエディションに関する考慮事項  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースは、できるだけ専用の SQL Server インスタンスで実行するよう構成してください。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースの処理を要するアプリケーション、その分離、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターと格納される SQL Server コンピューター、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースがパフォーマンスが向上し、実稼働でのベスト プラクティスを考慮する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境.  
+ BizTalk Server データベースは、できるだけ専用の SQL Server インスタンス上で実行するように構成する必要があります。 BizTalk Server は、データベースの処理を要するアプリケーションを BizTalk Server コンピューターのための分離と、BizTalk Server データベースを格納する SQL Server コンピューターが、パフォーマンスが向上し、実稼働の BizTalk Server ではベスト プラクティスを考慮する必要があります。環境。  
   
- さまざまなエディション[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]のパフォーマンスが低下する可能性がさまざまな機能を提供、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 など、高負荷条件下で使用可能な数のデータベースの 32 ビット バージョンで利用可能なロック[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]を超える可能性が、これは、BizTalk ソリューションのパフォーマンスを低下させます。 テスト環境でロックの範囲外"エラーが発生した場合、64 ビット バージョンの SQL Server にメッセージ ボックス データベースを格納していることを検討してください。 64 ビット バージョンの SQL Server では、使用できるロックの数が大幅に増えます。  
+ SQL Server の各種エディションでは、BizTalk Server 環境のパフォーマンスが低下する可能性が別の機能を提供します。 たとえば、高負荷条件下で 32 ビット バージョンの SQL Server で利用可能な使用可能なデータベース ロックの数可能性があるを超えると、これは、BizTalk ソリューションのパフォーマンスを低下させます。 テスト環境でロックの範囲外"エラーが発生した場合、64 ビット バージョンの SQL Server にメッセージ ボックス データベースを格納していることを検討してください。 64 ビット バージョンの SQL Server では、使用できるロックの数が大幅に増えます。  
   
- BizTalk 環境に必要な機能するとき、データベース エンジンの決定を下にあるテーブルを検討してください。 例を実行しているときに、小規模なソリューションを[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Branch エディション[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]  /  [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] Workgroup Edition ハウジングに適合している可能性があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。 大規模なエンタープライズ レベルのソリューションをクラスタ リングを必要とするサポート、BizTalk ログ配布のサポート、または Analysis Services がサポートして必要があります[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]  /  [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]ハウスに Enterprise Edition、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース。  
+ BizTalk 環境に必要な機能するとき、データベース エンジンの決定を下にあるテーブルを検討してください。 小規模なソリューションは、BizTalk Server Branch エディションを実行する場合、たとえば SQL Server Workgroup Edition 可能性があります、BizTalk Server データベースを格納する適切です。 大規模なエンタープライズ レベルのソリューションをクラスタ リングのサポートを必要とする BizTalk ログ配布のサポート、または Analysis Services のサポート、SQL Server Enterprise Edition のデータベースをホストする必要があります。  
   
-|SQL Server のバージョンとエディション|64 ビットのサポート|複数インスタンスのサポート|クラスタ リングのサポート|Analysis Services|  
-|---------------------------------------|---------------------|-----------------------------|------------------------|-----------------------|  
-|SQL Server 2008 SP1 または SQL Server 2008 R2 Enterprise Edition|はい|可|可|はい|  
-|[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] / [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]Standard Edition|はい|はい|[はい] (2 ノード)|はい|  
-|[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] / [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]Workgroup Edition|はい|可|いいえ|不可|  
+|SQL Server のエディション|64 ビットのサポート|複数インスタンスのサポート|クラスタ リングのサポート|Analysis Services|  
+|---|---|---|---|---|  
+|SQL Server Enterprise Edition|可|可|可|可|  
+|SQL Server Standard Edition|可|可|[はい] (2 ノード)|可|  
+|SQL Server Workgroup Edition|可|可|いいえ|不可|  
   
 > [!NOTE]  
->  BAM RTA 必要[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]  /  [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] Enterprise Edition。  
+>  BAM RTA では、SQL Server Enterprise Edition が必要です。  
   
- 各エディションでサポートされる機能の完全な一覧については[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]を参照してください[、エディションの SQL Server 2008 R2 でサポートされる機能](http://go.microsoft.com/fwlink/?LinkId=151940)([http://go.microsoft.com/fwlink/?LinkId = 151940](http://go.microsoft.com/fwlink/?LinkId=151940)) で、[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]ドキュメント。
+ 各エディションでサポートされる機能の完全な一覧を参照してください。 [SQL Server のエディションでサポートされる機能](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-2016)します。

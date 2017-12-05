@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b503f423d736d9c5f08c7d04a84110a85564d11d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d9ebd9fe513e302c5bee83e902ed0d275c8785b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-7-building-and-deploying-the-doubleaction-sdk-sample"></a>手順 7: ビルドと DoubleAction SDK サンプルの展開
 DoubleAction.odx サンプルでは、オーケストレーションを実装し、ダブル アクションの PIP (Partner Interface Process) である 0C2、0C4、3A2、および 3A40 に対する応答を自動的に生成する方法を示します。 このサンプル プロジェクトを拡張し、さらに多くのダブルアクション PIP をサポートすることもできます。  
@@ -31,12 +31,12 @@ DoubleAction.odx サンプルでは、オーケストレーションを実装し
 ### <a name="to-build-and-initialize-the-doubleaction-sample"></a>DoubleAction サンプルをビルドして初期化するには  
   
 1.  Contoso コンピューターのコマンド プロンプト ウィンドウで、次のフォルダーに移動します。   
-    *\<ドライブ >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk\pipautomation\doubleaction\\です。  
+    *\<ドライブ\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\doubleaction\\です。  
   
     > [!NOTE]
     >  セットアップ プログラムを実行する前に、メモ帳で DoubleAction.sql ファイル (上のフォルダーに置かれています) を開きます。 **ファイル** メニューのをクリックして**名前を付けて保存**です。 **エンコード**ボックスで、 **ANSI**クリックしてドロップダウン リストから**保存**です。 をクリックして**はい**既存のファイルを上書きします。  
   
-2.  [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] を SQL Server 2008 R2/2008 SP1 上で実行している場合は、同じフォルダーにある setupx64.bat を実行します。 バッチ ファイルによって、次の処理が実行されます。  
+2.  BizTalk Server のインストールが SQL Server 2008 R2 または 2008 SP1 を実行している場合は、同じフォルダーに setupx64.bat を実行します。 バッチ ファイルによって、次の処理が実行されます。  
   
     -   BTARNDATA データベースに、MessagesToLOB テーブルからアクション メッセージを取得する SQL ストアド プロシージャ (`PipAutomationGetAction`) を作成します。  
   
@@ -56,7 +56,7 @@ DoubleAction.odx サンプルでは、オーケストレーションを実装し
         > [!NOTE]
         >  DoubleAction.odx にバインドされていることを確認**MessagesToLOB_Receive_Port**オーケストレーションが開始されているとします。  
   
-3.  [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]管理コンソールで、展開、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション 1**ノード。 クリックして、**オーケストレーション**ノード。 右クリックし、 **DoubleAction**オーケストレーション、およびクリック**プロパティ**です。 [プロパティ] ダイアログ ボックス、**バインド**ノードを展開し、セット、**ホスト**に**BizTalkServerApplication**設定と、**受信ポート**に**[messagetolob_receiveport]**です。 **[OK]**をクリックします。 右クリックし、 **DoubleAction**オーケストレーション、およびクリック**開始**です。  
+3.  BizTalk Server 管理コンソールで、展開、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション 1**ノード。 クリックして、**オーケストレーション**ノード。 右クリックし、 **DoubleAction**オーケストレーション、およびクリック**プロパティ**です。 [プロパティ] ダイアログ ボックス、**バインド**ノードを展開し、セット、**ホスト**に**BizTalkServerApplication**設定と、**受信ポート**に**[messagetolob_receiveport]**です。 **[OK]**をクリックします。 右クリックし、 **DoubleAction**オーケストレーション、およびクリック**開始**です。  
   
 ## <a name="see-also"></a>参照  
- [作成して、Fabrikam のソリューションを構成します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-the-fabrikam-solution.md)
+ [Fabrikam ソリューションの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-the-fabrikam-solution.md)

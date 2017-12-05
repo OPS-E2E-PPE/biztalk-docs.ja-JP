@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36902e2c5e90ce1b02f40f6994f150fa4c421c7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db4a8ef2def05e0b77d272463d7a79f937623b1a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-the-biztalk-esb-toolkit-utilities"></a>BizTalk ESB Toolkit ユーティリティを使用します。
 このセクションの一部として含まれているさまざまなユーティリティの説明、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
@@ -33,17 +33,17 @@ ms.lasthandoff: 09/20/2017
   
  さまざまなパラメーターを受け入れる次に示します。  
   
- /?:\<パラメーターのヘルプを表示 >  
+ /?:\<パラメーターのヘルプを表示します。\>  
   
- /f:\<行程 xml ファイルのパス >  
+ /f:\<行程 xml ファイルのパス\>  
   
- 展開/c\<発行 &#124; 展開 >  
+ 展開/c\<発行 &#124; 展開\>  
   
- /n:\<行程の既定の名前 >  
+ /n:\<行程の既定の名前\>  
   
- /v:\<行程の既定のバージョン ('<major.minor' の形式) >  
+ /v:\<行程の既定のバージョン ('<major.minor' の形式)\>  
   
- /o:\<サイレント上書き >  
+ /o:\<サイレントの上書き\>  
   
  このユーティリティを使用する方法の例を次に示します。  
   

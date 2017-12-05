@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fccdeefa35f9abb5a0c3158dba518d524811c611
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5720402e548992044eda26366c8b7b50bb95746a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-label-and-comment-a-functoid"></a>Functoid にラベル付けする方法とコメントを追加する方法
 ラベルとコメントは、マップの Functoid またはリンクの目的を文書化するのに役立ちます。 使用することができます、**ラベル**functoid の名前を指定するプロパティです。 **コメント**プロパティでは、によって実行される操作についての関連する通常、functoid に関する追加情報を提供することができます。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  Functoid のラベルとコメントは次の方法で指定できます。  
   
--   使用して、**構成\<Functoid > Functoid**  ダイアログ ボックス。  
+-   使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックス。  
   
 -   使用して、**プロパティ**ウィンドウです。  
   
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  Functoid のラベルとコメント、して、をクリックを右クリックして**Functoid 入力の構成**です。  
   
-2.  **構成\<Functoid > Functoid**ダイアログ ボックスで、をクリックして、**ラベルとコメント**タブです。  
+2.  **構成\<Functoid\> Functoid**ダイアログ ボックスで、をクリックして、**ラベルとコメント**タブです。  
   
 3.  次の情報を入力し、クリックして**OK**です。  
   

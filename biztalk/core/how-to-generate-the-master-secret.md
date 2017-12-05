@@ -15,11 +15,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfbe186aee99616fa35e8f1e98f67c6ac75593c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1a7ee4f8ffe73a71e8c0b2e3d45c7a966669fd8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-generate-the-master-secret"></a>マスター シークレットを生成する方法
 この作業を実行するには、マスター シークレット サーバーに対する管理者権限が必要です。 また、この作業はマスター シークレット サーバーから実行する必要があります。  
@@ -44,9 +44,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssoconfig – generateSecret \<*バックアップ ファイル*>**ここで、 \<*バックアップ ファイル*> をマスター シークレットを含むファイルの名前を指定します。  
+3.  型 **ssoconfig – generateSecret \<*バックアップ ファイル*\>**ここで、 \<*バックアップ ファイル*\>マスター シークレットを含むファイルの名前を指定します。  
   
      作成したファイルを保護するためのパスワードを入力するように求められます。  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [マスター シークレットをバックアップする方法](../core/how-to-back-up-the-master-secret.md)   
  [マスター シークレット サーバー](../core/master-secret-server.md)   
- [マスタ シークレットの管理](../core/managing-the-master-secret.md)
+ [マスター シークレットの管理](../core/managing-the-master-secret.md)

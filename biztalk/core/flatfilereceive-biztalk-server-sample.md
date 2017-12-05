@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e990e402b0b05c530764d578219adccc386b82cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db996437cce8cb6f89fb00b589fcbc95429e72f2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="flatfilereceive-biztalk-server-sample"></a>FlatFileReceive (BizTalk Server サンプル)
 FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用してフラット ファイルを同等の .xml ファイルに変換する方法を示します。  
@@ -51,7 +51,7 @@ FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includ
 -   XmlTransmit が送信パイプラインとして使用されます。 プロパティの降格または他のメッセージ処理が送信ポートで必要ない場合は、PassThruTransmit パイプラインを使用してください。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Pipelines\AssemblerDisassembler\FlatFileReceive\  
+ *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -72,13 +72,13 @@ FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includ
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<サンプル パス >*\Pipelines\AssemblerDisassembler\FlatFileReceive  
+     *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプルの入力 (FFInput) フォルダと出力 (FFOutput) フォルダを作成します。  
   
-         *\<サンプル パス >*\Pipelines\AssemblerDisassembler\FlatFileReceive  
+         *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive  
   
     -   このサンプル用に Visual Studio プロジェクトをコンパイルおよび展開します。  
   
@@ -120,7 +120,7 @@ FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includ
 -   **BTSTask RemoveApp** FlatFileReceiveApplication を削除するには  
   
 ## <a name="see-also"></a>参照  
--  [パイプライン AssemblerDisassembler (BizTalk Server Samples フォルダ)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
+-  [Pipelines-AssemblerDisassembler (BizTalk Server サンプル フォルダー)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
 -  [フラット ファイル逆アセンブラー パイプライン コンポーネント](../core/flat-file-disassembler-pipeline-component.md)   
 -  [フラット ファイル スキーマ](../core/flat-file-schemas.md)   
 -  [既定のパイプライン](../core/default-pipelines.md)   

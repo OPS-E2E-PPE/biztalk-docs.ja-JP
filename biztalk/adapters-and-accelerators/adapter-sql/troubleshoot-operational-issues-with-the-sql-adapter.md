@@ -13,11 +13,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82bfb1782c6bccdafe4f69326cddff0f49974386
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 5b6850a1b8c3b0cb5d1356078fce8dc8f50c6963
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-sql-adapter"></a>SQL アダプタで運用上の問題をトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]です。  
@@ -66,7 +66,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  使用して SQL Server データベースに任意の操作を実行するときに、アダプターは、次のエラーを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  
   
--   **の[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  
@@ -123,26 +123,26 @@ ErrorCode:5
   
  **解決策**  
   
--   **の[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
-    1.  Machine.config には、WCF アダプターのタイムアウトを指定します。下にある machine.config ファイルに移動\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG し、次のような抜粋を追加します。  
+    1.  Machine.config には、WCF アダプターのタイムアウトを指定します。下にある machine.config ファイルに移動\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG し、次のような抜粋を追加します。  
   
         ```  
         <configuration>  
-         \<system.transactions>  
+         <system.transactions>  
           <machineSettings maxTimeout="02:00:00" />  
-         \</system.transactions>  
+         </system.transactions>  
         </configuration>  
         ```  
   
          この設定では、WCF アダプターのタイムアウトは 2 時間に設定されます。  
   
-    2.  Machine.config には、MSDTC トランザクションのタイムアウト設定を指定します。下にある machine.config ファイルに移動\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG し、次のような抜粋を追加します。  
+    2.  Machine.config には、MSDTC トランザクションのタイムアウト設定を指定します。下にある machine.config ファイルに移動\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG し、次のような抜粋を追加します。  
   
         ```  
-        \<system.transactions>   
+        <system.transactions>   
                 <defaultSettings distributedTransactionManagerName="<computer_name>" timeout="02:00:00"/>   
-            \</system.transactions>  
+            </system.transactions>  
   
         ```  
   

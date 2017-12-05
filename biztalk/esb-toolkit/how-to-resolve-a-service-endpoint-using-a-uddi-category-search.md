@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3953baf4a60e2863f986ec54fe9c12663b2b587d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 207c50c8f2dc61c0e7e86f865fec470dae4d2e84
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-resolve-a-service-endpoint-using-a-uddi-category-search"></a>方法: UDDI カテゴリの検索を使用してサービス エンドポイントを解決するには
 ## <a name="goal"></a>[目標]  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-itinerary-model"></a>Itinerary モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -169,8 +169,8 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: キーの検索をバインド UDDI を使用してサービス エンドポイントを解決するには](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+-   [方法: UDDI バインド キー検索を利用し、サービス エンドポイントを解決する](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [動的な解決を使用して、ルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [動的な解決とルーティングを利用する](../esb-toolkit/using-dynamic-resolution-and-routing.md)

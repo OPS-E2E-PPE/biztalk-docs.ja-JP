@@ -13,18 +13,18 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5181c501543c1dc1518665a55f4429ae12b4cf06
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 5780e90260f591696e494411deff97a4cdc246f3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="samples-in-the-sdk"></a>SDK のサンプル
 
 ## <a name="folder-paths"></a>フォルダーのパス
 このセクションには、Microsoft では含まれている 30 以上のサンプルがについて説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK)。 ここでは、サンプルの構築手順、実行方法、および予想される実行結果など、各サンプルについて詳しく説明します。  
   
- サンプル ドキュメント パスの省略形を使用して\<*サンプル パス*> をインストールのサンプルへのパスを示すためにします。 パスの既定値は、インストール時の判断によって変わる可能性があります。 次の表に、一般的なインストール シナリオの既定のパスを示します。  
+ サンプル ドキュメント パスの省略形を使用して\<*サンプル パス*\>をサンプルのインストールへのパスを示すためにします。 パスの既定値は、インストール時の判断によって変わる可能性があります。 次の表に、一般的なインストール シナリオの既定のパスを示します。  
   
 |Description|[パス]|  
 |-----------------|----------|  

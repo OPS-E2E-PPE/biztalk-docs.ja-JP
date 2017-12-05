@@ -13,16 +13,16 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f18185e4bfaf5502537a68044579b0f7721cd23
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0cd6a281bfca73e74f23ce25bb9fa08761a07789
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-the-polling-and-typedpolling-operations"></a>ポーリングと TypedPolling 操作のメッセージ スキーマ
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]サーフェスのポーリングと TypedPolling 受信アダプターのクライアントに、ポーリング クエリの結果セットを返す操作。  
   
- バインドのプロパティを設定して、ポーリングおよび TypedPolling 操作を構成する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 これらのバインド プロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 設定する、 **PollingStatement** SQL ステートメントを指定するプロパティのバインド (SELECT または EXEC\<ストアド プロシージャ >)、ポーリング クエリのです。 ポーリング操作で、コードへのデータおよび TypedPolling 操作の厳密に型指定されたデータとして、このクエリの結果セットが返されます。 結果セットの構造は、アダプターが、指定されたクエリのサーフェスをメタデータによって決定されます。  
+ バインドのプロパティを設定して、ポーリングおよび TypedPolling 操作を構成する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 これらのバインド プロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 設定する、 **PollingStatement** SQL ステートメントを指定するプロパティのバインド (SELECT または EXEC\<ストアド プロシージャ\>)、ポーリング クエリのです。 ポーリング操作で、コードへのデータおよび TypedPolling 操作の厳密に型指定されたデータとして、このクエリの結果セットが返されます。 結果セットの構造は、アダプターが、指定されたクエリのサーフェスをメタデータによって決定されます。  
   
 ## <a name="polling-message-structure"></a>メッセージの構造のポーリング 
   

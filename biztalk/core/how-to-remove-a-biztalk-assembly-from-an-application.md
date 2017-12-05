@@ -18,11 +18,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c6731183fd4be4655d0365c1ce6277dd4052b6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89e46b8610114149e8618811361090d8644f82aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-remove-a-biztalk-assembly-from-an-application"></a>BizTalk アセンブリをアプリケーションから削除する方法
 ここでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アセンブリを BizTalk アプリケーションから削除する方法について説明します。 この操作を実行すると、アセンブリおよびそのアセンブリに含まれるアイテム (オーケストレーション、スキーマ、パイプラインなど) は、アプリケーションおよび BizTalk 管理データベースから削除されます。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の管理、削除する BizTalk アセンブリが含まれる BizTalk グループ、BizTalk アセンブリが含まれるアプリケーションの順に展開します。  
+2.  コンソール ツリーで、BizTalk Server 管理コンソールを展開し、削除するには、BizTalk アセンブリを含む BizTalk グループを展開し、BizTalk アセンブリを含むアプリケーションの順に展開します。  
   
 3.  クリックして、**リソース**フォルダーは、BizTalk アセンブリを右クリックし、をクリックして**削除**です。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df98f717c71198d4be6f8d13eaa539e5c1e16786
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 21003c4d3565158945e91371fa760cf97692b472
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-biztalk-server-performance"></a>BizTalk Server のパフォーマンスに関するトラブルシューティング
 ここでは、BizTalk メッセージング エンジンに関連するパフォーマンスの問題を診断および解決するための一般的なガイドラインを示します。  
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 -   SQL Server Profiler を使用すると、SQL Server に送信される Transact-SQL ステートメントや、これらのステートメントで返される SQL Server の結果セットを取得できます。 BizTalk Server は SQL Server と密接に連携しているので、SQL Server Profile のトレースを分析することで、SQL Server データベースに対する読み取りまたは書き込み時に BizTalk Server で発生する問題を分析するのに役立てることができます。 SQL Server Profiler を使用する方法の詳細については、SQL Server のマニュアルを参照してください。  
   
--   [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] のクエリ エディターを使用すると、SQL Server データベースに対して SQL ステートメントを直接実行できます。 この機能は、BizTalk Server データベースに対してクエリを実行するときや、特定のシナリオにおいて BizTalk Server データベースを更新するときに役立つ場合があります。 クエリ エディターの詳細については、[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] のマニュアルを参照してください。  
+-   SQL Server データベースに対して直接 SQL ステートメントを実行する SQL Server クエリ エディターを使用できます。 この機能は、BizTalk Server データベースに対してクエリを実行するときや、特定のシナリオにおいて BizTalk Server データベースを更新するときに役立つ場合があります。 クエリ エディターの詳細については、SQL Server のマニュアルを参照してください。  
   
 -   レビュー [SQL Server のトラブルシューティング](../core/troubleshooting-sql-server.md)の詳細。  
   

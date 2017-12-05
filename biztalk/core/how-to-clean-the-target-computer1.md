@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-rendezvous/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4ceaef21127ec010450082228b765dcbb8e76005
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 8e187233b8755eb84d6169192542d48ce2e86ec3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-clean-the-target-computer"></a>対象となるコンピューターをクリーニングする方法
 展開には、受信場所の構成が上書きされます。 バインド ファイル (およびアセンブリ) を展開先のコンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
@@ -23,5 +23,5 @@ ms.lasthandoff: 11/07/2017
   
          たとえば、コマンド プロンプトで次のように実行します。  
   
-         **cscript RemoveSendPort.vbs\<送信ポートの名前 >**  
+         **cscript RemoveSendPort.vbs\<送信ポートの名前\>**  
   

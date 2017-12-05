@@ -28,11 +28,11 @@ caps.latest.revision: "53"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c000c733097bffa58f652801b459c429df149e56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adaf5cb0117e0d571e0be0ddd42350ce3af2ba80
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-install-the-stub-version-of-the-service-oriented-solution"></a>サービス指向ソリューションのスタブ バージョンのインストール方法
 次の手順では、サービス指向ソリューションのスタブ バージョンをインストールするための事前準備を行う方法およびコンピューターにソリューションをインストールする方法について説明します。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [サービス指向ソリューションの BAM 定義を展開します。](#step11)  
   
--   [配置サービス指向ソリューション](#step13)  
+-   [サービス指向ソリューションの展開](#step13)  
   
 ##  <a name="step1"></a>サービス指向ソリューションのスタブ バージョンをインストールするコンピューターを準備します。  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  .NET アセンブリの WebSphere MQ クラスをグローバル アセンブリ キャッシュ (GAC) に追加します。  
   
-    1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリに移動\<IBM MQSeries インストール ディレクトリ > \bin です。  
+    1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリに移動\<IBM MQSeries インストール ディレクトリ\>\bin です。  
   
     2.  次のコマンドを実行します (gacutil.exe が PATH 環境変数にあることを確認してください)。  
   
@@ -146,7 +146,7 @@ ms.lasthandoff: 09/20/2017
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub  
   
-         パス = \<BizTalk インストール ディレクトリ > \SDK\Scenarios\SO\BTSSoln\OrchProxy\Stub  
+         パス = \<BizTalk インストール ディレクトリ\>\SDK\Scenarios\SO\BTSSoln\OrchProxy\Stub  
   
          Access Permissions = Read, Run scripts  
   
@@ -154,7 +154,7 @@ ms.lasthandoff: 09/20/2017
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP  
   
-         パス = \<BizTalk インストール ディレクトリ > \SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
+         パス = \<BizTalk インストール ディレクトリ\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
   
          Access Permissions = Read, Run scripts  
   
@@ -162,7 +162,7 @@ ms.lasthandoff: 09/20/2017
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions  
   
-         パス = \<BizTalk インストール ディレクトリ > \SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
+         パス = \<BizTalk インストール ディレクトリ\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
   
          Access Permissions = Read, Run scripts  
   
@@ -170,7 +170,7 @@ ms.lasthandoff: 09/20/2017
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker  
   
-         パス = \<BizTalk インストール ディレクトリ > \SDK\Scenarios\SO\BTSSoln\StubWebServices\PaymentTrack  
+         パス = \<BizTalk インストール ディレクトリ\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PaymentTrack  
   
          Access Permissions = Read, Run scripts  
   
@@ -255,7 +255,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド プロンプトで次のコマンドを入力し、&lt;localizedText&gt;Enter&lt;/localizedText&gt; キーを押します。 これには、BAM ユーティリティを検索するパスを設定します。  
   
-    -   SET PATH=%PATH%;%programfiles%\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\Tracking  
+    -   セット PATH=%PATH%;%programfiles%\Microsoft BizTalk Server\Tracking  
   
 2.  コマンド プロンプトで、ディレクトリを %BTSSolutions%\SO\BTSSoln\BAM フォルダーに変更し、次のコマンドを入力して Enter キーを押します。  
   
@@ -286,4 +286,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [サービス指向ソリューションをインストールする前に](../core/before-installing-the-service-oriented-solution.md)   
  [指向ソリューションのインライン バージョンおよびアダプター バージョンのサービスをインストールする方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
- [開発者のコンピュータ設定、サービス指向ソリューション](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [サービス指向ソリューションに対する開発者のコンピューター設定](../core/developer-machine-setup-for-the-service-oriented-solution.md)

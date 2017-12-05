@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22572f01f1e76dae36cbdcb34a4321c2db1c44c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5813bb4881535290422e2ba01d20d4370f4e604
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sending-a-preserved-batch-interchange"></a>保存されたバッチ インターチェンジの送信
 EDI 送信パイプラインが保存された送信バッチ インターチェンジを処理するとき、バッチ インターチェンジ全体を処理します。 EDI インターチェンジを作成する場合、通常、アグリーメントに基づいてエンベロープを適用するのではなく、既存のエンベロープ (制御) セグメントを再利用します。 これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または**- インターチェンジの保存時にトランザクション セットを中断エラー**です。  
@@ -43,7 +43,7 @@ EDI 送信パイプラインが保存された送信バッチ インターチェ
 >  保存されたバッチは、XML 送信パイプラインを使用して送信できます。 ただし、この処理を行うには、バッチ スキーマの名前空間を変更することが必要です。 詳細については、次を参照してください。[保持のバッチを XML 送信パイプラインによる送信](../core/sending-a-preserved-batch-with-an-xml-send-pipeline.md)です。  
   
 ## <a name="error-processing"></a>エラー処理  
- EDI 送信パイプラインは、バッチ EDI インターチェンジを保存されたバッチとして認識します。これは、XML に予約タグが存在するためです。 か、このタグ\<X12InterchangeXml > または\<EdifactInterchangeXml >、EDI で、XML に適用される受信パイプラインです。  
+ EDI 送信パイプラインは、バッチ EDI インターチェンジを保存されたバッチとして認識します。これは、XML に予約タグが存在するためです。 か、このタグ\<X12InterchangeXml\>または\<EdifactInterchangeXml\>EDI で、XML に適用される受信パイプラインです。  
   
  以下の特殊なケースが、エラー発生時のトランザクション セットの中断に当てはまります。  
   
@@ -54,4 +54,4 @@ EDI 送信パイプラインが保存された送信バッチ インターチェ
 -   グループ制御セグメントまたはインターチェンジ制御セグメントが無効である場合、EDI エンコード インターチェンジは生成されません。 インターチェンジが拒否されたことを示すログがイベント ビューアーに作成されます。  
   
 ## <a name="see-also"></a>参照  
- [送信 EDI メッセージをバッチ処理](../core/batching-outgoing-edi-messages.md)
+ [送信 EDI メッセージのバッチ処理](../core/batching-outgoing-edi-messages.md)

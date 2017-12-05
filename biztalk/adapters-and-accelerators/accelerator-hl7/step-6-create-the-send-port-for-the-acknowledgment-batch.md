@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d88607133c4ffde7baeb9742755c9393bd73196c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 958746634776e9b01c32ff2425122312bc7a841c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>手順 6: 受信確認のバッチの送信ポートを作成します。
 この手順では、送信元パーティを作成する受信確認のバッチを配信する送信ポートを作成します。 これは、ファイル アダプターの種類に静的な一方向のポートです。 ここで、ソース (\Tutorial_BatchACKDrop) のファイルのフォルダーを指定する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信確認のバッチ ファイルが削除されます。 ポートで送信する受信確認のバッチの種類を示すポートのフィルターを定義するとします。 フィルターは、Tutorial_BatchSource と OutboundBatch のメッセージの種類のソースを指定します。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**コピー先フォルダー**|参照  **\<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchACKDrop * *。 これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信確認のバッチを含んでいるファイルを記述します。|  
+    |**コピー先フォルダー**|参照  **\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_ のアクセラレータ* * BatchACKDrop。 これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信確認のバッチを含んでいるファイルを記述します。|  
     |**ファイル名**|型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
     |**[コピー モード]**|選択**新規作成**です。|  
   

@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7231fd0d2aba7298127534eb43f1bf3c8c453b61
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebe9f04fc8dac06676d7f29bf5dd2ecd01e7a06c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="business-rules-hello-world1-biztalk-server-sample"></a>Business Rules こんにちは World1 (BizTalk Server サンプル)
 Business Rules Hello World1 サンプルでは、BizTalk ルール セットを作成して、そのルール セットをファイル (SampleRuleSet.xml) に保存し、読み込んでから、サンプルのファクト セットに基づいて実行する方法を示します。 サンプルのルール セットには、ルール定義の条件として XML 要素を含む単一のルール、および .NET ベースのオブジェクト (プロパティとメンバ) が含まれます。  
@@ -42,7 +42,7 @@ Business Rules Hello World1 サンプルでは、BizTalk ルール セットを�
 7.  後でこのサンプルを実行するための準備として、ルール セット ファイルを削除して、クリーンアップします。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Business Rules\Business こんにちは World1\ のルール  
+ \<*パスのサンプル*\>\Business Rules\Business こんにちは World1\ のルール  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -64,7 +64,7 @@ Business Rules Hello World1 サンプルでは、BizTalk ルール セットを�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Business Rules\Business こんにちは World1\ のルール  
+     \<*パスのサンプル*\>\Business Rules\Business こんにちは World1\ のルール  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -86,7 +86,7 @@ Business Rules Hello World1 サンプルでは、BizTalk ルール セットを�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Business Rules\Business こんにちは World1\bin\Debug\ のルール  
+     \<*パスのサンプル*\>\Business Rules\Business こんにちは World1\bin\Debug\ のルール  
   
 2.  コマンド ウィンドウで、このサンプルの実行可能ファイル名 (BusinessRulesHelloWorld1.exe) を入力して、<localizedText>Enter</localizedText> キーを押します。  
   
@@ -144,4 +144,4 @@ Press any key to finish ...
  ルールは、クラスやスキーマとして定義しますが、実行中の場合は、関連するクラスのオブジェクト インスタンスおよび関連するスキーマのドキュメント インスタンスが必要です。 このような実行時のインスタンス (ファクト) に対してルールを評価します。 このサンプルでは、ファクトはの複数のインスタンス、 **MySampleBusinessObject**の値が異なる構築されたオブジェクト、 **MyValue**プロパティ、および定義済みのスキーマの単一の XML インスタンス値を格納している、 **ID**要素。  
   
 ## <a name="see-also"></a>参照  
- [ビジネス ルール (BizTalk Server Samples フォルダ)](../core/business-rules-biztalk-server-samples-folder.md)
+ [ビジネス ルール (BizTalk Server サンプル フォルダー)](../core/business-rules-biztalk-server-samples-folder.md)

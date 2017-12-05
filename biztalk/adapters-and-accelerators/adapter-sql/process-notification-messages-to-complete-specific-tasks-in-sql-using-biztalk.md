@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efed30f3e65c4f58a060f67539672c95b3d6df59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36d3c923593fe9a9402a14012e93fccb274ecdb6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージの処理
 使用することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server データベース テーブルへの変更の通知を受信します。 ただし、アダプターのみ通知を送信することレコードの一部挿入、更新されると、またはされた特定のデータベース テーブルで削除します。 後処理これらのレコードには、クライアント アプリケーション自体で処理される必要があります。 このトピックでは、SQL Server データベースから受信した通知の種類に基づいてテーブル内のレコードを処理する方法のシナリオ ベースの説明を示します。  
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/20/2017
 |プロパティのバインド|Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|受信操作を実行することを指定します。 通知メッセージを受信するには、これを設定**通知**です。|  
-|**NotificationStatement**|SQL ステートメントを指定します (選択または EXEC\<ストアド プロシージャ >) のクエリ通知を登録するために使用します。 アダプターは、指定された SQL ステートメントの変更の結果セットの場合にのみ、SQL Server から通知メッセージを取得します。|  
+|**NotificationStatement**|SQL ステートメントを指定します (選択または EXEC\<ストアド プロシージャ\>) のクエリ通知を登録するために使用します。 アダプターは、指定された SQL ステートメントの変更の結果セットの場合にのみ、SQL Server から通知メッセージを取得します。|  
 |**NotifyOnListenerStart**|リスナーが開始されたときに、アダプターがアダプターのクライアントに通知を送信するかどうかを指定します。|  
   
  これらのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for SQL Server アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 使用する方法の詳細については、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]さらに通知を受信する SQL Server から、読み取る。  
@@ -140,7 +140,7 @@ ms.lasthandoff: 09/20/2017
   
  サンプル オーケストレーションには、次のようになります。  
   
- ![Post & #45 を実行するオーケストレーション以外の通知タスク](../../adapters-and-accelerators/adapter-sql/media/20f62716-603d-4293-84f7-8c8f6d82ccd0.gif "20f62716-603d-4293-84f7-8c8f6d82ccd0")  
+ ![Post &#45;を実行するオーケストレーション以外の通知タスク](../../adapters-and-accelerators/adapter-sql/media/20f62716-603d-4293-84f7-8c8f6d82ccd0.gif "20f62716-603d-4293-84f7-8c8f6d82ccd0")  
   
 ### <a name="adding-message-shapes"></a>メッセージの構築図形を追加します。  
  メッセージの構築図形のごとに、次のプロパティを指定することを確認してください。 図形 列に表示名は、単に記載されているオーケストレーションに表示されるメッセージの構築図形の名前です。  
@@ -166,7 +166,7 @@ ms.lasthandoff: 09/20/2017
   
      このトピックの名前を変数として**NotificationType**です。  
   
--   値を抽出する xpath クエリを作成、\<情報 > タグです。 Xpath クエリは、次のようになります。  
+-   値を抽出する xpath クエリを作成、\<情報\>タグ。 Xpath クエリは、次のようになります。  
   
     ```  
     NotificationType = xpath(NotifyReceive,"string(/*[local-name()='Notification']/*[local-name()='Info']/text())");  
@@ -261,7 +261,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   **NotifyOnListenerStart**に設定されているプロパティのバインド**True**、次のメッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>SqlBinding</Source>   
@@ -274,7 +274,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Employee テーブルにレコードを挿入します。 次のような通知メッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Insert</Info>   
       <Source>Data</Source>   
@@ -287,7 +287,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Employee テーブルのレコードを更新します。 次のような通知メッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Update</Info>   
       <Source>Data</Source>   
@@ -300,7 +300,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Employee テーブルからレコードを削除します。 次のような通知メッセージが表示されます。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Delete</Info>   
       <Source>Data</Source>   

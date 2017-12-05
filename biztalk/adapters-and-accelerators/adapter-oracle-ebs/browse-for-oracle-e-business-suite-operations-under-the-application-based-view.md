@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d06cf551d033614cb75456845e059c6ec4ec8fa8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d4d4d67df9d7463a699b1ec9448feeea0a9c57a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-application-based-view"></a>アプリケーションに基づくビューの Oracle E-business Suite 操作の参照します。
 使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite で実行できる送受信の操作を参照するを使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。 このトピックでは、アプリケーション ベースのビューでの送信および受信操作を参照する方法について説明します。  
@@ -55,16 +55,16 @@ ms.lasthandoff: 09/20/2017
      ![Oracle E &#45; でのインターフェイス テーブルを参照します。Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/media/fcfbe41c-14e0-43b5-aada-c4c686aecff4.gif "fcfbe41c-14e0-43b5-aada-c4c686aecff4")  
   
     > [!NOTE]
-    >  インターフェイス テーブルには、BLOB 型の列が含まれている場合、か、CLOB、NCLOB、BFILE、アダプターまたこのような列からデータを読み取る、特定の操作。 このような操作の名前は Read_\<LOBColName >。 たとえば、インターフェイス テーブルに列、FILE_DATA、BLOB の種類の場合、アダプターを公開、 **Read_FILE_DATA**操作します。 インターフェイス テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が数だけ公開\<LOBColName > 操作します。  
+    >  インターフェイス テーブルには、BLOB 型の列が含まれている場合、か、CLOB、NCLOB、BFILE、アダプターまたこのような列からデータを読み取る、特定の操作。 このような操作の名前は Read_\<LOBColName\>です。 たとえば、インターフェイス テーブルに列、FILE_DATA、BLOB の種類の場合、アダプターを公開、 **Read_FILE_DATA**操作します。 インターフェイス テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が数だけ公開\<LOBColName\>操作します。  
     >   
-    >  同様に、インターフェイス テーブルに BLOB 型の列が含まれている場合、CLOB または NCLOB アダプターも公開、特定の操作をこのような列にデータを更新します。 このような操作の名前は Update_\<LOBColName >。 たとえば、インターフェイス テーブルに列、FILE_DATA、BLOB の種類の場合、アダプターを公開、 **Update_FILE_DATA**操作します。 Update_ 数が多く、CLOB、NCLOB、アダプターを公開インターフェイス テーブルに BLOB の種類の 1 つ以上の列がある場合は、\<LOBColName > 操作します。 BFILE 型の列には、更新操作がサポートされていないことに注意してください。  
+    >  同様に、インターフェイス テーブルに BLOB 型の列が含まれている場合、CLOB または NCLOB アダプターも公開、特定の操作をこのような列にデータを更新します。 このような操作の名前は Update_\<LOBColName\>です。 たとえば、インターフェイス テーブルに列、FILE_DATA、BLOB の種類の場合、アダプターを公開、 **Update_FILE_DATA**操作します。 Update_ 数が多く、CLOB、NCLOB、アダプターを公開インターフェイス テーブルに BLOB の種類の 1 つ以上の列がある場合は、\<LOBColName\>操作します。 BFILE 型の列には、更新操作がサポートされていないことに注意してください。  
   
 6.  展開して、**インターフェイス ビュー** Oracle アプリケーション用のインターフェイス ビューを表示するノードです。 ビューを使用できる操作の一覧を表示する、インターフェイスの表示 をクリックして、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle E &#45; でのインターフェイス ビューを参照します。Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/media/f1dc14cc-ad77-47ed-b0b0-b5fc78ed545b.gif "f1dc14cc-ad77-47ed-b0b0-b5fc78ed545b")  
   
     > [!NOTE]
-    >  インターフェイス ビューには、BLOB 型の列が含まれている場合、か、CLOB、NCLOB、BFILE、アダプターまたこのような列からデータを読み取る、特定の操作。 このような操作の名前は Read_\<LOBColName >。 たとえば、インターフェイス ビューには、列、FILE_CONTENT、BLOB の種類の場合、アダプターを公開、 **Read_FILE_CONTENT**操作します。 インターフェイス ビューでは、BLOB の種類の 1 つ以上の列を含む、CLOB、NCLOB、BFILE、アダプターは公開 Read_ 数が多く\<LOBColName > 操作します。 注その Update_\<LOBColName > ビューの操作はサポートされていません。  
+    >  インターフェイス ビューには、BLOB 型の列が含まれている場合、か、CLOB、NCLOB、BFILE、アダプターまたこのような列からデータを読み取る、特定の操作。 このような操作の名前は Read_\<LOBColName\>です。 たとえば、インターフェイス ビューには、列、FILE_CONTENT、BLOB の種類の場合、アダプターを公開、 **Read_FILE_CONTENT**操作します。 インターフェイス ビューでは、BLOB の種類の 1 つ以上の列を含む、CLOB、NCLOB、BFILE、アダプターは公開 Read_ 数が多く\<LOBColName\>操作します。 注その Update_\<LOBColName\>ビューの操作はサポートされていません。  
   
 7.  クリックして、**同時実行プログラム**中のアプリケーションの同時実行プログラムを表示するノード、**利用可能なカテゴリと操作**ボックス。  
   

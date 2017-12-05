@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b65596e59820258df01a5655ea30adafe439674
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9787c5ac1371f6743285a151e5666d12b592a300
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-notifications-services-on-additional-computers-in-a-group"></a>グループ内の別のコンピューターで通知サービスを有効にする方法
 複数コンピューター環境で BAM を実行するときに、各コンピューターを実行するアクティビティを展開する BAM 管理ユーティリティで Notification Services を有効にする必要があります。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  コンピューターで別のグループで、をクリックして**開始**、 をポイント**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2005**をクリックして**の構成ツール**、クリックして**Notification Services コマンド プロンプト**です。  
   
-2.  コマンド プロンプトで次のように入力します。: **nscontrol register 名前\<構成時に選択 NS プレフィックス名 >-サーバー \<ns db sql server >**です。 これにより、Notification Services が適切なデータベースに接続できるようになります。この情報は、nscontrol により、サービス コンピューターのレジストリに格納されます。  
+2.  コマンド プロンプトで次のように入力します。: **nscontrol register 名前\<NS プレフィックス名の構成時に選択\>-サーバー \<ns db sql server\>**です。 これにより、Notification Services が適切なデータベースに接続できるようになります。この情報は、nscontrol により、サービス コンピューターのレジストリに格納されます。  
   
 ## <a name="see-also"></a>参照  
  [BAM ランタイムの設定を変更します。](../core/changing-bam-runtime-settings.md)   

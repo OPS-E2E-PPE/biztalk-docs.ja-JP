@@ -18,14 +18,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af660403bb45b25a3ceb31163ecc8a442f0ce7de
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad5f8d9c9436f9d32f6adbb30de9ac0efc9948f8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="administration-and-run-time-tools"></a>管理およびランタイム ツール
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]展開、構成の管理、管理、ビジネス ルール管理などの管理および実行時のタスクを実行して、監視のための一連のツールを提供します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]展開、構成の管理、管理、ビジネス ルール管理などの管理および実行時のタスクを実行して、監視のための一連のツールを提供します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。  
   
 ## <a name="biztalk-explorer"></a>BizTalk エクスプローラー  
  BizTalk エクスプローラーを使用して、プロジェクト、パーティ、およびオーケストレーションの構成と管理を行います。 BizTalk エクスプ ローラーでは、アセンブリ、ポート、パーティなどのアイテムを表示する構成データベースの内容を表示します。  
@@ -53,4 +53,4 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、接続状態やスループットを確認するための、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] パフォーマンス モニタの使用をサポートしています。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server および BTARN のツールおよび機能](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)
+ [BizTalk Server および BTARN のツールと機能](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)

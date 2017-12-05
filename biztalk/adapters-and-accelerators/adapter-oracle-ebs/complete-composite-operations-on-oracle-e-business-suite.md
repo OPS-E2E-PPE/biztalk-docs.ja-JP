@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2dd906105f4bd028867e4588d7c075b56253ab9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f6e53179e82e7f41f264401b5ebf1c9c022e9727
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="complete-composite-operations-on-oracle-e-business-suite"></a>Oracle E-business Suite で複合操作を完了します。
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが Oracle データベースでの複合操作を実行できるようにします。 複合操作を含めることができます。  
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
      参照を追加します。  
   
-    1.  ルートを右クリックして**\<スキーマ >** CompositeSchema.xsd、およびクリック ノード**プロパティ**です。  
+    1.  ルートを右クリックして**\<スキーマ\>** CompositeSchema.xsd、およびクリック ノード**プロパティ**です。  
   
     2.  **プロパティ**ボックスで、省略記号ボタンをクリックして**([...])**に対して、 **Imports**プロパティです。  
   
@@ -97,9 +97,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  既定では、**ルート**ノードが新しいスキーマ ファイルにも追加します。 名前を変更することができます、**ルート**ノード**要求**です。 ノードの名前を変更するノード名を右クリックし、をクリックして**の名前を変更**です。  
   
-     下のノードを追加する、 **\<スキーマ >**ノード。  
+     下のノードを追加する、 **\<スキーマ\>**ノード。  
   
-    1.  右クリックし、 **\<スキーマ >**に**スキーマ ノードの挿入**、 をクリック**子レコード**です。  
+    1.  右クリックし、 **\<スキーマ\>**に**スキーマ ノードの挿入**、 をクリック**子レコード**です。  
   
     2.  新しいノードの名前を**RequestResponse**です。  
   
@@ -292,34 +292,34 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションはメッセージを使用して、Oracle データベースに送信します。 Oracle データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、次のよう、上記の要求メッセージ用の Oracle データベースからの応答。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <RequestResponse xmlns="http://Composite_Op.CompositeSchema">  
   <InsertResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Tables/SCOTT/ACCOUNTACTIVITY">  
     <InsertResult>1</InsertResult>   
   </InsertResponse>  
   <GET_ALL_ACTIVITYResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/PackageApis/SCOTT/ACCOUNT_PKG">  
     <ALLRECS>  
-      \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-        \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-          \<xs:complexType>  
-            \<xs:sequence>  
-              \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                \<xs:complexType>  
-                  \<xs:sequence>  
-                    \<xs:element minOccurs="0" name="TID" type="xs:decimal" />   
-                    \<xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
-                    \<xs:element minOccurs="0" name="AMOUNT" type="xs:decimal" />   
-                    \<xs:element minOccurs="0" name="DESCRIPTION" type="xs:string" />   
-                    \<xs:element minOccurs="0" name="TRANSDATE" type="xs:dateTime" />   
-                    \<xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
-                  \</xs:sequence>  
-                \</xs:complexType>  
-              \</xs:element>  
-            \</xs:sequence>  
-          \</xs:complexType>  
-        \</xs:element>  
-      \</xs:schema>  
-      \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+      <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+        <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                <xs:complexType>  
+                  <xs:sequence>  
+                    <xs:element minOccurs="0" name="TID" type="xs:decimal" />   
+                    <xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
+                    <xs:element minOccurs="0" name="AMOUNT" type="xs:decimal" />   
+                    <xs:element minOccurs="0" name="DESCRIPTION" type="xs:string" />   
+                    <xs:element minOccurs="0" name="TRANSDATE" type="xs:dateTime" />   
+                    <xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
+                  </xs:sequence>  
+                </xs:complexType>  
+              </xs:element>  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:schema>  
+      <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
         <NewDataSet xmlns="">  
           <NewTable>  
             ......   
@@ -335,7 +335,7 @@ ms.lasthandoff: 09/20/2017
             <PROCESSED>n</PROCESSED>   
           </NewTable>  
         </NewDataSet>  
-      \</diffgr:diffgram>  
+      </diffgr:diffgram>  
     </ALLRECS>  
   </GET_ALL_ACTIVITYResponse>  
   <DeleteResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Tables/SCOTT/ACCOUNTACTIVITY">  

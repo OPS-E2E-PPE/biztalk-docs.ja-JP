@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6cddeca2eb80fbeb7c9fb5742e2838a860079d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4589649be79ce369f0e6756ae7f96615d4a36c0f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="submitting-messages-through-receive-locations-and-infopath-forms"></a>経由して送信メッセージの受信場所と InfoPath フォーム
 受信場所への発信メッセージを受信する[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]アプリケーションです。 定義することが指定されたトランスポート プロトコルを使用してメッセージを受信するように構成する物理エンドポイントとしての受信場所。 たとえば、ファイル トランスポートを使用して、特定のファイル システム フォルダーにドロップされた受信ファイルを受信場所を構成する可能性があります。  
@@ -30,9 +30,9 @@ ms.lasthandoff: 09/20/2017
   
  受信場所を介して A4SWIFT アプリケーションに SWIFT メッセージを送信するに、メッセージ、構成されている受信場所にドロップした、SWIFT の逆アセンブラーを使用して、受信パイプラインによって処理されるを解析し、SWIFT 逆アセンブラーによって検証し、メッセージ ボックス データベースに公開します。 メッセージがメッセージ ボックス データベースへ発行されると、A4SWIFT アプリケーションの他のコンポーネントは、追加の処理 (サブスクリプションを使用して) メッセージを取得します。 たとえば、最終的なルーティングの送信ポートを使用することができます。  
   
- 作成と構成の詳細については受信ポートと受信場所を参照してください[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+ 作成と構成の詳細については受信ポートと受信場所、BizTalk Server ヘルプを参照してください。  
   
  経由で新しいメッセージを送信することも、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、Message Repair and New Submission の機能を使用します。 これを行うには、開く、 [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] MRSR サイト内のフォルダーからそのメッセージの形式です。 内のデータを入力する、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、証明書を使用して署名し、して送信します。 Message Repair and New Submission のオーケストレーションは、メッセージを処理します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Accelerator for SWIFT のランタイム](../../adapters-and-accelerators/accelerator-swift/biztalk-accelerator-for-swift-runtime.md)
+ [BizTalk Accelerator for SWIFT ランタイム](../../adapters-and-accelerators/accelerator-swift/biztalk-accelerator-for-swift-runtime.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99923c3029b72dae660bee4b4089336e90e2e4e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd2df85f051285e999660dc3765855d22c708939
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enable-receive-location-biztalk-server-sample"></a>有効にする受信場所 (BizTalk Server サンプル)
 受信場所の有効化のサンプルでは、受信場所を有効にする方法を示します。オプションで、その受信場所の受信トランスポート URL を設定する方法を説明します。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\WMI\Enable Location\ の受信  
+ \<*パスのサンプル*\>\Admin\WMI\Enable 受信 Location\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -59,18 +59,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\WMI\Enable Location\VBScript\ の受信  
+     \<*パスのサンプル*\>\Admin\WMI\Enable 受信 Location\VBScript\  
   
 2.  cscript プログラムを使用し、次のコマンド ライン引数 (3 番目はオプション) を渡して、ファイル EnableRecLoc.vbs を実行します。  
   
-    -   **\<**   
-         ***ReceivePortName* >。** 有効にする受信場所を含む受信ポートの名前。 受信ポート名に空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<** ***ReceivePortName* \>です。** 有効にする受信場所を含む受信ポートの名前。 受信ポート名に空白が含まれている場合は、名前を引用符で囲みます。  
   
-    -   **\<**   
-         ***ReceiveLocationName* >。** 指定の受信ポート内にある、有効にする受信場所の名前。 受信場所名に空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<** ***ReceiveLocationName* \>です。** 指定の受信ポート内にある、有効にする受信場所の名前。 受信場所名に空白が含まれている場合は、名前を引用符で囲みます。  
   
-    -   **\<**   
-         ***InboundTransportURI* >。** 製品のインストール場所に相対的な受信アダプタ URI。この引数を指定することによって変更できます。 受信アダプタ URI に空白が含まれている場合は、URI を引用符で囲みます。  
+    -   **\<** ***InboundTransportURI* \>です。** 製品のインストール場所に相対的な受信アダプタ URI。この引数を指定することによって変更できます。 受信アダプタ URI に空白が含まれている場合は、URI を引用符で囲みます。  
   
          例:  
   
@@ -92,4 +89,4 @@ ms.lasthandoff: 09/20/2017
  詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
   
 ## <a name="see-also"></a>参照  
- [管理 WMI (BizTalk Server Samples フォルダ)](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

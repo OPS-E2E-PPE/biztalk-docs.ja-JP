@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0cd96da053bad370d635c804df41badf10a7c154
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c23fa8aca6def654b594d8b4fccf5d584e12fed4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="esb-resolver-and-adapter-provider-framework"></a>ESB リゾルバーとアダプターのプロバイダー フレームワーク
-アダプター プロバイダーのフレームワークとの競合回避モジュールを動的にエンドポイント情報を解決する包括的なプラグ可能なアーキテクチャを提供し、[!INCLUDE[prague](../includes/prague-md.md)]型をマップします。 開発者が独自の要件に合わせて、別の解決方法およびルーティング メソッドをサポートするためのメカニズムを拡張する動作を変更できるようにの拡張コンポーネントを使用します。  
+アダプター プロバイダーのフレームワークとの競合回避モジュールを動的にエンドポイント情報と BizTalk Server マップの種類を解決する包括的なプラグ可能なアーキテクチャを提供します。 開発者が独自の要件に合わせて、別の解決方法およびルーティング メソッドをサポートするためのメカニズムを拡張する動作を変更できるようにの拡張コンポーネントを使用します。  
   
  アダプター プロバイダーのフレームワークとの競合回避モジュールは、Universal Description, Discovery, と Integration (UDDI)、ビジネス ルール エンジン (BRE)、および XML Path Language (XPath) のサポートを提供します。 また、開発者のインターフェイスを公開 (**IResolveProvider**と**IAdapterProvider**) カスタム競合回避モジュール コンポーネントとアダプター コンポーネントの作成を許可します。 競合回避モジュールとアダプターのプロバイダー フレームワークの 3 つの主要なコンポーネントを次に示します。  
   

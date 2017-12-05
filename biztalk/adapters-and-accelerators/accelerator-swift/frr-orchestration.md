@@ -32,11 +32,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43dd7d6245546f8d35760bfe2ed2224482d9d4bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f56b16f59b967ccd9e57d03d38f86e64795da477
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="frr-orchestration"></a>FRR オーケストレーション
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]FRR オーケストレーションで FRR を実装します。 オーケストレーションでは、FIN 応答の相関トークンと一致するどうか、元のメッセージのメッセージ ID を決定します。 SAA にメッセージを送信する送信ポートで実行される送信機能と SAA からメッセージを受信する受信場所で実行される受信機能は、並列でメッセージを処理します。  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]応答が NAK であった場合、次の値のいずれかの _FRRFailedReason:  
   
-    -   *\<ErrorCode >* (MTS21_FIN_ACKNAK 負受信確認メッセージの 405 フィールド) から  
+    -   *\<ErrorCode\>*  (MTS21_FIN_ACKNAK 負受信確認メッセージの 405 フィールド) から  
   
     -   (MQ 系列パン/NAN メッセージ) から TransportError  
   

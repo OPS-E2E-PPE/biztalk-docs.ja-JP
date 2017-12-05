@@ -13,11 +13,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21cf3bcfae53d3204a1b4de23c1476591be2b453
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 117541cdeded0ff6204797f12e6d8cca1afce38b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-end-to-end-biztalk-server-sample"></a>BAM End-to-End (BizTalk Server サンプル)
 エンド ツー エンドの例では、BAM を使用して、複数のコンポーネント (この場合は、3 つのオーケストレーションとパイプライン) からのイベントを関連付ける方法を示します。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 
 このサンプルの動作は次のとおりです。  
   
-1.  入力メッセージを取得、 *\<サンプル パス >*\BamEndToEnd\Input フォルダーです。  
+1.  入力メッセージを取得、 *\<サンプル パス\>*\BamEndToEnd\Input フォルダーです。  
   
 2.  パイプライン コンポーネントによって、一意の DocumentID がメッセージに割り当てられ、BAM API を使用して新しい BAM アクティビティが開始されます。 オーケストレーションで利用できるように、入力メッセージの個別の部分として DocumentID が添付されます。  
   
@@ -54,12 +54,12 @@ ms.lasthandoff: 09/20/2017
   
 5.  Orchestration2 によって入力メッセージが変更され、Orchestration3 をアクティブ化するメッセージ ボックス データベースに送信されます。  
   
-6.  Orchestration3 によってメッセージが変更され、フォルダーに書き込まれます*\<サンプル パス >*\BamEndToEnd\Output です。  
+6.  Orchestration3 によってメッセージが変更され、フォルダーに書き込まれます*\<サンプル パス\>*\BamEndToEnd\Output です。  
   
 7.  各オーケストレーションによって BAM アクティビティ内のアクティビティ項目が更新されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルを見つけることができます*\<サンプル パス >*\BAM\BamEndToEnd です。  
+ このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamEndToEnd です。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -101,11 +101,11 @@ Services\Schema3.xsd|メッセージ スキーマ。|
   
 ##  <a name="To_Build_Sample"></a>ビルドおよび初期化するこのサンプル  
   
-1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス >*\BAM\BAMEndToEnd\Setup.bat です。 Setup.bat は、このサンプルの BAM インフラストラクチャをビルドして初期化します。 コマンド プロンプトは開いたままにします。  
+1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BAMEndToEnd\Setup.bat です。 Setup.bat は、このサンプルの BAM インフラストラクチャをビルドして初期化します。 コマンド プロンプトは開いたままにします。  
   
 2.  Orchestration1、Orchestration2、および Orchestration3 を BAM アクティビティにマップするための追跡プロファイルを作成します。 (という別の手順の方法の詳細については、追跡プロファイルの作成は複雑なプロセスなので**追跡プロファイルを作成する**です。 この手順については、このドキュメントの後半で説明します)。  
   
-3.  前の手順で作成した追跡プロファイル BamEndToEnd.btt を展開します。  コマンド プロンプトでを変更、 *\<サンプル パス >*\BAM\BamEndToEnd ディレクトリ。 追跡プロファイルを展開する次の行を入力し、キーを押します**Enter**:  
+3.  前の手順で作成した追跡プロファイル BamEndToEnd.btt を展開します。  コマンド プロンプトでを変更、 *\<サンプル パス\>*\BAM\BamEndToEnd ディレクトリ。 追跡プロファイルを展開する次の行を入力し、キーを押します**Enter**:  
   
     `“<BizTalkInstallationPath>\Tracking\bttdeploy” BamEndToEnd.btt`
   
@@ -116,7 +116,7 @@ Services\Schema3.xsd|メッセージ スキーマ。|
   
 ##  <a name="To_Run_Sample"></a>このサンプルを実行します。  
   
-ファイルをコピー *\<サンプル パス >*フォルダーに \BamEndToEnd\InputMessage.xml *\<サンプル パス >*\BamEndToEnd\Input です。 Input フォルダーから、数秒後に、メッセージが表示されなくなります、出力メッセージが表示されます、 *\<サンプル パス >*\BamEndToEnd\Output フォルダーです。  
+ファイルをコピー *\<サンプル パス\>*フォルダーに \BamEndToEnd\InputMessage.xml *\<サンプル パス\>*\BamEndToEnd\Input です。 Input フォルダーから、数秒後に、メッセージが表示されなくなります、出力メッセージが表示されます、 *\<サンプル パス\>*\BamEndToEnd\Output フォルダーです。  
   
 ##  <a name="To_View_Data"></a>BAM データを表示します。  
   
@@ -124,20 +124,20 @@ Services\Schema3.xsd|メッセージ スキーマ。|
   
 2.  SQL Server Management Studio で、サーバーを展開し、**データベース**、展開**BAMPrimaryImport**の順に展開および**テーブル**です。  
   
-3.  右クリック**dbo.bam_EndToEndActivity_Completed**、クリックして**テーブルを開く**です。 使用している場合[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]をクリックして**上位 1000 行を選択して**です。  
+3.  右クリック**dbo.bam_EndToEndActivity_Completed**、クリックして**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_EndToEndActivity_Completed テーブルの内容が右ペインに表示されます。 このテーブルの各行は、完了した EndToEndActivity アクティビティを表します。  
   
 #### <a name="rerun-this-sample"></a>このサンプルを再実行します。  
   
-1.  管理者は、コマンド プロンプトを開き、変更、 *\<サンプル パス >*\BAM\BamEndToEnd ディレクトリ。 次の行を入力します。  
+1.  管理者は、コマンド プロンプトを開き、変更、 *\<サンプル パス\>*\BAM\BamEndToEnd ディレクトリ。 次の行を入力します。  
   
     `“C:\Program Files\Microsoft BizTalk Server <version>\Tracking\bttdeploy” BamEndToEnd.btt /remove`  
   
     > [!NOTE]
     >  インストールしていない場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]C ドライブにインストールしたドライブ文字"C"を置き換えます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
   
-2.  実行*\<サンプル パス >*\BAM\BAMEndToEnd\Cleanup.bat です。 Cleanup.bat は、このサンプルの BAM インフラストラクチャを削除します。  
+2.  実行*\<パスのサンプル\>*\BAM\BAMEndToEnd\Cleanup.bat です。 Cleanup.bat は、このサンプルの BAM インフラストラクチャを削除します。  
   
 3.  手順に従います**このサンプルをビルドして初期化**」セクションを参照します。  
   
@@ -163,7 +163,7 @@ Services\Schema3.xsd|メッセージ スキーマ。|
   
 10. 末尾にスクロール、**コンテキスト プロパティ名**、一覧表示し、ダブルクリック**BAMEndToEnd.Services.PropertySchema.DocumentID**です。  
   
-11. 展開**\<スキーマ >**、し、ドラッグ**DocumentID**を右側のウィンドウで**orch1 _**左側のウィンドウでします。  
+11. 展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を右側のウィンドウで**orch1 _**左側のウィンドウでします。  
   
 12. 矢印の付いたフォルダー アイコンをクリックして (![フォルダーと上矢印ボタン](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示するには、2 回クリックします。  
   
@@ -183,7 +183,7 @@ Services\Schema3.xsd|メッセージ スキーマ。|
   
 19. 末尾にスクロール、**コンテキスト プロパティ名**、一覧表示し、ダブルクリック**BAMEndToEnd.Services.PropertySchema.DocumentID**です。  
   
-20. 展開**\<スキーマ >**、し、ドラッグ**DocumentID**を**orch2 _**左側のウィンドウで継続します。  
+20. 展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を**orch2 _**左側のウィンドウで継続します。  
   
     > [!NOTE]
     >  Orch2_ Continuation と Orch2_ Continuation ID を混同しないように注意してください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンには、キー (が含まれていません。![continuation のアイコン](../core/media/test.gif "テスト"))。  
@@ -256,10 +256,10 @@ Services\Schema3.xsd|メッセージ スキーマ。|
   
 48. **ポートの選択**のセクションで、**ポートの選択**ダイアログ ボックスで、をクリックして**BamEndToEnd_ReceivePort**、大きい をクリックして-不等号 ( **>**)、をクリックして**OK**です。  
   
-49. 追跡プロファイルを保存*\<サンプル パス >*\BAM\BamEndToEnd\BamEndToEnd.btt です。  
+49. 追跡プロファイルを保存*\<サンプル パス\>*\BAM\BamEndToEnd\BamEndToEnd.btt です。  
   
 ## <a name="important-details"></a>重要な詳細情報  
  追跡プロファイルは、パイプラインではサポートされていません。 ただしへの呼び出し**BeginActivity**パイプライン コンポーネントは、同じようにオーケストレーションで ActivityID を使用します。 呼び出し**EnableContinuation**オーケストレーションでの continuation の使用と同じです。  
   
 ## <a name="see-also"></a>参照  
- [ビジネス アクティビティ監視 (BizTalk Server Samples フォルダ)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)
+ [ビジネス アクティビティの監視 (BizTalk Server Samples フォルダー)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)

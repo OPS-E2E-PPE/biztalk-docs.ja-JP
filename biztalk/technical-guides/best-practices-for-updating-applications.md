@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f17fd3ce03ab4c974bff1b5198d27385d311ed70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d01cf54454866eadbd70de7ef30439a0e7068cb1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-updating-applications"></a>アプリケーションの更新のベスト プラクティス
 このトピックでは、BizTalk アプリケーションとアイテムを更新する場合の使用を検討する必要がありますしてベスト プラクティスについて説明します。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **BizTalk アセンブリ チェッカーと GAC のリモート ツール**(BTSAssemblyChecker.exe) は、BizTalk 管理データベースに展開されたアセンブリのバージョンをチェックし、すべての BizTalk の GAC に正しく登録されていることを確認サーバーのコンピューター。 このツールを使用すると、特定の BizTalk アプリケーションのアイテムを含むすべてのアセンブリが BizTalk のすべてのノードにインストールされていることを確認します。 このツールは、サイド バイ サイド展開アプローチを使用する場合に特に各 BizTalk コンピューターで、一連のアセンブリの正しいバージョンがインストールされていることを確認する方法を純色のバージョン管理と組み合わせてに特に便利です。  
   
--   このツールはで利用可能な[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Support\Tools\x86\BTSAssemblyChecker.exe にあるインストール メディア。  
+-   このツールは Support\Tools\x86\BTSAssemblyChecker.exe で BizTalk Server のインストール メディアで使用できます。  
   
  **バージョン管理製品を使用してください。**  
   
@@ -95,4 +95,4 @@ ms.lasthandoff: 09/20/2017
 -   アイテムを更新したり、アプリケーションをインストールするためにアプリケーションを停止する必要はありませんが、アイテムを更新する場合は常にアプリケーションを停止することをお勧めします。  
   
 ## <a name="see-also"></a>参照  
- [バインドをバインド ファイルにエクスポートする方法](../technical-guides/how-to-export-bindings-to-a-binding-file.md)
+ [バインド ファイルにバインドをエクスポートする方法](../technical-guides/how-to-export-bindings-to-a-binding-file.md)

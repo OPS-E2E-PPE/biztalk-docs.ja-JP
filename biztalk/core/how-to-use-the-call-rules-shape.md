@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a634c2e0a97e627925390610bf4c3039c8afc85c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c85badfaf22ff4fb6aebd9ed19c757faaa1f303c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-use-the-call-rules-shape"></a>ルールの呼び出し図形の使用方法
 オーケストレーション デザイナーで使用することができます、**ルールの呼び出し**図形をビジネス ポリシーを呼び出します。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
      区分線または図形を追加する図形のプレース ホルダーを右クリックするポイント**図形の挿入**をクリックしてコンテキスト メニューで、**ルールの呼び出し**です。  
   
     > [!NOTE]
-    >  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、アトミックのスコープを挿入する必要はありません、**ルールの呼び出し**図形です。 ドラッグすることができます、**ルールの呼び出し**図形をツールボックスからオーケストレーション デザイン画面にします。 ただし、 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、**ルールの呼び出し**を挿入しようとする場合、コンテキスト メニューにメニュー項目が無効な**ルールの呼び出し**アトミックのスコープを持たないオーケストレーション内の図形です。 これは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 製品における制限事項です。  
+    >  BizTalk Server ではアトミックのスコープを挿入する必要はありません、**ルールの呼び出し**図形です。 ドラッグすることができます、**ルールの呼び出し**図形をツールボックスからオーケストレーション デザイン画面にします。 ただし、BizTalk Server では、**ルールの呼び出し**を挿入しようとする場合、コンテキスト メニューにメニュー項目が無効な**ルールの呼び出し**アトミックのスコープを持たないオーケストレーション内の図形です。 これは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 製品における制限事項です。  
   
 2.  オーケストレーション デザイナーで、選択、**ルールの呼び出し**図形です。  
   

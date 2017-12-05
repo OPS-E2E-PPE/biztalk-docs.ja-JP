@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eafa1831d6f99ef925a79ab7276caea005c2380f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: efd3a0b5f68ded39fbf5cc88a4ba8aac6725602e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="cross-field-segment-validation"></a>クロス フィールド セグメント検証
 EDI 受信パイプラインと EDI 送信パイプラインは、X12 エンコード メッセージのトランザクション セット データ要素に対してクロスフィールド/セグメント検証を実行できます。 この検証は、X12 では関係条件と呼ばれます。 クロス フィールド検証は、注釈を表現し、その結果、EDI 検証に関連しています。  
@@ -32,7 +32,7 @@ EDI 受信パイプラインと EDI 送信パイプラインは、X12 エンコ�
  X12 の選択肢は、必須 (M)、オプション (O)、および関係 (R) で構成されます (クロスフィールド検証)。 オプションが必須の場合、複合型の 1 つ以上のコンポーネント データ要素に値が格納されていることが必要です。  
   
 ## <a name="x12-optionality"></a>X12 の選択肢  
- X12 では、関係が選択されたクロスフィールド/セグメント検証には、スキーマのルールに記載されている一連のチェックが含まれます。 各ルールは、の次の要素によって識別される、 \<xs:annotation > 要素。  
+ X12 では、関係が選択されたクロスフィールド/セグメント検証には、スキーマのルールに記載されている一連のチェックが含まれます。 各ルールは、の次の要素によって識別される、 \<xs:annotation\>要素。  
   
 ```  
 <b:Rule subjects="X12ConditionDesignatorX_<relational_condition>"…>  

@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46ddba35a603217660df22668d548ca7c40eb5f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8198b17d07288bff04b64b0a1ad05db0cde4fd91
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-bam-alerts"></a>BAM 警告の構成
 管理者は、BAM 警告フレームワークの特定の要素を変更できます。 このトピックでは、管理者が使用できる構成オプションについて説明します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 >  警告を作成するときは、時刻データが OLAP データベース、スター スキーマ データベース、および Notification Services データベースにローカル時刻形式で格納されることに注意してください。 また、これら 3 つのデータベースは同じタイム ゾーンに属していることが前提となります。 プライマリ インポート データベースには、情報が UTC 時刻形式で格納されます。このデータベースは必ずしも同じタイム ゾーンに属している必要はありません。  
   
 ## <a name="changing-the-adf-configuration"></a>ADF 構成の変更  
- BAM 管理ユーティリティでは、bm.exe.config ファイルで指定された CommandTimeout の値を使用して、Notification Services アプリケーション定義ファイルを事前設定のビューを展開するときに\<EventRule >\\< ActionTimeout\>要素。  
+ BAM 管理ユーティリティでは、bm.exe.config ファイルで指定された CommandTimeout の値を使用して、Notification Services アプリケーション定義ファイルを事前設定のビューを展開するときに\<EventRule\>\\< ActionTimeout\>要素。  
   
  bm.exe.config の CommandTimeout の値を変更しても、変更前に展開したビューの CommandTimeout の値は変更されません。  
   
@@ -43,15 +43,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-2.  コマンド プロンプトで入力して、追跡フォルダーに移動**cd"C:\Program files \microsoft BizTalk Server\<バージョン > \Tracking"**または**cd"C:\Program Files (x86) \Microsoft BizTalk Server \<バージョン > \Tracking"** 64 ビット コンピューターにします。 **Enter**キーを押します。  
+2.  コマンド プロンプトで入力して、追跡フォルダーに移動**cd"C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking"**または**cd"C:\Program Files (x86) \Microsoft BizTalkサーバー\<バージョン\>\Tracking"** 64 ビット コンピューターにします。 **Enter**キーを押します。  
   
-3.  ADF ファイルを取得します。 型**cscript ProcessBamNSFiles.vbs-取得\<ConfigFilePath >\<構成ファイルのパス > \< PID サーバー > \< PID データベース >**です。 構成ファイルのパス、ADF ファイルのパス、PID サーバー、および PID データベースは、インストール環境に適した値に置き換えてください。  
+3.  ADF ファイルを取得します。 型**cscript ProcessBamNSFiles.vbs-取得\<ConfigFilePath\> \<構成ファイルのパス\> \< PID サーバー\> \< PID データベース\>** . 構成ファイルのパス、ADF ファイルのパス、PID サーバー、および PID データベースは、インストール環境に適した値に置き換えてください。  
   
 4.  **Enter**キーを押します。  
   
-5.  エディターで、ADF ファイルを開き、検索\<ActionTimeout > 目的の値に、&、この値は XML 期間でことに注意してください。  
+5.  エディターで、ADF ファイルを開き、検索\<ActionTimeout\>、目的の値に更新およびこの値は XML 期間でことに注意してください。  
   
-6.  ADF ファイルを保存します。 型**cscript ProcessBamNSFiles.vbs-更新\<ConfigFilePath >\<構成ファイルのパス > \< PID サーバー > \< PID データベース >**です。  
+6.  ADF ファイルを保存します。 型**cscript ProcessBamNSFiles.vbs-更新\<ConfigFilePath\> \<構成ファイルのパス\> \< PID サーバー\> \< PID データベース\>**.  
   
 7.  **Enter**キーを押します。  
   
@@ -89,6 +89,6 @@ ms.lasthandoff: 09/20/2017
   
  ファイルの格納場所は、BAM 構成ファイルの次の行を変更し、BAM 管理ユーティリティの update-config コマンドを使用することによって変更します。  
   
- \<プロパティ名 ="FileDropUNC">\\\\< コンピューター名\>\alerts\</Property >  
+ \<プロパティ名 ="FileDropUNC"\>\\\\< コンピューター名\>\alerts\</Property\>  
   
  BAM 管理ユーティリティの詳細については、次を参照してください。 [BAM 管理ユーティリティ](../core/bam-management-utility.md)です。

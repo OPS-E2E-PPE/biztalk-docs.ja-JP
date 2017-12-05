@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32e29f945d9d20cd2ea998e0fa05eda6b52174ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7a9d88e0a3c765e3bd143b966bf699eb7730d8f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browsingartifacts-biztalk-server-sample"></a>BrowsingArtifacts (BizTalk Server サンプル)
 BrowsingArtifacts サンプルでは、BizTalk のアイテムと属性を列挙する方法を示します。  
@@ -33,7 +33,7 @@ BrowsingArtifacts サンプルでは、BizTalk のアイテムと属性を列挙
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\BrowsingArtifacts  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\BrowsingArtifacts  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -54,7 +54,7 @@ BrowsingArtifacts サンプルでは、BizTalk のアイテムと属性を列挙
   
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
   
 2.  BrowsingArtifacts.exe ファイルを実行します。  
   
@@ -301,4 +301,4 @@ BTSWhitespaceTest.Map1 :
 ```  
   
 ## <a name="see-also"></a>参照  
- [Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM (BizTalk Server Samples フォルダー)](../core/admin-explorerom-biztalk-server-samples-folder.md)

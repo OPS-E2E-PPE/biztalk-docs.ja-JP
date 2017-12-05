@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb44c851258cc623cf991a0b2be5c18d58e59770
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78490c7b6447ddb097c0ca61154aab20c44086c3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="extending-the-itinerary-designer"></a>Itinerary Designer を拡張します。
 Microsoft Visual Studio で使用するための日程のグラフィカルなモデリングができるようにするには、行程デザイナーがビジュアルなドメイン固有言語 (DSL)、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 デザイナーでは、開発者が新しい機能や新しい構成オプションを有効にするカスタム拡張機能を記述できるさまざまな拡張ポイントを公開します。  
@@ -54,7 +54,7 @@ Microsoft Visual Studio で使用するための日程のグラフィカルな�
  アダプター プロバイダー マニフェスト ファイル; の参照インスタンスを次に示しますカスタム マニフェスト ファイルを同様に構造化する必要があります。  
   
 ```xml  
-\<?xml version="1.0" encoding="utf-8" ?>  
+<?xml version="1.0" encoding="utf-8" ?>  
 <adapterPropertyManifest adapterName="FTP">  
      <aliases>  
           <alias name="globalPropertySchemas" value="Microsoft.BizTalk.GlobalPropertySchemas, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />  
@@ -83,7 +83,7 @@ Microsoft Visual Studio で使用するための日程のグラフィカルな�
  **ValidationEngine**クラスは、Enterprise Library 検証 Application Block を使用してモデル要素の検証を実行して、Microsoft Visual Studio IDE の [エラー一覧] ウィンドウに、検証エラーをログに記録します。 モデル内の要素の種類ごとに実行される検証は、エンタープライズ ライブラリの構成ファイルで定義されます。 ファイルは、Ruleset.config の名前は、行程デザイナーのすべてのバイナリが配置されているバイナリ フォルダーにあります。 次の例は、構成ファイルのフラグメントと (という名前の検証コントロール)、2 つの検証規則が含まれています、 **UddiResolver** extender、1 つ、 **ServerUrl**プロパティと、用**ServiceKey**プロパティです。  
   
 ```  
-\<!--   
+<!--   
 UddiResolver  
 -->  
 <type assemblyName="Microsoft.Practices.Services.Extenders.Resolvers.UDDI"  

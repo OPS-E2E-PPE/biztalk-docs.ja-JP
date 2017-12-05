@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0303378f6e265d3b5d86a1aa9cd4fb1e88df86fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a04904f1170644498d49670104a842b4c8f9dd2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-scalar-functions-in-sql-server-by-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL Server のスカラー関数を呼び出す
 使用することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のスカラー関数を呼び出す、WCF サービス モデルを使用して .NET アプリケーションでします。 アダプターは、SQL サーバー上で直接呼び出すことのできるメソッドとして、スカラー関数を公開します。 アダプターがスカラー関数をサポートする方法の詳細については、次を参照してください。[実行スカラー関数は、SQL アダプターを使用して SQL Server](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md)です。  
@@ -43,9 +43,9 @@ ms.lasthandoff: 09/20/2017
 |---------------|----------------------|  
 |スカラー関数の名前|パブリック*< return_type >**< scalar_function_name >*(param1、param2、...)|  
   
- \<*retrun_type*> =、関数定義で定義されている戻り値の型  
+ \<*retrun_type* \>関数定義で定義されている戻り値の型を =  
   
- \<*scalar_function_name*> = スカラー関数の名前。  
+ \<*scalar_function_name* \> = スカラー関数の名前。  
   
  たとえば、次のコードにはメソッド シグネチャに関するの WCF クライアント クラスを生成、 **GET_EMP_ID**をパラメーターとしての従業員の表記を取得し、ID (従業員を返します、dbo スキーマ内のスカラー関数整数)。  
   
@@ -133,4 +133,4 @@ public partial class ScalarFunctions_dboClient : System.ServiceModel.ClientBase<
 8.  プロジェクトをビルドし、それを実行します。 アプリケーションには、"Manager"グループの指定には、従業員の従業員 ID が表示されます。  
   
 ## <a name="see-also"></a>参照  
-[WCF サービス モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[WCF サービス モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

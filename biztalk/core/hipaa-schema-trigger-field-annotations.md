@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d3bf6d53ec95ebfc57cff646ce5658fc6b1f4a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8c50db43b14899439877fde8ce0ee476feb5095
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hipaa-schema-trigger-field-annotations"></a>HIPAA スキーマのトリガー フィールドの注釈
-多くの場合、EDI セグメントには、セグメントの意味を変更する修飾子の値が含まれています。 たとえば、N1 セグメントには "請求先名" を示す "BT" の修飾要素が含まれていたり、"出荷先名" を示す "ST" の修飾要素が含まれていることがあります。 通常、これらのフィールドを解釈する方法はビジネス ロジックに任されており、逆アセンブラーでは N1 セグメントのすべてのインスタンスを同じ XML レコード名に解決します。しかし、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 付属の HIPAA スキーマに含まれている注釈を使用すると、逆アセンブラーで修飾要素の存在に基づいて一意の XML レコードを作成できます。  
+多くの場合、EDI セグメントには、セグメントの意味を変更する修飾子の値が含まれています。 たとえば、N1 セグメントには "請求先名" を示す "BT" の修飾要素が含まれていたり、"出荷先名" を示す "ST" の修飾要素が含まれていることがあります。 通常これらのフィールドを解釈する方法を決定するビジネス ロジックに任されており、逆アセンブラーが同じ XML レコード名を N1 セグメントのすべてのインスタンスを解決します。ただし、BizTalk Server に付属の HIPAA スキーマが含まれている注釈 EDI 逆アセンブラーで修飾要素の存在に基づいて一意の XML レコードを作成できるようにします。  
   
  **トリガー フィールドの実装**  
   
@@ -59,7 +59,7 @@ N4*N401__PayeeCityName*N4*N403__PayeePost**N4*N406~
   
  **既定のセグメントおよびトリガー フィールド**  
   
- 次の表は、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の一部として提供されている HIPAA ドキュメントで使用される既定のセグメントおよびトリガー フィールドについての情報を示します。  
+ 次の表には、既定の区分および BizTalk Server の一部として HIPAA ドキュメントで使用されるトリガー フィールドの情報が含まれています。  
   
 > [!NOTE]
 >  トリガー フィールドで使用される個別のトリガー値は、スキーマによって異なります。  

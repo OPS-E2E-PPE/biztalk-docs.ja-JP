@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7da5d51407bed1cca257e14cc4f548e8c991cf9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4a6326ae6e82e819d3cdf76ecc4d81e2a377ea65
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>カスタム ハンドラーに送信するための FRR 送信ポートの作成
 FIN 対応調整を実行する必要があります (元のメッセージまたは応答) メッセージを送信するの各送信ポートの系列を作成するから[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]相関関係を持つメッセージを処理するカスタム ハンドラーにします。  
@@ -73,7 +73,7 @@ FIN 対応調整を実行する必要があります (元のメッセージま�
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。|  
     |**演算子**|選択 **==**です。|  
     |**値**|型**A4SWIFT_FrrService**です。|  
-    |**[グループ]**|**そして**|  
+    |**[グループ]**|**And**|  
     |**プロパティ**|選択**BTS です。操作**です。|  
     |**演算子**|選択 **==**です。|  
     |**値**|BTS のいずれかを入力します。次の表の値を操作します。|  
@@ -102,18 +102,18 @@ FIN 対応調整を実行する必要があります (元のメッセージま�
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。|  
     |**演算子**|選択 **==**です。|  
     |**値**|型**A4SWIFT_FrrService**です。|  
-    |**[グループ]**|**そして**|  
+    |**[グループ]**|**And**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**です。|  
     |**演算子**|選択 **==**です。|  
     |**値**|型**True**です。|  
-    |**[グループ]**|**そして**|  
+    |**[グループ]**|**And**|  
     |**プロパティ**|選択**BTS です。操作**です。|  
     |**演算子**|選択 **==**です。|  
     |**値**|型**A4SWIFT_FrrSendMTMsg**です。|  
-    |**[グループ]**|**そして**|  
+    |**[グループ]**|**And**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
     |**演算子**|選択 **==**です。|  
-    |**値**|型 *\<NAKErrorCode >*、"Y01"などです。|  
+    |**値**|型 *\<NAKErrorCode\>*、"Y01"などです。|  
     |**[グループ]**|**Or**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
     |**演算子**|選択 **==**です。|  

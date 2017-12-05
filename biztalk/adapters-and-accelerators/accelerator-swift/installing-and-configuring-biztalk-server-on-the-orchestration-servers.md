@@ -15,14 +15,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d872d58c72110d7af22c6d64e7d212fbee53fae9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18a13d553e31739c959ff6baf317240c3c268ecc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-orchestration-servers"></a>インストールして、オーケストレーション サーバーに BizTalk Server を構成します。
-インストールおよび構成する方法について説明[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]修復 新規のメッセージの発信オーケストレーションおよび FIN 修復と調整のオーケストレーションを実行するオーケストレーション サーバーとして使用します。  
+このセクションでは、インストールを修復または新規のメッセージの発信オーケストレーションおよび FIN 修復と調整のオーケストレーションを実行するため、オーケストレーション サーバーとして使用する BizTalk Server を構成する方法について説明します。  
   
 ### <a name="to-install-and-configure-biztalk-server-on-the-orchestration-server"></a>インストールして、オーケストレーション サーバー上の BizTalk Server の構成  
   

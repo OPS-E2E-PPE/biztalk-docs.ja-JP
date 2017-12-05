@@ -12,25 +12,25 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0fc6423a8918237362636f26322b145a0cbcf26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca8edb4da6b59c33f87100ee3669bb2472d4350c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-update-the-runtime-computers"></a>ランタイム コンピューターを更新する方法
 送信先システム[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターで構成されます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実稼働環境で実行されている実稼働の BizTalk グループの一部として構成します。 各設定を更新する必要があります、障害回復環境で実稼働の BizTalk グループが復元される場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ことは、災害復旧を指すように、ランタイム コンピューター[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]復元されたに接続しようとしたときのインスタンス運用環境の BizTalk グループです。 送信先システムに、BizTalk グループが復元されると後、に、次の手順を使用して更新、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューター。  
   
 ### <a name="to-update-the-biztalk-server-runtime-computers"></a>BizTalk Server ランタイム コンピューターを更新するには  
   
-1.  編集した SampleUpdateInfo.xml ファイルを \Program Files\Microsoft にコピー [!INCLUDE[prague](../includes/prague-md.md)]\Schema\Restore ディレクトリすべて 32 ビットの BizTalk サーバーで \Program Files (x86) \microsoft[!INCLUDE[prague](../includes/prague-md.md)]すべての 64 ビットで \Bins32\Schema\Restore ディレクトリ送信先システムに BizTalk server。  
+1.  \Program Files\Microsoft すべて 32 ビット BizTalk server 上の BizTalk Server\Schema\Restore ディレクトリまたはすべての 64 ビット BizTalk で: \Program Files (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore ディレクトリには、編集した SampleUpdateInfo.xml ファイルをコピーします。送信先システム内のサーバー。  
   
 2.  各 BizTalk server では、コマンド プロンプトを開きます。 をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
     > [!NOTE]  
     >  64 ビット コンピューターでは、64 ビット コマンド プロンプトを開く必要があります。  
   
-3.  コマンド プロンプトで \Program Files\Microsoft に移動[!INCLUDE[prague](../includes/prague-md.md)](32 ビット コンピュータ) の \Schema\Restore または \Program Files (x86) \Microsoft [!INCLUDE[prague](../includes/prague-md.md)]\Bins32\Schema\Restore (64 ビット コンピューター) でこのコマンドを入力します。  
+3.  コマンド プロンプトで、または (64 ビット コンピューター) 上の \Program Files (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore \Program Files\Microsoft BizTalk Server\Schema\Restore (32 ビット コンピューター) 上に移動し、このコマンドを入力します。  
   
     ```  
     cscript UpdateRegistry.vbs SampleUpdateInfo.xml  
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
     -   BizTalk ホスト インスタンス  
   
 ## <a name="see-also"></a>参照  
- [ランタイム コンピューターを回復します。](../technical-guides/recovering-the-runtime-computers.md)
+ [ランタイム コンピューターの回復](../technical-guides/recovering-the-runtime-computers.md)

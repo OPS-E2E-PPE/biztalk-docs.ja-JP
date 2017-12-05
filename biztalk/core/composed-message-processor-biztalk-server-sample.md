@@ -17,11 +17,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3853a5b903215b6f716a13c33727e60c67107b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3097ef6a0da695c3b07cf68182a374eabed11b5e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="composed-message-processor-biztalk-server-sample"></a>構成済みメッセージ プロセッサ (BizTalk Server サンプル)
 このサンプルの目的は、集計メッセージの個別の品目を処理する構成済みメッセージ プロセッサ アプリケーションをビルドすることです。  
@@ -286,13 +286,13 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<サンプル パス > \Pipelines\ComposedMessageProcessor  
+     \<パスのサンプル\>\Pipelines\ComposedMessageProcessor  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプル用の入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
-         \<サンプル パス > \Pipelines\ComposedMessageProcessor  
+         \<パスのサンプル\>\Pipelines\ComposedMessageProcessor  
   
     -   このサンプル用に Visual Studio プロジェクトをコンパイルします。  
   
@@ -328,4 +328,4 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
     2.  マップされたメッセージは一緒にアセンブルされ、フラット ファイル形式に変換されます。  
   
 ## <a name="see-also"></a>参照  
- [パイプライン (BizTalk Server Samples フォルダ)](../core/pipelines-biztalk-server-samples-folder.md)
+ [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

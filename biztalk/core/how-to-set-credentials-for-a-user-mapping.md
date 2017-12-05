@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc5947b13d9ffcc3721f460ccbcd5bd25701be07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4853499dbfd85cd5114212e37f4d22770d64a22
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-credentials-for-a-user-mapping"></a>ユーザー マッピングの資格情報を設定する方法
 ここで示すコマンドを使用すると、ユーザーが特定のアプリケーションにアクセスするための資格情報を設定できます。  
@@ -32,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ >**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – setcredentials\<ドメイン >\\< ユーザー名\> \<applicationname >**ここで、 **\<ドメイン >**はWindows ドメイン ユーザー アカウントを**\<ユーザー名 >**は、Windows ユーザー名と **\<applicationname >**を特定のアプリケーションは、資格情報を設定するには。  
+3.  型**ssomanage – setcredentials\<ドメイン\>\\< ユーザー名\> \<applicationname\>**ここで、  **\<ドメイン\>**は Windows ドメイン ユーザー アカウントを **\<username\>** は、Windows ユーザー名と **\<applicationname\>** は、特定のアプリケーションの資格情報を設定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -47,9 +47,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ >**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssoclient-setcredentials\<アプリケーション名 >**ここで、 **\<アプリケーション名 >**ユーザー マッピングを削除する関連アプリケーションの名前を指定します.  
+3.  型**ssoclient-setcredentials\<アプリケーション名\>**ここで、 **\<アプリケーション名\>**関連アプリケーションの名前を指定します。ユーザー マッピングを削除します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -58,4 +58,4 @@ ms.lasthandoff: 09/20/2017
  [ユーザー マッピングを作成する方法](../core/how-to-create-user-mappings.md)   
  [SSO マッピング](../core/sso-mappings.md)   
  [関連アプリケーションの管理](../core/managing-affiliate-applications.md)   
- [ユーザー マッピングを管理します。](../core/managing-user-mappings.md)
+ [ユーザー マッピングの管理](../core/managing-user-mappings.md)

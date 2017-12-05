@@ -22,17 +22,17 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54cc5bb9bd123f68fbeb0013423c3f3cc07cd50a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 85f7291d56d662a8e3a9d46308d6b16ca2a1cafc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-the-bam-portal"></a>BAM ポータルの計画
 このトピックでは、ビジネス アクティビティ監視 (BAM) ポータルの展開を計画するときに考慮する必要がある項目について説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
- **システム要件**です。 BAM ポータルをインストールするには、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のシステム要件に加え、次のソフトウェアをインストールする必要があります。  
+ **システム要件**です。 BizTalk Server のシステム要件に加え、BAM ポータルをインストールするために次のソフトウェアをインストールする必要があります。  
   
 -   インターネット インフォメーション サービス (IIS)  
   
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="development-planning"></a>開発の計画  
  **ピボット テーブルの接続文字列を**です。 BAM マネージャー ユーティリティは、展開時に、リアルタイム集計 (RTA) のピボットテーブル定義の接続文字列を必ず変更するというわけではありません。 RTA ピボットテーブルが手動で編集された既存の OLAP 接続文字列を保持しており、値キーの大文字小文字が正しくない場合に、接続文字列の変更が行われます。 たとえば、BAM 定義 XML ファイルの次の行では、キーが想定した RtaRef ではなく RTARef になっています。  
   
- **\<PivotTableView CubeRef"POCube"次の行を = ="POAmountByLocation">**  
+ **\<PivotTableView CubeRef"POCube"次の行を = ="POAmountByLocation"\>**  
   
  そのため、ピボットテーブルは、RTA ピボットテーブルではなく OLAP キューブを使用して生成されます。  
   
@@ -111,4 +111,4 @@ ms.lasthandoff: 09/20/2017
 -   異なるサーバー上で BAM ポータルを使用して展開済みのビューを表示する場合は、2 つのポータル (それぞれが、ローカルの BAM プライマリ インポート データベースに対して実行されている) の動作が同じになるように、参照を対称的に有効にする必要があります。  
   
 ## <a name="see-also"></a>参照  
- [BAM ポータルの構成をカスタマイズします。](../core/customizing-the-bam-portal-configuration.md)
+ [BAM ポータルの構成のカスタマイズ](../core/customizing-the-bam-portal-configuration.md)

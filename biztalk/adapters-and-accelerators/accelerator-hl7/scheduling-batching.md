@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08337171897a4a78e605054e9126e8c8238d5fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 790cf5cb853da211d5e8928f398ecc1a2b3fe0ba
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="scheduling-batching"></a>バッチ処理のスケジュール設定
 使用する[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]をアクティブ化、要求、または送信バッチが終了するエクスプ ローラーを構成します。 送信バッチをアクティブ化する 2 つの手順で構成されています: 時間ベースの構成またはメッセージが条件とし、送信バッチ処理オーケストレーションの開始をカウントします。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-open-btahl7-configuration-explorer"></a>BTAHL7 構成エクスプ ローラーを開く  
   
--   をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk\<バージョン > Accelerator 用 HL7**、クリックして**BTAHL7構成のエクスプ ローラー**です。  
+-   をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**、クリックして**BTAHL7 構成エクスプ ローラー**です。  
   
 ### <a name="to-schedule-message-batching"></a>メッセージのバッチ処理をスケジュールするには  
   
@@ -47,4 +47,4 @@ ms.lasthandoff: 09/20/2017
     |**バッチの制御**|次のいずれかを選択します。<br /><br /> -   **スケジュールの開始**: バッチ スケジュールの開始を選択します。<br />-   **今すぐ送信**: バッチを開始する選択をすぐに処理します。<br />-   **スケジュールを停止**: 現在のバッチ スケジュールを停止する場合に選択します。|  
   
 ## <a name="see-also"></a>参照  
- [受信確認をバッチ処理を構成します。](../../adapters-and-accelerators/accelerator-hl7/configuring-batching-acknowledgments.md)
+ [受信確認のバッチ処理の構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching-acknowledgments.md)

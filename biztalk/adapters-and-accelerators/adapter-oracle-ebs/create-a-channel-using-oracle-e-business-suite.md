@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4273ab2dad26cee8f600ff3e502d88933d243e70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d0f06a8f1e8b622574f20f331069d7ca280fc45c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-oracle-e-business-suite"></a>Oracle E-business Suite を使用して、チャネルを作成します。
 モデルでは、WCF チャネル、Oracle E-business Suite に対する操作を呼び出すし、SOAP メッセージを交換することで、結果を受け取る、 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] WCF チャネルを経由します。  
@@ -94,9 +94,9 @@ channel.Open();
  次のコードは、前述の例で使用される構成設定を示しています。 クライアント エンドポイントのコントラクトには、"System.ServiceModel.Channels.IRequestChannel"または"System.ServiceModel.Channels.IOutputChannel"を作成するチャネル形状の種類に応じてをする必要があります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <oracleEBSBinding>  
                 <binding openTimeout="00:05:00" name="OracleEBSBinding" closeTimeout="00:01:00"  
@@ -122,7 +122,7 @@ channel.Open();
                 bindingConfiguration="OracleEBSBinding" contract="System.ServiceModel.Channels.IRequestChannel"  
                 name="MyRequestChannel" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -137,7 +137,7 @@ channel.Open();
   
 3.  バインディング パラメーター コレクションを使用して、作成、 **BindingParameterCollection**クラスし、資格情報を設定します。  
   
-4.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel >**メソッドを**OracleEBSBinding**です。 このメソッドに渡すパラメーターの 1 つとして、Oracle の接続 URI を指定します。  
+4.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel\>** メソッドを**OracleEBSBinding**です。 このメソッドに渡すパラメーターの 1 つとして、Oracle の接続 URI を指定します。  
   
 5.  リスナーを開きます。  
   

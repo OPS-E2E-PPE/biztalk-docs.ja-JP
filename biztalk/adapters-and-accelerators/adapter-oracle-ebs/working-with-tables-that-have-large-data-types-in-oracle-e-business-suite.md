@@ -12,25 +12,25 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6cc357809ecc446c0c282f6a4f8fa46ad7392a53
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d65bd37e6ad9c8b8b196df6092a0573d2774a756
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-tables-that-have-large-data-types-in-oracle-e-business-suite"></a>Oracle E-business Suite で大量のデータ型を持つテーブルの操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが BLOB、CLOB、NCLOB、BFILE などの大規模なデータ型とのインターフェイス テーブルやビューでの操作を実行できるようにします。  
   
--   BLOB、CLOB、NCLOB、アダプターは、型の列を読み取るできるだけでなく、データ更新のクライアントを使用できます。 アダプター公開 Read_\<LOBColName > と Update_\<LOBColName > の読み取りし、それぞれのデータを更新する操作、 \<LOBColName > 大量のデータ型の列の名前を指定します。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取りし、そのインターフェイス テーブルに対して操作を更新を公開します。  
+-   BLOB、CLOB、NCLOB、アダプターは、型の列を読み取るできるだけでなく、データ更新のクライアントを使用できます。 アダプター公開 Read_\<LOBColName\>と Update_\<LOBColName\>を読み取り、それぞれのデータを更新操作、 \<LOBColName\>で大きな列の名前を指定しますデータ型です。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取りし、そのインターフェイス テーブルに対して操作を更新を公開します。  
   
--   BFILE 型の列は、アダプターのクライアントは、データを読み取るだけことができます。 アダプター公開 Read_\<LOBColName > BFILE 型の列からデータを操作します。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取り操作インターフェイス テーブルとしてを公開します。  
+-   BFILE 型の列は、アダプターのクライアントは、データを読み取るだけことができます。 アダプター公開 Read_\<LOBColName\> BFILE 型の列からデータを操作します。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取り操作インターフェイス テーブルとしてを公開します。  
   
  これらの操作の詳細については、次を参照してください。[インターフェイス テーブル、インターフェイス ビュー、テーブル、およびビューを含む LOB データに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)です。 これらの操作を実行するためのメッセージ スキーマについては、次を参照してください。[特別な LOB 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-special-lob-operations1.md)です。  
   
 ## <a name="how-to-perform-operations-on-columns-with-large-data-types"></a>大規模なデータ型を持つ列に対して操作を実行する方法  
  使用して Oracle E-business Suite での操作を実行[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明した手順のタスクでは、 [Oracle E-business Suite アプリケーションを作成するビルド ブロック](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md)です。 これらのタスクは大規模なデータ型を含む Oracle E-business Suite のインターフェイス テーブルとのインターフェイス ビューで操作を行うには。  
   
-1.  BizTalk プロジェクトを作成し、操作のスキーマを生成 (Read_\<LOBColName > または Update_\<LOBColName >) をテーブルまたはビューを呼び出します。  
+1.  BizTalk プロジェクトを作成し、操作のスキーマを生成 (Read_\<LOBColName\>または Update_\<LOBColName\>) をテーブルまたはビューを呼び出します。  
   
 2.  Oracle E-business Suite からメッセージを送受信するための BizTalk プロジェクトでメッセージを作成します。  
   
@@ -222,7 +222,7 @@ ReadMessage(WCF.Action) = "Tables/ReadLOB/SCOTT/CUSTOMER/PHOTO ";
         -   Wcf-custom または Wcf-oracleebs 送信ポートの送信し 1 つ以上のスキーマに準拠したメッセージを受信、2 つの操作を実行するため、両方の操作に対して動的アクションを設定する必要があります。 アクションの詳細については、次を参照してください。 [for Oracle E-business Suite SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-soap-action-for-oracle-e-business-suite.md)です。 このオーケストレーションのアクションを次のように設定してください。  
   
             ```  
-            \<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+            <BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
               <Operation Name="Update_LOB" Action="Tables/UpdateBlob/SCOTT/CUSTOMER/PHOTO" />  
               <Operation Name="Read_LOB" Action="Tables/ReadLOB/SCOTT/CUSTOMER/PHOTO" />  
             </BtsActionMapping>  
@@ -279,14 +279,14 @@ ReadMessage(WCF.Action) = "Tables/ReadLOB/SCOTT/CUSTOMER/PHOTO ";
  オーケストレーションはメッセージを使用して、Oracle データベースに送信します。 Oracle データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、次のよう、上記の要求メッセージ用の Oracle データベースからの応答。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Update_PHOTOResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Tables/SCOTT/CUSTOMER" />  
 ```  
   
  これで、オーケストレーションの要求メッセージの構築、 **Read_PHOTO** C:\TestLocation\MessageIn で利用可能な要求メッセージを使用して操作します。 要求メッセージが Oracle データベースに送信され、応答は同じファイルの場所で保存します。 PHOTO 列に対する読み取り操作の応答には、次のようになります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Read_PHOTOResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Tables/SCOTT/CUSTOMER">  
   <Read_PHOTOResult>U2FtcGxlIERhdGE=</Read_PHOTOResult>  
 </Read_PHOTOResponse>  

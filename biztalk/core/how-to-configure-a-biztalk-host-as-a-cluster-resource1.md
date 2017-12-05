@@ -27,11 +27,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9704dbdf2bcf3549e23f1875e85a49f0ee051b2f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a18548394980912796daf1100f700fd03e72f294
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-biztalk-host-as-a-cluster-resource"></a>BizTalk ホストをクラスター リソースとして構成する方法
 このトピックでは、BizTalk ホストをクラスター リソースとして構成する手順について説明します。 このトピックの手順を完了するには、BizTalk グループの少なくとも 2 つの BizTalk Server を Windows Server クラスターのメンバーとしてあらかじめ構成しておく必要があります。 Windows Server クラスターの構成の詳細については、Windows Server のオンライン ヘルプを参照してください。  
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-configure-a-biztalk-host-as-a-cluster-resource"></a>BizTalk ホストをクラスター リソースとして構成するには  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername >:\<管理データベース >]**をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。 フォルダーの下にホストの一覧が表示されます。  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。 フォルダーの下にホストの一覧が表示されます。  
   
 2.  クラスター、しを選択したいホストを右クリックして**クラスター**です。  
   
@@ -106,7 +106,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-uncluster-a-clustered-biztalk-host"></a>クラスター化された BizTalk ホストをクラスター解除するには  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername >:\<管理データベース >]**をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。 フォルダーの下にホストの一覧が表示されます。  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。 フォルダーの下にホストの一覧が表示されます。  
   
 2.  クラスター化を解除し、選択したクラスター化されたホストを右クリックして**クラスター解除**です。  
   

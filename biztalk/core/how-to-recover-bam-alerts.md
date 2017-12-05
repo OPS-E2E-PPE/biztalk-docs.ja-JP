@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37c18265712fa2f0dd1bb2d83d756cc9a9bd1505
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec36491dd7368e0e2fdbcd8fb5abab9d840c6b1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-bam-alerts"></a>BAM 警告を復旧する方法
 ビジネス アクティビティの監視 (BAM) を使用している場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の復旧処理の一環として BAM 警告を復旧する必要もあります。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  コマンド プロンプトで、次のように入力します。  
   
-     **nscontrol register-name BamAlerts-サーバー***\<ServerName >***-サービス - serviceusername"**  *\<ServiceUserName >***"-servicepassword"**  *\<ServicePassword >* **"**   
+     **nscontrol register-name BamAlerts-サーバー***\<ServerName\>***-サービス - serviceusername"**  *\<ServiceUserName\>*  **"-servicepassword"**  *\<ServicePassword\>*  **"**   
   
      これにより、Notification Services が、適切なデータベース (この情報は、nscontrol により、サービス コンピューターのレジストリに保持) にログオンします。  
   
@@ -42,4 +42,4 @@ ms.lasthandoff: 09/20/2017
 4.  コマンド プロンプトで次のように入力します。: **「net start NS$ BamAlerts**です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server を実行しているコンピューターの回復](../core/recovering-a-computer-running-biztalk-server.md)
+ [BizTalk Server を実行しているコンピューターの復旧](../core/recovering-a-computer-running-biztalk-server.md)

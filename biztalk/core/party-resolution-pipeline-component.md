@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6649016dbfc225c4c2f557c73ff37dfc010a1588
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2e1c9b95c84d82dd1d7e2538138bcb9f89b6b8a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="party-resolution-pipeline-component"></a>パーティの解決パイプライン コンポーネント
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
  メッセージが署名されている場合、受信メッセージの署名の検証で使用された証明書の拇印は、構成リポジトリを検索し、メッセージが関連付けられているパーティを判別するために使用されます。 パーティが見つかった場合、そのパーティの SourcePartyID がメッセージの発信者としてメッセージのコンテキストに配置されます。  
   
- パーティの解決パイプライン コンポーネントで Windows ユーザーを検証できるようにするには、パーティに "WindowsUser" エイリアスを追加する必要があります。 名前 [修飾子] フィールドに"WindowsUser"を入力し、値の形式でユーザー名に設定\<ドメイン \ ユーザー名 > (somedomain \someuser など)。 スタンドアロンのシナリオの場合、パーティの構成に使用される WindowsUser 値は、受信アダプターによって設定される値に一致する必要があります。  
+ パーティの解決パイプライン コンポーネントで Windows ユーザーを検証できるようにするには、パーティに "WindowsUser" エイリアスを追加する必要があります。 名前 [修飾子] フィールドに"WindowsUser"を入力し、値の形式でユーザー名に設定\<domain \user name\> (somedomain \someuser など)。 スタンドアロンのシナリオの場合、パーティの構成に使用される WindowsUser 値は、受信アダプターによって設定される値に一致する必要があります。  
   
  タイムスタンプ付きのプロパティの両方を持つパーティの解決コンポーネントで、メッセージが到着した場合、パーティの解決コンポーネントは、まず、証明書によってパーティを解決するのには (と仮定した場合、**証明書によるパーティを解決するには**プロパティは、設定**True**)。 パイプラインを実行しているホスト プロセスとしてマークされている場合、パーティが解決された場合は、そのパーティの SourcePartyID がメッセージの OriginatorPID として配置されて、メッセージのコンテキストで**信頼されている認証**パイプラインによってです。 証明書を使用してパーティの解決を完了できない場合、メッセージの OriginatorPID 値には、匿名ユーザーの SID である "s-1-5-7" が設定されます。 OriginatorPID プロパティの詳細については、次を参照してください。[パイプラインをセキュリティで保護する方法](../core/how-to-secure-pipelines.md)です。  
 
@@ -49,4 +49,4 @@ ms.lasthandoff: 09/20/2017
 -  **メッセージ コンテキスト プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
 -  [パイプライン コンポーネント](../core/pipeline-components.md)   
 -  [カスタム パーティの解決 (BizTalk Server サンプル)](../core/custom-party-resolution-biztalk-server-sample.md)   
--  [プロセス間でメッセージの認証](../core/authentication-of-messages-between-processes.md)
+-  [プロセス間のメッセージの認証](../core/authentication-of-messages-between-processes.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4909b96e74d34d469decd11c1ffba0e49217ff7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b8ea9c6151b617e2eef2aa5404d6415f8dd71ded
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-policies-and-usage-information"></a>ポリシーと使用状況情報の監視
 SOA サービス マネージャーでは、作成と監視ポリシーを編集できるようにするメカニズムを提供します。 たとえば、図 1 には、ポリシー テンプレートを適用して、アプリケーションの監視をアクティブ化の画面が表示されます。  
@@ -44,4 +44,4 @@ SOA サービス マネージャーでは、作成と監視ポリシーを編集
  **SOA サービス マネージャーが個々 のメッセージの詳細を表示**  
   
 > [!NOTE]
->  SOA サービス マネージャーとワークベンチの製品の統合 SOA ソフトウェア社から製品[!INCLUDE[prague](../includes/prague-md.md)]です。 SOA ソフトウェアや、製品、およびダウンロード、最新のインストールと運用手順の詳細については、次を参照してください。、 [SOA ソフトウェア](http://go.microsoft.com/fwlink/?LinkId=188559)Web サイトです。
+>  SOA サービス マネージャーとワークベンチの製品は、BizTalk Server と統合する SOA ソフトウェア, Inc. の製品です。 SOA ソフトウェアや、製品、およびダウンロード、最新のインストールと運用手順の詳細については、次を参照してください。、 [SOA ソフトウェア](http://go.microsoft.com/fwlink/?LinkId=188559)Web サイトです。

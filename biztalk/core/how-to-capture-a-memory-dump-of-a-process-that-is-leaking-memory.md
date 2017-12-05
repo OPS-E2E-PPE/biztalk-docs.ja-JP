@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2999ce9a188b2d9b94df11328485e8b7440ecec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e1e57a3c4d3c035069c550cdc540de1c88e8880
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>メモリ リークが発生したプロセスのメモリ ダンプを取得する方法
 不要になったメモリを BizTalk プロセス BTSNTSvc.exe が解放できず、時間の経過と共に使用可能なメモリ量が減少している場合、このプロセスにメモリ リークが発生していると見なされます。 下の値を表示することによって、プロセスのメモリ使用量を決定できます、**メモリ使用量**の列、**プロセス** タブで使用できる**タスク マネージャー**です。 プロセスが長時間にわたってメモリを解放せずに消費し続けると、全体のシステム パフォーマンスに悪影響が生じます。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **Rule Completed**ダイアログ**完了**の既定値を受け入れるように**ルールを今すぐアクティブ化**です。  
   
-8.  \Program Files\IIS Resources\DebugDiag\Logs に既定では、プロセスのメモリ ダンプが保存される\\<*クラッシュ ルールの名前*> で指定された時間間隔後に、ローカル コンピューターのディレクトリ**Configure Tracking Duration**ダイアログが経過しました。  
+8.  \Program Files\IIS Resources\DebugDiag\Logs に既定では、プロセスのメモリ ダンプが保存される\\<*クラッシュ ルールの名前*\>時間間隔後に、ローカル コンピューターのディレクトリ指定されている、 **Configure Tracking Duration**ダイアログが経過しました。  
   
 ### <a name="to-manually-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>メモリ リークが発生したプロセスのメモリ ダンプを手動で取得するには  
   

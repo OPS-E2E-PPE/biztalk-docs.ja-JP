@@ -23,14 +23,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af9663c5b199c8f0b77da5a0207f370a515ad030
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 479532d41259ebb7f50877ea75bdd79051160bb3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="administration-and-run-time-tools"></a>管理およびランタイム ツール
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) の展開、構成の管理、管理、ビジネス ルール管理などの管理および実行時のタスクを実行して、監視ツールのセットを提供します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) の展開、構成の管理、管理、ビジネス ルール管理などの管理および実行時のタスクを実行して、監視ツールのセットを提供します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。  
   
 ## <a name="biztalk-explorer"></a>BizTalk エクスプローラー  
  BizTalk エクスプローラーを使用して、プロジェクト、パーティ、およびオーケストレーションの構成と管理を行います。 BizTalk エクスプ ローラーでは、アセンブリ、ポート、パーティなどの項目 (階層ツリー) 形式で表示、構成データベース (BizTalk 管理データベースとも呼ばれます) の内容を表示します。  

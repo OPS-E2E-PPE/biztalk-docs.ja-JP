@@ -12,11 +12,11 @@ caps.latest.revision: "37"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c16e2ee6d09afa3479a0540838086cb92270132
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e523c5c992ea422e6fe81f3c0d948db7007bcdb1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-configuration"></a>構成のトラブルシューティング
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成プログラムは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行する 1 つ以上のコンピューター上にデータベースを作成し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が使用するテーブル、ロール、およびストアド プロシージャをそのデータベースに格納して、実行時に使用される .NET アセンブリを BizTalk 管理データベースに展開します。  
@@ -151,7 +151,7 @@ echo %TEMP%
   
  リポジトリに接続できません。  
   
- 分析サーバー:\<マシン名 >  
+ 分析サーバー:\<マシン名\>  
   
  エラー:  
   
@@ -175,7 +175,7 @@ echo %TEMP%
   
 4.  **リポジトリ接続文字列の編集** ダイアログ ボックスで、この文字列内でサーバー名を確認しが正しくない場合、新しいコンピューター名を更新します。  
   
-5.  次の場所に移動: \<*インストール ディレクトリ*> \Program Files\Microsoft Analysis services \bin です。  
+5.  次の場所に移動: \<*インストール ディレクトリ*\>\Program Files\Microsoft Analysis services \bin です。  
   
 6.  右クリックし、 **Bin**フォルダー、およびクリック**共有とセキュリティ**です。 **Bin のプロパティ** ダイアログ ボックスが表示されます。  
   

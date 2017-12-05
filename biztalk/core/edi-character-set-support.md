@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c1463d8a06ab5da89306aababfe19362d6308dd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da903e0cde796c6b12c30ea32dfe4012215a231e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-character-set-support"></a>EDI 文字セットのサポート
-このトピックでは、[!INCLUDE[prague](../includes/prague-md.md)] の EDI 機能でサポートされる文字セットについて説明します。  
+このトピックでは、文字セットが BizTalk Server の EDI 機能でサポートされていることを示します。  
   
 |EDI エンコード|サポートされている文字セット|  
 |------------------|------------------------------|  

@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b72574df8cd20b8beb4be7e7eb11e3065d03333
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79cfa3f1b799c4a96cdad7f4c9b89b4b594dc4d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-bapi-transactions-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP でトランザクションを BAPI を実行します。
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]により、トランザクションを実行する SAP システムで使用して、クライアントはアダプター[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 トランザクションのオーケストレーションを作成する前に、まずトランザクションを実行する基本的なシナリオを理解する必要があります。 通常のトランザクションのシナリオで要求メッセージ (BAPI の呼び出し) などの複数の操作は SAP システムへ送信します。 これが参照されますとして、「操作のメッセージ」 オーケストレーションは、各操作メッセージを要求メッセージから抽出し、SAP システムに個別の操作のメッセージを送信する必要があります。 オーケストレーションに送信した後、同じ接続を使用して他のいずれか。 オーケストレーションは、BizTalk マップを使用して XML 変換を使用して、「操作のメッセージ」から個々 のメッセージを抽出します。  
@@ -34,10 +34,10 @@ ms.lasthandoff: 09/20/2017
   
 |メッセージ|OPEN|再利用します。|CLOSE|中止|  
 |-------------|----------|-----------|-----------|-----------|  
-|最初のメッセージ (メッセージを操作する)|はい|いいえ|いいえ|不可|  
+|最初のメッセージ (メッセージを操作する)|可|いいえ|いいえ|不可|  
 |後続のメッセージ (メッセージの操作)|不可|可|いいえ|不可|  
 |BAPI_TRANSACTION_COMMIT (トランザクション メッセージ)|不可|いいえ|可|不可|  
-|BAPI_TRANSACTION_ROLLBACK (トランザクション メッセージ)|不可|いいえ|はい|はい|  
+|BAPI_TRANSACTION_ROLLBACK (トランザクション メッセージ)|不可|いいえ|はい|可|  
   
  テーブルでは、"Yes"は、メッセージに使用するメッセージ コンテキスト プロパティを示します。 同様に、"No"は、メッセージと共に使用することはできません、メッセージ コンテキスト プロパティを表します。  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 09/20/2017
 >  必要なすべてのスキーマが BizTalk プロジェクトに追加されたことを確認する必要があります。  
   
 > [!IMPORTANT]
->  BizTalk プロパティ スキーマへの参照を追加する必要があります[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]BizTalk プロジェクトにします。 スキーマ ファイル*Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*がインストールされている、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップでは、通常は\<インストール ドライブ >: \Program Files\Microsoft BizTalk アダプター Pack\bin です。  
+>  BizTalk プロパティ スキーマへの参照を追加する必要があります[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]BizTalk プロジェクトにします。 スキーマ ファイル*Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*がインストールされている、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップでは、通常は\<インストール ドライブ\>: \Program Files\Microsoft BizTalk Adapter Pack\bin です。  
   
 ## <a name="defining-messages-and-message-types"></a>メッセージとメッセージの種類を定義します。  
  以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 BizTalk プロジェクトのオーケストレーションの種類 ウィンドウからのメッセージに最初の手順で生成したスキーマをリンクする必要があります。  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-messages-and-link-to-schema"></a>メッセージを作成し、スキーマにリンクするには  
   
-1.  既に開かれていない場合は、オーケストレーションの種類、BizTalk プロジェクトを開きます。 をクリックして**ビュー**、をポイント**その他のウィンドウ**、 をクリック**オーケストレーション**です。  
+1.  既に開かれていない場合は、オーケストレーションの種類、BizTalk プロジェクトを開きます。 をクリックして**ビュー**、 をポイント**その他のウィンドウ**、 をクリック**オーケストレーション**です。  
   
 2.  **オーケストレーション ビュー**を右クリックして**メッセージ**、クリックして**新しいメッセージ**です。  
   
@@ -324,7 +324,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  例外を処理する方法の詳細については、次を使用して一般に、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[トランザクションを使用して、例外処理](../../core/using-transactions-and-handling-exceptions.md)です。
   
 ## <a name="add-the-biztalk-property-schema-to-biztalk"></a>BizTalk プロパティ スキーマの BizTalk への追加します。  
- BizTalk プロジェクトでアセンブリを BizTalk プロパティ スキーマへの参照を追加した[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 BizTalk アプリケーション、つまり、BizTalk プロジェクトが配置されるアプリケーションにリソースとして、同じアセンブリを追加する必要があります。 スキーマ ファイル*Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*がインストールされている、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]通常セットアップ\<インストール ドライブ >: \Program Files\Microsoft BizTalk アダプター Pack\bin です。 このリソースせずいないことができます、プロジェクトを配置します。  
+ BizTalk プロジェクトでアセンブリを BizTalk プロパティ スキーマへの参照を追加した[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 BizTalk アプリケーション、つまり、BizTalk プロジェクトが配置されるアプリケーションにリソースとして、同じアセンブリを追加する必要があります。 スキーマ ファイル*Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*がインストールされている、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]通常セットアップ\<インストール ドライブ\>: \Program Files\Microsoft BizTalk アダプターPack\bin です。 このリソースせずいないことができます、プロジェクトを配置します。  
   
 #### <a name="to-add-an-assembly-as-a-resource-in-biztalk"></a>BizTalk のリソースとしてアセンブリを追加するには  
   
@@ -332,7 +332,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   
 2.  コンソール ツリーで  **BizTalk グループ**、展開**アプリケーション**、および BizTalk アセンブリを追加するアプリケーション、します。  
   
-3.  右クリック**リソース**、をポイント**追加**をクリックし、 **BizTalk アセンブリ**です。  
+3.  右クリック**リソース**、 をポイント**追加** をクリックし、 **BizTalk アセンブリ**です。  
   
 4.  **リソースの追加**ダイアログ ボックスで、をクリックして**追加**は、BizTalk アセンブリ ファイルを含むフォルダーに移動し、BizTalk アセンブリ ファイルを選択し、をクリックして**開く**です。  
   
@@ -384,7 +384,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  アプリケーションを実行した後に、定義済みの場所で、オーケストレーションの要求メッセージを削除する必要があります。 要求メッセージが、インスタンスの MultipleOrders.xsd スキーマする特定のスキーマに従う必要があります。 たとえば、要求メッセージを SAP システムでの販売注文を作成し、操作をコミットします。  
   
 ```  
-\<ns0:Orders xmlns:ns0="http://BAPISend.MultipleOrders">  
+<ns0:Orders xmlns:ns0="http://BAPISend.MultipleOrders">  
   <Order>  
       <ORDER_HEADER_IN>  
         <DOC_TYPE>TA</DOC_TYPE>  
@@ -411,7 +411,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   <isCommit>true</isCommit>  
   <BAPI_TRANSACTION_COMMIT>  
   </BAPI_TRANSACTION_COMMIT>  
-\</ns0:Orders>  
+</ns0:Orders>  
 ```  
   
  オーケストレーションはメッセージを処理して、SAP システムに送信します。 SAP システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 上記の要求メッセージの 2 つの応答メッセージを取得する — BAPI_SALESORDER_CREATEFROMDAT2 RFC と BAPI_TRANSACTION_COMMIT を使用して、コミット操作の呼び出しのいずれか。  
@@ -419,7 +419,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  BAPI_SALESORDER_CREATEFROMDAT2 に対する応答は次のとおりです。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <BAPI_SALESORDER_CREATEFROMDAT2Response xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
   <SALESDOCUMENT />   
   <ORDER_ITEMS_IN>  
@@ -444,7 +444,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  BAPI_TRANSACTION_COMMIT に対する応答は次のとおりです。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <BAPI_TRANSACTION_COMMITResponse xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
   <RETURN>  
     <TYPE xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />   

@@ -13,18 +13,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 914988661789fdb7750e9c9b650f9887d888694b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d0619dc77496fd1547505221ff2f437bf486fb8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-price-and-availability-request-with-the-fabrikam-sample"></a>Fabrikam サンプルを使用して Price and Availability Request の作成
 ここでは、LOBWebApplication ツールを使用して、3A2 Price and Availability 要求を作成します。  
   
 ### <a name="to-submit-a-3a2-price-and-availability-request-to-contoso"></a>3A2 Price and Availability 要求を Contoso に送信するには  
   
-1.  Internet Explorer で、移動 http://\<*fabrikam_computername*>/>/lobwebapplication/default.aspx です。  
+1.  Internet Explorer で、移動 http://\<*fabrikam_computername*\>/LOBWebApplication/default.aspx です。  
   
 2.  **LOBWebApplication**  ページで、次の操作します。  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
     |**[PIP Version]**|型**r02.00.00a など**です。|  
     |**メッセージのカテゴリ**|型**アクション**です。|  
   
-3.  メモ帳または別のテキスト エディターを使用してを開く、 **3A2_Request.xml**ファイルで、C:\Program files \microsoft BizTalk\<バージョン > Accelerator for RosettaNet\SDK\LOBApplication\SampleInstancesfolder およびコピーとテキストを貼り付けます、 **Service Content**フィールドで、LOBWebApplication ツールです。  
+3.  メモ帳または別のテキスト エディターを使用してを開く、 **3A2_Request.xml** C:\Program files \microsoft biztalk ファイル\<バージョン\>RosettaNet\SDK\LOBApplication\SampleInstancesfolder のアクセラレータコピーして貼り付け、テキストを**Service Content**フィールドで、LOBWebApplication ツールです。  
   
 4.  をクリックして**送信**を Contoso 3 a 2 要求を送信します。  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  Microsoft SQL Server Management Studio でクリックして**新しいクエリ**です。  
   
-5.  **\<テーブル > テキスト**ダイアログ ボックスで、 **BTARNDATA**一覧からです。  
+5.  **\<テーブル\>テキスト**ダイアログ ボックスで、 **BTARNDATA**一覧からです。  
   
 6.  **SQL**ウィンドウで、次の SQL ステートメントを入力します。  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Microsoft SQL Server Management Studio でクリックして**新しいクエリ**です。  
   
-4.  **\<テーブル > テキスト**ダイアログ ボックスで、 **BTARNDATA**一覧からです。  
+4.  **\<テーブル\>テキスト**ダイアログ ボックスで、 **BTARNDATA**一覧からです。  
   
 5.  **SQL**ウィンドウで、次の SQL ステートメントを入力します。  
   

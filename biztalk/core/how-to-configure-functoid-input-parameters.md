@@ -13,28 +13,28 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6cd9843c46967c7d70a59b4917034e6a3795bb6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab04111835e7732aa8384e1d701a15ae8d268378
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-functoid-input-parameters"></a>Functoid 入力パラメーターを構成する方法
 マップ内の Functoid に対する入力パラメーターを適切に構成する操作は、最も重要な操作の 1 つです。ただし、Functoid を使用する際にエラーが発生する可能性があるので注意して行う必要があります。 Functoid の入力パラメーターは次のように構成できます。  
   
 -   接続のスキーマ ノードと個々 の functoid (ドラッグ アンド ドロップを functoid にスキーマ ノードからマウス) で表示可能な入力リンクを作成します。  
   
--   使用して入力パラメーターの一覧を直接編集、**構成\<Functoid > Functoid**  ダイアログ ボックス。  
+-   使用して入力パラメーターの一覧を直接編集、**構成\<Functoid\> Functoid**  ダイアログ ボックス。  
   
  このトピックでは、これらのメソッドを使用して、functoid の入力パラメーターを構成するための手順を説明します。  
   
- ドラッグして Functoid の入力パラメーターを設定する方法は、XPath 仕様を含む入力パラメーターを送信元スキーマに指定する場合に便利です。 スキーマ ノードおよび functoid の入力パラメーターを作成する方法については、次を参照してください。[マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)です。 ただし、**構成\<Functoid > Functoid**  ダイアログ ボックスは、functoid へのすべての入力パラメーターを表示するための作成と、定数パラメーターの変更、および並べ替えを行う、明確なメカニズム、必要に応じて入力パラメーターの順序です。  
+ ドラッグして Functoid の入力パラメーターを設定する方法は、XPath 仕様を含む入力パラメーターを送信元スキーマに指定する場合に便利です。 スキーマ ノードおよび functoid の入力パラメーターを作成する方法については、次を参照してください。[マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)です。 ただし、**構成\<Functoid\> Functoid**  ダイアログ ボックスは、functoid へのすべての入力パラメーターを表示するため、作成して、定数パラメーターを変更および明確な機構必要に応じて入力パラメーターの順序の再配置します。  
   
  グリッド ページで Functoid の入力パラメーターを直接構成する (マウスのドラッグ アンド ドロップによって送信元スキーマ ノードから線を描画して Functoid にリンクする) 場合、入力数が最大値に達すると、カーソルが禁止の状態に変わります。 また、ステータス バーに理由が表示されます。 次の図は、入力リンクを 1 つだけ受け付ける Functoid を示しています。  
   
  ![Functoid 入力パラメーターを構成するための NO 状態](../core/media/configure-input-parameters-no-state.gif "Configure_input_parameters_NO_state")  
   
- 使用してスクリプトの作成とテーブル ループ functoid を構成することができます、**構成\<Functoid > Functoid**  ダイアログ ボックス。 Functoid を構成する方法については、次を参照してください。[スクリプト Functoid の構成方法](../core/how-to-configure-the-scripting-functoid.md)と[、テーブル ループ functoid とテーブル抽出 Functoid を構成する方法](../core/how-to-configure-the-table-looping-and-table-extractor-functoids.md)です。  
+ 使用してスクリプトの作成とテーブル ループ functoid を構成することができます、**構成\<Functoid\> Functoid**  ダイアログ ボックス。 Functoid を構成する方法については、次を参照してください。[スクリプト Functoid の構成方法](../core/how-to-configure-the-scripting-functoid.md)と[、テーブル ループ functoid とテーブル抽出 Functoid を構成する方法](../core/how-to-configure-the-table-looping-and-table-extractor-functoids.md)です。  
   
 ## <a name="prerequisites"></a>前提条件  
  これらの手順では、BizTalk マッパーが実行されている必要があります。  
@@ -55,8 +55,8 @@ ms.lasthandoff: 09/20/2017
   
  ![Functoid に入力パラメーターの表示](../core/media/identifying-input-parameters.gif "Identifying_input_parameters")  
   
-## <a name="to-open-the-configure-functoid-functoid-dialog-box"></a>開くには、構成\<Functoid > Functoid のダイアログ ボックス  
- 開くことができます、**構成\<Functoid > Functoid**ダイアログ ボックスで、次の方法のいずれか。  
+## <a name="to-open-the-configure-functoid-functoid-dialog-box"></a>開くには、構成\<Functoid\> Functoid のダイアログ ボックス  
+ 開くことができます、**構成\<Functoid\> Functoid**ダイアログ ボックスで、次の方法のいずれか。  
   
 -   関連するグリッド ページで、functoid を右クリックし、をクリックして**Functoid 入力の構成**です。  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-insert-constant-input-parameters"></a>定数の入力パラメーターを挿入するには  
   
-1.  **構成\<Functoid > Functoid**ダイアログ ボックスで、 **Functoid 入力の**タブです。  
+1.  **構成\<Functoid\> Functoid**ダイアログ ボックスで、 **Functoid 入力の**タブです。  
   
     > [!NOTE]
     >  **Functoid 入力の** タブは既定で選択します。  
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-edit-existing-constant-input-parameters"></a>既存の定数入力パラメーターを編集するには  
   
-1.  **構成\<Functoid > Functoid**ダイアログ ボックスで、既存の定数入力パラメーターを編集する をクリックします。 現在の値が選択されています。  
+1.  **構成\<Functoid\> Functoid**ダイアログ ボックスで、既存の定数入力パラメーターを編集する をクリックします。 現在の値が選択されています。  
   
     > [!IMPORTANT]
     >  編集できるのは定数入力のパラメーターだけです。 その他の種類の入力パラメーターは編集できません。 順序の並べ替えまたは削除のみ行うことができます。  
@@ -107,7 +107,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-change-the-order-of-existing-input-parameters"></a>既存の入力パラメーターの順序を変更するには  
   
-1.  **構成\<Functoid > Functoid**ダイアログ ボックスで、既存の入力パラメーターの入力パラメーターの順序付きリストで別の位置に移動する をクリックします。  
+1.  **構成\<Functoid\> Functoid**ダイアログ ボックスで、既存の入力パラメーターの入力パラメーターの順序付きリストで別の位置に移動する をクリックします。  
   
 2.  をクリックして、![一覧で上へ移動](../core/media/move-up-button.gif "Move_up_button")パラメーター リスト内のパラメーターを上に移動するボタンをクリックします。 選択した入力パラメーターが目的の位置になるまで必要なだけ繰り返します。 または、上方向キーを押してもかまいません。 マッパーのショートカット キーの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。  
   
@@ -116,7 +116,7 @@ ms.lasthandoff: 09/20/2017
      クリックして、![一覧で下へ移動](../core/media/move-down-button.gif "Move_down_button")パラメーター リスト内のパラメーターを下に移動するボタンをクリックします。 選択した入力パラメーターが目的の位置になるまで必要なだけ繰り返します。 または、下方向キーを押してもかまいません。 マッパーのショートカット キーの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。  
   
     > [!IMPORTANT]
-    >  のみからの入力のシーケンスを並べ替えることができます、**構成\<Functoid > Functoid**  ダイアログ ボックス。 最上位または最下位レベルの行を選択する場合、![一覧で上へ移動](../core/media/move-up-button.gif "Move_up_button")または![一覧で下へ移動](../core/media/move-down-button.gif "Move_down_button")ボタンが無効になります、それぞれします。  
+    >  のみからの入力のシーケンスを並べ替えることができます、**構成\<Functoid\> Functoid**  ダイアログ ボックス。 最上位または最下位レベルの行を選択する場合、![一覧で上へ移動](../core/media/move-up-button.gif "Move_up_button")または![一覧で下へ移動](../core/media/move-down-button.gif "Move_down_button")ボタンが無効になります、それぞれします。  
   
 ### <a name="to-delete-an-input-parameter-by-deleting-the-input-link"></a>入力リンクを削除して入力パラメーターを削除するには  
   
@@ -130,9 +130,9 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  入力リンクは、確認メッセージが表示されずに削除されます。 よくわからない場合は削除をいつでも元に戻すことができます。 元に戻す/やり直し操作の詳細については、次を参照してください。[を元に戻すまたはユーザーの操作を再実行する方法](../core/how-to-undo-or-redo-user-operations.md)です。  
   
-### <a name="to-delete-existing-input-parameters-within-the-configure-functoid-functoid-dialog-box"></a>既存の入力パラメーターの構成を削除する\<Functoid > Functoid のダイアログ ボックス  
+### <a name="to-delete-existing-input-parameters-within-the-configure-functoid-functoid-dialog-box"></a>既存の入力パラメーターの構成を削除する\<Functoid\> Functoid のダイアログ ボックス  
   
-1.  **構成\<Functoid > Functoid**ダイアログ ボックスで、既存の入力を削除するパラメーターをクリックします。  
+1.  **構成\<Functoid\> Functoid**ダイアログ ボックスで、既存の入力を削除するパラメーターをクリックします。  
   
     > [!NOTE]
     >  この方法を使用して、入力パラメーター (入力リンクに対応するパラメーターを含む) を削除できます。  
@@ -148,9 +148,9 @@ ms.lasthandoff: 09/20/2017
     >  削除ボタンは、パラメーターの一覧に入力パラメーターがないと使用できません。  
   
 ## <a name="to-set-labels-and-comments-for-functoids"></a>Functoid のラベルおよびコメントを設定するには  
- Functoid の使用のラベルおよびコメントを設定することができます、**構成\<Functoid > Functoid**  ダイアログ ボックス。  
+ Functoid の使用のラベルおよびコメントを設定することができます、**構成\<Functoid\> Functoid**  ダイアログ ボックス。  
   
-1.  **構成\<Functoid > Functoid**ダイアログ ボックスで、をクリックして、**ラベルとコメント**タブです。  
+1.  **構成\<Functoid\> Functoid**ダイアログ ボックスで、をクリックして、**ラベルとコメント**タブです。  
   
 2.  型、**ラベル**と**コメント**、順にクリック**OK**です。  
   

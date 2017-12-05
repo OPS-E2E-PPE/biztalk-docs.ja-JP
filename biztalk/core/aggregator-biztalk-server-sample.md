@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c200e6c7cf28b0f0e42976f203aaa16aef2871f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 493f4d28214a815aca88f214e5efb9cd883e7192
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="aggregator-biztalk-server-sample"></a>アグリゲーター (BizTalk Server サンプル)
 このサンプルの目的は、オーケストレーションとパイプラインを使用してメッセージ アグリゲーション機能を構築することです。 特に、以下のことを行うオーケストレーションを構築します。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 3.  1 分ごとか、アグリゲートするのに十分なメッセージを受信した場合はすぐに XML インターチェンジ メッセージを生成します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Pipelines\Aggregator  
+ *\<パスのサンプル\>*\Pipelines\Aggregator  
   
  次の表に、このサンプルのファイル一覧を示します。  
   
@@ -62,13 +62,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<サンプル パス > \Pipelines\Aggregator  
+     \<パスのサンプル\>\Pipelines\Aggregator  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプル用の入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
-         \<サンプル パス > \Pipelines\Aggregator  
+         \<パスのサンプル\>\Pipelines\Aggregator  
   
     -   このサンプル用の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルします。  
   
@@ -111,4 +111,4 @@ ms.lasthandoff: 09/20/2017
     >  サンプル実装では、コンボイ シナリオにおいて、高負荷時に "配布されましたが、消費されませんでした" または "メッセージを破棄して完了" のエラーが発生します。 これは、メッセージが終了途中のビジネス プロセスにルーティングされた場合や、予期せぬメッセージがビジネス プロセスに到着した場合に必ず発生します。  
   
 ## <a name="see-also"></a>参照  
- [パイプライン (BizTalk Server Samples フォルダ)](../core/pipelines-biztalk-server-samples-folder.md)
+ [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

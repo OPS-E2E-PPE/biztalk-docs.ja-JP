@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2465ad10e6598a4b9e1afa88190de4c1711c1f86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b92c2165a84e5d539eac434ab140389c145b24b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sequence-group-nodes"></a>[シーケンス グループ] ノード
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 BizTalk エディターで、挿入できる、**シーケンス グループ**を他のノードに、インスタンス メッセージ内で表示される同じ順序で表示することを含むノード、**シーケンス グループ**ノード。 取り込むノードは、XML 要素に対応するノードであることが必要です。ただし、XML 属性に対応するノードではありません。  
   
 > [!NOTE]
->  BizTalk エディターで、**シーケンス グループ**ノードが既定では、文字列で表される\<シーケンス > スキーマ ツリー ビューでします。 参照を設定した場合、**シーケンス グループ**x などのノードとして表されます\<グループ:x > スキーマ ツリー ビューでします。  
+>  BizTalk エディターで、**シーケンス グループ**ノードが既定では、文字列で表される\<シーケンス\>スキーマ ツリー ビューでします。 参照を設定した場合、**シーケンス グループ**x などのノードとして表されます\<グループ:x\>スキーマ ツリー ビューでします。  
   
  追加することも、**シーケンス グループ**グローバル要素グループを宣言します。  
   

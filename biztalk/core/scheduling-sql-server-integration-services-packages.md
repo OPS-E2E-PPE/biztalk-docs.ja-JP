@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a531a5d0a2233dba5826f4bff680a3c55403671d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 17d8518a8c74f1fef77cf713852f1dfc87c8ef23
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="scheduling-sql-server-integration-services-packages"></a>SQL Server Integration Services パッケージのスケジュール設定
 ユーザーは、オンライン分析処理 (OLAP) キューブに格納されたデータに基づく BAM ビューを作成します。 キューブのデータはキューブ更新 Integration Services パッケージによって更新されるので、OLAP ビューには最新のデータが反映されます。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  コンソール ツリーで  **Integration Services**、展開**格納されたパッケージ**、順にクリック**MSDB**です。  
   
-8.  右クリックし、 **bam_an _\<ビュー名 >**をパッケージ化し、をクリックして**パッケージの実行**です。  
+8.  右クリックし、 **bam_an _\<ビュー名\>**をパッケージ化し、をクリックして**パッケージの実行**です。  
   
 ### <a name="to-run-the-maintaining-bam-data-integration-services-package"></a>BAM データ管理 Integration Services パッケージを実行するには  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  コンソール ツリーで  **Integration Services**、展開**格納されたパッケージ**、順にクリック**MSDB**です。  
   
-8.  右クリックし、 **bam_dm _\<アクティビティ名 >**をパッケージ化し、をクリックして**パッケージの実行**です。  
+8.  右クリックし、 **bam_dm _\<アクティビティ名\>**をパッケージ化し、をクリックして**パッケージの実行**です。  
   
 ### <a name="to-schedule-the-packages-to-run-regularly"></a>パッケージを定期的に実行するようにスケジュールを設定するには  
   
@@ -110,7 +110,7 @@ ms.lasthandoff: 09/20/2017
   
 14. **サーバー**ドロップダウン リストで、ジョブを実行しているサーバーを選択します。  
   
-15. ファイル選択ボタンをクリックして、**パッケージ**テキスト ボックスで、スケジュールを設定するパッケージを選択 (どちらか、 **bam_dm _\<アクティビティ名 >**または**bam_an _\<ビュー名 >**パッケージ)、をクリックして**OK**です。  
+15. ファイル選択ボタンをクリックして、**パッケージ**テキスト ボックスで、スケジュールを設定するパッケージを選択 (どちらか、 **bam_dm _\<アクティビティ名\>**または**bam_an _\<ビュー名\>**パッケージ)、をクリックして**OK**です。  
   
 16. **ページの選択**ウィンドウで、をクリックして**スケジュール**、順にクリック**新規**です。 開き、**新しいジョブ スケジュール** ダイアログ ボックス。  
   

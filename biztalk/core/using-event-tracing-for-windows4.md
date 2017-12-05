@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c7614ae4f6470427a77815338767b04f07aaa73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e98340654df792b8ec58014d4804394b5a6c6099
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 その他のトレース メッセージを表示するには、Event Tracing for Windows (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイルです。 たとえば、tracerpt.exe や tracedmp.ex です。 Tracept.exe アプリケーションに変換、\*を 2 つのテキスト ファイルに .etl: summary.txt と dumpfile.csv です。  
@@ -37,17 +37,17 @@ Microsoft BizTalk Adapter for JD Edwards EnterpriseOne は、エラー、警告�
   
 -   **コンシューマー アプリケーション**です。 記録されたイベントを読み取ります。 コンシュマー アプリケーションで etl ファイルのイベントを読み取るには、Event Tracing for Windows によるダンプ処理でファイルを生成する必要があります。 通常、これはトレースが非アクティブ化されたときに実行されます。  
   
-     コント ローラーにコンシューマー アプリケーションを使用して、トレースを非アクティブ化せず、リアルタイムのオプションを使用してトレースをアクティブ化する必要があります**\<リアルタイム > =-rt**です。  
+     コント ローラーにコンシューマー アプリケーションを使用して、トレースを非アクティブ化せず、リアルタイムのオプションを使用してトレースをアクティブ化する必要があります**\<リアルタイム\>=-rt**です。  
   
 -   **プロバイダー**です。 イベントを提供するために使用されます。 BizTalk Adapter for JD Edwards EnterpriseOne には 3 種類のプロバイダーが用意されています。 これらは Windows Management Instrumentation (WMI) に登録されます。 root\WMI\EventTrace パス内で登録プロバイダーを検索するには、WMI CIM Studio などのツールを使用します。  
   
  BizTalk Adapter for JD Edwards EnterpriseOne には 3 つのプロバイダーがあり、異なる種類のメッセージを記録できます。  
   
--   **受信元ログ プロバイダー**:\<トレース要素 > スイッチは**-受信者**です。 使用して**-受信者**を実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。 使用して**-受信者**を実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
   
--   **送信元ログ プロバイダー**:\<トレース要素 > スイッチは**-トランスミッター**です。 使用して**-トランスミッター**を実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。 使用して**-トランスミッター**を実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
   
--   **管理ログ プロバイダー**:\<トレース要素 > スイッチは**-管理**使用**-管理**参照中に生成されたログからすべてのメッセージを取得するにはサーバー システムです。  
+-   **管理ログ プロバイダー**:\<トレース要素\>スイッチが**-管理**使用**-管理**生成されたログからすべてのメッセージを取得するにはサーバー システムの参照中にです。  
   
 ### <a name="btajdeenterpriseonetrace-command"></a>BTAJDEEnterpriseOneTrace コマンド  
  ETW を使用して、BizTalk Adapter for JD Edwards EnterpriseOne のコマンドを実行する**BTAJDEEnterpriseOneTrace.cmd**です。 このコマンドは次のように使用します。  
@@ -59,7 +59,7 @@ BTAJDEEnterpriseOneTrace <Trace element> -stop
   
 ```  
   
- 場所: **\<トレース要素 >**プロバイダーの種類は、(必須)。  
+ 場所: **\<トレース要素\>**プロバイダーの種類は、(必須)。  
   
  そのオプションは次のとおりです。  
   
@@ -71,9 +71,9 @@ BTAJDEEnterpriseOneTrace <Trace element> -stop
   
 -   **-開始、停止**: プロバイダーをアクティブまたは非アクティブです。  
   
--   **-cir \<MB >**: ファイルのサイズおよび種類です。 -cir は循環ファイルです。 \<MB >: サイズはメガ単位です。  
+-   **-cir \<MB\>**: ファイルのサイズおよび種類です。 -cir は循環ファイルです。 \<MB\>: サイズはメガ単位です。  
   
--   **-seq \<MB >**: ファイルのサイズおよび種類です。 -seq はシーケンシャル ファイルです。 \<MB >: サイズはメガ単位です。  
+-   **-seq \<MB\>**: ファイルのサイズおよび種類です。 -seq はシーケンシャル ファイルです。 \<MB\>: サイズはメガ単位です。  
   
 -   **-rt**: リアル タイム モードに設定します。  
   

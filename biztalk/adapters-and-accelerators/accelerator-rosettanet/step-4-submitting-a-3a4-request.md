@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2436d33033163b32c4ead0fdab807b7db0b0158f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff36b6181b167d70340a65913e1e85e7acfeeaf4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-submitting-a-3a4-request"></a>手順 4: 3A4 要求の送信
 ここでは、3A4 - Request Purchase Order の PIP (Partner Interface Process) を使用して、要求を作成および送信します。 この PIP を使用することにより、購入者組織が発注を業者に送信できるようになります。 通常は、3A2 - Request Price and Availability PIP を使用して注文可能な製品を照会してから、3A4 - Request Purchase Order を要求します。 3A4 PIP は、受信確認を送信する非同期の PIP です。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
     |**Pip インスタンス ID**|型**3A4_Test**です。 **重要:**重複したメッセージ ID のエラーを避けるためには、する必要があることを確認、 **Pip インスタンス ID**を送信するメッセージごとに一意です。 後で 3A4_Test を実行する場合は、このフィールドを変更する必要があります。|  
     |**メッセージのカテゴリ**|型**アクション**です。|  
   
-3.  ある 3A4_Request.xml ファイルを開くメモ帳または別のテキスト エディターを使用して、 \<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances フォルダーをコピーして貼り付け、内容、 **Service Content** LOBWebApplication のフィールドです。  
+3.  ある 3A4_Request.xml ファイルを開くメモ帳または別のテキスト エディターを使用して、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBApplication\SampleInstances フォルダーをコピーして貼り付け、内容、 **Service Content** LOBWebApplication のフィールドです。  
   
 4.  をクリックして**送信**を Contoso のコンピューター 3A4 要求を送信します。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Microsoft SQL Server Management Studio でクリックして**新しいクエリ**です。  
   
-4.  \<テーブル > のテキスト ダイアログ ボックスで、 **BTARNDATA**一覧からです。  
+4.  \<テーブル\>テキスト ダイアログ ボックスで、 **BTARNDATA**一覧からです。  
   
 5.  SQL ウィンドウに、次の SQL ステートメントを入力します。  
   

@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24fe647f5ab5c87a5d8d9c78189134c6700ded6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 154b7d62af79f557f01064235744b2b56ba0fe3a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-biztalk-server"></a>BizTalk Server の管理
-このセクションの内容を管理するためのガイダンスを提供する、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]実稼働環境でのシステムです。 一般に次の手順では、展開後に BizTalk アプリケーションを使用している前提としています。 これらの手順では、ベスト プラクティスと、次の定期的な操作の概念について説明します。  
+このセクションでは、実稼働環境で BizTalk Server システムを管理するためのガイダンスを提供します。 一般に次の手順では、展開後に BizTalk アプリケーションを使用している前提としています。 これらの手順では、ベスト プラクティスと、次の定期的な操作の概念について説明します。  
   
 -   チェックリストと運用環境に BizTalk アプリケーションを展開するための手順です。  
   
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [アプリケーションを管理します。](../technical-guides/managing-applications.md)  
+-   [アプリケーションの管理](../technical-guides/managing-applications.md)  
   
 -   [Certificates2 を管理します。](../technical-guides/managing-certificates2.md)  
   

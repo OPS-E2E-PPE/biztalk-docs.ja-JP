@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94c1c3c6430b049d98444349394eff05eeb21561
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ef22467c18580219e8587d63017d8bf146090d4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="international-considerations-for-designing-biztalk-applications"></a>BizTalk アプリケーション デザインの国際化に関する考慮事項
 国際化対応の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを開発する際には、次に挙げる既知の問題を確認することを強くお勧めします。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、XML およびフラット ファイルのドキュメントの多様なエンコードをサポートします。たとえば、UTF-16、UTF-8、簡体字中国語 GBK、簡体字中国語 GB18030 などです。  
   
- 受信ドキュメントで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]など、XML ドキュメントのエンコード宣言を認識できる"\<しますか? xml バージョン =「1.0」encoding ="GB2312"? >"です。 フラット ファイル スキーマには、**コード ページ**受信フラット ファイル ドキュメントのエンコードを示すプロパティです。  
+ 受信ドキュメントで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]など、XML ドキュメントのエンコード宣言を認識できる"\<しますか? xml バージョン =「1.0」encoding ="GB2312"?\>"です。 フラット ファイル スキーマには、**コード ページ**受信フラット ファイル ドキュメントのエンコードを示すプロパティです。  
   
  送信ドキュメント、XML とフラット ファイル アセンブラーを使用して、**表せない**プロパティです。 このプロパティを指定すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、元の文字セットに関係なく、送信ドキュメントを指定した文字セットに変換します。 ない場合は**表せない**プロパティが設定され、XML は utf-8 プロトコルを使用して、フラット ファイルが、フラット ファイル スキーマで指定されたコード ページを使用します。  
   
@@ -84,4 +84,4 @@ ms.lasthandoff: 09/20/2017
  [フラット ファイル逆アセンブラー パイプライン コンポーネントでの文字エン コード](../core/character-encoding-in-the-flat-file-disassembler-pipeline-component.md)   
  [フラット ファイル アセンブラー パイプライン コンポーネントでの文字エン コード](../core/character-encoding-in-the-flat-file-assembler-pipeline-component.md)   
  [XML アセンブラー パイプライン コンポーネントでの文字エン コード](../core/character-encoding-in-the-xml-assembler-pipeline-component.md)   
- [XML 逆アセンブラー パイプライン コンポーネントでの文字エン コード](../core/character-encoding-in-xml-disassembler-pipeline-component.md)
+ [XML 逆アセンブラー パイプライン コンポーネントでの文字エンコード](../core/character-encoding-in-xml-disassembler-pipeline-component.md)

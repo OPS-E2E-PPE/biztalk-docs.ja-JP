@@ -31,11 +31,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9f8a004c1883a05c3fcf60324f428144591cff4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 20b14539edc6b9b1026ca048feb881ce0d8a6d1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-requirements-for-host-initiated-sso"></a>ホスト側開始 SSO の要件を構成する方法
 エンタープライズ SSO とホスト側開始 SSO にはある共通点がありますが、特定のプラットフォームおよび Active Directory の要件はホスト側開始 SSO に対して一意です。 このトピックでは、これらの要件について説明し、システムで要件を確認または作成する手順を示します。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-4.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+4.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
 5.  型**setpsn hipsvc\computername.domain.com の domain \hissvc-**  
   

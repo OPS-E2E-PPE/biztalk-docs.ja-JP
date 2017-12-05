@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e554de9b00869db4a258f03984fe1ebc71e99c38
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c5624eb6cf88f45d1ecad0b68fee3f5f7b8a8ba
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-performance-of-the-msmq-adapter"></a>MSMQ アダプターのパフォーマンスを最適化します。
 MSMQ アダプターの最適化は、送信側と受信側で異なります。 受信側では、受信場所のプロパティを設定して、最適化を制御します。 送信側では、オーケストレーションを使用して、最適化を制御できます。  
@@ -42,7 +42,7 @@ MSMQ アダプターの最適化は、送信側と受信側で異なります。
  送信側では、サンプル オーケストレーションを使用することで、同等の単一メッセージ処理をアーカイブできます。 このサンプルでは、1 つのメッセージを送信した後、受信確認を受け取るまで次のメッセージの送信を待機します。 詳細については、次を参照してください。[コードから MSMQ 受信場所の作成と送信ポートを方法](../core/how-to-create-msmq-receive-locations-and-send-ports-from-code.md)です。  
   
 ## <a name="remote-transactional-read-operations"></a>リモート トランザクションの読み取り操作  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、MSMQ アダプターがトランザクション MSMQ キューからのリモート読み取り操作を行うことができます。  MSMQ 4.0 以降のバージョンがリモート トランザクションの読み取り操作をサポートしているためです。  しかし、一般に、トランザクションの読み取り操作には時間がかかります。 パフォーマンスを最適化するために、この操作は、他の選択肢がない場合にのみ使用してください。  
+ BizTalk server の MSMQ アダプターはトランザクション MSMQ キューからのリモート読み取り操作をすることが可能です。  MSMQ 4.0 以降のバージョンがリモート トランザクションの読み取り操作をサポートしているためです。  しかし、一般に、トランザクションの読み取り操作には時間がかかります。 パフォーマンスを最適化するために、この操作は、他の選択肢がない場合にのみ使用してください。  
   
 ## <a name="see-also"></a>参照  
  [MSMQ 受信場所を構成する方法](../core/how-to-configure-an-msmq-receive-location.md)   

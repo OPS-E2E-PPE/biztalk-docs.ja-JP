@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d29d35cb4fd98873d83ab6fa8fe2116bc15e764
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8585ae946e15d2677e225d42f6c123d5dd5e8e49
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-a-receive-port-for-incoming-mdns"></a>受信 MDN の受信ポートの構成
 AS2 MDN を受信するには、メッセージを受信してパーティに応答を返すための一方向の HTTP 受信ポートを作成します。  
@@ -33,7 +33,7 @@ AS2 MDN を受信するには、メッセージを受信してパーティに応
 |**受信場所のプロパティ: 全般**|トランスポートの種類|HTTP<br /><br /> **注**mdn の場合、される EDIINT/AS2 でエンコードされたメッセージを転送するため、HTTP アダプタのみを使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。|  
 |**受信場所のプロパティ: 全般**|[受信ハンドラー]|BizTalkServerIsolatedHost|  
 |**受信場所のプロパティ: 全般**|受信パイプライン。|AS2Receive または AS2EdiReceive|  
-|**HTTP トランスポートのプロパティ**|仮想ディレクトリと ISAPI 拡張|/\<仮想ディレクトリの名前 > >/btshttpreceive.dll|  
+|**HTTP トランスポートのプロパティ**|仮想ディレクトリと ISAPI 拡張|/\<仮想ディレクトリの名前\>>/btshttpreceive.dll|  
   
 ## <a name="see-also"></a>参照  
- [AS2 ソリューションのポートを構成します。](../core/configuring-ports-for-an-as2-solution.md)
+ [AS2 ソリューションのポートの構成](../core/configuring-ports-for-an-as2-solution.md)

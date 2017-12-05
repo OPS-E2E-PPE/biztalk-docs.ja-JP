@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa0f969be7dfdd7cca991be134c9a25329f559a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18b5d5ee3b29c068b3a37d248b9fb20f07bdfbb2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-distinguished-fields-and-property-fields"></a>識別フィールドおよびプロパティ フィールドの使用
 識別フィールドは、主に判断を下したり、オーケストレーションでデータを操作するために使用する、特別なメッセージ データです。  
@@ -50,7 +50,7 @@ MyMessage(Invoice.PropertySchema.InvoiceID)
 ```  
   
 > [!NOTE]
->  フィールドのプロパティ名が _ _ に変更は、スキーマ内のフィールドの名前として予約済みキーワードを使用すると、クイック昇格 を選択して、フィールドを昇格する、\<予約されたキーワード >。 (二重のアンダー スコアはプロパティ名の前に追加されます。)ただし、オーケストレーションの式でこのプロパティ名を使用する場合、オーケストレーションを構築するときにコンパイラ エラーが表示されます。  このエラーを回避するには、2 個のアンダースコアの前に @ を手動で追加する必要があります。 例を次に示します。  
+>  フィールドのプロパティ名が _ _ に変更は、スキーマ内のフィールドの名前として予約済みキーワードを使用すると、クイック昇格 を選択して、フィールドを昇格する、\<予約済みキーワード\>です。 (二重のアンダー スコアはプロパティ名の前に追加されます。)ただし、オーケストレーションの式でこのプロパティ名を使用する場合、オーケストレーションを構築するときにコンパイラ エラーが表示されます。  このエラーを回避するには、2 個のアンダースコアの前に @ を手動で追加する必要があります。 例を次に示します。  
 >   
 >  `MyMessage(Invoice.PropertySchema.@__Name) = "Product Name";`  
   

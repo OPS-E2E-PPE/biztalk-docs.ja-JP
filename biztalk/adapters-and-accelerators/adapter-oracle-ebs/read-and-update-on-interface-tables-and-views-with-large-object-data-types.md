@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a0804aa58174912a29cec9039d55579e4e705a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b12eeae422f5da90c6874f70d2ffddbc19f75bd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-interface-tables-interface-views-tables-and-views-that-contain-lob-data"></a>インターフェイス テーブル、インターフェイス ビュー、テーブル、および LOB データを含むビューでの操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle ラージ オブジェクト (LOB) データ型のサポートを提供します。  
@@ -34,12 +34,12 @@ ms.lasthandoff: 09/20/2017
 ## <a name="operations-for-tables-and-views"></a>テーブルやビューの操作  
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]インターフェイス テーブル、インターフェイス ビュー、テーブルやビューの LOB 列を含む次の操作を表示します。  
   
--   **Read_\<LOBColName >**:`Read_<LOBColName>`インターフェイス テーブル、インターフェイス ビュー、テーブルおよび BLOB、CLOB、NCLOB、BFILE の列を含むビューの操作が表示される場所\<LOBColName > の名前を指定しますBLOB、CLOB、NCLOB または BFILE 型の列です。 による、Read_\<LOBColName > 操作、アダプターのクライアントはデータ ストリームとしての LOB 列の値を読み取ることができます。 この操作は、フィルター文字列をパラメーターとして受け取ります。  
+-   **Read_\<LOBColName\>**:`Read_<LOBColName>`インターフェイス テーブル、インターフェイス ビュー、テーブルおよび BLOB、CLOB、NCLOB、BFILE の列を含むビューの操作が表示される場所\<LOBColName\>か、BLOB、CLOB、NCLOB、BFILE、型の列の名前を指定します。 による、Read_\<LOBColName\>操作、アダプターのクライアントはデータ ストリームとしての LOB 列の値を読み取ることができます。 この操作は、フィルター文字列をパラメーターとして受け取ります。  
   
     > [!NOTE]
     >  `Read_<LOBColName>`操作は、WCF サービス モデルでの LOB データの入力ストリーミングをサポートするために設計されています。 WCF チャネル モデルから LOB データを読み取るテーブルの選択操作を使用する必要がありますまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ソリューションです。  
   
--   **Update_\<LOBColName >**:`Update_<LOBColName>`インターフェイス テーブルとのみ列を含む BLOB、CLOB、NCLOB、テーブルの操作が表示される場所\<LOBColName > BLOB、CLOB の型の列の名前を指定しますや nclob を使用します。 Update_ を使用して、\<LOBColName > 操作、アダプターのクライアントは、LOB の列の値を更新できます。 BLOB データ型のこの操作では CLOB や NCLOB データ型の場合は、この操作は、パラメーターとして文字列のフィルターをかかります。 一方、base64binary でエンコードされたデータをパラメーターとして受け取ります。  
+-   **Update_\<LOBColName\>**:`Update_<LOBColName>`インターフェイス テーブルとのみ列を含む BLOB、CLOB、NCLOB、テーブルの操作が表示される場所\<LOBColName\>の名前を指定します。列は、BLOB、CLOB、NCLOB を入力します。 Update_ を使用して、\<LOBColName\>操作、アダプターのクライアントは、LOB の列の値を更新できます。 BLOB データ型のこの操作では CLOB や NCLOB データ型の場合は、この操作は、パラメーターとして文字列のフィルターをかかります。 一方、base64binary でエンコードされたデータをパラメーターとして受け取ります。  
   
     > [!NOTE]
     >  `Update_<LOBColName>`操作。  

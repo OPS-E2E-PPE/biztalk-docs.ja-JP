@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94ed784eeca992d32f431a7c6794b7051b7595e9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b85c5c50bc8aeb388d6b7df1591f4b13900998e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update-references-to-the-tracking-analysis-server-database"></a>追跡分析サーバー データベースへの参照を更新します。
 Tracking Analysis Server データベースは、省略可能なオンライン分析処理 (OLAP) キューブが含まれています。 これらの OLAP キューブは、BizTalk 追跡データベースに含まれるデータの集計です。  
@@ -41,7 +41,7 @@ Tracking Analysis Server データベースは、省略可能なオンライン�
 5.  新しいデータベースの適切な値を参照するように、元のデータベースに対応する列を変更します。  
   
     > [!NOTE]  
-    >  *\<DBType >*データベースおよび *\<DBType >* DBName は、データベースの場所を示す、  *\<DBType >*の種類に対応しています、データベースを TrackingAnalysis です。  
+    >  *\<DBType\>* データベースおよび *\<DBType\>*  DBName は、データベースの場所を示す、  *\<DBType\>* TrackingAnalysis、データベースの種類に対応しています。  
   
 6.  テーブルを閉じて新しい値を保存します。  
   

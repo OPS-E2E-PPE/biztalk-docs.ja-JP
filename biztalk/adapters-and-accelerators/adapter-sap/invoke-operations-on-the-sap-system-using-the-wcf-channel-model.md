@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb8cd252c9aa5557ea3845e7b6665dc749486f01
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1030e0a743a9b06d856bc593198f4afebc1ffa38
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-operations-on-the-sap-system-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して、SAP システムに対する操作を呼び出す
 に対して操作を呼び出す、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を使用して、 **IRequestChannel**または**IOutputChannel**チャネル形状をアダプターにメッセージを送信します。 基本的なパターンは、バインドを使用して、必要なチャネル形状をチャネル ファクトリを作成する (**SAPBinding**) と接続 URI から作成されたエンドポイント。 作成し、**メッセージ**をターゲットの操作用のメッセージ スキーマに準拠する SOAP メッセージを表すインスタンス。 これを送信することができますし、**メッセージ**を[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]チャネル ファクトリから作成されたチャネルを使用しています。 使用している場合、 **IRequestChannel**応答を受信します。 SAP システムで操作の実行に問題がある場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]スロー、 **Microsoft.ServiceModel.Channels.Common.TargetSystemException**です。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>IRequestChannel のインスタンスを使用して、操作を呼び出す方法  
   
-1.  チャネル ファクトリを作成 (**ChannelFactory\<IRequestChannel >**)。 これを行うには、バインドを指定する必要があります (**SAPBinding**) およびエンドポイント アドレス。 コードで命令として記述または構成で宣言によって、バインドとエンドポイント アドレスを指定できます。 プロパティは、送信すること、ファクトリを開く前に、操作に必要な任意のバインディングを設定する必要があります。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、次を参照してください。 [SAP を使用して、チャネルの作成](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md)です。  
+1.  チャネル ファクトリを作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**SAPBinding**) およびエンドポイント アドレス。 コードで命令として記述または構成で宣言によって、バインドとエンドポイント アドレスを指定できます。 プロパティは、送信すること、ファクトリを開く前に、操作に必要な任意のバインディングを設定する必要があります。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、次を参照してください。 [SAP を使用して、チャネルの作成](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md)です。  
   
     ```  
     // Create a binding  
@@ -79,7 +79,7 @@ ms.lasthandoff: 09/20/2017
 5.  作成、**メッセージ**ターゲット操作のインスタンス。 ターゲットの操作のメッセージ アクションが指定されていることを確認します。 この例では、メッセージ本文が作成することで渡される、 **XmlReader**文字列にします。 ターゲットの操作では、SAP システムで SD_RFC_CUSTOMER_GET RFC を呼び出します。  
   
     ```  
-    string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+    string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
     //create an XML reader from the input XML  
     XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -125,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
  同じ手順を使用してメッセージを送信する、 **IOutputChannel**以外の図形します。  
   
--   作成する、 **ChannelFactory\<IOutputChannel >**手順 1 でします。  
+-   作成する、 **ChannelFactory\<IOutputChannel\>** 手順 1 でします。  
   
 -   呼び出す、**送信**手順 6. でチャネル上のメソッドです。 `channel.Send(messageIn);`」をご覧ください。  
   
@@ -178,7 +178,7 @@ namespace SapRfcClientCM
             //create an XML message to send to the SAP system  
             //We are invoking the SD_RFC_CUSTOMER_GET RFC.  
             //The XML below specifies that we want to search for customers with names starting with "AB"  
-            string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+            string inputXml = "<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
             //create an XML reader from the input XML  
             XmlReader readerOut = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -243,4 +243,4 @@ namespace SapRfcClientCM
 ```  
   
 ## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

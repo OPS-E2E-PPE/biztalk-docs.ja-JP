@@ -12,19 +12,19 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22e779bf9e6297cc9e69e7e0cd85b88afc44dccf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19d57f602854572349d7fc7905a607c19fec5cf2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="soa-biztalk-management-point"></a>SOA BizTalk の管理ポイント
-BizTalk の管理ポイント[!INCLUDE[prague](../includes/prague-md.md)]概念拡張子にのみ適用、SOA ソフトウェアの Web サービスの管理ポイントを[!INCLUDE[prague](../includes/prague-md.md)]環境と Web の実行時ガバナンスを提供するサービス アプリケーション。  
+BizTalk Server の BizTalk の管理ポイントは、概念拡張 SOA ソフトウェアの Web サービスの管理ポイントに、具体的には、BizTalk Server 環境に適用され、Web サービス アプリケーションの実行時のガバナンスを提供します。  
   
  このセクションのトピックは次のとおりです。  
   
--   [SOA BizTalk の管理ポイントの概要](../esb-toolkit/overview-of-the-soa-biztalk-management-point.md)  
+-   [SOA BizTalk 管理ポイントの概要](../esb-toolkit/overview-of-the-soa-biztalk-management-point.md)  
   
--   [BizTalk Server の統合](../esb-toolkit/biztalk-server-integration1.md)  
+-   [BizTalk Server 統合](../esb-toolkit/biztalk-server-integration1.md)  
   
 -   [ポリシーと使用状況情報の監視](../esb-toolkit/monitoring-policies-and-usage-information.md)

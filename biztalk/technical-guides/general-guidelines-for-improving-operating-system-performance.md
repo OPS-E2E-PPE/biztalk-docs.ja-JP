@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2024217812544152e7c8a51b9db4a018046a3ca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7be3f8060bba20bc0ba127443095c228f954bba
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a>オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン
 オペレーティング システムのパフォーマンスを向上させるために、次の一般的なガイドラインに従ってください。  
@@ -165,7 +165,7 @@ Interrupt-Affinity Policy ツール
 ## <a name="use-the-ntfs-file-system-on-all-volumes"></a>すべてのボリューム上に NTFS ファイル システムの使用  
  Windows Server は、NTFS、FAT を含むドライブおよび FAT32 を書式設定するための複数のファイル システムの種類を提供します。 NTFS では、サーバーの任意のファイル システムを常にある必要があります。  
 NTFS では、FAT および FAT32 ファイル システムよりも大きなパフォーマンス上の利点を提供し、Windows サーバーでのみ使用する必要があります。 さらに、NTFS では、FAT および FAT32 経由で多くのセキュリティ、スケーラビリティ、安定性と復旧の利点を備えています。  
-以前のバージョンの Windows では、FAT および FAT32 多くの場合、実装された小さいボリュームの (たとえば\<500 MB) が多くの場合、このような状況で高速なためです。 比較的安価な現在のディスク記憶域とオペレーティング システム ドライブの容量を最大にプッシュするアプリケーションと、このような小さいボリュームが使用される可能性はありません。 FAT32 では、FAT より大きなボリュームにスケールを設定が、まだに適切なファイル システムの Windows サーバーにありません。  
+以前のバージョンの Windows では、FAT および FAT32 多くの場合、実装された小さいボリュームの (たとえば < 500 MB) が多くの場合、このような状況で高速なためです。 比較的安価な現在のディスク記憶域とオペレーティング システム ドライブの容量を最大にプッシュするアプリケーションと、このような小さいボリュームが使用される可能性はありません。 FAT32 では、FAT より大きなボリュームにスケールを設定が、まだに適切なファイル システムの Windows サーバーにありません。  
 FAT および FAT32 多くの場合に実装されている過去ようそれらがより簡単に回復可能なボリュームに問題が発生した場合のネイティブの DOS ツールを使用して管理しやすいとして。 今日では、NTFS 回復性のさまざまなツール ビルド両方のオペレーティング システムをネイティブに使用可能なサード パーティのユーティリティと使用可能なありますがあり、不要になったファイル システムを NTFS を使用していないに対して有効な引数。  
   
 ## <a name="do-not-use-ntfs-file-compression"></a>NTFS ファイル圧縮を使用しないでください。  
@@ -310,4 +310,4 @@ Windows Server 2008 は、preemptive マルチタスクを使用して、cpu に
  3D または OpenGL スクリーン セーバーは既知の CPU 負荷の高いを実行しているときに、重要なシステム リソースを使用します。 または、オプションとして、サーバー ビルド時に、これらすべてのインストールを避けるために、インストールされている場合、削除をお勧めします。 基本的な"Windows Server 2008"または空のスクリーン セーバーは CPU を消費するスクリーン セーバーを使用する代わりに優れたです。  
   
 ## <a name="see-also"></a>参照  
- [オペレーティング システムのパフォーマンスを最適化します。](../technical-guides/optimizing-operating-system-performance.md)
+ [オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)

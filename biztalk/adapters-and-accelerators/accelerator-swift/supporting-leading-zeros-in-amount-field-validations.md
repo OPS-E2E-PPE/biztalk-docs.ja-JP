@@ -16,11 +16,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1de45b5acbc780fad0847ab207d0d5c72ca2a652
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3559b63ec7588fa2d7451779947a476cf19b7bf0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="supporting-leading-zeros-in-amount-field-validations"></a>先行する量フィールドの検証時にゼロをサポートします。
 一部のメッセージ型の検証ポリシーは、金額のフィールドの検証を実行します。 金額フィールドには先行ゼロを有効にするには、メッセージの種類の検証ポリシーを編集する必要があります。 既定の検証ポリシーの新しいバージョンを作成して、ビジネス ルール作成ツールの引数を編集またはポリシーを展開する前に、のテキスト エディターで手動で既定のポリシーを編集することができます。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  メモ帳などのテキスト エディターを開きます。  
   
-2.  エディターで、有効にするにまたは先行ゼロを無効にするメッセージの検証ポリシーの場所を参照します。 たとえば、メッセージ検証ポリシー用あります MT103 メッセージの種類、MT103_Validation_Policy.xml で*\<ドライブ >*:/プログラム ファイル/BizTalk Accelerator for SWIFT/SWIFT メッセージ/カテゴリ 1/MT103 です。 検証ポリシーを開きます。  
+2.  エディターで、有効にするにまたは先行ゼロを無効にするメッセージの検証ポリシーの場所を参照します。 たとえば、メッセージ検証ポリシー用あります MT103 メッセージの種類、MT103_Validation_Policy.xml で*\<ドライブ\>*:/プログラム ファイル/BizTalk Accelerator for SWIFT/SWIFT メッセージ/カテゴリ 1/MT103 です。 検証ポリシーを開きます。  
   
 3.  ポリシーでの検索、 **CheckValidAmount**メソッドです。  
   

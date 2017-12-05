@@ -15,16 +15,16 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d3f7bbe9440c737b803eb1e6ae04e96449bf4f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ec99a2e9f20b09c4daddad0336037c7f539782a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="installation-error-message"></a>インストールに関するエラー メッセージ
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインストールした後に、送信場所または受信場所を定義すると、次のエラーが発生する可能性があります。  
   
- メッセージング エンジンが受信 URL に追加できませんでした"\<送信/受信場所の URL >"アダプター"TIBCO EMS"にします。 理由:"ファイルまたはアセンブリ名 TIBCO。EMS、またはその依存関係の 1 つが見つかりませんでした。"  
+ メッセージング エンジンが受信 URL に追加できませんでした"\<送信/受信場所の URL\>"アダプター"TIBCO EMS"にします。 理由:"ファイルまたはアセンブリ名 TIBCO。EMS、またはその依存関係の 1 つが見つかりませんでした。"  
   
 ## <a name="possible-causes"></a>考えられる原因  
  通常、このエラーの原因は以下のいずれかです。  
@@ -53,7 +53,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインスト�
   
      ファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ディレクトリ (既定のインストール場所は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]) にあります。  
   
-2.  子として、次のエントリを BTSNTSVC.exe.config ファイルに追加、 \<assemblyBinding > 要素。  
+2.  子として、次のエントリを BTSNTSVC.exe.config ファイルに追加、 \<assemblyBinding\>要素。  
   
 ```  
 <dependentAssembly>  
@@ -64,7 +64,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインスト�
 </dependentAssembly>  
 ```  
   
- BTSNTSVC.exe.config ファイルが変更されていない場合、 \<assemblyBinding > 要素は次のようになりますできません。  
+ BTSNTSVC.exe.config ファイルが変更されていない場合、 \<assemblyBinding\>要素は次のようになりますできません。  
   
 ```  
 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

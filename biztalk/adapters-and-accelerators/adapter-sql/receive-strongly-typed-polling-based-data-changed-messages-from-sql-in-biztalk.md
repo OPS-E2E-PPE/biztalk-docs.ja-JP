@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 451987a9b6461064047041ee6afa348d32929b51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b12450e87e730e3713a89350fc2a16440e4d911
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-strongly-typed-polling-based-data-changed-messages-from-sql-server-using-biztalk-server"></a>厳密に型指定されたポーリング ベース データが変更されてから受信 BizTalk Server を使用して SQL Server
 構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server から厳密に型指定されたポーリング メッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。  
@@ -54,18 +54,18 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
  同じ BizTalk プロジェクトの一部として、たとえば EmployeeDetails.xsd 別のスキーマ ファイルを追加します。 EmployeeDetails.xsd のスキーマには、次のようになります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-16" ?>   
-\<xs:schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://Typed_Polling.EmployeeDetails" elementFormDefault="qualified" targetNamespace="http://Typed_Polling.EmployeeDetails" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
-  \<xs:element name="EmployeeDetails">  
-    \<xs:complexType>  
-      \<xs:sequence>  
-        \<xs:element name="Employee_Info" type="xs:string" />   
-        \<xs:element name="Employee_Profile" type="xs:string" />   
-        \<xs:element name="Employee_Performance" type="xs:string" />   
-      \</xs:sequence>  
-    \</xs:complexType>  
-  \</xs:element>  
-\</xs:schema>  
+<?xml version="1.0" encoding="utf-16" ?>   
+<xs:schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://Typed_Polling.EmployeeDetails" elementFormDefault="qualified" targetNamespace="http://Typed_Polling.EmployeeDetails" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+  <xs:element name="EmployeeDetails">  
+    <xs:complexType>  
+      <xs:sequence>  
+        <xs:element name="Employee_Info" type="xs:string" />   
+        <xs:element name="Employee_Profile" type="xs:string" />   
+        <xs:element name="Employee_Performance" type="xs:string" />   
+      </xs:sequence>  
+    </xs:complexType>  
+  </xs:element>  
+</xs:schema>  
 ```  
   
  BizTalk マッパーは、EmployeeDetails.xsd スキーマ内の要素には Employee テーブル (ポーリング メッセージとして受信済み) から要素をマップするプロジェクトに追加します。 マップの一部として、ポーリング メッセージから 1 つまたは複数の要素を組み合わせるし、EmployeeDetails スキーマ内の単一要素にマップします。 これを行うを使用して、**文字列連結**functoid です。  
@@ -172,7 +172,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
  サンプル オーケストレーションには、次のようになります。  
   
- ![オーケストレーションを強く & #45 以外の型指定されたポーリング](../../adapters-and-accelerators/adapter-sql/media/1db03859-b7f8-470c-9158-2be4da0b45ae.gif "1db03859-b7f8-470c-9158-2be4da0b45ae")  
+ ![オーケストレーションを強く &#45;以外の型指定されたポーリング](../../adapters-and-accelerators/adapter-sql/media/1db03859-b7f8-470c-9158-2be4da0b45ae.gif "1db03859-b7f8-470c-9158-2be4da0b45ae")  
   
 ### <a name="add-message-shapes"></a>メッセージの構築図形を追加します。  
  メッセージの構築図形のごとに、次のプロパティを指定することを確認してください。 図形 列に表示名は、単に記載されているオーケストレーションに表示されるメッセージの構築図形の名前です。  
@@ -307,7 +307,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
      ポーリング ステートメントが実行され、メッセージを受信した、ポーリング メッセージは、ファイル送信ポートに送信を取得します。 ここでは、送信マップ (**MapSchema**) EmployeeDetails スキーマにポーリング メッセージを送信ポートのマップのように構成し、ファイルの場所にメッセージを削除します。 メッセージには、次のようになります。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <EmployeeDetails xmlns="http://Typed_Polling.EmployeeDetails">  
       <Employee_Info>10751John</Employee_Info>   
       <Employee_Profile>TesterManagesTesting</Employee_Profile>   

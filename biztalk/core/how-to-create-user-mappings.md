@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ffbcc0cb5ca00eb0b461f77c36397179f5c91f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 019adf0cd41c643ac77790c96a3450bb967ddd6b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-user-mappings"></a>ユーザー マッピングを作成する方法
 ここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のユーザー マッピングを作成できます。 XML ファイルの例を次に示します。  
@@ -53,9 +53,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – createmappings *\<マッピング ファイル名 >***ここで、 *\<マッピング ファイル名 >*を含むファイルの名前を指定します、ユーザーのマッピングを作成します。  
+3.  型**ssomanage – createmappings *\<マッピング ファイル名\>***ここで、 *\<マッピング ファイル名\>*は作成するユーザー マッピングが格納されているファイルの名前。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -64,9 +64,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssoclient – setcredentials *\<アプリケーション名 >***ここで、 *\<アプリケーション名 >*関連アプリケーションの名前を指定しますユーザーがのマッピングを作成します。  
+3.  型**ssoclient – setcredentials *\<アプリケーション名\>*** ここで、 *\<アプリケーション名\>*は、ユーザーがマッピングを作成する関連アプリケーションの名前です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [SSO マッピング](../core/sso-mappings.md)   
  [関連アプリケーションの管理](../core/managing-affiliate-applications.md)   
- [ユーザー マッピングを管理します。](../core/managing-user-mappings.md)
+ [ユーザー マッピングの管理](../core/managing-user-mappings.md)

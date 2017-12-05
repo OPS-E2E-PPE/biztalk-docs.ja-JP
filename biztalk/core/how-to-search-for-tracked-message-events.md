@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3d4c573b864d16362c1b12b1e293e85f139cad4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6a3597d0d68dbd79de6c23e7b6d4b222b9c8376
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-search-for-tracked-message-events"></a>追跡メッセージ イベントを検索する方法
 使用することができます、**新しいクエリ** タブで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]追跡メッセージ イベントの管理コンソールを検索します。  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールから、メッセージ本文とメッセージ プロパティの追跡を有効にすることができます。 クエリ結果ペインで、メッセージ イベントに関する情報を表示できます。表示内容には、スキーマ情報、イベントの種類、サービス インスタンス ID、および生成されたメッセージの昇格させたすべてのプロパティが含まれます。  
@@ -49,11 +49,11 @@ ms.lasthandoff: 09/20/2017
     |**スキーマ名**|メッセージで使用されているスキーマの名前。|  
     |**サービス インスタンス ID**|メッセージに使用されているサービス インスタンス ID。|  
     |**URI**|メッセージに使用されている URI。|  
-    |**\<追跡対象のプロパティのスキーマ名を選択 >**|スキーマを選択すると、そのスキーマ内の任意の昇格させたプロパティをクエリで使用できます。|  
+    |**\<追跡対象のプロパティのスキーマ名を選択します。\>**|スキーマを選択すると、そのスキーマ内の任意の昇格させたプロパティをクエリで使用できます。|  
   
 6.  完了、**値**で行う選択範囲の適切な列、**フィールド名**列です。  
   
 7.  実行して適切なクエリに行を追加、**フィールド名**、**演算子**、および**値**列、およびクリック**実行クエリ**です。  
   
 ## <a name="see-also"></a>参照  
- [管理コンソールの [クエリ] タブを使用します。](../core/using-the-administration-console-query-tab.md)
+ [管理コンソールの [クエリ] タブの使用](../core/using-the-administration-console-query-tab.md)

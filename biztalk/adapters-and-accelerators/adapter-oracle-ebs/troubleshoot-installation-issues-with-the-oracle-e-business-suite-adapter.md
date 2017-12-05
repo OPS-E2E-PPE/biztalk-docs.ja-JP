@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 387ca48954fc075e696a8d3b093fbc9f1b5d7259
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29fbee54262f1b45e3cc9be67c057767a80b325f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite アダプターでのインストールに関する問題のトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するのには、トラブルシューティングの手法を使用してについて説明します。  
@@ -48,9 +48,9 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
   
 ##### <a name="to-register-the-adapter-binding"></a>アダプターのバインドを登録するには  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
-     このパスに\<*バージョン*> は .NET Framework のバージョン。  
+     このパスに\<*バージョン*\> .NET Framework のバージョンです。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   

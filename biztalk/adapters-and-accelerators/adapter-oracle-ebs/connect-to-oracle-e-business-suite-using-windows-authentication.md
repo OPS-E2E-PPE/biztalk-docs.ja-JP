@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3fef7c954b1384a31c2185d21b3dc4c529c561c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ed71a893ef029e6524b7e71f68626c32f207f91e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="connect-to-oracle-e-business-suite-using-windows-authentication"></a>Windows 認証を使用して Oracle E-business Suite への接続します。
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite への接続を確立するために Windows 認証を使用するアダプターのクライアントを有効にします。 Windows 認証を使用するには、アダプター クライアント ユーザー名の「/」を指定して、パスワードを空白のままにします。 Windows 認証を使用して Oracle E-business Suite への接続に関する詳細については、次を参照してください。 [Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)です。  
@@ -42,13 +42,13 @@ ms.lasthandoff: 09/20/2017
 3.  Oracle データベース内の外部のユーザーとして Windows ユーザーを作成します。 ユーザー名が大文字である必要がありますに注意してください。  
   
     ```  
-    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME>” IDENTIFIED EXTERNALLY;  
+    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME\>” IDENTIFIED EXTERNALLY;  
     ```  
   
 4.  ユーザーに特権を付与します。  
   
     ```  
-    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME>”;  
+    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME\>”;  
     ```  
   
 5.  Oracle E-business Suite 成果物は、アプリのスキーマで使用できます。 Oracle E-business Suite の成果物にアクセスする Windows 認証を使用してログインを新しく作成したユーザーを有効にするには、アプリケーション スキーマに、ユーザーのスキーマを変更してください。 次の SQL コマンドを追加するには、ユーザーがログオンしたときに、アプリにユーザーの既定のスキーマを変更するログオン スクリプトを作成します。  

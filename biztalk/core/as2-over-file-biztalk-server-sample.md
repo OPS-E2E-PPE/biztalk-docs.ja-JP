@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84e497579b2f3b8465f7a30677dae6920e2750c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14d4c077cce861e94f6c2cdc0bfc6f4a14669340
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a>AS2 Over File (BizTalk Server サンプル)
 AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセージを受信する方法を示します。 これにより、通常使用される HTTP アダプタではなく、FILE アダプタを使用して AS2 メッセージを受信できます。 そのために、このソリューションは、AS2 デコーダーの要求に応じて、AS2 メッセージの HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。  
@@ -139,11 +139,11 @@ AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセー�
   
 2.  出力 XML メッセージが \AS2 Over File\Out 出力フォルダーにドロップされることを確認します。  
   
-3.  入力メッセージ SampleMessage.txt をテキスト エディターで開き出力メッセージ\<GUID > のテキスト エディターで .xml です。 SampleMessage.txt 入力メッセージに HTTP (および AS2) ヘッダーがあり、出力メッセージに HTTP ヘッダーがないことを確認します。  
+3.  入力メッセージ SampleMessage.txt をテキスト エディターで開き出力メッセージ\<GUID\>をテキスト エディターで .xml です。 SampleMessage.txt 入力メッセージに HTTP (および AS2) ヘッダーがあり、出力メッセージに HTTP ヘッダーがないことを確認します。  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
  なし  
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 (BizTalk Server Samples フォルダ)](../core/edi-and-as2-biztalk-server-samples-folder.md)   
- [FILE 送信ポート経由で AS2 メッセージの送信](../core/sending-an-as2-message-over-a-file-send-port.md)
+ [FILE 送信ポートを使用した AS2 メッセージの送信](../core/sending-an-as2-message-over-a-file-send-port.md)

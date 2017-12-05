@@ -13,11 +13,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2892d2cd9072e462ff32668040a88859df094e91
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b9856b7fbbac5dd9d6a4f809e369e586d95a31b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mllp-transport-properties-dialog-box-ui-help"></a>MLLP トランスポートのプロパティ ダイアログ ボックスの UI ヘルプ
 使用する、 **MLLP トランスポートのプロパティ**送信用のパラメーターを構成し、最小限の下位層プロトコル (MLLP) アダプターの受信を ダイアログ ボックス。 パラメーターを設定、ネットワーク接続 MLLP トランスポートのプロパティのいずれかの送信ポートまたは受信場所が MLLP のトランスポートの種類を使用できます。  
@@ -28,13 +28,13 @@ ms.lasthandoff: 09/20/2017
  **MLLP トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
 #### <a name="block-characters"></a>文字のブロック  
- ブロック文字パラメーターは、HL7 メッセージ MLLP アダプター経由で送信または受信したを囲む必要がある特殊文字がします。 これらの文字は、次の形式で、ブロックを形成: \<SB >*DDD*\<EB >\<CR > ここで、 *DDD*メッセージ データの略\<SB> 開始ブロック文字で\<EB > end ブロックの文字と\<CR > は、復帰、戻り値。  
+ ブロック文字パラメーターは、HL7 メッセージ MLLP アダプター経由で送信または受信したを囲む必要がある特殊文字がします。 これらの文字は、次の形式で、ブロックを形成: \<SB\>*DDD*\<EB\>\<CR\>ここで、 *DDD*意味メッセージ データの\<SB\>開始ブロック文字で\<EB\> end ブロックの文字と\<CR\>は、復帰、戻り値。  
   
 |プロパティ|目的|  
 |--------------|----------------|  
-|**\<CR > キャリッジ リターン**|バイト値 (16 進数形式) をキャリッジ リターン (末尾バイトの後に 2 番目のバイト ラッパー) を使用します。 省略可。|  
-|**\<EB > End ブロック文字**|末尾バイト (メッセージ トレーラー ラッパー) を使用するバイト値。 ASCII \<FS > など、 \<1 c >。|  
-|**\<SB > 開始ブロック文字**|先頭バイト (メッセージ ヘッダーのラッパー) を使用するバイト値。 ASCII \<VT > など、 \<0b >。|  
+|**\<CR\>キャリッジ リターン**|バイト値 (16 進数形式) をキャリッジ リターン (末尾バイトの後に 2 番目のバイト ラッパー) を使用します。 省略可。|  
+|**\<EB\> End ブロック文字**|末尾バイト (メッセージ トレーラー ラッパー) を使用するバイト値。 ASCII \<FS\>など、 \<1 c\>です。|  
+|**\<SB\>開始ブロック文字**|先頭バイト (メッセージ ヘッダーのラッパー) を使用するバイト値。 ASCII \<VT\>など、 \<0b\>です。|  
   
 #### <a name="deliverymode"></a>DeliveryMode  
  インスタンス ファイルが順番に、または誤った順序で、順序どおりの順序に配信されるかどうかを制御配信モード パラメーターを使用するとします。 各受信場所がファイルのシーケンス インスタンスの独自の配信します。  
@@ -81,16 +81,16 @@ ms.lasthandoff: 09/20/2017
 |送信ポートの種類|固定接続|送信請求応答|[接続状態]|  
 |--------------------|---------------------------|----------------------|-----------------------|  
 |静的な一方向|TRUE|不可|開いたままになります|  
-|静的な一方向|TRUE|はい|開いたままになります|  
+|静的な一方向|TRUE|可|開いたままになります|  
 |静的な一方向|FALSE|不可|Closed|  
-|静的な一方向|FALSE|はい|Closed|  
-|送信請求応答の静的|FALSE|はい|開いたままになります|  
-|送信請求応答の静的|TRUE|はい|開いたままになります|  
+|静的な一方向|FALSE|可|Closed|  
+|送信請求応答の静的|FALSE|可|開いたままになります|  
+|送信請求応答の静的|TRUE|可|開いたままになります|  
 |送信請求応答の静的|FALSE|不可|Closed|  
-|送信請求応答の静的|FALSE|はい|Closed|  
+|送信請求応答の静的|FALSE|可|Closed|  
   
 ## <a name="see-also"></a>参照  
  [MLLP でエンコードされたメッセージの処理](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   
  [MLLP の受信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)   
  [MLLP 送信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-send-adapter-processing.md)   
- [Ack を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)
+ [ACK を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)

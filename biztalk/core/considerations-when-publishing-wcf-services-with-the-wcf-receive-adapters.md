@@ -18,11 +18,11 @@ caps.latest.revision: "34"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d42be28233162b158e463f2d3781a52807c4523
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30175e7966d565306c45820f1a6c2e22e4611876
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a>WCF 受信アダプターで WCF サービスを公開する場合の考慮事項
 このトピックでは、WCF 受信アダプターで WCF サービスを公開する際に考慮する必要がある情報を示します。  WCF アダプターを使用してサービスを公開すると、サービスを標準の WCF サービスのように WCF クライアントから呼び出すことができます。  
@@ -116,15 +116,15 @@ ms.lasthandoff: 09/20/2017
   
 |XML スキーマ要素|BizTalk WCF サービス公開ウィザードで公開した WCF サービスの使用|.NET アプリケーションでホストされる WCF サービスの使用|  
 |------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------|  
-|\<インポート >|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポート|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポート|  
-|\<含める >|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポートされている**注:**プロキシ クラスを作成するときに、Svcutil.exe が、警告メッセージを発生させる可能性があります。|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポートされている**注:**プロキシ クラスを作成するときに、Svcutil.exe が、警告メッセージを発生させる可能性があります。|  
-|\<再定義 >|BizTalk WCF サービス使用ウィザードでサポートされています。<br />Svcutil.exe でサポートが制限されて**注:** Svcutil.exe が、同じ制限の**を再定義**XSD.exe と要素には。|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポートされている**注:**プロキシ クラスを作成するときに、Svcutil.exe が、警告メッセージを発生させる可能性があります。|  
+|\<インポート\>|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポート|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポート|  
+|\<含まれます\>|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポートされている**注:**プロキシ クラスを作成するときに、Svcutil.exe が、警告メッセージを発生させる可能性があります。|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポートされている**注:**プロキシ クラスを作成するときに、Svcutil.exe が、警告メッセージを発生させる可能性があります。|  
+|\<再定義します。\>|BizTalk WCF サービス使用ウィザードでサポートされています。<br />Svcutil.exe でサポートが制限されて**注:** Svcutil.exe が、同じ制限の**を再定義**XSD.exe と要素には。|BizTalk WCF サービス使用ウィザードと Svcutil.exe の両方でサポートされている**注:**プロキシ クラスを作成するときに、Svcutil.exe が、警告メッセージを発生させる可能性があります。|  
   
 > [!NOTE]
 >  使用して、スキーマを公開した BizTalk WCF サービスに対してプロキシ クラスを作成するときに、Svcutil.exe が、警告メッセージを発生させる可能性があります、**含める**と**redefine**要素。 たとえば、"グローバル要素は既に宣言されています。" などです。  
   
 ## <a name="ensure-that-an-in-process-wcf-receive-location-is-not-disabled-after-you-change-the-computer-name-part-in-its-service-endpoint-address"></a>サービス エンドポイント アドレスのコンピューター名の部分を変更した場合、インプロセス WCF 受信場所が無効になっていないことを確認する  
- コンピューター名の部分を変更する場合、**アドレス (URI)**テキスト ボックスの実行中、インプロセス WCF 受信場所、受信場所がまだ実行されているかどうかを確認する、BizTalk 管理コンソールを使用することをお勧めします。 たとえばを変更する場合、WCF-NetTcp を使用してサービス エンドポイント アドレスは受信アダプター、 **net.tcp://\<***コンピューター名を***>/samplepath**、**net.tcp://localhost/samplepath**で受信場所を無効にすることがあります、 **Service.InvalidOperationException**です。 パスの部分を変更せずに、サービス エンドポイント アドレスのコンピューター名の部分のみを変更した場合は、受信場所が無効になっていないことを確認し、必要に応じて有効にします。  
+ コンピューター名の部分を変更する場合、**アドレス (URI)**テキスト ボックスの実行中、インプロセス WCF 受信場所、受信場所がまだ実行されているかどうかを確認する、BizTalk 管理コンソールを使用することをお勧めします。 たとえばを変更する場合、WCF-NetTcp を使用してサービス エンドポイント アドレスは受信アダプター、 **net.tcp://\<***コンピューター名を***\>/samplepath**を**net.tcp://localhost/samplepath**で受信場所を無効にすることがあります、 **Service.InvalidOperationException**です。 パスの部分を変更せずに、サービス エンドポイント アドレスのコンピューター名の部分のみを変更した場合は、受信場所が無効になっていないことを確認し、必要に応じて有効にします。  
   
 ## <a name="set-the-appropriate-msdtc-security-configuration-options-on-client-computers-communicating-with-remote-wcf-receive-locations-through-a-transaction-protocol"></a>トランザクション プロトコルを使用してリモートの WCF 受信場所と通信するクライアント コンピューターで、適切な MSDTC セキュリティ構成オプションを設定する  
  Wcf-nettcp、Wcf-wshttp、および Wcf-netnamedpipe 受信アダプターで WCF クライアントを管理するトランザクション調整プロセスに参加できる、 **Ws-atomictransaction**と**OleTransaction**トランザクション プロトコルです。 メッセージは、送信先の受信場所に送信したり、トランザクション プロトコルを使用してトランザクション コンテキストでメッセージ ボックス データベースから削除できます。  

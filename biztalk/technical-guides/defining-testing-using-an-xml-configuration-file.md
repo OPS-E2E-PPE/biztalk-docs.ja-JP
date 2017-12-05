@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 761f8c0a4480c26240926240cd890c1c68419b58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f18d6ed5e237a9ee5e9dbe36c58c10ec6f22907d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="defining-testing-using-an-xml-configuration-file"></a>XML 構成ファイルを使用したテストを定義します。
 BizUnit は、テストを定義する 2 つの方法を提供しています: XML 構成ファイルを使用して、Excel ワークシートを使用しています。 このトピックのねらいでテストを定義する XML 構成ファイルの使用ただし、する必要がありますも見て BizUnit SDK ので、Excel を使用するための BizUnit テスト_ケースを定義する方法の興味深い例を示します。 さらに、BizUnit テスト ケースの迅速に作成できる GUI を提供するための BizUnit デザイナー ツールを調査することもできます。 このトピックでは、非常に単純なシナリオを使用して XML 構成を使用してテスト_ケースを定義する方法の概要を示します。  
@@ -60,7 +60,7 @@ BizUnit は、テストを定義する 2 つの方法を提供しています: X
 </TestSetup>  
 ```  
   
- テスト、テストの実行のステージの最も重要なセクションを入力します。 この段階では、複数のテスト ステップを含めることができます。 ドキュメントをコピーする、FileCreateStep を使用してこの例では (InDoc1.xml でわかるようにする、 \<SourcePath > タグ) で使用されるファイル ドロップに、受信場所。 BizUnit は、です。 この手順ではファイル名の一意識別子を使用してサポートすることが重要これは、%creationpath タグで Guid % 参照で確認できます。  
+ テスト、テストの実行のステージの最も重要なセクションを入力します。 この段階では、複数のテスト ステップを含めることができます。 ドキュメントをコピーする、FileCreateStep を使用してこの例では (InDoc1.xml でわかるようにする、 \<SourcePath\>タグ) で使用されるファイル ドロップに、受信場所。 BizUnit は、です。 この手順ではファイル名の一意識別子を使用してサポートすることが重要これは、%creationpath タグで Guid % 参照で確認できます。  
   
  使用する必要がありますこれが完了した後、 **FileValidateStep**作成済みの送信メッセージを検証します。 この手順では、タイムアウト値 (ミリ秒単位では)、ディレクトリと、検索パターンを指定することができますがわかります。 これには、だけでなく、 **DeleteFile**タグでは、ファイルが検証された後に削除するかどうかを指定することができます。 最後にも注意してください (こと、値が確認 PONumber_0。) XML メッセージ内で [PONumber] ノードを検証する、XPath クエリが検証に含まれています検査および送信メッセージのペイロードの検証は、BizUnit を使用する場合に従う必要のある基本原則の別の例を示します。  
   
@@ -148,4 +148,4 @@ BizUnit は、テストを定義する 2 つの方法を提供しています: X
 ```  
   
 ## <a name="see-also"></a>参照  
- [BizUnit を使用して自動テストを容易にするには](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)
+ [自動テストを容易にするための BizUnit の使用](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)

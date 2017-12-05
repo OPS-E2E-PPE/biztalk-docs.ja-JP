@@ -15,14 +15,14 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7813d12e67316ab6fd3a6cca74bed079f3a3118
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee67d21ec067e0364fe4b7d0f0444afcae53ddbf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
-ここでは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のキーボード ショートカットを示します。  
+このセクションでは、Microsoft BizTalk Server のキーボード ショートカットを一覧表示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -34,8 +34,8 @@ ms.lasthandoff: 09/20/2017
   
 -   [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)  
   
--   [アダプターのプロパティ ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)  
+-   [[アダプターのプロパティ] ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)  
   
 -   [管理コンソールのキーボード ショートカット](../core/administration-console-keyboard-shortcuts.md)  
   
--   [TPE のショートカット](../core/tpe-keyboard-shortcuts.md)
+-   [TPE のショートカット キー](../core/tpe-keyboard-shortcuts.md)

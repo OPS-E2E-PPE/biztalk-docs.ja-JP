@@ -17,11 +17,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ad8aecf0faa0a9a0117feaf91e5fa91203fa63f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51c3576df5f62a0350f85d79b603c9f1cbda8a60
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="understand-biztalk-adapter-for-siebel-ebusiness-applications"></a>Siebel eBusiness Applications の BizTalk アダプターを理解します。
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話するためにサービス指向のプログラムによるアクセスを有効にします。 アダプターでは、次の利点をクライアントに使用します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **Lob の間でのエクスペリエンス、統一された**です。 使用して、WCF アダプターを標準化および[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]でき、したがって一貫した環境での任意の LOB システムへのアクセスを取得します。  
   
- 前述のように、アダプターは、上に組み込ま、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]のさまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションで使用できる統合アダプターを構築するための共通の基本を提供します。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]が Windows Communication Foundation (WCF) チャネルとの統合アダプターを公開することにより、アダプター戦略の Microsoft サービスの戦略を揃えて配置します。 詳細については、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]を参照してください、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ドキュメント。 と共に、ドキュメントがインストールされている、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通常 \<インストール ドライブ >: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents です。  
+ 前述のように、アダプターは、上に組み込ま、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]のさまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションで使用できる統合アダプターを構築するための共通の基本を提供します。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]が Windows Communication Foundation (WCF) チャネルとの統合アダプターを公開することにより、アダプター戦略の Microsoft サービスの戦略を揃えて配置します。 詳細については、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]を参照してください、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ドキュメント。 と共に、ドキュメントがインストールされている、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通常 \<インストール ドライブ\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents です。  
   
  Siebel システムでの操作を行うには、Siebel システムによって公開されるビジネス サービスへのアクセスがアダプターのクライアントに必要です。 Siebel アプリケーションでは、ビジネス コンポーネントとビジネス オブジェクト データを公開します。 Siebel*ビジネス コンポーネント*を 1 つの構造に 1 つまたは複数のテーブルの列を関連付ける論理エンティティです。 Siebel*ビジネス オブジェクト*一連の相互に関連するビジネス コンポーネントの連携により、ビジネス モデルを実装します。 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]アダプターのクライアントは、Siebel ビジネス オブジェクトとビジネス コンポーネントを表示できます。  
   
@@ -42,10 +42,10 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk adapter 用 Siebel eBusiness Applications の概要](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)  
+-   [BizTalk Adapter for Siebel eBusiness Applications の概要](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)  
   
 -   [Siebel アダプターの主要な機能](../../adapters-and-accelerators/adapter-siebel/key-features-in-the-siebel-adapter.md) 
   
--   [BizTalk adapter 用 Siebel eBusiness Applications の制限事項](../../adapters-and-accelerators/adapter-siebel/limitations-of-biztalk-adapter-for-siebel-ebusiness-applications.md)  
+-   [BizTalk Adapter for Siebel eBusiness Applications の制限事項](../../adapters-and-accelerators/adapter-siebel/limitations-of-biztalk-adapter-for-siebel-ebusiness-applications.md)  
   
--   [Data Provider 用 Siebel について](../../adapters-and-accelerators/adapter-siebel/about-the-data-provider-for-siebel.md)
+-   [Data Provider for Siebel について](../../adapters-and-accelerators/adapter-siebel/about-the-data-provider-for-siebel.md)

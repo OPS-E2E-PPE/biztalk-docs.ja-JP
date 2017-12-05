@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26b9cbc21eb93cad52a421b7df0912a37708978c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3f78297b57dc2c9bc61d5996c49f7543ac64163
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-api-from-an-orchestration-expression-biztalk-server-sample"></a>オーケストレーション式からの BAM API (BizTalk Server サンプル)
 このサンプルをする方法。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 -   追跡プロファイルを使用して追跡される BAM データと、BAM API を使用して追跡される BAM データの間の関係を作成する。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルを見つけることができます*\<サンプル パス >*\BAM\BamFromExpression です。  
+ このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamFromExpression です。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-the-tracking-profile"></a>追跡プロファイルを作成するには  
   
-1.  コマンド プロンプトを開き、実行*\<サンプル パス >*\BAM\BAMFromExpression\Setup.bat です。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。 Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。  
+1.  コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BAMFromExpression\Setup.bat です。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。 Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。  
   
 2.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**追跡プロファイル エディター**です。 使用している場合[!INCLUDE[btsWinVista](../includes/btswinvista-md.md)]または[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]を右クリックして**追跡プロファイル エディター**  をクリックし、**管理者として実行**です。  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  右クリックし、 **Receive_1**図形をクリックして**メッセージ ペイロード スキーマ**です。  
   
-9. 展開**\<スキーマ >**、展開**PurchaseOrder**、展開**から**、し、ドラッグ**PoID** の右側のウィンドウに**ActivityID**左側のウィンドウでします。  
+9. 展開**\<スキーマ\>**、展開**PurchaseOrder**、展開**から**、し、ドラッグ**PoID**右のウィンドウ**ActivityID**左側のウィンドウでします。  
   
 10. 右側のウィンドウから次の要素をドラッグし、左側のウィンドウの名前付きノードにドロップします。  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 13. ドラッグ、 **Send_1**図形を右側のペインで**送信**左側のウィンドウでします。  
   
-14. 追跡プロファイルを保存*\<サンプル パス >*\BAM\BamFromExpression\ BamFromExpression.btt です。  
+14. 追跡プロファイルを保存*\<サンプル パス\>*\BAM\BamFromExpression\ BamFromExpression.btt です。  
   
 15. **ツール** メニューのをクリックして**追跡プロファイルの適用**です。  
   
@@ -100,9 +100,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
--   ファイルをコピー *\<サンプル パス >*に \BamFromExpression\InputMessage.xml *\<サンプル パス >*\BamFromExpression\Input です。  
+-   ファイルをコピー *\<サンプル パス\>*に \BamFromExpression\InputMessage.xml *\<サンプル パス\>*\BamFromExpression\Input です。  
   
-     約 10 秒後に、出力メッセージが表示されます*\<サンプル パス >*\BamFromExpression\Output です。  
+     約 10 秒後に、出力メッセージが表示されます*\<サンプル パス\>*\BamFromExpression\Output です。  
   
 #### <a name="to-view-the-bam-data"></a>BAM データを表示するには  
   
@@ -110,24 +110,24 @@ ms.lasthandoff: 09/20/2017
   
 2.  SQL Server Management Studio で、サーバーを展開し、**データベース**、展開**BAMPrimaryImport**の順に展開および**テーブル**です。  
   
-3.  右クリック**dbo.bam_FromExpressionPo_Completed**、クリックして**テーブルを開く**です。 使用している場合[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]をクリックして**上位 1000 行を選択して**です。  
+3.  右クリック**dbo.bam_FromExpressionPo_Completed**、クリックして**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_FromExpressionPo_Completed テーブルの内容が、右側のウィンドウに表示されます。 アクティビティ ID が 123 の 1 行は、入力メッセージに含まれていた $345 の注文を表します。  
   
-4.  右クリック**dbo.bam_FromExpressionPoItem_Completed**、クリックして**テーブルを開く**です。 使用している場合[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]をクリックして**上位 1000 行を選択して**です。  
+4.  右クリック**dbo.bam_FromExpressionPoItem_Completed**、クリックして**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_FromExpressionPoItem_Completed テーブルの内容が、右側のウィンドウに表示されます。 アクティビティ ID が 123_0 および 123_1 の 2 行は、注文のアイテム Flash MC と Infrared Decoder を表します。  
   
-5.  右クリック**dbo.bam_FromExpressionPoItem_CompletedRelationships**、クリックして**テーブルを開く**です。 使用している場合[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]をクリックして**上位 1000 行を選択して**です。  
+5.  右クリック**dbo.bam_FromExpressionPoItem_CompletedRelationships**、クリックして**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_FromExpressionPoItem_CompletedRelationships テーブルの内容が、右側のウィンドウに表示されます。 テーブルの各行は、FromExpressionPoItem アクティビティと FromExpressionPo アクティビティの関係を表します。 値、 **ActivityID**列は、FromExpressionPoItem アクティビティのアクティビティ ID を示します。 値、 **ReferenceData**列は、FromExpressionPo アクティビティのアクティビティ ID を示します。 この場合、2 つのレコードは、Flash MC アイテムと Infrared Decoder アイテムが $345 の注文で関連付けられていることを示します。  
   
 #### <a name="to-re-run-the-sample"></a>サンプルを再実行するには  
   
-1.  コマンド プロンプトを開き、実行*\<サンプル パス >*\BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。  
+1.  コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。  
   
-2.  実行*\<サンプル パス >*\BAM\BamFromExpression\Setup.bat をサンプルをコンパイルして展開します。  
+2.  実行*\<サンプル パス\>*\BAM\BamFromExpression\Setup.bat をサンプルをコンパイルして展開します。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス アクティビティ監視 (BizTalk Server Samples フォルダ)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)   
- [アクティビティの関係](../core/activity-relationships.md)
+ [アクティビティ リレーションシップ](../core/activity-relationships.md)

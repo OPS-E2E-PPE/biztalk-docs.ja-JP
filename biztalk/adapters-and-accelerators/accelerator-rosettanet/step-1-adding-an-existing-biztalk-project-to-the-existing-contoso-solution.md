@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34c6a6bd5807702cb01c4c7cbc13780b95cc3da2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 343bdf83d90d38a6fc0c626a65353c0185c43f6c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-adding-an-existing-biztalk-project-to-the-existing-contoso-solution"></a>手順 1: 既存の Contoso ソリューションへの既存の BizTalk プロジェクトの追加
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK には、独自のプライベート プロセスをカスタマイズする際の適切な開始点として機能するプライベート プロセス オーケストレーションが含まれています。 ここでは、ソリューションにこのオーケストレーションを追加し、アセンブリ名を変更して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] インストールでインストールされた PrivateResponder オーケストレーションとの競合を回避します。 開始する前にで作成した Contoso ソリューションを開く[手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-new-biztalk-solution-for-contoso-price-and-availability-request.md)です。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 1.  Contoso ソリューションのフォルダーに PrivateResponder SDK サンプルをコピーします。  
   
     > [!NOTE]
-    >  既定では、PrivateResponder SDK サンプルは C:\Program files \microsoft BizTalk に格納\<バージョン > Accelerator for rosettanet \sdk\privateresponder フォルダーです。  
+    >  既定では、PrivateResponder SDK サンプルは C:\Program files \microsoft BizTalk に格納\<バージョン\>Accelerator for rosettanet \sdk\privateresponder フォルダーです。  
   
 2.  Visual Studio で、[**ファイル**、] をポイント**追加**、クリックして**既存のプロジェクト**です。  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
 7.  **プロパティ**ウィンドウで、 **Namespace**フィールドに「 **ContosoPriceAndAvailability**、キーを押します**Enter**です。  
   
 ## <a name="see-also"></a>参照  
- [手順 2: の定義と Contoso のボキャブラリを公開](../../adapters-and-accelerators/accelerator-rosettanet/step-2-defining-and-publishing-the-vocabulary-for-contoso.md)
+ [手順 2: Contoso 用のボキャブラリの定義と公開](../../adapters-and-accelerators/accelerator-rosettanet/step-2-defining-and-publishing-the-vocabulary-for-contoso.md)

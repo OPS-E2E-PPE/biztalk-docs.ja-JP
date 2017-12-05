@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fa513f0dfb9208abc3e9231f3b8eb23c0b561d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c9bb4a3453539a4c1329e9b0a2de6b46785b53fd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendportgroups-biztalk-server-sample"></a>SendPortGroups (BizTalk Server サンプル)
 SendPortGroups サンプルを列挙しを使用して送信ポート グループを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラスです。  
@@ -51,7 +51,7 @@ SendPortGroups サンプルを列挙しを使用して送信ポート グルー�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\SendPortGroups  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\SendPortGroups  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -88,7 +88,7 @@ SendPortGroups サンプルを列挙しを使用して送信ポート グルー�
   
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\SendPortGroups\bin\Debug  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug  
   
 2.  SendPortGroups.exe ファイルを実行します。  
   
@@ -371,4 +371,4 @@ DeleteSendPortGroup() completed.
 ```  
   
 ## <a name="see-also"></a>参照  
- [Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM (BizTalk Server Samples フォルダー)](../core/admin-explorerom-biztalk-server-samples-folder.md)

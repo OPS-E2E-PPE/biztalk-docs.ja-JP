@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0e14f58cbdd07a8c13dec6cd44fbc95584f2ecc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f783f465feff207ae1759ea358b0b848ccc0f4c3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="set-send-handler-property-biztalk-server-sample"></a>送信ハンドラー プロパティ (BizTalk Server サンプル) を設定します。
 送信ハンドラ プロパティの設定のサンプルでは、簡易メール送信プロトコル (SMTP) 送信ハンドラの XML 構成情報を設定する方法を示します。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプル ファイルは、次の SDK の場所にあります。  
   
- \<*パスのサンプル*> \Admin\WMI\Set 送信ハンドラー Property\  
+ \<*パスのサンプル*\>\Admin\WMI\Set 送信ハンドラー Property\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -57,15 +57,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\WMI\Set 送信ハンドラー Property\VBScript\  
+     \<*パスのサンプル*\>\Admin\WMI\Set 送信ハンドラー Property\VBScript\  
   
 2.  cscript プログラムを使用し、次のコマンド ライン引数を渡して、ファイル ConfigureSMTP.vbs を実行します。  
   
-    -   **\<**   
-         ***SMTPServerName* >。** メールの送信に使用する SMTP サーバーの名前。  
+    -   **\<** ***SMTPServerName* \>です。** メールの送信に使用する SMTP サーバーの名前。  
   
-    -   **\<**   
-         ***FromEmailAddress* >。** 差出人のアドレスに使用される電子メール アドレス。  
+    -   **\<** ***FromEmailAddress* \>です。** 差出人のアドレスに使用される電子メール アドレス。  
   
          例:  
   
@@ -79,4 +77,4 @@ ms.lasthandoff: 09/20/2017
  スクリプト ファイル ConfigureSMTP.vbs には、実行する操作についての説明のある詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
   
 ## <a name="see-also"></a>参照  
- [管理 WMI (BizTalk Server Samples フォルダ)](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

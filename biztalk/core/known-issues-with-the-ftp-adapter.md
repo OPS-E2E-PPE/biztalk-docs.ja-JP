@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c12b6f1693fe475a1b123a6163a11b35fd96932
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e13ce12e8514eaa2b5843ba81eff4f505e65d9e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a>FTP アダプターに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP アダプターではサーバー証明書の失効の確認をサポートしていない  
   
 ##### <a name="problem"></a>問題  
- [!INCLUDE[prague](../includes/prague-md.md)] の FTP アダプターは、SSL/TLS を使用した FTPS サーバーとのセキュリティで保護されたファイル転送をサポートするよう拡張されています。 証明書失効リスト (CRL) には失効し、無効になった証明書のリストが入っています。 FTP アダプターでは、サーバー証明書を認証するために CRL を参照しません。  
+ BizTalk Server で FTP アダプターは、SSL/TLS を使用した FTPS サーバーとの間のセキュリティで保護されたファイル転送をサポートするために強化されました。 証明書失効リスト (CRL) には失効し、無効になった証明書のリストが入っています。 FTP アダプターでは、サーバー証明書を認証するために CRL を参照しません。  
   
 ##### <a name="cause"></a>原因  
  仕様上、FTP アダプターではサーバー証明書を受け取る前に CRL を参照しません。  

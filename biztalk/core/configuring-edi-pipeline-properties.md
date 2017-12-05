@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3dd9b981791b12c0cf94be1b2a2c590f84617566
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c810b8507a98b91c0b906131e127f189f0a4fd0f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-edi-pipeline-properties"></a>EDI パイプラインのプロパティの構成
 パイプラインのプロパティは、受信または送信 EDI インターチェンジの処理において、受信または送信インターチェンジを解決するアグリーメントを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が特定できない場合に使用されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パイプラインのプロパティを使用してインターチェンジを処理する場合があります。その他の場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではフォールバック アグリーメントを使用します。 詳細については、次を参照してください。 [、EDI インターチェンジが構成されているの検証方法](../core/how-validation-of-an-edi-interchange-is-configured.md)です。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 |DetectMID|単一のメッセージ内の複数のインターチェンジを EDI 逆アセンブラーで解析できるようにします。|True (既定値)<br /><br /> False|EdiReceive - 逆アセンブル<br /><br /> AS2EdiReceive - 逆アセンブル|  
 |EdiDataValidation|フィールド長、省略可能性、および EDI データ要素の検証に加えて、繰り返し回数の検証を含む送信の EDI インターチェンジの EDI の種類 (データ要素) 検証を有効にします。|True (既定値)<br /><br /> False|EdiReceive - 逆アセンブル<br /><br /> AS2EdiReceive - 逆アセンブル<br /><br /> EdiSend - アセンブル<br /><br /> AS2EdiSend - アセンブル|  
 |EfactDelimiters|受信インターチェンジの処理に使用される区切り記号を示します。 受信インターチェンジに UNA セグメントがない場合に使用されます。<br /><br /> 区切り記号には、次のものがあります。<br /><br /> UNA1 (合成データ要素区切り記号)<br />UNA2 (データ要素区切り記号)<br />UNA3 (小数点表記)<br />UNA4 (リリース インジケーター)<br />UNA5 (繰り返し区切り記号)<br />UNA6 (セグメント終端記号)**注:** edifact 処理にのみ、X12 ではなくこのプロパティを使用します。|0x3A、0x2B、0x2C、0x3F、0x20、0x27 (既定値)|EdiReceive - 逆アセンブル<br /><br /> AS2EdiReceive - 逆アセンブル|  
-IgnoreMessageEncoding|BatchMarker コンポーネントが設定されていないこと、EDI を指定します。EncodingType コンテキスト プロパティを\<X12 > または\<EDIFACT >。 非 EDI メッセージを処理する際にカスタム パイプラインに適用されます。|False (既定値)<br /><br /> True|EdiReceive - パーティの解決<br /><br /> AS2EdiReceive - パーティの解決|  
+IgnoreMessageEncoding|BatchMarker コンポーネントが設定されていないこと、EDI を指定します。EncodingType コンテキスト プロパティを\<X12\>または\<EDIFACT\>です。 非 EDI メッセージを処理する際にカスタム パイプラインに適用されます。|False (既定値)<br /><br /> True|EdiReceive - パーティの解決<br /><br /> AS2EdiReceive - パーティの解決|  
 |MaskSecurityInformation|情報の漏えいを防ぐために、受信 EDI インターチェンジのコンテキスト プロパティで認証/パスワードのセキュリティ情報をマスクします。 ISA1、ISA2、ISA3、ISA4 の各フィールド (X12 インターチェンジの場合)、および UNB6 フィールド (EDIFACT インターチェンジの場合) に適用されます。|True (既定値)<br /><br /> False|EdiReceive - 逆アセンブル<br /><br /> AS2EdiReceive - 逆アセンブル|  
 |PreserveInterchange|受信したバッチを 1 つの単位として処理することを指定します。|False (既定値)<br /><br /> True|EdiReceive - 逆アセンブル<br /><br /> AS2EdiReceive - 逆アセンブル|  
 |RouteAckOn2WayPort|双方向の要求 - 応答の受信ポートの開いている接続経由で EDI 受信確認を返します。|True (既定値)<br /><br /> False|EdiReceive - 逆アセンブル<br /><br /> AS2EdiReceive - 逆アセンブル|  

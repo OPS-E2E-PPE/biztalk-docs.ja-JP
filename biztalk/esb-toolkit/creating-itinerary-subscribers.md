@@ -12,17 +12,17 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81e9790c36d1af9d48942c5de7ccc8eab6d87a5c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f470ed5268c445ab3b7175f1cba07ff1de52a27
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-itinerary-subscribers"></a>Itinerary サブスクライバーを作成します。
-[!INCLUDE[prague](../includes/prague-md.md)]受信パイプライン経由でメッセージ ボックス データベースに到着するメッセージを自動的に発行します。これにより、メッセージが、関連するサブスクライバーで収集できる状態にします。 この分離方法は、最大限の柔軟性を提供のスケールを設定し、発行を使用しているために、BizTalk ソリューションを開発することをお勧めのメカニズムをサブスクライブします。  
+BizTalk Server メッセージ ボックス データベースに、受信パイプライン経由で到着するメッセージを自動的に公開します。これにより、メッセージが、関連するサブスクライバーで収集できる状態にします。 この分離方法は、最大限の柔軟性を提供のスケールを設定し、発行を使用しているために、BizTalk ソリューションを開発することをお勧めのメカニズムをサブスクライブします。  
   
  2 つの方法でサブスクライバーを itinerary サービスを作成するにがあります。  
   
--   [Itinerary サービス サブスクライバーとして、送信ポートを使用します。](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)  
+-   [スケジュール サービス サブスクライバーとして送信ポートを利用する](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)  
   
--   [Itinerary サービス サブスクライバーとして、オーケストレーションを使用します。](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)
+-   [スケジュール サービス サブスクライバーとしてオーケストレーションを利用する](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)

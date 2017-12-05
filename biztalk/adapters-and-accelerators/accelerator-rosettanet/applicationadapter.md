@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc2808f8cdc2d24a2f7c13864a153361984d0981
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee9d04f98da5e9b8aa1faba81f32fe5ec37d23b9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="applicationadapter"></a>ApplicationAdapter
 ApplicationAdapter サンプルは、メッセージの受信時にパブリック プロセスとプライベート プロセス (応答側または開始側) から通知を送信する方法を示します。 このサンプルには、必要に応じて新しい機能を追加できます。  
@@ -27,7 +27,7 @@ ApplicationAdapter サンプルは、メッセージの受信時にパブリッ�
   
  ApplicationAdapter サンプルまたは関連するいずれかの外部環境変数を変更した場合は、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] のパブリック プロセスをホストする BizTalk ホスト サービスを再起動します。  
   
- ApplicationAdapter サンプル コードにある\<*ドライブ*>: \Program Files\ BizTalk\<バージョン > Accelerator for RosettaNet\SDK\ApplicationAdapter\\です。  
+ ApplicationAdapter サンプル コードにある\<*ドライブ*\>: \Program Files\ BizTalk\<バージョン\>Accelerator RosettaNet\SDK\ApplicationAdapterfor\\.  
   
 ## <a name="demonstrates"></a>使用例  
  ApplicationAdapter サンプルは、パブリック プロセスがメッセージを受信したことを応答側プライベート プロセスに通知する方法を示します。 通知には、メッセージ カテゴリ、送信元パーティ名、送信先パーティ名、PIP コード、PIP バージョン、および PIP インスタンス ID が示されます。 この通知は、アクション メッセージと応答メッセージのいずれに関しても送信できます。  
@@ -57,7 +57,7 @@ ApplicationAdapter サンプルは、メッセージの受信時にパブリッ�
   
 #### <a name="to-add-the-application-adapter-to-an-agreement"></a>アプリケーション アダプターをアグリーメントに追加するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] **BizTalk\<バージョン > Accelerator for RosettaNet**をクリックして[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] **BizTalk\<バージョン\>Accelerator for RosettaNet**、し、をクリックして[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**です。  
   
 2.  [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、 をクリック**契約**です。  
   
@@ -68,4 +68,4 @@ ApplicationAdapter サンプルは、メッセージの受信時にパブリッ�
 5.  下矢印をクリックして**クラス名**アプリケーション アダプター クラスを選択し、クリックして**OK**です。  
   
 ## <a name="see-also"></a>参照  
- [アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)
+ [アダプター サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)

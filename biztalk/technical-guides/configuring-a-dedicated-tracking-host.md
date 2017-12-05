@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3651d91f9c4b28fae30182ed6ddd18cde1bb3f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b91a4b65c6e9a9b293e967385b8f0ac4eece1aa4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-a-dedicated-tracking-host"></a>専用の追跡ホストの構成
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最適化されているため、スループット、メインのオーケストレーションとメッセージング エンジン実際には移動しないでイベントやメッセージ、BizTalk 追跡 (DTA) またはビジネス アクティビティ監視 (BAM) データベースに直接ので、これは、プライマリからこれらのエンジンを迂回させますビジネス プロセスを実行中のジョブです。 代わりに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イベントとメッセージがメッセージ ボックス データベースになり、BizTalk 追跡データベースまたは BAM データベースへの移行を必須としてマークを付けます。 バック グラウンド プロセス (追跡ホスト) してから、BizTalk 追跡データベースに SQL Server エージェント ジョブ コピー追跡したメッセージの中に、BizTalk の追跡と BAM データベースに移動するイベント。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
  追跡ホスト インスタンスが特定のメッセージ ボックス データベースの追跡データを移動しますが、されません 1 つ以上の追跡ホスト インスタンスの特定のメッセージ ボックス データベースのデータを移動します。 たとえば、3 つのメッセージ ボックス データベースと 2 つのホスト インスタンスの追跡がある場合は、そのホスト インスタンスのいずれかの必要があります、メッセージ ボックス データベースの 2 つのデータを移動します。 追跡ホスト インスタンスの追跡、3 番目の追加は分散作業を実行している別のコンピューターのホスト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 このシナリオでは、複数の追跡ホストの配布と 4 つ目のホスト インスタンスの追跡を追加する機能しますが、余分なは、フォールト トレランスのホスト インスタンスを追跡します。  
   
- BAM イベント バス サービスの詳細については、次のトピックを参照してください。[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ BAM イベント バス サービスの詳細については、BizTalk Server ヘルプの次のトピックを参照してください。  
   
 -   [BAM イベント バス サービスを管理する](http://go.microsoft.com/fwlink/?LinkId=154194)(http://go.microsoft.com/fwlink/?LinkId=154194)  
   
@@ -71,4 +71,4 @@ ms.lasthandoff: 09/20/2017
      チェック ボックスをオフにした場合、ホストはメッセージ ボックス データベースに追跡テーブルへの書き込みアクセスのみを持つし、追跡データベースへのアクセス権がないです。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: BizTalk Server を構成します。](../technical-guides/checklist-configuring-biztalk-server.md)
+ [チェックリスト: BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)

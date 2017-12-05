@@ -12,16 +12,16 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 155ad9ac5310b5084a94eb59a225e4d40e552bb9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1d39c71a425e20c5a9228e418cfa86acb579fa5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="node-name-property"></a>"ノード名" プロパティ
 BizTalk エディターでノードをスキーマ ツリーに挿入すると、ノードの名前が変更されるノードと名前が変更されないノードがあります。 基本的に、できるし、名前を変更する必要があります**レコード**ノード、**フィールド要素**ノード、および**フィールド属性**ノード。 これらのノードに名前を指定すると、その名前は、スキーマで定義されるメッセージの XML 要素および XML 属性の名前として使用されます。  
   
- スキーマ ツリーで名前を変更することはできません、ノードが XML タグの形式で表示します。小により (\<) と (>) 記号よりも大きいです。 たとえば、**スキーマ**ノード、**選択肢グループ**ノード、**すべての要素**ノード、および**すべての属性**ノードは、スキーマで表されます名前を持つツリー\<スキーマ >、 \<Choice >、\<任意 >、および\<AnyAttribute >、それぞれします。 **ノード名**このようなノードのプロパティは読み取り専用です。  
+ スキーマ ツリーで名前を変更することはできません、ノードが XML タグの形式で表示します。小により (\<) より大きいと (\>) 記号です。 たとえば、**スキーマ**ノード、**選択肢グループ**ノード、**すべての要素**ノード、および**すべての属性**ノードは、スキーマで表されます名前を持つツリー\<スキーマ\>、\<選択肢\>、\<任意\>、および\<AnyAttribute\>、それぞれします。 **ノード名**このようなノードのプロパティは読み取り専用です。  
   
  内で、指定された**レコード**ノード、2 つを持つことはできません**フィールド属性**と同じ名前のノードです。 1 つ以上ありますただし、**フィールド要素**ノードまたは**レコード**同じの子ノードと同じ名前を持つノード**レコード**限り、それらはすべて同じデータ型のノード(で指定されたとおり、**データ型**プロパティ**フィールド要素**ノード、または**Data Structure Type**の**レコード**ノード)。  
   
@@ -37,6 +37,6 @@ BizTalk エディターでノードをスキーマ ツリーに挿入すると�
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ノード名における文字エン コードします。](../core/which-node-name-characters-get-encoded.md)  
+-   [ノード名における文字エンコード](../core/which-node-name-characters-get-encoded.md)  
   
--   [ノード名における文字エン コードの方法](../core/how-node-name-characters-get-encoded.md)
+-   [ノード名の文字エンコードの方法](../core/how-node-name-characters-get-encoded.md)

@@ -21,11 +21,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ea715e92f7bfaa2f9d3baf3e82223f95328e3da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b8361875cf34f14118fb93818c78a6ca7d12a86f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>高可用性と MOF
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に対する高可用性ソリューションを計画および実装する際、MOF (Microsoft Operations Framework) プロセス モデルを適用することにより、リリース ライフ サイクルのさまざまな段階で適切なプロセスを得ることができます。 高可用性に影響するすべてのライフ サイクル ステージをあらかじめ把握しておくことにより、可用性の問題に伴うインストール、メンテナンス、およびトラブルシューティングを、より円滑に行うことができます。  
@@ -59,7 +59,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   パートナーまたは顧客とのサービス レベル契約に、一定水準の可用性、アップタイム、負荷処理の機能を約束する項目があるかどうかを確認します。  
   
--   [!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)] または [!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)] から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にアップグレードする場合は、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] におけるハードウェアの最小要件だけでなく、サービス レベル契約という観点からも、既存のハードウェアが、十分にその要件を満たしていることを確認する必要があります。  
+-   アップグレードする場合は[!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)]または[!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)]BizTalk Server に BizTalk Server の最小ハードウェア要件とサービス レベル契約から要件に、既存のハードウェアが満たしているかどうかを判断する必要があります。  
   
 -   ビジネス ニーズに合わせて、BizTalk Server データベースの最適なクラスター構成を確認します。 実行時の環境では、BizTalk 管理データベース、メッセージ ボックス データベース、追跡分析サービス データベース、BAM 分析データベース、BAM スター スキーマ データベース、BAM プライマリ インポート データベース、および BAM アーカイブ データベースへの書き込み処理が行われます。 したがって、これらのデータベースを障害から保護することが特に重要となります。当然、どのデータベースをクラスター化するかという判断において、より高い優先順位が付けられることになります。 その他のデータベースに対する書き込みは、ユーザーまたはツールによってのみ行われます。 メッセージ ボックス データベースについては、4 つのサーバー クラスターから成るアクティブ/アクティブ/アクティブ/パッシブ構成によって、必要なハードウェアを最小限に抑えることができます。  
   
@@ -122,4 +122,4 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  サービス継続性機能の中に、お客様にも計画または計画外のダウンタイムが発生すると、期待されるサービスを提供し続けることを確認するために実装するには、どのような高可用性構成を確認する必要があります。 計画外のダウンタイムには、ハードウェア障害や自然災害などがあります。  
   
 ## <a name="see-also"></a>参照  
- [サンプル BizTalk Server の高可用性のシナリオ](../core/sample-biztalk-server-high-availability-scenarios.md)
+ [BizTalk Server の高可用性を実現するサンプル シナリオ](../core/sample-biztalk-server-high-availability-scenarios.md)

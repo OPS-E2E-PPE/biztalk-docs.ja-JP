@@ -16,14 +16,14 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40ac6defd3b0cf99d2f0e53b3173b32e09efa0c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 33f06c896b58b2ba57c8c1bcee598d23f81b7700
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-messages-flow-through-btahl7"></a>BTAHL7 内のメッセージのフロー
-インストールするときに[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) の上に[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]、追加する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]コンポーネントを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アーキテクチャ。 次の図は、結合されたシステム、アーキテクチャの概要を説明[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。  
+インストールするときに[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) の上に[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]追加する BizTalk Server[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]コンポーネントを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アーキテクチャ。 次の図は、結合されたシステム、アーキテクチャの概要を説明[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/bcd-hl7-sys-archc.gif "bcd_hl7_sys_archc")  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
     >  アダプターの数を 2.X メッセージや 2. XML メッセージを転送することができます。ただし、ほとんどのシステムは、MLLP アダプターを経由 2.X メッセージと HTTP アダプターを介して 2. XML メッセージを転送します。  
   
 ## <a name="see-also"></a>参照  
- [BTAHL7 でメッセージをルーティングする方法](../../adapters-and-accelerators/accelerator-hl7/how-btahl7-routes-messages.md)
+ [BTAHL7 によるメッセージのルーティング方法](../../adapters-and-accelerators/accelerator-hl7/how-btahl7-routes-messages.md)

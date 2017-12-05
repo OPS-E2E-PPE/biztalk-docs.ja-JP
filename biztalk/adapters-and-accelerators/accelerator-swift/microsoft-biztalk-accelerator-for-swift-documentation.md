@@ -13,16 +13,16 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 843c20229371e213a1409f3bf3c6d297bf16211a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e248ef72d52730894b4fed61c904896e9fe061e7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="microsoft-biztalk-accelerator-for-swift-documentation"></a>BizTalk Accelerator for SWIFT のドキュメント
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]にアドインが[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]、標準ベースのツールを開く、実行時の施設が設備を利用して、 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] Worldwide 銀行間財務通信 (SWIFT) メッセージの社会のサポートを実装するには書式設定します。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]にアドインが[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server では、標準ベースのツールを開いて、Society のワールドワイド銀行間財務通信 (SWIFT) メッセージ形式のサポートを実装する BizTalk Server のランタイムの機能を利用して、.  
   
- これは、追加機能を簡単を採用すると、企業[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]汎用的なミドルウェアの統合プラットフォームとして。 A4SWIFT、顧客、パートナー、およびシステムとインテグレータは、開発、配置、およびコア金融サービス アプリケーションのインフラストラクチャやビジネス プロセスの統合ソリューションのサポートを合理化できます。  
+ この機能を追加すると、汎用的なミドルウェア統合プラットフォームとしての BizTalk Server を採用すると、企業のやすくなります。 顧客、パートナー、システム インテグレーターは A4SWIFT を利用し、統合ソリューションの中心となる金融サービス アプリケーション インフラストラクチャやビジネス プロセスの開発、展開、サポートを合理化できます。  
 
 ## <a name="install-configure-and-deploy"></a>インストール、構成、および展開
 [インストール、構成、および展開](../../adapters-and-accelerators/accelerator-swift/install-configure-and-deploy-the-biztalk-accelerator-for-swift.md)をインストールして、BizTalk Server で、acclerator を構成する方法を示します。 ランタイム、メッセージの修復、および FIN 応答を構成することもできます。 

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ead07059cac11f251d35fae18f0e228c4488c07a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6bfff208920b25ee1a22aa2c3c74feeba42f4b43
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用するパフォーマンス カウンター
 自動的に実行しているローカルまたはリモート コンピューターからパフォーマンス データを収集するパフォーマンス ツールを使用することができます、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 開始を定義して自動ログ生成の時間を停止、および 1 つのコンソール ウィンドウで、複数のログ セッションを管理するか、およびを送信するメッセージを有効にするコンピューターや、条件が満たされたときに開始するログに警告を設定できます。 このトピックでのパフォーマンス カウンターについて説明します、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="performance-objects-and-counters"></a>パフォーマンス オブジェクトおよびカウンター  
  インストールするときに、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、「ServiceModel アダプター」をという名前の 1 つのパフォーマンス オブジェクトがインストールされています。 パフォーマンス オブジェクトには、多くさまざまなパフォーマンス カウンターにはが含まれています。 パフォーマンス オブジェクトは、特定のリソース、アプリケーション、またはサービスの動作状況を測定します。 パフォーマンス オブジェクトおよびカウンターのパフォーマンス データの取得、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、機能、およびサービス コンピューターで使用されます。 このパフォーマンス データは通常、データを生成するコンポーネントの名前します。 パフォーマンス カウンターは、特定の情報または特定のパフォーマンス オブジェクトのデータを収集するために使用されます。  
   
- ServiceModel のアダプターのパフォーマンス オブジェクトからカウンターを選択すると、ときにのみについて特定のアダプターのインスタンスをインスタンスのインスタンスの選択リストから選択して監視することもできます。 各アダプター インスタンスは、の形式で表示されます\<ProcessId > @\<ConnectionString >。 たとえば、 115@echo:(& a) #124; &#124; ホスト (&) #124; temp しますか? echoprefix = 前が 115 のプロセスで実行されている echo アダプター インスタンスを示すです。  
+ ServiceModel のアダプターのパフォーマンス オブジェクトからカウンターを選択すると、ときにのみについて特定のアダプターのインスタンスをインスタンスのインスタンスの選択リストから選択して監視することもできます。 各アダプター インスタンスは、の形式で表示されます\<ProcessId\>@\<ConnectionString\>です。 たとえば、 115@echo:(& a) #124; &#124; ホスト &#124; temp しますか? echoprefix = 前が 115 のプロセスで実行されている echo アダプター インスタンスを示すです。  
   
  WCF でのパフォーマンス カウンターについては、次を参照してください。 [WCF パフォーマンス カウンタ](https://msdn.microsoft.com/library/ms735098.aspx)です。
   

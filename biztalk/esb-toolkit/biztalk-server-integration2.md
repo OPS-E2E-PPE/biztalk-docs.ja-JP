@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c550e9953332458fd79f4a3f6b7e29bece9fa127
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c47976873fcdd4efbb63bbceca653802cb8b9962
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-integration"></a>BizTalk Server の統合
-AmberPoint は、カスタム BizTalk パイプライン コンポーネントとして、Microsoft BizTalk Server の統合製品をパッケージ化します。 このコンポーネントを使用して、既存のカスタム パイプラインに追加する[!INCLUDE[vs2010](../includes/vs2010-md.md)]図 1 に示すように、します。  
+AmberPoint は、カスタム BizTalk パイプライン コンポーネントとして、Microsoft BizTalk Server の統合製品をパッケージ化します。 図 1 に示すように、Visual Studio を使用して、既存のカスタム パイプラインにこのコンポーネントを追加できます。  
   
  ![VisualStudio パイプライン](../esb-toolkit/media/ch9-visualstudiopipeline.jpg "Ch9 VisualStudioPipeline")  
   
@@ -36,4 +36,4 @@ AmberPoint は、カスタム BizTalk パイプライン コンポーネント�
  **受信アダプターにパイプラインの AmberPoint のバインド**  
   
 > [!NOTE]
->  AmberPoint SOA 管理システム (SMS) 製品と統合する AmberPoint, Inc. の製品は、[!INCLUDE[prague](../includes/prague-md.md)]です。 AmberPoint や、SOA ガバナンス製品に関する詳細については、次を参照してください。、 [AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) Web サイトです。
+>  AmberPoint SOA 管理システム (SMS) の製品は、BizTalk Server と統合 AmberPoint, Inc. の製品です。 AmberPoint や、SOA ガバナンス製品に関する詳細については、次を参照してください。、 [AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) Web サイトです。

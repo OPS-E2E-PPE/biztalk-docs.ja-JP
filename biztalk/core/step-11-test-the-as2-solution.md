@@ -12,11 +12,11 @@ caps.latest.revision: "34"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 490833859717ec37e0cb53ae89497aa361adda6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1cfd7ac057da675f25040685f67301e368605779
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-11-test-the-as2-solution"></a>手順 11: AS2 ソリューションをテストします。
 ![手順 11 の 11](../core/media/tut-step11-of-11.gif "Tut_Step11_of_11")  
@@ -39,11 +39,11 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  EDI テスト インターチェンジを次を含む AS2 メッセージ Sender.exe ビルドを実行する: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 tutorial \x12_00401_864.edi です。 AS2 メッセージのビルド後、そのメッセージは Contoso 仮想ディレクトリに送られます。このディレクトリは、BTSHttpReceive.dll を使用してメッセージを受信場所にルーティングします。  
   
-4.  移動し、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 Tutorial\\_MDNToFabrikam フォルダーです。 あることを確認してください、 \<GUID > フォルダーに <guid>.msg ファイル。 メモ帳でこのファイルを開き、メッセージが MDN で、AS2-From が Contoso に設定され、AS2-To が Fabrikam に設定されていることを確認します。  
+4.  移動し、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 Tutorial\\_MDNToFabrikam フォルダーです。 あることを確認してください、 \<GUID\>フォルダーに <guid>.msg ファイル。 メモ帳でこのファイルを開き、メッセージが MDN で、AS2-From が Contoso に設定され、AS2-To が Fabrikam に設定されていることを確認します。  
   
-5.  移動し、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 Tutorial\\_EDIXMLToContoso フォルダーです。 あることを確認してください、 \<GUID > フォルダーの .xml ファイルです。 このファイルをダブルクリックし、メッセージの ST01 フィールドが 864 に設定されていることを確認します。  
+5.  移動し、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 Tutorial\\_EDIXMLToContoso フォルダーです。 あることを確認してください、 \<GUID\>フォルダー内の .xml ファイルです。 このファイルをダブルクリックし、メッセージの ST01 フィールドが 864 に設定されていることを確認します。  
   
-6.  移動し、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 Tutorial\\_ 997tofabrikam フォルダーです。 あることを確認してください、 \<GUID > フォルダーに <guid>.msg ファイル。 メモ帳でこのファイルを開き、メッセージが、EDI ペイロードの上に AS2 ヘッダーがある 997 メッセージ (ST1 が 997) であることを確認します。 AS2-From が Contoso で、AS2-To が Fabrikam であることを確認します。 ISA6 (送信者 ID) が 1234567 (Contoso) に設定されていること、および ISA8 (受信者 ID) が 7654321 (Fabrikam) に設定されていることを確認します。  
+6.  移動し、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 Tutorial\\_ 997tofabrikam フォルダーです。 あることを確認してください、 \<GUID\>フォルダーに <guid>.msg ファイル。 メモ帳でこのファイルを開き、メッセージが、EDI ペイロードの上に AS2 ヘッダーがある 997 メッセージ (ST1 が 997) であることを確認します。 AS2-From が Contoso で、AS2-To が Fabrikam であることを確認します。 ISA6 (送信者 ID) が 1234567 (Contoso) に設定されていること、および ISA8 (受信者 ID) が 7654321 (Fabrikam) に設定されていることを確認します。  
   
 7.  AS2 および EDI 状態レポートを表示するには、**グループ ハブ**BizTalk Server 管理コンソール ページで、ページの一番下までスクロールして、状態レポートのリンクのいずれかをクリックします。 詳細については、次を参照してください。 [EDI および AS2 状態レポート](../core/edi-and-as2-status-reporting.md)です。  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 3: AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)   
- [手順 1: AS2 チュートリアルを準備します。](../core/step-1-prepare-for-the-as2-tutorial.md)
+ [手順 1: AS2 チュートリアルの準備](../core/step-1-prepare-for-the-as2-tutorial.md)

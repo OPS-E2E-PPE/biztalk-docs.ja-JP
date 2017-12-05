@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbf134b390af1904d74f1652aac00f6ea4b33ad2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b1835371e5c042d3ddc46558cbf97970f6bfc6c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="biztalk-message-body-element-encoding-is-invalid"></a>BizTalk メッセージ本文要素のエンコードは無効です
 ## <a name="details"></a>詳細  
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**メッセージ**タブです。  
   
 9. **送信 WCF メッセージ本文**セクションで、をクリックして、**テンプレート--テンプレートで指定されたコンテンツ**ラジオ ボタンをクリックします。 **XML**テキスト ボックスで、BizTalk 本文の形式である必要があります   
-    \<**bts メッセージ本文の xmlns ="http://www.microsoft.com/schemas/bts2007"encoding =「[xml (&) #124; base64 &#124; 16 進数 (&) #124; 文字列]」/**> (有効な値、xml (&) #124; base64 &#124; 16 進エンコードは、大文字小文字が区別されます。(& a) #124; 文字列)
+    \<**bts メッセージ本文の xmlns ="http://www.microsoft.com/schemas/bts2007"encoding =「[xml &#124; base64 &#124; 16 進数 &#124; 文字列]」/** \> (有効な値、xml &#124; base64 & # は、エンコード、大文字小文字が区別されます。#124; 16 進数 (&) #124 です。 文字列)

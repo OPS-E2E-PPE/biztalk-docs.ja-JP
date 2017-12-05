@@ -12,16 +12,16 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 068eddfdd2138fbc92ad4821b2eaf9491ad39000
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c6a85e8e98e7ea2874935656553b18abac7ca88a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="architecture-of-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit のアーキテクチャ
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]一連の相互運用をサポートし、メッセージ ベースのエンタープライズ アプリケーションを構築するが容易疎結合のメッセージング環境を実装するコンポーネントで構成されています。 サービスとコンポーネントは、次の 7 つのカテゴリに必然的に分類されます。  
   
--   **Web サービス。** Itinerary 処理、例外管理、エンドポイントやマップの解像度などの内部サービスの公開これら[!INCLUDE[prague](../includes/prague-md.md)]操作、Universal Description, Discovery, and Integration (UDDI) の相互運用、およびメッセージの変換コンテンツ。  
+-   **Web サービス。** 公開されるため、日程を処理する例外管理、エンドポイント、マップ、BizTalk Server の処理、Universal Description, Discovery, and Integration (UDDI) の相互運用、およびメッセージの内容の変換の解像度などの内部のサービス.  
   
 -   **Itinerary サービスです。** これらには、変換、およびメッセージのルーティングを実行するためのオーケストレーションおよびメッセージング ベースのサービスが含まれます。 行程処理では、参加しているカスタムのサービスを作成できます。 これらには、変換、およびメッセージのルーティングを実行するためのオーケストレーションおよびメッセージング ベースのサービスが含まれます。 行程処理では、参加しているカスタムのサービスを作成できます。  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **ESB の管理ポータル。** このサンプル アプリケーションは、レジストリのプロビジョニング、例外の仲介、アラートの通知、および分析を提供します。  
   
- によって実装された機能を利用してこれらのコンポーネントとサービスの多く[!INCLUDE[prague](../includes/prague-md.md)]オーケストレーション、変換、およびビジネス ルール エンジンと、メッセージ ボックス データベースなどです。 図 1 は、カテゴリ、コンポーネント、および各カテゴリ内で発生する一般サービス概略を示します、中核となる BizTalk Server のシステム コンポーネントで使用されて、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
+ これらのコンポーネントとサービスの多くは、オーケストレーション、変換、およびビジネス ルール エンジンと、メッセージ ボックス データベースなど、BizTalk Server によって実装されている機能に依存します。 図 1 は、カテゴリ、コンポーネント、および各カテゴリ内で発生する一般サービス概略を示します、中核となる BizTalk Server のシステム コンポーネントで使用されて、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
   
  ![ESB アーキテクチャ](../esb-toolkit/media/esbarchitecture.gif "ESBArchitecture")  
   

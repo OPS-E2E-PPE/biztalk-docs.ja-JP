@@ -12,11 +12,11 @@ caps.latest.revision: "34"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94d1aa31a271f0ed88be42066abdae25be3f3e87
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95c4bb48805eb0d2b349a8802c0bc8af1d12925a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-x12-receiving-batched-edi-interchanges"></a>チュートリアル (X12): バッチ EDI インターチェンジの受信
 このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して EDI バッチの受信用のソリューションを作成する一連の手順について説明します。 このソリューションでは、バッチ EDI インターチェンジを受信する 2 つの方法を示します。  
@@ -65,10 +65,10 @@ ms.lasthandoff: 09/20/2017
   
 2.  受信パイプラインは、トランザクション セットを分割せずにインターチェンジを処理し、2 つのトランザクション セットを 1 つの単位として内部 XML 形式に変換します。  
   
-3.  受信パイプラインは、インターチェンジがバッチでなかった場合と同じプロパティを昇格させます。ただし、生成する XML に予約タグを適用する場合を除きます。 このタグは、 \<X12InterchangeXml > X12 でエンコードされた EDI インターチェンジまたは\<EdifactInterchangeXml > EDIFACT でエンコードされた EDI インターチェンジの場合。 EDI 受信パイプラインは、インターチェンジを保存されたインターチェンジとして識別するために、コンテキスト プロパティ `ReuseEnvelope` も適用します。  
+3.  受信パイプラインは、インターチェンジがバッチでなかった場合と同じプロパティを昇格させます。ただし、生成する XML に予約タグを適用する場合を除きます。 このタグは、 \<X12InterchangeXml\> X12 でエンコードされた EDI インターチェンジまたは\<EdifactInterchangeXml\> EDIFACT でエンコードされた EDI インターチェンジの場合。 EDI 受信パイプラインは、インターチェンジを保存されたインターチェンジとして識別するために、コンテキスト プロパティ `ReuseEnvelope` も適用します。  
   
     > [!NOTE]
-    >  EDI 送信パイプラインを使用して、 \<X12InterchangeXml > または\<EdifactInterchangeXml > タグを付け、保存されたバッチとしてメッセージ。 `ReuseEnvelope` コンテキスト プロパティにより、保存されたすべてのバッチ化されたインターチェンジをサブスクライブする送信ポートを作成できます。  
+    >  EDI 送信パイプラインを使用して、 \<X12InterchangeXml\>または\<EdifactInterchangeXml\>保存されたバッチとしてメッセージを識別するタグです。 `ReuseEnvelope` コンテキスト プロパティにより、保存されたすべてのバッチ化されたインターチェンジをサブスクライブする送信ポートを作成できます。  
   
 4.  受信パイプラインは、メッセージ XML ファイルを MessageBox にドロップします。  
   
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 いない場合を参照してください。[を BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)です。  
   
-2.  プロジェクトを右クリックし、順にポイント**追加**、クリックして**既存項目の**します。 移動**\<ドライブ >: \Program Files\Microsoft BizTalk Server 2009\XSD_Schema\EDI\X12\00401**、テスト メッセージに対応するスキーマをダブルクリックします。  
+2.  プロジェクトを右クリックし、順にポイント**追加**、クリックして**既存項目の**します。 移動**\<ドライブ\>: \Program Files\Microsoft BizTalk Server 2009\XSD_Schema\EDI\X12\00401**、テスト メッセージに対応するスキーマをダブルクリックします。  
   
     > [!NOTE]
     >  EDI スキーマは、XSD_SchemaEDI フォルダーに展開されていないが、実行、 **MicrosoftEdiXSDTemplates.exe**スキーマを既定のフォルダーに解凍する XSD_SchemaEDI フォルダー内のファイルです。  
@@ -145,7 +145,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  受信ポートの名前を指定し、をクリックして**受信場所**コンソール ツリーでします。  
   
-3.  **[新規作成]**をクリックします。  
+3.  **[新規]** をクリックします。  
   
 4.  名前、受信場所は、select**ファイル**の**型**、順にクリック**構成**です。  
   
@@ -313,4 +313,4 @@ ms.lasthandoff: 09/20/2017
  [バッチ EDI インターチェンジを受信した保持](../core/preserving-a-received-batched-edi-interchange.md)   
  [チュートリアル (X12): バッチ EDI インターチェンジの送信](../core/walkthrough-x12-sending-batched-edi-interchanges.md)   
  [チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)   
- [EDI インターチェンジの送信チュートリアル (X12):](../core/walkthrough-x12-sending-edi-interchanges.md)
+ [チュートリアル (X12): EDI インターチェンジの送信](../core/walkthrough-x12-sending-edi-interchanges.md)

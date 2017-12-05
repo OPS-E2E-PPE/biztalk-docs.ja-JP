@@ -17,11 +17,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 256731dbb6194aa1962d62ec9fdbe58a0fd60e03
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd5f7bb392a6fbd4e1b4d64139fc38cc5a71aa38
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent (BizTalk Server サンプル)
 このサンプルでは、一連の MQSeries プロパティ値を XML ファイルから読み取って、メッセージに適用する、パイプライン コンポーネントの作成方法を示します。  
@@ -31,9 +31,9 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
   
--   *\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
+-   *\<サンプル パス\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
   
--   *\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
+-   *\<サンプル パス\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを開きます。  
   
-    2.  ディレクトリに移動\<サンプル パス > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent です。  
+    2.  ディレクトリに移動\<サンプル パス\>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent です。  
   
     3.  次のように入力します。  
   
@@ -125,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  ドロップダウン リストをクリックして、**厳密な名前キー ファイルを選択して** をクリックし、**参照**です。  
   
-    4.  参照\<サンプル パス > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk をクリックして**開く**です。  
+    4.  参照\<サンプル パス\>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk をクリックして**開く**です。  
   
 4.  先ほど作成したパイプライン コンポーネントに既に追加されて、**プリアセンブル**このパイプライン プロジェクトのステージ。 このコンポーネントがまだ追加されていない場合は、次の手順に従って追加する必要があります。  
   
@@ -148,7 +148,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  BizTalk 管理コンソールを開きます。  
   
-    2.  クリックして展開**BizTalk グループ [\<servername >:\<管理データベース >]**を展開し、をクリックし、**アセンブリ**フォルダーです。  
+    2.  クリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**を展開し、をクリックし、**アセンブリ**フォルダーです。  
   
          展開されたパイプライン アセンブリは、の下に表示する必要があります、**アセンブリ**フォルダーです。  
   
@@ -186,7 +186,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。  
   
-2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーは、通常の名前**qm _**\<*machine_name*> 場所*machine_name*お使いのコンピューターの名前を指定します。  
+2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーは、通常の名前**qm _**\<*machine_name* \>場所*machine_name*お使いのコンピューターの名前を指定します。  
   
 3.  右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。  
   

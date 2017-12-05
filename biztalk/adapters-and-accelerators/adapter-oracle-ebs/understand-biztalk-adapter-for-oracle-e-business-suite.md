@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1fa12862600cd1d1d5661e278b87c82cc45697b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 342ffbd77434a470e3afdd10ae1c708c8734e85c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="understand-biztalk-adapter-for-oracle-e-business-suite"></a>Oracle E-business Suite の BizTalk アダプターを理解します。
 ## <a name="biztalk-adapter-pack-features"></a>BizTalk Adapter Pack の機能
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **Lob の間でのエクスペリエンス、統一された**です。 アダプターは、WCF を使用して標準化および[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、でき、したがって一貫した環境での任意の LOB システムへのアクセスを取得します。  
   
- 前述のように、アダプターは、上に組み込ま、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 この SDK には、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションで使用できる統合アダプターを構築するための共通の基本が用意されています。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] WCF チャネルとして統合アダプターを公開することにより、アダプター戦略の Microsoft サービスの戦略を揃えて配置します。 詳細については、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]を参照してください、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ドキュメント。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]と共にドキュメントがインストールされている、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通常  \<*インストール ドライブ*>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents です。  
+ 前述のように、アダプターは、上に組み込ま、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 この SDK には、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションで使用できる統合アダプターを構築するための共通の基本が用意されています。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] WCF チャネルとして統合アダプターを公開することにより、アダプター戦略の Microsoft サービスの戦略を揃えて配置します。 詳細については、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]を参照してください、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ドキュメント。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]と共にドキュメントがインストールされている、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通常  \<*インストール ドライブ*\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents です。  
 
 ## <a name="overview-of-the-oracle-ebs-adapter"></a>Oracle EBS アダプターの概要
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite を WCF サービスとして公開します。 アダプターのクライアントは、アダプターと SOAP メッセージを交換することで、Oracle E-business Suite での操作を実行できます。 アダプターは、SOAP メッセージを処理し、操作を実行する適切な ODP.NET 呼び出しします。 アダプターは、SOAP メッセージの形式でクライアントに、Oracle E-business Suite から応答を返します。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="more-good-stuff"></a>便利な機能  
   
--    [アダプターを使用して Oracle E-business Suite への接続します。](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-the-adapter.md)
+-    [アダプターを使用して Oracle E-Business Suite に接続する](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-the-adapter.md)
 
 - [参照、検索、および Oracle E-business Suite のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-oracle-e-business-suite-metadata.md)
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
 
 - [Oracle データベース アダプターでトランザクションを処理します。](../../adapters-and-accelerators/adapter-oracle-database/handle-transactions-with-the-oracle-database-adapter.md) 
 
-- [Oracle EBS アダプターのクライアントの機能](../../adapters-and-accelerators/adapter-oracle-ebs/features-for-oracle-ebs-adapter-clients.md) 
+- [Oracle EBS アダプター クライアント用の機能](../../adapters-and-accelerators/adapter-oracle-ebs/features-for-oracle-ebs-adapter-clients.md) 
 
 -   [BizTalk Adapter for Oracle E-business Suite の主要な機能](../../adapters-and-accelerators/adapter-oracle-ebs/key-features-in-biztalk-adapter-for-oracle-e-business-suite.md)  
   

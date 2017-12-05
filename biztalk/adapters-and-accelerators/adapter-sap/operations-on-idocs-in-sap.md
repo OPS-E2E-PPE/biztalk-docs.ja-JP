@@ -19,11 +19,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6a70e6bc4062a6c2865c9adb8f76d68a078e965
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cebc9e3fb8382fecf7791d14d52a21ac96f77cde
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-idocs-in-sap"></a>SAP での Idoc に対する操作
 Idoc は、SAP が非同期的に SAP および SAP 以外のシステムと通信するためにサポートする標準の EDI のようなドキュメントです。 Idoc は、取引先の SAP システムまたは外部プログラムの間の販売注文、たとえばなどの「ビジネス」ドキュメントの送受信に使用されます。  
@@ -109,7 +109,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
     > [!NOTE]
     >  使用して、**受信**操作、複数の Idoc を受信することもできます。  
   
--   **ReceiveIdoc**です。 この操作は、弱い型指定のスキーマを使用して SAP システムから IDOC を受信する場合に使用します。 この操作のスキーマは、制御レコードとのデータ レコードから成る 1 つの文字列フィールドとして Idoc を公開します。 この操作は、下にある XML メッセージの文字列として Idoc を受信、 \<idocData > タグです。  
+-   **ReceiveIdoc**です。 この操作は、弱い型指定のスキーマを使用して SAP システムから IDOC を受信する場合に使用します。 この操作のスキーマは、制御レコードとのデータ レコードから成る 1 つの文字列フィールドとして Idoc を公開します。 この操作は、下にある XML メッセージの文字列として Idoc を受信、 \<idocData\>タグ。  
   
      これは、SAP システムによって公開されているすべての Idoc に表示される 1 つの操作は、ルートで使用可能な**IDOC**内のノード、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。  
   
@@ -117,7 +117,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
   
 -   かどうか「型指定された」に設定すると、XML スキーマは厳密に型指定 IDOC の受信中にします。 (このメッセージのスキーマは受信操作から確認できます。 注スキーマが Idoc の別の異なるもの)。 これには、XML IDOC が生成されます。  
   
--   かどうかは"String"に設定して、IDOC の受信データが返されます、文字列値として。 (このメッセージのスキーマは ReceiveIdoc 操作から確認できます。) これは、結果の XML メッセージ、 \<idocData > タグです。  
+-   かどうかは"String"に設定して、IDOC の受信データが返されます、文字列値として。 (このメッセージのスキーマは ReceiveIdoc 操作から確認できます。) これは、結果の XML メッセージ、 \<idocData\>タグ。  
   
 -   場合は、メッセージ スキーマである"Rfc"に設定では、操作のため、RFC IDOC_INBOUND_ASYNCHRONOUS または INBOUND_IDOC_PROCESS、受信した IDOC のバージョンに応じて、RFC (または tRFC) スキーマと一致します。 このバインディングのプロパティを指定する場合は、IDOC を受信する IDOC_INBOUND_ASYNCHRONOUS または INBOUND_IDOC_PROCESS RFC を使用する必要があります。 最初の 2 つのオプションでは、アダプターは、この RFC を内部的に使用します。 このオプションでは、IDOC を受信するのに明示的にこの RFC を使用するだけです。  
   

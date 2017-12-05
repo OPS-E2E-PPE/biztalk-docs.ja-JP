@@ -12,17 +12,17 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53e20b7d94e44006df1042c9ca202e296508a5d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86fd882f89caee27211c03a4e13e617fe12faef1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenario-overview"></a>テスト シナリオの概要
 このトピックでは、テスト アプリケーションの概要テスト手法の使用、およびリストの説明、主要業績評価指標 (Kpi) は、ロード テスト中にキャプチャされます。  
   
 ## <a name="test-application"></a>アプリケーションをテストします。  
- 要求-応答の同期アプリケーションは、パフォーマンスの比較に使用された[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]するには、HYPER-V で実行されている[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]物理ハードウェア上で実行されています。 このアプリケーションは、のパフォーマンスを説明するために使用された、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]低待機時間の調整されているソリューションです。 低待機時間のメッセージングとは、クライアントが要求を送信し、非常に短い間隔に含まれる応答メッセージが必要ですが、オンライン バンキングなどの特定のシナリオの重要な (たとえば\<3 秒)。  
+ 要求-応答の同期アプリケーションは、物理ハードウェア上で実行されている BizTalk Server に HYPER-V で実行されている BizTalk Server のパフォーマンスの比較に使用されました。 このアプリケーションは、のパフォーマンスを説明するために使用された、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]低待機時間の調整されているソリューションです。 低待機時間のメッセージングは、クライアントが要求を送信し、非常に短い間隔 (たとえば < 3 秒) に含まれる応答メッセージが必要ですが、オンライン バンキングなどの特定のシナリオにとって重要です。  
   
  次の図は、使用する高レベルなアーキテクチャを示しています。 Visual Studio Team System (VSTS) 2008 のテストをロード エージェントに負荷を生成する、WCF トランスポートを使用するカスタムのテスト クラスが呼び出される[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]このシナリオでのアプリケーションが公開される要求-応答受信場所が Wcf-basichttp を使用しています。 VSTS 2008 Test Load Agent は、柔軟で提供されるため、テスト用クライアントとして使用された、メッセージの数を構成する機能を含めの総数に対する同時スレッドは、送受信要求間スリープ状態の間隔の送信です。  
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **1 秒間 – オーケストレーション完了**によって報告された、 **xlang/s Orchestrations (BizTalkServerApplication) \Orchestrations が 1 秒あたりに完了した**パフォーマンス モニター カウンターです。 このカウンターは、のスループットのよい尺度、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。  
   
--   **メッセージ処理の % \< 3 秒 –**テスト中に 3 秒以内に処理されるメッセージの合計数を記録します。  
+-   **< 3 秒 – メッセージ処理の %**テスト中に 3 秒以内に処理されるメッセージの合計数を記録します。  
   
  VSTS 2008 ロード テストは、すべてのテスト全体で一貫した負荷の生成に使用されました。 次のテストの実行設定と、ロード パターンは、各テストのロード プロファイルを調整するテスト中に変更されました。  
   
@@ -215,7 +215,7 @@ ms.lasthandoff: 09/20/2017
   
  **SQL server:**  
   
--   [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]使用可能なインストール ガイドに従ってがインストールされている[http://go.microsoft.com/fwlink/?LinkId=141021](http://go.microsoft.com/fwlink/?LinkId=141021)です。  
+-   SQL Server のインストールで使用可能なインストール ガイドに従って[http://go.microsoft.com/fwlink/?LinkId=141021](http://go.microsoft.com/fwlink/?LinkId=141021)です。  
   
 -   [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]使用の SAN Lun 構成いた次の表に従ってします。 Lun を可能なディスク I/O の競合を減らすために次のようにわたってを区切った、データベースとログ ファイル。  
   
@@ -245,7 +245,7 @@ ms.lasthandoff: 09/20/2017
     |Logs_BizTalkDatabases|その他の BizTalk データベースのログ ファイル|20|20|64 KB|  
     |なし|MSDTC ログ ファイル|5|5|なし|  
   
--   [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]使用可能なインストール ガイドに従ってがインストールされている[http://go.microsoft.com/fwlink/?LinkId=128383](http://go.microsoft.com/fwlink/?LinkId=128383)です。  
+-   BizTalk Server のインストールで使用可能なインストール ガイドに従って[http://go.microsoft.com/fwlink/?LinkId=128383](http://go.microsoft.com/fwlink/?LinkId=128383)です。  
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ベスト プラクティス アナライザー (BPA) ツールを使用して、システムが構成されていたとプラットフォームの検証を実行します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] BPA は、「 [http://go.microsoft.com/fwlink/?LinkId=67150](http://go.microsoft.com/fwlink/?LinkId=67150)です。  
   
@@ -259,9 +259,9 @@ ms.lasthandoff: 09/20/2017
  このベース VHD がコピーし、環境全体で展開されているすべての HYPER-V 仮想マシンの基礎として使用します。 開始する前にシステムのセキュリティ識別子をリセットするベース VHD イメージで Sysprep が実行された[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]または[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バイナリは、システムに配置されました。  
   
 > [!NOTE]  
->  後に Sysprep を実行している[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]をインストールしてに構成されているサーバーは、Sysprep 応答ファイルを使用して実現でき、スクリプトが付属[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。 これらのサンプル スクリプトがで使用するために設計された[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]の 32 ビットおよび 64 ビット バージョンにインストールされている[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]のみです。 詳細については、次を参照してください。、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]オンライン ドキュメントを参照します。  
+>  BizTalk Server をインストールし、サーバー上で構成した後、Sysprep を実行しているが、Sysprep 応答ファイルおよび BizTalk Server で提供するスクリプトを使用して実現できます。 これらのサンプル スクリプトがの 32 ビットおよび 64 ビット バージョンにインストールされている BizTalk Server で使用できるように設計[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]のみです。 詳細については、BizTalk Server のオンライン マニュアルを参照してください。  
   
  Windows の無人セットアップ リファレンスについては、「 [http://go.microsoft.com/fwlink/?LinkId=142364](http://go.microsoft.com/fwlink/?LinkId=142364)です。  
   
 ## <a name="see-also"></a>参照  
- [付録 c: BizTalk Server と SQL Server の HYPER-V のサポート](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)
+ [付録 C: BizTalk Server と SQL Server の Hyper-V のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)

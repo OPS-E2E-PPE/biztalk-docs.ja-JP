@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eaa41714cbe5c3baba85e82f2992ff72544c425c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7cfae474407daa7dd3c0b95db3fed076a581cf1c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-offsets-for-amount-validation"></a>時間検証のためのオフセットを設定します。
 メッセージ型 MT102、MT103、や MT103PLUS 金額のフィールドの使用に関する規則は、それぞれの検証ポリシーのルールによって検証されます。 金額のフィールドは、厳密に一致することができます。 または金額の範囲内であることを検証することができます。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  メモ帳などのテキスト エディターを開きます。  
   
-2.  エディターでは、オフセットの割合を設定するメッセージの検証ポリシーの場所を参照します。 たとえば、メッセージ検証ポリシー用あります MT103 メッセージの種類、MT103_Validation_Policy.xml で*\<ドライブ >*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン> メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン > \Category 1\MT103 です。 検証ポリシーを開きます。  
+2.  エディターでは、オフセットの割合を設定するメッセージの検証ポリシーの場所を参照します。 たとえば、メッセージ検証ポリシー用あります MT103 メッセージの種類、MT103_Validation_Policy.xml で*\<ドライブ\>*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT \<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Category 1\MT103 です。 検証ポリシーを開きます。  
   
 3.  ポリシーで IsValidSettlementAmount で MT102 および MT102PLUS メッセージまたは IsValidInterbankSettledAmount MT103 メッセージ検索します。  
   

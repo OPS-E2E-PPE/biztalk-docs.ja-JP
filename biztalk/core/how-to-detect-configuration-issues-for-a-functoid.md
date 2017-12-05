@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 322a97aba4ec5e02cf754106df30b0c9f0088e1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8561156091c992e9329ef7d9627589eff9e0ed6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-detect-configuration-issues-for-a-functoid"></a>Functoid の構成に関する問題を検出する方法
 マップを操作しているときに、Functoid やリンクの構成に関する問題が発生する可能性があります。 BizTalk マッパーでは、ビジュアル化機構を使用して、functoid の構成に関連する問題をすばやく識別できます。 この視覚的で、functoid アイコンで警告の注釈として表示されます (の例: ![Functoid IntelliSense](../core/media/mapper-functoidintellisense.gif "Mapper_FunctoidIntelliSense"))、リレーションシップ ビューでします。 このトピックでは、Functoid の構成の問題を検出する方法について説明します。  
@@ -38,11 +38,11 @@ ms.lasthandoff: 09/20/2017
   
          ![Functoid の構成のエラー検出](../core/media/errordetectionfunctoid.gif "ErrorDetectionFunctoid")  
   
-    -   Functoid をダブルクリックします。 **構成\<Functoid > Functoid**  ダイアログ ボックスには、入力パラメーターの警告アイコンが表示されます。 これは、選択した Functoid の入力パラメーターが構成されていないことを示します。  
+    -   Functoid をダブルクリックします。 **構成\<Functoid\> Functoid**  ダイアログ ボックスには、入力パラメーターの警告アイコンが表示されます。 これは、選択した Functoid の入力パラメーターが構成されていないことを示します。  
   
          次の図は、"Addition" Functoid の入力パラメーターに関するエラー情報を示しています。  
   
          ![Functoid が構成されていないときに表示される警告](../core/media/configure-input-parameters-warningicon.gif "Configure_input_parameters_WarningIcon")  
   
 ## <a name="see-also"></a>参照  
- [BizTalk マッパーの強化された機能を使用](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [BizTalk マッパーの強化された機能の使用](../core/using-enhanced-features-in-biztalk-mapper.md)

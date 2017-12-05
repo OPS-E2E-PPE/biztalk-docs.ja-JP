@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07a160c428ac9df0f75b219af5bafb0727205cbd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ba1d7e105a1ea09724950f4c0f8b778e45dad46
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-sql-adapter"></a>SQl アダプタでのインストールに関する問題をトラブルシューティングします。
 > [!IMPORTANT]
@@ -51,9 +51,9 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-register-the-adapter-binding"></a>アダプターのバインドを登録するには  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
-     このパスに\<バージョン > は .NET Framework のバージョン。  
+     このパスに\<バージョン\>.NET Framework のバージョンです。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   

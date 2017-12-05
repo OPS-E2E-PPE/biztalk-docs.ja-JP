@@ -15,24 +15,24 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f02ec8a33fdb050462860efc6c6a0cd5f8fa5650
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b71c3adbcbe5aaaea4d9fa4bf25b2aa4191c580
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="querying-real-time-aggregated-data"></a>リアルタイム集計データに対するクエリの実行
 BAM プライマリ インポート データベースで動的に作成された SQL ビューでは、リアルタイム集計 (RTA) データに対してクエリを実行できます。  
   
  クエリでのビューの名前は次のようになります。  
   
- **bam _\<**  *ViewName* **> _\<**  *RTAName* **> _RTAView**  
+ **bam _\<**  *ViewName*  **\>_\<**  *RTAName*  **\>_RTAView**  
   
  場所  
   
- **\<***ViewName*  **>**  BAM 定義 XML 内の View 要素の Name 属性は、関連する Microsoft Excel ウィザードに入力されたビュー名と同じです。  
+ **\<***ViewName*  **\>**  BAM 定義 XML 内の View 要素の Name 属性は、関連する Microsoft Excel ウィザードに入力されたビュー名と同じです。  
   
- **\<***RTAName*  **>** は一意である BAM が生成される BAM 定義 XML 内の RealTimeAggregation 要素の Name 属性に基づいて、ビュー名。  
+ **\<***RTAName*  **\>** は一意である BAM が生成される BAM 定義 XML 内の RealTimeAggregation 要素の Name 属性に基づいて、ビュー名。  
   
  リアルタイム集計データに対してクエリを実行する際は、次の条件に特に注意してください。  
   
@@ -48,4 +48,4 @@ BAM プライマリ インポート データベースで動的に作成され�
   
 ## <a name="see-also"></a>参照  
  [スケジュールされているクエリを実行する集計データ](../core/querying-scheduled-aggregated-data.md)   
- [BAM データを照会します。](../core/querying-bam-data.md)
+ [BAM データのクエリ](../core/querying-bam-data.md)

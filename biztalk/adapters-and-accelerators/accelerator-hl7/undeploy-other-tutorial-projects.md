@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b00e829ad569790b257e1d5f0c16290cca68d176
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e5c4d7e20fc4d8e7c8bea724625dde770b4aca2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="undeploy-other-tutorial-projects"></a>その他のチュートリアルのプロジェクトを展開解除します。
 BizTalk Accelerator 用 HL7 に展開するときに ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) チュートリアル、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]チュートリアルのアセンブリ ファイル、構成データベース (BizTalk 管理データベースとも呼ばれます) と、グローバル アセンブリ キャッシュに格納します。 別に実行している場合[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]チュートリアル、および展開されたそのチュートリアルで作成したアセンブリときに、発生するエラー、バッチ処理のチュートリアルの 3 つの部分でアセンブリをテストします。 1 つのメッセージ スキーマを一度に 1 つのみ展開できます可能性があります。  
@@ -33,7 +33,7 @@ BizTalk Accelerator 用 HL7 に展開するときに ([!INCLUDE[btaBTAHL71.3abbr
   
 3.  BizTalk エクスプ ローラーを開きの展開を解除し、をクリックするアセンブリを右クリックして**Undeploy**です。  
   
- アセンブリの展開解除の詳細についてを参照してください「展開解除、アセンブリを使用して BizTalk エクスプ ローラー」[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+ アセンブリの展開解除の詳細については、「展開解除するアセンブリを使用して BizTalk エクスプ ローラー」BizTalk Server ヘルプを参照してください。  
   
 ## <a name="see-also"></a>参照  
- [バッチ処理のチュートリアルを使用する準備をしています](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)
+ [バッチ処理のチュートリアルを使用するための準備](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)

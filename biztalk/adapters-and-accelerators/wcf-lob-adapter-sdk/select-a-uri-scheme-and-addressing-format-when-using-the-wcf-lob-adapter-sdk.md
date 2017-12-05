@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6df8145fac74761fee4aabd34ff01d708b646c12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9990facf6a23f4abea37ee9ce9758a7333eaca61
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="select-a-uri-scheme-and-addressing-format-when-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用する場合に、URI スキームとアドレス指定の形式を選択します。
 Uniform Resource Identifier () は、Web サービスのようにまたはの場合、アダプターを使用して開発リソースを一意に識別、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、実行するアクションと同様に、システムに接続します。 このセクションでは、エンドポイント アドレスとアダプターのアクションを記述する URI を作成する方法の推奨事項を提供します。  
@@ -44,11 +44,11 @@ Uniform Resource Identifier () は、Web サービスのようにまたはの場
 ## <a name="connecting-to-the-target-system"></a>ターゲット システムに接続します。  
  接続文字列では、次の構文があります。  
   
- **\<スキーム >://[userinfo"@"]\<LOB 接続文字列 >**  
+ **\<スキーム\>://[userinfo"@"]\<LOB 接続文字列\>**  
   
  たとえば、注文システム (ビジネス アプリケーションのサンプル行)、contoso カタログに接続する可能性があります、次を使用します。  
   
- **northwind.contoso.v1.0://\<servername > ですか?カタログ = Contoso & Integrated Security = True**  
+ **northwind.contoso.v1.0://\<servername\>しますか?カタログ = Contoso & Integrated Security = True**  
   
  また、ユーザー名とパスワードおよびその他の重要な資格情報を含む URI 内の省略可能な機関情報を提供することができます。 ただし、このセキュリティ上のリスクが発生できます。  
   

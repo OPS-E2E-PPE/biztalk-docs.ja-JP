@@ -13,16 +13,16 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8ffc18f5d1bf5680586e63a5310454426b26c83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cc187a96e7252fad7edacba10b7a3dcc39c1b33
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="file-inventory-for-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションのファイル一覧
-このセクションでは、ビジネス プロセス管理ソリューションのサブディレクトリおよびソース ファイルについて説明します。 ビジネス プロセス管理ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM です。 次の表では、このパスを交換する前に説明\<インストール ディレクトリ >。  
+このセクションでは、ビジネス プロセス管理ソリューションのサブディレクトリおよびソース ファイルについて説明します。 ビジネス プロセス管理ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM です。 次の表では、このパスを交換する前に説明\<インストール ディレクトリ\>です。  
   
- 内のファイル\<インストール ディレクトリ >  
+ 内のファイル\<インストール ディレクトリ\>  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -32,14 +32,14 @@ ms.lasthandoff: 09/20/2017
 |ReplacePKToken.wsf|ReplacePKToken VBScript 用の Windows スクリプト ファイルです。|  
 |SetupBPM.bat|公開キーを作成し、公開キーへの参照を更新し、ソリューションをコンパイルします。 ソリューションを展開する方法の詳細については、次を参照してください。[ビジネス プロセス管理ソリューションを展開する](../core/deploying-the-business-process-management-solution.md)です。|  
   
- 内のファイル\<インストール ディレクトリ > \BAM  
+ 内のファイル\<インストール ディレクトリ\>\BAM  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |BAMServiceOrder.xls|BAM データの Excel スプレッドシートです。|  
 |BAMServiceOrder.xml|BAM データ項目の型を定義するスキーマです。|  
   
- 内のファイル\<インストール ディレクトリ > \Bindings  
+ 内のファイル\<インストール ディレクトリ\>\Bindings  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 |OrderBrokerAppBindings-test.xml|テスト版のバインド ファイル、 **OrderBrokerApp**アプリケーションです。|  
 |OrderBrokerAppBindings.xml|用のバインド ファイル、 **OrderBrokerApp**アプリケーションです。|  
   
- 内のファイル\<インストール ディレクトリ > \CableProvisioningSystemClient  
+ 内のファイル\<インストール ディレクトリ\>\CableProvisioningSystemClient  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 |CPSClient.cs|クライアントのソースです。 含まれています、 **OrderHandlerWrapper**クラスのコード。|  
 |OrderException.cs|定義するクラスの c# ファイル、 **OrderException**です。|  
   
- 内のファイル\<インストール ディレクトリ > \CableProvisioningSystemServer  
+ 内のファイル\<インストール ディレクトリ\>\CableProvisioningSystemServer  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
 |CableProvisioningSystemServer.csproj.user|Visual Studio プロジェクトのユーザー オプション ファイルです。|  
 |CPSServer.cs|サーバーのソースです。|  
   
- 内のファイル\<インストール ディレクトリ > \CSRWebApp  
+ 内のファイル\<インストール ディレクトリ\>\CSRWebApp  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
 |CSRMainForm.aspx.cs|フォームの C# コードです。|  
 |Web.Config|フォームの構成ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \CSRWebApp\App_WebReferences\SouthridgeVideo_OrderBroker  
+ 内のファイル\<インストール ディレクトリ\>\CSRWebApp\App_WebReferences\SouthridgeVideo_OrderBroker  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
 |orderbrokerorch_orderport.discomap|生成されたファイルです。|  
 |orderbrokerorch_orderport.wsdl|WSDL ファイルを**OrderBroker** web サービスとして表示されます。|  
   
- 内のファイル\<インストール ディレクトリ > \FacilitiesSimulator  
+ 内のファイル\<インストール ディレクトリ\>\FacilitiesSimulator  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -93,14 +93,14 @@ ms.lasthandoff: 09/20/2017
 |FacilitiesSimulatorForm.cs|Facilities Simulator の C# コードです。|  
 |FacilitiesSimulatorForm.resx|リソース ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \HistoryDB  
+ 内のファイル\<インストール ディレクトリ\>\HistoryDB  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |CreateDatabase.cmd|履歴データベースを作成する SQL ファイルを実行するファイルです。|  
 |SouthridgeVideoHistory.sql|履歴データベースを作成する SQL コマンドです。|  
   
- 内のファイル\<インストール ディレクトリ > \IOperationsSystem  
+ 内のファイル\<インストール ディレクトリ\>\IOperationsSystem  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -108,7 +108,7 @@ ms.lasthandoff: 09/20/2017
 |IOperationsSystem.csproj|C# のプロジェクト ファイルです。|  
 |IOperationsSystem.csproj.user|Visual Studio プロジェクトのユーザー オプション ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \IOrderHandler  
+ 内のファイル\<インストール ディレクトリ\>\IOrderHandler  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -116,14 +116,14 @@ ms.lasthandoff: 09/20/2017
 |IOrderHandler.cs|インターフェイスの定義、 **OrderHandler**です。|  
 |IOrderHandler.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Maps  
+ 内のファイル\<インストール ディレクトリ\>\Maps  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |Maps.btproj|BizTalk プロジェクト ファイルです。|  
 |Order_To_SQLUpdateStatus.btm|状態を更新するために注文をメッセージに変換するマップです。|  
   
- 内のファイル\<インストール ディレクトリ > \MessagingSchemas  
+ 内のファイル\<インストール ディレクトリ\>\MessagingSchemas  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -133,7 +133,7 @@ ms.lasthandoff: 09/20/2017
 |OrderStatusEnvelope.xsd|注文の状態メッセージのエンベロープを定義するスキーマです。|  
 |SQLUpdateStatus.xsd|SQL の状態更新メッセージのエンベロープを定義するスキーマです。|  
   
- 内のファイル\<インストール ディレクトリ > \OperationsClient  
+ 内のファイル\<インストール ディレクトリ\>\OperationsClient  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -142,14 +142,14 @@ ms.lasthandoff: 09/20/2017
 |OpsClient.cs|操作クライアントの C# コードです。|  
 |OpsExceptions.cs|操作の例外を定義する C# コードです。|  
   
- 内のファイル\<インストール ディレクトリ > \OperationsHandler  
+ 内のファイル\<インストール ディレクトリ\>\OperationsHandler  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |OperationsHandler.csproj|操作ハンドラの C# プロジェクト ファイルです。|  
 |OpsHandler.cs|C# コード、 **OpsHandler**です。 によって使用される、 **OpsClient**操作システムの要求を行うことです。|  
   
- 内のファイル\<インストール ディレクトリ > \OperationsServer  
+ 内のファイル\<インストール ディレクトリ\>\OperationsServer  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -157,7 +157,7 @@ ms.lasthandoff: 09/20/2017
 |OperationsServer.csproj|操作サーバーの C# プロジェクト ファイルです。|  
 |OpsServer.cs|インスタンスを提供する操作サーバーの c# コード、 **OpsHandler**オブジェクト。|  
   
- 内のファイル\<インストール ディレクトリ > \OpsAdapter  
+ 内のファイル\<インストール ディレクトリ\>\OpsAdapter  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -165,14 +165,14 @@ ms.lasthandoff: 09/20/2017
 |Register_Ops_Adapter.vbs|Ops アダプタを登録する VBScript です。|  
 |SetupOpsAdapter.bat|Ops アダプタを設定するバッチ ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \OpsAdapter\IOpsAIC  
+ 内のファイル\<インストール ディレクトリ\>\OpsAdapter\IOpsAIC  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |IOpsAIC.cs|インターフェイスを定義するための c# コード ファイル、**初期化**と**Execute** Ops アダプタによって呼び出されるメソッド。|  
 |IOpsAIC.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \OpsAdapter\OpsAdapterMgmt  
+ 内のファイル\<インストール ディレクトリ\>\OpsAdapter\OpsAdapterMgmt  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
 |TransmitHandler.xsd|Ops アダプタの C# ソース ファイルです。|  
 |TransmitLocation.xsd|Ops アダプタの C# ソース ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \OpsAdapter\OpsTxAdapter  
+ 内のファイル\<インストール ディレクトリ\>\OpsAdapter\OpsTxAdapter  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -193,7 +193,7 @@ ms.lasthandoff: 09/20/2017
 |OpsTransmitter.cs|Ops アダプタの C# ソース ファイルです。|  
 |OpsTxAdapter.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Orchestrations\CableOrderActions  
+ 内のファイル\<インストール ディレクトリ\>\Orchestrations\CableOrderActions  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -205,28 +205,28 @@ ms.lasthandoff: 09/20/2017
 |Complete.odx|**完了**オーケストレーションが注文処理ステージで使用します。|  
 |Validate.odx|**検証**オーケストレーションが注文処理ステージで使用します。|  
   
- 内のファイル\<インストール ディレクトリ > \Orchestrations\CableOrderStage1  
+ 内のファイル\<インストール ディレクトリ\>\Orchestrations\CableOrderStage1  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |CableOrder1.odx|最初の注文処理ステージのオーケストレーションです。|  
 |CableOrderStage1.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Orchestrations\CableOrderStage2  
+ 内のファイル\<インストール ディレクトリ\>\Orchestrations\CableOrderStage2  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |CableOrder2.odx|2 番目の注文処理ステージのオーケストレーションです。|  
 |CableOrderStage2.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Orchestrations\OrderBroker  
+ 内のファイル\<インストール ディレクトリ\>\Orchestrations\OrderBroker  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |OrderBroker.btproj|BizTalk プロジェクト ファイルです。|  
 |OrderBroker.odx|**OrderBroker**オーケストレーションです。|  
   
- 内のファイル\<インストール ディレクトリ > \Orchestrations\OrderManager  
+ 内のファイル\<インストール ディレクトリ\>\Orchestrations\OrderManager  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -237,7 +237,7 @@ ms.lasthandoff: 09/20/2017
 |OrderManager.btproj|BizTalk プロジェクト ファイルです。|  
 |OrderManager.odx|**OrderManager**オーケストレーションです。|  
   
- 内のファイル\<インストール ディレクトリ > \OrderBrokerMaps  
+ 内のファイル\<インストール ディレクトリ\>\OrderBrokerMaps  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -247,7 +247,7 @@ ms.lasthandoff: 09/20/2017
 |OrderBrokerMaps.btproj|BizTalk プロジェクト ファイルです。|  
 |Order_To_CSR_OrderRequest.btm|注文メッセージをカスタマー サービスの注文要求に変換するマップです。|  
   
- 内のファイル\<インストール ディレクトリ > \OrderBrokerSchemas  
+ 内のファイル\<インストール ディレクトリ\>\OrderBrokerSchemas  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -256,7 +256,7 @@ ms.lasthandoff: 09/20/2017
 |Servicing_OrderRequest.xsd|サービス システムに送信されるメッセージを定義するスキーマです。|  
 |SQLHistoryInsert.xsd|SQL 履歴メッセージのスキーマです。|  
   
- 内のファイル\<インストール ディレクトリ > \OrderBroker_Proxy  
+ 内のファイル\<インストール ディレクトリ\>\OrderBroker_Proxy  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -265,34 +265,34 @@ ms.lasthandoff: 09/20/2017
 |OrderBrokerOrch_OrderPort.asmx|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \OrderBroker_Proxy\App_Code  
+ 内のファイル\<インストール ディレクトリ\>\OrderBroker_Proxy\App_Code  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |DataTypes.cs|生成されたファイルです。|  
 |OrderBrokerOrch_OrderPort.asmx.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \OrderHandler  
+ 内のファイル\<インストール ディレクトリ\>\OrderHandler  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |OrderHandler.cs|C# コード、 **OrderHandler**オブジェクト。|  
 |OrderHandler.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Rules  
+ 内のファイル\<インストール ディレクトリ\>\Rules  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |DecodeAndValidateOrderRules.xml|ビジネス ルール エンジンのルール ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \SampleMessages  
+ 内のファイル\<インストール ディレクトリ\>\SampleMessages  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |CSR_OrderRequest.xml|サンプルのカスタマー サービスの注文要求です。|  
 |OrderEnvelope.xml|サンプルの注文エンベロープです。|  
   
- 内のファイル\<インストール ディレクトリ > \SchemaClasses  
+ 内のファイル\<インストール ディレクトリ\>\SchemaClasses  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -300,7 +300,7 @@ ms.lasthandoff: 09/20/2017
 |InternalMessages.cs|ソリューションのコンポーネント間で通信するために使用するメッセージを定義するクラスの C# コードです。|  
 |SchemaClasses.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Schemas  
+ 内のファイル\<インストール ディレクトリ\>\Schemas  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -308,7 +308,7 @@ ms.lasthandoff: 09/20/2017
 |OrderPropertySchema.xsd|注文メッセージ用の昇格させたプロパティ スキーマです。|  
 |Schemas.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Scripts  
+ 内のファイル\<インストール ディレクトリ\>\Scripts  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -321,7 +321,7 @@ ms.lasthandoff: 09/20/2017
 |regac.bat|グローバル アセンブリ キャッシュ (GAC) のアセンブリを登録するバッチ ファイルです。|  
 |SouthridgeVideoSSOConfiguration.xml|初期 SSO 構成値を含むファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \ServiceLevelTracking  
+ 内のファイル\<インストール ディレクトリ\>\ServiceLevelTracking  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -331,7 +331,7 @@ ms.lasthandoff: 09/20/2017
 |ServiceLevelTracking.cs|アクティビティの抽象基本クラスを定義する C# コードです。|  
 |ServiceLevelTracking.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \Utilities  
+ 内のファイル\<インストール ディレクトリ\>\Utilities  
   
 |ファイル|Description|  
 |----------|-----------------|  

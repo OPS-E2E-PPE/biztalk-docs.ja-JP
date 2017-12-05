@@ -12,14 +12,14 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6a78b90a3cebb2b812ef68b21c8ea2f99eb0981
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 691a10671c4c8ff5f2ff77065455c100784ddd0e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-edi-and-as2-status-reporting"></a>EDI および AS2 状態レポートに関する既知の問題
-ここでは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の EDI 状態レポートに関する既知の問題について説明します。  
+このトピックでは、EDI の状態が BizTalk Server のレポートに関する既知の問題について説明します。  
   
 ## <a name="batch-status-reporting-data-may-not-be-updated-if-the-batch-orchestration-is-stopped-outside-of-the-partner-agreement-manager"></a>バッチ オーケストレーションがパートナー アグリーメント マネージャーの外部で停止されるとバッチ状態レポート データが更新されない  
  バッチ オーケストレーション インスタンスは、パーティの [EDI のプロパティ] ダイアログ ボックスの [バッチ] ページで非アクティブ化できます。 この方法でバッチ オーケストレーション インスタンスを非アクティブ化した場合、そのバッチの状態レポート データが更新されます。 ただし、別の方法でバッチ オーケストレーションを停止した場合 (たとえば、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの [グループの概要] ページのいずれかのクエリ ページからオーケストレーションを停止するなど)、状態レポート データが更新されず、バッチ状態レポートの内容が最新のものではなくなる可能性があります。 たとえば、バッチ オーケストレーション インスタンスが非アクティブ化されているにもかかわらず、状態レポートではバッチがアクティブであると表示される可能性があります。  
@@ -63,9 +63,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="status-reporting-will-not-work-after-an-upgrade-if-the-bam-tools-are-not-configured"></a>BAM ツールが構成されていない場合、アップグレード後に状態レポートが動作しない  
  EDI および AS2 状態レポートが動作するためには、BAM ツールが構成されている必要があります。 [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] のインストールを後続のバージョンにアップグレードするとき、アップグレード プロセスで BAM ツールを構成しないと、アップグレードしたインストールで EDI/AS2 状態レポート機能が正しく動作しません。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にアップグレードした後、状態レポートを使用するには、アップグレードを実行する前に必ず BAM ツールを構成します。  
+ BizTalk Server にアップグレードした後、状態レポートを使用する場合は、アップグレードを実行する前に、BAM ツールが構成されていることを確認します。  
   
- アップグレードを実行した後、状態レポートが動作しない場合は、アップグレード前に BAM ツールを構成したかどうかをアップグレード ログで確認します。 場合は、BAM ツールを構成してにある EdiStatusReportingActivityDefs.xml ファイルに含まれている BusinessMessageJournal BAM アクティビティを配置する、 *\<ドライブ >*: \Program Files\Microsoft[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+ アップグレードを実行した後、状態レポートが動作しない場合は、アップグレード前に BAM ツールを構成したかどうかをアップグレード ログで確認します。 場合は、BAM ツールを構成してにある EdiStatusReportingActivityDefs.xml ファイルに含まれている BusinessMessageJournal BAM アクティビティを配置する、 *\<ドライブ\>*: \Program Files\MicrosoftBizTalk Server です。  
   
 ## <a name="disabling-transaction-set-storage-affects-an-activated-batch-but-enabling-storage-does-not"></a>トランザクション セットの格納を無効にした場合はアクティブなバッチが影響を受けるが、格納を有効にした場合は影響を受けない  
  バッチ処理オーケストレーション インスタンスがアクティブになっているときにトランザクション セットの格納を無効にすると、変更は直ちに適用されます。 トランザクション セットの格納が有効なとき、BizTalk Server は、そのバッチのトランザクション セットを格納しますが、格納が無効になると、トランザクション セットを格納しません。 トランザクション セットの格納を無効にするには、[EDI のプロパティ] ダイアログ ボックスの [全般] ペインで、[レポート用にトランザクション セット/ペイロードを格納する] プロパティをオフにします。  
@@ -89,12 +89,12 @@ ms.lasthandoff: 09/20/2017
  この問題を回避するには、[エンコードされた送信 AS2 メッセージを否認不可データベースに保存する] プロパティまたは [ポート処理後の要求メッセージ] プロパティをオフにします。 [ポート処理後の要求メッセージ] をオフにして、AS2 の追跡で本文情報をその他の AS2 状態レポート用の情報と共に取得できるようにする方法をお勧めします。  
   
 ## <a name="edi-and-as2-message-context-properties-are-not-available-after-upgrading-to-biztalk-2009"></a>BizTalk 2009 にアップグレードした後、EDI および AS2 メッセージ コンテキスト プロパティを使用できない  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にアップグレードした後、アップグレード前に受信したすべての EDI および AS2 メッセージの状態レポートにコンテキスト プロパティが表示されません。  アップグレード後に受信したメッセージでは、コンテキスト プロパティが正しく表示されます。  
+ BizTalk Server にアップグレードすると、コンテキスト プロパティは表示されません状態レポートのアップグレードが行われる前に、の受信 EDI または AS2 メッセージにします。  アップグレード後に受信したメッセージでは、コンテキスト プロパティが正しく表示されます。  
   
- 以前のバージョンの BizTalk Server では、EDI および AS2 コンテキスト プロパティ コレクションはメッセージの一部として保存されないので、アップグレード後は使用できなくなります。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にアップグレードすると、AS2 コンテキスト プロパティはメッセージの一部として保存されますが、EDI コンテキスト プロパティはメッセージの一部として保存されません。  
+ 以前のバージョンの BizTalk Server では、EDI および AS2 コンテキスト プロパティ コレクションはメッセージの一部として保存されないので、アップグレード後は使用できなくなります。 AS2 メッセージの一部としてコンテキスト プロパティが格納されている BizTalk Server にアップグレードした後ただし EDI コンテキスト プロパティはありません。  
   
 ## <a name="interchange-date-for-received-documents-may-display-the-wrong-year-in-status-reports"></a>状態レポートに表示される受信ドキュメントのインターチェンジの日付で年が正しくない場合がある  
- 受信ドキュメントで YYMMDD 形式で日付が指定されている場合、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では以下のロジックを使用して年の値を特定します。  
+ 場合は、受信したドキュメントでは、YYMMDD 形式で日付が指定されて、BizTalk Server は、次のロジックを使って年の値を決定します。  
   
 -   YY が 75 以上である場合、年は 19YY 年として表示されます。  
   

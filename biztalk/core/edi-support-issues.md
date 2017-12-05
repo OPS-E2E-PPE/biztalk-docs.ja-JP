@@ -12,14 +12,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 033d40f069d52759c0014a75287370a7006c9f72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8684a2adadeb67352a6589d693a5e76261a98849
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-support-issues"></a>EDI のサポートに関する問題点
-ここでは、[!INCLUDE[prague](../includes/prague-md.md)] でどのように EDI と AS2 の処理がサポートされているかについて説明します。  
+このセクションでは、BizTalk Server が EDI および AS2 の処理をサポートする方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

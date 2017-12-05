@@ -15,16 +15,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1c12936f2883bfdbcdcd80d300d2ab5a9ff58d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 404beaeb617f7a6c0c5e3fc4ddc40126e6b97990
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-schemas"></a>スキーマの操作
 指定されたスキーマ[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]は、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Worldwide 銀行間財務通信 (SWIFT) FIN メッセージの社会の XSD 表記します。 各メッセージの種類は、SWIFT ヘッダーとトレーラーの SWIFT (インターチェンジの形式) を含む独自のスキーマがします。 このスキーマは、SWIFT メッセージの送受信に十分です。 これらのスキーマは、フラット ファイル FIN 構造体の詳細な XML 表現を提供する、区切り文字および位置指定レコードの一意の組み合わせ。  
   
- SWIFT のほとんどのお客様は、SWIFT FIN メッセージの比較的小さなサブセットを使用します。 これらの顧客のソリューションを実装するには、BizTalk スキーマ プロジェクトを作成することができます (で示したように[第 2 章: 新しいスキーマ プロジェクトに追加する](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)A4SWIFT チュートリアルの)。 関連するメッセージのスキーマを追加 (MT*xxx*.xsd) から\\\ files \microsoft BizTalk Accelerator for SWIFT\<バージョン > MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン > \X は xyy と FIN メッセージ型の最初の桁カテゴリ x\MT xyy ディレクトリは、メッセージの 3 桁のメッセージの種類です。  
+ SWIFT のほとんどのお客様は、SWIFT FIN メッセージの比較的小さなサブセットを使用します。 これらの顧客のソリューションを実装するには、BizTalk スキーマ プロジェクトを作成することができます (で示したように[第 2 章: 新しいスキーマ プロジェクトに追加する](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)A4SWIFT チュートリアルの)。 関連するメッセージのスキーマを追加 (MT*xxx*.xsd) から\\\ files \microsoft BizTalk Accelerator for SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Category x\MT xyy ディレクトリ、x は FIN メッセージの種類の最初の桁、xyy は、メッセージの 3 桁のメッセージの種類。  
   
  いくつかのスキーマは、同じプロジェクトに追加できます。 管理の容易性を維持するためには、プロジェクトごとに 20 件以上のメッセージ スキーマを追加しないでください。 また、基本クラスと共通のスキーマをプロジェクトに追加する必要があります。 基本クラスと共通のスキーマが既にある場合は、それらを展開するのではなく、そのアセンブリへの参照を作成する必要があります。 このセクションでは、これらのスキーマについて説明します。 メッセージ スキーマは、SWIFT ネットワークに送信されたメッセージと SWIFT から受信したメッセージの両方が使用する準備ができています。  
   
@@ -62,8 +62,8 @@ ms.lasthandoff: 09/20/2017
   
  このセクションには、次のトピックが含まれています。  
   
--   [ベースと一般的なスキーマ](../../adapters-and-accelerators/accelerator-swift/base-and-common-schemas.md)  
+-   [基本的なスキーマと一般的なスキーマ](../../adapters-and-accelerators/accelerator-swift/base-and-common-schemas.md)  
   
--   [SWIFT ヘッダーおよびトレーラ スキーマ](../../adapters-and-accelerators/accelerator-swift/swift-header-and-trailer-schemas.md)  
+-   [SWIFT ヘッダーおよびトレーラー スキーマ](../../adapters-and-accelerators/accelerator-swift/swift-header-and-trailer-schemas.md)  
   
 -   [SWIFT スキーマの名前付け規則](../../adapters-and-accelerators/accelerator-swift/swift-schema-naming-conventions.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d94a2b02b654983701323703edcc1b3ba3fcca13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3d796608a4cc323ccf5e1a8bdee7420c5bab259
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-creating-a-certification-authority"></a>手順 1: 証明機関の作成
 ここでは、証明書サービス [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] コンポーネントをインストールします。 このコンポーネントを使用して、セキュリティで保護された通信を Contoso 組織と Fabrikam 組織の間で確立するために必要な証明書を生成します。 各取引先は、通信のための秘密暗号化証明書と、識別のための秘密署名証明書を所有します。 さらに、パートナーは 3A2 PIP (Partner Interface Process) の実装時に、セキュリティで保護された通信を確立するために公開キー証明書をお互いに共有します。  
@@ -99,9 +99,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-2.  コマンド プロンプトでに移動**\<ドライブ >: \Program Files\MicrosoftBizTalk\<バージョン > Accelerator for rosettanet \sdk**、キーを押します**Enter**です。  
+2.  コマンド プロンプトでに移動**\<ドライブ\>: \Program Files\MicrosoftBizTalk\<バージョン\>Accelerator for rosettanet \sdk**、キーを押します**を入力してください**.  
   
-3.  コマンド プロンプトで次のように入力します。 **CertWizard/Rootkey"\<ドライブ >: \Certs\Contoso-FabrikamCA.cer"**、キーを押します**Enter**です。  
+3.  コマンド プロンプトで次のように入力します。 **CertWizard/Rootkey"\<ドライブ\>: \Certs\Contoso-FabrikamCA.cer"**、キーを押します**Enter**です。  
   
     > [!IMPORTANT]
     >  Contoso のコンピューターと Fabrikam のコンピューターの両方で、この手順を実行します。  
@@ -126,4 +126,4 @@ ms.lasthandoff: 09/20/2017
     >  必要に応じて、Root Certificate Contoso-FabrikamCA.cer を "現在のユーザー\信頼されたルート証明機関" にインストールしてください。  
   
 ## <a name="see-also"></a>参照  
- [手順 2: パブリックおよびプライベート証明書の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)
+ [手順 2: パブリック証明書とプライベート証明書の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b27bb8f88686fe1726aed16113ce227347151996
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb5a1778fac8577efb3c3c21a10b16f47a026397
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sapconnection-class-in-the-sap-adapter"></a>SAP アダプターで SAPConnection クラス
 次のセクションではメソッドとプロパティの一覧表示、 **SAPConnection**クラスです。 これは、SAP アプリケーション サーバーへの ADO.NET 接続を表します。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 |**ChangeDatabase(string)**|サポートされていません。|  
 |**Close()**|SAP システムへの接続を閉じます。|  
 |**CreateCommand()**|この接続に関連付けられている新しい SAPCommand を返します。|  
-|**GetSchema()**|検出された SAP テーブルの一覧を取得します。 検出されたすべてのテーブルは XML ファイル SAPDiscoveredObjects.xml で利用できます。 ファイルはある\<インストール ドライブ >: \program files \microsoft Shared\Adapters\SAP です。|  
+|**GetSchema()**|検出された SAP テーブルの一覧を取得します。 検出されたすべてのテーブルは XML ファイル SAPDiscoveredObjects.xml で利用できます。 ファイルはある\<インストール ドライブ\>: \program files \microsoft Shared\Adapters\SAP です。|  
 |**GetSchema(string)**|コレクション名に基づくスキーマを取得します。 コレクション名"Tables"をサポートしています。|  
   
 |名前|Description|  

@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca41923dc4c392959af9f19cf3b7c32f6bfe7c20
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da3d2dc400c031ab5febda1568cb18ce5180366b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a>方法: 3.0 uddi サービスを発行レジストリ
 ## <a name="goal"></a>[目標]  
@@ -136,7 +136,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-itinerary-model-to-test-the-uddi-service-publication"></a>UDDI サービスの公開をテストする itinerary モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -272,8 +272,8 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: キーの検索をバインド UDDI を使用してサービス エンドポイントを解決するには](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+-   [方法: UDDI バインド キー検索を利用し、サービス エンドポイントを解決する](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
   
--   [方法: UDDI カテゴリの検索を使用してサービス エンドポイントを解決するには](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
+-   [方法: UDDI カテゴリ検索を利用し、サービス エンドポイントを解決する](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)

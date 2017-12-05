@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63a6a79a12949148f77363d7e4cffd2b2c321d00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e14fd3f433609da7748197a8b67112d815da153
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>方法: ESB 入り口を使用して、メッセージの検証
 ## <a name="goal"></a>[目標]  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  メモ帳で、Invalid.xml を開きます。  
   
-4.  変更 **\<ns0:requestType > 10\</ns0:requestType > に\<ns0:requestType > 10\</ns0:requestType >**です。  
+4.  変更 **\<ns0:requestType\>10\</ns0:requestType\>に\<ns0:requestType\>10\</ns0:requestType\>** .  
   
 5.  Utf-8 として Invalid.xml を保存し、メモ帳を閉じます。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>ESB itinerary DSL モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリック**ItineraryLibrary**、 をポイント**追加**、クリックして**新しい行程**です。  
   
@@ -145,9 +145,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>作成し、ESB 入り口を構成します。  
   
-1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[prague](../includes/prague-md.md)]** 、順にクリック**BizTalk Server 管理**.  
+1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント**BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**、順に展開**Microsoft.Practices.ESB**です。  
+2.  BizTalk Server 管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**の順に展開および**Microsoft.Practices.ESB**です。  
   
 3.  右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
   
@@ -188,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  をクリックして**OK**を閉じる、**受信場所のプロパティ** ダイアログ ボックス。  
   
-3.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、右クリックし、 **OnRamp.Itinerary.HowTo**受信場所をクリックして**を有効にする**です。  
+3.  BizTalk Server 管理コンソールを右クリックし、 **OnRamp.Itinerary.HowTo**受信場所をクリックして**を有効にする**です。  
   
 #### <a name="to-test-the-message-validation-and-itinerary-selection"></a>メッセージの検証と旅程選択範囲をテストするには  
   
@@ -216,12 +216,12 @@ ms.lasthandoff: 09/20/2017
   
 9. イベント ビューアーで、展開**Windows ログ**、クリックして**アプリケーション**です。  
   
-10. 最近のイベントを見つける場所、**ソース**は **[!INCLUDE[prague](../includes/prague-md.md)]** 、および**イベント ID**は**5719**です。  
+10. 最近のイベントを見つける場所、**ソース**は**BizTalk Server**、および**イベント ID**は**5719**です。  
   
     > [!NOTE]
     >  送信と、無効なメッセージのエラーが発生しました例外のエントリをアプリケーション イベント ログ。  
   
-11. [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、右クリックし、 **OnRamp.Itinerary.HowTo**受信場所をクリックして**を無効にする**です。  
+11. BizTalk Server 管理コンソールを右クリックし、 **OnRamp.Itinerary.HowTo**受信場所をクリックして**を無効にする**です。  
   
 12. 後に、 **OnRamp.Itinerary.HowTo**受信場所が無効になっている、右クリックし、をクリックして**削除**です。 **受信場所のことを確認して削除**ダイアログ ボックスで、をクリックして**はい**です。  
   
@@ -232,4 +232,4 @@ ms.lasthandoff: 09/20/2017
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [インストールして、動的な解決サンプルを実行します。](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)
+-   [動的解決サンプルをインストールし、実行する](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)

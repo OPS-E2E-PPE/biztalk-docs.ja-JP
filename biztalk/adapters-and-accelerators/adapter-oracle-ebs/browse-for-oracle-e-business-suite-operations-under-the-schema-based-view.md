@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e3dea968a12470498012f7dae4fb3093fc05e59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b9dedc20103787f449cc8c5ac475ef2ed2e0f82
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-schema-based-view"></a>スキーマに基づくビューの Oracle E-business Suite 操作の参照します。
 使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite で実行できる送受信の操作を参照するを使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。 このトピックでは、スキーマに基づくビューの下の送信および受信操作を参照する方法について説明します。  
@@ -67,16 +67,16 @@ ms.lasthandoff: 09/20/2017
      ![Oracle データベースのテーブルで参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/94dd4642-1178-4d88-986b-f0ad409c414c.gif "94dd4642-1178-4d88-986b-f0ad409c414c")  
   
     > [!NOTE]
-    >  場合は、テーブルには、BLOB 型の列が含まれています、CLOB、NCLOB、BFILE、アダプターも公開このような列からデータを読み取る、特定の操作します。 このような操作の名前は Read_\<LOBColName >。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターを公開、 **Read_PHOTO**操作します。 テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が数だけ公開\<LOBColName > 操作します。  
+    >  場合は、テーブルには、BLOB 型の列が含まれています、CLOB、NCLOB、BFILE、アダプターも公開このような列からデータを読み取る、特定の操作します。 このような操作の名前は Read_\<LOBColName\>です。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターを公開、 **Read_PHOTO**操作します。 テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が数だけ公開\<LOBColName\>操作します。  
     >   
-    >  同様に、テーブルに BLOB 型の列が含まれている場合、CLOB または NCLOB アダプターも公開データを更新するには、このような列の特定の操作します。 このような操作の名前は Update_\<LOBColName >。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターを公開、 **Update_PHOTO**操作します。 テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、アダプターは Update_ 数が多く公開\<LOBColName > 操作します。 BFILE 型の列には、更新操作がサポートされていないことに注意してください。  
+    >  同様に、テーブルに BLOB 型の列が含まれている場合、CLOB または NCLOB アダプターも公開データを更新するには、このような列の特定の操作します。 このような操作の名前は Update_\<LOBColName\>です。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターを公開、 **Update_PHOTO**操作します。 テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、アダプターは Update_ 数が多く公開\<LOBColName\>操作します。 BFILE 型の列には、更新操作がサポートされていないことに注意してください。  
   
 9. 展開して、**ビュー**ノードを特定のスキーマのビューの一覧を表示します。 ビューでサポートされる操作を表示する表示名をクリックして、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle データベースでのビューの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/e1893e48-065c-4642-b076-192758d103db.gif "e1893e48-065c-4642-b076-192758d103db")  
   
     > [!NOTE]
-    >  場合は、ビューには、BLOB 型の列が含まれています、CLOB、NCLOB、BFILE、アダプターも公開このような列からデータを読み取る、特定の操作します。 このような操作の名前は Read_\<LOBColName >。 たとえば、ビューには、列、ルール、BLOB の種類の場合、アダプターを公開、 **Read_RULE**操作します。 ビューに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が多く公開\<LOBColName > 操作します。 注その Update_\<LOBColName > ビューの操作はサポートされていません。  
+    >  場合は、ビューには、BLOB 型の列が含まれています、CLOB、NCLOB、BFILE、アダプターも公開このような列からデータを読み取る、特定の操作します。 このような操作の名前は Read_\<LOBColName\>です。 たとえば、ビューには、列、ルール、BLOB の種類の場合、アダプターを公開、 **Read_RULE**操作します。 ビューに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が多く公開\<LOBColName\>操作します。 注その Update_\<LOBColName\>ビューの操作はサポートされていません。  
   
 ## <a name="browsing-for-inbound-operations"></a>受信操作の参照  
  スキーマに基づくビューの 受信の操作を参照する次の手順を実行します。  

@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1762c30d6524a777a862492701ff0b8a8731a68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73cf8a832e495944ce7c891421645ae2566e3575
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="rnifsend"></a>RNIFSend
 このサンプルには、RNIF 処理用のメッセージを作成して応答側の RNIFReceive.aspx ページに送信する作業用の [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend.aspx ファイルがあります。 ASPX ページをカスタマイズして、次の操作を実行できます。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 -   検証機能の追加  
   
- このサンプルに格納*\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for \sdk\webapplication\rnifsender です。  
+ このサンプルに格納*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>\sdk\webapplication\rnifsender のアクセラレータです。  
   
 ## <a name="demonstrates"></a>使用例  
  このサンプルは、以下のような RNIF 処理用の送信メッセージを作成する方法を示します。  

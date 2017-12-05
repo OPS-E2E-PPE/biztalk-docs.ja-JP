@@ -12,14 +12,14 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffb23914964d4fd1c114818d6a616c2d57fae434
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebb7ab3abb9a4bc547d920614e1a1839a85c593b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-standards-support"></a>EDI 標準のサポート
-[!INCLUDE[prague](../includes/prague-md.md)] は、4 つのエンコード標準のデザイン時およびランタイム サポートを提供します。 次の表に、詳細情報へのリンクを含むエンコード標準の一覧を示します。  
+BizTalk Server は、4 つのエンコード標準のデザイン時およびランタイム サポートを提供します。 次の表に、詳細情報へのリンクを含むエンコード標準の一覧を示します。  
   
 |エンコード標準|業界セグメント|References|  
 |-----------------------|----------------------|----------------|  
@@ -53,14 +53,14 @@ ms.lasthandoff: 09/20/2017
   
 -   X12 では ASCII エンコードが推奨されますが、EDIFACT では UTF8 エンコードが推奨されます。  
   
- [!INCLUDE[prague](../includes/prague-md.md)] は、KEDIFACT (Korea EDIFACT) 標準をサポートしています。 KEDIFACT は、UN/EDIFACT の Message Implementation Guide に準拠し、EDIFACT に基づいて設計され、密接に関連しています。 しかし、KEDIFACT と X12/EDIFACT には違いがあります。 KEDIFACT は、KEDIFACT 固有の EDI スキーマをいくつか使用し、KECA コード ページを使用します。  
+ BizTalk Server では、KEDIFACT (Korea EDIFACT) 標準をサポートします。 KEDIFACT は、UN/EDIFACT の Message Implementation Guide に準拠し、EDIFACT に基づいて設計され、密接に関連しています。 しかし、KEDIFACT と X12/EDIFACT には違いがあります。 KEDIFACT は、KEDIFACT 固有の EDI スキーマをいくつか使用し、KECA コード ページを使用します。  
   
 ## <a name="hipaa"></a>HIPAA  
- [!INCLUDE[prague](../includes/prague-md.md)] は、X12 処理をサポートしています。また、HIPAA 処理は X12 処理から派生しているので、[!INCLUDE[prague](../includes/prague-md.md)] は HIPAA 処理もサポートしています。 このドキュメントで X12 への参照を参照してください、HIPAA 処理にも適用されます。  
+ BizTalk Server が X12、処理をサポートし、HIPAA 処理は X12 処理から派生であるために、BizTalk Server では、HIPAA 処理をサポートしています。 このドキュメントで X12 への参照を参照してください、HIPAA 処理にも適用されます。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、HIPAA 固有の追加サポートを提供します。  
   
--   バージョン 4010A1 HIPAA ドキュメント スキーマのセット。 EDI および HIPAA ドキュメント スキーマの詳細については[!INCLUDE[prague](../includes/prague-md.md)]を参照してください[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)です。  
+-   バージョン 4010A1 HIPAA ドキュメント スキーマのセット。 BizTalk Server での EDI および HIPAA ドキュメント スキーマの詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)です。  
   
 -   バージョン 5010 HIPAA ドキュメント スキーマのセット。 詳細については、次を参照してください。 [HIPAA ドキュメント スキーマ バージョン 5010](../core/hipaa-document-schema-version-5010.md)です。  
   
@@ -68,14 +68,14 @@ ms.lasthandoff: 09/20/2017
   
 -   WEDI SNIP テストの最初の 2 つのレベルのサポート: X12 構文整合性およびの要件、 [HIPAA 実装ガイド](http://go.microsoft.com/fwlink/?LinkId=77541)です。  
   
- [!INCLUDE[prague](../includes/prague-md.md)] では、BizTalk Server ネイティブ EDI 機能の一部として HIPAA サポートを提供します。 詳細については、次を参照してください。 [BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server2.md)です。  
+ BizTalk Server では、ネイティブの BizTalk Server の EDI 機能の一部として HIPAA サポートを提供します。 詳細については、次を参照してください。 [BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server2.md)です。  
   
 ## <a name="eancom"></a>EANCOM  
- [!INCLUDE[prague](../includes/prague-md.md)] は、EDIFACT 処理をサポートしています。また、EANCOM 処理は EDIFACT 処理から派生しているので、[!INCLUDE[prague](../includes/prague-md.md)] は EANCOM 処理もサポートしています。 このドキュメントで EDIFACT 処理のサポートについて記載されていれば、それは EANCOM 処理にも当てはまります。  
+ BizTalk Server が EDIFACT 処理をサポートし、EANCOM 処理は EDIFACT 処理から派生したであるために、BizTalk Server では、EANCOM 処理をサポートしています。 このドキュメントで EDIFACT 処理のサポートについて記載されていれば、それは EANCOM 処理にも当てはまります。  
   
- [!INCLUDE[prague](../includes/prague-md.md)] は、EANCOM 固有の追加サポートを提供します。  
+ BizTalk サーバーでは、EANCOM 固有の追加サポートを提供します。  
   
--   バージョン EAN94、EAN97、および EAN02 EANCOM ドキュメント スキーマのセット。 EDI および EANCOM ドキュメント スキーマの詳細については[!INCLUDE[prague](../includes/prague-md.md)]を参照してください[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)です。  
+-   バージョン EAN94、EAN97、および EAN02 EANCOM ドキュメント スキーマのセット。 BizTalk Server での EDI および EANCOM ドキュメント スキーマの詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)です。  
   
 ## <a name="see-also"></a>参照  
  [EDI メッセージの構造](../core/edi-message-structure.md)   

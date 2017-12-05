@@ -12,24 +12,24 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d2e07078f630852fc14bf8081a4bd1453a0dc7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6622d201c6f7b7d94694a77198d0eb562482489
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="implementing-the-sample"></a>このサンプルを実装します。
 サンプルを実装するには、手順に従います。  
   
-1.  SWIFT スキーマの新しいフォルダーを作成 (\<DocumentSchemaLocation > ユーティリティの構文で)。 対象の InfoPath フォームの作成または変更することは、すべてのスキーマは、ユーティリティを実行するときに、このフォルダーに配置する必要があります。  
+1.  SWIFT スキーマの新しいフォルダーを作成 (\<DocumentSchemaLocation\>ユーティリティの構文で)。 対象の InfoPath フォームの作成または変更することは、すべてのスキーマは、ユーティリティを実行するときに、このフォルダーに配置する必要があります。  
   
-2.  InfoPath フォーム MT メッセージを生成する場合、コピー **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**から**\<ドライブ: > \Program Files\MicrosoftBizTalk Accelerator 用 SWIFT\<メッセージ パックのバージョン > メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<メッセージ パックのバージョン > \Base スキーマ**SWIFT スキーマ用に作成したフォルダーにします。  
+2.  InfoPath フォーム MT メッセージを生成する場合、コピー **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**から**\<ドライブ:\> \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<メッセージ パック バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<メッセージ パック バージョン\>\Base スキーマ**フォルダーにします。SWIFT スキーマ用に作成します。  
   
 3.  しようとする InfoPath フォームを作成し、手順 1. で SWIFT スキーマ用に作成したフォルダーをすべてのスキーマをコピーします。  
   
-4.  作成または作成した InfoPath フォーム テンプレート ソリューション ファイルを保存するフォルダーを指定 (\<DestinationFolderPath > ユーティリティの構文で)。 出力フォルダーを作成しない場合、ユーティリティは作成同じパスと、コマンドラインで渡された名前を使用します。  
+4.  作成または作成した InfoPath フォーム テンプレート ソリューション ファイルを保存するフォルダーを指定 (\<DestinationFolderPath\>ユーティリティの構文で)。 出力フォルダーを作成しない場合、ユーティリティは作成同じパスと、コマンドラインで渡された名前を使用します。  
   
-5.  [オプション]-テキスト ファイルを作成\<NameOfFileContainingSchemaList > InfoPath フォームを生成するメッセージのメッセージの種類を一覧表示します。 例: メッセージの種類は MT103、MT102 などを指定できます。メッセージの名前は、このテキスト ファイルを作成する代わりにコマンドラインを使用して直接渡されます。  
+5.  [オプション]-テキスト ファイルを作成\<NameOfFileContainingSchemaList\> InfoPath フォームを生成するメッセージのメッセージの種類を一覧表示します。 例: メッセージの種類は MT103、MT102 などを指定できます。メッセージの名前は、このテキスト ファイルを作成する代わりにコマンドラインを使用して直接渡されます。  
   
 ## <a name="syntax-of-command-usage-for-formgeneratorexe"></a>FormGenerator.exe のコマンドの使用法の構文  
   

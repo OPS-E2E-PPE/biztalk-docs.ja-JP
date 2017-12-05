@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f3b2888b21c2c59b01ddaf920d55ccadb79e326
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: e403121b02ecbfee4880328747aaba3fc175a322
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-a-custom-web-part-with-oracle-e-business-suite"></a>Oracle E-business Suite でカスタム web パーツを使用する方法
 このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。 カスタム Web パーツを使用するには、次の操作を行う必要があります。  
@@ -46,19 +46,19 @@ ms.lasthandoff: 10/17/2017
   
 5.  プロジェクトで、問題に基づく、必要なコードを追加します。 特定の問題に関連するコード サンプルを参照してください「の問題に関連する追加の Web パーツ」 [SharePoint で Oracle Business Suite アダプターの使用に関する考慮事項](../../adapters-and-accelerators/adapter-oracle-ebs/considerations-using-the-oracle-business-suite-adapter-with-sharepoint.md)です。  
   
-6.  プロジェクトをビルドする。 プロジェクトの成功したビルドで CustomWebPart.dll、.dll ファイルが生成されます、\<プロジェクト フォルダー > bin/デバッグ フォルダーです。  
+6.  プロジェクトをビルドする。 プロジェクトの成功したビルドで CustomWebPart.dll、.dll ファイルが生成されます、\<プロジェクト フォルダー\>bin/デバッグ フォルダーです。  
   
 7.  **64 ビット コンピューターに対してのみ**: 次の手順を実行する前に厳密な名前で CustomWebPart.dll ファイルに署名します。 それ以外の場合、することはできません、インポート、CustomWebPart.dll では、SharePoint サイトで使用する"手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します"。 厳密な名前でアセンブリに署名する方法については、次を参照してください。[する方法: 厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/xc31ft41.aspx)です。
   
 ## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>手順 2: カスタム Web パーツを SharePoint ポータルを展開します。  
  CustomWebPart.dll ファイル (カスタム Web パーツ) で作成されるようにする、次を実行する必要があります"手順 1: カスタム Web パーツを作成する"このトピックは SharePoint ポータル上で使用。  
   
--   **CustomWebPart.dll ファイルを SharePoint Portal の bin フォルダーにコピー**: Microsoft Office SharePoint Server は、ポータルを作成、\<ルート ドライブ >: \Inetpub\wwwroot\wss\VirtualDirectories フォルダーです。 フォルダーは、各ポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1: カスタム Web パーツを作成する"に、このトピックの\<ルート ドライブ >: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number > \bin フォルダーです。 たとえば、SharePoint portal のポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、\<ドライブのルート >: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダーです。  
+-   **CustomWebPart.dll ファイルを SharePoint Portal の bin フォルダーにコピー**: Microsoft Office SharePoint Server は、ポータルを作成、\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories フォルダーです。 フォルダーは、各ポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1: カスタム Web パーツを作成する"に、このトピックの\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>\bin フォルダーです。 たとえば、SharePoint portal のポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダーです。  
   
     > [!TIP]
     >  使用して、SharePoint portal のフォルダーの場所を検索する別の方法は、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ (**開始** > **実行** >  **inetmgr**)。 検索で、SharePoint portal、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ ([コンピューター名] > の Web サイト > [ポータル名])、右クリックし、クリック**プロパティ**で、ショートカット メニューです。 SharePoint portal の [プロパティ] ダイアログ ボックスをクリックして、**ホーム ディレクトリ**、タブをクリックし、**ローカル パス**ボックス。  
   
--   **Web.config ファイルに安全なコントロール エントリを追加**: CustomWebPart.dll ファイルを使用する別のコンピューターに、複数のユーザーが、ために、ファイルを"safe"としてを宣言する必要があります SharePoint portal フォルダーにある web.config ファイルを開くためには、\<ルート ドライブ >: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number >。 下にある、`<SafeControls>`セクションで、web.config ファイルの次の安全なコントロール エントリを追加します。  
+-   **Web.config ファイルに安全なコントロール エントリを追加**: CustomWebPart.dll ファイルを使用する別のコンピューターに、複数のユーザーが、ために、ファイルを"safe"としてを宣言する必要があります SharePoint portal フォルダーにある web.config ファイルを開くためには、\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>です。 下にある、`<SafeControls>`セクションで、web.config ファイルの次の安全なコントロール エントリを追加します。  
   
     -   **32 ビット コンピューターで。**  
   
@@ -77,7 +77,7 @@ ms.lasthandoff: 10/17/2017
 ## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します。  
  SharePoint ポータルで使用できるようにする、Microsoft Office SharePoint Server Web パーツ ギャラリー、カスタムの Web パーツを追加する必要があります。 そのためには次を行います。  
   
-1.  SharePoint 3.0 サーバーの全体管理を開始します。 をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft Office Server**、クリックして**SharePoint 3.0 サーバーの全体管理**.  
+1.  SharePoint 3.0 サーバーの全体管理を開始します。 をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Office Server**、クリックして**SharePoint 3.0 サーバーの全体管理**.  
   
 2.  左側のナビゲーション ウィンドウでの共有サービス プロバイダー (SSP) カスタム Web パーツを追加する名前をクリックします。  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 10/17/2017
   
 4.  [サイト設定] ページで、をクリックして**Web パーツ**下にある、**ギャラリー**列です。  
   
-5.  Web パーツ ギャラリー ページで、カスタム Web パーツをギャラリーを追加するをクリックして**新規**です。 この時点でカスタム Web パーツでは、Web パーツ ギャラリー ページで使用できません。  
+5.  Web パーツ ギャラリー ページで、カスタム Web パーツをギャラリーを追加する をクリックして**新規**です。 この時点でカスタム Web パーツでは、Web パーツ ギャラリー ページで使用できません。  
   
 6.  [新しい Web パーツ] ページで、検索**CustomWebPart** (カスタムの Web パーツの名前) の一覧で、左側のチェック ボックスをオンにし、をクリックして**ギャラリー**ページの上部です。 これが追加されます、 **CustomWebPart** Web パーツ ギャラリー ページで入力します。  
   

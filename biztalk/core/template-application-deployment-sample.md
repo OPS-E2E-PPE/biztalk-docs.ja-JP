@@ -17,11 +17,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f32e9432800249e6cbc64d36e281fb564648f78
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 315a685f0e289d60e3db9dfbe77bae5a7e2b19f0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="template-application-deployment-sample"></a>Template (アプリケーションの展開サンプル)
 このトピックでは、Template サンプルを使用してアプリケーションを展開する方法について説明します。  
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストール フォルダーに格納されています  
   
- *\<サンプル パス >*\Application Deployment\Template  
+ *\<パスのサンプル\>*\Application Deployment\Template  
   
  前に説明したように、サンプルには以下の 2 つのファイルが含まれています。  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
      例:  
   
-     ログ ファイルの設定 ="*\<サンプル パス >*\ApplicationDeployment\Templates\SampleLogOut.txt"  
+     ログ ファイルの設定 ="*\<サンプル パス\>*\ApplicationDeployment\Templates\SampleLogOut.txt"  
   
 ### <a name="to-create-a-new-application"></a>新しいアプリケーションの作成  
   

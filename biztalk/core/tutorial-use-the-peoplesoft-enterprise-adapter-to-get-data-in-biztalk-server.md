@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 823bd5739ac58d8b63f79ee15102cf44f3d82c7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 510ee984688d218e2c83b4e70dcdf737cd5566e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-retrieve-data-from-peoplesoft-enterprise"></a>チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用した PeopleSoft Enterprise からのデータの取得
 BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft システムに対してクエリを実行し、そのクエリの結果を返すことができます。 ここでは、この機能を示す SDK サンプルについて説明します。  
@@ -163,7 +163,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
   
 1.  ダブルクリックして**LOCATIONService_1.xsd**ソリューション エクスプ ローラーでスキーマ エディターでファイルを開く。  
   
-2.  右クリックし、 **\<スキーマ >**スキーマ エディターでをクリックしてノード**プロパティ**ノードのプロパティを表示します。  
+2.  右クリックし、 **\<スキーマ\>**スキーマ エディターでをクリックしてノード**プロパティ**ノードのプロパティを表示します。  
   
 3.  選択**取得**で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。 これから生成されるサンプルのドキュメント インスタンスを生成するときにそのように実行する、**取得**スキーマのノードです。  
   
@@ -180,7 +180,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
   
 8.  ソリューション エクスプ ローラーで LOCATIONService_1.xsd を右クリックし、をクリックして**インスタンスの生成**を指定した場所にドキュメント インスタンスを生成します。  
   
-9. 右クリックし、 **\<スキーマ >**スキーマ エディターでをクリックしてノード**プロパティ**ノードのプロパティを表示します。  
+9. 右クリックし、 **\<スキーマ\>**スキーマ エディターでをクリックしてノード**プロパティ**ノードのプロパティを表示します。  
   
 10. 選択 (**既定)**で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。  
   
@@ -267,4 +267,4 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 10. ファイル アダプターが、結果セットを含むメッセージを指定の出力フォルダーに書き込みます。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル: BizTalk アダプターを使用して for PeopleSoft Enterprise](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)
+ [チュートリアル: BizTalk Adapter for PeopleSoft Enterprise の使用](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)

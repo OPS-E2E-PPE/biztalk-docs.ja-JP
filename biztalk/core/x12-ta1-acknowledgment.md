@@ -12,16 +12,16 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8547175461732e41248e1e94bf961f95e655890f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f6a3de45744b40335999c1471165ff851ec60664
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="x12-ta1-acknowledgment"></a>X12 TA1 確認
 X12 TA1 技術確認では、アドレス受信者によるインターチェンジ ヘッダーおよびトレーラの処理状態が報告されます。 X12 でエンコードされたメッセージの ISA および IEA が有効な場合は、他のコンテンツの状態に関係なく、肯定 TA1 確認が送信されます。 ISA および IEA が無効な場合は、TA1 確認がエラー コードと共に送信されます。  
   
- X12 TA1 受信確認は、x12 _ に準拠している\<バージョン番号 > >_ta1.xsd スキーマです。 TA1 確認は、ISA/IEA エンベロープ内で送信されます。 ISA および IEA は、他のインターチェンジと違いはありません。  
+ X12 TA1 受信確認は、x12 _ に準拠している\<バージョン番号\>>_ta1.xsd スキーマです。 TA1 確認は、ISA/IEA エンベロープ内で送信されます。 ISA および IEA は、他のインターチェンジと違いはありません。  
   
  TA1 確認のインターチェンジ内のセグメントを次の表に示します。  
   

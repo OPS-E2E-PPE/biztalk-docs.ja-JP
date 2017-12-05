@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f62dc38185f9235dd7d2e08629df4099d7ec4f6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd6abeeb04521e95b32b4d6007dcc7f1f532bdbb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースを移動する方法
 ここでは、BAM プライマリ インポート データベースを他のサーバーに移動する手順について説明します。 エンド ツー エンドのシナリオの観点から BAM プライマリ インポート データベースの移動にも 2 つの主要な手順が含まれます。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 ###  <a name="BKMK_UpdateDB"></a>新しいサーバー名で BizTalk データベースを更新するには  
   
-1.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] が動作しているコンピューターで、次のフォルダーを参照します。  
+1.  BizTalk Server を実行するコンピューター上には、次のフォルダーを参照してください。  
   
     -   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が 64 ビット バージョンの Windows Server にインストールされています。  
   
@@ -117,7 +117,7 @@ ms.lasthandoff: 09/20/2017
   
 ###  <a name="BKMK_Config"></a>BAM ポータルの Web.config ファイルを更新するには  
   
-1.  実行するコンピューターに[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、下にある Web.config ファイルを更新**\<ドライブ >: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config**です。Web.config の次のセクションではサーバーおよびデータベース名を更新します。  
+1.  BizTalk Server を実行するコンピューター上には、下にある Web.config ファイルを更新**\<ドライブ\>: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config**です。Web.config の次のセクションではサーバーおよびデータベース名を更新します。  
   
     ```  
     <appSettings>  
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/20/2017
     </appSettings>  
     ```  
   
-2.  実行するコンピューターに[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、下にある Web.config ファイルを更新**\<ドライブ >: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config**です。Web.config の次のセクションではサーバーおよびデータベース名を更新します。  
+2.  BizTalk Server を実行するコンピューター上には、下にある Web.config ファイルを更新**\<ドライブ\>: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config**です。Web.config の次のセクションではサーバーおよびデータベース名を更新します。  
   
     ```  
     <appSettings>  

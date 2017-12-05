@@ -12,18 +12,18 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f66fa78b1efb8bd6850e64ba002ecd8e1cb91f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 03897ce3bd74329a19d85d48b3704f551122d272
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="as2-context-properties"></a>AS2 のコンテキスト プロパティ
-次の 5 種類のコンテキスト プロパティが [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の AS2 メッセージに適用されます。  
+5 つの種類のコンテキスト プロパティは、BizTalk Server で AS2 メッセージに適用されます。  
   
 -   EdiIntProperties.xsd スキーマ内のコンテキスト プロパティ  
   
--   [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 内部のコンテキスト プロパティ  
+-   BizTalk Server に内部のコンテキスト プロパティ  
   
 -   BizTalk MIME 内部のコンテキスト プロパティ  
   
@@ -96,4 +96,4 @@ ms.lasthandoff: 09/20/2017
 |SenderQualifier|string|EDI インターチェンジからのインターチェンジ送信者修飾子です。 このプロパティは、AS2 のエンコード中にメッセージから読み取られ、AS2 のインターチェンジ アクティビティを報告するために使用されます。|  
   
 ## <a name="see-also"></a>参照  
- [開発と BizTalk Server AS2 ソリューションの構成](../core/developing-and-configuring-biztalk-server-as2-solutions.md)
+ [BizTalk Server AS2 ソリューションの開発と構成](../core/developing-and-configuring-biztalk-server-as2-solutions.md)

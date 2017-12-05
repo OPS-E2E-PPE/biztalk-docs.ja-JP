@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20b0f8db3f1b7549f6189b348b7353d6dac159a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ba487bcd5d6d245c979dec903613465ae54f8d9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-performance-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターのパフォーマンスに関するをトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性があるパフォーマンスの問題を解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
  **解決策**  
   
- .NET インストール\<*バージョン*> (x64) 64 ビット コンピューターにします。  
+ .NET インストール\<*バージョン*\> (x64) 64 ビット コンピューターにします。  
   
 ## <a name="see-also"></a>参照  
 [Oracle のトラブルシューティングを行うデータベース adapter.md](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-the-oracle-database-adapter.md)

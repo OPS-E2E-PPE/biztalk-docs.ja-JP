@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3421e2e6cfb5c76252bcb48d63f55eb5f1ecdb7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba7f93eae8866212546f5daa3b9ed1a5b653c983
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-schemas-as-a-web-service"></a>BizTalk Web サービス公開ウィザードを使用してスキーマを Web サービスとして公開する方法
 BizTalk Web サービス公開ウィザードを使用して、スキーマを Web サービスとして公開することができます。  
@@ -88,19 +88,19 @@ BizTalk Web サービス公開ウィザードを使用して、スキーマを W
     > [!NOTE]
     >  対象となる名前空間とルート要素名の同じ組み合わせは、要求 SOAP ヘッダーとして 1 度、応答 SOAP ヘッダーとして一度だけ追加できます。  
   
-9. **Web サービス プロジェクト**] ページの [、**プロジェクトの場所**テキスト ボックスに、プロジェクトの場所を入力します。 既定の場所を受け入れることができます (http://localhost/\<*project_name*>)、プロジェクトの場所を入力するかをクリックして**参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
+9. **Web サービス プロジェクト**] ページの [、**プロジェクトの場所**テキスト ボックスに、プロジェクトの場所を入力します。 既定の場所を受け入れることができます (http://localhost/ <*project_name*>)、プロジェクトの場所を入力するかをクリックして**参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
   
     -   **既存のプロジェクトを上書きします。** : このオプションは、プロジェクトの場所が既に存在する場合にのみ使用できます。 このオプションを選択した場合と同じ場所に発行することのみできます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
   
     -   **Web サービスへの匿名アクセスを許可します。** : このオプションでは、作成した仮想ディレクトリに匿名アクセスを追加します。 既定では、仮想ディレクトリは、その親仮想ディレクトリまたは Web サイト (最上位の仮想ディレクトリである場合) から、アクセス権限を継承します。  
   
-    -   **BizTalk を作成する場所を受信します。** このオプションでは、生成された各 .asmx ファイルに対応する SOAP アダプターの受信ポートと受信場所が自動的に作成されます。 別の受信場所が既に存在する場合、受信場所は置き換えられません。 SOAP アダプターを解決する形式を使用して、受信場所"/\<*仮想ディレクトリ名*>/\<*オーケストレーション namespace_typename_portname*> .asmx"です。 このオプションの選択後、受信ポートと場所を生成するアプリケーションを選択します。  
+    -   **BizTalk を作成する場所を受信します。** このオプションでは、生成された各 .asmx ファイルに対応する SOAP アダプターの受信ポートと受信場所が自動的に作成されます。 別の受信場所が既に存在する場合、受信場所は置き換えられません。 SOAP アダプターを解決する形式を使用して、受信場所"/\<*仮想ディレクトリ名*\>/\<*オーケストレーション namespace_typename_portname* \>.asmx"です。 このオプションの選択後、受信ポートと場所を生成するアプリケーションを選択します。  
   
         > [!NOTE]
-        >  プロジェクトの場所には、別のサーバーを指定することもできます。 別のサーバーに Web サービスを発行するとしてプロジェクト名を入力 **http://\<*servername*>/\<*project_name*> * *。  
+        >  プロジェクトの場所には、別のサーバーを指定することもできます。 別のサーバーに Web サービスを発行するとしてプロジェクト名を入力 **http://&lt です*servername*>/<*project_name*> * *。  
   
         > [!NOTE]
-        >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに発行するときは、URL に Web サイトのポート番号を含める: http://localhost:8080/\<*project_name*>。  
+        >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに発行するときは、URL に Web サイトのポート番号を含める: http://localhost:8080/<*project_name*>。  
   
         > [!NOTE]
         >  ウィザードを使用して受信場所を作成する場合は、既定値が多く使用されます。 受信および送信パイプラインの既定値は**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**と**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**です。 公開された Web サービスを通じて受信するメッセージが特別なパイプライン処理 (たとえば、検証、相関関係、または受信/送信マップ)、必要なかどうか、送信の設定し、受信パイプラインをする必要があります**Microsoft.BizTalk.DefaultPipelines.XMLReceive**、 **Microsoft.BizTalk.DefaultPipelines.XMLSend**、またはカスタム パイプラインにします。  

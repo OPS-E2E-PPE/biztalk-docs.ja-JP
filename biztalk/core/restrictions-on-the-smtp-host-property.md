@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42173fa0ccb01b3ced42965af74e1fcc01d12aba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 465946f15d11f087995b8000231796c5e204c077
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="restrictions-on-the-smtp-host-property"></a>SMTP ホストのプロパティに関する制限事項
 SMTP ホストのプロパティは、BizTalk Server からメッセージを送信する際に SMTP アダプタによって使用される SMTP サーバーを指定する文字列です。  
@@ -28,11 +28,11 @@ SMTP ホストのプロパティは、BizTalk Server からメッセージを送
   
 -   このプロパティは、アダプタ ハンドラ レベル、エンドポイント レベル、またはその両方の場所で構成する必要があります。  
   
--   SMTP サーバーのプロパティは、次の文字を含めることはできません: ' ~! @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< > /, ?;  
+-   SMTP サーバーのプロパティは、次の文字を含めることはできません: ' ~! @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> /, ?;  
   
 -   SMTP サーバー名は 256 文字以内で指定する必要があります。  
   
  SMTP アダプタでは、上記の規則を使用して、デザイン時に常に SMTP ホスト名を検証します。 また、メッセージが SMTP アダプタを使用して動的ポート経由で送信される場合は、実行時に SMTP ホスト名を検証します。  
   
 ## <a name="see-also"></a>参照  
- [SMTP アダプタの構成時の制限事項](../core/restrictions-when-configuring-the-smtp-adapter.md)
+ [SMTP アダプター構成時の制限事項](../core/restrictions-when-configuring-the-smtp-adapter.md)

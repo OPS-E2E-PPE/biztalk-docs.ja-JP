@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 577ded3a225acd8b3f95372075103ab37dfba854
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0ef4a2fb99d423f7c7ccb08cec58c3c49928e1ed
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-the-properties-of-an-affiliate-application"></a>関連アプリケーションのプロパティを更新する方法
 MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーション プロパティを更新できます。 この作業を実行するには、関連管理者である必要があります。 更新できるフィールドを示す XML ファイルの例を次に示します。  
@@ -71,9 +71,9 @@ MMC スナップインまたはここで示すコマンドを使用すると、X
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ >**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – updateapps\<アプリケーション ファイル名 >**ここで、アプリケーション ファイル名は、XML ファイルです。  
+3.  型**ssomanage – updateapps\<アプリケーション ファイル名\>**ここで、アプリケーション ファイル名は、XML ファイルです。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

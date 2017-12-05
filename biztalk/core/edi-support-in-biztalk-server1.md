@@ -12,14 +12,14 @@ caps.latest.revision: "37"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b5edfa2eccfeac9a4d4192b2189877081ddf25a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e8351420ed8d7815944c3ae619420137a8a61df
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-support-in-biztalk-server"></a>BizTalk Server における EDI のサポート
-ここでは、EDI の一般的な概要と、[!INCLUDE[prague](../includes/prague-md.md)] での EDI のサポートについて説明します。  
+このトピックでは、EDI および BizTalk Server が EDI をサポートする方法の簡単な概要を説明します。  
   
 ## <a name="introduction-to-edi"></a>EDI の概要  
  電子データ交換 (EDI) は、ビジネスの取引先間でデータを電子的に交換するために最も広く使用されている方法です。 EDI は、主としてメッセージ指向型のプロセスです。 ドキュメントは、バッチ処理されたトランザクション セットを含むことができるフラット ファイルとして実装されます。 バッチ インターチェンジには複数のグループを含むことができ、各グループには複数のトランザクション セットまたはメッセージを含むことができます。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 >  EDI メッセージは、トランスポートと区別されます。 EDI 標準では、メッセージ トランスポートについての規定はないため、EDI メッセージはさまざまな方法で送信できます。  
   
 ## <a name="how-edi-is-implemented-in-biztalk-server"></a>BizTalk Server での EDI の実装方法  
- [!INCLUDE[prague](../includes/prague-md.md)] には、EDI のサポートを提供するネイティブ機能が含まれています。 EDI は製品に組み込まれています。これは、追加ではありません、アダプターやアクセラレータなどです。  
+ BizTalk Server には、EDI のサポートを提供するネイティブ機能が含まれています。 EDI は製品に組み込まれています。これは、追加ではありません、アダプターやアクセラレータなどです。  
   
  **インターチェンジの処理**  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
   
 -   複数のパーティがバッチ インターチェンジをサブスクライブしている場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は各パーティにバッチのコピーを送信します。  
   
- **取引先アグリーメント**  
+ **取引先契約**  
   
  取引先は、取引先とのアグリーメントを相互に定義します。このアグリーメントは、BizTalk Server 管理コンソールで定義された一連のプロパティです。 これらのパーティのプロパティと、送信と受信のポートおよび場所のプロパティによって、受信側と送信側の EDI 処理が決まります。 取引先アグリーメントの詳細については、次を参照してください。[取引先アグリーメント](../core/trading-partner-agreement.md)です。  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDI に固有の状態レポートを提供します。 これらの状態レポートには、インターチェンジに関連付けられた確認を含め、EDI ドキュメント交換トランザクションの包括的な状態が含まれます。  
   
 ## <a name="edi-components-in-biztalk-server"></a>BizTalk Server の EDI コンポーネント  
- EDI 処理に使用される Microsoft [!INCLUDE[prague](../includes/prague-md.md)] コンポーネントには、次のものが含まれます。  
+ EDI 処理に使用する Microsoft BizTalk Server コンポーネントを以下に示します。  
   
 -   EDI ドキュメントの処理に必要なアイテム (パイプライン、オーケストレーション、スキーマなど) を含む BizTalk EDI アプリケーション。  
   
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
 -   スキーマ リポジトリには、X12、EDIFACT、HIPAA X12N 4010A XSD、EANCOM、および管理スキーマがあります。 詳細については、次を参照してください。 [EDI ドキュメント スキーマのサポート](../core/edi-document-schema-support.md)です。  
   
--   移行ツール (パーティ移行ツール) を使用すると、EDI パーティ データを BizTalk Server 2006 R2 または BizTalk Server 2009 から [!INCLUDE[prague](../includes/prague-md.md)] に移行できます。 詳細については、次を参照してください。 [EDI アイテムを BizTalk Server の以前のバージョンから移行する](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)です。  
+-   移行ツール (パーティ移行ツール) では、BizTalk Server 2006 R2 または BizTalk Server 2009 から BizTalk Server まで EDI パーティ データを移行することができます。 詳細については、次を参照してください。 [EDI アイテムを BizTalk Server の以前のバージョンから移行する](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)です。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server での EDI 処理](../core/edi-processing-in-biztalk-server.md)   
@@ -102,4 +102,4 @@ ms.lasthandoff: 09/20/2017
  [EDI のサポートに関する問題](../core/edi-support-issues.md)   
  [EDI ソリューションのアーキテクチャ](../core/edi-solution-architecture.md)   
  [EDI および AS2 状態レポート](../core/edi-and-as2-status-reporting.md)   
- [開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [BizTalk Server EDI ソリューションの開発と構成](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

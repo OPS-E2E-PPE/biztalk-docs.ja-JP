@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3b84bf68e89478d4f3d82dfdaf47e38c0aef90b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9395cb3895675e586576088f3d257dbf4115948f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="data-stored-for-edi-status-reports"></a>EDI 状態レポート用に格納されるデータ
 2 つのレベルのレポートを EDI 状態レポートで利用可能: 最初の場合、**レポートをオンに**アグリーメント、および 2 番目の場合は、プロパティが選択されている、**ストア トランザクション セット/ペイロードを reporting**アグリーメントのプロパティが選択されます。 これらのプロパティで使用可能な**全般プロパティ**のページ、**全般** タブで、**アグリーメントのプロパティ** ダイアログ ボックス。  
@@ -65,8 +65,8 @@ ms.lasthandoff: 09/20/2017
 |||  
 |-|-|  
 |情報|フィールドまたは値|  
-|ApplicationSender|(GS02 または\<UNG2.1(UNG2.2) >|  
-|ApplicationReceiver|GS03 または\<UNG3.1(UNG3.2) >|  
+|ApplicationSender|(GS02 または\<UNG2.1(UNG2.2)\>|  
+|ApplicationReceiver|GS03 または\<UNG3.1(UNG3.2)\>|  
 |GroupDate|GS04 または UNG2.4|  
 |GroupTime|GS05 または UNG2.5|  
 |TransactionSetId|ST01 または UNH2.1 (AN 文字列)|  
@@ -82,4 +82,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [格納されている EDI および AS2 状態レポートのデータ](../core/data-stored-for-edi-and-as2-status-reports.md)   
  [格納されているバッチの状態レポートのデータ](../core/data-stored-for-batching-status-reports.md)   
- [AS2 状態レポートに格納されているデータ](../core/data-stored-for-as2-status-reports.md)
+ [AS2 状態レポート用に格納されるデータ](../core/data-stored-for-as2-status-reports.md)

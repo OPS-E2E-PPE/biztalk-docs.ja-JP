@@ -1,7 +1,7 @@
 ---
 title: "BizTalk Server の紹介 |Microsoft ドキュメント"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/29/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,18 +12,18 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 544522fd2761cf12702ce517116bfaac84830084
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7984b9044ff21263e780cba545ddea472b358c76
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="introducing-biztalk-server"></a>BizTalk Server の紹介
 どのようなアプリケーションであっても、孤立したものはありません。 かどうか好むと好まざる、システムを一緒に結び付けることが標準になりました。 しかし、ソフトウェアを接続するには、単なるバイト変換以上の作業が必要です。 組織がサービス志向に向かうにつれ、効率的なビジネス プロセスを作成して別々のシステムを一体化するという目標は、現実的になりつつあります。  
   
- Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] は、この目標をサポートします。 この最新リリースの BizTalk Server では、これまでのバージョンと同様に、多様なソフトウェアを接続でき、それらのソフトウェアを使用するプロセス ロジックをグラフィカルに作成および変更できます。 また、インフォメーション ワーカーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、実行中のプロセスを監視したり、取引先と連携したり、他のビジネス指向のタスクを実行したりできます。  
+ Microsoft BizTalk Server は、多様なソフトウェアは、接続し、視覚的に作成とのソフトウェアを使用するプロセス ロジックを変更できます。 また、インフォメーション ワーカーは BizTalk Server を使用して、実行中のプロセスを監視したり、取引先と連携したり、他のビジネス志向のタスクを実行することができます。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の主要な新機能は次のとおりです。  
+ BizTalk Server の主要な新機能は次のとおりです。  
   
 -   アプリケーションの展開、監視、および管理をより強力にサポート  
   
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   ビジネス アクティビティ監視 (BAM) 機能の向上  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、他の Microsoft テクノロジの最新リリースも使用されています。 たとえば、.NET Framework 3.5 に基づいて構築され、開発ツールは Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)] によりホストされます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のストレージには、Microsoft の主要データベース製品の最新版である [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] を使用できます。 さらに、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] は 64 ビット版 Windows Server 上でも実行でき、大容量のメモリを活用できる以外に、新世代のハードウェアで提供されるさまざまなメリットを得られます。  
+BizTalk Server では、他の Microsoft テクノロジの最新リリースも使用します。 .NET Framework を基盤に構築し、開発者ツールは Microsoft Visual Studio 内でホストします。 記憶域は、SQL Server の BizTalk Server は BizTalk Server の使用方法を実行、64 ビット Windows のサーバーでより大きなメモリおよびその他のハードウェアが提供する利点を活用します。  
   
 ## <a name="what-is-biztalk-server"></a>BizTalk Server とは何ですか。  
  異なるシステムを効率的なビジネス プロセスへと統合するには、多くの難題が伴います。 そのために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にはさまざまなテクノロジが用意されています。 この製品の主要なコンポーネントを次に示します。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
  組織内のアプリケーションを接続することは重要ですが、複数の組織にわたるアプリケーションを接続することには、さらに高い価値があります。 下の図は、このような企業間統合の簡単な例です。 この場合、図の最上部にある購入組織では、2 つの業者組織と対話する BizTalk Server オーケストレーションが実行されます。 また、業者 A も BizTalk Server を使用して、サプライ アプリケーションへの間接アクセスを提供しています。 業者 B は、別のベンダ製の統合プラットフォームを使用して、Web サービスなどから購入組織の BizTalk Server オーケストレーションに接続しています。  
   
- ![ビジネス &#45; へ (& a) #45; business の統合図](../core/media/b1d8787d-e842-468e-96c5-b68875d9abc3.gif "b1d8787d-e842-468e-96c5-b68875d9abc3")  
+ ![企業間取引の統合図](../core/media/b1d8787d-e842-468e-96c5-b68875d9abc3.gif "b1d8787d-e842-468e-96c5-b68875d9abc3")  
   
 ## <a name="see-also"></a>参照  
  [Understanding BizTalk Server](../core/understanding-biztalk-server.md)

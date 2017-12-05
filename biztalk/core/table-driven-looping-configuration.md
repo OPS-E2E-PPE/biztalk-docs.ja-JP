@@ -21,11 +21,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2563c7f26d2beb0eba33173507989cc85aaabda1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6030c721207e5b7f2c9958a50758c0ed98097c8d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="table-driven-looping-configuration"></a>テーブルドリブン ループの構成
 マップのテーブルドリブン ループを構成するには、次の手順を実行します。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **表示されているグリッド ページに 1 つ以上のテーブル抽出 functoid を追加します。** いくつでも追加**テーブル抽出**ごとと functoid が必要な**テーブル ループ**functoid です。 数**テーブル抽出**functoid は送信先スキーマ内のフィールドの数によって異なります。 たとえば、しかない場合、 **AddressCode**で、送信元スキーマと CompanyName、アドレス、City、状態、PostalCode、および送信先スキーマの AttentionName、6 つ追加する必要があります**テーブル抽出**。functoid は、表示されているグリッド ページにします。  
   
--   **適切な入力で、テーブル ループ functoid を構成します。** 最初に、リンク、**テーブル ループ**functoid の入力インスタンス レコードまたは要素を送信します。 また、テーブル ループ Functoid を出力インスタンス メッセージの構造にもリンクします。 使用して、入力を次に、構成、**構成\<Functoid > Functoid**  ダイアログ ボックス。 このプロパティを構成する方法の詳細については、次を参照してください。 [Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)です。 これは、データを構成するのに使用するために、入力の一覧が包括的で完全なをする必要があります、**テーブル Functoid グリッド**プロパティです。 入力は、次のように定義する必要があります。  
+-   **適切な入力で、テーブル ループ functoid を構成します。** 最初に、リンク、**テーブル ループ**functoid の入力インスタンス レコードまたは要素を送信します。 また、テーブル ループ Functoid を出力インスタンス メッセージの構造にもリンクします。 使用して、入力を次に、構成、**構成\<Functoid\> Functoid**  ダイアログ ボックス。 このプロパティを構成する方法の詳細については、次を参照してください。 [Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)です。 これは、データを構成するのに使用するために、入力の一覧が包括的で完全なをする必要があります、**テーブル Functoid グリッド**プロパティです。 入力は、次のように定義する必要があります。  
   
     -   **最初の入力。** 最初の入力パラメーターは、入力インスタンス メッセージ レコード (またはフィールド) へのリンクです。 **テーブル ループ**functoid は、レコードまたはフィールドの各インスタンスに対して一度ループします。  
   

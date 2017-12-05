@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23525d3b2f72d59e2b0f44257c707f22e6bc2bab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce8a5cf43cd1d6e455492a74985edb91f2cb0a94
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-affiliate-applications-for-host-initiated-sso"></a>ホスト側開始 SSO 関連アプリケーションを作成する方法
 定義できるアプリケーションには、次の 2 種類があります。  
@@ -45,9 +45,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssomanage – createapps」と入力\<AffApp.xml >**AffApp.xml は xml ファイルの名前を指定します。  
+4.  型**ssomanage – createapps」と入力\<AffApp.xml\>**AffApp.xml は xml ファイルの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -76,9 +76,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssomanage – createapps」と入力\<AffApp.xml >**AffApp.xml は xml ファイルの名前を指定します。  
+4.  型**ssomanage – createapps」と入力\<AffApp.xml\>**AffApp.xml は xml ファイルの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -107,9 +107,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssomanage – createapps」と入力\<AffApp.xml >**AffApp.xml は xml ファイルの名前を指定します。  
+4.  型**ssomanage – createapps」と入力\<AffApp.xml\>**AffApp.xml は xml ファイルの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

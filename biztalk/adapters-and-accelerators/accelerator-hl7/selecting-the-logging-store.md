@@ -17,11 +17,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e15bc1f9004c79b8d87375d9fe9f6cb805e12e94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0518b536db16d641b77a61cfeb4851990a7bca0a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="selecting-the-logging-store"></a>ログ ストアを選択します。
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]など、さまざまなログ ストアの組み合わせを選択するオプションを使用して提供する[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]Management Instrumentation (WMI)、 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]、および[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ログです。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-open-btahl7-configuration-explorer"></a>BTAHL7 構成エクスプ ローラーを開く  
   
--   をクリックして**開始**、をクリックして**プログラム**、をクリックして**Microsoft BizTalk\<バージョン > Accelerator 用 HL7**、クリックして**BTAHL7構成のエクスプ ローラー**です。  
+-   をクリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**、クリックして**BTAHL7 構成エクスプ ローラー**です。  
   
 ### <a name="to-select-the--logging-store"></a>ログ ストアを選択  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [メッセージのバッチ処理](../../adapters-and-accelerators/accelerator-hl7/message-batching.md)   
- [ログの構成](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)
+ [ログ記録の構成](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)

@@ -15,22 +15,22 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c51f0ff13b06bd57ccdd52ec6e35fdd7e0acf839
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82476c440f1bae482eff5308f1a5238f8bd85d92
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loans-processing-using-business-rules-biztalk-server-sample"></a>ローン処理を使用してビジネス ルール (BizTalk Server サンプル)
 Loans Processing Using Business Rules サンプルは、オーケストレーション内で管理しているルール セットを使用する方法、および入力 (ファクトと呼ばれます) の組み合わせを使用して、処理中のドキュメント内のフィールドの設定値を計算する方法を示しています。 ファクトは、.NET ベースのアセンブリ呼び出しの結果、メッセージの XML から取得した値、またはデータベースから取得したデータです。 このサンプルでは、ルールを必要に応じて変更して、再展開の必要なしに後続の計算に影響を与える方法も示します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、簡単なローン処理のシナリオでこれらの機能を示します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションは、XML メッセージ形式のローン申請 (ローン ケースとも言う) を取得して処理します。 このオーケストレーションでは、ビジネス ルール エンジンを使用してルールに従って受信メッセージを評価し、ルール適用の結果を使用してメッセージを変更し、メッセージをファイルとして出力フォルダーに書き込みます。  
+ このサンプルでは、簡単なローン処理のシナリオでこれらの機能を示します。 BizTalk Server オーケストレーションは、XML メッセージ形式のローン申請 (ローン ケースともいう) を取得して処理します。 このオーケストレーションでは、ビジネス ルール エンジンを使用してルールに従って受信メッセージを評価し、ルール適用の結果を使用してメッセージを変更し、メッセージをファイルとして出力フォルダーに書き込みます。  
   
  このサンプルの設定の処理中のメッセージをなど、いくつかのソースからのファクトに基づいた、 **IncomeStatus**、 **CommitmentsStatus**、 **EmploymentStatus**、および**ResidencyStatus**処理中のメッセージの要素。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Business Rules\Loans ビジネス Rules\ を使用して処理  
+ \<*パスのサンプル*\>\Business Rules\Loans ビジネス Rules\ を使用して処理  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -54,11 +54,11 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 1.  コンピューターに Northwind データベースがインストールされていることを確認してください。  
   
     > [!IMPORTANT]
-    >  このサンプルを実行するには、Northwind という名前のデータベースが必要です。 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]および[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]は、Northwind サンプル データベースは付属していません。 Northwind データベースを作成するファイルのダウンロード、インストールから[http://go.microsoft.com/fwlink/?LinkId=196020](http://go.microsoft.com/fwlink/?LinkId=196020)指示に従います。  
+    >  このサンプルを実行するには、SQL Server の Northwind サンプル データベースが必要です。 [ダウンロード](https://www.microsoft.com/download/details.aspx?id=23654)、およびインストールします。 
   
 2.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Business Rules\Loans Processing using Business Rules  
+     \<*パスのサンプル*\>\Business Rules\Loans Processing using Business Rules  
   
 3.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -136,9 +136,9 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
     |ルール番号|ルール名|Description|  
     |-----------------|---------------|-----------------|  
     |1|収入状態ルール|IF **BasicSalary** + **OtherIncome** > 0<br /><br /> **IncomeStatus** = **有効**|  
-    |2|契約状態ルール|IF **ID** == **ID (db)**<br /><br /> [AND]<br /><br /> IF **CreditCardBalance (db)** > 500<br /><br /> **CommitmentsStatus** =<br /><br /> "Compute Commitments"|  
-    |3|雇用状態ルール|IF **EmploymentType & #124 です。TimeInMonths** > 18<br /><br /> **EmploymentStatus** = **有効**|  
-    |4|常駐状態ルール|IF **PlaceOfResidence & #124 です。TimeInMonths** > 18<br /><br /> **ResidencyStatus** = **有効**|  
+    |2|契約状態ルール|IF **ID** == **ID (db)**<br /><br /> [AND]<br /><br /> IF **CreditCardBalance (db)** > 500<br /><br />  **CommitmentsStatus** =<br /><br /> "Compute Commitments"|  
+    |3|雇用状態ルール|IF **EmploymentType &#124;です。TimeInMonths** > 18<br /><br /> **EmploymentStatus** = **有効**|  
+    |4|常駐状態ルール|IF **PlaceOfResidence &#124;です。TimeInMonths** > 18<br /><br /> **ResidencyStatus** = **有効**|  
     |!1, !2, !3, !4|否定ルール|論理条件**いない**ルール 1 ~ 4 で説明されている、対応する条件のです。 設定されている文字列の変更の結果として得られる操作には。|  
   
 6.  右クリックし、**バージョン 1.1 (未保存)**ノードをクリックして**保存**です。  
@@ -177,4 +177,4 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 ```  
   
 ## <a name="see-also"></a>参照  
- [ビジネス ルール (BizTalk Server Samples フォルダ)](../core/business-rules-biztalk-server-samples-folder.md)
+ [ビジネス ルール (BizTalk Server サンプル フォルダー)](../core/business-rules-biztalk-server-samples-folder.md)

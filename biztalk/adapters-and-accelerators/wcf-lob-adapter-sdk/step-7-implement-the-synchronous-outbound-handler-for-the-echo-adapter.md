@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e1ccddee7bb7b08ec363fabd9b7e061cd41357d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a2e2679edafd72dc0d64510e7a8566180818f8c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>手順 7: エコー アダプターの同期送信ハンドラーを実装します。
 ![手順 9 の 7](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")  
@@ -64,13 +64,13 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 -   WCF メッセージのアクションを入力する操作のノード ID を =  
   
--   着信メッセージの本文 = 開始本文の要素は\<displayname >\<パラメーターの名前 > {データ}\</parameter 名 >\</displayname >  
+-   着信メッセージの本文 = 開始本文の要素は\<displayname\>\<パラメーター名\>{データ}\</parameter 名前\>\</displayname\>  
   
  送信 WCF 応答メッセージ。  
   
 -   WCF メッセージのアクションの出力操作のノード ID = +"/応答"  
   
--   メッセージ本文の送信 = 開始本文の要素が\<displayname +"Response">」と入力し\<displayname +「結果」>、続くと、\<データ型 > データ\</datatype >\</displayname +"結果 >\</displayname +"Response">  
+-   メッセージ本文を送信 = 開始本文の要素が\<displayname +"Response"\>」と入力し\<displayname +「結果」\>、続くと、 \<datatype\>データ\</datatype\>\</displayname+"結果\>\</displayname +"Response"\>  
   
  たとえば、操作**string[] EchoStrings (文字列データ)**、ノード ID = エコー/EchoStrings、および表示名が EchoStrings を =。  
   
@@ -145,7 +145,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     return null;              
     ```  
   
-4.  ここで追加、 **ExecuteEchoStrings** string[] EchoStrings (文字列データ) の操作を処理するメソッド。 このヘルパー関数を読み取り、WCF 要求メッセージ、echoInUpperCase URI 要素が設定されているかどうかはかどうかを確認 true です。場合は、大文字に変換する回数のカウント変数に示すように、入力文字列に変換します。 次に、WCF 応答メッセージの形式で生成: \<EchoStringsResponse >\<EchoStringResult >\<文字列 > {データ}\<文字列/>\</EchoStringResult >\</EchoStringsResponse >。  
+4.  ここで追加、 **ExecuteEchoStrings** string[] EchoStrings (文字列データ) の操作を処理するメソッド。 このヘルパー関数を読み取り、WCF 要求メッセージ、echoInUpperCase URI 要素が設定されているかどうかはかどうかを確認 true です。場合は、大文字に変換する回数のカウント変数に示すように、入力文字列に変換します。 次に、WCF 応答メッセージの形式で生成: \<EchoStringsResponse\>\<EchoStringResult\>\<文字列\>{データ}\</string\> \</EchoStringResult\>\</EchoStringsResponse\>です。  
   
     ```csharp  
     private Message ExecuteEchoStrings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -187,7 +187,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-5.  追加することにより続行、 **ExecuteEchoGreetings** EchoGreetings 操作を処理するメソッド。 このヘルパー関数は、WCF 要求メッセージを読み取り、操作およびによって型を解決、`ResolveOperationMetadata`と`ResolveTypeMetadata`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイス、およびの形式を使用して WCF 応答メッセージが生成されます: \<EchoGreetingsResponse >\<EchoGreetingsResult >... メッセージしています.\</EchoGreetingsResult >\</EchoGreetingsResponse >。  
+5.  追加することにより続行、 **ExecuteEchoGreetings** EchoGreetings 操作を処理するメソッド。 このヘルパー関数は、WCF 要求メッセージを読み取り、操作およびによって型を解決、`ResolveOperationMetadata`と`ResolveTypeMetadata`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイス、およびの形式を使用して WCF 応答メッセージが生成されます: \<EchoGreetingsResponse\>\<EchoGreetingsResult\>... メッセージしています.\</EchoGreetingsResult\>\</EchoGreetingsResponse\>です。  
   
     ```csharp  
     private Message ExecuteEchoGreetings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -232,7 +232,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  ここで追加、 **ExecuteEchoCustomGreetingFromFile** EchoCustomGreetingFromFile 操作を処理するメソッド。 指定したファイルからメッセージを読み取りこのヘルパー関数は、WCF 要求メッセージを読み取りの形式を使用して WCF 応答メッセージが生成されます: \<EchoGreetingsFromFileResponse >\<EchoGreetingsFromFileResult>... メッセージしています.\</EchoGreetingsFromFileResult >\</EchoGreetingsFromFileResponse >。  
+6.  ここで追加、 **ExecuteEchoCustomGreetingFromFile** EchoCustomGreetingFromFile 操作を処理するメソッド。 指定したファイルからメッセージを読み取りこのヘルパー関数は、WCF 要求メッセージを読み取りの形式を使用して WCF 応答メッセージが生成されます: \<EchoGreetingsFromFileResponse\> \<EchoGreetingsFromFileResult\>... メッセージしています.\</EchoGreetingsFromFileResult\>\</EchoGreetingsFromFileResponse\>です。  
   
     ```csharp  
     private Message ExecuteEchoCustomGreetingFromFile(OperationMetadata om, Message message, TimeSpan timeout)  
@@ -287,4 +287,4 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 ## <a name="see-also"></a>参照  
  [手順 6: エコー アダプター メタデータの解決ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
- [手順 8: エコー アダプターの同期受信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)
+ [手順 8: エコー アダプターの同期受信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f4f00c3071bfc67a888c3550edbf9c946bd4524
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a83dd69e7c66c8ce8ff1af78662392dd0aa66ff2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-publish-the-sap-artifacts-as-a-wcf-service"></a>手順 1: WCF サービスとして SAP アイテムを公開します。
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   必要な SAP クライアント ライブラリです。  
   
- これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
+ これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
   
 ### <a name="to-publish-the-sap-artifacts-as-a-wcf-service"></a>WCF サービスとして SAP アイテムをパブリッシュするには  
   
@@ -184,7 +184,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  IIS の Microsoft 管理コンソールを起動します。 をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-    2.  サービスを発行したノードに移動します。 **Customer_Order**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名 >**  >  **Web サイト** > **既定の Web サイト** > **Customer_Order**です。  
+    2.  サービスを発行したノードに移動します。 **Customer_Order**サービスに移動**インターネット インフォメーション サービス** > **\<コンピューター名\>**  > **Websites** > **既定の Web サイト** > **Customer_Order**です。  
   
     3.  右側のペインで Rfc.svc ファイルを右クリックし、をクリックして**参照**です。  
   
@@ -199,4 +199,4 @@ ms.lasthandoff: 09/20/2017
  SAP アイテム用のアプリケーション定義ファイルを作成するには、ビジネス データ カタログ定義エディターを使用します。 参照してください[手順 2: SAP 成果物のため、アプリケーション定義ファイルを作成する](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)手順についてはします。 アプリケーション定義ファイルは、LOB データが格納されているとは、格納されている形式を識別します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: SharePoint サイト上の SAP システムからのデータの表示](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [チュートリアル 1: SAP システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

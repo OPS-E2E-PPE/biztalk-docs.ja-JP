@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa84ee4a4c1964db090cc48b7229558c9ee86114
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f6891f300a89684481184bf255f3cdd54d25845
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-composite-operations-on-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server での複合操作を実行します。
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントが、SQL Server データベースでの複合操作を実行できるようにします。 複合操作を含めることができます。  
@@ -82,7 +82,7 @@ ms.lasthandoff: 09/20/2017
   
      参照を追加します。  
   
-    1.  ルートを右クリックして**\<スキーマ >** CompositeSchema.xsd、およびクリック ノード**プロパティ**です。  
+    1.  ルートを右クリックして**\<スキーマ\>** CompositeSchema.xsd、およびクリック ノード**プロパティ**です。  
   
     2.  **プロパティ**ボックスで、省略記号ボタンをクリックして**([...])**に対して、 **Imports**プロパティです。  
   
@@ -101,9 +101,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  既定では、**ルート**ノードが新しいスキーマ ファイルにも追加します。 名前を変更することができます、**ルート**ノード**要求**です。 ノードの名前を変更するノード名を右クリックし、をクリックして**の名前を変更**です。  
   
-     下のノードを追加する、 **\<スキーマ >**ノード。  
+     下のノードを追加する、 **\<スキーマ\>**ノード。  
   
-    1.  右クリックし、 **\<スキーマ >**に**スキーマ ノードの挿入**、 をクリック**子レコード**です。  
+    1.  右クリックし、 **\<スキーマ\>**に**スキーマ ノードの挿入**、 をクリック**子レコード**です。  
   
     2.  新しいノードの名前を**RequestResponse**です。  
   
@@ -289,7 +289,7 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションはメッセージを処理して、SQL Server データベースに送信します。 SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージ用の SQL Server データベースからの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <RequestResponse xmlns="http://CompositeTest.CompositeSchema">  
   <InsertResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
     <InsertResult>  
@@ -299,30 +299,30 @@ ms.lasthandoff: 09/20/2017
   <GET_LAST_EMP_DATAResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/Procedures/dbo">  
     <GET_LAST_EMP_DATAResult>  
       <DataSet xmlns="http://schemas.datacontract.org/2004/07/System.Data">  
-        \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-          \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-            \<xs:complexType>  
-              \<xs:sequence>  
-                \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                  \<xs:complexType>  
-                    \<xs:sequence>  
-                      \<xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
-                      \<xs:element minOccurs="0" name="Name" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="DOJ" type="xs:dateTime" />   
-                      \<xs:element minOccurs="0" name="Designation" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Job_Description" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Photo" type="xs:base64Binary" />   
-                      \<xs:element minOccurs="0" name="Rating" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Salary" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="Last_Modified" type="xs:base64Binary" />   
-                    \</xs:sequence>  
-                  \</xs:complexType>  
-                \</xs:element>  
-              \</xs:sequence>  
-            \</xs:complexType>  
-          \</xs:element>  
-        \</xs:schema>  
-        \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+          <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                  <xs:complexType>  
+                    <xs:sequence>  
+                      <xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
+                      <xs:element minOccurs="0" name="Name" type="xs:string" />   
+                      <xs:element minOccurs="0" name="DOJ" type="xs:dateTime" />   
+                      <xs:element minOccurs="0" name="Designation" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Job_Description" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Photo" type="xs:base64Binary" />   
+                      <xs:element minOccurs="0" name="Rating" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Salary" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="Last_Modified" type="xs:base64Binary" />   
+                    </xs:sequence>  
+                  </xs:complexType>  
+                </xs:element>  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:schema>  
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
           <NewDataSet xmlns="">  
             <NewTable>  
               <Employee_ID>10080</Employee_ID>   
@@ -332,7 +332,7 @@ ms.lasthandoff: 09/20/2017
               <Last_Modified>AAAAAAAAF40=</Last_Modified>   
             </NewTable>  
           </NewDataSet>  
-        \</diffgr:diffgram>  
+        </diffgr:diffgram>  
       </DataSet>  
     </GET_LAST_EMP_DATAResult>  
     <ReturnValue>0</ReturnValue>   
@@ -349,4 +349,4 @@ ms.lasthandoff: 09/20/2017
  展開して、BizTalk プロジェクトを構成することが後、は、バインド ファイルと呼ばれる XML ファイルに構成設定をエクスポートできます。 バインド ファイルを生成したできるように、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありません、ファイルから構成設定をインポートすることができます。 バインド ファイルの詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)です。
   
 ## <a name="see-also"></a>参照  
-[SQL アダプターを使用して BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[SQL アダプターを使用して BizTalk アプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

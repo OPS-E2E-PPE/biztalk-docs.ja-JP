@@ -13,11 +13,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1afb4f28584d65401220761dcee626fe63f913b
-ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
+ms.openlocfilehash: 452884062cb9c4cdabbfd4890f590e5f0202b417
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a>バックアップの BizTalk Server のジョブを構成します。
 インストールし、BizTalk Server を構成した後は、バックアップを構成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データをバックアップするジョブです。 
@@ -90,12 +90,12 @@ ms.lasthandoff: 11/23/2017
   
     2. **名前**: 既定値は**BTS**です。 この名前は、バックアップ ファイル名の一部として使用されます。  
   
-    3. **バックアップ ファイルの場所**: 置換 '*\<先のパス >*' 完全なパス (パスは、単一引用符を含める必要があります) へのバックアップを作成するフォルダー、コンピューター、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、または Azure blob ストレージ アカウントに blob サービス エンドポイントの URL。  
+    3. **バックアップ ファイルの場所**: 置換 '*\<移行先パス\>*' 完全なパス (パスは、単一引用符を含める必要があります)、コンピューターや、をバックアップするフォルダーに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、または Azure blob ストレージ アカウントに blob サービス エンドポイントの URL。  
 
         > [!IMPORTANT]
         > - ローカルのパスを入力するかどうかは、ターゲット システム上の同じフォルダーにすべてのファイルを手動でコピーする必要があるされるたびにバックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブを新しいファイルを作成します。  
         >   
-        >      リモート パスを使用するには、UNC 共有をように入力\\ \\  *\<ServerName >*\\*\<SharedDrive >*\\、ここで *\<ServerName >* 、ファイル サーバーの名前を指定し、  *\<SharedDrive >*共有ドライブまたはフォルダーの名前を指定します。  
+        >      リモート パスを使用するには、UNC 共有をように入力\\ \\  *\<ServerName\>*\\*\<SharedDrive\>* \\ここで、  *\<ServerName\>*  、ファイル サーバーの名前を指定し、  *\<SharedDrive\>* 共有ドライブまたはフォルダーの名前を指定します。  
         >   
         >      ネットワーク経由でデータをバックアップする場合は、ネットワークの影響を受けます。 リモートの場所を使用する場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブの完了時にバックアップが成功したかどうか確認します。  
         > - データ損失の可能性を回避するには、バックアップ ディスクを、データベースのデータ ディスクおよびログ ディスクとは異なるディスクに構成します。 これは、データやログのディスクに障害が発生した場合にバックアップにアクセスするために必須です。  
@@ -132,14 +132,14 @@ ms.lasthandoff: 11/23/2017
   
 6.  選択、 **MarkAndBackupLog**ステップ、および選択**編集**です。 **コマンド**ボックスで、パラメーター値を更新します。  
   
-    1.  **@MarkName**: これは、バックアップ ファイルの名前付け規則の一部: <Server Name>  _<Database Name> **_ログ_**< Log Mark Name >_<Timestamp>  
+    1.  **@MarkName**: これは、バックアップ ファイルの名前付け規則の一部:\<サーバー名\>\_\<データベース名\>**\_ログ\_** \<ログ マーク名\> \_\<タイムスタンプ\>  
     
-    2.  **@BackupPath**: 完全な宛先 (単一引用符を含む)、コンピューターおよびフォルダー パスに格納する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、データベースのログ、または Azure blob ストレージ アカウントとコンテナー。 *\<先のパス >*ローカルまたは別のサーバーへの UNC パスにもなります。  
+    2.  **@BackupPath**: 完全な宛先 (単一引用符を含む)、コンピューターおよびフォルダー パスに格納する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、データベースのログ、または Azure blob ストレージ アカウントとコンテナー。 *\<移行先パス\>*ローカルまたは別のサーバーへの UNC パスにもなります。  
   
      MarkAndBackupLog ステップで、バックアップのログをマークした後、バックアップします。  
   
     > [!IMPORTANT]
-    >  回避する**データ損失の可能性**および**パフォーマンスを向上させる**、 *\<先のパス >*別のコンピューター、またはハード ドライブに設定する必要があります元のデータベース ログを格納するために使用されると異なる。  
+    >  回避する**データ損失の可能性**および**パフォーマンスを向上させる**、 *\<移行先パス\>*別のコンピューターに設定する必要がありますまたはから元のデータベース ログを格納するために使用されるとは別のハード ドライブを選択します。  
   
      **[OK]** を選択します。  
   

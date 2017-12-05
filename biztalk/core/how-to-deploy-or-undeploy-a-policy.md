@@ -19,11 +19,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4913dbfa6f3d027d5540234b5af9370eb69f67a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d6e7f9f70e6f1f0f09ae1d006172fdc00dc1bc0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-or-undeploy-a-policy"></a>ポリシーを展開または展開解除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、手動でポリシーを展開または展開解除する方法について説明します。 アプリケーションを開始すると、その中に含まれているすべてのポリシーが自動的に展開され、アプリケーションを停止すると、そのポリシーが自動的に展開解除されます。 ポリシーを展開すると、そのポリシーを使用するアプリケーション内で有効になります。 ポリシーは、展開解除すると非アクティブとなり、BizTalk グループ内でそれを使用しているすべてのアプリケーションで動作しなくなります。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで  **BizTalk Server 管理コンソール**、展開または展開解除、および順に展開するポリシーを含む BizTalk グループを展開**\<すべてのアイテム >**です。  
+2.  コンソール ツリーで  **BizTalk Server 管理コンソール**、展開または展開解除、および順に展開するポリシーを含む BizTalk グループを展開**\<すべての成果物\>**.  
   
 3.  をクリックして**ポリシー**ポリシーを右クリックし、クリックして**展開**または**Undeploy**です。  
   

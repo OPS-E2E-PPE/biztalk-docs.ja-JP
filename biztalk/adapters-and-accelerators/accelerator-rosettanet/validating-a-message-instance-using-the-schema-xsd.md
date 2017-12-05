@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50a4e0b08e3bbe9e29b3417fd6e53475fd98483c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0eda0b76b3daff53290264169c5b2effe80a9e5c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="validating-a-message-instance-using-the-schema-xsd"></a>スキーマ XSD を使用してメッセージ インスタンスの検証
 ここでは、Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] によって RNPIP アセンブリ ファイルに構築したスキーマ XSD ファイルを使用してメッセージ インスタンスを検証する方法を説明します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **ファイル**、 をポイント**開く**、クリックして**プロジェクト**です。  
   
-3.  検索*\<ドライブ >*\Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\schemas をクリックして**RNPIPs.btproj**をクリックして**開く**です。  
+3.  検索*\<ドライブ\>*\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\schemas をクリックして**RNPIPs.btproj**、クリックして**開く**です。  
   
 4.  ソリューション エクスプ ローラーで、 **Rnpip**、クリックして、メッセージ インスタンスの検証に使用する XSD スキーマを右クリックして**プロパティ**です。  
   
@@ -44,4 +44,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [Rnpip の既存の PIP の変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)   
- [Pip の操作](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)
+ [PIP の操作](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)

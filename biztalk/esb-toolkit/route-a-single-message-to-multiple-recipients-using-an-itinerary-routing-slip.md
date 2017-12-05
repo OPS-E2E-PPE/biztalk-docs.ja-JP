@@ -12,15 +12,15 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fa96603bc93c9d5d19ef102695a1189a50d00ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c493b33081e540a4e18d6d20e4813cdddad894a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip"></a>方法: Itinerary ルーティング先を使用して複数の受信者を 1 つのメッセージをルーティング
 ## <a name="goal"></a>[目標]  
- このセクションでは、静的な競合回避モジュールを使用して 3 つの個別の受信者にデザイナー ドメイン固有言語 (DSL) を使用してメッセージをルーティングする旅程を作成する方法を示します、[!INCLUDE[prague](../includes/prague-md.md)]ファイル アダプター。  
+ このセクションでは、デザイナーのドメイン固有言語 (DSL) を使用して静的な競合回避モジュールと、BizTalk Server ファイル アダプターを使用して 3 つの個別の受信者にメッセージをルーティングする旅程を作成する方法を示します。  
   
  このトピックでは、次の手順を行います。  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>ESB itinerary DSL モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリック**ItineraryLibrary**、 をポイント**追加**、クリックして**新しい行程**です。  
   
@@ -178,6 +178,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [メッセージのルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
+-   [メッセージ ルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
   
--   [動的な解決を使用して、ルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [動的な解決とルーティングを利用する](../esb-toolkit/using-dynamic-resolution-and-routing.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0788b693027fb803b121b1b732cb3ee126897e7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f7966fccca324a1453f0ea84e79cd7d9d3d55ad
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="restrictions-on-the-destination-url-property"></a>送信先 URL のプロパティに関する制限事項
 送信先 URL とは、HTTP プロトコルを使用して送信するメッセージの送信先となる HTTP サーバーのアドレスを指定する文字列です。  
@@ -28,11 +28,11 @@ ms.lasthandoff: 09/20/2017
   
 -   送信先 URL のプロパティは、次の形式で指定する必要があります。  
   
-     http [s]://\<ホスト > [:\<ポート >] [/\<パス > [/\<ファイル > [?\<クエリ文字列 >]]  
+     http [s]://\<ホスト\>[:\<ポート\>] [/\<パス\>[/\<ファイル\>[?\<クエリ文字列\>]]  
   
 -   文字列全体は、URI でエンコードできますが、しなくてもかまいません。  
   
--   クエリ文字列を除き、文字列全体には、次の文字を含めることはできません: \< >: \ & #124 です。" ? *.  
+-   クエリ文字列を除き、文字列全体には、次の文字を含めることはできません: \< \> : \ &#124;です。" ? *.  
   
 -   プロパティは区別されません。  
   

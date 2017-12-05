@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71f689b035f926e0fd5bbdaa159e1450fbad92b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1164cb59bf7fe0e168834f60364cd82f871b3ae0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement-with-the-wcf-channel-model"></a>WCF チャネル モデルを含む SELECT ステートメントを使用してポーリング Oracle E-business Suite
 構成することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]メッセージを受信するデータの定期的な変更を継続的にインターフェイスのテーブルをポーリングする SELECT ステートメントを使用して、ビュー、テーブルおよびビュー Oracle E-business suite のインターフェイスです。 Oracle E-business Suite をポーリングするアダプターが定期的に実行されるポーリング ステートメントと SELECT ステートメントを指定できます。 後の投票 PL/SQL コード ブロックを指定することも、アダプターが、ポーリング ステートメントが実行された後に実行されます。  
@@ -184,7 +184,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="example"></a>例  
  次の例では、MS_SAMPLE_EMPLOYEE インターフェイス テーブルをポーリングするポーリング アプリケーションを示します。 **PollingInput**プロパティには、MS_SAMPLE_EMPLOYEE テーブルからすべてのデータを読み取る select ステートメントが含まれているし、ポーリング後ステートメントは、同じテーブルからすべてのデータを削除します。 ポーリング メッセージを書き込む`C:\PollingOutput.xml`です。  
   
- 多くのデータが MS_SAMPLE_EMPLOYEE インターフェイス テーブルに追加されるまで、後続のポーリング メッセージはレコードがありません。 サンプルに用意されている insert_apps_data.sql スクリプトを実行して、これを行うことができます。 このスクリプトを実行した後、次のポーリング操作によって新しいレコードをテーブルに挿入がフェッチされます。 アダプターはポーリングを押して、サービス ホストを終了するまで引き続き\<返す >。  
+ 多くのデータが MS_SAMPLE_EMPLOYEE インターフェイス テーブルに追加されるまで、後続のポーリング メッセージはレコードがありません。 サンプルに用意されている insert_apps_data.sql スクリプトを実行して、これを行うことができます。 このスクリプトを実行した後、次のポーリング操作によって新しいレコードをテーブルに挿入がフェッチされます。 アダプターはポーリングを押して、サービス ホストを終了するまで引き続き\<返す\>です。  
   
 ```  
 using System;  

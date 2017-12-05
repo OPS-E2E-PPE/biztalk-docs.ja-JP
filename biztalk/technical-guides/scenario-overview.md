@@ -12,32 +12,32 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9400b85cf706efab0e70278e2c6daed0de32922b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab36aa51d2dd28651895818caa781c49bf366f50
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="scenario-overview"></a>シナリオの概要
-このトピックの内容によって完了のロード テストの概要を説明する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のスケーラビリティを評価する製品グループ[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]最新エンタープライズ クラスのハードウェアで実行されているときにします。  
+このトピックでは、最新エンタープライズ クラスのハードウェアで実行されているときに、BizTalk Server のスケーラビリティを評価する製品のグループ、BizTalk Server によって完了したのロード テストの概要を示します。  
   
- すべてのテストは、専用のハードウェアを使用して分離環境で行われました。 200 以上のテストの実行が実行され、して検証されたすべての結果、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]製品グループ。  
+ すべてのテストは、専用のハードウェアを使用して分離環境で行われました。 200 以上のテストの実行が実行され、すべての結果は、BizTalk Server の製品グループによって検証されました。  
   
  メッセージング シナリオと、オーケストレーション シナリオを使用してテストを実施しました両方のシナリオでは、BizTalk、Wcf-nettcp アダプターを使用します。  
   
- 最大の可能なパフォーマンスを評価する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]エンジン、カスタム パイプライン コンポーネントは使用されませんでしたおよびオーケストレーションのシナリオにのみ、非常に単純な単一のオーケストレーションが使用されました。 パフォーマンスの最適化」に記載[のパフォーマンスの最適化](../technical-guides/optimizing-performance.md)環境に適用されに記載されています[観測と推奨事項](../technical-guides/observations-and-recommendations.md)です。  
+ BizTalk Server エンジンの最大の可能なパフォーマンスを評価するには、カスタム パイプライン コンポーネントを使用していません。され、オーケストレーションのシナリオののみ、非常に単純な単一のオーケストレーションが使用されました。 パフォーマンスの最適化」に記載[のパフォーマンスの最適化](../technical-guides/optimizing-performance.md)、環境に適用されていたし、完全に記載されています[観測と推奨事項](../technical-guides/observations-and-recommendations.md)です。  
   
 ## <a name="test-goals"></a>テストの目的  
  ロード テスト実行の目標には、次のものが含まれています。  
   
-1.  [全般] のサイズ変更およびスケーリングのためのガイダンスを提供[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]:  
+1.  [全般] のサイズ変更と BizTalk Server のガイダンスをスケーリングを提供します。  
   
-    1.  BizTalk Server を実行する追加のコンピューターを追加することの影響を定量化する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。 パフォーマンスをテストします。 このため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションを測定したときに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループが実行されている 1 つは、BizTalk Server を実行している 2 つ、3、および 4 つのコンピューター。  
+    1.  BizTalk Server グループに追加のコンピューターを追加することの影響を定量化します。 このテストのため、BizTalk Server ソリューションのパフォーマンスは、BizTalk Server グループの実行中に、BizTalk Server を実行している 2 つ、3、および 4 つのコンピューターを測定されました。  
   
-    2.  影響力の定量化を追加する追加 BizTalk メッセージ ボックス データベースを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。 パフォーマンスをテストします。 このため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションを測定したときに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループが 1 つのメッセージ ボックス データベースまたは 4 つのメッセージ ボックス データベースのいずれかを使用するように構成します。  
+    2.  BizTalk Server グループに追加の BizTalk メッセージ ボックス データベースを追加することの影響を定量化します。 このテストのため、BizTalk Server ソリューションのパフォーマンスは、1 つのメッセージ ボックス データベースまたは 4 つのメッセージ ボックス データベースを使用するグループの構成時に測定されました。  
   
         > [!NOTE]  
-        >  2 つのメッセージ ボックス データベースに 1 つから拡張するときに存在する場合は、ほとんどのパフォーマンス上の利点があるために、2 つのメッセージ ボックス データベースでのテストは実行されませんでした。 実際には、2 つのメッセージ ボックス データベースに 1 つからスケーリングできますパフォーマンスが低下します。 スケール アウトの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースを参照してください[スケール アウト SQL Server 層](http://go.microsoft.com/fwlink/?LinkID=158075)(http://go.microsoft.com/fwlink/?LinkID=158075) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
+        >  2 つのメッセージ ボックス データベースに 1 つから拡張するときに存在する場合は、ほとんどのパフォーマンス上の利点があるために、2 つのメッセージ ボックス データベースでのテストは実行されませんでした。 実際には、2 つのメッセージ ボックス データベースに 1 つからスケーリングできますパフォーマンスが低下します。 スケール アウト メッセージ ボックスの詳細については、次を参照してください。[スケール アウト SQL Server 層](../core/scaling-up-the-sql-server-tier.md)です。
   
 2.  次のシナリオのサイジングとスケールのガイダンスを提供します。  
   
@@ -46,19 +46,19 @@ ms.lasthandoff: 09/20/2017
     2.  WCF-NetTcp 一方向のオーケストレーション シナリオ  
   
 ## <a name="test-measurements-used"></a>テストの測定基準  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次の条件を使用して、パフォーマンスが測定されました。  
+次の条件を使用して BizTalk Server のパフォーマンスが測定されました。  
   
-1.  **全体的なスループット**– で測定、  **BizTalk: メッセージング (*hostname*) \Documents 受信/秒 * * と **BizTalk: メッセージング (*hostname*) \Documents 処理/秒 * * パフォーマンス カウンター用、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信し、処理の各ホストします。  
+1.  **全体的なスループット**– で測定、  **BizTalk: メッセージング (*hostname*) \Documents 受信/秒 * * と **BizTalk: メッセージング (*hostname*) \Documents 処理/* * 秒のパフォーマンス カウンターの BizTalk Server 受信処理の各ホストとします。  
   
-2.  **CPU 使用率**– で測定された、 **\Processor(_Total)\\% Processor Time**パフォーマンス カウンターを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。 すべてのテスト結果をレビューした包括的と、パフォーマンス ボトルネックの記載[観測と推奨事項](../technical-guides/observations-and-recommendations.md)です。  
+2.  **CPU 使用率**– で測定された、 **\Processor(_Total)\\% Processor Time** BizTalk Server のパフォーマンス カウンター] と SQL Server コンピューター。 すべてのテスト結果をレビューした包括的と、パフォーマンス ボトルネックの記載[観測と推奨事項](../technical-guides/observations-and-recommendations.md)です。  
   
 ## <a name="scaling-out-the-processing-tier-and-the-database-tier"></a>処理層およびデータベース層のスケール アウト  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]1 つまたは複数追加することによって高い処理層機能を簡単に組み込む[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既存コンピューター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースの追加により増加したデータベース層の機能に対応します。  
+BizTalk Server は、既存の BizTalk Server グループに 1 つまたは複数の BizTalk Server コンピューターを追加することにより、高い処理層機能を簡単に対応します。 BizTalk Server メッセージ ボックス データベースの追加により増加したデータベース層の機能に対応します。  
   
- スケール アウトのメトリックを提供する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、テストが 1 つ、2、3、および 4 で実行した[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。 データベース層のスケール アウトの影響を示すためには、これらのテストは、単一およびマルチ メッセージ ボックスの両方のシステムに対して実行されました。  
+BizTalk Server のスケール アウトのメトリックを提供するには、テストは、1、2、3、および fourBizTalk サーバー コンピューターで実行しました。 データベース層のスケール アウトの影響を示すためには、これらのテストは、単一およびマルチ メッセージ ボックスの両方のシステムに対して実行されました。  
   
 ## <a name="testing-scenarios"></a>テストのシナリオ  
- 経由でメッセージのフロー、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]これらのシナリオ用の環境が後で詳しく説明します。  
+ これらのシナリオ用の BizTalk Server 環境を経由してメッセージのフローは、以下で詳しく説明します。  
   
 ### <a name="messaging-test-scenario"></a>メッセージングのテスト シナリオ  
  ![メッセージング シナリオ](../technical-guides/media/messagingscenario.gif "MessagingScenario")  
@@ -70,24 +70,24 @@ ms.lasthandoff: 09/20/2017
     >   
     >  このテスト環境で機能をテストして、Visual Studio 2010 Ultimate エディション ロードを使用した方法の詳細については、次を参照してください。[を使用して Visual Studio でテストを容易に自動化](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)です。  
   
-2.  XML メッセージを受信、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して Wcf-nettcp 受信アダプターの場所を受信します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信場所がメッセージの処理を行わず、PassThruReceive パイプラインを使用するよう構成します。  
+2.  BizTalk Server で XML メッセージを受信場所を使用して Wcf-nettcp 受信アダプターを受信します。 受信場所がメッセージの処理を行わず、PassThruReceive パイプラインを使用するように構成します。  
   
-3.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]エンド ポイント マネージャー (EPM) は、BizTalk メッセージ ボックス データベースにメッセージを公開します。  
+3.  BizTalk Server エンド ポイント マネージャー (EPM) は、BizTalk メッセージ ボックス データベースにメッセージを公開します。  
   
-4.  A[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信、Wcf-nettcp 送信アダプターを使用するポートの受信場所で公開されたメッセージをサブスクライブしているし、BizTalk MessageBox からメッセージを取得します。 送信ポートでは、メッセージの処理を行わず、PassThruTransmit パイプラインを使用します。  
+4.  Wcf-nettcp 送信アダプターを使用する BizTalk Server 送信ポートは、受信場所で公開されたメッセージをサブスクライブし、BizTalk MessageBox からメッセージを取得します。 送信ポートでは、メッセージの処理を行わず、PassThruTransmit パイプラインを使用します。  
   
 5.  メッセージが配信をバックエンドに WCF サービス、Wcf-nettcp 送信アダプターでします。  
   
 ### <a name="orchestration-test-scenario"></a>オーケストレーションのテストのシナリオ  
  ![オーケストレーション シナリオの流れ](../technical-guides/media/orchestrationscenarioflow.gif "OrchestrationScenarioFlow")  
   
-1.  機能をテストして、Visual Studio 2010 Ultimate エディション負荷が XML メッセージを生成し、それを実行しているコンピューターに送信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]NetTcp トランスポートを使用します。  
+1.  機能をテストして、Visual Studio 2010 Ultimate エディション負荷は、XML メッセージを生成し、NetTcp トランスポートを使用して BizTalk Server を実行しているコンピューターに送信します。  
   
-2.  XML メッセージを受信する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信ポートを使用して Wcf-nettcp 受信アダプターであること。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信ポートは、PassThruReceive を使用して、メッセージの処理を実行するなしのパイプラインを構成します。  
+2.  BizTalk Server で XML メッセージを受信ポートを使用して Wcf-nettcp 受信アダプターを受信します。 受信ポートは、PassThruReceive を使用して、パイプラインのメッセージの処理を実行するなしに構成されます。  
   
 3.  メッセージは、(手順 2 から WCF の受信ポートにバインドされている) 受信ポートおよび (手順 4 から WCF 送信ポートにバインドされている) 送信ポートのみで構成され、簡単なオーケストレーションに配信されます。 メッセージ変数は、「指定されていないか」、つまり、"System.XML.XmlDocument"の「メッセージの種類」を使用することはできません。 オーケストレーションでメッセージを受け取るだけその受信ポートと、その送信ポートからメッセージを送信します。 メッセージの処理は実行されません。  
   
-4.  一方向[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信、Wcf-nettcp 送信アダプターを使用するポートがオーケストレーションによって公開されたメッセージをサブスクライブして、BizTalk MessageBox からメッセージを取得します。 送信ポートでは、メッセージの処理を行わず、PassThruTransmit パイプラインを使用します。  
+4.  Wcf-nettcp 送信アダプターを使用する一方向の BizTalk Server 送信ポートは、オーケストレーションによって公開されたメッセージをサブスクライブし、BizTalk MessageBox からメッセージを取得します。 送信ポートでは、メッセージの処理を行わず、PassThruTransmit パイプラインを使用します。  
   
 5.  メッセージが配信をバックエンドに WCF サービス、Wcf-nettcp 送信アダプターでします。  
   
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="lab-hardware-diagram-and-specifications"></a>ラボ ハードウェア ダイアグラムおよび仕様  
  ラボの使用、ハードウェアの構成を次に示します。 簡単に対応するためのスケール アウト処理およびデータベース層、ラボ環境の次のハードウェアが使用されていました。  
   
--   2 つのエンタープライズ クラスの 2 つのエンタープライズ クラス Dell R710 コンピューターと Hewlett Packard DL 380 コンピューター、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理層です。  
+-   2 つのエンタープライズ クラスの Hewlett Packard DL 380 コンピューターと、BizTalk Server 処理層の 2 つのエンタープライズ クラス Dell R710 コンピューター。  
   
 -   データベースの 4 つのエンタープライズ クラス Dell R900 コンピューターは、マルチ メッセージ ボックスの機能を提供する層です。  
   
@@ -108,20 +108,20 @@ ms.lasthandoff: 09/20/2017
   
 |名前|[モデル]|CPU の種類|CPU の数|コア/CPU の数|CPU アーキテクチャ|[メモリ]|オペレーティング システム|ソフトウェア|  
 |----------|-----------|--------------|--------------------|--------------------------|----------------------|------------|----------------------|--------------|  
-|R710 01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|R710 02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|DL380G7 01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|DL380G7 02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|DL380 01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]ロード テスト DB<br /><br /> [!INCLUDE[vs2010](../includes/vs2010-md.md)]<br /><br /> WCF バックエンド サービス|  
-|DL380 02|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]ロード テスト コント ローラー|  
-|DL380 03|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]ロード テスト エージェント|  
-|DL380 04|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]テスト エージェントを読み込みます。<br /><br /> コマンド ライン Perfmon|  
-|R805 06|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]ロード テスト エージェント|  
-|R805 07|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]ロード テスト エージェント|  
-|R900 03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]累積更新プログラム 4|  
-|R900 04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]累積更新プログラム 4|  
-|R900 05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]累積更新プログラム 4|  
-|R900 06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]累積更新プログラム 4|  
+|R710 01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|R710 02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|DL380G7 01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|DL380G7 02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|DL380 01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 のロード テスト データベース<br /><br /> Visual Studio 2010<br /><br /> WCF バックエンド サービス|  
+|DL380 02|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Controller|  
+|DL380 03|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
+|DL380 04|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent です。<br /><br /> コマンド ライン Perfmon|  
+|R805 06|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
+|R805 07|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
+|R900 03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
+|R900 04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
+|R900 05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
+|R900 06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
   
 ### <a name="storage-area-network-configuration"></a>記憶域エリア ネットワークの構成  
  次の図は、ラボ環境の使用ストレージ エリア ネットワーク (SAN) の構成を示しています。  
@@ -140,7 +140,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  **SAN の達成可能な最大スループットは何ですか。** – スループットは、サーバー、スイッチ SAN スループットと SAN コント ローラー カードの速度でホスト バス アダプター (HBA) の観点から、最小の共通部分を使用してこれは測定されます。  
   
-2.  **どのようなその他のアプリケーションは実稼働環境で SAN を使用しますか。** -どのようなその他のアプリケーションと、実稼働環境での SAN の使用を検討してください。 その他のデータベースまたは Exchange Server など、それ以外の場合の I/O 負荷の高いアプリケーションには、実稼働環境で実行しているコンピューターの使用可能な SAN スループットの容量に、SAN で使用する場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]適宜減少されます。  
+2.  **どのようなその他のアプリケーションは実稼働環境で SAN を使用しますか。** -どのようなその他のアプリケーションと、実稼働環境での SAN の使用を検討してください。 その他のデータベースまたは Exchange Server など、それ以外の場合の I/O 処理を要するアプリケーションで使用する場合、SAN 実稼働環境で、BizTalk Server を実行しているコンピューターの使用可能な SAN スループットの容量が適宜減少されます。  
   
  ラボ環境では、専用の SAN が使用されました。 SAN に接続された 4 台の SQL Server コンピューターの各 8-Gbps サーバーごとの合計の潜在的なスループットを提供する 2 つの 4 Gbps ホスト バス アダプター (Hba) のスイッチ。 SAN が 2 つのサービス プロセッサにあり、各サービス プロセッサ 16-Gbps SAN とスイッチ間の合計の潜在的なスループットを提供する、ファイバー スイッチに接続された 2 つのフロント エンド ポートです。  
   
@@ -156,8 +156,9 @@ ms.lasthandoff: 09/20/2017
 |O|Logs_Spare|SQL ファイルには使用されません。 DTCLog ファイルを格納するために使用、MSDTC により発生頻繁なディスク I/O、特にマルチ メッセージ ボックス環境でします。|20|  
   
 ### <a name="sqlio-test-results"></a>SQLIO テスト結果  
- SQLIO ツールを使用して、ベンチマークおよびラボ環境で使用する記憶域エリア ネットワーク (SAN) 構成の入力/出力能力を測定します。 ツールの名前からわかるように、SQLIO は、SQL Server のパフォーマンス上のファイル システム I/O の影響を測定するための貴重なツールです。 ダウンロードできます SQLIO [http://go.microsoft.com/fwlink/?LinkID=210381](http://go.microsoft.com/fwlink/?LinkID=210381)です。   
-SQL Server データベース アプリケーションの記憶域エリア ネットワーク (SAN) 構成の入力/出力の能力を測定するには、次を参照してください[I/O の特徴の分析と SQL Server データベース アプリケーションの記憶域システムをサイズ変更](http://go.microsoft.com/fwlink/?LinkID=210379)(http://。go.microsoft.com/fwlink/ しますか。LinkID = 210379)。  
+ SQLIO ツールを使用して、ベンチマークおよびラボ環境で使用する記憶域エリア ネットワーク (SAN) 構成の入力/出力能力を測定します。 ツールの名前からわかるように、SQLIO は、SQL Server のパフォーマンス上のファイル システム I/O の影響を測定するための貴重なツールです。 
+
+SQL Server データベース アプリケーションの記憶域エリア ネットワーク (SAN) 構成の入力/出力の能力を測定するには、次を参照してください。 [I/O の特徴の分析と SQL Server データベース アプリケーションの記憶域システムをサイズ変更](https://msdn.microsoft.com/library/ee410782(SQL.100).aspx)です。  
   
  SQLIO、テストでは、sqlio.exe ユーティリティ問題 8 K は 8 スレッドからの読み取り要求と 8 の I/O キューの深さを維持します。 次のパラメーターを使用しました。  
   
@@ -210,4 +211,4 @@ SQL Server データベース アプリケーションの記憶域エリア ネ�
     |31527.95|246.31|1 ミリ秒|  
   
 ## <a name="see-also"></a>参照  
- [運用環境の BizTalk Server 環境のスケーリング](../technical-guides/scaling-a-production-biztalk-server-environment.md)
+ [BizTalk Server の運用環境のスケーリング](../technical-guides/scaling-a-production-biztalk-server-environment.md)

@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9156b6d6fa1374f532efb354e5816c054b83994
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa8d2521a8cf434c7a0ea56f749f9df3f032551e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-queuing-queues"></a>メッセージ キューのキュー
 このセクションでは、Microsoft メッセージ キュー (MSMQ) アダプタを使用する際に、MSMQ キューを指定する方法について説明します。 パスを指定するための名前付け規則、およびパスをキューの指定に変換するときの形式名の役割についても説明します。  
@@ -60,9 +60,9 @@ ms.lasthandoff: 09/20/2017
   
  送信または受信キューのパスが、HTTP または HTTPS の URL である場合、構文は次のとおりです。  
   
- 形式名:direct = http://\<クライアント名 >/msmq/\<キュー名 >  
+ 形式名:direct = http://\<クライアント名\>/msmq/\<キュー名\>  
   
- 形式名:direct = https://\<クライアント名 >/msmq/\<キュー名 >  
+ 形式名:direct = https://\<クライアント名\>/msmq/\<キュー名\>  
   
 > [!NOTE]
 >  "msmq" は、メッセージ キューによってインターネット インフォメーション サービス (IIS) に作成される仮想フォルダです。  

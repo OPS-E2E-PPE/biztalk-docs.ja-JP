@@ -21,25 +21,25 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6da0c7ae3899c71ab000bc30cb6d801aa856f83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 950f244c3a46af87164c4e276a50cd7a91fee14b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuration-properties-for-integrated-biztalk-adapters"></a>統合 BizTalk アダプターの構成プロパティ
-BizTalk エクスプ ローラー オブジェクト モデルは、公開、 **IReceiveLocation.CustomData**と**ISendPort.CustomData**名前/値の形式でアダプター構成プロパティ バッグを含んでいるプロパティ組の XML 文字列。 この名前/値ペアの XML 文字列が格納されている、 \<CustomProps > 要素内で、 \<TransportTypeData > バインド ファイル内の要素。 内の情報のほとんどの\<CustomProps > 要素は、BizTalk Server ユーザー インターフェイス (BizTalk 管理コンソールまたは BizTalk エクスプ ローラー) で、アダプターの設定できる情報に対応します。 これらの値がバインド ファイルに指定されている場合、値はバインド ファイルのインポート時に、指定された受信場所と送信ポート用のアダプター構成に適用されます。 すべてのアダプターの構成情報は、シングル サインオン データベースに格納されます。  
+BizTalk エクスプ ローラー オブジェクト モデルは、公開、 **IReceiveLocation.CustomData**と**ISendPort.CustomData**名前/値の形式でアダプター構成プロパティ バッグを含んでいるプロパティ組の XML 文字列。 この名前/値ペアの XML 文字列が格納されている、 \<CustomProps\>内の要素、 \<TransportTypeData\>バインド ファイル内の要素。 内の情報のほとんどの\<CustomProps\>要素 (BizTalk 管理コンソールまたは BizTalk エクスプ ローラー) など、BizTalk Server のユーザー インターフェイスでアダプターに対して設定できる情報に対応します。 これらの値がバインド ファイルに指定されている場合、値はバインド ファイルのインポート時に、指定された受信場所と送信ポート用のアダプター構成に適用されます。 すべてのアダプターの構成情報は、シングル サインオン データベースに格納されます。  
   
  このセクションでは、各統合 BizTalk アダプターに設定できる構成プロパティについて説明します。  
   
 > [!NOTE]
->  パスワードの情報に格納されている、 \<TransportTypeData > バインド ファイルの要素がマスクされるは機密データがクリア テキストで保存されないようにします。 トランスポートに応じて、パスワード情報は NULL またはアスタリスクに置き換えられます。 ターゲットの BizTalk Server 構成にバインド ファイルをインポートする前に、バインド ファイルにこの情報を手動で入力してアダプター構成を更新する必要があります。  
+>  パスワードの情報に格納されている、 \<TransportTypeData\>バインド ファイルの要素がマスクされるは機密データがクリア テキストで保存されないようにします。 トランスポートに応じて、パスワード情報は NULL またはアスタリスクに置き換えられます。 ターゲットの BizTalk Server 構成にバインド ファイルをインポートする前に、バインド ファイルにこの情報を手動で入力してアダプター構成を更新する必要があります。  
   
- アダプター フレームワークを使用して作成されたアダプターの構成データが格納されている、 \<AdapterConfig > 要素。 \<AdapterConfig > 要素の指定は VT_BSTR (vt =「8」) データ型、  **\<  >** この要素に含まれる文字をエスケープする必要がありますまたはしようとするときにエラーが発生バインド ファイルをインポートします。 これにより、構成データのテキストは、これらの文字をエスケープしない場合に比べて人間が判読しにくいものになります。 次の例では、POP3 アダプターにバインドされた送信ポート用のサンプル構成データからこれらの文字をエスケープする効果を説明しています。  
+ アダプター フレームワークを使用して作成されたアダプターの構成データが格納されている、 \<AdapterConfig\>要素。 以降、 \<AdapterConfig\>要素は VT_BSTR を指定します (vt =「8」) データ型、  **\< \>** この要素に含まれる文字をエスケープする必要がありますまたはエラーが発生するときにします。バインド ファイルをインポートしようとしてください。 これにより、構成データのテキストは、これらの文字をエスケープしない場合に比べて人間が判読しにくいものになります。 次の例では、POP3 アダプターにバインドされた送信ポート用のサンプル構成データからこれらの文字をエスケープする効果を説明しています。  
   
- **TransportTypeData 構成データで使用される <> 文字をエスケープしませんが、 \<AdapterConfig > 要素**  
+ **TransportTypeData 構成データで使用される <> 文字をエスケープしませんが、 \<AdapterConfig\>要素**  
   
- この構成データが無効ため、 \<AdapterConfig > 要素の指定は VT_BSTR (vt =「8」) データ型および\<> に含まれる文字、 \<AdapterConfig > 要素がエスケープされていません。  
+ この構成データが無効ため、 \<AdapterConfig\>要素の指定は VT_BSTR (vt =「8」) データ型および\<\>に含まれる文字、 \<AdapterConfig\>要素はエスケープされません。  
   
 ```  
 <TransportTypeData>  
@@ -65,9 +65,9 @@ BizTalk エクスプ ローラー オブジェクト モデルは、公開、 **
 </TransportTypeData>  
 ```  
   
- **使用される <> 文字エスケープを TransportTypeData 構成データ、 \<AdapterConfig > 要素**  
+ **使用される <> 文字エスケープを TransportTypeData 構成データ、 \<AdapterConfig\>要素**  
   
- \<AdapterConfig > 要素の指定は VT_BSTR (vt =「8」) データ型、 \< > から文字をエスケープする必要があります、 \<AdapterConfig > 要素以下に示すよう。  
+ \<AdapterConfig\>要素の指定は VT_BSTR (vt =「8」) データ型、 \< \>から文字をエスケープする必要があります、 \<AdapterConfig\>要素以下に示すよう。  
   
 ```  
 <TransportTypeData>  
@@ -122,4 +122,4 @@ gt;<bodyPartIndex>1</bodyPartIndex><errorThreshold>10
   
  [SOAP アダプター構成プロパティ](../core/soap-adapter-configuration-properties.md)  
   
- [Windows Sharepoint Services アダプター構成プロパティ](../core/windows-sharepoint-services-adapter-configuration-properties.md)
+ [Windows SharePoint Services アダプターの構成プロパティ](../core/windows-sharepoint-services-adapter-configuration-properties.md)

@@ -20,18 +20,18 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72f9769a571eb9b04cee21e42f5e75afbbadfafa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5fac30a9b884bc769752623003d16e7089b140d4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="migrating-functoids"></a>Functoid の移行
-以前のバージョンの BizTalk Server から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にマップを移行すると、マップに含まれる Functoid も移行されます。 移行する functoid が含まれない場合**スクリプト**functoid、追加の移行タスクは必要ありません。 ただし、マップが含まれる場合**スクリプト**functoid またはカスタム functoid を追加の手順を実行する必要があります。  
+以前のバージョンの BizTalk Server から BizTalk Server にマップを移行するときに、マップに含まれる functoid も移行します。 移行する functoid が含まれない場合**スクリプト**functoid、追加の移行タスクは必要ありません。 ただし、マップが含まれる場合**スクリプト**functoid またはカスタム functoid を追加の手順を実行する必要があります。  
   
  すべてのカスタム スクリプトを BizTalk Server の以前のバージョンに含まれている、**スクリプト**functoid がインラインで書き込まれました。 つまり、Functoid を作成する際、実行時に Functoid で呼び出されるすべてのスクリプトが Functoid と共に格納されていました。 別の functoid で同じスクリプトを使用する場合をコピーして貼り付けるか、いずれかから**スクリプト**するか、別の functoid を最初からスクリプトを書き直していました。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、マップを移行すると、Functoid と共に既存のインライン スクリプトもコピーされます。 ただし、すべてのスクリプトは正常に機能します。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Visual Basic .NET および JScript .NET ではなく VBScript と JScript の以前のバージョンを使用します。 .NET バージョンの言語では、構文に一部の変更があります。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、マップを移行すると、Functoid と共に既存のインライン スクリプトもコピーされます。 ただし、すべてのスクリプトは正常に機能します。 BizTalk Server は、VBScript ではなく、Visual Basic .NET および JScript .NET を使用し、JScript が以前のバージョンで使用します。 .NET バージョンの言語では、構文に一部の変更があります。  
   
 > [!NOTE]
 >  必ずテストして、**スクリプト**functoid を移行した後です。  

@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0646f1c447cfc4949edafe94d634a6c651083307
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72147ffe0f29fbb8456e4d652877b66e7ce0543c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-database-using-stored-procedures-functions-or-packaged-procedures-and-functions"></a>ストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して Oracle データベースをポーリング
 構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースを定期的にポーリングするストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して、定期的なデータの変更メッセージを受信します。 ストアド プロシージャ、関数、またはパッケージ化されたプロシージャを指定し、アダプターが Oracle データベースをポーリングする定期的に実行されるポーリング ステートメントとして機能できます。  
@@ -111,7 +111,7 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |[Identifier]|型**受信**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*Polling.OracleEBSBindingSchema*ここで、*ポーリング*BizTalk プロジェクトの名前を指定します。 *OracleEBSBindingSchema* 、応答スキーマに対して生成されるは、 **GET_ACTIVITYS**ストアド プロシージャです。<br /><br /> **重要:**ポーリングは、一方向の操作、アダプターによって生成されたスキーマにノードがありません、応答、およびスキーマには 1 つだけのルート ノードがない、ためためです。 メッセージ型のようなスキーマを使用する場合は、生成されたスキーマのファイル名でスキーマを識別する必要があります。<br /><br /> たとえば、双方向の操作のスキーマを作成する場合、スキーマ内のノード ファイルの名前を持つ`OracleEBSBindingSchema`「要求」および"Response"のようになります。 確認して、リスト内のスキーマを識別するには、要求スキーマにマップされるオーケストレーションでメッセージを作成する場合は、`OracleEBSBindingSchema.Request`です。 ただし、ポーリング操作の場合、唯一のノードが「投票」であるため簡単ではありません 1 つのノードでスキーマに設定されていないためにマップするスキーマを識別する\<schemafilename >.\<rootnodename >。 代わりに、このようなスキーマ ファイル名のみが表示されます。 このような場合は、スキーマ ファイル名、たとえば、OracleEBSBindingSchema では、スキーマを識別するしかありません。|  
+    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*Polling.OracleEBSBindingSchema*ここで、*ポーリング*BizTalk プロジェクトの名前を指定します。 *OracleEBSBindingSchema* 、応答スキーマに対して生成されるは、 **GET_ACTIVITYS**ストアド プロシージャです。<br /><br /> **重要:**ポーリングは、一方向の操作、アダプターによって生成されたスキーマにノードがありません、応答、およびスキーマには 1 つだけのルート ノードがない、ためためです。 メッセージ型のようなスキーマを使用する場合は、生成されたスキーマのファイル名でスキーマを識別する必要があります。<br /><br /> たとえば、双方向の操作のスキーマを作成する場合、スキーマ内のノード ファイルの名前を持つ`OracleEBSBindingSchema`「要求」および"Response"のようになります。 確認して、リスト内のスキーマを識別するには、要求スキーマにマップされるオーケストレーションでメッセージを作成する場合は、`OracleEBSBindingSchema.Request`です。 ただし、ポーリング操作の場合、唯一のノードが「投票」であるため簡単ではありません 1 つのノードでスキーマに設定されていないためにマップするスキーマを識別する\<schemafilename\>.\<rootnodename\>です。 代わりに、このようなスキーマ ファイル名のみが表示されます。 このような場合は、スキーマ ファイル名、たとえば、OracleEBSBindingSchema では、スキーマを識別するしかありません。|  
   
      [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] GET_ACTIVITYS の受信と送信の両方の操作のストアド プロシージャでは、スキーマを生成します。 受信操作のスキーマを使用する必要があります。  
   
@@ -210,7 +210,7 @@ ms.lasthandoff: 09/20/2017
 -   アダプターに指定された GET_ACTIVITYS ストアド プロシージャを実行する、 **PollingStatement** ACCOUNTACTIVITY テーブルのバインディング プロパティ、およびすべての行を返します。 Oracle データベースからの応答には、次のようになります。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <GET_ACTIVITYS xmlns=" http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/PollingPackage/ACCOUNT_PKG">  
       <OUTRECS>  
         <OUTRECSRecord xmlns=" http://Microsoft.LobServices.OracleDB/2007/03/ReferencedRecordTypes/SCOTT/ACCOUNT_PKG/GET_ACTIVITYS/SCOTT/GET_ACTIVITYS">  

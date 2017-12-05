@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbb5800ba076184f09f0159f030a44e169ac742b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7bb7b3dc8356172989c215dc13e5fd82e46f4689
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-maps"></a>マップのトラブルシューティング
 このトピックでは、マップに関するトラブルシューティングの方針、問題の詳細、および対処方法について説明します。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
  手動でマップをカスタマイズする場合は、マップ コンパイラによって生成されたバージョンを変更できます。 変更は、マッパーによって反映されず、次回ソリューションをビルドするときに失われます。  
   
-### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a>特定のシナリオを使用して、マップをチューニング\<mapsource >  
+### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a>特定のシナリオを使用して、マップをチューニング\<mapsource\>  
  属性を変更することによって、マッパーの既定動作の一部を変更することができます、 **mapsource**直接マップ ソース (.btm) ファイル内の要素。 現在、3 つの動作を変更できます。  
   
 -   **値のマッピング functoid のコード生成の最適化**です。 変数がいつ `if` ステートメントと共に使用されるかを制御する動作を変更できます。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **ループ、条件、および値のマッピング functoid と使用状況を個々 の管理**です。 `xsl:for-each` ステートメントが送信先スキーマ内のどこで使用されるかを制御できます。  
   
- 変更の詳細については**mapsource**を参照してください[を管理する既定のマッパーを使用して動作\<mapsource >](../core/managing-default-mapper-behavior-using-mapsource.md)です。  
+ 変更の詳細については**mapsource**を参照してください[を管理する既定のマッパーを使用して動作\<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md)です。  
   
 ## <a name="see-also"></a>参照  
  [[全般] のトラブルシューティングに関する質問と回答](../core/general-troubleshooting-questions-and-answers.md)   

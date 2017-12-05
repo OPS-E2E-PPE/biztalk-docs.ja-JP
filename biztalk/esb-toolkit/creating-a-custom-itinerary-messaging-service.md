@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcf96e8f76a9d2a6ad51bac462c2da101812911d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f08168e69e26d56cb39fb5c05cc53c3cbb51202
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a>カスタム Itinerary メッセージング サービスを作成します。
 Itinerary フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を実装するクラスを使用して、itinerary 手順の実行をサポートしている、 **IMessagingService** itinerary メッセージング サービスを実行するインターフェイスです。 サービスで、次を担当するときに、カスタムのメッセージング サービスを実装できます。  
@@ -78,6 +78,6 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
 1.  派生するクラスを含むアセンブリを作成**IMessagingService;**で、 **Execute**メソッド (存在する場合)、メッセージまたはメッセージのコンテキストを変更するために必要なすべてのロジックが含まれます。  
   
-2.  内のエントリを追加、 **itineraryServices** Esb.config ファイルを追加して、サービスのセクションで、  **\<itineraryService >**と GUID を持つ要素、 **id**属性をサービスとしての名前、**名前**属性とクラスの完全修飾名、**型**属性、**メッセージング**として**スコープ**属性、および、許可されているステージ (たとえば、 **OnRampReceive**、 **OnRampSend**、 **OffRampSend**、 **OffRampReceive**、 **AllSend**、 **AllReceive**、または**すべて**) として、**ステージ**属性。  
+2.  内のエントリを追加、 **itineraryServices** Esb.config ファイルを追加して、サービスのセクションで、  **\<itineraryService\>** と GUID を持つ要素、 **id**属性をサービスとしての名前、**名前**属性とクラスの完全修飾名、**型**属性、**メッセージング**として、**スコープ**属性、および、許可されているステージ (たとえば、 **OnRampReceive**、 **OnRampSend**、 **OffRampSend**、 **OffRampReceive**、 **AllSend**、 **AllReceive**、または**すべて**) として、**ステージ**属性。  
   
 3.  グローバル アセンブリ キャッシュに新しいアセンブリを登録します。

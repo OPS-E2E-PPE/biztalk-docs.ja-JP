@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72c83998bbe16899055c839a73795d456a132381
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: c11ae1067fff276d8d24639d3e4d3cc6798c6ba5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用して、アダプターを展開します。
 アダプターを展開するにはアダプター アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、machine.config ファイルにアダプターを登録します。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/07/2017
   
      例: **sn/k EchoAdapter.snk**  
   
-     確認メッセージを**キーのペアに書き込まれる** \< *file_name*>**.snk** `,`コマンド ラインで表示されます。  
+     確認メッセージを**キーのペアに書き込まれる** \< *file_name*\>**.snk** `,`コマンド ラインで表示されます。  
   
 4.  Visual Studio ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**プロパティ**です。  
   
@@ -76,18 +76,18 @@ ms.lasthandoff: 11/07/2017
   
 3.  次のコマンドを入力します。  
   
-     **gacutil.exe/if"\<**  *アセンブリ .dll ファイルのパスを* **>"**  
+     **gacutil.exe/if"\<**  *アセンブリ .dll ファイルのパスを*  **\>"**  
   
 4.  これにより、アセンブリが GAC にインストールされて、同じアセンブリ名を持つ既存のアセンブリは上書きされます。  
   
 ## <a name="register-the-adapter-in-machineconfig"></a>Machine.config でアダプターを登録します。  
- 使用して、アダプターの開発、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] WCF バインドとして表示されます。  詳細については、Microsoft.ServiceModel.Channels.Common.AdapterBinding を参照してください。  WCF アダプター バインドに登録を使用して\<bindingExtensions > セクション内\<システムです。ServiceModel > WCF アダプター トランスポートのバインド要素が登録されるとを使用して\<bindingElementExtensions > セクション内\<システムです。ServiceModel >。  
+ 使用して、アダプターの開発、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] WCF バインドとして表示されます。  詳細については、Microsoft.ServiceModel.Channels.Common.AdapterBinding を参照してください。  WCF アダプター バインドに登録を使用して\<bindingExtensions\>セクション内\<システムです。ServiceModel\> WCF アダプター トランスポートのバインド要素が登録されるとを使用して\<bindingElementExtensions\>セクション内\<システムです。ServiceModel\>です。  
   
  テキスト エディターを使用して、machine.config ファイルを手動で編集することができます。  
   
 #### <a name="manually-edit-the-machineconfig-file"></a>Machine.config ファイルを手動で編集します。  
   
-1.  Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、をクリックして**開始**をクリックして**実行**、「notepad \<Windows のインストール パス > \Microsoft.NET\Framework\\< バージョン\>\CONFIG\machine.config、クリックして**OK**です。  
+1.  Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、をクリックして**開始**をクリックして**実行**、「notepad \<Windows のインストール パス\>\Microsoft.NET\Framework\\< バージョン\>\CONFIG\クリックして、machine.config **OK**です。  
   
 2.  Machine.config ファイルを更新します。 ファイルに system.serviceModel セクションが含まれていない場合は、ルート タグの終わりの前に、構成ファイルの末尾に次のセクションを追加します。  
   
@@ -95,7 +95,7 @@ ms.lasthandoff: 11/07/2017
     >  "MyAdapterBinding"、バージョン、カルチャ、およびその他のアセンブリに固有の情報をアダプターの情報に置き換えます。  
   
     ```  
-    \<system.serviceModel>  
+    <system.serviceModel>  
       <extensions>  
         <bindingExtensions>  
             <add name="myAdapterBinding" type="Microsoft.Adapters.Samples.Echo.EchoAdapterBindingCollectionElement,EchoAdapter, Version=0.0.0.0, Culture=neutral, PublicKeyToken= fafafafafafafafa" />  
@@ -103,7 +103,7 @@ ms.lasthandoff: 11/07/2017
             <add name="echoAdapter" type="Microsoft.Adapters.Samples.Echo.EchoAdapterBindingElementExtension,EchoAdapter, Version=0.0.0.0, Culture=neutral, PublicKeyToken=37f23b4adb996dcf" />  
           </bindingElementExtensions>  
       </extensions>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
     ```  
   
      - または -  

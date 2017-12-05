@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab096378820e27c640af3262b0ae39d2fa1c5810
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6e603643ba1d969534e9954733572dc92acd04a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="node-types-and-ids-for-the-sql-server-adapter"></a>ノード型と SQL Server のアダプターの Id
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 09/20/2017
   
 |成果物|メタデータの特性|  
 |--------------|------------------------------|  
-|[テーブルまたはビュー]|<ul><li>テーブル名です。</li><li>テーブルのフィールド名です。</li><li>テーブルのフィールドのデータ型は、単純または複雑な WSDL の種類にマップされます。</li><li>テーブルのフィールドの長さは、ファセット maxLength にマップされます。</li><li>テーブルのフィールドの主キー制約は、ファセットの minOccurs にマップされて 1 を = です。</li><li>テーブルのフィールドの NULL 制約がファセット isNillable にマップされて = true です。</li><li>テーブルの操作<br /><br /> <ul><li>INSERT</li><li>SELECT</li><li>UPDATE</li><li>DELETE</li><li>設定\<列名 ></li></ul></li></ul>|  
+|[テーブルまたはビュー]|<ul><li>テーブル名です。</li><li>テーブルのフィールド名です。</li><li>テーブルのフィールドのデータ型は、単純または複雑な WSDL の種類にマップされます。</li><li>テーブルのフィールドの長さは、ファセット maxLength にマップされます。</li><li>テーブルのフィールドの主キー制約は、ファセットの minOccurs にマップされて 1 を = です。</li><li>テーブルのフィールドの NULL 制約がファセット isNillable にマップされて = true です。</li><li>テーブルの操作<br /><br /> <ul><li>INSERT</li><li>SELECT</li><li>UPDATE</li><li>DELETE</li><li>設定\<列名\></li></ul></li></ul>|  
 |プロシージャまたは関数|プロシージャまたは関数の名前は、操作名にマップされます。<br />プロシージャまたは関数のパラメーター名。<br />プロシージャまたは関数のパラメーターのデータ型は、WSDL 型にマップされます。<br />プロシージャまたは関数のパラメーターの方向は、WSDL パラメーターの方向にマップされます。<br />プロシージャ パラメーターまたは関数のパラメーター データ型の長さは、ファセット maxLength にマップされます。<br />プロシージャまたは関数のパラメーターの順序は、要素のシーケンスにマップされます。<br />関数は、データ型は WSDL 型にマップを返します。<br />関数は、データ型の長さはファセット maxLength にマップを返します。|  
   
  詳細については、形式のメタデータを[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]特定のアイテムおよび操作で SQL Server データベースに公開を参照してください[メッセージと BizTalk Adapter for SQL Server のメッセージ スキーマを](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)です。  

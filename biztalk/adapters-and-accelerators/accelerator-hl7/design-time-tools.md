@@ -22,14 +22,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e22272fd04dd3bf2461e4b9fef104657cf007fbb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1253de9aa3bc7e45324402d5de6d4705ecf8f92
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="design-time-tools"></a>デザイン時ツール
-作業する開発者[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 一連のデザイン時のツールに組み込まれているに使用されている[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]です。 これらのツールが組み込ま[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+作業する開発者[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) BizTalk Server に組み込まれたデザイン時ツールのセットを使用します。 これらのツールが組み込ま[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。  
   
 ## <a name="biztalk-editor"></a>BizTalk エディター  
  HL7 XSD スキーマを管理するのにには、BizTalk エディターを使用します。 ソリューションの開発の (XSD ファイル) として、次のサポートされるスキーマ テンプレートを使用できます。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="visual-studio-starter-project"></a>Visual Studio のスタート プロジェクト  
  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]含まれています、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]スタート プロジェクトは、HL7 ソリューションの実装のクイック スタートを使用することができます。 スターター プロジェクトには、次のプロジェクトが含まれます。  
   
--   **空**[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]**プロジェクト**です。     すべてのスキーマは含まれません。  
+-   **空**[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]**プロジェクト**です。 すべてのスキーマは含まれません。  
   
 -   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]**V2XCommon プロジェクト**です。 ヘッダーと受信確認のスキーマが含まれます。  
   

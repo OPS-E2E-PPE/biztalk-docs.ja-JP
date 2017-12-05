@@ -16,18 +16,18 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c25a348fb739f4558f1507eda0d46d209cd44c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62581310d4260ecb5b1162df1f52b0170d791d57
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-6-create-a-send-port-to-deliver-the-adta03-message-to-the-rx-system-using-the-file-adapter"></a>手順 6: ADT を配信する送信ポートを作成する ^ A03 メッセージをファイル アダプターを使用して RX システム
 この手順で、送信ポートの薬局システム (RX)、ファイル アダプターを使用してを作成します。  
   
 ### <a name="to-create-the-tutorialsendmsgrx-send-port"></a>Tutorial_sendMsg_RX 送信ポートを作成するには  
   
-1.  [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]管理コンソールを右クリックして**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
+1.  BizTalk Server 管理コンソールで、右クリック**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
   
 2.  **送信ポートのプロパティ** ダイアログ ボックスを次の操作を実行してクリックして**OK**です。  
   
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**コピー先フォルダー**|参照 **\<** *ドライブ***: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_sendMsg_RX**.|  
+    |**コピー先フォルダー**|参照 **\<** *ドライブ***:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータTutorial\Tutorial_sendMsg_RX**です。|  
     |**ファイル名**|型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
   
 4.  **送信ポートのプロパティ**] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
     >  最初のフィルターは、病院情報システム (HIS) は、メッセージの受信確認にないにサブスクライブしていることを意味します。 2 番目のフィルターでは、ソースは、受付放電と転送 (ADT) のシステム メッセージに、彼はサブスクライブしていることを意味します。  
   
     > [!NOTE]
-    >  ファイルの格納場所にメッセージをドロップする BTAHL7 \<*ドライブ*>: プログラム FilesMicrosoft BizTalk <version> HL7SDKEnd エンドツー エンド TutorialTutorial_sendMsg_RX のアクセラレータです。  
+    >  ファイルの格納場所にメッセージをドロップする BTAHL7 \<*ドライブ*\>: プログラム FilesMicrosoft BizTalk <version> HL7SDKEnd エンドツー エンド TutorialTutorial_sendMsg_RX のアクセラレータです。  
   
 6.  をクリックして**適用**、クリックして**[ok] です。**  
   

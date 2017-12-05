@@ -15,20 +15,20 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 527894b27c5720a1b006387f861922eb978069b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2abb040d79f0c9312a8761289c0bf6252fef2f3a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="extending-enumerations"></a>列挙型を拡張します。
-HL7 メッセージ本文、受信確認、およびメッセージ本文のスキーマで多くのフィールド、セグメント、およびデータ型を指定できる値を確立する列挙体に値を追加することができます。 一般的なテーブル値スキーマ ファイルで作業している HL7 のバージョンについては、特定のテーブル内の値のセットを変更する必要があります (、 **Tablevalues_\<***バージョン***> .xsd**スキーマ ファイル)。  
+HL7 メッセージ本文、受信確認、およびメッセージ本文のスキーマで多くのフィールド、セグメント、およびデータ型を指定できる値を確立する列挙体に値を追加することができます。 一般的なテーブル値スキーマ ファイルで作業している HL7 のバージョンについては、特定のテーブル内の値のセットを変更する必要があります (、 **Tablevalues_\<***バージョン* **\>.xsd**スキーマ ファイル)。  
   
- 追加する列挙体に、メッセージ ヘッダーのスキーマを別の方法でメッセージのボディ スキーマなどの他のスキーマで行うよりもします。 メッセージ ヘッダー スキーマ用には、MSH_25_GLO_DEF.xsd ファイル内のテーブルを変更する必要があります。 テーブル値のスキーマ ファイル内のテーブルを変更する他のスキーマ (tablevalues_\<バージョン > .xsd)。  
+ 追加する列挙体に、メッセージ ヘッダーのスキーマを別の方法でメッセージのボディ スキーマなどの他のスキーマで行うよりもします。 メッセージ ヘッダー スキーマ用には、MSH_25_GLO_DEF.xsd ファイル内のテーブルを変更する必要があります。 テーブル値のスキーマ ファイル内のテーブルを変更する他のスキーマ (tablevalues_\<バージョン\>.xsd)。  
   
 ### <a name="to-add-an-enumeration-value-to-the-table-values-common-schema-file"></a>テーブル値の共通スキーマ ファイルに列挙値を追加するには  
   
-1.  最初に追加する列挙体を含むテーブルを特定する必要があります。 ソリューション エクスプ ローラーで[!INCLUDE[vs2012](../../includes/vs2012-md.md)]、変更する要素が含まれたスキーマ ファイルを開きます。 BizTalk エクスプ ローラーでの値を追加するフィールドの要素をクリックします。  
+1.  最初に追加する列挙体を含むテーブルを特定する必要があります。 ソリューション エクスプ ローラーの Visual Studio で、変更する要素が含まれたスキーマ ファイルを開きます。 BizTalk エクスプ ローラーでの値を追加するフィールドの要素をクリックします。  
   
     > [!NOTE]
     >  テーブル値の共通スキーマ ファイル内の列挙型を変更すると、その列挙体を参照するすべてのオブジェクトが影響を受けます。  
@@ -38,7 +38,7 @@ HL7 メッセージ本文、受信確認、およびメッセージ本文のス�
     > [!NOTE]
     >  テーブルが表示されない場合がある**Base Data Type**フィールド、および**Derived By**プロパティに設定されていない**Restricted**フィールドには、関連付けられている列挙値はありませんし、.  
   
-3.  ソリューション エクスプ ローラーで開く、 **Tablevalues_\<***バージョン***> .xsd**、クリックして**開く**です。  
+3.  ソリューション エクスプ ローラーで開く、 **Tablevalues_\<***バージョン***\>.xsd**、クリックして**開く**です。  
   
     > [!NOTE]
     >  変更する HL7 スキーマのバージョンごとに個別にこの手順を実行する必要があります。  
@@ -71,4 +71,4 @@ HL7 メッセージ本文、受信確認、およびメッセージ本文のス�
  [宣言されている Z セグメントを作成します。](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md)   
  [スキーマでカスタム データ型を作成します。](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md)   
  [スキーマのカスタム テーブルの作成](../../adapters-and-accelerators/accelerator-hl7/creating-custom-tables-in-schemas.md)   
- [宣言されていない Z セグメントの処理](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)
+ [未宣言の Z セグメントの処理](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)

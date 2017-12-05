@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5e74e297eba5dcc92d2008bcca90fdc7b325814
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: bcd87b89c6c23e709f21e78e3ea98dd2b84575ca
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-the-virtual-directory"></a>仮想ディレクトリの構成
 このトピックでは、仮想ディレクトリを構成してユーザーのアプリケーションを確認する手順を示します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  をクリックして**開始**、 をポイント**プログラム**、 をクリックして**管理ツール**、 をクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-3.  展開**\<サーバー名 >**順に展開**サイト**です。  
+3.  展開**\<サーバー名\>**順に展開**サイト**です。  
   
 4.  右クリック**Default Web Site**  をクリック**仮想ディレクトリの追加**です。  
   

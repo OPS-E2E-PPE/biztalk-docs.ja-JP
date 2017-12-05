@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2817393a236bf0b33bce34911b7eb52a4b208ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12fb5741b75fb9792cbabf46bf7a0402972d7bb4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-3-adding-swift-schemas-to-a-project"></a>レッスン 3: SWIFT スキーマをプロジェクトに追加します。
 ソリューションと、新しいプロジェクトがある場合は、これで、プロジェクトに項目を追加できます。 追加する最初の項目は、MT103 SWIFT 支払いメッセージのスキーマです。 スキーマ テンプレートを選択すると、BizTalk エディターが起動します。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。  
   
-2.  追加既存項目の SWIFTSchemas ダイアログ ボックスを参照  **\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン > MessagePack\SWIFTMessages\A4SWIFT SRG\<バージョン > \Base スキーマ * *。  
+2.  追加既存項目の SWIFTSchemas ダイアログ ボックスを参照  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Base スキーマ * *。  
   
 3.  選択、 **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**スキーマ、およびクリック**追加**です。  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。  
   
-5.  追加既存項目の SWIFTSchemas ダイアログ ボックスを参照、   **\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン > MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン > \Category 1\MT103** フォルダーです。  
+5.  追加既存項目の SWIFTSchemas ダイアログ ボックスを参照、   **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Category 1\MT103** フォルダーです。  
   
 6.  選択、 **MT103.xsd**スキーマ、およびクリック**追加**です。  
   

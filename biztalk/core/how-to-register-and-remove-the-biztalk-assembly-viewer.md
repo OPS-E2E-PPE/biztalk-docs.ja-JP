@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: deae453be1a89049f223e2da9813e449d68eeb07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ad3628f61fec11f135bf2235f5e0d25f52992d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-register-and-remove-the-biztalk-assembly-viewer"></a>BizTalk アセンブリ ビューアーを登録および削除する方法
 BizTalk アセンブリ ビューアーは、BizTalk Server のセットアップ時に自動的に登録されません。 BizTalk アセンブリ ビューアーを登録または削除するには、次の手順を実行します。  
@@ -27,7 +27,7 @@ BizTalk アセンブリ ビューアーは、BizTalk Server のセットアッ�
   
 2.  [実行] ダイアログ ボックスに入力**cmd**です。  
   
-3.  コマンド ラインに移動\< *BizTalk Server のインストール フォルダー*> \Developer Tools\ BTSAsmExt.dll があります。  
+3.  コマンド ラインに移動\< *BizTalk Server のインストール フォルダー*\>\Developer Tools\ BTSAsmExt.dll があります。  
   
 4.  コマンド ラインで、次のコマンドを入力します。  
   
@@ -41,7 +41,7 @@ BizTalk アセンブリ ビューアーは、BizTalk Server のセットアッ�
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**です。  
   
-3.  コマンド ラインに移動\< *BizTalk Server のインストール フォルダー*> \Developer Tools\ BTSAsmExt.dll があります。  
+3.  コマンド ラインに移動\< *BizTalk Server のインストール フォルダー*\>\Developer Tools\ BTSAsmExt.dll があります。  
   
 4.  コマンド ラインで、次のコマンドを入力します。  
   
@@ -50,4 +50,4 @@ BizTalk アセンブリ ビューアーは、BizTalk Server のセットアッ�
 5.  削除を完了するには、コンピューターからログオフしてログオンし直します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk アセンブリ ビューアーを使用してアセンブリを表示します。](../core/viewing-assemblies-with-the-biztalk-assembly-viewer.md)
+ [BizTalk アセンブリ ビューアーを使用したアセンブリの表示](../core/viewing-assemblies-with-the-biztalk-assembly-viewer.md)

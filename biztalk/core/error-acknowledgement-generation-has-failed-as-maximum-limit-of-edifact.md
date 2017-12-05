@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 252f0fd6dbe77eb83018e2bb34d4a6cd07cdbdf2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a5e8bf660045bbfd1fb105f2538605302b08ab95
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="acknowledgement-generation-has-failed-as-maximum-limit-of-edifact-transaction-set-control-number-has-been-reached-for-global-settings"></a>グローバルの設定の EDIFACT トランザクション セット制御番号が上限に到達したため、受信確認の生成に失敗しました
 ## <a name="details"></a>詳細  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|イベント ソース|BizTalk Server EDI|  
 |コンポーネント|EDI エンジン|  
 |シンボル名|-|  
 |メッセージ テキスト|Guest の設定の EDIFACT トランザクション セット制御番号が、許容される上限に到達したため、受信確認の生成に失敗しました。 パートナー アグリーメント マネージャーで、[Global configuration sender role] の [UNH 1] フィールドに移動して、カウンターをリセットしてください。|  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
  トランザクション セット参照番号の最大値は、参照番号で使用する桁数によって決まります。 最大文字数は、参照番号が 14 文字、プレフィックスが 13 文字、サフィックスが 13 文字、3 つすべてのフィールドの組み合わせで 14 文字です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、[UNG および UNH セグメントの定義] ページのトランザクション セット参照番号 (UNH1) の参照番号フィールド (UNH1.2) を最大値よりも小さい値に設定し直します。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理コンソールの [EDI グローバル プロパティ] ダイアログ ボックスでこのプロパティを設定します。
+ このエラーを解決するには、[UNG および UNH セグメントの定義] ページのトランザクション セット参照番号 (UNH1) の参照番号フィールド (UNH1.2) を最大値よりも小さい値に設定し直します。 BizTalk Server 管理コンソールの [EDI グローバル プロパティ] ダイアログ ボックスで、このプロパティを設定します。

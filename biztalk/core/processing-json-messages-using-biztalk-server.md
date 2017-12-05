@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ea474e3717ec69dfe04261ba144a46350223856
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c2e4adac7c7d1503a49f68208e45e09f86b67ac
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="processing-json-messages-using-biztalk-server"></a>BizTalk Server を使用した JSON メッセージの処理
 > [!NOTE]
->  このチュートリアルは、[!INCLUDE[prague](../includes/prague-md.md)] のみを対象としています。  
+>  このチュートリアルは、BizTalk Server にのみ適用されます。  
   
- このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して JSON メッセージを処理する方法を示します。 チュートリアルでは、[!INCLUDE[prague](../includes/prague-md.md)] から入手可能なカスタム パイプライン コンポーネントを使用します。 これらのパイプライン コンポーネントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションでメッセージを受信して JSON メッセージを XML に変換し、メッセージの送信時にメッセージを XML から JSON に変換します。  
+ このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して JSON メッセージを処理する方法を示します。 このチュートリアルでは、カスタム パイプライン コンポーネント、BizTalk Server で使用できるようになりましたを使用します。 これらのパイプライン コンポーネントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションでメッセージを受信して JSON メッセージを XML に変換し、メッセージの送信時にメッセージを XML から JSON に変換します。  
   
 ## <a name="what-does-this-tutorial-do"></a>このチュートリアルの目的  
  次の内容を次の順序で実行する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を作成して、JSON の処理方法を示します:  
@@ -40,13 +40,13 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [JSON メッセージの XSD スキーマを生成します。](../core/generate-an-xsd-schema-for-json-message.md)  
+-   [JSON メッセージの XSD スキーマの生成](../core/generate-an-xsd-schema-for-json-message.md)  
   
--   [JSON メッセージを処理するカスタム パイプラインを作成します。](../core/create-custom-pipelines-to-process-json-messages.md)  
+-   [JSON メッセージ処理用のカスタム パイプラインの作成](../core/create-custom-pipelines-to-process-json-messages.md)  
   
--   [BizTalk Server オーケストレーションを作成します。](../core/create-a-biztalk-server-orchestration.md)  
+-   [BizTalk Server のオーケストレーションの作成](../core/create-a-biztalk-server-orchestration.md)  
   
--   [展開し、アプリケーションをテストします。](../core/deploy-and-test-the-application.md)  
+-   [アプリの配置およびテスト](../core/deploy-and-test-the-application.md)  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server チュートリアル](../core/biztalk-server-tutorials.md)

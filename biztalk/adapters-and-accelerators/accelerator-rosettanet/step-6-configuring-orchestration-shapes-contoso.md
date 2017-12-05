@@ -15,14 +15,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4185ea50d86b30df4bb61161bf6927845aff5c09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9310e9b287f35876a137d13dbcc2d1fa39ba9588
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a>手順 6: オーケストレーション図形 (Contoso) の構成
-この手順で作成した PrivateResponder オーケストレーションに追加するオーケストレーション図形を構成する[手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)です。 この手順では、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] と Contoso のエンタープライズ リソース計画 (ERP) システム間の通信のセットアップも行います。  
+この手順で作成した PrivateResponder オーケストレーションに追加するオーケストレーション図形を構成する[手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)です。 間の通信の設定が含まれます[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server と Contoso のエンタープライズ リソース プランニング (ERP) システムです。  
   
 ### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>ConstructMessagePIP3A2RequestMessage 図形を構成するには  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  プロパティ ウィンドウで、選択、**マップ名**プロパティ、省略記号ボタンをクリックして (**.**) 変換の構成 ダイアログ ボックスを開きます。  
   
-5.  変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス** **\<参照されたアセンブリから選択 >**を開くには、成果物の種類の選択 ダイアログ ボックスのドロップダウン リストからです。  
+5.  変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス**  **\<参照されたアセンブリから選択\>**を開くには、成果物の種類の選択 ダイアログ ボックスのドロップダウン リストからです。  
   
 6.  成果物の種類の選択 ダイアログ ボックスで、選択、 **ContosoPriceAndAvailability**左側のウィンドウでアセンブリを選択**PIP3A2RequestToContosoPriceRequest**右側のウィンドウでマップをクリック**Ok**です。  
   
@@ -177,4 +177,4 @@ ms.lasthandoff: 09/20/2017
 4.  **[OK]**をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [手順 7: を作成して、ポートを構成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)
+ [手順 7: ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f1baca3a561702546ca2fae10b1c567042cd387
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f20b35aca2c4fb35419153ccfb149aa34501b21a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-tracking-policy-execution"></a>チュートリアル: ポリシーの実行を追跡します。
 追跡を有効にするための手順、 **ProcessPurchaseOrder**ポリシー、およびポリシーが実行された後に追跡情報を表示するためです。  
@@ -88,7 +88,7 @@ ms.lasthandoff: 09/20/2017
   
 14. **ファイル** メニューのをクリックして**移動背面**です。  
   
-15. [**ファイル**] メニューのをクリックして**移動背面**もう一度です。  
+15. **[ファイル]** メニューのをクリックして**移動背面**もう一度です。  
   
 16. をクリックして**を発生させたルール**です。 ApprovalRule のみが実行された (ApprovalRule のアクションが実行された) ことがわかります。  
   
@@ -102,7 +102,7 @@ ms.lasthandoff: 09/20/2017
   
 -   ポリシーの追跡情報は、ポリシーをテストする場合にビジネス ルール作成ツールで表示される追跡情報とよく似ています。  
   
--   オーケストレーション名は RuleTest.odx ですが、名前が変更されてもオーケストレーションの型名が Orchestration_1 に設定されているため、オーケストレーションの名前は Orchestration_1 と表示されます。 追跡は、オーケストレーション名形式で表示\<Namespace >.\<名前を入力 >。  
+-   オーケストレーション名は RuleTest.odx ですが、名前が変更されてもオーケストレーションの型名が Orchestration_1 に設定されているため、オーケストレーションの名前は Orchestration_1 と表示されます。 追跡は、オーケストレーション名形式で表示\<Namespace\>.\<名前を入力\>です。  
   
 -   BizTalk Server 管理コンソールを使用して BizTalk アプリケーションからポリシーを削除した場合、そのポリシーはアプリケーションから削除されるだけでなく、ルール エンジン データベースからも削除されます。 削除されたポリシーは、ビジネス ルール作成ツールに表示されなくなります (F5 キーを押して表示を更新してください)。 このため、アプリケーションからポリシーを削除する場合は、十分に注意する必要があります。  
   

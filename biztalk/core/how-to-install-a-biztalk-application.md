@@ -17,11 +17,11 @@ caps.latest.revision: "56"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a73bd610f94e5b56dc5af5d27f90ec8bb4eb1d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ffc3d1d6d8fdbfcc168446883e2b65a7d8ed0351
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-install-a-biztalk-application"></a>BizTalk アプリケーションをインストールする方法
 ここでは、ローカル コンピューターにアプリケーションをインストールする方法について説明します。ローカル コンピューターにアプリケーションをインストールするには、Windows インターフェイスでアプリケーションの Windows インストーラー (.msi) ファイルをダブルクリックする方法と、コマンド ラインから msiexec を実行する方法があります。 」の説明に従って、インポート ウィザードの最後の手順として、インストール ウィザードに開始することもできます[を BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)です。  
@@ -91,13 +91,13 @@ ms.lasthandoff: 09/20/2017
   
      送信先コンピューターに作成された仮想ディレクトリは、次のいずれかの物理ディレクトリを指します。  
   
-     \<*インストール ドライブ*> \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive  
+     \<*インストール ドライブ*\>\Program Files\Microsoft BizTalk Server\HttpReceive  
   
      \-**または**–  
   
-     \<*インストール ドライブ*> \Program Files (x86) \Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive  
+     \<*インストール ドライブ*\>\Program Files (x86) \Microsoft BizTalk Server\HttpReceive  
   
-     BizTalk HTTP 受信 ISAPI 拡張 BTSHTTPReceive.dll が指定されたディレクトリに存在しない場合、または送信先のコンピューターが 64 ビットのオペレーティング システムを実行している場合は、ローカル パスを変更し、BizTalk HTTP 受信 ISAPI 拡張ファイルを格納する物理ディレクトリを指すように、仮想ディレクトリの場所を変更する必要があります。 たとえば、ターゲット コンピューターが実行されている 64 ビット版 Windows Vista の ローカル パス: に仮想ディレクトリの指定を変更する必要があります\<インストール ドライブ > \Program Files (x86) \Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive64.  
+     BizTalk HTTP 受信 ISAPI 拡張 BTSHTTPReceive.dll が指定されたディレクトリに存在しない場合、または送信先のコンピューターが 64 ビットのオペレーティング システムを実行している場合は、ローカル パスを変更し、BizTalk HTTP 受信 ISAPI 拡張ファイルを格納する物理ディレクトリを指すように、仮想ディレクトリの場所を変更する必要があります。 たとえば、ターゲット コンピューターが実行されている 64 ビット版 Windows Vista の ローカル パス: に仮想ディレクトリの指定を変更する必要があります\<インストール ドライブ\>\Program Files (x86) \Microsoft BizTalk Server\HttpReceive64 です。  
   
 ## <a name="to-install-a-biztalk-application"></a>BizTalk アプリケーションをインストールするには  
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  msiexec のパラメーターは、次の表に示すものだけがサポートされます。  
   
-     **msiexec** [**/i**]*パッケージ*[**/qn**] **TARGETDIR ="***値***"**]  
+     **msiexec** **[/i]***パッケージ***[/qn]** **TARGETDIR ="***値***"**]  
   
      例: **msiexec/i MyApplication.msi**  
   

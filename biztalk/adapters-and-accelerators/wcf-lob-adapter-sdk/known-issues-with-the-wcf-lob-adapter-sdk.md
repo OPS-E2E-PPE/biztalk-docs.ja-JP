@@ -12,11 +12,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 090c53b91ad30f522bc5522fbeb457d7de868456
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d718450dfd4db1fd6d695c1a3ecc21f9f1fd8deb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="known-issues-with-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK に関する既知の問題
 このトピックに関連付けられている既知の問題について説明、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 これらの問題の解決策を提供します。  
@@ -80,7 +80,7 @@ echoAdapterProxy.Open();
  **解像度**: カテゴリ全体を選択する代わりに個々 の操作を選択します。  
   
 ### <a name="error-with-add-adapter-service-reference-visual-studio-plug-in"></a>アダプター サービス参照を Visual Studio プラグインの追加エラーが発生しました  
- **問題**: Visual Studio を使用して、プロキシは既に生成されている場合に、BizTalk プロジェクト、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、同じアダプターから別のプロキシを生成すると、このエラーが生成されます:"名前空間 '\<グローバル名前空間 >'既にときに '{コントラクト名}' の定義を含むプロジェクトをコンパイルします"。  
+ **問題**: Visual Studio を使用して、プロキシは既に生成されている場合に、BizTalk プロジェクト、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、同じアダプターから別のプロキシを生成すると、このエラーが生成されます:"名前空間 '\<グローバル名前空間\>' と既に '{コントラクト名}' の定義が含まれています、プロジェクトをコンパイルします"。  
   
  このリリースでは、プロキシの編集は許可されません。  
   
@@ -92,7 +92,7 @@ echoAdapterProxy.Open();
  **解像度**: BizTalk プロジェクトで余分な XML スキーマ ファイルを削除、検索または必要なメタデータを参照する アダプター サービス参照を使用して、新しい XML スキーマ ファイルを再生成します。  
   
 ### <a name="error-with-rootnode-typename-in-biztalk-projects"></a>RootNode TypeName BizTalk プロジェクト内のエラー  
- **問題**: で、BizTalk プロジェクトから、スキーマが生成される場合、Visual Studio で、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]無効な文字または予約語を含む、 **RootNode TypeName**プロパティで、次のエラーが発生コンパイル時:"ノード\<ノード参照 >-このルート ノードの有効な .NET 型名を指定します。  このルート ノードの現在の .NET 型名が正しくありません (予約済みの BizTalk キーワードまたは、無効な c# 識別子)。  
+ **問題**: で、BizTalk プロジェクトから、スキーマが生成される場合、Visual Studio で、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]無効な文字または予約語を含む、 **RootNode TypeName**プロパティで、次のエラーが発生コンパイル時:"ノード\<ノード参照\>-このルート ノードの有効な .NET 型名を指定します。  このルート ノードの現在の .NET 型名が正しくありません (予約済みの BizTalk キーワードまたは、無効な c# 識別子)。  
   
  **解像度**: エラーで参照されているルート ノードを選択し、プロパティで、削除、無効な文字または予約済みの単語を**RootNode TypeName**プロパティです。  
   

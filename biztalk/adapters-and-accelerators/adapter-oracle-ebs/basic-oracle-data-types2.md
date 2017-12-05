@@ -13,11 +13,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fbda4edfc42f4a1cf82b9223494d7346eef7a3f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9012e2ef6adaf94f55b87bbccfc24b7fb889fbf3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="basic-oracle-data-types"></a>基本的な Oracle データ型
 このトピックの内容について説明しますが、どのように[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]サーフェスの基本的な Oracle データ型。  
@@ -57,7 +57,7 @@ ms.lasthandoff: 09/20/2017
 |バイナリ倍 * *|xsd:double 場合 prec < 15 を =<br /><br /> xsd:string 場合 prec > 15|Double<br /><br /> 文字列|-|  
 |バイナリ整数 * *|xsd:integer|Int32||  
 |ブール値|xsd:boolean|Null 許容のブール値||  
-|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**>**'、エンティティ表記に置き換える必要があります**(&lt;、 &gt;)**biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
+|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**\>**'、エンティティ表記に置き換える必要があります**(&lt;、 &gt;)**biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
   
  \*これらの Oracle データ型が表示される方法の影響を受ける、 **EnableSafeTyping**プロパティをバインドします。  
   
@@ -89,4 +89,4 @@ ms.lasthandoff: 09/20/2017
 -   によって一部のデータ型の ODP.NET します。  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter for Oracle E-business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)
+ [BizTalk Adapter for Oracle E-Business Suite 用のメッセージとメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)

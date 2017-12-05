@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8ce53882b20f6615ef280a38eddc8c3e2ef7ea3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b0c88bdeb85b8ad493b85d2569061c35bd516e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="stop-orchestration-biztalk-server-sample"></a>オーケストレーション (BizTalk Server サンプル) を停止します。
 オーケストレーションの停止のサンプルは、BizTalk Server オーケストレーションの停止方法および参加解除方法 (オプション) を示しています。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプル ファイルは、次の SDK の場所にあります。  
   
- \<*パスのサンプル*> \Admin\WMI\Stop Orchestration\  
+ \<*パスのサンプル*\>\Admin\WMI\Stop Orchestration\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -59,15 +59,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\WMI\Stop Orchestration\VBScript\  
+     \<*パスのサンプル*\>\Admin\WMI\Stop Orchestration\VBScript\  
   
 2.  cscript プログラムを使用し、次のコマンド ライン引数 (3 番目はオプション) を渡して、ファイル StopOrch.vbs を実行します。  
   
-    -   **\<**   
-         ***OrchestrationName* >。** 停止および参加解除 (オプション) の対象となる BizTalk Server オーケストレーションの名前。  
+    -   **\<** ***OrchestrationName* \>です。** 停止および参加解除 (オプション) の対象となる BizTalk Server オーケストレーションの名前。  
   
-    -   **\<**   
-         ***AssemblyName* >。** 特定のオーケストレーションが展開された BizTalk アセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<** ***AssemblyName* \>です。** 特定のオーケストレーションが展開された BizTalk アセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
   
     -   **参加を解除します。** オプションの文字列で、特定のオーケストレーションを停止および参加解除する必要があることを示します。  
   
@@ -89,4 +87,4 @@ ms.lasthandoff: 09/20/2017
  スクリプト ファイル StopOrch.vbs には、実行する操作について説明する詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
   
 ## <a name="see-also"></a>参照  
- [管理 WMI (BizTalk Server Samples フォルダ)](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

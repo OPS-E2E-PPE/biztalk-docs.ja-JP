@@ -19,11 +19,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 332d8027a12e2d58a8b177d7b0c87eeec8996217
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f7c24f15c916970926143cec4cb6bb33401efeb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqseries-adapter-configuration-properties"></a>MQSeries アダプター構成プロパティ
 次の表に、MQSeries アダプターの受信場所に設定できる構成プロパティを示します。  
@@ -71,4 +71,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  アダプター フレームワークを使用して構築されたアダプターに TransportTypeData 構成データを指定するときに使用される名前/値ペア必要がありますすべてに格納される、 \<AdapterConfig > 要素。 \<AdapterConfig > 要素は VT_BSTR を指定します (vt =「8」) データを入力し、 \< > データ内の文字をエスケープする必要があります。
+>  アダプター フレームワークを使用して構築されたアダプターに TransportTypeData 構成データを指定するときに使用される名前/値ペア必要がありますすべてに格納される、 \<AdapterConfig\>要素。 \<AdapterConfig\>要素は VT_BSTR を指定します (vt =「8」) データを入力し、 \< \>データ内の文字をエスケープする必要があります。

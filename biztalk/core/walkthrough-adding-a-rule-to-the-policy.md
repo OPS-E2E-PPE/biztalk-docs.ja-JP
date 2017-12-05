@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 343dc2e9c7965ffb27a806d18944da99777dd3ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b08fc197c16f04f3eb738468421db340060b9613
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-adding-a-rule-to-the-policy"></a>チュートリアル: ポリシーにルールを追加します。
 このチュートリアルでは、という名前のルールを追加するための手順は**DeniedRule**を**ProcessPurchaseOrder**ポリシー。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 10. ドラッグ**要求の状態**[THEN] ペインにします。  
   
-11. をクリックして**\<空の文字列 >**し、入力**Denied**です。  
+11. をクリックして**\<空の文字列\>**し、入力**Denied**です。  
   
 12. 右クリック**Version 1.2 (未保存)**、クリックして**保存**です。  
   

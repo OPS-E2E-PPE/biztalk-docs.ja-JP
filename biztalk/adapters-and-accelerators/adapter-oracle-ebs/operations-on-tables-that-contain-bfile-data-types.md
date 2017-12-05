@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 122d821754fb6df447067d18f6f5da02b79058e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c5096539b86512e51756d3a872ff566872ff520f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-tables-that-contain-bfile-data-types"></a>BFILE データ型を含むテーブルでの操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]テーブルやストアド プロシージャで BFILE データ型をサポートしています。 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 |ストアド プロシージャ|OUT パラメーター|文字列|Oracle directory の論理パス ファイルを表す BFILE 列に挿入します。<br /><br /> 例: ここで、MYDIR は Oracle では、論理ディレクトリ MYDIR/screen.jpg|  
 |ストアド プロシージャ|INOUT パラメーター|サポートされていません|-|  
   
- 特別な操作`Read_<LOBColName>`BFILE データ型を持つテーブルでサポートされても、 \<LOBColName > テーブルの LOB 列名を指定します。 `Update_<LOBColName>` BFILE データ型の操作がサポートされていません。 アダプターのクライアントは、更新操作を使用またはできます。  
+ 特別な操作`Read_<LOBColName>`BFILE データ型を持つテーブルでサポートされても、 \<LOBColName\>テーブルの LOB 列名を指定します。 `Update_<LOBColName>` BFILE データ型の操作がサポートされていません。 アダプターのクライアントは、更新操作を使用またはできます。  
   
 ## <a name="more-good-info"></a>詳細な情報  
   

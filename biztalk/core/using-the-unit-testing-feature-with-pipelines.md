@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5aca6e7be3c4fbeff2484f1d59454b09a4777cff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca19a58410014b9ea7c0c49df7420b439a544581
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>パイプラインを含む単体テスト機能の使用
 このトピックでは、単体テスト機能を使用して、FlatFileReceive パイプラインの例に、パイプラインの単体テストを追加する方法について説明します。 パイプラインの単体テストは」で説明されている Pipeline.exe ツールに似ています。[パイプライン ツール](../core/pipeline-tools.md)です。 単体テストを有効にすると、**展開**から、プロジェクトのプロパティ タブ、プロジェクト内のパイプライン クラスを派生**Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**です。  このクラスは、Pipeline.exe ツールが公開する機能と同じ機能の一部をモデル化します。  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  TestResults ディレクトリで、*.out ファイルを調べます。 このファイルには、パイプラインによって処理された新しいメッセージが含まれています。  このファイルは次のようなディレクトリにあります。  
   
-     C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009-02-04 09_01_04\Out  
+     C:\Program files \microsoft BizTalk Server\<バージョン\>\SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009-02-04 09_01_04\Out  
   
      処理されたメッセージは次のようになります。  
   
@@ -175,7 +175,7 @@ ms.lasthandoff: 09/20/2017
 |--------------------|-----------------|  
 |Documents|パイプラインによって処理されるメッセージを格納する StringCollection。|  
 |要素|メッセージの部分を格納する StringCollection。|  
-|スキーマ|対応する各メッセージの種類をマップするディクショナリ マッピング\*.xsd スキーマ ファイルです。 キーが形式である必要があります**Namespace.Type**です。 [プロパティ] ウィンドウから、名前空間と型の使用に注意してください、 \*.xsd ファイルで[!INCLUDE[vs2010](../includes/vs2010-md.md)]です。 次のスクリーンショットを見てください。<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **Namespace および XSD ファイルのプロパティ ウィンドウから公開されている型。**|  
+|スキーマ|対応する各メッセージの種類をマップするディクショナリ マッピング\*.xsd スキーマ ファイルです。 キーが形式である必要があります**Namespace.Type**です。 [プロパティ] ウィンドウから、名前空間と型の使用に注意してください、 \*Visual Studio での .xsd ファイル。 次のスクリーンショットを見てください。<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **Namespace および XSD ファイルのプロパティ ウィンドウから公開されている型。**|  
   
 ## <a name="see-also"></a>参照  
  [単体テストのスキーマおよびマップを持つ機能の使用](../core/using-the-unit-testing-feature-with-schemas-and-maps.md)   

@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18c2fd1fc45823aed0c61981251523776f886dcb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf1e7bf6f0dbfcaec97b9cc988a46d012e4ae18f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="double-action-pipautomation-orchestration"></a>ダブル アクション PIPAutomation オーケストレーション
 DoubleAction.odx のサンプルは、オーケストレーションを実装し、ダブルアクションの PIP (Partner Interface Process) である 0C2、0C4、3A2、および 3A40 に対する応答を自動的に生成する方法を示します。 このサンプル プロジェクトを拡張し、さらに多くのダブルアクション PIP をサポートすることもできます。  
@@ -27,7 +27,7 @@ DoubleAction.odx のサンプルは、オーケストレーションを実装し
 > [!NOTE]
 >  シングルアクション PIP ではなく、ダブルアクション PIP のみをサポートするように、このサンプルを拡張してください。 このオーケストレーションは、シングルアクション PIP を処理するように拡張すると、エラーを返します。 このオーケストレーションがシングルアクション PIP を処理しないように、次の「シングルアクション メッセージのフィルタリング」を参照してください。  
   
- 既定では、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップ プログラムによって、このサンプルで\<*ドライブ*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft 2013 BizTalk Accelerator for rosettanet \sdk\PIPAutomation\DoubleAction です。  
+ 既定では、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップ プログラムによって、このサンプルで\<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft 2013 BizTalk Accelerator forRosettanet \sdk\pipautomation\doubleaction です。  
   
  このサンプル プロジェクトには次のものが含まれています。  
   
@@ -39,7 +39,7 @@ DoubleAction.odx のサンプルは、オーケストレーションを実装し
   
 -   Setup.bat ファイルが DoubleAction オーケストレーションで使用する MessagesToLOB_Receive_Port の作成に使用するバインド ファイル (DoubleActionBinding.xml)。  
   
--   サンプルをビルドし、初期化するセットアップ ファイル。 場合、[!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)]ファイル setup.bat を実行する 32 ビット コンピューターでインストールが実行されている、\<ドライブ >: \Program Files\Microsoft Microsoft 2013 BizTalk Accelerator for RosettaNet \SDK\PIPAutomation\DoubleAction フォルダーです。 64 ビット コンピューター上で [!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)] のインストールを実行している場合は、同じフォルダーにある setupx64.bat を実行します。  
+-   サンプルをビルドし、初期化するセットアップ ファイル。 BizTalk Server が 32 ビット コンピューターで実行されている場合、ファイル setup.bat を実行、\<ドライブ\>: \Program Files\Microsoft Microsoft 2013 BizTalk Accelerator for RosettaNet \SDK\PIPAutomation\DoubleAction フォルダーです。 BizTalk Server が 64 ビット コンピューターで実行されている場合は、同じフォルダーにある setupx64.bat を実行します。  
   
  オーケストレーションは、BTARNData データベースの PipAutomationGetAction ストアド プロシージャを使用してメッセージを受信します (ソース ファイルは DoubleAction ディレクトリ内の DoubleAction.sql)。 このストアド プロシージャは MessagesToLOB テーブルからメッセージを取得します。  
   
@@ -47,12 +47,12 @@ DoubleAction.odx のサンプルは、オーケストレーションを実装し
   
 ### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
-1.  コマンド プロンプトで、 *\<ドライブ >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for RosettaNet 2013 \SDK\PIPAutomation\DoubleAction フォルダーです。  
+1.  コマンド プロンプトで、 *\<ドライブ\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for RosettaNet 2013 \SDK\PIPAutomation\DoubleAction フォルダーです。  
   
     > [!NOTE]
     >  セットアップ プログラムを実行する前に、メモ帳で DoubleAction.sql ファイル (上記のフォルダー内) を開きます。 **ファイル** メニューのをクリックして**名前を付けて保存**です。 **エンコード**一覧で、 **ANSI**、クリックして**保存**です。 をクリックして**はい**既存のファイルを上書きします。  
   
-2.  場合、[!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)]ファイル setup.bat を実行する 32 ビット コンピューターでインストールが実行されている、\<ドライブ >: \Program Files\Microsoft BizTalk Accelerator for RosettaNet 2013 \SDK\PIPAutomation\DoubleAction フォルダーです。 BizTalk Server 2013 のインストールが 64 ビット コンピューターで実行されている場合は、同じフォルダーにある setupx64.bat を実行します。 バッチ ファイルによって、次の処理が実行されます。  
+2.  BizTalk Server が 32 ビット コンピューターで実行されている場合、ファイル setup.bat を実行、\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for RosettaNet 2013 \SDK\PIPAutomation\DoubleAction フォルダーです。 BizTalk Server 2013 のインストールが 64 ビット コンピューターで実行されている場合は、同じフォルダーにある setupx64.bat を実行します。 バッチ ファイルによって、次の処理が実行されます。  
   
     -   BTARNDATA データベースに、MessagesToLOB テーブルからアクション メッセージを取得する SQL ストアド プロシージャ (`PipAutomationGetAction`) を作成します。 これによって、取得したレコードが再び読み取られることもなくなります。  
   
@@ -70,7 +70,7 @@ DoubleAction.odx のサンプルは、オーケストレーションを実装し
         >  コンパイル中に警告がいくつか表示されます。 これらの警告は無視してかまいません。  
   
         > [!NOTE]
-        >  サンプルが既定のホスト名を使用して**BizTalkServerApplication**プロジェクトを配置するときにします。 別のホストでサンプルを実行するには、下の DoubleActionBinding.xml で既定のホスト名を編集する必要があります\<SDK > \PIPAutomation\DoubleAction フォルダです。  
+        >  サンプルが既定のホスト名を使用して**BizTalkServerApplication**プロジェクトを配置するときにします。 別のホストでサンプルを実行するには、下の DoubleActionBinding.xml で既定のホスト名を編集する必要があります\<SDK\>\PIPAutomation\DoubleAction フォルダです。  
   
 ### <a name="to-run-the-double-action-pipautomation-sample"></a>ダブルアクション PIPAutomation サンプルを実行するには  
   
@@ -78,16 +78,13 @@ DoubleAction.odx のサンプルは、オーケストレーションを実装し
   
 2.  ループバック アグリーメント ミラー ユーティリティを使用して、手順 1. で作成した 3A4 PIP のミラーを作成します。  
   
-3.  LOBApplication.exe SDK ユーティリティを使用して、3A4 PIP 要求メッセージを送信します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、フォルダー内の入力のサンプルが含まれています\<*インストール ディレクトリ*> \SDK\LOBApplication\SampleInstances\3A4_Request.xml です。  
+3.  LOBApplication.exe SDK ユーティリティを使用して、3A4 PIP 要求メッセージを送信します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、フォルダー内の入力のサンプルが含まれています\<*インストール ディレクトリ*\>\SDK\LOBApplication\SampleInstances\3A4_Request.xml です。  
   
-4.  SQL クエリ アナライザーで、BTARNDATA データベースに次のクエリを実行します。  
+4.  BTARNDATA データベースで次のクエリを実行します。  
   
     ```  
     Select * from MessagesToLOB  
     ```  
-  
-    > [!NOTE]
-    >  使用している場合[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServer2008](../../includes/btssqlserver2008-md.md)] /2008 R2 SP1 では、使用、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] **Management Studio** SQL クエリを実行します。  
   
 5.  数秒後に、4 つの新しいメッセージがこのテーブルに表示されます。 そのうち 2 つは受信確認シグナルです。 1 つのシグナルは Async 3A4 要求メッセージです。 1 つのシグナルは Async 3A4 応答メッセージです。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 793378e25c3ba92170e1da36b0c8276ab13357ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adad4d98be93e17bef4ab5eeb9e49271ffc94b74
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>手順 2: SWIFTNet の構成を追加、Paramfile FileAct リアルタイム シナリオ
 SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。  
@@ -44,7 +44,7 @@ SAG で作成されたサーバー メッセージのパートナーは、これ
   
      subsystem_start:  
   
-     **起動"snlreceiver - SagMessagePartner \<fileact RT 用サーバー MessagePartnerName > - AdapterMode fileact"**  
+     **起動"snlreceiver - SagMessagePartner \<fileact RT 用サーバー MessagePartnerName \> -AdapterMode fileact"**  
   
      * 終了  
   
@@ -92,4 +92,4 @@ SAG で作成されたサーバー メッセージのパートナーは、これ
  [FileAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)   
  [手順 1: FileAct リアルタイム シナリオでは、SWIFT のアダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
  [手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
- [手順 4: FileAct エンド ツー エンドのリアルタイムのシナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)
+ [手順 4: FileAct リアルタイム エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)

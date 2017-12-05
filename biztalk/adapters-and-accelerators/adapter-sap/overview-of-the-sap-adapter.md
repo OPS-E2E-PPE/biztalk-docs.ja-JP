@@ -13,18 +13,18 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d19142c5626908a589a1ac3e8e3a2e45b91dd16
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3031bdf1317d96f64f1ea247c6f8cbf83e1688c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-sap-adapter"></a>SAP アダプターの概要
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を WCF サービスとして SAP システムを公開します。 アダプターのクライアントは、アダプターと SOAP メッセージを交換することで、SAP システムで操作を実行できます。 アダプターは WCF メッセージを処理して、操作を実行する SAP システムへの適切な呼び出しを行います。 アダプターは、SOAP メッセージの形式でクライアントに SAP システムからの応答を返します。  
   
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WSDL の形でメッセージの SOAP の構造を記述する SAP アイテム (RFC、BAPI、IDOC) のサーフェス メタデータ。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を使用して[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]アダプター クライアント操作のメタデータを取得するには、プログラミング ソリューションで使用できるプログラミングの成果物を生成します。 詳細については[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]を参照してください[Visual Studio での SAP システムへの接続](../../adapters-and-accelerators/adapter-sap/connect-to-the-sap-system-in-visual-studio.md)です。  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Unicode RFC ライブラリ、librfc32u.dll を使用してサポートするその他の Dll を使うことに加えて、SAP システムと通信します。 アダプターを必要とする SAP Dll の完全な一覧を参照してください、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ: > \Program Files\\[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。 使用することができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のように、SAP システムと通信します。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Unicode RFC ライブラリ、librfc32u.dll を使用してサポートするその他の Dll を使うことに加えて、SAP システムと通信します。 アダプターを必要とする SAP Dll の完全な一覧を参照してください、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 インストール ガイドがインストールされている通常\<インストール ドライブ:\>\Program Files\\[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。 使用することができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のように、SAP システムと通信します。  
   
 -   BizTalk アプリケーションを開発することによりします。 参照してください[BizTalk Server アプリケーションの開発](../../core/developing-biztalk-server-applications.md)詳細についてはします。  
   
@@ -43,4 +43,4 @@ ms.lasthandoff: 09/20/2017
 -   [アダプターでサポートされているその他の機能](https://msdn.microsoft.com/library/dd788022.aspx)  
   
 ## <a name="see-also"></a>参照  
- [MySAP Business Suite の BizTalk アダプターを理解します。](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)
+ [BizTalk Adapter for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)

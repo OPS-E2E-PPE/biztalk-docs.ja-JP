@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d4df12cfc9e37ed5deff59051cb483dd092facb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bab2a1edc7f3f19a8f76a041472a8c6d01b7743d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2016"></a>Microsoft BizTalk Adapter for SQL Server - 2016 のインストールします。
 インストール、[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]に含まれている[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。
@@ -194,7 +194,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="register-the-bindings"></a>バインドを登録します。  
 次の手順を完了*のみ*machine.config ファイルにアダプターのバインドを登録するセットアップ ウィザードが失敗した場合。  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   
@@ -338,11 +338,11 @@ ms.lasthandoff: 09/20/2017
   
 次の手順を完了*のみ*バインドを削除する、アダプター、machine.config ファイルから、セットアップ ウィザードが失敗した場合。  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
-    -   Microsoft .NET framework 3.5 SP1、 \<*バージョン*> は .NET Framework のバージョン v2.0.50727 です。  
+    -   Microsoft .NET framework 3.5 SP1、 \<*バージョン*\> .NET Framework のバージョン v2.0.50727 がします。  
   
-    -   Microsoft の[!INCLUDE[netfx40_short](../../includes/netfx40-short-md.md)]、 \<*バージョン*> は .NET Framework のバージョン v4.0.30319 します。  
+    -   Microsoft の[!INCLUDE[netfx40_short](../../includes/netfx40-short-md.md)]、 \<*バージョン*\>は、.NET Framework のバージョン v4.0.30319 します。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   
@@ -380,5 +380,5 @@ ms.lasthandoff: 09/20/2017
 4.  machine.config ファイルを保存して閉じます。  
   
 ## <a name="see-also"></a>参照
-[SQL アダプターをインストールします。](../../adapters-and-accelerators/adapter-sql/install-the-sql-adapter.md)  
-[SQL Server の BizTalk アダプターを理解します。](../../adapters-and-accelerators/adapter-sql/understand-biztalk-adapter-for-sql-server.md)
+[SQL アダプターをインストールする](../../adapters-and-accelerators/adapter-sql/install-the-sql-adapter.md)  
+[BizTalk Adapter for SQL Server を理解する](../../adapters-and-accelerators/adapter-sql/understand-biztalk-adapter-for-sql-server.md)

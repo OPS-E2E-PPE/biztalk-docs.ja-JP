@@ -16,11 +16,11 @@ caps.latest.revision: "61"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22b16e8c33dfdbf44b000cc9a048e86a5869d616
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 706bc1cec8afc796fa44e022243782a207fe1777
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションのインストール方法
 次の手順では、ビジネス プロセス管理 (BPM) ソリューションをコンピューターにインストールするための準備方法と、このコンピューターにソリューションをインストールする方法について説明します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [ビジネス プロセス管理ソリューションをインストールするのには、コンピューターを構成します。](#step3)  
   
--   [ビジネス プロセス管理ソリューションをインストールします。](#step5)  
+-   [ビジネス プロセス管理ソリューションのインストール](#step5)  
   
 > [!NOTE]
 >  ソリューションを展開するには、いくつかのバッチ ファイルを実行します。 スクリプトが正常終了したことを確認できるように、バッチ ファイルの出力をテキスト ファイルにリダイレクトすることをお勧めします。  
@@ -125,10 +125,10 @@ ms.lasthandoff: 09/20/2017
   
     |名前|トランザクション|トランザクション プロトコル|  
     |----------|-------------------|--------------------------|  
-    |ToFacilitiesQ|はい|ネイティブ|  
-    |FromFacilitiesQ|はい|ネイティブ|  
-    |FromFixedOrdersQ|はい|ネイティブ|  
-    |ToServicingSystemQ|はい|ネイティブ|  
+    |ToFacilitiesQ|可|ネイティブ|  
+    |FromFacilitiesQ|可|ネイティブ|  
+    |FromFixedOrdersQ|可|ネイティブ|  
+    |ToServicingSystemQ|可|ネイティブ|  
     |ToCSRSystemQ|不可|HTTP|  
     |ToVendorSystemQ|不可|HTTP|  
   
@@ -262,8 +262,8 @@ ms.lasthandoff: 09/20/2017
         |プロパティ名|値|  
         |-------------------|-----------|  
         |**[サーバー]**|`localhost`|  
-        |**[ユーザー名]**|\<*BizTalk サービス アカウント名*>|  
-        |**Password**|\<*BizTalk サービス アカウントのパスワード*>|  
+        |**[ユーザー名]**|\<*BizTalk サービス アカウント名*\>|  
+        |**Password**|\<*BizTalk サービス アカウントのパスワード*\>|  
   
 6.  BPM ソリューションを実行します。 ソリューションの実行の詳細については、次を参照してください。[ビジネス プロセス管理ソリューションを実行する方法](../core/how-to-run-the-business-process-management-solution.md)です。  
   
@@ -272,4 +272,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [ビジネス プロセス管理ソリューションをインストールする前に](../core/before-installing-the-business-process-management-solution.md)   
- [ビジネス プロセス管理ソリューションの開発者のコンピュータ設定](../core/developer-machine-setup-for-the-business-process-management-solution.md)
+ [ビジネス プロセス管理ソリューションに対する開発者のコンピューター設定](../core/developer-machine-setup-for-the-business-process-management-solution.md)

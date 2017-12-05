@@ -1,5 +1,5 @@
 ---
-title: "ファイル グループを最適化する、Databases1 |Microsoft ドキュメント"
+title: "データベース ファイル グループを最適化 |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8d7a9feb1f455a24b397c2dbd0084d08f1cf332
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6df4f1213ed35c06b14ae127cf0593abfdd8ff35
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>データベースのファイル グループを最適化します。
 ファイルは、入出力 (I/O) の競合が頻繁に限定要素、または実稼働環境の BizTalk Server 環境で、ボトルネックです。 BizTalk Server は非常にデータベースの処理を要するアプリケーションと、さらに、大量の I/O を非常にファイルは、BizTalk Server によって使用される SQL Server データベース。  
@@ -26,13 +26,13 @@ ms.lasthandoff: 09/20/2017
 ## <a name="overview"></a>概要  
  すべての BizTalk Server ソリューションでは、スループットが増加するにつれて、ファイル I/O の競合が最終的に発生します。 I/O サブシステムまたはストレージ エンジンは、任意のリレーショナル データベースの主要コンポーネントです。 通常、データベースの実装を成功させるには、プロジェクトの初期段階で慎重に計画を立てる必要があります。 計画では、次の問題について検討する必要があります。  
   
--   RAID (Redundant Array of Independent Disks) デバイスなど、使用するディスク ハードウェアの種類。 詳細については、RAID ハードウェア ソリューションを使用して、参照してください"に関するハードウェア ベースのソリューション"、SQL Server オンライン ブックで[http://go.microsoft.com/fwlink/?LinkID=113944](http://go.microsoft.com/fwlink/?LinkID=113944)です。  
+-   RAID (Redundant Array of Independent Disks) デバイスなど、使用するディスク ハードウェアの種類。 
   
--   ファイルおよびファイル グループを使用してディスク上のデータを分配する方法。 SQL Server 2008 でのファイルおよびファイル グループの使用の詳細については、「を使用してファイルとファイル グループ」、SQL Server オンライン ブックでを参照してください[http://go.microsoft.com/fwlink/?。LinkID = 69369](http://go.microsoft.com/fwlink/?LinkID=69369)および「Understanding ファイルおよびファイル グループ」、SQL Server オンライン ブックで[http://go.microsoft.com/fwlink/?LinkID = 96447](http://go.microsoft.com/fwlink/?LinkID=96447)です。  
+-   ファイルおよびファイル グループを使用してディスク上のデータを分配する方法。 SQL Server でファイルとファイル グループを使用する方法の詳細については、次を参照してください。 [Database Files and Filegroups](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups)です。
   
--   データにアクセスする場合は、パフォーマンスを向上させるための最適なインデックスの設計を実装します。 インデックスのデザインの詳細については、「設計インデックス」の SQL Server オンライン ブックを参照してください。 [http://go.microsoft.com/fwlink/?LinkID=96457](http://go.microsoft.com/fwlink/?LinkID=96457)です。  
+-   データにアクセスする場合は、パフォーマンスを向上させるための最適なインデックスの設計を実装します。 インデックスのデザインの詳細については、次を参照してください。[インデックスの設計](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide)です。
   
--   最適なパフォーマンスを SQL Server の構成パラメーターを設定する方法。 SQL Server の最適な構成パラメーターの設定に関する詳細については、「サーバーのパフォーマンスの最適化」、SQL Server オンライン ブックでを参照してください。 [http://go.microsoft.com/fwlink/?LinkID=71418](http://go.microsoft.com/fwlink/?LinkID=71418)です。  
+-   最適なパフォーマンスを SQL Server の構成パラメーターを設定する方法。 SQL Server の最適な構成パラメーターの設定に関する詳細については、次を参照してください。[サーバー構成オプション](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)です。 
   
  BizTalk Server の主な設計目標の 1 つはメッセージであることを確認する**決して**失われます。 メッセージの損失の可能性を軽減するためには、メッセージが処理されるメッセージをメッセージ ボックス データベースに書き込まれます頻繁にします。 オーケストレーションによって処理されるメッセージは、オーケストレーション内のすべての永続化ポイントのメッセージ ボックス データベースに、メッセージが書き込まれます。 これらの永続性ポイントには、メッセージと関連する状態をディスクに書き込む物理メッセージ ボックスがあります。 高いスループットでは、この永続化は、かなりのディスクの競合が生じるし、ボトルネックになる可能性があります。  
   
@@ -42,15 +42,13 @@ ms.lasthandoff: 09/20/2017
   
  さらに、ファイルおよびファイル グループを有効にするデータの配置、特定のファイル グループ内のテーブルを作成できるためです。 これにより、特定のテーブルのすべてのファイル I/O は、特定のディスクに向けることがあるために、パフォーマンスが向上します。 たとえば、頻繁に使用されるテーブルは、1 つのディスク上にある、ファイル グループ内のファイルに配置できるし、データベース内の他の頻度が低いテーブルは、2 番目のディスク上にある別のファイル グループ内の別のファイルに配置できます。  
   
- ファイル IO のボトルネックのトピックを識別するボトルネックで、データベース層でかなり詳細で説明した、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ドキュメント[http://go.microsoft.com/fwlink/?LinkId=147626](http://go.microsoft.com/fwlink/?LinkId=147626)です。 ファイル I/O (ディスク I/O) がボトルネックである最も一般的なインジケーターは、「物理ディスク: 平均ディスク キューの長さ」カウンターの値です。 「物理ディスク: 平均ディスク キューの長さ」カウンターの値が任意の SQL サーバー上の指定したディスクの約 3 より大きい場合は、そのファイルの I/O は可能性がありますボトルネックです。  
+ ファイル IO のボトルネックがかなり詳細で説明した[データベース層のボトルネック](../technical-guides/bottlenecks-in-the-database-tier.md)です。 ファイル I/O (ディスク I/O) がボトルネックである最も一般的なインジケーターは、「物理ディスク: 平均ディスク キューの長さ」カウンターの値です。 「物理ディスク: 平均ディスク キューの長さ」カウンターの値が任意の SQL サーバー上の指定したディスクの約 3 より大きい場合は、そのファイルの I/O は可能性がありますボトルネックです。  
   
  ファイルまたはファイル グループの最適化を適用することも、ファイル I/O のボトルネックの問題が解決しない場合、必要があります追加の物理マシンまたは SAN ドライブを追加することで、ディスク サブシステムのスループットを向上させる。  
   
  このトピックは、手動でファイルおよびファイル グループの最適化を適用する方法を説明が、これらの最適化もスクリプトを作成できます。 SQL スクリプトのサンプルは、このトピックの最後で提供されます。 このスクリプトは、ファイル、ファイル グループ、および特定の BizTalk Server ソリューションの SQL Server データベースによって使用されるディスク構成に対応するように変更する必要がある重要です。  
   
-> [!NOTE]  
->  このトピックでは、複数のファイルと、BizTalk メッセージ ボックス データベースのファイル グループを作成する方法について説明します。 推奨されるファイルと、BizTalk Server データベースのすべてのファイル グループの排他的なリストでは、次を参照してください**付録 B**優れた"BizTalk Server データベースの最適化"」のホワイト ペーパーで使用可能なの[http://。go.microsoft.com/fwlink/ しますか。LinkID = 101578](http://go.microsoft.com/fwlink/?LinkID=101578)です。  
-  
+ 
 ## <a name="databases-created-with-a-default-biztalk-server-configuration"></a>既定の BizTalk Server の構成で作成されたデータベース  
  これによっては、SQL Server で作成する 13 の異なるデータベースまで BizTalk Server を構成する可能性があり、これらすべてのデータベースが既定のファイル グループの作成時に機能が有効です。 SQL Server の既定のファイル グループは、ALTER DATABASE コマンドを使用して既定のファイル グループが変更されない限り、プライマリ ファイル グループがします。 次の表には、BizTalk Server を構成するときに、すべての機能が有効な場合は、SQL サーバーで作成されるデータベースが一覧表示します。  
   
@@ -80,34 +78,30 @@ ms.lasthandoff: 09/20/2017
  ほとんどの BizTalk Server ソリューション、ディスク I/O の競合やデータベースの競合が原因で発生する競合の主なソースは、BizTalk Server メッセージ ボックス データベースです。 これは、単一およびマルチ メッセージ ボックスの両方のシナリオでは true です。 BizTalk データベースを配布する値の 80% が最適化されたメッセージ ボックス データ ファイルとログ ファイルから導き出されますことを想定することお勧めします。 次の詳細なシナリオの例は、メッセージ ボックス データベースのデータ ファイルを最適化する重視されています。 次の手順し、後に指定できますその他のデータベースなど、必要に応じて、ソリューションが必要な場合、広範な追跡追跡データベースを最適化することも、します。  
   
 ## <a name="manually-adding-files-to-the-messagebox-database-step-by-step"></a>ファイルをメッセージ ボックス データベースは、詳細な手順を手動で追加します。  
- このセクションでは、メッセージ ボックス データベースにファイルを手動で追加する手順について説明します。 この例では、次の 3 つのファイル グループが追加され、メッセージ ボックスに対して複数のディスクにファイルを配布する各ファイル グループにファイルが追加します。 この例では、手順は、SQL Server 2005 と SQL Server 2008 の両方で実行されます。  
+ このセクションでは、メッセージ ボックス データベースにファイルを手動で追加する手順について説明します。 この例では、次の 3 つのファイル グループが追加され、メッセージ ボックスに対して複数のディスクにファイルを配布する各ファイル グループにファイルが追加します。   
   
 > [!NOTE]  
->  このガイドを実行するパフォーマンスのテストの目的で、ファイル グループはの一部として公開スクリプトを使用して最適化された、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]パフォーマンス最適化ガイドです。 次の手順は、参照用としてのみ提供されます。  
+>  このガイドを実行するパフォーマンスのテストの目的で、ファイル グループは BizTalk Server パフォーマンス最適化ガイドの一部として公開スクリプトを使用して最適化されました。 次の手順は、参照用としてのみ提供されます。  
   
-### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server-2005-or-sql-server-2008"></a>SQL Server 2005 または SQL Server 2008 上のメッセージ ボックス データベースにファイルを手動で追加します。  
- **以下の手順で、メッセージ ボックス データベースにファイルを手動で追加[!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)]または[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]:**  
+### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server"></a>SQL Server のメッセージ ボックス データベースにファイルを手動で追加します。
   
-> [!NOTE]  
->  ユーザー インターフェイスとの間にわずかな違いがあるときに[!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)]と[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]、以下に示す手順の両方のバージョンに適用[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。  
+1. 開いている**SQL Server Management Studio**を表示する、**サーバーへの接続** ダイアログ ボックス。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2005**または**Microsoft SQL Server 2008**をクリックして**SQL Server Management Studio**を表示する、**サーバーへの接続** ダイアログ ボックス。  
-  
-     ![SQL Server 2005 の管理ログイン画面](../technical-guides/media/641a03f4-362c-4dde-8c9d-ac313d8881e3.gif "641a03f4-362c-4dde-8c9d-ac313d8881e3")  
+     ![SQL Server の管理ログイン画面](../technical-guides/media/641a03f4-362c-4dde-8c9d-ac313d8881e3.gif "641a03f4-362c-4dde-8c9d-ac313d8881e3")  
   
 2.  **サーバー名**のフィールド、**サーバーへの接続**ダイアログ ボックスで、BizTalk Server メッセージ ボックス データベースを格納する SQL Server インスタンスの名前を入力し、をクリックして、**接続**を表示するボタン、 **Microsoft SQL Server Management Studio**  ダイアログ ボックス。  
   
-     **オブジェクト エクスプ ローラー** SQL Server Management Studio のウィンドウが展開**データベース**のこのインスタンスのデータベースを表示する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。  
+     **オブジェクト エクスプ ローラー** SQL Server Management Studio のウィンドウが展開**データベース**を SQL Server のこのインスタンスのデータベースを表示します。  
   
-     ![SQL Server 2005 Management Studio]、[オブジェクト エクスプ ローラー](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
+     ![SQL Server Management Studio]、[オブジェクト エクスプ ローラー](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
   
 3.  クリックして、ファイルを追加する対象のデータベースを右クリックして**プロパティ**を表示する、**データベース プロパティ**データベース用のダイアログ ボックス。  
   
-     ![SQL Server 2005 データベースのプロパティ ダイアログ ボックス](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
+     ![SQL Server データベースのプロパティ ダイアログ ボックス](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
   
 4.  **データベース プロパティ**ダイアログ ボックスで、**ファイル グループ**ページ。 クリックして、**追加**BizTalkMsgBoxDb データベースの追加のファイル グループを作成するボタンをクリックします。 次の例では、次の 3 つの追加のファイル グループが追加されます。  
   
-     ![SQL Server 2005、データベースへのファイル グループの追加](../technical-guides/media/6be47c0e-06c3-45d9-bce2-a42453da7d19.gif "6be47c0e-06c3-45d9-bce2-a42453da7d19")  
+     ![SQL Server、ファイル グループをデータベースに追加する](../technical-guides/media/6be47c0e-06c3-45d9-bce2-a42453da7d19.gif "6be47c0e-06c3-45d9-bce2-a42453da7d19")  
   
 5.  **[データベースのプロパティ]** ダイアログ ボックスで、 **[ファイル]** ページをクリックします。  
   
@@ -115,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
      次の例では、以前に作成されたファイル グループの各、ファイルが作成され、各ファイルが別のディスクに配置されます。  
   
-     ![SQL Server 2005、ファイル、ファイル グループを追加する](../technical-guides/media/d5d5c5df-d483-4f01-8128-f98228de51b9.gif "d5d5c5df-d483-4f01-8128-f98228de51b9")  
+     ![SQL Server、ファイル、ファイル グループを追加する](../technical-guides/media/d5d5c5df-d483-4f01-8128-f98228de51b9.gif "d5d5c5df-d483-4f01-8128-f98228de51b9")  
   
 ## <a name="sample-sql-script-for-adding-filegroups-and-files-to-the-biztalk-messagebox-database"></a>BizTalk メッセージ ボックス データベースにファイルとファイル グループを追加するための SQL スクリプトのサンプル  
  次のサンプル SQL スクリプトでは、前のセクションで手動で完了したのと同じタスクを実行します。  

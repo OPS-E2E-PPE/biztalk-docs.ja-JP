@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31476c3a538427a8c582533fbb0d7ad0418e3a0f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ae1e7ad95aa8be661e283f5671d3443615c7033a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-tracking"></a>追跡を無効にする方法
 このトピックを使用した追跡を無効にする方法について説明、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 オーケストレーションの実行時にさまざまな追跡オプションを構成、送信ポート、受信ポート、およびパイプラインを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 項目の追跡オプションは、ビジネス プロセスを中断することなく、いつでも変更できます。  
@@ -138,7 +138,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  次のいずれかの操作を行います。  
   
-    -   既定値のいずれかの BizTalk パイプラインの追跡を無効にするには展開\<すべてのアイテム >。  
+    -   既定値のいずれかの BizTalk パイプラインの追跡を無効にするには展開\<すべての成果物\>です。  
   
     -   BizTalk アプリケーションに配置されているカスタム パイプラインの追跡を無効にするには、するには、パイプラインを含むアプリケーションを展開します。  
   
@@ -157,4 +157,4 @@ ms.lasthandoff: 09/20/2017
     |**パイプライン処理後のメッセージ**|無効にするには、このチェック ボックスをオフにする Url などのメタデータを保持しているし、昇格させたプロパティを保存およびパイプラインによって送信されたメッセージ本文の追跡は、します。 パイプラインが受信パイプラインの場合、このメッセージ本文は、メッセージ ボックス データベースに送信される時点の処理済みのメッセージです。アプリケーションによっては XML 形式である場合があります。 使用する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]マップが、送信パイプラインの追跡は行わ送信マップが処理される前にします。<br /><br /> このチェック ボックスは使用可能な場合にのみ、**メッセージの送信および受信イベント**が選択されています。|  
   
 ## <a name="see-also"></a>参照  
- [パフォーマンスを維持します。](../technical-guides/maintaining-performance.md)
+ [パフォーマンスの維持](../technical-guides/maintaining-performance.md)

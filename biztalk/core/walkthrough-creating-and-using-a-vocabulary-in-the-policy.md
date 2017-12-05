@@ -12,11 +12,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f44ebd8cb41f96260b48910410014da90bbed0c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fb64a0548fefb816e1975e4c858934fc3dceb7c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-and-using-a-vocabulary-in-the-policy"></a>チュートリアル: を作成して、ポリシーで、ボキャブラリを使用します。
 このチュートリアルでは、ボキャブラリを作成してで使用の詳細な手順、 **ProcessPurchaseOrder**ポリシー。  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  ドラッグ**要求の状態**を**し**ウィンドウです。  
   
-8.  をクリックして**\<空の文字列 >**し入力**Approved**です。  
+8.  をクリックして**\<空の文字列\>**し入力**Approved**です。  
   
 9. 右クリック**バージョン 1.1 (未保存)**をクリックして ポリシー エクスプ ローラー ウィンドウ、**保存**です。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57380a36759d9cf0139f295779b8e1f2628c554f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b3bc9de81259ba71547e3fb887e91872e9e549c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-qryq01txt-file"></a>QRY^Q01.txt ファイルを作成します。
 患者クエリ QRY^Q01.txt メッセージ ファイルを作成するのにには、次の手順を使用します。 チュートリアルのシナリオを確認するのに、このファイルを後で使用されます。  
@@ -30,6 +30,6 @@ ms.lasthandoff: 09/20/2017
     QRD|200307231012|D|I|4387|||20^LI|12233|RES|ALL  
     ```  
   
-2.  ファイルに保存**QRY^Q01.txt**で、 \<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative チュートリアル フォルダーし、エディターを閉じます。  
+2.  ファイルに保存**QRY^Q01.txt**で、 \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータInterrogative Tutorial フォルダを閉じて、エディターです。  
   
  進みます[DSR.txt ファイルを作成](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md)です。

@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23b835317d46dfeded65de310f8a813d4ac86749
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4df85c965943f2f2c916fef6b558f98caf2175f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="upgrade-biztalk-accelerator-for-hl7"></a>アップグレードの BizTalk Accelerator 用 HL7
 概要については、[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]プロセスをアップグレードします。 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   アップグレードすると、レジストリ キーとデータベースに自動的にバックアップされます。  
   
--   内のファイル、 *\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7 フォルダーが更新されます。  
+-   内のファイル、 *\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for HL7 フォルダーが更新されます。  
   
 > [!IMPORTANT]
 >  アップグレードがアップグレードされたファイル用の新しいフォルダーを作成できません。 また、既存のフォルダーの名前は変更。  
@@ -45,8 +45,8 @@ ms.lasthandoff: 09/20/2017
 
 ||[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]|[!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)]|BizTalk Server 2013|
 |---|---|---|---|  
-|[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2013|はい|可|不可|  
-|[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2010|不可|はい|はい|  
+|[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2013|可|可|不可|  
+|[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2010|不可|はい|可|  
 
 <a name="BKMK_UpgradeSteps"></a>   
 ## <a name="upgrade-steps"></a>アップグレード手順  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  バックアップを[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]データベースと、HL7 メッセージ スキーマ。  
   
-3.  下位にあるファイルをバックアップ、  ***\<ドライブ >*: \Program Files\Microsoft BizTalk Accelerator 用 HL7**を変更しているフォルダーです。 たとえば、SDK 内のファイルをバックアップします。  
+3.  下位にあるファイルをバックアップ、  ***\<ドライブ\>*: \Program Files\Microsoft BizTalk Accelerator 用 HL7**を変更しているフォルダーです。 たとえば、SDK 内のファイルをバックアップします。  
   
 4.  バージョンに適切な更新プログラムをインストール[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]:  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  その他のすべてのアセンブリを再展開します。  
   
-8.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] アセンブリを参照するプロジェクトまたはアセンブリを再構築します。 使用して**BTSTask.exe**で\<*ドライブ*>: \Program Files\Microsoft BizTalk Server\<バージョン > を手動でこれらのプロジェクトを再展開します。  
+8.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] アセンブリを参照するプロジェクトまたはアセンブリを再構築します。 使用して**BTSTask.exe**で\<*ドライブ*\>: \Program Files\Microsoft BizTalk Server\<バージョン\>を手動でこれらのプロジェクトを再展開します。  
   
 9. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] サービスを再開します。  
   
@@ -85,4 +85,4 @@ ms.lasthandoff: 09/20/2017
 -   BAM ポータル サーバー  
   
 ## <a name="see-also"></a>参照  
- [HL7 の BizTalk アクセラレータをインストールします。](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)
+ [BizTalk Accelerator for HL7 のインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)

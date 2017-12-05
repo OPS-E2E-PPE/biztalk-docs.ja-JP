@@ -12,16 +12,16 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2b5a0aadec9461d4ee951aa200246764e52f667
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dc5360cf5e76bfc6218f0fe54444b1651afdefae
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-the-configuration-framework"></a>構成フレームワークを使用した作業
 構成フレームワークを使用すると、セットアップ時に Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成をすばやく簡単に変更できます。 Microsoft Windows インストーラ (MSI) と組み合わせた構成フレームワークでは、コンピュータの状態と操作に必要な構成タスクが読み取られ、レポートされます。  
   
- 初めて構成ウィザードを使用して BizTalk Server を構成する場合、構成フレームワークによって XML ファイル (構成のスナップショット) が生成されます。この XML ファイルを後で変更 (ユーザー名やパスワードなどの変更) して、他のコンピュータにエクスポートできます。 構成のスナップショットは、構成ウィザードの一部である構成の概要ページで保存します。 このスナップショットを使用すると、スクリプト化されたインストールの一部として、構成をレプリケートできます。 このファイルは\< *BizTalk のインストール パス*> \ConfigMain.xml です。  
+ 初めて構成ウィザードを使用して BizTalk Server を構成する場合、構成フレームワークによって XML ファイル (構成のスナップショット) が生成されます。この XML ファイルを後で変更 (ユーザー名やパスワードなどの変更) して、他のコンピュータにエクスポートできます。 構成のスナップショットは、構成ウィザードの一部である構成の概要ページで保存します。 このスナップショットを使用すると、スクリプト化されたインストールの一部として、構成をレプリケートできます。 このファイルは\< *BizTalk のインストール パス*\>\ConfigMain.xml です。  
   
 > [!NOTE]
 >  XML ファイルには、パスワードが保存されていません。 このファイルを使用する前に、パスワードを入力する必要があります。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 |**/H**|-   有効なコマンド ライン パラメータを表示します。|  
   
 ## <a name="sample-configuration-xml-file"></a>構成 XML ファイルのサンプル  
- 次のコードは、すべての機能がインストールされた、構成 XML ファイルのサンプルです。 独自の構成ファイルを作成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のカスタム構成オプションを使用して、すべてのコンポーネントが正常に完了したことを確認し、構成ウィンドウで [**構成のエクスポート**] を選択します。 その後、エクスポートされた構成ファイルを使用して、他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成することができます。  
+ 次のコードは、すべての機能がインストールされた、構成 XML ファイルのサンプルです。 独自の構成ファイルを作成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のカスタム構成オプションを使用して、すべてのコンポーネントが正常に完了したことを確認し、構成ウィンドウで **[構成のエクスポート]** を選択します。 その後、エクスポートされた構成ファイルを使用して、他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成することができます。  
   
 ```  
 <Configuration>  

@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e48ec0dddcf17be70b915d2beb058f1ab2f6f576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 25af22c85602c323b87340cce8b740fe5b68accb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="assembly-installation-in-the-gac"></a>GAC でのアセンブリのインストール
 各コンピューターには、コンピューター上のアプリケーション間で共有されるアセンブリを格納するグローバル アセンブリ キャッシュ (GAC) があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が実行時にメッセージを処理するためには、BizTalk アプリケーションに含まれるアセンブリが、アプリケーションを実行するコンピューターの GAC に存在する必要があります。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
      さらに、オプションを構成できますデプロイ アセンブリに配置またはアプリケーションに追加された後、いつでも」の説明に従って[BizTalk アセンブリの展開オプションを変更する方法](../core/how-to-modify-the-deployment-options-of-a-biztalk-assembly.md)です。 アセンブリを展開するときに[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]から[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]最初に、管理コンソールの展開オプションは次のように設定します。 インストール時に GAC が有効になっており、インポート時に GAC が無効になっています。 これらの設定を変更する場合、変更内容がまだされる効果場合からアセンブリを再展開[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  
   
--   **ドラッグ アンド ドロップします。** Windows エクスプ ローラーを使用して、ドラッグ アンド ドロップできますアセンブリ ファイルを\< *Windows フォルダー*> \assembly です。  
+-   **ドラッグ アンド ドロップします。** Windows エクスプ ローラーを使用して、ドラッグ アンド ドロップできますアセンブリ ファイルを\< *Windows フォルダー*\>\assembly です。  
   
 -   **その他の方法です。** アセンブリを GAC にインストールするためのツールおよび方法は他にもあります。たとえば、Windows インストーラーやサード パーティ ベンダー製のツールを使用する方法です。  
   
@@ -49,4 +49,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開します。](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)   
- [BizTalk アプリケーションの展開と管理を理解します。](../core/understanding-biztalk-application-deployment-and-management.md)
+ [BizTalk アプリケーションの展開と管理について](../core/understanding-biztalk-application-deployment-and-management.md)

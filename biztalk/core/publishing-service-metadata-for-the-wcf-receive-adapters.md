@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d922c0acecf81a96b0e40cebf739e7b56c5ffd3e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b8a15ab9258c9212c2fa6fdd6557227f534a86c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="publishing-service-metadata-for-the-wcf-receive-adapters"></a>WCF 受信アダプタへのサービス メタデータの公開
 BizTalk WCF サービス公開ウィザードでは、既存の WCF 受信場所のサービス メタデータを公開するための WCF サービスを作成できます。 公開されたメタデータ ドキュメントからクライアント サービス モデル コードを生成するに含まれている Service Model メタデータ ユーティリティ ツール (SvcUtil.exe) を使用することができます、 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]ソフトウェア開発キット (SDK) の[!INCLUDE[btsWinVista](../includes/btswinvista-md.md)]と[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]ランタイム コンポーネントです。  
@@ -40,7 +40,7 @@ BizTalk WCF サービス公開ウィザードでは、既存の WCF 受信場所
 |ファイル|フォルダー|Description|  
 |----------|------------|-----------------|  
 |WCF サービス (.svc ファイル)|\|WCF 受信場所にサービス メタデータを公開する WCF サービス。 WCF サービスは、HTTP GET 要求で取得できるようにサービス メタデータを公開します。|  
-|Web.config|\|ASP.NET 構成ファイル。このファイルには、ASP.NET Web アプリケーションの動作、公開済み WCF サービスの動作、メタデータ エンドポイント、および BizTalk 固有の設定についての情報が含まれます。 ウィザードには、Web.config が生成されるときに、 **httpGetEnabled**の属性、  **\<serviceMetadata >**要素に設定されている**true**です。 メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。 メタデータが公開されるアドレスは、WCF サービスのエンドポイント アドレスと**? wsdl**クエリ文字列。 **注:** BizTalk WCF 公開ウィザードによって生成される既定のメタデータ バインディングが安全でないと、メタデータへの匿名アクセスを許可します。 サービス メタデータには、サービスの詳細な説明が含まれており、意図的に、または意図せずに機密情報が含まれる可能性があります。 サービス メタデータを不正アクセスから保護するには、メタデータ エンドポイントでセキュリティ保護されたバインドを使用するように Web.config を変更します。|  
+|Web.config|\|ASP.NET 構成ファイル。このファイルには、ASP.NET Web アプリケーションの動作、公開済み WCF サービスの動作、メタデータ エンドポイント、および BizTalk 固有の設定についての情報が含まれます。 ウィザードには、Web.config が生成されるときに、 **httpGetEnabled**の属性、  **\<serviceMetadata\>** 要素に設定されている**true**です。 メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。 メタデータが公開されるアドレスは、WCF サービスのエンドポイント アドレスと**? wsdl**クエリ文字列。 **注:** BizTalk WCF 公開ウィザードによって生成される既定のメタデータ バインディングが安全でないと、メタデータへの匿名アクセスを許可します。 サービス メタデータには、サービスの詳細な説明が含まれており、意図的に、または意図せずに機密情報が含まれる可能性があります。 サービス メタデータを不正アクセスから保護するには、メタデータ エンドポイントでセキュリティ保護されたバインドを使用するように Web.config を変更します。|  
 |ServiceDescription.xml|\|メッセージの種類を含む、公開済み WCF サービスのコントラクトが記述されている XML ファイル。|  
 |BizTalk スキーマ (.xsd ファイル)|\App_Data|WCF 受信場所で使用される XML インスタンス メッセージの構造を定義する XML スキーマ。|  
 |SchemaIndex.xml|\App_Data|WCF 受信場所で使用される XML スキーマ ファイルを示す XML ファイル。|  
@@ -55,4 +55,4 @@ BizTalk WCF サービス公開ウィザードでは、既存の WCF 受信場所
 -   [オーケストレーション ポートにバインドされている BizTalk WCF サービス公開ウィザードを使用して、WCF 受信場所用にサービス メタデータを公開する方法](../core/publish-receive-location-service-metadata-biztalk-wcf-service-publishing-wizard.md)  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスの発行](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)
+ [チュートリアル: WCF-NetMsmq アダプターを使用した WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bad04c72e4c3f0caf1af8e223d3f17e4687b736
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9383dd3751f9ccdd7790b0215e596eba95dc4a45
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>マップを開く、保存、終了する方法と、マップの名前を変更する方法
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のマップは、.btm という拡張子付きのファイルとして、ファイル システム内に格納されます。 ただし、マップを開く、保存する、閉じるなどの操作は、BizTalk プロジェクト内から行うのが一般的です。  
@@ -36,13 +36,13 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 1.  ソリューション エクスプローラーで、保存するマップを選択します。  
   
-2.  **ファイル** メニューのをクリックして**保存*\<マップの名前 >***です。  
+2.  **ファイル** メニューのをクリックして**保存*\<名のマップの\>***です。  
   
 ### <a name="to-save-a-map-to-a-new-location"></a>マップを別の場所に保存するには  
   
 1.  ソリューション エクスプローラーで、マップの保存先を選択します。  
   
-2.  **ファイル** メニューのをクリックして**保存*\<マップの名前 >*として**です。  
+2.  **ファイル** メニューのをクリックして**保存*\<名のマップの\>*として**です。  
   
 3.  **ファイルに名前を付けて** ダイアログ ボックスで、マップを保存するフォルダーの場所を参照します。  
   
@@ -67,7 +67,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 2.  **[ファイル]** メニューの **[閉じる]**をクリックします。  
   
     > [!NOTE]
-    >  閉じるアイコンをクリックすることもできます ([**x**])、Microsoft の右上隅に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。  
+    >  閉じるアイコンをクリックすることもできます (**[x]**)、Microsoft の右上隅に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。  
   
 ## <a name="see-also"></a>参照  
- [プロジェクト内のマップを管理します。](../core/managing-maps-within-projects.md)
+ [プロジェクト内のマップの管理](../core/managing-maps-within-projects.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34611a463efa19f6fc8e2cb9718748cf90d09e49
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b2d0e251bf5e8a4169ff0d86cc6635944ca12e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="a4swift-cleanup-tool"></a>A4SWIFT クリーンアップ ツール
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]クリーンアップ ツールを持つサーバーを準備することができます、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]の新規インストール用にインストールされている[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]です。 ツールは、契約、部門、およびビジネス ルール エンジン (BRE) ポリシーなど、A4SWIFT の成果物を削除し、アセンブリの展開を解除します。 ツールを実行して、A4SWIFT の多くのアイテムを手動で削除されないようにすることができます、展開解除が参照されるアセンブリを他のアセンブリからの問題が解決します。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  A4SWIFT のクリーンアップ ツールを実行する前に、A4SWIFT の既定のアセンブリのいずれかを参照する他のプロジェクトを展開解除します。  
   
-2.  コマンド プロンプトを開きに移動\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for swift \sdk\tools です。  
+2.  コマンド プロンプトを開きに移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for swift \sdk\tools です。  
   
 3.  型**A4SWIFTCleanupTool.exe**キーを押します**ENTER**です。  
   

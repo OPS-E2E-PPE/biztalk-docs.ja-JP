@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2cfa89175d566ed152caa852dfc7aef2b435447
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb9ebecbd92b43dd25e6ff3dde04d942b936f40d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---first-input-to-table-looping-functoid-not-valid"></a>エラー - テーブル ループ Functoid が有効でないへの最初の入力
 **エラー コード**  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  **ユーザーの操作**  
   
- 入力パラメーターを確認してください、**テーブル ループ**を介してアクセスされると、functoid、**入力パラメーター**プロパティおよび**構成\<Functoid > Functoid**  ダイアログ ボックスでは、次の表に示すようにします。  
+ 入力パラメーターを確認してください、**テーブル ループ**を介してアクセスされると、functoid、**入力パラメーター**プロパティおよび**構成\<Functoid\>Functoid**  ダイアログ ボックスでは、次の表に示すようにします。  
   
 |テーブル ループ Functoid の入力パラメーター番号|Description|  
 |---------------------------------------------------|-----------------|  

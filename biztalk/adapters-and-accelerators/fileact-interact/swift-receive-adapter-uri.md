@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80d556994196af2412dc2719a2d576535b4ea113
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6988155f70bf197f9c468b3ee7eb48c8f2f5f53d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="swift-receive-adapter-uri"></a>SWIFT 受信アダプター URI
-URI、受信アダプターが構築されたに基づいてタキシード エンド ポイント情報 (SWIFT://\<SwTuxSrv >) SWIFTNet リンク (SNL)、およびメッセージのパートナー (SWIFT://\<SagMessagePartner >) の情報をSWIFTAlliance ゲートウェイは、アダプター (SAG RA) の展開を受信します。  
+URI、受信アダプターが構築されたに基づいてタキシード エンド ポイント情報 (SWIFT://\<SwTuxSrv\>) SWIFTNet リンク (SNL)、およびメッセージのパートナー (SWIFT://\<SagMessagePartner\>)SWIFTAlliance ゲートウェイの詳細については、アダプター (SAG RA) の展開を受信します。  
   
  これとして表されます、**アプリケーション名**受信アダプターのプロパティ ページのプロパティです。  
   
@@ -28,4 +28,4 @@ URI、受信アダプターが構築されたに基づいてタキシード エ�
  [SWIFT 受信アダプターの初期化](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-initialization.md)   
  [SWIFT 受信アダプター セキュリティ コンテキスト](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-security-context.md)   
  [SWIFT 受信アダプターの同期および遅延モード](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-synchronous-and-deferred-modes.md)   
- [SWIFT 受信アダプター ストア アンド フォワード](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-store-and-forward.md)
+ [SWIFT 受信アダプターのストア アンド フォワード](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-store-and-forward.md)

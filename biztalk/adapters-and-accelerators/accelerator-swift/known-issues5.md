@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3b2b5eadcbdbdc357529f4ad8af47d46840d47e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1356209f700fc7ceff220f4b0f8fcd3dd67db07
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues"></a>既知の問題
 このセクションでのエラーを回避するために役立つ有用な情報が含まれています。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。 既知の問題は次の分野に分かれています。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
  メッセージ修復オーケストレーションは、修正された未解析のメッセージをメッセージ ボックスにルーティング、ときに設定されます、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]空 _MRSRDepartment プロパティ文字列を昇格させることです。 送信ポートはこのプロパティにサブスクライブすることができません。  
   
 #### <a name="cannot-save-a-department-if-the-sso-service-has-been-stopped"></a>SSO サービスが停止している場合、部署を保存できません。  
- 場合は、SSO サービスが停止したときに、部門を追加しようとすると、エラーが表示されます、ことを示すプライマリ SSO サーバー \<machinename > できませんでした。 SSO が構成されていること、およびそのサーバーで SSO サービスが実行されていることを確認してください。  
+ 場合は、SSO サービスが停止したときに、部門を追加しようとすると、エラーが表示されます、ことを示すプライマリ SSO サーバー \<machinename\>できませんでした。 SSO が構成されていること、およびそのサーバーで SSO サービスが実行されていることを確認してください。  
   
 #### <a name="a-department-name-must-not-contain-the-character-"></a>部門名は文字を含めることはできません"~"  
  文字を含む部門名"~"A4SWIFT データベースと問題が発生します。  
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
  場合でも、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]セットアップ プログラムは、512、アンインストールを 32 から CacheEntries を設定[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]32 512 CacheEntries はリセットされません。  
   
- 詳細については、トピックでは、「ルール エンジンの構成およびチューニング パラメーター」を参照してください。[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ 詳細については、BizTalk Server ヘルプの「ルール エンジンの構成およびチューニング パラメーター」を参照してください。  
   
 #### <a name="building-a-pipeline-project-may-result-in-a-large-number-of-warnings"></a>警告の数が多いパイプライン プロジェクトのビルドがあります。  
  送信パイプラインまたは受信パイプラインに SWIFT 逆アセンブラーに SWIFT アセンブラーを追加し、これらのパイプラインを含むパイプライン プロジェクトをビルドすると、一連のパイプライン コンポーネントに関連する警告が表示されます。 これらの警告は、Visual Studio が依存関係を見つけられなかったことを示します。 次のように、参照 フォルダーで SWIFTAsm または SWIFTDasm アセンブリのローカル コピー プロパティを変更することによってこれらの警告を引き起こす状況を修正することができます。  

@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06b110b911c8cba2dbc643928e8b97e3746935a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23d8aac412bf81492793eec2f4936d84b54fda0d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-adding-an-xml-send-port"></a>レッスン 2: XML 送信ポートの追加
 送信ポートを使用して、メッセージを送信する方法を定義します。 このレッスンでは、XML メッセージを送信する方法を定義する送信ポートを作成します。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。  
   
-6.  フォルダーの参照 ダイアログ ボックスに移動、 **\<ドライブ >: \Labs\Outbound**フォルダーをクリックして**OK**です。  
+6.  フォルダーの参照 ダイアログ ボックスに移動、 **\<ドライブ\>: \Labs\Outbound**フォルダーをクリックして**OK**です。  
   
 7.  FILE トランスポートのプロパティ ダイアログ ボックスでいることを確認**%MessageID%.xml**で入力した、**ファイル名**ボックスし、をクリックして**OK**です。  
   

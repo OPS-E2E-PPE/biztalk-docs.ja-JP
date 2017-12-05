@@ -12,14 +12,14 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc98b010edfbc92a07af5625af16a3af77674247
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36e2f9fcc839625cc0b1ac01ec6e70b53eb2a6e2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-context-properties"></a>EDI のコンテキスト プロパティ
-EDI グローバル プロパティ スキーマのメッセージ コンテキスト プロパティは公開されるため、メッセージ ルーティングなどの操作で使用できます。 これらのコンテキスト プロパティは、Microsoft.BizTalk.Edi.BaseArtifacts アセンブリの PropertySchema.xsd で定義されています。 これらのプロパティの名前空間は `http://schemas.microsoft.com/ Edi/PropertySchema` です。 昇格されたメッセージ コンテキスト プロパティは Edi として使用できます。\<*プロパティ名*> で、**フィルター**のページ、**送信ポートのプロパティ ダイアログ ボックス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+EDI グローバル プロパティ スキーマのメッセージ コンテキスト プロパティは公開されるため、メッセージ ルーティングなどの操作で使用できます。 これらのコンテキスト プロパティは、Microsoft.BizTalk.Edi.BaseArtifacts アセンブリの PropertySchema.xsd で定義されています。 これらのプロパティの名前空間は `http://schemas.microsoft.com/ Edi/PropertySchema` です。 昇格されたメッセージ コンテキスト プロパティは Edi として使用できます。\<*プロパティ名*\>で、**フィルター**のページ、**送信ポートのプロパティ ダイアログ ボックス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
 
 
 ## <a name="context-properties-list"></a>コンテキスト プロパティの一覧  
@@ -42,8 +42,8 @@ EDI グローバル プロパティ スキーマのメッセージ コンテキ�
 |BatchName|文字列|このドキュメントを処理するときに使用するバッチ構成の名前。|  
 |CodePage|string|インターチェンジの検証に使用するコード ページです。|  
 |CONTRL_UCI4|string|CONTRL 受信確認の ActionCode フィールド。UNA または UNB セグメントのエラーが原因でインターチェンジが受理されたか (値は "8")、拒否されたか (値は "4") を示します (EDIFACT CONTRL ACK のみ)。|  
-|DestinationPartyID ([!INCLUDE[prague](../includes/prague-md.md)] では非推奨)|int|メッセージの送信先パーティの ID。|  
-|DestinationPartyName ([!INCLUDE[prague](../includes/prague-md.md)] では非推奨)|string|メッセージの送信先パーティの名前。|  
+|DestinationPartyID (BizTalk Server で非推奨)|int|メッセージの送信先パーティの ID。|  
+|DestinationPartyName (BizTalk Server で非推奨)|string|メッセージの送信先パーティの名前。|  
 |DestinationPartyReceiver<br />[Identifier]|string|メッセージの送信先パーティの識別子。 このプロパティをカスタム コンポーネントで昇格することにより、送信パイプラインでのパーティの解決を可能にすることができます。|  
 |DestinationPartyReceiver<br />Qualifier|string|メッセージの送信先パーティの修飾子。 このプロパティをカスタム コンポーネントで昇格することにより、送信パイプラインでのパーティの解決を可能にすることができます。|  
 |DestinationPartySender<br />[Identifier]|string|送信先パーティに対してメッセージを送信しているパーティの識別子。 このプロパティをカスタム コンポーネントで昇格することにより、送信パイプラインでのパーティの解決を可能にすることができます。|  
@@ -95,7 +95,7 @@ EDI グローバル プロパティ スキーマのメッセージ コンテキ�
   
  いずれかのセグメントの個別のフィールド (ISA、GS、UNB、UNG、または UNA) がメッセージ コンテキストに書き込まれる必要がある場合に、既定ではメッセージ コンテキストに書き込まれないときは、カスタム コンポーネントを記述して、このフィールドをメッセージ コンテキストに書き込む必要があります。 このカスタム コンポーネントは、セグメント フィールドを解析してから、個別のフィールドをメッセージ コンテキストに書き込むように記述する必要があります。  
   
- セグメントから個別のフィールドを抽出し、コンテキストに書き込むためにパーサーを使用する方法については、メッセージ強化サンプルに例があります。 このサンプルに含まれる、\<ドライブ >: \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples\EDI\MessageEnrichment です。 詳細については、次を参照してください。[メッセージ強化サンプル (BizTalk Server サンプル)](../core/message-enrichment-sample-biztalk-server-sample.md)です。  
+ セグメントから個別のフィールドを抽出し、コンテキストに書き込むためにパーサーを使用する方法については、メッセージ強化サンプルに例があります。 このサンプルに含まれる、\<ドライブ\>: \Program Files\Microsoft BizTalk Server\SDK\Samples\EDI\MessageEnrichment です。 詳細については、次を参照してください。[メッセージ強化サンプル (BizTalk Server サンプル)](../core/message-enrichment-sample-biztalk-server-sample.md)です。  
   
 ## <a name="see-also"></a>参照  
- [開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [BizTalk Server EDI ソリューションの開発と構成](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

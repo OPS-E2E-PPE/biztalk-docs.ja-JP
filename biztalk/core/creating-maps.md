@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8831e0d76c2bb4483bc1012ed7345c760b87bdf9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00121334b076ed4c705e7b440c75c1347e4208c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-maps"></a>マップの作成
 BizTalk マッパーの主要なユーザー インターフェイスが内のタブに表示される、 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 この表示は、3 つのペインに分割されています。 左ペインでは、送信元スキーマがツリーとして表示されます。 右ペインでは、送信先スキーマがツリーとして表示されます。 中央のペインでは、グリッドが複数のページに表示されます。 送信元スキーマのデータを送信先スキーマにどのようにマップするかを示すには、マップする対象のレコードとフィールドの間に線を引きます。 これらの行が呼び出される*リンク*データのマッピングを指定する最も簡単な方法です。 レコードおよびフィールドのリンクの詳細については、次を参照してください。[マップでリンク](../core/links-in-maps.md)です。  
@@ -49,12 +49,12 @@ BizTalk マッパーの主要なユーザー インターフェイスが内の�
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [プロジェクト内のマップを管理します。](../core/managing-maps-within-projects.md)  
+-   [プロジェクト内のマップの管理](../core/managing-maps-within-projects.md)  
   
--   [リンクを使用してレコードを指定してフィールドのマッピング](../core/using-links-to-specify-record-and-field-mappings.md)  
+-   [リンクを使用してレコードとフィールド マッピングを指定する](../core/using-links-to-specify-record-and-field-mappings.md)  
   
--   [Functoid を使用して、複雑なマッピングを作成するには](../core/using-functoids-to-create-more-complex-mappings.md)  
+-   [Functoid を使用した複雑なマッピングの作成](../core/using-functoids-to-create-more-complex-mappings.md)  
   
 -   [マップなしのマップを作成する方法](../core/how-to-create-a-map-without-maps.md)  
   
--   [既定のマッパーを使用して動作を管理する\<mapsource >](../core/managing-default-mapper-behavior-using-mapsource.md)
+-   [既定のマッパーを使用して動作を管理する\<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md)

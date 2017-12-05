@@ -12,16 +12,16 @@ caps.latest.revision: "41"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 361d2bccc783e7bfc7aa6cb0cd1f3eab51d8e640
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1357cb936c0b6f7f830bf1cc77f3d1670cf326aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-redeploy-a-biztalk-assembly-from-visual-studio"></a>Visual Studio から BizTalk アセンブリを再展開する方法
 アセンブリの開発プロセスでは、展開、テスト、修正、再展開を繰り返し行うことがしばしば必要になります。 以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バージョン番号を変更せずにアセンブリを再展開するには、まず [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でアセンブリに含まれるアイテムの停止、参加解除、バインド解除を手動で行い、次に BizTalk 管理 (構成) データベースからそのアセンブリを削除する必要がありました。 さらに、アセンブリの再展開の後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でアイテムをバインドし、参加させ、開始する必要がありました。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で再展開オプションを有効にすると、アセンブリを再展開する手順がすべて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって自動的に実行されます。 プロジェクト レベルからアセンブリを再展開することで (ソリューション エクスプローラーでプロジェクトを右クリックして [配置] をクリックするなどの手順で) 個別のアセンブリを再展開することもできますが、常にソリューション レベルからアセンブリを再展開すること (ソリューションを右クリックして [配置] をクリックするなどの手順で) を強くお勧めします。 これにより、ソリューションのアセンブリが一度に再展開され、依存関係がある場合に関連する手順がすべて処理されます。詳細については、後で説明します。  
+ BizTalk Server で、有効にすると、再展開オプションで[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]によって自動的にすべてをアセンブリを再展開する手順を実行します。 プロジェクト レベルからアセンブリを再展開することで (ソリューション エクスプローラーでプロジェクトを右クリックして [配置] をクリックするなどの手順で) 個別のアセンブリを再展開することもできますが、常にソリューション レベルからアセンブリを再展開すること (ソリューションを右クリックして [配置] をクリックするなどの手順で) を強くお勧めします。 これにより、ソリューションのアセンブリが一度に再展開され、依存関係がある場合に関連する手順がすべて処理されます。詳細については、後で説明します。  
   
 > [!IMPORTANT]
 >  プロジェクト レベルで再展開することが必要になる場合もまれにありますが、一般には、常にソリューション レベルで再展開することをお勧めします。  
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
     |*SolutionName*|ソリューション ファイルの完全パスと名前です。|  
   
 ## <a name="see-also"></a>参照  
- [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開します。](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)
+ [Visual Studio から BizTalk アプリケーションへの BizTalk アセンブリの展開](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)

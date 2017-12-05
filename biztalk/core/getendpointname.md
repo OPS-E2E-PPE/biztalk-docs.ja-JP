@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1567f0b4bceb756381c4033f3243ac7a58fda366
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7e7a310c222cead89efd23e3f8202ade9eb47ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="getendpointname"></a>GetEndpointName
 現在のインターセプタ エンドポイントの名前をスタックにプッシュします。  
@@ -39,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
  クライアント アプリケーションの場合、GetEndPointName 操作で取得されるエンドポイント名はバインド名で、その後にアンダースコアとコントラクト名が続きます。  
   
- たとえば、ServiceEndpoint の Name プロパティが設定されていないバインドが設定されている場合は、名前に設定されます\<*バインディング*> _\<*コントラクト*>。  
+ たとえば、ServiceEndpoint の Name プロパティが設定されていないバインドが設定されている場合は、名前に設定されます\<*バインディング*\>_\<*コントラクト*\>.  
   
- バインディングと名前が設定されていない場合、Name プロパティに設定されます\<*コントラクト*>。  
+ バインディングと名前が設定されていない場合、Name プロパティに設定されます\<*コントラクト*\>です。  
   
  サーバー アプリケーションの場合、App.config ファイルで指定されているエンドポイント名が取得されます。  
   

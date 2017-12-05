@@ -19,11 +19,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e652ff10c4ebfaf00069f3a7197dfd739eb680e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be03cce0c0d482563ac12bbd3b60cead04b2ccfa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="security-and-privacy-standards"></a>標準のセキュリティとプライバシー
 財務アプリケーションはサービスとの統合ソリューションを使用して開発[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ネイティブによって一般的に保護された[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]セキュリティ機能です。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]など、事実上インターネット暗号化メッセージングの標準とトランスポート プロトコル、署名証明書、積極的なセキュリティ メカニズムを使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]認証、およびエンタープライズ シングル サインオンをセキュリティで保護[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション、データ、およびランタイム。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  SWIFT メッセージとは、入力またはエンドユーザー、および接続中に、移動中の編集が含まれている情報を保護するための対策を検討することが重要[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を処理し、それらを格納します。  
   
- 同時に、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]し、設計、開発、および実行するシステムのセキュリティ保護 SWIFT メッセージングとワークフローの自動化のプラットフォーム、インフラストラクチャ、およびツールを A4SWIFT が提供されます。  
+ 同時に、BizTalk Server と A4SWIFT は、プラットフォーム、インフラストラクチャ、および設計、開発、およびメッセージ セキュリティで保護された SWIFT およびワークフロー オートメーション システムを実行するためのツールを提供します。  
   
  セキュリティを実装する場合は、設計および多くの領域を開発する必要があります。 次に、これらの領域の概要を示します。  
   

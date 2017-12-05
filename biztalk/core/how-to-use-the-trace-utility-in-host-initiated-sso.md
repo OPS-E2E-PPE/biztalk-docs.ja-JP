@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e00514515b31e79655fe457e1aa8682edf002183
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebb2003cc6091e3f14bd863902e03649d9005722
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>側開始 SSO のホストで、トレース ユーティリティを使用する方法
 トラブルシューティングの主要な方法はトレースを行うことです。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  Trace コマンドが動作するためには、tracelog.exe ファイルが次のディレクトリに存在する必要があります。  
 >   
->  \<*ドライブ*>: \program files \common files \enterprise シングル サインオン  
+>  \<*ドライブ*\>: \program files \common files \enterprise シングル サインオン  
   
 > [!NOTE]
 >  このファイルは、次の場所からダウンロードできます: [http://go.microsoft.com/fwlink/?LinkId=59534](http://go.microsoft.com/fwlink/?LinkId=59534)  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
 4.  型**Trace – start – 高**高 に、トレース レベルを設定し、トレースを開始します。  
   

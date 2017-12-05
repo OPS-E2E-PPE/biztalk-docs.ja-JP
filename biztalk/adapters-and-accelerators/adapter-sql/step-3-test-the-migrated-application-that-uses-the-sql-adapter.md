@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2eaf57c08157ffb9785f591016793c4c416704bf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32314638b3352dccb2c30eb0b99a4d328d22b092
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>手順 3: SQL アダプターを使用する移行されたアプリケーションをテストします。
 ![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 3.  オーケストレーションは、要求メッセージを使用して、SQL Server データベースに送信します。 WCF ベースのスキーマに準拠するスキーマで、SQL Server データベースからの応答が受信した[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 受信マップを使用して、Wcf-custom 送信ポートに変換しますこの、vPrev 用のスキーマに[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 上記の要求メッセージに対する応答は次のとおりです。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <InsertResponse xmlns="http://SQLInsert">  
       <Success>  
         <long xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">101</long>   

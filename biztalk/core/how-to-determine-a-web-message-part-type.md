@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0dd01d549ffbc6c299124b63df73b82f874cb4d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6102e39eb38e919c68405ae18bebde0b46c0b053
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-determine-a-web-message-part-type"></a>Web メッセージ部分の型を判別する方法
 特定の Web メッセージの種類の [プロパティ] ウィンドウを使用して、Web メッセージ部分の型がプリミティブ .NET 型かスキーマ型かを判別できます。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  メッセージ部分を選択します。  
   
-     形式で始まる Web メッセージ部分の署名  **\<*プロジェクトの既定の名前空間*>.\<*Web 参照名*>。参照。\<*スキーマ ルート*> * * は、スキーマの種類。   **\<*スキーマ ルート*> * * 型の一部は、Web メッセージ部分を構築する Web 参照スキーマのルート要素です。 それ以外の場合、メッセージ部分の署名はプリミティブ .NET 型などが**System.String**または**System.Int32**です。  
+     形式で始まる Web メッセージ部分の署名  **\<*プロジェクトの既定の名前空間*\>.\<*Web 参照名*\>です。参照。\<*スキーマ ルート*\>* * は、スキーマの種類。   **\<*スキーマ ルート*\>* * 型の一部は、Web メッセージ部分を構築する Web 参照スキーマのルート要素です。 それ以外の場合、メッセージ部分の署名はプリミティブ .NET 型などが**System.String**または**System.Int32**です。  
   
 ## <a name="see-also"></a>参照  
  [Web メッセージの構築](../core/constructing-web-messages.md)

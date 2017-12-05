@@ -15,20 +15,20 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97d8b9f443c01496b4f435a8e69d53ad3afc9abd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bc90f401a562ed34e51035ddb8b86d8e9021b4c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="changing-bam-runtime-settings"></a>BAM ランタイムの設定の変更
-通常、BAM ランタイムのコンポーネントは、Microsoft® [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のインストール時に構成します。 システムを拡張する場合やパスワードの有効期限に関するポリシーがある場合などに、BAM ランタイムの設定を変更することがあります。  
+一般に、Microsoft® BizTalk Server をインストールするときに、BAM ランタイムのコンポーネントを構成します。 システムを拡張する場合やパスワードの有効期限に関するポリシーがある場合などに、BAM ランタイムの設定を変更することがあります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [BAM 構成スキーマ](../core/bam-configuration-schema.md)  
   
--   [時間枠とタイム スライスのプロパティを定義します。](../core/defining-the-time-window-and-time-slice-properties.md)  
+-   [TimeWindow プロパティと TimeSlice プロパティの定義](../core/defining-the-time-window-and-time-slice-properties.md)  
   
 -   [BAM 構成スキーマの変更](../core/modifying-the-bam-configuration-schema.md)  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3b81a8c9c605f646a8ac0b6df2045af05eb58e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df751526661ddef455be45c4258c331c940fdd47
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders は正しい形式はいません
 ## <a name="details"></a>詳細  
@@ -32,10 +32,10 @@ ms.lasthandoff: 09/20/2017
 |メッセージ テキスト|OutboundCustomHeaders は正しい形式ではありません|  
   
 ## <a name="explanation"></a>説明  
- WCF の値。InboundHeaders または WCF です。OutboundCustomHeaders が次の形式ではありません:\<ヘッダー >...\</headers >。  
+ WCF の値。InboundHeaders または WCF です。OutboundCustomHeaders が次の形式ではありません:\<ヘッダー\>...\</headers\>です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- プロパティ値のラップ\<ヘッダー > 要素。  
+ プロパティ値のラップ\<ヘッダー\>要素。  
   
  詳細については、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   

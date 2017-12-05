@@ -12,14 +12,14 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87591ef1467608dfc17e8d9802d11456213c6947
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db0afbdc9d89296f8aaff94db057bf2e9c072392
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-optimizing-performance-on-hyper-v"></a>チェックリスト: HYPER-V のパフォーマンスを最適化します。
-次の点は、実行時に[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスを持つ、 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] HYPER-V 仮想マシン上のデータベースです。  
+次の点は、BizTalk Server を実行している場合や、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]を HYPER-V 仮想マシンで、BizTalk Server データベースを持つインスタンス。  
   
 ## <a name="allocate-110125-of-cpu-and-disk-resources-to-the-hyper-v-virtual-machines"></a>HYPER-V の仮想マシンに CPU とディスク リソースの 110% – 125% を割り当てる  
  110% から 125% の CPU リソースと 105 ~ 110% ソリューションを使用する HYPER-V 仮想マシンを物理ハードウェア ソリューションに必要なディスク リソースを割り当てることを計画します。 HYPER-V 仮想マシンを構成すると追加のリソースは、HYPER-V 仮想化テクノロジに必要なオーバーヘッドに対応しているときに、物理ハードウェアと同等のパフォーマンスを提供できることを確認します。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
 |手順|リファレンス|  
 |----------|---------------|  
 |スコープのためのハードウェア要件、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。|-"の計画、環境の BizTalk Server"」のガイダンスに従う、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]操作ガイド[http://go.microsoft.com/fwlink/?LinkId=122399](http://go.microsoft.com/fwlink/?LinkId=122399)ソリューションのハードウェア要件のスコープを指定します。<br />エディションとソリューションが必要な BizTalk Server の数は、BizTalk Server で「BizTalk Server 層を計画」に記載されている考慮事項を計画をレビューのスコープに[http://go.microsoft.com/fwlink/?LinkId=122401](http://go.microsoft.com/fwlink/?LinkId=122401)です。<br />-バージョンとの数のスコープを設定するには[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、ソリューションが必要なコンピューターでの計画に関する考慮事項の計画、データベース層に記載されているデータベースの確認[http://go.microsoft.com/fwlink/?LinkId = 122402](http://go.microsoft.com/fwlink/?LinkId=122402)で利用可能な「実行されている SQL Server 2008 in a HYPER-V 環境ベスト プラクティスとパフォーマンスに関する考慮事項」のホワイト ペーパーの"パフォーマンス オーバーヘッドのを実行している SQL Server で HYPER-V"」、および[http://go.microsoft.com/fwlink/ しますか。LinkId = 144622](http://go.microsoft.com/fwlink/?LinkId=144622)です。<br />、開発の計画を完了するにはテスト、ステージング、実稼働環境を確認「開発、テスト、ステージング、および実稼働環境の計画」で[http://go.microsoft.com/fwlink/?LinkId=122403](http://go.microsoft.com/fwlink/?LinkId=122403)です。|  
-|ハードウェア要件のスコープ設定後、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ソリューションで HYPER-V マシンを構成するプラン**110 – 125%** CPU およびディスク リソースの可能な場合です。|たとえば場合の物理ハードウェア要件[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ソリューションによって使用されるコンピューターは 2 GB RAM、デュアル コア CPU 2 GHZ、および 2 x 500 GB の物理ディスクで実行されていると判断し、理想的には、ソリューションで使用される HYPER-V 仮想マシンになります実行している 2 つ以上の仮想プロセッサを使用して構成 > =、(通常のスピンドルを追加することや、高速なディスクを使用して) によって 2.2 GHZ、および高速の物理ディスクです。|  
+|BizTalk Server ソリューションのハードウェア要件をスコープするには後で HYPER-V マシンの構成を計画します。 **110 – 125%** 、CPU およびディスク リソースの可能な場合です。|たとえば場合ソリューションによって使用される物理的な BizTalk Server コンピューターのハードウェア要件は、2 GB の RAM をあると判断される、物理ディスクは、2 GHZ、および 2 x 500 GB で実行されている、デュアル コアの CPU、理想的には、ソリューションで使用される HYPER-V 仮想マシンになります実行している 2 つ以上の仮想プロセッサを使用して構成 > =、(通常のスピンドルを追加することや、高速なディスクを使用して) によって 2.2 GHZ、および高速の物理ディスクです。|  
   
 ## <a name="optimize-hyper-v-performance"></a>HYPER-V のパフォーマンスを最適化します。  
  次の一般的なガイドラインを使用すると、パフォーマンスを最適に HYPER-V を構成できます。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
      ![1 対 1 の物理と仮想プロセッサの比率から](../technical-guides/media/90f98f0d-a223-404c-b419-81369dc92970.gif "1 対 1 の物理と仮想プロセッサの比率")  
 仮想と論理プロセッサの比率  
   
--   **さまざまなゲスト オペレーティング システム用の仮想プロセッサ数の認識し、計画を立てて -**全体的な HYPER-V 仮想マシンで実行されているゲスト オペレーティング システムに使用できるプロセッサ コアの数に影響する場合ホストされるアプリケーションのパフォーマンス。 そのため、考慮対象として加える必要のあるホストに HYPER-V 仮想マシンでゲストに関するオペレーティング システムがインストールする、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]や[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]instance(s) をホストする、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]データベース。 HYPER-V では、次の指定したゲスト オペレーティング システムの仮想プロセッサ数は対応します。  
+-   **さまざまなゲスト オペレーティング システム用の仮想プロセッサ数の認識し、計画を立てて -**全体的な HYPER-V 仮想マシンで実行されているゲスト オペレーティング システムに使用できるプロセッサ コアの数に影響する場合ホストされるアプリケーションのパフォーマンス。 そのため、考慮の対象に、BizTalk Server をホストする HYPER-V 仮想マシンで、オペレーティング システムをインストールするゲストに関するや[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]BizTalk Server データベースをホストするインスタンス。 HYPER-V では、次の指定したゲスト オペレーティング システムの仮想プロセッサ数は対応します。  
   
 |オペレーティング システム|仮想プロセッサ数の上限|  
 |----------------------|-----------------------------|  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 |手順|リファレンス|  
 |----------|---------------|  
-|HYPER-V 仮想マシンをホストする物理コンピューターにインストールされているための十分なメモリがあることを確認します。|-使用可能な物理メモリは、多くの場合の最も重要なパフォーマンス要因[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HYPER-V 仮想マシンで実行します。 これは、非ページ プール メモリまたはディスクにページできません。 メモリ内の各仮想マシンが存在する必要があるためです。 非ページ プール メモリは、ディスク、仮想マシンをホストする物理コンピューターへページングされることはできませんので必要があります、メモリの合計に等しいの使用可能な物理メモリに割り当てられているに加えて、次の各仮想マシン。<br />     ハイパーバイザーの 300 MB と最初 GB の RAM が、各仮想マシンと他のすべて GB の RAM を追加の各仮想マシンに割り当てられているため、8 MB と、ホストの 512 MB に割り当てられているため、32 MBルート パーティションで実行されているオペレーティング システム<br />     たとえば、HYPER-V 仮想マシンが 2 GB の HYPER-V マネージャーで、HYPER-V 仮想マシンを実行すると、約 2388 MB がある場合に使用される実際の物理メモリのメモリを割り当てられている場合 (仮想マシンに、ハイパーバイザーは 300 MB +2 GB が割り当てられた +32 MB + 8 MB = 2388 MB)。 ハイパーバイザーはのみに 1 回読み込む必要がある、ために、後続の仮想マシンの初期化しても、ハイパーバイザーの読み込みに関連付けられている 300 MB のオーバーヘッドは発生しません。 そのため、2 つの HYPER-V 仮想マシンが HYPER-V マネージャーでメモリの割り当てられた各 2 GB の場合は、これらの HYPER-V 仮想マシンを実行しているときに使用する実際の物理メモリは約 4476 MB する (ハイパーバイザーの 300 MB +4 GB に割り当てられた仮想マシン + 64 MB + 16 MB = 4476 MB)。 **注:**全般則として I/O 仮想化、スナップショット ファイルのサポート、および子パーティションの管理などのサービスを提供するルート パーティションには、少なくとも 512 MB のメモリを割り当てることを計画します。<br />-   **可能な場合は、64 ビットのゲスト オペレーティング システムを使用して**: 各ゲスト オペレーティング システムの 64 ビット オペレーティング システムを使用してください。 これをするため、既定では、32 ビット Windows オペレーティング システムが、アドレスを 1 つのプロセス仮想アドレス領域の最大 2 GB です。 64 ビット オペレーティング システムのインストールには、HYPER-V 仮想マシンをホストする物理コンピューターにインストールされているメモリを利用できるようにアプリケーションができます。|  
+|HYPER-V 仮想マシンをホストする物理コンピューターにインストールされているための十分なメモリがあることを確認します。|-使用可能な物理メモリは、HYPER-V 仮想マシンで実行されている BizTalk Server の最上位のパフォーマンス要因では多くの場合です。 これは、非ページ プール メモリまたはディスクにページできません。 メモリ内の各仮想マシンが存在する必要があるためです。 非ページ プール メモリは、ディスク、仮想マシンをホストする物理コンピューターへページングされることはできませんので必要があります、メモリの合計に等しいの使用可能な物理メモリに割り当てられているに加えて、次の各仮想マシン。<br />     ハイパーバイザーの 300 MB と最初 GB の RAM が、各仮想マシンと他のすべて GB の RAM を追加の各仮想マシンに割り当てられているため、8 MB と、ホストの 512 MB に割り当てられているため、32 MBルート パーティションで実行されているオペレーティング システム<br />     たとえば、HYPER-V 仮想マシンが 2 GB の HYPER-V マネージャーで、HYPER-V 仮想マシンを実行すると、約 2388 MB がある場合に使用される実際の物理メモリのメモリを割り当てられている場合 (仮想マシンに、ハイパーバイザーは 300 MB +2 GB が割り当てられた +32 MB + 8 MB = 2388 MB)。 ハイパーバイザーはのみに 1 回読み込む必要がある、ために、後続の仮想マシンの初期化しても、ハイパーバイザーの読み込みに関連付けられている 300 MB のオーバーヘッドは発生しません。 そのため、2 つの HYPER-V 仮想マシンが HYPER-V マネージャーでメモリの割り当てられた各 2 GB の場合は、これらの HYPER-V 仮想マシンを実行しているときに使用する実際の物理メモリは約 4476 MB する (ハイパーバイザーの 300 MB +4 GB に割り当てられた仮想マシン + 64 MB + 16 MB = 4476 MB)。 **注:**全般則として I/O 仮想化、スナップショット ファイルのサポート、および子パーティションの管理などのサービスを提供するルート パーティションには、少なくとも 512 MB のメモリを割り当てることを計画します。<br />-   **可能な場合は、64 ビットのゲスト オペレーティング システムを使用して**: 各ゲスト オペレーティング システムの 64 ビット オペレーティング システムを使用してください。 これをするため、既定では、32 ビット Windows オペレーティング システムが、アドレスを 1 つのプロセス仮想アドレス領域の最大 2 GB です。 64 ビット オペレーティング システムのインストールには、HYPER-V 仮想マシンをホストする物理コンピューターにインストールされているメモリを利用できるようにアプリケーションができます。|  
   
 ### <a name="optimize-network-performance"></a>ネットワークのパフォーマンスを最適化します。  
  統合デバイスでパフォーマンスが著しく向上は、CPU オーバーヘッドの削減は HYPER-V 仮想マシンで統合し、エミュレートされたネットワーク アダプターをサポートします。 各アダプターが、外部ネットワーク接続が必要な場合、物理ネットワーク アダプターに接続できる仮想ネットワーク スイッチに接続されています。 HYPER-V 仮想環境で実行されているゲスト オペレーティング システムのネットワーク パフォーマンスを最適化するためにこのセクションの推奨事項に従ってください。  

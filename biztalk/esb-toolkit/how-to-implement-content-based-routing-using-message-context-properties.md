@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e47235978960ac89f4ea276c4c4a60c8ddf16e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be099923fea9d5dbb22559203b297fadf5dd1fdc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-implement-content-based-routing-using-message-context-properties"></a>方法: メッセージ コンテキスト プロパティを使用してコンテンツ ベース ルーティングの実装
 ## <a name="goal"></a>[目標]  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>ESB 行程 DSL モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリック**ItineraryLibrary**、 をポイント**追加**、クリックして**新しい行程**です。  
   
@@ -266,8 +266,8 @@ ms.lasthandoff: 09/20/2017
   
 -   [方法: ビジネス ルール ポリシーを使用して、日程を選択](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [方法: 動的にビジネス ルール ポリシーを使用して、メッセージ コンテキストに基づいたメッセージをルーティング](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [方法: ビジネス ルール ポリシーを利用し、メッセージ コンテキストに基づき、メッセージの経路を動的に決定する](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [メッセージのルーティング パターン](../esb-toolkit/message-routing-patterns.md)
+-   [メッセージ ルーティング パターン](../esb-toolkit/message-routing-patterns.md)

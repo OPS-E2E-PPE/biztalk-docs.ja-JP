@@ -23,11 +23,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f312a91d403d125fe6d245b92bf83da57d1031fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 340cb27daf29e08ad63f20168680c6596650ca0d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-accelerator-for-swift-runtime"></a>BizTalk Accelerator for SWIFT のランタイム
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 2 つのフォームの機能を提供します。 開発材料とランタイム コンポーネント。 開発の資料には、XSD スキーマ、検証規則とポリシー、およびサンプル コードが含まれます。 ランタイム コンポーネントには、カスタム SWIFT 逆アセンブラー、カスタムの SWIFT アセンブラー、Message Repair および New Submission オーケストレーション (MrsrRepair.odx)、および FIN 対応調整オーケストレーション (FrrMain.odx) が含まれます。 Message Repair and New Submission の詳細については、次を参照してください。 [Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md)です。 FRR の詳細については、次を参照してください。 [FIN 対応調整](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation.md)です。  
@@ -44,13 +44,13 @@ ms.lasthandoff: 09/20/2017
   
  ![](../../adapters-and-accelerators/accelerator-swift/media/a4swiftsystemarchitecture-interfaceswiththeswiftnetwork.gif "A4SWIFTSystemArchitecture_InterfaceswiththeSWIFTNetwork")  
   
- A4SWIFT のすべてのコンポーネントを定義するには垂直的市場固有の実装として[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]アプリケーション コンポーネントです。 BizTalk アクセラレータが垂直的市場固有の上に BizTalk アプリケーションの開発を迅速に開発およびランタイムの機能を提供する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 したがって、A4SWIFT とすべてのコンポーネント (開発または実行時) に従うに収まるよう、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]アプリケーションのアーキテクチャです。 A4SWIFT にランタイム コンポーネントのインストール、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]カスタム コンポーネントとして実行します。 マテリアルのコンパイルおよび展開されると、A4SWIFT 開発後および[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ランタイムを使用してに SWIFT メッセージングとオートメーションの機能を提供します。  
+ A4SWIFT のすべてのコンポーネントは、BizTalk Server アプリケーション コンポーネントの垂直的市場固有の実装として定義できます。 BizTalk アクセラレータが垂直的市場固有の上に BizTalk アプリケーションの開発を迅速に開発およびランタイムの機能を提供する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 そのため、すべての A4SWIFT コンポーネント (開発または実行時) に従うし、BizTalk Server アプリケーションのアーキテクチャに適合します。 A4SWIFT にランタイム コンポーネントのインストール、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]カスタム コンポーネントとして実行します。 マテリアルのコンパイルおよび展開されると、A4SWIFT 開発後および[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ランタイムを使用してに SWIFT メッセージングとオートメーションの機能を提供します。  
   
- 次の図は、高度なアプリケーション用のトポロジ[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]です。  
+ 次の図は、BizTalk Server の高度なアプリケーションのトポロジを示します。  
   
  ![](../../adapters-and-accelerators/accelerator-swift/media/fsa-intro1.gif "FSA_Intro1")  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション モデルは、メッセージ ボックス データベースと、メッセージ ボックス データベースに出入りするメッセージ フローを制御するパブリッシャーとサブスクライバー パターンを使用します。 BizTalk のアーキテクチャとアプリケーションの設計に関する詳細については、次を参照してください。[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション モデルは、メッセージ ボックス データベースと、メッセージ ボックス データベースに出入りするメッセージ フローを制御するパブリッシャーとサブスクライバー パターンを使用します。 BizTalk のアーキテクチャとアプリケーションの設計に関する詳細については、BizTalk Server ヘルプを参照してください。  
   
  A4SWIFT アプリケーション モデルが継承、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション モデルへの追加とに SWIFT に関連するソリューションを容易に SWIFT 固有のコンポーネント[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 次に、これらの A4SWIFT 固有のコンポーネントを説明します。  
   
@@ -66,6 +66,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [SWIFT アセンブラー](../../adapters-and-accelerators/accelerator-swift/swift-assembler.md)  
   
--   [経由して送信メッセージの受信場所と InfoPath フォーム](../../adapters-and-accelerators/accelerator-swift/submitting-messages-through-receive-locations-and-infopath-forms.md)  
+-   [受信場所と InfoPath フォームを介したメッセージの送信](../../adapters-and-accelerators/accelerator-swift/submitting-messages-through-receive-locations-and-infopath-forms.md)  
   
 -   [メッセージ検証エンジン](../../adapters-and-accelerators/accelerator-swift/message-validation-engine.md)

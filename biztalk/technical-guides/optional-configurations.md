@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5e938112b5c49b789b76889a45172d5fc0579a1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7b19646c9c83eff4a3171b4d25763a6b581d45b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="optional-configurations"></a>オプションの構成
 BizTalk Server 管理パックをインポートした後、[監視] ウィンドウのナビゲーション ウィンドウには、自動的に検出されるオブジェクトの種類が表示されます。 オブジェクトの種類の一覧は、次を参照してください。[管理パックで検出されるオブジェクト](../technical-guides/objects-the-management-pack-discovers.md)セクションです。 によって検出されるオブジェクトの既定の検出構成を変更することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック。 構成設定を変更するのにには、Operations Manager 2007 R2 または 2012 の上書き機能を使用します。  
@@ -31,7 +31,7 @@ BizTalk Server 管理パックをインポートした後、[監視] ウィン�
   
 3.  詳細ウィンドウでの設定を変更するオブジェクトの種類をクリックします。  
   
-4.  Operations Manager ツールバーで、をクリックして**オーバーライド**をクリックして**オブジェクト検出の上書き**、いずれかをクリックして**型のすべてのオブジェクト:** \< *オブジェクトの種類の名前*>、**グループの特定のオブジェクト型の場合:** \<*オブジェクトの種類の名前*>、または**別の型のすべてのオブジェクト**.  
+4.  Operations Manager ツールバーで、をクリックして**オーバーライド**をクリックして**オブジェクト検出の上書き**、いずれかをクリックして**型のすべてのオブジェクト:** \< *オブジェクトの種類の名前*\>、**グループの特定のオブジェクト型の場合:** \<*オブジェクトの種類の名前*\>、または**別の型のすべてのオブジェクト**です。  
   
 5.  **上書きのプロパティ**ダイアログ ボックスで、をクリックして、**オーバーライド**のボックス、**有効**パラメーターを変更します。  
   

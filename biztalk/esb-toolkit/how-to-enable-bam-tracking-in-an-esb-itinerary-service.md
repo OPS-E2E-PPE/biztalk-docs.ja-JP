@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6245ec69e1c8224ccbe9a39c3c2be9eea9237ee8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 011de667e06f4275fe75a28b6566a6bc393cf841
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a>方法: ESB Itinerary サービスで BAM の追跡を有効にします。
 ## <a name="goal"></a>[目標]  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>ESB itinerary DSL モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -145,7 +145,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-modify-the-itinerary"></a>旅行計画を変更するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで、 **BamTracking.itinerary**です。  
   
@@ -209,6 +209,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [メッセージのルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
+-   [メッセージ ルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
   
--   [動的な解決を使用して、ルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [動的な解決とルーティングを利用する](../esb-toolkit/using-dynamic-resolution-and-routing.md)

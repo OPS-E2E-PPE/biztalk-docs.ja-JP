@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eca9ed37cf116d57888bae1343e383cc2d2a666
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a63c556bfb95f4b22a3256540d3ecb336a17f7f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースを移動する方法
 ここでは、BAM プライマリ インポート データベースを他のサーバーに移動する手順について説明します。  
@@ -140,9 +140,9 @@ ms.lasthandoff: 09/20/2017
   
     6.  新しいサーバーおよびデータベースに対応するように、次の行を変更します。  
   
-         PrimaryImportServer ="*\<ServerName >*"  
+         PrimaryImportServer ="*\<ServerName\>*"  
   
-         PrimaryImportDatabase ="*\<DatabaseName >*"  
+         PrimaryImportDatabase ="*\<DatabaseName\>*"  
   
 17. BizTalk Server サービスをすべて開始します。 詳細については、次を参照してください。[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)です。  
   

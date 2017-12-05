@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f500deb38df3f8145a2cba582164f14c87ac33d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29636a63f7847017b233275ee3dd7c2c389c43be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-for-biztalk-hosts"></a>BizTalk ホストの高可用性
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]非常に柔軟に特定の受信、メッセージを送信して、オーケストレーションを物理的に配置できる処理などの機能領域を実行する論理的なホストを戦略的に割り当てることができますので、高可用性をアドレス指定を提供します。複数のサーバー。  
+BizTalk Server は、非常に柔軟に特定の受信とメッセージを送信することができる物理的にオーケストレーション処理などの機能領域を実行する論理的なホストを戦略的に割り当てることができますので、高可用性をアドレス指定複数サーバーに配置します。  
   
  BizTalk ホスト内の論理コンテナーとは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]収容でき、グループ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターなどの項目の送信ハンドラー (パイプラインを含む)、受信場所、オーケストレーションです。 通常は、拡張性の観点から似た特性を持つアイテムを特定のホストにグループ化します。  
   
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 |インプロセス|オーケストレーション<br />のアダプター送信ハンドラー<br />・ インプロセス アダプターの受信ハンドラー|  
 |分離されます。|HTTP、SOAP の受信ハンドラー<br />-その他の分離アダプターの受信ハンドラー|  
   
- BizTalk ホストとホスト インスタンスの管理に関する詳細については、次を参照してください。[を管理する BizTalk ホストとホスト インスタンス](http://go.microsoft.com/fwlink/?LinkID=154191)(http://go.microsoft.com/fwlink/?LinkID=154191) で[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ BizTalk ホストとホスト インスタンスの管理に関する詳細については、次を参照してください。[を管理する BizTalk ホストとホスト インスタンス](http://go.microsoft.com/fwlink/?LinkID=154191)(http://go.microsoft.com/fwlink/?LinkID=154191)、BizTalk Server のヘルプ。  
   
  BizTalk ホストの高可用性を実現するには、2 つ以上のホスト インスタンスを環境内 (2 つ以上のコンピュータ) の各ホストが必要です。 1 つ以上のホスト インスタンスを確認する 1 つのホスト インスタンスが使用できなくなった場合、ホスト インスタンスの同じホストのインスタンスを実行している他のコンピューター上の各ホストは、問題や障害が発生したホスト インスタンスの機能を再開できますを用意することによって、システム全体が中断を最小限を実行することを続行することができます。  
   
@@ -59,13 +59,13 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [スケール アウト受信ホスト](../technical-guides/scaling-out-receiving-hosts.md)  
+-   [受信ホストのスケールアウト](../technical-guides/scaling-out-receiving-hosts.md)  
   
--   [受信ホストをクラスタ リング](../technical-guides/clustering-receiving-hosts.md)  
+-   [受信ホストのクラスタリング](../technical-guides/clustering-receiving-hosts.md)  
   
--   [スケール アウト処理の各ホスト](../technical-guides/scaling-out-processing-hosts.md)  
+-   [処理ホストのスケールアウト](../technical-guides/scaling-out-processing-hosts.md)  
   
--   [スケール アウト送信ホスト](../technical-guides/scaling-out-sending-hosts.md)  
+-   [送信ホストのスケールアウト](../technical-guides/scaling-out-sending-hosts.md)  
   
 ## <a name="see-also"></a>参照  
  [ホストとホスト インスタンスを構成します。](../technical-guides/configuring-hosts-and-host-instances.md)   

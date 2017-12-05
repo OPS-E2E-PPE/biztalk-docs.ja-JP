@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45dc38a939e71a8f4eb3d3afe87736fc548f8570
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb03368a9d046eacf31f8b7bbed5c0a7f090c3d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP からの Idoc を受信します。
 IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP からの特別な RFC 呼び出しを受信する RFC サーバーとして機能します。 SAP アダプターは、RFC サーバーまたは tRFC サーバーとして機能する Idoc を受信できます。 TRFC サーバーとして動作して、アダプターによる IDOC の受信の詳細については、次を参照してください。[を使用して BizTalk Server でのトランザクション コンテキストでの SAP からの Idoc の受信](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)です。  
@@ -29,13 +29,13 @@ IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-sh
   
 -   **受信**操作を厳密に型指定されたスキーマが Idoc を受信するアダプターを有効にします。  
   
--   **ReceiveIdoc**操作を厳密に型指定されたスキーマが Idoc を受信するアダプターを有効にします。 この操作は、下にある XML メッセージの文字列として Idoc を受信、 \<idocData > タグです。  
+-   **ReceiveIdoc**操作を厳密に型指定されたスキーマが Idoc を受信するアダプターを有効にします。 この操作は、下にある XML メッセージの文字列として Idoc を受信、 \<idocData\>タグ。  
   
  アダプター側での値を指定することができます、 **ReceiveIDocFormat**アダプターは受信 IDOC の形式を指定するプロパティをバインドします。  
   
 -   **型指定された**アダプターは厳密に型指定されたスキーマでの Idoc の受信を指定します。 これには、XML IDOC が生成されます。  
   
--   **文字列**弱い型指定のスキーマを持つアダプターが Idoc を受信するかを指定します。 これは、結果の XML メッセージ、 \<idocData > タグです。  
+-   **文字列**弱い型指定のスキーマを持つアダプターが Idoc を受信するかを指定します。 これは、結果の XML メッセージ、 \<idocData\>タグ。  
   
 -   **Rfc**アダプターは任意の形式での Idoc の受信を指定します。  
   
@@ -50,8 +50,8 @@ IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-sh
 |-------------------------------|------------------------|------------|  
 |(TRFC インターフェイス) を使用して IDOC|**メタデータ デザイン時**<br /><br /> 1.GenerateFlatFileCompatibleIdocSchema binding プロパティを設定する**True**です。<br />2.スキーマを生成、**受信**特定 IDOC を使用して、操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br />3.ReceiveIdocFormat binding プロパティを設定する**型指定された**です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.XML の IDOC を受信します。<br />2.フラット ファイル アセンブラーを使用して、フラット ファイルを XML IDOC に変換します。|フラット ファイル IDOC|  
 |(TRFC インターフェイス) を使用して IDOC|**メタデータ デザイン時**<br /><br /> 1.GenerateFlatFileCompatibleIdocSchema binding プロパティを設定する**True**です。<br />2.スキーマを生成、**受信**特定 IDOC を使用して、操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br />3.ReceiveIdocFormat binding プロパティを設定する**型指定された**です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> -XML IDOC を受信します。|XML の IDOC|  
-|(TRFC インターフェイス) を使用して IDOC|**メタデータ デザイン時**<br /><br /> 1.GenerateFlatFileCompatibleIdocSchema binding プロパティを設定する**True**です。<br />2.スキーマを生成、**受信**特定 IDOC を使用して、操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br />3.ReceiveIdocFormat binding プロパティを設定する**文字列**です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.フラット ファイル IDOC でのメッセージが XML \<idocData > タグです。<br />2.受信ポートの構成で、WCF アダプターの XPath のサポートを使用して、XML メッセージからフラット ファイル IDoc を抽出します。 例:<br />     `/*[local-name()='ReceiveIdoc']/*[local-name()='idocData']`<br />3.フラット ファイル逆アセンブラーを使用して、フラット ファイル IDOC を XML IDOC に変換します。<br /><br /> **重要な**、new を使用して Idoc を受信するこの方法を使用できる WCF ベース[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]し、直接、既存の BizTalk SAP アダプターからの Idoc を受信するために記述された既存の BizTalk プロジェクトに適用します。 これもリリース番号 (SYSREL) よりも小さいバージョン番号で Idoc を受信する方法をお勧めします。|XML の IDOC|  
-|(TRFC インターフェイス) を使用して IDOC|**メタデータ デザイン時**<br /><br /> 1.スキーマを生成、 **ReceiveIdoc** 、IDOC を使用してノードから操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br />2.ReceiveIdocFormat binding プロパティを設定する**文字列**です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 受信 XML メッセージの文字列として表される IDOC と、 \<idocData > タグです。|XML メッセージのフラット ファイル IDOC|  
+|(TRFC インターフェイス) を使用して IDOC|**メタデータ デザイン時**<br /><br /> 1.GenerateFlatFileCompatibleIdocSchema binding プロパティを設定する**True**です。<br />2.スキーマを生成、**受信**特定 IDOC を使用して、操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br />3.ReceiveIdocFormat binding プロパティを設定する**文字列**です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.フラット ファイル IDOC でのメッセージが XML \<idocData\>タグ。<br />2.受信ポートの構成で、WCF アダプターの XPath のサポートを使用して、XML メッセージからフラット ファイル IDoc を抽出します。 例:<br />     `/*[local-name()='ReceiveIdoc']/*[local-name()='idocData']`<br />3.フラット ファイル逆アセンブラーを使用して、フラット ファイル IDOC を XML IDOC に変換します。<br /><br /> **重要な**、new を使用して Idoc を受信するこの方法を使用できる WCF ベース[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]し、直接、既存の BizTalk SAP アダプターからの Idoc を受信するために記述された既存の BizTalk プロジェクトに適用します。 これもリリース番号 (SYSREL) よりも小さいバージョン番号で Idoc を受信する方法をお勧めします。|XML の IDOC|  
+|(TRFC インターフェイス) を使用して IDOC|**メタデータ デザイン時**<br /><br /> 1.スキーマを生成、 **ReceiveIdoc** 、IDOC を使用してノードから操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br />2.ReceiveIdocFormat binding プロパティを設定する**文字列**です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 受信 XML メッセージの文字列として表される IDOC と、 \<idocData\>タグ。|XML メッセージのフラット ファイル IDOC|  
   
 ## <a name="how-to-receive-an-idoc-from-an-sap-system"></a>SAP システムから IDOC を受信する方法は?  
  SAP システムを使用して、操作を実行[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明した手順のタスクでは、 [SAP アプリケーションを作成するビルド ブロック](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)です。 これらのタスクは、SAP システムから IDOC を受信するには。  
@@ -76,9 +76,9 @@ IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-sh
 ## <a name="generating-schema"></a>スキーマを生成します。  
  スキーマを生成する必要があります、*受信*の操作、 *ORDERS03 です。V3.620* IDOC、 */IDOC/ORDERS/ORDERS03*ノード。 参照してください[参照、検索と get メタデータの SAP IDOC 操作](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-idoc-operations-in-sap.md)手順については、特定の IDOC のスキーマを生成する方法です。 スキーマを生成するときにも、次のプロパティを設定する可能性があります。  
   
--   *GenerateFlatFileCompatibleIDoc* – 生成\<appinfo > タグで、BizTalk フラット ファイル パーサーは、フラット ファイル Idoc をサポートするために BizTalk のシナリオで使用できるようにします。  
+-   *GenerateFlatFileCompatibleIDoc* – 生成\<appinfo\>タグで、BizTalk フラット ファイル パーサーは、フラット ファイル Idoc をサポートするために BizTalk のシナリオで使用できるようにします。  
   
--   *FlatFileSegmentIndicator* – を示す場合、IDOC スキーマ\<appinfo > タグは、セグメントの定義名またはセグメントの型名を含める必要があります。 これは、ときに/SAP からのフラット ファイル IDOC の送信/受信するのに使用されると適用されます。 場合、 *GenerateFlatFileCompatibleIDoc*が false に設定し、 *FlatFileSegmentIndicator*バインディング プロパティは無視されます。  
+-   *FlatFileSegmentIndicator* – を示す場合、IDOC スキーマ\<appinfo\>タグは、セグメントの定義名またはセグメントの型名を含める必要があります。 これは、ときに/SAP からのフラット ファイル IDOC の送信/受信するのに使用されると適用されます。 場合、 *GenerateFlatFileCompatibleIDoc*が false に設定し、 *FlatFileSegmentIndicator*バインディング プロパティは無視されます。  
   
 > [!IMPORTANT]
 >  着信 IDOC のスキーマを生成するためには、選択を確認してください**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  

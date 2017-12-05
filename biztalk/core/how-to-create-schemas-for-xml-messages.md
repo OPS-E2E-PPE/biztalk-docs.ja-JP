@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83a06aa7ca1ee4e37c29083ac38f5285565b7325
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6396d4607e93298961e6691ded2ca8d4566d819c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-schemas-for-xml-messages"></a>XML メッセージ用スキーマの作成方法
 BizTalk メッセージのスキーマは、複数の方法で作成できます。 このトピックでは、いくつかの方法について手順を説明します。  
@@ -27,7 +27,7 @@ BizTalk メッセージのスキーマは、複数の方法で作成できます
   
 2.  **[プロジェクト]** メニューの **[新しい項目の追加]**をクリックします。  
   
-3.  **新しい項目の追加 - \<* BizTalk ProjectName*> * * ダイアログ ボックスで、**テンプレート**セクションで、**スキーマ**です。  
+3.  **新しい項目の追加 - \<* BizTalk ProjectName*\>* * ダイアログ ボックスで、**テンプレート**セクションで、**スキーマ**.  
   
 4.  **名前**ボックスで、スキーマの名前を入力し、をクリックして**追加**です。  
   
@@ -45,7 +45,7 @@ BizTalk メッセージのスキーマは、複数の方法で作成できます
   
 1.  **ソリューション エクスプ ローラー**、BizTalk プロジェクトを右クリックし、**追加**、クリックして**生成した項目の追加**です。  
   
-2.  **生成した項目の追加 - \<* BizTalk ProjectName*> * * ダイアログ ボックスで、**テンプレート**セクションで、 **スキーマの生成**、クリックして**追加**です。  
+2.  **生成した項目の追加 - \<* BizTalk ProjectName*\>* * ダイアログ ボックスで、**テンプレート**セクションで、 **スキーマ生成**、クリックして**追加**です。  
   
 3.  **スキーマの生成** ダイアログ ボックスで、**ドキュメントの種類**ドロップダウン リストで、 **XDR スキーマ**、 **DTD スキーマ**、または**整形式 XML**です。  
   
@@ -56,4 +56,4 @@ BizTalk メッセージのスキーマは、複数の方法で作成できます
      指定したファイルから新しいスキーマが生成され、BizTalk エディターに表示されます。スキーマ名には、指定したファイルと同じ名前 (拡張子は .xsd) が使用されます。  
   
 ## <a name="see-also"></a>参照  
- [プロジェクト内のスキーマを管理します。](../core/managing-schemas-within-projects.md)
+ [プロジェクト内のスキーマの管理](../core/managing-schemas-within-projects.md)

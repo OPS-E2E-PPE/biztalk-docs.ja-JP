@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b21d5a3dda5bc53816c608e97063a42f3eafa4db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f2c92d5469f88494c77ad062d97c53768572a5b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="importing-bindings"></a>バインドのインポート
 このセクションの各トピックでは、バインドを BizTalk グループまたはアプリケーションにインポートする方法について説明します。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **アダプターの名前属性が正しくない可能性があります。** バインド ファイルにアダプターの設定が含まれている場合は、バインド ファイル内に指定されている TransportType 要素の Name 属性の値が、BizTalk Server 管理コンソールでアダプターに設定されている名前と同じであることを確認してください ([プラットフォームの設定]、[アダプター] の順にクリックします)。  
   
-     特に、[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] にバインドをインポートする場合に確認が必要です。 名前が異なると問題が発生する可能性があります。  
+     バインドをインポートするときに大文字と小文字は、このことを確認する必要があります具体的には、 [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] BizTalk Server にします。 名前が異なると問題が発生する可能性があります。  
   
     -   MQS  
   

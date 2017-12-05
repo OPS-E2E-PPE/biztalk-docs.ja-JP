@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5119b9b896b3b37b24b9b3151c5e11664dda8774
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec4ed8e39a05f81984dca21794eca3d829ba8f42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unexpected-root-element"></a>ルート要素が正しくありません
 ## <a name="details"></a>詳細  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 |メッセージ テキスト|ルート要素が正しくありません|  
   
 ## <a name="explanation"></a>説明  
- ヘッダー プロパティに含まれていない\<ヘッダー >...\</headers > の形式です。 通常、この状況は InboundHeaders および OutboundCustomHeaders に適用されます。  
+ ヘッダー プロパティに含まれていない\<ヘッダー\>...\</headers\>形式です。 通常、この状況は InboundHeaders および OutboundCustomHeaders に適用されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ヘッダー プロパティの形式であることを確認\<ヘッダー >.\</headers >。
+ ヘッダー プロパティの形式であることを確認\<ヘッダー\>しています.\</headers\>です。

@@ -19,11 +19,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30e21f2f102761dbfb332179c2754ea7ddea2d11
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b87f0d31010a8bf80e09c59f05f2f9302a510e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="related-documents"></a>関連ドキュメント
 クエリ結果の詳細に表示される [関連ドキュメント] 領域には、アクティビティに関連する参考用ドキュメントが一覧表示されます。 表示されるドキュメントの種類は、CAD 画像、.WAV ファイル、注文書などさまざまです。 たとえば、発注アクティビティでは、通常、基本のドキュメントの種類として注文書が使用されます。 表示される一覧には、注文書へのリンクが含まれます。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 -   統合アプリケーション開発者が、カスタム アプリケーションを呼び出すことにより、プログラムを使用してこの一覧を作成します。  
   
- 内の行を追加するいずれかの方法を使用してドキュメント参照を定義する、 \<activityname > _References テーブル ドキュメントの場所とします。  
+ 内の行を追加するいずれかの方法を使用してドキュメント参照を定義する、 \<activityname\>_References がドキュメントの場所を持つテーブルです。  
   
  これらのタスクのどちらが実行された場合、**関連ドキュメント**領域は空白です。  
   

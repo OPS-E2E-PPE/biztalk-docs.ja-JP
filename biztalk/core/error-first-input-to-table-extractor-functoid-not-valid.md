@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2449f6c5572a3a29b620becdc4310f4152f2eac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86d501c18bf104a0f538ef90d10510e7d9ec0f02
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---first-input-to-table-extractor-functoid-not-valid"></a>エラー - テーブル抽出 Functoid が有効でないへの最初の入力
 **エラー コード**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **ユーザーの操作**  
   
- 指定された間のリンクを作成する**テーブル抽出**functoid と適切な**テーブル ループ**もう一方のうちの 1 つをドラッグして functoid です。 マップ グリッド ページでは、テーブル抽出 Functoid が、テーブル ループ Functoid の右側に配置されている必要があります。 またを使用して、**構成\<Functoid > Functoid**  ダイアログ ボックスで、新しく作成したリンクがへの最初の入力パラメーターであることを確認**テーブル抽出**functoid です。
+ 指定された間のリンクを作成する**テーブル抽出**functoid と適切な**テーブル ループ**もう一方のうちの 1 つをドラッグして functoid です。 マップ グリッド ページでは、テーブル抽出 Functoid が、テーブル ループ Functoid の右側に配置されている必要があります。 またを使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスで、新しく作成したリンクがへの最初の入力パラメーターであることを確認**テーブル抽出**functoid です。

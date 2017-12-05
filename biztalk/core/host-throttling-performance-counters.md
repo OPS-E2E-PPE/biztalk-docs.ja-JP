@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b823326a0cc486dcf3f95dc70a6249d4d719d133
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ca80f44b9f1244a340e9a9892593ae42ba4b4e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="host-throttling-performance-counters"></a>ホスト制限パフォーマンス カウンター
 このセクションでは、ホスト制限に影響するシステム パラメーターを測定するパフォーマンス モニター カウンターについて説明します。 次のパフォーマンス カウンターは各ホスト インスタンスにアクセスできる、 **BizTalk:Message Agent**パフォーマンス オブジェクト カテゴリ。  
@@ -74,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **カウンターの追加**] ダイアログ ボックスから、**使用可能なカウンター**一覧で、展開、 **[BizTalk:Message Agent**パフォーマンス カウンター オブジェクトとカウンターを選択します。監視されます。  
   
-4.  **インスタンスの選択したオブジェクト**一覧をクリックして、選択したカウンターを監視する特定のインスタンスを選択**追加**です。  使用可能なカウンターのすべてのインスタンスを選択するには、次のように選択します。 \<**すべてのインスタンス**>。  
+4.  **インスタンスの選択したオブジェクト**一覧をクリックして、選択したカウンターを監視する特定のインスタンスを選択**追加**です。  使用可能なカウンターのすべてのインスタンスを選択するには、次のように選択します。 \<**すべてのインスタンス**\>です。  
   
 5.  カウンターを追加すると、をクリックして**OK**です。  
   
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [設計の推奨事項の調整](../core/throttling-design-recommendations.md)   
  [BizTalk Server がホスト制限を実装する方法](../core/how-biztalk-server-implements-host-throttling.md)   
- [BizTalk server 設定ダッシュ ボードを使用してパフォーマンス チューニング](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)
+ [BizTalk Server パフォーマンス チューニングのための設定ダッシュボードの使用](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

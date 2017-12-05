@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4bb40e943cc06f298db01142590e2a133c1ee05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6816a432b7a1c1ba5163d922cd1754ebcb398389
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-general-party-properties"></a>パーティの全般プロパティの構成
 パーティまたは取引先は、ビジネス リレーションシップの参加組織を表します。 パーティのプロパティには次の情報が含まれます。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
 3.  **送信ポート**のページ、**パーティ プロパティ** ダイアログ ボックスで、次の操作です。  
   
     > [!NOTE]
-    >  [!INCLUDE[prague](../includes/prague-md.md)] では、送信ポートの関連付けをアグリーメント レベルで行います。 **送信ポート**下位互換性は、パーティのプロパティの一部として使用可能なページです。 送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。 ただし、その逆は真ではありません。 送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。 送信ポートをアグリーメントに関連付ける方法の詳細については、次を参照してください。[を構成する送信ポートの関連付け (X12)](../core/configuring-send-port-association-x12.md)または[送信ポート (EDIFACT) の関連付けを構成する](../core/configuring-send-port-association-edifact.md)です。  
+    >  BizTalk Server では、送信ポートの関連付けはアグリーメント レベルで行われます。 **送信ポート**下位互換性は、パーティのプロパティの一部として使用可能なページです。 送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。 ただし、その逆は真ではありません。 送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。 送信ポートをアグリーメントに関連付ける方法の詳細については、次を参照してください。[を構成する送信ポートの関連付け (X12)](../core/configuring-send-port-association-x12.md)または[送信ポート (EDIFACT) の関連付けを構成する](../core/configuring-send-port-association-edifact.md)です。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
@@ -69,4 +69,4 @@ ms.lasthandoff: 09/20/2017
 5.  をクリックして**適用**、プロパティを受け入れるか、をクリックする**[ok]**構成設定を完了します。 どちらの操作では、設定を検証します。  
   
 ## <a name="see-also"></a>参照  
- [EDI のプロパティを構成します。](../core/configuring-edi-properties.md)
+ [EDI のプロパティの構成](../core/configuring-edi-properties.md)

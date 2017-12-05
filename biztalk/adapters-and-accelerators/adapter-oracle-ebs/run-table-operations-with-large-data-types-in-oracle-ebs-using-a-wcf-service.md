@@ -12,18 +12,18 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b671f8fc124875eb5eadf119188d0ffe4c1a2a3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 720da748059d3fe3da376ea42495a2587577f5ee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="complete-operations-on-tables-with-large-data-types-in-oracle-e-business-suite-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle E-business Suite での大規模なデータ型を持つテーブルに対する操作を完了します。
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが BLOB、CLOB、NCLOB、BFILE などの大規模なデータ型とのインターフェイス テーブルやビューでの操作を実行できるようにします。  
   
--   型の列を読み取るできるだけでなく、データ更新のクライアントにより、アダプター、BLOB、CLOB、NCLOB、します。 アダプター公開 Read_\<*LOBColName*> と Update_\<*LOBColName*> の読み取りし、それぞれのデータを更新する操作、 \< *LOBColName*> 大量のデータ型の列の名前を指定します。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取りし、そのインターフェイス テーブルに対して操作を更新を公開します。  
+-   型の列を読み取るできるだけでなく、データ更新のクライアントにより、アダプター、BLOB、CLOB、NCLOB、します。 アダプター公開 Read_\<*LOBColName* \>と Update_\<*LOBColName* \>を読み取り、それぞれのデータを更新操作、 \<*LOBColName* \>大量のデータ型の列の名前を指定します。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取りし、そのインターフェイス テーブルに対して操作を更新を公開します。  
   
--   BFILE 型の列は、アダプターのクライアントは、データを読み取るだけことができます。 アダプター公開 Read_\<*LOBColName*> BFILE 型の列からデータを操作します。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取り操作インターフェイス テーブルとしてを公開します。  
+-   BFILE 型の列は、アダプターのクライアントは、データを読み取るだけことができます。 アダプター公開 Read_\<*LOBColName* \> BFILE 型の列からデータを操作します。 大規模なデータ型は、1 つのインターフェイス テーブルで 1 つ以上の列がある場合、アダプターは、多くの読み取り操作インターフェイス テーブルとしてを公開します。  
   
  これらの操作の詳細については、次を参照してください。[インターフェイス テーブル、インターフェイス ビュー、テーブル、およびビューを含む LOB データに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)です。  
   
@@ -53,8 +53,8 @@ ms.lasthandoff: 09/20/2017
   
 |操作|メソッド シグネチャ|  
 |---------------|----------------------|  
-|Update_\<*column_name*>|public void Update_\<*column_name*> (フィルター、byte[] データを文字列) です。|  
-|Read_\<*column_name*>|パブリック System.IO.Stream Read_\<*column_name*>(string FILTER) です。|  
+|Update_\<*column_name*\>|public void Update_\<*column_name*\>(フィルター、byte[] データを文字列) です。|  
+|Read_\<*column_name*\>|パブリック System.IO.Stream Read_\<*column_name*\>(文字列のフィルター) です。|  
   
  例としては、次のコードは、アプリケーション スキーマの下にある顧客データベース テーブルに Update_PHOTO および Read_PHOTO 操作に対して生成される WCF クライアント クラスのメソッドのシグニチャを示します。  
   
@@ -70,12 +70,12 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
  このスニペットで**Tables_APPS_CUSTOMERClient**によって生成された OracleEBSBindingClient.cs で WCF クラスの名前を指定します、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 Update_PHOTO と Read_PHOTO は、更新し、テーブル内の大規模なデータ型の列を表示するに呼び出せるようにする方法です。  
   
 ### <a name="parameters-for-table-operations"></a>テーブル操作のパラメーター  
- このセクションでは、Update_ に必要なパラメーター\<*column_name*> と Read_\<*column_name*> 操作します。  
+ このセクションでは、Update_ に必要なパラメーター\<*column_name* \>と Read_\<*column_name* \>操作します。  
   
 |操作名|パラメーター|  
 |--------------------|----------------|  
-|Update_\<*column_name*>|次のパラメーターが必要です。<br /><br /> -   `string FILTER`. このパラメーターは、where を含める必要があります句を更新するデータを持っているレコードを表します。 たとえば、 `"WHERE Name='Mindy Martin'"`のようにします。<br />-   `byte[] DATA`. 大規模なデータ型の列で更新するデータのバイト配列が含まれています。|  
-|Read_\<*column_name*>|次のパラメーターが必要です。<br /><br /> -   `string FILTER`. このパラメーターは、where を含める必要がありますを元のデータが読み取られるレコードを示す句。 たとえば、 `"WHERE Name='Mindy Martin'"`のようにします。|  
+|Update_\<*column_name*\>|次のパラメーターが必要です。<br /><br /> -   `string FILTER`. このパラメーターは、where を含める必要があります句を更新するデータを持っているレコードを表します。 たとえば、 `"WHERE Name='Mindy Martin'"`のようにします。<br />-   `byte[] DATA`. 大規模なデータ型の列で更新するデータのバイト配列が含まれています。|  
+|Read_\<*column_name*\>|次のパラメーターが必要です。<br /><br /> -   `string FILTER`. このパラメーターは、where を含める必要がありますを元のデータが読み取られるレコードを示す句。 たとえば、 `"WHERE Name='Mindy Martin'"`のようにします。|  
   
 ## <a name="creating-a-wcf-client-to-invoke-operations-on-tables-with-columns-of-large-data-types"></a>大規模なデータ型の列を持つテーブルの操作の呼び出しに WCF クライアントを作成します。  
  WCF クライアントを使用して Oracle E-business Suite で操作の実行に必要なアクションの汎用的なセットは、一連のタスクで説明されている[Oracle E-business Suite アダプターで WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md)です。 このセクションでは、顧客データベース テーブルに Update_PHOTO と Read_PHOTO 操作の呼び出しに WCF クライアントを作成する方法について説明します。  
@@ -158,7 +158,7 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
             Console.WriteLine("Reading the photo");  
             int count = 0;  
             photo = new byte[fs.Length];  
-            while ((count += fs.Read(photo, count, (int)(((fs.Length - count) > 4096) ? 4096 : fs.Length - count))) \< fs.Length) ;  
+            while ((count += fs.Read(photo, count, (int)(((fs.Length - count) > 4096) ? 4096 : fs.Length - count))) < fs.Length) ;  
         }  
         catch(Exception ex)  
         {  

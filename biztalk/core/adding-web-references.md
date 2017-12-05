@@ -20,14 +20,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bcdeb4966da4a4b54fea826590f867e4125d2ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2cbf8cd4c21009190fc459312467656410dc663a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adding-web-references"></a>Web 参照の追加
-Web ポートを追加するには、BizTalk プロジェクトに Web 参照を追加する必要があります。 Web 参照は、プロジェクトで使用可能な Web サービスの説明です。 プロジェクトに Web 参照を追加すると、BizTalk プロジェクト作成オーケストレーション Web ポートの種類、Web メッセージの種類、Reference.map (マップ ファイル)、Reference.odx (オーケストレーション ファイル)、 \< *WebService*> .disco (探索ファイル)、および\< *WebService*> .wsdl (Web サービス記述言語ファイル) をプロジェクトにします。 Web サービス記述言語 (WSDL) ファイルにスキーマ Web メッセージの種類が含まれる場合、プロジェクトに Reference.xsd が追加されます。  
+Web ポートを追加するには、BizTalk プロジェクトに Web 参照を追加する必要があります。 Web 参照は、プロジェクトで使用可能な Web サービスの説明です。 プロジェクトに Web 参照を追加すると、BizTalk プロジェクト作成オーケストレーション Web ポートの種類、Web メッセージの種類、Reference.map (マップ ファイル)、Reference.odx (オーケストレーション ファイル)、 \< *WebService*\>です。disco (探索ファイル)、および\< *WebService*\>.wsdl (Web サービス記述言語ファイル) をプロジェクトにします。 Web サービス記述言語 (WSDL) ファイルにスキーマ Web メッセージの種類が含まれる場合、プロジェクトに Reference.xsd が追加されます。  
   
  Web 参照には以下が含まれます。  
   
@@ -45,4 +45,4 @@ Web ポートを追加するには、BizTalk プロジェクトに Web 参照を
   
 ## <a name="see-also"></a>参照  
  [Web ポートの作成](../core/creating-web-ports.md)   
- [Web サービスの使用](../core/consuming-web-services.md)
+ [Web サービスの利用](../core/consuming-web-services.md)

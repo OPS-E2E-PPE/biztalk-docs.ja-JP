@@ -12,14 +12,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44cbfaff87727d69aa37ae005cff4240098f08da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee41a04bbef8a5651acedf1df85fc5d93349e9ea
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-the-receiving-of-edi-acknowledgments"></a>EDI 受信確認の受信の構成
-[!INCLUDE[prague](../includes/prague-md.md)] では、双方向アグリーメントの導入により、受信確認の送信用に構成するアグリーメントと同じアグリーメントで、受信確認の受信を設定できます。 これを行うには、別々の一方向アグリーメント タブでプロパティを指定します。 受信確認の受信を構成する方法については、次を参照してください。 [、送信と受信の EDI 受信確認を構成する](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)です。  
+BizTalk Server で、双方向アグリーメントの導入に伴いできますを設定するアグリーメントでは、同じ受信確認を送信用に構成する受信確認の受信します。 これを行うには、別々の一方向アグリーメント タブでプロパティを指定します。 受信確認の受信を構成する方法については、次を参照してください。 [、送信と受信の EDI 受信確認を構成する](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)です。  
   
 ## <a name="see-also"></a>参照  
- [EDI 受信確認を構成します。](../core/configuring-edi-acknowledgments.md)
+ [EDI 受信確認の構成](../core/configuring-edi-acknowledgments.md)

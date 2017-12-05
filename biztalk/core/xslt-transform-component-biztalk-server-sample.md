@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8374e2069660998a46265986125b6b0159ea1961
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1879cb4d748e974454f929bde2018c24b5d276f2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="xslt-transform-component-biztalk-server-sample"></a>XSLT 変換コンポーネント (BizTalk Server サンプル)
 XSLT 変換コンポーネント サンプルは、カスタム パイプライン コンポーネントを作成し、XSLT を使用して XML メッセージを変換する方法を示します。  
@@ -34,7 +34,7 @@ XSLT 変換コンポーネント サンプルは、カスタム パイプライ�
 2.  パイプラインは Transform.xsl を使用して、XML ドキュメントを電子メール メッセージの HTML 本文に変換します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Pipelines\XslTransformComponent\  
+ *\<パスのサンプル\>*\Pipelines\XslTransformComponent\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -60,7 +60,7 @@ XSLT 変換コンポーネント サンプルは、カスタム パイプライ�
   
 1.  コマンド ウィンドウでディレクトリ変更 (**cd)**次のフォルダーに。  
   
-     *\<サンプル パス >*\Pipelines\XslTransformComponent  
+     *\<パスのサンプル\>*\Pipelines\XslTransformComponent  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -70,7 +70,7 @@ XSLT 変換コンポーネント サンプルは、カスタム パイプライ�
   
     -   XSLT 変換コンポーネント パイプラインをビルドおよび展開します。  
   
-    -   ビルドしたパイプライン コンポーネントへのコピー、\<インストール パス > \Pipeline Components フォルダーです。  
+    -   ビルドしたパイプライン コンポーネントへのコピー、\<インストール パス\>\Pipeline Components フォルダーです。  
   
     -   送信ポートおよび受信ポートを作成します。  
   
@@ -108,4 +108,4 @@ XSLT 変換コンポーネント サンプルは、カスタム パイプライ�
 2.  SMTP に構成されている送信先受信者のメール クライアントの結果を確認します。  
   
 ## <a name="see-also"></a>参照  
- [パイプライン (BizTalk Server Samples フォルダ)](../core/pipelines-biztalk-server-samples-folder.md)
+ [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

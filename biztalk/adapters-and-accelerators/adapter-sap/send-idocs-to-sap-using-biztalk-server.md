@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db734237a874ef73b88ddb2e59fe51f34daa3fcd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b2e493f5b99c9b100a9683ffb90584a9cfd92b3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="send-idocs-to-sap-using-biztalk-server"></a>BizTalk Server を使用して sap Idoc を送信します。
 SAP へのすべての IDOC 呼び出しは、tRFC の呼び出し、アダプターは tRFC クライアントとして機能して、IDOC を送信する SAP の RFC を呼び出してとして内部的に扱われます。 このセクションの内容についての情報を使用して sap Idoc を送信する、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Idoc を送信する 2 つの異なる操作を表示します。  
@@ -37,7 +37,7 @@ SAP へのすべての IDOC 呼び出しは、tRFC の呼び出し、アダプ�
 |BizTalk への入力|BizTalk 処理|出力アダプターを|  
 |----------------------|------------------------|-----------------------|  
 |フラット ファイル IDOC|**メタデータ デザイン時**<br /><br /> 1.GenerateFlatFileCompatibleIdocSchema binding プロパティを設定する**True**です。<br />2.スキーマを生成、**送信**特定 IDOC を使用して、操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.フラット ファイル IDOC を受信します。<br />2.フラット ファイル逆アセンブラーを使用して、今生成されたスキーマを使用して XML IDOC フラット ファイル IDOC に変換します。<br />3.アクション**送信**操作します。|メッセージを送信します。|  
-|フラット ファイル IDOC|**メタデータ デザイン時**<br /><br /> 1.GenerateFlatFileCompatibleIdocSchema binding プロパティを設定する**True**です。<br />2.スキーマを生成、 **SendIdoc** 、IDOC を使用してノードから操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.フラット ファイル IDOC を受信します。<br />2.フラット ファイル逆アセンブラーを使用して、フラット ファイル IDOC を XML に変換する (この場合、XML メッセージに含まれる、 \<idocData > フラット ファイル Idoc メッセージ全体を含むノードです) 今生成されたスキーマを使用します。<br />3.アクション**SendIdoc**操作します。|SendIdoc メッセージ|  
+|フラット ファイル IDOC|**メタデータ デザイン時**<br /><br /> 1.GenerateFlatFileCompatibleIdocSchema binding プロパティを設定する**True**です。<br />2.スキーマを生成、 **SendIdoc** 、IDOC を使用してノードから操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.フラット ファイル IDOC を受信します。<br />2.フラット ファイル逆アセンブラーを使用して、フラット ファイル IDOC を XML に変換する (この場合、XML メッセージに含まれる、 \<idocData\>フラット ファイル Idoc メッセージ全体を含むノードです) 今生成されたスキーマを使用します。<br />3.アクション**SendIdoc**操作します。|SendIdoc メッセージ|  
 |XML の IDOC|**メタデータ デザイン時**<br /><br /> スキーマを生成、**送信**特定 IDOC を使用して、操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.XML の IDOC を受信します。<br />2.アクション**送信**操作します。|メッセージを送信します。|  
 |XML メッセージのフラット ファイル IDOC|**メタデータ デザイン時**<br /><br /> スキーマを生成、 **SendIdoc** 、IDOC を使用してノードから操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。<br /><br /> **オーケストレーションのデザイン時**<br /><br /> 1.XML メッセージを受信します。<br />2.アクション**SendIdoc**操作します。|SendIdoc メッセージ|  
   
@@ -211,7 +211,7 @@ SAP へのすべての IDOC 呼び出しは、tRFC の呼び出し、アダプ�
  いずれの場合は、SAP システムからの応答メッセージには、GUID が含まれています。 たとえば、ORDERS05 IDOC に対する送信操作の応答メッセージには。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <SendResponse xmlns="http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send">  
   <guid>a5afe162-d5cc-47b0-bf6f-3b0bfe06a97e</guid>  
 </SendResponse>  

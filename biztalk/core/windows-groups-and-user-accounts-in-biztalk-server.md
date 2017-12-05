@@ -85,11 +85,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77f229c950c3f49eca80810e9702ce021f0e8579
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a04b8e774156acaaa44dc49377bbdd7e3f91b198
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-groups-and-user-accounts-in-biztalk-server"></a>BizTalk Server の Windows グループ アカウントとユーザー アカウント
 BizTalk Server ローカルおよびドメイン グループ アカウントとユーザー アカウントに関する情報です。 BizTalk Server と必要なすべてのソフトウェアを 1 台のコンピューターにインストールすると、既定では、必要な BizTalk グループ アカウントが構成マネージャーで作成されます。 このセクションの説明は、複数コンピューター トポロジを対象としています。  
@@ -131,7 +131,7 @@ BizTalk Server ローカルおよびドメイン グループ アカウントと
 |BizTalk ホスト インスタンス アカウント|BizTalk インプロセス ホスト インスタンスの実行に使用されるサービス アカウント。ホスト インスタンスを使用して、インプロセス BizTalk ホスト インスタンス (BTNTSVC) にアクセスできます。|BizTalk Application Users<br /><br /> SSO 関連管理者||  
 |BizTalk 分離ホスト インスタンス アカウント|BizTalk 分離ホスト インスタンス (HTTP または SOAP) の実行に使用されるサービス アカウント。|BizTalk 分離ホスト ユーザー<br /><br /> SSO 関連管理者<br /><br /> IIS_WPG||  
 |ルール エンジン更新サービス|サービス アカウントおよび展開解除ポリシーにルール エンジン データベースから通知を受信するルール エンジン更新サービスを実行するために使用します。||BizTalkRuleEngineDb の RE_HOST_USERS SQL Server データベース ロール|  
-|BAM Notification Services ユーザー|BAM データベースにアクセスする BAM Notification Services の実行に使用されるサービス アカウント。|SQLServer2008NotificationServicesUser$\<**ComputerName**>|次のデータベースの NSRunService SQL Server データベース ロール<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMPrimaryImport の BAM_ManagmentNSReader SQL Server ロール|  
+|BAM Notification Services ユーザー|BAM データベースにアクセスする BAM Notification Services の実行に使用されるサービス アカウント。|SQLServer2008NotificationServicesUser$\<**ComputerName**\>|次のデータベースの NSRunService SQL Server データベース ロール<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMPrimaryImport の BAM_ManagmentNSReader SQL Server ロール|  
 |BAM 管理 Web サービス ユーザー|さまざまな BAM リソースにアクセスできる BAM 管理 Web サービス (BAMManagementService) 用のユーザー アカウント。 BAM ポータルでは、BAMManagementService を呼び出してアラートを管理する、BAM 定義 XML および BAM ビューを取得する BAM ポータルにログオンしているユーザーの資格情報で|IIS_WPG|次のデータベースの NSSubscriberAdmin SQL Server データベース ロール<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMPrimaryImport の BAM_ManagementWS SQL Server ロール|  
 |BAM アプリケーション プール アカウント|BAM ポータル Web サイトをホストする BAMAppPool のアプリケーション プール アカウント。|IIS_WPG||  
   

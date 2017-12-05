@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22bb3610d489f02aa535b562057b4bb09e208983
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9986bea177471a236cab888f20d915292d540e5b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-alerts"></a>警告を有効にする方法
 管理者を使用して、**有効にするアラート**コマンドのすべての指定されたビューにアラートを有効にします。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   
-3.  型**bm 有効にするアラートの表示:\<ビュー名 >**です。  
+3.  型**bm 有効にするアラートの表示:\<ビュー名\>**です。  
   
     > [!NOTE]
     >  BAM 構成を XML としてエクスポートした場合は、警告に関連した XML を変更しないでください。 警告に関連した XML を変更し、その変更を配置した場合、bm.exe によって変更が検出され、BAM 警告が有効になります。  

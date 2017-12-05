@@ -13,29 +13,29 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4616c097a04bbf84ce2a51808e98479ca1cd0604
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30d036313a69025e7fcf0e37116fc729623ac782
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server"></a>オーバー ロードされた関数および BizTalk Server を使用して Oracle データベースでプロシージャを呼び出す
 Oracle データベースでは、ストアド プロシージャと関数をオーバー ロードすることができます。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作のターゲットの名前空間を変更することでオーバー ロード関数およびプロシージャのサポート。 たとえば、2 つのオーバー ロードされたプロシージャのメッセージの構造は、ようになります。  
   
 ```  
 Stored Procedure Overload 1:  
-\<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload1">    
-  \<[PRM1_NAME]>value1\</[PRM1_NAME]>  
-  \<[PRM2_NAME]>value1\</[PRM2_NAME]>  
+<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload1">    
+  <[PRM1_NAME]>value1</[PRM1_NAME]>  
+  <[PRM2_NAME]>value1</[PRM2_NAME]>  
   …  
-\</[SP_NAME]>  
+</[SP_NAME]>  
   
 Stored Procedure Overload 2:  
-\<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload2">    
-  \<[PRM1_NAME]>value1\</I_[PRM1_NAME]>  
-  \<[PRM2_NAME]>value1\</I_[PRM2_NAME]>  
+<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload2">    
+  <[PRM1_NAME]>value1</I_[PRM1_NAME]>  
+  <[PRM2_NAME]>value1</I_[PRM2_NAME]>  
   …  
-\</[SP_NAME]>  
+</[SP_NAME]>  
 ```  
   
  オーバー ロードされた関数を呼び出すために必要な SOAP メッセージの構造と SOAP アクションまたは手順は、下の説明に従って、関数およびプロシージャの呼び出しと似て[関数およびプロシージャのメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md)です。  
@@ -265,7 +265,7 @@ Stored Procedure Overload 2:
  オーケストレーションは、要求のメッセージを使用し、Oracle データベースに送信します。 Oracle データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、最初のオーバー ロードされたプロシージャを呼び出すことの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <GET_ACCOUNTResponse mlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT/overload1">  
  <ACCT>  
   <ACCTID>100001</ACCTID>  

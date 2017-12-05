@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0389f2fdb3f9ccb07bcc8ec9e4cdb1ec510927a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53ceb305dcd30164e385022f66140fcaa626b133
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error-extractor-sample-class"></a>エラー抽出サンプル クラス
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラーは、XML オブジェクトへのエラーをシリアル化し、マルチパート メッセージのエラー セクションに、XML オブジェクトをアタッチします。 逆アセンブラーは、有効なメッセージの場合と同様後、失敗したメッセージとメッセージ ボックス データベースに公開します。 そのため、メッセージ ボックス データベースにメッセージ carry エラーの詳細に失敗しました。 エラー抽出サンプル クラスを使用して、失敗したメッセージからエラーの詳細を抽出し、エラーの詳細を含む 1 つのファイルと元のメッセージを持つ別のファイルを生成できます。  
@@ -50,7 +50,7 @@ SWIFTErrorExtractor.ErrorExtractor.GetErrorPartAsString(XLANGMessage xm);
 SWIFTErrorExtractor.ErrorExtractor.WriteToFile(string filePath, string message);  
 ```  
   
- A4SWIFT セットアップでは、エラー抽出サンプル クラス (SWIFTErrorExtractor.dll) をインストールに A4SWIFT SDK の一部として\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial\SWIFTErrorExtractor です。 このフォルダーには、サンプル クラス (ErrorExtractor.cs) のソース コードも含まれています。  
+ A4SWIFT セットアップでは、エラー抽出サンプル クラス (SWIFTErrorExtractor.dll) をインストールに A4SWIFT SDK の一部として\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial\SWIFTErrorExtractor です。 このフォルダーには、サンプル クラス (ErrorExtractor.cs) のソース コードも含まれています。  
   
  オーケストレーションから呼び出す SWIFTErrorExtractor.dll には、グローバル アセンブリ キャッシュに .dll ファイルを発行する必要があります。  
   

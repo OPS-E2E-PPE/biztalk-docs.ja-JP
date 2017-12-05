@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2219b93bfcc767af4eec6d433074a013dba0cca2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a716056bdeb16900c23bdf748028e9d60e4316ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-tables-with-bfile-data-types-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースで BFILE データ型を持つテーブルでの操作を実行します。
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルやストアド プロシージャで BFILE データ型をサポートしています。 このセクションでは、BFILE データ型の列があるテーブルに対する操作を実行する方法について説明します。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポート BFILE を参照してください[テーブルに BFILE データ型の演算 Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md)です。  
@@ -201,7 +201,7 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションはメッセージを使用して、Oracle データベースに送信します。 Oracle データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージ用の Oracle データベースからの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <CREATE_CUSTOMERDOCResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG"></CREATE_CUSTOMERDOCResponse>  
 ```  
   

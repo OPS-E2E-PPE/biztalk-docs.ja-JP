@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3de3efa20057d39585a005168f7a08fc2d914a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 383aef74519f7527383d9f681f83ace2e515eba7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-bam-archive-database"></a>BAM アーカイブ データベースを移動する方法
 ここでは、BAM アーカイブ データベースを他のサーバーに移動する手順について説明します。  エンド ツー エンドのシナリオの観点から BAM アーカイブ データベースの移動にも 2 つの主要な手順が含まれます。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-    2.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] が動作しているコンピューターで、次のフォルダーを参照します。  
+    2.  BizTalk Server を実行するコンピューター上には、次のフォルダーを参照してください。  
   
         -   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が 64 ビット バージョンの Windows Server にインストールされています。  
   
@@ -78,10 +78,10 @@ ms.lasthandoff: 09/20/2017
   
     3.  コマンド プロンプトで、次のように入力します。  
   
-         **Bm.exe get-config –filename:BAMConfiguration.xml-サーバー:\<サーバー名 >-データベース:\<データベース >**  
+         **Bm.exe get-config –filename:BAMConfiguration.xml-サーバー:\<servername\> -データベース:\<データベース\>**  
   
         > [!NOTE]  
-        >  このコマンドを実行するときに、サーバーの構成情報の取得元の実際の名前に置き換える\<servername >の構成情報の取得元のデータベースの実際の名前を使用して\<データベース >。 詳細については、BAM 管理 (BM) ユーティリティを使用して、次を参照してください。[インフラストラクチャ管理コマンド](http://go.microsoft.com/fwlink/?LinkId=156516)(http://go.microsoft.com/fwlink/?LinkId=156516) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
+        >  このコマンドを実行するときに、サーバーの構成情報の取得元の実際の名前に置き換える\<servername\>の構成情報の取得元のデータベースの実際の名前を使用してください\<データベース\>です。 詳細については、BAM 管理 (BM) ユーティリティを使用して、次を参照してください。[インフラストラクチャ管理コマンド](http://go.microsoft.com/fwlink/?LinkId=156516)(http://go.microsoft.com/fwlink/?LinkId=156516) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   
 2.  BAMConfiguration.xml ファイルを編集し、変更、 **ServerName**で、`<DeploymentUnit Name="ArchivingDatabase">`セクションに新しいサーバーの名前。  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-5.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] が動作しているコンピューターで、次のフォルダーを参照します。  
+5.  BizTalk Server を実行するコンピューター上には、次のフォルダーを参照してください。  
   
     -   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が 64 ビット バージョンの Windows Server にインストールされています。  
   

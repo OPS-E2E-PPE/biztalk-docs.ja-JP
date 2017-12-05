@@ -16,11 +16,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c7928affeafd40197401fa75d44658e0e975507
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5bb458af94d61ceb89a725f80606d8dda2af579
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行します。
 このセクションでは、チャネルを経由する Oracle データベースに SQLEXECUTE 操作を実行する方法を示します。 SOAP メッセージのメッセージとメッセージのアクションの両方を指定する必要があります。 SQLEXECUTE 操作の詳細については、次を参照してください。 [WCF サービス モデルを使用して Oracle データベースで実行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)です。  
@@ -29,8 +29,8 @@ ms.lasthandoff: 09/20/2017
  次の XML では、Oracle シーケンスの次の値を返す SQLEXECUTE メッセージを表示します。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>  
-\<!-- New Action: http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE -->  
+<?xml version="1.0" encoding="utf-8" ?>  
+<!-- New Action: http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE -->  
 <SQLEXECUTE xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE">  
     <SQLSTATEMENT>SELECT tid_seq.nextval id FROM dual</SQLSTATEMENT>  
 </SQLEXECUTE>  

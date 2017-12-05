@@ -13,11 +13,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3478997abd4e5bb15bfeb977e05ca3edc7348e0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fef0f6e951798dd2453aa387d8dcde9853968f3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-creating-the-contoso-lob-application-maps-for-the-price-and-availability-project-using-biztalk-mapper"></a>手順 3: Price and Availability プロジェクトの BizTalk マッパーを使用して用の Contoso LOB アプリケーション マップの作成
 ここでは、2 つのマップを作成します。このマップは 2 つの取引先間でメッセージを正常に交換するために必要な変換を定義します。 このシナリオでは、Contoso ERP システムは Price and Availability Request のメッセージ形式を既に標準化しています。 2 つのマップは、取引先である Fabrikam からの要求メッセージと応答メッセージを、内部的に定義された Contoso のメッセージにそれぞれマップします。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [参照の追加] ダイアログ ボックスで、**参照**です。  
   
-3.  フォルダーに移動*\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \bin し、選択、 **Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**アセンブリ。  
+3.  フォルダーに移動*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \bin し、選択、 **Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**アセンブリ。  
   
 4.  をクリックして**追加**、順にクリック**OK**です。  
   
@@ -58,9 +58,9 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-link-schema-fields-in-the-pip3a2requesttocontosopricerequest-map"></a>PIP3A2RequestToContosoPriceRequest マップのスキーマ フィールドをリンクするには  
   
-1.  送信先スキーマ ペインで右クリックし、 **\<スキーマ >**ノードをクリックして**ツリー ノードの展開**です。  
+1.  送信先スキーマ ペインで右クリックし、 **\<スキーマ\>**ノードをクリックして**ツリー ノードの展開**です。  
   
-2.  送信元スキーマ ペインで右クリックし、 **\<スキーマ >**ノードをクリックして**ツリー ノードの展開**です。  
+2.  送信元スキーマ ペインで右クリックし、 **\<スキーマ\>**ノードをクリックして**ツリー ノードの展開**です。  
   
 3.  ドラッグ、 **GlobalProductIdentifier**フィールドを**ProductID**送信先スキーマ ペインでフィールドです。  
   
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
 4.  **ファイル** メニューのをクリックして**すべて保存**して変更を保存します。  
   
 ## <a name="see-also"></a>参照  
- [作成して、Contoso の BizTalk ポートの構成](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-biztalk-ports-for-contoso.md)
+ [Contoso の BizTalk ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-biztalk-ports-for-contoso.md)

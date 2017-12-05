@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e10a4b54688c59991f25bb69a3251bee2f4607b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b1dff8e981b65b6b91c744ce26648a5f4e06adea
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-bring-selected-map-items-in-view"></a>選択したマップ項目をビューに表示する方法
-以前のバージョンの BizTalk マッパーでは、マップが大きいスキーマで構成される場合は、送信元スキーマ ウィンドウ、グリッド ページ、およびターゲット スキーマ ウィンドウを手動でスクロールして、関連するすべてのマップ項目を 1 つのビューに収める必要がありました。 [!INCLUDE[prague](../includes/prague-md.md)] の BizTalk マッパーでは、グリッド ページを自動的にスクロールして、選択されている Functoid/リンクのすべての関連するマップ項目を 1 つのビューに表示することができます。 このトピックでは、この操作を実行する方法について説明します。  
+以前のバージョンの BizTalk マッパーでは、マップが大きいスキーマで構成される場合は、送信元スキーマ ウィンドウ、グリッド ページ、およびターゲット スキーマ ウィンドウを手動でスクロールして、関連するすべてのマップ項目を 1 つのビューに収める必要がありました。 BizTalk Server と BizTalk マッパーでは、1 つのビューに、グリッド ページを自動的にスクロールして選択した functoid/リンクのすべての関連するマップ項目を表示することができます。 このトピックでは、この操作を実行する方法について説明します。  
   
  選択内容に応じて (送信元スキーマ ノード、リレーションシップ ビューの要素、またはターゲット スキーマ ノード)、BizTalk マッパーはスキーマ ビューとリレーションシップ ビューを同期して自動的にスクロールし、選択されている項目の全体的なリレーションシップ ビューを表示します。  
   
@@ -54,4 +54,4 @@ ms.lasthandoff: 09/20/2017
     >  または、Ctrl キーを押しながら M キーを押し、次に Ctrl キーを押しながら U キーを押します。 マッパーのキーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk マッパーの強化された機能を使用](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [BizTalk マッパーの強化された機能の使用](../core/using-enhanced-features-in-biztalk-mapper.md)

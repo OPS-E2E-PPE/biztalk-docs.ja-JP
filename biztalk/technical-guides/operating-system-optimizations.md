@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ede5ad9dd3affba3ce132ab4c4415e8dba4f3cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15ef1c8d5860b6e9bd3683551096c947de8c7a42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operating-system-optimizations"></a>オペレーティング システムの最適化
 このトピックのパフォーマンスを最適化するための推奨事項を提供する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、実稼働環境で使用されるコンピューター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 これらの最適化が後に適用されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールして構成します。  
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
  NTFS では、FAT および FAT32 ファイル システムよりも大きなパフォーマンス上の利点を提供し、Windows サーバーでのみ使用する必要があります。 さらに、NTFS では、FAT および FAT32 経由で多くのセキュリティ、スケーラビリティ、安定性と復旧の利点を備えています。  
   
- 以前のバージョンの Windows では、FAT および FAT32 多くの場合、実装された小さいボリュームの (たとえば\<500 MB) が多くの場合、このような状況で高速なためです。 比較的安価な現在のディスク記憶域とオペレーティング システム ドライブの容量を最大にプッシュするアプリケーションと、このような小さいボリュームが使用される可能性はありません。 FAT32 では、FAT より大きなボリュームにスケールを設定が、まだに適切なファイル システムの Windows サーバーにありません。  
+ 以前のバージョンの Windows では、FAT および FAT32 多くの場合、実装された小さいボリュームの (たとえば < 500 MB) が多くの場合、このような状況で高速なためです。 比較的安価な現在のディスク記憶域とオペレーティング システム ドライブの容量を最大にプッシュするアプリケーションと、このような小さいボリュームが使用される可能性はありません。 FAT32 では、FAT より大きなボリュームにスケールを設定が、まだに適切なファイル システムの Windows サーバーにありません。  
   
  FAT および FAT32 多くの場合に実装されている過去ようそれらがより簡単に回復可能なボリュームに問題が発生した場合のネイティブの DOS ツールを使用して管理しやすいとして。 今日では、NTFS 回復性のさまざまなツール ビルド両方のオペレーティング システムをネイティブに使用可能なサード パーティのユーティリティと使用可能なありますがあり、不要になったファイル システムを NTFS を使用していないに対して有効な引数。  
   

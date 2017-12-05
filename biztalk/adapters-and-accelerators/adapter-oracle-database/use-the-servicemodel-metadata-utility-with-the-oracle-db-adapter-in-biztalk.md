@@ -13,11 +13,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 143fefc3a35f70e08a9e1288cc019fe6561c2bb1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9dfbdbd60333a2e5683b4f37a65edb928a451e46
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-oracle-database"></a>Oracle データベースの BizTalk アダプターで、ServiceModel メタデータ ユーティリティ ツールの使用
 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用するには、WCF クライアント クラスまたは操作用の WCF サービス コントラクト (インターフェイス) を生成する、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]を公開します。 WCF クライアント クラスまたは WCF サービス コントラクトのいずれかを生成する svcutil.exe を実行した後、コードで生成されたファイルを含めると、生成されたクラスのインスタンスを作成したり、Oracle で操作を実行するためのコントラクトから WCF サービスを実装データベースです。  
@@ -40,9 +40,9 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
   
     ```  
     <configuration>  
-      \<system.serviceModel>  
+      <system.serviceModel>  
         <client>  
-          \<!-- the name should match the required scheme of the WS-Metadata Exchange endpoint   
+          <!-- the name should match the required scheme of the WS-Metadata Exchange endpoint   
           and the contract should be "IMetadataExchange" -->  
           <endpoint name="oracledb"  
                     binding="oracleDBBinding"  
@@ -55,7 +55,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
             </oracleDBBinding>  
         </bindings>  
   
-      \</system.serviceModel>  
+      </system.serviceModel>  
   
     </configuration>  
     ```  
@@ -113,4 +113,4 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
  [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]高度な参照が大幅に簡素化に役立つ、WCF クライアント クラスと WCF サービス コントラクトを生成する検索機能を提供します。 詳細については、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]を参照してください[Oracle データベース ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)
+ [BizTalk Adapter for Oracle Database 用のメッセージとメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

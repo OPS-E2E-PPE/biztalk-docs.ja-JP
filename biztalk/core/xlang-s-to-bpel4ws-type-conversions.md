@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a9451d1f156bf98b3e8fd7da177937cd4492b0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02412b86b8649b73cadb4715793f085682a1de74
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="xlang-s-to-bpel4ws-type-conversions"></a>XLANG-s BPEL4WS 型への変換から
 次の表は、さまざまな XLANG/s 構成要素と BPEL4WS 構成要素間の変換の詳細を示しています。  
@@ -60,8 +60,8 @@ ms.lasthandoff: 09/20/2017
 |単項演算子 +|無視|  
 |単項 -|XPath 単項演算子 -|  
 |単項演算子 !|XPath not() 関数|  
-|バイナリ & &、&#124; & #124 です。|XPath "and" 演算子、"or" 演算子|  
-|バイナリ = =、! =、< =、 \<、> =、>|XPath "="、"! ='、' < = '、'\<'、' > ='、' >' の演算子|  
+|バイナリ & &、&#124; &#124;です。|XPath "and" 演算子、"or" 演算子|  
+|バイナリ ==、!=、<=、<、>=、>|XPath "="、"! ='、' < ='、' <'、' > ='、' >' の演算子|  
 |両方の整数オペランドのバイナリ +、-、*、%|XPath "+"、"-"、"*"、"mod" 演算子|  
   
 ## <a name="xlangs-constructs-that-are-disallowed-in-bpel4ws"></a>BPEL4WS で使用できない XLANG/s 構成要素  
@@ -84,11 +84,11 @@ ms.lasthandoff: 09/20/2017
   
 -   整数以外のオペランドのバイナリ +、-、*、%  
   
--   バイナリ < =、 \<、> =、> 文字列以外のオペランドを持つ  
+-   文字列型以外のオペランドのバイナリ <=、<、>=、>  
   
--   ビット処理演算子 &、^、& #124 です。  
+-   ビット処理演算子 &、^、&#124;です。  
   
--   シフト演算子 <\<、>>  
+-   シフト演算子 <<、>>  
   
 -   checked 式  
   

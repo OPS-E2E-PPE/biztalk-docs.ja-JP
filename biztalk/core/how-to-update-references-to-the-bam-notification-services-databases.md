@@ -21,11 +21,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 394a002fedaffbb9c67fa4b0ae0229215e6d8efa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c27f1ecaf07c3f953372a9e5733d62c8376a288f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-references-to-the-bam-notification-services-databases"></a>BAM Notification Services データベースの参照を更新する方法
 送信先システムへのビジネス アクティビティの監視 (BAM) 通知サービス データベースを復元するために必要な手順が完了したら、Notification Services (NSservice.exe) を実行する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループのすべてのコンピューターに Notification Services を再登録する必要があります。 こうして初めて、Notification Services から新しい場所のデータベースに接続できるようになります。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  手順 2. で作成した xml ファイルを開き、Notification Services の再登録が必要なコンピューターを確認します。  
   
-     コンピューターの名前が表示されている、 **\<プロパティ名\=>** 内のパラメーター、  **\<DeploymentUnit 名前 ="Alert">** xml のセクションファイル:  
+     コンピューターの名前にある、 **\<プロパティ名\=\>** 内のパラメーター、  **\<DeploymentUnit 名前 ="Alert"\>** xml ファイルのセクションの内容:  
   
     ```  
     -<DeploymentUnit Name="Alert">  
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  をクリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft SQL Server 2008 R2**、 をクリックして**構成ツール**をクリックして**Notification Services コマンド プロンプト**です。  
   
-    2.  コマンド プロンプトで次のように入力します: **nscontrol register-name BamAlerts-サーバー**  *\<ServerName >***-サービス - serviceusername"**  *。\<ServiceUserName >***"-servicepassword"***\<ServicePassword >***"**  
+    2.  コマンド プロンプトで次のように入力します: **nscontrol register-name BamAlerts-サーバー**  *\<ServerName\>***-サービス - serviceusername"** 。*\<ServiceUserName\>***"-servicepassword"***\<ServicePassword\>***"**  
   
          これにより、Notification Services が適切なデータベースに接続できるようになります。この情報は、nscontrol により、サービス コンピューターのレジストリに格納されます。  
   
@@ -104,7 +104,7 @@ ms.lasthandoff: 09/20/2017
   
 10. コマンド プロンプトで、次のように入力します。  
   
-     **nscontrol register 名前***\<BamAlerts >***-サーバー**  *\<NotificationServicesDatabaseServer >*   
+     **nscontrol register 名前***\<BamAlerts\>***-サーバー**  *\<NotificationServicesDatabaseServer    \>*  
   
 11. コマンド プロンプトで次のように入力します。: **「net start NS$ BamAlerts**です。  
   
@@ -120,4 +120,4 @@ ms.lasthandoff: 09/20/2017
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
 ## <a name="see-also"></a>参照  
- [バックアップおよび BAM を復元します。](../core/backing-up-and-restoring-bam.md)
+ [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

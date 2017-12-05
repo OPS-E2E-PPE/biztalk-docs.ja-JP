@@ -20,11 +20,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38bb6aa65a77c5473ac2934bd2bd0c59268eb2af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6796bbbad4722e959962ea88e9854bce82476be4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="single-server-deployment"></a>シングルサーバー展開
 このトピックでは、Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを、シングルサーバー環境に設定および展開する場合の考慮事項について説明します。  
@@ -112,7 +112,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **Windows SharePoint Services アダプター Web サイト**ドロップダウン ボックスで、Web サイトのアダプター コンポーネントをインストールします。 特に選択しない場合、既定の Web サイトが選択されます。  
   
-5.  [**構成の適用**] をクリックします。  
+5.  **[構成の適用]** をクリックします。  
   
 ## <a name="considerations-for-a-single-server-deployment"></a>シングルサーバー展開に関する考慮事項  
  シングルサーバー環境で Windows SharePoint Services アダプターを設定および展開する際は、次のことを考慮してください。  
@@ -123,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] では、SharePoint アダプター Web サービスを実行する ID に次のアクセス許可が必要です。  
   
-     **読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**フォルダーです。 アクセス許可に設定する必要がある場合は、64 ビット バージョンの Windows および BizTalk Server を使用して、 **%program Files (x86) \Microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**  
+     **読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**フォルダーです。 アクセス許可に設定する必要がある場合は、64 ビット バージョンの Windows および BizTalk Server を使用して、 **%program Files (x86) \Microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**  
   
      **読み取り**次のレジストリ キーに対する権限: **hkey_local_machine \software\microsoft\shared Server\Extensions\12.0\Secure\ConfigDB**です。  
   
@@ -139,4 +139,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [Windows SharePoint Services アダプター](../core/windows-sharepoint-services-adapter.md)   
- [マルチ サーバー展開](../core/multiserver-deployment.md)
+ [マルチサーバー展開](../core/multiserver-deployment.md)

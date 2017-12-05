@@ -17,11 +17,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca265c240f0e20534c5140d0810479152ad90914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19383ca97f979d6932698d06eabd507b4a00954f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF サービス公開ウィザードで公開した WCF サービスを構成する方法
 BizTalk WCF サービス公開ウィザードを使用して WCF サービスを公開した後、これらのサービスを適切に構成する必要があります。 このトピックでは、公開した WCF サービスを構成する方法について説明します。  
@@ -51,7 +51,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
      ![WCF &#45; の [セキュリティ] タブBasicHttp アダプタ](../core/media/585ecdad-bdee-40c0-b2f1-7ace74d503e5.gif "585ecdad-bdee-40c0-b2f1-7ace74d503e5")  
   
     > [!NOTE]
-    >  分離 WCF アダプターのトランスポート クライアントの資格情報の種類のプロパティは、この受信場所をホストするインターネット インフォメーション サービス (IIS) 仮想ディレクトリの認証スキームと一致する必要があります。 例では、プロパティ設定されている場合の**Windows**も有効にする必要があります**統合 Windows 認証**これをホストする仮想ディレクトリの場所を受信します。 同様に、このプロパティが [ **なし**] に設定されている場合は、この受信場所をホストする仮想ディレクトリへの匿名アクセスを許可する必要があります。 Wcf-basichttp と Wcf-wshttp アダプターのセキュリティ プロパティを構成する方法の詳細については、次を参照してください[、Wcf-basichttp 受信場所を構成する方法](http://msdn.microsoft.com/library/43f18e5d-ba28-453c-b8ce-5bcdc6f27fdd)、および[Wcf-wshttp 受信を構成する方法。場所](../core/how-to-configure-a-wcf-wshttp-receive-location.md)です。 バインド情報を構成する方法の詳細については、次を参照してください。 [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)です。  
+    >  分離 WCF アダプターのトランスポート クライアントの資格情報の種類のプロパティは、この受信場所をホストするインターネット インフォメーション サービス (IIS) 仮想ディレクトリの認証スキームと一致する必要があります。 例では、プロパティ設定されている場合の**Windows**も有効にする必要があります**統合 Windows 認証**これをホストする仮想ディレクトリの場所を受信します。 同様に、このプロパティが **[なし]** に設定されている場合は、この受信場所をホストする仮想ディレクトリへの匿名アクセスを許可する必要があります。 Wcf-basichttp と Wcf-wshttp アダプターのセキュリティ プロパティを構成する方法の詳細については、次を参照してください[、Wcf-basichttp 受信場所を構成する方法](http://msdn.microsoft.com/library/43f18e5d-ba28-453c-b8ce-5bcdc6f27fdd)、および[Wcf-wshttp 受信を構成する方法。場所](../core/how-to-configure-a-wcf-wshttp-receive-location.md)です。 バインド情報を構成する方法の詳細については、次を参照してください。 [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)です。  
   
 7.  選択しなかった場合、**作成 BizTalk の受信場所**オプションで、サービス、WCF を作成するときに、**トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。**全般**] タブの [この受信場所の URI を入力、**アドレス**テキスト ボックス。 BizTalk WCF サービス公開ウィザードが前の手順で生成した仮想ディレクトリと .svc ファイル名を指定します (例 : /path/service.svc)。  
   
@@ -73,7 +73,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
   
 12. コマンド プロンプトを開き、BizTalk WCF サービス公開ウィザードが %SystemDrive%\InetPub で WCF サービスを作成する場所のフォルダーに移動\\、メモ帳を使用して Web.config ファイルを開きます。  
   
-13. メモ帳で、内部の次の行を追加、  **\<system.web >**要素。  
+13. メモ帳で、内部の次の行を追加、  **\<system.web\>** 要素。  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -94,7 +94,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
   
     1.  メモ帳で、%SystemDrive%\InetPub で、BizTalk WCF サービス公開ウィザードが、WCF サービスを作成するフォルダーの Web.config を開き\\です。  
   
-    2.  メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、  **\<serviceMetadata >**要素を次の行として false にします。  
+    2.  メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、  **\<serviceMetadata\>** 要素を次の行として false にします。  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

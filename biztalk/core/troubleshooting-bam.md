@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d47932ffd9f7843d0b3d95073ca54bce987b8f75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92f13d938b0e0523ce6e20d6021bbca24595782f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-bam"></a>BAM のトラブルシューティング
 このトピックでは、ビジネス アクティビティ監視 (BAM) の使用時に生じる問題のトラブルシューティングに役立つ情報について説明します。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="bam-deployment-failed"></a>BAM を展開できない  
  SQL Server Analysis Services が使用できないときにリアルタイム集計 (RTA) を含む BAM 定義を展開しようとすると、Bm.exe コマンドで次のメッセージが表示されます。  
   
- エラー: BAM 展開に失敗しました。 接続できません。 サーバーが実行中であることを確認してください。 対象のコンピューターによって拒否されたため接続は行われません *\<IP アドレス >*です。  
+ エラー: BAM 展開に失敗しました。 接続できません。 サーバーが実行中であることを確認してください。 対象のコンピューターによって拒否されたため接続は行われません *\<IP アドレス\>*です。  
   
  このエラーは、SQL Server Analysis Services がインストールされ構成済みであり、RTA を含む BAM 定義を展開するために実行されている必要があるために発生します。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **ユーザー アカウント制御**ダイアログ ボックスで、をクリックして**続行**です。  
   
-3.  Internet Explorer のアドレス バーで、次のように入力します。`http://<server>/BAM`ここで、 *\<サーバー >* 、BAM ポータルを実行しているコンピューターの名前を指定します。  
+3.  Internet Explorer のアドレス バーで、次のように入力します。`http://<server>/BAM`ここで、 *\<サーバー\>*  、BAM ポータルを実行しているコンピューターの名前を指定します。  
   
 ## <a name="bam-portal-does-not-work-if-invalid-users-are-granted-permissions"></a>無効なユーザーにアクセス許可が付与されていると BAM ポータルは機能しない  
  BAM の表示アクセスが許可されている AD ユーザーの 1 人が AD から削除されると、BAM ポータルは、DBO を除き、どのユーザーに対しても正しく読み込まれなくなります。  

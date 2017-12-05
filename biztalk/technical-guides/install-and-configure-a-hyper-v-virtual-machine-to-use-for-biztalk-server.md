@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62e612ed35a20646f686bd178fad01771dbd2cce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b973053d3afa9c6d0b61de111d9da1c4fb7a0fb1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-and-configuring-a-hyper-v-virtual-machine-for-use-with-biztalk-server"></a>インストールして、BizTalk Server で使用する HYPER-V 仮想マシンの構成
 このトピックの内容をインストールして、HYPER-V 仮想マシンのインストールと構成に関する推奨事項を BizTalk Server をインストールするための推奨事項など、HYPER-V 環境で BizTalk Server の構成に関する推奨事項を提供する、HYPER-V バーチャル マシンです。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
  記憶域の構成を計画するときは、プロビジョニングする環境の要件を検討してください。 実稼働環境、実稼働前、および開発環境の要件が大きく異なる場合があります。  
   
- 実稼働を展開する場合は[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HYPER-V、パフォーマンス上の環境の重要な要件になります。 ディスク使用中の実稼働システムで I/O の競合を避けるためには、ホストとゲストの両方のオペレーティング システムに統合サービスをインストールし、合成の SCSI コント ローラーとデータ ボリュームのディスクを構成します。 高負荷の高いストレージの I/O ワークロードの複数のデータ ドライブに配置されている場合に、全体的なパフォーマンスを向上させるため代理個別の SCSI コント ローラーに各 VHD をアタッチする必要があります。 さらに、各 VHD は、個別の物理ディスクに保存する必要があります。 データ ディスクの構成の詳細については、合成の SCSI コント ローラーでボリュームを参照してください「ディスクのパフォーマンスを最適化する」トピックの[チェックリスト: HYPER-V でのパフォーマンスの最適化](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)です。  
+ 運用環境の HYPER-V での BizTalk Server 環境を展開する場合は、パフォーマンスが重要な要件になります。 ディスク使用中の実稼働システムで I/O の競合を避けるためには、ホストとゲストの両方のオペレーティング システムに統合サービスをインストールし、合成の SCSI コント ローラーとデータ ボリュームのディスクを構成します。 高負荷の高いストレージの I/O ワークロードの複数のデータ ドライブに配置されている場合に、全体的なパフォーマンスを向上させるため代理個別の SCSI コント ローラーに各 VHD をアタッチする必要があります。 さらに、各 VHD は、個別の物理ディスクに保存する必要があります。 データ ディスクの構成の詳細については、合成の SCSI コント ローラーでボリュームを参照してください「ディスクのパフォーマンスを最適化する」トピックの[チェックリスト: HYPER-V でのパフォーマンスの最適化](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)です。  
   
  通常、リソース使用率を最大化するメインの優先度傾向がありますので、開発環境には厳しいパフォーマンス要件はありません。 開発環境の 1 つの物理ドライブ上の複数の VHD ファイルをホストしているときに指定パフォーマンスは、通常は許容されます。  
   
@@ -57,13 +57,13 @@ ms.lasthandoff: 09/20/2017
 |-------------------------------|--------------|--------------|-------------------------------------------|  
 |**容量固定のディスク**|物理ハード ドライブに作成されたときに、VHD ファイルはその最大サイズに初期化されるためより容量可変の VHD を実行します。<br /><br /> これにより断片化小さい可能性があり、したがって、1 つの I/O が複数の I/o を分割のシナリオを軽減できます。 これは、読み取りと書き込みが、ブロックのマッピングを検索する必要はないために、VHD の種類の最小の CPU のオーバーヘッドです。|最初に必要なディスク領域の全容量の割り当てが必要です。|オペレーティング システムのボリュームを使用で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。 **重要:** HYPER-V ゲストのパーティションの起動ディスクは、IDE コント ローラーに接続する必要があります。|  
 |**容量可変の拡張ディスク**|VHD ファイルのサイズより多くのデータが、仮想マシン自体に格納されている、ディスクを作成するときに、指定したサイズに増加します。 これには、最も効率的に使用可能記憶域の使用が対応しています。|固定サイズの VHD およびは実行されません。 これは、ディスク内のブロックがゼロのブロックとして開始、VHD ファイル内の実際の領域でバックアップされていないためです。 このようなブロックの戻り値から、ゼロのブロックを読み取ります。 ブロックが最初に書き込まれ、仮想化スタック必要がありますブロックに VHD ファイル内の領域を割り当てる、対応するメタデータを更新します。 これだけでなく既存のブロックが参照されるたびにブロック マッピングする必要がありますで検索することメタデータ。 読み取りの数が増加し、これにより、さらに書き込み活動は、CPU 使用率を向上します。<br /><br /> 動的な増加には、サーバーの管理者が記憶域の要件の増大として十分なディスクの記憶域があることを確認するディスク容量を監視することも必要です。|固定サイズの VHD およびは実行されません。<br /><br /> パフォーマンス問題がない場合は、インスタンスの開発環境でこれがありますにオペレーティング システムのハード ドライブの最適なオプション。<br /><br /> ブロック マッピング参照により追加の CPU オーバーヘッドが発生します。|  
-|**差分ディスク**|これは、差分ディスクが、ベース VHD とベース VHD に関連のすべての変更を保存する場所、親子構成は静的です。 したがっては親と異なるブロックだけでは、差分 VHD の子に格納する必要があります。|読み取り/書き込みは、固定/動的親 VHD と差分ディスクにアクセスする必要があるために、パフォーマンスが低下することができます。 これは、CPU 使用率とディスク I/O のオーバーヘッドが増加します。|大量のコンピューターの特定の構成が必要[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]のインストールと子の VHD ファイルのサイズが増加大幅にこのディスク構成を使用する利点を最小限に抑えるはします。 このシナリオでの複数の VHD からの読み取りは、追加の CPU とディスク I/O のオーバーヘッドが生じます。|  
-|**パススルー ディスク**|これらは、物理ディスクに設定されている*オフライン*ルート パーティションと読み取り/書き込みを排他的に物理ディスクにアクセスするには、有効にする HYPER-V にします。|仮想マシンに割り当てられるために、完全に専用のディスクまたは LUN が必要です。<br /><br /> 物理ディスクは、VHD ファイルよりもコンピューター間で移動することは困難です。|場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスが、HYPER-V で実行されているの固定容量仮想ハード_ディスク (VHD) を使用するパススルー ディスクを使用して増分パフォーマンスの向上を取得する可能性があります、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]データ ボリューム。<br /><br /> ローカル ホストしている場合、ファイル受信場所で[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を処理中にディスク サイズの大きいメッセージをストリーミングするには、固定容量仮想ハード_ディスク (VHD) を使用するパススルー ディスクを使用して増分パフォーマンスの向上を取得することがありますか。|  
+|**差分ディスク**|これは、差分ディスクが、ベース VHD とベース VHD に関連のすべての変更を保存する場所、親子構成は静的です。 したがっては親と異なるブロックだけでは、差分 VHD の子に格納する必要があります。|読み取り/書き込みは、固定/動的親 VHD と差分ディスクにアクセスする必要があるために、パフォーマンスが低下することができます。 これは、CPU 使用率とディスク I/O のオーバーヘッドが増加します。|大量のマシン固有の設定は BizTalk Server のインストールに必要なと子の VHD ファイルはこのディスク構成を使用する利点を最小限に抑えるが大幅になることがあります。 このシナリオでの複数の VHD からの読み取りは、追加の CPU とディスク I/O のオーバーヘッドが生じます。|  
+|**パススルー ディスク**|これらは、物理ディスクに設定されている*オフライン*ルート パーティションと読み取り/書き込みを排他的に物理ディスクにアクセスするには、有効にする HYPER-V にします。|仮想マシンに割り当てられるために、完全に専用のディスクまたは LUN が必要です。<br /><br /> 物理ディスクは、VHD ファイルよりもコンピューター間で移動することは困難です。|場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスが、HYPER-V で実行されている、BizTalk Server のデータ ボリュームの固定容量仮想ハード_ディスク (VHD) を使用する場合よりパススルー ディスクを使用して増分パフォーマンスの向上を取得することがあります。<br /><br /> ローカル ファイルをホストしている場合は、BizTalk Server 上の場所を受信またはを処理中にディスク サイズの大きいメッセージをストリーミングするには、固定容量仮想ハード_ディスク (VHD) を使用するパススルー ディスクを使用して増分パフォーマンスの向上を取得することがあります。|  
   
  ディスクと hyper-v の記憶域の実装の詳細については、次を参照してください。[を実装するディスクおよび記憶域](http://go.microsoft.com/fwlink/?LinkID=142362)(http://go.microsoft.com/fwlink/?LinkID=142362)。  
   
 ##### <a name="networking"></a>ネットワーク  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]使用率が高いネットワークが発生する傾向があります。 したがって、ネットワークのパフォーマンスに問題がある場合は、仮想マシンごとに別個の物理ネットワーク カードを割り当てることを検討します。  
+ BizTalk Server は、高いネットワーク使用率が発生する傾向があります。 したがって、ネットワークのパフォーマンスに問題がある場合は、仮想マシンごとに別個の物理ネットワーク カードを割り当てることを検討します。  
   
  仮想マシンを構成する場合は、レガシ ネットワーク アダプターではなく、ネットワーク アダプターを使用することを確認します。 レガシ ネットワーク アダプターは、統合コンポーネントをサポートしないオペレーティング システム向けです。  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 09/20/2017
  HYPER-V 環境でネットワーク パフォーマンスの評価の詳細については、次を参照してください。、**ネットワーク パフォーマンスの測定**のセクション[チェックリスト: Hyper-v でのパフォーマンスの測定](../technical-guides/checklist-measuring-performance-on-hyper-v.md)です。  
   
 ##### <a name="cpu"></a>CPU  
- HYPER-V は、さまざまなゲスト オペレーティング システムの仮想プロセッサの数が異なるをサポートしています次の表にまとめるとおりです。 最大 CPU リソースに割り当てる[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]にインストール、[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]ゲスト オペレーティング システムは、仮想マシンあたり 4 つの仮想プロセッサをサポートしています。  
+ HYPER-V は、さまざまなゲスト オペレーティング システムの仮想プロセッサの数が異なるをサポートしています次の表にまとめるとおりです。 BizTalk Server の CPU リソースの最大値を割り当てることでインストール、[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]ゲスト オペレーティング システムは、仮想マシンあたり 4 つの仮想プロセッサをサポートします。  
   
  コンテキストの過度の切り替えを防ぐためにホスト オペレーティング システムが利用できる論理プロセッサにゲスト オペレーティング システムで仮想プロセッサの 1 対 1 の割り当てを構成します。 コンテキストの過度のプロセッサ間の切り替えがパフォーマンスの低下が発生します。 仮想プロセッサと論理プロセッサの割り当てに関する詳細については、トピックの「プロセッサのパフォーマンスを最適化する」セクションを参照して[チェックリスト: HYPER-V でパフォーマンスの最適化](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)です。  
   
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
 ##### <a name="memory"></a>[メモリ]  
  物理サーバーでは、ルート パーティションと、サーバーで実行されているすべてのバーチャル マシンのための十分なメモリが必要です。 テスト中に、2 GB のメモリの最小値は、ルート パーティションに割り当てられた、**メモリ/利用可能領域のメガバイト数**パフォーマンス モニター カウンターを監視したメモリ不足が発生しましたないことを確認します。  
   
- 場合は、各仮想マシンに割り当てる必要があるメモリの量、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]環境は、ワークロードによって異なりますされ、処理の種類が実行されます。 多くの要因に影響を与えるのメモリ要件がある[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]など。  
+ BizTalk Server 環境では、各仮想マシンに割り当てる必要があるメモリの量は、ワークロードによって異なります、処理の種類が行われます。 これには多くの要因に影響を与えるような BizTalk Server のメモリ要件があります。  
   
 -   処理されるメッセージのサイズ  
   
@@ -147,14 +147,14 @@ ms.lasthandoff: 09/20/2017
  インストールして、このラボで使用するコンピューターの構成、初期の基本イメージは、固定サイズの VHD に作成されました。 手動インストールが関係しているこの[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 すべての適切な更新プログラムがインストールされていたと基本の仮想マシン イメージを作成した %WINDIR%\system32\sysprep ディレクトリに、Windows Server 2008 と共にインストールされる sysprep ユーティリティを使用します。  
   
 > [!NOTE]  
->  後に Sysprep を実行している[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]をインストールしてに構成されているサーバーは、Sysprep 応答ファイルを使用して実現でき、スクリプトが付属[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。 これらのサンプル スクリプトがで使用するために設計された[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]にインストールされている[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 詳細については、次を参照してください。、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]オンライン ドキュメントを参照します。  
+>  BizTalk Server をインストールし、サーバー上で構成した後、Sysprep を実行しているが、Sysprep 応答ファイルおよび BizTalk Server で提供するスクリプトを使用して実現できます。 これらのサンプル スクリプトが使用できるように設計にインストールされている BizTalk Server と[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 詳細については、BizTalk Server のオンライン マニュアルを参照してください。  
   
 ## <a name="installing-and-configuring-biztalk-server"></a>BizTalk Server のインストールと構成  
   
 -   仮想マシンをインストールに必要な時間を最小限に抑えるには、ゲスト オペレーティング システムとソフトウェアの前提条件のみで構成される基本イメージを作成します。 SysPrep を使用して、再利用するため、VHD イメージを準備し、基にしてこの VHD にすべての仮想マシン (Vm)。  
   
     > [!NOTE]  
-    >  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、基本イメージに対して Sysprep を実行することは*後*[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]をインストールして、サーバーで構成します。 これには、Sysprep 応答ファイルを使用してで提供されるスクリプト[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。 これらのサンプル スクリプトがで使用するために設計された[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]にインストールされている[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 詳細については、次を参照してください。、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]オンライン ドキュメントを参照します。  
+    >  BizTalk Server では、基本イメージに対して Sysprep を実行すること*後*BizTalk Server がインストールされているし、サーバーで構成されています。 これは、Sysprep 応答ファイルおよび BizTalk Server で提供するスクリプトを使用して実現できます。 これらのサンプル スクリプトが使用できるように設計にインストールされている BizTalk Server と[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 詳細については、BizTalk Server のオンライン マニュアルを参照してください。  
     >   
     >  Windows の無人セットアップ リファレンスについては、「 [http://go.microsoft.com/fwlink/?LinkId=142364](http://go.microsoft.com/fwlink/?LinkId=142364)です。  
   

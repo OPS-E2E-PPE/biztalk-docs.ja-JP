@@ -18,11 +18,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e948aeca31d3eb9908d6933f5ac375bce206761
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec6e6e290761ba6d1be2ed08c8519e96c2846fa7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mime-biztalk-server-sample"></a>MIME (BizTalk Server サンプル)
 MIME サンプルは、送信パイプラインで MIME エンコードが行われる方法を示します。  
@@ -39,7 +39,7 @@ MIME サンプルは、送信パイプラインで MIME エンコードが行わ
 4.  送信パイプラインで、MIME エンコードを実行し、そのファイルを送信アダプタ フォルダ MIMEOut に配置します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Pipelines\MIME\  
+ \<*パスのサンプル*\>\Pipelines\MIME\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -59,13 +59,13 @@ MIME サンプルは、送信パイプラインで MIME エンコードが行わ
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Pipelines\MIME  
+     \<*パスのサンプル*\>\Pipelines\MIME  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   フォルダに、このサンプルの入力 (MIMEIn) フォルダと出力 (MIMEOut) フォルダを作成します。  
   
-         \<*パスのサンプル*> \Pipelines\MIME  
+         \<*パスのサンプル*\>\Pipelines\MIME  
   
     -   コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。  
   
@@ -101,4 +101,4 @@ MIME サンプルは、送信パイプラインで MIME エンコードが行わ
 2.  テキスト ファイルが MIMEOut フォルダに作成されることを確認します。 このテキスト ファイルの名前はメッセージ ID の GUID に基づきます。 このファイルには、入力ファイル ImageInput.gif の MIME でエンコードされたコンテンツが含まれます。  
   
 ## <a name="see-also"></a>参照  
- [パイプライン (BizTalk Server Samples フォルダ)](../core/pipelines-biztalk-server-samples-folder.md)
+ [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

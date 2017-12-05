@@ -17,11 +17,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 079bae61dd4e692e25634414f6ff2e7078235b67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de8b806c8a6f39608608a3eabc975cf606410abc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを使用します。
 BizTalk Server 管理コンソールは、BizTalk Server の管理と監視および BizTalk Server アプリケーションの展開と管理に使用できる Microsoft 管理コンソール (MMC) です。  
@@ -30,7 +30,7 @@ BizTalk Server 管理コンソールは、BizTalk Server の管理と監視お�
   
  コンソール ツリーでノードを選択すると、管理コンソールの右側にある詳細ペインに、そのアイテムに関する情報が表示されます。  
   
- 管理コンソールで [[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理] ノードを選択すると、開始ページが表示されます。開始ページには、既存の BizTalk Server グループへの接続など、実行できる操作が表示されています。 また、BizTalk Server のマニュアルおよびオンライン コミュニティ Web サイトへのリンクも含まれています。  
+ コンソール ツリーで、BizTalk Server 管理 ノードを選択するには、既存の BizTalk Server グループに接続するなど、実行できる操作が含まれているスタート ページが表示されます。 また、BizTalk Server のマニュアルおよびオンライン コミュニティ Web サイトへのリンクも含まれています。  
   
  管理コンソールのキーボード ショートカットの使用方法の詳細については、次を参照してください。[管理コンソールのキーボード ショートカット](../core/administration-console-keyboard-shortcuts.md)です。  
   
@@ -127,4 +127,4 @@ BizTalk Server 管理コンソールは、BizTalk Server の管理と監視お�
   
 -   [BizTalk Server 管理コンソールを使用して追跡を構成します。](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)  
   
--   [グループ ハブ ページを使用します。](../core/using-the-group-hub-page.md)
+-   [グループ ハブ ページの使用](../core/using-the-group-hub-page.md)

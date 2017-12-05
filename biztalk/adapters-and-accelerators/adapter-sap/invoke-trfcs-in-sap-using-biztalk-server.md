@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c68953a1846e8606df79dbdb8b74920ee4d5015
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4eeaa8b0d67e4592ef6622f747a1ddaea875084d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-trfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP で tRFCs を呼び出す
 トランザクション リモート関数呼び出し (tRFCs) は、SAP システムの RFC の 1 つだけのランタイム実行を保証します。 いずれかの側に表示される、Rfc を呼び出すことができます、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC として。 RFC の呼び出しと似ています、tRFC の呼び出し (を参照してください[呼び出しを使用して BizTalk Server での SAP Rfc](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-biztalk-server.md))、次の点が異なります。  
@@ -134,7 +134,7 @@ ms.lasthandoff: 09/20/2017
   
 ```  
 XmlDoc = new System.Xml.XmlDocument();  
-XmlDoc.LoadXml("\<RfcConfirmTransID xmlns='http://Microsoft.LobServices.Sap/2007/03/RfcApi/'><TransactionalRfcOperationIdentifier /></RfcConfirmTransID>");  
+XmlDoc.LoadXml("<RfcConfirmTransID xmlns='http://Microsoft.LobServices.Sap/2007/03/RfcApi/'><TransactionalRfcOperationIdentifier /></RfcConfirmTransID>");  
 TIDRequest = XmlDoc;  
 TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local-name()='BAPI_SALESORDER_CREATEFROMDAT2Response']/*[local-name()='TransactionalRfcOperationIdentifier']/text())");  
 ```  
@@ -243,7 +243,7 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
 -   呼び出すには tRFC SAP からの応答メッセージは、ファイルの場所にコピーされます。 これには、SAP システムに送信された同じ GUID が含まれています。 TRFC、現状有姿 BAPI_SALESORDER_CREATEFROMDAT2 を呼び出して応答メッセージ:  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8"?>  
+    <?xml version="1.0" encoding="utf-8"?>  
     <BAPI_SALESORDER_CREATEFROMDAT2Response xmlns="http://Microsoft.LobServices.Sap/2007/03/Trfc/">  
       <TransactionalRfcOperationIdentifier>def689b1-b514-4627-a861-d6d7f51c84e3</TransactionalRfcOperationIdentifier>  
     </BAPI_SALESORDER_CREATEFROMDAT2Response>  
@@ -252,7 +252,7 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
 -   RfcConfirmTransID の応答メッセージは、同じ場所にコピーされます。 これは、空の応答です。 RfcConfirmTransID の応答メッセージは次のとおりです。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8"?>  
+    <?xml version="1.0" encoding="utf-8"?>  
     <RfcConfirmTransIDResponse xmlns="http://Microsoft.LobServices.Sap/2007/03/RfcApi/"></RfcConfirmTransIDResponse>  
     ```  
   

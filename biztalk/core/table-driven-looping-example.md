@@ -21,11 +21,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91e0710a8238075610d98b5897fdc7865f30190f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e6989ac7e64cf28784d08f26aaf9e7af3a166a28
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="table-driven-looping-example"></a>テーブルドリブン ループの例
 このセクションを使用して、マップ、**テーブル ループ**と**テーブル抽出**functoid です。 詳細についてを選択すると、配置、リンク、および、functoid の構成を参照してください[テーブル ループの追加、およびテーブル抽出 Functoid をマップする方法](../core/how-to-add-table-looping-and-table-extractor-functoids-to-a-map.md)です。  
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
  注意して、**テーブル ループ**functoid へのリンクを両方の入力と出力スキーマのレコード レベルの要素。 リンクによって、囲み構造が作成され、レコード内に要素が作成されます。 またことがあることを確認**テーブル抽出**出力スキーマ内の各フィールドを functoid です。  
   
- 入力スキーマのレコードへのリンクは、最初のパラメーター、**構成\<Functoid > Functoid** ダイアログ ボックス。  
+ 入力スキーマのレコードへのリンクは、最初のパラメーター、**構成\<Functoid\> Functoid** ダイアログ ボックス。  
   
  2 番目のパラメーターは、functoid のグリッド テーブルの列の数: 1 つの列それぞれのアドレスの種類、名前、番地、市区町村、状態、および郵便番号。 2 つ目のパラメーターの後には、グリッド テーブルに表示されるすべての値の一覧が示されています。 一覧には、住所のフィールドへのリンクと共に、住所の種類 ("ShipTo" および "BillTo") に使用する文字列の定数が含まれます。 住所のフィールドへのリンクに名前があることに注意してください。 マップ内のリンクに名前を付けると、テーブルの構築がわかりやすくなります。 完全パスを表示するそれ以外の場合、 **[テーブル ループ Functoid** ] ダイアログ ボックス。  
   

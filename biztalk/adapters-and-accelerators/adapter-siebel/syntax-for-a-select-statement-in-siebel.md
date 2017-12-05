@@ -16,19 +16,19 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2a5ee569ff05acf9a14293503ee1238e311bcf1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3eeb0a6d4a1fceebe7e16b3f71566f848e4a20f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a>Siebel の SELECT ステートメントの構文
 使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、ADO.NET クライアントは Siebel 検索の有効な定義を表す WHERE 句を指定することで Siebel ビジネス コンポーネントで SELECT クエリを実行することができます。 SELECT ステートメントの構文です。  
   
 ```  
 SELECT  
-\<column name 1> AS \<column alias 1>,  
-\<column name 2> AS \<column alias 2>,  
+<column name 1> AS <column alias 1>,  
+<column name 2> AS <column alias 2>,  
 …  
 FROM  
 <Business object name>.<Business component name> AS <table alias>  
@@ -54,7 +54,7 @@ OPTION
   
  検索条件の規則は次のとおりです。  
   
--   標準的な比較演算子は、定数、フィールドまたは別のフィールドに 1 つのフィールドを比較するために使用する必要があります。 これらを含める =、! =、>、 \<、> =、および < = です。  
+-   標準的な比較演算子は、定数、フィールドまたは別のフィールドに 1 つのフィールドを比較するために使用する必要があります。 これらを含める =、! =、>、<>, =、および < = です。  
   
     ```  
     Example: [Revenue] > 5000  
@@ -97,4 +97,4 @@ OPTION
 -   並べ替え式の仕様は 255 文字である必要があります以下です。  
   
 ## <a name="see-also"></a>参照  
- [Siebel eBusiness Applications の .NET Framework データ プロバイダーを使用します。](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)
+ [.NET Framework Data Provider for Siebel eBusiness Applications を使用する](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)

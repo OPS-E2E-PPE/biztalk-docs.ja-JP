@@ -17,14 +17,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 428d2987465ff1fe09f01979bbe9036def6350b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ba0c156e2ad6ab0fcbccb5ba7629f63b0aa490e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="about-the-sapdiscoveredobjectsxml-file-in-sap"></a>SAP の SAPDiscoveredObjects.xml ファイルについて
-インストールする場合、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール、セットアップ プログラムは、通常は SAPDiscoveredObjects.xml ファイルをコピー\<インストール ドライブ >: \program files \microsoftShared\Adapters\SAP です。 新規インストールした後、ファイルの内容、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次のようになります。  
+インストールする場合、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール、セットアップ プログラムは、通常は SAPDiscoveredObjects.xml ファイルをコピー\<インストール ドライブ\>: \program ファイル\Microsoft Shared\Adapters\SAP です。 新規インストールした後、ファイルの内容、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次のようになります。  
   
 ```  
 <DiscoveredObjects>  
@@ -56,10 +56,10 @@ ms.lasthandoff: 09/20/2017
   
  `name`のプロパティ、< Server\>要素には DDEX プラグインを使用して、接続するサーバーの名前が含まれています。 `user`と`client`のプロパティ、< Server\>要素は、ユーザー名とクライアントの番号をそれぞれ含めます。 `type`プロパティには、SAP システムへの接続に使用する接続文字列 (A、B、または D) の型が含まれています。 接続文字列の種類の詳細については、次を参照してください。 [SAP 接続文字列のデータ プロバイダーの種類の説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)です。  
   
- \<テーブル > 要素には、プラグインを使用して追加するテーブルの名前が含まれています。 同様に、 \<Rfc > 要素には、プラグインを使用して追加した Rfc が含まれています。 1 つ以上の SAP サーバーに接続する場合は、別\<サーバー > 要素が XML ファイルに追加され、対応するテーブルと Rfc は、下に表示されます、\<テーブル > と\<Rfc > 要素。  
+ \<テーブル\>要素には、プラグインを使用して追加するテーブルの名前が含まれています。 同様に、 \<Rfc\>要素には、プラグインを使用して追加した Rfc が含まれています。 1 つ以上の SAP サーバーに接続する場合は、別\<サーバー\>要素が XML ファイルに追加され、対応するテーブルと Rfc は、下に表示されます、\<テーブル\>と\<Rfc\>要素。  
   
 > [!NOTE]
 >  Visual Studio DDEX プラグインの使用方法の詳細については、次を参照してください。 [DDEX プラグインと SAP 用データ プロバイダーを使用して](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-the-ddex-plug-in.md)です。  
   
 ## <a name="see-also"></a>参照  
- [.NET Framework Data Provider for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [.NET Framework Data Provider for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

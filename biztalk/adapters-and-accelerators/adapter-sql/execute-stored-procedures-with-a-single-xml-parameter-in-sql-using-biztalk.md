@@ -13,11 +13,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3d933b494e967184c8248d6f71ad9df113fb9b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02c5f239300140022b1d26f35664add744b630c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server で 1 つの XML パラメーターを持つストアド プロシージャを実行します。
 」の説明に従って、他のストアド プロシージャの実行に似ていますが、1 つのパラメーターを受け取るストアド プロシージャを実行する[BizTalk Server を使用して SQL Server でストアド プロシージャの実行](execute-stored-procedures-in-sql-server-using-biztalk-server.md)です。 ただし、上記のリンクで説明されているアプローチのデザイン時にストアド プロシージャのメタデータを生成し、実行時にプロシージャを呼び出すオーケストレーションを作成する必要があります。  
@@ -104,7 +104,7 @@ ms.lasthandoff: 09/20/2017
         ```  
         <ADD_LAST_EMP_XML_INFO xmlns="http://schemas.microsoft.com/Sql/2008/05/Procedures/dbo">  
         <xml_info>  
-        \<bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/>  
+        <bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/>  
         </xml_info>  
         </ADD_LAST_EMP_XML_INFO>  
         ```  
@@ -146,4 +146,4 @@ ms.lasthandoff: 09/20/2017
  3 つすべてのポートを開始します。 受信場所がファイルにマップされているフォルダーに XML ファイルのコピー。 FILE 送信ポートにマップされているフォルダーに応答を探します。  
   
 ## <a name="see-also"></a>参照  
-[SQL アダプターを使用して BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[SQL アダプターを使用して BizTalk アプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

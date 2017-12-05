@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3e190d06c084a6b1b3c9965856897e0df94daab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e42b17f19791eef9bd3f1b5d7d4554f61f08356
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="operationssamples-biztalk-server-sample"></a>OperationsSamples (BizTalk Server サンプル)
 OperationsSamples サンプルは、Operations オブジェクト モデルを使用して、さまざまな操作を実行する方法を具体的に示します。  
@@ -76,7 +76,7 @@ foreach (BizTalkMessage msg in messages)
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\OperationsOM\OperationsSamples\  
+ \<*パスのサンプル*\>\Admin\OperationsOM\OperationsSamples\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -148,7 +148,7 @@ foreach (BizTalkMessage msg in messages)
   
      `<Samples Path>\Admin\OperationsOM\OperationSamples`  
   
-5.  ダブルクリックして、 **OperationsOM.sln**に読み込むプロジェクト ファイル[!INCLUDE[vs2010](../includes/vs2010-md.md)]です。  
+5.  ダブルクリックして、 **OperationsOM.sln** Visual Studio に読み込むプロジェクト ファイルです。  
   
 6.  F5 キーを押して、サンプルを実行します。  
   
@@ -157,7 +157,7 @@ foreach (BizTalkMessage msg in messages)
      **ビルド** メニューのをクリックして**ソリューションのリビルド**です。 ビルドが完了したら、エクスプ ローラーを使用して、移動する`<Samples Path>\Admin\OperationsOM\OperationSamples\bin\Debug,`順にダブルクリック**OperationsSamples.exe**です。  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
- [Microsoft.BizTalk.Operations.BizTalkOperations](http://msdn.microsoft.com/library/microsoft.biztalk.operations.biztalkoperations.aspx)& #124 です。[Microsoft.BizTalk.Operations.MessageFlow](http://msdn.microsoft.com/library/microsoft.biztalk.operations.messageflow.aspx)& #124 です。[Microsoft.BizTalk.Operations.SendPortInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.sendportinstance.aspx)& #124 です。[Microsoft.BizTalk.Operations.RoutingFailureInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.routingfailureinstance.aspx)& #124 です。[Microsoft.BizTalk.Operations.OrchestrationInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.orchestrationinstance.aspx)& #124 です。[Microsoft.BizTalk.Operations.MSMQtInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.msmqtinstance.aspx)& #124 です。[Microsoft.BizTalk.Operations.TrackedServiceInstance](http://msdn.microsoft.com/library/Microsoft.BizTalk.Operations.TrackedServiceInstance.aspx)  
+ [Microsoft.BizTalk.Operations.BizTalkOperations](http://msdn.microsoft.com/library/microsoft.biztalk.operations.biztalkoperations.aspx)&#124;です。[Microsoft.BizTalk.Operations.MessageFlow](http://msdn.microsoft.com/library/microsoft.biztalk.operations.messageflow.aspx)&#124;です。[Microsoft.BizTalk.Operations.SendPortInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.sendportinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.RoutingFailureInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.routingfailureinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.OrchestrationInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.orchestrationinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.MSMQtInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.msmqtinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.TrackedServiceInstance](http://msdn.microsoft.com/library/Microsoft.BizTalk.Operations.TrackedServiceInstance.aspx)  
   
 ## <a name="see-also"></a>参照  
- [Admin OperationsOM (BizTalk Server Samples フォルダ)](../core/admin-operationsom-biztalk-server-samples-folder.md)
+ [Admin-OperationsOM (BizTalk Server Samples フォルダー)](../core/admin-operationsom-biztalk-server-samples-folder.md)

@@ -19,11 +19,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d68a55ce0f6eba835313075e8ab3753ec825db2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3172759541f46ec6c3c8c2b3e684086747036f37
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ops-adapter-implementation-details"></a>Ops アダプタの実装の詳細
 次に示す Ops アダプタの特性を理解すると、アダプタを変更したりプログラムによって構成する場合に役立ちます。  
@@ -50,9 +50,9 @@ ms.lasthandoff: 09/20/2017
 |**InitializationData**|**InitializationData**|  
 |**TransportLocationUri**|該当なし。|  
   
- すべてのプロパティは文字列値です。 TransportLocationUri プロパティの値は、アセンブリ名とクラス名から構築されます。 URI の値は OPS://\<DotNetAssemblyStrongName >/\<DotNetClassName > プレース ホルダーは、対応するカスタム プロパティの値を置き換えです。  
+ すべてのプロパティは文字列値です。 TransportLocationUri プロパティの値は、アセンブリ名とクラス名から構築されます。 URI の値は OPS://\<DotNetAssemblyStrongName\>/\<DotNetClassName\>プレース ホルダーは、対応するカスタム プロパティの値を置き換えです。  
   
  コードからポートを作成する方法の詳細については、次を参照してください。[コードから MSMQ 受信場所の作成と送信ポートを方法](../core/how-to-create-msmq-receive-locations-and-send-ports-from-code.md)です。  
   
 ## <a name="see-also"></a>参照  
- [Ops アダプタ](../core/the-ops-adapter.md)
+ [Ops アダプター](../core/the-ops-adapter.md)

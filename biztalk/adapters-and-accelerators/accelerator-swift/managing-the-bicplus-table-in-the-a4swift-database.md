@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 730998918beb464b00b871f8ab04060a7cd59af6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a58396a9dd6627f2913da8e3845a99b17cf7698
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a>A4SWIFT データベース内の Bicplus テーブルを管理します。
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]BIC 検証を実行するのにには、BIC エントリのテーブルを使用します。 このテーブルがで Bicplus テーブルにすることができます、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースまたはカスタムのデータベース内のテーブルです。  
@@ -67,11 +67,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="importing-sql-views-from-the-a4swift-database-into-a-custom-database"></a>カスタム データベース A4SWIFT データベースからの SQL ビューにインポートします。  
  [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]セットアップ プログラムによって、2 つの SQL ビュー、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベース。 1 つのビューは 8 文字 BICs と 11 文字 BICs は、他のです。  
   
- 代わりにカスタム データベースを使用する場合、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベース、カスタムのデータベースにこれらの SQL ビューをインポートする必要があります。 クエリ アナライザーで CreateBICViews.sql スクリプトを実行するようにします。 このスクリプトが\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for SWIFT/スクリプト。  
+ 代わりにカスタム データベースを使用する場合、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベース、カスタムのデータベースにこれらの SQL ビューをインポートする必要があります。 クエリ アナライザーで CreateBICViews.sql スクリプトを実行するようにします。 このスクリプトが\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT/スクリプト。  
   
 #### <a name="to-import-sql-views-from-the-a4swift-database-into-a-custom-database"></a>カスタム データベースに A4SWIFT データベースからの SQL ビューをインポートするには  
   
-1.  Windows エクスプローラで、移動\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\Scripts です。 ダブルクリックして**CreateBICViews.sql**です。  
+1.  Windows エクスプローラで、移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\Scripts です。 ダブルクリックして**CreateBICViews.sql**です。  
   
 2.  [サーバー] ダイアログ ボックスへの接続でクリックして**接続**です。  
   
@@ -84,4 +84,4 @@ ms.lasthandoff: 09/20/2017
 6.  **[実行]**をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [銀行識別コードの検証を有効にします。](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)
+ [銀行識別コードの検証の有効化](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)

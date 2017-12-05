@@ -12,16 +12,16 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a09ff5969cc0c47da6a9e885118e227cc27c4ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83bbeec3430f479d28502e818b9ead402278f9b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-the-installation-and-configuration-known-issues"></a>インストールと構成の既知の問題を読み取る
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a>別のフォルダーにログ ファイルを作成するターミナル サーバー経由でインストールします。  
- A4SWIFT セットアップ プログラムによって作成、セットアップと構成ログ ファイルで、ターミナル サーバー接続を介して A4SWIFT をインストールするときに、 *\<ドライブ >*: \Documents and 設定\\ *\<ユーザー名 >*\Local Settings」フォルダーです。 通常、セットアップ プログラムがでこれらのファイルを作成、 *\<ドライブ >*: \Documents and 設定\\*\<ユーザー名 >*\Local Settings\temp フォルダーです。 コンピューターを設定し、適切に構成されていることを確認するこれらのログ ファイルを確認することができます。  
+ A4SWIFT セットアップ プログラムによって作成、セットアップと構成ログ ファイルで、ターミナル サーバー接続を介して A4SWIFT をインストールするときに、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>*\Local Settings」フォルダーです。 通常、セットアップ プログラムがでこれらのファイルを作成、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>*\LocalSettings\temp フォルダーです。 コンピューターを設定し、適切に構成されていることを確認するこれらのログ ファイルを確認することができます。  
   
 ## <a name="silent-installation-is-not-recommended"></a>サイレント インストールはお勧めしません  
  サイレント インストールでは、A4SWIFT セットアップ プログラムがサポートされますが、必要な追加の構成手順の複雑であるためお勧めできません。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
  A4SWIFT データベースが表示されます、 **Message Repair and New Submission の Web コンポーネント**A4SWIFT 構成ダイアログ ボックスのペイン、そのデータベースが存在しない場合でもです。 警告は、A4SWIFT の表示、データ内のデータベースに格納 ウィンドウで、警告いなくてできるように、構成プロセスを続行されます。  
   
 ## <a name="upgrade-process-does-not-create-a-new-root-folder"></a>アップグレード プロセスは、新しいルート フォルダーを作成できません。  
- アップグレード プロセスが、既存の A4SWIFT ファイルを更新*\<ドライブ >*: \Program Files\Microsoft BizTalk Accelerator for A4SWIFT 2.3/3.0 フォルダーです。 アップグレードされたファイル用の新しいフォルダーが作成されず、また既存のフォルダーの名前は変更*\<ドライブ >*: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT です。  
+ アップグレード プロセスが、既存の A4SWIFT ファイルを更新*\<ドライブ\>*: \Program Files\Microsoft BizTalk Accelerator for A4SWIFT 2.3/3.0 フォルダーです。 アップグレードされたファイル用の新しいフォルダーが作成されず、また既存のフォルダーの名前は変更*\<ドライブ\>*: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT です。  
   
 ## <a name="canceling-setup-during-an-upgrade-for-a4swift-may-leave-your-system-in-an-unknown-state"></a>A4SWIFT のアップグレード中にセットアップを取り消すことがありますのままにして、システム状態が不明で  
  クリックすると、一部のシナリオで、**キャンセル**アップグレード中にはファイル、アセンブリ、BizTalk Server アイテム、およびレジストリ キーはそのまま残すセットアップのロールバックが完了した後です。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
  すべてのアイテムを手動で削除します。  
   
 ## <a name="download-the-a4swift-setup-exe-file-from-the-web-into-a-temp-folder"></a>Web から一時フォルダーに A4SWIFT セットアップ exe ファイルをダウンロードします。  
- A4SWIFT を Web からダウンロードした自己解凍実行可能ファイルからインストールしようとする場合は、temp フォルダーにそのファイルをダウンロードすることを確認します。 BizTalk サーバーのルート フォルダーにファイルをダウンロードできません (\Program Files\Microsoft BizTalk Server \<*バージョン*>)。  
+ A4SWIFT を Web からダウンロードした自己解凍実行可能ファイルからインストールしようとする場合は、temp フォルダーにそのファイルをダウンロードすることを確認します。 BizTalk サーバーのルート フォルダーにファイルをダウンロードできません (\Program Files\Microsoft BizTalk Server \<*バージョン*\>)。  
   
  BizTalk サーバーのルート フォルダーから、exe ファイルを実行する場合、A4SWIFT セットアップ ウィザードではなくのセットアップ ウィザードが、BizTalk Server で実行されます。  
   

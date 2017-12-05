@@ -17,18 +17,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aad33a39e45c611c0106ce255798f0817c363dda
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79097655a7b7e4ddaef6081b57cd028fe3ae9a47
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="swift-messages"></a>SWIFT メッセージ
 Society のワールドワイド銀行間財務通信 (SWIFT) は、業界所有の協調 200 の国/地域で 7,000 金融機関に、セキュリティで保護されたメッセージング サービスとインターフェイスのソフトウェアを指定することです。 SWIFT は、銀行、broker 業者、および投資マネージャー、および支払い、財務、証券、および取引の市場インフラストラクチャ メッセージング サービスを提供します。 これらのサービスは、コストを削減し、自動化などを向上させ、リスクを管理、顧客を支援します。 SWIFT はも銀行間の通信のための主な標準化団体です。  
   
  SWIFT Web サイトにアクセスすることができます[http://go.microsoft.com/fwlink/?LinkId=27885](http://go.microsoft.com/fwlink/?LinkId=27885)です。  
   
- Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]に SWIFT 財務 (FIN) メッセージが表示されているスキーマと検証のサポートを提供、[サポートされているメッセージ](../../adapters-and-accelerators/accelerator-swift/supported-messages.md)トピック、SWIFT 標準リリース ガイドに基づく\<バージョン > (SRG\<バージョン >)。  
+ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]に SWIFT 財務 (FIN) メッセージが表示されているスキーマと検証のサポートを提供、[サポートされているメッセージ](../../adapters-and-accelerators/accelerator-swift/supported-messages.md)トピック、SWIFT 標準リリース ガイドに基づく\<バージョン\>(SRG\<バージョン\>)。  
   
  **メッセージのコピー**  
   
@@ -36,7 +36,7 @@ Society のワールドワイド銀行間財務通信 (SWIFT) は、業界所有
   
  このセクションには、次のトピックが含まれています。  
   
--   [サポートされるメッセージ](../../adapters-and-accelerators/accelerator-swift/supported-messages.md)  
+-   [サポートされているメッセージ](../../adapters-and-accelerators/accelerator-swift/supported-messages.md)  
   
 -   [SWIFT スキーマ](../../adapters-and-accelerators/accelerator-swift/swift-schemas.md)  
   

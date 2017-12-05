@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77a9b887bc509ddf3dd67ea941e72cbbeb04a5ea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 906a7eb08dc7542d7fa383aeb9035c0a5536cff3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4d-test-a-valid-instance-for-the-fileact-real-time-scenario"></a>手順 4 D: FileAct リアルタイム シナリオでは、有効なインスタンスをテストします。
 この手順を開始する前に行う必要があります[手順 4 C: FileAct リアルタイム シナリオのテスト インスタンスを作成](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-fileact-real-time-scenario.md)です。  
@@ -31,14 +31,14 @@ ms.lasthandoff: 09/20/2017
   
 4.  次の 3 つの HandleFileEventRequest メッセージの状態イベント (c:\SWIFTAdapterTutorial\Fileact\StatusEvents) フォルダーを確認してください。 これらのメッセージは、次の転送状態を含める必要があります。  
   
-     HandleFileEventRequest メッセージ\<ソフトウェア TransferStatus > Accepted\</Sw-TransferStatus >  
+     HandleFileEventRequest メッセージ\<ソフトウェア TransferStatus\>Accepted\</Sw-TransferStatus\>  
   
-     HandleFileEventRequest メッセージ\<ソフトウェア TransferStatus > 開始された\</Sw-TransferStatus >  
+     HandleFileEventRequest メッセージ\<ソフトウェア TransferStatus\>開始された\</Sw-TransferStatus\>  
   
-     HandleFileEventRequest メッセージ\<ソフトウェア TransferStatus > 完了\</Sw-TransferStatus >  
+     HandleFileEventRequest メッセージ\<ソフトウェア TransferStatus\>完了\</Sw-TransferStatus\>  
   
 ## <a name="see-also"></a>参照  
  [手順 4: FileAct エンド ツー エンドのリアルタイムのシナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)   
  [手順 4 a: FileAct リアルタイム シナリオの SWIFTNet サービスの開始](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-fileact-real-time-scenario.md)   
  [手順 4 b: 送信ポートを開始および FileAct リアルタイム シナリオでは、受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-the-fileact-real-time-scenario.md)   
- [手順 4 C: FileAct リアルタイム シナリオのテスト インスタンスを作成](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-fileact-real-time-scenario.md)
+ [手順 4C: FileAct リアルタイム シナリオ用にテスト インスタンスを作成する](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-fileact-real-time-scenario.md)

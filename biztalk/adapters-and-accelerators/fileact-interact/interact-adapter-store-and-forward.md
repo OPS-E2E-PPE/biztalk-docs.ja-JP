@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8a7636734501be742f492a0fc4d42ebcac16540
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c7aff0b2421a19f5fe84ee914c4f9d2bd7ef04e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="interact-adapter-store-and-forward"></a>アダプター ストア アンド フォワードを対話します。
 ストアにし、順方向 (SnF) モードでは、メッセージは送信時にキューに配信され、変換先にキューから取得されます。 SnF を使用する場合、応答は SWIFTNet SnF 自体から取得し、応答側からフィードバックが含まれていません。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="sessions"></a>セッション  
  キューを取得するには、セッションが開始されます。 Sw:SnFSessionId SWIFTNet SnF によって配信されるすべてのメッセージが返されます。 Sw:SnFSessionId にはキュー名、セッション モードが含まれています: プッシュ、およびセッションの数。 すべてのセッションのセッションの数は増加します。 例を示します。  
   
- **\<Sw:SnFSessionId > bankwxyz_applicq1:p:000458\</Sw:SnFSessionId >**  
+ **\<Sw:SnFSessionId\>bankwxyz_applicq1:p:000458\</Sw:SnFSessionId\>**  
   
  "P"では、プッシュ セッションを示します。 セッション見なすことができますもキューの予約として、Authorizer でします。 後続のメッセージは、同じ承認者を承認する必要があります。  
   
@@ -72,4 +72,4 @@ ms.lasthandoff: 09/20/2017
  [アダプターのセキュリティ アーキテクチャを対話します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-security-architecture.md)   
  [アダプターのエンド ツー エンドの信頼性の高い配信を対話します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-end-to-end-reliable-delivery.md)   
  [アダプターの状態を操作の監視](../../adapters-and-accelerators/fileact-interact/interact-adapter-status-monitoring.md)   
- [アダプター否認不可を対話します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-non-repudiation.md)
+ [InterAct アダプターの否認不可](../../adapters-and-accelerators/fileact-interact/interact-adapter-non-repudiation.md)

@@ -17,16 +17,16 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f6f043764dba966d662274d47643e01bec3735a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 607b3a304260e67a6640e579924705719ff8b850
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-8-building-and-deploying-the-assembly"></a>レッスン 8: のビルドと、アセンブリの展開
 このレッスンでは、ビルドし、前の手順で作成したパイプラインを含むアセンブリを生成するパイプライン プロジェクトを配置します。 このレッスンは、これまでに作成した作業ではコンパイル エラーがないようにします。  
   
- 保存して、プロジェクトをコンパイルしてアセンブリ (DLL) ファイル、 \<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\bin\Development フォルダーです。  
+ 保存して、プロジェクトをコンパイルしてアセンブリ (DLL) ファイル、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\bin\Development フォルダーです。  
   
 ### <a name="to-build-and-deploy-the-project"></a>プロジェクトをビルドして展開するには  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  コンパイル プロセス中に表示しないようにすべてのエラーです。 場合は、エラーの原因を確認して修正して、プロジェクトを再構築します。 A4SWIFT のパイプライン コンポーネントに関連する警告の数を参照してください、ただし、します。 これらの警告を設定して、引き起こす状況を修正することができます、**ローカル コピー** 、パイプライン コンポーネントへの参照のプロパティ**False**です。 詳細についてを参照してください「パイプライン プロジェクトをビルドすることがありますで警告を表示」[その他の既知の問題](http://msdn.microsoft.com/library/bc94c781-2a56-4f80-8ecb-e654de2f6ed6)です。  
   
-2.  SWIFTPipelines.dll の作成を検証するファイルを使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、[参照] \<*ドライブ*: > \labs\SWIFTProject\SWIFTPipelines\bin\Development、このフォルダーにファイルが存在することを確認してください。  
+2.  SWIFTPipelines.dll の作成を検証するファイルを使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、[参照] \<*ドライブ*:\>\labs\SWIFTProject\SWIFTPipelines\bin\Development でファイルが存在することを確認してくださいこのフォルダーです。  
   
 3.  ソリューション エクスプ ローラーで右クリック**SWIFTPipelines**、クリックして**展開**です。  
   

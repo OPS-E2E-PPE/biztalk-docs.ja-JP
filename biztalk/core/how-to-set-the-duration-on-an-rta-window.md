@@ -17,11 +17,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09a1b9e0514a2c83d927a956bb890c1a89864a07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eb8b43fc846835ab8f24f664d4af54ab99b88576
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-the-duration-on-an-rta-window"></a>特定の RTA 時間帯の期間を設定する方法
 管理者を使用して、**セット rtawindow**コマンドを指定されたリアルタイム集計 (RTA) の期間を設定します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   
-3.  型**bm セット rtawindow-ビュー:\<ビュー名 >-アクティビティ:\<アクティビティ名 >-名前:\<RTA 名 > - TimeLength:\<整数の番号 > - TimeUnit: 日 & #124 です。1 時間 & #124 です。分**です。  
+3.  型**bm セット rtawindow-ビュー:\<ビュー名\>-アクティビティ:\<アクティビティ名\>-名前:\<RTA 名\>- TimeLength:\<整数\>- TimeUnit: 日 &#124;です。1 時間 &#124;です。分**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

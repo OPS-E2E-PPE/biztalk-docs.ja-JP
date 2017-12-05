@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 249bfb8120a7b7d44ee0f73e7b5e5cef34126670
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e33203279e045b28d2098ca78c55403c7070b64
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-real-time-scenario"></a>手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオの対話
 SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。 手順を完了する必要があります、プロシージャを開始する前に[手順 1: 対話リアルタイム シナリオでは、SWIFT アダプターを構成](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)です。  
@@ -41,7 +41,7 @@ SAG で作成されたサーバー メッセージのパートナーは、これ
   
      subsystem_start:  
   
-     **起動"snlreceiver - SagMessagePartner \<Interact RT 用サーバー MessagePartnerName > AdapterMode Interact"**  
+     **起動"snlreceiver - SagMessagePartner \<Interact RT 用サーバー MessagePartnerName \> AdapterMode Interact"**  
   
      * 終了  
   
@@ -89,4 +89,4 @@ SAG で作成されたサーバー メッセージのパートナーは、これ
  [リアルタイムのシナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)   
  [手順 1: 構成用のアダプターを SWIFT、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)   
  [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [手順 4: テスト、リアルタイムのエンド ツー エンド シナリオの対話](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)
+ [手順 4: InterAct リアルタイム エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)

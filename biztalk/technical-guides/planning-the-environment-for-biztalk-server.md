@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 135d514b4272246a4c8b0c256670566795ae774d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66cd358f3d8a4fbda2c4ed43432f1ad8b2f6979e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-the-environment-for-biztalk-server"></a>BizTalk server 環境のプランニング
 Operations guide の「の計画セクションには、役割と責任に関連付けられているがについて説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 計画に関する推奨事項のアプリケーションおよびデータ層が含まれている、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境、およびその計画推奨事項を提供、リリースの BizTalk ソリューションの管理の段階です。  
@@ -39,11 +39,11 @@ Operations guide の「の計画セクションには、役割と責任に関連
 |**Scenario**|**製品を使用するには**|  
 |------------------|------------------------|  
 |ユーザー プロビジョニングの構成|**Microsoft Identity Lifecycle Manager 2010**<br /><br /> Microsoft Identity Lifecycle Manager 2010 の詳細については、次を参照してください。 [Microsoft Identity Lifecycle Manager 2010 FP1](http://go.microsoft.com/fwlink/?LinkId=204577) (http://go.microsoft.com/fwlink/?LinkId=204577)。|  
-|システム間でデータのレプリケーション|**SQL Server のレプリケーション**<br /><br /> 詳細については[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]レプリケーションを参照してください[SQL Server 2008 R2 レプリケーション](http://go.microsoft.com/fwlink/?LinkID=69978)(http://go.microsoft.com/fwlink/?LinkID=69978)。|  
-|データの抽出、変換、および読み込み (ETL)|**SQL Server Integration Services (SSIS)**<br /><br /> 詳細については[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]Integration Services, を参照してください[SQL Server 2008 R2 Integration Services](http://go.microsoft.com/fwlink/?LinkId=152044) (http://go.microsoft.com/fwlink/?LinkId=152044)。|  
+|システム間でデータのレプリケーション|**SQL Server のレプリケーション**<br /><br /> SQL Server レプリケーションの詳細については、次を参照してください。 [SQL Server 2008 R2 レプリケーション](http://go.microsoft.com/fwlink/?LinkID=69978)(http://go.microsoft.com/fwlink/?LinkID=69978)。|  
+|データの抽出、変換、および読み込み (ETL)|**SQL Server Integration Services (SSIS)**<br /><br /> SQL Server Integration Services の詳細については、次を参照してください。 [SQL Server 2008 R2 Integration Services](http://go.microsoft.com/fwlink/?LinkId=152044) (http://go.microsoft.com/fwlink/?LinkId=152044)。|  
   
 ## <a name="deciding-which-edition-of-biztalk-server-is-right-for-the-job"></a>BizTalk Server のエディションは、ジョブの右側を決定します。  
- 4 つの異なるエディションがある[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、それぞれが特定のシナリオを対象とします。 4 つのエディション[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]が含まれます。  
+ 特定のシナリオを対象とする各 BizTalk Server の 4 つの異なるエディションがあります。 BizTalk Server の 4 つのエディションは次のとおりです。  
   
 -   **エンタープライズ**- 高ボリューム、信頼性、および可用性のエンタープライズ レベルの要件と顧客に設計されています。  
   
@@ -51,11 +51,11 @@ Operations guide の「の計画セクションには、役割と責任に関連
   
 -   **ブランチ**の特別なバージョンの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ハブ用に設計され、スポーク RFID を含む展開シナリオです。  
   
--   **開発者**- 開発およびテストのすべての Enterprise Edition の機能を提供し、として使用できますが、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]評価目的に無償評価版です。 評価版としてインストールされているときに[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]120 日間の関数をされます。  
+-   **開発者**- 開発およびテストのすべての Enterprise Edition の機能を提供し、評価目的に無償で BizTalk Server の評価版として使用されます。 評価版としてインストールされているときに BizTalk Server は 120 日間機能します。  
   
 -   **RFID エンタープライズ**- の BizTalk RFID Server と BizTalk RFID Mobile を開発、配置、および豊富な RFID およびセンサ ソリューションの管理に含まれて、拡張性の高いプラットフォームを提供するよう設計されています。  
   
- さまざまなエディションの詳細については[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を参照してください[Microsoft BizTalk Server のエディション](http://go.microsoft.com/fwlink/?LinkId=108051)(http://go.microsoft.com/fwlink/?LinkId=108051)。  
+ BizTalk Server のさまざまなエディションの詳細については、次を参照してください。 [Microsoft BizTalk Server のエディション](http://go.microsoft.com/fwlink/?LinkId=108051)(http://go.microsoft.com/fwlink/?LinkId=108051)。  
   
 ## <a name="planning-for-message-load"></a>メッセージの読み込みの計画  
  あることを確認後[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を満たしている、ビジネスの統合機能が必要、処理する BizTalk ソリューションとなるメッセージの読み込みが必要かを決定する必要がある次のことです。 これは、ためにの重要な決定事項のさまざまなエディション[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]スケール アップおよびスケール アウト機能が異なります。  
@@ -67,10 +67,10 @@ Operations guide の「の計画セクションには、役割と責任に関連
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk サーバーの役割と責任](../technical-guides/biztalk-server-roles-and-responsibilities.md)  
+-   [BizTalk Server のロールと責任](../technical-guides/biztalk-server-roles-and-responsibilities.md)  
   
 -   [BizTalk Server 層の計画](../technical-guides/planning-the-biztalk-server-tier.md)  
   
--   [データベース層の計画](../technical-guides/planning-the-database-tier.md)  
+-   [データベース階層の計画](../technical-guides/planning-the-database-tier.md)  
   
--   [開発、テスト、ステージング、実稼働環境の計画](../technical-guides/planning-the-development-testing-staging-and-production-environments.md)
+-   [開発、テスト、ステージング、および製品環境の計画](../technical-guides/planning-the-development-testing-staging-and-production-environments.md)

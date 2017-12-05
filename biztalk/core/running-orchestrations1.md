@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b4559a3d362d0d778c4d60cc485fa79e8e05efe
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: c215009d6b911831c74ac22b2c03ceae45e74a62
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="running-orchestrations"></a>オーケストレーションの実行
 次の手順では、オーケストレーションのビルド、展開、バインド、および開始の方法について説明します。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/07/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを起動します。  
   
-2.  たとえば、既存のプロジェクトにディレクトリを変更\<ドライブ >: \Adapter_Install\biztalk2010\my_project です。  
+2.  たとえば、既存のプロジェクトにディレクトリを変更\<ドライブ\>: \Adapter_Install\biztalk2010\my_project です。  
   
 3.  コマンド プロンプトで、次を入力し、ENTER キーを押します。  
   

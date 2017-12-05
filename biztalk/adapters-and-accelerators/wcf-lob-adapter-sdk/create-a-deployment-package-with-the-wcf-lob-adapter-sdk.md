@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed471aa5395b9cc743825807e63e23e5433e6d07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 734d79e92a4864090720434b9a1fb83387a0a850
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK の配置パッケージを作成します。
 開発サイクル中にビルド、デバッグ、および Visual Studio 内で、アダプターを実行することができます。 アダプター ソリューションの出力は、DLL アセンブリです。 Visual Studio IDE を使用してアダプター ソリューションをビルドまたは devenv.exe スクリプトを使用して、アダプター アセンブリを作成することができます。 アダプターを開発し、アダプターのコンシューマーの環境内で使用可能な状態である、アダプターはテスト環境や実稼働環境にインストールする展開パッケージを作成する必要があります。  
@@ -47,7 +47,7 @@ namespace Microsoft.Adapters.Samples.EchoV2
 {  
     //Custom action to register the adapter with WCF configuration in machine.config   
   
-    //\<system.serviceModel>  
+    //<system.serviceModel>  
     //  <extensions>  
     //    <bindingElementExtensions>  
     //      <add name="{BINDINGELEM_NAME}" type="{BINDINGELEM_TYPE}, {Assembly Information}" />  
@@ -59,7 +59,7 @@ namespace Microsoft.Adapters.Samples.EchoV2
     //  <client>  
     //    <endpoint binding="{BINDING_NAME}" contract="IMetadataExchange" name="{BINDING_SCHEME}" />  
     //  </client>  
-    //\</system.serviceModel>  
+    //</system.serviceModel>  
   
     [RunInstaller(true)]  
     public partial class WCFLOBAdapterInstaller : Installer  

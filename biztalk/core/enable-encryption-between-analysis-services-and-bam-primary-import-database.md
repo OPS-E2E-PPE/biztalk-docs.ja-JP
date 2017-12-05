@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77069c3690a73957936c786bc05c2690b9df7a10
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 61784be74d93753b8c3ca8ecf7302c6517a1d9c4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-encryption-between-analysis-services-and-the-bam-primary-import-database"></a>Analysis Services と BAM プライマリ インポート データベース間の暗号化を有効にする方法
 既定では、BAM のインストールまたはアップグレード中、暗号化は無効になっています。 暗号化を有効にするには、BAM 構成 XML ファイルの UseEncryption フラグの値を 1 に設定する必要があります。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。  
   
-3.  型**bm get config ファイル名:\<出力ファイル >**です。  
+3.  型**bm get config ファイル名:\<出力ファイル\>**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -43,11 +43,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  エクスポートした構成ファイルをテキスト エディターで開き、UseEncryption プロパティ フラグの値を 1 に変更します。  
   
-    -   既定の設定:\<プロパティ名 ="UseEncryption"> 0\</Property >  
+    -   既定の設定:\<プロパティ名 ="UseEncryption"\>0\</Property\>  
   
-    -   新しい設定:\<プロパティ名 ="UseEncryption"> 1\</Property >  
+    -   新しい設定:\<プロパティ名 ="UseEncryption"\>1\</Property\>  
   
-6.  」と入力して、BAM 構成を更新**bm 更新 config ファイル名:\<構成ファイル >**です。  
+6.  」と入力して、BAM 構成を更新**bm 更新 config ファイル名:\<config ファイル\>**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

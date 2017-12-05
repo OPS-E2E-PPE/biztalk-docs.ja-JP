@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d520026b9037f10f2ed20f52a366b1ff9d3183a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51b3d4761c32123db53ea35daf91d0f13d9a2488
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-monitoring"></a>監視のベスト プラクティス
-このトピックでは、Microsoft を監視するためのベスト プラクティス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境とアプリケーション。  
+このトピックでは、Microsoft BizTalk Server 環境とアプリケーションの監視のベスト プラクティスを説明します。  
   
  **作成し、BizTalk アプリケーションとインフラストラクチャの監視の計画を実装**  
   
@@ -35,11 +35,11 @@ ms.lasthandoff: 09/20/2017
   
     -   すべてのカスタム サービス、カスタム イベント ログ、および監視のカスタム データベースとは  
   
-    -   SQL Server コンピューターであると、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SQL エージェント ジョブを監視しますか?  
+    -   SQL Server コンピューターと、BizTalk Server の SQL エージェント ジョブの監視をされますか。  
   
  **など、監視のアプリケーションのインストール可能であれば、 [!INCLUDE[opsmgr_short](../includes/opsmgr-short-md.md)] BizTalk Server アプリケーションとインフラストラクチャの監視を自動化するのには**  
   
--   BizTalk Server 管理パックが数百の組み込みの規則を提供するため、監視を自動推奨できるアプローチは、Microsoft System Center Operations Manager を使用して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
+-   Microsoft System Center Operations Manager を使用するは、BizTalk Server 管理パックでは、BizTalk Server の何百もの組み込みの規則のために、自動監視の推奨されるアプローチです。  
   
      詳細については、次のリソースを参照してください。  
   
@@ -47,17 +47,17 @@ ms.lasthandoff: 09/20/2017
   
     -   [Operations Manager 2007 で管理パックをインポートする方法](http://go.microsoft.com/fwlink/?LinkID=98348)(http://go.microsoft.com/fwlink/?LinkID=98348)  
   
-    -   [カスタマイズした監視の BizTalk Server データベースをマークする方法](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
+    -   [カスタマイズした監視用に BizTalk Server データベースをマークする方法](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
   
  **BizTalk Server のベスト プラクティス アナライザーを実行します。**  
   
--   BizTalk Server のベスト プラクティス アナライザーを調べ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開し、ベスト プラクティスの標準に関連する問題の一覧を生成します。 このツールは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集することによって構成レベルの検証を実行します。 データは展開構成の評価に使用されます。 ツールを読み取りますをレポートのみ、そのシステム設定を変更しませんし、自己調整ツールではありません。  
+-   BizTalk Server のベスト プラクティス アナライザーは、BizTalk Server の展開を調査し、ベスト プラクティスの標準に関連する問題の一覧を生成します。 このツールは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集することによって構成レベルの検証を実行します。 データは展開構成の評価に使用されます。 ツールを読み取りますをレポートのみ、そのシステム設定を変更しませんし、自己調整ツールではありません。  
   
      BizTalk Server ベスト プラクティス アナライザーでダウンロードできます[http://go.microsoft.com/fwlink/?LinkId=83317](http://go.microsoft.com/fwlink/?LinkId=83317) (http://go.microsoft.com/fwlink/?LinkId=83317)。  
   
  **ログのパフォーマンス分析ツール (PAL) の実行します。**  
   
--   PAL はから無償でダウンロードとして入手できます[http://go.microsoft.com/fwlink/LinkID=98098](http://go.microsoft.com/fwlink/?LinkID=98098)です。 インストールに関する重要な情報を参照してください。[パフォーマンス分析のログ (PAL) のツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)です。  
+-   PAL はから無償でダウンロードとして入手できます[https://github.com/clinthuffman/PAL](https://github.com/clinthuffman/PAL)です。 インストールに関する重要な情報を参照してください。[パフォーマンス分析のログ (PAL) のツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)です。  
   
  **ログ パーサーを実行します。**  
   
@@ -74,6 +74,6 @@ ms.lasthandoff: 09/20/2017
   
  **優先度を監視します。**  
   
--   一貫した監視[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションとインフラストラクチャが正常な環境を維持するために不可欠です。  
+-   BizTalk Server アプリケーションとインフラストラクチャの一貫した監視は、正常な環境を維持するために不可欠です。  
   
--   定期的に評価し、監視ツールを調整して時間の経過と共に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションとインフラストラクチャを変更します。
+-   定期的に評価し、時間が経過し、BizTalk Server アプリケーションとインフラストラクチャの変更として、監視ツールを調整します。

@@ -15,11 +15,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59f5c2821af02fb87727a4096f4b6e586bfd5b4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 500ec05df9a3a365a350571e8b3e66f5d584f92d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httpsolicitresponse"></a>HTTPSolicitResponse
 HTTPSolicitResponse サンプルは、オーケストレーション データの処理に ASP.NET アプリケーションを利用する Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成する方法を示します。 このサンプルでは、オーケストレーションは要求 - 応答のポートを利用して、ASP.NET アプリケーションにメッセージを送信し、応答を受信します。 HTTP アダプターを使用することにより、BizTalk Server オーケストレーションと ASP.NET アプリケーションを統合できます。 詳細については、次を参照してください。 [HTTP アダプター](../core/http-adapter.md)です。  
@@ -36,7 +36,7 @@ HTTPSolicitResponse サンプルは、オーケストレーション データ�
 4.  BizTalk Server オーケストレーションが、HTTP 応答で結果を XML として受信し、特定のフォルダーの .xml ファイルに結果を書き込みます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \AdaptersUsage\HTTPSolicitResponse  
+ \<*パスのサンプル*\>\AdaptersUsage\HTTPSolicitResponse  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -61,15 +61,15 @@ HTTPSolicitResponse サンプルは、オーケストレーション データ�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersUsage\HTTPSolicitResponse  
+     \<*パスのサンプル*\>\AdaptersUsage\HTTPSolicitResponse  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   このサンプルで使用する入力フォルダーと出力フォルダーを作成します。  
   
-         \<*パスのサンプル*> \AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
+         \<*パスのサンプル*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
   
-         \<*パスのサンプル*> \AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
+         \<*パスのサンプル*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
   
     -   このサンプルで使用するマルチプライア ASP.NET アプリケーションをコンパイルして構成します。  
   
@@ -121,4 +121,4 @@ HTTPSolicitResponse サンプルは、オーケストレーション データ�
  MultiplyRequest.xsd ファイルと MultiplyResponse.xsd ファイルは、それぞれ、マルチプライア ASP.NET アプリケーションの入力データおよび出力データの形式を定義する XML スキーマです。 オーケストレーションは、これらのファイルを使用して要求メッセージと応答メッセージの種類を定義します。  
   
 ## <a name="see-also"></a>参照  
- [HTTP アダプタのサンプル](../core/http-adapter-samples.md)
+ [HTTP アダプター サンプル](../core/http-adapter-samples.md)

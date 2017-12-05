@@ -18,11 +18,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 540cd06f15ae95dba41636418be273a78c39f447
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fd689cbf378f41578c5f46b3067410a184cf650
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-an-insert-operation-in-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースで挿入操作を実行します。
 このセクションでは、チャネルを使用して Oracle データベースにレコードを挿入する方法を示します。 メッセージを送信するときに、メッセージ本文とメッセージのアクションの両方を指定する必要があります。  
@@ -31,9 +31,9 @@ ms.lasthandoff: 09/20/2017
  次の XML は、人事で挿入操作のメッセージ本文を示しています。EMPLOYEES テーブル。 レコード セットは、1 人の従業員レコードで構成されます。 挿入メッセージのスキーマの詳細については、次を参照してください。 [、基本的な Insert、Update、Delete、およびテーブルおよびビューに対する選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)です。 これは、この例で使用される Employee_Insert.xml ファイルの内容です。  
   
 ```  
-\<!-- New namespace: http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES -->  
+<!-- New namespace: http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES -->  
 <Insert xmlns="http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES">  
-    \<RECORDSET xmlns:i="http://www.w3.org/2001/XMLSchema-instance">  
+    <RECORDSET xmlns:i="http://www.w3.org/2001/XMLSchema-instance">  
         <EMPLOYEESRECORDINSERT>  
             <EMPLOYEE_ID>0</EMPLOYEE_ID>  
             <FIRST_NAME>Anton</FIRST_NAME>  

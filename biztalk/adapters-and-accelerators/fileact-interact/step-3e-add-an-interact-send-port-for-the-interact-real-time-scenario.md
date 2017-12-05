@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcb78fd556e72e4ca19e1d5172826a813f23eb24
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec380c088f27fe09f518c385990e3801b5c019dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario"></a>ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオの対話
 完全な[ステップ 3 D: リアルタイム シナリオでは対話 Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)この手順を開始する前にします。
@@ -42,11 +42,11 @@ ms.lasthandoff: 09/20/2017
     |**アダプターのモード**|ドロップダウン リストから選択**リアルタイム**です。|  
     |**メッセージの形式**|**InteractMessage**です。|  
     |**否認不可インジケーター**|**FALSE**。|  
-    |**要求の種類**|適切な入力\<RequestType > SWIFT でのプロビジョニングに基づく文字列。|  
+    |**要求の種類**|適切な入力\<RequestType\> SWIFT でのプロビジョニングに基づく文字列。|  
     |**ResponseCrypto**|**FALSE**。|  
-    |**要求元**|適切な設定\<リクエスター > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**応答側**|適切な設定\<レスポンダー > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**サービス名**|適切な設定\<サービス名 > SWIFT でのプロビジョニングに基づきます。|  
+    |**要求元**|適切な設定\<リクエスター\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**応答側**|適切な設定\<レスポンダー\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**サービス名**|適切な設定\<サービス名\>SWIFT でのプロビジョニングに基づきます。|  
     |**配信通知**|ドロップダウン リストから選択**FALSE**です。|  
     |**通知キュー**|SWIFT でのプロビジョニングに基づく、適切なキュー名を入力します。|  
   
@@ -79,4 +79,4 @@ ms.lasthandoff: 09/20/2017
  [手順 3: ファイルの受信場所を追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
  [手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)   
  [手順 3 C: の Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
- [ステップ 3 D: の Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)
+ [手順 3D: InterAct リアルタイム シナリオ用に Sw:HandleResponse メッセージをキャプチャするためにファイルの送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)

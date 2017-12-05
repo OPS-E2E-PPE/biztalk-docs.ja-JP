@@ -15,17 +15,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f07ef6adc96a4f5819cd5438b4a5d24ce6fc0770
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b721294acb07d4c69c5b2ae7b58b0e135625eee8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adapter-registry-wizard"></a>アダプター レジストリ ウィザード
 アダプター レジストリ ウィザードを使用すると、カスタム アダプターの構成と登録に必要なレジストリ ファイルを作成できます。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- *\<インストール パス >*\SDK\Utilities\AdapterRegistryWizard\  
+ *\<インストール パス\>*\SDK\Utilities\AdapterRegistryWizard\  
   
 ## <a name="to-run-this-utility"></a>このユーティリティを実行するには  
  AdapterRegistryWizard.exe 実行可能ファイルを実行して、ウィザードを開始します。 次のページで、アダプターとアダプターでサポートされるプロパティについての情報の入力を要求されます。 個別のアダプター レジストリ ウィザードのページについては、次のセクションで説明します。  

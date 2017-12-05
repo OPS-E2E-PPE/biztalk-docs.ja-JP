@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c93f7c07f92c7517dbc84403747da869e0d4ceb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44a9696f907928f31a740e4d8545567921a82df9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-creating-and-configuring-ports"></a>手順 7: を作成して、ポートを構成します。
 ここでは、ビジネス プロセスとの通信に使用するポートを作成し、構成します。 各ポートには、種類、方向、およびバインドのプロパティを設定します。 これらのプロパティにより、通信の方向と通信方式、メッセージの送信先と受信元、および通信の実行方法が決定されます。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  オーケストレーション ビューで、展開**型**、展開**ポートの種類**、展開**ContosoSQLReqResponsePortName**、展開**Operation_1**、クリックして**要求**です。  
   
-2.  プロパティ ウィンドウで、選択、**メッセージの種類**プロパティ、展開**スキーマ** をクリックし、 **\<参照されたアセンブリから選択 >**です。  
+2.  プロパティ ウィンドウで、選択、**メッセージの種類**プロパティ、展開**スキーマ** をクリックし、 **\<参照されたアセンブリから選択\>**.  
   
 3.  成果物の種類の選択 ダイアログ ボックスで、をクリックして**ContosoPriceAndAvailability**です。  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  オーケストレーション ビューで、 **operation_1****応答**の**ContosoSQLReqResponsePortName**ポートの種類。  
   
-6.  プロパティ ウィンドウで、選択、**メッセージの種類**プロパティ、展開**スキーマ** をクリックし、 \<**参照されたアセンブリから選択 >**です。  
+6.  プロパティ ウィンドウで、選択、**メッセージの種類**プロパティ、展開**スキーマ** をクリックし、 \<**参照されたアセンブリから選択\>**.  
   
 7.  **成果物の種類の選択**ダイアログ ボックスで、をクリックして**ContosoPriceAndAvailability**です。  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
 7.  **ファイル** メニューのをクリックして**すべて保存**です。  
   
 ## <a name="see-also"></a>参照  
- [手順 8: ビルドと Contoso オーケストレーションの展開](../../adapters-and-accelerators/accelerator-rosettanet/step-8-building-and-deploying-the-contoso-orchestration.md)
+ [手順 8: Contoso オーケストレーションのビルドと展開](../../adapters-and-accelerators/accelerator-rosettanet/step-8-building-and-deploying-the-contoso-orchestration.md)

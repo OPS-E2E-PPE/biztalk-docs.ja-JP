@@ -17,11 +17,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bb930c3e9d252a23653f0464e1adaa1e18b4f45
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: babcd621dcc08463e43d0ed3ce49cf4b35fb3775
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-get-the-duration-on-an-rta-window"></a>RTA 時間帯の期間を取得する方法
 管理者を使用して、 **rtawindow プロパティの get**コマンドを指定されたリアルタイム集計 (RTA) の実行時間を取得します。 このコマンドにより、期間の長さと、その期間の基準となる単位が返されます。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking フォルダーに移動します。  
   
-3.  型**bm get rtawindow-ビュー:\<ビュー名 >-アクティビティ:\<アクティビティ名 > -Rta:\<RTA 名 >**です。  
+3.  型**bm get rtawindow-ビュー:\<ビュー名\>-アクティビティ:\<アクティビティ名\>Rta:\<RTA 名\>**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

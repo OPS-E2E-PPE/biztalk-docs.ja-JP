@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8c4f29ce8b11f74db5ff7a145449f7f212f6f6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3de61b0659e06ebbf7b95f0b4adcad210c5c986e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="support-for-oracle-user-defined-types-in-oracle-database"></a>Oracle データベースの Oracle ユーザー定義型のサポート
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle User-Defined 型 (Udt) を含む Oracle データベースでの成果物に対する操作の実行をサポートします。 Udt は、次の成果物になくてもかまいません。  
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/20/2017
   
  **BizTalk Server で**  
   
--   手順 4. で「デザイン時」グローバル アセンブリ キャッシュ (GAC) に、コンピューター上で作成された Oracle UDT アセンブリを手動で追加します。 BizTalk Server のインストール場所の下にある Oracle UDT アセンブリを手動でコピーすることができます。 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]、通常、これは\<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   手順 4. で「デザイン時」グローバル アセンブリ キャッシュ (GAC) に、コンピューター上で作成された Oracle UDT アセンブリを手動で追加します。 BizTalk Server のインストール場所の下にある Oracle UDT アセンブリを手動でコピーすることができます。 BizTalk server では、通常、これは\<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
   
 -   構成中に、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Wcf-custom または Wcf-oracledb をポートで、**バインディング**] タブの [Oracle UDT アセンブリの場所を指定の**UserAssembliesLoadPath**プロパティをバインドします。 このバインディングのプロパティについては、次を参照してください。 [Oracle データベースのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)です。  
   

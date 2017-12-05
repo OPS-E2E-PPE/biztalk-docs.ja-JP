@@ -17,11 +17,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf7b0de69005957a333e0c4f884e748e6ab5bbe9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b9e93c7bb9cb59088e465dc53dd992ffd5f1c11
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orderedsample-biztalk-server-sample"></a>OrderedSample (BizTalk Server サンプル)
 OrderedSample サンプルは、オーケストレーションを使用して、順序付けられた一連のメッセージをラウンド トリップ方式で送受信する方法を示します。  
@@ -36,7 +36,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
  オーケストレーションでは、メッセージのバッチおよび 1 つのメッセージを受信できます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\OrderedSample  
+ *\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   

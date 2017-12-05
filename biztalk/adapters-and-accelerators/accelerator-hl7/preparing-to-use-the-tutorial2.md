@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a957bd18fd6defad40d6b04e91bc3028802da1c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8688e84f7913dbc32a0629d21f29ed2578c43b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="preparing-to-use-the-tutorial"></a>このチュートリアルを使用する準備をしています
 チュートリアルを使用する前に、ADT^A03.txt ファイルを作成する必要があります。  
@@ -42,6 +42,6 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  存在する必要があります、.txt で 5 つの行がファイルに 1 つずつ"MSH"、"EVN"、"PID"、"PD1"および"PV1"で始まります。 "PID"行と"PD1"の行でスペースを削除する必要があります。 必要に応じて、メモ帳での折り返しを無効にします。  
   
-2.  ファイルに保存**ADT^A03.txt**で、 \<*ドライブ*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンドTutorial フォルダー、および終値のメモ帳です。  
+2.  ファイルに保存**ADT^A03.txt**で、 \<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド チュートリアル フォルダー、および終値のメモ帳のアクセラレータです。  
   
  進みます[手順 1: ヘッダーや受信確認スキーマ作成および展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md)です。

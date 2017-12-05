@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59aea2c772f1906ca779187f22a094e3f6cb4ceb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 017184e5f530096dc0ca166fdaaa9810a3372cfa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="removing-usage-rule-validation"></a>使用量ルールの検証を削除します。
 使用に関する規則は SWIFT 標準で定義され、によって強制[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージの種類ごとに固有のビジネス ポリシー。 これらの使用に関する規則は、使用できるフィールドの追加の検証を提供するガイドラインを示します。 ネットワーク検証ルールは、必須とは異なり、メッセージ型の使用状況規則を必要とならないを選択できます。 場合がある場合は、次のいずれかの操作を行います。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-remove-a-rule-from-a-policy"></a>ポリシーのルールを削除するには  
   
-1.  メモ帳などのテキスト エディターで開いて検証ポリシーで MT103_Validation_Policy など、変更する*\<ドライブ >*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT \<バージョン > メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン > \Category 1\MT103 です。  
+1.  メモ帳などのテキスト エディターで開いて検証ポリシーで MT103_Validation_Policy など、変更する*\<ドライブ\>*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT \<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Category 1\MT103 です。  
   
 2.  できませんし、ポリシーを保存し、ルール ノードを削除します。  
   

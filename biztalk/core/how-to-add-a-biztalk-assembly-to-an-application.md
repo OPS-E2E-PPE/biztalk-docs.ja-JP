@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4bb5435b946ac02b73ce492410af9b4dfe34c8d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9165415ec736c7cf9f4716e8fb183395602a687d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-biztalk-assembly-to-an-application"></a>BizTalk アセンブリをアプリケーションに追加する方法
 ここでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アセンブリをアプリケーションに追加する方法について説明します。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の管理、BizTalk アセンブリを追加するアプリケーションを含む BizTalk グループの順に展開します。  
+2.  コンソール ツリーで、BizTalk Server 管理コンソールと BizTalk アセンブリを追加するアプリケーションを含む BizTalk グループを展開します。  
   
 3.  [アプリケーション]、BizTalk アセンブリを追加するアプリケーションの順に展開します。  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-     **BTSTask AddResource** [**/applicationname は:***値*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite**] **/Source:***値*[**/Destination:***値*] [**/Options:GacOnAdd**& #124 です。**Gaconinstall です**&#124;**GacOnImport**] [**/Server:***値*] [**/database:***値*]  
+     **BTSTask AddResource** [**/applicationname は:***値*] **/Type:System.BizTalk:BizTalkAssembly** **[/Overwrite]** **/Source:***値*[**/Destination:***値*] [**/Options:GacOnAdd**&#124;です。**Gaconinstall です**&#124;**GacOnImport**] [**/Server:***値*] [**/database:***値*]  
   
      例:  
   

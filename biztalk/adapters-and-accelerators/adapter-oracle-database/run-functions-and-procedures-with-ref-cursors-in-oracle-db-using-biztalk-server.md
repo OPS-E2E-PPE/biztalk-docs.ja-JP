@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1d96f19aadd37e48a238ea28054641bd4eafbaf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9072f3df5c85ed09c5efbdc5e690a8eccc97b2f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-functions-and-procedures-with-ref-cursors-in-oracle-database-using-biztalk-server"></a>関数、および BizTalk Server を使用して Oracle データベースで REF カーソルでプロシージャを呼び出す
 REF CURSOR は、クエリを実行することによって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF カーソルの種類の入力と出力データのストリーミングとは大量の PL/SQL コードとの間のデータを転送するのに最適。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]でとして、PL/SQL プロシージャと関数を OUT を渡すことができる厳密に型指定され、弱い型指定の (SYS_REFCURSOR) REF カーソルまたはローカルの OUT パラメーターのサポートを提供します。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]REF Cursor をサポートするを参照してください[関数および REF CURSOR パラメーターを持つプロシージャで操作](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md)です。 REF CURSOR の XML 構造については、次を参照してください。 [REF CURSOR のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)です。  
@@ -176,7 +176,7 @@ REF CURSOR は、クエリを実行することによって生成されるサー
  上記の要求メッセージに対する応答は次のとおりです。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GET_ACTIVITYResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
   <STATUS>5</STATUS>   
   <INOUTRECS>  

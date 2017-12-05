@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108153e362480c272d1f772ea4e97c66c6894358
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4082174428f177905527d0c648b4d7ad000dde36
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="publishing-the-mx-message-instance-file-creating-new-messages"></a>(新しいメッセージの作成) MX メッセージ インスタンスのファイルの発行
 **ファイルをパブリッシュ MX メッセージ インスタンス。**  
@@ -29,8 +29,8 @@ ms.lasthandoff: 09/20/2017
   
 4.  ドキュメントのアップロード] ウィンドウで、[**参照**です。  
   
-5.  ファイルの選択 ダイアログ ボックスで前の手順で作成した InfoPath 形式の出力フォルダーに移動**.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。 選択、 \<MessageType > .xml pacs.004.001.01.xml などのファイルおよびクリックして**開く**です。  
+5.  ファイルの選択 ダイアログ ボックスで前の手順で作成した InfoPath 形式の出力フォルダーに移動**.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。 選択、 \<MessageType\>.xml pacs.004.001.01.xml などのファイルおよびクリックして**開く**です。  
   
 6.  ドキュメントのアップロード] ウィンドウで、[ **OK**です。  
   
-7.  新規 SWIFT MX メッセージで: \<MessageType > Namespace ボックスで、型のウィンドウ**http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageType >**、およびをクリックして**OK**です。
+7.  新規 SWIFT MX メッセージで: \<MessageType\> Namespace ボックスで、型のウィンドウ**http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageType\>** 、クリックして**OK**です。

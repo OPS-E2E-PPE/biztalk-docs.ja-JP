@@ -28,11 +28,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c64b61c1c96b0ad6f9185ccd511d00f6dae2251
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c567ea50f151f0ee36505bd6d8a71af059eb67d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="pipeline-tools"></a>パイプライン ツール
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソフトウェア開発キット (SDK) 付属のパイプライン ツールを使用すると、送信ポートや受信ポートなどの BizTalk Server 環境を構成することなく、パイプラインが正しく機能するかどうかを確認できます。 パイプライン ツールは次の用途にも使用できます。  
@@ -52,7 +52,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 -   メッセージング サブシステム全体ではなく、パイプラインのみに対し、詳細なパフォーマンス測定を行います。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*インストール パス*> \SDK\Utilities\PipelineTools  
+ \<*インストール パス*\>\SDK\Utilities\PipelineTools  
   
  パイプライン ツールは、パイプラインとパイプライン コンポーネント (フラット ファイルおよび XML のアセンブラー/逆アセンブラー コンポーネント) の実行、デバッグ、およびプロファイルに使用します。  
   
@@ -198,7 +198,7 @@ Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd:MyProject.My
   
 ```  
   
- \-または、  
+ \- または -  
   
 ```  
 Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd –proj MyProject.btproj -c  

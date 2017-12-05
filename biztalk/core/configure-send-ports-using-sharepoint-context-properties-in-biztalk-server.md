@@ -22,11 +22,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5dc4e65ca778c8e299d8fd14303d3d3da009d39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e766272f33bf23166ba412a76498e4240ab3343b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-send-ports-using-windows-sharepoint-services-context-properties"></a>Windows Sharepoint Services のコンテキスト プロパティを使用して送信ポートを構成する方法
 このトピックでは、BizTalk オーケストレーションから Windows Sharepoint Services のコンテキスト プロパティを使用して、実行時に Windows Sharepoint Services 送信ポートを構成する方法について説明します。 同じメカニズムを使用して、Windows SharePoint Services 動的送信ポートと遅延バインディング送信ポートを構成できます。 動的送信ポートの構成プロパティは、実行時にオーケストレーションで設定されます。 アダプターのプロパティで公開されている、 **Windows SharePoint Services トランスポート プロパティ** ダイアログ ボックスは、動的または遅延バインディング送信ポートにも適用できます。 Windows Sharepoint Services アダプタのコンテキスト プロパティを使用して、動的送信ポートまたは遅延バインディング送信ポートの構成プロパティを設定するには、次の手順を実行します。  
@@ -51,8 +51,8 @@ ms.lasthandoff: 09/20/2017
     |テンプレート フォールバック ドキュメント ライブラリ|WSS.ConfigCustomTemplatesDocLib|文字列|なし|  
     |テンプレート フォールバック名前空間列|WSS.ConfigCustomTemplatesNamespaceCol|文字列|なし|  
     |テンプレート名前空間列|WSS.ConfigTemplatesNamespaceCol|文字列|なし|  
-    |[列 `n`]|WSS.ConfigPropertiesXml<br /><br /> 列名設定されて\<PropertyName*x*>*columnname*\</PropertyName*x*> フィールドです。|文字列|なし|  
-    |[列 `n` の値]|WSS.ConfigPropertiesXml<br /><br /> 列の値が設定されて\<PropertySource*x*>*columnvalue*\</PropertySource*x*> フィールドです。|文字列|以外のトランスポートのプロパティで使用できるすべてのファイル名マクロの使用をサポートしています、 **%filename%**と**%extension%**マクロです。|  
+    |[列 `n`]|WSS.ConfigPropertiesXml<br /><br /> 列名設定されて\<PropertyName*x*\>*columnname*\</PropertyName*x* \>フィールドです。|文字列|なし|  
+    |[列 `n` の値]|WSS.ConfigPropertiesXml<br /><br /> 列の値が設定されて\<PropertySource*x*\>*columnvalue*\</PropertySource*x* \>フィールドです。|文字列|以外のトランスポートのプロパティで使用できるすべてのファイル名マクロの使用をサポートしています、 **%filename%**と**%extension%**マクロです。|  
   
     > [!NOTE]
     >  コンテキスト プロパティに指定する値は、大文字と小文字が区別されます。 コンテキスト プロパティで動的ポートの構成値を設定するときは、大文字と小文字を正しく使い分けないと、指定した送信ポートにドキュメントがルーティングされるときにエラーが発生します。  

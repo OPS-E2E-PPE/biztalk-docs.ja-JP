@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 707067ed0c48abb62d567098cd472b59bad302b0
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 384d140832c123f46ecf531e64b3c1ca11e64f4e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-and-use-tibco-schemas"></a>作成し、TIBCO スキーマを使用
 
@@ -44,7 +44,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service で使用するスキーマ
   
 ## <a name="set-the-target-namespace"></a>ターゲットの名前空間を設定します。  
   
-1.  BizTalk エディターで開き、スキーマ ファイルを右クリックして**\<スキーマ >**、し、**プロパティ**です。  
+1.  BizTalk エディターで開き、スキーマ ファイルを右クリックして**\<スキーマ\>**、し、**プロパティ**です。  
   
 2.  **プロパティ** ウィンドウで、検索、 **Namespace**フィールド名を入力、たとえば、`testNameSpace`です。  
   

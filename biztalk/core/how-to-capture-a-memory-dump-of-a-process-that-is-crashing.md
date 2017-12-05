@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fda8dd26908b241a9897bb4f1b2ba697b55f6532
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e87664180b7ad4d5fdcd121542974a08b8634d55
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-crashing"></a>クラッシュしたプロセスのメモリ ダンプを取得する方法
 BizTalk プロセス BTSNTSvc.exe として定義されている**クラッシュ**プロセスが予期せず Windows によって終了する場合。 クラッシュは通常、プロセス内でアクセス違反やスタック オーバーフローなどの未処理の例外が発生したことが原因で起こります。 これらの状況で、Windows の既定のデバッガー、災害復旧します。ワトソン博士 (drwtsn32.exe) は、例外をキャッチし、プロセスを終了します。  
@@ -41,7 +41,7 @@ BizTalk プロセス BTSNTSvc.exe として定義されている**クラッシ�
   
 8.  **Rule Completed**ダイアログ**完了**の既定値を受け入れるように**ルールを今すぐアクティブ化**です。  
   
-9. \Program Files\IIS Resources\DebugDiag\Logs に既定では、プロセスのメモリ ダンプが保存される\\<*クラッシュ ルールの名前*> れたときに、ローカル コンピューターの次のディレクトリでハンドルされません。例外は、プロセスで発生します。  
+9. \Program Files\IIS Resources\DebugDiag\Logs に既定では、プロセスのメモリ ダンプが保存される\\<*クラッシュ ルールの名前*\>れたときに、ローカル コンピューターの次のディレクトリ、プロセスで未処理の例外が発生します。  
   
 ## <a name="see-also"></a>参照  
  [デバッグ診断ツールを使用して、メモリ ダンプを分析する方法](../core/how-to-use-debug-diagnostics-to-analyze-a-memory-dump.md)

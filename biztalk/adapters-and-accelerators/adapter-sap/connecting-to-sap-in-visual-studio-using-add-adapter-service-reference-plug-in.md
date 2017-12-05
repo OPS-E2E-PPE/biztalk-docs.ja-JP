@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19dd824322906bdd148b96eb305e88fc35847947
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 31436f7835aa940b86289ae3c80c276f95e0f105
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>アダプター サービス参照のプラグインを追加する Visual Studio を使用して SAP への接続
 使用して SAP システムへの接続に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] .NET プログラミング ソリューションで使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 このトピックでは、使用する方法の説明、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  SAP システムへの接続に SAP SNC ライブラリを使用する場合は、設定、 **SncLibrary**と**SncPartnerName**を適切な値です。  
     >   
-    >  **SncLibrary**パスと SNC を使用して SAP システムに接続するために必要な Dll のファイル名は、プロパティをバインドします。 これらの Dll は、SAP クライアントを使用してコンピューター上に存在する必要がありますと[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]インストールします。 詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドで使用可能な\<インストール ガイド >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
+    >  **SncLibrary**パスと SNC を使用して SAP システムに接続するために必要な Dll のファイル名は、プロパティをバインドします。 これらの Dll は、SAP クライアントを使用してコンピューター上に存在する必要がありますと[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]インストールします。 詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドで使用可能な\<インストール ガイド\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
     >   
     >  **SncPartnerName**通信パートナーの SNC 名を取得するプロパティをバインドします。  
   
@@ -67,4 +67,4 @@ ms.lasthandoff: 09/20/2017
      [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] SAP システムで呼び出すことのできる各種の成果物を含む別のノードが表示されます。 たとえば、 **RFC**ノードに接続されている SAP システムで使用できるすべての Rfc に含まれます。 これらのノードに関する詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。  
   
 ## <a name="see-also"></a>参照  
- [Visual Studio での SAP システムへの接続します。](../../adapters-and-accelerators/adapter-sap/connect-to-the-sap-system-in-visual-studio.md)
+ [Visual Studio で SAP システムに接続する](../../adapters-and-accelerators/adapter-sap/connect-to-the-sap-system-in-visual-studio.md)

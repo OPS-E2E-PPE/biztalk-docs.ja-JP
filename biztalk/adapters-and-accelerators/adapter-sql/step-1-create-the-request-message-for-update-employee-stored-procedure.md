@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be63a18df71a91bebffeb1fccfe46395fdb36b0e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e30225b79b14ffc237798ddde6f3fe40fb4aea9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-the-request-message-for-updateemployee-stored-procedure"></a>手順 1: UPDATE_EMPLOYEE の要求メッセージを作成するストアド プロシージャ
 ![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  **署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。  
   
-    4.  **厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照 >**です。  
+    4.  **厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>**です。  
   
     5.  厳密な名前のキー ファイルを作成したフォルダーに移動し、をクリックして**開く**です。  
   
@@ -124,4 +124,4 @@ ms.lasthandoff: 09/20/2017
  SQL Server に要求メッセージを送信し、」の説明に従って、応答を受信する[手順 2: SQL Server と応答の受信要求メッセージを送信](../../adapters-and-accelerators/adapter-sql/step-2-send-the-request-message-to-sql-server-and-receive-response.md)です。  
   
 ## <a name="see-also"></a>参照  
- [レッスン 3: 追加された新しい従業員を選択するストアド プロシージャを実行します。](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)
+ [レッスン 3: ストアド プロシージャを実行して、追加された新しい従業員を選択する](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)

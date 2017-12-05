@@ -12,14 +12,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42dc3b07431bba8b62ec73fb8b0fa7c3a3402e8f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6902e57c843f6a482f937bb94f7bc8eb4e86cef8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edifact-transaction-sets-iftsai-wkgrre"></a>EDIFACT トランザクション セット IFTSAI-WKGRRE
-このトピックでは、[!INCLUDE[prague](../includes/prague-md.md)] でサポートされている EDIFACT トランザクション セットを示します。  
+このトピックでは、BizTalk Server でサポートされている EDIFACT トランザクション セットが一覧表示します。  
   
 ##  <a name="iftsai"></a>トランザクション セット IFTSAI-INSPRE  
   

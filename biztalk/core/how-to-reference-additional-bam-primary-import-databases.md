@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be973777fda6fad83b4ed6c672b68969cdde5919
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fca916339e48f6bce053753111f4467a4c9ae7d5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-reference-additional-bam-primary-import-databases"></a>追加の BAM プライマリ インポート データベースを参照する方法
 管理者を使用して、**参照を有効にする**コマンドを追加の BAM プライマリ インポート データベースを参照します。 分散 BAM アクティビティの表示を容易にするには、複数の BAM プライマリ インポート データベースを参照します。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  コマンド ライン プロンプトで、次を入力: **bm 参照を有効にする TargetServer:\<対象サーバー > - TargetDatabase:\<対象データベース >**ここで、 \<*ターゲットサーバー*> で指定されたターゲットの BAM プライマリ インポート データベース、SQL server の名前は置き換え\<対象データベース > が存在します。 Enter キーを押します。  
+3.  コマンド ライン プロンプトで、次を入力: **bm 参照を有効にする TargetServer:\<ターゲット サーバー\> - TargetDatabase:\<ターゲット データベース\>**ここで、 \<*ターゲット サーバー* \>で指定されたターゲットの BAM プライマリ インポート データベース、SQL server の名前は置き換え\<ターゲット データベース\>が存在します。 Enter キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 管理ユーティリティ](../core/bam-management-utility.md)

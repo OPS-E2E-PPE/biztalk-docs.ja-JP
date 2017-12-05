@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d97c2f58639814bda45a23c115fea0c3708c2579
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ea9d5e9cab7cedf0a4d83ac19b2e241f6776209
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario"></a>手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加
 この手順を開始する前に行う必要があります[手順 3A: FileAct リアルタイム シナリオでは、ファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)です。  
@@ -41,13 +41,13 @@ ms.lasthandoff: 09/20/2017
     |------------------|--------------------|  
     |**Password**|SAG への接続に使用するパスワードを入力します。 詳細については、SAG のヘルプを参照してください。|  
     |**ユーザー名**|SAG への接続に使用するユーザー名を入力します。|  
-    |**アプリケーション名**|サーバーを入力\<アプリケーション インターフェイス名 >、SAG のボックス ルーティング セット。|  
+    |**アプリケーション名**|サーバーを入力\<アプリケーション インターフェイス名\>SAG のボックス ルーティング セット。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
     |**FACrypto モード**|ドロップダウン リストから選択**詳細**です。|  
     |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
     |**MemberRef**|ドロップダウン リストから選択**ResponsePayload**です。|  
     |**否認不可インジケーター**|ドロップダウン リストから選択**FALSE**です。|  
-    |**応答側**|適切な入力\<レスポンダー > SWIFT でのプロビジョニングに基づく文字列。|  
+    |**応答側**|適切な入力\<レスポンダー\> SWIFT でのプロビジョニングに基づく文字列。|  
     |**ResponseCrypto**|ドロップダウン リストから選択**FALSE**です。|  
     |**受信確認のインジケーター**|ドロップダウン リストから選択**ResponsePayload**です。|  
     |**FileCompression**|ドロップダウン リストから選択**None**です。|  
@@ -81,4 +81,4 @@ ms.lasthandoff: 09/20/2017
  [手順 3: ファイルの受信場所、FileAct リアルタイムのシナリオの追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)   
  [手順 3 C: FileAct リアルタイム シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md)   
  [ステップ 3 D: FileAct リアルタイム シナリオ FILEACT 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-real-time-scenario.md)   
- [ステップ 3 e: FileAct リアルタイム シナリオ Sw:ExchangeFileResponse メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)
+ [手順 3E: FileAct リアルタイム シナリオ用に Sw:ExchangeFileResponse メッセージをキャプチャするためにファイルの送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 790530d79b06d399e032096d64d47e65bb1dd7a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c2ffc9e84e8c31ed1e1feb4c768498e817ad474c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="partnermanagement-biztalk-server-sample"></a>PartnerManagement (BizTalk Server サンプル)
 PartnerManagement サンプルでパーティを管理する方法を示します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。  
@@ -41,7 +41,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\PartnerManagement  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\PartnerManagement  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -51,7 +51,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 |PartnerManagement.sln と PartnerManagement.csproj|このサンプルのソリューション ファイルとプロジェクト ファイル。|  
   
 ## <a name="building-and-running-this-sample"></a>このサンプルのビルドおよび実行  
- サンプルをビルドする前に、コードを 4 か所で変更し、BizTalk Server のサンプルをカスタマイズする必要があります。 これは、サンプルではパーティに関連付けられた送信ポートと参加のロールに任意の名前を使用しているためです。 したがって、サンプルに有効な名前を指定する必要があります。 このサンプルを示すためには、このトピックの内容について説明します最初に、次のディレクトリから PartyResolution サンプルのビルド: \<*サンプル パス*> \Orchestrations\PartyResolution。 この方法を使用するのは、有効なロール名と送信ポート名が BizTalk Server に存在することを確認し、サンプルの手順を示すことができるようにするためです。  
+ サンプルをビルドする前に、コードを 4 か所で変更し、BizTalk Server のサンプルをカスタマイズする必要があります。 これは、サンプルではパーティに関連付けられた送信ポートと参加のロールに任意の名前を使用しているためです。 したがって、サンプルに有効な名前を指定する必要があります。 このサンプルを示すためには、このトピックの内容について説明します最初に、次のディレクトリから PartyResolution サンプルのビルド: \<*サンプル パス*\>\Orchestrations\PartyResolution。 この方法を使用するのは、有効なロール名と送信ポート名が BizTalk Server に存在することを確認し、サンプルの手順を示すことができるようにするためです。  
   
 #### <a name="to-build-this-sample"></a>このサンプルをビルドするには  
   
@@ -132,7 +132,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
   
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\PartnerManagement\bin\Debug  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\PartnerManagement\bin\Debug  
   
 2.  PartnerManagement.exe ファイルを実行します。  
   
@@ -356,4 +356,4 @@ Press <Enter> to unenlist and delete...
 ## <a name="see-also"></a>参照  
  [パーティ](../core/parties.md)   
  [ロール リンクとサービス リンク ロール](../core/role-links-and-service-link-roles.md)   
- [管理者 (BizTalk Server Samples フォルダ)](../core/admin-biztalk-server-samples-folder.md)
+ [Admin (BizTalk Server Samples フォルダー)](../core/admin-biztalk-server-samples-folder.md)

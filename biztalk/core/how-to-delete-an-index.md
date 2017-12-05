@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0ab00dc2640bbede95881280b73962c33442e46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9934c333699b853a3e10a0e5ecf212acf17fa6c6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-delete-an-index"></a>インデックスを削除する方法
 管理者を使用して、 **delete インデックス**特定のチェックポイントで指定したアクティビティのインデックスを削除するコマンド。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   
-3.  型**bm delete インデックス-indexname:\<インデックス名 >-アクティビティ:\<アクティビティ名 >**です。  
+3.  型**bm delete インデックス-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e32122b2c77ee0e69f7890b5a681954ba986e220
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 312e5980636d211f1e023331826e016eb141eb4b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-submitting-a-3a2-request"></a>手順 3: 3 a 2 要求の送信
 ここでは、3A2 - Request Price and Availability の PIP (Partner Interface Process) を使用して、要求の準備と送信を行います。 購入者組織はこの PIP を使用して、特定の製品について価格や入手可能な数などの情報を取得できます。 次に、購入者は、ビジネス ルールに基づいてその情報を処理し、業者から製品を購入するかどうかを決定します。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
     |**Pip インスタンス ID**|型**3A2_Test**です。|  
     |**メッセージのカテゴリ**|型**アクション**です。|  
   
-3.  メモ帳または別のテキスト エディターを使用して、内の 3A2_Request.xml ファイルを開き、 *\<ドライブ >*: \プログラムの \program files \microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobapplication\sampleinstances フォルダーをコピーして貼り付け、内容、 **Service Content**フィールドLOBWebApplication です。  
+3.  メモ帳または別のテキスト エディターを使用して、内の 3A2_Request.xml ファイルを開き、 *\<ドライブ\>*: \プログラムの \program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobapplication\sampleinstances フォルダーをコピーして貼り付け、内容、 **Service Content**フィールドLOBWebApplication です。  
   
 4.  をクリックして**送信**Contoso のコンピューターに 3 a 2 要求を送信します。  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Microsoft SQL Server Management Studio でクリックして**新しいクエリ**です。  
   
-4.  \<テーブル > のテキスト ボックスで、 **BTARNDATA**一覧からです。  
+4.  \<テーブル\>テキスト ボックスで、 **BTARNDATA**一覧からです。  
   
 5.  SQL ウィンドウに、次の SQL ステートメントを入力します。  
   

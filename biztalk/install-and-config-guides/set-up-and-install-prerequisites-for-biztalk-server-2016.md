@@ -5,7 +5,7 @@ author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
 ms.custom: 
-ms.date: 08/15/2017
+ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,16 +13,16 @@ ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
 caps.latest.revision: "11"
 ms.author: mandia
-ms.openlocfilehash: bee25a841d7f434fd5366f483b0b5544462d29fd
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: 2f03aaf7d33cc494320d1ef0944b48286bc1b24c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>BizTalk Server 2016 のセットアップとインストールの前提条件
 サーバーのセットアップとソフトウェアのインストール/構成の前提条件。
 
-## <a name="join-the-local-administrators-group"></a>ローカルの Administrators グループへの参加
+## <a name="join-the-administrators-group"></a>管理者グループに参加します。
 BizTalk Server をインストールして構成するには、ローカル コンピューターで管理者アカウントを利用してサーバーにサインインします。 BizTalk Server を管理しているユーザー アカウントがあれば、それをローカル Administrators グループに追加します。
 
 1.  [スタート] メニューで **[コンピューターの管理]** を開きます。
@@ -33,8 +33,8 @@ BizTalk Server をインストールして構成するには、ローカル コ�
 2.  **[ローカル ユーザーとグループ]** を展開し、**[グループ]** を選択します。
 3.  **[監理者]** グループを右クリックし、**[グループに追加]** を選択します。 アカウントを**追加**し、**[OK]** を選択して変更を保存します。 
 
-## <a name="change-the-computer-name-to-less-than-15-characters-optional"></a>コンピューター名を 15 文字以下に変更します (省略可能)。
-コンピューター名が 15 文字より長い場合は、BizTalk Server の構成は失敗します。 コンピューター名を変更するには:
+## <a name="change-the-computer-name-optional"></a>(省略可能) コンピューター名を変更します。
+コンピューター名が 15 文字より長い場合は、BizTalk Server の構成は失敗します。 コンピューター名を 15 文字未満に変更します。
 
 1.  **[サーバー マネージャー]** > **[ダッシュボード]** で **[ローカル サーバー]** を選択します。 
 2.  **[プロパティ]** で、コンピューターの名前プロパティを選択し、変更します。
@@ -57,11 +57,11 @@ BizTalk と SQL Server が別々のコンピューターにインストールさ
     * 受信を許可する
     * 送信を許可する
     * 認証を必要としない
-5. [ **OK**] を選択します。 MS DTC を再起動するメッセージが表示されたら、選択**はい**です。 
+5. **[OK]** を選択します。 MS DTC を再起動するメッセージが表示されたら、選択**はい**です。 
 
 追加の設定が必要な場合、「[MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)」を参照してください。
 
-## <a name="configure-the-application-event-log-optional"></a>(省略可能) アプリケーション イベント ログを構成します。
+## <a name="configure-application-event-log-optional"></a>(省略可能) アプリケーション イベント ログを構成します。
 
 BizTalk Server のセットアップを実行すると、イベントの記録がアプリケーション イベント ログに保存されます。 インストールされる BizTalk Server の機能によっては、ログの空き領域を超える大きさのログが作成されることもあります。 セットアップ中にアプリケーション イベント ログの領域が不足すると、インストールは失敗します。 アプリケーション イベント ログの設定を変更すれば、この失敗を回避できます。
 
@@ -77,9 +77,9 @@ BizTalk Server のセットアップを実行すると、イベントの記録�
     * ログの空き領域がなくなったときに古いイベントが上書きされるようにするには、**[必要に応じてイベントを上書きする]** を選択します。
     * ログ イベントを消去するには、**[ログの消去]** を選択します。
 
-4. [ **OK**] を選択します。
+4. **[OK]** を選択します。
 
-## <a name="edge-cant-be-opened-using-the-built-in-administrator-account-optional"></a>エッジは、ビルトイン Administrator アカウント (省略可能) を使用して開くことができません。
+## <a name="edge-cant-be-opened-optional"></a>エッジは、(省略可能) 開くことができません。
 
 Edge の利用時に次のメッセージが表示されます:  
 `Microsoft Edge can't be opened using the Built-in Administrator account. Sign in with a different account and try again.`
@@ -98,7 +98,7 @@ Edge の利用時に次のメッセージが表示されます:
 1. [スタート] メニューで、**[Windows の更新プログラム]** を開き、更新がないか確認します。 **[設定]** を開き、**[更新とセキュリティ]** を選択することもできます。
 2. 更新プログラムのインストール後、コンピューターを再起動する必要がある場合があります。
 
-## <a name="enable-internet-information-services-iis"></a>インターネット インフォメーション サービス (IIS) を有効にする
+## <a name="enable-iis"></a>IIS を有効にします。
 BizTalk Server の機能のうち、IIS を必要とするものは次のとおりです。
 
 - HTTP アダプター
@@ -140,7 +140,7 @@ IIS は**役割**または**機能**としてオペレーティング システ�
 **関連項目**: [Windows 8 または Windows Server 2012](http://www.iis.net/learn/get-started/whats-new-in-iis-8/installing-iis-8-on-windows-server-2012) に IIS をインストールする
 
 
-## <a name="running-the-bam-portal-in-a-64-bit-environment-optional"></a>64 ビット環境で BAM ポータルを実行する (省略可能)
+## <a name="run-64-bit-bam-portal-optional"></a>64 ビットの BAM ポータル (オプション) を実行します。
 BAM ポータルを使用しない場合は、このセクションを省略できます。 
 
 BAM ポータルは、32 ビット モードで動作します。 64 ビット環境でインターネット インフォメーション サービス (IIS) を使用している場合は、32 ビット モードで実行するアプリケーション プールを設定します。 
@@ -156,7 +156,7 @@ BAM ポータルは、32 ビット モードで動作します。 64 ビット�
 2.  コンピューター名を展開して、**[アプリケーション プール]** を選択します。
 3.  **[DefaultAppPool]** を右クリックし、**[詳細設定]** を選択します。 
 4.  **[32 ビット アプリケーションの有効化]** の値を **[True]** に変更します。 
-5.  [**OK**] を選択します。
+5.  **[OK]** を選択します。
 
 ## <a name="install-windows-identity-foundation-wif-optional"></a>Windows Identity Foundation をインストールする (省略可能)
 SharePoint Services アダプターを使用する場合、BizTalk Server には、WIF が必要です。 SharePoint Services アダプターを使用しない場合、このセクションを省略できます。
@@ -167,7 +167,7 @@ Windows Identity Foundation はオペレーティング システムに**機能*
 2. **[Windows Identity Foundation 3.5]** を選択し、インストールを続行します。 
 3. 再起動を促すメッセージが表示されたら、コンピューターを再起動します。
 
-## <a name="install-and-configure-smtp-server-optional"></a>SMTP サーバーのインストールと構成 (省略可能)
+## <a name="install--configure-smtp-server-optional"></a>インストールして SMTP サーバー (省略可能) を構成するには.
 BAM 警告を使用する場合、BizTalk Server には、SMTP サーバーが必要です。 BAM 警告を使用しない場合、このセクションを省略できます。
 
 SQL Server Database Mail では SMTP サーバーを使用して BAM 警告を送信します。 SMTP サーバーは BizTalk Server のローカル、または IIS のインストールされた別のサーバーにインストールできます。 SMTP サーバーは、Windows 8.1 や Windows 10 のようなクライアント オペレーティング システムでは利用できません。 
@@ -178,7 +178,7 @@ SMTP サーバーは**機能**としてサーバー オペレーティング シ
 2. **[SMTP サーバー]** を選択し、インストールを続行します。 
 3. 再起動を促すメッセージが表示されたら、コンピューターを再起動します。
 
-## <a name="install-microsoft-office-excel-2016-or-excel-2013-optional"></a>Microsoft Office Excel 2016 または Excel 2013 をインストールする (省略可能)
+## <a name="install-excel-2016-or-2013-optional"></a>Excel 2016 または 2013 (省略可能) をインストールします。
 ビジネス アクティビティ監視 (BAM) を使用する場合、BizTalk Server には、Excel が必要です。 BAM を使用しない場合、このセクションを省略できます。
 
 BAM の Office Excel では、監視するビジネス プロセスを定義します。 この BAM Excel ブックでは、BAM によって収集されたデータをどのようにビジネス ユーザーの画面に表示するかを定義することもできます。
@@ -301,9 +301,9 @@ BizTalk Server には SQL Server が必要です。 SQL Server は、BizTalk と
 
 ## <a name="disable-shared-memory"></a>共有メモリを無効にします。
 
-1. [**SQL Server 構成マネージャー**] を開きます。
+1. **[SQL Server 構成マネージャー]** を開きます。
 2. SQL Server 構成マネージャーで、展開**SQL Server ネットワーク構成**、し、 **MSSQLSERVER のプロトコル**です。
-3. [**共有メモリ**] を右クリックし、[**無効**] を選択します。
+3. **[共有メモリ]** を右クリックし、**[無効]** を選択します。
 4. 選択**SQL Server サービス**、SQL を右クリックして**Server (MSSQLSERVER)**、し、**停止**です。 右クリックし、サービスが停止したら、 **SQL Server (MSSQLSERVER)**、し、**開始**です。
 5. **SQL Server 構成マネージャー**を終了します。
 
@@ -317,7 +317,7 @@ BizTalk Server ランタイム、管理ツール、および BAM で必要です
 
 ダウンロードしてインストール[SqlXml 4.0](https://www.microsoft.com/download/details.aspx?id=30403)です。
 
-## <a name="configure-sql-server-database-mail-optional"></a>SQL Server データベース メールを構成する (省略可能)
+## <a name="configure-sql-database-mail-optional"></a>(省略可能) SQL データベース メールを構成します。
 BAM 警告を使用する場合、BizTalk Server には、SQL Server Database Mail が必要です。 BAM 警告を使用しない場合は、このセクションはスキップしてください。 
 
 **関連項目**: [データベース メール](https://docs.microsoft.com/sql/relational-databases/database-mail/database-mail)に詳細があります。

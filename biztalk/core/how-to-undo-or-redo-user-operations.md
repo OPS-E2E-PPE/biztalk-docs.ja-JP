@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6f47071ee003a896b66120c0fd81a121ab73230
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8358fc1624346b90d98fd1f1707dd2bfb02446dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-undo-or-redo-user-operations"></a>ユーザー操作の取り消しまたはやり直しの方法
 元に戻す/やり直しのサポートも、BizTalk マッパーに用意されている便利な操作です。 自分が加えた変更が希望どおりでないか、誤って変更を加えた場合は、	元に戻すを使用して、変更を加えていない以前の状態に徐々に戻り、そこから操作を再開することができます。 やり直しを使用すると、元に戻した編集操作を再適用することができます。 このトピックでは、元に戻すかやり直すことができる操作に関する情報を示します。  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  詳細については、次を参照してください。[リンクを作成する方法](../core/how-to-create-links.md)です。  
   
--   複数の変更を実行する、**構成\<Functoid > Functoid**  ダイアログ ボックスは、1 つの操作として扱われます。  
+-   複数の変更を実行する、**構成\<Functoid\> Functoid**  ダイアログ ボックスは、1 つの操作として扱われます。  
   
 -   マッパー グリッド内での Functoid およびリンクのドラッグ  
   

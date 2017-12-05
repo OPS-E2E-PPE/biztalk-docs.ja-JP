@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc0f805011921fe259a0483fa2bcd50ab45d043b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62cb7d6181c7be44f7095a6c1d1149132df4e21e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>インストールと構成のトラブルシューティング
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>RuntimeSchemas アセンブリを配置できません。  
@@ -95,12 +95,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  Service フォルダーを右クリックし、をクリックして**プロパティ**、をクリックし、**セキュリティ**タブです。  
   
-2.  グループまたはユーザー名ペインで、サービスのプロパティ ダイアログ ボックスのをクリックして**追加**、入力 ***\<サーバー名 >*\A4SWIFT 管理者**をクリックし、**OK**です。  
+2.  クリックして、グループまたはユーザー名のウィンドウで、サービスのプロパティ ダイアログ ボックス、**追加**、入力 ***\<サーバー名\>*\A4SWIFT 管理者**、クリックして**OK**です。  
   
     > [!NOTE]
-    >  A4SWIFT の Administrators グループがドメイン グループである場合は、入力 ***\<ドメイン名 >*\A4SWIFT 管理者**です。  
+    >  A4SWIFT の Administrators グループがドメイン グループである場合は、入力 ***\<ドメイン名\>*\A4SWIFT 管理者**です。  
   
-3.  手順 2. を繰り返します ***\<サーバー名 >*\A4SWIFT ユーザー**、または  **\<*ドメイン名*> \A4SWIFTユーザー * *、A4SWIFT Users グループがドメイン グループの場合。  
+3.  手順 2. を繰り返します ***\<サーバー名\>*\A4SWIFT ユーザー**、または  **\<*ドメイン名*\>\A4SWIFT ユーザー * *、A4SWIFT Users グループがドメイン グループの場合。  
   
 4.  グループまたはユーザー名ペインで選択**A4SWIFT 管理者**です。 アクセス許可 ウィンドウで、次のように選択します。**許可**の**フルコントロール**です。  
   
@@ -207,7 +207,7 @@ ms.lasthandoff: 09/20/2017
   
     -   型:**インプロセス**  
   
-    -   Windows グループ:   **\<*ドメイン*> \BizTalk アプリケーション ユーザー * * (または処理中に BizTalk アプリケーションを実行するための BizTalk Server の構成時に設定したアカウント)  
+    -   Windows グループ:   **\<*ドメイン*\>\BizTalk アプリケーション ユーザー * * (またはアカウントを BizTalk プロセスを実行するための BizTalk Server の構成時に設定することアプリケーションの)  
   
     -   [オプション] の両方を選択**ホストの追跡を許可する**と**しやすいように、既定のホスト グループに**です。  
   
@@ -225,7 +225,7 @@ ms.lasthandoff: 09/20/2017
  BRE 配置ユーティリティが正しく機能しないまたは実行すると、64 ビット コンピューターで既定以外のディレクトリ (C:\Program files \microsoft BizTalk Accelerator 用 SWIFT) 以外で 32 ビット コンピューターにします。  
   
 ### <a name="possible-cause"></a>考えられる原因  
- BRE 配置ユーティリティは正しく動きませんにある BREDeployment.exe.config ファイル内のパスを変更するまで、\<ドライブ >: \Program Files\Microsoft BizTalk Accelerator for swift \sdk\tools フォルダーです。  
+ BRE 配置ユーティリティは正しく動きませんにある BREDeployment.exe.config ファイル内のパスを変更するまで、\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for swift \sdk\tools フォルダーです。  
   
 ### <a name="solution"></a>解決方法  
  ユーティリティの構成を更新するには、メモ帳で、BREDeployment.exe.config を開き、基本ポリシー、スキーマ、およびボキャブラリのディレクトリのフォルダーを変更します。  

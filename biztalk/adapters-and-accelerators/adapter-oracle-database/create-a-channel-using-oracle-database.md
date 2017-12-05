@@ -17,11 +17,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efdcfe1ac8feee5b4ffa07d3a276ce86c352fe21
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 413f62a679c0510be34289900b92188554e622c8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-oracle-database"></a>Oracle データベースを使用して、チャネルを作成します。
 モデルでは、WCF チャネル、Oracle データベースに対する操作を呼び出すし、SOAP メッセージを交換することで、ポーリング クエリの結果を受け取る、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] WCF チャネルを経由します。  
@@ -99,9 +99,9 @@ channel.Open();
  次のコードは、前述の例で使用される構成設定を示しています。 クライアント エンドポイントのコントラクトには、"System.ServiceModel.Channels.IRequestChannel"または"System.ServiceModel.Channels.IRequestChannel"を作成するチャネル形状の種類に応じてをする必要があります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <oracleDBBinding>  
                 <binding name="OracleDBBinding" closeTimeout="00:01:00" openTimeout="00:01:00"  
@@ -122,7 +122,7 @@ channel.Open();
                 bindingConfiguration="OracleDBBinding" contract="System.ServiceModel.Channels.IRequestChannel"  
                 name="MyRequestChannel" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -137,7 +137,7 @@ channel.Open();
   
 3.  バインディング パラメーター コレクションを使用して、作成、 **BindingParameterCollection**クラスし、資格情報を設定します。  
   
-4.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel >**メソッドを**OracleDBBinding**です。 このメソッドに渡すパラメーターの 1 つとして、Oracle の接続 URI を指定します。 Oracle の接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
+4.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel\>** メソッドを**OracleDBBinding**です。 このメソッドに渡すパラメーターの 1 つとして、Oracle の接続 URI を指定します。 Oracle の接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
   
 5.  リスナーを開きます。  
   

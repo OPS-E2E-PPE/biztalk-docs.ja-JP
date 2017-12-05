@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75cc2fa6a7e4f6318818534f6b3f99323f1d8ddf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb8bf8d87f7868367c252cdc75842b234cb06ff9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-manually-purge-data-from-the-biztalk-tracking-database"></a>BizTalk 追跡データベースから手動でデータを削除する方法
 SQL Server エージェント ジョブである DTA Archive and Purge では、データベースの連続的な削除および格納された追跡データの圧縮により、BizTalk 追跡 (BizTalkDTADb) データベースから手動でデータを削除する必要性が低減されます。 BizTalk 追跡 (BizTalkDTADb) データベースのサイズが、パフォーマンスが低下するほど大幅に大きくなり、DTA Archive and Purge ジョブがデータベース サイズの増大に対応できなくなった場合には、手動でデータを削除することが必要になる場合があります。  
@@ -103,9 +103,9 @@ SQL Server エージェント ジョブである DTA Archive and Purge では、
   
 21. コマンド プロンプトでは、手順 4. で、各 IIS サービスを停止するを再起動します。 型:  
   
-     **net start**  *\<IISserviceName >*  
+     **net start**  *\<IISserviceName\>*  
   
-     ここで *\<IISserviceName >*を再起動する IIS サービスの名前を指定します。 各 IIS サービスに対してこのコマンドを繰り返し実行する必要があります。  
+     ここで *\<IISserviceName\>* を再起動する IIS サービスの名前を指定します。 各 IIS サービスに対してこのコマンドを繰り返し実行する必要があります。  
   
 ## <a name="see-also"></a>参照  
  [アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)   

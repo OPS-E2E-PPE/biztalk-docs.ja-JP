@@ -17,11 +17,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2a134e41c8f94c875498db03866d16a45bb9bc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1d3e395223840dd4caa534130061fac33e89b78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-deployed-artifacts"></a>展開済みのアイテムを削除する方法
 管理者を使用して、**削除すべて**BAM プライマリ インポート データベースに展開されたアイテムを削除するコマンド。 指定する BAM 定義は、削除するアイテムについての情報を含んでいる XML ファイルまたは Excel ブックのいずれかです。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm 削除すべて-definitionfile:\<def ファイル >**です。  
+3.  型**bm 削除すべて-definitionfile:\<def ファイル\>**です。  
   
 4.  **Enter**キーを押します。  
   

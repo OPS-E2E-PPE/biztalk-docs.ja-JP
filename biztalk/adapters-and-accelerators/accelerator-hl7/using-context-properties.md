@@ -17,18 +17,18 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc82cc75df5d8b73e3780e451b1c380e08ef1cec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a3fad82b8d537fcc017dfed175c5348cc1529d3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-context-properties"></a>コンテキスト プロパティを使用します。
 BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) メッセージング エンジンとそのコンポーネントのコンテキスト プロパティを内部的に使用します。 エンジンの実行ロジックに影響を与えるため、いくつかのコンテキスト プロパティ、エンジンによって設定された値の変更はお勧めできません。 ただし、多くのエンジンによって設定されていないプロパティを変更できます。 送信ポートのフィルター式を作成するため、コンテキスト プロパティを使用することができます (詳細については、次を参照してください。[送信ポートのフィルター式を設定](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md))。 オーケストレーションのフィルター式のコンテキスト プロパティを使用することもできます。 プロパティは、プロジェクトのグローバル プロパティ スキーマを参照している限り、フィルター式の使用可能な (これ[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]一般的なテンプレートのいずれかを使用するときに作成) します。  
   
  次の表の一覧を含む[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]メッセージ コンテキスト プロパティ、メッセージング エンジンを使用します。 エンジンは、ルーティングにこれらのプロパティの多くを使用します。 シリアライザーは、その処理を他のユーザーを使用します。 これらのプロパティのプレフィックスがある[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。  
   
- 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)](BTS プリフィックスでフィルター式で識別される)、それらのコンテキスト プロパティの「メッセージ コンテキスト プロパティ」を参照してください[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。 **BTS です。SchemaStrongName**と**BTS です。MessageType** 2 つのプロパティを[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エンジンを使用します。  
+ 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)](BTS プリフィックスでフィルター式で識別される)、それらのコンテキスト プロパティは、BizTalk Server ヘルプの「メッセージ コンテキスト プロパティ」を参照してください。 **BTS です。SchemaStrongName**と**BTS です。MessageType** 2 つのプロパティを[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エンジンを使用します。  
   
  次の表に、昇格するには、必要な列は、次の影響を及ぼします。  
   
@@ -66,4 +66,4 @@ BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../include
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [送信ポートのフィルター式を設定](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md)
+-   [送信ポートのフィルター式の設定](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md)

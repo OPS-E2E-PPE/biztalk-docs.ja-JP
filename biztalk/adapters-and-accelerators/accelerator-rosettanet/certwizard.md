@@ -16,17 +16,17 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8d9daf4ea1ea996680088c7a7a1333e9d26906b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea106299a734f79506823ca4a6951a3dad367553
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="certwizard"></a>CertWizard
 .pfx ファイルまたは .cer ファイルの証明書をプライベート ストアまたはパブリック ストアにインポートして [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] で使用できるようにするには、CertWizard ユーティリティを使用します。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*> \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk\  
+ \<*ドライブ*\>\Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\  
   
 ## <a name="running-certwizard"></a>CertWizard の実行  
   
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド プロンプトを開きます。  
   
-2.  移動\<*ドライブ*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk\\です。  
+2.  移動\<*ドライブ*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\です。  
   
 3.  コマンド プロンプトで次のように入力します。 **CertWizard**、必須と適切なスイッチを入力して、ENTER キーを押します。  
   
@@ -82,4 +82,4 @@ CertWizard /Rootkey <filename>.cer [/Thumbprint <thumbprint>]
   
 ## <a name="see-also"></a>参照  
  [ユーティリティ](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   
- [CertWizard ユーティリティを使用して証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)
+ [CertWizard ユーティリティを使用した証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)

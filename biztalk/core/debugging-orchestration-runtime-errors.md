@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36e881f8449e7aaac7aeade12c36c3c6d942ef12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 87a47c5b2ee432059365c6f9046a75bb5775fc02
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="debugging-orchestration-runtime-errors"></a>オーケストレーションの実行時エラーのデバッグ
 このセクションでは、オーケストレーションに関する実行時の問題の解決に役立つ一連の質問と回答を示します。  
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="multipart-mime-message-part-cannot-be-found"></a>マルチパート MIME メッセージ部分が見つかりません。  
   
 ### <a name="problem"></a>問題  
- MIME を取得したメッセージのようなエラーをスロー、BizTalk Server ランタイムで結果が 0 より大きいインデックス値を持つ部分"のインデックスでのマルチパート メッセージを見つけることができません =\<値 >"です。  
+ MIME を取得したメッセージのようなエラーをスロー、BizTalk Server ランタイムで結果が 0 より大きいインデックス値を持つ部分"のインデックスでのマルチパート メッセージを見つけることができません =\<値\>"です。  
   
 ### <a name="cause"></a>原因  
  このエラーの最も一般的な原因を次に示します。  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="you-receive-a-the-file-send-adapter-cannot-open-file-for-writing-error-when-sending-using-a-dynamic-send-port"></a>動的送信ポートを使用して送信を行うと、"FILE 送信アダプターがファイルを書き込み用に開けません" というエラーが表示されます。  
   
 ### <a name="problem"></a>問題  
- 表示されたら、"ファイル送信アダプターがファイルを開くことができません*\<ファイル名 >*書き込み用"動的なを使用して送信するときに、BizTalk Server のイベント ログにエラーが送信ポート。  
+ 表示されたら、"ファイル送信アダプターがファイルを開くことができません *\<filename\>* 書き込み用"動的なを使用して送信するときに、BizTalk Server のイベント ログにエラーが送信ポート。  
   
  この問題が発生したときに、 **BTS です。OutBoundTransportLocation**プロパティがオーケストレーションの式で定義されていると、ファイル トランスポートを指定すると、たとえば、次の式では実行時にこのエラーが発生します。  
   
@@ -87,7 +87,7 @@ Message2(BTS.OutboundTransportLocation) = "file:///c:/test/out";
 MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLocation);  
 ```  
   
- \-または、  
+ \- または -  
   
 ```  
 Message2=Message1;  

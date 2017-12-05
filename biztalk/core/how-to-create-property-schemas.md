@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 426e98e491ec71a7e430ff6886f5f9820c4b87fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee97f4cb3065fdb201ec19f88a79e7899f03ac49
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-property-schemas"></a>プロパティ スキーマを作成する方法
 プロパティ フィールドとしてフィールドを昇格する場合、最初にプロパティ スキーマを定義する必要があります。 このプロパティ スキーマでは、構造化されていないフィールドの集合を指定します。プロパティ スキーマに関連するスキーマで定義されるインスタンス メッセージから、構造化されていないフィールドの集合にフィールドを昇格できます。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  設定、**データ型**およびに応じて、他の関連するプロパティ、**フィールド要素**プロパティ ウィンドウ内のノードです。  
   
-6.  挿入する場合**フィールド要素**追加のプロパティのノードを右クリックし、\<スキーマ > ノード、をクリックして**スキーマ ノードの挿入**、クリックして**子フィールド要素**、手順 4. と 5. を繰り返します。 必要なセットを作成するために必要に応じて繰り返します**フィールド要素**インスタンス メッセージから値を昇格するノードです。  
+6.  挿入する場合**フィールド要素**追加のプロパティのノードを右クリックし、\<スキーマ\>ノード、をクリックして**スキーマ ノードの挿入**、クリックして**子フィールド要素**、手順 4. と 5. を繰り返します。 必要なセットを作成するために必要に応じて繰り返します**フィールド要素**インスタンス メッセージから値を昇格するノードです。  
   
 ## <a name="see-also"></a>参照  
- [プロジェクト内のスキーマを管理します。](../core/managing-schemas-within-projects.md)
+ [プロジェクト内のスキーマの管理](../core/managing-schemas-within-projects.md)

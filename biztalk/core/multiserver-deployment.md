@@ -19,11 +19,11 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d9770a2d9e4977ec23c8ff4013d5415c75087d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af87c78ef632ea9794d725cb70440d62371c349e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="multiserver-deployment"></a>マルチサーバー展開
 このトピックでは、Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを、マルチサーバー環境に設定および展開する場合の考慮事項について説明します。  
@@ -101,7 +101,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントがインストールされていないリモート SharePoint Server コンピューターに Windows SharePoint Services アダプター Web サイトをインストールする構成は、完全にサポートされている構成です。  
   
-5.  [**構成の適用**] をクリックします。  
+5.  **[構成の適用]** をクリックします。  
   
 ## <a name="considerations-for-a-multiserver-deployment"></a>マルチサーバー展開に関する考慮事項  
  ![](../core/media/adapters-wss-multiserver-screenshot01.gif "Adapters_WSS_Multiserver_Screenshot01")  
@@ -115,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] では、SharePoint アダプター Web サービスを実行する ID に次のアクセス許可が必要です。  
   
-     **読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**フォルダーです。 64 ビット バージョンの Windows を使用する場合と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、アクセス許可に設定する必要があります、 **%program Files (x86) \Microsoft BizTalk Server\<バージョン > \Business Activity Services\BTSharePointV3AdapterWS**  
+     **読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**フォルダーです。 64 ビット バージョンの Windows を使用する場合と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、アクセス許可に設定する必要があります、 **%program Files (x86) \Microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**  
   
      **読み取り**次のレジストリ キーに対する権限: **hkey_local_machine \software\microsoft\shared Server\Extensions\12.0\Secure\ConfigDB**です。  
   
@@ -153,4 +153,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [Windows SharePoint Services アダプター](../core/windows-sharepoint-services-adapter.md)   
- [シングル サーバー配置](../core/single-server-deployment.md)
+ [シングルサーバー展開](../core/single-server-deployment.md)

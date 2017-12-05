@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b254f317740b8fcff0bc97dc0891ae19fb8d594
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff49285df7e43103f2ad7441cbc82b96bb59eaa4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-siebel-adapter"></a>Siebel アダプターのインストールに関する問題をトラブルシューティングします。
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールは、コンピューター上の製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するのには、トラブルシューティングの手法について説明します。  
@@ -46,9 +46,9 @@ Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.
   
 手動で登録、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]バインドと[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]次の手順を使用します。 
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
-     このパスに\<バージョン > は .NET Framework のバージョン。  
+     このパスに\<バージョン\>.NET Framework のバージョンです。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   

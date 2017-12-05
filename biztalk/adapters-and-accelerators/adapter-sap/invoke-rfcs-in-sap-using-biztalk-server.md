@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc6738a2b46b3dc28aeee0642c03f92467ef6190
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3db5180d8b4183a2a48c726fd5e73b3347f82dc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-rfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP Rfc を呼び出す
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントから呼び出すことができる操作として、SAP システムによって公開されている Rfc を表示します。 このセクションの内容を使用して SAP システムでの RFC を呼び出すための手順を説明する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムで RFC を呼び出すサポートを参照してください[SAP Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)です。 RFC を呼び出すための SOAP メッセージの構造に関する詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)です。  
@@ -164,7 +164,7 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションはメッセージを処理して、SAP システムに送信します。 SAP システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージを SAP システムからの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <RFC_CUSTOMER_GETResponse xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
   <CUSTOMER_T>  
     <RFCCUST xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">  

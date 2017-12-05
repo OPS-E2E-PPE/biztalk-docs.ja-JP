@@ -12,18 +12,18 @@ caps.latest.revision: "39"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07810f513c3530b214eb1405462db1e6ac96ed84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fc232edf6d99e31b5679932eb19873481fa579b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-deploy-a-biztalk-assembly-from-visual-studio"></a>Visual Studio から BizTalk アセンブリを展開する方法
 このトピックでは、使用に関する説明[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーまたは[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトから BizTalk アセンブリを展開する[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk アプリケーションにします。 プロジェクト レベルから 1 つのアセンブリを展開する方法 (手順は、プロジェクトを右クリックして [配置] をクリックするなど) と、ソリューション レベルからすべてのアセンブリをソリューションで展開する方法 (ソリューションを右クリックして [配置] をクリックするなど) を利用できますが、ソリューション レベルからすべてのアセンブリを一度に展開する方法を強くお勧めします。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の以前のバージョンでは、複数のアセンブリをソリューションで展開する場合、いずれかのアセンブリに他のアセンブリとの依存関係があると、これらのアセンブリを依存関係と逆の順序で個別に展開する必要がありました。 たとえば、Assembly1 が Assembly2 に依存していた場合、最初に Assembly2 を展開しないと、Assembly1 は展開できませんでした。  
   
- プロジェクト レベルからアセンブリを展開する場合、このことは変わりません。 しかし、プロジェクト レベルではなくソリューション レベルからアセンブリを展開する場合、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、アセンブリが正しい順序で展開されることも含めて、展開のすべての手順が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって自動的に実行されます。 したがって、展開するアセンブリに他のアセンブリとの依存関係がある場合、展開を簡略化するには、ソリューション レベルでアセンブリを展開してください。  
+ プロジェクト レベルからアセンブリを展開する場合、このことは変わりません。 BizTalk Server、ただし、ときに展開して、プロジェクト レベルではなくソリューション レベルからアセンブリ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]自動的に正しい順序でアセンブリの展開を含む、展開の手順のすべての処理です。 したがって、展開するアセンブリに他のアセンブリとの依存関係がある場合、展開を簡略化するには、ソリューション レベルでアセンブリを展開してください。  
   
  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 内からプロジェクトまたはソリューションを展開するオプションを選択すると、1 つのまたは複数のアセンブリが自動的にビルドされ、ローカルの BizTalk グループ内の指定した BizTalk アプリケーションに展開されます。 アプリケーションがグループ内に存在しない場合は、展開によってアプリケーションの作成も行われます。 アセンブリとアセンブリに含まれるアイテムは登録され、それらのデータは BizTalk グループの BizTalk 管理 (構成) データベースに格納されます。 また、プロジェクトの展開のプロパティでこのオプションを指定した場合、アセンブリはグローバル アセンブリ キャッシュ (GAC) に追加されます。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-     **devenv/deploy***SolnConfigName* *SolutionName* [**/project** *ProjName*] [**/projectconfig** *ProjConfigName*]    
+     **devenv/deploy***SolnConfigName* *SolutionName* [**/project** *ProjName*] [**/projectconfig** *ProjConfigName*]  
   
      例:  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
      オーケストレーションを含むアセンブリを初めて展開すると、オーケストレーションがバインド ファイルに含まれていないことを通知する警告メッセージが表示されることがあります。 これは、展開時にオーケストレーションがホストに自動的にバインドされないためです。 この手順は手動で行う必要があります。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開します。](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)
+ [Visual Studio から BizTalk アプリケーションへの BizTalk アセンブリの展開](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)

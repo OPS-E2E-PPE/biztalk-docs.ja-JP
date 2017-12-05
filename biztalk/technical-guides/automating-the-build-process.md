@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0e09e298694a3affd979eacc35ec43a1f92fab5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d62380146f0bfba188843ed0e022340d88fcaceb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automating-the-build-process"></a>ビルド プロセスを自動化します。
 自動ビルド プロセスは、コンパイル、展開され、通常、あらかじめ決められた間隔でプロジェクトの最新のソース コードに対するビルド確認テスト (Bvt) を実行します。 「ビルド レポートを」ビルド処理の成否の詳細には、プロジェクトの利害関係者に配布します。 ビルド レポートを分析して、プロジェクトの区分が注意を払い、プロジェクトを以前のバージョン/ビルド ロールバックかどうかに必要かを判断します。  
@@ -108,7 +108,7 @@ ms.lasthandoff: 09/20/2017
  各機能のテストを記述するために必要な開発作業を最小限に抑えるには重要です。 テスト ケースの少ない可能性が高い/compile に (時間)、開発の観点からのものを生成するためには、通常、高価です。 つまり、コードをテスト カバレッジの低いレベルになります。 テスト フレームワークを使用すると、テスト_ケースを迅速かつ容易に作成でき、そのため、容易にできるように完全なコード カバレッジを取得できます。 ほとんどの適切なテスト フレームワークでは、テストを定義する宣言型の方法を使用します。 (つまり、テストの構成は、構成ファイルに格納、一般的にこれは、XML ファイルです。)適切なテスト フレームワーク有効機敏性と信頼性の高い方法でテスト スイートを完全に機能を開発して、「発明」繰り返し、いわば必要はなくなりますを使用します。  
   
 ## <a name="msbuild-support-for-biztalk-server-projects"></a>BizTalk Server プロジェクトの MSBUILD サポート  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD には、コマンドラインおよび MSBUILD のログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドが格納されています。 MSBUILD の詳細については、次を参照してください。 [MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)。  
+ BizTalk Server では、Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD には、コマンドラインおよび MSBUILD のログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドが格納されています。 MSBUILD の詳細については、次を参照してください。 [MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)。  
   
 ## <a name="see-also"></a>参照  
- [テストの自動化を実装します。](../technical-guides/implementing-automated-testing.md)
+ [自動テストの実装](../technical-guides/implementing-automated-testing.md)

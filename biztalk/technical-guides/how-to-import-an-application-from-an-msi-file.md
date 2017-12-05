@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ea38086ea98923b05b23ed8c594175e1ce09e4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc79413b17343ff7dbf27c90af803e7b22fb0678
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-import-an-application-from-an-msi-file"></a>アプリケーションを .msi ファイルからインポートする方法
-MSI のインポート ウィザードを使用することができます、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]をターゲット環境で BizTalk グループに .msi ファイルから BizTalk アプリケーションをインポートして、グループ内の個々 のホスト インスタンスでアプリケーションをインストールするには、管理コンソールまたは BTSTask です。 フル インポート プロセスでは、次の操作を実行します。  
+ターゲット環境で BizTalk グループに .msi ファイルから BizTalk アプリケーションをインポートして、グループ内の個々 のホスト インスタンスでアプリケーションをインストールする、MSI のインポート ウィザードで、BizTalk Server 管理コンソールまたは BTSTask を使用することができます。 フル インポート プロセスでは、次の操作を実行します。  
   
 -   アプリケーションのグループ レベルの展開  
   

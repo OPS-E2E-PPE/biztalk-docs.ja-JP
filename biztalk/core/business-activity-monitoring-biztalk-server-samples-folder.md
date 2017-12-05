@@ -16,14 +16,14 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a416836c816cc1952300b667dd679944b7925d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cb13e92f7c4954de540d65f161afab359fe9ce8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="business-activity-monitoring-biztalk-server-samples-folder"></a>ビジネス アクティビティ監視 (BizTalk Server Samples フォルダ)
-Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のソフトウェア開発キット (SDK) には、ビジネス アクティビティ監視 (BAM) のサンプルがいくつか付属しています。 このセクションでは、各 BAM のサンプルをビルドして、サンプル、および予期される結果を実行する方法が示される機能に関する詳細な情報を提供します。  
+Microsoft BizTalk Server には、ソフトウェア開発キット (SDK) のいくつかのビジネス アクティビティ監視 (BAM) サンプルが含まれます。 このセクションでは、各 BAM のサンプルをビルドして、サンプル、および予期される結果を実行する方法が示される機能に関する詳細な情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

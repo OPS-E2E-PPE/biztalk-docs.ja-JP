@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6460091297e34609365989739f58ed1f04204c8e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cf37bd2b4ceacfe38736cadd8343b4259db126e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="callorchestration-biztalk-server-sample"></a>CallOrchestration (BizTalk Server サンプル)
 CallOrchestration サンプルは、1 つの BizTalk オーケストレーションから別のオーケストレーションを呼び出す方法を示すものです。  
@@ -60,7 +60,7 @@ End If
 >  使用方法の相違、**オーケストレーションの呼び出し**図形および**オーケストレーションの開始**図形がオーケストレーションを呼び出すときに返されるまでにネストされているオーケストレーションの呼び出し元が待機続行しています。 後者の場合、呼び出し元のオーケストレーションは別のオーケストレーションを開始した後すぐプロセス フローの次の手順に進む点です。 後者の場合、呼び出されたオーケストレーションは呼び出し元とは独立して、自身のプロセス フローを最後まで実行します。 詳細については、次を参照してください。[オーケストレーションの呼び出し図形を構成する方法](../core/how-to-configure-the-call-orchestration-shape.md)です。 参照してください[オーケストレーションの開始図形を構成する方法](../core/how-to-configure-the-start-orchestration-shape.md)です。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Orchestrations\CallOrchestration\  
+ \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -82,7 +82,7 @@ End If
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Orchestrations\CallOrchestration\  
+     \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -103,7 +103,7 @@ End If
   
 1.  ファイル InputPO.xml を In フォルダにコピーします。  
   
-2.  更新された XML PO ファイルが Out フォルダに作成されることを確認します。 このファイルには元の PO メッセージが含まれます。このメッセージには、前述のように計算後の出荷費用が反映されています。 このファイルの名前の形式が\< *MessageID*> .xml、場所 *\<MessageID >*メッセージを一意に識別する GUID が生成されます。  
+2.  更新された XML PO ファイルが Out フォルダに作成されることを確認します。 このファイルには元の PO メッセージが含まれます。このメッセージには、前述のように計算後の出荷費用が反映されています。 このファイルの名前の形式が\< *MessageID*\>、.xml、  *\<MessageID\>* メッセージを一意に識別する GUID が生成.  
   
 ## <a name="uninstalling-this-sample"></a>このサンプルのアンインストール  
   
@@ -111,9 +111,9 @@ End If
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Orchestrations\CallOrchestration\  
+     \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
   
 2.  Cleanup.bat を実行します。  
   
 ## <a name="see-also"></a>参照  
- [オーケストレーション (BizTalk Server Samples フォルダ)](../core/orchestrations-biztalk-server-samples-folder.md)
+ [オーケストレーション (BizTalk Server サンプル フォルダー)](../core/orchestrations-biztalk-server-samples-folder.md)

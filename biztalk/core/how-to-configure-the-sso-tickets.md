@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef78c47c3da88945573a70e85580c90e05b1d225
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3b19d14a35d42c4a46bf9527a97f5bf749b875f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-sso-tickets"></a>SSO チケットを構成する方法
 MMC スナップインやコマンド ラインを使用して、チケットを許可するかどうか、システムでチケットを検証するかどうかなど、シングル サインオン システム全体のチケットの動作を制御できます。  
@@ -57,9 +57,9 @@ MMC スナップインやコマンド ラインを使用して、チケットを
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – チケット\<はい/いいえの許可 > *\<はい/いいえの検証 >***ここで、 *\<はい/いいえの許可 >*チケットを許可するか、かどうかを示すと*\<検証はい/いいえ >*チケットは、では引き換え後に検証する必要があるかどうかを示します。  
+3.  型**ssomanage – チケット\<はい/いいえの許可\> *\<はい/いいえの検証\>***ここで、 *\<はい/いいえの許可\>* チケットを許可するか、かどうかを示すと*\<検証はい/いいえ\>*チケットは、では引き換え後に検証する必要があるかどうかを示します.  
   
     > [!NOTE]
     >  チケットを許可したり検証したりするかどうかを示すために、yes、no、on、または off を使用できます。 これらの語は大文字と小文字が区別されないため、言語の設定に関係なく使用してください。  

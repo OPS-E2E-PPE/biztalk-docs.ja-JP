@@ -16,11 +16,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3973a5137075732d3c648bb8b0e575dd0d49c57
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 16b97b7c81b36774bcf2eaff53a1a4ff91b6f9e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="methodcall-biztalk-server-sample"></a>MethodCall (BizTalk Server サンプル)
 MethodCall サンプルは、BizTalk Server オーケストレーションから .NET ベースのメソッドを呼び出す方法を示すものです。  
@@ -63,7 +63,7 @@ MethodCall サンプルは、BizTalk Server オーケストレーションから
     ```  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Orchestrations\MethodCall\  
+ \<*パスのサンプル*\>\Orchestrations\MethodCall\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -84,7 +84,7 @@ MethodCall サンプルは、BizTalk Server オーケストレーションから
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Orchestrations\MethodCall  
+     \<*パスのサンプル*\>\Orchestrations\MethodCall  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -105,7 +105,7 @@ MethodCall サンプルは、BizTalk Server オーケストレーションから
   
 1.  ファイル Input.xml を In フォルダにコピーします。  
   
-2.  .xml ファイルが Out フォルダに作成されることを確認します。 このファイルには、要求された加算または減算の計算結果が含まれています。 このファイルの名前の形式が\< *MessageID*> .xml、場所 *\<MessageID >*メッセージを一意に識別する GUID が生成されます。  
+2.  .xml ファイルが Out フォルダに作成されることを確認します。 このファイルには、要求された加算または減算の計算結果が含まれています。 このファイルの名前の形式が\< *MessageID*\>、.xml、  *\<MessageID\>* メッセージを一意に識別する GUID が生成.  
   
 3.  入力ファイルを変更し、別の加算または減算を要求することもできます。  
   
@@ -113,9 +113,9 @@ MethodCall サンプルは、BizTalk Server オーケストレーションから
   
 #### <a name="to-uninstall-the-methodcall-sample"></a>MethodCall サンプルをアンインストールするには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) に\<*サンプル パス*> \Orchestrations\MethodCall\\です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) に\<*サンプル パス*\>\Orchestrations\MethodCall\\です。  
   
 2.  Cleanup.bat を実行します。  
   
 ## <a name="see-also"></a>参照  
- [オーケストレーション (BizTalk Server Samples フォルダ)](../core/orchestrations-biztalk-server-samples-folder.md)
+ [オーケストレーション (BizTalk Server サンプル フォルダー)](../core/orchestrations-biztalk-server-samples-folder.md)

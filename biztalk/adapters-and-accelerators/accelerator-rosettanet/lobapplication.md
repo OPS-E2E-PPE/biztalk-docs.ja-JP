@@ -19,25 +19,25 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed2dc02911ad8ce78e3657c78ad1150d96b4f4f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af11e69c90c9d211e36e706710c1d1de44a72399
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lobapplication"></a>LOBApplication
 実際の基幹業務 (LOB) デスクトップ プログラムをシミュレートして、アクション メッセージまたは応答メッセージを取引先に送信するには、LOBApplication ユーティリティを使用します。  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]にサンプル メッセージを提供、 \<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobapplication\sampleinstances フォルダーです。  
+ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]にサンプル メッセージを提供、 \<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>RosettaNet\SDK\LOBApplication\ のアクセラレータSampleInstances フォルダーです。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobapplication  
+ \<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobapplication  
   
 ## <a name="running-lobapplication"></a>LOBApplication の実行  
   
 #### <a name="to-run-lobapplication"></a>LOBApplication を実行するには  
   
-1.  Windows エクスプローラで、移動\<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\\です。  
+1.  Windows エクスプローラで、移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\です。  
   
 2.  ダブルクリックして**LOBApplication.exe**、ENTER キーを押します。  
   

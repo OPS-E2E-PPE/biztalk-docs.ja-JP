@@ -17,11 +17,11 @@ caps.latest.revision: "47"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c9fc06d9c735a59fe59499bf9ed0ac62aab0408
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: 9740bb1c73dd5f416dda3c2f29bb15fbc7241a51
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-cluster-the-master-secret-server"></a>マスター シークレット サーバーをクラスター化する方法
 マスター シークレット サーバーのエンタープライズ シングル サインオン (SSO) サービスを正常にクラスター化するには、このセクションに記載されている指示に従うことをお勧めします。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/28/2017
   
     6.  SSO 関連管理者ロールに関連付けられたグループとして、先ほど作成したドメイン SSO 関連管理者グループを入力します。  
   
-8.  選択、**エンタープライズ SSO シークレットのバックアップ**左側のペインからオプションを選択し、エンタープライズ SSO シークレットをバックアップするための適切なパラメーターを提供します。 既定では、エンタープライズ SSO シークレットがバックアップされる*\<ドライブ >*: \program files \common files \enterprise シングル サインオン\\*SSOxxxx*.bak です。  
+8.  選択、**エンタープライズ SSO シークレットのバックアップ**左側のペインからオプションを選択し、エンタープライズ SSO シークレットをバックアップするための適切なパラメーターを提供します。 既定では、エンタープライズ SSO シークレットがバックアップされる*\<ドライブ\>*: \program files \common files \enterprise シングル サインオン\\*SSOxxxx*.bak です。  
   
 9. クリックして、**構成の適用**概要を確認します。  
   
@@ -133,7 +133,7 @@ ms.lasthandoff: 09/28/2017
   
     2.  ファイルを .xml ファイルとして保存します。 たとえば、SSOCLUSTER.xml という名前で保存します。  
   
-    3.  コマンド プロンプトで、エンタープライズ SSO のインストール フォルダーに移動します。 インストール フォルダーは、既定では、 *\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+    3.  コマンド プロンプトで、エンタープライズ SSO のインストール フォルダーに移動します。 インストール フォルダーは、既定では、 *\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
     4.  コマンド プロンプトで次のコマンドを入力して、データベース内のマスター シークレット サーバー名を更新します。  
   
@@ -191,7 +191,7 @@ ms.lasthandoff: 09/28/2017
     > [!NOTE]
     >  この手順を省略すると、マスター シークレットの復元に失敗する場合があります。  
   
-4.  最初のノードのマスター シークレットのバックアップ ファイルを、2 番目のノードの \Enterprise Single Sign-On インストール フォルダーにコピーします。 インストール フォルダーは、既定では、 *\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+4.  最初のノードのマスター シークレットのバックアップ ファイルを、2 番目のノードの \Enterprise Single Sign-On インストール フォルダーにコピーします。 インストール フォルダーは、既定では、 *\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
 5.  2 番目のノードにログオンし、コマンド プロンプトで、エンタープライズ SSO のインストール フォルダーに移動します。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b29e5b275bdf5645717298f82b27aca7db36e034
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d2f6871ca730e741ca4877907593931fc362a4d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-receive-location-and-send-port-programmatically"></a>受信場所を作成し、プログラムでの送信ポート
 構成、Wcf-basichttp 受信場所と送信ポートをプログラムでします。 BizTalk 管理コンソールを使用するのを参照してください。 [、Wcf-basichttp アダプタ](../core/wcf-basichttp-adapter.md)です。 
@@ -35,11 +35,11 @@ string server = System.Environment.MachineName;
 string database = "BizTalkMgmtDb";  
 string connectionString = string.Format("Server={0};Database={1};Integrated Security=true", server, database);  
 string transportConfigData = @"<CustomProps>  
-  \<InboundBodyLocation vt=""8"">UseBodyElement</InboundBodyLocation>  
-  \<UseSSO vt=""11"">0</UseSSO>  
-  \<Identity vt=""8"">  
+  <InboundBodyLocation vt=""8"">UseBodyElement</InboundBodyLocation>  
+  <UseSSO vt=""11"">0</UseSSO>  
+  <Identity vt=""8"">  
     <identity>  
-    \<userPrincipalName value=""username@contoso.com"" />  
+    <userPrincipalName value=""username@contoso.com"" />  
     </identity>  
   </Identity>  
 </CustomProps>";  
@@ -84,7 +84,7 @@ explorer.SaveChanges();
   <MessageClientCredentialType vt="8">UserName</MessageClientCredentialType>  
   <InboundBodyPathExpression vt="8" />  
   <SendTimeout vt="8">00:01:00</SendTimeout>  
-  <OutboundXmlTemplate vt="8">\<bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/></OutboundXmlTemplate>  
+  <OutboundXmlTemplate vt="8"><bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/></OutboundXmlTemplate>  
   <OpenTimeout vt="8">00:01:00</OpenTimeout>  
   <Identity vt="8">  
     <identity>  
@@ -143,10 +143,10 @@ string server = System.Environment.MachineName;
 string database = "BizTalkMgmtDb";  
 string connectionString = string.Format("Server={0};Database={1};Integrated Security=true", server, database);  
 string transportConfigData = @"<CustomProps>  
-                                 \<StaticAction vt=""8"">http://www.northwindtraders.com/Service/Operation</StaticAction>  
-                                 \<MessageEncoding vt=""8"">Text</MessageEncoding>  
-                                 \<TextEncoding vt=""8"">utf-8</TextEncoding>  
-                                 \<OpenTimeout vt=""8"">00:01:00</OpenTimeout>  
+                                 <StaticAction vt=""8"">http://www.northwindtraders.com/Service/Operation</StaticAction>  
+                                 <MessageEncoding vt=""8"">Text</MessageEncoding>  
+                                 <TextEncoding vt=""8"">utf-8</TextEncoding>  
+                                 <OpenTimeout vt=""8"">00:01:00</OpenTimeout>  
                                </CustomProps>";  
 //requires project reference to \Program Files\Microsoft BizTalk Server 2009\Developer Tools\Microsoft.BizTalk.ExplorerOM.dll  
 BtsCatalogExplorer explorer = new Microsoft.BizTalk.ExplorerOM.BtsCatalogExplorer();  
@@ -178,7 +178,7 @@ explorer.SaveChanges();
   <MessageClientCredentialType vt="8">UserName</MessageClientCredentialType>  
   <InboundBodyPathExpression vt="8" />  
   <SendTimeout vt="8">00:01:00</SendTimeout>  
-  <OutboundXmlTemplate vt="8">\<bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/></OutboundXmlTemplate>  
+  <OutboundXmlTemplate vt="8"><bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/></OutboundXmlTemplate>  
   <OpenTimeout vt="8">00:01:00</OpenTimeout>  
   <AlgorithmSuite vt="8">Basic256</AlgorithmSuite>  
   <SecurityMode vt="8">None</SecurityMode>  
@@ -221,7 +221,7 @@ explorer.SaveChanges();
 |**InboundBodyPathExpression**|文字列<br /><br /> 使用する方法についての詳細、 **InboundBodyPathExpression**プロパティを参照してください[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。|BizTalk メッセージのボディ部を作成するために使用する受信メッセージの特定の部分を示すボディ パス式を指定します。 このボディ パス式が、SOAP の直接の子要素に対して評価されます**本文**受信メッセージのノードです。 このボディ パス式で複数のノードが返される場合は、最初のノードのみが BizTalk メッセージのボディ部に対して選択されます。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値は空の文字列です。|  
 |**OutboundXMLTemplate**|文字列<br /><br /> 使用する方法についての詳細、 **OutboundXMLTemplate**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のコンテンツを XML 形式のテンプレートを指定**本文**送信メッセージの要素。 このプロパティは必要な場合、 **OutboundBodyLocation**プロパティに設定されている**UseTemplate**です。<br /><br /> 既定値は空の文字列です。|  
 |**InboundNodeEncoding**|Enum<br /><br /> -   **Base64** -Base64 エンコードします。<br />-   **16 進**: 16 進エンコードします。<br />-   **文字列**: テキスト エンコード - utf-8<br />-   **XML** -WCF アダプターは、ボディ パス式で選択されたノードの外部の XML で、BizTalk メッセージ本文を作成する**InboundBodyPathExpression**です。|Wcf-basichttp 送信アダプターがで指定されたボディ パス式で識別されるノードのデコードに使用するエンコードの種類を指定**InboundBodyPathExpression**です。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値: **XML**|  
-|**StaticAction**|文字列|指定して、 **SOAPAction**送信メッセージの HTTP ヘッダー フィールド。 このプロパティは、メッセージ コンテキスト プロパティからも設定できます**WCF です。アクション**パイプラインまたはオーケストレーションでします。 2 つの異なる方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 シングル アクション形式では、このプロパティを設定するかどうかは、http://contoso.com/Svc/Op1 など —、 **SOAPAction**ヘッダーは常に送信メッセージの設定をこのプロパティで指定された値にします。<br /><br /> 送信アクション マッピング形式でこのプロパティを設定する場合**SOAPAction**ヘッダーはによって決定されます、 **BTS です。操作**コンテキスト プロパティです。 たとえば、このプロパティは、次の XML 形式に設定されている場合、 **BTS です。操作**プロパティを Op1 に設定は、WCF 送信アダプタでは、http://contoso.com/Svc/Op1 を使用、送信を**SOAPAction**ヘッダー。<br /><br /> \<BtsActionMapping ><br /><br /> \<操作名"Op1"アクションを = ="http://contoso.com/Svc/Op1"/><br /><br /> \<操作名"Op2"アクションを = ="http://contoso.com/Svc/Op2"/><br /><br /> \</BtsActionMapping ><br /><br /> 送信メッセージには、オーケストレーション ポートから場合、オーケストレーション インスタンスは動的に設定、 **BTS です。操作**ポートの操作の名前を持つプロパティです。 コンテンツ ベースのルーティングと、送信メッセージのルーティングされる場合は、設定、 **BTS です。操作**パイプライン コンポーネントのプロパティです。<br /><br /> 既定値は空の文字列です。|  
+|**StaticAction**|文字列|指定して、 **SOAPAction**送信メッセージの HTTP ヘッダー フィールド。 このプロパティは、メッセージ コンテキスト プロパティからも設定できます**WCF です。アクション**パイプラインまたはオーケストレーションでします。 2 つの異なる方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 シングル アクション形式では、このプロパティを設定するかどうかは、http://contoso.com/Svc/Op1 など —、 **SOAPAction**ヘッダーは常に送信メッセージの設定をこのプロパティで指定された値にします。<br /><br /> 送信アクション マッピング形式でこのプロパティを設定する場合**SOAPAction**ヘッダーはによって決定されます、 **BTS です。操作**コンテキスト プロパティです。 たとえば、このプロパティは、次の XML 形式に設定されている場合、 **BTS です。操作**プロパティを Op1 に設定は、WCF 送信アダプタでは、http://contoso.com/Svc/Op1 を使用、送信を**SOAPAction**ヘッダー。<br /><br /> \<BtsActionMapping\><br /><br /> \<操作名"Op1"アクションを = ="http://contoso.com/Svc/Op1"/\><br /><br /> \<操作名"Op2"アクションを = ="http://contoso.com/Svc/Op2"/\><br /><br /> \</BtsActionMapping\><br /><br /> 送信メッセージには、オーケストレーション ポートから場合、オーケストレーション インスタンスは動的に設定、 **BTS です。操作**ポートの操作の名前を持つプロパティです。 コンテンツ ベースのルーティングと、送信メッセージのルーティングされる場合は、設定、 **BTS です。操作**パイプライン コンポーネントのプロパティです。<br /><br /> 既定値は空の文字列です。|  
 |**MaxReceivedMessageSize**|Integer|有線ネットワーク上で受信できる、ヘッダーを含むメッセージの最大サイズをバイト単位で指定します。 メッセージのサイズは、各メッセージに割り当てられているメモリの量に制限されます。 このプロパティを使用して、サービス拒否 (DoS) 攻撃にさらされる危険性を制限できます。<br /><br /> Wcf-basichttp アダプター活用して、 [BasicHttpBinding](http://go.microsoft.com/fwlink/?LinkId=81086)クラス、エンドポイントと通信するために、バッファリングされた送信モードにします。 バッファリングされたトランスポート モードの場合、 [BasicHttpBinding.MaxBufferSize](http://go.microsoft.com/fwlink/?LinkId=80659)プロパティは常にこのプロパティの値とします。<br /><br /> 既定値: 65,536|  
 |**MessageEncoding**|Enum<br /><br /> -   **テキスト**-テキスト メッセージ エンコーダーを使用します。<br />-   **Mtom** -メッセージ Transmission Organization Mechanism 1.0 (MTOM) エンコーダーを使用します。|SOAP メッセージをエンコードするために使用されるエンコーダーを指定します。<br /><br /> 既定値:**テキスト**|  
 |**TextEncoding**|Enum<br /><br /> -   **unicodeFFF** -Unicode BigEndian エンコーディングします。<br />-   **utf-16** : 16 ビット エンコーディングします。<br />-   **utf-8** : 8 ビット エンコード|バインディングでメッセージを出力するために使用するエンコーディングを設定する文字を指定するときに、 **MessageEncoding**プロパティに設定されている**テキスト**です。<br /><br /> 既定値: **utf-8**|  
@@ -233,7 +233,7 @@ explorer.SaveChanges();
 |**PropagateFaultMessage**|ブール値<br /><br /> -   **True**にサブスクライブしているアプリケーションへの送信処理に失敗したメッセージのルーティング (別の受信ポートやオーケストレーション スケジュールなど)。<br />-   **False** -一時停止に失敗したメッセージおよび否定受信確認応答 (NACK) を生成します。|送信処理に失敗したメッセージをルーティングまたは中断するかどうかを指定します。<br /><br /> このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値:**は True。**|  
   
 ## <a name="see-also"></a>参照  
- [WCF アダプタは?](../core/what-are-the-wcf-adapters.md)  
+ [WCF アダプターについて](../core/what-are-the-wcf-adapters.md)  
  [発行の WCF サービスを分離 WCF 受信アダプター](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)   
  [構成の IIS 分離 wcf 受信アダプター](../core/configuring-iis-for-the-isolated-wcf-receive-adapters.md)   
  [BizTalk ホストとホスト インスタンスを管理します。](../core/managing-biztalk-hosts-and-host-instances.md)   
@@ -241,4 +241,4 @@ explorer.SaveChanges();
  [WCF アダプターの証明書のインストール](../core/installing-certificates-for-the-wcf-adapters.md)   
  [WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)    
   [WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)   
- [WCF アダプター コンテキスト プロパティを使用して動的送信ポートの構成](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)
+ [WCF アダプター コンテキスト プロパティによる動的送信ポートの構成](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)

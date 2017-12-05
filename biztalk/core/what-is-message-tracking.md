@@ -23,11 +23,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c898c2a30d883da4507957c62a0acb75e56a71b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d76a4bd4133906a7949fac9e63816168506f412
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-is-message-tracking"></a>メッセージ追跡について
 メッセージとは、通常は、実行中のビジネス プロセスやアプリケーション間で交換されるデータの電子的なインスタンスのことです。 メッセージ インスタンスは、メッセージ本文、メッセージ プロパティ、およびメタデータで構成されています。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
  メッセージ本文を追跡すると、送受信されたメッセージの記録が提供されます。 サービス インスタンスの処理が完了したメッセージを保存するには、メッセージ本文の追跡を有効にする必要があります。 追跡オプションを設定してから、メッセージを表示できるようになるまでに数分かかることがあります。  
   
 > [!IMPORTANT]
->  すべてのメッセージ ボックス データベースに対して、SQL Server エージェント サービスが実行されている必要があります。 Trackedmessages_copy _\<MessageBoxName > ジョブにより、メッセージ本文の追跡クエリおよび WMI を使用できます。 メッセージ本文を効率的にコピーするには、メッセージ ボックス データベースにし、trackedmessages_copy _ により、BizTalk 追跡 (BizTalkDTADb) データベースを定期的にコピーされる\<MessageBoxName > ジョブです。 SQL Server エージェント サービスを実行していることも、アーカイブおよび削除のプロセスが正しく動作するための前提条件です。  
+>  すべてのメッセージ ボックス データベースに対して、SQL Server エージェント サービスが実行されている必要があります。 Trackedmessages_copy _\<MessageBoxName\>ジョブにより、メッセージ本文の追跡クエリおよび WMI を使用できます。 メッセージ本文を効率的にコピーするには、メッセージ ボックス データベースにし、trackedmessages_copy _ により、BizTalk 追跡 (BizTalkDTADb) データベースを定期的にコピーされる\<MessageBoxName\>ジョブです。 SQL Server エージェント サービスを実行していることも、アーカイブおよび削除のプロセスが正しく動作するための前提条件です。  
   
  追跡メッセージを使用して、確認メッセージを提供したり、トラブルシューティングを行ったり、トランザクションの履歴のデータ マイニングを行ったりすることができます。 メッセージ本文は、ポート、パイプライン、およびオーケストレーションの入出力として追跡できます。 これらのメッセージは、BizTalk Server 管理コンソール、Operations オブジェクト モデル (OM) (推奨)、または Windows Management Instrumentation (WMI) アプリケーション プログラミング インターフェイス (API) を使用して回復できます。  
   

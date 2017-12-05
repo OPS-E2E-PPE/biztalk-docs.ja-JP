@@ -23,11 +23,11 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abf8944c3f55422189c0866608a3fd412dafe21d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be8d7e33cefd2272490bd2f01243ff03b0e7009a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="partyresolution-biztalk-server-sample"></a>PartyResolution (BizTalk Server サンプル)
 PartyResolution サンプルは、パーティの解決で BizTalk オーケストレーションを使用して、2 つのうちいずれかの受信側にメッセージをルーティングする方法を示すものです。  
@@ -125,7 +125,7 @@ PartyResolution サンプルは、パーティの解決で BizTalk オーケス�
 -   Shipper1Process.odx および Shipper2Process.odx は、SupplierProcess.odx から出荷指令と出荷通知を受信し、SupplierProcess.odx に応答を返すようビルドされています。 両方の出荷業者側のオーケストレーションで、昇格させたプロパティ PONo に基づく種類の関連付けが使用されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Orchestrations\PartyResolution\  
+ *\<パスのサンプル\>*\Orchestrations\PartyResolution\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -311,4 +311,4 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
  [パーティの解決パイプライン コンポーネント](../core/party-resolution-pipeline-component.md)   
  [MIME/SMIME エンコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-encoder-pipeline-component.md)   
  [MIME/SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)   
- [オーケストレーション (BizTalk Server Samples フォルダ)](../core/orchestrations-biztalk-server-samples-folder.md)
+ [オーケストレーション (BizTalk Server サンプル フォルダー)](../core/orchestrations-biztalk-server-samples-folder.md)

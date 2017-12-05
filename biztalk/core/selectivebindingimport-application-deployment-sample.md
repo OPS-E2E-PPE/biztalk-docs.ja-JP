@@ -22,11 +22,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fff8a48a05f310db2d11eeddd5a0082132bbe193
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88e6a2aa02decf1e4ed9c4a9838077be0c3b97b2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="selectivebindingimport-application-deployment-sample"></a>SelectiveBindingImport (アプリケーションの展開サンプル)
 このトピックでは、SelectiveBindingImport サンプルの使用方法について説明します。 このサンプル スクリプトを使用すると、1 つのアプリケーションをさまざまな展開先環境にインポートするときに、異なるバインドをそのアプリケーションに適用できます。 この方法は、ネットワーク共有に格納されているバインド ファイルからバインドをインポートするときに使用できます。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
  このサンプルは、BizTalk アプリケーションの .msi ファイルに含まれている処理後のスクリプトを使用して、ネットワーク共有からバインド ファイルを選択的にインポートする方法を示しています。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- 次のサンプル フォルダーとファイルを検索できます*\<サンプル パス >*\Application Deployment\SelectiveBindingImport:  
+ 次のサンプル フォルダーとファイルを検索できます*\<サンプル パス\>*\Application Deployment\SelectiveBindingImport:  
   
 -   Develop (フォルダー)  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-run-the-sample"></a>サンプルを実行するには  
   
-1.  実行**から Build.Bat、 *\<サンプル パス >*\Application Deployment\CreateApp**ディレクトリ。 これには、次のファイルが作成、 *\<サンプル パス >*\Application Deployment\CreateApp\Dlls フォルダー: Schemas.dll、Maps.dll、および Orchestrations.dll です。  
+1.  実行**から Build.Bat、 *\<サンプル パス\>*\Application Deployment\CreateApp**ディレクトリ。 これには、次のファイルが作成、 *\<サンプル パス\>*\Application Deployment\CreateApp\Dlls フォルダー: Schemas.dll、Maps.dll、および Orchestrations.dll です。  
   
 2.  **アプリケーションを作成します。** BizTalk Server 管理コンソールには、アプリケーションを」の説明に従って作成[アプリケーションを作成する方法](../core/how-to-create-an-application.md)です。  
   

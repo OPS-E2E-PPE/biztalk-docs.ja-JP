@@ -19,11 +19,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b76cead956ade8d16c5cbd26c55f94eabe15e1fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 13b0f446dab1d597e9dd2435e2bb5f40b3fd37ce
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bpel-import-biztalk-server-sample"></a>BPEL インポート (BizTalk Server サンプル)
 BPEL インポート サンプルは、BPEL (Business Process Execution Language) 処理の記述ファイルと関連アイテムを利用してオーケストレーションを作成する方法を示すものです。  
@@ -90,7 +90,7 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
   
 6.  **選択 BPEL、WSDL、および XSD ファイル**] ページで [**参照**です。  
   
-7.  すべてのファイルを選択、 \<*サンプル パス*> \Orchestrations\BPELImport\BPELSource フォルダー をクリックして**開く**、順にクリック**次へ**です。  
+7.  すべてのファイルを選択、 \<*サンプル パス*\>\Orchestrations\BPELImport\BPELSource フォルダーで、をクリックして**開く**、順にクリック**次へ**.  
   
     > [!NOTE]
     >  このステップでは、ビジネス プロセスを記述する BPEL ファイルと WSDL ファイル、およびビジネス ドキュメント スキーマを表す XSD ファイルを選択します。  
@@ -107,13 +107,13 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
   
 12. ソリューション エクスプ ローラーで右クリックし、 **BPELShipping**プロジェクトをクリックして**プロパティ**です。  
   
-13. **Common properties \assembly**、アセンブリ キー ファイルを選択して**BPELShipping.snk**ステップ 11 で作成され、をクリックして**OK**です。  
+13.  **Common properties \assembly**、アセンブリ キー ファイルを選択して**BPELShipping.snk**ステップ 11 で作成され、をクリックして**OK**です。  
   
 14. ソリューション エクスプローラーで、すべての .xsd ファイルを選択して削除します。  
   
 15. ソリューション エクスプ ローラーで、次のように選択します。**参照の追加**、および、**プロジェクト** タブで、 をクリック**参照**です。  
   
-16. 選択**ShippingSchemas.dll**の場所から\<*サンプル パス*> \Orchestrations\BPELImport\Solution\ShipperProcess\ShippingSchemas\bin\Development、をクリックして**[Ok]**です。  
+16. 選択**ShippingSchemas.dll**の場所から\<*サンプル パス*\>\Orchestrations\BPELImport\Solution\ShipperProcess\ShippingSchemas\bin\Development、およびをクリックして**OK**です。  
   
     > [!NOTE]
     >  このビルド方法については、「ShipperProcess アプリケーションをビルドおよび初期化するには」で説明します。  
@@ -156,7 +156,7 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
   
 27. ソリューション エクスプ ローラーで右クリックし、 **BPELShipping**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。  
   
-28. すべての .btm ファイル位置から選択する\<*サンプル パス*> \Orchestrations\BPELImport\Solution\BPELShipping\BPELShipping です。  
+28. すべての .btm ファイル位置から選択する\<*サンプル パス*\>\Orchestrations\BPELImport\Solution\BPELShipping\BPELShipping です。  
   
 29. オーケストレーションの種類 ウィンドウで、**メッセージの割り当て**ConstructMessage1 内の名前付きの MessageAssignment_1 図形し、それを削除します。  
   
@@ -229,10 +229,10 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
   
 50. ソリューションを展開する。  
   
-51. 場所を参照\<*サンプル パス*> \Orchestrations\BPELImport\Solution\BPELShipping およびダブルクリック**BindAndStartOnly.bat**をバインドし、オーケストレーションを開始します。  
+51. 場所を参照\<*サンプル パス*\>\Orchestrations\BPELImport\Solution\BPELShipping およびダブルクリック**BindAndStartOnly.bat**をバインドして開始しますオーケストレーションです。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Orchestrations\BPELImport  
+ *\<パスのサンプル\>*\Orchestrations\BPELImport  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -277,7 +277,7 @@ olution\BPELShipping\BPELShipping\Invoice2Ack.btm|請求書と請求書の受信
   
 2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) 次のフォルダーに。  
   
-     *\<サンプル パス >*\Orchestrations\BPELImport\Solution\ShipperProcess  
+     *\<パスのサンプル\>*\Orchestrations\BPELImport\Solution\ShipperProcess  
   
 3.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -312,7 +312,7 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
      [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) 次のフォルダーに。  
   
-     *\<サンプル パス >*\Orchestrations\BPELImport\Solution\BPELShipping  
+     *\<パスのサンプル\>*\Orchestrations\BPELImport\Solution\BPELShipping  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -330,21 +330,21 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
 #### <a name="to-run-the-bpel-import-sample"></a>BPEL インポート サンプルを実行するには  
   
-1.  コピー、 **Order.xml**ファイルから、 *\<サンプル パス >*\Orchestrations\BPELImport\Solution フォルダーを\<*サンプル パス >*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder フォルダーです。  
+1.  コピー、 **Order.xml**ファイルから、 *\<サンプル パス\>*\Orchestrations\BPELImport\Solution フォルダーを\<*サンプル パス\>*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder フォルダーです。  
   
-2.  顧客の注文処理システムから注文としてオーケストレーションがこのファイルを取得 BPELShipping が、出荷プロセス実行され、いずれかのファイルを生成では、それぞれ、 \<*サンプル パス*> \Orchestrations\BPELImport\Solution\Ports\SendOrder フォルダーおよび\<*サンプル パス*> \Orchestrations\BPELImport\Solution\Ports\FinalConfirmation フォルダーです。 これらのファイルの名前の形式が\< *MessageID*> .xml、場所 *\<MessageID >*メッセージを一意に識別する GUID が生成されます。  
+2.  顧客の注文処理システムから注文としてオーケストレーションがこのファイルを取得 BPELShipping が、出荷プロセス実行され、いずれかのファイルを生成では、それぞれ、 \<*サンプル パス*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder フォルダーおよび\<*サンプル パス*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation フォルダーです。 これらのファイルの名前の形式が\< *MessageID*\>、.xml、  *\<MessageID\>*  GUID 生成を一意に識別するには、メッセージ。  
   
 ## <a name="uninstalling-this-sample"></a>このサンプルのアンインストール  
   
 #### <a name="to-uninstall-the-bpel-import-sample"></a>BPEL インポート サンプルをアンインストールするには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) に\<*サンプル パス*> \Orchestrations\BPELImport\BPELShipping です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) に\<*サンプル パス*\>\Orchestrations\BPELImport\BPELShipping です。  
   
 2.  Cleanup.bat を実行します。  
   
-3.  参照\<*パスのサンプル*> \Orchestrations\BPELImport\ShipperProcess です。  
+3.  参照\<*パスのサンプル*\>\Orchestrations\BPELImport\ShipperProcess です。  
   
 4.  Cleanup.bat を実行します。  
   
 ## <a name="see-also"></a>参照  
- [オーケストレーション (BizTalk Server Samples フォルダ)](../core/orchestrations-biztalk-server-samples-folder.md)
+ [オーケストレーション (BizTalk Server サンプル フォルダー)](../core/orchestrations-biztalk-server-samples-folder.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6364716793e3638d157e1441e369133dc79bda95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 029c48c1e6066d09d43da51b2bb1f6786a516f54
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-stored-procedures-functions-and-plsql-apis"></a>ストアド プロシージャ、関数、および PL/SQL Api のメッセージ スキーマ
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]サーフェス基になる Oracle データベースの操作としてストアド プロシージャ、関数、および PL/SQL Api (ストアド プロシージャ、およびパッケージ内の関数)。 このセクションでは、メッセージの構造とストアド プロシージャ、関数、および PL/SQL Api の呼び出しに使用する操作について説明します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 |ストアド プロシージャ要求|`<[SP_NAME] xmlns="[VERSION]/Procedures/[SCHEMA]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]>`|メッセージの本文に Oracle IN パラメーターおよび IN OUT パラメーターをサポートしています|  
 |ストアド プロシージャの応答|`<[SP_NAME]Response xmlns="[VERSION]/Procedures/[SCHEMA]">   <[PRM1_NAME]>value1<[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]Response>`|メッセージの本文に Oracle OUT パラメーターとで OUT パラメーターをサポートしています|  
 |関数の要求|`<[FN_NAME] xmlns="[VERSION]/Functions/[SCHEMA] ">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[FN_NAME]>`|メッセージの本文に Oracle IN パラメーターおよび IN OUT パラメーターをサポートしています|  
-|関数の応答|`<[FN_NAME]Response xmlns="[VERSION]/Functions/[SCHEMA]">   <[FN_NAME]Result>return_value</[FN_NAME]Result>   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   …    </[FN_NAME]Response>`|メッセージの本文に Oracle OUT パラメーターとで OUT パラメーターをサポートしています<br /><br /> 関数の戻り値が返されます、 \<[FN_NAME] 結果 > 要素。 これは、応答メッセージの最初の要素です。 すべてのパラメーターの前になります。|  
+|関数の応答|`<[FN_NAME]Response xmlns="[VERSION]/Functions/[SCHEMA]">   <[FN_NAME]Result>return_value</[FN_NAME]Result>   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   …    </[FN_NAME]Response>`|メッセージの本文に Oracle OUT パラメーターとで OUT パラメーターをサポートしています<br /><br /> 関数の戻り値が返されます、 \<[FN_NAME] 結果\>要素。 これは、応答メッセージの最初の要素です。 すべてのパラメーターの前になります。|  
 |PL/SQL API 要求|`<[SP_NAME] xmlns="[VERSION]/PackageApis/[SCHEMA]/[PACKAGE_NAME/[SP_NAME]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]>`|関数またはストアド プロシージャと同じ|  
 |パッケージ化されたプロシージャまたは関数の応答|`<[SP_NAME]Response xmlns="[VERSION]/PackageApis/[SCHEMA]/[PACKAGE_NAME]/[SP_NAME]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]Response>`|関数またはストアド プロシージャと同じ|  
   
@@ -100,4 +100,4 @@ Stored Procedure Overload 2:
  [オーバー ロード]、オーバー ロードのパラメーターを = です。 使用可能な値は overload1、overload2、およびなどです。  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter for Oracle E-business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)
+ [BizTalk Adapter for Oracle E-Business Suite 用のメッセージとメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)

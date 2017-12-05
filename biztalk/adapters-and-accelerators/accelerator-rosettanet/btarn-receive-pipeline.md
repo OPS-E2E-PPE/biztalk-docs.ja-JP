@@ -22,11 +22,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80d7d5951b40b5c76b533e6425ee4d898b41c6cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db4bc69348cfb99b5e7cebb07c65e05a0513cd0e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="btarn-receive-pipeline"></a>BTARN 受信パイプライン
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet Implementation Framework (RNIF) メッセージの受信、RNIFReceive パイプライン (RNIFReceive.btp) を実行します。 受信パイプラインには、以下のコンポーネントが含まれます。  
@@ -45,16 +45,16 @@ ms.lasthandoff: 09/20/2017
  このコンポーネントは、受信メッセージを MessageStorageIn テーブルに保存します。 このコンポーネントは、RNIF 規格に必要な否認不可処理を実行します。  
   
 ## <a name="rnmimedecoder"></a>RNMimeDecoder  
- このコンポーネントは、ネイティブの [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] MIME プリプロセッサ/デコーダ をベースにしています。 RNMimeDecoder は、RNIF 処理のための以下の機能を備えています。  
+ このコンポーネントは、上のネイティブ BizTalk Server MIME プリプロセッサ/デコーダーに基づいています。 RNMimeDecoder は、RNIF 処理のための以下の機能を備えています。  
   
 -   RNIF 2.01 の場合、Service Content と添付ファイル (存在する場合) を暗号化解除します。  
   
 -   RNIF 1.1 の場合、ペイロードの末尾にある 8 バイト ヘッダーとデタッチされた署名ヘッダーを処理します。  
   
- ネイティブの [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] プリプロセッサ/デコーダの詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「MIME/SMIME デコーダ パイプライン コンポーネント」を参照してください。  
+ 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プリプロセッサ/デコーダー、BizTalk Server ヘルプの「MIME/SMIME デコーダー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="rndasm"></a>RNDAsm  
- このコンポーネントは、ネイティブの [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] XML 逆アセンブラをベースにしています。 RNDAsm は、RNIF 処理のための以下の機能を備えています。  
+ このコンポーネントは、ネイティブの BizTalk Server XML 逆アセンブラーに基づいています。 RNDAsm は、RNIF 処理のための以下の機能を備えています。  
   
 -   受信ドキュメントに DOCTYPE ヘッダーがある場合、このコンポーネントはヘッダーから名前空間を生成し、受信ドキュメントのすべてのノードを名前空間に移動します。  
   
@@ -64,16 +64,16 @@ ms.lasthandoff: 09/20/2017
   
 -   メッセージ プロパティを昇格します。  
   
- ネイティブの [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 逆アセンブラの詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプ の「XML 逆アセンブル パイプライン コンポーネント」を参照してください。  
+ 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]逆アセンブラー、BizTalk Server ヘルプの「XML 逆アセンブラー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="rnpartyres"></a>RNPartyRes  
- このコンポーネントは、ネイティブの [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] Party Resolution コンポーネントをベースにしています。 RNPartyRes は、RNIF 処理のための以下の機能を備えています。  
+ このコンポーネントは、ネイティブの BizTalk Server パーティの解決コンポーネントに基づいています。 RNPartyRes は、RNIF 処理のための以下の機能を備えています。  
   
 -   着信メッセージが BizTalk パーティに対して署名されている場合は、送信者の証明書をマップします。 着信メッセージに署名がなく、取引先アグリーメントでそれが許可されている場合、このコンポーネントは RNIF 2.01 については Delivery ヘッダーから、RNIF 1.1 については Service ヘッダーから送信者のパーティを取得します。  
   
 -   送信者が存在し、送信者がホーム組織との取引先アグリーメントを持っているかどうかを検証します。  
   
- ネイティブの [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Party Resolution コンポーネントの詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプ の「パーティの解決パイプライン コンポーネント」を参照してください。  
+ 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]party resolution コンポーネント、BizTalk Server ヘルプの「パーティの解決パイプライン コンポーネント」を参照してください。  
   
 ## <a name="messageupdater"></a>MessageUpdater  
  このコンポーネントは、RNIF 処理のための以下の機能を備えています。  

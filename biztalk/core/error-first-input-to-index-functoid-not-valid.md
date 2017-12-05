@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66234a017cc25baeb109170c037fd651a9341faa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 163de330945cc085648188dffcb75821c11ec5d6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---first-input-to-index-functoid-not-valid"></a>エラー - 有効でないインデックス Functoid への最初の入力
 **エラー コード**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **ユーザーの操作**  
   
- 間でドラッグして、適切な入力リンクを作成、**フィールド**ループ内のノード**レコード**、送信元スキーマと、指定されたノード**インデックス**functoid です。 開く必要があります、**構成\<Functoid > Functoid**ダイアログ ボックスで、指定された選択**インデックス**functoid、省略記号ボタンをクリックし、(**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]新しく作成したリンクがへの最初の入力パラメーターであることを確認するために [プロパティ] ウィンドウ**インデックス**functoid です。
+ 間でドラッグして、適切な入力リンクを作成、**フィールド**ループ内のノード**レコード**、送信元スキーマと、指定されたノード**インデックス**functoid です。 開く必要があります、**構成\<Functoid\> Functoid**ダイアログ ボックスで、指定された選択**インデックス**functoid、省略記号ボタンをクリックし、(**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]新しく作成したリンクがへの最初の入力パラメーターであることを確認するために [プロパティ] ウィンドウ**インデックス**functoid です。

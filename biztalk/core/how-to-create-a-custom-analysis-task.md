@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f910dd6bbe95579e0c2be8f3957333d6e78d7938
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3566e40deaa05886ead701e1871634cf6fb94e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-a-custom-analysis-task"></a>カスタム分析タスクを作成する方法
 BAM データを処理するためのカスタム DTS タスクを作成する最も簡単な方法は、BAM で自動生成されるパッケージを基に作成を開始して、すべてのデータ処理を必要に応じて置き換えることです。  
@@ -30,7 +30,7 @@ BAM データを処理するためのカスタム DTS タスクを作成する�
   
 1.  OLAP キューブを必要とする BAM 定義を作成します。 たとえば、Excel のウィザードを使用し、1 つのピボットテーブル® レポートを RTA 以外のビューとして残します。  
   
-2.  BAM によって作成される、キューブ処理用の DTS パッケージを開きます。 BAM ビューごとに bam_an _ と呼ばれるこのような 1 つのパッケージを作成する\<*ビュー名*>。  
+2.  BAM によって作成される、キューブ処理用の DTS パッケージを開きます。 BAM ビューごとに bam_an _ と呼ばれるこのような 1 つのパッケージを作成する\<*ビュー名*\>です。  
   
 3.  DTS デザイナーでパッケージを開き、最初の 2 つのステップと最後のステップを除くすべてのステップを削除します。 また、プライマリ インポート データベースへの接続を保持することが必要な場合もあります。  
   

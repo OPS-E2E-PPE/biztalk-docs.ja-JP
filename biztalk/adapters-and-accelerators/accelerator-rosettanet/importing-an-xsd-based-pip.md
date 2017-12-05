@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf0ced3dbb9404cd1c4b9c81e566f47b09c7d0b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d8865d7a75bdb06895b963b8269ed457cd5804f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="importing-an-xsd-based-pip"></a>XSD ベース PIP のインポート
 RosettaNet.org によって提供されるほとんどの PIP は DTD ベースですが、新しい PIP は XSD ベースです。 次の手順では、XSD ベースの PIP をインポートする方法を示します。  
@@ -42,7 +42,7 @@ RosettaNet.org によって提供されるほとんどの PIP は DTD ベース�
     The type or namespace name 'SerializableAttribute' does not exist in the class or namespace 'PIP7C7.System'.  
     ```  
   
-5.  いることを確認するすべての .xsd ファイルを確認、\<スキーマ > TypeName およびルート ノード TypeName が同一でありません。 たとえば、PIP7C7 PIP の Universal フォルダで PartnerIdentification.xsd が 'partneridentification 'という TypeName の両方、\<スキーマ > (PartnerIdentification.xsd を選択するとソリューション エクスプ ローラーで) とも、PartnerIdentification ルート ノードです。 この問題を修正するには、ソリューション エクスプローラーで PartnerIdentification.xsd を選択し、プロパティ ページ内で  TypeName プロパティを変更します。この操作によって、TypeName が PartnerIdentification ルート ノードと同一になることを回避できます。 たとえば、TypeName を "_PartnerIdentification" に変更します。 この手順を実行しないと、プロジェクトのビルドの実行時に次のエラーが発生します。  
+5.  いることを確認するすべての .xsd ファイルを確認、\<スキーマ\>TypeName およびルート ノード TypeName が同一でありません。 たとえば、PIP7C7 PIP の Universal フォルダで PartnerIdentification.xsd が 'partneridentification 'という TypeName の両方、\<スキーマ\>(PartnerIdentification.xsd を選択するとソリューション エクスプ ローラーで) とも、PartnerIdentification ルート ノードです。 この問題を修正するには、ソリューション エクスプローラーで PartnerIdentification.xsd を選択し、プロパティ ページ内で  TypeName プロパティを変更します。この操作によって、TypeName が PartnerIdentification ルート ノードと同一になることを回避できます。 たとえば、TypeName を "_PartnerIdentification" に変更します。 この手順を実行しないと、プロジェクトのビルドの実行時に次のエラーが発生します。  
   
     ```  
     Node "<Schema>" - This schema file has a TypeName that collides with the RootNode TypeName of one of its root Nodes. Make sure that they are different.  

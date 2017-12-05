@@ -16,11 +16,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0dbef138603421a46edd4b2d17a5123116cece6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37c5bb2c60133d19887e157f8e06633527e0fa11
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-get-the-duration-on-an-activity-window"></a>アクティビティ時間帯の期間を取得する方法
 管理者を使用して、 **get activitywindow**コマンドを指定されたアクティビティの期間を取得します。 このコマンドにより、期間の長さと、その期間の基準となる単位が返されます。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  入力 bm get activitywindow-アクティビティ:\<アクティビティ名 >。  
+3.  入力 bm get activitywindow-アクティビティ:\<アクティビティ名\>です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

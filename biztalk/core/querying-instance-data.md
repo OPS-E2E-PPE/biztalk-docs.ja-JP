@@ -15,24 +15,24 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 762ad9dd241f65db700e452a2ac181442c863607
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e43310756cf12c0c2a48eb6716221afc5395ecb0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="querying-instance-data"></a>インスタンス データへのクエリ
 BAM プライマリ インポート データベースに動的に作成される SQL ビューのクエリには、個別のアクティビティ インスタンスについての情報を使用できます。  
   
  クエリでのビューの名前は次のようになります。  
   
- **bam _\<**  *ViewName* **> _\<**  *ActivityName* **> _View**  
+ **bam _\<**  *ViewName*  **\>_\<**  *ActivityName*  **\>_View**  
   
  場所  
   
- **\<***ViewName*  **>**  BAM 定義 XML 内の View 要素の Name 属性は、関連する Microsoft Excel ウィザードに入力されたビュー名と同じです。  
+ **\<***ViewName*  **\>**  BAM 定義 XML 内の View 要素の Name 属性は、関連する Microsoft Excel ウィザードに入力されたビュー名と同じです。  
   
- **\<***ActivityName*  **>**  BAM 定義 XML 内の Activity 要素の Name 属性は、Excel ウィザードに入力されたアクティビティ名と同じです。  
+ **\<***ActivityName*  **\>**  BAM 定義 XML 内の Activity 要素の Name 属性は、Excel ウィザードに入力されたアクティビティ名と同じです。  
   
  インスタンス データにクエリを実行する際は、次の条件に注意することが重要です。  
   
@@ -44,4 +44,4 @@ BAM プライマリ インポート データベースに動的に作成され�
   
 ## <a name="see-also"></a>参照  
  [アクティビティ データのストレージ](../core/activity-data-storage.md)   
- [BAM データを照会します。](../core/querying-bam-data.md)
+ [BAM データのクエリ](../core/querying-bam-data.md)

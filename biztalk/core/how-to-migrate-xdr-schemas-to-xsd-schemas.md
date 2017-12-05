@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7fb0709ca0bd8b67e1549ba740c5810138f61739
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 84bbc42297a10c7d42adb8d778ba19b3b392742c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-migrate-xdr-schemas-to-xsd-schemas"></a>XDR スキーマを XSD スキーマに移行する方法
 以前のバージョンの BizTalk Server のスキーマを移行する場合、XDR (XML-Data Reduced) スキーマを XSD (XML Schema Definition) 言語スキーマに変換する必要があります。 このトピックでは、必要な手順について説明します。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  **ソリューション エクスプ ローラー**、関連する BizTalk プロジェクトを右クリックし、順にポイント**追加**、クリックして**生成した項目の追加**です。  
   
-2.  **生成項目の追加 - \<* BizTalk ProjectName*> * * ダイアログ ボックスで、**テンプレート**セクションで、 **スキーマの生成**、クリックして**追加**です。  
+2.  **生成項目の追加 - \<* BizTalk ProjectName*\>* * ダイアログ ボックスで、**テンプレート**セクションで、**生成スキーマ**、クリックして**追加**です。  
   
 3.  **スキーマの生成**] ダイアログ ボックスで、**ドキュメントの種類**一覧で、[ **XDR スキーマ**です。  
   

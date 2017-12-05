@@ -16,11 +16,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1e355f752241135d781c3425e05f017b0d86d93
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4941cb95e180b7075b7e113fb89f7734a9abd82
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="submitdirect-biztalk-server-sample"></a>SubmitDirect (BizTalk Server サンプル)
 SubmitDirect サンプルは、.NET ベースのアプリケーションから Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に一方向のメッセージおよび要求 - 応答メッセージをプログラムで送信する方法を示します。 このサンプルでは、アダプターに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] API を使用する例を示します。 また、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信するために使用できる、Submit という名前の受信アダプターを提供します。  
@@ -46,7 +46,7 @@ SubmitDirect サンプルは、.NET ベースのアプリケーションから M
 -   **要求/応答メッセージの送信。** コンソール アプリケーション SubmitRequest.exe は、コマンドラインで指定された .xml ファイルを受け取るし、それに送信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 この .xml ファイルのスキーマは、2 つの整数フィールドを含む要素を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は .xml ファイルを取得し、それを 1 つの要求 - 応答ポートを使用するオーケストレーションによって処理します。 このとき、マップを使用して、要求に含まれる 2 つの整数の積を表す整数を返す XML 応答メッセージを生成します。 コンソール アプリケーションが応答を受け取ると、結果が表示されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \AdaptersDevelopment\SubmitDirect\  
+ \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -69,13 +69,13 @@ SubmitDirect サンプルは、.NET ベースのアプリケーションから M
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersDevelopment\SubmitDirect  
+     \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   このサンプルのバッチ送信部分用に、次の出力フォルダを作成します。  
   
-         \<*パスのサンプル*> \AdaptersDevelopment\SubmitDirect\Out  
+         \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\Out  
   
     -   このサンプル用に、さまざまな [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルします。  
   
@@ -110,7 +110,7 @@ SubmitDirect サンプルは、.NET ベースのアプリケーションから M
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
+     \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
   
 2.  ファイル SubmitMessages.exe を実行し、コマンド ラインで複数の文字列を渡します。  
   
@@ -122,7 +122,7 @@ SubmitDirect サンプルは、.NET ベースのアプリケーションから M
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
+     \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
   
 2.  ファイル SubmitRequest.exe を実行し、コマンド ラインで適切な .xml ファイル名を渡します。  
   

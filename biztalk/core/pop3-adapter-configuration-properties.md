@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b2ca87faeb20cb717e20dc5c8b5329de37dca94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bf7aa17f36143f80a82f664dbabd257d7b924db
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="pop3-adapter-configuration-properties"></a>POP3 アダプター構成プロパティ
 次の表に、POP3 アダプターの受信場所に設定できる構成プロパティを示します。  
@@ -49,4 +49,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  アダプター フレームワークを使用して構築されたアダプターに TransportTypeData 構成データを指定するときに使用される名前/値ペア必要がありますすべてに格納される、 \<AdapterConfig > 要素。 \<AdapterConfig > 要素は VT_BSTR を指定します (vt =「8」) データを入力し、 \< > データ内の文字をエスケープする必要があります。
+>  アダプター フレームワークを使用して構築されたアダプターに TransportTypeData 構成データを指定するときに使用される名前/値ペア必要がありますすべてに格納される、 \<AdapterConfig > 要素。 \<AdapterConfig > 要素は VT_BSTR を指定します (vt =「8」) データを入力し、 \< \>データ内の文字をエスケープする必要があります。

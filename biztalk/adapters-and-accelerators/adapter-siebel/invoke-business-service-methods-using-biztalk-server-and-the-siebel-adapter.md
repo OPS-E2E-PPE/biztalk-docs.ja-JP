@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb659182a16af541728cb45f7b2427f6e306cd2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79a11d3be19ca27bd27146ef728ce168c3285884
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a>ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出し
 Siebel ビジネス サービスは、Siebel の直接呼び出すことができるビジネス メソッドのコレクションです。 方法の詳細については[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]Siebel システムでのビジネス サービスを呼び出すサポートを参照してください[の Siebel ビジネス サービスを運用](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)です。 SOAP の構造の詳細については、ビジネス サービス操作を実行するメッセージを参照してください[ビジネス サービス操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)です。  
@@ -165,7 +165,7 @@ Siebel ビジネス サービスは、Siebel の直接呼び出すことがで�
  オーケストレーションは、要求メッセージを消費し、Siebel システムに渡されます。 Siebel システムからの応答は、ファイル送信場所に保存されます。 上記の要求メッセージに対する応答は次のとおりです。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <ExecuteResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/TimeStamp/Operation">  
   <ExecuteResult>  
     <Time xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/TimeStamp">2007-11-25T20:42:11.0000000</Time>  

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 831a311a23e6d24f1a655d0df604032a02cb782d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9de8c569744c5bbf750ef2aa804efbc456cd74a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-pull-scenario"></a>手順 1: InterAct ストア アンド フォワード (プル) シナリオの迅速な対応アダプターを構成します。
 この手順を開始する前に行う必要があります[、チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)です。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
-    |**引数**|次の引数を入力: – SagMessagePartner \<SAG で対話するクライアントのメッセージのパートナーが作成された >**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
+    |**引数**|次の引数を入力: – SagMessagePartner \<SAG で対話するクライアントのメッセージのパートナーが作成された\>**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
     |**LogMessageBody**|ドロップダウン リストから選択**FALSE**です。 **注:**を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
     |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
-    |**引数**|次の引数を入力: – SagMessagePartner \<SAG で対話するクライアントのメッセージのパートナーが作成された >**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
+    |**引数**|次の引数を入力: – SagMessagePartner \<SAG で対話するクライアントのメッセージのパートナーが作成された\>**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
     |**LogMessageBody**|ドロップダウン リストから選択**FALSE**です。 **注:**を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
     |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [ステップ 2: 送信ポートを作成し、対話ストア アンド フォワード (プル) シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-2-create-send-ports-and-receive-ports-for-the-interact-store-and-forward.md)   
  [手順 3: InterAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションを作成します。](../../adapters-and-accelerators/fileact-interact/step-3-create-orchestration-with-dynamic-send-for-interact-store-and-forward.md)   
- [手順 4: InterAct ストア アンド フォワード (プル) エンド ツー エンドのシナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-pull-end-to-end-scenario.md)
+ [手順 4: InterAct ストア アンド フォワード (プル) エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-pull-end-to-end-scenario.md)

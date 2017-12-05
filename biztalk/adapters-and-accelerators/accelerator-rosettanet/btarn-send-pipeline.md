@@ -21,11 +21,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8bd102c58f85fd38c2f769f6e4aca2b5fd0d7919
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f566b37cc43f8aca2f0a36143d10d809c008d5cd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="btarn-send-pipeline"></a>BTARN 送信パイプライン
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend パイプライン (RNIFSend.btp) で転送するための RosettaNet Implementation Framework (RNIF) メッセージを作成します。 送信パイプラインには、次のものが組み込まれています。  
@@ -40,12 +40,12 @@ ms.lasthandoff: 09/20/2017
  XML プリプロセッサは、メッセージに DOCTYPE ヘッダーを追加します。 このヘッダーは、メッセージに関連付けるドキュメント型定義 (DTD) スキーマを指定します。 RNIF 仕様には、RNIF 送信のための DOCTYPE ヘッダーが必要です。  
   
 ## <a name="xml-assembler"></a>XML アセンブラー  
- XML アセンブラは、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] XML アセンブラに基づいています。 XML アセンブラーは、メッセージ コンテキストからエンベロープとドキュメントにプロパティを転送します。 そして、XML 部分および添付ファイルからメッセージを構築します。 メッセージの検証は実行しません。  
+ XML アセンブラーは、BizTalk Server の XML アセンブラに基づいています。 XML アセンブラーは、メッセージ コンテキストからエンベロープとドキュメントにプロパティを転送します。 そして、XML 部分および添付ファイルからメッセージを構築します。 メッセージの検証は実行しません。  
   
- ネイティブの [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] XML アセンブラの詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプ の「XML 逆アセンブル パイプライン コンポーネント」を参照してください。  
+ 詳細については、ネイティブの[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]XML アセンブラー、BizTalk Server ヘルプの「XML アセンブラー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="mimesmime-encoder"></a>MIME/SMIME エンコーダ  
- MIME/SMIME エンコーダは、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] MIME/SMIME エンコーダに基づいています。 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] エンコーダは、取引先アグリーメントのプロトコル設定および [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MIME/SMIME エンコーダの設定に基づいて、次の操作を実行します。  
+ MIME/SMIME エンコーダーは、BizTalk Server MIME/SMIME エンコーダに基づいています。 取引先アグリーメント、および BizTalk Server の MIME/SMIME エンコーダの設定でプロトコルの設定に応じて、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]エンコーダーは、次を実行します。  
   
 -   RNIF 1.1 メッセージに必要な 8 バイトのバイナリ ヘッダーをメッセージに追加します。  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 -   ペイロード (Service Content と添付ファイル) またはペイロード コンテナー (Service Content、Service Header、および添付ファイル) を暗号化します。 設定した場合、**すべてのポートをエンコード**の設定、**プロトコル**を取引先アグリーメントのタブ`False`、エンコーダはペイロードのみを暗号化します。 設定した場合、**すべてのポートをエンコード**設定`True`、エンコーダはペイロード コンテナーを暗号化します。  
   
- ネイティブの [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] MIME/SMIME エンコーダの詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「MIME/SMIME エンコーダ パイプライン コンポーネント」を参照してください。  
+ 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MIME/SMIME エンコーダー、BizTalk Server ヘルプの「MIME/SMIME エンコーダー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="message-flow"></a>メッセージ フロー  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送信パイプラインを経由するメッセージ フローは次のとおりです。  

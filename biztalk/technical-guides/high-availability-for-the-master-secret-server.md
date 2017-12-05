@@ -12,21 +12,21 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c8c18f394b800ffeee9994294b2d2dbf0cb3a1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f366eb2827859f8d720c74e670808aebfb0665b2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-for-the-master-secret-server"></a>マスター シークレット サーバーの高可用性
-SSO は、全体的な Microsoft の重要な部分でのマッピングの資格情報やシングル サインオン エンタープライズ シングル サインオン (SSO) 機能を使用しない場合でも[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]インフラストラクチャ、ため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SSO を使用してセキュリティで保護されたポートの情報構成します。 ポートの構成データを暗号化して、SSO データベースに格納します。 各 BizTalk サーバーでは、ポートの構成データを暗号化および暗号化に使用する SSO サービス (ENTSSO.exe) があります。  
+SSO は、ため、全体的な Microsoft BizTalk Server インフラストラクチャの重要な一部のマッピングの資格情報やシングル サインオン エンタープライズ シングル サインオン (SSO) 機能を使用しない場合でも[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SSO を使用してセキュリティで保護されたポートの情報構成します。 ポートの構成データを暗号化して、SSO データベースに格納します。 各 BizTalk サーバーでは、ポートの構成データを暗号化および暗号化に使用する SSO サービス (ENTSSO.exe) があります。  
   
  SSO サービスが起動時に、マスター シークレット サーバーから暗号化キーを取得します。 この暗号化キーには、マスター シークレットが呼び出されます。 マスター シークレット サーバーは、他の SSO サービスを維持し、マスター シークレットを配布する追加のサブサービスを持つです。 マスター シークレットが取得された後は、SSO サービスはキャッシュします。 60 秒ごとに、SSO サービスは、マスター シークレット サーバーとマスター シークレットを同期します。  
   
  マスター シークレット サーバーが失敗し、SSO サービスは、その更新間隔のいずれかで障害を検出、SSO サービスおよびすべてのランタイム操作に失敗しました。 を含む、サーバーの資格情報の復号化する前に実行されていた正常に続行します。 ただし、新しい資格情報またはポートの構成データを暗号化することはできません。 したがって、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境、マスタ シークレット サーバーの可用性に依存しています。  
   
 ## <a name="making-the-master-secret-server-available"></a>マスター シークレット サーバーの可用性を確保する方法  
- SSO システムの可用性のための[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、生成されるとすぐには、マスター シークレットをバックアップすることが重要です。 マスター シークレットを失うことは、SSO システムがそのマスター シークレットを使って暗号化したデータを失うことを意味します。 マスター シークレットのバックアップの詳細については、次を参照してください。[バックアップ マスター シークレットを方法](http://go.microsoft.com/fwlink/?LinkID=151934)(http://go.microsoft.com/fwlink/?LinkID=151934) で[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ SSO システムの可用性のための[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、生成されるとすぐには、マスター シークレットをバックアップすることが重要です。 マスター シークレットを失うことは、SSO システムがそのマスター シークレットを使って暗号化したデータを失うことを意味します。 マスター シークレットのバックアップの詳細については、次を参照してください。[バックアップ マスター シークレットをする方法](http://go.microsoft.com/fwlink/?LinkID=151934)(http://go.microsoft.com/fwlink/?LinkID=151934)、BizTalk Server のヘルプ。  
   
  マスター シークレット サーバーの可用性は、次の 2 とおりの方法で確保することができます。  
   
@@ -38,7 +38,7 @@ SSO は、全体的な Microsoft の重要な部分でのマッピングの資�
   
      ![高可用性のマスター シークレット サーバー](../core/media/tdi-highava-msscluster.gif "TDI_HighAva_MSSCluster")  
   
-     この構成では高い可用性が実現される反面、追加のハードウェア リソースが必要になります。 SSO の高可用性インストール オプションの詳細については、次を参照してください。[高可用性 SSO インストール オプション](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838) で[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+     この構成では高い可用性が実現される反面、追加のハードウェア リソースが必要になります。 SSO の高可用性インストール オプションの詳細については、次を参照してください。[高可用性 SSO インストール オプション](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838)、BizTalk Server のヘルプ。  
   
      このセクションには、上の高可用性クラスター リソースとして、SSO マスター シークレット サーバーを構成する方法の詳細情報が含まれています、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスター。  
   
@@ -47,9 +47,9 @@ SSO は、全体的な Microsoft の重要な部分でのマッピングの資�
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [マスター シークレット サーバーをクラスタ リング](../technical-guides/clustering-the-master-secret-server.md)  
+-   [マスター シークレット サーバーのクラスタリング](../technical-guides/clustering-the-master-secret-server.md)  
   
--   [新しいマスター シークレット サーバーを手動で指定します。](../technical-guides/designating-a-new-master-secret-server-manually.md)  
+-   [新しいマスター シークレット サーバーを手動で指定する](../technical-guides/designating-a-new-master-secret-server-manually.md)  
   
 ## <a name="see-also"></a>参照  
  [高 Availability2 の計画](../technical-guides/planning-for-high-availability2.md)   

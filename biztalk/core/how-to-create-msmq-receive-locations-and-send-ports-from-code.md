@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d362ae262c7b054bd86fda72f8aacd3b5ab1455
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5f00a0bfe14eeb7d4205973b3fef96e23026616
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>MSMQ 受信場所と送信ポートをプログラムで作成します。
 このトピックでは、WMI を使用して MSMQ アダプタのポートまたは場所を作成する方法について説明します。  
@@ -53,7 +53,7 @@ objReceiveLocation["CustomCfg"] =
   
  CustomProps 要素のタグの名前は、アダプタがプロパティに使用する内部名です。  
   
- MSMQ アダプタには、CustomProps タグ内に 1 つのタグ (AdapterConfig) があります。 AdapterConfig タグには、Config タグで囲まれたカスタム プロパティ値の XML タグの文字列が含まれています。 ただし、タグがエンコードされます:"&lt;「置換」\<「と」&gt;"置換">"です。 たとえば、MSMQ プロパティのアダプタのサブセットの XML は次のようになります。  
+ MSMQ アダプタには、CustomProps タグ内に 1 つのタグ (AdapterConfig) があります。 AdapterConfig タグには、Config タグで囲まれたカスタム プロパティ値の XML タグの文字列が含まれています。 ただし、タグがエンコードされます:"&lt;「置換」\<「と」&gt;「置換」\>"です。 たとえば、MSMQ プロパティのアダプタのサブセットの XML は次のようになります。  
   
 ```  
 <Config>  

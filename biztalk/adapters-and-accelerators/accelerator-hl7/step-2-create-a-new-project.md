@@ -16,18 +16,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78cfd1341100fe803679e81300609962a9c0e1f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4b296b01179b3ce52aef41dc246dbed2588c3e6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-create-a-new-project"></a>手順 2: 新しいプロジェクトを作成します。
 使用して新しいソリューションをビルドするこの手順で、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]環境。 最初に、(データ型、セグメント、およびテーブルの値) の一般的なスキーマの 3 つ HL7 V2.2 スキーマを使用して、送信 HL7 メッセージに使用するスキーマなどを含む新しいプロジェクト (BTAHL7V22Common) を作成します。 次に、別新しいプロジェクトをビルドする (BTAHL7V2XCommon) HL7 メッセージ (MSH_25_GLO_DEF) 内のヘッダーに使用される共通の標準的なスキーマが含まれています。  
   
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには  
   
-1.  開始 **[!INCLUDE[vs2012](../../includes/vs2012-md.md)]**です。  
+1.  開始**Visual Studio**です。  
   
 2.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **名前**フィールドに「 **BTAHL7V22Common**プロジェクト名として。  
   
-6.  **場所**フィールドに「 *\<ドライブ >***: \Tutorial**クリックして、パスとして**OK** 、新しいプロジェクトを開きます。  
+6.  **場所**フィールドに「 *\<ドライブ\>***: \Tutorial**クリックして、パスとして**OK**を開くには新しいプロジェクトです。  
   
     > [!NOTE]
     >  BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])、3 つの一般的なスキーマを新しいプロジェクトをソリューション エクスプ ローラーに追加します。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
     -   tablevalues_22.xsd  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ファイル、プロジェクト フォルダーを作成して、 \<*ドライブ*>: \Tutorial\BTAHL7V22Common フォルダーです。  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ファイル、プロジェクト フォルダーを作成して、 \<*ドライブ*\>: \Tutorial\BTAHL7V22Common フォルダーです。  
   
 7.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 10. **名前**フィールドに「 **BTAHL7V2XCommon**プロジェクト名として。  
   
-11. **場所**フィールドに「 *\<ドライブ >***: \Tutorial**パスとして。  
+11. **場所**フィールドに「 *\<ドライブ\>***: \Tutorial**パスとして。  
   
 12. **ソリューション**フィールドを選択**ソリューションに追加**、順にクリック**OK**です。  
   
@@ -71,9 +71,9 @@ ms.lasthandoff: 09/20/2017
   
     -   MSH_25_GLO_DEF.xsd  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ファイル、プロジェクト フォルダーを作成して、 **\<ドライブ >: \Tutorial\BTAHL7V22Common\BTAHL72XCommon**フォルダーです。  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ファイル、プロジェクト フォルダーを作成して、 **\<ドライブ\>: \Tutorial\BTAHL7V22Common\BTAHL72XCommon**フォルダーです。  
   
  進みます[手順 3: アセンブリに厳密な名前を割り当てます](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

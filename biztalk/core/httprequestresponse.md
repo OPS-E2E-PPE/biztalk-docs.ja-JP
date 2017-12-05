@@ -15,11 +15,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fad45e80cac2a398507b4288c9ac6f35c887e71b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 549f343818464a8316246f8b6996755ce5fef136
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httprequestresponse"></a>HTTPRequestResponse
 HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet Server API (ISAPI) フィルターを使用して ASP.NET アプリケーションと [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションの通信を行う方法を示します。  
@@ -36,7 +36,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
  ASP.NET アプリケーションは XML PO 受信確認応答を受け取り、応答から抽出されたステータス情報で Web フォームを更新します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\AdaptersUsage\HTTPRequestResponse\  
+ *\<パスのサンプル\>*\AdaptersUsage\HTTPRequestResponse\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -57,7 +57,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersUsage\HTTPRequestResponse  
+     \<*パスのサンプル*\>\AdaptersUsage\HTTPRequestResponse  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -77,7 +77,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
         > [!IMPORTANT]
         >  Web アプリケーションを実装するサンプル コード (Default.aspx.cs) を変更して環境を反映する必要があります。  
         >   
-        >  http://\<*サーバー名*>/\<*仮想 dir*> >/btshttpreceive.dll ここで`<servername>`に投稿するWebサーバーの名前を指定します`<`*仮想 dir* `>`このファイルが存在する仮想ディレクトリです。  
+        >  http://\<*サーバー名*\>/\<*仮想 dir*\>>/btshttpreceive.dll ここで`<servername>`Web の名前を指定します投稿しているサーバーと`<`*仮想ディレクトリ*`>`は、このファイルが存在する仮想ディレクトリです。  
   
         > [!NOTE]
         >  このサンプルを実行する前に、BizTalk がビルド プロセス中および初期化プロセス中にエラーを報告していないことを確認してください。  
@@ -127,4 +127,4 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
  このサンプルは、Web フォームまたは一般的な HTTP を介して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを送信するために必要なアプリケーションに拡張できます。 このサンプルの ASP.NET アプリケーションの部分を拡張すると、さらに多くの情報をクエリして、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを送信する前にその他の処理を実行できます。  
   
 ## <a name="see-also"></a>参照  
- [HTTP アダプタのサンプル](../core/http-adapter-samples.md)
+ [HTTP アダプター サンプル](../core/http-adapter-samples.md)

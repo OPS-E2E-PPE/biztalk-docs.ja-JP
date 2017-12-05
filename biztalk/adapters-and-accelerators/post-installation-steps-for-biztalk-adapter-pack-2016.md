@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33726ebafc3ed6b3d1ad62bf97019e30493a895e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 17bd0a76cacb35563448f31f79c2275c79b92ab8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="post-installation-steps-for-biztalk-adapter-pack-2016"></a>BizTalk アダプター パック 2016 のインストールの手順を投稿します。
 インストールした後、 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]、いくつかのインストール後の手順です。 このトピックでは、次の手順を示します。   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
      ![BizTalk への SAP アダプターの追加](../adapters-and-accelerators/media/a1235b38-ab93-4233-924d-42710540b951.gif "a1235b38-ab93-4233-924d-42710540b951")  
   
-5.  [ **OK**] を選択します。  
+5.  **[OK]** を選択します。  
 
 ## <a name="use-a-newer-oracledataaccessdll-version"></a>新しい Oracle.DataAccess.dll バージョンを使用します。  
 
@@ -70,7 +70,7 @@ Wcf-oracledb アダプターを使用または生成されたアダプターを�
 > - *NewVersion* Oracle.DataAccess.dll ファイルをコンピューターにインストールされているのバージョンに基づく更新する値が必要です。  Oracle.DataAccess.dll は、Oracle からインストールする Oracle クライアントに含まれています。  される Oracle クライアント バージョンをインストールする必要がありますのみ[BizTalk Adapter Pack でサポートされている](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)です。  
   
 ## <a name="create-sql-server-database-objects-sap-adapter-only"></a>SQL Server データベース オブジェクト (SAP アダプターのみ) を作成します。  
- SAP システムで tRFCs を呼び出し、実行、 *SapAdapter DbScript-Install.sql* SQL スクリプト。 このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールし、SQL Server でデータベース オブジェクトを作成します。 インストールされている通常の*\<インストール ドライブ >: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*です。 TRFCs を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。
+ SAP システムで tRFCs を呼び出し、実行、 *SapAdapter DbScript-Install.sql* SQL スクリプト。 このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールし、SQL Server でデータベース オブジェクトを作成します。 インストールされている通常の*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*です。 TRFCs を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。
   
 ## <a name="register-the-adapter-bindings"></a>アダプターのバインドを登録します。
 中に、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストール、セットアップ ウィザードがアダプターのバインドが、または、.NET Framework Data Provider for mySAP Business Suite を登録に失敗する可能性があります。 アダプターのインストールが、セットアップが続行されます。 これは、Windows Communication Foundation (WCF) のインストールによって起こります、[!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)]インストール、または壊れている可能性が machine.config ファイルです。  
@@ -78,7 +78,7 @@ Wcf-oracledb アダプターを使用または生成されたアダプターを�
 > [!IMPORTANT]
 > 次の手順を完了*のみ*machine.config ファイルに、アダプターのバインド、または .NET Framework データ プロバイダーを登録するセットアップ ウィザードが失敗した場合。  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な*\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG*です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な*\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG*です。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   

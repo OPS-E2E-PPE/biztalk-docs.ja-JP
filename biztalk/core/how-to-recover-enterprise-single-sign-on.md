@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fa0c0b5435e235a07046f311a971a0036dc8346
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a87404e608789fa3dba003f3aba6155c5f049e8d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを復旧する方法
 BizTalk Server を復旧する前に、まずはエンタープライズ シングル サインオン (SSO) を復旧する必要があります。  
@@ -46,7 +46,7 @@ BizTalk Server を復旧する前に、まずはエンタープライズ シン�
     > [!NOTE]
     >  別のアカウントを使用することもできますが、使用するアカウントはシングル サインオン管理者グループのメンバーである必要があります。  
   
-6.  [**構成の適用**] をクリックします。  
+6.  **[構成の適用]** をクリックします。  
   
      マスター シークレットが取得されなかったことを示す警告が表示されます。 イベント ビューアーを使用すると、エンタープライズ シングル サインオン サービスがコンピューターで開始され実行されていることを確認できます。  
   
@@ -60,9 +60,9 @@ BizTalk Server を復旧する前に、まずはエンタープライズ シン�
   
 10. コマンド プロンプトで、次のように入力します。  
   
-     **ssoconfig restoresecret と入力***\<backupfile >*   
+     **ssoconfig restoresecret と入力***\<backupfile  \>*  
   
-     ここで *\<backupfile >*バックアップしたマスター シークレット ファイルの名前を指定します。  
+     ここで *\<backupfile\>* バックアップしたマスター シークレット ファイルの名前を指定します。  
   
      ときに**ssoconfig**バックアップ ファイルのパスワードの入力を求め SSO の構成中に指定されたパスワードを入力してください。 パスワードが正しい場合、 **ssoconfig**次のメッセージが表示されます。  
   

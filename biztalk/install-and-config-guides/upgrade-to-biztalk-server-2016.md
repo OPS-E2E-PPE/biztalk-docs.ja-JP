@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a139b625ff1c31fb0dce71c08779856f0dc8b685
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 39b5b6b6da7d97d3c763e5f45f215aa03d13c77c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="upgrade-to-biztalk-server-2016"></a>BizTalk Server 2016 へのアップグレード
 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] または BizTalk Server 2013 から [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] へのアップグレード。
@@ -152,9 +152,9 @@ BAM 警告を使用するには、SQL Server Database Mail が必要です。 SQ
 - **maxTimeout 値**: サイズの大きな BAM データベースを使用している場合は、machine.config ファイルで分散トランザクションに関する `maxTimeout` 値を次のように更新します。  
 
     ```
-    \<system.transactions>
+    <system.transactions>
        <machineSettings maxTimeout="23:59:59" />
-    \</system.transactions>
+    </system.transactions>
     ```
 
 - **追跡プロファイル エディター (TPE) で有効にされている BAM 追跡**: アップグレードすると、以前に展開した追跡プロファイルはアップグレードされますが、それに対応するインターセプター構成はアップグレードされません。 新しい受信済み BAM メッセージは、引き続き BizTalk Server 2013 R2/2013 への参照を持つ可能性があります。 対応するインターセプター構成をアップグレードするには、追跡プロファイル エディターを使用してアクティビティのプロファイルを取得し、次にプロファイルを再適用します。
@@ -282,7 +282,7 @@ BizTalk Server のアップグレード中には数多くのことが起こる�
 - **カスタム EXE および BRE**: BizTalk Server 2010 内のビジネス ルール エンジン アセンブリを参照するカスタム マネージ実行可能ファイルがある場合は、.NET Framework 2.0 でプロセスを実行するために、アプリケーション構成ファイルに次のコードを追加します。
 
     ```
-    \<?xml version="1.0" encoding="Windows-1252"?>
+    <?xml version="1.0" encoding="Windows-1252"?>
     <configuration> 
      <startup>
       <supportedRuntime version="v2.0.50727" />

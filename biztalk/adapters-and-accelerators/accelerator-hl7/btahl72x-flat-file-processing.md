@@ -38,11 +38,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15d21653b9f0d6109487677484506c7a5d6bcc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bcd1afb4843f68b56228c8e9aaa655d83f70119e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btahl72x-flat-file-processing"></a>BTAHL72X フラット ファイル処理
 次のコンポーネントで[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) プロセス HL7 2.X (HL7 エンコード) メッセージ。  
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
 -   セグメントで 3 つの文字があること  
   
--   セグメント区切り記号がである\<CR > または\<CR >\<LF > (最後のセグメントの省略可能)  
+-   セグメント区切り記号がである\<CR\>または\<CR\>\<LF\> (最後のセグメントの省略可能)  
   
 -   フィールドの区切り記号が適切であります。  
   
@@ -159,9 +159,9 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [HL7 2.X 逆アセンブラーでスキーマの決定](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-disassembler.md)  
+-   [HL7 2.X 逆アセンブラーのスキーマ決定](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-disassembler.md)  
   
--   [HL7 2.X アセンブラーでスキーマの決定](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-assembler.md)  
+-   [HL7 2.X アセンブラーのスキーマ決定](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-assembler.md)  
   
 ## <a name="see-also"></a>参照  
  [メッセージの処理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   

@@ -22,11 +22,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6aebf393b5d260dccf68b72e06bd6186a412302
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68e7d8dc1b067096f118eb1145554edf0b11f605
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-search-and-get-metadata-for-siebel-operations"></a>参照、検索、および Siebel 操作のメタデータを取得
 このセクションで説明を使用する方法については、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コンポーネント、することができます。  
@@ -156,7 +156,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **[OK]**をクリックします。 スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。  
   
-     既定では、ファイルを作成して、名前付け規則"SiebelBindingSchema\<n > .xsd"ここで、' n ' 1、2、および作成したスキーマ ファイルの数によってを指定できます。 名前を入力して、スキーマ ファイルにカスタムの名前を指定する代わりに、**ファイル名のプレフィックス**テキスト ボックス。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] 、命名規則で今すぐスキーマ ファイルが作成されます\<ファイル名のプレフィックス > スキーマ\<n > .xsd です。  
+     既定では、ファイルを作成して、名前付け規則"SiebelBindingSchema\<n\>.xsd"ここで、' n ' 1、2、および作成したスキーマ ファイルの数によってを指定できます。 名前を入力して、スキーマ ファイルにカスタムの名前を指定する代わりに、**ファイル名のプレフィックス**テキスト ボックス。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] 、命名規則で今すぐスキーマ ファイルが作成されます\<ファイル名のプレフィックス\>スキーマ\<n\>.xsd です。  
   
     > [!NOTE]
     >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]時に指定されたバインディングのプロパティを含むバインド ファイル (XML ファイル) も作成操作と、操作を呼び出す SOAP アクションのスキーマを生成します。 BizTalk Server 管理コンソールで、接続 URI、バインドのプロパティで WCF カスタム ポートを作成するには、このバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、次を参照してください。 [Siebel するポートのバインド ファイルを使用する物理ポートのバインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)です。  
@@ -194,4 +194,4 @@ ms.lasthandoff: 09/20/2017
 5.  **[OK]**をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアントの操作と、プロジェクト ディレクトリに選択したカテゴリのクラスとヘルパー コードを保存します。 既定では、構成ファイルも保存されます。 詳細については、次を参照してください。 [WCF クライアントまたは Siebel ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)です。  
   
 ## <a name="see-also"></a>参照  
- [Visual Studio での Siebel 操作のメタデータを取得します。](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)
+ [Visual Studio で Siebel 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)

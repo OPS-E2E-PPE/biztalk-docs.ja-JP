@@ -21,11 +21,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d05d9d0d98a82c2ded297a6cd8bee9d7bcc9a6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1621973fed0c7a87538e3ed18161f05c4c9cf9e6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sso-affiliate-applications"></a>SSO 関連アプリケーション
 エンタープライズ シングル サインオン (SSO) 関連アプリケーションは、SSO を使用して接続するホスト、バックエンド システム、または基幹業務アプリケーションなどのシステムやサブシステムを表す論理エンティティです。 メインフレームや UNIX コンピュータなどのバックエンド システムを表すこともあります。 また、SAP などのアプリケーションや、システムの一部分に当たる "手当"、"給与明細" などのサブシステムを表すこともあります。  
@@ -101,9 +101,9 @@ ms.lasthandoff: 09/20/2017
   
 |アプリケーションのフィールド|Description|Description|  
 |------------------------|-----------------|-----------------|  
-|フィールド [0]|\<*資格情報*>: マスク/Unmasked|エンド ユーザーが関連アプリケーションへの接続時に提供する必要がある資格情報の種類 (ユーザー ID、パスワード、スマート カード)、およびこの資格情報をマスクするかどうか (つまり、ユーザーが入力する文字を画面に表示するかどうか) を指定します。<br /><br /> 関連アプリケーションの資格情報と同じ数のフィールドを入力できますが、最初のフィールドはユーザー ID でなければなりません。<br /><br /> アプリケーションを作成した後は、このプロパティを変更できません。|  
+|フィールド [0]|\<*資格情報*\>: マスク/Unmasked|エンド ユーザーが関連アプリケーションへの接続時に提供する必要がある資格情報の種類 (ユーザー ID、パスワード、スマート カード)、およびこの資格情報をマスクするかどうか (つまり、ユーザーが入力する文字を画面に表示するかどうか) を指定します。<br /><br /> 関連アプリケーションの資格情報と同じ数のフィールドを入力できますが、最初のフィールドはユーザー ID でなければなりません。<br /><br /> アプリケーションを作成した後は、このプロパティを変更できません。|  
   
 ## <a name="see-also"></a>参照  
  [関連アプリケーションの管理](../core/managing-affiliate-applications.md)   
  [SSO マッピング](../core/sso-mappings.md)   
- [ユーザー マッピングを管理します。](../core/managing-user-mappings.md)
+ [ユーザー マッピングの管理](../core/managing-user-mappings.md)

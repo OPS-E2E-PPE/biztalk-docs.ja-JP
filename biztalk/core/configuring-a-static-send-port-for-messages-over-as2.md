@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15f491077d6c6d09958fb5aa5f1af8f432537514
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 068b7d8295710157af7a8a7358768e85e006beb8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-a-static-send-port-for-messages-over-as2"></a>AS2 経由でのメッセージの静的送信ポートの構成
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、静的送信ポートを経由して AS2 メッセージを送信する方法について説明します。 この構成作業では、静的送信ポートを作成し、アグリーメントを構成します。 必要に応じて、送信ポートで使用される暗号化証明書のセットアップも行います。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 |**送信ポートのプロパティ: 全般**|[送信パイプライン]|-AS2EdiSend (EDI でエンコードされたメッセージ)<br /><br /> -AS2Send (非 EDI メッセージの場合)|  
 |**送信ポートのプロパティ: 全般**|[受信ハンドラー]<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページが選択されている)|BizTalkServerApplication|  
 |**送信ポートのプロパティ: 全般**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページが選択されている)|AS2Receive|  
-|**HTTP トランスポートのプロパティ**|送信先 URL|\<送信先 URL の文字列 >|  
+|**HTTP トランスポートのプロパティ**|送信先 URL|\<送信先 URL の文字列\>|  
 |**HTTP トランスポートのプロパティ**|[チャンク エンコードを有効にする]|クリア|  
 |**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS.ReceivePortName などの、さまざまなフィルタ式を使用できます。<br /><br /> 注:<br /><br /> 非 EDI メッセージの場合は、別のプロパティに対してフィルタ処理を行う必要があります。|  
 |**送信ポートのプロパティ: フィルター**|演算子|==|  

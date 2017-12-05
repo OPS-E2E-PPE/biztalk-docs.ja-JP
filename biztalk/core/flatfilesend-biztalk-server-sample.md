@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bdbc0d4e06e5d6980ec984c8c701f4ee7ded7ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a9e967a8127a07b561e950b084bf799b0e2a4ee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="flatfilesend-biztalk-server-sample"></a>FlatFileSend (BizTalk Server サンプル)
 FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、XML ファイルを同等のフラット ファイルに変換する方法を示します。  
@@ -45,7 +45,7 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
  これらの要素が組み合わされて、XML 形式の注文書メッセージを受信場所から受け入れ、フラット ファイル形式の注文書を送信場所に書き込むソリューションが作成されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Pipelines\AssemblerDisassembler\FlatFileSend  
+ *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -66,13 +66,13 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<サンプル パス >*\Pipelines\AssemblerDisassembler\FlatFileSend  
+     *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプルの入力 (FFInput) フォルダと出力 (FFOutput) フォルダを作成します。  
   
-         *\<サンプル パス >*\Pipelines\AssemblerDisassembler\FlatFileSend  
+         *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
   
     -   コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。  
   
@@ -116,7 +116,7 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
 ## <a name="see-also"></a>参照  
 -  [フラット ファイル スキーマ](../core/flat-file-schemas.md)   
 -  [既定のパイプライン](../core/default-pipelines.md)   
--  [パイプライン AssemblerDisassembler (BizTalk Server Samples フォルダ)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
+-  [Pipelines-AssemblerDisassembler (BizTalk Server サンプル フォルダー)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
 -  **WMI スクリプト サンプル**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
 -  [BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)   
 -  [FlatFileReceive (BizTalk Server サンプル)](../core/flatfilereceive-biztalk-server-sample.md)

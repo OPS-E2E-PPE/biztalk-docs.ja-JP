@@ -13,11 +13,11 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
-ms.openlocfilehash: 59c6aabd6adf584bb27f5487ca31f852a0d11384
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbb7ddc2028383f8ac346e7876459f322d2dd96b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues"></a>既知の問題
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] に関するエラーを回避するときに役立つ情報を紹介します。 既知の問題は次の分野に分かれています。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] では、BizTalk Application Users グループと BizTalk Server Administrators グループのどちらにでもグループを追加できます。 ただし、BizTalk Application Users グループまたは BizTalk Server Administrators グループに所属する個々のユーザー アカウントとグループが同じドメインに属していることが必要です。  
   
 ### <a name="uninstallation-of-btarn-fails-if-biztalk-server-is-removed-first"></a>BizTalk Server を先に削除すると BTARN のアンインストールに失敗する  
- [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] を削除する前に [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を削除すると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] の削除プロセスがエラーを表示せずに失敗します。 この問題を解決するには、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] を再インストールして再構成してから、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を削除します。  
+ 削除する前に BizTalk Server を削除する場合[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]エラーなく削除処理が失敗しました。 この問題を解決するを再インストールし、BizTalk Server を再構成し、削除[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]です。  
   
 ### <a name="distributed-deployment-requires-a-domain-controller"></a>分散展開にドメイン コントローラが必要である  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を 1 台のサーバーにインストールし、構成に使用する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] データベースを別のサーバーにインストールしているようなマルチサーバー環境では、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] を展開する際にドメイン コントローラーが必要になります。  
@@ -110,7 +110,7 @@ ms.lasthandoff: 09/20/2017
  プロセス構成プロファイルを作成してからアグリーメントを作成すると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] でクロスフィールド検証が実行され、アグリーメントとプロファイルのプロパティに互換性があることが確認されます。 たとえば、"CIDX" に設定されている標準プロパティを持つプロファイルに対して、アグリーメントの 0A1 アグリーメント プロパティが "非 0A1" に設定されていることが確認されます。 ただし、アグリーメントの作成後に、プロセス構成プロファイルを変更する場合は、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]クロス フィールド検証は実行されません。 プロパティ変更した場合、標準的な"RosettaNet"から"CIDX"に[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]"0A1"に、アグリーメントの 0A1 アグリーメント プロパティを設定することを確認できません。  
   
 ### <a name="errors-will-result-if-all-orchestrations-are-not-started"></a>全部のオーケストレーションを開始しないとエラーが発生する  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] セットアップ プログラムでは 9 つのオーケストレーションがインストールされます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] がメッセージを正常に処理するには、処理を開始する前に、これら 9 つのオーケストレーションをすべてバインド、登録、開始する必要があります。 詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「BizTalk エクスプローラーのオーケストレーション管理」または「オーケストレーションの管理」を参照してください。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] セットアップ プログラムでは 9 つのオーケストレーションがインストールされます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] がメッセージを正常に処理するには、処理を開始する前に、これら 9 つのオーケストレーションをすべてバインド、登録、開始する必要があります。 詳細については、BizTalk Server ヘルプの「BizTalk エクスプ ローラーのオーケストレーション管理」または「オーケストレーション管理」のトピックを参照してください。  
   
 ### <a name="rnifreceiveaspx-does-not-remove-the-mime-bottom-boundary-from-a-message"></a>RNIFReceive.aspx でメッセージから MIME の下位境界が削除されない  
  RNIFReceive.aspx ページが、パートナーの RNIFSend.aspx ページからメッセージを受信すると、メッセージには MIME ヘッダー、および MIME の上下の境界値 (64 進数) が埋め込まれます。 RNIFSend.aspx は、ヘッダーと境界を RNIF 送信のメッセージに追加します。 RNIFReceive.aspx は、メッセージをパブリック プロセスに送信する前に、メッセージから MIME ヘッダーと境界を削除する必要があります。 RNIFReceive.aspx は MIME ヘッダーと上位境界は削除しますが、下位境界は削除しません。 下位境界が存在しても、パブリック プロセスにおけるメッセージの処理には影響ありません。  
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
  パブリック プロセスのオーケストレーションがその最終メッセージを処理するときに送信エラーが発生すると、イベント ログと HAT にはエラーが表示されますが、BAM には表示されません。 オーケストレーションが停止しているため、BAM にこのエラー メッセージを表示できません。  
   
 ### <a name="the-pipelineexe-tool-cannot-be-used-to-debug-a-btarn-receive-pipeline"></a>pipeline.exe ツールを使用して BTARN 受信パイプラインをデバッグできない  
- 受信パイプラインをデバッグする場合、パイプラインをホストするポートを作成する必要があります。 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] に用意されている pipeline.exe ツールでは、受信パイプラインをデバッグできません。  
+ 受信パイプラインをデバッグする場合、パイプラインをホストするポートを作成する必要があります。 BizTalk Server は、pipeline.exe ツールを使用してデバッグすることはできません。  
   
 ### <a name="an-error-may-be-generated-for-a-retried-message-that-is-successfully-processed-after-the-orchestration-finishes"></a>オーケストレーション完了後に正常に処理されたメッセージを再送するとエラーが生成される  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、プロセス フローを表すためにオーケストレーションを使用しています。 再試行メッセージがいくつか再試行される場合、再試行メッセージの 1 つが BizTalk MessageBox に到着しないうちにオーケストレーションが正常に終了することがあります。 この現象が発生すると、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] により、"完了したが破棄された" ことを示すエラー メッセージが生成されます。 プロセスが終了したかどうかを判断するには、基幹業務 (LOB) アプリケーションを確認する必要があります。 正常に終了したことが LOB アプリケーションで確認できた場合は、"完了したが破棄された" ことを示すエラー メッセージを無視してかまいません。  

@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d01593fb50fd1b6faf851652319628b3d0cae58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a1116947450fb1d900ea38be0254fb3d0f7f7c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-tables-with-large-object-data-types-in-oracle-database"></a>Oracle データベース内のラージ オブジェクト データ型とテーブルに対する操作を実行します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle ラージ オブジェクト (LOB) データ型のサポートを提供します。  
@@ -206,7 +206,7 @@ ms.lasthandoff: 09/20/2017
     -   Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することもあります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、次を参照してください。 [Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)です。 Wcf-custom または Wcf-oracledb の送信ポートの送信と 1 つ以上のスキーマに準拠したメッセージを受信、2 つの操作を実行ために、動的操作の両方の操作を設定する必要があります。 アクションの詳細については、次を参照してください。 [Oracle データベースの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)です。 このオーケストレーションのアクションを次のように設定してください。  
   
         ```  
-        \<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+        <BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
           <Operation Name="ReadLOB" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/ReadLOB" />  
           <Operation Name="UpdateLOB" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/UpdateLOB" />  
         </BtsActionMapping>  
@@ -244,12 +244,12 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  フィルター文字列フェッチする必要があります常に 1 つの一致する行それ以外の場合 XmlReaderParsingException、Oracle データベース アダプターをスローします。 値も、\<ストリーム > 要素は、base64Binary 型である必要があります。  
+>  フィルター文字列フェッチする必要があります常に 1 つの一致する行それ以外の場合 XmlReaderParsingException、Oracle データベース アダプターをスローします。 値も、\<ストリーム\>要素は、base64Binary 型である必要があります。  
   
  UpdateLOB 操作の応答には次のとおりです。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <UpdateLOBResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER"></UpdateLOBResponse>  
 ```  
   
@@ -268,7 +268,7 @@ ms.lasthandoff: 09/20/2017
  ReadLOB 操作の応答には次のとおりです。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <ReadLOBResponse mlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER">  
   <ReadLOBResult>YWJjZA==</ReadLOBResult>  
 </ReadLOBResponse>  

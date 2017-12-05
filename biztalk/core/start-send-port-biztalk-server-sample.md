@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfb9db99f06e05877939631e4306be396c47ebda
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f293d00848c32f6b519349543c8a39824d9bca8c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="start-send-port-biztalk-server-sample"></a>送信ポートの開始 (BizTalk Server サンプル)
 送信ポート開始のサンプルは、ファイル アダプタの使用時に、送信ポートを開始し、オプションでプライマリ トランスポート アドレスを設定する方法を示しています。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプル ファイルは、次の SDK の場所にあります。  
   
- \<*パスのサンプル*> \Admin\WMI\Start Port\ の送信  
+ \<*パスのサンプル*\>\Admin\WMI\Start Port\ の送信  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -60,15 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\WMI\Start Port\VBScript\ の送信  
+     \<*パスのサンプル*\>\Admin\WMI\Start Port\VBScript\ の送信  
   
 2.  cscript プログラムを使用し、次のコマンド ライン引数 (2 番目はオプション) を渡して、ファイル StartSendPort.vbs を実行します。  
   
-    -   **\<**   
-         ***SendPortName* >。** 開始する送信ポートの名前。 送信ポートの名前にスペースが含まれる場合は、名前を引用符で囲みます。  
+    -   **\<** ***SendPortName* \>です。** 開始する送信ポートの名前。 送信ポートの名前にスペースが含まれる場合は、名前を引用符で囲みます。  
   
-    -   **\<**   
-         ***PrimaryTransportAddress* >。** 製品のインストール場所を基準としたプライマリ トランスポート アドレス。この引数を指定することによって変更できます。 プライマリ アダプタ アドレスに空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<** ***PrimaryTransportAddress* \>です。** 製品のインストール場所を基準としたプライマリ トランスポート アドレス。この引数を指定することによって変更できます。 プライマリ アダプタ アドレスに空白が含まれている場合は、名前を引用符で囲みます。  
   
          例:  
   
@@ -82,4 +80,4 @@ ms.lasthandoff: 09/20/2017
  スクリプト ファイル StartSendPort.vbs には、実行する操作についての説明のある詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
   
 ## <a name="see-also"></a>参照  
- [管理 WMI (BizTalk Server Samples フォルダ)](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

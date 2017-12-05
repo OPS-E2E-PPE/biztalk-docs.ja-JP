@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1370b4877c2e32055e2ee0a0aca1f922bd8668a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d438a6fa68136b05b358a81f4b026350d92a6af4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-adding-a-flat-file-send-port"></a>レッスン 2: フラット ファイル送信ポートの追加
 このレッスンでは、送信ポートと送信場所を構成します。 メッセージを送信する方法を定義するのにには、送信ポートを使用します。 送信メッセージのファイル フォルダーの場所を作成します。  
@@ -38,9 +38,9 @@ ms.lasthandoff: 09/20/2017
   
 5.  [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。  
   
-6.  フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ >: \Labs**フォルダー、およびクリック**新しいフォルダーの作成**です。  
+6.  フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ\>: \Labs**フォルダー、およびクリック**新しいフォルダーの作成**です。  
   
-7.  作成、**送信**フォルダーに**\<ドライブ >: \Labs**、順にクリック**OK**です。  
+7.  作成、**送信**フォルダーに**\<ドライブ\>: \Labs**、順にクリック**OK**です。  
   
 8.  **ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。  
   

@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a74fafbac364469b1afdba5365c2af87cc4fa2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78229d903461fe2b84033b036ef02b2838832fc0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="sample-business-scenario"></a>このサンプル ビジネス シナリオ
 医療プロセスは複雑な多くの場合、れ多くのシステム。 例としては患者を病院に入ったときに発生するプロセスし医師がラボ テスト用の患者情報を送信します。 この手順に関係するには 5 つのパーティを示します。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
     3.  インターフェイスのエンジンは、ワイヤレス PDA の演習の結果を受信すると、博士に電子メール メッセージを送信します。  
   
 ## <a name="the-btahl7-solution"></a>BTAHL7 ソリューション  
- 上記で説明したサンプル ビジネス シナリオでは、統合が必要な医療システムの例を示します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)][!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 次の機能を搭載したこのシナリオのソリューションを提供します。  
+ 上記で説明したサンプル ビジネス シナリオでは、統合が必要な医療システムの例を示します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 次の機能を搭載したこのシナリオのソリューションを提供します。  
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]すべてのハブとスポークの配置に関連するシステムを統合します。 各システムと直接通信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 相互に直接通信するためにはありません。  
   
@@ -82,4 +82,4 @@ ms.lasthandoff: 09/20/2017
 7.  に対して、エンジンのすべてのメッセージを検証することができます、 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X スキーマは、HL7 組織によって発行されました。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server がビジネス ニーズを解決する方法](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)
+ [BizTalk Server がビジネス ニーズを解決するしくみ](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)

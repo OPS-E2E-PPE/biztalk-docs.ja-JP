@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b594aa02cbecb21a20180d1143f2f8835788a958
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a2084e2e46e3e984af2c5466c52862956dc8414
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="performing-unit-testing"></a>単体テストを実行します。
 単体テストでは、コンポーネント レベルでフォーカスがある状態し、期待どおりにかどうか、BizTalk ソリューションの個々 のコンポーネントを実行することを検証するテストの成功/失敗ステータスは、基本的にします。 単体テスト、BizTalk ソリューションのいくつかのオプションがあります。  
@@ -24,10 +24,10 @@ ms.lasthandoff: 09/20/2017
 ## <a name="using-visual-studio"></a>Visual Studio の使用  
  単体テスト機能は、Visual Studio 2008 で使用可能な以降です。 Visual Studio で使用可能であるテスト機能の詳細については、次を参照してください。[アプリケーションのテスト](http://go.microsoft.com/fwlink/?LinkId=159595)(http://go.microsoft.com/fwlink/?LinkId=159595)。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]またユーザー スキーマ、マップ、およびパイプラインの単体テストを作成する単体テスト機能を提供します。 この機能の詳細については、次を参照してください。 [BizTalk Server プロジェクトによる単体テスト](http://go.microsoft.com/fwlink/?LinkId=158270)(http://go.microsoft.com/fwlink/?LinkId=158270)。  
+ BizTalk Server では、スキーマ、マップ、およびパイプラインの単体テストを作成するユーザーを有効にする単体テスト機能も提供します。 この機能の詳細については、次を参照してください。 [BizTalk Server プロジェクトによる単体テスト](http://go.microsoft.com/fwlink/?LinkId=158270)(http://go.microsoft.com/fwlink/?LinkId=158270)。  
   
 > [!NOTE]  
->  Visual Studio は、単体テストのオーケストレーション、スキーマ、パイプライン、およびパイプライン コンポーネントなどの BizTalk アイテムを非常に役立ちます。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]BizTalk アイテムをテストする Visual Studio Team System で使用できるテストのクラスを提供します。  
+>  Visual Studio は、単体テストのオーケストレーション、スキーマ、パイプライン、およびパイプライン コンポーネントなどの BizTalk アイテムを非常に役立ちます。 BizTalk Server では、BizTalk アイテムをテストする Visual Studio Team System で使用できるテストのクラスを提供します。  
   
 ## <a name="using-non-microsoft-tools"></a>Microsoft 以外のツールを使用します。  
  単体テストの BizTalk ソリューションの他の 2 つの一般的に使用されるツールは**BizUnit**と**NUnit**です。 **BizUnit** Visual Studio Team System テスト Edition とシームレスに連携します。 同様に、 **NUnit**として実行できるように、テストを簡単に変更することができます-Visual Studio Team System テスト Edition では、します。 これらのツールの詳細については、次を参照してください。[テスト用ツール](~/technical-guides/tools-for-testing.md)です。  

@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa2504ebf80537e81e9ef0ee2f72e1e7afeb716d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92b101b47e2f83a0390a47cf6b1e4fc9a210950d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a>手順 7: ビルドと LOBWebApplication SDK サンプルの展開
 ここでは、Fabrikam が PIP (Partner Interface Process) 要求を Contoso に送信するために使用する基幹業務 (LOB) アプリケーションを作成します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK フォルダーに LOBWebApplication プロジェクトがあります。 Web アプリケーションを実行するためには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成した後で、LOBWebApplication プロジェクトをビルドする必要があります。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **仮想ディレクトリ エイリアス**] ページの [、**エイリアス**ボックスに、入力**LOBWebApplication**、順にクリック**次**です。  
   
-6.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**です。 フォルダーの参照 ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobwebapplication**、およびをクリックして**OK**です。 **[次へ]**をクリックします。  
+6.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**です。 フォルダーの参照 ダイアログ ボックスに移動 ***\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBWebApplication**、クリックして**OK**です。 **[次へ]**をクリックします。  
   
 7.  **仮想ディレクトリのアクセス許可**] ページで、選択を解除**読み取り**[ **(ASP) などのスクリプトを実行**、順にクリック**[次へ]**です。  
   
@@ -64,11 +64,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  **[ファイル]** メニューの **[開く]**をポイントし、 **[プロジェクト/ソリューション]**をクリックします。  
   
-3.  プロジェクトを開く ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobwebapplication**を選択**LOBWebApplication.sln**ソリューション ファイル、およびクリック**開く**です。  
+3.  プロジェクトを開く ダイアログ ボックスに移動 ***\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication**を選択、 **LOBWebApplication.sln**ソリューション ファイル、およびクリック**開く**です。  
   
 4.  ソリューション エクスプ ローラーで右クリック**http://localhost/LOBWebApplication**、クリックして**参照の追加**です。  
   
-5.  [参照の追加] ダイアログ ボックスで、**参照**です。 [参照の追加] ダイアログ ボックスに移動 ***\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \bin**フォルダーです。  
+5.  [参照の追加] ダイアログ ボックスで、**参照**です。 [参照の追加] ダイアログ ボックスに移動 ***\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \bin**フォルダーです。  
   
 6.  Bin フォルダーから次のように選択します。、 **Microsoft.Solutions.BTARN.ConfigurationManager.dll**と**Microsoft.Solutions.BTARN.Shared.dll**アセンブリ、およびクリック**開きます。**  
   

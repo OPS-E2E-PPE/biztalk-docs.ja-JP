@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c25615c2efcb37ebfc6083bc09d48c7fc1506217
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b9e3921b8bf83e3e7e775efef77a029bfda2e7e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schemavalidator"></a>SchemaValidator
 メッセージ インスタンスに関連した問題のトラブルシューティングを行うには、SchemaValidator ユーティリティを使用します。 検証に失敗したメッセージを受信した場合は、SchemaValidator ユーティリティを実行して、失敗の原因を特定できます。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
  このユーティリティは、使用中のアセンブリにスキーマの .dll ファイルが含まれているが、スキーマの .xsd ファイルを持っていない場合に使用します。 SchemaValidator ユーティリティでは、スキーマの .dll ファイルを使用して検証できます。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\schemavalidator  
+ \<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\schemavalidator  
   
 ## <a name="building-and-running-schemavalidator"></a>SchemaValidator のビルドと実行  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド プロンプトを開きます。  
   
-2.  移動\<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\schemavalidator です。  
+2.  移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\schemavalidator です。  
   
 3.  コマンド プロンプトで次のように入力します。 **sn-k SchemaValidator.snk**、ENTER キーを押します。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **ファイル** メニューのをポイント**開く**、順にクリック**ソリューションを開く**です。  
   
-6.  移動\<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\schemavalidator、選択**SchemaValidator.sln**、し、をクリックして**開く**です。  
+6.  移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\schemavalidator、選択**SchemaValidator.sln**、クリックして**開く**です。  
   
 7.  ソリューション エクスプ ローラーで右クリック**SchemaValidator**、クリックして**プロパティ**です。  
   
@@ -67,12 +67,12 @@ ms.lasthandoff: 09/20/2017
   
 12. 右クリック**SchemaValidator**、クリックして**ビルド**です。  
   
-13. メッセージ インスタンスを変更する削除して、テスト、 \< \!DOCTYPE… > タグは、XML インスタンスのヘッダーから DTD ファイルを指定します。  
+13. メッセージ インスタンスを変更する削除して、テスト、 \< \!DOCTYPE しています.\>タグは、XML インスタンスのヘッダーから DTD ファイルを指定します。  
   
 14. メッセージ インスタンスのルート ノードに、検証に使用するスキーマの XML 名前空間を追加します。  
   
     > [!NOTE]
-    >  SchemaValidator ユーティリティによる検証する準備が整ったスキーマの例は、の Sample3A4.xml を参照してください\<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\。SchemaValidator です。  
+    >  SchemaValidator ユーティリティによる検証する準備が整ったスキーマの例は、の Sample3A4.xml を参照してください\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>アクセラレータ。for rosettanet \sdk\schemavalidator です。  
   
 15. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**SchemaValidator.cs**ユーティリティを実行するには、ctrl キーと F5 キーを押します。  
   

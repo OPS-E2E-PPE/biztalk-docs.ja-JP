@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a446f5527bf06164d14079c0bb40f2f41942f38
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4c2e029e9599143c52577771a313d9810ca6f12
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="add-a-host-instance"></a>ホスト インスタンスを追加します。
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
  利用できない [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューター上に BizTalk ホストのインスタンスを作成しようとすると、次のエラー メッセージを示すダイアログ ボックスが表示されます。  
   
- ホストのインスタンスをインストール\<*ホスト名*> サーバーで\<*サーバー名*> できませんでした。  
+ ホストのインスタンスをインストール\<*ホスト名*\>サーバーで\<*サーバー名*\>できませんでした。  
   
  追加情報:  
   
@@ -86,11 +86,11 @@ ms.lasthandoff: 09/20/2017
   
  [OK] をクリックしてダイアログ ボックスを消すと、次のエラー メッセージを示すダイアログ ボックスが表示されます。  
   
- ホストのインストールを中止をクリーンアップして\<*ホスト名*> サーバーで\<*サーバー名*> できませんでした。  
+ ホストのインストールを中止をクリーンアップして\<*ホスト名*\>サーバーで\<*サーバー名*\>できませんでした。  
   
  追加情報:  
   
- Windows NT サービス BTSSvc を削除するときにエラーが発生しました {*\<GUID >*}。 (WinMgmt)。  
+ Windows NT サービス BTSSvc を削除するときにエラーが発生しました {*\<GUID\>*}。 (WinMgmt)。  
   
  クリックすると、 **OK**このダイアログ ボックスを破棄する BizTalk ホストのインスタンスは、BizTalk 管理コンソールに表示されます、**ステータス**の**アンインストールに失敗しました**.  
   

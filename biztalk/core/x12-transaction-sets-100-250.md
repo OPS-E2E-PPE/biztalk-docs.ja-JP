@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39a9bdf86b409ab19f86b906be5c8d5775f3aa0e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b0ee30a39e38d80ac55b85fed6f61e7db9f5242c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="x12-transaction-sets-100-250"></a>X12 トランザクション セットの 100 ~ 250
-このトピックでは、[!INCLUDE[prague](../includes/prague-md.md)] でサポートされている X12 トランザクション セットおよびバージョンを示します。  
+このトピックの一覧、X12 トランザクション セットと BizTalk Server でサポートされているバージョン。  
   
  このトピックには、次のトランザクション セットが含まれています。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3ab2de6dabd581cb36d23ce218fb1b902ac04e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f7440a0bad39fbfddb6319f4051a397f08ac09f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-add-a-fileact-send-port-for-the-fileact-real-time-scenario"></a>ステップ 3 D: FileAct リアルタイム シナリオ FILEACT 送信ポートの追加
 この手順を開始する前に行う必要があります[手順 3 C: Sw:HandleRequest メッセージのキャプチャに FileAct リアルタイム シナリオでは、ファイル送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md)です。  
@@ -41,11 +41,11 @@ ms.lasthandoff: 09/20/2017
     |**ユーザー名**|SAG 接続を適切なユーザー名を設定します。|  
     |**アダプターのモード**|ドロップダウン リストから選択**ストア アンド フォワード**です。|  
     |**否認不可インジケーター**|ドロップダウン リストから選択**FALSE**です。|  
-    |**要求の種類**|適切な設定\<RequestType > SWIFT でのプロビジョニングに基づく文字列。|  
+    |**要求の種類**|適切な設定\<RequestType\> SWIFT でのプロビジョニングに基づく文字列。|  
     |**ResponseCrypto**|ドロップダウン リストから選択**FALSE**です。|  
-    |**要求元**|適切な設定\<リクエスター > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**応答側**|適切な設定\<レスポンダー > SWIFT でのプロビジョニングに基づいて文字列。|  
-    |**サービス名**|適切な設定\<サービス名 > SWIFT でのプロビジョニングに基づいています。|  
+    |**要求元**|適切な設定\<リクエスター\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**応答側**|適切な設定\<レスポンダー\> SWIFT でのプロビジョニングに基づいて文字列。|  
+    |**サービス名**|適切な設定\<サービス名\>SWIFT でのプロビジョニングに基づいています。|  
     |**受信確認のインジケーター**|ドロップダウン リストから選択**FALSE**です。|  
     |**イベントのエンドポイント**|ドロップダウン リストから選択**FALSE**です。|  
     |**ファイルの圧縮**|ドロップダウン リストから選択**None**です。|  
@@ -84,4 +84,4 @@ ms.lasthandoff: 09/20/2017
  [手順 3: ファイルの受信場所、FileAct リアルタイムのシナリオの追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)   
  [手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario.md)   
  [手順 3 C: FileAct リアルタイム シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md)   
- [ステップ 3 e: FileAct リアルタイム シナリオ Sw:ExchangeFileResponse メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)
+ [手順 3E: FileAct リアルタイム シナリオ用に Sw:ExchangeFileResponse メッセージをキャプチャするためにファイルの送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)

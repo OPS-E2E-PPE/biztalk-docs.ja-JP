@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14ff75bff7d5b22efdafb7aa3327683fbe805514
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b882c44e69489114a2dd8084df71d6414df0cb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="common-errors"></a>一般的なエラー
 ここでは、BizTalk マッパーを使用してマップを作成しているときによく発生するエラー メッセージを示します。  
@@ -99,9 +99,9 @@ ms.lasthandoff: 09/20/2017
 ### <a name="problem"></a>問題  
  BizTalk プロジェクトをビルドすると、BizTalk マッパーが次のようなエラーを生成します。  
   
--   "ファイル\<filename > が名前空間と型名のプロパティの値が重複します"。  
+-   "ファイル\<filename\>が名前空間と型名のプロパティの値が重複します"。  
   
--   "名前空間\<名 > '_' の定義が既に含まれています"。  
+-   "名前空間\<名前\>'_' の定義が既に含まれています"。  
   
 ### <a name="cause"></a>原因  
  BizTalk プロジェクトでは、次のことが検査されます。  

@@ -12,16 +12,16 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc85d47da81d2d7425c7db4aad90ea32389f7d84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dc21b37ae80299bf5ddd78d1ca48331e1e369e78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-namespaces-with-the-wsdl-proxy-in-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK の WSDL プロキシで使用する名前空間
 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] WSDL とプロキシを使用して、開発者によって指定された値を使用してアダプターを生成、 [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)] SERVICENAMESPACE プライベート変数の変更を使用してコードで指定されているか、または`Namespace`アダプターのプロパティです。  
   
- 内で定義されている要素とスキーマ型、 \<wsdl:types >\<スキーマ > 既定では、{OperationNamespace} を使用します。 特定の種類、オーバーライドされた TypeNamespace 設定がある場合、 **TypeMetadata**オブジェクト、その名前空間は複合型の使用やまたは要素の定義。  
+ スキーマの種類と内で定義されている要素、 \<wsdl:types\>\<スキーマ\>{OperationNamespace} 既定で使用します。 特定の種類、オーバーライドされた TypeNamespace 設定がある場合、 **TypeMetadata**オブジェクト、その名前空間は複合型の使用やまたは要素の定義。  
   
 ## <a name="impact-on-wsdl"></a>WSDL に与える影響  
  次の表では、カスタム アダプターに異なる名前空間が、対応する WSDL に与える影響を示します。 表内の ~ {OperationNamespace} は、URI のクラスの名前空間のマッピングたとえば、{OperationNamespace} は"myscheme://a.b/c"~ {OperationNamespace} myscheme.a.b.c になります。  
@@ -29,11 +29,11 @@ ms.lasthandoff: 09/20/2017
 |WSDL のコンストラクト|構文|  
 |--------------------|------------|  
 |WSDL の targetNamespace<br /><br /> Xmlns:ts|{Custom}Adapter.Namespace|  
-|\<wsdl:portType >|{スキーム}. 最大 {OperationNamespace}|  
+|\<wsdl:portType\>|{スキーム}. 最大 {OperationNamespace}|  
 |WSDL 入力メッセージ名|{スキーム}. 最大 {OperationNamespace} _ {OperationName} _InputMessage|  
 |WSDL の出力メッセージ名|{スキーム}. 最大 {OperationNamespace} _ {OperationName} _OutputMessage|  
-|\<wsdl:types >\<スキーマ > targetNamespace|{スキーム}://{OperationNamespace}|  
-|\<要素 >\<complexType >|その値が null または空でない場合は、{TypeNamespace} を使用します。|  
+|\<wsdl:types\>\<スキーマ\>targetNamespace|{スキーム}://{OperationNamespace}|  
+|\<要素\>\<complexType\>|その値が null または空でない場合は、{TypeNamespace} を使用します。|  
   
 ## <a name="impact-on-proxy"></a>プロキシへの影響  
  名前空間では、プロキシ内の次の 3 つの異なる属性が影響を受けます。  

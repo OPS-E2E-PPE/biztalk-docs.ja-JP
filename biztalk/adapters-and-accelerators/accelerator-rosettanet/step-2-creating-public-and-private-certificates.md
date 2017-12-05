@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d9653f1ec72e56b225142d2d6c9fdff24198e7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c26765b19c868dbb78d3924069b60161827312c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-creating-public-and-private-certificates"></a>手順 2: パブリックおよびプライベート証明書の作成
 この手順で作成した証明機関を使用する[手順 1: 証明機関 &#91; を作成します。RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)を使用して、Contoso と Fabrikam 組織パブリックおよびプライベート証明書を生成します。  
@@ -123,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
 15. **ファイルにエクスポート**] ページで [**参照**です。  
   
-16. **名前を付けて保存**ファイル パスを使用して証明書を保存 ダイアログ ボックス、 *\<ドライブ >*: \Certs\Fabrikam Private Encryption.pfx です。  
+16. **名前を付けて保存**ファイル パスを使用して証明書を保存 ダイアログ ボックス、 *\<ドライブ\>*: \Certs\Fabrikam Private Encryption.pfx です。  
   
 17. **エクスポートするファイル**] ページで [**次**です。  
   
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  **ファイルにエクスポート**] ページで [**参照**です。  
   
-7.  名前を付けて保存 ダイアログ ボックスで、入力**\<ドライブ >: \Certs**の**で保存**、 **Fabrikam Public Encryption.cer**として**ファイル名**、および **\*.cer**の**型として保存**、順にクリック**保存**です。  
+7.  名前を付けて保存 ダイアログ ボックスで、入力**\<ドライブ\>: \Certs**の**で保存**、 **Fabrikam Public Encryption.cer**として**ファイル名**、および **\*.cer**の**型として保存**、順にクリック**保存**です。  
   
 8.  **エクスポートするファイル**] ページで [**次**です。  
   
@@ -162,4 +162,4 @@ ms.lasthandoff: 09/20/2017
 12. Contoso 署名証明書および Contoso 暗号化証明書を生成するため、それぞれファイル名 Contoso Public Signature.cer と Contoso Public Encryption.cer を使用して、手順 1. ～ 9. を繰り返します。  
   
 ## <a name="see-also"></a>参照  
- [手順 3: パブリックおよびプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)
+ [手順 3: パブリック証明書とプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)

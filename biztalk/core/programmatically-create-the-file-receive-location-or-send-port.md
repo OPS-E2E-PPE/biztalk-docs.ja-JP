@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92737ca115e95c5cd66fdf0e03cf05296ef16088
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af6365c640cbc51053d02822141915cbd4cad828
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="programmatically-create-the-file-receive-location-or-send-port"></a>プログラムによって、ファイルを作成する受信場所または送信ポート
 ファイルを作成する方法は、受信ポートと、プログラムでポートを送信します。 使用する、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]に進み、[ファイル アダプターを構成する](../core/configure-the-file-adapter.md)です。
@@ -50,8 +50,8 @@ BizTalk エクスプ ローラー オブジェクト モデルは、公開、**�
    <FileMask vt="8">*.xml</FileMask>  
    <FileNetFailRetryCount vt="19">5</FileNetFailRetryCount>  
    <FileNetFailRetryInterval vt="19">5</FileNetFailRetryInterval>  
-   \<Username vt=”8”>MyDomain\MyUsername</Username>  
-   \<Password vt=”8”>PASSWORD</Password>  
+   <Username vt=”8”>MyDomain\MyUsername</Username>  
+   <Password vt=”8”>PASSWORD</Password>  
 </CustomProps>  
   
 ```  

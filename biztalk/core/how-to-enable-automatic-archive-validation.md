@@ -15,11 +15,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 258fcb96bbb9bbb045aeb3f48c2b324502d44940
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e654d22a08a7b07210ded9c319953c288065927a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-automatic-archive-validation"></a>アーカイブの自動検証を有効にする方法
 アーカイブ検証を使用すると、アーカイブを作成時に検証することができます。 アーカイブの自動検証を有効にするには、セカンダリ データベース サーバー (検証サーバー) をセットアップしておく必要があります。 アーカイブ プロセスは単純なバックアップなので、ハードウェアの問題で、ディスク上に格納される実際のイメージが破損する可能性があります。  
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
 13. **全般**] ページの [、**コマンド**ボックスで、コマンドで、 **exec dtasp_ValidateArchive null の場合、null**、置換 null の場合、null では、BizTalk をホストしているサーバーの名前クリックして、単一引用符、二重引用符で囲まれた、BizTalk 追跡データベースの名前を続けて追跡データベースで囲まれた**OK**です。 例:  
   
-     **exec dtasp_ValidateArchive '**  *\<TrackingServerName >* **'、'**  *\<TrackingDatabaseName >* **'**  
+     **exec dtasp_ValidateArchive '**  *\<TrackingServerName\>*  **'、'**  *\<TrackingDatabaseName\>* **'**  
   
 > [!NOTE]
 >  ValidateArchive ジョブにはスケジュールが設定されていません。このジョブのスケジュールは構成しないでください。 代わりに、アーカイブが作成されるときに、DTA Purge and Archive (BizTalkDTADb) ジョブがこのジョブを自動的に開始します。  

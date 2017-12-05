@@ -15,14 +15,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07c644115eb65200bd041889cf072597716e808f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 97e60195bb66e06aafc02e76b43fb251cb9860a7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="programming-guide"></a>プログラミング ガイド
-『[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] プログラミング ガイド』では、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を使用してコードを記述する開発者向けの概念と手順を説明します。 このガイドを使用すると組み合わせて[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+『[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] プログラミング ガイド』では、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を使用してコードを記述する開発者向けの概念と手順を説明します。 このガイドを使用すると組み合わせて[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。  
   
 > [!NOTE]
 >  このガイドを読む前にする必要がありますと[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]® 開発、BizTalk Server と[RosettaNet accelerator](learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)です。
@@ -34,6 +34,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [プライベート プロセスのカスタマイズ](../../adapters-and-accelerators/accelerator-rosettanet/customizing-private-processes.md)  
   
--   [Pip の操作](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)  
+-   [PIP の操作](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)  
   
--   [送受信コンポーネントの送信をカスタマイズします。](../../adapters-and-accelerators/accelerator-rosettanet/customizing-send-and-receive-components.md)
+-   [送受信コンポーネントのカスタマイズ](../../adapters-and-accelerators/accelerator-rosettanet/customizing-send-and-receive-components.md)

@@ -12,14 +12,14 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 806f1efb67205771a1e202c8bafd77a493d584e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6aefa415bec4b996fa7b5cd4689c48f834dc36a2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-measuring-performance-on-hyper-v"></a>チェックリスト: HYPER-V のパフォーマンスの測定
-コレクション メソッドの多くは、HYPER-V 仮想マシンのパフォーマンスにインストールされているゲスト オペレーティング システムのパフォーマンスを分析する場合の原則のほとんどは、同じ物理コンピューターにインストールされているオペレーティング システムのパフォーマンスを分析するが、します。異なる。 パフォーマンスを評価するときに、以下のセクションでは、クイック リファレンスとして使用してください、 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] HYPER-V 仮想マシンにインストールされているゲスト オペレーティング システムで実行されているソリューションです。  
+コレクション メソッドの多くは、HYPER-V 仮想マシンのパフォーマンスにインストールされているゲスト オペレーティング システムのパフォーマンスを分析する場合の原則のほとんどは、同じ物理コンピューターにインストールされているオペレーティング システムのパフォーマンスを分析するが、します。異なる。 以下のセクションでは、HYPER-V 仮想マシンにインストールされているゲスト オペレーティング システムで実行されている BizTalk Server ソリューションのパフォーマンスを評価するときに、クイック リファレンスとして使用してください。  
   
 ## <a name="measuring-disk-io-performance"></a>ディスク I/O パフォーマンスの測定  
  HYPER-V 仮想マシンにインストールされているゲスト オペレーティング システム上のディスク I/O パフォーマンスを測定するのにには、次のパフォーマンス モニター カウンターを使用します。  

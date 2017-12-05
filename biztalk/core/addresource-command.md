@@ -12,18 +12,18 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97d2cb07bd0a05ddd1e79f4048bfe30e51e8d866
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 875a087fa3afe7515aee2c406cbc47551bea1f4d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="addresource-command"></a>AddResource コマンド
 このセクションの各トピックでは、AddResource コマンドの各種パラメーターについてのリファレンス情報を紹介しています。 このコマンドで使用されるパラメーターは、追加するアイテムの種類によって異なります。 成果物の種類の完全な一覧を取得するを使用して、 **ListTypes**コマンドを」の説明に従って[ListTypes コマンド](../core/listtypes-command.md)です。  
   
  次のコマンドを入力することによって、追加するアイテムの種類に応じたヘルプを参照できます。  
   
- **BTSTask AddResource/Type:**\<*型名*> **/しますか?**  
+ **BTSTask AddResource/Type:**\<*型名*\> **/しますか?**  
   
 > [!NOTE]
 >  追加するアイテムのパス名 (あるいはファイル名) が極端に長いと、アイテムをアプリケーションに追加するときにエラーが発生する場合があります。 パスは 260 文字を超えることはできません。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [AddResource コマンド: BizTalk アセンブリ](../core/addresource-command-biztalk-assembly.md)  
   
--   [AddResource コマンド: BizTalk バインド](../core/addresource-command-biztalk-binding.md)  
+-   [AddResource コマンド: BizTalk バインディング](../core/addresource-command-biztalk-binding.md)  
   
 -   [AddResource コマンド: .NET アセンブリ](../core/addresource-command-net-assembly.md)  
   

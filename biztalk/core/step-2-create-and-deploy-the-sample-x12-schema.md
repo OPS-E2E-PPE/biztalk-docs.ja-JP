@@ -12,11 +12,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe4f937af910ceef1ed461e25ea3c62cad5cbc29
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57c95ac64637027b5d39699a42e8fac93c003697
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-and-deploy-the-sample-x12-schema"></a>手順 2: が作成および展開サンプル X12 スキーマ
 ![手順 11 の 2](../core/media/tut-step2-of-11.gif "Tut_Step2_of_11")  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 いない場合を参照してください。[を BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)です。  
   
-3.  Schemas プロジェクトを右クリックし、をクリックして**プロパティ**です。 クリックして、**署名**プロジェクト デザイナーのタブです。 チェック、**アセンブリに署名** チェック ボックスの**強力なキー名ファイルを選択して**を選択**\<新規作成 ...> >**入力と`Schemas.snk`です。 クリア**キーファイルをパスワードで保護する**順にクリック**OK**です。 プロジェクトのプロパティのダイアログ ボックスを閉じ、変更を保存します。  
+3.  Schemas プロジェクトを右クリックし、をクリックして**プロパティ**です。 クリックして、**署名**プロジェクト デザイナーのタブです。 チェック、**アセンブリに署名** チェック ボックスの**強力なキー名ファイルを選択して**select、 **\<新規しています.\>** 入力`Schemas.snk`です。 クリア**キーファイルをパスワードで保護する**順にクリック**OK**です。 プロジェクトのプロパティのダイアログ ボックスを閉じ、変更を保存します。  
   
 4.  Schemas.btproj をビルドおよび展開します。  
   

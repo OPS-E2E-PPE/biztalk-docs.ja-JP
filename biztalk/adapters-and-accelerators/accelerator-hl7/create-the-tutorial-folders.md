@@ -12,22 +12,22 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6720ab38e42b30928208d758a9083d3286df883d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49058f6e3519833fc90a86661f1d02fd40019113
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-tutorial-folders"></a>Tutorial フォルダーを作成します。
 使用して、次のフォルダーを作成する[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラー。  
   
--   \<*ドライブ*: > \Batching チュートリアル  
+-   \<*ドライブ*:\>\Batching チュートリアル  
   
--   \<*ドライブ*: > \Batching Tutorial\Instances  
+-   \<*ドライブ*:\>\Batching Tutorial\Instances  
   
--   \<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchACKDrop  
+-   \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchACKDrop のアクセラレータ  
   
--   \<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchMsgDrop  
+-   \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchMsgDrop のアクセラレータ  
   
 ## <a name="see-also"></a>参照  
- [バッチ処理のチュートリアルを使用する準備をしています](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)
+ [バッチ処理のチュートリアルを使用するための準備](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)

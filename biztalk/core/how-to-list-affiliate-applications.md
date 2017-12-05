@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d01ae0a8d94b38583745ba706524c1b02c295b71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f6c4d4e4118bfe5f5cab7a9c44e770dd12656c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-affiliate-applications"></a>関連アプリケーションを一覧表示する方法
 ここで示すコマンドを使用すると、関連アプリケーションをすべて一覧表示できます。 ユーザーがアプリケーション管理者アカウントのメンバーである場合、このコマンドを実行すると、そのユーザーが管理者であるアプリケーションだけが表示されます。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
 3.  型**ssomanage-listapps [all]**場所**すべて**省略可能なパラメーターで、構成ストアの機能を使用してアプリケーションにも表示されます。 このコマンドを実行するユーザーがアプリケーション管理者である場合、そのユーザーが管理者であるアプリケーションだけが一覧表示されます。 このコマンドを実行するユーザーが関連管理者または SSO 管理者である場合、すべての関連アプリケーションが一覧表示されます。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
 3.  型**ssoclient – listapps**関連アプリケーションを一覧表示します。 これによって一覧表示されるのは、このタスクを実行しているユーザーがメンバーである関連アプリケーションだけです。つまり、ユーザーは一覧表示する関連アプリケーションのアプリケーション ユーザー グループ アカウントに属している必要があります。  
   

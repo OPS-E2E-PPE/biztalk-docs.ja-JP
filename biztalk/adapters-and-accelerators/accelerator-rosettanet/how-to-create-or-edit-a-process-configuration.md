@@ -19,11 +19,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c9c9be5e9f3361683e495febbd98a05156399d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c011183c6ba34c9614d1e642916264224def546e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-or-edit-a-process-configuration"></a>作成またはプロセス構成を編集する方法
 ここでは、プロセス構成の作成方法または編集方法について説明します。  
@@ -93,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  プロセス構成を編集して、をクリックするを右クリックして**プロパティ**です。  
   
-5.  *\<プロセス構成 >*プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、必要に応じて設定を変更します。 これらの設定の詳細については、上の表を参照してください。  
+5.  *\<プロセス構成\>*プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、に応じて設定を変更します。必須。 これらの設定の詳細については、上の表を参照してください。  
   
 6.  **[OK]**をクリックします。  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed990dd60ab65c7b85284a9eeadd4b27de3136f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68c63e7aeab46436e894d43d77b92a2a061d5b60
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a>トラブルシューティング : 問題と解決策
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] の実行に関する問題を説明します。 個々の問題について、具体的な現象、考えられる原因、および解決策について詳しく説明します。  
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="installing-btarn-on-a-computer-without-biztalk-server-causes-missing-files"></a>BizTalk Server がインストールされていないコンピューターに BTARN をインストールするとファイルが欠落する  
   
 ### <a name="symptom"></a>現象  
- ないコンピューターで ConfigFramework.exe ファイルを実行する増えません[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]または[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をインストールします。 この [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成は、HTTP クライアントとしてのみ使用できます。  
+ ないコンピューターで ConfigFramework.exe ファイルを実行する増えません[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server または[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をインストールします。 この [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成は、HTTP クライアントとしてのみ使用できます。  
   
 ### <a name="possible-cause"></a>考えられる原因  
  インストール先に 2 つの DLL ファイルが見つかりません。  
@@ -102,7 +102,7 @@ ms.lasthandoff: 09/20/2017
   
  -または-  
   
- Id の BAM メッセージ アクティビティを終了してエラー  *\<ID 番号 >*です。  
+ Id の BAM メッセージ アクティビティを終了してエラー  *\<ID 番号\>*です。  
   
 ### <a name="possible-cause"></a>考えられる原因  
  ビジネス アクティビティ監視 (BAM) 追跡ツールがインストールされていません。  
@@ -123,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
  例:  
   
- \<schemaInfo document_type"4A1"バージョンの = ="V02_00"xmlns ="http://schemas.microsoft.com/BizTalk/2003" *displayroot_reference ="Pip4A1StrategicForecastNotification"* root_reference ="Pip4A1StrategicForecastNotification"/>  
+ \<schemaInfo document_type"4A1"バージョンの = ="V02_00"xmlns ="http://schemas.microsoft.com/BizTalk/2003" *displayroot_reference ="Pip4A1StrategicForecastNotification"* root_reference ="Pip4A1StrategicForecastNotification"\>  
   
 ## <a name="404-not-found-error-when-sending-a-http-request"></a>HTTP 要求の送信時に "404 Not found" というエラーが表示される  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-2.  展開**\<コンピューター名 > (ローカル コンピューター)**、クリックして**Web サービス拡張**です。  
+2.  展開**\<コンピューター名\>(ローカル コンピューター)**、クリックして**Web サービス拡張**です。  
   
 3.  **Web サービス拡張** ウィンドウで、HwsMessages HttpReceive の状態が許可されていることを確認します。 いない場合を右クリックし**HwsMessages HttpReceive**、クリックして**許可**です。  
   
@@ -154,11 +154,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-2.  展開**\<コンピューター名 > (ローカル コンピューター)**を右クリックして**Web サービス拡張**、クリックして**新しい Web サービス拡張を追加**です。  
+2.  展開**\<コンピューター名\>(ローカル コンピューター)**を右クリックして**Web サービス拡張**、クリックして**新しい Web サービス拡張を追加**.  
   
 3.  **新しい Web サービス拡張** ダイアログ ボックスで、**拡張機能名**ボックスに、入力**BizTalk ISAPI 拡張**、順にクリック**追加**です。  
   
-4.  **Add File**  ダイアログ ボックスで、**ファイルへのパス**ボックスに、入力**\<ドライブ >: \Program Files\Microsoft BizTalk Server\<バージョン > \HttpReceive\BTSHttpReceive.dll**、クリックして**OK**です。  
+4.  **Add File**  ダイアログ ボックスで、**ファイルへのパス**ボックスに、入力**\<ドライブ\>: \Program Files\Microsoft BizTalk Server\<バージョン\>\HttpReceive\BTSHttpReceive.dll**、クリックして**OK**です。  
   
 5.  **新しい Web サービス拡張**ダイアログ ボックスで、**拡張機能の状態を許可 に設定**、順にクリック**OK**です。  
   
@@ -170,10 +170,10 @@ ms.lasthandoff: 09/20/2017
  ユーザー アカウント '\HostSvc' で構成された BizTalk の分離ホスト インスタンスが起動していないか、このコンピューターに存在しません。 BizTalk 管理コンソールを使用して、新しい分離ホストを作成するか、既存の分離ホストを再構成して、"\hostsvc" として実行してください。  
   
 ### <a name="possible-cause"></a>考えられる原因  
- 構成ウィザードを実行するユーザーを構成する必要があります '\<*マシン名*> \hostsvc'、'\hostsvc' です。  
+ 構成ウィザードを実行するユーザーを構成する必要があります '\<*マシン名*\>\hostsvc'、'\hostsvc' です。  
   
 ### <a name="solution"></a>解決方法  
- BizTalk 管理コンソールを開き、アカウントで実行されるように、アカウント '\hostsvc' で実行しているホストを変更する '\<*マシン名*> \hostsvc' です。  
+ BizTalk 管理コンソールを開き、アカウントで実行されるように、アカウント '\hostsvc' で実行しているホストを変更する '\<*マシン名*\>\hostsvc' です。  
   
 ## <a name="you-receive-an-error-when-importing-and-compiling-a-rosettanet-next-generation-pip-schema"></a>RosettaNet Next Generation PIP スキーマをインポートしてコンパイルするときにエラーが発生する  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-2.  展開**\<コンピューター名 > (ローカル コンピューター)**を右クリックして**Web サイト**、クリックして**プロパティ**です。  
+2.  展開**\<コンピューター名\>(ローカル コンピューター)**を右クリックして**Web サイト**、クリックして**プロパティ**です。  
   
 3.  選択**ISAPI フィルター**タブです。  
   
@@ -303,7 +303,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="the-hubscenario-sample-will-not-be-installed-correctly-if-the-assembly-key-files-are-not-entered-for-the-projects"></a>アセンブリ キー ファイルがプロジェクトに入力されていない場合に HubScenario サンプルが正しくインストールされない  
   
 ### <a name="symptom"></a>現象  
- Setup.bat を実行すると*\<ドライブ >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk\hubscenario HubScenario サンプルをセットアップする、操作は失敗します。  
+ Setup.bat を実行すると*\<ドライブ\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\hubscenario を設定する、HubScenario サンプルについては、操作は失敗します。  
   
 ### <a name="possible-cause"></a>考えられる原因  
  アセンブリ キー ファイルがプロジェクトに設定されていないので、HubScenario および HubHelper アセンブリが正しく展開されていません。  
@@ -317,7 +317,7 @@ ms.lasthandoff: 09/20/2017
  setup.bat を実行して Double Action PIPAutomation オーケストレーション サンプルを構築および初期化しようとしたときに、BTARNData データベースに PipAutomationGetAction ストアド プロシージャが作成されない。  
   
 ### <a name="possible-cause"></a>考えられる原因  
- 64 ビットのコンピューター、あるいは SQL Server 2008 R2 または SQL Server 2008 SP1 で実行されている [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] インストールで setup.bat を実行しました。 これらのインスタンスでは setupx64.bat を実行する必要があります。  
+ 64 ビット コンピューターまたは SQL Server 2008 R2 または 2008 SP1 で実行されている BizTalk Server のインストールでは、setup.bat を実行します。 これらのインスタンスでは setupx64.bat を実行する必要があります。  
   
 ### <a name="solution"></a>解決方法  
  setupx64.bat を実行してストアド プロシージャを作成します。 詳細については、次を参照してください。 [Double Action PIPAutomation オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)です。  
@@ -331,4 +331,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)   
- [ループバック](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)
+ [Loopback](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)

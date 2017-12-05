@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5da387377f6201b518d3c5fdf37dabb872bcf600
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc7ed347bc81a8a00ff7faa826bd48203c47e63
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-sap-adapter"></a>SAP アダプターのパフォーマンス カウンターを使用します。
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するパフォーマンス カウンターを使用することができます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンターのカテゴリを作成します。"[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]"をインストールするに沿って、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。  
@@ -35,23 +35,23 @@ Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.
   
 -   アダプターから (送信)、SAP システムへの呼び出しの  
   
-    -   A、\<アプリケーション サーバーのホスト >、\<システム番号 >  
+    -   A、\<アプリケーション サーバー ホスト\>、\<システム番号\>  
   
-    -   B、\<メッセージ サーバー ホスト >、\<R3NAME >  
+    -   B、\<メッセージ サーバー ホスト\>、\<R3NAME\>  
   
-    -   D、\<先 >  
+    -   D、\<変換先\>  
   
 -   SAP システムからアダプターへの呼び出しの (受信)  
   
-    -   I,\<ゲートウェイ ホスト >、\<ゲートウェイ サーバー >  
+    -   I,\<ゲートウェイ ホスト\>、\<ゲートウェイ サーバー\>  
   
-    -   ID、\<先 >  
+    -   ID、\<変換先\>  
   
  アクション ID が考えられます。  
   
--   \<RFC 名 > の RFC 呼び出し)  
+-   \<RFC 名前\>(RFC 呼び出し) の  
   
--   T、\<RFC 名 > (用 tRFC の呼び出し)  
+-   T、\<RFC 名前\>(用 tRFC の呼び出し)  
   
  パフォーマンス カウンターは、アダプターが SAP システムへの最初の呼び出し後にのみ初期化されます。 また、 [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx)パフォーマンス カウンターのプロパティが 'Process' は、パフォーマンス カウンターは、カウンターを作成するプログラムが終了するとすぐに存在しなくなることを意味します。
   

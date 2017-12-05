@@ -13,17 +13,17 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf1b105f2e7cfc5601469ac55cac6af22aa21a16
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 64b17179b7131839dc369e9bdecf5e40dd831e4d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="transmitpipeline-receiveport-node"></a>TransmitPipeline (ReceivePort ノード)
 バインド ファイルの ReceivePort ノードの TransmitPipeline ノードでは、バインド ファイルと共にエクスポートされる双方向受信ポートにバインドされている送信パイプラインに関する特定の情報が提供されます。  
   
 > [!NOTE]
->  送信パイプラインを双方向受信用ためにが、受信場所のレベルでバインドされている[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、このノードが指定の旧バージョンと BizTalk Server 2004 との互換性。 送信パイプラインは双方向受信用、BizTalk Server 2004 で受信ポートのレベルでバインドされます。 プロパティによって設定された BizTalk Server 2004 からエクスポートされたバインド ファイルのこのノードは参照される各双方向の受信場所の SendPipeline ノードに適用されるため、受信ポートにバインド ファイルをインポートするときに[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+>  送信パイプラインは双方向受信用、BizTalk Server で受信場所のレベルでバインドは、以降このノードが指定の旧バージョンと BizTalk Server 2004 との互換性。 送信パイプラインは双方向受信用、BizTalk Server 2004 で受信ポートのレベルでバインドされます。 BizTalk Server 2004 からエクスポートされたバインド ファイルのこのノードに設定されているプロパティは、BizTalk Server に、バインド ファイルをインポートするときに、受信ポートによって参照される各双方向の受信場所の SendPipeline ノードに適用されます。  
   
 ## <a name="nodes-in-the-transmitpipeline-node"></a>TransmitPipeline ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
@@ -38,4 +38,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [送信パイプライン](../core/sendpipeline-receivelocation-node.md)   
- [受信場所](../core/receivelocation-receivelocations-node.md)
+ [ReceiveLocation](../core/receivelocation-receivelocations-node.md)

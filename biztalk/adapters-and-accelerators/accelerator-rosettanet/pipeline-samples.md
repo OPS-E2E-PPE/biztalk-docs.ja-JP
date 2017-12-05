@@ -16,16 +16,16 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c6440e5f4f27f4e1221f84829a6cf7ce4553539
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c7ae426c67e34381299691f1ee4592fc36ba98c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="pipeline-samples"></a>パイプラインのサンプル
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) には、送信パイプラインのサンプルおよび受信パイプラインのサンプルが含まれています。 ここでは、各サンプルの機能、サンプルを構築して実行する手順、および予期される結果について説明します。  
   
- カスタム パイプラインを構築するには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.BTARN.Schemas 名前空間にある RNPIP、RNIFv11、および RNIFv201 スキーマ アセンブリにパイプライン プロジェクトへの参照を追加します。 カスタム パイプラインの構築の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] ヘルプの「パイプライン ([!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] サンプル フォルダ)」を参照してください。  
+ カスタム パイプラインを構築するには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.BTARN.Schemas 名前空間にある RNPIP、RNIFv11、および RNIFv201 スキーマ アセンブリにパイプライン プロジェクトへの参照を追加します。 カスタム パイプラインの構築の詳細については、次を参照してください。"パイプライン ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Samples フォルダー)"BizTalk Server のヘルプ。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/20/2017
   
 -   [受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/receive-pipeline.md)  
   
--   [メッセージ エディター パイプライン サンプル](../../adapters-and-accelerators/accelerator-rosettanet/message-editor-pipeline-sample.md)
+-   [メッセージ エディタ パイプライン サンプル](../../adapters-and-accelerators/accelerator-rosettanet/message-editor-pipeline-sample.md)

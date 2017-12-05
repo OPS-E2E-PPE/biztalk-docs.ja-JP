@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 996c88ca73fcc8abc450159e1cf26cd24b7aa241
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 345c0bbc2eae3289976738d25e76a8a377f86ea7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="messages-represented-as-xlangmessage"></a>XLANGMessage として表されるメッセージ
 **XLANGMessage**オブジェクト、XLANG サービスで宣言されたメッセージ インスタンスを表します。 このオブジェクトを取得するには、メソッド呼び出しのパラメーターとしてメッセージに参照を渡します。 **XLANGPart**オブジェクトは、XLANG サービス内のメッセージ インスタンスに含まれるメッセージ部分を表します。 このオブジェクトは取得を受信側のパラメーター型がメソッドの呼び出しで一部の参照を渡すか**XLANGPart**の渡された参照を列挙することによって、または**XLANGMessage**です。  
@@ -58,7 +58,7 @@ public static void AssignStreamFactoryToPart(XLANGMessage msg)
  送信元メッセージを変換しないで新しいメッセージを作成することが必要な場合もあります。 型の変数を使用してこれを行う**System.Xml.XmlDocument**読み込みや、それ以外の場合に適切なコンテンツを構築します。 次の例では、文字列から XML を読み込むを使用して、 **LoadXml**メソッドの**XmlDocument**:  
   
 ```  
-XmlVariable.LoadXml("\<ns0:Root PONumber=\"047745351122111\" xmlns:ns0=\"http://BTSHTTPSend.SimpleSchema\">\<MyChildRecord SubAttr1=\"Simple Attribute \" />\</ns0:Root>");  
+XmlVariable.LoadXml("<ns0:Root PONumber="047745351122111" xmlns:ns0="http://BTSHTTPSend.SimpleSchema"><MyChildRecord SubAttr1="Simple Attribute " /></ns0:Root>");  
 XLANGMessage XmlMsg = XmlVariable;  
   
 ```  
@@ -153,4 +153,4 @@ XLANGMessage XmlMsg = XmlVariable;
 ## <a name="see-also"></a>参照  
  [XSD スキーマとして表されるメッセージ](../core/messages-represented-as-xsd-schemas.md)   
  [.NET クラスとして表されるメッセージ](../core/messages-represented-as-net-classes.md)   
- [ユーザー コードでメッセージの構築](../core/constructing-messages-in-user-code.md)
+ [ユーザー コードでのメッセージの構築](../core/constructing-messages-in-user-code.md)

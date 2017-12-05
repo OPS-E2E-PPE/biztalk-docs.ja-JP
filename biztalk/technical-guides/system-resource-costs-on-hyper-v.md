@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20f9707b8606e64773d42c480735d3f876f1c3ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 491c71a446829ddddfc4d7c55053b94dcf7fc9d1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>HYPER-V のシステム リソースのコスト
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>HYPER-V でゲスト オペレーティング システムを実行しているに関連付けられたシステム リソースのコスト  
@@ -39,12 +39,12 @@ ms.lasthandoff: 09/20/2017
  このセクションの残りの部分は、ディスクのパフォーマンスを BizTalk Server の背景情報を提供、テスト構成パラメーターを使用するを説明し、得られたテスト結果の概要を示します。  
   
 #### <a name="disk-performance-when-running-a-biztalk-server-solution-on-hyper-v"></a>HYPER-V で、BizTalk Server ソリューションを実行している場合、ディスク パフォーマンス  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]非常に高くデータベース処理を要するアプリケーションの SQL Server での最大 13 個のデータベースの作成が必要な場合があります。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]優れた頻度でデータをディスクが引き続き発生して、さらに、MSDTC トランザクションのコンテキスト内で処理が実行します。 そのため、データベースのパフォーマンスは、BizTalk Server ソリューションの全体的なパフォーマンスが非常に重要です。 HYPER-V は統合 SCSI コント ローラーを提供し、Virtual Server 2005 の両方を提供するパフォーマンスが大幅などを使用して、エミュレートされた IDE デバイス経由で IDE フィルター ドライバーを提供します。  
+ BizTalk Server は非常に高くデータベース処理を要するアプリケーションの SQL Server での最大 13 個のデータベースの作成が必要な場合があります。 BizTalk Server では、優れた頻度でデータをディスクが引き続き発生して、さらに、MSDTC トランザクションのコンテキスト内で処理が実行します。 そのため、データベースのパフォーマンスは、BizTalk Server ソリューションの全体的なパフォーマンスが非常に重要です。 HYPER-V は統合 SCSI コント ローラーを提供し、Virtual Server 2005 の両方を提供するパフォーマンスが大幅などを使用して、エミュレートされた IDE デバイス経由で IDE フィルター ドライバーを提供します。  
   
  SCSI コント ローラーを使用して、データ ボリュームのディスクを構成します。 これにより、SCSI コント ローラーは、HYPER-V 統合サービスをインストールしなくても、エミュレートされた IDE コント ローラーは使用可能な HYPER-V 統合サービスがインストールされている場合にのみインストールするため、統合サービスがインストールされていることが保証されます。 SCSI コント ローラーまたは integration services に用意されている IDE フィルター ドライバーを使用して実行されるディスク I/O は、ディスク I/O のパフォーマンスをエミュレートされた IDE コント ローラーに用意されているよりも大幅に向上します。 そのため、最適なディスク I/O パフォーマンス、HYPER-V 仮想化環境でデータ ファイルには、ホストとゲストの両方のオペレーティング システムに統合サービスをインストールし、合成の SCSI コント ローラーとデータ ボリュームのディスクを構成します。 高負荷の高いストレージの I/O ワークロードの複数のデータ ドライブに配置されている場合に、全体的なパフォーマンスを向上させるため代理個別の SCSI コント ローラーに各 VHD をアタッチする必要があります。 さらに、各 VHD は、個別の物理ディスクまたは Lun に保存する必要があります。  
   
 #### <a name="measuring-passthrough-disk-performance"></a>パススルー ディスクのパフォーマンスの測定  
- 任意の統合手順中には、使用可能なリソースを最大限に使用する必要があります。 前述のように、SQL データ ボリューム上の記憶域 I/O がの全体的なパフォーマンスがかなりの部分を再生する[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ソリューションです。 そのため、このガイドの一部として hyper-v パススルー ディスクのパフォーマンスへの物理ディスクの相対的なパフォーマンスをテストしました。 Physical_SQL01 におけるメッセージ ボックス データの相対的なパフォーマンスを向上し、Virtual_SQL01 を使用して測定 IOMeter オープン ソース ツールでは、Intel Corporation によって開発されたおよび保持されるようになりましたが、オープン ソース開発ラボ (OSDL)。 IOMeter の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=122412](http://go.microsoft.com/fwlink/?LinkId=122412)です。  
+ 任意の統合手順中には、使用可能なリソースを最大限に使用する必要があります。 前述のように、SQL データ ボリューム上の記憶域 I/O は、BizTalk Server ソリューションの全体的なパフォーマンスで重要な役割を果たします。 そのため、このガイドの一部として hyper-v パススルー ディスクのパフォーマンスへの物理ディスクの相対的なパフォーマンスをテストしました。 Physical_SQL01 におけるメッセージ ボックス データの相対的なパフォーマンスを向上し、Virtual_SQL01 を使用して測定 IOMeter オープン ソース ツールでは、Intel Corporation によって開発されたおよび保持されるようになりましたが、オープン ソース開発ラボ (OSDL)。 IOMeter の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=122412](http://go.microsoft.com/fwlink/?LinkId=122412)です。  
   
  次の表では、テスト環境、使用された IOMeter 構成オプションで、実行されたテストの説明を結果の概要で使用される物理および仮想のハードウェア構成について説明します。  
   
@@ -133,7 +133,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="results"></a>[結果]  
  パススルー ディスクは、以上の Physical_SQL01 に直接接続されている SAN LUN のスループットの 90% を活かすことができます。  合計、読み書き可能な 1 秒あたりに転送された合計 MB と同様に、1 秒あたりの i/o 数が 10% 以内のすべてがします。  異常な状態のディスクの応答時間は、1 ~ 15 ミリ秒の読み取りと書き込みの間にする必要があります。 平均 I/O 反応時間は、両方のディスクに 4 ミリ秒未満でした。 応答時間のランダムな読み取りは、物理とパススルー ディスク上の 5.7 ms 5.4 ミリ秒でした。 応答の書き込み時間は、物理および仮想の両方の環境で 0.5 ミリ秒より小さいをでした。  
   
- 結果は、直接接続された物理ディスクのパフォーマンスの 90% 以上の対応の SCSI コント ローラーを使用して、パススルー ディスク番号をことができます提供を示します。 I/O サブシステムのパフォーマンスが重要で効率的な[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]操作では優れたスループットと応答時間を提供する HYPER-V はうってつけの統合、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]環境。 次の表では、物理ディスクへのパススルー ディスクのパフォーマンスを比較するときに計測されたディスクのテスト結果の概要を示します。  
+ 結果は、直接接続された物理ディスクのパフォーマンスの 90% 以上の対応の SCSI コント ローラーを使用して、パススルー ディスク番号をことができます提供を示します。 I/O サブシステムのパフォーマンスが重要では、BizTalk Server を効率的に操作するには、優れたスループットと応答時間を提供することによって HYPER-V はうってつけ、BizTalk Server 環境を統合するためです。 次の表では、物理ディスクへのパススルー ディスクのパフォーマンスを比較するときに計測されたディスクのテスト結果の概要を示します。  
   
 |測定|Physical_SQL01 (物理ディスク)|Virtual_SQL01 (パススルー)|物理ディスクへのパススルー ディスクの相対的なパフォーマンス|  
 |-----------------|---------------------------------------|------------------------------------|-----------------------------------------------------------------|  

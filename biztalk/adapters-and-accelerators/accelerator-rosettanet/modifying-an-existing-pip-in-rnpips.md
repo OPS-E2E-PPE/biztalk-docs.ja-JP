@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7aa00b1a029092247d3c4ce935edfd88f4344a95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce7f87d9af24e6388199e76e9cbf0eba076ceacf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="modifying-an-existing-pip-in-rnpips"></a>Rnpip の既存の PIP の変更
 このトピックを変更し、再デプロイしてインストール プロセス PIP (Partner Interface) スキーマの 1 つの方法について説明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップします。 スキーマは、RNPIP アセンブリの一部として展開します。  
@@ -30,18 +30,18 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-2.  検索、 \<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\utilities\schema Generator フォルダーです。  
+2.  検索、 \<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\utilities\schema Generator フォルダーです。  
   
 3.  コマンド プロンプトで次のように入力します。 **CScript InstallDTD.vbs**、ENTER キーを押します。  
   
     > [!NOTE]
-    >  [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] のインストール後は、手順 1. と 2. を実行する必要があるだけです。  
+    >  のみ、BizTalk Server をインストールした後 1 および 2 の 1 回の手順を実行する必要があります。  
   
 4.  開始**Microsoft Visual Studio 2012**です。  
   
 5.  **ファイル** メニューのをポイント**開く**、クリックして**プロジェクト**です。  
   
-6.  **プロジェクトを開く**] ダイアログ ボックスに移動\<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\schemas、し、選択**[RNPIPs.btproj**です。  
+6.  **プロジェクトを開く**] ダイアログ ボックスに移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\クリックして、スキーマ**[RNPIPs.btproj**です。  
   
 7.  **ビュー**  メニューをクリックして**BizTalk エクスプ ローラー**です。 展開**アセンブリ**、し、右クリックし、 **Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)**です。 をクリックして**展開解除**です。  
   

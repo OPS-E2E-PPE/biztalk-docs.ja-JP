@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 188912250d6637c4170b163de494dd80cba3c7db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e88bfee5d45cc1cc7bdc93d8dd50aeb1841e3a28
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="tools-for-testing"></a>テスト用ツール
 次の表の運用の準備に関連付けられているテストの実行に使用できるツールが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
@@ -27,8 +27,8 @@ ms.lasthandoff: 09/20/2017
 ||BizUnit|BizTalk ソリューションの自動テスト用に設計されたフレームワークです。 **注:** Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。 <br /><br /> BizUnit の詳細については、次を参照してください。 [BizUnit - 自動テスト分散システムのためのフレームワーク](http://go.microsoft.com/fwlink/?LinkID=85168)(http://go.microsoft.com/fwlink/?LinkID=85168)。|  
 ||NUnit|.NET コードの単体テストに使用されます。 **注:** Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。 <br /><br /> NUnit の詳細については、次を参照してください。 [Nunit](http://go.microsoft.com/fwlink/?LinkID=47931) (http://go.microsoft.com/fwlink/?LinkID=47931)。|  
 |**コード カバレッジのテスト**|Visual Studio 2010 のコード カバレッジ|アプリケーションを介してすべての実行パスが適切に実行されたことを確認し、配信不能関数またはコード内のクラスを識別するために使用します。 一般に、到達できないか、実行されることはありませんは、コードを削除する必要があります。 Microsoft Visual Studio 2010 のコード カバレッジ機能の詳細については「[を使用してコード カバレッジを判断する方法よりコードがテストされている](http://go.microsoft.com/fwlink/?LinkId=210624)(http://go.microsoft.com/fwlink/?LinkId=210624).|  
-|**パフォーマンス テスト**|ログ (PAL) のツールのパフォーマンス分析|パフォーマンス カウンター ログ ファイルを分析するためのツールです。<br /><br /> パフォーマンス分析のログ (PAL) ツールの詳細については、次を参照してください。[パフォーマンス分析のログ (PAL) ツール](http://go.microsoft.com/fwlink/?LinkID=98098)(http://go.microsoft.com/fwlink/?LinkID=98098)。|  
-||Microsoft BizTalk LoadGen 2007 ツール|負荷生成ツールのパフォーマンスとストレス テストを実行するために使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。<br /><br /> Microsoft BizTalk LoadGen 2007 ツールの詳細については、次を参照してください。 [Microsoft BizTalk LoadGen 2007 ツール](http://go.microsoft.com/fwlink/?LinkId=59841)(http://go.microsoft.com/fwlink/?LinkId=59841)。|  
+|**パフォーマンス テスト**|ログ (PAL) のツールのパフォーマンス分析|パフォーマンス カウンター ログ ファイルを分析するためのツールです。<br /><br /> パフォーマンス分析のログ (PAL) ツールの詳細については、次を参照してください。[パフォーマンス分析のログ (PAL) ツール](https://github.com/clinthuffman/PAL)です。|  
+||Microsoft BizTalk LoadGen 2007 ツール|負荷生成ツールのパフォーマンスとストレス テストを実行するために使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。<br /><br /> ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)|  
 ||Visual Studio 2010 のロード テスト|Visual Studio 2010 Ultimate エディションで使用できるを使用すると、既定では、最大 250 個のユーザーとパックを使用して Visual Studio ロード テスト仮想ユーザー 250 以上のユーザーからの負荷をシミュレートできます。 Visual Studio でのロード テストの実行の詳細については、次を参照してください。[テスト アプリケーションのパフォーマンスとストレス](http://go.microsoft.com/fwlink/?LinkId=203129)(http://go.microsoft.com/fwlink/?LinkId=203129)。|  
 ||[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]オーケストレーションのプロファイラー|オーケストレーションの時間です。 指定した期間追跡データを表示するために使用オーケストレーションでのパフォーマンスのボトルネックの存在を確認するために便利です。 **注:** Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。 <br /><br /> 詳細については、[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]オーケストレーション プロファイラー [BizTalk Server 2006 オーケストレーション プロファイラー](http://go.microsoft.com/fwlink/?LinkId=102209) (http://go.microsoft.com/fwlink/?LinkId=102209)。|  
 |**Web サービス テスト**|soapUI|Web サービスをテストするために使用するオープン ソース ユーティリティ。 **注:** Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。 <br /><br /> SoapUI の詳細については、次を参照してください。 [soapUI.org](http://go.microsoft.com/fwlink/?LinkId=102196) (http://go.microsoft.com/fwlink/?LinkId=102196)。|  
@@ -39,4 +39,4 @@ ms.lasthandoff: 09/20/2017
 ||BizTalk Server ベスト プラクティス アナライザー|BizTalk Server のベスト プラクティス アナライザーは、BizTalk Server の展開を調査し、ベスト プラクティスの標準に関連する問題の一覧を生成します。 このツールは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集することによって構成レベルの検証を実行します。 データは展開構成の評価に使用されます。 ツールを読み取りますをレポートのみ、そのシステム設定を変更しませんし、自己調整ツールではありません。<br /><br /> BizTalk Server のベスト プラクティス アナライザー ツールをダウンロードできます。 [BizTalk Server のベスト プラクティス アナライザー](http://go.microsoft.com/fwlink/?LinkId=83317) (http://go.microsoft.com/fwlink/?LinkId=83317)。|  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: テスト運用の準備](~/technical-guides/checklist-testing-operational-readiness.md)
+ [チェックリスト: 運用準備のテスト](~/technical-guides/checklist-testing-operational-readiness.md)

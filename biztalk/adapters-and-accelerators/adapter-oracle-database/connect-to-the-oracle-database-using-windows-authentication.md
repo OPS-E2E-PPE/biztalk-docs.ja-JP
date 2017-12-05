@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1b1dd0a6e11a1755bb69782f88f1a5a4b8b0067
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 840435ce334863a4b76e6ac7da0d8dd64e7d4937
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="connect-to-the-oracle-database-using-windows-authentication"></a>Windows 認証を使用して Oracle データベースへの接続します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースとの接続を確立するために Windows 認証を使用するアダプターのクライアントを有効にします。 Windows 認証を使用するアダプターのクライアントを指定する必要があります「/」は、ユーザー名とパスワードの空白のままにします。 Windows 認証を使用して Oracle データベースへの接続に関する詳細については、次を参照してください。[アダプター サービスの使用を使用して Visual Studio での Oracle データベースへの接続](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service.md)です。  
@@ -34,13 +34,13 @@ ms.lasthandoff: 09/20/2017
 3.  Oracle データベース内の外部のユーザーとして Windows ユーザーを作成します。 ユーザー名が大文字である必要がありますに注意してください。  
   
     ```  
-    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME>” IDENTIFIED EXTERNALLY;  
+    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME\>” IDENTIFIED EXTERNALLY;  
     ```  
   
 4.  ユーザーに特権を付与します。  
   
     ```  
-    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME>”;  
+    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME\>”;  
     ```  
   
 5.  Oracle データベース アイテムにアクセスする Windows 認証を使用してログインを新しく作成したユーザーを有効にするには、SCOTT スキーマに、ユーザーのスキーマを変更できます。 次の SQL コマンドを追加するには、ユーザーがログオンしたときに、SCOTT にユーザーの既定のスキーマを変更するログオン スクリプトを作成します。  
@@ -53,4 +53,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [Oracle データベース アダプターの Oracle クライアントを構成します。](../../adapters-and-accelerators/adapter-oracle-database/configure-the-oracle-client-for-the-oracle-database-adapter.md)   
-[Oracle データベースへの接続を作成します。](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)
+[Oracle データベースへの接続の作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)

@@ -22,11 +22,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bba68613c924c8ada9db13581856794543057e85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60a317dabd31bc1a6f37645c6b3fb2ce25d6de43
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、および情報メッセージを、Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW が有効である場合、このメッセージを受信する *.etl ファイルが作成されます。 ファイルはバイナリ形式で、読み取るに変換する必要があります。 これを行うには解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイルです。 たとえば、tracerpt.exe や tracedmp.exe です。  
@@ -45,7 +45,7 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、�
   
      コンシューマー アプリケーションで .etl ファイル内のイベントを読み取るには、Windows イベント トレーシングでそれらのイベントを .etl ファイルにダンプする必要があります。 通常、この作業は、コントローラーがトレーシングを非アクティブ化するときに行われます。  
   
-     コント ローラーにコンシューマーを使用して、トレースを非アクティブ化せず、リアル タイム オプションを使用してトレースをアクティブ化する必要があります\<リアルタイム > =-rt です。  
+     コント ローラーにコンシューマーを使用して、トレースを非アクティブ化せず、リアル タイム オプションを使用してトレースをアクティブ化する必要があります\<リアルタイム\>-rt を = です。  
   
 -   **プロバイダー:**イベントを提供します。  
   
@@ -53,15 +53,15 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、�
   
  BizTalk Adapter for PeopleSoft Enterprise には、5 つのプロバイダーが用意されており、種類の異なるメッセージをログに記録できます。  
   
--   **受信元ログ プロバイダー**:\<トレース要素 > スイッチは**-受信者**です。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。  
   
--   **受信元 CastDetails プロバイダー**:\<トレース要素 > スイッチは**- castDetailsReceive**です。  
+-   **受信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが**- castDetailsReceive**です。  
   
--   **送信元ログ プロバイダー**:\<トレース要素 > スイッチは**-トランスミッター**です。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。  
   
--   **送信元 CastDetails プロバイダー**:\<トレース要素 > スイッチは**- castDetailsTransmit**です。  
+-   **送信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが**- castDetailsTransmit**です。  
   
--   **管理ログ プロバイダー**:\<トレース要素 > スイッチは**-管理**です。  
+-   **管理ログ プロバイダー**:\<トレース要素\>スイッチが**-管理**です。  
   
 ## <a name="btapeoplesofttrace-command"></a>BTAPeopleSoftTrace コマンド  
  ETW を使用して、アダプターのコマンドを実行する**BTAPeopleSoftTrace.cmd**です。 このコマンドは次のように使用します。  
@@ -74,7 +74,7 @@ BTAPeopleSoftTrace <Trace element> -stop
   
  各要素の説明は次のとおりです。  
   
--   \<トレース要素 > (必須) はプロバイダーの種類。  
+-   \<Trace 要素\>プロバイダーの種類は、(必須)。  
   
      オプションは次のとおりです。  
   
@@ -90,9 +90,9 @@ BTAPeopleSoftTrace <Trace element> -stop
   
     -   **-開始、停止**: プロバイダーをアクティブまたは非アクティブです。  
   
--   **-cir \<MB >**: ファイルのサイズおよび種類です。 -cir は循環ファイルです。 \<MB >: サイズ (メガバイト単位)。  
+-   **-cir \<MB\>**: ファイルのサイズおよび種類です。 -cir は循環ファイルです。 \<MB\>: サイズ (メガバイト単位)。  
   
--   **-seq \<MB >**: ファイルのサイズおよび種類です。 -seq はシーケンシャル ファイルです。 \<MB >: サイズ (メガバイト単位)。  
+-   **-seq \<MB\>**: ファイルのサイズおよび種類です。 -seq はシーケンシャル ファイルです。 \<MB\>: サイズ (メガバイト単位)。  
   
 -   **-rt**: リアル タイム モードに設定します。  
   

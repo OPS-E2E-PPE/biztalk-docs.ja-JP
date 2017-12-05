@@ -17,14 +17,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebc04b4fd84af141907448d0c3b60b74ed2a4719
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92e8fb1061092b378ca38d888ea6c34d89b0e787
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="analysis-tools"></a>分析ツール
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ビジネス アナリストやインフォメーション ワーカーは分析ツールのセットを提供します。 これらのツールの詳細については、次を参照してください。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server では、ビジネス アナリストやインフォメーション ワーカーは分析ツールのセットを提供します。 これらのツールの詳細については、次を参照してください。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプ。  
   
 ## <a name="business-activity-monitoring"></a>ビジネス アクティビティの監視  
  BizTalk ビジネス アクティビティ監視 (BAM) は、異種ビジネス プロセスのリアルタイム ビューをビジネス ユーザーに提供します。 これによって、ビジネス上の決定を行うデータがもたらされます。  
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/20/2017
  BizTalk ヒューマン ワークフロー サービス (HWS) により、インフォメーション ワーカーは、自分のアプリケーションを使用して、ヒューマンベースのワークフロー プロセスの作成、変更、参加、およびその進行状況の追跡ができるようになります。 具体的には、ワークフロー アクティビティを実行し、日常のワークフローの一部としてワークフローの参加者が実行する作業を監視し、ビジネス プロセスの状態を見ながらワークフロー アクティビティの状態を追跡できます。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server および BTARN のツールおよび機能](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)
+ [BizTalk Server および BTARN のツールと機能](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)

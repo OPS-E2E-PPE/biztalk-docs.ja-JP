@@ -19,11 +19,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb913c1719f4833ef36cf9f73f6a96432217f2af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b2e8348cdf78db3e95ed75e5d83e6ea53bdffdee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-password-synchronization"></a>パスワード同期を構成する方法
 SSOCONFIG コマンド ライン ユーティリティを使用すると、パスワード同期の設定を構成できます。  
@@ -34,9 +34,9 @@ SSOCONFIG コマンド ライン ユーティリティを使用すると、パ�
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssoconfig-replayfiles\<再生ファイルのディレクトリ > (& a) #124; 既定**Enter キーを押します。  
+4.  型**ssoconfig-replayfiles\<再生ファイル ディレクトリ\>(& a) #124; 既定**Enter キーを押します。  
   
 > [!NOTE]
 >  サービス アカウントを変更すると、再生ファイルは検出されません。 このアカウントを変更する場合、再生ファイルを手動で削除することが必要になります。  
@@ -47,9 +47,9 @@ SSOCONFIG コマンド ライン ユーティリティを使用すると、パ�
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssoconfig-syncage\<パスワードの最大保有期間を時間で >** Enter キーを押します。  
+4.  型**ssoconfig-syncage\<パスワードの最大保有期間を時間で\>** Enter キーを押します。  
   
 > [!NOTE]
 >  SSOCONFIG ユーティリティでは、システム時刻として SQL Server コンピュータの時刻を使用します。 時刻に関連するコマンドを使用する際は、このことに注意してください。  

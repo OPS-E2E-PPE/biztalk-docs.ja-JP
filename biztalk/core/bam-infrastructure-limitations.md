@@ -7,25 +7,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- BAM, limitations
-- infrastructure, BAM
-- BAM, objects
-- BAM, infrastructure
-- BAM, naming conventions
 ms.assetid: e33d2f6c-8d26-4a76-810e-85d810cfdbee
 caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bfb8751e42918a64f13d35685d7d73b4f2406ff8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e42b2a6af04c2ff5d76d8ffb9489dfc2b92b6689
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-infrastructure-limitations"></a>BAM インフラストラクチャの制限
-このリリースの [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の BAM インフラストラクチャには、次のような設計上の制限があります。  
+BAM インフラストラクチャには、BizTalk Server のこのリリースの次のデザイン制限があります。  
   
 -   リアルタイム集計 (RTA) では、MIN 関数または MAX 関数はサポートされていません。  
   
@@ -50,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 |OLAP におけるディメンション レベル|64|OLAP 制限には、キューブあたり 256 レベルの追加制限があります。|  
 |RTA ビューにおけるディメンション レベル|14 ディメンション レベル|BAM により、すべてのディメンション レベルでインデックスが作成され、SQL Server インデックスは 16 列まで生成できます。BAM は、システム列のために 2 つのレベルを予約しています。|  
 |RTA ビューにおけるメジャー、非表示メジャー (既定カウント、AVG の非表示 SUM メジャー)、およびディメンション レベル|1,024|SQL テーブル/ビューの場合、最大で 1,024 列です。|  
-|アクティビティ ビュー|63|63 個に制限されますが、アラートを構成するときに[!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)]です。|  
+|アクティビティ ビュー|63|アラートを構成するときに SQL Server で 63 個に制限されます。|  
   
 ## <a name="bam-object-names"></a>BAM オブジェクト名  
  次の表は、BAM 定義スキーマおよび Microsoft Excel スプレッドシートのオブジェクト名の制限文字数を示しています。  

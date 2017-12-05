@@ -16,22 +16,22 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b35fae6551a95c1c2009ac9786aa791d189f338
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4158b59e3cce9664ca7c8c7d8ea4c5e3221b04b9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-master-secret-server"></a>マスター シークレット サーバーを移動する方法
 このトピックでは、マスター シークレットをあるサーバーから別のサーバーに移動するための手順、およびマスター シークレットをあるサーバーから Windows Server クラスターに移動するための手順について説明します。  
   
 ### <a name="to-move-the-master-secret-from-one-server-to-another-server"></a>マスター シークレットをあるサーバーから別のサーバーに移動するには  
   
-1.  新しいマスター シークレット サーバーに Microsoft エンタープライズ シングル サインオン (SSO) サーバーがインストールされていない場合はインストールします。 Microsoft エンタープライズ シングル サインオン サーバーのセットアップは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] CD-ROM の \Platform\SSO\setup.exe から起動します。  
+1.  新しいマスター シークレット サーバーに Microsoft エンタープライズ シングル サインオン (SSO) サーバーがインストールされていない場合はインストールします。 BizTalk Server の CD の \Platform\SSO\setup.exe から Microsoft エンタープライズ シングル サインオン サーバーのセットアップを起動します。  
   
 2.  新しいマスター シークレット サーバーでエンタープライズ SSO が構成されていない場合は構成します。 エンタープライズ SSO を構成するには、次の手順を実行します。  
   
-    1.  構成ツールを起動します。 既定では、構成ツールにある\<ドライブ >: \program files \common files \enterprise Single sign-on On\Configuration.exe です。  
+    1.  構成ツールを起動します。 既定では、構成ツールにある\<ドライブ\>: \program files \common files \enterprise Single sign-on On\Configuration.exe です。  
   
     2.  クリックして選択**エンタープライズ SSO**左側のウィンドウでします。  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  ファイルを .xml ファイルとして保存します。 たとえば、としてファイルを保存**NewMSSServer.xml**です。  
   
-    3.  コマンド プロンプトで、エンタープライズ SSO のインストール フォルダーに移動します。 インストール フォルダーは、既定では、\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+    3.  コマンド プロンプトで、エンタープライズ SSO のインストール フォルダーに移動します。 インストール フォルダーは、既定では、\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
     4.  型**ssomanage-updatedb** *XMLFile*データベースのマスター シークレット サーバー名を更新します。  
   
@@ -121,4 +121,4 @@ ms.lasthandoff: 09/20/2017
 7.  クラスター化されたマスター シークレット サーバーをホストする Windows クラスターの各ノードで、バックアップしておいたマスター シークレットを復元します。 手順に従います[マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)クラスター化されたマスター シークレット サーバーをホストする Windows クラスターの各ノードにします。  
   
 ## <a name="see-also"></a>参照  
- [マスタ シークレットの管理](../core/managing-the-master-secret.md)
+ [マスター シークレットの管理](../core/managing-the-master-secret.md)

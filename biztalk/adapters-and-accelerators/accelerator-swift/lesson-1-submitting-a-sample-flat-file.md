@@ -17,24 +17,24 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 484cd78dfd83cb30c5da242c30bf643101797013
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d497d8b312559e6155da86ae952b644a0f6ac0fc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-submitting-a-sample-flat-file"></a>レッスン 1: サンプル フラット ファイルを送信します。
 ソリューションをテストするサンプル フラット ファイルを送信するとします。  
   
 ### <a name="to-submit-a-sample-mt103-flat-file"></a>サンプル MT103 フラット ファイルを送信するには  
   
-1.  MT103_Sample.txt ファイルをコピー \<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial に\<*ドライブ*>: \Labs\Inbound\FlatFileフォルダーです。  
+1.  MT103_Sample.txt ファイルをコピー \<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial に\<*ドライブ*\>: \Labs\Inbound\FlatFile フォルダーです。  
   
 2.  しばらくすると、MT103_Sample.txt ファイルがフォルダーから消えますことを確認します。  
   
-3.  参照、 \<*ドライブ*>: \Labs\Outbound フォルダーです。 フォルダーに {GUID} .xml という名前のファイルが含まれていることを確認します。  
+3.  参照、 \<*ドライブ*\>: \Labs\Outbound フォルダーです。 フォルダーに {GUID} .xml という名前のファイルが含まれていることを確認します。  
   
-4.  ファイル {GUID} .xml を右クリックし、順にポイント**ファイルを開く**、クリックして**メモ帳**です。 MT103_Sample.txt と呼ばれるファイルに対して同じ操作を行います\<*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial です。 XML ファイルのタグ内のコンテンツがフラット ファイルのコンテンツと同じであることを確認します。  
+4.  ファイル {GUID} .xml を右クリックし、順にポイント**ファイルを開く**、クリックして**メモ帳**です。 MT103_Sample.txt と呼ばれるファイルに対して同じ操作を行います\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial です。 XML ファイルのタグ内のコンテンツがフラット ファイルのコンテンツと同じであることを確認します。  
   
     > [!NOTE]
     >  結果として得られるファイルは削除しないでください。後のレッスンで使用されます。  

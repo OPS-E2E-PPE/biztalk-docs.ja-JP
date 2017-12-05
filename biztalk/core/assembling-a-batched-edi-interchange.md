@@ -12,11 +12,11 @@ caps.latest.revision: "45"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43d7a54305443d35aba5b363983b17157780fe4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c4274362e5ec8441e203d0b2b97f27e95235fd9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="assembling-a-batched-edi-interchange"></a>バッチ EDI インターチェンジのアセンブル
 個々のトランザクション セット バッチ要素を EDI インターチェンジにアセンブルするために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI および AS2 は以下を実行します。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  バッチ処理オーケストレーションは、インターチェンジのバッチ処理を完了した後、そのインターチェンジの次のプロパティを昇格します。EDI.DestinationPartyName = %PartyName%、EDI.BatchEncodingType = X12 または EDIFACT、および EDI.ToBeBatched = False。  
   
-9. 送信ポートは、EDI に基づくバッチ トランザクション セットを取得します。DestinationPartyName = \<PartyName >、EDI です。BatchEncodingType = EDIFACT または X12、および EDI です。ToBeBatched = False。  
+9. 送信ポートは、EDI に基づくバッチ トランザクション セットを取得します。DestinationPartyName = \<PartyName\>、EDI です。BatchEncodingType = EDIFACT または X12、および EDI です。ToBeBatched = False。  
   
 ## <a name="batching-orchestration-control-messages"></a>バッチ処理オーケストレーションのコントロール メッセージ  
  バッチ処理オーケストレーションは、次のコントロール メッセージによりアクティブ化、終了、または上書きされます。  
@@ -206,7 +206,7 @@ ms.lasthandoff: 09/20/2017
   
 -   `EDI.DestinationPartyId` が存在します  
   
- このオーケストレーションは、メッセージを受け取ると、パーティ名とエンコードの種類を使用して、メッセージ用の一致するバッチ構成を見つけようとします。  `EDI.DestinationPartyID`プロパティを使用して、パーティ名を指定して、オーケストレーションと一致するバッチ名が検索されます\<PartyName > +\<EncodingType > + Default です。  たとえば、パーティ名が Contoso で、`EDI.EncodingType` の値が X12 である場合、オーケストレーションは ContosoX12Default という名前のバッチを検索します。  
+ このオーケストレーションは、メッセージを受け取ると、パーティ名とエンコードの種類を使用して、メッセージ用の一致するバッチ構成を見つけようとします。  `EDI.DestinationPartyID`プロパティを使用して、パーティ名を指定して、オーケストレーションと一致するバッチ名が検索されます\<PartyName\>+\<EncodingType\>+ Default です。  たとえば、パーティ名が Contoso で、`EDI.EncodingType` の値が X12 である場合、オーケストレーションは ContosoX12Default という名前のバッチを検索します。  
   
  一致するバッチ構成が見つかった場合、メッセージには次のプロパティが設定されてメッセージ ボックスに戻されます。  
   
@@ -278,4 +278,4 @@ ms.lasthandoff: 09/20/2017
 -   関連アダプターを使用してメッセージを配信します。  
   
 ## <a name="see-also"></a>参照  
- [送信 EDI メッセージをバッチ処理](../core/batching-outgoing-edi-messages.md)
+ [送信 EDI メッセージのバッチ処理](../core/batching-outgoing-edi-messages.md)

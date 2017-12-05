@@ -13,11 +13,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d49f0343c324900bf10c2efcce46cd57682ed04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6dd482c2f7a226a15fe730d2b75b470a54ff27e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="manage-policies"></a>ポリシーを管理します。
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="import-publish-deploy-and-remove-policies"></a>インポート、公開、展開、およびポリシーの削除
  ソリューション開発者が作成および」の説明に従って、ビジネス ルール作成ツールを使用して、ポリシーの表示[ビジネス ルール作成ツールを使用して作成するビジネス ルール](../core/creating-business-rules-using-the-business-rule-composer.md)です。 開発者と IT 管理者は、BizTalk グループおよびアプリケーションでポリシーを展開して管理するために、このセクションのトピックで説明する次のタスクを実行できます。  
   
--   **BizTalk グループにポリシーをインポートします。** これを行うと、ポリシーがグループのルール エンジン データベースに追加され、BizTalk Server 管理コンソールでに表示されます、\<すべてのアイテム >、BizTalk グループのノードです。 これによって、ポリシーが特定のアプリケーションで有効になるわけではありません。 このセクションの他のトピックで説明するように、最初にポリシーを公開し、アプリケーションに追加してから展開する必要があります。 ルール エンジン データベースは、BizTalk グループ内のすべてのポリシーを含むデータベースです。  
+-   **BizTalk グループにポリシーをインポートします。** これを行うと、ポリシーがグループのルール エンジン データベースに追加され、BizTalk Server 管理コンソールでに表示されます、\<すべての成果物\>BizTalk グループのノードです。 これによって、ポリシーが特定のアプリケーションで有効になるわけではありません。 このセクションの他のトピックで説明するように、最初にポリシーを公開し、アプリケーションに追加してから展開する必要があります。 ルール エンジン データベースは、BizTalk グループ内のすべてのポリシーを含むデータベースです。  
   
 -   **ポリシーを公開します。** これにより、ポリシーを BizTalk アプリケーション内で使用できるようになります。  
   
@@ -50,16 +50,16 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="next-steps"></a>次の手順
   
--   [ポリシーをインポートします。](../core/how-to-import-a-policy.md)  
+-   [ポリシーのインポート](../core/how-to-import-a-policy.md)  
   
--   [ポリシーを公開します](../core/how-to-publish-a-policy.md)  
+-   [ポリシーの公開](../core/how-to-publish-a-policy.md)  
   
--   [アプリケーションにポリシーを追加します。](../core/how-to-add-a-policy-to-an-application.md)  
+-   [ポリシーをアプリケーションに追加する](../core/how-to-add-a-policy-to-an-application.md)  
   
--   [展開または展開解除ポリシー](../core/how-to-deploy-or-undeploy-a-policy.md)  
+-   [ポリシーを展開または展開解除する](../core/how-to-deploy-or-undeploy-a-policy.md)  
   
--   [ポリシーの追跡を構成します。](../core/how-to-configure-tracking-for-a-policy.md)  
+-   [ポリシーの追跡を構成する](../core/how-to-configure-tracking-for-a-policy.md)  
   
--   [アプリケーションと BizTalk グループからポリシーを削除します。](../core/how-to-remove-a-policy-from-an-application-and-the-biztalk-group.md)  
+-   [アプリケーションおよび BizTalk グループからポリシーを削除する](../core/how-to-remove-a-policy-from-an-application-and-the-biztalk-group.md)  
   
--   [ポリシーをエクスポートします。](../core/how-to-export-a-policy.md)
+-   [ポリシーをエクスポートする](../core/how-to-export-a-policy.md)

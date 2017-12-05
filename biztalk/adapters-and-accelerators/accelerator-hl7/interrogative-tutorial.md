@@ -16,17 +16,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b35a5bc8ba7574df7499fef5d63a100993c4201
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 642f2521917dd87b60ee43a4cd7decaeeb1f1365
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="interrogative-tutorial"></a>Interrogative チュートリアル
 このチュートリアルには、使用する方法を説明する詳しい手順が含まれています。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]クエリ/応答シナリオでビジネス プロセスを容易にします。  
   
 > [!NOTE]
->  このチュートリアルを使用するのには、MLLP テスト ツールをインストールする必要があります。 BTAHL7 の一般的なインストールでは、これらのツールはインストールされません。 カスタム インストールを実行しを選択する必要があります**MLLP テスト ツール**アダプター フォルダーからおよび**テスト インスタンス**Artifacts フォルダからです。 テスト ツールがインストールされている場合、システムがフォルダーに含まれます\<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\MLLP ユーティリティです。 参照してください[用 HL7 BizTalk アクセラレータをインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)です。  
+>  このチュートリアルを使用するのには、MLLP テスト ツールをインストールする必要があります。 BTAHL7 の一般的なインストールでは、これらのツールはインストールされません。 カスタム インストールを実行しを選択する必要があります**MLLP テスト ツール**アダプター フォルダーからおよび**テスト インスタンス**Artifacts フォルダからです。 テスト ツールがインストールされている場合、システムがフォルダーに含まれます\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータです。 参照してください[用 HL7 BizTalk アクセラレータをインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)です。  
   
 ## <a name="interrogative-scenario"></a>Interrogative シナリオ  
  このチュートリアルでは、クエリ/応答または Interrogative シナリオを使用します。 このシナリオでは、ビジネスのフローは、次の図に示されるに似ています。 次の図に、番号付きリストでは、ワークフローについて説明します。  
@@ -45,30 +45,30 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [このチュートリアルを使用する準備をしています](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial-hl7-main.md)  
+-   [チュートリアルを使用する準備](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial-hl7-main.md)  
   
--   [手順 1: を作成し、共通のヘッダーと受信確認スキーマを展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)  
+-   [手順 1: 一般的なヘッダーと確認スキーマの作成と展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)  
   
--   [手順 2: V2.4 の一般的なスキーマを作成します。](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-4.md)  
+-   [手順 2: V2.4 の一般的なスキーマの作成](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-4.md)  
   
--   [手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトの配置](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project-hl7-main.md)  
+-   [手順 3: トリガー イベント (メッセージ) プロジェクトの作成と展開](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project-hl7-main.md)  
   
--   [手順 4: 作成、ADT クエリ メッセージを受け入れるための受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-receive-port-for-accepting-adt-query-messages.md)  
+-   [手順 4: ADT クエリ メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-receive-port-for-accepting-adt-query-messages.md)  
   
--   [手順 5: 作成、彼のメッセージを受け入れるための受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-receive-port-for-accepting-his-messages.md)  
+-   [手順 5: HIS メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-receive-port-for-accepting-his-messages.md)  
   
--   [手順 6: クエリ メッセージを配信する送信ポートを作成します。](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-query-messages.md)  
+-   [手順 6: クエリ メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-query-messages.md)  
   
--   [手順 7: 応答メッセージを配信する送信ポートを作成します。](../../adapters-and-accelerators/accelerator-hl7/step-7-create-a-send-port-to-deliver-response-messages.md)  
+-   [手順 7: 応答メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-a-send-port-to-deliver-response-messages.md)  
   
--   [手順 8: パーティ情報を構成します。](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)  
+-   [手順 8: パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)  
   
--   [手順 9: BizTalk Server を再起動します。](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server-hl7-main.md)  
+-   [手順 9: BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server-hl7-main.md)  
   
--   [手順 10: Interrogative シナリオを確認してください。](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)  
+-   [手順 10: Interrogative シナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)  
 
 ## <a name="next-step"></a>次の手順  
- [このチュートリアルを使用する準備をしています](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial-hl7-main.md)
+ [チュートリアルを使用する準備](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial-hl7-main.md)
   
 ## <a name="see-also"></a>参照  
-[使い始める BizTalk Accelerator 用 HL7](../../adapters-and-accelerators/accelerator-hl7/get-started-with-the-biztalk-accelerator-for-hl7.md)
+[BizTalk Accelerator for HL7 の概要](../../adapters-and-accelerators/accelerator-hl7/get-started-with-the-biztalk-accelerator-for-hl7.md)

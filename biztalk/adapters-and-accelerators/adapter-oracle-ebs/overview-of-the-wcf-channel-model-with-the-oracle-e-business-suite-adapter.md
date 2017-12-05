@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d59965b4fe5a94ae29ac8459ef8b8d80999c1dc5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5317099b1a576c9dd4e0b13593c16f4ef3a6831
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite アダプターで WCF チャネル モデルの概要
 操作の呼び出しに、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]コードが WCF クライアントとして機能し、アダプターに送信操作を送信します。 WCF チャネル モデルでは、コードは、チャネル経由で要求メッセージを送信することによって、アダプターでの操作を呼び出します。  
@@ -44,11 +44,11 @@ ms.lasthandoff: 09/20/2017
   
  任意の WCF バインドと同様に、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]ファクトリ パターンを使用してアプリケーション コードへのチャネルを提供します。 使用する、 **Microsoft.Adapters.OracleEBSBinding**オブジェクトのインスタンスを作成します。  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >**を提供する**IRequestChannel**チャネル アダプターの要求-応答操作の呼び出しに使用することができます。  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>** を提供する**IRequestChannel**チャネル アダプターの要求-応答操作の呼び出しに使用することができます。  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >**を提供する**IOutputChannel**チャネル アダプターの一方向の操作の呼び出しに使用することができます。  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>** を提供する**IOutputChannel**チャネル アダプターの一方向の操作の呼び出しに使用することができます。  
   
--   **System.ServiceModel.IChannelListener\<IInputChannel >**を提供する**IInputChannel**チャネルがメッセージを受信する受信アダプターから行うこともできます。  
+-   **System.ServiceModel.IChannelListener\<IInputChannel\>** を提供する**IInputChannel**チャネルがメッセージを受信する受信アダプターから行うこともできます。  
   
 ### <a name="creating-messages-for-the-oracle-enterprise-business-solution-in-the-wcf-channel-model"></a>WCF チャネル モデルの Oracle Enterprise ビジネス ソリューションのメッセージを作成  
  WCF では、 **System.ServiceModel.Channels.Message**クラスは、メモリに SOAP メッセージの表現。 作成する、**メッセージ**、静的なを呼び出すことによってインスタンス**Message.Create**メソッドです。  

@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e77f72effa1a9c9193f9ce589ebe22b65feb5a85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec807cf6b596f7e89f607ebeb56700c59134c211
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-strong-name-assembly-key-file"></a>厳密な名前のアセンブリ キー ファイルを構成する方法
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] では、BizTalk ソリューションを展開するプロセスで、まずアセンブリのビルドが行われます。 このとき各アセンブリは、厳密に署名されている必要があります。 厳密な名前のアセンブリ キー ファイルとプロジェクトを関連付けることによって、アセンブリを厳密署名できます。 まだ行っていない場合は、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からソリューションを展開する前に、次の手順に従って、厳密な名前のアセンブリ キー ファイルを生成し、ソリューション内の各プロジェクトに割り当ててください。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
      例: **sn/k ErrorHandling.snk**  
   
-     確認メッセージを**キーのペアに書き込まれる** \< *file_name*>**.snk** `,`コマンド ラインで表示されます。  
+     確認メッセージを**キーのペアに書き込まれる** \< *file_name*\>**.snk** `,`コマンド ラインで表示されます。  
   
 3.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーで、プロジェクトを右クリックし、をクリックして**プロパティ**です。  
   
@@ -45,4 +45,4 @@ ms.lasthandoff: 09/20/2017
 6.  この厳密な名前のアセンブリ キー ファイルを使用して展開するソリューション内のプロジェクトごとに、手順 3. ～ 6. を繰り返します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開します。](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)
+ [Visual Studio から BizTalk アプリケーションへの BizTalk アセンブリの展開](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)

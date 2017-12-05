@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9103caf451bb74a6ba23a7a6cf30ebe17896dfa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41e57df0f77718e3e36b5d0d68896def6a768be7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario"></a>手順 1: FileAct ストア アンド フォワード プル シナリオ用 SWIFT アダプターを構成します。
 完全な[、チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)この手順を開始する前にします。
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
-    |**引数**|次の引数を入力: - SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される >**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
+    |**引数**|次の引数を入力: - SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
     |**FACryptoMode**|ドロップダウン リストから選択**詳細**です。|  
     |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
-    |**引数**|次の引数を入力: – SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される >**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
+    |**引数**|次の引数を入力: – SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:**引数で、クライアントは SAG で構成されている MessagePartner です。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
     |**LogMessageBody**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。 **注:**を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
     |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
@@ -80,4 +80,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [手順 2: 送信ポートを作成し、FileAct ストア アンド フォワード (プル) シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-2-create-send-and-receive-ports-for-fileact-store-and-forward-scenario.md)   
  [手順 3: を作成し、ファイル Act ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド](../../adapters-and-accelerators/fileact-interact/step-3-create-and-bind-an-orchestration-with-dynamic-send-port-for-file-act.md)   
- [手順 4: FileAct ストア アンド フォワード (プル) エンド ツー エンドのシナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-pull-end-to-end-scenario.md)
+ [手順 4: FileAct ストア アンド フォワード (プル) エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-pull-end-to-end-scenario.md)

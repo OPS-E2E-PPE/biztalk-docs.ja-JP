@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d89f81bbaf15dfb0c87de91659888d70a2345a6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 573e7a2509741748b0f95837f310e2e651b255c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-biztalk-server-administration"></a>BizTalk Server 管理のトラブルシューティング
 このセクションでは、BizTalk Server 管理コンソールの使用時に発生する一般的な問題に関する情報をまとめて提供します。  
@@ -71,13 +71,13 @@ ms.lasthandoff: 09/20/2017
 >  この問題は複数のメッセージ ボックス環境で発生します。  
   
 ##### <a name="cause"></a>原因  
- 場合、複数のメッセージ ボックス環境でこの問題は発生 SQL エージェント ジョブ ' operations_operateoninstances_onmaster _\<*dbName*>' が、セカンダリ メッセージ ボックス データベースで実行されていません。 セカンダリ メッセージ ボックス データベースからプライマリ メッセージ ボックス データベースに情報を伝達するためには、このジョブを実行している必要があります。 このジョブが有効になっていないか、ログオン エラーが発生した場合、このジョブは実行できません。  
+ 場合、複数のメッセージ ボックス環境でこの問題は発生 SQL エージェント ジョブ 'operations_operateoninstances_onmaster _\<*dbName*\>' が、セカンダリ メッセージ ボックス データベースで実行されていません。 セカンダリ メッセージ ボックス データベースからプライマリ メッセージ ボックス データベースに情報を伝達するためには、このジョブを実行している必要があります。 このジョブが有効になっていないか、ログオン エラーが発生した場合、このジョブは実行できません。  
   
 ##### <a name="solution"></a>解決方法  
- 操作を実行する複数のサービス インスタンスで同時に、BizTalk 管理コンソールを使用しているし、複数のメッセージ ボックス データベース、BizTalk Server 環境を構成する場合は、SQL Server エージェント ジョブがという名前のことを確認 ' Operations_OperateOnInstances_OnMaster_\<*dbName*>' は、すべてのセカンダリ (マスター以外の) メッセージ ボックス データベースで有効にします。 さらに、セカンダリ メッセージ ボックス データベースをホストする SQL Server コンピューターの SQL Server エージェント サービスは、セカンダリ メッセージ ボックス データベースの BTS_SQLAGENT_USER データベース ロールに含まれるアカウントとして実行する必要があります。  
+ 操作を実行する複数のサービス インスタンスで同時に、BizTalk 管理コンソールを使用しているし、複数のメッセージ ボックス データベース、BizTalk Server 環境を構成する場合は、SQL Server エージェント ジョブがという名前のことを確認 ' Operations_OperateOnInstances_OnMaster_\<*dbName*\>' すべてのセカンダリ (マスター以外の) メッセージ ボックス データベースで有効にします。 さらに、セカンダリ メッセージ ボックス データベースをホストする SQL Server コンピューターの SQL Server エージェント サービスは、セカンダリ メッセージ ボックス データベースの BTS_SQLAGENT_USER データベース ロールに含まれるアカウントとして実行する必要があります。  
   
 > [!NOTE]
->  \<*dbname*> は、BizTalk メッセージ ボックス データベースの実際の名前を表すプレース ホルダーです。  
+>  \<*dbname* \> BizTalk メッセージ ボックス データベースの実際の名前のプレース ホルダーです。  
   
  SQL Server エージェント サービス アカウントをセカンダリ メッセージ ボックス データベースの BTS_SQLAGENT_USER データベース ロールに追加するには、次の手順を実行します。  
   

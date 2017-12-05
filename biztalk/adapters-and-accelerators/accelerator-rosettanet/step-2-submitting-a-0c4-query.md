@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1db38d804cc5ada05a1457596fb7c694595359d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88c621b6891b816f72603202bd6f2214882eb4b5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-submitting-a-0c4-query"></a>手順 2: 送信 a 0 C 4 クエリします。
 ここでは、0C4 - Synchronous Test Query の PIP (Partner Interface Process) を使用して、要求を作成および送信します。 RosettaNet では、この PIP を定義することにより、2 つの異なる組織間で同期通信チャネルが正しく動作するようにしています。 この PIP は同期通信パターンを持っているため、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] は受信確認を送信しません。 この PIP は、2A9 - Query Technical Product Information PIP などの他の同期ダブル アクション PIP と同様のパターンに従います。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
     |**Pip インスタンス ID**|型**0C4_Test**です。 **重要:**重複したメッセージ ID のエラーを避けるためには、する必要があることを確認、 **PIP**を送信するメッセージごとに一意です。 後で 0C4 を実行する場合は、このフィールドを変更する必要があります。|  
     |**メッセージのカテゴリ**|型**アクション**です。|  
   
-3.  内の 0C4_Request.xml ファイルを開くメモ帳または別のテキスト エディターを使用して、 *\<ドライブ >*: \Program Files\Microsoft BizTalk 2009 Accelerator for rosettanet \sdk\lobapplication\sampleinstances フォルダーし、コピーし、貼り付け、内容、 **Service Content** LOBWebApplication のフィールドです。  
+3.  内の 0C4_Request.xml ファイルを開くメモ帳または別のテキスト エディターを使用して、 *\<ドライブ\>*: \Program Files\Microsoft BizTalk 2009 Accelerator for rosettanet \sdk\lobapplication\sampleinstances フォルダーコピーして貼り付け、内容、 **Service Content** LOBWebApplication のフィールドです。  
   
 4.  をクリックして**送信**C 4 のクエリを Contoso のコンピューターに送信します。  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Microsoft SQL Server Management Studio でクリックして**新しいクエリ**です。  
   
-4.  \<テーブル > のテキスト ボックスで、 **BTARNDATA**一覧からです。  
+4.  \<テーブル\>テキスト ボックスで、 **BTARNDATA**一覧からです。  
   
 5.  SQL ウィンドウに、次の SQL ステートメントを入力します。  
   

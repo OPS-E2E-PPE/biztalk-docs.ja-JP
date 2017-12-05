@@ -15,11 +15,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d87e814fd43545d18db0d6e4fd0c585279eb5261
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa252b520f985667820861403a46d39c8527ea07
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-happens-when-artifacts-are-imported"></a>アイテムのインポート時の動作
 このトピックでは、アイテムがインポートされるときの動作について説明します。 アイテムのインポートには次の 3 つの方法があり、ここではそれぞれについて説明します。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
  アプリケーションをインポートした後に、管理コンソールまたは BTSTask を使用して、アプリケーション内のアイテム全体を 1 つのエンティティとして、または各アイテムを個別に、表示、管理、展開できます。 詳細については、次を参照してください。[アプリケーションの展開と管理ツール](../core/application-deployment-and-management-tools.md)です。  
   
 ## <a name="importing-a-policy"></a>ポリシーのインポート  
- .xml ファイルからポリシーをインポートすると、そのポリシーがルール エンジン データベースに追加されます。 BizTalk .msi ファイル内のポリシーをインポートする場合とは異なり、ポリシーは BizTalk 管理データベース内のどのアプリケーションにも関連付けられません。 [ポリシー] ノードで、ポリシーが表示されます、\<すべてのアイテム >、BizTalk Server 管理コンソール内のフォルダーです。 インポートしたポリシーは、グループ内のアプリケーションが使用できるように公開できます。 詳細については、次を参照してください。[ポリシーの管理](../core/managing-policies.md)です。  
+ .xml ファイルからポリシーをインポートすると、そのポリシーがルール エンジン データベースに追加されます。 BizTalk .msi ファイル内のポリシーをインポートする場合とは異なり、ポリシーは BizTalk 管理データベース内のどのアプリケーションにも関連付けられません。 [ポリシー] ノードで、ポリシーが表示されます、\<すべての成果物\>BizTalk Server 管理コンソール内のフォルダーです。 インポートしたポリシーは、グループ内のアプリケーションが使用できるように公開できます。 詳細については、次を参照してください。[ポリシーの管理](../core/managing-policies.md)です。  
   
 ## <a name="importing-a-binding-file"></a>バインド ファイルのインポート  
  バインド ファイルを BizTalk グループにインポートすると、そのファイル内のバインドによって、グループ内でそれらのバインドと同じ名前を持つ既存のバインドがすべて上書きされ、構成が適用されます。  

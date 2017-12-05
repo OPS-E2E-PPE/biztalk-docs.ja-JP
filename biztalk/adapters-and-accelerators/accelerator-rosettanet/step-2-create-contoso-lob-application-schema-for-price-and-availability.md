@@ -13,14 +13,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71e3141e436bc50a629f495d8372b05d15e90b90
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 441bb90c8fa0f2edb271af384e2540a741150137
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>手順 2: Price and Availability プロジェクトの BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成
-ここでは、特定の製品の価格やその製品が入手可能かどうかを Contoso ERP システムに照会する際に使用するスキーマを生成します。 このスキーマを生成するには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® SQL Adapter for [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] を使用します。  
+ここでは、特定の製品の価格やその製品が入手可能かどうかを Contoso ERP システムに照会する際に使用するスキーマを生成します。 使用してこのスキーマを生成する、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server の SQL アダプターです。  
   
 ### <a name="to-update-the-sql-stored-procedure-for-schema-generation"></a>スキーマを生成するために SQL ストアド プロシージャを更新するには  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 10. **ステートメントの種類の情報**] ページで、[**ストアド プロシージャの**、順にクリック**次**です。  
   
-11. **ステートメントの情報**] ページの**\<ストアド プロシージャを選択 >**[ **SP_GetInventoryForProductID**ドロップダウン リストからです。 をクリックして**生成**、クリックして**[次へ]**です。  
+11. **ステートメント情報**] ページの**\<ストアド プロシージャを選択\>**[ **SP_GetInventoryForProductID**から、ドロップダウン リスト。 をクリックして**生成**、クリックして**[次へ]**です。  
   
 12. **SQL トランスポート スキーマ生成ウィザードを完了する** ページで、をクリックして**完了**ContosoPriceAndAvailability BizTalk プロジェクトにスキーマをインポートします。  
   
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
 16. Microsoft SQL Server Management Studio では、削除、`xmldata`述語とコンマを`SP_GetInventoryForProductID`ストアド プロシージャ、前の手順で追加して、をクリックして**Execute**です。  
   
 ## <a name="see-also"></a>参照  
- [手順 3: Price and Availability プロジェクトの BizTalk マッパーを使用して用の Contoso LOB アプリケーション マップの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)
+ [手順 3: BizTalk マッパーを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション マップの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)

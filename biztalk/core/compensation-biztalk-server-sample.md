@@ -18,11 +18,11 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7d3e2e917f9ac0cc09117f3de83bbcc6166af1c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9752fced7e1b889c41b6e981be6c2858f0411b7b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="compensation-biztalk-server-sample"></a>補正 (BizTalk Server サンプル)
 補正のサンプルを使用する方法を示しています、**補正**オーケストレーションの図形です。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
 4.  BTSCompensationSampleMailingList データベースの更新で失敗した場合は例外を返し、10 秒経過後、元の顧客データを Northwind データベースに再度書き込みます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Orchestrations\Compensation\  
+ \<*パスのサンプル*\>\Orchestrations\Compensation\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -103,7 +103,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Orchestrations\Compensation\  
+     \<*パスのサンプル*\>\Orchestrations\Compensation\  
   
 2.  Setup.bat を実行します。処理内容は次のとおりです。  
   
@@ -115,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  **Web サービスの作成**] ページで、[ **web サービスとして公開する BizTalk オーケストレーション**をクリックし、 **[次へ]**です。  
   
-    3.  **BizTalk アセンブリ**ページを参照して選択\<*サンプル パス*> \Orchestrations\Compensation\bin\Release\CompensationOrchestration.dll をクリックして**[次へ]**です。  
+    3.  **BizTalk アセンブリ**ページを参照して選択\<*サンプル パス*\>\Orchestrations\Compensation\bin\Release\CompensationOrchestration.dll をクリックして**次**です。  
   
     4.  **オーケストレーションとポート** ページで、をクリックして**次**です。  
   
@@ -147,7 +147,7 @@ ms.lasthandoff: 09/20/2017
   
 -   BizTalk Application Users グループの db_owner アクセス許可を与える、 **BTSCompensationSampleMailingList**と**Northwind**データベース。  
   
--   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が既定の場所にインストールされていない (BizTalk Server のドライブ: \Program Files\Microsoft\<バージョン >\\) を使用する前に Contact Info Update.xsn フォームを公開する必要があります。 これを行うには、次のです。  
+-   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が既定の場所にインストールされていない (BizTalk Server のドライブ: \Program Files\Microsoft\<バージョン\>\\) を使用する前に Contact Info Update.xsn フォームを公開する必要があります。 これを行うには、次のです。  
   
     #### <a name="to-publish-the-infopath-form"></a>InfoPath フォームを公開するには  
   
@@ -157,7 +157,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  **[その他]**セクションで、いることを確認、**ドメイン間でデータ ソースにアクセス**設定が有効であり、をクリックして**OK**です。 InfoPath ユーザー インターフェイス ソリューションのスクリプト コードを実行するには、この設定が必要です。  
   
-    4.  Windows エクスプ ローラーに移動\<*サンプル パス*> \Orchestrations\Compensation\InfoPath を右クリックして**Contact Info Update.xsn**  をクリックし、**デザイン**.  
+    4.  Windows エクスプ ローラーに移動\<*サンプル パス*\>\Orchestrations\Compensation\InfoPath を右クリックして**Contact Info Update.xsn**  をクリックし、 **デザイン**です。  
   
     5.  InfoPath Contact Info Update ソリューションがデザイン モードで開きます。  
   
@@ -165,7 +165,7 @@ ms.lasthandoff: 09/20/2017
   
     7.  公開ウィザードが表示されます。  
   
-    8.  選択**このコンピューターまたはネットワーク上の共有フォルダーに**、パスをソリューションを発行および\<*サンプル パス*> \Orchestrations\Compensation\InfoPath\Contact Info Update.xsn です。  
+    8.  選択**このコンピューターまたはネットワーク上の共有フォルダーに**、パスをソリューションを発行および\<*サンプル パス*\>\Orchestrations\Compensation\InfoPath\Contact InfoUpdate.xsn です。  
   
     9. デザイン モードの InfoPath を閉じます。  
   
@@ -179,7 +179,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  **ファイル**メニューの [**送信**、] をクリック**送信**です。  
   
-    4.  応答ドキュメントに表示されます、 \<*サンプル パス*> \Orchestrations\Compensation\Out フォルダーと、Northwind と BTSCompensationSampleMailingList データベースを新しいで更新する必要がありますInfoPath フォームからのデータ。  
+    4.  応答ドキュメントに表示されます、 \<*サンプル パス*\>\Orchestrations\Compensation\Out フォルダーと、Northwind と BTSCompensationSampleMailingList データベースの両方を更新する必要がありますInfoPath フォームから新しいデータです。  
   
         > [!NOTE]
         >  BTSCompensationSampleMailingList データベースを接続解除するか、オフラインにして、オーケストレーションで実行される補正アクションをテストできます。 Northwind データベースで先にレコードが更新されることを確認します。 その後、オーケストレーションが BTSCompensationSampleMailingList データベースを更新しようとすると、データベースが接続解除されているために、更新は失敗します。 したがって、例外が発行され、10 秒が経過した後に補正アクションが実行されて、元の顧客データが Northwind データベースに再度書き込まれます。  
@@ -193,9 +193,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Orchestrations\Compensation\  
+     \<*パスのサンプル*\>\Orchestrations\Compensation\  
   
 2.  Cleanup.bat を実行します。  
   
 ## <a name="see-also"></a>参照  
- [オーケストレーション (BizTalk Server Samples フォルダ)](../core/orchestrations-biztalk-server-samples-folder.md)
+ [オーケストレーション (BizTalk Server サンプル フォルダー)](../core/orchestrations-biztalk-server-samples-folder.md)

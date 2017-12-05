@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5ba2da42c6cbfad2b0c053aba296d34e38211fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2752203b0498a6cd5a4a8b6df6bc558c444e355
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="migrating-a-biztalk-server-project"></a>BizTalk Server プロジェクトを移行します。
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]用に開発されたプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して新しい環境に移行できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]変換します。 サポートされている移行のバージョンの一覧は、次を参照してください。[サポートされるアップグレード パスと環境向けインストール ガイド](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)です。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="project-conversion-requires-the-project-and-solution-file"></a>プロジェクトの変換に必要なプロジェクトおよびソリューション ファイル  
  [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] プロジェクトを変換しようとして、ソリューション ファイルがない場合は、次のようなエラーが発生します。  
   
- **プロジェクト ファイルの変換中にエラーが発生しました。子要素\<BIZTALK > 要素の\<VisualStudioProject > が無効です。**  
+ **プロジェクト ファイルの変換中にエラーが発生しました。子要素\<BIZTALK\>要素の\<VisualStudioProject\>が無効です。**  
   
  プロジェクトの変換には、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトのソリューション ファイル (.sln) が必要です。 ソリューション ファイルがない場合は、[!INCLUDE[btsVStudioNet2005](../includes/btsvstudionet2005-md.md)] で作成し、[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] プロジェクトをソリューションに追加する必要があります。 その後、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 変換ウィザードを実行します。  
   

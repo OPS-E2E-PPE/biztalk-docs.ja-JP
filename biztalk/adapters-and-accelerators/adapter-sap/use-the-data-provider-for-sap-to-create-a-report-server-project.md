@@ -12,17 +12,17 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: caa006e8c8e22b10d0bdc58a781de30a0623bb79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9c7905fc7114feeca8b53589e1aa32a09495ca1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a>SAP 用データ プロバイダーを使用してレポート サーバー プロジェクトを作成
 レポート サーバーを作成する必要がありますを使用して、プロジェクト、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、SAP システムで使用できるデータのレポートを生成します。 このトピックでは、レポート サーバー プロジェクトを作成する方法についてを説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックに記載されている手順を実行する前に、インストールを確認してください、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]のインストール中に、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]の一部として、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールします。 詳細については[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールで使用可能なインストール ガイドを参照してください\<*インストール ドライブ*>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
+ このトピックに記載されている手順を実行する前に、インストールを確認してください、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]のインストール中に、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]の一部として、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールします。 詳細については[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールで使用可能なインストール ガイドを参照してください\<*インストール ドライブ*\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents です。  
   
 ### <a name="to-create-a-report-server-project"></a>レポート サーバー プロジェクトを作成するには  
   
@@ -91,4 +91,4 @@ ms.lasthandoff: 09/20/2017
      レポートを表示できるようになりました。 レポートを表示する方法については、次を参照してください。 [SAP に関するレポートを表示](../../adapters-and-accelerators/adapter-sap/view-the-reports-for-sap.md)です。  
   
 ## <a name="see-also"></a>参照  
- [SSRS と SAP 用データ プロバイダーを使用します。](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)
+ [Data Provider for SAP を SSRS と一緒に使用する](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "40"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa2124425fa97729b1bec692fc1a88e301434c0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e9d4dfe5818e28e1ccd73b077c19c9d45ecb8cc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK をインストールします。
 インストールし、構成、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 > **サポートされているバージョンの一覧については**を参照してください。 
 > 
 > [BizTalk Server 2016 のハードウェア/ソフトウェア要件](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
-> [BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)
+> [BizTalk Server 2013 および 2013 R2 のハードウェア/ソフトウェア要件](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)
  
  | | | 
  | --- | --- |
@@ -103,7 +103,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  Machine.config からカスタム アダプター バインドへの参照を削除します。  
   
-    1.  下にある machine.config ファイルに移動して\<*システム ドライブ*>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+    1.  下にある machine.config ファイルに移動して\<*システム ドライブ*\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
     2.  テキスト エディターを使用してファイルを開きます。  
   

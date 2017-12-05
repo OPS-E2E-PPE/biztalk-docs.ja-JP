@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29ab7194e0e1b81a773c61123de9171f1c65eb0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ce204ed2e892a6206f6e2db28bbccd0201e2f0f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-8b-configure-party-information-for-the-rx-system"></a>手順 8B: RX システム用のパーティ情報を構成します。
 この手順では、RX システム用のパーティ情報を構成します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  送信ポート] ペインで [空白のフィールドをクリックして、**名前**列で、選択**Tutorial_sendMsg_RX**、クリックして**[ok]**です。  
   
-5.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk\<バージョン > Accelerator 用 HL7**、クリックして**BTAHL7構成のエクスプ ローラー**です。  
+5.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**、クリックして**BTAHL7 構成エクスプ ローラー**です。  
   
 6.  BTAHL7 構成エクスプ ローラーで、選択、 **MSH マップ**タブをクリックし、次の操作します。  
   

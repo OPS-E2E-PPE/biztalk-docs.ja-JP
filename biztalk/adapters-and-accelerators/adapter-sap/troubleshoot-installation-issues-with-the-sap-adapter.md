@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf06cc866249e929c9ddf368f4594af58af1d6fa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dc33d5d15ef876e18a5a17fa33944dd7d1b36461
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-sap-adapter"></a>SAP アダプターでのインストールに関する問題をトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するのには、トラブルシューティングの手法について説明します。  
@@ -46,9 +46,9 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
   
 ### <a name="register-the-adapter-bindings-or-the-data-provider"></a>アダプターのバインドまたはデータ プロバイダーを登録します。  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
-     このパスに\<バージョン > は .NET Framework のバージョン。  
+     このパスに\<バージョン\>.NET Framework のバージョンです。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 200af0953dcd8f74de2a3fe8c29291e1b5c39765
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3944c58aecda3d9ea984e0ef0ce9a2bf168ea80
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario"></a>ステップ 3 D: FileAct ストア アンド フォワードのシナリオの FILEACT 送信ポートの追加
 この手順を開始する前に行う必要があります[手順 3 C: Sw:HandleFileRequest をキャプチャする FILE 送信ポートおよび Sw:HandleSnFRequest メッセージ FileAct ストア アンド フォワードのシナリオを追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)です。  
@@ -41,11 +41,11 @@ ms.lasthandoff: 09/20/2017
     |**ユーザー名**|SAG 接続を適切なユーザー名を設定します。|  
     |**アダプターのモード**|ドロップダウン リストから選択**ストア アンド フォワード**です。|  
     |**否認不可インジケーター**|ドロップダウン リストから選択**FALSE**です。|  
-    |**要求の種類**|適切な設定\<RequestType > SWIFT でのプロビジョニングに基づく文字列。|  
+    |**要求の種類**|適切な設定\<RequestType\> SWIFT でのプロビジョニングに基づく文字列。|  
     |**ResponseCrypto**|ドロップダウン リストから選択**FALSE**です。|  
-    |**要求元**|適切な設定\<リクエスター > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**応答側**|適切な設定\<レスポンダー > 文字列。|  
-    |**サービス名**|適切な設定\<サービス名 >。|  
+    |**要求元**|適切な設定\<リクエスター\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**応答側**|適切な設定\<レスポンダー\>文字列。|  
+    |**サービス名**|適切な設定\<サービス名\>です。|  
     |**受信確認のインジケーター**|ドロップダウン リストから選択**FALSE**です。|  
     |**FileCompression**|ドロップダウン リストから選択**None**です。|  
     |**イベントのエンドポイント**|適切な SAG エンドポイントを入力します。|  
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
  [手順 3: 送信ポートを作成し、FileAct ストア アンド フォワードのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   
  [手順 3: ファイルの受信場所が FileAct ストア アンド フォワードのシナリオを追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)   
  [手順 3 b: FILEACT の受信場所が FileAct ストア アンド フォワードのシナリオを追加](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-fileact-store-and-forward-scenario.md)   
- [手順 3 C: Sw:HandleFileRequest と Sw:HandleSnFRequest FileAct ストア アンド フォワードのシナリオについてメッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)
+ [手順 3C: FileAct ストア アンド フォワード シナリオ用に Sw:HandleFileRequest および Sw:HandleSnFRequest メッセージをキャプチャするためにファイルの送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20bb7019a993e47137ec2e4f71334c5b6b3f663c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02d7aa9eadc5e639e56cc526bfd5763abc432a4f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a>受信クエリ通知を使用して、SQL アダプターに関する考慮事項
 このトピックでは、いくつかの考慮事項とベスト プラクティスを使用しているときに留意する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server データベースからクエリ通知を受信します。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 -   操作の通知メッセージは、その操作によって影響を受けたレコードの数の影響を受けません。 たとえば、アダプター クライアントは、数に関係なく、挿入、更新、または SQL Server データベース テーブルで削除されたレコード、1 つだけの通知メッセージを受信します。  
   
--   アダプターのクライアント アプリケーションが、SQL Server から受信した通知の種類を解釈するためのロジックを含めることをお勧めします。 情報を抽出することで、通知の種類を決定できます、 **\<情報 >**通知を受信したメッセージの要素。 挿入操作用に受信した通知メッセージの例を次に示します。  
+-   アダプターのクライアント アプリケーションが、SQL Server から受信した通知の種類を解釈するためのロジックを含めることをお勧めします。 情報を抽出することで、通知の種類を決定できます、 **\<情報\>**通知を受信したメッセージの要素。 挿入操作用に受信した通知メッセージの例を次に示します。  
   
     ```  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     </Notification>  
     ```  
   
-     内の値に注意してください、 **\<情報 >**要素。 この値は、通知メッセージを受信した操作について説明します。 アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報 >**要素し、値に基づいて、後続のタスクを実行します。 トピック[を BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージを処理](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)内の値を抽出する方法の手順を持つ、 **\<情報 >**要素。 同様のタスクを実行する詳細なチュートリアルについてはでも[チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)です。  
+     内の値に注意してください、 **\<情報\>**要素。 この値は、通知メッセージを受信した操作について説明します。 アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報\>**要素し、値に基づいて、後続のタスクを実行します。 トピック[を BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージを処理](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)内の値を抽出する方法の手順を持つ、 **\<情報\>**要素. 同様のタスクを実行する詳細なチュートリアルについてはでも[チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)です。  
   
 -   理想的には、クライアント アプリケーションが特定のレコードの通知を受信した後そのレコードが更新されますできるように、追加の通知が受信されていません。 たとえば、**従業員**を持つテーブル、**ステータス**列です。 すべての新しいレコードが挿入されるため、**従業員**テーブル内の値、**ステータス**列は常になど、次のテーブルが表示されるので、「0」。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f13e4539fca9a14e7827afcb092af76e03f8acc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00000896eb4cb97e44ed51602675fc65495552be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly"></a>BizTalk アセンブリの反映中に、ファイルが見つからないことを示す例外が発生しました
 ## <a name="details"></a>詳細  
@@ -37,8 +37,8 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>ユーザーの操作  
  エラー メッセージに指定された操作に加え、参照アセンブリをグローバル アセンブリ キャッシュに移動するか、BizTalk アセンブリと同じ場所にコピーします。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** 、順にクリック **[!INCLUDE[vs2010](../includes/vs2010-md.md)]**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Visual Studio**、順にクリック**Visual Studio**です。  
   
 2.  コマンド プロンプトを開きます。  
   
-3.  アセンブリの場所を参照し、入力**gacutil/I/\<***アセンブリ名***> .dll**
+3.  アセンブリの場所を参照し、入力**gacutil/I/\<***アセンブリ名***\>.dll**

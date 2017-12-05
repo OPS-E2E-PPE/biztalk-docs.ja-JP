@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108424cf9ef8670340e51a1c9747f42eec9cc4cf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38d7b19c751f2bd380dad29ffc31a2be5f79245e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-character-sets"></a>EDI 文字セット
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、文字セットを使用して EDI インターチェンジ全体を検証します。 X12 でエンコードされたメッセージに使用される文字セットと、EDIFACT または KEDIFACT でエンコードされたメッセージに使用される文字セットは、異なる方法で決定されます。  
@@ -57,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
  基本文字セットには、大文字、数字、スペース、および特殊文字が含まれています A ~ Z、0 ~ 9、!。 “ & ’ ( ) * + , - . / : ; ? (スペース) を = です。  
   
- 拡張文字セットには、基本文字セット、および文字の小文字、言語選択文字、およびその他の特殊文字の文字が含まれています。 a ~ z、% @ [] _ {} \ & #124 です。\< > ~ # $ です。  
+ 拡張文字セットには、基本文字セット、および文字の小文字、言語選択文字、およびその他の特殊文字の文字が含まれています。 a ~ z、% @ [] _ {} \ &#124;です。\< \> ~ # $.  
   
 ## <a name="see-also"></a>参照  
  [EDI メッセージング](../core/edi-messaging.md)   

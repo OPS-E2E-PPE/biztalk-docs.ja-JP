@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac5f85187a49f3ab5248f12aceba74731ed7e915
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1f4c8ddde24c32f93d003f778b9359d70e87170
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-identifiers-as2"></a>識別子の構成 (AS2)
 パートナー アグリーメントで、送信パーティおよび受信パーティを指定する必要があります。 これらの値は、受信メッセージおよび送信メッセージのアグリーメントの解決にも使用されます。  
@@ -44,9 +44,9 @@ ms.lasthandoff: 09/20/2017
 5.  下にある、**追加のアグリーメント リゾルバー**  セクションの**AS2To**プロパティ、メッセージを受信する取引先の追加の別名を入力します。  
   
     > [!NOTE]
-    >  このプロパティは省略可能です。 このプロパティは下位互換用に使用されます。 BizTalk Server 2006 R2 または BizTalk Server 2009 から [!INCLUDE[prague](../includes/prague-md.md)] にパーティ定義を移行した場合、以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のパーティ名は、このプロパティの値として含められます。 これにより、アグリーメントの解決が実行され、既存のアプリケーションおよび取引先の定義を [!INCLUDE[prague](../includes/prague-md.md)] で使用できるようになります。  
+    >  このプロパティは省略可能です。 このプロパティは下位互換用に使用されます。 ときに、パーティ定義を移行した BizTalk Server 2006 R2 または BizTalk Server 2009 から BizTalk Server の以前のバージョンで、パーティの名前まで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]はこのプロパティの値として含まれます。 これにより、アグリーメント解決が行われる、既存のアプリケーションと取引先の定義は、BizTalk Server で使用できます。  
   
 6.  をクリックして**適用**構成を続行する前に、変更を受け入れるか、をクリックする**OK**を変更を検証し、ダイアログ ボックスを閉じます。  
   
 ## <a name="see-also"></a>参照  
- [AS2 アグリーメント プロパティの構成](../core/configuring-as2-agreement-properties.md)
+ [AS2 アグリーメントのプロパティの構成](../core/configuring-as2-agreement-properties.md)

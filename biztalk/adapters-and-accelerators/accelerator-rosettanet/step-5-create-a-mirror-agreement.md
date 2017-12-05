@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0ddb7c7dcad8bb278b318cdc599640b479baafa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00697f159e2363611248000616610cacd03b9f4f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-create-a-mirror-agreement"></a>手順 5: ミラー アグリーメントを作成します。
 ここでは、ループバック ユーティリティを使用してミラー アグリーメントを作成します。このミラー アグリーメントは、ホーム組織を構成したコンピューターと同じコンピューターで取引先をシミュレートします。 ループバック ユーティリティは、コマンド ライン ツールです。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-2.  コマンド プロンプトでに移動\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk です。 次のコマンドを入力し、キーを押します**Enter**:  
+2.  コマンド プロンプトでに移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk です。 次のコマンドを入力し、キーを押します**Enter**:  
   
     ```  
     Loopback /enable HOME  
@@ -47,4 +47,4 @@ ms.lasthandoff: 09/20/2017
 >  元の取引アグリーメントを更新した場合は、その都度取引アグリーメントの再ミラーリングを行う必要があります。  
   
 ## <a name="see-also"></a>参照  
- [手順 6: オーケストレーションを開始します。](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)
+ [手順 6: オーケストレーションの開始](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)

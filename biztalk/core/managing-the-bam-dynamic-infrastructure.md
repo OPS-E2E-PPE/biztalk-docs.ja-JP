@@ -15,18 +15,18 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 631a6bb3bab613004e11410a382687147e4adad8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98cf9c3513a4fbd4a55a752233c9f0d704c59ecf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-the-bam-dynamic-infrastructure"></a>BAM 動的インフラストラクチャの管理
 ビジネス アクティビティの監視 (BAM) 機能では、SQL とオンライン分析処理 (OLAP) のインフラストラクチャに動的に生成されるインフラストラクチャを使用します。 管理者は、BAM 管理ユーティリティを使用して、ビジネス アナリストが作成する BAM 定義ブックまたは XML ファイルを展開します。  
   
  BAM 動的インフラストラクチャは、BAM ブック ビュー、BAM の展開、BAM データ変換サービス (DTS) パッケージ、および BAM データベースで構成されています。 BAM 動的インフラストラクチャの詳細については、次を参照してください。 [BAM 動的インフラストラクチャ](../core/bam-dynamic-infrastructure.md)です。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の構成時に、BizTalk Server によって次の BAM データベースが作成されます。  
+ BizTalk Server を構成するときに、BizTalk Server は、次の BAM データベースを作成します。  
   
 -   BAM プライマリ インポート (BAMPrimaryImport) データベース  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BAM 定義を管理します。](../core/managing-bam-definitions.md)
+-   [BAM 定義の管理](../core/managing-bam-definitions.md)
   
 -   [BAM セキュリティの管理](../core/managing-bam-security.md)  
   

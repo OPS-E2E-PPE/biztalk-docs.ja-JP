@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56a22ccaffd48be138a08e975864e5ec702cd18a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c7d567744857d5df5e9a65b01baa46da897260d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-transformation-service-sample-using-the-install-scripts"></a>インストール スクリプトを使用して変換サービスのサンプルをインストールします。
 このセクションで提供するインストール スクリプトから変換サービスのサンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、し、enter キーを押してコマンド プロンプトを開きます。  
   
-3.  次のコード実行コマンドを置き換えて、 *\<パス >*をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\TransformServices\Install\Scripts\\):  
+3.  次のコード実行コマンドを置き換えて、 *\<パス\>*をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\TransformServices\Install\スクリプト\\)。  
   
     ```  
     <path>\TransformServices_Install.cmd  

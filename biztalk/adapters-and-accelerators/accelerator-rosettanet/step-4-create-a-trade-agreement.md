@@ -16,18 +16,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b94acad2b71694223b0566f86edfcfa86610099
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4e49efd8a2fd195c0b5fa912ced3773fa85153e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-create-a-trade-agreement"></a>手順 4: 取引先アグリーメントを作成します。
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、ホーム組織と取引先組織間の取引アグリーメントを作成します。  
   
 ### <a name="to-create-a-trade-agreement"></a>取引アグリーメントを作成するには  
   
-1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン > Accelerator for RosettaNet**を右クリックして**契約** をクリックして**新しい**、クリックして**アグリーメント**です。  
+1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン\>Accelerator for RosettaNet**を右クリックして**契約**をクリックして**新規**、順にクリック**アグリーメント**です。  
   
 2.  **新しいアグリーメントのプロパティ** ダイアログ ボックスで、**全般** タブで、次の操作します。  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 -   [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、 をクリックして**契約**を右クリックして**取引先アグリーメント**をクリックして結果ペイン**Activate**.  
   
 ## <a name="see-also"></a>参照  
- [手順 5: ミラー アグリーメントを作成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)
+ [手順 5: ミラー アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)

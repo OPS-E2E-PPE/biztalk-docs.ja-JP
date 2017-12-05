@@ -12,20 +12,20 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 313bfb773a94914ed9bebd3930dfd0033ecf4ac3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fbe03b1a8df67581ce73db31cd5ed4b80b7a109c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="publishing-from-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールからの発行
-使用したエンドポイント パブリッシュを管理する場合、 [!INCLUDE[prague](../includes/prague-md.md)] ESB 管理ポータルではなく管理コンソールで、これを行うの説明 フィールドに Universal Description, Discovery, and Integration (UDDI) モニカーを入力して、UDDI を発行するエンドポイント。 例モニカーを次に示します。  
+ESB の管理ポータルではなく、BizTalk Server 管理コンソールを通じて公開エンドポイントを管理する場合は、これを行うエンドポイントの説明 フィールドに Universal Description, Discovery, and Integration (UDDI) モニカーを入力してUDDI を発行します。 例モニカーを次に示します。  
   
 ```  
 uddi://TransportType=other;Status=Published.  
 ```  
   
- 使用して、次の UDDI プロパティを設定することができます、**説明**フィールドで、[!INCLUDE[prague](../includes/prague-md.md)]管理コンソール。  
+ 使用して、次の UDDI プロパティを設定することができます、**説明**フィールドで、BizTalk Server 管理コンソール。  
   
 -   **ModifiedBy**です。 このオプションのプロパティには、エンドポイントを変更したユーザーのアカウント名が含まれていますたとえば、MyDomainName\MyUserName です。  
   

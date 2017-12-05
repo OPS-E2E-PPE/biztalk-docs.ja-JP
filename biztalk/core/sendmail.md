@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2fce9c39fad76ad0e621fb4773cc39efc3488cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6cf0243eccb6a38dc121cfe06a60e30fa0c26c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendmail"></a>SendMail
 SendMail サンプルは、簡易メール転送プロトコル (SMTP) アダプターを使用して、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションから電子メール メッセージを送信する方法を示します。 電子メール メッセージの送信に使用される動的な情報は、プロパティの昇格機能を使用して XML メッセージから取得します。  
@@ -37,7 +37,7 @@ SendMail サンプルは、簡易メール転送プロトコル (SMTP) アダプ
 4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションは、SMTP アダプターを使用して、構築された電子メール メッセージを送信します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \AdaptersUsage\SendMail\  
+ \<*パスのサンプル*\>\AdaptersUsage\SendMail\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -54,13 +54,13 @@ SendMail サンプルは、簡易メール転送プロトコル (SMTP) アダプ
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersUsage\SendMail  
+     \<*パスのサンプル*\>\AdaptersUsage\SendMail  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   このサンプルの次の入力フォルダを作成します。  
   
-         \<*パスのサンプル*> \AdaptersUsage\SendMail\In  
+         \<*パスのサンプル*\>\AdaptersUsage\SendMail\In  
   
     -   コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。  
   
@@ -105,4 +105,4 @@ SendMail サンプルは、簡易メール転送プロトコル (SMTP) アダプ
 2.  電子メール メッセージが、前の手順で指定した電子メール メッセージに届くことを確認します。  
   
 ## <a name="see-also"></a>参照  
- [アダプタ サンプル – 使用状況](../core/adapter-samples-usage.md)
+ [アダプタ サンプル – 使用法](../core/adapter-samples-usage.md)

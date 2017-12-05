@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c907ca8db5b9655d83889b75e7439de46ebeb59c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5b1a6d6b651ea07430f67667a17029dfe162d4d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receivelocations-biztalk-server-sample"></a>ReceiveLocations (BizTalk Server サンプル)
 サンプルを作成する方法を示します ReceiveLocations に受信場所、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。 詳細については、受信場所全般を参照してください[受信場所](../core/receive-locations.md)です。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、次の SDK の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\ReceiveLocations  
+ \<*パスのサンプル*\> \Admin\ExplorerOM\ReceiveLocations  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権のあるコマンド プロンプトを開きます。  
   
-2.  変更、 \<*サンプル*> \Admin\ExplorerOM\ReceiveLocations\bin\debug ディレクトリ。  
+2.  変更、 \<*サンプル*\>\Admin\ExplorerOM\ReceiveLocations\bin\debug ディレクトリ。  
   
 3.  ReceiveLocations.exe を実行します。  
   
@@ -299,4 +299,4 @@ RP_Receive_ShipmentAgency_Ack
   
 ## <a name="see-also"></a>参照  
  [受信場所](../core/receive-locations.md)   
- [Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM (BizTalk Server Samples フォルダー)](../core/admin-explorerom-biztalk-server-samples-folder.md)

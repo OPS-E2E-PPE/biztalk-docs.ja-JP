@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6fcd41cd38074377fa179e3a414b278521c31f26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9856e0da6e8a4bc958b5fe08e0e1b5e87494531b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-flat-file-receive-port-and-location"></a>レッスン 1: フラット ファイルの追加の受信ポートと受信場所
 受信ポートは、常に、受信ポートを追加するときに構成する必要がある、関連付けられている受信場所を持ちます。 受信場所では、受信メッセージとメッセージの処理に使用するパイプラインの特定のアドレスを定義します。  
@@ -46,9 +46,9 @@ ms.lasthandoff: 09/20/2017
   
 9. [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。  
   
-10. フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ >: \Labs\Inbound**フォルダー、およびクリック**新しいフォルダーの作成**です。  
+10. フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ\>: \Labs\Inbound**フォルダー、およびクリック**新しいフォルダーの作成**です。  
   
-11. 作成、 **FlatFile**フォルダー **\<ドライブ >: \Labs\Inbound**、順にクリック**[ok]**です。  
+11. 作成、 **FlatFile**フォルダー **\<ドライブ\>: \Labs\Inbound**、順にクリック**[ok]**です。  
   
 12. **ファイル マスク**ボックスに、入力 **\*.txt**、順にクリック**OK**です。  
   

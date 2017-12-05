@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88a71a44c305e1eabbcdb9aede32b44439f6b03c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a989c58f59581795f641601938fe76bb7b1671f6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-type-data-element-validation"></a>EDI の種類 (データ要素) の検証
 EDI 受信パイプラインと EDI 送信パイプラインは、トランザクション セット データ要素に対して EDI 検証を実行します。 この検証は上から、またはそのパーティとのアグリーメントのプロパティを通じて、特定のパーティにすべてのメッセージ用に構成された、**検証**ページ (下にある、**トランザクション セットの設定**x12 のいずれかのセクションまたは EDIFACT アグリーメント) で変更します。 場合、 **EDI 型の検証**でプロパティが選択されていない、**検証**ページで、データをこのトピックで説明した検証は実行されません。  
@@ -99,7 +99,7 @@ EDI 受信パイプラインと EDI 送信パイプラインは、トランザ�
 |-|-|  
 |予期せぬデータ|操作|  
 |予期せぬトランザクション セットまたは未定義のトランザクション セット|EDI 受信パイプラインまたは送信パイプラインは、スキーマが展開されていない場合でもトランザクション セットを受け付けます。|  
-|予期せぬセグメントまたはレコード|受信パイプラインは、適切なプレフィックスを持つタグを生成: \<unexpectedsegment _ SegmentID % >。<br /><br /> 送信パイプラインは、XML タグ名の最初の 1 ～ 3 文字をセグメント名として使用します。|  
+|予期せぬセグメントまたはレコード|受信パイプラインは、適切なプレフィックスを持つタグを生成: \<unexpectedsegment _ SegmentID %\>です。<br /><br /> 送信パイプラインは、XML タグ名の最初の 1 ～ 3 文字をセグメント名として使用します。|  
 |予期せぬ単純なデータ要素|受信パイプラインは、プレフィックス、セグメント識別子、セグメント中のデータ要素の位置を表すインデックス <UnexpectedDataElement_%FieldName% の付いた XML タグを生成します。|  
 |予期せぬ複合データ要素|受信パイプラインは、プレフィックス、セグメント識別子、セグメント中のデータ要素の位置を表すインデックス <UnexpectedCompositeDataElement_%FieldName% の付いた XML タグを生成します。|  
 |必須データの不足|パイプラインはデータを省略可能として扱います。|  
@@ -122,4 +122,4 @@ EDI 受信パイプラインと EDI 送信パイプラインは、トランザ�
   
 ## <a name="see-also"></a>参照  
  [EDI メッセージの検証](../core/edi-message-validation.md)   
- [拡張 (BTS-XSD) 検証](../core/extended-bts-xsd-validation.md)
+ [拡張された (BTS-XSD) 検証](../core/extended-bts-xsd-validation.md)

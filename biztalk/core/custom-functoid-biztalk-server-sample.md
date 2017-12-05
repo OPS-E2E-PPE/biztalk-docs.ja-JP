@@ -18,11 +18,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5117bed6ea1116047052359eadcd11754e9f85d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 54f91f83285d554ad9ef825b10cf8004bd7dc0bc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="custom-functoid-biztalk-server-sample"></a>カスタム Functoid (BizTalk Server サンプル)
 カスタム Functoid サンプルは、BizTalk マッパー用のカスタム Functoid を記述する方法を示します。 Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに追加できます。 Functoid は、BizTalk マッパーにフォーカスがある場合にツールボックスに表示されます。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 >  カスタム Functoid サンプル コードを再利用して独自の Functoid を実装する場合は、GUID 属性を一意のものに変更する必要があります。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\XmlTools\CustomFunctoid  
+ *\<パスのサンプル\>*\XmlTools\CustomFunctoid  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーに。  
   
-     \<*パスのサンプル*> \XmlTools\CustomFunctoid  
+     \<*パスのサンプル*\>\XmlTools\CustomFunctoid  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -159,7 +159,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーに。  
   
-     \<*パスのサンプル*> \XmlTools\CustomFunctoid  
+     \<*パスのサンプル*\>\XmlTools\CustomFunctoid  
   
 3.  Cleanup.bat ファイルを実行します。処理内容は次のとおりです。  
   
@@ -172,4 +172,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [BaseFunctoid の使用](../core/using-basefunctoid.md)   
- [XML ツール (BizTalk Server Samples フォルダ)](../core/xml-tools-biztalk-server-samples-folder.md)
+ [XML ツール (BizTalk Server Samples フォルダー)](../core/xml-tools-biztalk-server-samples-folder.md)

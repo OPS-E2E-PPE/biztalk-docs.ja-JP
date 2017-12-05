@@ -16,18 +16,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61ced5103cfc3f6156b4e3975c51365f505c4e22
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5087f88587d3c6453f8d470d7c6095c967904537
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-the-partner-organization"></a>手順 2: パートナー組織を作成します。
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して取引先組織を作成します。  
   
 ### <a name="to-create-the-partner-organization"></a>取引先組織を作成するには  
   
-1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン > Accelerator for RosettaNet**を右クリックして**パートナー** をクリックして**新しい**、クリックして**パートナー**です。  
+1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン\>Accelerator for RosettaNet**を右クリックして**パートナー**、をクリックして**新規**、クリックして**パートナー**です。  
   
 2.  **新しいパートナーのプロパティ** ダイアログ ボックスで、次の操作します。  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
 >  暗号化証明書がある場合は、ここで構成します。 暗号化証明書を構成する方法の詳細については、次を参照してください。[証明書の管理](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)です。  
   
 ## <a name="see-also"></a>参照  
- [手順 3: Partner Interface Process を編集します。](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)
+ [手順 3: Partner Interface Process の編集](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)

@@ -12,26 +12,26 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45f3fedbdc4217ef5379b5e890568346a565a235
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff27ebd5804f3603aabf3bae24e469c2028234f2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="windows-sharepoint-services-40-support"></a>Windows SharePoint Services 4.0 のサポート
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターは、[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] 用の Windows SharePoint Services アダプターと同等の機能を備えています。 また、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターは Windows SharePoint Services 4.0 で使用可能な次の機能をサポートしています。  
+BizTalk Server の Windows SharePoint Services アダプターでは、同等の機能を提供の Windows SharePoint Services アダプタで[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]です。 BizTalk Server の Windows SharePoint Services アダプターには、Windows SharePoint Services 4.0 で使用可能な次の機能もサポートしています。  
   
 -   Windows SharePoint Services 4.0 ブログ サイトへのメッセージの送信。  
   
 -   Windows SharePoint Services 4.0 Wiki サイトとのメッセージの送受信。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターは、Windows SharePoint Services 4.0 で使用可能な次の機能をサポートしていません。  
+ BizTalk Server の Windows SharePoint Services アダプターは Windows SharePoint Services 4.0 で使用できる次の機能のサポートを提供していません。  
   
--   **ごみ箱**: の Windows SharePoint Services アダプター[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]アダプターが受信をサポートしていないか、ごみ箱に/から明示的に送信するメッセージします。  
+-   **ごみ箱**: BizTalk Server アダプター用の Windows SharePoint Services アダプターが受信をサポートしていないか、ごみ箱に/からメッセージを明示的に送信します。  
   
--   **フォルダーが一覧表示**: の Windows SharePoint Services アダプター[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]リストにメッセージを送信することができますが、一覧からメッセージを受信できません。 Windows SharePoint Services 4.0 はリスト内のフォルダーをサポートしていますが、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターはこの機能をサポートしていません。 したがって、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターでは、ルート フォルダー以外のリスト フォルダーにリスト項目を作成できません。  
+-   **フォルダーが一覧表示**: BizTalk Server の Windows SharePoint Services アダプターは、リストにメッセージを送信できますが、一覧からメッセージを受信できません。 Windows SharePoint Services 4.0 は、一覧にフォルダーをサポートしますが、BizTalk Server の Windows SharePoint Services アダプターはこの機能をサポートしていません。 したがって、BizTalk Server の Windows SharePoint Services アダプターでは、ルート フォルダー以外のリスト フォルダにリスト項目を作成することはできません。  
   
--   以下のセクションでは、Windows SharePoint Services 4.0 ブログ サイトにメッセージを送信するための [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターの使用方法、および Windows SharePoint Services 4.0 Wiki サイトとのメッセージの送受信方法について詳しく説明します。  
+-   次のセクションでは、大きいについて詳しく説明を BizTalk Server の Windows SharePoint Services アダプターを使用して、Windows SharePoint Services 4.0 ブログ サイトにメッセージを送信する方法とメッセージを送信して、Windows SharePoint Services からメッセージを受信する方法4.0 Wiki サイトです。  
   
 ## <a name="sending-to-a-windows-sharepoint-services-40-blog-site"></a>Windows SharePoint Services 4.0 ブログ サイトへの送信  
  Windows SharePoint Services 4.0 ブログ サイトでの投稿が格納されている、**ポスト**に一覧され、投稿カテゴリが定義されている、**カテゴリ** ボックスの一覧です。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
 |プロパティ|値|  
 |--------------|-----------|  
 |ターゲット フォルダーの URL|"Lists/Posts" など、SharePoint サイトを基準とした [投稿] リストのターゲット フォルダーの URL。|  
-|SharePoint サイトの URL|たとえば http://、Windows SharePoint Services 4.0 ブログ サイトの URL*\<servername >*/ブログ/サイト/場所 *\<servername >*実際の名前のプレース ホルダーWeb サーバーです。|  
+|SharePoint サイトの URL|たとえば http://、Windows SharePoint Services 4.0 ブログ サイトの URL*\<servername\>*/ブログ/サイト/場所 *\<servername\>* は、Web サーバーの実際の名前のプレース ホルダーです。|  
   
  値を設定し、**カテゴリ**、**公開済み**、**タイトル**、および**本文**対応に設定して、ブログ投稿のプロパティWSS の値。メッセージの ConfigPropertiesXml コンテキスト プロパティです。 これとカスタム パイプラインまたはオーケストレーションで実行できます。 たとえば、次のオーケストレーションの式では、WSS の値が設定します。ConfigPropertiesXml Message_Out メッセージのプロパティをコンテキストです。  
   
@@ -86,7 +86,7 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
 |プロパティ|値|  
 |--------------|-----------|  
 |ターゲット フォルダーの URL|"wikiSP" など、SharePoint サイトを基準とした Wiki サイトのホーム ページの URL。|  
-|SharePoint サイトの URL|たとえば http://、Windows SharePoint Services 4.0 Wiki サイトの URL*\<servername >*/サイト/場所 *\<servername >*実際の名前のプレース ホルダーweb サーバーです。|  
+|SharePoint サイトの URL|たとえば http://、Windows SharePoint Services 4.0 Wiki サイトの URL*\<servername\>*/サイト/場所 *\<servername\>* は、web サーバーの実際の名前のプレース ホルダーです。|  
   
  値を設定、 **Wiki Content** WSS に対応する値を設定して、Wiki ページのプロパティです。メッセージの ConfigPropertiesXml コンテキスト プロパティです。 これとカスタム パイプラインまたはオーケストレーションで実行できます。 たとえば、次のオーケストレーションの式によって、Message_Out メッセージの WSS.ConfigPropertiesXml コンテキスト プロパティの値が設定されます。  
   
@@ -101,7 +101,7 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
  この式の str_Wiki 変数を使用して、 **System.String**データ型。  
   
 > [!IMPORTANT]
->  Windows SharePoint Services 4.0 Wiki ドキュメント ライブラリはバージョン管理をサポートしていますが、BizTalk Server 2010 用の Windows SharePoint Services アダプターはこの機能をサポートしていません。 したがって、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターによって更新された Wiki ページでは、以前のバージョンは失われます。 この制限のため、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 用の Windows SharePoint Services アダプターによって受信され、別の Wiki ドキュメント ライブラリでアーカイブされた Wiki ページでは、最新のバージョンのみが保存され、他のバージョンはすべて削除されます。  
+>  Windows SharePoint Services 4.0 Wiki ドキュメント ライブラリはバージョン管理をサポートしていますが、BizTalk Server 2010 用の Windows SharePoint Services アダプターはこの機能をサポートしていません。 したがって、BizTalk Server の Windows SharePoint Services アダプターによって更新された Wiki ページには、以前のバージョンは失われます。 この制限によりは、BizTalk Server の Windows SharePoint Services アダプターによって受信され、別の Wiki ドキュメント ライブラリでアーカイブされた Wiki ページは、最新バージョンのみ削除されている他のすべてのバージョンとを保存します。  
   
 ### <a name="receiving-from-a-windows-sharepoint-services-40-wiki-document-library"></a>Windows SharePoint Services 4.0 Wiki ドキュメント ライブラリからの受信  
  Wiki ページの内容がという名前の Windows SharePoint Services アダプター コンテキスト プロパティ内に格納されている Windows SharePoint Services 4.0 Wiki サイトからメッセージを受信するときに**WSS です。InPropertiesXml**です。  

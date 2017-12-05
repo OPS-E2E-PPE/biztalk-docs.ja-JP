@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efdb0a358b378886b8944c9d3d9428b169bab7a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc79fd31e78581d98ecad34579958ff90f3b1e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="prerequisites-for-the-development-activities"></a>開発活動の前提条件
 このセクションの一部として含まれている開発作業の手順を実行するように環境を準備する方法について説明、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 開発作業の手順のいずれかの操作を行う前に、次のセットアップを完了します。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
     -   C:\HowTos\Out  
   
-4.  いることを確認、[!INCLUDE[prague](../includes/prague-md.md)]サービス アカウントが**フルコントロール**C:\HowTos ディレクトリ構造へのアクセス許可。  
+4.  BizTalk Server サービス アカウントがあることを確認**フルコントロール**C:\HowTos ディレクトリ構造へのアクセス許可。  
   
 5.  Microsoft BizTalk Server サービス アカウントがあることを確認**書き込み**C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out へのアクセス許可。  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="create-the-visual-studio-solution"></a>Visual Studio ソリューションを作成します。  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、[ファイル] メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+1.  Visual Studio で、[ファイル] メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 2.  **新しいプロジェクト**ダイアログ ボックスで、プロジェクトの種類 ペインで、をクリックして**Visual c#**、クリックして**クラス ライブラリ**テンプレート ペインでします。  
   

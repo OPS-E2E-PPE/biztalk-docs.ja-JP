@@ -18,16 +18,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec579716f9ab02389ce9f2d5ae5ec02ef0b30730
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f84cd2de6d5f79062592dbf71947587b6d7a6ff0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>特定の PIP で使用するプライベート プロセスのカスタマイズ
 応答側のプライベートプロセス オーケストレーションが特定の Partner Interface Process (PIP) のインスタンスを処理するかどうかを指定するフィルター式を作成できます。 これにより、特定の PIP インスタンスを受信して処理するためのカスタム プライベート プロセスを作成し、その他の PIP インスタンスには既定のプライベート プロセスを使用する柔軟性が備わります。  
   
- 特定の PIP で使用するカスタム プライベート プロセスを作成するには、プライベートプロセス オーケストレーションの受信図形のフィルタ式を作成します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK の PIP3A4PrivateResponder.odx オーケストレーションがその一例です。 これは、 \<*ドライブ*>: \Program Files\BizTalk\<バージョン > Accelerator for rosettanet \sdk\pip3a4process を使用してビジネス \pip3a4privateresponder です。  
+ 特定の PIP で使用するカスタム プライベート プロセスを作成するには、プライベートプロセス オーケストレーションの受信図形のフィルタ式を作成します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK の PIP3A4PrivateResponder.odx オーケストレーションがその一例です。 これは、 \<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pip3a4process を使用してビジネス \pip3a4privateresponder です。  
   
  特定の PIP のインスタンスのみを処理するプライベート プロセスを作成するだけでなく、既定の BTARN プライベート プロセスをカスタマイズして、その PIP のインスタンスを処理しないように設定する必要があります。  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
 1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で、特定の PIP で使用する応答側プライベートプロセス オーケストレーションを作成します。 既定の BTARN 応答側プライベートプロセスのオーケストレーションを基盤にできます。  
   
     > [!NOTE]
-    >  PrivateResponder.odx という名前の既定の応答側プライベートプロセス オーケストレーションは BTARN SDK にあります。 これは、 *\<ドライブ >*: \Program Files\BizTalk\<バージョン > Accelerator for rosettanet \sdk\privateresponder です。  
+    >  PrivateResponder.odx という名前の既定の応答側プライベートプロセス オーケストレーションは BTARN SDK にあります。 これは、 *\<ドライブ\>*: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder です。  
   
 2.  カスタム オーケストレーションを BizTalk プロジェクトに追加します。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの参照があることを確認してください。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 14. **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
   
-15. 移動\<*ドライブ*>: \Program Files\BizTalk\<バージョン > Accelerator for rosettanet \sdk\privateresponder、選択**PrivateResponder.odx**をクリックして**[Ok]**です。  
+15. 移動\<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder、選択**PrivateResponder.odx**、クリックして**OK**です。  
   
 16. ソリューション エクスプローラーで、プロジェクトを右クリックし、 **[ビルド]**をクリックします。  
   

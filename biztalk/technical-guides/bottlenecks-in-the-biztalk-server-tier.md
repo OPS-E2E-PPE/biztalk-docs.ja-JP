@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ce311461f4273b057c65913d3024f8092f87d1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd2eddf6cc88737375998237db97ca699a676170
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bottlenecks-in-the-biztalk-server-tier"></a>BizTalk Server 層のボトルネック
 BizTalk 層は以下の機能領域に分割できます。  
@@ -121,7 +121,7 @@ BizTalk 層は以下の機能領域に分割できます。
 ### <a name="other-system-resource-contention"></a>その他のシステム リソースの競合  
  、トランスポートの種類によっては、HTTP (MaxIOThreads、MaxWorkerThreads など) は、IIS のようなシステム リソースを構成する必要があります。  
   
- ASP.NET 2.0 および ASP.Net 4 で、 \<processModel autoConfig ="true"/> machine.config ファイルの設定は自動的に最適なパフォーマンスを次の設定を構成します。  
+ ASP.NET 2.0 および ASP.Net 4 で、 \<processModel autoConfig ="true"\> machine.config ファイルの設定は自動的に最適なパフォーマンスを次の設定を構成します。  
   
 -   ワーカー スレッド最大数  
   
@@ -131,7 +131,7 @@ BizTalk 層は以下の機能領域に分割できます。
   
 -   httpRuntime 要素の minLocalRequestFreeThreads 属性  
   
--   maxConnection 属性、 \<connectionManagement > 要素 (ネットワーク設定)  
+-   maxConnection 属性、 \<connectionManagement\>要素 (ネットワーク設定)  
   
  アダプターのパフォーマンスに影響するパラメーターを構成する方法の詳細については、次を参照してください。 [processModel 要素の構成設定を ASP.NET](http://go.microsoft.com/fwlink/?LinkId=158080) (http://go.microsoft.com/fwlink/?LinkId=158080)。  
   
@@ -229,4 +229,4 @@ BizTalk 層は以下の機能領域に分割できます。
  各ブレークポイントで、ローカル変数、メッセージとそのプロパティ、ポート、およびロール リンクに関する情報を調べることができます。  
   
 ## <a name="see-also"></a>参照  
- [検索して、ボトルネックを解消します。](../technical-guides/finding-and-eliminating-bottlenecks.md)
+ [ボトルネックの検索と解消](../technical-guides/finding-and-eliminating-bottlenecks.md)

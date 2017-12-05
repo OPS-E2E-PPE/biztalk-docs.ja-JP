@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb14221ba11fe514ab076dd6bad8cc0aeb5b929e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e34fcb08776d6be2c98e7c0e71d754caf9bdbb6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receiveports-biztalk-server-sample"></a>ReceivePorts (BizTalk Server サンプル)
 ReceivePorts サンプルを新規作成する方法を使用して受信ポート、 **ExplorerOM**管理クラスです。  
@@ -41,7 +41,7 @@ ReceivePorts サンプルを新規作成する方法を使用して受信ポー�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\ReceivePorts  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\ReceivePorts  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -62,7 +62,7 @@ ReceivePorts サンプルを新規作成する方法を使用して受信ポー�
   
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\ReceivePorts\bin\Debug  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\ReceivePorts\bin\Debug  
   
 2.  ReceivePorts.exe ファイルを実行します。 新しい受信ポートが作成され、ポートの列挙に表示されます。 列挙直後に受信ポートが削除されます。  
   
@@ -223,4 +223,4 @@ RP_Receive_ShipmentAgency_Ack
 ```  
   
 ## <a name="see-also"></a>参照  
- [Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM (BizTalk Server Samples フォルダー)](../core/admin-explorerom-biztalk-server-samples-folder.md)

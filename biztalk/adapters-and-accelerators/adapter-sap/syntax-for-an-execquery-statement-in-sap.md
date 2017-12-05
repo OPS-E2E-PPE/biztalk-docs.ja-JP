@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f1eb41d07ef6a6ac3577bf0ef6d3f5bffb874f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5198335cfa1a7d2036ca05759edc7d04e28cc20b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>SAP の EXECQUERY ステートメントの構文
 SAP の GUI を使用すると、グラフィカルに表示するクエリ、列および並べ替え順序など、結果セットに含めるテーブルを選択してクエリを作成します。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ADO.NET アプリケーションからユーザーは、SAP システムで定義されているクエリの実行に使用できる EXECQUERY 操作を提供することによってこのようなクエリを実行することができます。  
@@ -30,16 +30,16 @@ SAP の GUI を使用すると、グラフィカルに表示するクエリ、�
   
 ```  
 EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='variant']   
-[, @P1='\<value 1>’] [, @P2='\<value 2>'] ... [, @Pn = '<value n>'] [, @P1!='\<value 3>'] [, @P1 > '\<value 4>'] [, @P1 <= '\<value 2>']   
-[, NOT @P1 = '\<value 2>'] [, NOT @P1 != '\<value 2>'] [, NOT @P1 > '\<value 2>']   
-[, @P1 BETWEEN '\<value 1>' AND '\<value 2>'] [, NOT @P1 BETWEEN '\<value 1>' AND '<value2>’]  
+[, @P1='<value 1>’] [, @P2='<value 2>'] ... [, @Pn = '<value n>'] [, @P1!='<value 3>'] [, @P1 > '<value 4>'] [, @P1 <= '<value 2>']   
+[, NOT @P1 = '<value 2>'] [, NOT @P1 != '<value 2>'] [, NOT @P1 > '<value 2>']   
+[, @P1 BETWEEN '<value 1>' AND '<value 2>'] [, NOT @P1 BETWEEN '<value 1>' AND '<value2>’]  
 [OPTION 'USEORIGINALCOLUMNNAMES']  
   
 ```  
   
  それぞれの文字の説明は次のとおりです。  
   
--   **\<QueryName >** SAP システムで定義されたクエリの名前を指定します。  
+-   **\<QueryName\>**  SAP システムで定義されたクエリの名前を指定します。  
   
 -   **USERGROUP**クエリが定義されているユーザー グループを参照します。 これは、必須のパラメーターです。  
   
@@ -79,7 +79,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     EXECQUERY xyz uSERgROUP=’mygrp’, NOT @P1= 'somevalue'  
     ```  
   
--   EXECQUERY でサポートされている演算子は、>、 \<、> =、< =、! =、NOT、および BETWEEN です。  
+-   EXECQUERY でサポートされている演算子は、>、<>、=、< =、! =、NOT、および BETWEEN です。  
   
 -   EXECQUERY 操作によっては、ワイルドカード文字はサポートされていません。 たとえば、次のステートメントが予想される出力。  
   
@@ -107,4 +107,4 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     >  SAP システムでクエリの既定のバリエーションが定義されている場合は、バリアントの名前を指定する必要はありません。  
   
 ## <a name="see-also"></a>参照  
- [使用して、.NET Framework Data Provider 用 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [.NET Framework Data Provider for mySAP Business Suite の使用](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

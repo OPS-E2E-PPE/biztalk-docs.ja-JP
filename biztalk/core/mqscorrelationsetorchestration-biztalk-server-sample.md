@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea8de4f60907e465f37502b5b0227e31ddcd92b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75ac63fe0fee593f927e854ce425ff7f631f9475
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqscorrelationsetorchestration-biztalk-server-sample"></a>MQSCorrelationSetOrchestration (BizTalk Server サンプル)
 MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレーションに MQSeries キューをルーティングして戻すために送信されるメッセージを関連付けるための MQSeries 関連付け識別子を使用する方法を示します。 オーケストレーションが、識別子の値を使用して MQSeries 関連付け識別子とメッセージを設定、 **MQMD_CorrelId**と**MQMD_MsgID**プロパティです。 MQSeries キュー マネージャーは、MessageID の値をメッセージの CorrelationID プロパティにコピーします。  
@@ -38,7 +38,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
  このサンプルは、オーケストレーションで処理中のドキュメントを MQSeries キューに送信可能であり (多くの場合、追加の処理を行うため)、実行中のオーケストレーションにルーティングして戻されるというシナリオを示します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
+ *\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -240,7 +240,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
   
 4.  プロジェクトのプロパティでアセンブリに署名する厳密な名前キー ファイルを指定**署名**ページし、プロジェクトをビルドします。  
   
-5.  グローバル アセンブリ キャッシュ ツール (gacutil.exe) を使用してに、コンパイルされたアセンブリを GAC に読み込む (gacutil/i \<*コンパイル済み dll ファイルの名前*>)。  
+5.  グローバル アセンブリ キャッシュ ツール (gacutil.exe) を使用してに、コンパイルされたアセンブリを GAC に読み込む (gacutil/i \<*コンパイル済み dll ファイルの名前*\>)。  
   
 6.  このサンプルの BizTalk プロジェクトに GetId アセンブリへの参照を追加します。  
   

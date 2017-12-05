@@ -15,11 +15,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33c8921e037b9f9628c0e0ee97a915f62ab634ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70cba6055c51371ddaaf99775bd5e7a60e7f3929
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="medical-claims-processing-and-testing-policies-biztalk-server-sample"></a>Medical Claims 処理およびテストのポリシー (BizTalk Server サンプル)
 Medical Claims Processing and Testing Policies サンプルは、データベース テーブルおよび受信ドキュメントから派生したファクトを検証し、.NET ベースのオブジェクトを使用して請求処理の結果を記録する複数のルールを含むルール セットを作成する方法を示します。  
@@ -45,7 +45,7 @@ Medical Claims Processing and Testing Policies サンプルは、データベー
 6.  上記以外の場合は、請求が承認されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Business Rules\Medical Claims Processing and Policies\ を Testing  
+ \<*パスのサンプル*\>\Business Rules\Medical Claims Processing and Policies\ を Testing  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -67,11 +67,11 @@ Medical Claims Processing and Testing Policies サンプルは、データベー
 1.  コンピューターに Northwind データベースがインストールされていることを確認してください。  
   
     > [!IMPORTANT]
-    >  このサンプルを実行するには、Northwind という名前のデータベースが必要です。 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]および[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]は、Northwind サンプル データベースは付属していません。 Northwind データベースを作成するファイルのダウンロード、インストールから[http://go.microsoft.com/fwlink/?LinkId=196020](http://go.microsoft.com/fwlink/?LinkId=196020)指示に従います。  
+    >  このサンプルを実行するには、SQL Server の Northwind サンプル データベースが必要です。 [ダウンロード](https://www.microsoft.com/download/details.aspx?id=23654)、およびインストールします。 
   
 2.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Business Rules\Medical Claims Processing and Policies\ を Testing  
+     \<*パスのサンプル*\>\Business Rules\Medical Claims Processing and Policies\ を Testing  
   
 3.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -100,7 +100,7 @@ Medical Claims Processing and Testing Policies サンプルは、データベー
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Business Rules\Medical Claims Processing and Policies\RulesForMedicalClaims\bin\Debug\ を Testing  
+     \<*パスのサンプル*\>\Business Rules\Medical Claims Processing and Policies\RulesForMedicalClaims\bin\Debug\ を Testing  
   
 2.  コマンド ラインで RulesForMedicalClaims.exe ファイルを実行します。  
   
@@ -248,4 +248,4 @@ Medical Claims Processing and Testing Policies サンプルは、データベー
     ```  
   
 ## <a name="see-also"></a>参照  
- [ビジネス ルール (BizTalk Server Samples フォルダ)](../core/business-rules-biztalk-server-samples-folder.md)
+ [ビジネス ルール (BizTalk Server サンプル フォルダー)](../core/business-rules-biztalk-server-samples-folder.md)

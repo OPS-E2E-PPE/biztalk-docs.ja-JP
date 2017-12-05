@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec3ca7a33b5a38b625894e391c5bf014eb824414
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9dd0ec42ab60636202a8ff99fa8fab8d96a95a19
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="collecting-exceptions-and-persisting-the-payload-using-the-esb-exception-processor"></a>例外の収集および ESB 例外プロセッサを使用して、ペイロードを保持します。
-このユース ケースにオーケストレーションの例外ハンドラーが、ESB フォールト メッセージを発行、[!INCLUDE[prague](../includes/prague-md.md)]メッセージ ボックス、または BizTalk 失敗のメッセージのルーティング メカニズムは、エラー メッセージを生成します。 ESB 例外エンコーダ パイプライン コンポーネントでは、事前に構成されて、送信ポートは、エラー メッセージの種類の両方をサブスクライブします。 エラー メッセージを処理し、表示できる、InfoPath を使用して図 1 に示すようにディスク ファイルとが引き続き発生することです。  
+このユース ケースでは、オーケストレーションの例外ハンドラーは、BizTalk Server メッセージ ボックスに ESB フォールト メッセージを発行するか、または BizTalk 失敗のメッセージのルーティング メカニズムには、エラー メッセージが生成されます。 ESB 例外エンコーダ パイプライン コンポーネントでは、事前に構成されて、送信ポートは、エラー メッセージの種類の両方をサブスクライブします。 エラー メッセージを処理し、表示できる、InfoPath を使用して図 1 に示すようにディスク ファイルとが引き続き発生することです。  
   
  ![例外のペイロードの収集](../esb-toolkit/media/ch3-collectingexceptionspayload.gif "Ch3 CollectingExceptionsPayload")  
   

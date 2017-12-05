@@ -20,11 +20,11 @@ caps.latest.revision: "72"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8915c298160f53ea21c62bc6f44d51aec36cdf94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca976d2e965d781de352a010bd4ef8c16e712ffb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter"></a>チュートリアル: Wcf-basichttp アダプタを使用して WCF サービスの発行
 ## <a name="introduction"></a>概要  
@@ -46,11 +46,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>前提条件  
  このサンプルの手順を実行するには、使用する環境が次の前提条件を満たしている必要があります。  
   
--   Microsoft Windows Server 2008 SP2 または Windows Server 2008 R2、Microsoft .NET Framework 4、および Microsoft、アセンブリをビルドおよび展開プロセスを実行するコンピューターと、サンプルを実行しているコンピューターの両方を必要と[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   アセンブリをビルドおよび展開プロセスと、サンプルを実行しているコンピューターを実行するコンピューターの両方では、Microsoft Windows Server 2008 SP2 または Windows Server 2008 R2、Microsoft .NET Framework 4、および Microsoft BizTalk Server が必要です。  
   
 -   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft Visual Studio が必要です。  
   
--   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のセットアップ時にインストールするオプションです。  
+-   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft BizTalk Server のセットアップ時にインストールするオプションです。  
   
 -   管理タスクの実行に使用するコンピューターで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソール内の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション設定を構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーであるユーザー アカウントとして実行する必要があります。 また、アプリケーションの展開、ホスト インスタンスの管理、およびその他の必要なタスクを実行するには、このユーザー アカウントはローカル管理者グループのメンバーである必要もあります。  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  Microsoft Visual Studio で開く、 **C:\WCFBasicHttpReceiveAdapter\WCFBasicHttpReceiveAdapter.sln**ファイル。  
   
-3.  **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**アセンブリに含まれる、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーション、マップ、および 2 つのスキーマです。 GAC にインストールする必要があり、必要な厳密な名前キー ファイルこれにはします。 右クリックし、 **BizTalkApp**プロジェクトし、**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規 >**、入力と`keyfile.snk`で、**キー ファイルの名前** テキスト ボックス. オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
+3.  **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**アセンブリに含まれる、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーション、マップ、および 2 つのスキーマです。 GAC にインストールする必要があり、必要な厳密な名前キー ファイルこれにはします。 右クリックし、 **BizTalkApp**プロジェクトし、**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規\>**、入力と`keyfile.snk`で、**キー ファイル名** テキスト ボックス。 オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
   
 4.  ソリューション エクスプ ローラーで右クリックし、 **BizTalkApp**プロジェクトをクリックして**リビルド**です。  
   
@@ -97,7 +97,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  選択、**サービス エンドポイント**オプションは、公開する、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]アセンブリ内のオーケストレーションからサービス。 選択**Wcf-basichttp**から、**アダプター名 (トランスポートの種類)**ドロップダウン リスト。  
   
-    2.  選択、**メタデータ エンドポイントを有効にする**するチェック ボックスを[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]受信場所が IIS によってホストされている発行その[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス メタデータ。 このチェック ボックスの設定を選択すると、 **httpGetEnabled**の属性、 \< **serviceMetadata**> 要素を`true`Web.Config でします。このメタデータは、HTTP/GET 要求によって要求された場合に取得されます。 後で、SvcUtil.exe ツールを使用して、クライアント コードを使用して呼び出すためのプロキシ クラスを生成するには、このデータを取得するが、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。  
+    2.  選択、**メタデータ エンドポイントを有効にする**するチェック ボックスを[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]受信場所が IIS によってホストされている発行その[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス メタデータ。 このチェック ボックスの設定を選択すると、 **httpGetEnabled**の属性、 \< **serviceMetadata** \>要素を`true`Web.Config でします。このメタデータは、HTTP/GET 要求によって要求された場合に取得されます。 後で、SvcUtil.exe ツールを使用して、クライアント コードを使用して呼び出すためのプロキシ クラスを生成するには、このデータを取得するが、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。  
   
     3.  選択、**次のアプリケーションに作成する BizTalk 受信場所**Wcf-basichttp アダプターの場合は、各生成された .svc ファイルに対応する場所と受信ポートを作成するオプションです。 BizTalk アプリケーション名を選択して**WCFBasicHttpReceiveAdapter**、場所、ポートと受信場所が生成され、をクリックして**次**です。  
   

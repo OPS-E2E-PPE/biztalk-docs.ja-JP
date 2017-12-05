@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb07d262b61bb823202b964ee3dd6e53a92d3a6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 399c8e02d59a931dbf30bfa31ca28980dfa312be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-message-queuing-large-message-extension"></a>BizTalk メッセージ キューのサイズの大きいメッセージ用拡張機能
 4megabytes よりも大きい本体を持つメッセージを処理できないネイティブのメッセージ キュー (MB)。 ただし、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、4 MB を超えるメッセージを処理できるようにする、ネイティブのメッセージ キュー用のアドオンが用意されています。 このアドオンは、Mqrtlarge.dll ファイルとして提供され、公開、 **MQSendLargeMessage**と**MQReceiveLargeMessage**アプリケーション プログラミング インターフェイス (Api)、および COM 類似モデル。 これらの関数は、標準メッセージ キュー Api として実装されて**MQSendMessage**と**MQReceiveMessage**それぞれします。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
  **SDK 内の場所**  
   
- \<*インストール パス*> \SDK\ Mqrtlarge.dll  
+ \<*インストール パス*\>\SDK\ Mqrtlarge.dll  
   
  **ファイルのインベントリ**  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 |ファイル|Description|  
 |---------------|-----------------|  
-|Mqrtlarge.dll|公開する Win32 ダイナミック リンク ライブラリ**MQSendLargeMessage**と**MQReceiveLargeMessage**です。<br /><br /> ヘッダー ファイルに配置されます、 *\<インストール パス >*\SDK\Include ディレクトリ。 **注:**インストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット版の Mqrtlarge.dll にアクセスするために Windows の 64 ビット バージョンにします。|  
+|Mqrtlarge.dll|公開する Win32 ダイナミック リンク ライブラリ**MQSendLargeMessage**と**MQReceiveLargeMessage**です。<br /><br /> ヘッダー ファイルに配置されます、 *\<インストール パス\>*\SDK\Include ディレクトリ。 **注:**インストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット版の Mqrtlarge.dll にアクセスするために Windows の 64 ビット バージョンにします。|  
   
  **このユーティリティの使用**  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="to-use-the-mqrtlargedll-file"></a>Mqrtlarge.dll ファイルを使用するには  
   
 1.  > [!NOTE]
-    >  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] を使用しない MSMQ ソリューションでは、MQRTLarge.dll が依然として正常に機能する場合があります。 ただし、これはマイクロソフトがサポートする推奨構成でなく、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 環境の外部で使用した場合は予期せぬ結果が生じることがあります。  
+    >  BizTalk Server なしの MSMQ ソリューションでは、引き続き、MQRTLarge.dll から正常に機能します。 ただし、これは Microsoft がサポートするための推奨構成ではありません、BizTalk Server 環境の外部で使用されている場合に、予期しない結果が発生する可能性があります。  
   
      ファイル Mqrtlarge.dll を BizTalk Server がインストールされていないコンピューターに追加します。 メッセージ キューで Mqrtlarge.dll を使用して、BizTalk Server との間でメッセージを送受信します。  
   

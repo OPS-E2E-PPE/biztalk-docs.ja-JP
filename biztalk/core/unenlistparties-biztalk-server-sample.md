@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d328a1a95b7340520352b32b6d72e1579b9594a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34cbb94dff7211a157fc492c1157fa379236641e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unenlistparties-biztalk-server-sample"></a>UnenlistParties (BizTalk Server サンプル)
 UnenlistParties サンプルは、展開された BizTalk Server アセンブリに関連付けられているすべてのパーティの参加を解除する方法を示しています。  
@@ -50,7 +50,7 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\UnenlistParties\  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\UnenlistParties\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -68,12 +68,11 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\UnenlistParties\bin\Debug\  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
   
 2.  ファイル UnenlistParties.exe を実行し、次の 2 つのコマンド ライン引数のいずれかを渡します。  
   
-    -   **\<**   
-         ***AssemblyName* >**です。 すべての関連パーティの参加を解除するアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<** ***AssemblyName* \>**です。 すべての関連パーティの参加を解除するアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
   
     -   **/?.** ヘルプを表示します。  
   
@@ -183,7 +182,7 @@ else
   
 ```  
   
- 次のスクリプト出力は、PartyResolution サンプルの一部である Supplier アセンブリからパーティを参加解除したときに生成されました。 PartyResolution サンプルに格納、 \<*サンプル パス*> \Admin\Orchestrations\PartyResolution ディレクトリ。  
+ 次のスクリプト出力は、PartyResolution サンプルの一部である Supplier アセンブリからパーティを参加解除したときに生成されました。 PartyResolution サンプルに格納、 \<*サンプル パス*\>\Admin\Orchestrations\PartyResolution ディレクトリ。  
   
 ```  
 PS C:\> .\UnenlistParties.ps1 Supplier  
@@ -204,4 +203,4 @@ done.
 ```  
   
 ## <a name="see-also"></a>参照  
- [Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM (BizTalk Server Samples フォルダー)](../core/admin-explorerom-biztalk-server-samples-folder.md)

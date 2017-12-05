@@ -17,11 +17,11 @@ caps.latest.revision: "45"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a44fd7e30bf511ee77cc1f3e79f6ba63908259ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23bc9f0b1f2d350864509536a393de639e108e2d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-module-3---accessing-sharepoint-properties-from-an-orchestration"></a>チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス
 このチュートリアルでは、継続の[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)し、受信メッセージでの Windows SharePoint Services コンテキスト プロパティにアクセスする方法を示します実行時間とし、動的ポート、オーケストレーションでのプロパティに基づいてメッセージの送信先を判断します。 概要については、Windows SharePoint Services アダプターを参照してください。 [Windows SharePoint Services アダプターは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)です。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するための前提条件は、次のとおりです。  
   
--   [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] で完全インストール済みの [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] が稼働している形のシングル サーバー展開が必要です。  
+-   シングル サーバー配置で実行されている BizTalk Server の完全インストールする必要があります[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。  
   
 -   次のチュートリアルを完了する必要があります:[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信する](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)と[チュートリアル: モジュール 2 - Windows と Office の統合SharePoint Services アダプター](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)  
   
@@ -389,4 +389,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [Windows SharePoint Services アダプターとは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)   
- [Windows SharePoint Services アダプタのチュートリアル](../core/windows-sharepoint-services-adapter-walkthroughs.md)
+ [Windows SharePoint Services アダプターのチュートリアル](../core/windows-sharepoint-services-adapter-walkthroughs.md)

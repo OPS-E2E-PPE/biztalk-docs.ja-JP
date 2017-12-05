@@ -13,14 +13,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3d9641f894a493aa5c2c298a71b1b5a49ffb55a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8de850022a03a3be0310da3022a2cf496c94f30
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ノード値、SendIdoc および ReceiveIdoc 操作のストリーミングをサポートします。 これらの操作は、フラット ファイル (string) Idoc をして、アダプターからの送受信に使用されます。 1 つのノードの下の文字列にこれらの操作の両方で全体の IDOC のデータが含まれている (\<idocData >)。 大規模の Idoc は、アダプターとコード間で IDOC データのストリーミングは、大量のメモリ リソースに保存できます。  
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ノード値、SendIdoc および ReceiveIdoc 操作のストリーミングをサポートします。 これらの操作は、フラット ファイル (string) Idoc をして、アダプターからの送受信に使用されます。 1 つのノードの下の文字列にこれらの操作の両方で全体の IDOC のデータが含まれている (\<idocData\>)。 大規模の Idoc は、アダプターとコード間で IDOC データのストリーミングは、大量のメモリ リソースに保存できます。  
   
  アダプターがストリーミングをサポートする方法の詳細については、次を参照してください。[ストリーミングと SAP アダプター](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)です。 続行する前にこのトピックの内容を確認してください。  
   
@@ -291,4 +291,4 @@ fileXmlWriter.Close();
 ```  
   
 ## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

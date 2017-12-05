@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dfc7c7d572f3370e87df2f03d392a993116b74d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 071227182eb9b5550b23e23463800cc7dd5a22c4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-transform-a-message-and-route-to-a-service-endpoint-using-a-request-response-message-exchange-pattern"></a>方法: メッセージを変換して、要求-応答メッセージ交換パターンを使用してサービス エンドポイントへのルート
 ## <a name="goal"></a>[目標]  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>ESB itinerary DSL モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -188,10 +188,10 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: メッセージを変換および Itinerary のルーティング先を使用してファイルの場所に、結果のメッセージをルーティング](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [方法: メッセージを変換し、スケジュール ルーティング スリップを利用してファイルの場所に送信する](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [メッセージのルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
+-   [メッセージ ルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
   
--   [インストールして、複数の Web サービス サンプルを実行します。](../esb-toolkit/installing-and-running-the-multiple-web-services-sample.md)
+-   [複数の Web サービス サンプルをインストールし、実行する](../esb-toolkit/installing-and-running-the-multiple-web-services-sample.md)

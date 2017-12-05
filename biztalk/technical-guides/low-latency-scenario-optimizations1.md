@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2957888253826845ea9a941ad7fce8fd7a2ed7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12f16f67f1c161f74e6a9179db8c85f48b5b3e14
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="low-latency-scenario-optimizations"></a>低待機時間シナリオの最適化
 既定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]低待機時間ではなく、スループットを最適化します。 次の最適化が適用された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]テスト シナリオではこのガイドに使用します。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
 >  これらの最適化では、待機時間が改善されますが、全体的なスループットにいくつかのコストで行うことがあります。  
   
 ## <a name="increase-the-biztalk-server-host-internal-message-queue-size"></a>BizTalk Server ホストの内部メッセージ キューのサイズを増やす  
- 各 BizTalk ホストでは、内部のメモリ内キューがあります。 低待機時間シナリオでパフォーマンスを向上させるためには、100 ~ 1000 の既定値からこのキューのサイズが増加します。 内部メッセージ キュー サイズの値を変更する方法の詳細についてを参照してください「方法に、既定のホスト制限設定の変更」、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkID=120225](http://go.microsoft.com/fwlink/?LinkID=120225)です。  
+ 各 BizTalk ホストでは、内部のメモリ内キューがあります。 低待機時間シナリオでパフォーマンスを向上させるためには、100 ~ 1000 の既定値からこのキューのサイズが増加します。 内部メッセージ キュー サイズの値を変更する方法の詳細については、「方法に、既定のホスト制限設定の変更」、BizTalk Server ヘルプでを参照してください。 [http://go.microsoft.com/fwlink/?LinkID=120225](http://go.microsoft.com/fwlink/?LinkID=120225)です。  
   
 ## <a name="reduce-the-maxreceiveinterval-value-in-the-admserviceclass-table-of-the-biztalk-server-management-database"></a>BizTalk Server 管理データベースの adm_ServiceClass テーブルの MaxReceiveInterval 値を減らします  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポーリング機構を使用して、メッセージ ボックス内のホスト キューからメッセージを受信します。 **MaxReceiveInterval** BizTalk 管理 (BizTalkMgmtDb) データベースの adm_ServiceClass テーブルに値は、各 BizTalk ホスト インスタンスが待機するミリ秒単位で最大値まで、メッセージ ボックス データベースをポーリングします。 Adm_ServiceClass テーブルには、次のサービスの種類のレコードが含まれます。  

@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26e840148b4a5cfb8b390d5e89ee0e8edc677aad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2987d58e17ea7ddbd0db5b0a4d242f9ff42afec5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-database-using-the-select-statement"></a>SELECT ステートメントを使用してポーリング Oracle データベース
 構成することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルおよび Oracle は Oracle データベースでビューを継続的にポーリングする SELECT ステートメントを使用して、定期的なデータの変更メッセージを受信します。 Oracle データベースをポーリングするアダプターが定期的に実行されるポーリング ステートメントと SELECT ステートメントを指定できます。 必要に応じて、データの変更がある場合に、アダプターが実行される後ポーリング PL/SQL コード ブロックも指定することができます。 多くの場合、このブロックを使用するは、ターゲット内のクエリ対象のレコードにフィールドを更新する照会されたレコードを別のテーブルまたはビューに移動したりできます。  
@@ -126,7 +126,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
     |プロパティ|目的|  
     |--------------|----------------|  
     |[Identifier]|型**受信**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*TablePolling.OracleDBBinding*ここで、 *TablePolling* BizTalk プロジェクトの名前を指定します。 *OracleDBBindingSchema* 、応答スキーマに対して生成されるは、 **POLLINGSTMT** ACCOUNTACTIVITY テーブルで操作します。<br /><br /> **重要な**ポーリングは、一方向の操作、アダプターによって生成されたスキーマにノードがありません、応答、およびスキーマには 1 つだけのルート ノードがない、ためためです。 メッセージ型のようなスキーマを使用する場合は、生成されたスキーマのファイル名でスキーマを識別する必要があります。<br /><br /> たとえば、双方向の操作のスキーマを作成する場合、スキーマ内のノード ファイルの名前を持つ`OracleDBBindingSchema`「要求」および"Response"のようになります。 確認して、リスト内のスキーマを識別するには、要求スキーマにマップされるオーケストレーションでメッセージを作成する場合は、`OracleDBBindingSchema.Request`です。 ただし、ポーリング操作の場合、唯一のノードが"POLLINGSTMT"であるため簡単ではありません 1 つのノードでスキーマに設定されていないためにマップするスキーマを識別する\<schemafilename >.\<rootnodename >。 代わりに、このようなスキーマ ファイル名のみが表示されます。 このような場合は、スキーマ ファイル名、たとえば、OracleDBBindingSchema では、スキーマを識別するしかありません。|  
+    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*TablePolling.OracleDBBinding*ここで、 *TablePolling* BizTalk プロジェクトの名前を指定します。 *OracleDBBindingSchema* 、応答スキーマに対して生成されるは、 **POLLINGSTMT** ACCOUNTACTIVITY テーブルで操作します。<br /><br /> **重要な**ポーリングは、一方向の操作、アダプターによって生成されたスキーマにノードがありません、応答、およびスキーマには 1 つだけのルート ノードがない、ためためです。 メッセージ型のようなスキーマを使用する場合は、生成されたスキーマのファイル名でスキーマを識別する必要があります。<br /><br /> たとえば、双方向の操作のスキーマを作成する場合、スキーマ内のノード ファイルの名前を持つ`OracleDBBindingSchema`「要求」および"Response"のようになります。 確認して、リスト内のスキーマを識別するには、要求スキーマにマップされるオーケストレーションでメッセージを作成する場合は、`OracleDBBindingSchema.Request`です。 ただし、ポーリング操作の場合、唯一のノードが"POLLINGSTMT"であるため簡単ではありません 1 つのノードでスキーマに設定されていないためにマップするスキーマを識別する\<schemafilename\>.\<rootnodename\>です。 代わりに、このようなスキーマ ファイル名のみが表示されます。 このような場合は、スキーマ ファイル名、たとえば、OracleDBBindingSchema では、スキーマを識別するしかありません。|  
   
 ## <a name="setting-up-the-orchestration"></a>オーケストレーションを設定します。  
  使用する BizTalk オーケストレーションを作成する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Oracle からのデータの変更のポーリングに基づくメッセージを受信するためです。 このオーケストレーションでアダプターがの指定した SELECT ステートメントを実行することによって、応答を受信、 **PollingStatement**プロパティをバインドします。 SELECT ステートメントの応答メッセージは、ファイルの場所に保存されます。 Oracle データベースをポーリングするための一般的なオーケストレーションにが含まれます。  
@@ -216,7 +216,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
 -   アダプターの SELECT ステートメントの実行、 **PollingStatement** ACCOUNTACTIVITY テーブルのバインディング プロパティ、およびすべての行を返します。 Oracle データベースからの応答には、次のようになります。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <POLLINGSTMT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT">  
       <POLLINGSTMTRECORD>  
         <POLLINGSTMTRECORD>  

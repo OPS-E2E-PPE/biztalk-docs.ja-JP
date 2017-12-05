@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82603ded113fa25c839661fb7874d97f8b3bb074
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7303de4a8054cfe9f7140bd6eb548c228248777c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="msh-field-overrides"></a>MSH フィールドの上書き
 各 HL7 メッセージでは、メッセージ ヘッダーがあります。 使用して[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]は、ビジネス ニーズに基づいて、メッセージ ヘッダーの値をオーバーライドすることができます。 使用する、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー **MSH マップ**手動で無効化がメッセージ ヘッダー値のマッピングやオーケストレーションを使用せずにタブです。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-open-btahl7-configuration-explorer"></a>BTAHL7 構成エクスプ ローラーを開く  
   
--   をクリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft BizTalk\<バージョン > Accelerator 用 HL7**、クリックして**BTAHL7構成のエクスプ ローラー**です。  
+-   をクリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**、クリックして**BTAHL7 構成エクスプ ローラー**です。  
   
 #### <a name="to-configure-msh-field-overrides"></a>MSH フィールドの上書きを構成するには  
   
@@ -63,4 +63,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [ログの構成](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   
  [メッセージのバッチ処理](../../adapters-and-accelerators/accelerator-hl7/message-batching.md)   
-[運用上のログ記録、メッセージのバッチ処理、検証および asknowledgment 設定](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)
+[操作ログ記録、メッセージのバッチ処理、検証および受信確認の設定](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)

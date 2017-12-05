@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a42fb3ca8381faedbd2283b9f4d297738bbb040d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01e445ef19a1d65cc97a3603492a1ad9ba0442e9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-updating-applications-and-artifacts"></a>アプリケーションの更新との成果物の既知の問題
 ## <a name="updating-an-application"></a>アプリケーションの更新  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  **.NET ポリシー ファイルはサポートされていません**  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、.NET ポリシー ファイルの使用はサポートされません。 これは、ポリシー ファイルが予想どおりに機能しない場合があるためです。 ポリシー ファイル、GAC 内の指定したアセンブリのバージョンに .NET がリダイレクトが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]多くの場合、キャッシュまたは BizTalk 管理データベースからアセンブリおよびアイテムのデータにアクセスします。 アイテムの種類、キャッシュ状況、ホスト インスタンスの再開の有無によっては、ポリシー ファイルの動作が期待と異なる場合があります。  
+ BizTalk Server では、.NET ポリシー ファイルの使用がサポートされていません。 これは、ポリシー ファイルが予想どおりに機能しない場合があるためです。 ポリシー ファイル、GAC 内の指定したアセンブリのバージョンに .NET がリダイレクトが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]多くの場合、キャッシュまたは BizTalk 管理データベースからアセンブリおよびアイテムのデータにアクセスします。 アイテムの種類、キャッシュ状況、ホスト インスタンスの再開の有無によっては、ポリシー ファイルの動作が期待と異なる場合があります。  
   
 ## <a name="updating-an-assembly"></a>アセンブリの更新  
  **アセンブリへの変更は反映されません、ホストが停止していない場合**  

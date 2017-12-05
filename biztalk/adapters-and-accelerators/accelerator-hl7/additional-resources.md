@@ -13,14 +13,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb082b335aa1bae484eef799edfaba5105a2044f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e0f6cc39bda0d4e8a0f5331ea0d8d70c6dbf691
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="additional-resources"></a>その他のリソース
-加え[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]に役立ちますが、このプラットフォームでのプログラミングについて説明する追加のリソースがあります。 これらのリソースに関する詳細については、次の Web サイトを参照してください。  
+加え[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]このプラットフォームでのプログラミングについて説明するその他のリソースは、BizTalk Server のヘルプがあります。 これらのリソースに関する詳細については、次の Web サイトを参照してください。  
   
 -   MSDN [http://go.microsoft.com/fwlink/?LinkId=25353](http://go.microsoft.com/fwlink/?LinkId=25353)  
   

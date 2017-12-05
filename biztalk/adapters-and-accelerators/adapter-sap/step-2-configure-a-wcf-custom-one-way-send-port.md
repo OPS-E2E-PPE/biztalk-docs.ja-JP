@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f332e11aef32285fff84f0fe5f65834b1b20fc04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8aab14799076d3f774130b357ab90c5ed5335f4a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>手順 2: Wcf-custom 一方向送信ポートを構成します。
 ![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
         ```  
         <SendIdoc xmlns="http://Microsoft.LobServices.Sap/2007/03/Idoc/">  
-        <idocData>\<bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/></idocData>  
+        <idocData><bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/></idocData>  
         </SendIdoc>  
         ```  
   
@@ -105,4 +105,4 @@ ms.lasthandoff: 09/20/2017
  WCF ベースを使用して SAP システムに Idoc を送信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 」の説明に従って、フラット ファイル IDOC を送信することによって移行済みの BizTalk アプリケーションにテストすること今すぐ必要があります[手順 3: アプリケーションをテストする移行](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md)です。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 3: SAP 送信 IDOC の BizTalk プロジェクトを移行します。](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)
+ [チュートリアル 3: SAP の IDOC 送信 BizTalk プロジェクトを移行する](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)

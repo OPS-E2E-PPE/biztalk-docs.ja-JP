@@ -12,18 +12,18 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01e6021b7114b8b57c62dadfe742be1809df0bd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47bd787fe5fa33a30f01bc37fd4988ab26db99d1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="preparing-the-disaster-recovery-sql-servers"></a>障害復旧 SQL サーバーを準備します。
-セットを作成します.[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース障害復旧サイトのインスタンス。 災害復旧を確実に[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスが同じレベルの運用環境のパフォーマンスを提供できます[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンス、災害復旧[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]類似したデータベースのインスタンスを構成する必要がありますハードウェアとを実行している物理コンピューターの台数[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。 このシナリオで[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]生産ごとにログ配布を構成、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 、対応するのには適用先のデータベース インスタンス[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスの災害復旧サイトにします。  
+セットを作成します.[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース障害復旧サイトのインスタンス。 災害復旧を確実に[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスが同じレベルの運用環境のパフォーマンスを提供できます[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンス、災害復旧[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]類似したデータベースのインスタンスを構成する必要がありますハードウェアとを実行している物理コンピューターの台数[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。 このシナリオでは、BizTalk Server の各実稼働用に構成されるログ配布で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、対応するのには適用先のデータベース インスタンス[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスの災害復旧サイトにします。  
   
- キー[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ログ配布の要件は、実稼働サイト データベース ファイルの格納場所にドライブ文字が、障害復旧サイトのデータベース ファイルの復元先でドライブ文字と一致しています。 その場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース ファイル グループにある G:\data 実稼働環境で、必要がある G:\data ディレクトリ (DR) を移行先サーバーで、または、復元は失敗します。  
+ キーの BizTalk Server のログ配布の要件は、実稼働サイト データベース ファイルの格納場所にドライブ文字が、障害復旧サイトのデータベース ファイルの復元先でドライブ文字と一致しています。 その場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース ファイル グループにある G:\data 実稼働環境で、必要がある G:\data ディレクトリ (DR) を移行先サーバーで、または、復元は失敗します。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ログ配布はサポートしていません、 **RESTORE WITH MOVE** [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コマンド。 このため、ことをお勧め、災害復旧サイトのデータベース インスタンス名が実稼働環境でデータベース インスタンスの名前に一致する (既定では、インスタンス名は、ファイル パスの一部)。 実行している災害復旧のコンピューターに対応するドライブ文字には、単にディレクトリを作成することもできます[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]できるように、**復元**操作で使用されるように、同じディレクトリ構造内のファイルを作成できます実稼働します。  
+ BizTalk Server のログ配布はサポートしていません、 **RESTORE WITH MOVE** [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コマンド。 このため、ことをお勧め、災害復旧サイトのデータベース インスタンス名が実稼働環境でデータベース インスタンスの名前に一致する (既定では、インスタンス名は、ファイル パスの一部)。 実行している災害復旧のコンピューターに対応するドライブ文字には、単にディレクトリを作成することもできます[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]できるように、**復元**操作で使用されるように、同じディレクトリ構造内のファイルを作成できます実稼働します。  
   
  作成[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]障害復旧サイトの障害復旧サイトへのフェールオーバーが必要なことすべてために必要なセキュリティ ログインできるように、実稼働サイトに対応するセキュリティ ログインが送信先システムに存在します。  
   

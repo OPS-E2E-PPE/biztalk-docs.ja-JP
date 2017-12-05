@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9499dc20e31d996d41ae4f43ac50b6aec729080d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72dde6b09b7777204547d00d26af571c9998d73f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-to-create-maps"></a>マップ作成の計画
 マップを使用して、あるスキーマに準拠している入力メッセージを別のスキーマに準拠している出力メッセージに変換します。 これらの変換は、簡単な場合と非常に複雑な場合があります。また、情報の計算や統合も行われます。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 |-----------------------|--------------------|  
 |どのマップを作成する必要があるか|Microsoft で処理するビジネス ドキュメントの一覧を作成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 この一覧には、注文書、請求書、出荷情報などが含まれます。 リスト含めることもこのような各ビジネス ドキュメントの 1 つ以上の別の取引先から受信する 1 つの取引先から受信した注文書の構造が発注書の構造と異なる場合など。<br /><br /> 一覧を参照し、異なる形式にするドキュメントまたは一般的な形式に変換して適切な処理を行うドキュメントを決定します。|  
 |マップが必要な場所はどこか|送信ポート、受信ポート、およびビジネス プロセスを表すオーケストレーションでマップを使用できます。 ドキュメントを変換する場所を検討してください。|  
-|変換する古いマップはあるか|[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009 で作成されたマップは、変更しないで移行できます。 移行されたマップは、十分な時間をかけてテストしてください。 ただし、それより古いバージョンの BizTalk で作成されたマップは、[!INCLUDE[prague](../includes/prague-md.md)] で開けない場合があります。 **注:**より前のバージョンで作成されたマップ[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]が機能では正確に[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]または[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 です。 マップで開けません可能性がありますが、[!INCLUDE[prague](../includes/prague-md.md)]です。 <br /><br /> 含むマップ**スクリプト**functoid またはカスタム functoid が追加作業が必要です。 詳細については、次を参照してください。 [Functoid の移行](../core/migrating-functoids.md)です。|  
+|変換する古いマップはあるか|[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009 で作成されたマップは、変更しないで移行できます。 移行されたマップは、十分な時間をかけてテストしてください。 ただし、古いバージョンの BizTalk で作成されたマップ開けない場合があります BizTalk Server でします。 **注:**より前のバージョンで作成されたマップ[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]が機能では正確に[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]または[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 です。 ただし、マップが BizTalk Server で開けません可能性があります。 <br /><br /> 含むマップ**スクリプト**functoid またはカスタム functoid が追加作業が必要です。 詳細については、次を参照してください。 [Functoid の移行](../core/migrating-functoids.md)です。|  
   
 ## <a name="see-also"></a>参照  
  [マップの概要](../core/about-maps.md)   

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88c0a1cf8d82ee5cd4e48e176b5b7f633101d8c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ab210f5ab728134b406b5c4bdaf25a1ec6db1c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-navigation-between-distributed-activities"></a>分散アクティビティ間のナビゲーションを構成する方法
 分散ナビゲーションを使用すると、リモートに展開した BAM に存在するアクティビティを表示できます。 分散ナビゲーションを有効にすると、特定のコンピューター上の BAM で、別個に展開された [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の BAM ポータルにあるアクティビティを表示できます。  
@@ -35,9 +35,9 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="how-to-set-up-distributed-navigation-for-remote-activities"></a>リモート アクティビティの分散ナビゲーションを設定する方法  
   
-1.  コンピューター 1 の管理者は、ビジネス ユーザーのコンピューター 1 の myBusinessView ビューへのアクセスを付与します。 次のように、bm.exe コマンドを使用する:**アカウントの追加-accountname:\<アカウント名 >-ビュー:** myBusinessView  
+1.  コンピューター 1 の管理者は、ビジネス ユーザーのコンピューター 1 の myBusinessView ビューへのアクセスを付与します。 次のように、bm.exe コマンドを使用する:**アカウントの追加-accountname:\<アカウント名\>-ビュー:** myBusinessView  
   
-2.  コンピューター 1 の管理者では、コマンドを実行して、有効にする の参照を次のように分散ナビゲーションを有効: **bm.exe 参照を有効にする TargetServer:** computer2 **- TargetDatabase:\<ターゲットデータベース >**  
+2.  コンピューター 1 の管理者では、コマンドを実行して、有効にする の参照を次のように分散ナビゲーションを有効: **bm.exe 参照を有効にする TargetServer:** computer2 **- TargetDatabase:\<ターゲットデータベース\>**  
   
     > [!NOTE]
     >  通常、BAM Web サービスにアクセスするために部門間で使用されるアカウントは、コンピューターごとに異なります。 そのため、このシナリオではコンピューター 1 の管理者必要がありますコンピューター 1 の Web サービスの権限借用アカウントに追加コンピューター 2 の BAM プライマリ インポート データベースの BAM_ManagementWS ロール。 詳細についてを参照してください「の表示および変更するロールのメンバーシップ」 [http://go.microsoft.com/fwlink/?LinkId=66990](http://go.microsoft.com/fwlink/?LinkId=66990)です。  

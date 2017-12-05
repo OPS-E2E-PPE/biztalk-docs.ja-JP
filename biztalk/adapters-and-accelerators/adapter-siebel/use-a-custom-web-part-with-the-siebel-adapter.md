@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdef9b2c1056f8efc2161cc604879a6df6802f8a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ad29a3ad28fcea81b00b6b2e2dabf51f0962e79
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-a-custom-web-part-with-the-siebel-adapter"></a>Siebel アダプターとカスタム Web パーツを使用します。
 このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。 カスタム Web パーツを使用するには、次の操作を行う必要があります。  
@@ -47,17 +47,17 @@ ms.lasthandoff: 09/20/2017
   
 5.  プロジェクトで、問題に基づく、必要なコードを追加します。 特定の問題に関連するコード サンプルを参照してください「の問題に関連する追加の Web パーツ」 [SharePoint で Siebel アダプターの使用時の考慮事項](../../adapters-and-accelerators/adapter-siebel/considerations-when-using-the-siebel-adapter-with-sharepoint.md)です。  
   
-6.  プロジェクトをビルドする。 プロジェクトの成功したビルドで CustomWebPart.dll、.dll ファイルが生成されます、 \<*プロジェクト フォルダー*> bin/デバッグ フォルダーです。  
+6.  プロジェクトをビルドする。 プロジェクトの成功したビルドで CustomWebPart.dll、.dll ファイルが生成されます、 \<*プロジェクト フォルダー*\>bin/デバッグ フォルダーです。  
   
 ## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>手順 2: カスタム Web パーツを SharePoint ポータルを展開します。  
  CustomWebPart.dll ファイル (カスタム Web パーツ) で作成されるようにする、次を実行する必要があります"手順 1: カスタム Web パーツを作成する"このトピックは SharePoint ポータル上で使用。  
   
--   **CustomWebPart.dll ファイルを SharePoint Portal の bin フォルダーにコピー**: Microsoft Office SharePoint Server は、ポータルを作成、 \<*ドライブのルート*>: \Inetpub\wwwroot\wss\VirtualDirectories フォルダーです。 フォルダーは、各ポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1: カスタム Web パーツを作成する"に、このトピックの\<*ドライブのルート*>: \Inetpub\wwwroot\wss\VirtualDirectories\\ < *Port_Number*> \bin フォルダーです。 たとえば、SharePoint portal のポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、 \<*ドライブのルート*>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダーです。  
+-   **CustomWebPart.dll ファイルを SharePoint Portal の bin フォルダーにコピー**: Microsoft Office SharePoint Server は、ポータルを作成、 \<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories フォルダーです。 フォルダーは、各ポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1: カスタム Web パーツを作成する"に、このトピックの\<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\ <*Port_Number*\>\bin フォルダーです。 たとえば、SharePoint portal のポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、 \<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダーです。  
   
     > [!TIP]
     >  使用して、SharePoint portal のフォルダーの場所を検索する別の方法は、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ (**開始** > **実行** >  **inetmgr**)。 検索で、SharePoint portal、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ ([*computer_name*] > Web サイト > [*ポータル名*])、し、右クリックし、をクリックして**プロパティ**ショートカット メニュー。 SharePoint portal の [プロパティ] ダイアログ ボックスをクリックして、**ホーム ディレクトリ**、タブをクリックし、**ローカル パス**ボックス。  
   
--   **Web.config ファイルに安全なコントロール エントリを追加**: CustomWebPart.dll ファイルを使用する別のコンピューターに、複数のユーザーが、ために、ファイルを"safe"としてを宣言する必要があります SharePoint portal フォルダーにある web.config ファイルを開くためには、 \<*ドライブのルート*>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number >。 下にある、`<SafeControls>`セクションで、web.config ファイルの次の安全なコントロール エントリを追加します。  
+-   **Web.config ファイルに安全なコントロール エントリを追加**: CustomWebPart.dll ファイルを使用する別のコンピューターに、複数のユーザーが、ために、ファイルを"safe"としてを宣言する必要があります SharePoint portal フォルダーにある web.config ファイルを開くためには、 \<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>です。 下にある、`<SafeControls>`セクションで、web.config ファイルの次の安全なコントロール エントリを追加します。  
   
     ```  
     <SafeControl Assembly="CustomWebPart" Namespace="CustomWebPart" TypeName="*" Safe="True" />  
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
  これで、カスタム Web パーツを使用することができます (**CustomWebPart**) ポータルの SharePoint Web パーツを作成します。 カスタム Web パーツ (**CustomWebPart**) 下に表示されます、 **[その他]** 」の「、 **Web パーツの追加**ページ。  
   
 ## <a name="see-also"></a>参照  
- [SharePoint での Siebel アダプターを使用します。](../../adapters-and-accelerators/adapter-siebel/use-the-siebel-adapter-with-sharepoint.md)
+ [SharePoint での Siebel アダプターの使用](../../adapters-and-accelerators/adapter-siebel/use-the-siebel-adapter-with-sharepoint.md)

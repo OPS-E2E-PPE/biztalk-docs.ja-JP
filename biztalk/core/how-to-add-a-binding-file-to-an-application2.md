@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4e569352c5813272b483cc69b8c93a7f1b84d40
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a1c7f0a73f811a6b339428e62a93916d9301edf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-binding-file-to-an-application"></a>アプリケーションにバインド ファイルを追加する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アプリケーションにバインド ファイルを追加する方法について説明します。 」の説明に従って、アプリケーションまたはアセンブリの展開を簡単にためにバインドすることができます[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の管理、バインド ファイルを追加するアプリケーションが含まれる BizTalk グループの順に展開します。  
+2.  コンソール ツリーで、BizTalk Server 管理コンソールと、バインド ファイルを追加するアプリケーションを含む BizTalk グループを展開します。  
   
 3.  [アプリケーション] を展開し、バインド フィルを追加するアプリケーションを右クリックします。  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-     **BTSTask AddResource** [**/applicationname は:"***値***"**] **/Type:System.BizTalk:BizTalkBinding** [**/Overwrite**] **/source:***値***/Property:TargetEnvironment ="***値* **"** [**/Server:***値*] [**/database:***値*]  
+     **BTSTask AddResource** [**/applicationname は:"***値***"**] **/Type:System.BizTalk:BizTalkBinding** **[/Overwrite]** **/source:***値***/Property:TargetEnvironment ="***値* **"** [**/Server:***値*] [**/database:***値*]  
   
      例:  
   
@@ -93,11 +93,11 @@ ms.lasthandoff: 09/20/2017
     |**/型**|**System.BizTalk:BizTalkBinding** (この値小文字は区別されません)。|  
     |**/上書き**|既存のバインド ファイルを更新するためのオプション。 しない場合は、指定、およびバインド ファイルを追加するファイルと同じファイル名を持つアプリケーションに既に存在、AddResource 操作は失敗します。|  
     |**/ソース**|バインド ファイルの完全パス (ファイル名を含む)。 パスには、スペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
-    |**/Property:TargetEnvironment =**|対象の展開環境を指定する文字列。 "Production" など、任意の文字列を使用できます。 例: **/Property:TargetEnvironment"Production"を =**<br /><br /> 値を指定しない場合\<既定 > が自動的に適用します。 値は、大文字小文字を区別します。 値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。 環境値の最大長は 128 文字です。|  
+    |**/Property:TargetEnvironment =**|対象の展開環境を指定する文字列。 "Production" など、任意の文字列を使用できます。 例: **/Property:TargetEnvironment"Production"を =**<br /><br /> 値を指定しない場合\<既定\>が自動的に適用します。 値は、大文字小文字を区別します。 値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。 環境値の最大長は 128 文字です。|  
     |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
     |**/データベース**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [.NET アセンブリ、証明書、およびその他のリソースの管理](../core/managing-net-assemblies-certificates-and-other-resources.md)   
  [AddResource コマンド: BizTalk バインド](../core/addresource-command-biztalk-binding.md)   
- [作成して、BizTalk アプリケーションの変更](../core/creating-and-modifying-biztalk-applications.md)
+ [BizTalk アプリケーションの作成と変更](../core/creating-and-modifying-biztalk-applications.md)

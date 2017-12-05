@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e87fe8076e236fd775dcd2cb697aecaf2d6b1790
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e0dc620d2d12933d34df0dce9eb02b697871bdc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="dynamicreceive-sample-biztalk-server-sample"></a>DynamicReceive サンプル (BizTalk Server サンプル)
 DynamicReceive サンプルは、MQSeries キューの URI が動的に指定される場合に MQSeries キューから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージを受信する方法を示します。  
@@ -46,7 +46,7 @@ DynamicReceive サンプルは、MQSeries キューの URI が動的に指定さ
  動的受信機能を使用することで、固定した受信場所が不要になるため、柔軟性が高まります。 実行時まで URI がわからない場合もあります。 動的受信機能を使用すると、メッセージの取得元を動的に決定できます。 これは、オーケストレーション内でキュー コントラクトを実装する必要がないことも意味します。  指定した一致条件に基づいて MQSeries キューから動的に指定された URI を使用することで、メッセージの取得を待機できます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*> \Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
+ \<*パスのサンプル*\>\Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -84,7 +84,7 @@ DynamicReceive サンプルは、MQSeries キューの URI が動的に指定さ
   
 7.  次のいずれかの方法で、プロジェクトをビルドおよび展開できます。  
   
-    -   ソリューションを開きます、ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**プロパティ**プロジェクト プロパティを表示します。 [署名] タブの [ **\<新規作成 ...>] >**で、**厳密な名前キー ファイルを選択して**ボックスの一覧です。 次に、キー ファイル名を指定して展開します。  
+    -   ソリューションを開きます、ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**プロパティ**プロジェクト プロパティを表示します。 [署名] タブをクリックして**\<新規しています.\>** で、**厳密な名前キー ファイルを選択して**ボックスの一覧です。 次に、キー ファイル名を指定して展開します。  
   
     -   setup.bat ファイルを実行することもできます。このファイルは、キー ファイルを作成し、プロジェクトをビルドして展開します。  
   

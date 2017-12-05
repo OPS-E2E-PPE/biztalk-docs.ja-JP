@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce49c3e74846fac5943bda522d11218410f428ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38b8adc77e5e8579339931e49abb501f9981e5fc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unbind-an-orchestration"></a>オーケストレーションをバインド解除します。
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  をクリックして**オーケストレーション**、オーケストレーションを右クリックし、をクリックして**プロパティ**、順にクリック**バインド**左側のウィンドウでします。  
   
-4.  ホストのバインドを削除する、**ホスト**一覧で、 **\<なし >**です。  
+4.  ホストのバインドを削除する、**ホスト**一覧で、  **\<None\>**です。  
   
-5.  削除する下にあるドロップダウン リストからの受信ポートのバインド、**受信ポート**をクリックして**\<なし >**です。  
+5.  削除する下にあるドロップダウン リストからの受信ポートのバインド、**受信ポート**をクリックして **\<None\>**です。  
   
-6.  下にあるドロップダウン リストから送信ポートのバインドを削除する**送信ポート/送信ポート グループ**をクリックして**\<なし >**です。  
+6.  下にあるドロップダウン リストから送信ポートのバインドを削除する**送信ポート/送信ポート グループ**をクリックして **\<None\>**です。  
   
 7.  バインド バインドを削除したらをクリックして**OK**です。  
   

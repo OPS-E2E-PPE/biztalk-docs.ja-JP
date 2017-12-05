@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17a29c6e00ee56c6869b9d9326d045a2ad8fb5fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6540259fd6983fd418e57ff700de3f1b550016ec
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="working-with-failed-message-subscriptions"></a>失敗したメッセージのサブスクリプションの操作
 ときに、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラー プロセス (解析し、検証) メッセージ、そのメッセージのプロパティを昇格させます。 これらの昇格させたプロパティは、A4SWIFT 受信バッチの一部としてメッセージを受信した場合、正しいことと、メッセージの有効性に関する情報と、バッチに関連する情報を提供します。 これらのプロパティの完全な一覧を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。  
@@ -55,8 +55,8 @@ ms.lasthandoff: 09/20/2017
 >  サブスクリプションが重なると、A4SWIFT はすべてのサブスクリプションを満たします。 つまり、(送信ポートまたはオーケストレーション) の複数のサービスが、特定のメッセージによって実行されるフィルター式を持つ、このようなすべてのサービスすると、同じメッセージが表示されます。 たとえば、すべての失敗したメッセージをサブスクライブする送信ポート、オーケストレーションは、解析エラー メッセージのみをサブスクライブする場合は、両方のサブスクリプションが満たさ A4SWIFT でメッセージを処理するときに解析エラーが発生したときにします。 サービス間でのサブスクリプションに不要な重複を排除することを確認します。  
   
 > [!NOTE]
->  A4SWIFT のメッセージは中断されます A4SWIFT を受信および処理し、メッセージをメッセージ ボックス データベースにそのメッセージを公開、メッセージは任意のサブスクリプションを満たさない場合は、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サブスクライバーが不足していることを示すエラーです。 たとえば、すべてのメッセージをサブスクライブするサービスがある場合"A4SWIFT_Failed = = false"、サービスがメッセージをサブスクライブありませんが、ここで"A4SWIFT_Failed = = true"、解析に失敗したメッセージまたは検証が実際に中断サブスクライバーがないのため、します。 実際には、このシナリオでは、失敗したメッセージの従来の中断を模倣できます。 中断したくないすべてのメッセージをサブスクライブすることを確認します。 参照してください[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]メッセージ ボックス データベースのサブスクリプションに関する追加の詳細については、送信ポート、オーケストレーション、およびフィルター式を支援します。  
+>  A4SWIFT のメッセージは中断されます A4SWIFT を受信および処理し、メッセージをメッセージ ボックス データベースにそのメッセージを公開、メッセージは任意のサブスクリプションを満たさない場合は、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サブスクライバーが不足していることを示すエラーです。 たとえば、すべてのメッセージをサブスクライブするサービスがある場合"A4SWIFT_Failed = = false"、サービスがメッセージをサブスクライブありませんが、ここで"A4SWIFT_Failed = = true"、解析に失敗したメッセージまたは検証が実際に中断サブスクライバーがないのため、します。 実際には、このシナリオでは、失敗したメッセージの従来の中断を模倣できます。 中断したくないすべてのメッセージをサブスクライブすることを確認します。 BizTalk Server のヘルプを参照して、メッセージ ボックス データベースのサブスクリプションの詳細については、送信ポート、オーケストレーション、およびフィルター式です。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [失敗したメッセージと元のオブジェクト](../../adapters-and-accelerators/accelerator-swift/failed-messages-and-errorcollection-objects.md)
+-   [失敗したメッセージと ErrorCollection オブジェクト](../../adapters-and-accelerators/accelerator-swift/failed-messages-and-errorcollection-objects.md)

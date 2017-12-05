@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c752c4b98f6a68e0a86ba4a418eab0705a7c513
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 538432f548b1403fd9c0cd566b82eb8cb113f737
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-split-an-interchange-and-route-the-resulting-messages-to-multiple-file-locations-using-distinct-itineraries"></a>方法: インターチェンジを分割し、結果として得られるメッセージをルーティング、個別の日程を使用して複数のファイルの場所
 ## <a name="goal"></a>[目標]  
@@ -137,7 +137,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-add-a-schemas-project-to-the-patterns-solution"></a>Schemas プロジェクト ソリューションを追加する、パターン  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリック**ソリューション 'パターン'**、 をポイント**追加**、クリックして**新しいプロジェクト**です。  
   
@@ -151,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  プロパティ ウィンドウでの**署名** タブで、**アセンブリに署名** チェック ボックスです。  
   
-6.  **厳密な名前キー ファイルを選択して**ドロップダウン リストをクリックして**\<新規作成 ...> >**です。  
+6.  **厳密な名前キー ファイルを選択して**ドロップダウン リストをクリックして**\<新規しています.\>**.  
   
 7.  **厳密な名前キーの作成** ダイアログ ボックスで、次のプロパティを構成します。  
   
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-a-business-rules-engine-bre-policy-to-select-an-itinerary-using-custom-message-properties"></a>カスタム メッセージ プロパティを使用して、日程を選択するビジネス ルール エンジン (BRE) ポリシーを作成するには  
   
-1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[prague](../includes/prague-md.md)]** 、順にクリック**ビジネス ルール作成ツール**です。  
+1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント**BizTalk Server**、順にクリック**ビジネス ルール作成ツール**です。  
   
 2.  ポリシー エクスプ ローラーで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。 ポリシーに名前**ResolveItineraryBasedOnCustomer**です。  
   
@@ -212,7 +212,7 @@ ms.lasthandoff: 09/20/2017
   
 9. ファクト エクスプ ローラーで、をクリックして、**ボキャブラリ**タブです。展開して、 **ESB です。行程**ボキャブラリ、展開**バージョン 1.1**、し、ドラッグ、**行程名の設定**定義**アクション**です。  
   
-10. をクリックして**\<空の文字列 >**し入力**GlobalBankWestItinerary**です。  
+10. をクリックして**\<空の文字列\>**し入力**GlobalBankWestItinerary**です。  
   
     > [!NOTE]
     >  このトピックの後半 GlobalBank 西からメッセージを処理するこの日程を作成します。  
@@ -233,7 +233,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **アクション**セクションを右クリックして**GlobalBankWestItinerary**、クリックして**引数の再設定**です。  
   
-8.  をクリックして**\<空の文字列 >**し入力**GlobalBankEastItinerary です。**  
+8.  をクリックして**\<空の文字列\>**し入力**GlobalBankEastItinerary です。**  
   
     > [!NOTE]
     >  このトピックの後半 GlobalBank 東部からメッセージを処理するこの日程を作成します。  
@@ -246,7 +246,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model-for-globalbank-west-messages"></a>GlobalBank 西部メッセージの ESB itinerary DSL モデルを作成するには  
   
-1.   **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  **Visual Studio**C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -324,7 +324,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model-for-globalbank-east-message"></a>GlobalBank 東部メッセージの ESB itinerary DSL モデルを作成するには  
   
-1.   **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** C:\HowTos\Patterns.sln を開きます。  
+1.  **Visual Studio**C:\HowTos\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -404,9 +404,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>作成し、ESB 入り口を構成します。  
   
-1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[prague](../includes/prague-md.md)]** 、順にクリック**BizTalk Server 管理**.  
+1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント**BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**、順に展開**Microsoft.Practices.ESB**です。  
+2.  BizTalk Server 管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**の順に展開および**Microsoft.Practices.ESB**です。  
   
 3.  右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
   
@@ -435,7 +435,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  をクリックして**OK**を閉じる、**受信場所のプロパティ** ダイアログ ボックス。  
   
-4.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、右クリックし、 **OnRamp.Itinerary.HowTo**受信場所をクリックして**を有効にする**です。  
+4.  BizTalk Server 管理コンソールを右クリックし、 **OnRamp.Itinerary.HowTo**受信場所をクリックして**を有効にする**です。  
   
 #### <a name="to-test-the-itinerary-selector-and-business-rules"></a>行程セレクターとビジネス ルールをテストするには  
   
@@ -448,7 +448,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  メッセージが顧客の要素の値を除いて同一、行程セレクター パイプライン コンポーネントの解像度に基づいて、別の日程を使用して処理されました。  
   
-4.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、右クリックし、OnRamp.Itinerary.HowTo 受信場所、をクリックを無効にします。  
+4.  BizTalk Server 管理コンソールで、受信場所を右クリック、OnRamp.Itinerary.HowTo と無効をクリックします。  
   
 5.  後に、 **OnRamp.Itinerary.HowTo**受信場所が無効になっている、右クリックし、をクリックして**削除**です。 **受信場所のことを確認して削除**ダイアログ ボックスで、をクリックして**はい**です。  
   
@@ -459,8 +459,8 @@ ms.lasthandoff: 09/20/2017
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [インストールして、動的な解決サンプルを実行します。](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)  
+-   [動的解決サンプルをインストールし、実行する](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)  
   
--   [動的な解決を使用して、ルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)  
+-   [動的な解決とルーティングを利用する](../esb-toolkit/using-dynamic-resolution-and-routing.md)  
   
--   [メッセージのルーティング パターン](../esb-toolkit/message-routing-patterns.md)
+-   [メッセージ ルーティング パターン](../esb-toolkit/message-routing-patterns.md)

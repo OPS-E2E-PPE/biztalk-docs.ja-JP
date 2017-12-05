@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e2a4e1efbfb7a86c18fb3643a789312a3707a72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7db2118f372014a3e8f108c1ff2273bc5aad976
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="reusing-properties-from-another-agreement"></a>別のアグリーメントのプロパティの再利用
-プロパティはアグリーメント間で再利用できます。 これにより、新しいアグリーメントのプロパティのほとんどまたはすべてが、既存のアグリーメントのプロパティと同じ場合には、時間を大幅に節約することができます。 [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] の [!INCLUDE[prague](../includes/prague-md.md)] ユーザー インターフェイスを使用すると、アグリーメントを XML テンプレート ファイルにエクスポートできます。 次に、XML テンプレートをインポートして、アグリーメントの同じプロパティを再利用できます。  
+プロパティはアグリーメント間で再利用できます。 これにより、新しいアグリーメントのプロパティのほとんどまたはすべてが、既存のアグリーメントのプロパティと同じ場合には、時間を大幅に節約することができます。 [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] BizTalk Server でのユーザー インターフェイスでは、アグリーメントを XML テンプレート ファイルをエクスポートすることができます。 次に、XML テンプレートをインポートして、アグリーメントの同じプロパティを再利用できます。  
   
  アグリーメントを XML テンプレートにエクスポートすると、すべてではないものの、アグリーメントのほとんどのプロパティが取り込まれます。 以下のプロパティは*いない*XML テンプレート ファイルにエクスポートします。  
   
@@ -50,9 +50,9 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [アグリーメントのプロパティを XML ファイルにエクスポートします。](../core/exporting-agreement-properties-to-an-xml-file.md)  
+-   [XML ファイルへのアグリーメント プロパティのエクスポート](../core/exporting-agreement-properties-to-an-xml-file.md)  
   
--   [アグリーメントのプロパティを XML ファイルからインポートします。](../core/importing-agreement-properties-from-an-xml-file.md)  
+-   [XML ファイルからのアグリーメント プロパティのインポート](../core/importing-agreement-properties-from-an-xml-file.md)  
   
 ## <a name="see-also"></a>参照  
- [EDI のプロパティを構成します。](../core/configuring-edi-properties.md)
+ [EDI のプロパティの構成](../core/configuring-edi-properties.md)

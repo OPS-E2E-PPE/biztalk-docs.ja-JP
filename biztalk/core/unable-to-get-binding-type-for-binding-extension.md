@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 453a579daae80a202df1ed4d3c72ae9c13f47d9b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79b649f69b7503f345f212aa5f014ce7b256148d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unable-to-get-binding-type-for-binding-extension"></a>バインド拡張機能のバインドの種類を取得できません
 ## <a name="details"></a>詳細  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>ユーザーの操作  
  解決するのには、このエラーは、次の 1 つ以上を実行します。  
   
--   確認、 **machine.config ファイル**で**%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**が、 \< **bindingExtensions**> 要素適切に構成されています。  
+-   確認、 **machine.config ファイル**で**%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**が、 \< **bindingExtensions** \>要素が適切に構成します。  
   
 -   Windows エクスプ ローラーに移動**%WinDir%\Assembly**、カスタム バインディングの拡張機能を実装するアセンブリが正しくインストールされているかどうかを確認します。  
   

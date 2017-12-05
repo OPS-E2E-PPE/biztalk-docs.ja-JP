@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9cf7cddd25f3f01b6203c050a4391e16cedc989
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 084eaf8cd4ba1c251b1c196830f76ef9c6a8e33f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>BAM のトレースを有効にする方法
 BAM のトレースを有効にすると、次の 5 つの BAM コンポーネント内で発生した問題のトラブルシューティングに役立ちます。  
@@ -35,7 +35,7 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
  BAM 管理ユーティリティのトレースを有効にすることによって、展開エラーに関する情報を取得することができます。 これは、2 つの方法で行うことができます。 コマンド ラインを使用して特定の BM.exe コマンドのトレースを有効にする方法と、BAM 管理ユーティリティの構成ファイルを変更してすべての BM.exe コマンドのトレースを有効にする方法です。  
   
 ### <a name="using-the-command-line"></a>コマンド ラインの使用  
- 使用して BM.exe コマンド ライン トレースがアクティブ化、 **-トレース: で & #124 以外の場合はオフ**スイッチします。 Trace スイッチを使用すると、構成ファイルの設定が上書きされます。  
+ 使用して BM.exe コマンド ライン トレースがアクティブ化、 **-トレース: で &#124;以外の場合はオフ**スイッチします。 Trace スイッチを使用すると、構成ファイルの設定が上書きされます。  
   
  このスイッチは、通常の BM.exe コマンドと組み合わせて使用します。  
   
@@ -93,28 +93,28 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
   
 1.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BTSNTSvc.exe.config ファイルを編集します。  
   
-2.  検索、 \<system.diagnostics > と\</system.diagnostics > タグです。 該当するタグがファイル内に存在しない場合は、上記のコードをコピーして構成ファイルに貼り付けます。  
+2.  検索、 \<system.diagnostics\>と\</system.diagnostics\>タグ。 該当するタグがファイル内に存在しない場合は、上記のコードをコピーして構成ファイルに貼り付けます。  
   
-3.  終了コメント区切り記号を移動することによって、システム診断のセクションのコメントを解除 ('-->') から後、 \</system.diagnostics > タグを前に、 \<system.diagnostics > タグです。  
+3.  終了コメント区切り記号を移動することによって、システム診断のセクションのコメントを解除 ('-->') から後、 \</system.diagnostics\>タグを前に、 \<system.diagnostics\>タグ。  
   
 4.  ファイルを保存します。  
   
 ## <a name="enabling-tracing-for-the-bam-portal"></a>BAM ポータルのトレースの有効化  
  BAM ポータルのトレースを有効にすると、接続の問題のトラブルシューティングを行うことができます。  
   
- BAM ポータルは ASP.NET アプリケーションであり、トレースの標準プロトコルに準拠しています。 内で、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]bamportal \web.config ファイルというセクションがある\<トレース > 有効にすることができます。  
+ BAM ポータルは ASP.NET アプリケーションであり、トレースの標準プロトコルに準拠しています。 内で、 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]bamportal \web.config ファイルというセクションがある\<トレース\>有効にすることができます。  
   
 #### <a name="to-enable-tracing-for-the-bam-portal"></a>BAM ポータルのトレースを有効にするには  
   
 1.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config ファイルを編集します。  
   
-2.  検索、 \<system.diagnostics > と\</system.diagnostics > タグです。  
+2.  検索、 \<system.diagnostics\>と\</system.diagnostics\>タグ。  
   
-3.  移動の末尾のコメント デリミター system diagnostics セクションのコメントを解除 ('-->') から後、 \</system.diagnostics > タグを前に、 \<system.diagnostics > タグです。  
+3.  移動の末尾のコメント デリミター system diagnostics セクションのコメントを解除 ('-->') から後、 \</system.diagnostics\>タグを前に、 \<system.diagnostics\>タグ。  
   
 4.  initializeData 属性を変更して、トレース ログの書き込み先を指定します。  
   
-5.  検索\<system.web > タグです。  
+5.  検索\<system.web\>タグ。  
   
 6.  system.web セクションで trace タグを探し、区切り記号 ('-->') を trace タグの後ろから trace タグの前に移動することによって trace コマンドのコメントを解除します。  
   

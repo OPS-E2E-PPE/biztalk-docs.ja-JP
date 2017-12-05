@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4ebfbed1a6be8d9a148a1e9bf470e6f85818b35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b0991ab2714ddb7acc22161ffcd29179ff7339c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite"></a>Oracle E-business Suite での同時実行プログラムを呼び出す
 Oracle E-business Suite では、Oracle アプリケーションで特定の操作を実行する実行可能な同時実行プログラムを公開します。 各 Oracle アプリケーションでは、一連の標準的な同時実行プログラム (同じすべての操作で) と Oracle アプリケーションに固有の特定の同時実行プログラムがあります。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが呼び出すことのできる操作としてすべての同時実行プログラムを公開します。 アダプターで同時実行プログラムをサポートする方法の詳細については、次を参照してください。[同時実行プログラムで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)です。 同時実行プログラムを起動するためのメッセージを SOAP の構造に関する情報を参照してください[同時実行プログラムのメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md)です。  
@@ -125,7 +125,7 @@ new System.TimeSpan(0,2,0)
   
 ```  
 XmlDoc = new System.Xml.XmlDocument();  
-XmlDoc.LoadXml("\<GetStatusForConcurrentProgram xmlns='http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR'><RequestId /></GetStatusForConcurrentProgram>");  
+XmlDoc.LoadXml("<GetStatusForConcurrentProgram xmlns='http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR'><RequestId /></GetStatusForConcurrentProgram>");  
 Get_StatusRequest = XmlDoc;  
 Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResponse']/*[local-name()='RACUSTResult']/text())");  
 ```  
@@ -229,7 +229,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
  オーケストレーションはメッセージを処理する Oracle E-business Suite に渡します、および、応答を受信します。 応答メッセージは、オーケストレーションの一部として指定されたその他のファイルの場所に保存されます。 お客様のインターフェイスの同時実行プログラムの応答には、次のようになります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <RACUSTResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR">  
   <RACUSTResult>2794708</RACUSTResult>  
 </RACUSTResponse>  
@@ -238,7 +238,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
  Oracle E-business Suite からの応答には、要求 ID が含まれています。 オーケストレーションは応答メッセージから要求 ID を抽出しを呼び出すメッセージを構築、 **Get_Status**同時実行プログラムを実行する Oracle E-business Suite に渡します、 **Get_Status。**同時実行プログラムです。 番目の応答の受信後に**Get_Status**同時実行のプログラムは、最初の応答として同じファイルの場所にコピーします。 応答、 **Get_Status**同時実行プログラム、次のようになります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GetStatusForConcurrentProgramResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR">  
   <GetStatusForConcurrentProgramResult>true</GetStatusForConcurrentProgramResult>   
   <Phase>Pending</Phase>   

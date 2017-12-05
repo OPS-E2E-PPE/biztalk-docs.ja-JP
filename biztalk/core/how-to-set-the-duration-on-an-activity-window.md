@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50b4aaa0187c10038dde907fa8b5fa8c595d2847
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66ef0c7200c69cd69a72a5743ca8f14a8950b17d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-the-duration-on-an-activity-window"></a>アクティビティ時間帯の期間を設定する方法
 管理者を使用して、**セット activitywindow**コマンドを指定したアクティビティの期間を設定します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   
-3.  型**bm セット activitywindow-アクティビティ:\<アクティビティ名 > - TimeLength:\<整数の番号 > - TimeUnit: 月 &#124; 日付 & #124 です。1 時間 & #124 です。分**です。  
+3.  型**bm セット activitywindow-アクティビティ:\<アクティビティ名\>- TimeLength:\<整数\>-TimeUnit: 月 &#124; 日付 &#124;です。1 時間 &#124;です。分**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

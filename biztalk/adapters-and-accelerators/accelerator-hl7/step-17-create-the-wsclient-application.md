@@ -16,11 +16,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8028688f918854d8251f7b059c76642800961088
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 54eff7c2a455d9f1129bb40d83c002bac92841bd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-17-create-the-wsclient-application"></a>手順 17: クライアント アプリケーションを作成します。
 WSClient.exe (Web サービス クライアント) は、コンソール アプリケーションで記述された[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]を前の手順で Web サービスとして公開するオーケストレーションにデータを送信する方法を示しています。 クライアント アプリケーションは 4 つの順序でパラメーターの入力を受け入れます。 患者名、ミドル ネーム、最後の名、および社会保障番号、それぞれします。 患者の情報を使用する Web サービスを送信するには、次のコマンドライン構文を使用します。  
@@ -35,7 +35,7 @@ wsclient john henry smith 123456789
   
 2.  **新しいプロジェクトの追加** ダイアログ ボックスで、**プロジェクトの種類** ウィンドウで、をクリックして**Visual c#**し、、**テンプレート** ウィンドウで、をクリックして**コンソール アプリケーション**です。  
   
-3.  **名前**フィールドに「**クライアント**です。 **場所**フィールドを参照してください  **\<*ドライブ*>: \Tutorial** をクリックして**OK**です。 ソリューション エクスプ ローラーは、ツリーにクライアントを追加し、Program.cs ファイルが表示されます。  
+3.  **名前**フィールドに「**クライアント**です。 **場所**フィールドを参照してください  **\<*ドライブ*\>: \Tutorial** をクリックして**OK**です。 ソリューション エクスプ ローラーは、ツリーにクライアントを追加し、Program.cs ファイルが表示されます。  
   
 4.  ソリューション エクスプ ローラーで右クリック**クライアント**、クリックして**Web 参照の追加**です。  
   
@@ -76,9 +76,9 @@ wsclient john henry smith 123456789
     }  
     ```  
   
-9. ソリューション エクスプ ローラーで右クリック**クライアント**、クリックして**ビルド**です。 成功メッセージが出力ウィンドウに表示されることを確認します。 成功メッセージが表示されない場合のトラブルシューティングを行う**クライアント**です。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]WSClient.exe、実行可能ファイルのコピーを配置、 \<*ドライブ*>: \Tutorial\WSClient\bin\Debug フォルダーです。  
+9. ソリューション エクスプ ローラーで右クリック**クライアント**、クリックして**ビルド**です。 成功メッセージが出力ウィンドウに表示されることを確認します。 成功メッセージが表示されない場合のトラブルシューティングを行う**クライアント**です。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]WSClient.exe、実行可能ファイルのコピーを配置、 \<*ドライブ*\>: \Tutorial\WSClient\bin\Debug フォルダーです。  
   
  進みます[手順 18.: 新しいメッセージの強化ソリューションのテスト](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2cd086459c52dbea01e5658115bfae9115f95479
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cfd39e1da4e8c730e2ca1c663a5844355ac9cd08
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-message-instances"></a>メッセージ インスタンスを作成します。
 ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチュートリアルを実行するときに使用する必要があるメッセージ インスタンスを作成するのには、次の手順を使用します。  
@@ -47,7 +47,7 @@ ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチ�
     FTS|1|File,BatchCount,TrailerComment  
     ```  
   
-3.  ファイルに保存**FragmentedInboundBatch.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
+3.  ファイルに保存**FragmentedInboundBatch.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
   
 ### <a name="to-create-the-batch-inbatch-out-message-instance-text-file"></a>内のバッチの作成/メッセージ インスタンスのテキスト ファイルをバッチ処理するには  
   
@@ -68,7 +68,7 @@ ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチ�
     PV1|1|I|2000^2012^01^JDL&test&DNS^test^test^test^test^test||||004777^DOE^JANE^A.|||SUR||||2|A0  
     ```  
   
-3.  ファイルに保存**BatchInBatchOut.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
+3.  ファイルに保存**BatchInBatchOut.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
   
 ### <a name="to-create-the-create-batch-message-instance-text-files"></a>テキスト ファイルを作成するバッチのメッセージ インスタンスを作成するには  
   
@@ -84,7 +84,7 @@ ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチ�
     PV1|1|I|2000^2012^01^hey&test&DNS^test^test^test^test^test||||004777^MILLER^CONNIE^A.|||SUR||||2|A0  
     ```  
   
-3.  ファイルに保存**CreateBatchMessage1.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
+3.  ファイルに保存**CreateBatchMessage1.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
   
 4.  メモ帳の新しいインスタンスに、次のテキストをコピーします。  
   
@@ -96,6 +96,6 @@ ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチ�
     PV1|1|I|2000^2012^01^JDL&test&DNS^test^test^test^test^test||||004777^DOE^JANE^A.|||SUR||||2|A0  
     ```  
   
-5.  ファイルに保存**CreateBatchMessage2.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
+5.  ファイルに保存**CreateBatchMessage2.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。  
   
  進みます[パート 1: 受信バッチのシナリオを断片化](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)です。

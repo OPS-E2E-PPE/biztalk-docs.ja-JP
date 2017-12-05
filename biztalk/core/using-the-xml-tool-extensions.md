@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c18dd9bc820b994f53e9f3e157497337e93550c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 976082fc14eb37d550956ec447eb63938706daa3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-xml-tool-extensions"></a>XML ツール拡張の使用
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の XML ツール拡張を使用すると、スキーマ、マップ、およびメッセージ インスタンスに対してタスクを実行できます。 これらの拡張は、デザイン時に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境で使用します。 実行できるタスクは次のとおりです。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **マップの検証**です。 検証を行うと、マップの基になる XSLT を含むファイルと、拡張オブジェクトを含むファイルが生成されます。 詳細については、次を参照してください。[マップ (EDI) を検証する](../core/validating-a-map-edi.md)です。  
   
- [!INCLUDE[prague](../includes/prague-md.md)] では、これらの拡張で EDI のスキーマ、マップ、およびメッセージ インスタンスを処理できます。 これらの拡張により、複雑な EDI のスキーマ、マップ、およびインターチェンジを、より効果的に処理できます。  
+ BizTalk Server で、これらの拡張機能は、EDI スキーマ、マップ、およびメッセージ インスタンスで動作します。 これらの拡張により、複雑な EDI のスキーマ、マップ、およびインターチェンジを、より効果的に処理できます。  
   
  XML ツール拡張は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のセットアップ プログラムにより既定で有効化されます。 ソリューション エクスプ ローラーの Visual Studio で、スキーマをダブルクリックする場合、**スキーマ エディター拡張機能**スキーマのプロパティに設定されて**EDI スキーマ エディタ拡張機能**します。 この設定は、XML ツール拡張を機能させるために必要です。 EDI 拡張機能を選択したままで、他のスキーマ エディター拡張機能を選択することもできます。  
   
@@ -40,4 +40,4 @@ ms.lasthandoff: 09/20/2017
  [インスタンス (EDI) の検証](../core/validating-an-instance-edi.md)   
  [スキーマ (EDI) の検証](../core/validating-a-schema-edi.md)   
  [マップのテスト](../core/testing-a-map.md)   
- [マップ (EDI) の検証](../core/validating-a-map-edi.md)
+ [マップの検証 (EDI)](../core/validating-a-map-edi.md)

@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39f47159fbeacb1b4975cf9f1aa0a8c9a030ecc3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0eb6550a5e7b3604d4bb99507299cce5262e210e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-managing-certificates"></a>証明書を管理するためのベスト プラクティス
-このセクションでは、Microsoft の証明書を管理するためのベスト プラクティスを説明[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]環境。  
+このセクションでは、Microsoft BizTalk Server 環境で証明書を管理するためのベスト プラクティスを説明します。  
   
 ## <a name="assess-and-plan-your-use-of-certificates"></a>評価し、証明書の使用を計画  
  **環境内の脅威モデル分析を行う**  

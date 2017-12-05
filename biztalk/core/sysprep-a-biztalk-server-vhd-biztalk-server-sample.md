@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3da0d65917598dbbce4e203a97a9e843b5ba70c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc6ec29ece503f324758cdc08a6ff1351c066af4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="sysprep-a-biztalk-server-vhd-biztalk-server-sample"></a>Sysprep による BizTalk Server VHD の準備 (BizTalk Server サンプル)
 Sysprep は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされている仮想マシンのスナップショットを作成し、他の仮想マシンに簡単に展開できるようにします。  
@@ -34,7 +34,7 @@ Sysprep は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservern
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\Sysprep\  
+ \<*パスのサンプル*\>\Admin\Sysprep\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -45,22 +45,22 @@ Sysprep は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservern
 |----------|-----------------|  
 |Sysprep.xml|応答ファイル|  
 |SetupCompletecmd.txt|応答ファイル|  
-|ReplaceMachineName.vbs|目的: は、ファイルを開き、現在のコンピューター名を指定する文字列のすべてのインスタンスで置き換えます。 他のスクリプトおよび xml ファイルを準備し、bm.exe.config を更新するのに便利です。<br /><br /> 使用法: ReplaceMachineName.vbs\<開くファイル >\<を置き換える文字列 >|  
-|UpdateRegistry.vbs|目的: は、BizTalk のレジストリ設定に格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateRegistry.vbs \<UpdateInfo.xml >。 この xml ファイルの $(OLDCOMPUTERNAME) および $(NEWCOMPUTERNAME) のすべてのインスタンスを置き換えてください。|  
-|UpdateDatabase.vbs|目的: は、BizTalk 管理データベースに格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateDatabase.vbs \<UpdateInfo.xml >|  
-|UpdateBAMDb.vbs|目的: は、BAM データベースに格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateBamDb.vbs \<UpdateInfo.xml >|  
-|UpdateSSO.cmd|目的: は、エンタープライズ シングル サインオン (SSO) シークレット サーバーを再構成します。<br /><br /> 使用法: sso.cmd \<UpdateInfo.xml >|  
+|ReplaceMachineName.vbs|目的: は、ファイルを開き、現在のコンピューター名を指定する文字列のすべてのインスタンスで置き換えます。 他のスクリプトおよび xml ファイルを準備し、bm.exe.config を更新するのに便利です。<br /><br /> 使用法: ReplaceMachineName.vbs\<ファイルを開く\>\<を置換する文字列\>|  
+|UpdateRegistry.vbs|目的: は、BizTalk のレジストリ設定に格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateRegistry.vbs \<UpdateInfo.xml\>です。 この xml ファイルの $(OLDCOMPUTERNAME) および $(NEWCOMPUTERNAME) のすべてのインスタンスを置き換えてください。|  
+|UpdateDatabase.vbs|目的: は、BizTalk 管理データベースに格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateDatabase.vbs \<UpdateInfo.xml\>|  
+|UpdateBAMDb.vbs|目的: は、BAM データベースに格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateBamDb.vbs \<UpdateInfo.xml\>|  
+|UpdateSSO.cmd|目的: は、エンタープライズ シングル サインオン (SSO) シークレット サーバーを再構成します。<br /><br /> 使用法: sso.cmd \<UpdateInfo.xml\>|  
 |UpdateSqlServerAndInstanceName.cmd|目的: SQL および SQL Express を再構成するには、一連の依存サービスを再起動し、BAMAlerts を再登録します。<br /><br /> 使用法: は、スクリプトを編集し、$(NEWCOMPUTERNAME) のすべてのインスタンスを置き換えると BAM 警告の serviceusername および servicepassword を更新します。 その後、UpdateSqlServerAndInstanceName.cmd を実行し、1 番目の引数として古いコンピューター名を渡します。|  
   
 ## <a name="creating-the-answer-files-and-running-sysprep"></a>応答ファイルの作成と Sysprep の実行  
   
 #### <a name="to-create-the-answer-files"></a>応答ファイルを作成するには  
   
-1.  [!INCLUDE[prague](../includes/prague-md.md)] を仮想マシンにインストールして構成します。 Sysprep はカスタマイズされたインストールをサポートしないので、必ず既定のインストールと構成オプションを使用します。  
+1.  インストールし、仮想マシンで BizTalk Server を構成します。 Sysprep はカスタマイズされたインストールをサポートしないので、必ず既定のインストールと構成オプションを使用します。  
   
 2.  含まれる "scripts" フォルダーの内容を仮想マシンの C:\Scripts にコピーします。  
   
-3.  Sysprep.xml で次の行を変更することにより、sysprep 応答ファイルを準備します。 (注: これらの行が付いている、"!" 前にします。)これらをテンプレートとして使用して、または独自に作成および経由でコピー、 \<FirstLogonCommands > セクションでします。  
+3.  Sysprep.xml で次の行を変更することにより、sysprep 応答ファイルを準備します。 (注: これらの行が付いている、"!" 前にします。)これらをテンプレートとして使用して、または独自に作成および経由でコピー、 \<FirstLogonCommands\>セクションです。  
   
     -   $(OLDCOMPUTERNAME) 仮想マシンの現在のコンピューター名に置き換えます。  
   
@@ -70,7 +70,7 @@ Sysprep は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservern
   
     -   会社に関するすべての詳細も、UpdateSqlServerAndInstance.cmd および作成する Sysprep.xml で更新する必要があります。  
   
-     使用して最初から、Sysprep 応答ファイルを作成する代わりに、[自動インストール キット (AIK)](http://www.microsoft.com/downloads/details.aspx?FamilyID=94bb6e34-d890-4932-81a5-5b50c657de08&DisplayLang=en) Windows Server 2008 でします。 いることを確認、 \<FirstLogonCommands > セクションには、サンプルが一致するため、BizTalk スクリプトが最初の起動で実行します。  
+     使用して最初から、Sysprep 応答ファイルを作成する代わりに、[自動インストール キット (AIK)](http://www.microsoft.com/downloads/details.aspx?FamilyID=94bb6e34-d890-4932-81a5-5b50c657de08&DisplayLang=en) Windows Server 2008 でします。 いることを確認、 \<FirstLogonCommands\>セクションには、サンプルが一致するため、BizTalk スクリプトが最初の起動で実行します。  
   
 #### <a name="to-run-sysprep"></a>Sysprep を実行するには  
   

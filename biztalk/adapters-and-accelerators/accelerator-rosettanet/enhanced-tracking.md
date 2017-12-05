@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6660cf8f783a407c3ddead342effecfb4cdd0201
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0212caafb34ca76988e1a863899021b44ac416fb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enhanced-tracking"></a>拡張追跡
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プロセスとメッセージを追跡するために、拡張機能を提供します。 ネイティブな機能のビジネス アクティビティ監視 (BAM) で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]はメタデータのみを追跡します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]追跡メッセージの内容、service content とヘッダーの両方です。  
@@ -98,8 +98,8 @@ ms.lasthandoff: 09/20/2017
 ### <a name="activity-definition-file"></a>アクティビティ定義ファイル  
  アクティビティ定義ファイルでは、BAM で追跡するフィールドおよびその表示方法を定義します。 このファイルの詳細については、次を参照してください。[追跡アクティビティ定義ファイルの操作](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md)です。  
   
- BAM の詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「ビジネス アクティビティ監視 (BAM)」を参照してください。  
+ BAM の詳細については、"ビジネス アクティビティ監視 (BAM)"BizTalk Server のヘルプを参照してください。  
   
 ## <a name="see-also"></a>参照  
  [追跡アクティビティ定義ファイルの操作](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md)   
- [BizTalk Server に BizTalk Accelerator for RosettaNet の追加](../../adapters-and-accelerators/accelerator-rosettanet/what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server.md)
+ [BizTalk Accelerator for RosettaNet により BizTalk Server に追加される機能](../../adapters-and-accelerators/accelerator-rosettanet/what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server.md)

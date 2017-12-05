@@ -13,11 +13,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e880bcbce388bb15924e96739c8bb617c04d0e24
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: dab62d7d7836a59c66329c2c58f7768bc481c036
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploy-tibco-rendezvous-ports-and-assemblies"></a>TIBCO Rendezvous ポートとアセンブリを展開します。
   
@@ -55,7 +55,7 @@ Microsoft Visual Studio が展開先のコンピューターにインストー�
 たとえば、コマンド プロンプトで次のように実行します。  
   
 ```
-cscript RemoveSendPort.vbs \<Send port name>
+cscript RemoveSendPort.vbs \<Send port name\>
 ```
   
 ## <a name="next-steps"></a>次の手順

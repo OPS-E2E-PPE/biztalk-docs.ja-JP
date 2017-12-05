@@ -13,11 +13,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdae0c97d0441ccb57320ec24908cca522ae2088
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eb91509ec3ad1c329190c848c25a60434f93499e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="guidelines-for-resolving-iis-permissions-problems"></a>IIS のアクセス許可の問題を解決するためのガイドライン
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Web サービス サポートや HTTP、SOAP、Windows SharePoint Services の各アダプターで、Microsoft インターネット インフォメーション サービス (IIS) を広範に使用します。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、し**すべてのプログラム**、 をクリック**インターネット インフォメーション サービス (IIS) 7 マネージャー**です。  
   
-2.  インターネット インフォメーション サービス (IIS) マネージャーでは、展開*\<コンピューター名 >***(ユーザー アカウント)**  をクリック**アプリケーション プール**です。  
+2.  インターネット インフォメーション サービス (IIS) マネージャーでは、展開*\<コンピューター名\>***(ユーザー アカウント)**  をクリック**アプリケーション プール**です。  
   
 3.  アプリケーション プールを右クリックし、をクリックして**ビュー アプリケーション**にアプリケーション プールに関連付けられているアプリケーションを参照してください。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-set-user-access-rights-for-a-virtual-directory-in-iis-70"></a>IIS 7.0 で仮想ディレクトリのユーザー アクセス権を設定するには  
   
-1.  インターネット インフォメーション サービス (IIS) マネージャーで、展開*\<コンピューター名 >*、**サイト**、および**Default Web Site**で、 **接続**ウィンドウです。  
+1.  インターネット インフォメーション サービス (IIS) マネージャーで、展開*\<コンピューター名\>*、**サイト**、および**Default Web Site** で**接続**ウィンドウです。  
   
 2.  クリックして、仮想ディレクトリを選択し、をクリックして、**機能ビュー**を仮想ディレクトリの構成可能な機能を一覧表示 [ワークスペース] ウィンドウの下部にあります。  
   

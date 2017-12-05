@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2fe383d80c467376852067026a7c5a4fe4640ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb46943b20676dbe98f79db8760043bb51606c56
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2c-add-an-interact-send-port-for-the-interact-store-and-forward-pull-scenario"></a>手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポートを追加
 この手順を開始する前に行う必要があります[Step 2B: InterAct ストア アンド フォワード (プル) シナリオの Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)です。  
@@ -41,11 +41,11 @@ ms.lasthandoff: 09/20/2017
     |**ユーザー名**|SAG 接続を適切なユーザー名を設定します。|  
     |**メッセージの形式**|**InteractMessage**|  
     |**否認不可インジケーター**|**FALSE**|  
-    |**要求の種類**|適切な入力\<RequestType > SWIFT でのプロビジョニングに基づく文字列。|  
+    |**要求の種類**|適切な入力\<RequestType\> SWIFT でのプロビジョニングに基づく文字列。|  
     |**ResponseCrypto**|**FALSE**|  
-    |**要求元**|適切な入力\<RequestorDN > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**応答側**|適切な入力\<ResponderDN > SWIFT でのプロビジョニングに基づく文字列。|  
-    |**サービス名**|適切な入力\<サービス名 > SWIFT でのプロビジョニングに基づきます。|  
+    |**要求元**|適切な入力\<RequestorDN\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**応答側**|適切な入力\<ResponderDN\> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**サービス名**|適切な入力\<サービス名\>SWIFT でのプロビジョニングに基づきます。|  
     |**配信通知**|ドロップダウン リストから選択**FALSE**です。|  
     |**通知キュー**|SWIFT でのプロビジョニングに基づく、適切なキュー名を入力します。|  
   
@@ -75,4 +75,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)   
- [手順 2 b: InterAct ストア アンド フォワード (プル) シナリオの Sw:HandleRequest メッセージをキャプチャするファイルの送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)
+ [手順 2B: InterAct ストア アンド フォワード (プル) シナリオ用に Sw:HandleRequest メッセージをキャプチャするためにファイルの送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)

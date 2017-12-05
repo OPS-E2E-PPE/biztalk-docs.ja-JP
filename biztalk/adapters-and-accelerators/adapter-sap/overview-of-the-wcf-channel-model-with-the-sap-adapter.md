@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8083f7dc691010f4128b3ddb99729b0b2b1ebd1f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51b5469681f7acce2ebb0b55fe63e285d25192e0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sap-adapter"></a>SAP アダプターを使用して WCF チャネル モデルの概要
 Rfc、tRFCs、または呼び出す Bapi の SAP システムで、または、IDOC を SAP システムに送信するには、コードは WCF クライアントとして機能し、送信操作をアダプターに送信します。 WCF チャネル モデルでは、コードは、チャネル経由で要求メッセージを送信することによって、アダプターでの操作を呼び出します。  
@@ -44,11 +44,11 @@ Rfc、tRFCs、または呼び出す Bapi の SAP システムで、または、I
   
  任意の WCF バインドと同様に、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ファクトリ パターンを使用してアプリケーション コードへのチャネルを提供します。 使用する、 **Microsoft.Adapters.SAPBinding**オブジェクトのインスタンスを作成します。  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >**を提供する**IRequestChannel**チャネル アダプターの要求-応答操作の呼び出しに使用することができます。  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>** を提供する**IRequestChannel**チャネル アダプターの要求-応答操作の呼び出しに使用することができます。  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >**を提供する**IOutputChannel**チャネル アダプターの一方向の操作の呼び出しに使用することができます。  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>** を提供する**IOutputChannel**チャネル アダプターの一方向の操作の呼び出しに使用することができます。  
   
--   **System.ServiceModel.IChannelListener\<IReplyChannel >**を提供する**IReplyChannel**チャネル アダプターから受信要求-応答操作を行うこともできます。  
+-   **System.ServiceModel.IChannelListener\<IReplyChannel\>** を提供する**IReplyChannel**チャネル アダプターから受信要求-応答操作を行うこともできます。  
   
 ## <a name="creating-messages-for-the-sap-adapter-in-the-wcf-channel-model"></a>WCF チャネル モデル内の SAP アダプターのメッセージを作成  
  WCF では、 **System.ServiceModel.Channels.Message**クラスは、メモリに SOAP メッセージの表現。 作成する、**メッセージ**、静的なを呼び出すことによってインスタンス**Message.Create**メソッドです。  
@@ -71,7 +71,7 @@ Rfc、tRFCs、または呼び出す Bapi の SAP システムで、または、I
 //create an XML message to send to the SAP system  
 //We are invoking the SD_RFC_CUSTOMER_GET RFC.  
 //The XML below specifies that we want to search for customers with names starting with "AB"  
-string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+string inputXml = "<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
 //create an XML reader from the input XML  
 XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -96,7 +96,7 @@ Message inputMessge = Message.CreateMessage(MessageVersion.Soap11, "http://Micro
 -   使用して、受信メッセージを消費する**XmlReader**です。 呼び出してリーダーを取得する、 **GetReaderAtBodyContents**受信メソッド**メッセージ**です。  
   
 ### <a name="node-value-streaming"></a>ノード値のストリーミング  
- SendIdoc と ReceiveIdoc 操作には、1 つの XML ノードの下の文字列内の IDOC データが含まれているため (\<idocData >)、アダプター サポートしているノードの値ストリーミングこれらの操作にします。  
+ SendIdoc と ReceiveIdoc 操作には、1 つの XML ノードの下の文字列内の IDOC データが含まれているため (\<idocData\>)、アダプター サポートしているノードの値ストリーミングこれらの操作にします。  
   
  ノード値のストリームのこれらの操作を実行するのには、次のことができます。  
   
@@ -107,4 +107,4 @@ Message inputMessge = Message.CreateMessage(MessageVersion.Soap11, "http://Micro
  WCF チャネル モデルを使用してフラット ファイル (string) Idoc をストリーミングの詳細については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)です。  
   
 ## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

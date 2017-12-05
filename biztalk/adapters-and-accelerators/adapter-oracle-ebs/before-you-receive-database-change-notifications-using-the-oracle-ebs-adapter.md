@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd374a6edcc8b097c2fc05e236a2a3ca0800229b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3157b8ab7a706203d3b9475de890fb2a8f8dd3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-e-business-suite-adapter"></a>変更 Oracle E-business Suite アダプターを使用して通知を受信するデータベースに関する注意点
 このトピックでは、いくつかの考慮事項とベスト プラクティスを使用しているときに点に注意する必要がある、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースからデータベースの通知を受信します。  
@@ -28,10 +28,10 @@ ms.lasthandoff: 09/20/2017
   
 -   操作の通知メッセージは、その操作によって影響を受けたレコードの数の影響を受けません。 たとえば、アダプター クライアントに関係なく、Oracle データベース テーブルに挿入されるレコードの数、1 つだけの通知メッセージが表示されます。  
   
--   アダプターのクライアント アプリケーションに Oracle データベースから受信した通知の種類を解釈するためのロジックが含まれていることをお勧めします。 アダプター クライアント アプリケーションを内の情報を抽出することによって行うことができます、 **\<情報 >**通知を受信したメッセージの要素。 挿入操作用に受信した通知メッセージの例を次に示します。  
+-   アダプターのクライアント アプリケーションに Oracle データベースから受信した通知の種類を解釈するためのロジックが含まれていることをお勧めします。 アダプター クライアント アプリケーションを内の情報を抽出することによって行うことができます、 **\<情報\>**通知を受信したメッセージの要素。 挿入操作用に受信した通知メッセージの例を次に示します。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
     </Notification>  
     ```  
   
-     内の値に注意してください、 **\<情報 >**要素。 この値は、通知メッセージを受信した操作について説明します。 アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報 >**要素し、値に基づいて、後続のタスクを実行します。 トピック[Oracle E-business Suite で特定のタスクを実行する通知メッセージを処理](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)内の値を抽出する方法の手順を持つ、 **\<情報 >**要素。  
+     内の値に注意してください、 **\<情報\>**要素。 この値は、通知メッセージを受信した操作について説明します。 アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報\>**要素し、値に基づいて、後続のタスクを実行します。 トピック[Oracle E-business Suite で特定のタスクを実行する通知メッセージを処理](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)内の値を抽出する方法の手順を持つ、 **\<情報\>**要素.  
   
 -   理想的には、クライアント アプリケーションは、通知を受信した後を通知を既に受信した同じレコードの後続の通知がされないように、レコードを更新する必要があります。 たとえば、 **ACCOUNTACTIVITY**を持つテーブル、**処理**列です。 すべての新しいレコードが挿入されるため、 **ACCOUNTACTIVITY**テーブル内の値、**処理**列は常に 'n' です。 内のレコード挿入操作の後など、 **ACCOUNTACTIVITY**テーブルは、次のようになります。  
   

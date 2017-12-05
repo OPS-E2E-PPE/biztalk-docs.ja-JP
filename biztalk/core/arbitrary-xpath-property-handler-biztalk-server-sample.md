@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3ce40931caaf8f247afeacdae48721f31a7d99b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>任意の XPath プロパティ ハンドラ (BizTalk Server サンプル)
 任意の XPath プロパティ ハンドラー ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サンプル) では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信される XML ドキュメント上で特定のプロパティを昇格させるためのカスタム パイプライン コンポーネントを記述する方法を示します。 サンプルに含まれる機能を使用して、XPath 式を評価する通常、アセンブラ、および逆アセンブラの各カスタム コンポーネントを作成できます。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  DocInstance.xml は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 受信ポートによって取得され、任意の XPath プロパティ ハンドラーというカスタム パイプライン コンポーネントによって処理されます。  
   
-2.  任意の XPath プロパティ ハンドラ コンポーネントはすべてを昇格\<価格 > と\<Quantity > として任意の XPath 式を持つ要素が、PO スキーマで定義します。 XPath 式には、PO ドキュメントのルート要素のあいまいな子要素で使用される位置コンストラクタも含まれています。  
+2.  任意の XPath プロパティ ハンドラ コンポーネントはすべてを昇格\<価格\>と\<数量\>として任意の XPath 式を持つ要素が、PO スキーマで定義します。 XPath 式には、PO ドキュメントのルート要素のあいまいな子要素で使用される位置コンストラクタも含まれています。  
   
 3.  任意の XPath プロパティ ハンドラ コンポーネントはメッセージの種類を判断し、メッセージ コンテキストに昇格させます。  
   
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 7.  新しい PO ドキュメントは、\Output ディレクトリのファイルに書き込まれます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Pipelines\ArbitraryXPathPropertyHandler  
+ *\<パスのサンプル\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
  このサンプルは、同じコンピューターで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が実行されている [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 環境で実行するように設計されています。 環境がこの構成と異なる場合は、正しい SQL Server コンピューターを指定するように、任意の XPath プロパティ ハンドラー ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サンプル) を変更する必要があります。  
   
 > [!IMPORTANT]
->  Setup.bat は、Microsoft Windows のインストール ディレクトリが C:\Windows であることを前提にしています。 Windows のインストールが別のディレクトリの場合は、グローバル アセンブリ キャッシュの Microsoft.BizTalk.Component.Utilities アセンブリの場所を反映するように、ArbitraryXPathPropertyHandler.csproj ファイルを変更する必要があります。 参照要素で、次のように変更します。 \<SYSTEMROOT > Windows がインストールされている場所に (たとえば、C:\WINNT\\)。  
+>  Setup.bat は、Microsoft Windows のインストール ディレクトリが C:\Windows であることを前提にしています。 Windows のインストールが別のディレクトリの場合は、グローバル アセンブリ キャッシュの Microsoft.BizTalk.Component.Utilities アセンブリの場所を反映するように、ArbitraryXPathPropertyHandler.csproj ファイルを変更する必要があります。 参照要素で、次のように変更します。 \<SYSTEMROOT\> Windows がインストールされている場所に (たとえば、C:\WINNT\\)。  
   
 ```  
 <Reference  
@@ -84,13 +84,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、ディレクトリを変更 (**cd**) 次のフォルダーに。  
   
-     *\<サンプル パス >*\Pipelines\ArbitraryXPathPropertyHandler  
+     *\<パスのサンプル\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   任意の XPath プロパティ ハンドラ パイプライン コンポーネントをビルドします。  
   
-    -   構築されたコピーのパイプライン コンポーネントを*\<インストール パス >*\Pipeline Components ディレクトリ。  
+    -   構築されたコピーのパイプライン コンポーネントを*\<インストール パス\>*\Pipeline Components ディレクトリ。  
   
     -   送信ポートおよび受信ポートを作成します。  
   
@@ -115,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  注文書 (PO) ファイル DocInstance.xml を \Input ディレクトリにコピーします。 PO ファイルは受信ポートによって取得されます。受信ポートは、XML データを任意の XPath プロパティ ハンドラ パイプライン コンポーネントに送信します。  
   
-2.  \Output ディレクトリの内容を表示します。 \Input ディレクトリにコピーした DocInstance.xml ファイルのすべての情報を含む新しいファイルが作成されています。 される点が異なりますファイルのようになりました、 \<TotalAmount > 要素が PO の合計金額が設定されています。  
+2.  \Output ディレクトリの内容を表示します。 \Input ディレクトリにコピーした DocInstance.xml ファイルのすべての情報を含む新しいファイルが作成されています。 される点が異なりますファイルのようになりました、 \<TotalAmount\> PO の合計容量を持つ要素が設定されています。  
   
 ## <a name="comments"></a>コメント  
  正規 XPath 式などの単純式は、"/* [ローカル名 () '要素名' と namespaceURI() を = = 'http://MyUri.org']/\*[ローカル名 () =' 要素名 ']/@\*[ローカル名 =' 属性名 ']"です。  
@@ -139,4 +139,4 @@ ms.lasthandoff: 09/20/2017
 7.  送信メッセージをファイルに書き込みます。  
   
 ## <a name="see-also"></a>参照  
- [パイプライン (BizTalk Server Samples フォルダ)](../core/pipelines-biztalk-server-samples-folder.md)
+ [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

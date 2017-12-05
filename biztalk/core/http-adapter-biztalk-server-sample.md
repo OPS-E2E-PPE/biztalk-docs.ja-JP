@@ -15,17 +15,17 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4f443bf0b60f0bb90a914824b3922110ee1b300
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f09615b8038170bfdc0f9d63492e40dc1b2a0eba
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="http-adapter-biztalk-server-sample"></a>HTTP アダプター (BizTalk Server サンプル)
 HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用される要求 - 応答および送信請求 - 応答の通信パラダイムを実装する方法を示します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\AdaptersDevelopment\HttpAdapter\  
+ *\<パスのサンプル\>*\AdaptersDevelopment\HttpAdapter\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -49,7 +49,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \AdaptersDevelopment\HttpAdapter  
+     \<*パスのサンプル*\>\AdaptersDevelopment\HttpAdapter  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -63,7 +63,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
   
 -   IIS_WPG グループ  
   
--   IIS 7.0 では、統合 .NET モードで動作するアプリケーションを移行する必要があります。 内容を含む、アプリケーション構成を移行することができます、 \<httpHandlers > (ウィンドウを管理者として実行する必要があります)、コマンド ライン ウィンドウから、次を使用して、構成セクション。  
+-   IIS 7.0 では、統合 .NET モードで動作するアプリケーションを移行する必要があります。 内容を含む、アプリケーション構成を移行することができます、 \<httpHandlers\> (ウィンドウを管理者として実行する必要があります)、コマンド ライン ウィンドウから、次を使用して、構成セクション。  
   
     ```  
     %systemroot%\system32\inetsrv\APPCMD.EXE migrate config "Default Web Site/HttpReceive"  
@@ -84,7 +84,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
   
 #### <a name="to-register-the-http-adapter-sample"></a>HTTP アダプターのサンプルを登録するには  
   
-1.  Windows エクスプ ローラーで、インストール ドライブに移動[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]に移動し、\<サンプル パス > \AdaptersDevelopment\HTTPAdapter です。  
+1.  Windows エクスプ ローラーで、インストール ドライブに移動[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]に移動し、\<サンプル パス\>\AdaptersDevelopment\HTTPAdapter です。  
   
 2.  サンプル アダプターをレジストリに追加するにはダブルクリック**HTTP.NET.reg**です。  
   
@@ -137,7 +137,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
  これで、アプリケーションで HTTP.NET アダプターを使用する準備が整いました。 アダプターは、の形式を構成するときに、**仮想ディレクトリ**の形式は、トランスポートのプロパティ:/httpreceive/httpreceive.aspx?optionalQueryString です。  
   
 ## <a name="comments"></a>コメント  
- 提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス >*\AdaptersDevelopment\BaseAdapter\v1.0.2\\です。 BaseAdapter プロジェクトで提供されるクラスは、アダプターの開発を迅速化するためのものです。 提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。  
+ 提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス\>*\AdaptersDevelopment\BaseAdapter\v1.0.2\\です。 BaseAdapter プロジェクトで提供されるクラスは、アダプターの開発を迅速化するためのものです。 提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。  
   
 ## <a name="see-also"></a>参照  
  [アダプターの登録](../core/registering-an-adapter.md)   
@@ -149,4 +149,4 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
  [送信アダプターの開発](../core/developing-a-send-adapter.md)   
  [カスタム アダプターを展開する方法](../core/how-to-deploy-a-custom-adapter.md)   
  [アダプターのデザインに関するヒント](../core/tips-for-designing-your-adapter.md)   
- [アダプター デザイン時の構成](../core/adapter-design-time-configuration.md)
+ [アダプターのデザイン時構成](../core/adapter-design-time-configuration.md)

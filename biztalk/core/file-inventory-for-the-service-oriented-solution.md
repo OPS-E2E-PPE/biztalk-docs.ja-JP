@@ -13,16 +13,16 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac62241b8c3bf3244bb9e055a5b744acd5080048
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 39d18b32e1b499009e7559a68d7e60e6ba43f28c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="file-inventory-for-the-service-oriented-solution"></a>ファイル インベントリ サービス指向ソリューション
-このセクションでは、サービス指向ソリューションのサブディレクトリおよびソース ファイルについて説明します。 サービス指向ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO です。 次の表では、このパスを交換する前に説明\<インストール ディレクトリ >。  
+このセクションでは、サービス指向ソリューションのサブディレクトリおよびソース ファイルについて説明します。 サービス指向ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO です。 次の表では、このパスを交換する前に説明\<インストール ディレクトリ\>です。  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -31,14 +31,14 @@ ms.lasthandoff: 09/20/2017
 |ReplacePKToken.wsf|ReplacePKToken VBScript 用の Windows スクリプト ファイルです。|  
 |SetupBTSSoln.bat|公開キーを作成し、公開キーへの参照を更新し、ソリューションをコンパイルします。 ソリューションを展開する方法の詳細については、次を参照してください。[サービス指向ソリューションの配置](../core/deploying-the-service-oriented-solution.md)です。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\BAM  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\BAM  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |ServiceLevelTracking.xls|BAM データの Excel スプレッドシートです。|  
 |ServiceLevelTracking.xml|BAM データ項目の型を定義するスキーマです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Bindings  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Bindings  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 |InlineSOAOrchBindings.xml|ソリューションのインライン バージョンのバインド ファイルです。|  
 |StubSOAOrchBindings.xml|ソリューションのスタブ バージョンのバインド ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\ConfigHelper  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\ConfigHelper  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -55,21 +55,21 @@ ms.lasthandoff: 09/20/2017
 |ConfigParameters.cs|SSO 構成ヘルパ メソッドの C# コード ファイルです。|  
 |ConfigPropertyBag.cs|SSO 構成ヘルパ メソッドで使用されるプロパティ バッグの C# コード ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\ErrorHelper  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\ErrorHelper  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |CustomerServiceErrors.cs|カスタマー サービス エラーの C# コード ファイルです。|  
 |ErrorHelper.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\InPipeline  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\InPipeline  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |InPipeline.btp|SSO チケットをメッセージに追加する受信パイプラインです。|  
 |InPipeline.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\InPipelineComp  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\InPipelineComp  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -79,7 +79,7 @@ ms.lasthandoff: 09/20/2017
 |SSOTicketIssuer.resx|リソース ファイルです。|  
 |SSOTicketIssuerIcon.bmp|パイプライン コンポーネントのアイコン ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Maps  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Maps  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
 |CustomerServiceRequest_To_PendingTransactionsRequest.btm|カスタマー サービス要求を、Pending Transaction 情報を要求するメッセージに変換するマップです。|  
 |Maps.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Orchestrations\Adapter  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Orchestrations\Adapter  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -103,7 +103,7 @@ ms.lasthandoff: 09/20/2017
 |CustomerServiceReceiveSend.odx|フロント エンドとして機能するオーケストレーションのアダプタ バージョン、 **CustomerService**オーケストレーションです。|  
 |Orchestrations.Adapter.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \btssoln\orchestrations\adapter\web  
+ 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\adapter\web  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -115,7 +115,7 @@ ms.lasthandoff: 09/20/2017
 |Reference.xsd|生成されたファイルです。|  
 |Reference1.xsd|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \btssoln\orchestrations\adapter\web  
+ 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\adapter\web  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/20/2017
 |StubSAPWS.disco|生成されたファイルです。|  
 |StubSAPWS.wsdl|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Orchestrations\Inline  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Orchestrations\Inline  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -135,7 +135,7 @@ ms.lasthandoff: 09/20/2017
 |CustomerServiceReceiveSend.odx|フロント エンドとして機能するオーケストレーションのインライン バージョン、 **CustomerService**オーケストレーションです。|  
 |Orchestrations.Inline.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Orchestrations\Stub  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Orchestrations\Stub  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -143,7 +143,7 @@ ms.lasthandoff: 09/20/2017
 |CustomerServiceNativeRequestResponse.odx|フロント エンドとして機能するオーケストレーションのスタブ バージョン、 **CustomerService**オーケストレーションです。|  
 |Orchestrations.Stub.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \btssoln\orchestrations\stub\web  
+ 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\stub\web  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -155,7 +155,7 @@ ms.lasthandoff: 09/20/2017
 |StubPendTransWS.disco|生成されたファイルです。|  
 |StubPendTransWS.wsdl|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \btssoln\orchestrations\stub\web  
+ 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\stub\web  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -167,7 +167,7 @@ ms.lasthandoff: 09/20/2017
 |StubPmntTrckWS.disco|生成されたファイルです。|  
 |StubPmntTrckWS.wsdl|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \btssoln\orchestrations\stub\web  
+ 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\stub\web  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -178,7 +178,7 @@ ms.lasthandoff: 09/20/2017
 |StubSAPWS.disco|生成されたファイルです。|  
 |StubSAPWS.wsdl|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\OrchProxy\Adapter  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Adapter  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -190,7 +190,7 @@ ms.lasthandoff: 09/20/2017
 |Web.config|生成されたファイルです。|  
 |WsdlExtension.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\OrchProxy\Adapter\app_code  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Adapter\app_code  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -199,7 +199,7 @@ ms.lasthandoff: 09/20/2017
 |datatypes.cs|生成されたファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\OrchProxy\Inline  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Inline  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -211,7 +211,7 @@ ms.lasthandoff: 09/20/2017
 |Web.config|生成されたファイルです。|  
 |WsdlExtension.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\OrchProxy\Inline\app_code  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Inline\app_code  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -220,7 +220,7 @@ ms.lasthandoff: 09/20/2017
 |datatypes.cs|生成されたファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\OrchProxy\Stub  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Stub  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -232,7 +232,7 @@ ms.lasthandoff: 09/20/2017
 |Web.config|生成されたファイルです。|  
 |WsdlExtension.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\OrchProxy\Stub\app_code  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Stub\app_code  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -241,7 +241,7 @@ ms.lasthandoff: 09/20/2017
 |datatypes.cs|生成されたファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\PaymentTracker  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\PaymentTracker  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -253,7 +253,7 @@ ms.lasthandoff: 09/20/2017
 |PaymentTrackerSimulator.cs|Payment Tracker シミュレーターのサーバーの C# コードです。|  
 |runit.cmd|Payment Tracker シミュレーターを起動するコマンド ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\PaymentTrackerCall  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\PaymentTrackerCall  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -262,7 +262,7 @@ ms.lasthandoff: 09/20/2017
 |PaymentTrackerCall.csproj|C# のプロジェクト ファイルです。|  
 |PaymentTrackerCaller.cs|オーケストレーションから Payment Tracking システム インラインを呼び出す C# コードです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\PendTransCall  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\PendTransCall  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -274,7 +274,7 @@ ms.lasthandoff: 09/20/2017
 |PendTransCall.csproj|C# のプロジェクト ファイルです。|  
 |WebServiceReference.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\PmTrkPipeline  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\PmTrkPipeline  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -282,7 +282,7 @@ ms.lasthandoff: 09/20/2017
 |PaymentTrackerSendPipeline.btp|Payment Tracking システムの送信パイプラインです。|  
 |PmTrkPipeline.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\PmTrkPipelineComp  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\PmTrkPipelineComp  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -291,7 +291,7 @@ ms.lasthandoff: 09/20/2017
 |MQSeriesHeaderSetter.resx|リソース ファイルです。|  
 |PmTrkPipelineComp.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\SchemaClasses  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\SchemaClasses  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -305,7 +305,7 @@ ms.lasthandoff: 09/20/2017
 |PendingTransactionsResponse.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
 |SchemaClasses.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Schemas  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Schemas  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -319,7 +319,7 @@ ms.lasthandoff: 09/20/2017
 |PendingTransactionsResponse.xsd|Pending Transaction 応答メッセージのスキーマです。|  
 |Schemas.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Scripts  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Scripts  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -341,7 +341,7 @@ ms.lasthandoff: 09/20/2017
 |UnEnlistAll.vbs|すべてのオーケストレーションを参加解除するコマンド ファイルです。|  
 |UnEnlistStub.vbs|オーケストレーションのスタブ バージョンを展開解除するコマンド ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\ServiceLevelTracking  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\ServiceLevelTracking  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -349,7 +349,7 @@ ms.lasthandoff: 09/20/2017
 |ServiceLevelTracking.cs|サービス レベル BAM 追跡の C# ヘルパ関数です。|  
 |ServiceLevelTracking.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\SimpleClient  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\SimpleClient  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -364,7 +364,7 @@ ms.lasthandoff: 09/20/2017
 |SimpleClient.resx|リソース ファイルです。|  
 |WebServiceReferences.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\StubWebServices\PaymentTrack  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PaymentTrack  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -375,7 +375,7 @@ ms.lasthandoff: 09/20/2017
 |StubPmntTrckWS.asmx.resx|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\StubWebServices\PaymentTrack\app_code  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PaymentTrack\app_code  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -383,7 +383,7 @@ ms.lasthandoff: 09/20/2017
 |global.asax.cs|生成されたファイルです。|  
 |StubPmntTrckWS.asmx.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\StubWebServices\PendingTrans  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PendingTrans  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -394,7 +394,7 @@ ms.lasthandoff: 09/20/2017
 |StubPendTransWS.csproj.webinfo|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\StubWebServices\PendingTrans\app_code  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PendingTrans\app_code  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -402,7 +402,7 @@ ms.lasthandoff: 09/20/2017
 |global.asax.cs|生成されたファイルです。|  
 |StubPendTransWS.asmx.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\StubWebServices\SAP  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\SAP  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -413,7 +413,7 @@ ms.lasthandoff: 09/20/2017
 |StubSAPWS.asmx.resx|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\StubWebServices\SAP\app_code  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\SAP\app_code  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -421,7 +421,7 @@ ms.lasthandoff: 09/20/2017
 |global.asax.cs|生成されたファイルです。|  
 |stubsapws.asmx.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\StubWebServices\StubSAPCall  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\StubSAPCall  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -431,7 +431,7 @@ ms.lasthandoff: 09/20/2017
 |StubSAPCallHelper.cs|スタブ SAP Web サービスを呼び出すヘルパ アセンブリの C# コードです。|  
 |StubSAPWSProxy.cs|スタブ SAP Web サービスを呼び出すヘルパ アセンブリの C# コードです。|  
   
- 内のファイル\<インストール ディレクトリ > \BTSSoln\Utilities  
+ 内のファイル\<インストール ディレクトリ\>\BTSSoln\Utilities  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -440,14 +440,14 @@ ms.lasthandoff: 09/20/2017
 |ReceivePipelineHelper.cs|オーケストレーションからパイプラインを呼び出すためのヘルパ アセンブリの C# コードです。|  
 |Utilities.csproj|C# のプロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \MFAccess  
+ 内のファイル\<インストール ディレクトリ\>\MFAccess  
   
 |ファイル|Description|  
 |----------|-----------------|  
 |Microsoft.Samples.BizTalk.WoodgroveBank.MainframeAccess.sln|Visual Studio ソリューション ファイル。|  
 |SetupMFAccess.bat|ソリューションのメインフレーム アクセス コンポーネントをビルドするバッチ ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \MFAccess\HISTIComponent  
+ 内のファイル\<インストール ディレクトリ\>\MFAccess\HISTIComponent  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -456,7 +456,7 @@ ms.lasthandoff: 09/20/2017
 |MainFrameProgramVTCS2Description.txt|トランザクション インテグレータのエクスポート ファイルです。|  
 |SOHISTIUsingCOM.TLB|タイプ ライブラリです。|  
   
- 内のファイル\<インストール ディレクトリ > \MFAccess\HISTISimpleTester  
+ 内のファイル\<インストール ディレクトリ\>\MFAccess\HISTISimpleTester  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -467,7 +467,7 @@ ms.lasthandoff: 09/20/2017
 |HISTISimpleTester.csproj|C# のプロジェクト ファイルです。|  
 |Interop.SOHISTIUsingCOM.dll.reg|DLL 登録ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \MFAccess\PendingTransactions  
+ 内のファイル\<インストール ディレクトリ\>\MFAccess\PendingTransactions  
   
 |ファイル|Description|  
 |----------|-----------------|  
@@ -482,7 +482,7 @@ ms.lasthandoff: 09/20/2017
 |PendTransWS.asmx.resx|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ > \MFAccess\SchemaClasses  
+ 内のファイル\<インストール ディレクトリ\>\MFAccess\SchemaClasses  
   
 |ファイル|Description|  
 |----------|-----------------|  

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e996ea258b8f3ab1c7df2d30ed12aa0d0150b35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bd9778d6fb37058cfb70d476590b5d32fe8936e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-encrypted-mime-or-smime-messages"></a>暗号化された MIME または SMIME メッセージを受信する BizTalk Server を構成する方法
 このトピックは、構成する方法を説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]暗号化 MIME/SMIME メッセージを受信する証明書を使用します。 以下の手順は、AS2 トランスポート経由での暗号化されたメッセージの受信の構成にも適用されます。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 1.  次のように、暗号化されたメッセージを受信するためのパイプラインを作成します。  
   
     > [!NOTE]
-    >  この手順に含まれるので、AS2Receive と AS2EdiReceive パイプラインを暗号化されたメッセージを受信するため、AS2 トランスポートを構成するときは必要ありません[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]この機能を提供します。  
+    >  パイプラインとして AS2Receive と AS2EdiReceive パイプラインが BizTalk Server に含まれているこの機能を提供するために、暗号化されたメッセージを受信するための AS2 トランスポートを構成するときに、この手順は必要ではありません。  
   
     > [!NOTE]
     >  MIME/SMIME デコーダー パイプライン コンポーネントは、解読とデジタル署名の検証の両方を実行します (両方の機能を実行するように構成されている場合)。 したがって、暗号化および署名されたメッセージを受信するように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する場合は、同じ受信パイプラインを使用できます。 つまり、解読用とデジタル署名の検証用に異なるパイプラインを作成する必要はありません。  

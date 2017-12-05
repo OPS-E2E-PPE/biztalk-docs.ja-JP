@@ -12,11 +12,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41994da40d6471688193f7aca915535fcd52bfbe
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 008e6c2d775fc5d46977ca4672b6d3376349b3f0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="large-message-to-msmq"></a>MSMQ にサイズの大きいメッセージ
 MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメント 4 メガバイト (MB) よりも大きいメッセージ キュー (MSMQ とも呼ばれます) から BizTalk MSMQ アダプターを使用して送信する方法を示します、 **MQSendLargeMessage** API によって実装されていませんMQRTLarge.dll です。  
@@ -37,10 +37,10 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
  このサンプルのコンテキストでは、コードが呼び出しでは、トランザクションの種類を指定することが重要**MQSendLargeMessage**メッセージが送信キューの指定されたトランザクションのサポートと一貫性があるようにします。 この処理が行われない場合や、(このサンプルのように) 管理キューが指定されていない場合、MSMQ は何の通知もなく送信メッセージを破棄します (つまり、アプリケーションにエラー コードが返されたり、イベント ログに診断が書き込まれたりすることはありません)。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<サンプル パス > \AdaptersUsage\MSMQLarge  
+ \<パスのサンプル\>\AdaptersUsage\MSMQLarge  
   
 > [!NOTE]
->  サンプルにインストールする場合は、64 ビット バージョンの Windows および BizTalk Server を使用して、 **C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge**フォルダーです。  使用してこのドキュメントでその他の手順については、この変更に注意してください、 **C:\Program Files**フォルダーです。  
+>  サンプルにインストールする場合は、64 ビット バージョンの Windows および BizTalk Server を使用して、 **C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\SDK\Samples\AdaptersUsage\MSMQLarge**フォルダーです。  使用してこのドキュメントでその他の手順については、この変更に注意してください、 **C:\Program Files**フォルダーです。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -56,7 +56,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
 #### <a name="to-configure-biztalk-server"></a>BizTalk Server を構成するには  
   
-1.  Visual Studio で開く、 **C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln**ソリューション ファイルです。  サンプルをビルドします。  
+1.  Visual Studio で開く、 **C:\Program files \microsoft BizTalk Server\<バージョン\>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln**ソリューション ファイルです。  サンプルをビルドします。  
   
 2.  作成、 **C:\Demo** BizTalk Server が MSMQ からメッセージを配置するディレクトリ。  
   
@@ -149,7 +149,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
 #### <a name="to-create-a-large-test-file"></a>サイズの大きいテスト ファイルを作成するには  
   
-1.  Visual Studio でソリューションを開いて**C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**です。  
+1.  Visual Studio でソリューションを開いて**C:\Program files \microsoft BizTalk Server\<バージョン\>\SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**です。  
   
 2.  プロジェクトをビルドおよび実行します。  
   
@@ -163,7 +163,7 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
 #### <a name="to-run-the-sample"></a>サンプルを実行するには  
   
-1.  コマンド プロンプトを開き、ディレクトリに移動**C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**です。  
+1.  コマンド プロンプトを開き、ディレクトリに移動**C:\Program files \microsoft BizTalk Server\<バージョン\>\SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**です。  
   
 2.  コマンド プロンプトで実行して**SendLargeMessage.exe**です。 SendLargeMessage 実行可能ファイルでは 2 つの変数を使用します。1 つ目の変数は MSMQ キューの場所を示し、2 つ目の変数は送信する .xml ファイルの場所を示します。  
   
@@ -180,4 +180,4 @@ MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメ
   
 ## <a name="see-also"></a>参照  
  [BizTalk メッセージ キューの大きいメッセージ用拡張機能](../core/biztalk-message-queuing-large-message-extension.md)   
- [アダプタ サンプル – 使用状況](../core/adapter-samples-usage.md)
+ [アダプタ サンプル – 使用法](../core/adapter-samples-usage.md)

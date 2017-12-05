@@ -16,18 +16,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c23aac352b47a328cfc8f412bb3beca50a61e1c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e990c49a221653289619a33c30100accc3c68d6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mllpreceive-tool"></a>MllpReceive ツール
 MLLP 送信ポートからデータを受信するのに MllpReceive ツールを使用することができます。  
   
  使用してこのツールをインストールする、[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]カスタム インストール手順です。 BTAHL7 をインストールする標準的なインストールを実行した場合必要があります、カスタム インストールを実行し、このチュートリアルでは正常に動作する順序でテスト ツールをインストールします。 カスタム セットアップ 画面で、次のように選択します**MLLP テスト ツール**から、**アダプター**フォルダー、および選択**テスト インスタンス**から、**成果物**。フォルダーです。 詳細については、次を参照してください。[カスタム インストールを実行する](http://msdn.microsoft.com/library/e55c86e1-af63-49ba-8510-d177e1b96692)です。  
   
- BTAHL7 セットアップでこのツールをインストールする*\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\MLLP ユーティリティです。  
+ BTAHL7 セットアップでこのツールをインストールする*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータです。  
   
  このツールを使用する、[エンド ツー エンド チュートリアル](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md)、 [Interrogative チュートリアル](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md)、[バッチ処理のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md)、および[メッセージ強化チュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md). インストールした場合[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]して、既定のインストール、チュートリアルの結果をテストすることはできません MLLPTest ツール (含む MllpReceive と MllpSend) をインストールしていないとします。  
   
@@ -43,9 +43,9 @@ mllpreceive.exe [/?] [/I <IP>] [/P <PORT>] [/SPLIT] [/D <DIRECTORY>] [/STATICACK
 |構文|意味|  
 |------------|-------------|  
 |/?|このヘルプを表示します。|  
-|/I \<IP >|リッスンするアドレスを表します。 既定では使用可能なすべての ip アドレスです。|  
-|/P\<ポート >|リッスンするポート番号を表します。 既定値は、12000 です。|  
-|/D\<ディレクトリ >|内のディレクトリに受信したすべてのメッセージを格納\<ディレクトリ >。 指定しない場合\<ディレクトリ >、既定のディレクトリは %temp% です。|  
+|/I \<IP\>|リッスンするアドレスを表します。 既定では使用可能なすべての ip アドレスです。|  
+|/P\<ポート\>|リッスンするポート番号を表します。 既定値は、12000 です。|  
+|/D\<ディレクトリ\>|内のディレクトリに受信したすべてのメッセージを格納\<ディレクトリ\>です。 指定しない場合\<ディレクトリ\>既定のディレクトリは %temp% です。|  
 |/分割|区切り記号に基づいて個別のメッセージに、受信したデータを分割します。 SB と EB 必要です。 CR はオプションです。|  
 |/STATICACK|静的な受信確認は、送信者に返されます。 分割モードが適用されます。|  
 |/HL7ACK|HL7 受信確認は、送信者に返されます。 ファイル名は、HL7 ACK を含むファイルの名前を表します 分割モードが適用されます。|  

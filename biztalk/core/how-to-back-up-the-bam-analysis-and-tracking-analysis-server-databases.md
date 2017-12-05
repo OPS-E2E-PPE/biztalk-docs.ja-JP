@@ -29,18 +29,18 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e210fbe805e5a942605920e481faa2f1ca7cf2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: effa2f5787f04493713ea6972562fe768081f4bc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases"></a>BAM 分析データベースおよび Tracking Analysis Server データベースをバックアップする方法
 ビジネス アクティビティ監視 (BAM) 分析データベースおよび Tracking Analysis Server データベースには、SQL Server Analysis Services キューブの内容が格納されます。 BizTalk Server のバックアップ ジョブでは、これらのデータベースはバックアップされません。 これらのデータベースをバックアップするには、SQL Server 分析マネージャを使用する必要があります。  
   
  これらのデータベースをバックアップした後で、OLAP キューブを削除できます。 OLAP キューブを削除する場合には、次の手順も実行してください。  
   
-1.  OLAP キューブを削除する前に、BAMStarSchema データベースで、削除するキューブのファクト テーブルを切り捨てます。 テーブルの名前付け規則は"bam _*\<CubeName >*_Facts"です。  
+1.  OLAP キューブを削除する前に、BAMStarSchema データベースで、削除するキューブのファクト テーブルを切り捨てます。 テーブルの名前付け規則は"bam _*\<CubeName\>*_Facts"です。  
   
 2.  OLAP キューブを削除した後で、アクティブなキューブ、完了したキューブ、および仮想キューブを完全に処理する必要があります。  
   
@@ -67,4 +67,4 @@ ms.lasthandoff: 09/20/2017
 3.  BAMAnalysis データベースおよび BAMStarSchema メッセージ スキーマをバックアップします。  
   
 ## <a name="see-also"></a>参照  
- [バックアップと、BizTalk Server データベースの復元](../core/backing-up-and-restoring-the-biztalk-server-databases.md)
+ [BizTalk Server データベースのバックアップと復元](../core/backing-up-and-restoring-the-biztalk-server-databases.md)

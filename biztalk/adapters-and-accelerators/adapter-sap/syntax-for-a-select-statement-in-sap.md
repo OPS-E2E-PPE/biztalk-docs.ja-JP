@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 331688f3c197fcc26f157346f2f78b74496fbd30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>SAP の SELECT ステートメントの構文
 次のセクションでは、文法仕様に対する SELECT クエリを実装するための記述、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。 いくつかのケースでは、構文は、基本の TRANSACT-SQL 構文から若干異なることを確認します。  
@@ -36,15 +36,15 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
 -   **< Join_Condition >** = `[Alias_name.|table_name.]column_name <expr> [Alias_name.|table_name.]column_name`  
   
--   **\<述語 >** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
+-   **\<述語\>** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
   
  サポートされている条件と式は、次のようには。  
   
--   **\<条件 >** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
+-   **\<条件\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
   
--   **\<expr >** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
+-   **\<expr\>** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
   
- ここで **\<const >** = `integer | real | string | ? | NULL | xml_element`です。  
+ ここで **\<const\>** = `integer | real | string | ? | NULL | xml_element`です。  
   
  **オプションのキーワードの値**  
   
@@ -58,7 +58,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
     -   ときに、 **no_conversion**フィールドに、変換があるかどうかとは、定義されている終了オプションは使用されませんし、テーブル内のそれらのフィールドが .NET 文字列として公開されます。  
   
--   設定すると**batchsize\<サイズ >**、SELECT ステートメントの実行により複数の呼び出しを SAP システム的に各呼び出しでのみ行われる\<サイズ > レコードの数を取得します。 例では、指定した場合の ' 100'、SELECT クエリ batchsize が SAP システムへの各呼び出しでのみ 100 のレコードを取得します。 場合**batchsize\<サイズ >**が指定されていない、10,000 の既定値は、バッチ サイズと見なされます。 SAP システムでコンピューターと行の数の物理メモリに基づくバッチ サイズの最適な値を指定する必要があることに注意してください。 バッチ サイズの最適な値を指定するときにエラーは、メモリ不足の例外、可能性があります。  
+-   設定すると**batchsize\<サイズ\>**、SELECT ステートメントの実行により複数の呼び出しを SAP システム的に各呼び出しでのみ行われる\<サイズ\>レコードの数取得されます。 例では、指定した場合の ' 100'、SELECT クエリ batchsize が SAP システムへの各呼び出しでのみ 100 のレコードを取得します。 場合**batchsize\<サイズ\>**が指定されていない、10,000 の既定値は、バッチ サイズと見なされます。 SAP システムでコンピューターと行の数の物理メモリに基づくバッチ サイズの最適な値を指定する必要があることに注意してください。 バッチ サイズの最適な値を指定するときにエラーは、メモリ不足の例外、可能性があります。  
   
 -   設定すると**disabledatavalidation**、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] DATS、TIM、NUMC 列に存在する値を検証しませんが、代わりに文字列として公開します。  
   
@@ -280,4 +280,4 @@ Table | '['Table']'
     ```  
   
 ## <a name="see-also"></a>参照  
- [.NET Framework Data Provider for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [.NET Framework Data Provider for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

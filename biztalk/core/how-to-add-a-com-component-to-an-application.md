@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3e32e05fbc7ba9f08a7bbbd5fd546033806c3ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc2fe522d024059ce672124d48e458c869de9406
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-com-component-to-an-application"></a>COM コンポーネントをアプリケーションに追加する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して BizTalk アプリケーションに COM コンポーネントを追加する方法について説明します。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで、[[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理]、[BizTalk グループ]、[アプリケーション]、COM コンポーネントを追加するアプリケーションの順に展開します。  
+2.  コンソール ツリーで、BizTalk Server 管理コンソールを展開し、BizTalk グループを展開、アプリケーションを展開し、COM コンポーネントを追加するアプリケーションの順に展開します。  
   
 3.  右クリックし、**リソース**フォルダーを指す**追加**、順にクリック**リソース**です。  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-     **BTSTask AddResource** [**/applicationname は:***値*] **/Type:System.BizTalk:Com** [**/overwrite**] **/Source:***値*[**/Destination:***値*] [**/Options:Regsvr32OnInstall**[**/Server:***値*] [**/database:***値*]  
+     **BTSTask AddResource** [**/applicationname は:***値*] **/Type:System.BizTalk:Com** **[/overwrite]** **/Source:***値*[**/Destination:***値*] [**/Options:Regsvr32OnInstall**[**/Server:***値*] [**/database:***値*]  
   
      例:  
   
@@ -85,4 +85,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [.NET アセンブリ、証明書、およびその他のリソースの管理](../core/managing-net-assemblies-certificates-and-other-resources.md)   
  [AddResource コマンド: COM コンポーネント](../core/addresource-command-com-component.md)   
- [作成して、BizTalk アプリケーションの変更](../core/creating-and-modifying-biztalk-applications.md)
+ [BizTalk アプリケーションの作成と変更](../core/creating-and-modifying-biztalk-applications.md)

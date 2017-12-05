@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7dee6fff7de065c3663ab373f739f7fb465947c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 344b25b83060143b339a6791ecae6f3ab7028055
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="replace-public-key-token-utility"></a>公開キー トークンの置換ユーティリティ
 このユーティリティを使用すると、ファイル内の公開キー トークンまたは変数のいずれかを、厳密な名前のアセンブリ キー (.snk) ファイルから抽出した公開キー トークンに置き換えることができます。  
@@ -64,13 +64,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  コマンド プロンプトから次のコマンドを実行します。  
   
-4.  **ReplacePKT \<**  *.snk ファイル*  **>  \<**  *古い公開キー トークン*  **>  \<**  *ファイルを置き換える***>**  
+4.  **ReplacePKT \<**  *.snk ファイル*  **\> \<**  *古い公開キー トークン*  **\> \<**  *ファイルを置き換える***\>**  
   
     |オプション|Description|  
     |------------|-----------------|  
-    |**\<***.snk ファイル***>**|既存の公開キー トークンまたはプレースホルダーと置き換える公開キー トークンが含まれている .snk ファイルの完全パス。|  
-    |**\<***古い公開キー トークン***>**|置換対象の公開キー トークンまたはプレースホルダー。|  
-    |**\<***ファイルを置き換える***>**|置換対象の公開キー トークンまたはプレースホルダーが含まれているファイルの完全パス。|  
+    |**\<***.snk ファイル***\>**|既存の公開キー トークンまたはプレースホルダーと置き換える公開キー トークンが含まれている .snk ファイルの完全パス。|  
+    |**\<***古い公開キー トークン***\>**|置換対象の公開キー トークンまたはプレースホルダー。|  
+    |**\<***ファイルを置き換える***\>**|置換対象の公開キー トークンまたはプレースホルダーが含まれているファイルの完全パス。|  
   
      例:  
   
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
     ReplacePKT <filename>.snk  
     ```  
   
-     ここで\< *filename*> 公開キー トークンを取得する .snk ファイルの名前を指定します。  
+     ここで\< *filename* \>公開キー トークンを取得する .snk ファイルの名前を指定します。  
   
     ```  
     Example: ReplacePKT.bat MyToken.snk  

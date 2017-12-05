@@ -12,17 +12,17 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a91afb8542284b5c83b19886a417350aebbc0ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b68781707211922d7d29958f896608c87358c7c0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-processing-in-biztalk-server"></a>BizTalk Server での EDI の処理
 このトピックでは、EDI メッセージの受信側と送信側の処理、および EDI メッセージングの実現における取引先アグリーメントの役割について説明します。  
   
 ## <a name="trading-partner-agreements-for-edi-processing"></a>EDI 処理の取引先アグリーメント  
- 取引先アグリーメントは、[!INCLUDE[prague](../includes/prague-md.md)] における EDI のサポートで重要な役割を果たします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における EDI 処理に関連したほとんどの構成機能および管理機能は、ビジネス プロファイル間の取引先アグリーメントを構成することによって実行されます。 アグリーメントには、両方の取引先の特定のビジネス プロファイルから、共通する双方向のメッセージ処理プロパティがまとめられます。 アグリーメントは、各ビジネス プロファイルに対して定義されたプロトコル設定に基づいて作成されます。 2 つのビジネス プロファイル間に取引先アグリーメントを実装するには、メッセージを交換する各ビジネス プロファイルのプロパティを定義します。 各ビジネス プロファイルのプロパティはインターチェンジ受信者およびインターチェンジ送信者として設定します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信メッセージの処理または送信メッセージの生成を行うには、関係するアグリーメントと、メッセージに適用するスキーマを認識する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がアグリーメントを特定できない場合は、フォールバック取引先アグリーメントの TPM インターフェイスで定義されているプロパティを使用します。  
+ 取引先アグリーメントは、BizTalk Server における EDI のサポートで重要な役割を再生します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における EDI 処理に関連したほとんどの構成機能および管理機能は、ビジネス プロファイル間の取引先アグリーメントを構成することによって実行されます。 アグリーメントには、両方の取引先の特定のビジネス プロファイルから、共通する双方向のメッセージ処理プロパティがまとめられます。 アグリーメントは、各ビジネス プロファイルに対して定義されたプロトコル設定に基づいて作成されます。 2 つのビジネス プロファイル間に取引先アグリーメントを実装するには、メッセージを交換する各ビジネス プロファイルのプロパティを定義します。 各ビジネス プロファイルのプロパティはインターチェンジ受信者およびインターチェンジ送信者として設定します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信メッセージの処理または送信メッセージの生成を行うには、関係するアグリーメントと、メッセージに適用するスキーマを認識する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がアグリーメントを特定できない場合は、フォールバック取引先アグリーメントの TPM インターフェイスで定義されているプロパティを使用します。  
   
  TPM には EDIFACT プロパティ用および X12 プロパティ用の 2 つの主要なエンコード プロトコル設定のセットがあります。 これら 2 つのプロパティ セットはよく似ています。 プロトコル設定の詳細については、次を参照してください。[プロトコル設定](../core/protocol-settings.md)です。 契約の詳細については、次を参照してください。[取引先アグリーメント](../core/trading-partner-agreement.md)です。 プロトコル設定と取引先アグリーメントは、取引先管理 (TPM) ユーザー インターフェイスで設定します。 TPM の画面は、**パーティ**のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、開発者でなくても EDI 処理を構成できます。  
   
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 -   取引先アグリーメントの参照およびスキーマの決定を行います。  
   
     > [!NOTE]
-    >  以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。 そのため、受信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。 [!INCLUDE[prague](../includes/prague-md.md)] では、パーティ (取引先) は取引先アグリーメントとは異なるため、取引先アグリーメントだけが検索されます。  
+    >  以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。 そのため、受信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。 BizTalk Server で、パーティ (取引先) は、取引先アグリーメントと異なるため、受信パイプラインは検索、取引先アグリーメント具体的にはします。  
   
     > [!NOTE]
     >  メッセージが解決されるすべてのアグリーメントが無効になっている場合、メッセージは中断されます。 また、イベント ログに警告が記録されます。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
 -   取引先アグリーメントの参照およびスキーマの決定を行います。  
   
     > [!NOTE]
-    >  以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。 そのため、送信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。 [!INCLUDE[prague](../includes/prague-md.md)]パーティ (取引先) は具体的には、次のように取引先アグリーメントの取引先アグリーメントの送信パイプラインの検索とは異なりますがであるためです。  
+    >  以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、パーティの定義にアグリーメントの定義も含まれていました。 そのため、送信パイプラインがパーティのプロパティを検索する場合は、パーティの定義内でアグリーメント定義を内部的に検索してから、必要に応じてメッセージを処理します。 BizTalk Server で、パーティ (取引先) は、取引先アグリーメントと異なるため、送信パイプラインは検索、取引先アグリーメント具体的にはします。  
   
     > [!NOTE]
     >  メッセージが解決されるすべてのアグリーメントが無効になっている場合、メッセージは中断されます。  また、イベント ログに警告が記録されます。  
@@ -107,4 +107,4 @@ ms.lasthandoff: 09/20/2017
  [EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)   
  [BizTalk Server が EDI メッセージを受信する方法](../core/how-biztalk-server-receives-edi-messages.md)   
  [BizTalk Server が EDI メッセージを送信する方法](../core/how-biztalk-server-sends-edi-messages.md)   
- [開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [BizTalk Server EDI ソリューションの開発と構成](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

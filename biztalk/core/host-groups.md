@@ -18,11 +18,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d5e7782dd2e98822d6fc9e51ca08dac2d31f166
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98e3798e42442e1a6533e4f286d194c8e2474be6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="host-groups"></a>ホスト グループ
 ホスト グループは、インプロセスの BizTalk ホスト (BizTalk Server のホスト プロセス) に対するアクセスに使用するアカウントの Windows グループ (既定で BizTalk アプリケーション ユーザー グループという名前) です。 使用している環境のインプロセス ホストごとに 1 つのホスト グループを使用することをお勧めします。  
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
     -   BAM プライマリ インポート  
   
--   Bts _ のメンバーである必要があります、\<インプロセス ホスト名 > _USERS SQL Server ロール メッセージ ボックス データベースについて  
+-   Bts _ のメンバーである必要があります、\<インプロセス ホスト名\>メッセージ ボックス データベースの SQL Server ロールを (_u)  
   
 -   BAM プライマリ インポート データベースの BAM_EVENT_WRITER SQL Server ロールのメンバーである必要がある。  
   

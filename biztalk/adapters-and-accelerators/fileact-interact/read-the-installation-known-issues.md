@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f11e713d09ca8babcf7622710fd63bde9980373
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6641e7974a0e1872b71794af6553d708e9619dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-the-installation-known-issues"></a>既知の問題のインストールします。
 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]既知の問題は、次のセクションに表示されます。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
  キューとのセッションが開いていて、メッセージがプッシュされるされなかった場合は、対話または FileAct ストア アンド フォワード (SnF) モードを使用している、SNLreceiver.exe を再起動する必要があります。 これは、ときどき発生する可能性が SWIFT の問題を回避できます。  
   
 ## <a name="you-must-use-cdata-when-passing-characters-like--and--in-message"></a>などの文字を渡すときに使用する CDATA 必要があります"<"と"&"は、メッセージに  
- という用語は、CDATA、XML パーサーで解析してはなりませんテキスト データに関するします。  などの文字"<"と"&"の XML 要素では無効です。 "<"、パーサーは、新しい要素の開始として解釈するために、エラーが発生します。 "&"、パーサーは文字エンティティの開始として解釈するために、エラーが発生します。 CDATA セクション内のすべてのものは、パーサーによって無視されます。 CDATA セクションの開始"\<! [CDATA ["で終わると"] >"  
+ という用語は、CDATA、XML パーサーで解析してはなりませんテキスト データに関するします。  などの文字"<"と"&"の XML 要素では無効です。 "<"、パーサーは、新しい要素の開始として解釈するために、エラーが発生します。 "&"、パーサーは文字エンティティの開始として解釈するために、エラーが発生します。 CDATA セクション内のすべてのものは、パーサーによって無視されます。 CDATA セクションの開始"\<! [CDATA ["で終わると"]\>"  
   
 ## <a name="you-must-use-passthrough-pipelines-with-payload-only-mode"></a>ペイロードのみのモードでパススルー パイプラインを使用する必要があります。  
  InterAct アダプターのペイロードのみのモードを使用している場合、両方の送信パススルー パイプラインを使用して、カスタム パイプラインを使用していない場合、受信ポートください。  

@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9763e55c44fc3ea45ab93127ffae8c9c742f0dc9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e44d3a100cdaefe04cf9d3aedfa8cf969811fc5e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="introduction-to-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit の概要
 アーキテクチャと Microsoft の内容について説明します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 サービスを有効にする柔軟なセキュリティで保護された、エンタープライズ アプリケーションを開発する Enterprise Service Bus (ESB) アーキテクチャ パターンを適用する方法および再利用可能なサービスと新しいエンド ツー エンドに既存のサービスの迅速な組織にも、ドキュメントを示していますビジネス プロセス。  
@@ -33,21 +33,24 @@ ms.lasthandoff: 09/20/2017
   
  **Enterprise Service Bus アーキテクチャで提供される接続の概要を示したもの**  
 
-\<!---古いリンクを含む古いテキスト
-## <a name="the-industry-view-of-esb"></a>ESB の業界ビュー  
- ESB デザイン、アーキテクチャ、インフラストラクチャ、および実装に関する情報の多くのソースが業界サプライヤー、システム インテグレーターと独立したソースから入手できます。  
+<!---  Old text with old links
+## The Industry View of ESB  
+ There are many sources of information about ESB design, architecture, infrastructure, and implementation available from industry suppliers, system integrators, and independent sources.  
 -->
-\<!---    
- IBM システムとしての ESB の定義を".. .enables 包括的な柔軟なのでを使用して、一貫した方法でも統合されているアプリケーションの複雑さを削減しながら統合にするのには business です。 性質の複雑でさまざまなビジネス ニーズ、ESB はメッセージ指向を統一する evolutional 進行、イベント ドリブンおよびサービス指向アプリケーションとサービスを統合するための方法です。" IBM と利点を説明する".. の数、サイズ、および統合インターフェイスの複雑さを減らすことができますので、アプリケーション ロジックと統合タスクを分離することで IT 資産 .greater を再利用"と、権限を許可する".. 最小限に抑えて .add または変更のサービス既存の IT 環境の中断コストとビジネスの変化に伴うリスクを軽減し、新しいビジネス チャンスが発生する。" 詳細については、次を参照してください。 [WebSphere ソフトウェア](http://go.microsoft.com/fwlink/p/?LinkId=185958)([http://go.microsoft.com/fwlink/p/?LinkId=185958](http://go.microsoft.com/fwlink/p/?LinkId=185958))、IBM の Web サイトにします。  
+<!---    
+ IBM defines ESB as a system that "...enables a business to make use of a comprehensive, flexible, and consistent approach to integration while also reducing the complexity of the applications being integrated. Due to the complex and varying nature of business needs, ESB is an evolutional progression that unifies message oriented, event driven and service oriented approaches for integrating applications and service." IBM describes the advantages as "...greater reuse of IT assets by separating application logics and integration tasks, so you can reduce the number, size, and complexity of integration interfaces," and the ability to "...add or change services with minimal interruption to existing IT environment; reduce cost and risk involved as business changes and new opportunities arise." For more information, see [WebSphere software](http://go.microsoft.com/fwlink/p/?LinkId=185958)([http://go.microsoft.com/fwlink/p/?LinkId=185958](http://go.microsoft.com/fwlink/p/?LinkId=185958))on the IBM Web site.  
 -->
-\<!---Sonic ソリューションに提供される、ESB の包括的な検査 IT 原則の側面について説明するリンクが以前に古いテキストとビジネスの利点があります。 ESB の要件について説明します"新旧を統合するサービス指向アーキテクチャ (SOA) 必要がありますが接続できる、IT リソース、どのようなインフラストラクチャのテクノロジまたは展開されている任意の場所。"。 詳細については、次を参照してください。 [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185959)([http://go.microsoft.com/fwlink/p/?LinkId=185959](http://go.microsoft.com/fwlink/p/?LinkId=185959)) Sonic ソリューションの Web サイトにします。  
+<!---    Old text with old links
+ Sonic Solutions provide a comprehensive examination of ESB, discussing the principle aspects, and the IT and business benefits. They describe the requirement for ESB: "To integrate old and new, service-oriented architecture (SOA) needs an infrastructure that can connect any IT resource, whatever its technology or wherever it is deployed." For more information, see [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185959)([http://go.microsoft.com/fwlink/p/?LinkId=185959](http://go.microsoft.com/fwlink/p/?LinkId=185959)) on the Sonic Solutions Web site.  
 -->
-\<!---古いリンク TIBCO ソフトウェアと共に古いテキストを定義として ESB".. をするために複数の通信プロトコルに [] サービスの展開を簡略化するサービスを有効にするサービス指向アーキテクチャ (SOA) で .a 標準ベースの通信レイヤーと管理、異機種混在環境でサービスを再利用を昇格します"。 Esb、これらの機能を提供するため、提案、".. 共にオープン標準と Web サービスを検出して発行 UDDI ベース レジストリなど、独自のテクノロジー .support services、Java Message Service (JMS) およびその他の広く導入されています。メッセージング プロトコル、標準に準拠した (XML) 変換、および基本的なメッセージをルーティングします。" 詳細については、次を参照してください。 [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185960)([http://go.microsoft.com/fwlink/?LinkId=185960](http://go.microsoft.com/fwlink/p/?LinkId=185960)) TIBCO Web サイトです。  
+<!---    Old text with old links
+ TIBCO Software define ESB as "...a standards-based communication layer in a service- oriented architecture (SOA) that enables services to be used across multiple communication protocols [to] simplify service deployment and management, and promote service reuse in a heterogeneous environment." They suggest, in order to provide these capabilities, ESBs "...support both open standards and proprietary technologies, including Web services and UDDI-based registries to discover and publish services, Java Message Service (JMS) and other widely deployed messaging protocols, standards-based (XML) transformations, and basic message routing." For more information, see [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185960)([http://go.microsoft.com/fwlink/?LinkId=185960](http://go.microsoft.com/fwlink/p/?LinkId=185960)) on the TIBCO Web site.  
 -->
-\<!---、著書 Enterprise Service Bus の説明にリンクが以前に古いテキスト作成者 David chappell 氏ことを示す"ではなくより従来のエンタープライズ アプリケーション統合製品のハブ アンド スポーク アーキテクチャに準拠して、ESB は、高分散方法の統合。" 追加".. 個々 の部門または事業単位を作成できるようにする過ぎた固有の機能が同時に接続する独自のローカル管理と、自律的なを維持する、増分、という事実のチャンクで、統合プロジェクトの出力ごと統合プロジェクトより大きいより多くのグローバル統合ファブリック、またはグリッドです。" 詳細については、David chappell 氏によって Enterprise Service Bus を参照してください。  
+<!---    Old text with old links
+ In the description of his book, Enterprise Service Bus, author David Chappell states that "Rather than conform to the hub-and-spoke architecture of traditional enterprise application integration products, ESB provides a highly distributed approach to integration." He adds "...with unique capabilities that allow individual departments or business units to build out their integration projects in incremental, digestible chunks, maintaining their own local control and autonomy, while still being able to connect together each integration project into a larger, more global integration fabric, or grid." For more information, see Enterprise Service Bus by David Chappell:  
 -->
-\<!---古いリンクを含む古いテキスト
--   Chappell、David です。 Enterprise Service Bus。 ◆、CA: o ' reilly のメディア, inc.2004.  
+<!---    Old text with old links
+-   Chappell, David. Enterprise Service Bus. Sebastopol, CA: O'Reilly Media, Inc. 2004.  
 -->
 
   
@@ -62,18 +65,18 @@ ms.lasthandoff: 09/20/2017
   
  このドキュメントには、次のトピックのセクションも含まれます。  
   
--   [BizTalk ESB Toolkit の概要](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
+-   [BizTalk ESB Toolkit の作業の開始](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
   
--   [主要なシナリオおよび開発タスク](../esb-toolkit/key-scenarios-and-development-tasks.md)  
+-   [主要なシナリオと開発タスク](../esb-toolkit/key-scenarios-and-development-tasks.md)  
   
--   [Itinerary Designer を使用して日程を作成します。](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
+-   [Itinerary Designer を利用してスケジュールを作成する](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
   
--   [BizTalk ESB Toolkit のサンプル アプリケーション](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
+-   [BizTalk ESB Toolkit サンプル アプリケーション](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
   
--   [変更して、BizTalk ESB Toolkit の拡張](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
+-   [BizTalk ESB Toolkit を変更し、拡張する](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
   
--   [BizTalk ESB Toolkit を使用した管理](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
+-   [BizTalk ESB Toolkit による管理](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
   
--   [SOA ガバナンスの統合](../esb-toolkit/soa-governance-integration.md)  
+-   [SOA ガバナンス統合](../esb-toolkit/soa-governance-integration.md)  
   
 -   [トラブルシューティング](../esb-toolkit/troubleshooting-the-biztalk-esb-toolkit.md)

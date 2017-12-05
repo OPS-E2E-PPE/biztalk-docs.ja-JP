@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc154ed37569238b4a41940df0310ec9066e975f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad124e7ce9fdf8c3dac6a1ac0ffda122127becb9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sql-adapter"></a>SQL アダプタを使用して WCF チャネル モデルの概要
 操作の呼び出しに、[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]コードが WCF クライアントとして機能し、アダプターに送信操作を送信します。 WCF チャネル モデルでは、コードは、チャネル経由で要求メッセージを送信することによって、アダプターでの操作を呼び出します。  
@@ -44,11 +44,11 @@ ms.lasthandoff: 09/20/2017
   
  任意の WCF バインドと同様に、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]ファクトリ パターンを使用してアプリケーション コードへのチャネルを提供します。 使用する、 **Microsoft.Adapters.SQLBinding**オブジェクトのインスタンスを作成します。  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >**を提供する**IRequestChannel**チャネル アダプターの要求-応答操作の呼び出しに使用することができます。  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>** を提供する**IRequestChannel**チャネル アダプターの要求-応答操作の呼び出しに使用することができます。  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >**を提供する**IOutputChannel**チャネル アダプターの一方向の操作の呼び出しに使用することができます。  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>** を提供する**IOutputChannel**チャネル アダプターの一方向の操作の呼び出しに使用することができます。  
   
--   **System.ServiceModel.IChannelListener\<IInputChannel >**を提供する**IInputChannel**などの受信操作は、メッセージの受信に使用できるチャネル**のポーリング**または**通知**、アダプターからです。  
+-   **System.ServiceModel.IChannelListener\<IInputChannel\>** を提供する**IInputChannel**などの受信操作は、メッセージの受信に使用できるチャネル**ポーリング**または**通知**、アダプターからです。  
   
 ### <a name="creating-messages-for-the-sql-server-database-adapter-in-the-wcf-channel-model"></a>WCF チャネル モデルでは、SQL Server データベース アダプターのメッセージを作成します。  
  WCF では、 **System.ServiceModel.Channels.Message**クラスは、メモリに SOAP メッセージの表現。 作成する、**メッセージ**、静的なを呼び出すことによってインスタンス**Message.Create**メソッドです。  
@@ -82,4 +82,4 @@ Message messageIn = Message.CreateMessage(MessageVersion.Default,
 >  メッセージのアクションを指定する必要があります、**メッセージ**インスタンス。 通常、これを行うときに、**メッセージ**インスタンスを作成します。  
   
 ## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+[WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

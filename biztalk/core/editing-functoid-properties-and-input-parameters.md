@@ -12,16 +12,16 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f7839807244ecebadeb93640703886c12ce646a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3d87396713b7fa8f7874b921e6ee9097399d1c6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="editing-functoid-properties-and-input-parameters"></a>Functoid のプロパティおよび入力パラメーターの編集
 Functoid のプロパティは、次のように分類できます。  
   
--   **ラベル**と**入力パラメーター**です。 : これら 2 つのプロパティは、読み取り/書き込みが可能で、すべての Functoid で使用できます。 **ラベル**プロパティは、functoid は、マップの維持に役立つ場合がありますの特定のインスタンスのわかりやすい名前を指定するためのメカニズムを提供します。 **入力パラメーター**プロパティへのアクセスを提供する、**構成\<Functoid > Functoid**  ダイアログ ボックスは、functoid の構成で中心的な役割を果たします。  
+-   **ラベル**と**入力パラメーター**です。 : これら 2 つのプロパティは、読み取り/書き込みが可能で、すべての Functoid で使用できます。 **ラベル**プロパティは、functoid は、マップの維持に役立つ場合がありますの特定のインスタンスのわかりやすい名前を指定するためのメカニズムを提供します。 **入力パラメーター**プロパティへのアクセスを提供する、**構成\<Functoid\> Functoid**  ダイアログ ボックスは、functoid の構成で中心的な役割を果たします。  
   
 -   **スクリプト**と**テーブル ループ グリッド**です。 これら 2 つのプロパティのみに適用されるダイアログ ボックスへのアクセスを提供する、**スクリプト**と**テーブル ループ**functoid、それぞれします。 これらのダイアログ ボックスは、**スクリプト Functoid の構成** ダイアログ ボックスおよび**テーブル ループ Functoid**  ダイアログ ボックス。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3afe5ac97ba8b794e2c13f552f00cd3ba2b38572
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a7123d908f25e6575eaaba4f9a92608f17c88be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a>チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理
 このチュートリアルでは、WCF-NetTcp アダプターを使用して、[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] クライアントから BizTalk 受信場所に、バイナリ JPEG イメージ データが埋め込まれた [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージを送信します。 による、XPath ステートメント (Base64 ノード エンコード) を使用して、バイナリでエンコードされた JPEG イメージが抽出されます、**受信メッセージ本文**アダプターの構成で設定します。 XPath 処理は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信メッセージの処理に使用される既定の方法とは異なります。 アダプターがの内容全体を取得する既定の方法で、**本文**の要素、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ、および BizTalk メッセージ ボックス データベースに送信します。 XPath メッセージ処理では、受信 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージの特定の部分が抽出されてカスタム BizTalk メッセージが作成されます。 このサンプルでは、XPath 処理がという名前の XML 要素を検索し**SendPicture**では、着信[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ (XML 形式で)。 この要素が検出されると、Base64 エンコードされたバイナリ オブジェクトとしての要素の値が抽出され、そのバイナリ値が BizTalk メッセージに配置されます。 このメッセージはメッセージ ボックス データベースに発行された後、送信ポート フィルター サブスクリプションを使用して FILE 送信ポートに出力されます。 このサンプルでオーケストレーションは使用されず、すべての処理は XPath を使用して BizTalk メッセージング経由で行われます。  
@@ -35,11 +35,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>前提条件  
  このサンプルでは、手順を実行するには、環境に次の前提条件がインストールされることを確認してください。  
   
--   サンプルを実行するコンピューターと、アセンブリをビルドおよび展開プロセスを実行するコンピューターの両方の必要な Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]、および Microsoft[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   サンプルを実行するコンピューターと、アセンブリをビルドおよび展開プロセスを実行するコンピューターの両方の必要な Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]、および Microsoft BizTalk Server です。  
   
--   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)] が必要です。  
+-   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft Visual Studio が必要です。  
   
--   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のセットアップ時にインストールするオプションです。  
+-   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft BizTalk Server のセットアップ時にインストールするオプションです。  
   
 -   管理タスクの実行に使用するコンピューターで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソール内の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション設定を構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーであるユーザー アカウントとして実行する必要があります。 また、アプリケーションの展開、ホスト インスタンスの管理、およびその他の必要なタスクを実行するには、このユーザー アカウントはローカル管理者グループのメンバーである必要もあります。  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  **セキュリティ** タブで、設定、**セキュリティ モード**に**なし。**  
   
-    5.  **メッセージ**] タブで、[、**パス**オプションを**受信 BizTalk メッセージ本文**、入力と`/*[local-name()="SendPicture" and namespace-uri()='http://tempuri.org/']/*[local-name()="stream"]`ボディ パス式のです。 選択**Base64**として、**ノード エンコード**です。 **パス**オプションが値に設定されているための本文、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信は、次の形式で:   **\<SendPicture xmlns ="http://tempuri.org/">\<ストリーム >*でエンコードされたバイナリの画像データを実際の base 64*\<ストリーム/>\</SendPicture > * *  
+    5.  **メッセージ**] タブで、[、**パス**オプションを**受信 BizTalk メッセージ本文**、入力と`/*[local-name()="SendPicture" and namespace-uri()='http://tempuri.org/']/*[local-name()="stream"]`ボディ パス式のです。 選択**Base64**として、**ノード エンコード**です。 **パス**オプションが値に設定されているための本文、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信は、次の形式で:   **\<SendPicture xmlns ="http://tempuri.org/"\>\<ストリーム\>*でエンコードされたバイナリの画像データを実際の base 64*\<ストリーム/\>\</SendPicture\>**  
   
     6.  **受信場所のプロパティ**ダイアログ ボックスで、をクリックして**OK**です。  
   

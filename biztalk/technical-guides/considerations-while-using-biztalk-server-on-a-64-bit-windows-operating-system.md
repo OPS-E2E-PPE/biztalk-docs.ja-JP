@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71287d29d13406d3f1159054e988ef0e2b98a648
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4c6ac3b8a3104e1c96b2dc9ebd880489d3c9833
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="considerations-while-using-biztalk-server-on-a-64-bit-windows-operating-system"></a>64 ビット Windows オペレーティング システムで BizTalk Server を使用するときの考慮事項
-使用する場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット Windows オペレーティング システムでは、このトピックで説明されている問題を考慮することを確認します。 よくある質問 Microsoft の 64 ビット サポートに関連する[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を参照してください[BizTalk Server の 64年ビット サポート](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。  
+使用する場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット Windows オペレーティング システムでは、このトピックで説明されている問題を考慮することを確認します。 よく寄せられる質問については、Microsoft BizTalk Server の 64 ビット サポートに関連する、次を参照してください。 [BizTalk Server の 64 ビット サポート](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。  
   
 ## <a name="modify-the-process-memory-usage-throttling-threshold"></a>プロセスのメモリ使用量が制限のしきい値を変更します。  
  既定では、**プロセス メモリの使用状況**ホスト制限のしきい値は 25 に設定します。 この値を超えた場合、BizTalk プロセスのメモリ使用量は 300 MB よりも制限の条件が発生します。 64 ビット サーバー上には、100 にこの値を大きくことができます。 これにより、多くのメモリ消費量、BizTalk プロセスで調整が行われる前にします。 プロセス メモリ使用量ホスト制限のしきい値を変更する方法の手順については、次を参照してください。[ホストの制限の既定の設定を変更する方法](http://go.microsoft.com/fwlink/?LinkId=157210)(http://go.microsoft.com/fwlink/?LinkId=157210)。  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
  32 ビット ホスト インスタンスでこれらのアダプターを実行することを確認してください。  
   
 ## <a name="configure-the-mimesmime-encoder-to-run-in-32-bit-mode"></a>32 ビット モードで実行する、MIME/SMIME エンコーダーを構成します。  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、MIME/SMIME エンコーダー パイプライン コンポーネントがなくなるがいないネイティブの 64 ビット サポートをしています。 つまり、このコンポーネントは、32 ビットのエミュレーション モード プロセス (WOW64) で実行する必要があります。 このため、このエンコーダー コンポーネント (または、元の送信パイプライン) を実行するホスト インスタンスは、32 ビットのエミュレーション モードで実行する必要があります。 このホスト インスタンスで BizTalk の他の要素を実行する場合、64 ビット サポートがないという制約がパフォーマンスなどに影響を与えることに注意してください。
+ BizTalk Server で、MIME/SMIME エンコーダー パイプライン コンポーネントがなくなるあるネイティブの 64 ビット サポート つまり、このコンポーネントは、32 ビットのエミュレーション モード プロセス (WOW64) で実行する必要があります。 このため、このエンコーダー コンポーネント (または、元の送信パイプライン) を実行するホスト インスタンスは、32 ビットのエミュレーション モードで実行する必要があります。 このホスト インスタンスで BizTalk の他の要素を実行する場合、64 ビット サポートがないという制約がパフォーマンスなどに影響を与えることに注意してください。

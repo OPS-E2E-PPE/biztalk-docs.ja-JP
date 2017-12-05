@@ -12,17 +12,17 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24d1528d5c35c15e777ce1540d42ea4b7066cea2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e464fc26e5a98edd8ee99dad159d5faa068998aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hipaa-document-schema-version-5010"></a>HIPAA ドキュメント スキーマ バージョン 5010
-言語設定が部門の保健福祉 (HHS) は、バージョン 5010 の現在の HIPAA バージョン 4010A1 に置換される 2009 年 1 月 16 日の最終規則を発表しました。 HIPAA 標準バージョン 5010 では、構造、序文、技術、およびデータ コンテンツの面で改良が加えられています。 その結果、データのあいまいさが減少し除去されています。また、それまでは満たされていなかったビジネス ニーズのいくつかについても満たされるようになっています。 [!INCLUDE[prague](../includes/prague-md.md)]HIPAA バージョン 5010 のサポートを提供します。  
+言語設定が部門の保健福祉 (HHS) は、バージョン 5010 の現在の HIPAA バージョン 4010A1 に置換される 2009 年 1 月 16 日の最終規則を発表しました。 HIPAA 標準バージョン 5010 では、構造、序文、技術、およびデータ コンテンツの面で改良が加えられています。 その結果、データのあいまいさが減少し除去されています。また、それまでは満たされていなかったビジネス ニーズのいくつかについても満たされるようになっています。 BizTalk Server では、HIPAA バージョン 5010 のサポートを提供します。  
   
 > [!NOTE]
->  [!INCLUDE[prague](../includes/prague-md.md)] は引き続き、HIPAA バージョン 4010A1 もサポートします。  
+>  BizTalk Server は、HIPAA バージョン 4010A1 をサポートするためには続行されます。  
   
 ## <a name="hipaa-5010-version-support"></a>HIPAA 5010 バージョンのサポート  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、HIPAA 5010 をサポートするために以下の点が変更されています。  
@@ -49,9 +49,9 @@ ms.lasthandoff: 09/20/2017
   
 -   **Icd-10 のサポート**: 電子トランザクション コード セットが医療保健データの転送を行うために使用します。 バージョン 5010 では、ICD-10 (International Classification of Diseases) コード セットを使用できるようになっています (バージョン 4010A1 ではサポートされていませんでした)。 ICD-10 は、医療費請求、関連トランザクション、および治療報告においてさまざまな診断および処置を表すのに使用されます。 ICD-10 を使用すると、患者サービス、診断、治療のデータの正確さが向上します。また、品質データのより包括的な報告が可能になります。  
   
--   **5010 997 の新しいフィールド**:、997 機能確認スキーマ標準の-、-、 [!INCLUDE[prague](../includes/prague-md.md)] 3 つの任意フィールド AK103、AK203、および AK41.3 つまりが導入されています。 EDI エンジンは、受信した 5010 997 メッセージにこれらのフィールドが含まれていても処理できますが、送信される 997 確認を新しいスキーマに基づいて生成する機能はありません。  
+-   **5010 997 の新しいフィールド**:、997 機能確認のスキーマでの-すぐ BizTalk Server によって次の 3 つの任意フィールド AK103、AK203、および AK41.3 つまりが導入されています。 EDI エンジンは、受信した 5010 997 メッセージにこれらのフィールドが含まれていても処理できますが、送信される 997 確認を新しいスキーマに基づいて生成する機能はありません。  
   
- HIPAA 4010A1 のスキーマには、X12_R データ型の要素を最小長/最大長と比較する検査が行われないという既知の問題がありました。 [!INCLUDE[prague](../includes/prague-md.md)] では、この問題は修正されており、HIPAA 5010 スキーマでは X12_R データ型の要素の最小長/最大長の検査が行われます。  
+ HIPAA 4010A1 のスキーマには、X12_R データ型の要素を最小長/最大長と比較する検査が行われないという既知の問題がありました。 BizTalk Server でこの問題を解決して、HIPAA 5010 スキーマは、X12_R データ型の最小値と最大の長さの要素を検証します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server での HIPAA サポート](../core/hipaa-support-in-biztalk-server.md)   

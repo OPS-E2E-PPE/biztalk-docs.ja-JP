@@ -12,17 +12,17 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b529a0510ee56a92d3957a84a91d635666016f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b35585d4e3b3ed90df983c8a18f6833ce8aa6bf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-tasks-for-administrators"></a>管理者の BAM タスク
 このトピックでは、BAM インフラストラクチャを管理する際に BAM 管理者が実行する一般的なタスクについて説明します。  
   
 ## <a name="configuring-bam"></a>BAM の構成  
- BAM の初期構成は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成ウィザードを使用して行います。 この構成ウィザードを使用すると、管理者は次の操作を実行できます。  
+ BAM の初期構成を行う BizTalk Server 構成ウィザードを使用します。 この構成ウィザードを使用すると、管理者は次の操作を実行できます。  
   
 -   ビジネス アクティビティの監視ツールを有効にする  
   
@@ -52,25 +52,28 @@ ms.lasthandoff: 09/20/2017
   
  この構成ウィザードの使用に関する詳細については、次のトピックを参照してください。  
   
--   [BizTalk Server 構成を使用して BAM 警告の構成](http://msdn.microsoft.com/library/04d79f8c-9e7f-4ba8-83ce-f79c33fb8e60)  
+-   [BAM 警告を構成します。](../install-and-config-guides/configure-biztalk-server.md)  
   
--   [BizTalk Server 構成を使用して BAM ツールを構成します。](http://msdn.microsoft.com/library/075a1627-5bc2-488c-a88c-42c86cc8c3bb)  
+-   [BAM ツールを構成します。](../install-and-config-guides/configure-biztalk-server.md)  
   
--   [BizTalk Server 構成を使用して BAM ポータルを構成します。](http://msdn.microsoft.com/library/8af7cccb-823e-48bd-9743-dfbba4bafa11)  
+-   [BAM ポータルを構成します。](../install-and-config-guides/configure-biztalk-server.md)  
   
-### <a name="distributed-notification-services"></a>分散された Notification Services  
- BAM が分散環境で実行されるように構成すると、警告や通知を処理するときにパフォーマンスが向上します。 このような BAM 構成では、Notification Services のプロバイダー、ジェネレーター、ディストリビューターの各ロールを異なるコンピューターに配置するため、Notification Services を複数のコンピューター環境にインストールする必要があります。  
+### <a name="distributed-notification-services---sql-server-2008-r2-only"></a>分散された Notification Services の SQL Server 2008 R2 のみ
+BAM が分散環境で実行されるように構成すると、警告や通知を処理するときにパフォーマンスが向上します。 このような BAM 構成では、Notification Services のプロバイダー、ジェネレーター、ディストリビューターの各ロールを異なるコンピューターに配置するため、Notification Services を複数のコンピューター環境にインストールする必要があります。  
+
+> [!NOTE]
+> SQL Server 2012 以降では、BizTalk Server は、SQL データベース メールを使用します。 SQL Server 2012 を使用している場合、またはそれ以降にこれは適用されません。 参照してください[BAM 警告](../install-and-config-guides/prepare-your-computer-for-installation.md#BKMK_BAMAlerts)のガイダンスについてはします。
   
 ##### <a name="to-configure-distributed-notification-services"></a>分散された Notification Services を構成するには  
   
-1.  [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] Notification Services をインストールします。 分散された Notification Services の詳細については、次を参照してください。、 [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] Notification Services のマニュアル[http://go.microsoft.com/fwlink/?LinkId=68095](http://go.microsoft.com/fwlink/?LinkId=68095)です。  
+1.  SQL Server Notification Services をインストールします。 
   
     > [!NOTE]
-    >  Notification Services は含まれていない[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]です。 使用している場合[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]、インストール[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Notification Services をインストールするときに[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を選択して、 **SQL Notification Services 用 BAM 警告プロバイダー**オプションで **追加ソフトウェア**上、**コンポーネントのインストール**インストール ウィザードのページです。  
+    >  SQL server notification Services が含まれていません。 SQL Server Notification Services のインストールを選択して BizTalk Server をインストールするときに、 **SQL Notification Services 用 BAM 警告プロバイダー**オプションで **追加のソフトウェア**上、 **コンポーネントのインストール**インストール ウィザードのページです。  
   
-2.  BAM 通知を作成する、C:\Program files \microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol の実行の分散環境では、各コンピューター上のサービス名の登録 - bamalerts-サーバー\<サーバー名 > - サービス -serviceusername\<警告ユーザー アカウント >-servicepassword \<passwd > コマンド プロンプトからです。  
+2.  BAM 通知を作成する、C:\Program files \microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol の実行の分散環境では、各コンピューター上のサービス名の登録 - bamalerts-サーバー\<サーバー名\>-サービス - serviceusername\<警告ユーザー アカウント\>-servicepassword \<passwd\>コマンド プロンプトからです。  
   
-3.  各コンピューターで、分散された Notifications Services 用に構成されている BAM インフラストラクチャ構成ファイルを編集します。 構成ファイルを取得するを使用して、 **bm.exe get config ファイル名:\<出力ファイル >**コマンド。  
+3.  各コンピューターで、分散された Notifications Services 用に構成されている BAM インフラストラクチャ構成ファイルを編集します。 構成ファイルを取得するを使用して、 **bm.exe get config ファイル名:\<出力ファイル\>**コマンド。  
   
 4.  構成ファイルを編集し、分散された Notification Services 環境でサーバーを参照します。  
   
@@ -80,11 +83,11 @@ ms.lasthandoff: 09/20/2017
     <Property Name="DistributorServerName">PFIDWYUK</Property>  
     ```  
   
-5.  Bm.exe の更新プログラムの構成を使用するファイル名:\<構成ファイル > BAM 構成を更新します。  
+5.  Bm.exe の更新プログラムの構成を使用するファイル名:\<config ファイル\>BAM 構成を更新します。  
   
 6.  分散環境のすべてのコンピューターで、Notification Services を再起動します。  
   
- 複数コンピューター環境で BAM をインストールする方法の詳細については、次を参照してください[関連するインストール ガイドを BizTalk Server 2013](http://go.microsoft.com/fwlink/p/?LinkID=269582)と[のインストールと構成での BAM (ビジネス アクティビティ監視) 複数のコンピューター。環境](http://go.microsoft.com/fwlink/p/?LinkID=208597)です。  
+ 複数コンピューター環境で BAM をインストールする方法の詳細については、次を参照してください。 [BAM インストールおよび構成 (ビジネス アクティビティ監視)、複数コンピューター環境で](http://go.microsoft.com/fwlink/p/?LinkID=208597)です。  
   
 ### <a name="moving-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースの移動  
  ハードウェアのアップグレードやスケールアップを行うときなど、ある時点で BAM プライマリ インポート データベースの移動が必要になる場合があります。 データベースを移動するには、バックアップ操作と復元操作を実行します。 このプロセスの詳細については、次を参照してください。[をバックアップおよび復元する BAM](../core/backing-up-and-restoring-bam.md)です。  
@@ -105,9 +108,9 @@ ms.lasthandoff: 09/20/2017
  BAM 管理ユーティリティで使用可能なすべてのコマンドの説明は、次を参照してください。 [BAM 管理ユーティリティ](../core/bam-management-utility.md)です。 BAM 管理ユーティリティを使用した BAM 定義の操作の例については、次を参照してください。 [BAM 動的インフラストラクチャを管理する](../core/managing-the-bam-dynamic-infrastructure.md)です。  
   
 ## <a name="configuring-multiple-biztalk-groups-to-reference-a-single-bam-database"></a>1 つの BAM データベースを参照する複数の BizTalk グループの構成  
- 新しいまたは既存のいずれかを使用する BAM を構成するときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ、既に別の使用されている同じ BAM データベースを使用するグループを構成することができます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。  この方法で BAM を構成するには、次のタスクを行う必要があります。  
+ 新しいまたは既存の BizTalk Server グループを使用する BAM を構成するときに、既に別の BizTalk Server グループで使用されている同じ BAM データベースを使用するグループを構成できます。  この方法で BAM を構成するには、次のタスクを行う必要があります。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成ウィザードを使用して、既存の BAM プライマリ インポート データベースから構成情報を取得します。 構成情報には、サーバー名とデータベース名が含まれます。 チェック ボックスの状態に注意してください。 [BAM ツール] ページと [BAM 警告] ページの両方の構成情報を取得するようにしてください。  
+-   BizTalk Server 構成ウィザードを使用して既存の BAM プライマリ インポート データベースから構成情報を取得します。 構成情報には、サーバー名とデータベース名が含まれます。 チェック ボックスの状態に注意してください。 [BAM ツール] ページと [BAM 警告] ページの両方の構成情報を取得するようにしてください。  
   
 -   新しいグループに BAM を構成し、対象のプライマリ インポート テーブル (PIT) 用に構成されている情報を正確に入力します。 新しいグループの構成情報を入力するときに、既存のグループから収集されたすべての情報を使用して、新しいグループを構成します。ただし、BAM 警告ユーザーについては空白のままにする必要があります。  
   
@@ -127,10 +130,10 @@ ms.lasthandoff: 09/20/2017
   
 -   新しいサーバーから、次の BAM マネージャー コマンドを実行します。  
   
-     **bm.exe 更新 livedataworkbook-名前:\<update.xls をライブ データ ブック >**  
+     **bm.exe 更新 livedataworkbook-名前:\<update.xls livedata ブック\>**  
   
     > [!NOTE]
-    >  新しいサーバー名および BAM プライマリ インポート データベース名を指定することもできます: **bm.exe 更新 livedataworkbook-名前:\<update.xls をライブ データ ブック > [-サーバー:\<サーバー >] [-データベース:\<データベース >]**  
+    >  新しいサーバー名および BAM プライマリ インポート データベース名を指定することもできます: **bm.exe 更新 livedataworkbook-名前:\<update.xls livedata ブック\>[-サーバー:\<サーバー\>] [-データベース:\<データベース\>]**  
   
 -   または、この Excel ブックを Excel 内で更新します。  
   
@@ -150,9 +153,9 @@ ms.lasthandoff: 09/20/2017
 ### <a name="cleaning-up-the-alerts-chronicle-table"></a>警告記録テーブルのクリーンアップ  
  BAM 警告が構成されている場合、作成される各アクティビティ ビューに対して SQL ジョブが作成されます。 次のテンプレートを使用して、ジョブに名前が付けられます。  
   
- bam _\<ビュー名 > _\<アクティビティ ビュー > _DelAlertHistJob  
+ bam _\<ビュー名\>_\<アクティビティ ビュー\>_DelAlertHistJob  
   
- このジョブに指定されたインスタンス警告に対する監査データをクリーンアップ\<アクティビティ ビュー > は Bam_Metadata_AlertChronicle テーブルにします。 特定のアクティビティ ビューにインスタンス警告を定義した場合、警告が発生するたびに、このテーブルに新しい行が追加されます。  
+ このジョブに指定されたインスタンス警告に対する監査データをクリーンアップ\<アクティビティ ビュー\>は Bam_Metadata_AlertChronicle テーブルにします。 特定のアクティビティ ビューにインスタンス警告を定義した場合、警告が発生するたびに、このテーブルに新しい行が追加されます。  
   
  テーブルをクリーンアップするために、ジョブは手動で実行することも、アプリケーションや環境に応じて実行されるようにスケジュールすることもできます。  
   

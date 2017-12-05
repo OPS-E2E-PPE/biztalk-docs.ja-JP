@@ -17,11 +17,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6e7440742c5bb8efb8d867ecc96447390336b84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1e5783893bbc9091d0a5f1fb3f116b17413bc5d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-and-disable-host-initiated-sso"></a>側開始 SSO を有効にし、ホストを無効にする方法
 既定では、ホスト側開始シングル サインオンはシングル サインオン システムで有効になっていないため、SSO 管理者が有効化する必要があります。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
 4.  型**ssomanage-hisso を有効にする**です。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ >: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
   
 4.  型**ssomanage-hisso を無効にする**に応じて。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17ae913ddbcdd0b87b6ebfc1a4f38790ecdb67bc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea0cd71c22fdd614d2e49c996939b785ecadf8bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-the-designer-extensibility-sample"></a>デザイナーの機能拡張のサンプルをインストールします。
 このセクションでは、デザイナーの機能拡張のサンプルをインストールするためのプロセスについて説明します。 サンプルをインストールする必要があります[のインストールと旅程ランプでサンプルを実行して](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的の解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)をインストールして、このサンプルを使用する前にします。  
@@ -25,13 +25,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  Windows エクスプ ローラーで、インストールされている、フォルダー \Source\Samples\Designer Extensibility Samples\Extenders.Itinerary.OrchestrationSample を開き、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプルを開き、という名前の Microsoft Visual Studio ソリューション ファイルExtenders.Itinerary.OrchestrationSample.sln です。  
   
-2.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、 をクリックして**ソリューションのビルド**上、**ビルド**メニュー。  
+2.  Visual Studio で、**ソリューションのビルド**上、**ビルド**メニュー。  
   
 3.  Visual Studio を閉じます。  
   
 4.  Windows エクスプ ローラーで、インストールされている、フォルダー \Source\Samples\Designer Extensibility Samples\Extenders.Resolvers.ResolverSample を開き、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプルを開き、という名前の Visual Studio ソリューション ファイルExtenders.Resolvers.ResolverSample.sln です。  
   
-5.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]、 をクリックして**ソリューションのビルド**上、**ビルド**メニュー。  
+5.  Visual Studio で、**ソリューションのビルド**上、**ビルド**メニュー。  
   
 6.  Visual Studio を閉じます。  
   

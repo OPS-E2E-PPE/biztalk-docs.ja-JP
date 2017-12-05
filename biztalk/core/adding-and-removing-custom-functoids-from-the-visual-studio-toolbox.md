@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b34d546de0bbb2a79300c4f672bdfcecdab5958
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 955c526c39a1cbb376a0d83848554bdeb6cc15c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adding-and-removing-custom-functoids-from-the-visual-studio-toolbox"></a>Visual Studio ツールボックスに対するカスタム Functoid の追加と削除
 ここでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに対し、カスタム Functoid を追加する方法と削除する方法について説明します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  Windows エクスプローラーを使用して、カスタム Functoid が実装されているアセンブリを探します。  
   
-    2.  アセンブリをコピー、 \< *BizTalk Server のインストール フォルダー*>**\Developer Tools\Mapper 拡張**ディレクトリ。 BizTalk マッパーは、このフォルダーに対してカスタム Functoid を検索します。  
+    2.  アセンブリをコピー、 \< *BizTalk Server のインストール フォルダー*\>**\Developer Tools\Mapper 拡張**ディレクトリ。 BizTalk マッパーは、このフォルダーに対してカスタム Functoid を検索します。  
   
     3.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトで、**ツール** メニューをクリックして**ツールボックス アイテムの選択**です。  
   

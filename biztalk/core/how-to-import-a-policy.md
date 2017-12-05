@@ -17,18 +17,18 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bae0b72eb323e75a8ecf9563b4fa0e0bc1b725d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac21ad1348dbc934c81d87f3c477977eeecd2ccf
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-import-a-policy"></a>ポリシーをインポートする方法
 このトピックでは、BizTalk Server 管理コンソールを使用して BizTalk グループにポリシーをインポートする方法と、BTSTask コマンド ライン ツールを使用してポリシーを BizTalk アプリケーションにインポートする方法について説明します。  
   
  」の説明に従って、ビジネス ルール作成ツールを使用してポリシーを作成することができます[ビジネス ルール作成ツールを使用して作成するビジネス ルール](../core/creating-business-rules-using-the-business-rule-composer.md)、しを直接インポートするか、」の説明に従って、別の BizTalk グループからポリシーをエクスポートすることができます[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)し、それをインポートします。  
   
- ポリシーをインポートすると、BizTalk グループのルール エンジン データベースに登録されます。 インポートしたポリシーは、BizTalk Server 管理コンソールに表示できます。 BizTalk Server 管理コンソールを使用してポリシーをインポートする場合に表示されます、\<すべてのアイテム >、BizTalk グループのノードです。 発行する」の説明に従って、BizTalk アプリケーションに追加できるようにし、[ポリシーを公開する方法](../core/how-to-publish-a-policy.md)です。 BTSTask コマンド ライン ツールを使用してポリシーをインポートしている場合、ポリシーは自動的に公開され、インポート先のアプリケーションのポリシー フォルダーに表示されます。  
+ ポリシーをインポートすると、BizTalk グループのルール エンジン データベースに登録されます。 インポートしたポリシーは、BizTalk Server 管理コンソールに表示できます。 BizTalk Server 管理コンソールを使用してポリシーをインポートする場合に表示されます、\<すべての成果物\>BizTalk グループのノードです。 発行する」の説明に従って、BizTalk アプリケーションに追加できるようにし、[ポリシーを公開する方法](../core/how-to-publish-a-policy.md)です。 BTSTask コマンド ライン ツールを使用してポリシーをインポートしている場合、ポリシーは自動的に公開され、インポート先のアプリケーションのポリシー フォルダーに表示されます。  
   
  ポリシーをインポートする際には、次の点に注意してください。  
   
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、ポリシーのインポートは、展開する BizTalk グループを展開**アプリケーション**、順に展開**\<すべての成果物 >**です。  
+2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、ポリシーのインポートは、展開する BizTalk グループを展開**アプリケーション**、順に展開**\<すべての成果物\>**.  
   
 3.  右クリック**ポリシー**、クリックして**インポート**です。  
   
 4.  [参照] をクリックして、ポリシーを含む .xml ファイルに**開く**です。  
   
-     ポリシーがグループにインポートしに表示、**ポリシー**のフォルダー **\<すべてのアイテム >**です。  
+     ポリシーがグループにインポートしに表示、**ポリシー**のフォルダー **\<すべての成果物\>**です。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
@@ -74,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-     **BTSTask ImportApp/:** *値*[**/applicationname は:***値*] [**/overwrite**] [**/Server:***値*] [**/database:***値*]  
+     **BTSTask ImportApp/:** *値*[**/applicationname は:***値*] **[/overwrite]** [**/Server:***値*] [**/database:***値*]  
   
      例:  
   

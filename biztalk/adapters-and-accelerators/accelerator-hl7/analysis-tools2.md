@@ -19,14 +19,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 947796495a321a4b3b9cabbc01db1610223c034f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78dd748febee568513c6138b036aab89369fcafc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="analysis-tools"></a>分析ツール
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ビジネス アナリストやインフォメーション ワーカーは分析ツールのセットを提供します。 これらのツールの詳細については、次を参照してください。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server では、ビジネス アナリストやインフォメーション ワーカーは分析ツールのセットを提供します。 これらのツールの詳細については、次を参照してください。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプ。  
   
 ## <a name="business-activity-monitoring"></a>ビジネス アクティビティの監視  
  BizTalk ビジネス アクティビティ監視 (BAM) は、異種ビジネス プロセスのリアルタイム ビューをビジネス ユーザーに提供します。 これにより、データがビジネスの意思決定を行う必要があります。  

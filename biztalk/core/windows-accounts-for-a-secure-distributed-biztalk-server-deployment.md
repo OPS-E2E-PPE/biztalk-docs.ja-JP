@@ -23,11 +23,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 678977b23f377425718e483d87725ba191bbda86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04c7e6e28cc0deb83eaa7868c6c4ee17da8bc563
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows アカウント
 BizTalk Server の展開のシステム アーキテクチャに関する詳細については、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。  
@@ -83,7 +83,7 @@ BizTalk Server の展開のシステム アーキテクチャに関する詳細�
 |インストール|ユーザー|SSO 管理者 (の場合のみ、マスタ シークレット サーバーを構成する)<br /><br /> ローカル管理者<br /><br /> sysadmin SQL Server ロール<br /><br /> OLAP 管理者|  
 |BAM アプリケーション プール|サービス|IIS_WPG|  
 |BAM 管理|サービス|IIS_WPG|  
-|BAM 通知|サービス|SQLServer2005NotificationServicesUser$\<**ComputerName**>|  
+|BAM 通知|サービス|SQLServer2005NotificationServicesUser$\<**ComputerName**\>|  
   
  次の表は、ドメイン管理者により企業ドメインのドメイン コントローラーに作成することが推奨されるアカウントを示しています。  
   

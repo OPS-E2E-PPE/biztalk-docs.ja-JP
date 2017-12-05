@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 90a9df3f95628b8072217c5b3756b619ff528147
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1772a30ce5496a3a14866da168a56958bc3bc78c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-peoplesoft-transport-properties"></a>PeopleSoft トランスポート プロパティの設定
 PeopleSoft トランスポートのプロパティは、設計時および実行時に使用されます。 **トランスポートのプロパティ**ダイアログ ボックスで、パラメーターを設定する接続と資格情報を特定サーバーのシステムおよびアクセスしようとしているオブジェクトにします。  
@@ -21,7 +21,7 @@ PeopleSoft トランスポートのプロパティは、設計時および実行
   
     |パラメーター|Description|  
     |---------------|-----------------|  
-    |`Application Server Path`|PeopleSoft Application Server が動作して受信を待ち受けているコンピューターおよびポートを表す文字列。 PeopleSoft 8 Application への URL パスの構文は//< computer_name >:\<ポート >。 PeopleSoft 管理者に問い合わせて、\<ポート > 値。 \<ポート > 値は、JOLT プロトコル リスナー ポート、App Server ポートではありません。 既定の JOLT ポートは 9000 です。|  
+    |`Application Server Path`|PeopleSoft Application Server が動作して受信を待ち受けているコンピューターおよびポートを表す文字列。 PeopleSoft 8 Application への URL パスの構文は//< computer_name >:\<ポート\>です。 PeopleSoft 管理者に問い合わせて、\<ポート\>値。 \<ポート\>値は、JOLT プロトコル リスナー ポート、App Server ポートではありません。 既定の JOLT ポートは 9000 です。|  
     |`JAVA_HOME`|たとえば、JDK インストールを指すように JAVA_HOME 変数を設定します。 **C:\j2sdk1.4.2_08**です。|  
     |`Password`|選択しなかった場合**SSO を使用する**、BizTalk Adapter for PeopleSoft Enterprise サーバー システムにアクセスするための資格情報パラメーターを設定する必要があります。<br /><br /> PeopleSoft システムへのログオンに使用するユーザーのパスワードを表す文字列です。 文字は表示されませんが、アスタリスク (*) で表されます。|  
     |`PeopleSoft 8.x Jar Files`|コンポーネント インターフェイス (PeopleSoft 8 のみ) を使用するには、PeopleSoft Component Interface の jar ファイルが含まれるように CLASSPATH を更新する必要があります 例: **< PeopleSoft_Home > \web\PSJOA\psjoa.jar**です。|  

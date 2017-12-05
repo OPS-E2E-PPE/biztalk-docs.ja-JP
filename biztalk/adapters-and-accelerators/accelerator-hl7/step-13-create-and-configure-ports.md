@@ -18,16 +18,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 256b1618313605f0847d9328abfd003f41ac61cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c1b18e5b7addf1bae390dd541b84d17bd94023d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-13-create-and-configure-ports"></a>手順 13: を作成し、ポートを構成します。
 このステップでは、ポート構成ウィザードを使用して作成し、オーケストレーション デザイナーでポートを構成します。 オーケストレーションの送信し、ビジネス プロセスからメッセージを送受信ポートを指定します。 各ポートには、種類、方向、およびバインドします。 プロパティは、通信、通信のパターン、元の場所の方向を一緒に決定[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]を送信または受信メッセージとの通信が行われる方法です。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]送信ポートとして最小下位層プロトコル (MLLP) アダプターを使用します。 MLLP アダプターは、他のラボ アプリケーションなどのアプリケーション、保険アプリケーションは、従来の基幹業務アプリケーションとのインターフェイスに TCP ソケット通信を使用します。 MLLP 送信アダプターを表す、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]はアダプター。  
   
--   カスタマイズします。 アダプターにのみ付属して[!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]で出荷する場合とは異なり、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   カスタマイズします。 アダプターにのみ付属して[!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]に付属して BizTalk Server ではなく、します。  
   
 -   プロトコル/トランスポート。 アダプターは、アプリケーションまたはデータ アダプターではありません。  
   
@@ -115,4 +115,4 @@ ms.lasthandoff: 09/20/2017
  進みます[手順 14: オーケストレーション Web サービスとして公開](../../adapters-and-accelerators/accelerator-hl7/step-14-publish-the-orchestration-as-a-web-service.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

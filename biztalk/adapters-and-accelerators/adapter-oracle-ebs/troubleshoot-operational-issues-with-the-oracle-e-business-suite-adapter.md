@@ -13,11 +13,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92f888c185a7c7bea800986615da04ce57c80db0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4654e228a4ca86c9d89686f826d57777f2353efd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite アダプターでの運用上の問題のトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。  
@@ -50,7 +50,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  **解決策**  
   
--   必要な LOB クライアント バージョンがインストールされているコンピューターにインストールされていることを確認してください、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 サポートされているクライアントのバージョンについてで利用可能なインストール ガイドを参照してください。\<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。  
+-   必要な LOB クライアント バージョンがインストールされているコンピューターにインストールされていることを確認してください、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 サポートされているクライアントのバージョンについてで利用可能なインストール ガイドを参照してください。\<インストール ドライブ\>: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。  
   
 -   必要があるアダプターのみをインストールするアダプターのカスタム インストールを行うことを確認してください。  
   
@@ -72,7 +72,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  Oracle E-business Suite を使用して、すべての操作を実行するときに、アダプターは、次のエラーを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  
   
--   **の[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  

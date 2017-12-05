@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 538e47f481f0817acfbd26477866a3d45a0d285b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e84fcd29af6b698713623fbca556d988e037d8c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-bizunit-and-loadgen-to-automate-performance-and-stability-testing"></a>パフォーマンスと安定性テストを自動化するための BizUnit および LoadGen を使用します。
 このトピックでは、パフォーマンスと安定性は、BizTalk Server ソリューションのテストを自動化するための BizUnit で Microsoft BizTalk LoadGen 2007 ツールを使用する方法に関する情報を提供します。  
@@ -96,11 +96,11 @@ ms.lasthandoff: 09/20/2017
  Microsoft [BizTalk LoadGen 2007 ツール](http://go.microsoft.com/fwlink/?LinkId=59841)ダウンロードは[http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841) (http://go.microsoft.com/fwlink/?LinkId=59841)。  
   
 ### <a name="sample-loadgen-configuration-file"></a>LoadGen 構成ファイルのサンプル  
- LoadGen のすべての構成情報については、xml ファイルに格納されます。 LoadGen 構成ファイルが含まれています、 \<CommonSection > LoadGen シナリオでの LoadGen のすべてのタスクの既定の設定を構成する要素。 1 つまたは複数が、LoadGen 構成ファイルに含めることもできます\<セクション > 要素を特定の LoadGen タスクの構成設定を提供します。 内のエントリ、\<セクション > 要素で指定された既定の値を置き換える、 \<CommonSection > 要素。  
+ LoadGen のすべての構成情報については、xml ファイルに格納されます。 LoadGen 構成ファイルが含まれています、 \<CommonSection\> LoadGen シナリオでの LoadGen のすべてのタスクの既定の設定を構成する要素。 1 つまたは複数が、LoadGen 構成ファイルに含めることもできます\<セクション\>LoadGen の特定のタスクの構成設定を提供する要素。 内のエントリ、\<セクション\>要素で指定された既定の値を置き換える、 \<CommonSection\>要素。  
   
- これに続くサンプル LoadGen 構成ファイルでは、少し変更したバージョンの \ConfigFiles\ConsoleConfigFiles、LoadGen インストール ディレクトリのサブディレクトリに含まれている FileToFileLG.xml サンプル構成ファイルが。 このテストは、25 のメッセージを送信\<LotSizePerInterval > 200 ミリ秒ごと\<SleepInterval >、負荷ジェネレーターあたりのスレッド数 5 \<NumThreadsperSection > 5000 メッセージ後に、ロードテストは停止し、\<NumFiles > は送信されています。  
+ これに続くサンプル LoadGen 構成ファイルでは、少し変更したバージョンの \ConfigFiles\ConsoleConfigFiles、LoadGen インストール ディレクトリのサブディレクトリに含まれている FileToFileLG.xml サンプル構成ファイルが。 このテストは、25 のメッセージを送信\<LotSizePerInterval\> 200 ミリ秒ごと\<SleepInterval\>、負荷ジェネレーターあたりのスレッド数 5 \<NumThreadsperSection\>負荷は停止されます5000 のメッセージの後にテスト\<NumFiles\>送信されました。  
   
- ファイルの制限コント ローラーがで指定された、 \<ThrottleController > セクションでします。 値は、 \<ThresholdRange > 1000-2000、つまり C:\Scenarios\FileToFile\Receive (パラメーター) ファイルの場所が 1000 未満または 2000 では複数のファイル、制限コント ローラーがファイル ジェネレーターを制限する場合に設定されていると適切な負荷を増減します。 ファイルの場所にファイルの数になります 1000 ミリ秒ごとにチェック\<SleepInterval >。 \<FileSection > 要素は、負荷のジェネレーターによって送信されるメッセージのプロパティを定義します。 FileToFileLG.xml ファイル\<SrcFilePath > filedrop C:\Scenarios\FileToFile\Receive に LoadGen をコピーする\<DstFilePath >。 指定された既定のトランスポートはこのため、ファイル トランスポートはここで使用、\<トランスポート名 > 内の要素、 \<CommonSection > 要素。  
+ ファイルの制限コント ローラーがで指定された、 \<ThrottleController\>セクションです。 値は、 \<ThresholdRange\> 1000-2000、つまり C:\Scenarios\FileToFile\Receive (パラメーター) ファイルの場所が 1000 未満または 2000 では複数のファイル、制限コント ローラーは、ファイルを制限する場合に設定されています。ジェネレーターと拡大/縮小を必要に応じて読み込みます。 ファイルの場所にファイルの数になります 1000 ミリ秒ごとにチェック\<SleepInterval\>です。 \<FileSection\>要素ロード ジェネレーターによって送信されるメッセージのプロパティを定義します。 FileToFileLG.xml ファイル\<SrcFilePath\> filedrop C:\Scenarios\FileToFile\Receive に LoadGen をコピーする\<DstFilePath >。 指定された既定のトランスポートはこのため、ファイル トランスポートはここで使用、\<トランスポート名\>内の要素、 \<CommonSection\>要素。  
   
 ```  
 <LoadGenFramework>  
@@ -350,7 +350,7 @@ ms.lasthandoff: 09/20/2017
 </TestStep>  
 ```  
   
- 使用して、テストの終了時に**BizUnit.DBExecuteNonQueryStep**をテスト結果のデータベースを更新します。 このステップの完了が、終了によって示される、テスト実行のステージの終わりを示す\</TestExecution > タグです。 ここでも、変更する必要があります、 **ConnectionString**と**RawSQLQuery**環境と一致するパラメーターです。  
+ 使用して、テストの終了時に**BizUnit.DBExecuteNonQueryStep**をテスト結果のデータベースを更新します。 このステップの完了が、終了によって示される、テスト実行のステージの終わりを示す\</TestExecution\>タグ。 ここでも、変更する必要があります、 **ConnectionString**と**RawSQLQuery**環境と一致するパラメーターです。  
   
 ```  
    <!-- Step 11: Update test results DB with test stop time -->  
@@ -527,4 +527,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 ## <a name="see-also"></a>参照  
- [BizUnit を使用して自動テストを容易にするには](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)
+ [自動テストを容易にするための BizUnit の使用](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)

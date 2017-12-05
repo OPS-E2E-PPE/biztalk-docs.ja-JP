@@ -12,18 +12,18 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8694e0525eae82c6df4e6187d6182fbfae3f43e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30811b4f0dba463d518bdd9cd8f6d227e0e79aac
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="cbr-biztalk-server-sample"></a>CBR (BizTalk Server サンプル)
 CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加して新しい構成が BizTalk メッセージのコンテンツ ベース ルーティング用のポートを送信します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   このサンプルにある setup.bat を実行して CBRSample を配置することが必要です、 \<*サンプル パス*> \Messaging\CBRSample ディレクトリ。  
+-   このサンプルにある setup.bat を実行して CBRSample を配置することが必要です、 \<*サンプル パス*\>\Messaging\CBRSample ディレクトリ。  
   
 -   このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
@@ -47,7 +47,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\CBR  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\CBR  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -74,7 +74,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
   
 3.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\CBR\bin\Debug  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\CBR\bin\Debug  
   
 4.  CBR.exe ファイルを実行します。  
   

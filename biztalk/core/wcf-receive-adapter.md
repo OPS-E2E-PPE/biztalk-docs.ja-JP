@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb8ea12087b5884370edce13f3ddc6fd6853c7d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdd4d6335723d068333403b4c9d811d96db058e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-receive-adapter"></a>WCF 受信アダプタ
 WCF 受信アダプターを使用すると、WCF サービス要求を受信できます。  
@@ -60,17 +60,17 @@ WCF 受信アダプターを使用すると、WCF サービス要求を受信で
   
 |Header|BizTalk プロパティ名|昇格の有無|  
 |------------|---------------------------|------------------|  
-|操作|操作|はい|  
+|操作|操作|可|  
 |MessageID|MessageID|不可|  
-|変換先|変換先|はい|  
-|ReplyTo/Address|ReplyTo|はい|  
-|From/Address|From|はい|  
-|Sequence/Identifier|SequenceId|はい|  
-|Sequence/MessageNumber|SequenceNumber|はい|  
-|Sequence/LastMessage|SequenceLastMessage|はい|  
-|\<Soap:header >|InboundHeaders|不可|  
+|変換先|変換先|可|  
+|ReplyTo/Address|ReplyTo|可|  
+|From/Address|From|可|  
+|Sequence/Identifier|SequenceId|可|  
+|Sequence/MessageNumber|SequenceNumber|可|  
+|Sequence/LastMessage|SequenceLastMessage|可|  
+|\<soap ヘッダー\>|InboundHeaders|不可|  
   
 ## <a name="see-also"></a>参照  
  [WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)   
  [WCF 送信アダプタ](../core/wcf-send-adapter.md)   
- [WCF アダプタは?](../core/what-are-the-wcf-adapters.md)
+ [WCF アダプターについて](../core/what-are-the-wcf-adapters.md)

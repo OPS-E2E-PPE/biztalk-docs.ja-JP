@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c12a437371c5412cfafa4140e74733655962fd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a640b938628ebe3dcd6757e3f6fdfd7b1108880d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-11-create-orchestration-variables"></a>手順 11: オーケストレーション変数を作成します。
 このステップでは、オーケストレーションによって送受信されたメッセージ インスタンスのオーケストレーション変数を作成します。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  1 回作成し、メッセージ部分をという名前を変更しないこと。 必要に応じて、古いボディ部を削除し、新しい名前で新しいボディ部を作成します。  
   
-9. **型**ウィンドウで、**マルチパート メッセージの種類**、展開**DoorbellFinalMessageType**、順にクリック**MessagePart_1**です。 **プロパティ** ウィンドウで、入力**MSHSegment**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**、展開**.NET クラス**、クリックして\<**参照されたアセンブリから選択 >**です。  
+9. **型**ウィンドウで、**マルチパート メッセージの種類**、展開**DoorbellFinalMessageType**、順にクリック**MessagePart_1**です。 **プロパティ** ウィンドウで、入力**MSHSegment**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**、展開**.NET クラス**、クリックして\<**参照されたアセンブリから選択\>**です。  
   
 10. **成果物の種類の選択**ダイアログ ボックスで、左側のウィンドウでをクリックして**System.Xml**です。 右側のウィンドウでをクリックして**XmlDocument**、クリックして**OK**です。  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 18. **オーケストレーション**ウィンドウを右クリックして**変数**、順にクリック**新しい変数**です。  
   
-19. **プロパティ** ウィンドウで、入力**HeaderInfo**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**をダブルクリックして\< **.NET クラス >**です。  
+19. **プロパティ** ウィンドウで、入力**HeaderInfo**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**をダブルクリックして\< **.NET クラス\>**です。  
   
 20. **成果物の種類の選択**ウィンドウの左側のウィンドウでをクリックして**System.Xml**です。 右側のウィンドウでをクリックして**XmlDocument**、クリックして**OK**です。  
   
@@ -99,4 +99,4 @@ ms.lasthandoff: 09/20/2017
  進みます[手順 12: オーケストレーション図形を構成する](../../adapters-and-accelerators/accelerator-hl7/step-12-configure-orchestration-shapes.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

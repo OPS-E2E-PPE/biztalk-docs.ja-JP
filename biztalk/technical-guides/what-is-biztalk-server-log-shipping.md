@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c886bb4d32fa082c2c4c865a45b28133ce4a3aa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3b20589229b1e3868f23c3823d2a26decc56081
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a>BizTalk Server ログ配布とですか。
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]障害復旧手順が構築されています。 BizTalk ログ配布します。 BizTalk ログ配布は継続的に、障害復旧サイト データベースをトランザクション ログの更新プログラムを適用して、障害時におけるデータベースの復元を簡略化します。  
+BizTalk Server の障害復旧手順が構築されています。 BizTalk ログ配布します。 BizTalk ログ配布は継続的に、障害復旧サイト データベースをトランザクション ログの更新プログラムを適用して、障害時におけるデータベースの復元を簡略化します。  
   
  While BizTalk ログ配布として同じ原則に基づいて[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布はサポートされていません、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のデータベースが、Backup BizTalk Server の SQL エージェント ジョブの一部としてバックアップします。  
   

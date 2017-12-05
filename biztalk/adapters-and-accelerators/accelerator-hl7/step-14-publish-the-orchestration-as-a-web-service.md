@@ -19,11 +19,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd7707ded0951eb1141368a91e7fe8f533e8241a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c742d21dd2f2e1d95f697beea3d5d5dfa0461d2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-14-publish-the-orchestration-as-a-web-service"></a>手順 14: Web サービスとしてのオーケストレーションを公開します。
 このステップでは、BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開します。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **Web サービスの作成**] ページで、[ **BizTalk オーケストレーション web サービスとして公開**、クリックして**[次へ]**です。  
   
-4.  **BizTalk アセンブリ** ページの 、 **BizTalk アセンブリ ファイル (\*.dll)**フィールドを参照または入力  **\<*ドライブ*>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**、 をクリックして**BTAHL7 Project.dll**、 をクリックして**開く**、順にクリック**次**.  
+4.  **BizTalk アセンブリ** ページの 、 **BizTalk アセンブリ ファイル (\*.dll)**フィールドを参照または入力  **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**、 をクリックして**BTAHL7 Project.dll**、 をクリックして**開く**、順にクリック**次**.  
   
 5.  **オーケストレーションとポート** ページで、すべてのノードが選択されていることを確認し、をクリックして**次**です。  
   
@@ -67,4 +67,4 @@ ms.lasthandoff: 09/20/2017
  進みます[手順 15: 構成、送信ポートと受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-15-configure-the-send-and-receive-ports.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

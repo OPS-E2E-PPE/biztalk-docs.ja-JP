@@ -12,11 +12,11 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee8447bb77fee160c34cc86d30a0b7ac981c53aa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e9e799822c63cb78eda1b989cb157c71fd357d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="general-biztalk-server-optimizations"></a>BizTalk Server の一般的な最適化
 BizTalk Server のパフォーマンスを向上させるのには、次の推奨事項を使用できます。 BizTalk Server をインストールして、構成後、このトピックで示した最適化が適用されます。  
@@ -98,9 +98,9 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
   
  Maxconnection プロパティを設定するときに、HTTP、HTTPS、web サイトの IP アドレスおよびポート番号を指定することができます。 その他の例は次のとおりです。  
   
- **\<アドレスの追加"https://www.contoso.com"maxconnection を = =「24」/>**   
-**\<アドレスの追加"http://www.contoso.com:8080"maxconnection を = =「24」/>**   
-**\<アドレスを追加 ="http://*IPAddress*"maxconnection =「24」/> * * Web サービスの IIS と ASP.NET の設定をチューニングの詳細については、「ASP.NET 設定 HTTP アダプターのパフォーマンスに影響する」を参照してくださいのセクション[。アダプターのパフォーマンスに影響する構成パラメーター](http://go.microsoft.com/fwlink/?LinkID=154200) (http://go.microsoft.com/fwlink/?LinkID=154200) BizTalk Server 2010 ヘルプの「します。  
+ **\<アドレスの追加"https://www.contoso.com"maxconnection を = =「24」/\>**   
+**\<アドレスの追加"http://www.contoso.com:8080"maxconnection を = =「24」/\>**   
+**\<アドレスを追加 ="http://*IPAddress*"maxconnection =「24」/\>* * Web サービスの IIS と ASP.NET の設定をチューニングの詳細については、「ASP.NET 設定 HTTP アダプターのパフォーマンスに影響する」を参照してくださいセクション。[アダプターのパフォーマンスに影響する構成パラメーター](http://go.microsoft.com/fwlink/?LinkID=154200) (http://go.microsoft.com/fwlink/?LinkID=154200) BizTalk Server 2010 ヘルプの「します。  
   
 ## <a name="manage-aspnet-thread-usage-or-concurrently-executing-requests-for-web-applications-that-can-host--isolated-received-locations-back-end-web-services-and-wcf-services"></a>ASP.NET スレッドの使用状況を管理または受信場所、バックエンド Web サービスと WCF サービスをホストする Web アプリケーションに対する要求を同時に実行される分離  
  ワーカーと I/O スレッド (IIS 7.5、およびクラシック モードの IIS 7.0) または同時に要求を実行する (IIS 7.5 および 7.0 統合モード) の ASP.NET Web アプリケーションの受信場所、バックエンド Web サービスと WCF サービス ホストを分離する数の数次の条件を変更する必要があります。  
@@ -189,7 +189,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
  IIS 7.0 で ASP.NET スレッドの使用法を構成する方法の詳細については、次を参照してください。 [IIS 7.0 で ASP.NET スレッドの使用に関する Thomas Marquardt のブログ](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)。  
   
 ### <a name="manage-the-number-of-concurrently-executing-requests-for-aspnet-4web-applications-that-can-host-isolated-received-locations-back-end-web-services-and-wcf-services-on-iis-75-and-70-running-in-integrated-mode"></a>分離受信場所、バックエンド Web サービス、および IIS 7.5、および統合モードで実行されている 7.0 での WCF サービスをホストする ASP.NET 4Web アプリケーションに対する要求を同時に実行される数を管理します。  
- .NET Framework 4、maxConcurrentRequestsPerCPU の既定の設定に膨大な数は 5000、したがってはのに十分な非同期要求を同時に実行します。 詳細については、次を参照してください。 [ \<applicationPool > 要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
+ .NET Framework 4、maxConcurrentRequestsPerCPU の既定の設定に膨大な数は 5000、したがってはのに十分な非同期要求を同時に実行します。 詳細については、次を参照してください。 [ \<applicationPool\>要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
   
  IIS 7.5、および IIS 7.0 統合モードの場合は、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 内の MaxConcurrentRequestsPerCPU をという名前の DWORD は CPU ごとの同時要求の数を決定します。 既定では、レジストリ キーが存在しないと、CPU あたりの要求の数は 5000 に制限されます。  
   
@@ -306,4 +306,4 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
 -   [EPM スレッド プール サイズを設定](http://go.microsoft.com/fwlink/?LinkId=158020)(http://go.microsoft.com/fwlink/?LinkId=158020)  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server のパフォーマンスを最適化します。](../technical-guides/optimizing-biztalk-server-performance.md)
+ [BizTalk Server パフォーマンスの最適化](../technical-guides/optimizing-biztalk-server-performance.md)

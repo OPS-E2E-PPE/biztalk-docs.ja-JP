@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3ac08628931ec4111eb1b5a9ad86991344c22d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc0bd397e49dcad670bb73e9dff9c164b9d0997a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="importing-agreement-properties-from-an-xml-file"></a>XML ファイルからのアグリーメント プロパティのインポート
 ここでは、XML テンプレート ファイルからアグリーメントのプロパティをインポートする方法について説明します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-import-agreement-properties-from-an-xml-file"></a>アグリーメントのプロパティを XML ファイルからインポートするには  
   
-1.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理コンソールで、をクリックして、**パーティ**ノードの下、 **BizTalk Server 管理コンソール**と**BizTalk グループ**ノード。 **パーティとビジネス プロファイル** ページで、アグリーメントを作成する」の説明に従って[全般設定を構成する (X12)](../core/configuring-general-settings-x12.md)です。  
+1.  BizTalk Server 管理コンソールで、をクリックして、**パーティ**ノードの下、 **BizTalk Server 管理コンソール**と**BizTalk グループ**ノード。 **パーティとビジネス プロファイル** ページで、アグリーメントを作成する」の説明に従って[全般設定を構成する (X12)](../core/configuring-general-settings-x12.md)です。  
   
 2.  **アグリーメントのプロパティ**ダイアログ ボックスで、をクリックして**テンプレートからロード**です。  
   
@@ -43,4 +43,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [別のアグリーメント プロパティの再利用](../core/reusing-properties-from-another-agreement.md)   
- [アグリーメントのプロパティを XML ファイルにエクスポートします。](../core/exporting-agreement-properties-to-an-xml-file.md)
+ [XML ファイルへのアグリーメント プロパティのエクスポート](../core/exporting-agreement-properties-to-an-xml-file.md)

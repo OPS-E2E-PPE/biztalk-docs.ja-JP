@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 052f30e7e1fa2461d1332702dbd61b6aa76451b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d1d39bfa1bfd4cc837a77586d6c462c6b7d7f06
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-export-bindings-to-a-binding-file"></a>バインドをバインド ファイルにエクスポートする方法
 バインド ファイルを使用して既存の別の BizTalk アプリケーションに BizTalk アプリケーションのバインドをエクスポートすることができます。 グループ内のすべてのバインディングまたはアセンブリのバインドをエクスポートすることもできます。 その後、アプリケーションまたはグループのいずれかに、これらのバインドをインポートできます。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
 -   バインド ファイルを生成した後に編集して、そのバインド情報を変更できます。  
   
 ## <a name="how-to-export-to-a-binding-file"></a>バインド ファイルにエクスポートする方法  
- アプリケーションのバインドのエクスポート コマンドを実行して、バインド ファイルにアプリケーションのバインドをエクスポートする、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理コンソールまたは BTSTask ExportBindings コマンドを使用するコマンドラインです。  
+ BizTalk Server 管理コンソールで、アプリケーションのバインドのエクスポート コマンドを実行することによって、またはコマンド ラインで BTSTask ExportBindings コマンドを使用して、バインド ファイルにアプリケーションのバインドをエクスポートします。  
   
  セキュリティ上の理由により、BizTalk Server では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 BizTalk Server 管理コンソールの [トランスポートのプロパティ] ダイアログ ボックスで、送信ポートと受信場所のパスワードをそれぞれ構成します。  
   

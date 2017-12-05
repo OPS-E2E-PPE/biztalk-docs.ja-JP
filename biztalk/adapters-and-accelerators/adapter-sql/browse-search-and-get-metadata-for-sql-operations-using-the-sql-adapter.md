@@ -12,11 +12,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a8d82a69b342c278e7cb17de8759d4986a71cd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fab8d26f7f4da3c60587bd7d2863941080c69953
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter"></a>参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得
 このセクションで説明を使用する方法については、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コンポーネント、することができます。  
@@ -215,7 +215,7 @@ ms.lasthandoff: 09/20/2017
 6.  **[OK]**をクリックします。 スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。  
   
     > [!NOTE]
-    >  使用している場合、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータを生成する SQL Server の成果物の既定では、ファイルは、特定の名前付け規則で作成します。 生成された WSDL が含まれています、 **fileNameHint** XSD ファイルに割り当てられる名前を含む注釈タグ。 たとえば、テーブル操作のスキーマ ファイルのファイル名のヒントには、規約 TableOperation が次に示します。\<スキーマ >。\<tablename >。 生成された XSD ファイルの名前をカスタマイズする場合でプレフィックスを入力することができます、**ファイル名のプレフィックス**ボックス。 最後に、XSD ファイルの名前に到達する時にファイル名のプレフィックス + fileNameHint + (必要な場合、ファイル名が一意であることを確認する) の一意の整数。  
+    >  使用している場合、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータを生成する SQL Server の成果物の既定では、ファイルは、特定の名前付け規則で作成します。 生成された WSDL が含まれています、 **fileNameHint** XSD ファイルに割り当てられる名前を含む注釈タグ。 たとえば、テーブル操作のスキーマ ファイルのファイル名のヒントには、規約 TableOperation が次に示します。\<スキーマ\>.\<tablename\>です。 生成された XSD ファイルの名前をカスタマイズする場合でプレフィックスを入力することができます、**ファイル名のプレフィックス**ボックス。 最後に、XSD ファイルの名前に到達する時にファイル名のプレフィックス + fileNameHint + (必要な場合、ファイル名が一意であることを確認する) の一意の整数。  
   
     > [!NOTE]
     >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]時に指定されたバインディングのプロパティを含むバインド ファイル (XML ファイル) も作成操作と、操作を呼び出す SOAP アクションのスキーマを生成します。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールを WCF カスタム ポートまたは BizTalk SQL アダプターのポート、接続 URI をバインディング プロパティ、および作成 SOAP アクションを設定します。 詳細については、次を参照してください。 [SQL アダプターを使用するポートのバインド ファイルを使用する物理ポートのバインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)です。

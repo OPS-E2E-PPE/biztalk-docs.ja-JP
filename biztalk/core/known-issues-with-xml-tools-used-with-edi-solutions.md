@@ -12,14 +12,14 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88edef073bdab21213d9f1f52ec7e4424ff4e4b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23b8222369503f616f2d994f9292091f8e6c1f0d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-xml-tools-used-with-edi-solutions"></a>EDI ソリューションで使用される XML ツールに関する既知の問題
-このトピックでは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の XML ツールに関する既知の問題について説明します。  
+このトピックでは、BizTalk Server の XML ツールに関する既知の問題について説明します。  
   
 ## <a name="validation-of-test-map-input-and-output-file-still-occurs-when-the-validate-property-is-set-to-false"></a>検証プロパティを [False] に設定しているのに TestMap の入力および出力ファイルの検証が実行される  
  TestMap の入力プロパティを設定してマップをテストするかどうかは**ネイティブ**TestMap 入力の検証と TestMap 出力の検証のプロパティに設定および**False**検証は実行されます。 これは、ネイティブ形式の入力ファイルを XML 形式に変換され、BizTalk Server はスキーマに対して XML を検証するために発生します。 入力ファイルに検証の問題がある場合は、この検証メカニズム エラーが通知されます、TestMap 入力の検証および TestMap 出力の検証プロパティ設定されていても**False**です。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
  スキーマからインスタンスが生成され、そのスキーマ内のデータ要素の列挙値が長さの要件を満たしていない場合、インスタンスの生成に、長さの要件のため後で XSD 検証が失敗するデータ要素が使用される可能性があります。 スキーマの検証では、スキーマ内の enum の一覧から取得された生成済みインスタンスの値が最小/最大長の要件を満たしているかどうかはチェックされません。  
   
 ## <a name="validate-schema-may-not-detect-an-invalid-transaction-set-id-code"></a>スキーマの検証時に無効なトランザクション セット ID コードが検出されない場合がある  
- [ソリューション エクスプ ローラー] ウィンドウでスキーマの検証コマンドを使用してスキーマを検証する場合に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ルート ノードのチェックが無効なトランザクション セット ID コードを使用したルート参照ノードの最後の部分で認識されない (x12 _ の形式で\<VersionRelease > _TSID)。 スキーマのルート参照ノードに含まれる TSID が無効でも、その TSID がスキーマの ST01 要素の列挙ノードに含まれる TSID と同じであれば、スキーマの検証操作時に TSID が無効であることが検出されません。  
+ [ソリューション エクスプ ローラー] ウィンドウでスキーマの検証コマンドを使用してスキーマを検証する場合に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ルート ノードのチェックが無効なトランザクション セット ID コードを使用したルート参照ノードの最後の部分で認識されない (x12 _ の形式で\<VersionRelease\>_TSID)。 スキーマのルート参照ノードに含まれる TSID が無効でも、その TSID がスキーマの ST01 要素の列挙ノードに含まれる TSID と同じであれば、スキーマの検証操作時に TSID が無効であることが検出されません。  
   
 ## <a name="visual-studio-must-be-restarted-to-make-an-enum-change-in-a-schema-effective-for-instance-validation"></a>インスタンスの検証でスキーマの enum の変更を有効にするためには Visual Studio を再起動する必要がある  
  スキーマ内の列挙の一覧を変更し、スキーマを保存した後でインスタンスの検証を実行すると、スキーマの最新バージョンではなく以前のバージョンに基づいて検証が実行されます。 スキーマの最新バージョンは、Visual Studio を再起動するまで使用されません。  

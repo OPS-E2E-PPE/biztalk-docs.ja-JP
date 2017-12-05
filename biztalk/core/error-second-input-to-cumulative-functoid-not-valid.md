@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a288bdaa9427cd26191571d180d39ad2dde9f9f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f0228beda57b961d515471e42760abe3ab92db54
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---second-input-to-cumulative-functoid-not-valid"></a>エラー - 累積 Functoid の無効を 2 番目の入力
 **エラー コード**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **ユーザーの操作**  
   
- 選択し**累積的な**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、 **Functoid 入力の順序**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid > Functoid**  ダイアログ ボックスを確実に 2 番目の入力パラメーター、存在する場合、正の整数。
+ 選択し**累積的な**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、 **Functoid 入力の順序**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid\>Functoid**  ダイアログ ボックスを確実に 2 番目の入力パラメーター、存在する場合、正の整数。

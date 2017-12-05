@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cfc20fea950c737d59e6b325744a02ee67bb63f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a64bac6c64a9aadc772bfe8445b23f87b469471d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-import-bindings-into-a-biztalk-group"></a>BizTalk グループにバインドをインポートする方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルからBizTalk グループにバインドをインポートする方法について説明します。 BizTalk グループからバインドをインポートできる .xml ファイルにエクスポートする方法については、次を参照してください。 [BizTalk グループのバインドのエクスポート方法](../core/how-to-export-bindings-for-a-biztalk-group.md)です。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  バインド ファイルをクリックし、をクリックして**開く**です。  
   
-     バインド ファイルのアイテムがグループに書き込まれます。 適切なフォルダーに表示される、\<すべてのアイテム > ノード。  
+     バインド ファイルのアイテムがグループに書き込まれます。 適切なフォルダーに表示される、\<すべての成果物\>ノード。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   

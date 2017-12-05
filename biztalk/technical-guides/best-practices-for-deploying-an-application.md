@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25d24eda11d9547b545445239e783ac3bfee4057
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa55a240669ab9369dd7a1862d3fda055f577edd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-deploying-an-application"></a>アプリケーションを展開するためのベスト プラクティス
 このトピックでは、BizTalk アプリケーションの展開に従う必要のあるベスト プラクティスを示します。  
@@ -33,10 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="creating-a-biztalk-application"></a>BizTalk アプリケーションを作成します。  
  **BizTalk アプリケーション ファイルと .msi ファイルを作成するスクリプトします。**  
   
--   BtsTask.exe は、BizTalk アプリケーションを作成するスクリプトを使用できます。 場合は、アプリケーションの作成をスクリプトに含めるし、パッケージに自動的に構築できますビルド サーバーで自動プロセスを使用しています。 アプリケーションを作成するスクリプトの詳細については、次を参照してください[を管理する BizTalk アプリケーションの展開と](http://go.microsoft.com/fwlink/?LinkID=154210)(http://go.microsoft.com/fwlink/?。LinkID = 154210) および[BizTalk Server 2006: BizTalk Server アプリケーションの展開を理解する](http://go.microsoft.com/fwlink/?LinkID=101599)(http://go.microsoft.com/fwlink/?LinkID = 101599) ホワイト ペーパー。  
-  
-    > [!NOTE]  
-    >  適用されます、ホワイト ペーパー[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   BtsTask.exe は、BizTalk アプリケーションを作成するスクリプトを使用できます。 場合は、アプリケーションの作成をスクリプトに含めるし、パッケージに自動的に構築できますビルド サーバーで自動プロセスを使用しています。 アプリケーションを作成するスクリプトの詳細については、次を参照してください。[を管理する BizTalk アプリケーションの展開と](../core/deploying-and-managing-biztalk-applications.md)です。
   
 ## <a name="deploying-a-biztalk-assembly"></a>BizTalk アセンブリの配置  
  **実稼働コンピューターには、Visual Studio からアセンブリを展開できません。**  
@@ -54,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 -   複数のアプリケーションで共有されるアイテムは、独立したアプリケーションで展開します。 たとえば、2 つのアプリケーションでスキーマを共有している場合は、そのスキーマを独立したアプリケーションに配置します。 お勧めこのため、BizTalk グループ内の 1 つだけの成果物は、単一の一意なローカル識別子 (LUID) を持つことができます。 LUID は、成果物の名前および必要に応じて他の属性で構成されます。 1 つのアプリケーションにアイテムを含める別のアプリケーションからへの参照を作成していてを参照するアプリケーションが正しく機能しない、成果物を含むアプリケーションを停止するとします。  
   
-     このベスト プラクティスは、種類が File としてアプリケーションに追加されるファイル アイテム (Readme ファイル、スクリプトなど) 以外の、すべての種類のアイテムに適用できます。 これは、同じ名前の 2 つ以上のファイル アイテムを BizTalk グループに展開できるためです。 したがって複数のアプリケーションで同じ名前のファイルを使用できるので、このベスト プラクティスは当てはまりません。 この例では、1 つのアプリケーションを停止しても、他のアプリケーションには影響しません。 ファイル アイテムの追加の詳細については、次を参照してください。[ファイルをアプリケーションに追加する方法](http://go.microsoft.com/fwlink/?LinkId=154997)(http://go.microsoft.com/fwlink/?LinkId=154997)。  
+     このベスト プラクティスは、種類が File としてアプリケーションに追加されるファイル アイテム (Readme ファイル、スクリプトなど) 以外の、すべての種類のアイテムに適用できます。 これは、同じ名前の 2 つ以上のファイル アイテムを BizTalk グループに展開できるためです。 したがって複数のアプリケーションで同じ名前のファイルを使用できるので、このベスト プラクティスは当てはまりません。 この例では、1 つのアプリケーションを停止しても、他のアプリケーションには影響しません。 ファイル アイテムの追加の詳細については、次を参照してください。[ファイルをアプリケーションに追加する方法](../core/how-to-add-a-file-to-an-application.md)です。  
   
  **別のアプリケーションで共有 Web サイトの展開します。**  
   
@@ -75,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
 -   1 つの大きな .msi ファイルではなく複数の小さい .msi ファイルを展開します。  
   
-    -   Microsoft.BizTalk.ApplicationDeployment.Group と、コンポーネント サービス管理のインターフェイスで Microsoft.BizTalk.Deployment.DeployerComponent コンポーネントに関連付けられている 3,000 秒の既定のトランザクション タイムアウトを増加します。 これらのコンポーネントはそれぞれ、Microsoft.BizTalk.ApplicationDeployment.Engine および Microsoft.Biztalk.Deployment COM + アプリケーションに属しています。 詳細については、Microsoft サポート技術情報の記事 287499 を参照してください。 [MTS または COM + のトランザクション タイムアウト値を変更する方法](http://go.microsoft.com/fwlink/?LinkId=109589)(http://go.microsoft.com/fwlink/?LinkId=109589)。  
+    -   Microsoft.BizTalk.ApplicationDeployment.Group と、コンポーネント サービス管理のインターフェイスで Microsoft.BizTalk.Deployment.DeployerComponent コンポーネントに関連付けられている 3,000 秒の既定のトランザクション タイムアウトを増加します。 これらのコンポーネントはそれぞれ、Microsoft.BizTalk.ApplicationDeployment.Engine および Microsoft.Biztalk.Deployment COM + アプリケーションに属しています。 詳細については、Microsoft サポート技術情報の記事 287499 を参照してください。 [MTS または COM + のトランザクション タイムアウト値を変更する方法](https://support.microsoft.com/help/287499/how-to-change-the-transaction-time-out-value-for-mts-or-com)です。  
   
  **バインドが上書きされないようにします。**  
   
@@ -83,7 +80,7 @@ ms.lasthandoff: 09/20/2017
   
  **.Msi ファイルが安全であることを確認します。**  
   
--   .Msi ファイルには、機密データを含む可能性があります。 必ずファイルの安全性を確保する手順を実行してください。 .Msi ファイルのセキュリティの詳細については、次を参照してください。[セキュリティと Windows インストーラー](http://go.microsoft.com/fwlink/?LinkId=154998) (http://go.microsoft.com/fwlink/?LinkId=154998)。  
+-   .Msi ファイルには、機密データを含む可能性があります。 必ずファイルの安全性を確保する手順を実行してください。 .Msi ファイルのセキュリティの詳細については、次を参照してください。[セキュリティと Windows インストーラー](../core/security-and-windows-installer.md)です。  
   
  **バインド ファイルの安全性を確認してください。**  
   
@@ -96,12 +93,12 @@ ms.lasthandoff: 09/20/2017
 ## <a name="importing-a-biztalk-application"></a>BizTalk アプリケーションをインポートします。  
  **.Msi ファイルのファイルをインポートするスクリプト**  
   
--   BtsTask.exe は、既存の BizTalk .msi ファイルをインポートするスクリプトを使用できます。 .Msi ファイルをインポートするスクリプト作成の詳細については、次を参照してください[を管理する BizTalk アプリケーションの展開と](http://go.microsoft.com/fwlink/?LinkID=154210)(http://go.microsoft.com/fwlink/?。LinkID = 154210) および[BizTalk Server 2006: BizTalk Server アプリケーションの展開を理解する](http://go.microsoft.com/fwlink/?LinkID=101599)(http://go.microsoft.com/fwlink/?LinkID = 101599) ホワイト ペーパー。  
+-   BtsTask.exe は、既存の BizTalk .msi ファイルをインポートするスクリプトを使用できます。 .Msi ファイルをインポートするスクリプト作成の詳細については、次を参照してください。[を管理する BizTalk アプリケーションの展開と](../core/deploying-and-managing-biztalk-applications.md)です。 
   
     > [!NOTE]  
-    >  適用されます、ホワイト ペーパー[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+    >  このホワイト ペーパーは、BizTalk Server にも適用されます。  
   
--   処理前または処理後のスクリプトとして実行するスクリプトを追加することができます。 ただし、(インポート、インストール、またはアンインストール) でスクリプトを実行するコンテキストを決定するように環境変数を確認するようにスクリプトのロジックを含めるし、それに応じて処理する必要があります。 詳細については、前処理および後処理のスクリプトを使用して、次を参照してください。[前処理および後処理のスクリプトをアプリケーションの展開のカスタマイズを使用して](http://go.microsoft.com/fwlink/?LinkId=154995)(http://go.microsoft.com/fwlink/?LinkId=154995)。  
+-   処理前または処理後のスクリプトとして実行するスクリプトを追加することができます。 ただし、(インポート、インストール、またはアンインストール) でスクリプトを実行するコンテキストを決定するように環境変数を確認するようにスクリプトのロジックを含めるし、それに応じて処理する必要があります。 詳細については、前処理および後処理のスクリプトを使用して、次を参照してください。[前処理および後処理のスクリプトをアプリケーションの展開のカスタマイズを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)です。 
   
  **参照されるアイテムの存在を確認します。**  
   
@@ -117,4 +114,4 @@ ms.lasthandoff: 09/20/2017
   
  **インポート操作がタイムアウトした場合は、別の .msi ファイルにアプリケーションを分割します。**  
   
--   期間では 3,600 秒を超えた場合、インポート操作はタイムアウトします。 .Msi ファイルをインポートしようとしている操作がタイムアウトになる場合は、アプリケーションを再度エクスポートして、エクスポートするアイテムのサブセットを選択して 1 つ以上の .msi ファイルにアプリケーションのコンテンツを分割する必要があります。 .Msi ファイルにアプリケーションのエクスポートの詳細については、次を参照してください。[を BizTalk アプリケーションをエクスポートする方法](http://go.microsoft.com/fwlink/?LinkID=154848)(http://go.microsoft.com/fwlink/?LinkID=154848)。
+-   期間では 3,600 秒を超えた場合、インポート操作はタイムアウトします。 .Msi ファイルをインポートしようとしている操作がタイムアウトになる場合は、アプリケーションを再度エクスポートして、エクスポートするアイテムのサブセットを選択して 1 つ以上の .msi ファイルにアプリケーションのコンテンツを分割する必要があります。 .Msi ファイルにアプリケーションのエクスポートの詳細については、次を参照してください。 [BizTalk アプリケーションのエクスポート](../core/how-to-export-a-biztalk-application.md)です。

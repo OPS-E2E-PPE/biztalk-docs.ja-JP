@@ -17,14 +17,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2db4b3d5ff34a724b8b37a08f0bf60807d31a2b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 527b0d707d0f78672018f31e60ea54ac436e1db4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-messaging-server"></a>インストールして、メッセージング サーバー上の BizTalk Server の構成
-インストールおよび構成する方法について説明[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]SWIFT ネットワークに接続するために、メッセージング サーバーとして使用します。  
+このセクションでは、インストールして、SWIFT ネットワークに接続するために、メッセージング サーバーとして使用する BizTalk Server を構成する方法について説明します。  
   
 ### <a name="to-install-and-configure-biztalk-server-on-the-messaging-server"></a>インストールして、メッセージング サーバー上の BizTalk Server を構成するには  
   

@@ -16,14 +16,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19ff35b515e70c21e2349ae54847ba312d7ce0f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e7d693cdf70f7d29a79aa8999dde49f408b8815
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="data-types-common-schemas"></a>一般的なスキーマのデータ型します。
- **Datatypes_*\<バージョン >*.xsd * * スキーマ ファイル (ここで*\<バージョン >* HL7 のバージョン番号) の定義が含まれていますHL7 基本と複合データ型をすべて HL7 の対応するバージョンにします。 Segments_*\<バージョン >*.xsd ファイルでは、このファイルを使用して、対応する HL7 バージョンと一致します。 データ構造の Access データベースのテーブルを生成、DataTypes_*\<バージョン >*.xsd スキーマ ファイルです。 次の例は、HL7 の基本データ型にエントリを**ST**:  
+ **Datatypes_*\<バージョン\>*.xsd * * スキーマ ファイル (ここで*\<バージョン\>* HL7 のバージョン番号) HL7 の対応するバージョンのすべての HL7 基本と複合データ型の定義が含まれています。 Segments_*\<バージョン\>*.xsd ファイルでは、このファイルを使用して、対応する HL7 バージョンと一致します。 データ構造の Access データベースのテーブルを生成、DataTypes_*\<バージョン\>*.xsd スキーマ ファイルです。 次の例は、HL7 の基本データ型にエントリを**ST**:  
   
 ```  
 <xsd:simpleType name="ST">  

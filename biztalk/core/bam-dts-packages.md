@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 105d1b42848b73505d9a82df07693111708ce802
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a71431ee800c80c6972747f09b0e2420f961e33e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-dts-packages"></a>BAM DTS パッケージ
 管理者は、次の BAM DTS パッケージのパラメーターを更新できます。  
@@ -41,13 +41,11 @@ ms.lasthandoff: 09/20/2017
   
 -   **CubeUpdate** DTS パッケージ  
   
-     **bam_an _\<**   
-     ***CubeName* >**、キューブ名は、キューブの名前を指定します。 BAM ブックでは、ビュー名からキューブ名が生成されます。 BAM 構成 XML ドキュメントでキューブ名を変更した場合、新しいキューブ名が DTS パッケージ名に使用されます。  
+     **bam_an _\<**   ***CubeName* \>** 、キューブ名は、キューブの名前を指定します。 BAM ブックでは、ビュー名からキューブ名が生成されます。 BAM 構成 XML ドキュメントでキューブ名を変更した場合、新しいキューブ名が DTS パッケージ名に使用されます。  
   
 -   **DataMaintenance** DTS パッケージ  
   
-     **bam_dm _\<**   
-     ***ActivityName* >**ここで、アクティビティ名は、アクティビティの名前。  
+     **bam_dm _\<**   ***ActivityName* \>**ここで、アクティビティ名は、アクティビティの名前。  
   
  スケジュール済みの集計を集計するには、CubeUpdate DTS パッケージを実行します。 次のセクションでは、リアルタイムのデータ集計の時間帯を指定できます。  
   

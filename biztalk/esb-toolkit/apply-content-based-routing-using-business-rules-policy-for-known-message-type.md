@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b384c63b26f98a866390a001c7d7c2ec6f3f7cb2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 878a6e180aaf7e5f37c5cf98ca0a67790917859a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>方法: 既知のメッセージの種類のポリシーをルール実装のビジネスを使用してコンテンツ ベース ルーティング
 ## <a name="goal"></a>[目標]  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="to-create-a-bre-policy-to-route-using-custom-message-properties"></a>カスタム メッセージ プロパティを使用してルーティングする BRE ポリシーを作成するには  
  このルールは動的にメッセージをルーティングするのにために使用するエンドポイントを設定するのに顧客の名前を使用します。  
   
-1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[prague](../includes/prague-md.md)]** 、順にクリック**ビジネス ルール作成ツール**です。  
+1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント**BizTalk Server**、順にクリック**ビジネス ルール作成ツール**です。  
   
 2.  ポリシー エクスプ ローラーで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。 ポリシーに名前**RouteBasedOnCustomerKnownType**です。  
   
@@ -102,11 +102,11 @@ ms.lasthandoff: 09/20/2017
   
 10. ファクト エクスプ ローラーからドラッグして、**終点送信トランスポート場所の設定**の定義を**アクション**です。  
   
-11. をクリックして**\<空の文字列 >**し入力**C:\HowTos\Out\West%MessageID%.xml**です。  
+11. をクリックして**\<空の文字列\>**し入力**C:\HowTos\Out\West%MessageID%.xml**です。  
   
 12. ファクト エクスプ ローラーからドラッグして、**設定の終了点送信トランスポートの種類**定義**アクション**です。  
   
-13. ファクト エクスプ ローラーで、 **ESB です。TransportTypes**、展開**バージョン 1.0**、し、ドラッグ、**アダプター プロバイダー**定義**\<空の文字列 >**です。  
+13. ファクト エクスプ ローラーで、 **ESB です。TransportTypes**、展開**バージョン 1.0**、し、ドラッグ、**アダプター プロバイダー**定義**\<空の文字列\>**.  
   
 14. **アクション** ウィンドウで、展開、**アダプター プロバイダー**クリックしてドロップダウン リスト、**ファイル**です。  
   
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **アクション**セクションを右クリックして**C:\HowTos\Out\West%MessageID%.xml**、クリックして**引数の再設定**です。  
   
-8.  をクリックして**\<空の文字列 >**、し、入力**C:\HowTos\Out\East%MessageID%.xml**です。  
+8.  をクリックして**\<空の文字列\>**、し、入力**C:\HowTos\Out\East%MessageID%.xml**です。  
   
 #### <a name="to-add-a-routing-rule-for-unknown-customers"></a>不明な顧客のルーティング規則を追加するには  
   
@@ -152,11 +152,11 @@ ms.lasthandoff: 09/20/2017
   
 11. ファクト エクスプ ローラーからアクションを終点送信トランスポート場所の設定の定義をドラッグします。  
   
-12. をクリックして\<空の文字列 >、C:\HowTos\Out\CustomerUnknown%MessageID%.xml を入力します。  
+12. をクリックして\<空の文字列\>C:\HowTos\Out\CustomerUnknown%MessageID%.xml を入力します。  
   
 13. ファクト エクスプ ローラーからアクションを設定の終了点送信トランスポートの種類の定義をドラッグします。  
   
-14. ファクト エクスプ ローラーで、ESB を展開します。TransportTypes、バージョン 1.0 を展開し、アダプターのプロバイダー定義をドラッグ\<空の文字列 >。  
+14. ファクト エクスプ ローラーで、ESB を展開します。TransportTypes、バージョン 1.0 を展開し、アダプターのプロバイダー定義をドラッグ\<空の文字列\>です。  
   
 15. [操作] ウィンドウで、アダプター プロバイダーのボックスの一覧を展開し、[ファイル] をクリックします。  
   
@@ -168,7 +168,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>ESB itinerary DSL モデルを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -280,8 +280,8 @@ ms.lasthandoff: 09/20/2017
   
 -   [方法: ビジネス ルール ポリシーを使用して、日程を選択](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [方法: 動的にビジネス ルール ポリシーを使用して、メッセージ コンテキストに基づいたメッセージをルーティング](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [方法: ビジネス ルール ポリシーを利用し、メッセージ コンテキストに基づき、メッセージの経路を動的に決定する](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [メッセージのルーティング パターン](../esb-toolkit/message-routing-patterns.md)
+-   [メッセージ ルーティング パターン](../esb-toolkit/message-routing-patterns.md)

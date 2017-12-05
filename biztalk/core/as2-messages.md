@@ -12,17 +12,17 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09c2d2d922b9a7ed8a9dfd1ea4c64c369d0e9d2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d54d05a459eb6fef772add6d4bb77f0269fa0ba8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="as2-messages"></a>AS2 メッセージ
 このトピックでは、AS2 メッセージの構造、コンテキスト プロパティ、ヘッダーなど、AS2 メッセージについて説明します。  
   
 ## <a name="structure-of-an-as2-message"></a>AS2 メッセージの構造  
- [!INCLUDE[prague](../includes/prague-md.md)]、AS2 メッセージの構造に従って[RFC 4130「Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID = 184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
+ BizTalk Server で AS2 メッセージはに従って構造化[RFC 4130「Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID = 184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
   
  AS2 メッセージの基本構造は、AS2 固有のヘッダーが追加された HTTP メッセージ内の MIME 形式で構成されます。 HTTP、AS2、および MIME の各ヘッダーの下のメッセージの性質は、次のメッセージの種類によって異なります。  
   

@@ -17,11 +17,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a2c3c464e4b06e65ab15059da6ec3c36179ff25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2dde3f351c583be9037127c060d02c98d12b2fcb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility"></a>追跡プロファイル管理ユーティリティを使用して追跡プロファイルを展開する方法
 ビジネス マネージャーは、組織の特定のビジネス プロセスの管理や監視を強化するために、新しい追跡プロファイルの作成や既存のプロファイルの変更を行うようにソリューション開発者に依頼します。  
@@ -38,16 +38,16 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-deploy-the-tracking-profile-from-the-command-line-utility"></a>コマンド ライン ユーティリティから追跡プロファイルを展開するには  
   
-1.  コマンド プロンプトでディレクトリに移動\<インストール パス > \Program Files\Microsoft BizTalk Server\<バージョン > \Tracking\\です。  
+1.  コマンド プロンプトでディレクトリに移動\<インストール パス\>\Program Files\Microsoft BizTalk Server\<バージョン\>\Tracking\\です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-2.  型**bttdeploy.exe\<プロファイル名 > .btt**です。  
+2.  型**bttdeploy.exe\<プロファイル名\>.btt**です。  
   
 3.  Enter キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   
  [BAM のセキュリティに関する推奨事項](../core/bam-security-recommendations.md)   
- [ビジネス アクティビティ監視 (BAM)](../core/business-activity-monitoring-bam.md)
+ [ビジネス アクティビティの監視 (BAM)](../core/business-activity-monitoring-bam.md)

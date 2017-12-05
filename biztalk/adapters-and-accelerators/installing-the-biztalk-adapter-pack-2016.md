@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0939ddaa11e409ec42989062e28314c14277549
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7076b9c076b263a54a436c553b519671760ca473
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-biztalk-adapter-pack-2016"></a>BizTalk Adapter Pack 2016 をインストールします。
 インストール、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]次の 2 つの方法で。  
@@ -116,7 +116,7 @@ ms.lasthandoff: 09/20/2017
   
      [CEIP](http://go.microsoft.com/fwlink/p/?LinkId=144699)詳しく説明します。  
      
-     [ **OK**] を選択します。 
+     **[OK]** を選択します。 
   
     > [!NOTE]
     >  修復モードで、セットアップを実行して、この設定を変更することが常に**プログラム**です。  
@@ -236,7 +236,7 @@ ms.lasthandoff: 09/20/2017
   
 **64 ビット コンピューターでセットアップを実行してはスキーマ ファイルにアクセス中にエラーをスローする可能性があります。**  
   
-[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップによって、Microsoft.Adapters へのアクセス中にエラーがスローされます*。\<AdapterName >*_schema.xml ファイルが、アダプターのインストールを続行します。  
+[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップによって、Microsoft.Adapters へのアクセス中にエラーがスローされます*。\<AdapterName\>*_schema.xml ファイルが、アダプターのインストールを続行します。  
   
 **原因**  
   
@@ -244,7 +244,7 @@ ms.lasthandoff: 09/20/2017
   
 **解決策**  
   
-Microsoft.Adapters を手動でコピーします。 *\<AdapterName >*_schema.xml ファイルから*C:\Program files \microsoft BizTalk Adapter Pack (x64) \IIS スキーマ*に*C:\Windows\System32\inetsrv\config\schema*. 
+Microsoft.Adapters を手動でコピーします。 *\<AdapterName\>*_schema.xml ファイルから*C:\Program files \microsoft BizTalk Adapter Pack (x64) \IIS スキーマ*に*C:\Windows\System32\inetsrv\config\schema*です。 
   
 ## <a name="next-step"></a>次の手順
 [ポスト インストール手順](../adapters-and-accelerators/post-installation-steps-for-biztalk-adapter-pack-2016.md)

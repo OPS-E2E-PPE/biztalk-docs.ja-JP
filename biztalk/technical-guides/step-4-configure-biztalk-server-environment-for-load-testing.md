@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5520062cb6c9bbd937d5c131c41992a7013a9711
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf2e8b2b3751f31401ef0353944be0bdad3cbb2b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-configure-biztalk-server-environment-for-load-testing"></a>手順 4: ロード テストのための BizTalk Server 環境を構成します。
 このトピックは、BizTalk Server 受信場所、受信ポートを作成するための情報を提供し、送信ポートのトピックで説明するサンプル コードを実行するために必要[手順 1: BizTalk Server に送信ドキュメントに単体テストを作成](~/technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md)および[手順 3: 複数の単体テストを同時に実行するロード テストの作成](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)です。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="configure-biztalk-server-environment-for-load-tests"></a>ロード テスト用に BizTalk Server 環境を構成します。  
  トピックの説明に従って[手順 3: 実行複数単体テストを同時にロード テストを作成](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)、ロード テスト**BTS_Messaging_Step**単体テストを実行するように構成**BTSMessaging**と**BTSMessaging2**です。 さらに、これらの単体テストは C:\Projects\LoadTest\BTSLoad\TestMessages\TestXmlDocument.xml メッセージのコピーを読み込むし、エンドポイントに送信**BTSMessagingEP**と**BTSMessagingEP2**で定義されています。プロジェクトのアプリケーション構成 (app.config) ファイルの次のセクション:  
   
- \<\!--BTSMessagingEP-->\<エンドポイント address="net.tcp://*BizTalk Server コンピューター*: 8123/btsloadtest"バインド"netTcpBinding"bindingConfiguration を ="netTcpBinding"コントラクトを = ="System.ServiceModel.Channels.IRequestChannel"名前 ="BTSMessagingEP"/>\<エンドポイント address="net.tcp://*BizTalk Server コンピューター*: 8123/btsloadtest"バインド"netTcpBinding"を =bindingConfiguration ="netTcpBinding"contract="System.ServiceModel.Channels.IRequestChannel"名前 ="BTSMessagingEP2"/>  
+ \<\!--BTSMessagingEP--\>\<エンドポイント address="net.tcp://*BizTalk Server コンピューター*: 8123/btsloadtest"バインド"netTcpBinding"bindingConfiguration を ="netTcpBinding"コントラクトを = ="System.ServiceModel.Channels.IRequestChannel"名前 ="BTSMessagingEP"/\>\<エンドポイント address="net.tcp://*BizTalk Server コンピューター*: 8123/btsloadtest"バインド"netTcpBinding"を =bindingConfiguration ="netTcpBinding"contract="System.ServiceModel.Channels.IRequestChannel"名前 ="BTSMessagingEP2"/                  \>  
   
 > [!NOTE]
 >  既に述べた*BizTalk Server コンピューター*プレース ホルダーの実際の BizTalk Server コンピューター名または BizTalk Server コンピューターがネットワーク負荷分散 (NLB) クラスターのメンバーとして構成されている場合は、*BizTalk Server コンピューター*名または対応する NLB 仮想サーバーのアドレスのプレース ホルダーです。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 |[信頼されている認証]|このボックスの取り消しがないことを確認します。|  
 |32 ビットのみ|このボックスの取り消しがないことを確認します。|  
 |[グループの既定のホストにする]|このボックスの取り消しがないことを確認します。|  
-|[Windows グループ]|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループです。 既定のインプロセス ホストの名前はいずれかの用に作成ウィンドウ グループ*\<コンピューター名 >*\BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または*\<ドメイン名前 >*\BizTalk Application Users (複数のサーバーのドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名 >*と*\<ドメイン名 >*実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。   <br /><br /> かどうかには、このホストの新しいグループを作成し、トピックで説明されている特権が必要[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803)、BizTalk Server のドキュメントにします。|  
+|[Windows グループ]|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループです。 既定のインプロセス ホストの名前はいずれかの用に作成ウィンドウ グループ*\<コンピューター名\>*\BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>*\BizTalk Application Users (複数のサーバーのドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>*と*\<ドメイン名\>*実際のコンピューター名またはドメイン名のプレース ホルダーグループの作成時に使用されます。   <br /><br /> かどうかには、このホストの新しいグループを作成し、トピックで説明されている特権が必要[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803)、BizTalk Server のドキュメントにします。|  
   
  「受信」ホストを作成する「送信」ホストを作成するときに実行した手順を繰り返します。 次のプロパティ値を持つ、「受信」ホストを構成します。  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
 |[信頼されている認証]|このボックスの取り消しがないことを確認します。|  
 |32 ビットのみ|このボックスの取り消しがないことを確認します。|  
 |[グループの既定のホストにする]|このボックスの取り消しがないことを確認します。|  
-|[Windows グループ]|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループです。 既定のインプロセス ホストの名前はいずれかの用に作成ウィンドウ グループ*\<コンピューター名 >*\BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または*\<ドメイン名前 >*\BizTalk Application Users (複数のサーバーのドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名 >*と*\<ドメイン名 >*実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。   <br /><br /> かどうかには、このホストの新しいグループを作成し、トピックで説明されている特権が必要[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803)、BizTalk Server のドキュメントにします。|  
+|[Windows グループ]|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループです。 既定のインプロセス ホストの名前はいずれかの用に作成ウィンドウ グループ*\<コンピューター名\>*\BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>*\BizTalk Application Users (複数のサーバーのドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>*と*\<ドメイン名\>*実際のコンピューター名またはドメイン名のプレース ホルダーグループの作成時に使用されます。   <br /><br /> かどうかには、このホストの新しいグループを作成し、トピックで説明されている特権が必要[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803)、BizTalk Server のドキュメントにします。|  
   
 ### <a name="create-instances-of-the-biztalk-server-send-and-receive-hosts"></a>BizTalk Server 送信のインスタンスを作成し、受信ホスト  
  BizTalk Server のドキュメントのトピックの手順に従って[ホスト インスタンスを追加する方法](http://go.microsoft.com/fwlink/?LinkId=208596)(http://go.microsoft.com/fwlink/?LinkId=208596) を作成および BizTalk Server の「送信」ホストのインスタンスを開始します。 BizTalk Server グループ内の各 BizTalk サーバーでを実行し、次のプロパティ値を持つ各ホスト インスタンスを構成する「送信」ホストのインスタンスを構成します。  
@@ -139,7 +139,7 @@ ms.lasthandoff: 09/20/2017
   
 |プロパティ|値|  
 |--------------|-----------|  
-|General\Address (URI)|net.tcp://*\<コンピューター名 >*: 2001/TCP1**重要:***\<コンピューター名 >*に使用する実際のコンピューター名のプレース ホルダーこれは WCF を介して送信されるメッセージを使用する設計 IndigoService.exe をホストするには   IndigoService.exe には、ごくわずかなリソースが必要であるために、それで何 IndigoService.exe を BizTalk Server グループのデータベースに使用する SQL Server コンピューターで実行するは多くの場合です。 使用される BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)。|  
+|General\Address (URI)|net.tcp://*\<コンピューター名\>*: 2001/TCP1**重要:***\<コンピューター名\>*プレース ホルダーIndigoService.exe をホストするために使用する実際のコンピューター名、するには WCF を介して送信されるメッセージを使用する設計されています。   IndigoService.exe には、ごくわずかなリソースが必要であるために、それで何 IndigoService.exe を BizTalk Server グループのデータベースに使用する SQL Server コンピューターで実行するは多くの場合です。 使用される BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)。|  
 |Binding\Binding 型|**customBinding**|  
   
  WCF カスタム バインドの種類のほとんどの場合と同様、 **customBinding**次の値に設定する必要がありますが、いくつかのプロパティを公開するバインドの種類。  
@@ -181,9 +181,9 @@ ms.lasthandoff: 09/20/2017
   
  その後、StartIndigoService.bat をダブルクリックして IndigoService.exe を起動します。 IndigoService.exe は、IndigoService.exe.config ファイルで指定されたエンドポイントに送信されたメッセージを消費します。  
   
- \<エンドポイント アドレス ="net.tcp://localhost: 2001/TCP1"バインド"netTcpBinding"bindingConfiguration を = =「"binding1 という」名前 ="endpoint1"contract="IndigoService.IServiceTwoWaysVoidNonTransactional"/>  
+ \<エンドポイント アドレス ="net.tcp://localhost: 2001/TCP1"バインド"netTcpBinding"bindingConfiguration を = =「"binding1 という」名前 ="endpoint1"contract="IndigoService.IServiceTwoWaysVoidNonTransactional"/\>  
   
- これは、送信ポート アドレスが構成で、アドレス (URI) net.tcp:// の理由*\<コンピューター名 >*: 2001/TCP1  
+ これは、送信ポート アドレスが構成で、アドレス (URI) net.tcp:// の理由*\<コンピューター名\>*: 2001/TCP1  
   
  IndigoService.exe には、ごくわずかなリソースが必要であるために、それで何 IndigoService.exe を BizTalk Server データベース用の SQL Server コンピューターで実行するは多くの場合です。  
   

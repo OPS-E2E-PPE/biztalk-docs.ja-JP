@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5970c0bfa23cc7da33b2c041cc326987ec278e09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e674ad6777ebff53fefe053e1b6af46ebc54ef3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---second-input-for-table-extractor-functoid-not-valid"></a>エラー - の 2 番目の入力テーブル抽出 Functoid 有効
 **エラー コード**  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  **ユーザーの操作**  
   
- 関連するへの入力パラメーターを確認してください**テーブル抽出**functoid を使用してアクセスその**入力パラメーター**プロパティおよび**構成\<Functoid >Functoid**  ダイアログ ボックスでは、次の表に示すようにします。  
+ 関連するへの入力パラメーターを確認してください**テーブル抽出**functoid を使用してアクセスその**入力パラメーター**プロパティおよび**構成\<Functoid\>Functoid**  ダイアログ ボックスでは、次の表に示すようにします。  
   
 |テーブル抽出 Functoid の入力パラメーター番号|Description|  
 |-----------------------------------------------------|-----------------|  

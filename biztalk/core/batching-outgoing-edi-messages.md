@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f95ed755dcc709084d52c6fb8b207e9bbd9e866d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 852b85e0de23e01e39891adba56053683d18a9b8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="batching-outgoing-edi-messages"></a>送信 EDI メッセージのバッチ処理
 受信側のビジネス パートナーに関連するアグリーメントに対してバッチ処理が有効になっている場合、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では EDI トランザクション セットがバッチ処理されます。 アグリーメントに関する EDI プロパティを設定すると、以下を行うことができます。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   バッチ アクティベーション条件の設定  
   
- Microsoft [!INCLUDE[prague](../includes/prague-md.md)] EDI および AS2 を使用すると、EDI インターチェンジの以下の処理が可能になります。  
+ Microsoft BizTalk Server EDI および AS2 の EDI インターチェンジの以下の処理を有効にします。  
   
 -   EDI インターチェンジにトランザクション セットや受信確認を含めることができます。  
   
@@ -47,6 +47,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [送信バッチの構成](../core/configuring-an-outgoing-batch.md)  
   
--   [バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)  
+-   [バッチ EDI インターチェンジのアセンブル](../core/assembling-a-batched-edi-interchange.md)  
   
--   [保存されたバッチ インターチェンジを送信します。](../core/sending-a-preserved-batch-interchange.md)
+-   [保存されたバッチ インターチェンジの送信](../core/sending-a-preserved-batch-interchange.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "46"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38530cfdbde78e96fb41093c79b6a5d1bb8fd132
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 2bf5ba8aef29476f58bfa000b75fbe481238eb62
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスの発行
   
@@ -25,7 +25,7 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="introduction"></a>概要
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] では、オーケストレーションを [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] サービスとして公開できます。 BizTalk の受信場所を通じて、オーケストレーションにより [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] エンドポイントを公開し、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] クライアントから呼び出せるようにします。 **BizTalk WCF サービス公開ウィザード**オーケストレーション、受信場所として公開する簡単な方法を提供します。  
+ BizTalk Server のオーケストレーションとしてパブリッシュできるは[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]サービス。 BizTalk の受信場所を通じて、オーケストレーションにより [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] エンドポイントを公開し、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] クライアントから呼び出せるようにします。 **BizTalk WCF サービス公開ウィザード**オーケストレーション、受信場所として公開する簡単な方法を提供します。  
   
  Wcf-netmsmq アダプターを使用して、 **NetMsmqBinding**基になるトランスポートとして Microsoft メッセージ キュー (MSMQ とも呼ばれます) を使用するためのサポートを提供するバインディング。 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスのクライアントは、WCF-NetMSMQ アダプターを使用するように構成された受信場所を使用して、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージを MSMQ キューに送信します。 アダプターは MSMQ キューから [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージを取得し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 形式に変換して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ ボックス データベースに書き込みます。  
   
@@ -46,7 +46,7 @@ ms.lasthandoff: 10/17/2017
   
 -   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft Visual Studio が必要です。  
   
--   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のセットアップ時にインストールするオプションです。  
+-   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft BizTalk Server のセットアップ時にインストールするオプションです。  
   
 -   管理タスクの実行に使用するコンピューターで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソール内の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション設定を構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーであるユーザー アカウントとして実行する必要があります。 また、アプリケーションの展開、ホスト インスタンスの管理、およびその他の必要なタスクを実行するには、このユーザー アカウントはローカル管理者グループのメンバーである必要もあります。  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/17/2017
   
 3.  ソリューション エクスプ ローラーで、 **BizTalkApp**、開き、 **OrderProcess.odx**を確認します。 サンプル オーケストレーションは発注要求メッセージを受信し、注文応答メッセージを返します。  
   
-4.  **BizTalkApp**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。 右クリックし、 **BizTalkApp**プロジェクトをクリックして**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リストをクリックして**\<新規 >**を入力し、`keyfile.snk`で、**キー ファイルの名前** テキスト ボックス。 オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
+4.  **BizTalkApp**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。 右クリックし、 **BizTalkApp**プロジェクトをクリックして**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規\>**を入力し、`keyfile.snk`で、**キー ファイル名** テキスト ボックス。 オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
   
 5.  クリックして、**展開**タブをクリックし、変更、**サーバー**プロパティだけでなく、BizTalk 管理データベースを別のデータベース サーバーを使用する場合**LOCALHOST**です。  確認**BizTalk アプリケーション**に値が設定されている**WCFNetMsmqAdapterPublishing**です。 確認**グローバル アセンブリ キャッシュにインストール**に設定されている**True**です。  
   
@@ -78,31 +78,31 @@ ms.lasthandoff: 10/17/2017
   
     1.  をクリックして**開始**を右クリックして**コンピューター**、順にクリック**管理**を開くには**サーバー マネージャー**です。  
   
-    2.  展開して、**機能**ノード。  場合**メッセージ キュー**がインストールされていないを右クリックして**機能**を選択し、**機能の追加**です。 確認**メッセージ キュー**、をクリックして**[次へ]**、順にクリック**インストール**そのシステムで MSMQ をインストールします。  
+    2.  展開して、**機能**ノード。  場合**メッセージ キュー**がインストールされていないを右クリックして**機能**を選択し、**機能の追加**です。 確認**メッセージ キュー**、 をクリックして**次へ**、順にクリック**インストール**そのシステムで MSMQ をインストールします。  
   
 2.  次の手順で、メッセージ キュー サービスがコンピューターで開始され、WCF-NetMsmq アダプターで使用できることを確認します。  
   
-    1.  をクリックして**開始**、をポイント**管理ツール**、順にクリック**Services**。  
+    1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**Services**。  
   
     2.  **Services**、ことを確認して、**ステータス**の**メッセージ キュー**サービスは**Started**です。 サービスが開始されていない場合は右クリック**メッセージ キュー**、クリックして**開始**です。  
   
 3.  WCF-NetMsmq がクライアントからの受信 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージを取得する元となる、受信場所が使用するターゲット キューを作成します。  
   
-    1.  をクリックして**開始**、をポイント**管理ツール**、順にクリック**コンピューターの管理**です。  
+    1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**コンピューターの管理**です。  
   
-    2.  **コンピューターの管理**、展開**サービスとアプリケーション**、展開**メッセージ キュー**を右クリックして**専用キュー**、をポイント**新規**、クリックして**プライベート キュー**です。  
+    2.  **コンピューターの管理**、展開**サービスとアプリケーション**、展開**メッセージ キュー**を右クリックして**専用キュー**、 をポイント**新規**、クリックして**プライベート キュー**です。  
   
     3.  **新しい専用キュー**  ダイアログ ボックスで、「`WCFNetMsmqAdapterPublishing`で、**キュー名**テキスト ボックスで、、**トランザクション**チェック ボックスをクリックしてして**OK**.  
   
 4.  次の手順に従って、サンプル アプリケーションの WCF-NetMsmq 受信場所を作成します。  
   
-    1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+    1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
     2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開**アプリケーション**、展開**WCFNetMsmqAdapterPublishing**を右クリックして**受信ポート**、指す**新規**、順にクリック**一方向の受信ポート。**  
   
     3.  **受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「 `WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder`、クリックしてして**ok**です。  
   
-    4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**[wcfnetmsmqadapterpublishing.receivepurchaseorder]**、をポイント**新規**、クリックして**受信場所**.  
+    4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**[wcfnetmsmqadapterpublishing.receivepurchaseorder]**、 をポイント**新規**、クリックして**受信場所**.  
   
     5.  **受信場所のプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq`です。  
   
@@ -124,7 +124,7 @@ ms.lasthandoff: 10/17/2017
   
 5.  サンプル アプリケーションの FILE 送信ポートを作成します。 このポートは、サービスの基となるオーケストレーションの注文書からの応答をルーティングします。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFNetMsmqAdapterPublishing**を右クリックして**送信ポート**、をポイント**新規**をクリックして**静的な一方向送信ポート**です。  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WCFNetMsmqAdapterPublishing**を右クリックして**送信ポート**、] をポイント**新規**をクリックして**静的な一方向送信ポート**です。  
   
     2.  **送信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WCFNetMsmqAdapterPublishing.SendPurchaseOrder.File`です。  
   
@@ -146,7 +146,7 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="publish-the-metadata-for-the-wcf-netmsmq-receive-location"></a>Wcf-netmsmq 受信場所のメタデータを公開します。  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk WCF サービス公開ウィザード**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk WCF サービス公開ウィザード**です。  
   
 2.  **BizTalk WCF サービス公開ウィザードへようこそ** ページで、をクリックして**次**です。  
   
@@ -156,7 +156,7 @@ ms.lasthandoff: 10/17/2017
   
 5.  **BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)**テキスト ボックスで、をクリックして**参照**を参照する、 **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**フォルダーで、をクリックし、サンプル オーケストレーションを含むアセンブリをダブルクリックして**次**です。  
   
-6.  **オーケストレーションとポート** ページで、ことを確認して、**ポート: PurchaseOrderRequestPort**ノードがページで、選択されているしをクリックして**次**です。  
+6.  **オーケストレーションとポート** ページで、ことを確認して、**ポート: PurchaseOrderRequestPort**ノードがページで、選択されているし をクリックして**次**です。  
   
      受信ポートの MEX が公開され、メッセージを受信場所に送信するためにクライアントによって使用されます。  
   
@@ -164,7 +164,7 @@ ms.lasthandoff: 10/17/2017
   
 8.  **WCF サービスの場所** ページで、次の場所を指定する操作を実行、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスを作成して、をクリックする**次**:  
   
-    1.  **場所**テキスト ボックスで、「Web ディレクトリ名、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスが実行されるかをクリックして**参照**Web ディレクトリを選択します。 このチュートリアルでは、既定の場所を選択したままに (http://localhost/*\<BizTalk アセンブリ名 >*) で、**場所**テキスト ボックス。  
+    1.  **場所**テキスト ボックスで、「Web ディレクトリ名、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスが実行されるかをクリックして**参照**Web ディレクトリを選択します。 このチュートリアルでは、既定の場所を選択したままに (http://localhost/*\<BizTalk アセンブリ名\>*) で、**場所**テキスト ボックス。  
   
     2.  選択、 **WCF サービスへの匿名アクセスを許可する**オプション。 : このオプションでは、作成した仮想ディレクトリに匿名アクセスを追加します。 このウィザードで作成される Web アプリケーションに匿名認証を許可するには、このオプションをオンにする必要があります。  
   
@@ -176,7 +176,7 @@ ms.lasthandoff: 10/17/2017
   
 1.  コマンド プロンプトを開きに移動、 **C:\inetpub\wwwroot\Microsoft.Samples.BizTalk.WCF.NetMsmqPublishing.BizTalkApp**フォルダー場所、 **BizTalk WCF サービス公開ウィザード**作成、 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 開く、 **Web.config**ファイルのメモ帳を使用します。  
   
-2.  メモ帳で、内部の次の行を追加、  **\<system.web >**要素。  
+2.  メモ帳で、内部の次の行を追加、  **\<system.web\>** 要素。  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -187,9 +187,9 @@ ms.lasthandoff: 10/17/2017
   
 3.  次の手順に従い、公開された [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスを Internet Explorer を使用してテストします。  
   
-    1.  をクリックして**開始**、をポイント**管理者ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
+    1.  をクリックして**開始**、 をポイント**管理者ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-    2.  IIS マネージャーでは、BizTalk データベースの正しいアクセス許可を持つこのサービスが実行されるアプリケーション プールを作成します。 右クリック**アプリケーション プール**、をクリックして**アプリケーション プールの追加**アプリケーション プールの名前を入力し、クリックして**OK**です。  
+    2.  IIS マネージャーでは、BizTalk データベースの正しいアクセス許可を持つこのサービスが実行されるアプリケーション プールを作成します。 右クリック**アプリケーション プール**、] をクリックして**アプリケーション プールの追加**アプリケーション プールの名前を入力し、[クリックして**OK**です。  
   
     3.  展開**アプリケーション プール**作成したアプリケーション プールを右クリックし、**詳細設定**です。 **プロセス モデル**セクションで、アクセスを許可されているアカウントを入力して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースで、 **Identity**フィールドです。  
   
@@ -209,9 +209,9 @@ ms.lasthandoff: 10/17/2017
   
 2.  前の手順でコピーした、完全な WSDL アドレスを含む svcutil.exe コマンド ラインを貼り付け、Enter キーを押します。 これは、クラスを作成、プロキシ、 **BizTalkServiceInstance.cs**、およびアプリケーション構成ファイル、 **output.config**です。コマンド プロンプト ウィンドウは、最後のセクションで使用するため開いたままにします。  
   
-3.  Visual Studio で、ソリューション エクスプ ローラーで右クリックし**WCFClient**、をポイント**追加**、クリックして**既存項目の**です。  
+3.  Visual Studio で、ソリューション エクスプ ローラーで右クリックし**WCFClient**、 をポイント**追加**、クリックして**既存項目の**です。  
   
-4.  **既存項目の追加**ダイアログ ボックスを参照、 **WCFClient**フォルダーを選択**すべてのファイル (\*.\*)**で、**ファイルの種類**ドロップダウン リストで、 **BizTalkServiceInstance.cs**と**output.config**ファイル、および  をクリックして**追加**です。  
+4.  **既存項目の追加** ダイアログ ボックスを参照、 **WCFClient**フォルダーを選択**すべてのファイル (\*.\*)**で、**ファイルの種類**ドロップダウン リストで、 **BizTalkServiceInstance.cs**と**output.config**ファイル、および  をクリックして**追加**です。  
   
 5.  展開**WCFClient**を右クリックして**output.config**、 をクリックして**の名前を変更**、し、入力`App.config`新しい名前として。  
   
@@ -242,4 +242,4 @@ ms.lasthandoff: 10/17/2017
 ## <a name="see-also"></a>参照  
  [構成、Wcf-netmsmq 受信場所](../core/how-to-configure-a-wcf-netmsmq-receive-location.md)   
  [WCF アダプターのチュートリアル](../core/wcf-adapter-walkthroughs.md)   
- [受信アダプターの wcf サービス メタデータの公開](../core/publishing-service-metadata-for-the-wcf-receive-adapters.md)
+ [WCF 受信アダプタへのサービス メタデータの公開](../core/publishing-service-metadata-for-the-wcf-receive-adapters.md)

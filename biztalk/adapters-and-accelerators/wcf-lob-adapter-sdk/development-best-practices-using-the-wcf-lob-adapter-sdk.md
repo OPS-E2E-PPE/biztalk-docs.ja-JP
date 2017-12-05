@@ -12,11 +12,11 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9786896a4a5983a438dd855dcc858ba4485cbc1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4693d3ae4a443138c078e0da415fb72205dbd528
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="development-best-practices-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して、開発のベスト プラクティス
 このトピックの「ベスト プラクティスを使用するには、アプリケーションおよびアダプターを向上させるためにします。  
@@ -103,7 +103,7 @@ public interface ICalculator
 |------------|-----------------|  
 |デザイン時|使用する場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]アダプタでは、クライアント資格情報の種類を指定することができます。|  
 |実行時|生成された .NET CLR プロキシを使用する場合できるプログラムでクライアント資格情報を設定します。<br /><br /> `static void Main(string[] args) {    EchoServiceClient client = new EchoServiceClient();    client.ClientCredentials.UserName.UserName = "TestUser";    client.ClientCredentials.UserName.Password = "TestPassword";    string response=client.EchoString("Test String"); }`<br /><br /> 代わりに、チャネルと直接対話する必要がある場合 WCF チャネル モデルを使用してチャネル ファクトリを作成するときに、クライアントの資格情報を指定することができます。<br /><br /> `EchoAdapterBinding binding = new EchoAdapterBinding(); binding.Count = 3; ClientCredentials clientCredentials = new ClientCredentials(); clientCredentials.UserName.UserName = "TestUser"; clientCredentials.UserName.Password = "TestPassword"; BindingParameterCollection bindingParms = new BindingParameterCollection(); bindingParms.Add(clientCredentials); EndpointAddress address = new EndpointAddress("echo://"); IChannelFactory<IRequestChannel> requestChannelFactory = binding.BuildChannelFactory<IRequestChannel>(bindingParms); requestChannelFactory.Open();`|  
-|WCF の構成|クライアント構成ファイルで追加、 \<endpointBehaviors > 要素を含む\<clientCredentials >。<br /><br /> `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">       <system.serviceModel>           . . . . .           <behaviors>             <endpointBehaviors>               <behavior name="clientEndpointCredential">                 <clientCredentials>                   <windows allowNtlm="false" allowedImpersonationLevel="Delegation" />                    </clientCredentials>               </behavior>             </endpointBehaviors>           </behaviors>       </system.serviceModel>   </configuration>`|  
+|WCF の構成|クライアント構成ファイルで追加、 \<endpointBehaviors\>を含む要素\<clientCredentials\>です。<br /><br /> `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">       <system.serviceModel>           . . . . .           <behaviors>             <endpointBehaviors>               <behavior name="clientEndpointCredential">                 <clientCredentials>                   <windows allowNtlm="false" allowedImpersonationLevel="Delegation" />                    </clientCredentials>               </behavior>             </endpointBehaviors>           </behaviors>       </system.serviceModel>   </configuration>`|  
 |BizTalk の使用|追加することができますを使用してアダプターを使用する WCF アダプターを使用する場合、 **clientCredentials**で動作拡張機能、**動作**タブです。これを追加した後は、エンドポイントの動作で目的のクライアント資格情報を設定できます。|  
   
 ## <a name="do-not-return-both-strongdatasettype-and-weakdatasettype"></a>両方を返さない StrongDataSetType と WeakDataSetType  
@@ -137,16 +137,16 @@ internal static QualifiedType GetDataSetQualifiedType(MyAdapterBindingProperties
  たとえば場合、 `DefaultXsdFileNamePrefix` "MyAdapter"に設定されていると、`fileNameHint`注釈が"Stream"に設定されている、MyAdapterStream.xsd の名前は、XSD スキーマを作成します。  
   
 ```  
-\<xs:schema elementFormDefault='qualified' targetNamespace='http://schemas.microsoft.com/Message' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:tns='http://schemas.microsoft.com/Message'>  
-\<xs:annotation>  
-\<xs:appinfo>  
-\<fileNameHint xmlns='http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd'>Stream</fileNameHint>  
-\</xs:appinfo>  
-\</xs:annotation>  
-\<xs:simpleType name='StreamBody'>  
-\<xs:restriction base='xs:base64Binary' />  
-\</xs:simpleType>  
-\</xs:schema>  
+<xs:schema elementFormDefault='qualified' targetNamespace='http://schemas.microsoft.com/Message' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:tns='http://schemas.microsoft.com/Message'>  
+<xs:annotation>  
+<xs:appinfo>  
+<fileNameHint xmlns='http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd'>Stream</fileNameHint>  
+</xs:appinfo>  
+</xs:annotation>  
+<xs:simpleType name='StreamBody'>  
+<xs:restriction base='xs:base64Binary' />  
+</xs:simpleType>  
+</xs:schema>  
   
 ```  
   

@@ -16,16 +16,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba22559730a458a3c1968c991008c67ac0e4f5c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d81e5fe477aca032714ca124d8300c9b6c2d5ba
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="samples"></a>サンプル
 このセクションでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ソフトウェア開発キット (SDK) に含まれているサンプルについて説明します。 ここでは、サンプルの構築方法、実行方法、予想される実行結果など、各サンプルについて詳しく説明します。  
   
- サンプルが含まれている、 \<*ドライブ*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk\ フォルダーです。  
+ サンプルが含まれている、 \<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\ フォルダーです。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

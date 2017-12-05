@@ -12,11 +12,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42acb4f91a3b09b202e646e1220c0ea819103f04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af3177e3004c81d368eab8738a201e90c95d1b69
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="key-features-in-biztalk-adapter-for-sql-server"></a>BizTalk Adapter for SQL Server の主要な機能
 このセクションでは、機能を一覧表示[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]です。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
 |ユーザー定義型 (Udt) のサポート|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]テーブルと Udt を含むビューで操作の実行をサポートしています。 Udt のサポートについては、次を参照してください。[テーブルと、SQL アダプターを使用してユーザー定義型を持つビューに対して操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)です。|  
 |Transact SQL と CLR を実行するためのサポートはストアド プロシージャと関数|アダプターのクライアントには、Transact SQL と CLR を実行できます。<br /><br /> の SQL Server データベース内ストアド プロシージャはします。<br />スカラーおよびテーブル値関数の SQL Server データベース。<br /><br /> 詳細については、次を参照してください。[アダプターを使用して実行する操作ができますか。](https://msdn.microsoft.com/library/cc185435(v=bts.10).aspx)です。|  
 |FOR XML 句の有無のストアド プロシージャを実行するためのサポート|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]または FOR XML 句を使用せずに、SELECT ステートメントがあるストアド プロシージャを実行することができます。 アダプターの以前のバージョンでは、SELECT ステートメントで FOR XML 句をいたストアド プロシージャのみをサポートします。 ストアド プロシージャの実行方法の詳細については、次を参照してください。 [SQL アダプタを使用して SQL Server でストアド プロシージャの実行](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md)です。|  
-|ラージ オブジェクトのストリーミングをサポートします。|アダプターのクライアントは、大きなサイズの文字とバイナリ型のフィールド セットを使用して SQL Server データベースにストリーム配信できます\<列名 > 操作 < column_name > は型 varchar (max)、nvarchar (max) または varbinary (max) の列の名前。 セット\<列名 > の操作でを挿入または SQL Server 2008 データベース内の FILESTREAM データを更新することもできます。 詳細については、次を参照してください。[テーブルおよびビューを含む大きなデータ型を SQL アダプターを使用して操作を](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)です。 **注:**文字と SQL Server のテーブルとビューのバイナリ型のフィールドを読み取り、アダプターのクライアントが選択操作を使用します。|  
+|ラージ オブジェクトのストリーミングをサポートします。|アダプターのクライアントは、大きなサイズの文字とバイナリ型のフィールド セットを使用して SQL Server データベースにストリーム配信できます\<列名\>型 varchar (max)、nvarchar (max) または varbinary (max) の列の名前を < column_name > がここでは、操作. セット\<列名\>操作でを挿入または SQL Server 2008 データベース内の FILESTREAM データを更新することもできます。 詳細については、次を参照してください。[テーブルおよびビューを含む大きなデータ型を SQL アダプターを使用して操作を](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)です。 **注:**文字と SQL Server のテーブルとビューのバイナリ型のフィールドを読み取り、アダプターのクライアントが選択操作を使用します。|  
 |クエリ通知のサポート|アダプターのクライアントは、トリガーを起動する SELECT ステートメントまたはストアド プロシージャに基づいて SQL Server からクエリ通知を受信できます。 としてアダプター クライアントと、結果セットの SELECT ステートメントまたはストアド プロシージャの変更時に、SQL Server で通知が送信されます。 クエリ通知の詳細については、次を参照してください。[クエリ通知の受信 BizTalk Server を使用して](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)です。|  
 |任意の SQL ステートメントを実行するためのサポート|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作を使用して任意の SQL ステートメントを実行するアダプターのクライアントを有効にします。 これらの操作の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)です。|  
 |複合操作のサポート|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントが、SQL Server データベースでの複合操作を実行できるようにします。 複合操作は、次の操作、および任意の順序で任意の数を含めることができます。<br /><br /> -Insert、Update、および Delete 操作で、テーブルおよびビュー。<br />-アダプターでの操作として表示されたストアド プロシージャです。<br /><br /> 複合操作の詳細については、次を参照してください。[複合操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/message-schemas-for-composite-operations.md)です。|  

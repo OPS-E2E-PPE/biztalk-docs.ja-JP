@@ -16,14 +16,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7492ac6e1f8e43559fa921f9ddd3b60d644fe5f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e8248ec62e75a058566eefef1942e1f82061dbb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-soap-headers-in-wcf-messages-with-orchestrations"></a>オーケストレーションでの WCF メッセージにおける SOAP ヘッダーの使用
-コンテキスト プロパティを使用するオーケストレーションでの送信 WCF メッセージでは、カスタムの SOAP ヘッダーを送信する**WCF です。OutboundCustomHeaders**です。 WCF アダプタは、カスタムの SOAP ヘッダーを、WCF インフラストラクチャが WS-Addressing、WS-Security、WS-AtomicTransaction などの Web サービス標準に使用する標準 SOAP ヘッダーと組み合わせて送信します。 使用すると、 **OutboundCustomHeaders**プロパティ、プロパティには、 \<**ヘッダー**> 要素をルート要素として。 内のすべてのカスタム SOAP ヘッダーに配置する必要があります、 \<**ヘッダー**> 要素。 カスタム SOAP ヘッダーの値が空の文字列の場合は、割り当てる必要があります\<**ヘッダー**>\</**ヘッダー**> または\< **ヘッダー**/> に、 **OutboundCustomHeaders**プロパティです。  
+コンテキスト プロパティを使用するオーケストレーションでの送信 WCF メッセージでは、カスタムの SOAP ヘッダーを送信する**WCF です。OutboundCustomHeaders**です。 WCF アダプタは、カスタムの SOAP ヘッダーを、WCF インフラストラクチャが WS-Addressing、WS-Security、WS-AtomicTransaction などの Web サービス標準に使用する標準 SOAP ヘッダーと組み合わせて送信します。 使用すると、 **OutboundCustomHeaders**プロパティ、プロパティには、 \<**ヘッダー** \>ルート要素としての要素。 内のすべてのカスタム SOAP ヘッダーに配置する必要があります、 \<**ヘッダー** \>要素。 カスタム SOAP ヘッダーの値が空の文字列の場合は、割り当てる必要があります\<**ヘッダー**\>\</**ヘッダー** \>または\<**ヘッダー** / \>を**OutboundCustomHeaders**プロパティです。  
   
  オーケストレーションでは、SOAP ヘッダーのコンテキスト プロパティは、XML データを含む文字列に設定されます。 BizTalk 式エディターを使用してこれらの文字列を設定する、**メッセージの割り当て**または**式**図形です。 WCF アダプタで SOAP ヘッダーを使用する方法の詳細についてを参照してください、with the WCF Adapters」カスタム SOAP ヘッダーを使用して、SDK サンプルから[http://go.microsoft.com/fwlink/?LinkId=79960](http://go.microsoft.com/fwlink/?LinkId=79960)です。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 278ab244ab48d2e11a84e99f0af2e02948ff961a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f98d5113c63e29f3f4b85834b7ca1aa0836d0a5d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-data-is-stored-for-outbound-edi-messages"></a>送信 EDI メッセージのデータ格納方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は次の操作を実行して、送信インターチェンジの状態レポート エントリを生成します。  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 -   インターチェンジ制御 ID = 更新データ (関連付けに必要)  
   
--   インターチェンジ確認状態 = 生成または該当なし\<注 0 を参照してください >-データを更新します。  
+-   インターチェンジ確認状態 = 生成または該当なし\<注 0 参照\>-データを更新  
   
 -   インターチェンジ確認制御 ID= 値なし – 送信側によって適用  
   
@@ -77,9 +77,9 @@ ms.lasthandoff: 09/20/2017
   
 -   インターチェンジ確認時刻 = 値なし – 送信側によって適用  
   
--   確認/アクション コード = 更新データ\<注 1 を参照 > (TA104 X12 または EDIFACT UCI4) から *  
+-   確認/アクション コード = 更新データ\<注 1 を参照してください\>(TA104 X12 または EDIFACT UCI4) から *  
   
--   確認通知コード = 更新データ\<注 2 を参照 > (から X12-TA105、EDIFACT には適用不可) *  
+-   確認通知コード = 更新データ\<注 2 を参照\>(から X12-TA105、EDIFACT には適用不可) *  
   
  次の確認/アクション コードが使用されます。  
   
@@ -163,9 +163,9 @@ ms.lasthandoff: 09/20/2017
   
 -   インターチェンジ確認時刻 = 更新データ  
   
--   確認/アクション コード = 更新データ (TA104 X12 または EDIFACT UCI4) から *\<注 1 を参照してください >  
+-   確認/アクション コード = 更新データ (TA104 X12 または EDIFACT UCI4) から *\<注 1 を参照してください。\>  
   
--   確認通知コード 2 = 更新データ (X12 TA105 から edifact と) *\<注 2 を参照してください >  
+-   確認通知コード 2 = 更新データ (X12 TA105 から edifact と) *\<注 2 を参照してください\>  
   
  ACK X12:TA1-104 または EDIFACT UCI4 からのデータは、次のようにマップされます。  
   
@@ -222,7 +222,7 @@ ms.lasthandoff: 09/20/2017
   
 -   機能確認方向 = 送信  
   
--   機能確認状態 =\<生成された、または該当なし、注 1 を参照してください >  
+-   機能確認状態 =\<生成された、または該当なし、注 1 を参照してください。\>  
   
 -   インターチェンジの受信者 = 更新データ (関連付けに必要)  
   
@@ -248,7 +248,7 @@ ms.lasthandoff: 09/20/2017
   
 -   受理したトランザクション セットの数 = 更新データ (X12-AK904 および EDIFACT エンコード用にエンジンで計算)  
   
--   確認/アクション コード = 更新データ\<注 2 を参照 > (X12 AK901 edifact-uci4 から) *  
+-   確認/アクション コード = 更新データ\<注 2 を参照してください\>(X12 AK901 edifact-uci4 から) *  
   
 -   エラー/構文エラー コード  = 更新データ (X12-AK905、EDIFACT UCI5) 注 3  
   
@@ -465,4 +465,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 状態レポートのデータを格納する方法](../core/how-data-is-stored-for-edi-and-as2-status-reports.md)   
- [受信 EDI メッセージのデータを格納する方法](../core/how-data-is-stored-for-inbound-edi-messages.md)
+ [受信 EDI メッセージのデータ格納方法](../core/how-data-is-stored-for-inbound-edi-messages.md)

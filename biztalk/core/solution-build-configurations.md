@@ -20,14 +20,14 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e537ca4bc2dd85722ddf3afd4eaba443aab7a25b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9c48791d26842b7224bb950334d6b184452a54d6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="solution-build-configurations"></a>ソリューション ビルドの構成
-[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でビルドする他のプロジェクトと同様に、構成マネージャーを使用して、ソリューション ビルドの構成を指定できます。 ソリューション ビルド構成を使用すると、ソリューションのビルドでどのプロジェクトに含めると、それを展開するかどうかを決定できます。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]両方をサポート**デバッグ**と**リリース**の構成をビルドします。  
+[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でビルドする他のプロジェクトと同様に、構成マネージャーを使用して、ソリューション ビルドの構成を指定できます。 ソリューション ビルド構成を使用すると、ソリューションのビルドでどのプロジェクトに含めると、それを展開するかどうかを決定できます。 BizTalk Server では、両方がサポート**デバッグ**と**リリース**の構成をビルドします。  
   
  ソリューション ビルド構成のチェック マークと、**ビルド**列を使用するソリューションを構築してが完了したら、アセンブリを生成します。 チェック マークはでもある場合、**展開**プロジェクト デザイナーでの展開設定に基づいて、列からアプリケーションが展開されます。  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 140022c6ebe197d1b0210d732b623d62d2903cd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f14a199e3422a45235727d2d16fc1464e2e4927
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="disassemble-inbound-batches"></a>受信バッチを逆アセンブルします。
 
@@ -133,8 +133,8 @@ $
     > [!NOTE]
     >  断片化が有効になっている場合にのみ、これらの構成プロパティが有効な (**断片化**'éý' **True**)。 断片化が無効になっているときに、逆アセンブラーを発行する、バッチ全体の正確なコピーをメッセージ ボックス データベースのネイティブ形式でので保持の設定は関連しません (*すべて*が保持されます)。  
   
- 詳細については、各構成プロパティと、その他の使用法と構成情報を参照してください[SWIFT 逆アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)です。 メッセージ ボックス データベースの発行とマルチパート メッセージの詳細については、次を参照してください。[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプ。  
+ 詳細については、各構成プロパティと、その他の使用法と構成情報を参照してください[SWIFT 逆アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)です。 メッセージ ボックス データベースの発行とマルチパート メッセージの詳細については、BizTalk Server ヘルプを参照してください。  
   
 ## <a name="next-step"></a>次の手順
   
-[バッチに関連する昇格させたプロパティ](batch-related-promoted-properties.md)
+[バッチに関連する昇格プロパティ](batch-related-promoted-properties.md)

@@ -13,18 +13,18 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af46891fe226ae09c1c2938b459d6e9acdabffcf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7f2dc861f7f8e670fc0ae83b787ff108cef904b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-and-known-issues"></a>トラブルシューティングと既知の問題
 このセクションではトラブルシューティングに関連する情報をまとめて[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。  
 
 ## <a name="readme"></a>ReadMe
   
- 補足情報がこの A4SWIFT のドキュメントのリリースがである Readme ファイルに含まれる後、検出された問題に関連する、 \<*ドライブ:*> \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalkAccelerator for SWIFT\Documentation フォルダーです。  
+ 補足情報がこの A4SWIFT のドキュメントのリリースがである Readme ファイルに含まれる後、検出された問題に関連する、 \<*ドライブ:*\>\Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for SWIFT\Documentation フォルダーです。  
 
 ## <a name="next-steps"></a>次の手順  
  このセクションには、次のトピックが含まれています。  

@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5572ab96215d07570a39f53009eae3038792db8
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: c52fc2ae61d4e261a729de702a2fbffbde3fd1bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-the-development-testing-staging-and-production-environments"></a>開発、テスト、ステージング、実稼働環境の計画
 このトピックでは、BizTalk ソリューションのリリース管理プロセスで使用される環境について説明します。 同様に、エンタープライズ ソフトウェア ソリューションを開発および BizTalk ソリューションをリリースするときに確立されているソフトウェアのリリース管理のガイドラインに従ってください。 このプロセスは、次の段階を含める必要があります。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/17/2017
 >  使用に関する推奨事項について[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仮想環境で、次を参照してください。 [BizTalk Server 2009 Hyper-v ガイド](http://go.microsoft.com/fwlink/?LinkId=151834)(http://go.microsoft.com/fwlink/?LinkId=151834)。  
   
 > [!NOTE]  
->  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]仮想化ソフトウェアでマイクロソフト サポート技術情報の記事 842301 に一覧表示のいずれかで実行されているサポートされたオペレーティング システムを完全にサポート[仮想マシンで Microsoft BizTalk Server サポート](https://support.microsoft.com/kb/842301)です。 ただし、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]サポート技術情報の記事に記載されているもの以外の仮想化ソフトウェアで実行されているサポートされたオペレーティング システムにインストールされている場合を想定どおりに行うことはできます。  
+>  BizTalk Server は仮想化ソフトウェアでマイクロソフト サポート技術情報の記事 842301 に一覧表示のいずれかで実行されているサポートされたオペレーティング システムで完全にサポート[仮想マシンでMicrosoftBizTalkServerサポート](https://support.microsoft.com/kb/842301). ただし、サポート技術情報の記事に記載されているもの以外の仮想化ソフトウェアで実行されているサポートされたオペレーティング システムにインストールされている場合に期待どおりに BizTalk Server を実行しません可能性があります。  
   
 ## <a name="development-environment"></a>開発環境  
  BizTalk ソリューションに使用される BizTalk プロジェクトは、開発環境で作成されます。 使用するコンピューターに、次のソフトウェアをインストールする必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]開発環境。  
@@ -103,4 +103,4 @@ ms.lasthandoff: 10/17/2017
 |4|2|4|1|11|  
   
 ## <a name="see-also"></a>参照  
- [BizTalk server 環境のプランニング](../technical-guides/planning-the-environment-for-biztalk-server.md)
+ [BizTalk Server の環境の計画](../technical-guides/planning-the-environment-for-biztalk-server.md)

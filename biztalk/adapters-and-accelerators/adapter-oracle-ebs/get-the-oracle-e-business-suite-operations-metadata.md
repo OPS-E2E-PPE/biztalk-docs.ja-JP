@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f49bda367f9929d3ab320ac7bbaeee6ed49de2a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1443219f8562caee53547be3f78df15834ddf4b7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="get-the-oracle-e-business-suite-operations-metadata"></a>Oracle E-business Suite 操作のメタデータを取得します。
 使用することができます、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] Oracle E-business Suite の選択した成果物のためのスキーマを生成します。 参照して、呼び出し先のアイテムの検索し、それらの成果物のスキーマを生成し、Oracle E-business Suite へのスキーマに準拠したメッセージを送信できます。  
@@ -63,10 +63,10 @@ ms.lasthandoff: 09/20/2017
     >  Oracle の成果物に対する操作のメタデータを生成する アダプター サービスのアドインを使用している場合は、既定でファイルが作成特定の名前付け規則に: 生成された XSD ファイル名には次の 3 つの部分。  
     >   
     >  -   提供される"OracleEBSBinding"またはプレフィックス、**ファイル名のプレフィックス**ボックス。  
-    > -   含まれる名、 **fileNameHint**で生成される WSDL 注釈タグ。 操作については、ファイル名のヒントは、操作のグループと同じです。 複合型では、ファイル名のヒントは、"http://schemas.microsoft.com/OracleEBS/2008/05/"プレフィックスなしの名前空間です。 たとえば、インターフェイス テーブル操作のファイル名のヒントには、規則が次に\<InterfaceTables > + < app_short_name > + < interface_table_name >。  
+    > -   含まれる名、 **fileNameHint**で生成される WSDL 注釈タグ。 操作については、ファイル名のヒントは、操作のグループと同じです。 複合型では、ファイル名のヒントは、"http://schemas.microsoft.com/OracleEBS/2008/05/"プレフィックスなしの名前空間です。 たとえば、インターフェイス テーブル操作のファイル名のヒントには、規則が次に\<InterfaceTables\>+ < app_short_name > + < interface_table_name >。  
     > -   (省略可能)ファイル名が一意であることを確認する整数。  
     >   
-    >  最後に、XSD ファイルの名前は到着した時に < file_name_prefix > として +\<fileNameHint > + n、"n"は一意の整数。  
+    >  最後に、XSD ファイルの名前は到着した時に < file_name_prefix > として +\<fileNameHint\>+ n、"n"は一意の整数。  
   
     > [!NOTE]
     >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]時に指定されたバインディングのプロパティを含むバインド ファイル (XML ファイル) も作成操作と、操作を呼び出す SOAP アクションのスキーマを生成します。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールを接続 URI の WCF カスタム ポート、バインディング プロパティ、および SOAP アクションの作成を設定します。 詳細については、次を参照してください。 [Oracle データベースへのポートのバインド ファイルを使用して物理ポートのバインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)です。  

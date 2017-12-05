@@ -17,16 +17,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3efc51b35b6ac522574c7adb66e27e56ab5f5bb3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bfd1dd4e09071c3d7bcccf28878f19e13acad8a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-orchestrations"></a>オーケストレーションにおける WCF メッセージでの SOAP ヘッダーへのアクセス
 オーケストレーションにおける受信 WCF メッセージの SOAP ヘッダーの値にアクセスするにはコンテキスト プロパティを使用する**WCF です。InboundHeaders**です。 WCF アダプタを受信メッセージのカスタム SOAP ヘッダーと標準 SOAP ヘッダーのコピー、 **WCF です。InboundHeaders**プロパティです。 WCF アダプタを使用すると、プログラムによってコンテキスト プロパティへの昇格または書き込みを行うプロパティを選択することもできます。 参照してください[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)詳細についてはします。  
   
- コンテキスト プロパティに含まれる値は、使用した XML データを含む文字列、 \<**ヘッダー**> の子要素としてのルート要素と、受信 SOAP ヘッダーのコピー、 \<**ヘッダー**> 要素。 このデータにアクセスする最も簡単な方法で BizTalk 式エディタを使用する、**メッセージの割り当て**または**式**図形、内の文字列を読み込み、 **XmlDocument**、および使用特定のフィールドにアクセスする XPath クエリです。 BizTalk 式エディターで XML ドキュメントの作成の詳細については、次を参照してください。 [XLANG-s 言語](../core/xlang-s-language.md)します。  
+ コンテキスト プロパティに含まれる値は、使用した XML データを含む文字列、 \<**ヘッダー** \>の子要素としてのルート要素と、受信 SOAP ヘッダーのコピー、 \< **ヘッダー** \>要素。 このデータにアクセスする最も簡単な方法で BizTalk 式エディタを使用する、**メッセージの割り当て**または**式**図形、内の文字列を読み込み、 **XmlDocument**、および使用特定のフィールドにアクセスする XPath クエリです。 BizTalk 式エディターで XML ドキュメントの作成の詳細については、次を参照してください。 [XLANG-s 言語](../core/xlang-s-language.md)します。  
   
  次のコード例は、要求 SOAP ヘッダーを取得、**メッセージの割り当て**または**式**図形、 **WCF です。InboundHeaders**プロパティ。  
   

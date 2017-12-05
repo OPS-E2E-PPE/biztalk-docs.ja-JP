@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77ac34fb06497f72b778592b3ce4c927b0ca3a07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51cd634d7933f7e25de2e742711b1593bf6b6dc1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-polling-messages-using-select-statements-with-for-xml-clause-from-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL から FOR XML 句で SELECT ステートメントを使用してポーリング メッセージを受信します。
 構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SELECT ステートメントまたは FOR XML 句を含むストアド プロシージャを使用して SQL Server のテーブルまたはビューのデータの定期的な変更メッセージを受信します。 これらのステートメントは、データベースをポーリングするアダプターを実行するポーリング ステートメントとして指定できます。 ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。  
@@ -86,7 +86,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
   
          これを行う sqltypes.xsd スキーマは、BizTalk プロジェクトに既に追加されたためです。  
   
-    4.  スキーマのターゲット名前空間を指定します。 クリックして、 **\<スキーマ >**ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。 このトピックの付与と名前空間`http://ForXmlPolling/namespace`です。  
+    4.  スキーマのターゲット名前空間を指定します。 クリックして、 **\<スキーマ\>**ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。 このトピックの付与と名前空間`http://ForXmlPolling/namespace`です。  
   
 ## <a name="defining-messages-and-message-types"></a>メッセージとメッセージの種類を定義します。  
  以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 スキーマが生成されるは、BizTalk プロジェクトのオーケストレーションの種類からのメッセージをリンクする必要があります。  
@@ -204,7 +204,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
 -   アダプターは、ポーリング ステートメントを実行し、SQL Server データベースからポーリング メッセージを受信します。 ポーリング ステートメントは、FOR XML 句を伴う SELECT ステートメントから構成されているために、アダプターによって受信されたポーリング メッセージは、次のようになります。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Root xmlns="http://ForXmlPolling/namespace">  
       <Employee Employee_ID="10765" Name="John" Designation="Tester" xmlns="" />   
       <Employee Employee_ID="10766" Name="Sam" Designation="Manager" xmlns="" />   

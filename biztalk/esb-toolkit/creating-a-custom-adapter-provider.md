@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: feb9efa5ad879e86f32ca1963313dadc7e6a9d7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f70855621f03011c92be7b04b844122d98be48f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-adapter-provider"></a>カスタム アダプター プロバイダーの作成
 前のセクションで説明されていると、競合回避モジュールの実行、後に、動的な解決サービスは、結果は、エンドポイント (変換ではない) かどうかをチェックします。 サービスのインスタンスであるアダプター マネージャー インスタンスを作成、エンドポイントである場合の**AdapterMgr**クラスです。  
@@ -55,6 +55,6 @@ ms.lasthandoff: 09/20/2017
   
 1.  派生するアセンブリを作成、 **BaseAdapterProvider**基底クラスとが含まれています、 **SetEndPoint**エンドポイントにメッセージのコンテキスト プロパティを設定するメソッド。  
   
-2.  使用して Esb.config 構成ファイルに追加して、アダプターのプロバイダーを登録、  **\<adapterProvider >**としてアダプターの名前を持つ要素、**名前**属性を完全にクラスの修飾名、**型**属性、モニカーとして、**モニカー**属性 (複数の値は、コンマで区切る必要があります)、および実際のアダプターのアセンブリでは必要に応じてとして、 **adapterAssembly**属性。  
+2.  使用して Esb.config 構成ファイルに追加して、アダプターのプロバイダーを登録、  **\<adapterProvider\>** としてアダプターの名前を持つ要素、**名前**属性クラスの完全修飾名、**型**属性、モニカーとして、**モニカー**属性 (複数の値は、コンマで区切る必要があります)、および必要に応じて、アセンブリの実際のアダプターとして、 **adapterAssembly**属性。  
   
 3.  グローバル アセンブリ キャッシュに新しいアセンブリを登録します。

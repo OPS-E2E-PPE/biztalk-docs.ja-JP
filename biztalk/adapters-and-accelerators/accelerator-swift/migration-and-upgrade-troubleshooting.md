@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c063e2e4ba213c3f72cbfb4977a3463d16b0a726
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c0e2a18b1cdba47c999150b5bc52c0b016aec61
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="migration-and-upgrade-troubleshooting"></a>移行とアップグレードのトラブルシューティング
 ## <a name="assemblies-need-to-be-undeployed-before-an-upgrade"></a>アセンブリは、アップグレードの前に展開解除する必要があります。  
@@ -68,12 +68,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  Service フォルダーを右クリックし、をクリックして**プロパティ**、をクリックし、**セキュリティ**タブです。  
   
-2.  グループまたはユーザー名ペインで、サービスのプロパティ ダイアログ ボックスのをクリックして**追加**、入力 ***\<サーバー名 >*\A4SWIFT 管理者**をクリックし、**OK**です。  
+2.  クリックして、グループまたはユーザー名のウィンドウで、サービスのプロパティ ダイアログ ボックス、**追加**、入力 ***\<サーバー名\>*\A4SWIFT 管理者**、クリックして**OK**です。  
   
     > [!NOTE]
-    >  A4SWIFT の Administrators グループがドメイン グループである場合は、入力 ***\<ドメイン名 >*\A4SWIFT 管理者**です。  
+    >  A4SWIFT の Administrators グループがドメイン グループである場合は、入力 ***\<ドメイン名\>*\A4SWIFT 管理者**です。  
   
-3.  手順 2. を繰り返します ***\<サーバー名 >*\A4SWIFT ユーザー**、または  **\<*ドメイン名*> \A4SWIFTユーザー * *、A4SWIFT Users グループがドメイン グループの場合。  
+3.  手順 2. を繰り返します ***\<サーバー名\>*\A4SWIFT ユーザー**、または  **\<*ドメイン名*\>\A4SWIFT ユーザー * *、A4SWIFT Users グループがドメイン グループの場合。  
   
 4.  グループまたはユーザー名ペインで選択**A4SWIFT 管理者**です。 アクセス許可 ウィンドウで、次のように選択します。**許可**の**フルコントロール**です。  
   

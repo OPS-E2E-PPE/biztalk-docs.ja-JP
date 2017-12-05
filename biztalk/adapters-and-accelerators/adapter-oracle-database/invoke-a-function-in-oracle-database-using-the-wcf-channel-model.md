@@ -17,11 +17,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc38e0ce4dc1f6ae184b51ee157fb4461364a85e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 115e7e2421ed31ed20db9cbec5abdaa26a3639e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-a-function-in-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベース内の関数を呼び出す
 このセクションでは、関数で作成されたチャネルを使用して Oracle データベースで実行する方法を示します[Oracle データベースを使用して、チャネルの作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)です。  
@@ -30,13 +30,13 @@ ms.lasthandoff: 09/20/2017
  Oracle データベースで関数を実行するには、XML メッセージを渡すことによって[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。 入力 XML には、次のようになります。  
   
 ```  
-\<CREATE_ACCOUNT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG" xmlns:ns0="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT">  
+<CREATE_ACCOUNT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG" xmlns:ns0="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT">  
   <REC xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
-    \<ns0:ID>1\</ns0:ID>  
-    \<ns0:NAME>Scott\</ns0:NAME>  
-    \<ns0:BANKNAME>CitiBank\</ns0:BANKNAME>  
-    \<ns0:BRANCH>NY\</ns0:BRANCH>  
-    \<ns0:ENABLED>Y\</ns0:ENABLED>  
+    <ns0:ID>1</ns0:ID>  
+    <ns0:NAME>Scott</ns0:NAME>  
+    <ns0:BANKNAME>CitiBank</ns0:BANKNAME>  
+    <ns0:BRANCH>NY</ns0:BRANCH>  
+    <ns0:ENABLED>Y</ns0:ENABLED>  
   </REC>  
 </CREATE_ACCOUNT>  
 ```  

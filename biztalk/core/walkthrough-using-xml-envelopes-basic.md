@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1555abddd218d28c360ee5364fa30fabaed47aa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9090c4ee7d576bb7ab610cd81637680d837b2cae
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-using-xml-envelopes-basic"></a>チュートリアル: を使用して XML エンベロープ (Basic)
 この例では、架空のエラー追跡システムを実装して、基本的な XML エンベロープの逆アセンブルを示します。 この例は次の要件を満たしています。  
@@ -105,7 +105,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  ルート ノードの名前を "ルート" から "エンベロープ" に変更します。  
   
-4.  次に、スキーマをエンベロープ スキーマとしてマークします。 クリックして、 **\<スキーマ >**ノード。 プロパティ ペインで、スキーマ参照プロパティを設定**エンベロープ**に`OK`です。  
+4.  次に、スキーマをエンベロープ スキーマとしてマークします。 クリックして、 **\<スキーマ\>**ノード。 プロパティ ペインで、スキーマ参照プロパティを設定**エンベロープ**に`OK`です。  
   
 5.  設定、**ボディ XPath**プロパティです。 これを行うをクリックして、**エンベロープ**ノード。 [プロパティ] ウィンドウで、省略記号ボタンをクリックして (**.**) ボタンをクリックして、**ボディ XPath**プロパティを選択**エンベロープ**、順にクリック**OK**です。  
   

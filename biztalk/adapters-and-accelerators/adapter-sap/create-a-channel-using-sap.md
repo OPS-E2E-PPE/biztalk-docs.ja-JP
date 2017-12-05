@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f69fbeb86cf63485591f048ef75cdcfd3d5056d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22a0d6e48d1a33e4d7c0aec8a1231346a671c1ef
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-sap"></a>SAP を使用して、チャネルを作成します。
 WCF チャネル モデルでの SAP システムに対する操作を呼び出すまたは SOAP メッセージを交換することで、SAP システムからメッセージを受信、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] WCF チャネルを経由します。  
@@ -99,9 +99,9 @@ channel.Open();
  次のコードは、前述の例で使用される構成設定を示しています。 クライアント エンドポイントのコントラクトには、"System.ServiceModel.Channels.IRequestChannel"または"System.ServiceModel.Channels.IRequestChannel"を作成するチャネル形状の種類に応じてをする必要があります。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <sapBinding>  
                 <binding name="SAPBinding" closeTimeout="00:01:00" openTimeout="00:01:00"  
@@ -119,7 +119,7 @@ channel.Open();
                 binding="sapBinding" bindingConfiguration="SAPBinding" contract="System.ServiceModel.Channels.IRequestChannel"  
                 name="MyRequestChannel" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -134,7 +134,7 @@ channel.Open();
   
 3.  作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)です。  
   
-4.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IReplyChannel >**メソッドを**SAPBinding**です。 このメソッドにパラメーターの 1 つとしては、SAP 接続 URI を指定します。 接続 URI は、SAP システムで、RFC 変換先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。、 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3. も指定するこのチャネル リスナーを作成するときにします。  
+4.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IReplyChannel\>** メソッドを**SAPBinding**です。 このメソッドにパラメーターの 1 つとしては、SAP 接続 URI を指定します。 接続 URI は、SAP システムで、RFC 変換先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。、 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3. も指定するこのチャネル リスナーを作成するときにします。  
   
 5.  リスナーを開きます。  
   
@@ -176,4 +176,4 @@ channel.Open();
 ```  
   
 ## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

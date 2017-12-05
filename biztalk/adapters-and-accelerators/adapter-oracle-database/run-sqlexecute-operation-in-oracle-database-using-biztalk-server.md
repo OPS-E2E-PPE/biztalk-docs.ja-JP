@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa982b938fc4fcb9096ca30209938b3b635d9fb8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02a5da0a5c6ff3560d265759d3c5320e55d7d621
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースで SQLEXECUTE 操作を実行します。
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースでパラメーター化 SQL ステートメントを実行するクライアントを有効にします。 このような操作をサポートするために、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] SQLEXECUTE 操作を表示します。 SQLEXECUTE 操作には、セットごとに、同じ SQL ステートメントを実行できるようにするパラメーター セットで構成される入力パラメーター ブロックがサポートされています。 SQLEXECUTE 操作は、レコード セットの汎用的な SQL ステートメントの結果を返します。 操作の詳細については、次を参照してください。 [Oracle データベースで SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)です。 SQLEXECUTE 操作の SOAP メッセージの構造については、次を参照してください。 [SQLEXECUTE 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)です。  
@@ -179,7 +179,7 @@ ms.lasthandoff: 09/20/2017
  上記の要求メッセージ用の Oracle データベースからの応答は次のとおりです。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <SQLEXECUTEResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE">  
   <SQLEXECUTEResult>  
     <GenRecordRow xmlns="http://Microsoft.LobServices.OracleDB/2007/03">  

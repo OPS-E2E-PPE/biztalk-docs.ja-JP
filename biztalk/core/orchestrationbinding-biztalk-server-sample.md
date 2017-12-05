@@ -12,18 +12,18 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d539b4249e02422b4189d9c8daea5c19011c4722
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b361968ddb28d629244515281cc02147af533cd0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orchestrationbinding-biztalk-server-sample"></a>OrchestrationBinding (BizTalk Server サンプル)
 オーケストレーションのバインドのサンプルでは、 [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) 管理オブジェクトを使用してオーケストレーションを構成および管理します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   このサンプルにある setup.bat を実行して HelloWorld サンプルを配置することが必要です、 \<*サンプル パス*> \Orchestrations\HelloWorld ディレクトリ。  
+-   このサンプルにある setup.bat を実行して HelloWorld サンプルを配置することが必要です、 \<*サンプル パス*\>\Orchestrations\HelloWorld ディレクトリ。  
   
 -   このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*> \Admin\ExplorerOM\OrchestrationBinding  
+ \<*パスのサンプル*\>\Admin\ExplorerOM\OrchestrationBinding  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*> \Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
+     \<*パスのサンプル*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
   
 2.  OrchestrationBinding.exe を実行して、サンプルの指示に従います。  
   

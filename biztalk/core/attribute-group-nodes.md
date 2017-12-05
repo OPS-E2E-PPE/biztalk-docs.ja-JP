@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04db816f1209b7cd503b9a162cdd2a030ba86292
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 31814f9bd38bd07a75be0d4a2cc3e9d8b838720e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="attribute-group-nodes"></a>[属性グループ] ノード
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 追加する BizTalk エディターで、**属性グループ**ノードを**レコード**ノードまたは別**属性グループ**をより詳細に使用すると予想される属性のグループを含むノード1 よりも**レコード**ノード。 追加する、**属性グループ**別のノード**属性グループ**ノードは、属性グループの入れ子を実現します。 これにより、1 か所で複数使用できる属性のグループを定義する**レコード**または**属性グループ**ノード。 それ以降、属性グループに対して行った変更は、その属性グループに関連付けられたすべてのノードに反映されます。 このしくみは、修正を加えたノードのコンテキストに依存しません。  
   
 > [!NOTE]
->  BizTalk エディターで、 **AttributeGroup**ノードが既定では、文字列で表される\<AttribGroup:attribGroup*N*> スキーマ ツリー ビューで、 *N*単調に増加する数字を指定します。 AttribGroup を変更することができます*N*に新しい一意の名前を入力してその名前の部分の**Group Reference**プロパティです。  
+>  BizTalk エディターで、 **AttributeGroup**ノードが既定では、文字列で表される\<AttribGroup:attribGroup*N* \>スキーマ ツリー ビューで、 *N*単調に増加する数字を指定します。 AttribGroup を変更することができます*N*に新しい一意の名前を入力してその名前の部分の**Group Reference**プロパティです。  
   
  最初に作成するときに、**属性グループ**ノード、単に挿入することのいずれか、**レコード**または**属性グループ**ノードをそのが使用され、必要に応じて変更その名前でその**Group Reference**プロパティです。 別の同じ属性グループを使用する 2 つの方法がある**レコード**または**属性グループ**ノード。  
   
@@ -66,5 +66,5 @@ ms.lasthandoff: 09/20/2017
 -  [ノードのプロパティ](../core/node-properties.md)   
 -  **シーケンス グループ ノードのプロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]  
 -  [ノードのプロパティを設定する方法](../core/how-to-set-node-properties.md)   
--  [フィールド属性 ノード](../core/field-attribute-nodes.md)   
--  [任意の属性ノード](../core/any-attribute-nodes.md)
+-  [[フィールド属性] ノード](../core/field-attribute-nodes.md)   
+-  [[すべての属性] ノード](../core/any-attribute-nodes.md)

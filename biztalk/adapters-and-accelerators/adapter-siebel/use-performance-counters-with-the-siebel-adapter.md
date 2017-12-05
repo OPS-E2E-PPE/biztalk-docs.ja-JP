@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2540801af6c30632250602b45c21e7b57cd2bc22
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bebbd605df52e023c78112b78ad51db13d896cc7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-siebel-adapter"></a>Siebel アダプターのパフォーマンス カウンターを使用します。
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムによって作成のパフォーマンス カウンター カテゴリ"[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]"アダプター パックのインストールと共にします。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 <process id>:<app domain id>:<endpoint id>:<action id>  
 ```  
   
- 場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]、エンドポイント id は、接続 URI で指定されている、Siebel サーバーの名前。 操作 id は、によって実行されたアクション、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]など、ログイン、ログオフ、メタデータ、\<ビジネス コンポーネント名 >.\<操作 >、\<ビジネス サービス名 >.\<ビジネス サービス メソッド > です。 上記の名前付け規則の結果を 127 文字を超える名に次の形式でアクション ID のみが表示されます。  
+ 場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]、エンドポイント id は、接続 URI で指定されている、Siebel サーバーの名前。 操作 id は、によって実行されたアクション、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]など、ログイン、ログオフ、メタデータ、\<ビジネス コンポーネント名\>.\<操作\>、\<ビジネス サービス名\>.\<ビジネス サービス メソッド\>です。 上記の名前付け規則の結果を 127 文字を超える名に次の形式でアクション ID のみが表示されます。  
   
 ```  
 :::<action id>  

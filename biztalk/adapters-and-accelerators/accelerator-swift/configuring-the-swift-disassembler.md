@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7aa71ce6ba1d2a910626446ed45439b8c7132e75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26147924950a73b0f654531e9e0eff8e5ac82541
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-the-swift-disassembler"></a>SWIFT の逆アセンブラーを構成します。
 を呼び出すときは、SWIFT 逆アセンブラー (DASM) は、次のタスクを実行、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信パイプライン。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  構成、コンパイル、およびカスタム パイプラインをデプロイした後、再コンパイルして、カスタム パイプラインを再配置、構成の変更が必要です。  
   
- 作成する方法の詳細については、ビルド、およびカスタム パイプラインは、配置を参照してください[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+ カスタム パイプラインを展開して作成、構築、については、BizTalk Server ヘルプを参照してください。  
   
  このセクションには、次のトピックが含まれています。  
   

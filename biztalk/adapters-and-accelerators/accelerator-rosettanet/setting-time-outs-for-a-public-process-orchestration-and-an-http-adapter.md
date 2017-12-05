@@ -20,11 +20,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8f7f15d01759704af6b6b3134c9d36f0e64f8e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 339f4eb5fa11b23602d05f8cd75c30ca3aa16279
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter"></a>パブリック プロセス オーケストレーションと HTTP アダプターのタイムアウトの設定
 同期接続シナリオでパブリック プロセス オーケストレーションを HTTP アダプターと一緒に使用する場合、それぞれのタイムアウトを適切に設定する必要があります。 オーケストレーションのタイムアウト設定 (実行までの時間) は HTTP アダプターのタイムアウト (要求のタイムアウト) より小さくする必要があります。 これは、HTTP アダプターの設定が小さいと、オーケストレーションの前にアダプターがタイムアウトになる可能性があるからです。 この場合、プロセスの制御権がアダプターに渡ります。 プロセスはオーケストレーションが制御する必要があるため、そのタイムアウト値が小さくなければなりません。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-set-the-time-out-setting-for-the-public-process-orchestration"></a>パブリック プロセス オーケストレーションのタイムアウトを設定するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン > Accelerator for RosettaNet**、クリックして**BizTalk Accelerator for RosettaNet 管理コンソール**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**をクリックして**BizTalk Accelerator for RosettaNet 管理コンソール**です。  
   
 2.  展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、クリックして**プロセス構成設定**です。  
   

@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bce5454528b3dc1cf0feb54a52eae2008e607811
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa02b24ed7d0c7ac09162f486df629bf027d13b9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-bam-definitions"></a>BAM 定義を削除する方法
 管理者を使用して、**削除すべて**コマンドを BAM 管理ユーティリティのすべてのビューと特定の BAM 定義ファイルを基になるアクティビティ テーブルを削除します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm 削除すべて DefinitionFile:\<def ファイル >**です。  
+3.  型**bm 削除すべて DefinitionFile:\<def ファイル\>**です。  
   
 4.  Enter キーを押します。  
   

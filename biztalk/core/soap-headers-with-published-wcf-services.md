@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b62ebea1380e686a0afbf18dc63aedbfab190fac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78f36e778930a781ac797e18308240ecb4bef667
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="soap-headers-with-published-wcf-services"></a>公開済み WCF サービスでの SOAP ヘッダー
 WCF 受信アダプター、受信メッセージにすべての SOAP ヘッダーの値をコピーすることができます、 **InboundHeaders**プロパティ、またはこれらを作成したりできます指定の値を BizTalk メッセージ コンテキストに昇格します。 WCF アダプタでは、カスタムの SOAP ヘッダーと、WCF インフラストラクチャが使用する WS-Addressing、WS-Security、WS-AtomicTransaction などの標準 SOAP ヘッダーの両方を処理できます。 **InboundHeaders**コンテキスト プロパティがターゲットの名前空間内に**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**SOAP の文字列表現が含まれています受信メッセージのヘッダー値。  
@@ -45,11 +45,11 @@ WCF 受信アダプター、受信メッセージにすべての SOAP ヘッダ�
   
  SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、プロパティ名と名前空間で構成される値ペアのコレクションを WCF メッセージに挿入することにより、ヘッダー値の書き込みまたは昇格を実行する必要があることを、WCF アダプタが認識できるようにする必要があります。 WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。  
   
--   BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**リスト <KeyValuePair\<XmlQualifiedName、オブジェクト >>**です。  
+-   BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**ボックスの一覧\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>**です。  
   
      このペアを使用して、WCF アダプタを実行し、名前空間、名前からの値、 **XmlQualifiedName**オブジェクトおよびヘッダーの値を昇格させるために使用します。  
   
--   書き込むが、BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格しません、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**および値**リスト < KeyValuePair\<XmlQualifiedName、オブジェクト >>**です。  
+-   書き込むが、BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格しません、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**および値**リスト\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>**です。  
   
      WCF アダプターは、このペアを使用して、値をメッセージ コンテキストに書き込みます。  
   
@@ -74,7 +74,7 @@ writeProps.Add(new KeyValuePair<XmlQualifiedName, object>(PropName2, "Property v
 wcfMessage.Properties[PropertiesToWriteKey]=writeProps;  
 ```  
   
- BizTalk WCF サービス公開ウィザードで生成されたメタデータには、カスタム SOAP ヘッダーの定義が含まれません。 カスタム SOAP ヘッダーを使用して、WCF サービスにメタデータを公開するには、Web サービス記述言語 (WSDL) ファイルを手動で作成する必要があります。 使用することができます、 **externalMetadataLocation**の属性、 [ \<serviceMetadata >](http://go.microsoft.com/fwlink/?LinkId=89121) WSDL ファイルの場所を指定して、ウィザードを生成する Web.config ファイル内の要素。 この WSDL ファイルは、WSDL およびメタデータ交換 (MEX) 要求の応答として、自動生成された WSDL の代わりにユーザーに返されます。  
+ BizTalk WCF サービス公開ウィザードで生成されたメタデータには、カスタム SOAP ヘッダーの定義が含まれません。 カスタム SOAP ヘッダーを使用して、WCF サービスにメタデータを公開するには、Web サービス記述言語 (WSDL) ファイルを手動で作成する必要があります。 使用することができます、 **externalMetadataLocation**の属性、 [ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)の場所を指定して、ウィザードを生成する Web.config ファイル内の要素、WSDL ファイルです。 この WSDL ファイルは、WSDL およびメタデータ交換 (MEX) 要求の応答として、自動生成された WSDL の代わりにユーザーに返されます。  
   
  次の XML データは、カスタム SOAP ヘッダーを定義する WSDL ファイルの一部を示しています。  
   
@@ -94,9 +94,9 @@ wcfMessage.Properties[PropertiesToWriteKey]=writeProps;
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [オーケストレーションでの WCF メッセージにおける SOAP ヘッダーへのアクセス](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
+-   [オーケストレーションにおける WCF メッセージでの SOAP ヘッダーへのアクセス](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
   
--   [パイプライン コンポーネントでの WCF メッセージにおける SOAP ヘッダーへのアクセス](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
+-   [パイプライン コンポーネントにおける WCF メッセージでの SOAP ヘッダーへのアクセス](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
   
 ## <a name="see-also"></a>参照  
  [WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)   

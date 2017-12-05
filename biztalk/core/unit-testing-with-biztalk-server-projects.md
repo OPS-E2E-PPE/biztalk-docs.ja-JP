@@ -12,14 +12,14 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15f73b9c343e62e0a0a83bf76f8c762b9ce9ede9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da7147f4c2500946fb97c47592a2a4a35d3dcf62
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="unit-testing-with-biztalk-server-projects"></a>BizTalk Server プロジェクトを使用した単体テスト
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]単体テストで有効にする機能を導入、**展開**BizTalk プロジェクトのプロパティ ページ。 次のスクリーン ショットは、このプロジェクトのプロジェクトを右クリックすると、プロジェクト デザイナーからアクセス設定を示しています。、**プロパティ**です。  
+BizTalk Server には、単体テストを有効にできる機能が導入された、**展開**BizTalk プロジェクトのプロパティ ページ。 次のスクリーン ショットは、このプロジェクトのプロジェクトを右クリックすると、プロジェクト デザイナーからアクセス設定を示しています。、**プロパティ**です。  
   
  ![](../core/media/projectdesignerenableunittesting.gif "ProjectDesignerEnableUnitTesting")  
   

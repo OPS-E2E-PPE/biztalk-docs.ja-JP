@@ -18,11 +18,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3434dc46be2fa43885346ac8d146e9326ab1ea73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da57e32f2ba4d4d5feb60a6f44cc7d92195852c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-construct-a-web-message-part-from-a-schema-type"></a>スキーマの種類から Web メッセージ部分を構築する方法
 使用してスキーマの種類から Web メッセージ部分を作成する、**変換**図形です。 または、Web メッセージ部分を設定する .NET ヘルパー クラスを使用して、スキーマの種類から Web メッセージ部分を作成することもできます。 .NET クラスを使用してメッセージの種類を作成する方法の詳細については、次を参照してください。[ユーザー コードでメッセージを構築する](../core/constructing-messages-in-user-code.md)です。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 2.  BizTalk マッパーでクリックして**送信先スキーマを開く**で、**送信先スキーマ**ペインのマップし、[、 **BizTalk 型の選択**] ダイアログ ボックスで、展開、 **スキーマ**ノード、追加の Web 参照スキーマを選択し、をクリックして**OK**です。  
   
     > [!NOTE]
-    >  Web 参照スキーマの形式が**\<プロジェクトの既定の名前空間 >.\<Web 参照名 >。参照**です。  
+    >  Web 参照スキーマの形式が**\<プロジェクトの既定の名前空間\>.\<Web 参照名\>です。参照**です。  
   
 3.  **ターゲット スキーマのルート ノード**ダイアログ ボックスでは、送信先スキーマのルート ノードを選択し、をクリックして**OK**です。 Web メッセージ部分の型のルート ノードを確認する方法の詳細については、次を参照してください。 [Web メッセージ部分の型を確認する方法](../core/how-to-determine-a-web-message-part-type.md)です。  
   

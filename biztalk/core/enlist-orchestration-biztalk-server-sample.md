@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95b03da5bf56367e59142a241dada6454a74c459
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e8d85a49b410f0571e8e9cb0be816f1feda139e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enlist-orchestration-biztalk-server-sample"></a>オーケストレーション (BizTalk Server サンプル) を参加させる
 オーケストレーションの参加のサンプルは、BizTalk Server オーケストレーションをホストに参加させる方法を示します。  
@@ -40,9 +40,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、次の SDK の場所にあります。  
   
--   VBScript バージョン: \<*サンプル パス*> \Admin\WMI\Enlist Orchestration\VBScript\  
+-   VBScript バージョン: \<*サンプル パス*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
--   Visusal c# バージョン: \<*サンプル パス*> \Admin\WMI\Enlist Orchestration\CSharp\  
+-   Visusal c# バージョン: \<*サンプル パス*\>\Admin\WMI\Enlist Orchestration\CSharp\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -64,17 +64,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、このサンプルの VBScript バージョンと Visual C# バージョンのどちらを実行するかに応じて、それぞれ以下のいずれかのフォルダに移動します。  
   
-     \<*パスのサンプル*> \Admin\WMI\Enlist Orchestration\VBScript\  
+     \<*パスのサンプル*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
-     \<*パスのサンプル*> AdminWMIEnlist OrchestrationCSharpbinDebug  
+     \<*パスのサンプル*\>AdminWMIEnlist OrchestrationCSharpbinDebug  
   
 2.  このサンプルの VBScript バージョンと Visual C# バージョンのどちらを実行するかに応じて、cscript プログラムを使用して EnlistOrch.vbs を実行するか、ファイル EnlistOrc.exe を実行します。 どちらの場合にも、以下のコマンド ライン引数を渡します。  
   
-    -   **\<**   
-         ***OrchestrationName* >。** 参加させるオーケストレーションの名前。  
+    -   **\<** ***OrchestrationName* \>です。** 参加させるオーケストレーションの名前。  
   
-    -   **\<**   
-         ***AssemblyName* >。** オーケストレーションが展開されているアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<** ***AssemblyName* \>です。** オーケストレーションが展開されているアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
   
          例: (VBScript)。  
   
@@ -94,4 +92,4 @@ ms.lasthandoff: 09/20/2017
  スクリプト ファイル EnlistOrch.vbs および Visual C# ソース ファイル EnlistOrc.cs には、実行する操作について説明する詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
   
 ## <a name="see-also"></a>参照  
- [管理 WMI (BizTalk Server Samples フォルダ)](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

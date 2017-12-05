@@ -12,15 +12,15 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b450c74f7d2eda6d3b688c40d0f8e8cde5c66d3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88caf75d312179cd45bb1b3b421d6c2c7f25c2a8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="generate-an-xsd-schema-for-json-message"></a>JSON メッセージの XSD スキーマの生成
 > [!NOTE]
->  このチュートリアルは、[!INCLUDE[prague](../includes/prague-md.md)] のみを対象としています。  
+>  このチュートリアルは、BizTalk Server にのみ適用されます。  
   
  このソリューションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリが JSON メッセージを受信します。 アプリがメッセージを処理する前に、メッセージを XSD スキーマに変換する必要があります。 変換には、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の JSON メッセージから XSD スキーマを作成する JSON スキーマ ウィザードを使用します。  
   

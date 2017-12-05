@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62b6137964c493ae8dff3c0ab635a3145f2d9348
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6fc9eda3ba1bee61b4737428f41870fc31504e3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-query-notifications-incrementally-from-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL からの受信通知の差分クエリ
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 |プロパティのバインド|Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|受信操作を実行することを指定します。 通知メッセージを受信するには、これを設定**通知**です。|  
-|**NotificationStatement**|SQL ステートメントを指定します (選択または EXEC\<ストアド プロシージャ >) のクエリ通知を登録するために使用します。 アダプターは、指定された SQL ステートメントの変更の結果セットの場合にのみ、SQL Server から通知メッセージを取得します。|  
+|**NotificationStatement**|SQL ステートメントを指定します (選択または EXEC\<ストアド プロシージャ\>) のクエリ通知を登録するために使用します。 アダプターは、指定された SQL ステートメントの変更の結果セットの場合にのみ、SQL Server から通知メッセージを取得します。|  
 |**NotifyOnListenerStart**|リスナーが開始されたときに、アダプターがアダプターのクライアントに通知を送信するかどうかを指定します。|  
   
  これらのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 使用する方法の詳細については、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]さらに通知を受信する SQL Server から、読み取る。  
@@ -317,7 +317,7 @@ Salary = 100000
 -   アダプターは、次のような通知メッセージを受信します。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Insert</Info>   
       <Source>Data</Source>   
@@ -330,7 +330,7 @@ Salary = 100000
 -   アダプターは、Select 操作を実行します。 XML の選択操作には、Update ステートメントも含まれているため、Update ステートメントも実行します。 SQL Server から次の応答では、Select ステートメントです。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <SelectResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
       <SelectResult>  
         <Employee xmlns="http://schemas.microsoft.com/Sql/2008/05/Types/Tables/dbo">  
@@ -347,7 +347,7 @@ Salary = 100000
 -   Select ステートメントの一部として、Update ステートメントの実行もと、新しいレコードの状態 列が 1 に変更されました。 SQL Server から別の通知をもう一度トリガーこれと、次のような対応する通知メッセージを受信します。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Update</Info>   
       <Source>Data</Source>   
@@ -360,7 +360,7 @@ Salary = 100000
 -   2 番目の通知後は、アダプターは、Select ステートメントを実行します。 ただし、0 と状態があるので、レコードがありません、ため、アダプターは、次のような空の応答を取得します。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <SelectResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
       <SelectResult />   
     </SelectResponse>  

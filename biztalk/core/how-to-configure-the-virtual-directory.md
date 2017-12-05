@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97af99271a4d63046d2a95a47caed7f145eaef24
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: f00c5f75062ffd084cd19f23bfa66768d3d67ca5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-virtual-directory"></a>仮想ディレクトリを構成する方法
 このトピックでは、仮想ディレクトリを構成し、ユーザーのアプリケーションを検証する手順について説明します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  をクリックして**開始**、 をポイント**プログラム**、 をクリックして**管理ツール**、 をクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-3.  展開**\<サーバー名 >**順に展開**サイト**です。  
+3.  展開**\<サーバー名\>**順に展開**サイト**です。  
   
 4.  右クリック**Default Web Site**  をクリック**仮想ディレクトリの追加**です。  
   
@@ -47,4 +47,4 @@ ms.lasthandoff: 11/07/2017
 9. **アプリケーションの追加**ダイアログ ボックスで、をクリックして**OK**です。 フォルダーがアプリケーションに変換されます (アイコンがフォルダー アイコンから Web サイト アイコンに変化します)。  
   
 ## <a name="see-also"></a>参照  
- [アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)
+ [アダプターのセキュリティ保護](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efd3a6bf371312348d7ce54a24f34b3cb5e4206c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86349adae1a3ae061cb07c6c770532cf92c74dc8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="basic-oracle-data-types"></a>基本的な Oracle データ型
 このトピックの内容について説明しますが、どのように[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Oracle データ型。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 |バイナリ倍 * *|xsd:double 場合 prec < 15 を =<br />xsd:string 場合 prec > 15|Double<br />文字列|-|  
 |バイナリ整数 * *|xsd:integer|Int32|プロシージャ、関数、およびパッケージのサポート。|  
 |ブール値|xsd:boolean|Null 許容のブール値||  
-|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**>**'、エンティティ表記に置き換える必要があります**(&lt;、 &gt;)**biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
+|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**\>**'、エンティティ表記に置き換える必要があります**(&lt;、 &gt;)**biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
   
  \*これらの Oracle データ型が表示される方法の影響を受ける、 **EnableSafeTyping**プロパティをバインドします。  
   

@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56818550af21cf8f37d6cdb1551469ba157dde5a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b45fb5e3ebc47bcaa27226be28618269f9da2e55
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>レッスン 1: パイプライン プロジェクトをソリューションに追加します。
 このレッスンでは、for SWIFT の新しい BizTalk プロジェクトをソリューションにパイプラインをカスタマイズして使用できる、送信パイプラインが表示されるようにを追加します。  
@@ -34,11 +34,11 @@ ms.lasthandoff: 09/20/2017
   
 4.  **名前**ボックスに、入力**SWIFTPipelines**プロジェクト名として。  
   
-5.  **ソリューション**ボックスで、**ソリューションに追加**です。 **場所**ボックスを参照して選択  **\<*ドライブ*: > \labs\SWIFTProject** が選択されています。  
+5.  **ソリューション**ボックスで、**ソリューションに追加**です。 **場所**ボックスを参照して選択  **\<*ドライブ*:\>\labs\SWIFTProject** が選択されています。  
   
 6.  をクリックして**OK**新しいプロジェクトを開きます。  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーに新しいプロジェクトを追加し、プロジェクト フォルダーが作成され、内のファイル、 \<*ドライブ*>: \Labs\SWIFTProject フォルダーです。  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーに新しいプロジェクトを追加し、プロジェクト フォルダーが作成され、内のファイル、 \<*ドライブ*\>: \Labs\SWIFTProject フォルダーです。  
   
 7.  モジュール 2 SWIFTPipelines プロジェクトへのレッスン 2 で作成したアセンブリ キー ファイルを適用します。 詳細については、次を参照してください。[レッスン 2: SWIFTSchemas プロジェクトの厳密な名前付き BizTalk アセンブリを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)です。  
   

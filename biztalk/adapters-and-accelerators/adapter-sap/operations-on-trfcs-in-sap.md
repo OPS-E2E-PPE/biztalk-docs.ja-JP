@@ -26,11 +26,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e60465716931161e9b9949e16c4630d85c2cfe2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4eac8dab219e46dc569b604a63e195f4613eb344
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-trfcs-in-sap"></a>SAP の tRFCs に対する操作
 トランザクションの Rfc (tRFCs) は、Rfc 作業 (LUW) の論理単位の一部として呼び出されます。 SAP システムを LUW にすべてのビジネスやプログラミング タスクを完了するために必要な手順が含まれます。 TRFC が RFC; を呼び出す方法を表します一意の SAP アーティファクトではありません。  
@@ -114,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
 -   アダプターは、SAP ゲートウェイで、RFC 変換先を登録する必要があります。 登録は、プログラム ID と呼ばれる論理名をに基づいてください。 プログラム ID を指定する URI の接続でパラメーターを指定する SAP ゲートウェイ、およびこの登録の SAP サーバー。  
   
--   TID データベースは、SQL Server で作成する必要があります。 これを行うには、セットアップでインストールされている SQL スクリプトを実行する必要があります。 SQL スクリプトが通常にインストールされている\<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 詳細については、「 [BizTalk Adapter Pack をインストールする](http://msdn.microsoft.com/library/2ae27db5-b11b-42c3-a568-e2331badf80e)です。  
+-   TID データベースは、SQL Server で作成する必要があります。 これを行うには、セットアップでインストールされている SQL スクリプトを実行する必要があります。 SQL スクリプトが通常にインストールされている\<インストール ドライブ\>: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 詳細については、「 [BizTalk Adapter Pack をインストールする](http://msdn.microsoft.com/library/2ae27db5-b11b-42c3-a568-e2331badf80e)です。  
   
 -   **TidDatabaseConnectionString** TID データベースの SQL データベース接続文字列に設定するプロパティをバインドする必要があります。 詳細については、 **TidDatabaseConnectionString**バインディング プロパティを参照してください[mySAP Business Suite のバインドのプロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
   

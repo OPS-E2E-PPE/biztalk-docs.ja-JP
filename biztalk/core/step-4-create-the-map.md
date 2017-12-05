@@ -12,11 +12,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67128880233a04b6b1573f11ff5229cebe328b25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fcbce54a488cb687ad0fb2c7a1931243c8cd882
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-create-the-map"></a>ステップ 4: マップの作成
 ![手順 5 の 4](../core/media/step-4of5.gif "Step_4of5")  
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 5.  **BizTalk 型の選択** ダイアログ ボックスで、展開**EAISchemas**、展開**スキーマ**をクリックして**eaischemas.request**をクリックして**Ok**です。  
   
-6.  **送信元スキーマ** ウィンドウを右クリックして**\<スキーマ >**、クリックして**ツリー ノードの展開**です。  
+6.  **送信元スキーマ** ウィンドウを右クリックして**\<スキーマ\>**、クリックして**ツリー ノードの展開**です。  
   
 7.  **送信先スキーマ** ウィンドウで、をクリックして**送信先スキーマを開く**です。  
   
 8.  **BizTalk 型の選択** ダイアログ ボックスで、展開**EAISchemas**、展開**スキーマ**をクリックして**eaischemas.requestdecline**、し、をクリックして**OK**です。  
   
-9. **送信先スキーマ** ウィンドウを右クリックして**\<スキーマ >**、クリックして**ツリー ノードの展開**です。  
+9. **送信先スキーマ** ウィンドウを右クリックして**\<スキーマ\>**、クリックして**ツリー ノードの展開**です。  
   
 10. **送信元スキーマ** ウィンドウで、ドラッグ、 **ReqID**フィールドを**ReqID**で、**送信先スキーマ**ウィンドウです。 これら 2 要素を接続する線が表示されます。  
   

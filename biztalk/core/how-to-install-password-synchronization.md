@@ -15,18 +15,18 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ecc01ef4bc9d8bf2e82ca3dfe23b13ea0b67be2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3a6a3f93e600a8e68581f09af8fcdbc77ed57af
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-password-synchronization"></a>パスワード同期をインストールする方法
 パスワード同期は、他のシングル サインオン機能と同様、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の既定のインストールではインストールされません。セットアップのときに、明示的に選択する必要があります。  
   
 ### <a name="to-install-password-synchronization"></a>パスワード同期をインストールするには  
   
-1.  BizTalk Server の CD を参照して、  **\<CDRoot > \Platforms\SSO**フォルダーです。  
+1.  BizTalk Server の CD を参照して、  **\<CDRoot\>\Platforms\SSO**フォルダーです。  
   
 2.  実行**setup.exe**ウィザードの指示に従います。  
   

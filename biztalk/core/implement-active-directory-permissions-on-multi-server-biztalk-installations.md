@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0f6f5cb6403c752b18cbfb1c4370cbe3ca95e65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ff7b45e560278053cec99208fd06917d079d6b8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="guidelines-for-implementing-active-directory-permissions-on-multi-server-biztalk-installations"></a>複数サーバーの BizTalk インストールでの Active Directory アクセス許可の実装に関するガイドライン
 このトピックでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストールで使用するユーザー アカウントとグループから構成される Active Directory 組織単位を作成する際のガイドラインを示します。  
@@ -238,7 +238,7 @@ ms.lasthandoff: 09/20/2017
 |BizTalk Server 管理者|グローバルまたはユニバーサル|-BTUserAdmin<br />-BTUserInstall<br />BizTalk 開発ユーザー<br />BizTalk 展開ユーザー|  
 |BizTalk サポート ユーザー|グローバルまたはユニバーサル|BTUserSupport (サポート ユーザーのローカル ドメイン アカウント)|  
 |SSO 管理者|グローバルまたはユニバーサル|-SSOService<br />-BTUserInstall<br />ローカル管理者|  
-|SSO 関連管理者|グローバルまたはユニバーサル|BizTalk 開発ユーザー<br />BizTalk 展開ユーザー<br />-BTServiceHostIso<br />-   \<コンソールのユーザー >|  
+|SSO 関連管理者|グローバルまたはユニバーサル|BizTalk 開発ユーザー<br />BizTalk 展開ユーザー<br />-BTServiceHostIso<br />-   \<コンソール ユーザー\>|  
 |Windows SharePoint Services 管理者|グローバルまたはユニバーサル|-SPAdmin<br />-BTUserInstall<br />-BTUserDeploy<br />BizTalk 開発ユーザー<br />BizTalk 展開ユーザー|  
   
  ドメイン グループに関する推奨事項と注意事項を次に示します。  
@@ -247,7 +247,7 @@ ms.lasthandoff: 09/20/2017
   
 -   ドメイン グループは、グローバル グループにもユニバーサル グループにもすることができます。  
   
--   使用して *\<DomainName >\\< ユーザー名\>*構成ウィザードでドメイン アカウント情報を指定する場合。  
+-   使用して *\<DomainName\>\\< ユーザー名\>*構成ウィザードでドメイン アカウント情報を指定する場合。  
   
 -   グループとユーザー アカウントおよびサービス アカウントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターが属しているドメインに属する必要があります (これは構成ウィザードで確認され、他のドメインのアカウントや他のドメインのアカウントを含むグループは表示されません)。  
   
@@ -337,7 +337,7 @@ ms.lasthandoff: 09/20/2017
 >  これらの推奨事項は開発環境、共有環境に限定されるもので、社内のパスワード ポリシーの使用を勧めたり妨げるものではありません。 パスワードの要件については、ネットワーク管理者に確認してください。  
   
 > [!NOTE]
->  社内のパスワード ポリシーに生成されたパスワードが含まれる場合、記号やその組み合わせには XML の特殊用途の文字もあることに注意してください。 これらの文字を不適切に使用すると、構成時に、構成 XML ファイルを開けなくなります。 これらのシンボルを含める"&"、"\<"、">"、1 つに、二重引用符、他のユーザーを含めることがあります。 ファイル ベースの構成を実行する前に、構成 XML ファイルをテストしてください。 生成されたパスワードを埋め込んだドキュメントを Internet Explorer (または XML エディター) で開くことで、適切な XML 書式設定について、これを確実にテストすることができます。  
+>  社内のパスワード ポリシーに生成されたパスワードが含まれる場合、記号やその組み合わせには XML の特殊用途の文字もあることに注意してください。 これらの文字を不適切に使用すると、構成時に、構成 XML ファイルを開けなくなります。 これらのシンボルを含める"&"、"\<「,」\>"、1 つに、二重引用符、他のユーザーを含めることがあります。 ファイル ベースの構成を実行する前に、構成 XML ファイルをテストしてください。 生成されたパスワードを埋め込んだドキュメントを Internet Explorer (または XML エディター) で開くことで、適切な XML 書式設定について、これを確実にテストすることができます。  
   
  アップラインの環境でセキュリティで保護されたパスワードの展開の詳細については (テストするメソッドを含む、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成ファイル) を参照してください[BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)です。  
   

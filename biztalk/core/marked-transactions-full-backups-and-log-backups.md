@@ -17,11 +17,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36c7eab426bfc19c082d8c9651cf4d02eae0075a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff71cbe7eb910c66530dee3264822eae121c0ce2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="marked-transactions-full-backups-and-log-backups"></a>マークされたトランザクション、完全バックアップ、ログ バックアップ
 BizTalk Server のバックアップ ジョブは、BizTalk Server のデータベースと呼ばれるトランザクションの種類と組み合わせて、データベースの完全バックアップとトランザクション ログのバックアップを使用して、すべての同期のバックアップを作成、*マークされたトランザクション*です。 "マークされたトランザクション" とは、そのトランザクションに参加するすべてのデータベースのトランザクション ログに対してマークを設定するトランザクションです。 新しい分散トランザクションの開始を抑制しながら、現在実行されている分散トランザクションの完了を待機し、適切な時期が来たらトランザクションを実行してマークを設定するというものです。  
@@ -38,9 +38,9 @@ BizTalk Server のバックアップ ジョブは、BizTalk Server のデータ�
 ## <a name="transaction-log-backups"></a>トランザクション ログのバックアップ  
  BizTalk Server のバックアップ ジョブを実行する 2 つ目のプロセスは*MarkAndBackupLog*です。 ジョブを実行するたびに、このプロセスですべての BizTalk Server データベースにマークが設定され、トランザクション ログ バックアップが実行されます。  
   
- 使用して作成された文字列のマークは *\<ServerName >*_*\<DatabaseName >*_Log\_*\<LogMarkName >*\_ *\<タイムスタンプ >*.bak、場所、  *\<Log Mark Name >*は、SQL Server エージェント ジョブで構成します。 各データベースの最後のログを復元するときに、このマークが使用されます。  
+ 使用して作成された文字列のマークは *\<ServerName\>*_*\<DatabaseName\>*_Log\_  *\<LogMarkName\>*\_*\<タイムスタンプ\>*.bak、場所、 *\<ログ マーク名\>*は、SQL Server エージェント ジョブで構成します。 各データベースの最後のログを復元するときに、このマークが使用されます。  
   
  詳細については、SQL Server Books Online の「トランザクション ログ バックアップ」および「関連するデータベースのバックアップと復旧」を参照してください。  
   
 ## <a name="see-also"></a>参照  
- [バックアップと復元に関する詳細情報](../core/advanced-information-about-backup-and-restore1.md)
+ [バックアップおよび復元に関する詳細情報](../core/advanced-information-about-backup-and-restore1.md)

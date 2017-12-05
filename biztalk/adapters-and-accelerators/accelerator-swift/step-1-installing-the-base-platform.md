@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b7551972c14de0bcbd36532d76e3706a762cf48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e0884ff97e9981129f63c9bc425e86dfeaafc9a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-1-installing-the-base-platform"></a>手順 1: 基本プラットフォームをインストールします。
 ベースのプラットフォームでは、インストール[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]と[!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]既定のインストール オプションを使用して、各サーバー上の Service Pack 2 です。 これらの推奨事項に従います。  
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/20/2017
   
 -   適切なライセンス情報 (サーバーごとに購入した接続の最大数) を入力することを確認します。 利用可能な接続の数によってシステム パフォーマンスに影響することができます。  
   
--   必要なすべてのソフトウェア前提条件がインストールされていることを確認してください、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]インストールします。 詳細についてで BizTalk Server のインストール手順を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041)です。 [BizTalk 2013 R2 Accelerator for SWIFT のインストール ガイド](http://msdn.microsoft.com/library/d2b4a9f3-baeb-4fbc-9fda-5e4178832cd1)です。  
+-   BizTalk Server のインストールに必要なすべてのソフトウェア前提条件がインストールされていることを確認します。 詳細についてで BizTalk Server のインストール手順を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041)です。 [BizTalk 2013 R2 Accelerator for SWIFT のインストール ガイド](http://msdn.microsoft.com/library/d2b4a9f3-baeb-4fbc-9fda-5e4178832cd1)です。  
   
 -   オフラインの環境で、実稼働サーバーにインストールする前にすべての重要な更新プログラムをテストします。  
   
 -   すべての該当する修正プログラムの展開の一環としてインストールするすべての製品をインストールすることを確認します。 詳細については、次のソースを参照してください。  
   
-    -   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]オンライン ヘルプ  
+    -   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のオンライン ヘルプ  
   
     -   BizTalk Server のインストール」の手順に[http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041)です。  
   

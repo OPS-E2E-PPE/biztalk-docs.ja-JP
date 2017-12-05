@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34a437cdc306a25d8f5e688880c55530ea9703f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49a51244b7033c6cebc978a39ad37dd5732fa38d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenario-server-architecture"></a>テスト シナリオのサーバーのアーキテクチャ
 このトピックでは、ロード テスト中にサーバーと、ロード テストの実行対象となる、個別のサーバーのアーキテクチャ間のメッセージ フローの概要を示します。  
@@ -65,9 +65,9 @@ ms.lasthandoff: 09/20/2017
 5.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]応答を処理し、メッセージ ボックス データベースへの応答メッセージが引き続き発生します。 その後、電卓の web サービスからの応答メッセージを BizTalk 要求-応答ポートでメッセージ ボックス データベースから取得され、応答メッセージは、ロード テスト エージェント コンピューターに配信されます。  
   
 ## <a name="baseline-server-architecture"></a>ベースライン サーバー アーキテクチャ  
- HYPER-V ロールがインストールされていない、ベースライン サーバー アーキテクチャの両方と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]ホスト オペレーティング システムにインストールされました。 これは、「ベースライン」パフォーマンス メトリックを確立するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理ハードウェア環境のソリューションです。  
+ Hyper-v の役割がインストールされていない、ベースライン サーバー アーキテクチャの両方と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト オペレーティング システムにインストールされた SQL Server とします。 これは、「ベースライン」パフォーマンス メトリックを確立するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理ハードウェア環境のソリューションです。  
   
- 次の図に、物理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]基準サーバー アーキテクチャ層。  
+ 次の図に、物理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]および基準サーバー アーキテクチャの SQL Server 層です。  
   
  ![物理 BizTalk & #47。物理 SQL](../technical-guides/media/archphysicalbts-physicalsql.gif "ArchPhysicalBTS_PhysicalSQL")  
 物理的な BizTalk Server/物理 SQL Server (ベースライン)  
@@ -80,7 +80,7 @@ ms.lasthandoff: 09/20/2017
   
     -   6 + 3 の合計 = **9** GB RAM と 8 + 4 = **12**プロセッサ コアの利用可能な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
--   **SQL Server** - 1[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]次のように構成されたコンピューター。  
+-   **SQL Server** -次のように構成されている SQL Server コンピューターが 1 台。  
   
     -   **8** GB の RAM が使用できます。  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
  ![仮想 BizTalk & #47。物理 SQL](../technical-guides/media/archvirtualbts-physicalsql.gif "ArchVirtualBTS_PhysicalSQL")  
 BizTalk Server の仮想/物理 SQL Server  
   
- このシナリオでは、ロード テストがに対して実行された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HYPER-V 仮想マシンで実行されていると[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]物理ハードウェア上で実行されています。  
+ このシナリオでは、ロード テストがに対して実行された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HYPER-V 仮想マシンと物理ハードウェア上で実行されている SQL Server で実行されています。  
   
 > [!NOTE]  
 >  次に示すメモリおよびプロセッサのコアの割り当てが HYPER-V 仮想マシンまたは物理ハードウェア上で特定のコンピューターが実行しているかどうかをされている唯一の違いの各非基準シナリオと同じです。  
@@ -103,14 +103,14 @@ BizTalk Server の仮想/物理 SQL Server
   
     -   4 コア プロセッサがそれぞれに割り当てられている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]3 行 x 4 の合計を使用してコンピューター = **12**プロセッサ コアの利用可能な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
--   **SQL Server** - 1[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]次のように構成されたコンピューター。  
+-   **SQL Server** -次のように構成されている SQL Server コンピューターが 1 台。  
   
     -   **8** GB の RAM が使用できます。  
   
     -   **4**プロセッサ コアを使用できます。  
   
 ## <a name="virtual-biztalk-server--virtual-sql-server"></a>BizTalk Server の仮想/仮想 SQL Server  
- 次の図仮想[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターと仮想[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]別の HYPER-V ホスト コンピューター上のコンピューター。  
+ 次の図仮想[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターをホストしているコンピューターと別の HYPER-V で仮想 SQL Server コンピューター。  
   
  ![仮想 BizTalk & #47。仮想 SQL](../technical-guides/media/archvirtualbts-virtualsql.gif "ArchVirtualBTS_VirtualSQL")  
 BizTalk Server の仮想/仮想 SQL Server  
@@ -121,7 +121,7 @@ BizTalk Server の仮想/仮想 SQL Server
 >  このシナリオでメモリおよびプロセッサ コアの割り当ては、割り当てメモリおよびプロセッサ コアのと同じ、 **BizTalk Server の仮想/物理 SQL Server**シナリオ、されていることが唯一の違い[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]されました物理ハードウェアではなく、HYPER-V 仮想マシン上で実行するように構成します。  
   
 ## <a name="consolidated-environment"></a>統合環境  
- 次の図仮想[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターと仮想[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]コンピューターが 1 つの HYPER-V ホスト コンピューターに統合します。  
+ 次の図仮想[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターと仮想 SQL Server コンピューターが 1 つの HYPER-V ホスト コンピューターに統合します。  
   
  ![仮想 BizTalk & #47。仮想 SQL & #47。統合](../technical-guides/media/archvirtualbts-virtualsql-consolidated.gif "ArchVirtualBTS_VirtualSQL_Consolidated")  
 統合環境  

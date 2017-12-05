@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 010c574c1c9c799d6235b9d10e3378b46c3d1548
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 842683d2eec04d77bad2b7726af0d687fae12884
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="createapp-application-deployment-sample"></a>CreateApp (アプリケーションの展開サンプル)
 このトピックでは、CreateApp サンプルの使用方法について説明し、BTSTask コマンド ライン ツールを使用して BizTalk アプリケーションを展開および展開解除する方法を示します。 このサンプルに含まれるスクリプトを使用して夜間のビルド プロセスを自動化し、BizTalk アプリケーションを展開および展開解除できます。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
          C:\ScriptLog.txt  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- 次のフォルダーにサンプル ファイルを検索できる*\<サンプル パス >*\Application 展開\\:  
+ 次のフォルダーにサンプル ファイルを検索できる*\<サンプル パス\>*\Application 展開\\:  
   
 -   CreateApp (フォルダ)  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec002d19064032dcc663cf4da06b916eeda64d23
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 897c25ecb64a3038a6992b9c4caf927ba3e2d805
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schema-resolution-in-pipeline-components"></a>スキーマの解決パイプライン コンポーネント
 パイプラインの逆アセンブラー コンポーネントおよびアセンブラー コンポーネントは、XSD スキーマを使用して、メッセージを処理します。 スキーマには、昇格させたプロパティの一覧、識別フィールド、フラット ファイル メッセージの注釈、XML エンベロープの注釈などの情報が含まれます。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 </ns0:MyDocument>  
 ```  
   
- スキーマがあるない、名前空間に定義されている場合、メッセージ型は"\<**rootNode**>"です。 たとえば、前の例の XML で名前空間がない場合、メッセージの種類は、"MyDocument" になります。  
+ スキーマがあるない、名前空間に定義されている場合、メッセージ型は"\<**rootNode**\>"です。 たとえば、前の例の XML で名前空間がない場合、メッセージの種類は、"MyDocument" になります。  
   
  標準のパイプライン コンポーネントは、メッセージの種類を使用して、データベースから適切なスキーマを取得します。 既定の XML の受信および送信パイプラインは、メッセージの XML コンテンツから実行時に動的に検出されるメッセージの種類を使用して、読み込むスキーマを常に判別します (認識されないメッセージが許可されるように、パイプライン コンポーネントが設定されている場合を除く)。 XML 逆アセンブラーでは、このメカニズムを使用して、メッセージのエンベロープを削除できます。ただし、XML アセンブラーは、使用するエンベロープ スキーマを認識しないままで送信メッセージのエンベロープを作成することはできません。  
   

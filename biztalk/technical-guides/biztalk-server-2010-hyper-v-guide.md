@@ -12,14 +12,14 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0e76fee8ce74f11ec0f1a14334447114f3c4ed0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 937fcb3618bf3bde4883242d48da2a841f00dea5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-2010-hyper-v-guide"></a>BizTalk Server 2010 の HYPER-V のガイド
-このガイドの目的は、Microsoft の使用に関する実用的なガイダンスを提供する[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]microsoft [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] HYPER-V です。 強調[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がパフォーマンスの評価方法とパフォーマンスのテストのシナリオは一般に、仮想化サーバー アプリケーションのパフォーマンスを分析するために役立ちます。 このガイドは、IT 技術者と開発者コミュニティへの関心のあるされます。  
+このガイドの目的は、Microsoft と Microsoft BizTalk Server を使用するための実用的なガイダンスを提供する[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V です。 強調[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がパフォーマンスの評価方法とパフォーマンスのテストのシナリオは一般に、仮想化サーバー アプリケーションのパフォーマンスを分析するために役立ちます。 このガイドは、IT 技術者と開発者コミュニティへの関心のあるされます。  
   
  このガイドのコピーをダウンロードするには[http://go.microsoft.com/fwlink/?LinkId=149267](http://go.microsoft.com/fwlink/?LinkId=149267)です。  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 -   パフォーマンスの最適化とパフォーマンスのボトルネックの特定の興味のある開発者  
   
 ### <a name="goals-of-this-guide"></a>このガイドの目的  
- このガイドの主な目的を確認する方法に関するガイダンスを提供する[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を期待されるパフォーマンスを達成できそうは HYPER-V で実行されています。 このガイダンスもされます値の展開済みの最適化に役立てるために[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションです。  
+ このガイドの主な目的は、HYPER-V で実行されている BizTalk Server が期待されるパフォーマンスを達成できそうかを判断する方法に関するガイダンスを提供します。 このガイダンスもされます値の展開済みの最適化に役立てるために[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションです。  
   
  このプロジェクトは、次の目的で実施されました。  
   

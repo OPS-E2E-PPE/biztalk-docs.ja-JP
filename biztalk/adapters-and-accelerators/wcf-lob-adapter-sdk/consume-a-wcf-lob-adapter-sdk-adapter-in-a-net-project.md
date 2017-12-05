@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb6208395813c7e4be25964d9949d2f909e4806d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 622c6ad687e681591071d472e2ff8a9e8c515f95
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project"></a>.NET プロジェクトで、WCF LOB Adapter SDK アダプターを使用します。
 使用して構築されたアダプターを使用する、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクトにサービス参照を追加する必要があります。 これを行うことができます。  
@@ -67,10 +67,10 @@ ms.lasthandoff: 09/20/2017
     |コントラクトの型|成果物|Description||  
     |-------------------|--------------|-----------------|-|  
     |送信|CLR WCF プロキシ|コントラクトおよびサービス実装が含まれています。||  
-    |送信||App.config|含まれています、\<エンドポイント > と\<バインド > 要素の\<システムです。ServiceModel >\<クライアント >。|  
+    |送信||App.config|含まれています、\<エンドポイント\>と\<バインド\>要素\<システムです。ServiceModel\>\<クライアント\>です。|  
     |受信|CLR の WCF サービスのインターフェイス|コントラクトを含まれています。||  
     |受信||CLR の WCF サービスの実装|スタブに対応する、コントラクトから派生する実装。|  
-    |受信||App.config|含まれています、\<エンドポイント >、\<バインド > と\<動作 > 要素の\<システムです。ServiceModel >\<サービス >。|  
+    |受信||App.config|含まれています、\<エンドポイント\>、\<バインド\>と\<動作\>要素\<システムです。ServiceModel\>\<サービス\>です。|  
   
 10. アプリケーションで、プロキシを使用できます。  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
  IIS でホストされているアダプターからプロキシ クラスを生成するには  
   
-1.  コマンド プロンプトで次のように入力します。 **svcutil.exe"http://localhost/adapter/AdapterService.svc?wsdl"/config:app.config**です。HTTP パスをホストされているアダプターの正しいパスに置き換えます。 .NET CLR プロキシとを含む output.config を含む .cs ファイルが作成、\<バインド > とクライアント\<エンドポイント > の\<system.serviceModel >。  
+1.  コマンド プロンプトで次のように入力します。 **svcutil.exe"http://localhost/adapter/AdapterService.svc?wsdl"/config:app.config**です。HTTP パスをホストされているアダプターの正しいパスに置き換えます。 .NET CLR プロキシとを含む output.config を含む .cs ファイルが作成、\<バインド\>とクライアント\<エンドポイント\>の\<system.serviceModel\>です。  
   
     > [!NOTE]
     >  クエリ文字列を使用して返される操作を制限することができる場合は、アダプターには、多くの操作が含まれており、' op =' の関心がある操作の名前が続きます。 例: `svcutil.exe “http://localhost/adapter/AdapterService.svc?wsdl&op=Echo/EchoString&op=Echo/EchoArray”` EchoString および EchoArray 操作だけのプロキシ コードを生成します。  

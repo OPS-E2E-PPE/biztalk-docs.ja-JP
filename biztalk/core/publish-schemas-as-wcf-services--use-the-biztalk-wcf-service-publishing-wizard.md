@@ -18,11 +18,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e1acb31455bfcf81ab9d4cb3e983f2614fce1c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eba9aee72bfbd3197437011950f23fd7a31e2ccb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-schemas-as-wcf-services"></a>BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法
 スキーマを WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **WCF サービスの種類**ページ、オンまたはオフ、**メタデータ エンドポイントを有効にする**分離された WCF の受信場所のインターネット インフォメーション サービス (IIS) によってホストされているかどうかを示すチェック ボックスが発行します。サービス メタデータが HTTP/GET 要求を使用した取得用。  
   
-     このチェック ボックスをオンすると、ウィザードが生成されます、Web.config ファイルを**httpGetEnabled**の属性、  **\<serviceMetadata >**要素に設定されている**は true。**. メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。 メタデータが公開されるアドレスは、エンドポイント アドレスと**? wsdl**クエリ文字列。  
+     このチェック ボックスをオンすると、ウィザードが生成されます、Web.config ファイルを**httpGetEnabled**の属性、  **\<serviceMetadata\>**  に要素が設定されている**true**です。 メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。 メタデータが公開されるアドレスは、エンドポイント アドレスと**? wsdl**クエリ文字列。  
   
     > [!NOTE]
     >  機密性の高いサービス メタデータが誤って漏洩を防ぐためには、実稼働環境でこの動作を無効にすることをお勧めします。 これは、httpgetenabled を false に設定、または、MEX 仮想ディレクトリを削除して実行できます。  
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
      ![WCF サービスのプロパティ ページ](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
   
-11. **WCF サービスの場所**] ページの [、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (http://localhost/\<*Web サービス説明の名前*>)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはをクリックして**[参照]** Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
+11. **WCF サービスの場所**] ページの [、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (http://localhost/ <*Web サービス説明の名前*>)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはをクリックして**を参照** Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
   
     -   **既存のプロジェクトを上書きします。** : このオプションは、Web ディレクトリが存在する場合のみ選択できます。 このオプションを選択すると、同じ場所にのみ公開できます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
   
@@ -105,10 +105,10 @@ ms.lasthandoff: 09/20/2017
      ![WCF サービスの場所 ページ](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
   
     > [!NOTE]
-    >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーで発行するプロジェクト名を入力として http://\<*servername*>/\<*WCF サービスの場所*>。  
+    >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーで発行するプロジェクト名を入力として http://&lt です*servername*>/<*WCF サービスの場所*>。  
   
     > [!NOTE]
-    >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、http://\<*servername*>: 8080/\<*WCF サービスの場所*>。  
+    >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、http://&lt*servername*>: 8080/<*WCF サービスの場所*>。  
   
     > [!NOTE]
     >  ウィザードを使用して受信場所を作成する場合は、既定値を使用して受信場所が作成されます。 受信パイプラインの既定値は、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**パイプライン。 公開された WCF サービスを通じて受信するメッセージには特別なパイプライン処理 (たとえば、検証、関連付け/プロパティの昇格、または受信/送信マップ) が必要な場合に、受信パイプラインを設定する必要があります**Microsoft.BizTalk.DefaultPipelines.XMLReceive**、または BizTalk 管理コンソールを使用してカスタム パイプラインにします。  

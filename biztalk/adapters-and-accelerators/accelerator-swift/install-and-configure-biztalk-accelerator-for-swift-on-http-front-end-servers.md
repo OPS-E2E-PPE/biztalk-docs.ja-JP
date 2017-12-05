@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe0a320f9f60f72975faf903c1355b8730840b26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8a63277ec58981f5f0f904aabe61957de66df08
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-http-front-end-servers"></a>インストールと BizTalk Accelerator を HTTP フロント エンド サーバーに SWIFT の構成
 インストールおよび構成する方法について説明[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]HTTP フロント エンド サーバーにします。 これらのサーバーは主に SWIFT ネットワークとの通信に使用します。  
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/20/2017
   
 2.  Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成コンソールで、構成**MCRR**と**WebService**です。  
   
-3.  Web サーバーで、構成ウィザードの完了後に、フォルダーに web.config ファイルを開きます。 \<*ドライブ*>: \Program Files\Microsoft[!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]メモ帳で \Service\ です。 "Authorization"を検索します。 **承認**セクションで、ロール値 A4SWIFT users グループの名前を設定します。
+3.  Web サーバーで、構成ウィザードの完了後に、フォルダーに web.config ファイルを開きます。 \<*ドライブ*\>: \Program Files\Microsoft[!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]メモ帳で \Service\ です。 "Authorization"を検索します。 **承認**セクションで、ロール値 A4SWIFT users グループの名前を設定します。

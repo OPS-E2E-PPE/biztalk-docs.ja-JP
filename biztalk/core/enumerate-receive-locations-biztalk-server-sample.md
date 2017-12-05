@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a497b4b2d81ef2e6d0e62032b8c3939794451cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82fcdc400395d7bbfd6de8f9bc0fca85114a25dc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enumerate-receive-locations-biztalk-server-sample"></a>列挙の受信場所 (BizTalk Server サンプル)
 受信場所の列挙サンプルでは、1 つ以上の受信場所に関する詳細情報を取得する方法を説明します。  
@@ -40,9 +40,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、次の SDK の場所にあります。  
   
--   VBScript バージョン: \<*サンプル パス*> \Admin\WMI\Enumerate Receive Locations\VBScript\  
+-   VBScript バージョン: \<*サンプル パス*\>\Admin\WMI\Enumerate Receive Locations\VBScript\  
   
--   Visual c# バージョン: \<*サンプル パス*> \Admin\WMI\Enumerate Receive Locations\CSharp\  
+-   Visual c# バージョン: \<*サンプル パス*\>\Admin\WMI\Enumerate Receive Locations\CSharp\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -66,13 +66,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  コマンド ウィンドウで、このサンプルの VBScript バージョンと Visual C# バージョンのどちらを実行するかに応じて、次のフォルダのどちらかに移動します。  
   
-     \<*パスのサンプル*> \Admin\WMI\Enumerate Locations\VBScript\ の受信  
+     \<*パスのサンプル*\>\Admin\WMI\Enumerate 受信 Locations\VBScript\  
   
-     \<*パスのサンプル*> \Admin\WMI\Enumerate Locations\CSharp\bin\Debug\ の受信  
+     \<*パスのサンプル*\>\Admin\WMI\Enumerate 受信 Locations\CSharp\bin\Debug\  
   
 2.  このサンプルの VBScript バージョンと Visual C# バージョンのどちらを実行するかに応じて、EnumRecLocs.vbs (cscript プログラムを使用) または EnumRl.exe を実行します。 Visual C# バージョンの場合は、次の 2 つのコマンド ライン引数の 1 つを渡します。  
   
-    -   **\<ReceiveLocationName >。** 詳細情報を表示する受信場所の名前です。 受信場所名に空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<ReceiveLocationName\>です。** 詳細情報を表示する受信場所の名前です。 受信場所名に空白が含まれている場合は、名前を引用符で囲みます。  
   
     -   **/?.** ヘルプを表示します。  
   
@@ -103,4 +103,4 @@ ms.lasthandoff: 09/20/2017
  スクリプト ファイル EnumRecLocs.vbs および Visual C# ソース ファイル EnumRLs.cs には、実行する操作について説明する詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
   
 ## <a name="see-also"></a>参照  
- [管理 WMI (BizTalk Server Samples フォルダ)](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

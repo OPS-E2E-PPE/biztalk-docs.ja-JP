@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73bd5013cd2a09d240fa58b7cf5283c8d1903c69
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 20693f00d536414b44a7577277cf9acd3e5af530
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster"></a>NLB クラスターで機能する BAM ポータルを構成する方法
 BAM ポータルは、ネットワーク負荷分散 (NLB) クラスターで機能するように構成できます。  
@@ -145,7 +145,7 @@ BAM ポータルは、ネットワーク負荷分散 (NLB) クラスターで機
     > [!NOTE]
     >  このコマンドの目的は、BAM アプリケーション プール ユーザーの SOFTWAREMicrosoftBizTalk Server3.0BAMWebServicesidentity レジストリ キーへの読み取りアクセスを許可します。 例では Network Service を使用しています。アプリケーション プール用 IIS では Network Service が既定として使用されます。 既定の IIS 設定を使用しない場合は、展開で使用するアプリケーション プール ユーザーを代わりに指定してください。  
   
-16. コマンド プロンプトで、次を入力: subinacl.exe/keyreg「hkey_local_machine \software\microsoft\biztalk server \3.0」"許可/=\<BAM web サービス アカウント >"  
+16. コマンド プロンプトで、次を入力: subinacl.exe/keyreg「hkey_local_machine \software\microsoft\biztalk server \3.0」"許可/=\<BAM web サービス アカウント\>"  
   
     > [!NOTE]
     >  このコマンドの目的は、BAM 管理 Web サービス ユーザー アカウントに SOFTWARE\Microsoft\BizTalk Server\3.0\BAM\WebServices\Identity レジストリ キーへの読み取りアクセスを与えることです。  
@@ -154,7 +154,7 @@ BAM ポータルは、ネットワーク負荷分散 (NLB) クラスターで機
   
 18. コンピューターの管理ツールを使用して、IIS ワーカー プロセス グループ (IIS_WPG) および SharePoint Services グループ (STS_WPG) に、BAM 管理 Web サービス ユーザー アカウントと BAM アプリケーション プール ユーザー アカウントを追加します。  
   
-19. アプリケーション プールと Web サービスのユーザーの一時 ASP.NET フォルダーに対するアクセス許可を設定します。 c:\windows\system32\cacls"%windir%\Microsoft.NET\Framework\ バージョン 2.0。\<最小のバージョン番号 > \Temporary ASP.NET Files"/T/E/G \<BAM web サービス アカウント >: F  
+19. アプリケーション プールと Web サービスのユーザーの一時 ASP.NET フォルダーに対するアクセス許可を設定します。 c:\windows\system32\cacls"%windir%\Microsoft.NET\Framework\ バージョン 2.0。\<最小のバージョン番号\>\Temporary ASP.NET Files"/T/E/G \<BAM web サービス アカウント\>: F  
   
     > [!NOTE]
     >  BAM 管理 Web サービス ユーザー アカウントと BAM アプリケーション プール ユーザー アカウントの両方にアクセス権限を与えてください。  

@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3411adf32a15cd2a3b5f11a02dbafcf58f66b184
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d5780be22259fcd118ab70a0bc80174b53a9f27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-is-a-bam-definition-schema"></a>BAM 定義スキーマについて
 BAM 定義スキーマでは、ビジネス アナリストが作成した監視モデルの構造を定義します。  
@@ -43,7 +43,7 @@ BAM 定義スキーマでは、ビジネス アナリストが作成した監視
   
  BAM アドインを使用して Excel 用 BAM アドインへのエクスポート XML 機能を使用して、XML ファイルにエクスポートできるワークシートを作成する、任意のテキスト エディターでは、BAM 定義 (このスキーマのインスタンス) を含む XML ファイルを作成できます。  
   
- BAM アクティビティと BAM ビューを定義すれば、BAM 管理ユーティリティ (bm.exe) でこのワークシートを読み取り、ワークシートから XML を取得して、自動的にインフラストラクチャに展開することができるため、XML ファイルを手動でエクスポートする必要はありません。 結果は、スプレッドシートという名前の別のコピー\<ブック名 > >_livedata.xls です。 この新しいワークシートを使用するには、ライブ データ ソースに接続し、ピボット テーブル レポートの集計を表示します。  
+ BAM アクティビティと BAM ビューを定義すれば、BAM 管理ユーティリティ (bm.exe) でこのワークシートを読み取り、ワークシートから XML を取得して、自動的にインフラストラクチャに展開することができるため、XML ファイルを手動でエクスポートする必要はありません。 結果は、スプレッドシートという名前の別のコピー\<ブック名\>>_livedata.xls です。 この新しいワークシートを使用するには、ライブ データ ソースに接続し、ピボット テーブル レポートの集計を表示します。  
   
 > [!NOTE]
 >  手動でエクスポートして XML ファイル、スプレッドシートの上部にある BAM のメニュー項目を使用して、BAM 管理ユーティリティ、エクスポートされた XML ファイルと Microsoft Excel ファイルではなく展開する場合は、Office ツールを使用してライブ データを表示することはできません。  

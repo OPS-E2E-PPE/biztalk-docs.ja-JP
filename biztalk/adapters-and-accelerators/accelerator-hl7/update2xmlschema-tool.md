@@ -17,19 +17,19 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e673e55557af87e5f28005a50c2a01aedf09d2c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0f5a33b8951d1f02cf0504ba833b35adf275834
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update2xmlschema-tool"></a>Update2XMLSchema ツール
-Update2XMLSchema ツールでは、HL7 2. XML スキーマを BizTalk エディターでの動作を変更することができます。 これは、特定 HL7 2. XML スキーマが正しく動作しないため[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]変更なし。 スキーマを変更した後、ツールにより、Schemas フォルダーで、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]がインストールされている、たとえば、 *\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator forHL7\Templates\Schemas です。  
+Update2XMLSchema ツールでは、HL7 2. XML スキーマを BizTalk エディターでの動作を変更することができます。 これは、特定 HL7 2. XML スキーマが正しく動作しないため[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]変更なし。 スキーマを変更した後、ツールにより、Schemas フォルダーで、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]がインストールされている、たとえば、 *\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>HL7\Templates\Schemas のアクセラレータです。  
   
  Update2XMLSchema ツールを実行してから作成されるスキーマの一部のフィールドに手動で更新する必要があります。 参照してください[手動更新のために必要な](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)これらのスキーマの一覧についてはします。  
   
 ## <a name="syntax"></a>構文  
- このツールにあります*\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\2XML ユーティリティです。 このツールを実行するには、次のコマンドをコマンド プロンプトで。  
+ このツールにあります*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\2XML ユーティリティのアクセラレータです。 このツールを実行するには、次のコマンドをコマンド プロンプトで。  
   
 ```  
 Update2XMLSchema /s /v  
@@ -52,4 +52,4 @@ Update2XMLSchema /s c:\231XML\v231\xsd /v 2.3.1
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [必須の手動更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)
+-   [必要な手動更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)

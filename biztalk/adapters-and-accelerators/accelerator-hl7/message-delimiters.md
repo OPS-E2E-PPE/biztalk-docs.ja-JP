@@ -21,11 +21,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6e5cf3c013f0a9bedf8c412206aebe1ce2e3f16
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e25e4fad2eb9e32c87f8a395bd924fc4a1f2eb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-delimiters"></a>メッセージの区切り記号
 HL7 標準によって定義されたメッセージのイベントは、次の形式をとります。  
@@ -38,7 +38,7 @@ HL7 標準によって定義されたメッセージのイベントは、次の�
   
 |区切り記号|値|使用方法|  
 |---------------|-----------|-----------|  
-|[ セグメント終端記号]|\<cr >|キャリッジ リターンは、セグメントのレコードを終了します。 この値を変更することはできません。|  
+|[ セグメント終端記号]|\<cr\>|キャリッジ リターンは、セグメントのレコードを終了します。 この値を変更することはできません。|  
 |フィールド区切り文字|&#124;|パイプ文字では、セグメント内で 2 つの連続するデータ フィールドを区切ります。 また、この文字は、各セグメントの最初のデータ フィールドからセグメント ID を区切ります。|  
 |[コンポーネントの区切り記号]|^|Hat の文字は、データの横にあるコンポーネントを区切る HL7 標準で許容される範囲でのフィールドです。|  
 |サブコンポーネントの区切り記号|&|アンパサンド文字データの横にあるこれらのサブコンポーネントの分離、HL7 標準で許可されている場所のフィールドです。 これらのサブコンポーネントがない場合は、この文字を省略できます。|  

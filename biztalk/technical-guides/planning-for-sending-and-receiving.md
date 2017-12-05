@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf635712e7cafa534f7b6441407e4ec31e8bf047
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-sending-and-receiving"></a>送受信の計画
 処理されるドキュメントのほぼすべて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が受信した、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信アダプター、およびから送信された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信アダプター。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターのいずれかで目立つように図[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、することが重要が済んだ後どのアダプターやアクセラレータを使用してこれらのアダプターやアクセラレータを正しく構成する方法を決定します。  
@@ -44,22 +44,22 @@ ms.lasthandoff: 09/20/2017
 |[アダプター]|主な利点|トランザクションのサポート|双方向通信のサポート|順次受信のサポート|SSO は有効|  
 |-------------|---------------------|-------------------------|------------------------------------|-------------------------------|-----------------|  
 |ファイル|使いやすい|不可|いいえ|いいえ|不可|  
-|FTP|企業間の通信は、広く使用します。|不可|いいえ|いいえ|はい|  
-|HTTP(S)|企業間の通信は、広く使用します。|不可|要求 - 応答および送信請求 - 応答|不可|はい|  
-|SOAP|Web サービスの使用をサポートしています|不可|要求 - 応答および送信請求 - 応答|不可|はい|  
-|MSMQ (MSMQ)|BizTalk Server と Microsoft メッセージ キュー間でメッセージの 1 回限りの配信の保証をサポートしています|はい|いいえ|可|不可|  
-|MQ Series|Windows プラットフォームの BizTalk Server と IBM WebSphere MQ 間でメッセージの 1 回限りの配信の保証をサポートしています|はい|いいえ|はい|はい|  
-|SQL|直接 BizTalk Server と SQL Server データベース間の通信をサポート|はい|送信請求 - 応答のみ|不可|不可|  
+|FTP|企業間の通信は、広く使用します。|不可|いいえ|いいえ|可|  
+|HTTP(S)|企業間の通信は、広く使用します。|不可|要求 - 応答および送信請求 - 応答|不可|可|  
+|SOAP|Web サービスの使用をサポートしています|不可|要求 - 応答および送信請求 - 応答|不可|可|  
+|MSMQ (MSMQ)|BizTalk Server と Microsoft メッセージ キュー間でメッセージの 1 回限りの配信の保証をサポートしています|可|いいえ|可|不可|  
+|MQ Series|Windows プラットフォームの BizTalk Server と IBM WebSphere MQ 間でメッセージの 1 回限りの配信の保証をサポートしています|可|いいえ|はい|可|  
+|SQL|直接 BizTalk Server と SQL Server データベース間の通信をサポート|可|送信請求 - 応答のみ|不可|不可|  
 |Windows SharePoint Services|XML メッセージと BizTalk Server と SharePoint ドキュメント ライブラリの間でのバイナリのメッセージを交換できるように|不可|いいえ|いいえ|不可|  
 |POP3|電子メールでドキュメントの受信をサポートしています|不可|いいえ|いいえ|不可|  
 |SMTP (SMTP)|電子メールを使用したドキュメントの送信をサポート|不可|いいえ|いいえ|不可|  
 |EDI |EDI 標準に準拠するビジネス ドキュメントの処理をサポート|不可|いいえ|いいえ|不可|  
 |Custom|レガシ システムをサポートしています|あり (カスタム コードが必要)|あり (カスタム コードが必要)|あり (カスタム コードが必要)|あり (カスタム コードが必要)|  
-|WCF-WSHttp|サポート ws-* 標準 HTTP トランスポート経由で|あり (WsHTTP でトランザクションをサポート) (WS トランザクションのみ)|要求 - 応答および送信請求 - 応答|不可|はい|  
-|WCF-BasicHttp|ASMX ベースの Web サービスとクライアント、および、WS に準拠するその他のサービスと通信する-基本プロファイル 1.1 HTTP または HTTPS を使用します。|不可|要求 - 応答および送信請求 - 応答|不可|はい|  
-|WCF-NetTcp|サポート ws-* 標準 TCP トランスポート経由で|はい|要求 - 応答および送信請求 - 応答|不可|はい|  
-|WCF-NetMsmq|Microsoft メッセージ キュー (MSMQ) をトランスポートとしてを活用することにより、キューをサポート|はい|いいえ|はい|はい|  
-|WCF-NetNamedPipe|(WCF アプリケーション) の場合のみ、同じコンピューター上のプロセス間通信の高速トランスポートを提供します。|はい|要求 - 応答および送信請求 - 応答|不可|はい|  
+|WCF-WSHttp|サポート ws-* 標準 HTTP トランスポート経由で|あり (WsHTTP でトランザクションをサポート) (WS トランザクションのみ)|要求 - 応答および送信請求 - 応答|不可|可|  
+|WCF-BasicHttp|ASMX ベースの Web サービスとクライアント、および、WS に準拠するその他のサービスと通信する-基本プロファイル 1.1 HTTP または HTTPS を使用します。|不可|要求 - 応答および送信請求 - 応答|不可|可|  
+|WCF-NetTcp|サポート ws-* 標準 TCP トランスポート経由で|可|要求 - 応答および送信請求 - 応答|不可|可|  
+|WCF-NetMsmq|Microsoft メッセージ キュー (MSMQ) をトランスポートとしてを活用することにより、キューをサポート|可|いいえ|はい|可|  
+|WCF-NetNamedPipe|(WCF アプリケーション) の場合のみ、同じコンピューター上のプロセス間通信の高速トランスポートを提供します。|可|要求 - 応答および送信請求 - 応答|不可|可|  
 |WCF-Custom|WCF の拡張機能を使用をできます。|可能。|可能。|あり (バインドでサポートされている場合)|可能。|  
 |WCF-CustomIsolated|HTTP トランスポート経由で WCF 拡張機能の使用を有効に|可能。|可能。|不可。|可能。|  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
 |TIBCO Enterprise Message Service|BizTalk Server と TIBCO EMS サーバー間での XML メッセージとバイナリ データ形式メッセージの交換を有効にします。TIBCO EMS サーバーは、緊密に統合され信頼性の高いアプリケーション インフラストラクチャを提供します。|4.2|  
 |WebSphere MQ|BizTalk Server と IBM WebSphere MQ 間でのメッセージの交換を有効にします。|5.3 フィックス パック 10 以降またはおよび 6.0 修正パック 1.1 以降|  
   
- 使用可能な LOB アダプターの詳細については[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を参照してください[BizTalk Server 2010 に含まれるアダプター](http://go.microsoft.com/fwlink/?LinkId=152664) (http://go.microsoft.com/fwlink/?LinkId=152664)。  
+ BizTalk Server で使用可能な LOB アダプタについての詳細については、次を参照してください。 [BizTalk Server 2010 に含まれるアダプター](http://go.microsoft.com/fwlink/?LinkId=152664) (http://go.microsoft.com/fwlink/?LinkId=152664)。  
   
 ## <a name="biztalk-adapter-pack"></a>BizTalk アダプター パック  
  Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] Oracle データベース、Oracle E-business Suite、SAP、Siebel、および SQL Server などの LOB アプリケーションへの接続を提供する WCF ベース アダプターが含まれます。 使用可能なアダプターの一覧については[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください[BizTalk Adapter Pack](http://go.microsoft.com/fwlink/?LinkId=152665) (http://go.microsoft.com/fwlink/?LinkId=152665)。  
@@ -186,4 +186,4 @@ ms.lasthandoff: 09/20/2017
 -   シーケンシャルなコンボイを使用するオーケストレーションを構成する必要があります、オーケストレーションがメッセージをオーケストレーションのインスタンスが 1 つだけを使用する必要がありますプロセスに使用されている場合、**順次配送**のプロパティ、オーケストレーションの受信ポートに設定する必要があります**True**です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk server 環境のプランニング](../technical-guides/planning-the-environment-for-biztalk-server.md)
+ [BizTalk Server の環境の計画](../technical-guides/planning-the-environment-for-biztalk-server.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa99f6ec1bbc5ff817fecae67c9ad558face581f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3fc90d0798e3fca420e567d1a50c58607db4ae3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-business-components-using-biztalk-server-and-the-siebel-adapter"></a>ビジネス コンポーネントを使用して BizTalk Server と Siebel アダプターに対する操作を実行します。
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]ビジネス コンポーネントで呼び出すことのできる操作を表示します。 ビジネス コンポーネントでは、操作は、として分類できます。  
@@ -190,7 +190,7 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションは、要求メッセージを消費し、Siebel システムに渡されます。 Siebel システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージの Siebel システムからの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <InsertResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Operation">  
   <InsertResult>  
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">1-8ANYV</string>  

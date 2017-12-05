@@ -13,11 +13,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aaf155bac387f613725023feb015f8f9a1894a2d
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: c67e68c210566a4f0ba42fcfa0e10cd0260fb6b2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-64-bit-support"></a>BizTalk Server での 64 ビットのサポート
 このトピックでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での 64 ビットのサポートに関して、よく寄せられる質問に回答します。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/28/2017
  
   [BizTalk Server 2016 のハードウェア/ソフトウェア要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
   
- [BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)  
+ [BizTalk Server 2013 および 2013 R2 のハードウェア/ソフトウェア要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)  
   
 ## <a name="is-there-an-extra-cost-for-64-bit-support"></a>64 ビットのサポートに追加コストはかかりますか?  
  不可。 64 ビット サポート追加料金なしで含まれています。  
@@ -42,11 +42,11 @@ ms.lasthandoff: 09/28/2017
   
 |[処理]|32 ビットのサポート|64 ビットのサポート|  
 |-------------|---------------------|---------------------|  
-|HTTP ベース アダプター (IIS)|はい|部分的|  
-|BizTalk ホスト インスタンス|はい|はい|  
-|エンタープライズ SSO|はい|はい|  
-|BAM ポータル (IIS)|はい|不可|  
-|SQL Server|はい|はい|  
+|HTTP ベース アダプター (IIS)|可|部分的|  
+|BizTalk ホスト インスタンス|可|可|  
+|エンタープライズ SSO|可|可|  
+|BAM ポータル (IIS)|可|不可|  
+|SQL Server|可|可|  
   
 ##### <a name="http-based-adapters-iis"></a>HTTP ベース アダプター (IIS)  
  HTTP や SOAP アダプターのような [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントは、インターネット インフォメーション サービス (IIS) 内部でホストされて実行されます。 すべてのアダプターは、32 ビット IIS モードでサポートされます。 一部のアダプターは、64 ビット IIS モードでの実行をサポートします。 64 ビット アダプターの完全なリストについては、このトピックの後半にあるアダプターのリストを参照してください。  
@@ -132,7 +132,7 @@ ms.lasthandoff: 09/28/2017
  不可。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]32 ビットまたは 64 ビット ランタイムに依存しない形式を使用してランタイム コンポーネントを維持します。 オーケストレーション、メッセージ、ポートもランタイム コンポーネントです。 この保存モデルでは、管理者は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データの互換性を保ったまま、ホスト構成を 32 ビットと 64 ビットの間で切り替えることができます。  
   
 ## <a name="when-i-upgrade-to-biztalk-server-will-my-biztalk-hosts-run-as-64-bit-by-default"></a>BizTalk Server にアップグレードすると、BizTalk ホストは既定で 64 ビットとして動作しますか?  
- 不可。 既定では、アップグレード[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]のみ 32 ビットとしてのすべての BizTalk ホスト インスタンスをマークします。 管理者は、Windows x64 コンピューターで新しいホスト インスタンスを作成し、それを使用するようにアプリケーションを構成する必要があります。  
+ 不可。 既定では、BizTalk Server へのアップグレードでは 32 ビットとしてのすべての BizTalk ホスト インスタンスがのみマークします。 管理者は、Windows x64 コンピューターで新しいホスト インスタンスを作成し、それを使用するようにアプリケーションを構成する必要があります。  
   
 ## <a name="can-i-have-a-mixed-biztalk-server-group-that-includes-both-32-bit-and-64-bit-biztalk-runtimes"></a>32 ビットと 64 ビットの両方の BizTalk ランタイムを含む "混合" BizTalk Server グループを使用できますか?  
  可能。  
@@ -150,4 +150,4 @@ ms.lasthandoff: 09/28/2017
 -   レガシ コンポーネント  
   
 ## <a name="see-also"></a>参照  
- [パフォーマンスと容量の計画](../core/performance-and-capacity-planning.md)
+ [パフォーマンスおよび容量の計画](../core/performance-and-capacity-planning.md)

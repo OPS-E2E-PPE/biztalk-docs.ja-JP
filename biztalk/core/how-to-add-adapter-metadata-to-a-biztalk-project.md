@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b343ff085cee7049ea916a38fe1216e097200fbf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75aea1f23236d448f6efaa451d45663352fb3083
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-add-adapter-metadata-to-a-biztalk-project"></a>アダプター メタデータを BizTalk プロジェクトに追加する方法
 アダプター メタデータの追加ウィザードを使用すると、アダプター メタデータを BizTalk プロジェクトに追加できます。 このデータには、オーケストレーションからアダプターと通信するために必要なスキーマ、メッセージの種類、およびポートの種類が含まれます。 FTP などのアプリケーション アダプターと共にアダプター メタデータの追加ウィザードを使用することで、これらのアプリケーション アダプターに対応するスキーマをシステムに取り込むことができます。 HTTP などのトランスポート アダプターでは通常、スキーマが使用されません。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクト、ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**追加**、クリックして**生成した項目の追加**です。  
   
-2.  **生成した項目の追加 - \<** *プロジェクト名* **>**   ダイアログ ボックスで、**テンプレート** セクションで、選択**アダプターの追加**、クリックして**開く**です。  
+2.  **生成した項目の追加 - \<** *プロジェクト名* **\>**   ダイアログ ボックスで、**テンプレート** セクションで、選択**アダプターの追加**、クリックして**開く**です。  
   
 3.  アダプター メタデータの追加ウィザードで、**アダプターの選択** ページで、次の操作を行います。  
   

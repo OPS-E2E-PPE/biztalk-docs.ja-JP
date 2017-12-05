@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d36fa977c7da90c3f894dd1153799008459c1feb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2f621faef7694a3dba7885bab5641e0baa58e8f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-an-affiliate-application"></a>関連アプリケーションを作成する方法
 MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーションを作成できます。 Windows 側開始 SSO の XML ファイルの例を次に示します。  
@@ -72,9 +72,9 @@ MMC スナップインまたはここで示すコマンドを使用すると、X
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – createapps」と入力*\<アプリケーション ファイル名 >***ここで、 *\<アプリケーション ファイル名 >* XML ファイルです。  
+3.  型**ssomanage – createapps」と入力*\<アプリケーション ファイル名\>***ここで、 *\<アプリケーション ファイル名\>*はXML ファイルです。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

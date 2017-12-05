@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- overdrive load test
-- LoadGen tool, overdrive load test
 ms.assetid: 0d16d0a8-4255-4f5a-86a2-26cc11bb9a70
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54ea40d17bdb59fa3fcdc2db31a18b3286b70659
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cff4592c58dd165a85d63666958721231cfcbd4c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="overdrive-load-test"></a>オーバー ドライブ ロード テスト
 このトピックの情報は、参照で説明されているテスト[エンジンの MST の測定のテスト シナリオ](../core/test-scenarios-for-measuring-mst-of-the-engine.md)です。  
@@ -27,7 +24,7 @@ ms.lasthandoff: 09/20/2017
  負荷生成ツール LoadGen 2007 を使用すると、BizTalk Server システム上の大きな負荷をシミュレートできます。  
   
 > [!NOTE]
->  LoadGen 2007 ツールはダウンロード[http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841)です。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールは、ダウンロード[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)です。  
+>  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)です。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールは、ダウンロード[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)です。  
   
  続けて負荷の多いシステムをシミュレートするため、LoadGen 2007 は、測定された維持可能な最大のスループットよりも 120 メッセージ/秒多い約 410 メッセージ/秒の送信で構成されました。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62313528ce406347b1a7f11abf9aa3db1dd5f8e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d03c969dc056e251d8109ce5bc0a29c16f8ffeda
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="resubmission-notes-and-restrictions"></a>再送信の注意事項と制約事項
 再送信プロセスには、次の注意事項と制約事項が適用されます。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
   
 -   WCF の上のランプの既定の URL は、http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc です。  
   
--   ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント >**のノード、  **\<System.ServiceModel >**セクションです。 既定値を次に示します。  
+-   ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>**のノード、  **\<System.ServiceModel\>** 参照してください。 既定値を次に示します。  
   
     ```  
     <endpoint  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 -   ランプで SOAP (ASMX) の既定の URL は、http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です。  
   
--   ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、  **\<applicationSettings >**セクションです。 既定値を次に示します。  
+-   ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、  **\<applicationSettings\>** セクションです。 既定値を次に示します。  
   
     ```  
     <setting   

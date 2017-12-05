@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92855ecc4e4e5ad2f7932327de7da8e19a80d490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9122b74ecc82e32230d09e2d0e01b553aaa2bd06
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-subscribers-from-an-alert"></a>サブスクライバーを警告から削除する方法
 管理者を使用して、**削除サブスクリプション**サブスクライバーとして、指定したユーザーを警告から削除するコマンド。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm 削除-サブスクリプション-ビュー:\<ビュー名 >-警告:\<警告名 >-accountname:\<アカウント名 >**です。  
+3.  型**bm 削除-サブスクリプション-ビュー:\<ビュー名\>-警告:\<警告名\>-accountname:\<アカウント名\>**です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

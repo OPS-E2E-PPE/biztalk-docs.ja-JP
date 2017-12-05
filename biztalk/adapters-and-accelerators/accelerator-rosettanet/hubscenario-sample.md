@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b9b2770f1d14d716149025ac44cb3cdffbbb23b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c47f7ba8320a43cbfdc98a3b3e5becdce9a898f9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hubscenario-sample"></a>HubScenario サンプル
 HubScenario サンプルは、ハブ シナリオでのメッセージの送信を管理する方法を示します。 このサンプルでは、中間のハブに送信されたメッセージを最終受信者に送信するメッセージに変換します。  
@@ -27,18 +27,18 @@ HubScenario サンプルは、ハブ シナリオでのメッセージの送信�
   
  HubScenario サンプルには、HubHelper.cs プロジェクトと HubScenario.odx プロジェクトが含まれます。  
   
- HubScenario サンプルには、受信ポート (MessagesToLOB_Receive_Port) と受信場所 (MessagesToLOB_Receive_Location) のバインドのインポートに使用できるバインド ファイルも含まれます。 このバインド ファイル (HubScenarioBinding.xml) にあります*\<ドライブ >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<バージョン > Accelerator for RosettaNet \SDK\HubScenario です。 バインドのインポートには BTSTask コマンドを使用します。 詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「ImportBindings コマンド」を参照してください。  
+ HubScenario サンプルには、受信ポート (MessagesToLOB_Receive_Port) と受信場所 (MessagesToLOB_Receive_Location) のバインドのインポートに使用できるバインド ファイルも含まれます。 このバインド ファイル (HubScenarioBinding.xml) にあります*\<ドライブ\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<バージョン\>アクセラレータRosettaNet \SDK\HubScenario です。 バインドのインポートには BTSTask コマンドを使用します。 詳細については、BizTalk Server ヘルプの「ImportBindings コマンド」を参照してください。  
   
 ### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
-1.  Visual Studio で開く\<ドライブ >: \Program Files\Microsoft Microsoft BizTalk\<バージョン > Accelerator for RosettaNet\SDK\HubScenario\HubScenario.btproj です。 ソリューション エクスプローラーで HubScenario プロジェクトを右クリックし、[プロパティ] をクリックします。 HubScenario プロジェクトの プロパティ ページで 署名 タブを選択**アセンブリに署名** チェック ボックスを選択して**HubScenario.snk**で**厳密な名前キーファイルを選択して** をクリック**Ok**です。  
+1.  Visual Studio で開く\<ドライブ\>: \Program Files\Microsoft Microsoft BizTalk\<バージョン\>RosettaNet\SDK\HubScenario\HubScenario.btproj のアクセラレータです。 ソリューション エクスプローラーで HubScenario プロジェクトを右クリックし、[プロパティ] をクリックします。 HubScenario プロジェクトの プロパティ ページで 署名 タブを選択**アセンブリに署名** チェック ボックスを選択して**HubScenario.snk**で**厳密な名前キーファイルを選択して** をクリック**Ok**です。  
   
 2.  ソリューション エクスプローラーで HubHelper プロジェクトを右クリックして、[プロパティ] をクリックします。 HubHelper プロジェクトのプロパティ ページの [署名] タブで、[アセンブリの署名] チェック ボックスをオンにします。 厳密な名前キー ファイルのフィールドを選択して、新しい種類を選択**HubHelper.snk**キー ファイル名とクリック**OK**です。  
   
     > [!NOTE]
     >  HubScenario および HubHelper プロジェクトに手動でアセンブリ キー ファイルを入力しないと、これらのアセンブリは展開されません。  
   
-3.  コマンド プロンプトに移動*\<ドライブ >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\hubscenario フォルダーです。 ファイル Setup.bat を実行します (64 ビット コンピューターの場合は、Setupx64.bat を実行します)。  
+3.  コマンド プロンプトに移動*\<ドライブ\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\HubScenario フォルダーです。 ファイル Setup.bat を実行します (64 ビット コンピューターの場合は、Setupx64.bat を実行します)。  
   
 ## <a name="demonstrates"></a>使用例  
  HubScenario.ods オーケストレーションは、次のタスクを実行する方法を示します。  

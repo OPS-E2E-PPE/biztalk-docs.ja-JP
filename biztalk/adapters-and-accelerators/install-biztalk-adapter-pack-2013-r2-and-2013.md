@@ -13,11 +13,11 @@ caps.latest.revision: "107"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d91e697504adf23585392c6c761bc13b300c3ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8bc1ebbdaf2973f4749da6c0832d49204588b6c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>BizTalk Adapter Pack 2013 R2 と 2013 をインストールします。
 このドキュメントには、Microsoft をインストールするには、ソフトウェア要件、および手順[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)](BAP) は、BizTalk Server 2013 に含まれているか、[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]です。  
@@ -267,7 +267,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
     -   使用するエンタープライズ アプリケーションのバージョンに関連するデータ、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。  
   
-     [ **OK**] を選択します。 [CEIP](http://go.microsoft.com/fwlink/p/?LinkId=144699)詳しく説明します。  
+     **[OK]** を選択します。 [CEIP](http://go.microsoft.com/fwlink/p/?LinkId=144699)詳しく説明します。  
   
     > [!NOTE]
     >  修復モードで、セットアップを実行して、この設定を変更することが常に**プログラム**です。  
@@ -429,7 +429,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
 <a name="BKMK_CreateSQLServer"></a>   
 #### <a name="create-sql-server-database-objects-only-for-the-sap-adapter"></a>(SAP アダプター) の場合のみ SQL Server データベース オブジェクトを作成します。  
- SAP システムで tRFCs を呼び出し、実行、 *SapAdapter DbScript-Install.sql* SQL スクリプト。 このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールし、SQL Server でデータベース オブジェクトを作成します。 インストールされている通常の\<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 TRFCs を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。  
+ SAP システムで tRFCs を呼び出し、実行、 *SapAdapter DbScript-Install.sql* SQL スクリプト。 このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールし、SQL Server でデータベース オブジェクトを作成します。 インストールされている通常の\<インストール ドライブ\>: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 TRFCs を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。  
   
 <a name="BKMK_Register_Bindings"></a>   
 #### <a name="register-the-adapter-bindings"></a>アダプターのバインドを登録します。  
@@ -439,7 +439,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
 ###### <a name="register-the-adapter-bindings-or-the-net-framework-data-providers"></a>アダプターのバインドまたは .NET Framework データ プロバイダーを登録します。  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   
@@ -675,7 +675,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
 ## <a name="removing-the-biztalk-adapter-pack"></a>BizTalk アダプター パックを削除します。  
   
 > [!IMPORTANT]
->  TRFC 機能を使用する SQL Server データベースでテーブルを作成した場合、 [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]、削除する前に手動で削除する必要があります、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールは、通常は SapAdapter DbScript-Uninstall.sql ファイルをコピー\<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 作成したテーブルを削除するには、このファイルを実行します。  
+>  TRFC 機能を使用する SQL Server データベースでテーブルを作成した場合、 [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]、削除する前に手動で削除する必要があります、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールは、通常は SapAdapter DbScript-Uninstall.sql ファイルをコピー\<インストール ドライブ\>: \Program Files\Microsoft[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 作成したテーブルを削除するには、このファイルを実行します。  
   
 次の手順を削除する、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]コンピューターからです。 あるかどうかを確認、[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]アダプターを削除するセットアップ ウィザードを実行する前にインストールします。  
   
@@ -726,7 +726,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
 ###### <a name="remove-the-adapter-bindings-or-net-framework-data-provider-registration"></a>アダプターのバインドまたは .NET Framework Data Provider の登録を削除します。  
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   
@@ -845,7 +845,7 @@ SAP システムにインストールされているカスタム Rfc を削除�
   
 -   **64 ビット コンピューターでセットアップを実行してエラーが発生するスキーマ ファイルへのアクセス中には**  
   
-     [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップへのアクセス中にエラーをスローする、  **Microsoft.Adapters* 。\<AdapterName >*_schema.xml** ファイルが、アダプターのインストールを続行します。  
+     [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップへのアクセス中にエラーをスローする、  **Microsoft.Adapters* 。\<AdapterName\>*_schema.xml** ファイルが、アダプターのインストールを続行します。  
   
      **原因**  
   
@@ -853,4 +853,4 @@ SAP システムにインストールされているカスタム Rfc を削除�
   
      **解決策**  
   
-     手動でコピー、  **Microsoft.Adapters* 。\<AdapterName >*_schema.xml** ファイルから`C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`"に`C:\Windows\System32\inetsrv\config\schema`です。  
+     手動でコピー、  **Microsoft.Adapters* 。\<AdapterName\>*_schema.xml** ファイルから`C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`"に`C:\Windows\System32\inetsrv\config\schema`です。  

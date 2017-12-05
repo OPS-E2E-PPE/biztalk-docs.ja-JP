@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbf64565534a368f7bfe084c6901cde62405fb62
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5d2fae252d1b99f1a6393dc2f2ebbd45ed70a2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orchestration-engine-configuration"></a>オーケストレーション エンジンの構成
 オーケストレーション エンジンでは、特定の動作を決定するために、BTSNTSvc.exe.config という XML ファイルが使用されます。 たとえば、退避プロパティとその既定値は、BTSNTSvc.exe.config ファイルで XML として構成され、オーケストレーションを含んでいるすべてのホスト インスタンスが開始されると読み取られます。 詳細については、次を参照してください。[オーケストレーションの退避と復元](../core/orchestration-dehydration-and-rehydration.md)です。  
@@ -228,7 +228,7 @@ A pattern assignment rule specifies a regular expression and an app domain name.
   
  BTSNTSvc.exe 構成ファイルには、「.NET Framework 全般リファレンス」で説明するその他のセクションもいくつか含まれています。 これらのセクションの変更の詳細については、次を参照してください。、**構成ファイル スキーマ**、.NET Framework 全般リファレンスの[http://go.microsoft.com/FWLink/?LinkID=52964](http://go.microsoft.com/FWLink/?LinkID=52964)です。  
   
- BizTalk 固有の構成情報に加えて、BTSNTSvc.exe.config ファイルも、オーケストレーション、アダプターまたはパイプラインのコンテキストで実行される .NET アプリケーション コンポーネントが使用して実行時に構成情報を取得します標準 .NET  **\<appSettings >**下にあるタグ付け、 **\<構成 >**タグ。 BizTalk は、カスタム アダプターとパイプライン コンポーネントの構成情報を取得するためのメカニズムを既に提供されているため、  **\<appSettings >** BTSNTSvc.exe.config ファイル内のタグで通常使用されます。カスタム .NET コンポーネントは、オーケストレーション内から呼び出されます。 例:  
+ BizTalk 固有の構成情報に加えて、BTSNTSvc.exe.config ファイルも、オーケストレーション、アダプターまたはパイプラインのコンテキストで実行される .NET アプリケーション コンポーネントが使用して実行時に構成情報を取得します標準 .NET  **\<appSettings\>** 下にあるタグ付け、 **\<構成\>**タグ。 BizTalk は、カスタム アダプターとパイプライン コンポーネントの構成情報を取得するためのメカニズムを既に提供されているため、  **\<appSettings\>**  BTSNTSvc.exe.config ファイル内のタグは通常はオーケストレーション内から呼び出されたカスタム .NET コンポーネントで使用します。 例:  
   
 ```  
 <appSettings>  
@@ -255,4 +255,4 @@ A pattern assignment rule specifies a regular expression and an app domain name.
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションのデバッグ](../core/debugging-orchestrations.md)   
- [XLANG の言語](../core/xlang-s-language.md)
+ [XLANG-s 言語](../core/xlang-s-language.md)

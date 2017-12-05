@@ -12,11 +12,11 @@ caps.latest.revision: "47"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68fc5e0a90fdfcaa6c3b6e5f6ae280d320be5647
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 850d0ee715984c7465063addd778828c727e0233
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a>チュートリアル: Wcf-nettcp アダプターとメッセージ セキュリティ モードを使用します。
   
@@ -40,11 +40,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>前提条件  
  このサンプルでは、手順を実行するには、環境に次の前提条件がインストールされることを確認してください。  
   
--   サンプルを実行するコンピューターと、アセンブリをビルドおよび展開プロセスを実行するコンピューターの両方の必要な Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]、および Microsoft[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。  
+-   サンプルを実行するコンピューターと、アセンブリをビルドおよび展開プロセスを実行するコンピューターの両方の必要な Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]、および Microsoft BizTalk Server です。  
   
--   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)] が必要です。  
+-   アセンブリのビルドと展開プロセスの実行に使用するコンピューターには、Microsoft Visual Studio が必要です。  
   
--   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] のセットアップ時にインストールするオプションです。  
+-   サンプルを実行するコンピューターには、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アダプターと [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理ツールが必要です。 これらは、Microsoft BizTalk Server のセットアップ時にインストールするオプションです。  
   
 -   管理タスクの実行に使用するコンピューターで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソール内の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション設定を構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーであるユーザー アカウントとして実行する必要があります。 また、アプリケーションの展開、ホスト インスタンスの管理、およびその他の必要なタスクを実行するには、このユーザー アカウントはローカル管理者グループのメンバーである必要もあります。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  このセクションでは、サービスとクライアントの証明書を要求、証明書を発行、適切なストアにインストールします。 信頼されている証明書チェーンを使用して証明書を作成するには、Active Directory 証明書サービスを使用します。 「前提条件」において Active Directory 証明書サービスをインストールしていない場合は、コンピューターに Active Directory 証明書サービスをインストールします。 既にインストールされている場合は、手順 2. に進みます。  
   
-    1.  をクリックして**開始**、をポイント**管理ツール**、順にクリック**サーバー マネージャー**です。  
+    1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**サーバー マネージャー**です。  
   
     2.  下にある、**サーバー マネージャー**ノード、をクリックして**追加**、順にクリック**ロール**です。  
   
@@ -92,11 +92,11 @@ ms.lasthandoff: 09/20/2017
     3.  **証明書の要求の高度な** ページで、入力`contoso`で、**名前**テキスト ボックスで、**クライアント認証証明書**から、 **必要な証明書の種類**クリックしてドロップダウン リスト、**送信**です。  
   
     > [!NOTE]
-    >  実行している場合、クライアント認証証明書が使用される[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ドメイン コント ローラー以外のコンピューターにします。 これは、アダプターのプロパティ ダイアログで構成されます。  
+    >  クライアント認証証明書は、コンピューター、ドメイン コント ローラー以外のコンピューターで BizTalk Server を実行している場合に使用されます。 これは、アダプターのプロパティ ダイアログで構成されます。  
   
 4.  次の手順に従って、証明機関管理コンソールを使用して、証明書を発行します。  
   
-    1.  をクリックして**開始**、をポイント**管理ツール**、順にクリック**証明機関**です。  
+    1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**証明機関**です。  
   
     2.  **証明機関**管理コンソールで、証明機関の名前を展開し、ダブルクリック**保留中の要求**です。  
   
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  次の手順に従って、発行した証明書が正しくインストールされたことを確認します。  
   
-    1.  Microsoft 管理コンソール (MMC) を開きます。 これを行うには、をクリックして**開始**、をクリックして**実行**、型`mmc`、順にクリック**[ok]**です。  
+    1.  Microsoft 管理コンソール (MMC) を開きます。 これを行うには、をクリックして**開始**、 をクリックして**実行**、型`mmc`、順にクリック**ok**です。  
   
     2.  MMC で、上、**ファイル** メニューのをクリックして**スナップインの追加と削除**です。  
   
@@ -142,19 +142,19 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="create-the-biztalk-application-for-this-walkthrough"></a>このチュートリアルでは、BizTalk アプリケーションを作成します。  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**を右クリックして**アプリケーション**、をポイント**新規**、クリックして**アプリケーション**.  
+2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **BizTalk グループ**を右クリックして**アプリケーション**、] をポイント**新規**、クリックして**アプリケーション**.  
   
 3.  **アプリケーション プロパティ**ダイアログ ボックスの**全般** タブで、入力`WcfMessageSecurity`、順にクリック**ok**です。  
   
 4.  次の手順に従って、BizTalk アプリケーションの WCF-NetTcp アダプターを使用する受信場所を作成します。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WcfMessageSecurity**を右クリックして**受信ポート**、をポイント**新規**、クリックして**一方向受信ポート。**  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WcfMessageSecurity**を右クリックして**受信ポート**、] をポイント**新規**、クリックして**一方向受信ポート。**  
   
     2.  **受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「 `WcfMessageSecurity.OrderRequest.Receive`、クリックしてして**ok**です。 この受信ポートの名前は厳密には任意ですが、わかりやすい名前にする必要があります。  
   
-    3.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**受信場所**、をクリックして**新規**、クリックして**一方向の受信場所**です。 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] クライアントは [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージをこの受信場所に送信します。 選択、 **WcfMessageSecurity.OrderRequest.Receive**受信ポートを入力し、 **OK**です。  
+    3.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**受信場所**、 をクリックして**新規**、クリックして**一方向の受信場所**です。 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] クライアントは [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージをこの受信場所に送信します。 選択、 **WcfMessageSecurity.OrderRequest.Receive**受信ポートを入力し、 **OK**です。  
   
     4.  **受信場所のプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WcfMessageSecurity.OrderRequest.Receive.NetTcp`です。 この受信場所の名前は厳密には任意ですが、わかりやすい名前にする必要があります。  
   
@@ -173,7 +173,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  BizTalk アプリケーションの FILE 送信ポートを作成します。 これは、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスを表すオーケストレーションによって注文要求の出力メッセージが送信される場所です。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WcfMessageSecurity**を右クリックして**送信ポート**、をポイント**新規**、クリックして**静的一方向の送信ポートです。**  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WcfMessageSecurity**を右クリックして**送信ポート**、] をポイント**新規**、クリックして**静的一方向の送信ポートです。**  
   
     2.  **送信ポートのプロパティ**ダイアログ ボックスの**全般**] タブの [、**名前**テキスト ボックスで、「`WcfMessageSecurity.OrderRequest.Send.FILE`です。  
   

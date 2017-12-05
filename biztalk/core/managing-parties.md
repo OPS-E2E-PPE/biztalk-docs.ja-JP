@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06f0c552b84fd8c4f56e2a88c59e8557585c947e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f639ad516ec4f4a61406b9690d2d52f2ea98599f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-parties"></a>パーティの管理
 使用して、**パーティ** ノードを設定できます (パーティ) のビジネス パートナーまたは社内の部署 (ビジネス プロファイル) を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションが連携します。 詳細については、次を参照してください。[取引パートナー](../core/trading-partners-and-business-profiles.md)です。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 3.  **送信ポート** ページで、次の操作を行います。  
   
     > [!NOTE]
-    >  [!INCLUDE[prague](../includes/prague-md.md)] では、送信ポートの関連付けをアグリーメント レベルで行います。 **送信ポート**下位互換性は、パーティのプロパティの一部として使用可能なページです。 送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。 ただし、その逆は真ではありません。 送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。  
+    >  BizTalk Server では、送信ポートの関連付けはアグリーメント レベルで行われます。 **送信ポート**下位互換性は、パーティのプロパティの一部として使用可能なページです。 送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。 ただし、その逆は真ではありません。 送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。  
   
     |プロパティ|目的|  
     |--------------|----------------|  

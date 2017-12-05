@@ -12,17 +12,17 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 561c40e791d82b28060a45ada51bebed4cd784c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b41dd0e01aa1e28862a3e99cfc767b3dd6ddec3c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-host-instances"></a>ホスト インスタンスの監視
 このトピックでは、Microsoft System Center Operations Manager を使用して BizTalk ホスト インスタンスの監視について説明します。  
   
 ## <a name="using-threshold-rules-to-monitor-health"></a>しきい値規則を使用して正常性を監視するには  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理パックには、BizTalk ホストのヘルスの包括的なビューを提供するパフォーマンスのしきい値規則が組み込まれています。 次の 2 種類のしきい値ルールがあります。  
+ BizTalk Server 管理パックには、BizTalk ホストのヘルスの包括的なビューを提供するパフォーマンスのしきい値規則が組み込まれています。 次の 2 種類のしきい値ルールがあります。  
   
 -   一般的に (と例については、すべての BizTalk ホストにすべてのメッセージ ボックス データベースに) 適用される規則です。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 -   テンプレート規則と適切なしきい値に基づいて BizTalk ホストに固有のルールを作成する必要があります。  
   
 ## <a name="monitoring-biztalk-host-instances"></a>BizTalk ホスト インスタンスの監視  
- 特定の BizTalk ホストを対象とするルールは、監視の観点からより柔軟です。 しきい値で提供される、BizTalkServerApplication ホストの監視ルールはすべて、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理パックは、テンプレート ルールです。 これらの規則を使用するのには、Operations Manager 管理者コンソールを使用してください。  
+ 特定の BizTalk ホストを対象とするルールは、監視の観点からより柔軟です。 BizTalk Server 管理パックで提供される、BizTalkServerApplication ホストのすべてのしきい値監視ルールでは、テンプレート ルールです。 これらの規則を使用するのには、Operations Manager 管理者コンソールを使用してください。  
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ルール グループのテンプレート ルールのコピーを作成して、その名前を変更します。  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
  ホスト固有のしきい値監視ルールを使用している場合は、汎用的な監視ルールを無効にする必要があります。 これにより、冗長な警告が防止されます。  
   
 ## <a name="see-also"></a>参照  
- [System Center Operations Manager 2007 での BizTalk Server の監視](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
+ [System Center Operations Manager 2007 による BizTalk Server の監視](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)

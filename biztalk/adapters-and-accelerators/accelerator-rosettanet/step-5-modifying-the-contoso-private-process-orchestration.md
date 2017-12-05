@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42c93a10fd4751f32aadf2cbfa0a0bbbafc6c7bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a222ee518cf0555de60094411df73bf5a5d486a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>手順 5: Contoso プライベート プロセス オーケストレーションの変更
 ここでは、プライベート プロセス オーケストレーションを変更して、Contoso のエンタープライズ リソース計画 (ERP) システムと統合します。 Contoso の ERP システムは、製品価格と在庫に対する内部的に定義されたスキーマを使用します。 3A2 - Price and Availability PIP (Partner Interface Process) のプライベート プロセスをカスタマイズすることによって、スキーマにマップされた情報を使用して、ERP システムと統合できるようになります。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  ソリューション エクスプ ローラーに表示される Contoso ソリューションを右クリックし、 **PrivateResponder**プロジェクトをクリックして**参照の追加**です。  
   
-2.  [参照の追加] ダイアログ ボックスで、**参照**です。 移動*\<ドライブ >*: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \bin フォルダー、および、次のアセンブリを選択**:**  
+2.  [参照の追加] ダイアログ ボックスで、**参照**です。 移動*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \bin フォルダー、および、次のアセンブリを選択**:**  
   
     -   Microsoft.solutions.BTARN.CommonTypes.dll  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  [プロパティ] ウィンドウ内で、**識別子**ボックスに、入力**PIP3A2RequestMessage**です。  
   
-5.  **メッセージの種類**ボックス、ドロップダウン矢印をクリックして、展開**スキーマ**、し、 **\<参照されたアセンブリから選択 >**です。  
+5.  **メッセージの種類**ボックス、ドロップダウン矢印をクリックして、展開**スキーマ**、し、 **\<参照されたアセンブリから選択\>**です。  
   
 6.  成果物 Typedialog の選択ボックスで、次のように選択します**Microsoft.Solutions.BTARN.Schemas.RNPIPs**左のペインで選択**_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**右側のウィンドウで、。をクリックして**OK**です。  
   
@@ -82,7 +82,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [プロパティ] ウィンドウ内で、**識別子**ボックスに、入力**contosoResponseXML**です。  
   
-3.  **型**ボックスで、  **\<.NET クラス >**ドロップダウン リストからです。  
+3.  **型**ボックスで、  **\<.NET クラス\>**ドロップダウン リストからです。  
   
 4.  Select の成果物入力ダイアログ ボックスで、左側のウィンドウで、**現在のプロジェクト**と**参照**、ノードを選択**System.Xml**を選択**XmlDocument**をクリックして右側のペインの一覧から**OK**です。  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  [プロパティ] ウィンドウ内で、**識別子**ボックスに、入力**submitMessage**です。  
   
-7.  **型**ボックスで、  **\<.NET クラス >**ドロップダウン リストからです。  
+7.  **型**ボックスで、  **\<.NET クラス\>**ドロップダウン リストからです。  
   
 8.  成果物の種類の選択 ダイアログ ボックスの左側のウィンドウで展開**現在のプロジェクト**と**参照**、ノードを選択**Microsoft.Solutions.BTARN.Shared**の選択**SubmitRNIF**をクリックして右側のペインの一覧から**OK**です。  
   
@@ -143,4 +143,4 @@ ms.lasthandoff: 09/20/2017
 12. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**をクリックして**すべてを保存**プロジェクトを保存します。  
   
 ## <a name="see-also"></a>参照  
- [手順 6: オーケストレーション図形 (Contoso) の構成](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)
+ [手順 6: オーケストレーション図形の構成 (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)

@@ -15,17 +15,17 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: beb792fe66e5806a186b0ffb946aa99f86a6a10c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14245a185adcccdfb1f2ea2ed9382820fb84177e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="swift-schema-naming-conventions"></a>SWIFT スキーマの名前付け規則
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] Society の BizTalk エディターを使用して作成された世界銀行間財務通信 (SWIFT) FIN メッセージのスキーマが含まれています。 これらのスキーマは、全体で、次の規則に従います。  
   
 > [!NOTE]
->  すべてのスキーマをバージョン管理します。 バージョンを表示、開く[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、ソリューション エクスプ ローラーでスキーマを右クリックします。 \<スキーマ > ノードをプロパティ ウィンドウのスクロール標準バージョン プロパティの BizTalk エディターを選択します。  
+>  すべてのスキーマをバージョン管理します。 バージョンを表示、開く[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、ソリューション エクスプ ローラーでスキーマを右クリックします。 \<スキーマ\>ノードをプロパティ ウィンドウのスクロール標準バージョン プロパティの BizTalk エディターを選択します。  
   
 -   各インターチェンジのスキーマ ファイルの名前は **MT*xxx** *、.xsd、 *xxx* FIN メッセージ型です。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   番号付き SWIFT のフィールドのラベルの後に番号と省略可能な文字書式続くシーケンス (存在する場合)、わかりやすいタイトルを含める (たとえば、 **Reference_A_20C**)。  
   
--   ノードのラベルは、フィールドの複数の形式の選択では、   **\<*選択肢*> * *、し、各オプションは、番号付きフィールドと (たとえば、 **Date_A_98A**と**DateTime_A_98C**)。  
+-   ノードのラベルは、フィールドの複数の形式の選択では、   **\<*選択肢*\>* *、し、各オプションは、番号付きフィールドと (たとえば、 **Date_A_98A**と**DateTime_A_98C**)。  
   
 -   サブ フィールドの最も低いレベルの要素の定義の名前は、続いてサブ フィールドの名前で構成されます**型**(たとえば、 **accountType**アカウント用)。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74289ae59ef96c579b3c132fd76f1d0e8e77cf13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d98a3a5e497a4476de897c8008f3a9976812209a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="visualstudiohostrestart-application-deployment-sample"></a>VisualStudioHostRestart (アプリケーションの展開サンプル)
 このトピックでは、ローカル コンピュータの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で実行しているホスト インスタンスを再起動するための VisualStudioHostRestart サンプル スクリプトを使用する方法について説明します。 このスクリプトは、Visual Studio にアセンブリを再展開するときに使用できます。これにより、BizTalk Server ランタイムに変更内容がすぐに反映されます。 また、プロジェクトの展開のプロパティで設定できるオプションを使用して、ホスト インスタンスを再起動することもできます。 詳細については、次を参照してください。 [Visual Studio の配置プロパティを設定する方法](../core/how-to-set-deployment-properties-in-visual-studio.md)です。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 2.  ローカル コンピュータのすべてのインプロセス ホスト インスタンスを開始します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- サンプルにありますが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次のように、インストール フォルダー: *\<サンプル パス >*\Application Deployment\VisualStudioHostRestart です。  
+ サンプルにありますが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次のように、インストール フォルダー: *\<サンプル パス\>*\Application Deployment\VisualStudioHostRestart です。  
   
  サンプルには、次のファイルが含まれています。  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29b9b6c8b84111e227ad2cd2b26bac4d33c2b200
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3fd2447c9e3b5313bfac7b36b7373acd8f227b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-bam-activities"></a>BAM アクティビティを一覧表示する方法
 管理者を使用して、 **get アクティビティ**コマンドを BAM 管理ユーティリティのローカルの BAM プライマリ インポート データベースにアクティビティを一覧表示します。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-2.  」と入力して、追跡フォルダーに移動**C:\Program files \microsoft BizTalk Server\<バージョン > \Tracking**コマンド プロンプトでします。 **Enter**キーを押します。  
+2.  」と入力して、追跡フォルダーに移動**C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking**コマンド プロンプトでします。 **Enter**キーを押します。  
   
 3.  型**bm**です。  
   

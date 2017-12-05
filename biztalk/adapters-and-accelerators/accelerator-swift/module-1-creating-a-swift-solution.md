@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea84c244d0219043a2b68c1e08fbd647a5002009
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f46ae3000577d747fbebd9c09dead9ecebf72169
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="module-1-creating-a-swift-solution"></a>第 1 章: SWIFT ソリューションを作成します。
 このモジュールでは、空の BizTalk ソリューションを作成します。 使用して新しいソリューションを作成する最初のレッスンで[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]です。 また、スキーマ、マップ、オーケストレーション、パイプライン コンポーネントなど、BizTalk ソリューションのコンポーネントを含む個々 のプロジェクトを作成します。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-a-blank-biztalk-solution"></a>空の BizTalk ソリューションを作成するには  
   
-1.  開始 **[!INCLUDE[vs2012](../../includes/vs2012-md.md)]**です。  
+1.  開始**Visual Studio**です。  
   
 2.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
   
@@ -36,10 +36,10 @@ ms.lasthandoff: 09/20/2017
   
 4.  **名前**ボックスに、入力**SWIFTProject**ソリューション名として。  
   
-5.  **場所**ボックスに、入力  **\<*ドライブ*>: \labs** です。  
+5.  **場所**ボックスに、入力  **\<*ドライブ*\>: \labs** です。  
   
 6.  をクリックして**OK**新しいプロジェクトを開きます。  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーと新しい空のソリューション内に空のソリューションを作成、 \<*ドライブ*: > \labs フォルダーです。  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーと新しい空のソリューション内に空のソリューションを作成、 \<*ドライブ*:\>\labs フォルダーです。  
   
  進みます[モジュール 2: 新しいスキーマ プロジェクトに追加する](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)です。

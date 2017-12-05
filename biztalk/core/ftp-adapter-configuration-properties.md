@@ -19,11 +19,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b2c7895d8f5fc3789a02c72743705a4a03a9f96
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29124c17603abbc9b38a078238d13cdfb1c992e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ftp-adapter-configuration-properties"></a>FTP アダプター構成プロパティ
 次の表に、FTP アダプターの受信場所に設定できる構成プロパティを示します。  
@@ -109,4 +109,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  使用されるすべての名前/値ペアを格納する必要があります、アダプター フレームワークを使用して構築されたアダプターに TransportTypeData 構成データを指定する場合、 \<AdapterConfig > 要素。 \<AdapterConfig > 要素は VT_BSTR を指定します (vt =「8」) データを入力し、 \< > データ内の文字をエスケープする必要があります。
+>  使用されるすべての名前/値ペアを格納する必要があります、アダプター フレームワークを使用して構築されたアダプターに TransportTypeData 構成データを指定する場合、 \<AdapterConfig\>要素。 \<AdapterConfig\>要素は VT_BSTR を指定します (vt =「8」) データを入力し、 \< \>データ内の文字をエスケープする必要があります。

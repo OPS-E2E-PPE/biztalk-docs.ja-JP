@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 952db36f794d36bd98af6e5bc31eee78adcc8a35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 450b2df7ec043dfd4bc775cfec7acdec0fb3ca1f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンのトラブルシューティング
 このトピックでは、エンタープライズ シングル サインオン (SSO) の使用中に発生する可能性のある一般的な問題について説明します。  
@@ -32,8 +32,8 @@ ms.lasthandoff: 09/20/2017
 |SSO 管理者アカウントは何か。|コマンド ライン **ssomanage –displaydb**を使用してください。 このコマンドの詳細については、次を参照してください。 [SSO データベース情報を表示する方法](../core/how-to-display-the-sso-database-information.md)です。|  
 |すべてが正しく有効化されているか。|コマンド ライン **ssomanage –displaydb**を使用してください。 このコマンドの詳細については、次を参照してください。 [SSO データベース情報を表示する方法](../core/how-to-display-the-sso-database-information.md)です。|  
 |関連アプリケーションはあるか。|コマンド ライン **ssomanage –listapps all**を使用してください。 このコマンドの詳細については、次を参照してください。[関連アプリケーションの一覧を方法](../core/how-to-list-affiliate-applications.md)です。|  
-|特定の関連アプリケーションが正常に実行されているか。<br /><br /> どのアカウントがこの関連アプリケーションを使用しているか。|コマンドラインを使用して**ssomanage – displayapp***\<アプリケーション名 >*です。 このコマンドの詳細については、次を参照してください。[関連アプリケーションのプロパティを一覧表示する方法](../core/how-to-list-the-properties-of-an-affiliate-application.md)です。|  
-|この関連アプリケーションにマッピングがあるか。|コマンドラインを使用して**ssomanage – listmappings***\<アプリケーション名 >*です。 このコマンドの詳細については、次を参照してください。[一覧のユーザーのマッピング方法](../core/how-to-list-user-mappings.md)です。|  
+|特定の関連アプリケーションが正常に実行されているか。<br /><br /> どのアカウントがこの関連アプリケーションを使用しているか。|コマンドラインを使用して**ssomanage – displayapp***\<アプリケーション名\>*です。 このコマンドの詳細については、次を参照してください。[関連アプリケーションのプロパティを一覧表示する方法](../core/how-to-list-the-properties-of-an-affiliate-application.md)です。|  
+|この関連アプリケーションにマッピングがあるか。|コマンドラインを使用して**ssomanage – listmappings***\<アプリケーション名\>*です。 このコマンドの詳細については、次を参照してください。[一覧のユーザーのマッピング方法](../core/how-to-list-user-mappings.md)です。|  
 |どのアカウントが SSO グループのメンバーか。|すべての SSO グループとアカウントについてグループのメンバーシップを確認します。|  
 |SSO サーバーの COM+ アプリケーションは正常に動作しているか。|SSO サーバーの COM+ アプリケーションを確認します。 **注:**イベント メッセージと警告メッセージなど、詳細な情報についてイベント ログを確認することもできます。|  
   
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="rpc-error-occurs-when-connecting-to-a-client-computer"></a>クライアント コンピューターへの接続時に RPC エラーが発生する  
   
 ##### <a name="problem"></a>問題  
- ときにコマンドを実行するユーザーなど**ssomanage-displayapp***\<applicationname >*コンピューター、情報を取得するリモート SSO サーバーに接続しようとしましたここで、受信します次のエラー: エラー: 0x800706BA: RPC サーバーは使用できません。  
+ ときにコマンドを実行するユーザーなど**ssomanage-displayapp***\<applicationname\>*, コンピューターは、情報を取得するリモート SSO サーバーに接続しようとしていますが、次のエラーを受信する: エラー: 0x800706BA: RPC サーバーは使用できません。  
   
 ##### <a name="cause"></a>原因  
  このエラーは、ユーザーが間違ったサーバー情報を指定した場合、またはリモート サーバーで SSO サービスを利用できない場合に発生します。  
@@ -128,4 +128,4 @@ ms.lasthandoff: 09/20/2017
 5.  マスター シークレットを復元します。 詳細については、次を参照してください。[マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)です。  
   
 ## <a name="see-also"></a>参照  
- [エンタープライズ シングル サインオンを実装します。](../core/implementing-enterprise-single-sign-on.md)
+ [Enterprise Single Sign-On の実装](../core/implementing-enterprise-single-sign-on.md)

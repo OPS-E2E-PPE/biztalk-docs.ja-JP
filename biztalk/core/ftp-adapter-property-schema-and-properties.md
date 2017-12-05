@@ -30,11 +30,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16c300229163805dcb750590414851eb6013c7a6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1cf72847fccd84a1435e436a4bf2b59d36e26179
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a>FTP アダプター プロパティ スキーマおよびプロパティ
 FTP アダプタ プロパティ スキーマのプロパティを次の表に示します。  
@@ -52,7 +52,7 @@ FTP アダプタ プロパティ スキーマのプロパティを次の表に�
 |**ReceivedFileName**|xs:string|FTP アダプタがメッセージを読み取るファイルの完全な名前を指定します。|  
 |**MaxConnections**|xs:unsignedInt|サーバーに対して同時に開くことができる FTP 接続の最大数を指定します。 値 0 を指定した場合、接続は制限されません。|  
 |**CommandLogFileName**|xs:string|FTP 経由でファイルを送受信したときに発生したエラー状態の診断に使用できるログ ファイルのコピーを保存する場所を指定します。|  
-|**AllocateStorage**|xs:boolean|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] ではこのオプションは推奨されていません。このプロパティは使用しないでください。|  
+|**AllocateStorage**|xs:boolean|BizTalk Server では、このオプションは廃止されており、このプロパティの使用はお勧めします。|  
 |**PassiveMode**|xs:boolean|FTP サーバーへのアダプターの接続モードを指定します。<br /><br /> アクティブ モードでは、FTP アダプターによって開かれたポートに FTP サーバーが接続します。 パッシブ モードでは、FTP サーバーによって開かれたポートに FTP アダプターが接続します。<br /><br /> 場合**PassiveMode**は、アダプターがアクティブ モードを使用して FTP サーバーに接続し、false を指定します。 このプロパティの既定値は False です。|  
 |**SpoolingFolder**|xs:string|FTP サーバーの一時フォルダの場所を指定します。 このフォルダは、転送エラーの修復に使用されます。|  
 |**UseSsl**|xs:boolean|FTPS サーバーとの通信で FTP アダプターが強制的に SSL を使用するかどうかを指定します。|  
@@ -61,8 +61,8 @@ FTP アダプタ プロパティ スキーマのプロパティを次の表に�
 |**ClientCertificateHash**|xs:string|SSL (Secure Sockets Layer) のネゴシエーションで使用する必要のあるクライアント証明書の SHA1 ハッシュを指定します。<br /><br /> このハッシュに基づいて、BizTalk ホスト インスタンスを実行しているユーザー アカウントの個人ストアからクライアント証明書が取得されます。|  
   
 ## <a name="see-also"></a>参照  
- [FTP アダプタを構成します。](../core/configuring-the-ftp-adapter.md)
+ [FTP アダプターの構成](../core/configuring-the-ftp-adapter.md)
  
- [ベスト プラクティスと、FTP アダプターの推奨事項](../core/best-practices-and-recommendations-for-the-ftp-adapter.md)
+ [FTP アダプターのベスト プラクティスと推奨事項](../core/best-practices-and-recommendations-for-the-ftp-adapter.md)
  
  [FTP アダプター](../core/ftp-adapter.md)

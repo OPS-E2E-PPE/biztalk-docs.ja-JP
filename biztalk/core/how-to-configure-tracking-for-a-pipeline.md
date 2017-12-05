@@ -24,11 +24,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e933e9b50c99e11013ceaedf65c4f253ad1620c2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f34abe4d9d8b97b1c61bfc6201c3d36b977d0697
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-tracking-for-a-pipeline"></a>パイプラインの追跡を構成する方法
 このトピックでは、BizTalk Server 管理を使用して、パイプラインの追跡を構成する方法について説明します。 追跡は、トラブルシューティングと監査のために構成できます。 メッセージ プロパティ、ポート イベント、およびメッセージ イベントを表示できます。 メッセージのメッセージ イベントおよびポート イベントも追跡できます。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  次のいずれかの操作を行います。  
   
-    -   既定値のいずれかの BizTalk パイプラインの追跡を構成するのには、展開\<すべてのアイテム >。  
+    -   既定値のいずれかの BizTalk パイプラインの追跡を構成するのには、展開\<すべての成果物\>です。  
   
     -   BizTalk アプリケーションに展開されたカスタム パイプラインの追跡を構成する場合は、パイプラインが含まれているアプリケーションを展開します。  
   

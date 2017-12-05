@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 735d8411f2587e8e241773c4ebb8f98d29f3abed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f98f48cc93e973b7170c854590359029a60ebf57
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="choosing-between-messaging-and-orchestration-itinerary-services"></a>メッセージングの使い分けとオーケストレーション Itinerary サービス
-Itinerary サービスは、メッセージング サブシステムまたはのオーケストレーションのサブシステムのいずれかで発生するように構成できます[!INCLUDE[prague](../includes/prague-md.md)]です。 これら ESB itinerary メッセージング サービスは、メッセージを処理するように構成がおよび、(入り口または出口) は、BizTalk Server パイプラインで実行することがあります。 このオプションにより、正確にここで、パイプラインで、サービスは実行を定義する開発者。 必然的に、オーケストレーション サブシステムでのプロセスに構成されているサービスは、BizTalk オーケストレーションで実行されます。  
+メッセージング サブシステムまたは BizTalk Server のオーケストレーションのサブシステムのいずれかで発生する、itinerary サービスを構成することができます。 これら ESB itinerary メッセージング サービスは、メッセージを処理するように構成がおよび、(入り口または出口) は、BizTalk Server パイプラインで実行することがあります。 このオプションにより、正確にここで、パイプラインで、サービスは実行を定義する開発者。 必然的に、オーケストレーション サブシステムでのプロセスに構成されているサービスは、BizTalk オーケストレーションで実行されます。  
   
 ## <a name="esb-itinerary-messaging-services"></a>ESB Itinerary メッセージング サービス  
  メッセージが BizTalk Server パイプラインで処理されるときには、メッセージの待ち時間が削減され ESB itinerary メッセージング サービスを使用します。 バックツー バック サービスを実装する、1 つのパイプラインで、メッセージを複数回を変換し、そのエンドポイントにのみ、1 つの永続化によって、メッセージ ボックス データベースにメッセージをルーティングすることができます。 さらに、メッセージ ベースの処理には、オーケストレーションの処理の他のリソース コストが削減されます。 一般に、メッセージ ベースの処理は以下のリソースを消費であり、オーケストレーションに基づいた処理よりも高速に処理を提供します。 パイプラインで、ESB ディスパッチャーと ESB ディスパッチャーの逆アセンブル パイプライン コンポーネントによって提供される[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]メッセージ インターセプターとして機能し、メッセージ ベースの itinerary サービス、ルーティングは、変換、またはカスタム サービスを実行します。 これらのコンポーネントを構成する方法の詳細については、次を参照してください。 [ESB ディスパッチャー コンポーネント](../esb-toolkit/the-esb-dispatcher-component.md)と[ESB ディスパッチャーを逆アセンブル コンポーネント](../esb-toolkit/the-esb-dispatcher-disassemble-component.md)です。  

@@ -13,11 +13,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 507f2c3561747d9abb3ad3f1bfbd86c4738fbefd
-ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
+ms.openlocfilehash: d3cdb992f749633bd517d6cad7f1acce926157c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="whats-new-in-biztalk-accelerator-for-hl7"></a>BizTalk Accelerator 用 HL7 の新機能
 変更し、更新で、[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]です。 
@@ -38,8 +38,8 @@ ms.lasthandoff: 11/23/2017
 |**「フリー テキスト」のサポート**|フィールドやセグメントが"FreeText"として定義されるフィールド/セグメント内の文字データは解析されません。 参照してください[フリー テキストを使用してエンコード文字](../../adapters-and-accelerators/accelerator-hl7/encoding-characters-using-free-text.md)です。|  
 |**ACK または NACK 無効な MSH のメッセージが送信されます。**|使用して、 **ReturnErrorForInvalidMSH3**レジストリ キー、否定確認応答 (NACK) は、パーティに送信次が発生した場合。<br /><br /> -無効な MSH3 (HL7 構成エクスプ ローラーでは、パーティが定義されていません) <br />    **AND**<br />-MSH15 と MSH16 メッセージの値が null または空<br /><br /> NACK を送信するには、次のレジストリ キーを 1 に設定してホスト インスタンスを再起動しています。<br /><br /> 32 ビット ホスト:`HKLM\SOFTWARE\Microsoft\BizTalk Accelerator for HL7`<br /><br /> 64 ビット ホスト:`HKLM\ SOFTWARE\Wow6432Node\Microsoft\BizTalk Accelerator for HL7` <br/><br/>**ヒント:**ポートが、失敗したメッセージをサブスクライブできます。 <ul><li>使用して、 **BTAHL7Schemas.ParseError = True**条件をフィルター処理します。</li><li>使用して、 **Pass Through**パイプライン。</li></ul>|  
 |**ACK メッセージ インスタンスはアクティブのまま**|アップ ストリームのシステムへの接続エラーがある場合、アクティブな状態のままでアップ ストリームのシステムに送信された受信確認 (ACK)。<br /><br /> 新しい動作: アップ ストリームのシステムへの接続エラーがある場合は、ACK メッセージが中断されます。|  
-|**送信しない\<SB >**|このプロパティは、受信アダプターのポート設定のプロパティに追加されます。 このプロパティを有効にするには設定、 **UseMLLPTransACK**値。<br /><br /> 、設定すると**False** (既定)、メッセージの送信にデータが始まる場合\<SB >。 たとえば、次のメッセージが送信されます。<br /> `<SB\>DataData<CR\>DataData<CR\>…`<br/><br />、設定すると**True**、データが不足している場合、アダプターがメッセージを送信\<SB > 先頭にします。 たとえば、次のメッセージが送信されます。<br /> `DataData<CR\>DataData<CR\>…` <br/><br/>**重要:**双方向送信ポートの場合は**を送信しない\<SB >**を送信しません SB メッセージで、ダウン ストリーム システムにし、True に設定します。 同時にダウン ストリーム システムから SB が不足している ACK を受信できます。|  
-|**見つからないを受け入れる\<SB >**|このプロパティは、送信アダプターのポート設定のプロパティに追加されます。 このプロパティを有効にするには設定、 **UseMLLPTransACK**値。<br /><br /> 、設定すると**False** (既定)、アダプターはエラーを返します、データが不足している場合は\<SB > 先頭にします。 たとえば、次のメッセージには、エラーが返されます。<br /> `DataData<CR\>DataData<CR\>…`<br/><br />、設定すると**True**、データが不足している場合は、アダプターにメッセージが表示されることができます\<SB > 先頭にします。 たとえば、次のメッセージが受信します。<br /> `<SB\>DataData<CR\>DataData<CR\>…` <br />`DataData<CR\>DataData<CR\>…` <br/><br/>**重要:**場合は、双方向受信ポートが**見つからない受け入れる\<SB >**アップ ストリームのシステムからのメッセージに不足している SB を使用し、True に設定します。 同時には送信しません SB をアップ ストリームのシステム。|  
+|**送信しない\<SB\>**|このプロパティは、受信アダプターのポート設定のプロパティに追加されます。 このプロパティを有効にするには設定、 **UseMLLPTransACK**値。<br /><br /> 、設定すると**False** (既定)、メッセージの送信にデータが始まる場合\<SB\>です。 たとえば、次のメッセージが送信されます。<br /> `<SB\>DataData<CR\>DataData<CR\>…`<br/><br />、設定すると**True**、データが不足している場合、アダプターがメッセージを送信\<SB\>最初にします。 たとえば、次のメッセージが送信されます。<br /> `DataData<CR\>DataData<CR\>…` <br/><br/>**重要:**双方向送信ポートの場合は**を送信しない\<SB\>** を送信しません SB メッセージで、ダウン ストリーム システムにし、True に設定します。 同時にダウン ストリーム システムから SB が不足している ACK を受信できます。|  
+|**見つからないを受け入れる\<SB\>**|このプロパティは、送信アダプターのポート設定のプロパティに追加されます。 このプロパティを有効にするには設定、 **UseMLLPTransACK**値。<br /><br /> 、設定すると**False** (既定)、アダプターはエラーを返します、データが不足している場合は\<SB\>最初にします。 たとえば、次のメッセージには、エラーが返されます。<br /> `DataData<CR\>DataData<CR\>…`<br/><br />、設定すると**True**、データが不足している場合、アダプターは、メッセージを受信できる\<SB\>最初にします。 たとえば、次のメッセージが受信します。<br /> `<SB\>DataData<CR\>DataData<CR\>…` <br />`DataData<CR\>DataData<CR\>…` <br/><br/>**重要:**場合は、双方向受信ポートが**見つからない受け入れる\<SB\>** アップ ストリームのシステムからのメッセージに不足している SB を使用し、True に設定します。 同時には送信しません SB をアップ ストリームのシステム。|  
   
 ## <a name="biztalk-server-2013"></a>BizTalk Server 2013  
   

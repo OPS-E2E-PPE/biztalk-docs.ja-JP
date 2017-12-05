@@ -18,11 +18,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68fe19b4616e23066603995b6403654fa3960789
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe2002bd92342a953406a21e076b801d3e90b938
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="scripting-using-inline-c-jscript-net-and-visual-basic-net"></a>インライン C#、JScript .NET、および Visual Basic .NET を使用するスクリプト
 インライン スクリプトは、カスタム コードとして利用できます。ただし、このコードは、アプリケーション以外で使用されることはほとんどありません。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 |System.Xml.Xpath|XPath クラスです。|  
 |Microsoft.VisualBasic|Visual Basic スクリプト クラスです。|  
   
- 名前空間およびデータ型の詳細についてを検索して"XSLT スタイル シートのスクリプトを使用して\<msxsl:script >"と「system.xml.xsl.xslcompiledtransform」で .NET Framework のコレクション。  
+ 名前空間およびデータ型の詳細についてを検索して"XSLT スタイル シートのスクリプトを使用して\<msxsl:script\>"と「system.xml.xsl.xslcompiledtransform」で .NET Framework のコレクション。  
   
 > [!CAUTION]
 >  同じメソッド シグネチャを複数回使用しないでください。 複数のスクリプト Functoid が同じメソッド シグネチャを持つ場合、BizTalk は、最初の実装を選択し、他の実装を無視します。  

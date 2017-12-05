@@ -12,14 +12,14 @@ caps.latest.revision: "54"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ccdc0c0f36f2dca474b962d3f108e4f287e378f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26c296dfb2ca1f05a2f403aa31a73b67934fb23a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-for-the-wcf-adapters"></a>WCF アダプタに関する既知の問題
-このトピックでは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] に含まれる WCF アダプターに関する既知の問題について説明します。  
+このトピックでは、BizTalk Server に含まれる WCF アダプターに関する既知の問題について説明します。  
   
 ## <a name="a-message-that-fails-in-the-inbound-soap-marshaling-processing-is-not-suspended-in-wcf-receive-adapters"></a>受信 SOAP マーシャリング プロセスでエラーとなったメッセージが WCF 受信アダプターで中断されない  
  メッセージが WCF 受信アダプターに到着すると、WCF アダプターは受信 SOAP メッセージから BizTalk メッセージを作成し、この BizTalk メッセージをエンドポイント マネージャーによって管理されるトランスポート プロキシに渡します。 BizTalk メッセージの作成中にアダプターが SOAP エンベロープと本文の読み取りに失敗した場合でも、アダプターは非キャッシュで順方向専用の高速リーダーを使用して SOAP メッセージにアクセスするので、メッセージは中断されません。  

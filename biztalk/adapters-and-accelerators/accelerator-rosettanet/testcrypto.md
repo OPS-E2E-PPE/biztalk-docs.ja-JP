@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e9d3314b5564ab7619744e97f8e63df55683117
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 632ad57a8bb8a32c8f579a07980480dbd3bf0087
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="testcrypto"></a>TestCrypto
 TestCrypto ユーティリティを使用して、メッセージの暗号化解除に関連するトラブルシューティングを行います。 このユーティリティは、暗号化の解除に失敗したかどうかを示します。 暗号化の解除が成功した場合は、証明書が何かが示され、暗号化が解除されたメッセージが表示されます。  
@@ -30,7 +30,7 @@ TestCrypto ユーティリティを使用して、メッセージの暗号化解
  メッセージの取得の詳細については`MessageStorageIn`を参照してください[GetMessages サンプル](../../adapters-and-accelerators/accelerator-rosettanet/getmessages-sample.md)です。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk  
+ \<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk  
   
 ## <a name="running-testcrypto"></a>TestCrypto の実行  
   
@@ -38,9 +38,9 @@ TestCrypto ユーティリティを使用して、メッセージの暗号化解
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**コマンド プロンプト**です。  
   
-2.  移動\<*ドライブ*> \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk です。  
+2.  移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk です。  
   
-3.  コマンド プロンプトで次のように入力します。 **TestCrypto.exe\<ファイル名 >**、ENTER キーを押します。  
+3.  コマンド プロンプトで次のように入力します。 **TestCrypto.exe \<filename\>**、ENTER キーを押します。  
   
 ## <a name="remarks"></a>解説  
  ユーティリティが検出した証明書が適切な証明書ではない場合や無効な証明書である場合、または証明書が検出されない場合、暗号化の解除は失敗します。  

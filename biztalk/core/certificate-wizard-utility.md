@@ -12,16 +12,16 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e3acbb1198034e76bb1e0f45c0f9755ec6ac95d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b0341a11c45cd08f8476d48ea38cbf96bcc49c1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="certificate-wizard-utility"></a>証明書ウィザード ユーティリティ
 .pfx ファイルまたは .cer ファイルの証明書をプライベート ストアまたはパブリック ストアにインポートして Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用できるようにするには、CertWizard ユーティリティを使用します。  
   
- 証明書ウィザードのソース コードは含まれて、 **C:\Program files \microsoft BizTalk Server\<バージョン > \SDK\Utilities\Certificate ウィザード**フォルダーです。 64 ビット オペレーティング システムとのバージョンを含む[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]になります、 **C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン > \SDK\Utilities\Certificate ウィザード**フォルダーです。 証明書ウィザードを使用するには、最初に [!INCLUDE[vs2010](../includes/vs2010-md.md)] を使用して証明書ウィザードをビルドする必要があります。  
+ 証明書ウィザードのソース コードは含まれて、 **C:\Program files \microsoft BizTalk Server\<バージョン\>\SDK\Utilities\Certificate ウィザード**フォルダーです。 64 ビット オペレーティング システムとバージョンの BizTalk Server になります、 **C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\SDK\Utilities\Certificate ウィザード**フォルダーです。 Visual Studio を使用して構築するのに必要が最初に証明書ウィザードを使用します。  
   
  CertWizard は、.pfx ファイルの秘密キーを個人用ストアにインポートし、.cer ファイルの公開キーをパブリック ストアにインポートします。 秘密キーをインポートする場合は、着信メッセージの証明書に暗号化解除証明書を指定するか、送信メッセージの証明書に署名証明書を指定できます。  
   

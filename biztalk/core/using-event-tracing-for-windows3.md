@@ -21,11 +21,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6267689c46c66cc2ab791313d55cb46884190473
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75b2b339c99dcf1b64368c73381d1dbe81e0fb39
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー メッセージ、警告メッセージ、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションに変換する、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
@@ -44,7 +44,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー �
   
      コンシュマー アプリケーションで etl ファイルのイベントを読み取るには、Event Tracing for Windows によるダンプ処理でファイルを生成する必要があります。 通常、この作業は、コントローラーがトレーシングを非アクティブ化するときに行われます。  
   
-     コント ローラーにコンシューマー アプリケーションを使用して、トレースを非アクティブ化せず、リアル タイム オプションを使用してトレースをアクティブ化する必要があります\<リアルタイム > =-rt です。  
+     コント ローラーにコンシューマー アプリケーションを使用して、トレースを非アクティブ化せず、リアル タイム オプションを使用してトレースをアクティブ化する必要があります\<リアルタイム\>-rt を = です。  
   
 -   **プロバイダー**: イベントを提供します。  
   
@@ -52,11 +52,11 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー �
   
  BizTalk Adapter for TIBCO Enterprise Message Service には、さまざまな種類のメッセージをログに記録することを可能にするプロバイダーがあります。  
   
--   **受信元ログ プロバイダー**:\<トレース要素 > スイッチは**-受信者**です。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。  
   
      使用して**-受信者**実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
   
--   **送信元ログ プロバイダー**:\<トレース要素 > スイッチは**-トランスミッター**です。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。  
   
      使用して**-トランスミッター**実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
   
@@ -71,7 +71,7 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
  各要素の説明は次のとおりです。  
   
--   **\<トレース要素 >**プロバイダーの種類は、(必須)。  
+-   **\<Trace 要素\>**プロバイダーの種類は、(必須)。  
   
  そのオプションは次のとおりです。  
   
@@ -81,9 +81,9 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
 -   **-開始、停止**: プロバイダーをアクティブまたは非アクティブです。  
   
--   **-cir \<MB >**: ファイルのサイズおよび種類です。 **-cir**循環ファイルです。 **\<MB >**: サイズ (メガバイト単位)。  
+-   **-cir \<MB\>**: ファイルのサイズおよび種類です。 **-cir**循環ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
   
--   **-seq \<MB >**: ファイルのサイズおよび種類です。 **-seq**シーケンシャル ファイルです。 **\<MB >**: サイズ (メガバイト単位)。  
+-   **-seq \<MB\>**: ファイルのサイズおよび種類です。 **-seq**シーケンシャル ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
   
 -   **-rt**: リアル タイム モードに設定します。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16ab4286ba70a8bb14ae5ec726d17b3bde81d7fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d0d3cc9d02f9e68c171f950e7681e5f2ca2d787
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="phase-1-scoping-the-assessment"></a>フェーズ 1: 評価対象のスコープ
 このトピックでは、BizTalk Server のパフォーマンス評価のスコープ フェーズの側面について説明します。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
  パフォーマンス評価の他の作業が行われる前に、次の要因を考慮してください。 これらの要因は、スコープ フェーズの一般的な方向を決めるときに役立つ、パフォーマンス評価のための適切な開始点です。  
   
 ### <a name="message-load"></a>メッセージの読み込み  
- 重要な考慮事項が実際に実稼働システムを通過するメッセージの読み込みをレプリケートどうやって当初から右であります。 たとえば、実稼働環境で、メッセージの 20% になる場合 < 20 KB のサイズを 50% になります\<100 KB のサイズと残りの 30% では最大 1 MB である可能性があります、サイズがこのラボにレプリケートすることが重要です。  
+ 重要な考慮事項が実際に実稼働システムを通過するメッセージの読み込みをレプリケートどうやって当初から右であります。 たとえば、実稼働環境で、メッセージの 20% になる場合 < 20 KB のサイズを 50% になります < 100 KB のサイズと残りの 30% では最大 1 MB である可能性があります、サイズがこのラボにレプリケートすることが重要です。  
   
 ### <a name="develop-a-brief-detail-of-the-scenarios-to-be-tested"></a>テストするシナリオの簡単な詳細を開発します。  
  テストされるテスト_ケースを識別したら、それらに関連する主要なコンポーネントを識別する必要があります。 これには、BizTalk Server コンポーネント (など、メッセージングとオーケストレーション) と MQSeries や SAP などのサードパーティのテクノロジを含め、他のコンポーネントの両方が含まれます。 非常に重要である必要が最初からこれらのすべての対応するに役立ちますが、ラボの複雑さを評価し、契約時に必要な技術的スキルを計画することができます。  
@@ -281,7 +281,7 @@ ms.lasthandoff: 09/20/2017
     |スケール アウト|140 メッセージ/秒|0.777 (秒)|99.3%|2|6|270,000|609 バイト|30 分|  
     |最適な|50 メッセージ/秒|1.12 (秒)|99.12%|17|2|360,000|609 バイト|2 時間|  
     |基準|30 メッセージ/秒|1.52 (秒)|92.9 %|4|2|36,000|609 バイト|20 分|  
-    |目標|5 メッセージ/秒|\<2 秒|90%|-|2|-|-|-|  
+    |目標|5 メッセージ/秒|< 2 秒|90%|-|2|-|-|-|  
   
 ## <a name="define-all-deliverables-that-are-required-at-the-onset-of-the-performance-assessment"></a>パフォーマンス評価の始まった必要とされるすべての成果物を定義します。  
  BizTalk Server のパフォーマンス評価に着手する前に配置する必要がある成果物について合意に重要です。 以下のセクションでは、する必要がありますが始まったパフォーマンス評価の成果物について説明します。  
@@ -341,4 +341,4 @@ ms.lasthandoff: 09/20/2017
 -   **ロード テスト自動を計画および生成を読み込む**-パフォーマンス評価のため、テスト データのプロファイルが確立されると、後にすることが重要のロード、環境内でテストを実行する方法を検討してください。 BizTalk Server 2010 のロード テストでは、Visual Studio 2010 のロード テストを使用しました。 Visual Studio 2010 を使用してロード テストを容易にする方法の詳細については、次を参照してください。[を使用して Visual Studio でテストを容易に自動化](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)です。  
   
 ## <a name="see-also"></a>参照  
- [パフォーマンス評価の段階](../technical-guides/phases-of-a-performance-assessment.md)
+ [パフォーマンス評価のフェーズ](../technical-guides/phases-of-a-performance-assessment.md)

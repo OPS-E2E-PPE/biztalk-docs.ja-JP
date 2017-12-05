@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b218fa44b93211fdb51080d68b429744b5aabf72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12fb3eca6db9ceafeeab9b0b276bfd6f3cb23b16
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service"></a>BizTalk WCF サービス使用ウィザードを使用した WCF サービスの使用方法
 BizTalk アダプタ フレームワークでは、アダプタ スキーマと BizTalk の型を BizTalk プロジェクトに追加する方法が提供されています。 BizTalk WCF サービス使用ウィザードを使用すると、WCF 送信アダプタを BizTalk プロジェクトに追加できます。 WCF 送信アダプタを使用するために、送信ポートに対して、既存のメタデータ交換 (MEX) エンドポイントを選択する必要があります。 次に、スキーマと型を生成するために使用する情報を入力する必要があります。 ウィザードが完了すると、WCF サービスを使用するために必要なスキーマと型が BizTalk プロジェクトに追加されます。  
@@ -30,7 +30,7 @@ BizTalk アダプタ フレームワークでは、アダプタ スキーマと 
   
 1.  Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクト、ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**追加**、クリックして**生成した項目の追加**です。  
   
-2.  **生成した項目の追加 - \<** *プロジェクト名* **>**   ダイアログ ボックスで、**テンプレート** セクションで、選択**Consume WCF サービス**、クリックして**追加**です。  
+2.  **生成した項目の追加 - \<** *プロジェクト名* **\>**   ダイアログ ボックスで、**テンプレート** セクションで、選択**Consume WCF サービス**、クリックして**追加**です。  
   
 3.  **BizTalk WCF サービス使用ウィザードへようこそ** ページで、をクリックして**次**です。  
   

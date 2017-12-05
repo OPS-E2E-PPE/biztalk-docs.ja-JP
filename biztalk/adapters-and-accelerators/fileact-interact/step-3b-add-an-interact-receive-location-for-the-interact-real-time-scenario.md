@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9912e47f56dcf9c8ccc42af944616858ec9b93fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa1a98f97cba9f46b43b92128a6585ad18afb894
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario"></a>手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオの対話
 完全な[手順 3A: 対話リアルタイム シナリオではファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)この手順を開始する前にします。
@@ -41,14 +41,14 @@ ms.lasthandoff: 09/20/2017
     |------------------|--------------------|  
     |**Password**|SAG への接続に使用するパスワードを入力します。 詳細については、SAG のヘルプを参照してください。|  
     |**ユーザー名**|SAG への接続に使用するユーザー名を入力します。|  
-    |**アプリケーション名**|サーバーを入力\<*アプリケーション インターフェイス名*>、SAG のボックス ルーティング セット。|  
+    |**アプリケーション名**|サーバーを入力\<*アプリケーション インターフェイス名*\> SAG のボックス ルーティング セット。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
     |**LogMessageBody**|ドロップダウン リストから選択**FALSE**です。 **注:**を TRUE に設定する場合、追跡データベースにメッセージ本文が保持されます。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
     |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
     |**メッセージの形式**|ドロップダウン リストから選択**InterActMessage**です。|  
     |**MemberRef**|ドロップダウン リストから選択**ResponseHeader**です。|  
     |**否認不可インジケーター**|ドロップダウン リストから選択**FALSE**です。|  
-    |**応答側**|適切な入力\< *ResponderDN*> SWIFT でのプロビジョニングに基づく文字列。|  
+    |**応答側**|適切な入力\< *ResponderDN* \> SWIFT でのプロビジョニングに基づく文字列。|  
     |**ResponseCrypto**|ドロップダウン リストから選択**FALSE**です。|  
     |**Timeout**|適切な接続がタイムアウトするまでの秒数の種類に発生する必要があります。|  
     |**キューを取得します。**|このプロパティの既定値のままにします。 このプロパティは、ストア アンド フォワードのシナリオに使用されます。|  
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
  [手順 3: ファイルの受信場所を追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
  [手順 3 C: の Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
  [ステップ 3 D: の Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)   
- [ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)
+ [手順 3E: InterAct リアルタイム シナリオ用に INTERACT 送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)

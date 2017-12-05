@@ -17,11 +17,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 215ba0419bd9e6921c74755a88a17fa639567835
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 109ad486baa542aff3cd1c4a44804ff2fd79aac5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="specifying-the-message-body-for-the-wcf-adapters"></a>WCF アダプタのメッセージ本文の指定
 使用することができます、**メッセージ**] タブの [WCF アダプターでは、受信 SOAP メッセージから BizTalk メッセージ本文を抽出する方法を指定して、BizTalk メッセージの本文は、送信 SOAP メッセージに配置されます。  
@@ -35,12 +35,12 @@ ms.lasthandoff: 09/20/2017
   
  BizTalk メッセージ本文を作成する方法を指定するで次のオプションのいずれかを選択、**受信 BizTalk メッセージ本文**上記の図のセクション。  
   
--   **-エンベロープ\<Soap:envelope >**です。 SOAP を使用して**エンベロープ**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 受信メッセージ全体が BizTalk メッセージ本文になります。 このオプションは、すべてのヘッダーを組み込んで BizTalk メッセージ本文を作成する場合に使用します。  
+-   **-エンベロープ\<Soap:envelope\>**です。 SOAP を使用して**エンベロープ**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 受信メッセージ全体が BizTalk メッセージ本文になります。 このオプションは、すべてのヘッダーを組み込んで BizTalk メッセージ本文を作成する場合に使用します。  
   
     > [!NOTE]
     >  SOAP ヘッダーはメッセージ コンテキストに配置されますが、自動的に昇格されません。 昇格は、カスタム パイプライン コンポーネントで行うことができます。  
   
--   **本文--内容\<Soap:body > 要素**です。 SOAP の内容を使用して**本文**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 **Body** 要素に複数の子要素がある場合は、最初の要素のみが BizTalk メッセージのボディ部になります。  
+-   **本文--内容\<Soap:body\>要素**です。 SOAP の内容を使用して**本文**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 **Body** 要素に複数の子要素がある場合は、最初の要素のみが BizTalk メッセージのボディ部になります。  
   
 -   **パス--本文のパスである内容**です。 ボディ パス式を使用して、**本文のパス式**BizTalk メッセージのボディ部を作成するテキスト ボックス。 ボディ パス式は、受信メッセージの SOAP **Body** 要素のすぐ下の子要素に対して評価されます。 受信メッセージにバイナリ データが含まれている場合は、BizTalk メッセージ本文にこのオプションを使用して、タグなしのバイナリ データだけを含めることができます。  
   
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  **本文のパス式**プロパティ、XML の順方向専用の処理に適した式がサポートされている XPath のみです。 このプロパティの使用可能な XPath 式の詳細についてを参照してください"ベストの両方長所:: 結合 XPath で、XmlReader" [http://go.microsoft.com/fwlink/?LinkID=75701](http://go.microsoft.com/fwlink/?LinkID=75701)です。  
   
- 場合、**パス--本文のパスで見つかったコンテンツ**オプションを選択して**ノード エンコード**プロパティに設定されている**文字列**、WCF アダプターは、期待 utf-8 が一致するノードにあります。文字データをエンコードします。 受信メッセージが含まれる場合など、XML の特殊文字の文字データをエスケープ\<>、WCF アダプターが BizTalk メッセージのボディ部を作成するときに、エスケープ文字データを復元します。 たとえば、一致するノードが文字データをようにエスケープ **&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;**  、WCF アダプタ作成 **\<FirstName > CONTOSO\</FirstName >**受信 biztalk メッセージ本文。  
+ 場合、**パス--本文のパスで見つかったコンテンツ**オプションを選択して**ノード エンコード**プロパティに設定されている**文字列**、WCF アダプターは、期待 utf-8 が一致するノードにあります。文字データをエンコードします。 受信メッセージが含まれる場合など、XML の特殊文字の文字データをエスケープ\<と\>、WCF アダプターが BizTalk メッセージのボディ部を作成するときに、エスケープ文字データを復元します。 たとえば、一致するノードが文字データをようにエスケープ **&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;**  、WCF アダプタ作成 **\<FirstName\>CONTOSO\</FirstName\>** 受信 biztalk メッセージ本文。  
   
  場合、**パス--本文のパスで見つかったコンテンツ**オプションを選択して、**ノード エンコード**プロパティに設定されている**16 進数**または**Base64**では、一致するノードが、有効なことができますが**BinHex**または**Base64**シーケンス。 一致するノードに無効なシーケンスがある場合は、WCF クライアントが受け取る**FaultException**、エラー メッセージは、BizTalk Server コンピューターのイベント ログにログに記録され、メッセージは中断されません。  
   
@@ -84,13 +84,13 @@ ms.lasthandoff: 09/20/2017
   
 |受信 BizTalk メッセージ本文|本文のパス式|[ノード エンコード]|  
 |----------------------------------|--------------------------|-------------------|  
-|**-エンベロープ\<Soap:envelope >**|なし|なし|  
+|**-エンベロープ\<Soap:envelope\>**|なし|なし|  
   
  構成する場合、 **BizTalk メッセージ本文**セクションで、WCF アダプタがのみが含まれる受信 BizTalk メッセージのボディ部を作成して、次の表に示すように、**順序**前の要素受信 SOAP メッセージ。  
   
 |受信 BizTalk メッセージ本文|本文のパス式|[ノード エンコード]|  
 |----------------------------------|--------------------------|-------------------|  
-|**本文--内容\<Soap:body > 要素**|なし|なし|  
+|**本文--内容\<Soap:body\>要素**|なし|なし|  
   
  構成する場合、 **BizTalk メッセージ本文**セクション ボディ パス式に一致する受信ノードが utf-8 でエンコードされた文字データを持つ次の表に示すように、WCF アダプタが期待されます。  
   
@@ -134,7 +134,7 @@ ms.lasthandoff: 09/20/2017
   
  WCF アダプターによると、BizTalk メッセージ本文のエンコード、**エンコード**XML テンプレートの属性し、し、置換、 **bts メッセージ本文**を作成するときに、エンコードされた BizTalk メッセージ本文の要素送信 WCF メッセージ。 場合、**送信 WCF メッセージ本文 - XML**テキスト ボックスが空のまま、WCF アダプタで BizTalk メッセージ本文をエンコードする**Base64**、し、配置、 **Base64**内のシーケンス、送信 SOAP メッセージの本文。  
   
- 場合、**エンコード**XML テンプレート内の属性に設定されている**文字列**、WCF アダプターは、XML の特殊文字のなどをutf-8でエンコードされた文字データとしてのBizTalkメッセージのボディ部のエンコード\<と > エスケープされます。  
+ 場合、**エンコード**XML テンプレート内の属性に設定されている**文字列**、WCF アダプターは、XML の特殊文字のなどをutf-8でエンコードされた文字データとしてのBizTalkメッセージのボディ部のエンコード\<と\>エスケープされます。  
   
  場合、**エンコード**XML テンプレート内の属性に設定されている**base64**または**16 進**、WCF アダプターとして BizTalk メッセージのボディ部のエンコード、 **BinHex**または**Base64**シーケンス。  
   
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 |送信 WCF メッセージ本文|XML|  
 |-------------------------------|---------|  
-|**ボディ--BizTalk 応答メッセージ本文**|\<Book ><br /><br /> \<**bts メッセージ本文**xmlns ="http://www.microsoft.com/schemas/bts2010"encoding ="**文字列**"/><br /><br /> \</予約 >|  
+|**ボディ--BizTalk 応答メッセージ本文**|\<書籍\><br /><br /> \<**bts メッセージ本文**xmlns ="http://www.microsoft.com/schemas/bts2010"encoding ="**文字列**"/\><br /><br /> \</書籍\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  
@@ -205,7 +205,7 @@ ms.lasthandoff: 09/20/2017
   
 |送信 WCF メッセージ本文|XML|  
 |-------------------------------|---------|  
-|**ボディ--BizTalk 応答メッセージ本文**|\<Book ><br /><br /> \<**bts メッセージ本文**xmlns ="http://www.microsoft.com/schemas/bts2010"encoding ="**base64**"/><br /><br /> \</予約 >|  
+|**ボディ--BizTalk 応答メッセージ本文**|\<書籍\><br /><br /> \<**bts メッセージ本文**xmlns ="http://www.microsoft.com/schemas/bts2010"encoding ="**base64**"/\><br /><br /> \</書籍\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://ww  
@@ -234,7 +234,7 @@ FBMmM8L25zMDpPcmRlcklEPg0KICA8L25zMDpPcmRlckRldGFpbD4NCjwvbnMwOk9yZGVyPg==</Book
   
 |送信 WCF メッセージ本文|XML|  
 |-------------------------------|---------|  
-|**ボディ--BizTalk 応答メッセージ本文**|\<Book ><br /><br /> \<**bts メッセージ本文**xmlns ="http://www.microsoft.com/schemas/bts2010"encoding ="**xml**"/><br /><br /> \</予約 >|  
+|**ボディ--BizTalk 応答メッセージ本文**|\<書籍\><br /><br /> \<**bts メッセージ本文**xmlns ="http://www.microsoft.com/schemas/bts2010"encoding ="**xml**"/\><br /><br /> \</書籍\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  

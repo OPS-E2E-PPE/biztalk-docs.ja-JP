@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d245742fb89dd9eb91137d3a5f945af13b97161
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0dc2603a2e86d29797919fb51c3985c384ff9580
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターのインストールに関するをトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するのにはトラブルシューティングの手法の使用について説明しもいくつかの既知の問題を示します。  
@@ -44,9 +44,9 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
   
 手動で登録、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインド。 
   
-1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ >: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
+1.  コンピューター上の machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config は下にある使用可能な\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG です。  
   
-     このパスに\<バージョン > は .NET Framework のバージョン。  
+     このパスに\<バージョン\>.NET Framework のバージョンです。  
   
 2.  テキスト エディターを使用してファイルを開きます。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bead22f33bbe38cb8deac3a201121438d344c09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67c937ae0edb1698991ad111622a582ebfc64d76
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-applications"></a>アプリケーションの監視
 BizTalk を監視するための Microsoft System Center Operations Manager のセットアップ アプリケーション通常できますに細分化プログレッシブ 4 段階のプロセスには、次のように。  
@@ -51,9 +51,9 @@ BizTalk を監視するための Microsoft System Center Operations Manager の�
   
 4.  **しきい値規則を使用して、手動のタスクを自動化するには**  
   
-     処理の次の手順では、事後対応型のアラートだけにとどまらないしきい値の規則を使用します。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理パックで、既定のしきい値規則が含まれません。 これは、このようなルールは、通常、カスタム アプリケーションに固有しはアプリケーションごとに異なります。 しきい値は、カスタム アプリケーションに関するビジネス ルールを具体化、監視システムで、プロアクティブな手段を提供します。 使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]しきい値テンプレート規則を定義するパフォーマンス分析のログ (PAL) のツールに用意します。  
+     処理の次の手順では、事後対応型のアラートだけにとどまらないしきい値の規則を使用します。 BizTalk Server 管理パックには、既定では、しきい値規則がありません。 これは、このようなルールは、通常、カスタム アプリケーションに固有しはアプリケーションごとに異なります。 しきい値は、カスタム アプリケーションに関するビジネス ルールを具体化、監視システムで、プロアクティブな手段を提供します。 使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]しきい値テンプレート規則を定義するパフォーマンス分析のログ (PAL) のツールに用意します。  
   
      このようなしきい値規則の例では、サーバー上の Cpu が一貫して特定の期間の 75% を超える実行と、メジャーです。 システムを拡張する必要がある可能性があります。 まだ別の例では、一意な一連のカウンターを監視するしきい値の規則を作成します。 このルールは、非常に混み合っての期間中に以前に構成されたバックアップ サーバー上の BizTalk ホスト インスタンスを初期化するコードを呼び出す可能性があります。  
   
 ## <a name="see-also"></a>参照  
- [System Center Operations Manager 2007 での BizTalk Server の監視](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
+ [System Center Operations Manager 2007 による BizTalk Server の監視](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)

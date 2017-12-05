@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aed2b50eab9612e5a2a610047e41560e1dc24576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c9ff6b37f2e18c03a364e3f584ea9f79b547f1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle E-business Suite での同時実行プログラムを呼び出す
 Oracle E-business Suite では、Oracle アプリケーションで特定の操作を実行する実行可能な同時実行プログラムを公開します。 各 Oracle アプリケーションでは、一連の標準的な同時実行プログラム (同じすべての操作で) と Oracle アプリケーションに固有の特定の同時実行プログラムがあります。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが呼び出すことのできる操作としてすべての同時実行プログラムを公開します。 アダプターで同時実行プログラムをサポートする方法の詳細については、次を参照してください。[同時実行プログラムで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)です。  
@@ -41,7 +41,7 @@ Oracle E-business Suite では、Oracle アプリケーションで特定の操�
   
 |操作|メソッド シグネチャ|  
 |---------------|----------------------|  
-|同時実行プログラム|パブリック\<型を返す >< Concurrent_program_name > (param 1、param 2、...)|  
+|同時実行プログラム|パブリック\<型を返す\>< Concurrent_program_name > (param 1、param 2、...)|  
   
  たとえば、次のコードにはメソッド シグネチャに関するの WCF クライアント クラスを生成、 **MS_SAMPLE_COPY_EMP_DATA**と**Get_Status**同時実行プログラムです。  
   

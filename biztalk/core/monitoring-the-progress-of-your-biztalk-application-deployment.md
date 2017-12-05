@@ -17,16 +17,16 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4eaa81067f5a413c689a4a51ac6b102d80782e2b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a91910fd1955858260466d987bede1647f0be90c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="monitoring-the-progress-of-your-biztalk-application-deployment"></a>BizTalk アプリケーション展開の進行状況の監視
 BizTalk アプリケーションの展開の進行状況は、2 つの方法で監視できます。  
   
--   **BizTalk インストール ログ**: インストールを参照してくださいをログに記録[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が生成されます。 インストール ログに %SystemDrive%\Documents and Settings\\<*現在のユーザー*> \Application Data\Microsoft\\[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]\Deployment です。  
+-   **BizTalk インストール ログ**: インストールを参照してくださいをログに記録[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が生成されます。 インストール ログに %SystemDrive%\Documents and Settings\\<*現在のユーザー*\>\Application Data\Microsoft\\[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]\Deployment です。  
   
 -   **ローカル イベント ログ**: ローカル イベント ログで、インストールの進行状況を追跡することができます。 このため、カスタムのインストール動作をサーバー単位で追跡できます。  
   

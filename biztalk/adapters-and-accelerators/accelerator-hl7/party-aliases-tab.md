@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc22c7e3eafffb035c791b258064e2149f31636b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dec1cde2206f055cbcf97c94a7e2f042aa391f51
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="party-aliases-tab"></a>パーティ エイリアス タブ
 使用する、**パーティ エイリアス**タブには、選択したパーティに関する情報を表示します。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  パーティを作成するのにには、BizTalk エクスプ ローラーを使用します。  
   
- パーティの作成の詳細についてを参照してください「を管理するパーティを使用して BizTalk エクスプ ローラー」[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]ヘルプします。  
+ パーティの作成の詳細については、「を管理するパーティを使用して BizTalk エクスプ ローラー」BizTalk Server のヘルプを参照してください。  
   
  **BTAHL7 構成エクスプ ローラー**  ダイアログ ボックスで、**パーティ エイリアス** タブで、次の操作します。  
   

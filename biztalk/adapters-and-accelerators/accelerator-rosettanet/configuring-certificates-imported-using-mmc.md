@@ -19,11 +19,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f60811a8b6875c8cbcf4a8037501855a08fe0be6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d8896691557f48a8e85e67e09e35d20e1d606d0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-certificates-imported-using-mmc"></a>MMC を使用してインポートされた証明書を構成します。
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 管理コンソール (MMC) の証明書スナップインを使用して証明書をインポートしたら、それらの使用法を構成する必要があります。 そのためには、BizTalk グループ、BizTalk ホストと分離ホスト サービス アカウント、PIP (Partner Interface Processes)、取引先アグリーメント、およびパートナーを構成します。 次の手順を実行する必要があります。  
@@ -44,12 +44,12 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-configure-the-signing-certificate-for-a-biztalk-group-or-the-decryption-certificate-for-a-biztalk-host"></a>BizTalk グループの署名証明書または BizTalk ホストの暗号化解除証明書を構成するには  
   
-1.  をクリックして**開始**、 をクリックして**実行**、型**runas/user:\<サービスをホスト > mmc**、順にクリック**ok**です。  
+1.  をクリックして**開始**、 をクリックして**実行**、型**runas/user:\<サービスをホスト\>mmc**、順にクリック**ok**です。  
   
     > [!NOTE]
-    >  \<*サービスをホスト*> をインストールしたときに、ホスト サービスに関連付けられたサービスの名前を入力[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]です。  
+    >  \<*サービスをホスト*\>、インストールしたときに、ホスト サービスに関連付けられたサービスの名前を入力[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]です。  
   
-2.  パスワードを入力\<*サービスをホスト*>、ENTER キーを押します。  
+2.  パスワードを入力\<*サービスをホスト*\>、ENTER キーを押します。  
   
 3.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、順にクリック[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**です。  
   

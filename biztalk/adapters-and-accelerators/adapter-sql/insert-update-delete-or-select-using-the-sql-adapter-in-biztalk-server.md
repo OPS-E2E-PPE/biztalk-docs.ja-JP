@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2216116e00e587d8da0d69cea8cd1c364e5786b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 688c4a192a77dbc01de438c20be709dc4b3c378c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-the-sql-adapter"></a>挿入、更新、削除、または BizTalk Server アダプターを使用して、SQL 操作の選択
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL Server データベース テーブルやビュー上の標準的な操作のセットを表示します。 これらは、データ操作言語 (DML) 操作と呼ばれます。 DML 操作を使用すると、単純な Insert、Update、Select を実行し、テーブルおよびビューの操作を削除できます。 アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [Insert、Update、Delete、およびテーブルおよび SQL アダプターとビューの選択操作](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)です。 これらの操作用の SOAP メッセージの構造については、次を参照してください。 [Insert、Update、Delete、およびテーブルおよびビューに対する選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)です。  
@@ -168,7 +168,7 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションはメッセージを使用して、SQL Server データベースに送信します。 SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージ用の SQL Server データベースからの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <SelectResponse xmlns="mssql://Microsoft.LobServices.Sql/2008/01/TVOp/dbo/Employee">  
   <SelectResult>  
     <Employee xmlns="mssql://Microsoft.LobServices.Sql/2008/01/Types/Tables/dbo">  
@@ -193,4 +193,4 @@ ms.lasthandoff: 09/20/2017
 -   挿入する場合は、更新、または削除する大量のデータを確認して値を設定する右のタイムアウトの WCF アダプタと、MSDTC トランザクションのです。 詳細については、「アダプターは、挿入、更新、または大量の BizTalk Server を使用して単一の操作でデータの削除に失敗」の問題を参照してください。 [SQL アダプタでの運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-sql/troubleshoot-operational-issues-with-the-sql-adapter.md)です。  
   
 ## <a name="see-also"></a>参照  
-[SQL アダプターを使用して BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[SQL アダプターを使用して BizTalk アプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

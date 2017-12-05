@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e22d5c24b0c2d29c225fa2206d47b67e3d166a2c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f2fdc186e93bd182b3021a3ef8fc258cee59923
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="verifying-a-message"></a>メッセージの検証
 このセクションでは、修復されましたが、メッセージを確認する方法について説明します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [ホーム] ウィンドウ**ドキュメント**です。  
   
-3.  ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして  **\<*部門名*> _Verifier * *。  
+3.  ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして  **\<*部門名*\>_Verifier * *。  
   
 4.  確認してください ウィンドウで、をクリックして**受信トレイ**です。  
   
@@ -82,4 +82,4 @@ ms.lasthandoff: 09/20/2017
   
 19. 閉じる、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]ウィンドウです。  
   
-20. サイトの MRSR クリックして**ドキュメントし、リスト**です。 クリックした場合は**Accept**手順 13. の変更を受け入れるようにいることを確認、\<部門名 > _Approve ドキュメント ライブラリには、直前に変更するメッセージが含まれています。 開いているドキュメントとリストのウィンドウが既に存在する場合はクリックして**更新**上、**ビュー**メニュー。 クリックした場合は**拒否**手順 13. の変更を拒否することを確認、 *\<コンピューター名 >*_Outbox ドキュメント ライブラリには、直前に変更するメッセージが含まれています。
+20. サイトの MRSR クリックして**ドキュメントし、リスト**です。 クリックした場合は**Accept**手順 13. の変更を受け入れるようにいることを確認、\<部門名\>_Approve ドキュメント ライブラリには、直前に変更するメッセージが含まれています。 開いているドキュメントとリストのウィンドウが既に存在する場合はクリックして**更新**上、**ビュー**メニュー。 クリックした場合は**拒否**手順 13. の変更を拒否することを確認、 *\<コンピューター名\>*_Outbox ドキュメント ライブラリには、直前に変更するメッセージが含まれています。

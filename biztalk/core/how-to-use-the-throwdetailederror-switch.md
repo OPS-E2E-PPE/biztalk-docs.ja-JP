@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 194306da3b021e7460b88a3d8e76801a2eeaebba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90929015e2d1d0567af0ccc5c51c6aae450d49c8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-throwdetailederror-switch"></a>ThrowDetailedError スイッチを使用する方法
 Web クライアントがジェネリック型を受け取るエラーが発生する場合**SoapException**です。  
@@ -28,7 +28,7 @@ Web クライアントがジェネリック型を受け取るエラーが発生�
   
  Web.config ファイルを含む、アプリケーション設定スイッチ**ThrowDetailedError**です。 **False**の既定の設定は、 **ThrowDetailedError**です。 設定を変更する場合**True**、サーバー プロキシは、公開された Web サービスをデバッグできるように、Web クライアントには、内部例外情報を返します。  
   
- 次の XML コードは、 **ThrowDetailedError**スイッチ下にある Web.config ファイルに表示される、 \<appSettings > ノード。  
+ 次の XML コードは、 **ThrowDetailedError**スイッチ下にある Web.config ファイルに表示される、 \<appSettings\>ノード。  
   
 ```  
 <appSettings>  

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6aa6f1f3417bbfe7858ab8e1ef29d7155b6528c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2c89bc75871d19939846a587ff23730c05022c7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="the-supply-chain-solution"></a>サプライ チェーン ソリューション
 ビジネス プロセスとデータ通信に関する問題の解決に、テクノロジが役立ちます。 先端企業は情報技術 (IT) システムを利用することで、パートナーとの通信をオフラインで互換性のないプロセスから、統合かつ標準化されたプロセスへと変革することができます。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  このシステムでは、取引先間の標準インターフェイスは RNIF (RosettaNet Implementation Framework) 接続です。 システムは RosettaNet に準拠して実装されており、独自の手動処理はすべて自動化された RNIF 接続に置き換えられています。 このシステムを利用していても、企業は必要に応じて各システムをカスタマイズしたり、パートナーと独自のアグリーメントを作成したり、他の通信デバイスを使用したりできます。 このシステムは、パートナーがそれぞれの目的に合わせてシステムをカスタマイズできる柔軟性を備えています。 ただし、すべてのパートナーがルーチン データ通信に一貫して同じプロセスを使用する必要があります。  
   
- このサプライ チェーンに属するすべての会社は RNIF 接続を共有します。 大企業の場合は、完全に自動化されたエンタープライズ システムを使用して、設定できます[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]と[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]です。 さらに、取引先はインストール済みの任意の RosettaNet 準拠実装を使用するか、EDI システムの使用を継続できます。 一方、中小企業では、完全な [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムに必要なリソースを用意できない場合があります。 このような企業は、サプライ チェーン システムに接続するための Web サービスをセットアップできます。 この場合のテクノロジ要件は Web ブラウザーのみです。 どちらの場合でも、システム上のすべての企業が統一した方法を使ってパートナーと接続できます。  
+ このサプライ チェーンに属するすべての会社は RNIF 接続を共有します。 大企業の場合は、完全に自動化されたエンタープライズ システムを使用して、設定できます[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]です。 さらに、取引先はインストール済みの任意の RosettaNet 準拠実装を使用するか、EDI システムの使用を継続できます。 一方、中小企業では、完全な [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムに必要なリソースを用意できない場合があります。 このような企業は、サプライ チェーン システムに接続するための Web サービスをセットアップできます。 この場合のテクノロジ要件は Web ブラウザーのみです。 どちらの場合でも、システム上のすべての企業が統一した方法を使ってパートナーと接続できます。  
   
 ## <a name="the-benefits-of-standardization"></a>標準化の利点  
  完全統合システムに参加しなくても、企業は電子手段によってデータを交換できます。 しかし、それぞれの取引先が別々の形式でデータを管理し、そのデータを別々のデータ プロトコルで転送すると、データ交換の設計とカスタマイズに多大な労力が必要になります。 接続しているすべてのパートナーが、標準化された形式とプロトコルを使用してデータ交換を行えば、取り引きの効率性を大幅に向上させることができます。  

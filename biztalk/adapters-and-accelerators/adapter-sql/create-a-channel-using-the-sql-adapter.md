@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79fa2e40bd80bb3a4fd8b976aa31a34e4d3c0bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c31146310b8c8b559fcd93d19362679b060cb42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-the-sql-adapter"></a>SQL アダプターを使用して、チャネルを作成します。
 WCF チャネル モデルで、SQL Server データベースに対する操作を呼び出すし、SOAP メッセージを交換することで、結果を受け取る、 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] WCF チャネルを経由します。  
@@ -128,7 +128,7 @@ channel.Open();
   
 2.  受信操作に必要なバインドのプロパティを設定します。 たとえば、**ポーリング**に設定する必要が少なくとも、操作、 **InboundOperationType**、 **PolledDataAvailableStatement**、および**PollingStatement**バインドのプロパティを構成するのには[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server データベースをポーリングします。  
   
-3.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel >**メソッドを**SQLBinding**です。 このメソッドに渡すパラメーターの 1 つとして、SQL Server の接続 URI を指定します。  
+3.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel\>** メソッドを**SQLBinding**です。 このメソッドに渡すパラメーターの 1 つとして、SQL Server の接続 URI を指定します。  
   
 4.  リスナーを開きます。  
   
@@ -168,4 +168,4 @@ channel.Open();
 ```  
   
 ## <a name="see-also"></a>参照  
-[WCF チャネル モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+[WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

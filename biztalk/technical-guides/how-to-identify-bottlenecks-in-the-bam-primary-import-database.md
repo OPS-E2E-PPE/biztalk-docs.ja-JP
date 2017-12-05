@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: decf27009eea6aff0ff5ed9088ae49ef2014b1cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5780c8fcc893126997b37f687f010c5eb62e74c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-identify-bottlenecks-in-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースのボトルネックを特定する方法
 ビジネス アクティビティ監視 (BAM) データベースのボトルネックを特定するには、次の手順を実行します。  
@@ -25,9 +25,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  SQL エージェント サービスが実行されていることを確認します。  
   
-3.  OLAP 分析が構成されている場合ことを確認、bam_an _\<activityname > ジョブが定期的に実行します。  
+3.  OLAP 分析が構成されている場合ことを確認、bam_an _\<activityname\>ジョブが定期的に実行します。  
   
-4.  確認する bam_dm _\<activityname > (データ管理) ジョブを定期的に実行するようにスケジュールします。  
+4.  確認する bam_dm _\<activityname\> (データ管理) ジョブを定期的に実行するようにスケジュールします。  
   
     > [!NOTE]  
     >  使用率が高いシナリオの BAM データベースのアクティビティ内の BizTalk Server の全体的なパフォーマンスが低下する可能性が他の BizTalk Server データベースのパフォーマンスに影響します。 ここでは、次の操作を実行を検討してください。  

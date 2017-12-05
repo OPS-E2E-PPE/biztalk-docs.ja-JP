@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6262b87f304a27b36ed1d7bc6a15b5e681331be3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f6e8b625bcc3accbefda193c52459616691c265
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a>MQSAgent COM + 構成ウィザードの使用
 MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケーション (MQSeries コンポーネント) 部分である MQSAgent を構成します。 このウィザードでは、コンポーネントのアプリケーション ID、およびロール名とそのロールに含めるユーザーを設定します。 MQSAgent COM + 構成ウィザードを使用して作成される MQSAgent COM + コンポーネントの名前は**MQSAgent2**です。  
@@ -30,7 +30,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
 >  MQSAgent COM+ アプリケーションは、64 ビット版の Windows サーバーでサポートされています。 WOW64 の下で 32 ビット プロセスとして実行されます。 64 ビット版の Windows Server で実行されている [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ベースのコンピューターは、MQSAgent がインストールされているリモートの 32 ビット コンピューターと通信できます。  
   
 > [!NOTE]
->  MQSeries エージェントと MQSAgent COM + 構成ウィザードの実行可能ファイル**MQSConfigWiz.exe**に BizTalk Server 2009 からアップグレードする場合はインストールされません[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]です。 アップグレードした後[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]から BizTalk Server 2009 のセットアップを再実行、選択、**変更**オプション、およびこれらのコンポーネントをインストールする追加のソフトウェア [MQSeries エージェント] を選択します。  
+>  MQSeries エージェントと MQSAgent COM + 構成ウィザードの実行可能ファイル**MQSConfigWiz.exe** BizTalk Server 2009 から BizTalk Server までアップグレードする場合はインストールされません。 セットアップを再実行して BizTalk Server 2009 から BizTalk Server までアップグレードした後は、選択、**変更**オプション、およびこれらのコンポーネントをインストールする追加のソフトウェア [MQSeries エージェント] を選択します。  
   
 ## <a name="to-set-the-application-identity"></a>アプリケーション ID を設定するには  
   
@@ -60,11 +60,11 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
 >  ロールには、アダプターにアクセスする必要のあるアカウントのみを追加してください。  
   
 ## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a>Windows Server 2008 コンピューター上の MSDTC のセキュリティ構成を [認証を必要としない] に設定するには  
- MQSAgent COM + アプリケーションがインストールされている場合、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]コンピューターと、MQSeries アダプター (と共にインストールされる[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]) にインストールされて、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター、MSDTC セキュリティ構成を[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]にコンピューターを設定する必要があります**認証を必要としない**です。 MSDTC のセキュリティ構成を [認証を必要としない] に設定するには、次の手順を実行します。  
+ MQSAgent COM + アプリケーションがインストールされている場合、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]でコンピューターと、MQSeries アダプター (BizTalk Server と共にインストールされます) がインストールされている、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター、MSDTC セキュリティ構成を[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]にコンピューターを設定する必要があります**認証を必要としない**です。 MSDTC のセキュリティ構成を [認証を必要としない] に設定するには、次の手順を実行します。  
   
 1.  をクリックして**開始**] をクリックし、**コントロール パネルの [**です。  
   
-2.  ダブルクリックして**管理ツール**です。  
+2.  **［管理ツール］** をダブルクリックします。  
   
 3.  ダブルクリックして**コンポーネント サービス**を起動する、**コンポーネント サービス**管理インターフェイスです。  
   
@@ -87,7 +87,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
   
     -   をクリックして**開始**] をクリックし、**コントロール パネルの [**です。  
   
-    -   ダブルクリックして**管理ツール**です。  
+    -   **［管理ツール］** をダブルクリックします。  
   
     -   ダブルクリックして**コンポーネント サービス**を起動する、**コンポーネント サービス**管理インターフェイスです。  
   
@@ -124,7 +124,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
   
     -   右クリックし、 **MQSAgent2.MQSAgent.1**コンポーネントとクリック**移動**を表示する、**コンポーネント (s) の移動** ダイアログ ボックス。  
   
-    -   選択**MQSAgent2RunTime** [**の保存先を選択してください**] をクリック**OK**です。  
+    -   選択**MQSAgent2RunTime** **[の保存先を選択してください]** をクリック**OK**です。  
   
     -   次の手順を繰り返して、 **MQSAgent2.MQSBroker.1**と**MQSAgent2.MQSProxy.1**コンポーネントです。  
   

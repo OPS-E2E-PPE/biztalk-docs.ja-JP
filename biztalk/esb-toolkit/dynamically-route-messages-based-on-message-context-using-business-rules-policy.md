@@ -12,15 +12,15 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 717e0180ba92d49751342e00a4d0367832084135
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0d36df10b271d83b1e77f4d7f57d357f4b22033
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-dynamically-route-a-message-based-on-message-context-using-a-business-rules-policy"></a>方法: 動的にビジネス ルール ポリシーを使用して、メッセージ コンテキストに基づいたメッセージをルーティング
 ## <a name="goal"></a>[目標]  
- このセクションを使用して、メッセージ コンテキスト プロパティに基づいて、メッセージのエンドポイントを決定する旅程を作成する方法を示します、[!INCLUDE[prague](../includes/prague-md.md)]ビジネス ルール エンジン (BRE) ポリシーと、ルートを使用して、メッセージ、[!INCLUDE[prague](../includes/prague-md.md)]ファイル アダプター。  
+ このセクションでは、BizTalk Server ビジネス ルール エンジン (BRE) ポリシーを使用して、メッセージ コンテキスト プロパティに基づいて、メッセージのエンドポイントを決定し、BizTalk Server ファイル アダプターを使用してメッセージをルーティングし旅程を作成する方法を示します。  
   
  このトピックでは、次の手順を行います。  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="steps"></a>手順  
  **メッセージ コンテキスト プロパティを使用してメッセージをルーティングする BRE ポリシーを作成するには**  
   
-1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[prague](../includes/prague-md.md)]** 、順にクリック**ビジネス ルール作成ツール**です。  
+1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント**BizTalk Server**、順にクリック**ビジネス ルール作成ツール**です。  
   
 2.  ポリシー エクスプ ローラーで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。 ポリシーに名前**RouteBasedOnMessageType**です。  
   
@@ -55,11 +55,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  ファクト エクスプ ローラーで、展開、 **ESB です。EndPointInfo**ボキャブラリ、展開**バージョン 1.0**、し、ドラッグ、**終点送信トランスポート場所の設定**の定義を**アクション**です。  
   
-6.  をクリックして**\<空の文字列 >**、し、入力**C:\HowTos\Out\NorthAmerica%MessageID%.xml**  
+6.  をクリックして**\<空の文字列\>**、し、入力**C:\HowTos\Out\NorthAmerica%MessageID%.xml**  
   
 7.  ファクト エクスプ ローラーからドラッグして、**設定の終了点送信トランスポートの種類**定義**アクション**です。  
   
-8.  ファクト エクスプ ローラーで、展開、 **ESB です。TansportTypes**ボキャブラリ、展開**バージョン 1.0**、し、ドラッグ、**アダプター プロバイダー**定義**\<空の文字列 >**です。  
+8.  ファクト エクスプ ローラーで、展開、 **ESB です。TansportTypes**ボキャブラリ、展開**バージョン 1.0**、し、ドラッグ、**アダプター プロバイダー**定義**\<空の文字列\>**.  
   
 9. [操作] ウィンドウで、展開、**アダプター プロバイダー**クリックしてドロップダウン リスト、**ファイル**です。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
  **ESB itinerary ドメイン固有言語 (DSL) モデルを作成するには**  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\HowTos\Patterns\Patterns.sln を開きます。  
+1.  Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントし、**追加**、クリックして**新しい行程**です。  
   
@@ -181,12 +181,12 @@ ms.lasthandoff: 09/20/2017
   
 -   [方法: ビジネス ルール ポリシーを使用して、日程を選択](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [方法: メッセージを変換および Itinerary のルーティング先を使用してファイルの場所に、結果のメッセージをルーティング](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [方法: メッセージを変換し、スケジュール ルーティング スリップを利用してファイルの場所に送信する](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [方法: 既知のメッセージの種類のポリシーをルール実装のビジネスを使用してコンテンツ ベース ルーティング](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
+-   [方法: 既知のメッセージ タイプに関するビジネス ルール ポリシーを利用し、コンテンツベースのルーティングを実装する](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
--   [メッセージのルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
+-   [メッセージ ルーティング パターン](../esb-toolkit/message-routing-patterns.md)  
   
--   [動的な解決を使用して、ルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [動的な解決とルーティングを利用する](../esb-toolkit/using-dynamic-resolution-and-routing.md)

@@ -15,14 +15,14 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a813634f2fe03d427ef5d0b14688ecca977f571
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7fc94930ba5ff0851114e36d728ee7f3ffb73ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="testing-your-installation"></a>インストールのテスト
-設定することができます、[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]テスト、エンド ツー エンド チュートリアルを手動で実行して、またはエンド ツー エンド チュートリアル プログラムを実行してインストールします。 プログラムを実行するをクリックするか、 **Launch Tutorial**セットアップ中にボタンをクリックしてしたり、C:\Program files \microsoft BizTalk で EndToEndTutorial.exe を実行\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド チュートリアルフォルダー (インストールと構成を実行している)。 これらの自動化されたアクションのいずれかの操作はチュートリアルを実行して、手動で実行する同じセットアップ手順を実行します。 エンド ツー エンド チュートリアル プログラムは次のとおり  
+設定することができます、[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]テスト、エンド ツー エンド チュートリアルを手動で実行して、またはエンド ツー エンド チュートリアル プログラムを実行してインストールします。 プログラムを実行するをクリックするか、 **Launch Tutorial**セットアップ中にボタンをクリックしてしたり、C:\Program files \microsoft BizTalk で EndToEndTutorial.exe を実行\<バージョン\>HL7\SDK\ のアクセラレータエンド ツー エンド チュートリアル フォルダー (インストールと構成を実行している)。 これらの自動化されたアクションのいずれかの操作はチュートリアルを実行して、手動で実行する同じセットアップ手順を実行します。 エンド ツー エンド チュートリアル プログラムは次のとおり  
   
 -   MSH と確認のスキーマを展開します。  
   
@@ -58,16 +58,16 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-test-your-installation"></a>インストールをテストするには  
   
-1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、 \<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド チュートリアル フォルダーです。  
+1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for HL7\SDK\End エンドツー エンド チュートリアル フォルダーです。  
   
 2.  右クリックし、 **TutorialSampleInstance.txt**ファイルを開き、をクリックして**コピー**です。  
   
-3.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、 \<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7PickUp フォルダーです。  
+3.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_ のアクセラレータBTAHL7PickUp フォルダーです。  
   
 4.  フォルダーを右クリックし、をクリックして**貼り付け**です。  
   
-5.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、 \<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Drop フォルダーです。  
+5.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_ のアクセラレータBTAHL7Drop フォルダーです。  
   
-     かどうか、インストールが正常に処理済みのインスタンスが表示される場合を確認することができます、 **Tutorial_BTAHL7Drop**としてフォルダー \< *Guid*> .txt です。  
+     かどうか、インストールが正常に処理済みのインスタンスが表示される場合を確認することができます、 **Tutorial_BTAHL7Drop**としてフォルダー \< *Guid*\>.txt です。  
   
  次の手順に進む[、チュートリアルを使用する準備](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial2.md)です。

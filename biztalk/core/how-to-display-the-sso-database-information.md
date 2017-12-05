@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1328e6066af0d19c68657728f8dc7777ba62f12d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e834874cb87da598db0bc92e516b58dfe2da9069
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-display-the-sso-database-information"></a>SSO データベース情報を表示する方法
 SSO データベース情報は、MMC スナップインまたはコマンド ライン (ssomanage) ユーティリティを使用して表示できます。  
@@ -39,7 +39,7 @@ SSO データベース情報は、MMC スナップインまたはコマンド �
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ >**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
 3.  型**ssomanage – displaydb**です。  
   
@@ -50,7 +50,7 @@ SSO データベース情報は、MMC スナップインまたはコマンド �
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
   
-2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ >**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
 3.  型**ssomanage – showdb**です。  
   
@@ -61,9 +61,9 @@ SSO データベース情報は、MMC スナップインまたはコマンド �
   
 |プロパティ|値|  
 |--------------|-----------|  
-|SQL Server|**\<SQL Server 名 >**|  
-|シングル サインオン データベース|**\<SQL Server データベース名 >**|  
-|シングル サインオン シークレット サーバー名|**\<シングル サインオン サーバー名 >**|  
+|SQL Server|**\<SQL Server 名\>**|  
+|シングル サインオン データベース|**\<SQL Server データベース名\>**|  
+|シングル サインオン シークレット サーバー名|**\<シングル サインオン サーバーの名前\>**|  
 |シングル サインオン管理者アカウント|ドメイン\アカウント名|  
 |シングル サインオン関連管理者アカウント|ドメイン\アカウント名|  
 |削除したアプリケーションの監査テーブルのサイズ (監査エントリの数)|1,000 (既定値)|  

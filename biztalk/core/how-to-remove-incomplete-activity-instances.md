@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99c2f77b6883b7ffba997551c4121013a4379267
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2809fd4fcc1d94a96b158ffa46c3e217084a905d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-incomplete-activity-instances"></a>不完全なアクティビティ インスタンスを削除する方法
 BAM 定義ファイルを展開すると、定義ファイルで定義された各アクティビティに対し、5 個のテーブルが BAM プライマリ インポート データベースに作成されます。 作成されるテーブルは次のとおりです。  
@@ -75,7 +75,7 @@ BAM 定義ファイルを展開すると、定義ファイルで定義された�
 |@ActivityName nvarchar(128)|削除する不完全なアクティビティ インスタンスの名前を指定します。|  
 |@ActivityId nvarchar(128)|(省略可能) 指定したインスタンス識別子を持つ未解決のインスタンスだけをストアド プロシージャで削除するように指定します。|  
 |@DateThresholddatetime|(省略可能)すべてのアクティブなインスタンスされている古いアクティブなテーブルにあることを指定します (等しくないと古い、古いのみ)、指定された日付よりも削除されます。|  
-|@NewTableExtensionnvarchar (30)|(省略可能) ストアド プロシージャで、指定された拡張子を既存のアクティビティ テーブルに連結して新しいテーブルを 3 つ作成するように指定します。<br /><br /> 結果のテーブルになります。<br /><br /> bam_ActivityName_Active_\<拡張子 ><br /><br /> bam_ActivityName_ActiveRelationships_\<拡張子 ><br /><br /> bam_ActivityName_Continuations_\<拡張子 ><br /><br /> 不完全なインスタンスは、データベースから削除される代わりに、これらの新しいテーブルに移動されます。<br /><br /> これらのテーブルが既に存在する場合は、再利用されます。存在しない場合は作成されます。 **重要:**ストアド プロシージャ、テーブルが既に存在しない場合、これらのスキーマが作成された場合に使用されるものと一致する前提としています。 スキーマが一致しない場合は、ストアド プロシージャはレコードを挿入できず、削除操作が失敗します。|  
+|@NewTableExtensionnvarchar (30)|(省略可能) ストアド プロシージャで、指定された拡張子を既存のアクティビティ テーブルに連結して新しいテーブルを 3 つ作成するように指定します。<br /><br /> 結果のテーブルになります。<br /><br /> bam_ActivityName_Active_\<拡張機能\><br /><br /> bam_ActivityName_ActiveRelationships_\<拡張機能\><br /><br /> bam_ActivityName_Continuations_\<拡張機能\><br /><br /> 不完全なインスタンスは、データベースから削除される代わりに、これらの新しいテーブルに移動されます。<br /><br /> これらのテーブルが既に存在する場合は、再利用されます。存在しない場合は作成されます。 **重要:**ストアド プロシージャ、テーブルが既に存在しない場合、これらのスキーマが作成された場合に使用されるものと一致する前提としています。 スキーマが一致しない場合は、ストアド プロシージャはレコードを挿入できず、削除操作が失敗します。|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   

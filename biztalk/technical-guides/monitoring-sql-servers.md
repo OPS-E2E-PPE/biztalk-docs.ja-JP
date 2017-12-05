@@ -1,7 +1,8 @@
 ---
 title: "SQL サーバーの監視 |Microsoft ドキュメント"
+description: "SQL Server 管理パックを使用して、パフォーマンス、使用可能な領域、データベースの構成、ブロックされるプロセス、接続、失敗した SQL エージェント ジョブ、レプリケーション、および BizTalk Server の詳細を確認するには"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/29/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,20 +13,22 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ac37905574090fb346aeee198ea8e92a0f436f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1d0e3ea9ecb9d9d910549790568d5891b72d06de
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-sql-servers"></a>SQL サーバーの監視
-Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]を主体的および対応の監視管理パックの提供[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]と[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]エンタープライズ環境でします。 可用性と構成の監視、パフォーマンス データの収集、および既定のしきい値は、エンタープライズ レベルの監視に構築されます。 ローカルおよびリモートの両方の接続性チェックにより、データベースの可用性を確認してください。  
+
+## <a name="use-sql-management-pack"></a>SQL 管理パックを使用します。
+Microsoft SQL Server 管理パックを主体的および対応のエンタープライズ環境での SQL Server の監視を提供します。 可用性と構成の監視、パフォーマンス データの収集、および既定のしきい値は、エンタープライズ レベルの監視に構築されます。 ローカルおよびリモートの両方の接続性チェックにより、データベースの可用性を確認してください。  
   
- 組み込まれた専門知識と、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理パックは、積極的に管理できる[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、し、重大になる前に、問題を識別します。 この管理パックは、セキュリティ、可用性、およびのパフォーマンスが向上して[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インフラストラクチャです。  
+ SQL Server 管理パックに組み込まれた専門知識と事前に SQL サーバーを管理し、重大になる前に、問題を特定することがことができます。 この管理パックは、セキュリティ、可用性、および SQL Server インフラストラクチャのパフォーマンスが向上します。  
   
- Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]パックに付属している管理パック ガイド、管理パックの内容と展開方法について説明します。 管理パックの機能は次のとおりです。  
+ パックに付属している Microsoft SQL Server 管理パック ガイドでは、管理パックの内容、および展開方法を説明します。 管理パックの機能は次のとおりです。  
   
--   などの含まれるサービスの状態を監視[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、Notification Services のレポート サーバー、SQL エージェント  
+-   SQL Server、SQL エージェント、レポート サーバー、Notification Services などの含まれるサービスの状態の監視  
   
 -   データベースの状態の監視  
   
@@ -33,7 +36,7 @@ Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.m
   
 -   確保データベースが正しく構成されています。  
   
--   クライアントに接続できることを確認します[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]  
+-   クライアントは、SQL Server に接続できることを確認します。  
   
 -   ブロックされたプロセスを監視します。  
   
@@ -43,10 +46,10 @@ Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.m
   
 -   データベース ミラーリングの状態を監視します。  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="next-steps"></a>次の手順
   
--   [SQL Server エージェント ジョブおよびデータベースの監視](../technical-guides/monitoring-sql-server-agent-jobs-and-databases.md)  
+-   [SQL Server エージェント ジョブとデータベースの監視](../technical-guides/monitoring-sql-server-agent-jobs-and-databases.md)  
   
--   [カスタマイズした監視の BizTalk Server データベースをマークする方法](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
+-   [カスタマイズした監視用に BizTalk Server データベースをマークする方法](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
   
--   [BizTalk Server データベースを監視します。](../technical-guides/monitor-the-biztalk-server-databases.md)
+-   [BizTalk Server データベースの監視](../technical-guides/monitor-the-biztalk-server-databases.md)

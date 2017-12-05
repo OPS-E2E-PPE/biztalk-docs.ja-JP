@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a9edb9a169d35a3f4709a8896ef3adfe404e775
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 132c269d347f67cbad3038bcbbb8e62d29112b6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-business-service-methods-with-integration-objects-using-the-siebel-adapter"></a>Siebel アダプターを使用して統合オブジェクトでのビジネス サービス メソッドを呼び出す
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアント統合オブジェクトを使用するビジネス サービス メソッドを呼び出すことができるようにします。 これらのビジネス サービス通常 IN、OUT も IN OUT パラメーター「階層」データの型を送信または統合オブジェクト データを受信します。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 -   **統合オブジェクトのスキーマに準拠した XML メッセージを作成する**です。 ' サンプル アカウント統合オブジェクトに対して生成されたサンプルの XML メッセージは、ようになります。  
   
     ```  
-    \<?xml version="1.0" encoding="UTF-16"?>  
+    <?xml version="1.0" encoding="UTF-16"?>  
     <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
       <ListOfSampleAccount>  
         <Account>  
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
       <InsertRequestRecord />   
       <InsertInOutRecord>  
         <SiebelMessage xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">  
-          <![CDATA[ \<?xml version="1.0" encoding="UTF-16"?>  
+          <![CDATA[ <?xml version="1.0" encoding="UTF-16"?>  
             <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
               <ListOfSampleAccount>  
                 <Account>  
@@ -97,7 +97,7 @@ ms.lasthandoff: 09/20/2017
      上記の要求メッセージの Siebel からの応答には、次のようになります。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <InsertResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter/Operation">  
       <InsertResult>  
         <ErrorCode xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">0x0</ErrorCode>   
@@ -110,7 +110,7 @@ ms.lasthandoff: 09/20/2017
       </InsertResult>  
       <InsertInOutRecord>  
         <SiebelMessage xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">  
-          <![CDATA[ \<?xml version="1.0" encoding="UTF-16"?>  
+          <![CDATA[ <?xml version="1.0" encoding="UTF-16"?>  
             <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
               <ListOfSampleAccount>  
                 <Account>  
@@ -130,4 +130,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
 [Siebel アダプターを使用して BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-siebel/develop-biztalk-applications-using-the-siebel-adapter.md)    
-[Siebel アプリケーションを開発します。](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)
+[Siebel アプリケーションの開発](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)

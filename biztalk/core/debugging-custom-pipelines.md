@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a0f701518714aaf28d0ae07867c8c490c140fa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be0c8714f0349ad415beca010795d2cb0b57aabb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="debugging-custom-pipelines"></a>カスタム パイプラインのデバッグ
 カスタム パイプラインでメッセージ処理が失敗するときは、ソース レベルのデバッグを使用して、問題の特定と修正を行うことができます。 ソース レベルのデバッグは、BTSNTSVC.exe (カスタム パイプラインを配置している場合) または Pipeline.exe (スタンドアロン パイプライン ツールを使用している場合) にアタッチすることにより、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] デバッガーを使用して行います。  
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  カスタム パイプライン プロジェクトのソリューションを [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に読み込みます。  
   
-2.  ソリューションの出力パスを変更する*\<インストール フォルダー >*\Pipeline Components です。 ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー >*\パイプライン コンポーネント ディレクトリです。  
+2.  ソリューションの出力パスを変更する*\<インストール フォルダー\>*\Pipeline Components です。 ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー\>* \Pipeline components ディレクトリ。  
   
-3.  内から[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]をクリックして、ソリューションをデプロイ**ビルド**& #124 です。**展開**です。  
+3.  内から[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]をクリックして、ソリューションをデプロイ**ビルド**&#124;です。**展開**です。  
   
 4.  パイプラインを実行するホスト インスタンスを再起動します。 BizTalk Server 管理コンソールを使用してパイプラインを実行するホスト インスタンスに移動し、ホスト インスタンスを右クリックし、をクリックして**再起動**です。  
   
-5.  アタッチ、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]デバッガーを BTSNTSVC.exe にします。 クリックしてこれ行う**デバッグ**& #124 です。**プロセスにアタッチする**を すべてのセッションのプロセス表示をクリックし、BTSNTSVC.exe をダブルクリックします。  
+5.  アタッチ、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]デバッガーを BTSNTSVC.exe にします。 クリックしてこれ行う**デバッグ**&#124;です。**プロセスにアタッチする**を すべてのセッションのプロセス表示をクリックし、BTSNTSVC.exe をダブルクリックします。  
   
 6.  ブレークポイントを設定します。  
   
@@ -56,9 +56,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  カスタム パイプライン プロジェクトのソリューションを [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に読み込みます。  
   
-2.  ソリューションの出力パスを変更する*\<インストール フォルダー >*\Pipeline Components です。 ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー >*\パイプライン コンポーネント ディレクトリです。  
+2.  ソリューションの出力パスを変更する*\<インストール フォルダー\>*\Pipeline Components です。 ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー\>* \Pipeline components ディレクトリ。  
   
-3.  ソリューションの開始アクションを変更します。 ソリューション エクスプ ローラーでプロジェクトを右クリックし、デバッグ タブをクリックして、外部プログラムの開始 をクリックし をクリック**しています.** 移動して*\<インストール フォルダー >*\SDK\Utilities\PipelineTools Pipeline.exe を選択します。 [開始オプション]、コンポーネントの適切なコマンドライン引数を入力します。 Pipeline.exe の詳細については、次を参照してください。[パイプライン ツール](../core/pipeline-tools.md)です。 一般的な構成では、パイプラインとサンプル ファイルを指定します。  
+3.  ソリューションの開始アクションを変更します。 ソリューション エクスプ ローラーでプロジェクトを右クリックし、デバッグ タブをクリックして、外部プログラムの開始 をクリックし をクリック**しています.** 移動して*\<インストール フォルダー\>*\SDK\Utilities\PipelineTools Pipeline.exe を選択します。 [開始オプション]、コンポーネントの適切なコマンドライン引数を入力します。 Pipeline.exe の詳細については、次を参照してください。[パイプライン ツール](../core/pipeline-tools.md)です。 一般的な構成では、パイプラインとサンプル ファイルを指定します。  
   
     ```  
     <Path>\YourPipeline.btp -d <Path>\YourTestFile.txt -c  

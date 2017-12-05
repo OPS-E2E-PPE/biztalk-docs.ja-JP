@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0914a41d83f7838211c9fff39e4d0e96b09a6595
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c80e3a5126a56b945b2aa7b53aec71fbe83d678a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-an-assembly-in-the-gac"></a>GAC にアセンブリをインストールする方法
 手動でインストールしに付属する Gacutil ツールを使用して、グローバル アセンブリ キャッシュ (GAC) 内の BizTalk アセンブリをアンインストール[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  
@@ -62,13 +62,13 @@ GAC への書き込み権限を持つアカウントでサインインします�
   
 2.  次のように入力します。  
   
-     `gacutil /u`\<*完全修飾アセンブリ名*>  
+     `gacutil /u`\<*完全修飾アセンブリ名*\>  
   
      たとえば、次のように入力します。  
      `gacutil /u "hello,Version=1.0.0.0, Culture=neutral, PublicKeyToken=0123456789ABCDEF"`
        
 ## <a name="see-also"></a>参照  
- [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開します。](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)  
+ [Visual Studio から BizTalk アプリケーションへの BizTalk アセンブリの展開](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)  
 [BizTalk アプリケーションを展開解除](../core/undeploying-biztalk-applications.md)   
  [BizTalk アプリケーションをアンインストールする方法](../core/how-to-uninstall-a-biztalk-application.md)   
  [BizTalk グループから BizTalk アプリケーションを削除する方法](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)

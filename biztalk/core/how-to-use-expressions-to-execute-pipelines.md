@@ -31,11 +31,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5a6090e0d7322a0e5b10d13016c073b73074392
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08f5933d3592d391087196f31185e279c40c4836
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-expressions-to-execute-pipelines"></a>パイプラインを実行する式の使用方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、オーケストレーション内からパイプラインを同期的に呼び出すことができます。 これにより、オーケストレーションで、パイプライン (送信または受信) にカプセル化されたメッセージ処理をデータの本体に対して利用することができます。そのデータをメッセージング インフラストラクチャに送信する必要はありません。  
@@ -152,9 +152,9 @@ ms.lasthandoff: 09/20/2017
   
  **メッセージ**のプロパティ、 **XLANGPipelineManagerException**クラスには、パイプラインの実行エラーの詳細が含まれています。 詳細は次のような形式になっています。  
   
--   パイプラインを実行中にエラーが発生しました\<パイプラインの種類 > です。  エラーの詳細\<形式のエラー メッセージ >。  
+-   パイプラインを実行中にエラーが発生しました\<の種類のパイプライン\>です。  エラーの詳細\<形式のエラー メッセージ\>です。  
   
- このメッセージに\<パイプラインの種類 > のパイプライン クラスの名前を指定し、\<形式のエラー メッセージ > パイプラインの実行中に発生した特定のエラーの説明を示します。  
+ このメッセージに\<パイプラインの種類\>のパイプライン クラスの名前を指定し、\<形式のエラー メッセージ\>パイプラインの実行中に発生した特定のエラーの説明を示します。  
   
  たとえば、オーケストレーションが受信パイプラインを呼び出すし、パイプラインのコンポーネントのいずれも、メッセージの値が認識されるため、パイプラインの実行が失敗した場合、 **XLANGPipelineManagerException**のプロパティにはなります。  
   
@@ -167,5 +167,5 @@ ms.lasthandoff: 09/20/2017
   
 |XLANGPipelineManagerException のプロパティ|値|  
 |--------------------------------------------|-----------|  
-|メッセージ|送信パイプライン "MyPipelines.SendPipeline" を実行中にエラーが発生しました。  エラーの詳細:"ドキュメントの検証に失敗しました:"、\<要素名 > 要素が正しくありません - 値\<要素の値 > が正しくないデータ型 'String' - Pattern 制約が失敗しました""。|  
+|メッセージ|送信パイプライン "MyPipelines.SendPipeline" を実行中にエラーが発生しました。  エラーの詳細:"ドキュメントの検証に失敗しました:"、\<要素名\>要素が正しくありません - 値\<要素の値\>が正しくないデータ型 'String' - Pattern 制約が失敗しました""。|  
 |コンポーネント|“Microsoft.BizTalk.Component.XmlValidator”|

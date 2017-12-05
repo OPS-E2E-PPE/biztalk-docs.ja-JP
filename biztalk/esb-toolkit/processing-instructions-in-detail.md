@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 532721c347189f2e3d4db9e57b2afc3aa45b76db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cf0a726d2c8c4f6242ed19a7dcd1e5430775e63
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="processing-instructions-in-detail"></a>処理命令の詳細
-このトピックでは、形式と旅程処理に必要ないくつかのコンテキスト プロパティを定義するシステム Properties.xsd プロパティ スキーマの構造について説明します。 メッセージが受信され、を通して処理されたときに、これらのプロパティが昇格させた[!INCLUDE[prague](../includes/prague-md.md)]; パイプラインが BizTalk Server コンポーネントにアクセスできるため、昇格させたプロパティは、します。 次のプロパティは、システム Properties.xsd プロパティ スキーマで定義されます。  
+このトピックでは、形式と旅程処理に必要ないくつかのコンテキスト プロパティを定義するシステム Properties.xsd プロパティ スキーマの構造について説明します。 メッセージが受信され、BizTalk Server パイプライン; を通して処理されたときに、これらのプロパティは昇格されます。昇格させたプロパティがいるため、BizTalk Server コンポーネントを利用可能です。 次のプロパティは、システム Properties.xsd プロパティ スキーマで定義されます。  
   
 -   **ItineraryHeader です。** このプロパティには、すべての itinerary 情報および itinerary ステップの順序で呼び出される itinerary サービスの一覧が含まれています。 行程 API は、このプロパティを内部的に使用します。  
   

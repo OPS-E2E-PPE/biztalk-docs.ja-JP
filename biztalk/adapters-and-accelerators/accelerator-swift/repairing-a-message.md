@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4071fd04b89681f9f7d6948798dd665b96a0c1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4489e463257f811fe2c71efea49880940751c66a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="repairing-a-message"></a>メッセージの修復
 このセクションでは、検証が失敗したメッセージを修復する方法について説明します。  
@@ -28,9 +28,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  [ホーム] ウィンドウ**ドキュメント**です。  
   
-3.  ドキュメント ウィンドウで **ドキュメント ライブラリ**をクリックして  **\<*部門名*>**_*** * 修理会社。  
+3.  ドキュメント ウィンドウで **ドキュメント ライブラリ**をクリックして  **\<*部門名*\>**_*** * 修理会社。  
   
-4.  \<*部門名*> _Repair ウィンドウで、をクリックして**受信トレイ**です。  
+4.  \<*部門名*\>_Repair ウィンドウで、をクリックして**受信トレイ**です。  
   
 5.  受信トレイ ウィンドウで、メッセージのタイトルにポイント メッセージのタイトルの右側にある矢印をクリックし、をクリックして**Microsoft Office InfoPath で編集**です。  
   
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
   
 16. 閉じる、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]ウィンドウです。  
   
-17. サイトの MRSR クリックして**ドキュメント**です。 クリックした場合は**Accept**手順 11 で変更を受け入れるようにいることを確認、 *\<部門名 >*_ReKeyVerify ドキュメント ライブラリには、修復するメッセージが含まれています。 クリックした場合は**拒否**手順 11 で変更を拒否する A4SWIFT_Outbox ドキュメント ライブラリに変更が、メッセージが含まれていることを確認します。
+17. サイトの MRSR クリックして**ドキュメント**です。 クリックした場合は**Accept**手順 11 で変更を受け入れるようにいることを確認、 *\<部門名\>*_ReKeyVerify ドキュメント ライブラリには、修復するメッセージが含まれています。 クリックした場合は**拒否**手順 11 で変更を拒否する A4SWIFT_Outbox ドキュメント ライブラリに変更が、メッセージが含まれていることを確認します。

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54cd439e180365010ec8881ce7165022dd7826d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a0789853ba253d7d8e51c34a6c1d1ce64829f8d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="an-exception-has-occurred-during-the-execution-of-the-upgrade-batch-orchestration"></a>アップグレード バッチ オーケストレーションの実行中に例外が発生しました
 ## <a name="details"></a>詳細  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|イベント ソース|BizTalk Server EDI|  
 |コンポーネント|バッチ処理エンジン|  
 |シンボル名|ExceptionOccuredDuringUpgrade|  
 |メッセージ テキスト|アップグレード バッチ オーケストレーションの実行中に例外が発生しました。 ErrorMessage = {0}|  

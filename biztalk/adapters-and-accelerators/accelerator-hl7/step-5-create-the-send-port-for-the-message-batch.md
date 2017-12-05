@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3176814481d98a7aa0e1e48abad9f20e887b17ab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a5749166c8a9b34d5e5a04849c4179ac4427201c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-5-create-the-send-port-for-the-message-batch"></a>手順 5: メッセージのバッチの送信ポートを作成します。
 この手順では、送信先パーティを作成するメッセージのバッチを配信する送信ポートを作成します。 これは、ファイル アダプターの種類に静的な一方向のポートです。 ここで、変換先 (\Tutorial_BatchMsgDrop) のファイルのフォルダーを指定する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチ ファイルが削除されます。 ポートで送信するメッセージのバッチの種類を示すポートのフィルターを定義するとします。 フィルターは、Tutorial_BatchDest と OutboundBatch のメッセージの種類の変換先を指定します。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-the-send-port-for-the-message-batch"></a>メッセージ バッチの送信ポートを作成するには  
   
-1.  [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]管理コンソールを右クリックして**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
+1.  BizTalk Server 管理コンソールで、右クリック**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート**です。  
   
 2.  [送信ポートのプロパティ] ダイアログ ボックスで、次の操作を行います。  
   
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**コピー先フォルダー**|参照  **\<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchMsgDrop * *。 これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチを含んでいるファイルを記述します。|  
+    |**コピー先フォルダー**|参照  **\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_ のアクセラレータ* * BatchMsgDrop。 これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチを含んでいるファイルを記述します。|  
     |**ファイル名**|型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
     |**[コピー モード]**|選択**新規作成**です。|  
   
@@ -66,11 +66,11 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-associate-the-send-port-with-the-destination-party"></a>送信先パーティに送信ポートを関連付ける  
   
-1.  [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]管理コンソールで、展開**パーティ**をクリックして**Tutorial_BatchDest**、し、右クリック**プロパティ**です。  
+1.  BizTalk Server 管理コンソールで、展開**パーティ**をクリックして**Tutorial_BatchDest**、し、右クリック**プロパティ**です。  
   
 2.  [パーティのプロパティ] ダイアログ ボックスで、**送信ポート**コンソール ツリーでします。  選択**Tutorial_BatchDest**クリックしてドロップダウン リストから**OK**です。  
   
     > [!NOTE]
-    >  同時実行制御違反が発生した場合中に、 **Tutorial_DestBatch**パーティの更新中で、[ **OK** ] ダイアログ ボックスを閉じます。 管理コンソールで、右クリック**BizTalk グループ**、 をクリックして**更新**、手順 1. と 2. を繰り返します。  
+    >  同時実行制御違反が発生した場合中に、 **Tutorial_DestBatch**パーティの更新中で、**[OK]** ダイアログ ボックスを閉じます。 管理コンソールで、右クリック**BizTalk グループ**、 をクリックして**更新**、手順 1. と 2. を繰り返します。  
   
  進みます[手順 6: 受信確認のバッチの送信ポートを作成する](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)です。

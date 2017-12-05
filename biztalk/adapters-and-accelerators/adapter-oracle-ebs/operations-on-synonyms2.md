@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e4e833b05609d3889c30eac39a9285b09c63b68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df5f6e797e59e79ed275fb94217d94425e456e85
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-synonyms"></a>シノニムに対する操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]シノニムに対して操作を実行することができます。 シノニムは、エイリアスまたはデータベース オブジェクト (テーブル、ビュー、ストアド プロシージャ、関数、およびパッケージ) などのフレンドリ名です。 Oracle でのシノニムについての詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)です。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
  内のそれぞれの基になるアーティファクトと共にこれらの成果物の各シノニムが公開されている、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 たとえば、**テーブル**ノードの下、**ビューのスキーマに基づく**スキーマで、データベース テーブルとテーブルのすべての類義語が表示されます、**ビュー**ノードの下、**ビューのスキーマに基づく**しスキーマで、データベース ビューとビューのすべての類義語が表示されます。  
   
--   シノニムはテーブルおよびビューの作成を同じ操作は、基になるテーブル、ビューそれぞれ公開されます。 たとえば、含める場合は、基になるテーブルとビューの LOB 列、テーブルとビューのシノニムもを公開、Read_\<LOBColName > と Update_\<LOBColName > テーブルのシノニムと Read_operations\<LOBColName > ビュー シノニムを操作します。  
+-   シノニムはテーブルおよびビューの作成を同じ操作は、基になるテーブル、ビューそれぞれ公開されます。 たとえば、含める場合は、基になるテーブルとビューの LOB 列、テーブルとビューのシノニムもを公開、Read_\<LOBColName\>と Update_\<LOBColName\>テーブルのシノニムの操作Read_\<LOBColName\>ビュー シノニムを操作します。  
   
 -   ストアド プロシージャ、関数、およびパッケージで作成されたシノニムのシノニムは、それぞれの基になるストアド プロシージャ、関数、およびスキーマ内のパッケージと共に操作として公開されます。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b09cc02f8f43b589da821924cfdd38bec52160e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa05cf28e267e84dd73ad1a3ffd753ee89febb71
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a>SQL アダプターを使用してユーザー定義の型とテーブルとビューでの操作
 使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]テーブルまたはユーザー定義型 (Udt) 列を含むビューの操作を実行します。 標準のテーブルの操作 (Insert、Update、Delete、および選択) に UDT 型の列にデータを読み書きするを使用することができます。 このようなテーブルでストアド プロシージャと関数を実行することもできます。 ただし、UDT 列を含むテーブルを操作するために、アダプターを使用する前に、特定のタスクを実行する必要があります。 これらのタスクを実行すると、アダプターを使用できます。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     |UDT 型|アセンブリの場所|  
     |--------------|----------------------------|  
     |たとえば、Geography の SQL Server に、Udt が付属|ようにことを確認して Microsoft.SqlServer.Types.dll は GAC に追加してください。<br />-確認 SqlServerSpatial.dll は System32 フォルダーで使用できます。<br /><br /> SQL Server セットアップを実行しを選択すると、コンピューターにこれらの Dll をインストールできます**管理ツール-基本**と**管理ツール-完全**で、**機能の選択**ウィザードのページです。|  
-    |SQL Server に付属していないが、ユーザーが定義した Udt|Udt のそれぞれのアセンブリを 利用できるように、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]インストール場所。 [!INCLUDE[prague](../../includes/prague-md.md)]、通常、これは\<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]です。|  
+    |SQL Server に付属していないが、ユーザーが定義した Udt|Udt のそれぞれのアセンブリを 利用できるように、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]インストール場所。 BizTalk server では、通常、これは\<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。|  
   
 -   **使用して、操作を実行するときに[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]**  
   

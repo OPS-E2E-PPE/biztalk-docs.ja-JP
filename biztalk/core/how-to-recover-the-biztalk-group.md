@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23cd2a6550263f707531101db743a6ecdef39e5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: deaf3ddae7d7351d53c5cd46b7d48633e0271a3d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-the-biztalk-group"></a>BizTalk グループを復旧する方法
 システムの復旧処理では、BizTalk Server を既存の BizTalk グループに再度加える必要があります。  
@@ -32,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  コマンド プロンプトで、次のように入力します。  
   
-     **RestoreConfig.vbe***\<SavedConfigXML >*   
+     **RestoreConfig.vbe***\<SavedConfigXML  \>*  
   
-     ここで *\<SavedConfigXML >*は完全なパスと保存されている構成ファイルのファイル名。  
+     ここで *\<SavedConfigXML\>* は完全なパスと保存されている構成ファイルのファイル名。  
   
      上記の操作でエラーが発生することはほとんどありません。  
   
@@ -52,9 +52,9 @@ ms.lasthandoff: 09/20/2017
   
 3.  詳細ウィンドウで、次のように選択します。**既存の BizTalk グループに参加**、し、適切なリモート BizTalk 管理 (BizTalkMgmtDb) データベースを指定します。  
   
-4.  [**構成の適用**] をクリックします。  
+4.  **[構成の適用]** をクリックします。  
   
 5.  をクリックして**ファイル**、クリックして**終了**です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server を実行しているコンピューターの回復](../core/recovering-a-computer-running-biztalk-server.md)
+ [BizTalk Server を実行しているコンピューターの復旧](../core/recovering-a-computer-running-biztalk-server.md)

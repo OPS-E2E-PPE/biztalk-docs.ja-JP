@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f6000c95b94570b5f058073537fa926fd1651c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42adf8f614f124c9b17597a44cdaaba9d7ed4f93
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-partitioned-view-in-the-archiving-database"></a>アーカイブ データベースでのパーティション ビューの作成
 BAM データ保守パッケージ (BAM_DM_`<activity name>`) を実行すると、BAM プライマリ インポート データベースの各パーティションが BAM アーカイブ データベースの個別のテーブルにコピーされます。 アーカイブ データベースを接続解除した後、クエリを実行するために再接続する場合、クエリでデータを検索するのが困難になります。  
@@ -40,7 +40,7 @@ BAM データ保守パッケージ (BAM_DM_`<activity name>`) を実行すると
   
 3.  **クエリ** メニューのをポイント**結果に** をクリックし、**結果をテキスト**です。  
   
-4.  次の SQL スクリプトをクエリ ウィンドウにコピーします。 置換\<アクティビティ名 >、アクティビティ名、および置換`<view type>`いずれかで**インスタンス**のインスタンスを表示または**リレーションシップ**リレーションシップ ビューの場合。  
+4.  次の SQL スクリプトをクエリ ウィンドウにコピーします。 置き換える\<アクティビティ名\>アクティビティ名、および置換`<view type>`いずれかで**インスタンス**のインスタンスを表示または**リレーションシップ**リレーションシップ ビューの場合。  
   
     ```  
     set nocount on  

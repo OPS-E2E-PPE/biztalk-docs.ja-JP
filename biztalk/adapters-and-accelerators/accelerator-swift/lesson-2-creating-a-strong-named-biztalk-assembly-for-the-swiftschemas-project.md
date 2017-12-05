@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28afb0b029924a49dfd9a1bff87c5c847157d669
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a8ff979c7b6915f53ebc7144cf0774ab1ffb779a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成します。
 このレッスンでは、BizTalk アセンブリのコンパイルし、展開の基になる、厳密な名前を作成します。 厳密な名前のアセンブリには、いくつかのセキュリティの利点があります。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  Visual Studio コマンド プロンプトを起動します。  
   
-2.  Visual Studio コマンド プロンプトを参照、 \<*ドライブ*>: \labs フォルダーです。  
+2.  Visual Studio コマンド プロンプトを参照、 \<*ドライブ*\>: \labs フォルダーです。  
   
 3.  コマンド プロンプトで次のように入力します。 **sn – k swift.snk**、ENTER キーを押します。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  アセンブリのプロパティと右側のペインで下へスクロールして、**厳密な名前**セクションで、の右側に**アセンブリ キー ファイル**です。 省略記号ボタンをクリックします。  
   
-7.  アセンブリ キー ファイル ダイアログ ボックスでを参照  **\<*ドライブ*: > \labs** です。  
+7.  アセンブリ キー ファイル ダイアログ ボックスでを参照  **\<*ドライブ*:\>\labs** です。  
   
 8.  選択、 **swift.snk**クリックしてファイルをキー ファイルとして**開く**です。  
   

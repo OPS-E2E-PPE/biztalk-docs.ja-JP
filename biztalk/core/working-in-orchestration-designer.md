@@ -22,11 +22,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 512dc85fb1599bdaa77fe2550390ec2ce6954643
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 52eb574f9f6b55b784357ff03c05ccb23774fecb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-in-orchestration-designer"></a>オーケストレーション デザイナーの操作
 BizTalk プロジェクトを起動すると、新しいオーケストレーションを作成したり、既存のオーケストレーションをプロジェクトに追加したりできるようになります。 オーケストレーションの作成と保存、プロジェクトへの既存のオーケストレーションの追加や削除、オーケストレーションの名前の変更、およびオーケストレーションのプロパティの設定については、次の手順を参照してください。  
@@ -63,7 +63,7 @@ BizTalk プロジェクトを起動すると、新しいオーケストレーシ
   
 ### <a name="to-save-an-orchestration"></a>オーケストレーションを保存するには  
   
--   **ファイル** メニューのをクリックして**保存\<オーケストレーション名 >**です。  
+-   **ファイル** メニューのをクリックして**保存\<オーケストレーション名\>**です。  
   
     > [!NOTE]
     >  オーケストレーション ファイルは、utf-8 として保存されます。  スキーマ、マップ、およびパイプラインは、utf-16 として保存されます。  

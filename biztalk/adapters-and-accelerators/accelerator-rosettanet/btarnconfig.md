@@ -17,17 +17,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9221e530266091795260bc7d4fd7e8788e066335
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78ab62a86e97bf70e07629052a850b5aea2cee27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btarnconfig"></a>BtarnConfig
 BtarnConfig ユーティリティは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 環境との間で構成データをインポートまたはエクスポートする場合に使用します。 この構成データは、BTARN 管理コンソールを使用して設定するデータで、プロセス構成設定、ホーム組織、パートナー、アグリーメントなどが含まれます。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk  
+ \<*ドライブ*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk  
   
 ## <a name="running-btarnconfig"></a>BtarnConfig の実行  
   
@@ -35,7 +35,7 @@ BtarnConfig ユーティリティは、[!INCLUDE[btsCoName](../../includes/btsco
   
 1.  コマンド プロンプトを開きます。  
   
-2.  移動\<*ドライブ*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk\\です。  
+2.  移動\<*ドライブ*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\です。  
   
 3.  コマンド プロンプトで次のように入力します。 **BtarnConfig**、適切なスイッチを入力して、ENTER キーを押します。  
   
@@ -62,9 +62,9 @@ BTARNCONFIG /EXPORT <filename>.xml [/H] [/P] [/R] [/A]
   
 |構文|Description|  
 |------------|-----------------|  
-|\<*filename*.xml >|インポートまたはエクスポートするファイルのフルパス。 BTARN が想定パスは、パスを指定しない場合\<*ドライブ*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for rosettanet \sdk です。|  
-|**/インポート**|XML データをインポート\< *filename*.xml > BTARN の構成にします。|  
-|**/エクスポート**|XML データとしての BTARN の構成のエクスポート\< *filename*.xml >。|  
+|\<*filename*.xml\>|インポートまたはエクスポートするファイルのフルパス。 BTARN が想定パスは、パスを指定しない場合\<*ドライブ*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for RosettaNet\SDK です。|  
+|**/インポート**|XML データをインポート\< *filename*.xml\> BTARN の構成にします。|  
+|**/エクスポート**|XML データとしての BTARN の構成のエクスポート\< *filename*.xml\>です。|  
 |**/H**|ホーム組織の構成データをインポートまたはエクスポートします。|  
 |**/P**|取引先の構成データをインポートまたはエクスポートします。|  
 |**/R**|プロセス構成データをインポートまたはエクスポートします。|  

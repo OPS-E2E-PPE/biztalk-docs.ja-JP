@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90208dd99a6b4ccdc8f3f55d2ad019baabe635ad
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1332e41593ede5f7075ec7f5ede1293d79d65594
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用してアダプターを展開解除します。
 コンピューターからアダプターを展開解除するには、ユーザーは、次の 2 つのタスクを実行する必要があります。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  コマンド プロンプトで、次のコマンドを入力します。  
   
-     **gacutil/u** \<*の完全修飾**アセンブリ名*>  
+     **gacutil/u** \<*の完全修飾**アセンブリ名*\>  
   
      このコマンドでは、アセンブリ名は、GAC からアンインストールするアセンブリの名前です。  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 11/07/2017
   
 #### <a name="manually-edit-the-machineconfig-file"></a>Machine.config ファイルを手動で編集します。  
   
-1.  Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、をクリックして**開始**をクリックして**実行**、型**メモ帳\<Windows のインストール パス > \Microsoft.NET\Framework\\< バージョン\>\CONFIG\machine.config**、クリックして**OK**です。  
+1.  Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、をクリックして**開始**をクリックして**実行**、型**メモ帳\<Windows のインストール パス\>\Microsoft.NET\Framework\\< バージョン\>\CONFIG\machine.config**、クリックして**OK**です。  
   
     > [!NOTE]
     >  編集の誤りを防ぐ変更する前に、machine.config ファイルのバックアップを作成します。  

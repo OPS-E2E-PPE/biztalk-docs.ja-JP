@@ -15,11 +15,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48d92d3de6b4ef6b4d541d7f64e0d483feb9c30f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eed1c0c83432417b53debcf523eeec91f85e5c2b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a>Business Rules こんにちは World2 (BizTalk Server サンプル)
 Business Rules こんにちは World2 サンプルのデモで Business Rules こんにちは World1 サンプルを拡張する方法のバージョンに次のように公開、および共有 SQL ルール ストア、およびポリシーを使用して、実行する方法に設定 XML 規則を展開、**ポリシー**オブジェクトビジネス ルール フレームワークによって提供されます。 また、実行中のポリシーを動的に更新する方法についても示します。  
@@ -55,7 +55,7 @@ Business Rules こんにちは World2 サンプルのデモで Business Rules �
 >  この SDK のすべてのサンプルに関する重要な情報は、次を参照してください。[サンプル](../core/samples-in-the-sdk.md)です。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<サンプル パス >*\Business Rules\Business こんにちは World2\ のルール  
+ *\<パスのサンプル\>*\Business Rules\Business こんにちは World2\ のルール  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -74,7 +74,7 @@ Business Rules こんにちは World2 サンプルのデモで Business Rules �
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<サンプル パス >*\Business Rules\Business こんにちは World2\ のルール  
+     *\<パスのサンプル\>*\Business Rules\Business こんにちは World2\ のルール  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -93,7 +93,7 @@ Business Rules こんにちは World2 サンプルのデモで Business Rules �
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<サンプル パス >*\Business Rules\Business こんにちは World2\bin\Debug\ のルール  
+     *\<パスのサンプル\>*\Business Rules\Business こんにちは World2\bin\Debug\ のルール  
   
 2.  コマンド ウィンドウで、このサンプルのファイルの名前を入力します (**BusinessRulesHelloWorld2.exe**)、ENTER キーを押します。  
   
@@ -158,4 +158,4 @@ Press ENTER to continue after updating the policy...
 -   ポリシーのマイナー バージョン番号は、1 になりました。  
   
 ## <a name="see-also"></a>参照  
- [ビジネス ルール (BizTalk Server Samples フォルダ)](../core/business-rules-biztalk-server-samples-folder.md)
+ [ビジネス ルール (BizTalk Server サンプル フォルダー)](../core/business-rules-biztalk-server-samples-folder.md)

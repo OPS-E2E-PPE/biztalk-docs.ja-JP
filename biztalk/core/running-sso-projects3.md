@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2793ead474dc50eb3983d469752d3c03942e73e
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: eb24cbf09686e8e8a3442583f16f7469d0a2f5aa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="running-sso-projects"></a>SSO プロジェクトの実行
 Internet Explorer からシングル サインオン (SSO) のサンプル プロジェクトを実行できます。  
@@ -34,7 +34,7 @@ Internet Explorer からシングル サインオン (SSO) のサンプル プ�
   
 2.  次の URL に移動します。  
   
-     http://localhost/SSODemo/BTSHTTPReceive.dll?\<ns0:method_list_method %20xmlns: ns0 ="http://microsoft.com/exposed/object/object1">\<ns0:method_list_method >\<ns1:method_list %20xmlns: ns1 ="http://microsoft.com/exposed/object">\<ns1:comp_code >\</ns1:comp_code >\<ns1:comp_name >\</ns1:comp_name >\< /ns1:object_1 >\</ns0:method_list >\</ns0:method_list_method >  
+     http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method %20xmlns: ns0 ="http://microsoft.com/exposed/object/object1">< ns0:method_list_method >< ns1:method_list %20xmlns: ns1"http://microsoft.com/exposed/ を =オブジェクト">< ns1:comp_code ></ns1:comp_code >< ns1:comp_name ></ns1:comp_name ></ns1:object_1 ></ns0:method_list ></ns0:method_list_method >  
   
      この場合、資格情報を指定する必要はありません。  
   

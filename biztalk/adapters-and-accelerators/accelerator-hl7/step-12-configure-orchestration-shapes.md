@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7375912c49c431c67c7ff55025cd2821374b87b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f21c373aacc949b95588c66f1243936b15ea9e89
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-12-configure-orchestration-shapes"></a>手順 12: オーケストレーション図形を構成します。
 このステップでは、不十分な構成のスマート タグを削除するためにオーケストレーション図形の構成を完了します。 指定する**DoorbellOutputMessage**最初の変換プロセスの出力として指定する**DoorbellMap.btm**そのプロセスで使用されるマップとして。 指定する**DoorbellFinalMessage** 2 番目の出力と同じプロセスを変換およびその他のフィールドのデータを持つメッセージを拡充する式を追加します。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-configure-orchestration-shapes"></a>オーケストレーション図形を構成するには  
   
-1.  オーケストレーションのデザイン ビュー サーフェイスで[!INCLUDE[vs2012](../../includes/vs2012-md.md)]をクリックして、 **ConstructMessage_1**図形です。  
+1.  Visual Studio のオーケストレーションのデザイン ビュー画面、をクリックして、 **ConstructMessage_1**図形です。  
   
 2.  **プロパティ**ウィンドウで、をクリックして、**構築メッセージ**プロパティを選択**DoorbellOutputMessage**ドロップダウン リストを押してからから**入力**です。  
   
@@ -96,4 +96,4 @@ ms.lasthandoff: 09/20/2017
  進みます[手順 13: を作成し、ポートを構成する](../../adapters-and-accelerators/accelerator-hl7/step-13-create-and-configure-ports.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

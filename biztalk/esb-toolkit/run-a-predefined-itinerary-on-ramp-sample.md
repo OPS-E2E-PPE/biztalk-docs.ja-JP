@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 167d18f0eba624d62b03b3b0a5386fcac04e5b18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38320cc6877815ccbf7b078190a3c2be1c6f74b0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-a-predefined-itinerary-on-ramp-sample"></a>定義済みの Itinerary ランプでサンプルを実行します。
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]実行できる 20 の定義済み行程ユース ケースが含まれています。 これらのリストについては、ユース ケースを参照してください[、サンプル行程シナリオ](../esb-toolkit/the-sample-itinerary-scenarios.md)です。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
     position="0" serviceInstanceId="" />  
 ```  
   
- このオーケストレーション サービス**\<サービス >**要素は図 2 に示すようにフィルターのプロパティを持つ直接バインド オーケストレーションを指定します。 オーケストレーションは、値を持つメッセージのみにサブスクライブしていることを確認**Microsoft.Practices.ESB.Services.Transform**の**ServiceName**コンテキスト プロパティ、値**保留中**の**ServiceState**コンテキスト プロパティ、およびオーケストレーションの値を**ServiceType**コンテキスト プロパティです。  
+ このオーケストレーション サービス**\<サービス\>**要素は図 2 に示すようにフィルターのプロパティを持つ直接バインド オーケストレーションを指定します。 オーケストレーションは、値を持つメッセージのみにサブスクライブしていることを確認**Microsoft.Practices.ESB.Services.Transform**の**ServiceName**コンテキスト プロパティ、値**保留中**の**ServiceState**コンテキスト プロパティ、およびオーケストレーションの値を**ServiceType**コンテキスト プロパティです。  
   
  ![フィルター式](../esb-toolkit/media/ch6-filterexpression.gif "Ch6 FilterExpression")  
   

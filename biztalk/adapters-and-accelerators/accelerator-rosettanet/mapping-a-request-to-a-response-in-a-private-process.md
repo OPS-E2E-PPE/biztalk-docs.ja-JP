@@ -22,11 +22,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bd67be0bbe70794f6fe6f77d388b69660e2d1ef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 966ad6ad752c36be36b4013743eaba3af5434d0a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a>プライベート プロセスで応答する要求のマッピング
 このトピックにプライベート応答側のプロセスで受信した要求メッセージをマップする方法について説明: から、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を応答メッセージを送信できる、応答側パブリック プロセス、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]応答側パブリック プロセス。  
@@ -35,13 +35,13 @@ ms.lasthandoff: 09/20/2017
   
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、応答側プライベート プロセスにマップを追加する際に使用できる次のサンプルが含まれています。  
   
--   [3 a 2 要求 3 a 2 応答へマップのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/3a2-request-to-3a2-response-map-sample.md)  
+-   [3A2 要求から 3A2 応答へのマップ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/3a2-request-to-3a2-response-map-sample.md)  
   
--   [3A4 要求から 3A4 応答のマップ サンプルへ](../../adapters-and-accelerators/accelerator-rosettanet/3a4-request-to-3a4-response-map-sample.md)  
+-   [3A4 要求から 3A4 応答へのマップ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/3a4-request-to-3a4-response-map-sample.md)  
   
--   [ダブル アクション PIPAutomation オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
+-   [ダブルアクション PIPAutomation オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
   
--   [ビジネス ルールを使用して、3A4 プライベート応答側オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
+-   [ビジネス ルールを使用した 3A4 プライベート レスポンダー オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
   
 ### <a name="to-create-the-map"></a>マップを作成するには、次の操作を行います。  
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 9. BizTalk 型の選択 ウィンドウで、**参照**、展開**Microsoft.Solutions.BTARN.Schemas.RNPIPs**、展開**スキーマ**、PIP スキーマを選択しますをクリックし、マップ先の応答メッセージ**OK**です。  
   
-10. 右クリックし、 \<*スキーマ*> をクリックし、送信元スキーマのノード**ツリー ノードの展開**です。  
+10. 右クリックし、 \<*スキーマ*\>をクリックし、送信元スキーマのノード**ツリー ノードの展開**です。  
   
 11. 送信先スキーマについても、手順 10. を繰り返します。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 13. 両スキーマ間でマップする必要のあるすべてのフィールドについて、手順 12. を繰り返します。  
   
-14. マップの検証とテストを行います。 詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「マップのコンパイルとテスト」を参照してください。  
+14. マップの検証とテストを行います。 詳細については、BizTalk Server ヘルプの「マップのコンパイルとテスト」トピックを参照してください。  
   
 ### <a name="to-add-the-map-to-the-orchestration"></a>オーケストレーションにマップを追加するには  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 09/20/2017
 2.  ツールボックスで、をクリックして、**変換**図形し、する要求メッセージを応答メッセージに変換する必要があるオーケストレーション内の位置にドラッグします。  
   
     > [!NOTE]
-    >  配置の例については、**変換**図形の PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形です。 詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
+    >  配置の例については、**変換**図形の PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形です。 詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
   
     > [!NOTE]
     >  複数の Pip の複数のマップを組み込む方法の例は、次を参照してください。 [Double Action PIPAutomation オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)です。  

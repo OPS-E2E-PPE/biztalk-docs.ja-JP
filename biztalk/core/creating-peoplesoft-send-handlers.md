@@ -13,11 +13,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31889aa0c4f13826758547fb5e8e7acdf061239b
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 2bc559f4e3c25560540a171b3f47ff25e6f34e89
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-peoplesoft-send-artifacts"></a>PeopleSoft 送信アイテムを作成します。
 Microsoft BizTalk Adapter for PeopleSoft Enterprise は、PeopleSoft にアクセスして、使用できるコンポーネントを探索したり、SOAP 要求を処理したりします。 このトピックでは、PeopleSoft アダプターを使用する BizTalk Server 管理コンソールで、送信の成果物を作成する方法を示します。
@@ -53,9 +53,9 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise は、PeopleSoft にアク�
   
     3.  **SSO を使用する****はい**です。  
   
-    4.  **[ OK]** を選択します。  
+    4.  **[OK]** を選択します。  
   
-5.  **[ OK]** を選択します。
+5.  **[OK]** を選択します。
 
 ## <a name="set-the-transport-properties"></a>トランスポートのプロパティを設定します。
 PeopleSoft トランスポートのプロパティは、設計時および実行時に使用されます。 **トランスポートのプロパティ**ダイアログ ボックスで、パラメーターを設定する接続と資格情報を特定サーバーのシステムおよびアクセスしようとしているオブジェクトにします。  
@@ -68,7 +68,7 @@ PeopleSoft トランスポートのプロパティは、設計時および実行
   
     |パラメーター|Description|  
     |---------------|-----------------|  
-    |`Application Server Path`|PeopleSoft Application Server が動作して受信を待ち受けているコンピューターおよびポートを表す文字列。 PeopleSoft 8 Application への URL パスの構文は//< computer_name >:\<ポート >。 PeopleSoft 管理者に問い合わせて、\<ポート > 値。 \<ポート > 値は、JOLT プロトコル リスナー ポート、App Server ポートではありません。 既定の JOLT ポートは 9000 です。|  
+    |`Application Server Path`|PeopleSoft Application Server が動作して受信を待ち受けているコンピューターおよびポートを表す文字列。 PeopleSoft 8 Application への URL パスの構文は//< computer_name >:\<ポート\>です。 PeopleSoft 管理者に問い合わせて、\<ポート\>値。 \<ポート\>値は、JOLT プロトコル リスナー ポート、App Server ポートではありません。 既定の JOLT ポートは 9000 です。|  
     |`JAVA_HOME`|たとえば、JDK インストールを指すように JAVA_HOME 変数を設定します。 **C:\j2sdk1.4.2_08**です。|  
     |`Password`|選択しなかった場合**SSO を使用する**、BizTalk Adapter for PeopleSoft Enterprise サーバー システムにアクセスするための資格情報パラメーターを設定する必要があります。<br /><br /> PeopleSoft システムへのログオンに使用するユーザーのパスワードを表す文字列です。 文字は表示されませんが、アスタリスク (*) で表されます。|  
     |`PeopleSoft 8.x Jar Files`|コンポーネント インターフェイス (PeopleSoft 8 のみ) を使用するには、PeopleSoft Component Interface の jar ファイルが含まれるように CLASSPATH を更新する必要があります 例: **< PeopleSoft_Home > \web\PSJOA\psjoa.jar**です。|  
@@ -130,4 +130,4 @@ BizTalk Server は、送信アダプタに対してメッセージを送信す�
 ## <a name="next"></a>Next
   
 [PeopleSoft スキーマを BizTalk Server プロジェクトにインポートします。](../core/importing-peoplesoft-schemas-into-biztalk-server-projects.md)  
-[PeopleSoft からの受信します。](../core/receiving-from-peoplesoft.md)
+[PeopleSoft からの受信](../core/receiving-from-peoplesoft.md)

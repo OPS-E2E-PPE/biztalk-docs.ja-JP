@@ -13,11 +13,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1de0198d26f804ee8d1974d5dd542387408ea53a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ac926a378224e09dce36a52b52c171fb27911b0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターの運用上の問題をトラブルシューティングします。
 トラブルシューティングの手法を使用して発生する可能性がある操作のエラーを解決するのには[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]します。  
@@ -103,9 +103,9 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
  サンプルの app.config では、次のように検索します。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <endpointBehaviors>  
         <behavior name="NewBehavior">  
@@ -117,7 +117,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
       <endpoint   behaviorConfiguration="NewBehavior" binding="oracleDBBinding"  
        contract="IOutboundContract" name="oracle_ICalculator" />  
     </client>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -126,7 +126,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
  操作を使用して Oracle データベースに対して実行する場合に、アダプターが、次のエラーをによって[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  
   
--   **の[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  
@@ -147,7 +147,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
 ```  
 Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argument:  
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<operation_name>" Action="<action>" />  
 </BtsActionMapping>  
 ```  
@@ -221,35 +221,35 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 1.  StreamBody ノードを含む WSDL は、次のように検索します。  
   
     ```  
-    \<xs:element name="ReadLOBResponse">  
-        \<xs:annotation>  
-          \<xs:documentation>  
-            \<doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>  
-          \</xs:documentation>  
-        \</xs:annotation>  
-        \<xs:complexType>  
-          \<xs:sequence>  
-            \<xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" nillable="true" type="ns3:StreamBody" />  
-          \</xs:sequence>  
-        \</xs:complexType>  
-      \</xs:element>  
+    <xs:element name="ReadLOBResponse">  
+        <xs:annotation>  
+          <xs:documentation>  
+            <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>  
+          </xs:documentation>  
+        </xs:annotation>  
+        <xs:complexType>  
+          <xs:sequence>  
+            <xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" nillable="true" type="ns3:StreamBody" />  
+          </xs:sequence>  
+        </xs:complexType>  
+      </xs:element>  
     ```  
   
      次のように、上記に置き換えます。  
   
     ```  
-    \<xs:element name="ReadLOBResponse">  
-     \<xs:annotation>  
-     \<xs:documentation>  
-      \<doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>   
-      \</xs:documentation>  
-      \</xs:annotation>  
-     \<xs:complexType>  
-     \<xs:sequence>  
-      \<xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" type="xs:base64Binary" />   
-      \</xs:sequence>  
-      \</xs:complexType>  
-      \</xs:element>  
+    <xs:element name="ReadLOBResponse">  
+     <xs:annotation>  
+     <xs:documentation>  
+      <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>   
+      </xs:documentation>  
+      </xs:annotation>  
+     <xs:complexType>  
+     <xs:sequence>  
+      <xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" type="xs:base64Binary" />   
+      </xs:sequence>  
+      </xs:complexType>  
+      </xs:element>  
     ```  
   
      この手順では、型への参照を削除元の XSD で"ns3:StreamBody"= = し、型に置き換え"xs:base64Binary"を = です。 また、元の XSD から nillable ="true"の値を削除します。  
@@ -257,18 +257,18 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 2.  WSDL から、次を削除します。  
   
     ```  
-    \<xs:complexType name="StreamBody">  
-        \<xs:sequence>  
-          \<xs:element minOccurs="1" maxOccurs="1" name="Stream">  
-            \<xs:simpleType>  
-              \<xs:restriction base="xs:base64Binary">  
-                \<xs:minLength value="0" />  
-              \</xs:restriction>  
-            \</xs:simpleType>  
-          \</xs:element>  
-        \</xs:sequence>  
-      \</xs:complexType>  
-      \<xs:element name="StreamBody" nillable="true" type="ns3:StreamBody" />  
+    <xs:complexType name="StreamBody">  
+        <xs:sequence>  
+          <xs:element minOccurs="1" maxOccurs="1" name="Stream">  
+            <xs:simpleType>  
+              <xs:restriction base="xs:base64Binary">  
+                <xs:minLength value="0" />  
+              </xs:restriction>  
+            </xs:simpleType>  
+          </xs:element>  
+        </xs:sequence>  
+      </xs:complexType>  
+      <xs:element name="StreamBody" nillable="true" type="ns3:StreamBody" />  
     ```  
   
     > [!NOTE]
@@ -290,7 +290,7 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 ###  <a name="BKMK_OraDBUnreasonConv"></a>実行時に、'不合理 conversion 要求' エラーを持つストアド プロシージャのレコードの種類のパラメーターとして  
  **原因**  
   
- パラメーターとして、Oracle がプロシージャが格納されているシナリオをレコードの種類について考えてみます。 レコードの種類として宣言されていると仮定\<テーブル名 > %rowtype、テーブルが長い形式のデータ型の列がします。 ときに、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]検出すると、長いデータ型、データ型のサイズを指定された値と等しい設定、 **LongDatatypeColumnSize**プロパティをバインドします。 ただし、Oracle データベースでは、長い形式のデータ型のサイズが定義されていません。 そのため、アダプターは、ストアド プロシージャが呼び出されるときにエラーが発生、'不合理 conversion 要求' です。  
+ パラメーターとして、Oracle がプロシージャが格納されているシナリオをレコードの種類について考えてみます。 レコードの種類として宣言されていると仮定\<テーブル名\>%rowtype、テーブルが長い形式のデータ型の列がします。 ときに、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]検出すると、長いデータ型、データ型のサイズを指定された値と等しい設定、 **LongDatatypeColumnSize**プロパティをバインドします。 ただし、Oracle データベースでは、長い形式のデータ型のサイズが定義されていません。 そのため、アダプターは、ストアド プロシージャが呼び出されるときにエラーが発生、'不合理 conversion 要求' です。  
   
  **解決策**  
   
@@ -303,7 +303,7 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
   
 ```  
 Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect Action   
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<op_name>" Action="<action>" />  
 </BtsActionMapping>. Correct the specified Action, or refer to the documentation on the allowed formats for the Actions.  
 ```  

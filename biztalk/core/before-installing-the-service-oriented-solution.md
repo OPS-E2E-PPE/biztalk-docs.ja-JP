@@ -13,11 +13,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d7e611996e58291cdf6ed5d6b38b2b2fe5c299d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23f326a6fe028c5b7ea5edf60216c1933eccbdb6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="before-installing-the-service-oriented-solution"></a>サービス指向ソリューションをインストールする前に
 単一のコンピューターにサービス指向ソリューションのスタブ バージョンをインストールするために必要な次のコンポーネントを用意する必要があります。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 -   ローカル コンピューター上の MQSeries Server または MQSeries Server を実行しているコンピューターへのアクセス。 インライン バージョンを使用する場合、このソリューションのオーケストレーションを実行している BizTalk Server 上に MQSeries クライアント API を用意する必要があります。  
   
     > [!NOTE]
-    >  MQSeries Server のバージョンは、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] MQSeries アダプターに必要なバージョンと一致している必要があります。 これにより、フィックス パック (CSD10) が適用されている IBM WebSphere MQ for Windows のバージョン 5.3 以降を使用できます。  
+    >  MQSeries Server のバージョンは、BizTalk Server MQSeries アダプタで必要なバージョンに一致する必要があります。 これにより、フィックス パック (CSD10) が適用されている IBM WebSphere MQ for Windows のバージョン 5.3 以降を使用できます。  
   
     > [!NOTE]
     >  分散コンポーネント オブジェクト モデル (DCOM) によるサーバーの呼び出しを可能にする MQSeries などの機能を使用する際は、ネットワーク アドレス変換 (NAT) ベースのファイアウォールが無効になっていることを確認します。 クライアントは、実際の IP アドレスを使用してサーバーにアクセスできる必要があり、NAT ベースのファイアウォールによって、このアドレスはクライアントが認識できないように変換されます。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
 -   Host Integration Server は、メインフレームに接続するために必要です。  
   
     > [!NOTE]
-    >  Host Integration Server は、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の一部として含まれています。  
+    >  Host Integration Server は、BizTalk Server の一部として含まれています。  
   
 -   HTTPS 接続に使用する証明書を構成した Web サーバー。  
   
@@ -66,4 +66,4 @@ ms.lasthandoff: 09/20/2017
  [指向ソリューションのスタブ バージョンのサービスをインストールする方法](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   
  [指向ソリューションのインライン バージョンおよびアダプター バージョンのサービスをインストールする方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
  [指向ソリューションのサービスを実行する方法](../core/how-to-run-the-service-oriented-solution.md)   
- [開発者のコンピュータ設定、サービス指向ソリューション](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [サービス指向ソリューションに対する開発者のコンピューター設定](../core/developer-machine-setup-for-the-service-oriented-solution.md)

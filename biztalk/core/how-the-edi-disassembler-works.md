@@ -12,11 +12,11 @@ caps.latest.revision: "43"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66f47db034e0c193d4dab6ee303c13dd8c360661
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-the-edi-disassembler-works"></a>EDI 逆アセンブラーの動作
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、EDI 受信パイプライン (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`) において、受信した EDI エンコード インターチェンジの処理の大部分を行います。 このパイプラインには、次の処理を行う EDI 逆アセンブラ パイプライン コンポーネントが含まれています。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 -   場合は、インターチェンジ全体を XML に変換します。、**受信バッチ処理オプション**プロパティは、2 つのいずれかに設定**インターチェンジの保存**値。 このプロパティに設定されて、**ローカル ホスト設定**ページで、[**インターチェンジの設定**の双方向アグリーメント タブの**アグリーメントのプロパティ**] ダイアログ ボックス。 受信パイプラインは、インターチェンジを保存済みとして識別するために、プロパティ ReuseEnvelope を昇格させます。  
   
--   技術確認または機能確認を生成します (構成されている場合)。 これには確認のバッチ処理も含まれます (構成されている場合)。 BTS のコンテキスト プロパティを昇格させます。MessageType を設定すると、http://schemas.microsoft.com/EDI/ 内の制御スキーマに一致する\<X12 または EDIFACT > 名前空間 (たとえば、997 受信確認の x12_997_root など)。 また、EDI.DestinationPartyName コンテキスト プロパティを昇格させて、送信時に確認が確実に取得されるようにします。 詳細については、次を参照してください。 [EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)です。  
+-   技術確認または機能確認を生成します (構成されている場合)。 これには確認のバッチ処理も含まれます (構成されている場合)。 BTS のコンテキスト プロパティを昇格させます。MessageType を設定すると、http://schemas.microsoft.com/EDI/ 内の制御スキーマに一致する\<X12 または EDIFACT\>名前空間 (たとえば、997 受信確認の x12_997_root など)。 また、EDI.DestinationPartyName コンテキスト プロパティを昇格させて、送信時に確認が確実に取得されるようにします。 詳細については、次を参照してください。 [EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)です。  
   
 -   必要に応じて、HIPAA 276/277 (バージョン 5010 のみ) 834、835 (バージョン 4010 のみ)、および 837 ドキュメントの分割を実行します。  
   
@@ -156,7 +156,7 @@ ms.lasthandoff: 09/20/2017
 |X12 文字セット|X12 インターチェンジのエンベロープの生成**注:**この設定は、アグリーメントのプロパティとして入力された値の検証にのみ使用します。 実行時処理に使用される X12 文字セットは、パイプライン プロパティで選択されます。 詳細については、次を参照してください。 [EDI 文字セット](../core/edi-character-sets.md)です。|  
   
 ## <a name="using-hipaa-trigger-fields"></a>HIPAA トリガー フィールドの使用  
- 多くの場合、EDI セグメントには、セグメントの意味を変更する修飾子の値が含まれています。 たとえば、N1 セグメントには "請求先名" を示す "BT" の修飾要素が含まれていたり、"出荷先名" を示す "ST" の修飾要素が含まれていることがあります。 通常これらのフィールドを解釈する方法を決定するビジネス ロジックに任されており、逆アセンブラーが同じ XML レコード名を N1 セグメントのすべてのインスタンスを解決します。ただし、HIPAA スキーマが付属[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]注釈を使用する該当する値の存在に基づいて一意の XML レコードを作成する EDI 逆アセンブラーを含む (を参照してください[HIPAA トリガー フィールドの注釈をスキーマ](../core/hipaa-schema-trigger-field-annotations.md))。  
+ 多くの場合、EDI セグメントには、セグメントの意味を変更する修飾子の値が含まれています。 たとえば、N1 セグメントには "請求先名" を示す "BT" の修飾要素が含まれていたり、"出荷先名" を示す "ST" の修飾要素が含まれていることがあります。 通常これらのフィールドを解釈する方法を決定するビジネス ロジックに任されており、逆アセンブラーが同じ XML レコード名を N1 セグメントのすべてのインスタンスを解決します。ただし、BizTalk Server に付属の HIPAA スキーマが含む注釈を該当する値の存在に基づいて一意の XML レコードを作成する EDI 逆アセンブラーを使用する (を参照してください[HIPAA トリガー フィールドの注釈をスキーマ](../core/hipaa-schema-trigger-field-annotations.md))。  
   
  HIPAA トランザクション セットの受信時に、トリガー フィールドが入ったセグメントがあると、逆アセンブラーではトリガー情報を使用して、そのセグメントとトリガーの組み合わせに固有の XML レコードを生成します。  
   

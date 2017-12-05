@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ba308473568c222559ccc799faf3233478ee490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8284c1623329133533fe03aab567b1281f07c1a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>方法: テキスト ドキュメントを XML と旅程のルーティング先を使用してファイルの場所へのルートに変換
 ## <a name="goal"></a>[目標]  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-deploy-the-dataformattransformation-itinerary"></a>DataFormatTransformation 旅程を展開するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln を開きます。  
+1.  Visual Studio で、C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln を開きます。  
   
 2.  ソリューション エクスプ ローラーで、 **Itinerary.Library**プロジェクトをダブルクリックして**DataFormatTransformation.itinerary**行程デザイナーで開きます。  
   
@@ -121,9 +121,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>作成し、ESB 入り口を構成します。  
   
-1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[prague](../includes/prague-md.md)]** 、順にクリック**BizTalk Server 管理**.  
+1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント**BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**、クリックして**Microsoft.Practices.ESB**です。  
+2.  BizTalk Server 管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**、クリックして**Microsoft.Practices.ESB**です。  
   
 3.  右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
   
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  をクリックして**OK**を閉じる、**受信場所のプロパティ** ダイアログ ボックス。  
   
-4.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、右クリックし、 **OnRamp.Itinerary.FlatFile.FILE**受信場所をクリックして**を有効にする**です。  
+4.  BizTalk Server 管理コンソールを右クリックし、 **OnRamp.Itinerary.FlatFile.FILE**受信場所をクリックして**を有効にする**です。  
   
 #### <a name="to-test-itinerary-based-routing-of-a-flat-file-message"></a>行程ベースのフラット ファイル メッセージのルーティングをテストするには  
   
@@ -159,16 +159,16 @@ ms.lasthandoff: 09/20/2017
   
 3.  C:\HowTos\Out を参照します。DFT%MessageID%.xml メッセージがディレクトリに書き込まれたことを確認します。  
   
-4.  [!INCLUDE[prague](../includes/prague-md.md)]管理コンソールで、右クリックし、 **OnRamp.Itinerary.FlatFile.FILE**受信場所をクリックして**を無効にする**です。  
+4.  BizTalk Server 管理コンソールを右クリックし、 **OnRamp.Itinerary.FlatFile.FILE**受信場所をクリックして**を無効にする**です。  
   
 5.  後に、 **OnRamp.Itinerary.FlatFile.FILE**受信場所が無効になっている、右クリックし、をクリックして**削除**です。 **受信場所のことを確認して削除**ダイアログ ボックスで、をクリックして**はい**です。  
   
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: メッセージを変換および Itinerary のルーティング先を使用してファイルの場所に、結果のメッセージをルーティング](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [方法: メッセージを変換し、スケジュール ルーティング スリップを利用してファイルの場所に送信する](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [方法: Itinerary ルーティング先を使用して複数の受信者を 1 つのメッセージをルーティング](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
+-   [方法: スケジュール ルーティング スリップを利用し、1 つのメッセージを複数の受信者に送信する](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   
