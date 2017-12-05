@@ -12,40 +12,40 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79fa2e40bd80bb3a4fd8b976aa31a34e4d3c0bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c31146310b8c8b559fcd93d19362679b060cb42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="create-a-channel-using-the-sql-adapter"></a><span data-ttu-id="f8eca-102">SQL アダプターを使用して、チャネルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-102">Create a channel using the SQL adapter</span></span>
-<span data-ttu-id="f8eca-103">WCF チャネル モデルで、SQL Server データベースに対する操作を呼び出すし、SOAP メッセージを交換することで、結果を受け取る、 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] WCF チャネルを経由します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-103">In the WCF channel model, you invoke operations on the SQL Server database and receive the results by exchanging SOAP messages with the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] over a WCF channel.</span></span>  
+# <a name="create-a-channel-using-the-sql-adapter"></a><span data-ttu-id="3984f-102">SQL アダプターを使用して、チャネルを作成します。</span><span class="sxs-lookup"><span data-stu-id="3984f-102">Create a channel using the SQL adapter</span></span>
+<span data-ttu-id="3984f-103">WCF チャネル モデルで、SQL Server データベースに対する操作を呼び出すし、SOAP メッセージを交換することで、結果を受け取る、 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] WCF チャネルを経由します。</span><span class="sxs-lookup"><span data-stu-id="3984f-103">In the WCF channel model, you invoke operations on the SQL Server database and receive the results by exchanging SOAP messages with the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] over a WCF channel.</span></span>  
   
--   <span data-ttu-id="f8eca-104">いずれかを使用して送信操作を呼び出し、 **IRequestChannel**または**IOutputChannel**アダプターにメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-104">You invoke outbound operations by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter.</span></span>  
+-   <span data-ttu-id="3984f-104">いずれかを使用して送信操作を呼び出し、 **IRequestChannel**または**IOutputChannel**アダプターにメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="3984f-104">You invoke outbound operations by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter.</span></span>  
   
--   <span data-ttu-id="f8eca-105">経由でメッセージを受信して受信操作用のメッセージを受信する、 **IInputChannel**の**ポーリング**、 **TypedPolling**、または**通知**操作します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-105">You receive messages for inbound operations by receiving messages over an **IInputChannel** for **Polling**, **TypedPolling**, or **Notification** operations.</span></span>  
+-   <span data-ttu-id="3984f-105">経由でメッセージを受信して受信操作用のメッセージを受信する、 **IInputChannel**の**ポーリング**、 **TypedPolling**、または**通知**操作します。</span><span class="sxs-lookup"><span data-stu-id="3984f-105">You receive messages for inbound operations by receiving messages over an **IInputChannel** for **Polling**, **TypedPolling**, or **Notification** operations.</span></span>  
   
- <span data-ttu-id="f8eca-106">このトピックの手順では、作成して、着信および発信の操作に使用されるチャネル形状を構成する方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-106">The procedures in this topic provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
+ <span data-ttu-id="3984f-106">このトピックの手順では、作成して、着信および発信の操作に使用されるチャネル形状を構成する方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="3984f-106">The procedures in this topic provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
   
-## <a name="creating-outbound-client-channels"></a><span data-ttu-id="f8eca-107">送信 (クライアント) チャネルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-107">Creating Outbound (Client) Channels</span></span>  
- <span data-ttu-id="f8eca-108">いずれかを使用することができます、 **IRequestChannel**または**IOutputChannel** SQL Server データベースで操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the SQL Server database.</span></span> <span data-ttu-id="f8eca-109">作成する最初のどちらの場合、 **System.ServiceModel.ChannelFactory**適切なインターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="f8eca-110">チャネルを作成するのにファクトリを使用します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="f8eca-111">チャネルを作成した後は、アダプターの操作の呼び出しに使用できます。</span><span class="sxs-lookup"><span data-stu-id="f8eca-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
+## <a name="creating-outbound-client-channels"></a><span data-ttu-id="3984f-107">送信 (クライアント) チャネルを作成します。</span><span class="sxs-lookup"><span data-stu-id="3984f-107">Creating Outbound (Client) Channels</span></span>  
+ <span data-ttu-id="3984f-108">いずれかを使用することができます、 **IRequestChannel**または**IOutputChannel** SQL Server データベースで操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="3984f-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the SQL Server database.</span></span> <span data-ttu-id="3984f-109">作成する最初のどちらの場合、 **System.ServiceModel.ChannelFactory**適切なインターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="3984f-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="3984f-110">チャネルを作成するのにファクトリを使用します。</span><span class="sxs-lookup"><span data-stu-id="3984f-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="3984f-111">チャネルを作成した後は、アダプターの操作の呼び出しに使用できます。</span><span class="sxs-lookup"><span data-stu-id="3984f-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
   
-#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="f8eca-112">作成および送信チャネルを開く</span><span class="sxs-lookup"><span data-stu-id="f8eca-112">To create and open an outbound channel</span></span>  
+#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="3984f-112">作成および送信チャネルを開く</span><span class="sxs-lookup"><span data-stu-id="3984f-112">To create and open an outbound channel</span></span>  
   
-1.  <span data-ttu-id="f8eca-113">作成しのインスタンスを初期化**ChannelFactory**のエンドポイントとバインディングを使用して必要なチャネル形状です。</span><span class="sxs-lookup"><span data-stu-id="f8eca-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="f8eca-114">エンドポイントは、SQL Server の接続 URI を指定し、バインディングは、インスタンスの**sqlBinding**です。</span><span class="sxs-lookup"><span data-stu-id="f8eca-114">The endpoint specifies a SQL Server connection URI and the binding is an instance of **sqlBinding**.</span></span>  
+1.  <span data-ttu-id="3984f-113">作成しのインスタンスを初期化**ChannelFactory**のエンドポイントとバインディングを使用して必要なチャネル形状です。</span><span class="sxs-lookup"><span data-stu-id="3984f-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="3984f-114">エンドポイントは、SQL Server の接続 URI を指定し、バインディングは、インスタンスの**sqlBinding**です。</span><span class="sxs-lookup"><span data-stu-id="3984f-114">The endpoint specifies a SQL Server connection URI and the binding is an instance of **sqlBinding**.</span></span>  
   
-2.  <span data-ttu-id="f8eca-115">使用してチャネル ファクトリの SQL Server 資格情報を提供、**資格情報**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="f8eca-115">Provide SQL Server credentials for the channel factory by using the **Credentials** property.</span></span>  
+2.  <span data-ttu-id="3984f-115">使用してチャネル ファクトリの SQL Server 資格情報を提供、**資格情報**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="3984f-115">Provide SQL Server credentials for the channel factory by using the **Credentials** property.</span></span>  
   
-3.  <span data-ttu-id="f8eca-116">チャネル ファクトリを開きます。</span><span class="sxs-lookup"><span data-stu-id="f8eca-116">Open the channel factory.</span></span>  
+3.  <span data-ttu-id="3984f-116">チャネル ファクトリを開きます。</span><span class="sxs-lookup"><span data-stu-id="3984f-116">Open the channel factory.</span></span>  
   
-4.  <span data-ttu-id="f8eca-117">呼び出すことによって、チャネルのインスタンスを取得、 **CreateChannel**チャネル ファクトリでのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="f8eca-117">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
+4.  <span data-ttu-id="3984f-117">呼び出すことによって、チャネルのインスタンスを取得、 **CreateChannel**チャネル ファクトリでのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="3984f-117">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
   
-5.  <span data-ttu-id="f8eca-118">チャネルを開きます。</span><span class="sxs-lookup"><span data-stu-id="f8eca-118">Open the channel.</span></span>  
+5.  <span data-ttu-id="3984f-118">チャネルを開きます。</span><span class="sxs-lookup"><span data-stu-id="3984f-118">Open the channel.</span></span>  
   
- <span data-ttu-id="f8eca-119">コードまたは構成からバインディングとエンドポイント アドレスを指定できます。</span><span class="sxs-lookup"><span data-stu-id="f8eca-119">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
+ <span data-ttu-id="3984f-119">コードまたは構成からバインディングとエンドポイント アドレスを指定できます。</span><span class="sxs-lookup"><span data-stu-id="3984f-119">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="f8eca-120">コードでのバインディングとエンドポイント アドレスの指定</span><span class="sxs-lookup"><span data-stu-id="f8eca-120">Specifying the Binding and Endpoint Address in Code</span></span>  
- <span data-ttu-id="f8eca-121">次のコード例を作成する方法を示しています、 **IRequestChannel**コード内のバインドとエンドポイント アドレスを指定することによってです。</span><span class="sxs-lookup"><span data-stu-id="f8eca-121">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="f8eca-122">作成するコード、 **IOutputChannel**同じですが、指定する必要があります、 **IOutputChannel**のためのインターフェイス、 **ChannelFactory**チャネルの種類とします。</span><span class="sxs-lookup"><span data-stu-id="f8eca-122">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="3984f-120">コードでのバインディングとエンドポイント アドレスの指定</span><span class="sxs-lookup"><span data-stu-id="3984f-120">Specifying the Binding and Endpoint Address in Code</span></span>  
+ <span data-ttu-id="3984f-121">次のコード例を作成する方法を示しています、 **IRequestChannel**コード内のバインドとエンドポイント アドレスを指定することによってです。</span><span class="sxs-lookup"><span data-stu-id="3984f-121">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="3984f-122">作成するコード、 **IOutputChannel**同じですが、指定する必要があります、 **IOutputChannel**のためのインターフェイス、 **ChannelFactory**チャネルの種類とします。</span><span class="sxs-lookup"><span data-stu-id="3984f-122">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
   
 ```  
 // Create binding -- set binding properties before you open the factory.  
@@ -70,8 +70,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="f8eca-123">構成でバインディングとエンドポイント アドレスを指定します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-123">Specifying the Binding and Endpoint Address in Configuration</span></span>  
- <span data-ttu-id="f8eca-124">次のコード例では、構成で指定されたクライアント エンドポイントからチャネル ファクトリを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-124">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="3984f-123">構成でバインディングとエンドポイント アドレスを指定します。</span><span class="sxs-lookup"><span data-stu-id="3984f-123">Specifying the Binding and Endpoint Address in Configuration</span></span>  
+ <span data-ttu-id="3984f-124">次のコード例では、構成で指定されたクライアント エンドポイントからチャネル ファクトリを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3984f-124">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
   
 ```  
 // Create channel factory from configuration.  
@@ -90,8 +90,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-#### <a name="the-configuration-settings"></a><span data-ttu-id="f8eca-125">構成設定</span><span class="sxs-lookup"><span data-stu-id="f8eca-125">The Configuration Settings</span></span>  
- <span data-ttu-id="f8eca-126">次のコードは、前述の例で使用される構成設定を示しています。</span><span class="sxs-lookup"><span data-stu-id="f8eca-126">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="f8eca-127">クライアント エンドポイントのコントラクトには、"System.ServiceModel.Channels.IRequestChannel"または"System.ServiceModel.Channels.IOutputChannel"を作成するチャネル形状の種類に応じてをする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8eca-127">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IOutputChannel" depending on the kind of channel shape that you want to create.</span></span>  
+#### <a name="the-configuration-settings"></a><span data-ttu-id="3984f-125">構成設定</span><span class="sxs-lookup"><span data-stu-id="3984f-125">The Configuration Settings</span></span>  
+ <span data-ttu-id="3984f-126">次のコードは、前述の例で使用される構成設定を示しています。</span><span class="sxs-lookup"><span data-stu-id="3984f-126">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="3984f-127">クライアント エンドポイントのコントラクトには、"System.ServiceModel.Channels.IRequestChannel"または"System.ServiceModel.Channels.IOutputChannel"を作成するチャネル形状の種類に応じてをする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3984f-127">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IOutputChannel" depending on the kind of channel shape that you want to create.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -119,27 +119,27 @@ channel.Open();
 </configuration>  
 ```  
   
-## <a name="creating-inbound-service-channels"></a><span data-ttu-id="f8eca-128">受信 (サービス) チャネルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-128">Creating Inbound (Service) Channels</span></span>  
- <span data-ttu-id="f8eca-129">構成する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]インスタンス上のバインドのプロパティを設定して、SQL Server データベースのテーブルとビューをポーリングする**sqlBinding**です。</span><span class="sxs-lookup"><span data-stu-id="f8eca-129">You configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database tables and views by setting binding properties on an instance of **sqlBinding**.</span></span> <span data-ttu-id="f8eca-130">取得できますチャネル リスナーを作成し、このバインディングを使用する、 **IInputChannel**を受信するチャネル、**ポーリング**、 **TypedPolling**、または**通知**アダプターから操作します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-130">You then use this binding to build a channel listener from which you can get an **IInputChannel** channel to receive the **Polling**, **TypedPolling**, or **Notification** operation from the adapter.</span></span>  
+## <a name="creating-inbound-service-channels"></a><span data-ttu-id="3984f-128">受信 (サービス) チャネルを作成します。</span><span class="sxs-lookup"><span data-stu-id="3984f-128">Creating Inbound (Service) Channels</span></span>  
+ <span data-ttu-id="3984f-129">構成する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]インスタンス上のバインドのプロパティを設定して、SQL Server データベースのテーブルとビューをポーリングする**sqlBinding**です。</span><span class="sxs-lookup"><span data-stu-id="3984f-129">You configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database tables and views by setting binding properties on an instance of **sqlBinding**.</span></span> <span data-ttu-id="3984f-130">取得できますチャネル リスナーを作成し、このバインディングを使用する、 **IInputChannel**を受信するチャネル、**ポーリング**、 **TypedPolling**、または**通知**アダプターから操作します。</span><span class="sxs-lookup"><span data-stu-id="3984f-130">You then use this binding to build a channel listener from which you can get an **IInputChannel** channel to receive the **Polling**, **TypedPolling**, or **Notification** operation from the adapter.</span></span>  
   
-#### <a name="to-create-and-open-an-iinputchannel-to-receive-inbound-operations"></a><span data-ttu-id="f8eca-131">作成して、受信操作を受信する、IInputChannel を開く</span><span class="sxs-lookup"><span data-stu-id="f8eca-131">To create and open an IInputChannel to receive inbound operations</span></span>  
+#### <a name="to-create-and-open-an-iinputchannel-to-receive-inbound-operations"></a><span data-ttu-id="3984f-131">作成して、受信操作を受信する、IInputChannel を開く</span><span class="sxs-lookup"><span data-stu-id="3984f-131">To create and open an IInputChannel to receive inbound operations</span></span>  
   
-1.  <span data-ttu-id="f8eca-132">インスタンスを作成する**SQLBinding**です。</span><span class="sxs-lookup"><span data-stu-id="f8eca-132">Create an instance of **SQLBinding**.</span></span>  
+1.  <span data-ttu-id="3984f-132">インスタンスを作成する**SQLBinding**です。</span><span class="sxs-lookup"><span data-stu-id="3984f-132">Create an instance of **SQLBinding**.</span></span>  
   
-2.  <span data-ttu-id="f8eca-133">受信操作に必要なバインドのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-133">Set the binding properties required for inbound operation.</span></span> <span data-ttu-id="f8eca-134">たとえば、**ポーリング**に設定する必要が少なくとも、操作、 **InboundOperationType**、 **PolledDataAvailableStatement**、および**PollingStatement**バインドのプロパティを構成するのには[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server データベースをポーリングします。</span><span class="sxs-lookup"><span data-stu-id="f8eca-134">For example, for a **Polling** operation, at a minimum you must set the **InboundOperationType**, **PolledDataAvailableStatement**, and **PollingStatement** binding properties to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database.</span></span>  
+2.  <span data-ttu-id="3984f-133">受信操作に必要なバインドのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="3984f-133">Set the binding properties required for inbound operation.</span></span> <span data-ttu-id="3984f-134">たとえば、**ポーリング**に設定する必要が少なくとも、操作、 **InboundOperationType**、 **PolledDataAvailableStatement**、および**PollingStatement**バインドのプロパティを構成するのには[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server データベースをポーリングします。</span><span class="sxs-lookup"><span data-stu-id="3984f-134">For example, for a **Polling** operation, at a minimum you must set the **InboundOperationType**, **PolledDataAvailableStatement**, and **PollingStatement** binding properties to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database.</span></span>  
   
-3.  <span data-ttu-id="f8eca-135">呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel >**メソッドを**SQLBinding**です。</span><span class="sxs-lookup"><span data-stu-id="f8eca-135">Create a channel listener by invoking **BuildChannelListener\<IInputChannel>** method on the **SQLBinding**.</span></span> <span data-ttu-id="f8eca-136">このメソッドに渡すパラメーターの 1 つとして、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-136">You specify the SQL Server connection URI as one of the parameters to this method.</span></span>  
+3.  <span data-ttu-id="3984f-135">呼び出してチャネル リスナーを作成する**BuildChannelListener\<IInputChannel\>** メソッドを**SQLBinding**です。</span><span class="sxs-lookup"><span data-stu-id="3984f-135">Create a channel listener by invoking **BuildChannelListener\<IInputChannel\>** method on the **SQLBinding**.</span></span> <span data-ttu-id="3984f-136">このメソッドに渡すパラメーターの 1 つとして、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="3984f-136">You specify the SQL Server connection URI as one of the parameters to this method.</span></span>  
   
-4.  <span data-ttu-id="f8eca-137">リスナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="f8eca-137">Open the listener.</span></span>  
+4.  <span data-ttu-id="3984f-137">リスナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="3984f-137">Open the listener.</span></span>  
   
-5.  <span data-ttu-id="f8eca-138">取得、 **IInputChannel**チャネルを呼び出すことによって、 **AcceptChannel**リスナーのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="f8eca-138">Get an **IInputChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
+5.  <span data-ttu-id="3984f-138">取得、 **IInputChannel**チャネルを呼び出すことによって、 **AcceptChannel**リスナーのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="3984f-138">Get an **IInputChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
   
-6.  <span data-ttu-id="f8eca-139">チャネルを開きます。</span><span class="sxs-lookup"><span data-stu-id="f8eca-139">Open the channel.</span></span>  
+6.  <span data-ttu-id="3984f-139">チャネルを開きます。</span><span class="sxs-lookup"><span data-stu-id="3984f-139">Open the channel.</span></span>  
   
- <span data-ttu-id="f8eca-140">次のコードは、チャネル リスナーを作成し、取得する方法を示します、 **IInputChannel**アダプターからメッセージのデータ変更を受信します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-140">The following code shows how to create a channel listener and get an **IInputChannel** to receive data-changed messages from the adapter.</span></span>  
+ <span data-ttu-id="3984f-140">次のコードは、チャネル リスナーを作成し、取得する方法を示します、 **IInputChannel**アダプターからメッセージのデータ変更を受信します。</span><span class="sxs-lookup"><span data-stu-id="3984f-140">The following code shows how to create a channel listener and get an **IInputChannel** to receive data-changed messages from the adapter.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="f8eca-141">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]受信の一方向のみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="f8eca-141">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] only supports one-way receive.</span></span> <span data-ttu-id="f8eca-142">そのため、使用する必要があります**IInputChannel** SQL Server からの受信操作のメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-142">So, you must use **IInputChannel** to receive messages for inbound operations from SQL Server.</span></span>  
+>  <span data-ttu-id="3984f-141">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]受信の一方向のみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="3984f-141">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] only supports one-way receive.</span></span> <span data-ttu-id="3984f-142">そのため、使用する必要があります**IInputChannel** SQL Server からの受信操作のメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="3984f-142">So, you must use **IInputChannel** to receive messages for inbound operations from SQL Server.</span></span>  
   
 ```  
 // Create a binding: specify the InboundOperationType, the PolledDataAvailableStatement, and   
@@ -167,5 +167,5 @@ IInputChannel channel = listener.AcceptChannel();
 channel.Open();  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="f8eca-143">参照</span><span class="sxs-lookup"><span data-stu-id="f8eca-143">See Also</span></span>  
-[<span data-ttu-id="f8eca-144">WCF チャネル モデルを使用してアプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="f8eca-144">Develop applications using the WCF Channel model</span></span>](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="3984f-143">参照</span><span class="sxs-lookup"><span data-stu-id="3984f-143">See Also</span></span>  
+[<span data-ttu-id="3984f-144">WCF チャネル モデルを使用してアプリケーションを開発する</span><span class="sxs-lookup"><span data-stu-id="3984f-144">Develop applications using the WCF Channel model</span></span>](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

@@ -12,28 +12,28 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2eaf57c08157ffb9785f591016793c4c416704bf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32314638b3352dccb2c30eb0b99a4d328d22b092
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a><span data-ttu-id="094d6-102">手順 3: SQL アダプターを使用する移行されたアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="094d6-102">Step 3: Test the Migrated Application that uses the SQL adapter</span></span>
-<span data-ttu-id="094d6-103">![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="094d6-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
+# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a><span data-ttu-id="f3414-102">手順 3: SQL アダプターを使用する移行されたアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="f3414-102">Step 3: Test the Migrated Application that uses the SQL adapter</span></span>
+<span data-ttu-id="f3414-103">![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="f3414-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
- <span data-ttu-id="094d6-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="094d6-104">**Time to complete:** 5 minutes</span></span>  
+ <span data-ttu-id="f3414-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="f3414-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="094d6-105">**目標:**この手順では、顧客テーブルに挿入操作を実行することによって移行済みのアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="094d6-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Customer table.</span></span> <span data-ttu-id="094d6-106">これを行う、vPrev を使用して生成されたスキーマに準拠した要求メッセージをドロップする[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="094d6-106">To do this, you drop a request message that conforms to the schema generated using the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+ <span data-ttu-id="f3414-105">**目標:**この手順では、顧客テーブルに挿入操作を実行することによって移行済みのアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="f3414-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Customer table.</span></span> <span data-ttu-id="f3414-106">これを行う、vPrev を使用して生成されたスキーマに準拠した要求メッセージをドロップする[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f3414-106">To do this, you drop a request message that conforms to the schema generated using the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="094d6-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="094d6-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="f3414-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="f3414-107">Prerequisites</span></span>  
   
--   <span data-ttu-id="094d6-108">BizTalk Server 管理コンソールで物理ポートを BizTalk オーケストレーションの論理ポートにマップして、BizTalk アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="094d6-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
+-   <span data-ttu-id="f3414-108">BizTalk Server 管理コンソールで物理ポートを BizTalk オーケストレーションの論理ポートにマップして、BizTalk アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="f3414-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
   
--   <span data-ttu-id="094d6-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="094d6-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+-   <span data-ttu-id="f3414-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f3414-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
-### <a name="to-test-the-migrated-application"></a><span data-ttu-id="094d6-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="094d6-110">To test the migrated application</span></span>  
+### <a name="to-test-the-migrated-application"></a><span data-ttu-id="f3414-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="f3414-110">To test the migrated application</span></span>  
   
-1.  <span data-ttu-id="094d6-111">要求、vPrev によって生成されたスキーマに準拠した XML を作成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="094d6-111">Create a request XML that conforms to the schema generated by the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="094d6-112">送信マップを使用して、Wcf-custom 送信ポートに変換 WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]し、SQL Server データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="094d6-112">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and sends it to the SQL Server database.</span></span>  
+1.  <span data-ttu-id="f3414-111">要求、vPrev によって生成されたスキーマに準拠した XML を作成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f3414-111">Create a request XML that conforms to the schema generated by the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="f3414-112">送信マップを使用して、Wcf-custom 送信ポートに変換 WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]し、SQL Server データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="f3414-112">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and sends it to the SQL Server database.</span></span>  
   
     ```  
     <Insert xmlns="http://SQLInsert">  
@@ -45,12 +45,12 @@ ms.lasthandoff: 09/20/2017
     </Insert>  
     ```  
   
-2.  <span data-ttu-id="094d6-113">貼り付けをファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="094d6-113">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
+2.  <span data-ttu-id="f3414-113">貼り付けをファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="f3414-113">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
   
-3.  <span data-ttu-id="094d6-114">オーケストレーションは、要求メッセージを使用して、SQL Server データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="094d6-114">The orchestration consumes the request message and sends it to the SQL Server database.</span></span> <span data-ttu-id="094d6-115">WCF ベースのスキーマに準拠するスキーマで、SQL Server データベースからの応答が受信した[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="094d6-115">The response from the SQL Server database is received in the schema that conforms to the schema of the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="094d6-116">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの、vPrev 用のスキーマに[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="094d6-116">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="094d6-117">SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="094d6-117">The response from the SQL Server database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="094d6-118">上記の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="094d6-118">The response for the preceding request message is:</span></span>  
+3.  <span data-ttu-id="f3414-114">オーケストレーションは、要求メッセージを使用して、SQL Server データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="f3414-114">The orchestration consumes the request message and sends it to the SQL Server database.</span></span> <span data-ttu-id="f3414-115">WCF ベースのスキーマに準拠するスキーマで、SQL Server データベースからの応答が受信した[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f3414-115">The response from the SQL Server database is received in the schema that conforms to the schema of the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="f3414-116">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの、vPrev 用のスキーマに[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f3414-116">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="f3414-117">SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="f3414-117">The response from the SQL Server database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="f3414-118">上記の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f3414-118">The response for the preceding request message is:</span></span>  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <InsertResponse xmlns="http://SQLInsert">  
       <Success>  
         <long xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">101</long>   
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
     </InsertResponse>  
     ```  
   
-     <span data-ttu-id="094d6-119">前の応答では、「101」は、Customer テーブルに挿入された identity 列の値です。</span><span class="sxs-lookup"><span data-stu-id="094d6-119">In the preceding response, “101” is the value of the identity column inserted in the Customer table.</span></span>  
+     <span data-ttu-id="f3414-119">前の応答では、「101」は、Customer テーブルに挿入された identity 列の値です。</span><span class="sxs-lookup"><span data-stu-id="f3414-119">In the preceding response, “101” is the value of the identity column inserted in the Customer table.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="094d6-120">参照</span><span class="sxs-lookup"><span data-stu-id="094d6-120">See Also</span></span>  
- [<span data-ttu-id="094d6-121">チュートリアル 1: SQL アダプタを BizTalk プロジェクトを移行します。</span><span class="sxs-lookup"><span data-stu-id="094d6-121">Tutorial 1: Migrate BizTalk Projects to the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="f3414-120">参照</span><span class="sxs-lookup"><span data-stu-id="f3414-120">See Also</span></span>  
+ [<span data-ttu-id="f3414-121">チュートリアル 1: SQL アダプタを BizTalk プロジェクトを移行します。</span><span class="sxs-lookup"><span data-stu-id="f3414-121">Tutorial 1: Migrate BizTalk Projects to the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)

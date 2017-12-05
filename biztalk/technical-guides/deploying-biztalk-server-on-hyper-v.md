@@ -12,19 +12,19 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3ddbfafe8a96f524642352b3e8188fd6396795f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08e25db910de42eb5a15effbe0de20b358501f3d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="deploying-biztalk-server-on-hyper-v"></a><span data-ttu-id="e0d37-102">BizTalk Server の HYPER-V の展開</span><span class="sxs-lookup"><span data-stu-id="e0d37-102">Deploying BizTalk Server on Hyper-V</span></span>
-<span data-ttu-id="e0d37-103">このセクションでは推奨事項とインストール、構成、および展開するためのベスト プラクティス、 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] HYPER-V 仮想環境でのソリューションです。</span><span class="sxs-lookup"><span data-stu-id="e0d37-103">This section provides recommendations and best practices for installing, configuring, and deploying a [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] solution in a Hyper-V virtual environment.</span></span> <span data-ttu-id="e0d37-104">このセクションの内容を配置する利点を説明します、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]ソリューションを HYPER-V 仮想環境、HYPER-V 仮想マシンを設定するための推奨事項と推奨事項のインストールと構成[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HYPER-V で仮想マシン。</span><span class="sxs-lookup"><span data-stu-id="e0d37-104">This section describes advantages of deploying your [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] solution to a Hyper-V virtualized environment, recommendations for setting up the Hyper-V virtual machines and recommendations for installing and configuring [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] on the Hyper-V virtual machines.</span></span>  
+# <a name="deploying-biztalk-server-on-hyper-v"></a><span data-ttu-id="f1442-102">BizTalk Server の HYPER-V の展開</span><span class="sxs-lookup"><span data-stu-id="f1442-102">Deploying BizTalk Server on Hyper-V</span></span>
+<span data-ttu-id="f1442-103">このセクションでは、推奨設定とインストール、構成、および HYPER-V の仮想環境で BizTalk Server ソリューションを展開するためのベスト プラクティスを説明します。</span><span class="sxs-lookup"><span data-stu-id="f1442-103">This section provides recommendations and best practices for installing, configuring, and deploying a BizTalk Server solution in a Hyper-V virtual environment.</span></span> <span data-ttu-id="f1442-104">このセクションで、HYPER-V 仮想化環境、HYPER-V 仮想マシンを設定するための推奨事項と推奨事項をインストールし、HYPER-V で BizTalk Server を構成する BizTalk Server ソリューションを展開する次の利点を説明します仮想マシン。</span><span class="sxs-lookup"><span data-stu-id="f1442-104">This section describes advantages of deploying your BizTalk Server solution to a Hyper-V virtualized environment, recommendations for setting up the Hyper-V virtual machines and recommendations for installing and configuring BizTalk Server on the Hyper-V virtual machines.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="e0d37-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e0d37-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="f1442-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="f1442-105">In This Section</span></span>  
   
--   [<span data-ttu-id="e0d37-106">仮想化環境の Hyper V を BizTalk Server ソリューションを展開する潜在的なメリット</span><span class="sxs-lookup"><span data-stu-id="e0d37-106">Potential Benefits of Deploying a BizTalk Server Solution to a Hyper-V Virtualized Environment</span></span>](../technical-guides/benefits-of-deploying-a-biztalk-server-solution-to-a-hyper-v-environment.md)  
+-   [<span data-ttu-id="f1442-106">BizTalk Server ソリューションを Hyper-V 仮想化環境に展開する潜在的な利点</span><span class="sxs-lookup"><span data-stu-id="f1442-106">Potential Benefits of Deploying a BizTalk Server Solution to a Hyper-V Virtualized Environment</span></span>](../technical-guides/benefits-of-deploying-a-biztalk-server-solution-to-a-hyper-v-environment.md)  
   
--   [<span data-ttu-id="e0d37-107">インストールして、BizTalk Server で使用する HYPER-V 仮想マシンの構成</span><span class="sxs-lookup"><span data-stu-id="e0d37-107">Installing and Configuring a Hyper-V Virtual Machine for use with BizTalk Server</span></span>](../technical-guides/install-and-configure-a-hyper-v-virtual-machine-to-use-for-biztalk-server.md)  
+-   [<span data-ttu-id="f1442-107">BizTalk Server で使用するための Hyper-V 仮想マシンのインストールと構成</span><span class="sxs-lookup"><span data-stu-id="f1442-107">Installing and Configuring a Hyper-V Virtual Machine for use with BizTalk Server</span></span>](../technical-guides/install-and-configure-a-hyper-v-virtual-machine-to-use-for-biztalk-server.md)  
   
--   [<span data-ttu-id="e0d37-108">インストールして、HYPER-V の BizTalk Server を構成するためのベスト プラクティスのチェックリスト:</span><span class="sxs-lookup"><span data-stu-id="e0d37-108">Checklist: Best Practices for Installing and Configuring BizTalk Server on Hyper-V</span></span>](../technical-guides/checklist-best-practices-to-install-and-configure-biztalk-server-on-hyper-v.md)
+-   [<span data-ttu-id="f1442-108">チェックリスト: Hyper-V に BizTalk Server をインストールおよび構成する場合のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="f1442-108">Checklist: Best Practices for Installing and Configuring BizTalk Server on Hyper-V</span></span>](../technical-guides/checklist-best-practices-to-install-and-configure-biztalk-server-on-hyper-v.md)

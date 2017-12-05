@@ -13,30 +13,30 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3d9641f894a493aa5c2c298a71b1b5a49ffb55a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8de850022a03a3be0310da3022a2cf496c94f30
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a><span data-ttu-id="0719f-102">WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム</span><span class="sxs-lookup"><span data-stu-id="0719f-102">Stream Flat-File IDOCs in SAP using the WCF Channel Model</span></span>
-<span data-ttu-id="0719f-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ノード値、SendIdoc および ReceiveIdoc 操作のストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="0719f-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports node-value streaming for the SendIdoc and ReceiveIdoc operations.</span></span> <span data-ttu-id="0719f-104">これらの操作は、フラット ファイル (string) Idoc をして、アダプターからの送受信に使用されます。</span><span class="sxs-lookup"><span data-stu-id="0719f-104">These operations are used to send and receive flat-file (string) IDOCs to and from the adapter.</span></span> <span data-ttu-id="0719f-105">1 つのノードの下の文字列にこれらの操作の両方で全体の IDOC のデータが含まれている (\<idocData >)。</span><span class="sxs-lookup"><span data-stu-id="0719f-105">In both of these operations, the data for the entire IDOC is contained in a string under a single node (\<idocData>).</span></span> <span data-ttu-id="0719f-106">大規模の Idoc は、アダプターとコード間で IDOC データのストリーミングは、大量のメモリ リソースに保存できます。</span><span class="sxs-lookup"><span data-stu-id="0719f-106">For large IDOCs, streaming the IDOC data between the adapter and your code may save significant memory resources.</span></span>  
+# <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a><span data-ttu-id="5112e-102">WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム</span><span class="sxs-lookup"><span data-stu-id="5112e-102">Stream Flat-File IDOCs in SAP using the WCF Channel Model</span></span>
+<span data-ttu-id="5112e-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ノード値、SendIdoc および ReceiveIdoc 操作のストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5112e-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports node-value streaming for the SendIdoc and ReceiveIdoc operations.</span></span> <span data-ttu-id="5112e-104">これらの操作は、フラット ファイル (string) Idoc をして、アダプターからの送受信に使用されます。</span><span class="sxs-lookup"><span data-stu-id="5112e-104">These operations are used to send and receive flat-file (string) IDOCs to and from the adapter.</span></span> <span data-ttu-id="5112e-105">1 つのノードの下の文字列にこれらの操作の両方で全体の IDOC のデータが含まれている (\<idocData\>)。</span><span class="sxs-lookup"><span data-stu-id="5112e-105">In both of these operations, the data for the entire IDOC is contained in a string under a single node (\<idocData\>).</span></span> <span data-ttu-id="5112e-106">大規模の Idoc は、アダプターとコード間で IDOC データのストリーミングは、大量のメモリ リソースに保存できます。</span><span class="sxs-lookup"><span data-stu-id="5112e-106">For large IDOCs, streaming the IDOC data between the adapter and your code may save significant memory resources.</span></span>  
   
- <span data-ttu-id="0719f-107">アダプターがストリーミングをサポートする方法の詳細については、次を参照してください。[ストリーミングと SAP アダプター](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="0719f-107">For background information about how the adapter supports streaming, see [Streaming and the SAP Adapter](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md).</span></span> <span data-ttu-id="0719f-108">続行する前にこのトピックの内容を確認してください。</span><span class="sxs-lookup"><span data-stu-id="0719f-108">You should read this topic before proceeding.</span></span>  
+ <span data-ttu-id="5112e-107">アダプターがストリーミングをサポートする方法の詳細については、次を参照してください。[ストリーミングと SAP アダプター](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="5112e-107">For background information about how the adapter supports streaming, see [Streaming and the SAP Adapter](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md).</span></span> <span data-ttu-id="5112e-108">続行する前にこのトピックの内容を確認してください。</span><span class="sxs-lookup"><span data-stu-id="5112e-108">You should read this topic before proceeding.</span></span>  
   
- <span data-ttu-id="0719f-109">このトピックのセクションでは、ノードと値の WCF チャネル モデルを使用すると、SendIdoc および ReceiveIdoc 操作のストリーミングを実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="0719f-109">The sections in this topic describe how to implement node-value streaming for the SendIdoc and ReceiveIdoc operations when you use the WCF channel model.</span></span>  
+ <span data-ttu-id="5112e-109">このトピックのセクションでは、ノードと値の WCF チャネル モデルを使用すると、SendIdoc および ReceiveIdoc 操作のストリーミングを実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5112e-109">The sections in this topic describe how to implement node-value streaming for the SendIdoc and ReceiveIdoc operations when you use the WCF channel model.</span></span>  
   
-## <a name="streaming-outbound-flat-file-idocs-to-the-adapter"></a><span data-ttu-id="0719f-110">送信フラット ファイル Idoc をアダプターにストリーミング</span><span class="sxs-lookup"><span data-stu-id="0719f-110">Streaming Outbound Flat-File IDOCs to the Adapter</span></span>  
- <span data-ttu-id="0719f-111">アダプターは、ノード値 SendIdoc 操作の要求メッセージのストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="0719f-111">The adapter supports node-value streaming on the request message for the SendIdoc operation.</span></span>  
+## <a name="streaming-outbound-flat-file-idocs-to-the-adapter"></a><span data-ttu-id="5112e-110">送信フラット ファイル Idoc をアダプターにストリーミング</span><span class="sxs-lookup"><span data-stu-id="5112e-110">Streaming Outbound Flat-File IDOCs to the Adapter</span></span>  
+ <span data-ttu-id="5112e-111">アダプターは、ノード値 SendIdoc 操作の要求メッセージのストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5112e-111">The adapter supports node-value streaming on the request message for the SendIdoc operation.</span></span>  
   
- <span data-ttu-id="0719f-112">ノード値が、WCF チャネル モデルで SendIdoc 操作でストリーミングをサポートするために次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="0719f-112">To support node-value streaming on SendIdoc operations in the WCF channel model, you must:</span></span>  
+ <span data-ttu-id="5112e-112">ノード値が、WCF チャネル モデルで SendIdoc 操作でストリーミングをサポートするために次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="5112e-112">To support node-value streaming on SendIdoc operations in the WCF channel model, you must:</span></span>  
   
-1.  <span data-ttu-id="0719f-113">実装する**System.ServiceModel.Channels.BodyWriter**が (ノード値 IDOC データのストリーミングを実行する) IDOC データをストリーミング可能です。</span><span class="sxs-lookup"><span data-stu-id="0719f-113">Implement a **System.ServiceModel.Channels.BodyWriter** that is capable of streaming the IDOC data (performing node-value streaming on the IDOC data).</span></span>  
+1.  <span data-ttu-id="5112e-113">実装する**System.ServiceModel.Channels.BodyWriter**が (ノード値 IDOC データのストリーミングを実行する) IDOC データをストリーミング可能です。</span><span class="sxs-lookup"><span data-stu-id="5112e-113">Implement a **System.ServiceModel.Channels.BodyWriter** that is capable of streaming the IDOC data (performing node-value streaming on the IDOC data).</span></span>  
   
-2.  <span data-ttu-id="0719f-114">作成、 **System.ServiceModel.Message**これを使用してメッセージ本文を指定することによって、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="0719f-114">Create the **System.ServiceModel.Message** used to invoke the operation by supplying the message body with this **BodyWriter** using an appropriate overload of the **Message.Create** method.</span></span>  
+2.  <span data-ttu-id="5112e-114">作成、 **System.ServiceModel.Message**これを使用してメッセージ本文を指定することによって、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="5112e-114">Create the **System.ServiceModel.Message** used to invoke the operation by supplying the message body with this **BodyWriter** using an appropriate overload of the **Message.Create** method.</span></span>  
   
-### <a name="implementing-a-bodywriter"></a><span data-ttu-id="0719f-115">BodyWriter を実装します。</span><span class="sxs-lookup"><span data-stu-id="0719f-115">Implementing a BodyWriter</span></span>  
- <span data-ttu-id="0719f-116">次の例の実装を示しています、 **BodyWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="0719f-116">The following example shows an implementation of a **BodyWriter** that performs node-value streaming.</span></span>  
+### <a name="implementing-a-bodywriter"></a><span data-ttu-id="5112e-115">BodyWriter を実装します。</span><span class="sxs-lookup"><span data-stu-id="5112e-115">Implementing a BodyWriter</span></span>  
+ <span data-ttu-id="5112e-116">次の例の実装を示しています、 **BodyWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="5112e-116">The following example shows an implementation of a **BodyWriter** that performs node-value streaming.</span></span>  
   
 ```  
 /// <summary>  
@@ -106,8 +106,8 @@ class StreamingBodyWriter : BodyWriter, IDisposable
 }  
 ```  
   
-### <a name="creating-a-message-by-using-a-bodywriter"></a><span data-ttu-id="0719f-117">BodyWriter によるメッセージの作成</span><span class="sxs-lookup"><span data-stu-id="0719f-117">Creating a Message by using a BodyWriter</span></span>  
- <span data-ttu-id="0719f-118">次の例を使用して SendIdoc 要求メッセージを作成する方法を示しています、 **BodyWriter**前の例です。</span><span class="sxs-lookup"><span data-stu-id="0719f-118">The following example shows how to create a SendIdoc request message using the **BodyWriter** in the preceding example.</span></span> <span data-ttu-id="0719f-119">メッセージのデータは、ファイルから読み取られます。</span><span class="sxs-lookup"><span data-stu-id="0719f-119">The message data is read from a file.</span></span>  
+### <a name="creating-a-message-by-using-a-bodywriter"></a><span data-ttu-id="5112e-117">BodyWriter によるメッセージの作成</span><span class="sxs-lookup"><span data-stu-id="5112e-117">Creating a Message by using a BodyWriter</span></span>  
+ <span data-ttu-id="5112e-118">次の例を使用して SendIdoc 要求メッセージを作成する方法を示しています、 **BodyWriter**前の例です。</span><span class="sxs-lookup"><span data-stu-id="5112e-118">The following example shows how to create a SendIdoc request message using the **BodyWriter** in the preceding example.</span></span> <span data-ttu-id="5112e-119">メッセージのデータは、ファイルから読み取られます。</span><span class="sxs-lookup"><span data-stu-id="5112e-119">The message data is read from a file.</span></span>  
   
 ```  
 XmlReader readerIn = XmlReader.Create ("sendidoc.xml");  
@@ -120,17 +120,17 @@ Message InputMsg = Message.CreateMessage(MessageVersion.Default,
   
 ```  
   
-## <a name="streaming-inbound-flat-file-idocs-from-the-adapter"></a><span data-ttu-id="0719f-120">アダプターからの着信フラット ファイル Idoc のストリーミング</span><span class="sxs-lookup"><span data-stu-id="0719f-120">Streaming Inbound Flat-File IDOCs from the Adapter</span></span>  
- <span data-ttu-id="0719f-121">受信 ReceiveIdoc 操作では、フラット ファイル Idoc を受信します。</span><span class="sxs-lookup"><span data-stu-id="0719f-121">You receive a flat-file IDOCs in the inbound ReceiveIdoc operation.</span></span> <span data-ttu-id="0719f-122">アダプターは、ノード値 ReceiveIdoc 操作の要求メッセージのストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="0719f-122">The adapter supports node-value streaming on the request message for the ReceiveIdoc operation.</span></span>  
+## <a name="streaming-inbound-flat-file-idocs-from-the-adapter"></a><span data-ttu-id="5112e-120">アダプターからの着信フラット ファイル Idoc のストリーミング</span><span class="sxs-lookup"><span data-stu-id="5112e-120">Streaming Inbound Flat-File IDOCs from the Adapter</span></span>  
+ <span data-ttu-id="5112e-121">受信 ReceiveIdoc 操作では、フラット ファイル Idoc を受信します。</span><span class="sxs-lookup"><span data-stu-id="5112e-121">You receive a flat-file IDOCs in the inbound ReceiveIdoc operation.</span></span> <span data-ttu-id="5112e-122">アダプターは、ノード値 ReceiveIdoc 操作の要求メッセージのストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5112e-122">The adapter supports node-value streaming on the request message for the ReceiveIdoc operation.</span></span>  
   
- <span data-ttu-id="0719f-123">ノード値が、WCF チャネル モデルで ReceiveIdoc 操作でストリーミングをサポートするために次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="0719f-123">To support node-value streaming on ReceiveIdoc operations in the WCF channel model, you must:</span></span>  
+ <span data-ttu-id="5112e-123">ノード値が、WCF チャネル モデルで ReceiveIdoc 操作でストリーミングをサポートするために次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="5112e-123">To support node-value streaming on ReceiveIdoc operations in the WCF channel model, you must:</span></span>  
   
-1.  <span data-ttu-id="0719f-124">実装する**System.Xml.XmlDictionaryWriter**が (ノード値 IDOC データのストリーミングを実行する) IDOC データをストリーミング可能です。</span><span class="sxs-lookup"><span data-stu-id="0719f-124">Implement a **System.Xml.XmlDictionaryWriter** that is capable of streaming the IDOC data (performing node-value streaming on the IDOC data).</span></span>  
+1.  <span data-ttu-id="5112e-124">実装する**System.Xml.XmlDictionaryWriter**が (ノード値 IDOC データのストリーミングを実行する) IDOC データをストリーミング可能です。</span><span class="sxs-lookup"><span data-stu-id="5112e-124">Implement a **System.Xml.XmlDictionaryWriter** that is capable of streaming the IDOC data (performing node-value streaming on the IDOC data).</span></span>  
   
-2.  <span data-ttu-id="0719f-125">消費、**メッセージ**を呼び出すことによってその**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**です。</span><span class="sxs-lookup"><span data-stu-id="0719f-125">Consume the **Message** by invoking its **WriteBodyContents** method with this **XmlDictionaryWriter**.</span></span>  
+2.  <span data-ttu-id="5112e-125">消費、**メッセージ**を呼び出すことによってその**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**です。</span><span class="sxs-lookup"><span data-stu-id="5112e-125">Consume the **Message** by invoking its **WriteBodyContents** method with this **XmlDictionaryWriter**.</span></span>  
   
-### <a name="implementing-an-xmldictionarywriter"></a><span data-ttu-id="0719f-126">XmlDictionaryWriter の実装</span><span class="sxs-lookup"><span data-stu-id="0719f-126">Implementing an XmlDictionaryWriter</span></span>  
- <span data-ttu-id="0719f-127">次の例の実装を示しています、 **XmlDictionaryWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="0719f-127">The following example shows an implementation of an **XmlDictionaryWriter** that performs node-value streaming.</span></span>  
+### <a name="implementing-an-xmldictionarywriter"></a><span data-ttu-id="5112e-126">XmlDictionaryWriter の実装</span><span class="sxs-lookup"><span data-stu-id="5112e-126">Implementing an XmlDictionaryWriter</span></span>  
+ <span data-ttu-id="5112e-127">次の例の実装を示しています、 **XmlDictionaryWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="5112e-127">The following example shows an implementation of an **XmlDictionaryWriter** that performs node-value streaming.</span></span>  
   
 ```  
 using System;  
@@ -274,8 +274,8 @@ class FileXmlWriter : XmlDictionaryWriter
 }  
 ```  
   
-### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a><span data-ttu-id="0719f-128">メッセージを使用する XmlDictionaryWriter を使用して、</span><span class="sxs-lookup"><span data-stu-id="0719f-128">Consuming a Message by Using an XmlDictionaryWriter</span></span>  
- <span data-ttu-id="0719f-129">次の例を使用して ReceiveIdoc 要求メッセージを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。</span><span class="sxs-lookup"><span data-stu-id="0719f-129">The following example shows how to consume a ReceiveIdoc request message using the **FileXmlWriter** implemented in the preceding example.</span></span> <span data-ttu-id="0719f-130">(、 **FileWriter**サブクラスによってクラスが作成された**XmlDictionaryWriter**)。この例では、 **IReplyChannel**受信 ReceiveIdoc 操作へのチャネル。</span><span class="sxs-lookup"><span data-stu-id="0719f-130">(The **FileWriter** class was created by sub-classing **XmlDictionaryWriter**.) The example uses an **IReplyChannel** channel to receive the ReceiveIdoc operation.</span></span> <span data-ttu-id="0719f-131">チャネルの作成の詳細が省略されています。</span><span class="sxs-lookup"><span data-stu-id="0719f-131">The details of the channel creation have been omitted.</span></span> <span data-ttu-id="0719f-132">ReceiveIdoc 要求メッセージは、ファイルに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="0719f-132">The ReceiveIdoc request message is written to a file.</span></span>  
+### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a><span data-ttu-id="5112e-128">メッセージを使用する XmlDictionaryWriter を使用して、</span><span class="sxs-lookup"><span data-stu-id="5112e-128">Consuming a Message by Using an XmlDictionaryWriter</span></span>  
+ <span data-ttu-id="5112e-129">次の例を使用して ReceiveIdoc 要求メッセージを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。</span><span class="sxs-lookup"><span data-stu-id="5112e-129">The following example shows how to consume a ReceiveIdoc request message using the **FileXmlWriter** implemented in the preceding example.</span></span> <span data-ttu-id="5112e-130">(、 **FileWriter**サブクラスによってクラスが作成された**XmlDictionaryWriter**)。この例では、 **IReplyChannel**受信 ReceiveIdoc 操作へのチャネル。</span><span class="sxs-lookup"><span data-stu-id="5112e-130">(The **FileWriter** class was created by sub-classing **XmlDictionaryWriter**.) The example uses an **IReplyChannel** channel to receive the ReceiveIdoc operation.</span></span> <span data-ttu-id="5112e-131">チャネルの作成の詳細が省略されています。</span><span class="sxs-lookup"><span data-stu-id="5112e-131">The details of the channel creation have been omitted.</span></span> <span data-ttu-id="5112e-132">ReceiveIdoc 要求メッセージは、ファイルに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="5112e-132">The ReceiveIdoc request message is written to a file.</span></span>  
   
 ```  
 // Receive the ReceiveIdoc request message from the adapter.  
@@ -290,5 +290,5 @@ fileXmlWriter.Close();
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="0719f-133">参照</span><span class="sxs-lookup"><span data-stu-id="0719f-133">See Also</span></span>  
-[<span data-ttu-id="0719f-134">WCF チャネル モデルを使用してアプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="0719f-134">Develop applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="5112e-133">参照</span><span class="sxs-lookup"><span data-stu-id="5112e-133">See Also</span></span>  
+[<span data-ttu-id="5112e-134">WCF チャネル モデルを使用してアプリケーションを開発する</span><span class="sxs-lookup"><span data-stu-id="5112e-134">Develop applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

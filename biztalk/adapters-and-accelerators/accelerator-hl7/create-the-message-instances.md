@@ -12,23 +12,23 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2cd086459c52dbea01e5658115bfae9115f95479
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cfd39e1da4e8c730e2ca1c663a5844355ac9cd08
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="create-the-message-instances"></a><span data-ttu-id="56ddd-102">メッセージ インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="56ddd-102">Create the Message Instances</span></span>
-<span data-ttu-id="56ddd-103">ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチュートリアルを実行するときに使用する必要があるメッセージ インスタンスを作成するのには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="56ddd-103">Use the following procedures to create the ADT^A03.txt message file, and to create the message instances that you will need to use when you run the Batching tutorial.</span></span>  
+# <a name="create-the-message-instances"></a><span data-ttu-id="3b395-102">メッセージ インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3b395-102">Create the Message Instances</span></span>
+<span data-ttu-id="3b395-103">ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチュートリアルを実行するときに使用する必要があるメッセージ インスタンスを作成するのには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="3b395-103">Use the following procedures to create the ADT^A03.txt message file, and to create the message instances that you will need to use when you run the Batching tutorial.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="56ddd-104">をメモ帳でこれらのメッセージを作成する場合は、キャリッジ リターンの次の最後の行を削除します。</span><span class="sxs-lookup"><span data-stu-id="56ddd-104">When creating these messages in Notepad, delete the carriage return following the last line.</span></span>  
+>  <span data-ttu-id="3b395-104">をメモ帳でこれらのメッセージを作成する場合は、キャリッジ リターンの次の最後の行を削除します。</span><span class="sxs-lookup"><span data-stu-id="3b395-104">When creating these messages in Notepad, delete the carriage return following the last line.</span></span>  
   
-### <a name="to-create-the-fragmented-batch-message-instance-text-file"></a><span data-ttu-id="56ddd-105">断片化されたバッチのメッセージ インスタンスのテキスト ファイルを作成するには</span><span class="sxs-lookup"><span data-stu-id="56ddd-105">To create the fragmented batch message instance text file</span></span>  
+### <a name="to-create-the-fragmented-batch-message-instance-text-file"></a><span data-ttu-id="3b395-105">断片化されたバッチのメッセージ インスタンスのテキスト ファイルを作成するには</span><span class="sxs-lookup"><span data-stu-id="3b395-105">To create the fragmented batch message instance text file</span></span>  
   
-1.  <span data-ttu-id="56ddd-106">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="56ddd-106">Open Notepad.</span></span>  
+1.  <span data-ttu-id="3b395-106">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="3b395-106">Open Notepad.</span></span>  
   
-2.  <span data-ttu-id="56ddd-107">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="56ddd-107">Copy the following text into Notepad:</span></span>  
+2.  <span data-ttu-id="3b395-107">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="3b395-107">Copy the following text into Notepad:</span></span>  
   
     ```  
     FHS|^~\&|Tutorial_BatchSource|FileSendingFacility|Tutorial_BatchParty|FileReceivingFacility|20040215115056.2222-0800  
@@ -47,13 +47,13 @@ ms.lasthandoff: 09/20/2017
     FTS|1|File,BatchCount,TrailerComment  
     ```  
   
-3.  <span data-ttu-id="56ddd-108">ファイルに保存**FragmentedInboundBatch.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="56ddd-108">Save the file as **FragmentedInboundBatch.txt** in the \<*drive*:>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
+3.  <span data-ttu-id="3b395-108">ファイルに保存**FragmentedInboundBatch.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="3b395-108">Save the file as **FragmentedInboundBatch.txt** in the \<*drive*:\>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
   
-### <a name="to-create-the-batch-inbatch-out-message-instance-text-file"></a><span data-ttu-id="56ddd-109">内のバッチの作成/メッセージ インスタンスのテキスト ファイルをバッチ処理するには</span><span class="sxs-lookup"><span data-stu-id="56ddd-109">To create the batch in/batch out message instance text file</span></span>  
+### <a name="to-create-the-batch-inbatch-out-message-instance-text-file"></a><span data-ttu-id="3b395-109">内のバッチの作成/メッセージ インスタンスのテキスト ファイルをバッチ処理するには</span><span class="sxs-lookup"><span data-stu-id="3b395-109">To create the batch in/batch out message instance text file</span></span>  
   
-1.  <span data-ttu-id="56ddd-110">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="56ddd-110">Open Notepad.</span></span>  
+1.  <span data-ttu-id="3b395-110">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="3b395-110">Open Notepad.</span></span>  
   
-2.  <span data-ttu-id="56ddd-111">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="56ddd-111">Copy the following text into Notepad:</span></span>  
+2.  <span data-ttu-id="3b395-111">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="3b395-111">Copy the following text into Notepad:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_BatchSource|XYZ_ADMITTING|MESA_IS|XYZ_HOSPITAL|20040215115056||ADT^A03|000001|P|2.3.1  
@@ -68,13 +68,13 @@ ms.lasthandoff: 09/20/2017
     PV1|1|I|2000^2012^01^JDL&test&DNS^test^test^test^test^test||||004777^DOE^JANE^A.|||SUR||||2|A0  
     ```  
   
-3.  <span data-ttu-id="56ddd-112">ファイルに保存**BatchInBatchOut.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="56ddd-112">Save the file as **BatchInBatchOut.txt** in the \<*drive*:>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
+3.  <span data-ttu-id="3b395-112">ファイルに保存**BatchInBatchOut.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="3b395-112">Save the file as **BatchInBatchOut.txt** in the \<*drive*:\>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
   
-### <a name="to-create-the-create-batch-message-instance-text-files"></a><span data-ttu-id="56ddd-113">テキスト ファイルを作成するバッチのメッセージ インスタンスを作成するには</span><span class="sxs-lookup"><span data-stu-id="56ddd-113">To create the create batch message instance text files</span></span>  
+### <a name="to-create-the-create-batch-message-instance-text-files"></a><span data-ttu-id="3b395-113">テキスト ファイルを作成するバッチのメッセージ インスタンスを作成するには</span><span class="sxs-lookup"><span data-stu-id="3b395-113">To create the create batch message instance text files</span></span>  
   
-1.  <span data-ttu-id="56ddd-114">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="56ddd-114">Open Notepad.</span></span>  
+1.  <span data-ttu-id="3b395-114">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="3b395-114">Open Notepad.</span></span>  
   
-2.  <span data-ttu-id="56ddd-115">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="56ddd-115">Copy the following text into Notepad:</span></span>  
+2.  <span data-ttu-id="3b395-115">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="3b395-115">Copy the following text into Notepad:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_BatchSource|XYZ_ADMITTING|Tutorial_BatchDest|XYZ_HOSPITAL|20040215115056||ADT^A03|Msg01|P|2.3.1  
@@ -84,9 +84,9 @@ ms.lasthandoff: 09/20/2017
     PV1|1|I|2000^2012^01^hey&test&DNS^test^test^test^test^test||||004777^MILLER^CONNIE^A.|||SUR||||2|A0  
     ```  
   
-3.  <span data-ttu-id="56ddd-116">ファイルに保存**CreateBatchMessage1.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="56ddd-116">Save the file as **CreateBatchMessage1.txt** in the \<*drive*:>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
+3.  <span data-ttu-id="3b395-116">ファイルに保存**CreateBatchMessage1.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="3b395-116">Save the file as **CreateBatchMessage1.txt** in the \<*drive*:\>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
   
-4.  <span data-ttu-id="56ddd-117">メモ帳の新しいインスタンスに、次のテキストをコピーします。</span><span class="sxs-lookup"><span data-stu-id="56ddd-117">Copy the following text into a new instance of Notepad:</span></span>  
+4.  <span data-ttu-id="3b395-117">メモ帳の新しいインスタンスに、次のテキストをコピーします。</span><span class="sxs-lookup"><span data-stu-id="3b395-117">Copy the following text into a new instance of Notepad:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_BatchSource|XYZ_ADMITTING|Tutorial_BatchDest|XYZ_HOSPITAL|20040215115056||ADT^A03|Msg02|T|2.3.1  
@@ -96,6 +96,6 @@ ms.lasthandoff: 09/20/2017
     PV1|1|I|2000^2012^01^JDL&test&DNS^test^test^test^test^test||||004777^DOE^JANE^A.|||SUR||||2|A0  
     ```  
   
-5.  <span data-ttu-id="56ddd-118">ファイルに保存**CreateBatchMessage2.txt**で、 \<*ドライブ*: > \Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="56ddd-118">Save the file as **CreateBatchMessage2.txt** in the \<*drive*:>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
+5.  <span data-ttu-id="3b395-118">ファイルに保存**CreateBatchMessage2.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳です。</span><span class="sxs-lookup"><span data-stu-id="3b395-118">Save the file as **CreateBatchMessage2.txt** in the \<*drive*:\>\Batching Tutorial\Instances folder, and then close Notepad.</span></span>  
   
- <span data-ttu-id="56ddd-119">進みます[パート 1: 受信バッチのシナリオを断片化](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="56ddd-119">Proceed to [Part 1: Fragmented Inbound Batch Scenario](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md).</span></span>
+ <span data-ttu-id="3b395-119">進みます[パート 1: 受信バッチのシナリオを断片化](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="3b395-119">Proceed to [Part 1: Fragmented Inbound Batch Scenario](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md).</span></span>

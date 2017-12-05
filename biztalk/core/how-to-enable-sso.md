@@ -21,60 +21,60 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f51b07bc34779643124efd5b249373301f7e47b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a843c0f6cdea32ba5218140069163058fcd42442
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="how-to-enable-sso"></a><span data-ttu-id="2814f-102">SSO を有効にする方法</span><span class="sxs-lookup"><span data-stu-id="2814f-102">How to Enable SSO</span></span>
-<span data-ttu-id="2814f-103">MMC スナップインまたはコマンド ラインを使用して、エンタープライズ シングル サインオン (SSO) システムを全面的に有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="2814f-103">You can enable the entire Enterprise Single Sign-On (SSO) system by using either the MMC Snap-In or the command line.</span></span>  
+# <a name="how-to-enable-sso"></a><span data-ttu-id="2b3a9-102">SSO を有効にする方法</span><span class="sxs-lookup"><span data-stu-id="2b3a9-102">How to Enable SSO</span></span>
+<span data-ttu-id="2b3a9-103">MMC スナップインまたはコマンド ラインを使用して、エンタープライズ シングル サインオン (SSO) システムを全面的に有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-103">You can enable the entire Enterprise Single Sign-On (SSO) system by using either the MMC Snap-In or the command line.</span></span>  
   
- <span data-ttu-id="2814f-104">有効化コマンドを実行した後、各シングル サインオン サーバーで最新のグローバル情報を取得するために SSO データベースをポーリングするので、すべてのサーバーが有効になるまでに、若干の遅延が発生します。</span><span class="sxs-lookup"><span data-stu-id="2814f-104">After you run the enabling command, there is a short delay before all Single Sign-On Servers are enabled, as each polls the SSO database for the latest global information.</span></span>  
+ <span data-ttu-id="2b3a9-104">有効化コマンドを実行した後、各シングル サインオン サーバーで最新のグローバル情報を取得するために SSO データベースをポーリングするので、すべてのサーバーが有効になるまでに、若干の遅延が発生します。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-104">After you run the enabling command, there is a short delay before all Single Sign-On Servers are enabled, as each polls the SSO database for the latest global information.</span></span>  
   
- <span data-ttu-id="2814f-105">SSO システムの関連アプリケーションおよびマッピングを構成する場合、関連アプリケーションを作成する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="2814f-105">If you want to configure affiliate applications and mappings in the SSO system, you must also create an affiliate application.</span></span> <span data-ttu-id="2814f-106">SSO 関連管理者が関連アプリケーションを作成した後で、アプリケーション管理者が変更を加えたり、アプリケーション ユーザー (エンド ユーザー) が自分のマッピングを作成したりできます。</span><span class="sxs-lookup"><span data-stu-id="2814f-106">After an SSO affiliate administrator creates an affiliate application, an application administrator can make changes to it, and application users (end-users) can create their own mappings.</span></span> <span data-ttu-id="2814f-107">詳細については、次を参照してください。[関連アプリケーションを管理する](../core/managing-affiliate-applications.md)と[ユーザー マッピングを管理する](../core/managing-user-mappings.md)です。</span><span class="sxs-lookup"><span data-stu-id="2814f-107">For more information, see [Managing Affiliate Applications](../core/managing-affiliate-applications.md) and [Managing User Mappings](../core/managing-user-mappings.md).</span></span>  
+ <span data-ttu-id="2b3a9-105">SSO システムの関連アプリケーションおよびマッピングを構成する場合、関連アプリケーションを作成する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-105">If you want to configure affiliate applications and mappings in the SSO system, you must also create an affiliate application.</span></span> <span data-ttu-id="2b3a9-106">SSO 関連管理者が関連アプリケーションを作成した後で、アプリケーション管理者が変更を加えたり、アプリケーション ユーザー (エンド ユーザー) が自分のマッピングを作成したりできます。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-106">After an SSO affiliate administrator creates an affiliate application, an application administrator can make changes to it, and application users (end-users) can create their own mappings.</span></span> <span data-ttu-id="2b3a9-107">詳細については、次を参照してください。[関連アプリケーションを管理する](../core/managing-affiliate-applications.md)と[ユーザー マッピングを管理する](../core/managing-user-mappings.md)です。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-107">For more information, see [Managing Affiliate Applications](../core/managing-affiliate-applications.md) and [Managing User Mappings](../core/managing-user-mappings.md).</span></span>  
   
-### <a name="to-enable-the-sso-system-using-the-mmc-snap-in"></a><span data-ttu-id="2814f-108">MMC スナップインを使用して SSO システムを有効にするには</span><span class="sxs-lookup"><span data-stu-id="2814f-108">To enable the SSO system using the MMC Snap-In</span></span>  
+### <a name="to-enable-the-sso-system-using-the-mmc-snap-in"></a><span data-ttu-id="2b3a9-108">MMC スナップインを使用して SSO システムを有効にするには</span><span class="sxs-lookup"><span data-stu-id="2b3a9-108">To enable the SSO system using the MMC Snap-In</span></span>  
   
-1.  <span data-ttu-id="2814f-109">をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、順にクリック**SSO 管理**です。</span><span class="sxs-lookup"><span data-stu-id="2814f-109">Click **Start**, click **All Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+1.  <span data-ttu-id="2b3a9-109">をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、順にクリック**SSO 管理**です。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-109">Click **Start**, click **All Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
   
-2.  <span data-ttu-id="2814f-110">ENTSSO MMC スナップインの [スコープ] ウィンドウで、展開、**エンタープライズ シングル サインオン**ノード。</span><span class="sxs-lookup"><span data-stu-id="2814f-110">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+2.  <span data-ttu-id="2b3a9-110">ENTSSO MMC スナップインの [スコープ] ウィンドウで、展開、**エンタープライズ シングル サインオン**ノード。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-110">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
   
-3.  <span data-ttu-id="2814f-111">右クリック**システム**、クリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="2814f-111">Right-click **System**, and then click **Enable**.</span></span>  
+3.  <span data-ttu-id="2b3a9-111">右クリック**システム**、クリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-111">Right-click **System**, and then click **Enable**.</span></span>  
   
-### <a name="to-enable-the-sso-system-using-the-command-line"></a><span data-ttu-id="2814f-112">コマンド ラインを使用して SSO システムを有効にするには</span><span class="sxs-lookup"><span data-stu-id="2814f-112">To enable the SSO system using the command line</span></span>  
+### <a name="to-enable-the-sso-system-using-the-command-line"></a><span data-ttu-id="2b3a9-112">コマンド ラインを使用して SSO システムを有効にするには</span><span class="sxs-lookup"><span data-stu-id="2b3a9-112">To enable the SSO system using the command line</span></span>  
   
-1.  <span data-ttu-id="2814f-113">をクリックして**開始**、 をクリックして**実行**、し、入力**cmd**です。</span><span class="sxs-lookup"><span data-stu-id="2814f-113">Click **Start**, click **Run**, and then type **cmd**.</span></span>  
+1.  <span data-ttu-id="2b3a9-113">をクリックして**開始**、 をクリックして**実行**、し、入力**cmd**です。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-113">Click **Start**, click **Run**, and then type **cmd**.</span></span>  
   
-2.  <span data-ttu-id="2814f-114">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="2814f-114">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2814f-115">既定のインストール ディレクトリは**\<ドライブ >**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="2814f-115">The default installation directory is **\<drive>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+2.  <span data-ttu-id="2b3a9-114">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-114">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2b3a9-115">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-115">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="2814f-116">型**ssomanage – enablesso**です。</span><span class="sxs-lookup"><span data-stu-id="2814f-116">Type **ssomanage –enablesso**.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="2814f-117">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="2814f-117">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
-### <a name="to-enable-sso-to-create-affiliate-applications-and-mappings"></a><span data-ttu-id="2814f-118">SSO で関連アプリケーションおよびマッピングを作成できるようにするには</span><span class="sxs-lookup"><span data-stu-id="2814f-118">To enable SSO to create affiliate applications and mappings</span></span>  
-  
-1.  <span data-ttu-id="2814f-119">SSO 管理者または SSO 関連管理者として、SSO サーバーか、SSO の SSO 管理サブサービスを実装しているコンピューターにログオンします。</span><span class="sxs-lookup"><span data-stu-id="2814f-119">Log on as an SSO administrator or SSO affiliate administrator to the SSO Server, or on a computer that has the SSO administration sub services of SSO.</span></span>  
-  
-2.  <span data-ttu-id="2814f-120">**開始** メニューのをクリックして**実行**、し、入力**cmd**です。</span><span class="sxs-lookup"><span data-stu-id="2814f-120">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
-  
-3.  <span data-ttu-id="2814f-121">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="2814f-121">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2814f-122">既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="2814f-122">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
-  
-4.  <span data-ttu-id="2814f-123">型**ssomanage-enablesso**エンタープライズ シングル サインオン サービスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="2814f-123">Type **ssomanage -enablesso** to enable the Enterprise Single Sign-On service.</span></span>  
+3.  <span data-ttu-id="2b3a9-116">型**ssomanage – enablesso**です。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-116">Type **ssomanage –enablesso**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="2814f-124">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="2814f-124">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+    >  <span data-ttu-id="2b3a9-117">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-117">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-5.  <span data-ttu-id="2814f-125">SSO 関連管理者としてログオンします。</span><span class="sxs-lookup"><span data-stu-id="2814f-125">Log on as an SSO affiliate administrator.</span></span>  
+### <a name="to-enable-sso-to-create-affiliate-applications-and-mappings"></a><span data-ttu-id="2b3a9-118">SSO で関連アプリケーションおよびマッピングを作成できるようにするには</span><span class="sxs-lookup"><span data-stu-id="2b3a9-118">To enable SSO to create affiliate applications and mappings</span></span>  
   
-6.  <span data-ttu-id="2814f-126">型**ssomanage - createapps」と入力*\<アプリケーション ファイル >*** 関連アプリケーションを作成する場所\<アプリケーション ファイル > の定義を含む XML ファイルには関連アプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="2814f-126">Type **ssomanage -createapps *\<application file>*** to create an affiliate application, where \<application file> is the XML file that contains definitions for the affiliate applications.</span></span>  
+1.  <span data-ttu-id="2b3a9-119">SSO 管理者または SSO 関連管理者として、SSO サーバーか、SSO の SSO 管理サブサービスを実装しているコンピューターにログオンします。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-119">Log on as an SSO administrator or SSO affiliate administrator to the SSO Server, or on a computer that has the SSO administration sub services of SSO.</span></span>  
+  
+2.  <span data-ttu-id="2b3a9-120">**開始** メニューのをクリックして**実行**、し、入力**cmd**です。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-120">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+  
+3.  <span data-ttu-id="2b3a9-121">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-121">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2b3a9-122">既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-122">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+4.  <span data-ttu-id="2b3a9-123">型**ssomanage-enablesso**エンタープライズ シングル サインオン サービスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-123">Type **ssomanage -enablesso** to enable the Enterprise Single Sign-On service.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="2814f-127">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="2814f-127">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+    >  <span data-ttu-id="2b3a9-124">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-124">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2814f-128">参照</span><span class="sxs-lookup"><span data-stu-id="2814f-128">See Also</span></span>  
- <span data-ttu-id="2814f-129">[SSO サーバーを設定する方法](../core/how-to-set-the-sso-server.md) </span><span class="sxs-lookup"><span data-stu-id="2814f-129">[How to Set the SSO Server](../core/how-to-set-the-sso-server.md) </span></span>  
- <span data-ttu-id="2814f-130">[SSO を無効にする方法](../core/how-to-disable-sso.md) </span><span class="sxs-lookup"><span data-stu-id="2814f-130">[How to Disable SSO](../core/how-to-disable-sso.md) </span></span>  
- <span data-ttu-id="2814f-131">[SSO データベースを更新する方法](../core/how-to-update-the-sso-database.md) </span><span class="sxs-lookup"><span data-stu-id="2814f-131">[How to Update the SSO Database](../core/how-to-update-the-sso-database.md) </span></span>  
- [<span data-ttu-id="2814f-132">SSO の使用</span><span class="sxs-lookup"><span data-stu-id="2814f-132">Using SSO</span></span>](../core/using-sso.md)
+5.  <span data-ttu-id="2b3a9-125">SSO 関連管理者としてログオンします。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-125">Log on as an SSO affiliate administrator.</span></span>  
+  
+6.  <span data-ttu-id="2b3a9-126">型**ssomanage - createapps」と入力*\<アプリケーション ファイル\>*** 関連アプリケーションを作成する場所\<アプリケーション ファイル\>XML ファイルです関連アプリケーションの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-126">Type **ssomanage -createapps *\<application file\>*** to create an affiliate application, where \<application file\> is the XML file that contains definitions for the affiliate applications.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="2b3a9-127">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="2b3a9-127">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="2b3a9-128">参照</span><span class="sxs-lookup"><span data-stu-id="2b3a9-128">See Also</span></span>  
+ <span data-ttu-id="2b3a9-129">[SSO サーバーを設定する方法](../core/how-to-set-the-sso-server.md) </span><span class="sxs-lookup"><span data-stu-id="2b3a9-129">[How to Set the SSO Server](../core/how-to-set-the-sso-server.md) </span></span>  
+ <span data-ttu-id="2b3a9-130">[SSO を無効にする方法](../core/how-to-disable-sso.md) </span><span class="sxs-lookup"><span data-stu-id="2b3a9-130">[How to Disable SSO](../core/how-to-disable-sso.md) </span></span>  
+ <span data-ttu-id="2b3a9-131">[SSO データベースを更新する方法](../core/how-to-update-the-sso-database.md) </span><span class="sxs-lookup"><span data-stu-id="2b3a9-131">[How to Update the SSO Database](../core/how-to-update-the-sso-database.md) </span></span>  
+ [<span data-ttu-id="2b3a9-132">SSO の使用</span><span class="sxs-lookup"><span data-stu-id="2b3a9-132">Using SSO</span></span>](../core/using-sso.md)

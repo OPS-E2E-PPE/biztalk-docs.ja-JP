@@ -15,28 +15,28 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0788b693027fb803b121b1b732cb3ee126897e7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f7966fccca324a1453f0ea84e79cd7d9d3d55ad
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="restrictions-on-the-destination-url-property"></a><span data-ttu-id="21819-102">送信先 URL のプロパティに関する制限事項</span><span class="sxs-lookup"><span data-stu-id="21819-102">Restrictions on the Destination URL Property</span></span>
-<span data-ttu-id="21819-103">送信先 URL とは、HTTP プロトコルを使用して送信するメッセージの送信先となる HTTP サーバーのアドレスを指定する文字列です。</span><span class="sxs-lookup"><span data-stu-id="21819-103">The destination URL is a string that specifies the address of the HTTP server where you want to send messages using the HTTP protocol.</span></span>  
+# <a name="restrictions-on-the-destination-url-property"></a><span data-ttu-id="5b95d-102">送信先 URL のプロパティに関する制限事項</span><span class="sxs-lookup"><span data-stu-id="5b95d-102">Restrictions on the Destination URL Property</span></span>
+<span data-ttu-id="5b95d-103">送信先 URL とは、HTTP プロトコルを使用して送信するメッセージの送信先となる HTTP サーバーのアドレスを指定する文字列です。</span><span class="sxs-lookup"><span data-stu-id="5b95d-103">The destination URL is a string that specifies the address of the HTTP server where you want to send messages using the HTTP protocol.</span></span>  
   
- <span data-ttu-id="21819-104">送信先 URL のプロパティには、次の規則および制限が適用されます。</span><span class="sxs-lookup"><span data-stu-id="21819-104">The following rules and restrictions apply to the destination URL property:</span></span>  
+ <span data-ttu-id="5b95d-104">送信先 URL のプロパティには、次の規則および制限が適用されます。</span><span class="sxs-lookup"><span data-stu-id="5b95d-104">The following rules and restrictions apply to the destination URL property:</span></span>  
   
--   <span data-ttu-id="21819-105">送信先 URL のプロパティは、次の形式で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="21819-105">You must always specify the destination URL property in the following format:</span></span>  
+-   <span data-ttu-id="5b95d-105">送信先 URL のプロパティは、次の形式で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b95d-105">You must always specify the destination URL property in the following format:</span></span>  
   
-     <span data-ttu-id="21819-106">http [s]://\<ホスト > [:\<ポート >] [/\<パス > [/\<ファイル > [?\<クエリ文字列 >]]</span><span class="sxs-lookup"><span data-stu-id="21819-106">http[s]://\<host>[:\<port>][/\<path>[/\<file>[?\<query-string>]]]</span></span>  
+     <span data-ttu-id="5b95d-106">http [s]://\<ホスト\>[:\<ポート\>] [/\<パス\>[/\<ファイル\>[?\<クエリ文字列\>]]</span><span class="sxs-lookup"><span data-stu-id="5b95d-106">http[s]://\<host\>[:\<port\>][/\<path\>[/\<file\>[?\<query-string\>]]]</span></span>  
   
--   <span data-ttu-id="21819-107">文字列全体は、URI でエンコードできますが、しなくてもかまいません。</span><span class="sxs-lookup"><span data-stu-id="21819-107">The whole string may or may not be URI encoded.</span></span>  
+-   <span data-ttu-id="5b95d-107">文字列全体は、URI でエンコードできますが、しなくてもかまいません。</span><span class="sxs-lookup"><span data-stu-id="5b95d-107">The whole string may or may not be URI encoded.</span></span>  
   
--   <span data-ttu-id="21819-108">クエリ文字列を除き、文字列全体には、次の文字を含めることはできません: \< >: \ & #124 です。" ?</span><span class="sxs-lookup"><span data-stu-id="21819-108">The whole string, except the query string, cannot contain any of the following characters: \< > : \ &#124; " ?</span></span> <span data-ttu-id="21819-109">*.</span><span class="sxs-lookup"><span data-stu-id="21819-109">*.</span></span>  
+-   <span data-ttu-id="5b95d-108">クエリ文字列を除き、文字列全体には、次の文字を含めることはできません: \< \> : \ &#124;です。" ?</span><span class="sxs-lookup"><span data-stu-id="5b95d-108">The whole string, except the query string, cannot contain any of the following characters: \< \> : \ &#124; " ?</span></span> <span data-ttu-id="5b95d-109">*.</span><span class="sxs-lookup"><span data-stu-id="5b95d-109">*.</span></span>  
   
--   <span data-ttu-id="21819-110">プロパティは区別されません。</span><span class="sxs-lookup"><span data-stu-id="21819-110">The property is not case-sensitive.</span></span>  
+-   <span data-ttu-id="5b95d-110">プロパティは区別されません。</span><span class="sxs-lookup"><span data-stu-id="5b95d-110">The property is not case-sensitive.</span></span>  
   
--   <span data-ttu-id="21819-111">この文字列の長さは 256 文字以下にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="21819-111">The length of the string must not exceed 256 characters.</span></span>  
+-   <span data-ttu-id="5b95d-111">この文字列の長さは 256 文字以下にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b95d-111">The length of the string must not exceed 256 characters.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="21819-112">参照</span><span class="sxs-lookup"><span data-stu-id="21819-112">See Also</span></span>  
- [<span data-ttu-id="21819-113">HTTP 送信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="21819-113">Configuring an HTTP Send Port</span></span>](../core/configuring-an-http-send-port.md)
+## <a name="see-also"></a><span data-ttu-id="5b95d-112">参照</span><span class="sxs-lookup"><span data-stu-id="5b95d-112">See Also</span></span>  
+ [<span data-ttu-id="5b95d-113">HTTP 送信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="5b95d-113">Configuring an HTTP Send Port</span></span>](../core/configuring-an-http-send-port.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd7c3674f0054df82194a7b9e0051b68eabb1086
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 96688fcee44d4b2cf1ff4664847ba19f1aa2030e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="biztalk-server-64-bit-support"></a><span data-ttu-id="a4a2b-102">BizTalk Server での 64 ビットのサポート</span><span class="sxs-lookup"><span data-stu-id="a4a2b-102">BizTalk Server 64-Bit Support</span></span>
-<span data-ttu-id="a4a2b-103">よくある質問 Microsoft の 64 ビット サポートに関連する[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]を参照してください[BizTalk Server の 64年ビット サポート](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。</span><span class="sxs-lookup"><span data-stu-id="a4a2b-103">For frequently asked questions related to 64-bit support for Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], see [BizTalk Server 64-bit Support](http://go.microsoft.com/fwlink/?LinkID=155306) (http://go.microsoft.com/fwlink/?LinkID=155306).</span></span>
+# <a name="biztalk-server-64-bit-support"></a><span data-ttu-id="567c4-102">BizTalk Server での 64 ビットのサポート</span><span class="sxs-lookup"><span data-stu-id="567c4-102">BizTalk Server 64-Bit Support</span></span>
+<span data-ttu-id="567c4-103">よく寄せられる質問については、Microsoft BizTalk Server の 64 ビット サポートに関連する、次を参照してください。 [BizTalk Server の 64 ビット サポート](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。</span><span class="sxs-lookup"><span data-stu-id="567c4-103">For frequently asked questions related to 64-bit support for Microsoft BizTalk Server, see [BizTalk Server 64-bit Support](http://go.microsoft.com/fwlink/?LinkID=155306) (http://go.microsoft.com/fwlink/?LinkID=155306).</span></span>

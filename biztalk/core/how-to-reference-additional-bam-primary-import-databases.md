@@ -12,22 +12,22 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be973777fda6fad83b4ed6c672b68969cdde5919
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fca916339e48f6bce053753111f4467a4c9ae7d5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="how-to-reference-additional-bam-primary-import-databases"></a><span data-ttu-id="77dc9-102">追加の BAM プライマリ インポート データベースを参照する方法</span><span class="sxs-lookup"><span data-stu-id="77dc9-102">How to Reference Additional BAM Primary Import Databases</span></span>
-<span data-ttu-id="77dc9-103">管理者を使用して、**参照を有効にする**コマンドを追加の BAM プライマリ インポート データベースを参照します。</span><span class="sxs-lookup"><span data-stu-id="77dc9-103">Administrators use the **enable-reference** command to reference additional BAM Primary Import databases.</span></span> <span data-ttu-id="77dc9-104">分散 BAM アクティビティの表示を容易にするには、複数の BAM プライマリ インポート データベースを参照します。</span><span class="sxs-lookup"><span data-stu-id="77dc9-104">You reference multiple BAM Primary Import databases to facilitate viewing distributed BAM activities.</span></span>  
+# <a name="how-to-reference-additional-bam-primary-import-databases"></a><span data-ttu-id="d32a0-102">追加の BAM プライマリ インポート データベースを参照する方法</span><span class="sxs-lookup"><span data-stu-id="d32a0-102">How to Reference Additional BAM Primary Import Databases</span></span>
+<span data-ttu-id="d32a0-103">管理者を使用して、**参照を有効にする**コマンドを追加の BAM プライマリ インポート データベースを参照します。</span><span class="sxs-lookup"><span data-stu-id="d32a0-103">Administrators use the **enable-reference** command to reference additional BAM Primary Import databases.</span></span> <span data-ttu-id="d32a0-104">分散 BAM アクティビティの表示を容易にするには、複数の BAM プライマリ インポート データベースを参照します。</span><span class="sxs-lookup"><span data-stu-id="d32a0-104">You reference multiple BAM Primary Import databases to facilitate viewing distributed BAM activities.</span></span>  
   
-### <a name="to-enable-a-reference-to-an-additional-bam-primary-import-database"></a><span data-ttu-id="77dc9-105">追加の BAM プライマリ インポート データベースへの参照を有効にするには</span><span class="sxs-lookup"><span data-stu-id="77dc9-105">To enable a reference to an additional BAM Primary Import database</span></span>  
+### <a name="to-enable-a-reference-to-an-additional-bam-primary-import-database"></a><span data-ttu-id="d32a0-105">追加の BAM プライマリ インポート データベースへの参照を有効にするには</span><span class="sxs-lookup"><span data-stu-id="d32a0-105">To enable a reference to an additional BAM Primary Import database</span></span>  
   
-1.  <span data-ttu-id="77dc9-106">次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="77dc9-106">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
+1.  <span data-ttu-id="d32a0-106">次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="d32a0-106">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  <span data-ttu-id="77dc9-107">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。</span><span class="sxs-lookup"><span data-stu-id="77dc9-107">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
+2.  <span data-ttu-id="d32a0-107">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。</span><span class="sxs-lookup"><span data-stu-id="d32a0-107">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
   
-3.  <span data-ttu-id="77dc9-108">コマンド ライン プロンプトで、次を入力: **bm 参照を有効にする TargetServer:\<対象サーバー > - TargetDatabase:\<対象データベース >**ここで、 \<*ターゲットサーバー*> で指定されたターゲットの BAM プライマリ インポート データベース、SQL server の名前は置き換え\<対象データベース > が存在します。</span><span class="sxs-lookup"><span data-stu-id="77dc9-108">Type the following at the command line prompt: **bm enable-reference -TargetServer:\<target server> -TargetDatabase:\<target database>**, where \<*target server*> is replaced by the name of the SQL server on which the target BAM Primary Import database specified by \<target database> resides.</span></span> <span data-ttu-id="77dc9-109">Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="77dc9-109">Press ENTER.</span></span>  
+3.  <span data-ttu-id="d32a0-108">コマンド ライン プロンプトで、次を入力: **bm 参照を有効にする TargetServer:\<ターゲット サーバー\> - TargetDatabase:\<ターゲット データベース\>**ここで、 \<*ターゲット サーバー* \>で指定されたターゲットの BAM プライマリ インポート データベース、SQL server の名前は置き換え\<ターゲット データベース\>が存在します。</span><span class="sxs-lookup"><span data-stu-id="d32a0-108">Type the following at the command line prompt: **bm enable-reference -TargetServer:\<target server\> -TargetDatabase:\<target database\>**, where \<*target server*\> is replaced by the name of the SQL server on which the target BAM Primary Import database specified by \<target database\> resides.</span></span> <span data-ttu-id="d32a0-109">Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="d32a0-109">Press ENTER.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="77dc9-110">参照</span><span class="sxs-lookup"><span data-stu-id="77dc9-110">See Also</span></span>  
- [<span data-ttu-id="77dc9-111">BAM 管理ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="77dc9-111">BAM Management Utility</span></span>](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="d32a0-110">参照</span><span class="sxs-lookup"><span data-stu-id="d32a0-110">See Also</span></span>  
+ [<span data-ttu-id="d32a0-111">BAM 管理ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="d32a0-111">BAM Management Utility</span></span>](../core/bam-management-utility.md)

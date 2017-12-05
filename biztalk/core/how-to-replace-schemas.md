@@ -12,40 +12,40 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e8d4e3be39d27d30ca8fa6062bb452a8ce32a12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df444b8169d75408fe6e412135029ae2b051a6d2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="how-to-replace-schemas"></a><span data-ttu-id="fd634-102">スキーマを置換する方法</span><span class="sxs-lookup"><span data-stu-id="fd634-102">How to Replace Schemas</span></span>
-<span data-ttu-id="fd634-103">更新されたスキーマを取引先から受け取った場合など、既存のマップ内にある送信元や送信先スキーマの置換が必要になることがあります。</span><span class="sxs-lookup"><span data-stu-id="fd634-103">There may be times when you want to replace either the source or destination schema in an existing map, such as when you receive an updated schema from a trading partner.</span></span>  
+# <a name="how-to-replace-schemas"></a><span data-ttu-id="98a8e-102">スキーマを置換する方法</span><span class="sxs-lookup"><span data-stu-id="98a8e-102">How to Replace Schemas</span></span>
+<span data-ttu-id="98a8e-103">更新されたスキーマを取引先から受け取った場合など、既存のマップ内にある送信元や送信先スキーマの置換が必要になることがあります。</span><span class="sxs-lookup"><span data-stu-id="98a8e-103">There may be times when you want to replace either the source or destination schema in an existing map, such as when you receive an updated schema from a trading partner.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="fd634-104">BizTalk マッパーでは、保持されるスキーマと置換されるスキーマの間の既存のリンクが維持されます。</span><span class="sxs-lookup"><span data-stu-id="fd634-104">The BizTalk Mapper attempts to maintain all existing links between the retained schema and the replaced schema.</span></span>  
+>  <span data-ttu-id="98a8e-104">BizTalk マッパーでは、保持されるスキーマと置換されるスキーマの間の既存のリンクが維持されます。</span><span class="sxs-lookup"><span data-stu-id="98a8e-104">The BizTalk Mapper attempts to maintain all existing links between the retained schema and the replaced schema.</span></span>  
   
-## <a name="replace-a-source-or-destination-schema"></a><span data-ttu-id="fd634-105">送信元または送信先スキーマを置換します。</span><span class="sxs-lookup"><span data-stu-id="fd634-105">Replace a source or destination schema</span></span>  
+## <a name="replace-a-source-or-destination-schema"></a><span data-ttu-id="98a8e-105">送信元または送信先スキーマを置換します。</span><span class="sxs-lookup"><span data-stu-id="98a8e-105">Replace a source or destination schema</span></span>  
   
-1.  <span data-ttu-id="fd634-106">移行元または送信先のスキーマ ツリー ビューを右クリックし **スキーマの置換**です。</span><span class="sxs-lookup"><span data-stu-id="fd634-106">Right-click either the source or destination schema tree view, and then select **Replace Schema**.</span></span>  
+1.  <span data-ttu-id="98a8e-106">移行元または送信先のスキーマ ツリー ビューを右クリックし **スキーマの置換**です。</span><span class="sxs-lookup"><span data-stu-id="98a8e-106">Right-click either the source or destination schema tree view, and then select **Replace Schema**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="fd634-107">または、キーボードで Ctrl キーを押しながら M キーを押し、次に Ctrl キーを押しながら S キーを押します。</span><span class="sxs-lookup"><span data-stu-id="fd634-107">Alternatively, you can also press CTRL+M, CTRL+S from the keyboard.</span></span> <span data-ttu-id="fd634-108">マッパーのキーボード ショートカットの一覧については、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。</span><span class="sxs-lookup"><span data-stu-id="fd634-108">For a complete list of Mapper keyboard shortcuts, see [BizTalk Mapper Keyboard Shortcuts](../core/biztalk-mapper-keyboard-shortcuts.md).</span></span>  
+    >  <span data-ttu-id="98a8e-107">または、キーボードで Ctrl キーを押しながら M キーを押し、次に Ctrl キーを押しながら S キーを押します。</span><span class="sxs-lookup"><span data-stu-id="98a8e-107">Alternatively, you can also press CTRL+M, CTRL+S from the keyboard.</span></span> <span data-ttu-id="98a8e-108">マッパーのキーボード ショートカットの一覧については、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。</span><span class="sxs-lookup"><span data-stu-id="98a8e-108">For a complete list of Mapper keyboard shortcuts, see [BizTalk Mapper Keyboard Shortcuts](../core/biztalk-mapper-keyboard-shortcuts.md).</span></span>  
   
-2.  <span data-ttu-id="fd634-109">**BizTalk 型の選択**] ダイアログ ボックスで、展開、**スキーマ**ツリーで、ノードは、適切なスキーマを選択し、[ **OK**です。</span><span class="sxs-lookup"><span data-stu-id="fd634-109">In the **BizTalk Type Picker** dialog box, expand the **Schemas** node in the tree, select the appropriate schema, and then select **OK**.</span></span>  
+2.  <span data-ttu-id="98a8e-109">**BizTalk 型の選択**] ダイアログ ボックスで、展開、**スキーマ**ツリーで、ノードは、適切なスキーマを選択し、[ **OK**です。</span><span class="sxs-lookup"><span data-stu-id="98a8e-109">In the **BizTalk Type Picker** dialog box, expand the **Schemas** node in the tree, select the appropriate schema, and then select **OK**.</span></span>  
   
-     <span data-ttu-id="fd634-110">![スキーマを選択](../core/media/biztalk-typepicker.gif "BizTalk_TypePicker")</span><span class="sxs-lookup"><span data-stu-id="fd634-110">![Select the Schema](../core/media/biztalk-typepicker.gif "BizTalk_TypePicker")</span></span>  
+     <span data-ttu-id="98a8e-110">![スキーマを選択](../core/media/biztalk-typepicker.gif "BizTalk_TypePicker")</span><span class="sxs-lookup"><span data-stu-id="98a8e-110">![Select the Schema](../core/media/biztalk-typepicker.gif "BizTalk_TypePicker")</span></span>  
 
     > [!TIP] 
-    > <span data-ttu-id="fd634-111">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="fd634-111">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can resize the Type Picker window to see the full name of your schema.</span></span>
+    > <span data-ttu-id="98a8e-111">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="98a8e-111">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can resize the Type Picker window to see the full name of your schema.</span></span>
       
-     <span data-ttu-id="fd634-112">置換スキーマに単一のルートが存在するか、置換を使用してスキーマのルート ノードが設定された場合のみ、**ルート参照**のプロパティ、**スキーマ**ノード、置換スキーマが開きます関連するウィンドウで、手順 3. を実行する必要がありますいないとします。</span><span class="sxs-lookup"><span data-stu-id="fd634-112">If only a single root exists in the replacement schema, or a root node has been established for the replacement schema using the **Root Reference** property of the **Schema** node, the replacement schema opens in the relevant pane, and you will not need to perform step 3.</span></span>  
+     <span data-ttu-id="98a8e-112">置換スキーマに単一のルートが存在するか、置換を使用してスキーマのルート ノードが設定された場合のみ、**ルート参照**のプロパティ、**スキーマ**ノード、置換スキーマが開きます関連するウィンドウで、手順 3. を実行する必要がありますいないとします。</span><span class="sxs-lookup"><span data-stu-id="98a8e-112">If only a single root exists in the replacement schema, or a root node has been established for the replacement schema using the **Root Reference** property of the **Schema** node, the replacement schema opens in the relevant pane, and you will not need to perform step 3.</span></span>  
   
-3.  <span data-ttu-id="fd634-113">複数のルート ノードが、送信先スキーマ内に存在し、変換先を使用してスキーマのルート ノードが設定されていない場合、**ルート参照**のプロパティ、**スキーマ**ノードで、 **のルート ノード\<*ソース/ターゲット*> スキーマ * * ダイアログ ボックスで、適切なルート ノードを選択し、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="fd634-113">If multiple root nodes exist in the destination schema, and no root node has been established for the destination schema using the **Root Reference** property of the **Schema** node, in the **Root Node for \<*Source/Target*> Schema** dialog box, select the appropriate root node, and then select **OK**.</span></span>  
+3.  <span data-ttu-id="98a8e-113">複数のルート ノードが、送信先スキーマ内に存在し、変換先を使用してスキーマのルート ノードが設定されていない場合、**ルート参照**のプロパティ、**スキーマ**ノードで、 **のルート ノード\<*ソース/ターゲット*\>スキーマ * * ダイアログ ボックスで、適切なルート ノードを選択し、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="98a8e-113">If multiple root nodes exist in the destination schema, and no root node has been established for the destination schema using the **Root Reference** property of the **Schema** node, in the **Root Node for \<*Source/Target*\> Schema** dialog box, select the appropriate root node, and then select **OK**.</span></span>  
   
-     <span data-ttu-id="fd634-114">該当するペインに置換スキーマが開きます。</span><span class="sxs-lookup"><span data-stu-id="fd634-114">The replacement schema opens in the relevant pane.</span></span>  
+     <span data-ttu-id="98a8e-114">該当するペインに置換スキーマが開きます。</span><span class="sxs-lookup"><span data-stu-id="98a8e-114">The replacement schema opens in the relevant pane.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="fd634-115">スキーマを置換する際、関連するレコードまたはフィールドが見つかった場合は、一部のリンクが失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="fd634-115">While replacing schema, if relevant records/fields are not found, some links may get lost.</span></span> <span data-ttu-id="fd634-116">選択した場合にのみ、スキーマが置き換えられます**はい**上、**確認** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="fd634-116">The schema is replaced only when you select **Yes** on the **Confirmation**  dialog box.</span></span>  
+    >  <span data-ttu-id="98a8e-115">スキーマを置換する際、関連するレコードまたはフィールドが見つかった場合は、一部のリンクが失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="98a8e-115">While replacing schema, if relevant records/fields are not found, some links may get lost.</span></span> <span data-ttu-id="98a8e-116">選択した場合にのみ、スキーマが置き換えられます**はい**上、**確認** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="98a8e-116">The schema is replaced only when you select **Yes** on the **Confirmation**  dialog box.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="fd634-117">参照</span><span class="sxs-lookup"><span data-stu-id="fd634-117">See Also</span></span>  
- [<span data-ttu-id="fd634-118">プロジェクト内のマップを管理します。</span><span class="sxs-lookup"><span data-stu-id="fd634-118">Managing Maps Within Projects</span></span>](../core/managing-maps-within-projects.md)
+## <a name="see-also"></a><span data-ttu-id="98a8e-117">参照</span><span class="sxs-lookup"><span data-stu-id="98a8e-117">See Also</span></span>  
+ [<span data-ttu-id="98a8e-118">プロジェクト内のマップの管理</span><span class="sxs-lookup"><span data-stu-id="98a8e-118">Managing Maps Within Projects</span></span>](../core/managing-maps-within-projects.md)

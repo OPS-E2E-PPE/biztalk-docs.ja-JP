@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9daf93fd6c925e5412aef3f4e985dd966f576eee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 167c53d953369d7b35138995b4f38ad8994c18cb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="changes-in-dehydration-policy-from-biztalk-server-2004"></a><span data-ttu-id="968f3-102">BizTalk Server 2004 からの退避ポリシーの変更点</span><span class="sxs-lookup"><span data-stu-id="968f3-102">Changes in Dehydration Policy from BizTalk Server 2004</span></span>
-<span data-ttu-id="968f3-103">BizTalk Server の退避ポリシーは、[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] から [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] に変更されています。</span><span class="sxs-lookup"><span data-stu-id="968f3-103">BizTalk Server dehydration policy has changed from [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] to [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].</span></span> <span data-ttu-id="968f3-104">[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] と [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] の違いに関する説明は、[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] で退避を判断する次のブール値 (true = 退避) に集約されます。</span><span class="sxs-lookup"><span data-stu-id="968f3-104">The explanation for the difference between [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] and [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] can be summarized by the following Boolean that determines dehydration in [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] (true = dehydrate)</span></span>  
+# <a name="changes-in-dehydration-policy-from-biztalk-server-2004"></a><span data-ttu-id="3bed9-102">BizTalk Server 2004 からの退避ポリシーの変更点</span><span class="sxs-lookup"><span data-stu-id="3bed9-102">Changes in Dehydration Policy from BizTalk Server 2004</span></span>
+<span data-ttu-id="3bed9-103">BizTalk Server の退避ポリシーが変更された[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]BizTalk Server にします。</span><span class="sxs-lookup"><span data-stu-id="3bed9-103">BizTalk Server dehydration policy has changed from [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] to BizTalk Server.</span></span> <span data-ttu-id="3bed9-104">違いの説明は、[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]で退避を判断するブール値を次で BizTalk Server をまとめると[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)](true = 退避)</span><span class="sxs-lookup"><span data-stu-id="3bed9-104">The explanation for the difference between [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] and BizTalk Server can be summarized by the following Boolean that determines dehydration in [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] (true = dehydrate)</span></span>  
   
 ```  
 Dehydrate = (WaitingHistory == -1 OR WaitingHistory > TestThreshold)  
 ```  
   
- <span data-ttu-id="968f3-105">退避ポリシー[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]マイナーこの方法で変更されました。</span><span class="sxs-lookup"><span data-stu-id="968f3-105">Dehydration policy for [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] has changed in this minor way.</span></span> [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]<span data-ttu-id="968f3-106">2 よりも長く待機がある場合、受信/遅延/待ち受けで常に退避 ***MaxThreshold**です。</span><span class="sxs-lookup"><span data-stu-id="968f3-106"> always dehydrates at a receive/delay/listen if there is a wait longer than 2***MaxThreshold**.</span></span>
+ <span data-ttu-id="3bed9-105">BizTalk Server の退避ポリシーは、このマイナーの方法で変更されました。</span><span class="sxs-lookup"><span data-stu-id="3bed9-105">Dehydration policy for BizTalk Server has changed in this minor way.</span></span> <span data-ttu-id="3bed9-106">BizTalk Server、常に退避受信/遅延/待ち受けで 2 よりも長く待機している場合 ***MaxThreshold**です。</span><span class="sxs-lookup"><span data-stu-id="3bed9-106">BizTalk Server always dehydrates at a receive/delay/listen if there is a wait longer than 2***MaxThreshold**.</span></span>
