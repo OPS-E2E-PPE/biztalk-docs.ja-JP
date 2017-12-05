@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45d83e1a250850d372c2e12c7ffebc79f823c287
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1e14234363ace4b953fa4766a97502753572e6f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-biztalk-adapter-tracing"></a>BizTalk アダプターのトレースの使用
 ここでは、Trace Log tool (トレース ログ ツール) をインストールする方法、および BizTalk アダプターのトレースを可能にする方法について説明します。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-enable-biztalk-adapter-tracing"></a>BizTalk アダプターのトレースを有効化するには  
   
-1.  コマンド プロンプトで、現在のディレクトリを [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] がインストールされているディレクトリに変更します。 既定では、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] ディレクトリにインストールされます。  64 ビット版の Windows 上で [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] を使用している場合、インストール パスは [!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)] となります。  
+1.  コマンド プロンプトでは、BizTalk Server がインストールされているディレクトリに、現在のディレクトリを変更します。 既定では、BizTalk Server がインストールされている、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]ディレクトリ。  インストール パスは、Windows および BizTalk Server の 64 ビット バージョンを使用して場合[!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]です。  
   
 2.  次のコマンドを入力し、Enter キーを押します。  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-capture-trace-output"></a>トレース出力を取得するには  
   
-1.  コマンド プロンプトで、現在のディレクトリを [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] がインストールされているディレクトリに変更します。  
+1.  コマンド プロンプトでは、BizTalk Server がインストールされているディレクトリに、現在のディレクトリを変更します。  
   
 2.  コマンド プロンプトで次のコマンドを入力し、Enter キーを押します。  
   

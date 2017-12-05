@@ -1314,7 +1314,7 @@
 ####### [ThrowDetailedError スイッチの使用](how-to-use-the-throwdetailederror-switch.md)
 ###### [公開済み Web サービスのテスト](testing-published-web-services.md)
 ####### [公開対象 Web サービスをテストするための .NET アプリケーションの作成](creating-a-net-application-to-test-a-published-web-service.md)
-####### [Internet Explorer を使用して公開済み Web サービスのテスト](how-to-use-internet-explorer-to-test-a-published-web-service.md)
+####### [Web サービスのテスト](how-to-use-internet-explorer-to-test-a-published-web-service.md)
 ###### [Visual Studio がインストールされていないコンピューターへの公開済み Web サービスの展開](deploying-published-web-services-on-a-non-visual-studio-computer.md)
 ####### [公開する Web サービスの Web セットアップの作成](how-to-create-a-web-setup-for-your-published-web-service.md)
 ####### [Web セットアップ パッケージの配布](how-to-distribute-the-web-setup-package.md)

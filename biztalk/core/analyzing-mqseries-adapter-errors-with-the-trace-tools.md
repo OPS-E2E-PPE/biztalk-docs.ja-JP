@@ -22,11 +22,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8880197e58f6a499cc63e8b6ec89f67af9f0086
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b53d1d2c0bbe19c54804b553041f8dc9ae4db20c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="analyzing-mqseries-adapter-errors-with-the-trace-tools"></a>トレース ツールを使用して MQSeries アダプターのエラーの分析
 アプリケーションの実行時に、トレース ツールを使用して、メッセージングのエラーを分析します。 MQSeries アダプタでは、アダプタと BizTalk アプリケーション (trace.cmd) 用と、MQSAgent (MQSTrace.cmd) 用の 2 つのツールを使用する必要があります。 どちらのツールでも、tracelog.exe が使用されます。 まだインストールしていない場合は、インストールしてください。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="enable-the-trace-utility"></a>Trace Utility を有効にするには  
  BizTalk Server で BizTalk Adapter Trace Utility を有効にするには、次の手順を実行します。  
   
-1.  trace.cmd があるディレクトリに移動します。 既定の場所は [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] ディレクトリです。  
+1.  trace.cmd があるディレクトリに移動します。 既定の場所は、Microsoft BizTalk Server ディレクトリです。  
   
 2.  次のコマンドを入力します。入力時に二重引用符で囲まれたディレクトリを、使用しているコンピュータの tracelog.exe ファイルがあるディレクトリに置き換えてください。入力後、Enter キーを押します。  
   
