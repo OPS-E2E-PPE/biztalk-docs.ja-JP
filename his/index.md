@@ -1,1 +1,1 @@
-# <a name="welcome-to-his"></a>HIS へようこそ!
+# <a name="welcome-to-his"></a><span data-ttu-id="5e7c3-101">HIS へようこそ!</span><span class="sxs-lookup"><span data-stu-id="5e7c3-101">Welcome to his!</span></span>
