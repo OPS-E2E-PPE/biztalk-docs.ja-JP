@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# プロトコルに対するコンテキスト プロパティに基づくアグリーメントの解決が失敗しました
-## 詳細  
+# <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a>プロトコルに対するコンテキスト プロパティに基づくアグリーメントの解決が失敗しました
+## <a name="details"></a>詳細  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |シンボル名|AgreementResolutionContextPropertiesLookupFailed|  
 |メッセージ テキスト|アグリーメントの解決は、プロトコルが失敗した {0} のコンテキスト プロパティに基づいています。|  
   
-## 説明  
+## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、BizTalk Server がユーザーによって指定されたコンテキスト プロパティに基づいてアグリーメントを解決できなかったことを示します。  
   
-## ユーザーの操作  
+## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、アグリーメントの解決が実行されるように、BizTalk メッセージの一部としてコンテキスト プロパティを指定します。

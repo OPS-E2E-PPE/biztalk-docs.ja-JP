@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# プロトコルに対するフォールバック設定が無効状態です
-## 詳細  
+# <a name="fallback-settings-for-the-protocol-is-in-disabled-state"></a>プロトコルに対するフォールバック設定が無効状態です
+## <a name="details"></a>詳細  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |シンボル名|AgreementResolutionFallbackSettingsDisabled|  
 |メッセージ テキスト|{0} プロトコルに対するフォールバック設定が無効状態です。|  
   
-## 説明  
+## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、BizTalk Server がアグリーメントに解決でき、フォールバック設定にリダイレクトされたが、特定のプロトコルに対するフォールバック設定が無効な状態だったことを示します。  
   
-## ユーザーの操作  
+## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するのには、特定のプロトコルに対するフォールバック設定を有効にしてください。

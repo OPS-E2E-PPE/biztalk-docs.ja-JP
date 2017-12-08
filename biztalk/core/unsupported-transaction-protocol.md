@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# トランザクション プロトコルがサポートされていません
-## 詳細  
+# <a name="unsupported-transaction-protocol"></a>トランザクション プロトコルがサポートされていません
+## <a name="details"></a>詳細  
   
 |||  
 |-|-|  
@@ -31,10 +31,10 @@ ms.lasthandoff: 09/20/2017
 |シンボル名|0|  
 |メッセージ テキスト|トランザクション プロトコルをサポートされていません: {0}|  
   
-## 説明  
+## <a name="explanation"></a>説明  
  このエラーは、受信場所または送信ポートのトランザクション プロトコル プロパティが無効な値に設定されているときに発生します。  
   
-## ユーザーの操作  
+## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
   
 1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理コンソール**です。  

@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# プロトコルに対して見つかったアグリーメントの状態が "無効" または "期限切れ" です
-## 詳細  
+# <a name="agreement-found-for-the-protocol-is-in-disabled-or-expired-state"></a>プロトコルに対して見つかったアグリーメントの状態が "無効" または "期限切れ" です
+## <a name="details"></a>詳細  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |シンボル名|AgreementResolutionAgreementDiasbledOrExpired|  
 |メッセージ テキスト|{0} プロトコルに対して見つかったアグリーメントが無効または期限切れの状態。|  
   
-## 説明  
+## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、BizTalk Server がアグリーメントを解決できたが、アグリーメントの状態が無効または期限切れだったことを示します。  
   
-## ユーザーの操作  
+## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、アグリーメントを有効にしてください。
