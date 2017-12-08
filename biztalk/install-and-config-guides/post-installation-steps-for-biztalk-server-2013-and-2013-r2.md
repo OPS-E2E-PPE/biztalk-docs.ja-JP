@@ -20,7 +20,7 @@ ms.lasthandoff: 09/20/2017
 ---
 # <a name="post-installation-steps-for-biztalk-server-2013-and-2013-r2"></a><span data-ttu-id="3403d-102">BizTalk Server 2013 および 2003 R2 のインストール後の手順</span><span class="sxs-lookup"><span data-stu-id="3403d-102">Post-installation Steps for BizTalk Server 2013 and 2013 R2</span></span>
   
-##  <span data-ttu-id="3403d-103"><a name="BKMK_NamedPipes"></a> TCP/IP と名前付きパイプの有効化</span><span class="sxs-lookup"><span data-stu-id="3403d-103"><a name="BKMK_NamedPipes"></a> Enable TCP/IP and Named Pipes</span></span>  
+##  <a name="BKMK_NamedPipes"></a> <span data-ttu-id="3403d-103">TCP/IP と名前付きパイプの有効化</span><span class="sxs-lookup"><span data-stu-id="3403d-103">Enable TCP/IP and Named Pipes</span></span>  
   
 1.  <span data-ttu-id="3403d-104">**[SQL Server 構成マネージャー]** を開きます。</span><span class="sxs-lookup"><span data-stu-id="3403d-104">Open **SQL Server Configuration Manager**.</span></span>  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="3403d-116">**構成マネージャー**を閉じます。</span><span class="sxs-lookup"><span data-stu-id="3403d-116">Close the **Configuration Manager**.</span></span>  
   
-##  <span data-ttu-id="3403d-117"><a name="BKMK_DTC"></a> ローカル ホスト サーバー上の DTC の有効化</span><span class="sxs-lookup"><span data-stu-id="3403d-117"><a name="BKMK_DTC"></a> Enable DTC on the Local Host Server</span></span>  
+##  <a name="BKMK_DTC"></a> <span data-ttu-id="3403d-117">ローカル ホスト サーバー上の DTC の有効化</span><span class="sxs-lookup"><span data-stu-id="3403d-117">Enable DTC on the Local Host Server</span></span>  
   
 1.  <span data-ttu-id="3403d-118">[コンポーネント サービス] を開きます。</span><span class="sxs-lookup"><span data-stu-id="3403d-118">Open Component Services:</span></span>  
   
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="3403d-138">**[コンポーネント サービス]** を閉じます。</span><span class="sxs-lookup"><span data-stu-id="3403d-138">Close **Component Services**.</span></span>  
   
-##  <span data-ttu-id="3403d-139"><a name="BKMK_Firewall"></a> Windows ファイアウォールで DTC を有効にする</span><span class="sxs-lookup"><span data-stu-id="3403d-139"><a name="BKMK_Firewall"></a> Configure Windows Firewall to Enable DTC</span></span>  
+##  <a name="BKMK_Firewall"></a> <span data-ttu-id="3403d-139">Windows ファイアウォールで DTC を有効にする</span><span class="sxs-lookup"><span data-stu-id="3403d-139">Configure Windows Firewall to Enable DTC</span></span>  
   
 1.  <span data-ttu-id="3403d-140">**[Windows ファイアウォール]** を開きます。</span><span class="sxs-lookup"><span data-stu-id="3403d-140">Open **Windows Firewall**:</span></span>  
   
@@ -107,7 +107,7 @@ ms.lasthandoff: 09/20/2017
   
 11. <span data-ttu-id="3403d-157">**[サービス (ローカル)]** を閉じ、**[管理ツール]** を閉じます。</span><span class="sxs-lookup"><span data-stu-id="3403d-157">Close **Services (Local)**, and then close **Administrative Tools**.</span></span>  
   
-##  <span data-ttu-id="3403d-158"><a name="BKMK_SQLAgent"></a> SQL エージェント ジョブを構成する</span><span class="sxs-lookup"><span data-stu-id="3403d-158"><a name="BKMK_SQLAgent"></a> Configure SQL Agent Jobs</span></span>  
+##  <a name="BKMK_SQLAgent"></a> <span data-ttu-id="3403d-158">SQL エージェント ジョブを構成する</span><span class="sxs-lookup"><span data-stu-id="3403d-158">Configure SQL Agent Jobs</span></span>  
   
 |<span data-ttu-id="3403d-159">[ジョブ]</span><span class="sxs-lookup"><span data-stu-id="3403d-159">Job</span></span>|<span data-ttu-id="3403d-160">説明</span><span class="sxs-lookup"><span data-stu-id="3403d-160">Description</span></span>|<span data-ttu-id="3403d-161">構成の理由</span><span class="sxs-lookup"><span data-stu-id="3403d-161">Why configure</span></span>|  
 |---------|-----------------|-------------------|  
@@ -122,7 +122,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="3403d-184">[データベース構造とジョブ](http://msdn.microsoft.com/library/aa561960\(v=bts.80\).aspx)</span><span class="sxs-lookup"><span data-stu-id="3403d-184">[Database Structure and Jobs](http://msdn.microsoft.com/library/aa561960\(v=bts.80\).aspx)</span></span>  
   
-##  <span data-ttu-id="3403d-185"><a name="BKMK_InstallCU"></a> 累積的な更新プログラムのインストール</span><span class="sxs-lookup"><span data-stu-id="3403d-185"><a name="BKMK_InstallCU"></a> Install Cumulative Updates</span></span>  
+##  <a name="BKMK_InstallCU"></a> <span data-ttu-id="3403d-185">累積的な更新プログラムのインストール</span><span class="sxs-lookup"><span data-stu-id="3403d-185">Install Cumulative Updates</span></span>  
  <span data-ttu-id="3403d-186">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールした後、Windows Update にあるすべての [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の累積的な更新プログラムをインストールします。</span><span class="sxs-lookup"><span data-stu-id="3403d-186">After you install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], install any [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cumulative updates listed in Windows Update.</span></span> <span data-ttu-id="3403d-187">利用可能なサービス パックおよび累積的な更新プログラムの一覧は、[KB 文書 2555976](http://support.microsoft.com/kb/2555976) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="3403d-187">[KB article 2555976](http://support.microsoft.com/kb/2555976) lists available service packs and cumulative updates.</span></span>  
   
 ## <a name="next"></a><span data-ttu-id="3403d-188">Next</span><span class="sxs-lookup"><span data-stu-id="3403d-188">Next</span></span>  

@@ -21,7 +21,7 @@ ms.lasthandoff: 09/20/2017
 # <a name="checklist-configuring-windows-server"></a><span data-ttu-id="fe63b-102">チェックリスト: Windows Server を構成します。</span><span class="sxs-lookup"><span data-stu-id="fe63b-102">Checklist: Configuring Windows Server</span></span>
 <span data-ttu-id="fe63b-103">このトピックは、実稼働環境で使用するための Windows Server を準備する際に従う必要のある手順を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="fe63b-103">This topic lists steps that you should follow when preparing Windows Server for use in a production [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span>  
   
-##  <span data-ttu-id="fe63b-104"><a name="BKMK_Win2k8"></a>Windows Server を構成します。</span><span class="sxs-lookup"><span data-stu-id="fe63b-104"><a name="BKMK_Win2k8"></a> Configure Windows Server</span></span>  
+##  <a name="BKMK_Win2k8"></a><span data-ttu-id="fe63b-104">Windows Server を構成します。</span><span class="sxs-lookup"><span data-stu-id="fe63b-104">Configure Windows Server</span></span>  
   
 |<span data-ttu-id="fe63b-105">手順</span><span class="sxs-lookup"><span data-stu-id="fe63b-105">Steps</span></span>|<span data-ttu-id="fe63b-106">リファレンス</span><span class="sxs-lookup"><span data-stu-id="fe63b-106">Reference</span></span>|  
 |-----------|---------------|  

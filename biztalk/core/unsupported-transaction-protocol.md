@@ -18,53 +18,53 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# トランザクション プロトコルがサポートされていません
-## 詳細  
+# <a name="unsupported-transaction-protocol"></a><span data-ttu-id="01d47-102">トランザクション プロトコルがサポートされていません</span><span class="sxs-lookup"><span data-stu-id="01d47-102">Unsupported transaction protocol</span></span>
+## <a name="details"></a><span data-ttu-id="01d47-103">詳細</span><span class="sxs-lookup"><span data-stu-id="01d47-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|トランザクション プロトコルをサポートされていません: {0}|  
+|<span data-ttu-id="01d47-104">製品名</span><span class="sxs-lookup"><span data-stu-id="01d47-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="01d47-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="01d47-105">Product Version</span></span>|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
+|<span data-ttu-id="01d47-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="01d47-106">Event ID</span></span>|<span data-ttu-id="01d47-107">0</span><span class="sxs-lookup"><span data-stu-id="01d47-107">0</span></span>|  
+|<span data-ttu-id="01d47-108">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="01d47-108">Event Source</span></span>|<span data-ttu-id="01d47-109">0</span><span class="sxs-lookup"><span data-stu-id="01d47-109">0</span></span>|  
+|<span data-ttu-id="01d47-110">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="01d47-110">Component</span></span>|<span data-ttu-id="01d47-111">0</span><span class="sxs-lookup"><span data-stu-id="01d47-111">0</span></span>|  
+|<span data-ttu-id="01d47-112">シンボル名</span><span class="sxs-lookup"><span data-stu-id="01d47-112">Symbolic Name</span></span>|<span data-ttu-id="01d47-113">0</span><span class="sxs-lookup"><span data-stu-id="01d47-113">0</span></span>|  
+|<span data-ttu-id="01d47-114">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="01d47-114">Message Text</span></span>|<span data-ttu-id="01d47-115">トランザクション プロトコルをサポートされていません: {0}</span><span class="sxs-lookup"><span data-stu-id="01d47-115">Unsupported transaction protocol: {0}</span></span>|  
   
-## 説明  
- このエラーは、受信場所または送信ポートのトランザクション プロトコル プロパティが無効な値に設定されているときに発生します。  
+## <a name="explanation"></a><span data-ttu-id="01d47-116">説明</span><span class="sxs-lookup"><span data-stu-id="01d47-116">Explanation</span></span>  
+ <span data-ttu-id="01d47-117">このエラーは、受信場所または送信ポートのトランザクション プロトコル プロパティが無効な値に設定されているときに発生します。</span><span class="sxs-lookup"><span data-stu-id="01d47-117">This error occurs when the transaction protocol property of a receive location or send port is set to an invalid value.</span></span>  
   
-## ユーザーの操作  
- このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
+## <a name="user-action"></a><span data-ttu-id="01d47-118">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="01d47-118">User Action</span></span>  
+ <span data-ttu-id="01d47-119">このエラーを解決するには、以下の 1 つ以上の操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="01d47-119">To resolve this error, do one or more of the following:</span></span>  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理コンソール**です。  
+1.  <span data-ttu-id="01d47-120">をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="01d47-120">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and click **BizTalk Server Administration**.</span></span>  
   
-2.  コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開と**アプリケーション**です。  
+2.  <span data-ttu-id="01d47-121">コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開と**アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="01d47-121">In the Console Root, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **BizTalk Group**, and expand  **Applications**.</span></span>  
   
-3.  アプリケーションを特定し、次にトランスポートを特定します。  
+3.  <span data-ttu-id="01d47-122">アプリケーションを特定し、次にトランスポートを特定します。</span><span class="sxs-lookup"><span data-stu-id="01d47-122">Locate your application and then locate your transport.</span></span>  
   
-4.  トランスポート名を右クリックします。  
+4.  <span data-ttu-id="01d47-123">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="01d47-123">Right-click the transport name.</span></span>  
   
-5.  **[プロパティ]**をクリックします。  
+5.  <span data-ttu-id="01d47-124">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="01d47-124">Click **Properties**.</span></span>  
   
-6.  ポート**型**一覧で、適切なポートを選択します。  
+6.  <span data-ttu-id="01d47-125">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="01d47-125">In the port **Type** list, select the correct port.</span></span>  
   
-7.  をクリックして**構成**です。  
+7.  <span data-ttu-id="01d47-126">をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="01d47-126">Click **Configure**.</span></span>  
   
-8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。  
+8.  <span data-ttu-id="01d47-127">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。</span><span class="sxs-lookup"><span data-stu-id="01d47-127">In the **WCF [***transport type***] Transport Properties** dialog box, click the **Binding** tab.</span></span>  
   
-9. **トランザクション**セクションで、選択、**トランザクションを有効にする**オプション。  
+9. <span data-ttu-id="01d47-128">**トランザクション**セクションで、選択、**トランザクションを有効にする**オプション。</span><span class="sxs-lookup"><span data-stu-id="01d47-128">In the **Transactions** section, choose the **Enable transactions** option.</span></span>  
   
-10. **トランザクション プロトコル**ドロップダウン リストで、いずれかを選択**OleTransactions**または**[wsatomictransactions]**です。  
+10. <span data-ttu-id="01d47-129">**トランザクション プロトコル**ドロップダウン リストで、いずれかを選択**OleTransactions**または**[wsatomictransactions]**です。</span><span class="sxs-lookup"><span data-stu-id="01d47-129">In the **Transactions protocol** drop-down list, choose either **OleTransactions** or **WSAtomicTransactions**.</span></span>  
   
- これらの手順が適用されるのは、次のトランスポートの種類のみです。  
+ <span data-ttu-id="01d47-130">これらの手順が適用されるのは、次のトランスポートの種類のみです。</span><span class="sxs-lookup"><span data-stu-id="01d47-130">These steps only apply to the following transport types:</span></span>  
   
--   Custom  
+-   <span data-ttu-id="01d47-131">Custom</span><span class="sxs-lookup"><span data-stu-id="01d47-131">Custom</span></span>  
   
--   CustomIsolated  
+-   <span data-ttu-id="01d47-132">CustomIsolated</span><span class="sxs-lookup"><span data-stu-id="01d47-132">CustomIsolated</span></span>  
   
--   NetNamedPipe  
+-   <span data-ttu-id="01d47-133">NetNamedPipe</span><span class="sxs-lookup"><span data-stu-id="01d47-133">NetNamedPipe</span></span>  
   
--   NetTcp  
+-   <span data-ttu-id="01d47-134">NetTcp</span><span class="sxs-lookup"><span data-stu-id="01d47-134">NetTcp</span></span>  
   
--   WShttp
+-   <span data-ttu-id="01d47-135">WShttp</span><span class="sxs-lookup"><span data-stu-id="01d47-135">WShttp</span></span>

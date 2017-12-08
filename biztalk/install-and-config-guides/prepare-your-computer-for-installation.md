@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  <span data-ttu-id="f4795-106">ここに示している順序どおりに作業は実行してください。</span><span class="sxs-lookup"><span data-stu-id="f4795-106">Complete these tasks in the order listed.</span></span>  
   
-##  <span data-ttu-id="f4795-107"><a name="BKMK_InstUpdates"></a> Windows の更新プログラムをインストールする</span><span class="sxs-lookup"><span data-stu-id="f4795-107"><a name="BKMK_InstUpdates"></a> Install Windows Updates</span></span>  
+##  <a name="BKMK_InstUpdates"></a> <span data-ttu-id="f4795-107">Windows の更新プログラムをインストールする</span><span class="sxs-lookup"><span data-stu-id="f4795-107">Install Windows Updates</span></span>  
   
 -   <span data-ttu-id="f4795-108">**Windows 7**: [スタート] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f4795-108">**Windows 7**: Click Start.</span></span> <span data-ttu-id="f4795-109">[**検索**] テキスト ボックスで、「**Windows Update**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="f4795-109">In the **Search** text box, type **Windows Update**.</span></span>  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="f4795-112">更新プログラムのインストール後、コンピューターを再起動する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="f4795-112">After installing updates, you may need to restart the computer.</span></span>  
   
-##  <span data-ttu-id="f4795-113"><a name="BKMK_IIS"></a> インターネット インフォメーション サービス (IIS) の有効化</span><span class="sxs-lookup"><span data-stu-id="f4795-113"><a name="BKMK_IIS"></a> Enable Internet Information Services</span></span>  
+##  <a name="BKMK_IIS"></a> <span data-ttu-id="f4795-113">インターネット インフォメーション サービス (IIS) の有効化</span><span class="sxs-lookup"><span data-stu-id="f4795-113">Enable Internet Information Services</span></span>  
  <span data-ttu-id="f4795-114">Microsoft インターネット インフォメーション サービス (IIS) は、以下を含む [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のさまざまな機能によって使用される Web アプリケーション インフラストラクチャです。</span><span class="sxs-lookup"><span data-stu-id="f4795-114">Microsoft Internet Information Services (IIS) provides a Web application infrastructure for many [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] features, including:</span></span>  
   
 -   <span data-ttu-id="f4795-115">HTTP アダプター</span><span class="sxs-lookup"><span data-stu-id="f4795-115">HTTP adapter</span></span>  
@@ -162,7 +162,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="f4795-191">[http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) にも、[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] で IIS を有効にする手順が記載されています。</span><span class="sxs-lookup"><span data-stu-id="f4795-191">[http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) also lists the steps to enable IIS on [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)].</span></span>  
   
-##  <span data-ttu-id="f4795-192"><a name="BKMK_XLS"></a> Microsoft Office Excel のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-192"><a name="BKMK_XLS"></a> Install Microsoft Office Excel</span></span>  
+##  <a name="BKMK_XLS"></a> <span data-ttu-id="f4795-192">Microsoft Office Excel のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-192">Install Microsoft Office Excel</span></span>  
   
 1.  <span data-ttu-id="f4795-193">Microsoft Office のセットアップを実行します。</span><span class="sxs-lookup"><span data-stu-id="f4795-193">Run the Microsoft Office setup.</span></span>  
   
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-203">BAM.xla を Excel に正しく読み込むには、[**Office 共有機能**] の下の [**Visual Basic for Applications**] をインストールします。</span><span class="sxs-lookup"><span data-stu-id="f4795-203">To successfully load BAM.xla into Excel, install **Visual Basic for Applications** under **Office Shared Features**.</span></span> <span data-ttu-id="f4795-204">これを行わない場合は、「このブックにある、VBA プロジェクト、ActiveX コントロール、およびその他のプログラミング関連の機能は失われています。」というエラーが表示されることがあります。</span><span class="sxs-lookup"><span data-stu-id="f4795-204">Otherwise, you may get error “This workbook has lost its VBA project, ActiveX controls and any other programmability-related features.”</span></span>  
   
-##  <span data-ttu-id="f4795-205"><a name="BKMK_VS"></a> Visual Studio のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-205"><a name="BKMK_VS"></a> Install Visual Studio</span></span>  
+##  <a name="BKMK_VS"></a> <span data-ttu-id="f4795-205">Visual Studio のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-205">Install Visual Studio</span></span>  
   
 1.  <span data-ttu-id="f4795-206">Visual Studio のセットアップを管理者として実行します。</span><span class="sxs-lookup"><span data-stu-id="f4795-206">Run the Visual Studio setup as Administrator.</span></span>  
   
@@ -204,7 +204,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-218">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムでは、[!INCLUDE[dotnet45](../includes/dotnet45-md.md)] が必要です。</span><span class="sxs-lookup"><span data-stu-id="f4795-218">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime requires [!INCLUDE[dotnet45](../includes/dotnet45-md.md)].</span></span> <span data-ttu-id="f4795-219">Windows Communication Foundation (WCF) アダプターまたは WCF インターセプターをインストールする場合は、.NET Framework 3.0 が必要です。</span><span class="sxs-lookup"><span data-stu-id="f4795-219">The .NET Framework 3.0 is required if the Windows Communication Foundation (WCF) adapter or WCF Interceptor is installed.</span></span>  
   
-##  <span data-ttu-id="f4795-220"><a name="BKMK_SQL"></a> SQL Server のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-220"><a name="BKMK_SQL"></a> Install SQL Server</span></span>  
+##  <a name="BKMK_SQL"></a> <span data-ttu-id="f4795-220">SQL Server のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-220">Install SQL Server</span></span>  
  <span data-ttu-id="f4795-221">[SQL Server 2008 R2](http://msdn.microsoft.com/library/bb500395\(v=sql.105\).aspx) のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-221">Install [SQL Server 2008 R2](http://msdn.microsoft.com/library/bb500395\(v=sql.105\).aspx)</span></span>  
   
  <span data-ttu-id="f4795-222">[SQL Server 2012](http://msdn.microsoft.com/library/bb500469\(v=sql.110\).aspx) のインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-222">Install [SQL Server 2012](http://msdn.microsoft.com/library/bb500469\(v=sql.110\).aspx)</span></span>  
@@ -247,7 +247,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-243">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] および [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] が別のコンピューターにインストールされている場合、分散トランザクション コーディネーター (MS DTC) がコンピューター間のトランザクションを処理します。</span><span class="sxs-lookup"><span data-stu-id="f4795-243">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] are on separate computers, Distributed Transaction Coordinator (MS DTC) handles the transactions between the computers.</span></span> <span data-ttu-id="f4795-244">[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] の AlwaysOn 機能は MSDTC トランザクションをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="f4795-244">The [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn feature does not support MSDTC transactions.</span></span> <span data-ttu-id="f4795-245">[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] の AlwaysOn 機能はサポートされません。</span><span class="sxs-lookup"><span data-stu-id="f4795-245">The [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn feature is not supported.</span></span>  
   
-##  <span data-ttu-id="f4795-246"><a name="BKMK_MQSeries"></a> MQSeries に必要なソフトウェアをインストールする</span><span class="sxs-lookup"><span data-stu-id="f4795-246"><a name="BKMK_MQSeries"></a> Install MQSeries Prerequisites</span></span>  
+##  <a name="BKMK_MQSeries"></a> <span data-ttu-id="f4795-246">MQSeries に必要なソフトウェアをインストールする</span><span class="sxs-lookup"><span data-stu-id="f4795-246">Install MQSeries Prerequisites</span></span>  
  <span data-ttu-id="f4795-247">**MQSeries アダプター**: BizTalk Server のインストール時に自動的にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="f4795-247">**MQSeries adapter**: Automatically installed with the BizTalk Server installation.</span></span>  
   
  <span data-ttu-id="f4795-248">**MQSeries Client (MQSC) アダプター**:</span><span class="sxs-lookup"><span data-stu-id="f4795-248">**MQSeries Client (MQSC) adapter**:</span></span>  
@@ -289,10 +289,10 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-269">IBM WebSphere はマイクロソフト製品ではないため、マイクロソフトによるサポートはありません。</span><span class="sxs-lookup"><span data-stu-id="f4795-269">IBM WebSphere is not a Microsoft product and is not supported by Microsoft.</span></span> <span data-ttu-id="f4795-270">マイクロソフトでは、このプログラムの適合性に関して一切の保証も行いません。</span><span class="sxs-lookup"><span data-stu-id="f4795-270">Microsoft makes no guarantees about the suitability of this program.</span></span> <span data-ttu-id="f4795-271">IBM WebSphere MQ のダウンロード方法をはじめとする詳細については、www.ibm.com をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f4795-271">For more information about IBM WebSphere MQ, including download instructions, see www.ibm.com.</span></span>  
   
-##  <span data-ttu-id="f4795-272"><a name="BKMK_BAMAlerts"></a> BAM 警告</span><span class="sxs-lookup"><span data-stu-id="f4795-272"><a name="BKMK_BAMAlerts"></a> BAM Alerts</span></span>  
+##  <a name="BKMK_BAMAlerts"></a> <span data-ttu-id="f4795-272">BAM 警告</span><span class="sxs-lookup"><span data-stu-id="f4795-272">BAM Alerts</span></span>  
  <span data-ttu-id="f4795-273">[!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)] または [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] での BAM 警告では、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] のデータベース メールを使用します。</span><span class="sxs-lookup"><span data-stu-id="f4795-273">BAM Alerts with [!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)] or [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] uses Database Mail in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span> <span data-ttu-id="f4795-274">[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] の BAM 警告では SQL Notification Services を使用します。</span><span class="sxs-lookup"><span data-stu-id="f4795-274">BAM Alerts with [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] uses SQL Notification Services.</span></span> <span data-ttu-id="f4795-275">BAM 警告をインストール、構成する前に、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] で通知サービスまたはデータベース メールを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4795-275">Before installing or configuring BAM Alerts, you must configure the Notification Services or Database Mail in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span>  
   
-###  <span data-ttu-id="f4795-276"><a name="BKMK_DBMail"></a> SQL Server 2012/2014 での BAM 警告</span><span class="sxs-lookup"><span data-stu-id="f4795-276"><a name="BKMK_DBMail"></a> BAM Alerts using SQL Server 2012/2014</span></span>  
+###  <a name="BKMK_DBMail"></a> <span data-ttu-id="f4795-276">SQL Server 2012/2014 での BAM 警告</span><span class="sxs-lookup"><span data-stu-id="f4795-276">BAM Alerts using SQL Server 2012/2014</span></span>  
  <span data-ttu-id="f4795-277">[SQL Server 2012 データベース メールの構成](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx)を行います。</span><span class="sxs-lookup"><span data-stu-id="f4795-277">Configure [SQL Server 2012 Database Mail](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx).</span></span>  
   
  <span data-ttu-id="f4795-278">[SQL Server 2014 データベース メールの構成](http://msdn.microsoft.com/library/hh245116\(v=sql.120\).aspx)を行います。</span><span class="sxs-lookup"><span data-stu-id="f4795-278">Configure [SQL Server 2014 Database Mail](http://msdn.microsoft.com/library/hh245116\(v=sql.120\).aspx).</span></span>  
@@ -301,7 +301,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-280">データベース メールでは SMTP サーバーを使用して BAM 警告を送信します。</span><span class="sxs-lookup"><span data-stu-id="f4795-280">Database Mail uses an SMTP server to send the BAM Alerts.</span></span> <span data-ttu-id="f4795-281">SMTP サーバーはローカルで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、または別の IIS サーバーにインストールできます。</span><span class="sxs-lookup"><span data-stu-id="f4795-281">SMTP Server can be installed locally on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or on another IIS server.</span></span> <span data-ttu-id="f4795-282">「[付録 D: SMTP サーバーの作成](../install-and-config-guides/appendix-d-create-the-smtp-server.md)」には、SMTP サーバーのインストールおよび構成手順があります。</span><span class="sxs-lookup"><span data-stu-id="f4795-282">[Appendix D: Create the SMTP Server](../install-and-config-guides/appendix-d-create-the-smtp-server.md) lists the steps to install and configure a SMTP Server.</span></span>  
   
-###  <span data-ttu-id="f4795-283"><a name="BKMK_SSNS"></a> SQL Server 2008 R2 を使用する BAM 警告 - SQL Server 2005 通知サービスのインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-283"><a name="BKMK_SSNS"></a> BAM Alerts using SQL Server 2008 R2 – Install SQL Server 2005 Notification Services</span></span>  
+###  <a name="BKMK_SSNS"></a> <span data-ttu-id="f4795-283">SQL Server 2008 R2 を使用する BAM 警告 - SQL Server 2005 通知サービスのインストール</span><span class="sxs-lookup"><span data-stu-id="f4795-283">BAM Alerts using SQL Server 2008 R2 – Install SQL Server 2005 Notification Services</span></span>  
   
 1.  <span data-ttu-id="f4795-284">「[Microsoft SQL Server 2005 SP4 用 Feature Pack](http://go.microsoft.com/fwlink/p/?LinkId=286285)」にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="f4795-284">Go to [Feature Pack for Microsoft SQL Server 2005 SP4](http://go.microsoft.com/fwlink/p/?LinkId=286285).</span></span>  
   
@@ -329,7 +329,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-296">SQL Notification Services を構成する必要はありません。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にインストールするだけです。</span><span class="sxs-lookup"><span data-stu-id="f4795-296">SQL Notification Services does not need to be configured; only installed on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-##  <span data-ttu-id="f4795-297"><a name="BKMK_WIF"></a> Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="f4795-297"><a name="BKMK_WIF"></a> Windows Identity Foundation</span></span>  
+##  <a name="BKMK_WIF"></a> <span data-ttu-id="f4795-297">Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="f4795-297">Windows Identity Foundation</span></span>  
   
 |||  
 |-|-|  
@@ -349,7 +349,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-315">「[付録 B: Microsoft SharePoint アダプターのインストール](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)」には、[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] の具体的なインストール オプションの情報があります。</span><span class="sxs-lookup"><span data-stu-id="f4795-315">[Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) provides specific information on the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] installation options.</span></span>  
   
-##  <span data-ttu-id="f4795-316"><a name="BKMK_WSS"></a> Microsoft SharePoint のインストールと構成</span><span class="sxs-lookup"><span data-stu-id="f4795-316"><a name="BKMK_WSS"></a> Install and Configure Microsoft SharePoint</span></span>  
+##  <a name="BKMK_WSS"></a> <span data-ttu-id="f4795-316">Microsoft SharePoint のインストールと構成</span><span class="sxs-lookup"><span data-stu-id="f4795-316">Install and Configure Microsoft SharePoint</span></span>  
  <span data-ttu-id="f4795-317">[SharePoint 2013](http://technet.microsoft.com/library/cc303424.aspx) をインストールする</span><span class="sxs-lookup"><span data-stu-id="f4795-317">Install [SharePoint 2013](http://technet.microsoft.com/library/cc303424.aspx)</span></span>  
   
  <span data-ttu-id="f4795-318">[SharePoint Online Service](http://technet.microsoft.com/library/jj819267.aspx) をインストールする</span><span class="sxs-lookup"><span data-stu-id="f4795-318">Install [SharePoint Online Service](http://technet.microsoft.com/library/jj819267.aspx)</span></span>  
@@ -374,7 +374,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-328">SharePoint アダプターを使用する際は、SharePoint サービスの Web サービスの代わりに新しい CSOM オプションをインストールすることをお勧めします。詳細は「[付録 B: Microsoft SharePoint アダプターのインストール](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f4795-328">When using the SharePoint adapter, it is recommended to install the new CSOM option instead of the SharePoint Service Web Service; described at [Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md).</span></span>  
   
-##  <span data-ttu-id="f4795-329"><a name="BKMK_SharedMem"></a> 共有メモリ プロトコルの無効化</span><span class="sxs-lookup"><span data-stu-id="f4795-329"><a name="BKMK_SharedMem"></a> Disable the Shared Memory Protocol</span></span>  
+##  <a name="BKMK_SharedMem"></a> <span data-ttu-id="f4795-329">共有メモリ プロトコルの無効化</span><span class="sxs-lookup"><span data-stu-id="f4795-329">Disable the Shared Memory Protocol</span></span>  
   
 1.  <span data-ttu-id="f4795-330">[**SQL Server 構成マネージャー**] を開きます。</span><span class="sxs-lookup"><span data-stu-id="f4795-330">Open **SQL Server Configuration Manager**.</span></span>  
   
@@ -392,7 +392,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-339">ReplaceThisText</span><span class="sxs-lookup"><span data-stu-id="f4795-339">ReplaceThisText</span></span>  
   
-##  <span data-ttu-id="f4795-340"><a name="BKMK_LocalAdmin"></a>ローカルの Administrators グループへの参加</span><span class="sxs-lookup"><span data-stu-id="f4795-340"><a name="BKMK_LocalAdmin"></a> Join the Local Administrators Group</span></span>  
+##  <a name="BKMK_LocalAdmin"></a><span data-ttu-id="f4795-340">ローカルの Administrators グループへの参加</span><span class="sxs-lookup"><span data-stu-id="f4795-340">Join the Local Administrators Group</span></span>  
  <span data-ttu-id="f4795-341">**[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]** : [Windows Server 2012: ローカル管理者グループにアカウントを追加する方法](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)</span><span class="sxs-lookup"><span data-stu-id="f4795-341">**[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]** : [Windows Server 2012: How to Add an Account to a Local Administrator Group](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)</span></span>  
   
  <span data-ttu-id="f4795-342">**Windows 8.1**: Windows 8 でローカルのユーザーとグループを開くには、キーボードの Windows ボタンをクリックして「**グループ**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="f4795-342">**Windows 8.1**: To open Local Users and Groups on Windows 8, click the Windows button on the keyboard and type **groups**.</span></span> <span data-ttu-id="f4795-343">[検索] ウィンドウで、[**設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f4795-343">In the Search window, click **Settings**.</span></span> <span data-ttu-id="f4795-344">[検索結果] ウィンドウで、[**ローカル ユーザーとグループの編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f4795-344">In the Results window, click **Edit local users and groups**.</span></span> <span data-ttu-id="f4795-345">[**グループ**] をクリックし、[Administrators] をダブルクリックしてアカウントを追加します。</span><span class="sxs-lookup"><span data-stu-id="f4795-345">Click **Groups** and then double-click Administrators to add an account.</span></span>  
@@ -403,7 +403,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f4795-350">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストール、構成するには、ローカル管理者グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4795-350">You must be a member of the local Administrators group to install and configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-##  <span data-ttu-id="f4795-351"><a name="BKMK_AppLog"></a> アプリケーション イベント ログの構成</span><span class="sxs-lookup"><span data-stu-id="f4795-351"><a name="BKMK_AppLog"></a> Configure the Application Event Log</span></span>  
+##  <a name="BKMK_AppLog"></a> <span data-ttu-id="f4795-351">アプリケーション イベント ログの構成</span><span class="sxs-lookup"><span data-stu-id="f4795-351">Configure the Application Event Log</span></span>  
   
 1.  <span data-ttu-id="f4795-352">**イベント ビューアー**を開きます。</span><span class="sxs-lookup"><span data-stu-id="f4795-352">Open **Event Viewer**:</span></span>  
   

@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="7f6c4-121">クリックして、ウィザードでは、機能パックのインストールが完了したら、**完了**です。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-121">After the wizard completes the feature pack installation, click **Finish**.</span></span>  
   
-##  <span data-ttu-id="7f6c4-122"><a name="BKMK_Using"></a>AppFabric を使用してサービスの接続</span><span class="sxs-lookup"><span data-stu-id="7f6c4-122"><a name="BKMK_Using"></a> Using AppFabric Connect for Services</span></span>  
+##  <a name="BKMK_Using"></a><span data-ttu-id="7f6c4-122">AppFabric を使用してサービスの接続</span><span class="sxs-lookup"><span data-stu-id="7f6c4-122">Using AppFabric Connect for Services</span></span>  
  <span data-ttu-id="7f6c4-123">AppFabric 接続サービスをインストールした後に、次の操作を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-123">After installing AppFabric Connect for Services, you can do the following:</span></span>  
   
 -   <span data-ttu-id="7f6c4-124">使用して、 **BizTalk WCF サービス公開ウィザード**Azure AppFabric Service Bus のリレー エンドポイントを使用して WCF サービスとしての BizTalk アイテム (オーケストレーション、スキーマなど) を公開します。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-124">Use the **BizTalk WCF Service Publishing Wizard** to expose BizTalk artifacts (orchestration, schema, etc.) as WCF services with a relay endpoint on the Azure AppFabric Service Bus.</span></span> <span data-ttu-id="7f6c4-125">詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=204700](http://go.microsoft.com/fwlink/?LinkId=204700)です。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-125">For more information, see [http://go.microsoft.com/fwlink/?LinkId=204700](http://go.microsoft.com/fwlink/?LinkId=204700).</span></span>  

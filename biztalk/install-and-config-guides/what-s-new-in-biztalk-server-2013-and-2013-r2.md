@@ -22,7 +22,7 @@ ms.lasthandoff: 09/20/2017
 # <a name="whats-new-in-biztalk-server-2013-and-2013-r2"></a><span data-ttu-id="c05fd-103">BizTalk Server 2013 および 2003 R2 の新機能</span><span class="sxs-lookup"><span data-stu-id="c05fd-103">What's New in BizTalk Server 2013 and 2013 R2</span></span>
 <span data-ttu-id="c05fd-104">[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 の新機能と廃止予定機能をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="c05fd-104">See what's new and what is deprecated in [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013.</span></span>
   
-##  <span data-ttu-id="c05fd-105"><a name="BKMK_NewR2"></a> BizTalk Server 2013 R2 の新機能</span><span class="sxs-lookup"><span data-stu-id="c05fd-105"><a name="BKMK_NewR2"></a> What’s New in BizTalk Server 2013 R2?</span></span>  
+##  <a name="BKMK_NewR2"></a> <span data-ttu-id="c05fd-105">BizTalk Server 2013 R2 の新機能</span><span class="sxs-lookup"><span data-stu-id="c05fd-105">What’s New in BizTalk Server 2013 R2?</span></span>  
   
 |<span data-ttu-id="c05fd-106">機能</span><span class="sxs-lookup"><span data-stu-id="c05fd-106">Feature</span></span>|<span data-ttu-id="c05fd-107">説明</span><span class="sxs-lookup"><span data-stu-id="c05fd-107">Description</span></span>|  
 |-------------|-----------------|  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 >  -   <span data-ttu-id="c05fd-165">機能が BizTalk 内で内部的に使用され、顧客のソリューションでの使用が考慮されていない場合があります。</span><span class="sxs-lookup"><span data-stu-id="c05fd-165">The feature may be used internally within BizTalk and is not meant to be used by customer solutions.</span></span> <span data-ttu-id="c05fd-166">その場合、顧客のソリューションではサポートされません。</span><span class="sxs-lookup"><span data-stu-id="c05fd-166">It is not supported in customer solutions.</span></span>  
 > -   <span data-ttu-id="c05fd-167">インターフェイスが Microsoft によって変更されており、公開できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="c05fd-167">The interfaces may have been modified by Microsoft and may not be publicly available.</span></span>  
   
-##  <span data-ttu-id="c05fd-168"><a name="BKMK_New"></a> BizTalk Server 2013 の新機能</span><span class="sxs-lookup"><span data-stu-id="c05fd-168"><a name="BKMK_New"></a> What’s New in BizTalk Server 2013?</span></span>  
+##  <a name="BKMK_New"></a> <span data-ttu-id="c05fd-168">BizTalk Server 2013 の新機能</span><span class="sxs-lookup"><span data-stu-id="c05fd-168">What’s New in BizTalk Server 2013?</span></span>  
  <span data-ttu-id="c05fd-169">BizTalk Server 2013 に以下の機能が追加されました。</span><span class="sxs-lookup"><span data-stu-id="c05fd-169">The following features are added in BizTalk Server 2013.</span></span>  
   
  <span data-ttu-id="c05fd-170">**Azure IaaS の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**</span><span class="sxs-lookup"><span data-stu-id="c05fd-170">**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on Azure IaaS**</span></span>  
