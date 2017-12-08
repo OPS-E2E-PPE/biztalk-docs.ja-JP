@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [<span data-ttu-id="83a61-116">カテゴリ 9: キャッシュの管理と顧客の状態</span><span class="sxs-lookup"><span data-stu-id="83a61-116">Category 9: Cash Management and Customer Status</span></span>](#fsa_intro_sptj)  
   
-##  <span data-ttu-id="83a61-117"><a name="fsa_intro_xtkj"></a>SWIFT メッセージ - Microsoft</span><span class="sxs-lookup"><span data-stu-id="83a61-117"><a name="fsa_intro_xtkj"></a> SWIFT Messages - Microsoft</span></span>  
+##  <a name="fsa_intro_xtkj"></a><span data-ttu-id="83a61-117">SWIFT メッセージ - Microsoft</span><span class="sxs-lookup"><span data-stu-id="83a61-117">SWIFT Messages - Microsoft</span></span>  
  <span data-ttu-id="83a61-118">次の表、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] SWIFT メッセージのサービスの種類 GPA および FIN コントロール。</span><span class="sxs-lookup"><span data-stu-id="83a61-118">The following table describes the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] SWIFT messages for service types GPA and FIN Control.</span></span>  
   
 |<span data-ttu-id="83a61-119">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-119">Message type</span></span>|<span data-ttu-id="83a61-120">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-120">Description</span></span>|  
@@ -72,7 +72,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-157">**42**</span><span class="sxs-lookup"><span data-stu-id="83a61-157">**42**</span></span>|<span data-ttu-id="83a61-158">ログインの否定受信確認 (LNK)</span><span class="sxs-lookup"><span data-stu-id="83a61-158">Login Negative Acknowledgement (LNK)</span></span>|  
 |<span data-ttu-id="83a61-159">**43**</span><span class="sxs-lookup"><span data-stu-id="83a61-159">**43**</span></span>|<span data-ttu-id="83a61-160">否定受信確認 (SNK) を選択します。</span><span class="sxs-lookup"><span data-stu-id="83a61-160">Select Negative Acknowledgement (SNK)</span></span>|  
   
-##  <span data-ttu-id="83a61-161"><a name="fsa_intro_xcpk"></a>カテゴリ 0: FIN システム メッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-161"><a name="fsa_intro_xcpk"></a> Category 0: FIN System Messages</span></span>  
+##  <a name="fsa_intro_xcpk"></a><span data-ttu-id="83a61-161">カテゴリ 0: FIN システム メッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-161">Category 0: FIN System Messages</span></span>  
  <span data-ttu-id="83a61-162">次の表に、メッセージ形式カテゴリ 0: SWIFT およびユーザーに SWIFT にユーザーを含む、財務のシステム メッセージ。</span><span class="sxs-lookup"><span data-stu-id="83a61-162">The following table describes messages form Category 0: Financial System Messages, including User to SWIFT and SWIFT to User.</span></span>  
   
 |<span data-ttu-id="83a61-163">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-163">Message type</span></span>|<span data-ttu-id="83a61-164">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-164">Description</span></span>|  
@@ -135,7 +135,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-275">**MT 096**</span><span class="sxs-lookup"><span data-stu-id="83a61-275">**MT 096**</span></span>|<span data-ttu-id="83a61-276">中央の機関メッセージにコピーする FIN</span><span class="sxs-lookup"><span data-stu-id="83a61-276">FIN Copy to Central Institution Message</span></span>|  
 |<span data-ttu-id="83a61-277">**MT 097**</span><span class="sxs-lookup"><span data-stu-id="83a61-277">**MT 097**</span></span>|<span data-ttu-id="83a61-278">FIN コピー メッセージ承認/拒否通知</span><span class="sxs-lookup"><span data-stu-id="83a61-278">FIN Copy Message Authorization/Refusal Notification</span></span>|  
   
-##  <span data-ttu-id="83a61-279"><a name="fsa_intro_lxnf"></a>カテゴリ 1: 顧客支払とチェック</span><span class="sxs-lookup"><span data-stu-id="83a61-279"><a name="fsa_intro_lxnf"></a> Category 1: Customer Payments and Checks</span></span>  
+##  <a name="fsa_intro_lxnf"></a><span data-ttu-id="83a61-279">カテゴリ 1: 顧客支払とチェック</span><span class="sxs-lookup"><span data-stu-id="83a61-279">Category 1: Customer Payments and Checks</span></span>  
  <span data-ttu-id="83a61-280">次の表に、カテゴリの 1 からのメッセージ: 支払とチェックします。</span><span class="sxs-lookup"><span data-stu-id="83a61-280">The following table describes messages from Category 1: Payments and Checks.</span></span>  
   
 |<span data-ttu-id="83a61-281">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-281">Message type</span></span>|<span data-ttu-id="83a61-282">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-282">Description</span></span>|  
@@ -161,7 +161,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-319">**MT 198**</span><span class="sxs-lookup"><span data-stu-id="83a61-319">**MT 198**</span></span>|<span data-ttu-id="83a61-320">独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-320">Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-321">**MT 199**</span><span class="sxs-lookup"><span data-stu-id="83a61-321">**MT 199**</span></span>|<span data-ttu-id="83a61-322">無料の形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-322">Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-323"><a name="fsa_intro_fywg"></a>カテゴリ 2: 金融機関の転送</span><span class="sxs-lookup"><span data-stu-id="83a61-323"><a name="fsa_intro_fywg"></a> Category 2: Financial Institution Transfers</span></span>  
+##  <a name="fsa_intro_fywg"></a><span data-ttu-id="83a61-323">カテゴリ 2: 金融機関の転送</span><span class="sxs-lookup"><span data-stu-id="83a61-323">Category 2: Financial Institution Transfers</span></span>  
  <span data-ttu-id="83a61-324">次の表に、カテゴリ 2 からのメッセージ: 金融機関転送します。</span><span class="sxs-lookup"><span data-stu-id="83a61-324">The following table describes messages from Category 2: Financial Institution Transfers.</span></span>  
   
 |<span data-ttu-id="83a61-325">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-325">Message type</span></span>|<span data-ttu-id="83a61-326">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-326">Description</span></span>|  
@@ -185,7 +185,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-359">**MT 298**</span><span class="sxs-lookup"><span data-stu-id="83a61-359">**MT 298**</span></span>|<span data-ttu-id="83a61-360">独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-360">Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-361">**MT 299**</span><span class="sxs-lookup"><span data-stu-id="83a61-361">**MT 299**</span></span>|<span data-ttu-id="83a61-362">無料の形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-362">Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-363"><a name="fsa_intro_qipa"></a>外部の Exchange、Money 市場および派生型のカテゴリ 3: 財務市場</span><span class="sxs-lookup"><span data-stu-id="83a61-363"><a name="fsa_intro_qipa"></a> Category 3: Treasury Markets Foreign Exchange, Money Markets and Derivatives</span></span>  
+##  <a name="fsa_intro_qipa"></a><span data-ttu-id="83a61-363">外部の Exchange、Money 市場および派生型のカテゴリ 3: 財務市場</span><span class="sxs-lookup"><span data-stu-id="83a61-363">Category 3: Treasury Markets Foreign Exchange, Money Markets and Derivatives</span></span>  
  <span data-ttu-id="83a61-364">次の表に、カテゴリ 3 からのメッセージ: 財務市場外国為替、Money 市場では、および派生型です。</span><span class="sxs-lookup"><span data-stu-id="83a61-364">The following table describes messages from Category 3: Treasury Markets Foreign Exchange, Money Markets, and Derivatives.</span></span>  
   
 |<span data-ttu-id="83a61-365">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-365">Message type</span></span>|<span data-ttu-id="83a61-366">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-366">Description</span></span>|  
@@ -218,7 +218,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-417">**MT 398**</span><span class="sxs-lookup"><span data-stu-id="83a61-417">**MT 398**</span></span>|<span data-ttu-id="83a61-418">独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-418">Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-419">**MT 399**</span><span class="sxs-lookup"><span data-stu-id="83a61-419">**MT 399**</span></span>|<span data-ttu-id="83a61-420">無料の形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-420">Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-421"><a name="fsa_intro_ruuc"></a>カテゴリ 4: コレクションと現金文字</span><span class="sxs-lookup"><span data-stu-id="83a61-421"><a name="fsa_intro_ruuc"></a> Category 4: Collections and Cash Letters</span></span>  
+##  <a name="fsa_intro_ruuc"></a><span data-ttu-id="83a61-421">カテゴリ 4: コレクションと現金文字</span><span class="sxs-lookup"><span data-stu-id="83a61-421">Category 4: Collections and Cash Letters</span></span>  
  <span data-ttu-id="83a61-422">次の表に、カテゴリ 4 からのメッセージ: コレクションと現金文字です。</span><span class="sxs-lookup"><span data-stu-id="83a61-422">The following table describes messages from Category 4: Collections and Cash Letters.</span></span>  
   
 |<span data-ttu-id="83a61-423">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-423">Message type</span></span>|<span data-ttu-id="83a61-424">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-424">Description</span></span>|  
@@ -242,7 +242,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-457">**MT 498**</span><span class="sxs-lookup"><span data-stu-id="83a61-457">**MT 498**</span></span>|<span data-ttu-id="83a61-458">独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-458">Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-459">**MT 499**</span><span class="sxs-lookup"><span data-stu-id="83a61-459">**MT 499**</span></span>|<span data-ttu-id="83a61-460">無料の形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-460">Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-461"><a name="fsa_intro_iitn"></a>カテゴリ 5: 証券市場</span><span class="sxs-lookup"><span data-stu-id="83a61-461"><a name="fsa_intro_iitn"></a> Category 5: Securities Markets</span></span>  
+##  <a name="fsa_intro_iitn"></a><span data-ttu-id="83a61-461">カテゴリ 5: 証券市場</span><span class="sxs-lookup"><span data-stu-id="83a61-461">Category 5: Securities Markets</span></span>  
  <span data-ttu-id="83a61-462">次の表に、カテゴリの 5 からのメッセージ: 証券市場します。</span><span class="sxs-lookup"><span data-stu-id="83a61-462">The following table describes messages from Category 5: Securities Markets.</span></span>  
   
 |<span data-ttu-id="83a61-463">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-463">Message type</span></span>|<span data-ttu-id="83a61-464">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-464">Description</span></span>|  
@@ -315,7 +315,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-595">**MT 598**</span><span class="sxs-lookup"><span data-stu-id="83a61-595">**MT 598**</span></span>|<span data-ttu-id="83a61-596">独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-596">Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-597">**MT 599**</span><span class="sxs-lookup"><span data-stu-id="83a61-597">**MT 599**</span></span>|<span data-ttu-id="83a61-598">無料の形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-598">Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-599"><a name="fsa_intro_bjez"></a>カテゴリ 6: 財務市場貴金属</span><span class="sxs-lookup"><span data-stu-id="83a61-599"><a name="fsa_intro_bjez"></a> Category 6: Treasury Markets Precious Metals</span></span>  
+##  <a name="fsa_intro_bjez"></a><span data-ttu-id="83a61-599">カテゴリ 6: 財務市場貴金属</span><span class="sxs-lookup"><span data-stu-id="83a61-599">Category 6: Treasury Markets Precious Metals</span></span>  
  <span data-ttu-id="83a61-600">次の表に、メッセージ カテゴリ 6: 財務市場貴金属、宝物市場シンジケーション、および財務市場の一般的なメッセージです。</span><span class="sxs-lookup"><span data-stu-id="83a61-600">The following table describes messages from Category 6: Treasury Markets Precious Metals, Treasure Markets Syndications, and Treasury Markets Common Messages.</span></span>  
   
 |<span data-ttu-id="83a61-601">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-601">Message type</span></span>|<span data-ttu-id="83a61-602">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-602">Description</span></span>|  
@@ -345,7 +345,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-644">**MT 698**</span><span class="sxs-lookup"><span data-stu-id="83a61-644">**MT 698**</span></span>|<span data-ttu-id="83a61-645">独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-645">Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-646">**MT 699**</span><span class="sxs-lookup"><span data-stu-id="83a61-646">**MT 699**</span></span>|<span data-ttu-id="83a61-647">無料の形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-647">Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-648"><a name="fsa_intro_vhkw"></a>カテゴリ 7: ドキュメンタリーのクレジットと保証</span><span class="sxs-lookup"><span data-stu-id="83a61-648"><a name="fsa_intro_vhkw"></a> Category 7: Documentary Credits and Guarantees</span></span>  
+##  <a name="fsa_intro_vhkw"></a><span data-ttu-id="83a61-648">カテゴリ 7: ドキュメンタリーのクレジットと保証</span><span class="sxs-lookup"><span data-stu-id="83a61-648">Category 7: Documentary Credits and Guarantees</span></span>  
  <span data-ttu-id="83a61-649">次の表に、カテゴリ 7 からのメッセージ: ドキュメンタリー番組のクレジットと保証します。</span><span class="sxs-lookup"><span data-stu-id="83a61-649">The following table describes messages from Category 7: Documentary Credits and Guarantees.</span></span>  
   
 |<span data-ttu-id="83a61-650">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-650">Message type</span></span>|<span data-ttu-id="83a61-651">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-651">Description</span></span>|  
@@ -380,7 +380,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-706">**MT 798**</span><span class="sxs-lookup"><span data-stu-id="83a61-706">**MT 798**</span></span>|<span data-ttu-id="83a61-707">独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-707">Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-708">**MT 799**</span><span class="sxs-lookup"><span data-stu-id="83a61-708">**MT 799**</span></span>|<span data-ttu-id="83a61-709">無料の形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-709">Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-710"><a name="fsa_intro_qlwo"></a>カテゴリ 8: 旅小切手</span><span class="sxs-lookup"><span data-stu-id="83a61-710"><a name="fsa_intro_qlwo"></a> Category 8: Travellers Cheques</span></span>  
+##  <a name="fsa_intro_qlwo"></a><span data-ttu-id="83a61-710">カテゴリ 8: 旅小切手</span><span class="sxs-lookup"><span data-stu-id="83a61-710">Category 8: Travellers Cheques</span></span>  
  <span data-ttu-id="83a61-711">次の表に、カテゴリ 8 からのメッセージ: 旅小切手です。</span><span class="sxs-lookup"><span data-stu-id="83a61-711">The following table describes messages from Category 8: Travellers Cheques.</span></span>  
   
 |<span data-ttu-id="83a61-712">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-712">Message type</span></span>|<span data-ttu-id="83a61-713">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-713">Description</span></span>|  
@@ -404,7 +404,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="83a61-746">**MT 898**</span><span class="sxs-lookup"><span data-stu-id="83a61-746">**MT 898**</span></span>|<span data-ttu-id="83a61-747">MT 898 独自のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-747">MT 898 Proprietary Message</span></span>|  
 |<span data-ttu-id="83a61-748">**MT 899**</span><span class="sxs-lookup"><span data-stu-id="83a61-748">**MT 899**</span></span>|<span data-ttu-id="83a61-749">MT 899 の自由形式のメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-749">MT 899 Free Format Message</span></span>|  
   
-##  <span data-ttu-id="83a61-750"><a name="fsa_intro_sptj"></a>カテゴリ 9: キャッシュの管理と顧客の状態</span><span class="sxs-lookup"><span data-stu-id="83a61-750"><a name="fsa_intro_sptj"></a> Category 9: Cash Management and Customer Status</span></span>  
+##  <a name="fsa_intro_sptj"></a><span data-ttu-id="83a61-750">カテゴリ 9: キャッシュの管理と顧客の状態</span><span class="sxs-lookup"><span data-stu-id="83a61-750">Category 9: Cash Management and Customer Status</span></span>  
  <span data-ttu-id="83a61-751">次の表に、カテゴリ 9 からのメッセージ: キャッシュの管理と顧客の状態。</span><span class="sxs-lookup"><span data-stu-id="83a61-751">The following table describes messages from Category 9: Cash Management and Customer Status.</span></span>  
   
 |<span data-ttu-id="83a61-752">メッセージ型</span><span class="sxs-lookup"><span data-stu-id="83a61-752">Message type</span></span>|<span data-ttu-id="83a61-753">Description</span><span class="sxs-lookup"><span data-stu-id="83a61-753">Description</span></span>|  

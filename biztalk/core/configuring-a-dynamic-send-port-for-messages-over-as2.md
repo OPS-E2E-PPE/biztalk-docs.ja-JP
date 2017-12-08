@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a><span data-ttu-id="4b308-136">前提条件</span><span class="sxs-lookup"><span data-stu-id="4b308-136">Prerequisites</span></span>  
  <span data-ttu-id="4b308-137">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4b308-137">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.</span></span>  
   
-##  <span data-ttu-id="4b308-138"><a name="BKMK_Proc"></a>送信ポートを動的にメッセージを AS2 を送信する BizTalk Server を構成します。</span><span class="sxs-lookup"><span data-stu-id="4b308-138"><a name="BKMK_Proc"></a> To configure BizTalk Server to send AS2 messages over a dynamic send port</span></span>  
+##  <a name="BKMK_Proc"></a><span data-ttu-id="4b308-138">送信ポートを動的にメッセージを AS2 を送信する BizTalk Server を構成します。</span><span class="sxs-lookup"><span data-stu-id="4b308-138">To configure BizTalk Server to send AS2 messages over a dynamic send port</span></span>  
   
 1.  <span data-ttu-id="4b308-139">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、前のように構成された、動的な一方向の送信ポート (MDN が要求されていない場合) または動的な送信請求応答の送信ポート (MDN が要求されている場合) を作成します。</span><span class="sxs-lookup"><span data-stu-id="4b308-139">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, create a dynamic one-way send port (if an MDN is not requested) or a dynamic solicit response send port (if an MDN is requested) with the above configuration.</span></span>  
   

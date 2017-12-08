@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# プロトコルに対して見つかったアグリーメントの状態が "無効" または "期限切れ" です
-## 詳細  
+# <a name="agreement-found-for-the-protocol-is-in-disabled-or-expired-state"></a><span data-ttu-id="78d00-102">プロトコルに対して見つかったアグリーメントの状態が "無効" または "期限切れ" です</span><span class="sxs-lookup"><span data-stu-id="78d00-102">Agreement found for the Protocol is in Disabled or Expired state</span></span>
+## <a name="details"></a><span data-ttu-id="78d00-103">詳細</span><span class="sxs-lookup"><span data-stu-id="78d00-103">Details</span></span>  
   
 |||  
 |-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|AgreementResolutionAgreementDiasbledOrExpired|  
-|メッセージ テキスト|{0} プロトコルに対して見つかったアグリーメントが無効または期限切れの状態。|  
+|<span data-ttu-id="78d00-104">製品名</span><span class="sxs-lookup"><span data-stu-id="78d00-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="78d00-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="78d00-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|<span data-ttu-id="78d00-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="78d00-106">Event ID</span></span>|-|  
+|<span data-ttu-id="78d00-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="78d00-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="78d00-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="78d00-108"> EDI</span></span>|  
+|<span data-ttu-id="78d00-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="78d00-109">Component</span></span>|<span data-ttu-id="78d00-110">EDI エンジン</span><span class="sxs-lookup"><span data-stu-id="78d00-110">EDI Engine</span></span>|  
+|<span data-ttu-id="78d00-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="78d00-111">Symbolic Name</span></span>|<span data-ttu-id="78d00-112">AgreementResolutionAgreementDiasbledOrExpired</span><span class="sxs-lookup"><span data-stu-id="78d00-112">AgreementResolutionAgreementDiasbledOrExpired</span></span>|  
+|<span data-ttu-id="78d00-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="78d00-113">Message Text</span></span>|<span data-ttu-id="78d00-114">{0} プロトコルに対して見つかったアグリーメントが無効または期限切れの状態。</span><span class="sxs-lookup"><span data-stu-id="78d00-114">Agreement found for the {0} Protocol is in either Disabled or Expired state.</span></span>|  
   
-## 説明  
- このエラー/警告/情報イベントは、BizTalk Server がアグリーメントを解決できたが、アグリーメントの状態が無効または期限切れだったことを示します。  
+## <a name="explanation"></a><span data-ttu-id="78d00-115">説明</span><span class="sxs-lookup"><span data-stu-id="78d00-115">Explanation</span></span>  
+ <span data-ttu-id="78d00-116">このエラー/警告/情報イベントは、BizTalk Server がアグリーメントを解決できたが、アグリーメントの状態が無効または期限切れだったことを示します。</span><span class="sxs-lookup"><span data-stu-id="78d00-116">This Error/Warning/Information event indicates BizTalk Server was able to resolve to an agreement but it is in disabled or expired state.</span></span>  
   
-## ユーザーの操作  
- このエラーを解決するには、アグリーメントを有効にしてください。
+## <a name="user-action"></a><span data-ttu-id="78d00-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="78d00-117">User Action</span></span>  
+ <span data-ttu-id="78d00-118">このエラーを解決するには、アグリーメントを有効にしてください。</span><span class="sxs-lookup"><span data-stu-id="78d00-118">To resolve this error, please enable the agreement.</span></span>

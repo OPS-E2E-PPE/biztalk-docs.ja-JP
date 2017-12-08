@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
 <span data-ttu-id="e5f4b-145">**コントラクト**</span><span class="sxs-lookup"><span data-stu-id="e5f4b-145">**contract**</span></span>  
 <span data-ttu-id="e5f4b-146">コレクションと、サービスによって提供される操作へのアクセスに必要なメッセージの構造を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5f4b-146">Specifies the collection and structure of messages required to access the operations offered by the service.</span></span>
   
-####  <span data-ttu-id="e5f4b-147"><a name="D"></a>D</span><span class="sxs-lookup"><span data-stu-id="e5f4b-147"><a name="D"></a> D</span></span>  
+####  <a name="D"></a><span data-ttu-id="e5f4b-147">D</span><span class="sxs-lookup"><span data-stu-id="e5f4b-147">D</span></span>  
   
 <span data-ttu-id="e5f4b-148">**デザイン時機能**</span><span class="sxs-lookup"><span data-stu-id="e5f4b-148">**design-time experience**</span></span>  
 <span data-ttu-id="e5f4b-149">プロシージャおよびデザイン時に、開発者を実行する操作たとえばを使用してアダプター サービスの使用する BizTalk プロジェクト アドイン メッセージ スキーマを取得します。</span><span class="sxs-lookup"><span data-stu-id="e5f4b-149">Procedures and operations that a developer performs during design time; for example, using the Consume Adapter Service BizTalk Project Add-in to retrieve message schemas.</span></span>  

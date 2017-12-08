@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 # <a name="troubleshoot-issues-with-the-data-provider-for-sap"></a><span data-ttu-id="678e0-102">Data Provider 用 SAP に関する問題をトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="678e0-102">Troubleshoot Issues with the Data Provider for SAP</span></span>
 <span data-ttu-id="678e0-103">このセクションで説明を使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="678e0-103">This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)].</span></span>  
   
-##  <span data-ttu-id="678e0-104"><a name="BKMK_SAPUnknownParam"></a>SAP 用データ プロバイダーを使用して不明なパラメーター エラー</span><span class="sxs-lookup"><span data-stu-id="678e0-104"><a name="BKMK_SAPUnknownParam"></a> Unknown Parameter error using the Data Provider for SAP</span></span>  
+##  <a name="BKMK_SAPUnknownParam"></a><span data-ttu-id="678e0-104">SAP 用データ プロバイダーを使用して不明なパラメーター エラー</span><span class="sxs-lookup"><span data-stu-id="678e0-104">Unknown Parameter error using the Data Provider for SAP</span></span>  
  <span data-ttu-id="678e0-105">**問題**</span><span class="sxs-lookup"><span data-stu-id="678e0-105">**Problem**</span></span>  
   
  <span data-ttu-id="678e0-106">[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次のエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="678e0-106">The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] gives the following error:</span></span>  
@@ -41,7 +41,7 @@ Microsoft.Data.SAPClient.SAPException: Failed to retrieve data from SAP server -
   
  <span data-ttu-id="678e0-111">カスタム RFC を最新のバージョンに更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="678e0-111">You must update the custom RFC to the latest available version.</span></span> <span data-ttu-id="678e0-112">この RFC、Z_EXTRACT_DATA_OO は、adapterpacknoversion 使用できます。</span><span class="sxs-lookup"><span data-stu-id="678e0-112">This RFC, Z_EXTRACT_DATA_OO, is available with the adapterpacknoversion.</span></span> <span data-ttu-id="678e0-113">インストールおよびカスタムの RFC をアンインストールする方法の詳細については、次を参照してください。 [SAP 用データ プロバイダーのインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)です。</span><span class="sxs-lookup"><span data-stu-id="678e0-113">For more information about how to install and uninstall the custom RFC, see [Install Custom RFCs for the Data Provider for SAP](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md).</span></span>
   
-##  <span data-ttu-id="678e0-114"><a name="BKMK_SAPOOM"></a>SAP テーブルからデータを選択すると、メモリ例外外</span><span class="sxs-lookup"><span data-stu-id="678e0-114"><a name="BKMK_SAPOOM"></a> Out of memory exceptions when selecting data from an SAP table</span></span>  
+##  <a name="BKMK_SAPOOM"></a><span data-ttu-id="678e0-114">SAP テーブルからデータを選択すると、メモリ例外外</span><span class="sxs-lookup"><span data-stu-id="678e0-114">Out of memory exceptions when selecting data from an SAP table</span></span>  
  <span data-ttu-id="678e0-115">**問題**</span><span class="sxs-lookup"><span data-stu-id="678e0-115">**Problem**</span></span>  
   
  <span data-ttu-id="678e0-116">[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムからデータを選択するときに、メモリ不足の例外をスローします。</span><span class="sxs-lookup"><span data-stu-id="678e0-116">The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] throws an out of memory exception when selecting data from an SAP system.</span></span>  
@@ -66,7 +66,7 @@ SELECT * FROM <tablename> OPTION 'batchsize 1000'
   
  <span data-ttu-id="678e0-128">[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]今すぐ、一度に 1000 を超える行が取得され、したがって大量のメモリを消費しません。</span><span class="sxs-lookup"><span data-stu-id="678e0-128">The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] now retrieves only 1000 rows at a time and hence does not consume large amount of memory.</span></span>  
   
-##  <span data-ttu-id="678e0-129"><a name="BKMK_SAPQueryExcep"></a>パラメーターと日付の値を取得するクエリの実行中に例外</span><span class="sxs-lookup"><span data-stu-id="678e0-129"><a name="BKMK_SAPQueryExcep"></a> Exception while executing a query that takes parameters with date values</span></span>  
+##  <a name="BKMK_SAPQueryExcep"></a><span data-ttu-id="678e0-129">パラメーターと日付の値を取得するクエリの実行中に例外</span><span class="sxs-lookup"><span data-stu-id="678e0-129">Exception while executing a query that takes parameters with date values</span></span>  
  <span data-ttu-id="678e0-130">**問題**</span><span class="sxs-lookup"><span data-stu-id="678e0-130">**Problem**</span></span>  
   
  <span data-ttu-id="678e0-131">EXECQUERY がのコマンドを日付の値をとるパラメーターを使用してクエリを実行するときに、次の例外を取得します。</span><span class="sxs-lookup"><span data-stu-id="678e0-131">You get the following exception when you execute a query using the EXECQUERY command that has a parameter which takes a date value:</span></span>  
@@ -88,7 +88,7 @@ SapErrorMessage=Enter date in the format __.__.____.
 EXECQUERY ZTEST3 @USERGROUP='SYSTQV000024', @P1='20080606'  
 ```  
   
-##  <span data-ttu-id="678e0-137"><a name="BKMK_SAPNOVARIANT"></a>EXECQUERY コマンドを使用してクエリを実行する NO_VARIANT 例外</span><span class="sxs-lookup"><span data-stu-id="678e0-137"><a name="BKMK_SAPNOVARIANT"></a> NO_VARIANT exception executing queries using the EXECQUERY command</span></span>  
+##  <a name="BKMK_SAPNOVARIANT"></a><span data-ttu-id="678e0-137">EXECQUERY コマンドを使用してクエリを実行する NO_VARIANT 例外</span><span class="sxs-lookup"><span data-stu-id="678e0-137">NO_VARIANT exception executing queries using the EXECQUERY command</span></span>  
  <span data-ttu-id="678e0-138">**問題**</span><span class="sxs-lookup"><span data-stu-id="678e0-138">**Problem**</span></span>  
   
  <span data-ttu-id="678e0-139">EXECQUERY コマンドを使用してクエリを実行するときに、次の例外を取得します。</span><span class="sxs-lookup"><span data-stu-id="678e0-139">You get the following exception when you execute a query using the EXECQUERY command:</span></span>  

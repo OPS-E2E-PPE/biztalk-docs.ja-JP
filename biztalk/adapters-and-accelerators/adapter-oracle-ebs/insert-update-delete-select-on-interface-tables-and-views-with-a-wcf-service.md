@@ -228,7 +228,7 @@ public partial class InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEEClient : System.
   
 11. <span data-ttu-id="b0bc6-195">プロジェクトをビルドし、それを実行します。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-195">Build the project and then run it.</span></span> <span data-ttu-id="b0bc6-196">アプリケーションは、MS_SAMPLE_EMPLOYEE テーブルにレコードを挿入します。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-196">The application inserts a record in the MS_SAMPLE_EMPLOYEE table.</span></span>  
   
-###  <span data-ttu-id="b0bc6-197"><a name="BKMK_Select"></a>操作を選択します。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-197"><a name="BKMK_Select"></a> Select Operation</span></span>  
+###  <a name="BKMK_Select"></a><span data-ttu-id="b0bc6-197">操作を選択します。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-197">Select Operation</span></span>  
  <span data-ttu-id="b0bc6-198">次のコードは、MS_SAMPLE_EMPLOYEE インターフェイス テーブルを対象とする選択操作を示しています。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-198">The following code shows a Select operation that targets the MS_SAMPLE_EMPLOYEE interface table.</span></span> <span data-ttu-id="b0bc6-199">選択操作は、テーブルに挿入された最後のレコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-199">The Select operation selects the last record inserted into the table.</span></span> <span data-ttu-id="b0bc6-200">返されたレコードは、コンソールに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-200">The returned record is written to the console.</span></span>  
   
 ```  
@@ -259,7 +259,7 @@ Console.WriteLine("Press any key to continue ...");
 Console.ReadLine();  
 ```  
   
-###  <span data-ttu-id="b0bc6-201"><a name="BKMK_Update"></a>更新操作</span><span class="sxs-lookup"><span data-stu-id="b0bc6-201"><a name="BKMK_Update"></a> Update Operation</span></span>  
+###  <a name="BKMK_Update"></a><span data-ttu-id="b0bc6-201">更新操作</span><span class="sxs-lookup"><span data-stu-id="b0bc6-201">Update Operation</span></span>  
  <span data-ttu-id="b0bc6-202">次のコードでは、MS_SAMPLE_EMPLOYEE インターフェイス テーブルを対象とする更新操作を示します。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-202">The following code shows an Update operation that targets the MS_SAMPLE_EMPLOYEE interface table.</span></span>  
   
 ```  
@@ -284,7 +284,7 @@ Console.WriteLine("Press any key to continue...");
 Console.ReadLine();  
 ```  
   
-###  <span data-ttu-id="b0bc6-203"><a name="BKMK_Delete"></a>削除操作</span><span class="sxs-lookup"><span data-stu-id="b0bc6-203"><a name="BKMK_Delete"></a> Delete Operation</span></span>  
+###  <a name="BKMK_Delete"></a><span data-ttu-id="b0bc6-203">削除操作</span><span class="sxs-lookup"><span data-stu-id="b0bc6-203">Delete Operation</span></span>  
  <span data-ttu-id="b0bc6-204">次のコードは、MS_SAMPLE_EMPLOYEE インターフェイス テーブルを対象とする削除操作を示しています。</span><span class="sxs-lookup"><span data-stu-id="b0bc6-204">The following code shows a Delete operation that targets the MS_SAMPLE_EMPLOYEE interface table.</span></span>  
   
 ```  

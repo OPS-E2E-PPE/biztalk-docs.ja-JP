@@ -23,7 +23,7 @@ ms.lasthandoff: 09/20/2017
   
  
   
-##  <span data-ttu-id="05726-105"><a name="Define"></a>コンテンツのソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="05726-105"><a name="Define"></a> Define the Content Source</span></span>  
+##  <a name="Define"></a><span data-ttu-id="05726-105">コンテンツのソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="05726-105">Define the Content Source</span></span>  
  <span data-ttu-id="05726-106">このセクションでは、Microsoft Office SharePoint Server が、データをクロールする場所からのコンテンツ ソースの定義について説明します。</span><span class="sxs-lookup"><span data-stu-id="05726-106">This section talks about defining a content source from where Microsoft Office SharePoint Server can crawl the data.</span></span> <span data-ttu-id="05726-107">メソッドのインスタンスに作成される Id の列挙子へのコンテンツのマッピングが含まれます[手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルを作成する](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="05726-107">This involves mapping the content to the Id Enumerator method instance created in [Step 2: Create an application definition file for the Oracle E-Business Suite artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md).</span></span>  
   
 #### <a name="to-define-a-content-source"></a><span data-ttu-id="05726-108">コンテンツ ソースを定義するには</span><span class="sxs-lookup"><span data-stu-id="05726-108">To define a content source</span></span>  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 11. <span data-ttu-id="05726-128">下の左ペインで**クロール**をクリックして**クロール ログ**、クロールが成功したことを確認するログ ファイルを確認してください。</span><span class="sxs-lookup"><span data-stu-id="05726-128">In the left pane under **Crawling**, click **Crawl Log**, and then verify the log file to ensure that the crawling is successful.</span></span>  
   
-##  <span data-ttu-id="05726-129"><a name="Scope"></a>クロールされたコンテンツのスコープを定義します。</span><span class="sxs-lookup"><span data-stu-id="05726-129"><a name="Scope"></a> Define a Scope for the Crawled Content</span></span>  
+##  <a name="Scope"></a><span data-ttu-id="05726-129">クロールされたコンテンツのスコープを定義します。</span><span class="sxs-lookup"><span data-stu-id="05726-129">Define a Scope for the Crawled Content</span></span>  
   
 1.  <span data-ttu-id="05726-130">SharePoint 3.0 サーバーの全体管理を開始します。</span><span class="sxs-lookup"><span data-stu-id="05726-130">Start SharePoint 3.0 Central Administration.</span></span> <span data-ttu-id="05726-131">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Office Server**、クリックして**SharePoint 3.0 サーバーの全体管理**.</span><span class="sxs-lookup"><span data-stu-id="05726-131">Click **Start**, point to **All Programs**, point to **Microsoft Office Server**, and then click **SharePoint 3.0 Central Administration**.</span></span>  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="05726-147">**スコープ更新ステータス**行範囲の更新の状態が表示されます。</span><span class="sxs-lookup"><span data-stu-id="05726-147">The **Scope update status** row will display the status of the scope update.</span></span> <span data-ttu-id="05726-148">更新が完了するまで待機します。</span><span class="sxs-lookup"><span data-stu-id="05726-148">Wait until the update is complete.</span></span> <span data-ttu-id="05726-149">更新が完了したら、スコープが使用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="05726-149">After the updated is completed, the scope is ready to be used.</span></span>  
   
-##  <span data-ttu-id="05726-150"><a name="AddScope"></a>検索ドロップダウン リストに、スコープを追加します。</span><span class="sxs-lookup"><span data-stu-id="05726-150"><a name="AddScope"></a> Add the Scope to the Search Dropdown</span></span>  
+##  <a name="AddScope"></a><span data-ttu-id="05726-150">検索ドロップダウン リストに、スコープを追加します。</span><span class="sxs-lookup"><span data-stu-id="05726-150">Add the Scope to the Search Dropdown</span></span>  
  <span data-ttu-id="05726-151">検索範囲を作成した後に使用できるようにする、Microsoft Office SharePoint Server で、検索ドロップダウン リストに、スコープを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05726-151">After you have created the search scope, you must add the scope to the search dropdown in Microsoft Office SharePoint Server so that it can be used.</span></span>  
   
 #### <a name="to-add-the-scope-to-the-search-dropdown"></a><span data-ttu-id="05726-152">検索ドロップダウン リストに、スコープを追加するには</span><span class="sxs-lookup"><span data-stu-id="05726-152">To add the scope to the search dropdown</span></span>  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="05726-164">検索ドロップダウン表示グループに追加された MS_SAMPLE_EMPLOYEE_Search スコープを持つ範囲の表示 ページに戻るされます。</span><span class="sxs-lookup"><span data-stu-id="05726-164">You will return to the View Scopes page with the MS_SAMPLE_EMPLOYEE_Search scope added in the Search Dropdown display group.</span></span>  
   
-##  <span data-ttu-id="05726-165"><a name="SearchWebPart"></a>検索ボックス Web パーツを追加します。</span><span class="sxs-lookup"><span data-stu-id="05726-165"><a name="SearchWebPart"></a> Add the Search Box Web Part</span></span>  
+##  <a name="SearchWebPart"></a><span data-ttu-id="05726-165">検索ボックス Web パーツを追加します。</span><span class="sxs-lookup"><span data-stu-id="05726-165">Add the Search Box Web Part</span></span>  
  <span data-ttu-id="05726-166">Oracle E-business Suite で MS_SAMPLE_EMPLOYEE インターフェイス テーブルでフルテキスト検索を実行するユーザーを有効にするには、ようになりました、Web パーツ ページを作成し、検索ボックス Web パーツを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05726-166">To enable the users to perform a full-text search on the MS_SAMPLE_EMPLOYEE interface table in Oracle E-Business Suite, you must now create a Web part page, and add a Search Box Web Part to it.</span></span>  
   
 #### <a name="to-add-the-search-box-web-part"></a><span data-ttu-id="05726-167">検索ボックス Web パーツを追加するには</span><span class="sxs-lookup"><span data-stu-id="05726-167">To add the Search Box Web Part</span></span>  

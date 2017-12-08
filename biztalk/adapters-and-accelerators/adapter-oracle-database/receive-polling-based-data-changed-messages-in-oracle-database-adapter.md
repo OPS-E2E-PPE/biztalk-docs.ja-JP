@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  <span data-ttu-id="98d86-174">WCF サービス モデルまたは WCF チャネル モデルを使用している場合、必要がありますも設定する、 **AcceptCredentialsInUri**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="98d86-174">If you are using the WCF service model or the WCF channel model, you must also set the **AcceptCredentialsInUri** binding property.</span></span>  
   
-##  <span data-ttu-id="98d86-175"><a name="ForUpdate"></a>ポーリング ステートメントでの更新プログラムを入力してください。</span><span class="sxs-lookup"><span data-stu-id="98d86-175"><a name="ForUpdate"></a> Enter a FOR UPDATE in the polling statement</span></span>  
+##  <a name="ForUpdate"></a><span data-ttu-id="98d86-175">ポーリング ステートメントでの更新プログラムを入力してください。</span><span class="sxs-lookup"><span data-stu-id="98d86-175">Enter a FOR UPDATE in the polling statement</span></span>  
  <span data-ttu-id="98d86-176">ポーリング ステートメントと SELECT ステートメントで指定された行に影響するポーリング後ステートメントを実行すると、SELECT ステートメントを使用している場合は、ポーリング ステートメントで FOR UPDATE 句を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="98d86-176">If you are using a SELECT statement as the polling statement and executing a post-poll statement that affects the rows specified in the SELECT statement, you must use the FOR UPDATE clause in the polling statement.</span></span> <span data-ttu-id="98d86-177">ポーリング ステートメントによって選択したレコードが、トランザクション中にロックされていることと、ポーリング後ステートメントがそれらに必要な更新を実行できることにより、FOR UPDATE 句を指定します。</span><span class="sxs-lookup"><span data-stu-id="98d86-177">Specifying a FOR UPDATE clause ensures that the records selected by the polling statement are locked during the transaction and that the post-poll statement can perform any required updates on them.</span></span>  
   
 > [!CAUTION]

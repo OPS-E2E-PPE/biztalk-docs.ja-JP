@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="creating-a-web-part-page"></a><span data-ttu-id="74afc-109">Web パーツ ページを作成します。</span><span class="sxs-lookup"><span data-stu-id="74afc-109">Creating a Web Part Page</span></span>  
  <span data-ttu-id="74afc-110">このセクションでは、Web パーツ ページを作成する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="74afc-110">This section provides instructions to create a Web Part page.</span></span>  
   
-###  <span data-ttu-id="74afc-111"><a name="WebPart"></a>Web パーツ ページを作成するには</span><span class="sxs-lookup"><span data-stu-id="74afc-111"><a name="WebPart"></a> To create a Web Part page</span></span>  
+###  <a name="WebPart"></a><span data-ttu-id="74afc-111">Web パーツ ページを作成するには</span><span class="sxs-lookup"><span data-stu-id="74afc-111">To create a Web Part page</span></span>  
   
 1.  <span data-ttu-id="74afc-112">SharePoint 3.0 サーバーの全体管理を開始します。</span><span class="sxs-lookup"><span data-stu-id="74afc-112">Start SharePoint 3.0 Central Administration.</span></span> <span data-ttu-id="74afc-113">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Office Server**、 をクリック**SharePoint 3.0 サーバーの全体管理**です。</span><span class="sxs-lookup"><span data-stu-id="74afc-113">Click **Start**, point to **All Programs**, point to **Microsoft Office Server**, and click **SharePoint 3.0 Central Administration**.</span></span>  
   
