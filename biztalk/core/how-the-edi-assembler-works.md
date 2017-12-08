@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="32eb0-161">マッピングによって検証エラーが発生した場合、イベント ビューアに無効な長さやデータ型、無効な制御機関コードなどの該当するエラーが表示され、XML トランザクション セットまたはインターチェンジ XML は中断されます。</span><span class="sxs-lookup"><span data-stu-id="32eb0-161">If mapping causes a validation error, the XML transaction set or interchange XML is suspended with an appropriate error in the event viewer, such as invalid length or data type, or invalid Control Agency Code.</span></span>  
   
-####  <span data-ttu-id="32eb0-162"><a name="BKMK_X12"></a>X12 トランザクション セット ヘッダーおよびトレーラ セグメント</span><span class="sxs-lookup"><span data-stu-id="32eb0-162"><a name="BKMK_X12"></a> X12 Transaction Set Header and Trailer Segments</span></span>  
+####  <a name="BKMK_X12"></a><span data-ttu-id="32eb0-162">X12 トランザクション セット ヘッダーおよびトレーラ セグメント</span><span class="sxs-lookup"><span data-stu-id="32eb0-162">X12 Transaction Set Header and Trailer Segments</span></span>  
  <span data-ttu-id="32eb0-163">ヘッダーおよびトレーラ セグメントのない X12 エンコード トランザクション セットの場合、EDI アセンブラは、ST および SE セグメントを次の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="32eb0-163">For X12-encoded transaction sets that do not have header and trailer segments, the EDI Assembler will set ST and SE segments to the following:</span></span>  
   
 |<span data-ttu-id="32eb0-164">ヘッダーおよびトレーラ セグメント</span><span class="sxs-lookup"><span data-stu-id="32eb0-164">Header/Footer Segment</span></span>|<span data-ttu-id="32eb0-165">値</span><span class="sxs-lookup"><span data-stu-id="32eb0-165">Value</span></span>|  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="32eb0-182">ST03 など、トランザクション セット ヘッダーの他のデータ要素は省略可能であるため、生成されるセグメントでは評価されません。</span><span class="sxs-lookup"><span data-stu-id="32eb0-182">Other data elements in the transaction set header, such as ST03, are optional and so are not valued in the generated segments.</span></span>  
   
-####  <span data-ttu-id="32eb0-183"><a name="BKMK_EDIFACT"></a>EDIFACT トランザクション セット ヘッダーおよびトレーラ セグメント</span><span class="sxs-lookup"><span data-stu-id="32eb0-183"><a name="BKMK_EDIFACT"></a> EDIFACT Transaction Set Header and Trailer Segments</span></span>  
+####  <a name="BKMK_EDIFACT"></a><span data-ttu-id="32eb0-183">EDIFACT トランザクション セット ヘッダーおよびトレーラ セグメント</span><span class="sxs-lookup"><span data-stu-id="32eb0-183">EDIFACT Transaction Set Header and Trailer Segments</span></span>  
  <span data-ttu-id="32eb0-184">ヘッダーおよびトレーラ セグメントのない EDIFACT エンコード トランザクション セットの場合、EDI アセンブラは、UNH および UNT セグメントを次の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="32eb0-184">For EDIFACT-encoded transaction sets that do not have header and trailer segments, the EDI Assembler will set UNH and UNT segments to the following:</span></span>  
   
 |<span data-ttu-id="32eb0-185">ヘッダーおよびトレーラ セグメント</span><span class="sxs-lookup"><span data-stu-id="32eb0-185">Header/Footer Segment</span></span>|<span data-ttu-id="32eb0-186">値</span><span class="sxs-lookup"><span data-stu-id="32eb0-186">Value</span></span>|  

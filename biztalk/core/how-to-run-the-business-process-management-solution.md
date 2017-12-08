@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a><span data-ttu-id="59480-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="59480-106">Prerequisites</span></span>  
  <span data-ttu-id="59480-107">BPM ソリューションを実行する前に」の手順を実行する必要があります[ビジネス プロセス管理ソリューションをインストールする方法](../core/how-to-install-the-business-process-management-solution.md)です。</span><span class="sxs-lookup"><span data-stu-id="59480-107">Before running the BPM solution, you must perform the steps in [How to Install the Business Process Management Solution](../core/how-to-install-the-business-process-management-solution.md).</span></span>  
   
-##  <span data-ttu-id="59480-108"><a name="step1"></a>ビジネス プロセス管理ソリューションを開始します。</span><span class="sxs-lookup"><span data-stu-id="59480-108"><a name="step1"></a> Start the Business Process Management Solution</span></span>  
+##  <a name="step1"></a><span data-ttu-id="59480-108">ビジネス プロセス管理ソリューションを開始します。</span><span class="sxs-lookup"><span data-stu-id="59480-108">Start the Business Process Management Solution</span></span>  
   
 #### <a name="to-start-the-business-process-management-solution"></a><span data-ttu-id="59480-109">ビジネス プロセス管理ソリューションを開始するには</span><span class="sxs-lookup"><span data-stu-id="59480-109">To start the Business Process Management Solution</span></span>  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="59480-146">型`BTSScnBPMProvisioning.exe 8880`、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="59480-146">Type `BTSScnBPMProvisioning.exe 8880`, and then press ENTER.</span></span> <span data-ttu-id="59480-147">ケーブル プロビジョニング システムの実行は続けます。</span><span class="sxs-lookup"><span data-stu-id="59480-147">Then, keep the Cable Provisioning System running.</span></span> <span data-ttu-id="59480-148">Cable Provisioning System は、8880 TCP ポートでリッスンします。</span><span class="sxs-lookup"><span data-stu-id="59480-148">The Cable Provisioning System listens on the TCP port, 8880.</span></span> <span data-ttu-id="59480-149">このアプリケーションは、バックエンド注文システムをシミュレートし、最終的な注文を表示します。</span><span class="sxs-lookup"><span data-stu-id="59480-149">This application simulates a back-end order system, and displays the final orders.</span></span>  
   
-##  <span data-ttu-id="59480-150"><a name="step3"></a>実行し、ビジネス プロセス管理ソリューションの検証</span><span class="sxs-lookup"><span data-stu-id="59480-150"><a name="step3"></a> Run and validate the Business Process Management Solution</span></span>  
+##  <a name="step3"></a><span data-ttu-id="59480-150">実行し、ビジネス プロセス管理ソリューションの検証</span><span class="sxs-lookup"><span data-stu-id="59480-150">Run and validate the Business Process Management Solution</span></span>  
   
 #### <a name="to-submit-a-new-order-and-validate-the-solution"></a><span data-ttu-id="59480-151">新しい注文の送信とソリューションの検証</span><span class="sxs-lookup"><span data-stu-id="59480-151">To submit a new order and validate the solution</span></span>  
   

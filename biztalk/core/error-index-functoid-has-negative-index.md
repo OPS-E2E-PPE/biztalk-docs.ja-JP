@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---index-functoid-has-negative-index"></a>エラー - インデックス Functoid に負のインデックス
-**エラー コード**  
+# <a name="error---index-functoid-has-negative-index"></a><span data-ttu-id="a4ab5-102">エラー - インデックス Functoid に負のインデックス</span><span class="sxs-lookup"><span data-stu-id="a4ab5-102">Error - Index Functoid Has Negative Index</span></span>
+<span data-ttu-id="a4ab5-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="a4ab5-103">**Error Code**</span></span>  
   
- btm1017  
+ <span data-ttu-id="a4ab5-104">btm1017</span><span class="sxs-lookup"><span data-stu-id="a4ab5-104">btm1017</span></span>  
   
- **説明**  
+ <span data-ttu-id="a4ab5-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="a4ab5-105">**Explanation**</span></span>  
   
- 入力されたパラメーターの 1 つまたは複数のインデックス**インデックス**functoid が有効ではありません。 インデックス入力パラメーターは正の整数である必要があります。
+ <span data-ttu-id="a4ab5-106">入力されたパラメーターの 1 つまたは複数のインデックス**インデックス**functoid が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="a4ab5-106">One or more of the index input parameters provided for the indicated **Index** functoid is not valid.</span></span> <span data-ttu-id="a4ab5-107">インデックス入力パラメーターは正の整数である必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4ab5-107">Index input parameters must be positive integers.</span></span>
