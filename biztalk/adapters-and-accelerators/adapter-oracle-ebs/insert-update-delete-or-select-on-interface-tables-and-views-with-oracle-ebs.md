@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef4765909b181a9074ffa6e52c81cdab01c1e522
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adc837fb72c0e18370d28450bf40f162f9849230
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="insert-update-delete-or-select-on-interface-tables-and-interface-views-with-oracle-e-business-suite"></a>挿入、更新、削除、またはインターフェイスのテーブルおよび Oracle E-business Suite のインターフェイス ビューの選択
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サーフェス Insert などの標準的な操作のセットは、インターフェイスに対する Update、Delete、Select がテーブルし、ビューします。 このトピックでは、アダプターを使用してこれらの操作を実行する方法についてを説明します。 アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。[インターフェイス テーブルとのインターフェイス ビューで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)です。 これらの操作用の SOAP メッセージの構造については、次を参照してください。 [Insert、Update、Delete、および選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)です。  
@@ -134,7 +134,7 @@ ms.lasthandoff: 09/20/2017
   
     -   ハード ディスクと、対応する file ポートを BizTalk オーケストレーションが Oracle E-business Suite からの応答を含む応答メッセージをドロップする場所に場所を定義します。  
   
-    -   Oracle E-business Suite にメッセージを送信する物理 Wcf-custom または Wcf-oracleebs 送信ポートを定義します。 送信ポートでアクションを指定することもあります。 ポートを作成する方法については、次を参照してください[Oracle E-business アダプターを物理ポート バインドを手動で構成します。。](../../adapters-and-accelerators/adapter-oracle-ebs/manually-configure-a-physical-port-binding-to-the-oracle-e-business-adapter.md)  
+    -   Oracle E-business Suite にメッセージを送信する物理 Wcf-custom または Wcf-oracleebs 送信ポートを定義します。 送信ポートでアクションを指定することもあります。 ポートを作成する方法については、次を参照してください[Oracle E-business アダプターを物理ポート バインドを手動で構成します。](../../adapters-and-accelerators/adapter-oracle-ebs/manually-configure-a-physical-port-binding-to-the-oracle-e-business-adapter.md)  
   
          インターフェイスのテーブルまたはインターフェイスで操作を実行するビューを使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]操作が呼び出される適切なアプリケーション コンテキストを設定する必要があります。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]のすべての操作のアプリケーション コンテキストを指定する特定のバインディング プロパティを提供します。 インターフェイス テーブルに対する操作を実行するために使用する Wcf-custom または Wcf-oracleebs のポートでは、これらのバインディング プロパティを設定する必要があります。  
   
@@ -205,7 +205,7 @@ ms.lasthandoff: 09/20/2017
  オーケストレーションはメッセージを使用して、Oracle E-business Suite に送信します。 Oracle E-business Suite からの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、前の要求メッセージの Oracle E-business Suite からの応答には。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <InsertResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/AR/AR/AR_ARCHIVE_PURGE_INTERIM">  
   <InsertResult>1</InsertResult>   
 </InsertResponse>  

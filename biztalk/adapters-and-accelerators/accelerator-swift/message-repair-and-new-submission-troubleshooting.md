@@ -15,11 +15,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dab8140c33b5518ec01f28128b5ef15bab0fab6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d341a7f03c70e1ddcd242d7804b162338798e94
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>Message Repair and 新しい送信のトラブルシューティング
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>エンベロープ スキーマが展開されていない場合は、修復されたメッセージを送信することはできません。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
  エンベロープ スキーマは展開されません。 これは、MT に当てはまります*xxx*メッセージまたは解析が失敗したすべてのメッセージ。  
   
 ### <a name="solution"></a>解決方法  
- 使用している各メッセージ スキーマをエンベロープ スキーマを展開 (\<ドライブ >: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン > メッセージ パック \SWIFT Messages\ A4SWIFT SRG\<バージョン > \カテゴリ n\MTxxx.xsd)、未解析のエンベロープ スキーマ (\<ドライブ >: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン > メッセージ パック \SWIFT Messages\ A4SWIFT SRG\<バージョン > \ UnparsedMessage\EnvelopeUnparsedMessage.xsd)。 詳細については、次を参照してください。 [A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)です。  
+ 使用している各メッセージ スキーマをエンベロープ スキーマを展開 (\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ パック \SWIFT Messages\ A4SWIFT SRG\<バージョン\>\Category n\MTxxx.xsd)、未解析のエンベロープ スキーマ (\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ パック \SWIFT Messages\ A4SWIFT SRG\<バージョン\>\ 未解析 Message\EnvelopeUnparsedMessage.xsd)。 詳細については、次を参照してください。 [A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)です。  
   
 ## <a name="you-cannot-submit-a-fixed-unparsed-message-from-a-mrsr-site-library-named-other-than-unparsed"></a>"Unparsed"以外の名前付き MRSR サイトのライブラリから固定未解析のメッセージを送信することはできません。  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="symptom"></a>現象  
  MRSR で修復の受信トレイでメッセージを開いたときに、ポップアップで、次のエラー メッセージが表示されます。  
   
- "ログイン 'A4SWIFT' で要求されたデータベースを開くことができません。 ログインに失敗しました。 ユーザー ' NT authority \network SERVICE' はログインできませんでした。  
+ "ログイン 'A4SWIFT' で要求されたデータベースを開くことができません。 ログインに失敗しました. ユーザー ' NT authority \network SERVICE' はログインできませんでした。  
   
 ### <a name="possible-cause"></a>考えられる原因  
  ログイン アカウント A4SWIFT_MRSR web サービスを実行する web アプリケーションは、ネットワーク サービス、ローカルではないか、ドメイン アカウントは、A4SWIFT Users グループです。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
   
-2.  IIS マネージャーで、展開、  ***\<サーバー名 >* (ローカル コンピューター)**  ノード、**アプリケーション プール**ノードおよび**Websites**ノード。 [Web サイト] ノードで、展開、 **Default Web Site**ノード。  
+2.  IIS マネージャーで、展開、  ***\<サーバー名\>* (ローカル コンピューター)**  ノード、**アプリケーション プール**ノードおよび**Webサイト**ノード。 [Web サイト] ノードで、展開、 **Default Web Site**ノード。  
   
 3.  [既定の Web サイト] ノードを右クリックして**A4SWIFT_MRSR**、クリックして**プロパティ**です。  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  IIS マネージャー ダイアログ ボックスの アプリケーション プール ノードの下で A4SWIFT_MRSR のアプリケーション プールを右クリックし、をクリックして**プロパティ**です。  
   
-6.  \<アプリケーション プール名 > プロパティ ダイアログ ボックスをクリックして、 **Identity**注意してください。 場合**定義済み**がクリックされたと**Network Service**はクリックして選択すると、**構成可能**ローカルまたはドメイン アカウントを入力し、パスワードを入力します。 **[OK]**をクリックします。  
+6.  \<アプリケーション プール名\>プロパティ ダイアログ ボックスをクリックして、 **Identity**注意してください。 場合**定義済み**がクリックされたと**Network Service**はクリックして選択すると、**構成可能**ローカルまたはドメイン アカウントを入力し、パスワードを入力します。 **[OK]**をクリックします。  
   
 ## <a name="a-message-created-in-mrsr-site-on-a-localized-computer-is-not-processed"></a>ローカライズされたコンピューター上の MRSR サイトで作成されたというメッセージが処理されません。  
   
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
  "、BicMasterPolicy の実行中にエラーが発生しました。 有効な値について、ポリシーを確認します。"  
   
 ### <a name="possible-cause"></a>考えられる原因  
- SQL サーバー名、BIC データベース名、および統合セキュリティ ファイル内の値、BIC_Master_Policy.xml で*\<ドライブ >*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン > メッセージPack\SWIFT Messages\A4SWIFT SRG\<バージョン > 二重引用符で囲まれた \Base ポリシーが含まれています。 BIC 検証を有効にするこれらの文字列に入力既定 BIC_Master_Policy.xml ファイル」の説明に従って[有効にすると検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)です。  
+ SQL サーバー名、BIC データベース名、および統合セキュリティ ファイル内の値、BIC_Master_Policy.xml で*\<ドライブ\>*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>二重引用符で囲まれた \Base ポリシーが含まれています。 BIC 検証を有効にするこれらの文字列に入力既定 BIC_Master_Policy.xml ファイル」の説明に従って[有効にすると検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)です。  
   
 ### <a name="solution"></a>解決方法  
  BIC マスター ポリシーを修復するには、手順に従います。  
@@ -138,7 +138,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  ビジネス ルール作成ツールで、BIC_Master_Policy のバージョン 1.0 の展開を解除し、BIC_Master_Policy を削除します。  
   
-2.  メモ帳などのテキスト エディターで開くで BIC_Master_Policy.xml *\<ドライブ >*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン > メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン > \Base ポリシー。 SQL Server 名を囲む二重引用符を削除、BIC データベース名、およびセキュリティの値を統合します。  
+2.  メモ帳などのテキスト エディターで開くで BIC_Master_Policy.xml *\<ドライブ\>*: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\SWIFTMessages\A4SWIFT SRG\<バージョン\>\Base ポリシー。 SQL Server 名を囲む二重引用符を削除、BIC データベース名、およびセキュリティの値を統合します。  
   
 3.  ビジネス ルール エンジン展開ウィザードで、BIC_Master_Policy.xml をインポートし、BIC_Master_Policy.xml を展開します。  
   

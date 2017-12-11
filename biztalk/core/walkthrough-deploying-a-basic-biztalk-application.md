@@ -17,11 +17,11 @@ caps.latest.revision: "69"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5db86f672cd17965ec76877cc3867594bf82b40d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 445dcdf9685d5b4b74f5d1fd9738da838edb5f42
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-deploying-a-basic-biztalk-application"></a>チュートリアル: 基本的な BizTalk アプリケーションの配置
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、BizTalk ビジネス ソリューションの管理と展開を簡略化する機能が備わっています。 オーケストレーション、スキーマ、マップ、パイプライン、.NET アセンブリなど、ビジネス ソリューションのさまざまなアイテムを格納する BizTalk アプリケーション コンテナーが取り入れられました。 ことができます管理、変更、展開、および 1 つの単位としてアプリケーションにすべての項目をインストールします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション展開タスクの自動化に役立つウィザードも含まれています。 背景情報について、次を参照してください。[アプリケーションの展開と管理機能](../core/application-deployment-and-management-features.md)と[アプリケーションの展開と管理ツール](../core/application-deployment-and-management-tools.md)です。  
@@ -75,7 +75,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   **BizTalk アプリケーション テスター。** テスト担当者は、.msi ファイルにインポートする方法を学習できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]BizTalk アプリケーションとして登録する、テスト コンピューターで実行されています。 テスターは、アプリケーションをテスト コンピューターにインストールし、インストールを確認する方法も学ぶことができます。 アプリケーション展開作業のテストに関する背景情報については、次を参照してください。 [BizTalk アプリケーション展開のテスト タスク](../core/testing-tasks-for-biztalk-application-deployment.md)です。  
   
--   **BizTalk Server IT 管理者です。** ステージング サーバーおよび実稼働サーバーへの BizTalk アプリケーションの展開を担当する IT 管理者は、このタスクに必要な基本手順を学ぶことができます。 IT 管理者のアプリケーション展開タスクに関する背景情報を参照してください[BizTalk アプリケーション展開のステージング作業](../core/staging-tasks-for-biztalk-application-deployment.md)と[運用展開のタスクを BizTalk アプリケーション](../core/production-tasks-for-biztalk-application-deployment.md)。.  
+-   **BizTalk Server IT 管理者です。** ステージング サーバーおよび実稼働サーバーへの BizTalk アプリケーションの展開を担当する IT 管理者は、このタスクに必要な基本手順を学ぶことができます。 IT 管理者のアプリケーション展開タスクに関する背景情報を参照してください[BizTalk アプリケーション展開のステージング作業](../core/staging-tasks-for-biztalk-application-deployment.md)と[運用展開のタスクを BizTalk アプリケーション](../core/production-tasks-for-biztalk-application-deployment.md).  
   
 ##  <a name="BKMK_Overview"></a>このチュートリアルの概要  
  ここでは、ラボ環境で BizTalk アプリケーションを展開し、このテクノロジを実稼働環境に展開した場合にどのように機能するかを評価します。 ここで使用する単純なシナリオ (1 つの .msi ファイルを 1 台のコンピュータ上に BizTalk アプリケーションとして展開する) によって、アプリケーション展開に関する基本的な作業を理解することができます。  
@@ -104,7 +104,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 #### <a name="2-deploy-the-biztalk-assemblies"></a>2.BizTalk アセンブリの展開  
  開発用コンピューター上の Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からこの手順を実行して、BizTalk アセンブリを BizTalk アプリケーションに展開します。  
   
- このステップを開始する前に、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で使用できる BizTalk ソリューションを用意する必要があります。 独自のソリューションまたはプロジェクトを作成することも、[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] に含まれている ErrorHandling サンプルを設定することもできます。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に ErrorHandling サンプル ソリューションを設定するには、次の操作を行います。  
+ このステップを開始する前に、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で使用できる BizTalk ソリューションを用意する必要があります。 作成することも、独自のソリューションまたはプロジェクト、または BizTalk Server に含まれている ErrorHandling サンプルを設定することができます。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に ErrorHandling サンプル ソリューションを設定するには、次の操作を行います。  
   
 ###### <a name="to-set-up-the-errorhandling-solution"></a>ErrorHandling ソリューションを設定するには  
   
@@ -132,9 +132,9 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
     |プロパティ|値|説明|  
     |--------------|-----------|-----------------|  
-    |Application Name|\<Name>|このプロジェクトのアセンブリの展開先となる、BizTalk アプリケーションの名前。 アプリケーションが既に存在する場合、プロジェクトを展開すると、アセンブリがアプリケーションに追加されます。 アプリケーションが存在しない場合は、アプリケーションが新しく作成されます。 このフィールドを空白にした場合、アセンブリは、現在のグループの既定の BizTalk アプリケーションに展開されます。既定では "BizTalk Application 1" です。 スペースが含まれる名前は、二重引用符 (") で囲む必要があります。|  
-    |構成データベース|\<BizTalk 管理データベース名 >|グループの BizTalk 管理データベースの名前。既定では BizTalkMgmtDb です。|  
-    |[サーバー]|\<サーバー名 >|ローカル コンピューターで BizTalk 管理データベースをホストする SQL Server インスタンスの名前。 単一のコンピューターにインストールする場合、通常はローカル コンピューターの名前です。 **注:** BizTalk プロジェクトを別のコンピューターに移動する場合は、アセンブリを配置することができます前に、新しいコンピューター名を反映するようにサーバー プロパティを変更する必要があります。|  
+    |Application Name|\<名前\>|このプロジェクトのアセンブリの展開先となる、BizTalk アプリケーションの名前。 アプリケーションが既に存在する場合、プロジェクトを展開すると、アセンブリがアプリケーションに追加されます。 アプリケーションが存在しない場合は、アプリケーションが新しく作成されます。 このフィールドを空白にした場合、アセンブリは、現在のグループの既定の BizTalk アプリケーションに展開されます。既定では "BizTalk Application 1" です。 スペースが含まれる名前は、二重引用符 (") で囲む必要があります。|  
+    |構成データベース|\<BizTalk 管理データベース名\>|グループの BizTalk 管理データベースの名前。既定では BizTalkMgmtDb です。|  
+    |[サーバー]|\<サーバー名\>|ローカル コンピューターで BizTalk 管理データベースをホストする SQL Server インスタンスの名前。 単一のコンピューターにインストールする場合、通常はローカル コンピューターの名前です。 **注:** BizTalk プロジェクトを別のコンピューターに移動する場合は、アセンブリを配置することができます前に、新しいコンピューター名を反映するようにサーバー プロパティを変更する必要があります。|  
     |再配置します。|True または False|これを True に設定すると (既定)、バージョン番号を変更せずに BizTalk アセンブリを再展開できます。|  
     |[グローバル アセンブリ キャッシュにインストール]|True または False|これを True に設定すると (既定)、アセンブリの展開時に、ローカル コンピューター上のグローバル アセンブリ キャッシュ (GAC) にアセンブリがインストールされます。|  
     |ホスト インスタンスを再起動します。|True または False|これを True に設定すると、アセンブリの再展開時に、ローカル コンピューター上で実行中のすべてのホスト インスタンスが自動的に再起動されます。 False に設定した場合 (既定)、アセンブリの再展開時に、ホスト インスタンスを手動で再起動する必要があります。 **注:**ソリューション レベルからアセンブリを再デプロイする場合は、ホスト インスタンスが再起動されますがこのオプションを True に設定するプロジェクトごとにします。 結果として、再起動が 2 回以上行われる可能性があります。 ソリューション レベルからの再展開を計画する場合は、ソリューション内のただ 1 つのプロジェクトに対してこのプロパティを True に設定することで、ホスト インスタンスが複数回再起動することを防ぐことができます。 その場合は、ソリューション内で再展開される最後のプロジェクトに設定する必要があります。 また、再展開を実行するときにホスト インスタンスが停止された場合は、起動されません。|  
@@ -154,7 +154,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      例: **sn-k ErrorHandling.snk**  
   
-     確認メッセージを**キーのペアに書き込まれる\<**  *file_name***> .snk** `,`コマンド ラインで表示されます。  
+     確認メッセージを**キーのペアに書き込まれる\<**  *file_name***\>.snk** `,`コマンド ラインで表示されます。  
   
  次に、ソリューション内の各プロジェクトにキー ファイルを関連付ける必要があります。  
   
@@ -166,7 +166,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 3.  右側のウィンドウで確認、**アセンブリに署名**ボックス。  
   
-4.  下にあるドロップダウン ボックスをクリックして**厳密な名前キー ファイルを選択して**をクリックして **\<[参照...] >**、キー ファイルを参照します。  
+4.  下にあるドロップダウン ボックスをクリックして**厳密な名前キー ファイルを選択して**、 をクリックして**\<を参照しています.\>** 、キー ファイルを参照します。  
   
 5.  キー ファイルをクリックし、をクリックして**開く**です。  
   
@@ -324,7 +324,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      ![アプリケーションへの参照を追加](../core/media/appreferences.gif "AppReferences")  
   
-6.  **アプリケーションのターゲット環境設定**いることを確認 ページで、 **\<既定 >**が選択されているし、をクリックして**次へ**です。  
+6.  **アプリケーションのターゲット環境設定**いることを確認 ページで、 **\<既定\>**が選択されているし、をクリックして**次へ**です。  
   
 7.  **インポートの概要**ページで概要情報が正しいことを確認してをクリックして**インポート**です。  
   
@@ -357,4 +357,4 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 -   BizTalk グループとローカル コンピューターからアプリケーションを完全に削除するには、指示に従います[BizTalk アプリケーションを展開解除](../core/undeploying-biztalk-applications.md)です。  
   
 ## <a name="see-also"></a>参照  
-[BizTalk アプリケーションの展開と管理を理解します。](../core/understanding-biztalk-application-deployment-and-management.md)
+[BizTalk アプリケーションの展開と管理について](../core/understanding-biztalk-application-deployment-and-management.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c83e610a96343dfc32917f898f69645c13e5fa79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c6a16d47f88be211b376f54d0f7116346771d136
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-2010-performance-optimization-guide"></a>BizTalk Server 2010 Performance Optimization Guide
 Microsoft® BizTalk® Server 2010 のパフォーマンス最適化ガイドへようこそ。 BizTalk Server ソリューションのパフォーマンスを最適化するための詳細な情報を提供するには、このガイドを作成しました。 エンタープライズ アプリケーションの展開中に頻繁に、完全エンド ツー エンドのパフォーマンスのテスト機能は見落とされがちです。 Microsoft が拡張性の高いメッセージング インフラストラクチャを構築されたことを知ること、BizTalk Server を使用している多くの組織時間をほとんどまたはまったくない独自のアプリケーションのパフォーマンスのテストを実施します。 BizTalk Server アプリケーションは、カスタム コンポーネントだけでなく Microsoft によって提供されるには、多くの部分で構成されます。 それ以外は考えられるのパフォーマンスを Microsoft がこれらのコンポーネントのあらゆる組み合わせをテストします。 そのため、完全かつ適切実施、アプリケーションのパフォーマンス テストは、任意の展開の重要な手順です。  
@@ -28,7 +28,7 @@ Microsoft® BizTalk® Server 2010 のパフォーマンス最適化ガイドへ�
 ## <a name="whats-in-it"></a>これには  
  一般に、サーバーのパフォーマンスは、パフォーマンスの低いコンポーネントによって決定されます — ボトルネック システム内に存在します。 パフォーマンスを向上させるために、キーは、ボトルネックを特定、その原因を特定し、適切な修正措置を適用できることです。  
   
- 計画するとき、[!INCLUDE[prague](../includes/prague-md.md)]展開、設計を支援し、環境の最適化、このガイドを使用します。 パフォーマンスの概念はスケーラビリティの概念に関連しています。 システム コンポーネントのパフォーマンスに影響する要素を確実に理解した場合は、非常に混み合っての期間をサポートするために拡張できるようにコンポーネントを配置できます。  
+ BizTalk Server の展開を計画するときは、設計を支援し、環境を最適化するこのガイドを使用します。 パフォーマンスの概念はスケーラビリティの概念に関連しています。 システム コンポーネントのパフォーマンスに影響する要素を確実に理解した場合は、非常に混み合っての期間をサポートするために拡張できるようにコンポーネントを配置できます。  
   
  このガイドでは、BizTalk Server を使用して広範なきた IT 技術者の実践的な経験に基づいて、パフォーマンスを最適化するためのガイダンスを提供します。 具体的には、このガイドには、次の 4 つの主要なセクションが含まれています。  
   
@@ -36,7 +36,7 @@ Microsoft® BizTalk® Server 2010 のパフォーマンス最適化ガイドへ�
   
 -   **パフォーマンスを最適化する**:[のパフォーマンスの最適化](../technical-guides/optimizing-performance.md)セクションのパフォーマンスを最適化するためのガイダンスを提供する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]基になるプラットフォームのパフォーマンスにパフォーマンスが密接[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がインストールされています。 このセクションでは、両方のパフォーマンスを最適化するための推奨事項を説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プラットフォームです。  
   
--   **運用 BizTalk Server 環境のスケーリング**:[運用 BizTalk Server 環境のスケーリング](../technical-guides/scaling-a-production-biztalk-server-environment.md)セクションでは説明の詳細結果[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]BizTalk 製品によって完了したパフォーマンスのテストチームです。 これらのテストはスケーラビリティにフォーカスし、追加の影響を測定[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]コンピューターを追加することの影響[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベース、およびの両方を追加する影響[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]コンピューターおよび[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]メッセージ ボックス データベースをソリューションに同時にします。  
+-   **実稼働 BizTalk Server 環境のスケーリング**:[運用 BizTalk Server 環境のスケーリング](../technical-guides/scaling-a-production-biztalk-server-environment.md)セクションでは、BizTalk 製品チームが完了した BizTalk Server のパフォーマンス テストの結果の詳細を説明します. これらのテストはスケーラビリティにフォーカスし、BizTalk Server コンピューターを追加することの影響を追加することの影響を測定[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベース、および BizTalk Server コンピューターと BizTalk Server メッセージ ボックス データベースの両方をソリューションに追加することの影響同時にします。  
   
     -   数を増やすとき[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]内のコンピューター、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ、これらのテストの 1 つだけ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベース用に構成された、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。 これらのテストを追加することの影響にのみ重点を置いて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。  
   
@@ -50,7 +50,7 @@ Microsoft® BizTalk® Server 2010 のパフォーマンス最適化ガイドへ�
  [自動テストを容易にするために Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)– Visual Studio ロード テストを実行する BizTalk Server アプリケーションのパフォーマンスを評価するの使用方法について説明します。  
   
 ## <a name="acknowledgments"></a>受信確認  
- ここで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ユーザー教育チームは、相当のコンテンツのだけでなく、技術的なフィードバックを提供するため次の個人の未処理の投稿を確認する感謝、[!INCLUDE[prague](../includes/prague-md.md)]パフォーマンス最適化ガイド。  
+ ここで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ユーザー教育チームは、BizTalk Server Performance Optimization Guide の技術的なフィードバックとコンテンツのかなりの両方を提供する次の個人の未処理の投稿を確認する感謝します。  
   
  **作成者**  
   
