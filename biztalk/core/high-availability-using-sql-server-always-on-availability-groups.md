@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db9b066b6d1f2334e14e4829d61ec6b84830c4c1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 52579934be36d4bb42fa4b299f54b66fd6af3894
+ms.sourcegitcommit: 654a9586d1232ac332a1675b8a4fae832a0d559a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups"></a>SQL Server Always On 可用性グループを使用して高可用性
 SQL Server AlwaysOn 可用性グループを使用して高可用性を構成します。
@@ -69,7 +69,7 @@ BizTalk Server の基本的な構成で 9 データベースの最小値は、�
 |1 |[認証] |SSODB|
 |2 |管理 |BizTalkMgmtDb| 
 |3 |ランタイム |BizTalkMsgBoxDb<br/> BizTalkRulesEngineDb<br/> BAMPrimaryImport<br/>BAMStarSchema <br/>BAMAlertsApplication |
-|4 |Tracking |BizTalkDTADb| 
+|4 |Tracking |BizTalkDTADb<br/>EsbItineraryDb<br/>EsbExceptionDb | 
  
 1 つ以上のメッセージ ボックス データベースがあるシナリオでは、スケール アウト メッセージ ボックス データベース (複数のメッセージ ボックスで構成)、および各メッセージ ボックス データベースは、独自の SQL Server インスタンスである必要があります。 
 
@@ -241,7 +241,7 @@ BizTalk データベースのバックアップ ジョブに他の BizTalk デ�
  
 * [BizTalk Server データベースの高可用性を実現します。](../core/providing-high-availability-for-biztalk-server-databases.md)  
 * [Microsoft Azure の仮想マシンに対するマイクロソフト サーバー ソフトウェア サポート](https://support.microsoft.com/kb/2721672)  
-* [SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービスと AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)  
+* [SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn の使用](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)  
 * [AlwaysOn 可用性グループ (SQL Server) の概要](https://msdn.microsoft.com/library/ff877884.aspx)  
 * [データベース ミラーリングまたは AlwaysOn 可用性グループ (SQL Server) のデータベースにまたがるトランザクションのサポート](https://msdn.microsoft.com/library/ms366279.aspx)  
 * [SQL Server Windows Server 2012 R2 での MSDTC からトランザクションの結果を受信するときに、reenlist を呼び出すことができません。](https://support.microsoft.com/kb/3090973)  
