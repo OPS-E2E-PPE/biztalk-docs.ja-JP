@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ca754e84d07718a3656aa9a6f27d3a54f831c25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b18b9b3188ce3d9fb478c3f2d4390d167e5566a9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-using-database-and-net-facts"></a>チュートリアル: データベースおよび .NET のファクトの使用
 ここでは、ビジネス ルール作成ツールを使用して、データベースおよび .NET のファクトを使用するポリシーを作成する手順について説明します。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-the-testdb-database-and-the-po-table"></a>TestDB データベースと PO テーブルを作成するには  
   
-1.  開いている**SQL Server Management Studio**です。  
+1.  **SQL Server Management Studio** を開きます。  
   
 2.  サーバー名と認証を確認し、をクリックして**接続**です。  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Microsoft Visual Studio**です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 3.  **新しいプロジェクト** ダイアログ ボックスで、次の操作します。  
   
@@ -177,7 +177,7 @@ ms.lasthandoff: 09/20/2017
   
 20. ドラッグ、**ステータス**ノード、ファクト エクスプ ローラー ウィンドウからビジネス ルール作成ツールの右下の THEN ペインにします。  
   
-21. [THEN] ペインでをクリックして**\<値を入力 >**し入力**Approved**です。  
+21. [THEN] ペインでをクリックして**\<値を入力\>**し入力**Approved**です。  
   
 22. ファクト エクスプ ローラー ウィンドウで右クリック**バージョン 1.0**で**ProcessPurchaseOrderDbNet**、クリックして**新しいルールの追加**です。  
   
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
   
 30. ドラッグ、**ステータス**ノード、ファクト エクスプ ローラー ウィンドウからビジネス ルール作成ツールの右下の THEN ペインにします。  
   
-31. [THEN] ペインでをクリックして**\<値を入力 >**し入力**Denied**です。  
+31. [THEN] ペインでをクリックして**\<値を入力\>**し入力**Denied**です。  
   
 32. ポリシー エクスプ ローラー ウィンドウで右クリック**バージョン 1.0 (未保存)**、クリックして**保存**です。  
   
@@ -232,7 +232,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Microsoft Visual Studio**です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 3.  **新しいプロジェクト** ダイアログ ボックスで、次の操作します。  
   
@@ -316,7 +316,7 @@ ms.lasthandoff: 09/20/2017
   
 15. **ビルド** メニューのをクリックして**ビルド TestProcessPODbNet**です。  
   
-16. ビジネス ルール作成ツールで、次のように展開します**ポリシー**、展開**ProcessPurchaseOrderDbNet**、を右クリック**バージョン 1.0**、順にクリック**発行。**.  
+16. ビジネス ルール作成ツールで、次のように展開します**ポリシー**、展開**ProcessPurchaseOrderDbNet**、を右クリック**バージョン 1.0**、順にクリック**発行**。  
   
 17. 右クリック**バージョン 1.0 - 公開済み**、クリックして**展開**です。  
   

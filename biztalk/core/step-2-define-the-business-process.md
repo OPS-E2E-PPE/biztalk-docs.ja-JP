@@ -12,11 +12,11 @@ caps.latest.revision: "49"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17f181933daac5170c517a23f809eb97b54f2900
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e29a9d3f1256fc24cf0a8f57b8ce0b7b1ba707d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-define-the-business-process"></a>ステップ 2: ビジネス プロセスの定義
 ![手順 4 2](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**[Identifier]**|型**RequestMessage**です。|  
-    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されるアセンブリの選択 >**です。 [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**要求**です。 **[OK]**をクリックします。|  
+    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**. [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**要求**です。 **[OK]**をクリックします。|  
   
 4.  オーケストレーション ビューを右クリックして**メッセージ**、クリックして**新しいメッセージ**です。  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**[Identifier]**|型**RequestDeclineMessage**です。|  
-    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されるアセンブリの選択 >**です。 [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**RequestDecline**です。 **[OK]**をクリックします。|  
+    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**. [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**RequestDecline**です。 **[OK]**をクリックします。|  
   
 #### <a name="to-configure-the-properties-of-the-shapes"></a>図形のプロパティを構成するには  
   
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|型**TransformRequestToRequestDeclineMessage**です。|  
-    |**マップ名**|をクリック**しています.**. [変換の構成] で、次の操作を行います。<br /><br /> 構成情報の入力<br /><br /> -**既存のマップ**です。<br /><br /> 完全修飾マップ名:<br /><br /> - **\<参照されたアセンブリから選択 >**です。  左側のウィンドウから次のように選択します。 **EAISchemas**です。  右ペインで、[EAISchemas.MapToReqDecline] をクリックします。  **[OK]**をクリックします。<br /><br /> ソース<br /><br /> -RequestMessage<br /><br /> 転送先<br /><br /> -RequestDeclineMessage|  
+    |**マップ名**|**...** をクリックします。 [変換の構成] で、次の操作を行います。<br /><br /> 構成情報の入力<br /><br /> -**既存のマップ**です。<br /><br /> 完全修飾マップ名:<br /><br /> - **\<参照されたアセンブリから選択\>**です。  左側のウィンドウから次のように選択します。 **EAISchemas**です。  右ペインで、[EAISchemas.MapToReqDecline] をクリックします。  **[OK]**をクリックします。<br /><br /> ソース<br /><br /> -RequestMessage<br /><br /> 転送先<br /><br /> -RequestDeclineMessage|  
   
 11. デザイン画面でクリックして、 **Send_1**図形です。  
   
@@ -158,4 +158,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>参照  
  [手順 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
  [手順 3: オーケストレーションのポートを追加します。](../core/step-3-add-ports-to-the-orchestration.md)   
- [手順 4: EAIOrchestration プロジェクトをビルドします。](../core/step-4-build-the-eaiorchestration-project.md)
+ [手順 4: EAIOrchestration プロジェクトのビルド](../core/step-4-build-the-eaiorchestration-project.md)
