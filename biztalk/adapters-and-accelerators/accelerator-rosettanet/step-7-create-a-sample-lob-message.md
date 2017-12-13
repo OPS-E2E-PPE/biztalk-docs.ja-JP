@@ -17,18 +17,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: acc6b57a78d51d9c132115f387296c48c2e924c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1246f56615381d2627db3058dc821ba85bf8b74d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-create-a-sample-lob-message"></a>手順 7: サンプル LOB メッセージを作成します。
 ここでは、LOB アプリケーション ユーティリティを使用して、サンプルの基幹業務 (LOB) メッセージを作成します。  
   
 ### <a name="to-create-a-sample-message-using-the-lob-application-utility"></a>LOB アプリケーション ユーティリティを使用してサンプル メッセージを作成するには  
   
-1.  [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk フォルダーをダブルクリック**LOBApplication.exe**です。  
+1.  [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk フォルダーをダブルクリックし、**LOBApplication.exe**です。  
   
 2.  **LOB Application**  ダイアログ ボックスで、次の操作します。  
   
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     |**取引先名**|型**パートナー**です。|  
     |**PIP の名前**|型**0c1**です。|  
     |**[PIP Version]**|型**R01.02**です。|  
-    |**[ファイル名]**|省略記号ボタン (**.**) に移動する\<*ドライブ*: > \Program Files\Microsoft BizTalk\<バージョン > Accelerator for rosettanet \sdk\lobapplication\sampleinstances です。 選択**[0c1 request.xml]**クリックして、ファイルの一覧から**開く**です。|  
+    |**[ファイル名]**|省略記号ボタン (**.**) に移動する\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobapplication\sampleinstances です。 選択**[0c1 request.xml]**クリックして、ファイルの一覧から**開く**です。|  
     |**メッセージのカテゴリ**|選択**アクション**ドロップダウン リストからです。|  
   
 3.  **LOB Application**ダイアログ ボックスで、をクリックして**Submit Message**です。  

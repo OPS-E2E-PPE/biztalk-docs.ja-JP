@@ -13,18 +13,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07260c5f0d161698545ff7fd5b5177a5374f3d04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60b199bcd350a3341640baa05b875347c4f04bb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-common-schemas-for-v24"></a>手順 2: V2.4 の一般的なスキーマを作成します。
 V2.4 スキーマは、頻繁に参照されるスキーマは、クエリと応答メッセージ インスタンスの検証に使用します。  
   
 ### <a name="to-create-the-common-schemas-for-v24"></a>V2.4 の一般的なスキーマを作成するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 2.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**一覧で、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
   
@@ -42,7 +42,7 @@ V2.4 スキーマは、頻繁に参照されるスキーマは、クエリと応
   
 8.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンをクリックします。  
   
-9. **アセンブリ キー ファイル** ダイアログ ボックスを参照\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative チュートリアルでは、をクリックして**key.snk**、クリックして**開く**です。  
+9. **アセンブリ キー ファイル** ダイアログ ボックスを参照\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータInterrogative チュートリアルをクリックして**key.snk**、順にクリック**開く**です。  
   
 10. Interrogative_24Schemas プロパティ ページ] ダイアログ ボックスで、[ **OK**して変更を保存します。  
   

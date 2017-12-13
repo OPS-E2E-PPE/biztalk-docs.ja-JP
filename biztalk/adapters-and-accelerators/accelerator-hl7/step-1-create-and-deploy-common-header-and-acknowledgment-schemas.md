@@ -13,11 +13,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a134071ee1973961e0fb4ed9b4da73ad87d8dbb1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 222f78232afd988e5bb47b2aa12bb75eb4635ce5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a>手順 1: を作成し、共通のヘッダーと受信確認スキーマを展開
 メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 メッセージ インスタンスの確認を生成するのにには、受信確認スキーマを使用します。 このプロセスは、HL7 スキーマのすべてのバージョンで共通です。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Microsoft Visual Studio 2012**です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 3.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**一覧で、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Visual Studio 2012 コマンド プロンプト**です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、ディレクトリに移動、 \<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative チュートリアル フォルダーです。  
+2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、ディレクトリに移動、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative のアクセラレータTutorial フォルダーです。  
   
 3.  コマンド プロンプトで次のように入力します。 **sn – k key.snk**、キーを押します**Enter**です。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンをクリックします。  
   
-7.  アセンブリ キー ファイル ダイアログ ボックスでを参照\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative チュートリアルをクリックして**key.snk**、クリックして**開く**です。  
+7.  アセンブリ キー ファイル ダイアログ ボックスでを参照\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative チュートリアルでは、アクセラレータをクリックして**key.snk**、クリックして**開く**です。  
   
 8.  Interrogative_2XSchemas プロパティ ページ] ダイアログ ボックスで、[ **OK**して変更を保存します。  
   

@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d146dbeaa94d47799794de7fa6f9e6b9082f9fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc9e1a520153220bcc86d844ca94203ff2b78548
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-inspector-pipeline-component"></a>Message Inspector パイプライン コンポーネント
 このパイプライン コンポーネントにより、マルチパート メッセージのすべての部分、およびメッセージ コンテキストを確認し、メッセージに問題があるかどうかを判断できます。 このコンポーネントはトラブルシューティングの目的で使用します。  
@@ -32,17 +32,17 @@ ms.lasthandoff: 09/20/2017
  このコンポーネントは、カスタム パイプラインに構築し、送信ポートに接続します。 送信ポートにフィルタを作成し、監視するメッセージをサブスクライブします。 このトラブルシューティングは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] が既に実行している標準の処理とは別に実行されます。  
   
 ## <a name="building-a-custom-pipeline-using-the-message-inspector-pipeline-component"></a>Message Inspector パイプライン コンポーネントを使用したカスタム パイプラインの構築  
- Message Inspector パイプライン コンポーネントを使用するには、このコンポーネントを含むカスタム パイプラインを構築し、展開する必要があります。 詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「パイプライン デザイナーでのパイプラインの作成」を参照してください。  
+ Message Inspector パイプライン コンポーネントを使用するには、このコンポーネントを含むカスタム パイプラインを構築し、展開する必要があります。 詳細については、パイプラインとパイプライン デザイナーの作成」BizTalk Server ヘルプを参照してください。  
   
 #### <a name="to-deploy-the-message-inspector-pipeline-component"></a>Message Inspector パイプライン コンポーネントを展開するには  
   
-1.  [!INCLUDE[vs2012](../../includes/vs2012-md.md)]を起動します。  
+1.  Visual Studio を起動します。  
   
-2.  **ファイル**メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
+2.  **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
   
 3.  C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Inspector Pipeline Component、選択移動**[messageinspector.csproj]**、クリックして**開く**です。  
   
-4.  開く、[!INCLUDE[vs2012](../../includes/vs2012-md.md)]コマンド プロンプトです。  
+4.  Visual Studio コマンド プロンプトを開きます。  
   
 5.  コマンド プロンプトで、C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug に移動します。  
   
@@ -52,17 +52,17 @@ ms.lasthandoff: 09/20/2017
   
 8.  **MessageInspector プロパティ** ページで **署名** タブをクリックして**アセンブリに署名**チェック ボックスをオンします。  
   
-9. **厳密な名前キー ファイルを選択して**ドロップダウン、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Inspector Pipeline component \obj\debug 参照および選択**MessageInspector.snk** をクリックし、**開く**です。  
+9. **厳密な名前キー ファイルを選択して**ドロップダウン、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Inspector Pipeline component \obj\debug 参照および選択**MessageInspector.snk**  をクリックし、**開く**です。  
   
 10. ソリューション エクスプ ローラーで右**MessageInspector**をクリックし、**ビルド**です。 出力ペインで、ビルドが成功したことを確認します。  
   
-11. をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
+11. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
 12. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Inspector Pipeline component \obj\debug、移動を右クリックして**[microsoft.solutions.btarn.sdk.messageinspector.dll]**、クリックして**コピー**です。  
   
 13. C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \pipeline Components 移動を右クリックして**パイプライン コンポーネント**、順にクリック**貼り付け**です。  
   
-14. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+14. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 15. **新しいプロジェクト**ダイアログ ボックスで、テンプレート ペインで**空の BizTalk Server プロジェクト**で、**名前**ボックスで、プロジェクトの名前を入力します。 **場所**ボックスで、プロジェクトを保存するフォルダーに移動し、をクリックして**OK**です。  
   

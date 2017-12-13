@@ -17,27 +17,27 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56d22e5ff6003dad9767c57eecac626a6c16e243
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f5877fe04a87a8387340c8e4b004300f41e609e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-editor-pipeline-component"></a>メッセージ エディター パイプライン コンポーネント
 このコンポーネントにより、送信または受信パイプライン内のマルチパート メッセージの一部を自動的に編集できます。 このコンポーネントは既存のパイプラインに追加して、通常の処理の一部として置換のためのパイプラインを設定します。  
   
 ## <a name="building-the-message-editor-pipeline-component-into-an-existing-pipeline"></a>既存のパイプラインへのメッセージ エディタ パイプライン コンポーネントの構築  
- メッセージ エディタ パイプライン コンポーネントを使用するには、既存のパイプラインにコンポーネントを追加する必要があります。 詳細については、[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ヘルプの「パイプライン デザイナーでのパイプラインの作成」を参照してください。  
+ メッセージ エディタ パイプライン コンポーネントを使用するには、既存のパイプラインにコンポーネントを追加する必要があります。 詳細については、パイプラインとパイプライン デザイナーの作成」BizTalk Server ヘルプを参照してください。  
   
 #### <a name="to-add-the-message-editor-pipeline-component-to-an-existing-pipeline"></a>メッセージ エディタ パイプライン コンポーネントを既存のパイプラインに追加するには  
   
-1.  [!INCLUDE[vs2012](../../includes/vs2012-md.md)]を起動します。  
+1.  Visual Studio を起動します。  
   
-2.  **ファイル**メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
+2.  **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
   
 3.  C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline Component、選択移動**[messageeditor.csproj]**、クリックして**開く**です。  
   
-4.  開始[!INCLUDE[vs2012](../../includes/vs2012-md.md)]コマンド プロンプトです。  
+4.  Visual Studio コマンド プロンプトを起動します。  
   
 5.  コマンド プロンプトで、C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug に移動します。  
   
@@ -51,13 +51,13 @@ ms.lasthandoff: 09/20/2017
   
 10. ソリューション エクスプ ローラーで右クリック**MessageEditor**、クリックして**ビルド**です。 出力ペインで、ビルドが成功したことを確認します。  
   
-11. をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
+11. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
 12. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug 移動を右クリックして**[microsoft.solutions.btarn.sdk.messageeditor.dll]**、クリックして**コピー**です。  
   
 13. C:\Program files \microsoft BizTalk Server 2013\Pipeline コンポーネントに移動、右クリック**パイプライン コンポーネント**、順にクリック**貼り付け**です。  
   
-14. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**開く**、クリックして**プロジェクト**です。  
+14. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**開く**、クリックして**プロジェクト**です。  
   
 15. エディターを追加するパイプラインを含んでいるプロジェクトを開きます。  
   

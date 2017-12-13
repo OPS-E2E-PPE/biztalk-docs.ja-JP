@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bfab230d919c2cb7f8c05d58b87cdeea6033423
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c9ffa8ab8d80a8b2da172378349eb9761a728fb7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>手順 1: を作成し、ヘッダーと受信確認スキーマを展開
 メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 メッセージ インスタンスの確認を生成するのにには、受信確認スキーマを使用します。 このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X です。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Microsoft Visual Studio 2012**です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 3.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Visual Studio 2012 コマンド プロンプト**です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、参照、 \<*ドライブ*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for HL7 \SDK\End-to-End Tutorial フォルダーです。  
+2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、参照、 \<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator 用 HL7 \SDK\エンド ツー エンド チュートリアル フォルダーです。  
   
 3.  コマンド プロンプトで次のように入力します。 **sn – k key.snk**、ENTER キーを押します。 [出力] ウィンドウで次の成功メッセージを表示することを確認し、コマンド ウィンドウを閉じます。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、クリックして、省略記号 (**.**) ボタンをクリックします。  
   
-7.  アセンブリ キー ファイル ダイアログ ボックスでを参照\<*ドライブ*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド チュートリアルでは、選択**key.snk**、クリックして**開く**です。  
+7.  アセンブリ キー ファイル ダイアログ ボックスでを参照\<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータチュートリアル、select **key.snk**、クリックして**開く**です。  
   
 8.  BTAHL7V2XCommon プロジェクトのプロパティ ページで、 **OK**して変更を保存します。  
   

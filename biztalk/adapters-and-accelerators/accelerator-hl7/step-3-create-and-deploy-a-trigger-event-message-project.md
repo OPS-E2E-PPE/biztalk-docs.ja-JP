@@ -15,18 +15,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf96bdc546223b68677b642944265c22d2ce4b14
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49fd078f64cbd4163eef648f7a0d58fe6e8db6b2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-project"></a>手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトの配置
 この手順では、トリガーのイベント メッセージのスキーマを作成します。 たとえば、受付放電して転送システム (ADT) 病院情報システム (HIS) にメッセージを送信する場合があります。 このスキーマに、メッセージの書式を定義する必要があります。  
   
 ### <a name="to-create-the-project-for-the-trigger-event-message"></a>トリガー イベント メッセージのプロジェクトを作成するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**をクリックし、**プロジェクト**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**をクリックし、**プロジェクト**です。  
   
 2.  新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、順にクリック**BTAHL7Projects**です。  
   
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-add-the-schema-to-the-project"></a>スキーマをプロジェクトに追加するには  
   
-1.  ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body プロジェクト**、をポイント**追加**、クリックして**新しい項目の**します。  
+1.  ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body プロジェクト**、 をポイント**追加**、クリックして**新しい項目の**します。  
   
 2.  追加で新しい項目 ダイアログ ボックス、、**カテゴリ**セクションで、展開**BizTalk プロジェクトの項目**、し、 **BTAHL7 スキーマ**です。  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、クリックして、省略記号 (**.**) ボタンをクリックします。  
   
-4.  アセンブリ キー ファイル ダイアログ ボックスでを参照\<*ドライブ*>: \Program Files\Microsoft BizTalk\<バージョン > Accelerator for HL7\SDK\End エンドツー エンド チュートリアルをクリックして**key.snk**、クリックして**開く**です。  
+4.  アセンブリ キー ファイル ダイアログ ボックスでを参照\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド チュートリアルでは、アクセラレータ クリックして**key.snk**、クリックして**開く**です。  
   
 5.  プロジェクト プロパティ ページ] ダイアログ ボックスで、[ **OK**して変更を保存します。  
   

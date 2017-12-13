@@ -12,18 +12,18 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4eed7ead2f0d50e7841ed6c39ffdcee86c6524f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 439caac8f1da151a9f203a1372039aaeedbfe83c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-add-a-trigger-event-message-schema"></a>手順 3: トリガー イベント (メッセージ) のスキーマを追加します。
 この手順で、空に基づく新しいプロジェクトを作成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]プロジェクト テンプレート。 このプロジェクトにスキーマを追加する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信のバッチ内のメッセージの検証に使用されます (ADT ^ A03)。 プロジェクトに厳密な名前を割り当てる、および、プロジェクトを配置 v2.3.1 一般的なスキーマを含むプロジェクトへの参照を追加します。  
   
 ### <a name="to-add-the-project-containing-the-message-schema"></a>メッセージ スキーマを含むプロジェクトを追加するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 2.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
   
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-the-schema-to-the-project"></a>スキーマをプロジェクトに追加するには  
   
-1.  ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、をポイント**追加**、クリックして**新しい項目の**します。  
+1.  ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、 をポイント**追加**、クリックして**新しい項目の**します。  
   
 2.  [新しい項目の追加] ダイアログ ボックスで、展開**BizTalk プロジェクトの項目**、クリックして**BTAHL7 スキーマ**です。 **テンプレート** ウィンドウで、をクリックして**BTAHL7 スキーマ**、クリックして**追加**です。  
   
@@ -64,9 +64,9 @@ ms.lasthandoff: 09/20/2017
   
 3.  確認**アセンブリに署名**チェック ボックスをオンします。  
   
-4.  **厳密な名前キー ファイルを選択して**ドロップ ダウン リストを **\<[参照...] >。**  
+4.  **厳密な名前キー ファイルを選択して**ドロップ ダウン リストを**\<を参照しています.\>.**  
   
-5.  参照  **\<*ドライブ*>: \Batching チュートリアル * *、選択**key.snk**、クリックして**開く**です。  
+5.  参照  **\<*ドライブ*\>: \Batching チュートリアル * *、選択**key.snk**、クリックして**開く**です。  
   
 6.  ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、クリックして**展開**です。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   

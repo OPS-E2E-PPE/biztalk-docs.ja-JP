@@ -15,18 +15,18 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1898162b27956e4e527013ff765edf6aea440e9f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32dc7b0f73955c080f875eada2705300800df452
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="exporting-certificates"></a>証明書のエクスポート
 ここでは、証明書のエクスポート ウィザードを使用して証明書をエクスポートする方法について説明します。 このウィザードを使用すると、パブリック証明書またはプライベート証明書のいずれかをエクスポートできます。  
   
 ### <a name="to-export-a-partner-certificate"></a>パートナー証明書をエクスポートするには  
   
-1.  をクリックして**開始**、をポイント**すべてのプログラム**、をポイント**Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] をクリックし、 [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] **管理コンソール**.  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] をクリックし、 [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] **管理コンソール**.  
   
 2.  展開**証明書 (ローカル コンピューター)**、展開**ほかの人**、クリックして**証明書**です。  
   
@@ -39,11 +39,11 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  Base-64 で証明書をエンコードすると、その証明書を UNIX サーバーで使用できます。  
   
-6.  **エクスポートするファイル** ページで、をクリックして**参照**、検索、ファイルの名前を入力ファイルを保存する場所をクリックして**次へ**、順にクリック**完了**.  
+6.  **エクスポートするファイル** ページで、をクリックして**参照**、検索、ファイルの名前を入力ファイルを保存する場所 をクリックして**次へ**、順にクリック**完了**.  
   
 ### <a name="to-export-the-home-organization-certificate"></a>ホーム組織証明書をエクスポートするには  
   
-1.  をクリックして**開始**をクリックして**実行**、型**runas/user:\<サービスをホスト > mmc**ここで、 \< *hostservice*> をインストールしたときに、ホスト サービスに関連付けられたサービスの名前を指定[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、順にクリック**OK**を実行する、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]のコンテキストで管理コンソール (MMC)、ホスト サービス。  
+1.  をクリックして**開始**をクリックして**実行**、型**runas/user:\<サービスをホスト\>mmc**ここで、 \< *hostservice* \>をインストールしたときに、ホスト サービスに関連付けられたサービスの名前を指定[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、順にクリック**OK**を実行する、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]管理コンソール (MMC)、ホスト サービスのコンテキストでします。  
   
     > [!NOTE]
     >  実行する、 **runas**コマンドをホーム組織証明書にアクセスに必要なホスト サービスの id を前提としています。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  Base-64 で証明書をエンコードすると、その証明書を UNIX サーバーで使用できます。  
   
-7.  **エクスポートするファイル** ページで、をクリックして**参照**、検索、ファイルの名前を入力ファイルを保存する場所をクリックして**次へ**、順にクリック**完了**.  
+7.  **エクスポートするファイル** ページで、をクリックして**参照**、検索、ファイルの名前を入力ファイルを保存する場所 をクリックして**次へ**、順にクリック**完了**.  
   
 ## <a name="see-also"></a>参照  
  [証明書の管理](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)
