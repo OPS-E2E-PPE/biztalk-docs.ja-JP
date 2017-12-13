@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2550d8e1ea0ad45147b2f27daef7244f6c18770b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9241c8d9c5f6e41f47199211d0215c16526951d6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-restore-the-master-secret"></a>マスター シークレットを復元する方法
 データ復元処理の一環として、既存のデータを再利用するためにマスター シークレットの復元が必要になる場合があります。 この作業を行うには、Windows 管理者であり SSO 管理者でもあるアカウントを使用してマスター シークレット サーバーにログオンする必要があります。  
@@ -35,13 +35,13 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-restore-the-master-secret-using-the-command-line"></a>コマンド ラインを使用してマスター シークレットを復元するには  
   
-1.  **開始** メニューのをクリックして**すべてのプログラム**、クリックして**アクセサリ**です。 右クリック**コマンド プロンプト**、クリックして**として実行しています.**.  
+1.  **開始** メニューのをクリックして**すべてのプログラム**、クリックして**アクセサリ**です。 右クリック**コマンド プロンプト**、クリックして**として実行しています...**.  
   
 2.  適切な管理者の場合を選択し、クリックして**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssoconfig – restoresecret と入力\<ファイルを復元 >**ここで、 **\<ファイルを復元 >**はマスター シークレットが格納されているファイルの名前とパス。  
+4.  型**ssoconfig – restoresecret と入力\<ファイルを復元\>**ここで、 **\<ファイルを復元\>**マスター シークレットがファイルの名前とパスには格納されています。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -50,4 +50,4 @@ ms.lasthandoff: 09/20/2017
  [マスター シークレットを生成する方法](../core/how-to-generate-the-master-secret.md)   
  [マスター シークレットをバックアップする方法](../core/how-to-back-up-the-master-secret.md)   
  [マスター シークレット サーバー](../core/master-secret-server.md)   
- [マスタ シークレットの管理](../core/managing-the-master-secret.md)
+ [マスター シークレットの管理](../core/managing-the-master-secret.md)

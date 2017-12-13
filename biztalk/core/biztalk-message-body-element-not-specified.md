@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baf79c8896169a06df66a8484377816c9897531e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0656cf14e1c2a16d6d53966e316550020c8cd0af
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="biztalk-message-body-element-not-specified"></a>BizTalk メッセージ本文要素が指定されていません
 ## <a name="details"></a>詳細  
@@ -35,4 +35,4 @@ ms.lasthandoff: 09/20/2017
  このエラーは、送信 WCF メッセージにテンプレート オプションが使用されていることを示します。 一方で、テンプレート式には BizTalk メッセージ本文要素が含まれません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- テンプレート式に次の要素が含まれていることを確認します\< **bts メッセージ本文の xmlns ="http://www.microsoft.com/schemas/bts2007"encoding ="[xml (&) #124; base64 &#124; 16 進数 (&) #124; 文字列]"/** 。>。
+ テンプレート式に次の要素が含まれていることを確認します\< **bts メッセージ本文の xmlns ="http://www.microsoft.com/schemas/bts2007"encoding ="[xml &#124; base64 &#124; 16 進数 &#124; 文字列]"/**\>。

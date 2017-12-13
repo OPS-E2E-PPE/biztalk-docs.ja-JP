@@ -13,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c0ee3d0905f5ee4205cb5f9e2357573bdbf55b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7c7efc6a59e9dd4c163388803763a7b90a13b31
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a>SQLEXECUTE 操作のメッセージ スキーマ
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]LOB システムに存在成果物のための厳密に型指定されたメタデータを表示し、これらの成果物の標準的な操作を公開します。 ただし、アプリケーションがアプリケーションにビジネス ロジックによって駆動される任意の SQL ステートメントの実行を必要がありますのシナリオがあります。 たとえばをする可能性があります。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
  [PARAM_VAL_1] の最初のパラメーターの値を = です。  
   
- 各\<PARAMETERDATA > セクションには、完全なセットが含まれています。\<パラメーター > 内のスキーマに一致する要素、 \<PARAMETERSCHEMA > セクションでします。 \<PARAMETERSET > 複数を含めることができる\<PARAMETERDATA > セクションでします。 これは、大文字と小文字、SQL ステートメントが各パラメーター セットに対して 1 回の複数回実行されます。  
+ 各\<PARAMETERDATA\>セクションには、完全なセットが含まれています。\<パラメーター\>内のスキーマに一致する要素、 \<PARAMETERSCHEMA\>セクションです。 \<PARAMETERSET\>複数を含めることができる\<PARAMETERDATA\>セクションです。 これは、大文字と小文字、SQL ステートメントが各パラメーター セットに対して 1 回の複数回実行されます。  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)
+ [BizTalk Adapter for Oracle Database 用のメッセージとメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

@@ -12,15 +12,15 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56b390ef87ac2ea58d91be2ff16a50f2c3748db2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d93284823c2ce5d0c00a1601a5b9ae0aac4643c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="deploy-and-test-the-application"></a>アプリの配置およびテスト
 > [!NOTE]
->  このチュートリアルは、[!INCLUDE[prague](../includes/prague-md.md)] のみを対象としています。  
+>  このチュートリアルは、BizTalk Server にのみ適用されます。  
   
  このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリをビルド、配置、構成、テストします。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリが JSON 注文書を受信する受信ポートを作成します。  
   
-    1.  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk アプリケーション 1**を右クリックして**受信ポート**、をポイント**新規**、クリックして**一方向の受信ポート**.  
+    1.  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk アプリケーション 1**を右クリックして**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート**.  
   
     2.  受信ポートの名前を指定し、左側のペイン、**受信場所**です。 **受信場所** タブで、をクリックして**新規**です。  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  JSON 請求書メッセージを送信する送信ポートを作成します。  
   
-    1.  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk アプリケーション 1**を右クリックして**送信ポート**、をポイント**新規**、クリックして**静的の一方向送信ポート**.  
+    1.  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk アプリケーション 1**を右クリックして**送信ポート**、 をポイント**新規**、クリックして**静的の一方向送信ポート**.  
   
     2.  送信ポートの名前を指定して、ポートの種類として選択**ファイル**、クリックして**構成**です。  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  ダウンロードしたサンプルとの間を移動、 **TestMessage**フォルダーをコピー **JsonPurchaseOrder.json**、し、受信場所に関連付けられているフォルダーに貼り付けます。 ファイルが消えるまで待ちます。  
   
-2.  作成した送信ポートに関連付けられているフォルダーに移動します。 注意して、   ***\<GUID >*.json**ファイルはフォルダーにあります。 ファイルを開いて、それが請求書メッセージであることを確認します。  
+2.  作成した送信ポートに関連付けられているフォルダーに移動します。 注意して、   ***\<GUID\>*.json**ファイルはフォルダーにあります。 ファイルを開いて、それが請求書メッセージであることを確認します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server を使用して JSON メッセージの処理](../core/processing-json-messages-using-biztalk-server.md)

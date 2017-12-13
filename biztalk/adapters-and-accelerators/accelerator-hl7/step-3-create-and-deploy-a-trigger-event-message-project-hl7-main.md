@@ -13,18 +13,18 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff7abfcf363d26d068fab067378eb61d5bcf5c3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ba388eef1f5dbfb885e33c6263c4e0f8ef4be29
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-projecthl7main"></a>手順 3: を作成し、トリガー イベント (メッセージ) Project_hl7_main の展開
 この手順では、トリガー イベント メッセージで使用されるスキーマを作成します。 たとえば、受付放電して転送システム (ADT) をメッセージを送信病院情報システム (HIS) にします。 このスキーマを使用するには、メッセージの形式を定義します。  
   
 ### <a name="to-create-the-project-for-the-trigger-event-message"></a>トリガー イベント メッセージのプロジェクトを作成するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
   
 2.  新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**一覧で、展開**BizTalk プロジェクト**、順にクリック**BTAHL7Projects**です。  
   
@@ -34,14 +34,14 @@ ms.lasthandoff: 09/20/2017
   
 5.  ソリューション エクスプ ローラーの新しいノードの下**BTAHL7V24Body**プロジェクトを右クリックして**参照**、クリックして**参照の追加**です。  
   
-6.  [参照の追加] ダイアログ ボックス、**プロジェクト**] タブで [ **Interrogative_24Schemas**、をクリックして**追加**、順にクリック**[ok]**です。  
+6.  参照の追加 ダイアログ ボックス、**プロジェクト** タブで  **Interrogative_24Schemas**、 をクリックして**追加**、順にクリック**ok**です。  
   
 ## <a name="step-3a-add-the-schemas"></a>手順 3: のスキーマを追加  
  次の手順を使用して、新しいスキーマをプロジェクトに追加します。  
   
 #### <a name="to-add-the-schemas-to-the-project"></a>プロジェクトにスキーマを追加するには  
   
-1.  ソリューション エクスプ ローラーで右クリック**BTAHL7V24Body プロジェクト**、をポイント**追加**、クリックして**新しい項目の**します。  
+1.  ソリューション エクスプ ローラーで右クリック**BTAHL7V24Body プロジェクト**、 をポイント**追加**、クリックして**新しい項目の**します。  
   
 2.  [新しい項目の追加] ダイアログ ボックスで、展開**BizTalk プロジェクトの項目**、順にダブルクリック**BTAHL7 スキーマ**右側のウィンドウでします。  
   
@@ -87,7 +87,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンをクリックします。  
   
-4.  **アセンブリ キー ファイル**ダイアログ ボックスを参照\<*ドライブ*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン > Accelerator for HL7\SDK\Interrogative チュートリアルをクリックして**key.snk**、順にクリック**開く**です。  
+4.  **アセンブリ キー ファイル** ダイアログ ボックスを参照\<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>HL7\SDK\Interrogative チュートリアルでは、アクセラレータのをクリックして**key.snk**、クリックして**開く**です。  
   
 5.  **BTAHL7V24Body プロパティ ページ**ダイアログ ボックスで、をクリックして**OK**変更を保存します。  
   

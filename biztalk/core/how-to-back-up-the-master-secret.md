@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5bd6cdecda9ca2456a770d4cf885fcd420fc18e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 185f3ea674015e02cac2bdaa785c2ee06e67db65
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-back-up-the-master-secret"></a>マスター シークレットをバックアップする方法
 マスター シークレットは、マスター シークレット サーバーから NTFS ファイル システムまたはリムーバブル メディア (フロッピー ディスクなど) にバックアップできます。  
@@ -40,13 +40,13 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-back-up-the-master-secret-using-the-command-line"></a>コマンド ラインを使用してマスター シークレットをバックアップするには  
   
-1.  **開始** メニューのをクリックして**すべてのプログラム**、クリックして**アクセサリ**です。 右クリック**コマンド プロンプト**、クリックして**として実行しています.**.  
+1.  **開始** メニューのをクリックして**すべてのプログラム**、クリックして**アクセサリ**です。 右クリック**コマンド プロンプト**、クリックして**として実行しています...**.  
   
 2.  適切な管理者の場合を選択し、クリックして**OK**です。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssoconfig – backupSecret *\<バックアップ ファイル >***ここで、 *\<バックアップ ファイル >*パスとファイルの名前は、ここで、マスターシークレットのバックアップが作成されます。 たとえば、A:\ssobackup.bak と指定します。  
+4.  型**ssoconfig – backupSecret *\<バックアップ ファイル\>***ここで、 *\<バックアップ ファイル\>*の名前とパスにはマスター シークレットがバックアップ先ファイルです。 たとえば、A:\ssobackup.bak と指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -60,4 +60,4 @@ ms.lasthandoff: 09/20/2017
  [マスター シークレットを生成する方法](../core/how-to-generate-the-master-secret.md)   
  [マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)   
  [マスター シークレット サーバー](../core/master-secret-server.md)   
- [マスタ シークレットの管理](../core/managing-the-master-secret.md)
+ [マスター シークレットの管理](../core/managing-the-master-secret.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a7a5dc4aa7c3acca26705449108bb75541099c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2525e0e87106e2eeb82fb05b52b3ec69d4be876d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-creating-the-headerhelper-project"></a>手順 4: HeaderHelper プロジェクトの作成
 ここでは、[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] クラス ライブラリを作成します。 プライベート プロセス オーケストレーションが受信メッセージを受信すると、HeaderHelper ライブラリは、ドキュメントの変換が必要かどうかを判断し、変換が必要な場合は変換を実行します。 これにより、オーケストレーションは別のバージョンの RNIF (RosettaNet Implementation Framework) ドキュメントでも使用できます。 また、3A2 応答メッセージを送信する際には、HeaderHelper ライブラリはメッセージを送信する前に追加のドキュメント変換を実行します。  
@@ -112,7 +112,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  右側のウィンドウでをクリックして**アセンブリに署名**です。  
   
-4.  をクリックして、**厳密な名前キー ファイルを選択して**テキスト ボックス、および選択**\<参照 >**ドロップダウン リストからです。  
+4.  をクリックして、**厳密な名前キー ファイルを選択して**テキスト ボックス、および選択**\<参照\>**ドロップダウン リストからです。  
   
 5.  ファイルの選択 ダイアログ ボックスで、Contoso アセンブリの場所に移動し、ダブルクリック**FabConPriceAvail.snk**です。  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  コマンド プロンプトでの場所に移動、 **HeaderHelper**プロジェクト出力ディレクトリ (\Bin\Debug フォルダ)。  
   
-4.  コマンド プロンプトで次のように入力します**gacutil/if HeaderHelper.dll**とキーを押します**Enter**をインストールする、 **HeaderHelper**にアセンブリを、**グローバル アセンブリ キャッシュ。**.  
+4.  コマンド プロンプトで次のように入力します**gacutil/if HeaderHelper.dll**とキーを押します**Enter**をインストールする、 **HeaderHelper**にアセンブリを、**グローバル アセンブリ キャッシュ**。  
   
 ## <a name="see-also"></a>参照  
  [手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)

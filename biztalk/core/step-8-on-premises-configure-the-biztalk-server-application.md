@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47332edbf974b7e45d3ab65644f28d9d2bd6a623
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa411b7ca828a45aa0d5e58212bb48195c48180f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-8-on-premises-configure-the-biztalk-server-application"></a>手順 8 (オンプレミス): BizTalk Server アプリケーションを構成します。
 前のステップでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成しました。 このステップでは、アプリケーションをビルドし、展開し、構成します。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  クリックして、**署名**タブをクリックし、選択、**アセンブリに署名**チェック ボックスをオンします。  
   
-    3.  ドロップダウン リストから、**厳密な名前キー ファイルを選択して**ボックスで、 **\<新規作成 ...> >**です。  
+    3.  ドロップダウン リストから、**厳密な名前キー ファイルを選択して**ボックスで、 **\<新規しています...\>**.  
   
     4.  **厳密な名前キーの作成** ダイアログ ボックスで、たとえば、キー ファイルの名前を入力`OrderProcessingDemo.snk`です。 パスワードでキー ファイルを保護するためのチェック ボックスをオフにし、をクリックして**OK**です。  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  論理ポートを作成して、オーケストレーションで (**ReceiveSO**)、Service Bus キューからメッセージを受信します。 ここでは、この論理ポートにマップする物理受信ポートを作成します。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **OrderProcessingDemo**  ノードを右クリックして**受信ポート**、 をポイント**新規**をクリックして**一方向受信ポート**です。  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **OrderProcessingDemo** ノードを右クリックして**受信ポート**、 をポイント**新規**をクリックして**一方向受信ポート**です。  
   
     2.  **[全般]** タブで、次の操作を行います。  
   
@@ -74,7 +74,7 @@ ms.lasthandoff: 09/20/2017
         |--------------|----------------|  
         |**名前**|型**ReceiveOrders_SO**です。|  
         |**型**|選択**Sb-messaging**です。|  
-        |**受信ハンドラー**|[ **BizTalkServerApplication**] を選択します。|  
+        |**受信ハンドラー**|**[BizTalkServerApplication]** を選択します。|  
         |**受信パイプライン**|選択**XMLReceive**です。|  
   
     5.  をクリックして**構成**です。  
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  論理ポートを作成して、オーケストレーションで (**SendToSQL**) メッセージを送信する、 **SalesOrder**データベース テーブルです。 ここでは、この論理ポートにマップする物理送信ポートを作成します。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **OrderProcessingDemo**  ノードを右クリックして**送信ポート**、 をポイント**新規**をクリックして**静的な一方向送信ポート**です。  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **OrderProcessingDemo** ノードを右クリックして**送信ポート**、 をポイント**新規**をクリックして**静的な一方向送信ポート**です。  
   
     2.  [全般] タブには、次の操作を行います。  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  論理ポートを作成して、オーケストレーションで (**SendToFile**) 共有ファイルの場所にメッセージを送信します。 ここでは、この論理ポートにマップする物理送信ポートを作成します。  
   
-    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **OrderProcessingDemo**  ノードを右クリックして**送信ポート**、 をポイント**新規**をクリックして**静的な一方向送信ポート**です。  
+    1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **OrderProcessingDemo** ノードを右クリックして**送信ポート**、 をポイント**新規**をクリックして**静的な一方向送信ポート**です。  
   
     2.  [全般] タブには、次の操作を行います。  
   

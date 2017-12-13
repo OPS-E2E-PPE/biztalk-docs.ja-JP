@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff799af25c6ba74301eeab19eb793c2e84fd90e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dae089d91a245fe6b261a0b0b8f92f7f52a4d4af
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="diagnostic-tracing-and-message-logging-in-the-sql-adapter"></a>診断トレースと SQL アダプターでメッセージのログ記録
 診断トレースは、効果的にアダプターを使用するときに発生する可能性がある問題を診断するのに役立ちます。 アダプターのクライアントは、2 つのレベルの診断トレースをアクティブ化できます。  
@@ -30,18 +30,18 @@ ms.lasthandoff: 09/20/2017
 ## <a name="tracing-between-the-adapter-client-and-the-adapter"></a>アダプターのクライアントとアダプター間でのトレース  
  アダプターのクライアントは、アダプターのクライアントとアダプター間のトレースの問題への WCF トレースを有効にできます。 WCF トレースは、WCF サービス モデルを使用して、アダプターのクライアントから取得し、シリアル化の問題の診断に役立つは入力 XML の追跡に使用します。 WCF トレースは、WCF チャネル モデルまたはアダプターのクライアントに、アダプターからの出力メッセージには使用されません。 それぞれの構成ファイルの抜粋を追加することで、BizTalk アプリケーションと WCF サービス モデルのアプリケーションの WCF トレースをアクティブにできます。 また、デザイン時に両方のトレースを有効にし、実行時できます。  
   
--   **デザイン時にトレース**です。 デザイン時機能を使用することは、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。 これらすべてのツールを使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 そのため、デザイン時の操作のトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ >*: \Program Files\Microsoft Visual Studio  *\<バージョン >*\Common7\IDE です。  
+-   **デザイン時にトレース**です。 デザイン時機能を使用することは、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。 これらすべてのツールを使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 そのため、デザイン時の操作のトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ\>*: \Program Files\Microsoft Visual Studio *\<バージョン\>*\Common7\IDE です。  
   
 -   **実行時にトレース**です。 実行時のトレースを使用しているアプリケーションによっては抜粋を追加する必要があります。  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション、BizTalk 構成ファイル、通常 BTSNTSvc.exe.config の抜粋を追加する必要があります。[!INCLUDE[prague](../../includes/prague-md.md)]、このファイルは通常 \<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[prague](../../includes/prague-md.md)]です。  
+    -   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション、BizTalk 構成ファイル、通常 BTSNTSvc.exe.config の抜粋を追加する必要があります。BizTalk Server のこのファイルは通常 \<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
   
     -   WCF サービス モデル .NET アプリケーションのプロジェクトの app.config ファイルの抜粋を追加する必要があります。  
   
  WCF トレースを有効にするには、内で次の抜粋を追加、`<configuration>`タグ。  
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
     <sources>  
       <source name ="System.ServiceModel" switchValue="Verbose">  
         <listeners>  
@@ -66,8 +66,8 @@ ms.lasthandoff: 09/20/2017
            initializeData="C:\log\WCFTrace.svclog" />  
    </sharedListeners>  
    <trace autoflush="true" />  
-  \</system.diagnostics>  
-  \<system.serviceModel>  
+  </system.diagnostics>  
+  <system.serviceModel>  
     <diagnostics>  
       <messageLogging   
            logEntireMessage="true"   
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
            logMessagesAtServiceLevel="true"   
            logMessagesAtTransportLevel="false"/>  
     </diagnostics>      
-  \</system.serviceModel>  
+  </system.serviceModel>  
 ```  
   
  これは、C:\log\WCFTrace.svclog に WCF トレースを保存します。 WCF トレースの詳細については、次を参照してください。[トレース](https://msdn.microsoft.com/library/ms730342.aspx)です。  
@@ -86,18 +86,18 @@ ms.lasthandoff: 09/20/2017
 ## <a name="tracing-within-the-adapter"></a>アダプターのトレース  
  アダプターは、エラー、警告、および情報メッセージなど、トレース ファイルに有用な情報のさまざまなカテゴリをログオンします。 このような情報は、アダプター内のプロセス フローを理解し、アダプターに関する問題の診断に役立ちます。 アクティブ化することができます、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]とアダプターが BizTalk アプリケーションと WCF サービスの抜粋をそれぞれの構成ファイルに追加することによってモデル アプリケーション用にトレースされます。 また、デザイン時に両方のトレースを有効にし、実行時できます。  
   
--   **デザイン時にトレース**です。 デザイン時機能を使用することは、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。 これらすべてのツールを使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 そのため、デザイン時の操作のトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ >*: \Program Files\Microsoft Visual Studio  *\<バージョン >*\Common7\IDE です。  
+-   **デザイン時にトレース**です。 デザイン時機能を使用することは、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。 これらすべてのツールを使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 そのため、デザイン時の操作のトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ\>*: \Program Files\Microsoft Visual Studio *\<バージョン\>*\Common7\IDE です。  
   
 -   **実行時にトレース**です。 実行時のトレースを使用しているアプリケーションによっては抜粋を追加する必要があります。  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション、BizTalk 構成ファイル、通常 BTSNTSvc.exe.config の抜粋を追加する必要があります。[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]、このファイルは通常 \<インストール ドライブ >: \Program Files\Microsoft[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]です。  
+    -   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション、BizTalk 構成ファイル、通常 BTSNTSvc.exe.config の抜粋を追加する必要があります。BizTalk Server のこのファイルは通常 \<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
   
     -   WCF サービス モデル .NET アプリケーションのプロジェクトの app.config ファイルの抜粋を追加する必要があります。  
   
  有効にする[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]とアダプターのトレース、内で次の抜粋を追加、`<configuration>`タグ。  
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
     <sources>  
       <source name="Microsoft.ServiceModel.Channels" switchValue="Error">  
         <listeners>  
@@ -116,7 +116,7 @@ ms.lasthandoff: 09/20/2017
           initializeData="C:\log\AdapterTrace.svclog" />  
     </sharedListeners>  
     <trace autoflush="true" />  
-  \</system.diagnostics>  
+  </system.diagnostics>  
 ```  
   
  これは、C:\log\AdapterTrace.svclog に WCF トレースを保存します。  

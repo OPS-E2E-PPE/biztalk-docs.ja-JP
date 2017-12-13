@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8c847165eb61b6ba9044a95584de7be8f9999d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca2bc3aa739bf6914ea9943d84d58d44b1506323
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>FileAct を構成し、アダプターの対話
 によって使用されるさまざまなアイテムを構成、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]ランタイム。 
@@ -34,9 +34,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  **Microsoft BizTalk FileAct およびアダプター構成の対話**ウィザードに移動して**概要**です。 左のペインで選択**ランタイム**アダプターのランタイム コンポーネントを構成します。  
   
-2.  **のランタイム構成** **アカウント** COM + ストア アンド フォワード モードの構成を入力する省略記号 [...] を選択します。  
+2.  在 **運行時配置** 中，在 **帳戶** 下，選擇省略號以進入存儲轉發模式的COM加配置。  
   
-3.  **ユーザーの資格情報**、ユーザー名を入力 (で、 *domain \user name*形式) と COM + 構成で使用するアカウントのパスワード。 [ **OK**] を選択します。  
+3.  **ユーザーの資格情報**、ユーザー名を入力 (で、 *domain \user name*形式) と COM + 構成で使用するアカウントのパスワード。 **[OK]** を選択します。  
   
     > [!NOTE]
     >  A**ユーザーの資格情報**入力したアカウントは、推奨されるよりも高い特権を持っている場合に警告が表示されます。 選択**はい**を続行します。
@@ -92,7 +92,7 @@ FileAct および InterAct ハンドラーのプロパティとして送信、�
   
 ## <a name="step-4-configure-the-swiftnet-param-file"></a>手順 4: SWIFTNet param ファイルを構成します。
 
-有効にするには、FileAct および InterAct SWIFTNet paramfile で SAG で作成したパートナーを入力する必要があります、サーバー メッセージの値で初期化するためにアダプターを受信します。 通常格納されて、paramfile`c:\SWIFTAlliance\RA\<remote access instance name>\cfg\paramfile`です。 構成した後、paramfile、開始**SnlReceiver.exe**です。  
+有効にするには、FileAct および InterAct SWIFTNet paramfile で SAG で作成したパートナーを入力する必要があります、サーバー メッセージの値で初期化するためにアダプターを受信します。 通常格納されて、paramfile`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`です。 構成した後、paramfile、開始**SnlReceiver.exe**です。  
   
 1. 開く、 **SWIFTNet paramfile**です。 マークされた場所に"* * *"、以下を追加します。 なお、`AdapterType`値を指定できます`Interact`または`Fileact`です。  
   
@@ -172,6 +172,6 @@ FileAct および InterAct メッセージの例については、次を参照�
   
 ## <a name="see-also"></a>参照  
 
-[FileAct をインストールし、アダプターの対話](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
-[アンインストールまたは修復 FileAct および InterAct アダプター](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)  
-[既知の問題のインストールします。](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
+[FileAct および InterAct アダプターをインストールする](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
+[FileAct および InterAct アダプターをアンインストールまたは修復する](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)  
+[インストールに関する既知の問題の確認](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)

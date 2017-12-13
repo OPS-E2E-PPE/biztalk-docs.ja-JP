@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19a4f5b5252691ca772e234b2f9a75c4059aa128
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2a1dd348b6d897e147d6add49499e9716a67aeb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>DDEX プラグインと SAP 用データ プロバイダーを使用します。
 インストールする場合、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール、セットアップ プログラムをインストール、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX プラグインします。 使用して、SAP オブジェクトを参照するこのプラグインを使用することができます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 このセクションでは、DDEX プラグインの使用に関する情報を提供します。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **サーバー エクスプ ローラー**を右クリックして**データ接続**を選択して**接続の追加**です。  
   
-4.  **データ ソースの変更** ダイアログ ボックスから、**データ ソース**ボックスで、 **\<他 >**です。  
+4.  **データ ソースの変更** ダイアログ ボックスから、**データ ソース**ボックスで、 **\<他\>**です。  
   
 5.  **データ プロバイダー**ドロップダウン リストで、 **.NET Framework Data Provider 用 mySAP Business Suite**  をクリック**OK**です。 **接続の追加** ダイアログ ボックスが表示されます。  
   
@@ -113,4 +113,4 @@ ms.lasthandoff: 09/20/2017
 8.  展開して、**インポート**関数モジュールのインポートのパラメーターを一覧表示するノードです。 同様に、展開、**エクスポート**と**テーブル**関数モジュールのエクスポートとテーブルのパラメーターの一覧を表示するノードです。  
   
 ## <a name="see-also"></a>参照  
- [使用して、.NET Framework Data Provider 用 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [.NET Framework Data Provider for mySAP Business Suite の使用](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

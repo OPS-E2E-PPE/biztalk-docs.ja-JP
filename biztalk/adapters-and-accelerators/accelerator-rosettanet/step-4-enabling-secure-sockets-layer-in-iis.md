@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05bd6b06ddc54ec0d337dd7dddfff300a625f7df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2964b6ac26d6685a1c38b88c5bbf98e8119f3502
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-enabling-secure-sockets-layer-in-iis"></a>手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にします。
 SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の通信チャネルをセキュリティで保護するためのプロトコルです。 Contoso 組織と Fabrikam 組織は、Microsoft® インターネット インフォメーション サービス (IIS) 7.5 または 7.0 で SSL を有効にすることにより、すべてのデータ転送に認証と暗号化を使用して通信を行います。 ここでは、IIS 7.5 または 7.0 で SSL を有効にする手順について学びます。  
@@ -33,7 +33,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-2.  インターネット インフォメーション サービスの左ペインで、展開 **\<**  *computer_name*  **>**  (*ローカル コンピューター*)、展開**Web サイト**を右クリックして**既定の Web サイト**、クリックして**プロパティ**です。  
+2.  インターネット インフォメーション サービスの左ペインで、展開 **\<**  *computer_name*  **\>**  (*ローカル コンピューター*)、展開**Web サイト**を右クリックして**既定の Web サイト**、クリックして**プロパティ**です。  
   
 3.  既定の Web サイト ダイアログ ボックスで、**ディレクトリ セキュリティ** タブで、をクリックして**サーバー証明書**を開始する、 **IIS 証明書ウィザード**です。  
   
@@ -59,10 +59,10 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 ### <a name="to-generate-a-new-server-certificate"></a>新しいサーバー証明書を生成するには  
   
-1.  Internet Explorer で見つけて開きます http://\<*contoso_machine*>/CertSrv です。  
+1.  Internet Explorer で見つけて開きます http://\<*contoso_machine*\>/CertSrv です。  
   
     > [!NOTE]
-    >  ステップ 1 で、開く http://\<*contoso_machine*>/Contoso または Fabrikam のコンピューター上の CertSrv です。  
+    >  ステップ 1 で、開く http://\<*contoso_machine*\>Contoso または Fabrikam のコンピューター上の/CertSrv です。  
   
 2.  **Microsoft 証明書サービス ウィザードへようこそ**] ページで [**証明書を要求します。**  
   
@@ -77,7 +77,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 6.  をクリックして**参照**を開くには、 **Choose File**  ダイアログ ボックス。  
   
-7.  **Choose File**  ダイアログ ボックスで、検索、 *\<ドライブ >*: \ フォルダーは、検索して certreq.txt ファイルを選択しをクリックして**開く**です。  
+7.  **Choose File**  ダイアログ ボックスで、検索、 *\<ドライブ\>*: \ フォルダーは、検索して certreq.txt ファイルを選択しをクリックして**開く**です。  
   
 8.  **証明書の要求または更新要求を送信**] ページで [**読み取り**です。  
   
@@ -87,7 +87,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 11. **ファイルのダウンロード**ダイアログ ボックスで、をクリックして**保存**です。  
   
-12. **名前を付けて保存**ダイアログ ボックスで、証明書を保存、\<ドライブ >: \Certs\SSLCert.cer をクリックして**保存**です。  
+12. **名前を付けて保存**ダイアログ ボックスで、証明書を保存、\<ドライブ\>: \Certs\SSLCert.cer をクリックして**保存**です。  
   
 13. をクリックして**閉じる**を閉じる、**ダウンロードの完了** ダイアログ ボックス。  
   
@@ -122,7 +122,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 7.  [ファイルのダウンロード] ダイアログ ボックスで、**保存**です。  
   
-8.  名前を付けて保存 ダイアログ ボックスで、保存する証明書\<ドライブ >: \Certs\SSLCert.cer をクリックして**保存**です。  
+8.  名前を付けて保存 ダイアログ ボックスで、保存する証明書\<ドライブ\>: \Certs\SSLCert.cer をクリックして**保存**です。  
   
 ### <a name="to-import-the-server-certificate-into-iis"></a>サーバー証明書を IIS にインポートするには  
   
@@ -130,7 +130,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 2.  インターネット インフォメーション サービスの左ペインでをクリックして**(ローカル コンピューター)**、ダブルクリックして**サーバー証明書**右側のウィンドウでします。 選択**証明書要求の完全な**[操作] ウィンドウからです。  
   
-3.  証明機関の応答の指定 ダイアログ ボックスに「 **\<ドライブ >: \Certs\SSLCert.cer**で**証明機関の応答を含むファイルの名前**テキスト ボックス。 フレンドリ名テキスト ボックスに「 **ContosoSSLCert**です。  
+3.  証明機関の応答の指定 ダイアログ ボックスに「 **\<ドライブ\>: \Certs\SSLCert.cer**で**証明機関の応答を含むファイルの名前**テキスト ボックス。 フレンドリ名テキスト ボックスに「 **ContosoSSLCert**です。  
   
 ### <a name="to-enable-ssl-bindings-for-iis"></a>IIS で SSL バインドを有効にするには  
   
@@ -138,13 +138,13 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 2.  インターネット インフォメーション サービスの左ペインで、展開**(ローカル コンピューター)**、展開**サイト**を右クリックして**既定の Web サイト**、クリックして**編集バインド**です。  
   
-3.  [サイト バインド] ダイアログ ボックス**追加**です。 サイト バインドの追加 ダイアログ ボックスで選択**https**型ドロップダウンから、次のように選択します**ContosoSSLCert** SSL 証明書ドロップダウンから、 をクリック**OK**、 をクリック**閉じる。**.  
+3.  [サイト バインド] ダイアログ ボックス**追加**です。 サイト バインドの追加 ダイアログ ボックスで選択**https**型ドロップダウンから、次のように選択します**ContosoSSLCert** SSL 証明書ドロップダウンから、 をクリック**OK**、 をクリック**閉じる**。  
   
 ### <a name="to-import-the-server-certificate-into-iis"></a>サーバー証明書を IIS にインポートするには  
   
 1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-2.  インターネット インフォメーション サービスの左ペインで、展開 **\<**  *computer_name*> (*ローカル コンピューター*)、展開**のWebサイト**を右クリックして**既定の Web サイト**、クリックして**プロパティ**です。  
+2.  インターネット インフォメーション サービスの左ペインで、展開 **\<**  *computer_name* \> (*ローカル コンピューター*)、展開**Webサイト**を右クリックして**既定の Web サイト**、クリックして**プロパティ**です。  
   
 3.  既定の Web サイトのプロパティ ダイアログ ボックスで、**ディレクトリ セキュリティ** タブで、をクリックして**サーバー証明書**を開始する、 **IIS 証明書ウィザード**です。  
   
@@ -152,7 +152,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 5.  **保留中の証明書の要求**] ページで、[**保留中の要求を処理し、証明書をインストール**、順にクリック**次**です。  
   
-6.  **保留中の要求を処理**] ページの [、**パスとファイル名**ボックスに、入力**\<ドライブ >: \Certs\SSLCert.cer** (またはそのファイルを参照) をクリックし、**次**です。  
+6.  **保留中の要求を処理**] ページの [、**パスとファイル名**ボックスに、入力**\<ドライブ\>: \Certs\SSLCert.cer** (またはそのファイルを参照)クリックして**次**です。  
   
 7.  **SSL ポート ページ**をクリックして**次**です。  
   
@@ -161,4 +161,4 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
 9. **Web サーバー証明書ウィザードの完了**] ページで [**完了**です。  
   
 ## <a name="see-also"></a>参照  
- [作成して、Contoso ソリューションを構成します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-the-contoso-solution.md)
+ [Contoso ソリューションの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-the-contoso-solution.md)
