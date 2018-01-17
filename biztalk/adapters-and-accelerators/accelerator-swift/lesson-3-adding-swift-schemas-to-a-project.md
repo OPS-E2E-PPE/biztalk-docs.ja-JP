@@ -16,39 +16,39 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 12fb5741b75fb9792cbabf46bf7a0402972d7bb4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="lesson-3-adding-swift-schemas-to-a-project"></a><span data-ttu-id="a7ca5-102">レッスン 3: SWIFT スキーマをプロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-102">Lesson 3: Adding SWIFT Schemas to a Project</span></span>
-<span data-ttu-id="a7ca5-103">ソリューションと、新しいプロジェクトがある場合は、これで、プロジェクトに項目を追加できます。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-103">Now that you have a solution and a new project, you can add items to the project.</span></span> <span data-ttu-id="a7ca5-104">追加する最初の項目は、MT103 SWIFT 支払いメッセージのスキーマです。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-104">The first item you add is a schema for an MT103 SWIFT Payment message.</span></span> <span data-ttu-id="a7ca5-105">スキーマ テンプレートを選択すると、BizTalk エディターが起動します。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-105">When you select the Schema template, BizTalk Editor starts.</span></span>  
+# <a name="lesson-3-adding-swift-schemas-to-a-project"></a><span data-ttu-id="2a5d1-102">レッスン 3: SWIFT スキーマをプロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-102">Lesson 3: Adding SWIFT Schemas to a Project</span></span>
+<span data-ttu-id="2a5d1-103">ソリューションと、新しいプロジェクトがある場合は、これで、プロジェクトに項目を追加できます。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-103">Now that you have a solution and a new project, you can add items to the project.</span></span> <span data-ttu-id="2a5d1-104">追加する最初の項目は、MT103 SWIFT 支払いメッセージのスキーマです。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-104">The first item you add is a schema for an MT103 SWIFT Payment message.</span></span> <span data-ttu-id="2a5d1-105">スキーマ テンプレートを選択すると、BizTalk エディターが起動します。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-105">When you select the Schema template, BizTalk Editor starts.</span></span>  
   
-### <a name="to-add-a-new-schema-to-the-project"></a><span data-ttu-id="a7ca5-106">新しいスキーマをプロジェクトに追加するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-106">To add a new schema to the project</span></span>  
+### <a name="to-add-a-new-schema-to-the-project"></a><span data-ttu-id="2a5d1-106">新しいスキーマをプロジェクトに追加するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-106">To add a new schema to the project</span></span>  
   
-1.  <span data-ttu-id="a7ca5-107">ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-107">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
+1.  <span data-ttu-id="2a5d1-107">ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-107">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
   
-2.  <span data-ttu-id="a7ca5-108">追加既存項目の SWIFTSchemas ダイアログ ボックスを参照  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Base スキーマ * *。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-108">In the Add Existing Item-SWIFTSchemas dialog box, browse to **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base Schemas**.</span></span>  
+2.  <span data-ttu-id="2a5d1-108">追加既存項目の SWIFTSchemas ダイアログ ボックスを参照 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Base スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-108">In the Add Existing Item-SWIFTSchemas dialog box, browse to **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base Schemas**.</span></span>  
   
-3.  <span data-ttu-id="a7ca5-109">選択、 **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**スキーマ、およびクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-109">Select the **SWIFT Base Types.xsd** and the **SWIFT Common Data Types.xsd** schemas, and then click **Add**.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="a7ca5-110">SWIFT ベース Types.xsd と SWIFT 共通データ Types.xsd スキーマ SWIFTSchemas プロジェクトの下ソリューション エクスプ ローラーで表示します。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-110">The SWIFT Base Types.xsd and the SWIFT Common Data Types.xsd schemas appear in Solution Explorer under the SWIFTSchemas project.</span></span>  
-  
-4.  <span data-ttu-id="a7ca5-111">ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-111">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
-  
-5.  <span data-ttu-id="a7ca5-112">追加既存項目の SWIFTSchemas ダイアログ ボックスを参照、   **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Category 1\MT103** フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-112">In the Add Existing Item-SWIFTSchemas dialog box, browse to the **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category 1\MT103** folder.</span></span>  
-  
-6.  <span data-ttu-id="a7ca5-113">選択、 **MT103.xsd**スキーマ、およびクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-113">Select the **MT103.xsd** schema, and then click **Add**.</span></span>  
+3.  <span data-ttu-id="2a5d1-109">選択、 **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**スキーマ、およびクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-109">Select the **SWIFT Base Types.xsd** and the **SWIFT Common Data Types.xsd** schemas, and then click **Add**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="a7ca5-114">SWIFTSchemas プロジェクトの下で、ソリューション エクスプ ローラーで、新しいスキーマ MT103.xsd が表示されます。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-114">The new schema, MT103.xsd, appears in Solution Explorer under the SWIFTSchemas project.</span></span>  
+    >  <span data-ttu-id="2a5d1-110">SWIFT ベース Types.xsd と SWIFT 共通データ Types.xsd スキーマ SWIFTSchemas プロジェクトの下ソリューション エクスプ ローラーで表示します。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-110">The SWIFT Base Types.xsd and the SWIFT Common Data Types.xsd schemas appear in Solution Explorer under the SWIFTSchemas project.</span></span>  
   
-7.  <span data-ttu-id="a7ca5-115">ソリューション エクスプ ローラーで、 **MT103.xsd** BizTalk エディターでスキーマを表示します。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-115">In Solution Explorer, double-click **MT103.xsd** to view the schema in BizTalk Editor.</span></span>  
+4.  <span data-ttu-id="2a5d1-111">ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-111">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
+  
+5.  <span data-ttu-id="2a5d1-112">追加既存項目の SWIFTSchemas ダイアログ ボックスを参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Category 1\MT103**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-112">In the Add Existing Item-SWIFTSchemas dialog box, browse to the **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category 1\MT103** folder.</span></span>  
+  
+6.  <span data-ttu-id="2a5d1-113">選択、 **MT103.xsd**スキーマ、およびクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-113">Select the **MT103.xsd** schema, and then click **Add**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="a7ca5-116">(左側のウィンドウ) のスキーマ ツリーと XSD ビュー (右ペイン) には、BizTalk エディターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-116">The schema tree (left pane) and XSD view (right pane) appear in BizTalk Editor.</span></span>  
+    >  <span data-ttu-id="2a5d1-114">SWIFTSchemas プロジェクトの下で、ソリューション エクスプ ローラーで、新しいスキーマ MT103.xsd が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-114">The new schema, MT103.xsd, appears in Solution Explorer under the SWIFTSchemas project.</span></span>  
   
-8.  <span data-ttu-id="a7ca5-117">**ファイル** メニューのをクリックして**すべて保存**して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-117">On the **File** menu, click **Save All** to save your changes.</span></span>  
+7.  <span data-ttu-id="2a5d1-115">ソリューション エクスプ ローラーで、 **MT103.xsd** BizTalk エディターでスキーマを表示します。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-115">In Solution Explorer, double-click **MT103.xsd** to view the schema in BizTalk Editor.</span></span>  
   
- <span data-ttu-id="a7ca5-118">進みます[レッスン 4: ビルドしてアセンブリを配置する](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)です。</span><span class="sxs-lookup"><span data-stu-id="a7ca5-118">Proceed to [Lesson 4: Building and Deploying the Assembly](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md).</span></span>
+    > [!NOTE]
+    >  <span data-ttu-id="2a5d1-116">(左側のウィンドウ) のスキーマ ツリーと XSD ビュー (右ペイン) には、BizTalk エディターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-116">The schema tree (left pane) and XSD view (right pane) appear in BizTalk Editor.</span></span>  
+  
+8.  <span data-ttu-id="2a5d1-117">**ファイル** メニューのをクリックして**すべて保存**して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-117">On the **File** menu, click **Save All** to save your changes.</span></span>  
+  
+ <span data-ttu-id="2a5d1-118">進みます[レッスン 4: ビルドしてアセンブリを配置する](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)です。</span><span class="sxs-lookup"><span data-stu-id="2a5d1-118">Proceed to [Lesson 4: Building and Deploying the Assembly](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md).</span></span>
