@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>任意の XPath プロパティ ハンドラ (BizTalk Server サンプル)
 任意の XPath プロパティ ハンドラー ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サンプル) では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信される XML ドキュメント上で特定のプロパティを昇格させるためのカスタム パイプライン コンポーネントを記述する方法を示します。 サンプルに含まれる機能を使用して、XPath 式を評価する通常、アセンブラ、および逆アセンブラの各カスタム コンポーネントを作成できます。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/28/2017
 7.  新しい PO ドキュメントは、\Output ディレクトリのファイルに書き込まれます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\Pipelines\ArbitraryXPathPropertyHandler  
+ *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -82,11 +82,11 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
-1.  コマンド ウィンドウで、ディレクトリを変更 (**cd**) 次のフォルダーに。  
+1.  コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーにします。  
   
-     *\<パスのサンプル\>*\Pipelines\ArbitraryXPathPropertyHandler  
+     *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
-2.  次の操作を実行する Setup.bat ファイルを実行します。  
+2.  ファイル Setup.bat では、次の操作を実行しますが、実行します。  
   
     -   任意の XPath プロパティ ハンドラ パイプライン コンポーネントをビルドします。  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 11/28/2017
   
  任意の XPath 式は、"//element-name//*[local-name()='element-name' and position()=2]" のように複雑な場合があります。 実際は、XPath ボディまたは XPath プロパティで使用される非正規 XPath がスキーマに含まれる場合に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では非正規 XPath 式はサポートされていないという実行時エラーが発生します。 任意の XPath 式をサポートできるようにするには、任意の XPath ボディと任意の XPath プロパティ式の両方をサポートするカスタムの逆アセンブラおよびアセンブラ コンポーネントを作成します。  
   
- このサンプルでは、カスタム パイプライン コンポーネントで、次の一連の手順を使用時に**IComponent.Execute**実装は。  
+ このサンプルでは、カスタム パイプライン コンポーネントで、次の一連の手順を使用時に **IComponent.Execute** 実装されます。  
   
 1.  入力メッセージのボディ部ストリームで仮想のシーク可能ストリームを作成します (入力メッセージが大きく、ストリームをシークできない可能性があるため、メモリ使用量を少なくし、ストリーム位置を変更できるようにします)。  
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  入力メッセージ、またはデザイン時に指定されたスキーマに基づいて、スキーマを取得します。  
   
-4.  インスタンスに、ストリームを読み込みます**System.Xml.XmlDocument**です。  
+4.  インスタンスに、ストリームを読み込みます **System.Xml.XmlDocument**します。  
   
 5.  昇格させたプロパティと識別フィールドを処理し、送信メッセージのメッセージ コンテキストへの昇格または書き込みを行います。  
   

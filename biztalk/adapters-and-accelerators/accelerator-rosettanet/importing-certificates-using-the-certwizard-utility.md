@@ -23,10 +23,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 64be28927a49a1fc751870785ff3fc3f55a36cb1
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="importing-certificates-using-the-certwizard-utility"></a>CertWizard ユーティリティを使用して証明書のインポート
 このトピックで使用できる詳細な手順のコマンド ライン ユーティリティである CertWizard ユーティリティを使用して証明書をインポートする方法について説明、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK。 ここでは、秘密キー、公開キー、またはルート キーのインポートについて説明します。 証明書の構成に使用するスイッチについても説明します。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-import-a-private-key"></a>秘密キーをインポートするには  
   
-1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **cmd**, 、 をクリックし、 **ok**します。  
   
 2.  コマンド プロンプトでに移動、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MS-DOS を使用して SDK フォルダー **CD**コマンド、たとえば、入力**cd C:\Program files \microsoft BizTalk\<バージョン\>Accelerator forRosettanet \sdk**です。  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-import-a-public-key"></a>公開キーをインポートするには  
   
-1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **cmd**, 、 をクリックし、 **ok**します。  
   
 2.  コマンド プロンプトでに移動、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MS-DOS を使用して、SDK フォルダー **CD**コマンド、たとえば、入力**cd C:\Program files \microsoft BizTalk\<バージョン\>Accelerator forRosettanet \sdk**です。  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-import-a-root-key"></a>ルート キーをインポートするには  
   
-1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **cmd**, 、 をクリックし、 **ok**します。  
   
 2.  コマンド プロンプトでに移動、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MS-DOS を使用して、SDK フォルダー **CD**コマンド、たとえば、入力**cd C:\Program files \microsoft BizTalk\<バージョン\>Accelerator forRosettanet \sdk**です。  
   

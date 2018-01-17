@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 54eff7c2a455d9f1129bb40d83c002bac92841bd
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-17-create-the-wsclient-application"></a>手順 17: クライアント アプリケーションを作成します。
 WSClient.exe (Web サービス クライアント) は、コンソール アプリケーションで記述された[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]を前の手順で Web サービスとして公開するオーケストレーションにデータを送信する方法を示しています。 クライアント アプリケーションは 4 つの順序でパラメーターの入力を受け入れます。 患者名、ミドル ネーム、最後の名、および社会保障番号、それぞれします。 患者の情報を使用する Web サービスを送信するには、次のコマンドライン構文を使用します。  
@@ -35,7 +35,7 @@ wsclient john henry smith 123456789
   
 2.  **新しいプロジェクトの追加** ダイアログ ボックスで、**プロジェクトの種類** ウィンドウで、をクリックして**Visual c#**し、、**テンプレート** ウィンドウで、をクリックして**コンソール アプリケーション**です。  
   
-3.  **名前**フィールドに「**クライアント**です。 **場所**フィールドを参照してください  **\<*ドライブ*\>: \Tutorial** をクリックして**OK**です。 ソリューション エクスプ ローラーは、ツリーにクライアントを追加し、Program.cs ファイルが表示されます。  
+3.  **名前**フィールドに「**クライアント**です。 **場所**フィールドを参照してください **\<*ドライブ*\>: \Tutorial**、順にクリック**OK**です。 ソリューション エクスプ ローラーは、ツリーにクライアントを追加し、Program.cs ファイルが表示されます。  
   
 4.  ソリューション エクスプ ローラーで右クリック**クライアント**、クリックして**Web 参照の追加**です。  
   

@@ -13,27 +13,27 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 865717858e27509a9f9e4af611b39ba10be212a5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-8-test-the-create-batch-scenario"></a>手順 8: 作成するバッチのシナリオをテストします。
 このステップでは、ソース Tutorial_BTAHL7Pickup フォルダーにバッチ処理するメッセージのテスト インスタンスを削除することにより、バッチの作成シナリオをテストします。 送信ポートを設定するには、ソース フォルダーからメッセージを取得し、送信;受信ポートを受信します。受信パイプラインはそれを処理し、Tutorial_BTAHL7Drop コピー先のフォルダーにドロップします。  
   
 ### <a name="to-test-the-create-batch-scenario"></a>バッチの作成シナリオをテストするには  
   
-1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、   **\<*ドライブ*\>: \Batching Tutorial\Instances** フォルダーです。  
+1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Batching Tutorial\Instances**フォルダーです。  
   
 2.  選択**CreateBatchMessage1.txt**、および**CreateBatchMessage2.txt**、それらを右クリックし、クリックして**コピー**です。  
   
-3.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、   **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\ のアクセラレータSDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Pickup * * フォルダーです。  
+3.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータTutorial\Tutorial_BTAHL7Pickup**フォルダーです。  
   
 4.  フォルダーを右クリックし、をクリックして**貼り付け**です。  
   
 ### <a name="to-verify-the-results-of-the-create-batch-scenario"></a>バッチの作成シナリオの結果を確認するには  
   
-1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、   **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\ のアクセラレータSDK\End エンドツー エンド Tutorial\Tutorial_BatchACKDrop * * フォルダーです。 短時間の後に、フォルダーに表示される受信確認のバッチの処理のインスタンスが表示されます。 表示されない場合は、確認、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エラー メッセージは、イベント ビューアー。 ファイルは、名前を付ける必要があります\< *Guid*\>.txt です。 このバッチは、最初に送信された 2 つのメッセージを受信したときに生成された 2 つの受信確認を含める必要があります。 このバッチは、次のフィールドが必要です。  
+1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータTutorial\Tutorial_BatchACKDrop**フォルダーです。 短時間の後に、フォルダーに表示される受信確認のバッチの処理のインスタンスが表示されます。 表示されない場合は、確認、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エラー メッセージは、イベント ビューアー。 ファイルは、名前を付ける必要があります\< *Guid*\>.txt です。 このバッチは、最初に送信された 2 つのメッセージを受信したときに生成された 2 つの受信確認を含める必要があります。 このバッチは、次のフィールドが必要です。  
   
     |FHS.5|BHS.5|BTS.1|FTS.1|  
     |-----------|-----------|-----------|-----------|  
@@ -43,10 +43,10 @@ ms.lasthandoff: 11/28/2017
   
     |MSH.9|MSA.2|MSA.1|MSH.3|MSH.5|  
     |-----------|-----------|-----------|-----------|-----------|  
-    |ACK ^ A03 ^ ACK|Msg01|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
-    |ACK ^ A03 ^ ACK|Msg02|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
+    |ACK^A03^ACK|Msg01|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
+    |ACK^A03^ACK|Msg02|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
   
-2.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、   **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\ のアクセラレータSDK\End エンドツー エンド Tutorial\Tutorial_BatchMsgDrop * * フォルダーです。 1 時間後に、フォルダーに表示されるメッセージ バッチの処理済みインスタンスが表示されます。 表示されない場合は、確認、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エラー メッセージは、イベント ビューアー。 ファイルは、名前を付ける必要があります\< *Guid*\>.txt です。 このバッチは、最初に送信された 2 つのメッセージを含める必要があります。 このバッチは、次のフィールドが必要です。  
+2.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータTutorial\Tutorial_BatchMsgDrop**フォルダーです。 1 時間後に、フォルダーに表示されるメッセージ バッチの処理済みインスタンスが表示されます。 表示されない場合は、確認、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エラー メッセージは、イベント ビューアー。 ファイルは、名前を付ける必要があります\< *Guid*\>.txt です。 このバッチは、最初に送信された 2 つのメッセージを含める必要があります。 このバッチは、次のフィールドが必要です。  
   
     |FHS.5|BHS.5|BTS.1|FTS.1|  
     |-----------|-----------|-----------|-----------|  
@@ -56,8 +56,8 @@ ms.lasthandoff: 11/28/2017
   
     |MSH.9|MSH.10|MSH.3|MSH.5|  
     |-----------|------------|-----------|-----------|  
-    |ADT ^ A03|Msg01|Tutorial_BatchSource|Tutorial_BatchDest|  
-    |ADT ^ A03|Msg02|Tutorial_BatchSource|Tutorial_BatchDest|  
+    |ADT^A03|Msg01|Tutorial_BatchSource|Tutorial_BatchDest|  
+    |ADT^A03|Msg02|Tutorial_BatchSource|Tutorial_BatchDest|  
   
      バッチは、ヘッダーとトレーラーのバッチに特定の 2 つのセットでラップされます。  
   

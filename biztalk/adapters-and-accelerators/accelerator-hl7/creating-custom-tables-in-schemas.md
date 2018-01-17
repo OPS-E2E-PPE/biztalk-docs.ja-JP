@@ -17,17 +17,17 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a663dd593123e647f2f466b6d472d60bb32be1be
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="creating-custom-tables-in-schemas"></a>スキーマのカスタム テーブルの作成
 カスタムのテーブルを作成するには、tablevalues_ で\<*バージョン*\>.xsd 共通のスキーマです。 既存のデータ型、基本データ型、またはテーブルで定義された列挙体のカスタムのテーブルを作成できます。  
   
 ### <a name="to-create-a-z-table"></a>Z テーブルを作成するには  
   
-1.  ソリューション エクスプ ローラーで、共通のデータ型のスキーマ ファイルを開く **tablevalues_\<*バージョン*\>* *、.xsd をクリックして**開く**です。  
+1.  ソリューション エクスプ ローラーで、共通のデータ型のスキーマ ファイルを開く**tablevalues_\<*バージョン*\>.xsd**、順にクリック**開く**です。  
   
 2.  BizTalk エディターを右クリックして**HL7DefinedTables**、 をポイント**スキーマ ノードの挿入**、クリックして**子フィールド要素**です。  
   

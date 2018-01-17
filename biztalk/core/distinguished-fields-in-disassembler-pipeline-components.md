@@ -18,19 +18,19 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>識別フィールドに逆アセンブラー パイプライン コンポーネント
 スキーマで定義された識別フィールドは、XML 逆アセンブラー、BizTalk 逆アセンブラー、またはフラット ファイル逆アセンブラー パイプランによって、次の形式でメッセージ コンテキストに書き込まれます。  
   
- *使用される名前*XPath で識別フィールドは、  
+ *使用される名前* XPath で識別フィールドは、  
   
- *名前空間 URI*は、"http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
+ *名前空間 URI* "http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"は、  
   
- プロパティの値は、 **System.String**使用して XML ドキュメントから抽出された値は、XPath を指定します。  
+ プロパティの値は、 **System.String** による XML ドキュメントから抽出された値は、XPath を指定します。  
   
  次の例では、スキーマに識別フィールド Price があります。  
   
@@ -67,9 +67,9 @@ ms.lasthandoff: 09/20/2017
   
  XML 逆アセンブラーがメッセージ コンテキストで次のように識別フィールドを書き込みます。  
   
- コンテキストのプロパティの名前:"/* [ローカル名 () 'PO' and namespace-uri() = = 'http://SendHtmlMessage.PO']/\*[ローカル名 () = '価格' and namespace-uri() = ']"  
+ コンテキストのプロパティの名前:"/* [ローカル名 () = 'PO' and namespace-uri() = 'http://SendHtmlMessage.PO']/\*[ローカル名 () 'Price' and namespace-uri() = = ']"  
   
- プロパティの Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
+ プロパティの名前空間: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   
  プロパティの値: 10  
   

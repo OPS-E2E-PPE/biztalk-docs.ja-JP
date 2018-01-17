@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fd36081bd92c3bfae13916ed7d984fcd5de9763f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信します。
 構成することができます、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ポーリング ベースのデータを受信するには、Oracle のテーブルまたはビューに対してメッセージを変更します。 メッセージを受信するデータが変更されて、アダプターは、Oracle のテーブルまたはビューにオプションの PL/SQL コード ブロックを続けるに対して SQL クエリを定期的に実行します。 SQL クエリの結果では返されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]受信 POLLINGSTMT 操作で設定厳密に型指定された結果としてアプリケーションにします。 使用してデータベースを構成し、Oracle のポーリングを実行するためのメカニズムの詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターのデータ変更のポーリングに基づいたメッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)です。 続行する前に、このトピックを読むことを強くお勧めします。  

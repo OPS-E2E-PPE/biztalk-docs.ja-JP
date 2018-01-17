@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2c18cdcad8deaa9cd76930b91e94860c99749f78
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-configure-the-http-receive-adapter"></a>HTTP 受信アダプターを構成する方法
 HTTP 受信アダプターを使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信できます。 HTTP 受信アダプターは、インターネット インフォメーション サービス (IIS) プロセスでホストされる IIS の ISAPI 拡張です。  
@@ -32,11 +32,11 @@ HTTP 受信アダプターを使用して [!INCLUDE[btsBizTalkServerNoVersion](.
   
     1.  新しい Web サービス拡張機能 mySSODemo を追加します。  
   
-    2.  コピーを見つけて**< BizTalk_install > \HttpReceive**など、SSO プロジェクトが含まれているフォルダーに。  
+    2.  見つけてコピー **< BizTalk_install > \HttpReceive** を SSO プロジェクトを次に例を含むフォルダーにします。  
   
-         **< Adapter_install > \biztalk\SSO\mySSODemo\BTSHTTPReceive.dll です。**  
+         **< Adapter_install > \biztalk\SSO\mySSODemo\BTSHTTPReceive.dll します。**  
   
-    3.  MySSODemo Web サービス拡張機能の状態に設定**許可**です。  
+    3.  MySSODemo Web サービス拡張の状態を設定 **許可**します。  
   
 2.  IIS を再起動して、すべての変更内容を適用します。  
   

@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 62cb7d6181c7be44f7095a6c1d1149132df4e21e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>インストールと構成のトラブルシューティング
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>RuntimeSchemas アセンブリを配置できません。  
@@ -95,12 +95,12 @@ ms.lasthandoff: 11/28/2017
   
 1.  Service フォルダーを右クリックし、をクリックして**プロパティ**、をクリックし、**セキュリティ**タブです。  
   
-2.  クリックして、グループまたはユーザー名のウィンドウで、サービスのプロパティ ダイアログ ボックス、**追加**、入力 ***\<サーバー名\>*\A4SWIFT 管理者**、クリックして**OK**です。  
+2.  グループまたはユーザー名ペインで、サービスのプロパティ ダイアログ ボックスのをクリックして**追加**、入力 ***\<サーバー名\>* \A4SWIFT 管理者**、クリックして**ok**.  
   
     > [!NOTE]
-    >  A4SWIFT の Administrators グループがドメイン グループである場合は、入力 ***\<ドメイン名\>*\A4SWIFT 管理者**です。  
+    >  A4SWIFT の Administrators グループがドメイン グループの場合は、次のように入力してください ***\<ドメイン名\>* \A4SWIFT 管理者**です。  
   
-3.  手順 2. を繰り返します ***\<サーバー名\>*\A4SWIFT ユーザー**、または  **\<*ドメイン名*\>\A4SWIFT ユーザー * *、A4SWIFT Users グループがドメイン グループの場合。  
+3.  手順 2. を繰り返します ***\<サーバー名\>* \A4SWIFT ユーザー**、または **\<*ドメイン名*\>\A4SWIFT ユーザー**場合、A4SWIFT の Users グループは、ドメイン グループです。  
   
 4.  グループまたはユーザー名ペインで選択**A4SWIFT 管理者**です。 アクセス許可 ウィンドウで、次のように選択します。**許可**の**フルコントロール**です。  
   
@@ -207,7 +207,7 @@ ms.lasthandoff: 11/28/2017
   
     -   型:**インプロセス**  
   
-    -   Windows グループ:   **\<*ドメイン*\>\BizTalk アプリケーション ユーザー * * (またはアカウントを BizTalk プロセスを実行するための BizTalk Server の構成時に設定することアプリケーションの)  
+    -   Windows グループ:  **\<*ドメイン*\>\BizTalk Application Users** (または BizTalk プロセスを実行するための BizTalk Server 構成で設定したアカウントアプリケーションの)  
   
     -   [オプション] の両方を選択**ホストの追跡を許可する**と**しやすいように、既定のホスト グループに**です。  
   
@@ -215,7 +215,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  をクリックして**開始**し、[実行] をクリックします。 型**cmd**  をクリックし、 **OK**です。  
   
-7.  コマンド プロンプトに移動*%programfiles%***\Microsoft BizTalk Accelerator for swift \sdk\tools**です。  
+7.  コマンド プロンプトに移動します。 * % programfiles % ***\Microsoft BizTalk Accelerator for swift \sdk\tools**です。  
   
 8.  型**RepairBAS.exe**キーを押します**Enter**です。  
   

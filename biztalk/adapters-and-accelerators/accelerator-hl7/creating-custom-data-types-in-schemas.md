@@ -17,17 +17,17 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ea38eb106b3554b72885355aaa9aef4928f4fda2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="creating-custom-data-types-in-schemas"></a>スキーマでカスタム データ型を作成します。
 カスタム データ型を作成するには、datatypes_ で\<*バージョン*\>.xsd 共通のスキーマです。 既存のデータ型、基本データ型、またはテーブルで定義された列挙体のカスタム データ型を作成できます。  
   
 ### <a name="to-create-a-z-data-type"></a>Z データ型を作成するには  
   
-1.  ソリューション エクスプ ローラーの Visual Studio で、共通のデータ型のスキーマ ファイルを開きます (**datatypes_\<*バージョン*\>.xsd * *)、をクリックして**を開く**.  
+1.  ソリューション エクスプ ローラーの Visual Studio で、共通のデータ型のスキーマ ファイルを開きます (**datatypes_\<*バージョン*\>.xsd**)、をクリックして**を開く**.  
   
 2.  BizTalk エディターを右クリックして**HL7DefinedDataTypes**、 をポイント**スキーマ ノードの挿入**、クリックして**子レコード**をコンポーネントのデータ型を作成またはをクリックするには**子要素**を単純なデータ型を作成します。  
   

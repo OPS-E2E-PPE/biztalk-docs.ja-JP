@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a5749166c8a9b34d5e5a04849c4179ac4427201c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-5-create-the-send-port-for-the-message-batch"></a>手順 5: メッセージのバッチの送信ポートを作成します。
 この手順では、送信先パーティを作成するメッセージのバッチを配信する送信ポートを作成します。 これは、ファイル アダプターの種類に静的な一方向のポートです。 ここで、変換先 (\Tutorial_BatchMsgDrop) のファイルのフォルダーを指定する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチ ファイルが削除されます。 ポートで送信するメッセージのバッチの種類を示すポートのフィルターを定義するとします。 フィルターは、Tutorial_BatchDest と OutboundBatch のメッセージの種類の変換先を指定します。  
@@ -34,21 +34,21 @@ ms.lasthandoff: 12/01/2017
     |--------------|----------------|  
     |**名前**|型**Tutorial_BatchDest**です。|  
     |**型**|選択**ファイル**ドロップダウン リストからです。|  
-    |**構成**|をクリックして**構成**FILE トランスポートのプロパティ ダイアログ ボックスを開きます。|  
+    |**構成します。**|をクリックして**構成**FILE トランスポートのプロパティ ダイアログ ボックスを開きます。|  
   
 3.  **FILE トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**コピー先フォルダー**|参照  **\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_ のアクセラレータ* * BatchMsgDrop。 これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチを含んでいるファイルを記述します。|  
-    |**ファイル名**|型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
+    |**インストール先フォルダー**|参照 **\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchMsgDropのアクセラレータ**. これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチを含んでいるファイルを記述します。|  
+    |**[ファイル名]**|型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
     |**[コピー モード]**|選択**新規作成**です。|  
   
 4.  **[OK]**をクリックします。  
   
 5.  送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。  
   
-6.  コンソール ツリーでクリックして**フィルター**、し、次の操作を行います。  
+6.  コンソール ツリーでクリックして **フィルター**, 、し、次の操作を行います。  
   
     |プロパティ|目的|  
     |--------------|----------------|  

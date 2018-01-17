@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d1a7ee4f8ffe73a71e8c0b2e3d45c7a966669fd8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-generate-the-master-secret"></a>マスター シークレットを生成する方法
 この作業を実行するには、マスター シークレット サーバーに対する管理者権限が必要です。 また、この作業はマスター シークレット サーバーから実行する必要があります。  
@@ -34,19 +34,19 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-generate-the-master-secret-using-the-mmc-snap-in"></a>MMC スナップインを使用してマスター シークレットを生成するには  
   
-1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、クリックして**SSO 管理**です。  
+1.  **開始**  メニューのをクリックして **すべてのプログラム**, 、 をクリックして **Microsoft エンタープライズ シングル サインオン**, 、 をクリックし、 **SSO 管理**します。  
   
-2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、展開、**エンタープライズ シングル サインオン**ノード。  
+2.  ENTSSO MMC スナップインのスコープ ペインで、展開、 **エンタープライズ シングル サインオン** ノードです。  
   
-3.  右クリック**システム**、クリックして**シークレットの生成**です。  
+3.  右クリック **システム**, 、クリックして **シークレットの生成**します。  
   
 ### <a name="to-generate-the-master-secret-using-the-command-line"></a>コマンド ラインを使用してマスター シークレットを生成するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssoconfig – generateSecret \<*バックアップ ファイル*\>**ここで、 \<*バックアップ ファイル*\>マスター シークレットを含むファイルの名前を指定します。  
+3.  型**ssoconfig – generateSecret \<*バックアップ ファイル*\>**ここで、 \<*バックアップ ファイル*\>の名前を指定しますマスター シークレットを含むファイルです。  
   
      作成したファイルを保護するためのパスワードを入力するように求められます。  
   

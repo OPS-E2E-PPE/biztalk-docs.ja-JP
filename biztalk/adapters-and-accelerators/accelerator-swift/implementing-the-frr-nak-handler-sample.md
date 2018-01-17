@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a91c0303c9abdf6b1d8c434869445f3c84348935
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="implementing-the-frr-nak-handler-sample"></a>FRR NAK ハンドラーのサンプルを実装します。
 サンプル FRR NAK カスタム ハンドラーを実装して、サンプル プロジェクトをソリューションに追加、ビルドし、プロジェクトを配置、バインドし、オーケストレーションを開始および停止し、再開する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  ビルドして RepairSWIFTRejectedMessage.btproj プロジェクトを配置します。  
   
-5.  BizTalk エクスプ ローラーで、 **BizTalk 構成データベース**、   **\<*サーバー名*\>BizTalkMgmtDb.dbo**、および**オーケストレーション**を右クリックして**RepairSWIFTRejectedMessage.Orchestration_1**、クリックして**バインド**です。  
+5.  BizTalk エクスプ ローラーで、 **BizTalk 構成データベース**、  **\<*サーバー名*\>、>.biztalkmgmtdb.dbo**、および**オーケストレーション**を右クリックして**RepairSWIFTRejectedMessage.Orchestration_1**、クリックして**バインド**です。  
   
 6.  **ポート バインド プロパティ**ダイアログ ボックスでは、BizTalkServerApplication など、ホストを選択し、をクリックして**OK**です。  
   

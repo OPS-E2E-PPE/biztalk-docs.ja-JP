@@ -17,13 +17,13 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 50bdcacfe1459ba4a236c3701b786d97217db8ef
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="segments-common-schemas"></a>セグメントの一般的なスキーマ
- **Segments_\<*バージョン*\>* * .xsd ファイルを含む datatypes_\<*バージョン*\>.xsd が含まれていますHL7 バージョンに関連するすべてのセグメントの定義。 各メッセージ スキーマを使用 segments_\<*バージョン*\>.xsd です。 HL7 メッセージの定義は、各サブフォルダーの下にあるし、segments_ を含める\<*バージョン*\>.xsd です。 SegmentDataElements と DataElements アクセス データベースのテーブルを生成、segments_\<*バージョン*\>.xsd ファイルは、すべてのデータ型の Fields.xsd スキーマ ファイルへのポインターが含まれています。 スキーマ ファイル名の形式です。  
+**Segments_\<*バージョン*\>.xsd** datatypes_ が含まれるファイル\<*バージョン*\>.xsd が含まれています、HL7 バージョンに関連するすべてのセグメントの定義。 各メッセージ スキーマを使用 segments_\<*バージョン*\>.xsd です。 HL7 メッセージの定義は、各サブフォルダーの下にあるし、segments_ を含める\<*バージョン*\>.xsd です。 SegmentDataElements と DataElements アクセス データベースのテーブルを生成、segments_\<*バージョン*\>.xsd ファイルは、すべてのデータ型の Fields.xsd スキーマ ファイルへのポインターが含まれています。 スキーマ ファイル名の形式です。  
   
 ```  
   

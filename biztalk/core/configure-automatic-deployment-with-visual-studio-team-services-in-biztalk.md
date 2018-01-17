@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d135960143fed33d1ce4847c681f5b1134489b65
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configure-automatic-deployment-with-visual-studio-team-services-in-biztalk-server"></a>BizTalk Server での Visual Studio Team Services の自動展開を構成します。
 
@@ -57,7 +57,7 @@ VSTS をセットアップする方法を説明[!INCLUDE[btsBizTalkServerNoVersi
   [Visual Studio Team Services の概要](https://www.visualstudio.com/docs/overview)  
   [初心者の CI/CD](https://www.visualstudio.com/docs/build/get-started/ci-cd-part-1)
 
-## <a name="get-started"></a>作業を開始します。
+## <a name="get-started"></a>概要します。
 [手順 1: アプリケーション プロジェクトの追加および.json テンプレートの更新](feature-pack-add-application-project.md)  
 
 [手順 2: VSTS トークンの作成およびビルド エージェントのインストール](feature-pack-create-vsts-token.md)

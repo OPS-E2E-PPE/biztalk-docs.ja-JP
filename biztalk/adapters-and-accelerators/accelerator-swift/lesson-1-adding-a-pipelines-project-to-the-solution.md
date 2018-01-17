@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b45fb5e3ebc47bcaa27226be28618269f9da2e55
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>レッスン 1: パイプライン プロジェクトをソリューションに追加します。
 このレッスンでは、for SWIFT の新しい BizTalk プロジェクトをソリューションにパイプラインをカスタマイズして使用できる、送信パイプラインが表示されるようにを追加します。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  **名前**ボックスに、入力**SWIFTPipelines**プロジェクト名として。  
   
-5.  **ソリューション**ボックスで、**ソリューションに追加**です。 **場所**ボックスを参照して選択  **\<*ドライブ*:\>\labs\SWIFTProject** が選択されています。  
+5.  **ソリューション**ボックスで、**ソリューションに追加**です。 **場所**ボックスを参照して選択 **\<*ドライブ*:\>\labs\SWIFTProject**が選択されています。  
   
 6.  をクリックして**OK**新しいプロジェクトを開きます。  
   

@@ -14,15 +14,15 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 48a35373735102bd75d1c388da29b06d4392ba18
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="test-a-biztalk-web-service"></a>BizTalk Web サービスをテストします。
 
 ## <a name="overview"></a>概要
-Web クライアント アプリケーションを記述せずに、公開済み Web サービスをテストできます。 Internet Explorer などの Web ブラウザを使用して、公開済み Web サービスをテストできます。 Web ブラウザを使用して公開済み Web サービスにアクセスできますが、テストできるのは、単純な型パラメータを使用する Web メソッドを持つ Web サービスのみです。 Web ブラウザーで、Web メソッドをテストするには、受信ポートで使用される要求と応答メッセージのメッセージ部分できるだけ単純型など**System.String**または**System.Int32**です。 メッセージ部分がメッセージ型としてスキーマを使用している場合、ブラウザで Web メソッドをテストすることはできません。  
+Web クライアント アプリケーションを記述せずに、公開済み Web サービスをテストできます。 Internet Explorer などの Web ブラウザを使用して、公開済み Web サービスをテストできます。 Web ブラウザを使用して公開済み Web サービスにアクセスできますが、テストできるのは、単純な型パラメータを使用する Web メソッドを持つ Web サービスのみです。 Web ブラウザーで Web メソッドをテストする受信ポートで使用される要求と応答メッセージのメッセージ部分のみするには、単純型など、 **System.String** または **System.Int32**します。 メッセージ部分がメッセージ型としてスキーマを使用している場合、ブラウザで Web メソッドをテストすることはできません。  
   
  HTTP-GET または HTTP-POST を使用して公開済み Web サービスをテストするには、SOAP アダプタの BizTalk 受信場所を構成し、公開済み Web サービスの Web.config ファイルを変更する必要があります。  
   
@@ -72,12 +72,12 @@ Web クライアント アプリケーションを記述せずに、公開済み
   
 #### <a name="access-a-web-service-with-internet-explorer"></a>Internet Explorer で Web サービスへのアクセスします。  
   
--   Internet explorer で、**アドレス**ボックスに、形式を使用して Web サービスの URL を入力 **http://*servername*/*apppath*/ *webservicename*.asmx * *。  
+-   Internet explorer で、**アドレス**ボックスに、形式を使用して Web サービスの URL を入力**http://*servername*/*apppath* /*webservicename*.asmx**です。  
   
     |パラメーター|値|  
     |---------------|-----------|  
     |***サーバー名***|XML Web サービスを配置したサーバーの名前です。|  
-    |***アプリケーションのパス***|仮想ディレクトリ名と Web アプリケーションのパスです。|  
+    |***Apppath***|仮想ディレクトリ名と Web アプリケーションのパスです。|  
     |***webservicename.asmx***|XML Web サービスの .asmx ファイルの名前です。|  
   
  Web サービスの説明には、特定の Web サービスがサポートするすべての Web サービス メソッドが表示されます。 [Web サービスの説明] ページには、使用できる Web メソッドへのリンクと、Web サービスの説明が含まれます。  
@@ -86,7 +86,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
   
 1.  [Web サービスの説明] ページにアクセスし、一覧表示されている Web メソッドの 1 つをクリックします。  
   
-2.  Web メソッドに必要なパラメーターを入力し、クリックして**Invoke**です。  
+2.  Web メソッドに必要なパラメーターを入力し、クリックして **Invoke**します。  
   
 3.  サーバーがブラウザに XML 応答を返します。 Web サービスの戻り値のデータ型が倍精度浮動小数点数の場合、結果は次のようになります。  
   
@@ -97,12 +97,12 @@ Web クライアント アプリケーションを記述せずに、公開済み
   
 #### <a name="test-a-web-service-with-internet-explorer-using-http-get-alternate-method"></a>HTTP GET (代替手段) を使用する Internet Explorer で Web サービスをテストします。  
   
-1.  Internet explorer で、**アドレス**ボックスに、形式を使用して Web サービスの URL を入力***http://servername/vdir/webservicename.asmx/Methodname?parameter=value***です。  
+1.  Internet explorer で、 **アドレス** ボックスに、形式を使用して Web サービスの URL を入力 ***http://servername/vdir/webservicename.asmx/Methodname?parameter=value***します。  
   
     |パラメーター|値|  
     |---------------|-----------|  
     |***サーバー名***|XML Web サービスを配置したサーバーの名前です。|  
-    |***アプリケーションのパス***|仮想ディレクトリ名と Web アプリケーションのパスです。|  
+    |***Apppath***|仮想ディレクトリ名と Web アプリケーションのパスです。|  
     |***webservicename.asmx***|XML Web サービスの .asmx ファイルの名前です。|  
     |***Methodname***|XML Web サービスが公開するパブリック メソッドの名前です。 空白にすると、XML Web サービスの説明ページが表示され、.asmx ファイルで使用できるパブリック メソッドが一覧表示されます (オプション)|  
     |***パラメーター***|メソッドで必須となっているパラメータの名前とその値です。 空白にすると、XML Web サービスの説明ページが表示され、.asmx ファイルで使用できるパブリック メソッドが一覧表示されます (オプション)|  

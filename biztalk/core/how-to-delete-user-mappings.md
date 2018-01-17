@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 03f7c1fa75b6fe7bb4c78e18c97fccd1404f89c9
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-delete-user-mappings"></a>ユーザー マッピングを削除する方法
 以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。 XML ファイルの例を次に示します。  
@@ -47,33 +47,33 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-delete-user-mappings-using-the-administration-utility"></a>管理ユーティリティを使用してユーザー マッピングを削除するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – deletemappings *\<マッピング ファイル名\>***ここで、 \<*マッピング ファイル名*\>は削除するユーザー マッピングが格納されているファイルの名前です。  
+3.  型 **ssomanage – deletemappings *\<マッピング ファイル名\>* * *、どこで\<*マッピング ファイル名*\>を含むファイルの名前を指定します、ユーザーのマッピングを削除します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
 ### <a name="to-delete-a-specific-user-mapping-using-the-administration-utility"></a>管理ユーティリティを使用して特定のユーザー マッピングを削除するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssomanage – deletemapping *\<ドメイン\>*\\*\<username\>*  *\<アプリケーション名\>***ここで、 *\<ドメイン\>* Windows ドメイン ユーザー アカウントには *\<username\>* は、Windows ユーザー名と\<*アプリケーション名*\>をする特定のアプリケーションは、ユーザー マッピングを削除します。  
+3.  型 **ssomanage – deletemapping *\<ドメイン\>*\\*\<username\> *  *\<アプリケーション名\>* * *、どこで*\<ドメイン\>*は Windows ドメイン ユーザー アカウントを *\<ユーザー名\>*は、Windows ユーザー名と\<*アプリケーション名*\>ユーザー マッピングを削除する特定のアプリケーションは、します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
 ### <a name="to-delete-a-user-mapping-using-the-client-utility"></a>クライアント ユーティリティを使用してユーザー マッピングを削除するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssoclient – deletemapping *\<アプリケーション名\>***ここで、 *\<アプリケーション名\>*は、ユーザー マッピングを削除する関連アプリケーションの名前です。  
+3.  型 * * ssoclient – deletemapping *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>*ユーザー マッピングを削除する関連アプリケーションの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

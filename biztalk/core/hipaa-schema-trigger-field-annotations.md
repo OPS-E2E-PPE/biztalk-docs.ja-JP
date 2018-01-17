@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f8c50db43b14899439877fde8ce0ee476feb5095
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="hipaa-schema-trigger-field-annotations"></a>HIPAA スキーマのトリガー フィールドの注釈
 多くの場合、EDI セグメントには、セグメントの意味を変更する修飾子の値が含まれています。 たとえば、N1 セグメントには "請求先名" を示す "BT" の修飾要素が含まれていたり、"出荷先名" を示す "ST" の修飾要素が含まれていることがあります。 通常これらのフィールドを解釈する方法を決定するビジネス ロジックに任されており、逆アセンブラーが同じ XML レコード名を N1 セグメントのすべてのインスタンスを解決します。ただし、BizTalk Server に付属の HIPAA スキーマが含まれている注釈 EDI 逆アセンブラーで修飾要素の存在に基づいて一意の XML レコードを作成できるようにします。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/01/2017
   
  **トリガー フィールドの EDI 逆アセンブラーの処理**  
   
- 設定すると HIPAA のトランザクションを受け取ると、EDI 逆アセンブラーは、トリガー フィールドを含むセグメントを検出すると、トリガー情報を使用して、セグメントとトリガーの組み合わせに固有の XML レコードを生成します。 たとえば、次の EDI データには、N101、PR および PE について異なる値を持つ 2 つの N1 セグメントがあります。  
+ HIPAA トランザクション セットの受信 EDI 逆アセンブラーは、トリガー フィールドを含むセグメントを検出すると、ときに、セグメントとトリガーの組み合わせに固有の XML レコードを生成するのにトリガー情報を使用します。 たとえば、次の EDI データには、N101、PR および PE について異なる値を持つ 2 つの N1 セグメントがあります。  
   
 ```  
   
@@ -53,7 +53,7 @@ N4*N401__PayeeCityName*N4*N403__PayeePost**N4*N406~
   
 ```  
   
- スキーマ内のトリガー フィールドの注釈は N101、< n1_payeridentification_ts835w1_1000 a > の値に基づいて 2 つの独立した XML レコードと、EDI 逆アセンブラーによって処理された、および < N1_PayeeIdentification_TS835W1_1000B >N1 に対応する * PR および N1\*PE です。  
+ スキーマ内のトリガー フィールドの注釈は < n1_payeridentification_ts835w1_1000 a > N101 の値に基づいて 2 つの独立した XML レコードと、EDI 逆アセンブラーによって処理されるときに、< N1_PayeeIdentification_TS835W1_1000B > N1 に対応する * PR および N1\*PE です。  
   
  送信時に EDI アセンブラーでは、トリガーの注釈を含むフィールドの "_" 文字に続くサフィックスを削除します。 たとえば、<N1_PayerIdentification_TS835W1_1000A> および <N1_PayeeIdentification_TS835W1_1000B> は、いずれも "N1" となります。  
   

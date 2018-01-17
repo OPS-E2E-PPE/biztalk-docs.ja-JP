@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3ca5a539fdaea9026a7c18cae6f076e72df9efe2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-4-building-and-deploying-the-assembly"></a>レッスン 4: のビルドと、アセンブリの展開
 このレッスンでは、ビルドし、前のレッスンで作成したスキーマを含むアセンブリを生成するプロジェクトを配置します。 このタスクにより、これまでに作成した作業ではコンパイル エラーがないです。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  いることを確認**ビルドに成功した**画面の左下隅に表示されます。 コンパイル時に、一部のステータス メッセージを参照してください可能性があります。 SWIFT のスキーマを処理する場合、これらのメッセージは正常です。 すべてのエラーが表示されない場合は、ツールをクリックし、[BizTalk Server 管理を開くには、BizTalk Server 管理コンソール] をクリックします。 BizTalk 管理コンソールで、イベント ビューアーと正常性と動作状況の追跡 (HAT) 機能を使用して、、エラーを修正して再構築します。  
   
-2.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、   **\<*ドライブ*\>: \labs\SWIFTProject\SWIFTSchemas\bin\Development** フォルダーのことを確認し、 **SWIFTSchemas.dll**このフォルダーにファイルが存在します。  
+2.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \labs\SWIFTProject\SWIFTSchemas\bin\Development**フォルダー、いることを確認し、 **SWIFTSchemas.dll**このフォルダーにファイルが存在します。  
   
 3.  ソリューション エクスプ ローラーで右クリック**SWIFTSchemas**、クリックして**展開**です。  
   

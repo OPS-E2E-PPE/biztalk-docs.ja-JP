@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: df0988a9edc2af81970237aad363315a778f821b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a>Ack を受信するための送信ポートの設定
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 一方向の送信ポートで受信確認 (ACK) が表示されることができます。 同じ接続の Ack を受信するための新しい一方向の送信ポートを設定するときは、その送信を関連付ける必要があります、一方向のポートの受信ポート。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  **トランスポート**] セクションの**型**[ **MLLP**です。  
   
-4.  をクリックして**構成**です。  
+4.  クリックして **構成**します。  
   
 5.  MLLP トランスポートのプロパティ ダイアログ ボックスで、ホストと接続の名前を入力します (たとえば、 **localhost**)。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/28/2017
     >  ままにした場合**受信場所の送信**空白、BTAHL7 URI の入力、デフォルト**TwoWayAckReceiveLocation**です。 その後のクリックを確認する**[ok]**の手順 6 でをクリックして**構成**もう一度です。 URI **TwoWayAckReceiveLocation**に入力されます (127.0.0.1:65535)**送信受信場所 (URI) を ACK**です。  
   
     > [!NOTE]
-    >  受信確認をサブスクライブする送信ポートを作成する必要がありますか、ACK は、サブスクリプションが見つからなかったため、一時停止状態で表示されます。 送信ポートで受信確認をサブスクライブする場合は、たとえば、フィルターを使用して **BTS です。MessageType = = \<* MessageType*\>* * と **BTS です。ReceivePortName = = \<* ReceivePort*\>* *。 メッセージの種類は、静的な確認の場合、 **StaticAck**です。  
+    >  受信確認をサブスクライブする送信ポートを作成する必要がありますか、ACK は、サブスクリプションが見つからなかったため、一時停止状態で表示されます。 送信ポートで受信確認をサブスクライブする場合は、たとえば、フィルターを使用して**BTS です。MessageType = = \< *MessageType* \>** と**BTS です。ReceivePortName = = \< *ReceivePort*\>**です。 メッセージの種類は、静的な確認の場合、 **StaticAck**です。  
   
 7.  **[OK]**をクリックします。  
   

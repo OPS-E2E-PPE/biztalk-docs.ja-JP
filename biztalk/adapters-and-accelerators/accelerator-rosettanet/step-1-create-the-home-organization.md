@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 42f0a645553a933a99f408036754a1d70b1dda47
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-1-create-the-home-organization"></a>手順 1: ホーム組織を作成します。
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用してホーム組織を作成します。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|型**ホーム**です。|  
-    |**[GBI]**|型**123456789**です。|  
+    |**GBI**|型**123456789**です。|  
     |**ホーム組織の分類**|選択**製造元**ドロップダウン リストからです。|  
   
 3.  **新しいホーム組織のプロパティ** ダイアログ ボックスで、**連絡先のプロパティ** タブで、次の操作します。  

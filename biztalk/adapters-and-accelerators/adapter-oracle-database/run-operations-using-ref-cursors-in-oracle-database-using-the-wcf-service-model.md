@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: cb527a4451388475ce69a5321d0d05616fc8afde
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースでの操作を使用して REF CURSOR の実行します。
 REF CURSOR は、Oracle データベースに結果セットへのポインターを表す Oracle PL/SQL データ型です。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]プロシージャ、関数、およびパッケージ内の REF CURSOR パラメーターをサポートしています。 REF CURSOR パラメーターには、厳密に型指定または厳密に型指定されたプロシージャまたは関数の宣言方法に応じてを指定できます。 REF CURSOR パラメーターを表現する方法の詳細について、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[REF CURSOR のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)です。次の表では、WCF サービス モデルでの REF CURSOR パラメーターを表現する方法をまとめたものです。  

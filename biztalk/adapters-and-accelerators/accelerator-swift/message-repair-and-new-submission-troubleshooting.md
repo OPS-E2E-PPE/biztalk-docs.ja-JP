@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6d341a7f03c70e1ddcd242d7804b162338798e94
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>Message Repair and 新しい送信のトラブルシューティング
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>エンベロープ スキーマが展開されていない場合は、修復されたメッセージを送信することはできません。  
@@ -64,7 +64,7 @@ ms.lasthandoff: 11/28/2017
 ### <a name="symptom"></a>現象  
  MRSR で修復の受信トレイでメッセージを開いたときに、ポップアップで、次のエラー メッセージが表示されます。  
   
- "ログイン 'A4SWIFT' で要求されたデータベースを開くことができません。 ログインに失敗しました. ユーザー ' NT authority \network SERVICE' はログインできませんでした。  
+ "ログイン 'A4SWIFT' で要求されたデータベースを開くことができません。 ログインに失敗しました。 ユーザー ' NT authority \network SERVICE' はログインできませんでした。  
   
 ### <a name="possible-cause"></a>考えられる原因  
  ログイン アカウント A4SWIFT_MRSR web サービスを実行する web アプリケーションは、ネットワーク サービス、ローカルではないか、ドメイン アカウントは、A4SWIFT Users グループです。  
@@ -74,7 +74,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-change-the-login-account-for-the-web-application-that-the-a4swiftmrsr-web-service-runs-under"></a>A4SWIFT_MRSR web サービスを実行する web アプリケーションのログイン アカウントを変更するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
+1.  をクリックして **開始**, 、 をポイント **すべてのプログラム**, 、 をポイント **管理ツール**, 、 をクリックし、 **インターネット インフォメーション サービス (IIS) マネージャー**します。  
   
 2.  IIS マネージャーで、展開、  ***\<サーバー名\>* (ローカル コンピューター)**  ノード、**アプリケーション プール**ノードおよび**Webサイト**ノード。 [Web サイト] ノードで、展開、 **Default Web Site**ノード。  
   

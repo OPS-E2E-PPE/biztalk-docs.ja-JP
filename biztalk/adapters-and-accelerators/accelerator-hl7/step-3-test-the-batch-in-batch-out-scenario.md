@@ -13,40 +13,40 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d84c34eb3019f83ecd28f30425a93708affcecb2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-3-test-the-batch-inbatch-out-scenario"></a>手順 3: テストのバッチ処理/シナリオをバッチ処理
 この手順では、バッチをテストでバッチをチュートリアルでのバッチ処理のテスト インスタンスの削除/フォルダーにメッセージをバッチ処理/です。 送信ポートを設定するにはメッセージを送信、受信ポートによって受信されます、および受信パイプラインが処理され、コピー先のフォルダーにドロップします。  
   
 ### <a name="to-test-the-batch-inbatch-out-scenario"></a>バッチのテストでシナリオをバッチ処理/  
   
-1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、   **\<*ドライブ*\>: \Batching Tutorial\Instances** フォルダーです。  
+1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Batching Tutorial\Instances**フォルダーです。  
   
 2.  右クリックして**BatchInBatchOut.txt**、クリックして**コピー**です。  
   
-3.  参照、   **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_ のアクセラレータ* * BTAHL7PickUp フォルダーです。  
+3.  参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7PickUp for**フォルダーです。  
   
 4.  フォルダーを右クリックし、をクリックして**貼り付け**です。  
   
 ### <a name="to-verify-the-results-of-the-batch-inbatch-out-tutorial"></a>バッチの結果を確認するでチュートリアルをバッチ処理/  
   
--   使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、   **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\ のアクセラレータSDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Drop * * フォルダーです。 短時間後に、バッチ メッセージおよび受信確認の処理済みのインスタンスを参照してください、フォルダーに表示する必要があります。 これらが表示されない場合は、確認、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ビューアで、エラー メッセージ。 各ファイル形式で別の名前を持つ必要があります\< *Guid*\>.txt です。  
+-   使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータTutorial\Tutorial_BTAHL7Drop**フォルダーです。 短時間後に、バッチ メッセージおよび受信確認の処理済みのインスタンスを参照してください、フォルダーに表示する必要があります。 これらが表示されない場合は、確認、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ビューアで、エラー メッセージ。 各ファイル形式で別の名前を持つ必要があります\< *Guid*\>.txt です。  
   
      最初のメッセージは、2 つのメッセージで構成されるバッチにする必要があります。 BizTalk Accelerator 用 HL7 (BTAHL7) は .txt ファイルでこれら 2 つのメッセージを順番に含まれます。 このバッチでは、FHS/FTS と BHS/BTS タグは含まれません。 バッチは、タグを含めるかすべて FHS/FTS および BHS/BTS、か、このバッチ メッセージ、FHS/FTS、BHS/BTS タグがないなどの必要があります。  
   
     |MSH.9|MSH.10|MSH.3|MSH.5|  
     |-----------|------------|-----------|-----------|  
-    |ADT ^ A03|000001|Tutorial_BatchSource|MESA_IS|  
-    |ADT ^ A03|000002|Tutorial_BatchSource|MESA_IS|  
+    |ADT^A03|000001|Tutorial_BatchSource|MESA_IS|  
+    |ADT^A03|000002|Tutorial_BatchSource|MESA_IS|  
   
      2 番目のメッセージは、バッチ メッセージと、次のフィールドへの応答で送信される 1 つのアプリケーションの受信確認をする必要があります。  
   
     |MSH.9|MSH.3|MSH.5|MSA.1|MSA.2|  
     |-----------|-----------|-----------|-----------|-----------|  
-    |ACK ^ A03 ^ ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
+    |ACK^A03^ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
   
 ## <a name="see-also"></a>参照  
  [パート 1: 断片化した受信バッチのシナリオ](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   

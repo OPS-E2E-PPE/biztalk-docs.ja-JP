@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2e9e799822c63cb78eda1b989cb157c71fd357d8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="general-biztalk-server-optimizations"></a>BizTalk Server の一般的な最適化
 BizTalk Server のパフォーマンスを向上させるのには、次の推奨事項を使用できます。 BizTalk Server をインストールして、構成後、このトピックで示した最適化が適用されます。  
@@ -98,9 +98,9 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
   
  Maxconnection プロパティを設定するときに、HTTP、HTTPS、web サイトの IP アドレスおよびポート番号を指定することができます。 その他の例は次のとおりです。  
   
- **\<アドレスの追加"https://www.contoso.com"maxconnection を = =「24」/\>**   
-**\<アドレスの追加"http://www.contoso.com:8080"maxconnection を = =「24」/\>**   
-**\<アドレスを追加 ="http://*IPAddress*"maxconnection =「24」/\>* * Web サービスの IIS と ASP.NET の設定をチューニングの詳細については、「ASP.NET 設定 HTTP アダプターのパフォーマンスに影響する」を参照してくださいセクション。[アダプターのパフォーマンスに影響する構成パラメーター](http://go.microsoft.com/fwlink/?LinkID=154200) (http://go.microsoft.com/fwlink/?LinkID=154200) BizTalk Server 2010 ヘルプの「します。  
+ **\<add address="https://www.contoso.com" maxconnection="24" /\>**   
+**\<add address="http://www.contoso.com:8080" maxconnection="24" /\>**   
+**\<add address="http://*IPAddress*" maxconnection="24" /\>**  For more information about tuning IIS and ASP.NET settings for Web services, see the "ASP.NET settings that can impact HTTP  Adapter performance" section of [Configuration Parameters that Affect Adapter Performance](http://go.microsoft.com/fwlink/?LinkID=154200) (http://go.microsoft.com/fwlink/?LinkID=154200) in BizTalk Server 2010 Help.  
   
 ## <a name="manage-aspnet-thread-usage-or-concurrently-executing-requests-for-web-applications-that-can-host--isolated-received-locations-back-end-web-services-and-wcf-services"></a>ASP.NET スレッドの使用状況を管理または受信場所、バックエンド Web サービスと WCF サービスをホストする Web アプリケーションに対する要求を同時に実行される分離  
  ワーカーと I/O スレッド (IIS 7.5、およびクラシック モードの IIS 7.0) または同時に要求を実行する (IIS 7.5 および 7.0 統合モード) の ASP.NET Web アプリケーションの受信場所、バックエンド Web サービスと WCF サービス ホストを分離する数の数次の条件を変更する必要があります。  
@@ -109,7 +109,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
   
 -   値です。  
   
-    -   **ASP.NET アプリ v4.0.30319 \Request Wait Time**または**ASP.NET アプリ v4.0.30319 \Request 実行時間**パフォーマンス カウンターが異常に高いです。  
+    -   **ASP.NET Apps v4.0.30319 \Request Wait Time** or **ASP.NET Apps v4.0.30319 \Request Execution Time** performance counters is unusually high.  
   
     -   **ASP.NET アプリ v2.0.50727\Request Wait Time**または**ASP.NET アプリ v2.0.50727\Request 実行時間**パフォーマンス カウンターが異常に高いです。  
   
@@ -156,7 +156,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
 > [!NOTE]  
 >  この設定はグローバルであり、個々 のアプリケーション プールまたはアプリケーションに対しては変更できません。  
   
-1.  をクリックして**開始**、 をクリックして**実行**、型**regedit.exe**、順にクリック**ok**レジストリ エディターを起動します。  
+1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **regedit.exe**, 、 をクリックし、 **ok** レジストリ エディターを起動します。  
   
 2.  移動**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0**  
   
@@ -201,7 +201,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
 > [!NOTE]  
 >  この設定はグローバルであり、個々 のアプリケーション プールまたはアプリケーションに対しては変更できません。  
   
-1.  をクリックして**開始**、 をクリックして**実行**、型**regedit.exe**、順にクリック**ok**レジストリ エディターを起動します。  
+1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **regedit.exe**, 、 をクリックし、 **ok** レジストリ エディターを起動します。  
   
 2.  移動**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0**です。  
   

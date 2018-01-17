@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0f2fdc186e93bd182b3021a3ef8fc258cee59923
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="verifying-a-message"></a>メッセージの検証
 このセクションでは、修復されましたが、メッセージを確認する方法について説明します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  [ホーム] ウィンドウ**ドキュメント**です。  
   
-3.  ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして  **\<*部門名*\>_Verifier * *。  
+3.  ドキュメント ウィンドウで、**ドキュメント ライブラリ**をクリックして **\<*部門名*\>_Verifier**です。  
   
 4.  確認してください ウィンドウで、をクリックして**受信トレイ**です。  
   

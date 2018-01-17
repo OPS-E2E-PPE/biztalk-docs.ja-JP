@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a8811f1dd056ca5a4ea4582d593af30e2ffc879f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a>A4SWIFT エンベロープ スキーマを展開します。
 Message Repair and New Submission を設定するときに、プロジェクトのスキーマでエンベロープ スキーマを含める必要があります。 エンベロープ スキーマで、EnvelopeMT103.xsd などが MRSR サイトへの書き込みに必要です。  
@@ -47,7 +47,7 @@ Message Repair and New Submission を設定するときに、プロジェクト�
   
 3.  [参照の追加] ダイアログ ボックス、**参照**タグ。  
   
-4.  コンポーネントの選択 ダイアログ ボックスで、開く、**ファイルの場所**ドロップダウン リスト。 移動 ***\<ドライブ\>*: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\Assemblies**です。 選択**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**クリックして、アセンブリの一覧から**追加**です。  
+4.  コンポーネントの選択 ダイアログ ボックスで、開く、**ファイルの場所**ドロップダウン リスト。 移動 ***\<ドライブ\>*:\Program \microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\Assemblies**です。 選択**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**クリックして、アセンブリの一覧から**追加**です。  
   
 5.  **参照の追加**ダイアログ ボックスで、をクリックして**OK**です。  
   
@@ -62,8 +62,8 @@ Message Repair and New Submission を設定するときに、プロジェクト�
   
 8.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、**追加**、クリックして**既存項目の追加**です。  
   
-9. 既存項目の追加 ダイアログ ボックスで、Message Repair and New Submission の機能を使用する場合、**ファイルの場所**ドロップダウン ボックスに移動  **\<*ドライブ*\>: \Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Unparsed メッセージ * *。 選択**EnvelopeUnparsedMessage.xsd**、クリックして**追加**です。  
+9. 既存項目の追加 ダイアログ ボックスで、Message Repair and New Submission の機能を使用する場合、**ファイルの場所**ドロップダウン ボックスに移動 **\<*ドライブ*\>: \Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Unparsed メッセージ**です。 選択**EnvelopeUnparsedMessage.xsd**、クリックして**追加**です。  
   
-10. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックして**ビルド**です。  
+10. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックし、 **ビルド**します。  
   
-11. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックして**展開**です。
+11. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックし、 **展開**します。
