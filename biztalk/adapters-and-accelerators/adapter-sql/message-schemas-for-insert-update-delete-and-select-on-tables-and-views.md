@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 73270b3d096a8d72de5b339835737cc74d264c9c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="message-schemas-for-insert-update-delete-and-select-operations-on-tables-and-views"></a>メッセージ スキーマの挿入、更新、削除、およびテーブルおよびビューの操作の選択
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] Insert、Update、Delete、および Select 操作の各テーブルと、SQL Server データベースのビューを表示します。 これらの操作は、WHERE 句で修飾された適切な SQL ステートメントを実行します。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]これらの操作で厳密に型指定されたレコードとレコード セットを使用します。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/28/2017
 |応答を選択します。|`<SelectResponse  xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <SelectResult>     <[TABLE_NAME]>       <[FIELD1_NAME]>[value1]</[FIELD1_NAME]>       <[FIELD2_NAME]>[value2]</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </SelectResult> <SelectResponse>`|SELECT クエリによって生成される厳密に型指定された結果セットです。|--|  
 |Update|`<SelectResponse  xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <SelectResult>     <[TABLE_NAME]>       <[FIELD1_NAME]>[value1]</[FIELD1_NAME]>       <[FIELD2_NAME]>[value2]</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </SelectResult> </SelectResponse>`<br /><br /> `<Update xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <RowPair>       <After>         <[FIELD1_NAME]>[value1]</[FIELD1_NAME]>         <[FIELD2_NAME]>[value2]</[FIELD2_NAME]>         …       </After>       <Before>         <[FIELD1_NAME]>[value3]</[FIELD1_NAME]>         <[FIELD2_NAME]>[value4]</[FIELD2_NAME]>         …       </Before>     </RowPair>   </Rows> </Update>`|入力としてレコードのペアの配列を取得します。 各レコードのペアは、厳密に型指定された 2 つのレコードのコレクションを示します。<br /><br /> まず記録 (で、`<After>`要素) を更新する必要がある新しい値に対応しています。<br /><br /> 2 番目のレコード (で、 `<Before>`)、行の古い値に対応しています。|`UPDATE [TABLE_NAME] SET [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, … WHERE [FIELD1_NAME] = value3, [FIELD2_NAME] = value4, …;`|  
 |更新の応答|`<UpdateResponse xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <UpdateResult>[rows updated]</UpdateResult> </UpdateResponse>`|更新された行の数が返される、 **UpdateResult**要素。|--|  
-|DELETE|`<Delete xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <[TABLE_NAME]>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </Rows> </Delete>`|--|`DELETE FROM [TABLE_NAME] WHERE [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, …;`|  
+|Del|`<Delete xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <[TABLE_NAME]>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </Rows> </Delete>`|--|`DELETE FROM [TABLE_NAME] WHERE [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, …;`|  
 |応答を削除します。|`<DeleteResponse xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <DeleteResult>[rows deleted]</DeleteResult> </DeleteResponse>`|削除された行の数が返される、 **DeleteResult**要素。|--|  
   
  [バージョン]、メッセージのバージョン文字列を =たとえば、http://schemas.microsoft.com/Sql/2008/05 です。  
@@ -57,14 +57,14 @@ ms.lasthandoff: 11/28/2017
   
 |操作|メッセージのアクション|例|  
 |---------------|--------------------|-------------|  
-|Insert|TableOp/挿入/[スキーマ]/[TABLE_NAME]|TableOp/挿入/dbo/従業員|  
-|応答を挿入します。|TableOp/挿入/[スキーマ]/[TABLE_NAME]/応答|TableOp/挿入/dbo/従業員/応答|  
-|Select|TableOp と選択/[スキーマ]/[TABLE_NAME]|TableOp を選択して、dbo/従業員|  
-|応答を選択します。|TableOp と選択/[スキーマ]/[TABLE_NAME]/応答|TableOp/選択/dbo/従業員/応答|  
-|Update|TableOp/更新/[スキーマ]/[TABLE_NAME]|TableOp/更新/dbo/従業員|  
-|更新の応答|TableOp/更新/[スキーマ]/[TABLE_NAME]/応答|TableOp/更新/dbo/従業員/応答|  
-|DELETE|TableOp/削除/[スキーマ]/[TABLE_NAME]|TableOp/削除/dbo/従業員|  
-|応答を削除します。|TableOp/削除/[スキーマ]/[TABLE_NAME]/応答|TableOp/削除/dbo/従業員/応答|  
+|Insert|TableOp/挿入/[スキーマ]/[TABLE_NAME]|TableOp/Insert/dbo/Employee|  
+|応答を挿入します。|TableOp/挿入/[スキーマ]/[TABLE_NAME]/応答|TableOp/Insert/dbo/Employee/response|  
+|Select|TableOp と選択/[スキーマ]/[TABLE_NAME]|TableOp/Select/dbo/Employee|  
+|応答を選択します。|TableOp と選択/[スキーマ]/[TABLE_NAME]/応答|TableOp/Select/dbo/Employee/response|  
+|Update|TableOp/更新/[スキーマ]/[TABLE_NAME]|TableOp/Update/dbo/Employee|  
+|更新の応答|TableOp/更新/[スキーマ]/[TABLE_NAME]/応答|TableOp/Update/dbo/Employee/response|  
+|Del|TableOp/削除/[スキーマ]/[TABLE_NAME]|TableOp/Delete/dbo/Employee|  
+|応答を削除します。|TableOp/削除/[スキーマ]/[TABLE_NAME]/応答|TableOp/Delete/dbo/Employee/response|  
   
  [スキーマ]; SQL Server のコレクション アイテムを =たとえば、dbo します。  
   

@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: bc89b26d0eee970268d5e9084cd0827d3100fd7b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="deploying-a4swift-schemas"></a>A4SWIFT のスキーマを展開します。
 交換する SWIFT メッセージのスキーマを展開する必要があります。  
@@ -30,9 +30,9 @@ ms.lasthandoff: 11/28/2017
   
  次のスキーマを展開します。  
   
--   SWIFT 基本 Types.xsd  
+-   SWIFT Base Types.xsd  
   
--   SWIFT の一般的なデータ Types.xsd  
+-   SWIFT Common Data Types.xsd  
   
 -   メッセージ型、MT103.xsd などの特定のスキーマ  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  Visual Studio コマンド プロンプトを起動します。  
   
-8.  Visual Studio コマンド プロンプトを参照  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT * *。  
+8.  Visual Studio コマンド プロンプトを参照 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT**です。  
   
 9. コマンド プロンプトで次のように入力します。 **sn – k key.snk**、ENTER キーを押します。 キーのペアが key.snk に書き込まれたことを示すコマンド プロンプト ウィンドウで、メッセージが表示されることを確認します。  
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 12. 右側のペインで、**プロパティ ページ**を下にスクロール ダイアログ ボックスで、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、をクリックし、省略記号ボタン () ボタンをクリックします。  
   
-13. **アセンブリ キー ファイル** ダイアログ ボックスを参照  **\<*ドライブ*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]、クリックして**key.snk**、クリックして**開く**です。  
+13. **アセンブリ キー ファイル** ダイアログ ボックスを参照 **\<*ドライブ*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]、クリックして**key.snk**、クリックして**開く**です。  
   
 14. **プロパティ ページ**ダイアログ ボックスで、をクリックして**OK**変更を保存します。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  ソリューション エクスプ ローラーの Visual Studio でプロジェクトを開きます。  
   
-2.  プロジェクトを右クリックし、順にポイント**追加**、クリックして**既存項目の**します。  
+2.  プロジェクトを右クリックし、順にポイント **追加**, 、クリックして **既存項目の**です。  
   
 3.  **既存項目の追加** ダイアログ ボックスで、:\\**files \microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Base スキーマ**です。 選択、 **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**スキーマ、およびクリック**追加**です。  
   
@@ -82,6 +82,6 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  ソリューション エクスプ ローラーで示すように、A4SWIFT は、プロジェクトのスキーマを追加します。  
   
-6.  ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックして**ビルド**です。  
+6.  ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックし、 **ビルド**します。  
   
-7.  ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックして**展開**です。
+7.  ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックし、 **展開**します。

@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca2bc3aa739bf6914ea9943d84d58d44b1506323
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>FileAct を構成し、アダプターの対話
 によって使用されるさまざまなアイテムを構成、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]ランタイム。 
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  **Microsoft BizTalk FileAct およびアダプター構成の対話**ウィザードに移動して**概要**です。 左のペインで選択**ランタイム**アダプターのランタイム コンポーネントを構成します。  
   
-2.  在 **運行時配置** 中，在 **帳戶** 下，選擇省略號以進入存儲轉發模式的COM加配置。  
+2.  **のランタイム構成** **アカウント**COM + ストア アンド フォワード モードの構成を入力する省略記号 [...] を選択します。  
   
 3.  **ユーザーの資格情報**、ユーザー名を入力 (で、 *domain \user name*形式) と COM + 構成で使用するアカウントのパスワード。 **[OK]** を選択します。  
   
