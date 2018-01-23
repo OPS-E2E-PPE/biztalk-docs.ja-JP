@@ -1,59 +1,57 @@
 ---
-title: "不完全なアクティビティ インスタンスを解決する方法 |Microsoft ドキュメント"
+title: "不完全なアクティビティ インスタンスを解決するには |Microsoft ドキュメント"
+description: "BAM アクティビティ インスタンスが BizTalk Server で BAMPrimaryImport データベースをバックアップした後アクティブなまま"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 01/17/2018
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- instances, incomplete [BAM]
-- restoring, BAM
-- Primary Import database [BAM], incomplete instances
-- restoring [BAM], Primary Import database
-- Primary Import database [BAM], restoring
-- BAM, restoring
 ms.assetid: 8adbcb66-58ad-42c5-ba16-7dc07572099e
 caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81df9ee8b004a2dbd4a672eecb4f34894421a432
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 616ba096062da7ede8d78122e5a6faaca2befdc4
+ms.sourcegitcommit: 20d33d8b74bf129a8d1a506ac4a1ad960184966d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/18/2018
 ---
-# <a name="how-to-resolve-incomplete-activity-instances"></a><span data-ttu-id="ffa6c-102">不完全なアクティビティ インスタンスを解決する方法</span><span class="sxs-lookup"><span data-stu-id="ffa6c-102">How to Resolve Incomplete Activity Instances</span></span>
-<span data-ttu-id="ffa6c-103">BAM では、不完全なアクティビティ インスタンスのデータを格納特殊な*アクティブ インスタンス*BAMPrimaryImport データベースのテーブルにします。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-103">BAM stores data for incomplete activity instances in a special *active instance* table in the BAMPrimaryImport database.</span></span>  
+# <a name="resolve-incomplete-bam-activity-instances---biztalk-server"></a><span data-ttu-id="94b69-103">不完全な BAM アクティビティ インスタンスを解決するには、BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="94b69-103">Resolve incomplete BAM activity instances - BizTalk Server</span></span>
+<span data-ttu-id="94b69-104">BAM では、不完全なアクティビティ インスタンスのデータを格納特殊な *アクティブなインスタンス* BAMPrimaryImport データベースのテーブルです。</span><span class="sxs-lookup"><span data-stu-id="94b69-104">BAM stores data for incomplete activity instances in a special *active instance* table in the BAMPrimaryImport database.</span></span>  
   
- <span data-ttu-id="ffa6c-104">インスタンス レコードの一部が開始し、BAMPrimaryImport データベースの最後のバックアップの前に、バックアップ後に、これらのレコードはアクティブ インスタンス テーブルに残ります。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-104">If some instance records were started before the last backup of the BAMPrimaryImport database but completed after the backup, those instance records remain in an active instance table.</span></span> <span data-ttu-id="ffa6c-105">これは、BAMPrimaryImport データベースが復元された後、これらのインスタンスの完了レコードが失われるからです。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-105">This is because after the BAMPrimaryImport database is restored, the completion records for these instances are lost.</span></span>  
+ <span data-ttu-id="94b69-105">インスタンス レコードの一部では、BAMPrimaryImport データベースの最後のバックアップする前に開始は、バックアップ後に完了することが、これらのレコードはアクティブ インスタンス テーブルに残ります。</span><span class="sxs-lookup"><span data-stu-id="94b69-105">If some instance records were started before the last backup of the BAMPrimaryImport database but completed after the backup, those instance records remain in an active instance table.</span></span> <span data-ttu-id="94b69-106">これは、BAMPrimaryImport データベースが復元された後、これらのインスタンスの完了レコードが失われるからです。</span><span class="sxs-lookup"><span data-stu-id="94b69-106">This is because after the BAMPrimaryImport database is restored, the completion records for these instances are lost.</span></span>  
   
- <span data-ttu-id="ffa6c-106">アクティブ インスタンス テーブルに残ったレコードが、BAM の正常な機能を阻害することはありませんが、これらのレコードは "完了" としてマークし、アクティブ インスタンス テーブルから取り除くことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-106">Although the records in the active instance table do not prevent BAM from functioning properly, we recommend that you mark these records as "completed," and then move them out of the active instance table.</span></span>  
+ <span data-ttu-id="94b69-107">アクティブ インスタンス テーブルに残ったレコードが、BAM の正常な機能を阻害することはありませんが、これらのレコードは "完了" としてマークし、アクティブ インスタンス テーブルから取り除くことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="94b69-107">Although the records in the active instance table do not prevent BAM from functioning properly, we recommend that you mark these records as "completed," and then move them out of the active instance table.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="ffa6c-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="ffa6c-107">Prerequisites</span></span>  
- <span data-ttu-id="ffa6c-108">ここで示す手順を実行するには、BizTalk Server Administrators グループのメンバーとしてログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-108">You must be logged on as a member of the BizTalk Server Administrators group to perform this procedure.</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="94b69-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="94b69-108">Prerequisites</span></span>  
+<span data-ttu-id="94b69-109">BizTalk Server 管理者グループのメンバーとしてサインインします。</span><span class="sxs-lookup"><span data-stu-id="94b69-109">Sign in as a member of the BizTalk Server Administrators group.</span></span>  
   
-### <a name="to-generate-a-list-of-incomplete-activityids-for-an-activity"></a><span data-ttu-id="ffa6c-109">特定のアクティビティに対する不完全な ActivityID を検索するには</span><span class="sxs-lookup"><span data-stu-id="ffa6c-109">To generate a list of incomplete ActivityIDs for an activity</span></span>  
+## <a name="create-a-list-of-incomplete-activityids"></a><span data-ttu-id="94b69-110">不完全な activityid 検索リストを作成します。</span><span class="sxs-lookup"><span data-stu-id="94b69-110">Create a list of incomplete ActivityIDs</span></span> 
   
-1.  <span data-ttu-id="ffa6c-110">BAMPrimaryImport データベースに対し、次のクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-110">Run the following query against the BAMPrimaryImport database:</span></span>  
+1.  <span data-ttu-id="94b69-111">BAMPrimaryImport データベースに対し、次のクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="94b69-111">Run the following query against the BAMPrimaryImport database:</span></span>  
   
     ```  
     Select ActivityID from bam_<ActivityName>_Active where IsComplete = 0  
     ```  
   
-2.  <span data-ttu-id="ffa6c-111">外部システムからデータがアクティビティのインスタンスが実際に完了したことを示している場合は、インスタンスを手動で完了する次のクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-111">If data from external systems indicates that the activity instance is in fact completed, run the following query to manually complete the instance:</span></span>  
+2.  <span data-ttu-id="94b69-112">外部システムからデータには、アクティビティ インスタンスが実際に完了したことが示されている場合は、インスタンスを手動で完了するには、以下のクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="94b69-112">If data from external systems indicates that the activity instance is in fact completed, run the following query to manually complete the instance:</span></span>  
   
     ```  
+    begin transaction
     exec bam_<ActivityName>_PrimaryImport @ActivityID=N'<ActivityID>', @IsStartNew=0, @IsComplete=1  
+    commit transaction
     ```  
   
 > [!NOTE]
->  <span data-ttu-id="ffa6c-112">ActivityID を ContinuationID に置き換えることにより、同様の手順で、継続アクティビティを完了させることができます。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-112">You can follow the same process to complete a continuation activity by replacing ActivityID with ContinuationID.</span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="ffa6c-113">アクティブな継続トレースがメイン トレースに存在した場合、メイン トレースは、その継続トレースが完了するまでアクティブな状態のままとなります。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-113">If the main trace has any active continuation traces, it remains active until the continuation traces are completed.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="ffa6c-114">参照</span><span class="sxs-lookup"><span data-stu-id="ffa6c-114">See Also</span></span>  
- [<span data-ttu-id="ffa6c-115">バックアップおよび BAM を復元します。</span><span class="sxs-lookup"><span data-stu-id="ffa6c-115">Backing Up and Restoring BAM</span></span>](../core/backing-up-and-restoring-bam.md)
+>  <span data-ttu-id="94b69-113">置き換えることにより、継続アクティビティを完了する同じ処理を行うことができる`ActivityID`で`ContinuationID`です。</span><span class="sxs-lookup"><span data-stu-id="94b69-113">You can follow the same process to complete a continuation activity by replacing `ActivityID` with `ContinuationID`.</span></span>  
+> 
+>  <span data-ttu-id="94b69-114">アクティブな継続トレースがメイン トレースに存在した場合、メイン トレースは、その継続トレースが完了するまでアクティブな状態のままとなります。</span><span class="sxs-lookup"><span data-stu-id="94b69-114">If the main trace has any active continuation traces, it remains active until the continuation traces are completed.</span></span>  
+
+## <a name="remove-incomplete-instances"></a><span data-ttu-id="94b69-115">不完全なインスタンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="94b69-115">Remove incomplete instances</span></span>
+<span data-ttu-id="94b69-116">不完全なアクティビティ インスタンスは、カスタムの SQL スクリプトを使用して、BAMPrimaryImport データベースから削除することもできます。</span><span class="sxs-lookup"><span data-stu-id="94b69-116">You can also remove incomplete activity instances from the BAMPrimaryImport database using a custom SQL script.</span></span> <span data-ttu-id="94b69-117">参照してください[不完全なアクティビティ インスタンスを削除する](how-to-remove-incomplete-activity-instances.md)サンプルについてはします。</span><span class="sxs-lookup"><span data-stu-id="94b69-117">See [Remove incomplete activity instances](how-to-remove-incomplete-activity-instances.md) for a sample.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="94b69-118">参照</span><span class="sxs-lookup"><span data-stu-id="94b69-118">See Also</span></span>  
+ [<span data-ttu-id="94b69-119">BAM のバックアップと復元</span><span class="sxs-lookup"><span data-stu-id="94b69-119">Backing Up and Restoring BAM</span></span>](../core/backing-up-and-restoring-bam.md)
