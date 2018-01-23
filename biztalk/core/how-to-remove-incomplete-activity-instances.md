@@ -1,7 +1,8 @@
 ---
-title: "不完全なアクティビティ インスタンスを削除する方法 |Microsoft ドキュメント"
+title: "不完全なアクティビティ インスタンスの削除 |Microsoft ドキュメント"
+description: "BizTalk Server で BAM プライマリ インポート データベースから不完全なインスタンスを削除するカスタム RemoveDanglingInstances SQL スクリプトを実行します。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 01/18/2018
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,13 +13,13 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2809fd4fcc1d94a96b158ffa46c3e217084a905d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 542d92b838b1638a2d018c6325d4c40467545c42
+ms.sourcegitcommit: 9e7a7dc5544d30d4523c0b3cdaa59f4890e7a4e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="how-to-remove-incomplete-activity-instances"></a>不完全なアクティビティ インスタンスを削除する方法
+# <a name="remove-incomplete-activity-instances"></a>不完全なアクティビティ インスタンスを削除します。
 BAM 定義ファイルを展開すると、定義ファイルで定義された各アクティビティに対し、5 個のテーブルが BAM プライマリ インポート データベースに作成されます。 作成されるテーブルは次のとおりです。  
   
 -   bam_`ActivityName`_Active  
@@ -33,49 +34,45 @@ BAM 定義ファイルを展開すると、定義ファイルで定義された�
   
  `ActivityName` は、ユーザーが定義したアクティビティの名前になります。  
   
- 通常の実行では、不完全なデータは bam_`ActivityName`_Active テーブルに残ります。 データにリレーションシップおよび参照があるかどうかは、データがあります、bam で\_`ActivityName`_ActiveRelationships テーブル。  
+ 通常の実行では、不完全なデータは bam_`ActivityName`_Active テーブルに残ります。 データにリレーションシップおよび参照があるかどうかは、データがあります、bam で\_`ActivityName`_ActiveRelationships テーブルです。  
   
  Continuation を使用したアクティビティの追跡時には、アクティビティが不完全な状態で BAM データベースに残される場合があります。 このトピックの最後に示すストアド プロシージャ作成スクリプトを使用すると、不完全なレコードを削除するストアド プロシージャを作成できます。  
   
- ストアド プロシージャを作成するには、スクリプトをコピーしてから、SQL Server Management を使用して BAM プライマリ インポート データベースに対しスクリプトを実行します。 スクリプトは、という名前のストアド プロシージャを生成**RemoveDanglingInstances**データベースにします。  
+ ストアド プロシージャを作成するには、スクリプトをコピーしてから、SQL Server Management を使用して BAM プライマリ インポート データベースに対しスクリプトを実行します。 このスクリプトはという名前のストアド プロシージャを生成 **RemoveDanglingInstances** データベースにします。  
   
-### <a name="to-create-the-removedanglinginstances-stored-procedure"></a>RemoveDanglingInstances ストアド プロシージャを作成するには  
+## <a name="create-the-removedanglinginstances-stored-procedure"></a>RemoveDanglingInstances ストアド プロシージャを作成します。  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**をクリックして**Microsoft SQL Server 2008 SP1**または**Microsoft SQL Server 2008 R2**をクリックして**SQL Server Management Studio**です。  
+1.  開いている**SQL Server Management Studio**、SQL server に接続します。
   
-2.  **サーバーへの接続**ダイアログ ボックスでは、SQL server および適切な認証方法を選択し、をクリックして**接続**です。  
+2.  サーバー名を展開し、 **データベース**, 、BAM プライマリ インポート データベースを選択します。  
   
-3.  サーバー名を展開し、**データベース**、BAM プライマリ インポート データベースを選択します。  
+3.  **[新しいクエリ]**をクリックします。  
   
-4.  **[新しいクエリ]**をクリックします。  
+4.  ストアド プロシージャ作成スクリプトをコピーし、クエリ ペインに貼り付けます。  
   
-5.  ストアド プロシージャ作成スクリプトをコピーし、右側のペインに貼り付けます。  
+5.  **実行**スクリプト。 作成されたストアド プロシージャは、dbo としてストアド プロシージャの一覧で表示できます。RemoveDanglingInstances します。  
   
-6.  をクリックして**Execute**スクリプトを実行します。 結果として得られるストアド プロシージャは、dbo としてストアド プロシージャの一覧で表示できます。RemoveDanglingInstances です。  
+## <a name="remove-incomplete-activity-instances"></a>不完全なアクティビティ インスタンスを削除します。  
   
-### <a name="to-remove-incomplete-activity-instances"></a>不完全なアクティビティ インスタンスを削除するには  
+1.  開いている**SQL Server Management Studio**、SQL server に接続します。
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**をクリックして**Microsoft SQL Server 2008 SP1**または**Microsoft SQL Server 2008 R2**をクリックして**SQL Server Management Studio**です。  
+2.  サーバー名を展開し、 **データベース**, 、BAM プライマリ インポート データベースを選択します。  
   
-2.  **サーバーへの接続**ダイアログ ボックスでは、SQL server および適切な認証方法を選択し、をクリックして**接続**です。  
+3.  **[新しいクエリ]**をクリックします。  
   
-3.  サーバー名を展開し、**データベース**、BAM プライマリ インポート データベースを選択します。  
+4.  クエリ ウィンドウで、次のように入力します。`exec RemoveDanglingInstances`および実行する削除操作に適切なパラメーターです。 たとえば、注文書アクティビティの不完全なインスタンスをすべて削除するには、「`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`」と入力します。  
   
-4.  **[新しいクエリ]**をクリックします。  
-  
-5.  右側のウィンドウで次のように入力します。`exec RemoveDanglingInstances`および実行する削除操作に適切なパラメーターです。 たとえば、注文書アクティビティの不完全なインスタンスをすべて削除するには、「`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`」と入力します。  
-  
-6.  をクリックして**Execute**スクリプトを実行します。  
+5.  **実行**スクリプト。  
   
 ## <a name="removedanglinginstances-usage-examples"></a>RemoveDanglingInstances の使用例  
  ストアド プロシージャには、4 つのパラメーターが表示されることができます。  
   
 |パラメーター|Description|  
 |---------------|-----------------|  
-|@ActivityName nvarchar(128)|削除する不完全なアクティビティ インスタンスの名前を指定します。|  
-|@ActivityId nvarchar(128)|(省略可能) 指定したインスタンス識別子を持つ未解決のインスタンスだけをストアド プロシージャで削除するように指定します。|  
-|@DateThresholddatetime|(省略可能)すべてのアクティブなインスタンスされている古いアクティブなテーブルにあることを指定します (等しくないと古い、古いのみ)、指定された日付よりも削除されます。|  
-|@NewTableExtensionnvarchar (30)|(省略可能) ストアド プロシージャで、指定された拡張子を既存のアクティビティ テーブルに連結して新しいテーブルを 3 つ作成するように指定します。<br /><br /> 結果のテーブルになります。<br /><br /> bam_ActivityName_Active_\<拡張機能\><br /><br /> bam_ActivityName_ActiveRelationships_\<拡張機能\><br /><br /> bam_ActivityName_Continuations_\<拡張機能\><br /><br /> 不完全なインスタンスは、データベースから削除される代わりに、これらの新しいテーブルに移動されます。<br /><br /> これらのテーブルが既に存在する場合は、再利用されます。存在しない場合は作成されます。 **重要:**ストアド プロシージャ、テーブルが既に存在しない場合、これらのスキーマが作成された場合に使用されるものと一致する前提としています。 スキーマが一致しない場合は、ストアド プロシージャはレコードを挿入できず、削除操作が失敗します。|  
+|@ActivityName nvarchar (128)|削除する不完全なアクティビティ インスタンスの名前を指定します。|  
+|@ActivityId nvarchar (128)|(省略可能) 指定したインスタンス識別子を持つ未解決のインスタンスだけをストアド プロシージャで削除するように指定します。|  
+|@DateThreshold datetime|(省略可能)古いアクティブなテーブルでのアクティブなすべてのインスタンスを指定します (等しくないと古い、古いのみ)、指定された日付よりも削除されます。|  
+|@NewTableExtension nvarchar (30)|(省略可能) ストアド プロシージャで、指定された拡張子を既存のアクティビティ テーブルに連結して新しいテーブルを 3 つ作成するように指定します。<br /><br /> 結果のテーブルになります。<br /><br /> bam_ActivityName_Active_\<拡張機能\><br /><br /> bam_ActivityName_ActiveRelationships_\<拡張機能\><br /><br /> bam_ActivityName_Continuations_\<Extension\><br /><br /> 不完全なインスタンスは、データベースから削除される代わりに、これらの新しいテーブルに移動されます。<br /><br /> これらのテーブルが既に存在する場合は、再利用されます。存在しない場合は作成されます。 **重要:**  ストアド プロシージャ、テーブルが既に存在しない場合、そのスキーマが作成された場合に使用されるものと一致するいると想定しています。 スキーマが一致しない場合は、ストアド プロシージャはレコードを挿入できず、削除操作が失敗します。|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   
@@ -235,6 +232,9 @@ AS
     COMMIT TRAN      
 GO  
 ```  
-  
+
+## <a name="another-method-of-resolving-incomplete-instances"></a>不完全なインスタンスを解決する別の方法
+BAMPrimaryImport データベースからの不完全なアクティビティ インスタンスは、SQL クエリを使用しても解決できます。 参照してください[不完全なアクティビティ インスタンスを解決するには](how-to-resolve-incomplete-activity-instances.md)します。
+
 ## <a name="see-also"></a>参照  
  [BAM データベースの管理](../core/managing-bam-databases.md)
