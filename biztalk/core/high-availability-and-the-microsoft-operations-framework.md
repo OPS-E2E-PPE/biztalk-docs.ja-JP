@@ -1,5 +1,5 @@
 ---
-title: "高可用性と、Microsoft Operations Framework |Microsoft ドキュメント"
+title: "高可用性と Microsoft Operations Framework |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,33 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- high availability, managing
-- service management functions (SMFs)
-- service continuity management
-- jobs, scheduling
-- MOF, high availability
-- change management
-- MOF, process model
-- high availability, MOF
 ms.assetid: 54d8bae3-b241-4371-b8fc-a9cbdca6b495
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8361875cf34f14118fb93818c78a6ca7d12a86f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1a06bdadb026617dc55ed40d03e0344584111a0c
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>高可用性と MOF
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に対する高可用性ソリューションを計画および実装する際、MOF (Microsoft Operations Framework) プロセス モデルを適用することにより、リリース ライフ サイクルのさまざまな段階で適切なプロセスを得ることができます。 高可用性に影響するすべてのライフ サイクル ステージをあらかじめ把握しておくことにより、可用性の問題に伴うインストール、メンテナンス、およびトラブルシューティングを、より円滑に行うことができます。  
+計画と可用性の高い Microsoft BizTalk Server ソリューションの実装を Microsoft Operations Framework (MOF) プロセス モデルを適用すると、リリース ライフ サイクルのさまざまな段階で適切なプロセスがあることを確認できます。 高可用性に影響するすべてのライフ サイクル ステージをあらかじめ把握しておくことにより、可用性の問題に伴うインストール、メンテナンス、およびトラブルシューティングを、より円滑に行うことができます。  
   
  このセクションでは、高可用性を実現するために必要な MOF プロセスについて考えていきます。  
   
 ## <a name="microsoft-operations-framework-process-model"></a>MOF プロセス モデル  
- MOF (Microsoft Operations Framework) とは、Microsoft の製品とテクノロジに基づいたミッション クリティカルなシステムの信頼性、可用性、保守性、および管理容易性を実現するための指針です。 運用上の指針は、ホワイト ペーパー、運用ガイド、評価ツール、ベスト プラクティス、ケース スタディ、テンプレート、サポート ツール、およびサービスの形態で提供されます。 これにより、分散された複雑な異種混合 IT 環境に伴う、要員、プロセス、技術、および管理の問題の解決を図ります。 Microsoft Operations Framework の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=31988](http://go.microsoft.com/fwlink/?LinkId=31988)です。  
+ [Microsoft Operations Framework (MOF)](https://technet.microsoft.com/solutionaccelerators/dd320379.aspx)をミッション クリティカルなシステムの信頼性、可用性、保守性、および Microsoft の製品およびテクノロジの管理の容易性を実現するためのガイダンスを提供. 運用上の指針は、ホワイト ペーパー、運用ガイド、評価ツール、ベスト プラクティス、ケース スタディ、テンプレート、サポート ツール、およびサービスの形態で提供されます。 これにより、分散された複雑な異種混合 IT 環境に伴う、要員、プロセス、技術、および管理の問題の解決を図ります。 
   
  企業にとって、MOF プロセス モデルには次のような利点があります。  
   
@@ -47,7 +38,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
  次の図は、高可用性を実現する上で考慮する必要のある MOF プロセスを示しています。  
   
- ![MOF プロセス](../core/media/tdi-highava-mof.gif "TDI_HighAva_MOF")  
+ ![MOF Processes](../core/media/tdi-highava-mof.gif "TDI_HighAva_MOF")  
   
 ## <a name="changing-quadrant"></a>変更領域  
  変更領域には、管理対象となる IT 環境への変更を見極め、レビューし、さらに、それを承認して実行に移す、というプロセスに必要な SMF (Service Management Function) が含まれます。 ソフトウェア、ハードウェア、ドキュメント、役割/責任の変更のほか、特定のプロセスや手順に対する変更も含まれます。  
@@ -58,8 +49,6 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  BizTalk Server 導入計画の一部として、変更管理プロセスでは次のような作業が考えられます。  
   
 -   パートナーまたは顧客とのサービス レベル契約に、一定水準の可用性、アップタイム、負荷処理の機能を約束する項目があるかどうかを確認します。  
-  
--   アップグレードする場合は[!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)]または[!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)]BizTalk Server に BizTalk Server の最小ハードウェア要件とサービス レベル契約から要件に、既存のハードウェアが満たしているかどうかを判断する必要があります。  
   
 -   ビジネス ニーズに合わせて、BizTalk Server データベースの最適なクラスター構成を確認します。 実行時の環境では、BizTalk 管理データベース、メッセージ ボックス データベース、追跡分析サービス データベース、BAM 分析データベース、BAM スター スキーマ データベース、BAM プライマリ インポート データベース、および BAM アーカイブ データベースへの書き込み処理が行われます。 したがって、これらのデータベースを障害から保護することが特に重要となります。当然、どのデータベースをクラスター化するかという判断において、より高い優先順位が付けられることになります。 その他のデータベースに対する書き込みは、ユーザーまたはツールによってのみ行われます。 メッセージ ボックス データベースについては、4 つのサーバー クラスターから成るアクティブ/アクティブ/アクティブ/パッシブ構成によって、必要なハードウェアを最小限に抑えることができます。  
   
@@ -72,7 +61,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 ### <a name="configuration-management"></a>構成管理  
  構成管理は、ソフトウェア、ハードウェア、ドキュメント、プロセス、手順など、変更管理プロセス下にある IT 環境のあらゆる構成要素のバージョンをすべて識別、管理、追跡するプロセスです。  
   
- 構成管理プロセスでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の高可用性ソリューションを具体的にどのように実現するかという詳細な計画を立てる必要があります。 ソリューションの作成に要した手順を記録しておくことも必要です。 大まかな手順としては、次のようなことが含まれます。  
+ 構成管理プロセス中には、BizTalk Server の高可用性ソリューションの実装に移動する方法の詳細な計画を作成する必要があります。 ソリューションの作成に要した手順を記録しておくことも必要です。 大まかな手順としては、次のようなことが含まれます。  
   
 -   ドメイン コントローラーで、BizTalk Server 環境で使用するドメイン グループおよびアカウントを作成する。  
   
@@ -82,7 +71,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   BizTalk Server 管理者が、マスター シークレット サーバー クラスターを構成する。  
   
--   BizTalk Server 管理者が、処理サーバー、受信サーバー、および送信サーバーに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールおよび構成する。  
+-   BizTalk Server 管理者は、インストールし、受信、およびサーバーの送信処理は、BizTalk Server を構成します。  
   
 -   BizTalk Server 管理者が、適切なサーバー上にホストを作成し、ホスト インスタンスをインストールすることによって可用性や処理能力の向上を図る。  
   
@@ -119,7 +108,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 ### <a name="service-continuity-management"></a>サービス継続性管理  
  サービス継続性管理機能の目的は、標準の可用性ソリューションでは対応できないような問題が発生したとしても、特定の IT サービスが顧客に価値を提供できるようにすることです。  
   
- サービス継続性機能の中に、お客様にも計画または計画外のダウンタイムが発生すると、期待されるサービスを提供し続けることを確認するために実装するには、どのような高可用性構成を確認する必要があります。 計画外のダウンタイムには、ハードウェア障害や自然災害などがあります。  
+ サービスの継続性機能の中に、お客様にも計画または計画外のダウンタイムが発生すると、期待されるサービスを提供できているかどうかを確認するために実装するには、どのような高可用性構成を確認する必要があります。 計画外のダウンタイムには、ハードウェア障害や自然災害などがあります。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server の高可用性を実現するサンプル シナリオ](../core/sample-biztalk-server-high-availability-scenarios.md)

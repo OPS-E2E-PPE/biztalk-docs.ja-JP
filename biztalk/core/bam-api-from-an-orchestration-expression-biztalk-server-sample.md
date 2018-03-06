@@ -1,5 +1,5 @@
 ---
-title: "オーケストレーションの式 (BizTalk Server サンプル) から BAM API を |Microsoft ドキュメント"
+title: "オーケストレーションの式のサンプルから BAM API を |Microsoft ドキュメント"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,26 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- orchestrations, examples
-- examples, BAM
-- examples, orchestrations
-- BAM, examples
 ms.assetid: 341bc333-9bfc-484c-b431-9a71f9188792
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3f78297b57dc2c9bc61d5996c49f7543ac64163
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 5413940eaba97e6f68d5e068e26625f320e6e817
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="bam-api-from-an-orchestration-expression-biztalk-server-sample"></a>オーケストレーション式からの BAM API (BizTalk Server サンプル)
-このサンプルをする方法。  
+このサンプルで示す方法。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションの式から BAM API を使用する。  
+-   BizTalk Server オーケストレーションの式から BAM API を使用します。  
   
 -   メッセージ内の繰り返し項目を個別のアクティビティ インスタンスとして追跡する。  
   
@@ -39,38 +34,35 @@ ms.lasthandoff: 12/01/2017
   
 |ファイル|Description|  
 |----------|-----------------|  
-|BamDefinition.xls|BAM 定義スタイル シートです。|  
+|BamDefinition.xls|BAM 定義スタイル シート。|  
 |BamDefinition.xml|BAM 定義。|  
-|BamFromExpression.btproj|[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 追跡ファイル プロジェクト。|  
-|BamFromExpression.sln|[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ソリューション。|  
+|BamFromExpression.btproj|Visual Studio プロジェクトのファイルを追跡します。|  
+|BamFromExpression.sln|Visual Studio のソリューションです。|  
 |Cleanup.bat|サンプルの展開解除を行うバッチ ファイル。|  
 |InputMessage.xml|入力メッセージ。|  
 |Orchestration1.odx|オーケストレーション。|  
 |PoSchema.xsd|注文書スキーマ。|  
-|PropertySchema.xsd|プロパティ スキーマ : |  
+|PropertySchema.xsd|プロパティ スキーマ :|  
 |Setup.bat|サンプルをコンパイルし、展開するバッチ ファイル。|  
 |QueryBam.sql|SQL スクリプト。|  
   
-## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- 次の手順を使用して追跡プロファイルを作成し、サンプルを実行して、結果を表示します。  
+## <a name="create-the-tracking-profile"></a>追跡プロファイルを作成します。  
   
-#### <a name="to-create-the-tracking-profile"></a>追跡プロファイルを作成するには  
+1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BAMFromExpression\Setup.bat です。 Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。  
   
-1.  コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BAMFromExpression\Setup.bat です。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。 Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。  
+2.  **プログラム** > **Microsoft BizTalk Server**を右クリックして**追跡プロファイル エディター**、および**を管理者として実行**.
   
-2.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**追跡プロファイル エディター**です。 使用している場合[!INCLUDE[btsWinVista](../includes/btswinvista-md.md)]または[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]を右クリックして**追跡プロファイル エディター**  をクリックし、**管理者として実行**です。  
+3.  左側のウィンドウで、 **追跡プロファイル エディター** ウィンドウで、をクリックして **ここをクリックして BAM アクティビティ定義をインポートする**です。  
   
-3.  左側のウィンドウで、**追跡プロファイル エディター**ウィンドウで、をクリックして**ここをクリックして、BAM アクティビティ定義をインポートする**です。  
+4.  **BAM アクティビティ定義名** のセクション、 **BAM アクティビティ定義のインポート** ダイアログ ボックスで、 **FromExpressionPo**, 、 をクリックし、 **OK**します。  
   
-4.  **BAM アクティビティ定義名**のセクションで、 **BAM アクティビティ定義のインポート**ダイアログ ボックスで、 **FromExpressionPo**、クリックして**[ok]**.  
+5.  右側のウィンドウで、 **追跡プロファイル エディター** ウィンドウで、をクリックして **ここをクリックすると、イベント ソースを選択する**です。  
   
-5.  右側のペインで、**追跡プロファイル エディター**ウィンドウで、をクリックして**ここをクリックすると、イベント ソースを選択する**です。  
+6.  **アセンブリ名** のセクション、 **[イベント ソースの親アセンブリ** ダイアログ ボックスで、 **Microsoft.Samples.BizTalk.BamFromExpression**, 、] をクリックし、 **次**します。  
   
-6.  **アセンブリ名**のセクションで、**イベント ソースの親アセンブリの選択**ダイアログ ボックスで、 **Microsoft.Samples.BizTalk.BamFromExpression**をクリックして**[次へ]**です。  
+7.  **オーケストレーション名** のセクション、 **オーケストレーションの選択** ダイアログ ボックスで、 **BamFromExpression.Orchestration1**, 、 をクリックし、 **OK**します。  
   
-7.  **オーケストレーション名**のセクションで、**オーケストレーションの選択**ダイアログ ボックスで、 **BamFromExpression.Orchestration1**、クリックして**[ok]**.  
-  
-8.  右クリックし、 **Receive_1**図形をクリックして**メッセージ ペイロード スキーマ**です。  
+8.  右クリックし、 **Receive_1** 図形をクリックして **メッセージ ペイロード スキーマ**します。  
   
 9. 展開**\<スキーマ\>**、展開**PurchaseOrder**、展開**から**、し、ドラッグ**PoID**右のウィンドウ**ActivityID**左側のウィンドウでします。  
   
@@ -86,45 +78,45 @@ ms.lasthandoff: 12/01/2017
   
 11. 矢印の付いたフォルダー アイコンをクリックして (![フォルダーとし、上のボタン &#45; 矢印](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示します。  
   
-12. ドラッグ、 **Receive_1**図形を右側のペインで**Received**左側のウィンドウでします。  
+12. ドラッグ、 **Receive_1** 右側のウィンドウに図形 **受信** 左側のウィンドウでします。  
   
-13. ドラッグ、 **Send_1**図形を右側のペインで**送信**左側のウィンドウでします。  
+13. ドラッグ、 **Send_1** 右側のウィンドウに図形 **送信** 左側のウィンドウでします。  
   
 14. 追跡プロファイルを保存*\<サンプル パス\>*\BAM\BamFromExpression\ BamFromExpression.btt です。  
   
-15. **ツール** メニューのをクリックして**追跡プロファイルの適用**です。  
+15. **ツール**  メニューのをクリックして **追跡プロファイルの適用**します。  
   
-#### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
+## <a name="build-and-initialize-this-sample"></a>ビルドおよび初期化するこのサンプル  
   
--   BamFromExpression.btt 追跡プロファイルを展開します。 詳細については、次を参照してください。[追跡プロファイル管理ユーティリティを使って追跡プロファイルを展開する方法](../core/how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility.md)です。  
+BamFromExpression.btt 追跡プロファイルを展開します。 参照してください[追跡を使用して追跡プロファイルを展開する方法のプロファイル管理ユーティリティ](../core/how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility.md)です。  
   
-#### <a name="to-run-this-sample"></a>このサンプルを実行するには  
+## <a name="run-this-sample"></a>このサンプルを実行します。  
   
--   ファイルをコピー *\<サンプル パス\>*に \BamFromExpression\InputMessage.xml *\<サンプル パス\>*\BamFromExpression\Input です。  
+ファイルをコピー *\<サンプル パス\>*に \BamFromExpression\InputMessage.xml *\<サンプル パス\>*\BamFromExpression\Input です。  
   
-     約 10 秒後に、出力メッセージが表示されます*\<サンプル パス\>*\BamFromExpression\Output です。  
+約 10 秒後に、出力メッセージが表示されます*\<サンプル パス\>*\BamFromExpression\Output です。  
   
-#### <a name="to-view-the-bam-data"></a>BAM データを表示するには  
+## <a name="view-the-bam-data"></a>BAM データを表示します。  
   
 1.  SQL Server Management Studio を開きます。  
   
-2.  SQL Server Management Studio で、サーバーを展開し、**データベース**、展開**BAMPrimaryImport**の順に展開および**テーブル**です。  
+2.  SQL Server Management Studio で、サーバーを展開し、 **データベース**, 、展開 **BAMPrimaryImport**, 、順に展開 **テーブル**します。  
   
-3.  右クリック**dbo.bam_FromExpressionPo_Completed**、クリックして**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
+3.  右クリック **dbo.bam_FromExpressionPo_Completed**, 、クリックして **テーブルを開く**します。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_FromExpressionPo_Completed テーブルの内容が、右側のウィンドウに表示されます。 アクティビティ ID が 123 の 1 行は、入力メッセージに含まれていた $345 の注文を表します。  
   
-4.  右クリック**dbo.bam_FromExpressionPoItem_Completed**、クリックして**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
+4.  右クリック **dbo.bam_FromExpressionPoItem_Completed**, 、クリックして **テーブルを開く**します。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
      bam_FromExpressionPoItem_Completed テーブルの内容が、右側のウィンドウに表示されます。 アクティビティ ID が 123_0 および 123_1 の 2 行は、注文のアイテム Flash MC と Infrared Decoder を表します。  
   
-5.  右クリック**dbo.bam_FromExpressionPoItem_CompletedRelationships**、クリックして**テーブルを開く**です。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
+5.  右クリック **dbo.bam_FromExpressionPoItem_CompletedRelationships**, 、クリックして **テーブルを開く**します。 SQL Server を使用している場合はクリックして**上位 1000 行を選択して**です。  
   
-     bam_FromExpressionPoItem_CompletedRelationships テーブルの内容が、右側のウィンドウに表示されます。 テーブルの各行は、FromExpressionPoItem アクティビティと FromExpressionPo アクティビティの関係を表します。 値、 **ActivityID**列は、FromExpressionPoItem アクティビティのアクティビティ ID を示します。 値、 **ReferenceData**列は、FromExpressionPo アクティビティのアクティビティ ID を示します。 この場合、2 つのレコードは、Flash MC アイテムと Infrared Decoder アイテムが $345 の注文で関連付けられていることを示します。  
+     bam_FromExpressionPoItem_CompletedRelationships テーブルの内容が、右側のウィンドウに表示されます。 テーブルの各行は、FromExpressionPoItem アクティビティと FromExpressionPo アクティビティの関係を表します。 値、 **ActivityID** 列は、FromExpressionPoItem アクティビティのアクティビティ ID を示します。 値、 **ReferenceData** 列は、FromExpressionPo アクティビティのアクティビティ ID を示します。 この場合、2 つのレコードは、Flash MC アイテムと Infrared Decoder アイテムが $345 の注文で関連付けられていることを示します。  
   
-#### <a name="to-re-run-the-sample"></a>サンプルを再実行するには  
+## <a name="re-run-the-sample"></a>このサンプルを再実行します。  
   
-1.  コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用している場合は、管理者としてコマンド プロンプトを開きます。  
+1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。 
   
 2.  実行*\<サンプル パス\>*\BAM\BamFromExpression\Setup.bat をサンプルをコンパイルして展開します。  
   

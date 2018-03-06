@@ -8,28 +8,28 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 87b6b9a0-a470-43f7-b076-36075477cc34
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e6282b6f5a5784b80d58a1a1737389ee23e01e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 613c0a28d9aaf3f8a07b34b65345979d69223668
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="appendix-b-hyper-v-architecture-and-feature-overview"></a>付録 b: HYPER-V のアーキテクチャと機能の概要
 このトピックでは、HYPER-V アーキテクチャの概要を HYPER-V の長所と短所について説明します。  
   
 ## <a name="hyper-v-architecture"></a>HYPER-V のアーキテクチャ  
   
- HYPER-V では、ハイパーバイザー ベースの仮想化プラットフォームとテクノロジのいずれかの[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]のマーキー機能、ライブ マイグレーションします。 HYPER-V は、version 1.0、Windows Server 2008 がのクイック マイグレーションは、数秒のダウン時間のみが物理ホスト間で Vm を移動する可能性があります。 ライブ マイグレーションにより、物理的なターゲットの間を移動はミリ秒で、移行操作が接続されているユーザーを非表示になることを意味で行われます。 新機能と機能強化について調べるに[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V を参照してください[Windows Server 2008 R2 で HYPER-V の新](http://go.microsoft.com/fwlink/?LinkID=202427)です。  
+ HYPER-V では、ハイパーバイザー ベースの仮想化プラットフォームと Windows Server のマーキー機能は、ライブ マイグレーションのいずれかのテクノロジです。 HYPER-V では、Windows Server はクイック マイグレーションはほんの数秒のダウン タイムが物理ホスト間で Vm を移動することができします。 ライブ マイグレーションにより、物理的なターゲットの間を移動はミリ秒で、移行操作が接続されているユーザーを非表示になることを意味で行われます。 参照してください[Windows サーバーで HYPER-V の新機能](https://docs.microsoft.com/windows-server/virtualization/hyper-v/what-s-new-in-hyper-v-on-windows)します。
   
  ハイパーバイザーは、互いに分離された複数の仮想マシン (Vm) をホストできますが、プロセッサ、メモリ、および I/O デバイスの仮想化により、基になるハードウェア リソースを共有する特定のプロセッサを仮想化プラットフォームです。  
   
- HYPER-V 仮想マシンで実行されているゲスト オペレーティング システムは、物理ハードウェア上で実行されているオペレーティング システムのパフォーマンスに近づいていますパフォーマンスを提供*場合*仮想サーバーが必要なクライアント (VSC) ドライバーとサービスゲスト オペレーティング システムにインストールされます。 HYPER-V で仮想サーバー クライアント (VSC) コード、HYPER-V とも呼ばれる I/O の対応、HYPER-V「仮想マシン バス」への直接アクセスを有効に、HYPER-V 統合サービスのインストールで使用できます。 両方[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]と[!INCLUDE[btsWinVista](../includes/btswinvista-md.md)]HYPER-V のサポートは、HYPER-V 統合サービスと I/O を対応します。 VSC ドライバーを提供する HYPER-V 統合サービスは、他のクライアント オペレーティング システムの使用もできます。  
+ HYPER-V 仮想マシンで実行されているゲスト オペレーティング システムは、物理ハードウェア上で実行されているオペレーティング システムのパフォーマンスに近づいていますパフォーマンスを提供*場合*仮想サーバーが必要なクライアント (VSC) ドライバーとサービスゲスト オペレーティング システムにインストールされます。 HYPER-V で仮想サーバー クライアント (VSC) コード、HYPER-V とも呼ばれる I/O の対応、HYPER-V「仮想マシン バス」への直接アクセスを有効に、HYPER-V 統合サービスのインストールで使用できます。 VSC ドライバーを提供する HYPER-V 統合サービスは、他のクライアント オペレーティング システムの使用もできます。  
   
- HYPER-V には、パーティションの観点からの分離がサポートしています。 パーティションは、オペレーティング システムが実行される、ハイパーバイザーによってサポートされる分離の論理単位です。 Microsoft ハイパーバイザーを実行している、少なくとも 1 つの親、またはルート パーティションが必要[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 仮想化スタックは、親パーティションで実行され、ハードウェア デバイスに直接アクセスします。 ゲスト オペレーティング システムをホストしているパーティションと、ルート パーティションでは、子が作成されます。 ルート パーティションでは、ハイパー コール アプリケーション プログラミング インターフェイス (API) を使用して、子パーティションを作成します。  
+ HYPER-V には、パーティションの観点からの分離がサポートしています。 パーティションは、オペレーティング システムが実行される、ハイパーバイザーによってサポートされる分離の論理単位です。 Microsoft ハイパーバイザーには、Windows Server を実行するには、少なくとも 1 つの親、またはルートのパーティションが必要です。 仮想化スタックは、親パーティションで実行され、ハードウェア デバイスに直接アクセスします。 ゲスト オペレーティング システムをホストしているパーティションと、ルート パーティションでは、子が作成されます。 ルート パーティションでは、ハイパー コール アプリケーション プログラミング インターフェイス (API) を使用して、子パーティションを作成します。  
   
  パーティションには、物理プロセッサへのアクセスはありません。 またプロセッサの割り込みを処理しないでください。 代わりに、プロセッサの仮想的な表示とゲストの各パーティションにプライベート仮想メモリのアドレス領域で実行します。 ハイパーバイザーは、プロセッサへの割り込みを処理し、それぞれのパーティションにリダイレクトします。 HYPER-V こともできますハードウェアが、入力出力メモリ管理単位 (IOMMU)、CPU で使用されるメモリ管理のハードウェアの独立した動作を使用して、さまざまなゲスト仮想アドレス空間の間でアドレス変換を高速化します。 IOMMU を使用して、物理メモリのアドレスを子パーティションによって使用されているアドレスを再マップします。  
   
@@ -37,10 +37,10 @@ ms.lasthandoff: 09/20/2017
   
  仮想デバイスでは、Windows Server 仮想化機能、記憶域、ネットワーク、グラフィック、および入力サブシステムの I/O の対応をという名前のも利用できます。 対応の I/O は、任意のデバイスのエミュレーション層をバイパスして、直接 VMBus を利用する高レベルの通信プロトコル (SCSI) などの特殊な仮想化に対応する実装です。 これより効率的に通信が、ハイパーバイザーと VMBus 対応である有効化されたゲストが必要です。 HYPER-V 対応 I/O され、ハイパーバイザー対応カーネルが HYPER-V 統合サービスのインストールを使用して提供されます。 仮想サーバー クライアント (VSC) ドライバーを含む、統合コンポーネントも他のクライアント オペレーティング システムを使用できます。 HYPER-V では、ハードウェア支援による仮想化を含むようにプロセッサが Intel VT または AMD Virtualization (AMD-V) テクノロジで提供される必要があります。  
   
- 次の図は、Windows Server 2008 で実行されている HYPER-V 環境のアーキテクチャの大まかな概要を提供します。  
+ 次の図は、Windows Server で実行されている HYPER-V 環境のアーキテクチャの大まかな概要を提供します。  
   
- ![ハイパー & #45 です。V アーキテクチャの概要](../technical-guides/media/eadd2a84-3936-4b48-a0e2-05b94882d848.gif "eadd2a84-3936-4b48-a0e2-05b94882d848")  
-HYPER-V アーキテクチャの概要  
+ ![ハイパー &#45;です。V アーキテクチャの概要](../technical-guides/media/eadd2a84-3936-4b48-a0e2-05b94882d848.gif "eadd2a84-3936-4b48-a0e2-05b94882d848")  
+
   
  上記の図で使用される用語を以下に示します。  
   
@@ -66,7 +66,7 @@ HYPER-V アーキテクチャの概要
   
 -   **VMMS** – 仮想マシン管理サービス。 子パーティション内のすべての仮想マシンの状態の管理を担当します。  
   
--   **VMWP** – 仮想マシン ワーカー プロセスです。 仮想化スタックのユーザー モード コンポーネント。 ワーカー プロセスからの仮想マシン管理サービスを提供する、[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]ゲスト オペレーティング システムを子パーティションの親パーティション内のインスタンス。 バーチャル マシン管理サービスは、実行中の仮想マシンごとに個別のワーカー プロセスを生成します。  
+-   **VMWP** – 仮想マシン ワーカー プロセスです。 仮想化スタックのユーザー モード コンポーネント。 ワーカー プロセスは、子パーティションでゲスト オペレーティング システムを親パーティションに Windows Server のインスタンスからの仮想マシン管理サービスを提供します。 バーチャル マシン管理サービスは、実行中の仮想マシンごとに個別のワーカー プロセスを生成します。  
   
 -   **VSC** – 仮想化サービスのクライアントです。 子パーティションに存在する統合デバイス インスタンス。 Vsc は、仮想化サービス プロバイダー (Vsp)、親パーティションに用意されているハードウェア リソースを利用します。 親パーティションに対応する Vsp と通信するには、子パーティションのデバイスの I/O 要求を満たすために VMBus 経由でします。  
   
@@ -76,15 +76,15 @@ HYPER-V アーキテクチャの概要
   
 -   **WMI** –、バーチャル マシン管理サービスが管理し、仮想マシンの制御の Windows Management Instrumentation WMI ベースの Api のセットを公開します。  
   
- これらの用語のほとんどがで定義されている、 [Glossary8](../technical-guides/glossary8.md)です。  
+ これらの用語のほとんどがで定義されている、[用語集](../technical-guides/glossary8.md)です。  
   
 > [!NOTE]  
->  詳細については[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V を参照してください[http://go.microsoft.com/fwlink/?LinkID=121187](http://go.microsoft.com/fwlink/?LinkID=121187)です。  
+>  [HYPER-V テクノロジの概要](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)は優れたリソースです。 
   
-## <a name="advantages-of-hyper-v"></a>HYPER-V の利点  
+## <a name="advantages"></a>利点があります。
  HYPER-V 仮想化環境でエンタープライズ レベルのソリューションを実行する利点は次のとおりです。  
   
-1.  **ハードウェア リソースの統合**-複数の物理サーバーに簡単に統合できます比較的少数のサーバーに HYPER-V で仮想化を実装することによってです。 統合は、配置済みのハードウェア リソースの使用を完全に対応します。 Windows Server 2008 R2 で HYPER-V ホスト コンピューターで最大 64 個の論理 Cpu にアクセスできます。 この機能だけでなく活用新しいマルチコア システム、各物理ホストのバーチャル マシン統合率の大きいも意味します。  
+1.  **ハードウェア リソースの統合**-複数の物理サーバーに簡単に統合できます比較的少数のサーバーに HYPER-V で仮想化を実装することによってです。 統合は、配置済みのハードウェア リソースの使用を完全に対応します。 Windows Server での HYPER-V では、ホスト コンピューターで最大 64 個の論理 Cpu にアクセスできます。 この機能だけでなく活用新しいマルチコア システム、各物理ホストのバーチャル マシン統合率の大きいも意味します。  
   
 2.  **管理の容易さ**:  
   
@@ -96,23 +96,23 @@ HYPER-V アーキテクチャの概要
   
     -   複数の仮想マシンが単一の物理マシンで実行できるため、ハードウェアのコストが大幅に削減、そのため、独立した物理マシンはすべてのコンピューターに必要はありません。  
   
-    -   HYPER-V は、ライセンス コストは、ライセンス コストに含まれて[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 インストールできるスタンドアロン製品として使用する HYPER-V を購入することも[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]Server Core です。  
+    -   HYPER-V は、ライセンス コストは、Windows Server のライセンス コストを含めることができ、スタンドアロン製品としても購入する可能性があります。
   
     -   電力要件は、物理ハードウェアが少なくて済みます「フット プリント」により、仮想化された HYPER-V 環境に既存のアプリケーションを統合することで大幅に削減可能性がありますが必要です。  
   
-4.  **HYPER-V クラスターの許容範囲のサポートをフォールト**– ための HYPER-V では、クラスター対応のアプリケーションでは、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]ネイティブのホストをクラスタ リングを HYPER-V 仮想化環境で作成されたバーチャル マシンのサポートを提供します。  
+4.  **HYPER-V クラスターの許容範囲のサポートをフォールト**– ための HYPER-V クラスターの対応するアプリケーションは、Windows Server は、ネイティブ ホストのクラスタ リングを HYPER-V 仮想化環境で作成されたバーチャル マシンのサポートを提供します。  
   
 5.  **展開と管理の容易さ**:  
   
     -   少ない物理サーバーに既存のサーバーの統合には、展開が簡素化されます。  
   
-    -   包括的な HYPER-V 管理ソリューションでは、System Center Virtual Machine Manager で使用することができます。 System Center Virtual Machine Manager に関する詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)です。  
+    -   包括的な HYPER-V 管理ソリューションでは、System Center Virtual Machine Manager で使用することができます。 [System center VMM の新機能](https://docs.microsoft.com/system-center/vmm/whats-new?view=sc-vmm-2016)のガイダンスを紹介します。
   
 6.  **キーの HYPER-V でのパフォーマンス特性**:  
   
-    -   **アーキテクチャの共有ハードウェア**- HYPER-V のアクセスを向上し、ネットワーク、ディスクなどの主要なリソースの使用率を提供し、ハイパーバイザーに対応するカーネルとビデオのときに実行されているゲスト オペレーティング システムが装備必要な仮想サーバーのクライアント (VSC) コードが (HYPER-V 対応 I/O と呼ばれます)。 エンライトメントは、メモリ管理などの特定のオペレーティング システム機能のコストを減らすために、オペレーティング システムを強化します。 現在、両方とも[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]と[!INCLUDE[btsWinVista](../includes/btswinvista-md.md)]I/O と HYPER-V は、integration services のインストールを使用してハイパーバイザー対応カーネルに HYPER-V のサポートが対応します。 VSC ドライバーを含む、統合コンポーネントも他のクライアント オペレーティング システムを使用できます。  
+    -   **アーキテクチャの共有ハードウェア**- HYPER-V のアクセスを向上し、ネットワーク、ディスクなどの主要なリソースの使用率を提供し、ハイパーバイザーに対応するカーネルとビデオのときに実行されているゲスト オペレーティング システムが装備必要な仮想サーバーのクライアント (VSC) コードが (HYPER-V 対応 I/O と呼ばれます)。 エンライトメントは、メモリ管理などの特定のオペレーティング システム機能のコストを減らすために、オペレーティング システムを強化します。 VSC ドライバーを含む、統合コンポーネントも他のクライアント オペレーティング システムを使用できます。  
   
-         ディスクのパフォーマンスは、Microsoft などのディスク I/O を集中的なエンタープライズ アプリケーションの重要な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HYPER-V に加えて対応 I/O; とHYPER-V では、物理ディスクのパフォーマンスに従ったディスクのパフォーマンスを提供する「パススルー」ディスクのサポートを提供します。 「パススルー」ディスクのサポートが利便性を小規模のコストでパフォーマンスの向上を提供することに注意してください。 「パススルー」ディスク本質的に物理ディスクまたは Lun は仮想マシンに関連付けられているし、一部の仮想ディスクを仮想マシンのスナップショットなどの機能をサポートしています。  
+         ディスクのパフォーマンスは、Microsoft BizTalk Server などのディスク I/O の処理を要する企業アプリケーションにとって重要と HYPER-V に加えて対応 I/O です。HYPER-V では、物理ディスクのパフォーマンスに従ったディスクのパフォーマンスを提供する「パススルー」ディスクのサポートを提供します。 「パススルー」ディスクのサポートが利便性を小規模のコストでパフォーマンスの向上を提供することに注意してください。 「パススルー」ディスク本質的に物理ディスクまたは Lun は仮想マシンに関連付けられているし、一部の仮想ディスクを仮想マシンのスナップショットなどの機能をサポートしています。  
   
     -   **プロセッサのハードウェア補助による仮想化サポート**: HYPER-V では、最近のプロセッサ テクノロジで使用可能なプロセッサ ハードウェア支援による仮想化サポートを最大限に活用します。  
   
@@ -120,17 +120,15 @@ HYPER-V アーキテクチャの概要
   
     -   **32 ビットおよび 64 ビットの両方のゲスト オペレーティング システムのサポート**– HYPER-V ウィンドウなど、別のサーバー プラットフォームで 32 ビットおよび 64 ビット システムを含む、オペレーティング システムのさまざまな種類を同時に実行するための広範なサポートを提供します。Linux®、およびその他。  
   
-7.  **実証済みの追跡レコード**-MSDN の Microsoft Web サイトのキー ([http://msdn.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=122019)) および TechNet ([http://technet.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=64380)) HYPER-V 環境でホストされています。  
-  
 8.  **包括的な製品のサポート**– 展開済みで、HYPER-V で実行時に、Microsoft がこれらのアプリケーションのコード修正プログラムのサポートを提供 (Exchange Server や SQL Server) などの Microsoft のエンタープライズ アプリケーションでは、HYPER-V で実行されているテストが完全に、ため環境。  
   
 9. **スケーラビリティ**– 追加処理電源、ネットワーク帯域幅、および記憶域の容量を実現するに迅速かつ簡単に分配ホスト コンピューターから、ゲスト仮想マシンに使用可能なリソースを追加します。 これには、ホスト コンピューターがアップグレードされたこと、またはより高機能なホスト コンピューターに、ゲスト仮想マシンを移動することがあります。  
   
- HYPER-V で提供される仮想化テクノロジを活用することの利点の深さについての詳細は、次を参照してください。[仮想化のメリット](http://go.microsoft.com/fwlink/?LinkID=202419)の[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]します。  
+ HYPER-V で提供される仮想化テクノロジを活用することの利点の深さについての詳細は、次を参照してください。、 [Hyper-v テクノロジの概要](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)です。 
   
-## <a name="disadvantages-of-hyper-v"></a>HYPER-V の短所  
+## <a name="disadvantages"></a>欠点
  HYPER-V 仮想化環境でエンタープライズ レベルのソリューションを実行中の短所があります。  
   
--   **ハードウェアの要件 –**によりサーバーの統合の確認要求を HYPER-V バーチャル マシンが複数の CPU やメモリを消費する傾向があり、比較可能なコンピューティングの読み込みを伴う物理サーバーよりも大きい値のディスク I/O 帯域幅を必要とします。 HYPER-V サーバーの役割は 64 ビット Windows Server 2008 R2 のすべてのエディションは 64 ビットのみにのみ使用可能なであるために、物理ハードウェアはハードウェア支援による仮想化をサポートする必要があります。 つまり、プロセッサが Intel VT または AMD Virtualization (AMD-V) テクノロジと互換性がなければ、システム BIOS でデータ実行防止 (DEP) をサポートする必要があります、DEP を有効にする必要があります。  
+-   **ハードウェアの要件 –**によりサーバーの統合の確認要求を HYPER-V バーチャル マシンが複数の CPU やメモリを消費する傾向があり、比較可能なコンピューティングの読み込みを伴う物理サーバーよりも大きい値のディスク I/O 帯域幅を必要とします。 HYPER-V サーバーの役割は 64 ビット Windows Server のすべてのエディションは 64 ビットのみにのみ使用可能なであるために、物理ハードウェアはハードウェア支援による仮想化をサポートする必要があります。 つまり、プロセッサが Intel VT または AMD Virtualization (AMD-V) テクノロジと互換性がなければ、システム BIOS でデータ実行防止 (DEP) をサポートする必要があります、DEP を有効にする必要があります。  
   
--   **ソフトウェアの要件 –** HYPER-V 仮想マシンで実行されている、ほとんどの Microsoft ソフトウェアがサポートされていること、一部の Microsoft ソフトウェアは、HYPER-V 仮想化環境との互換性を確認するテスト中の処理中です。 たとえば、ほとんどの Microsoft エンタープライズ レベルのアプリケーション HYPER-V で実行をサポートまたは HYPER-V のサポートをテストする処理を行っています。 すべてのバージョンの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ため[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]HYPER-V で実行されているはサポートされています。 サポートの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、HYPER-V を参照してください。[付録 c: BizTalk Server と SQL Server の Hyper-v でサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)です。
+-   **ソフトウェアの要件 –** HYPER-V 仮想マシンで実行されている、ほとんどの Microsoft ソフトウェアがサポートされていること、一部の Microsoft ソフトウェアは、HYPER-V 仮想化環境との互換性を確認するテスト中の処理中です。 たとえば、ほとんどの Microsoft エンタープライズ レベルのアプリケーション HYPER-V で実行をサポートまたは HYPER-V のサポートをテストする処理を行っています。 BizTalk Server と HYPER-V 上の SQL Server のサポートの詳細については、次を参照してください。[付録 c: BizTalk Server と SQL Server の Hyper-v でサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)です。
