@@ -1,1 +1,1 @@
-<span data-ttu-id="386ef-101">アダプター開発ウィザード</span><span class="sxs-lookup"><span data-stu-id="386ef-101">Adapter Development Wizard</span></span>
+<span data-ttu-id="7f0ac-101">アダプター開発ウィザード</span><span class="sxs-lookup"><span data-stu-id="7f0ac-101">Adapter Development Wizard</span></span>

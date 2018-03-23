@@ -1,1 +1,1 @@
-<span data-ttu-id="76825-101">SQL Server</span><span class="sxs-lookup"><span data-stu-id="76825-101">SQL Server</span></span>
+<span data-ttu-id="db8a9-101">SQL Server</span><span class="sxs-lookup"><span data-stu-id="db8a9-101">SQL Server</span></span>

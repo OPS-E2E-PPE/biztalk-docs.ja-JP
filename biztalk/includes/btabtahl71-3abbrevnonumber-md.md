@@ -1,1 +1,1 @@
-<span data-ttu-id="a379b-101">BTAHL7</span><span class="sxs-lookup"><span data-stu-id="a379b-101">BTAHL7</span></span>
+<span data-ttu-id="93550-101">BTAHL7</span><span class="sxs-lookup"><span data-stu-id="93550-101">BTAHL7</span></span>

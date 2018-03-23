@@ -1,1 +1,1 @@
-<span data-ttu-id="0c95f-101">"アダプター サービスの使用" BizTalk プロジェクト アドイン</span><span class="sxs-lookup"><span data-stu-id="0c95f-101">Consume Adapter Service BizTalk Project Add-in</span></span>
+<span data-ttu-id="fc823-101">"アダプター サービスの使用" BizTalk プロジェクト アドイン</span><span class="sxs-lookup"><span data-stu-id="fc823-101">Consume Adapter Service BizTalk Project Add-in</span></span>
