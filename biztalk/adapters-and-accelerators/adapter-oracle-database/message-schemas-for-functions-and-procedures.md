@@ -1,25 +1,25 @@
 ---
-title: "メッセージ関数およびプロシージャのスキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ関数およびプロシージャのスキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functions and procedures, message structure of
 - functions and procedures, message actions of
 ms.assetid: 90b77b15-a4c6-487d-a09e-a078ceddfd1e
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6fc8c09499914dd075fe6a46fbc230a4bed104e0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="message-schemas-for-functions-and-procedures"></a>関数およびプロシージャのメッセージ スキーマ
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェス Oracle データベースの関数およびストアド プロシージャを操作として。 このセクションでは、メッセージの構造と関数およびプロシージャの呼び出しに使用する操作について説明します。  

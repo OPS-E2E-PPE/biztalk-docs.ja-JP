@@ -1,67 +1,67 @@
 ---
-title: "Wcf-wshttp 送信ポートを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-wshttp 送信ポートを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 035d9a62-b8a3-4705-a7bc-b62676437206
-caps.latest.revision: "17"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6f5fc7b26877f840de491176beab70e7191ad57e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-a-wcf-wshttp-send-port"></a>WCF-WSHttp 送信ポートを構成する方法
 WCF-WSHttp 送信ポートは、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
   
 ## <a name="configuration-properties"></a>構成プロパティ
   
- BizTalk エクスプローラ オブジェクト モデルがという名前の送信ポートのアダプターに固有のインターフェイスを公開する**ITransportInfo**を持つ、 **TransportTypeData**読み取り/書き込みプロパティです。 このプロパティでは、名前と値のペアの XML 文字列の形式で WCF-WSHttp 送信ポートの構成プロパティ バッグを指定できます。  
+ BizTalk エクスプ ローラー オブジェクト モデルがという名前の送信ポートのアダプターに固有のインターフェイスを公開する **ITransportInfo** を持つ、 **TransportTypeData** 読み取り/書き込みプロパティです。 このプロパティでは、名前と値のペアの XML 文字列の形式で WCF-WSHttp 送信ポートの構成プロパティ バッグを指定できます。  
   
- **TransportTypeData**のプロパティ、 **ITransportInfo**インターフェイスは必要ありません。 このプロパティを設定しない場合、アダプタでは、次の表に記載されている WCF-WSHttp 送信ポートの構成の既定値が使用されます。  
+ **TransportTypeData** のプロパティ、 **ITransportInfo** インターフェイスは必要ありません。 このプロパティを設定しない場合、アダプタでは、次の表に記載されている WCF-WSHttp 送信ポートの構成の既定値が使用されます。  
   
  次の表に、BizTalk エクスプローラ オブジェクト モデルで WCF-WSHttp 送信ポート用に設定できる構成プロパティを示します。  
   
 |プロパティ名|型|Description|  
 |-------------------|----------|-----------------|  
-|**Identity**|XML Blob<br /><br /> 例:<br /><br /> &lt;id&gt;<br /><br /> &lt;userPrincipalName 値 ="username@contoso.com"/&gt;<br /><br /> &lt;/identity&gt;|この送信ポートが必要とするサービスの ID を指定します。 これらの設定により、この送信ポートでサービスを認証できます。 クライアントとサービスの間のハンドシェイク プロセスでは、Windows Communication Foundation (WCF) インフラストラクチャによって、この要素の値と予期されるサービスの ID が照合されます。<br /><br /> 既定値は空の文字列です。|  
-|**StaticAction**|-文字列|指定して、 **SOAPAction**送信メッセージの HTTP ヘッダー フィールド。 このプロパティは、メッセージ コンテキスト プロパティからも設定できます**WCF です。アクション**パイプラインまたはオーケストレーションでします。 2 つの異なる方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 シングル アクション形式 http://contoso.com/Svc/Op1-など、このプロパティを設定する場合、 **SOAPAction**ヘッダーは常に送信メッセージの値に設定、このプロパティで指定します。<br /><br /> 送信アクション マッピング形式でこのプロパティを設定する場合**SOAPAction**ヘッダーはによって決定されます、 **BTS です。操作**コンテキスト プロパティです。 たとえば、このプロパティは、次の XML 形式に設定されている場合、 **BTS です。操作**プロパティを Op1 に設定は、WCF 送信アダプタでは、http://contoso.com/Svc/Op1 を使用、送信を**SOAPAction**ヘッダー。<br /><br /> \<BtsActionMapping\><br /><br /> \<操作名"Op1"アクションを = ="http://contoso.com/Svc/Op1"/\><br /><br /> \<操作名"Op2"アクションを = ="http://contoso.com/Svc/Op2"/\><br /><br /> \</BtsActionMapping\><br /><br /> 送信メッセージには、オーケストレーション ポートから場合、オーケストレーション インスタンスは動的に設定、 **BTS です。操作**ポートの操作の名前を持つプロパティです。 コンテンツ ベースのルーティングと、送信メッセージのルーティングされる場合は、設定、 **BTS です。操作**パイプライン コンポーネントのプロパティです。<br /><br /> 既定値は空の文字列です。|  
-|**OpenTimeout**|**System.TimeSpan**|チャネルを開く操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
+|**Id**|XML Blob<br /><br /> 例:<br /><br /> &lt;id&gt;<br /><br /> &lt;userPrincipalName value="username@contoso.com" /&gt;<br /><br /> &lt;/identity&gt;|この送信ポートが必要とするサービスの ID を指定します。 これらの設定により、この送信ポートでサービスを認証できます。 クライアントとサービスの間のハンドシェイク プロセスでは、Windows Communication Foundation (WCF) インフラストラクチャによって、この要素の値と予期されるサービスの ID が照合されます。<br /><br /> 既定値は空の文字列です。|  
+|**StaticAction**|-文字列|指定の **SOAPAction** 送信メッセージの HTTP ヘッダー フィールドです。 このプロパティは、メッセージ コンテキスト プロパティからは設定も **WCF です。アクション** パイプラインまたはオーケストレーションします。 2 つの方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 たとえば、シングル アクション形式にこのプロパティを設定する場合http://contoso.com/Svc/Op1-、 **SOAPAction**ヘッダーは常に送信メッセージの値に設定、このプロパティで指定します。<br /><br /> 送信アクション マッピング形式でこのプロパティを設定した場合 **SOAPAction** によってヘッダーが決定、 **BTS します。操作** コンテキスト プロパティです。 たとえば、このプロパティは、次の XML 形式に設定されている場合、 **BTS です。操作**を Op1 に設定されているプロパティ、WCF 送信アダプタを使用してhttp://contoso.com/Svc/Op1アウトゴーイング**SOAPAction**ヘッダー。<br /><br /> \<BtsActionMapping\><br /><br /> \<Operation Name="Op1" Action="http://contoso.com/Svc/Op1" /\><br /><br /> \<Operation Name="Op2" Action="http://contoso.com/Svc/Op2" /\><br /><br /> \</BtsActionMapping\><br /><br /> 送信メッセージは、オーケストレーション ポートから送られてきた場合、オーケストレーション インスタンスは動的に設定、 **BTS します。操作** ポートの操作の名前を持つプロパティです。 コンテンツ ベースのルーティングと送信メッセージがルーティングされる場合は、設定、 **BTS します。操作** パイプライン コンポーネントのプロパティです。<br /><br /> 既定値は空の文字列です。|  
+|**Opentimeout します。**|**System.TimeSpan**|チャネルを開く操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
 |**SendTimeout**|**System.TimeSpan**|送信操作が完了するまでの間隔を示す期間値を指定します。 送信請求 - 応答の送信ポートを使用する場合は、サービスから大きいメッセージが返される場合でも、この値には対話処理がすべて完了するまでの時間を指定します。<br /><br /> 既定値:00:01:00|  
-|**CloseTimeout**|**System.TimeSpan**|チャネルを閉じる操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
+|**Closetimeout します。**|**System.TimeSpan**|チャネルを閉じる操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
 |**MaxReceivedMessageSize**|Integer|有線ネットワーク上で受信できる、ヘッダーを含むメッセージの最大サイズをバイト単位で指定します。 メッセージのサイズは、各メッセージに割り当てられているメモリの量に制限されます。 このプロパティを使用して、サービス拒否 (DoS) 攻撃にさらされる危険性を制限できます。<br /><br /> 既定値:65536|  
-|**MessageEncoding**|Enum<br /><br /> -   **テキスト**-テキスト メッセージ エンコーダーを使用します。<br />-   **Mtom** -メッセージ Transmission Organization Mechanism 1.0 (MTOM) エンコーダーを使用します。|SOAP メッセージをエンコードするために使用されるエンコーダーを指定します。<br /><br /> 既定値:**テキスト**|  
-|**TextEncoding**|Enum<br /><br /> -   **unicodeFFF** -Unicode BigEndian エンコーディングします。<br />-   **utf-16** : 16 ビット エンコーディングします。<br />-   **utf-8** : 8 ビット エンコーディングします。|バインディングでメッセージを出力するために使用するエンコーディングを設定する文字を指定するときに、 **MessageEncoding**プロパティに設定されている**テキスト**です。<br /><br /> 既定値: **utf-8**|  
-|**EnableTransaction**|ブール値|メッセージが移動先のサービスに転送され、トランザクション コンテキストを使用して、メッセージ ボックス データベースから削除するかどうかを指定して、 **Ws-atomictransaction**プロトコルです。<br /><br /> 既定値: **False**|  
-|**SecurityMode**|Enum<br /><br /> -   **[なし]**<br />-   **メッセージ**<br />-   **トランスポート**<br />-   **TransportWithMessageCredential**<br /><br /> メンバー名の詳細については、 **SecurityMode**プロパティを参照してください、**セキュリティ モード**プロパティに、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、送信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|使用するセキュリティの種類を指定します。<br /><br /> 既定値:**なし**|  
-|**TransportClientCredentialType**|Enum<br /><br /> -   **[なし]**<br />-   **基本的な**<br />-   **Windows**<br />-   **証明書**<br />-   **ダイジェスト**<br />-   **Ntlm**<br /><br /> メンバー名の詳細については、 **TransportClientCredentialType**プロパティを参照してください、**クライアント資格情報の種類のトランスポート**プロパティに、 **Wcf-wshttp トランスポートプロパティ] ダイアログ ボックスの [送信セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|送信ポート認証の実行時に使用する資格情報の種類を指定します。<br /><br /> 既定値:**なし**|  
-|**MessageClientCredentialType**|Enum<br /><br /> -   **[なし]**<br />-   **Windows**<br />-   **ユーザー名**<br />-   **証明書**<br /><br /> メンバー名の詳細については、 **MessageClientCredentialType**プロパティを参照してください、**クライアント資格情報の種類のメッセージ**プロパティに、 **Wcf-wshttp トランスポートのプロパティダイアログ ボックスの 送信セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージ ベースのセキュリティを使用してクライアント認証を実行するときに使用する、資格情報の種類を指定します。<br /><br /> 既定値:**ユーザー名**|  
-|**AlgorithmSuite**|Enum<br /><br /> メンバー名の詳細については、 **AlgorithmSuite**プロパティを参照してください、**アルゴリズム スイート**プロパティに、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、送信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージの暗号化とキー ラップのアルゴリズムを指定します。 これらのアルゴリズムは、セキュリティ ポリシー言語 (WS-SecurityPolicy) 仕様で指定されたアルゴリズムにマップされます。<br /><br /> 既定値: **Basic256**|  
-|**NegotiateServiceCredential**|ブール値<br /><br /> メンバー名の詳細については、 **NegotiateServiceCredential**プロパティを参照してください、**サービス資格情報をネゴシエート**プロパティに、 **Wcf-wshttp トランスポートのプロパティダイアログ ボックスの 送信セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|サービスの資格情報が帯域外のこの送信ポートで提供されるか、またはネゴシエーションのプロセスによってこの送信ポートへのサービスから取得されるかを指定します。 このようなネゴシエーションは、通常のメッセージ交換に先行して実行されます。<br /><br /> 既定値: **False**|  
-|**EnableSecurityContext**|ブール値|を通じて、セキュリティ コンテキスト トークンが確立されるかどうかを指定して、 **Ws-secureconversation**この送信ポートとサービス間の交換します。 このプロパティ設定されている場合**True**移動先のサービスをサポートする必要があります、 **Ws-secureconversation**です。<br /><br /> 既定値:**は True。**|  
-|**ClientCertificate**|文字列|この送信ポートをサービスに対して認証する際に使用する X.509 証明書の拇印を指定します。 このプロパティは必要な場合、 **ClientCredentialsType**プロパティに設定されている**証明書**です。 このプロパティに使用する証明書をインストールする必要があります、 **My**に格納、**現在のユーザー**場所。<br /><br /> 既定値は空の文字列です。|  
-|**ServiceCertificate**|文字列|この送信ポートのメッセージ送信先のサービスを認証する際に使用する X.509 証明書の拇印を指定します。 このプロパティに使用する証明書をインストールする必要があります、**ほかの人**に格納、**ローカル マシン**場所。<br /><br /> 既定値は空の文字列です。|  
+|**MessageEncoding**|Enum<br /><br /> -   **テキスト**-テキスト メッセージ エンコーダーを使用します。<br />-   **Mtom** -メッセージ Transmission Organization Mechanism 1.0 (MTOM) エンコーダーを使用します。|SOAP メッセージをエンコードするために使用されるエンコーダーを指定します。<br /><br /> 既定値: **テキスト**|  
+|**TextEncoding**|Enum<br /><br /> -   **unicodeFFF** -Unicode BigEndian エンコーディングします。<br />-   **utf-16** : 16 ビット エンコーディングします。<br />-   **utf-8** : 8 ビット エンコーディングします。|文字セットのバインディングでメッセージを出力するために使用するエンコーディングを指定時に、 **MessageEncoding** にプロパティが設定されている **テキスト**します。<br /><br /> 既定値: **utf-8**|  
+|**EnableTransaction**|ブール値|メッセージが転送先サービスに転送され、トランザクション コンテキストを使用してメッセージ ボックス データベースから削除するかどうかを指定する、 **Ws-atomictransaction** プロトコルです。<br /><br /> 既定値: **False**|  
+|**SecurityMode**|Enum<br /><br /> -   **[なし]**<br />-   **メッセージ**<br />-   **トランスポート**<br />-   **TransportWithMessageCredential**<br /><br /> メンバー名の詳細については、 **SecurityMode**プロパティを参照してください、**セキュリティ モード**プロパティに、 **Wcf-wshttp トランスポートのプロパティ] ダイアログ ボックス、送信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|使用するセキュリティの種類を指定します。<br /><br /> 既定値: **なし**|  
+|**TransportClientCredentialType**|Enum<br /><br /> -   **[なし]**<br />-   **基本的です**<br />-   **Windows**<br />-   **証明書**<br />-   **ダイジェスト**<br />-   **Ntlm**<br /><br /> メンバー名の詳細については、 **TransportClientCredentialType**プロパティを参照してください、**クライアント資格情報の種類のトランスポート**プロパティに、 **Wcf-wshttp トランスポートプロパティ] ダイアログ ボックスの [送信セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|送信ポート認証の実行時に使用する資格情報の種類を指定します。<br /><br /> 既定値: **なし**|  
+|**MessageClientCredentialType**|Enum<br /><br /> -   **[なし]**<br />-   **Windows**<br />-   **ユーザー名**<br />-   **証明書**<br /><br /> メンバー名の詳細については、 **MessageClientCredentialType**プロパティを参照してください、**クライアント資格情報の種類のメッセージ**プロパティに、 **Wcf-wshttp トランスポートのプロパティダイアログ ボックスの [送信セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージ ベースのセキュリティを使用してクライアント認証を実行するときに使用する、資格情報の種類を指定します。<br /><br /> 既定値: **ユーザー名**|  
+|**AlgorithmSuite**|Enum<br /><br /> メンバー名の詳細については、 **AlgorithmSuite**プロパティを参照してください、**アルゴリズム スイート**プロパティに、 **Wcf-wshttp トランスポートのプロパティ] ダイアログ ボックス、送信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージの暗号化とキー ラップのアルゴリズムを指定します。 これらのアルゴリズムは、セキュリティ ポリシー言語 (WS-SecurityPolicy) 仕様で指定されたアルゴリズムにマップされます。<br /><br /> 既定値: **Basic256**|  
+|**NegotiateServiceCredential**|ブール値<br /><br /> メンバー名の詳細については、 **NegotiateServiceCredential**プロパティを参照してください、**サービス資格情報をネゴシエート**プロパティに、 **Wcf-wshttp トランスポートのプロパティダイアログ ボックスの [送信セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|サービスの資格情報が帯域外のこの送信ポートで提供されるか、またはネゴシエーションのプロセスによってこの送信ポートへのサービスから取得されるかを指定します。 このようなネゴシエーションは、通常のメッセージ交換に先行して実行されます。<br /><br /> 既定値: **False**|  
+|**EnableSecurityContext**|ブール値|を介してセキュリティ コンテキスト トークンが確立されるかどうかを指定する **Ws-secureconversation** この送信ポートとサービス間で交換します。 このプロパティが設定されている場合 **True** 移動先のサービスをサポートする必要がありますし、 **Ws-secureconversation**します。<br /><br /> 既定値: **は True。**|  
+|**ClientCertificate**|文字列|この送信ポートをサービスに対して認証する際に使用する X.509 証明書の拇印を指定します。 このプロパティは必要な場合、 **ClientCredentialsType** プロパティに設定されて **証明書**します。 このプロパティを使用する証明書をインストールする必要があります、 **マイ** に格納、 **現在のユーザー** 場所です。<br /><br /> 既定値は空の文字列です。|  
+|**ServiceCertificate**|文字列|この送信ポートのメッセージ送信先のサービスを認証する際に使用する X.509 証明書の拇印を指定します。 このプロパティを使用する証明書をインストールする必要があります、 **その他のユーザー** に格納、 **ローカル マシン** 場所です。<br /><br /> 既定値は空の文字列です。|  
 |**AffiliateApplicationName**|文字列|エンタープライズ シングル サインオン (SSO) に使用する関連アプリケーションを指定します。<br /><br /> 既定値は空の文字列です。|  
 |**UseSSO**|ブール値|接続先のサーバーでの認証でクライアントの資格情報を取得する際に、シングル サインオンを使用するかどうかを指定します。<br /><br /> 既定値: **False**|  
-|**UserName**|文字列|移行先サーバーで認証に使用するユーザー名を指定するときに、 **UseSSO**プロパティに設定されている**False**です。 このプロパティでは domain\user 形式は使用できません。<br /><br /> 既定値は空の文字列です。|  
-|**Password**|文字列|移行先サーバーでの認証を使用するパスワードを指定するときに、 **UseSSO**プロパティに設定されている**False**です。<br /><br /> 既定値は空の文字列です。|  
-|**ProxyToUse**|Enum<br /><br /> -   **None** -この送信ポートのプロキシ サーバーを使用できません。<br />-   **既定の**-この送信ポートをホストする送信ハンドラーのプロキシ設定を使用します。<br />-   **UserSpecified** -で指定されたプロキシ サーバーを使用して、 **ProxyAddress**プロパティです。|送信 HTTP トラフィックに使用するプロキシ サーバーを指定します。<br /><br /> 既定値:**なし**|  
-|**ProxyAddress**|文字列|プロキシ サーバーのアドレスを指定します。 使用して、 **https**または**http**セキュリティ構成に応じてスキームです。 このアドレスの後に、コロンとポート番号を指定します。 たとえば、http://127.0.0.1:8080 と指定します。<br /><br /> 既定値は空の文字列です。|  
-|**ProxyUserName**|文字列|プロキシに使用するユーザー名を指定します。 Wcf-wshttp アダプター活用して、 [WSHttpBinding](http://go.microsoft.com/fwlink/?LinkId=81206)エンドポイントと通信するために、バッファリングされた送信モードにします。 プロキシの資格情報の**WSHttpBinding**のみ、セキュリティ モードがの場合は適用**トランスポート**、または**None**です。 設定した場合、 **SecurityMode**プロパティを**メッセージ**または**TransportWithMessageCredential**、Wcf-wshttp アダプタは、で指定された資格情報を使用しません**ProxyUserName**と**ProxyPassword**プロパティをプロキシに対して認証します。 **注:** Wcf-wshttp 送信アダプターの使用、プロキシに対して基本認証です。 <br /><br /> 既定値は空の文字列です。|  
+|**ユーザー名**|文字列|接続先サーバーで認証を使用するユーザー名を指定時に、 **UseSSO** にプロパティが設定されている **False**します。 このプロパティでは domain\user 形式は使用できません。<br /><br /> 既定値は空の文字列です。|  
+|**パスワード**|文字列|接続先サーバーで認証を使用するパスワードを指定するときに、 **UseSSO** にプロパティが設定されている **False**します。<br /><br /> 既定値は空の文字列です。|  
+|**ProxyToUse**|Enum<br /><br /> -   **None** -この送信ポートのプロキシ サーバーを使用できません。<br />-   **既定の** -この送信ポートをホストする送信ハンドラーのプロキシ設定を使用します。<br />-   **UserSpecified** -指定されたプロキシ サーバーを使用して、 **ProxyAddress** プロパティです。|送信 HTTP トラフィックに使用するプロキシ サーバーを指定します。<br /><br /> 既定値: **なし**|  
+|**ProxyAddress**|文字列|プロキシ サーバーのアドレスを指定します。 使用して、 **https** または **http** セキュリティ構成に応じて設定します。 このアドレスの後に、コロンとポート番号を指定します。 たとえば、http://127.0.0.1:8080 と指定します。<br /><br /> 既定値は空の文字列です。|  
+|**ProxyUserName**|文字列|プロキシに使用するユーザー名を指定します。 Wcf-wshttp アダプターを活用、 [WSHttpBinding](http://go.microsoft.com/fwlink/?LinkId=81206) のバッファリングされた送信モードで、エンドポイントと通信します。 プロキシの資格情報の **WSHttpBinding** セキュリティ モードが場合にのみ当てはまる **トランスポート**, 、または **None**します。 設定した場合、 **SecurityMode** プロパティを **メッセージ** または **TransportWithMessageCredential**, 、Wcf-wshttp アダプターがで指定された資格情報を使用していない、 **ProxyUserName** と **ProxyPassword** プロキシに対する認証のプロパティです。 **注:**  、Wcf-wshttp 送信アダプターの使用、プロキシに対して基本認証です。 <br /><br /> 既定値は空の文字列です。|  
 |**ProxyPassword**|文字列|プロキシに使用するパスワードを指定します。<br /><br /> 既定値は空の文字列です。|  
-|**OutboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -BizTalk メッセージのボディ部を使用して、SOAP のコンテンツを作成する**本文**送信メッセージの要素。<br />-   **UseTemplate** -で提供されているテンプレートを使用して、 **OutboundXMLTemplate** SOAP の内容を作成するプロパティ**本文**送信メッセージの要素。<br /><br /> 使用する方法についての詳細、 **OutboundBodyLocation**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のデータ選択を指定**本文**送信 WCF メッセージの要素。<br /><br /> 既定値: **UseBodyElement**|  
-|**OutboundXMLTemplate**|文字列<br /><br /> 使用する方法についての詳細、 **OutboundXMLTemplate**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のコンテンツを XML 形式のテンプレートを指定**本文**送信メッセージの要素。 このプロパティは必要な場合、 **OutboundBodyLocation**プロパティに設定されている**UseTemplate**です。<br /><br /> 既定値は空の文字列です。|  
-|**InboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -SOAP のコンテンツを使用して**本文**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 **Body** 要素に複数の子要素がある場合は、最初の要素のみが BizTalk メッセージのボディ部になります。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br />-   **UseEnvelope** -全体の SOAP から BizTalk メッセージのボディ部を作成する**エンベロープ**受信メッセージのです。<br />-   **UseBodyPath** -ボディ パス式を使用して、 **InboundBodyPathExpression**プロパティを BizTalk メッセージのボディ部を作成します。 ボディ パス式は、受信メッセージの SOAP **Body** 要素のすぐ下の子要素に対して評価されます。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 使用する方法についての詳細、 **InboundBodyLocation**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のデータ選択を指定**本文**受信 WCF メッセージの要素。<br /><br /> 既定値: **UseBodyElement**|  
-|**InboundBodyPathExpression**|文字列<br /><br /> 使用する方法についての詳細、 **InboundBodyPathExpression**プロパティを参照してください[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。|BizTalk メッセージのボディ部を作成するために使用する受信メッセージの特定の部分を示すボディ パス式を指定します。 このボディ パス式が、SOAP の直接の子要素に対して評価されます**本文**受信メッセージのノードです。 このボディ パス式で複数のノードが返される場合は、最初のノードのみが BizTalk メッセージのボディ部に対して選択されます。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値は空の文字列です。|  
-|**InboundNodeEncoding**|Enum<br /><br /> -   **Base64** -Base64 エンコードします。<br />-   **16 進**: 16 進エンコードします。<br />-   **文字列**: テキスト エンコード - utf-8。<br />-   **XML** -WCF アダプターは、ボディ パス式で選択されたノードの外部の XML で、BizTalk メッセージ本文を作成する**InboundBodyPathExpression**です。|指定されたボディ パスで識別されるノードに対して、Wcf-wshttp 送信アダプタがデコードに使用するエンコードの種類を指定**InboundBodyPathExpression**です。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値: **XML**|  
-|**PropagateFaultMessage**|ブール値<br /><br /> -   **True**にサブスクライブしているアプリケーションへの送信処理に失敗したメッセージのルーティング (別の受信ポートやオーケストレーション スケジュールなど)。<br />-   **False** -一時停止に失敗したメッセージおよび否定受信確認応答 (NACK) を生成します。|送信処理に失敗したメッセージをルーティングまたは中断するかどうかを指定します。<br /><br /> このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値:**は True。**|  
+|**OutboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -BizTalk メッセージのボディ部を使用して、SOAP のコンテンツを作成する**本文**送信メッセージの要素。<br />-   **UseTemplate** -で提供されているテンプレートを使用して、 **OutboundXMLTemplate** SOAP の内容を作成するプロパティ **本文** 、送信メッセージの要素。<br /><br /> 使用する方法についての詳細、 **OutboundBodyLocation**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のデータ選択を指定 **本文** 送信 WCF メッセージの要素。<br /><br /> 既定値: **UseBodyElement**|  
+|**OutboundXMLTemplate**|文字列<br /><br /> 使用する方法についての詳細、 **OutboundXMLTemplate**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のコンテンツを XML 形式のテンプレートを指定 **本文** 、送信メッセージの要素。 このプロパティは必要な場合、 **OutboundBodyLocation** プロパティに設定されて **UseTemplate**します。<br /><br /> 既定値は空の文字列です。|  
+|**InboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -SOAP のコンテンツを使用して**本文**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 **Body** 要素に複数の子要素がある場合は、最初の要素のみが BizTalk メッセージのボディ部になります。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br />-   **UseEnvelope** -全体の SOAP から BizTalk メッセージのボディ部を作成 **エンベロープ** 受信メッセージのです。<br />-   **UseBodyPath** -ボディ パス式を使用して、 **InboundBodyPathExpression** プロパティを BizTalk メッセージのボディ部を作成します。 ボディ パス式は、受信メッセージの SOAP **Body** 要素のすぐ下の子要素に対して評価されます。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 使用する方法についての詳細、 **InboundBodyLocation**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のデータ選択を指定 **本文** 受信 WCF メッセージの要素。<br /><br /> 既定値: **UseBodyElement**|  
+|**InboundBodyPathExpression**|文字列<br /><br /> 使用する方法についての詳細、 **InboundBodyPathExpression**プロパティを参照してください[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。|BizTalk メッセージのボディ部を作成するために使用する受信メッセージの特定の部分を示すボディ パス式を指定します。 このボディ パス式が、SOAP の直下の子要素に対して評価されます **本文** 受信メッセージのノードです。 このボディ パス式で複数のノードが返される場合は、最初のノードのみが BizTalk メッセージのボディ部に対して選択されます。 このプロパティは必要な場合、 **InboundBodyLocation** プロパティに設定されて **UseBodyPath**します。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値は空の文字列です。|  
+|**InboundNodeEncoding**|Enum<br /><br /> -   **Base64** の Base64 エンコードします。<br />-   **16 進** : 16 進エンコードします。<br />-   **文字列** : テキスト エンコード - utf-8。<br />-   **XML** の WCF アダプターは、ボディ パス式で選択されたノードの外部の XML で BizTalk メッセージ本文を作成する **InboundBodyPathExpression**します。|指定されたボディ パスで識別されるノードに対して、Wcf-wshttp 送信アダプターがデコードに使用するエンコードの種類を指定 **InboundBodyPathExpression**します。 このプロパティは必要な場合、 **InboundBodyLocation** プロパティに設定されて **UseBodyPath**します。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値: **XML**|  
+|**PropagateFaultMessage**|ブール値<br /><br /> -   **True**にサブスクライブしているアプリケーションへの送信処理に失敗したメッセージのルーティング (別の受信ポートやオーケストレーション スケジュールなど)。<br />-   **False** -中断失敗したメッセージおよび否定受信確認応答 (NACK) を生成します。|送信処理に失敗したメッセージをルーティングまたは中断するかどうかを指定します。<br /><br /> このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 既定値: **は True。**|  
   
 ## <a name="configure-a-wcf-wshttp-send-port-with-the-biztalk-administration-console"></a>BizTalk 管理コンソールで、Wcf-wshttp 送信ポートを構成します。
   
@@ -69,19 +69,19 @@ WCF-WSHttp 送信ポートは、プログラムから、または BizTalk 管理
   
 ## <a name="configure-variables-for-a-wcf-wshttp-send-port"></a>Wcf-wshttp 送信ポートの変数を構成します。  
   
-1.  BizTalk 管理コンソールで、新しい送信ポートを作成するか、既存の送信ポートをダブルクリックして変更します。 詳細については、次を参照してください。[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)です。 すべての送信ポートのオプションを構成し、指定**Wcf-wshttp**の**型**オプション、**トランスポート**のセクションで、**全般**タブ  
+1.  BizTalk 管理コンソールで、新しい送信ポートを作成するか、既存の送信ポートをダブルクリックして変更します。 詳細については、次を参照してください。[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)です。 すべての送信ポートのオプションを構成し、指定 **Wcf-wshttp** の **型** オプション、 **トランスポート** のセクション、 **全般** ] タブをクリックします。  
   
-2.  **全般**] タブの [、**トランスポート**セクションで、をクリックして、**構成**横に**型**です。  
+2.  **全般** ] タブの [、 **トランスポート** ] をクリックして、 **構成** ボックスの横に **型**します。  
   
-3.  **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスの**全般** タブで、エンドポイント アドレス、サービス id を構成して、 **SOAPAction**用の HTTP ヘッダーWcf-wshttp 送信ポートです。 詳細については、**全般** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、送信、一般的な**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+3.  **Wcf-wshttp トランスポートのプロパティ** ] ダイアログ ボックスの [、 **全般** ] タブで、エンドポイント アドレス、サービス id を構成して、 **SOAPAction** Wcf-wshttp 送信ポートの HTTP ヘッダー。 詳細については、**全般**] タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ] ダイアログ ボックス、送信、一般的な**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
   
-4.  **Wcf-wshttp トランスポートのプロパティ** ダイアログ ボックスで、**バインド** タブで、タイムアウト、エンコード、およびトランザクションのプロパティを構成します。 詳細については、**バインド** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、送信、バインディング**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+4.  **Wcf-wshttp トランスポートのプロパティ** ] ダイアログ ボックスの [、 **バインド** ] タブで、タイムアウト、エンコード、およびトランザクションのプロパティを構成します。 詳細については、**バインド**] タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ] ダイアログ ボックス、送信、バインディング**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
   
-5.  **Wcf-wshttp トランスポートのプロパティ** ダイアログ ボックスで、**セキュリティ** タブで、Wcf-wshttp 送信ポートのセキュリティ機能を定義します。 詳細については、**セキュリティ** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、送信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+5.  **Wcf-wshttp トランスポートのプロパティ** ] ダイアログ ボックスの [、 **セキュリティ** ] タブで、Wcf-wshttp 送信ポートのセキュリティ機能を定義します。 詳細については、**セキュリティ**] タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ] ダイアログ ボックス、送信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
   
-6.  **Wcf-wshttp トランスポートのプロパティ** ダイアログ ボックスで、**プロキシ** タブで、Wcf-wshttp 送信ポートのプロキシ設定を構成します。 詳細については、**プロキシ** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、送信、プロキシ** タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+6.  **Wcf-wshttp トランスポートのプロパティ** ] ダイアログ ボックスで、 **プロキシ** ] タブで、Wcf-wshttp 送信ポートのプロキシ設定を構成します。 詳細については、**プロキシ**] タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ] ダイアログ ボックス、送信、プロキシ**] タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
-7.  **Wcf-wshttp トランスポートのプロパティ** ダイアログ ボックスで、**メッセージ** タブで、SOAP のデータ選択を指定**本文**要素。 詳細については、**メッセージ** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、送信、メッセージ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+7.  **Wcf-wshttp トランスポートのプロパティ** ] ダイアログ ボックスで、 **メッセージ** ] タブで、SOAP のデータ選択を指定 **本文** 要素。 詳細については、**メッセージ**] タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ] ダイアログ ボックス、送信、メッセージ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
   
 ## <a name="configure-a-wcf-wshttp-send-port-programmatically"></a>プログラムから Wcf-wshttp 送信ポートを構成します。
   

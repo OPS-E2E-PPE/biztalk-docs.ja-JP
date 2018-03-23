@@ -1,22 +1,22 @@
 ---
-title: "挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: 挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作の選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 340048ad-ce28-4acf-ae4e-f18bdb3b6f47
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d2bc522a1b0b60a9ba0b8407228dd1db65c4e6f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作の選択
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]一連の SQL Server データベース テーブルおよびビューの基本的な Insert、Select、Update、および削除操作を検出します。 これらの操作を使用することができますを実行して単純な SQL Insert、Select、Update、Delete ステートメントで Where 修飾対象のテーブルまたはビューの句。 このトピックでは、WCF サービス モデルを使用してこれらの操作を実行する方法について説明します。  
@@ -34,8 +34,8 @@ ms.lasthandoff: 09/20/2017
   
 |SQL Server のデータベース成果物|WCF クライアント名|  
 |----------------------------------|---------------------|  
-|テーブル|TableOp_ [Schema] _ [TABLE_NAME] のクライアント|  
-|表示|ViewOp_ [Schema] _ [VIEW_NAME] のクライアント|  
+|Table|TableOp_[Schema]_[TABLE_NAME]Client|  
+|表示|ViewOp_[Schema]_[VIEW_NAME]Client|  
   
  [スキーマ]; SQL Server のコレクション アイテムを =たとえば、dbo します。  
   
@@ -49,9 +49,9 @@ ms.lasthandoff: 09/20/2017
 |操作|メソッド シグネチャ|  
 |---------------|----------------------|  
 |Insert|長い [挿入 ([TABLE_NS]. [TABLE_NAME] 行) です。|  
-|Select|[TABLE_NS] です。[TABLE_NAME]を選択 (文字列の列、文字列のクエリ)|  
+|Select|[TABLE_NS].[TABLE_NAME][] Select(string COLUMNS, string QUERY);|  
 |Update|int 更新 ([TABLE_NS]. [TABLE_NAME] です。RowPair:operator[] 行) です。|  
-|DELETE|int Delete ([TABLE_NS]. [TABLE_NAME] 行) です。|  
+|Del|int Delete([TABLE_NS].[TABLE_NAME][] Rows);|  
   
  [TABLE_NS] テーブルの名前空間の名前を =たとえば、schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee です。  
   
@@ -86,7 +86,7 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
   
  **操作を選択します。**  
   
-|それら|QUERY|  
+|COLUMN_NAMES|QUERY|  
 |-------------------|-----------|  
 |ターゲット内の列名のコンマ区切りの一覧たとえば、「Employee_ID, 表記」です。 列の一覧では、結果セットに返される対象の列を指定します。 列リストで指定されていない列は、返されるレコード セット内の .NET の既定値に設定されます。 Nillable 列は、この値は**null**です。|クエリの対象の行を指定する SQL の WHERE 句の内容たとえば、"表記 = 'Manager'"です。 このパラメーターを設定することができます**null**ターゲットのすべての行を取得します。|  
   
@@ -130,7 +130,7 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
     client.ClientCredentials.UserName.Password = "<Enter password here>";  
     ```  
   
-     このスニペットで`TableOp_dbo_EmployeeClient`SqlAdapterBindingClient.cs で定義された WCF クライアントです。 このファイルにより生成されて、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 `SqlAdapterBinding_TableOp_dbo_Employee`クライアント エンドポイント構成の名前を指定、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティおよびその他の構成設定が含まれています。  
+     このスニペットで`TableOp_dbo_EmployeeClient`SqlAdapterBindingClient.cs で定義された WCF クライアントです。 このファイルにより生成されて、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 `SqlAdapterBinding_TableOp_dbo_Employee` クライアント エンドポイント構成の名前を指定、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティおよびその他の構成設定が含まれています。  
   
     > [!NOTE]
     >  このスニペットでは、構成ファイルからバインディングとエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定するさまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)です。  
@@ -296,4 +296,4 @@ catch (Exception ex)
 ```  
   
 ## <a name="see-also"></a>参照  
-[WCF サービス モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[WCF サービス モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

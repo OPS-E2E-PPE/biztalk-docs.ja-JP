@@ -1,11 +1,11 @@
 ---
-title: "CBRSample (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: CBRSample (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, routing
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - examples, filters
 - messages, examples
 ms.assetid: 8fba494c-9257-4eed-8b6a-867056147c2c
-caps.latest.revision: "26"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b772bc44d4a745d5bfa330e7df7fcadcf2c020db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="cbrsample-biztalk-server-sample"></a>CBRSample (BizTalk Server サンプル)
 CBRSample サンプルは、フィルタと送信マップを適用して、コンテンツに基づいてインスタンス メッセージを変換およびルーティングする方法を示しています。  
@@ -35,9 +35,9 @@ CBRSample サンプルは、フィルタと送信マップを適用して、コ�
   
 1.  ユーザー ID や氏名による識別情報、国コード付きの住所、電話番号情報など、人物の基本情報を含んでいるサンプル メッセージ形式を定義します。  
   
-2.  昇格、 **CountryCode**ことは、コントロールの変換およびルーティングにポート フィルタで使用できるように、入力ドキュメントのプロパティです。  
+2.  昇格、 **CountryCode** ことは、コントロールの変換およびルーティングにポート フィルタで使用できるように、入力ドキュメントのプロパティです。  
   
-3.  メッセージをカナダ バージョンに変換と**CountryCode**は 200 または米国バージョンと同じとき**CountryCode**が 100 にします。 どちらの変換が中間を除くすべてのデータの初期を通過 (**初期**)。 カナダ バージョンにもマップ**状態**に**Province**と**ZipCode**に**PinCode**です。  
+3.  メッセージをカナダ バージョンに変換と **CountryCode** は 200 または (米国) 版と同じとき **CountryCode**が 100 にします。 どちらの変換が中間を除くすべてのデータの初期を通過 (**初期**)。 カナダ バージョンにもマップ **状態** に **Province** と **ZipCode** に **PinCode**します。  
   
 4.  米国バージョンのメッセージを US ディレクトリに、カナダ バージョンのメッセージを CAN ディレクトリにルーティングします。  
   
@@ -46,16 +46,16 @@ CBRSample サンプルは、フィルタと送信マップを適用して、コ�
   
 |デザイン要素|選択理由|  
 |--------------------|--------------------------|  
-|既定の XML 受信パイプライン|-XMLReceive パイプラインは、プロパティの昇格をサポートしています。PassThruReceive パイプラインされていません。<br />-着信メッセージは既に XML 形式で、基本の逆アセンブリとパーティの解決以外の処理は必要ありません。|  
+|既定の XML 受信パイプライン|XMLReceive パイプラインは、プロパティの昇格をサポートしています。PassThruReceive パイプラインされていません。<br />-受信メッセージは既に XML 形式で、基本の逆アセンブリとパーティの解決以外の処理は必要ありません。|  
 |プロパティの昇格|-   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ルーティング プロパティ フィールドによって異なります。 識別フィールドはオーケストレーションによって使用されるため、ルーティングには使用できません。|  
-|サブスクリプション フィルター|-サブスクリプション フィルターは、プロパティ フィールドに基づいて 1 つまたは複数の条件を満たすメッセージをキャプチャして実際のルーティングを実行します。|  
+|サブスクリプション フィルター|-サブスクリプションのフィルターは、プロパティ フィールドに基づいて 1 つまたは複数の条件を満たすメッセージをキャプチャして実際のルーティングを実行します。|  
 |送信マップ|マップでは、1 つの形式から別のデータを変換します。 このサンプルでは、受信メッセージが米国形式またはカナダ形式にマップされます。|  
-|XMLTransmit|-送信 XML メッセージの基本的なアセンブリを実行します。PassThruTransmit パイプラインには、その他のサポートはありません。|  
+|XMLTransmit|-送信 XML メッセージの基本的なアセンブリを実行します。PassThruTransmit パイプラインには、追加のサポートをされていません。|  
   
  この基本パターンを拡張して、より複雑なシナリオに使用することができます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルは <`Samples Path>`\Messaging\CBRSample\\です。  
+ このサンプルは <`Samples Path>`\Messaging\CBRSample\\します。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -64,7 +64,7 @@ CBRSample サンプルは、フィルタと送信マップを適用して、コ�
 |CBRDataCAN.Xml、CBRDataUS.Xml|ファイル CBRInputSchema.xsd で定義されているスキーマに準拠したサンプル入力ファイルです。|  
 |CBRInput2CANMap.btm、CBRInput2USMap.btm|それぞれカナダ形式と米国形式の変換のマップ ファイルです。|  
 |CBRInputSchema.xsd、CBROutputSchemaCAN.xsd、CBROutputSchemaUS.xsd|それぞれ入力形式、カナダ出力形式、米国出力形式のスキーマ ファイルです。|  
-|CBRPromotedPropertySchema.xsd|スキーマ ファイルに対応する昇格させたプロパティを**CountryCode** XML 内の要素は、ファイルを入力します。|  
+|CBRPromotedPropertySchema.xsd|対応する昇格させたプロパティのスキーマ ファイル、 **CountryCode** 、XML の要素は、ファイルを入力します。|  
 |CBRSample.btproj、CBRSample.sln|このサンプルの BizTalk プロジェクト ファイルとソリューション ファイルです。|  
 |Cleanup.bat|アセンブリの展開を解除し、グローバル アセンブリ キャッシュからアセンブリを削除するために使用されます。 送信ポートと受信ポートが削除されます。 必要に応じて、インターネット インフォメーション サービス (IIS) の仮想ディレクトリが削除されます。|  
 |Setup.bat|このサンプルをビルドおよび初期化するために使用されます。|  
@@ -79,20 +79,20 @@ CBRSample サンプルは、フィルタと送信マップを適用して、コ�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     `<Samples Path>`**\Messaging\CBRSample**  
+     `<Samples Path>` **\Messaging\CBRSample**  
   
-2.  実行**Setup.bat**、次の操作を実行します。  
+2.  実行 **Setup.bat**, 、次の操作を実行します。  
   
-    -   入力の作成 (**で**) と出力フォルダ (**米国**と**できます**) このサンプルのです。  
+    -   入力を作成 (**で**) と出力フォルダ (**u. s.** と **できます**) このサンプルのです。  
   
     -   このサンプル用に Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルし、展開します。  
   
     -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所、送信ポート、および受信ポートを作成しバインドします。  
   
     > [!NOTE]
-    >  このサンプルでは、次の警告を作成して、ポートのバインド時に表示されます。  
+    >  このサンプルでは、作成してポートのバインドとは、次の警告が表示されます。  
     >   
-    >  **警告: 受信ハンドラーが指定されていない受信場所"CBRReceiveLocation"です。トランスポートの種類が一致するハンドラーを受信して更新しています。**  
+    >  **警告: 受信ハンドラーが指定されていない受信場所"CBRReceiveLocation"です。トランスポートの種類が一致するハンドラーを受信して更新します。**  
     >   
     >  この警告は無視してかまいません。 (インストールでの名前付け方法はユーザーによって異なる可能性があるため、ホスト名と受信ハンドラーはバインド ファイルから除外されています。)  
   
@@ -100,33 +100,33 @@ CBRSample サンプルは、フィルタと送信マップを適用して、コ�
     >  このサンプルを実行する前に、ビルドと初期化のプロセス中に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でエラーが報告されていないことを確認する必要があります。  
   
     > [!NOTE]
-    >  開き、Setup.bat を実行しなくてもこのサンプルでは、プロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して、厳密な名前のキー ペアを作成する必要があります。 結果として得られるアセンブリに署名するのにには、このキー ペアを使用します。  
+    >  開き、Setup.bat を実行することがなく、このサンプルでは、プロジェクトをビルドする場合は、最初に .NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。 結果として得られるアセンブリに署名するのにには、このキー ペアを使用します。  
   
     > [!NOTE]
     >  Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
   
 #### <a name="to-prepare-to-configure-the-receive-port-and-location-and-the-send-ports"></a>受信ポート、受信場所、および送信ポートを構成する準備を行うには  
   
-1.  **Microsoft SQL Management Studio**、適切な BizTalk 管理データベースを選択します。  
+1.  **Microsoft SQL Management Studio**, 、適切な BizTalk 管理データベースを選択します。  
   
     > [!NOTE]
     >  BizTalk 管理データベースは、BizTalk 構成データベースとも呼ばれます。  
   
 #### <a name="to-configure-enlist-and-start-the-us-send-port"></a>米国用の送信ポートの構成、参加、開始を行うには  
   
-1.  BizTalk Server 管理コンソールで、展開**送信ポート**を右クリックして**CBRUSSendPort**、順にクリック**編集**です。  
+1.  BizTalk Server 管理コンソールで [ **送信ポート**, を右クリックして **CBRUSSendPort**, 、] をクリックし、 **編集**します。  
   
-2.  **静的な一方向送信ポート プロパティ** ダイアログ ボックスの左側のフォルダ ツリーで、ダイアログ ボックスで選択**フィルターおよびマッピング & #124 です。フィルター**、設定して、新しい行を追加および**プロパティ**に**CBRSample.CountryCode**、したまま、**演算子**列に設定**==** 、および設定、**値**列**100**です。  
+2.  **静的な一方向送信ポート プロパティ** ダイアログ ボックスのダイアログ ボックスの左側のフォルダ ツリーで選択 **フィルターとのマッピングと #124 文字です。フィルター**, を設定して、新しい行を追加 **プロパティ** に **CBRSample.CountryCode**, したまま、 **演算子** 列に設定 **==**, と設定、 **値** 列を **100**します。  
   
-3.  ダイアログ ボックスの左側のフォルダ ツリーで選択**フィルターおよびマッピング & #124 です。送信マップ**、設定、**に適用するマップ**プロパティを**CBRSample.CBRInput2USMap**、順にクリック**[ok]**です。 マップを表示するには、スクロール ボタンのクリックが必要な場合があります。  
+3.  ダイアログ ボックスの左側のフォルダ ツリーで選択 **フィルターとのマッピングと #124 文字です。送信マップ**, 、設定されて、 **に適用するマップ** プロパティを **CBRSample.CBRInput2USMap**, 、順にクリック **OK**します。 マップを表示するには、スクロール ボタンのクリックが必要な場合があります。  
   
 #### <a name="to-configure-enlist-and-start-the-canadian-send-port"></a>カナダ用の送信ポートの構成、参加、開始を行うには  
   
-1.  BizTalk Server 管理コンソールで、展開**送信ポート**を右クリックして**CBRCANSendPort**、順にクリック**編集**です。  
+1.  BizTalk Server 管理コンソールで [ **送信ポート**, を右クリックして **CBRCANSendPort**, 、] をクリックし、 **編集**します。  
   
-2.  **静的な一方向送信ポート プロパティ** ダイアログ ボックスの左側のフォルダ ツリーで、ダイアログ ボックスで選択**フィルターおよびマッピング & #124 です。フィルター**、設定して、新しい行を追加および**プロパティ**に**CBRSample.CountryCode**、したまま、**演算子**列に設定**==** 、および設定、**値**列**200**です。  
+2.  **静的な一方向送信ポート プロパティ** ダイアログ ボックスのダイアログ ボックスの左側のフォルダ ツリーで選択 **フィルターとのマッピングと #124 文字です。フィルター**, を設定して、新しい行を追加 **プロパティ** に **CBRSample.CountryCode**, したまま、 **演算子** 列に設定 **==**, と設定、 **値** 列を **200**します。  
   
-3.  ダイアログ ボックスの左側のフォルダ ツリーで選択**フィルターおよびマッピング & #124 です。送信マップ**、設定、**に適用するマップ**プロパティを**CBRSample.CBRInput2CANMap**、順にクリック**[ok]**です。  
+3.  ダイアログ ボックスの左側のフォルダ ツリーで選択 **フィルターとのマッピングと #124 文字です。送信マップ**, 、設定されて、 **に適用するマップ** プロパティを **CBRSample.CBRInput2CANMap**, 、順にクリック **OK**します。  
   
  この手順により、送信ポートが受信ポートに接続されます。 このサンプルでは、昇格されたプロパティを使用してドキュメントをルーティングします。  
   
@@ -137,19 +137,19 @@ CBRSample サンプルは、フィルタと送信マップを適用して、コ�
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
-1.  入力ファイルをコピー **CBRDataCAN.xml**と**CBRDataUS.xml**、次の入力フォルダに。  
+1.  入力ファイルをコピー **CBRDataCAN.xml** と **CBRDataUS.xml**, 、次の入力フォルダにします。  
   
-     `<Samples Path>`**\Messaging\CBRSample\In**  
+     `<Samples Path>` **\Messaging\CBRSample\In**  
   
-2.  これらの各ファイルを変換する方法を確認し、次のいずれかにルーティングされる 2 つの出力フォルダーの値に基づいて、 **CountryCode**要素 (100 または 200)。  
+2.  これらの各ファイルを変換する方法を確認し、次のいずれかにルーティングされる 2 つの出力フォルダーの値に基づいて、 **CountryCode** 要素 (100 または 200)。  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]変換およびルーティング入力ファイル**CBRDataCAN.xml**フォルダーに。  
+    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 変換およびルーティング入力ファイル**CBRDataCAN.xml**フォルダーに。  
   
-         `<Samples Path>`**\Messaging\CBRSample\CAN**  
+         `<Samples Path>` **\Messaging\CBRSample\CAN**  
   
-    -   BizTalk Server は、変換および入力ファイルをルーティング**CBRDataUS.xml**フォルダーに。  
+    -   BizTalk Server は、変換し、入力ファイルをルーティング **CBRDataUS.xml** フォルダーにします。  
   
-         `<Samples Path>`**\Messaging\CBRSample\US**  
+         `<Samples Path>` **\Messaging\CBRSample\US**  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
  [なし] :  
@@ -157,4 +157,4 @@ CBRSample サンプルは、フィルタと送信マップを適用して、コ�
 ## <a name="see-also"></a>参照  
  [既定のパイプライン](../core/default-pipelines.md)   
  [送信ポートの送信マップを構成する方法](../core/how-to-configure-outbound-maps-for-a-send-port.md)   
- [メッセージングの (BizTalk Server Samples フォルダ)](../core/messaging-biztalk-server-samples-folder.md)
+ [Messaging (BizTalk Server Samples フォルダー)](../core/messaging-biztalk-server-samples-folder.md)

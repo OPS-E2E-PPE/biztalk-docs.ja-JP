@@ -1,23 +1,24 @@
 ---
-title: "ベスト プラクティス、SAP アダプターをセキュリティで保護する |Microsoft ドキュメント"
-ms.custom: 
+title: ベスト プラクティス、SAP アダプターをセキュリティで保護する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: security, best practices
+helpviewer_keywords:
+- security, best practices
 ms.assetid: e60014b5-ce2f-4fd4-be2a-921d5cd81267
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 34d6c56af06bb6b8dc0831c354d494bb62ad5bfa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="best-practices-to-secure-the-sap-adapter"></a>SAP アダプターをセキュリティで保護するベスト プラクティス
 このセクションより的確に機密データの保護を使用してまたはを使用するアプリケーションを開発するときに従う必要のあるベスト プラクティスを説明、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]です。  
@@ -40,9 +41,9 @@ ms.lasthandoff: 09/20/2017
   
 -   使用すると、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]から SAP システムのユーザー名パスワード資格情報を入力、**セキュリティ**のタブ、**アダプターの構成** ダイアログ ボックス。  
   
--   BizTalk Wcf-custom アダプターを構成するとき、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]送信ポートを SAP システムからのユーザー名パスワード資格情報を入力してください、**資格情報**のタブ、 **にWCFカスタムトランスポートを構成します。。**  ダイアログ ボックス。  
+-   BizTalk Wcf-custom アダプターを構成するとき、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]送信ポートを SAP システムからのユーザー名パスワード資格情報を入力してください、**資格情報**のタブ、 **にWCFカスタムトランスポートを構成します。**  ダイアログ ボックス。  
   
--   BizTalk Wcf-custom アダプターを構成するとき、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 、受信場所に、SAP システムからのユーザー名パスワード資格情報を入力してください、**他の**のタブ、 **にWCFカスタムトランスポートを構成します。。**  ダイアログ ボックス。  
+-   BizTalk Wcf-custom アダプターを構成するとき、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 、受信場所に、SAP システムからのユーザー名パスワード資格情報を入力してください、**他の**のタブ、 **にWCFカスタムトランスポートを構成します。**  ダイアログ ボックス。  
   
  詳細については、次を参照してください。 [SAP アダプターと BizTalk Server によるセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)です。
   
@@ -64,14 +65,14 @@ ms.lasthandoff: 09/20/2017
   
 -   ホストしている、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で Microsoft インターネット インフォメーション サービス (IIS) web サービスは公開操作によって表示される、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Web クライアントにします。 これらの操作は、このデータが可能な限り安全であることを確認のための対策を行う必要がありますので、インターネット経由で機密データを交換する必要があります。  
   
-     [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]HTTP トランスポートの 2 つの標準バインディングは、: **BasicHttpBinding**なしのセキュリティ機構の基本的な HTTP トランスポートを提供、 **WSHttpBinding**トランスポート レベルの双方をサポートしているとメッセージ レベルのセキュリティ メカニズム。  
+     [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] HTTP トランスポートの 2 つの標準バインディングは、: **BasicHttpBinding**なしのセキュリティ機構の基本的な HTTP トランスポートを提供、 **WSHttpBinding**トランスポート レベルの双方をサポートしているとメッセージ レベルのセキュリティ メカニズム。  
   
      使用するか、 **BasicHttpBinding** over HTTPS 接続またはを使用して、 **WSHttpBinding**データを保護するためにします。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]が含まれています、[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]を WCF サービスの LOB アーティファクトを生成します。 このウィザードでは、使用のみがサポート**BasicHttpBinding**です。  
   
      お客様の環境を提供する追加のセキュリティ メカニズムを活用するカスタム HTTP バインディングを作成することもできます。 詳細については、セキュリティ機能の[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供しますを参照してください[セキュリティで保護するサービスとクライアント](https://msdn.microsoft.com/library/ms734736.aspx)です。 
   
 ## <a name="security-best-practices-for-wcf-diagnostic-tracing-and-message-logging"></a>WCF の診断トレースとメッセージ ログのセキュリティ ベスト プラクティス  
- [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]診断トレースとメッセージ ログをサポートしています。 構成ファイルまたは Windows Management Instrumentation (WMI) を使用して診断トレースとメッセージ ログを構成します。 設定すると、構成オプションに応じて[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]診断トレースまたはログ記録が機密情報をログを出力メッセージ ファイルをここで、可能性のある公開することを監視する未承認ユーザーがします。  
+ [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] 診断トレースとメッセージ ログをサポートしています。 構成ファイルまたは Windows Management Instrumentation (WMI) を使用して診断トレースとメッセージ ログを構成します。 設定すると、構成オプションに応じて[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]診断トレースまたはログ記録が機密情報をログを出力メッセージ ファイルをここで、可能性のある公開することを監視する未承認ユーザーがします。  
   
  これらの機能を有効にすることによって公開される可能性のあるセキュリティ上の脅威を軽減するために、WCF ドキュメントで提供される推奨事項に従ってください。 少なくともには、診断トレースとメッセージ ログの次のベスト プラクティスに従う必要があります。  
   
@@ -81,11 +82,11 @@ ms.lasthandoff: 09/20/2017
   
  クライアント アプリケーション間で交換されるメッセージに具体的には、次の警告を適用し、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]:  
   
--   [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]診断トレース ログに記録できますで交換されるメッセージのヘッダー (は本文ではない) で、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 メッセージのアクションは、メッセージ ヘッダーにあるため、これで呼び出された操作によってがわかります、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]クライアントによってです。  
+-   [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] 診断トレース ログに記録できますで交換されるメッセージのヘッダー (は本文ではない) で、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 メッセージのアクションは、メッセージ ヘッダーにあるため、これで呼び出された操作によってがわかります、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]クライアントによってです。  
   
 -   場合[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メッセージのログ記録が有効になっていると`logMessagesAtServiceLevel`は`true`、アダプター クライアント間で交換されるメッセージのメッセージ ヘッダー (ただし、メッセージ本文ではない)、および[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ログに記録されます。 メッセージのアクションは、メッセージ ヘッダーにあるため、これで呼び出されるクライアントの操作によってがわかります、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 場合`logEntireMessage`も`true`メッセージの本文をログに記録されます。 機密性の高いデータベース情報を明らかにこのことができます。  
   
      診断トレースを有効にするとセキュリティの向上の詳細については、次を参照してください。[セキュリティに関する注意事項とトレース用の便利なヒント](https://msdn.microsoft.com/library/ms733053.aspx)です。 メッセージのログ記録を有効にするとセキュリティの向上の詳細については、次を参照してください。[メッセージ ログのセキュリティに関する注意事項](https://msdn.microsoft.com/library/ms730318.aspx)です。  
   
 ## <a name="see-also"></a>参照  
-[SAP アプリケーションのセキュリティ保護します。](../../adapters-and-accelerators/adapter-sap/secure-your-sap-applications.md)   
+[SAP アプリケーションをセキュリティで保護する](../../adapters-and-accelerators/adapter-sap/secure-your-sap-applications.md)   

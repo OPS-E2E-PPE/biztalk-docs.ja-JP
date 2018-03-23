@@ -1,23 +1,23 @@
 ---
-title: "IDOC 操作のメッセージ スキーマの BizTalk では、my SAP アダプター |Microsoft ドキュメント"
-description: "メッセージ操作、構造、および mySAP アダプターの BizTalk アダプター パック (BAP) を使用して Idoc を送受信するアクション"
-ms.custom: 
+title: IDOC 操作のメッセージ スキーマの BizTalk では、my SAP アダプター |Microsoft ドキュメント
+description: メッセージ操作、構造、および mySAP アダプターの BizTalk アダプター パック (BAP) を使用して Idoc を送受信するアクション
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 601aa9f9-e42f-47aa-b020-7a1eed4f0780
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 53da14ff55d427e3507273af4c991072cff26bec
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="message-schemas-for-idoc-operations"></a>IDOC 操作のメッセージ スキーマ
 中間ドキュメント (IDOC) は、SAP および SAP 以外のシステムの両方で非同期的に通信するため、SAP でサポートされている標準の EDI のようなドキュメントです。 IDOC は、取引先の SAP システムまたは外部プログラムの間の販売注文のようなビジネス ドキュメントの送受信に使用されます。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/28/2017
 |SendIdoc|`<SendIdoc xmlns="[MSG_VERSION]/Idoc">   <idocData>docDataString</idocData>   <guid>guid</guid> </SendIdoc>`|弱い型指定の IDOC を SAP に送信します。<br /><br /> の IDOC スキーマは、弱い型指定します。<br /><br /> -制御レコードとのデータ レコードで構成される 1 つの文字列フィールドとして、IDOC を公開します。<br /><br /> [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] IDOC を送信に使用される SAP TID は GUID を関連付けます。 要求メッセージ内の GUID を指定するかどうかを選択できます。 要求メッセージの GUID が含まれていない場合、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 1 つ生成されます。 応答メッセージの GUID が返されます|  
 |SendIdoc 応答|`<SendIdocResponse xmlns="[MSG_VERSION]/Idoc">   <guid>guid</guid> </SendIdocResponse>`|IDOC が SAP システムに送信されたことを示します。<br /><br /> 場合、 **AutoConfirmSentIdocs**プロパティのバインドは**true**、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムでトランザクションを自動的に確認し、応答で返される GUID を無視することができます。 場合、 **AutoConfirmSentIdocs**プロパティのバインドは**false**、呼び出す必要があります、 **RfcConfirmTransID** GUID を持つ操作がによって返される、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]にSAP システムでトランザクションを完了します。<br /><br /> 呼び出すことができます、 **SapAdapterUtilities.ConvertGuidToTid** LUW に関連付けられている TID を取得します。|  
   
- [MSG_VERSION] = メッセージ バージョンの文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03 です。  
+ [MSG_VERSION] = メッセージ バージョンの文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03です。  
   
  [バージョン] (2 または 3) の IDOC のリリース バージョンを = です。  
   
@@ -94,11 +94,11 @@ ms.lasthandoff: 11/28/2017
 |操作|操作|例|  
 |---------------|------------|-------------|  
 |Send|[MESSAGE_VERSION]/Idoc/[バージョン]/[IDOCTYP]/[CIMTYP]/[RELNO]/[送信]|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send|  
-|応答を送信します。|[MESSAGE_VERSION]/Idoc/[バージョン]/[IDOCTYP]/[CIMTYP]/[RELNO]/送信/応答|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send/response|  
-|SendIdoc|[MESSAGE_VERSION]/Idoc SendIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc|  
+|応答を送信します。|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Send/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send/response|  
+|SendIdoc|[MESSAGE_VERSION]/Idoc/SendIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc|  
 |SendIdoc 応答|[MESSAGE_VERSION]/Idoc/SendIdoc/応答|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc/response|  
   
- [MESSAGE_VERSION] = メッセージ バージョンの文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03 です。  
+ [MESSAGE_VERSION] = メッセージ バージョンの文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03です。  
   
  [バージョン] (2 または 3) の IDOC のリリース バージョンを = です。  
   
@@ -123,7 +123,7 @@ ms.lasthandoff: 11/28/2017
 |ReceiveIdoc|`<ReceiveIdoc xmlns="[MSG_VERSION]/Idoc">   <idocData>docDataString</idocData> </ReceiveIdoc>`|SAP からの弱い型指定の IDOC を受信します。<br /><br /> の IDOC スキーマは、弱い型指定します。<br /><br /> -制御レコードとのデータ レコードで構成される 1 つの文字列フィールドとして、IDOC を公開します。|  
 |ReceiveIdoc 応答|`<ReceiveIdocResponse xmlns="[MSG_VERSION]/Idoc"> </ReceiveIdocResponse>`|IDOC が SAP システムから受信されたことを示します。|  
   
- [MSG_VERSION] = メッセージ バージョンの文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03 です。  
+ [MSG_VERSION] = メッセージ バージョンの文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03です。  
   
  [バージョン] (2 または 3) の IDOC のリリース バージョンを = です。  
   
@@ -183,8 +183,8 @@ ms.lasthandoff: 11/28/2017
   
 |操作|操作|例|  
 |---------------|------------|-------------|  
-|Receive|[MESSAGE_VERSION]/Idoc/[バージョン]/[IDOCTYP]/[CIMTYP]/[RELNO]/受信|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive|  
-|応答を受信します。|[MESSAGE_VERSION]/Idoc/[バージョン]/[IDOCTYP]/[CIMTYP]/[RELNO]/受信-応答|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive/response|  
-|ReceiveIdoc|[MESSAGE_VERSION]/Idoc ReceiveIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc|  
+|Receive|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Receive|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive|  
+|応答を受信します。|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Receive/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive/response|  
+|ReceiveIdoc|[MESSAGE_VERSION]/Idoc/ReceiveIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc|  
 |ReceiveIdoc 応答|[MESSAGE_VERSION]/Idoc/ReceiveIdoc/応答|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc/response|  
   

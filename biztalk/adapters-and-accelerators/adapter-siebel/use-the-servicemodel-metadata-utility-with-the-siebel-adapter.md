@@ -1,23 +1,23 @@
 ---
-title: "BizTalk adapter 用 Siebel eBusiness Applications ServiceModel メタデータ ユーティリティ ツールを使用して |Microsoft ドキュメント"
-description: "Svcutil.exe を使用して、既定以外のバインディングまたは Siebel アダプターの BizTalk アダプター パック (BAP) と WCF クライアント クラスまたは WCF サービス コントラクトを作成するには"
-ms.custom: 
+title: BizTalk adapter 用 Siebel eBusiness Applications ServiceModel メタデータ ユーティリティ ツールを使用して |Microsoft ドキュメント
+description: Svcutil.exe を使用して、既定以外のバインディングまたは Siebel アダプターの BizTalk アダプター パック (BAP) と WCF クライアント クラスまたは WCF サービス コントラクトを作成するには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03d16481-cc8b-4e28-a33c-92e48a9a7e8f
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a0bcf80d4a1ea9fc6b54403faa14084816e413be
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>BizTalk adapter 用 Siebel eBusiness Applications ServiceModel メタデータ ユーティリティ ツールを使用します。
 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用するには操作のための WCF クライアント クラスを生成すること、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を公開します。 WCF クライアント クラスを生成する svcutil.exe を実行した後は、コードで生成されたファイルをインクルードし、Siebel システムに対して操作を実行する WCF クライアント クラスのインスタンスを作成できます。  
@@ -65,7 +65,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
 > [!NOTE]
 >  バインドのプロパティのいずれかを設定することができます、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]バインド構成にします。  
   
- Svcutil.exe の既定以外のバインディングを構成する方法の詳細についてを参照してください「カスタム セキュリティで保護されたメタデータのエンドポイント」で、WCF ドキュメント[http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077)です。  
+ Svcutil.exe の既定以外のバインディングを構成する方法の詳細についてを参照してください「カスタム セキュリティで保護されたメタデータのエンドポイント」で、WCF ドキュメント[ http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077)です。  
   
 ## <a name="creating-a-wcf-client-class-with-svcutilexe"></a>Svcutil.exe で WCF クライアント クラスを作成します。  
  WCF クライアント コードを生成する svcutil.exe を使用する、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]、接続を指定する URI を指定する必要があります、 **IMetadataExchange** (mex) エンドポイントと操作の対象となる svcutil.exe を生成するにはコードです。 Siebel システムの接続の資格情報は、接続 URI でも指定する必要があります。  
@@ -83,11 +83,11 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
   
  この例では、ACCOUNT\ACCOUNT ビジネス オブジェクトの挿入操作の WCF クライアント クラスを作成します。  
   
- **。 \svcutil"siebel://Username=YourUserName;パスワード =YourPassword@Siebel_server:1234しますか?SiebelEnterpriseServer = ent_server & SiebelObjectManager = obj_mgr & 言語日本語 & wsdl op を = = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert"**  
+ **.\svcutil "siebel://Username=YourUserName;Password=YourPassword@Siebel_server:1234?SiebelEnterpriseServer=ent_server&SiebelObjectManager=obj_mgr&Language=enu&wsdl&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert"**  
   
  この例では、挿入操作と ACCOUNT\ACCOUNT ビジネス オブジェクトの削除操作の両方の WCF クライアント クラスを作成します。  
   
- **。 \svcutil"siebel://Username=YourUserName;パスワード =YourPassword@Siebel_server:1234しますか?SiebelEnterpriseServer = ent_server & SiebelObjectManager = obj_mgr & 言語日本語 & wsdl op を = = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert & op http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete を ="**  
+ **。 \svcutil"siebel://Username=YourUserName;パスワード =YourPassword@Siebel_server:1234しますか?SiebelEnterpriseServer = ent_server & SiebelObjectManager = obj_mgr & 言語日本語 & wsdl op を = =http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete"**  
   
 > [!IMPORTANT]
 >  引用符で囲まれたコマンド ラインで、接続 URI を配置する必要があります。 それ以外の場合、svcutil.exe しようとすると操作のメタデータを取得する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]はサポートしていません。 これらの試行の結果は未定義です。  

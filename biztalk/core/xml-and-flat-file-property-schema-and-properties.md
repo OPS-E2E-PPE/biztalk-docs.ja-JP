@@ -1,29 +1,29 @@
 ---
-title: "XML とフラット ファイル プロパティ スキーマおよびプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: XML とフラット ファイル プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d917b82-62c6-489f-99a9-97e429b6f7c0
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fb69a5375603d307c15a0bf884c924c0f6e6bb31
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="xml-and-flat-file-property-schema-and-properties"></a>XML とフラット ファイル プロパティ スキーマおよびプロパティ
-**Http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties**名前空間には、フラット ファイル アセンブラとフラット ファイル逆アセンブラー パイプライン コンポーネントの構成に使用できるプロパティが含まれています。 次の表に、プロパティを示します。  
+**http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties**名前空間には、フラット ファイル アセンブラとフラット ファイル逆アセンブラー パイプライン コンポーネントの構成に使用できるプロパティが含まれています。 次の表に、プロパティを示します。  
 
 ## <a name="properties-list"></a>[プロパティ]
   
-|プロパティ|[種類]|Description|  
+|プロパティ|型|Description|  
 |--------------|----------|-----------------|  
 |**FlatFileHeaderDocument**|xs:string|受信フラット ファイル ドキュメントのヘッダーをこのプロパティに格納できます。|  
 |**AllowUnrecognizedMessage**|xs:Boolean|認識されないメッセージを XML コンポーネントで処理するかどうかを指定します。|  
@@ -36,12 +36,12 @@ ms.lasthandoff: 09/20/2017
 |**AddXMLDeclaration**|xs:boolean|送信ドキュメントに XML 宣言を追加するかどうかを指定します。|  
 |**HeaderSpecName**|xs:string|フラット ファイル ドキュメントのヘッダーを指定します。|  
 |**TrailerSpecName**|xs:string|フラット ファイル ドキュメントのトレーラーを指定します。|  
-|**PromotePropertiesOnly**|xs:boolean|設定すると**True**XML 逆アセンブラー コンポーネントがメッセージのエンベロープを削除または逆アセンブルしてされません。 プロパティの昇格のみが実行されます。|  
+|**PromotePropertiesOnly**|xs:boolean|設定すると **True**, 、XML 逆アセンブラー コンポーネントがメッセージ エンベロープを削除するか、逆アセンブルしていません。 プロパティの昇格のみが実行されます。|  
   
 ## <a name="see-also"></a>参照  
--  [フラット ファイル アセンブラー パイプライン コンポーネントを構成します。](../core/how-to-configure-the-flat-file-assembler-pipeline-component.md)   
--  [フラット ファイル逆アセンブラー パイプライン コンポーネントを構成します。](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)   
--  [XML アセンブラー パイプライン コンポーネントを構成します。](../core/how-to-configure-the-xml-assembler-pipeline-component.md)   
--  [XML 逆アセンブラー パイプライン コンポーネントを構成します。](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)   
--  [ネイティブ パイプライン コンポーネントを構成します。](../core/configuring-native-pipeline-components.md)   
--  **メッセージ コンテキスト プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+-  [フラット ファイル アセンブラー パイプライン コンポーネントの構成](../core/how-to-configure-the-flat-file-assembler-pipeline-component.md)   
+-  [フラット ファイル逆アセンブラー パイプライン コンポーネントの構成](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)   
+-  [XML アセンブラー パイプライン コンポーネントの構成](../core/how-to-configure-the-xml-assembler-pipeline-component.md)   
+-  [XML 逆アセンブラー パイプライン コンポーネントの構成](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)   
+-  [ネイティブ パイプライン コンポーネントの構成](../core/configuring-native-pipeline-components.md)   
+-  **メッセージ コンテキスト プロパティ** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

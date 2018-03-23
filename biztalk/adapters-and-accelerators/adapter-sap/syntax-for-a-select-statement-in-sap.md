@@ -1,23 +1,24 @@
 ---
-title: "SAP の SELECT ステートメントの構文 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP の SELECT ステートメントの構文 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SELECT statement, syntax for
+helpviewer_keywords:
+- SELECT statement, syntax for
 ms.assetid: 47120d74-bf41-4622-a6bc-7b8ddc959305
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>SAP の SELECT ステートメントの構文
 次のセクションでは、文法仕様に対する SELECT クエリを実装するための記述、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。 いくつかのケースでは、構文は、基本の TRANSACT-SQL 構文から若干異なることを確認します。  
@@ -32,15 +33,15 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
  各要素の説明は次のとおりです。  
   
--   **< select_list >** = `[ {table_name.}[0,1]column_name { AS alias_name } [0,1] } [ 1, …n ]`  
+-   **<select_list>** = `[ {table_name.}[0,1]column_name { AS alias_name } [0,1] } [ 1, …n ]`  
   
--   **< Join_Condition >** = `[Alias_name.|table_name.]column_name <expr> [Alias_name.|table_name.]column_name`  
+-   **<Join_Condition>** = `[Alias_name.|table_name.]column_name <expr> [Alias_name.|table_name.]column_name`  
   
--   **\<述語\>** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
+-   **\<predicate\>** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
   
  サポートされている条件と式は、次のようには。  
   
--   **\<条件\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
+-   **\<condition\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
   
 -   **\<expr\>** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
   
@@ -48,7 +49,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
  **オプションのキーワードの値**  
   
- としてオプションを指定できます`OPTION '<option>'`ここで、`<option> = 'no_conversion' | 'batchsize <size>' | 'disabledatavalidation'`  
+ としてオプションを指定できます`OPTION '<option>'`ここで、 `<option> = 'no_conversion' | 'batchsize <size>' | 'disabledatavalidation'`  
   
 -   **No_conversion**オプション。  
   
@@ -165,13 +166,13 @@ Table | '['Table']'
   
      `SELECT BUKRS from T001`  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]SELECT ステートメントでは重複するエイリアス名はサポートされません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SELECT ステートメントでは重複するエイリアス名はサポートされません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
   
     ```  
     SELECT KUNNR AS [MYKNA1], JMJAH AS MYKNA1 from KNA1 where KUNNR LIKE 'T-S62A08' AND JMJAH=1995  
     ```  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]重複する列名を含む SELECT ステートメントはサポートされません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] 重複する列名を含む SELECT ステートメントはサポートされません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
   
     ```  
     SELECT KUNNR AS [MYKNA1], KUNNR AS MYKNA2 from KNA1 where MYKNA2='T-S62A08'  
@@ -183,13 +184,13 @@ Table | '['Table']'
     SELECT NAME1, PSTLZ  from KNA1 where CITY IS NULL AND NAME1 LIKE '%MODE%'  
     ```  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]SELECT ステートメントで ORDER BY 句はサポートされません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SELECT ステートメントで ORDER BY 句はサポートされません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
   
     ```  
     SELECT NAME1  AS [MYNAME],  LAND1, KUNNR  from KNA1 where NAME1 LIKE '%MODE%'  ORDER BY NAME1  ASC  
     ```  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]SAP テーブル内のすべてのフィールドを選択するアスタリスク (*) を指定することはできません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP テーブル内のすべてのフィールドを選択するアスタリスク (*) を指定することはできません。 したがって、次の SELECT ステートメントでは、エラーがスローされます。  
   
     ```  
     SELECT spfli.* from spfli inner join sflight on spfli.carrid = sflight.carrid  
@@ -197,7 +198,7 @@ Table | '['Table']'
   
      すべてのフィールドを選択するには、個別にフィールド名を指定する必要があります。  
   
--   SELECT ステートメントの一部として、SELECT ステートメントの出力の書き込み先となるファイルを指定することができます。 ただし、出力ファイルがネットワーク共有上にある場合は、SAP サービスが実行されている SAP サービス アカウントにネットワーク共有に対する書き込み権限があることを確認してください。 例:  
+-   SELECT ステートメントの一部として、SELECT ステートメントの出力の書き込み先となるファイルを指定することができます。 ただし、出力ファイルがネットワーク共有上にある場合は、SAP サービスが実行されている SAP サービス アカウントにネットワーク共有に対する書き込み権限があることを確認してください。 以下に例を示します。  
   
     ```  
     SELECT * into file '\\share\output.txt' from spfli inner join sflight on spfli.carrid = sflight.carrid  
@@ -265,7 +266,7 @@ Table | '['Table']'
     select A.x, B.y from A inner join B on B.n = A.m  
     ```  
   
--   SELECT ステートメントには、JOIN 句で「と等しい」の条件のみを含めることができます。 例:  
+-   SELECT ステートメントには、JOIN 句で「と等しい」の条件のみを含めることができます。 以下に例を示します。  
   
     ```  
     select * from spfli inner join sflight on spfli.carrid = sflight.carrid  
@@ -273,7 +274,7 @@ Table | '['Table']'
   
 -   SELECT ステートメントは、SAP システムから文字列型の列を取得できません。  
   
--   SELECT ステートメントでは、1 つの結合だけを含める必要があります。 例:  
+-   SELECT ステートメントでは、1 つの結合だけを含める必要があります。 以下に例を示します。  
   
     ```  
     select * from spfli inner join sflight on spfli.carrid = sflight.carrid  

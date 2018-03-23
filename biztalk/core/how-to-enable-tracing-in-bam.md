@@ -1,22 +1,22 @@
 ---
-title: "BAM のトレースを有効にする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM のトレースを有効にする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4da99e74-a41d-4ab1-a07d-e3bee6187216
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 084eaf8cd4ba1c251b1c196830f76ef9c6a8e33f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>BAM のトレースを有効にする方法
 BAM のトレースを有効にすると、次の 5 つの BAM コンポーネント内で発生した問題のトラブルシューティングに役立ちます。  
@@ -35,16 +35,16 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
  BAM 管理ユーティリティのトレースを有効にすることによって、展開エラーに関する情報を取得することができます。 これは、2 つの方法で行うことができます。 コマンド ラインを使用して特定の BM.exe コマンドのトレースを有効にする方法と、BAM 管理ユーティリティの構成ファイルを変更してすべての BM.exe コマンドのトレースを有効にする方法です。  
   
 ### <a name="using-the-command-line"></a>コマンド ラインの使用  
- 使用して BM.exe コマンド ライン トレースがアクティブ化、 **-トレース: で &#124;以外の場合はオフ**スイッチします。 Trace スイッチを使用すると、構成ファイルの設定が上書きされます。  
+ BM.exe コマンド ライン トレースをアクティブに使用する、 **-トレース: &#124;オフ** スイッチです。 Trace スイッチを使用すると、構成ファイルの設定が上書きされます。  
   
  このスイッチは、通常の BM.exe コマンドと組み合わせて使用します。  
   
  例:  
   
- **bm.exe deploy-all DefinitionFile:PO.xml – トレース: で**  
+ **bm.exe deploy-all DefinitionFile:PO.xml – トレース:**   
   
 ### <a name="using-the-configuration-file"></a>構成ファイルの使用  
- [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking フォルダーにある BM.exe.config 構成ファイルを変更することによって、トレースを有効にすることができます。 このファイルが含まれています、 **system.diagnostics**セクション トレース要素が含まれます。 このセクションのコメントを解除すると、トレースが有効になります。 既定では、トレースは無効になっています。  
+ [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking フォルダーにある BM.exe.config 構成ファイルを変更することによって、トレースを有効にすることができます。 このファイルには、 **system.diagnostics** セクション トレース要素が含まれます。 このセクションのコメントを解除すると、トレースが有効になります。 既定では、トレースは無効になっています。  
   
  `<system.diagnostics>`  
   
@@ -183,10 +183,10 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
 ## <a name="bam-alerting"></a>BAM 警告  
  BAM 警告のトレースを有効にすると、警告配信エラーのトラブルシューティングに役立ちます。  
   
- BAM 警告は、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Notification Services インフラストラクチャを基盤としています。 BAM 警告のトレースを有効にするには、トラブルシューティングのトピックで、Notification Services を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=79416](http://go.microsoft.com/fwlink/?LinkId=79416)です。  
+ BAM 警告は、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Notification Services インフラストラクチャを基盤としています。 BAM 警告のトレースを有効にするには、トラブルシューティングのトピックで、Notification Services を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=79416](http://go.microsoft.com/fwlink/?LinkId=79416)です。  
   
 ## <a name="bam-interceptors"></a>BAM インターセプター  
- BAM インターセプターのエンド ツー エンド トレースを有効にするアプリケーションの構成ファイルを変更する — Web ホスト アプリケーション、appname.config 自己ホスト型アプリケーションの場合は Web.config です。 ファイルの変更方法の例を次に示します。  
+ BAM インターセプターのエンド ツー エンド トレースを有効にするには、アプリケーションの構成ファイルを変更するなど、Web ホストされるアプリケーション appname.config 自己ホスト型アプリケーションの場合は Web.config です。 ファイルの変更方法の例を次に示します。  
   
 ```  
 <system.diagnostics>  
@@ -216,14 +216,14 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
 |[エラー]|すべての例外をログに記録します。|  
 |警告|エラーまたは重大なエラーにつながる可能性のある条件が存在します。|  
 |情報|システムの状態の監視と診断、パフォーマンスの測定、またはプロファイルに役立つメッセージが生成されます。 このような情報は、容量の計画やパフォーマンス管理に利用できます。|  
-|[詳細]|ユーザー コードとサービスの両方を対象とするデバッグ レベルのトレースです。|  
+|Verbose|ユーザー コードとサービスの両方を対象とするデバッグ レベルのトレースです。|  
 |すべて|すべてのメッセージが対象になります。|  
   
 > [!NOTE]
 >  トレースはパフォーマンスに影響することがあります。 トレースを有効にするのは、トラブルシューティングの操作を実行する場合に限ってください。  
   
 ### <a name="viewing-the-wcf-trace-file"></a>WCF トレース ファイルの表示  
- WCF トレースを分析するには、WCF Service Trace Viewer ツールを使用します。 サービス トレース ビューアー ツールの詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)です。  
+ WCF トレースを分析するには、WCF Service Trace Viewer ツールを使用します。 サービス トレース ビューアー ツールの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)です。  
   
 ## <a name="see-also"></a>参照  
  [BAM の管理](../core/managing-bam.md)

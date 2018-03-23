@@ -1,22 +1,22 @@
 ---
-title: "競合回避モジュールとアダプターのプロバイダー フレームワーク |Microsoft ドキュメント"
-ms.custom: 
+title: 競合回避モジュールとアダプターのプロバイダー フレームワーク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb7ea42e-b32c-40a8-b36b-c349f56f6edd
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6b97eec38f868a6d1aa00684d92166bb2759a51d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>競合回避モジュールとアダプターのプロバイダー フレームワーク
 競合回避モジュールとアダプターのプロバイダー フレームワークは、行程、変換、およびエンドポイントの解像度とルーティングをサポートします。 フレームワークを動的にエンドポイントを解決および送信アダプターのプロパティを設定します。 競合回避モジュールの後にコンポーネント (たとえば、送信の Web サービス エンドポイントを検索する Universal Description, Discovery, and Integration [UDDI] を使用して) エンドポイントを解決する、アダプター プロバイダーのコンポーネントが登録済みの BizTalk Server の特定のプロパティを設定アダプター。 たとえば、Wcf-basichttp アダプター プロバイダーは、BizTalk 固有のメッセージに、エンドポイント、特定の BizTalk アダプターを使用する URI のコンテキスト プロパティを設定します。FTP アダプター プロバイダーは、FTP アダプターに固有のプロパティを設定します。  
@@ -36,9 +36,9 @@ ms.lasthandoff: 12/01/2017
   
  接続文字列の例を次に示します。  
   
--   **静的**  
+-   **STATIC**  
   
-     静的:\\\TransportType= です。  
+     STATIC:\\\TransportType=;  
   
      TransportLocation http://localhost/ESB.CanadianServices/SubmitPOService.asmx; を =  
   
@@ -48,15 +48,15 @@ ms.lasthandoff: 12/01/2017
   
      JaxRpcResponse = false。  
   
-     MessageExchangePattern = です。  
+     MessageExchangePattern=;  
   
-     TargetNamespace = http://globalbank.esb.dynamicresolution.com/canadianservices/;  
+     TargetNamespace=http://globalbank.esb.dynamicresolution.com/canadianservices/;  
   
-     TransformType = です。  
+     TransformType=;  
   
 -   **UDDI**  
   
-     UDDI:\\\serverUrl= http://localhost: 9901/rmengine です。  
+     UDDI:\\\serverUrl=http://localhost:9901/rmengine;  
   
      serviceName = OrderPurchaseWebService です。  
   
@@ -64,9 +64,9 @@ ms.lasthandoff: 12/01/2017
   
 -   **[XPath]**  
   
-     \\\TransportType= です。  
+     \\\TransportType=;  
   
-     TransportLocation =/*[ローカル名 () 'OrderDoc' and namespace-uri() = = 'http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[ローカル名 () 'ID' and namespace-uri() = = 'http://globalbank.esb.dynamicresolution.com/northamericanservices/']。  
+     TransportLocation=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='ID' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
   
      アクション = です。  
   
@@ -74,77 +74,77 @@ ms.lasthandoff: 12/01/2017
   
      JaxRpcResponse = です。  
   
-     MessageExchangePattern = です。  
+     MessageExchangePattern=;  
   
-     TargetNamespace =/*[ローカル名 () = 'OrderDoc' and namespace-uri() = 'http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[ローカル名 () 'customerName' と名前空間 uri () = ='http://globalbank.esb.dynamicresolution.com/northamericanservices/']。  
+     TargetNamespace=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='customerName' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
   
-     TransformType = です。  
+     TransformType=;  
   
 -   **BRE**  
   
-     BRE:\\\policy=GetCanadaEndPoint です。  
+     BRE:\\\policy=GetCanadaEndPoint;  
   
      バージョン = です。  
   
-     useMsg = です。  
+     useMsg=;  
   
 -   **BRI**  
   
-     BRI:\\\policy=ResolveItinerary です。  
+     BRI:\\\policy=ResolveItinerary;  
   
      バージョン = です。  
   
-     useMsg = です。  
+     useMsg=;  
   
 -   **行程**  
   
-     行程:\\\name=TwoWayTestItinerary です。  
+     ITINERARY:\\\name=TwoWayTestItinerary;  
   
      バージョン = です。  
   
--   **行程静的**  
+-   **ITINERARY-STATIC**  
   
-     行程静的:\\\name=TwoWayTestItinerary です。  
+     ITINERARY-STATIC:\\\name=TwoWayTestItinerary;  
   
      バージョン = です。  
   
 -   **LDAP**  
   
-     LDAP:\\\TransportType=SMTP です。  
+     LDAP:\\\TransportType=SMTP;  
   
-     TransportLocation = {メール}  
+     TransportLocation={mail}  
   
-     フィルター = (&amp;(objectClass = ユーザー) (&#124; (userPrincipalName =yourname@domain.com))) です。  
+     Filter=(&amp;(objectClass=User)(&#124;(userPrincipalName=yourname@domain.com)));  
   
-     SearchRoot = です。  
+     SearchRoot=;  
   
      SearchScope サブツリー; を =  
   
      EndpointConfig サブジェクトを = {メール} 行程テスト メッセージを =&amp;  
   
-     SMTPAuthenticate 0 を =&amp;  
+     SMTPAuthenticate=0&amp;  
   
-     Smtphost の各 127.0.0.1 を =&amp;  
+     SMTPHost=127.0.0.1&amp;  
   
-     From =test@globalbank.com&amp;  
+     From=test@globalbank.com&amp;  
   
-     DeliveryReceipt = false&amp;  
+     DeliveryReceipt=false&amp;  
   
-     MessagePartsAttachments 0 を =&amp;  
+     MessagePartsAttachments=0&amp;  
   
      ReadReceipt = false。  
   
-     ThrowErrorIfNotFound = false。  
+     ThrowErrorIfNotFound=false;  
   
      アクション = です。  
   
      JaxRpcResponse = false。  
   
-     MessageExchangePattern = です。  
+     MessageExchangePattern=;  
   
      TargetNamespace = です。  
   
-     TransformType = です。  
+     TransformType=;  
   
  接続文字列内のすべての属性が必須です。 さらに、 **EndPointConfig**任意リゾルバーの設定し、を返すことができますを特別な属性です。 必要に応じて、競合回避モジュールは、BizTalk メッセージのコンテキストには書き込み可能にすると、さらに、特定の BizTalk アダプター コンテキスト プロパティに対応する名前/値ペアを格納できます。  
   

@@ -1,28 +1,28 @@
 ---
-title: "正常性と組み込みのツールを使用してパフォーマンスを監視 |Microsoft ドキュメント"
-description: "可用性、ヘルス、および BizTalk Server、およびモニター SQL エージェント ジョブの監視のパフォーマンス"
-ms.custom: 
+title: 正常性と組み込みのツールを使用してパフォーマンスを監視 |Microsoft ドキュメント
+description: 可用性、ヘルス、および BizTalk Server、およびモニター SQL エージェント ジョブの監視のパフォーマンス
+ms.custom: ''
 ms.date: 01/14/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96e244dc-b826-4a9f-a4e1-6dabc41eb144
-caps.latest.revision: "20"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e6652c962d8ef522128dfb4c9febeca55ce42669
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="monitoring-biztalk-server"></a>BizTalk Server の監視
 BizTalk Server のアプリケーションとインフラストラクチャを定期的に監視して、見つかった問題を解決し、ユーザーが常に BizTalk Server アプリケーションにアクセスできるようにします。 監視の目的は、例外が検出されないままになる (したがって解決されないままになる) 時間を最小限に抑えることです。 また監視は、例外の原因となる状況を見つけるのにも役立ちます。  
   
- BizTalk Server を監視するときには、予期しない動作や異常な動作を探す必要があります。 監視は手動で行うことも、自動で行うこともできます。 BizTalk Server 管理コンソールを使用して BizTalk Server インフラストラクチャの稼働状況を監視できます。 BizTalk Server 管理コンソールを使用すると、BizTalk Server アプリケーションの稼働状況を監視し、根本原因分析を行って、問題の根本原因を特定できます。 のインスタンスにアクセスするたびに SQL Server ログインを指定する必要はありません。 BizTalk Server を監視する際には、次の点に注意してください。  
+ BizTalk Server を監視するときには、予期しない動作や異常な動作を探す必要があります。 監視は手動で行うことも、自動で行うこともできます。 BizTalk Server 管理コンソールを使用して BizTalk Server インフラストラクチャの稼働状況を監視できます。 BizTalk Server 管理コンソールを使用すると、BizTalk Server アプリケーションの稼働状況を監視し、根本原因分析を行って、問題の根本原因を特定できます。 」を参照してください。 BizTalk Server を監視する際には、次の点に注意してください。  
   
 -   インフラストラクチャが正常でもアプリケーションは正常でない場合があります (アプリケーションが無効なメッセージを受信して処理できない場合など)。  
   
@@ -39,7 +39,7 @@ BizTalk Server のアプリケーションとインフラストラクチャを�
 -   パフォーマンスの監視  
   
 ## <a name="availability-monitoring"></a>可用性の監視  
- 「BizTalk Server アプリケーションを最適に実行を防止するシステムまたはアプリケーション リソースの低下は、」? 質問に答える可用性の監視 こうした問題は、ほぼ例外なくシステム レベルの問題 (サービスや接続の可用性の問題など) です。 たとえば、エンタープライズ シングル サインオン サービスが停止しているためにアダプターがエラーになる場合、それは可用性の問題です。 ホストに割り当てられているサーバーのいずれかでエラーが発生して、アプリケーションのメッセージ処理が遅れている場合も可用性の問題です。 同様に、アプリケーションが停止してメッセージを処理できない場合も可用性の問題です。 次の表に、可用性の監視のためのツールを示します。  
+ 「BizTalk Server アプリケーションを最適に実行を防止システムまたはアプリケーションのリソースの低下ですか?」という質問に回答の可用性の監視 こうした問題は、ほぼ例外なくシステム レベルの問題 (サービスや接続の可用性の問題など) です。 たとえば、エンタープライズ シングル サインオン サービスが停止しているためにアダプターがエラーになる場合、それは可用性の問題です。 ホストに割り当てられているサーバーのいずれかでエラーが発生して、アプリケーションのメッセージ処理が遅れている場合も可用性の問題です。 同様に、アプリケーションが停止してメッセージを処理できない場合も可用性の問題です。 次の表に、可用性の監視のためのツールを示します。  
   
 |ツール|タスク|  
 |----------|----------|  
@@ -51,7 +51,7 @@ BizTalk Server のアプリケーションとインフラストラクチャを�
   
 |ツール|タスク|  
 |----------|----------|  
-|BizTalk Health Monitor ツール (BHM)|MMC スナップインで、BizTalk Server 環境のヘルスを監視するユーザーにとって重大かつ重要ではない問題の検出し、メンテナンス タスクを実行します。  [BizTalk ヘルス モニターをダウンロード](https://www.microsoft.com/download/details.aspx?id=43716)です。|  
+|BizTalk Health Monitor ツール (BHM)|MMC スナップインで、BizTalk Server 環境のヘルスを監視するユーザーにとって重要かつ重要ではない問題を検出し、メンテナンス タスクを実行します。  [BizTalk ヘルス モニターをダウンロード](https://www.microsoft.com/download/details.aspx?id=43716)します。|  
 |BizTalk Server 管理コンソール|BizTalk Server 管理コンソールの [グループ ハブ] ページとクエリ ページを使用してアプリケーションの状態の問題を特定し、その原因を分析します。|  
 |イベント ビューアー|メッセージやオーケストレーションの処理の間に発生した問題を検出します。|  
   
@@ -65,7 +65,7 @@ BizTalk Server のアプリケーションとインフラストラクチャを�
 |ビジネス アクティビティ監視 (BAM)|ビジネス アプリケーションに関係する主要業績評価指標を追跡するビジネス プロセスの特定のステージを指定できます。|  
   
 ## <a name="biztalk-server-monitoring"></a>BizTalk Server の監視  
- 実行することができます、 **Monitor BizTalk Server** SQL エージェント ジョブを管理、メッセージ ボックスで、または DTA データベースにおける既知の問題を識別します。 このジョブは、BizTalk Server 管理コンソールで BizTalk グループを構成するとき、または以前のバージョンから BizTalk をアップグレードするときに作成されます。  
+ 実行することができます、 **Monitor BizTalk Server** 管理、メッセージ ボックスで、または DTA データベースにおける既知の問題を識別するために SQL エージェント ジョブ。 このジョブは、BizTalk Server 管理コンソールで BizTalk グループを構成するとき、または以前のバージョンから BizTalk をアップグレードするときに作成されます。  
   
  Monitor BizTalk Server ジョブは、管理、メッセージ ボックス、および DTA データベースで次の問題をスキャンします。  
   
@@ -105,14 +105,14 @@ BizTalk Server のアプリケーションとインフラストラクチャを�
   
  次のトピックでは、BizTalk Server 管理コンソールの [グループ ハブ] ページとクエリ ページを使用した監視とトラブルシューティングについて説明します。 その他、トラブルシューティングや根本原因分析に役立つ追跡についても説明します。  
   
-## <a name="more-good-stuff"></a>便利な機能  
+## <a name="more-good-stuff"></a>適切な対象の拡張  
   
--   [BizTalk Server 管理コンソールを使用します。](../core/using-the-biztalk-server-administration-console.md)  
+-   [BizTalk Server 管理コンソールの使用](../core/using-the-biztalk-server-administration-console.md)  
   
 -   [追跡メッセージを表示し、インスタンス データ](../core/viewing-tracked-message-and-instance-data.md)  
   
 -   [EDI および AS2 ソリューションの監視](../core/monitoring-edi-and-as2-solutions.md)  
   
--   [BizTalk Server アプリケーション内のアイテム間の依存関係の追跡](../core/tracking-dependencies-between-artifacts-in-a-biztalk-server-application.md)
+-   [BizTalk Server アプリケーションにおけるアイテム間の依存関係の追跡](../core/tracking-dependencies-between-artifacts-in-a-biztalk-server-application.md)
 
 - [パフォーマンス カウンター](performance-counters.md)

@@ -1,22 +1,22 @@
 ---
-title: "EDI 逆アセンブラーの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 逆アセンブラーの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8da91ba4-e1c9-4e6b-bbd1-fe71ea880118
-caps.latest.revision: "43"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-the-edi-disassembler-works"></a>EDI 逆アセンブラーの動作
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、EDI 受信パイプライン (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`) において、受信した EDI エンコード インターチェンジの処理の大部分を行います。 このパイプラインには、次の処理を行う EDI 逆アセンブラ パイプライン コンポーネントが含まれています。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/17/2018
   
 -   場合に、インターチェンジ全体を XML に変換、 **受信バッチ処理オプション** プロパティが 2 つのいずれかに設定されている **インターチェンジの保存** 値。 このプロパティのことができますが設定されている、 **ローカル ホストの設定**  ページの  **インターチェンジの設定** の双方向アグリーメント タブの **アグリーメントのプロパティ**  ダイアログ ボックス。 受信パイプラインは、インターチェンジを保存済みとして識別するために、プロパティ ReuseEnvelope を昇格させます。  
   
--   技術確認または機能確認を生成します (構成されている場合)。 これには確認のバッチ処理も含まれます (構成されている場合)。 BTS のコンテキスト プロパティを昇格させます。MessageType を設定すると、http://schemas.microsoft.com/EDI/ 内の制御スキーマに一致する\<X12 または EDIFACT\>名前空間 (たとえば、997 受信確認の x12_997_root など)。 また、EDI.DestinationPartyName コンテキスト プロパティを昇格させて、送信時に確認が確実に取得されるようにします。 詳細については、次を参照してください。 [EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)です。  
+-   技術確認または機能確認を生成します (構成されている場合)。 これには確認のバッチ処理も含まれます (構成されている場合)。 BTS のコンテキスト プロパティを昇格させます。MessageType を設定することで制御スキーマに一致する、 http://schemas.microsoft.com/EDI/ \<X12 または EDIFACT\>名前空間 (たとえば、997 受信確認の x12_997_root など)。 また、EDI.DestinationPartyName コンテキスト プロパティを昇格させて、送信時に確認が確実に取得されるようにします。 詳細については、次を参照してください。 [EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)です。  
   
 -   必要に応じて、HIPAA 276/277 (バージョン 5010 のみ) 834、835 (バージョン 4010 のみ)、および 837 ドキュメントの分割を実行します。  
   

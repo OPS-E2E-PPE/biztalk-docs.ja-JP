@@ -1,25 +1,25 @@
 ---
-title: "基本的な Oracle データ Types1 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的な Oracle データ Types1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data types, supported
 - data types, unsupported
 ms.assetid: 491230b9-b946-4681-a048-5da46102c370
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 86349adae1a3ae061cb07c6c770532cf92c74dc8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="basic-oracle-data-types"></a>基本的な Oracle データ型
 このトピックの内容について説明しますが、どのように[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Oracle データ型。  
@@ -34,13 +34,13 @@ ms.lasthandoff: 11/28/2017
   
 |Oracle データ型|XSD 型|.NET の種類|コメント|  
 |----------------------|--------------|---------------|--------------|  
-|BFile|入力: xsd:string<br />出力: xsd:base64Binary|文字列<br />Byte[]|BFile データ型は、内部 (RecordType、TableType、UDT、および VArray) などの複合型はサポートされていません。|  
+|BFile|入力: xsd:string<br />output: xsd:base64Binary|文字列<br />Byte[]|BFile データ型は、内部 (RecordType、TableType、UDT、および VArray) などの複合型はサポートされていません。|  
 |Blob|xsd:base64Binary|Byte[]|テーブル操作とプロシージャをサポートします。|  
 |Char|xsd:string|文字列|テーブル操作とプロシージャをサポートします。|  
 |Clob|xsd:string|文字列|テーブル操作とプロシージャをサポートします。|  
 |日付 *<br /><br /> (なしセーフである入力内の場合、UDT)|xsd:dateTime|DateTime|日付の値は、タイム ゾーン情報を含めることはできません (UTC または UTC のオフセット)。<br /><br /> -xsd:dateTime 値には、UTC または UTC オフセット<br />-   **DateTime.Kind**する必要があります**DateTimeKind.Unspecified**<br /><br /> タイム ゾーン情報が指定されている場合、アダプターがスローされます、 **XmlReaderParsingException**フィールドを示すメッセージを使用して例外。|  
 |Float * *|xsd:float 場合 prec < 7 を =<br />xsd:double 場合 prec 7 > と < 15 を =<br />xsd:string 場合 prec > 15|Float<br />Double<br />文字列|-|  
-|IntervalYM|xsd:string<br /><br /> xsd:long、UDT の内部場合|文字列<br /><br /> 長い場合は、UDT の内部|値は、Oracle のネイティブ形式で表す必要があります: 年-月です。たとえば、「1-2」(1 年および 2 か月間) です。|  
+|IntervalYM|xsd:string<br /><br /> xsd:long if inside an UDT|文字列<br /><br /> 長い場合は、UDT の内部|値は、Oracle のネイティブ形式で表す必要があります: 年-月です。たとえば、「1-2」(1 年および 2 か月間) です。|  
 |IntervalDS|xsd:string<br /><br /> xsd:duration、UDT の内部場合|文字列<br /><br /> Timespan、UDT の内部場合|値は、Oracle のネイティブ形式で表す必要があります: 1 日 HH:MI:SSxFF です。たとえば、「5 15:30:12.99」|  
 |Long|xsd:string|文字列|すべてのテーブルの操作、ストアド プロシージャ、および関数のサポート。 **注:**リリース以降の Oracle データベース 9i、長い形式のデータ型は使用されなくなりました。 Oracle では、LOB データ型を代わりに使用することをお勧めします。 そのため、ときに、Oracle の処理の実行、データベースを使用して、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、LOB データ型と長さのデータではなく動作する Oracle データベース アイテムを使用することをお勧めの種類。|  
 |LongRaw|xsd:base64Binary|Byte[]|-|  
@@ -50,11 +50,11 @@ ms.lasthandoff: 11/28/2017
 |NVarchar2|xsd:string|文字列|-|  
 |Raw|xsd:base64Binary|Byte[]|テーブル操作とプロシージャをサポートします。|  
 |RowID|xsd:string|文字列|-|  
-|タイムスタンプ *<br /><br /> (なしセーフである入力内の場合、UDT)|xsd:dateTime 場合 prec < 7 を =<br />xsd:string 場合 prec > 7|DateTime<br />文字列|タイムスタンプの値は、タイム ゾーン情報を含めることはできません (UTC または UTC のオフセット)。<br /><br /> -xsd:dateTime 値には、UTC または UTC オフセット<br />-   **DateTime.Kind**する必要があります**DateTimeKind.Unspecified**<br /><br /> タイム ゾーン情報が指定されている場合、アダプターがスローされます、 **XmlReaderParsingException**フィールドを示すメッセージを使用して例外。|  
+|TimeStamp*<br /><br /> (なしセーフである入力内の場合、UDT)|xsd:dateTime if prec <= 7<br />xsd:string 場合 prec > 7|DateTime<br />文字列|タイムスタンプの値は、タイム ゾーン情報を含めることはできません (UTC または UTC のオフセット)。<br /><br /> -xsd:dateTime 値には、UTC または UTC オフセット<br />-   **DateTime.Kind**する必要があります**DateTimeKind.Unspecified**<br /><br /> タイム ゾーン情報が指定されている場合、アダプターがスローされます、 **XmlReaderParsingException**フィールドを示すメッセージを使用して例外。|  
 |TimeStampLTZ|xsd:string|文字列|Udt の内部 TimeStampLTZ はサポートされていません。<br /><br /> **UDT の外部**: NLS_TIMESTAMP_TZ_FORMAT で値を表す必要があります。|  
 |TimeStampTZ|xsd:string<br /><br /> xsd:dateTime、UDT の内部場合|文字列<br /><br /> DateTime、UDT の内部場合|**UDT の外部**: NLS_TIMESTAMP_TZ_FORMAT で値を表す必要があります。|  
 |10 進数 * *|xsd:decimal 場合 prec < 28 を =<br />xsd:string 場合 prec > 28|Decimal<br />文字列|-|  
-|varchar2|xsd:string|文字列|-|  
+|Varchar2|xsd:string|文字列|-|  
 |バイナリ Float * *|xsd:float 場合 prec < 7 を =<br />xsd:string 場合 prec > 7|Float<br />文字列|ロケールと一貫性のある形式で値を指定する必要があります (**System.Globalization.CultureInfo.CurrentCulture**)。 たとえば、英語ロケールで使用ピリオド文字 ('. ')、小数点以下の桁数を指定するにはフランス語のロケールのコンマ文字を使用する (',')。|  
 |バイナリ倍 * *|xsd:double 場合 prec < 15 を =<br />xsd:string 場合 prec > 15|Double<br />文字列|-|  
 |バイナリ整数 * *|xsd:integer|Int32|プロシージャ、関数、およびパッケージのサポート。|  

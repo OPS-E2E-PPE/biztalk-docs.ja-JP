@@ -1,22 +1,22 @@
 ---
-title: "動的解決のサンプルの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: 動的解決のサンプルの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7789316d-f2c4-4018-a8e8-dd9359f1664f
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fe7d7b473482c432c8e3ae9ca48cab414a9e9573
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-the-dynamic-resolution-sample-works"></a>動的解決のサンプルのしくみ
 動的解決サンプルでは、前のセクションで説明されているすべてのメッセージ例については、ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントを使用します。  

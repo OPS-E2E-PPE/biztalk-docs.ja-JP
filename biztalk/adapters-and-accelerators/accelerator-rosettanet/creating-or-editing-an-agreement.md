@@ -1,11 +1,11 @@
 ---
-title: "作成または編集アグリーメント |Microsoft ドキュメント"
-ms.custom: 
+title: 作成または編集アグリーメント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, about agreements
@@ -17,22 +17,22 @@ helpviewer_keywords:
 - modifying, agreements
 - agreements, trading partners
 ms.assetid: 4bbe4b57-d6ec-4448-9c80-2aecd98e0dc7
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1ea033770504b0e0024a831e0ad8d8727603046e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="creating-or-editing-an-agreement"></a>作成するか、契約の編集
 ここでは、取引先アグリーメント (TPA) の作成方法または編集方法について説明します。 取引先アグリーメントは、2 つの取引先の間に、ID、PIP (Partner Interface Process)、アクション URL、シグナル URL、同期 URL、関連付けられたプロトコルなどのリレーションシップを構成します。  
   
- 取引先アグリーメントには、プロセス構成、ホーム組織、パートナー、およびアグリーメントに関する設定が含まれています。 アグリーメントには、これらすべての設定が必要になります。 プロセス構成は RosettaNet PIP またはカスタム スキーマのいずれに基づいて作成できますが、その場合は構成を作成する必要があります。 また、ホーム組織と取引先組織の両方を定義する必要があります。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]不明なパーティ間のメッセージ交換をサポートしていません。  
+ 取引先アグリーメントには、プロセス構成、ホーム組織、パートナー、およびアグリーメントに関する設定が含まれています。 アグリーメントには、これらすべての設定が必要になります。 プロセス構成は RosettaNet PIP またはカスタム スキーマのいずれに基づいて作成できますが、その場合は構成を作成する必要があります。 また、ホーム組織と取引先組織の両方を定義する必要があります。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 不明なパーティ間のメッセージ交換をサポートしていません。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、これらすべての設定に基づいて、メッセージを処理および検証します。 たとえば CIDX メッセージの場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は RosettaNet Implementation Framework (RNIF) のバージョン (1.1 のみ)、[0A1 アグリーメント] (非 0A1 のみ)、および `Is Single Action` プロパティ (シングル アクションのみ) に基づいて検証を行います。 CIDX メッセージは、RNIF のバージョン「1.1」、"0A1"に、0A1 アグリーメントを設定する場合にのみを検証し、`Is Single Action`プロパティを`True`です。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]また、アグリーメントのプロパティにプロセス構成プロファイルの設定と整合性があることを検証します。 たとえば、プロファイルの `Standard` プロパティが CIDX に設定されているかどうか、およびアグリーメントの [0A1 アグリーメント] プロパティが非 0A1 に設定されているかどうかが確認されます。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、これらすべての設定に基づいて、メッセージを処理および検証します。 たとえば CIDX メッセージの場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は RosettaNet Implementation Framework (RNIF) のバージョン (1.1 のみ)、[0A1 アグリーメント] (非 0A1 のみ)、および `Is Single Action` プロパティ (シングル アクションのみ) に基づいて検証を行います。 CIDX メッセージは、RNIF のバージョン「1.1」、"0A1"に、0A1 アグリーメントを設定する場合にのみを検証し、`Is Single Action`プロパティを`True`です。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] また、アグリーメントのプロパティにプロセス構成プロファイルの設定と整合性があることを検証します。 たとえば、プロファイルの `Standard` プロパティが CIDX に設定されているかどうか、およびアグリーメントの [0A1 アグリーメント] プロパティが非 0A1 に設定されているかどうかが確認されます。  
   
  プロセスがアクティブな状態でアグリーメントを変更すると、予測不可能な結果が生じることがあります。 クリックするとすぐに、アグリーメントのプロパティへの変更が適用されます**適用**または**OK**を受け入れるには予測できませんプロセスのどのステージが実行されています。 アグリーメントを変更した後は、現在のプロセスの新しいアクティビティや新しいプロセスはすべて、変更されたアグリーメント プロパティを使用します。 ただし、アグリーメントを変更するときに実行中であったプロセスは、処理中のメッセージには以前のアグリーメント プロパティを既に使用していた可能性があります。  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/28/2017
 |**[プロトコル]**|**[エンコード]**|すべての部分のエンコードに使用するプロトコル (場合、**すべての部分のエンコード**ボックスは`True`) または添付ファイル (場合、**すべての部分のエンコード**ボックスは`False`)。<br /><br /> 指定できます**8 ビット**、 **base 64** (既定)、または**引用符で囲まれたに印刷**です。|  
 |**[プロトコル]**|**暗号化アルゴリズム**|着信メッセージと送信メッセージを暗号化するために使用されるアルゴリズム。<br /><br /> **以降で[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]以降のバージョン**AES のサポートは自動的に含まれます。 オプションがあります。 **RC2 40**、 **3 des**、 **AES128** (既定)、 **AES192**、および**AES256**です。 <br /><br />以前[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]バージョンでは、オプションには、 **RC2 40** (既定値) または**3 des**です。<br /><br /> 暗号化アルゴリズムは、設定した場合のみ効果を受け取り、`Is Persistent Confidentiality Required`プロパティを**ペイロード**または**ペイロード コンテナー**対応するプロセスの構成にします。|  
 |**[プロトコル]**|**暗号化の方向**|暗号化対象のメッセージが着信メッセージなのか、送信メッセージなのか、あるいはその両方なのかを示します。<br /><br /> 指定できます**受信**、**送信**、または**インバウンド/アウト バウンド**(既定)。<br /><br /> 暗号化の方向設定のみは有効に設定した場合、`Is Persistent Confidentiality Required`プロパティを**ペイロード**または**ペイロード コンテナー**対応するプロセスの構成にします。|  
-|**カスタム プロパティ**|**名前**|カスタム プロパティの名前です。<br /><br /> カスタム プロパティはアグリーメント単位で設定します。 新しいカスタム プライベート プロセスを作成する場合、これらのカスタム プロパティをさまざまなアグリーメントの処理に使用できます。<br /><br /> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK の `RuntimeConfig.GetTPACustomConfigValue` メソッドを使用すると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成からカスタム プロパティを取得できます。<br /><br /> `Name` プロパティは一意であり、かつ空でない必要があります。<br /><br /> 次のカスタム値を入力できます。<br /><br /> - **[AAR]**です。 Acceptance Acknowledgment Required (要承認確認) カスタム プロパティ。 RNIF 1.1 にのみ適用されます。 これを設定して**false** (これは区別されません) のみ、受信確認、承認確認されませんを要求するようにします。 場合**AAR**以外の何もする設定**false**応答側パブリック プロセスが承認確認を送信する必要がありますし、開始側パブリック プロセスは承認確認を必要とします。 [AAR] を false に設定した場合、パブリック プロセスが完了するのは受信確認の後です。<br /><br /> - **HPCC**です。 Home Partner Classification Code (ホーム パートナー分類コード)。 RNIF 1.1 にのみ適用されます。 この値によって、送信メッセージの Service Header に含まれるホーム パートナーの GlobalPartnerClassificationCode 要素を、[値] 列のエントリに設定できます。 この値は、ホーム組織の構成において、ホーム組織の分類プロパティより優先されます。 ホーム組織で複数の分類を持つことができる場合に、このカスタム プロパティを使用します。<br /><br /> - **PPCC**です。 Partner Profile Classification Code (パートナー プロファイル分類コード)。 RNIF 1.1 にのみ適用されます。 この値によって、送信メッセージの Service Header に含まれるパートナーの GlobalPartnerClassificationCode 要素を、[Value] 列のエントリに設定できます。 この値は、パートナー構成において、パートナーの分類プロパティより優先されます。 パートナーは、複数の分類を持つことができる場合、このカスタム プロパティを使用します。|  
+|**カスタム プロパティ**|**名前**|カスタム プロパティの名前です。<br /><br /> カスタム プロパティはアグリーメント単位で設定します。 新しいカスタム プライベート プロセスを作成する場合、これらのカスタム プロパティをさまざまなアグリーメントの処理に使用できます。<br /><br /> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK の `RuntimeConfig.GetTPACustomConfigValue` メソッドを使用すると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成からカスタム プロパティを取得できます。<br /><br /> `Name` プロパティは一意であり、かつ空でない必要があります。<br /><br /> 次のカスタム値を入力できます。<br /><br /> - **AAR**. Acceptance Acknowledgment Required (要承認確認) カスタム プロパティ。 RNIF 1.1 にのみ適用されます。 これを設定して**false** (これは区別されません) のみ、受信確認、承認確認されませんを要求するようにします。 場合**AAR**以外の何もする設定**false**応答側パブリック プロセスが承認確認を送信する必要がありますし、開始側パブリック プロセスは承認確認を必要とします。 [AAR] を false に設定した場合、パブリック プロセスが完了するのは受信確認の後です。<br /><br /> - **HPCC**. Home Partner Classification Code (ホーム パートナー分類コード)。 RNIF 1.1 にのみ適用されます。 この値によって、送信メッセージの Service Header に含まれるホーム パートナーの GlobalPartnerClassificationCode 要素を、[値] 列のエントリに設定できます。 この値は、ホーム組織の構成において、ホーム組織の分類プロパティより優先されます。 ホーム組織で複数の分類を持つことができる場合に、このカスタム プロパティを使用します。<br /><br /> - **PPCC**です。 Partner Profile Classification Code (パートナー プロファイル分類コード)。 RNIF 1.1 にのみ適用されます。 この値によって、送信メッセージの Service Header に含まれるパートナーの GlobalPartnerClassificationCode 要素を、[Value] 列のエントリに設定できます。 この値は、パートナー構成において、パートナーの分類プロパティより優先されます。 パートナーは、複数の分類を持つことができる場合、このカスタム プロパティを使用します。|  
 |**カスタム プロパティ**|**値**|カスタム プロパティの値。|  
   
 ### <a name="to-create-a-trading-partner-agreement"></a>取引先アグリーメントを作成するには  
@@ -96,7 +96,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  編集、およびをクリックするアグリーメントを右クリックして**プロパティ**です。  
   
-4.   **\<** *契約名* **\>** プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは必要に応じて設定を変更します。 これらの設定の詳細については、上の表を参照してください。  
+4.  **\<***契約名***\>**プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは、必要に応じて設定を変更します。 これらの設定の詳細については、上の表を参照してください。  
   
 5.  **[OK]**をクリックします。  
   

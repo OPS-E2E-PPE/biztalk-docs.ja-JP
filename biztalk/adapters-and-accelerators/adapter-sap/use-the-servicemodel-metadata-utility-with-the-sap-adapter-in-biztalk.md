@@ -1,26 +1,26 @@
 ---
-title: "BizTalk adapter 用 mySAP Business Suite、ServiceModel メタデータ ユーティリティ ツールを使用して |Microsoft ドキュメント"
-description: "Svcutil.exe を使用して、既定以外のバインディングまたは SAP アダプターの BizTalk アダプター パック (BAP) と WCF クライアント クラスまたは WCF サービス コントラクトを作成するには"
-ms.custom: 
+title: BizTalk adapter 用 mySAP Business Suite、ServiceModel メタデータ ユーティリティ ツールを使用して |Microsoft ドキュメント
+description: Svcutil.exe を使用して、既定以外のバインディングまたは SAP アダプターの BizTalk アダプター パック (BAP) と WCF クライアント クラスまたは WCF サービス コントラクトを作成するには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ServiceModel Metadata Utility Tool, creating a WCF Client Class or a WCF service contract with the tool
 - ServiceModel Metadata Utility Tool, configuring the tool for the adapter
 ms.assetid: 7ac08012-bb12-4983-9402-be84fe3997d8
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 15c4612db6e3cde4e46385b1c5d1810fbb00eb70
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk adapter 用 mySAP Business Suite、ServiceModel メタデータ ユーティリティ ツールを使用します。
 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用するには、WCF クライアント クラスまたは操作用の WCF サービス コントラクト (インターフェイス) を生成する、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を公開します。 WCF クライアント クラスまたは WCF サービス コントラクトのいずれかを生成する svcutil.exe を実行した後、コードで生成されたファイルを含めると、生成されたクラスのインスタンスを作成したり、SAP で操作を実行する、生成されたインターフェイスから WCF サービスを実装システムです。  
@@ -29,7 +29,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
   
  Svcutil.exe を使用して WCF クライアント コードまたは WCF サービス コントラクトを生成する方法と、svcutil.exe を構成する方法を次のセクションでは、表示、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
   
-##  <a name="BKMK_ConfigureSvcutil"></a>SAP アダプターの svcutil.exe の構成  
+##  <a name="BKMK_ConfigureSvcutil"></a> SAP アダプターの svcutil.exe の構成  
  既定以外のバインディングを使用する svcutil.exe を構成するのにする必要があります svcutil.exe のローカル コピーを作成し、作成または変更する svcutil.exe.config の構成ファイルのローカル コピーします。  
   
 1.  フォルダーを作成し、svcutil.exe を新しいフォルダーにコピーします。 通常、Windows SDK のインストール場所で svcutil.exe を入手できます C:\Program files \microsoft SDKs\Windows\v6.0\Bin 具体的には、します。  
@@ -91,15 +91,15 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
   
  この例では、RFC_CALCULATE_TAXES の WCF クライアント クラスを作成します。  
   
- **。 \svcutil"sap://User=YourUserName;Passwd 貼り付けたり; を =クライアント = 800 です。Lang = EN です。@a/YourSAPHost/00? wsdl & op http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES を ="**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES"**  
   
  この例では、SALESORDER_CREATEFROMDAT201 と SALESORDER_CREATEFROMDAT202 IDOC の両方の WCF クライアント クラスを作成します。  
   
- **。 \svcutil"sap://User=YourUserName;Passwd 貼り付けたり; を =クライアント = 800 です。Lang = EN です。@a/YourSAPHost/00? wsdl & op = http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send & op http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send を ="**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send"**  
   
  この例では、SAP システムから SALESORDER_CREATEFROMDAT201 IDOC を受信する WCF サービス コントラクトを作成します。 ノード ID では、受信操作を指定します。 この例は、メタデータの取得時に処理をするため、接続 URI の query_string でリスナーのパラメーターを指定する必要はありません。  
   
- **。 \svcutil"sap://User=YourUserName;Passwd 貼り付けたり; を =クライアント = 800 です。Lang = EN です。@a/YourSAPHost/00? wsdl & op http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive を ="**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive"**  
   
 > [!IMPORTANT]
 >  引用符で囲まれたコマンド ラインで、接続 URI を配置する必要があります。 それ以外の場合、svcutil.exe しようとすると操作のメタデータを取得する、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]はサポートしていません。 これらの試行の結果は未定義です。  

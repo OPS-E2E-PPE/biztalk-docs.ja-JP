@@ -1,32 +1,32 @@
 ---
-title: "BizTalk Adapter 用 mySAP Business Suite のアーキテクチャの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Adapter 用 mySAP Business Suite のアーキテクチャの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture of SAP adapter
 - adapters, architecture
 ms.assetid: 1b45edb0-2476-427b-b6cd-41e38ed815e0
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d571cdd3beea2bc9a57ec7ad15f865e7ef51e53a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk Adapter 用 mySAP Business Suite のアーキテクチャの概要
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を実装する[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインディングは、SAP システムとの通信を有効にする単一のカスタム トランスポート バインド要素が含まれています。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]によってラップされた、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]ランタイムは経由でアプリケーションに公開されると、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネル アーキテクチャ。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP Unicode RFC SDK (librfc32u.dll) の 64 ビットまたは 32 ビット バージョンのいずれかを使用して SAP システムと通信します。 
 
 次の図を使用して開発されたソリューションをエンド ツー エンド アーキテクチャを示しています、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
   
- ![SAP エンド &#45; へ (& a) #45 です。アーキテクチャを終了](../../adapters-and-accelerators/adapter-sap/media/9ba0c31f-90df-444d-8192-42743c893d51.gif "9ba0c31f-90df-444d-8192-42743c893d51")  
+ ![SAP エンド&#45;に&#45;アーキテクチャを終了](../../adapters-and-accelerators/adapter-sap/media/9ba0c31f-90df-444d-8192-42743c893d51.gif "9ba0c31f-90df-444d-8192-42743c893d51")  
   
 ## <a name="consuming-the-adapter"></a>アダプターの使用  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]として SAP システムを公開、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]をクライアント アプリケーション サービスです。 クライアント アプリケーションで SOAP メッセージを交換、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を通じて[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネル操作を実行して、SAP システムでのデータにアクセスします。 上記の図に 4 つの方法を示しています、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]消費されることができます。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP RFC ライブラリを常にホストとインプロセスでアプリケーションまたはサービス アダプターを使用するとします。  
   
 ## <a name="sap-adapter-and-wcf"></a>SAP アダプターと WCF  
- [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]クライアントとサービス間のチャネル上で SOAP メッセージの交換に基づくプログラミング モデルを表示します。 これらのメッセージは、通信しているクライアントとサービスによって公開されるエンドポイント間で送信されます。  
+ [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] クライアントとサービス間のチャネル上で SOAP メッセージの交換に基づくプログラミング モデルを表示します。 これらのメッセージは、通信しているクライアントとサービスによって公開されるエンドポイント間で送信されます。  
   
  エンドポイントから成る、*エンドポイント アドレス*、メッセージが受信される場所を指定する、*バインディング*メッセージ、および、の交換に使用する通信プロトコルを指定します。*コントラクト*エンドポイントによって公開される操作とデータ型を指定します。 バインディングは、積み重ねられて、エンドポイントでメッセージを交換する方法を定義する 1 つまたは複数のバインド要素で構成されます。  
   
@@ -78,9 +78,9 @@ ms.lasthandoff: 09/20/2017
   
 -   Rfc、tRFC およびリスナー ホスト、リスナー ゲートウェイ サービス、および接続 URI 内で直接、または R ベースで、リスナーのプログラム ID で指定されている SAP システムで、RFC 変換先での Idoc のアダプターが受信するリスナー接続 (R)saprfc.ini 構成ファイルのコピー先です。  
   
- Saprfc.ini ファイルの詳細については、"このを参照してください。。INI ファイル」で、 [SAP のマニュアル](https://help.sap.com/doc/PRODUCTION/saphelp_nwpi711/7.1.1/en-US/48/c4168eca64581de10000000a42189c/frameset.htm)です。  
+ Saprfc.ini ファイルの詳細については、"このを参照してください。INI ファイル」で、 [SAP のマニュアル](https://help.sap.com/doc/PRODUCTION/saphelp_nwpi711/7.1.1/en-US/48/c4168eca64581de10000000a42189c/frameset.htm)です。  
   
  方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]接続を SAP システムでは、次を参照してください。 [SAP システムへの接続を作成する](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md)です。  
   
 ## <a name="see-also"></a>参照  
- [MySAP Business Suite の BizTalk アダプターを理解します。](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)
+ [BizTalk Adapter for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)

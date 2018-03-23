@@ -1,11 +1,11 @@
 ---
-title: "BPEL4WS をインポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BPEL4WS をインポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL4WS, restrictions
@@ -13,21 +13,21 @@ helpviewer_keywords:
 - BPEL4WS, orchestrations
 - orchestrations, BPEL4WS
 ms.assetid: 3626fcb9-8e7d-4812-a0c9-bde6e7954ec8
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 7b32a0044321ce6ac57d7bd49c14b40ba17430db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-import-bpel4ws"></a>BPEL4WS をインポートする方法
 既存の BPEL4WS をインポートすることによってオーケストレーションを作成することができます。  
   
 > [!IMPORTANT]
->  BizTalk Server のこのリリースでは、BPEL4WS 1.1 をサポートします。 BPEL4WS 1.0 をインポートまたはエクスポートすることはできません。  
+>  このリリースの BizTalk Server では、BPEL4WS 1.1 をサポートします。 BPEL4WS 1.0 をインポートまたはエクスポートすることはできません。  
   
  BPEL4WS をインポートする方法の例は、次を参照してください。 [BPEL インポート (BizTalk Server サンプル)](../core/bpel-import-biztalk-server-sample.md)です。  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
     </element>  
     ```  
   
-     XPath の/* [ローカル名 () 'Root' and namespace-uri() = = 'http://BizTalk_Server_Project3.Schema1']/\*[ローカル名 () = 'promotedField' and namespace-uri() = ']  
+     XPath の/* [ローカル名 () = 'Root' and namespace-uri() = 'http://BizTalk_Server_Project3.Schema1']/\*[ローカル名 () = 'promotedField' and namespace-uri() = ']  
   
     |正規 XPath|非正規 XPath|  
     |---------------------|--------------------------|  
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [BPEL4WS にエクスポートする方法](../core/how-to-export-bpel4ws.md)   
- [XLANG-s BPEL4WS 型への変換から](../core/xlang-s-to-bpel4ws-type-conversions.md)
+ [XLANG-s から BPEL4WS への種類の変換](../core/xlang-s-to-bpel4ws-type-conversions.md)

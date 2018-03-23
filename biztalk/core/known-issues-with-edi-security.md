@@ -1,22 +1,22 @@
 ---
-title: "EDI セキュリティに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI セキュリティに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d7f68bc-8460-4656-b9f2-955337458d78
-caps.latest.revision: "20"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9517f6c5b1aeae06b5989eef12fe269f81a27c74
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="known-issues-with-edi-security"></a>EDI セキュリティに関する既知の問題
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI と AS2 ソリューションのセキュリティに関する既知の問題について説明します。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
  AS2EdiREceive パイプラインには、この問題はありません。  
   
 ## <a name="an-x12-encoded-message-is-suspended-if-port-based-authentication-is-enabled-and-biztalk-server-does-not-have-access-to-the-authorization-and-security-information"></a>ポートベースの認証が有効で、BizTalk Server が認証情報およびセキュリティ情報にアクセスできない場合、X12 でエンコードされたメッセージが中断される  
- **現象**  
+ **症状:**  
   
  BizTalk Server は、認証が有効になっている受信ポートでメッセージを受信したときに、そのメッセージを送信したパーティを特定できなければ、メッセージを中断します。  
   
@@ -53,9 +53,9 @@ ms.lasthandoff: 09/20/2017
   
  受信ポートで認証が有効になっている (受信ポートの "認証しない" プロパティがオフになっている) 場合、インターチェンジを処理するためには、BizTalk Server で ISA1 ～ ISA2 (認証修飾子および認証情報) プロパティおよび ISA3 ～ ISA4 (セキュリティ修飾子およびセキュリティ情報) プロパティが設定されている必要があります。 これらのパーティのプロパティは、パーティの [X12 インターチェンジ処理のプロパティ] ページでインターチェンジの送信者として設定されます。 これらのプロパティの値を決定できない場合、BizTalk Server はメッセージを中断します。  
   
- これは、2 つの方法で発生します。 最初のケースでは、メッセージを送信したパーティを特定できない場合、BizTalk Server は EDI グローバル プロパティを使用するため、認証およびセキュリティの設定にアクセスできません。 その結果、メッセージは中断されます。 2 番目のケースでは、BizTalk Server には、パーティが決定されますが、パーティの ISA1 2 および ISA3 ~ 4 のプロパティが構成されていない場合、BizTalk Server がもう一度アクセス権がない承認およびセキュリティ情報にし、メッセージは中断されます。  
+ これは、2 つの方法で発生します。 最初のケースでは、メッセージを送信したパーティを特定できない場合、BizTalk Server は EDI グローバル プロパティを使用するため、認証およびセキュリティの設定にアクセスできません。 その結果、メッセージは中断されます。 2 番目のケースで BizTalk Server には、パーティが決定されますが、パーティの ISA1 2 および ISA3 ~ 4 のプロパティが構成されていない場合、BizTalk Server がもう一度アクセス権がない承認およびセキュリティ情報にし、メッセージを中断します。  
   
- **解決策**  
+ **解決方法**  
   
  メッセージの送信側パーティを識別できること、およびパーティ アグリーメントで ISA1 ～ ISA2 および ISA3 ～ ISA4 プロパティが定義されていることを確認します。  
   

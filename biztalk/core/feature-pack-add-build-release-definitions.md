@@ -1,21 +1,21 @@
 ---
-title: "手順 3 - ビルドとリリース定義を作成 |Microsoft ドキュメント"
-description: "Vsts、git または TFS リポジトリ内のプロジェクトをビルドし、BizTalk Server アプリケーションを配置するリリース定義を作成するビルド定義を作成します。"
-ms.custom: 
+title: 手順 3 - ビルドとリリース定義を作成 |Microsoft ドキュメント
+description: Vsts、git または TFS リポジトリ内のプロジェクトをビルドし、BizTalk Server アプリケーションを配置するリリース定義を作成するビルド定義を作成します。
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>手順 3: ビルドを作成し、リリース定義
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 11/21/2017
 
     **展開パッケージ**: アプリケーション プロジェクトに zip ファイルを選択し、選択**OK**です。 
 
-8. 選択、**エージェント フェーズ**タスク。 選択、**既定**エージェント キュー。 **保存**変更します。
+8. 選択、**エージェント フェーズ**タスク。 選択、**既定**エージェント キュー。 **保存** 変更します。
 
 9. 選択**リリース** > **リリース作成**:  
 

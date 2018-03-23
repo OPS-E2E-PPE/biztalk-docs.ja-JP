@@ -1,22 +1,22 @@
 ---
-title: "BizTalk Server プロジェクト内の WCF LOB Adapter SDK アダプターを使用する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server プロジェクト内の WCF LOB Adapter SDK アダプターを使用する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 041f14cc-d00f-450d-b1e9-40a3e423c510
-caps.latest.revision: "15"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 84f81d23b56c2631879f366e6fe502840408a0d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project"></a>BizTalk Server プロジェクト内の WCF LOB Adapter SDK アダプターを使用します。
 このトピックを使用して構築されたアダプターを使用する方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]から[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  .NET アプリケーションを開く[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]で、**プロジェクト** ウィンドウを右クリックし、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プロジェクトをクリックして**追加**&#124;**生成された項目の追加**& #124 です。**アダプター サービスの使用**です。  
+2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]で、**プロジェクト** ウィンドウを右クリックし、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プロジェクトをクリックして**追加**&#124;**生成された項目の追加**&#124;です。**アダプター サービスの使用**です。  
   
 3.  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]画面で、アダプターのバインドを選択します。  
   
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="deploy-the-biztalk-server-project"></a>BizTalk Server プロジェクトを配置します。  
   
-1.  開いている**BizTalk Server 管理**です。  
+1.  開いている **BizTalk Server 管理**します。  
   
 2.  物理ポートを作成するには、ポートのバインド XML ファイルをインポートします。 対象のアプリケーションを右クリックし、**アプリケーション**グループで、**バインドのインポート**に移動して、適切なポートのバインド情報 XML ファイルを選択します。  
   

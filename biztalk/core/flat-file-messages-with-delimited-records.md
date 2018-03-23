@@ -1,22 +1,22 @@
 ---
-title: "区切られたレコードのフラット ファイル メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: 区切られたレコードのフラット ファイル メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ad7119b-4e39-43df-9dba-a04382eb6db2
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a5dc9eb0253e2bfe8824f6395e1c619c23f0e551
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="flat-file-messages-with-delimited-records"></a>区切られたレコードのあるフラット ファイル メッセージ
 フラット ファイル インスタンス メッセージ内の区切られたレコードには、入れ子のレコード、および事前に定義された文字や文字セットによって分けられている個別のフィールド (データ項目) が含まれています。 これらの区切り記号に従って、フィールドが解析されます。 フラット ファイル インスタンス メッセージ内に、次のような区切られたレコードが存在する場合を例として説明します。このレコードには、仮の注文書を基にした 2 つの商品が含まれています。  
@@ -31,7 +31,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Electric-120vac,ITEM926-AA|Baby Monitor|1|39
   
 -   子区切り記号 (,)、子の順序の接頭辞、およびタグ ITEMS を持つ、区切られたレコードの名前付き項目。  
   
-    -   A、区切られた繰り返しレコードの子区切り記号 (&) #124 を持つ項目をという名前以外の場合は、子の順序挿入辞、およびタグ項目。  
+    -   A、区切られた繰り返しレコードの子区切り記号と #124 item という名前の子注文挿入辞一致とタグ項目。  
   
     -   "partNum" という属性。  
   
@@ -86,7 +86,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Electric-120vac,ITEM926-AA|Baby Monitor|1|39
  区切られたフラット ファイルで作業する方法を理解するために、サンプルの FlatFileReceive フォルダーと FlatFileSend フォルダーにあるを参照してください。 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\Pipelines\AssemblerDisassembler\\です。  
   
 > [!NOTE]
->  設定する必要がありますが、フラット ファイルに区切られたおよび位置指定レコードの両方が含まれている場合、**構造**にルート ノードのプロパティ**Delimited**と**構造**のプロパティいずれかにレコード ノードの下位**区切り記号付き**または**位置指定**に応じて。  
+>  設定する必要がありますが、フラット ファイルに区切られたおよび位置指定レコードの両方が含まれている場合、 **構造** にルート ノードのプロパティ **区切り記号付き** と **構造** するか、下位のレコード ノードのプロパティ **区切り記号付き** または **位置指定** 必要に応じて。  
   
 > [!NOTE]
 >  フラット ファイルの区切られたフィールドの文字制限は、50000000 文字です。  

@@ -1,11 +1,11 @@
 ---
-title: "PIP 仕様を使用して、プロセス構成を作成する |Microsoft ドキュメント"
-ms.custom: 
+title: PIP 仕様を使用して、プロセス構成を作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PIPs, PIP settings
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - process configuration, PIPs
 - PIPs, process configuration
 ms.assetid: 64f0f5fb-f880-4ef1-95d7-2575b8d0bcff
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 777f32e5a9e035f6009f5450eb48ae8286159f05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-pip-specification-to-create-a-process-configuration"></a>PIP 仕様を使用して、プロセス構成を作成するには
 ダウンロードした後、プロセス PIP (Partner Interface)、RosettaNet 組織 (RosettaNet.org) から、ダウンロード パッケージには、PIP 仕様ドキュメントが含まれています。 このドキュメントには、[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] 管理コンソールでプロセス構成を作成する場合に使用する設定についてのガイダンスが記載されています。  
@@ -55,4 +55,4 @@ ms.lasthandoff: 09/20/2017
 |[サービスの分類]|表 4-1: ネットワーク コンポーネントの仕様|  
   
 ## <a name="see-also"></a>参照  
- [作成またはプロセス構成を編集する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)
+ [プロセス構成を作成または編集する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)

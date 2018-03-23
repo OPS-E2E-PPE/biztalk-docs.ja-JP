@@ -1,25 +1,25 @@
 ---
-title: "スキーマ ツリー ビューを最適化する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ ツリー ビューを最適化する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab4ad6b5-5bbd-443b-9041-6cddf9d64735
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: aeeddd0893b80c1c7b37b2d0ee5f9f6cd68849d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-optimize-the-schema-tree-view"></a>スキーマ ツリー ビューを最適化する方法
-使用することができます、**関連ビュー**最適化元や送信先スキーマ ツリーに BizTalk マッパーでします。 このトピックでは、その操作の実行手順について説明します。  
+使用することができます、 **関連ビュー** 最適化元や送信先スキーマ ツリーに BizTalk マッパーでします。 このトピックでは、その操作の実行手順について説明します。  
   
  関連ビューでは、兄弟要素をまとめることにより関連のないスキーマ要素が折りたたまれ、スキーマがよりコンパクトに表示されます。 これにより、スクロール操作が減り、スキーマやマップの使用要件に集中しやすくなります。  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
 >  Ctrl + M キー、Ctrl + E キーを押すと送信元スキーマのツリー ノードが展開され、Ctrl + M キー、Ctrl + C キーを押すと、折りたたまれます。 同様に、Ctrl + M キー、Ctrl + E キーを押すと送信先スキーマのツリー ノードが展開され、Ctrl + M キー、Ctrl + C キーを押すと、折りたたまれます。 また、送信元または送信先のまとめられたノードについても、それぞれ Ctrl + M キー、Ctrl + H キーまたは Ctrl + M キー、Ctrl + D キーを押すことができます。 マッパーのキーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk マッパーの強化された機能を使用](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [BizTalk マッパーで強化された機能を使用します。](../core/using-enhanced-features-in-biztalk-mapper.md)

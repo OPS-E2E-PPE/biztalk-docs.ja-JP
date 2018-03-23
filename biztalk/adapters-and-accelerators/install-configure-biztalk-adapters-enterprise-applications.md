@@ -1,21 +1,21 @@
 ---
-title: "BizTalk Adapters for Enterprise Applications インストール |Microsoft ドキュメント"
-description: "要件と BizTalk Server では、JD Edwards OneWorld、JD Edwards EnterpriseOne では、PeopleSoft Enterprise、TIBCO Rendezvous および TIBCO Enterprise Message Service のインストール手順"
-ms.custom: 
+title: BizTalk Adapters for Enterprise Applications インストール |Microsoft ドキュメント
+description: 要件と BizTalk Server では、JD Edwards OneWorld、JD Edwards EnterpriseOne では、PeopleSoft Enterprise、TIBCO Rendezvous および TIBCO Enterprise Message Service のインストール手順
+ms.custom: ''
 ms.date: 10/13/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 8fa1a09f3d9fa531cee51ecd0e94b99ab972ba13
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-adapters-for-enterprise-applications"></a>インストールし、エンタープライズ アプリケーション用の Microsoft BizTalk Adapters の構成 
   
@@ -44,7 +44,7 @@ ms.lasthandoff: 10/17/2017
 |サポートされているエンタープライズ システム|[サポートされている基幹業務 (LOB) とエンタープライズ システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)サポートされているバージョンを一覧表示 |
 |JD Edwards OneWorld XE | <ul><li>Windows 上の JD Edwards エンタープライズ サーバー</li><li>Windows 上の JD Edwards Deployment サーバー</li></ul>|
 |JD Edwards EnterpriseOne | アダプターは、データベースのドライバーが必要になる JDBC を使用して、JD Edwards EnterpriseOne API を呼び出します。 JD Edwards EnterpriseOne を SQL データベースとともにインストールする場合、MS-SQL のドライバーが必要です。 同様に、Oracle データベースと JD Edwards EnterpriseOne をインストールする場合に、Oracle のドライバーを必要または、DB2 のドライバーが必要な場合は、DB2 データベースとともにインストールします。 |
-|PeopleSoft Enterprise | <ul><li>Sun Systems Java Development Kit (JDK)</li><li>PeopleSoft ツール リリース</li><li>PeopleSoft アプリケーションをリリースします。</li><li>このアダプターには、PeopleSoft アプリケーションへの変更が必要です。 コンポーネント インターフェイスを使用するのには、PeopleSoft にカスタム コンポーネント インターフェイスの GET_CI_INFO をアップロードします。 GET_CI_INFO.pc は Program files \common files \microsoft BizTalk Adapters で Enterprise Applications\PeopleSoft Enterprise(r) \Config\ です。</li></ul>|
+|PeopleSoft Enterprise | <ul><li>Sun Systems Java Development Kit (JDK)</li><li>PeopleSoft ツール リリース</li><li>PeopleSoft アプリケーションをリリースします。</li><li>このアダプターには、PeopleSoft アプリケーションへの変更が必要です。 コンポーネント インターフェイスを使用するのには、PeopleSoft にカスタム コンポーネント インターフェイスの GET_CI_INFO をアップロードします。 GET_CI_INFO.pc is in Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r)\Config\.</li></ul>|
 |TIBCO Rendezvous | <ul><li>TIBCO Rendezvous の実行時コンポーネントは、BizTalk Adapter for TIBCO Rendezvous を実行しているコンピューターにインストールする必要があります。</li><li>TIBCO Rendezvous のライセンスは、BizTalk Adapter for TIBCO Rendezvous を実行しているコンピューターで構成する必要があります。</li><li>TIBCO Rendezvous のバイナリ ディレクトリが、環境変数の PATH の値、または BizTalk Server の各 Rendezvous ポートで指定されて、アダプターに認識されている必要があります。 これは、Rendezvous のアセンブリが、そのライブラリと実行可能ファイルを見つけるために必要です。</li></ul>|
 |TIBCO Enterprise Message Service | Enterprise Message Service (EMS) バージョン 5.x 以降、クライアント SDK (TIBCO EMS c# API を使用) が含まれています。 BizTalk Adapter for TIBCO EMS では、これを使用して、サーバーと通信します。 |
 
@@ -225,7 +225,7 @@ JD Edwards OneWorld の BizTalk アダプターを使用するには、BTSREL �
     -   **製品コード:** 55    
     -   **製品システム コード:** 55  
   
-4.  [ **OK**] を選択します。  
+4.  **[OK]** を選択します。  
   
 ##### <a name="step-2-rebuild-libraries-from-the-deployment-server"></a>手順 2: 配置先のサーバーからライブラリを再構築します。  
 各プラットフォームの初期セットアップで次の手順を実行します。  
@@ -353,15 +353,15 @@ JD Edwards OneWorld の BizTalk アダプターを使用するには、BTSREL �
   
  次の表は、jdeinterop.ini ファイルにある各設定を項目化したものです。 情報は、セクション別に構成されています。 たとえば [JDENET] と各セクションは、JD Edwards OneWorld ソフトウェア内で出現する順序で一覧表示されています。  
   
-#### <a name="jdeinteropini-file-settings"></a>jdeinterop.ini ファイルの設定
+#### <a name="jdeinteropini-file-settings"></a>jdeinterop.ini file settings
   
 |セクション|パラメーターと説明|  
 |-------------|-------------------------------|  
-|[JDENET]|**EnterpriseServerTimeout です。** エンタープライズ サーバーへの要求のタイムアウト値 (ミリ秒単位)。 既定のサイズは 120000 です。<br /><br /> **maxPoolSize です。** JDENET ソケット接続のプール サイズ。 既定のサイズは、30 です。|  
-|[サーバー]|**glossaryTextServer です。** 用語集のテキスト情報を提供する、エンタープライズ サーバーとポート。 これは、エラーに関する説明テキストを返すサーバーです。 これは多くの場合、JD Edwards OneWorld アプリケーション サーバーと同じホストとポートです。 別のサポート対象言語エンコード用の複数の用語集サーバーが存在する場合があります。 たとえば、JDED:6010 または actsrv1:6009 です。 これらの値は、[System Definition] (システム定義) に設定されている値と一致している必要があります。<br /><br /> **コード ページ。** エンコード スキームです。 既定値は、1252 です。<br /><br /> 1252 英語および西ヨーロッパ<br /><br /> -932 日本語<br /><br /> -950 繁体字中国語<br /><br /> -936 簡体字中国語<br /><br /> -949 韓国語|  
-|[ログ]|**ログ c:\jas.log を = です。** ログ ファイルの場所です。 このパラメーターは無視してかまいません。<br /><br /> **debuglog = c:\jasdebug.log です。** デバッグ ログ ファイルの場所。 このパラメーターは無視してかまいません。<br /><br /> **デバッグします。** JDENET デバッグがオンかどうかが決定されます。 既定値は FALSE です。|  
-|[デバッグ]|**JobFile = c:\Interop.log です。** エラー ファイルの場所。 このパラメーターは無視してかまいません。<br /><br /> **DebugFile = c:\InteropDebug.log です。** デバッグ ファイルの場所です。 このパラメーターは無視してかまいません。<br /><br /> **ログ c:\net.log を = です。** ログ ファイルの場所です。 このパラメーターは無視してかまいません。<br /><br /> **debugLevel = 0 ~ 12 です。** デバッグ レベル。 このパラメーターは無視してかまいません。 このパラメーターでは、COM サーバーのみで、指定されたログ ファイル内の COM コネクタと Callobject コンポーネントによって提供されるトレースのレベルを定義します。<br /><br /> -なし。 ログ記録が無効になり、エラーのみが JobFile に書き込まれます。<br /><br /> 2 つのエラー (エラー メッセージ)<br /><br /> -4: システム エラー (例外メッセージ)<br /><br /> -6: 警告情報<br /><br /> -8: 最小トレース (キー操作。 たとえば、ログオン、ログオフ、ビジネス関数の呼び出し。)<br /><br /> -10: トラブルシューティング情報 (ヘルプ)。<br /><br /> -12 の完全なデバッグ情報 (すべてログに記録)<br /><br /> -既定では、トレースを有効にする必要はありませんが、トレースは、コードをデバッグするときに便利です。<br /><br /> -NetTraceLevel 0 を = です。 トレース レベル。 このパラメーターは無視してかまいません。 COM サーバーのみで、指定されたログ ファイルで ThinNet コンポーネントによって提供されるトレースのレベルを定義します。 奇数の値は、レベルを今後追加するために予約されています。<br /><br /> -次の一覧には、さらに多くのデバッグ レベルについて説明します。<br /><br /> -0 トレースなし<br /><br /> -レコードのプロセス ID、スレッド ID、および新しい接続が追加され、ソケット プールが検索されるときに利用可能なソケット ステータス 1 の参照。<br /><br /> -2 では、トレース レベル 1 の情報が含まれますも、接続マネージャー クラスで加えられたすべての呼び出しをトレースします。<br /><br /> -3 には、トレース レベル 2、また、トレース getPort() 呼び出しおよび getHost() 呼び出し内のすべての情報が含まれます。|  
-|[INTEROP]|**enterpriseServer です。** この値は、ホスト サーバーの名前です。 この値が同じ値に入力するかどうかを確認、**ホスト名**フィールドで、 **JDE 資格情報**」の「**システム定義**で、 **トランスポートのプロパティ** ダイアログ ボックス。 既定値は、JDED です。<br /><br /> **ポートです。** この値は、データの交換に使用されるポート番号です。 この値が同じ値に入力するかどうかを確認、**ポート番号**フィールドに、JD Edwards**資格情報**」の「、**トランスポートのプロパティ、システム定義**. たとえば、6010 または 6009 です。 値が一致する必要がありますで設定されている**システム定義**です。<br /><br /> **inactive_timeout**です。 自動コミット モードのトランザクションのタイムアウト値 (ミリ秒単位)。 ユーザーがこの時間 (ミリ秒単位) の間アクティブでなかった場合は、相互運用サーバーによってそのユーザーがログオフされます。 この値は、より短い時間に変更できます。 既定値は、1200000 です。<br /><br /> **manual_timeout です。** 手動コミット モードでのトランザクションのミリ秒単位のタイムアウト値。 既定値は、120000 です。<br /><br /> **リポジトリ。** Connector.jar と Kernel.jar が含まれたディレクトリの場所を指します。 UNIX では、これは完全なパスです。|  
+|[JDENET]|**EnterpriseServerTimeout.** エンタープライズ サーバーへの要求のタイムアウト値 (ミリ秒単位)。 既定のサイズは 120000 です。<br /><br /> **maxPoolSize.** JDENET ソケット接続のプール サイズ。 既定のサイズは、30 です。|  
+|[サーバー]|**glossaryTextServer.** 用語集のテキスト情報を提供する、エンタープライズ サーバーとポート。 これは、エラーに関する説明テキストを返すサーバーです。 これは多くの場合、JD Edwards OneWorld アプリケーション サーバーと同じホストとポートです。 別のサポート対象言語エンコード用の複数の用語集サーバーが存在する場合があります。 たとえば、JDED:6010 または actsrv1:6009 です。 これらの値は、[System Definition] (システム定義) に設定されている値と一致している必要があります。<br /><br /> **codePage.** エンコード スキームです。 既定値は、1252 です。<br /><br /> 1252 英語および西ヨーロッパ<br /><br /> -932 日本語<br /><br /> -950 繁体字中国語<br /><br /> -936 簡体字中国語<br /><br /> -949 韓国語|  
+|[LOGS]|**log= c:\jas.log.** ログ ファイルの場所です。 このパラメーターは無視してかまいません。<br /><br /> **debuglog= c:\jasdebug.log.** デバッグ ログ ファイルの場所。 このパラメーターは無視してかまいません。<br /><br /> **デバッグします。** JDENET デバッグがオンかどうかが決定されます。 既定値は FALSE です。|  
+|[デバッグ]|**JobFile= c:\Interop.log.** エラー ファイルの場所。 このパラメーターは無視してかまいません。<br /><br /> **DebugFile= c:\InteropDebug.log.** デバッグ ファイルの場所です。 このパラメーターは無視してかまいません。<br /><br /> **log= c:\net.log.** ログ ファイルの場所です。 このパラメーターは無視してかまいません。<br /><br /> **debugLevel= 0 - 12.** デバッグ レベル。 このパラメーターは無視してかまいません。 このパラメーターでは、COM サーバーのみで、指定されたログ ファイル内の COM コネクタと Callobject コンポーネントによって提供されるトレースのレベルを定義します。<br /><br /> -なし。 ログ記録が無効になり、エラーのみが JobFile に書き込まれます。<br /><br /> 2 つのエラー (エラー メッセージ)<br /><br /> -4: システム エラー (例外メッセージ)<br /><br /> -6: 警告情報<br /><br /> -8: 最小トレース (キー操作。 たとえば、ログオン、ログオフ、ビジネス関数の呼び出し。)<br /><br /> -10: トラブルシューティング情報 (ヘルプ)。<br /><br /> -12 の完全なデバッグ情報 (すべてログに記録)<br /><br /> -既定では、トレースを有効にする必要はありませんが、トレースは、コードをデバッグするときに便利です。<br /><br /> -NetTraceLevel 0 を = です。 トレース レベル。 このパラメーターは無視してかまいません。 COM サーバーのみで、指定されたログ ファイルで ThinNet コンポーネントによって提供されるトレースのレベルを定義します。 奇数の値は、レベルを今後追加するために予約されています。<br /><br /> -次の一覧には、さらに多くのデバッグ レベルについて説明します。<br /><br /> -0 トレースなし<br /><br /> -レコードのプロセス ID、スレッド ID、および新しい接続が追加され、ソケット プールが検索されるときに利用可能なソケット ステータス 1 の参照。<br /><br /> -2 では、トレース レベル 1 の情報が含まれますも、接続マネージャー クラスで加えられたすべての呼び出しをトレースします。<br /><br /> -3 には、トレース レベル 2、また、トレース getPort() 呼び出しおよび getHost() 呼び出し内のすべての情報が含まれます。|  
+|[INTEROP]|**enterpriseServer.** この値は、ホスト サーバーの名前です。 この値が同じ値に入力するかどうかを確認、**ホスト名**フィールドで、 **JDE 資格情報**」の「**システム定義**で、 **トランスポートのプロパティ** ダイアログ ボックス。 既定値は、JDED です。<br /><br /> **ポートです。** この値は、データの交換に使用されるポート番号です。 この値が同じ値に入力するかどうかを確認、**ポート番号**フィールドに、JD Edwards**資格情報**」の「、**トランスポートのプロパティ、システム定義**. たとえば、6010 または 6009 です。 値が一致する必要がありますで設定されている**システム定義**です。<br /><br /> **inactive_timeout**です。 自動コミット モードのトランザクションのタイムアウト値 (ミリ秒単位)。 ユーザーがこの時間 (ミリ秒単位) の間アクティブでなかった場合は、相互運用サーバーによってそのユーザーがログオフされます。 この値は、より短い時間に変更できます。 既定値は、1200000 です。<br /><br /> **manual_timeout.** 手動コミット モードでのトランザクションのミリ秒単位のタイムアウト値。 既定値は、120000 です。<br /><br /> **リポジトリ。** Connector.jar と Kernel.jar が含まれたディレクトリの場所を指します。 UNIX では、これは完全なパスです。|  
 |[CORBA]|このパラメーターは無視してかまいません。<br /><br /> **マルチ スレッドです。** 設定は無視できます。 CORBA でマルチスレッド サポートの場合は 1 に設定されます。<br /><br /> Objects= CORBA::Connector;CORBA::OneWorldVersion<br /><br /> CORBA サーバーで起動時に作成するオブジェクトを定義します。 -DIORFILENAME 置き換えますコマンド ライン オプションをたとえば =: CORBA::Connector=connector.ior です。|  
   
 ## <a name="jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne  
@@ -400,7 +400,7 @@ JD Edwards OneWorld の BizTalk アダプターを使用するには、BTSREL �
  ログに jdearglist.txt の警告メッセージを受信する場合、その目的は、jdearglist.txt が不足していることを知らせるです。 ただし、SalesOrder または PurchaseOrder ビジネス関数を実行している場合は、そのファイルのパスにする必要があります。 または機能しません。  
   
 ### <a name="understand-jdeinteropini"></a>Jdeinterop.ini を理解します。  
- Connector.jar および Kernel.jar で JD Edwards EnterpriseOne コネクタ クラスでは、jdeinterop.ini という名前の構成ファイルを使用することが必要です。 このファイルは、JD Edwards EnterpriseOne ソフトウェアによって定義され、その用語を使用します。 目的と用語のこのファイルの詳細については、JD Edwards の相互運用性ガイドを参照してください。 サンプルの jdeinterop.ini ファイルがある: Program files \ の Microsoft BizTalk Adapters for Enterprise applications \ j. d. Edwards EnterpriseOne(r) \config です。  
+ Connector.jar および Kernel.jar で JD Edwards EnterpriseOne コネクタ クラスでは、jdeinterop.ini という名前の構成ファイルを使用することが必要です。 このファイルは、JD Edwards EnterpriseOne ソフトウェアによって定義され、その用語を使用します。 目的と用語のこのファイルの詳細については、JD Edwards の相互運用性ガイドを参照してください。 サンプルの jdeinterop.ini ファイルがある: Program files \ の Microsoft BizTalk Adapters for Enterprise applications \ j. d. Edwards EnterpriseOne(r)\config.  
   
  やり取りするために手動でこのファイルを編集することはお勧めできません、**トランスポートのプロパティ**--としてマークされたフィールドなどの送信ポートのダイアログ ボックス**< BizTalk によって構成された\>**.  
   
@@ -499,7 +499,7 @@ and bc2.BCTYPE in (1, 2))
   
 3.  アプリケーション デザイナーでの**ファイル**メニューの **新規**です。  
   
-4.  **新規**ダイアログ ボックスで、**コンポーネント インターフェイス**、順にクリック**OK**です。  
+4.  **新規** ダイアログ ボックスで、 **コンポーネント インターフェイス**, 、 をクリックし、 **OK**します。  
   
 5.  **[選択]**をクリックします。  
   
@@ -532,19 +532,19 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
 >   
 >  コンポーネント インターフェイスのセキュリティを構成するには  
   
-1.  をポイント**PeopleTools**、をポイント**セキュリティ**、をポイント**アクセス許可とロール**、し、 **Permission Lists**です。  
+1.  をポイント**PeopleTools**、 をポイント**セキュリティ**、 をポイント**アクセス許可とロール**、し、 **Permission Lists**です。  
   
-2.  **セキュリティの維持**ウィンドウで、をクリックして**検索**、関連する選択**アクセス許可の一覧**、し、一覧から適切なハイパーリンクをクリックします。  
+2.  **セキュリティの維持**ウィンドウで、 をクリックして**検索**、関連する選択**アクセス許可の一覧**、し、一覧から適切なハイパーリンクをクリックします。  
   
 3.  **アクセス許可リスト**、右側のペインが横に、右矢印をクリックして、 **sign-on Times**を表示するタブ、**コンポーネント インターフェイス**タブです。  
   
-4.  クリックして、**コンポーネント インターフェイス**タブです。  
+4.  クリックして、 **コンポーネント インターフェイス**  タブをクリックします。  
   
 5.  新しい行を追加するには、プラス記号 (+) をクリックする、**コンポーネント インターフェイス** ボックスの一覧です。  
   
 6.  選択、 **GET_CI_INFO**クリックしてコンポーネント インターフェイス**編集**です。  
   
-7.  メソッドに設定する**フル アクセス**、をクリックして**Full Access (All)**、クリックして**[ok]**です。  
+7.  メソッドに設定する**フル アクセス**、 をクリックして**Full Access (All)**、クリックして**ok**です。  
   
 8.  一番下までスクロール、**コンポーネント インターフェイス**ウィンドウ、およびクリック**保存**です。  
   
@@ -557,7 +557,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 1.  開始、 **PeopleSoft アプリケーション デザイナ**です。  
   
-2.  **ファイル**メニューのをポイント**開く**、し、**定義コンポーネント インターフェイスを =**です。  
+2.  **ファイル**] メニューのをポイント**開く**、し、[**定義コンポーネント インターフェイスを =**です。  
   
 3.  コンポーネント インターフェイスのリストから選択**GET_CI_INFO CI**です。  
   
@@ -644,9 +644,9 @@ BizTalk Server にアダプターを追加するには、このトピック内�
 * * Program エンタープライズ Applications\JD Edwards OneWorld(r) for files \microsoft BizTalk Adapters\*次のファイルが含まれています。  
   
     -   classes\JDEJAccess.jar    
-    -   Config\ j. d. Edwards OneWorld(r) \BTSREL.exe    
-    -   Config\ j. d. Edwards OneWorld(r) \jdearglist.txt    
-    -   Config\ j. d. Edwards OneWorld(r) \jdeinterop.ini  
+    -   Config\ J.D. Edwards OneWorld(r) \BTSREL.exe    
+    -   Config\ J.D. Edwards OneWorld(r) \jdearglist.txt    
+    -   Config\ J.D. Edwards OneWorld(r) \jdeinterop.ini  
   
 * * プログラムの files \common files \microsoft BizTalk Adapters for Enterprise applications \bin\*次のファイルが含まれています。  
   
@@ -672,7 +672,7 @@ BizTalk Server にアダプターを追加するには、このトピック内�
     -   Jdecba.dll    
     -   Microsoft.BizTalk.Adapters.JDEProperties.dll  
   
-* 次のファイルがインストールされている*Enterprise applications \j.d. の Program files \microsoft BizTalk Adapters です。Edwards enterpriseone (r)*:  
+* 次のファイルがインストールされている*Enterprise applications \j.d. の Program files \microsoft BizTalk Adapters です。Edwards EnterpriseOne(r)*:  
   
     -   Bin\BTAJDEEnterpriseOneTrace.cmd    
     -   Classes\JDEDynAccess.jar    
@@ -680,7 +680,7 @@ BizTalk Server にアダプターを追加するには、このトピック内�
     -   Config\jdearglist.txt    
     -   Config\jdeinterop.ini    
     -   Config\jdelog.properties    
-    -   sdk  
+    -   Sdk  
   
  
 ## <a name="post-install---peoplesoft-enterprise"></a>ポスト インストール-PeopleSoft Enterprise  
@@ -706,7 +706,7 @@ BizTalk Server にアダプターを追加するには、このトピック内�
     -   config\GET_CI_INFO.pc    
     -   sdk\  
   
-* *プログラムの for Enterprise Applications files \common files \microsoft BizTalk Adapters*次のファイルが含まれています。  
+* *Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications* contains the following files:  
   
     -   bin\psosa.dll    
     -   bin\Microsoft.BizTalk.Adapters.CoreManagement.dll    
@@ -750,7 +750,7 @@ BizTalk Server にアダプターを追加するには、このトピック内�
     -   Config\btaTibcoRVTrace.mof    
     -   sdk\  
   
-* *プログラムの for Enterprise Applications files \common files \microsoft BizTalk Adapters*次のファイルが含まれています。  
+* *Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications* contains the following files:  
   
     -   bin\tibcorvcba.dll    
     -   Microsoft.BizTalk.Adapters.CoreManagement.dll    
@@ -795,7 +795,7 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
     -   Config\btaTibcoEMSTrace.mof    
     -   sdk\  
   
-* *For Enterprise applications \bin files \common files \microsoft BizTalk Adapters をプログラム*フォルダーには、次のファイルが含まれています。  
+* *Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications\bin* folder contains the following files:  
   
     -   Microsoft.BizTalk.Adapters.CoreManagement.dll    
     -   Microsoft.BizTalk.Adapters.CoreReceiver.dll    
@@ -857,7 +857,7 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
   
     コンシューマー アプリケーションで .etl ファイル内のイベントを読み取るには、Windows イベント トレーシングでそれらのイベントを .etl ファイルにダンプする必要があります。 通常、この作業は、コントローラーがトレーシングを非アクティブ化するときに行われます。  
   
-    コント ローラーにコンシューマー アプリケーションを使用して、トレースを非アクティブ化せず、リアルタイムのオプションを使用してトレースをアクティブ化する必要があります**< リアルタイム\>=-rt**です。  
+    コンシューマー アプリケーションを使用して、トレースを非アクティブにせず、リアルタイムのオプションを使用してトレースで、コント ローラーによってアクティブ化する必要があります **< リアルタイム\> =-rt**します。  
   
 * **プロバイダー:**イベントを提供するために使用します。  
   
@@ -882,29 +882,29 @@ BTA<Adapter Name>Trace <Trace element> -stop
   
  各要素の説明は次のとおりです。  
   
-**< トレース要素\>**プロバイダーの種類は、(必須)。 使用可能なオプションは次のとおりです。  
+**< トレース要素\>** プロバイダーの種類は、(必須)。 使用可能なオプションは次のとおりです。  
   
  **-castDetailsTransmit**  
   
- **送信機能**  
+ **-送信機能**  
   
  **-castDetailsReceive**  
   
- **-受信機**  
+ **-受信者**  
   
- **-管理**  
+ **管理**  
   
  **-開始、停止:**アクティブ化またはプロバイダーを非アクティブ化します。  
   
- **-cir < MB\>:**サイズおよびファイルの種類。 **-cir**循環ファイルです。 **< MB\>:**サイズ (メガバイト単位)。  
+ **-cir < MB\>:**サイズおよびファイルの種類。 **-cir** は循環ファイルです。 **< MB\>:**サイズ (メガバイト単位)。  
   
- **-seq < MB\>:**サイズおよびファイルの種類。 **-seq**シーケンシャル ファイルです。 **< MB\>:**サイズ (メガバイト単位)。  
+ **-seq < MB\>:**サイズおよびファイルの種類。 **-seq** シーケンシャル ファイルです。 **< MB\>:**サイズ (メガバイト単位)。  
   
  **-rt:**でリアルタイムに設定します。  
   
  **ログ ファイル:**ログ ファイルの名前 (既定では c:\rtlog.etl) です。  
   
- 例:  
+ 以下に例を示します。  
   
 ```  
 BTAXXXTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  

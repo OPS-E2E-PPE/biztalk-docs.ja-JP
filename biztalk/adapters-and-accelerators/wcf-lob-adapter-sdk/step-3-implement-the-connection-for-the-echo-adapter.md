@@ -1,22 +1,22 @@
 ---
-title: "手順 3: 実装エコー アダプターの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 実装エコー アダプターの接続 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc223901-3ad3-4e71-8672-fea6bb4efe65
-caps.latest.revision: "22"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0a735654fd03f5efb39fe73eb845f4db3632d283
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>手順 3: エコー アダプターの接続を実装します。
 ![手順 9 3](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
 |----------------|---------------------|  
 |public void 閉じる (TimeSpan タイムアウト)|ターゲット システムへの接続を閉じます。 エコー アダプターでは、このメソッドを使用して、トレース リスナーにのみトレース イベントを追加します。|  
 |パブリック bool IsValid (TimeSpan タイムアウト)|接続が有効であるかどうかを示す値を返します。<br /><br /> エコー アダプターによってサポートされていません。|  
-|public void 開く (TimeSpan タイムアウト)|ターゲット システムへの接続を開きます。<br /><br /> エコー アダプターに対しては不適用です。 しかし、例を示します enableAuthentication と呼ばれる URI 要素を使用して、ユーザー名を指定するユーザーに要求する方法。|  
+|public void Open(TimeSpan timeout)|ターゲット システムへの接続を開きます。<br /><br /> エコー アダプターに対しては不適用です。 しかし、例を示します enableAuthentication と呼ばれる URI 要素を使用して、ユーザー名を指定するユーザーに要求する方法。|  
 |public void ClearContext()|接続のコンテキストをクリアします。 このメソッドは、接続のセットは、接続プールに戻すときに呼び出されます。<br /><br /> エコー アダプターによってサポートされていません。|  
 |public void Abort()|ターゲット システムへの接続を中止します。<br /><br /> エコー アダプターによってサポートされていません。|  
   
@@ -64,17 +64,17 @@ ms.lasthandoff: 09/20/2017
 |**方法**|**Description**|  
 |----------------|---------------------|  
 |パブリック オーバーライド Uri の Uri|取得し、Uri を設定します。 Uri 文字列を作成するを取得し、Uri 文字列の解析を設定します。|  
-|パブリック EchoAdapterConnectionUri()|ConnectionUri クラスの新しいインスタンスを初期化します。|  
-|パブリック オーバーライド文字列 SampleUriString|返します EchoAdapter.SCHEME +"://{hostname}/{application}?enableAuthentication={True & #124 です。False}"。<br /><br /> この戻り値の文字列でとして表示されます、**例**で、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールを次の図に示すようにします。|  
+|public EchoAdapterConnectionUri()|ConnectionUri クラスの新しいインスタンスを初期化します。|  
+|パブリック オーバーライド文字列 SampleUriString|Returns EchoAdapter.SCHEME + "://{hostname}/{application}?enableAuthentication={True&#124;False}".<br /><br /> この戻り値の文字列でとして表示されます、**例**で、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールを次の図に示すようにします。|  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
 ## <a name="echo-adapter-connection-uri"></a>アダプターの接続 URI をエコーします。  
- URI として説明されているサンプル エコー アダプターの接続: EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true &#124; false}  
+ URI として説明されているサンプル エコー アダプターの接続: EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}  
   
  なので、EchoAapter.SCHEME echov2、接続 URI です。  
   
- echo2://lobhostname/lobapplication? enableAuthentication = {true &#124; false}  
+ echo2://lobhostname/lobapplication?enableAuthentication={true&#124;false}  
   
  以前の接続 URI を読み取ることができる場合に enableAuthentication false を次のように。  
   
@@ -88,19 +88,19 @@ ms.lasthandoff: 09/20/2017
   
  次のコードでは、エコー アダプターは、アダプターが URI のさまざまな要素を使用して、アダプターの機能を変更する方法を表示する 2 つの方法で URI を構築します。  
   
- echo2://lobhostname/lobapplication? enableAuthentication = [true (&) #124; false]  
+ echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]  
   
- echo2://lobhostname/lobapplication? enableAuthentication = [true (&) #124; false] (& a) echoInUpperCase = true  
+ echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]&echoInUpperCase=true  
   
 ### <a name="retrieving-the-uri-element"></a>URI の要素を取得します。  
  エコー アダプター URI echo2 内の各 URI 要素を解析することができます://lobhostname/lobapplication? enableAuthentication = false & echoInUpperCase = false。  URI の要素の値と関連するメソッドは、次の表のとおりです。  
   
 |**URI の要素の値**|**方法**|  
 |---------------------------|----------------|  
-|lobhostname|`System.Uri.Host%2A`ホスト名を取得するには|  
-|Lobapplication|`System.Uri.AbsolutePath%2A`対象アプリケーション名を取得するには|  
-|enableAuthentation = false|GetQueryStringValue("enableAuthentication")<br /><br /> この URI 要素を使用して、ユーザーの資格情報を検証する**注:** GetQueryStringValue 静的メソッドで定義されているは、`Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
-|echoInUpperValue = false|GetQueryStringValue("echoInUpperValue")<br /><br /> 着信の文字列を大文字に変換するためには、この URI 要素を使用します。|  
+|lobhostname|`System.Uri.Host%2A` ホスト名を取得するには|  
+|Lobapplication|`System.Uri.AbsolutePath%2A` 対象アプリケーション名を取得するには|  
+|enableAuthentation=false|GetQueryStringValue("enableAuthentication")<br /><br /> この URI 要素を使用して、ユーザーの資格情報を検証する**注:** GetQueryStringValue 静的メソッドで定義されているは、 `Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
+|echoInUpperValue=false|GetQueryStringValue("echoInUpperValue")<br /><br /> 着信の文字列を大文字に変換するためには、この URI 要素を使用します。|  
   
 ### <a name="enableauthentication-uri-element"></a>EnableAuthentication URI 要素  
  多くの場合、ターゲット システムでは、ターゲット システムへの接続を確立するためにクライアントの資格情報を指定する必要があります。 前述のように、エコー アダプターは、ターゲット システムを行いません。 サンプルは、としても、enableAuthentication と呼ばれるカスタム URI 要素を使用して、資格情報を提供する方法を示します。  
@@ -334,4 +334,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [手順 4: エコー アダプターのメタデータ参照のハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
- [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

@@ -1,23 +1,23 @@
 ---
-title: "BizTalk で Oracle EBS アダプターでの Oracle データ型の基本 |Microsoft ドキュメント"
-description: "データと XSD 型、安全な型指定、および Oracle E-business Suite BizTalk アダプター パック (BAP) 内での検証"
-ms.custom: 
+title: BizTalk で Oracle EBS アダプターでの Oracle データ型の基本 |Microsoft ドキュメント
+description: データと XSD 型、安全な型指定、および Oracle E-business Suite BizTalk アダプター パック (BAP) 内での検証
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 008bf621-8b4e-450d-b354-ee26b91592f2
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9012e2ef6adaf94f55b87bbccfc24b7fb889fbf3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="basic-oracle-data-types"></a>基本的な Oracle データ型
 このトピックの内容について説明しますが、どのように[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]サーフェスの基本的な Oracle データ型。  
@@ -32,14 +32,14 @@ ms.lasthandoff: 11/28/2017
   
 |Oracle データ型|XSD 型|.NET の種類|コメント|  
 |----------------------|--------------|---------------|--------------|  
-|BFile|入力: xsd:string<br /><br /> 出力: xsd:base64Binary|文字列<br /><br /> Byte[]|BFile データ型は、内部 (RecordType、TableType、UDT、および VArray) などの複合型はサポートされていません。|  
+|BFile|入力: xsd:string<br /><br /> output: xsd:base64Binary|文字列<br /><br /> Byte[]|BFile データ型は、内部 (RecordType、TableType、UDT、および VArray) などの複合型はサポートされていません。|  
 |Blob|xsd:base64Binary|Byte[]|-|  
 |Char|xsd:string|文字列|-|  
 |Clob|xsd:string|文字列|-|  
 |日付 *<br /><br /> (なしセーフである入力内の場合、UDT)|xsd:dateTime|DateTime|日付の値は、タイム ゾーン情報を含めることはできません (UTC または UTC のオフセット)。<br /><br /> -xsd:dateTime 値には、UTC または UTC オフセット<br />-   **DateTime.Kind**する必要があります**DateTimeKind.Unspecified**<br /><br /> タイム ゾーン情報が指定されている場合、アダプターがスローされます、 **XmlReaderParsingException**フィールドを示すメッセージを使用して例外。 **注:** 、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]のため xsd:date ではなく xsd:dateTime として Oracle の日付データ型を公開します。 <ul><li>Oracle の日付データ型は、時刻の値を含めることもできます。</li><li>.NET が xsd:date のと同じではありません。</li></ul>|  
 |Float * *|xsd:float 場合 prec < 7 を =<br /><br /> xsd:double 場合 prec 7 > と < 15 を =<br /><br /> xsd:string 場合 prec > 15|Float<br /><br /> Double<br /><br /> 文字列|10 進数の文字と桁区切り記号で指定された形式と一貫性の値を指定する必要があります、 **NumericCharacters**下にあるプロパティのバインド、 **MlsSettings**プロパティをバインドします。 値が指定されていない場合、 **NumericCharacters**バインディング プロパティ、アダプター設定を使用して MLS ODP.NET コンピューターにクライアントを同じアダプターがインストールされています。|  
 |IntervalDS|xsd:string<br /><br /> xsd:duration、UDT の内部場合|文字列<br /><br /> Timespan、UDT の内部場合|アダプターは、OracleIntervalDS.ToString メソッドを使用して文字列として IntervalDS データを返します。<br /><br /> 値は、Oracle のネイティブ形式で表す必要があります: 1 日 HH:MI:SSxFF (「5 15:30:12.99」など)。|  
-|IntervalYM|xsd:string<br /><br /> xsd:long、UDT の内部場合|文字列<br /><br /> 長い場合は、UDT の内部|アダプターは、OracleIntervalYM.ToString メソッドを使用して文字列として IntervalYM データを返します。<br /><br /> 値は、Oracle のネイティブ形式で表す必要があります: 年-月です。たとえば、「1-2」(1 年および 2 か月間) です。|  
+|IntervalYM|xsd:string<br /><br /> xsd:long if inside an UDT|文字列<br /><br /> 長い場合は、UDT の内部|アダプターは、OracleIntervalYM.ToString メソッドを使用して文字列として IntervalYM データを返します。<br /><br /> 値は、Oracle のネイティブ形式で表す必要があります: 年-月です。たとえば、「1-2」(1 年および 2 か月間) です。|  
 |Long|xsd:string|文字列|リリース以降の Oracle データベース 9i、長い形式のデータ型は推奨されません。 Oracle では、代わりに、ラージ オブジェクト (LOB) データ型を使用することをお勧めします。 したがって、ときに、Oracle の処理の実行、データベースを使用して、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、LOB データ型と長さのデータではなく動作する Oracle データベース アイテムを使用することをお勧めの種類。|  
 |LongRaw|xsd:base64Binary|Byte[]|-|  
 |NChar|xsd:string|文字列|-|  
@@ -48,11 +48,11 @@ ms.lasthandoff: 11/28/2017
 |NVarchar2|xsd:string|文字列|-|  
 |Raw|xsd:base64Binary|Byte[]||  
 |RowID|xsd:string|文字列|-|  
-|タイムスタンプ *<br /><br /> (なしセーフである入力内の場合、UDT)|xsd:dateTime 場合 prec < 7 を =<br /><br /> xsd:string 場合 prec > 7|DateTime<br /><br /> 文字列|文字列 (prec > 7) として公開されている、ときに、Oracle NLS_TIMESTAMP_FORMAT で値を表現する必要があります。 TimeStamp データ型の文字列形式を指定することができます、 **TimeStampFormat**下にあるプロパティのバインド、 **MlsSettings**プロパティをバインドします。 値が指定されていない場合、 **TimeStampFormat**バインディング プロパティ、アダプター設定を使用して MLS ODP.NET コンピューターにクライアントを同じアダプターがインストールされています。<br /><br /> タイムスタンプの値は、タイム ゾーン情報を含めることはできません (UTC または UTC のオフセット)。<br /><br /> -xsd:dateTime 値には、UTC または UTC オフセット<br />-   **DateTime.Kind**する必要があります**DateTimeKind.Unspecified**<br /><br /> タイム ゾーン情報が指定されている場合、アダプターがスローされます、 **XmlReaderParsingException**フィールドを示すメッセージを使用して例外。|  
+|TimeStamp*<br /><br /> (なしセーフである入力内の場合、UDT)|xsd:dateTime if prec <= 7<br /><br /> xsd:string 場合 prec > 7|DateTime<br /><br /> 文字列|文字列 (prec > 7) として公開されている、ときに、Oracle NLS_TIMESTAMP_FORMAT で値を表現する必要があります。 TimeStamp データ型の文字列形式を指定することができます、 **TimeStampFormat**下にあるプロパティのバインド、 **MlsSettings**プロパティをバインドします。 値が指定されていない場合、 **TimeStampFormat**バインディング プロパティ、アダプター設定を使用して MLS ODP.NET コンピューターにクライアントを同じアダプターがインストールされています。<br /><br /> タイムスタンプの値は、タイム ゾーン情報を含めることはできません (UTC または UTC のオフセット)。<br /><br /> -xsd:dateTime 値には、UTC または UTC オフセット<br />-   **DateTime.Kind**する必要があります**DateTimeKind.Unspecified**<br /><br /> タイム ゾーン情報が指定されている場合、アダプターがスローされます、 **XmlReaderParsingException**フィールドを示すメッセージを使用して例外。|  
 |TimeStampLTZ|xsd:string|文字列|Udt の内部 TimeStampLTZ はサポートされていません。<br /><br /> **UDT の外部**: Oracle NLS_TIMESTAMP_TZ_FORMAT で値を表す必要があります。 TimeStampLTZ データ型の文字列形式を指定することができます、 **TimeStampTZFormat**下にあるプロパティのバインド、 **MlsSettings**プロパティをバインドします。 値が指定されていない場合、 **TimeStampTZFormat**バインディング プロパティ、アダプター設定を使用して MLS ODP.NET コンピューターにクライアントを同じアダプターがインストールされています。|  
 |TimeStampTZ|xsd:string<br /><br /> xsd:dateTime、UDT の内部場合|文字列<br /><br /> DateTime、UDT の内部場合|**UDT の外部**: Oracle NLS_TIMESTAMP_TZ_FORMAT で値を表す必要があります。 TimeStampTZ データ型の文字列形式を指定することができます、 **TimeStampTZFormat**下にあるプロパティのバインド、 **MlsSettings**プロパティをバインドします。 値が指定されていない場合、 **TimeStampTZFormat**バインディング プロパティ、アダプター設定を使用して MLS ODP.NET コンピューターにクライアントを同じアダプターがインストールされています。|  
 |10 進数 * *|xsd:decimal 場合 prec < 28 を =<br /><br /> xsd:string 場合 prec > 28|Decimal<br /><br /> 文字列|-|  
-|varchar2|xsd:string|文字列|-|  
+|Varchar2|xsd:string|文字列|-|  
 |バイナリ Float * *|xsd:float 場合 prec < 7 を =<br /><br /> xsd:string 場合 prec > 7|Float<br /><br /> 文字列|10 進数の文字と桁区切り記号で指定された形式と一貫性の値を指定する必要があります、 **NumericCharacters**下にあるプロパティのバインド、 **MlsSettings**プロパティをバインドします。 値が指定されていない場合、 **NumericCharacters**バインディング プロパティ、アダプター設定を使用して MLS ODP.NET コンピューターにクライアントを同じアダプターがインストールされています。|  
 |バイナリ倍 * *|xsd:double 場合 prec < 15 を =<br /><br /> xsd:string 場合 prec > 15|Double<br /><br /> 文字列|-|  
 |バイナリ整数 * *|xsd:integer|Int32||  

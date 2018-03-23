@@ -1,22 +1,22 @@
 ---
-title: "WCF アダプター FAQ: WCF サービスの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: 'WCF アダプター FAQ: WCF サービスの使用 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: befa2268-8a65-465f-8086-70a66808845e
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 41d02fe0b7be1f53edaac4c18cfd7717a25c3a71
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="wcf-adapter-faq-using-wcf-services"></a>WCF アダプターに関する FAQ: WCF サービスの使用
 ## <a name="how-does-biztalk-server-use-its-wcf-adapters-to-access-wcf-services"></a>BizTalk Server が WCF アダプターを使用して WCF サービスにアクセスするしくみ  
@@ -33,17 +33,17 @@ ms.lasthandoff: 11/28/2017
   
  BizTalk WCF カスタム アダプターでは、BindingElement から新しいバインドを作成できるだけでなく、新しいバインドを直接構成することもできます。 また、標準バインド上の動作を構成することもできます。 カスタム動作の作成は、新しい BindingElement オブジェクトの作成より簡単なため、これは特に便利です。  
   
- BindingElement の構築は複雑な開発作業、参照することはハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=142449"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=142449 の WCF サンプルです。 カスタム BindingElement を作成するには、BindingElement から派生するクラスを作成します。 新しい BindingElement は新しいアセンブリに含める必要があります。 このアセンブリは、BizTalk ホスト、送信ポート、および受信場所が構成される管理コンピューターのグローバル アセンブリ キャッシュ (GAC) にあらかじめインストールされている必要があります。 カスタム バインドを関連付ける特定の送信ポートまたは受信場所は、まずに追加する、 \<bindingElementExtensions\>同じコンピューター上の machine.config ファイルのセクションでします。  
+ BindingElement の構築は複雑な開発作業であり、参照することはハイパーリンクで WCF サンプル"http://go.microsoft.com/fwlink/?LinkId=142449"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=142449です。 カスタム BindingElement を作成するには、BindingElement から派生するクラスを作成します。 新しい BindingElement は新しいアセンブリに含める必要があります。 このアセンブリは、BizTalk ホスト、送信ポート、および受信場所が構成される管理コンピューターのグローバル アセンブリ キャッシュ (GAC) にあらかじめインストールされている必要があります。 カスタム バインドを関連付ける特定の送信ポートまたは受信場所は、まずに追加する、 \<bindingElementExtensions\>同じコンピューター上の machine.config ファイルのセクションでします。  
   
- 開くことができますし、その変更を行った後、**トランスポートのプロパティの構成**バインディングを構成するダイアログ ボックス。  
+ 開くことができますし、その変更を行った後、 **トランスポートのプロパティの構成** ダイアログ ボックスをバインドを構成します。  
   
-1.  **バインド**] タブの [バインドの種類、select **customBinding**です。  
+1.  **バインド** ] タブの [バインドの種類、select **customBinding**します。  
   
-2.  **バインド** ウィンドウを右クリックして**CustomBindingElement**を選択して**拡張機能の追加**です。  
+2.  **バインド**  ウィンドウを右クリックして **CustomBindingElement**, を選択して **拡張機能の追加**します。  
   
 3.  machine.config ファイルで指定したバインド要素を選択し、必要に応じてバインドを構成します。 これで、メッセージの送信または受信に使用する準備ができました。  
   
- この方法でカスタム バインドが追加された場合、BizTalk で行われる検証は非常に限られたものです。 このため、バインド要素が正しい順序で表示されるようにすることが重要です。 実行時に初めて呼び出すバインド要素は、ダイアログ ボックスの CustomBindingElement バインド ツリーの下部に配置する必要があります。 BindingElement の一覧にはトランスポートが含まれている必要があります。トランスポートは一覧の下部に配置する必要があります。 一連の BindingElement にエンコーダーが含まれる場合もあります。 詳細については、バインド要素に関する WCF ドキュメントを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=142449](http://go.microsoft.com/fwlink/?LinkId=142449)です。  
+ この方法でカスタム バインドが追加された場合、BizTalk で行われる検証は非常に限られたものです。 このため、バインド要素が正しい順序で表示されるようにすることが重要です。 実行時に初めて呼び出すバインド要素は、ダイアログ ボックスの CustomBindingElement バインド ツリーの下部に配置する必要があります。 BindingElement の一覧にはトランスポートが含まれている必要があります。トランスポートは一覧の下部に配置する必要があります。 一連の BindingElement にエンコーダーが含まれる場合もあります。 詳細については、バインド要素に関する WCF ドキュメントを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=142449](http://go.microsoft.com/fwlink/?LinkId=142449)です。  
   
 ## <a name="what-is-a-wcf-custom-behavior-and-how-do-i-use-one-with-biztalk-server"></a>WCF カスタム動作についての説明と WCF カスタム動作の BizTalk Server における使用方法  
  WCF をメッセージ通信メカニズムとして使用する利点の 1 つは、カスタム コードを使用することでサービスの機能を拡張できる点です。 カスタム動作拡張機能は、市場の他の Web サービス テクノロジにはない、WCF の機能の 1 つです。  
@@ -52,4 +52,4 @@ ms.lasthandoff: 11/28/2017
   
  WCF サービスの呼び出しでカスタム処理を簡単に実装する機能は、Web アプリケーション間の他の通信方法と比較して、WCF が機能豊富なプログラミング パラダイムである主な理由の 1 つです。 このカスタム処理は、Web アプリケーション内の拡張機能要件で必要とされる、ほぼすべての形式に対応できます。 開発者は、サービス構成を調査および検証したり、WCF クライアント アプリケーションおよびサービス アプリケーションの実行時の動作を変更したりするカスタム拡張機能を作成できます。 動作では、通常のメッセージ処理を補完する、処理中にメッセージを変更する、特定の構成条件を精査して適切なアクションを実行する、呼び出し側の ID を確認して問題がなければメッセージを渡す、などを実行できます。これは完全にカスタム処理メカニズムであるため、アプリケーションに必要であればどのような拡張でも実装できます。  
   
- BizTalk Server で WCF カスタム動作を使用するが、使用して構成する、**動作**受信場所または送信ポートの Wcf-custom または Wcf-customisolated アダプターのタブです。
+ BizTalk Server で WCF カスタム動作を使用する、構成することを使用して、 **動作** 受信場所または送信ポートの Wcf-custom または Wcf-customisolated アダプターのタブをクリックします。

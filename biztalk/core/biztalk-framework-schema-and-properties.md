@@ -1,25 +1,25 @@
 ---
-title: "BizTalk Framework スキーマおよびプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Framework スキーマおよびプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8986e4a7-0c0a-415f-8a74-4fca71d3f1b5
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 992f0fb9c66ee00cf425609db4231a57bf5782c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="biztalk-framework-schema-and-properties"></a>BizTalk Framework スキーマおよびプロパティ
-**Http://schemas.microsoft.com/BizTalk/2003/btf2-properties**名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキストのプロパティを設定するために使用できるプロパティが含まれています。 BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、これらのプロパティを使用して、作成されるメッセージの適切なヘッダーを生成します。 次の表は、BizTalk Framework のプロパティを示しています。  
+**http://schemas.microsoft.com/BizTalk/2003/btf2-properties**名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキストのプロパティを設定するために使用できるプロパティが含まれています。 BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、これらのプロパティを使用して、作成されるメッセージの適切なヘッダーを生成します。 次の表は、BizTalk Framework のプロパティを示しています。  
 
 ## <a name="properties-list"></a>[プロパティ]  
 |名前|型|Description|  
@@ -49,5 +49,5 @@ ms.lasthandoff: 09/20/2017
 |**commitmentRct_commitmentCode**|xs:QName|処理決定に関する詳細な状態を指定する修飾名 (XSD 形式) を指定します。|  
   
 ## <a name="see-also"></a>参照  
--  **メッセージ コンテキスト プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
+-  **メッセージ コンテキスト プロパティ** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
 -  [ネイティブ パイプライン コンポーネントの構成](../core/configuring-native-pipeline-components.md)

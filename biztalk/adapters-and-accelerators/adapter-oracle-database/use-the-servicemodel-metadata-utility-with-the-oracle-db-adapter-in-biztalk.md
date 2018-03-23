@@ -1,23 +1,23 @@
 ---
-title: "BizTalk アダプターに、ServiceModel メタデータ ユーティリティ ツールを使用して BizTalk Server での Oracle データベースの |Microsoft ドキュメント"
-description: "Svcutil.exe を使用して、既定以外のバインディング、または Oracle データベース アダプターの BizTalk アダプター パック (BAP) と WCF クライアント クラスまたは WCF サービス コントラクトを作成するには"
-ms.custom: 
+title: BizTalk アダプターに、ServiceModel メタデータ ユーティリティ ツールを使用して BizTalk Server での Oracle データベースの |Microsoft ドキュメント
+description: Svcutil.exe を使用して、既定以外のバインディング、または Oracle データベース アダプターの BizTalk アダプター パック (BAP) と WCF クライアント クラスまたは WCF サービス コントラクトを作成するには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8660014-da04-4692-89e8-f14fcb419496
-caps.latest.revision: "3"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9dfbdbd60333a2e5683b4f37a65edb928a451e46
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-oracle-database"></a>Oracle データベースの BizTalk アダプターで、ServiceModel メタデータ ユーティリティ ツールの使用
 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用するには、WCF クライアント クラスまたは操作用の WCF サービス コントラクト (インターフェイス) を生成する、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]を公開します。 WCF クライアント クラスまたは WCF サービス コントラクトのいずれかを生成する svcutil.exe を実行した後、コードで生成されたファイルを含めると、生成されたクラスのインスタンスを作成したり、Oracle で操作を実行するためのコントラクトから WCF サービスを実装データベースです。  
@@ -26,7 +26,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
   
  Svcutil.exe を使用して WCF クライアント コードまたは WCF サービス コントラクトを生成する方法と、svcutil.exe を構成する方法を次のセクションでは、表示、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
   
-##  <a name="BKMK_ConfigureSvcutil"></a>既定以外のバインディングを svcutil.exe を構成します。   
+##  <a name="BKMK_ConfigureSvcutil"></a> 既定以外のバインディングを svcutil.exe を構成します。   
  既定以外のバインディングを使用する svcutil.exe を構成するのにする必要があります svcutil.exe のローカル コピーを作成し、作成または変更する svcutil.exe.config の構成ファイルのローカル コピーします。  
   
 1.  フォルダーを作成し、svcutil.exe を新しいフォルダーにコピーします。 通常、Windows SDK のインストール場所で svcutil.exe を入手できます C:\Program files \microsoft SDKs\Windows\v6.0\Bin 具体的には、します。  
@@ -63,7 +63,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
 > [!NOTE]
 >  バインドのプロパティのいずれかを設定することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインド構成にします。  
   
- Svcutil.exe の既定以外のバインディングを構成する方法の詳細についてを参照してください「カスタム セキュリティで保護されたメタデータのエンドポイント」で、WCF ドキュメント[http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077)です。  
+ Svcutil.exe の既定以外のバインディングを構成する方法の詳細についてを参照してください「カスタム セキュリティで保護されたメタデータのエンドポイント」で、WCF ドキュメント[ http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077)です。  
   
 ### <a name="configure-a-non-default-binding-for-the-pollingstmt-operation"></a>既定以外の POLLINGSTMT 操作のバインドを構成します。  
  Svcutil.exe を使用して、POLLINGSTMT 操作用の WCF サービス コントラクトを作成するに含める既定以外のバインディングを構成する必要があります、 **pollingStatement**だけでなく、プロパティ**acceptCredentialsInUri**. **PollingStatement**テーブルを対象とする SELECT ステートメントを含める必要があります。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] POLLINGSTMT 操作によって返されることを厳密に型指定された結果を表すクラスを生成するには、このプロパティの設定を使用します。 次の例では、/SCOTT/EMP テーブルを対象とする POLLINGSTMT 操作の WCF サービス コントラクトの生成に使用されるバインド構成を示します。  
@@ -106,7 +106,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
 > [!IMPORTANT]
 >  引用符で囲まれたコマンド ラインで、接続 URI を配置する必要があります。 それ以外の場合、svcutil.exe しようとすると操作のメタデータを取得する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]はサポートしていません。 これらの試行の結果は未定義です。  
   
- 既定では、svcutil.exe に生成されたコード ファイル内に配置 output.cs です。ただし、出力ファイルの名前を変更して、オプションの他多数のコマンド ライン スイッチを設定して svcutil.exe を使用します。 その svcutil.exe をサポートしているオプションの詳細については、WCF のドキュメント「ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)」を参照してください[http://go.microsoft.com/fwlink/?LinkId=72777](http://go.microsoft.com/fwlink/?LinkId=72777)です。  
+ 既定では、svcutil.exe に生成されたコード ファイル内に配置 output.cs です。ただし、出力ファイルの名前を変更して、オプションの他多数のコマンド ライン スイッチを設定して svcutil.exe を使用します。 その svcutil.exe をサポートしているオプションの詳細については、WCF のドキュメント「ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)」を参照してください[ http://go.microsoft.com/fwlink/?LinkId=72777](http://go.microsoft.com/fwlink/?LinkId=72777)です。  
   
  Svcutil.exe は、操作 (たとえば、ワイルドカード文字を使用) を検索する機能を提供しません。 対象となる特定の操作のノード Id を明示的に指定する必要があります。 ノードのカテゴリのみを参照している Id を指定することはできません。 ノード Id の詳細についてを[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェスを参照してください[メタデータのノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)です。  
   

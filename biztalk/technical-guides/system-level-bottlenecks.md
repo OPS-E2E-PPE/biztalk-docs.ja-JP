@@ -1,22 +1,22 @@
 ---
-title: "システム レベルのボトルネック |Microsoft ドキュメント"
-ms.custom: 
+title: システム レベルのボトルネック |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bdff435-76eb-495f-9fb6-1f1acef3921e
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 058fd60e1c38a3045197b4a36bdcc81250ab5be5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="system-level-bottlenecks"></a>システム レベルのボトルネック
 このトピックでは、BizTalk Server ソリューションのパフォーマンスに影響する一般的なシステム レベルのボトルネックに対処する方法について説明します。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="run-the-baseline-security-analyzer"></a>Baseline Security Analyzer を実行します。  
  Baseline Security Analyzer を実行する手順に従います。  
   
-1.  ダウンロード、 [Microsoft Baseline Security Analyzer 2.2](http://go.microsoft.com/fwlink/?LinKID=204006) (http://go.microsoft.com/fwlink/?LinkId=204006)。  
+1.  ダウンロード、 [Microsoft Baseline Security Analyzer 2.2](http://go.microsoft.com/fwlink/?LinKID=204006) (http://go.microsoft.com/fwlink/?LinkId=204006)です。  
   
 2.  ドメイン管理者アカウントを使用して、BizTalk Server と SQL Server コンピューターをホストしていると同じネットワーク上のコンピューターにログオンします。  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="run-the-biztalk-server-best-practices-analyzer"></a>BizTalk Server のベスト プラクティス アナライザーを実行します。  
  BizTalk Server のベスト プラクティス アナライザーを実行する手順に従います。  
   
-1.  ダウンロード、 [BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317)。  
+1.  ダウンロード、 [BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317)です。  
   
 2.  BizTalk Server 管理者セキュリティ グループの一部であるユーザー アカウントを使用して、BizTalk Server のノードにログオンします。  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="use-the-biztalk-msgboxviewer-tool-to-collect-information-about-the-messagebox-database"></a>BizTalk MsgBoxViewer ツールを使用して、メッセージ ボックス データベースに関する情報を収集  
  BizTalk MsgBoxViewer ツールを使用してメッセージ ボックス データベースについての情報を収集するこれらの手順に従います。  
   
-1.  ダウンロード、 [BizTalk MsgBoxViewer ツール](http://go.microsoft.com/fwlink/?LinkID=117289)(http://go.microsoft.com/fwlink/?LinkID=117289)。  
+1.  ダウンロード、 [BizTalk MsgBoxViewer ツール](http://go.microsoft.com/fwlink/?LinkID=117289)(http://go.microsoft.com/fwlink/?LinkID=117289)です。  
   
 2.  BizTalk Server 管理者セキュリティ グループの一部であるユーザー アカウントを使用して、BizTalk Server コンピューターにログオンします。  
   
@@ -120,7 +120,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **BizTalk Server および SQL Server イベント ログで -** BizTalk Server または SQL Server のイベント ログの大まかな検査がかなりの診断し、解決に時間がかかる場合がありますそれ以外の場合、問題を明らか可能性があります。  
   
--   **BizTalk Server ベスト プラクティス アナライザーの実行**BizTalk Server ベスト プラクティス アナライザーは、BizTalk Server 展開を調査し、ベスト プラクティスの標準に関連する問題の一覧が生成されます。 このツールは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集することによって構成レベルの検証を実行します。 データは展開構成の評価に使用されます。 ツールを読み取りますをレポートのみ、そのシステム設定を変更しませんし、自己調整ツールではありません。 BizTalk Server のダウンロードのベスト プラクティス アナライザー v1.2 から[BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317)。  
+-   **BizTalk Server ベスト プラクティス アナライザーの実行**BizTalk Server ベスト プラクティス アナライザーは、BizTalk Server 展開を調査し、ベスト プラクティスの標準に関連する問題の一覧が生成されます。 このツールは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集することによって構成レベルの検証を実行します。 データは展開構成の評価に使用されます。 ツールを読み取りますをレポートのみ、そのシステム設定を変更しませんし、自己調整ツールではありません。 BizTalk Server のダウンロードのベスト プラクティス アナライザー v1.2 から[BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317)です。  
   
 ## <a name="high-level-system-bottlenecks"></a>高度なシステムのボトルネック  
  このセクションでは、可能な緩和方法、BizTalk Server ソリューション内にある可能性があるシステム レベルのボトルネックについて説明します。  
@@ -145,7 +145,7 @@ ms.lasthandoff: 09/20/2017
   
  次のパフォーマンス カウンターは、システムにディスク I/O 関連のボトルネックが発生しているかどうかを決定するために使用する必要があります。  
   
--   **Physicaldisk \avg.ディスク キューの長さ**  
+-   **PhysicalDisk\Avg.ディスク キューの長さ**  
   
     -   しきい値: を 2 を加えたスピンドルの数よりも大きくすることはできません。  
   
@@ -161,19 +161,19 @@ ms.lasthandoff: 09/20/2017
   
         -   ハード ディスクからの受信積極的に  
   
--   **Physicaldisk \avg.Disk Read Queue Length**  
+-   **PhysicalDisk\Avg.Disk Read Queue Length**  
   
     -   しきい値: を 2 未満にする必要があります。  
   
     -   重要: このカウンターは、サンプリング間隔中に、選択したディスクのキューに入った読み取り要求の平均数を示します。  
   
--   **Physicaldisk \avg.ディスクの書き込みキューの長さ**  
+-   **PhysicalDisk\Avg.ディスクの書き込みキューの長さ**  
   
     -   しきい値: を 2 未満にする必要があります。  
   
     -   重要: このカウンターは、サンプリング間隔中に、選択したディスクのキューに入った書き込み要求の平均数を示します。  
   
--   **Physicaldisk \avg.ディスク読み取り秒数**  
+-   **PhysicalDisk\Avg.ディスク読み取り秒数**  
   
     -   しきい値: 固有値はありません。  
   
@@ -185,7 +185,7 @@ ms.lasthandoff: 09/20/2017
   
     -   重要: このカウンターは、平均時間を秒数を読み取り、ディスクから操作データを示します。 数が 25 時間 (ミリ秒) よりも大きい場合は、ディスクのシステムでの待機時間が発生した場合、ディスクから読み取るときにこのためです。 BizTalk Server をホストしているミッション クリティカルなサーバーでは、許容されるしきい値は非常に低く、約 10 ミリ秒です。  
   
--   **Physicaldisk \avg.ディスク書き込み秒数**  
+-   **PhysicalDisk\Avg.ディスク書き込み秒数**  
   
     -   しきい値: 固有値はありません。  
   
@@ -197,13 +197,13 @@ ms.lasthandoff: 09/20/2017
   
     -   重要: このカウンターは、平均時間 (秒) を示します、データの操作をディスクに書き込みます。 数が 25 ミリ秒よりも大きい場合は、ディスク システムにディスクに書き込む際に待ち時間が発生します。 BizTalk Server をホストしているミッション クリティカルなサーバーでは、許容されるしきい値は非常に低く、約 10 ミリ秒です。  
   
--   **Physicaldisk \avg.ディスク転送秒数**  
+-   **PhysicalDisk\Avg.ディスク転送秒数**  
   
     -   しきい値: は 18 個までのミリ秒をすることはできません。  
   
     -   重要: このカウンターは、時間、ディスクの平均転送秒数を示します。 大量のディスクの断片化、ディスクが遅い場合、またはディスクの障害がある可能性があります。 値を乗算します**Physical disk \avg. です。ディスク転送秒数**と**\pages/sec**カウンターです。 これらのカウンターの製品が 0.1 を超える場合ページングが発生してディスク アクセス時間の 10% を超えるため、使用可能な物理メモリが必要です。  
   
--   **Physicaldisk \disk writes/sec**  
+-   **PhysicalDisk\Disk Writes/sec**  
   
     -   しきい値: は、製造元の仕様によって異なります。  
   
@@ -218,7 +218,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="disk-io-tuning-options"></a>ディスク I/O のチューニング オプション  
  ディスク I/O が環境内のボトルネックであると判断した場合は、ボトルネックを軽減するため、次の手法は使用できます。  
   
--   **ディスクの断片化を解消**で利用可能なを使用して[PageDefrag ユーティリティ](http://go.microsoft.com/fwlink/?LinkId=108976)(http://go.microsoft.com/fwlink/?LinkId=108976) は Windows ページング ファイルの断片化を解消し、マスター ファイル テーブルを事前に割り当てをします。  
+-   **ディスクの断片化を解消**で利用可能なを使用して[PageDefrag ユーティリティ](http://go.microsoft.com/fwlink/?LinkId=108976)(http://go.microsoft.com/fwlink/?LinkId=108976) Windows ページング ファイルの断片化を解消し、マスター ファイル テーブルを事前に割り当てをします。  
   
 -   **使用してストライプ セットを複数のディスクの I/O 要求を同時に処理**ミラー ボリュームを使用してフォールト トレランスを提供し、I/O パフォーマンスが向上します。 フォールト トレランスが必要でない場合実装ストライプ セットの読み取りや書き込みを高速リンクと記憶域の容量が向上します。 ストライプ セットを使用している場合ディスクごとの使用率ためにが減り、ボリューム全体で作業を分散し、全体的なスループットが増加します。 設定ストライプに追加のディスクを追加する場合は、システムは、ディスク コント ローラーによってディスク間の競合のため、ボトルネックになっている可能性がありますし、スループットを増加しません。 ここでは、追加する、追加のディスク コント ローラーが役立ちます負荷を分散し、パフォーマンスが向上します。  
   
@@ -237,7 +237,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **システムを使用して、最も効率的なディスクの使用可能な**のために使用される、物理ディスクに加えて使用されるディスク コント ローラーとのケーブル接続の種類を検討してください。 効率的なディスク サブシステムでは、割り込み節度またはディスク I/O によるプロセッサの割り込み処理状況を軽減するために割り込み回避をサポートするドライバーも提供する必要があります。  
   
--   **適切な RAID 構成は、- を使用していることを確認してください。**最適なパフォーマンスとフォールト トレランスのための使用 RAID 10 (ストライピングとミラーリング)。 その代わりには、RAID 10 を使用して高価です。 広範な書き込み操作がある場合は、RAID 5 を使用しないでください。 BizTalk Server 環境での RAID の実装の詳細についてを参照してください「ディスク インフラストラクチャ」で、 [BizTalk Server データベースの最適化のホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)。  
+-   **適切な RAID 構成は、- を使用していることを確認してください。**最適なパフォーマンスとフォールト トレランスのための使用 RAID 10 (ストライピングとミラーリング)。 その代わりには、RAID 10 を使用して高価です。 広範な書き込み操作がある場合は、RAID 5 を使用しないでください。 BizTalk Server 環境での RAID の実装の詳細についてを参照してください「ディスク インフラストラクチャ」で、 [BizTalk Server データベースの最適化のホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)です。  
   
 -   **検討してください - データベースのパーティションを使用して**データベース パーティションを使用して、特定のテーブルとトランザクション ログのディスクにマップした場合、データベースのボトルネックを検討してください。 パーティションの主な目的は、大きなテーブルのディスクのボトルネックを解決するのには。 大量の行を含むテーブルがあり、ボトルネックの原因であることを決定する場合は、パーティションを使用することを検討します。 SQL Server の I/O パフォーマンスを向上させるためにファイル グループを使用できます。 ファイル グループにテーブルを関連付けるし、特定のハード_ディスクにファイル グループを関連付けることができます。 詳細については、BizTalk Server データベースの最適化ファイル グループを使用して、次を参照してください。[のデータベースのファイル グループを最適化する](~/technical-guides/optimizing-filegroups-for-the-databases2.md)です。  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 09/20/2017
   
     -   重要: このカウンターは、プロセッサがハードウェア割り込みの受信やサービスに費やした時間の割合を示します。 この値は、ネットワーク アダプターなど、割り込みを生成するデバイスの処理状況を間接的に示します。 このカウンターに、大幅に向上では、潜在的なハードウェアの問題を示します。  
   
--   **System \processor Queue Length**  
+-   **System\Processor Queue Length**  
   
     -   しきい値: 2 よりも高い一貫して平均値では、ボトルネックを示します。  
   
@@ -291,7 +291,7 @@ ms.lasthandoff: 09/20/2017
   
          CPU の非常に時間 (90% または使用率の向上) および PQL 平均は一貫して、プロセッサごとに 2 より大きい場合、利点がもたらされる Cpu の追加プロセッサのボトルネックがあります。 または、アプリケーション レベルで複数のスレッドとキューの数を減らすことができます。 コンテキスト切り替えが少なくなり、これにより、およびコンテキスト切り替えが少なくなり、CPU 負荷を減らすに適しています。 CPU 使用率が低い 2 以上の PQL 値の一般的な理由は、プロセッサ時間の要求がランダムに到着し、スレッド、プロセッサからの時間の不規則な金額を要求することです。 つまり、プロセッサがボトルネックではないことが、アプリケーションのスレッドのロジックが向上することです。  
   
--   **System \context switches/sec**  
+-   **System\Context Switches/sec**  
   
     -   しきい値: 一般的な規則としてコンテキストの切り替え率、プロセッサごとの 1 秒あたり 5,000 は報わよりも少ない心配です。 コンテキスト切り替えレートは、プロセッサごとの 1 秒あたりの 15,000 を超えている場合、コンテキストの切り替えボトルネックになります。  
   
@@ -308,7 +308,7 @@ ms.lasthandoff: 09/20/2017
   
 -   コンテキストの切り替えの率が高いを確認する場合は、プロセッサの数を増やす前に、プロセスのスレッド数を減らすことを検討します。  
   
--   分析し、CPU 使用率が高い原因となっているアプリケーションをチューニングします。 Adplus を使用したユーティリティを使用して実行中のプロセスをダンプし、Windbg を使用して、原因を分析できます。 これらのユーティリティは、Windows のツールキットのデバッグの一部です。 これらのツールをダウンロードする[Debugging Tools for Windows](http://go.microsoft.com/fwlink/?LinkID=106624) (http://go.microsoft.com/fwlink/?LinkID=106624)。  
+-   分析し、CPU 使用率が高い原因となっているアプリケーションをチューニングします。 Adplus を使用したユーティリティを使用して実行中のプロセスをダンプし、Windbg を使用して、原因を分析できます。 これらのユーティリティは、Windows のツールキットのデバッグの一部です。 これらのツールをダウンロードする[Debugging Tools for Windows](http://go.microsoft.com/fwlink/?LinkID=106624) (http://go.microsoft.com/fwlink/?LinkID=106624)です。  
   
 -   最長実行時間がかかっているサブシステムを分離する、アプリケーションによって生成されるインストルメンテーション ログを分析します。 コード レビューは、BizTalk Server 環境のチューニングだけよりも役に立つするかどうかを決定します。  
   
@@ -333,7 +333,7 @@ ms.lasthandoff: 09/20/2017
   
     -   有意性: このコンピューターで実行されているプロセスに使用できる物理メモリの量を示します。 このカウンターは最後に計測された値のみを表示することに注意してください。 平均値ではありません。  
   
--   **Memory \page reads/sec**  
+-   **Memory\Page Reads/sec**  
   
     -   しきい値: 6 つ以上の値が継続的には、読み取り要求のページ フォールトの数が多いを示します。  
   
@@ -341,13 +341,13 @@ ms.lasthandoff: 09/20/2017
   
          ページの読み取り操作の頻度が低いがの値が大きいと一致するかどうかは**物理ディスク\\% Disk Time**と**Physical disk \avg. です。Disk Queue Length**、ディスク I/O のボトルネックになっている条件が存在する可能性があります。 キューの長さの増加は、ページの読み取り率の低下が付属しない、メモリのボトルネックが存在する場合物理メモリの不足が原因です。  
   
--   **Memory \pages/秒**  
+-   **Memory\Pages/sec**  
   
     -   しきい値: 6 つ以上の継続的な値は、ボトルネックを示します。  
   
     -   重要: このカウンターをページの読み取りまたはハード ページ フォールトを解決するのにはディスクに書き込まれる速度を示します。 値を乗算します**Physical disk \avg. です。ディスク転送秒数**と**\pages/sec**パフォーマンス カウンター。 これらの値の積を超えた場合**0.1**ページングが十分な物理メモリが使用可能なであることを示すディスク アクセス時間の 10% 以上を使用します。  
   
--   **Memory \pool Nonpaged Bytes**  
+-   **Memory\Pool Nonpaged Bytes**  
   
     -   しきい値: の値に注意して**memory \pool Nonpaged Bytes**のシステムの起動時に値を 10% 以上増加します。  
   
@@ -371,13 +371,13 @@ ms.lasthandoff: 09/20/2017
   
     -   重要: これは、任意の時点で使用するため、サーバーが予約されている非ページ プール内のバイトの最大数です。 コンピューターに搭載する物理メモリの量を示します。 非ページ プールは、物理メモリ内である必要があり、あるために残された、他の操作、経験則として、コンピューター メモリの一部が 4 回このカウンターに示される値は、物理メモリをインストールが必要があります。  
   
--   **Memory \cache Bytes**  
+-   **Memory\Cache Bytes**  
   
     -   しきい値: 固有値はありません。  
   
     -   重要: は、別のロード条件下でキャッシュのサイズを監視します。 このパフォーマンス カウンターの値は、静的ファイルのキャッシュのサイズを示します。 既定では、このカウンターを使用して利用可能なメモリが減少の約 50% 使用可能なメモリを圧縮する場合、システムのパフォーマンスに影響します。  
   
--   **Memory \cache エラー数/秒**  
+-   **Memory\Cache Faults/sec**  
   
     -   しきい値: 固有値はありません。  
   
@@ -389,7 +389,7 @@ ms.lasthandoff: 09/20/2017
   
     -   重要: このカウンターは、割合のメモリ記述子一覧 (MDL)、ハード_ディスクからの読み取りを必要とするのではなく、読み取り、キャッシュ オブジェクトを返します、直接、ファイル システム キャッシュを要求を提供します。  
   
--   **Process \working Set**  
+-   **Process\Working Set**  
   
     -   しきい値: 固有値はありません。  
   
@@ -409,7 +409,7 @@ ms.lasthandoff: 09/20/2017
 -   BizTalk Server 環境内のコンピューターに追加の物理メモリをインストールします。  
   
 > [!NOTE]
->  32 ビット システムで BizTalk が 2 GB のメモリの最大値を使用できる、3 GB スイッチが使用されている場合に、制限が BizTalk Server 2010 以降のバージョンと 3 GB に増加します。 メモリ使用量の詳細については、次を参照してください。[メモリ制限の Windows リリース](http://go.microsoft.com/fwlink/?LinkId=118349)(http://go.microsoft.com/fwlink/?LinkId=118349)。  
+>  32 ビット システムで BizTalk が 2 GB のメモリの最大値を使用できる、3 GB スイッチが使用されている場合に、制限が BizTalk Server 2010 以降のバージョンと 3 GB に増加します。 メモリ使用量の詳細については、次を参照してください。[メモリ制限の Windows リリース](http://go.microsoft.com/fwlink/?LinkId=118349)(http://go.microsoft.com/fwlink/?LinkId=118349)です。  
   
 ### <a name="network-io-bottlenecks"></a>ネットワーク I/O のボトルネック  
   
@@ -434,17 +434,17 @@ ms.lasthandoff: 09/20/2017
   
     -   重要: このカウンターは、各ネットワーク アダプタ上で受信されるバイトの率を示します。 このカウンターの値を使用すると、使用可能な帯域幅の合計に対する割合としての受信データの比率を計算できます。 BizTalk Server または BizTalk Server コンピューター自体にネットワーク帯域幅を増やす必要があるかどうかにデータを送信しているクライアントのネットワーク帯域幅を増やす必要がありますかを確認ができます。  
   
--   **ネットワーク interface \bytes sent/sec**  
+-   **Network Interface\Bytes Sent/sec**  
   
     -   しきい値: 固有値はありません。  
   
     -   重要: このカウンターは、各ネットワーク アダプター上で送信されるバイトの率を示します。 このカウンターの値を使用すると、使用可能な帯域幅の合計に対する割合で送信したデータの比率を計算できます。 これにより、クライアントの送信データを BizTalk Server でネットワーク帯域幅を増やす必要がありますか場合は、クライアント コンピューター データの受信 BizTalk Server からのネットワーク帯域幅を増やす必要がありますかを確認できます。  
   
--   **Server \bytes total/sec**  
+-   **Server\Bytes Total/sec**  
   
     -   ネットワーク容量の 50% 以上のしきい値: 持続的な値です。  
   
-    -   重要: このカウンターは、ネットワーク経由で送受信されたバイト数を示します。 高い値は、ネットワーク I/O のボトルネックを示します。 場合の合計**bytes total/sec**すべてのサーバーがネットワークの最大転送速度とほぼ等しい値では、パフォーマンスを向上させるために、ネットワークのサブネットを検討してください。 パフォーマンスを向上させるためにネットワークのサブネットの詳細については、次を参照してください。、**サブネット**のセクションで、 [BizTalk Server データベースの最適化のホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)。  
+    -   重要: このカウンターは、ネットワーク経由で送受信されたバイト数を示します。 高い値は、ネットワーク I/O のボトルネックを示します。 場合の合計**bytes total/sec**すべてのサーバーがネットワークの最大転送速度とほぼ等しい値では、パフォーマンスを向上させるために、ネットワークのサブネットを検討してください。 パフォーマンスを向上させるためにネットワークのサブネットの詳細については、次を参照してください。、**サブネット**のセクションで、 [BizTalk Server データベースの最適化のホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)です。  
   
 #### <a name="resolving-network-io-bottlenecks"></a>ネットワーク I/O のボトルネックを解決します。  
  ネットワーク I/O が環境内のボトルネックであると判断した場合は、ボトルネックを解決するのには、次の方法の 1 つ以上を使用します。  
@@ -454,4 +454,4 @@ ms.lasthandoff: 09/20/2017
 -   トピックで説明されている Windows Powershell のネットワーク最適化スクリプト実行[ネットワークのパフォーマンスの最適化](~/technical-guides/optimizing-network-performance.md)BizTalk Server 環境内の各コンピューターにします。  
   
 ## <a name="see-also"></a>参照  
- [検索して、ボトルネックを解消します。](~/technical-guides/finding-and-eliminating-bottlenecks.md)
+ [ボトルネックの検索と解消](~/technical-guides/finding-and-eliminating-bottlenecks.md)

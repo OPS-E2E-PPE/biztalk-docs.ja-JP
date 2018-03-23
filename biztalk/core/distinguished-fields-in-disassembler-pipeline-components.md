@@ -1,11 +1,11 @@
 ---
-title: "識別フィールドに逆アセンブラー パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: 識別フィールドに逆アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, distinquished fields
@@ -13,22 +13,22 @@ helpviewer_keywords:
 - BizTalk Framework Disassembler [pipeline component], distinquished fields
 - XML Disassembler [pipeline component], distinquished fields
 ms.assetid: 7e51d2fe-0004-4a7b-9055-bd41e8a4b7ab
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>識別フィールドに逆アセンブラー パイプライン コンポーネント
 スキーマで定義された識別フィールドは、XML 逆アセンブラー、BizTalk 逆アセンブラー、またはフラット ファイル逆アセンブラー パイプランによって、次の形式でメッセージ コンテキストに書き込まれます。  
   
  *使用される名前* XPath で識別フィールドは、  
   
- *名前空間 URI* "http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"は、  
+ *namespace URI* is "http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
   
  プロパティの値は、 **System.String** による XML ドキュメントから抽出された値は、XPath を指定します。  
   
@@ -67,9 +67,9 @@ ms.lasthandoff: 01/17/2018
   
  XML 逆アセンブラーがメッセージ コンテキストで次のように識別フィールドを書き込みます。  
   
- コンテキストのプロパティの名前:"/* [ローカル名 () = 'PO' and namespace-uri() = 'http://SendHtmlMessage.PO']/\*[ローカル名 () 'Price' and namespace-uri() = = ']"  
+ コンテキストのプロパティの名前:"/* [ローカル名 () = 'PO' and namespace-uri() ='http://SendHtmlMessage.PO']/\*[ローカル名 () '価格' and namespace-uri() = = ']"  
   
- プロパティの名前空間: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
+ プロパティの Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   
  プロパティの値: 10  
   

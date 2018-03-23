@@ -1,22 +1,22 @@
 ---
-title: "BizTalk メッセージ本文要素のエンコードが正しくありません |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk メッセージ本文要素のエンコードが正しくありません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b407e5c3-4655-4b2f-8ecc-30eb080ec47c
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1b1835371e5c042d3ddc46558cbf97970f6bfc6c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="biztalk-message-body-element-encoding-is-invalid"></a>BizTalk メッセージ本文要素のエンコードは無効です
 ## <a name="details"></a>詳細  
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/28/2017
 |イベント ソース|0|  
 |コンポーネント|0|  
 |シンボル名|0|  
-|メッセージ テキスト|BizTalk メッセージ本文要素のエンコード "{0}" は無効です。 エンコーディングが必要です"xml"、"base64"、"hex"、または"string"。|  
+|メッセージ テキスト|BizTalk メッセージ本文要素のエンコード "{0}" は無効です。 エンコード:"xml"、"base64"、"hex"、または"文字列 string"|  
   
 ## <a name="explanation"></a>説明  
  このエラーは、送信メッセージには BizTalk 本文テンプレート オプションが使用されていますが、BizTalk 本文に指定されたエンコーディングの種類は無効であることを示します。  
@@ -49,11 +49,11 @@ ms.lasthandoff: 11/28/2017
   
 5.  **[プロパティ]**をクリックします。  
   
-6.  ポート**型**一覧で、適切なポートを選択します。  
+6.  ポートに **型** 一覧で、適切なポートを選択します。  
   
-7.  をクリックして**構成**です。  
+7.  クリックして **構成**します。  
   
 8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**メッセージ**タブです。  
   
-9. **送信 WCF メッセージ本文**セクションで、をクリックして、**テンプレート--テンプレートで指定されたコンテンツ**ラジオ ボタンをクリックします。 **XML**テキスト ボックスで、BizTalk 本文の形式である必要があります   
-    \<**bts メッセージ本文の xmlns ="http://www.microsoft.com/schemas/bts2007"encoding =「[xml &#124; base64 &#124; 16 進数 &#124; 文字列]」/** \> (有効な値、xml &#124; base64 & # は、エンコード、大文字小文字が区別されます。#124; 16 進数 (&) #124 です。 文字列)
+9. **送信 WCF メッセージ本文**  をクリックして、 **テンプレート-テンプレートで指定されたコンテンツ** オプション ボタンをクリックします。 **XML** テキスト ボックスで、BizTalk 本文の形式である必要があります   
+    \<**bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="[xml&#124;base64&#124;hex&#124;string]"/**\>  (valid values, which are case-sensitive, for encoding are xml&#124;base64&#124;hex&#124;string)
