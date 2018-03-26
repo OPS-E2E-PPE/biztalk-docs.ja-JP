@@ -1,22 +1,22 @@
 ---
-title: "手順 1: エコー アダプターの送信ハンドラーのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: エコー アダプターの送信ハンドラーのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad4a8164-a584-436f-b20b-4c884f6e2b37
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>手順 1: エコー アダプターの送信ハンドラーをテストします。
 ![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
@@ -32,14 +32,14 @@ ms.lasthandoff: 10/17/2017
   
 1.  Visual Studio を起動します。  
   
-2.  Visual Studio での**ファイル**メニューのをポイント**新規**、順にクリック**プロジェクト**です。  
+2.  Visual Studio での**ファイル** メニューのをポイント**新規**、順にクリック**プロジェクト**です。  
   
-3.  **新しいプロジェクト** ダイアログ ボックスで、次の操作します。  
+3.  **新しいプロジェクト**  ダイアログ ボックスで、次の操作します。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロジェクトの種類**|をクリックして**Visual c#**です。|  
-    |**[テンプレート]**|をクリックして**コンソール アプリケーション**です。|  
+    |**プロジェクトの種類**|クリックして **Visual c#**します。|  
+    |**テンプレート**|クリックして **コンソール アプリケーション**します。|  
     |**名前**|型**ConsumeEchoAdapter_Outbound**です。|  
     |**場所**|型**C:\Tutorials**です。|  
     |**[ソリューション名]**|型**ConsumeEchoAdapter_Outbound**です。|  
@@ -54,7 +54,7 @@ ms.lasthandoff: 10/17/2017
   
 2.  **アダプター サービス参照の追加**画面で、バインディングを選択します。 これは、選択で**echoAdapterBindingV2**です。  
   
-3.  次に、アダプターとの接続のプロパティを構成する をクリックして**構成しています...**.  これが表示されます、**アダプターの構成**画面。  
+3.  次に、アダプターとの接続のプロパティを構成する をクリックして**構成しています**.  これが表示されます、**アダプターの構成**画面。  
   
 4.  **アダプターの構成**画面で、、 **URI プロパティ**タブで接続のプロパティを構成します。 カスタムのカテゴリのエコー アダプターが示されている通知:**接続**と**形式**です。 下にある、**形式**カテゴリで、変更**EchoInUpperCase**に**True**です。  
   
@@ -99,7 +99,7 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="create-a-sample-xml-file"></a>サンプル XML ファイルを作成します。  
   
-1.  メモ帳のインスタンスを起動します。 [スタート] メニューを使用してクリックして**すべてのプログラム**& #124 です。**アクセサリ**を選択し**メモ帳**です。  
+1.  メモ帳のインスタンスを起動します。 [スタート] メニューを使用してクリックして**すべてのプログラム** &#124; **アクセサリ**を選択し**メモ帳**です。  
   
 2.  メモ帳などのエディターに次のサンプル データをコピーします。  
   
@@ -117,7 +117,7 @@ ms.lasthandoff: 10/17/2017
     </ns0:greeting>              
     ```  
   
-3.  メモ帳のメニューをクリックして**ファイル**を選択し**名前を付けて保存しています...**. "CustomGreetingInstance.xml"ファイル名の入力しのエンコーディングの Unicode を選択し、プロジェクト ディレクトリまたは別の適切な場所に保存します。 完全なパスとファイル名の後で参照に注意してください。  
+3.  メモ帳のメニューをクリックして**ファイル**を選択し**名前を付けて保存しています**. "CustomGreetingInstance.xml"ファイル名の入力しのエンコーディングの Unicode を選択し、プロジェクト ディレクトリまたは別の適切な場所に保存します。 完全なパスとファイル名の後で参照に注意してください。  
   
 4.  ファイルが正常に保存されるときに、テキスト エディターを閉じます。  
   
@@ -230,4 +230,4 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="see-also"></a>参照  
   [チュートリアル 2: .NET からエコー アダプターを使用します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)   
- [手順 2: エコー アダプターの受信ハンドラーをテストします。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)
+ [手順 2: エコー アダプターの受信ハンドラーをテストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)
