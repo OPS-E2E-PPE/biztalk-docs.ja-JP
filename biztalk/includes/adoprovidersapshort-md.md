@@ -1,1 +1,1 @@
-<span data-ttu-id="4b91a-101">Data Provider 用 SAP</span><span class="sxs-lookup"><span data-stu-id="4b91a-101">Data Provider for SAP</span></span>
+<span data-ttu-id="e3fd5-101">Data Provider 用 SAP</span><span class="sxs-lookup"><span data-stu-id="e3fd5-101">Data Provider for SAP</span></span>

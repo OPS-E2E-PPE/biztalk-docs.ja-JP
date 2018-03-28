@@ -1,1 +1,1 @@
-<span data-ttu-id="7feb3-101">A4SWIFT</span><span class="sxs-lookup"><span data-stu-id="7feb3-101">A4SWIFT</span></span>
+<span data-ttu-id="92669-101">A4SWIFT</span><span class="sxs-lookup"><span data-stu-id="92669-101">A4SWIFT</span></span>
