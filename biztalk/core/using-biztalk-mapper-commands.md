@@ -16,7 +16,7 @@ ms.openlocfilehash: a5fd32d865bd08fe1b8b8e7929f313626be3e662
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-biztalk-mapper-commands"></a>BizTalk マッパー コマンドの使用
 メニュー追加マッパーがアクティブになると、 **BizTalk** microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]シェルです。 このメニューを使用して、BizTalk マッパー コマンドおよびその機能にアクセスできます。 BizTalk マッパーがアクティブの場合、 **BizTalk** メニューには、BizTalk マップを編集する固有のコマンドが用意されています。  

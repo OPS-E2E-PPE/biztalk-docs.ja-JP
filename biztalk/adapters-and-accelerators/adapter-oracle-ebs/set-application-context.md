@@ -1,22 +1,22 @@
 ---
-title: "アプリケーション コンテキストの設定 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーション コンテキストの設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9697155-70c0-4173-80d2-d02d103c397b
-caps.latest.revision: "25"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 88db982be92123a13084892bfc396cb1d89c46ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="set-application-context"></a>アプリケーション コンテキストの設定
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]でそれらの操作を実行する前にアプリケーション コンテキストの設定が一部の Oracle E-business Suite アイテム (インターフェイス テーブル、インターフェイス ビュー、同時実行プログラム、および要求のセット) ために必須です。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するまで、これらの成果物の操作を実行することはできません。 ただし、基になる Oracle データベースでの成果物をユーザーの責任ですか、アプリケーションのコンテキストを設定するかどうか。  
@@ -105,7 +105,7 @@ ms.lasthandoff: 09/20/2017
   
  指定された値、**言語**メッセージ コンテキスト プロパティの値を上書きする、**言語**下にあるプロパティのバインド、 **MlsSettings**バインディング プロパティ。 詳細については、 **MlsSettings**バインディング プロパティを参照してください[BizTalk Adapter for Oracle E-business Suite バインド プロパティ読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。  
   
-##  <a name="Binding"></a>さまざまな成果物のためのアプリケーション コンテキストを設定するためのバインドのプロパティ  
+##  <a name="Binding"></a> さまざまな成果物のためのアプリケーション コンテキストを設定するためのバインドのプロパティ  
  次の表では、さまざまな成果物のためのアプリケーション コンテキストを設定する適切な値を指定する必要がありますのバインドのプロパティについて説明します。  
   
 |成果物|OracleEBSOrganizationId|OracleUserName|OraclePassword|OracleEBSResponsibilityKey<br />または<br />OracleEBSResponsibilityName|ApplicationShortName|  

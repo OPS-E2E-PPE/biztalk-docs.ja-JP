@@ -21,7 +21,7 @@ ms.openlocfilehash: 7b32a0044321ce6ac57d7bd49c14b40ba17430db
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-import-bpel4ws"></a>BPEL4WS をインポートする方法
 既存の BPEL4WS をインポートすることによってオーケストレーションを作成することができます。  
@@ -69,7 +69,7 @@ ms.lasthandoff: 03/23/2018
     </element>  
     ```  
   
-     XPath の/* [ローカル名 () = 'Root' and namespace-uri() = 'http://BizTalk_Server_Project3.Schema1']/\*[ローカル名 () = 'promotedField' and namespace-uri() = ']  
+     XPath - /*[local-name()='Root' and namespace-uri()='http://BizTalk_Server_Project3.Schema1']/\*[local-name()='promotedField' and namespace-uri()='']  
   
     |正規 XPath|非正規 XPath|  
     |---------------------|--------------------------|  

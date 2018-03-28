@@ -1,11 +1,11 @@
 ---
-title: "参照、検索、および SAP IDOC 操作のメタデータを取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および SAP IDOC 操作のメタデータを取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF client, generating for IDOC operations
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - IDOC operations, generating schema for
 - IDOC operations
 ms.assetid: 44d05129-ce06-4a10-bf28-9d3519a02a7a
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b4c82ecf945e85c8e4c9b5f365c808598fcbbf3a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-metadata-for-idoc-operations-in-sap"></a>参照、検索、および SAP IDOC 操作のメタデータを取得
 このセクションでは、参照、検索、および SAP から IDOC を使用して操作のメタデータを取得する方法の手順を説明[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。 手順のほとんどは、すべての 3 つのユーザー インターフェイスで同じです。 任意の場所、別の該当する手順は、該当するユーザー インターフェイスの提供されます。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
     -   ReceiveIdocFormat  
   
-    -   flatFileSegmentIndicator  
+    -   FlatFileSegmentIndicator  
   
      これらのプロパティは、SAP システムから IDOC のメタデータを取得する方法を制御します。 これらのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。 バインドのプロパティを設定する方法の手順を参照してください[SAP アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)です。  
   

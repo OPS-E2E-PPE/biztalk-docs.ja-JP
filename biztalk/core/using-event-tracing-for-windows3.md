@@ -1,11 +1,11 @@
 ---
-title: "Windows3 のイベントの追跡の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: Windows3 のイベントの追跡の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ETW
@@ -17,25 +17,25 @@ helpviewer_keywords:
 - BTATIBCOEMSTrace command
 - Event Tracing for Windows
 ms.assetid: 71954431-2015-4d50-b69e-500c883b1e04
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 75b2b339c99dcf1b64368c73381d1dbe81e0fb39
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
-Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー メッセージ、警告メッセージ、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションに変換する、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
+Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー メッセージ、警告メッセージ、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションの変換、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
   
 ## <a name="etw-components"></a>ETW コンポーネント  
  Windows イベント トレーシングには 3 つのコンポーネントがあります。  
   
--   **コント ローラー アプリケーション**: をアクティブにし、(たとえば、tracelog.exe または logman.exe) プロバイダーが非アクティブ化します。  
+-   **コント ローラー アプリケーション**: をアクティブにし、(たとえば、tracelog.exe や logman.exe) プロバイダーを非アクティブにします。  
   
-     PATH 環境変数を、tracelog.exe の場所を指すように設定します。 これにより、BTATIBCO EMSTrace の呼び出しが、システムの tracelog.exe を見つけることができます。 既定では、BTATIBCO EMSTrace は現在のパスを検索します。  
+     PATH 環境変数を、tracelog.exe の場所を指すように設定します。 これにより、BTATIBCO EMSTrace の呼び出しが、システム内の tracelog.exe を検出できることです。 既定では、BTATIBCO EMSTrace は現在のパスを検索します。  
   
     > [!NOTE]
     >  tracelog.exe は Microsoft SDK に含まれており、Microsoft BizTalk Adapter for TIBCO Enterprise Message Service で提供されるコマンドと互換性があります。 logman.exe の使い方については、logman のマニュアルを参照してください。  
@@ -54,11 +54,11 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー �
   
 -   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。  
   
-     使用して**-受信者**実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
+     使用 **-受信者** 実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
   
 -   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。  
   
-     使用して**-トランスミッター**実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
+     使用 **-送信機**実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
   
 ### <a name="btatibcoemstrace-command"></a>BTATIBCOEMSTrace コマンド  
  ETW を使用するには、BizTalk Adapter for TIBCO Enterprise Message Service のコマンド BTATIBCOEMSTrace.cmd を実行します。 このコマンドは次のように使用します。  
@@ -75,19 +75,19 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
  そのオプションは次のとおりです。  
   
--   **送信機能**  
+-   **-送信機能**  
   
--   **-受信機**  
+-   **-受信者**  
   
--   **-開始、停止**: プロバイダーをアクティブまたは非アクティブです。  
+-   **--start、-stop**: プロバイダーをアクティブまたは非アクティブです。  
   
--   **-cir \<MB\>**: ファイルのサイズおよび種類です。 **-cir**循環ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
+-   **-cir \<MB\>**: ファイルのサイズおよび種類です。 **-cir** は循環ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
   
--   **-seq \<MB\>**: ファイルのサイズおよび種類です。 **-seq**シーケンシャル ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
+-   **-seq \<MB\>**: ファイルのサイズおよび種類です。 **-seq** シーケンシャル ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
   
--   **-rt**: リアル タイム モードに設定します。  
+-   **-rt**: でリアルタイムに設定します。  
   
--   **Logfile**: ログ ファイルの名前 (既定では c:\rtlog.etl) です。  
+-   **ログ ファイル**: ログ ファイルの名前 (既定では c:\rtlog.etl) です。  
   
  例:  
   

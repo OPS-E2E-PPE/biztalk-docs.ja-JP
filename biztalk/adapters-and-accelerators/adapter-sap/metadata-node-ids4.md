@@ -1,23 +1,23 @@
 ---
-title: "BizTalk Adapter Pack での mySAP アダプターのメタデータのノード Id |Microsoft ドキュメント"
-description: "メタデータ、検索、取得ノードの種類および mySAP アダプター - BizTalk アダプター パック (BAP) で公開されている SAP コンポーネントで使用される Id"
-ms.custom: 
+title: BizTalk Adapter Pack での mySAP アダプターのメタデータのノード Id |Microsoft ドキュメント
+description: メタデータ、検索、取得ノードの種類および mySAP アダプター - BizTalk アダプター パック (BAP) で公開されている SAP コンポーネントで使用される Id
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 46385060-f56a-4e06-9122-b75808776716
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 138e46b198df48348dcef35662589f6a3c2e317a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="node-types-and-ids-for-the-sap-adapter"></a>ノードの種類と SAP アダプターの Id
 
@@ -27,27 +27,27 @@ ms.lasthandoff: 09/20/2017
 |成果物の表示名|ノードの種類|ノード ID|  
 |---------------------------|---------------|-------------|  
 |RFC|カテゴリ|[バージョン]/RFCSECTION|  
-|[RFC_APPL_GROUP_NAME]|カテゴリ|[バージョン]/RFCGROUP/[RFC_APPL_GROUP_ID]|  
-|[RFC_NAME]|OPERATION|[バージョン]/Rfc/[RFC_NAME]|  
+|[RFC_APPL_GROUP_NAME]|カテゴリ|[VERSION]/RFCGROUP/[RFC_APPL_GROUP_ID]|  
+|[RFC_NAME]|OPERATION|[VERSION]/Rfc/[RFC_NAME]|  
 |RfcGetAttributes|OPERATION|[バージョン]/RfcApi RfcGetAttributes|  
 |TRFC|カテゴリ|[バージョン]/TRFCSECTION|  
-|[TRFC_APPL_GROUP_NAME]|カテゴリ|[バージョン]/TRFCGROUP/[TRFC_APPL_GROUP_ID]|  
-|[TRFC_NAME]|OPERATION|[バージョン]/TRfc/[TRFC_NAME]|  
-|RfcConfirmTransID|OPERATION|[バージョン]/RfcApi RfcConfirmTransID|  
-|BAPI|カテゴリ|[バージョン] BAPISECTION/000001|  
-|[BAPI_APPL_GROUP_NAME]|カテゴリ|[バージョン]/BAPISECTION/[BAPI_APPL_GROUP_NODE_ID]|  
-|[BUSINESS_OBJECT_NAME]|カテゴリ|[バージョン]/BAPIOBJ/[BUSOBJ_TYPE]|  
-|[BUSINESS_OBJECT_METHOD]|OPERATION|[バージョン]/BAPIOBJ/[BUSOBJ_TYPE]/[BUSOBJ_METHOD]/[FUNCTION_MODULE]|  
+|[TRFC_APPL_GROUP_NAME]|カテゴリ|[VERSION]/TRFCGROUP/[TRFC_APPL_GROUP_ID]|  
+|[TRFC_NAME]|OPERATION|[VERSION]/TRfc/[TRFC_NAME]|  
+|RfcConfirmTransID|OPERATION|[VERSION]/RfcApi/RfcConfirmTransID|  
+|BAPI|カテゴリ|[VERSION]/BAPISECTION/000001|  
+|[BAPI_APPL_GROUP_NAME]|カテゴリ|[VERSION]/BAPISECTION/[ BAPI_APPL_GROUP_NODE_ID]|  
+|[BUSINESS_OBJECT_NAME]|カテゴリ|[VERSION]/BAPIOBJ/[BUSOBJ_TYPE]|  
+|[BUSINESS_OBJECT_METHOD]|OPERATION|[VERSION]/BAPIOBJ/[BUSOBJ_TYPE]/[BUSOBJ_METHOD]/[FUNCTION_MODULE]|  
 |IDOC|カテゴリ|[バージョン]/IDOCSECTION|  
-|[IDOC_MSG_TYPE_NAME]|カテゴリ|[バージョン]/IDOCMESTYP/[IDOC_MSG_TYPE_NAME]|  
-|([IDOC_TYPE_NAME])([IDOC_CIMTYPE])|カテゴリ|[バージョン]/IDOCCIMTYP/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[FIRST_IDOC_REL_NO]|  
-|([IDOC_TYPE_NAME] です。V[IDOC_VERSION]) ([IDOC_CIMTYPE]) ([IDOC_REL_NO])|カテゴリ|[バージョン]/IDOCCIMVER/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]|  
+|[IDOC_MSG_TYPE_NAME]|カテゴリ|[VERSION]/IDOCMESTYP/[IDOC_MSG_TYPE_NAME]|  
+|([IDOC_TYPE_NAME])([IDOC_CIMTYPE])|カテゴリ|[VERSION]/IDOCCIMTYP/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[FIRST_IDOC_REL_NO]|  
+|([IDOC_TYPE_NAME].V[IDOC_VERSION]) ([IDOC_CIMTYPE]) ([IDOC_REL_NO])|カテゴリ|[VERSION]/IDOCCIMVER/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]|  
 |Send|OPERATION|[バージョン]/Idoc/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]/[送信]|  
-|SendIdoc|OPERATION|[バージョン]/Idoc SendIdoc|  
+|SendIdoc|OPERATION|[VERSION]/Idoc/SendIdoc|  
 |Receive|OPERATION|[バージョン]/Idoc/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]/受信|  
 |ReceiveIdoc|OPERATION|[バージョン]/Idoc ReceiveIdoc|  
   
- [バージョン] = バージョン文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03 です。  
+ [バージョン] = バージョン文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03です。  
   
  [RFC_APPL_GROUP_NAME]、アプリケーション グループの名前を =たとえば、Sales です。  
   
@@ -91,9 +91,9 @@ ms.lasthandoff: 09/20/2017
 |成果物の表示名|ノード ID|Description|  
 |---------------------------|-------------|-----------------|  
 |/RFC|[バージョン]/RFCSECTION|検索式に一致するすべての RFC 操作を返します。|  
-|/RFC/[RFC_APPL_GROUP_NAME]|[バージョン]/RFCGROUP/[RFC_APPL_GROUP_NAME]|検索式に一致するアプリケーション グループの RFC 操作を返します。|  
+|/RFC/[RFC_APPL_GROUP_NAME]|[VERSION]/RFCGROUP/[RFC_APPL_GROUP_NAME]|検索式に一致するアプリケーション グループの RFC 操作を返します。|  
 |/TRFC|[バージョン]/TRFCSECTION|検索式に一致するすべての RFC 操作を返します。|  
-|/TRFC/[TRFC_APPL_GROUP_NAME]|[バージョン]/TRFCGROUP/[TRFC_APPL_GROUP_NAME]|検索式に一致するアプリケーション グループの RFC 操作を返します。|  
+|/TRFC/[TRFC_APPL_GROUP_NAME]|[VERSION]/TRFCGROUP/[TRFC_APPL_GROUP_NAME]|検索式に一致するアプリケーション グループの RFC 操作を返します。|  
 |/BAPI|[バージョン]/BAPISECTION|検索式に一致するすべての Bapi を返します。|  
 |/IDOC|[バージョン]/IDOCSECTION|検索式に一致するすべての Idoc を返します。|  
   

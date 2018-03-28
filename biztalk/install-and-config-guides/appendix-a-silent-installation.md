@@ -1,22 +1,22 @@
 ---
-title: "付録 a: サイレント インストール |Microsoft ドキュメント"
-ms.custom: 
+title: '付録 a: サイレント インストール |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 94ded6b3-13ca-47e6-a038-254514f500e7
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c03568f86b8c3b609fed74a9faf7f6057614151c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="appendix-a-silent-installation"></a>付録 A: サイレント インストール
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のサイレント インストールの作成手順を示します。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  インストール場所に移動します。 コマンド プロンプトで「`setup.exe /``<command name> <options>`」と入力し、**Enter** キーを押します。 ログ ファイルにインストール状況が表示されます。  
   
-|コマンド名|オプション|説明|  
+|コマンド名|オプション|Description|  
 |------------------|------------|-----------------|  
 |/HELP、/?、または /H||ヘルプおよびクイック リファレンスを表示します。|  
 |/QUIET||セットアップ実行中のユーザー インターフェイス (すべてのダイアログ ボックス、エラー、ユーザー入力を求めるプロンプト) の表示を抑制します。 メッセージはすべて、セットアップ ログ ファイルに記録されます。 **注:** /QUIET フラグは、アップグレードのときは指定できません。アップグレードの場合は、選択されたオプションをユーザーが確認する必要があるからです。|  

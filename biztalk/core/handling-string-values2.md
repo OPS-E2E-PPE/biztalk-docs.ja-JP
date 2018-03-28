@@ -1,11 +1,11 @@
 ---
-title: "文字列 Values2 の処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 文字列 Values2 の処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - string values, configuring
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - right-justified string values
 - strings, right-justified
 ms.assetid: 23d54731-b2b9-4610-a533-e041237e0bb3
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 024663faa56d92361d861a61a0d64a4608839aa6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="handling-string-values"></a>文字列値の処理
 このトピックでは、一部の文字列引数を右揃え (および左側に埋め込み) で構成する方法について説明します。  
@@ -48,14 +48,14 @@ ms.lasthandoff: 09/20/2017
   
  "4567 Main St.    "  
   
- 長さ 40 の空白を埋めます。 空白の埋め込みは Microsoft BizTalk Adapter for JD Edwards EnterpriseOne により行われます。 のみ、クライアント コードに"4567 Main St"を入力する必要があります。  
+ 長さ 40 の空白を埋めます。 空白の埋め込みは Microsoft BizTalk Adapter for JD Edwards EnterpriseOne により行われます。 クライアント コードで「4567 Main St」を入力する必要があるだけです。  
   
 ### <a name="right-justified-values"></a>右揃えの値  
- この種類の値のサブセットについて、JD Edwards EnterpriseOne では左側に空白が埋め込まれた右揃えの値にする必要があります。 たとえば、B4200310 ソース モジュールでのビジネス関数の場合、引数 szBusinessUnit 長さが 12 です。 この引数は、生産施設などのプラントを表します。 プラント番号が 30 の場合、J.D. Edwards EnterpriseOne では次のように指定する必要があります。  
+ この種類の値のサブセットについて、JD Edwards EnterpriseOne では左側に空白が埋め込まれた右揃えの値にする必要があります。 たとえば、B4200310 ソース モジュールでのビジネス関数では、場合、引数 szBusinessUnit 長さが 12 です。 この引数は、生産施設などのプラントを表します。 プラント番号が 30 の場合、J.D. Edwards EnterpriseOne では次のように指定する必要があります。  
   
  "           30"  
   
- 右揃えになる値を入力するには、jdearglist.txt というファイルにパラメーターを入力する必要があります。 スキーマを生成するときに、jdearglist.txt が読み取られます。 このテキスト ファイルの任意の値は右揃えの値に自動変換され、左に空白が埋め込まれます。  
+ 右揃えの値を入力するには、jdearglist.txt というファイルにパラメーターを入力する必要があります。 スキーマを生成すると、jdearglist.txt が読み取られます。 このテキスト ファイルの任意の値は右揃えの値に自動変換され、左に空白が埋め込まれます。  
   
  jdearglist.txt はテキスト エディターを使用し、これらのパラメーターを表すエントリを記述して、以下のフォルダーに保存する必要があります。  
   
@@ -90,4 +90,4 @@ B4200310.*.szBusinessUnit
 >  JD Edwards EnterpriseOne ビジネス プロセスを別のコンピューターにインポートする場合は、手動で jdearglist.txt をコピーする必要があります。  
   
 ## <a name="see-also"></a>参照  
- [付録 b: データ型](../core/appendix-b-data-types.md)
+ [付録 B: データ型](../core/appendix-b-data-types.md)

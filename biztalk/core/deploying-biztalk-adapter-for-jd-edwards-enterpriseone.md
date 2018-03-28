@@ -1,23 +1,23 @@
 ---
-title: "JD Edwards EnterpriseOne のアプリケーションのインポート |Microsoft ドキュメント"
-description: "セットアップの確認、アプリケーション バインド ファイルをインポートおよび BizTalk で JD Edwards EnterpriseOne アダプターの制限を確認します。"
-ms.custom: 
+title: JD Edwards EnterpriseOne のアプリケーションのインポート |Microsoft ドキュメント
+description: セットアップの確認、アプリケーション バインド ファイルをインポートおよび BizTalk で JD Edwards EnterpriseOne アダプターの制限を確認します。
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 852f948b-48ba-4ae2-b1eb-7c88c1542a52
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 55374c87192c993e26cc11cb496d89074d527868
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>JD Edwards EnterpriseOne アプリケーションをインポートします。
   
@@ -63,7 +63,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ## <a name="limitations"></a>制限事項
 によってエクスポートされるバインド ファイル (*) の星トランスポート アダプターのパスワードが格納されている、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、され、同じ形式で管理コンポーネントに渡されます。 アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。  
   
- バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次回のバインド情報をインポートするファイルを使用するトランスポートのプロパティ ページのユーザー インターフェイスを使用してのパスワードを入力する必要があります。  
+ バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次に、ファイルを使用してバインド情報をインポートするときはトランスポートのプロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。  
   
  または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が正常に完了した後、バインド ファイルからパスワードを削除する必要があります。  
   

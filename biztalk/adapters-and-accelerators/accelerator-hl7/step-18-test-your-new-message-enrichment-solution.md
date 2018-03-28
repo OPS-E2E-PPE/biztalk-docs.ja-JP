@@ -1,23 +1,24 @@
 ---
-title: "手順 18: 新しいメッセージの強化ソリューションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 18: 新しいメッセージの強化ソリューションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: message enrichment tutorial, testing solution
+helpviewer_keywords:
+- message enrichment tutorial, testing solution
 ms.assetid: 233fbf79-0ab1-4064-b828-6bbbb56cbec2
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 035925684617e74608246aed99fa98e16d0668a4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-18-test-your-new-message-enrichment-solution"></a>手順 18: 新しいメッセージの強化ソリューションをテストします。
 このステップでメッセージを送信するクライアント アプリケーションを使用して、ソリューションをテストする[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MLLPReceive アプリケーションが期待どおりに HL7 形式のメッセージを受け取るかどうかが表示されるとします。  
@@ -29,13 +30,13 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  手順 2 では、カスタムのインストール手順を使用し、MLLP テスト ツールがインストールされていることが必要です。 かどうか MllpReceive.exe と MllpSend.exe を含むディレクトリは、コンピューターに存在しません \MLLP ユーティリティをインストールにカスタム インストールを実行しています。 詳細については、次を参照してください。[カスタム インストールを実行する](http://msdn.microsoft.com/library/e55c86e1-af63-49ba-8510-d177e1b96692)です。  
   
-2.  コマンド プロンプトで次のように入力します **cd \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>アクセラレータの HL7\SDK\MLLP ユーティリティ *。* (ここで\<*ドライブ*\> 、インストールのドライブ文字は、)、キーを押します**Enter**です。  
+2.  コマンド プロンプトで次のように入力します**cd \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**(。ここで\<*ドライブ*\> 、インストールのドライブ文字は、)、キーを押します**Enter**です。  
   
 3.  コマンド プロンプトで次のように入力します。 **mllpreceive/p 11000/eb 11/sb 28/cr 13**、キーを押します**Enter**です。 これにより、11000 のポートをリッスンしていると、MLLP メッセージの既定の EB、SB、および CR の文字を指定する MLLP リスナー アプリケーションを実行し、画面に受信メッセージを表示します。  
   
 4.  2 番目のコマンド プロンプトを開きます。  
   
-5.  コマンド プロンプトで次のように入力します。  **cd \<*ドライブ*\>: \Tutorial\WSClient\bin\Debug**、を押してから**Enter**です。  
+5.  コマンド プロンプトで次のように入力します。 **cd \<*ドライブ*\>: \Tutorial\WSClient\bin\Debug**、キーを押します**Enter**です。  
   
 6.  コマンド プロンプトで次のように入力します。**クライアント john henry smith 123456789**、キーを押します**Enter**です。 Henry の John Smith の患者の名前と 123456789 サンプル社会保障番号を持つサンプル メッセージを含む Web サービスにメッセージを送信します。  
   

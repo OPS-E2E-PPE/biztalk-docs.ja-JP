@@ -1,11 +1,11 @@
 ---
-title: "XLANG の BPEL4WS への変換の入力 |Microsoft ドキュメント"
-ms.custom: 
+title: XLANG の BPEL4WS への変換の入力 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XLANG/s
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - XLANG/s, BPEL4WS
 - XLANG/s, converting
 ms.assetid: a35d4dba-9344-43c8-86e6-a373a4452579
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 02412b86b8649b73cadb4715793f085682a1de74
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="xlang-s-to-bpel4ws-type-conversions"></a>XLANG-s BPEL4WS 型への変換から
+# <a name="xlang-s-to-bpel4ws-type-conversions"></a>BPEL4WS の型変換に XLANG s
 次の表は、さまざまな XLANG/s 構成要素と BPEL4WS 構成要素間の変換の詳細を示しています。  
   
 > [!CAUTION]
@@ -60,8 +60,8 @@ ms.lasthandoff: 11/28/2017
 |単項演算子 +|無視|  
 |単項 -|XPath 単項演算子 -|  
 |単項演算子 !|XPath not() 関数|  
-|バイナリ & &、&#124; &#124;です。|XPath "and" 演算子、"or" 演算子|  
-|バイナリ ==、!=、<=、<、>=、>|XPath "="、"! ='、' < ='、' <'、' > ='、' >' の演算子|  
+|バイナリ & &、&#124; と #124 文字です。|XPath "and" 演算子、"or" 演算子|  
+|バイナリ ==、!=、<=、<、>=、>|XPath "="、"! ='、' < ='、' <'、' > ='、' >' 演算子|  
 |両方の整数オペランドのバイナリ +、-、*、%|XPath "+"、"-"、"*"、"mod" 演算子|  
   
 ## <a name="xlangs-constructs-that-are-disallowed-in-bpel4ws"></a>BPEL4WS で使用できない XLANG/s 構成要素  
@@ -80,13 +80,13 @@ ms.lasthandoff: 11/28/2017
   
 -   キャスト演算子  
   
--   整数オペランドのバイナリ /   
+-   整数オペランドのバイナリ /  
   
 -   整数以外のオペランドのバイナリ +、-、*、%  
   
 -   文字列型以外のオペランドのバイナリ <=、<、>=、>  
   
--   ビット処理演算子 &、^、&#124;です。  
+-   ビット処理演算子 &、^、&#124;文字です。  
   
 -   シフト演算子 <<、>>  
   

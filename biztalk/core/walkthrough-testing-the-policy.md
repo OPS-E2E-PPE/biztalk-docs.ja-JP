@@ -16,7 +16,7 @@ ms.openlocfilehash: 6a6f879111a28d5cbf9b2a75c7b3f3b3b865fb38
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-testing-the-policy"></a>チュートリアル: ポリシーのテスト
 このチュートリアルで作成したポリシーをテストするための手順では、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルです。  
@@ -184,7 +184,7 @@ ms.lasthandoff: 03/23/2018
   
 |[フィールド名]|[XPath セレクター]|[XPath フィールド]|[XPath セレクター] (簡略化された形式)|[XPath フィールド]<br /><br /> (簡略化された形式)|  
 |----------------|--------------------|-----------------|----------------------------------------|-----------------------------------------|  
-|Quantity|/* [ローカル名 () = 'PurchaseOrder' and namespace-uri() = 'http://EAISolution.PurchaseOrder']/\*[ローカル名 () = 'Item' and namespace-uri() = ']|*[local-name()='Quantity' and namespace-uri()='']|/PurchaseOrder/Item|Quantity|  
+|Quantity|/*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']/\*[local-name()='Item' and namespace-uri()='']|*[local-name()='Quantity' and namespace-uri()='']|/PurchaseOrder/Item|Quantity|  
 |[状態]|/*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']|*[local-name()='Status' and namespace-uri()='']|/PurchaseOrder|[状態]|  
   
 #### <a name="to-view-the-xpath-selector-and-xpath-field-bindings-for-the-quantity-and-status-fields"></a>Quantity および Status フィールドに対する Xpath セレクターおよび Xpath フィールドのバインドを表示するには  

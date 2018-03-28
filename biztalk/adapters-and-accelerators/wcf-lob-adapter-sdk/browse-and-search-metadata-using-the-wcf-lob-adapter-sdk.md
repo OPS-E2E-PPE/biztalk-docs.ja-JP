@@ -1,22 +1,22 @@
 ---
-title: "参照および WCF LOB Adapter SDK を使用してメタデータの検索 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照および WCF LOB Adapter SDK を使用してメタデータの検索 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fbb4add7-6cc8-4b93-b559-471b6e31c01a
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 67f4717c8621b798ff960487dfd156c4f0934dfc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-and-search-metadata-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用してメタデータを参照および検索
 このセクションでは、それぞれ IMetadataBrowseHandler と IMetadataSearchHandler を実装することによって、アダプターでの参照および検索機能を公開する方法に関する情報を提供します。  

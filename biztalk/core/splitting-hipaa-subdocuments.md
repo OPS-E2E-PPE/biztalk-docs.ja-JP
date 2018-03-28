@@ -1,22 +1,22 @@
 ---
-title: "HIPAA サブドキュメントの |Microsoft ドキュメント"
-ms.custom: 
+title: HIPAA サブドキュメントの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66d9badd-00c6-43a3-807e-0ad313983adc
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 799cb5813b3c13339a0c477bf142a467a91b2c94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="splitting-hipaa-subdocuments"></a>HIPAA サブドキュメントの分割
 HIPAA の EDI インターチェンジには、通常、1 つのトランザクション セット内に、ST ヘッダーと SE ヘッダーで囲まれた複数の子ドキュメント/サブドキュメントがあります。 EDI 受信パイプラインでは、このようなトランザクション セットから、複数の個別の HIPAA サブドキュメントを作成することがサポートされています。 これは、HIPAA 以外の EDI インターチェンジとは異なる点です。HIPAA 以外の EDI インターチェンジでは、1 つのトランザクション セットが単一のメッセージとして処理されます。  
@@ -24,28 +24,28 @@ HIPAA の EDI インターチェンジには、通常、1 つのトランザク�
 ## <a name="subdocument-splitting-schemas"></a>サブドキュメントによるスキーマの分割  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、ネイティブ スキーマを通じて以下の HIPAA ドキュメント タイプの分割をサポートします。  
   
--   HIPAA version 4010 ドキュメント: 登録 (834)、835 請求の支払いおよび 837 クレームの 3 つのバリエーション  
+-   HIPAA version 4010 ドキュメント: 登録 (834)、835 請求の支払い、および 837 クレームの 3 つのバリエーション  
   
--   HIPAA バージョン 5010 のドキュメント: 276/277 請求ステータス-要求と応答、登録 (834)、および 837 クレームの 3 つのバリエーション  
+-   HIPAA バージョン 5010 ドキュメント: 276/277 請求ステータス-要求と応答、登録 (834)、および 837 クレームの 3 つのバリエーション  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、この 3 種類のドキュメントのそれぞれに対して 2 種類のスキーマが用意されています。 それぞれの種類のドキュメントについて、分割をサポートするスキーマには、ファイル名に 'Multiple' というマークが付いています。 もう一方のスキーマでは、サブドキュメントの分割はサポートされていません。  
   
  シナリオによっては、分割スキーマと非分割スキーマの両方が必要になる場合があります。 これは、どちらかの種類のスキーマでカスタムのターゲット名前空間を使用することによりサポートされます。  
   
 ## <a name="how-subdocument-splitting-is-enabled"></a>サブドキュメントの分割を有効にする方法  
- HIPAA サブドキュメントの分割は、HIPAA スキーマ内の 3 つの注釈エントリによって有効になります。 最初の 2 つに設定する必要があります appinfo 注釈内のスキーマのエントリは、**はい**:  
+ HIPAA サブドキュメントの分割は、HIPAA スキーマ内の 3 つの注釈エントリによって有効になります。 最初の 2 つに設定する必要があります appinfo 注釈内のスキーマのエントリを **はい**:  
   
 ```  
 subdocument_break = "yes" Split_Without_Sibling_Data = "Yes"  
 ```  
   
- もう 1 つは、HIPAA スキーマの該当するレコード レベルにある注釈エントリです。 このプロパティにも設定する必要があります**はい**です。  
+ もう 1 つは、HIPAA スキーマの該当するレコード レベルにある注釈エントリです。 このプロパティにも設定する必要があります **はい**します。  
   
 ```  
 subdocument_creation_break = "yes"  
 ```  
   
- HIPAA スキーマ内のサブドキュメントの作成 break 注釈が"yes"に設定され、受信バッチ処理オプション パーティ プロパティが「トランザクション セットとして分割されたインターチェンジ」に設定されている場合にのみ、HIPAA インターチェンジをサブドキュメントに分割されます。 [受信バッチ処理オプション] パーティ プロパティが [インターチェンジの保存] に設定されている場合、EDI 逆アセンブラはインターチェンジをサブドキュメントに分割しません。 この場合、EDI 逆アセンブラは注釈を無視します。 この状況が発生しても、イベント ビューアには警告が表示されません。  
+ HIPAA スキーマ内でサブドキュメントの作成中断注釈が"yes"に設定され、受信バッチ処理オプション パーティ プロパティが「トランザクション セットとして分割されたインターチェンジ」に設定している場合にのみ、HIPAA インターチェンジをサブドキュメントに分割されます。 [受信バッチ処理オプション] パーティ プロパティが [インターチェンジの保存] に設定されている場合、EDI 逆アセンブラはインターチェンジをサブドキュメントに分割しません。 この場合、EDI 逆アセンブラは注釈を無視します。 この状況が発生しても、イベント ビューアには警告が表示されません。  
   
 > [!NOTE]
 >  サブドキュメントの作成を中断するための注釈は入れ子にできません。 サブドキュメントの注釈が適用されたループがスキーマ内にある場合、このループは、サブドキュメントの注釈が適用された別のループを含むことができません。  

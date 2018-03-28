@@ -1,22 +1,22 @@
 ---
-title: "BAM 開発プロセスの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 開発プロセスの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 098db3f6-2a61-4cc8-88c7-2299c2e2a55e
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 78ae5f1c61f2a00359e88acd75c093e2b6c2fb91
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="overview-of-the-bam-development-process"></a>BAM 開発プロセスの概要
 このトピックでは、開発プロセス、および BAM データを格納するデータベースおよびテーブルについて説明します。  
@@ -26,13 +26,13 @@ ms.lasthandoff: 11/28/2017
   
 -   アプリケーションをインストルメント化するには、アクティビティの展開が必要です。  
   
--   SQL Server データベースに対する DBO 権限を持っているし、BAM イベント ライター ロール セキュリティ コンテキストのメンバーである必要があります。  
+-   SQL Server データベースに対する DBO 権限があるし、BAM イベント ライター ロール セキュリティ コンテキストのメンバーである必要があります。  
   
--   Microsoft .NET 4 を使用すると、アプリケーションを開発するのに必要があります。 使用すること (C#) お勧めしますが、任意の .NET 言語を使用できます。  
+-   Microsoft .NET 4 を使用して、アプリケーションを開発する必要があります。 C# を使用することをお勧めですが、任意の .NET 言語を使用できます。  
   
 -   コンピューターに Microsoft.BizTalk.BAM.EventObservation.dll をインストールする必要があります。 DLL は 2 とおりの方法で入手できます。  
   
-    -   BizTalk Server 構成マネージャーを使用して BAM ツールをインストールします。 構成マネージャーを使用することをお勧めします。構成マネージャーによって、アップグレードに必要なエントリがレジストリに自動的に追加されます。 BAM を構成する方法の詳細については、次を参照してください。[を構成する BAM ツールを使用して、Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=70561) (http://go.microsoft.com/fwlink/?LinkId=70561)。  
+    -   BizTalk Server 構成マネージャーを使用して BAM ツールをインストールします。 構成マネージャーを使用することをお勧めします。構成マネージャーによって、アップグレードに必要なエントリがレジストリに自動的に追加されます。 BAM を構成する方法の詳細については、次を参照してください。[を構成する BAM ツールを使用して、Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=70561) (http://go.microsoft.com/fwlink/?LinkId=70561)です。  
   
     -   DLL が既にインストールされているコンピューターからコピーします。 Microsoft BizTalk Server に存在する DLL\<バージョン\>\Tracking フォルダーです。  
   
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/28/2017
 1.  Excel 用 BAM アドインを使用した監視モデルを作成します。  
   
     > [!NOTE]
-    >  この手順で説明する手順の例で、BAM API (BizTalk Server サンプル) にあります[http://go.microsoft.com/fwlink/?LinkId=69968](http://go.microsoft.com/fwlink/?LinkId=69968)です。  
+    >  この手順で説明する手順の例で、BAM API (BizTalk Server サンプル) にあります[ http://go.microsoft.com/fwlink/?LinkId=69968](http://go.microsoft.com/fwlink/?LinkId=69968)です。  
   
 2.  BAM 管理ユーティリティを使用して、アクティビティを PID に展開します。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 11/28/2017
   
     -   レコードのデータ項目を更新します。  
   
-    -   アクティビティを終了し、bam _ にレコードを移動\<*アクティビティ名**\>_completed テーブル。  
+    -   アクティビティを終了し、bam _ にレコードを移動\<* アクティビティ名 * *\>_completed テーブル。  
   
 ## <a name="where-bam-data-is-stored"></a>BAM データの格納場所  
  BAM は、BAM イベントの処理に使用する EventStream クラスを持つ EventObservation 名前空間を提供します。  

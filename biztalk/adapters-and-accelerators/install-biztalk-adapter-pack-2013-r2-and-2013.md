@@ -1,23 +1,23 @@
 ---
-title: "BizTalk Adapter Pack 2013 R2 と 2013 のインストール |Microsoft ドキュメント"
-description: "前提条件と BAP 2013 R2 および BizTalk Server に含まれている BAP 2013 をインストールする手順"
-ms.custom: 
+title: BizTalk Adapter Pack 2013 R2 と 2013 のインストール |Microsoft ドキュメント
+description: 前提条件と BAP 2013 R2 および BizTalk Server に含まれている BAP 2013 をインストールする手順
+ms.custom: ''
 ms.date: 2015-12-09
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9980953a-8d38-476f-af38-4f4214ba61f2
-caps.latest.revision: "107"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c8bc1ebbdaf2973f4749da6c0832d49204588b6c
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>BizTalk Adapter Pack 2013 R2 と 2013 をインストールします。
 このドキュメントには、Microsoft をインストールするには、ソフトウェア要件、および手順[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)](BAP) は、BizTalk Server 2013 に含まれているか、[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]です。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/17/2018
   
 |BizTalk Adapter Pack 2013 R2|BizTalk Adapter Pack 2013|  
 |---|---|  
-|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]R2 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、Windows 8.1、Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、Windows 8、Windows 7 SP1|  
+|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、Windows 8.1、Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、Windows 8、Windows 7 SP1|  
 |[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]|Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]|  
 |Visual Studio 2013|Visual Studio 2012|  
 |[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|  
@@ -58,7 +58,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
   
 |BizTalk Adapter Pack 2013 R2|BizTalk Adapter Pack 2013|  
 |---|---|  
-|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]R2 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、Windows 8.1、Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、Windows 8、Windows 7 SP1|  
+|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、Windows 8.1、Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、Windows 8、Windows 7 SP1|  
 |[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]|Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]|  
 |Visual Studio 2013|Visual Studio 2012|  
 |[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]<br /><br /> インストール、[!INCLUDE[consumeadapterservlong](../includes/consumeadapterservlong-md.md)]の[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]に含まれている、[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]です。 インストールするには、**カスタム**(選択**BizTalk Server アドイン**) または**完了**のインストール、[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]です。|[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]<br /><br /> インストール、[!INCLUDE[consumeadapterservlong](../includes/consumeadapterservlong-md.md)]の[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]に含まれている、[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]です。 インストールするには、**カスタム**(選択**BizTalk Server アドイン**) または**完了**のインストール、[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]です。|  
@@ -66,7 +66,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
 |エンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。|エンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。|  
 
 ### <a name="prerequisites-when-using-ado"></a>ADO を使用する場合の前提条件  
-  **[!INCLUDE[adaptersap](../includes/adaptersap-md.md)]** と **[!INCLUDE[adaptersiebel](../includes/adaptersiebel-md.md)]**  ADO レイヤーが含まれます ( *[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]* と *[!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]* )。 この ADO レイヤーは、SAP システムまたは Siebel システムへの接続に、ADO.NET クライアントを記述する使用できます。 行えます ADO レイヤーで SQL Server Integration Services (SSIS) のインポートし、エクスポートのデータ、LOB アプリケーション、および SQL Server Reporting Services (SSRS) レポートを生成するデータ、LOB システムの表示にします。  
+ **[!INCLUDE[adaptersap](../includes/adaptersap-md.md)]**と**[!INCLUDE[adaptersiebel](../includes/adaptersiebel-md.md)]** ADO レイヤーが含まれます (*[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]*と*[!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]*)。 この ADO レイヤーは、SAP システムまたは Siebel システムへの接続に、ADO.NET クライアントを記述する使用できます。 行えます ADO レイヤーで SQL Server Integration Services (SSIS) のインポートし、エクスポートのデータ、LOB アプリケーション、および SQL Server Reporting Services (SSRS) レポートを生成するデータ、LOB システムの表示にします。  
   
 > [!NOTE]
 >  ADO プロバイダーを使用して、SSRS でのみサポートされて、  *[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]*です。  
@@ -75,7 +75,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
   
 |BizTalk Adapter Pack 2013 R2|BizTalk Adapter Pack 2013|  
 |---|---|  
-|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]R2 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、Windows 8.1、Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、Windows 8、Windows 7 SP1|  
+|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、Windows 8.1、Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、Windows 8、Windows 7 SP1|  
 |[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]|Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]|  
 |Visual Studio 2013|Visual Studio 2012|  
 |[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|  
@@ -89,7 +89,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
   
 |WCF アダプター サービス開発ウィザードを実行するコンピューター|WCF サービスをホストするコンピューター|コンピューターの外部コンテンツ タイプを定義する SharePoint Designer を使用できます。|LOB アプリケーションからの情報を提示する SharePoint を使用するコンピューター|  
 |---|---|---|---|  
-|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li> Visual Studio 2013</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li></ul> **BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>Visual Studio 2012</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li></ul>|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li><li>オペレーティング システムに付属しているインターネット インフォメーション サービス (IIS) バージョン。 KB 224609 は、バージョンを一覧表示します。</li></ul>**BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li><li>オペレーティング システムに付属しているインターネット インフォメーション サービス (IIS) バージョン。 KB 224609 は、バージョンを一覧表示します。</li></ul>|Microsoft Office SharePoint Server ソフトウェア開発キット (SDK)|Microsoft Office のサーバー インフラストラクチャを更新します。 ダウンロード[http://go.microsoft.com/fwlink/?LinkId=128344](http://go.microsoft.com/fwlink/?LinkId=128344)です。|  
+|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li> Visual Studio 2013</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li></ul> **BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>Visual Studio 2012</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li></ul>|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li><li>オペレーティング システムに付属しているインターネット インフォメーション サービス (IIS) バージョン。 KB 224609 は、バージョンを一覧表示します。</li></ul>**BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>それぞれのエンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。</li><li>オペレーティング システムに付属しているインターネット インフォメーション サービス (IIS) バージョン。 KB 224609 は、バージョンを一覧表示します。</li></ul>|Microsoft Office SharePoint Server ソフトウェア開発キット (SDK)|Microsoft Office のサーバー インフラストラクチャを更新します。 ダウンロード[ http://go.microsoft.com/fwlink/?LinkId=128344](http://go.microsoft.com/fwlink/?LinkId=128344)です。|  
   
 <a name="BKMK_SuppLOB"></a>   
 ## <a name="supported-enterprise-application-versions"></a>サポートされているエンタープライズ アプリケーションのバージョン  
@@ -132,9 +132,9 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
   
     |SAP クライアント バージョン|必要なドライバー|  
     |------------------------|----------------------|  
-    |6.4|**BizTalk Adapter Pack 2013 のみ**<br /><br /> - **SAP RFC SDK 6.40 UNICODE**. これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 です。SDK をダウンロードする手順は[http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)です。ダウンロードして、SDK を展開したら、\rfcsdk\bin および \rfcsdk\lib フォルダーから、関連する場所に記載されている次の表の前のすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として**R3DLLINST.zip**です。これは、は、Microsoft ランタイム Dll を含んでおり、SAP サイトからダウンロードできます。SNOTE を参照してください<sup>* </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> -SAP システムへの接続に SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll は、32 ビットおよび 64 ビット プラットフォーム用に異なる、SNOTE で利用可能な<sup>* </sup> 352295 です。 Dll をダウンロードする[http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。 Dll の名前は次のとおりです。<br /><br /> - **32 ビット**: gsskrb5.dll、gssntlm.dll<br /><br /> -  **64 ビット x86 用**: gx64krb5.dll、gx64ntlm.dll|  
-    |7.0|- **SAP RFC SDK 7.00 UNICODE**. これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 です。SDK をダウンロードする手順は[http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)です。ダウンロードし、SDK を抽出した後は、\rfcsdk\bin および \rfcsdk\lib フォルダーからと、関連する場所に記載されている次の表の前に、すべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として**R3DLLINST.zip**です。これは、は、Microsoft ランタイム Dll を含んでおり、SAP サイトからダウンロードできます。SNOTE を参照してください<sup>* </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> -SAP システムへの接続に SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll は、32 ビットおよび 64 ビット プラットフォーム用に異なる、SNOTE で利用可能な<sup>* </sup> 352295 です。 Dll をダウンロードする[http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。 Dll の名前は次のとおりです。<br /><br /> - **32 ビット**: gsskrb5.dll、gssntlm.dll<br /><br /> - **64 ビット x86 用**: gx64krb5.dll、gx64ntlm.dll|  
-    |7.1|- **SAP RFC SDK 7.10 UNICODE**. これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 です。SDK をダウンロードする手順は[http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)です。ダウンロードして、SDK を展開したら、\rfcsdk\bin および \rfcsdk\lib フォルダーから、関連する場所に記載されている次の表の前のすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として**R3DLLINST.zip**です。これは、は、Microsoft ランタイム Dll を含んでおり、SAP サイトからダウンロードできます。SNOTE を参照してください<sup>* </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> Microsoft Visual C ランタイム Dll SAP 7.1 クライアントに必要なには、次のリンクからです。<br /><br /> - **32 ビット SAP 7.1 クライアントを**: から Vcredist_x86.exe [http://go.microsoft.com/fwlink/?LinkId=107086](http://go.microsoft.com/fwlink/?LinkId=107086)です。<br /><br /> -                                 **64 ビット SAP 7.1 クライアントを**: から Vcredist_x64.exe [http://go.microsoft.com/fwlink/?LinkId=107087](http://go.microsoft.com/fwlink/?LinkId=107087)です。<br /><br /> -SAP システムへの接続に SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll は、32 ビットおよび 64 ビット プラットフォーム用に異なる、SNOTE で利用可能な<sup>* </sup> 352295 です。 Dll をダウンロードする[http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。 Dll の名前は次のとおりです。<br /><br /> - **32 ビット**: gsskrb5.dll、gssntlm.dll<br /><br /> - **64 ビット x86 用**: gx64krb5.dll、gx64ntlm.dll|  
+    |6.4|**BizTalk Adapter Pack 2013 のみ**<br /><br /> - **SAP RFC SDK 6.40 UNICODE**. これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 です。SDK をダウンロードする手順は[ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)です。ダウンロードして、SDK を展開したら、\rfcsdk\bin および \rfcsdk\lib フォルダーから、関連する場所に記載されている次の表の前のすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として**R3DLLINST.zip**です。これは、は、Microsoft ランタイム Dll を含んでおり、SAP サイトからダウンロードできます。SNOTE を参照してください<sup>* </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> -SAP システムへの接続に SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll は、32 ビットおよび 64 ビット プラットフォーム用に異なる、SNOTE で利用可能な<sup>* </sup> 352295 です。 Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。 Dll の名前は次のとおりです。<br /><br /> - **32 ビット**: gsskrb5.dll、gssntlm.dll<br /><br /> -  **64 ビット x86 用**: gx64krb5.dll、gx64ntlm.dll|  
+    |7.0|- **SAP RFC SDK 7.00 UNICODE**. これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 です。SDK をダウンロードする手順は[ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)です。ダウンロードし、SDK を抽出した後は、\rfcsdk\bin および \rfcsdk\lib フォルダーからと、関連する場所に記載されている次の表の前に、すべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として**R3DLLINST.zip**です。これは、は、Microsoft ランタイム Dll を含んでおり、SAP サイトからダウンロードできます。SNOTE を参照してください<sup>* </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> -SAP システムへの接続に SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll は、32 ビットおよび 64 ビット プラットフォーム用に異なる、SNOTE で利用可能な<sup>* </sup> 352295 です。 Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。 Dll の名前は次のとおりです。<br /><br /> - **32 ビット**: gsskrb5.dll、gssntlm.dll<br /><br /> - **64 ビット x86 用**: gx64krb5.dll、gx64ntlm.dll|  
+    |7.1|- **SAP RFC SDK 7.10 UNICODE**. これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 です。SDK をダウンロードする手順は[ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)です。ダウンロードして、SDK を展開したら、\rfcsdk\bin および \rfcsdk\lib フォルダーから、関連する場所に記載されている次の表の前のすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として**R3DLLINST.zip**です。これは、は、Microsoft ランタイム Dll を含んでおり、SAP サイトからダウンロードできます。SNOTE を参照してください<sup>* </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> Microsoft Visual C ランタイム Dll SAP 7.1 クライアントに必要なには、次のリンクからです。<br /><br /> - **32 ビット SAP 7.1 クライアントを**: から Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086](http://go.microsoft.com/fwlink/?LinkId=107086)です。<br /><br /> -                                 **64 ビット SAP 7.1 クライアントを**: から Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087](http://go.microsoft.com/fwlink/?LinkId=107087)です。<br /><br /> -SAP システムへの接続に SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll は、32 ビットおよび 64 ビット プラットフォーム用に異なる、SNOTE で利用可能な<sup>* </sup> 352295 です。 Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)です。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。 Dll の名前は次のとおりです。<br /><br /> - **32 ビット**: gsskrb5.dll、gssntlm.dll<br /><br /> - **64 ビット x86 用**: gx64krb5.dll、gx64ntlm.dll|  
   
      * SNOTEs は、SAP でリリースされた修正プログラムに付属のリリース ノートです。  
 
@@ -195,7 +195,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
 ### <a name="scenarios-for-installing-the-biztalk-adapter-pack-on-32-bit-and-64-bit-platforms"></a>32 ビットおよび 64 ビット プラットフォームでは、BizTalk Adapter Pack をインストールするためのシナリオ  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]に使用できます。 
   
--   [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]デザイン時 (場合、LOB アプリケーションでの操作のメタデータの生成)
+-   [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] デザイン時 (場合、LOB アプリケーションでの操作のメタデータの生成)
   
 -   BizTalk Server 管理コンソール デザイン時 (物理ポートの作成)
   
@@ -380,7 +380,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
         > [!IMPORTANT]
         >  インストール中に、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]サイレント モードでの評価版、CEIP の既定のオプションが true です。  
   
-     Msiexec コマンドの種類の詳細については`msiexec`キーを押して、コマンド ライン`ENTER`です。 移動または[http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)です。
+     Msiexec コマンドの種類の詳細については`msiexec`キーを押して、コマンド ライン`ENTER`です。 移動または[ http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)です。
   
 <a name="BKMK_PostInst"></a>   
 ### <a name="after-installing-the-biztalk-adapter-pack"></a>BizTalk Adapter Pack をインストールした後  
@@ -660,13 +660,13 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
      別の値を使用して、`REMOVE`と`ADDLOCAL`プロパティを追加または特定のコンポーネントを削除することができます。 内のテーブルを参照してください[サイレント モードで BizTalk Adapter Pack をインストールする](#BKMK_SilentInst)(このトピック) でこれらのプロパティを使用できる値についてはします。  
   
-     Msiexec コマンドの一部として、/f オプションを使用して、サイレントの修復を実行することもできます。 例:  
+     Msiexec コマンドの一部として、/f オプションを使用して、サイレントの修復を実行することもできます。 以下に例を示します。  
   
     ```  
     msiexec /i AdaptersSetup.msi /qn /f  
     ```  
   
-     さまざまなさまざまな組み合わせを使用するには、/f オプションを使用します。 Msiexec コマンドの種類の詳細については`msiexec`キーを押して、コマンド ライン`ENTER`です。 移動または[http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)です。  
+     さまざまなさまざまな組み合わせを使用するには、/f オプションを使用します。 Msiexec コマンドの種類の詳細については`msiexec`キーを押して、コマンド ライン`ENTER`です。 移動または[ http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)です。  
   
     > [!IMPORTANT]
     >  変更中に、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]サイレント モードでインストールで CEIP を有効または無効にするための設定を変更することはできません。 True または false に、CEIP_OPTIN を明示的に設定した場合でも、インストールは残りの中に選択した環境を設定します。  
@@ -710,7 +710,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
     msiexec /x AdaptersSetup.msi /qn  
     ```  
   
-     Msiexec コマンドの種類の詳細については`msiexec`キーを押して、コマンド ライン`ENTER`です。 移動または[http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)です。
+     Msiexec コマンドの種類の詳細については`msiexec`キーを押して、コマンド ライン`ENTER`です。 移動または[ http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)です。
   
 <a name="BKMK_PostRemove"></a>   
 ### <a name="after-removing-the-biztalk-adapter-pack"></a>BizTalk Adapter Pack を削除した後  
@@ -718,7 +718,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
 -   そのためには、セットアップ ウィザードが失敗した場合、アダプターのバインドまたは .NET Framework Data Provider の登録を削除します。
   
--   インストールする場合は、カスタムの Rfc を削除します[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]
+-   インストールする場合は、カスタムの Rfc を削除します [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]
   
 <a name="BKMK_Remove_Binding"></a>   
 #### <a name="remove-the-bindings-or-the-net-framework-data-provider-registration"></a>バインドまたは .NET Framework データ プロバイダーの登録を削除します。  

@@ -1,26 +1,27 @@
 ---
-title: "銀行識別コードの検証を有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: 銀行識別コードの検証を有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Bank Identifier Code (BIC), enabling
+helpviewer_keywords:
+- Bank Identifier Code (BIC), enabling
 ms.assetid: d268a892-f304-44cb-b590-28ef359c8d99
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c3868906d4f61242b1344a02147e4e71307d67d3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>銀行識別コードの検証を有効にします。
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]スキーマでは、SWIFT インターチェンジのドキュメントで指定された銀行識別コード (BICs) が SWIFT 定義 BIC データ形式に準拠していることを確認してください。 A4SWIFT は、データベース内の顧客が指定した BIC リストに対して BICs の検証もサポートします。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] スキーマでは、SWIFT インターチェンジのドキュメントで指定された銀行識別コード (BICs) が SWIFT 定義 BIC データ形式に準拠していることを確認してください。 A4SWIFT は、データベース内の顧客が指定した BIC リストに対して BICs の検証もサポートします。  
   
  BRE 検証を有効にして、BIC 検証を有効にする場合は、この検証を実行することができます。  
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-customize-the-bic-master-policy"></a>BIC マスター ポリシーをカスタマイズするには  
   
-1.  (メモ帳など)、XML エディターを開きを参照  **<*ドライブ*プログラム files \ Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFTMessages\A4SWIFT SRG\<バージョン\>\Base ポリシー * *。  
+1.  (メモ帳など)、XML エディターを開きを参照 **<*ドライブ*プログラム files \ Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Base ポリシー**です。  
   
 2.  開いている**BIC_Master_Policy.xml**です。 次の既存の文字列を新しい値に置き換えます。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  ポリシー ストア] ページで、[ **SQL Server 名**を選択、 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] BizTalk データベースを格納します。 **選択したサーバーの構成データベース** **BizTalkRuleEngineDb**、順にクリック**次へ**です。  
   
-8.  インポート ルール エンジン ポリシー/ボキャブラリ ファイル ページを参照  **<*ドライブ*\Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージの Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Base * *、ポリシーのをクリックして**BIC_Master_Policy.xml**、 をクリックして**開く**をクリックして**次**です。  
+8.  インポート ルール エンジン ポリシー/ボキャブラリ ファイル ページを参照 **<*ドライブ*\Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\SWIFTMessages\A4SWIFT SRG\<バージョン\>\Base ポリシー**をクリックして**BIC_Master_Policy.xml**、 をクリックして**開く**をクリックして**次**です。  
   
 9. 準備完了 ページで、データを確認し、をクリックして**次**です。  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 15. **ポリシーの展開**] ページで、[ **BIC_Master_Policy.1.0**、順にクリック**次**です。  
   
-16. **準備** ページで、をクリックして**次**です。  
+16. **準備ができて** ] ページで [ **次**します。  
   
 17. [ポリシーの配置] ページで、展開が成功した場合、をクリックして**次**です。 をクリックして**このウィザードを再度実行**、順にクリック**完了**です。  
   

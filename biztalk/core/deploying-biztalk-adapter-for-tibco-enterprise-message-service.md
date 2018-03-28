@@ -1,28 +1,28 @@
 ---
-title: "TIBCO EMS 用のバインドのインポート |Microsoft ドキュメント"
-description: "BizTalk Server でバインドのインポート機能を使用して TIBCO Enterprise Message Service アプリケーションの BizTalk アダプターの展開します。"
-ms.custom: 
+title: TIBCO EMS 用のバインドのインポート |Microsoft ドキュメント
+description: BizTalk Server でバインドのインポート機能を使用して TIBCO Enterprise Message Service アプリケーションの BizTalk アダプターの展開します。
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 69dae448-4ec6-4a56-a628-bb447bc21b62
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 79f7f3ec0478746b8c2c6762fe212229f9c7b11d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploy-tibco-ems-ports-and-assemblies"></a>TIBCO EMS ポートとアセンブリを展開します。
 
 ## <a name="overview"></a>概要
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとターゲット コンピューター上のアセンブリを複製することができます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]エクスポートは、ポートおよび受信場所の構成を XML ファイルに送信します。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとターゲット コンピューター上のアセンブリを複製することができます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エクスポートは、ポートおよび受信場所の構成を XML ファイルに送信します。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用すると、次のタスクを実行できます。  
   
@@ -64,9 +64,9 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ```
 
 ## <a name="limitations"></a>制限事項
-個の星トランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) BizTalk Server によってエクスポートされるバインド ファイルにされ、同じ管理コンポーネントに渡されます形式です。 アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力してください、**トランスポートのプロパティ**バインド ファイルをインポートした後は、BizTalk Server 管理コンソール内のページです。  
+個の星トランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) BizTalk Server によってエクスポートされるバインド ファイルにされ、同じ形式で管理コンポーネントに渡されます。 アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力、 **トランスポートのプロパティ** ] ページで、バインド ファイルをインポートした後は、BizTalk Server 管理コンソールです。  
   
- これは、既知の制限です。 バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次にファイルを使用してバインド情報をインポートするときに、トランスポート プロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。 または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が正常に完了した後、バインド ファイルからパスワードを削除する必要があります。  
+ これは、既知の制限です。 バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次にファイルを使用してバインド情報をインポートするときに、トランスポート プロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。 または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が正常に完了した後は、バインド ファイルからパスワードを削除する必要があります。  
   
  
 ### <a name="password-limitation-workaround"></a>パスワードの制限への対処方法  
@@ -77,7 +77,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
     > [!CAUTION]
     >  これは、セキュリティ上の理由により推奨されていません。  
   
--   アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力してください、**トランスポートのプロパティ**バインド ファイルをインポートした後は、BizTalk Server 管理コンソール内のページです。  
+-   アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力、 **トランスポートのプロパティ** ] ページで、バインド ファイルをインポートした後は、BizTalk Server 管理コンソールです。  
   
     > [!NOTE]
     >  この対処方法を使用できるのは、対象のコンピューターに Visual Studio がインストールされているか、カスタム ツールを開発する場合のみです。  

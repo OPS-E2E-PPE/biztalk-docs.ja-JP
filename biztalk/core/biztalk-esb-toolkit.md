@@ -1,22 +1,22 @@
 ---
-title: "BizTalk ESB Toolkit |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk ESB Toolkit |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 08035518-17ad-44d2-ab06-90d725c95ced
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 535fd99ee5c1b9f9c25dd49e2a2441acb855c78a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="biztalk-esb-toolkit"></a>BizTalk ESB Toolkit
 Microsoft BizTalk ESB Toolkit は、Microsoft BizTalk Server を使用して疎結合のメッセージング アーキテクチャをサポートしています。 BizTalk Server には、メッセージング アプリケーション用の強力なパブリッシュ/サブスクライブ メカニズムが組み込まれています。このメカニズムは、サブスクリプションを作成および入力することによって機能し、サービス指向アーキテクチャ (SOA) アプリケーション向けの、高い効率と拡張性を備えたプラットフォームを提供します。 BizTalk ESB Toolkit は、BizTalk Server の機能を拡張して、次のようなアプリケーションの構築に焦点を合わせたさまざまな新機能を提供します。そのアプリケーションとは、スケジュールに基づくサービス呼び出しによる軽量なサービス作成、エンドポイントやマップの動的な解決、Web サービスと WS-* の統合、障害管理と報告、およびサードパーティの SOA 管理ソリューションとの統合を組み込んだ、堅牢な接続型のサービス指向アプリケーションです。  
@@ -38,10 +38,10 @@ Microsoft BizTalk ESB Toolkit は、Microsoft BizTalk Server を使用して疎�
   
 ## <a name="how-the-biztalk-esb-toolkit-works"></a>BizTalk ESB Toolkit の動作  
  BizTalk ESB Toolkit は、受信メッセージを受け取り、受け取ったメッセージに対して操作を実行します。その際、通常 (必ずではない) は、変換や配信などのプロセスまたはその他のカスタム定義プロセスを実行します。 必要な操作を指定するには、中心となる処理コンポーネントに、関連付けられた指示またはメタデータを格納するメッセージが必要です。その指示またはメタデータにより、メッセージの内容に対して適用するプロセスおよび実行するタスクが定義されます。   
-これにより、サービス間の疎結合これは、ESB メッセージごとに、特定の処理の知識が必要ないことを意味します。 ESB に必要な情報は、発生する可能性のあるプロセスの範囲と、各プロセスを適用する方法だけです。 使用可能なプロセスおよびプロセスと指示のマッピングをメッセージ内に指定するための広範囲なオプションが用意されているので、コードの変更やコンポーネントの再展開を必要とせずに動作を構成および調整するための柔軟なメカニズムが実現されています。  
+これにより、サービスの間の疎結合これは、ESB メッセージごとに、特定の処理に関する予備知識が必要ないことを意味します。 ESB に必要な情報は、発生する可能性のあるプロセスの範囲と、各プロセスを適用する方法だけです。 使用可能なプロセスおよびプロセスと指示のマッピングをメッセージ内に指定するための広範囲なオプションが用意されているので、コードの変更やコンポーネントの再展開を必要とせずに動作を構成および調整するための柔軟なメカニズムが実現されています。  
   
 ## <a name="getting-started"></a>作業の開始  
- BizTalk ESB Toolkit をインストールした後で、"Getting Started"トピックをお読みください、 [BizTalk ESB Toolkit のドキュメント](http://go.microsoft.com/fwlink/?LinkId=193578)アーキテクチャ、メッセージ フロー、および BizTalk ESB Toolkit のコア コンポーネントを理解します。 また、BizTalk ESB Toolkit に付属するサンプルをインストールして実行することをお勧めします。サンプルには、「はじめに」のトピックや他のメッセージング シナリオで説明している一般的な使用例が示されています。 このアプローチにより、BizTalk ESB Toolkit が動作するしくみと、ユーザー独自の SOA アプリケーションで BizTalk ESB Toolkit の機能を活用する方法を短時間で把握できます。  
+ BizTalk ESB Toolkit をインストールすると、「はじめに」のトピックを読む必要があります、 [BizTalk ESB Toolkit のドキュメント](http://go.microsoft.com/fwlink/?LinkId=193578) 、アーキテクチャ、メッセージ フローを BizTalk ESB Toolkit のコア コンポーネントを理解します。 また、BizTalk ESB Toolkit に付属するサンプルをインストールして実行することをお勧めします。サンプルには、「はじめに」のトピックや他のメッセージング シナリオで説明している一般的な使用例が示されています。 このアプローチにより、BizTalk ESB Toolkit が動作するしくみと、ユーザー独自の SOA アプリケーションで BizTalk ESB Toolkit の機能を活用する方法を短時間で把握できます。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk エンタープライズ サービスのガイダンス](http://go.microsoft.com/fwlink/?LinkId=193577)   

@@ -1,11 +1,11 @@
 ---
-title: "Windows5 のイベントの追跡の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: Windows5 のイベントの追跡の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ETW
@@ -18,25 +18,25 @@ helpviewer_keywords:
 - Event Tracing for Windows, components
 - BTAPeopleSoftTrace command
 ms.assetid: 330ef84b-5e2a-4b79-85a9-72271eb489d2
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 60a317dabd31bc1a6f37645c6b3fb2ce25d6de43
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
-Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、および情報メッセージを、Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW が有効である場合、このメッセージを受信する *.etl ファイルが作成されます。 ファイルはバイナリ形式で、読み取るに変換する必要があります。 これを行うには解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイルです。 たとえば、tracerpt.exe や tracedmp.exe です。  
+Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、および情報メッセージを、Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW が有効である場合、このメッセージを受信する *.etl ファイルが作成されます。 ファイルはバイナリ形式で、読み取れるに変換する必要があります。 これを行うには解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル; tracerpt.exe や tracedmp.exe などです。  
   
 ## <a name="etw-components"></a>ETW コンポーネント  
  Windows イベント トレーシングには 3 つのコンポーネントがあります。  
   
--   **コント ローラー アプリケーション**: をアクティブにし、(たとえば、tracelog.exe または logman.exe) プロバイダーが非アクティブ化します。  
+-   **コント ローラー アプリケーション**: をアクティブにし、(たとえば、tracelog.exe や logman.exe) プロバイダーを非アクティブにします。  
   
-     PATH 環境変数を、tracelog.exe の場所を指すように設定します。 こうことを確認する`BTAPeopleSoftTrace`呼び出しは、システムの tracelog.exe を見つけることができます。 既定では、BTAPeopleSoftTrace は現在のパスを検索します。  
+     PATH 環境変数を、tracelog.exe の場所を指すように設定します。 こうことを確認する `BTAPeopleSoftTrace` 呼び出しは、システムの tracelog.exe を見つけることができます。 既定では、BTAPeopleSoftTrace は現在のパスを検索します。  
   
     > [!NOTE]
     >  tracelog.exe は Microsoft SDK に含まれており、BizTalk Adapter for PeopleSoft Enterprise で提供されるコマンドと互換性があります。 logman.exe の使い方については、logman のマニュアルを参照してください。  
@@ -47,9 +47,9 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、�
   
      コント ローラーにコンシューマーを使用して、トレースを非アクティブ化せず、リアル タイム オプションを使用してトレースをアクティブ化する必要があります\<リアルタイム\>-rt を = です。  
   
--   **プロバイダー:**イベントを提供します。  
+-   **プロバイダー:** イベントを提供します。  
   
-     BizTalk Adapter for PeopleSoft Enterprise には、5 種類のプロバイダーがあります。 これらは Windows Management Instrumentation (WMI) に登録されます。 登録されているプロバイダーが見つかりません、 **root \wmi\eventtrace**パス、WMI CIM Studio などのツールを使用することができます。  
+     BizTalk Adapter for PeopleSoft Enterprise には、5 種類のプロバイダーがあります。 これらは Windows Management Instrumentation (WMI) に登録されます。 登録されているプロバイダーを検索する、 **root \wmi\eventtrace** パス、WMI CIM Studio などのツールを使用することができます。  
   
  BizTalk Adapter for PeopleSoft Enterprise には、5 つのプロバイダーが用意されており、種類の異なるメッセージをログに記録できます。  
   
@@ -64,7 +64,7 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、�
 -   **管理ログ プロバイダー**:\<トレース要素\>スイッチが**-管理**です。  
   
 ## <a name="btapeoplesofttrace-command"></a>BTAPeopleSoftTrace コマンド  
- ETW を使用して、アダプターのコマンドを実行する**BTAPeopleSoftTrace.cmd**です。 このコマンドは次のように使用します。  
+ ETW を使用して、アダプターのコマンドを実行する **BTAPeopleSoftTrace.cmd**します。 このコマンドは次のように使用します。  
   
 ```  
 BTAPeopleSoftTrace <Trace element> -start [-cir <MB>|   
@@ -80,23 +80,23 @@ BTAPeopleSoftTrace <Trace element> -stop
   
     -   **-castDetailsTransmit**  
   
-    -   **送信機能**  
+    -   **-送信機能**  
   
     -   **-castDetailsReceive**  
   
-    -   **-受信機**  
+    -   **-受信者**  
   
-    -   **-管理**  
+    -   **管理**  
   
-    -   **-開始、停止**: プロバイダーをアクティブまたは非アクティブです。  
+    -   **--start、-stop**: プロバイダーをアクティブまたは非アクティブです。  
   
 -   **-cir \<MB\>**: ファイルのサイズおよび種類です。 -cir は循環ファイルです。 \<MB\>: サイズ (メガバイト単位)。  
   
 -   **-seq \<MB\>**: ファイルのサイズおよび種類です。 -seq はシーケンシャル ファイルです。 \<MB\>: サイズ (メガバイト単位)。  
   
--   **-rt**: リアル タイム モードに設定します。  
+-   **-rt**: でリアルタイムに設定します。  
   
--   **Logfile**: (既定では C:\rtlog.etl) ログ ファイルの名前。  
+-   **ログ ファイル**: (既定では C:\rtlog.etl) ログ ファイルの名前。  
   
  例:  
   

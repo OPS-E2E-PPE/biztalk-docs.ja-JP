@@ -1,30 +1,30 @@
 ---
-title: "BizTalk Server プロジェクトを移行する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server プロジェクトを移行する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a4dde72-6555-4bf6-b90e-676aa65312ff
-caps.latest.revision: "23"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d2752203b0498a6cd5a4a8b6df6bc558c444e355
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migrating-a-biztalk-server-project"></a>BizTalk Server プロジェクトを移行します。
-[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]用に開発されたプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して新しい環境に移行できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]変換します。 サポートされている移行のバージョンの一覧は、次を参照してください。 [サポートされるアップグレード パスと環境向けインストール ガイド](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)します。  
+[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 用に開発されたプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して新しい環境に移行できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]変換します。 サポートされている移行のバージョンの一覧は、次を参照してください。 [サポートされるアップグレード パスと環境向けインストール ガイド](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)します。  
   
 ## <a name="biztalk-project-changes-after-running-the-conversion-wizard"></a>変換ウィザードを実行した後の BizTalk プロジェクトの変化  
  次の表にどのように[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]プロジェクト構成の名前変更、およびいくつかの特定の構成プロパティが、プロジェクトの後に再配置より新しいに変換されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。 ほとんどの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-に関連するプロジェクトの設定がある、**展開**プロジェクト デザイナーのタブです。  
   
-|[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]プロジェクト|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト|  
+|[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] プロジェクト|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクト|  
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|  
 |**追跡情報を埋め込む** 出力構成プロパティ|**定数 TRACE の定義** ビルド オプション、 **ビルド** プロジェクト デザイナーのタブをクリックします。|  
 |**デバッグ情報の生成** 出力構成プロパティ|**定数 DEBUG の定義** ビルド オプション、 **ビルド** プロジェクト デザイナーのタブをクリックします。|  
@@ -40,7 +40,7 @@ ms.lasthandoff: 01/17/2018
 >  XSD や ODX ファイルなどの自動生成項目のカスタマイズは、変換の間に失われます。 これは、Web 参照を BizTalk プロジェクトに追加すると生成される XSD ファイルにも当てはまります。  
   
 ## <a name="project-migration-and-delay-signing"></a>プロジェクトの移行と遅延署名  
- [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]使用するプロジェクト[遅延署名](http://go.microsoft.com/fwlink/p/?LinkId=140992)用に変換した後にビルド プロセス中に失敗する可能性があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 これが起こる場合 **シリアル化アセンブリを生成** に移行したプロジェクトの構成が設定されていないために、ビルド設定 **オフ**します。  
+ [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] 使用するプロジェクト[遅延署名](http://go.microsoft.com/fwlink/p/?LinkId=140992)用に変換した後にビルド プロセス中に失敗する可能性があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 これが起こる場合 **シリアル化アセンブリを生成** に移行したプロジェクトの構成が設定されていないために、ビルド設定 **オフ**します。  
   
 ## <a name="project-migration-and-msmqt"></a>プロジェクトの移行と MSMQT  
  MSMQT は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には組み込まれなくなりました。 プロジェクトの移行に与える影響これについての詳細については、トピックを参照してください。[非推奨の MSMQT](../core/msmqt-deprecation.md)です。  

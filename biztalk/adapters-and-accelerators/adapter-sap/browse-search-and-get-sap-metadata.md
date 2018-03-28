@@ -1,11 +1,11 @@
 ---
-title: "参照、検索、および SAP メタデータの取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および SAP メタデータの取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - metadata
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - BAPI
 - IDOC
 ms.assetid: 5f0d7c1f-d6e1-4c56-8d8e-1f5d537aa3ce
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 40cc1bd6592b38dbda9c9bff3ad01d6cdaf8a707
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-sap-metadata"></a>参照、検索、および SAP メタデータの取得
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムからのサーフェス メタデータ。 このメタデータは、アダプターを使用して SAP システムと通信するためのメッセージの構造を記述します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
@@ -45,17 +45,17 @@ ms.lasthandoff: 09/20/2017
 ## <a name="browsing-metadata"></a>メタデータの参照  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Rfc、tRFCs、Bapi、および Idoc が SAP システムによって公開されているを参照するアダプターのクライアントを有効にします。 メタデータの参照操作の一環として、アダプター サーフェスの Rfc および Bapi の操作として。 Idoc、アダプターは Idoc を送受信するための操作を表示します。 これらの操作はから利用可能な[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。 SAP メタデータは、次のノードの下にある分類されます。  
   
--   **RFC**です。 このノードは、SAP システムによって公開されている Rfc が含まれています、SAP の関数モジュールを表します。 アダプターは、Rfc では複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 RFC は、この階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC SDK を使用して、Rfc のメタデータを生成します。 アダプターは、対象のメタデータが生成できます Rfc のみを呼び出すことができます。  
+-   **RFC**. このノードは、SAP システムによって公開されている Rfc が含まれています、SAP の関数モジュールを表します。 アダプターは、Rfc では複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 RFC は、この階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC SDK を使用して、Rfc のメタデータを生成します。 アダプターは、対象のメタデータが生成できます Rfc のみを呼び出すことができます。  
   
      以外の操作として、Rfc を提示するには、アダプターも明らかによって特定の操作など**RfcGetAttributes**です。 これらの操作の詳細については、次を参照してください。 [SAP Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)です。  
   
--   **TRFC**です。 このノードには、SAP システムによって公開される tRFCs が含まれています。 tRFCs で、SAP システムが Rfc を呼び出すためのメカニズムではなく、従来の成果物ではありません。 そのメタデータの特性は Rfc 異なるのでは個別のノード下 tRFCs に分類されます。 具体的には、Rfc には、エクスポートのパラメーターも含まれます。 アダプターは、tRFCs を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 TRFC はこの階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。  
+-   **TRFC**. このノードには、SAP システムによって公開される tRFCs が含まれています。 tRFCs で、SAP システムが Rfc を呼び出すためのメカニズムではなく、従来の成果物ではありません。 そのメタデータの特性は Rfc 異なるのでは個別のノード下 tRFCs に分類されます。 具体的には、Rfc には、エクスポートのパラメーターも含まれます。 アダプターは、tRFCs を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 TRFC はこの階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。  
   
      以外の操作として tRFCs を提示するには、アダプターも明らかによって特定の操作など**RfcConfirmTransID**です。 これらの操作の詳細については、次を参照してください。 [SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。  
   
--   **BAPI**です。 このノードには、SAP システムによって公開される Bapi が含まれています。 アダプターでの Bapi は複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 BAPI はこの階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。  
+-   **BAPI**. このノードには、SAP システムによって公開される Bapi が含まれています。 アダプターでの Bapi は複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 BAPI はこの階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。  
   
--   **IDOC**です。 このノードには、SAP システムによって公開される Idoc が含まれています。 アダプターは、Idoc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 アダプターは、Idoc の公開される操作は次のとおりです。  
+-   **IDOC**. このノードには、SAP システムによって公開される Idoc が含まれています。 アダプターは、Idoc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 アダプターは、Idoc の公開される操作は次のとおりです。  
   
     -   **送信**と**受信**です。 アダプターのクライアントは、厳密に型指定されたスキーマを使用して SAP システムから Idoc を送受信するこれらの操作を使用できます。  
   
@@ -70,10 +70,10 @@ ms.lasthandoff: 09/20/2017
   
 |成果物|GUI でのノードの下の検索|  
 |--------------|------------------------------------|  
-|RFC|-/RFC<br />-/RFC/[アプリケーション グループ]|  
-|tRFC|-/TRFC<br />-/TRFC/[アプリケーション グループ]|  
-|BAPI|-/BAPI|  
-|IDOC|-/IDOC|  
+|RFC|-   /RFC<br />-   /RFC/[Application Group]|  
+|tRFC|-   /TRFC<br />-/TRFC/[アプリケーション グループ]|  
+|BAPI|-   /BAPI|  
+|IDOC|-   /IDOC|  
   
  次の表に、検索とその解釈で使用できる特殊文字、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
   

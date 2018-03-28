@@ -1,23 +1,24 @@
 ---
-title: "Siebel の基本的なデータの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel の基本的なデータの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Siebel data types, supported
+helpviewer_keywords:
+- Siebel data types, supported
 ms.assetid: bf86f639-6c45-49db-9e58-79c3ad2c9978
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0266f445c2fd8a7cba9a0e2089b9542813230580
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="basic-siebel-data-types"></a>Siebel の基本的なデータ型
 このセクションで Siebel データ型をサポートする方法について説明します、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  

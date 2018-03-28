@@ -1,25 +1,25 @@
 ---
-title: "任意の XPath プロパティ ハンドラ (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: 任意の XPath プロパティ ハンドラ (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], examples
 - examples, pipeline components [custom]
 ms.assetid: 4eb26c38-5ece-42b0-a28e-73214df1dc41
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>任意の XPath プロパティ ハンドラ (BizTalk Server サンプル)
 任意の XPath プロパティ ハンドラー ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サンプル) では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信される XML ドキュメント上で特定のプロパティを昇格させるためのカスタム パイプライン コンポーネントを記述する方法を示します。 サンプルに含まれる機能を使用して、XPath 式を評価する通常、アセンブラ、および逆アセンブラの各カスタム コンポーネントを作成できます。  
@@ -118,7 +118,7 @@ ms.lasthandoff: 01/17/2018
 2.  \Output ディレクトリの内容を表示します。 \Input ディレクトリにコピーした DocInstance.xml ファイルのすべての情報を含む新しいファイルが作成されています。 される点が異なりますファイルのようになりました、 \<TotalAmount\> PO の合計容量を持つ要素が設定されています。  
   
 ## <a name="comments"></a>コメント  
- 正規 XPath 式などの単純式は、"/* [ローカル名 () '要素名' と namespaceURI() を = = 'http://MyUri.org']/\*[ローカル名 () =' 要素名 ']/@\*[ローカル名 =' 属性名 ']"です。  
+ 正規 XPath 式などの単純式は、"/* [ローカル名 () '要素名' と namespaceURI() を = ='http://MyUri.org']/\*[ローカル名 () =' 要素名 ']/@\*[ローカル名 =' 属性名 ']"です。  
   
  任意の XPath 式は、"//element-name//*[local-name()='element-name' and position()=2]" のように複雑な場合があります。 実際は、XPath ボディまたは XPath プロパティで使用される非正規 XPath がスキーマに含まれる場合に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では非正規 XPath 式はサポートされていないという実行時エラーが発生します。 任意の XPath 式をサポートできるようにするには、任意の XPath ボディと任意の XPath プロパティ式の両方をサポートするカスタムの逆アセンブラおよびアセンブラ コンポーネントを作成します。  
   

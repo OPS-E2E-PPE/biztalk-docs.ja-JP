@@ -1,20 +1,20 @@
 ---
-title: "トラブルシューティングし、既知の問題と BizTalk RosettaNet Accelerator (BTARN) が BizTalk Server にインストール |Microsoft ドキュメント\""
-description: "BizTalk Server で BTARN のインストールで SQL では、ホスト インスタンス、および既知のエラーのサービス アカウントをインストールするための推奨事項"
+title: トラブルシューティングし、既知の問題と BizTalk RosettaNet Accelerator (BTARN) が BizTalk Server にインストール |Microsoft ドキュメント"
+description: BizTalk Server で BTARN のインストールで SQL では、ホスト インスタンス、および既知のエラーのサービス アカウントをインストールするための推奨事項
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: cdca89c1a7a4ed3834103776f9f28c8631c5de0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="troubleshoot-the-installation-and-see-the-known-install-issues"></a>インストールのトラブルシューティングし、既知のインストールの問題を参照してください。
 
@@ -47,7 +47,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
 `Failed to create object for feature: WebApp`  
   
- **解決策**  
+ **解決方法**  
   
 手動でファイルをコピーし、再構成します。 
   
@@ -70,7 +70,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
   
  BTARN をアンインストールするときに、一部のアセンブリはグローバル アセンブリ キャッシュ (GAC) に残ります。  
   
- **解決策**  
+ **解決方法**  
   
  BTARN を再インストールする前に GAC からアセンブリを削除します。  
   
@@ -93,7 +93,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
   
  この問題の原因として考えられるのは "RPCProxy.dll" ISAPI フィルターです。  
   
- **解決策**  
+ **解決方法**  
   
 RPC プロキシ ISAPI フィルターへの参照を削除し、IIS を再起動します。
   
@@ -103,7 +103,7 @@ RPC プロキシ ISAPI フィルターへの参照を削除し、IIS を再起�
   
 3.  IIS を再起動します。  
   
-4.  IIS を再開したら、http://localhost にアクセスします。 インターネット ブラウザーから 400 メッセージが返されます。  
+4.  IIS を再起動した後にアクセスしてください。http://localhostです。 インターネット ブラウザーから 400 メッセージが返されます。  
   
 ### <a name="sql-server-mixed-mode-not-supported"></a>SQL Server の混合モードがサポートされていません  
 BTARN は、混在モードで SQL Server をサポートしていません。  
@@ -117,6 +117,6 @@ BTARN は、混在モードで SQL Server をサポートしていません。
   
  BTARN の自己解凍形式の実行可能ファイル、Web からダウンロードし、BizTalk、.exe ファイルを実行しようとする BizTalk サーバーのルート フォルダーに保存すると**セットアップ ウィザード**BTARN セットアップ ウィザードではなく、実行します。  
   
- **解決策**  
+ **解決方法**  
   
  BTARN の自己解凍形式の実行可能ファイルをダウンロードし、一時フォルダーにファイルを保存します。

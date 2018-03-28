@@ -1,22 +1,22 @@
 ---
-title: "BAM スター スキーマ Database2 を移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM スター スキーマ Database2 を移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a6832ac2-c8c5-4515-883e-26d125d6ace0
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d74e49cc1504547bff80bd2688383f1f6bea053c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a>BAM スター スキーマ データベースを移動する方法
 ここでは、BAM スター スキーマ データベースを他のサーバーに移動する手順について説明します。  エンド ツー エンドのシナリオの観点から、BAM スター スキーマ データベースの移動にも 2 つの主要な手順が含まれます。  
@@ -28,32 +28,32 @@ ms.lasthandoff: 12/01/2017
 ## <a name="prerequisites"></a>前提条件  
  この手順を実行するには、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] sysadmin 固定サーバー ロールのメンバーであるアカウントを使用してログオンする必要があります。  
   
-##  <a name="BKMK_StarMoveDB"></a>BAM スター スキーマ データベースを移動します。  
+##  <a name="BKMK_StarMoveDB"></a> BAM スター スキーマ データベースを移動します。  
  BAM スター スキーマ データベースを移動する次の手順で、手順を実行します。  
   
 #### <a name="to-move-the-bam-star-schema-database"></a>BAM スター スキーマ データベースを移動するには  
   
 1.  BAM キューブ更新/データ保守 SSIS パッケージをすべて停止するか、BAM スター スキーマ データベースの復元が完了するまで実行を回避します。  
   
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービスをすべて停止します。 詳細については、トピックを参照してください。[開始方法、停止、一時停止、再開、または BizTalk Server サービスを再起動](http://go.microsoft.com/fwlink/?LinkId=154394)(http://go.microsoft.com/fwlink/?LinkId=154394) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
+2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービスをすべて停止します。 詳細については、トピックを参照してください。[開始方法、停止、一時停止、再開、または BizTalk Server サービスを再起動](http://go.microsoft.com/fwlink/?LinkId=154394)(http://go.microsoft.com/fwlink/?LinkId=154394)で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   
 3.  IIS サービスを停止します。  
   
 4.  BAM 警告 Notification service を停止します。  
   
-    1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+    1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **cmd**, 、 をクリックし、 **ok**します。  
   
     2.  コマンド プロンプトで、次のように入力します。  
   
-         **Net stop NS$ BamAlerts**  
+         **Net stop NS$BamAlerts**  
   
-5.  古いサーバーで、BAM スター スキーマ データベースをバックアップします。 データベースをバックアップする方法の手順についてに記載された手順に従います[する方法:、データベースのバックアップ (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (http://go.microsoft.com/fwlink/?LinkId=156510) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]オンライン ブック、データベースをバックアップする方法です。  
+5.  古いサーバーで、BAM スター スキーマ データベースをバックアップします。 データベースをバックアップする方法の手順についてに記載された手順に従います[する方法:、データベースのバックアップ (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (http://go.microsoft.com/fwlink/?LinkId=156510)で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]オンライン ブック、データベースをバックアップする方法です。  
   
 6.  新しい BAM スター スキーマ データベースをコピー[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
   
-7.  新しいサーバーで、BAM スター スキーマ データベースを復元します。 データベースを復元する方法について以下に記載された手順[する方法: データベースのバックアップ (SQL Server Management Studio) を復元](http://go.microsoft.com/fwlink/?LinkId=156511)(http://go.microsoft.com/fwlink/?LinkId=156511) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースを復元する方法のオンライン ブック。  
+7.  新しいサーバーで、BAM スター スキーマ データベースを復元します。 データベースを復元する方法について以下に記載された手順[する方法: データベースのバックアップ (SQL Server Management Studio) を復元](http://go.microsoft.com/fwlink/?LinkId=156511)(http://go.microsoft.com/fwlink/?LinkId=156511)で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースを復元する方法のオンライン ブック。  
   
-##  <a name="BKMK_StarUpdate"></a>新しい BAM スター スキーマ データベースへの参照を更新  
+##  <a name="BKMK_StarUpdate"></a> 新しい BAM スター スキーマ データベースへの参照を更新  
  データベースを移動した後は、新しい BAM スター スキーマ データベースに対するすべての参照を更新する必要があります。 次の参照を更新する必要があります。  
   
 -   新しいデータベースとサーバーの名前で、BAM 構成を更新します。 参照してください[BAM 構成を更新する](../technical-guides/how-to-move-the-bam-star-schema-database2.md#BKMK_StarUpdateBAMConfig)です。  
@@ -62,54 +62,54 @@ ms.lasthandoff: 12/01/2017
   
 -   サーバーとデータベースの新しい名前のデータ ソースに、OLAP 以外のすべてのキューブを更新します。 参照してください[サーバーと、OLAP 以外のすべてのキューブのデータ ソースのデータベース名を更新する](../technical-guides/how-to-move-the-bam-star-schema-database2.md#BKMK_UpdateDS_non_OLAP)です。  
   
-###  <a name="BKMK_StarUpdateBAMConfig"></a>BAM 構成を更新するには  
+###  <a name="BKMK_StarUpdateBAMConfig"></a> BAM 構成を更新するには  
   
 1.  BAM を復元するときに使用する .xml ファイルのコピーを用意します。  
   
-    1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+    1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **cmd**, 、 をクリックし、 **ok**します。  
   
     2.  BizTalk Server を実行するコンピューター上には、次のフォルダーを参照してください。  
   
         -   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が 64 ビット バージョンの Windows Server にインストールされています。  
   
-             **%Programfiles (x86) %\Microsoft BizTalk Server 2010 \tracking**  
+             **%ProgramFiles(x86)%\Microsoft BizTalk Server 2010\Tracking**  
   
         -   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が 32 ビット バージョンの Windows Server にインストールされています。  
   
-             **%ProgramFiles%\Microsoft BizTalk Server 2010 \tracking**  
+             **%ProgramFiles%\Microsoft BizTalk Server 2010\Tracking**  
   
     3.  コマンド プロンプトで、次のように入力します。  
   
-         **Bm.exe get-config –filename:BAMConfiguration.xml-サーバー:\<servername\> -データベース:\<データベース\>**  
+         **Bm.exe get-config –filename:BAMConfiguration.xml -server:\<servername\> -database:\<database\>**  
   
         > [!NOTE]  
-        >  このコマンドを実行するときに、サーバーの構成情報の取得元の実際の名前に置き換える\<servername\>の構成情報の取得元のデータベースの実際の名前を使用してください\<データベース\>です。 詳細については、BAM 管理 (BM) ユーティリティを使用して、次を参照してください。[インフラストラクチャ管理コマンド](http://go.microsoft.com/fwlink/?LinkId=156516)(http://go.microsoft.com/fwlink/?LinkId=156516) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
+        >  このコマンドを実行するときに、サーバーの構成情報の取得元の実際の名前に置き換える\<servername\>の構成情報の取得元のデータベースの実際の名前を使用してください\<データベース\>です。 詳細については、BAM 管理 (BM) ユーティリティを使用して、次を参照してください。[インフラストラクチャ管理コマンド](http://go.microsoft.com/fwlink/?LinkId=156516)(http://go.microsoft.com/fwlink/?LinkId=156516)で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   
 2.  BAMConfiguration.xml ファイルを編集し、変更、 **ServerName**で、`<DeploymentUnit Name="StarSchemaDatabase">`セクションに新しいサーバーの名前。  
   
 3.  BAMConfiguration.xml ファイルを保存して閉じます。  
   
-4.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+4.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **cmd**, 、 をクリックし、 **ok**します。  
   
 5.  BizTalk Server を実行するコンピューター上には、次のフォルダーを参照してください。  
   
     -   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が 64 ビット バージョンの Windows Server にインストールされています。  
   
-         **%Programfiles (x86) %\Microsoft BizTalk Server 2010 \tracking**  
+         **%ProgramFiles(x86)%\Microsoft BizTalk Server 2010\Tracking**  
   
     -   場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が 32 ビット バージョンの Windows Server にインストールされています。  
   
-         **%ProgramFiles%\Microsoft BizTalk Server 2010 \tracking**  
+         **%ProgramFiles%\Microsoft BizTalk Server 2010\Tracking**  
   
 6.  コマンド プロンプトで、次のように入力します。  
   
-     **bm.exe 更新-config-FileName:BAMConfiguration.xml**  
+     **bm.exe update-config -FileName:BAMConfiguration.xml**  
   
-###  <a name="BKMK_StarUpdateRef"></a>サーバーとすべての BAM SSIS パッケージ内のデータベース名を更新するには  
+###  <a name="BKMK_StarUpdateRef"></a> サーバーとすべての BAM SSIS パッケージ内のデータベース名を更新するには  
   
 1.  すべての BAM 分析 SSIS パッケージ「bam_an _」で始まるサーバーおよびデータベース名を更新します。 これを行うには、をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 R2**または**Microsoft SQL Server 2008 SP1**をクリックし、**SQL Server Business Intelligence Development Studio**です。  
   
-2.  SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。 をクリックして**ファイル**、 をクリックして**新規**、クリックして**プロジェクト**です。  
+2.  SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。 クリックして **ファイル**, 、 をクリックして **新規**, 、 をクリックし、 **プロジェクト**します。  
   
 3.  **新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。 右側のウィンドウで、**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**、クリックして**[ok]**です。  
   
@@ -117,7 +117,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  **既存のパッケージのコピーを追加** ダイアログ ボックスで、**サーバー**ドロップダウン リスト ボックスで、bam_an _ のパッケージを含むサーバーを選択します。  
   
-6.  **パッケージ パス**、省略記号ボタンをクリックします。  
+6.  **パッケージ パス**, 、省略記号ボタンをクリックします。  
   
 7.  **SSIS パッケージ** ダイアログ ボックスで、更新するには、をクリックするパッケージを選択**ok**、順にクリック**OK**です。  
   
@@ -160,11 +160,11 @@ ms.lasthandoff: 12/01/2017
     > [!NOTE]  
     >  手順 18 21 ~ を更新するすべてのパッケージを繰り返します。  
   
-22. をクリックして**[ok]**、順にクリック**はい**を上書きします。  
+22. をクリックして **OK**, 、順にクリック **はい** を上書きします。  
   
 23. すべての BAM キューブ更新およびデータ保守 SSIS パッケージを有効にします。  
   
-###  <a name="BKMK_UpdateDS_non_OLAP"></a>サーバーと、OLAP 以外のすべてのキューブのデータ ソースのデータベース名を更新するには  
+###  <a name="BKMK_UpdateDS_non_OLAP"></a> サーバーと、OLAP 以外のすべてのキューブのデータ ソースのデータベース名を更新するには  
   
 1.  すべての OLAP キューブのデータ ソースにサーバーおよびデータベース名を更新します。 これを行うには、をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 R2**または**Microsoft SQL Server 2008 SP1**をクリックし、**SQL Server Management Studio**です。  
   
@@ -176,19 +176,19 @@ ms.lasthandoff: 12/01/2017
   
 5.  **接続マネージャー**  ダイアログ ボックスで、**サーバー名**ボックスを BAMStarSchema データベースをホストしているサーバーの名前を入力し、をクリックして**OK**をクリックして**OK**です。  
   
-6.  すべて開始[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]services です。 詳細については、トピックを参照してください。[開始方法、停止、一時停止、再開、または BizTalk Server サービスを再起動](http://go.microsoft.com/fwlink/?LinkId=154394)(http://go.microsoft.com/fwlink/?LinkId=154394) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
+6.  すべて開始[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]services です。 詳細については、トピックを参照してください。[開始方法、停止、一時停止、再開、または BizTalk Server サービスを再起動](http://go.microsoft.com/fwlink/?LinkId=154394)(http://go.microsoft.com/fwlink/?LinkId=154394)で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   
 7.  IIS サービスを開始します。  
   
 8.  BAM 警告 Notification service を開始します。  
   
-    1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+    1.  をクリックして **開始**, 、 をクリックして **実行**, 、型 **cmd**, 、 をクリックし、 **ok**します。  
   
     2.  コマンド プロンプトで、次のように入力します。  
   
          **Net start NS$ BamAlerts**  
   
-9. 不完全なアクティビティ インスタンスを解決します。  不完全な BAM アクティビティ インスタンスを解決する方法については、次を参照してください。[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)。  
+9. 不完全なアクティビティ インスタンスを解決します。  不完全な BAM アクティビティ インスタンスを解決する方法については、次を参照してください。[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)です。  
   
 > [!TIP]  
 >  お勧めとしても、BAMStarSchema データベースをホストするサーバーに bam_an _ * SSIS パッケージを移動する必要があります。  

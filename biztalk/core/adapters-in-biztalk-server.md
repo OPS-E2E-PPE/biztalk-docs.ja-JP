@@ -1,23 +1,23 @@
 ---
-title: "BizTalk Server のアダプター |Microsoft ドキュメント"
-description: "BizTalk server の組み込みアダプター、エンタープライズ アダプター、および BizTalk Adapter Pack を含むすべての使用可能なアダプターの完全な一覧"
-ms.custom: 
+title: BizTalk Server のアダプター |Microsoft ドキュメント
+description: BizTalk server の組み込みアダプター、エンタープライズ アダプター、および BizTalk Adapter Pack を含むすべての使用可能なアダプターの完全な一覧
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8fd279fb-2c68-4de4-a586-5a8e42a685ff
-caps.latest.revision: "48"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 7834fe9f7365e9ed94bce82f353e1cd305a2863c
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adapters-in-biztalk-server"></a>BizTalk Server のアダプター
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の主な設計目標の 1 つとして、取引先間でのビジネス ドキュメントの交換を容易にする点が挙げられます。 この目標を達成するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、一般的に知られているデータ プロトコルやドキュメント形式を使用して BizTalk Server と取引先との間に接続を提供するアダプタがいくつか用意されています。 このトピックでは、アダプタとアダプタを使用する理由について説明します。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 10/17/2017
 ## <a name="what-is-an-adapter"></a>アダプタについて  
  アダプタとは、SMTP、POP3、FTP、または Microsoft メッセージ キュー (MSMQ) など一般的に知られている標準に準拠した配信メカニズムを使用して、BizTalk Server で簡単にメッセージを送受信できるようにするソフトウェア コンポーネントです。 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の進化に伴い、一般的に使用されるアプリケーションやテクノロジとすばやく接続できるアダプタのニーズが高まってきました。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次のアダプターには、「ネイティブ」または「統合」アダプタと呼びますが含まれています: ファイル、FTP、HTTP、MQSeries、MSMQ、POP3、SMTP、SOAP、Windows Sharepoint Services、および 7 つの WCF アダプター (Wcf-wshttp、Wcf-basichttp、Wcf-nettcp、Wcf-netmsmq、WCF-NetNamedPipe、Wcf-custom、および Wcf-customisolated)。 ネイティブ アダプタは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と共にインストールされます。 また、BizTalk アダプタ フレームワークを使用して、特定のソリューション用にカスタム アダプタを作成することもできます。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 次のアダプターには、「ネイティブ」または「統合」アダプタと呼びますが含まれています: ファイル、FTP、HTTP、MQSeries、MSMQ、POP3、SMTP、SOAP、Windows Sharepoint Services、および 7 つの WCF アダプター (Wcf-wshttp、Wcf-basichttp、Wcf-nettcp、Wcf-netmsmq、WCF-NetNamedPipe、Wcf-custom、および Wcf-customisolated)。 ネイティブ アダプタは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と共にインストールされます。 また、BizTalk アダプタ フレームワークを使用して、特定のソリューション用にカスタム アダプタを作成することもできます。  
   
  各ネイティブ アダプタは、特定のアドレスの特定のトランスポートからのメッセージを待機するように設計された受信場所に関連付けられています。 メッセージは、受信場所で受信された後、アダプタに渡されます。 アダプタは、データ ストリームをメッセージ (通常はメッセージのボディ部) にアタッチし、データの受信元エンドポイントに関するメタデータを追加して、そのメッセージを BizTalk メッセージング エンジンに送信します。  
   
@@ -47,28 +47,28 @@ ms.lasthandoff: 10/17/2017
   
 -   **SSO が有効になっている**: アダプタでドキュメントを送受信する際に SSO 認証を使用する機能。  
   
--   **ホスティング プロセス**: アダプターを実行するプロセスです。 *BizTalk IP* BTSNTSvc.exe プロセス内で実行中に*IIS OOP*インターネット インフォメーション サーバー (IIS) プロセスで BizTalk Server プロセスの外部で実行します。  
+-   **ホスティング プロセス**: アダプターを実行するプロセスです。 *BizTalk IP* BTSNTSvc.exe プロセス内で実行中に *IIS OOP* インターネット インフォメーション サーバー (IIS) プロセスで BizTalk Server プロセスの外部で実行します。  
   
 |[アダプター]|主な利点|トランザクションのサポート|双方向通信のサポート|順次受信のサポート|SSO は有効|ホスト プロセス|  
 |---|---|---|---|---|---|---|  
 |Custom|システムをサポートします。|あり (カスタム コードが必要)|あり (カスタム コードが必要)|あり (カスタム コードが必要)|あり (カスタム コードが必要)|BizTalk IP|  
-|ファイル|簡単に使用できます。|不可|いいえ|いいえ|不可|BizTalk IP|  
-|FTP|企業間通信によく使用されています。|不可|いいえ|いいえ|はい|BizTalk IP|  
-|HTTP(S)|企業間通信によく使用されています。|不可|要求 - 応答および送信請求 - 応答|不可|はい|IIS OOP|  
-|MSMQ (MSMQ)|BizTalk Server と Microsoft メッセージ キュー間での、メッセージの 1 回限りの確実な配信をサポートします。|はい|いいえ|可|不可|BizTalk IP|  
+|ファイル|簡単に使用できます。|いいえ|いいえ|いいえ|いいえ|BizTalk IP|  
+|FTP|企業間通信によく使用されています。|いいえ|いいえ|いいえ|はい|BizTalk IP|  
+|HTTP(S)|企業間通信によく使用されています。|いいえ|要求 - 応答および送信請求 - 応答|いいえ|はい|IIS OOP|  
+|MSMQ (MSMQ)|BizTalk Server と Microsoft メッセージ キュー間での、メッセージの 1 回限りの確実な配信をサポートします。|はい|いいえ|可|いいえ|BizTalk IP|  
 |Logic App| 受信して、Azure Logic App を送信します。 オンプレミスとクラウド環境では、このアダプタを使用して、多くの Azure サービスにアクセス | はい | ワークフローの設計に依存します。| | |BizTalk IP を受信します。<br/>送信: IIS OOP| 
-|MQ Series|BizTalk Server と IBM WebSphere MQ for Windows プラットフォームとの間でのメッセージの 1 回限りの確実な配信をサポートします。|はい|いいえ|はい|はい|BizTalk IP|  
-|POP3|電子メールを使用したドキュメントの受信をサポートします。|不可|いいえ|いいえ|不可|BizTalk IP|  
-|SMTP (SMTP)|電子メールを使用したドキュメントの送信をサポートします。|不可|いいえ|いいえ|不可|BizTalk IP|  
-|SOAP|Web サービスの使用をサポートします。|不可|要求 - 応答および送信請求 - 応答|不可|はい|IIS OOP|  
-|Windows SharePoint Services|BizTalk Server と SharePoint ドキュメント ライブラリ間の XML とバイナリのメッセージ交換を有効にします。|不可|いいえ|いいえ|不可|BizTalk IP| 
-|WCF-WSHttp|HTTP トランスポート経由で WS-* 標準をサポートします。|あり (WsHTTP でトランザクションをサポート) (WS トランザクションのみ)|要求 - 応答および送信請求 - 応答|不可|はい|IIS OOP|  
-|WCF-BasicHttp|HTTP または HTTPS を使用して、ASMX ベースの Web サービスとクライアント、および WS-I 基本プロファイル 1.1 に準拠した他のサービスと通信します。|不可|要求 - 応答および送信請求 - 応答|不可|はい|IIS OOP|  
-|WCF-NetTcp|TCP トランスポート経由で WS-* 標準をサポートします。|はい|要求 - 応答および送信請求 - 応答|不可|はい|BizTalk IP|  
-|WCF-NetMsmq|Microsoft メッセージ キュー (MSMQ) をトランスポートとして利用することにより、キューをサポートします。|はい|いいえ|はい|はい|BizTalk IP|  
-|WCF-NetNamedPipe|同じコンピュータにプロセス間通信用の高速トランスポートを提供します (WCF アプリケーションのみ)。|はい|要求 - 応答および送信請求 - 応答|不可|はい|BizTalk IP|  
+|MQ Series|BizTalk Server と IBM WebSphere MQ for Windows プラットフォームとの間でのメッセージの 1 回限りの確実な配信をサポートします。|はい|いいえ|[ユーザー アカウント制御]|はい|BizTalk IP|  
+|POP3|電子メールを使用したドキュメントの受信をサポートします。|いいえ|いいえ|いいえ|いいえ|BizTalk IP|  
+|SMTP (SMTP)|電子メールを使用したドキュメントの送信をサポートします。|いいえ|いいえ|いいえ|いいえ|BizTalk IP|  
+|SOAP|Web サービスの使用をサポートします。|いいえ|要求 - 応答および送信請求 - 応答|いいえ|はい|IIS OOP|  
+|Windows SharePoint Services|BizTalk Server と SharePoint ドキュメント ライブラリ間の XML とバイナリのメッセージ交換を有効にします。|いいえ|いいえ|いいえ|いいえ|BizTalk IP| 
+|WCF-WSHttp|HTTP トランスポート経由で WS-* 標準をサポートします。|あり (WsHTTP でトランザクションをサポート) (WS トランザクションのみ)|要求 - 応答および送信請求 - 応答|いいえ|はい|IIS OOP|  
+|WCF-BasicHttp|HTTP または HTTPS を使用して、ASMX ベースの Web サービスとクライアント、および WS-I 基本プロファイル 1.1 に準拠した他のサービスと通信します。|いいえ|要求 - 応答および送信請求 - 応答|いいえ|はい|IIS OOP|  
+|WCF-NetTcp|TCP トランスポート経由で WS-* 標準をサポートします。|可|要求 - 応答および送信請求 - 応答|いいえ|はい|BizTalk IP|  
+|WCF-NetMsmq|Microsoft メッセージ キュー (MSMQ) をトランスポートとして利用することにより、キューをサポートします。|はい|いいえ|[ユーザー アカウント制御]|はい|BizTalk IP|  
+|WCF-NetNamedPipe|同じコンピュータにプロセス間通信用の高速トランスポートを提供します (WCF アプリケーションのみ)。|はい|要求 - 応答および送信請求 - 応答|いいえ|はい|BizTalk IP|  
 |WCF-Custom|WCF 拡張機能を使用できるようにします。|はい|はい|あり (バインドでサポートされている場合)|はい|BizTalk IP|  
-|WCF-CustomIsolated|HTTP トランスポート経由で WCF 拡張機能を使用できるようにします。|はい|可|いいえ|はい|IIS OOP|  
+|WCF-CustomIsolated|HTTP トランスポート経由で WCF 拡張機能を使用できるようにします。|はい|[ユーザー アカウント制御]|いいえ|はい|IIS OOP|  
   
 ## <a name="enterprise-adapters"></a>Enterprise アダプター  
  次に、Microsoft から提供されている基幹業務 (LOB) アダプタのリストを示します。  

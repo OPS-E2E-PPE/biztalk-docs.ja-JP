@@ -1,23 +1,24 @@
 ---
-title: "手順 10: Interrogative シナリオを確認してください |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 10: Interrogative シナリオを確認してください |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, verifying solution
+helpviewer_keywords:
+- interrogative tutorial, verifying solution
 ms.assetid: 1f28800b-4a1d-4f29-8123-5cdea4b4a365
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b932ab2f179faab1381609c007dcdd148f200f7e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-10-verify-the-interrogative-scenario"></a>手順 10: Interrogative シナリオを確認してください。
 この手順では、このチュートリアルでは、エンド ツー エンド シナリオを確認します。  
@@ -26,15 +27,15 @@ ms.lasthandoff: 11/28/2017
   
 1.  コマンド プロンプトを開きます。  
   
-2.  コマンド プロンプトに移動  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>アクセラレータの HL7\SDK\MLLP ユーティリティ **.  
+2.  コマンド プロンプトに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**です。  
   
 3.  コマンド プロンプトで次のように入力します。 **MllpReceive/P 24000**、キーを押します**Enter**です。 これにより、24000 のポートをリッスンしている MLLP リスナー アプリケーションを実行し、画面に受信メッセージを表示します。 このアプリケーションでは、病院情報システムをシミュレートします。  
   
 4.  追加のコマンド プロンプトを開きます。  
   
-5.  2 番目のコマンド プロンプト ウィンドウに移動  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータMLLP ユーティリティ * *。  
+5.  2 番目のコマンド プロンプト ウィンドウに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**.  
   
-6.  2 番目のコマンド プロンプトで次のように入力します **MllpSend/SB 11/EB 28/CR 13/TWOWAY/P 22000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン。\>HL7\SDK\Interrogative Tutorial\QRY^Q01.txt** を押してからのアクセラレータ**を入力してください。**  
+6.  2 番目のコマンド プロンプトで次のように入力します**MllpSend/SB 11/EB 28/CR 13/TWOWAY/P 22000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。HL7\SDK\Interrogative Tutorial\QRY^Q01.txt のアクセラレータ**、キーを押します**を入力してください。**  
   
     > [!NOTE]
     >  このコマンドは、MLLP ポート 22000 され (確認) の応答を待機するには、このチュートリアルの先頭で作成したクエリ メッセージを送信します。 ADT では、受信ポートはこのメッセージを取得し、それを処理します。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  手順 2 では、リッスンするポート 25000 MLLP リスナー アプリケーションを実行し、画面への受信メッセージを表示します。 このアプリケーションでは、ADT システムをシミュレートします。  
   
-3.  2 番目のコマンド プロンプトで次のように入力します **MllpSend/SB 11/EB 28/CR 13/P 23000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。HL7\SDK\Interrogative Tutorial\DSR.txt"** のアクセラレータ キーを押します**Enter**です。  
+3.  2 番目のコマンド プロンプトで次のように入力します**MllpSend/SB 11/EB 28/CR 13/P 23000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for。HL7\SDK\Interrogative Tutorial\DSR.txt"**、キーを押します**Enter**です。  
   
     > [!NOTE]
     >  手順 3 では、MLLP ポート 23000 には、このチュートリアルの先頭で作成した応答メッセージを送信します。 HIS では、受信ポートはこのメッセージを取得し、それを処理します。  

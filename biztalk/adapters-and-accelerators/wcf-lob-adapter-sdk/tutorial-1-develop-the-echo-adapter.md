@@ -1,22 +1,22 @@
 ---
-title: "チュートリアル 1: エコー アダプターの開発 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 1: エコー アダプターの開発 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb0df3c-cd07-4bcf-af69-971065081fd6
-caps.latest.revision: "24"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 484452dc4ee624f4fa41e9387098f6f792c1de28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tutorial-1-develop-the-echo-adapter"></a>チュートリアル 1: エコー アダプターを開発します。
 このチュートリアルでを開発する機能のアダプターを使用して、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 アダプターは、架空の基幹業務システムなど、WCF LOB Adapter SDK の主な機能の多くを説明するための操作をシミュレートします。  
@@ -61,10 +61,10 @@ EchoMainCategory
 |**名前**|**操作の定義**|**Description**|**方向**|  
 |--------------|------------------------------|---------------------|-------------------|  
 |EchoMainCategory|カテゴリ|操作を分類します。|なし|  
-|エコー/EchoStrings|string[] EchoStrings(string data)|受信文字列は、呼び出し元のクライアントに指定された回数がエコーされます。|送信|  
-|エコー/EchoGreetings|グリーティング:operator[] EchoGreetings(Greeting greeting)|入力方向のあいさつオブジェクト呼び出し元のクライアントに指定された回数がエコーされます。|送信|  
-|エコー/EchoCustomGreetingFromFile|CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath)|インスタンスをファイルから読み取ることによって、応答メッセージ オブジェクトがエコーされます。 応答メッセージ オブジェクトのメタデータは、定義済みの XSD ファイルから取得されます。|送信|  
-|エコー/OnReceiveEcho|OnReceiveEcho (Uri パス、長いコンテンツ) を無効にします。|指定したフォルダーにドロップされたファイルの長さと場所がエコーされます。|受信|  
+|Echo/EchoStrings|string[] EchoStrings(string data)|受信文字列は、呼び出し元のクライアントに指定された回数がエコーされます。|送信|  
+|Echo/EchoGreetings|グリーティング:operator[] EchoGreetings(Greeting greeting)|入力方向のあいさつオブジェクト呼び出し元のクライアントに指定された回数がエコーされます。|送信|  
+|Echo/EchoCustomGreetingFromFile|CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath)|インスタンスをファイルから読み取ることによって、応答メッセージ オブジェクトがエコーされます。 応答メッセージ オブジェクトのメタデータは、定義済みの XSD ファイルから取得されます。|送信|  
+|Echo/OnReceiveEcho|OnReceiveEcho (Uri パス、長いコンテンツ) を無効にします。|指定したフォルダーにドロップされたファイルの長さと場所がエコーされます。|受信|  
   
 ## <a name="adapter-properties"></a>アダプターのプロパティ  
  アダプターは、次のアダプター プロパティを公開します。  

@@ -1,11 +1,11 @@
 ---
-title: "Web サービスを公開する場合の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスを公開する場合の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, publishing
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web services, schemas
 - schemas, Web services
 ms.assetid: 3ace0260-a1cb-4e59-a820-36ee7d5cceda
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 825a16555f0b0c82282ae4d85592567d2a19c073
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="considerations-when-publishing-web-services"></a>Web サービスを公開する際の考慮事項
 ここでは、Web サービスを公開する前に考慮が必要な情報について説明します。  
@@ -33,13 +33,13 @@ ms.lasthandoff: 01/17/2018
   
 -   未解決 **schemaLocation** 属性には、エラーが発生  
   
- 制限の詳細については include 要素、ある「を含める要素のバインディング サポート」を参照してください [http://go.microsoft.com/fwlink/?LinkId=62312](http://go.microsoft.com/fwlink/?LinkId=62312)します。  
+ 制限の詳細については要素を含めるに「含める要素のバインディング サポート」を参照してください[ http://go.microsoft.com/fwlink/?LinkId=62312](http://go.microsoft.com/fwlink/?LinkId=62312)です。  
   
 ## <a name="publishing-schemas-and-the-import-element"></a>スキーマおよび import 要素の公開  
- BizTalk Web サービス公開ウィザードには、.NET Framework に付属する XSD.exe と同じ制限があります。 詳細についてで「Import 要素のバインディング サポート」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=62311](http://go.microsoft.com/fwlink/?LinkId=62311)します。  
+ BizTalk Web サービス公開ウィザードには、.NET Framework に付属する XSD.exe と同じ制限があります。 詳細についてで「Import 要素のバインディング サポート」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=62311](http://go.microsoft.com/fwlink/?LinkId=62311)です。  
   
 ## <a name="publishing-schemas-and-the-redefine-element"></a>スキーマおよび redefine 要素の公開  
- BizTalk Web サービス公開ウィザードには、.NET Framework に付属する XSD.exe と同じ制限があります。 詳細についてにある「Redefine 要素バインディング サポート」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=62313](http://go.microsoft.com/fwlink/?LinkId=62313)します。  
+ BizTalk Web サービス公開ウィザードには、.NET Framework に付属する XSD.exe と同じ制限があります。 詳細についてで「Redefine 要素バインディング サポート」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=62313](http://go.microsoft.com/fwlink/?LinkId=62313)です。  
   
 ## <a name="publishing-schemas-that-specify-values-for-minoccurs-or-maxoccurs-attributes"></a>minOccurs 属性または maxOccurs 属性の値を指定するスキーマの公開  
  含むスキーマを発行する場合 **minOccurs** または **maxOccurs** 属性値を指定して、これらの値が公開された Web サービスによって公開されるスキーマで異なる場合があります。 一般的な経験則として、minOccurs 属性はすべて 0 (minOccurs=0) に変換され、maxOccurs 属性は 1 または unbounded (maxOccurs=1 または maxOccurs=unbounded) に変換されます。  

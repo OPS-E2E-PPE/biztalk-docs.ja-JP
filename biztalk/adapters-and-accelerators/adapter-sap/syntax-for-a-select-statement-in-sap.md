@@ -18,7 +18,7 @@ ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>SAP の SELECT ステートメントの構文
 次のセクションでは、文法仕様に対する SELECT クエリを実装するための記述、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。 いくつかのケースでは、構文は、基本の TRANSACT-SQL 構文から若干異なることを確認します。  

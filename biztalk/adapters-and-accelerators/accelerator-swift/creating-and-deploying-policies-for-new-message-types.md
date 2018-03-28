@@ -1,22 +1,22 @@
 ---
-title: "新しいポリシーの展開の作成とメッセージの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: 新しいポリシーの展開の作成とメッセージの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43343238-ec45-44ed-a230-9e234bd22d05
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b826b3ee9408caf91fe5adcb2177d709f885a6e1
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-and-deploying-policies-for-new-message-types"></a>作成して、新しいメッセージの種類のポリシーを展開します。
 作成して、新しいメッセージの種類のポリシーを展開します。  

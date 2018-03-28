@@ -1,22 +1,22 @@
 ---
-title: "HYPER-V のシステム リソース コスト |Microsoft ドキュメント"
-ms.custom: 
+title: HYPER-V のシステム リソース コスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f25a76c-1c41-41c0-b28d-d7473dbe1cd1
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 491c71a446829ddddfc4d7c55053b94dcf7fc9d1
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>HYPER-V のシステム リソースのコスト
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>HYPER-V でゲスト オペレーティング システムを実行しているに関連付けられたシステム リソースのコスト  
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/01/2017
  SCSI コント ローラーを使用して、データ ボリュームのディスクを構成します。 これにより、SCSI コント ローラーは、HYPER-V 統合サービスをインストールしなくても、エミュレートされた IDE コント ローラーは使用可能な HYPER-V 統合サービスがインストールされている場合にのみインストールするため、統合サービスがインストールされていることが保証されます。 SCSI コント ローラーまたは integration services に用意されている IDE フィルター ドライバーを使用して実行されるディスク I/O は、ディスク I/O のパフォーマンスをエミュレートされた IDE コント ローラーに用意されているよりも大幅に向上します。 そのため、最適なディスク I/O パフォーマンス、HYPER-V 仮想化環境でデータ ファイルには、ホストとゲストの両方のオペレーティング システムに統合サービスをインストールし、合成の SCSI コント ローラーとデータ ボリュームのディスクを構成します。 高負荷の高いストレージの I/O ワークロードの複数のデータ ドライブに配置されている場合に、全体的なパフォーマンスを向上させるため代理個別の SCSI コント ローラーに各 VHD をアタッチする必要があります。 さらに、各 VHD は、個別の物理ディスクまたは Lun に保存する必要があります。  
   
 #### <a name="measuring-passthrough-disk-performance"></a>パススルー ディスクのパフォーマンスの測定  
- 任意の統合手順中には、使用可能なリソースを最大限に使用する必要があります。 前述のように、SQL データ ボリューム上の記憶域 I/O は、BizTalk Server ソリューションの全体的なパフォーマンスで重要な役割を果たします。 そのため、このガイドの一部として hyper-v パススルー ディスクのパフォーマンスへの物理ディスクの相対的なパフォーマンスをテストしました。 Physical_SQL01 におけるメッセージ ボックス データの相対的なパフォーマンスを向上し、Virtual_SQL01 を使用して測定 IOMeter オープン ソース ツールでは、Intel Corporation によって開発されたおよび保持されるようになりましたが、オープン ソース開発ラボ (OSDL)。 IOMeter の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=122412](http://go.microsoft.com/fwlink/?LinkId=122412)です。  
+ 任意の統合手順中には、使用可能なリソースを最大限に使用する必要があります。 前述のように、SQL データ ボリューム上の記憶域 I/O は、BizTalk Server ソリューションの全体的なパフォーマンスで重要な役割を果たします。 そのため、このガイドの一部として hyper-v パススルー ディスクのパフォーマンスへの物理ディスクの相対的なパフォーマンスをテストしました。 Physical_SQL01 におけるメッセージ ボックス データの相対的なパフォーマンスを向上し、Virtual_SQL01 を使用して測定 IOMeter オープン ソース ツールでは、Intel Corporation によって開発されたおよび保持されるようになりましたが、オープン ソース開発ラボ (OSDL)。 IOMeter の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=122412](http://go.microsoft.com/fwlink/?LinkId=122412)です。  
   
  次の表では、テスト環境、使用された IOMeter 構成オプションで、実行されたテストの説明を結果の概要で使用される物理および仮想のハードウェア構成について説明します。  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/01/2017
 |L:|Logs_BtsMsgBox|100|RAID 0 + 1|  
 |M:|MSDTC|5|RAID 0 + 1|  
   
-### <a name="hyper-vhostsql01"></a>ハイパー V_Host_SQL01  
+### <a name="hyper-vhostsql01"></a>Hyper-V_Host_SQL01  
   
 |||  
 |-|-|  

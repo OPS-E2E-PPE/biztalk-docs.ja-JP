@@ -1,11 +1,11 @@
 ---
-title: "BtarnClean |Microsoft ドキュメント"
-ms.custom: 
+title: BtarnClean |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BtarnClean utility
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - ports, deleting
 - BTARN, BtarnClean utility
 ms.assetid: fbecbb88-9b18-4b4b-a286-0bfa783f2320
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0fa8e448d4799329a798cc7b33f222b42c4a28b4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="btarnclean"></a>BtarnClean
 BtarnClean ユーティリティは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のアイテムをコンピューターから削除するために使用します。 以下の処理が実行されます。  
@@ -37,7 +37,7 @@ BtarnClean ユーティリティは、[!INCLUDE[btsCoName](../../includes/btscon
 -   すべての [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.BTARN.* アセンブリの展開を解除する  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*\>\Program Files\ Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk  
+ \<*drive*\>\Program Files\ Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK  
   
 ## <a name="running-btarnclean"></a>BtarnClean の実行  
   

@@ -1,22 +1,22 @@
 ---
-title: "BizTalk Server 開発アイテムのソース管理システムを制御する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 開発アイテムのソース管理システムを制御する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce25b112-38c9-40c8-9a5f-a2855572aabb
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 829749911bd4f3ca6aee1da42578a1aac28db7ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a>ソース管理システムを使用した BizTalk Server の開発アイテムの管理
 BizTalk プロジェクトを予期しないシステム障害から保護することは、最優先事項として考える必要があります。 プロジェクト ファイルを保護する方法の 1 つは、Team Foundation Server ソース管理や Microsoft Visual SourceSafe のようなソース コード管理システムを使用することです。 ここでは、任意のソース管理システムで最適に動作するようプロジェクトを編成するための基本的な方法について説明し、Visual SourceSafe の具体的な使用方法を紹介します。  
@@ -100,11 +100,11 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
   
 3.  **[ツール]** メニューの **[オプション]**をクリックします。  
   
-4.  クリックして、**ファイルの種類**タブです。  
+4.  クリックして、 **ファイルの種類**  タブをクリックします。  
   
 5.  バイナリ ファイルの一覧の最後に、次のファイルの種類を追加します。 ファイルの種類はセミコロンで区切ってください。  
   
-     *.btm です。\*.btp です。\*.xsd です。\*.odx  
+     *.btm;\*します。btp;\*します。xsd;\*します。odx  
   
 6.  **[OK]**をクリックします。  
   
@@ -125,7 +125,7 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
  この基準に従うと、Visual SourceSafe リポジトリでは常に、正常に作成されテストされたビルドが保持されます。 "ナイト ビルド" の方法に従う場合、この原則は重要です。  
   
 ### <a name="checking-in-intermediate-versions"></a>中間バージョンのチェックイン  
- ファイルをチェックインする別の方法として、"中間" バージョンをチェックインする方法があります。 この方法を使用する場合、中間バージョンは機能テストに合格しておらず、正式なビルドではないと考えることができます。 これはソース管理システム内に含まれるバージョンは常にビルド可能であるという一般原則に反するため、一般的に推奨される方法ではありませんが、 ただしを好むチームもこのアプローチにチェックインして元に戻すバージョンの正式なビルドをチェックする条件を満たすしなくても、ソース管理システムを使用する開発者ができるためです。  
+ ファイルをチェックインする別の方法として、"中間" バージョンをチェックインする方法があります。 この方法を使用する場合、中間バージョンは機能テストに合格しておらず、正式なビルドではないと考えることができます。 これはソース管理システム内に含まれるバージョンは常にビルド可能であるという一般原則に反するため、一般的に推奨される方法ではありませんが、 ただしチームによっては、開発者がチェックインして、正式なビルドにチェックインするための条件を満たすしなくても、バージョンをロールバックするソース管理システムを使用するため、このアプローチを選択します。  
   
  中間バージョンをチェックインする方法を使用する場合は、ソース管理システムに "ビルド可能な" バージョンが含まれるという前提が破棄されます。 したがって、中間バージョンとビルド バージョンを区別する必要があります。 Visual SourceSafe を使用すると、自動またはプロセス ベースのさまざまな方法でこれを実現できます。 例:  
   
@@ -135,7 +135,7 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
   
 -   Visual SourceSafe COM インターフェイスを使用したコードまたはスクリプトを記述し、活用する。 たとえば、特定のラベルを使用して、ビルドの準備が完了したコードを表すことができます。この場合、スクリプトではそのラベルが検索され、Visual SourceSafe の別の分岐にこのソースが "固定" されます。 この後、この分岐をマスター ビルドのソースとして使用します。  
   
-### <a name="comparing-files"></a>ファイルの比較  
+### <a name="comparing-files"></a>ファイルを比較します。  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソース ファイルの 2 つのバージョン間の相違点は、Visual SourceSafe を使用して確認できます。 この操作は、マップやスキーマなどのアイテム、およびテスト メッセージやエクスポートされた構成ファイルなどの関連ファイルを使用して実行できます。  
   
 > [!NOTE]
@@ -158,11 +158,11 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
   
 ##### <a name="to-include-a-file-or-folder-into-an-existing-visual-studio-project"></a>ファイルまたはフォルダーを既存の Visual Studio プロジェクトに格納するには  
   
-1.  ソリューション エクスプ ローラーでクリックして**すべてのファイル**です。  
+1.  ソリューション エクスプ ローラーでクリックして **すべてのファイル**します。  
   
 2.  ソリューションに含めるフォルダーまたはファイルを選択します。  
   
-3.  フォルダーまたはファイルを右クリックし、をクリックして**プロジェクトに含める**です。  
+3.  フォルダーまたはファイルを右クリックし、クリックして **プロジェクトに含める**します。  
   
 > [!NOTE]
 >  ソース管理下にある [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトのアイテムを管理するときには、Visual SourceSafe エクスプローラーを使用しないでください。  

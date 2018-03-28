@@ -1,11 +1,11 @@
 ---
-title: "メッセージを検索する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージを検索する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, viewing
@@ -13,42 +13,42 @@ helpviewer_keywords:
 - Query tab [Administration Console], searching
 - Query tab [Administration Console], messages
 ms.assetid: c751d23f-913a-4325-81da-a36d61c07e8b
-caps.latest.revision: "16"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a5443cc021bd5f97621f44d295432c99834bdaed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-search-for-messages"></a>メッセージを検索する方法
-使用することができます、**クエリ** タブでメッセージの特定のクラスを検索するには、BizTalk Server 管理コンソールです。  
+使用することができます、 **クエリ** メッセージの特定のクラスを検索するには、BizTalk Server 管理コンソールでタブをクリックします。  
   
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、BizTalk Server Operators グループのメンバーとしてログオンする必要があります。  
   
 ### <a name="to-search-for-messages"></a>メッセージを検索するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  をクリックして **開始**, 、 をクリックして **すべてのプログラム**, 、 をクリックして [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], 、 をクリックし、 **BizTalk Server 管理コンソール**します。  
   
 2.  コンソール ツリーで、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] を展開し、[BizTalk グループ] をクリックします。  
   
-3.  詳細ウィンドウで、をクリックして、**新しいクエリ**タブです。  
+3.  詳細ペインでクリックして、 **新しいクエリ**  タブをクリックします。  
   
-4.  **クエリ式**グループにおいて、**値**列で、選択**メッセージ**ドロップダウン リスト ボックスからです。  
+4.  **クエリ式** グループの **値** 列で、選択 **メッセージ** ドロップダウン リスト ボックスからです。  
   
-5.  **フィールド名**列のアスタリスクの横にある空のドロップダウン リスト ボックスで、(**\***)、次の 1 つ以上選択します。  
+5.  **フィールド名** 列のアスタリスクの横にある空のドロップダウン リスト ボックスで、(**\***)、次の 1 つ以上選択します。  
   
     |アイテム|Description|  
     |----------|-----------------|  
     |**作成日時**|指定した日時の前または後に作成されたメッセージを検索します。|  
-    |**エラー アダプター**|グループ化できますまたはアダプターの種類別にメッセージをフィルター処理: ファイル、FTP、HTTP、MQSeries、MSMQ、POP3、SMTP、SOAP、または Windows SharePoint Services です。|  
+    |**エラー アダプター**|グループ化することができますかアダプターの種類別にメッセージをフィルター処理: ファイル、FTP、HTTP、MQSeries、MSMQ、POP3、SMTP、SOAP、または Windows SharePoint Services です。|  
     |**エラー コード**|メッセージをエラー コードでグループ化またはフィルター選択できます。|  
     |**エラーの説明**|メッセージをエラーの説明でグループ化またはフィルター選択できます。|  
-    |**Host Name**|メッセージをホスト名でグループ化またはフィルター選択できます。|  
-    |**インスタンスの状態**|メッセージを参照しているサービス インスタンスの状態です。 すべてのインスタンスの次の種類を検索することができますすべての実行中のインスタンス、中断されたすべてのインスタンス、アクティブなインスタンス、退避済みのインスタンス、実行するための準備完了のインスタンス、スケジュール済みのインスタンス、再開不可のインスタンスが中断または一時停止、再開可能な状態。インスタンス。|  
+    |**ホスト名**|メッセージをホスト名でグループ化またはフィルター選択できます。|  
+    |**インスタンスの状態**|メッセージを参照しているサービス インスタンスの状態です。 すべてのインスタンスの次の種類を検索することができます。 すべての実行中のインスタンス、中断されたすべてのインスタンス、アクティブなインスタンス、退避済みのインスタンス、すぐに実行インスタンス、スケジュール済みのインスタンス、中断、再開不可のインスタンスまたは一時停止、再開可能なインスタンス。|  
     |**最大一致数**|一致項目の表示数を指定します。|  
     |**メッセージ ID**|メッセージをメッセージ ID でグループ化またはフィルター選択できます。|  
     |**メッセージの状態**|消費済み、処理中、中断、中断 (再開不可)、中断 (再開可能)、キューに登録済み、キューに登録済み (処理の待機中)、キューに登録済み (配信スケジュール済み)、およびキューに登録済み (再試行の待機中) の状態のメッセージを検索できます。|  
@@ -59,9 +59,9 @@ ms.lasthandoff: 09/20/2017
     |**サービスの種類 ID**|メッセージをサービスの種類 ID でグループ化またはフィルター選択できます。|  
     |**URI**|メッセージを URI でグループ化またはフィルター選択できます。|  
   
-6.  完了、**値**で行う選択範囲の適切な列、**フィールド名**列です。  
+6.  完了、 **値** 列に適切な選択範囲にすると、 **フィールド名** 列です。  
   
-7.  実行し、必要に応じて、クエリに行を追加、**フィールド名**、**演算子**、および**値**列、およびクリック**実行クエリ**です。  
+7.  完了することで、必要に応じてクエリに行を追加、 **フィールド名**, 、**演算子**, 、および **値** 列、およびクリック **クエリの実行**します。  
   
 ## <a name="see-also"></a>参照  
- [管理コンソールの [クエリ] タブを使用します。](../core/using-the-administration-console-query-tab.md)
+ [管理コンソールの [クエリ] タブの使用](../core/using-the-administration-console-query-tab.md)

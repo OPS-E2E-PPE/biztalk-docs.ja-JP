@@ -1,22 +1,22 @@
 ---
-title: "PeopleSoft Enterprise Sample Get の実行 |Microsoft ドキュメント"
-ms.custom: 
+title: PeopleSoft Enterprise Sample Get の実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb54f14c-3fce-44d6-91bb-cb1ca38a20da
-caps.latest.revision: "27"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 29cf6bba03e6a43bb3fdedf0742741e48ac22dd6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a>PeopleSoft Enterprise Sample Get を実行します。
 PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムから PeopleSoft アダプターを使用してアクセスできます。 このアダプターは、付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。
@@ -56,7 +56,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  具体的には、初期セットアップ時に、カスタム コンポーネント GET_CI_INFO を PeopleSoft システムにインストールする必要があります。 このファイルを変更して、GET_CI_INFO で公開する内容を制限できます (既定では、PeopleSoft システムのすべてのコンポーネント インターフェイスが公開されます)。 ソースは既定で次の場所にある GET_CI_INFO テキスト ファイルです。  
   
- **C:\Program files \microsoft BizTalk Adapters Enterprise Applications\PeopleSoft Enterprise(r) \Config の**  
+ **Enterprise Applications\PeopleSoft Enterprise(r) \Config の C:\Program files \microsoft BizTalk アダプター**  
   
  GET_CI_INFO コンポーネント インターフェイスを PeopleSoft にインストールに関する一般的な手順についてで提供される[をインストールし、エンタープライズ アプリケーション用のアダプターを構成](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)です。 これらのガイドは、PeopleSoft の操作に慣れた管理者向きです。  
   
@@ -111,7 +111,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
 ## <a name="step-3-create-a-biztalk-orchestration-project"></a>手順 3: BizTalk オーケストレーション プロジェクトを作成します。  
  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で BizTalk プロジェクトを作成し、プロジェクトのオーケストレーションを構成して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と PeopleSoft システム間の通信を処理します。 送信と受信のポートを追加し、プロジェクトをビルドしてから、プロジェクトを展開します。  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を開き、C:\LABS フォルダーに新しい BizTalk プロジェクトを作成します。 **[ファイル]** メニューの **[新規作成]**をクリックします。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[テンプレート]** セクションで **[空の BizTalk Server プロジェクト]** 入力`PS_Test`クリックして一意のプロジェクト名として**OK**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を開き、C:\LABS フォルダーに新しい BizTalk プロジェクトを作成します。 **[ファイル]** メニューの **[新規作成]**をクリックします。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[テンプレート]** セクションで **[空の BizTalk Server プロジェクト]** を選択します。一意なプロジェクト名として「 `PS_Test` 」と入力し、 **[OK]**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
 2.  ソリューション エクスプローラーでプロジェクト名を右クリックし、 **[追加]**をクリックし、 **[生成した項目の追加]**をクリックします。 **[カテゴリ]** ペインの **[アダプター メタデータの追加]** を選択し、 **[テンプレート]** 側の **[アダプター メタデータの追加]** を選択し、 **[追加]**をクリックします。  
   
@@ -144,11 +144,11 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 1.  前の手順で開いた BizTalk Orchestration.odx ファイル内で、左のポート画面を右クリックし、 **[新しい構成済みのポート]**をクリックします。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
   
-2.  **ポートのプロパティ** ページで、入力`FileIn`の**名前**、クリックして**次へ**です。  
+2.  **[ポートのプロパティ]** ページで、 `FileIn` に「 **FileIn**の順にポイントし、 **[次へ]**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
 3.  **[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]**を選択し、次のプロパティ値を入力または選択します。  
   
-     **ポートの種類名**:`FileInPort`  
+     **ポートの種類名**: `FileInPort`  
   
      **[通信方式]**: **一方向**  
   
@@ -168,11 +168,11 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 1.  BizTalk Orchestration.odx ファイルで、左のポート画面を右クリックし、 **[新しい構成済みのポート]**をクリックします。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
   
-2.  **ポートのプロパティ** ページで、入力`FileOut`の**名前**、クリックして**次へ**です。  
+2.  **[ポートのプロパティ]** ページで、 `FileOut` に「 **FileIn**の順にポイントし、 **[次へ]**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
 3.  **[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]**を選択し、次のプロパティ値を入力または選択します。  
   
-     **ポートの種類名**:`FileOutPort`  
+     **ポートの種類名**: `FileOutPort`  
   
      **[通信方式]**: **一方向**  
   
@@ -192,7 +192,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 1.  BizTalk Orchestration.odx ファイルで、右のポート画面を右クリックし、 **[新しい構成済みのポート]**をクリックします。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
   
-2.  **ポートのプロパティ** ページで、入力`PeopleSoft_Port`の**名前**、クリックして**次へ**です。  
+2.  **[ポートのプロパティ]** ページで、 `PeopleSoft_Port` に「 **FileIn**の順にポイントし、 **[次へ]**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
 3.  **[ポートの種類の選択]** ページで、 **[既存のポートの種類を使用する]**をクリックします。 **[利用可能なポートの種類]**について **[PS_Test.LOCATION]**を選択し、 **[次へ]**をクリックします。  
   
@@ -212,13 +212,13 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 #### <a name="add-send-and-receive-shapes"></a>追加の送信と受信図形  
   
-1.  ツールボックスから **受信** コンポーネントをドラッグし、オーケストレーション (緑色の円) の先頭の真下にドロップします。 をクリックして、**受信**図形、および [プロパティ] ウィンドウで次のように入力します。`FromDisk`の、**名前**、設定と**Activate**に`true`です。 このように設定すると、この受信ポートでドキュメントを受信したときにオーケストレーションがアクティブになります。  
+1.  ツールボックスから **受信** コンポーネントをドラッグし、オーケストレーション (緑色の円) の先頭の真下にドロップします。 **受信** 図形をクリックし、[プロパティ] ウィンドウで `FromDisk` に「 **FileIn**」と入力し、 **[アクティブ化]** を `true`用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。 このように設定すると、この受信ポートでドキュメントを受信したときにオーケストレーションがアクティブになります。  
   
-2.  ドラッグ、**送信**コンポーネントをツールボックスからすぐ下にドロップし、 **FromDiskReceive**図形です。 クリックして、新しい**送信**図形、および [プロパティ] ウィンドウで次のように入力します。`ToPS`の、**名**です。  
+2.  ドラッグ、 **送信** コンポーネントをツールボックスからすぐ下にドロップし、 **FromDiskReceive** 図形です。 新しい **送信** 図形をクリックし、[プロパティ] ウィンドウで `ToPS` に「 **FileIn**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
-3.  ドラッグ、**受信**コンポーネントをツールボックスからすぐ下にドロップし、 **To_PS * * * 送信**図形です。 クリックして、**受信**図形、および [プロパティ] ウィンドウで次のように入力します。`FromPS`の、**名前**です。  
+3.  ドラッグ、 **受信** コンポーネントをツールボックスからすぐ下にドロップし、 **To_PS * * * 送信** 図形です。 **受信** 図形をクリックし、[プロパティ] ウィンドウで `FromPS` に「 **FileIn**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
-4.  ドラッグ、**送信**コンポーネントをツールボックスからすぐ下にドロップし、 **From_PSReceive**図形です。 クリックして、新しい**送信**図形、および [プロパティ] ウィンドウで次のように入力します。`ToDisk`の、**名**です。  
+4.  ドラッグ、 **送信** コンポーネントをツールボックスからすぐ下にドロップし、 **From_PSReceive** 図形です。 新しい **送信** 図形をクリックし、[プロパティ] ウィンドウで `ToDisk` に「 **FileIn**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
  これらの図形を論理ポートに接続するには、処理するメッセージの種類を定義する必要があります。 アダプターには受信 (**Request** メソッド) メッセージおよび送信 (**Response** メソッド) メッセージの両方が必要です。 各メソッドのメッセージは異なります。  
   
@@ -271,7 +271,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 7.  プロジェクト デザイナーの **[展開]** タブをクリックします。  
   
-8.  設定、**アプリケーション名**に`PS_Test`です。  
+8.  **[アプリケーション名]** を `PS_Test`用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
 9. ソリューション エクスプローラーで **[PS_Test]** プロジェクトを右クリックし、 **[ビルド]**をクリックします。  
   
@@ -296,7 +296,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 #### <a name="configure-and-start-the-biztalk-application"></a>構成および BizTalk アプリケーションの開始  
   
-1.  入力ファイルの受信と送出ファイルの送信のフォルダーを構成します。 移動して**C:\LABS\PS_TEST**という 2 つの新しいサブフォルダーを作成および`FileIn`と`FileOut`です。  
+1.  入力ファイルの受信と送出ファイルの送信のフォルダーを構成します。 **C:\LABS\PS_TEST** を開き、 `FileIn` メッセージと `FileOut`用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
   
 2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**コンソール ルート**、展開**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして**PS_Test** ] をクリックし、**構成**です。  
   
@@ -306,13 +306,13 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 4.  **受信ポート**をクリックして **\<None\>**です。 ドロップダウン リストの **[新しい受信ポート]**を選択します。  
   
-5.  **名前**、型`FileInPort`、順にクリック**OK**です。 受信場所を指定する必要があるというメッセージ ボックスが表示されます。 **[OK]**をクリックし、 **[新規作成]**をクリックします。  
+5.  For **FileIn**に「 `FileInPort`の順にポイントし、 **[OK]**用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。 受信場所を指定する必要があるというメッセージ ボックスが表示されます。 **[OK]**をクリックし、 **[新規作成]**をクリックします。  
   
      ![](../core/media/298638b6-0eb8-49c4-8a2e-485571d070cf.gif "298638b6-0eb8-49c4-8a2e-485571d070cf")  
   
 6.  プロパティに次の値を入力または選択します。  
   
-     **名前**:`FileInLoc`  
+     **名前**: `FileInLoc`  
   
      **種類**: **ファイル**  
   
@@ -326,11 +326,11 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
      ![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")  
   
-8.  をクリックして **\<None\>** の**PeopleSoft_Port**ドロップダウン リストでします。  
+8.  をクリックして**\<None\>**の**PeopleSoft_Port**ドロップダウン リストでします。  
   
 9. **[新しい送信ポート]** を選択し、プロパティに次の値を選択または入力します。  
   
-     **名前**:`PS_Test_Port`  
+     **名前**: `PS_Test_Port`  
   
      **種類**: **PeopleSoft**  
   
@@ -356,11 +356,11 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 11. **[OK]** を 2 回クリックしてダイアログ ボックスを閉じます。  
   
-12. 構成 Applicationwindow、クリックして **\<None\>** の**FileOut**ドロップダウン リストでします。  
+12. 構成 Applicationwindow、クリックして**\<None\>**の**FileOut**ドロップダウン リストでします。  
   
 13. **[新しい送信ポート]** を選択し、プロパティの値を次のとおりに入力または選択します。  
   
-     **名前**:`FileOutPort`  
+     **名前**: `FileOutPort`  
   
      **種類**: **ファイル**  
   

@@ -1,11 +1,11 @@
 ---
-title: "インストールと構成のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: インストールと構成のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, troubleshooting
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - troubleshooting, configuring
 - troubleshooting, installing
 ms.assetid: 25a2f6c5-c049-4042-8e38-4f7a2556e066
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 62cb7d6181c7be44f7095a6c1d1149132df4e21e
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>インストールと構成のトラブルシューティング
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>RuntimeSchemas アセンブリを配置できません。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/17/2018
   
 -   実行時のスキーマ アセンブリは、A4SWIFT の最初のインストールを実行しようとしたときに既に展開されていた。  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] A4SWIFT をインストールしようとするコンピューターで開始されませんでした。  
+-   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] A4SWIFT をインストールしようとするコンピューターで開始されませんでした。  
   
 -   実行時のスキーマ アセンブリは、A4SWIFT をアップグレードしようとしています。 別のアセンブリが参照したするとに既に展開されていた。 このされませんでしたの展開解除、A4SWIFT によって実行時のスキーマ アセンブリのでは、プログラムをアップグレードします。  
   

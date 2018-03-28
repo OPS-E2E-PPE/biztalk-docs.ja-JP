@@ -1,23 +1,23 @@
 ---
-title: "BizTalk Adapter for JD Edwards OneWorld にインポート |Microsoft ドキュメント"
-description: "アプリケーション バインド ファイルをインポートし、JD Edwards OneWorld アダプターは、BizTalk の制限事項の確認"
-ms.custom: 
+title: BizTalk Adapter for JD Edwards OneWorld にインポート |Microsoft ドキュメント
+description: アプリケーション バインド ファイルをインポートし、JD Edwards OneWorld アダプターは、BizTalk の制限事項の確認
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f308d2fe-39dd-4008-94ed-292c4c26fe06
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d4a452d61b3bdb5f5d0fee9e0916811645938d70
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>JD Edwards EnterpriseOne アプリケーションをインポートします。
   
@@ -69,12 +69,12 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ```
   
 ## <a name="limitations"></a>制限事項
-アスタリスクでトランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) が BizTalk 展開ウィザードによってエクスポートし、管理に渡されるバインド ファイルに同じ形式でコンポーネントです。 アスタリスクをランダムな英数字の値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力し、**トランスポートのプロパティ**バインド ファイルをインポートした後のページです。  
+アスタリスクでトランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) を BizTalk 展開ウィザードによってエクスポートされ、同じ形式で管理コンポーネントに渡されるバインド ファイルにします。 アスタリスクをランダムな英数字の値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力し、 **トランスポートのプロパティ** 、バインド ファイルをインポートした後のページです。  
   
- バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次回のバインド情報をインポートするファイルを使用するトランスポートのプロパティ ページのユーザー インターフェイスを使用してのパスワードを入力する必要があります。 または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が正常に完了した後、バインド ファイルからパスワードを削除する必要があります。  
+ バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次に、ファイルを使用してバインド情報をインポートするときはトランスポートのプロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。 または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が正常に完了した後、バインド ファイルからパスワードを削除する必要があります。  
   
 > [!NOTE]
->  .Msi ファイルをインポートするときに、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Enterprise アダプターのいずれかのバインド情報を含むアプリケーションをインポート エラー メッセージを受信する可能性があります。 サポートされている修正プログラムを Microsoft からのエラーの詳細と共に[http://support.microsoft.com/kb/923733/en-us](http://support.microsoft.com/kb/923733/en-us)です。  
+>  .Msi ファイルをインポートするときに、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Enterprise アダプターのいずれかのバインド情報を含むアプリケーションをインポート エラー メッセージを受信する可能性があります。 サポートされている修正プログラムを Microsoft からのエラーの詳細と共に[ http://support.microsoft.com/kb/923733/en-us](http://support.microsoft.com/kb/923733/en-us)です。  
   
 ### <a name="work-around-the-password-limitation"></a>パスワードの制限を回避するには  
 
@@ -88,7 +88,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 - インポートする前を無効な値 (つまり、正しくないパスワード)、アスタリスクを置き換えることで、バインド ファイルを更新します。 インポートした後を使用して、正しいパスワードを入力してください、**トランスポートのプロパティ**です。  
   
     > [!NOTE]
-    >  この回避する場合のみ使用できます、ターゲット コンピューター上またはカスタム ツールを開発することにより、Microsoft Visual Studio がインストールされています。  
+    >  この対処する場合のみ使用できます、ターゲット コンピューター上またはカスタム ツールを開発することにより、Microsoft Visual Studio がインストールされています。  
   
 **オプション 2**  
   

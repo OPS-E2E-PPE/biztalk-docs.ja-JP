@@ -1,11 +1,11 @@
 ---
-title: "テーブルドリブン ループの例 |Microsoft ドキュメント"
-ms.custom: 
+title: テーブルドリブン ループの例 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Table Extractor functoids, code sample
@@ -17,18 +17,18 @@ helpviewer_keywords:
 - Table Looping functoids, code sample
 - code samples, Table Extractor functoids
 ms.assetid: d890bdb1-12a6-4001-9748-737b1f2bab79
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e6989ac7e64cf28784d08f26aaf9e7af3a166a28
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="table-driven-looping-example"></a>テーブルドリブン ループの例
-このセクションを使用して、マップ、**テーブル ループ**と**テーブル抽出**functoid です。 詳細についてを選択すると、配置、リンク、および、functoid の構成を参照してください[テーブル ループの追加、およびテーブル抽出 Functoid をマップする方法](../core/how-to-add-table-looping-and-table-extractor-functoids-to-a-map.md)です。  
+このセクションを使用して、マップ、 **テーブル ループ** と **テーブル抽出** functoid です。 詳細についてを選択すると、配置、リンク、および、functoid の構成を参照してください[テーブル ループの追加、およびテーブル抽出 Functoid をマップする方法](../core/how-to-add-table-looping-and-table-extractor-functoids-to-a-map.md)です。  
   
  出荷先住所と請求先住所を別々に掲載するドキュメントで使用される、住所の一覧を例として説明します。 住所は、次のコードのように表されます。  
   
@@ -85,22 +85,22 @@ ms.lasthandoff: 11/28/2017
 </ns0:Root>  
 ```  
   
- `The following figure shows a map using the`  **テーブル****ループ**`functoid and`**テーブル****抽出**   `functoids to generate the desired output instance message.`  
+ `The following figure shows a map using the`  **テーブル** **ループ**  `functoid and`  **テーブル** **抽出**  `functoids to generate the desired output instance message.`  
   
  ![テーブル ループとテーブル抽出 functoid マップ](../core/media/tableloopingextractorfunctoid.gif "tableloopingextractorfunctoid")  
 テーブル ループ Functoid とテーブル抽出 Functoid  
   
- 注意して、**テーブル ループ**functoid へのリンクを両方の入力と出力スキーマのレコード レベルの要素。 リンクによって、囲み構造が作成され、レコード内に要素が作成されます。 またことがあることを確認**テーブル抽出**出力スキーマ内の各フィールドを functoid です。  
+ 注意して、 **テーブル ループ** functoid が入力と出力の両方のスキーマのレコード レベルの要素にリンクします。 リンクによって、囲み構造が作成され、レコード内に要素が作成されます。 またことがあることを確認 **テーブル抽出** functoid の出力スキーマ内の各フィールドです。  
   
  入力スキーマのレコードへのリンクは、最初のパラメーター、**構成\<Functoid\> Functoid** ダイアログ ボックス。  
   
- 2 番目のパラメーターは、functoid のグリッド テーブルの列の数: 1 つの列それぞれのアドレスの種類、名前、番地、市区町村、状態、および郵便番号。 2 つ目のパラメーターの後には、グリッド テーブルに表示されるすべての値の一覧が示されています。 一覧には、住所のフィールドへのリンクと共に、住所の種類 ("ShipTo" および "BillTo") に使用する文字列の定数が含まれます。 住所のフィールドへのリンクに名前があることに注意してください。 マップ内のリンクに名前を付けると、テーブルの構築がわかりやすくなります。 完全パスを表示するそれ以外の場合、 **[テーブル ループ Functoid** ] ダイアログ ボックス。  
+ 2 番目のパラメーターは、functoid のグリッド テーブルの列の数: 1 列ごとのアドレスの種類、名前、番地、市区町村、状態、および郵便番号。 2 つ目のパラメーターの後には、グリッド テーブルに表示されるすべての値の一覧が示されています。 一覧には、住所のフィールドへのリンクと共に、住所の種類 ("ShipTo" および "BillTo") に使用する文字列の定数が含まれます。 住所のフィールドへのリンクに名前があることに注意してください。 マップ内のリンクに名前を付けると、テーブルの構築がわかりやすくなります。 完全なパスを表示するそれ以外の場合、 **[テーブル ループ Functoid** ] ダイアログ ボックス。  
   
- 構成した後、**テーブル ループ**functoid を使用してテーブルを構築することができます、**テーブル ループ Functoid の構成** ダイアログ ボックス。 省略記号ボタンをクリックすると、ダイアログ ボックスが表示されます (**.**) に関連付けられたボタン、**テーブル ループ グリッド**プロパティに、**プロパティ**ウィンドウです。  
+ 構成した後、 **テーブル ループ** functoid を使用してテーブルを作成することができます、 **[テーブル ループ Functoid** ] ダイアログ ボックス。 省略記号ボタンをクリックすると、ダイアログ ボックスが表示されます (**...**) に関連付けられたボタン、 **テーブル ループ グリッド** プロパティに、 **プロパティ** ウィンドウです。  
   
- 指定された 6 つの列があることに注意してください、 **[テーブル ループ Functoid** ] ダイアログ: 出力スキーマのフィールドごとに 1 つの列です。 ドロップダウン リストで 3 つ目以降のパラメーターで指定されたフィールドの値を示しています、 **テーブル ループ Functoid**ダイアログ。 テーブルには、2 行 (出力スキーマの各種類のレコード) あります。 2 行存在するので、このマップは、入力レコードごとに 2 つのレコードを作成します。 4 行存在する場合は、入力レコードごとに 4 つの出力レコードが作成されます。  
+ 指定されている 6 つの列があることに注意してください、 **テーブル ループ Functoid** ダイアログ: 出力スキーマのフィールドごとに 1 つの列です。 ドロップダウン リストは、3 番目以降のパラメーターで指定されたフィールドの値を示しています、 **テーブル ループ Functoid** ダイアログ。 テーブルには、2 行 (出力スキーマの各種類のレコード) あります。 2 行存在するので、このマップは、入力レコードごとに 2 つのレコードを作成します。 4 行存在する場合は、入力レコードごとに 4 つの出力レコードが作成されます。  
   
- として、**テーブル ループ**functoid が各レコードをレコードの値を持つテーブルを入力しに一度に 1 つの行を送信、**テーブル抽出**functoid です。 **テーブル抽出**functoid のテーブルの行から 1 つの値を抽出各と出力インスタンス メッセージにリンクされているフィールドを渡します。  
+ として、 **テーブル ループ** functoid は、各レコードは、これは、レコードの値を持つテーブルを入力しに一度に 1 つの行を送信、 **テーブル抽出** functoid です。 **テーブル抽出** functoid のテーブルの行から 1 つの値を抽出各と出力インスタンス メッセージにリンクされているフィールドを渡します。  
   
 ## <a name="see-also"></a>参照  
  [テーブル ループ Functoid](../core/table-looping-functoid.md)   

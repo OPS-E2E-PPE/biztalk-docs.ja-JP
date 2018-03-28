@@ -1,23 +1,23 @@
 ---
-title: "EXEC ステートメントの例は、BizTalk での mySAP アダプターで |Microsoft ドキュメント"
-description: "EXEC 例と、mySAP アダプターの BizTalk アダプター パック (BAP) を使用するサンプル"
-ms.custom: 
+title: EXEC ステートメントの例は、BizTalk での mySAP アダプターで |Microsoft ドキュメント
+description: EXEC 例と、mySAP アダプターの BizTalk アダプター パック (BAP) を使用するサンプル
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad2691f4-34bb-423c-9b3e-4abe2d55ddac
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6eaae930d7d94d24bac9d484957ccf02718af60f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="examples-for-exec-statement"></a>EXEC ステートメントの例
 このトピックでは、さまざまな EXEC ステートメントの構文例を示します。
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/17/2018
 ## <a name="support-for-complex-parameter-types"></a>複雑なパラメーターの型のサポート  
  複合の RFC パラメーター (テーブルと構造体) をサポートするために 2 つの方法を使用する場合、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]:  
   
--   複合型のインライン XML 値を提供します。 この例は、複雑なパラメーターの型に XML を渡す方法を示しています。*フィールド*です。 次の例では、  *@fields* テーブル パラメーターです。  
+-   複合型のインライン XML 値を提供します。 この例は、複雑なパラメーターの型に XML を渡す方法を示しています。*フィールド*です。 次の例では、 *@fields*テーブル パラメーターです。  
   
     ```  
     exec rfc_read_table @query_table='BNKA', @fields='<FIELDS xmlns='http://Microsoft.LobServices.Sap/2007/03/Rfc/'>  

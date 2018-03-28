@@ -1,22 +1,22 @@
 ---
-title: "AS2 over File (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 over File (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1fed2344-8181-4c85-a2ef-a421fc40dce1
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 14d4c077cce861e94f6c2cdc0bfc6f4a14669340
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a>AS2 Over File (BizTalk Server サンプル)
 AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセージを受信する方法を示します。 これにより、通常使用される HTTP アダプタではなく、FILE アダプタを使用して AS2 メッセージを受信できます。 そのために、このソリューションは、AS2 デコーダーの要求に応じて、AS2 メッセージの HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。  
@@ -72,21 +72,21 @@ AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセー�
   
 4.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、AS2OverFile_Pipeline という名前の新しい BizTalk プロジェクトを作成します。  
   
-5.  AS2OverFile_Pipeline プロジェクトを右クリックし、**追加**、クリックして**新しい項目の**します。  
+5.  AS2OverFile_Pipeline プロジェクトを右クリックし、順にポイント **追加**, 、クリックして **新しい項目の**です。  
   
-6.  **新しい項目の追加**ダイアログ ボックスで、**パイプライン ファイル**、左側のペインで選択**受信パイプライン**AS2OverFile_ パイプラインの名前を右側のペインでクリックして、Receive.btp**追加**です。  
+6.  **新しい項目の追加** ダイアログ ボックスで、 **パイプライン ファイル** 左側のウィンドウで  **受信パイプライン** 右側のペインで、パイプラインに AS2OverFile_Receive.btp という名前をクリックして **追加**します。  
   
-7.  をクリックして**ビュー**をクリックしてメニュー バーで**ツールボックス**ツールボックスを表示します。  
+7.  クリックして **ビュー** をクリックしてメニュー バーで **ツールボックス** ツールボックスを表示します。  
   
-8.  ツールボックスを右クリックして**BizTalk パイプライン コンポーネント**、クリックして**アイテムの選択**です。  
+8.  ツールボックスを右クリックして **BizTalk パイプライン コンポーネント**, 、クリックして **アイテムの選択**します。  
   
-9. **ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk パイプライン コンポーネント**タブです。をクリックして**AS2 Over File Emulator**、順にクリック**OK**です。  
+9. **[ツールボックス アイテムの** ダイアログ ボックスで、をクリックして、 **BizTalk パイプライン コンポーネント** ] タブをクリックします。をクリックして**AS2 Over File Emulator**、順にクリック**OK**です。  
   
 10. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを開き、\AS2 Over File\obj\Debug フォルダーの Microsoft.BizTalk.Sdk.Components.AS2OverFile.dll で `gacutil /if "<file name and path>"` コマンドを実行して、AS2OverFile.dll ファイルをグローバル アセンブリ キャッシュに追加します。  
   
 11. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ツールボックスから AS2 Over File Emulator パイプライン コンポーネントをドラッグして、**デコード**カスタム パイプラインのステージ。  
   
-12. AS2 デコーダー コンポーネントをドラッグして、**デコード**AS2 Over File コンポーネントの後に、カスタム パイプラインのステージ。  
+12. AS2 デコーダー コンポーネントをドラッグして、 **デコード** AS2 Over File コンポーネント後のカスタム パイプラインのステージ。  
   
     > [!NOTE]
     >  MDN を生成する場合は、AS2 逆アセンブラをカスタム パイプラインの逆アセンブル ステージに追加します。 MDN を返さない場合、AS2 逆アセンブラは不要です。  
@@ -111,7 +111,7 @@ AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセー�
     |ファイル マスク|*.txt|  
     |受信パイプライン。|AS2OverFile|  
   
-3.  受信場所 ノードを右クリックし、AS2OverFile_Receive 受信場所、をクリックしてで**を有効にする**です。  
+3.  [受信場所] ノードを右クリックし、AS2OverFile_Receive 受信場所をクリックし、 **を有効にする**です。  
   
 4.  [送信ポート] ノードで、次のプロパティを使用して静的な一方向の送信ポートを作成します。  
   
@@ -124,9 +124,9 @@ AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセー�
     |[送信パイプライン]|Passthru|  
     |[フィルター]|BTS.REceivePortName == AS2OverFile_Receive|  
   
-5.  送信ポート ノードで、AS2OverFile_Send 送信ポートを右クリックし、をクリックして**開始**です。  
+5.  送信ポート ノードで、AS2OverFile_Send 送信ポートを右クリックし、クリックして **開始**します。  
   
-6.  [パーティ] ノードで、"Partner" という名前のパーティを作成します。 エイリアスの一覧にエイリアスを追加、**名前**の**ediint-as2 From Value**、**修飾子**の**AS2-から**、および**値**の**パートナー**です。  
+6.  [パーティ] ノードで、"Partner" という名前のパーティを作成します。 エイリアスの一覧のエイリアスを追加、 **名前** の **ediint-as2 From Value**, 、 **修飾子** の **AS2-から**, 、および **値** の **パートナー**します。  
   
  BizTalk Server は、このサンプルを使用する準備ができました。  
   

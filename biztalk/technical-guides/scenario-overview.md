@@ -1,22 +1,22 @@
 ---
-title: "シナリオの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: シナリオの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac14328d-c373-49da-a899-4b3ca7d6dc0a
-caps.latest.revision: "22"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ab36aa51d2dd28651895818caa781c49bf366f50
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="scenario-overview"></a>シナリオの概要
 このトピックでは、最新エンタープライズ クラスのハードウェアで実行されているときに、BizTalk Server のスケーラビリティを評価する製品のグループ、BizTalk Server によって完了したのロード テストの概要を示します。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/01/2017
 ## <a name="test-measurements-used"></a>テストの測定基準  
 次の条件を使用して BizTalk Server のパフォーマンスが測定されました。  
   
-1.  **全体的なスループット**– で測定、  **BizTalk: メッセージング (*hostname*) \Documents 受信/秒 * * と **BizTalk: メッセージング (*hostname*) \Documents 処理/* * 秒のパフォーマンス カウンターの BizTalk Server 受信処理の各ホストとします。  
+1.  **全体的なスループット**– で測定、 **BizTalk: メッセージング (*hostname*) \Documents Received/sec**と**BizTalk: メッセージング (*のホスト名*)\Documents 処理される 1 秒あたりの**受信 BizTalk Server のパフォーマンス カウンターとホストを処理します。  
   
 2.  **CPU 使用率**– で測定された、 **\Processor(_Total)\\% Processor Time** BizTalk Server のパフォーマンス カウンター] と SQL Server コンピューター。 すべてのテスト結果をレビューした包括的と、パフォーマンス ボトルネックの記載[観測と推奨事項](../technical-guides/observations-and-recommendations.md)です。  
   
@@ -66,7 +66,7 @@ BizTalk Server のスケール アウトのメトリックを提供するには�
 1.  機能をテストして、Visual Studio 2010 Ultimate エディション負荷は、XML メッセージを生成し、NetTcp トランスポートを使用して BizTalk Server を実行しているコンピューターに送信します。  
   
     > [!NOTE]  
-    >  Visual Studio 2010 Ultimate edition のロード テストの詳細については、ハイパーリンクを参照してください。""[アプリケーションのテスト](http://go.microsoft.com/fwlink/?LinkID=208247)(http://go.microsoft.com/fwlink/?LinkID=208247)。  
+    >  Visual Studio 2010 Ultimate edition のロード テストの詳細については、ハイパーリンクを参照してください。""[アプリケーションのテスト](http://go.microsoft.com/fwlink/?LinkID=208247)(http://go.microsoft.com/fwlink/?LinkID=208247)です。  
     >   
     >  このテスト環境で機能をテストして、Visual Studio 2010 Ultimate エディション ロードを使用した方法の詳細については、次を参照してください。[を使用して Visual Studio でテストを容易に自動化](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)です。  
   
@@ -108,20 +108,20 @@ BizTalk Server のスケール アウトのメトリックを提供するには�
   
 |名前|[モデル]|CPU の種類|CPU の数|コア/CPU の数|CPU アーキテクチャ|[メモリ]|オペレーティング システム|ソフトウェア|  
 |----------|-----------|--------------|--------------------|--------------------------|----------------------|------------|----------------------|--------------|  
-|R710 01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
-|R710 02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
-|DL380G7 01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
-|DL380G7 02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
-|DL380 01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 のロード テスト データベース<br /><br /> Visual Studio 2010<br /><br /> WCF バックエンド サービス|  
-|DL380 02|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Controller|  
-|DL380 03|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
-|DL380 04|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent です。<br /><br /> コマンド ライン Perfmon|  
-|R805 06|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
-|R805 07|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
-|R900 03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
-|R900 04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
-|R900 05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
-|R900 06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
+|R710-01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|R710-02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|DL380G7-01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|DL380G7-02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2, Enterprise Edition|BizTalk Server|  
+|DL380-01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 のロード テスト データベース<br /><br /> Visual Studio 2010<br /><br /> WCF バックエンド サービス|  
+|DL380-02|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Controller|  
+|DL380-03|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
+|DL380-04|Hewlett Packard DL380|Intel Xeon E5335|2 x: 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent です。<br /><br /> コマンド ライン Perfmon|  
+|R805-06|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
+|R805-07|Dell PowerEdge R805|AMD クアッド コア Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2, Enterprise Edition|Visual Studio 2010 Load Test Agent|  
+|R900-03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
+|R900-04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
+|R900-05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
+|R900-06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2, Enterprise Edition|SQL Server 2008 R2 の累積更新プログラム 4|  
   
 ### <a name="storage-area-network-configuration"></a>記憶域エリア ネットワークの構成  
  次の図は、ラボ環境の使用ストレージ エリア ネットワーク (SAN) の構成を示しています。  

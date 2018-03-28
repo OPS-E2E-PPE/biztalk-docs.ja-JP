@@ -1,11 +1,11 @@
 ---
-title: "Applications3 関連の作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Applications3 関連の作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - affiliate applications
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - affiliate applications, creating
 - SSO tickets
 ms.assetid: 800644fd-2286-4e59-894b-260f584dd29f
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、シングル サインオン (SSO) を使用して関連アプリケーションを利用する方法について説明します。  
@@ -34,27 +34,27 @@ ms.lasthandoff: 11/07/2017
   
 #### <a name="to-create-an-affiliate-application"></a>関連アプリケーションを作成するには  
   
-1.  **コントロール パネルの **、開かれている**Services**、エンタープライズ シングル サインオン サービスが実行されていることを確認してください。  
+1.  **コントロール パネルの** , 、開かれている **サービス**, 、エンタープライズ シングル サインオン サービスが実行されていることを確認します。  
   
-2.  コマンド プロンプトで、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。  
+2.  コマンド プロンプト では、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。  
   
      例:  
   
-     **C:\Program files \common files \enterprise でのシングル サインオン >**  
+     **C:\Program files \common files files \common files \enterprise シングル サインオン >**  
   
 3.  エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧を表示するには、-help スイッチを使用します。  
   
      ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   
-4.  使用して関連アプリケーションを作成する、* です。始まりとしての XML は、次のコマンドに入力します。  
+4.  使用して関連アプリケーションを作成する、* します。XML の先頭としては、次のコマンドに入力します。  
   
-     **C:\SSOtest\AffiliateApplication.xml を ssomanage.exe createapps」と入力**  
+     **ssomanage.exe-createapps C:\SSOtest\AffiliateApplication.xml**  
   
      それぞれの文字の説明は次のとおりです。  
   
      C:\SSOtest は、アプリケーション XML を含むフォルダーです。  
   
-     AffiliateApplication.xml は、アプリケーションのサインオン情報を含むを作成した XML です。  
+     AffiliateApplication.xml は、アプリケーションの作成した、サインオン情報を含む XML です。  
   
      例:  
   
@@ -89,21 +89,21 @@ ms.lasthandoff: 11/07/2017
   
      完了すると、次の確認メッセージが表示されます。  
   
-     **このコンピューターで使用中の SSO。操作が完了しました。**  
+     **このコンピューターで使用中の SSO。操作が正常に完了しました。**  
   
 ## <a name="enabling-the-affiliate-application-xml"></a>関連アプリケーション XML の有効化  
   
 #### <a name="to-enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にするには  
   
-1.  次のコマンドに入力します。  
+1.  次のコマンドを入力します。  
   
      `ssomanage -enableapp JDEdwardsApp`  
   
-2.  アプリケーションを一覧表示し、アプリケーションが作成されたことを確認するのには、次のコマンドに入力します。  
+2.  アプリケーションを一覧表示し、アプリケーションが作成されたことを確認するのには、次のコマンドを入力します。  
   
      `ssoclient.exe –listapps`  
   
-     使用可能な関連アプリケーションは、一覧に表示されます。  
+     関連アプリケーションが使用可能なは、一覧に表示されます。  
   
      **Ibi \yourid-jdedwardsapp に使用可能なアプリケーション**  
   
@@ -111,9 +111,9 @@ ms.lasthandoff: 11/07/2017
   
      `ssoclient.exe -setcredentials JDEdwardsApp`  
   
-4.  プロンプトで、ユーザー名とパスワードを入力します。 JDEdwardsApp 関連アプリケーションのログオン資格情報を入力します。 たとえば、ユーザー id と、SSO サーバーにより、システムに入力するには、そのユーザーのパスワードを入力します。  
+4.  プロンプトで、ユーザー名とパスワードを入力します。 JDEdwardsApp 関連アプリケーションのログオン資格情報を入力します。 たとえば、ユーザーの識別と SSO サーバーを経由してシステムに入力するには、そのユーザーのパスワードを入力します。  
   
-    -   **ユーザー ID:**ユーザー  
+    -   **ユーザー ID:** ユーザー  
   
     -   **パスワード:** ******  
   

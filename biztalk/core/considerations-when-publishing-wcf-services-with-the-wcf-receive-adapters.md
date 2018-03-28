@@ -1,11 +1,11 @@
 ---
-title: "受信アダプターの WCF での WCF サービスを発行するときの考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信アダプターの WCF での WCF サービスを発行するときの考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - publishing, WCF services
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - WCF services, publishing
 - best practices, WCF adapters
 ms.assetid: 797b7ffd-534c-4f09-9738-fb17b208bc96
-caps.latest.revision: "34"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 30175e7966d565306c45820f1a6c2e22e4611876
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a>WCF 受信アダプターで WCF サービスを公開する場合の考慮事項
 このトピックでは、WCF 受信アダプターで WCF サービスを公開する際に考慮する必要がある情報を示します。  WCF アダプターを使用してサービスを公開すると、サービスを標準の WCF サービスのように WCF クライアントから呼び出すことができます。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 01/17/2018
  WCF アダプターで **ボディ--BizTalk 応答メッセージの本文** (既定値) オプション文字データやビットマップ イメージなどの XML 以外のメッセージを送信することはできます。 使用することができます、 **テンプレート--テンプレートで指定されたコンテンツ** WCF アダプターでは XML 以外のメッセージを送信するためのオプションです。 テンプレートを使用する方法の詳細については、次を参照してください。 [WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。  
   
 ## <a name="setting-up-the-permissions-for-a-wcf-service-published-with-the-wcf-service-publishing-wizard"></a>WCF サービス公開ウィザードで公開した WCF サービスに対してアクセス許可を設定する  
- [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] プラットフォームの WCF サービス公開ウィザードを使用して作成された ASP.NET アプリケーションを使用する場合、WCF サービスの呼び出し時に DLL へのアクセスに関連するエラーが発生する可能性があります。 通常、これらのエラーは、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] および [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] の既定のセキュリティの問題に関連しています。 これらのエラーの詳細については、Microsoft ヘルプとサポートの記事と呼ばれる「を受信、"System.IO.FileNotFoundException"エラー時に、クライアント アプリケーションの呼び出しを Web サービス」ヘルプとサポート Web サイトを参照してください [http://go.microsoft.com/fwlink/?LinkId=43659](http://go.microsoft.com/fwlink/?LinkId=43659)します。  
+ [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] プラットフォームの WCF サービス公開ウィザードを使用して作成された ASP.NET アプリケーションを使用する場合、WCF サービスの呼び出し時に DLL へのアクセスに関連するエラーが発生する可能性があります。 通常、これらのエラーは、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] および [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] の既定のセキュリティの問題に関連しています。 これらのエラーの詳細については、Microsoft ヘルプとサポートの記事と呼ばれる「が表示されたら、呼び出す"System.IO.FileNotFoundException"エラー時に、クライアント アプリケーションを Web サービス」、ヘルプとサポート Web サイトにあるを参照してください[ http://go.microsoft.com/fwlink/?LinkId=43659](http://go.microsoft.com/fwlink/?LinkId=43659).  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、インプロセス ホストと分離ホストのどちらがサービスを実行するかに関係なく、WCF サービスを実行するプロセスに適切なアクセス許可が付与されることが必要です。 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] および [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] では、分離ホストの既定の Windows グループは分離ホスト ユーザー グループであるため、分離ホスト ユーザー グループにアクセス許可を追加することで、この問題を解決します。  
   
@@ -105,12 +105,12 @@ ms.lasthandoff: 01/17/2018
  選択した場合、 **エンベロープ** または **本文** オプション、アダプターを作成できません BizTalk メッセージ上記の受信メッセージから。 受信 SOAP マーシャリング プロセスでエラーとなったメッセージは保留されないので、このメッセージは保留されません。 ボディ パス式を使用する方法について、**メッセージ** タブを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。  
   
 > [!NOTE]
->  BTSNTSvc.exe.config ファイルを構成すると、Windows SDK の TraceViewer ツール (SvcTraceViewer.exe) を使用できます。 Windows SDK の詳細についてを参照してください「の新機能 Windows SDK」で [http://go.microsoft.com/fwlink/?LinkId=75219](http://go.microsoft.com/fwlink/?LinkId=75219)します。 トレース ビューアー ツールの詳細についてで「トレース ビューアー ツール (SvcTraceViewer.exe)」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)します。  
+>  BTSNTSvc.exe.config ファイルを構成すると、Windows SDK の TraceViewer ツール (SvcTraceViewer.exe) を使用できます。 Windows SDK の詳細についてを参照してください「の Windows SDK は」で[ http://go.microsoft.com/fwlink/?LinkId=75219](http://go.microsoft.com/fwlink/?LinkId=75219)です。 TraceViewer ツールの詳細についてで「TraceViewer ツール (SvcTraceViewer.exe)」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)です。  
   
 ## <a name="using-schemas-that-reference-other-schemas"></a>他のスキーマを参照するスキーマの使用  
  使用することができます、 **を再定義**, 、**を含める**, と **インポート** なったら大規模で複雑な場合は、スキーマの要素か、インスタンス メッセージのさまざまな種類を表すスキーマがある場合はいくつかの部分に共通します。 小さいスキーマを、取引先と交換するインスタンス メッセージの構造を最終的に定義するスキーマに結合すると便利な場合があります。 BizTalk WCF サービス公開ウィザードを使用して、これらのスキーマを WCF サービスとして公開できます。  
   
- BizTalk プロジェクトから WCF サービスを使用するために必要な BizTalk アイテムを作成するには、BizTalk WCF サービス使用ウィザードを使用する必要があります。 .NET アプリケーションから WCF サービスを使用するには、ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe) を使用して、WCF サービスのプロキシ クラスを作成する必要があります。 他のスキーマを参照するスキーマを使用する方法の詳細については、次を参照してください。[スキーマを使用して他のスキーマ](../core/schemas-that-use-other-schemas.md)と[作成スキーマを使用して他のスキーマを方法](../core/how-to-create-schemas-that-use-other-schemas.md)です。 Svcutil.exe の詳細についてで「サービス モデル メタデータ ユーティリティ ツール (Svcutil.exe)」を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=74696](http://go.microsoft.com/fwlink/?LinkID=74696)します。  
+ BizTalk プロジェクトから WCF サービスを使用するために必要な BizTalk アイテムを作成するには、BizTalk WCF サービス使用ウィザードを使用する必要があります。 .NET アプリケーションから WCF サービスを使用するには、ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe) を使用して、WCF サービスのプロキシ クラスを作成する必要があります。 他のスキーマを参照するスキーマを使用する方法の詳細については、次を参照してください。[スキーマを使用して他のスキーマ](../core/schemas-that-use-other-schemas.md)と[作成スキーマを使用して他のスキーマを方法](../core/how-to-create-schemas-that-use-other-schemas.md)です。 Svcutil.exe の詳細についてを参照してください「サービス モデル メタデータ ユーティリティ ツール (Svcutil.exe)」 [ http://go.microsoft.com/fwlink/?LinkID=74696](http://go.microsoft.com/fwlink/?LinkID=74696)です。  
   
  次の表は、他のスキーマを使用するスキーマを使って公開された WCF サービスを使用するときに理解しておく必要がある制限と注意点を示しています。  
   

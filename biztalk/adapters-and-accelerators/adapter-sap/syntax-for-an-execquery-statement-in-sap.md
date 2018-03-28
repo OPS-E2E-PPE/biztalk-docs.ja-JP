@@ -1,22 +1,22 @@
 ---
-title: "SAP 内の EXECQUERY ステートメントに対して構文 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP 内の EXECQUERY ステートメントに対して構文 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99bd7fbb-64f2-4327-a8ae-ccb574e56150
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5198335cfa1a7d2036ca05759edc7d04e28cc20b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>SAP の EXECQUERY ステートメントの構文
 SAP の GUI を使用すると、グラフィカルに表示するクエリ、列および並べ替え順序など、結果セットに含めるテーブルを選択してクエリを作成します。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ADO.NET アプリケーションからユーザーは、SAP システムで定義されているクエリの実行に使用できる EXECQUERY 操作を提供することによってこのようなクエリを実行することができます。  
@@ -47,7 +47,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   **VARIANT**保存されている SAP クエリの実行中に指定できる選択条件のセットを指します。 たとえば、バリアントを使用すると、クエリの既定値を指定します。  
   
--   **@Pn**n を指す<sup>th</sup> SAP クエリの定義でフィールドを選択します。  
+-   **@Pn** n を指す<sup>th</sup> SAP クエリの定義でフィールドを選択します。  
   
 -   **USEORIGINALCOLUMNNAMES** SAP システム内に存在すると、プロバイダーが、データセットで元の列名を使用するかどうかを指定します。 既定では、プロバイダーは、SAP クエリで定義されているフレンドリ名を使用します。 ただし、クエリ内でのわかりやすい名前が一意でない場合、ADO.NET クライアントはエラーをスロー、データセットからデータを読み取り中にします。 このようなシナリオである必要がありますオプションを指定する、USEORIGINALCOLUMNNAMES プロバイダーがデータセットの元の列名を使用することを示すです。  
   
@@ -67,7 +67,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   EXECQUERY 操作によって返されるすべての値では、文字列型です。  
   
--   クエリ名、ユーザー グループ、ワークスペース、およびバリアントのキーワードは、大文字と小文字が区別されません。 ただし、パラメーター名は常にある上位 caseP でなど@P1、 @P2, などです。例:  
+-   クエリ名、ユーザー グループ、ワークスペース、およびバリアントのキーワードは、大文字と小文字が区別されません。 ただし、パラメーター名は常にある上位 caseP でなど@P1、 @P2, などです。以下に例を示します。  
   
     ```  
     EXECQUERY xyz USERGROUP=’mygrp’, NOT @P1= 'somevalue'  
@@ -97,7 +97,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   必ず、YYYYMMDD の形式で日付値を指定する必要があります。  
   
--   SAP システムで定義されているバリエーションがあるクエリを実行している場合は、コマンドの一部として、バリアント型の名前を指定できます。 例:  
+-   SAP システムで定義されているバリエーションがあるクエリを実行している場合は、コマンドの一部として、バリアント型の名前を指定できます。 以下に例を示します。  
   
     ```  
     EXECQUERY myquery @usergroup='mygroup',@variant = 'variant1'  

@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベース アダプターのラージ オブジェクト データ型をストリーミング |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターのラージ オブジェクト データ型をストリーミング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, support in the WCF service model
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - streaming, support in BizTalk Server
 - streaming, support in the WCF channel model
 ms.assetid: c6cbe870-6794-4bf1-90c1-db65a242e8fe
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fda4d99eb381321139e4ed493f119f9eaf21623e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="streaming-large-object-data-types-in-oracle-database-adapter"></a>Oracle データベース アダプターにストリーミングのラージ オブジェクト データ型
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle ラージ オブジェクト (LOB) データ型のストリーミングをサポートしています。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作が呼び出され、SOAP メッセージを交換することによって応答が返されます。 SOAP メッセージの本文は、XML ノードから構成されます。  
@@ -127,4 +127,4 @@ ms.lasthandoff: 09/20/2017
 |POLLINGSTMT 操作|Supported|Supported|WCF カスタム アダプターを使用して、 **XmlDictionaryWriter**メッセージを処理 (受信) 要求、エンド ツー エンド ノードと値のストリームの LOB データ型がサポートされているためです。|  
   
 ## <a name="see-also"></a>参照  
-[Oracle データベース アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)
+[Oracle データベース アプリケーションの開発](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)

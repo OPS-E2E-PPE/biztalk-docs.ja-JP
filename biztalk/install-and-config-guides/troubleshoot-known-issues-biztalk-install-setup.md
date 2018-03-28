@@ -1,23 +1,23 @@
 ---
-title: "インストールの既知の問題 |Microsoft ドキュメント"
-description: "既知の問題と一般的な問題と解決策をインストールすると、BizTalk Server の構成"
-ms.custom: 
+title: インストールの既知の問題 |Microsoft ドキュメント
+description: 既知の問題と一般的な問題と解決策をインストールすると、BizTalk Server の構成
+ms.custom: ''
 ms.date: 11/30/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4d0e707-6b9e-49e1-9f17-19b3bac1229e
-caps.latest.revision: "27"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 90217a4e80df6f017b451dd7c40f6a1dfe3898ac
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="troubleshoot-biztalk-server-setup"></a>BizTalk Server のセットアップをトラブルシューティングします。
 
@@ -38,7 +38,7 @@ BizTalk Server のセットアップに関する問題の大半は、BizTalk Ser
 
     1. BizTalk Server のインストール: [BizTalk 2016](install-biztalk-server-2016.md) 、 [BizTalk 2013 R2/2013](install-biztalk-server-2013-and-2013-r2.md)  
     2. [構成](configure-biztalk-server.md)BizTalk Server
-    3. [インストール後の構成手順](post-configuration-steps-to-optimize-your-environment.md)
+    3. [構成後の手順](post-configuration-steps-to-optimize-your-environment.md)
   
 ## <a name="some-edias2-artifacts-are-still-active-after-unconfiguring"></a>一部の edi/as2 アイテムが構成解除した後アクティブな  
   
@@ -48,7 +48,7 @@ BizTalk Server のセットアップに関する問題の大半は、BizTalk Ser
 **原因**   
  EDI 処理および AS2 処理に関連付けられているアクティブなポートがあります。 一部のアイテムは、これらのポートがアクティブである間は、引き続き機能します。  
   
-**解決策**  
+**解決方法**  
  すべての EDI/AS2 アイテムを無効にするには、EDI 処理および AS2 処理に関連付けられているポートを無効化、停止、または削除する必要があります。  
   
 ## <a name="after-renaming-biztalk-or-sql-server-computer-the-configuration-wizard-fails"></a>BizTalk または SQL Server コンピューターの名前を変更するには、後に、構成ウィザードが失敗します。  
@@ -65,7 +65,7 @@ BizTalk Server のセットアップに関する問題の大半は、BizTalk Ser
 **原因**   
  BizTalk Server の構成では、コンピューターのネットワーク名を格納します。 コンピューターの名前が変更されると、configuration manager との構成ウィザードを使うことにより、BizTalk Server を検索することはできません。 BizTalk Server を構成した後に SQL Server コンピューターの名前を変更する場合も、同様の問題が発生します。  
   
-**解決策**  
+**解決方法**  
  BizTalk Server コンピューターまたは SQL Server コンピューターの名前を変更しないでください。 サーバーの名前を変更すると、コンピューターの名前が変更される前に、すべての BizTalk 機能の構成が解除されます。 コンピューターの名前を変更してから、BizTalk Server の機能を再構成してください。  
   
 ## <a name="business-rules-configuration-wizard-fails"></a>ビジネス ルール構成ウィザードが失敗します。  
@@ -86,7 +86,7 @@ Service could not be started. : System.Net.Sockets.SocketException (10061): No c
 **原因**   
  マイクロソフト マルウェア対応センターは 2010 年 3 月 9 日、SettingsModifier:Win32/PossibleHostsFileHijack からの脅威の可能性に対処するために、更新されたシグネチャ ファイルを公開しました。 この更新されたシグネチャ ファイルにより、SettingsModifier:Win32/PossibleHostsFileHijack からの脅威を緩和するために、Windows Defender などのソフトウェアでローカル HOSTS ファイルが更新されます。 これらの変更の結果、BizTalk Server ルール エンジン更新サービスが正常に開始できない場合があります。  
   
-**解決策**  
+**解決方法**  
  ローカル HOSTS ファイルを更新して次の行を追加してください。  
   
 ```  
@@ -101,9 +101,9 @@ Service could not be started. : System.Net.Sockets.SocketException (10061): No c
 ## <a name="configuration-logging"></a>構成のログ記録  
  構成プログラムでは、構成ログ ファイルが既定では BizTalk Server を実行しているコンピューターの一時ディレクトリに格納する詳細な情報が書き込まれます。 TEMP 環境変数によって指定されているフォルダーを確認するには、そのコンピューターでコマンド プロンプトを開き、次のコマンドを入力して、Enter キーを押します。  
   
- **エコー %temp%**  
+ **echo %temp%**  
   
- 構成ログ ファイルの内容は、実行された構成手順の概要と、構成処理中に発生した疑いのあるエラーに関する診断情報です。 構成エラーが発生した場合メモ帳などのテキスト エディターでは、構成ログを開くし、エラーの考えられる原因のログ ファイルを確認します。  
+ 構成ログ ファイルの内容は、実行された構成手順の概要と、構成処理中に発生した疑いのあるエラーに関する診断情報です。 構成エラーが発生した場合は、構成ログをメモ帳などのテキスト エディターで開くし、エラーの考えられる原因は、ログ ファイルを確認します。  
   
 ## <a name="troubleshooting-tools"></a>トラブルシューティング ツール  
  SQL Server プロファイラー、Filemon、または Regmon を使用して、構成エラーに関する追加情報を収集します。 参照してください[トラブルシューティングに使用するには、ツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)です。  
@@ -136,7 +136,7 @@ Function: FieldInfoCreate
 **原因**  
  正当な (ウイルスではない) プログラムとして、BizTalk Server 構成プログラムを含めるにウイルス対策ソフトウェアが更新されていません。  
   
-**解決策**  
+**解決方法**  
  構成プログラムの実行中に一時的にウイルス対策ソフトウェアを無効にするか、または正当な (ウイルスではない) プログラムとして、BizTalk Server 構成プログラムを認識するには、ウイルス対策プログラムを構成します。  
   
 ### <a name="configuration-fails-with-a-file-or-assembly-name-filenamedll-or-one-of-its-dependencies-was-not-found-error"></a>"ファイルまたはアセンブリ名 'FileName.dll'、またはその依存関係の 1 つが見つかりませんでした" というエラーによって構成が失敗する  
@@ -149,8 +149,8 @@ Function: FieldInfoCreate
 **原因**  
  このエラーは、アカウントがネットワーク サービスの一時フォルダーに BizTalk Server を実行しているコンピューター上のアクセス許可を記述する場合に発生することができます。 構成時に、BizTalk Server 構成は、.NET アセンブリを BizTalk 管理データベースに展開するのに Windows Management Instrumentation (WMI) を使用します。 WMI は、BizTalk 管理データベースにこれらのアセンブリの展開中に、Network Service アカウントを偽装しますします。 そのため、Network Service アカウント必要がありますが書き込みアクセスを BizTalk Server を実行しているコンピューター上の一時フォルダーです。  
   
-**解決策**  
- ネットワーク サービス アカウントの BizTalk Server を実行しているコンピューター上の一時フォルダーへの書き込みアクセスを付与し、構成プログラムを再実行します。 TEMP 環境変数で指定されているフォルダーを特定するのには、コンピューターでコマンド プロンプトを開き、次のコマンドを入力およびし、ENTER キーを押します。  
+**解決方法**  
+ ネットワーク サービス アカウントの BizTalk Server を実行しているコンピューター上の一時フォルダーへの書き込みアクセスを付与し、構成プログラムを再実行します。 TEMP 環境変数で指定されているフォルダーを確認するのには、コンピューターでコマンド プロンプトを開き、次のコマンドを入力および ENTER キーを押します。  
   
 ```  
 echo %TEMP%  
@@ -172,7 +172,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  .Mdf ファイルの場合、このエラーが発生する可能性がまたは .ldf ファイルが同じ名前の .mdf ファイルまたは .ldf ファイルを作成しようとして、BizTalk Server 構成プログラムを持つ SQL Server を実行しているコンピューターの \MSSQL\data フォルダーに既に存在します。 データベースに対して作成される .mdf ファイルおよび .ldf ファイルの名前は、BizTalk Server 構成プログラムに .mdf 拡張子と .ldf 拡張子を追加で指定されているデータベースの名前から派生します。  
   
-**解決策**  
+**解決方法**  
  この問題を解決するには、以下のいずれかの方法を使用します。  
   
 -   現在作成しているデータベースの名前と一致する名前を持つ .mdf ファイルや .ldf ファイルを削除します。  
@@ -187,7 +187,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  ドメイン コントローラーでは、ローカル Windows グループが自動的にドメイン Windows グループとして処理されます (ドメイン コントローラーにはローカル Windows グループのようなものは存在しません)。 構成プログラムの実行中に、ホストのローカル Windows グループを指定した場合、グループ用の SQL Server ログオンを作成しようとするときの構成は失敗します。 サーバーがドメイン コントローラーに設定されていると、構成プログラムのローカル Windows グループ オプションが無効になりません。  
   
-**解決策**  
+**解決方法**  
  構成中に作成されるホストに対してはドメイン グループを指定します。  
   
 ### <a name="configuration-fails-to-create-sql-server-analysis-database-if-the-sql-server-has-been-renamed"></a>SQL サーバーの名前が変更されていると構成プログラムが SQL Server 分析データベースの作成に失敗する  
@@ -212,22 +212,22 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  SQL Server 分析サーバーをインストールしたコンピューターの新しい名前を構成プログラムが特定できません。  
   
-**解決策**  
+**解決方法**  
  以下の手順を手動で実行し、分析サーバーを新しいコンピューター名で更新します。  
   
 1.  SQL Server で開きます**Microsoft SQL Server** **Analysis Services**、順にクリック**分析マネージャー**です。  
   
-2.  **分析マネージャー**ナビゲーション ペインをダブルクリックして、 **Analysis Servers**ノードを展開します。  
+2.  **分析マネージャー** ナビゲーション ペインをダブルクリックして、 **Analysis Servers** ノードを展開します。  
   
-3.  クリックして、編集するリポジトリ接続文字列を使用してサーバーを右クリックして**リポジトリ接続文字列の編集**です。  
+3.  リポジトリの接続文字列を編集して、選択すると、サーバーを右クリックして **リポジトリ接続文字列の編集**します。  
   
-4.  **リポジトリ接続文字列の編集** ダイアログ ボックスで、この文字列内でサーバー名を確認しが正しくない場合、新しいコンピューター名を更新します。  
+4.  **リポジトリ接続文字列の編集**  ダイアログ ボックスで、この文字列でサーバー名を確認しが正しくない場合、新しいコンピューター名を更新します。  
   
 5.  次の場所に移動します。 <*インストール ディレクトリ*> \Program Files\Microsoft Analysis services \bin です。  
   
-6.  右クリックし、 **Bin**フォルダー、およびクリック**共有とセキュリティ**です。 **Bin のプロパティ** ダイアログ ボックスが表示されます。  
+6.  右クリックし、 **Bin** フォルダー、およびクリック **共有とセキュリティ**します。 **Bin のプロパティ**  ダイアログ ボックスが表示されます。  
   
-7.  **Bin のプロパティ**ダイアログ ボックスで、をクリックして、**共有**タブをすべてのオンライン分析処理 (OLAP) 管理者が完全なアクセス許可をこのフォルダーにあることを確認します。  
+7.  **Bin のプロパティ** ダイアログ ボックスで、をクリックして、 **共有**  タブをクリックすると、すべてのオンライン分析処理 (OLAP) 管理者が完全なアクセス許可をこのフォルダーにあることを確認します。  
   
 ### <a name="artifacts-disappear-from-configuration-database-on-redeployment-of-assemblies-from-visual-studio"></a>Visual Studio からアセンブリを再展開構成データベースからアイテムが表示されなくなります  
   
@@ -251,7 +251,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
   
 ![bcd_BizTalkSolutionWLostArtifactsc](../install-and-config-guides/media/bcd_BizTalkSolutionWLostArtifactsc.gif)  
   
- Maps の再展開は、現在展開されている Maps.dll アセンブリの展開を解除して、新しい Maps.dll ファイルを展開する、2 段階のプロセスです。 Visual Studio は、再展開プロセスの一部として自動的にこれらの手順を実行します。  
+ Maps の再展開は、現在展開されている Maps.dll アセンブリの展開を解除して、新しい Maps.dll ファイルを展開する、2 段階のプロセスです。 Visual Studio は、再展開プロセスの一部として自動的に次の手順を実行します。  
   
 > [!NOTE]
 >  前の文は厳密には正しくありません。というのも、これらの手順は Visual Studio で常に行われるものなので、正しく行われているかどうかを意識することはありません。  
@@ -260,23 +260,23 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
   
  問題がある点で、Visual Studio は Maps.dll とそれが依存するアセンブリを再配置。 この場合は Schemas.dll します。 そのため、ユーザーが BizTalk Server MMC を更新すると、Orch1、Orch2、および Pipeline の各アセンブリが消えたように見えますが、Maps.dll と Schemas.dll は引き続き表示されます。  
   
-**解決策**  
+**解決方法**  
  メイン プロジェクト (他のプロジェクトを参照しているプロジェクト) に対して次の手順を実行します。  
   
 1.  ソリューション エクスプローラーで、ソリューション ノードを右クリックします。  
   
-2.  をクリックして**プロパティ**を開くには、**ソリューション プロパティ ページ** ダイアログ ボックス。  
+2.  クリックして **プロパティ** を開くには、 **ソリューション プロパティ ページ**  ダイアログ ボックス。  
   
-3.  をクリックして**構成プロパティ**、クリックして**構成**です。  
+3.  クリックして **構成プロパティ**, 、 をクリックし、 **構成**します。  
   
-4.  クリア、**展開**参照プロジェクトのチェック ボックスです。  
+4.  クリア、 **展開** 参照先のプロジェクトのチェック ボックスです。  
   
-5.  ソリューション エクスプローラーで、新しいソリューション レベルの展開を実行します。 これを行うには、ソリューション ノードを右クリックし、をクリックして**ソリューションの配置**です。  
+5.  ソリューション エクスプローラーで、新しいソリューション レベルの展開を実行します。 これを行うには、ソリューション ノードを右クリックし、をクリックし、 **ソリューションの配置**します。  
   
 ### <a name="supported-virtual-directory-types"></a>サポートされている仮想ディレクトリのタイプ  
- 関連付けられている仮想ディレクトリが型の場合にのみエクスポート操作は成功 MSI のエクスポートを実行しようと、オーケストレーションから Web サービスを参照する、ときに**IIsWebVirtualDir**または**IIsWebDirectory**. **IIsWebVirtualDir**と**IIsWebDirectory** IIS メタベースに表示するノード型です。 **IIsWebVirtualDir**の仮想ディレクトリ、**パス**絶対ファイル フォルダーを指すプロパティです。 **IIsWebDirectory**なしの仮想ディレクトリ、**パス**プロパティ別のサブフォルダーでは通常、相対ファイル フォルダーを参照および**IIsWebVirtualDir**または**IIsWebDirectory**ノード。 メタベース階層でフォルダーを表すものとしてはこの 2 つのタイプが一般的です。  
+ 関連付けられている仮想ディレクトリが型の場合にのみ、MSI のエクスポートを実行しようと、オーケストレーションから Web サービスを参照するとエクスポート操作が成功は **IIsWebVirtualDir** または **IIsWebDirectory**します。 **IIsWebVirtualDir** と **IIsWebDirectory** IIS メタベースに表示されるノード型です。 **IIsWebVirtualDir** の仮想ディレクトリ、 **パス** 絶対ファイル フォルダーを指すプロパティです。 **IIsWebDirectory** なしの仮想ディレクトリ、 **パス** プロパティを別のサブフォルダーでは通常、相対ファイル フォルダーに参照および **IIsWebVirtualDir** または **IIsWebDirectory** ノードです。 メタベース階層でフォルダーを表すものとしてはこの 2 つのタイプが一般的です。  
   
- 型の仮想ディレクトリ**IIsConfigObject**はサポートされていませんし、MSI のエクスポートはここでは失敗します。 **IIsConfigObject**が BizTalk Server が正しく処理されないか、有効なノード型では予期しないメタベース ノード タイプか、正しく作成されていない (およびしたがって無効な) メタベース エントリを示す値。 このような状況では、BizTalk Server によって、次のようなエラー メッセージが示されます。 種類 IIsConfigObject の予期しないディレクトリ エントリ"IIS://LM/W3SVC/1/ROOT/BadVdir/"です。  
+ 型の仮想ディレクトリ **IIsConfigObject** はサポートされていませんし、MSI のエクスポートはここでは失敗します。 **IIsConfigObject** が BizTalk Server が正しく処理されないか、有効なノード型では予期しないメタベース ノード タイプか、正しく作成されていない (およびしたがって無効な) メタベース エントリを示す値。 このような状況では、BizTalk Server によって、次のようなエラー メッセージが示されます。 種類 IIsConfigObject 予期しないディレクトリ エントリ"IIS://LM/W3SVC/1/ROOT/BadVdir/"です。  
   
 ### <a name="unable-to-view-group-information-after-removing-stale-logons"></a>古いログオンを削除するとグループ情報を表示できなくなる  
   
@@ -286,7 +286,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  これは既知の構成の問題です。  
   
-**解決策**  
+**解決方法**  
  Host Windows グループのログオンを削除して再構成すると解決する場合があります。 それでもグループ情報を表示できない場合は、マイクロソフト製品サポートにご連絡ください。  
   
 ### <a name="cannot-change-computer-name-after-biztalk-server-is-installed"></a>BizTalk Server のインストール後にコンピューター名を変更できない  
@@ -297,7 +297,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  SQL Server は、BizTalk Server が BizTalk Server をインストールおよび構成したら、コンピューター名の変更をサポートしていないため、コンピューター名の変更をサポートしていません。  
   
-**解決策**  
+**解決方法**  
  BizTalk Server のインストール後はコンピューター名を変更しないことをお勧めします。  
   
 ### <a name="known-issues-with-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンに関する既知の問題  
@@ -311,7 +311,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  ENTSSO サービスが有効な SSO 管理者アカウントで実行されていない場合、サービスを開始できません。  
   
-**解決策**  
+**解決方法**  
  有効な SSO 管理者アカウントを ENTSSO サービスに指定して、サービス コントロール マネージャー (SCM) スナップインからサービスを再起動します。  
   
 ##### <a name="biztalk-services-dependent-on-the-enterprise-single-sign-on-service-entsso-fail-to-start-after-a-reboot"></a>再起動後、エンタープライズ シングル サインオン サービス (ENTSSO) に依存する BizTalk Services が起動しない  
@@ -322,7 +322,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  エンタープライズ シングル サインオン サービスは、起動に約 3 分かかる場合があります。  
   
-**解決策**  
+**解決方法**  
  "BizTalk Service BizTalk グループ: BizTalkServerApplication" サービスを、スタートアップ オプションの種類を [自動 (遅延スタート)] として構成します。 これにより、すべての自動サービスのスタートアップ ルーチン完了後に、このサービスが開始されます。  
   
 ##### <a name="cannot-access-an-affiliate-application"></a>関連アプリケーションにアクセスできない  
@@ -333,7 +333,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  SSO アプリケーションの管理者アカウントが無効です。  
   
-**解決策**  
+**解決方法**  
  関連アプリケーションを作成する前に、SSO アプリケーションの管理者アカウントが有効なことを確認します。 関連アプリケーションを使用するには、そのアプリケーションを有効にする必要があります。  
   
 ##### <a name="rpc-error-occurs-when-connecting-to-a-client-computer"></a>クライアント コンピューターに接続するときに、RPC エラーが発生します。  
@@ -344,7 +344,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 **原因**  
  このエラーは、間違ったサーバー情報を指定した場合、またはリモート サーバーで SSO サービスを利用できない場合に発生します。  
   
-**解決策**  
+**解決方法**  
   
 -   手順に従います[SSO Server を設定](../core/how-to-set-the-sso-server.md)正しい SSO サーバーに接続しているかどうかを確認します。  
   
@@ -370,7 +370,7 @@ SSO_ERROR_SECRETS_NOT_LOADED
 **原因**  
  この問題は、あるサービス アカウントでエンタープライズ シングル サインオン サービス (SSO) を実行中にシークレットを生成した後で、サービス アカウントが変更された場合に発生する可能性があります。 シークレットは、暗号化された形式でレジストリに保存されます。暗号化には、(ENTSSO を実行する) サービス アカウントの ID を基にしたキーが使用されます。  
   
-**解決策**  
+**解決方法**  
  ENTSSO を実行しているサービス アカウントを、マスター シークレット作成時の元のサービス アカウントに変更します。  
   
 1.  マスター シークレットをバックアップします。 参照してください[マスター シークレットをバックアップ](../core/how-to-back-up-the-master-secret.md)です。  
@@ -454,7 +454,7 @@ SSO_ERROR_SECRETS_NOT_LOADED
 |RBKRegsvcsSQLAdapter|指定されたバイナリに対して regsvcs.exe を実行します。|  
 |RestoreBTSCounters|パフォーマンス カウンターの .ini ファイル名を使用してプロパティを復元します。|  
 |RollbackBTSCounters|unlodctr BTSSvc.3.0 コマンドを実行します。|  
-|RollbackRegsvcsApplicationDeployment|[FrameworkPath] 設定 (& m); #124[INSTALLDIR]失敗したインストール シナリオの Microsoft.BizTalk.ApplicationDeployment.Engine.dll します。|  
+|RollbackRegsvcsApplicationDeployment|[FrameworkPath] 設定&#124;[失敗したインストール シナリオの INSTALLDIR]Microsoft.BizTalk.ApplicationDeployment.Engine.dll します。|  
 |RollbackRegsvcsDeployment|アンインストール/ロールバック シナリオで regsvcs.exe を起動します。|  
 |WMI_Restore_MSBTS_Silent|mofcomp を呼び出して WMI スキーマを登録します。|  
 |WMI_Rollback_MSBTS|WMI から BizTalk Server 名前空間を削除します。|  
@@ -468,15 +468,15 @@ SSO_ERROR_SECRETS_NOT_LOADED
   
 |フォルダー パス|ファイル名|ユーザー特権|  
 |-----------------|---------------|---------------------|  
-|\Program files (x86) \Common Files\Microsoft shared\Help 9\Microsoft Document エクスプ ローラー 2008|Install.exe|使用可能な最高の特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*|BTSHatApp.exe|使用可能な最高の特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*|BTSMMCLauncher.exe|使用可能な最高の特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*|BtsWcfServicePublishingWizard.exe|使用可能な最高の特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*|BTSWebSvcWiz.exe|使用可能な最高の特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*|Configuration.exe|使用可能な最高の特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*|REDeployWiz.exe|使用可能な最高の特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*|Setup.exe|管理者特権|  
-|\Program files (x86) \Microsoft BizTalk Server*バージョン*\XSD Schema\EDI|MicrosoftEdiXSDTemplates.exe|自己展開形式 .exe ファイル|  
-|\Program files (x86) \Microsoft UDDI Services\config|Configuration .exe|管理者特権|  
-|\Program Files\ Microsoft BizTalk rfid \bin|BTSMMCLauncher.exe|使用可能な最高の特権|  
-|\Program Files\Microsoft BizTalk RFID\BREConfi 再構成|Configuration .exe|管理者特権|  
+|\Program Files (x86)\Common Files\Microsoft shared\Help 9\Microsoft Document Explorer 2008|Install.exe|使用可能な最高の特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*|BTSHatApp.exe|使用可能な最高の特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*|BTSMMCLauncher.exe|使用可能な最高の特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*|BtsWcfServicePublishingWizard.exe|使用可能な最高の特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*|BTSWebSvcWiz.exe|使用可能な最高の特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*|Configuration.exe|使用可能な最高の特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*|REDeployWiz.exe|使用可能な最高の特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*|Setup.exe|管理者特権|  
+|\Program Files (x86)\Microsoft BizTalk Server *your version*\XSD Schema\EDI|MicrosoftEdiXSDTemplates.exe|自己展開形式 .exe ファイル|  
+|\Program Files (x86)\Microsoft UDDI Services\config|Configuration .exe|管理者特権|  
+|\Program Files\ Microsoft BizTalk RFID\bin|BTSMMCLauncher.exe|使用可能な最高の特権|  
+|\Program Files\Microsoft BizTalk RFID\BREConfi guration|Configuration .exe|管理者特権|  

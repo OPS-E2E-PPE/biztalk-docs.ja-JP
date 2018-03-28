@@ -1,25 +1,25 @@
 ---
-title: "単体テストでのパイプライン機能を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 単体テストでのパイプライン機能を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d58bfa4-322b-455f-a062-5bd44d368f57
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca19a58410014b9ea7c0c49df7420b439a544581
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>パイプラインを含む単体テスト機能の使用
-このトピックでは、単体テスト機能を使用して、FlatFileReceive パイプラインの例に、パイプラインの単体テストを追加する方法について説明します。 パイプラインの単体テストは」で説明されている Pipeline.exe ツールに似ています。[パイプライン ツール](../core/pipeline-tools.md)です。 単体テストを有効にすると、**展開**から、プロジェクトのプロパティ タブ、プロジェクト内のパイプライン クラスを派生**Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**です。  このクラスは、Pipeline.exe ツールが公開する機能と同じ機能の一部をモデル化します。  
+このトピックでは、単体テスト機能を使用して、FlatFileReceive パイプラインの例に、パイプラインの単体テストを追加する方法について説明します。 パイプラインの単体テストは」で説明されている Pipeline.exe ツールに似ています。[パイプライン ツール](../core/pipeline-tools.md)です。 単体テストを実行を有効にすると、 **展開** から、プロジェクトのプロパティ タブ、プロジェクト内のパイプライン クラスを派生 **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**します。  このクラスは、Pipeline.exe ツールが公開する機能と同じ機能の一部をモデル化します。  
   
 ## <a name="prerequisites"></a>前提条件  
  最初に、FlatFileReceive サンプルを構築する手順を実行して、このサンプルに慣れる必要があります。 FlatFileReceive サンプルをビルドし、ここで検出できる手順が含まれていますのドキュメント: [FlatFileReceive (BizTalk Server サンプル)](../core/flatfilereceive-biztalk-server-sample.md)です。  
@@ -30,27 +30,27 @@ ms.lasthandoff: 12/01/2017
   
 1.  Visual Studio で、FlatFileReceive.sln ソリューション ファイルを開きます。  
   
-2.  ソリューション エクスプ ローラーで右クリックし、 **FlatFileReceive**プロジェクトをクリックして**プロパティ**です。  
+2.  ソリューション エクスプ ローラーで右クリックし、 **FlatFileReceive** [プロジェクト] をクリックして **プロパティ**します。  
   
-3.  プロジェクト デザイナーで、をクリックして、**展開**プロパティ ページ タブとセット**単体テストを有効にする**に`True`です。  
+3.  プロジェクト デザイナーで、クリックして、 **展開** プロパティ ページ タブをクリックし、セット **単体テストを有効にする** に `True`します。  
   
 4.  変更内容を保存し、プロジェクト プロパティ ページを閉じます。  
   
-5.  メイン メニューで、をクリックして**ビルド**、クリックして**ソリューションのリビルド**です。  
+5.  メイン メニューでクリックして **ビルド**, 、 をクリックし、 **ソリューションのリビルド**します。  
   
-6.  メイン メニューで、をクリックして**テスト**、クリックして**新しいテスト**です。  
+6.  メイン メニューでクリックして **テスト**, 、 をクリックし、 **新しいテスト**します。  
   
-7.  **新しいテストの追加**ダイアログ ボックスで、**新しい Visual c# テスト プロジェクトを作成する**の**テスト プロジェクトに追加**フィールドです。 選択**単体テスト ウィザード**で、**テンプレート**ボックスの一覧し、をクリックして**OK**です。  
+7.  **新しいテストの追加** ダイアログ ボックスで、 **新しい Visual c# テスト プロジェクトを作成** の **テスト プロジェクトに追加** フィールドです。 選択 **単体テスト ウィザード** で、 **テンプレート** ボックスの一覧をクリックして **OK**します。  
   
-8.  **新しいテスト プロジェクト** ダイアログ ボックスで、プロジェクト名としてのままにして**TestProject1**  をクリック**作成**です。  
+8.  **新しいテスト プロジェクト**  ダイアログ ボックスで、プロジェクト名としてそのまま使用 **TestProject1**  をクリック **作成**します。  
   
-9. **単体テストの作成** ダイアログ ボックスで、種類を展開し、選択、 **FFReceivePipeline()**下でコンス トラクター、 **ffreceivepipeline()**ノード。 **[OK]**をクリックします。  
+9. **単体テストの作成**  ダイアログ ボックスで展開の種類を選択、 **FFReceivePipeline()** の下のコンス トラクター、 **ffreceivepipeline()** ノードです。 **[OK]**をクリックします。  
   
 ## <a name="adding-test-code-to-test-the-pipeline"></a>パイプラインをテストするテスト コードの追加  
   
 #### <a name="to-add-test-code-to-test-the-pipeline"></a>パイプラインをテストするテスト コードを追加するには  
   
-1.  次の参照を追加、 **TestProject1**プロジェクト。  
+1.  次の参照を追加、 **TestProject1** プロジェクト。  
   
     -   BizTalk パイプライン相互運用機能  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 12/01/2017
     using System.Collections.Generic;  
     ```  
   
-3.  ファイルの一番下までスクロールし、置換、 **FFReceivePipelineConstructorTest**メソッドを次のコードは、パイプラインをテストする前に、パイプラインの入力が存在することを確認します。 また、このコードは、フラット ファイル スキーマに準拠したメッセージが生成されることも検証します。  
+3.  ファイルの一番下までスクロールし、置換、 **FFReceivePipelineConstructorTest** メソッドを次のコードは、パイプラインをテストする前に、パイプラインの入力が存在することを確認します。 また、このコードは、フラット ファイル スキーマに準拠したメッセージが生成されることも検証します。  
   
     ```  
     [TestMethod()]  
@@ -111,15 +111,15 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-build-and-run-the-unit-test"></a>単体テストをビルドして実行するには  
   
-1.  ソリューション エクスプ ローラーで右クリック**TestProject1**、クリックして**ビルド**です。  
+1.  ソリューション エクスプ ローラーで右クリック **TestProject1**, 、クリックして **ビルド**します。  
   
-2.  メイン メニューで、をクリックして**テスト**、し、 **Windows**一覧で、クリックして**テスト ビュー**です。  
+2.  メイン メニューでをクリックして **テスト**, 、し、次に、 **Windows** 一覧で、クリックして **テスト ビュー**します。  
   
-3.  テスト ビュー ウィンドウで右クリック**ffreceivepipelineunittest**、クリックして**選択範囲の実行**です。 されることを確認**成功**テスト結果 ウィンドウでします。  
+3.  テスト ビュー ウィンドウで右クリック **ffreceivepipelineunittest**, 、クリックして **選択範囲の実行**します。 表示されていることを確認 **成功** テスト結果 ウィンドウにします。  
   
 4.  TestResults ディレクトリで、*.out ファイルを調べます。 このファイルには、パイプラインによって処理された新しいメッセージが含まれています。  このファイルは次のようなディレクトリにあります。  
   
-     C:\Program files \microsoft BizTalk Server\<バージョン\>\SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009-02-04 09_01_04\Out  
+     C:\Program Files\Microsoft BizTalk Server \<version\>\SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009-02-04 09_01_04\Out  
   
      処理されたメッセージは次のようになります。  
   
@@ -169,13 +169,13 @@ ms.lasthandoff: 12/01/2017
 5.  テストが不合格の場合、[テスト結果] ウィンドウのテストをダブルクリックして、不合格の原因となったアサートまたは例外を確認します。  
   
 ## <a name="test-code-summary"></a>テスト コードのまとめ  
- 単体テストが有効にすると、 **FlatFileReceive**プロジェクト、 **FFReceivePipeline** c# クラスに関連付けられている**FFReceivePipeline.btp** から派生しました**Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**クラスです。 **[Ffreceivepipelineunittest]**メソッド**TestProject1**使用、 **TestPipeline**メソッドを**FFReceivePipeline**継承テストするフラット ファイル受信パイプラインを使用します。 パイプラインでメッセージが処理された後、出力メッセージがフラット ファイル スキーマと照合して検証されます。 パラメーター、 **TestPipeline**メソッドは、次のようにします。  
+ 単体テストが有効にすると、 **FlatFileReceive** プロジェクト、 **FFReceivePipeline** c# クラスに関連付けられている **FFReceivePipeline.btp** から派生した、 **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline** クラスです。 **[Ffreceivepipelineunittest]** メソッドに **TestProject1** 使用、 **TestPipeline** メソッドを **FFReceivePipeline** フラット ファイルをテストする継承された受信パイプラインです。 パイプラインでメッセージが処理された後、出力メッセージがフラット ファイル スキーマと照合して検証されます。 パラメーター、 **TestPipeline** メソッドを次に示します。  
   
 |[パラメーター名]|Description|  
 |--------------------|-----------------|  
 |Documents|パイプラインによって処理されるメッセージを格納する StringCollection。|  
 |要素|メッセージの部分を格納する StringCollection。|  
-|スキーマ|対応する各メッセージの種類をマップするディクショナリ マッピング\*.xsd スキーマ ファイルです。 キーが形式である必要があります**Namespace.Type**です。 [プロパティ] ウィンドウから、名前空間と型の使用に注意してください、 \*Visual Studio での .xsd ファイル。 次のスクリーンショットを見てください。<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **Namespace および XSD ファイルのプロパティ ウィンドウから公開されている型。**|  
+|スキーマ|対応する各メッセージの種類をマップするために使用するディクショナリ マッピング \*.xsd スキーマ ファイルです。 キーは、形式で指定する必要があります **Namespace.Type**します。 [プロパティ] ウィンドウから、名前空間と型の使用に注意してください、 \*Visual Studio での .xsd ファイル。 次のスクリーンショットを見てください。<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **名前空間と XSD ファイルのプロパティ ウィンドウから公開される型。**|  
   
 ## <a name="see-also"></a>参照  
  [単体テストのスキーマおよびマップを持つ機能の使用](../core/using-the-unit-testing-feature-with-schemas-and-maps.md)   

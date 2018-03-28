@@ -1,22 +1,22 @@
 ---
-title: "BizTalk Server 2016 へのアップグレード |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2016 へのアップグレード |Microsoft ドキュメント
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 06/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 975ec82b-ed27-4545-8e4a-0e567507c9ba
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 39b5b6b6da7d97d3c763e5f45f215aa03d13c77c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="upgrade-to-biztalk-server-2016"></a>BizTalk Server 2016 へのアップグレード
 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] または BizTalk Server 2013 から [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] へのアップグレード。
@@ -47,11 +47,11 @@ ms.lasthandoff: 11/28/2017
 
 | オペレーティング システム | BizTalk Server 2013 R2 |BizTalk Server 2013 |
 | --- | --- | --- |
-| Windows Server 2012 R2 | 可 | 不可 |
-| Windows Server 2012 | 不可 | 不可 |
-| Windows 8.1 | 可 | 不可 |
-| Windows 8 | 不可 | 不可
-| Windows 7 SP1 | 不可 | 不可 |
+| Windows Server 2012 R2 | はい | いいえ |
+| Windows Server 2012 | いいえ | いいえ |
+| Windows 8.1 | はい | いいえ |
+| Windows 8 | いいえ | いいえ
+| Windows 7 SP1 | いいえ | いいえ |
 
 次の表は、[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] にアップグレードできる、サポートされる SQL Server のバージョンの一覧です。 SQL Server は、BizTalk Server で使用されるデータベースをホストします。 「可」は、その SQL Server バージョンを使用している BizTalk Server がアップグレードできることを意味しています。 「いえ」は、その SQL Server バージョンを使用している BizTalk Server がアップグレードできないことを意味しています。 「不可」の場合、BizTalk 環境をサポートされる SQL Server バージョンで再作成する必要があります。 サポートされる SQL Server のバージョンの一覧については、「[BizTalk Server 2016 のハードウェアとソフトウェアの要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)」をご覧ください。 
 
@@ -60,21 +60,21 @@ ms.lasthandoff: 11/28/2017
 
 | SQL Server | BizTalk Server 2013 R2 |BizTalk Server 2013 |
 | --- | --- | --- |
-| SQL Server 2014 | 可 | 不可 |
-| SQL Server 2012 SP1| 不可 | 不可 |
-| SQL Server 2012 | 不可 | 不可 |
-| SQL Server 2008 R2 SP1 | 不可 | 不可 |
+| SQL Server 2014 | はい | いいえ |
+| SQL Server 2012 SP1| いいえ | いいえ |
+| SQL Server 2012 | 不可 | いいえ |
+| SQL Server 2008 R2 SP1 | いいえ | いいえ |
 
 
 次の表に示すのは、[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 から [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] へのサポートされるエディション アップグレード パスです。 "可" は、[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 のエディションをそのエディションにアップグレードできることを示します。 「不可」は、[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 のエディションをそのエディションにアップグレードできないことを示します。 「無効」の場合、BizTalk 環境を再作成する必要があります。
 
 | BizTalk Server 2013 R2/2013 | BizTalk Server 2016 Evaluation Edition | BizTalk Server 2016 Branch Edition | BizTalk Server 2016 Developer Edition | BizTalk Server 2016 Standard Edition | BizTalk Server 2016 Enterprise Edition |
 | --- | --- | --- | --- | --- | --- |
-| Evaluation | 不可 | いいえ | いいえ | いいえ | 可 | 
-| 分岐 | 不可 | 可 | いいえ | いいえ | 可 | 
-| Developer | 不可 | いいえ | 可 | いいえ | 可 | 
-| Standard | 不可 | いいえ | いいえ | はい | 可 | 
-| Enterprise | 不可 | いいえ | いいえ | いいえ | 可 | 
+| Evaluation | いいえ | いいえ | いいえ | いいえ | はい | 
+| 分岐 | いいえ | 可 | いいえ | いいえ | はい | 
+| Developer | いいえ | いいえ | 可 | いいえ | はい | 
+| Standard | いいえ | いいえ | いいえ | [ユーザー アカウント制御] | はい | 
+| Enterprise | いいえ | いいえ | いいえ | いいえ | はい | 
 
 ## <a name="before-the-upgrade--what-you-need-to-know"></a>アップグレードする前に知っておくべきこと
 
@@ -174,7 +174,7 @@ BAM 警告を使用するには、SQL Server Database Mail が必要です。 SQ
 
 ### <a name="enterprise-single-sign-on-esso"></a>エンタープライズ シングル サインオン (ESSO)
 
-| シナリオ | 詳細 |
+| Scenario | 詳細 |
 | --- | --- |
 | 以前のバージョンの Enterprise Single Sign-on からのアップグレード | BizTalk Server には、更新されたバージョンの Enterprise Single Sign-On (ESSO) が含まれています。 このリリースを以前のバージョンの BizTalk がインストールされているコンピューターにインストールする場合は、ESSO はセットアップ中に自動的に更新されます。 アップグレード前に次の手順を実行することをお勧めします。 <br/><br/> 1.現在のバージョンのシングル サインオン データベース (SSODB) が安全な場所にバックアップされていることを確認します。 <br/>2.現在のマスター シークレット キーが安全な場所にバックアップされていることを確認します。<br/>3.マスター シークレットのパスワードを確認します。<br/><br/>1 つの BizTalk グループ内のすべてのサーバーを同じリリースにアップグレードします。 この要件は、スタンドアロンのマスター シークレット サーバーの場合でも同じです。 |
 | エンタープライズ シングル サインオン スタンドアロン セットアップを使用したアップグレード | 次の手順に従って、専用のマスター シークレット サーバーなどの、スタンドアロンのエンタープライズ シングル サインオンがインストールされているコンピューター上でアップグレードを実行します。<br/><br/>1.現在のマスター シークレット キーが安全な場所にバックアップされていることを確認します。<br/>2.現在のバージョンの SSODB が安全な場所にバックアップされていることを確認します。<br/>3.[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] インストール メディアから ESSO の **Setup.exe** を実行します。 既定のインストール フォルダーは `\Platform\SSO` です。<br/>4.**[自動実行]** ダイアログ ボックスで、**[Microsoft Enterprise Single Sign-On]** を選択します。<br/>5.[概要] ダイアログ ボックスで、**[アップグレード]** を選択します。 |

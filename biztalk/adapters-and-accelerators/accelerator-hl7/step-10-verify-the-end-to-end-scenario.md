@@ -1,23 +1,24 @@
 ---
-title: "手順 10: エンド ツー エンド シナリオを確認してください |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 10: エンド ツー エンド シナリオを確認してください |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: end-to-end tutorial, verifying solution
+helpviewer_keywords:
+- end-to-end tutorial, verifying solution
 ms.assetid: 24b74ba6-e303-4ab1-8a93-25a430e4894d
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d38f137625554bd689477964e3a969142eca0658
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-10-verify-the-end-to-end-scenario"></a>手順 10: エンド ツー エンド シナリオを確認してください。
 この手順では、このチュートリアルでは、エンド ツー エンド シナリオを確認します。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**アクセサリ**、順にクリック**コマンド プロンプト**です。  
   
-2.  コマンド プロンプト ウィンドウに移動  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP のアクセラレータ* *、ユーティリティを押してから**Enter**です。  
+2.  コマンド プロンプト ウィンドウに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\MLLP ユーティリティfor**、キーを押します**Enter**です。  
   
     > [!NOTE]
     >  SDK フォルダーな MLLP ユーティリティ フォルダーが見つからない場合は、MLLP テスト ツールはインストールされません。 コントロール パネルを開き**プログラム追加と削除**です。 選択**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**、し、**変更**です。 BTAHL7 セットアップ ウィザードで、次のように選択します。**変更**です。 展開、**アダプター**フォルダーを表示するかどうか、 **MLLP テスト ツール**がインストールされています。 それ以外の場合は、インストールします。  
@@ -35,12 +36,12 @@ ms.lasthandoff: 11/28/2017
   
 4.  クリックして、追加のコマンド プロンプトを開始**開始**、 をポイント**プログラム**、 をポイント**アクセサリ**、順にクリック**コマンド プロンプト**.  
   
-5.  2 番目のコマンド プロンプト ウィンドウに移動  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータMLLP ユーティリティ * を押してから**Enter**です。  
+5.  2 番目のコマンド プロンプト ウィンドウに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**、キーを押します**Enter**です。  
   
     > [!NOTE]
     >  次の手順では、メッセージを送信します。  
   
-6.  コマンド プロンプト ウィンドウで次のように入力します **mllpsend/SB 11/EB 28/CR 13/f"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。Accelerator HL7\SDK\End エンドツー エンド Tutorial\ADT^A03.txt for"**ここで、 \<*ドライブ*\>は、インストール ドライブ文字です。 **Enter**キーを押します。  
+6.  コマンド プロンプト ウィンドウで次のように入力します**mllpsend/SB 11/EB 28/CR 13/f"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータ。エンド ツー エンド Tutorial\ADT ^ A03.txt"**ここで、 \<*ドライブ*\>は、インストール ドライブ文字です。 **Enter**キーを押します。  
   
 7.  次の結果があることを確認します。  
   

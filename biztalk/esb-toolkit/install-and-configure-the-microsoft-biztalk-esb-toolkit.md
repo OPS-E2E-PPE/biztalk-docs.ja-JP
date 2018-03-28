@@ -1,23 +1,23 @@
 ---
-title: "インストールして、Microsoft BizTalk ESB Toolkit の構成 |Microsoft ドキュメント"
-description: "インストールして、BizTalk Server で ESB Toolkit を構成する手順の手順を実行して命令"
-caps.latest.revision: "8"
+title: インストールして、Microsoft BizTalk ESB Toolkit の構成 |Microsoft ドキュメント
+description: インストールして、BizTalk Server で ESB Toolkit を構成する手順の手順を実行して命令
+caps.latest.revision: ''
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 698843f7-8361-4d02-9278-0e66f2a9f472
 ms.author: mandia
 ms.openlocfilehash: 33805fe58298e4f4729161a62742d3b204996b00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-esb-toolkit"></a>インストールして、Microsoft BizTalk ESB Toolkit の構成
 BizTalk Server 2013 と新しいバージョンでは、開始[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]と統合されて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップします。 このトピックは、インストールおよび構成する方法を示します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、し、ESB Toolkit のアップグレードをコミュニティに書き込まれたリンクも含まれます。  
@@ -25,17 +25,17 @@ BizTalk Server 2013 と新しいバージョンでは、開始[!INCLUDE[esbToolk
 > [!IMPORTANT]
 >  [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] のインストールを始める前に、BizTalk Server をインストールしておく必要があります。  
   
-## <a name="install"></a>Install 
+## <a name="install"></a>インストール 
   
 1.  実行、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.exe ファイルを管理者として。 セットアップに、次のように選択します。**インストール[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]**です。  
   
 2.  ライセンス契約に同意し、**次**です。  
   
-3.  [**コンポーネントのインストール**] で、インストールするコンポーネントを選択し、[**次へ**] を選択します。  
+3.  **[コンポーネントのインストール]** で、インストールするコンポーネントを選択し、**[次へ]** を選択します。  
   
 4.  **概要**、確認を選択して確認し、**インストール**です。  
   
-5.  [**完了**] を選択して、インストール ウィザードを終了します。  
+5.  **[完了]** を選択して、インストール ウィザードを終了します。  
 
 インストール ログ ファイルが作成、' C:\Users\yourUserName\AppData\Local\Temp\Setup(081017 175042).htm' に似ています。 
   
@@ -100,7 +100,7 @@ BizTalk Server 2013 と新しいバージョンでは、開始[!INCLUDE[esbToolk
     -   選択**構成の適用**選択したアプリケーションを作成します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールでアプリケーションが作成されたことを確認します。  
   
 ## <a name="upgrade-esb-toolkit--community-addition"></a>コミュニティによる補足 – ESB Toolkit のアップグレードします。  
- [ESB Toolkit 2.1 から 2.2 へのインプレース アップグレード](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html) (http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)
+ [インプレース アップグレード ESB Toolkit 2.1 2.2 に](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)(http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)
 
 ## <a name="see-also"></a>参照
 [インストールの問題、一般的なエラーと解像度をトラブルシューティングします。](troubleshooting-the-biztalk-esb-toolkit.md)

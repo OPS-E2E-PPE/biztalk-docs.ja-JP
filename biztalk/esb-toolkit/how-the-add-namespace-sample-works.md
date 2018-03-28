@@ -1,22 +1,22 @@
 ---
-title: "どのように Namespace サンプルは、動作を追加 |Microsoft ドキュメント"
-ms.custom: 
+title: どのように Namespace サンプルは、動作を追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c76a90a9-5898-43b3-98af-ff546dd97153
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 212364030353001cae0589d4d7562641db4b77e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-the-add-namespace-sample-works"></a>どのように Namespace サンプルは、動作を追加
 1、2、および 4 番目のテストを使用して、**追加 Namespace** NamespaceSampleReceivePipeline パイプラインにコンポーネントがあります。 これは、ルート ノードで、次のよう、名前空間のないドキュメントを入力します。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 |NamespaceBase|静的|http://schemas.microsoft.biztalk.esb.test.com/test|  
 |NamespacePrefix|静的|esbTest|  
 |[区切り記号]|静的|/|  
-|Xpath|動的|/CanonicalOrder/@OrderID&#124;/CanonicalOrder/@OrderDate|  
+|XPaths|動的|/CanonicalOrder/@OrderID&#124;/CanonicalOrder/@OrderDate|  
   
  表に示すプロパティの設定により、コンポーネントは 2 つの XPath クエリを実行することによって、XML ドキュメントを検索する/CanonicalOrder/@OrderIDと/CanonicalOrder/@OrderDate(指定された 2 つのクエリ、 **Xpath** 「パイプ」で区切られたプロパティ文字)。 これらのクエリの値を返す、 **OrderID**と**OrderDate**属性; ドキュメントのこの例では、ルート ノードの 2 つの値は、"OrderID_0"および"OrderDate_1"です。  
   

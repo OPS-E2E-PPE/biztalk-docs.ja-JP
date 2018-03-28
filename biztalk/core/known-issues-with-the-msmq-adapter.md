@@ -1,22 +1,22 @@
 ---
-title: "MSMQ アダプターに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce77cdac-79c1-4529-8f09-0fb1f87ca037
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 67f210d0e480a311aed0bed5d50f6a827bd6ea4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="known-issues-with-the-msmq-adapter"></a>MSMQ アダプターに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 ##### <a name="resolution"></a>解決策  
  ホスト インスタンスの .NET スレッド プールで使用可能なスレッドの数を増やすには、手順で、**ホスト用 CLR Hosting スレッド値**」の「[に影響するアダプターの構成パラメーターパフォーマンス](../core/configuration-parameters-that-affect-adapter-performance.md)です。  
   
- 各 MSMQ 受信場所、MSMQ にバインドされているために、受信ハンドラーには、.NET スレッド プールのスレッドが必要があります、設定**MinIOThreads**と**MinWorkerThreads**に値がより大きいか等しいMSMQ 受信場所の数は、受信ハンドラーにバインドされます。 同様の値を設定します。 **MaxIOThreads**と**MaxWorkerThreads** MSMQ の数に相当する値を受信場所の受信ハンドラーにバインドされている * 2 ヘッドルームを許可します。  
+ MSMQ 受信ハンドラーにバインドされている各 MSMQ 受信場所は、.NET スレッド プールからスレッドを必要とするため、設定 **MinIOThreads** と **MinWorkerThreads** には、MSMQ の数より大きい値には、受信場所の受信ハンドラーにバインドします。 したがっての値を設定 **MaxIOThreads** と **MaxWorkerThreads** MSMQ の数と同じ値には、受信場所の受信ハンドラーにバインドされている * ヘッドルームを許可するように 2。  
   
 |DWORD エントリ|推奨値|  
 |-----------------|-----------------------|  
@@ -61,9 +61,9 @@ ms.lasthandoff: 09/20/2017
 ##### <a name="problem"></a>問題  
  SC ツール (Sc.exe) を使用して BizTalk ホスト インスタンスのサービスをシャットダウンしようとすると、次のようなエラー メッセージが表示される場合があります。  
   
- **ControlService 1053 が失敗しました。**  
+ **ControlService FAILED 1053:**  
   
- **サービスは、適切なタイミングで開始または制御要求に応答しませんでした。**  
+ **サービスは適時に開始または制御要求に応答しませんでした。**  
   
  このエラー メッセージが表示された後、BizTalk ホスト インスタンスのサービスが停止します。 しかし、SC ツールによってサービスがシャットダウンされるまで、2 分以上かかる場合があります。  
   

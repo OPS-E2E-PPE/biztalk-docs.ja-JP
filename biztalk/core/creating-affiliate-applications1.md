@@ -1,40 +1,40 @@
 ---
-title: "TIBCO Rendezvous 用のアプリケーションを作成する関連 |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Rendezvous 用のアプリケーションを作成する関連 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a286a80ef2c867dd196fcdce414f2d0ff3c8255c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用方法を説明します。 エンタープライズ シングル サインオンの使用方法の詳細については、Microsoft のドキュメントを参照してください。  
   
 > [!NOTE]
->  SSO エラーが発生した場合は、ときに使用したドメイン アカウント BizTalk Server を構成したように、エンタープライズ SSO サービスの機能に影響を確認します。 SSO はドメイン アカウントでのみ機能します。  
+>  SSO エラーが発生した場合を使用したドメイン アカウント、BizTalk Server を構成したときにこれは、エンタープライズ SSO サービスの機能に影響を確認します。 SSO はドメイン アカウントでのみ機能します。  
   
 ## <a name="create-an-affiliate-application"></a>関連アプリケーションを作成します。  
   
-1.  コントロール パネルで、開く**Services**、エンタープライズ シングル サインオン サービスが実行されていることを確認してください。  
+1.  コントロール パネルで、開く **サービス**, 、エンタープライズ シングル サインオン サービスが実行されていることを確認します。  
   
-2.  コマンド プロンプトで、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。 例:  
+2.  コマンド プロンプト では、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。 例:  
   
-     **C:\Program files \common files \enterprise でのシングル サインオン >**  
+     **C:\Program files \common files files \common files \enterprise シングル サインオン >**  
   
-3.  エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧は、使用、 **-ヘルプ**スイッチします。  
+3.  エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧を表示するには、使用、 **-ヘルプ** 切り替えます。  
   
-4.  使用して関連アプリケーションを作成する * です。スタート、として XML では、次のコマンドを入力します。  
+4.  使用して関連アプリケーションを作成する * します。XML の開始としては、次のコマンドを入力します。  
   
      `ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml`  
   
@@ -44,7 +44,7 @@ ms.lasthandoff: 11/07/2017
   
      AffiliateApplication.xml は、アプリケーションを作成した、サインオン情報を含む XML です。  
   
-     例:  
+     以下に例を示します。  
   
     ```  
     <?xml version="1.0"?>  
@@ -77,7 +77,7 @@ ms.lasthandoff: 11/07/2017
   
 3.  完了時に、次の確認メッセージが表示されます。  
   
-     **このコンピューターで使用中の SSO。操作が完了しました。**  
+     **このコンピューターで使用中の SSO。操作が正常に完了しました。**  
   
 ## <a name="enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 11/07/2017
   
      **Ibi \YOURID-TIBCO RendezvousApp に使用可能なアプリケーション**  
   
-3.  関連アプリケーションの資格情報を設定するには、次のコマンドを入力します。  
+3.  関連アプリケーションの資格情報を設定するのには、次のコマンドを入力します。  
   
      `ssoclient.exe -setcredentials TIBCO RendezvousApp`  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 11/07/2017
   
     -   パスワードの確認入力: ******  
   
-6.  関連アプリケーションが TIBCO Rendezvous の BizTalk アダプターに表示される**トランスポートのプロパティ** ダイアログ ボックス。  
+6.  TIBCO Rendezvous の BizTalk アダプターに関連アプリケーションが表示される **トランスポートのプロパティ**  ダイアログ ボックス。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for TIBCO Rendezvous のセキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)   

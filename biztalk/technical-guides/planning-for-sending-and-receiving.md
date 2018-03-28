@@ -1,22 +1,22 @@
 ---
-title: "送受信の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 送受信の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d67e5f7-5127-4c1d-be20-8d8dbb538286
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="planning-for-sending-and-receiving"></a>送受信の計画
 処理されるドキュメントのほぼすべて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が受信した、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信アダプター、およびから送信された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信アダプター。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターのいずれかで目立つように図[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、することが重要が済んだ後どのアダプターやアクセラレータを使用してこれらのアダプターやアクセラレータを正しく構成する方法を決定します。  
@@ -30,14 +30,14 @@ ms.lasthandoff: 01/17/2018
 -   **トランザクションのサポート**分散トランザクション コーディネーター (DTC) トランザクションのコンテキストでドキュメントを送受信する機能。 この機能は、メッセージの順次配送を維持し、ドキュメントが重複または消失しないようにするために必要です。  
   
     > [!NOTE]  
-    >  MSDTC の問題を発生した場合は、トピックを参照[MSDTC の問題のトラブルシューティング](http://go.microsoft.com/fwlink/?LinkID=154693)(http://go.microsoft.com/fwlink/?LinkID=154693)。  
+    >  MSDTC の問題を発生した場合は、トピックを参照[MSDTC の問題のトラブルシューティング](http://go.microsoft.com/fwlink/?LinkID=154693)(http://go.microsoft.com/fwlink/?LinkID=154693)です。  
   
 -   **双方向通信のサポート (要求/応答または送信請求-応答)**機能ドキュメントを送信して送信先からの応答メッセージを処理できる、またはドキュメントを受信し、ソースに応答メッセージを送信します。  
   
 -   **順次受信のサポート。** ドキュメントを受信したとおりの順序でメッセージ ボックス データベースに受信したドキュメントをパブリッシュする権限です。  
   
     > [!NOTE]  
-    >  他のアダプターは、特定のアダプターは受信場所のレベルでドキュメントの順序付き配信を適用できます。 順次配送は、受信場所のレベルでドキュメントの配信を順序付けがサポートされていないアダプターの送信ポート レベルで引き続き適用できますが、パフォーマンスの低下が発生する可能性があります。 メッセージの順次配送の詳細については、トピックを参照してください。[のメッセージ配信の順序付け](http://go.microsoft.com/fwlink/?LinkId=155751)(http://go.microsoft.com/fwlink/?LinkId=155751)。  
+    >  他のアダプターは、特定のアダプターは受信場所のレベルでドキュメントの順序付き配信を適用できます。 順次配送は、受信場所のレベルでドキュメントの配信を順序付けがサポートされていないアダプターの送信ポート レベルで引き続き適用できますが、パフォーマンスの低下が発生する可能性があります。 メッセージの順次配送の詳細については、トピックを参照してください。[のメッセージ配信の順序付け](http://go.microsoft.com/fwlink/?LinkId=155751)(http://go.microsoft.com/fwlink/?LinkId=155751)です。  
   
 -   **SSO は有効です。** アダプタを使用してドキュメントの送受信を行う際に SSO 認証を使用する機能です。  
   
@@ -81,23 +81,23 @@ ms.lasthandoff: 01/17/2018
 |TIBCO Enterprise Message Service|BizTalk Server と TIBCO EMS サーバー間での XML メッセージとバイナリ データ形式メッセージの交換を有効にします。TIBCO EMS サーバーは、緊密に統合され信頼性の高いアプリケーション インフラストラクチャを提供します。|4.2|  
 |WebSphere MQ|BizTalk Server と IBM WebSphere MQ 間でのメッセージの交換を有効にします。|5.3 フィックス パック 10 以降またはおよび 6.0 修正パック 1.1 以降|  
   
- BizTalk Server で使用可能な LOB アダプタについての詳細については、次を参照してください。 [BizTalk Server 2010 に含まれるアダプター](http://go.microsoft.com/fwlink/?LinkId=152664) (http://go.microsoft.com/fwlink/?LinkId=152664)。  
+ BizTalk Server で使用可能な LOB アダプタについての詳細については、次を参照してください。 [BizTalk Server 2010 に含まれるアダプター](http://go.microsoft.com/fwlink/?LinkId=152664) (http://go.microsoft.com/fwlink/?LinkId=152664)です。  
   
 ## <a name="biztalk-adapter-pack"></a>BizTalk アダプター パック  
- Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] Oracle データベース、Oracle E-business Suite、SAP、Siebel、および SQL Server などの LOB アプリケーションへの接続を提供する WCF ベース アダプターが含まれます。 使用可能なアダプターの一覧については[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください[BizTalk Adapter Pack](http://go.microsoft.com/fwlink/?LinkId=152665) (http://go.microsoft.com/fwlink/?LinkId=152665)。  
+ Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] Oracle データベース、Oracle E-business Suite、SAP、Siebel、および SQL Server などの LOB アプリケーションへの接続を提供する WCF ベース アダプターが含まれます。 使用可能なアダプターの一覧については[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください[BizTalk Adapter Pack](http://go.microsoft.com/fwlink/?LinkId=152665) (http://go.microsoft.com/fwlink/?LinkId=152665)です。  
   
 > [!IMPORTANT]  
->  使用することができます、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]で利用可能な WCF ベースの LOB アダプターの BizTalk プロジェクトに LOB アダプターの BizTalk プロジェクトを移行する移行ツール、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 ダウンロードすることができます、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]移行ツールから[BizTalk アダプター パック移行ツール](http://go.microsoft.com/fwlink/?LinkID=153328)(http://go.microsoft.com/fwlink/?LinkID=153328)。 含まれている LOB の WCF ベース アダプターに移行中の LOB アダプタについての詳細、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください、 [Microsoft BizTalk Adapter 2.0 の移行に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkId=158848) (http://go.microsoft.com/fwlink/?LinkId=158848)。  
+>  使用することができます、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]で利用可能な WCF ベースの LOB アダプターの BizTalk プロジェクトに LOB アダプターの BizTalk プロジェクトを移行する移行ツール、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。 ダウンロードすることができます、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]移行ツールから[BizTalk アダプター パック移行ツール](http://go.microsoft.com/fwlink/?LinkID=153328)(http://go.microsoft.com/fwlink/?LinkID=153328)です。 含まれている LOB の WCF ベース アダプターに移行中の LOB アダプタについての詳細、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください、 [Microsoft BizTalk Adapter 2.0 の移行に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkId=158848) (http://go.microsoft.com/fwlink/?LinkId=158848)です。  
   
 ## <a name="biztalk-accelerators"></a>BizTalk アクセラレータ  
- BizTalk アダプターは、特定のプロトコルで送信側と受信側のドキュメントを合わせて、中に BizTalk アクセラレータが特定の業界標準に従ってドキュメントの交換に合わせて設計されています。 使用可能な BizTalk アクセラレータの一覧は、次を参照してください。 [Microsoft BizTalk Server アクセラレータ](http://go.microsoft.com/fwlink/?LinkId=103609)(http://go.microsoft.com/fwlink/?LinkId=103609)。  
+ BizTalk アダプターは、特定のプロトコルで送信側と受信側のドキュメントを合わせて、中に BizTalk アクセラレータが特定の業界標準に従ってドキュメントの交換に合わせて設計されています。 使用可能な BizTalk アクセラレータの一覧は、次を参照してください。 [Microsoft BizTalk Server アクセラレータ](http://go.microsoft.com/fwlink/?LinkId=103609)(http://go.microsoft.com/fwlink/?LinkId=103609)です。  
   
-##  <a name="BKMK_InternetTrans"></a>インターネットにトランスポートを公開するときに、ドメインの構成  
+##  <a name="BKMK_InternetTrans"></a> インターネットにトランスポートを公開するときに、ドメインの構成  
  送信と受信の組織と外部の取引先間でドキュメントを容易にするためには、インターネットからアクセスできるパブリックに公開されたサイトでのトランスポートを公開する必要があります。 これらの状況では、次のドメインの構成の使用をお勧めします。  
   
 -   **インターネットを提供するハウス サーバー (非武装地帯 (DMZ) と呼ばれるまたはスクリーン サブネットも)、境界ネットワーク ドメインを使用し、関連するサービスを組織で**  
   
-     境界ネットワークのドメインは、インターネットに接続されたトランスポートが実行しているコンピューター間でドキュメントをルーティングする物理的な場所を格納しているサーバーを含める必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]取引先とします。 境界ネットワークのファイアウォールは、インターネットに面してトランスポートとの間の通信を許可するために必要なポートのみを開いてください。 コンピューターを実行していることはありません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]境界ネットワークのドメイン内の場所、またはサーバー コンピュータでエンタープライズ シングル サインオンを受信します。 Internet Security and Acceleration Server (ISA) Server Web の発行を使用して、処理ドメインを保護するファイアウォール インターネットに接続されたファイアウォールからを/、境界ネットワークのドメイン内のトランスポートからの送信/受信ドキュメントをルーティングする必要があります、サーバー公開します。 詳細については、ISA Server の Web およびサーバーの公開を使用して、次を参照してください。 [ISA Server 2006 では公開概念](http://go.microsoft.com/fwlink/?LinkID=86359)(http://go.microsoft.com/fwlink/?LinkID=86359)。  
+     境界ネットワークのドメインは、インターネットに接続されたトランスポートが実行しているコンピューター間でドキュメントをルーティングする物理的な場所を格納しているサーバーを含める必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]取引先とします。 境界ネットワークのファイアウォールは、インターネットに面してトランスポートとの間の通信を許可するために必要なポートのみを開いてください。 コンピューターを実行していることはありません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]境界ネットワークのドメイン内の場所、またはサーバー コンピュータでエンタープライズ シングル サインオンを受信します。 Internet Security and Acceleration Server (ISA) Server Web の発行を使用して、処理ドメインを保護するファイアウォール インターネットに接続されたファイアウォールからを/、境界ネットワークのドメイン内のトランスポートからの送信/受信ドキュメントをルーティングする必要があります、サーバー公開します。 詳細については、ISA Server の Web およびサーバーの公開を使用して、次を参照してください。 [ISA Server 2006 では公開概念](http://go.microsoft.com/fwlink/?LinkID=86359)(http://go.microsoft.com/fwlink/?LinkID=86359)です。  
   
     > [!NOTE]  
     >  ドキュメントの暗号化および復号化のために公開キー基盤 (PKI) デジタル証明書を使用して、セキュリティの追加のメジャーを検討、ドキュメントの署名と送信または受信取引からドキュメントの検証 (否認不可)このドメイン内のトランスポートが直面しているインターネット経由でパートナーです。  
@@ -131,17 +131,17 @@ ms.lasthandoff: 01/17/2018
   
     -   サーバーと、組織内のインフォメーション ワーカー サービスを提供するデスクトップ コンピューターの会社のドメイン。  
   
-     さまざまなことをお勧めドメイン トポロジの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アーキテクチャを参照してください[サンプル BizTalk Server アーキテクチャ](http://go.microsoft.com/fwlink/?LinkId=155750)(http://go.microsoft.com/fwlink/?LinkId=155750)。  
+     さまざまなことをお勧めドメイン トポロジの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アーキテクチャを参照してください[サンプル BizTalk Server アーキテクチャ](http://go.microsoft.com/fwlink/?LinkId=155750)(http://go.microsoft.com/fwlink/?LinkId=155750)です。  
   
 ## <a name="high-availability-considerations"></a>高可用性に関する考慮事項  
  BizTalk グループ内の複数の BizTalk server でアダプター ハンドラーのホスト インスタンスを実行して、ほとんどのアダプターの高可用性を提供できます。 こうすれば、1 つのアダプター ハンドラーのホスト インスタンスが失敗した場合、別のアダプター ハンドラーのホスト インスタンスがある処理を続行します。 ただし、これを行う例外があります。 場合によっては複数のアダプター ハンドラーのホスト インスタンスを実行すると、競合の問題が発生することができます。 たとえば、POP3 アダプターと FTP アダプターの複数のインスタンスを実行している場合、競合の問題が発生します。 このような場合は、クラスター化された BizTalk ホストでアダプター ハンドラーのホスト インスタンスを実行して高可用性をアダプターに指定できます。  
   
- 詳細については、ホスト クラスタ リングを介して、アダプター ハンドラーのホスト インスタンスの高可用性を実現する、次を参照してください。[化されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkID=151284)(http://go.microsoft.com/fwlink/?LinkID=151284)。 詳細については、BizTalk ホストの高可用性を実現する、次を参照してください。 [BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)です。  
+ 詳細については、ホスト クラスタ リングを介して、アダプター ハンドラーのホスト インスタンスの高可用性を実現する、次を参照してください。[化されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkID=151284)(http://go.microsoft.com/fwlink/?LinkID=151284)です。 詳細については、BizTalk ホストの高可用性を実現する、次を参照してください。 [BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)です。  
   
 ## <a name="performance-considerations"></a>パフォーマンスに関する考慮事項  
  **SOAP アダプターのパフォーマンスに関する考慮事項**  
   
- SOAP アダプターのパフォーマンスを最適化する方法の詳細については、次を参照してください。[構成パラメーターに影響を与えるアダプター パフォーマンス](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200)。  
+ SOAP アダプターのパフォーマンスを最適化する方法の詳細については、次を参照してください。[構成パラメーターに影響を与えるアダプター パフォーマンス](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200)です。  
   
  **MQSeries アダプターのパフォーマンスに関する考慮事項**  
   
@@ -168,7 +168,7 @@ ms.lasthandoff: 01/17/2018
   
  カスタム受信アダプターを BizTalk Server に送信するメッセージの順序を保持する場合は、アダプターが、次の機能を使用して開発する必要があります。  
   
--   カスタムの受信メッセージのバッチを送信した後、次のバッチを送信する前に BizTalk Server から返さ BatchComplete 呼び出しのアダプターを待機する必要があります。 詳細については、次を参照してください。 [Batch-Supported 受信アダプター用のインターフェイス](http://go.microsoft.com/fwlink/?LinkId=155752)(http://go.microsoft.com/fwlink/?LinkId=155752)。  
+-   カスタムの受信メッセージのバッチを送信した後、次のバッチを送信する前に BizTalk Server から返さ BatchComplete 呼び出しのアダプターを待機する必要があります。 詳細については、次を参照してください。 [Batch-Supported 受信アダプター用のインターフェイス](http://go.microsoft.com/fwlink/?LinkId=155752)(http://go.microsoft.com/fwlink/?LinkId=155752)です。  
   
 -   メッセージは、パイプラインで失敗した場合、これは保留されます、できれば再開不可として。 BTS を使用します。SuspendAsNonResumable メッセージ コンテキスト プロパティに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]に適切なメッセージのフラグを設定します。  
   

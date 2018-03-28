@@ -1,22 +1,22 @@
 ---
-title: "修復と再送信のカスタム例外ハンドラーのサンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: 修復と再送信のカスタム例外ハンドラーのサンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7363c440-44aa-4d08-8290-72787d17ac60
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b8b33765cbe3ca1c8c0c7c3e7679e543678325af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="running-the-repair-and-resubmit-custom-exception-handler-sample"></a>修復と再送信のカスタム例外ハンドラーのサンプルを実行しています。
 修復と再送信のカスタム例外ハンドラーのサンプルでは、人間の介入を ESB ベンダーおよび Microsoft BizTalk ベースのアプリケーションを処理し、便利なデザイン パターンを実装に統合するために非常に効果的な方法を示します。 サンプル コードは、ESB 例外管理システムにシームレスに統合します。  
