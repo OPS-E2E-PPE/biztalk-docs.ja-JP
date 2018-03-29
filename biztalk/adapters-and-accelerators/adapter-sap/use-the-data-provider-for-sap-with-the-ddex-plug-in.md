@@ -1,26 +1,26 @@
 ---
-title: "DDEX プラグインと SAP 用データ プロバイダーを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: DDEX プラグインと SAP 用データ プロバイダーを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DDEX plug-in
 - DDEX plug-in, Data Provider for SAP
 - Data Provider for SAP, using with DDEX plug-in
 ms.assetid: b16c8634-172a-4630-87ed-2073a75afdec
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a2a1dd348b6d897e147d6add49499e9716a67aeb
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>DDEX プラグインと SAP 用データ プロバイダーを使用します。
 インストールする場合、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール、セットアップ プログラムをインストール、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX プラグインします。 使用して、SAP オブジェクトを参照するこのプラグインを使用することができます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 このセクションでは、DDEX プラグインの使用に関する情報を提供します。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/28/2017
   
      次の図は、接続が確立された後に、サーバー エクスプ ローラーを示します。  
   
-     ![DDEX プラグイン &#45; で SAP ADO.NET プロバイダーの](../../adapters-and-accelerators/adapter-sap/media/158afc11-9c90-4333-bc62-5901f8d0c794.gif "158afc11-9c90-4333-bc62-5901f8d0c794")  
+     ![DDEX プラグイン&#45;で SAP ADO.NET プロバイダーの](../../adapters-and-accelerators/adapter-sap/media/158afc11-9c90-4333-bc62-5901f8d0c794.gif "158afc11-9c90-4333-bc62-5901f8d0c794")  
   
 ### <a name="to-add-tables-from-an-sap-system-using-the-ddex-plug-in"></a>DDEX プラグインを使用して SAP システムからテーブルを追加するには  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  **検索結果**ボックスに検索条件を満たすテーブル名が一覧表示されます。  
   
-     ![DDEX プラグイン &#45; 検索および追加のテーブル名 ダイアログ ボックスで](../../adapters-and-accelerators/adapter-sap/media/737fc9c3-5258-4693-a2f3-5b5b8d2483e9.gif "737fc9c3-5258-4693-a2f3-5b5b8d2483e9")  
+     ![DDEX プラグイン&#45;検索および追加のテーブル名 ダイアログ ボックスで](../../adapters-and-accelerators/adapter-sap/media/737fc9c3-5258-4693-a2f3-5b5b8d2483e9.gif "737fc9c3-5258-4693-a2f3-5b5b8d2483e9")  
   
 4.  追加し、をクリックするテーブルに対応するチェック ボックスをオンに**追加**です。 すべてのテーブルを選択するには、をクリックして**すべて選択**です。 すべての選択をクリアする をクリックして**すべてクリア**です。  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  **検索結果**ボックスに検索条件に一致する関数モジュールが一覧表示されます。  
   
-     ![DDEX プラグイン &#45; 検索とモジュールの追加 ダイアログ ボックスで](../../adapters-and-accelerators/adapter-sap/media/8c7f9081-80aa-4bfe-8f06-2c751758ddd0.gif "8c7f9081-80aa-4bfe-8f06-2c751758ddd0")  
+     ![DDEX プラグイン&#45;検索とモジュールの追加 ダイアログ ボックスで](../../adapters-and-accelerators/adapter-sap/media/8c7f9081-80aa-4bfe-8f06-2c751758ddd0.gif "8c7f9081-80aa-4bfe-8f06-2c751758ddd0")  
   
 4.  追加し、をクリックする関数モジュールに対応するチェック ボックスをオンに**追加**です。 すべてのモジュールを選択するには、をクリックして**すべて選択**です。 すべての選択をクリアする をクリックして**すべてクリア**です。  
   

@@ -1,11 +1,11 @@
 ---
-title: "トレース ツールを使用して MQSeries アダプターのエラーの分析 |Microsoft ドキュメント"
-ms.custom: 
+title: トレース ツールを使用して MQSeries アダプターのエラーの分析 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Adapter Trace Utility, about Adapter Trace Utility
@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MQSeries adapters, errors
 - Adapter Trace Utility
 ms.assetid: fdc73d99-3b73-491d-9b2f-7064364fefa7
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b53d1d2c0bbe19c54804b553041f8dc9ae4db20c
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="analyzing-mqseries-adapter-errors-with-the-trace-tools"></a>トレース ツールを使用して MQSeries アダプターのエラーの分析
 アプリケーションの実行時に、トレース ツールを使用して、メッセージングのエラーを分析します。 MQSeries アダプタでは、アダプタと BizTalk アプリケーション (trace.cmd) 用と、MQSAgent (MQSTrace.cmd) 用の 2 つのツールを使用する必要があります。 どちらのツールでも、tracelog.exe が使用されます。 まだインストールしていない場合は、インストールしてください。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/17/2018
 ## <a name="install-the-trace-utility"></a>Trace Utility をインストールするには  
  BizTalk Adapter Trace Utility をインストールするには、次の手順を実行します。  
   
-1.  Tracelog.exe ファイルをダウンロードするには、Microsoft Platform SDK ダウンロード Web サイトを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21975](http://go.microsoft.com/fwlink/?LinkId=21975)します。  
+1.  Tracelog.exe ファイルをダウンロードするには、Microsoft Platform SDK ダウンロード Web サイトを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=21975](http://go.microsoft.com/fwlink/?LinkId=21975)です。  
   
 2.  リンクをクリックして、プラットフォーム SDK Web インストール プログラムを起動、 **x86.exe** Web ページの下部にあるファイルです。  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 01/17/2018
   
 3.  コマンド プロンプトで「 **trace.cmd-停止**, 、ENTER キーを押します。  
   
-4.  bts2006.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)します。  
+4.  bts2006.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)です。  
   
  MQSAgent Trace Utility を実行するには、次の手順を実行します。  
   
@@ -86,4 +86,4 @@ ms.lasthandoff: 01/17/2018
   
 3.  コマンド プロンプトで「 **MQSTrace.cmd-停止**します。  
   
-4.  MQSAdapterTrace.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)します。
+4.  MQSAdapterTrace.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)です。

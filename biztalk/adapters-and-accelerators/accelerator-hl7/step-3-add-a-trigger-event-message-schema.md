@@ -1,29 +1,29 @@
 ---
-title: "手順 3: トリガー イベント (メッセージ) のスキーマを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: トリガー イベント (メッセージ) のスキーマを追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc4a67d9-9582-4f2b-9bc9-18fbff823d29
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 439caac8f1da151a9f203a1372039aaeedbfe83c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-3-add-a-trigger-event-message-schema"></a>手順 3: トリガー イベント (メッセージ) のスキーマを追加します。
 この手順で、空に基づく新しいプロジェクトを作成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]プロジェクト テンプレート。 このプロジェクトにスキーマを追加する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信のバッチ内のメッセージの検証に使用されます (ADT ^ A03)。 プロジェクトに厳密な名前を割り当てる、および、プロジェクトを配置 v2.3.1 一般的なスキーマを含むプロジェクトへの参照を追加します。  
   
 ### <a name="to-add-the-project-containing-the-message-schema"></a>メッセージ スキーマを含むプロジェクトを追加するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], の **ファイル** メニューをポイント **新規**, 、クリックして **プロジェクト**します。  
   
 2.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**Message クラス**|保持**V2.X**として選択します。|  
-    |**バージョン**|選択**2.3.1**です。|  
+    |**[バージョン]**|選択**2.3.1**です。|  
     |**メッセージの種類**|選択**ADT**です。|  
     |**トリガー イベント**|選択**A03**です。|  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  **厳密な名前キー ファイルを選択して**ドロップ ダウン リストを**\<を参照しています.\>.**  
   
-5.  参照**\<*ドライブ*\>: \Batching チュートリアル**、選択**key.snk**、クリックして**開く**です。  
+5.  参照 **\<*ドライブ*\>: \Batching チュートリアル** **key.snk**、順にクリック**開く**です。  
   
 6.  ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、クリックして**展開**です。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   

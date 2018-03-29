@@ -1,22 +1,22 @@
 ---
-title: "インポートまたはエクスポートするバインド ファイルを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: インポートまたはエクスポートするバインド ファイルを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f9a2a82a-f8d4-4ec2-b8c1-be6cda3f993a
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e3707726eb9e8e77e0536f36700fe098d83ad414
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-binding-files-to-import-or-export"></a>バインド ファイルを使用して、インポートまたはエクスポート
 
@@ -43,15 +43,15 @@ ms.lasthandoff: 09/20/2017
 
 * メンバーであるアカウントでログオンする必要があります、* * BizTalk Server 管理者 * * グループ。 参照してください[を展開して、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
 
-* 参照を追加する必要があります、 **BizTalk EDI アプリケーション**EDI アプリケーションとして使用される BizTalk アプリケーションからです。 参照してください[後の構成手順](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)です。
+* 参照を追加する必要があります、 **BizTalk EDI アプリケーション** EDI アプリケーションとして使用される BizTalk アプリケーションからです。 参照してください[後の構成手順](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)です。
 
 ## <a name="import-or-export-all-the-trading-partners"></a>インポートまたはエクスポートするすべての取引先
-1. 開いている **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** 、BizTalk グループを展開します。
+1. 開いている**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**、BizTalk グループを展開します。
 2. 右クリック**パーティ**を選択して**エクスポート**です。 
 
     エクスポートするとき、**パーティ**-レベル、エクスポートするすべての取引先。 ビジネス プロファイル、および XML ファイルにアグリーメントを含む、取引先で使用されるすべてのものもエクスポートされます。 
 
-3. 右クリック**パーティ**select、**インポート**バインディングの XML ファイルを選択します。 
+3. 右クリックし **パーティ**  **インポート** バインディングの XML ファイルを選択します。 
 
       選択**除外パーティ**、または**EDI フォールバックの設定を除外する**インポートされないようにします。 それ以外の場合、バインド ファイル内のすべてのインポートされると、取引先、ビジネス プロファイル、およびアグリーメントを含むです。     
 
@@ -63,12 +63,12 @@ ms.lasthandoff: 09/20/2017
 
     
 ## <a name="export-individual-partners"></a>個々 のパートナーをエクスポートします。
-1. **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]****パーティ**です。
+1.  **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** **パーティ**です。
 2. **パーティとビジネス プロファイル** ウィンドウでは、パーティを右クリックし、選択**エクスポート**です。
 
     特定のパーティをエクスポートすると、すべてのパーティとそのパーティで使用されるすべての契約書をエクスポートする選択肢が与えられます。 ボックスをオフに**選択した関係者と、選択したパーティ内のすべての契約エクスポート**のみを選択するパーティをエクスポートします。
 
-3. [ **OK**] を選択します。 
+3. **[OK]** を選択します。 
 
 > [!TIP]
 > **パーティとビジネス プロファイル** ウィンドウで、使用することも、 **ctrl キーを押し**と**shift キーを押し**キーを一覧で複数のパーティを選択します。 同じバインド ファイルにエクスポートすべてのパーティを選択します。
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
 
 アプリケーション レベルでは、EDI および AS2 パーティにバインド ファイルをインポートできます。 
 
-1.  **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** 、展開**アプリケーション**
+1. **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**、展開**アプリケーション**
 2. アプリケーションを右クリックし **インポート**です。
 3. **追跡の設定をインポート**と**除外パーティ**オプションを使用できます。 これらのオプションを使用して、既存の追跡設定をインポートするか、バインド ファイル内の任意の EDI および AS2 パーティの除外を選択できます。
 

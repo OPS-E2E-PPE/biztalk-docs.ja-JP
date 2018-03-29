@@ -1,22 +1,22 @@
 ---
-title: "オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc9ca38e-1feb-4f34-a64b-d04566e85db9
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e7be3f8060bba20bc0ba127443095c228f954bba
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a>オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン
 オペレーティング システムのパフォーマンスを向上させるために、次の一般的なガイドラインに従ってください。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="enable-the-high-performance-power-plan-on-all-biztalk-server-and-sql-server-computers"></a>「高パフォーマンス」を有効にするすべての BizTalk Server と SQL Server コンピューターの電源プランします。  
  既定では、Windows Server 2008/2008 R2 セット (推奨) バランス電源プランで、電力の節約を有効にしていることができます待機時間の増加 (一部のタスクの低速の応答時間) が発生して CPU を消費するアプリケーションでパフォーマンスの問題が発生します。  
   
- 待機時間を短縮するために BizTalk Server を実行しているすべてのサーバーと SQL Server、Windows であることを確認する必要があります**電源プラン**'éý'**高パフォーマンス**です。 切り替える方法について、**高パフォーマンス**電源プランが、サポート技術情報の記事を参照してください: 2207548 [Windows Server 2008 R2 での全体的なパフォーマンスの低下](http://go.microsoft.com/fwlink/?LinkID=219677)(http://go.microsoft.com/fwlink/?LinkID=219677)。  
+ 待機時間を短縮するために BizTalk Server を実行しているすべてのサーバーと SQL Server、Windows であることを確認する必要があります**電源プラン**'éý'**高パフォーマンス**です。 切り替える方法について、**高パフォーマンス**電源プランが、サポート技術情報の記事を参照してください: 2207548 [Windows Server 2008 R2 での全体的なパフォーマンスの低下](http://go.microsoft.com/fwlink/?LinkID=219677)(http://go.microsoft.com/fwlink/?LinkID=219677)です。  
   
 ## <a name="evaluate-the-usage-of-intel-hyper-threading-on-biztalk-server-and-sql-server-computers"></a>Intel ハイパー スレッディングの BizTalk Server と SQL Server のコンピューターで使用状況を評価します。  
   
@@ -52,7 +52,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="assign-the-msdtc-log-file-directory-to-a-separate-dedicated-drive"></a>MSDTC ログ ファイルのディレクトリを別の専用のドライブに割り当てる  
  別の SQL Server コンピューターに複数のメッセージ ボックス データベースを使用する BizTalk Server 環境では、Microsoft 分散トランザクション コーディネーター (MSDTC) に関連付けられている追加のオーバーヘッドが発生します。 既定では、MSDTC ログ ファイルは、DTC サービスを実行しているコンピューターの %systemdrive%\windows\system32\msdtc ディレクトリに配置します。 DTC ログがパフォーマンスのボトルネックになる可能性があります可能性を軽減するのには、MSDTC ログ ファイルのディレクトリを高速なディスク ドライブに移動を検討してください。  
   
- MSDTC ログ ファイルのディレクトリを変更するを参照してください。 [DTC ログを構成する](http://go.microsoft.com/fwlink/?LinkID=204107)(http://go.microsoft.com/fwlink/?LinkID=204107)。  
+ MSDTC ログ ファイルのディレクトリを変更するを参照してください。 [DTC ログを構成する](http://go.microsoft.com/fwlink/?LinkID=204107)(http://go.microsoft.com/fwlink/?LinkID=204107)です。  
   
 ## <a name="configure-antivirus-software-to-avoid-real-time-scanning-of-biztalk-server-executables-and-file-drops"></a>BizTalk Server 実行可能ファイルのリアルタイム スキャンしないようにするウイルス対策ソフトウェアを構成し、ファイルの削除  
  ウイルス対策ソフトウェアの BizTalk Server 実行可能ファイルおよびフォルダーやファイルのリアルタイム スキャンの受信場所を BizTalk Server によって監視される共有 BizTalk Server のパフォーマンスが低下することができます。 ウイルス対策ソフトウェアが BizTalk Server コンピューターにインストールされている場合の BizTalk Server によって参照される非実行可能ファイルの種類のリアルタイム スキャンを無効にする受信場所 (通常はします。XML、.csv、.txt などこともできます)。BizTalk Server 実行可能ファイルのスキャンを除外するウイルス対策ソフトウェアと構成  
@@ -68,7 +68,7 @@ ms.lasthandoff: 11/28/2017
 2.  Windows ページファイルの断片化を解消し、システム全体のパフォーマンスを向上させるため、BizTalk Server 環境内の各ディスクのマスター ファイル テーブルを事前に割り当てできます。  
   
     > [!NOTE]  
-    >  マスター ファイル テーブルを事前に割り当て、サポート技術情報の記事 961095 を参照してください[「マスター ファイル テーブルのゾーンの Windows Vista および Windows Server 2008 で予約」](http://go.microsoft.com/fwlink/?LinkID=204563) (http://go.microsoft.com/fwlink/?LinkID=204563)。  
+    >  マスター ファイル テーブルを事前に割り当て、サポート技術情報の記事 961095 を参照してください[「マスター ファイル テーブルのゾーンの Windows Vista および Windows Server 2008 で予約」](http://go.microsoft.com/fwlink/?LinkID=204563) (http://go.microsoft.com/fwlink/?LinkID=204563)です。  
   
 ## <a name="if-antivirus-software-is-installed-on-the-sql-server-computer-disable-real-time-scanning-of-data-and-transaction-files"></a>ウイルス対策ソフトウェアが、SQL Server コンピューターにインストールされている場合は、データ ファイルとトランザクションのファイルのリアルタイム スキャンを無効にします。  
  SQL Server データ ファイルとトランザクション ファイル (.mdf、.ndf、.ldf、.mdb ファイル) のリアルタイム スキャン、ディスク I/O の競合が増えるし、SQL Server のパフォーマンスが低下することができます。 SQL Server データ ファイルとトランザクションのファイルの名前は、BizTalk Server 環境間で異なる場合がありますに注意してください。 既定の BizTalk Server 構成で作成されたデータとトランザクションのファイルの詳細については、次を参照してください。 [、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)です。  
@@ -131,36 +131,36 @@ ms.lasthandoff: 11/28/2017
   
  BizTalk server 上の構成を次の情報を確認します。  
   
--   [BizTalk Server のポートに必要な](http://go.microsoft.com/fwlink/?LinkID=153238)(http://go.microsoft.com/fwlink/?LinkID=153238)。  
+-   [BizTalk Server のポートに必要な](http://go.microsoft.com/fwlink/?LinkID=153238)(http://go.microsoft.com/fwlink/?LinkID=153238)です。  
   
--   ファイアウォールで動作する RPC 動的ポート割り当てを構成するには、サポート技術情報の記事 929851 を参照してください["TCP/IP の既定の動的なポート範囲が、Windows Vista、Windows Server 2008 で変更された"](http://go.microsoft.com/fwlink/?LinkID=204568) (ハイパーリンク"http://。go.microsoft.com/fwlink/ しますか。LinkID 204568"http://go.microsoft.com/fwlink/? を =LinkID = 204568)。 必要なポートに対応するための Windows ファイアウォールを構成する方法については、次を参照してください。 [Windows ファイアウォールと IPsec ポリシーの展開のステップ バイ ステップ ガイド](http://go.microsoft.com/fwlink/?LinkID=204569)(http://go.microsoft.com/fwlink/?LinkID=204569)。  
+-   ファイアウォールで動作する RPC 動的ポート割り当てを構成するには、サポート技術情報の記事 929851 を参照してください["TCP/IP の既定の動的なポート範囲が、Windows Vista、Windows Server 2008 で変更された"](http://go.microsoft.com/fwlink/?LinkID=204568) (ハイパーリンク"http://go.microsoft.com/fwlink/?LinkID=204568" http://go.microsoft.com/fwlink/?LinkID=204568)。 必要なポートに対応するための Windows ファイアウォールを構成する方法については、次を参照してください。 [Windows ファイアウォールと IPsec ポリシーの展開のステップ バイ ステップ ガイド](http://go.microsoft.com/fwlink/?LinkID=204569)(http://go.microsoft.com/fwlink/?LinkID=204569)です。  
   
 ## <a name="install-appropriate-com-and-msdtc-hotfix-rollup-packages"></a>COM +、MSDTC の適切な修正プログラムのロールアップ パッケージをインストールします。  
  適切な COM +、MS DTC の修正プログラム ロールアップ パッケージをインストールする次の情報を確認します。  
   
--   MS DTC の修正プログラムは、Microsoft サポート技術情報 article978476 で確認できます[「は、Windows Server 2008 R2 MS DTC の修正プログラム ロールアップ パッケージ 1 で修正 MS DTC の問題」](http://go.microsoft.com/fwlink/?LinkID=204109) (http://go.microsoft.com/fwlink/?LinkID=204109)。  
+-   MS DTC の修正プログラムは、Microsoft サポート技術情報 article978476 で確認できます[「は、Windows Server 2008 R2 MS DTC の修正プログラム ロールアップ パッケージ 1 で修正 MS DTC の問題」](http://go.microsoft.com/fwlink/?LinkID=204109) (http://go.microsoft.com/fwlink/?LinkID=204109)です。  
   
--   最新の DTC の修正プログラム ロールアップ パッケージ サポート技術情報の記事を検索によって見つかりますできます[http://support.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=96185) (http://go.microsoft.com/fwlink/?LinkID=96185) (引用符を含む)、句。  
+-   最新の DTC の修正プログラム ロールアップ パッケージ サポート技術情報の記事を検索によって見つかりますできます[ http://support.microsoft.com ](http://go.microsoft.com/fwlink/?LinkID=96185) (http://go.microsoft.com/fwlink/?LinkID=96185)句では、(引用符を含む)。  
   
     ```  
     "MS DTC Hotfix Rollup Package"  
     ```  
   
      この検索では、次のクエリ。 最新のものを選択します。   
-    [http://support.microsoft.com/search/default.aspx?query=「MS + DTC + 修正プログラム + ロールアップ + パッケージ」](http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package")  
+    [http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package"](http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package")  
   
 ## <a name="use-the-interrupt-affinity-policy-tool-to-bind-network-adapter-interrupts-to-specific-processors-on-multiprocessor-computers"></a>Interrupt-affinity ポリシー ツールを使用して、ネットワーク アダプターの割り込みをマルチプロセッサ コンピューターで特定のプロセッサにバインドするには  
  Interrupt-affinity ポリシー (IntPolicy) は、特定のプロセッサまたはマルチプロセッサ コンピューター上のプロセッサに「バインド」または (ネットワーク アダプター) などの特定のデバイスに対する割り込みの CPU 関係を変更できるようにするツールです。 このバインディングは、パーティション分割とも呼ばれます。 特定のネットワーク アダプターからの割り込みマルチプロセッサ コンピューターで特定のプロセッサをバインドは、長時間の遅延プロシージャ呼び出し (Dpc) と指定されたプロセッサ上のネットワーク アダプターの割り込みサービス ルーチン (Isr) を適用します。 シングル プロセッサ コンピューター割り込みアフィニティを構成できないことに注意してください。  
   
 > [!NOTE]  
->  DPC はキューに置かれた後で実行される通常カーネル モード関数呼び出しとして定義されます。 ISR は、その目的は、割り込みを生成するときに、デバイスのサービスを提供するルーチンとして定義されます。 遅延プロシージャ呼び出しと割り込みサービス ルーチンに関する詳細については、次を参照してください。、 [Windows Driver Kit ドキュメント](http://go.microsoft.com/fwlink/?LinkId=84418)(http://go.microsoft.com/fwlink/?LinkId=84418)。  
+>  DPC はキューに置かれた後で実行される通常カーネル モード関数呼び出しとして定義されます。 ISR は、その目的は、割り込みを生成するときに、デバイスのサービスを提供するルーチンとして定義されます。 遅延プロシージャ呼び出しと割り込みサービス ルーチンに関する詳細については、次を参照してください。、 [Windows Driver Kit ドキュメント](http://go.microsoft.com/fwlink/?LinkId=84418)(http://go.microsoft.com/fwlink/?LinkId=84418)です。  
   
- ![割り込み &#45;アフィニティ ポリシー ツール](../technical-guides/media/interrupt-affinitypolicytool.gif "割り込み AffinityPolicyTool")  
+ ![割り込み&#45;アフィニティ ポリシー ツール](../technical-guides/media/interrupt-affinitypolicytool.gif "割り込み AffinityPolicyTool")  
 Interrupt-Affinity Policy ツール  
   
  Windows Server 2008 をベース マルチプロセッサのコンピューターでは、割り込みコント ローラーの既定の動作を使用可能なプロセッサに装置の割り込みを割り当てます。 ときにネットワーク接続および指定したネットワーク アダプターのファイル サーバーのセッションでは、バインド/パーティション分割されている特定のプロセッサ、セットで実行するではなく使用可能なプロセッサ、パフォーマンス、および関連付けられているネットワーク処理のスケーラビリティが向上します。 大規模な BizTalk Server ソリューションは、多くの場合、複数のネットワーク アダプターが割り込みバインドすることがありますは特に有用でマルチ プロセッサの SQL Server コンピューターの使用を使用します。   
 割り込みバインディング IntPolicy を使用して評価が必要常に、テスト環境で実稼働環境で使用する前にします。 ハードウェア、オペレーティング システムおよびテスト環境のアプリケーションの構成に近い設定に、実稼働環境にできるだけです。 これによって、割り込みバインディングのさまざまな順列をテストして、範囲を調べるためにその割り込みバインドはパフォーマンスが向上します。  
- ハイパー スレッディングをサポートする cpu を搭載したコンピューターで IntPolicy を構成する前にハイパー スレッディングを無効にすることをお勧めします。 論理プロセッサではなく、物理プロセッサの割り込みが割り当てられているようになります。 同一の物理プロセッサを参照している論理プロセッサに割り当ての割り込みアフィニティでは、パフォーマンスは向上せず、システム パフォーマンスが低下することもできます。    ハイパーリンク"The"、 [Interrupt-affinity ポリシー ツール](http://go.microsoft.com/fwlink/?LinkID=204111)(http://go.microsoft.com/fwlink/?LinkID=204111) は WHDC web サイトからダウンロードできます。  
+ ハイパー スレッディングをサポートする cpu を搭載したコンピューターで IntPolicy を構成する前にハイパー スレッディングを無効にすることをお勧めします。 論理プロセッサではなく、物理プロセッサの割り込みが割り当てられているようになります。 同一の物理プロセッサを参照している論理プロセッサに割り当ての割り込みアフィニティでは、パフォーマンスは向上せず、システム パフォーマンスが低下することもできます。    ハイパーリンク"The"、 [Interrupt-affinity ポリシー ツール](http://go.microsoft.com/fwlink/?LinkID=204111)(http://go.microsoft.com/fwlink/?LinkID=204111) WHDC web サイトからダウンロードできます。  
   
 ## <a name="use-the-ntfs-file-system-on-all-volumes"></a>すべてのボリューム上に NTFS ファイル システムの使用  
  Windows Server は、NTFS、FAT を含むドライブおよび FAT32 を書式設定するための複数のファイル システムの種類を提供します。 NTFS では、サーバーの任意のファイル システムを常にある必要があります。  
@@ -174,7 +174,7 @@ FAT および FAT32 多くの場合に実装されている過去ようそれら
 ## <a name="review-disk-controller-stripe-size-and-volume-allocation-units"></a>レビュー ディスク コント ローラー ストライプ サイズおよびボリューム アロケーション ユニット  
  構成のドライブ アレイとハードウェア ドライブ コント ローラー内の論理ドライブを確認してください。 ボリュームのフォーマットに使用した、アロケーション ユニット サイズでコント ローラー ストライプ サイズが反映されます。 これはディスクの読み取りを確認してください読み書きパフォーマンスが最適をサーバーの全体的なパフォーマンスの向上を提供します。  
 アロケーション ユニット (クラスターまたはブロック) サイズを大きくの構成によって、小さく効率的に使用するディスク領域はもディスク I/O パフォーマンスを向上させるように各読み取り操作中に別のデータ ディスク ヘッドが読み取ることができます。  
-コント ローラーを構成およびでディスクをフォーマットする最適な設定を調べるには、平均ディスク転送サイズでは、ファイル システムのような特性を持つサーバーのディスク サブシステムを確認します。 Windows パフォーマンス モニタ ツールを使用して、平均の論理ディスク オブジェクトのカウンターを監視するにはディスク読み取りバイト数/と avg.ディスク バイト数/書き込みの通常のアクティビティの期間にわたって使用する最適な値を特定するため。  
+コント ローラーを構成およびでディスクをフォーマットする最適な設定を調べるには、平均ディスク転送サイズでは、ファイル システムのような特性を持つサーバーのディスク サブシステムを確認します。 Windows パフォーマンス モニタ ツールを使用して、平均の論理ディスク オブジェクトのカウンターを監視するにはDisk Bytes/Read and Avg.ディスク バイト数/書き込みの通常のアクティビティの期間にわたって使用する最適な値を特定するため。  
 アロケーション ユニット サイズが小さい場合があるが保証されているかどうか、システムは多くの小さなファイルまたはレコードにアクセスにが 64 kb アロケーション ユニット サイズは、サウンドのパフォーマンスとほとんどの状況下で I/O のスループットを実現します。 チューニングされたアロケーション ユニット サイズではパフォーマンスの向上は、ディスク負荷が増えたときに特に注意することができます。  
   
 > [!NOTE]  
@@ -206,14 +206,14 @@ Windows Server 2008 は、preemptive マルチタスクを使用して、cpu に
 サービスを無効にすると、十分に注意してください。 について十分に特定のサービスを実行している Windows Server の必要に応じて、サービスを無効にする前に、サービスの目的を調査します。 Windows Server 2008 に必要なサービスが無効になっている、オペレーティング システムは、操作やブートする可能性がありますもできません。 になる可能性があります。  
 専用の BizTalk Server で不要な Windows Server 2008 サービスを無効にするには、次の手順を実行します。  
   
-1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**コンピューターの管理**です。  
+1.  をクリックして **開始**, 、 をポイント **管理ツール**, 、 をクリックし、 **コンピューターの管理**します。  
   
 2.  **コンピューターの管理 (ローカル)**、展開**サービスとアプリケーション**、順にクリック**Services**です。  
     **ステータス**列で、実行されている各サービスのラベルは「開始」 停止し、不必要に開始される任意のサービスを無効にするたとえば、次のサービスは、専用の BizTalk サーバーで必要はありません。  
   
     -   警告  
   
-    -   クリップ  
+    -   ClipBook  
   
     -   DHCP サーバー  
   
@@ -231,7 +231,7 @@ Windows Server 2008 は、preemptive マルチタスクを使用して、cpu に
   
     -   ネットワーク DDE  
   
-    -   ネットワーク DDE DSDM  
+    -   Network DDE DSDM  
   
     -   NWLink NetBIOS  
   
@@ -249,7 +249,7 @@ Windows Server 2008 は、preemptive マルチタスクを使用して、cpu に
   
     1.  無効にサービスをダブルクリックします。  
   
-    2.  クリックして、**の依存関係**タブです。  
+    2.  クリックして、 **の依存関係**  タブをクリックします。  
   
     3.  **このサービスは、次のシステム コンポーネントによって異なります。**一覧で、このサービスに依存するサービスに注意してください。  
   
@@ -275,20 +275,20 @@ Windows Server 2008 は、preemptive マルチタスクを使用して、cpu に
 ## <a name="manually-load-microsoft-certificate-revocation-lists"></a>Microsoft 証明書失効リストを手動で読み込む  
  .NET アプリケーションを開始するときに、.NET Framework は、署名されたアセンブリ用の証明書失効リスト (CRL) をダウンロードしようとします。 場合は、システムは、インターネットに直接アクセスがないか、Microsoft.com ドメインへのアクセス制限は、BizTalk Server の起動を遅らせるこの可能性があります。 アプリケーションの起動時にこの遅延を避けるためには、手動でダウンロードして、コード署名のシステムに証明書失効リストをインストールする次の手順を使用することができます。  
   
-1.  最新の CRL の更新プログラムをダウンロード[http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl](http://go.microsoft.com/fwlink/?LinkID=117794) (http://go.microsoft.com/fwlink/?LinkID = 117794) および[http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl](http://go.microsoft.com/fwlink/?LinkId=117795) (http://go.microsoft.com/fwlink/?LinkId = 117795)。  
+1.  最新の CRL の更新プログラムをダウンロード[ http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl ](http://go.microsoft.com/fwlink/?LinkID=117794) (http://go.microsoft.com/fwlink/?LinkID=117794)と[ http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl ](http://go.microsoft.com/fwlink/?LinkId=117795) (http://go.microsoft.com/fwlink/?LinkId=117795)です。  
   
 2.  CodeSignPCA.crl と CodeSignPCA2.crl ファイルを分離されたシステムに移動します。  
   
 3.  コマンド プロンプトで、certutil ユーティリティを使用して、手順 1. でダウンロードした CRL のローカル証明書ストアを更新する次のコマンドを入力します。  
   
-     certutil – addstore CA c:\CodeSignPCA.crl  
+     certutil –addstore CA c:\CodeSignPCA.crl  
   
  CRL ファイルは、ダウンロードの繰り返し実行タスクを設定する必要があり、更新の CRL をインストールするように、定期的に更新されます。 表示する、次回の更新プログラムで .crl ファイルをダブルクリックし、値を表示、 **[次へ] を更新**フィールドです。  
   
 ## <a name="synchronize-time-on-all-servers"></a>すべてのサーバー上の時刻と同期します。  
  チケットに関連するさまざまな操作、配信確認メッセージやログ記録は、正確なされているローカル システム クロックに依存します。 これは、システム間の誤差の時間によるログの同期をまたは期限切れとして別に拒否される 1 つのシステムによって発行されたチケット、分散環境で特にまたはまだ有効ではありません。  
   
- 時間を自動的に同期するためにサーバーを構成する方法については、次を参照してください。[自動ドメイン時刻同期のためのクライアント コンピューターの構成](http://go.microsoft.com/fwlink/?LinkId=99420)(http://go.microsoft.com/fwlink/?LinkId=99420)。  
+ 時間を自動的に同期するためにサーバーを構成する方法については、次を参照してください。[自動ドメイン時刻同期のためのクライアント コンピューターの構成](http://go.microsoft.com/fwlink/?LinkId=99420)(http://go.microsoft.com/fwlink/?LinkId=99420)です。  
   
 ## <a name="configure-the-windows-pagefile-for-optimal-performance"></a>パフォーマンスを最適に Windows ページファイルを構成します。  
  最適なパフォーマンスを Windows ページファイル (ページング ファイル) を構成する次のガイドラインに従います。  
