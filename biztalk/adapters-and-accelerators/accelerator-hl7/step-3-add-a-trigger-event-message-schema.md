@@ -1,76 +1,76 @@
 ---
-title: "手順 3: トリガー イベント (メッセージ) のスキーマを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: トリガー イベント (メッセージ) のスキーマを追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc4a67d9-9582-4f2b-9bc9-18fbff823d29
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 439caac8f1da151a9f203a1372039aaeedbfe83c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="step-3-add-a-trigger-event-message-schema"></a><span data-ttu-id="e0ae8-102">手順 3: トリガー イベント (メッセージ) のスキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-102">Step 3: Add a Trigger Event (Message) Schema</span></span>
-<span data-ttu-id="e0ae8-103">この手順で、空に基づく新しいプロジェクトを作成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]プロジェクト テンプレート。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-103">In this step, you create a new project based on the Empty [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Project template.</span></span> <span data-ttu-id="e0ae8-104">このプロジェクトにスキーマを追加する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信のバッチ内のメッセージの検証に使用されます (ADT ^ A03)。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-104">To this project, you add the schema that [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] will use to validate the messages in the incoming batch (ADT^A03).</span></span> <span data-ttu-id="e0ae8-105">プロジェクトに厳密な名前を割り当てる、および、プロジェクトを配置 v2.3.1 一般的なスキーマを含むプロジェクトへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-105">You add a reference to the project containing the v2.3.1 common schemas, assign the strong name to the project, and then deploy the project.</span></span>  
+# <a name="step-3-add-a-trigger-event-message-schema"></a><span data-ttu-id="faec7-102">手順 3: トリガー イベント (メッセージ) のスキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="faec7-102">Step 3: Add a Trigger Event (Message) Schema</span></span>
+<span data-ttu-id="faec7-103">この手順で、空に基づく新しいプロジェクトを作成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]プロジェクト テンプレート。</span><span class="sxs-lookup"><span data-stu-id="faec7-103">In this step, you create a new project based on the Empty [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Project template.</span></span> <span data-ttu-id="faec7-104">このプロジェクトにスキーマを追加する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信のバッチ内のメッセージの検証に使用されます (ADT ^ A03)。</span><span class="sxs-lookup"><span data-stu-id="faec7-104">To this project, you add the schema that [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] will use to validate the messages in the incoming batch (ADT^A03).</span></span> <span data-ttu-id="faec7-105">プロジェクトに厳密な名前を割り当てる、および、プロジェクトを配置 v2.3.1 一般的なスキーマを含むプロジェクトへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="faec7-105">You add a reference to the project containing the v2.3.1 common schemas, assign the strong name to the project, and then deploy the project.</span></span>  
   
-### <a name="to-add-the-project-containing-the-message-schema"></a><span data-ttu-id="e0ae8-106">メッセージ スキーマを含むプロジェクトを追加するには</span><span class="sxs-lookup"><span data-stu-id="e0ae8-106">To add the project containing the message schema</span></span>  
+### <a name="to-add-the-project-containing-the-message-schema"></a><span data-ttu-id="faec7-106">メッセージ スキーマを含むプロジェクトを追加するには</span><span class="sxs-lookup"><span data-stu-id="faec7-106">To add the project containing the message schema</span></span>  
   
-1.  <span data-ttu-id="e0ae8-107">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-107">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the **File** menu, point to **New**, and then click **Project**.</span></span>  
+1.  <span data-ttu-id="faec7-107">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], の **ファイル** メニューをポイント **新規**, 、クリックして **プロジェクト**します。</span><span class="sxs-lookup"><span data-stu-id="faec7-107">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
-2.  <span data-ttu-id="e0ae8-108">新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-108">In the New Project dialog box, in the **Project Types** section, expand **BizTalk Projects**, and then select **BTAHL7Projects**.</span></span>  
+2.  <span data-ttu-id="faec7-108">新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-108">In the New Project dialog box, in the **Project Types** section, expand **BizTalk Projects**, and then select **BTAHL7Projects**.</span></span>  
   
-3.  <span data-ttu-id="e0ae8-109">**テンプレート**セクションで、 **BTAHL7 の空のプロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-109">In the **Templates** section, select **Empty BTAHL7 Project**.</span></span>  
+3.  <span data-ttu-id="faec7-109">**テンプレート**セクションで、 **BTAHL7 の空のプロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-109">In the **Templates** section, select **Empty BTAHL7 Project**.</span></span>  
   
-4.  <span data-ttu-id="e0ae8-110">**名前**ボックスに、入力**BTAHL7V231Body**プロジェクト名として。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-110">In the **Name** box, enter **BTAHL7V231Body** as the project name.</span></span>  
+4.  <span data-ttu-id="faec7-110">**名前**ボックスに、入力**BTAHL7V231Body**プロジェクト名として。</span><span class="sxs-lookup"><span data-stu-id="faec7-110">In the **Name** box, enter **BTAHL7V231Body** as the project name.</span></span>  
   
-5.  <span data-ttu-id="e0ae8-111">**ソリューション**ボックスで、**ソリューションに追加**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-111">In the **Solution** box, select **Add to Solution**.</span></span>  
+5.  <span data-ttu-id="faec7-111">**ソリューション**ボックスで、**ソリューションに追加**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-111">In the **Solution** box, select **Add to Solution**.</span></span>  
   
-6.  <span data-ttu-id="e0ae8-112">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-112">Click **OK**.</span></span>  
+6.  <span data-ttu-id="faec7-112">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="faec7-112">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="e0ae8-113">ソリューション エクスプ ローラーで、新しいプロジェクトのノードの下を右クリックして**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-113">In Solution Explorer, under the node for your new project, right-click **References**, and then click **Add Reference**.</span></span>  
+7.  <span data-ttu-id="faec7-113">ソリューション エクスプ ローラーで、新しいプロジェクトのノードの下を右クリックして**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-113">In Solution Explorer, under the node for your new project, right-click **References**, and then click **Add Reference**.</span></span>  
   
-8.  <span data-ttu-id="e0ae8-114">参照の追加 ダイアログ ボックスで、**プロジェクト** タブで、をクリックして**BTAHL7V231Common プロジェクト**で、**プロジェクト名**列で、をクリックして**追加**、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-114">In the Add Reference dialog box, on the **Projects** tab, click **BTAHL7V231Common Project** in the **Project Name** column, click **Add**, and then click **OK**.</span></span>  
+8.  <span data-ttu-id="faec7-114">参照の追加 ダイアログ ボックスで、**プロジェクト** タブで、をクリックして**BTAHL7V231Common プロジェクト**で、**プロジェクト名**列で、をクリックして**追加**、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-114">In the Add Reference dialog box, on the **Projects** tab, click **BTAHL7V231Common Project** in the **Project Name** column, click **Add**, and then click **OK**.</span></span>  
   
-### <a name="to-add-the-schema-to-the-project"></a><span data-ttu-id="e0ae8-115">スキーマをプロジェクトに追加するには</span><span class="sxs-lookup"><span data-stu-id="e0ae8-115">To add the schema to the project</span></span>  
+### <a name="to-add-the-schema-to-the-project"></a><span data-ttu-id="faec7-115">スキーマをプロジェクトに追加するには</span><span class="sxs-lookup"><span data-stu-id="faec7-115">To add the schema to the project</span></span>  
   
-1.  <span data-ttu-id="e0ae8-116">ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、 をポイント**追加**、クリックして**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-116">In Solution Explorer, right-click **BTAHL7V231Body**, point to **Add**, and then click **New Item**.</span></span>  
+1.  <span data-ttu-id="faec7-116">ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、 をポイント**追加**、クリックして**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="faec7-116">In Solution Explorer, right-click **BTAHL7V231Body**, point to **Add**, and then click **New Item**.</span></span>  
   
-2.  <span data-ttu-id="e0ae8-117">[新しい項目の追加] ダイアログ ボックスで、展開**BizTalk プロジェクトの項目**、クリックして**BTAHL7 スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-117">In the Add New Item dialog box, expand **BizTalk Project Items**, and then click **BTAHL7 Schemas**.</span></span> <span data-ttu-id="e0ae8-118">**テンプレート** ウィンドウで、をクリックして**BTAHL7 スキーマ**、クリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-118">In the **Templates** pane, click **BTAHL7 Schemas**, and then click **Add**.</span></span>  
+2.  <span data-ttu-id="faec7-117">[新しい項目の追加] ダイアログ ボックスで、展開**BizTalk プロジェクトの項目**、クリックして**BTAHL7 スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-117">In the Add New Item dialog box, expand **BizTalk Project Items**, and then click **BTAHL7 Schemas**.</span></span> <span data-ttu-id="faec7-118">**テンプレート** ウィンドウで、をクリックして**BTAHL7 スキーマ**、クリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-118">In the **Templates** pane, click **BTAHL7 Schemas**, and then click **Add**.</span></span>  
   
-3.  <span data-ttu-id="e0ae8-119">**HL7 スキーマの選択** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-119">In the **HL7 Schema Selector** dialog box, do the following:</span></span>  
+3.  <span data-ttu-id="faec7-119">**HL7 スキーマの選択** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="faec7-119">In the **HL7 Schema Selector** dialog box, do the following:</span></span>  
   
-    |<span data-ttu-id="e0ae8-120">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e0ae8-120">Use this</span></span>|<span data-ttu-id="e0ae8-121">目的</span><span class="sxs-lookup"><span data-stu-id="e0ae8-121">To do this</span></span>|  
+    |<span data-ttu-id="faec7-120">プロパティ</span><span class="sxs-lookup"><span data-stu-id="faec7-120">Use this</span></span>|<span data-ttu-id="faec7-121">目的</span><span class="sxs-lookup"><span data-stu-id="faec7-121">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="e0ae8-122">**Message クラス**</span><span class="sxs-lookup"><span data-stu-id="e0ae8-122">**Message Class**</span></span>|<span data-ttu-id="e0ae8-123">保持**V2.X**として選択します。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-123">Keep **V2.X** as selected.</span></span>|  
-    |<span data-ttu-id="e0ae8-124">**バージョン**</span><span class="sxs-lookup"><span data-stu-id="e0ae8-124">**Version**</span></span>|<span data-ttu-id="e0ae8-125">選択**2.3.1**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-125">Select **2.3.1**.</span></span>|  
-    |<span data-ttu-id="e0ae8-126">**メッセージの種類**</span><span class="sxs-lookup"><span data-stu-id="e0ae8-126">**Message Type**</span></span>|<span data-ttu-id="e0ae8-127">選択**ADT**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-127">Select **ADT**.</span></span>|  
-    |<span data-ttu-id="e0ae8-128">**トリガー イベント**</span><span class="sxs-lookup"><span data-stu-id="e0ae8-128">**Trigger Event**</span></span>|<span data-ttu-id="e0ae8-129">選択**A03**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-129">Select **A03**.</span></span>|  
+    |<span data-ttu-id="faec7-122">**Message クラス**</span><span class="sxs-lookup"><span data-stu-id="faec7-122">**Message Class**</span></span>|<span data-ttu-id="faec7-123">保持**V2.X**として選択します。</span><span class="sxs-lookup"><span data-stu-id="faec7-123">Keep **V2.X** as selected.</span></span>|  
+    |<span data-ttu-id="faec7-124">**[バージョン]**</span><span class="sxs-lookup"><span data-stu-id="faec7-124">**Version**</span></span>|<span data-ttu-id="faec7-125">選択**2.3.1**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-125">Select **2.3.1**.</span></span>|  
+    |<span data-ttu-id="faec7-126">**メッセージの種類**</span><span class="sxs-lookup"><span data-stu-id="faec7-126">**Message Type**</span></span>|<span data-ttu-id="faec7-127">選択**ADT**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-127">Select **ADT**.</span></span>|  
+    |<span data-ttu-id="faec7-128">**トリガー イベント**</span><span class="sxs-lookup"><span data-stu-id="faec7-128">**Trigger Event**</span></span>|<span data-ttu-id="faec7-129">選択**A03**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-129">Select **A03**.</span></span>|  
   
-4.  <span data-ttu-id="e0ae8-130">をクリックして**作成**をプロジェクトにスキーマを追加、をクリックして**キャンセル** ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-130">Click **Create** to add the schema to the project, then click **Cancel** to close the dialog box.</span></span> <span data-ttu-id="e0ae8-131">注その BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) が、BTAHL7V231Body プロジェクトには、ADT_A03_231_GLO_DEF.xsd スキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-131">Note that BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) has added the ADT_A03_231_GLO_DEF.xsd schema to the BTAHL7V231Body project.</span></span>  
+4.  <span data-ttu-id="faec7-130">をクリックして**作成**をプロジェクトにスキーマを追加、をクリックして**キャンセル** ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="faec7-130">Click **Create** to add the schema to the project, then click **Cancel** to close the dialog box.</span></span> <span data-ttu-id="faec7-131">注その BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) が、BTAHL7V231Body プロジェクトには、ADT_A03_231_GLO_DEF.xsd スキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="faec7-131">Note that BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) has added the ADT_A03_231_GLO_DEF.xsd schema to the BTAHL7V231Body project.</span></span>  
   
-### <a name="to-assign-a-strong-key-and-deploy"></a><span data-ttu-id="e0ae8-132">強力なキーを割り当てるし、展開するには</span><span class="sxs-lookup"><span data-stu-id="e0ae8-132">To assign a strong key and deploy</span></span>  
+### <a name="to-assign-a-strong-key-and-deploy"></a><span data-ttu-id="faec7-132">強力なキーを割り当てるし、展開するには</span><span class="sxs-lookup"><span data-stu-id="faec7-132">To assign a strong key and deploy</span></span>  
   
-1.  <span data-ttu-id="e0ae8-133">ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-133">In Solution Explorer, right-click **BTAHL7V231Body**, and then click **Properties**.</span></span>  
+1.  <span data-ttu-id="faec7-133">ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-133">In Solution Explorer, right-click **BTAHL7V231Body**, and then click **Properties**.</span></span>  
   
-2.  <span data-ttu-id="e0ae8-134">BTAHL7V231Body プロパティ ページ ダイアログ ボックスで、**署名**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-134">In the BTAHL7V231Body Property Page dialog box, click **Signing**.</span></span>  
+2.  <span data-ttu-id="faec7-134">BTAHL7V231Body プロパティ ページ ダイアログ ボックスで、**署名**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-134">In the BTAHL7V231Body Property Page dialog box, click **Signing**.</span></span>  
   
-3.  <span data-ttu-id="e0ae8-135">確認**アセンブリに署名**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-135">Check **Sign the assembly** check box.</span></span>  
+3.  <span data-ttu-id="faec7-135">確認**アセンブリに署名**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="faec7-135">Check **Sign the assembly** check box.</span></span>  
   
-4.  <span data-ttu-id="e0ae8-136">**厳密な名前キー ファイルを選択して**ドロップ ダウン リストを**\<を参照しています.\>.**</span><span class="sxs-lookup"><span data-stu-id="e0ae8-136">In **Choose a strong name key file** drop down list select **\<Browse…\>.**</span></span>  
+4.  <span data-ttu-id="faec7-136">**厳密な名前キー ファイルを選択して**ドロップ ダウン リストを**\<を参照しています.\>.**</span><span class="sxs-lookup"><span data-stu-id="faec7-136">In **Choose a strong name key file** drop down list select **\<Browse…\>.**</span></span>  
   
-5.  <span data-ttu-id="e0ae8-137">参照**\<*ドライブ*\>: \Batching チュートリアル**、選択**key.snk**、クリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-137">Browse to **\<*drive*\>:\Batching Tutorial**, select **key.snk**, and then click **Open**.</span></span>  
+5.  <span data-ttu-id="faec7-137">参照 **\<*ドライブ*\>: \Batching チュートリアル** **key.snk**、順にクリック**開く**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-137">Browse to **\<*drive*\>:\Batching Tutorial**, select **key.snk**, and then click **Open**.</span></span>  
   
-6.  <span data-ttu-id="e0ae8-138">ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、クリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-138">In Solution Explorer, right-click **BTAHL7V231Body**, and then click **Deploy**.</span></span> <span data-ttu-id="e0ae8-139">成功メッセージが出力ウィンドウに表示されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-139">Ensure that a success message appears in the output window.</span></span>  
+6.  <span data-ttu-id="faec7-138">ソリューション エクスプ ローラーで右クリック**BTAHL7V231Body**、クリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-138">In Solution Explorer, right-click **BTAHL7V231Body**, and then click **Deploy**.</span></span> <span data-ttu-id="faec7-139">成功メッセージが出力ウィンドウに表示されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="faec7-139">Ensure that a success message appears in the output window.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="e0ae8-140">Successful-deploy メッセージが表示されない場合を使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-140">If a successful-deploy message does not appear, use [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to troubleshoot your schemas.</span></span>  
+    >  <span data-ttu-id="faec7-140">Successful-deploy メッセージが表示されない場合を使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="faec7-140">If a successful-deploy message does not appear, use [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to troubleshoot your schemas.</span></span>  
   
- <span data-ttu-id="e0ae8-141">進みます[手順 4: 作成、バッチ メッセージを受け入れるための受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)です。</span><span class="sxs-lookup"><span data-stu-id="e0ae8-141">Proceed to [Step 4: Create a Receive Port for Accepting the Batch Message](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md).</span></span>
+ <span data-ttu-id="faec7-141">進みます[手順 4: 作成、バッチ メッセージを受け入れるための受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)です。</span><span class="sxs-lookup"><span data-stu-id="faec7-141">Proceed to [Step 4: Create a Receive Port for Accepting the Batch Message](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md).</span></span>
