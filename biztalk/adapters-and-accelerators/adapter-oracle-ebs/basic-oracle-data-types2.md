@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 008bf621-8b4e-450d-b354-ee26b91592f2
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -65,7 +65,7 @@ ms.lasthandoff: 03/28/2018
   
 > [!IMPORTANT]
 >  -   Oracle データ型の値の最大長、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データ型に対して ODP.NET でサポートされる値の最大長でバインドされています。  
-> -   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] .NET 10 進数として内部的に Udt 含まれる Oracle の数値データ型を処理します。 ただしでは、[全般] (つまり、外部の Udt) を、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] OracleDecimal として Oracle の数値データ型を内部的に処理します。  
+> -   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] .NET 10 進数として内部的に Udt 含まれる Oracle の数値データ型を処理します。 ただしでは、[全般] \(つまり、外部の Udt) を、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] OracleDecimal として Oracle の数値データ型を内部的に処理します。  
   
 ## <a name="safe-typing-enabled"></a>安全な入力が有効になっています。  
  次の表は、影響を受けるセーフ」と入力して、Oracle データ型に変更する方法を示しています、 **EnableSafeTyping**プロパティのバインドは**true**です。  

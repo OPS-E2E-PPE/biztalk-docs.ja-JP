@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Delay shape [Orchestration Designer], about Delay shape
 - configuring [Orchestration Designer], Delay shapes
 ms.assetid: 727be28d-932a-41d5-af3f-3ee6f7129a17
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -53,6 +53,6 @@ ms.lasthandoff: 03/23/2018
   
 ### <a name="to-configure-a-delay-shape"></a>遅延図形を構成するには  
   
-1.  BizTalk 式エディターが表示されていない場合を右クリックし、 **遅延** 図形を **遅延の編集**, は、[プロパティ] ウィンドウで、 **省略記号** (**.**) ボタンをクリックして、 **式** プロパティです。  
+1.  BizTalk 式エディターが表示されていない場合を右クリックし、 **遅延** 図形を **遅延の編集**, は、[プロパティ] ウィンドウで、 **省略記号** (**...**) ボタンをクリックして、 **式** プロパティです。  
   
 2.  BizTalk 式エディターを返す式を作成、 **System.DateTime** オブジェクトまたは **System.TimeSpan** オブジェクトです。 詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)です。
