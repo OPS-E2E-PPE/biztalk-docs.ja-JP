@@ -1,15 +1,16 @@
 ---
-title: "手順 2: V2.4 用の共通のスキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: V2.4 用の共通のスキーマの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, common schemas
+helpviewer_keywords:
+- interrogative tutorial, common schemas
 ms.assetid: 333ae85a-a307-4ab1-97f4-4d7b986e91de
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "手順 2: 0c4 を送信するクエリを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 0c4 を送信するクエリを実行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: double action tutorial, submitting requests
+helpviewer_keywords:
+- double action tutorial, submitting requests
 ms.assetid: ce50b892-c87c-414a-94c5-b40947fec68f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

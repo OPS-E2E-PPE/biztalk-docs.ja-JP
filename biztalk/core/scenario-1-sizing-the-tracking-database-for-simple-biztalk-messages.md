@@ -1,15 +1,16 @@
 ---
-title: "シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ変更 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ変更 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Tracking database, database size
+helpviewer_keywords:
+- Tracking database, database size
 ms.assetid: 5b8fed48-d9c9-4d1f-a320-d3e23b8b1ec9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

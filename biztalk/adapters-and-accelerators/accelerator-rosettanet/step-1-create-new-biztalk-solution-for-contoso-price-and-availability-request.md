@@ -1,15 +1,16 @@
 ---
-title: "手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating solutions
+helpviewer_keywords:
+- private process tutorial, creating solutions
 ms.assetid: e323ce26-2031-4293-95bd-a3bf02e535a5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

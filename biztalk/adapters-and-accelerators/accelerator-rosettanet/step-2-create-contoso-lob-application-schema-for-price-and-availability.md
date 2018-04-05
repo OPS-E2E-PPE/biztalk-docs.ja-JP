@@ -1,15 +1,16 @@
 ---
-title: "手順 2: Price and Availability プロジェクトの BizTalk エディターを使用しての Contoso LOB アプリケーション スキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Price and Availability プロジェクトの BizTalk エディターを使用しての Contoso LOB アプリケーション スキーマの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating LOB schemas
+helpviewer_keywords:
+- private process tutorial, creating LOB schemas
 ms.assetid: 70e26dc9-4299-4d30-8f8b-5cc3469a2025
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

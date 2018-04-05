@@ -1,15 +1,16 @@
 ---
-title: "SQLEXECUTE 操作のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: SQLEXECUTE 操作のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SQLEXECUTE operations, message schemas for
+helpviewer_keywords:
+- SQLEXECUTE operations, message schemas for
 ms.assetid: 744645f4-0674-44e0-bf8d-8df70086b0f1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/28/2017
 </SQLEXECUTE>  
 ```  
   
- <span data-ttu-id="74430-118">[ステートメント] = SQL ステートメントを実行します。たとえば、"選択 * emp から WHERE empno =: emp_no"です。</span><span class="sxs-lookup"><span data-stu-id="74430-118">[STATEMENT] = The SQL statement to execute; for example, "SELECT * from emp WHERE empno=:emp_no".</span></span>  
+ <span data-ttu-id="74430-118">[ステートメント] = SQL ステートメントを実行します。たとえば、"選択 \* emp から WHERE empno =: emp_no"です。</span><span class="sxs-lookup"><span data-stu-id="74430-118">[STATEMENT] = The SQL statement to execute; for example, "SELECT \* from emp WHERE empno=:emp_no".</span></span>  
   
  <span data-ttu-id="74430-119">[PARAM_SPEC] で、SQL ステートメントとそのデータ型は IN パラメーターの一覧を =たとえば、"emp_no 数"です。</span><span class="sxs-lookup"><span data-stu-id="74430-119">[PARAM_SPEC] = The list of the IN parameters in the SQL statement and their data types; for example, "emp_no NUMBER".</span></span>  
   

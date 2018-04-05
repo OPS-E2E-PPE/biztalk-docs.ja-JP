@@ -1,15 +1,16 @@
 ---
-title: "エラー - には、複数の Choice 子が生成されました |Microsoft ドキュメント"
-ms.custom: 
+title: エラー - には、複数の Choice 子が生成されました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.couldGenMultipleChoiceChildren
+f1_keywords:
+- bts10.map.error.couldGenMultipleChoiceChildren
 ms.assetid: 64e69ebb-781f-4ecb-9d91-6fdcca949d4b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "基本的なオーケストレーション Design3 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的なオーケストレーション Design3 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: orchestrations, design
+helpviewer_keywords:
+- orchestrations, design
 ms.assetid: c1df6d0e-51cf-4728-8d55-60eff21611b8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

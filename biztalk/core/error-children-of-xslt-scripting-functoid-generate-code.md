@@ -1,15 +1,16 @@
 ---
-title: "エラー - XSLT スクリプト Functoid の子がコードを生成します |Microsoft ドキュメント"
-ms.custom: 
+title: エラー - XSLT スクリプト Functoid の子がコードを生成します |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.xsltScriptingChildrenGenCode
+f1_keywords:
+- bts10.map.error.xsltScriptingChildrenGenCode
 ms.assetid: 9cdac362-177f-445e-904b-aa6a9b1eb46f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

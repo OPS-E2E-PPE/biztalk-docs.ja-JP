@@ -1,15 +1,16 @@
 ---
-title: "手順 4: 3A4 要求の送信 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: 3A4 要求の送信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: double action tutorial, submitting requests
+helpviewer_keywords:
+- double action tutorial, submitting requests
 ms.assetid: 2d812cbc-51bc-48d5-b0b2-3698d33664ec
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "エラー - が有効でない一括コピー Functoid の入力 |Microsoft ドキュメント"
-ms.custom: 
+title: エラー - が有効でない一括コピー Functoid の入力 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.massCopyInputNotValid
+f1_keywords:
+- bts10.map.error.massCopyInputNotValid
 ms.assetid: 141c45cd-79da-4f99-abb0-60a88dfcab76
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

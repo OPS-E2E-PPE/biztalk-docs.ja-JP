@@ -1,15 +1,16 @@
 ---
-title: "手順 5: Fabrikam 3 a 2 取引を作成するパートナーの契約 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: Fabrikam 3 a 2 取引を作成するパートナーの契約 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: double action tutorial, creating agreements
+helpviewer_keywords:
+- double action tutorial, creating agreements
 ms.assetid: a5fafdc6-e9dd-4d15-98a2-8b603901308c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "手順 4: Fabrikam 0 C 4 取引先アグリーメントの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: Fabrikam 0 C 4 取引先アグリーメントの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: double action tutorial, creating agreements
+helpviewer_keywords:
+- double action tutorial, creating agreements
 ms.assetid: a99c2cd1-0d42-4fae-a380-a53d77cd87d0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

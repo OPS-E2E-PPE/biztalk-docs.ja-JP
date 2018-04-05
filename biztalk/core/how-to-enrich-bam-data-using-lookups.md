@@ -1,15 +1,16 @@
 ---
-title: "参照を使用して BAM データを強化する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照を使用して BAM データを強化する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: BAM, data lookups
+helpviewer_keywords:
+- BAM, data lookups
 ms.assetid: 8d10659e-97d6-4cd1-9b4d-307afd43c763
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

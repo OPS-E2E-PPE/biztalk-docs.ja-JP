@@ -1,15 +1,16 @@
 ---
-title: "手順 3: Price and Availability プロジェクトを使用して BizTalk マッパーの Contoso LOB アプリケーションの作成はマップ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Price and Availability プロジェクトを使用して BizTalk マッパーの Contoso LOB アプリケーションの作成はマップ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating LOB maps
+helpviewer_keywords:
+- private process tutorial, creating LOB maps
 ms.assetid: a947e0ac-f0cb-4be9-85a8-09daf3675b1a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

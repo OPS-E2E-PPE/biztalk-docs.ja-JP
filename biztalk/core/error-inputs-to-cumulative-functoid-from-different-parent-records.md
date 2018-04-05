@@ -1,15 +1,16 @@
 ---
-title: "エラー - の異なる親レコードから累積 Functoid へ入力 |Microsoft ドキュメント"
-ms.custom: 
+title: エラー - の異なる親レコードから累積 Functoid へ入力 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.inputsToCumulativeFromDiffParents
+f1_keywords:
+- bts10.map.error.inputsToCumulativeFromDiffParents
 ms.assetid: a2dcfe6f-0cd4-41ed-a69f-e510a74760a9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

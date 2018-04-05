@@ -1,15 +1,16 @@
 ---
-title: "WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム配信 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム配信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF channel model, streaming flat-file IDOCs
+helpviewer_keywords:
+- WCF channel model, streaming flat-file IDOCs
 ms.assetid: 5010e215-d8d0-47c8-93a6-20cfdeff2951
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

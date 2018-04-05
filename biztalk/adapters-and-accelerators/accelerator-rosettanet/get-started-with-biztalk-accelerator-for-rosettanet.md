@@ -1,17 +1,18 @@
 ---
-title: "使い始める BizTalk Accelerator for RosettaNet |Microsoft ドキュメント"
-description: "について説明し、BizTalk Server では、RosettaNet accelerator (BTARN) で作業を開始するために使用可能なチュートリアルを参照してください。"
-caps.latest.revision: "7"
+title: 使い始める BizTalk Accelerator for RosettaNet |Microsoft ドキュメント
+description: について説明し、BizTalk Server では、RosettaNet accelerator (BTARN) で作業を開始するために使用可能なチュートリアルを参照してください。
+caps.latest.revision: 7
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: btarn.configuration.introduction
+f1_keywords:
+- btarn.configuration.introduction
 ms.assetid: 28a8942c-b461-4b2f-bc1f-1fc22cd08882
 ms.author: mandia
 ms.openlocfilehash: 156153010a4ee9caa5cb02535d516e05e49a21fa

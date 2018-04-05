@@ -1,15 +1,16 @@
 ---
-title: "Oracle データベース アダプターで WCF チャネル モデルの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターで WCF チャネル モデルの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF channel model, overview
+helpviewer_keywords:
+- WCF channel model, overview
 ms.assetid: 4712ba62-8360-475c-b2e4-422e499eca21
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="6bf5f-143">メッセージのアクションは、SOAP メッセージ ヘッダーの一部である文字列です。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-143">The message action is a string that is part of the SOAP message header.</span></span> <span data-ttu-id="6bf5f-144">メッセージのアクションでは、Oracle データベースで呼び出される操作を識別します。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-144">The message action identifies the operation that should be invoked on the Oracle database.</span></span> <span data-ttu-id="6bf5f-145">SCOTT/EMP テーブルに対する Select 操作の呼び出しに指定されたメッセージのアクションを次に示します:`http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select`です。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-145">The following shows the message action specified to invoke the Select operation on the /SCOTT/EMP table: `http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select`.</span></span>  
   
--   <span data-ttu-id="6bf5f-146">メッセージの本文には、操作のパラメーターのデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="6bf5f-147">メッセージ本文がによって予期されるメッセージ スキーマに対応する整形式 xml で構成される、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]要求された操作にします。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] for the requested operation.</span></span> <span data-ttu-id="6bf5f-148">次のメッセージ本文には、SCOTT での選択操作を指定します。EMP テーブル (選択 * から EMP)。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-148">The following message body specifies a Select operation on the SCOTT.EMP table (SELECT * FROM EMP).</span></span>  
+-   <span data-ttu-id="6bf5f-146">メッセージの本文には、操作のパラメーターのデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="6bf5f-147">メッセージ本文がによって予期されるメッセージ スキーマに対応する整形式 xml で構成される、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]要求された操作にします。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] for the requested operation.</span></span> <span data-ttu-id="6bf5f-148">次のメッセージ本文には、SCOTT での選択操作を指定します。EMP テーブル (選択 \* から EMP)。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-148">The following message body specifies a Select operation on the SCOTT.EMP table (SELECT \* FROM EMP).</span></span>  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
