@@ -1,16 +1,17 @@
 ---
-title: "グループを使用して、アイテムを作成する、パフォーマンス、および BizTalk Server の詳細を最適化 |Microsoft ドキュメント"
-description: "リンクを BizTalk 管理コンソールを使用してグループを作成、アプリケーションの展開、パフォーマンスの設定を変更および BizTalk Server で BizTalk サービスを再起動"
-ms.custom: 
+title: グループを使用して、アイテムを作成する、パフォーマンス、および BizTalk Server の詳細を最適化 |Microsoft ドキュメント
+description: リンクを BizTalk 管理コンソールを使用してグループを作成、アプリケーションの展開、パフォーマンスの設定を変更および BizTalk Server で BizTalk サービスを再起動
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.ops.appandsrv
+f1_keywords:
+- bts10.ops.appandsrv
 ms.assetid: d4d38eca-05b8-49b3-aad2-5b32a012a5cc
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

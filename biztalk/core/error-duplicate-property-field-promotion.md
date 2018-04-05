@@ -1,15 +1,16 @@
 ---
-title: "エラー - フィールドの昇格が重複したプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: エラー - フィールドの昇格が重複したプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.edit.error.dupPropFieldPromo
+f1_keywords:
+- bts10.edit.error.dupPropFieldPromo
 ms.assetid: 59ac55c3-7613-493c-85a3-3965c250a3bb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

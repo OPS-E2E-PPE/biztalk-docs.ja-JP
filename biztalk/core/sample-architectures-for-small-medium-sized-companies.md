@@ -1,15 +1,16 @@
 ---
-title: "サンプル アーキテクチャの小規模&amp;規模の企業 |Microsoft ドキュメント"
-ms.custom: 
+title: サンプル アーキテクチャの小規模&amp;規模の企業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: architecture, examples
+helpviewer_keywords:
+- architecture, examples
 ms.assetid: fc8c2fdd-bcb1-481c-b351-03092dd48540
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

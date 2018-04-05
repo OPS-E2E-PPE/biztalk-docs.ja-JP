@@ -1,15 +1,16 @@
 ---
-title: "エラー - 値抽出 Functoid が有効でないへの最初の入力 |Microsoft ドキュメント"
-ms.custom: 
+title: エラー - 値抽出 Functoid が有効でないへの最初の入力 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.firstInputValueExtractorNotValid
+f1_keywords:
+- bts10.map.error.firstInputValueExtractorNotValid
 ms.assetid: 7703ca5f-21aa-441f-8c28-b02da72c25c1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

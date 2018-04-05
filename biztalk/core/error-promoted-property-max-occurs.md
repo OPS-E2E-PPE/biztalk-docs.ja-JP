@@ -1,15 +1,16 @@
 ---
-title: "エラー - 昇格させたプロパティ Max Occurs |Microsoft ドキュメント"
-ms.custom: 
+title: エラー - 昇格させたプロパティ Max Occurs |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.edit.error.promoPropMaxOccurs
+f1_keywords:
+- bts10.edit.error.promoPropMaxOccurs
 ms.assetid: fc07367e-40f2-46e9-aeeb-bfa2498b1b37
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

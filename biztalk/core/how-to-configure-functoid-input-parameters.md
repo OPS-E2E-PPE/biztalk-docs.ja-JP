@@ -1,15 +1,16 @@
 ---
-title: "Functoid 入力パラメーターを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid 入力パラメーターを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: bts10.mapper.functoid.inputs
+helpviewer_keywords:
+- bts10.mapper.functoid.inputs
 ms.assetid: 2c8f773a-932c-423d-b3fe-724265304b0a
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

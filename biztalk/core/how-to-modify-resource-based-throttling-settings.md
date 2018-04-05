@@ -1,15 +1,16 @@
 ---
-title: "調整の設定ベースのリソースを変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 調整の設定ベースのリソースを変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Bts10.settings.HostResource
+f1_keywords:
+- Bts10.settings.HostResource
 ms.assetid: 5f8b32a8-d8cc-4045-a8be-0de0bbadcce4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
