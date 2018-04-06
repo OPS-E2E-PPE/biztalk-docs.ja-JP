@@ -11,7 +11,7 @@ helpviewer_keywords:
 - trading partners, agreements
 - agreements, trading partners
 ms.assetid: 846466d2-db39-42ba-8be1-ecca83a55a02
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/23/2018
 ### <a name="process-configuration"></a>[プロセス構成設定]  
  この設定によって、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] がメッセージの内容を処理する方法が決まります。 この設定は RosettaNet PIP を指定し、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が PIP を実装する方法を示します。 そのために、この設定は、タイムアウト、再試行値などの PIP が指定する動作設定のための値を提供します。 したがって、2 つの異なるパートナーのセット、または同じパートナーのセットは、同じ PIP を 2 つの異なる方法で実装できます。  
   
- この設定は、標準 (RosettaNet または CIDX) を指定し、ホーム組織と取引先のロールの一般的な特徴も指定します。 RosettaNet 以外のコンテンツのプロセス構成も作成できます。 そのためには、コンテンツのスキーマを作成し、スキーマに基づいて構成を作成する必要があります。 RosettaNet 以外のコンテンツの値を入力メッセージ標準、標準のバージョン、およびペイロード バインド ID の設定、**全般**] タブで、**プロセス構成設定**] ダイアログ ボックス。 RosettaNet 以外のコンテンツは、RNIF 2.0 のみを使用して転送できます。  
+ この設定は、標準 (RosettaNet または CIDX) を指定し、ホーム組織と取引先のロールの一般的な特徴も指定します。 RosettaNet 以外のコンテンツのプロセス構成も作成できます。 そのためには、コンテンツのスキーマを作成し、スキーマに基づいて構成を作成する必要があります。 RosettaNet 以外のコンテンツの値を入力メッセージ標準、標準のバージョン、およびペイロード バインド ID の設定、**全般** タブで、**プロセス構成設定** ダイアログ ボックス。 RosettaNet 以外のコンテンツは、RNIF 2.0 のみを使用して転送できます。  
   
  これらのプロパティの設定の詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)です。  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 03/23/2018
 ### <a name="partner-organization"></a>パートナー組織  
  これらの設定を受信してメッセージに応答するパートナーを定義します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 各着信 RNIF メッセージが、ホーム組織とアグリーメントを持つ有効なパーティから送られたことを検証します。 ない場合は、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]を認証し、メッセージを処理は失敗します。 これらのプロパティの設定の詳細については、次を参照してください。[を作成または編集パートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)です。  
   
-### <a name="agreements-trading-partner-agreement-variables"></a>[アグリーメント] (取引先アグリーメント変数)  
+### <a name="agreements-trading-partner-agreement-variables"></a>[アグリーメント] \(取引先アグリーメント変数)  
  このアグリーメントは、取引先とのすべての取引関係を指定します。 アグリーメントは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールの定義に基づいてプロセス構成設定の表示コードを指定します。 RNIF バージョン、ポート URL、プロトコル設定 (エンコーディングと暗号化)、およびその他の変数も指定します。 これらのプロパティの設定の詳細については、次を参照してください。[を作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)です。  
   
  管理コンソールの詳細については、次を参照してください。[構成、証明書、データベース、およびセキュリティの管理](manage-configuration-certificates-databases-security.md)です。 開発者用リファレンスの Microsoft.Solutions.BTARN.ConfigurationManager 名前空間のクラスとインターフェイスを使用して、プログラムによってこの設定に読み取り専用でアクセスすることもできます。  

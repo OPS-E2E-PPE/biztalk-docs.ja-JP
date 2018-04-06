@@ -17,7 +17,7 @@ helpviewer_keywords:
 - modifying, agreements
 - agreements, trading partners
 ms.assetid: 4bbe4b57-d6ec-4448-9c80-2aecd98e0dc7
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/23/2018
   
  取引先アグリーメントには、プロセス構成、ホーム組織、パートナー、およびアグリーメントに関する設定が含まれています。 アグリーメントには、これらすべての設定が必要になります。 プロセス構成は RosettaNet PIP またはカスタム スキーマのいずれに基づいて作成できますが、その場合は構成を作成する必要があります。 また、ホーム組織と取引先組織の両方を定義する必要があります。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 不明なパーティ間のメッセージ交換をサポートしていません。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、これらすべての設定に基づいて、メッセージを処理および検証します。 たとえば CIDX メッセージの場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は RosettaNet Implementation Framework (RNIF) のバージョン (1.1 のみ)、[0A1 アグリーメント] (非 0A1 のみ)、および `Is Single Action` プロパティ (シングル アクションのみ) に基づいて検証を行います。 CIDX メッセージは、RNIF のバージョン「1.1」、"0A1"に、0A1 アグリーメントを設定する場合にのみを検証し、`Is Single Action`プロパティを`True`です。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] また、アグリーメントのプロパティにプロセス構成プロファイルの設定と整合性があることを検証します。 たとえば、プロファイルの `Standard` プロパティが CIDX に設定されているかどうか、およびアグリーメントの [0A1 アグリーメント] プロパティが非 0A1 に設定されているかどうかが確認されます。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、これらすべての設定に基づいて、メッセージを処理および検証します。 たとえば CIDX メッセージの場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は RosettaNet Implementation Framework (RNIF) のバージョン (1.1 のみ)、[0A1 アグリーメント] \(非 0A1 のみ)、および `Is Single Action` プロパティ (シングル アクションのみ) に基づいて検証を行います。 CIDX メッセージは、RNIF のバージョン「1.1」、"0A1"に、0A1 アグリーメントを設定する場合にのみを検証し、`Is Single Action`プロパティを`True`です。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] また、アグリーメントのプロパティにプロセス構成プロファイルの設定と整合性があることを検証します。 たとえば、プロファイルの `Standard` プロパティが CIDX に設定されているかどうか、およびアグリーメントの [0A1 アグリーメント] プロパティが非 0A1 に設定されているかどうかが確認されます。  
   
  プロセスがアクティブな状態でアグリーメントを変更すると、予測不可能な結果が生じることがあります。 クリックするとすぐに、アグリーメントのプロパティへの変更が適用されます**適用**または**OK**を受け入れるには予測できませんプロセスのどのステージが実行されています。 アグリーメントを変更した後は、現在のプロセスの新しいアクティビティや新しいプロセスはすべて、変更されたアグリーメント プロパティを使用します。 ただし、アグリーメントを変更するときに実行中であったプロセスは、処理中のメッセージには以前のアグリーメント プロパティを既に使用していた可能性があります。  
   
