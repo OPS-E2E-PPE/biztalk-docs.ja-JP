@@ -1,14 +1,14 @@
 ---
-title: "CBR (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: CBR (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add16683-4090-4854-8d6e-923b58937e9d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,7 +34,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
   
 -   使用して、 **AddNewSendPort**のメソッド、**アプリケーション**sendportusorders を CBRApplication に新しい送信ポートを追加するクラス。 このポートは、仮の Web アドレスによるトランスポートで HTTP アダプターを使用するように構成されます。  
   
--   アメリカの CBRApplication のメッセージをサブスクライブする SendportUSOrders にフィルターを追加します。100 の国コード値。  
+-   アメリカ合衆国の CBRApplication のメッセージをサブスクライブする SendportUSOrders にフィルターを追加します。100 の国コード値。  
   
 -   米国ベースのメッセージを変換するための CBRApplication マップを SendportUSOrders の送信マップに追加します。  
   

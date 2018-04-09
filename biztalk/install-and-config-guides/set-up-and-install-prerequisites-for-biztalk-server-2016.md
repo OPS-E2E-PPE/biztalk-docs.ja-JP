@@ -1,17 +1,17 @@
 ---
-title: "設定し、BizTalk Server 2016 の前提条件のインストール |Microsoft ドキュメント"
-description: "インストールして、必要なソフトウェアと BizTalk Server 2016 用の設定を構成する手順"
+title: 設定し、BizTalk Server 2016 の前提条件のインストール |Microsoft ドキュメント
+description: インストールして、必要なソフトウェアと BizTalk Server 2016 用の設定を構成する手順
 author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
-ms.custom: 
+ms.custom: ''
 ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
-caps.latest.revision: "11"
+caps.latest.revision: 11
 ms.author: mandia
 ms.openlocfilehash: 2f03aaf7d33cc494320d1ef0944b48286bc1b24c
 ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
@@ -81,10 +81,10 @@ BizTalk Server のセットアップを実行すると、イベントの記録�
 
 ## <a name="edge-cant-be-opened-optional"></a>エッジは、(省略可能) 開くことができません。
 
-Edge の利用時に次のメッセージが表示されます:  
+Microsoft Edge の利用時に次のメッセージが表示されます:  
 `Microsoft Edge can't be opened using the Built-in Administrator account. Sign in with a different account and try again.`
 
-ビルトイン Administrator アカウントで Edge を開くには:
+ビルトイン Administrator アカウントで Microsoft Edge を開くには:
 
 1. [スタート] メニューで、**[ローカル セキュリティ ポリシー]** を開きます。 あるいは、**[サーバー マネージャー]** を開き、**[ツール]** を選択し、**[ローカル セキュリティ ポリシー]** を選択します。
 2.  **[ローカル ポリシー]** を展開し、**[セキュリティ オプション]** を選択します。 
