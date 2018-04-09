@@ -1,14 +1,14 @@
 ---
-title: "CBR (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: CBR (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add16683-4090-4854-8d6e-923b58937e9d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,70 +18,70 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
 ---
-# <a name="cbr-biztalk-server-sample"></a><span data-ttu-id="60f02-102">CBR (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="60f02-102">CBR (BizTalk Server Sample)</span></span>
-<span data-ttu-id="60f02-103">CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加して新しい構成が BizTalk メッセージのコンテンツ ベース ルーティング用のポートを送信します。</span><span class="sxs-lookup"><span data-stu-id="60f02-103">The CBR sample demonstrates using the **ExplorerOM** administrative objects to add and configure new send ports for content-based routing of BizTalk messages.</span></span>  
+# <a name="cbr-biztalk-server-sample"></a><span data-ttu-id="3e7ac-102">CBR (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="3e7ac-102">CBR (BizTalk Server Sample)</span></span>
+<span data-ttu-id="3e7ac-103">CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加して新しい構成が BizTalk メッセージのコンテンツ ベース ルーティング用のポートを送信します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-103">The CBR sample demonstrates using the **ExplorerOM** administrative objects to add and configure new send ports for content-based routing of BizTalk messages.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="60f02-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="60f02-104">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="3e7ac-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="3e7ac-104">Prerequisites</span></span>  
   
--   <span data-ttu-id="60f02-105">このサンプルにある setup.bat を実行して CBRSample を配置することが必要です、 \<*サンプル パス*\>\Messaging\CBRSample ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="60f02-105">This sample requires that the CBRSample be deployed by running setup.bat located in the \<*Samples Path*\>\Messaging\CBRSample directory.</span></span>  
+-   <span data-ttu-id="3e7ac-105">このサンプルにある setup.bat を実行して CBRSample を配置することが必要です、 \<*サンプル パス*\>\Messaging\CBRSample ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-105">This sample requires that the CBRSample be deployed by running setup.bat located in the \<*Samples Path*\>\Messaging\CBRSample directory.</span></span>  
   
--   <span data-ttu-id="60f02-106">このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。</span><span class="sxs-lookup"><span data-stu-id="60f02-106">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
+-   <span data-ttu-id="3e7ac-106">このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-106">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
   
--   <span data-ttu-id="60f02-107">Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。</span><span class="sxs-lookup"><span data-stu-id="60f02-107">The Windows PowerShell script example requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="60f02-108">詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)です。</span><span class="sxs-lookup"><span data-stu-id="60f02-108">For more information see: [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
+-   <span data-ttu-id="3e7ac-107">Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-107">The Windows PowerShell script example requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="3e7ac-108">詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)です。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-108">For more information see: [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
   
-## <a name="what-this-sample-does"></a><span data-ttu-id="60f02-109">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="60f02-109">What This Sample Does</span></span>  
- <span data-ttu-id="60f02-110">このサンプルでは、管理オブジェクトを使用して、 **Microsoft.BizTalk.ExplorerOM** CBRApplication サンプルに 2 つの新しいポートを追加する名前空間。</span><span class="sxs-lookup"><span data-stu-id="60f02-110">This sample demonstrates using the administrative objects in the **Microsoft.BizTalk.ExplorerOM** namespace to add two new ports to the CBRApplication sample.</span></span> <span data-ttu-id="60f02-111">これらの新しいポートは、CBRApplication のサンプル ポートです。</span><span class="sxs-lookup"><span data-stu-id="60f02-111">These new ports are example ports for CBRApplication.</span></span> <span data-ttu-id="60f02-112">これらのポートは、HTTP アダプターを使用してメッセージを仮の HTTP Web サービス アドレスにルーティングするように構成されます。</span><span class="sxs-lookup"><span data-stu-id="60f02-112">The ports are configured to route messages to a hypothetical HTTP Web service address by using the HTTP adapter.</span></span> <span data-ttu-id="60f02-113">このサンプルでは、 **ExplorerOM** オブジェクトを使用して次の操作を実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="60f02-113">The sample demonstrates the following operations using the **ExplorerOM** objects:</span></span>  
+## <a name="what-this-sample-does"></a><span data-ttu-id="3e7ac-109">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="3e7ac-109">What This Sample Does</span></span>  
+ <span data-ttu-id="3e7ac-110">このサンプルでは、管理オブジェクトを使用して、 **Microsoft.BizTalk.ExplorerOM** CBRApplication サンプルに 2 つの新しいポートを追加する名前空間。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-110">This sample demonstrates using the administrative objects in the **Microsoft.BizTalk.ExplorerOM** namespace to add two new ports to the CBRApplication sample.</span></span> <span data-ttu-id="3e7ac-111">これらの新しいポートは、CBRApplication のサンプル ポートです。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-111">These new ports are example ports for CBRApplication.</span></span> <span data-ttu-id="3e7ac-112">これらのポートは、HTTP アダプターを使用してメッセージを仮の HTTP Web サービス アドレスにルーティングするように構成されます。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-112">The ports are configured to route messages to a hypothetical HTTP Web service address by using the HTTP adapter.</span></span> <span data-ttu-id="3e7ac-113">このサンプルでは、 **ExplorerOM** オブジェクトを使用して次の操作を実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-113">The sample demonstrates the following operations using the **ExplorerOM** objects:</span></span>  
   
--   <span data-ttu-id="60f02-114">使用して、 **AddNewSendPort**のメソッド、**アプリケーション**sendportusorders を CBRApplication に新しい送信ポートを追加するクラス。</span><span class="sxs-lookup"><span data-stu-id="60f02-114">Using the **AddNewSendPort** method of the **Application** class to add a new send port called SendportUSOrders to CBRApplication.</span></span> <span data-ttu-id="60f02-115">このポートは、仮の Web アドレスによるトランスポートで HTTP アダプターを使用するように構成されます。</span><span class="sxs-lookup"><span data-stu-id="60f02-115">The port is configured to use the HTTP adapter for transport with a hypothetical Web address.</span></span>  
+-   <span data-ttu-id="3e7ac-114">使用して、 **AddNewSendPort**のメソッド、**アプリケーション**sendportusorders を CBRApplication に新しい送信ポートを追加するクラス。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-114">Using the **AddNewSendPort** method of the **Application** class to add a new send port called SendportUSOrders to CBRApplication.</span></span> <span data-ttu-id="3e7ac-115">このポートは、仮の Web アドレスによるトランスポートで HTTP アダプターを使用するように構成されます。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-115">The port is configured to use the HTTP adapter for transport with a hypothetical Web address.</span></span>  
   
--   <span data-ttu-id="60f02-116">アメリカの CBRApplication のメッセージをサブスクライブする SendportUSOrders にフィルターを追加します。100 の国コード値。</span><span class="sxs-lookup"><span data-stu-id="60f02-116">Adding a filter to SendportUSOrders that subscribes to messages in CBRApplication with the U.S. Country Code value of 100.</span></span>  
+-   <span data-ttu-id="3e7ac-116">アメリカ合衆国の CBRApplication のメッセージをサブスクライブする SendportUSOrders にフィルターを追加します。100 の国コード値。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-116">Adding a filter to SendportUSOrders that subscribes to messages in CBRApplication with the U.S. Country Code value of 100.</span></span>  
   
--   <span data-ttu-id="60f02-117">米国ベースのメッセージを変換するための CBRApplication マップを SendportUSOrders の送信マップに追加します。</span><span class="sxs-lookup"><span data-stu-id="60f02-117">Adding the CBRApplication map for transforming U.S.-based messages to the outbound maps for SendportUSOrders.</span></span>  
+-   <span data-ttu-id="3e7ac-117">米国ベースのメッセージを変換するための CBRApplication マップを SendportUSOrders の送信マップに追加します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-117">Adding the CBRApplication map for transforming U.S.-based messages to the outbound maps for SendportUSOrders.</span></span>  
   
--   <span data-ttu-id="60f02-118">新しい送信ポート SendportCANOrders を CBRApplication に追加し、仮の Web アドレスによるトランスポートで HTTP アダプターを使用するようにこのポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="60f02-118">Adding a new send port called SendportCANOrders to CBRApplication and configuring it to use the HTTP adapter for transport with a hypothetical Web address.</span></span>  
+-   <span data-ttu-id="3e7ac-118">新しい送信ポート SendportCANOrders を CBRApplication に追加し、仮の Web アドレスによるトランスポートで HTTP アダプターを使用するようにこのポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-118">Adding a new send port called SendportCANOrders to CBRApplication and configuring it to use the HTTP adapter for transport with a hypothetical Web address.</span></span>  
   
--   <span data-ttu-id="60f02-119">カナダの国コードの値 200 を持つ CBRApplication のメッセージをサブスクライブするフィルターを SendportCANOrders に追加します。</span><span class="sxs-lookup"><span data-stu-id="60f02-119">Adding a filter to SendportCANOrders that subscribes to messages in CBRApplication with the Canada Country Code value of 200.</span></span>  
+-   <span data-ttu-id="3e7ac-119">カナダの国コードの値 200 を持つ CBRApplication のメッセージをサブスクライブするフィルターを SendportCANOrders に追加します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-119">Adding a filter to SendportCANOrders that subscribes to messages in CBRApplication with the Canada Country Code value of 200.</span></span>  
   
--   <span data-ttu-id="60f02-120">カナダ ベースのメッセージを変換するための CBRApplication マップを SendportCANOrders の送信マップに追加します。</span><span class="sxs-lookup"><span data-stu-id="60f02-120">Adding the CBRApplication map for transforming Canadian-based messages to the outbound maps for SendportCANOrders.</span></span>  
+-   <span data-ttu-id="3e7ac-120">カナダ ベースのメッセージを変換するための CBRApplication マップを SendportCANOrders の送信マップに追加します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-120">Adding the CBRApplication map for transforming Canadian-based messages to the outbound maps for SendportCANOrders.</span></span>  
   
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="60f02-121">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="60f02-121">Where To Find This Sample</span></span>  
- <span data-ttu-id="60f02-122">このサンプルは、SDK がある次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="60f02-122">The sample is located in the following SDK location:</span></span>  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="3e7ac-121">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="3e7ac-121">Where To Find This Sample</span></span>  
+ <span data-ttu-id="3e7ac-122">このサンプルは、SDK がある次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-122">The sample is located in the following SDK location:</span></span>  
   
- <span data-ttu-id="60f02-123">\<*パスのサンプル*\>\Admin\ExplorerOM\CBR</span><span class="sxs-lookup"><span data-stu-id="60f02-123">\<*Samples Path*\>\Admin\ExplorerOM\CBR</span></span>  
+ <span data-ttu-id="3e7ac-123">\<*パスのサンプル*\>\Admin\ExplorerOM\CBR</span><span class="sxs-lookup"><span data-stu-id="3e7ac-123">\<*Samples Path*\>\Admin\ExplorerOM\CBR</span></span>  
   
- <span data-ttu-id="60f02-124">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="60f02-124">The following table shows the files in this sample and describes their purpose.</span></span>  
+ <span data-ttu-id="3e7ac-124">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-124">The following table shows the files in this sample and describes their purpose.</span></span>  
   
-|<span data-ttu-id="60f02-125">ファイル</span><span class="sxs-lookup"><span data-stu-id="60f02-125">File(s)</span></span>|<span data-ttu-id="60f02-126">Description</span><span class="sxs-lookup"><span data-stu-id="60f02-126">Description</span></span>|  
+|<span data-ttu-id="3e7ac-125">ファイル</span><span class="sxs-lookup"><span data-stu-id="3e7ac-125">File(s)</span></span>|<span data-ttu-id="3e7ac-126">Description</span><span class="sxs-lookup"><span data-stu-id="3e7ac-126">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="60f02-127">ContentBasedRouting.cs</span><span class="sxs-lookup"><span data-stu-id="60f02-127">ContentBasedRouting.cs</span></span>|<span data-ttu-id="60f02-128">このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。</span><span class="sxs-lookup"><span data-stu-id="60f02-128">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span>|  
-|<span data-ttu-id="60f02-129">CBR.sln,CBR.csproj,CBR.suo</span><span class="sxs-lookup"><span data-stu-id="60f02-129">CBR.sln, CBR.csproj, CBR.suo</span></span>|<span data-ttu-id="60f02-130">このサンプルのソリューション ファイルとプロジェクト ファイル。</span><span class="sxs-lookup"><span data-stu-id="60f02-130">Solution and project files for the sample.</span></span>|  
+|<span data-ttu-id="3e7ac-127">ContentBasedRouting.cs</span><span class="sxs-lookup"><span data-stu-id="3e7ac-127">ContentBasedRouting.cs</span></span>|<span data-ttu-id="3e7ac-128">このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-128">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span>|  
+|<span data-ttu-id="3e7ac-129">CBR.sln,CBR.csproj,CBR.suo</span><span class="sxs-lookup"><span data-stu-id="3e7ac-129">CBR.sln, CBR.csproj, CBR.suo</span></span>|<span data-ttu-id="3e7ac-130">このサンプルのソリューション ファイルとプロジェクト ファイル。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-130">Solution and project files for the sample.</span></span>|  
   
-## <a name="building-and-running-this-sample"></a><span data-ttu-id="60f02-131">このサンプルのビルドおよび実行</span><span class="sxs-lookup"><span data-stu-id="60f02-131">Building and Running This Sample</span></span>  
+## <a name="building-and-running-this-sample"></a><span data-ttu-id="3e7ac-131">このサンプルのビルドおよび実行</span><span class="sxs-lookup"><span data-stu-id="3e7ac-131">Building and Running This Sample</span></span>  
   
-#### <a name="to-build-this-sample"></a><span data-ttu-id="60f02-132">このサンプルをビルドするには</span><span class="sxs-lookup"><span data-stu-id="60f02-132">To build this sample</span></span>  
+#### <a name="to-build-this-sample"></a><span data-ttu-id="3e7ac-132">このサンプルをビルドするには</span><span class="sxs-lookup"><span data-stu-id="3e7ac-132">To build this sample</span></span>  
   
-1.  <span data-ttu-id="60f02-133">CBRSample をビルド、展開、および構成する手順が完了していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="60f02-133">Make sure you have completed the steps for building, deploying, and configuring the CBRSample.</span></span> <span data-ttu-id="60f02-134">これらの手順で提供される[CBRSample (BizTalk Server サンプル)](../core/cbrsample-biztalk-server-sample.md)です。</span><span class="sxs-lookup"><span data-stu-id="60f02-134">Those steps are provided in [CBRSample (BizTalk Server Sample)](../core/cbrsample-biztalk-server-sample.md).</span></span>  
+1.  <span data-ttu-id="3e7ac-133">CBRSample をビルド、展開、および構成する手順が完了していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-133">Make sure you have completed the steps for building, deploying, and configuring the CBRSample.</span></span> <span data-ttu-id="3e7ac-134">これらの手順で提供される[CBRSample (BizTalk Server サンプル)](../core/cbrsample-biztalk-server-sample.md)です。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-134">Those steps are provided in [CBRSample (BizTalk Server Sample)](../core/cbrsample-biztalk-server-sample.md).</span></span>  
   
-2.  <span data-ttu-id="60f02-135">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル CBR.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="60f02-135">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file CBR.sln.</span></span>  
+2.  <span data-ttu-id="3e7ac-135">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル CBR.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-135">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file CBR.sln.</span></span>  
   
-3.  <span data-ttu-id="60f02-136">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="60f02-136">On the **Build** menu, click **Build Solution**.</span></span>  
+3.  <span data-ttu-id="3e7ac-136">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-136">On the **Build** menu, click **Build Solution**.</span></span>  
   
-#### <a name="to-run-this-sample"></a><span data-ttu-id="60f02-137">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="60f02-137">To run this sample</span></span>  
+#### <a name="to-run-this-sample"></a><span data-ttu-id="3e7ac-137">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="3e7ac-137">To run this sample</span></span>  
   
-1.  <span data-ttu-id="60f02-138">開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールに移動して、 **CBRApplication**ノード。</span><span class="sxs-lookup"><span data-stu-id="60f02-138">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console and navigate to the **CBRApplication** node.</span></span>  
+1.  <span data-ttu-id="3e7ac-138">開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールに移動して、 **CBRApplication**ノード。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-138">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console and navigate to the **CBRApplication** node.</span></span>  
   
-2.  <span data-ttu-id="60f02-139">展開して、 **CBRApplication**ことを確認するノード、**送信ポート**ノードが現在 CBRUSSendPort と CBRCANSendPort として記載されている 2 つのポートがします。</span><span class="sxs-lookup"><span data-stu-id="60f02-139">Expand the **CBRApplication** node to verify that the **Send Ports** node currently has only two ports listed as CBRUSSendPort and CBRCANSendPort.</span></span>  
+2.  <span data-ttu-id="3e7ac-139">展開して、 **CBRApplication**ことを確認するノード、**送信ポート**ノードが現在 CBRUSSendPort と CBRCANSendPort として記載されている 2 つのポートがします。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-139">Expand the **CBRApplication** node to verify that the **Send Ports** node currently has only two ports listed as CBRUSSendPort and CBRCANSendPort.</span></span>  
   
-3.  <span data-ttu-id="60f02-140">コマンド ウィンドウを開き、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="60f02-140">Open a command window and navigate to the following folder:</span></span>  
+3.  <span data-ttu-id="3e7ac-140">コマンド ウィンドウを開き、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-140">Open a command window and navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="60f02-141">\<*パスのサンプル*\>\Admin\ExplorerOM\CBR\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="60f02-141">\<*Samples Path*\>\Admin\ExplorerOM\CBR\bin\Debug</span></span>  
+     <span data-ttu-id="3e7ac-141">\<*パスのサンプル*\>\Admin\ExplorerOM\CBR\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="3e7ac-141">\<*Samples Path*\>\Admin\ExplorerOM\CBR\bin\Debug</span></span>  
   
-4.  <span data-ttu-id="60f02-142">CBR.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="60f02-142">Run the file CBR.exe.</span></span>  
+4.  <span data-ttu-id="3e7ac-142">CBR.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-142">Run the file CBR.exe.</span></span>  
   
-5.  <span data-ttu-id="60f02-143">F5 キーを押して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで表示するのには、**送信ポート**ノード。</span><span class="sxs-lookup"><span data-stu-id="60f02-143">Press F5 in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to refresh the view under the **Send Ports** node.</span></span> <span data-ttu-id="60f02-144">このサンプルによって、2 つの新しいポートが CBRApplication に追加されています。</span><span class="sxs-lookup"><span data-stu-id="60f02-144">You should now see the two new ports added to CBRApplication by this sample.</span></span> <span data-ttu-id="60f02-145">これらのポートは SendportUSOrders および SendportCANOrders です。</span><span class="sxs-lookup"><span data-stu-id="60f02-145">They are called SendportUSOrders and SendportCANOrders.</span></span>  
+5.  <span data-ttu-id="3e7ac-143">F5 キーを押して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで表示するのには、**送信ポート**ノード。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-143">Press F5 in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to refresh the view under the **Send Ports** node.</span></span> <span data-ttu-id="3e7ac-144">このサンプルによって、2 つの新しいポートが CBRApplication に追加されています。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-144">You should now see the two new ports added to CBRApplication by this sample.</span></span> <span data-ttu-id="3e7ac-145">これらのポートは SendportUSOrders および SendportCANOrders です。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-145">They are called SendportUSOrders and SendportCANOrders.</span></span>  
   
-## <a name="windows-powershell-script-example"></a><span data-ttu-id="60f02-146">Windows PowerShell スクリプトの例</span><span class="sxs-lookup"><span data-stu-id="60f02-146">Windows PowerShell Script Example</span></span>  
- <span data-ttu-id="60f02-147">次の Windows PowerShell スクリプトを使用すると、 **ExplorerOM** クラスの同じ機能を実行できます。</span><span class="sxs-lookup"><span data-stu-id="60f02-147">The following Windows PowerShell script can be used to demonstrate the same features of the **ExplorerOM** classes.</span></span> <span data-ttu-id="60f02-148">ただし、ため、**追加**のメソッド、 **SendPort.OutboundTranforms**コレクションは内部でマークされている、 **ExplorerOM**アセンブリから直接呼び出すことができませんWindows PowerShell。</span><span class="sxs-lookup"><span data-stu-id="60f02-148">However, because the **Add** method for the **SendPort.OutboundTranforms** collection is marked Internal in the **ExplorerOM** assembly it cannot be called directly from Windows PowerShell.</span></span> <span data-ttu-id="60f02-149">この Windows PowerShell スクリプトでは、Windows PowerShell から BizTalk WMI プロバイダーを使用して、送信変換マップを新しいポートに追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="60f02-149">This Windows PowerShell script demonstrates using the BizTalk WMI Provider from Windows PowerShell to add the outbound transform map to the new port.</span></span>  
+## <a name="windows-powershell-script-example"></a><span data-ttu-id="3e7ac-146">Windows PowerShell スクリプトの例</span><span class="sxs-lookup"><span data-stu-id="3e7ac-146">Windows PowerShell Script Example</span></span>  
+ <span data-ttu-id="3e7ac-147">次の Windows PowerShell スクリプトを使用すると、 **ExplorerOM** クラスの同じ機能を実行できます。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-147">The following Windows PowerShell script can be used to demonstrate the same features of the **ExplorerOM** classes.</span></span> <span data-ttu-id="3e7ac-148">ただし、ため、**追加**のメソッド、 **SendPort.OutboundTranforms**コレクションは内部でマークされている、 **ExplorerOM**アセンブリから直接呼び出すことができませんWindows PowerShell。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-148">However, because the **Add** method for the **SendPort.OutboundTranforms** collection is marked Internal in the **ExplorerOM** assembly it cannot be called directly from Windows PowerShell.</span></span> <span data-ttu-id="3e7ac-149">この Windows PowerShell スクリプトでは、Windows PowerShell から BizTalk WMI プロバイダーを使用して、送信変換マップを新しいポートに追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-149">This Windows PowerShell script demonstrates using the BizTalk WMI Provider from Windows PowerShell to add the outbound transform map to the new port.</span></span>  
   
 ```  
 Function WMI_AddOutboundTransformToPort($transform,$strPortName)  
@@ -179,7 +179,7 @@ else
 }  
 ```  
   
- <span data-ttu-id="60f02-150">次に、Windows PowerShell スクリプトを実行して 2 つの新しいポートを作成した場合の出力例を示します。</span><span class="sxs-lookup"><span data-stu-id="60f02-150">Here is an example output from running the Windows PowerShell script to create the two new ports.</span></span> <span data-ttu-id="60f02-151">新しいポートは、既に説明したとおり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールでも確認できます。</span><span class="sxs-lookup"><span data-stu-id="60f02-151">The new ports can also be verified in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console as mentioned above.</span></span>  
+ <span data-ttu-id="3e7ac-150">次に、Windows PowerShell スクリプトを実行して 2 つの新しいポートを作成した場合の出力例を示します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-150">Here is an example output from running the Windows PowerShell script to create the two new ports.</span></span> <span data-ttu-id="3e7ac-151">新しいポートは、既に説明したとおり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールでも確認できます。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-151">The new ports can also be verified in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console as mentioned above.</span></span>  
   
 ```  
 PS C:\> .\CBR.ps1  
@@ -196,6 +196,6 @@ Transform : CBRSample.CBRInput2CANMap,CBRSample, Version=1.0.0.0, Culture=neutra
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="60f02-152">参照</span><span class="sxs-lookup"><span data-stu-id="60f02-152">See Also</span></span>  
- <span data-ttu-id="60f02-153">[Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="60f02-153">[Admin-ExplorerOM (BizTalk Server Samples Folder)](../core/admin-explorerom-biztalk-server-samples-folder.md) </span></span>  
- [<span data-ttu-id="60f02-154">CBRSample (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="60f02-154">CBRSample (BizTalk Server Sample)</span></span>](../core/cbrsample-biztalk-server-sample.md)
+## <a name="see-also"></a><span data-ttu-id="3e7ac-152">参照</span><span class="sxs-lookup"><span data-stu-id="3e7ac-152">See Also</span></span>  
+ <span data-ttu-id="3e7ac-153">[Admin ExplorerOM (BizTalk Server Samples フォルダ)](../core/admin-explorerom-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="3e7ac-153">[Admin-ExplorerOM (BizTalk Server Samples Folder)](../core/admin-explorerom-biztalk-server-samples-folder.md) </span></span>  
+ [<span data-ttu-id="3e7ac-154">CBRSample (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="3e7ac-154">CBRSample (BizTalk Server Sample)</span></span>](../core/cbrsample-biztalk-server-sample.md)
