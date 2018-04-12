@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03d16481-cc8b-4e28-a33c-92e48a9a7e8f
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -87,7 +87,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
   
  この例では、挿入操作と ACCOUNT\ACCOUNT ビジネス オブジェクトの削除操作の両方の WCF クライアント クラスを作成します。  
   
- **。 \svcutil"siebel://Username=YourUserName;パスワード =YourPassword@Siebel_server:1234しますか?SiebelEnterpriseServer = ent_server & SiebelObjectManager = obj_mgr & 言語日本語 & wsdl op を = =http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete"**  
+ **.\svcutil " siebel://Username=YourUserName;Password=YourPassword@Siebel_server:1234?SiebelEnterpriseServer=ent_server&SiebelObjectManager=obj_mgr&Language=enu&wsdl&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete"**  
   
 > [!IMPORTANT]
 >  引用符で囲まれたコマンド ラインで、接続 URI を配置する必要があります。 それ以外の場合、svcutil.exe しようとすると操作のメタデータを取得する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]はサポートしていません。 これらの試行の結果は未定義です。  
