@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 2df2cb82508a12e8e8d279204130d2deedd744f4
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>手順 3: ビルドを作成し、リリース定義
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 03/28/2018
         * **既存の BizTalk アプリケーションを更新して**: スキーマなどの変更を既に実行中のアプリケーションに追加します。 アプリケーションの完全再展開は必要ありません。
         * **BizTalk Server アプリケーションをインストール**:[アプリケーションをインストールする](../core/how-to-install-a-biztalk-application.md)、BizTalk 管理のコンピューター名、および展開パッケージのパスを入力するとします。
 
-        ![Deploy operations](../core/media/vsts-deploy-operations.png)
+     ![配置操作](../core/media/vsts-deploy-operations.png)
 
     **アプリケーション名**: 入力したテキストが BizTalk 管理コンソールでアプリケーション名になります。 **いない**BizTalk アプリケーション 1 を入力します。
 

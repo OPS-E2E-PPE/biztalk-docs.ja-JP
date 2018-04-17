@@ -13,22 +13,22 @@ helpviewer_keywords:
 - BizTalk Framework Disassembler [pipeline component], distinquished fields
 - XML Disassembler [pipeline component], distinquished fields
 ms.assetid: 7e51d2fe-0004-4a7b-9055-bd41e8a4b7ab
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 20a9c79050b4489238ed94444eaebf8c3dac79d9
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>識別フィールドに逆アセンブラー パイプライン コンポーネント
 スキーマで定義された識別フィールドは、XML 逆アセンブラー、BizTalk 逆アセンブラー、またはフラット ファイル逆アセンブラー パイプランによって、次の形式でメッセージ コンテキストに書き込まれます。  
   
  *使用される名前* XPath で識別フィールドは、  
   
- *namespace URI* is "http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
+ *名前空間 URI*は"http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
   
  プロパティの値は、 **System.String** による XML ドキュメントから抽出された値は、XPath を指定します。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
  XML 逆アセンブラーがメッセージ コンテキストで次のように識別フィールドを書き込みます。  
   
- コンテキストのプロパティの名前:"/* [ローカル名 () = 'PO' and namespace-uri() ='http://SendHtmlMessage.PO']/\*[ローカル名 () '価格' and namespace-uri() = = ']"  
+ コンテキストのプロパティの名前。 `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`  
   
  プロパティの Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   

@@ -7,23 +7,18 @@ ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords:
-- BPEL4WS, restrictions
-- BPEL4WS, importing
-- BPEL4WS, orchestrations
-- orchestrations, BPEL4WS
 ms.assetid: 3626fcb9-8e7d-4812-a0c9-bde6e7954ec8
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b32a0044321ce6ac57d7bd49c14b40ba17430db
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 9e82dd80e280eff39ff5c1678b5c9751e378ee1b
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-import-bpel4ws"></a>BPEL4WS をインポートする方法
+# <a name="import-bpel4ws-in-biztalk-server"></a>BizTalk Server での BPEL4WS をインポートします。
 既存の BPEL4WS をインポートすることによってオーケストレーションを作成することができます。  
   
 > [!IMPORTANT]
@@ -31,7 +26,7 @@ ms.lasthandoff: 03/28/2018
   
  BPEL4WS をインポートする方法の例は、次を参照してください。 [BPEL インポート (BizTalk Server サンプル)](../core/bpel-import-biztalk-server-sample.md)です。  
   
-### <a name="to-import-bpel4ws-into-an-orchestration"></a>BPEL4WS をオーケストレーションにインポートするには  
+## <a name="import-bpel4ws-into-an-orchestration"></a>オーケストレーションを BPEL4WS をインポート  
   
 1.  新しいプロジェクトを作成します。  
   
@@ -69,7 +64,7 @@ ms.lasthandoff: 03/28/2018
     </element>  
     ```  
   
-     XPath - /*[local-name()='Root' and namespace-uri()='http://BizTalk_Server_Project3.Schema1']/\*[local-name()='promotedField' and namespace-uri()='']  
+     `XPath - /*[local-name()='Root' and namespace-uri()='http://BizTalk_Server_Project3.Schema1']/\*[local-name()='promotedField' and namespace-uri()='']` 
   
     |正規 XPath|非正規 XPath|  
     |---------------------|--------------------------|  
