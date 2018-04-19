@@ -64,7 +64,7 @@ ms.lasthandoff: 04/18/2018
   
     -   MT InfoPath フォームを生成する場合に入力します。 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
   
-    -   MX InfoPath フォームを生成する場合は、入力:  **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_ \<MessageName\>**  
+    -   MX InfoPath フォームを生成する場合は、入力: **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_\<MessageName\>**  
   
          これは、対応するテンプレートを使用してメッセージ インスタンスを特定するに役立ちます。  
   

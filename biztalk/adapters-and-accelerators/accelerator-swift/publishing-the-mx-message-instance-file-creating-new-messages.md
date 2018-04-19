@@ -33,4 +33,4 @@ ms.lasthandoff: 04/18/2018
   
 6.  ドキュメントのアップロード] ウィンドウで、[ **OK**です。  
   
-7.  新規 SWIFT MX メッセージで: \<MessageType\> Namespace ボックスで、型のウィンドウ **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_ \<MessageType\>**、順にクリック**OK**.
+7.  新規 SWIFT MX メッセージで: \<MessageType\> Namespace ボックスで、型のウィンドウ **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_\<MessageType\>** 、順にクリック**OK**.
