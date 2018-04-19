@@ -13,15 +13,15 @@ helpviewer_keywords:
 - configuring, WCF services
 - WCF Service Publishing Wizard
 ms.assetid: f51b86c0-8c19-453d-a66d-3f373e9f096e
-caps.latest.revision: ''
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 19383ca97f979d6932698d06eabd507b4a00954f
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF サービス公開ウィザードで公開した WCF サービスを構成する方法
 BizTalk WCF サービス公開ウィザードを使用して WCF サービスを公開した後、これらのサービスを適切に構成する必要があります。 このトピックでは、公開した WCF サービスを構成する方法について説明します。  
@@ -56,7 +56,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
 7.  選択しなかった場合、 **作成 BizTalk の受信場所** オプションで、サービス、WCF を作成するときに、 **トランスポートのプロパティ** ダイアログ ボックスで、をクリックして、 **全般的な**  タブをクリックします。**全般** タブの この受信場所の URI を入力、**アドレス**テキスト ボックス。 BizTalk WCF サービス公開ウィザードが前の手順で生成した仮想ディレクトリと .svc ファイル名を指定します (例 : /path/service.svc)。  
   
     > [!NOTE]
-    >  **アドレス** プロパティがスラッシュ (「/」) で起動し、末尾に".svc"する必要があります。 **アドレス** プロトコル スキーム、コンピューター名、または http://host:port のポート番号が、プロパティに含まれていない必要があります。 プロパティに使用できるのは、仮想ディレクトリ パスだけです。 WCF サービスのマークアップ ファイルには、.svc 拡張子を指定する必要があります。  
+    >  **アドレス** プロパティがスラッシュ (「/」) で起動し、末尾に".svc"する必要があります。 **アドレス**プロパティには必要がありますが含まれていないプロトコル スキーム、コンピュータ名またはポート番号などhttp://host:portです。 プロパティに使用できるのは、仮想ディレクトリ パスだけです。 WCF サービスのマークアップ ファイルには、.svc 拡張子を指定する必要があります。  
   
      ![WCF の [全般] タブ&#45;BasicHttp アダプタ](../core/media/1126fa6a-e3e9-44ad-aeb0-90c78226aeeb.gif "1126fa6a-e3e9-44ad-aeb0-90c78226aeeb")  
   

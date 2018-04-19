@@ -27,15 +27,15 @@ helpviewer_keywords:
 - RNIFReceive.aspx
 - synchronous connections
 ms.assetid: 21e52390-35d8-44b1-a5cd-1cd60cfe6e61
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0782c421dfe771cd024b5ce4df893e2aaa45721d
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="send-and-receive-aspx-pages"></a>送信および受信 ASPX ページ
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ASPX ページは、直接結ぶインターフェイス[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]とインターネットです。 受信ページ (RNIFReceive.aspx) と送信ページ (RNIFSend.aspx) の 2 つの ASPX ページで構成されています。 各 ASPX ページは、対応する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] パイプラインを拡張したものです。 パイプラインは ASPX ページに対して、RNIF (RosettaNet Implementation Framework) ヘッダーの処理を要求します。 ほとんどの HTTP 処理はパイプラインが実行しますが、RNIF ヘッダーの HTTP 処理は各 ASPX ページが実行します。 ASPX ページは、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタの機能を強化します。  
@@ -53,7 +53,7 @@ http://localhost:<port number>/RNIFSend.aspx?<query string>
   
  クエリ文字列には、以下に示すように、送信ページがメッセージをパートナーに送信するために必要なデータ、およびパートナーがメッセージを処理するために必要なデータが含まれます。  
   
--   取引先の URL: http://www。\<*アドレス*\>.com/RNIFReceive.aspx  
+-   取引先の URL: http://www.\<*アドレス*\>.com/RNIFReceive.aspx  
   
 -   応答タイプ : 同期または非同期  
   
