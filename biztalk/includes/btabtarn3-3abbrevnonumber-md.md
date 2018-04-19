@@ -1,1 +1,1 @@
-<span data-ttu-id="73392-101">BTARN</span><span class="sxs-lookup"><span data-stu-id="73392-101">BTARN</span></span>
+<span data-ttu-id="02234-101">BTARN</span><span class="sxs-lookup"><span data-stu-id="02234-101">BTARN</span></span>
