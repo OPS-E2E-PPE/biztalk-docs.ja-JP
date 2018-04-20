@@ -1,22 +1,22 @@
 ---
-title: "データベース ファイル グループを最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: データベース ファイル グループを最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d7fa4c9-e504-4f43-a308-517a4a574c26
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9333a88817e96b52ffe186f0a6a598b225ef5202
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>データベースのファイル グループを最適化します。
 ファイルは、入出力 (I/O) の競合が頻繁に限定要素、または実稼働環境の BizTalk Server 環境で、ボトルネックです。 BizTalk Server は非常にデータベースの処理を要するアプリケーションと、さらに、大量の I/O を非常にファイルは、BizTalk Server によって使用される SQL Server データベース。 このトピックでは、ファイルおよびファイル I/O の競合の発生を最小限に抑えるし、BizTalk Server ソリューションの全体的なパフォーマンスを向上する SQL Server のファイル グループの機能の使用を最適化する方法について説明します。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/01/2017
 > [!NOTE]  
 >  この最適化は、経験豊富な SQL Server データベース管理者と BizTalk Server データベースを正しくバックアップされている後のすべてのみでのみ実行する必要があります。 BizTalk Server 環境内のすべての SQL Server コンピューター上には、この最適化を実行してください。  
   
- SQL Server のファイルおよびファイル グループは、この機能は、複数のディスク コント ローラーに複数のディスクに作成するデータベースを許可しているので、データベースのパフォーマンスを向上させるために使用できるまたは RAID (独立したディスクの冗長アレイ) システムです。 たとえば、コンピューターにディスクが 4 個ある場合は、データ ファイル 3 つとログ ファイル 1 つから構成されるデータベースを、各ディスクにファイルを 1 つずつ配置して作成できます。 データへのアクセスと 4 つの読み取り/書き込みヘッドは並行してデータを同時にアクセスできます。 これは、ため、速度データベース操作が大幅にします。 SQL Server のディスクのハードウェア ソリューションの実装の詳細については、次を参照してください。[データベースのパフォーマンス](http://go.microsoft.com/fwlink/?LinkID=71419)(http://go.microsoft.com/fwlink/?LinkID=71419)、SQL Server Books Online にします。  
+ SQL Server のファイルおよびファイル グループは、この機能は、複数のディスク コント ローラーに複数のディスクに作成するデータベースを許可しているので、データベースのパフォーマンスを向上させるために使用できるまたは RAID (独立したディスクの冗長アレイ) システムです。 たとえば、コンピューターにディスクが 4 個ある場合は、データ ファイル 3 つとログ ファイル 1 つから構成されるデータベースを、各ディスクにファイルを 1 つずつ配置して作成できます。 データへのアクセスと 4 つの読み取り/書き込みヘッドは並行してデータを同時にアクセスできます。 これは、ため、速度データベース操作が大幅にします。 SQL Server のディスクのハードウェア ソリューションの実装の詳細については、次を参照してください。[データベースのパフォーマンス](http://go.microsoft.com/fwlink/?LinkID=71419)(http://go.microsoft.com/fwlink/?LinkID=71419) 、SQL Server Books Online にします。  
   
  さらに、ファイルおよびファイル グループを有効にするデータの配置、特定のファイル グループ内のテーブルを作成できるためです。 これにより、特定のテーブルのすべてのファイル I/O は、特定のディスクに向けることがあるために、パフォーマンスが向上します。 たとえば、頻繁に使用されるテーブルは、1 つのディスク上にある、ファイル グループ内のファイルに配置できるし、データベース内の他の頻度が低いテーブルは、2 番目のディスク上にある別のファイル グループ内の別のファイルに配置できます。  
   
@@ -53,10 +53,10 @@ ms.lasthandoff: 12/01/2017
 >  このスクリプトは、ファイル、ファイル グループ、および特定の BizTalk Server ソリューションの SQL Server データベースによって使用されるディスク構成に対応するように変更する必要がある重要です。  
   
 > [!NOTE]  
->  このトピックでは、複数のファイルと、BizTalk メッセージ ボックス データベースのファイル グループを作成する方法についても説明します。 推奨されるファイルと、BizTalk Server データベースのすべてのファイル グループの排他的なリストを参照してください"付録 B"の[BizTalk Server データベースの最適化](http://go.microsoft.com/fwlink/?LinkID=101578)ホワイト ペーパー (http://go.microsoft.com/fwlink/?LinkID=101578)。  
+>  このトピックでは、複数のファイルと、BizTalk メッセージ ボックス データベースのファイル グループを作成する方法についても説明します。 推奨されるファイルと、BizTalk Server データベースのすべてのファイル グループの排他的なリストを参照してください"付録 B"の[BizTalk Server データベースの最適化](http://go.microsoft.com/fwlink/?LinkID=101578)ホワイト ペーパー (http://go.microsoft.com/fwlink/?LinkID=101578)です。  
   
 > [!NOTE]  
->  場合でも、 [BizTalk Server データベースの最適化](http://go.microsoft.com/fwlink/?LinkID=101578)ホワイト ペーパー (http://go.microsoft.com/fwlink/?LinkID=101578) で書き込まれた[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]注意、同じ原則が BizTalk Server に適用します。  
+>  場合でも、 [BizTalk Server データベースの最適化](http://go.microsoft.com/fwlink/?LinkID=101578)ホワイト ペーパー (http://go.microsoft.com/fwlink/?LinkID=101578)で書き込まれた[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]注意、同じ原則が BizTalk Server に適用します。  
   
 ## <a name="databases-created-with-a-default-biztalk-server-configuration"></a>既定の BizTalk Server の構成で作成されたデータベース  
  これによっては、SQL Server で作成する 13 の異なるデータベースまで BizTalk Server を構成する可能性があり、これらすべてのデータベースが既定のファイル グループの作成時に機能が有効です。 SQL Server の既定のファイル グループは、ALTER DATABASE コマンドを使用して既定のファイル グループが変更されない限り、プライマリ ファイル グループがします。 次の表には、BizTalk Server を構成するときに、すべての機能が有効な場合は、SQL サーバーで作成されるデータベースが一覧表示します。  
@@ -74,7 +74,7 @@ ms.lasthandoff: 12/01/2017
 |BAM プライマリ インポート データベース|BAMPrimaryImport|アクティビティ インスタンスの後に、ビジネス アクティビティの進行状況とデータのクエリからイベントを格納します。 また、このデータベースは、リアルタイム集計を実行します。|  
 |BAM アーカイブ データベース|BAMArchive|サブスクリプションの述語を格納します。 BAM アーカイブ データベースには、BAM プライマリ インポート データベース内のビジネス アクティビティ データの蓄積が最小限に抑えます。|  
 |SSO データベース|SSODB|構成は安全に格納の情報を受信場所。 SSO の情報を格納は、すべての関連アプリケーションへの暗号化されたユーザーの資格情報だけでなく、アプリケーションに関連します。|  
-|ルール エンジン データベース|BizTalkRuleEngineDb|リポジトリ。<br /><br /> -ポリシーは、関連するルールのセットが生成されます。<br />-ボキャブラリをルール内でのデータ参照のドメイン固有のわかりやすい名前のコレクションであります。|  
+|ルール エンジン データベース|BizTalkRuleEngineDb|リポジトリ。<br /><br /> ポリシーは、関連するルールのセットが生成されます。<br />-ボキャブラリをルール内でのデータ参照の名前をわかりやすい、ドメイン固有のコレクションであります。|  
 |BizTalk ベース EDI データベース|BizTalkEDIDb|EDI ドキュメントの追跡とデータの処理を格納します。|  
 |ヒューマン ワークフロー サービス管理データベース|BizTalkHwsDb|BizTalk ヒューマン ワークフロー サービスで必要な管理情報を格納します。|  
 |取引先管理データベース|TPM|取引先データのビジネス アクティビティ サービス (BAS) を保存します。|  
@@ -94,25 +94,25 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server"></a>SQL Server のメッセージ ボックス データベースにファイルを手動で追加します。
    
-1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続** ダイアログ ボックス。  
+1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続**] ダイアログ ボックス。  
   
      ![SQL Server ログイン画面](../technical-guides/media/sqlserver2008r2-loginscreen.gif "SQLServer2008R2 Loginscreen")  
   
-2.  **サーバー名**のボックスの編集、**サーバーへの接続** ダイアログ ボックスで、BizTalk Server メッセージ ボックス データベースを格納する SQL Server インスタンスの名前を入力し、をクリックして**の接続**を SQL Server Management Studio を表示します。 **オブジェクト エクスプ ローラー** SQL Server Management Studio のウィンドウが展開**データベース**を SQL Server のこのインスタンスのデータベースを表示します。  
+2.  **サーバー名**のボックスの編集、**サーバーへの接続**] ダイアログ ボックスで、BizTalk Server メッセージ ボックス データベースを格納する SQL Server インスタンスの名前を入力し、をクリックして**の接続**を SQL Server Management Studio を表示します。 **オブジェクト エクスプ ローラー** SQL Server Management Studio のウィンドウが展開**データベース**を SQL Server のこのインスタンスのデータベースを表示します。  
   
      ![SQL Server 2005 Management Studio]、[オブジェクト エクスプ ローラー](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
   
 3.  クリックして、ファイルを追加するデータベースを右クリックして**プロパティ**を表示する、**データベース プロパティ**データベース用のダイアログ ボックス。  
   
-     ![SQL Server 2005 データベースのプロパティ ダイアログ ボックス](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
+     ![SQL Server 2005 データベースのプロパティ] ダイアログ ボックス](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
   
-4.  **データベース プロパティ**ダイアログ ボックスで、**ファイル グループ**ページ。 BizTalkMsgBoxDb データベースの追加のファイル グループを作成する をクリックして**追加**です。 次の例では、次の 3 つの追加のファイル グループが追加されます。  
+4.  **データベース プロパティ**ダイアログ ボックスで、**ファイル グループ**ページ。 BizTalkMsgBoxDb データベースの追加のファイル グループを作成する] をクリックして**追加**です。 次の例では、次の 3 つの追加のファイル グループが追加されます。  
   
      ![SQL Server 2005、データベースへのファイル グループの追加](../technical-guides/media/6be47c0e-06c3-45d9-bce2-a42453da7d19.gif "6be47c0e-06c3-45d9-bce2-a42453da7d19")  
   
 5.  **[データベースのプロパティ]** ダイアログ ボックスで、 **[ファイル]** ページをクリックします。  
   
-     ファイル グループに追加するファイルを作成する をクリックして**追加**、クリックして**OK**です。 メッセージ ボックス データベースは、大幅なパフォーマンス利点は、1 つのディスク構成を提供する複数のディスクに分散されますようになりました。  
+     ファイル グループに追加するファイルを作成する] をクリックして**追加**、クリックして**OK**です。 メッセージ ボックス データベースは、大幅なパフォーマンス利点は、1 つのディスク構成を提供する複数のディスクに分散されますようになりました。  
   
      次の例を以前に作成されたファイル グループの各ファイルが作成され、各ファイルが別のディスクに配置されます。  
   
@@ -126,11 +126,11 @@ ms.lasthandoff: 12/01/2017
   
  このスクリプトを実行するには、次の手順を実行します。  
   
-1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続** ダイアログ ボックス。  
+1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続**] ダイアログ ボックス。  
   
 2.  **サーバー名**のボックスの編集、**サーバーへの接続** ダイアログ ボックスで、BizTalk Server メッセージ ボックス データベースを格納する SQL Server インスタンスの名前を入力し、をクリックして**の接続** SQL Server Management Studio のダイアログ ボックスを表示します。  
   
-3.  SQL Server Management Studio でをクリックして、**ファイル** メニューのをポイント**新規**、順にクリック**現在の接続とクエリ**SQL クエリ エディターを起動します。  
+3.  SQL Server Management Studio でをクリックして、**ファイル**] メニューのをポイント**新規**、順にクリック**現在の接続とクエリ**SQL クエリ エディターを起動します。  
   
 4.  サンプル スクリプトをコピー [BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト](../technical-guides/biztalk-server-messagebox-database-filegroups-sql-script.md)をクエリ エディターにします。  
   

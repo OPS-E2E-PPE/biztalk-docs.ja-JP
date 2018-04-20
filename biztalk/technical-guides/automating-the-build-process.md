@@ -1,22 +1,22 @@
 ---
-title: "ビルド プロセスを自動化する |Microsoft ドキュメント"
-ms.custom: 
+title: ビルド プロセスを自動化する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 995dac20-82a1-46ed-b8a3-0aa6182cb821
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d62380146f0bfba188843ed0e022340d88fcaceb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="automating-the-build-process"></a>ビルド プロセスを自動化します。
 自動ビルド プロセスは、コンパイル、展開され、通常、あらかじめ決められた間隔でプロジェクトの最新のソース コードに対するビルド確認テスト (Bvt) を実行します。 「ビルド レポートを」ビルド処理の成否の詳細には、プロジェクトの利害関係者に配布します。 ビルド レポートを分析して、プロジェクトの区分が注意を払い、プロジェクトを以前のバージョン/ビルド ロールバックかどうかに必要かを判断します。  
@@ -49,14 +49,14 @@ ms.lasthandoff: 12/01/2017
   
  毎日のビルド プロセスに従うと、プロジェクトの多くの利点があります。 最初に、ハートビート (デイリー ビルドと自動 Bvt の構成) を提供します。 次に、手間がかかる場合、タスクであるシステムとの統合を強制 Bvt を使用し、プロジェクトのリスクを軽減これ早い段階で、それ自体の。 それらを完了に必要な時間、により毎日のビルド プロセスの外部でストレスおよびパフォーマンスのテストは通常実行されます。 通常、ストレスおよびパフォーマンスのテストは、プロジェクトのマイルス トーン ビルド上で実行されるスケジュールされます。  
   
- 毎日のビルド プロセスでは、できますしで使用されていた、非常に効果的に BizTalk ソリューションです。 確認する必要がありますただし、タスクは通常、プロジェクトで、最後に残っているが、開始から繰り返し行われます。 たとえば、BizTalk Server での展開は確実に重要なです。 自動展開スクリプトが事前に開発することが重要です。 いないこの場合、なりますを手動で展開して、展開されていない終了に多くの時間のコストは、プロジェクト全体で何度もソリューションです。 毎日のビルド プロセス; のドライブに使用できるツールがあります。Visual Studio Team System と Team Foundation Server は、多くの人々 にとって重要な選択です。 ビルド プロセスの手順をドライブには、MSBuild スクリプトを使用できます。 別の方法としては、オープン ソース[CruiseControl.NET ツール](http://go.microsoft.com/fwlink/?LinkId=116093)(http://go.microsoft.com/fwlink/?LinkId=116093)。  
+ 毎日のビルド プロセスでは、できますしで使用されていた、非常に効果的に BizTalk ソリューションです。 確認する必要がありますただし、タスクは通常、プロジェクトで、最後に残っているが、開始から繰り返し行われます。 たとえば、BizTalk Server での展開は確実に重要なです。 自動展開スクリプトが事前に開発することが重要です。 いないこの場合、なりますを手動で展開して、展開されていない終了に多くの時間のコストは、プロジェクト全体で何度もソリューションです。 毎日のビルド プロセス; のドライブに使用できるツールがあります。Visual Studio Team System と Team Foundation Server は、多くの人々 にとって重要な選択です。 ビルド プロセスの手順をドライブには、MSBuild スクリプトを使用できます。 別の方法としては、オープン ソース[CruiseControl.NET ツール](http://go.microsoft.com/fwlink/?LinkId=116093)(http://go.microsoft.com/fwlink/?LinkId=116093)です。  
   
 > [!NOTE]  
 >  、Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。  
   
- Microsoft Test manager を使用したテストの自動化の詳細については、トピックを参照してください[自動テストの実行](http://go.microsoft.com/fwlink/?LinkID=208368)(http://go.microsoft.com/fwlink/?LinkID=208368)、Visual Studio 2010 のオンライン ドキュメント。  
+ Microsoft Test manager を使用したテストの自動化の詳細については、トピックを参照してください[自動テストの実行](http://go.microsoft.com/fwlink/?LinkID=208368)(http://go.microsoft.com/fwlink/?LinkID=208368)に Visual Studio 2010 のオンライン ドキュメント。  
   
- Visual Studio 2010 を使用して、ビルド プロセスの自動化の詳細については、次を参照してください[アプリケーションのビルド](http://go.microsoft.com/fwlink/?LinkID=208369)(ハイパーリンク"http://go.microsoft.com/fwlink/?。LinkID 208369"http://go.microsoft.com/fwlink/? を =LinkID = 208369)、Visual Studio 2010 ドキュメント。  
+ Visual Studio 2010 を使用して、ビルド プロセスの自動化の詳細については、次を参照してください。[アプリケーションのビルド](http://go.microsoft.com/fwlink/?LinkID=208369)(ハイパーリンク"http://go.microsoft.com/fwlink/?LinkID=208369" http://go.microsoft.com/fwlink/?LinkID=208369) 、Visual Studio 2010 ドキュメント。  
   
 ## <a name="build-verification-testing"></a>ビルド検証テスト  
  ビルド検証テストでは、次の要素通常から構成されます。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 12/01/2017
   
  機能テストは対応しているソリューションのすべての可能なパスをカバーする必要があります。 これが含まれますそのようなシナリオだけでなく、実稼働環境で期待しますが、もエラー パスおよび例外処理のパスを実装しているが、– を使用するには、しないことを願ってこれを記述する一般的に使用される 1 つの語句はのためのテスト「不良日シナリオです」。 すべてのオーケストレーション、すべての許容されるメッセージの種類を確認し、すべてのコード分岐は、機能テスト スイートで実行します。 次のセクションでは、テスト_ケースの開発正および負機能すべてのコード パスをカバーするについて説明します。  
   
- 詳細については、機能テストと実稼動環境に BizTalk Server ソリューションを配置する前に実装する必要がありますのある他のテスト カテゴリは、トピックを参照してください[チェックリスト: 運用の準備のテスト](http://go.microsoft.com/fwlink/?LinkId=160138)で、BizTalk Server 2010 操作ガイド[http://go.microsoft.com/fwlink/?LinkId=160138](http://go.microsoft.com/fwlink/?LinkId=160138)です。  
+ 詳細については、機能テストと実稼動環境に BizTalk Server ソリューションを配置する前に実装する必要がありますのある他のテスト カテゴリは、トピックを参照してください[チェックリスト: 運用の準備のテスト](http://go.microsoft.com/fwlink/?LinkId=160138)で、BizTalk Server 2010 操作ガイド[ http://go.microsoft.com/fwlink/?LinkId=160138](http://go.microsoft.com/fwlink/?LinkId=160138)です。  
   
 ### <a name="positive-tests"></a>ポジティブ テスト  
   
@@ -108,7 +108,7 @@ ms.lasthandoff: 12/01/2017
  各機能のテストを記述するために必要な開発作業を最小限に抑えるには重要です。 テスト ケースの少ない可能性が高い/compile に (時間)、開発の観点からのものを生成するためには、通常、高価です。 つまり、コードをテスト カバレッジの低いレベルになります。 テスト フレームワークを使用すると、テスト_ケースを迅速かつ容易に作成でき、そのため、容易にできるように完全なコード カバレッジを取得できます。 ほとんどの適切なテスト フレームワークでは、テストを定義する宣言型の方法を使用します。 (つまり、テストの構成は、構成ファイルに格納、一般的にこれは、XML ファイルです。)適切なテスト フレームワーク有効機敏性と信頼性の高い方法でテスト スイートを完全に機能を開発して、「発明」繰り返し、いわば必要はなくなりますを使用します。  
   
 ## <a name="msbuild-support-for-biztalk-server-projects"></a>BizTalk Server プロジェクトの MSBUILD サポート  
- BizTalk Server では、Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD には、コマンドラインおよび MSBUILD のログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドが格納されています。 MSBUILD の詳細については、次を参照してください。 [MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)。  
+ BizTalk Server では、Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD には、コマンドラインおよび MSBUILD のログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドが格納されています。 MSBUILD の詳細については、次を参照してください。 [MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)です。  
   
 ## <a name="see-also"></a>参照  
  [自動テストの実装](../technical-guides/implementing-automated-testing.md)

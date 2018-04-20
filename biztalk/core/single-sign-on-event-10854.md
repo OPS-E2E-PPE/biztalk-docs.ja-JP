@@ -1,22 +1,22 @@
 ---
-title: "シングル サインオン: イベント 10854 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シングル サインオン: イベント 10854 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8faed9d-5c7e-4b99-bcd9-ea5f670d5e72
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 42f9e9e761689b2ed21ec37acdbb8a63f1f88070
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="single-sign-on-event-10854"></a>シングル サインオン: イベント 10854
 ## <a name="details"></a>詳細  
@@ -83,11 +83,11 @@ ms.lasthandoff: 09/20/2017
   
  pe = 末尾に挿入します - 続けて文字数 (パスワードの最小長) と挿入する 1 文字を指定します  
   
- 例: $ pe/10//  
+ 例: pe/10/$/  
   
  (パスワードの長さが 10 文字以上でない場合、全体が 10 文字になるまで、文字列の末尾に文字 "$" を挿入します)  
   
- ("Cat"に 'Cat$ $$')  
+ ("Cat"になります $$$ ')  
   
  tr = 切り捨てます - 文字列の長さを制限します - 続けて文字数を指定します  
   

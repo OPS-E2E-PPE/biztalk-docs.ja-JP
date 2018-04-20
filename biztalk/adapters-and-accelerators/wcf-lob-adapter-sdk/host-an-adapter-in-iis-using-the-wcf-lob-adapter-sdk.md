@@ -1,22 +1,22 @@
 ---
-title: "WCF LOB Adapter SDK を使用して、IIS でアダプターをホスト |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を使用して、IIS でアダプターをホスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90b6cd97-01b3-4c98-a190-c6e0ccf24d2b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 326dc5f3102354c8f2aa6fa785b145b72014f3d3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して、IIS でアダプターをホストします。
 このセクションの内容には使用して構築されたアダプターのホスティングに関する情報が含まれています、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]インターネット インフォメーション サービス (IIS) にします。 他のホスティング オプションの詳細については、次を参照してください。[ホスティング サービス](https://msdn.microsoft.com/library/ms730158.aspx)です。
@@ -85,8 +85,8 @@ ms.lasthandoff: 11/28/2017
         |**名前**|サービス動作の構成の名前です。|  
         |**UseServiceCertificate**|この値は、サービスがクライアントのプロセスに対する認証に X.509 証明書を使用するかどうかを判断します。 既定値は**True**です。|  
         |**FindValue**|この値は、証明書ストアで特定の X.509 証明書の検索に使用されます。 これは変更することによっても設定できます\< **serviceCredentials findValue =""** \> web.config で**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |**StoreLocation**|この値は、指定された証明書を検索するシステム ストアの場所を指定します。 これは変更することによっても設定できます\< **serviceCredentials storeLocation =""** \> web.config でします。**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |**StoreName**|この値は、指定された証明書を検索する特定のシステム ストアを指定します。 これは変更することによっても設定できます\< **serviceCredentials storeName =""** \> web.config で**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
+        |**storeLocation**|この値は、指定された証明書を検索するシステム ストアの場所を指定します。 これは変更することによっても設定できます\< **serviceCredentials storeLocation =""** \> web.config でします。**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
+        |**storeName**|この値は、指定された証明書を検索する特定のシステム ストアを指定します。 これは変更することによっても設定できます\< **serviceCredentials storeName =""** \> web.config で**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
         |**X509FindType**|使用する特定の証明書を検索するために、FindValue で使用する検索の種類は前に指定します。 これは変更することによっても設定できます\< **serviceCredentials x509FindType =""** \> web.config で**注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
   
     2.  **エンドポイント動作の構成**セクションでは、エンドポイント動作を制御します。  
@@ -94,9 +94,9 @@ ms.lasthandoff: 11/28/2017
         |プロパティ|Description|  
         |--------------|-----------------|  
         |**名前**|エンドポイントの動作の名前|  
-        |**AuthenticationType**|この値は、クライアント資格情報を取得、受信ドキュメントの場所をアダプターに指示します。 クライアント サービスに対する認証にクライアント証明書を指定するため、これを設定**ClientCredentialUsernamePassword**です。 クライアントが HTTP ヘッダーの一部として、ユーザー名とパスワードを指定できるように、これを設定**HTTPUsernamePassword**です。 クライアントが、ClientCredential インターフェイスを通じて資格情報の指定を有効にするには、設定**自動**です。これが失敗した場合、クライアントは HTTP ヘッダーの一部として資格情報を渡すことができます。<br /><br /> この値は、変更することによって設定することもできます\< **endpointBehavior adapterSecurityBridgeType** \> web.config でします。既定値は**自動**です。|  
-        |**UsernameHeader**|これには、サービスにユーザー名を渡すために使用するヘッダーの名前を指定します。 HTTP ヘッダーの詳細についてを参照してください「のカスタム HTTP および SOAP ヘッダーのサポート」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は、変更することによって設定することもできます\< **endpointBehavior usernameHttpHeader** \> web.config でします。**注:**場合は、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**です。  場合設定**自動**、このプロパティはオプションです。|  
-        |**PasswordHeader**|これには、サービスにユーザーのパスワードを渡すために使用するヘッダーの名前を指定します。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は、変更することによって設定することもできます <**endpointBehavior passwordHttpHeader**< web.config でします。**注:**場合は、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**です。 場合設定**自動**、このプロパティはオプションです。|  
+        |**authenticationType**|この値は、クライアント資格情報を取得、受信ドキュメントの場所をアダプターに指示します。 クライアント サービスに対する認証にクライアント証明書を指定するため、これを設定**ClientCredentialUsernamePassword**です。 クライアントが HTTP ヘッダーの一部として、ユーザー名とパスワードを指定できるように、これを設定**HTTPUsernamePassword**です。 クライアントが、ClientCredential インターフェイスを通じて資格情報の指定を有効にするには、設定**自動**です。これが失敗した場合、クライアントは HTTP ヘッダーの一部として資格情報を渡すことができます。<br /><br /> この値は、変更することによって設定することもできます\< **endpointBehavior adapterSecurityBridgeType** \> web.config でします。既定値は**自動**です。|  
+        |**UsernameHeader**|これには、サービスにユーザー名を渡すために使用するヘッダーの名前を指定します。 HTTP ヘッダーの詳細についてで「カスタム HTTP および SOAP ヘッダーのサポート」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は、変更することによって設定することもできます\< **endpointBehavior usernameHttpHeader** \> web.config でします。**注:**場合は、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**です。  場合設定**自動**、このプロパティはオプションです。|  
+        |**PasswordHeader**|これには、サービスにユーザーのパスワードを渡すために使用するヘッダーの名前を指定します。 HTTP ヘッダーの詳細についてでサポートのカスタム HTTP と SOAP ヘッダー」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は、変更することによって設定することもできます <**endpointBehavior passwordHttpHeader**< web.config でします。**注:**場合は、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**です。 場合設定**自動**、このプロパティはオプションです。|  
   
     3.  目的の動作を設定した後をクリックして**次**を続行します。  
   
@@ -138,7 +138,7 @@ ms.lasthandoff: 11/28/2017
   
     1.  IIS 管理コンソールを起動します。  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス**です。  
   
-    2.  サービスを発行したノードに移動します。  サービスは、http://localhost/myservice としてパブリッシュした場合に移動**インターネット インフォメーション サービス**> **コンピューター名**> **Websites** >  **Default Web Site**> **myservice**です。  
+    2.  サービスを発行したノードに移動します。  サービス発行された場合http://localhost/myserviceに移動**インターネット インフォメーション サービス**> **コンピューター名**> **Websites**>  **Default Web Site**> **myservice**です。  
   
     3.  右側のウィンドウでは、.svc ファイルを右クリックし、をクリックして**参照**です。 Web ページは、サービスに関する情報と共に表示されます。 クライアント アプリケーションから WCF や Web サービスの呼び出しを使用してこのサービスを使用できるようになりました。 
 

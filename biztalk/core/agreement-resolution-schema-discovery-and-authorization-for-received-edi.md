@@ -1,22 +1,22 @@
 ---
-title: "アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認 |Microsoft ドキュメント"
-ms.custom: 
+title: アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 503e307c-4cb0-49b5-8751-82dcea203151
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: de5f7fd9b022daf2d123de1c971797b53df202d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="agreement-resolution-schema-discovery-and-authorization-for-received-edi-messages"></a>受信した EDI メッセージのアグリーメントの解決、スキーマ探索、および認証
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI メッセージを受信すると、そのメッセージの処理方法を決定するために、EDI 受信パイプラインによって取引先アグリーメント解決、スキーマ探索、および認証のプロセスが実行されます。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     >  -   **BizTalk Server 2013 R2、2013、および 2010**: ISA5、ISA6、ISA7、ISA8、UNB2.1、UNB2.2、UNB3.1、および unb3.2 フィールドには、アグリーメント設定で必須です。  
     > -   **BizTalk Server 2009 および 2006 R2**:、ISA7、ISA8、UNB3.1、および [unb3.2] フィールドは、パーティ設定で必須ではありません。 これらのフィールドを空白のままにすると、EDI エンジンでは ISA5、ISA6、UNB2.1、UNB2.2 の値に基づいて解決が実行されます。  
     > -   BizTalk Server 2009 および BizTalk Server 2006 R2 以降のバージョンによる解決をサポートするために、ハード コードされた ID (HostX12Recvr および HostEdifactRecvr) と修飾子 (BT) が導入されています。  
-    > -   EDIFACT メッセージが従う必要があります、 [UNECE ガイドライン](http://www.unece.org/tradewelcome/areas-of-work/un-centre-for-trade-facilitation-and-e-business-uncefact/outputs/standards/unedifact/tradeedifactrules.html)メッセージの構文と規則にします。  
+    > -   EDIFACT メッセージが従う必要があります、 [UNECE ガイドライン](http://www.unece.org/tradewelcome/areas-of-work/un-centre-for-trade-facilitation-and-e-business-uncefact/outputs/standards/unedifact/tradeedifactrules.html) メッセージの構文と規則。  
   
 3.  手順 2. で一致するものが見つからない場合は、フォールバック アグリーメントのプロパティを使用します。  
   
@@ -62,26 +62,26 @@ ms.lasthandoff: 09/20/2017
   
 -   UNB3.2 (受信者の修飾子)  
   
- 一致するために使用するアグリーメントのプロパティが定義されている、**識別子**の特定方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。  
+ 一致するものを使用するアグリーメントのプロパティが定義されている、 **識別子** の特定方向アグリーメント タブのページ、 **アグリーメントのプロパティ**  ダイアログ ボックス。  
   
  この 4 つの受信側と送信側のプロパティによって、取引先アグリーメントが一意に識別されます。 4 つのプロパティを使用することで、受信側の処理の柔軟性が向上します。 たとえば、このアグリーメント解決方法ならば、受信確認の送信先のパーティが複数の場合も、送信ポートを複数作成する必要はありません。  
   
- 送信者と受信者の修飾子と識別子の 4 つすべてを使用してもアグリーメントを解決できない場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は送信者の修飾子と識別子のみを使用してアグリーメントの解決を試みます。 X12 の場合のこれらのフィールドは、ISA05 と ISA06 です。EDIFACT の場合は、UNB2.1 と UNB2.2 です。 送信者と受信者のプロパティの照合と同様[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インターチェンジ ヘッダーの値と一致するアグリーメントのプロパティで定義されている、**識別子**の特定方向アグリーメントタブのページ**アグリーメントのプロパティ** ダイアログ ボックス。 だけの場合、送信者の修飾子と識別子は、アグリーメントを解決するのには、受信者の修飾子と識別子は未定義になって、双方向アグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。  
+ 送信者と受信者の修飾子と識別子の 4 つすべてを使用してもアグリーメントを解決できない場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は送信者の修飾子と識別子のみを使用してアグリーメントの解決を試みます。 X12 の場合のこれらのフィールドは、ISA05 と ISA06 です。EDIFACT の場合は、UNB2.1 と UNB2.2 です。 送信者と受信者のプロパティの照合と同様[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インターチェンジ ヘッダーの値と一致するアグリーメントのプロパティで定義されている、**識別子**の特定方向アグリーメントタブのページ**アグリーメントのプロパティ** ダイアログ ボックス。 だけの場合、送信者の修飾子と識別子は、アグリーメントを解決するのには、受信者の修飾子と識別子は未定義になっての双方向アグリーメント タブの **アグリーメントのプロパティ**  ダイアログ ボックス。  
   
- アグリーメントが 1 つも見つからない場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はフォールバック取引先アグリーメントを使用します (認証を必要とするようにポートが設定されている場合を除く)。 ポートの設定は、認証を必要とする場合 (いずれか**認証が失敗した場合は、メッセージをドロップ**または**認証が失敗した場合は、メッセージを保持する**で選択した、**全般**ページの**受信ポートのプロパティ**)、アグリーメントは、受信ポートで受信したインターチェンジに必要です。 この場合は、インターチェンジ ヘッダーとアグリーメント プロパティの照合によるアグリーメント解決が不可能ならば、フォールバック アグリーメント プロパティを使用してアグリーメントを特定することは許可されません。 アグリーメントが見つからない場合は、インターチェンジは認証に失敗したものと見なされて、中断状態となります。  
+ アグリーメントが 1 つも見つからない場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はフォールバック取引先アグリーメントを使用します (認証を必要とするようにポートが設定されている場合を除く)。 ポートの設定には、認証が必要な場合 (いずれか **認証が失敗した場合は、メッセージを削除** または **認証が失敗した場合は、メッセージを保持する** で選択した、 **全般** のページ、 **受信ポートのプロパティ**)、アグリーメントの受信ポートで受信したインターチェンジに必要なです。 この場合は、インターチェンジ ヘッダーとアグリーメント プロパティの照合によるアグリーメント解決が不可能ならば、フォールバック アグリーメント プロパティを使用してアグリーメントを特定することは許可されません。 アグリーメントが見つからない場合は、インターチェンジは認証に失敗したものと見なされて、中断状態となります。  
   
 > [!NOTE]
 >  EDI パイプライン内のメッセージは、有効な状態のアグリーメントに解決されるまで、アグリーメント解決における次の手順に進みます。 たとえば、メッセージがアグリーメント解決の最初の手順で解決されたとしても、アグリーメントが無効な状態の場合、メッセージは次の解決手順に進みます。  
   
 ## <a name="schema-discovery"></a>スキーマ探索  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、解決を実行してメッセージからアグリーメントを特定したら、次にこのメッセージの検証および処理にどのスキーマを使用するかを決定します。 指定されたプロパティを使用して、**ローカル ホスト設定**一方向 (送信側) のページのアグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、解決を実行してメッセージからアグリーメントを特定したら、次にこのメッセージの検証および処理にどのスキーマを使用するかを決定します。 指定されたプロパティを使用して、 **ローカル ホストの設定** 一方向 (送信側) のページのアグリーメント タブ、 **アグリーメントのプロパティ**  ダイアログ ボックス。  
   
  スキーマを決定するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で初めにスキーマの名前空間を決定する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 付属の標準スキーマに対しては既定の名前空間が使用され、カスタム スキーマに対しては、どの名前空間を使用するかを EDI 逆アセンブラーが決定します。  
   
- **ローカル ホスト設定**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックスでは、カスタム名前空間を決定する値のグリッドを設定することができます。 EDI 逆アセンブラーで既定の名前空間を使用してそのグリッドで一致が見つからない場合、**ターゲットの名前空間**フィールドは、既定の行の対象としてマークします。  
+ **ローカル ホストの設定** の一方向アグリーメント タブのページ、 **アグリーメントのプロパティ**  ダイアログ ボックスでは、カスタム名前空間を決定する値のグリッドを設定することができます。 EDI 逆アセンブラーで既定の名前空間を使用してそのグリッドで一致が見つからない場合、 **ターゲットの名前空間** フィールドは、既定の行の対象としてマークします。  
   
 ### <a name="x12-schema-discovery"></a>X12 スキーマ探索  
- X12 でエンコードされたメッセージの場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では受信したインターチェンジのヘッダーのアプリケーション送信者識別子 (GS02) とトランザクション セット ID (ST01) を使用して、カスタム名前空間が決定されます。 内の GS02 および ST01 プロパティのこれらの値と値の間の一致を検索しようと、**ターゲットの名前空間をカスタマイズ**グリッドで、**ローカル ホストの設定**ページ ([**トランザクションセットの設定**) の双方向アグリーメント タブの**アグリーメントのプロパティ**] ダイアログ ボックス。 一致が見つかると、スキーマを検証し、メッセージを処理するのにことを決定するのにグリッドの同じ行で指定されたターゲットの名前空間が使用されます。 ターゲットの名前空間が決定されない場合は、既定のターゲットの名前空間が使用されます。 名前空間が指定されていない場合、**ターゲットの名前空間**、既定の行のマークされたフィールド[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は、既定でX12エンコードメッセージの場合、フォールバックアグリーメントプロパティで指定されたターゲットの名前空間を使用`http://schemas.microsoft.com/BizTalk/Edi/X12/2006`.  
+ X12 でエンコードされたメッセージの場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では受信したインターチェンジのヘッダーのアプリケーション送信者識別子 (GS02) とトランザクション セット ID (ST01) を使用して、カスタム名前空間が決定されます。 内の GS02 および ST01 プロパティの値とこれらの値の一致を検索する、 **ターゲットの名前空間をカスタマイズする** のグリッド、 **ローカル ホストの設定** ページ (下にある **トランザクション セットの設定**) の双方向アグリーメント タブの **アグリーメントのプロパティ**  ダイアログ ボックス。 一致が見つかると、スキーマの検証およびメッセージを処理するのにことを決定するのにグリッドの同じ行で指定されたターゲットの名前空間が使用されます。 ターゲットの名前空間が決定されない場合は、既定のターゲットの名前空間が使用されます。 名前空間が指定されていない場合、**ターゲットの名前空間**、既定の行のマークされたフィールド[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は、既定でX12エンコードメッセージの場合、フォールバックアグリーメントプロパティで指定されたターゲットの名前空間を使用`http://schemas.microsoft.com/BizTalk/Edi/X12/2006`.  
   
  X12 インターチェンジの場合、ターゲットの名前空間が検出されると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では次の情報を使用してスキーマが決定されます。  
   
@@ -102,13 +102,13 @@ ms.lasthandoff: 09/20/2017
 |Claim-Professional_837P|004010X098A1|005010X222|  
   
 > [!NOTE]
->  HIPAA の各バージョンのトランザクション セット 278 (Health Care Services Review) については、GS08 および ST01 の値は要求と応答のどちらのペアも同じです。 BHT02 フィールド、278 とを区別することがあります内のトリガー値に応じて要求/応答バージョン 5010 で。  
+>  HIPAA の各バージョンのトランザクション セット 278 (Health Care Services Review) については、GS08 および ST01 の値は要求と応答のどちらのペアも同じです。 によって、278 とを区別することがあります BHT02 フィールドのトリガー値は要求/応答バージョン 5010 で。  
 >   
 >  1.  BHT02 の値が 01、13、36 のいずれかならば、Health Care Services Review Request  
 > 2.  BHT02 が 11 ならば、Health Care Services Review Response  
   
 ### <a name="edifact-schema-discovery"></a>EDIFACT スキーマ探索  
- EDIFACT でエンコードされたメッセージの場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では受信したインターチェンジのヘッダーからメッセージの種類 (UNH2.1)、メッセージのバージョン番号 (UNH2.2)、メッセージのリリース番号 (UNH2.3)、割り当てコード (UNH2.5)、機能グループ ID (UNG2.1)、およびアプリケーション送信コードの修飾子 (UNG2.2) を使用して、カスタムの名前空間が決定されます。 内の UNH2.1、UNH2.2、UNH2.3、UNH2.5、UNG2.1、および ung2.2 の各プロパティのこれらの値と値の間の一致を検索を試みます、**ターゲットの名前空間をカスタマイズ**グリッド ([**トランザクション セットの設定**)双方向アグリーメント タブの**アグリーメントのプロパティ**] ダイアログ ボックス。 一致するものが見つかった場合は、グリッドの同じ行で指定されたターゲットの名前空間が使用されて、メッセージの検証および処理のためのスキーマが決定されます。 ターゲットの名前空間が決定されない場合は、既定のターゲットの名前空間が使用されます。 名前空間が指定されていない場合、**ターゲットの名前空間**、既定の行のマークされたフィールド[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ターゲットの名前空間、EDIFACT でエンコードされたメッセージのフォールバック アグリーメント プロパティで指定した既定を使用`http://schemas.microsoft.com/BizTalk/Edi/EDIFACT/2006`.  
+ EDIFACT でエンコードされたメッセージの場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では受信したインターチェンジのヘッダーからメッセージの種類 (UNH2.1)、メッセージのバージョン番号 (UNH2.2)、メッセージのリリース番号 (UNH2.3)、割り当てコード (UNH2.5)、機能グループ ID (UNG2.1)、およびアプリケーション送信コードの修飾子 (UNG2.2) を使用して、カスタムの名前空間が決定されます。 UNH2.1、UNH2.2、UNH2.3、UNH2.5、UNG2.1、および ung2.2 の各プロパティにこれらの値と値の間の一致を検索しようとして、 **ターゲットの名前空間をカスタマイズする** グリッド (下にある **トランザクション セットの設定**) の双方向アグリーメント タブの **アグリーメントのプロパティ**  ダイアログ ボックス。 一致するものが見つかった場合は、グリッドの同じ行で指定されたターゲットの名前空間が使用されて、メッセージの検証および処理のためのスキーマが決定されます。 ターゲットの名前空間が決定されない場合は、既定のターゲットの名前空間が使用されます。 名前空間が指定されていない場合、**ターゲットの名前空間**、既定の行のマークされたフィールド[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ターゲットの名前空間、EDIFACT でエンコードされたメッセージのフォールバック アグリーメント プロパティで指定した既定を使用`http://schemas.microsoft.com/BizTalk/Edi/EDIFACT/2006`.  
   
  EDIFACT インターチェンジの場合、ターゲットの名前空間が検出されると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では次の情報を使用してスキーマが決定されます。  
   

@@ -1,26 +1,26 @@
 ---
-title: "BizTalk Server での RosettaNet accelerator の用語集 |Microsoft ドキュメント"
-description: "共通の用語と定義を把握し、BizTalk Accelerator for RosettaNet の使い方について"
-ms.custom: 
+title: BizTalk Server での RosettaNet accelerator の用語集 |Microsoft ドキュメント
+description: 共通の用語と定義を把握し、BizTalk Accelerator for RosettaNet の使い方について
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d98a5ed4-adc5-4ca9-b9d9-38ab02a0bda6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: bd89d75b0d36359fcf59f7edae0bb950a7196ca7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="glossary"></a>用語集
-[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]次の用語集の用語と定義を使用します。  
+[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 次の用語集の用語と定義を使用します。  
 
   
 ## <a name="a"></a>A  
@@ -28,13 +28,13 @@ ms.lasthandoff: 09/20/2017
  アプリケーション アダプター インターフェイスを実装するアプリケーション。 アプリケーション アダプターは、着信アクション メッセージ (要求または応答) の受け入れ時に通知メカニズムによって呼び出され、 `BeginNotify` メソッドと `EndNotify` メソッドを実装します。 `BeginNotify` メソッドはパブリック応答側が呼び出し、`EndNotify` メソッドは追加設定の不要なプライベート応答側が呼び出します。 `Notify` メソッドが呼び出されると、メッセージが MessagesToLOB テーブルに正常に保存されたことを意味します。  
   
  **アクションの URL**  
- ホーム組織が非同期処理中にアクション メッセージを送信する取引先 URL (たとえば、http://FabrikamServer/BTARNApp/RNIFReceive.aspx)。  
+ ホーム組織メッセージを送信する操作が非同期処理中に、取引先 URLhttp://FabrikamServer/BTARNApp/RNIFReceive.aspxです。  
   
 ## <a name="b"></a>B  
  **BizTalk Accelerator for RosettaNet**  
  RosettaNet Implementation Framework (RNIF) を構築することにより、BizTalk Server へのアドオン製品に準拠したソリューションです。  
   
- **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理**  
+ **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] 管理**  
  Microsoft [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] のアプリケーションの 1 つ。プロセス テンプレートを記述したり、取引先契約を管理することができます。  
   
  **BizTalk エディター**  
@@ -103,7 +103,7 @@ ms.lasthandoff: 09/20/2017
  W3C (World Wide Web Consortium) によって開発された仕様。標準 HTML の機能にとらわれずに独自のタグを作成できます。 HTML では事前定義されたタグでしかページの要素を記述できないのに対して、XML ではページの開発者がタグを定義できます。 特定のアプリケーションの製品や、期限を時間など、ほぼすべてのデータ項目のタグを使用できます。 そのため、Web ページがデータベース レコードとして機能するようになります。  
   
  **Extensible Stylesheet Language (XSL)**  
- XML ドキュメント用のスタイル シートの書式。 XSL を使用して、カスケード スタイル シート (CSS) は、HTML の表示を定義するために使用する場合と同じように、XML の表示を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]2 つの仕様間の変換言語として XSL を使用します。  
+ XML ドキュメント用のスタイル シートの書式。 XSL を使用して、カスケード スタイル シート (CSS) は、HTML の表示を定義するために使用する場合と同じように、XML の表示を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 2 つの仕様間の変換言語として XSL を使用します。  
   
 ## <a name="g"></a>G  
  **グローバル ビジネス Id (GBI)**  
@@ -187,7 +187,7 @@ ms.lasthandoff: 09/20/2017
  RosettaNet Implementation Framework Version 1.1 で配信するためにエンベロープされた RosettaNet メッセージ。  
   
 ## <a name="s"></a>S  
- **スキーマ**  
+ **schema**  
  XML ファイルの構造を定義したもの。 スキーマは、構造のレコードとフィールドに関係するので、スキーマにはプロパティ情報が含まれています。  
   
  **サービスのコンテンツ**  
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
  PIP、ビジネス アクティビティ サービス、取引パートナー、およびロールの送受信の操作など、ビジネス メッセージに関連付けられている部分を識別する XML ドキュメントです。  
   
  **シグナル URL**  
- ホーム組織がシグナル メッセージを送信する URL。 たとえば、http://FabrikamServer/BTARNApp/RNIFReceive.aspx。  
+ ホーム組織がシグナル メッセージを送信する URL。 たとえば、 http://FabrikamServer/BTARNApp/RNIFReceive.aspxのようにします。  
   
  **シングル アクション通知**  
  開始側がシングル アクションのメッセージを送信し、応答側がメッセージで返信するプロセス。  
@@ -206,7 +206,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 固有の XML スキーマ。 仕様は BizTalk エディターで作成します。その際、EDIFACT、X12、XML などの業界標準か、区切り記号付き、位置指定、またはその両方のフラット ファイルをベースにすることができます。 BizTalk マッパーは、送信元仕様と送信先仕様として公開された仕様を使用してマップを作成します。  
   
  **同期 URL**  
- ホーム組織がパートナーとの同期トランザクションを確立するために使用する URL。たとえば、http://FabikamServer/BTARNApp/RNIFReceive.aspx。  
+ ホーム組織が、パートナーとの同期トランザクションを確立するために使用する URLhttp://FabikamServer/BTARNApp/RNIFReceive.aspxです。  
   
  **同期トランザクション**  
  開始側が接続を閉じることなく同じ HTTP 状態で応答 (ダブル アクション) またはシグナル (シングル アクション) を返すプロセス。  

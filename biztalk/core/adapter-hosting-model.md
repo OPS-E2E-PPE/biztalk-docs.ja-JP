@@ -1,28 +1,28 @@
 ---
-title: "アダプターのホスト モデル |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのホスト モデル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf9a8e6b-8c8d-47ec-b2a3-aed58206121d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 645a1fcd41650c98c442549a898f7083be770842
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="adapter-hosting-model"></a>アダプターのホスト モデル
-一般に BizTalk アダプターは BizTalk サービス Btsntsvc.exe でホストされます。 つまり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターの有効期間を管理します。 状況によっては、次に説明するように、他のプロセスがこのアダプターを管理する場合もあります。  
+一般に BizTalk アダプターは、BizTalk サービス Btsntsvc.exe でホストされます。 つまり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターの有効期間を管理します。 状況によっては、次に説明するように、他のプロセスがこのアダプターを管理する場合もあります。  
   
 ## <a name="in-process-adapters"></a>インプロセス アダプター  
- 管理されているアダプター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インプロセス アダプターと呼ばれます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]これらのアダプターは、次が行われます。  
+ 管理されているアダプター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インプロセス アダプターと呼ばれます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] これらのアダプターは、次が行われます。  
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の起動時にアダプターをインスタンス化します。  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 分離アダプターのホスト モデル  
   
 ## <a name="see-also"></a>参照  
- [アダプター フレームワークとは何ですか。](../core/what-is-the-adapter-framework.md)
+ [アダプター フレームワークについて](../core/what-is-the-adapter-framework.md)

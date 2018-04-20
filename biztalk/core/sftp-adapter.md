@@ -1,23 +1,23 @@
 ---
-title: "SFTP アダプター |Microsoft ドキュメント"
-description: "作成または受信場所を構成および BizTalk Server で、SFTP アダプターを使用してよく寄せられる質問を含む SFTP アダプターを使用してポートを送信"
-ms.custom: 
+title: SFTP アダプター |Microsoft ドキュメント
+description: 作成または受信場所を構成および BizTalk Server で、SFTP アダプターを使用してよく寄せられる質問を含む SFTP アダプターを使用してポートを送信
+ms.custom: ''
 ms.date: 02/26/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f64c4c8-64a0-4e43-9660-b5c2d75d28aa
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0d28c3b453ab3e704ddbb06ed42b23dc641a6711
-ms.sourcegitcommit: 3bcf85356d43c3502e61fa801316dc12a4547406
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="sftp-adapter"></a>SFTP アダプター
 BizTalk Server は、 **SFTP** SSH ファイル転送プロトコルを使用してセキュリティで保護された FTP サーバーからメッセージを送受信するアダプター。 このトピックでは、構成する手順、 **SFTP** 受信場所、およびセキュリティで保護された FTP サーバーからメッセージを送受信する SFTP 送信ポートを構成します。 一般的な質問と回答も含まれています。
@@ -178,7 +178,7 @@ WinSCP の新しいバージョンを使用して、BizTalk Server で、する�
 |SFTP アダプターは 256 ビットの暗号化をサポートしていますか?|はい。SFTP アダプターは 256 ビットの暗号化をサポートしています。 次のような暗号化アルゴリズムがサポートされています。<br /><br /> -AES 暗号化: 256 ビット、192 ビットまたは 128 ビット SDCTR または CBC<br /><br /> -3 des (TRIPLE-DES) 暗号化: 168 ビット SDCTR または CBC|  
 |アダプターでサポートされる SSH のバージョンを教えてください。|SSH2 のみです。 バージョンが SSH1 である SFTP サーバーと接続を確立することはできません。|  
 |ファイル マスクでは大文字と小文字が区別されますか。|不可。 「*.txt」と \*です。TXT は幸先の良い動作します。 BizTalk Server 2013 の累積的な最新の更新プログラムをインストールしてください。 BizTalk Server 2013 RTM リリースでは、区別するファイル マスクがありました。|  
-|バインドをエクスポートすると [パスワード] フィールドが空になります。 このようなバインドをインポートして受信場所を作成する場合、どのような変更を加える必要がありますか。|バインド ファイルを編集し、[パスワード] フィールドに変更を加えてください。 さらに、 `<Password vt="1">MySecretPassword</Password>`, 、**vt =「1」** null 値を示します。 変更する **vt =「8」**, 、文字列を示します。 例:<br /><br /> `<Password vt="8">MySecretPassword</Password>`<br /><br /> 詳細については、次を参照してください [http://msdn.microsoft.com/library/system.runtime.interopservices.varenum (v=vs.100).aspx。](http://msdn.microsoft.com/library/system.runtime.interopservices.varenum\(v=vs.100\).aspx)|  
+|バインドをエクスポートすると [パスワード] フィールドが空になります。 このようなバインドをインポートして受信場所を作成する場合、どのような変更を加える必要がありますか。|バインド ファイルを編集し、[パスワード] フィールドに変更を加えてください。 さらに、 `<Password vt="1">MySecretPassword</Password>`, 、**vt =「1」** null 値を示します。 変更する **vt =「8」**, 、文字列を示します。 以下に例を示します。<br /><br /> `<Password vt="8">MySecretPassword</Password>`<br /><br /> 詳細については、次を参照してください。 [http://msdn.microsoft.com/library/system.runtime.interopservices.varenum(v=vs.100).aspx](http://msdn.microsoft.com/library/system.runtime.interopservices.varenum\(v=vs.100\).aspx)|  
 |ファイル パスの指定方法を教えてください。|通常、パスは `/folder/pathname` という形式で指定します。 ただし、サーバーの種類によっては別の形式になる場合や、先頭または末尾のスラッシュの有無が異なる場合があります。 そのため、次のように指定することもできます。<br /><br /> -                   `/folder/pathname`<br /><br /> -                   `/folder/pathname/`<br /><br /> -                   `folder/pathname`<br /><br /> -                   `folder/pathname/`|  
   
 

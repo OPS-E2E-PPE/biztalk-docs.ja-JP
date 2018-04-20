@@ -1,11 +1,11 @@
 ---
-title: "SSO を監査する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO を監査する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO], auditing
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - auditing [SSO]
 - SSO database, auditing
 ms.assetid: dc6d0726-fc31-4af2-9a23-8df9e3fc5836
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 27528cf6da53c69db4b2bc6c9e1d296472b24186
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="how-to-audit-sso"></a>SSO を監査する方法
 MMC スナップインまたはコマンド ラインを使用して、成功と失敗の監査のレベルを設定できます。 監査の結果は、イベント ログと、データベースの監査ログの両方に保存されます。  
@@ -34,9 +34,9 @@ MMC スナップインまたはコマンド ラインを使用して、成功と
   
  2 = 中。  
   
- 3 = 高。 このレベルは、ように、できるだけ多くの監査メッセージを発行します。  
+ 3 = 高。 このレベルでは、できるだけ多くの監査メッセージを発行します。  
   
- 成功の監査の既定値は 0 (なし)、および失敗の監査の既定値は 1(low) します。  
+ 成功の監査の既定値は 0 (なし)、および失敗の監査の既定値は 1(low) です。  
   
  データベース レベルの監査を変更するには、XML ファイルを使用して SSO データベースを更新する必要があります。 SSO データベースを更新するためのサンプル XML ファイルは次のとおりです。  
   
@@ -53,19 +53,19 @@ MMC スナップインまたはコマンド ラインを使用して、成功と
   
 ### <a name="to-audit-single-sign-on-using-the-mmc-snap-in"></a>MMC スナップインでシングル サインオンを監査するには  
   
-1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、クリックして**SSO 管理**です。  
+1.  **開始**  メニューのをクリックして **すべてのプログラム**, 、 をクリックして **Microsoft エンタープライズ シングル サインオン**, 、 をクリックし、 **SSO 管理**します。  
   
-2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、展開、**エンタープライズ シングル サインオン**ノード。  
+2.  ENTSSO MMC スナップインのスコープ ペインで、展開、 **エンタープライズ シングル サインオン** ノードです。  
   
-3.  右クリック**システム**、クリックして**プロパティ**です。  
+3.  右クリック **システム**, 、クリックして **プロパティ**します。  
   
-4.  **システム プロパティ**ダイアログ ボックスで、をクリックして、**監査**タブです。  
+4.  **システム プロパティ** ダイアログ ボックスで、をクリックして、 **の監査**  タブをクリックします。  
   
-5.  適切な設定を入力し、クリックして**OK**です。  
+5.  適切な設定を入力し、クリックして **OK**します。  
   
 ### <a name="to-audit-single-sign-on-using-the-command-line"></a>コマンド ラインでシングル サインオンを監査するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
   
 2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
@@ -76,7 +76,7 @@ MMC スナップインまたはコマンド ラインを使用して、成功と
   
 ### <a name="to-audit-the-sso-database"></a>SSO データベースを監査するには  
   
-1.  をクリックして**開始**、 をクリックして**実行**、し、入力**cmd**です。  
+1.  をクリックして **開始**, 、 をクリックして **実行**, 、し、入力 **cmd**します。  
   
 2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   

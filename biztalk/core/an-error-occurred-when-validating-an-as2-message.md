@@ -1,22 +1,22 @@
 ---
-title: "AS2 メッセージを検証するときにエラーが発生しました |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 メッセージを検証するときにエラーが発生しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0cf97c63-2bff-4474-9cd8-f68634493dcc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 73f1c9b7cf4e444e256aadc3ade717fcf30735bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="an-error-occurred-when-validating-an-as2-message"></a>AS2 メッセージの検証中にエラーが発生しました
 ## <a name="details"></a>詳細  

@@ -1,22 +1,22 @@
 ---
-title: "データベース ファイル グループを最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: データベース ファイル グループを最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7dbed4d-95d6-4a41-a69e-737a6f2f5a82
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6df4f1213ed35c06b14ae127cf0593abfdd8ff35
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>データベースのファイル グループを最適化します。
 ファイルは、入出力 (I/O) の競合が頻繁に限定要素、または実稼働環境の BizTalk Server 環境で、ボトルネックです。 BizTalk Server は非常にデータベースの処理を要するアプリケーションと、さらに、大量の I/O を非常にファイルは、BizTalk Server によって使用される SQL Server データベース。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/01/2017
   
  ファイルを使用する最適なとを効果的にファイル IO のボトルネックを解決し、BizTalk Server ソリューションの全体的なパフォーマンスを向上させる SQL Server のファイル グループの機能が表示されます。 この最適化は、経験豊富な SQL Server データベース管理者と BizTalk Server データベースを正しくバックアップされている後のすべてのみでのみ実行する必要があります。 BizTalk Server 環境内のすべての SQL Server コンピューター上には、この最適化を実行してください。  
   
- データベース パフォーマンスを向上させるため、この機能を使用して、データベースを作成する複数のディスクに複数のディスク コント ローラー、または RAID (redundant 配列独立したディスクの) システムには、SQL Server のファイルおよびファイル グループを利用できます。 たとえば、コンピューターにディスクが 4 個ある場合は、データ ファイル 3 つとログ ファイル 1 つから構成されるデータベースを、各ディスクにファイルを 1 つずつ配置して作成できます。 データへのアクセスと 4 つの読み取り/書き込みヘッドは並行してデータを同時にアクセスできます。 これは、ため、速度データベース操作が大幅にします。 SQL Server のディスクのハードウェア ソリューションの実装の詳細については、「データベースのパフォーマンス」の SQL Server オンライン ブックでを参照してください。 [http://go.microsoft.com/fwlink/?LinkID=71419](http://go.microsoft.com/fwlink/?LinkID=71419)です。  
+ データベース パフォーマンスを向上させるため、この機能を使用して、データベースを作成する複数のディスクに複数のディスク コント ローラー、または RAID (redundant 配列独立したディスクの) システムには、SQL Server のファイルおよびファイル グループを利用できます。 たとえば、コンピューターにディスクが 4 個ある場合は、データ ファイル 3 つとログ ファイル 1 つから構成されるデータベースを、各ディスクにファイルを 1 つずつ配置して作成できます。 データへのアクセスと 4 つの読み取り/書き込みヘッドは並行してデータを同時にアクセスできます。 これは、ため、速度データベース操作が大幅にします。 SQL Server のディスクのハードウェア ソリューションの実装の詳細についてを参照してください「データベースのパフォーマンス」の SQL Server オンライン ブックで[ http://go.microsoft.com/fwlink/?LinkID=71419](http://go.microsoft.com/fwlink/?LinkID=71419)です。  
   
  さらに、ファイルおよびファイル グループを有効にするデータの配置、特定のファイル グループ内のテーブルを作成できるためです。 これにより、特定のテーブルのすべてのファイル I/O は、特定のディスクに向けることがあるために、パフォーマンスが向上します。 たとえば、頻繁に使用されるテーブルは、1 つのディスク上にある、ファイル グループ内のファイルに配置できるし、データベース内の他の頻度が低いテーブルは、2 番目のディスク上にある別のファイル グループ内の別のファイルに配置できます。  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 12/01/2017
 |BAM プライマリ インポート データベース|BAMPrimaryImport|アクティビティ インスタンスの後に、ビジネス アクティビティの進行状況とデータのクエリからイベントを格納します。 また、このデータベースは、リアルタイム集計を実行します。|  
 |BAM アーカイブ データベース|BAMArchive|サブスクリプションの述語を格納します。 BAM アーカイブ データベースには、BAM プライマリ インポート データベース内のビジネス アクティビティ データの蓄積が最小限に抑えます。|  
 |SSO データベース|SSODB|構成は安全に格納の情報を受信場所。 SSO の情報を格納は、すべての関連アプリケーションへの暗号化されたユーザーの資格情報だけでなく、アプリケーションに関連します。|  
-|ルール エンジン データベース|BizTalkRuleEngineDb|リポジトリ。<br /><br /> -ポリシーは、関連するルールのセットが生成されます。<br />-ボキャブラリをルール内でのデータ参照のドメイン固有のわかりやすい名前のコレクションであります。|  
+|ルール エンジン データベース|BizTalkRuleEngineDb|リポジトリ。<br /><br /> ポリシーは、関連するルールのセットが生成されます。<br />-ボキャブラリをルール内でのデータ参照の名前をわかりやすい、ドメイン固有のコレクションであります。|  
 |追跡分析サーバーの管理データベース|BizTalkAnalysisDb|ビジネスおよび稼動状況監視 OLAP キューブの両方を格納します。|  
   
 ## <a name="separation-of-data-files-and-log-files"></a>データ ファイルとログ ファイルの分離  

@@ -1,31 +1,31 @@
 ---
-title: "脅威モデル分析 |Microsoft ドキュメント"
-ms.custom: 
+title: 脅威モデル分析 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - TMA, about TMA
 - TMA
 - TMA, procedure steps
 ms.assetid: dfbf46aa-0a35-4925-8718-df8591efc279
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 06f5de73434d2c3a7bf67e659c6566b530b38aeb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="threat-model-analysis"></a>脅威モデル分析
 脅威モデル分析 (TMA) は、製品、アプリケーション、ネットワーク、環境にもたらされるセキュリティのリスクを判断し、どのように攻撃が発生するかを認識するのに役立ちます。 この分析は、緩和が必要な脅威とその緩和方法を決定することを目標とします。  
   
- このセクションでは、TMA プロセスに関する概要について説明します。 詳細については、の第 4 章を参照してください。 *Writing Secure Code、第 2 版*、Michael Howard と David LeBlanc です。  
+ このセクションでは、TMA プロセスに関する概要について説明します。 詳細については、の第 4 章を参照してください。 *Writing Secure Code 』 第 2 版*, 、Michael Howard と David LeBlanc します。  
   
  TMA にはさまざまなメリットがあります。  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 -   手順 1. 背景情報を収集します。  
   
--   手順 2. 作成して脅威モデル分析  
+-   手順 2. 作成し、脅威モデルの分析  
   
 -   手順 3. 脅威を確認します。  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 -   手順 6. 実装およびテストの緩和策  
   
--   手順 7. 脅威モデルの設計との同期を保つ  
+-   手順 7. 脅威モデルのデザインとの同期を維持します。  
   
 ## <a name="step-1-collect-background-information"></a>手順 1. 背景情報を収集します。  
  TMA を成功させる準備として、背景情報を収集する必要があります。 対象となる環境 (アプリケーション、プログラム、インフラストラクチャ全体) は次のように分析すると便利です。  
@@ -72,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
 -   各コンポーネントが依存する他のコンポーネントについて前提の一覧を作成します。 この一覧は、コンポーネント間の前提、アクション項目、他のチームとのフォローアップ項目などを検証するのに役立ちます。  
   
-## <a name="step-2-create-and-analyze-the-threat-model"></a>手順 2. 作成して脅威モデル分析  
+## <a name="step-2-create-and-analyze-the-threat-model"></a>手順 2. 作成し、脅威モデルの分析  
  背景情報を収集したら、脅威モデルについてのミーティングを行います。 各開発分野 (プログラム マネージャ、開発者、テスタなど) から少なくとも 1 人のメンバが参加するようにします。 参加者に、ミーティングの目標は脅威を見つけることであって、脅威を解決することではないことを確認します。 脅威モデルのミーティングでは次の手順を実行します。  
   
 -   各ユースケースの DFD を調べます。 各ユースケースについて、次の要素を特定します。  
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
 -   関連する資産を書き留めます。  
   
--   それぞれの DFD をについて説明し、DFD のすべてのエントリについて次のカテゴリで脅威を探します: **S**poofing を識別、 **T**とデータを含んだ ampering **R**、これが否認**すれば**漏洩、 **D**ービス拒否、および**E**特権の levation します。  
+-   それぞれの DFD について説明し、DFD のすべてのエントリは、次のカテゴリで脅威を探します: **S**poofing を識別、 **T**にデータを ampering **R**、これが否認 **は**漏洩、 **D**ービス拒否、および **E**levation 特権のです。  
   
 -   特定された脅威の一覧を作成します。 この一覧には、タイトル、簡単な説明 (脅威ツリーを含む)、資産、影響、リスク、緩和方法、緩和状態、バグ番号などを含めることをお勧めします。  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 09/20/2017
     >  リスク、緩和方法、緩和状態などは、脅威を確認しながら追加することができます。 脅威モデルのミーティング中は、あまりこれらの項目に時間をかけないでください。  
   
 ## <a name="step-3-review-threats"></a>手順 3. 脅威を確認します。  
- 環境に対する脅威を特定したら、各脅威のリスクにランクを付け、各脅威への対応方法を決定する必要があります。 これは別にチーム ミーティングを開くか電子メールを使用して行うことができます。 リスクの度合いを計算する次の効果カテゴリを使用することができます: **D**amage 潜在的な**R**eproducibility、 **E**xploitability、 ****影響を受けるユーザー、および**D**iscoverability です。  
+ 環境に対する脅威を特定したら、各脅威のリスクにランクを付け、各脅威への対応方法を決定する必要があります。 これは別にチーム ミーティングを開くか電子メールを使用して行うことができます。 次の効果カテゴリを使用してリスク エクスポージャを計算することができます: **D**amage 可能性のある **R**eproducibility、 **E**xploitability、 **A**影響を受けるユーザーと **D**iscoverability します。  
   
  対象となる環境への脅威をリスクごとに優先順位を付けて一覧を作成したら、各脅威への対応方法を決定する必要があります。 対応として、何もしない (ほとんどの場合お勧めできません)、問題の可能性についてユーザーに警告する、問題を除去する、問題を解決するという選択肢があります。  
   
@@ -121,9 +121,9 @@ ms.lasthandoff: 09/20/2017
   
  緩和策を実装したら、テストを行い、その脅威に対して望ましい保護レベルが実現されていることを確認します。  
   
-## <a name="step-7-keep-the-threat-model-in-sync-with-design"></a>手順 7. 脅威モデルの設計との同期を保つ  
+## <a name="step-7-keep-the-threat-model-in-sync-with-design"></a>手順 7. 脅威モデルのデザインとの同期を維持します。  
  新しいアプリケーション、サーバー、その他の要素を環境に追加する場合は、脅威モデル分析の調査結果を見直し、新しい機能に対する TMA を行います。  
   
 ## <a name="see-also"></a>参照  
 [小規模中規模の企業からのセキュリティのケース スタディ](../core/security-case-studies-for-small-to-medium-sized-companies.md)   
- [脅威モデル分析のサンプル シナリオ](../core/sample-scenarios-for-threat-model-analysis.md)
+ [脅威モデル分析のシナリオ例](../core/sample-scenarios-for-threat-model-analysis.md)

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk 追跡データベースに追跡されるメッセージをコピーする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk 追跡データベースに追跡されるメッセージをコピーする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, copying between servers
@@ -21,15 +21,15 @@ helpviewer_keywords:
 - MessageBox database, linking servers
 - MessageBox database, archiving
 ms.assetid: 369e972a-efbe-4ad5-a68f-aa3bbfb9ad54
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 23aaa8e3bea3405d51a18da1778d420550ad4584
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="how-to-copy-tracked-messages-into-the-biztalk-tracking-database"></a>追跡メッセージを BizTalk 追跡データベースにコピーする方法
 アーカイブおよび削除プロセスでは、さまざまな SQL Server データベースに対するアクセスや更新が行われる可能性があるため、関連する SQL Server インスタンス間にリンク サーバーを設定する必要があります。 リンク サーバーを使用すると、追跡メッセージを BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベース サーバーから BizTalk 追跡 (BizTalkDTADb) データベースに直接コピーできます。 次のそれぞれのインスタンス間にリンク サーバーを設定してください。  
@@ -48,21 +48,21 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-copy-tracked-messages-into-the-biztalk-tracking-database-sql-server-2008"></a>追跡メッセージを BizTalk 追跡データベース (SQL Server 2008) にコピーするには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 R2**、順にクリック**SQL Server Management Studio**です。  
+1.  クリックして **開始**, 、 をクリックして **すべてのプログラム**, 、 をクリックして **Microsoft SQL Server 2008 R2**, 、順にクリック **SQL Server Management Studio**します。  
   
-2.  **サーバーへの接続**ダイアログ ボックスでは、BizTalk 追跡 (BizTalkDTADb) データベースが存在する SQL server および適切な認証の種類の名前を指定し、をクリックして**接続**に適切な SQL server に接続します。  
+2.  **サーバーへの接続**  ダイアログ ボックスが BizTalk 追跡 (BizTalkDTADb) データベースが存在する SQL server と、適切な認証の種類の名前を指定し、クリックして **接続** 対象の SQL server に接続します。  
   
-3.  **Microsoft SQL Server Management Studio**をダブルクリックして**SQL Server エージェント**、クリックして**ジョブ**です。  
+3.  **Microsoft SQL Server Management Studio**, をダブルクリックして **SQL Server エージェント**, 、クリックして **ジョブ**します。  
   
-4.  詳細ウィンドウで右クリック**TrackedMessages_Copy_BizTalkMsgBoxDb**、クリックして**プロパティ**です。  
+4.  詳細ペインで右クリック **TrackedMessages_Copy_BizTalkMsgBoxDb**, 、クリックして **プロパティ**します。  
   
-5.  **ジョブのプロパティ - TrackedMessages_Copy_BizTalkMsgBoxDb**ダイアログ ボックスで、**ページの選択**をクリックして**手順**です。  
+5.  **ジョブのプロパティ - TrackedMessages_Copy_BizTalkMsgBoxDb** ダイアログ ボックスで、 **ページの選択**, をクリックして **手順**します。  
   
-6.  [**ジョブ ステップの一覧**、] をクリックして**パージ**、クリックして**編集**です。  
+6.  **ジョブ ステップの一覧**, 、 をクリックして **パージ**, 、 をクリックし、 **編集**します。  
   
-7.  **コマンド**ボックスで、追跡サーバー名とデータベース名のパラメーターを必要に応じて編集し、をクリックして**OK**です。  
+7.  **コマンド** ボックス、追跡サーバーと、必要に応じてデータベース名のパラメーターを編集し、クリックして **OK**します。  
   
-8.  **ジョブのプロパティ - TrackedMessages_Copy_BizTalkMsgBoxDb**ダイアログ ボックスで、**ページの選択**、 をクリックして**全般**を選択、**有効**チェック ボックスをクリックして**OK**です。  
+8.  **ジョブのプロパティ - TrackedMessages_Copy_BizTalkMsgBoxDb** ダイアログ ボックスで、 **ページの選択**, 、 をクリックして **全般**,を選択、 **有効** チェック ボックスをオンにし **ok**します。  
   
      メッセージが BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベースから BizTalk 追跡 (BizTalkDTADb) データベースにコピーされます。  
   
