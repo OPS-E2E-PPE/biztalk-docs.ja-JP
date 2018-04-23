@@ -1,22 +1,22 @@
 ---
-title: "まとめ: 取引先管理ソリューションを定義する |Microsoft ドキュメント"
-ms.custom: 
+title: 'まとめ: 取引先管理ソリューションを定義する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4219312a-c4b5-45f3-b77b-d5cc4f1a1ca4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ea32fba8e9e57d7a0549a680b06e08d5bf8e087f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="putting-it-all-together-defining-a-trading-partner-management-solution"></a>まとめ: 取引先管理ソリューションを定義する
 TPM ソリューションの構築で使用するさまざまなコンポーネントについて理解できたので、次に標準的な TPM ソリューションの流れと、さまざまな構成要素の連携について説明します。 ここでは、TPM ソリューションのモデリングのベスト プラクティスも示します。  
@@ -32,7 +32,7 @@ TPM ソリューションの構築で使用するさまざまなコンポーネ�
     > [!NOTE]
     >  この段階では、プロトコル設定の指定は省略できます。 取引先アグリーメントの一部として、プロトコルの設定を直接追加できます。  
   
-4.  2 つのビジネス プロファイルがメッセージ交換の間に使用することを合意したエンコードとメッセージ プロトコルを定義する取引先アグリーメント (TPA) を、ビジネス プロファイルの間に作成します。 アグリーメントを作成する方法については、次を参照してください[X12 に固有のアグリーメント プロパティの構成](../core/configuring-x12-specific-agreement-properties.md)、 [EDIFACT に固有のアグリーメントのプロパティを構成する](../core/configuring-edifact-specific-agreement-properties.md)、または[AS2 を構成します。。アグリーメントのプロパティ](../core/configuring-as2-agreement-properties.md)です。  
+4.  2 つのビジネス プロファイルがメッセージ交換の間に使用することを合意したエンコードとメッセージ プロトコルを定義する取引先アグリーメント (TPA) を、ビジネス プロファイルの間に作成します。 アグリーメントを作成する方法については、次を参照してください[X12 に固有のアグリーメント プロパティの構成](../core/configuring-x12-specific-agreement-properties.md)、 [EDIFACT に固有のアグリーメントのプロパティを構成する](../core/configuring-edifact-specific-agreement-properties.md)、または[AS2 を構成します。アグリーメントのプロパティ](../core/configuring-as2-agreement-properties.md)です。  
   
  以上の作業を実行することで、取引先と B2B メッセージを交換するための TPM ソリューションが作成されます。  
   
@@ -52,4 +52,4 @@ TPM ソリューションの構築で使用するさまざまなコンポーネ�
 -   パーティ、プロファイル、およびメッセージングでの手順に従って、AS2 のアグリーメントを作成する[AS2 プロパティを設定する](../core/configuring-as2-properties.md)です。  
   
 ## <a name="see-also"></a>参照  
- [取引先管理ソリューションのビルド ブロック](../core/building-blocks-of-a-trading-partner-management-solution.md)
+ [取引先管理ソリューションの構成要素](../core/building-blocks-of-a-trading-partner-management-solution.md)

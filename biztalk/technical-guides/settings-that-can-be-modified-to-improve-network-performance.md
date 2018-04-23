@@ -1,22 +1,22 @@
 ---
-title: "ネットワーク パフォーマンスを向上させる変更可能な設定 |Microsoft ドキュメント"
-ms.custom: 
+title: ネットワーク パフォーマンスを向上させる変更可能な設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb6aacc3-e697-4cc9-b937-73a2f54e733b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 8557c8bbe8c0b1c785d6da8d87e8950d3779b8d0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="settings-that-can-be-modified-to-improve-network-performance"></a>ネットワーク パフォーマンスを向上するように変更する設定
 このトピックでは、ネットワーク パフォーマンスに影響する推奨値の説明を提供します。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="adjust-the-maxuserport-and-tcptimedwaitdelay-settings"></a>MaxUserPort と TcpTimedWaitDelay 設定を調整します。  
  **MaxUserPort**値アプリケーションは、システムから利用可能なユーザーの任意のポートを要求するときに使用される最大ポート数を制御します。 通常、短時間のポートは、1025 65535 までからの範囲で割り当てられます。 ポートの範囲は、実際に開始点とは、エンドポイントとの範囲ではようになりました。 新しい既定の開始ポートは 49152、および既定の終了ポートは 65535 です。 この範囲は、アプリケーションとサービスによって使用される既知のポートだけでなく、します。 各サーバーでは、サーバーで使用するポートの範囲を変更できます。 この範囲を調整するには、netsh コマンドを使用して次のようにします。  
   
- **netsh int \<ipv4 (& a) #124; ipv6\>動的設定\<tcp (& a) #124; udp\>開始番号 num = 範囲を =**  
+ **netsh int \<ipv4&#124;ipv6\>動的設定\<tcp&#124;udp\>開始番号 num = 範囲を =**  
   
  このコマンドは、tcp 動的ポートの範囲を設定します。 開始ポート アドレスが**数**、ポートの総数と**範囲**です。 サンプル コマンドは、次のとおり: 次の netsh コマンドを使用して動的ポートの範囲を表示することができます。  
   
@@ -41,14 +41,14 @@ ms.lasthandoff: 11/28/2017
   
 -   netsh int ipv6 動的 udp を表示します。  
   
- **TcpTimedWaitDelay**値が閉じられるときに、接続が TIME_WAIT 状態で保持される時間の長さを指定します。 接続が TIME_WAIT 状態のときに、ソケット ペアを再利用できません。 これは、値が 2 回セグメントの最大有効期間中、ネットワーク上にする必要があります 2 msl 状態とも呼ばれます。 詳細については、次を参照してください。[インターネット RFC 793](http://go.microsoft.com/fwlink/?LinkId=113719) (ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=113719"http://go.microsoft.com/fwlink/?LinkId=113719)。 TcpTimedWaitDelay 設定を調整するには、次に示すようにレジストリ設定を変更する必要があります。  
+ **TcpTimedWaitDelay**値が閉じられるときに、接続が TIME_WAIT 状態で保持される時間の長さを指定します。 接続が TIME_WAIT 状態のときに、ソケット ペアを再利用できません。 これは、値が 2 回セグメントの最大有効期間中、ネットワーク上にする必要があります 2 msl 状態とも呼ばれます。 詳細については、次を参照してください。[インターネット RFC 793](http://go.microsoft.com/fwlink/?LinkId=113719) (ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=113719"http://go.microsoft.com/fwlink/?LinkId=113719)です。 TcpTimedWaitDelay 設定を調整するには、次に示すようにレジストリ設定を変更する必要があります。  
   
 ###  
   
 |||  
 |-|-|  
 |キー:|HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters|  
-|[値]: |TcpTimedWaitDelay|  
+|値: |TcpTimedWaitDelay|  
 |データ型:|REG_DWORD|  
 |範囲:|30 ~ 300 (10 進数)|  
 |既定値:|0x78 (120 10 進数)|  
