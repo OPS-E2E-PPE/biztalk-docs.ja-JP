@@ -93,7 +93,7 @@ ms.lasthandoff: 04/20/2018
   
      **オブジェクト エクスプ ローラー** SQL Server Management Studio のウィンドウが展開**データベース**を SQL Server のこのインスタンスのデータベースを表示します。  
   
-     ![SQL Server Management Studio]、[オブジェクト エクスプ ローラー](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
+     ![SQL Server Management Studio、Object Explorer](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
   
 3.  クリックして、ファイルを追加する対象のデータベースを右クリックして**プロパティ**を表示する、**データベース プロパティ**データベース用のダイアログ ボックス。  
   

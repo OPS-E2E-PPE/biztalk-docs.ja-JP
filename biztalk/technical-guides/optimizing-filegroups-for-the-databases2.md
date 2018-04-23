@@ -94,25 +94,25 @@ ms.lasthandoff: 04/20/2018
   
 ### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server"></a>SQL Server のメッセージ ボックス データベースにファイルを手動で追加します。
    
-1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続**] ダイアログ ボックス。  
+1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続** ダイアログ ボックス。  
   
      ![SQL Server ログイン画面](../technical-guides/media/sqlserver2008r2-loginscreen.gif "SQLServer2008R2 Loginscreen")  
   
-2.  **サーバー名**のボックスの編集、**サーバーへの接続**] ダイアログ ボックスで、BizTalk Server メッセージ ボックス データベースを格納する SQL Server インスタンスの名前を入力し、をクリックして**の接続**を SQL Server Management Studio を表示します。 **オブジェクト エクスプ ローラー** SQL Server Management Studio のウィンドウが展開**データベース**を SQL Server のこのインスタンスのデータベースを表示します。  
+2.  **サーバー名**のボックスの編集、**サーバーへの接続** ダイアログ ボックスで、BizTalk Server メッセージ ボックス データベースを格納する SQL Server インスタンスの名前を入力し、をクリックして**の接続**を SQL Server Management Studio を表示します。 **オブジェクト エクスプ ローラー** SQL Server Management Studio のウィンドウが展開**データベース**を SQL Server のこのインスタンスのデータベースを表示します。  
   
-     ![SQL Server 2005 Management Studio]、[オブジェクト エクスプ ローラー](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
+     ![SQL Server 2005 Management Studio、オブジェクト エクスプ ローラー](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
   
 3.  クリックして、ファイルを追加するデータベースを右クリックして**プロパティ**を表示する、**データベース プロパティ**データベース用のダイアログ ボックス。  
   
-     ![SQL Server 2005 データベースのプロパティ] ダイアログ ボックス](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
+     ![SQL Server 2005 データベースのプロパティ ダイアログ ボックス](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
   
-4.  **データベース プロパティ**ダイアログ ボックスで、**ファイル グループ**ページ。 BizTalkMsgBoxDb データベースの追加のファイル グループを作成する] をクリックして**追加**です。 次の例では、次の 3 つの追加のファイル グループが追加されます。  
+4.  **データベース プロパティ**ダイアログ ボックスで、**ファイル グループ**ページ。 BizTalkMsgBoxDb データベースの追加のファイル グループを作成する をクリックして**追加**です。 次の例では、次の 3 つの追加のファイル グループが追加されます。  
   
      ![SQL Server 2005、データベースへのファイル グループの追加](../technical-guides/media/6be47c0e-06c3-45d9-bce2-a42453da7d19.gif "6be47c0e-06c3-45d9-bce2-a42453da7d19")  
   
 5.  **[データベースのプロパティ]** ダイアログ ボックスで、 **[ファイル]** ページをクリックします。  
   
-     ファイル グループに追加するファイルを作成する] をクリックして**追加**、クリックして**OK**です。 メッセージ ボックス データベースは、大幅なパフォーマンス利点は、1 つのディスク構成を提供する複数のディスクに分散されますようになりました。  
+     ファイル グループに追加するファイルを作成する をクリックして**追加**、クリックして**OK**です。 メッセージ ボックス データベースは、大幅なパフォーマンス利点は、1 つのディスク構成を提供する複数のディスクに分散されますようになりました。  
   
      次の例を以前に作成されたファイル グループの各ファイルが作成され、各ファイルが別のディスクに配置されます。  
   
@@ -126,11 +126,11 @@ ms.lasthandoff: 04/20/2018
   
  このスクリプトを実行するには、次の手順を実行します。  
   
-1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続**] ダイアログ ボックス。  
+1.  開いている**SQL Server Management Studio**を表示する、**サーバーへの接続** ダイアログ ボックス。  
   
 2.  **サーバー名**のボックスの編集、**サーバーへの接続** ダイアログ ボックスで、BizTalk Server メッセージ ボックス データベースを格納する SQL Server インスタンスの名前を入力し、をクリックして**の接続** SQL Server Management Studio のダイアログ ボックスを表示します。  
   
-3.  SQL Server Management Studio でをクリックして、**ファイル**] メニューのをポイント**新規**、順にクリック**現在の接続とクエリ**SQL クエリ エディターを起動します。  
+3.  SQL Server Management Studio でをクリックして、**ファイル** メニューのをポイント**新規**、順にクリック**現在の接続とクエリ**SQL クエリ エディターを起動します。  
   
 4.  サンプル スクリプトをコピー [BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト](../technical-guides/biztalk-server-messagebox-database-filegroups-sql-script.md)をクエリ エディターにします。  
   

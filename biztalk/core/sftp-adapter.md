@@ -177,7 +177,7 @@ WinSCP の新しいバージョンを使用して、BizTalk Server で、する�
 |SSHServerHostKeyFingerPrint では、どのような指紋アルゴリズムと形式を使用する必要がありますか?|形式のサーバーのキーの MD5 フィンガー プリントを使用する必要があります: `ssh-rsa 2048 90:e4:9b:67:d9:22:a7:5f:6f:33:db:6a:b1:23:96:12`です。|  
 |SFTP アダプターは 256 ビットの暗号化をサポートしていますか?|はい。SFTP アダプターは 256 ビットの暗号化をサポートしています。 次のような暗号化アルゴリズムがサポートされています。<br /><br /> -AES 暗号化: 256 ビット、192 ビットまたは 128 ビット SDCTR または CBC<br /><br /> -3 des (TRIPLE-DES) 暗号化: 168 ビット SDCTR または CBC|  
 |アダプターでサポートされる SSH のバージョンを教えてください。|SSH2 のみです。 バージョンが SSH1 である SFTP サーバーと接続を確立することはできません。|  
-|ファイル マスクでは大文字と小文字が区別されますか。|不可。 「*.txt」と \*です。TXT は幸先の良い動作します。 BizTalk Server 2013 の累積的な最新の更新プログラムをインストールしてください。 BizTalk Server 2013 RTM リリースでは、区別するファイル マスクがありました。|  
+|ファイル マスクでは大文字と小文字が区別されますか。|不可。 「\*.txt」と \*です。TXT は幸先の良い動作します。 BizTalk Server 2013 の累積的な最新の更新プログラムをインストールしてください。 BizTalk Server 2013 RTM リリースでは、区別するファイル マスクがありました。|  
 |バインドをエクスポートすると [パスワード] フィールドが空になります。 このようなバインドをインポートして受信場所を作成する場合、どのような変更を加える必要がありますか。|バインド ファイルを編集し、[パスワード] フィールドに変更を加えてください。 さらに、 `<Password vt="1">MySecretPassword</Password>`, 、**vt =「1」** null 値を示します。 変更する **vt =「8」**, 、文字列を示します。 以下に例を示します。<br /><br /> `<Password vt="8">MySecretPassword</Password>`<br /><br /> 詳細については、次を参照してください。 [http://msdn.microsoft.com/library/system.runtime.interopservices.varenum(v=vs.100).aspx](http://msdn.microsoft.com/library/system.runtime.interopservices.varenum\(v=vs.100\).aspx)|  
 |ファイル パスの指定方法を教えてください。|通常、パスは `/folder/pathname` という形式で指定します。 ただし、サーバーの種類によっては別の形式になる場合や、先頭または末尾のスラッシュの有無が異なる場合があります。 そのため、次のように指定することもできます。<br /><br /> -                   `/folder/pathname`<br /><br /> -                   `/folder/pathname/`<br /><br /> -                   `folder/pathname`<br /><br /> -                   `folder/pathname/`|  
   

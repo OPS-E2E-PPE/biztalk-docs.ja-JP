@@ -94,7 +94,7 @@ FileAct および InterAct ハンドラーのプロパティとして送信、�
 
 有効にするには、FileAct および InterAct SWIFTNet paramfile で SAG で作成したパートナーを入力する必要があります、サーバー メッセージの値で初期化するためにアダプターを受信します。 通常格納されて、paramfile`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`です。 構成した後、paramfile、開始**SnlReceiver.exe**です。  
   
-1. 開く、 **SWIFTNet paramfile**です。 マークされた場所に"* * *"、以下を追加します。 なお、`AdapterType`値を指定できます`Interact`または`Fileact`です。  
+1. 開く、 **SWIFTNet paramfile**です。 マークされた場所に"***"、以下を追加します。 なお、`AdapterType`値を指定できます`Interact`または`Fileact`です。  
   
      ```spawn "snlreceiver -SagMessagePartner <Server MessagePartnerName\> -AdapterMode <AdapterType\>"```  
        
