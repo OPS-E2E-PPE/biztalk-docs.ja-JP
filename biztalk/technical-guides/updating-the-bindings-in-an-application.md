@@ -25,4 +25,4 @@ ms.lasthandoff: 04/20/2018
  アセンブリに事前バインドされたポートまたは動的ポートがあり、ポート構成を BizTalk Server 管理コンソールで変更した場合、このアセンブリを同じバージョン番号のアセンブリで更新すると、設定は失われます。 更新しようとするアセンブリのバインド ファイルをエクスポートすることができます。 アセンブリを更新した後、アプリケーションにアセンブリをインポートし、以前のバインドを再適用するには、そのバインド ファイルをインポートできます。  
   
 ## <a name="updating-an-assembly-with-a-newer-version"></a>アセンブリを新しいバージョンと更新  
- アセンブリのバージョンを更新するには、バインド ファイルに 1 つのアセンブリに関連付けられているバインディング、アセンブリの新しいバージョンを反映するように、バインド ファイルを編集し、アプリケーションにアセンブリのバインドのインポートおよびエクスポートします。 バインド ファイルの編集の詳細については、次を参照してください。[バインド ファイルのカスタマイズ](http://go.microsoft.com/fwlink/?LinkID=155000)(ハイパーリンク"http://go.microsoft.com/fwlink/?LinkID=155000"http://go.microsoft.com/fwlink/?LinkID=155000)で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。
+ アセンブリのバージョンを更新するには、バインド ファイルに 1 つのアセンブリに関連付けられているバインディング、アセンブリの新しいバージョンを反映するように、バインド ファイルを編集し、アプリケーションにアセンブリのバインドのインポートおよびエクスポートします。 バインド ファイルの編集の詳細については、次を参照してください。[バインド ファイルのカスタマイズ](http://go.microsoft.com/fwlink/?LinkID=155000)(ハイパーリンク"http://go.microsoft.com/fwlink/?LinkID=155000" http://go.microsoft.com/fwlink/?LinkID=155000)で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。

@@ -224,7 +224,7 @@
 ###### [チュートリアル: データの送信](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data.md)
 ###### [チュートリアル: データの受信](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data.md)
 #### [アーキテクチャ](../core/architecture-of-biztalk-adapter-for-tibco-rendezvous.md)
-#### [セキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)
+#### [Security](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)
 ##### [SSO の要件](../core/requirements-for-single-sign-on3.md)
 ##### [SSO とアダプター](../core/single-sign-on-and-biztalk-adapter-for-tibco-rendezvous.md)
 ##### [関連アプリケーションの作成](../core/creating-affiliate-applications1.md)
