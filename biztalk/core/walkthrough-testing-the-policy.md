@@ -61,7 +61,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  <span data-ttu-id="9cbb6-120">型 **SamplePO.xml** の **ファイル名**, 、クリックして **保存**します。</span><span class="sxs-lookup"><span data-stu-id="9cbb6-120">Type **SamplePO.xml** for **File name**, and then click **Save**.</span></span>  
   
-7.  <span data-ttu-id="9cbb6-121">**[ファイル]** メニューの **[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9cbb6-121">On the **File** menu, click **New**.</span></span>  
+7.  <span data-ttu-id="9cbb6-121">**[ファイル]** メニューの **[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9cbb6-121">On the **File** menu, click **New**.</span></span>  
   
 8.  <span data-ttu-id="9cbb6-122">次の XML をメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="9cbb6-122">Copy the following XML to Notepad:</span></span>  
   
