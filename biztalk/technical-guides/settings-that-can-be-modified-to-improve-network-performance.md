@@ -41,7 +41,7 @@ ms.lasthandoff: 04/20/2018
   
 -   netsh int ipv6 動的 udp を表示します。  
   
- **TcpTimedWaitDelay**値が閉じられるときに、接続が TIME_WAIT 状態で保持される時間の長さを指定します。 接続が TIME_WAIT 状態のときに、ソケット ペアを再利用できません。 これは、値が 2 回セグメントの最大有効期間中、ネットワーク上にする必要があります 2 msl 状態とも呼ばれます。 詳細については、次を参照してください。[インターネット RFC 793](http://go.microsoft.com/fwlink/?LinkId=113719) (ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=113719"http://go.microsoft.com/fwlink/?LinkId=113719)です。 TcpTimedWaitDelay 設定を調整するには、次に示すようにレジストリ設定を変更する必要があります。  
+ **TcpTimedWaitDelay**値が閉じられるときに、接続が TIME_WAIT 状態で保持される時間の長さを指定します。 接続が TIME_WAIT 状態のときに、ソケット ペアを再利用できません。 これは、値が 2 回セグメントの最大有効期間中、ネットワーク上にする必要があります 2 msl 状態とも呼ばれます。 詳細については、次を参照してください。[インターネット RFC 793](http://go.microsoft.com/fwlink/?LinkId=113719) (ハイパーリンク"http://go.microsoft.com/fwlink/?LinkId=113719" http://go.microsoft.com/fwlink/?LinkId=113719)です。 TcpTimedWaitDelay 設定を調整するには、次に示すようにレジストリ設定を変更する必要があります。  
   
 ###  
   
