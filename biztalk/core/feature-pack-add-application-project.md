@@ -1,21 +1,21 @@
 ---
-title: "手順 1 - アプリケーションのプロジェクトと更新プログラムの json の追加 |Microsoft ドキュメント"
-description: "Visual Studio で、BizTalk Server アプリケーション プロジェクトを追加し、Dll、バインド ファイル、およびアプリケーションの Visual Studio Team Services の配置シーケンスで BizTalkServerInventory.json ファイルを更新"
-ms.custom: 
+title: 手順 1 - アプリケーションのプロジェクトと更新プログラムの json の追加 |Microsoft ドキュメント
+description: Visual Studio で、BizTalk Server アプリケーション プロジェクトを追加し、Dll、バインド ファイル、およびアプリケーションの Visual Studio Team Services の配置シーケンスで BizTalkServerInventory.json ファイルを更新
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8d4b9773c9c7b23715b5ddae29c3c97f381da5e
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: da1c4bb3cb12cf67e84bab7aa7f38c1a893eca00
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="step-1-add-the-biztalk-server-application-project-in-visual-studio"></a>手順 1: Visual Studio での BizTalk Server アプリケーション プロジェクトを追加します。
 
@@ -80,7 +80,7 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
     ```
     "BizTalkAssemblies": [
         {
-            "Name": "AssemblyName"
+            "Name": "AssemblyName",
             "Path": "PathToAssembly
         }
     ]
@@ -91,7 +91,7 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
     ```
     "BindingsFiles": [
         {
-            "Name": "Binding File Name"
+            "Name": "Binding File Name",
             "Path": "PathToBindingFile
         }
     ]
@@ -108,7 +108,7 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
     ```
 
 
-6. **保存**変更します。 完了したら、.json ファイルは、次のようになります。 
+6. **保存** 変更します。 完了したら、.json ファイルは、次のようになります。 
 
     ```
     {
@@ -131,11 +131,11 @@ BizTalk アプリケーション プロジェクトに含まれる、`BizTalkSer
     }
     ```
 
-7. **省略可能な**します。 アプリケーション プロジェクト (例: appProjectHelloWorld) を右クリックし **プロパティ**です。 デバッグまたはリリース バージョンは、新しい値に設定できます。 次の手順でないはこれを行うことができますに注意してください。  
+7. **省略可能な**です。 アプリケーション プロジェクト (例: appProjectHelloWorld) を右クリックし **プロパティ**です。 デバッグまたはリリース バージョンは、新しい値に設定できます。 次の手順でないはこれを行うことができますに注意してください。  
 
     ![デバッグまたはリリース バージョンを設定します。](../core/media/application-project-version.png)
 
-8. アプリケーション プロジェクト (例: appProjectHelloWorld) を右クリックし **ビルド**です。 成功した場合、zip ファイルは ***yourApplicationProject*\bin\debug**フォルダー。  
+8. アプリケーション プロジェクト (例: appProjectHelloWorld) を右クリックし **ビルド**です。 Zip ファイルがで作成が成功した場合 ***yourApplicationProject * \bin\debug**フォルダー。  
 
     ![Zip ファイルをビルドします。](../core/media/application-project-zip-file.png)
 

@@ -4,7 +4,7 @@
   items:
     - name: テクニカル ガイド
       tocHref: /biztalk/technical-guides/
-      topicHref: /biztalk/technical-guides/biztalk-technical-guides
+      topicHref: /biztalk/technical-guides/
     - name: BizTalk Server 新機能、インストール、構成、アップグレード
       tocHref: /biztalk/install-and-config-guides/
       topicHref: /biztalk/install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade

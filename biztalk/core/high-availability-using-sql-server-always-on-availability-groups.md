@@ -13,11 +13,11 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e7bc583cf64ab822cd785e73b3994e7f8e33a75
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 4bc7a1d1864b4e31bc20d170e2f2dd2602646188
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups"></a>SQL Server Always On 可用性グループを使用して高可用性
 SQL Server AlwaysOn 可用性グループを使用して高可用性を構成します。
@@ -260,7 +260,7 @@ BizTalk Server データベースを使用してデータベースのスタン�
 * ログイン、SQL エージェント ジョブ、SQL データベース メール プロファイルとアカウントは、可用性グループ内で管理されていません。 これには、プライマリ レプリカに対して実行するかどうかを確認するジョブの手動で変更が必要です。 
 * SQL Server Analysis Services と SQL Server Integration Services は、可用性グループには参加しません。 SQL Server からのこのサポートなしは、Azure の仮想マシンでこれらの HA ソリューションはありません。 BizTalk Server BAM 機能は、次のサービスに依存します。 
 * 可用性グループは、同じ SQL インスタンス上のデータベース間で MSDTC をサポートしていません。 そのため、BizTalk を構成する最小 8 個の SQL インスタンスが必要です。 
-* MSDTC に対処するには、2 つのサーバーをホストしている 4 つの SQL インスタンスごとの最小値を使用して可用性グループ、BizTalk データベースでの制限を構成できます。 使用することも[Azure ロード バランサーと複数の IP アドレス](https://docs.microsoft.com/azure/load-balancer/load-balancer-multivip-overview)です。 1 台のサーバー上のポート 1433 で 4 つの既定の SQL インスタンスを使用する場合は、4 つの IP アドレスが必要です。 場合は、1 つの IP アドレスに制限して、同じサーバー上の複数の SQL インスタンスをホストする、しを確認してを必ず SQL インスタンスごとに、カスタム ポートを使用します。 
+* MSDTC に対処するには、2 つのサーバーをホストしている 4 つの SQL インスタンスごとの最小値を使用して可用性グループ、BizTalk データベースでの制限を構成できます。 使用することも[Azure ロード バランサーと複数の IP アドレス](https://docs.microsoft.com/azure/load-balancer/load-balancer-multivip-overview)です。 1 台のサーバー上のポート 1433 で 4 つの既定の SQL インスタンスを使用する場合は、4 つの IP アドレスが必要です。 1 つの IP アドレスに制限されている、同じサーバー上の複数の SQL インスタンスをホストする場合は、SQL インスタンスごとに、カスタム ポートを使用することを確認されます。 
 * BizTalk Server では、読み取り専用ルーティングを使用できません。 
 * BizTalk Server が設定されていない、 `MultiSubnetFailover` 接続プロパティです。 
 * ログ配布を使用して BizTalk バックアップ ジョブは、可用性グループの設定、バックアップの設定に関係なく、プライマリ レプリカを常に対象します。 

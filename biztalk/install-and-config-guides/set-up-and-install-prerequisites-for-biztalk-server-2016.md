@@ -5,7 +5,7 @@ author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
 ms.custom: ''
-ms.date: 11/30/2017
+ms.date: 04/25/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
 caps.latest.revision: 11
 ms.author: mandia
-ms.openlocfilehash: 2f03aaf7d33cc494320d1ef0944b48286bc1b24c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 666cddaab4d23fa69b0ae488f665e2eda5182c05
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>BizTalk Server 2016 のセットアップとインストールの前提条件
 サーバーのセットアップとソフトウェアのインストール/構成の前提条件。
@@ -106,7 +106,7 @@ BizTalk Server の機能のうち、IIS を必要とするものは次のとお�
 - Windows SharePoint Services アダプター
 - SSL (Secure Sockets Layer) 暗号化
 - BAM ポータル
-- EDI 
+- EDI
 
 IIS は**役割**または**機能**としてオペレーティング システムに付属します。OS によって役割または機能になります。 インストール方法:
 
@@ -295,7 +295,7 @@ BizTalk Server には SQL Server が必要です。 SQL Server は、BizTalk と
         - Integration Services
 
     > [!NOTE]
-    > **SQL Server Data Tools** は SQL Server の既定インストールには含まれていません。 必須ではありませんが、[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) でダウンロードできます。 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) をダウンロードします。これは、Azure SQL Database を含め、サポートされているあらゆるバージョンの SQL Server で動作します。 
+    > **SQL Server Data Tools** は SQL Server の既定インストールには含まれていません。 必要ありませんがでダウンロードできます[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)です。 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) をダウンロードします。これは、Azure SQL Database を含め、サポートされているあらゆるバージョンの SQL Server で動作します。 ただし、BAM を使用する場合は、リモートの SSIS に接続するには、宛先 SSIS サーバーと同じバージョンの SSMS をインストールする必要があります。 たとえば、 [SSMS 16 をインストールします*。x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases) SQL 2016 SSIS への接続に関連するドライバーをインストールします。 SSMS 17 です。*x* SQL 2016 SSIS に接続できません。 複数のバージョンの SSMS はインストールされていることができます。 
 
 3. インストールを続行します。コンピューターの再起動が求められたら再起動します。
 
