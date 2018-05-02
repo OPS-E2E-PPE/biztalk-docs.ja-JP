@@ -1,23 +1,23 @@
 ---
-title: "基本またはカスタム構成を使用して構成する |Microsoft ドキュメント"
-description: "BizTalk Server の基本またはカスタム構成を行うし、各構成に対して行う処理について説明する手順"
-ms.custom: 
+title: 基本またはカスタム構成を使用して構成する |Microsoft ドキュメント
+description: BizTalk Server の基本またはカスタム構成を行うし、各構成に対して行う処理について説明する手順
+ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 861a1237-d77a-42db-b563-d83f7930add6
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8989fd322fd9fc34e947a80b510619446a65f71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb5850c9dc32fd7b793e24cc08862d86a17abedd
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-biztalk-server"></a>BizTalk Server の構成
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、基本構成またはカスタム構成を使用して構成できます。
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 * 構成で既定のグループ名の代わりにカスタム グループ名を使用する場合は、カスタム構成を行います。
 * 構成で既定のデータベース名の代わりにカスタム データベース名を使用する場合は、カスタム構成を行います。
 * [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と SQL Server が別のコンピューターにインストールされている場合は、ドメイン グループが必要です。 そのため、カスタム構成を行う必要があります。
-* 基本構成を使用して、SQL Server の名前付きインスタンスに BAM 分析を構成することはできません。 名前付きインスタンスを使用している場合に BAM 分析を構成するには、カスタム構成を行います。
+* 名前付きインスタンスの基本的な構成を使用して SQL Server で BAM 分析を構成することはできません。 名前付きインスタンスを使用している場合に BAM 分析を構成するには、カスタム構成を行います。
 * 基本構成は、1 台のサーバーで実行される [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と SQL Server の完全なインストールをセットアップするユーザーに推奨されます。
 * 基本構成では、既定の名前を使用して自動的にローカル グループとデータベースを作成するため、短時間で構成することができます。
 
@@ -43,17 +43,17 @@ ms.lasthandoff: 09/20/2017
 
 ## <a name="basic-configuration"></a>基本構成
 
-1. [スタート] メニューの [**BizTalk Server 構成**] を右クリックして選択し、[**管理者として実行**] を選択します。 これにより構成ウィザードが開きます。 
+1. スタート メニューの **BizTalk Server 構成** を右クリックして選択し、**管理者として実行** を選択します。 これにより構成ウィザードが開きます。 
 2. 次のオプションを選択します。 
-    1. [**基本構成**] を選択します。
-    2. [**データベース サーバー名**] の既定は、自動的にローカル コンピューター名になります。   
-    3. BizTalk Server のサービスを実行するアカウントの [**ユーザー名**] と [**パスワード**] を入力します。 ベスト プラクティスとして、一意のアカウントを作成することをお勧めします。 個人ユーザー名は使用しないでください。  
+    1. **[基本構成]** を選択します。
+    2. **[データベース サーバー名]** の既定は、自動的にローカル コンピューター名になります。   
+    3. BizTalk Server のサービスを実行するアカウントの **[ユーザー名]** と **[パスワード]** を入力します。 ベスト プラクティスとして、一意のアカウントを作成することをお勧めします。 個人ユーザー名は使用しないでください。  
         ![bts2016BasicConfig](../install-and-config-guides/media/bts2016basicconfig.gif)  
-    このコンピューターの管理資格を持つユーザー名を入力すると、警告が表示されます。 これは正常です。 [**OK**] をクリックし、続行します。
+    このコンピューターの管理資格を持つユーザー名を入力すると、警告が表示されます。 これは正常です。 **[OK]** をクリックし、続行します。
     
-3. [**構成**] を選択します。
-4. 構成の詳細を確認し、[**次へ**] を選択します。
-5. 構成ウィザードが完了したら、[**完了**] を選択します。
+3. **[構成]** を選択します。
+4. 構成の詳細を確認し、**[次へ]** を選択します。
+5. 構成ウィザードが完了したら、**[完了]** を選択します。
 
 構成ログ ファイルが `
 C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log` などの一時フォルダーに生成されます。
@@ -70,8 +70,8 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log` など�
 
 ## <a name="custom-configuration"></a>カスタム構成
   
-1. [スタート] メニューの [**BizTalk Server 構成**] を右クリックして選択し、[**管理者として実行**] を選択します。 これにより構成ウィザードが開きます。
-2. [**カスタム構成**]、[**構成**] の順に選択します。
+1. スタート] メニューの **[BizTalk Server 構成]** を右クリックして選択し、**[管理者として実行]** を選択します。 これにより構成ウィザードが開きます。
+2. **[カスタム構成]**、**[構成]** の順に選択します。
 
 ### <a name="configure-enterprise-single-sign-on-sso"></a>Enterprise Single Sign-on (SSO) の構成
 
@@ -79,7 +79,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log` など�
 * ローカル アカウントを使用して SSO Windows アカウントを構成する場合、アカウント名のみを入力します。 コンピューター名は入力しないでください。
 * ローカルの SQL Server の名前付きのインスタンスをデータ ストアとして使用する場合、`LocalMachineName\InstanceName` を使用します。 `LocalMachineName\InstanceName, PortNumber` は使用しないでください。 
 
-1. [**Enterprise SSO**] を選択します。
+1. **[Enterprise SSO]** を選択します。
 2. 次の内容を構成します。
 
     | 項目 | 目的 |
@@ -91,7 +91,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log` など�
     |[Windows サービス]| Enterprise Single Sign-On サービスを実行するために使用したアカウントを入力します。 SQL Server が別のコンピューターである場合、ドメイン アカウントを入力します。 |
     |Windows アカウント|既定のグループ名を使用することも、独自のものを入力することも可能です。 SQL Server が別のコンピューター上にある場合は、ドメイン アカウントを入力します。 |
 
-3. [**Enterprise SSO シークレットのバックアップ**] を選択します。 このオプションは、マスター シークレットを暗号化されたバックアップ ファイルに保存します。 
+3. **[Enterprise SSO シークレットのバックアップ]** を選択します。 このオプションは、マスター シークレットを暗号化されたバックアップ ファイルに保存します。 
 4. 次の内容を構成します。  
 
     |項目|目的|
@@ -107,7 +107,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log` など�
 
 * ローカルの SQL Server の名前付きのインスタンスをデータ ストアとして使用する場合、`LocalMachineName\InstanceName` を使用します。 `LocalMachineName\InstanceName, PortNumber` は使用しないでください。
 
-1. [**グループ**] を選択します。
+1. **[グループ]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -125,7 +125,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log` など�
 * グループに作成する最初のホストは、インプロセス ホストとホスト インスタンスである必要があります。
 * 同じグループの複数の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にランタイムを構成した場合、同じサービス アカウントを信頼されているホスト アプリケーションと信頼されていないホスト アプリケーションの両方に構成することはできません。 信頼されているアプリケーションと信頼されていないアプリケーションには、一意のアカウントを使用する必要があります。 
 
-1. [**BizTalk ランタイム**] を選択します。
+1. **[BizTalk ランタイム]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -143,7 +143,7 @@ BRE を使用しない場合、この手順は省略してください。
 
 - ビジネス ルール エンジンを構成する前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループを構成することをお勧めします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループを構成する前に BRE を構成すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成によってグループ関連の管理ロールがルール エンジン データベースに追加されません。
 
-1. [**ビジネス ルール エンジン**] を選択します。
+1. **[ビジネス ルール エンジン]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -172,7 +172,7 @@ BAM ツールを使用しない場合、この手順は省略してください�
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースを統合する場合、BAM アーカイブおよび BAM 分析データベースを除外する必要があります。
 
 
-1. [**BAM ツール**] を選択します。
+1. **[BAM ツール]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -186,7 +186,7 @@ BAM ツールを使用しない場合、この手順は省略してください�
 
 BAM 警告を使用するには、BAM ツールを有効にする必要があります。
 
-1. [**BAM 警告**] を選択します。
+1. **[BAM 警告]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -200,7 +200,7 @@ BAM 警告を使用するには、BAM ツールを有効にする必要があり
 
 ### <a name="configure-the-bam-portal"></a>BAM ポータルの構成
 
-1. [**BAM ポータル**] を選択します。
+1. **[BAM ポータル]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -216,7 +216,7 @@ BAM 警告を使用するには、BAM ツールを有効にする必要があり
 * BAM ツールは EDI/AS2 ランタイム状態レポート機能の構成前に有効にする必要があります。
 * EDI のみ構成する場合、BAM は必要ありません。
 
-1. [**BizTalk EDI/AS2 ランタイム**] を選択します。
+1. **[BizTalk EDI/AS2 ランタイム]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -234,7 +234,7 @@ BAM 警告を使用するには、BAM ツールを有効にする必要があり
 
 * SharePoint Services Web サービス (SSOM) は、BizTalk Server 2016 以降削除され、BizTalk Server 2013 R2 では非推奨となっています。 これは、SharePoint Services アダプター (CSOM) に置き換わっています。 BizTalk の構成には CSOM オプションは表示されません。 CSOM オプションは、ファイル アダプターや HTTP アダプターが自動的にインストールされるのと同様に、BizTalk と共に自動的にインストールされます。
 
-1. [**Windows SharePoint Services アダプター**] を選択します。
+1. **[Windows SharePoint Services アダプター]** を選択します。
 2. 次の内容を構成します。
 
     |項目|目的|
@@ -246,7 +246,7 @@ BAM 警告を使用するには、BAM ツールを有効にする必要があり
     
 ### <a name="apply-your-configuration"></a>構成の適用
 
-[**構成の適用**] を選択し、構成を続行します。 
+**[構成の適用]** を選択し、構成を続行します。 
 
 1. **[概要]** で、選択したコンポーネントを確認して、**[次へ]** を選択します。
 2. 完了したら、**[完了]** を選択します。
@@ -270,7 +270,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(1-12-2017 2h39m30s).log` など�
   
 |仮想アプリケーション|既定のアプリケーション プール|Description|  
 |-------------------------|------------------------------|-----------------|  
-|BAM|BAMAppPool|BAM ポータル コンポーネント (ページ、画像、プリコンパイル済みコード、および他のリソース) をホストする仮想アプリケーション。 この仮想アプリケーションは、BAMManagementService アプリケーションを呼び出して、BAM データベースと通信します。 **注:** BAM ポータルをブランド化には、このアプリケーションの内容を変更することができます。|  
+|BAM|BAMAppPool|BAM ポータル コンポーネント (ページ、画像、プリコンパイル済みコード、および他のリソース) をホストする仮想アプリケーション。 この仮想アプリケーションは、BAMManagementService アプリケーションを呼び出して、BAM データベースと通信します。 **注:**  を BAM ポータルをブランド化するには、このアプリケーションの内容を変更することができます。|  
 |BAMManagementService|BAMAppPool|BAMManagementService Web サービスをホストする仮想アプリケーション。 この Web サービスは、BAM ポータル アプリケーションで BAM プライマリ インポート テーブル (PIT) との通信に使用されます。 データベースとの通信は、構成中に作成されたレジストリに保存されている、権限を借用した資格情報を使用して行われます。 この Web サービスで公開されたメソッドは、カスタム クライアントによって、任意のユーザーのビューおよびその詳細、関連アクティビティ、およびピボットテーブル レイアウトを取得するために使用されます。 さらに、データベース内の警告の管理にも使用できます。|  
 |BTSharePointAdapterWS|BTSSharePointAdapterWSAppPool|Windows SharePoint Service アダプター Web サービスをホストする仮想アプリケーション。 BizTalk Server 2013 R2 と 2013 のみに適用されます。|  
 
