@@ -1,1 +1,0 @@
-<span data-ttu-id="d90a0-101">BizTalk Server 2000</span><span class="sxs-lookup"><span data-stu-id="d90a0-101">BizTalk Server 2000</span></span>
