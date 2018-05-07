@@ -39,7 +39,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="user-action"></a>ユーザーの操作  
  この警告を解決するには、次の操作を行います:  
   
--   SSO 管理 MMC スナップインを使用して (システム & #124 文字です。プロパティと #124 文字です。オプション) またはコマンド ライン ツール  `ssomanage –enable winsync/extsync` グローバル フラグを有効にします。  
+-   SSO 管理 MMC スナップインを使用して (システム &#124; 文字です。プロパティと &#124; 文字です。オプション) またはコマンド ライン ツール  `ssomanage –enable winsync/extsync` グローバル フラグを有効にします。  
   
 ## <a name="more-info"></a>詳細
   

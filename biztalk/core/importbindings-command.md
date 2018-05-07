@@ -25,7 +25,7 @@ XML ベースのバインド ファイルから、BizTalk アプリケーショ�
 >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で生成されたバインド ファイルでは、アプリケーションが指定されません。 これらは、既定のアプリケーションにインポートされます。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask ImportBindings-ソース**:*値* [**- GroupLevel** & #124; **-ApplicationName**:*値*] [**-サーバー**:*値*] [**-データベース**:*値*] [**- ImportTrackingSettings**:*値*] **[- ExcludeParties]**
+ **BTSTask ImportBindings-ソース**:*値* [**- GroupLevel** &#124; **-ApplicationName**:*値*] [**-サーバー**:*値*] [**-データベース**:*値*] [**- ImportTrackingSettings**:*値*] **[- ExcludeParties]**
   
 ## <a name="parameters"></a>パラメーター  
   

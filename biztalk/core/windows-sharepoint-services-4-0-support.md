@@ -41,7 +41,7 @@ BizTalk Server の Windows SharePoint Services アダプターでは、同等の
 |プロパティ|値|  
 |--------------|-----------|  
 |ターゲット フォルダーの URL|"Lists/Posts" など、SharePoint サイトを基準とした [投稿] リストのターゲット フォルダーの URL。|  
-|SharePoint サイトの URL|たとえば http://、Windows SharePoint Services 4.0 ブログ サイトの URL*\<servername\>*/ブログ/サイト/場所*\<servername\>*は、Web サーバーの実際の名前のプレース ホルダーです。|  
+|SharePoint サイトの URL|たとえば 、Windows SharePoint Services 4.0 ブログ サイトの URL http://*\<servername\>*/sites/blog/ 場所*\<servername\>* は、Web サーバーの実際の名前のプレース ホルダーです。|  
   
  値を設定して、 **カテゴリ**, 、**公開**, 、**タイトル**, 、および **本文** 、WSS で対応する値を設定して、ブログ投稿のプロパティです。メッセージのコンテキスト プロパティを ConfigPropertiesXml です。 これは、カスタム パイプラインまたはオーケストレーションに行うことができます。 たとえば、オーケストレーションでは、次の式では、WSS の値が設定されます。ConfigPropertiesXml によって、Message_Out メッセージのプロパティをコンテキストです。  
   
@@ -86,7 +86,7 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
 |プロパティ|値|  
 |--------------|-----------|  
 |ターゲット フォルダーの URL|"wikiSP" など、SharePoint サイトを基準とした Wiki サイトのホーム ページの URL。|  
-|SharePoint サイトの URL|たとえば http://、Windows SharePoint Services 4.0 Wiki サイトの URL*\<servername\>*/サイト/場所*\<servername\>*は、web サーバーの実際の名前のプレース ホルダーです。|  
+|SharePoint サイトの URL|たとえば 、Windows SharePoint Services 4.0 ブログ サイトの URL http://*\<servername\>*/sites/wiki/ 場所*\<servername\>* は、Web サーバーの実際の名前のプレース ホルダーです。|  
   
  値を設定し、 **Wiki Content** 、WSS に対応する値を設定して、Wiki ページのプロパティです。メッセージのコンテキスト プロパティを ConfigPropertiesXml です。 これは、カスタム パイプラインまたはオーケストレーションに行うことができます。 たとえば、次のオーケストレーションの式によって、Message_Out メッセージの WSS.ConfigPropertiesXml コンテキスト プロパティの値が設定されます。  
   
