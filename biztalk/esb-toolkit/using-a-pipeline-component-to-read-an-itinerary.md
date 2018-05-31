@@ -1,14 +1,14 @@
 ---
-title: "パイプライン コンポーネントを使用して、日程を読み取る |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントを使用して、日程を読み取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e3b40c7-0f17-4d33-a26f-f51346a98be5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296194"
 ---
 # <a name="using-a-pipeline-component-to-read-an-itinerary"></a><span data-ttu-id="34392-102">パイプライン コンポーネントを使用して、日程を読み取る</span><span class="sxs-lookup"><span data-stu-id="34392-102">Using a Pipeline Component to Read an Itinerary</span></span>
 <span data-ttu-id="34392-103">受信パイプラインで受信するメッセージには、その処理要件 (クライアント側行程) を定義する SOAP ヘッダー内のメタデータを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="34392-103">A message that arrives in a receive pipeline can contain metadata in its SOAP header that defines its processing requirements (client-side itinerary).</span></span> <span data-ttu-id="34392-104">図 1 は、ESB 行程 ESB ディスパッチャー パイプライン コンポーネントの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="34392-104">Figure 1 illustrates the use of the ESB Itinerary and ESB Dispatcher pipeline components.</span></span>  
@@ -101,4 +102,4 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="34392-160">**Microsoft.Practices.ESB.Services.Transform です。**</span><span class="sxs-lookup"><span data-stu-id="34392-160">**Microsoft.Practices.ESB.Services.Transform.**</span></span> <span data-ttu-id="34392-161">このサービスは、受信メッセージのペイロードに対して BizTalk マップを実行します。</span><span class="sxs-lookup"><span data-stu-id="34392-161">This service executes BizTalk maps against the payload of an inbound message.</span></span> <span data-ttu-id="34392-162">サービスは、変換要件を検証し、ドキュメント仕様の名前とメッセージの種類を含む BizTalk コンテキスト プロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="34392-162">The service validates transform requirements and updates the BizTalk context properties that contain the document specification name and the message type.</span></span> <span data-ttu-id="34392-163">ESB ディスパッチャーは、変換サービスの名前、ESB ディスパッチャー パイプライン コンポーネントの対応するプロパティに表示される場合のみ、このサービスを実行します。</span><span class="sxs-lookup"><span data-stu-id="34392-163">The ESB Dispatcher executes this service only if this is the name of the transform service as it appears in the corresponding property of the ESB Dispatcher pipeline component.</span></span>  
   
-    -   <span data-ttu-id="34392-164">**Microsoft.Practices.ESB.Services.Routing です。**このサービスは、適切なエンドポイントのルーティング情報を設定するアダプター プロバイダーのフレームワークとの競合回避モジュールを使用します。</span><span class="sxs-lookup"><span data-stu-id="34392-164">**Microsoft.Practices.ESB.Services.Routing.**This service uses the Resolver and Adapter Provider Framework to set the appropriate endpoint routing information.</span></span> <span data-ttu-id="34392-165">ESB ディスパッチャーは、これは、ルーティング サービスの名前、ESB ディスパッチャー パイプライン コンポーネントの対応するプロパティに表示される場合にのみ、このサービスを実行します。</span><span class="sxs-lookup"><span data-stu-id="34392-165">The ESB Dispatcher executes this service only if this is the name of the routing service as it appears in the corresponding property of the ESB Dispatcher pipeline component.</span></span>
+    -   <span data-ttu-id="34392-164">**Microsoft.Practices.ESB.Services.Routing です。** このサービスは、適切なエンドポイントのルーティング情報を設定するアダプター プロバイダーのフレームワークとの競合回避モジュールを使用します。</span><span class="sxs-lookup"><span data-stu-id="34392-164">**Microsoft.Practices.ESB.Services.Routing.** This service uses the Resolver and Adapter Provider Framework to set the appropriate endpoint routing information.</span></span> <span data-ttu-id="34392-165">ESB ディスパッチャーは、これは、ルーティング サービスの名前、ESB ディスパッチャー パイプライン コンポーネントの対応するプロパティに表示される場合にのみ、このサービスを実行します。</span><span class="sxs-lookup"><span data-stu-id="34392-165">The ESB Dispatcher executes this service only if this is the name of the routing service as it appears in the corresponding property of the ESB Dispatcher pipeline component.</span></span>

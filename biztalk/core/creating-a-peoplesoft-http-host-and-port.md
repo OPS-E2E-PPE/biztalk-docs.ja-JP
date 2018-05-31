@@ -1,17 +1,17 @@
 ---
-title: "PeopleSoft HTTP ホストおよびポートを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: PeopleSoft HTTP ホストおよびポートを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP port
 - HTTP host
 ms.assetid: 3e1ce5fd-32ee-409f-b4c8-f2bc68470f17
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238114"
 ---
 # <a name="creating-a-peoplesoft-http-host-and-port"></a><span data-ttu-id="d0983-102">PeopleSoft の HTTP ホストとポートを作成する</span><span class="sxs-lookup"><span data-stu-id="d0983-102">Creating a PeopleSoft HTTP Host and Port</span></span>
 <span data-ttu-id="d0983-103">PeopleSoft のメッセージ公開アーキテクチャは、Integration Broker と呼ばれています。</span><span class="sxs-lookup"><span data-stu-id="d0983-103">The Message publication architecture in PeopleSoft is known as Integration Broker.</span></span> <span data-ttu-id="d0983-104">Integration Broker の主なコンポーネントは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d0983-104">The main components of Integration Broker are as follows:</span></span>  

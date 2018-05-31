@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: TIBCO EMS メッセージ コンテキスト プロパティを使用して |Microsoft ドキュメント"
-description: "BizTalk Server に、オーケストレーションで TIBCO Enterprise Message Service のメッセージ記述子フィールドを使用するステップ バイ ステップ ガイド"
-ms.custom: 
+title: 'チュートリアル: TIBCO EMS メッセージ コンテキスト プロパティを使用して |Microsoft ドキュメント'
+description: BizTalk Server に、オーケストレーションで TIBCO Enterprise Message Service のメッセージ記述子フィールドを使用するステップ バイ ステップ ガイド
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e52593b-5001-4740-89fb-e003e12d8e69
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974000"
 ---
 # <a name="tutorial-use-tibco-ems-message-descriptors"></a><span data-ttu-id="5b8e9-103">チュートリアル: を使用して TIBCO EMS メッセージ記述子</span><span class="sxs-lookup"><span data-stu-id="5b8e9-103">Tutorial: Use TIBCO EMS message descriptors</span></span>
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="5b8e9-118">検索 **\<TIBCO EMS_Adapter_installation_directory\>\bin**、し、 **Microsoft.Adapters.TibcoEMSProperties.dll**です。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-118">Locate **\<TIBCO EMS_Adapter_installation_directory\>\bin**, and then select **Microsoft.Adapters.TibcoEMSProperties.dll**.</span></span>  
   
-5.  <span data-ttu-id="5b8e9-119">**[開く]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-119">Click **Open**.</span></span>  
+5.  <span data-ttu-id="5b8e9-119">**[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-119">Click **Open**.</span></span>  
   
      <span data-ttu-id="5b8e9-120">DLL が表示されます、**選択されたコンポーネント**で、**参照の追加** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-120">The DLL appears in the **Selected Components** in the **Add Reference** dialog box.</span></span>  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="5b8e9-125">Message_1 を Message_2 に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-125">You will assign Message_1 to Message_2.</span></span> <span data-ttu-id="5b8e9-126">したがって、両方のメッセージに同じメッセージの種類を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-126">Therefore, you must assign the same message type to both messages.</span></span>  
   
-10. <span data-ttu-id="5b8e9-127">**[表示]** メニューの **[ツールボックス]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-127">On the **View** menu, click **Toolbox**.</span></span>  
+10. <span data-ttu-id="5b8e9-127">**[表示]** メニューの **[ツールボックス]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-127">On the **View** menu, click **Toolbox**.</span></span>  
   
 11. <span data-ttu-id="5b8e9-128">ドラッグ、**メッセージの割り当て**図形に新しいメッセージを作成するオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="5b8e9-128">Drag a **Message Assignment** shape onto your orchestration where you want to create a new message.</span></span>  
   

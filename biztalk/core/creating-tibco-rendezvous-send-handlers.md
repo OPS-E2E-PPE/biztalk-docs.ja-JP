@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Rendezvous アダプターの送信の成果物を作成 |Microsoft ドキュメント"
-description: "送信ポートを作成、メッセージを TIBCO Rendezvous を BizTalk から送信するトランスポートのプロパティを構成します。"
-ms.custom: 
+title: TIBCO Rendezvous アダプターの送信の成果物を作成 |Microsoft ドキュメント
+description: 送信ポートを作成、メッセージを TIBCO Rendezvous を BizTalk から送信するトランスポートのプロパティを構成します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad996c4f-e6ed-4582-a768-0cb1ad25b1d8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014353"
 ---
 # <a name="create-tibco-rendezvous-send-handlers"></a><span data-ttu-id="e080e-103">TIBCO Rendezvous 送信ハンドラーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e080e-103">Create TIBCO Rendezvous Send Handlers</span></span>
 <span data-ttu-id="e080e-104">このセクションでは、スキーマを作成して BizTalk Server のオーケストレーションで TIBCO Rendezvous を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e080e-104">This section explains how to create a schema to use TIBCO Rendezvous in a BizTalk Server orchestration.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="e080e-111">**送信ハンドラー**ドロップダウン リストで、URI を選択します。</span><span class="sxs-lookup"><span data-stu-id="e080e-111">From the **Send handler** drop-down list, select the URI.</span></span>  
   
-    4.  <span data-ttu-id="e080e-112">送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。</span><span class="sxs-lookup"><span data-stu-id="e080e-112">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  <span data-ttu-id="e080e-113">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。</span><span class="sxs-lookup"><span data-stu-id="e080e-113">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
+    4.  <span data-ttu-id="e080e-112">送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。</span><span class="sxs-lookup"><span data-stu-id="e080e-112">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  <span data-ttu-id="e080e-113">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。</span><span class="sxs-lookup"><span data-stu-id="e080e-113">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
 
         > [!NOTE]
         > <span data-ttu-id="e080e-114">Microsoft BizTalk Adapter for TIBCO Rendezvous では、送信、XMLTransmit パイプラインと受信の XMLReceive パイプラインを選択することが必要です。</span><span class="sxs-lookup"><span data-stu-id="e080e-114">Microsoft BizTalk Adapter for TIBCO Rendezvous requires that you select XMLTransmit pipeline for send, and XMLReceive pipeline for receive.</span></span>
@@ -53,9 +54,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="e080e-120">**SSO を使用する****はい**です。</span><span class="sxs-lookup"><span data-stu-id="e080e-120">For **Use SSO**, select **Yes**.</span></span>  
   
-    4.  <span data-ttu-id="e080e-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e080e-121">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="e080e-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e080e-121">Click **OK**.</span></span>  
   
-5.  <span data-ttu-id="e080e-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e080e-122">Click **OK**.</span></span>  
+5.  <span data-ttu-id="e080e-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e080e-122">Click **OK**.</span></span>  
 
 ## <a name="set-the-transport-properties"></a><span data-ttu-id="e080e-123">トランスポートのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="e080e-123">Set the transport properties</span></span>
 <span data-ttu-id="e080e-124">TIBCO Rendezvous トランスポートのプロパティは、実行時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="e080e-124">The TIBCO Rendezvous Transport property is used for run time.</span></span> <span data-ttu-id="e080e-125">**トランスポートのプロパティ**、生成されたメッセージを公開する TIBCO Rendezvous ドメインを識別する接続パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="e080e-125">In the **Transport Properties**, you set the connection parameters that identify the TIBCO Rendezvous domain where you want to publish the generated messages.</span></span>  
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/07/2017
     |<span data-ttu-id="e080e-165">**順序の保持**</span><span class="sxs-lookup"><span data-stu-id="e080e-165">**Preserver Order**</span></span>|<span data-ttu-id="e080e-166">既定値は True です。</span><span class="sxs-lookup"><span data-stu-id="e080e-166">Default value is True.</span></span> <span data-ttu-id="e080e-167">ロジックで、メッセージを BizTalk Server から受信したときと同じ順序で TIBCO Rendezvous に送信できます。</span><span class="sxs-lookup"><span data-stu-id="e080e-167">Enables logic to send messages to TIBCO Rendezvous in the same order they were received from BizTalk Server.</span></span> <span data-ttu-id="e080e-168">このパラメーターにより、同じ順序での公開が強制されますが、サブスクライバーが同じ順序で受信するということではありません。</span><span class="sxs-lookup"><span data-stu-id="e080e-168">This parameter forces publishing in the same order; it does not mean that subscribers receive them in the same order.</span></span>|  
     |<span data-ttu-id="e080e-169">**送信ポートの識別子**</span><span class="sxs-lookup"><span data-stu-id="e080e-169">**Send Port Identifier**</span></span>|<span data-ttu-id="e080e-170">この識別子は、このポートに関連付けられているログ メッセージに表示されます。</span><span class="sxs-lookup"><span data-stu-id="e080e-170">This identifier appears in log messages associated with this port.</span></span> <span data-ttu-id="e080e-171">これは、便宜上指定します。</span><span class="sxs-lookup"><span data-stu-id="e080e-171">It is provided as a convenience.</span></span>|  
   
-4.  <span data-ttu-id="e080e-172">展開**Rendezvous トランスポート**TIBCO Rendezvous サーバーへの接続情報を入力し、**適用**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="e080e-172">Expand **Rendezvous Transport** and enter the information for connection to the TIBCO Rendezvous server, click **Apply**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="e080e-172">展開**Rendezvous トランスポート**TIBCO Rendezvous サーバーへの接続情報を入力し、**適用**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="e080e-172">Expand **Rendezvous Transport** and enter the information for connection to the TIBCO Rendezvous server, click **Apply**, and then click **OK**.</span></span>  
   
      <span data-ttu-id="e080e-173">Microsoft BizTalk Adapter for TIBCO Rendezvous が TIBCO Rendezvous にアクセスできるようにするために接続パラメーターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e080e-173">You must set connection parameters for Microsoft BizTalk Adapter for TIBCO Rendezvous to access TIBCO Rendezvous.</span></span>  
   
@@ -115,7 +116,7 @@ ms.lasthandoff: 11/07/2017
         > [!NOTE]
         >  <span data-ttu-id="e080e-194">関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications1.md)です。</span><span class="sxs-lookup"><span data-stu-id="e080e-194">For information about how to create an affiliate application, see [Creating Affiliate Applications](../core/creating-affiliate-applications1.md).</span></span>  
   
-6.  <span data-ttu-id="e080e-195">をクリックして**適用**、クリックして**[ok]**接続情報を受け入れるように必要なすべての情報を提供するとします。</span><span class="sxs-lookup"><span data-stu-id="e080e-195">Click **Apply**, and then click **OK** after providing all required information to accept the connection information.</span></span>  
+6.  <span data-ttu-id="e080e-195">をクリックして**適用**、クリックして **[ok]** 接続情報を受け入れるように必要なすべての情報を提供するとします。</span><span class="sxs-lookup"><span data-stu-id="e080e-195">Click **Apply**, and then click **OK** after providing all required information to accept the connection information.</span></span>  
   
      <span data-ttu-id="e080e-196">BizTalk Adapter for TIBCO Rendezvous にアクセスする TIBCO Rendezvous の接続パラメーターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e080e-196">You must set connection parameters for BizTalk Adapter for TIBCO Rendezvous to access TIBCO Rendezvous .</span></span>  
 

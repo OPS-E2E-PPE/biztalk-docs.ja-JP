@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for PeopleSoft Enterprise のセキュリティ |Microsoft ドキュメント"
-description: "BizTalk で PeopleSoft Enterprise アダプターを使用するアプリケーションをセキュリティで保護するのにエンタープライズ シングル サインオン (SSO) を使用します。"
-ms.custom: 
+title: BizTalk Adapter for PeopleSoft Enterprise のセキュリティ |Microsoft ドキュメント
+description: BizTalk で PeopleSoft Enterprise アダプターを使用するアプリケーションをセキュリティで保護するのにエンタープライズ シングル サインオン (SSO) を使用します。
+ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfdf0db-6f83-4322-a57a-e373c7245700
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013057"
 ---
 # <a name="security-in-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="64f73-103">BizTalk Adapter for PeopleSoft Enterprise のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="64f73-103">Security in BizTalk Adapter for PeopleSoft Enterprise</span></span>
 

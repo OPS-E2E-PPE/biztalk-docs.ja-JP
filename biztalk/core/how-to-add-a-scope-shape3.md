@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248066"
 ---
 # <a name="how-to-add-a-scope-shape"></a><span data-ttu-id="ba42e-102">スコープ図形を追加する方法</span><span class="sxs-lookup"><span data-stu-id="ba42e-102">How to Add a Scope Shape</span></span>
 <span data-ttu-id="ba42e-103">スコープ図形を追加するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="ba42e-103">Use the following procedure to add a Scope shape.</span></span>  

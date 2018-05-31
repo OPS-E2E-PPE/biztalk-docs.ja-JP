@@ -1,14 +1,14 @@
 ---
-title: "開発活動の前提条件 |Microsoft ドキュメント"
-ms.custom: 
+title: 開発活動の前提条件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 54c91405-f9a4-4676-b5c5-fe90b3b51b45
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006259"
 ---
 # <a name="prerequisites-for-the-development-activities"></a><span data-ttu-id="3847d-102">開発活動の前提条件</span><span class="sxs-lookup"><span data-stu-id="3847d-102">Prerequisites for the Development Activities</span></span>
 <span data-ttu-id="3847d-103">このセクションの一部として含まれている開発作業の手順を実行するように環境を準備する方法について説明、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3847d-103">This section describes how to prepare your environment to complete the steps in the development activities that are included as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span> <span data-ttu-id="3847d-104">開発作業の手順のいずれかの操作を行う前に、次のセットアップを完了します。</span><span class="sxs-lookup"><span data-stu-id="3847d-104">Complete the following setup before you attempt any of the procedures in the development activities:</span></span>  
@@ -61,6 +62,6 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="3847d-125">選択、**ソリューションのディレクトリを作成**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="3847d-125">Select the **Create directory for solution** check box.</span></span>  
   
-6.  <span data-ttu-id="3847d-126">**ソリューション名**ボックスに、入力**パターン**、クリックして**[ok]**ソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="3847d-126">In the **Solution Name** box, type **Patterns**, and then click **OK** to create the solution.</span></span>  
+6.  <span data-ttu-id="3847d-126">**ソリューション名**ボックスに、入力**パターン**、クリックして **[ok]** ソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="3847d-126">In the **Solution Name** box, type **Patterns**, and then click **OK** to create the solution.</span></span>  
   
 7.  <span data-ttu-id="3847d-127">削除、 **Class1.cs**ファイルから、 **ItineraryLibrary**プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="3847d-127">Delete the **Class1.cs** file from the **ItineraryLibrary** project.</span></span>

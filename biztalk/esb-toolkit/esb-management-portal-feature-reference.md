@@ -1,14 +1,14 @@
 ---
-title: "管理ポータルの機能の参照を ESB |Microsoft ドキュメント"
-ms.custom: 
+title: 管理ポータルの機能の参照を ESB |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8470b3af-8124-401b-b80f-3dc7346fed96
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294410"
 ---
 # <a name="esb-management-portal-feature-reference"></a><span data-ttu-id="a6c9a-102">ESB 管理ポータル機能リファレンス</span><span class="sxs-lookup"><span data-stu-id="a6c9a-102">ESB Management Portal Feature Reference</span></span>
 <span data-ttu-id="a6c9a-103">ESB 管理ポータルでは、簡単に監視、管理、および ESB アプリケーションをデバッグするエラー情報のビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="a6c9a-103">The ESB Management Portal provides views of fault information that make it easy to monitor, manage, and debug ESB applications.</span></span> <span data-ttu-id="a6c9a-104">アラートの管理、UDDI 情報を発行し、ポータルの管理に使用できる機能も用意されています。</span><span class="sxs-lookup"><span data-stu-id="a6c9a-104">It also provides features that you can use to manage alerts, publish UDDI information, and administer the portal.</span></span> <span data-ttu-id="a6c9a-105">ポータルを開くには、http://localhost/ESB.Portal/ に移動します。</span><span class="sxs-lookup"><span data-stu-id="a6c9a-105">To open the portal, go to http://localhost/ESB.Portal/.</span></span>  

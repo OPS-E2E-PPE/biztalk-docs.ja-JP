@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for PeopleSoft Enterprise のアーキテクチャ |Microsoft ドキュメント"
-description: "メッセージを受信する方法について説明します、メッセージがどのように検証すると、BizTalk Server で、PeopleSoft アダプターを使用する場合は、コンポーネント インターフェイス メソッドの情報を提供"
-ms.custom: 
+title: BizTalk Adapter for PeopleSoft Enterprise のアーキテクチャ |Microsoft ドキュメント
+description: メッセージを受信する方法について説明します、メッセージがどのように検証すると、BizTalk Server で、PeopleSoft アダプターを使用する場合は、コンポーネント インターフェイス メソッドの情報を提供
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f246e974-a082-430c-ad15-23a5e597738b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013697"
 ---
 # <a name="peoplesoft-enterprise-adapter-architecture"></a><span data-ttu-id="0c450-103">PeopleSoft Enterprise アダプターのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="0c450-103">PeopleSoft Enterprise adapter architecture</span></span>
 <span data-ttu-id="0c450-104">Microsoft BizTalk Adapter for PeopleSoft Enterprise は、基本的な操作の実行中に BizTalk Server から XML メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="0c450-104">During the basic operation of Microsoft BizTalk Adapter for PeopleSoft Enterprise, the adapter receives an XML message from BizTalk Server.</span></span> <span data-ttu-id="0c450-105">この XML メッセージは SOAP エンベロープに埋め込まれます。</span><span class="sxs-lookup"><span data-stu-id="0c450-105">It encloses the XML message in a SOAP envelope.</span></span> <span data-ttu-id="0c450-106">BizTalk Adapter for PeopleSoft Enterprise は、SOAP 要求をサーバーに転送します。</span><span class="sxs-lookup"><span data-stu-id="0c450-106">BizTalk Adapter for PeopleSoft Enterprise forwards the SOAP requests to the server.</span></span> <span data-ttu-id="0c450-107">このアダプターは、Jolt トランザクション プロトコルによって PeopleSoft システムに接続する PeopleSoft psjoa クラスを使用して、PeopleSoft システムと通信します。</span><span class="sxs-lookup"><span data-stu-id="0c450-107">The adapter communicates with the PeopleSoft system using the PeopleSoft psjoa classes, which connect to the PeopleSoft system through Jolt Transaction Protocol.</span></span> <span data-ttu-id="0c450-108">PeopleSoft システムは、要求を受信して、ビジネス ロジックを実行します。</span><span class="sxs-lookup"><span data-stu-id="0c450-108">The PeopleSoft system receives the request and executes the business logic.</span></span> <span data-ttu-id="0c450-109">応答は、同様のプロセスによって戻されます。</span><span class="sxs-lookup"><span data-stu-id="0c450-109">The reply is sent back through a similar process.</span></span>  

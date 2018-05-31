@@ -1,15 +1,15 @@
 ---
-title: "例外処理を TIBCO Rendezvous 追加 |Microsoft ドキュメント"
-description: "BizTalk Server で、TIBCO Rendezvous アダプターを使用して、オーケストレーションの例外の処理の概要"
-ms.custom: 
+title: 例外処理を TIBCO Rendezvous 追加 |Microsoft ドキュメント
+description: BizTalk Server で、TIBCO Rendezvous アダプターを使用して、オーケストレーションの例外の処理の概要
+ms.custom: ''
 ms.date: 10/24/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 887b1653-33a5-4a22-a6ae-c5df67a868b4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014745"
 ---
 # <a name="use-biztalk-server-exception-handling"></a><span data-ttu-id="6dcee-103">BizTalk Server 例外処理を使用します。</span><span class="sxs-lookup"><span data-stu-id="6dcee-103">Use BizTalk Server Exception Handling</span></span>
 

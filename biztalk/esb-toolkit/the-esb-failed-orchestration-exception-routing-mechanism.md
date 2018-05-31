@@ -1,14 +1,14 @@
 ---
-title: "ESB には、オーケストレーションの例外のルーティング メカニズムが失敗しました |。Microsoft ドキュメント"
-ms.custom: 
+title: ESB には、オーケストレーションの例外のルーティング メカニズムが失敗しました |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa05f44b-7fb2-48fd-886d-c6d179904e6d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295082"
 ---
 # <a name="the-esb-failed-orchestration-exception-routing-mechanism"></a><span data-ttu-id="87459-102">ESB オーケストレーション例外ルーティング機構に失敗しました</span><span class="sxs-lookup"><span data-stu-id="87459-102">The ESB Failed Orchestration Exception Routing Mechanism</span></span>
 <span data-ttu-id="87459-103">ESB 失敗オーケストレーション例外ルーティング メカニズムは、次の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="87459-103">The ESB Failed Orchestration Exception Routing mechanism provides the following features:</span></span>  

@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce67da59-26a6-44a2-929c-ed3acb21d407
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969552"
 ---
 # <a name="create-peoplesoft-send-artifacts"></a><span data-ttu-id="834ad-103">PeopleSoft 送信アイテムを作成します。</span><span class="sxs-lookup"><span data-stu-id="834ad-103">Create PeopleSoft send artifacts</span></span>
 <span data-ttu-id="834ad-104">Microsoft BizTalk Adapter for PeopleSoft Enterprise は、PeopleSoft にアクセスして、使用できるコンポーネントを探索したり、SOAP 要求を処理したりします。</span><span class="sxs-lookup"><span data-stu-id="834ad-104">Microsoft BizTalk Adapter for PeopleSoft Enterprise accesses PeopleSoft and explores available components or processes SOAP requests.</span></span> <span data-ttu-id="834ad-105">このトピックでは、PeopleSoft アダプターを使用する BizTalk Server 管理コンソールで、送信の成果物を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="834ad-105">This topic shows you how to create the send artifacts in BizTalk Server Administration to use the PeopleSoft adapter.</span></span>
@@ -39,7 +40,7 @@ ms.lasthandoff: 03/28/2018
   
     4.  <span data-ttu-id="834ad-114">送信パイプラインのドロップダウン リストから選択 **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**します。</span><span class="sxs-lookup"><span data-stu-id="834ad-114">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
   
-    5.  <span data-ttu-id="834ad-115">**受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**します。</span><span class="sxs-lookup"><span data-stu-id="834ad-115">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
+    5.  <span data-ttu-id="834ad-115">**受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** します。</span><span class="sxs-lookup"><span data-stu-id="834ad-115">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
     6.  <span data-ttu-id="834ad-116">選択**構成**送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="834ad-116">Select **Configure** to configure the send port.</span></span>  
   

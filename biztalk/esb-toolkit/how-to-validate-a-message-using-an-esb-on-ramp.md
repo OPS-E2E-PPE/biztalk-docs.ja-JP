@@ -1,14 +1,14 @@
 ---
-title: "方法: ESB 入り口を使用して、メッセージの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: ESB 入り口を使用して、メッセージの検証 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43dfc791-7cb6-45a4-898f-f53def199c08
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009523"
 ---
 # <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a><span data-ttu-id="0ed7c-102">方法: ESB 入り口を使用して、メッセージの検証</span><span class="sxs-lookup"><span data-stu-id="0ed7c-102">How to: Validate a Message Using an ESB On-Ramp</span></span>
 ## <a name="goal"></a><span data-ttu-id="0ed7c-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="0ed7c-103">Goal</span></span>  
@@ -151,7 +152,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="0ed7c-176">右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-176">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
   
-4.  <span data-ttu-id="0ed7c-177">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-177">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="0ed7c-177">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-177">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="0ed7c-178">**受信場所のプロパティ** ダイアログ ボックスで、「 **OnRamp.Itinerary.HowTo**で、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-178">In the **Receive Location Properties** dialog box, type **OnRamp.Itinerary.HowTo** in the **Name** box.</span></span>  
   
@@ -182,7 +183,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  <span data-ttu-id="0ed7c-196">クリックして、 **ItineraryFactKey**プロパティ、および入力**Resolver.Itinerary**です。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-196">Click the **ItineraryFactKey** property, and then type **Resolver.Itinerary**.</span></span>  
   
-    2.  <span data-ttu-id="0ed7c-197">クリックして、 **ResolverConnectionString**プロパティ、および入力**行程:\\\name=Validation;**です。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-197">Click the **ResolverConnectionString** property, and then type **ITINERARY:\\\name=Validation;**.</span></span>  
+    2.  <span data-ttu-id="0ed7c-197">クリックして、 **ResolverConnectionString**プロパティ、および入力**行程:\\\name=Validation;** です。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-197">Click the **ResolverConnectionString** property, and then type **ITINERARY:\\\name=Validation;**.</span></span>  
   
     3.  <span data-ttu-id="0ed7c-198">をクリックして**OK**を閉じる、**パイプラインの構成** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="0ed7c-198">Click **OK** to close the **Configure Pipeline** dialog box.</span></span>  
   

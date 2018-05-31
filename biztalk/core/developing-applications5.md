@@ -1,15 +1,15 @@
 ---
-title: "TIBCO EMS 用のアプリケーションのアイテムの作成 |Microsoft ドキュメント"
-description: "BizTalk Server 管理および BizTalk Server で TIBCO Enterprise Message Service の BizTalk アダプターを使用する Visual Studio では、成果物を作成します。"
-ms.custom: 
+title: TIBCO EMS 用のアプリケーションのアイテムの作成 |Microsoft ドキュメント
+description: BizTalk Server 管理および BizTalk Server で TIBCO Enterprise Message Service の BizTalk アダプターを使用する Visual Studio では、成果物を作成します。
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c31dad4-bf5b-4c59-9cea-431122040d9d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014897"
 ---
 # <a name="create-your-application"></a><span data-ttu-id="44d99-103">アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="44d99-103">Create your application</span></span>
 

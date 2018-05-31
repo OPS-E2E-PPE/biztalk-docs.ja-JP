@@ -1,11 +1,11 @@
 ---
-title: "発効日プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: 発効日プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - effective-dated items
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - EFFDT
 - planned items, scheduling and tracking
 ms.assetid: 0d9a153c-7ea5-41cf-9e4e-055e1c18f64b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240146"
 ---
 # <a name="effective-date-properties"></a><span data-ttu-id="0b654-102">発効日のプロパティ</span><span class="sxs-lookup"><span data-stu-id="0b654-102">Effective Date Properties</span></span>
 <span data-ttu-id="0b654-103">PeopleSoft Enterprise には、Effective Date (省略表記 EFFDT) と呼ばれる特殊なプロパティを使用して、計画済み項目のスケジュール作成と追跡を行う機能があります。</span><span class="sxs-lookup"><span data-stu-id="0b654-103">PeopleSoft Enterprise provides the ability to schedule and keep track of planned items by using a special property called Effective Date (abbreviated EFFDT).</span></span> <span data-ttu-id="0b654-104">計画済み項目は、日付が PeopleSoft の現在の日付よりも前か後かによって、既に有効になっている項目であるか、単に計画されているだけの項目であるかが決定します。</span><span class="sxs-lookup"><span data-stu-id="0b654-104">Such items are either in effect or merely planned, depending on whether their date is before or after the PeopleSoft current date.</span></span>  

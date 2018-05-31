@@ -1,14 +1,14 @@
 ---
-title: "使用してグラフやレポートの傾向を分析フォールト |Microsoft ドキュメント"
-ms.custom: 
+title: 使用してグラフやレポートの傾向を分析フォールト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f46dddb-bb9b-498d-bef3-ad9664f6c8ec
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290466"
 ---
 # <a name="analyzing-fault-trends-using-charts-and-reports"></a><span data-ttu-id="a08c8-102">グラフとレポートを使用してフォールト傾向の分析</span><span class="sxs-lookup"><span data-stu-id="a08c8-102">Analyzing Fault Trends Using Charts and Reports</span></span>
 <span data-ttu-id="a08c8-103">このセクションでは、グラフおよび ESB 管理ポータルを生成するレポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a08c8-103">This section describes the charts and reports that the ESB Management Portal generates.</span></span> <span data-ttu-id="a08c8-104">これらのグラフとレポートは、貴重な詳細やエラー、警告、およびメッセージ再送信の傾向情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="a08c8-104">These charts and reports provide valuable detail and trend information for faults, alerts, and message resubmission.</span></span> <span data-ttu-id="a08c8-105">次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="a08c8-105">You can view the following:</span></span>  

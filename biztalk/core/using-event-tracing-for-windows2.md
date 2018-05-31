@@ -11,7 +11,7 @@ helpviewer_keywords:
 - ETW
 - Event Tracing for Windows
 ms.assetid: 88b91b74-2b2e-40e0-a3e9-1ebd6367abe8
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25974416"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="2c1c4-102">Windows イベント トレーシングの使用</span><span class="sxs-lookup"><span data-stu-id="2c1c4-102">Using Event Tracing for Windows</span></span>
 <span data-ttu-id="2c1c4-103">Microsoft BizTalk Adapter for JD Edwards OneWorld ではエラー、警告、および情報のメッセージを Windows イベント ビューアーに記録します。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-103">Microsoft BizTalk Adapter for JD Edwards OneWorld logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="2c1c4-104">その他のトレース メッセージを表示するには、Event Tracing for Windows (ETW) ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-104">You can view additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="2c1c4-105">ETW をアクティブにすると、メッセージ受信用の \*.etl ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-105">When ETW is activated, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="2c1c4-106">このファイルはバイナリ形式であり、読み取るには変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-106">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="2c1c4-107">これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル: tracerpt.exe や tracedmp.exe などです。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-107">To do this, you must have a consumer application available to interpret the \*.etl file: for example, tracerpt.exe or tracedmp.exe.</span></span>  
@@ -46,15 +47,15 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="2c1c4-127">BizTalk Adapter for JD Edwards OneWorld には 5 つのプロバイダーがあり、さまざまな種類のメッセージを記録できます。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-127">BizTalk Adapter for JD Edwards OneWorld has five providers, allowing you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="2c1c4-128">**受信側のログ プロバイダーです。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-128">**Receiver Logging Provider.**</span></span> <span data-ttu-id="2c1c4-129">\<トレース要素\>スイッチが**-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-129">The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="2c1c4-128">**受信側のログ プロバイダーです。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-128">**Receiver Logging Provider.**</span></span> <span data-ttu-id="2c1c4-129">\<トレース要素\>スイッチが **-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-129">The \<Trace element\> switch is **-receiver**.</span></span>  
   
--   <span data-ttu-id="2c1c4-130">**受信元 CastDetails プロバイダー。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-130">**Receiver CastDetails Provider.**</span></span> <span data-ttu-id="2c1c4-131">\<トレース要素\>スイッチが**- castDetailsReceive**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-131">The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
+-   <span data-ttu-id="2c1c4-130">**受信元 CastDetails プロバイダー。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-130">**Receiver CastDetails Provider.**</span></span> <span data-ttu-id="2c1c4-131">\<トレース要素\>スイッチが **- castDetailsReceive**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-131">The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
   
--   <span data-ttu-id="2c1c4-132">**送信元ログ プロバイダーです。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-132">**Transmitter Logging Provider.**</span></span> <span data-ttu-id="2c1c4-133">\<トレース要素\>スイッチが**-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-133">The \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="2c1c4-132">**送信元ログ プロバイダーです。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-132">**Transmitter Logging Provider.**</span></span> <span data-ttu-id="2c1c4-133">\<トレース要素\>スイッチが **-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-133">The \<Trace element\> switch is **-transmitter**.</span></span>  
   
--   <span data-ttu-id="2c1c4-134">**送信元 CastDetails プロバイダー。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-134">**Transmitter CastDetails Provider.**</span></span> <span data-ttu-id="2c1c4-135">\<トレース要素\>スイッチが**- castDetailsTransmit**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-135">The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
+-   <span data-ttu-id="2c1c4-134">**送信元 CastDetails プロバイダー。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-134">**Transmitter CastDetails Provider.**</span></span> <span data-ttu-id="2c1c4-135">\<トレース要素\>スイッチが **- castDetailsTransmit**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-135">The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
   
--   <span data-ttu-id="2c1c4-136">**管理ログ プロバイダーです。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-136">**Management Logging Provider.**</span></span> <span data-ttu-id="2c1c4-137">\<トレース要素\>スイッチが**-管理**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-137">The \<Trace element\> switch is **-management**.</span></span>  
+-   <span data-ttu-id="2c1c4-136">**管理ログ プロバイダーです。**</span><span class="sxs-lookup"><span data-stu-id="2c1c4-136">**Management Logging Provider.**</span></span> <span data-ttu-id="2c1c4-137">\<トレース要素\>スイッチが **-管理**です。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-137">The \<Trace element\> switch is **-management**.</span></span>  
   
  <span data-ttu-id="2c1c4-138">BTAJDEOneWorldTrace コマンド</span><span class="sxs-lookup"><span data-stu-id="2c1c4-138">BTAJDEOneWorldTrace Command</span></span>  
   
@@ -68,7 +69,7 @@ BTAJDEOneWorldTrace <Trace element> -stop
   
  <span data-ttu-id="2c1c4-141">各要素の説明は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-141">Where:</span></span>  
   
--   <span data-ttu-id="2c1c4-142">**\<Trace 要素\>**プロバイダーの種類は、(必須)。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-142">**\<Trace element\>** (required) is the kind of provider.</span></span>  
+-   <span data-ttu-id="2c1c4-142">**\<Trace 要素\>** プロバイダーの種類は、(必須)。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-142">**\<Trace element\>** (required) is the kind of provider.</span></span>  
   
 -   <span data-ttu-id="2c1c4-143">そのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="2c1c4-143">Its options are:</span></span>  
   

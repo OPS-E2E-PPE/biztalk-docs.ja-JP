@@ -1,14 +1,14 @@
 ---
-title: "道順のランプで Web サービス |Microsoft ドキュメント"
-ms.custom: 
+title: 道順のランプで Web サービス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d7551974-b9d2-4ae3-b54c-3aa5ba058e95
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295434"
 ---
 # <a name="the-itinerary-on-ramp-web-services"></a><span data-ttu-id="e6497-102">道順のランプで Web サービス</span><span class="sxs-lookup"><span data-stu-id="e6497-102">The Itinerary On-Ramp Web Services</span></span>
 <span data-ttu-id="e6497-103">行程 Web サービスが、itinerary 入り口行程サービスによって、Microsoft BizTalk ターゲットにし、それ以降の処理または ESB 操作のためのメッセージを送信するクライアントできるようにするメソッドを公開します。</span><span class="sxs-lookup"><span data-stu-id="e6497-103">The Itinerary Web service is an itinerary on-ramp that exposes a method that allows clients to submit messages for processing by the Itinerary Service and then onward to the target Microsoft BizTalk or ESB operations.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "カスタムの Itinerary シナリオを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタムの Itinerary シナリオを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6fd69e29-e853-4b16-9966-29ab98dd5bea
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294066"
 ---
 # <a name="execute-a-custom-itinerary-scenario"></a><span data-ttu-id="c88d4-102">カスタムの Itinerary シナリオを実行します。</span><span class="sxs-lookup"><span data-stu-id="c88d4-102">Execute a Custom Itinerary Scenario</span></span>
 <span data-ttu-id="c88d4-103">行程テスト クライアントを使用するアプリケーションでカスタムの itinerary シナリオを実行します。</span><span class="sxs-lookup"><span data-stu-id="c88d4-103">You can use the Itinerary Test Client application execute custom itinerary scenarios.</span></span>  

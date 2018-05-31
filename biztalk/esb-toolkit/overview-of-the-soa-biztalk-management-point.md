@@ -1,14 +1,14 @@
 ---
-title: "SOA BizTalk の管理ポイントの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: SOA BizTalk の管理ポイントの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0d4c3a30-c50e-4c1c-9f59-d9a364078388
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294930"
 ---
 # <a name="overview-of-the-soa-biztalk-management-point"></a><span data-ttu-id="f046a-102">SOA BizTalk の管理ポイントの概要</span><span class="sxs-lookup"><span data-stu-id="f046a-102">Overview of the SOA BizTalk Management Point</span></span>
 <span data-ttu-id="f046a-103">BizTalk 管理ポイントは、ネイティブ SOA サービス マネージャーとワークベンチの製品と統合されています。</span><span class="sxs-lookup"><span data-stu-id="f046a-103">The BizTalk Management Point natively integrates with SOA Service Manager and Workbench products.</span></span> <span data-ttu-id="f046a-104">一般的な Web サービスの管理ポイントとは異なりこの実装は、関連付けられている BizTalk Server として表現されている、Microsoft BizTalk Server 環境で提供されるサービスと受信場所とポートを送信します。</span><span class="sxs-lookup"><span data-stu-id="f046a-104">Unlike the typical Web Services Management Point, this implementation is associated with services provided by the Microsoft BizTalk Server environment, expressed in terms of BizTalk Server receive locations and send ports.</span></span> <span data-ttu-id="f046a-105">により、任意の性質は、受信場所と送信ポート (さまざまな BizTalk Server アダプターに対して構成されている)、これらのサービスが必ずしも、Web サービスに関連付けられていないが、それらは SOA サービス マネージャーの観点から Web サービスとして扱うことができますSOA ワークベンチです。</span><span class="sxs-lookup"><span data-stu-id="f046a-105">Because of the arbitrary nature of receive locations and send ports (configured against a variety of BizTalk Server adapters), these services are not necessarily associated with Web services, but they can be treated as Web services in terms of the SOA Service Manager and SOA Workbench.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "TIBCO Rendezvous から受信するデータ型マッピング |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Rendezvous から受信するデータ型マッピング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36908a94-3c0d-466e-aa49-f674ba4a26af
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014665"
 ---
 # <a name="data-type-mapping-for-receive-handlers-in-tibco-rendezvous"></a><span data-ttu-id="022c1-102">TIBCO Rendezvous の受信ハンドラーのデータ型マッピング</span><span class="sxs-lookup"><span data-stu-id="022c1-102">Data Type Mapping for Receive Handlers in TIBCO Rendezvous</span></span>
 <span data-ttu-id="022c1-103">Microsoft BizTalk Adapter for TIBCO Rendezvous は、次の表に示されているように、TIBCO RV の型を XML スキーマの型にマップします。</span><span class="sxs-lookup"><span data-stu-id="022c1-103">Microsoft BizTalk Adapter for TIBCO Rendezvous maps TIBCO RV types to XML Schema types as specified in the following table.</span></span>  

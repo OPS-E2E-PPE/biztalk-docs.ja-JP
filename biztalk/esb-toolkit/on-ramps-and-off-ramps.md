@@ -1,14 +1,14 @@
 ---
-title: "ランプでと傾斜 Off |Microsoft ドキュメント"
-ms.custom: 
+title: ランプでと傾斜 Off |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0cce5d2-f16f-4bda-94ac-20c4f457cfc7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294562"
 ---
 # <a name="on-ramps-and-off-ramps"></a><span data-ttu-id="281da-102">ランプで、ランプ オフ</span><span class="sxs-lookup"><span data-stu-id="281da-102">On-Ramps and Off-Ramps</span></span>
 <span data-ttu-id="281da-103">環境で、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]が展開されると、BizTalk 受信場所が担当する「入り口です」と呼びます ESB 宛てのメッセージの受信。</span><span class="sxs-lookup"><span data-stu-id="281da-103">In an environment where [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] is deployed, a BizTalk receive location responsible for receiving ESB-destined messages is referred to as an "on-ramp."</span></span> <span data-ttu-id="281da-104">ESB 入り口に標準の BizTalk 受信場所を構成する受信場所を関連付ける、toolkit の一部として提供されるパイプラインのいずれかと決定またはの日程を読み取るには、そのパイプラインのコンポーネントを正しく構成しますシナリオに応じて、受信メッセージ。</span><span class="sxs-lookup"><span data-stu-id="281da-104">To configure a standard BizTalk receive location to an ESB on-ramp, associate the receive location with one of the pipelines provided as part of the toolkit, and then correctly configure the components of that pipeline to determine or read the itinerary for the inbound message, depending on your scenario.</span></span>  

@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: baecebcd-c324-40aa-bacf-876f45b6c37f
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24014457"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a><span data-ttu-id="ac89d-103">BizTalk 管理コンソールで JD Edwards EnterpriseOne の成果物を構成します。</span><span class="sxs-lookup"><span data-stu-id="ac89d-103">Configure JD Edwards EnterpriseOne artifacts in BizTalk Administration</span></span>
 <span data-ttu-id="ac89d-104">Microsoft BizTalk Adapter for J.D.Edwards EnterpriseOne には、Receive Handler フォルダーと Send Handler フォルダーの両方が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac89d-104">Microsoft BizTalk Adapter for J.D.Edwards EnterpriseOne contains both the Receive Handler and Send Handler folders.</span></span> <span data-ttu-id="ac89d-105">これらのフォルダーには、BizTalkServerApplication が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac89d-105">The folders contain BizTalkServerApplication.</span></span> <span data-ttu-id="ac89d-106">BizTalk Adapter for J.D.Edwards EnterpriseOne は、BizTalk Server と共にインプロセスで実行され、分離ホスト プロセスでは実行されません。</span><span class="sxs-lookup"><span data-stu-id="ac89d-106">BizTalk Adapter for J.D.Edwards EnterpriseOne is creatable; it runs in-process with BizTalk Server and does not run in an isolated host process.</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="ac89d-137">**全般**, の **トランスポートの種類** ボックスで、 **JDE EnterpriseOne** ドロップ ダウン リストでします。</span><span class="sxs-lookup"><span data-stu-id="ac89d-137">Under **General**, in the **Transport Type** box, select **JDE EnterpriseOne** in the drop-down list.</span></span>  
   
-5.  <span data-ttu-id="ac89d-138">**アドレス (URI)**プロパティは、省略記号 (**.**).</span><span class="sxs-lookup"><span data-stu-id="ac89d-138">In the **Address (URI)** property, select the ellipsis (**…**).</span></span> <span data-ttu-id="ac89d-139">**JDE EnterpriseOne トランスポートのプロパティ**を開きます。</span><span class="sxs-lookup"><span data-stu-id="ac89d-139">The **JDE EnterpriseOne Transport Properties** open:</span></span> 
+5.  <span data-ttu-id="ac89d-138">**アドレス (URI)** プロパティは、省略記号 (**.**).</span><span class="sxs-lookup"><span data-stu-id="ac89d-138">In the **Address (URI)** property, select the ellipsis (**…**).</span></span> <span data-ttu-id="ac89d-139">**JDE EnterpriseOne トランスポートのプロパティ**を開きます。</span><span class="sxs-lookup"><span data-stu-id="ac89d-139">The **JDE EnterpriseOne Transport Properties** open:</span></span> 
   
      <span data-ttu-id="ac89d-140">![](../core/media/jdeenterprise-trans.gif "JDEEnterprise_Trans")</span><span class="sxs-lookup"><span data-stu-id="ac89d-140">![](../core/media/jdeenterprise-trans.gif "JDEEnterprise_Trans")</span></span>  
   
@@ -172,9 +173,9 @@ ms.lasthandoff: 03/28/2018
   
     4.  <span data-ttu-id="ac89d-273">送信パイプラインのドロップダウン リストから選択 **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**します。</span><span class="sxs-lookup"><span data-stu-id="ac89d-273">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
   
-    5.  <span data-ttu-id="ac89d-274">**受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**します。</span><span class="sxs-lookup"><span data-stu-id="ac89d-274">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
+    5.  <span data-ttu-id="ac89d-274">**受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** します。</span><span class="sxs-lookup"><span data-stu-id="ac89d-274">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
-4.  <span data-ttu-id="ac89d-275">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ac89d-275">Click **OK**.</span></span>  
+4.  <span data-ttu-id="ac89d-275">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ac89d-275">Click **OK**.</span></span>  
 
 
 ## <a name="see-also"></a><span data-ttu-id="ac89d-276">参照</span><span class="sxs-lookup"><span data-stu-id="ac89d-276">See Also</span></span>  

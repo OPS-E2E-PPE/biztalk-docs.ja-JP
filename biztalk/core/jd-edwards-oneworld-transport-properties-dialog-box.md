@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015899"
 ---
 # <a name="jd-edwards-oneworld-transport-properties-dialog-box"></a><span data-ttu-id="5069f-102">[JD Edwards OneWorld トランスポートのプロパティ] ダイアログ ボックス</span><span class="sxs-lookup"><span data-stu-id="5069f-102">JD Edwards OneWorld Transport Properties Dialog Box</span></span>
 <span data-ttu-id="5069f-103">[JD Edwards OneWorld トランスポートのプロパティ] ダイアログ ボックスでは、アダプターに必要なプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="5069f-103">Use the JD Edwards OneWorld Transport Properties dialog box to set the adapter-required properties.</span></span>  

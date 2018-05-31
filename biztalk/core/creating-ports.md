@@ -1,11 +1,11 @@
 ---
-title: "ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: ポートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, creating
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - send ports
 - send ports, creating
 ms.assetid: 4f99f884-5b84-4f9f-8cec-dd5da259ba7f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015129"
 ---
 # <a name="creating-ports"></a><span data-ttu-id="51f1c-102">ポートの作成</span><span class="sxs-lookup"><span data-stu-id="51f1c-102">Creating Ports</span></span>
 <span data-ttu-id="51f1c-103">シングル サインオン用の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信ポートと受信ポートを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="51f1c-103">Use the following procedures to create [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send and receive ports for Single Sign-on.</span></span>  
@@ -46,9 +47,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="51f1c-111">**送信ハンドラー**ドロップダウン リストで、URI を選択します。</span><span class="sxs-lookup"><span data-stu-id="51f1c-111">From the **Send handler** drop-down list, select the URI.</span></span>  
   
-    4.  <span data-ttu-id="51f1c-112">送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。</span><span class="sxs-lookup"><span data-stu-id="51f1c-112">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
+    4.  <span data-ttu-id="51f1c-112">送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。</span><span class="sxs-lookup"><span data-stu-id="51f1c-112">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
   
-    5.  <span data-ttu-id="51f1c-113">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。</span><span class="sxs-lookup"><span data-stu-id="51f1c-113">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
+    5.  <span data-ttu-id="51f1c-113">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。</span><span class="sxs-lookup"><span data-stu-id="51f1c-113">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
     6.  <span data-ttu-id="51f1c-114">をクリックして**構成**送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="51f1c-114">Click **Configure** to configure the send port.</span></span>  
   
@@ -62,9 +63,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="51f1c-119">**SSO を使用する****はい**です。</span><span class="sxs-lookup"><span data-stu-id="51f1c-119">For **Use SSO**, select **Yes**.</span></span>  
   
-    4.  <span data-ttu-id="51f1c-120">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-120">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="51f1c-120">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-120">Click **OK**.</span></span>  
   
-5.  <span data-ttu-id="51f1c-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-121">Click **OK**.</span></span>  
+5.  <span data-ttu-id="51f1c-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-121">Click **OK**.</span></span>  
   
 ## <a name="creating-a-receive-port"></a><span data-ttu-id="51f1c-122">作成する、受信ポート</span><span class="sxs-lookup"><span data-stu-id="51f1c-122">Creating a Receive Port</span></span>  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="51f1c-130">**受信場所** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="51f1c-130">On the **Receive Locations** page, do the following:</span></span>  
   
-    1.  <span data-ttu-id="51f1c-131">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-131">Click **New**.</span></span>  
+    1.  <span data-ttu-id="51f1c-131">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-131">Click **New**.</span></span>  
   
     2.  <span data-ttu-id="51f1c-132">**受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。</span><span class="sxs-lookup"><span data-stu-id="51f1c-132">In the **Receive Locations** window, on the **General** page, type the **Name** of the receive location.</span></span>  
   
@@ -96,13 +97,13 @@ ms.lasthandoff: 11/07/2017
   
     6.  <span data-ttu-id="51f1c-136">選択、**有効にするサービス時間帯**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-136">Select the **Enable service window** checkbox.</span></span>  
   
-    7.  <span data-ttu-id="51f1c-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-137">Click **OK**.</span></span>  
+    7.  <span data-ttu-id="51f1c-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-137">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="51f1c-138">**受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。</span><span class="sxs-lookup"><span data-stu-id="51f1c-138">On the **Inbound Maps** page, select the inbound maps for transforming documents on the selected port.</span></span>  
   
 6.  <span data-ttu-id="51f1c-139">**追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。</span><span class="sxs-lookup"><span data-stu-id="51f1c-139">On the **Tracking** page, select the desired tracking message bodies and tracking message properties.</span></span>  
   
-7.  <span data-ttu-id="51f1c-140">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-140">Click **OK**.</span></span>  
+7.  <span data-ttu-id="51f1c-140">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51f1c-140">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="51f1c-141">参照</span><span class="sxs-lookup"><span data-stu-id="51f1c-141">See Also</span></span>  
  [<span data-ttu-id="51f1c-142">アダプターをセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="51f1c-142">Secure the adapter</span></span>](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

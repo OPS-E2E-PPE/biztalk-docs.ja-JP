@@ -1,14 +1,14 @@
 ---
-title: "BizTalk ESB Toolkit のメッセージのライフ サイクル |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk ESB Toolkit のメッセージのライフ サイクル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c72fdbda-b9ef-431a-8322-56dba98e9eab
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290354"
 ---
 # <a name="biztalk-esb-toolkit-message-life-cycle"></a><span data-ttu-id="3d507-102">BizTalk ESB Toolkit のメッセージのライフ サイクル</span><span class="sxs-lookup"><span data-stu-id="3d507-102">BizTalk ESB Toolkit Message Life Cycle</span></span>
 <span data-ttu-id="3d507-103">外部システムから開始され、最終的な送信先に到達する ESB 内を移動するメッセージのライフ サイクルを次に示します。</span><span class="sxs-lookup"><span data-stu-id="3d507-103">The following is the life cycle of a message that originates from an external system and traverses through the ESB to reach its final destination:</span></span>  

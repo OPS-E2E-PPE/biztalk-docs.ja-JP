@@ -1,14 +1,14 @@
 ---
-title: "タスク 4: 構成コンストラクト メッセージ Shape2 |Microsoft ドキュメント"
-ms.custom: 
+title: 'タスク 4: 構成コンストラクト メッセージ Shape2 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43a7b912-0293-41be-b992-309eca550801
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279042"
 ---
 # <a name="task-4-configure-the-construct-message-shape"></a><span data-ttu-id="1a6c9-102">タスク 4: メッセージの構築図形を構成します。</span><span class="sxs-lookup"><span data-stu-id="1a6c9-102">Task 4: Configure the Construct Message Shape</span></span>
 <span data-ttu-id="1a6c9-103">メッセージの構築には、メッセージの割り当てと共に、ドキュメントの開始、編集、および終了の各コードに関する指示が格納されます。</span><span class="sxs-lookup"><span data-stu-id="1a6c9-103">The Construct Messages hold messages assignments with the instructions for the Begin, Edit, and End Doc code.</span></span>  

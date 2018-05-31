@@ -1,14 +1,14 @@
 ---
-title: "アセンブリおよび変換サービスのサンプルがインストールされているアイテム |Microsoft ドキュメント"
-ms.custom: 
+title: アセンブリおよび変換サービスのサンプルがインストールされているアイテム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 890c089a-749e-421f-a6eb-2e038cd2122e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010275"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-transformation-service-sample"></a><span data-ttu-id="8d424-102">アセンブリと、変換サービスのサンプルがインストールされている成果物</span><span class="sxs-lookup"><span data-stu-id="8d424-102">Assemblies and Artifacts Installed by the Transformation Service Sample</span></span>
 <span data-ttu-id="8d424-103">次の表は、アセンブリおよびによってインストールされているアイテム、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]変換サービスのサンプルです。</span><span class="sxs-lookup"><span data-stu-id="8d424-103">The following table lists the assemblies and artifacts installed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Transformation Service sample.</span></span>  

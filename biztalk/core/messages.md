@@ -1,11 +1,11 @@
 ---
-title: "メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, headers
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - message headers
 - EMS messages
 ms.assetid: 65bb3431-7186-4d4c-b004-932cdf070e73
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266690"
 ---
 # <a name="messages"></a><span data-ttu-id="899e8-102">メッセージ</span><span class="sxs-lookup"><span data-stu-id="899e8-102">Messages</span></span>
 <span data-ttu-id="899e8-103">JMS メッセージのように、Enterprise Message Service (EMS) メッセージには、次の 3 つの別々 の部分が含まれています: ヘッダー、プロパティ、および本文です。</span><span class="sxs-lookup"><span data-stu-id="899e8-103">An Enterprise Message Service (EMS) message, like a JMS message, contains three separate parts: header, properties, and body.</span></span> <span data-ttu-id="899e8-104">ヘッダーは、EMS メッセージで唯一の必須部分です。</span><span class="sxs-lookup"><span data-stu-id="899e8-104">The header is the only required part of an EMS message.</span></span> <span data-ttu-id="899e8-105">ここでは、Microsoft BizTalk Adapter for TIBCO Enterprise Message Service でのメッセージの処理方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="899e8-105">This topic describes how messages are treated in Microsoft BizTalk Adapter for TIBCO Enterprise Message Service.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
  <span data-ttu-id="899e8-108">メッセージ ヘッダーには、値が格納された、一連の定義済みフィールドがあります。</span><span class="sxs-lookup"><span data-stu-id="899e8-108">The message header contains a series of predefined fields that contain values.</span></span> <span data-ttu-id="899e8-109">BizTalk Adapter for TIBCO Enterprise Message Service は、ヘッダーに設定できる値と設定できない値を認識しています。</span><span class="sxs-lookup"><span data-stu-id="899e8-109">BizTalk Adapter for TIBCO Enterprise Message Service knows what it can and cannot set in the header.</span></span> <span data-ttu-id="899e8-110">読み取り専用の値を設定しようとすると、その値はリダイレクトされるか、Properties{} セクションに設定されます。</span><span class="sxs-lookup"><span data-stu-id="899e8-110">If you try to set a read-only value, the adapter redirects or sets your value in the Properties{} section.</span></span>  
   
 ### <a name="header-example"></a><span data-ttu-id="899e8-111">ヘッダーの例</span><span class="sxs-lookup"><span data-stu-id="899e8-111">Header Example</span></span>  
- <span data-ttu-id="899e8-112">次の例でわかるように**プロパティ = {先 = {String:queue [Q2]}}**です。</span><span class="sxs-lookup"><span data-stu-id="899e8-112">In the following example, notice that **Properties= { Destination={String:Queue[Q2]} }**.</span></span> <span data-ttu-id="899e8-113">`Properties`文字列を含むプロパティであり、文字列の内容は**Q2**です。</span><span class="sxs-lookup"><span data-stu-id="899e8-113">`Properties` is a property that contains a string, and the contents of the string is **Q2**.</span></span> <span data-ttu-id="899e8-114">これは Destination セクションとは無関係です。Destination セクションには、ユーザーが設定した値が格納されています。この値は他のセクションには該当しないため、このセクションに保持されています。</span><span class="sxs-lookup"><span data-stu-id="899e8-114">This has nothing to do with the Destination section; it contains strings of values that you set that could not go anywhere else, so the adapter has held them here in this section.</span></span>  
+ <span data-ttu-id="899e8-112">次の例でわかるように**プロパティ = {先 = {String:queue [Q2]}}** です。</span><span class="sxs-lookup"><span data-stu-id="899e8-112">In the following example, notice that **Properties= { Destination={String:Queue[Q2]} }**.</span></span> <span data-ttu-id="899e8-113">`Properties`文字列を含むプロパティであり、文字列の内容は**Q2**です。</span><span class="sxs-lookup"><span data-stu-id="899e8-113">`Properties` is a property that contains a string, and the contents of the string is **Q2**.</span></span> <span data-ttu-id="899e8-114">これは Destination セクションとは無関係です。Destination セクションには、ユーザーが設定した値が格納されています。この値は他のセクションには該当しないため、このセクションに保持されています。</span><span class="sxs-lookup"><span data-stu-id="899e8-114">This has nothing to do with the Destination section; it contains strings of values that you set that could not go anywhere else, so the adapter has held them here in this section.</span></span>  
   
  <span data-ttu-id="899e8-115">オーケストレーションで `ReplyTo` プロパティを設定すると、応答の送信先となる最終的なコンシューマを指定できます。</span><span class="sxs-lookup"><span data-stu-id="899e8-115">The `ReplyTo` property can be set in the orchestration to tell an eventual consumer where to send a response.</span></span> <span data-ttu-id="899e8-116">TIBCOEMS からメッセージを受信すると、`Destination` プロパティが設定されます。</span><span class="sxs-lookup"><span data-stu-id="899e8-116">EMS sets the `Destination` property when the message is received from TIBCOEMS.</span></span> <span data-ttu-id="899e8-117">この 2 つ目のプロパティは、TIBCOEMS からメッセージを受信するオーケストレーションでは読み取り専用であり、編集できません。</span><span class="sxs-lookup"><span data-stu-id="899e8-117">This second property is read-only in the orchestration receiving the message from TIBCOEMS and cannot be edited in the orchestration.</span></span>  
   

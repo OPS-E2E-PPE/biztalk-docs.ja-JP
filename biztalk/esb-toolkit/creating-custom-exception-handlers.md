@@ -1,14 +1,14 @@
 ---
-title: "カスタム例外ハンドラーの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム例外ハンドラーの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 401aec8d-d9ca-4a88-9e5b-d3ab605dc0a1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290634"
 ---
 # <a name="creating-custom-exception-handlers"></a><span data-ttu-id="b90f2-102">カスタム例外ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="b90f2-102">Creating Custom Exception Handlers</span></span>
 <span data-ttu-id="b90f2-103">例外を検出して処理するアプリケーションは、開発者は、例外ハンドラーを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b90f2-103">For an application to detect and react to exceptions, developers must provide an exception handler.</span></span> <span data-ttu-id="b90f2-104">この例外ハンドラーは、例外メッセージの単一の型と、システムまたはアプリケーションの一部またはすべての部分から生成された例外メッセージをサブスクライブできます。</span><span class="sxs-lookup"><span data-stu-id="b90f2-104">This exception handler can subscribe to a single type of exception message or to exception messages generated from some or all parts of a system or an application.</span></span> <span data-ttu-id="b90f2-105">たとえば、(など、例外、給与支払いシステムで発生している)、特定のシステムからのすべてのメッセージを 1 つのハンドラーのみが必要な場合があります。 か (チェック プロセスを印刷することを検出するなどの特定のエラーのハンドラーを対象となる代わりにあります。失敗する)。</span><span class="sxs-lookup"><span data-stu-id="b90f2-105">For example, you may require only a single handler for all messages from a particular system (such as any exceptions occurring in the payroll system), or you may instead require targeted handlers for specific failures (such as detecting if the check print process fails).</span></span>  

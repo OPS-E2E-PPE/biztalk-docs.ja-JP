@@ -1,14 +1,14 @@
 ---
-title: "TIBCO Enterprise Message Service アダプタ機能 |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Enterprise Message Service アダプタ機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ede748ce-3f28-4942-b2bd-e38e5f1b0f54
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015137"
 ---
 # <a name="tibco-ems-adapter-features"></a><span data-ttu-id="65559-102">TIBCO EMS アダプターの機能</span><span class="sxs-lookup"><span data-stu-id="65559-102">TIBCO EMS Adapter Features</span></span>
 <span data-ttu-id="65559-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) により、BizTalk Server と TIBCO SDK を使用して、TIBCO EMS によって管理されているキューおよびトピックに対して公開とサブスクライブを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="65559-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) enables you to publish and subscribe to queues and topics managed by TIBCO EMS, using BizTalk Server and the TIBCO SDK.</span></span> <span data-ttu-id="65559-104">このアダプターは、TIBCO EMS メッセージを迅速で簡単に、信頼できる方法で統合します。</span><span class="sxs-lookup"><span data-stu-id="65559-104">The adapter integrates TIBCO EMS messages in a fast, easy, and reliable way.</span></span> <span data-ttu-id="65559-105">TIBCO EMS サービスと Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 間で XML データ形式を交換することで、密接に統合された信頼性の高いアプリケーション インフラストラクチャが構築されます。</span><span class="sxs-lookup"><span data-stu-id="65559-105">It exchanges XML data formats between TIBCO EMS servers and Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to provide a tightly integrated and reliable application infrastructure.</span></span> <span data-ttu-id="65559-106">送信用と受信用のアダプター統合操作により、XML スキーマを使用したエンドツーエンドのビジネス プロセス管理が提供されます。</span><span class="sxs-lookup"><span data-stu-id="65559-106">It provides transmit and receive adapter integration operations providing end-to-end business-process management using XML schemas.</span></span>  

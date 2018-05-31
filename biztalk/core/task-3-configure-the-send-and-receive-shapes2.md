@@ -1,14 +1,14 @@
 ---
-title: "タスク 3: が Shapes2 を受信および送信の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'タスク 3: が Shapes2 を受信および送信の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6ebe7141-f2bd-4e6a-9204-d61bd64286af
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279026"
 ---
 # <a name="task-3-configure-the-send-and-receive-shapes"></a><span data-ttu-id="d8b78-102">タスク 3: 送信、受信図形と構成</span><span class="sxs-lookup"><span data-stu-id="d8b78-102">Task 3: Configure the Send and Receive Shapes</span></span>
 <span data-ttu-id="d8b78-103">送信図形と受信図形を構成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="d8b78-103">Use the following procedure to configure the Send and Receive shapes.</span></span>  

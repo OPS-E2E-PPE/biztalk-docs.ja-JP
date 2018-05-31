@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Operations サンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Operations サンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e91d4e57-ba94-4730-8c5a-4c96902f313f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294538"
 ---
 # <a name="running-the-biztalk-operations-sample"></a><span data-ttu-id="e3761-102">BizTalk Operations サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="e3761-102">Running the BizTalk Operations Sample</span></span>
 <span data-ttu-id="e3761-103">Microsoft BizTalk Operations サンプルでは、Windows フォーム クライアントのテスト アプリケーションを使用して BizTalk Operations Web サービスのメソッドを実行し、結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="e3761-103">The Microsoft BizTalk Operations sample uses a Windows Forms test client application to execute methods of the BizTalk Operations Web service and display the results.</span></span> <span data-ttu-id="e3761-104">それを実行して、独自のサービス指向アーキテクチャ (SOA) および ESB アプリケーションで、BizTalk Operations Web サービスを使用する方法を表示するコードをチェックするテスト クライアント プロジェクトを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="e3761-104">You can open the test client project to run it and to examine the code to see how you can use the BizTalk Operations Web service in your own service-oriented architecture (SOA) and ESB applications.</span></span>  

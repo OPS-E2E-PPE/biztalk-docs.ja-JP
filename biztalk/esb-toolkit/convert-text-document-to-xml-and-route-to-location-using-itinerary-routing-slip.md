@@ -1,14 +1,14 @@
 ---
-title: "方法: XML と旅程のルーティング先を使用してファイルの場所へのルートに、テキスト ドキュメントを変換 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: XML と旅程のルーティング先を使用してファイルの場所へのルートに、テキスト ドキュメントを変換 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01597a5f-5ca3-440e-ad97-70332233f319
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010195"
 ---
 # <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a><span data-ttu-id="2bb08-102">方法: テキスト ドキュメントを XML と旅程のルーティング先を使用してファイルの場所へのルートに変換</span><span class="sxs-lookup"><span data-stu-id="2bb08-102">How to: Convert a Text Document to XML and Route to a File Location Using an Itinerary Routing Slip</span></span>
 ## <a name="goal"></a><span data-ttu-id="2bb08-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="2bb08-103">Goal</span></span>  
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="2bb08-129">Visual Studio を右クリックして**DataFormatTransformation.Schemas**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-129">In Visual Studio, right-click **DataFormatTransformation.Schemas**, and then click **Properties**.</span></span> <span data-ttu-id="2bb08-130">をクリックして**アプリケーション**、し、入力**GlobalBank.ESB.DataFormatTransformation.Schemas**で、**アセンブリ名**ボックス。</span><span class="sxs-lookup"><span data-stu-id="2bb08-130">Click **Application**, and then type **GlobalBank.ESB.DataFormatTransformation.Schemas** in the **Assembly name** box.</span></span>  
   
-2.  <span data-ttu-id="2bb08-131">右クリック**DataFormatTransformation.Schemas**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-131">Right-click **DataFormatTransformation.Schemas**, and then click **Properties**.</span></span> <span data-ttu-id="2bb08-132">をクリックして**署名**、ことを確認し、**アセンブリに署名** チェック ボックスが選択されていること、およびアセンブリの場所を指す**.\\.\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-132">Click **Signing**, and then verify that the **Sign the assembly** check box is selected and that the assembly location points to **.\\..\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**.</span></span>  
+2.  <span data-ttu-id="2bb08-131">右クリック**DataFormatTransformation.Schemas**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-131">Right-click **DataFormatTransformation.Schemas**, and then click **Properties**.</span></span> <span data-ttu-id="2bb08-132">をクリックして**署名**、ことを確認し、**アセンブリに署名** チェック ボックスが選択されていること、およびアセンブリの場所を指す **.\\.\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-132">Click **Signing**, and then verify that the **Sign the assembly** check box is selected and that the assembly location points to **.\\..\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**.</span></span>  
   
 3.  <span data-ttu-id="2bb08-133">右クリック**DataFormatTransformation.Pipelines**、クリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-133">Right-click **DataFormatTransformation.Pipelines**, and then click **Remove**.</span></span>  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="2bb08-174">右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-174">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
   
-4.  <span data-ttu-id="2bb08-175">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-175">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="2bb08-175">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-175">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="2bb08-176">**受信場所のプロパティ** ダイアログ ボックスで、**名前**ボックスに、入力**OnRamp.Itinerary.FlatFile.FILE**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-176">In the **Receive Location Properties** dialog box, in the **Name** box, type **OnRamp.Itinerary.FlatFile.FILE**.</span></span>  
   
@@ -145,7 +146,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  <span data-ttu-id="2bb08-183">クリックして、 **ItineraryFactKey**プロパティ、および入力**Resolver.Itinerary**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-183">Click the **ItineraryFactKey** property, and then type **Resolver.Itinerary**.</span></span>  
   
-    2.  <span data-ttu-id="2bb08-184">クリックして、 **ResolverConnectionString**プロパティ、型**行程:\\\name=DataFormatTransformation;**順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-184">Click the **ResolverConnectionString** property, type **ITINERARY:\\\name=DataFormatTransformation;** and then click **OK**.</span></span>  
+    2.  <span data-ttu-id="2bb08-184">クリックして、 **ResolverConnectionString**プロパティ、型**行程:\\\name=DataFormatTransformation;** 順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="2bb08-184">Click the **ResolverConnectionString** property, type **ITINERARY:\\\name=DataFormatTransformation;** and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="2bb08-185">をクリックして**OK**を閉じる、**受信場所のプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2bb08-185">Click **OK** to close the **Receive Location Properties** dialog box.</span></span>  
   

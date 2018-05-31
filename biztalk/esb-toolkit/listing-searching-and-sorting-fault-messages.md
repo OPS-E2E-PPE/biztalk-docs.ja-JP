@@ -1,14 +1,14 @@
 ---
-title: "一覧表示、検索、および並べ替えのエラー メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: 一覧表示、検索、および並べ替えのエラー メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 850b9682-8eba-4a3f-8508-d3eefcd715b7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294642"
 ---
 # <a name="listing-searching-and-sorting-fault-messages"></a><span data-ttu-id="29255-102">一覧表示、検索、および並べ替えのエラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="29255-102">Listing, Searching, and Sorting Fault Messages</span></span>
 <span data-ttu-id="29255-103">ESB の管理ポータルのホーム ページを使用すると、Microsoft BizTalk Server 内で実行されているアプリケーションの状態の全体的なビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="29255-103">You can use the Home page of the ESB Management Portal to obtain an overall view of the status of the applications executing within Microsoft BizTalk Server.</span></span> <span data-ttu-id="29255-104">エラー ページを使用できるさまざまな条件に基づいて、エラー メッセージをクエリします。</span><span class="sxs-lookup"><span data-stu-id="29255-104">The Faults page can be used to query for fault messages, based on a range of criteria.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="29255-108">情報を表示するアプリケーションを選択するをクリックして、**アプリケーションの選択**最初のグラフの上にリンクし、選択するか表示されるインストール済みの BizTalk Server アプリケーションの一覧にあるチェック ボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="29255-108">To select the applications for which you want to view information, click the **Select Applications** link above the first chart, and then select or clear the check boxes in the list of installed BizTalk Server applications that appears.</span></span>  
   
-3.  <span data-ttu-id="29255-109">ポータルが情報を表示する期間を変更するには、次のように選択します。**時間、日、週、月、四半期、年、**または**すべて**最初のグラフ上のドロップダウン リストでします。</span><span class="sxs-lookup"><span data-stu-id="29255-109">To change the period for which the portal displays information, select **Hour, Day, Week, Month, Quarter, Year,** or **ALL** in the drop-down list above the first chart.</span></span>  
+3.  <span data-ttu-id="29255-109">ポータルが情報を表示する期間を変更するには、次のように選択します。**時間、日、週、月、四半期、年、** または**すべて**最初のグラフ上のドロップダウン リストでします。</span><span class="sxs-lookup"><span data-stu-id="29255-109">To change the period for which the portal displays information, select **Hour, Day, Week, Month, Quarter, Year,** or **ALL** in the drop-down list above the first chart.</span></span>  
   
 4.  <span data-ttu-id="29255-110">アプリケーションと、表示期間の一覧で、ホーム ページに使用する既定の設定を変更するで設定を編集、[ポータルの [設定] ページ](../esb-toolkit/portal-my-settings-page.md)です。</span><span class="sxs-lookup"><span data-stu-id="29255-110">To change the default settings used on the Home page for the list of applications and the display period, edit the settings on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
   

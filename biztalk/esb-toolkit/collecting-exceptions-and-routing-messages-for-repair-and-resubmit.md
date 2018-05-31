@@ -1,14 +1,14 @@
 ---
-title: "例外の収集と修復と再送信メッセージをルーティング |Microsoft ドキュメント"
-ms.custom: 
+title: 例外の収集と修復と再送信メッセージをルーティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a61658a-0bac-4802-b506-02e61a3d2a9b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006763"
 ---
 # <a name="collecting-exceptions-and-routing-messages-for-repair-and-resubmit"></a><span data-ttu-id="cb660-102">例外の収集と修復と再送信メッセージをルーティングします。</span><span class="sxs-lookup"><span data-stu-id="cb660-102">Collecting Exceptions and Routing Messages for Repair and Resubmit</span></span>
 <span data-ttu-id="cb660-103">このユース ケースでのカスタム例外ハンドラーが、Web サービス経由で受信したエラー メッセージを取得しに含まれている InfoPath テンプレートと互換性のある形式でディスク ファイルにルーティング、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="cb660-103">In this use case, a custom exception handler picks up a fault message received through a Web service and routes it to a disk file in a format compatible with an InfoPath template included with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span> <span data-ttu-id="cb660-104">ユーザーが Microsoft InfoPath を使用して、ファイルを開くことができます、メッセージの内容を編集および図 1 に示すように、処理のためにメッセージを再送信します。</span><span class="sxs-lookup"><span data-stu-id="cb660-104">The user can open the file using Microsoft InfoPath, edit the message contents, and resubmit the message for processing, as illustrated in Figure 1.</span></span>  

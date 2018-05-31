@@ -1,14 +1,14 @@
 ---
-title: "Itinerary Designer を拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: Itinerary Designer を拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f26b825b-ebab-4dac-b7ed-0608c79e146a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974480"
 ---
 # <a name="extending-the-itinerary-designer"></a><span data-ttu-id="384f7-102">Itinerary Designer を拡張します。</span><span class="sxs-lookup"><span data-stu-id="384f7-102">Extending the Itinerary Designer</span></span>
 <span data-ttu-id="384f7-103">Microsoft Visual Studio で使用するための日程のグラフィカルなモデリングができるようにするには、行程デザイナーがビジュアルなドメイン固有言語 (DSL)、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="384f7-103">The Itinerary Designer is a visual domain-specific language (DSL) for Microsoft Visual Studio that enables the graphical modeling of itineraries for use with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span> <span data-ttu-id="384f7-104">デザイナーでは、開発者が新しい機能や新しい構成オプションを有効にするカスタム拡張機能を記述できるさまざまな拡張ポイントを公開します。</span><span class="sxs-lookup"><span data-stu-id="384f7-104">The designer exposes various extension points for which developers can write custom extensions to enable new functionality and/or new configuration options.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "エンド ツー エンドのトランザクションの追跡 |Microsoft ドキュメント"
-ms.custom: 
+title: エンド ツー エンドのトランザクションの追跡 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebacd2e4-6b5c-4dc4-8361-b5b77042debc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294114"
 ---
 # <a name="end-to-end-transaction-tracking"></a><span data-ttu-id="8ad80-102">エンド ツー エンドのトランザクションの追跡</span><span class="sxs-lookup"><span data-stu-id="8ad80-102">End-to-End Transaction Tracking</span></span>
 <span data-ttu-id="8ad80-103">ビジネスの可視性は、実行時環境を通過するトラフィックのフローを監視する演算子とユーザーの機能に関連します。</span><span class="sxs-lookup"><span data-stu-id="8ad80-103">Business visibility relates to the ability of operators and users to monitor the flow of traffic through the run-time environment.</span></span> <span data-ttu-id="8ad80-104">企業は、プロセスと、システムを確実に収益の生成に利用できるもので自身の一部を再生するには、各ステップで経由でやり取りされるトランザクションを追跡できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="8ad80-104">Enterprises must be able to track the processes and transactions flowing through their systems at each step to ensure that they play their part in contributing to revenue generation.</span></span> <span data-ttu-id="8ad80-105">AmberPoint SMS には、測定単位と Microsoft BizTalk Server でこれらのメッセージの追跡が簡単になります。</span><span class="sxs-lookup"><span data-stu-id="8ad80-105">AmberPoint SMS simplifies the measurement and tracking of these messages in Microsoft BizTalk Server.</span></span> <span data-ttu-id="8ad80-106">システムでは、新しい開発者パッケージ化し、個々 のサービス コンポーネントを展開することを選択する方法に準拠するように要求の対象ではなく、エンド ツー エンドのビジネス プロセス フローと一致する管理単位を定義することができます。</span><span class="sxs-lookup"><span data-stu-id="8ad80-106">The system allows users to define new units of management that align with end-to-end business process flows, instead of being required to conform to the way developers chose to package and deploy individual service components.</span></span> <span data-ttu-id="8ad80-107">図 1 は、管理単位を定義するための画面を示しています。</span><span class="sxs-lookup"><span data-stu-id="8ad80-107">Figure 1 shows the screen for defining management units.</span></span>  

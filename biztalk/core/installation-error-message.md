@@ -1,17 +1,17 @@
 ---
-title: "インストールに関するエラー メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: インストールに関するエラー メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installation, error message
 - error messages, installation
 ms.assetid: 593b033f-03da-43ae-a948-f87aa5e4bccd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971920"
 ---
 # <a name="installation-error-message"></a><span data-ttu-id="724dc-102">インストールに関するエラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="724dc-102">Installation Error Message</span></span>
 <span data-ttu-id="724dc-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインストールした後に、送信場所または受信場所を定義すると、次のエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="724dc-103">After you install Microsoft BizTalk Adapter for TIBCO Enterprise Message Service, defining a send or receive location for it might result in the following error:</span></span>  
@@ -84,7 +85,7 @@ ms.lasthandoff: 11/28/2017
 2.  <span data-ttu-id="724dc-127">出力から TIBCO.EMS アセンブリ バージョン番号をコピーします。</span><span class="sxs-lookup"><span data-stu-id="724dc-127">Copy the TIBCO.EMS assembly version number from the output.</span></span>  
   
     > [!CAUTION]
-    >  <span data-ttu-id="724dc-128">2 つのバージョン番号が表示されます。1 つは gacutil ユーティリティのバージョン番号です。</span><span class="sxs-lookup"><span data-stu-id="724dc-128">Two version numbers appear: one is the version number of the gacutil utility.</span></span> <span data-ttu-id="724dc-129">2 番目のバージョンの番号は、直後に表示する**バージョン =**です。</span><span class="sxs-lookup"><span data-stu-id="724dc-129">You want the second version number, which appears just after **Version=**.</span></span>  
+    >  <span data-ttu-id="724dc-128">2 つのバージョン番号が表示されます。1 つは gacutil ユーティリティのバージョン番号です。</span><span class="sxs-lookup"><span data-stu-id="724dc-128">Two version numbers appear: one is the version number of the gacutil utility.</span></span> <span data-ttu-id="724dc-129">2 番目のバージョンの番号は、直後に表示する**バージョン =** です。</span><span class="sxs-lookup"><span data-stu-id="724dc-129">You want the second version number, which appears just after **Version=**.</span></span>  
   
 3.  <span data-ttu-id="724dc-130">直後に、引用符の間、BTSNTSVC.exe.config ファイルにバージョン番号を貼り付け**newVersion =** (前の XML 例内の文字を太字)。</span><span class="sxs-lookup"><span data-stu-id="724dc-130">Paste the version number in the BTSNTSVC.exe.config file, between the quotation marks, right after **newVersion=** (bold characters in the previous XML example).</span></span>  
   

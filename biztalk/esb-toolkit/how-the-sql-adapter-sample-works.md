@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタのサンプルのしくみ |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタのサンプルのしくみ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 77811152-cc8e-4090-89eb-e3a402a46e5e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294010"
 ---
 # <a name="how-the-sql-adapter-sample-works"></a><span data-ttu-id="b44a3-102">SQL アダプタのサンプルのしくみ</span><span class="sxs-lookup"><span data-stu-id="b44a3-102">How the SQL Adapter Sample Works</span></span>
 <span data-ttu-id="b44a3-103">SQL Adapter サンプルは、ルーティング サービスとトランス フォームのメッセージング サービスで構成されているサンプルの双方向旅程を提供します。</span><span class="sxs-lookup"><span data-stu-id="b44a3-103">The SQL Adapter sample provides a sample two-way itinerary configured with the routing service and a transform messaging service.</span></span>  

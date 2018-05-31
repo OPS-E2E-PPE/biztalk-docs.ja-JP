@@ -1,14 +1,14 @@
 ---
-title: "例外管理フレームワークを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 例外管理フレームワークを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b69c9c01-e7e4-4788-8fe2-43d32075155d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295186"
 ---
 # <a name="using-the-exception-management-framework"></a><span data-ttu-id="2f0be-102">例外管理フレームワークを使用します。</span><span class="sxs-lookup"><span data-stu-id="2f0be-102">Using the Exception Management Framework</span></span>
 <span data-ttu-id="2f0be-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]動的変換およびルーティングの障害 (たとえば、展開されていないマップまたはマップ名を返さないルール) を通信するために例外を使用します。</span><span class="sxs-lookup"><span data-stu-id="2f0be-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] uses exceptions to communicate failures (for example, a non-deployed map or rules that do not return a map name) for dynamic transformations and routing.</span></span> <span data-ttu-id="2f0be-104">変換またはルーティング プロセスが失敗したときに、ESB は、例外メッセージを作成し、メッセージ ボックス データベースに直接バインド ポートを通じて送信します。</span><span class="sxs-lookup"><span data-stu-id="2f0be-104">When a transformation or routing process fails, the ESB creates an exception message and submits it through a direct-bound port to the Message Box database.</span></span> <span data-ttu-id="2f0be-105">ESB は、ALL という名前の送信ポートも実装します。サブスクライブしている、例外メッセージを取得して ESB 管理ポータルに公開される例外。</span><span class="sxs-lookup"><span data-stu-id="2f0be-105">The ESB also implements a send port named ALL.Exceptions that subscribes to and retrieves exception messages and publishes them to the ESB Management Portal.</span></span>  

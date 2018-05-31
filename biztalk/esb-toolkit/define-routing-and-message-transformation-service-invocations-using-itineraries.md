@@ -1,14 +1,14 @@
 ---
-title: "ルーティングの定義と、日程を使用して変換サービスの呼び出しをメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: ルーティングの定義と、日程を使用して変換サービスの呼び出しをメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6f2448e-a5a7-496c-86d3-47f12e6f1251
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294282"
 ---
 # <a name="defining-routing-and-message-transformation-service-invocations-using-itineraries"></a><span data-ttu-id="9e7d0-102">定義するルーティングと旅程を使用してメッセージ変換サービスの呼び出し</span><span class="sxs-lookup"><span data-stu-id="9e7d0-102">Defining Routing and Message Transformation Service Invocations Using Itineraries</span></span>
 <span data-ttu-id="9e7d0-103">このユース ケースでは、処理のために送信メッセージには、サービスを実行して、解決の要件の一覧を記述する itinerary の SOAP ヘッダーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="9e7d0-103">In this use case, a message submitted for processing contains an itinerary SOAP header that describes the list of services to execute and their resolution requirements.</span></span> <span data-ttu-id="9e7d0-104">具体的には、変換およびルーティング サービスは、Universal Description、検出、および Integration (UDDI)、ビジネス ルール エンジン ポリシー、XML パス言語 (XPath)、または静的参照を通じて解決を必要に応じて各が必要です。</span><span class="sxs-lookup"><span data-stu-id="9e7d0-104">Specifically, a transformation and routing service are defined, each optionally requiring resolution through a Universal Description, Discovery, and Integration (UDDI), Business Rules Engine Policy, XML Path Language (XPath), or STATIC lookup.</span></span> <span data-ttu-id="9e7d0-105">このユース ケースは、メッセージの発行時に、旅行計画に他のサービスを追加することによって拡張できます。</span><span class="sxs-lookup"><span data-stu-id="9e7d0-105">This use case can be extended by adding other services to the itinerary at the time of message publication.</span></span>  

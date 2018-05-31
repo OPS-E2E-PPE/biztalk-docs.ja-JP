@@ -1,14 +1,14 @@
 ---
-title: "ルーティングの定義と、メッセージの日程を使用して複数のオーケストレーションを通じて変換 |Microsoft ドキュメント"
-ms.custom: 
+title: ルーティングの定義と、メッセージの日程を使用して複数のオーケストレーションを通じて変換 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63141b83-798e-40d0-908d-6b7649923e69
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294018"
 ---
 # <a name="defining-routing-and-message-transformation-through-multiple-orchestrations-using-itineraries"></a><span data-ttu-id="be5c0-102">定義するルーティングと旅程を使用して複数のオーケストレーションでメッセージの変換</span><span class="sxs-lookup"><span data-stu-id="be5c0-102">Defining Routing and Message Transformation Through Multiple Orchestrations Using Itineraries</span></span>
 <span data-ttu-id="be5c0-103">このユース ケースでは、処理のために送信メッセージには、サービスを実行して、解決の要件の一覧を記述する itinerary の SOAP ヘッダーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="be5c0-103">In this use case, a message submitted for processing contains an itinerary SOAP header that describes the list of services to execute and their resolution requirements.</span></span> <span data-ttu-id="be5c0-104">旅行計画では、メッセージが、処理サイクル中に通過する 1 つ以上の Microsoft BizTalk Server オーケストレーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="be5c0-104">The itinerary specifies one or more Microsoft BizTalk Server orchestrations through which the message will pass during the processing cycle.</span></span> <span data-ttu-id="be5c0-105">必要に応じて、旅行計画には、エンドポイントまたはメッセージの変換要件を決定するため、動的なルーティング情報を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="be5c0-105">Optionally, the itinerary can contain dynamic routing information used to determine endpoints or transformation requirements for the message.</span></span> <span data-ttu-id="be5c0-106">図 1 は、プロセスの概略を示します。</span><span class="sxs-lookup"><span data-stu-id="be5c0-106">Figure 1 illustrates a schematic view of the process.</span></span>  

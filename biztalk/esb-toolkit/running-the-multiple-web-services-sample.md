@@ -1,14 +1,14 @@
 ---
-title: "複数の Web を実行しているサービスのサンプル |Microsoft ドキュメント"
-ms.custom: 
+title: 複数の Web を実行しているサービスのサンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b201c7c3-213a-4009-8872-5a4c1cbb8195
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294802"
 ---
 # <a name="running-the-multiple-web-services-sample"></a><span data-ttu-id="681bc-102">複数の Web サービス サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="681bc-102">Running the Multiple Web Services Sample</span></span>
 <span data-ttu-id="681bc-103">複数の Web サービス サンプルでは、Windows フォーム クライアント テスト アプリケーション行程入り口サンプルを使用します。</span><span class="sxs-lookup"><span data-stu-id="681bc-103">The Multiple Web Services sample uses the Windows Forms test client application provided with the Itinerary On-Ramp sample.</span></span>  

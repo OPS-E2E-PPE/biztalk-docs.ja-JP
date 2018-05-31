@@ -1,14 +1,14 @@
 ---
-title: "コンテンツ ベース ルーティングのサンプルを読み込む一括を実行している |Microsoft ドキュメント"
-ms.custom: 
+title: コンテンツ ベース ルーティングのサンプルを読み込む一括を実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e981567-7c6c-4c13-bd5b-597efdd3fb50
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294946"
 ---
 # <a name="running-the-bulk-load-content-based-routing-sample"></a><span data-ttu-id="6b579-102">サンプルを実行して、一括読み込みコンテンツ ベース ルーティング</span><span class="sxs-lookup"><span data-stu-id="6b579-102">Running the Bulk Load Content-Based Routing Sample</span></span>
 <span data-ttu-id="6b579-103">このサンプルの一部では、一括読み込み、ESB と Microsoft BizTalk は、各メッセージに指定されたキュー名に基づいて異なる送信先キューにルーティング、メッセージのキューについて説明します。</span><span class="sxs-lookup"><span data-stu-id="6b579-103">This part of the sample demonstrates bulk loading a queue with messages that the ESB and Microsoft BizTalk will route to different destination queues based on the queue name specified in each message.</span></span> <span data-ttu-id="6b579-104">前の 2 つの部分できたように、サンプルの機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="6b579-104">It uses the features of the sample that you have seen in the previous two parts.</span></span>  
@@ -33,6 +34,6 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="6b579-111">**ロード** ダイアログ ボックスで、既定値に設定されたすべての値のままにします。</span><span class="sxs-lookup"><span data-stu-id="6b579-111">In the **Load** dialog box, leave all values set to their default values.</span></span>  
   
-6.  <span data-ttu-id="6b579-112">**ロード**ダイアログ ボックスで、をクリックして**[ok]**入力キューにすべてのメッセージを追加します。</span><span class="sxs-lookup"><span data-stu-id="6b579-112">In the **Load** dialog box, click **OK** to add all the messages to the input queue.</span></span>  
+6.  <span data-ttu-id="6b579-112">**ロード**ダイアログ ボックスで、をクリックして **[ok]** 入力キューにすべてのメッセージを追加します。</span><span class="sxs-lookup"><span data-stu-id="6b579-112">In the **Load** dialog box, click **OK** to add all the messages to the input queue.</span></span>  
   
 7.  <span data-ttu-id="6b579-113">遅延後に、アプリケーションの実行中は、JMS ヘッダー内の値に応じて、さまざまな送信先キューに、ESB 出力メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6b579-113">After a delay while the application executes, the ESB output messages appear in various destination queues, depending on the values in their JMS headers.</span></span> <span data-ttu-id="6b579-114">ただし、同じ返信先キューは、ので、ESB で表示されるすべての応答すべて指定します。JMS です。サンプルです。応答キューです。</span><span class="sxs-lookup"><span data-stu-id="6b579-114">However, all specify the same Reply To queue, so all the replies appear in the ESB.JMS.SAMPLE.REPLY queue.</span></span> <span data-ttu-id="6b579-115">WebSphere キュー エクスプ ローラーを開き、これを確認するキューを参照します。</span><span class="sxs-lookup"><span data-stu-id="6b579-115">Open the WebSphere Queue Explorer and browse the queues to confirm this.</span></span>

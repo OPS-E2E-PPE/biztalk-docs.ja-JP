@@ -1,14 +1,14 @@
 ---
-title: "PeopleSoft システムの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: PeopleSoft システムの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c228ac23-184f-4c08-922b-ba84f5f2c52f
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287378"
 ---
 # <a name="using-a-peoplesoft-system"></a><span data-ttu-id="6ef7b-102">PeopleSoft システムの使用</span><span class="sxs-lookup"><span data-stu-id="6ef7b-102">Using a PeopleSoft System</span></span>
 <span data-ttu-id="6ef7b-103">PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムから PeopleSoft アダプターを使用してアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="6ef7b-103">The PeopleSoft system is accessible from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the PeopleSoft adapter.</span></span> <span data-ttu-id="6ef7b-104">このアダプターは、Microsoft が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="6ef7b-104">This adapter is one of a group of eight line-of-business (LOB) adapters shipped by Microsoft for use with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/62a89cd4-464c-42fd-91cd-60ceeab5b006.gif "62a89cd4-464c-42fd-91cd-60ceeab5b006")  
   
-2.  <span data-ttu-id="6ef7b-127">検索を開始するには、次のように設定します**SetID**に **=** 、設定されて**場所コード**に**で始まる**、入力**、。**、クリックして**検索**です。</span><span class="sxs-lookup"><span data-stu-id="6ef7b-127">To begin the search, set **SetID** to **=**, set **Location Code** to **begins with**, enter **A**, and then click **Search**.</span></span> <span data-ttu-id="6ef7b-128">A で始まる名前の都市が表示されます、**検索結果**インターフェイスのセクションです。</span><span class="sxs-lookup"><span data-stu-id="6ef7b-128">This displays cities whose names start with A in the **Search Results** section of the interface.</span></span>  
+2.  <span data-ttu-id="6ef7b-127">検索を開始するには、次のように設定します**SetID**に **=** 、設定されて**場所コード**に**で始まる**、入力 **、。**、クリックして**検索**です。</span><span class="sxs-lookup"><span data-stu-id="6ef7b-127">To begin the search, set **SetID** to **=**, set **Location Code** to **begins with**, enter **A**, and then click **Search**.</span></span> <span data-ttu-id="6ef7b-128">A で始まる名前の都市が表示されます、**検索結果**インターフェイスのセクションです。</span><span class="sxs-lookup"><span data-stu-id="6ef7b-128">This displays cities whose names start with A in the **Search Results** section of the interface.</span></span>  
   
      ![](../core/media/86661144-c666-4d72-9227-9f17df715ba4.gif "86661144-c666-4d72-9227-9f17df715ba4")  
   

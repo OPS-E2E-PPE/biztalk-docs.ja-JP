@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Rendezvous アダプター |Microsoft ドキュメント"
-description: "インストール、チュートリアルの手順、アーキテクチャについて説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Server で TIBCO Rendezvous を BizTalk アダプターを使用する場合は、例外処理を追加"
-ms.custom: 
+title: TIBCO Rendezvous アダプター |Microsoft ドキュメント
+description: インストール、チュートリアルの手順、アーキテクチャについて説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Server で TIBCO Rendezvous を BizTalk アダプターを使用する場合は、例外処理を追加
+ms.custom: ''
 ms.date: 10/24/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0528954d-11b4-449b-8057-30d463104fef
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015457"
 ---
 # <a name="tibco-rendezvous-adapter"></a><span data-ttu-id="19bc2-103">TIBCO Rendezvous アダプタ</span><span class="sxs-lookup"><span data-stu-id="19bc2-103">TIBCO Rendezvous Adapter</span></span>
 <span data-ttu-id="19bc2-104">Microsoft BizTalk Adapter for TIBCO Rendezvous を使用すると、BizTalk Server 内で TIBCO Rendezvous ビジネス関数を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="19bc2-104">Microsoft BizTalk Adapter for TIBCO Rendezvous enables you to use TIBCO Rendezvous business functions within BizTalk Server.</span></span> <span data-ttu-id="19bc2-105">次のセクションでは、アダプターをセットアップして TIBCO Rendezvous 固有の情報にアクセスする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="19bc2-105">The following sections discuss setting up the adapter to access TIBCO Rendezvous-specific information.</span></span>  

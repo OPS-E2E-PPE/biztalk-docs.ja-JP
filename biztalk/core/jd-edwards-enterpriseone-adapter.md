@@ -1,15 +1,15 @@
 ---
-title: "JD Edwards EnterpriseOne アダプター |Microsoft ドキュメント"
-description: "インストール、チュートリアルの手順、アーキテクチャの説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Adapter for j. d. の使用時に例外処理を追加 BizTalk Server で Edwards EnterpriseOne"
-ms.custom: 
+title: JD Edwards EnterpriseOne アダプター |Microsoft ドキュメント
+description: インストール、チュートリアルの手順、アーキテクチャの説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Adapter for j. d. の使用時に例外処理を追加 BizTalk Server で Edwards EnterpriseOne
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 97f0f87a-59c3-4503-8da6-d6967dab820a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015907"
 ---
 # <a name="jd-edwards-enterpriseone-adapter"></a><span data-ttu-id="d1cbb-104">JD Edwards EnterpriseOne アダプタ</span><span class="sxs-lookup"><span data-stu-id="d1cbb-104">JD Edwards EnterpriseOne Adapter</span></span>
 <span data-ttu-id="d1cbb-105">Microsoft BizTalk Adapter for j. d.</span><span class="sxs-lookup"><span data-stu-id="d1cbb-105">Microsoft BizTalk Adapter for J.D.</span></span> <span data-ttu-id="d1cbb-106">Edwards EnterpriseOne では、BizTalk Server 内で JD Edwards EnterpriseOne のビジネス関数を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d1cbb-106">Edwards EnterpriseOne enables you to use JD Edwards EnterpriseOne business functions within BizTalk Server.</span></span> <span data-ttu-id="d1cbb-107">次のセクションでは、アダプターをセットアップして JD Edwards EnterpriseOne 固有の情報にアクセスする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d1cbb-107">The following sections discuss setting up the adapter to access JD Edwards EnterpriseOne-specific information.</span></span>  

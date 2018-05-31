@@ -1,14 +1,14 @@
 ---
-title: "TIBCO Rendezvous アダプターでメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Rendezvous アダプターでメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12699550-22e7-4a11-a024-2302570970af
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015185"
 ---
 # <a name="messages-in-biztalk-adapter-for-tibco-rendezvous"></a><span data-ttu-id="492f7-102">BizTalk Adapter for TIBCO Rendezvous のメッセージ</span><span class="sxs-lookup"><span data-stu-id="492f7-102">Messages in BizTalk Adapter for TIBCO Rendezvous</span></span>
 <span data-ttu-id="492f7-103">BizTalk Adapter for TIBCO Rendezvous は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と TIBCO Rendezvous 間に双方向の接続を提供します。</span><span class="sxs-lookup"><span data-stu-id="492f7-103">BizTalk Adapter for TIBCO Rendezvous provides bi-directional connectivity between [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and TIBCO Rendezvous.</span></span> <span data-ttu-id="492f7-104">このアダプターは、TIBCO Rendezvous API と BizTalk Adapter Framework API の両方を使用して、緊密な統合を提供します。</span><span class="sxs-lookup"><span data-stu-id="492f7-104">This adapter uses both the TIBCO Rendezvous API and the BizTalk Adapter Framework API to provide tight integration.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "BizTalk adapter for TIBCO Rendezvous 開始 |Microsoft ドキュメント"
-description: "メッセージ、概念、スキーマの生成、制限事項、インストール、および BizTalk Server で TIBCO Rendezvous アダプター用のチュートリアル"
-ms.custom: 
+title: BizTalk adapter for TIBCO Rendezvous 開始 |Microsoft ドキュメント
+description: メッセージ、概念、スキーマの生成、制限事項、インストール、および BizTalk Server で TIBCO Rendezvous アダプター用のチュートリアル
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebbde0bc-86e5-49fd-abc7-a61acbb3ab2e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013305"
 ---
 # <a name="get-started-with-biztalk-adapter-for-tibco-rendezvous"></a><span data-ttu-id="8aadf-103">BizTalk adapter for TIBCO Rendezvous 作業を開始します。</span><span class="sxs-lookup"><span data-stu-id="8aadf-103">Get started with BizTalk Adapter for TIBCO Rendezvous</span></span>
 

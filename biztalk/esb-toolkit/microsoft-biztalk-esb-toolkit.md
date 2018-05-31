@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk ESB Toolkit |Microsoft ドキュメント"
-description: "概要、一般的なシナリオ、および BizTalk Server で ESB Toolkit のコンポーネント"
-caps.latest.revision: "14"
+title: Microsoft BizTalk ESB Toolkit |Microsoft ドキュメント
+description: 概要、一般的なシナリオ、および BizTalk Server で ESB Toolkit のコンポーネント
+caps.latest.revision: 14
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 17ffaebc-7e33-4de8-8e94-109cd5d16ca0
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297034"
 ---
 # <a name="microsoft-biztalk-esb-toolkit"></a><span data-ttu-id="5a585-103">Microsoft BizTalk ESB Toolkit</span><span class="sxs-lookup"><span data-stu-id="5a585-103">Microsoft BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="5a585-104">![BizTalk ESB Toolkit ロゴ](../esb-toolkit/media/biztalkesbtoolkitlogo.gif "BizTalkESBToolkitLogo")</span><span class="sxs-lookup"><span data-stu-id="5a585-104">![BizTalk ESB Toolkit Logo](../esb-toolkit/media/biztalkesbtoolkitlogo.gif "BizTalkESBToolkitLogo")</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="summary"></a><span data-ttu-id="5a585-105">概要</span><span class="sxs-lookup"><span data-stu-id="5a585-105">Summary</span></span>  
  <span data-ttu-id="5a585-106">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]疎結合のメッセージング アーキテクチャをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5a585-106">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] uses [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] to support a loosely coupled messaging architecture.</span></span> <span data-ttu-id="5a585-107">BizTalk Server には、メッセージング アプリケーション用の強力なパブリッシュ/サブスクライブ メカニズムが組み込まれています。このメカニズムは、サブスクリプションを作成および入力することによって機能し、サービス指向アーキテクチャ (SOA) アプリケーション向けの、高い効率と拡張性を備えたプラットフォームを提供します。</span><span class="sxs-lookup"><span data-stu-id="5a585-107">BizTalk Server includes a powerful publish/subscribe mechanism for messaging applications that works by creating and filling subscriptions, which provides a highly efficient and scalable platform for service-oriented architecture (SOA) applications.</span></span>  
   
- <span data-ttu-id="5a585-108">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]軽量なサービスの日程ベースのサービスの呼び出しが組み込まれた信頼性の高い、接続されている、サービス指向のアプリケーションの構築に重点を置いての新機能の範囲を指定する BizTalk Server の機能を拡張コンポジション、動的解決のエンドポイントとマップ、Web サービスと ws-* の統合、障害管理とレポート、およびサードパーティの SOA 管理ソリューションと統合します。</span><span class="sxs-lookup"><span data-stu-id="5a585-108">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extends the functionality of BizTalk Server to provide a range of new capabilities focused on building robust, connected, service-oriented applications that incorporate itinerary-based service invocation for lightweight service composition, dynamic resolution of endpoints and maps, Web service and WS-* integration, fault management and reporting, and integration with third-party SOA governance solutions.</span></span>  
+ <span data-ttu-id="5a585-108">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]軽量なサービスの日程ベースのサービスの呼び出しが組み込まれた信頼性の高い、接続されている、サービス指向のアプリケーションの構築に重点を置いての新機能の範囲を指定する BizTalk Server の機能を拡張コンポジション、動的解決のエンドポイントとマップ、Web サービスと ws-\* の統合、障害管理とレポート、およびサードパーティの SOA 管理ソリューションと統合します。</span><span class="sxs-lookup"><span data-stu-id="5a585-108">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extends the functionality of BizTalk Server to provide a range of new capabilities focused on building robust, connected, service-oriented applications that incorporate itinerary-based service invocation for lightweight service composition, dynamic resolution of endpoints and maps, Web service and WS-\* integration, fault management and reporting, and integration with third-party SOA governance solutions.</span></span>  
   
 ## <a name="overview"></a><span data-ttu-id="5a585-109">概要</span><span class="sxs-lookup"><span data-stu-id="5a585-109">Overview</span></span>  
  <span data-ttu-id="5a585-110">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]アーキテクチャに関するガイダンス、パターン、および BizTalk Server と .NET Framework のコンポーネントの Enterprise Service Bus (ESB)、Microsoft プラットフォームで開発を簡略化し、拡張するマイクロソフトの顧客のコレクションを提供します。独自のメッセージングおよび統合ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="5a585-110">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides architectural guidance, patterns, and a collection of BizTalk Server and .NET Framework components to simplify the development of an Enterprise Service Bus (ESB) on the Microsoft platform and to allow Microsoft customers to extend their own messaging and integration solutions.</span></span>  

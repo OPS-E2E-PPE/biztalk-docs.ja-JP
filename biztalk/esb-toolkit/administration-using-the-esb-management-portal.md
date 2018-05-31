@@ -1,14 +1,14 @@
 ---
-title: "ESB の管理ポータルを使用して管理 |Microsoft ドキュメント"
-ms.custom: 
+title: ESB の管理ポータルを使用して管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 478d1dcc-e9b2-443b-be98-5b7545322401
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290274"
 ---
 # <a name="administration-using-the-esb-management-portal"></a><span data-ttu-id="69af0-102">ESB の管理ポータルを使用して管理</span><span class="sxs-lookup"><span data-stu-id="69af0-102">Administration Using the ESB Management Portal</span></span>
 <span data-ttu-id="69af0-103">一部として含まれる、ESB 管理ポータル、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、BizTalk ESB Toolkit を拡張するためのメトリックと存在する可能性の使用方法を示すサンプル サイトです。</span><span class="sxs-lookup"><span data-stu-id="69af0-103">The ESB Management Portal, included as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], is a sample site that demonstrates the use of metrics and the possibilities that exist for extending the BizTalk ESB Toolkit.</span></span> <span data-ttu-id="69af0-104">ポータルでは、カスタマイズした独自のポータルをビルドすることができます開始ポイントを提供します。</span><span class="sxs-lookup"><span data-stu-id="69af0-104">The portal provides a starting point from which you can build your own customized portal.</span></span>  

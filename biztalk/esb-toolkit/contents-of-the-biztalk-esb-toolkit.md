@@ -1,14 +1,14 @@
 ---
-title: "BizTalk ESB Toolkit の内容 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk ESB Toolkit の内容 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e7114df-dadf-49ab-b024-44d84e47faa5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290618"
 ---
 # <a name="contents-of-the-biztalk-esb-toolkit"></a><span data-ttu-id="bb11c-102">BizTalk ESB Toolkit の内容</span><span class="sxs-lookup"><span data-stu-id="bb11c-102">Contents of the BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="bb11c-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]アーキテクチャに関するガイダンス、パターンとプラクティス、および BizTalk Server と .NET Framework のコンポーネント、Microsoft プラットフォームでのエンタープライズ規模のソリューションの開発を簡略化のコレクションを提供します。</span><span class="sxs-lookup"><span data-stu-id="bb11c-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides architectural guidance, patterns and practices, and a collection of BizTalk Server and .NET Framework components to simplify the development of enterprise-scale solutions on the Microsoft platform.</span></span> <span data-ttu-id="bb11c-104">このツールキットは、開発者が既存のメッセージングを拡張に役立つ機能や統合ソリューションも提供します。</span><span class="sxs-lookup"><span data-stu-id="bb11c-104">The toolkit also provides capabilities to help developers extend existing messaging and integration solutions.</span></span> <span data-ttu-id="bb11c-105">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]動的メッセージ ベースのエンタープライズ アプリケーションを構築するプロセスを簡略化する疎結合メッセージング環境を実装およびサポートするコンポーネントの相互運用のコレクションを構成します。</span><span class="sxs-lookup"><span data-stu-id="bb11c-105">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] consists of a collection of interoperating components that support and implement a loosely coupled messaging environment that simplifies the process of building dynamic message-based enterprise applications.</span></span>  

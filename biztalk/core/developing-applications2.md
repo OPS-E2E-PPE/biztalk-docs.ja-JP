@@ -1,15 +1,15 @@
 ---
-title: "JD Edwards EnterpriseOne のアプリケーションのアイテムを作成 |Microsoft ドキュメント"
-description: "BizTalk Server 管理および BizTalk Server で JD Edwards EnterpriseOne の BizTalk アダプターを使用する Visual Studio では、成果物を作成します。"
-ms.custom: 
+title: JD Edwards EnterpriseOne のアプリケーションのアイテムを作成 |Microsoft ドキュメント
+description: BizTalk Server 管理および BizTalk Server で JD Edwards EnterpriseOne の BizTalk アダプターを使用する Visual Studio では、成果物を作成します。
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a554c3bb-3613-4bb6-b627-3c1bb5265065
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013257"
 ---
 # <a name="create-your-application"></a><span data-ttu-id="a7258-103">アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="a7258-103">Create your application</span></span>
 <span data-ttu-id="a7258-104">このセクションには、BizTalk Server アプリケーションを作成したり、BizTalk Adapter for JD Edwards EnterpriseOne を使用する開発者向けの情報が記載されています。</span><span class="sxs-lookup"><span data-stu-id="a7258-104">This section contains information for developers who want to create BizTalk Server applications and work with BizTalk Adapter for JD Edwards EnterpriseOne.</span></span> <span data-ttu-id="a7258-105">これらのアプリケーションが作成されると、しすることができます[例外処理を追加](../core/using-biztalk-server-exception-handling3.md)をオーケストレーションにします。</span><span class="sxs-lookup"><span data-stu-id="a7258-105">Once these applications are created, then you can [add exception handling](../core/using-biztalk-server-exception-handling3.md) to your orchestration.</span></span> 

@@ -1,14 +1,14 @@
 ---
-title: "ポータルのホーム ページ |Microsoft ドキュメント"
-ms.custom: 
+title: ポータルのホーム ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60072c30-d57b-4bd8-a7ee-b4d0fa50de58
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295042"
 ---
 # <a name="portal-home-page"></a><span data-ttu-id="08180-102">ポータル ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="08180-102">Portal Home Page</span></span>
 <span data-ttu-id="08180-103">図 1 は、ホーム ページで、次の 4 つのセクションで構成を示しています。</span><span class="sxs-lookup"><span data-stu-id="08180-103">Figure 1 shows the Home page, which contains four sections:</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="08180-113">ホーム ページを最初に読み込む場合は、最初のグラフ内のすべてのアプリケーションが見えない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="08180-113">When you first load the Home page, you may not see any applications in the first chart.</span></span> <span data-ttu-id="08180-114">情報を表示するアプリケーションを選択するをクリックして、**アプリケーションの選択**最初のグラフの上にリンクし、選択するか表示されるインストール済みの BizTalk アプリケーションの一覧にあるチェック ボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="08180-114">To select the applications for which you want to view information, click the **Select Applications** link above the first chart, and then select or clear the check boxes in the list of installed BizTalk applications that appears.</span></span> <span data-ttu-id="08180-115">また、またはすべてのアプリケーションの選択を表示するリンクを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="08180-115">You can also use the links that appear to select all or none of the applications.</span></span> <span data-ttu-id="08180-116">をクリックして**保存**選択されたアプリケーションについての情報を表示またはをクリックする**キャンセル**変更を破棄します。</span><span class="sxs-lookup"><span data-stu-id="08180-116">Click **Save** to show the information for the selected applications, or click **Cancel** to abandon your changes.</span></span> <span data-ttu-id="08180-117">アプリケーションの既定のリストを変更することができます、[ポータルの [設定] ページ](../esb-toolkit/portal-my-settings-page.md)です。</span><span class="sxs-lookup"><span data-stu-id="08180-117">You can change the default list of applications on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
   
--   <span data-ttu-id="08180-118">ポータルが情報を表示する期間を変更するには、最初のグラフ上のドロップダウン リストで、設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="08180-118">To change the period for which the portal displays information, change the setting in the drop-down list above the first chart.</span></span> <span data-ttu-id="08180-119">前の情報を表示することを選択できます**時間、日、週、**または**月**です。</span><span class="sxs-lookup"><span data-stu-id="08180-119">You can chose to display information for the previous **Hour, Day, Week,** or **Month**.</span></span> <span data-ttu-id="08180-120">既定の期間を変更することができます、[ポータルの [設定] ページ](../esb-toolkit/portal-my-settings-page.md)です。</span><span class="sxs-lookup"><span data-stu-id="08180-120">You can change the default period on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
+-   <span data-ttu-id="08180-118">ポータルが情報を表示する期間を変更するには、最初のグラフ上のドロップダウン リストで、設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="08180-118">To change the period for which the portal displays information, change the setting in the drop-down list above the first chart.</span></span> <span data-ttu-id="08180-119">前の情報を表示することを選択できます**時間、日、週、** または**月**です。</span><span class="sxs-lookup"><span data-stu-id="08180-119">You can chose to display information for the previous **Hour, Day, Week,** or **Month**.</span></span> <span data-ttu-id="08180-120">既定の期間を変更することができます、[ポータルの [設定] ページ](../esb-toolkit/portal-my-settings-page.md)です。</span><span class="sxs-lookup"><span data-stu-id="08180-120">You can change the default period on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
   
 -   <span data-ttu-id="08180-121">有効にまたは UDDI エントリの自動発行をオフにする、クリックして、**変更**の上部にあるリンク、**レジストリ**ページのセクションです。</span><span class="sxs-lookup"><span data-stu-id="08180-121">To turn on or turn off auto-publishing of UDDI entries, click the **Change** link at the top of the **Registry** section of the page.</span></span> <span data-ttu-id="08180-122">開き、[レジストリ設定 ページ](../esb-toolkit/registry-settings-page.md)で、次を指定します。</span><span class="sxs-lookup"><span data-stu-id="08180-122">This opens the [Registry Settings Page](../esb-toolkit/registry-settings-page.md), where you specify the following:</span></span>  
   

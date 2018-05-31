@@ -1,14 +1,14 @@
 ---
-title: "カスタム Itinerary メッセージング サービスを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム Itinerary メッセージング サービスを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2de44c21-68ca-4cf1-a117-bcb35af1b4a9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973736"
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a><span data-ttu-id="657ca-102">カスタム Itinerary メッセージング サービスを作成します。</span><span class="sxs-lookup"><span data-stu-id="657ca-102">Creating a Custom Itinerary Messaging Service</span></span>
 <span data-ttu-id="657ca-103">Itinerary フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を実装するクラスを使用して、itinerary 手順の実行をサポートしている、 **IMessagingService** itinerary メッセージング サービスを実行するインターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="657ca-103">The itinerary framework that is part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] supports execution of itinerary steps using classes implementing the **IMessagingService** interface that execute itinerary messaging services.</span></span> <span data-ttu-id="657ca-104">サービスで、次を担当するときに、カスタムのメッセージング サービスを実装できます。</span><span class="sxs-lookup"><span data-stu-id="657ca-104">You can implement a custom messaging service when you want the service to be responsible for the following:</span></span>  
@@ -76,7 +77,7 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
  <span data-ttu-id="657ca-119">**メッセージングのカスタム itinerary サービスを実装するには**</span><span class="sxs-lookup"><span data-stu-id="657ca-119">**To implement a custom itinerary service for messaging**</span></span>  
   
-1.  <span data-ttu-id="657ca-120">派生するクラスを含むアセンブリを作成**IMessagingService;**で、 **Execute**メソッド (存在する場合)、メッセージまたはメッセージのコンテキストを変更するために必要なすべてのロジックが含まれます。</span><span class="sxs-lookup"><span data-stu-id="657ca-120">Create an assembly with a class that derives from **IMessagingService;** in the **Execute** method, include all logic necessary to make modifications to the message or the message context (if any).</span></span>  
+1.  <span data-ttu-id="657ca-120">派生するクラスを含むアセンブリを作成**IMessagingService;** で、 **Execute**メソッド (存在する場合)、メッセージまたはメッセージのコンテキストを変更するために必要なすべてのロジックが含まれます。</span><span class="sxs-lookup"><span data-stu-id="657ca-120">Create an assembly with a class that derives from **IMessagingService;** in the **Execute** method, include all logic necessary to make modifications to the message or the message context (if any).</span></span>  
   
 2.  <span data-ttu-id="657ca-121">内のエントリを追加、 **itineraryServices** Esb.config ファイルを追加して、サービスのセクションで、  **\<itineraryService\>** と GUID を持つ要素、 **id**属性をサービスとしての名前、**名前**属性とクラスの完全修飾名、**型**属性、**メッセージング**として、**スコープ**属性、および、許可されているステージ (たとえば、 **OnRampReceive**、 **OnRampSend**、 **OffRampSend**、 **OffRampReceive**、 **AllSend**、 **AllReceive**、または**すべて**) として、**ステージ**属性。</span><span class="sxs-lookup"><span data-stu-id="657ca-121">Add an entry in the **itineraryServices** section of the Esb.config file for your service by adding an **\<itineraryService\>** element with a GUID as the **id** attribute, the name of the service as the **name** attribute, the fully qualified name of the class as the **type** attribute, **Messaging** as the **scope** attribute, and the allowed stage (for example, **OnRampReceive**, **OnRampSend**, **OffRampSend**, **OffRampReceive**, **AllSend**, **AllReceive**, or **All**) as the **stage** attribute.</span></span>  
   

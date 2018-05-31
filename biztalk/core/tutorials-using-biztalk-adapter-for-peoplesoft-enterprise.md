@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk アダプターを使用して PeopleSoft Enterprise の |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk アダプターを使用して PeopleSoft Enterprise の |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aff6611c-9f5f-432e-9f46-9471837dd015
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286554"
 ---
 # <a name="tutorials-using-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="42aff-102">チュートリアル: BizTalk アダプターを使用して for PeopleSoft Enterprise</span><span class="sxs-lookup"><span data-stu-id="42aff-102">Tutorials: Using BizTalk Adapter for PeopleSoft Enterprise</span></span>
 <span data-ttu-id="42aff-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise は、基幹業務プロセスの管理と自動化のための開発および実行環境です。</span><span class="sxs-lookup"><span data-stu-id="42aff-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise is a development and run-time environment for line-of-business process management and automation.</span></span> <span data-ttu-id="42aff-104">ここでは、すぐ作業を始められるように、アダプターをセットアップして展開する方法を詳細に示す 2 つの SDK サンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="42aff-104">This section describes two SDK samples that present an end-to-end exercise in setting up and deploying the adapter so that you can get a quick start.</span></span>  

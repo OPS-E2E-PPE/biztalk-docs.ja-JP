@@ -1,18 +1,18 @@
 ---
-title: "付録 c: コンポーネント インターフェイスの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: '付録 c: コンポーネント インターフェイスの使用 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Enterprise Integration Points
 - EIP
 - component interfaces
 ms.assetid: 2e3bc5ef-24ea-4e09-8e95-31feefaf5536
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230266"
 ---
 # <a name="appendix-c-using-component-interfaces"></a><span data-ttu-id="e29be-102">付録 c: コンポーネント インターフェイスの使用</span><span class="sxs-lookup"><span data-stu-id="e29be-102">Appendix C: Using Component Interfaces</span></span>
 <span data-ttu-id="e29be-103">このセクションのトピックでは、新しいコンポーネント インターフェイスを作成する方法を説明 — および既存のコンポーネント インターフェイスを変更する方法: Microsoft BizTalk adapter for PeopleSoft Enterprise の使用をします。</span><span class="sxs-lookup"><span data-stu-id="e29be-103">The topics in this section describe how to create new component interfaces—and how to modify existing component interfaces—for use with Microsoft BizTalk Adapter for PeopleSoft Enterprise.</span></span> <span data-ttu-id="e29be-104">また、それらのコンポーネント インターフェイスにセキュリティを適用する方法、およびそれらのコンポーネント インターフェイスをテストする方法も説明します。</span><span class="sxs-lookup"><span data-stu-id="e29be-104">They also describe how to apply security to those component interfaces and how to test them.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: では、TIBCO Rendezvous アダプターを使用して、受信 |Microsoft ドキュメント"
-description: "BizTalk Server で TIBCO Rendezvous の BizTalk アダプタを使用して TIBCO システムからデータを受信するステップ バイ ステップ ガイド"
-ms.custom: 
+title: 'チュートリアル: では、TIBCO Rendezvous アダプターを使用して、受信 |Microsoft ドキュメント'
+description: BizTalk Server で TIBCO Rendezvous の BizTalk アダプタを使用して TIBCO システムからデータを受信するステップ バイ ステップ ガイド
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58e7a739-701d-4085-a840-54f81c55e943
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015441"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data"></a><span data-ttu-id="e2d3d-103">チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用したデータの受信</span><span class="sxs-lookup"><span data-stu-id="e2d3d-103">Tutorial: Using the BizTalk Adapter for TIBCO Rendezvous to Receive Data</span></span>
 <span data-ttu-id="e2d3d-104">BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデータを受信できます。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-104">You can use the BizTalk Adapter for TIBCO Rendezvous to receive data from a TIBCO system.</span></span> <span data-ttu-id="e2d3d-105">このチュートリアルでは、これを示す SDK サンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-105">This walkthrough describes an SDK sample that illustrates this.</span></span>  
@@ -52,13 +53,13 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="e2d3d-129">値を入力して、**名前**フィールド、たとえば**TIBCO Rendezvous**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-129">Enter a value for the **Name** field, for example **TIBCO Rendezvous**.</span></span>  
   
-5.  <span data-ttu-id="e2d3d-130">選択**TIBCO(r) Rendezvous(r)**で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-130">Select **TIBCO(r) Rendezvous(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
+5.  <span data-ttu-id="e2d3d-130">選択**TIBCO(r) Rendezvous(r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-130">Select **TIBCO(r) Rendezvous(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
   
 ## <a name="step-2-create-a-receive-port"></a><span data-ttu-id="e2d3d-131">手順 2: 作成、受信ポート</span><span class="sxs-lookup"><span data-stu-id="e2d3d-131">Step 2: Create a Receive Port</span></span>  
   
 1.  <span data-ttu-id="e2d3d-132">**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-132">In  **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, expand **BizTalk Application 1**, and click **Receive Ports**.</span></span>  
   
-2.  <span data-ttu-id="e2d3d-133">受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.**を表示する、**受信ポートのプロパティ**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-133">Right-click the Receive Ports folder and then click **New**, **One-Way Receive Port...** to display the **Receive Port Properties** dialog.</span></span>  
+2.  <span data-ttu-id="e2d3d-133">受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.** を表示する、**受信ポートのプロパティ**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-133">Right-click the Receive Ports folder and then click **New**, **One-Way Receive Port...** to display the **Receive Port Properties** dialog.</span></span>  
   
 3.  <span data-ttu-id="e2d3d-134">値を入力、**名前**フィールド、たとえば**TIBCORvOneWayRP**、 をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-134">Enter a value for the **Name** field, for example **TIBCORvOneWayRP**, and click **OK**.</span></span>  
   
@@ -99,9 +100,9 @@ ms.lasthandoff: 11/07/2017
   
      <span data-ttu-id="e2d3d-167">プロパティの詳細については、次を参照してください。[受信作成の成果物](../core/creating-tibco-rendezvous-receive-handlers.md)です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-167">For more information about the properties, see [Create Receive artifacts](../core/creating-tibco-rendezvous-receive-handlers.md).</span></span>  
   
-8.  <span data-ttu-id="e2d3d-168">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-168">Click **OK**.</span></span>  
+8.  <span data-ttu-id="e2d3d-168">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-168">Click **OK**.</span></span>  
   
-9. <span data-ttu-id="e2d3d-169">選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-169">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
+9. <span data-ttu-id="e2d3d-169">選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-169">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
   
 10. <span data-ttu-id="e2d3d-170">受信場所を右クリックし、をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-170">Right-click the receive location and click **Enable**.</span></span>  
   
@@ -151,7 +152,7 @@ ms.lasthandoff: 11/07/2017
     |<span data-ttu-id="e2d3d-196">SendPort</span><span class="sxs-lookup"><span data-stu-id="e2d3d-196">SendPort</span></span>|<span data-ttu-id="e2d3d-197">TIBCORvOneWayFileSP</span><span class="sxs-lookup"><span data-stu-id="e2d3d-197">TIBCORvOneWayFileSP</span></span>|  
     |<span data-ttu-id="e2d3d-198">ReceivePort</span><span class="sxs-lookup"><span data-stu-id="e2d3d-198">ReceivePort</span></span>|<span data-ttu-id="e2d3d-199">TIBCORvOneWayRP</span><span class="sxs-lookup"><span data-stu-id="e2d3d-199">TIBCORvOneWayRP</span></span>|  
   
-6.  <span data-ttu-id="e2d3d-200">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-200">Click **OK**.</span></span>  
+6.  <span data-ttu-id="e2d3d-200">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-200">Click **OK**.</span></span>  
   
 7. <span data-ttu-id="e2d3d-201">オーケストレーションを右クリックし、をクリックして**開始**を参加させて、オーケストレーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="e2d3d-201">Right-click the orchestration, and click **Start** to enlist and start the orchestration.</span></span>  
   

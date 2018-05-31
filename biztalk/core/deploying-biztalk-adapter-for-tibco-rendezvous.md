@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Rendezvous のバインドのインポート |Microsoft ドキュメント"
-description: "TIBCO Rendezvous を BizTalk Server でバインドのインポート機能を使用してアプリケーションの BizTalk アダプターの展開します。"
-ms.custom: 
+title: TIBCO Rendezvous のバインドのインポート |Microsoft ドキュメント
+description: TIBCO Rendezvous を BizTalk Server でバインドのインポート機能を使用してアプリケーションの BizTalk アダプターの展開します。
+ms.custom: ''
 ms.date: 10/24/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec5751a9-0a08-4cf8-a3ef-e51e488a4180
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968488"
 ---
 # <a name="deploy-tibco-rendezvous-ports-and-assemblies"></a><span data-ttu-id="3b0d4-103">TIBCO Rendezvous ポートとアセンブリを展開します。</span><span class="sxs-lookup"><span data-stu-id="3b0d4-103">Deploy TIBCO Rendezvous ports and assemblies</span></span>
   

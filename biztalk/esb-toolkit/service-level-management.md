@@ -1,14 +1,14 @@
 ---
-title: "サービス レベル管理 |Microsoft ドキュメント"
-ms.custom: 
+title: サービス レベル管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add50343-5470-4db3-a029-c827523e2f2c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294730"
 ---
 # <a name="service-level-management"></a><span data-ttu-id="77c64-102">サービス レベル管理</span><span class="sxs-lookup"><span data-stu-id="77c64-102">Service Level Management</span></span>
 <span data-ttu-id="77c64-103">AmberPoint SMS サービス レベル マネージャーは、特定のパフォーマンスやエンタープライズ レベルの SOA ベースのシステム内の可用性に関する問題の可視性を提供します。</span><span class="sxs-lookup"><span data-stu-id="77c64-103">The AmberPoint SMS Service Level Manager provides visibility into specific performance and availability issues within enterprise-level SOA-based systems.</span></span> <span data-ttu-id="77c64-104">インストルメント化し、各 Microsoft BizTalk Server 受信場所と送信ポートのメトリックを追跡します。</span><span class="sxs-lookup"><span data-stu-id="77c64-104">It instruments and tracks the metrics for each Microsoft BizTalk Server receive location and send port.</span></span> <span data-ttu-id="77c64-105">これは、これらのコンポーネントの継続的なパフォーマンス特性に加え、リアルタイムの正常性と状態表示されます。</span><span class="sxs-lookup"><span data-stu-id="77c64-105">This provides real-time health and status indication, in addition to ongoing performance characterization of these components.</span></span> <span data-ttu-id="77c64-106">図 1 は、受信場所に関連付けられているメトリックの表示を示しています。</span><span class="sxs-lookup"><span data-stu-id="77c64-106">Figure 1 shows the display of the metrics associated with a receive location.</span></span>  

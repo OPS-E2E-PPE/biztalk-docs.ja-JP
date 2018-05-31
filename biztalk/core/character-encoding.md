@@ -1,14 +1,14 @@
 ---
-title: "文字エン コード |Microsoft ドキュメント"
-ms.custom: 
+title: 文字エン コード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a0c21c8-3318-4533-9734-89302527cb67
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014681"
 ---
 # <a name="character-encoding"></a><span data-ttu-id="b7153-102">Character Encoding</span><span class="sxs-lookup"><span data-stu-id="b7153-102">Character Encoding</span></span>
 <span data-ttu-id="b7153-103">TIBCO Enterprise Message Service (EMS) は、TIBCO EMS 用の BizTalk アダプタで EMS に送信されるメッセージでのさまざまな文字エンコードをサポートします。</span><span class="sxs-lookup"><span data-stu-id="b7153-103">TIBCO Enterprise Message Service (EMS) supports different character encoding in the messages transmitted to EMS by BizTalk Adapter for TIBCO EMS.</span></span> <span data-ttu-id="b7153-104">メッセージは、既定の UTF-8 エンコードを使用してエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="b7153-104">Messages are encoded using the default UTF-8 encoding.</span></span> <span data-ttu-id="b7153-105">メッセージを受信すると、アダプターはメッセージのエンコードを判断し、該当する文字列を UTF-8 に変換した後で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを渡します。</span><span class="sxs-lookup"><span data-stu-id="b7153-105">When receiving messages, the adapter determines the encoding of the message and converts the appropriate strings to UTF-8 before providing the message to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="b7153-106">すべての文字変換に Microsoft .NET Framework のクラスが使用されます。そのため、アダプタは Microsoft .NET Framework に用意されている文字変換をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b7153-106">All character conversions use the Microsoft .NET Framework classes; therefore the adapter supports the character conversions provided by this same framework.</span></span>  

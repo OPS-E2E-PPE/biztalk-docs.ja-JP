@@ -1,14 +1,14 @@
 ---
-title: "TIBCO Rendezvous のメッセージ コンテキスト プロパティが表示される |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Rendezvous のメッセージ コンテキスト プロパティが表示される |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7f47e2a0-6ac8-404a-bc0a-c7739911af74
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015001"
 ---
 # <a name="biztalk-server-message-context-properties-receive-handlers"></a><span data-ttu-id="8ab73-102">BizTalk Server のメッセージ コンテキスト プロパティが (受信ハンドラー)</span><span class="sxs-lookup"><span data-stu-id="8ab73-102">BizTalk Server Message Context Properties (Receive Handlers)</span></span>
 <span data-ttu-id="8ab73-103">メッセージ ペイロードに加えて、メッセージを構成する補足情報に BizTalk Server オーケストレーションから実行時にアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="8ab73-103">In addition to the message payload, the supplementary information that composes a message must be accessible from a BizTalk Server orchestration at run time.</span></span>  

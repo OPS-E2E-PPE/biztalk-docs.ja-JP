@@ -1,14 +1,14 @@
 ---
-title: "BizTalk ESB Toolkit の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk ESB Toolkit の概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59fee2fc-6689-445a-aaf7-2b0aafa71db5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294530"
 ---
 # <a name="getting-started-with-the-biztalk-esb-toolkit"></a><span data-ttu-id="aa807-102">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="aa807-102">Getting Started with the BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="aa807-103">このトピックは、設計と操作のための概念を説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コンポーネントとサービスの ESB が有効なソリューションを構築するために使用します。</span><span class="sxs-lookup"><span data-stu-id="aa807-103">This topic explains the concepts for the design and operation of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] components and services used to build ESB-enabled solutions.</span></span> <span data-ttu-id="aa807-104">このトピックには、次のトピックのセクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="aa807-104">This topic includes the following topic sections:</span></span>  

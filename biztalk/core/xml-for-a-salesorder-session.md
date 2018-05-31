@@ -1,17 +1,17 @@
 ---
-title: "SalesOrder セッション用の XML |Microsoft ドキュメント"
-ms.custom: 
+title: SalesOrder セッション用の XML |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SalesOrder sessions
 - examples, SalesOrder session
 ms.assetid: dddf2424-b9d6-48a9-b7db-df524fafccd0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289778"
 ---
 # <a name="xml-for-a-salesorder-session"></a><span data-ttu-id="8c01b-102">SalesOrder セッション用の XML</span><span class="sxs-lookup"><span data-stu-id="8c01b-102">XML for a SalesOrder Session</span></span>
 <span data-ttu-id="8c01b-103">以下のセクションでは、SalesOrder セッションで使用する XML のサンプルを示します。</span><span class="sxs-lookup"><span data-stu-id="8c01b-103">The following sections provide samples of XML for a SalesOrder session.</span></span>  

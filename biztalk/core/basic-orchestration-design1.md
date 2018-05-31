@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230698"
 ---
 # <a name="basic-orchestration-design"></a><span data-ttu-id="9229d-102">基本的なオーケストレーション デザイン</span><span class="sxs-lookup"><span data-stu-id="9229d-102">Basic Orchestration Design</span></span>
 <span data-ttu-id="9229d-103">基本的なオーケストレーションを作成するときに、オーケストレーションの受信ポートに XML が表示されます。</span><span class="sxs-lookup"><span data-stu-id="9229d-103">When you create a basic orchestration, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="9229d-104">その XML をバックエンド システムに送信して処理します。</span><span class="sxs-lookup"><span data-stu-id="9229d-104">The XML is sent to the back-end system to be processed.</span></span> <span data-ttu-id="9229d-105">バックエンド システムで例外が発生した場合はオーケストレーションが停止し、エラーが生成されます。</span><span class="sxs-lookup"><span data-stu-id="9229d-105">In the back-end system, an exception could occur that could stop the orchestration and generate a fault.</span></span> <span data-ttu-id="9229d-106">生成される例外は、オーケストレーションが完了しませんでした情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="9229d-106">The exception that is produced, provides information that the orchestration did not complete.</span></span>  

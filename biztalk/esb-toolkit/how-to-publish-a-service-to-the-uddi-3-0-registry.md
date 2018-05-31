@@ -1,14 +1,14 @@
 ---
-title: "方法: 3.0 uddi サービスを発行レジストリ |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: 3.0 uddi サービスを発行レジストリ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c3bd0ed-e5f1-43eb-98d1-e3247a565ba2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009915"
 ---
 # <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a><span data-ttu-id="a50fb-102">方法: 3.0 uddi サービスを発行レジストリ</span><span class="sxs-lookup"><span data-stu-id="a50fb-102">How to: Publish a Service to the UDDI 3.0 Registry</span></span>
 ## <a name="goal"></a><span data-ttu-id="a50fb-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="a50fb-103">Goal</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="a50fb-131">クリックして、**インスタンス情報** タブをクリックして**インスタンス情報の追加**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-131">Click the **Instance Info** tab, and then click **Add Instance Info**.</span></span>  
   
-2.  <span data-ttu-id="a50fb-132">**を含む tModel 名の検索**ボックスに、入力**%esb**  をクリックし、**検索**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-132">In the **Search for tModel names containing** box, type **%esb%** and then click **Search**.</span></span>  
+2.  <span data-ttu-id="a50fb-132">**を含む tModel 名の検索**ボックスに、入力 **%esb**  をクリックし、**検索**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-132">In the **Search for tModel names containing** box, type **%esb%** and then click **Search**.</span></span>  
   
 3.  <span data-ttu-id="a50fb-133">見つけてクリックして、 **tModel**の**transporttype**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-133">Locate and click the **tModel** for **transporttype**.</span></span>  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="a50fb-169">**カテゴリ** タブで、をクリックして**カスタム カテゴリの追加**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-169">On the **Categories** tab, click **Add Custom Category**.</span></span>  
   
-3.  <span data-ttu-id="a50fb-170">**検索**ボックスに、入力**%esb**  をクリックし、**検索**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-170">In the **Search** box, type **%esb%** and then click **Search**.</span></span>  
+3.  <span data-ttu-id="a50fb-170">**検索**ボックスに、入力 **%esb**  をクリックし、**検索**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-170">In the **Search** box, type **%esb%** and then click **Search**.</span></span>  
   
 4.  <span data-ttu-id="a50fb-171">見つけてクリックして、 **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-171">Locate and click the **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel.</span></span>  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="a50fb-186">クリックして、 **Services**タブです。</span><span class="sxs-lookup"><span data-stu-id="a50fb-186">Click the **Services** tab.</span></span>  
   
-3.  <span data-ttu-id="a50fb-187">**サービス名**ボックスに、入力**%po**、クリックして**検索**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-187">In the **Service Name** box, type **%PO%**, and then click **Search**.</span></span>  
+3.  <span data-ttu-id="a50fb-187">**サービス名**ボックスに、入力 **%po**、クリックして**検索**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-187">In the **Service Name** box, type **%PO%**, and then click **Search**.</span></span>  
   
 4.  <span data-ttu-id="a50fb-188">**検索** ウィンドウで、**結果** タブで、をクリックして**NewPOService**です。</span><span class="sxs-lookup"><span data-stu-id="a50fb-188">In the **Search** pane, on the **Results** tab, click **NewPOService**.</span></span>  
   

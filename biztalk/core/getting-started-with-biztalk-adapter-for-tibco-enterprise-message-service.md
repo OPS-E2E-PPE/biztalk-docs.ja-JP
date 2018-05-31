@@ -1,15 +1,15 @@
 ---
-title: "BizTalk adapter for TIBCO Enterprise Message Service 開始 |Microsoft ドキュメント"
-description: "アダプターの機能、文字エン コード、messaginges、インストール手順、および BizTalk Adapter for TIBCO Enterprise Message Service で BizTalk Server 用のチュートリアル"
-ms.custom: 
+title: BizTalk adapter for TIBCO Enterprise Message Service 開始 |Microsoft ドキュメント
+description: アダプターの機能、文字エン コード、messaginges、インストール手順、および BizTalk Adapter for TIBCO Enterprise Message Service で BizTalk Server 用のチュートリアル
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24eca41d-01c9-4d4f-94ff-d6a8d4ea286d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450283"
 ---
 # <a name="get-started-with-biztalk-adapter-for-tibco-enterprise-message-service"></a><span data-ttu-id="3933d-103">BizTalk adapter for TIBCO Enterprise Message Service 作業を開始します。</span><span class="sxs-lookup"><span data-stu-id="3933d-103">Get started with BizTalk Adapter for TIBCO Enterprise Message Service</span></span>
 

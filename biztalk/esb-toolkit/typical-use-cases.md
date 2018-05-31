@@ -1,14 +1,14 @@
 ---
-title: "一般的なユース ケース |Microsoft ドキュメント"
-ms.custom: 
+title: 一般的なユース ケース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da60b5b0-79fc-481c-922a-1f8024de9cf2
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295386"
 ---
 # <a name="typical-use-cases"></a><span data-ttu-id="bcd7a-102">一般的なユース ケース</span><span class="sxs-lookup"><span data-stu-id="bcd7a-102">Typical Use Cases</span></span>
 <span data-ttu-id="bcd7a-103">このセクションでは、最も一般的なユース ケースと特定されたシナリオについて説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="bcd7a-103">This section describes the most common use cases and scenarios identified for the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span> <span data-ttu-id="bcd7a-104">1 つの必要な処理、結果、およびプロセスの流れを次の図についても説明します。</span><span class="sxs-lookup"><span data-stu-id="bcd7a-104">For each one, the topic discusses the processing required, the result, and a diagram of the process flow.</span></span> <span data-ttu-id="bcd7a-105">用意されているケースのサンプル アプリケーションを使用して、シナリオのいくつか時と見なされる、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、し、インストールし、対応するサンプルを実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="bcd7a-105">Some of the scenarios equate to use case sample applications provided with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], and the topic explains how to install and run the corresponding sample.</span></span>  

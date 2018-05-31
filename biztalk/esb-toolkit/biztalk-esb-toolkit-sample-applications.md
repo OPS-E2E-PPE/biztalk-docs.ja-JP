@@ -1,15 +1,15 @@
 ---
-title: "BizTalk ESB Toolkit のサンプル アプリケーション |Microsoft ドキュメント"
-description: "ESB Toolkit のサンプル アプリケーションをインストールし、BizTalk Server で使用する方法についてクイック リンク"
-caps.latest.revision: "5"
+title: BizTalk ESB Toolkit のサンプル アプリケーション |Microsoft ドキュメント
+description: ESB Toolkit のサンプル アプリケーションをインストールし、BizTalk Server で使用する方法についてクイック リンク
+caps.latest.revision: 5
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 188f8e1f-26fb-4ea6-8e2e-f2ae3e46ca20
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290690"
 ---
 # <a name="biztalk-esb-toolkit-sample-applications"></a><span data-ttu-id="3cebb-103">BizTalk ESB Toolkit のサンプル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3cebb-103">BizTalk ESB Toolkit Sample Applications</span></span>
 <span data-ttu-id="3cebb-104">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] ESB 動作、およびその用途、ESB のパイプライン コンポーネントを表示する、いくつかのサンプル アプリケーションをインストールして実行が含まれています。</span><span class="sxs-lookup"><span data-stu-id="3cebb-104">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes several sample applications that you can install and run to see how the ESB works and how it uses some of the ESB pipeline components.</span></span> <span data-ttu-id="3cebb-105">調整して、独自のアプリケーションのサンプルで使用される手法とコードを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="3cebb-105">You can adapt and modify the code and techniques used in the samples for your own applications.</span></span>  

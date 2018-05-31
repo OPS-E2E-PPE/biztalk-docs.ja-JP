@@ -1,11 +1,11 @@
 ---
-title: "メッセージのアクティビティの状態を確認する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのアクティビティの状態を確認する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities, verifying status
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - verifying message status in PeopleSoft
 - messages, verifying status
 ms.assetid: b8cee6f9-0f65-4228-a87a-3f3aca6182bf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256546"
 ---
 # <a name="how-to-verify-activity-status-of-a-message"></a><span data-ttu-id="b9d69-102">メッセージのアクティビティの状態を確認する方法</span><span class="sxs-lookup"><span data-stu-id="b9d69-102">How to Verify Activity Status of a Message</span></span>
 <span data-ttu-id="b9d69-103">PeopleSoft HTTP ホストおよび PeopleSoft がイベントを送信ポートを作成するのにには、PeopleSoft Integration Broker を使用します。</span><span class="sxs-lookup"><span data-stu-id="b9d69-103">You use the PeopleSoft Integration Broker to create a PeopleSoft HTTP Host and Port where PeopleSoft sends events.</span></span> <span data-ttu-id="b9d69-104">メッセージがアクティブになっており、ルーティングされていることを確認するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="b9d69-104">You make sure that the message is active and routed by following these steps.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="b9d69-106">をクリックして**開始**、 をポイント**プログラム**、 をポイント**PeopleSoft Application Name**、し、**アプリケーション デザイナー**です。</span><span class="sxs-lookup"><span data-stu-id="b9d69-106">Click **Start**, point to **Programs**, point to **PeopleSoft Application Name**, and then select **Application Designer**.</span></span>  
   
-2.  <span data-ttu-id="b9d69-107">**PeopleSoft sign-on**画面で、入力、**ユーザー ID**と**パスワード**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="b9d69-107">On the **PeopleSoft Sign-on** screen, enter the **User ID** and **Password**, and then click **OK**.</span></span>  
+2.  <span data-ttu-id="b9d69-107">**PeopleSoft sign-on**画面で、入力、**ユーザー ID**と**パスワード**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="b9d69-107">On the **PeopleSoft Sign-on** screen, enter the **User ID** and **Password**, and then click **OK**.</span></span>  
   
      ![](../core/media/psadapter-24-task-userpass.gif "PSAdapter_24_Task_UserPass")  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/psadapter-28-task-locationproperties.gif "PSAdapter_28_Task_LocationProperties")  
   
-6.  <span data-ttu-id="b9d69-111">アプリケーション デザイナーを右クリックして**[location_tbl]**を選択して**メッセージ プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="b9d69-111">In the Application Designer, right-click **LOCATION_TBL**, and select **Message Properties**.</span></span>  
+6.  <span data-ttu-id="b9d69-111">アプリケーション デザイナーを右クリックして **[location_tbl]** を選択して**メッセージ プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="b9d69-111">In the Application Designer, right-click **LOCATION_TBL**, and select **Message Properties**.</span></span>  
   
      ![](../core/media/psadapter-29-task-loctionmenu.gif "PSAdapter_29_Task_LoctionMenu")  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="b9d69-123">**ig.isc.password::** PS のパスワード</span><span class="sxs-lookup"><span data-stu-id="b9d69-123">**ig.isc.password:** Password for PS</span></span>  
   
-    -   <span data-ttu-id="b9d69-124">**ig.isc.toolsrel::**特定のリリース</span><span class="sxs-lookup"><span data-stu-id="b9d69-124">**ig.isc.toolsrel:** Specific Release</span></span>  
+    -   <span data-ttu-id="b9d69-124">**ig.isc.toolsrel::** 特定のリリース</span><span class="sxs-lookup"><span data-stu-id="b9d69-124">**ig.isc.toolsrel:** Specific Release</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="b9d69-125">参照</span><span class="sxs-lookup"><span data-stu-id="b9d69-125">See Also</span></span>  
  [<span data-ttu-id="b9d69-126">PeopleSoft HTTP ホストおよびポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="b9d69-126">Creating a PeopleSoft HTTP Host and Port</span></span>](../core/creating-a-peoplesoft-http-host-and-port.md)

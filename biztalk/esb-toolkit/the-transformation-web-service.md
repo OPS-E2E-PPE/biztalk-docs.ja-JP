@@ -1,14 +1,14 @@
 ---
-title: "変換の Web サービス |Microsoft ドキュメント"
-ms.custom: 
+title: 変換の Web サービス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 788bf4a9-a63b-4fd3-93a2-6e34a1464049
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294874"
 ---
 # <a name="the-transformation-web-service"></a><span data-ttu-id="e5300-102">変換の Web サービス</span><span class="sxs-lookup"><span data-stu-id="e5300-102">The Transformation Web Service</span></span>
 <span data-ttu-id="e5300-103">変換の Web サービスでは、外部アプリケーションを ESB アプリケーションにドキュメントを送信し、展開された Microsoft BizTalk マップを使用して変換を使用します。</span><span class="sxs-lookup"><span data-stu-id="e5300-103">The Transformation Web service enables external applications to submit a document to an ESB application and have it transformed using a deployed Microsoft BizTalk map.</span></span> <span data-ttu-id="e5300-104">変換エージェントとは異なり、このサービスは、BizTalk メッセージ ボックス データベースを経由してメッセージをルーティングされません。</span><span class="sxs-lookup"><span data-stu-id="e5300-104">Unlike the transformation agent, this service does not route messages through the BizTalk Message Box database.</span></span>  

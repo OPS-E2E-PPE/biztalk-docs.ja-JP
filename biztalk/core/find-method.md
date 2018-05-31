@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245970"
 ---
 # <a name="find-method"></a><span data-ttu-id="ac4ee-102">Find メソッド</span><span class="sxs-lookup"><span data-stu-id="ac4ee-102">Find Method</span></span>
 <span data-ttu-id="ac4ee-103">指定された部分検索キーに合致するキーの一覧を返すために使用します。</span><span class="sxs-lookup"><span data-stu-id="ac4ee-103">Used to return a list of keys that satisfy the supplied partial search keys.</span></span> <span data-ttu-id="ac4ee-104">インスタンスが 1 つだけしかないコンポーネント インターフェイスの場合、つまりキーが存在しない場合、`Find()` 関数は生成されません。</span><span class="sxs-lookup"><span data-stu-id="ac4ee-104">Note that for a component interface that has only one instance, that is, there is no key, the `Find()` function is not generated.</span></span> <span data-ttu-id="ac4ee-105">関連項目[Get メソッド](../core/get-method.md)です。</span><span class="sxs-lookup"><span data-stu-id="ac4ee-105">See also [Get Method](../core/get-method.md).</span></span>  

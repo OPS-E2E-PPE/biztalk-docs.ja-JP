@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Rendezvous アダプターのアーキテクチャ |Microsoft ドキュメント"
-description: "BizTalk Adapter for TIBCO Rendezvous しくみ、BizTalk Server でメッセージを渡すことの詳細します。"
-ms.custom: 
+title: TIBCO Rendezvous アダプターのアーキテクチャ |Microsoft ドキュメント
+description: BizTalk Adapter for TIBCO Rendezvous しくみ、BizTalk Server でメッセージを渡すことの詳細します。
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 174d6ceb-8e1d-4c93-827d-8155cfe47836
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013433"
 ---
 # <a name="architecture-of-the-tibco-rendezvous-adapter"></a><span data-ttu-id="8f2e7-103">TIBCO Rendezvous アダプターのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="8f2e7-103">Architecture of the TIBCO Rendezvous adapter</span></span>
 

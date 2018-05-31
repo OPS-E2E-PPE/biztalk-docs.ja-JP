@@ -1,14 +1,14 @@
 ---
-title: "変換して、複数のエンドポイントにメッセージをルーティング |Microsoft ドキュメント"
-ms.custom: 
+title: 変換して、複数のエンドポイントにメッセージをルーティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 544db12c-95fc-4321-b397-ec9e7410e37d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010243"
 ---
 # <a name="transforming-and-routing-a-message-to-multiple-endpoints"></a><span data-ttu-id="9e336-102">変換して、複数のエンドポイントにメッセージのルーティング</span><span class="sxs-lookup"><span data-stu-id="9e336-102">Transforming and Routing a Message to Multiple Endpoints</span></span>
 <span data-ttu-id="9e336-103">このユース ケースでは、ESB は、行程 Web サービスに着手を通じて送信されたメッセージの変換を実行します。</span><span class="sxs-lookup"><span data-stu-id="9e336-103">In this use case, the ESB performs a transformation on a message submitted through the Itinerary Web service on-ramp.</span></span> <span data-ttu-id="9e336-104">動的解決の参照は、マップ名を決定し、受信メッセージを変換します。</span><span class="sxs-lookup"><span data-stu-id="9e336-104">A dynamic resolution lookup determines the map name and transforms the inbound message.</span></span> <span data-ttu-id="9e336-105">さらに、旅行計画には、行程サービスを動的に解決して、変換後のメッセージをルーティングするターゲット エンドポイントの n の数を指定します。</span><span class="sxs-lookup"><span data-stu-id="9e336-105">Additionally, the itinerary specifies n number of target endpoints that the Itinerary service will dynamically resolve and to which it will route the transformed message.</span></span> <span data-ttu-id="9e336-106">図 1 に示すように、すべての操作は、メッセージング レイヤーで発生します。</span><span class="sxs-lookup"><span data-stu-id="9e336-106">All operations occur at the messaging layer, as illustrated in Figure 1.</span></span>  

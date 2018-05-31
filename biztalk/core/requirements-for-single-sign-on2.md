@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオンの要件 |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオンの要件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ae4b5c1f-1718-4628-9159-2fb877498913
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015981"
 ---
 # <a name="requirements-for-single-sign-on"></a><span data-ttu-id="ace06-102">シングル サインオンの要件</span><span class="sxs-lookup"><span data-stu-id="ace06-102">Requirements for Single Sign-On</span></span>
 <span data-ttu-id="ace06-103">シングル サインオン (SSO) を使用するのには、次の必要があります。</span><span class="sxs-lookup"><span data-stu-id="ace06-103">To use Single Sign-On (SSO), you need:</span></span>  

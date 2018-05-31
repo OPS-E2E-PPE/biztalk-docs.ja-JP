@@ -1,11 +1,11 @@
 ---
-title: "トラブルシューティング、Adapter2 |Microsoft ドキュメント"
-ms.custom: 
+title: トラブルシューティング、Adapter2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - wildcard characters, in send port properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Get.xml
 - send ports, using wildcards in properties
 ms.assetid: e9e0408f-5a12-4f05-83a6-37dc519ae4c5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279194"
 ---
 # <a name="troubleshooting-the-adapter"></a><span data-ttu-id="16b28-102">アダプターのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="16b28-102">Troubleshooting the Adapter</span></span>
 <span data-ttu-id="16b28-103">このトピックでは、Microsoft BizTalk Adapter for PeopleSoft Enterprise の使用中に発生する可能性がある問題の特定と解決に役立つ情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="16b28-103">This topic contains information to help you identify and resolve issues that you might experience while you are using Microsoft BizTalk Adapter for PeopleSoft Enterprise.</span></span>  

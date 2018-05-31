@@ -1,14 +1,14 @@
 ---
-title: "JD Edwards EnterpriseOne アダプターのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: JD Edwards EnterpriseOne アダプターのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5a55e52-039a-4aea-8251-b697fd061ddc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013129"
 ---
 # <a name="troubleshooting-the-adapter"></a><span data-ttu-id="9d64a-102">アダプターのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="9d64a-102">Troubleshooting the Adapter</span></span>
 <span data-ttu-id="9d64a-103">このトピックでは、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne の使用中に発生する可能性がある問題の特定と解決に役立つ情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="9d64a-103">This topic contains information to help you identify and resolve issues that you might experience while using Microsoft BizTalk Adapter for JD Edwards EnterpriseOne.</span></span>  

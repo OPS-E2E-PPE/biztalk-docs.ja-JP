@@ -1,15 +1,15 @@
 ---
-title: "TIBCO EMS の作成の成果物を受け取る |Microsoft ドキュメント"
-description: "受信ポートを作成し、BizTalk Server で、TIBCO Enterprise Message Service アダプタを使用するトランスポートのプロパティを設定"
-ms.custom: 
+title: TIBCO EMS の作成の成果物を受け取る |Microsoft ドキュメント
+description: 受信ポートを作成し、BizTalk Server で、TIBCO Enterprise Message Service アダプタを使用するトランスポートのプロパティを設定
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1307e3c-0237-4f19-a642-58e694fe95d0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015377"
 ---
 # <a name="create-tibco-ems-receive-artifacts"></a><span data-ttu-id="3862f-103">TIBCO EMS の作成の成果物の受信</span><span class="sxs-lookup"><span data-stu-id="3862f-103">Create TIBCO EMS receive artifacts</span></span>
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="3862f-115">**受信場所** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="3862f-115">On the **Receive Locations** page, do the following:</span></span>  
   
-    1.  <span data-ttu-id="3862f-116">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3862f-116">Click **New**.</span></span>  
+    1.  <span data-ttu-id="3862f-116">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3862f-116">Click **New**.</span></span>  
   
     2.  <span data-ttu-id="3862f-117">**受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。</span><span class="sxs-lookup"><span data-stu-id="3862f-117">In the **Receive Locations** window, on the **General** page, type the **Name** of the receive location.</span></span>  
   
@@ -52,13 +53,13 @@ ms.lasthandoff: 11/07/2017
   
     6.  <span data-ttu-id="3862f-121">選択、**有効にするサービス時間帯**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="3862f-121">Select the **Enable service window** checkbox.</span></span>  
   
-    7.  <span data-ttu-id="3862f-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3862f-122">Click **OK**.</span></span>  
+    7.  <span data-ttu-id="3862f-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3862f-122">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="3862f-123">**受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。</span><span class="sxs-lookup"><span data-stu-id="3862f-123">On the **Inbound Maps** page, select the inbound maps for transforming documents on the selected port.</span></span>  
   
 6.  <span data-ttu-id="3862f-124">**追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。</span><span class="sxs-lookup"><span data-stu-id="3862f-124">On the **Tracking** page, select the desired tracking message bodies and tracking message properties.</span></span>  
   
-7.  <span data-ttu-id="3862f-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3862f-125">Click **OK**.</span></span>  
+7.  <span data-ttu-id="3862f-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3862f-125">Click **OK**.</span></span>  
 
 ## <a name="set-the-receive-port-transport-properties"></a><span data-ttu-id="3862f-126">受信ポートのトランスポート プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="3862f-126">Set the receive port transport properties</span></span>
 <span data-ttu-id="3862f-127">TIBCO Enterprise Message System (EMS) の受信場所を**URL**と**Target Namespace** TIBCO EMS システムには、必要な唯一の構成値。</span><span class="sxs-lookup"><span data-stu-id="3862f-127">For a TIBCO Enterprise Message System (EMS) receive location, the **URL** and **Target Namespace** to the TIBCO EMS System are the only configuration values required.</span></span>    

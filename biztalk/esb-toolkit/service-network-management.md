@@ -1,14 +1,14 @@
 ---
-title: "サービスのネットワークの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: サービスのネットワークの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21469dad-6c64-470a-bd58-8309d789ce6c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294770"
 ---
 # <a name="service-network-management"></a><span data-ttu-id="efd04-102">サービスのネットワーク管理</span><span class="sxs-lookup"><span data-stu-id="efd04-102">Service Network Management</span></span>
 <span data-ttu-id="efd04-103">効果的な実行時の管理には、実行時環境にデプロイされているサービスの知識が必要です。</span><span class="sxs-lookup"><span data-stu-id="efd04-103">Effective run-time governance requires knowledge of the services deployed into the run-time environment.</span></span> <span data-ttu-id="efd04-104">AmberPoint SMS には、実際の受信場所と送信では、図 1 に示すようを BizTalk 管理グループ内に配置されたポートを検出できます。</span><span class="sxs-lookup"><span data-stu-id="efd04-104">AmberPoint SMS can discover the actual receive locations and send ports deployed within a BizTalk Management Group, as shown in Figure 1.</span></span>  

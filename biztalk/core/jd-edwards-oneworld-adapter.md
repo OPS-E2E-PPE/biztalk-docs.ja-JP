@@ -1,15 +1,15 @@
 ---
-title: "JD Edwards OneWorld アダプター |Microsoft ドキュメント"
-description: "インストール、チュートリアルの手順、アーキテクチャの説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Adapter for j. d. の使用時に例外処理を追加 BizTalk Server で Edwards OneWorld"
-ms.custom: 
+title: JD Edwards OneWorld アダプター |Microsoft ドキュメント
+description: インストール、チュートリアルの手順、アーキテクチャの説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Adapter for j. d. の使用時に例外処理を追加 BizTalk Server で Edwards OneWorld
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5df8cd89-d9df-41ca-9a2c-b9d7fbcd06f2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015931"
 ---
 # <a name="jd-edwards-oneworld-adapter"></a><span data-ttu-id="101bb-104">JD Edwards OneWorld アダプタ</span><span class="sxs-lookup"><span data-stu-id="101bb-104">JD Edwards OneWorld Adapter</span></span>
 <span data-ttu-id="101bb-105">Microsoft BizTalk Adapter for JD Edwards OneWorld により、JD Edwards OneWorld のビジネス関数を BizTalk Server で利用することが可能になります。</span><span class="sxs-lookup"><span data-stu-id="101bb-105">Microsoft BizTalk Adapter for JD Edwards OneWorld enables you to use JD Edwards OneWorld business functions within BizTalk Server.</span></span> <span data-ttu-id="101bb-106">ここでは、JD Edwards OneWorld 固有の情報にアクセスするように BizTalk Adapter for JD Edwards OneWorld を設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="101bb-106">The following sections discuss setting up BizTalk Adapter for JD Edwards OneWorld to access JD Edwards OneWorld-specific information.</span></span>  

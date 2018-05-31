@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b7bc3ab-16fa-4e91-8730-9431473b2fb4
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973272"
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a><span data-ttu-id="527cb-103">TIBCO Rendezvous をトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="527cb-103">Troubleshoot TIBCO Rendezvous</span></span>
   
@@ -46,15 +47,15 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="527cb-127">BizTalk Adapter for TIBCO Rendezvous には 3 つのプロバイダーがあります。</span><span class="sxs-lookup"><span data-stu-id="527cb-127">BizTalk Adapter for TIBCO Rendezvous has three providers.</span></span> <span data-ttu-id="527cb-128">そのため、異なる種類のメッセージを記録できます。</span><span class="sxs-lookup"><span data-stu-id="527cb-128">This lets you log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="527cb-129">**受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="527cb-129">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="527cb-129">**受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="527cb-129">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
   
 -   <span data-ttu-id="527cb-130">使用 **-受信者** 実行時にアダプターで受信されたログからメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="527cb-130">Use **-receiver** to get any messages from the log that were received by the adapter at runtime.</span></span>  
   
--   <span data-ttu-id="527cb-131">**送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="527cb-131">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="527cb-131">**送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="527cb-131">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
   
      <span data-ttu-id="527cb-132">使用 **-送信機** 実行時にアダプターによって送信されたログからメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="527cb-132">Use **-transmitter** to get any messages from the log that were transmitted by the adapter at run time.</span></span>  
   
--   <span data-ttu-id="527cb-133">**管理ログ プロバイダー —**、\<トレース要素\>スイッチが**-管理**です。</span><span class="sxs-lookup"><span data-stu-id="527cb-133">**Management Logging Provider—**the \<Trace element\> switch is **-management**.</span></span>  
+-   <span data-ttu-id="527cb-133">**管理ログ プロバイダー —**、\<トレース要素\>スイッチが **-管理**です。</span><span class="sxs-lookup"><span data-stu-id="527cb-133">**Management Logging Provider—** the \<Trace element\> switch is **-management**.</span></span>  
   
      <span data-ttu-id="527cb-134">使用 **-管理**サーバー システムの参照中に生成されたログからメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="527cb-134">Use **-management**to get any messages from the log that were generated during browsing of the server system.</span></span>  
   
@@ -67,7 +68,7 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- <span data-ttu-id="527cb-138">場所: **\<トレース要素\>**プロバイダーの種類は、(必須)。</span><span class="sxs-lookup"><span data-stu-id="527cb-138">Where: **\<Trace element\>** (required) is the kind of provider.</span></span>  
+ <span data-ttu-id="527cb-138">場所: **\<トレース要素\>** プロバイダーの種類は、(必須)。</span><span class="sxs-lookup"><span data-stu-id="527cb-138">Where: **\<Trace element\>** (required) is the kind of provider.</span></span>  
   
  <span data-ttu-id="527cb-139">そのオプションは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="527cb-139">Its options are as follows:</span></span>  
   

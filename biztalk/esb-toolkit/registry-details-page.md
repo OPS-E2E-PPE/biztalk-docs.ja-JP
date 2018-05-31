@@ -1,14 +1,14 @@
 ---
-title: "レジストリの詳細 ページ |Microsoft ドキュメント"
-ms.custom: 
+title: レジストリの詳細 ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db723382-f7f1-485a-bf0e-84d6d7a986cc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294546"
 ---
 # <a name="registry-details-page"></a><span data-ttu-id="23587-102">[レジストリ詳細] ページ</span><span class="sxs-lookup"><span data-stu-id="23587-102">Registry Details Page</span></span>
 <span data-ttu-id="23587-103">図 1 は、既存の Universal Description, Discovery, and Integration (UDDI) レジストリ要求を発行、新しい要求を作成または既存の要求の編集をする [レジストリ詳細] ページを示します。</span><span class="sxs-lookup"><span data-stu-id="23587-103">Figure 1 shows the Registry Details page, where you can publish an existing Universal Description, Discovery, and Integration (UDDI) registry request, create a new request, or edit an existing request.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for JD Edwards OneWorld に追加 |Microsoft ドキュメント"
-description: "JD Edwards OneWorld を BizTalk 管理コンソールに追加、送信ポートを作成、トランスポートのプロパティを構成および BizTalk Server で JD Edwards OneWorld アダプターを使用するときに、XMLReceive パイプラインと XMLTransmit パイプラインを使用"
-ms.custom: 
+title: BizTalk Adapter for JD Edwards OneWorld に追加 |Microsoft ドキュメント
+description: JD Edwards OneWorld を BizTalk 管理コンソールに追加、送信ポートを作成、トランスポートのプロパティを構成および BizTalk Server で JD Edwards OneWorld アダプターを使用するときに、XMLReceive パイプラインと XMLTransmit パイプラインを使用
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03126f4e-9156-4c0c-ab5c-0627f0c05263
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014257"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a><span data-ttu-id="31039-103">BizTalk 管理コンソールで JD Edwards EnterpriseOne の成果物を構成します。</span><span class="sxs-lookup"><span data-stu-id="31039-103">Configure JD Edwards EnterpriseOne artifacts in BizTalk Administration</span></span>
 <span data-ttu-id="31039-104">Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラーと送信ハンドラーの両方のフォルダーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="31039-104">Microsoft BizTalk Adapter for JD Edwards OneWorld contains both the Receive Handler and Send Handler folders.</span></span> <span data-ttu-id="31039-105">送信ハンドラー フォルダーには、BizTalkServerApplication が含まれています。</span><span class="sxs-lookup"><span data-stu-id="31039-105">The Send Handler folder contains BizTalkServerApplication.</span></span> <span data-ttu-id="31039-106">BizTalk Adapter for JD Edwards OneWorld は作成可能です。BizTalk Server とインプロセスで実行され、分離されたホスト プロセスでは実行されません。</span><span class="sxs-lookup"><span data-stu-id="31039-106">BizTalk Adapter for JD Edwards OneWorld is creatable; it runs in-process with BizTalk Server and does not run in an isolated host process.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/07/2017
   
 3.  <span data-ttu-id="31039-110">アダプターの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="31039-110">Enter a name for the adapter.</span></span> <span data-ttu-id="31039-111">たとえば、入力`JDEOneWorld`です。</span><span class="sxs-lookup"><span data-stu-id="31039-111">For example, enter`JDEOneWorld`.</span></span>  
   
-4.  <span data-ttu-id="31039-112">選択**[jdeoneworld]**から、**アダプター**一覧**OK**です。</span><span class="sxs-lookup"><span data-stu-id="31039-112">Select **JDEOneWorld** from the **Adapter** list, and select **OK**.</span></span>  
+4.  <span data-ttu-id="31039-112">選択 **[jdeoneworld]** から、**アダプター**一覧**OK**です。</span><span class="sxs-lookup"><span data-stu-id="31039-112">Select **JDEOneWorld** from the **Adapter** list, and select **OK**.</span></span>  
 
   
 ### <a name="check-if-the-adapter-is-working"></a><span data-ttu-id="31039-113">アダプターが動作しているかどうかは確認します。</span><span class="sxs-lookup"><span data-stu-id="31039-113">Check if the adapter is working</span></span> 
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/07/2017
   
 3.  <span data-ttu-id="31039-128">**送信ポートのプロパティ**、select、**名前**フィールド、および送信ポートの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="31039-128">In the **Send Port Properties**, select the **Name** field, and enter a send port name.</span></span> <span data-ttu-id="31039-129">たとえば、入力**SendToJDE**です。</span><span class="sxs-lookup"><span data-stu-id="31039-129">For example, enter **SendToJDE**.</span></span>  
   
-4.  <span data-ttu-id="31039-130">**型**ドロップダウン リストで、 **[jdeoneworld]**です。</span><span class="sxs-lookup"><span data-stu-id="31039-130">In the **Type** drop-down list, select **JDEOneWorld**.</span></span>  
+4.  <span data-ttu-id="31039-130">**型**ドロップダウン リストで、 **[jdeoneworld]** です。</span><span class="sxs-lookup"><span data-stu-id="31039-130">In the **Type** drop-down list, select **JDEOneWorld**.</span></span>  
   
 5.  <span data-ttu-id="31039-131">**URI**ドロップダウン リストで、送信ハンドラーを選択します。</span><span class="sxs-lookup"><span data-stu-id="31039-131">In the **URI** drop-down list, select the send handler.</span></span>  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 11/07/2017
     > [!NOTE]
     >  <span data-ttu-id="31039-171">browsingagent.exe が最新の状態に更新されるのは、ユーザーが現在の参照セッションを終了したときです。</span><span class="sxs-lookup"><span data-stu-id="31039-171">The browsingagent.exe does not refresh until you exit the current browsing session.</span></span> <span data-ttu-id="31039-172">たとえば、終了する必要があります、**項目の生成された追加**参照セッションとを browsingagent.exe を更新します。</span><span class="sxs-lookup"><span data-stu-id="31039-172">For example, you must exit the **Add generated item** browsing session and reenter to update the browsingagent.exe.</span></span>  
   
-7.  <span data-ttu-id="31039-173">必要なすべての情報を提供すると、をクリックして**適用**、クリックして**[ok]**の接続情報を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="31039-173">After providing all required information, click **Apply**, and then click **OK** to accept the connection information.</span></span>  
+7.  <span data-ttu-id="31039-173">必要なすべての情報を提供すると、をクリックして**適用**、クリックして **[ok]** の接続情報を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="31039-173">After providing all required information, click **Apply**, and then click **OK** to accept the connection information.</span></span>  
   
      <span data-ttu-id="31039-174">JD Edwards OneWorld にアクセスするには、BizTalk Adapter for JD Edwards OneWorld の接続パラメーターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31039-174">You must set connection parameters for BizTalk Adapter for JD Edwards OneWorld to access JD Edwards OneWorld.</span></span>  
   

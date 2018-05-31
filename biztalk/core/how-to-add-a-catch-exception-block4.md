@@ -1,17 +1,17 @@
 ---
-title: "Catch 例外 block4 などを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Catch 例外 block4 などを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Catch Exception blocks, adding
 - exception handling, Catch Exception blocks
 ms.assetid: 632fa089-a1af-4126-b32b-68d4d8942387
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246826"
 ---
 # <a name="how-to-add-a-catch-exception-block"></a><span data-ttu-id="d306c-102">例外のキャッチ ブロックを追加する方法</span><span class="sxs-lookup"><span data-stu-id="d306c-102">How to Add a Catch Exception Block</span></span>
 <span data-ttu-id="d306c-103">**例外のキャッチ**ブロックが例外ハンドラーを表します。</span><span class="sxs-lookup"><span data-stu-id="d306c-103">The **Catch Exception** block represents an exception handler.</span></span> <span data-ttu-id="d306c-104">**例外をキャッチ**の末尾に関連付けられているブロック、**スコープ**オーケストレーション デザイナーでの図形です。</span><span class="sxs-lookup"><span data-stu-id="d306c-104">**Catch Exception** blocks are attached to the end of a **Scope** shape in Orchestration Designer.</span></span> <span data-ttu-id="d306c-105">数だけ接続できます**例外のキャッチ**ブロックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d306c-105">You can attach as many **Catch Exception** blocks as you need.</span></span>  

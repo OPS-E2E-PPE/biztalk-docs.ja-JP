@@ -1,14 +1,14 @@
 ---
-title: "BizTalk ESB Toolkit のアーキテクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk ESB Toolkit のアーキテクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a41674f5-5ea4-4a8f-a270-b67fd6854028
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007851"
 ---
 # <a name="architecture-of-the-biztalk-esb-toolkit"></a><span data-ttu-id="7961d-102">BizTalk ESB Toolkit のアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="7961d-102">Architecture of the BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="7961d-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]一連の相互運用をサポートし、メッセージ ベースのエンタープライズ アプリケーションを構築するが容易疎結合のメッセージング環境を実装するコンポーネントで構成されています。</span><span class="sxs-lookup"><span data-stu-id="7961d-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] consists of a series of interoperating components that support and implement a loosely coupled messaging environment that makes it easier to build message-based enterprise applications.</span></span> <span data-ttu-id="7961d-104">サービスとコンポーネントは、次の 7 つのカテゴリに必然的に分類されます。</span><span class="sxs-lookup"><span data-stu-id="7961d-104">The services and components fall naturally into the following seven categories:</span></span>  

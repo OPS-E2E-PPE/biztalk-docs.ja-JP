@@ -1,15 +1,15 @@
 ---
-title: "トラブルシューティングと既知の問題 |Microsoft ドキュメント"
-description: "既知の問題、ゾンビ状態、パフォーマンスのトラブルシューティング、アダプターのトラブルシューティングを行う、アクセス許可のトラブルシューティング、EDI および AS2、および BizTalk Server で複数のトラブルシューティング"
-ms.custom: 
+title: トラブルシューティングと既知の問題 |Microsoft ドキュメント
+description: 既知の問題、ゾンビ状態、パフォーマンスのトラブルシューティング、アダプターのトラブルシューティングを行う、アクセス許可のトラブルシューティング、EDI および AS2、および BizTalk Server で複数のトラブルシューティング
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ecb934c6-3efa-40b6-949b-a04a73e60b07
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286690"
 ---
 # <a name="troubleshooting"></a><span data-ttu-id="d634f-103">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="d634f-103">Troubleshooting</span></span>
 

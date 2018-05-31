@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24013641"
 ---
 # <a name="creating-affiliate-applications"></a><span data-ttu-id="c438a-102">関連アプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="c438a-102">Creating Affiliate Applications</span></span>
 <span data-ttu-id="c438a-103">次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="c438a-103">The following steps describe how to start working with affiliate applications and Single Sign-On (SSO).</span></span> <span data-ttu-id="c438a-104">エンタープライズ シングル サインオンの使用方法の詳細については、Microsoft のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c438a-104">For complete information about how to use Enterprise Single Sign-On, see the Microsoft documentation.</span></span>  

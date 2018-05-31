@@ -1,14 +1,14 @@
 ---
-title: "BizTalk オーケストレーションを使用してカスタム Itinerary サービスを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk オーケストレーションを使用してカスタム Itinerary サービスを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bd7ed38-02a3-41b1-9990-754d5539f15e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289810"
 ---
 # <a name="creating-a-custom-itinerary-service-using-a-biztalk-orchestration"></a><span data-ttu-id="e357c-102">BizTalk オーケストレーションを使用してカスタム Itinerary サービスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e357c-102">Creating a Custom Itinerary Service Using a BizTalk Orchestration</span></span>
 <span data-ttu-id="e357c-103">Itinerary フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]オーケストレーションを使用して、itinerary 手順の実行をサポートします。</span><span class="sxs-lookup"><span data-stu-id="e357c-103">The itinerary framework that is part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] supports execution of itinerary steps using orchestrations.</span></span> <span data-ttu-id="e357c-104">以下のことがありますが、機能の要件に基づいて、Microsoft BizTalk Server オーケストレーションとしてカスタム itinerary サービスを実装することができます。</span><span class="sxs-lookup"><span data-stu-id="e357c-104">You can implement a custom itinerary service as a Microsoft BizTalk Server orchestration based on your functional requirements, which may include the following:</span></span>  

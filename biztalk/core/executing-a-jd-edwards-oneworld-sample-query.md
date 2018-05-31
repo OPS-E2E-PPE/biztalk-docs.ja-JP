@@ -1,14 +1,14 @@
 ---
-title: "JD Edwards OneWorld サンプル クエリを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: JD Edwards OneWorld サンプル クエリを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b060d383-a2df-472f-90cc-e79078b0bcfd
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975772"
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a><span data-ttu-id="cb5da-102">JD Edwards OneWorld サンプル クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-102">Execute a JD Edwards OneWorld Sample Query</span></span>
 <span data-ttu-id="cb5da-103">JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムからアクセスするには、JD Edwards OneWorld アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-103">The JD Edwards OneWorld (JDEOW) system is accessible from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the JD Edwards OneWorld adapter.</span></span> <span data-ttu-id="cb5da-104">このアダプターは、付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-104">This adapter is included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
     5.  <span data-ttu-id="cb5da-158">**受信パイプライン。**  `XMLReceive`</span><span class="sxs-lookup"><span data-stu-id="cb5da-158">**Receive pipeline:**  `XMLReceive`</span></span>  
   
-4.  <span data-ttu-id="cb5da-159">**[構成]**をクリックし、次のプロパティ値を入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-159">Click **Configure**, and then enter the following property values:</span></span>  
+4.  <span data-ttu-id="cb5da-159">**[構成]** をクリックし、次のプロパティ値を入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-159">Click **Configure**, and then enter the following property values:</span></span>  
   
     1.  <span data-ttu-id="cb5da-160">**ホスト:** \<JDEOW ホスト名を入力してください\></span><span class="sxs-lookup"><span data-stu-id="cb5da-160">**Host:** \<enter your JDEOW host name\></span></span>  
   
@@ -105,7 +106,7 @@ ms.lasthandoff: 11/28/2017
   
          `C:\JDEOWJars\BTSLIBInterop.jar; C:\JDEOWJars\Connector.jar; C:\JDEOWJars\Kernel.jar;C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\J.D. Edwards OneWorld®\Classes\JDEJAccess.jar`  
   
-    5.  <span data-ttu-id="cb5da-164">**パスワード:**ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-164">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
+    5.  <span data-ttu-id="cb5da-164">**パスワード:** ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-164">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
   
     6.  <span data-ttu-id="cb5da-165">**ポート:**  `6009`</span><span class="sxs-lookup"><span data-stu-id="cb5da-165">**Port:**  `6009`</span></span>  
   
@@ -119,9 +120,9 @@ ms.lasthandoff: 11/28/2017
 <span data-ttu-id="cb5da-170">次に、BizTalk プロジェクトを作成[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、間の通信を処理するプロジェクトで、オーケストレーションを構成して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と JD Edwards OneWorld システムです。</span><span class="sxs-lookup"><span data-stu-id="cb5da-170">Next, create a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], and configure an orchestration in the project to handle communication between [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the JD Edwards OneWorld system.</span></span> <span data-ttu-id="cb5da-171">送信と受信のポートを追加し、プロジェクトをビルドしてから、プロジェクトを展開します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-171">You will add send and receive ports, build the project, and then deploy the project.</span></span>  
 
   
-1.  <span data-ttu-id="cb5da-172">開いている[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、C:\LABS フォルダーに新しい BizTalk プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-172">Open [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], and create a new BizTalk project in the C:\LABS folder.</span></span> <span data-ttu-id="cb5da-173">**[ファイル]** メニューの **[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-173">On the **File** menu, click **New**.</span></span> <span data-ttu-id="cb5da-174">**[新しいプロジェクト]** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-174">The **New Project** dialog box appears.</span></span> <span data-ttu-id="cb5da-175">**[テンプレート]** セクションで **[空の BizTalk Server プロジェクト]**</span><span class="sxs-lookup"><span data-stu-id="cb5da-175">In the **Templates** section, select **Empty BizTalk Server project.**</span></span> <span data-ttu-id="cb5da-176">入力`JDE_OW_Test`クリックして一意のプロジェクト名として**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-176">Enter `JDE_OW_Test` as the unique project name, and then click **OK**.</span></span>  
+1.  <span data-ttu-id="cb5da-172">開いている[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、C:\LABS フォルダーに新しい BizTalk プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-172">Open [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], and create a new BizTalk project in the C:\LABS folder.</span></span> <span data-ttu-id="cb5da-173">**[ファイル]** メニューの **[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-173">On the **File** menu, click **New**.</span></span> <span data-ttu-id="cb5da-174">**[新しいプロジェクト]** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-174">The **New Project** dialog box appears.</span></span> <span data-ttu-id="cb5da-175">**[テンプレート]** セクションで **[空の BizTalk Server プロジェクト]**</span><span class="sxs-lookup"><span data-stu-id="cb5da-175">In the **Templates** section, select **Empty BizTalk Server project.**</span></span> <span data-ttu-id="cb5da-176">入力`JDE_OW_Test`クリックして一意のプロジェクト名として**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-176">Enter `JDE_OW_Test` as the unique project name, and then click **OK**.</span></span>  
   
-2.  <span data-ttu-id="cb5da-177">ソリューション エクスプローラーでプロジェクト名を右クリックし、 **[追加]**をクリックし、 **[生成した項目の追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-177">In Solution Explorer, right-click the project, click **Add**, and then click **Add Generated Items**.</span></span> <span data-ttu-id="cb5da-178">[カテゴリ] ウィンドウで、次のように選択します。**アダプター メタデータの追加**、[テンプレート] ペインで選択**アダプター メタデータの追加**、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-178">In the Categories pane, select **Add Adapter Metadata**, in the Templates pane, select **Add Adapter Metadata**, and then click **Add**.</span></span>  
+2.  <span data-ttu-id="cb5da-177">ソリューション エクスプローラーでプロジェクト名を右クリックし、 **[追加]** をクリックし、 **[生成した項目の追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-177">In Solution Explorer, right-click the project, click **Add**, and then click **Add Generated Items**.</span></span> <span data-ttu-id="cb5da-178">[カテゴリ] ウィンドウで、次のように選択します。**アダプター メタデータの追加**、[テンプレート] ペインで選択**アダプター メタデータの追加**、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-178">In the Categories pane, select **Add Adapter Metadata**, in the Templates pane, select **Add Adapter Metadata**, and then click **Add**.</span></span>  
   
 3.  <span data-ttu-id="cb5da-179">アダプターの追加ウィザードで選択、 **JD Edwards OneWorld**アダプター、select、 **[jde_oneworldport]** 、前の手順で作成したポートを送信し、をクリックして**次**.</span><span class="sxs-lookup"><span data-stu-id="cb5da-179">In the Add Adapter Wizard, select the **JD Edwards OneWorld** adapter, select the **JDE_OneWorldPort** send port that you created in the preceding procedure, and then click **Next**.</span></span>  
   
@@ -145,11 +146,11 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="cb5da-198">**BizTalk Orchestration.odx** ファイルをダブルクリックし、オーケストレーションを開きます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-198">Double-click the **BizTalk Orchestration.odx** file to open the orchestration.</span></span>  
   
-2.  <span data-ttu-id="cb5da-199">BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-199">In the BizTalk Orchestration.odx file, right-click the left port surface and then click **New Configured Port**.</span></span> <span data-ttu-id="cb5da-200">ポート構成ウィザードが起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-200">This starts the Port Configuration Wizard.</span></span> <span data-ttu-id="cb5da-201">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-201">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
+2.  <span data-ttu-id="cb5da-199">BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-199">In the BizTalk Orchestration.odx file, right-click the left port surface and then click **New Configured Port**.</span></span> <span data-ttu-id="cb5da-200">ポート構成ウィザードが起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-200">This starts the Port Configuration Wizard.</span></span> <span data-ttu-id="cb5da-201">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-201">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
   
 3.  <span data-ttu-id="cb5da-202">**ポートのプロパティ** ページで、入力`JDE_File_In`の**名前**、クリックして**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-202">On the **Port Properties** page, enter `JDE_File_In` for **Name**, and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="cb5da-203">**[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]**を選択し、次のプロパティ値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-203">On the **Select a Port Type** page, select **Create a new Port Type**, and then enter or select the following property values:</span></span>  
+4.  <span data-ttu-id="cb5da-203">**[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]** を選択し、次のプロパティ値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-203">On the **Select a Port Type** page, select **Create a new Port Type**, and then enter or select the following property values:</span></span>  
   
      <span data-ttu-id="cb5da-204">**ポートの種類名**:`JDE_FileIn_Port`</span><span class="sxs-lookup"><span data-stu-id="cb5da-204">**Port Type Name**: `JDE_FileIn_Port`</span></span>  
   
@@ -163,15 +164,15 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="cb5da-209">**[ポートのバインド]**: **[後で指定する]**</span><span class="sxs-lookup"><span data-stu-id="cb5da-209">**Port binding**: **Specify later**</span></span>  
   
-6.  <span data-ttu-id="cb5da-210">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-210">Click **Next**, and then click **Finish**.</span></span>  
+6.  <span data-ttu-id="cb5da-210">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-210">Click **Next**, and then click **Finish**.</span></span>  
   
  <span data-ttu-id="cb5da-211">次に、送信/受信ポートを作成します。これは、クエリが格納された最初の XML 入力ファイルを JD Edwards OneWorld システムに送信するためのものです。</span><span class="sxs-lookup"><span data-stu-id="cb5da-211">Next, create a send/receive port to send the initial XML input file containing the query to the JD Edwards OneWorld system.</span></span> <span data-ttu-id="cb5da-212">このポートは、クエリの結果が格納された出力 XML ファイルを JD Edwards OneWorld システムから受信するのにも使用されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-212">This port will also receive an output XML file containing the query results from the call to the JD Edwards OneWorld system.</span></span>  
   
 #### <a name="configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a><span data-ttu-id="cb5da-213">JD Edwards OneWorld とインターフェイスへの送信/受信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-213">Configure a send/receive port to interface with JD Edwards OneWorld</span></span>  
   
-1.  <span data-ttu-id="cb5da-214">BizTalk Orchestration.odx ファイルで右ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-214">In the BizTalk Orchestration.odx file, right-click the right port surface and then click **New Configured Port**.</span></span> <span data-ttu-id="cb5da-215">ポート構成ウィザードが起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-215">This starts the Port Configuration Wizard.</span></span> <span data-ttu-id="cb5da-216">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-216">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
+1.  <span data-ttu-id="cb5da-214">BizTalk Orchestration.odx ファイルで右ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-214">In the BizTalk Orchestration.odx file, right-click the right port surface and then click **New Configured Port**.</span></span> <span data-ttu-id="cb5da-215">ポート構成ウィザードが起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-215">This starts the Port Configuration Wizard.</span></span> <span data-ttu-id="cb5da-216">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-216">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
   
-2.  <span data-ttu-id="cb5da-217">**[ポートの種類の選択]** ページで、 **[既存のポートの種類を使用する]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-217">On the **Select a Port Type** page, select **Use an existing Port Type**.</span></span> <span data-ttu-id="cb5da-218">**使用可能なポートの種類** **JD_OW_Test.N0100041**、順にクリック**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-218">Under **Available Port Types**, select **JD_OW_Test.N0100041**,and then click **Next**.</span></span>  
+2.  <span data-ttu-id="cb5da-217">**[ポートの種類の選択]** ページで、 **[既存のポートの種類を使用する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-217">On the **Select a Port Type** page, select **Use an existing Port Type**.</span></span> <span data-ttu-id="cb5da-218">**使用可能なポートの種類** **JD_OW_Test.N0100041**、順にクリック**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-218">Under **Available Port Types**, select **JD_OW_Test.N0100041**,and then click **Next**.</span></span>  
   
      <span data-ttu-id="cb5da-219">![](../core/media/a421358c-6e90-4fe0-b243-6beb1b51955a.gif "a421358c-6e90-4fe0-b243-6beb1b51955a")</span><span class="sxs-lookup"><span data-stu-id="cb5da-219">![](../core/media/a421358c-6e90-4fe0-b243-6beb1b51955a.gif "a421358c-6e90-4fe0-b243-6beb1b51955a")</span></span>  
   
@@ -181,17 +182,17 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="cb5da-222">**[ポートのバインド]**: **[後で指定する]**</span><span class="sxs-lookup"><span data-stu-id="cb5da-222">**Port binding**: **Specify later**</span></span>  
   
-4.  <span data-ttu-id="cb5da-223">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-223">Click **Next**, and then click **Finish**.</span></span> <span data-ttu-id="cb5da-224">ポート画面に、ポートと使用可能なメソッドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-224">On the port surface you will see the port and the available methods.</span></span>  
+4.  <span data-ttu-id="cb5da-223">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-223">Click **Next**, and then click **Finish**.</span></span> <span data-ttu-id="cb5da-224">ポート画面に、ポートと使用可能なメソッドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-224">On the port surface you will see the port and the available methods.</span></span>  
   
  <span data-ttu-id="cb5da-225">最後に、送信ポートを構成します。これは、クエリの結果を格納した XML ファイルをファイル アダプターがディスクに出力するときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-225">Finally, configure a send port to be used by the File adapter to output the XML containing the query results to disk.</span></span>  
   
 #### <a name="configure-a-send-port-to-output-the-xml-file-to-disk"></a><span data-ttu-id="cb5da-226">XML ファイルをディスクに出力する送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-226">Configure a send port to output the XML file to disk</span></span>  
   
-1.  <span data-ttu-id="cb5da-227">BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-227">In the BizTalk Orchestration.odx file, right-click the left port surface and then click **New Configured Port**.</span></span> <span data-ttu-id="cb5da-228">ポート構成ウィザードが起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-228">This starts the Port Configuration Wizard.</span></span> <span data-ttu-id="cb5da-229">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-229">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
+1.  <span data-ttu-id="cb5da-227">BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-227">In the BizTalk Orchestration.odx file, right-click the left port surface and then click **New Configured Port**.</span></span> <span data-ttu-id="cb5da-228">ポート構成ウィザードが起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-228">This starts the Port Configuration Wizard.</span></span> <span data-ttu-id="cb5da-229">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-229">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
   
 2.  <span data-ttu-id="cb5da-230">**ポートのプロパティ** ページで、入力`JDE_FileOut`の**名前**、クリックして**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-230">On the **Port Properties** page, enter `JDE_FileOut` for **Name**, and then click **Next**.</span></span>  
   
-3.  <span data-ttu-id="cb5da-231">**[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]**を選択し、次のプロパティ値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-231">On the **Select a Port Type** page, select **Create a new Port Type**, and then enter or select the following property values:</span></span>  
+3.  <span data-ttu-id="cb5da-231">**[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]** を選択し、次のプロパティ値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-231">On the **Select a Port Type** page, select **Create a new Port Type**, and then enter or select the following property values:</span></span>  
   
      <span data-ttu-id="cb5da-232">**ポートの種類名**:`JDE_FileOut_Port`</span><span class="sxs-lookup"><span data-stu-id="cb5da-232">**Port Type Name**: `JDE_FileOut_Port`</span></span>  
   
@@ -205,7 +206,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="cb5da-237">**[ポートのバインド]**: **[後で指定する]**</span><span class="sxs-lookup"><span data-stu-id="cb5da-237">**Port binding**: **Specify later**</span></span>  
   
-5.  <span data-ttu-id="cb5da-238">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-238">Click **Next**, and then click **Finish**.</span></span>  
+5.  <span data-ttu-id="cb5da-238">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-238">Click **Next**, and then click **Finish**.</span></span>  
   
  <span data-ttu-id="cb5da-239">ポート画面に、JD Edwards OneWorld のサービスのための新しいポートと使用できるメソッドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-239">Displayed on the port surface are the new ports and the available methods for the JD Edwards OneWorld services.</span></span> <span data-ttu-id="cb5da-240">JD Edwards OneWorld システムとの間でファイルを送受信するように JD Edwards OneWorld アダプターを設定する作業は、後で行います。</span><span class="sxs-lookup"><span data-stu-id="cb5da-240">Later you will specify the JD Edwards OneWorld adapter to send and receive files from the JD Edwards OneWorld system.</span></span>  
   
@@ -256,13 +257,13 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="cb5da-273">**sn-k labs.snk**</span><span class="sxs-lookup"><span data-stu-id="cb5da-273">**sn -k labs.snk**</span></span>  
   
-3.  <span data-ttu-id="cb5da-274">ソリューション エクスプ ローラーで右クリックし、 **[jd_ow_test]**プロジェクトをクリックして**プロパティ**プロジェクトのプロジェクト デザイナーを起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-274">In Solution Explorer, right-click the **JD_OW_Test** project, and then click **Properties** to launch the Project Designer for the project.</span></span>  
+3.  <span data-ttu-id="cb5da-274">ソリューション エクスプ ローラーで右クリックし、 **[jd_ow_test]** プロジェクトをクリックして**プロパティ**プロジェクトのプロジェクト デザイナーを起動します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-274">In Solution Explorer, right-click the **JD_OW_Test** project, and then click **Properties** to launch the Project Designer for the project.</span></span>  
   
 4.  <span data-ttu-id="cb5da-275">**[署名]** タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-275">Click the **Signing** tab.</span></span>  
   
-5.  <span data-ttu-id="cb5da-276">**[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-276">Select **Sign the assembly** option, click drop-down list for the **Choose a strong name key file** option, and then click **Browse**.</span></span>  
+5.  <span data-ttu-id="cb5da-276">**[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-276">Select **Sign the assembly** option, click drop-down list for the **Choose a strong name key file** option, and then click **Browse**.</span></span>  
   
-6.  <span data-ttu-id="cb5da-277">キー ファイル **labs.snk**を一覧から選択して **[開く]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-277">Browse to select the key file: **labs.snk**, and then click **Open**.</span></span>  
+6.  <span data-ttu-id="cb5da-277">キー ファイル **labs.snk**を一覧から選択して **[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-277">Browse to select the key file: **labs.snk**, and then click **Open**.</span></span>  
   
 7.  <span data-ttu-id="cb5da-278">プロジェクト デザイナーの **[展開]** タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-278">Click **Deployment** tab in the Project Designer.</span></span>  
   
@@ -272,7 +273,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="cb5da-281">![](../core/media/jdeow-buildcompleteoutput.gif "JDEOW_BuildCompleteOutput")</span><span class="sxs-lookup"><span data-stu-id="cb5da-281">![](../core/media/jdeow-buildcompleteoutput.gif "JDEOW_BuildCompleteOutput")</span></span>  
   
-10. <span data-ttu-id="cb5da-282">ビルドが完了したらを右クリックし、 **[XX_JD Edwards oneworldquery]**プロジェクトをクリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-282">After the build completes successfully, right-click the **XX_JD Edwards OneWorldQuery** project, and then click **Deploy**.</span></span> <span data-ttu-id="cb5da-283">出力ウィンドウに、次のように出力が表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-283">In the output window the following output will be displayed:</span></span>  
+10. <span data-ttu-id="cb5da-282">ビルドが完了したらを右クリックし、 **[XX_JD Edwards oneworldquery]** プロジェクトをクリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-282">After the build completes successfully, right-click the **XX_JD Edwards OneWorldQuery** project, and then click **Deploy**.</span></span> <span data-ttu-id="cb5da-283">出力ウィンドウに、次のように出力が表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-283">In the output window the following output will be displayed:</span></span>  
   
      <span data-ttu-id="cb5da-284">![](../core/media/jdeow-deployoutput.gif "JDEOW_DeployOutput")</span><span class="sxs-lookup"><span data-stu-id="cb5da-284">![](../core/media/jdeow-deployoutput.gif "JDEOW_DeployOutput")</span></span>  
   
@@ -287,7 +288,7 @@ ms.lasthandoff: 11/28/2017
   
      `C:\LABS\JDE_OW_TEST\SAMPLE.XML`  
   
-3.  <span data-ttu-id="cb5da-293">クリックして **OK.**</span><span class="sxs-lookup"><span data-stu-id="cb5da-293">Click **OK.**</span></span> <span data-ttu-id="cb5da-294">[プロパティ] ウィンドウで選択**\<スキーマ\>**設定と**ルート参照:**に`AddressBookMasterMBF`です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-294">In the Properties window, select **\<Schema\>** and set **Root Reference:** to `AddressBookMasterMBF`.</span></span> <span data-ttu-id="cb5da-295">これにより、生成された XML のみを含む、**クエリ**xml です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-295">This will cause the generated XML to include only the **Query** xml.</span></span>  
+3.  <span data-ttu-id="cb5da-293">クリックして **OK.**</span><span class="sxs-lookup"><span data-stu-id="cb5da-293">Click **OK.**</span></span> <span data-ttu-id="cb5da-294">[プロパティ] ウィンドウで選択**\<スキーマ\>** 設定と**ルート参照:** に`AddressBookMasterMBF`です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-294">In the Properties window, select **\<Schema\>** and set **Root Reference:** to `AddressBookMasterMBF`.</span></span> <span data-ttu-id="cb5da-295">これにより、生成された XML のみを含む、**クエリ**xml です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-295">This will cause the generated XML to include only the **Query** xml.</span></span>  
   
      <span data-ttu-id="cb5da-296">![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")</span><span class="sxs-lookup"><span data-stu-id="cb5da-296">![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")</span></span>  
   
@@ -305,9 +306,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="cb5da-306">**[Orchestration_1]** を選択し、 **[ホスト]** ドロップダウン ボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-306">Select **Orchestration_1** and click the **Host** drop-down box.</span></span> <span data-ttu-id="cb5da-307">**[BizTalkServerApplication]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-307">Select **BizTalkServerApplication**.</span></span>  
   
-5.  <span data-ttu-id="cb5da-308">**受信ポート**をクリックして **\<None\>**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-308">Under **Receive Ports**, click **\<None\>**.</span></span> <span data-ttu-id="cb5da-309">ドロップダウン リストの **[新しい受信ポート]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-309">In the drop-down list, select **New Receive Port**.</span></span>  
+5.  <span data-ttu-id="cb5da-308">**受信ポート**をクリックして **\<None\>** です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-308">Under **Receive Ports**, click **\<None\>**.</span></span> <span data-ttu-id="cb5da-309">ドロップダウン リストの **[新しい受信ポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-309">In the drop-down list, select **New Receive Port**.</span></span>  
   
-6.  <span data-ttu-id="cb5da-310">**名前**、型`JDE_FileIn_Port`、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-310">For **Name**, type `JDE_FileIn_Port`, and then click **OK**.</span></span> <span data-ttu-id="cb5da-311">受信場所を指定する必要があるというメッセージ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-311">A message box appears stating that you need to designate a receive location.</span></span> <span data-ttu-id="cb5da-312">**[OK]**をクリックし、 **[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-312">Click **OK**, and then click **New**.</span></span>  
+6.  <span data-ttu-id="cb5da-310">**名前**、型`JDE_FileIn_Port`、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-310">For **Name**, type `JDE_FileIn_Port`, and then click **OK**.</span></span> <span data-ttu-id="cb5da-311">受信場所を指定する必要があるというメッセージ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cb5da-311">A message box appears stating that you need to designate a receive location.</span></span> <span data-ttu-id="cb5da-312">**[OK]** をクリックし、 **[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb5da-312">Click **OK**, and then click **New**.</span></span>  
   
      <span data-ttu-id="cb5da-313">![](../core/media/jdeow-filein-port-receiveportproperties.gif "JDEOW_FileIn_Port_ReceivePortProperties")</span><span class="sxs-lookup"><span data-stu-id="cb5da-313">![](../core/media/jdeow-filein-port-receiveportproperties.gif "JDEOW_FileIn_Port_ReceivePortProperties")</span></span>  
   
@@ -323,7 +324,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="cb5da-319">![](../core/media/jdeow-filein-loc-receivelocationproperties.gif "JDEOW_FileIn_Loc_ReceiveLocationProperties")</span><span class="sxs-lookup"><span data-stu-id="cb5da-319">![](../core/media/jdeow-filein-loc-receivelocationproperties.gif "JDEOW_FileIn_Loc_ReceiveLocationProperties")</span></span>  
   
-8.  <span data-ttu-id="cb5da-320">をクリックして**構成**、型`C:\LABS\JDE_OW_Test\FileIn`の**受信フォルダー**、クリックして**[ok]** 3 回です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-320">Click **Configure**, type `C:\LABS\JDE_OW_Test\FileIn` for **Receive Folder**, and then click **OK** three times.</span></span>  
+8.  <span data-ttu-id="cb5da-320">をクリックして**構成**、型`C:\LABS\JDE_OW_Test\FileIn`の**受信フォルダー**、クリックして **[ok]** 3 回です。</span><span class="sxs-lookup"><span data-stu-id="cb5da-320">Click **Configure**, type `C:\LABS\JDE_OW_Test\FileIn` for **Receive Folder**, and then click **OK** three times.</span></span>  
   
      <span data-ttu-id="cb5da-321">![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")</span><span class="sxs-lookup"><span data-stu-id="cb5da-321">![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")</span></span>  
   
@@ -339,7 +340,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="cb5da-327">**[パイプライン]**: **XMLTransmit** および **XMLReceive**</span><span class="sxs-lookup"><span data-stu-id="cb5da-327">**Pipelines**: **XMLTransmit** and **XMLReceive**</span></span>  
   
-11. <span data-ttu-id="cb5da-328">**[構成]**をクリックし、次のプロパティ値を入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-328">Click **Configure**, and then enter the following property values:</span></span>  
+11. <span data-ttu-id="cb5da-328">**[構成]** をクリックし、次のプロパティ値を入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-328">Click **Configure**, and then enter the following property values:</span></span>  
   
      <span data-ttu-id="cb5da-329">**ホスト:** \<JDEOW ホスト名を入力してください\></span><span class="sxs-lookup"><span data-stu-id="cb5da-329">**Host:** \<enter your JDEOW host name\></span></span>  
   
@@ -351,7 +352,7 @@ ms.lasthandoff: 11/28/2017
   
      `C:JDEOWJarsBTSLIBInterop.jar; C:JDEOWJarsConnector.jar; C:JDEOWJarsKernel.jar;C:Program FilesMicrosoft BizTalk Adapters for Enterprise ApplicationsJ.D. Edwards OneWorld®ClassesJDEJAccess.jar`  
   
-     <span data-ttu-id="cb5da-333">**パスワード:**ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-333">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
+     <span data-ttu-id="cb5da-333">**パスワード:** ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="cb5da-333">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
   
      <span data-ttu-id="cb5da-334">**ポート:**  `6009`</span><span class="sxs-lookup"><span data-stu-id="cb5da-334">**Port:**  `6009`</span></span>  
   

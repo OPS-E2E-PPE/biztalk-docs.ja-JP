@@ -1,14 +1,14 @@
 ---
-title: "監査ログを構成および表示 |Microsoft ドキュメント"
-ms.custom: 
+title: 監査ログを構成および表示 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c725bf04-d59f-42c1-b327-b4268421689c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289842"
 ---
 # <a name="configuring-and-viewing-audit-logs"></a><span data-ttu-id="26b8f-102">構成して、監査ログの表示</span><span class="sxs-lookup"><span data-stu-id="26b8f-102">Configuring and Viewing Audit Logs</span></span>
 <span data-ttu-id="26b8f-103">ESB の管理ポータルでは、使用状況を監視し、問題を追跡するためのアクションの監査ログを保持します。</span><span class="sxs-lookup"><span data-stu-id="26b8f-103">The ESB Management Portal maintains an audit log of actions that help you to monitor usage and track problems.</span></span> <span data-ttu-id="26b8f-104">管理者は、監査ログへの書き込みは、ポータルのどのイベントを指定できます。</span><span class="sxs-lookup"><span data-stu-id="26b8f-104">Administrators can specify which events the portal will write to the audit log.</span></span>  

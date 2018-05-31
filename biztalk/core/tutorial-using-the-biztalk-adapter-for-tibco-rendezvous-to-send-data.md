@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: を使用して、TIBCO Rendezvous アダプター送信 |Microsoft ドキュメント"
-description: "BizTalk Server で TIBCO Rendezvous の BizTalk アダプターを使用して TIBCO システムにデータを送信するステップ バイ ステップ ガイド"
-ms.custom: 
+title: 'チュートリアル: を使用して、TIBCO Rendezvous アダプター送信 |Microsoft ドキュメント'
+description: BizTalk Server で TIBCO Rendezvous の BizTalk アダプターを使用して TIBCO システムにデータを送信するステップ バイ ステップ ガイド
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b761ce2d-3465-43e0-bd8d-4d68b523226a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014441"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data"></a><span data-ttu-id="8e4f2-103">チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用したデータの送信</span><span class="sxs-lookup"><span data-stu-id="8e4f2-103">Tutorial: Using the BizTalk Adapter for TIBCO Rendezvous to Send Data</span></span>
 <span data-ttu-id="8e4f2-104">BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデータを送信できます。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-104">You can use the BizTalk Adapter for TIBCO Rendezvous to send data to a TIBCO system.</span></span> <span data-ttu-id="8e4f2-105">このチュートリアルでは、これを示す SDK サンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-105">This walkthrough describes an SDK sample that illustrates this.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="8e4f2-131">値を入力して、**名前**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-131">Enter a value for the **Name** field.</span></span> <span data-ttu-id="8e4f2-132">たとえば、入力**TIBCO Rendezvous**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-132">For example, enter **TIBCO Rendezvous**.</span></span>  
   
-5.  <span data-ttu-id="8e4f2-133">選択**TIBCO(r) Rendezvous(r)**で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-133">Select **TIBCO(r) Rendezvous(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
+5.  <span data-ttu-id="8e4f2-133">選択**TIBCO(r) Rendezvous(r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-133">Select **TIBCO(r) Rendezvous(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
   
 ## <a name="step-2-create-a-send-port"></a><span data-ttu-id="8e4f2-134">手順 2: 送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-134">Step 2: Create a Send Port</span></span>  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/07/2017
   
      <span data-ttu-id="8e4f2-165">プロパティの詳細については、次を参照してください。[送信成果物が作成](../core/creating-tibco-rendezvous-send-handlers.md)です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-165">For more information about the properties, see [Create the send artifacts](../core/creating-tibco-rendezvous-send-handlers.md).</span></span>  
   
-8.  <span data-ttu-id="8e4f2-166">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-166">Click **OK**.</span></span>  
+8.  <span data-ttu-id="8e4f2-166">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-166">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="8e4f2-167">選択、 **XML Transmit**パイプラインで使用可能なパイプラインの一覧から、**送信パイプライン**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-167">Select the **XML Transmit** pipeline from the list of pipelines available in the **Send pipeline** dropdown and click **OK**.</span></span>  
   
@@ -100,7 +101,7 @@ ms.lasthandoff: 11/07/2017
   
 1.  <span data-ttu-id="8e4f2-170">**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-170">In **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, expand **BizTalk Application 1**, and click **Receive Ports**.</span></span>  
   
-2.  <span data-ttu-id="8e4f2-171">受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.**受信ポートのプロパティ ダイアログを表示します。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-171">Right-click the Receive Ports folder and then click **New**, **One-Way Receive Port...** to display the Receive Port Properties dialog.</span></span>  
+2.  <span data-ttu-id="8e4f2-171">受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.** 受信ポートのプロパティ ダイアログを表示します。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-171">Right-click the Receive Ports folder and then click **New**, **One-Way Receive Port...** to display the Receive Port Properties dialog.</span></span>  
   
 3.  <span data-ttu-id="8e4f2-172">値を入力、**名前**フィールド、たとえば**TIBCORndOneWayFileRP**、 をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-172">Enter a value for the **Name** field, for example **TIBCORndOneWayFileRP**, and click **OK**.</span></span>  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 11/07/2017
   
 5.  <span data-ttu-id="8e4f2-179">用に作成したフォルダーの場所を入力、**受信フォルダー**プロパティをクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-179">Enter the location of the folder that you created earlier for the **Receive Folder** property and click **OK**.</span></span>  
   
-6.  <span data-ttu-id="8e4f2-180">選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-180">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
+6.  <span data-ttu-id="8e4f2-180">選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-180">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
   
 7.  <span data-ttu-id="8e4f2-181">受信場所を右クリックし、をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="8e4f2-181">Right-click the receive location and click **Enable**.</span></span>  
   

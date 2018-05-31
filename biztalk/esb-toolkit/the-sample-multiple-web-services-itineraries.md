@@ -1,14 +1,14 @@
 ---
-title: "サンプル複数の Web サービスの日程 |Microsoft ドキュメント"
-ms.custom: 
+title: サンプル複数の Web サービスの日程 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f67a4c6-b547-4261-ab3f-db78603ac588
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295106"
 ---
 # <a name="the-sample-multiple-web-services-itineraries"></a><span data-ttu-id="7a9b9-102">サンプル複数の Web サービスの日程</span><span class="sxs-lookup"><span data-stu-id="7a9b9-102">The Sample Multiple Web Services Itineraries</span></span>
 <span data-ttu-id="7a9b9-103">次の表は、複数の Web サービス サンプルに含まれるすべての定義済み itinerary ファイルを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="7a9b9-103">The following table lists all the predefined itinerary files included with the Multiple Web Services sample.</span></span> <span data-ttu-id="7a9b9-104">これらは \Source\Samples\MultipleWebServices\Itineraries フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="7a9b9-104">These are located in the \Source\Samples\MultipleWebServices\Itineraries folder.</span></span>  

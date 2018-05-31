@@ -1,14 +1,14 @@
 ---
-title: "方法: インターチェンジを分割し、個別の日程を使用して複数のファイルの場所に結果のメッセージをルーティング |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: インターチェンジを分割し、個別の日程を使用して複数のファイルの場所に結果のメッセージをルーティング |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccd46bee-e4a1-4846-8bde-b0460bda1e72
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010755"
 ---
 # <a name="how-to-split-an-interchange-and-route-the-resulting-messages-to-multiple-file-locations-using-distinct-itineraries"></a><span data-ttu-id="12586-102">方法: インターチェンジを分割し、結果として得られるメッセージをルーティング、個別の日程を使用して複数のファイルの場所</span><span class="sxs-lookup"><span data-stu-id="12586-102">How to: Split an Interchange and Route the Resulting Messages to Multiple File Locations Using Distinct Itineraries</span></span>
 ## <a name="goal"></a><span data-ttu-id="12586-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="12586-103">Goal</span></span>  
@@ -212,7 +213,7 @@ ms.lasthandoff: 12/01/2017
   
 9. <span data-ttu-id="12586-179">ファクト エクスプ ローラーで、をクリックして、**ボキャブラリ**タブです。展開して、 **ESB です。行程**ボキャブラリ、展開**バージョン 1.1**、し、ドラッグ、**行程名の設定**定義**アクション**です。</span><span class="sxs-lookup"><span data-stu-id="12586-179">In Facts Explorer, click the **Vocabularies** tab. Expand the **ESB.Itinerary** vocabulary, expand **Version 1.1**, and then drag the **Set Itinerary Name** definition to **Actions**.</span></span>  
   
-10. <span data-ttu-id="12586-180">をクリックして**\<空の文字列\>**し入力**GlobalBankWestItinerary**です。</span><span class="sxs-lookup"><span data-stu-id="12586-180">Click **\<empty string\>** and then type **GlobalBankWestItinerary**.</span></span>  
+10. <span data-ttu-id="12586-180">をクリックして**\<空の文字列\>** し入力**GlobalBankWestItinerary**です。</span><span class="sxs-lookup"><span data-stu-id="12586-180">Click **\<empty string\>** and then type **GlobalBankWestItinerary**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="12586-181">このトピックの後半 GlobalBank 西からメッセージを処理するこの日程を作成します。</span><span class="sxs-lookup"><span data-stu-id="12586-181">Later in this How-to topic, you will create this itinerary to process messages from GlobalBank West.</span></span>  
@@ -233,7 +234,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  <span data-ttu-id="12586-189">**アクション**セクションを右クリックして**GlobalBankWestItinerary**、クリックして**引数の再設定**です。</span><span class="sxs-lookup"><span data-stu-id="12586-189">In the **Actions** section, right-click **GlobalBankWestItinerary**, and then click **Reset argument**.</span></span>  
   
-8.  <span data-ttu-id="12586-190">をクリックして**\<空の文字列\>**し入力**GlobalBankEastItinerary です。**</span><span class="sxs-lookup"><span data-stu-id="12586-190">Click **\<empty string\>** and then type **GlobalBankEastItinerary.**</span></span>  
+8.  <span data-ttu-id="12586-190">をクリックして**\<空の文字列\>** し入力**GlobalBankEastItinerary です。**</span><span class="sxs-lookup"><span data-stu-id="12586-190">Click **\<empty string\>** and then type **GlobalBankEastItinerary.**</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="12586-191">このトピックの後半 GlobalBank 東部からメッセージを処理するこの日程を作成します。</span><span class="sxs-lookup"><span data-stu-id="12586-191">Later in this How-to topic, you will create this itinerary to process messages from GlobalBank East.</span></span>  
@@ -410,11 +411,11 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="12586-291">右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="12586-291">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
   
-4.  <span data-ttu-id="12586-292">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="12586-292">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="12586-292">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="12586-292">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="12586-293">**受信場所のプロパティ** ダイアログ ボックスで、**名前**ボックスに、入力**OnRamp.Itinerary.HowTo**です。</span><span class="sxs-lookup"><span data-stu-id="12586-293">In the **Receive Location Properties** dialog box, in the **Name** box, type **OnRamp.Itinerary.HowTo**.</span></span>  
   
-6.  <span data-ttu-id="12586-294">**型**ドロップダウン リストをクリックして**ファイル、**順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="12586-294">In the **Type** drop-down list, click **FILE,** and then click **Configure**.</span></span>  
+6.  <span data-ttu-id="12586-294">**型**ドロップダウン リストをクリックして**ファイル、** 順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="12586-294">In the **Type** drop-down list, click **FILE,** and then click **Configure**.</span></span>  
   
 7.  <span data-ttu-id="12586-295">**FILE トランスポートのプロパティ** ダイアログ ボックスで、**受信フォルダー**ボックスに、入力**C:\HowTos\DropFolder**、クリックして**ok**です。</span><span class="sxs-lookup"><span data-stu-id="12586-295">In the **FILE Transport Properties** dialog box, in the **Receive folder** box, type **C:\HowTos\DropFolder**, and then click **OK**.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "カスタム競合回避モジュールを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム競合回避モジュールを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2775460-8e04-40be-9557-8278336b031c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,17 +17,18 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975904"
 ---
 # <a name="creating-a-custom-resolver"></a><span data-ttu-id="12191-102">カスタム競合回避モジュールを作成します。</span><span class="sxs-lookup"><span data-stu-id="12191-102">Creating a Custom Resolver</span></span>
 <span data-ttu-id="12191-103">競合回避モジュールとアダプターのプロバイダー フレームワーク実装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]ディスパッチャーをという名前のパイプライン コンポーネントと ItineraryReceive および ItinerarySend という名前のパイプラインを使用します。</span><span class="sxs-lookup"><span data-stu-id="12191-103">The Resolver and Adapter Provider Framework implementation in [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] uses a pipeline component named Dispatcher and pipelines named ItineraryReceive and ItinerarySend.</span></span>  
   
- <span data-ttu-id="12191-104">ディスパッチャー パイプライン コンポーネントには 4 つのプロパティ:**検証、Enabled、エンドポイント、**と**MapName**です。</span><span class="sxs-lookup"><span data-stu-id="12191-104">The Dispatcher pipeline component has four properties: **Validate, Enabled, EndPoint,** and **MapName**.</span></span> <span data-ttu-id="12191-105">**エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\**  (ルートを使用する解像度の種類を表しますモニカー) です。</span><span class="sxs-lookup"><span data-stu-id="12191-105">The **EndPoint** property can contain resolver connection strings with values such as the following, where **UDDI:\\\\** represents the resolution type to use (the root moniker).</span></span>  
+ <span data-ttu-id="12191-104">ディスパッチャー パイプライン コンポーネントには 4 つのプロパティ:**検証、Enabled、エンドポイント、** と**MapName**です。</span><span class="sxs-lookup"><span data-stu-id="12191-104">The Dispatcher pipeline component has four properties: **Validate, Enabled, EndPoint,** and **MapName**.</span></span> <span data-ttu-id="12191-105">**エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\**  (ルートを使用する解像度の種類を表しますモニカー) です。</span><span class="sxs-lookup"><span data-stu-id="12191-105">The **EndPoint** property can contain resolver connection strings with values such as the following, where **UDDI:\\\\** represents the resolution type to use (the root moniker).</span></span>  
   
 ```  
 UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serviceProvider=Microsoft.Practices.ESB  
 ```  
   
- <span data-ttu-id="12191-106">サポートされているその他のモニカーを含める**XPATH:\\\\、静的:\\\\、**と**BRE:\\\\**です。</span><span class="sxs-lookup"><span data-stu-id="12191-106">Other supported monikers include **XPATH:\\\\, STATIC:\\\\,** and **BRE:\\\\**.</span></span> <span data-ttu-id="12191-107">各モニカー型を実装する特定のクラスを使用して、 **IResolveProvider**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="12191-107">Each moniker type uses a specific class that implements the **IResolveProvider** interface.</span></span> <span data-ttu-id="12191-108">その他のモニカーの種類のカスタム独自競合回避モジュールを作成し、動的解決のシステムで使用するためを登録できます。</span><span class="sxs-lookup"><span data-stu-id="12191-108">You can create your own custom resolvers for other moniker types and register them for use by the dynamic resolution system.</span></span>  
+ <span data-ttu-id="12191-106">サポートされているその他のモニカーを含める**XPATH:\\\\、静的:\\\\、** と**BRE:\\\\**です。</span><span class="sxs-lookup"><span data-stu-id="12191-106">Other supported monikers include **XPATH:\\\\, STATIC:\\\\,** and **BRE:\\\\**.</span></span> <span data-ttu-id="12191-107">各モニカー型を実装する特定のクラスを使用して、 **IResolveProvider**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="12191-107">Each moniker type uses a specific class that implements the **IResolveProvider** interface.</span></span> <span data-ttu-id="12191-108">その他のモニカーの種類のカスタム独自競合回避モジュールを作成し、動的解決のシステムで使用するためを登録できます。</span><span class="sxs-lookup"><span data-stu-id="12191-108">You can create your own custom resolvers for other moniker types and register them for use by the dynamic resolution system.</span></span>  
   
  <span data-ttu-id="12191-109">モニカーは、競合回避モジュールの接続文字列に相当します。</span><span class="sxs-lookup"><span data-stu-id="12191-109">The moniker equates to a resolver connection string.</span></span> <span data-ttu-id="12191-110">個別のスキーマは、パラメーターとそのルート モニカーを定義します。</span><span class="sxs-lookup"><span data-stu-id="12191-110">Individual schemas define the parameters and their root moniker.</span></span> <span data-ttu-id="12191-111">競合回避モジュールは、競合回避モジュールを接続文字列、検証、および結果を使用してクエリを実行し、設定、**ディクショナリ**ルーティング、変換、itinerary 選択またはに固有の他の何らかの目的のために使用できるオブジェクト、サービス。</span><span class="sxs-lookup"><span data-stu-id="12191-111">A resolver takes the resolver connection string, validates it, and uses the result to query and populate a **Dictionary** object that can be used for routing, transformation, itinerary selection, or some other purpose specific to your service.</span></span>  
   

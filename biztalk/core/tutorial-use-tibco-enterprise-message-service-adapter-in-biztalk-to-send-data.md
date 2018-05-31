@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを送信する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1912d594-3839-4e04-bc40-93bd7cc0b309
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010683"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-enterprise-message-service-to-send-data"></a><span data-ttu-id="ca6ff-102">チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用したデータの送信</span><span class="sxs-lookup"><span data-stu-id="ca6ff-102">Tutorial: Using the BizTalk Adapter for TIBCO Enterprise Message Service to Send Data</span></span>
 <span data-ttu-id="ca6ff-103">BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO システムにデータを送信できます。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-103">You can use the BizTalk Adapter for TIBCO Enterprise Message Service (EMS) to send data to a TIBCO system.</span></span> <span data-ttu-id="ca6ff-104">このチュートリアルでは、これを示す SDK サンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-104">This walkthrough describes an SDK sample that illustrates this.</span></span>  
@@ -91,7 +92,7 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="ca6ff-159">プロパティの詳細については、次を参照してください。 [TIBCO Enterprise メッセージ サービス送信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-send-handlers.md)です。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-159">For more information about the properties, see [Creating  TIBCO Enterprise Message Service Send Handlers](../core/creating-tibco-enterprise-message-service-send-handlers.md).</span></span>  
   
-7.  <span data-ttu-id="ca6ff-160">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-160">Click **OK**.</span></span>  
+7.  <span data-ttu-id="ca6ff-160">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-160">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="ca6ff-161">選択、 **XML Transmit**パイプラインで使用可能なパイプラインの一覧から、**送信パイプライン**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-161">Select the **XML Transmit** pipeline from the list of pipelines available in the **Send pipeline** dropdown and click **OK**.</span></span>  
   
@@ -117,7 +118,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="ca6ff-172">用に作成したフォルダーの場所を入力、**受信フォルダー**プロパティをクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-172">Enter the location of the folder that you created earlier for the **Receive Folder** property and click **OK**.</span></span>  
   
-6.  <span data-ttu-id="ca6ff-173">選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-173">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
+6.  <span data-ttu-id="ca6ff-173">選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-173">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
   
 7.  <span data-ttu-id="ca6ff-174">受信場所を右クリックし、をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="ca6ff-174">Right-click the receive location and click **Enable**.</span></span>  
   

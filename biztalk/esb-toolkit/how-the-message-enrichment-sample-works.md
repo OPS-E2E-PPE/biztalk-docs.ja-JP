@@ -1,14 +1,14 @@
 ---
-title: "メッセージ強化サンプルのしくみ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ強化サンプルのしくみ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1188c1c9-b133-4438-b41c-ea6cffcf40fd
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7497f6f23d7aadfa8535d0530493f8b4a2a50a0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/22/2017
+ms.locfileid: "22303674"
 ---
 # <a name="how-the-message-enrichment-sample-works"></a><span data-ttu-id="5b191-102">メッセージ強化サンプルのしくみ</span><span class="sxs-lookup"><span data-stu-id="5b191-102">How the Message Enrichment Sample Works</span></span>
  <span data-ttu-id="5b191-103">Message Enrichment サンプルは、汎用の再利用可能なサービスとの統合パターンをカプセル化することを示します。</span><span class="sxs-lookup"><span data-stu-id="5b191-103">The Message Enrichment sample demonstrates that it is possible to encapsulate an integration pattern as a generic reusable service.</span></span> <span data-ttu-id="5b191-104">ここでは、サンプルは、コンテンツ Enricher パターンを実装します。</span><span class="sxs-lookup"><span data-stu-id="5b191-104">In this case the sample implements the Content Enricher pattern.</span></span> <span data-ttu-id="5b191-105">参照情報を表示する順序での外部サービスに送信するメッセージを準備するための変換とからのデータが含まれる新しいメッセージに応答を組み込むし、別の変換を使用してコンテンツ Enricher パターンが一般的には、元のメッセージ。</span><span class="sxs-lookup"><span data-stu-id="5b191-105">The Content Enricher pattern generally involves using a transform to prepare a message for transmission to an external service in order to lookup information, and then another transform to incorporate the response into a new message which also contains data from the original message.</span></span> <span data-ttu-id="5b191-106">汎用的なやり方で、パターンを実装するためには、Message Enrichment サンプルを最大 2 つの競合回避モジュールを使用して、外部ソースから情報を使用して、メッセージの強化を構成するオーケストレーションに基づく itinerary サービスを提供します。</span><span class="sxs-lookup"><span data-stu-id="5b191-106">In order to implement the pattern in a generic fashion, the Message Enrichment sample provides an orchestration-based itinerary service that can use up to two resolvers to configure enrichment of a message using information from an external source.</span></span>

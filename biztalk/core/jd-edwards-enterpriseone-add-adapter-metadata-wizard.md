@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261874"
 ---
 # <a name="jd-edwards-enterpriseone-add-adapter-metadata-wizard"></a><span data-ttu-id="e61e6-102">JD Edwards EnterpriseOne アダプター メタデータの追加ウィザード</span><span class="sxs-lookup"><span data-stu-id="e61e6-102">JD Edwards EnterpriseOne Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="e61e6-103">アダプターの追加ウィザードを使用して、JD Edwards EnterpriseOne システムのメタデータ情報にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="e61e6-103">Use the Add Adapter Wizard to access metadata information from the JD Edwards EnterpriseOne system.</span></span>  

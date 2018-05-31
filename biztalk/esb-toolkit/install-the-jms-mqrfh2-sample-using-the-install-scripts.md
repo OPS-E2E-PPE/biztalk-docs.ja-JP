@@ -1,14 +1,14 @@
 ---
-title: "インストール スクリプトを使用して、JMS MQRFH2 サンプルのインストール |Microsoft ドキュメント"
-ms.custom: 
+title: インストール スクリプトを使用して、JMS MQRFH2 サンプルのインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 785f3e32-83b4-406a-af1b-9499115fbb8f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974384"
 ---
 # <a name="install-the-jms-mqrfh2-sample-using-the-install-scripts"></a><span data-ttu-id="87623-102">インストール スクリプトを使用して、JMS MQRFH2 サンプルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="87623-102">Install the JMS MQRFH2 Sample Using the Install Scripts</span></span>
 <span data-ttu-id="87623-103">このセクションでは、JMS MQRFH2 で提供するインストール スクリプトを使用してサンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="87623-103">This section describes how you can install the JMS MQRFH2 sample using the install scripts provided with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span>  
@@ -35,11 +36,11 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="87623-110">ESB です。JMS です。サンプルです。SENDTOBIZTALK</span><span class="sxs-lookup"><span data-stu-id="87623-110">ESB.JMS.SAMPLE.SENDTOBIZTALK</span></span>  
   
-3.  <span data-ttu-id="87623-111">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87623-111">On the **Start** menu, click **Run**.</span></span>  
+3.  <span data-ttu-id="87623-111">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87623-111">On the **Start** menu, click **Run**.</span></span>  
   
 4.  <span data-ttu-id="87623-112">**実行** ダイアログ ボックスで、「 **cmd**、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="87623-112">In the **Run** dialog box, type **cmd**, and then press ENTER.</span></span>  
   
-5.  <span data-ttu-id="87623-113">次のコマンド実行交換、 *\<パス\>*をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\JMS\Install\Scripts\\):</span><span class="sxs-lookup"><span data-stu-id="87623-113">Run the following command, replacing the *\<path\>* parameter with the full path to the .cmd file you want to install (the default path in this release is \Source\Samples\JMS\Install\Scripts\\):</span></span>  
+5.  <span data-ttu-id="87623-113">次のコマンド実行交換、 *\<パス\>* をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\JMS\Install\Scripts\\):</span><span class="sxs-lookup"><span data-stu-id="87623-113">Run the following command, replacing the *\<path\>* parameter with the full path to the .cmd file you want to install (the default path in this release is \Source\Samples\JMS\Install\Scripts\\):</span></span>  
   
     ```  
     <path>\Setup_bin.cmd  

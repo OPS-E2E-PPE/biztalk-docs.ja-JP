@@ -1,11 +1,11 @@
 ---
-title: "JD Edwards OneWorld スキーマを BizTalk Server プロジェクトにインポートする |Microsoft ドキュメント"
-ms.custom: 
+title: JD Edwards OneWorld スキーマを BizTalk Server プロジェクトにインポートする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - generating schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, generating
 - schemas, importing into BizTalk Server projects
 ms.assetid: 5bcaa276-8c76-4212-b373-de86e3008a69
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013825"
 ---
 # <a name="importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects"></a><span data-ttu-id="3896c-102">JD Edwards OneWorld スキーマを BizTalk Server プロジェクトにインポートする</span><span class="sxs-lookup"><span data-stu-id="3896c-102">Importing JD Edwards OneWorld Schemas into BizTalk Server Projects</span></span>
 <span data-ttu-id="3896c-103">ここでは、JD Edwards OneWorld サーバーを参照し、スキーマを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトにインポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3896c-103">This topic discusses browsing a JD Edwards OneWorld server and importing the schemas into a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] project.</span></span>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  <span data-ttu-id="3896c-132">項目を追加する をクリックします (またはドラッグ)、**送信**ペイン (J. Edwards OneWorld への受信の呼び出し)。</span><span class="sxs-lookup"><span data-stu-id="3896c-132">Click (or drag) to add the item to the **Transmit** pane (for an inbound to J. Edwards OneWorld call).</span></span>  
   
-3.  <span data-ttu-id="3896c-133">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3896c-133">Click **OK**.</span></span>  
+3.  <span data-ttu-id="3896c-133">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3896c-133">Click **OK**.</span></span>  
   
      <span data-ttu-id="3896c-134">選択した JD Edwards OneWorld 項目に対して生成されたスキーマが BizTalk Server プロジェクトにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="3896c-134">Schemas generated for the selected JD Edwards OneWorld item are imported into the BizTalk Server project.</span></span>  
   

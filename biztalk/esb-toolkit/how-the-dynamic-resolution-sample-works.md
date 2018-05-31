@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7789316d-f2c4-4018-a8e8-dd9359f1664f
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22294890"
 ---
 # <a name="how-the-dynamic-resolution-sample-works"></a><span data-ttu-id="86aa5-102">動的解決のサンプルのしくみ</span><span class="sxs-lookup"><span data-stu-id="86aa5-102">How the Dynamic Resolution Sample Works</span></span>
 <span data-ttu-id="86aa5-103">動的解決サンプルでは、前のセクションで説明されているすべてのメッセージ例については、ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="86aa5-103">The Dynamic Resolution sample uses the ESB Dispatcher Disassembler pipeline component for all the messaging examples described in the previous section.</span></span>  

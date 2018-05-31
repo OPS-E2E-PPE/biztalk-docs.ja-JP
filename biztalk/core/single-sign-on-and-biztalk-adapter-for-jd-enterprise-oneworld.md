@@ -19,6 +19,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016069"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a><span data-ttu-id="f984c-102">シングル サインオンと BizTalk Adapter for JD Enterprise OneWorld</span><span class="sxs-lookup"><span data-stu-id="f984c-102">Single Sign-On and BizTalk Adapter for JD Enterprise OneWorld</span></span>
 <span data-ttu-id="f984c-103">シングル サインオン (SSO) 資格情報がデータベースから取得した、SSO 資格情報です。したがって、する必要はありませんでサーバー システムのログオン資格情報を入力する、**トランスポートのプロパティ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="f984c-103">Single Sign-On (SSO) credentials are obtained from the SSO credentials database; therefore, you do not need to enter the server system's logon credentials in the **Transport Properties** window.</span></span>  

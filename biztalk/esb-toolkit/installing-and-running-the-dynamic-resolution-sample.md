@@ -1,14 +1,14 @@
 ---
-title: "インストールして、動的な解決サンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: インストールして、動的な解決サンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d4359987-b18c-44f5-a2cf-e30e17ac5e9f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015305"
 ---
 # <a name="installing-and-running-the-dynamic-resolution-sample"></a><span data-ttu-id="cf548-102">インストールして、動的な解決サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="cf548-102">Installing and Running the Dynamic Resolution Sample</span></span>
 <span data-ttu-id="cf548-103">動的解決サンプルでは、ESB ディスパッチャーと ESB ディスパッチャーの逆アセンブラー パイプライン コンポーネントの一般的な使用シナリオを示します。</span><span class="sxs-lookup"><span data-stu-id="cf548-103">The Dynamic Resolution sample demonstrates typical usage scenarios for the ESB Dispatcher and ESB Dispatcher Disassembler pipeline components.</span></span> <span data-ttu-id="cf548-104">これは、動的にエンドポイントの場所を解決するには、ルーティングのプロパティを設定し、解決するにはおよびオーケストレーションを使用しなくても、メッセージ レベルでの Microsoft BizTalk マップを実行するコンポーネントを使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="cf548-104">It demonstrates how you can use the components to dynamically resolve endpoint location, set routing properties, and resolve and execute Microsoft BizTalk maps at the messaging level without using an orchestration.</span></span> <span data-ttu-id="cf548-105">また、一方向と双方向の両方のメッセージング パターンを示します。</span><span class="sxs-lookup"><span data-stu-id="cf548-105">It also demonstrates both one-way and two-way messaging patterns.</span></span>  

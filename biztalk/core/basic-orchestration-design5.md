@@ -1,17 +1,17 @@
 ---
-title: "基本的なオーケストレーション Design5 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的なオーケストレーション Design5 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, design
 - exception handling, orchestration design
 ms.assetid: 0941d617-e30c-4ca7-852f-193e16781ca7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230850"
 ---
 # <a name="basic-orchestration-design"></a><span data-ttu-id="78a0b-102">基本的なオーケストレーション デザイン</span><span class="sxs-lookup"><span data-stu-id="78a0b-102">Basic Orchestration Design</span></span>
 <span data-ttu-id="78a0b-103">BizTalk Adapter for PeopleSoft Enterprise で基本的なオーケストレーションを作成する場合、XML の受信はオーケストレーションの受信ポートで行います。</span><span class="sxs-lookup"><span data-stu-id="78a0b-103">When you create a basic orchestration in BizTalk Adapter for PeopleSoft Enterprise, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="78a0b-104">次に、その XML をバックエンド システムに送信して処理します。</span><span class="sxs-lookup"><span data-stu-id="78a0b-104">The XML is then sent to the back-end system to be processed.</span></span> <span data-ttu-id="78a0b-105">バックエンド システムで、例外が発生する可能性がありますはオーケストレーションを停止し、エラーが生成されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-105">In the back-end system, an exception might occur that would stop the orchestration and generate a fault.</span></span> <span data-ttu-id="78a0b-106">生成されるエラーには、完了しなかったオーケストレーションの情報が示されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-106">The fault that is produced provides information that the orchestration was not completed.</span></span> <span data-ttu-id="78a0b-107">エラーの原因をデバッグする際、この情報はあまり役に立ちません。</span><span class="sxs-lookup"><span data-stu-id="78a0b-107">This is not helpful in debugging the cause of the error.</span></span>  

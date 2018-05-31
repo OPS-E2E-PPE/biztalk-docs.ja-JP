@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー) |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a065ba89-9fdb-47dc-9021-fb95cf347cdc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013841"
 ---
 # <a name="biztalk-server-message-context-properties-send-handlers"></a><span data-ttu-id="f43ad-102">BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)</span><span class="sxs-lookup"><span data-stu-id="f43ad-102">BizTalk Server Message Context Properties (Send Handlers)</span></span>
 <span data-ttu-id="f43ad-103">BizTalk Server オーケストレーションの実行時には、メッセージ ペイロードに加えて、メッセージに含まれる補足情報にもアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="f43ad-103">In addition to the message payload, the supplementary information that a message contains must be accessible from the BizTalk Server orchestration at run time.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="getting-a-tibco-reply"></a><span data-ttu-id="f43ad-120">TIBCO の返信の取得</span><span class="sxs-lookup"><span data-stu-id="f43ad-120">Getting a TIBCO Reply</span></span>  
  <span data-ttu-id="f43ad-121">**質問:** TIBCO Rendezvous の読み取りおよび応答の送信サブジェクトとして使用できるように、オーケストレーション内の返信サブジェクトを操作については、BizTalk アダプターにはどのしますか?</span><span class="sxs-lookup"><span data-stu-id="f43ad-121">**Question:** How does BizTalk Adapter for TIBCO Rendezvous read and manipulate the reply subject inside an orchestration so that you can use it as the send subject for the response?</span></span> <span data-ttu-id="f43ad-122">BizTalk Adapter for TIBCO Rendezvous では Rendezvous からの受信メッセージのメッセージ コンテキストにどのようにアクセスしますか。</span><span class="sxs-lookup"><span data-stu-id="f43ad-122">How does the adapter get to the message context of an incoming message from Rendezvous?</span></span>  
   
- <span data-ttu-id="f43ad-123">**回答:**返信サブジェクトが、受信メッセージのコンテキストで値が入力され、オーケストレーションで読み取ることができます。</span><span class="sxs-lookup"><span data-stu-id="f43ad-123">**Answer:** The reply subject is populated in the context of the incoming message, and the orchestration can read it.</span></span> <span data-ttu-id="f43ad-124">最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。</span><span class="sxs-lookup"><span data-stu-id="f43ad-124">If the orchestration ultimately produces a reply, it can use that value to set the send subject of the reply message.</span></span>  
+ <span data-ttu-id="f43ad-123">**回答:** 返信サブジェクトが、受信メッセージのコンテキストで値が入力され、オーケストレーションで読み取ることができます。</span><span class="sxs-lookup"><span data-stu-id="f43ad-123">**Answer:** The reply subject is populated in the context of the incoming message, and the orchestration can read it.</span></span> <span data-ttu-id="f43ad-124">最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。</span><span class="sxs-lookup"><span data-stu-id="f43ad-124">If the orchestration ultimately produces a reply, it can use that value to set the send subject of the reply message.</span></span>  
   
 1.  <span data-ttu-id="f43ad-125">BizTalk Server プロジェクトで、<install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll への参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="f43ad-125">In a BizTalk Server project, add a reference to <install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll.</span></span>  
   

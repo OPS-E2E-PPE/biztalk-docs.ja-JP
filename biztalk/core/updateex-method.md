@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287426"
 ---
 # <a name="updateex-method"></a><span data-ttu-id="f7de3-102">UpdateEx メソッド</span><span class="sxs-lookup"><span data-stu-id="f7de3-102">UpdateEx Method</span></span>
 <span data-ttu-id="f7de3-103">入力キー パラメーター (key1、key2、... に基づいてプロパティを更新するために使用</span><span class="sxs-lookup"><span data-stu-id="f7de3-103">Used to update properties based on the input key parameters (key1, key2, …</span></span> <span data-ttu-id="f7de3-104">keyn)。</span><span class="sxs-lookup"><span data-stu-id="f7de3-104">keyn).</span></span> <span data-ttu-id="f7de3-105">`UpdateEx` を使用する場合は、コレクション内のアイテムを削除できません。</span><span class="sxs-lookup"><span data-stu-id="f7de3-105">When using `UpdateEx`, you cannot delete items in a collection.</span></span> <span data-ttu-id="f7de3-106">削除には別のメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f7de3-106">A separate method facilitates deletion.</span></span> <span data-ttu-id="f7de3-107">詳細については、次を参照してください。 [DeleteOnly メソッド](../core/deleteonly-method.md)です。</span><span class="sxs-lookup"><span data-stu-id="f7de3-107">For more information, see [DeleteOnly Method](../core/deleteonly-method.md).</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246522"
 ---
 # <a name="get-method"></a><span data-ttu-id="61c13-102">Get メソッド</span><span class="sxs-lookup"><span data-stu-id="61c13-102">Get Method</span></span>
 <span data-ttu-id="61c13-103">入力キー パラメーター (key1、key2、... に基づいてプロパティを取得するために使用</span><span class="sxs-lookup"><span data-stu-id="61c13-103">Used to retrieve properties based on the input key parameters (key1, key2, …</span></span> <span data-ttu-id="61c13-104">keyn)。</span><span class="sxs-lookup"><span data-stu-id="61c13-104">keyn).</span></span> <span data-ttu-id="61c13-105">出力パラメーターは、キー パラメーターに一致するレコードのプロパティを含む構造です。</span><span class="sxs-lookup"><span data-stu-id="61c13-105">The output parameter is a structure containing the properties of the record that matches the key parameters.</span></span> <span data-ttu-id="61c13-106">コンポーネント インターフェイスのインスタンスが 1 つしかない場合 (キーがない場合) は、Get 関数にキー パラメーターは含まれません。</span><span class="sxs-lookup"><span data-stu-id="61c13-106">If the component interface has only one instance (that is, there is no key), the Get function does not contain any key parameter.</span></span> <span data-ttu-id="61c13-107">参照してください[Find メソッド](../core/find-method.md)です。</span><span class="sxs-lookup"><span data-stu-id="61c13-107">Also see [Find Method](../core/find-method.md).</span></span>  

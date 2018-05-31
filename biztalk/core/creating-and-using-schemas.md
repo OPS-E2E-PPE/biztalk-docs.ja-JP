@@ -1,15 +1,15 @@
 ---
-title: "作成し、TIBCO でスキーマの使用 |Microsoft ドキュメント"
-description: "BizTalk エディターを使用してスキーマを作成する、BizTalk adapter for TIBCO Enterprise Message Service とターゲットの名前空間をスキーマの BizTalk Server の設定"
-ms.custom: 
+title: 作成し、TIBCO でスキーマの使用 |Microsoft ドキュメント
+description: BizTalk エディターを使用してスキーマを作成する、BizTalk adapter for TIBCO Enterprise Message Service とターゲットの名前空間をスキーマの BizTalk Server の設定
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3927b0b3-db3b-4494-b003-d930af734e58
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968720"
 ---
 # <a name="create-and-use-tibco-schemas"></a><span data-ttu-id="40fa5-103">作成し、TIBCO スキーマを使用</span><span class="sxs-lookup"><span data-stu-id="40fa5-103">Create and use TIBCO schemas</span></span>
 

@@ -1,15 +1,15 @@
 ---
-title: "JD Edwards OneWorld のアーキテクチャ |Microsoft ドキュメント"
-description: "デザイン時および実行時に BizTalk の JD Edwards OneWorld アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。"
-ms.custom: 
+title: JD Edwards OneWorld のアーキテクチャ |Microsoft ドキュメント
+description: デザイン時および実行時に BizTalk の JD Edwards OneWorld アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9200a090-a587-4b60-9447-d281580f2078
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014793"
 ---
 # <a name="architecture-of-jd-edwards-oneworld"></a><span data-ttu-id="5b328-103">JD Edwards OneWorld のアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="5b328-103">Architecture of JD Edwards OneWorld</span></span>
 <span data-ttu-id="5b328-104">Microsoft BizTalk Adapter for JD Edwards OneWorld を使用すると、JD Edwards OneWorld のビジネス関数にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="5b328-104">Microsoft BizTalk Adapter for JD Edwards OneWorld provides access to JD Edwards OneWorld business functions.</span></span> <span data-ttu-id="5b328-105">JD Edwards OneWorld は、JDENet と呼ばれる独自のメッセージング アーキテクチャを使用して、クライアント コンピューターとサーバー コンピューター間の通信を処理します。</span><span class="sxs-lookup"><span data-stu-id="5b328-105">JD Edwards OneWorld communicates between client and server machines using a proprietary messaging architecture called JDENet.</span></span> <span data-ttu-id="5b328-106">JDENet は、JAR ファイルは、Connector.jar および Kernel.jar で JD Edwards OneWorld コネクタ クラスによって実装されます。</span><span class="sxs-lookup"><span data-stu-id="5b328-106">JDENet is implemented by the JD Edwards OneWorld connector classes found in the JAR files, Connector.jar and Kernel.jar.</span></span> <span data-ttu-id="5b328-107">通信は、TCP/IP をトランスポート プロトコルとして使用して実装されており、既定のポートは 6009 または 6010 です。</span><span class="sxs-lookup"><span data-stu-id="5b328-107">Communication is implemented using TCP/IP as a transport protocol, with a default port of 6009 or 6010.</span></span> <span data-ttu-id="5b328-108">この値を設定する場所の詳細についてを参照してください[アイテムを BizTalk 管理コンソールに追加](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)です。</span><span class="sxs-lookup"><span data-stu-id="5b328-108">For a description of where this value is set, see [Add the artifacts to BizTalk Administration](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md).</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/07/2017
   
  <span data-ttu-id="5b328-110">JD Edwards OneWorld のビジネス関数を呼び出すには、2 つのメッセージが必要です。</span><span class="sxs-lookup"><span data-stu-id="5b328-110">Calls to JD Edwards OneWorld business functions require two messages:</span></span>  
   
--   <span data-ttu-id="5b328-111">最初のメッセージは、ビジネス関数を処理するサーバーの場所を返します。</span><span class="sxs-lookup"><span data-stu-id="5b328-111">The first message responds with the location of the server that processes the business function.</span></span> <span data-ttu-id="5b328-112">これを行うと呼ばれるテーブルのセットの検索を実行して*オブジェクト構成マッピング (OCM)*です。</span><span class="sxs-lookup"><span data-stu-id="5b328-112">This is accomplished by performing a lookup in a set of tables called *object configuration mapping (OCM)*.</span></span>  
+-   <span data-ttu-id="5b328-111">最初のメッセージは、ビジネス関数を処理するサーバーの場所を返します。</span><span class="sxs-lookup"><span data-stu-id="5b328-111">The first message responds with the location of the server that processes the business function.</span></span> <span data-ttu-id="5b328-112">これを行うと呼ばれるテーブルのセットの検索を実行して*オブジェクト構成マッピング (OCM)* です。</span><span class="sxs-lookup"><span data-stu-id="5b328-112">This is accomplished by performing a lookup in a set of tables called *object configuration mapping (OCM)*.</span></span>  
   
 -   <span data-ttu-id="5b328-113">2 番目のメッセージでは、JD Edwards OneWorld から渡す引数または JD Edwards OneWorld に渡す引数が入ったフォーマット済みメッセージ バッファーを適切なサーバーに送信し、応答を待ちます。</span><span class="sxs-lookup"><span data-stu-id="5b328-113">The second message sends a formatted message buffer containing the arguments to pass to or from JD Edwards OneWorld to the appropriate server, and waits for a reply.</span></span> <span data-ttu-id="5b328-114">バッファーは基になる C++ 構造体の Typedef に従ってフォーマットされます。</span><span class="sxs-lookup"><span data-stu-id="5b328-114">The buffers are formatted according to the typedefs of the underlying C++ structs.</span></span>  
   

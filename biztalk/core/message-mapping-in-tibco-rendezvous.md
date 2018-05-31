@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Rendezvous でのマッピングをメッセージ |Microsoft ドキュメント"
-description: "メッセージ フィールドと TIBCO Rendezvous の BizTalk アダプター内の XML へのメッセージ マッピング"
-ms.custom: 
+title: TIBCO Rendezvous でのマッピングをメッセージ |Microsoft ドキュメント
+description: メッセージ フィールドと TIBCO Rendezvous の BizTalk アダプター内の XML へのメッセージ マッピング
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62793bec-f076-425c-b25e-c4be5bd93cc8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014953"
 ---
 # <a name="message-mapping-in-tibco-rendezvous"></a><span data-ttu-id="c00b3-103">TIBCO Rendezvous でのメッセージ マッピング</span><span class="sxs-lookup"><span data-stu-id="c00b3-103">Message Mapping in TIBCO Rendezvous</span></span>
 <span data-ttu-id="c00b3-104">TIBCO Rendezvous メッセージは、ヘッダー情報と一連のメッセージ フィールドで構成されています。</span><span class="sxs-lookup"><span data-stu-id="c00b3-104">TIBCO Rendezvous messages are composed of header information and a set of message fields.</span></span> <span data-ttu-id="c00b3-105">ヘッダー情報は、メッセージ コンテキスト プロパティに直接マップされます。</span><span class="sxs-lookup"><span data-stu-id="c00b3-105">The header information is directly mapped to message context properties.</span></span>  

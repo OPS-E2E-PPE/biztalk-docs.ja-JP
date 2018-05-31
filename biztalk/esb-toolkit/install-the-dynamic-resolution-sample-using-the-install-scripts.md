@@ -1,14 +1,14 @@
 ---
-title: "インストール スクリプトを使用して動的解決のサンプルをインストール |Microsoft ドキュメント"
-ms.custom: 
+title: インストール スクリプトを使用して動的解決のサンプルをインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 644b6403-9883-4256-80d5-37881a87ed0e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973144"
 ---
 # <a name="install-the-dynamic-resolution-sample-using-the-install-scripts"></a><span data-ttu-id="37e4e-102">インストール スクリプトを使用して動的解決のサンプルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="37e4e-102">Install the Dynamic Resolution Sample Using the Install Scripts</span></span>
 <span data-ttu-id="37e4e-103">このセクションで提供するインストール スクリプトから動的解決のサンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="37e4e-103">This section describes how you can install the Dynamic Resolution sample from the install scripts provided with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="37e4e-112">テストをという名前のキューです。ESB 内で出力します。 DEPSample.QueueManager</span><span class="sxs-lookup"><span data-stu-id="37e4e-112">A queue named TEST.OUT within the ESB.DEP.Sample.QueueManager</span></span>  
   
-3.  <span data-ttu-id="37e4e-113">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="37e4e-113">On the **Start** menu, click **Run**.</span></span>  
+3.  <span data-ttu-id="37e4e-113">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="37e4e-113">On the **Start** menu, click **Run**.</span></span>  
   
 4.  <span data-ttu-id="37e4e-114">**実行** ダイアログ ボックスで、「 **cmd**、し、enter キーを押してコマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="37e4e-114">In the **Run** dialog box, type **cmd**, and then press ENTER to open the command prompt.</span></span>  
   

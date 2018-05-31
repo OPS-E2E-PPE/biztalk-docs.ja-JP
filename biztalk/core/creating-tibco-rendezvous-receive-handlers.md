@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d617a97-c165-46bb-b5a7-b66f0c1ff9f2
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24014489"
 ---
 # <a name="create-tibco-rendezvous-receive-artifacts"></a><span data-ttu-id="3e135-103">TIBCO Rendezvous の受信の成果物を作成します。</span><span class="sxs-lookup"><span data-stu-id="3e135-103">Create TIBCO Rendezvous Receive artifacts</span></span>
 <span data-ttu-id="3e135-104">通知やイベントの作成は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での他の呼び出しの作成と似ています。</span><span class="sxs-lookup"><span data-stu-id="3e135-104">Creating notifications or events is similar to creating other calls in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="3e135-105">ここでは、TIBCO Rendezvous メッセージを待機する受信場所を作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3e135-105">This section explains how to create a receive location to listen for TIBCO Rendezvous messages.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="3e135-126">**受信場所** ] ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="3e135-126">On the **Receive Locations** page, do the following:</span></span>  
   
-    1.  <span data-ttu-id="3e135-127">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e135-127">Click **New**.</span></span>  
+    1.  <span data-ttu-id="3e135-127">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e135-127">Click **New**.</span></span>  
   
     2.  <span data-ttu-id="3e135-128">**受信場所** ウィンドウで、 **全般** ] ページで入力、 **名前** 受信場所のです。</span><span class="sxs-lookup"><span data-stu-id="3e135-128">In the **Receive Locations** window, on the **General** page, type the **Name** of the receive location.</span></span>  
   
@@ -71,13 +72,13 @@ ms.lasthandoff: 03/28/2018
   
     6.  <span data-ttu-id="3e135-132">選択、 **有効にするサービス時間帯** チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="3e135-132">Select the **Enable service window** checkbox.</span></span>  
   
-    7.  <span data-ttu-id="3e135-133">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e135-133">Click **OK**.</span></span>  
+    7.  <span data-ttu-id="3e135-133">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e135-133">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="3e135-134">**受信マップ** ページで、選択したポートでドキュメントを変換するための受信マップを選択します。</span><span class="sxs-lookup"><span data-stu-id="3e135-134">On the **Inbound Maps** page, select the inbound maps for transforming documents on the selected port.</span></span>  
   
 6.  <span data-ttu-id="3e135-135">**追跡** ] ページで、必要なメッセージ本文を追跡および追跡メッセージのプロパティを選択します。</span><span class="sxs-lookup"><span data-stu-id="3e135-135">On the **Tracking** page, select the desired tracking message bodies and tracking message properties.</span></span>  
   
-7.  <span data-ttu-id="3e135-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e135-136">Click **OK**.</span></span>  
+7.  <span data-ttu-id="3e135-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e135-136">Click **OK**.</span></span>  
 
 ## <a name="set-the-transport-properties"></a><span data-ttu-id="3e135-137">トランスポートのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="3e135-137">Set the transport properties</span></span>
 <span data-ttu-id="3e135-138">メッセージをリッスンするように Microsoft BizTalk Adapter for TIBCO Rendezvous を構成するときは、どのサブジェクト名をリッスンするかを指定します。</span><span class="sxs-lookup"><span data-stu-id="3e135-138">When you configure Microsoft BizTalk Adapter for TIBCO Rendezvous to listen for messages, you specify the subject names to listen for.</span></span> <span data-ttu-id="3e135-139">必須のプロパティはこれだけです。</span><span class="sxs-lookup"><span data-stu-id="3e135-139">This is the only property that is required.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "警告ページを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: 警告ページを追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0023ee8d-a0d1-4257-95c6-38c95060bd62
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290426"
 ---
 # <a name="add-alert-page"></a><span data-ttu-id="f6b62-102">[警告の追加] ページ</span><span class="sxs-lookup"><span data-stu-id="f6b62-102">Add Alert Page</span></span>
 <span data-ttu-id="f6b62-103">図 1 は、アラートの追加 ページで、ポータルに、アラートで指定した条件 (条件) に一致するエラー メッセージが到着すると、ポータルを発生させる新しいアラートを作成することができますを示します。</span><span class="sxs-lookup"><span data-stu-id="f6b62-103">Figure 1 shows the Add Alert page, where you can create a new alert that the portal will raise when a fault message matching the criteria (conditions) specified in the alert arrives at the portal.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="f6b62-108">新しいアラートの名前を入力、**アラート名の入力**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="f6b62-108">Type a name for the new alert in the **Enter Alert Name** text box.</span></span>  
   
--   <span data-ttu-id="f6b62-109">アラートは受信の例外でのフィールドの値を照合する方法を指定、**このアラートの条件を追加する**このページの「します。</span><span class="sxs-lookup"><span data-stu-id="f6b62-109">Specify how the alert will match to values of the fields in incoming exceptions in the **Add conditions for this alert** section of this page.</span></span> <span data-ttu-id="f6b62-110">例外のスキーマからフィールドを選択 (など**アプリケーション、エラーの種類、**または**エラーの重大度)**で、**条件**ドロップ ダウン リスト;、(このような比較の種類を選択=、 **! =、> =、< =、**または**と同様に**) で、**演算子**ドロップダウン リストと型、または 3 番目の一覧から値を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6b62-110">Select a field from the exception schema (such as **Application, Error Type,** or **Fault Severity)** in the **Criteria** drop-down list; select a comparison type for the (such as =, **!=, >=, <=,** or **like**) in the **Operator** drop-down list; and type or select a value from the third list.</span></span> <span data-ttu-id="f6b62-111">例外フィールドを選択すると、**値**テキスト ボックスまたは入力するか、一致する値を選択するためのドロップダウン リストのいずれかの変更を制御します。</span><span class="sxs-lookup"><span data-stu-id="f6b62-111">When you select an exception field, the **Value** control changes to either a text box or a drop-down list for you to enter or select a matching value.</span></span>  
+-   <span data-ttu-id="f6b62-109">アラートは受信の例外でのフィールドの値を照合する方法を指定、**このアラートの条件を追加する**このページの「します。</span><span class="sxs-lookup"><span data-stu-id="f6b62-109">Specify how the alert will match to values of the fields in incoming exceptions in the **Add conditions for this alert** section of this page.</span></span> <span data-ttu-id="f6b62-110">例外のスキーマからフィールドを選択 (など**アプリケーション、エラーの種類、** または**エラーの重大度)** で、**条件**ドロップ ダウン リスト;、(このような比較の種類を選択=、 **! =、> =、< =、** または**と同様に**) で、**演算子**ドロップダウン リストと型、または 3 番目の一覧から値を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6b62-110">Select a field from the exception schema (such as **Application, Error Type,** or **Fault Severity)** in the **Criteria** drop-down list; select a comparison type for the (such as =, **!=, >=, <=,** or **like**) in the **Operator** drop-down list; and type or select a value from the third list.</span></span> <span data-ttu-id="f6b62-111">例外フィールドを選択すると、**値**テキスト ボックスまたは入力するか、一致する値を選択するためのドロップダウン リストのいずれかの変更を制御します。</span><span class="sxs-lookup"><span data-stu-id="f6b62-111">When you select an exception field, the **Value** control changes to either a text box or a drop-down list for you to enter or select a matching value.</span></span>  
   
 -   <span data-ttu-id="f6b62-112">選択するか、条件値を入力するをクリックして、**追加**リンクの一覧にこの条件を追加する、**条件**ページ、およびこのアラートに必要な複数の条件を追加する繰り返しのセクション.</span><span class="sxs-lookup"><span data-stu-id="f6b62-112">After selecting or entering the criteria values, click the **Add** link to add this condition to the list in the **Conditions** section of the page, and repeat to add any more conditions you require for this alert.</span></span>  
   

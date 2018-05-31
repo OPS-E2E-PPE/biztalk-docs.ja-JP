@@ -1,14 +1,14 @@
 ---
-title: "タスク 5: 構成変換 Shape1 |Microsoft ドキュメント"
-ms.custom: 
+title: 'タスク 5: 構成変換 Shape1 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93a73fd2-0f34-4681-8aed-7d54d69c86d3
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278746"
 ---
 # <a name="task-5-configure-the-transform-shape"></a><span data-ttu-id="e53ad-102">タスク 5: 変換図形を構成します。</span><span class="sxs-lookup"><span data-stu-id="e53ad-102">Task 5: Configure the Transform Shape</span></span>
 <span data-ttu-id="e53ad-103">変換図形を構成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e53ad-103">Use the following procedure to configure the Transform shape.</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="e53ad-112">ダブルクリックして**変換 _ 1**を開きます。</span><span class="sxs-lookup"><span data-stu-id="e53ad-112">Double-click **Transform_1** to open.</span></span>  
   
-    1.  <span data-ttu-id="e53ad-113">ソースを選択し、下の追加行をクリックして**変数名**選択**[begindocresponsemsg]**です。</span><span class="sxs-lookup"><span data-stu-id="e53ad-113">Select Source and click in the Add row under **Variable Name** and select **BeginDocResponseMsg**.</span></span>  
+    1.  <span data-ttu-id="e53ad-113">ソースを選択し、下の追加行をクリックして**変数名**選択 **[begindocresponsemsg]** です。</span><span class="sxs-lookup"><span data-stu-id="e53ad-113">Select Source and click in the Add row under **Variable Name** and select **BeginDocResponseMsg**.</span></span>  
   
          ![](../core/media/jde-transform-source.gif "JDE_transform_source")  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
          ![](../core/media/jde-transform-destination.gif "JDE_transform_destination")  
   
-3.  <span data-ttu-id="e53ad-115">ソリューション エクスプ ローラーでダブルクリック**[transform_1.btm]**マッピング ツールを開きます。</span><span class="sxs-lookup"><span data-stu-id="e53ad-115">In the Solution Explorer, double-click **Transform_1.btm** to open the mapping tool.</span></span> <span data-ttu-id="e53ad-116">次の 4 つのアイテムをリンクします。</span><span class="sxs-lookup"><span data-stu-id="e53ad-116">Link the following four items:</span></span>  
+3.  <span data-ttu-id="e53ad-115">ソリューション エクスプ ローラーでダブルクリック **[transform_1.btm]** マッピング ツールを開きます。</span><span class="sxs-lookup"><span data-stu-id="e53ad-115">In the Solution Explorer, double-click **Transform_1.btm** to open the mapping tool.</span></span> <span data-ttu-id="e53ad-116">次の 4 つのアイテムをリンクします。</span><span class="sxs-lookup"><span data-stu-id="e53ad-116">Link the following four items:</span></span>  
   
     -   <span data-ttu-id="e53ad-117">mnCMJobNo</span><span class="sxs-lookup"><span data-stu-id="e53ad-117">mnCMJobNo</span></span>  
   
@@ -87,13 +88,13 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="e53ad-126">クリックし、中央で右クリック**図形の挿入**、し、**変換**です。</span><span class="sxs-lookup"><span data-stu-id="e53ad-126">Right-click in the middle and select **Insert Shape**, and then select **Transform**.</span></span>  
   
-5.  <span data-ttu-id="e53ad-127">ダブルクリックして**[transform_2]**を開きます。</span><span class="sxs-lookup"><span data-stu-id="e53ad-127">Double-click **Transform_2** to open.</span></span>  
+5.  <span data-ttu-id="e53ad-127">ダブルクリックして **[transform_2]** を開きます。</span><span class="sxs-lookup"><span data-stu-id="e53ad-127">Double-click **Transform_2** to open.</span></span>  
   
     1.  <span data-ttu-id="e53ad-128">選択**ソース**下にある行の追加 をクリック**変数名**選択**begindocresponsemsg**です。</span><span class="sxs-lookup"><span data-stu-id="e53ad-128">Select **Source** and click in the Add row under **Variable Name** and select **BeginDocResponseMsg**.</span></span>  
   
     2.  <span data-ttu-id="e53ad-129">選択**先**下にある行の追加 をクリック**変数名**を選択**enddocmsg**、 をクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="e53ad-129">Select **Destination** and click in the Add row under **Variable Name**, select **EndDocMsg**, and click **OK**.</span></span>  
   
-6.  <span data-ttu-id="e53ad-130">ソリューション エクスプ ローラーでダブルクリック**[transform_2.btm]**マッピング ツールを開きます。</span><span class="sxs-lookup"><span data-stu-id="e53ad-130">In the Solution Explorer, double-click **Transform_2.btm** to open the mapping tool.</span></span> <span data-ttu-id="e53ad-131">次の 4 つのアイテムをリンクします。</span><span class="sxs-lookup"><span data-stu-id="e53ad-131">Link the following four items:</span></span>  
+6.  <span data-ttu-id="e53ad-130">ソリューション エクスプ ローラーでダブルクリック **[transform_2.btm]** マッピング ツールを開きます。</span><span class="sxs-lookup"><span data-stu-id="e53ad-130">In the Solution Explorer, double-click **Transform_2.btm** to open the mapping tool.</span></span> <span data-ttu-id="e53ad-131">次の 4 つのアイテムをリンクします。</span><span class="sxs-lookup"><span data-stu-id="e53ad-131">Link the following four items:</span></span>  
   
     -   <span data-ttu-id="e53ad-132">mnCMJobNo</span><span class="sxs-lookup"><span data-stu-id="e53ad-132">mnCMJobNo</span></span>  
   

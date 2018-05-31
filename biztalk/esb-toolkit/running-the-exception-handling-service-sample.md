@@ -1,14 +1,14 @@
 ---
-title: "例外処理サービスのサンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: 例外処理サービスのサンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d69e720c-89e4-42c2-b4d0-31f0b865ab7f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007787"
 ---
 # <a name="running-the-exception-handling-service-sample"></a><span data-ttu-id="3763a-102">例外処理サービスのサンプルを実行しています。</span><span class="sxs-lookup"><span data-stu-id="3763a-102">Running the Exception Handling Service Sample</span></span>
 <span data-ttu-id="3763a-103">例外処理サービスのサンプルでは、外部アプリケーションから、例外処理の ESB フレームワークにはエラーを送信するために、例外処理の Web サービスを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3763a-103">The Exception Handling Service sample demonstrates how to consume the Exception Handling Web Service in order to submit a fault into the ESB Exception Handling Framework from an external application.</span></span> <span data-ttu-id="3763a-104">このサンプルを実行するため、次の手順が必要です[例外管理のサンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples.md)です。</span><span class="sxs-lookup"><span data-stu-id="3763a-104">The following procedure for running this sample requires [Installing the Exception Management Samples](../esb-toolkit/installing-the-exception-management-samples.md).</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="3763a-106">Windows エクスプ ローラーで、インストールされている、フォルダー \Source\Samples\ExceptionHandlingService を開き、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプルを開き、ExceptionHandlingService.sln をという名前の Visual Studio ソリューション ファイルです。</span><span class="sxs-lookup"><span data-stu-id="3763a-106">In Windows Explorer, open the folder \Source\Samples\ExceptionHandlingService, where you installed the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] samples, and then open the Visual Studio solution file named ExceptionHandlingService.sln.</span></span>  
   
-2.  <span data-ttu-id="3763a-107">Visual Studio で、[**デバッグの開始]**ツールバー。</span><span class="sxs-lookup"><span data-stu-id="3763a-107">In Visual Studio, click **Start Debugging** on the Toolbar.</span></span>  
+2.  <span data-ttu-id="3763a-107">Visual Studio で、[**デバッグの開始]** ツールバー。</span><span class="sxs-lookup"><span data-stu-id="3763a-107">In Visual Studio, click **Start Debugging** on the Toolbar.</span></span>  
   
 3.  <span data-ttu-id="3763a-108">フォームを読み込みますが、をクリックして、**生成例外**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3763a-108">On the form that loads, click the **Generate Exception** button.</span></span>  
   

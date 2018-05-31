@@ -1,14 +1,14 @@
 ---
-title: "ESB JMS エンコーダーとデコーダー コンポーネントは、|Microsoft ドキュメント"
-ms.custom: 
+title: ESB JMS エンコーダーとデコーダー コンポーネントは、|Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4e5591c2-d2ca-4168-8026-059fe51dd588
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295682"
 ---
 # <a name="the-esb-jms-encoder-and-decoder-components"></a><span data-ttu-id="16457-102">ESB JMS エンコーダーおよびデコーダー コンポーネント</span><span class="sxs-lookup"><span data-stu-id="16457-102">The ESB JMS Encoder and Decoder Components</span></span>
 <span data-ttu-id="16457-103">一部の統合ソリューションに関連して Java Message Service (JMS) と IBM WebSphere MQ; の間に送信される SOAP メッセージ[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]このような状況で使用するためのマネージ コードで記述された 2 つの JMS パイプライン コンポーネントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="16457-103">Some integration solutions involve Java Message Service (JMS) and SOAP messages sent to or from IBM WebSphere MQ; [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes two JMS pipeline components written in managed code for use in these situations.</span></span> <span data-ttu-id="16457-104">コンポーネントの読み取りまたは書き込みのメッセージに関連付けられているコンテキスト プロパティの値を使用して、MQ メッセージ ヘッダーの JMS 部分。</span><span class="sxs-lookup"><span data-stu-id="16457-104">The components read or write the JMS portion of the MQ message header using the values of context properties associated with the message.</span></span> <span data-ttu-id="16457-105">現在、60 を超えるのさまざまな種類の JMS ヘッダー WebSphere MQ Series システムで使用するにはESB JMS コンポーネントは、MQRFH2 ヘッダーでのみ動作します。</span><span class="sxs-lookup"><span data-stu-id="16457-105">Currently, there are more than 60 different types of JMS headers in use with WebSphere MQ Series systems; the ESB JMS components work only with MQRFH2 headers.</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
  <span data-ttu-id="16457-107">ESB コアを自動的にインストールすると、BizTalk Server パイプライン コンポーネント フォルダーで JMS エンコーダーとデコーダーの JMS のコンポーネントがインストールされます。</span><span class="sxs-lookup"><span data-stu-id="16457-107">Installing the ESB Core automatically installs the JMS Encoder and JMS Decoder components in the BizTalk Server Pipeline Components folder.</span></span>  
   
 ## <a name="how-it-works"></a><span data-ttu-id="16457-108">しくみ</span><span class="sxs-lookup"><span data-stu-id="16457-108">How It Works</span></span>  
- <span data-ttu-id="16457-109">JMS パイプライン コンポーネントは、メッセージのヘッダーを検査しを持つメッセージに対してのみ機能、 **MQMD_Format**ヘッダーに設定**RFH (MQRFH2)**です。</span><span class="sxs-lookup"><span data-stu-id="16457-109">The JMS pipeline components inspect the message headers and operate only on messages that have the **MQMD_Format** header set to **RFH (MQRFH2)**.</span></span> <span data-ttu-id="16457-110">ただし、このプロパティを設定した場合でも、コンポーネントは IBM RFH2 形式への準拠していることを確認するヘッダーを検査します。</span><span class="sxs-lookup"><span data-stu-id="16457-110">However, even when this property is set, the components inspect the headers to confirm that they do conform to the IBM RFH2 format.</span></span> <span data-ttu-id="16457-111">コンポーネントを示す解析エラーを生成するヘッダーがこの形式に準拠していない場合、 **MQMD_Format**にパラメーターが設定された**RFH (MQRFH2)**ヘッダーの構造に準拠していませんが、RFH2 標準です。</span><span class="sxs-lookup"><span data-stu-id="16457-111">If the header does not conform to this format, the components generate a parse error that indicates the **MQMD_Format** parameter was set to **RFH (MQRFH2)**, but the structure of the header did not comply with the RFH2 standard.</span></span> <span data-ttu-id="16457-112">受信メッセージ ヘッダーの解析が失敗した場合、デコーダー コンポーネントにより、渡すには、メッセージが、という名前のメッセージ コンテキスト プロパティを設定**MQRFH2_ParseError**に**True**です。</span><span class="sxs-lookup"><span data-stu-id="16457-112">If inbound message header parsing fails, the decoder component allows the message to pass, but it sets a message context property named **MQRFH2_ParseError** to **True**.</span></span>  
+ <span data-ttu-id="16457-109">JMS パイプライン コンポーネントは、メッセージのヘッダーを検査しを持つメッセージに対してのみ機能、 **MQMD_Format**ヘッダーに設定**RFH (MQRFH2)** です。</span><span class="sxs-lookup"><span data-stu-id="16457-109">The JMS pipeline components inspect the message headers and operate only on messages that have the **MQMD_Format** header set to **RFH (MQRFH2)**.</span></span> <span data-ttu-id="16457-110">ただし、このプロパティを設定した場合でも、コンポーネントは IBM RFH2 形式への準拠していることを確認するヘッダーを検査します。</span><span class="sxs-lookup"><span data-stu-id="16457-110">However, even when this property is set, the components inspect the headers to confirm that they do conform to the IBM RFH2 format.</span></span> <span data-ttu-id="16457-111">コンポーネントを示す解析エラーを生成するヘッダーがこの形式に準拠していない場合、 **MQMD_Format**にパラメーターが設定された**RFH (MQRFH2)** ヘッダーの構造に準拠していませんが、RFH2 標準です。</span><span class="sxs-lookup"><span data-stu-id="16457-111">If the header does not conform to this format, the components generate a parse error that indicates the **MQMD_Format** parameter was set to **RFH (MQRFH2)**, but the structure of the header did not comply with the RFH2 standard.</span></span> <span data-ttu-id="16457-112">受信メッセージ ヘッダーの解析が失敗した場合、デコーダー コンポーネントにより、渡すには、メッセージが、という名前のメッセージ コンテキスト プロパティを設定**MQRFH2_ParseError**に**True**です。</span><span class="sxs-lookup"><span data-stu-id="16457-112">If inbound message header parsing fails, the decoder component allows the message to pass, but it sets a message context property named **MQRFH2_ParseError** to **True**.</span></span>  
   
  <span data-ttu-id="16457-113">**MQRFH2** JMS コンポーネントと BizTalk に展開されているプロパティ スキーマは、すべての MQRFH2 ヘッダーのプロパティを公開します。</span><span class="sxs-lookup"><span data-stu-id="16457-113">The **MQRFH2** property schema deployed in BizTalk with the JMS components exposes all of the MQRFH2 header properties.</span></span> <span data-ttu-id="16457-114">格納されている XML ドキュメントの受信メッセージのヘッダーを降格した後、ヘッダーのデータが存在する、 **MQRFH2_NameValueData**メッセージのコンテキスト プロパティです。</span><span class="sxs-lookup"><span data-stu-id="16457-114">After demoting the headers of an incoming message, the data from the headers resides in an XML document stored in the **MQRFH2_NameValueData** context property of the message.</span></span> <span data-ttu-id="16457-115">長さを調整します。 エンコーダー、 **NameValueData**いることを確認するフォルダーは、正しい長さ。</span><span class="sxs-lookup"><span data-stu-id="16457-115">The encoder adjusts the length of the **NameValueData** folder to ensure it is the correct length.</span></span> <span data-ttu-id="16457-116">値を変更する場合は、これらのヘッダー、および影響の使い方を理解、適切な IBM のドキュメントを確認します。</span><span class="sxs-lookup"><span data-stu-id="16457-116">To understand the usage of these headers, and the impact when changing the values, review the appropriate IBM documentation.</span></span>  
   

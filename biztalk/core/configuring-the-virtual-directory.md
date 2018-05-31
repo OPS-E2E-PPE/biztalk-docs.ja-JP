@@ -1,17 +1,17 @@
 ---
-title: "仮想ディレクトリの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 仮想ディレクトリの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - virtual directory, configuring
 - configuring virtual directory
 ms.assetid: 548e3bee-66bc-424c-895d-e8672a3d6301
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968816"
 ---
 # <a name="configuring-the-virtual-directory"></a><span data-ttu-id="da865-102">仮想ディレクトリの構成</span><span class="sxs-lookup"><span data-stu-id="da865-102">Configuring the Virtual Directory</span></span>
 <span data-ttu-id="da865-103">このトピックでは、仮想ディレクトリを構成してユーザーのアプリケーションを確認する手順を示します。</span><span class="sxs-lookup"><span data-stu-id="da865-103">This topic shows the procedures for configuring the virtual directory and verifying the application for a user.</span></span>  
@@ -32,15 +33,15 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="da865-107">をクリックして**開始**、 をポイント**プログラム**、 をクリックして**管理ツール**、 をクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="da865-107">Click **Start**, point to **Programs**, click **Administrative Tools**, and click **Internet Information Services (IIS) Manager**.</span></span>  
   
-3.  <span data-ttu-id="da865-108">展開**\<サーバー名\>**順に展開**サイト**です。</span><span class="sxs-lookup"><span data-stu-id="da865-108">Expand **\<server name\>** and then expand **Sites**.</span></span>  
+3.  <span data-ttu-id="da865-108">展開**\<サーバー名\>** 順に展開**サイト**です。</span><span class="sxs-lookup"><span data-stu-id="da865-108">Expand **\<server name\>** and then expand **Sites**.</span></span>  
   
 4.  <span data-ttu-id="da865-109">右クリック**Default Web Site**  をクリック**仮想ディレクトリの追加**です。</span><span class="sxs-lookup"><span data-stu-id="da865-109">Right-click **Default Web Site** and click **Add Virtual Directory**.</span></span>  
   
 5.  <span data-ttu-id="da865-110">**仮想ディレクトリの追加** ダイアログ ボックスで、別名を入力します。</span><span class="sxs-lookup"><span data-stu-id="da865-110">In the **Add Virtual Directory** dialog box, type the alias.</span></span>  
   
-6.  <span data-ttu-id="da865-111">手順 1. で作成したフォルダーのパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="da865-111">Type the path of the folder created in step 1.</span></span> <span data-ttu-id="da865-112">またはをクリックして**([...])**フォルダーの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="da865-112">Alternatively, click **(…)** to browse to the folder location.</span></span>  
+6.  <span data-ttu-id="da865-111">手順 1. で作成したフォルダーのパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="da865-111">Type the path of the folder created in step 1.</span></span> <span data-ttu-id="da865-112">またはをクリックして **([...])** フォルダーの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="da865-112">Alternatively, click **(…)** to browse to the folder location.</span></span>  
   
-7.  <span data-ttu-id="da865-113">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="da865-113">Click **OK**.</span></span> <span data-ttu-id="da865-114">下のフォルダーが表示されます、 **Default Web Site**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="da865-114">The folder is displayed under the **Default Web Site** folder.</span></span>  
+7.  <span data-ttu-id="da865-113">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="da865-113">Click **OK**.</span></span> <span data-ttu-id="da865-114">下のフォルダーが表示されます、 **Default Web Site**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="da865-114">The folder is displayed under the **Default Web Site** folder.</span></span>  
   
 8.  <span data-ttu-id="da865-115">フォルダーを右クリックし、をクリックして**アプリケーションへの変換**です。</span><span class="sxs-lookup"><span data-stu-id="da865-115">Right-click the folder and click **Convert to Application**.</span></span>  
   

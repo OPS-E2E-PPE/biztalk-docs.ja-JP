@@ -1,14 +1,14 @@
 ---
-title: "行程ベースのルーティング アイテム |Microsoft ドキュメント"
-ms.custom: 
+title: 行程ベースのルーティング アイテム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cff38ab7-5a16-42cc-9065-075e9db7acd3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296826"
 ---
 # <a name="itinerary-based-routing-artifacts"></a><span data-ttu-id="5ad9c-102">行程ベースのルーティング コンポーネント</span><span class="sxs-lookup"><span data-stu-id="5ad9c-102">Itinerary-Based Routing Artifacts</span></span>
 <span data-ttu-id="5ad9c-103">行程ベースのルーティング機能、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]複数のアセンブリで定義されているキーの成果物のセットが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5ad9c-103">The itinerary-based routing capabilities of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] include a set of key artifacts defined in multiple assemblies.</span></span> <span data-ttu-id="5ad9c-104">次の表を操作するときの開発者と追加の ESB itinerary サービス実装と旅程ベースのルーティング実装を拡張するためのカテゴリによってこれらの成果物が一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="5ad9c-104">The following tables list these artifacts by category to assist developers when working with and extending the itinerary-based routing implementation with additional ESB itinerary service implementations.</span></span>  

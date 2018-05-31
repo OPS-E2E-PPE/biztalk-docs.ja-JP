@@ -1,14 +1,14 @@
 ---
-title: "行程に関する |Microsoft ドキュメント"
-ms.custom: 
+title: 行程に関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4d34632f-8652-49dd-97b7-2513aacc1bd7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290610"
 ---
 # <a name="about-itineraries"></a><span data-ttu-id="ca27e-102">行程について</span><span class="sxs-lookup"><span data-stu-id="ca27e-102">About Itineraries</span></span>
 <span data-ttu-id="ca27e-103">日程、ESB 仲介ポリシー処理に基づいて命令のシーケンスを実行するための表現である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]拡張可能な形式です。</span><span class="sxs-lookup"><span data-stu-id="ca27e-103">An itinerary is a representation of an ESB mediation policy for executing a sequence of processing instructions based on the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extensible format.</span></span> <span data-ttu-id="ca27e-104">日程が宣言型の itinerary サービスの構成で仲介コンポーネントに関連付けられているのシーケンスを記述する高度な仲介言語として見なすことができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンです。</span><span class="sxs-lookup"><span data-stu-id="ca27e-104">An itinerary can be viewed as a high-level mediation language that describes a sequence of declarative itinerary services that are associated with mediation components by configuration of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine.</span></span> <span data-ttu-id="ca27e-105">メッセージの処理方法を説明する仲介フローをデザインすることができ、ビジュアルの描画として全体の流れを整理することができます。</span><span class="sxs-lookup"><span data-stu-id="ca27e-105">You can design mediation flows to describe how messages should be processed, and you can organize the entire flow as a visual drawing.</span></span> <span data-ttu-id="ca27e-106">実行時に、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンは、行程デザイナーによって生成される旅程を実行します。</span><span class="sxs-lookup"><span data-stu-id="ca27e-106">At run time, the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine executes the itinerary produced by Itinerary Designer.</span></span>  

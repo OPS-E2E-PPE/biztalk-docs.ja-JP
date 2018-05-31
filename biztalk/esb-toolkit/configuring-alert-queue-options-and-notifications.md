@@ -1,14 +1,14 @@
 ---
-title: "警告キュー オプションおよび通知の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 警告キュー オプションおよび通知の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f78afbf9-6e27-4887-8424-f265fbd8448a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290154"
 ---
 # <a name="configuring-alert-queue-options-and-notifications"></a><span data-ttu-id="3c0f5-102">警告キュー オプションの構成と通知</span><span class="sxs-lookup"><span data-stu-id="3c0f5-102">Configuring Alert Queue Options and Notifications</span></span>
 <span data-ttu-id="3c0f5-103">ESB の管理ポータルでは、アラートを生成するようにキューに置き、アラートにサブスクライブするユーザーに、アラート通知を送信、ESB Notification Service を使用して、ポータルにエラー メッセージが到着 ESB Alert サービスを使用します。</span><span class="sxs-lookup"><span data-stu-id="3c0f5-103">The ESB Management Portal uses the ESB Alert Service to generate alerts as fault messages arrive at the portal, and it uses the ESB Notification Service to queue and send alert notifications to users that subscribe to alerts.</span></span> <span data-ttu-id="3c0f5-104">ESB の管理ポータルでこれらのサービスで使用する設定を編集することができます。</span><span class="sxs-lookup"><span data-stu-id="3c0f5-104">You can edit the settings used by these services in the ESB Management Portal.</span></span>  

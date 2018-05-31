@@ -17,7 +17,7 @@ helpviewer_keywords:
 - BTATIBCOEMSTrace command
 - Event Tracing for Windows
 ms.assetid: 71954431-2015-4d50-b69e-500c883b1e04
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973616"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="88e05-102">Windows イベント トレーシングの使用</span><span class="sxs-lookup"><span data-stu-id="88e05-102">Using Event Tracing for Windows</span></span>
 <span data-ttu-id="88e05-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー メッセージ、警告メッセージ、および情報メッセージを Windows イベント ビューアーに記録します。</span><span class="sxs-lookup"><span data-stu-id="88e05-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="88e05-104">追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="88e05-104">You can see additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="88e05-105">ETW をアクティブにすると、メッセージ受信用の \*.etl ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="88e05-105">When ETW is activated, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="88e05-106">このファイルはバイナリ形式であり、読み取るには変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88e05-106">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="88e05-107">これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。</span><span class="sxs-lookup"><span data-stu-id="88e05-107">To do this, you must have a consumer application available to interpret the \*.etl file, for example, tracerpt.exe or tracedmp.exe.</span></span> <span data-ttu-id="88e05-108">たとえば、tracerpt.exe アプリケーションの変換、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。</span><span class="sxs-lookup"><span data-stu-id="88e05-108">For example, the tracerpt.exe application converts the \*.etl file into two text files: summary.txt and dumpfile.csv.</span></span>  
@@ -52,11 +53,11 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="88e05-125">BizTalk Adapter for TIBCO Enterprise Message Service には、さまざまな種類のメッセージをログに記録することを可能にするプロバイダーがあります。</span><span class="sxs-lookup"><span data-stu-id="88e05-125">BizTalk Adapter for TIBCO Enterprise Message Service has providers that enable you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="88e05-126">**受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="88e05-126">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="88e05-126">**受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="88e05-126">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
   
      <span data-ttu-id="88e05-127">使用 **-受信者** 実行時にアダプターによって受信されたログからすべてのメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="88e05-127">Use **-receiver** to obtain any messages from the log that were received by the adapter at run time.</span></span>  
   
--   <span data-ttu-id="88e05-128">**送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="88e05-128">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="88e05-128">**送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="88e05-128">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
   
      <span data-ttu-id="88e05-129">使用 **-送信機**実行時にアダプターによって送信されたログからすべてのメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="88e05-129">Use **-transmitter**to obtain any messages from the log that were transmitted by the adapter at run time.</span></span>  
   
@@ -71,7 +72,7 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
  <span data-ttu-id="88e05-133">各要素の説明は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="88e05-133">Where:</span></span>  
   
--   <span data-ttu-id="88e05-134">**\<Trace 要素\>**プロバイダーの種類は、(必須)。</span><span class="sxs-lookup"><span data-stu-id="88e05-134">**\<Trace element\>** (required) is the kind of provider.</span></span>  
+-   <span data-ttu-id="88e05-134">**\<Trace 要素\>** プロバイダーの種類は、(必須)。</span><span class="sxs-lookup"><span data-stu-id="88e05-134">**\<Trace element\>** (required) is the kind of provider.</span></span>  
   
  <span data-ttu-id="88e05-135">そのオプションは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="88e05-135">Its options are as follows:</span></span>  
   

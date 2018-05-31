@@ -1,15 +1,15 @@
 ---
-title: "SSO を使用して、TIBCO EMS を保護する |Microsoft ドキュメント"
-description: "BizTalk Server で TIBCO Enterprise Message Service を Microsoft BizTalk アダプターを使用する場合のセキュリティの概要"
-ms.custom: 
+title: SSO を使用して、TIBCO EMS を保護する |Microsoft ドキュメント
+description: BizTalk Server で TIBCO Enterprise Message Service を Microsoft BizTalk アダプターを使用する場合のセキュリティの概要
+ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0eccb44b-e9d8-42c2-a575-47f1d1cfe93c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016077"
 ---
 # <a name="security-in-biztalk-adapter-for-tibco-ems"></a><span data-ttu-id="fb19a-103">BizTalk Adapter for TIBCO EMS のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="fb19a-103">Security in BizTalk Adapter for TIBCO EMS</span></span>
 

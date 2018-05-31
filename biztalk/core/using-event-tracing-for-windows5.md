@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Event Tracing for Windows, components
 - BTAPeopleSoftTrace command
 ms.assetid: 330ef84b-5e2a-4b79-85a9-72271eb489d2
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973552"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="34a1d-102">Windows イベント トレーシングの使用</span><span class="sxs-lookup"><span data-stu-id="34a1d-102">Using Event Tracing for Windows</span></span>
 <span data-ttu-id="34a1d-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、および情報メッセージを、Windows イベント ビューアーに記録します。</span><span class="sxs-lookup"><span data-stu-id="34a1d-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="34a1d-104">追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="34a1d-104">You can see additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="34a1d-105">ETW が有効である場合、このメッセージを受信する \*.etl ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="34a1d-105">When ETW is enabled, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="34a1d-106">ファイルはバイナリ形式で、読み取れるに変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="34a1d-106">The file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="34a1d-107">これを行うには解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル; tracerpt.exe や tracedmp.exe などです。</span><span class="sxs-lookup"><span data-stu-id="34a1d-107">To do this you must have a consumer application available to interpret the \*.etl file; for example, tracerpt.exe or tracedmp.exe.</span></span>  
@@ -53,15 +54,15 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="34a1d-124">BizTalk Adapter for PeopleSoft Enterprise には、5 つのプロバイダーが用意されており、種類の異なるメッセージをログに記録できます。</span><span class="sxs-lookup"><span data-stu-id="34a1d-124">BizTalk Adapter for PeopleSoft Enterprise has five providers, allowing you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="34a1d-125">**受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-125">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="34a1d-125">**受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-125">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
   
--   <span data-ttu-id="34a1d-126">**受信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが**- castDetailsReceive**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-126">**Receiver CastDetails Provider**: The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
+-   <span data-ttu-id="34a1d-126">**受信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが **- castDetailsReceive**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-126">**Receiver CastDetails Provider**: The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
   
--   <span data-ttu-id="34a1d-127">**送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-127">**Transmitter Logging Provider**: The \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="34a1d-127">**送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-127">**Transmitter Logging Provider**: The \<Trace element\> switch is **-transmitter**.</span></span>  
   
--   <span data-ttu-id="34a1d-128">**送信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが**- castDetailsTransmit**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-128">**Transmitter CastDetails Provider**: The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
+-   <span data-ttu-id="34a1d-128">**送信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが **- castDetailsTransmit**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-128">**Transmitter CastDetails Provider**: The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
   
--   <span data-ttu-id="34a1d-129">**管理ログ プロバイダー**:\<トレース要素\>スイッチが**-管理**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-129">**Management Logging Provider**: The \<Trace element\> switch is **-management**.</span></span>  
+-   <span data-ttu-id="34a1d-129">**管理ログ プロバイダー**:\<トレース要素\>スイッチが **-管理**です。</span><span class="sxs-lookup"><span data-stu-id="34a1d-129">**Management Logging Provider**: The \<Trace element\> switch is **-management**.</span></span>  
   
 ## <a name="btapeoplesofttrace-command"></a><span data-ttu-id="34a1d-130">BTAPeopleSoftTrace コマンド</span><span class="sxs-lookup"><span data-stu-id="34a1d-130">BTAPeopleSoftTrace Command</span></span>  
  <span data-ttu-id="34a1d-131">ETW を使用して、アダプターのコマンドを実行する **BTAPeopleSoftTrace.cmd**します。</span><span class="sxs-lookup"><span data-stu-id="34a1d-131">To use ETW, run the adapter command, **BTAPeopleSoftTrace.cmd**.</span></span> <span data-ttu-id="34a1d-132">このコマンドは次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="34a1d-132">You use this command as follows:</span></span>  

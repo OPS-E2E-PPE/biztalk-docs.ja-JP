@@ -1,14 +1,14 @@
 ---
-title: "Namespace を追加する、ESB Namespace コンポーネントを削除および |Microsoft ドキュメント"
-ms.custom: 
+title: Namespace を追加する、ESB Namespace コンポーネントを削除および |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21df1b21-b73c-4e31-a234-49a1a6b53cc7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296250"
 ---
 # <a name="the-esb-add-namespace-and-remove-namespace-components"></a><span data-ttu-id="b6143-102">Namespace を追加する、ESB Namespace コンポーネントおよび削除</span><span class="sxs-lookup"><span data-stu-id="b6143-102">The ESB Add Namespace and Remove Namespace Components</span></span>
 <span data-ttu-id="b6143-103">多くの企業早期導入の XML テクノロジの時点であったとき基準がまだに新たなドキュメントの共有なしで共通です。</span><span class="sxs-lookup"><span data-stu-id="b6143-103">Many companies were early adopters of XML technologies at the time when standards were still emerging and document sharing was uncommon.</span></span> <span data-ttu-id="b6143-104">したがってが厳密に実行しなかったこれは、通常、ケース今日、一意のルート名前空間を含めるための要件です。</span><span class="sxs-lookup"><span data-stu-id="b6143-104">Therefore, they did not strictly enforce the requirements for including unique root namespaces, which is usually the case today.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="b6143-121">**NamespacePrefix**プロパティの値は予約済みの値のいずれかにすることはできません (**ns0**に**ns6**) と英数字にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b6143-121">The **NamespacePrefix** property value cannot be one of the reserved values (**ns0** to **ns6**) and must be alpha numeric.</span></span>  
   
- <span data-ttu-id="b6143-122">これらの規則からのすべてのバリエーションにより、メッセージを中断、実行時に例外がスローするコンポーネント (としてマークされている**– 中断された再開可能な**)、Windows アプリケーション イベント ログ エントリの書き込みとします。</span><span class="sxs-lookup"><span data-stu-id="b6143-122">Any variation from these rules causes the component to throw an exception at run time, suspend the message (marked as **Suspended – Resumable**), and write an entry in Windows Application Event Log.</span></span>  
+ <span data-ttu-id="b6143-122">これらの規則からのすべてのバリエーションにより、メッセージを中断、実行時に例外がスローするコンポーネント (としてマークされている **– 中断された再開可能な**)、Windows アプリケーション イベント ログ エントリの書き込みとします。</span><span class="sxs-lookup"><span data-stu-id="b6143-122">Any variation from these rules causes the component to throw an exception at run time, suspend the message (marked as **Suspended – Resumable**), and write an entry in Windows Application Event Log.</span></span>  
   
  <span data-ttu-id="b6143-123">削除 Namespace コンポーネントは、XML ドキュメントからすべてのルート名前空間を削除します。</span><span class="sxs-lookup"><span data-stu-id="b6143-123">The Remove Namespace component removes all root namespaces from an XML document.</span></span> <span data-ttu-id="b6143-124">コンポーネントが 1 つのドキュメントから削除できる名前空間の数は、処理中に、現在のノードを保持するために使用できる物理メモリによって制限されます。</span><span class="sxs-lookup"><span data-stu-id="b6143-124">The number of namespaces that the component can remove from a single document is constrained by the physical memory available to hold the current node during processing.</span></span> <span data-ttu-id="b6143-125">ただし、コンポーネントは、プロセスをストリーミング標準の BizTalk Server 2009 パイプラインのメッセージを使用し、ドキュメント内の現在のノードだけをドキュメント全体を読み込む代わりに、メモリに読み込みます。</span><span class="sxs-lookup"><span data-stu-id="b6143-125">However, the component uses standard BizTalk Server 2009 pipeline message streaming processes and loads only the current node in the document into memory instead of loading the entire document.</span></span>  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="component-properties"></a><span data-ttu-id="b6143-137">コンポーネント プロパティ</span><span class="sxs-lookup"><span data-stu-id="b6143-137">Component Properties</span></span>  
  <span data-ttu-id="b6143-138">Namespace の追加コンポーネントは、5 つのパブリック プロパティを公開します。</span><span class="sxs-lookup"><span data-stu-id="b6143-138">The Add Namespace component exposes five public properties:</span></span>  
   
--   <span data-ttu-id="b6143-139">**NamespacePrefix**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-139">**NamespacePrefix**.</span></span> <span data-ttu-id="b6143-140">これは、間に挿入される、名前空間のプレフィックス、 **xmlns:**部分と、次の等号 (=) に署名します。</span><span class="sxs-lookup"><span data-stu-id="b6143-140">This is the prefix of the namespace, inserted between the **xmlns:** part and the following equals sign ( = ).</span></span> <span data-ttu-id="b6143-141">標準の BizTalk スキーマ名前空間プレフィックスとの競合を避けるためには、値は使用しないでください**ns0**を通じて**ns9**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-141">To avoid conflicts with standard BizTalk Schema namespace prefixes, avoid using the values **ns0** through **ns9**.</span></span>  
+-   <span data-ttu-id="b6143-139">**NamespacePrefix**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-139">**NamespacePrefix**.</span></span> <span data-ttu-id="b6143-140">これは、間に挿入される、名前空間のプレフィックス、 **xmlns:** 部分と、次の等号 (=) に署名します。</span><span class="sxs-lookup"><span data-stu-id="b6143-140">This is the prefix of the namespace, inserted between the **xmlns:** part and the following equals sign ( = ).</span></span> <span data-ttu-id="b6143-141">標準の BizTalk スキーマ名前空間プレフィックスとの競合を避けるためには、値は使用しないでください**ns0**を通じて**ns9**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-141">To avoid conflicts with standard BizTalk Schema namespace prefixes, avoid using the values **ns0** through **ns9**.</span></span>  
   
 -   <span data-ttu-id="b6143-142">**NamespaceBase**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-142">**NamespaceBase**.</span></span> <span data-ttu-id="b6143-143">これは、名前空間内の値によって生成される結果をプレフィックスの静的なセクション、**区切り**と**Xpath**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="b6143-143">This is the static section of the namespace that will prefix the result generated by the values in the **Separator** and **XPaths** properties.</span></span>  
   
@@ -82,6 +83,6 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="b6143-153">**エンコード**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-153">**Encoding**.</span></span> <span data-ttu-id="b6143-154">これは、次の値のいずれかの出力メッセージのエンコーディング: **ascii、unicode/utf16**または**utf8**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-154">This is the encoding for the output message, one of the following values: **ascii, unicode/utf16,** or **utf8**.</span></span>  
   
--   <span data-ttu-id="b6143-155">**RemoveByteOrderMark**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-155">**RemoveByteOrderMark**.</span></span> <span data-ttu-id="b6143-156">これは、コンポーネントがバイト順マークを削除するかどうかを示すブール型プロパティ (通常**0xEFBB、0xBFFFFE、**または**0 xfeff**)、XML ドキュメント ストリームの先頭からです。</span><span class="sxs-lookup"><span data-stu-id="b6143-156">This is a Boolean property that indicates whether the component should remove the byte order mark (usually **0xEFBB, 0xBFFFFE,** or **0xFEFF**) from the beginning of the XML document stream.</span></span>  
+-   <span data-ttu-id="b6143-155">**RemoveByteOrderMark**です。</span><span class="sxs-lookup"><span data-stu-id="b6143-155">**RemoveByteOrderMark**.</span></span> <span data-ttu-id="b6143-156">これは、コンポーネントがバイト順マークを削除するかどうかを示すブール型プロパティ (通常**0xEFBB、0xBFFFFE、** または**0 xfeff**)、XML ドキュメント ストリームの先頭からです。</span><span class="sxs-lookup"><span data-stu-id="b6143-156">This is a Boolean property that indicates whether the component should remove the byte order mark (usually **0xEFBB, 0xBFFFFE,** or **0xFEFF**) from the beginning of the XML document stream.</span></span>  
   
  <span data-ttu-id="b6143-157">これらのコンポーネントを使用する方法の例は、次を参照してください。[をインストールすると、Namespace コンポーネント サンプルを実行している](../esb-toolkit/installing-and-running-the-namespace-component-sample.md)です。</span><span class="sxs-lookup"><span data-stu-id="b6143-157">For an example of how to use these components, see [Installing and Running the Namespace Component Sample](../esb-toolkit/installing-and-running-the-namespace-component-sample.md).</span></span>

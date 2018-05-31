@@ -1,14 +1,14 @@
 ---
-title: "自動参加および承認プロセス |Microsoft ドキュメント"
-ms.custom: 
+title: 自動参加および承認プロセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfd3e72e-e28b-4ee3-bc4a-89ef3f64e6d5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295626"
 ---
 # <a name="the-auto-enlist-and-approval-process"></a><span data-ttu-id="5f199-102">自動参加と承認のプロセス</span><span class="sxs-lookup"><span data-stu-id="5f199-102">The Auto-Enlist and Approval Process</span></span>
 <span data-ttu-id="5f199-103">2 つの方法で Microsoft BizTalk Server のエンドポイントを公開する、ESB の管理ポータルを構成できます。</span><span class="sxs-lookup"><span data-stu-id="5f199-103">You can configure the ESB Management Portal to publish Microsoft BizTalk Server endpoints in two ways:</span></span>  

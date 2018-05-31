@@ -1,14 +1,14 @@
 ---
-title: "インストールして、BizTalk Operations サンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: インストールして、BizTalk Operations サンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3551e5dd-5d77-4b7b-8e87-5970e29d9dba
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22293946"
 ---
 # <a name="installing-and-running-the-biztalk-operations-sample"></a><span data-ttu-id="88105-102">インストールして、BizTalk Operations サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="88105-102">Installing and Running the BizTalk Operations Sample</span></span>
 <span data-ttu-id="88105-103">Microsoft BizTalk 操作の例では、ESB BizTalk Operations サービスを使用する BizTalk アプリケーションにオペレーション データを照会する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="88105-103">The Microsoft BizTalk Operations sample shows how you can query for operational data on BizTalk applications using the ESB BizTalk Operations Service.</span></span> <span data-ttu-id="88105-104">ESB の管理ポータルでは、このサービスを使用して、返したり、BizTalk 管理データベースおよび追跡データベースの情報を更新します。</span><span class="sxs-lookup"><span data-stu-id="88105-104">The ESB Management Portal uses this service to return or update information in the BizTalk management and tracking databases.</span></span> <span data-ttu-id="88105-105">利用可能な情報は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="88105-105">The available information includes the following:</span></span>  

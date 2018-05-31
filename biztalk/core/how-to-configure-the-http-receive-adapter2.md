@@ -1,17 +1,17 @@
 ---
-title: "HTTP 受信 Adapter2 を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP 受信 Adapter2 を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP receive adapter, configuring
 - configuring HTTP receive adapter
 ms.assetid: dd26fd57-90d8-4ffe-b56f-8de55ecc6f68
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014777"
 ---
 # <a name="how-to-configure-the-http-receive-adapter"></a><span data-ttu-id="fabba-102">HTTP 受信アダプターを構成する方法</span><span class="sxs-lookup"><span data-stu-id="fabba-102">How to Configure the HTTP Receive Adapter</span></span>
 <span data-ttu-id="fabba-103">HTTP 受信アダプターを使用すると、メッセージを BizTalk Server に送信できます。</span><span class="sxs-lookup"><span data-stu-id="fabba-103">You can use the HTTP receive adapter to submit messages to BizTalk Server.</span></span> <span data-ttu-id="fabba-104">HTTP 受信アダプターは、インターネット インフォメーション サービス (IIS) プロセスでホストされる IIS の ISAPI 拡張です。</span><span class="sxs-lookup"><span data-stu-id="fabba-104">The HTTP receive adapter is an Internet Information Services (IIS) ISAPI extension that is hosted in the IIS process.</span></span>  
   
 ### <a name="to-configure-the-http-receive-adapter"></a><span data-ttu-id="fabba-105">HTTP 受信アダプターを構成するには</span><span class="sxs-lookup"><span data-stu-id="fabba-105">To configure the HTTP receive adapter</span></span>  
   
-1.  <span data-ttu-id="fabba-106">HTTP 受信アダプター (BTSHTTPReceive.dll) から **\<BizTalk2010 > \HttpReceive >**シングル サインオン (SSO) プロジェクトを含むフォルダーに (たとえば、 **< Adapter_install > \biztalk2010\SSO\mySSODemo**)。</span><span class="sxs-lookup"><span data-stu-id="fabba-106">Copy the HTTP receive adapter (BTSHTTPReceive.dll) from **\<BizTalk2010>\HttpReceive>** to the folder containing your Single Sign-On (SSO) project (for example, **<Adapter_install>\biztalk2010\SSO\mySSODemo**).</span></span>  
+1.  <span data-ttu-id="fabba-106">HTTP 受信アダプター (BTSHTTPReceive.dll) から **\<BizTalk2010 > \HttpReceive >** シングル サインオン (SSO) プロジェクトを含むフォルダーに (たとえば、 **< Adapter_install > \biztalk2010\SSO\mySSODemo**)。</span><span class="sxs-lookup"><span data-stu-id="fabba-106">Copy the HTTP receive adapter (BTSHTTPReceive.dll) from **\<BizTalk2010>\HttpReceive>** to the folder containing your Single Sign-On (SSO) project (for example, **<Adapter_install>\biztalk2010\SSO\mySSODemo**).</span></span>  
   
     1.  <span data-ttu-id="fabba-107">新しい Web サービス拡張機能 mySSODemo を追加します。</span><span class="sxs-lookup"><span data-stu-id="fabba-107">Add a new Web service extension mySSODemo.</span></span>  
   

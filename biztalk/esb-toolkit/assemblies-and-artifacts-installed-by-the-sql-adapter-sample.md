@@ -1,14 +1,14 @@
 ---
-title: "アセンブリおよびアイテムは、SQL アダプタ サンプルがインストールされている |Microsoft ドキュメント"
-ms.custom: 
+title: アセンブリおよびアイテムは、SQL アダプタ サンプルがインストールされている |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ba1d9826-1f04-4858-b6b8-855a83846ab2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007819"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-sql-adapter-sample"></a><span data-ttu-id="ad7f1-102">アセンブリと、SQL アダプタ サンプルがインストールされている成果物</span><span class="sxs-lookup"><span data-stu-id="ad7f1-102">Assemblies and Artifacts Installed by the SQL Adapter Sample</span></span>
 <span data-ttu-id="ad7f1-103">次の表には、アセンブリと SQL Adapter サンプル用にインストールされた他の成果物が一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="ad7f1-103">The following table lists the assemblies and other artifacts installed for the SQL Adapter sample.</span></span>  

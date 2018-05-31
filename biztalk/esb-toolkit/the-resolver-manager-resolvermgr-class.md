@@ -1,14 +1,14 @@
 ---
-title: "競合回避モジュール マネージャー (ResolverMgr) クラス |Microsoft ドキュメント"
-ms.custom: 
+title: 競合回避モジュール マネージャー (ResolverMgr) クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89fa551d-0aca-4777-adbc-2bc46ab8664a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294746"
 ---
 # <a name="the-resolver-manager-resolvermgr-class"></a><span data-ttu-id="a6752-102">競合回避モジュール マネージャー (ResolverMgr) クラス</span><span class="sxs-lookup"><span data-stu-id="a6752-102">The Resolver Manager (ResolverMgr) Class</span></span>
 <span data-ttu-id="a6752-103">変換およびルーティング サービスが使用するメッセージング、 **ResolverMgr**解決を実行するクラス。</span><span class="sxs-lookup"><span data-stu-id="a6752-103">The Transform and Routing messaging services use the **ResolverMgr** class to perform resolution.</span></span> <span data-ttu-id="a6752-104">ESB の動的変換と動的な配信エージェント使用しても、 **ResolverManager** ・ イン タイム (JIT) の解決を実行するクラス。</span><span class="sxs-lookup"><span data-stu-id="a6752-104">The ESB dynamic transformation and dynamic delivery agents also use the **ResolverManager** class to perform just-in-time (JIT) resolution.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "再送信の注意事項と制約事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 再送信の注意事項と制約事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 391064a9-1d61-4b10-97ab-d93b37d1ae23
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976608"
 ---
 # <a name="resubmission-notes-and-restrictions"></a><span data-ttu-id="39d01-102">再送信の注意事項と制約事項</span><span class="sxs-lookup"><span data-stu-id="39d01-102">Resubmission Notes and Restrictions</span></span>
 <span data-ttu-id="39d01-103">再送信プロセスには、次の注意事項と制約事項が適用されます。</span><span class="sxs-lookup"><span data-stu-id="39d01-103">The following notes and restrictions apply to the resubmission process:</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="39d01-105">WCF の上のランプの既定の URL は、http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc です。</span><span class="sxs-lookup"><span data-stu-id="39d01-105">The default URL for the WCF on-ramp is http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc.</span></span>  
   
--   <span data-ttu-id="39d01-106">ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>**のノード、  **\<System.ServiceModel\>** 参照してください。</span><span class="sxs-lookup"><span data-stu-id="39d01-106">The portal Web.config file defines the endpoint details for the WCF on-ramp in the **\<Client\>** node of the **\<System.ServiceModel\>** section.</span></span> <span data-ttu-id="39d01-107">既定値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="39d01-107">The following is the default value.</span></span>  
+-   <span data-ttu-id="39d01-106">ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>** のノード、  **\<System.ServiceModel\>** 参照してください。</span><span class="sxs-lookup"><span data-stu-id="39d01-106">The portal Web.config file defines the endpoint details for the WCF on-ramp in the **\<Client\>** node of the **\<System.ServiceModel\>** section.</span></span> <span data-ttu-id="39d01-107">既定値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="39d01-107">The following is the default value.</span></span>  
   
     ```  
     <endpoint  

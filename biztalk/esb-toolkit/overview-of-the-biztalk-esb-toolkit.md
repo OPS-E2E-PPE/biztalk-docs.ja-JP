@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で ESB Toolkit の概要 |Microsoft ドキュメント"
-description: "BizTalk Server でどのように、ESB Toolkit の説明"
-caps.latest.revision: "6"
+title: BizTalk Server で ESB Toolkit の概要 |Microsoft ドキュメント
+description: BizTalk Server でどのように、ESB Toolkit の説明
+caps.latest.revision: 6
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e190b34-40bc-4f27-9b4f-56e98591e1d4
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296730"
 ---
 # <a name="what-is-the-biztalk-esb-toolkit"></a><span data-ttu-id="5e501-103">BizTalk ESB Toolkit は、新機能</span><span class="sxs-lookup"><span data-stu-id="5e501-103">What is the BizTalk ESB Toolkit</span></span>
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="5e501-121">ビジネス アクティビティの監視</span><span class="sxs-lookup"><span data-stu-id="5e501-121">Business activity monitoring</span></span>  
   
--   <span data-ttu-id="5e501-122">Web サービスと ws-* (WCF アダプター) の統合</span><span class="sxs-lookup"><span data-stu-id="5e501-122">Web service and WS-* integration (WCF adapter)</span></span>  
+-   <span data-ttu-id="5e501-122">Web サービスと ws-\* (WCF アダプター) の統合</span><span class="sxs-lookup"><span data-stu-id="5e501-122">Web service and WS-\* integration (WCF adapter)</span></span>  
 
 ## <a name="core-capabilities"></a><span data-ttu-id="5e501-123">コア機能</span><span class="sxs-lookup"><span data-stu-id="5e501-123">Core capabilities</span></span>  
  <span data-ttu-id="5e501-124">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]堅牢性、接続されている、サービス指向アプリケーションの構築に重点を置いての新機能の範囲を指定する BizTalk Server の機能を拡張します。</span><span class="sxs-lookup"><span data-stu-id="5e501-124">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extends the functionality of BizTalk Server to provide a range of new capabilities focused on building robust, connected, service-oriented applications.</span></span> <span data-ttu-id="5e501-125">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]は BizTalk Server コンポーネントを接続可能な作業の個々 の単位として処理、必要に応じてを形成疎結合されたソリューションです。</span><span class="sxs-lookup"><span data-stu-id="5e501-125">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] treats BizTalk Server components as individual units of work that can be connected, as desired, to form loosely coupled solutions.</span></span> <span data-ttu-id="5e501-126">コア機能の一部を次に示しますを[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]BizTalk Server の機能を強化するために提供します。</span><span class="sxs-lookup"><span data-stu-id="5e501-126">The following are some of the core capabilities that the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides to enhance the capabilities of BizTalk Server:</span></span>  

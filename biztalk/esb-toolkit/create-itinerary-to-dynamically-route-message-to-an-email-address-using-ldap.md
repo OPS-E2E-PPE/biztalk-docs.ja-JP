@@ -1,14 +1,14 @@
 ---
-title: "方法: 動的に LDAP クエリを使用する電子メール アドレスにメッセージをルーティングする日程を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: 動的に LDAP クエリを使用する電子メール アドレスにメッセージをルーティングする日程を作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d9929dd-5e45-4b0d-90df-52a35e68b0ba
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010115"
 ---
 # <a name="how-to-create-an-itinerary-to-dynamically-route-a-message-to-an-email-address-using-an-ldap-query"></a><span data-ttu-id="099c5-102">方法: 動的に LDAP クエリを使用する電子メール アドレスにメッセージをルーティングする日程を作成します。</span><span class="sxs-lookup"><span data-stu-id="099c5-102">How to: Create an Itinerary to Dynamically Route a Message to an Email Address Using an LDAP Query</span></span>
 ## <a name="goal"></a><span data-ttu-id="099c5-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="099c5-103">Goal</span></span>  
@@ -91,7 +92,7 @@ ms.lasthandoff: 12/01/2017
   
     3.  <span data-ttu-id="099c5-147">**トランスポート名**ドロップダウン リストをクリックして**SMTP**です。</span><span class="sxs-lookup"><span data-stu-id="099c5-147">In the **Transport Name** drop-down list, click **SMTP**.</span></span>  
   
-    4.  <span data-ttu-id="099c5-148">クリックして、**トランスポート場所**プロパティ、および入力**{メール}**</span><span class="sxs-lookup"><span data-stu-id="099c5-148">Click the **Transport Location** property, and then type **{mail}**</span></span>  
+    4.  <span data-ttu-id="099c5-148">クリックして、**トランスポート場所**プロパティ、および入力 **{メール}**</span><span class="sxs-lookup"><span data-stu-id="099c5-148">Click the **Transport Location** property, and then type **{mail}**</span></span>  
   
     5.  <span data-ttu-id="099c5-149">クリックして、 **SearchRoot**プロパティ、および入力**ou = 従業員、dc = globalbank、dc = com**</span><span class="sxs-lookup"><span data-stu-id="099c5-149">Click the **SearchRoot** property, and then type **ou=Employees,dc=globalbank,dc=com**</span></span>  
   
@@ -113,9 +114,9 @@ ms.lasthandoff: 12/01/2017
   
     3.  <span data-ttu-id="099c5-157">クリックして、 **MessagePartsAttachment**プロパティ、および入力**2**です。</span><span class="sxs-lookup"><span data-stu-id="099c5-157">Click the **MessagePartsAttachment** property, and then type **2**.</span></span>  
   
-    4.  <span data-ttu-id="099c5-158">クリックして、**サブジェクト**プロパティ、および入力**{givenName} の順序**です。</span><span class="sxs-lookup"><span data-stu-id="099c5-158">Click the **Subject** property, and then type **Order for {givenName}**.</span></span>  
+    4.  <span data-ttu-id="099c5-158">クリックして、**サブジェクト**プロパティ、および入力 **{givenName} の順序**です。</span><span class="sxs-lookup"><span data-stu-id="099c5-158">Click the **Subject** property, and then type **Order for {givenName}**.</span></span>  
   
-    5.  <span data-ttu-id="099c5-159">構成、 **SMTPAuthentication、smtphost の各ユーザー名、**と**パスワード**プロパティは、ローカル環境の接続情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="099c5-159">Configure the **SMTPAuthentication, SMTPHost, UserName,** and **Password** properties using the connection information for your local environment.</span></span>  
+    5.  <span data-ttu-id="099c5-159">構成、 **SMTPAuthentication、smtphost の各ユーザー名、** と**パスワード**プロパティは、ローカル環境の接続情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="099c5-159">Configure the **SMTPAuthentication, SMTPHost, UserName,** and **Password** properties using the connection information for your local environment.</span></span>  
   
     6.  <span data-ttu-id="099c5-160">をクリックして**OK**を閉じる、**エンドポイント構成** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="099c5-160">Click **OK** to close the **Endpoint Configuration** dialog box.</span></span>  
   

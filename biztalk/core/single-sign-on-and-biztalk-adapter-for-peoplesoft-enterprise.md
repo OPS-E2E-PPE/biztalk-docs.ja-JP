@@ -1,18 +1,18 @@
 ---
-title: "PeopleSoft Enterprise の単一のサインオンと BizTalk Adapter |Microsoft ドキュメント"
-ms.custom: 
+title: PeopleSoft Enterprise の単一のサインオンと BizTalk Adapter |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing HTTP requests
 - Single Sign-On, using with the adapter
 - HTTP requests, processing
 ms.assetid: d8ad75f1-a83f-4722-a43f-50dc95df2f9d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015601"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="3fd25-102">シングル サインオンと BizTalk Adapter for PeopleSoft Enterprise</span><span class="sxs-lookup"><span data-stu-id="3fd25-102">Single Sign-On and BizTalk Adapter for PeopleSoft Enterprise</span></span>
 <span data-ttu-id="3fd25-103">シングル サインオン (SSO) を Microsoft BizTalk Adapter for PeopleSoft Enterprise を使用するときに、アダプターが SSO 資格情報データベースから資格情報を取得します。そのためでサーバー システムのログオン資格情報を入力する必要はありません、**トランスポートのプロパティ**] ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="3fd25-103">When you use Single Sign-On (SSO) with Microsoft BizTalk Adapter for PeopleSoft Enterprise, the adapter obtains the credentials from the SSO Credentials database; therefore, you do not have to enter the logon credentials for the server system in the **Transport Properties** dialog box.</span></span>  

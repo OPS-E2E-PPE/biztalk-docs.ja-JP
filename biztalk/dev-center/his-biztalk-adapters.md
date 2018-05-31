@@ -1,12 +1,12 @@
 ---
-title: "Host Integration Server に付属の BizTalk アダプター |Microsoft ドキュメント"
-description: "彼に含まれているアプリケーションのホスト、ホスト ファイル、DB2、および WebSphere MQ の BizTalk アダプターの概要"
+title: Host Integration Server に付属の BizTalk アダプター |Microsoft ドキュメント
+description: 彼に含まれているアプリケーションのホスト、ホスト ファイル、DB2、および WebSphere MQ の BizTalk アダプターの概要
 author: MandiOhlinger
 manager: anneta
 ms.date: 10/10/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.author: mandia
 ms.openlocfilehash: 26f2bf48c9a1268aace041776ff3895c8f3b3aa5
@@ -14,6 +14,7 @@ ms.sourcegitcommit: 75d35f6f230f0846c29a4b146c6d5b074e60b13c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/11/2017
+ms.locfileid: "22645182"
 ---
 # <a name="biztalk-adapters-for-host-systems"></a><span data-ttu-id="9b420-103">BizTalk アダプターのホスト システム</span><span class="sxs-lookup"><span data-stu-id="9b420-103">BizTalk adapters for host systems</span></span>
 

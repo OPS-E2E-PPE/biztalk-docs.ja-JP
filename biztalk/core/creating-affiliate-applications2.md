@@ -1,14 +1,14 @@
 ---
-title: "PeopleSoft Enterprise の関連アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: PeopleSoft Enterprise の関連アプリケーションの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95151163-5aaf-4683-afb7-02949ccda3e1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015973"
 ---
 # <a name="creating-affiliate-applications"></a><span data-ttu-id="03da3-102">関連アプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="03da3-102">Creating Affiliate Applications</span></span>
 <span data-ttu-id="03da3-103">次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用を開始する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="03da3-103">The following steps show how to start using affiliate applications and Single Sign-On (SSO).</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/07/2017
   
      ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   
-4.  <span data-ttu-id="03da3-113">使用して関連アプリケーションを作成する * です。スタート、として XML では、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="03da3-113">To create the affiliate application by using *.XML as a start, type the following command:</span></span>  
+4.  <span data-ttu-id="03da3-113">使用して関連アプリケーションを作成する \* です。スタート、として XML では、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="03da3-113">To create the affiliate application by using \*.XML as a start, type the following command:</span></span>  
   
      `ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml`  
   

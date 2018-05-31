@@ -1,17 +1,17 @@
 ---
-title: "コンポーネント インターフェイスを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: コンポーネント インターフェイスを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating component interfaces
 - component interfaces, creating
 ms.assetid: 9def053a-cbf6-4b34-b2e8-b2d03bffc5fe
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249298"
 ---
 # <a name="how-to-create-component-interfaces"></a><span data-ttu-id="3ad68-102">コンポーネント インターフェイスの作成方法</span><span class="sxs-lookup"><span data-stu-id="3ad68-102">How to Create Component Interfaces</span></span>
 <span data-ttu-id="3ad68-103">コンポーネント インターフェイスは、PeopleSoft アプリケーション デザイナーを使用して作成します </span><span class="sxs-lookup"><span data-stu-id="3ad68-103">You create component interfaces using the PeopleSoft Application Designer.</span></span> <span data-ttu-id="3ad68-104">(アプリケーション デザイナの詳細については、PeopleSoft Enterprise のドキュメントを参照してください)。</span><span class="sxs-lookup"><span data-stu-id="3ad68-104">(For more information about Application Designer, see the PeopleSoft Enterprise documentation.)</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="3ad68-114">PeopleSoft アプリケーション デザイナを開きます。</span><span class="sxs-lookup"><span data-stu-id="3ad68-114">Open the PeopleSoft Application Designer.</span></span>  
   
-2.  <span data-ttu-id="3ad68-115">**[ファイル]** メニューの **[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3ad68-115">On the **File** menu, click **New**.</span></span>  
+2.  <span data-ttu-id="3ad68-115">**[ファイル]** メニューの **[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3ad68-115">On the **File** menu, click **New**.</span></span>  
   
      ![](../core/media/psadapter-42-ps-new-compinterface.gif "PSAdapter_42_PS_New_CompInterface")  
   

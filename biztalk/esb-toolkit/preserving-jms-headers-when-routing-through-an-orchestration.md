@@ -1,14 +1,14 @@
 ---
-title: "JMS ヘッダーを保持し、オーケストレーションでルーティングするときに |Microsoft ドキュメント"
-ms.custom: 
+title: JMS ヘッダーを保持し、オーケストレーションでルーティングするときに |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9a59ff3-0cbf-499f-92b2-cf5b808d8b3f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294674"
 ---
 # <a name="preserving-jms-headers-when-routing-through-an-orchestration"></a><span data-ttu-id="49857-102">オーケストレーションでルーティングするときに、JMS ヘッダーを保持します。</span><span class="sxs-lookup"><span data-stu-id="49857-102">Preserving JMS Headers When Routing Through an Orchestration</span></span>
 <span data-ttu-id="49857-103">このユース ケースでは、コンポーネントがで提供される[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]Java Message Service (JMS) ヘッダーを受信メッセージから抽出し、し、それらを再構築でメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="49857-103">In this use case, components provided with [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extract Java Message Service (JMS) headers from an incoming message and then reconstructs them in the outgoing message.</span></span> <span data-ttu-id="49857-104">JMS メッセージ ヘッダーの保存図 1 に示すようには、オーケストレーション内からヘッダーのコンテキストへのアクセスを示します。</span><span class="sxs-lookup"><span data-stu-id="49857-104">This demonstrates JMS message header preservation and access to header context from inside an orchestration, as illustrated in Figure 1.</span></span>  

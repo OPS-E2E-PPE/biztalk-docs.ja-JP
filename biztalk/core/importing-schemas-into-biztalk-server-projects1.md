@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server Projects1 へのスキーマのインポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server Projects1 へのスキーマのインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, importing into BizTalk Server
 - orchestration types, port types
 ms.assetid: fa640195-a735-4201-a893-48f3405ddcb5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015449"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a><span data-ttu-id="11292-102">BizTalk Server プロジェクトへのスキーマのインポート</span><span class="sxs-lookup"><span data-stu-id="11292-102">Importing Schemas into BizTalk Server Projects</span></span>
 <span data-ttu-id="11292-103">ここでは、BizTalk Server プロジェクトにスキーマをインポートする手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="11292-103">The following information describes how to import schemas into a BizTalk Server project.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  <span data-ttu-id="11292-107">をクリックして**アダプタの追加**、し、**開く**です。</span><span class="sxs-lookup"><span data-stu-id="11292-107">Click **Add adapter**, and then select **Open**.</span></span>  
   
-3.  <span data-ttu-id="11292-108">アダプターを選択して**、j. d.Edwards OneWorld XE**です。</span><span class="sxs-lookup"><span data-stu-id="11292-108">Select the adapter**, J.D. Edwards OneWorld XE**.</span></span>  
+3.  <span data-ttu-id="11292-108">アダプターを選択して **、j. d.Edwards OneWorld XE**です。</span><span class="sxs-lookup"><span data-stu-id="11292-108">Select the adapter **, J.D. Edwards OneWorld XE**.</span></span>  
   
 4.  <span data-ttu-id="11292-109">ドロップダウン リストで、ポートを選択**SSOSendToJD Edwards OneWorld XE**、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="11292-109">In the drop-down list, select the port **SSOSendToJD Edwards OneWorld XE**, and then click **Next**.</span></span>  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/07/2017
   
 5.  <span data-ttu-id="11292-113">展開**myJ.D です。Edwards OneWorld XESSO**です。</span><span class="sxs-lookup"><span data-stu-id="11292-113">Expand **myJ.D. Edwards OneWorld XESSO**.</span></span>  
   
-6.  <span data-ttu-id="11292-114">項目へ移動します (またはドラッグ) にある矢印アイコンをクリックして、**送信**ウィンドウ、およびクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="11292-114">Click the arrow icon to move the item (or simply drag it) into the **Transmit** window, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="11292-114">項目へ移動します (またはドラッグ) にある矢印アイコンをクリックして、**送信**ウィンドウ、およびクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="11292-114">Click the arrow icon to move the item (or simply drag it) into the **Transmit** window, and then click **OK**.</span></span>  
   
      <span data-ttu-id="11292-115">SSOSchedule プロジェクトにスキーマが追加されます。</span><span class="sxs-lookup"><span data-stu-id="11292-115">The schemas are added to the SSOSchedule project.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "アセンブリおよび Namespace コンポーネント サンプルがインストールされているアイテム |Microsoft ドキュメント"
-ms.custom: 
+title: アセンブリおよび Namespace コンポーネント サンプルがインストールされているアイテム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df4a0a73-6b60-4006-ab9a-74354c972507
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290506"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-namespace-component-sample"></a><span data-ttu-id="9b40a-102">アセンブリおよび Namespace コンポーネント サンプルがインストールされているアイテム</span><span class="sxs-lookup"><span data-stu-id="9b40a-102">Assemblies and Artifacts Installed by the Namespace Component Sample</span></span>
 <span data-ttu-id="9b40a-103">次の表は、アセンブリおよびによってインストールされているアイテム、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Namespace コンポーネント サンプルです。</span><span class="sxs-lookup"><span data-stu-id="9b40a-103">The following table lists the assemblies and artifacts installed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Namespace Component sample.</span></span>  

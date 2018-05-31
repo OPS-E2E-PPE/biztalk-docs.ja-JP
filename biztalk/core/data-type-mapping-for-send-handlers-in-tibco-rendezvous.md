@@ -1,14 +1,14 @@
 ---
-title: "TIBCO Rendezvous のデータ型のマッピングの送信ハンドラーの |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Rendezvous のデータ型のマッピングの送信ハンドラーの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa1a9233-8781-45a8-9c55-a18ecaa0f456
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015241"
 ---
 # <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a><span data-ttu-id="0f7eb-102">TIBCO Rendezvous での送信ハンドラーのデータ型マッピング</span><span class="sxs-lookup"><span data-stu-id="0f7eb-102">Data Type Mapping for Send Handlers in TIBCO Rendezvous</span></span>
 <span data-ttu-id="0f7eb-103">XML スキーマの種類は、TIBCO Rendezvous に型情報 (xsi:type=) が提供されている場合にのみ、TIBCO Rendezvous の型にマップできます。</span><span class="sxs-lookup"><span data-stu-id="0f7eb-103">The mapping from XML schema types to TIBCO Rendezvous types is only possible if TIBCO Rendezvous provides type information (xsi:type=).</span></span> <span data-ttu-id="0f7eb-104">サポートされない型はすべて、可能な場合は、文字列にマップされます。</span><span class="sxs-lookup"><span data-stu-id="0f7eb-104">Any unsupported types are mapped to strings if it is possible.</span></span> <span data-ttu-id="0f7eb-105">マップできない場合、またはポート構成でこのオプションが無効である場合は、エラーが生成されます。</span><span class="sxs-lookup"><span data-stu-id="0f7eb-105">If mapping is not possible, or if the option is disabled in the port configuration, an error is generated.</span></span>  

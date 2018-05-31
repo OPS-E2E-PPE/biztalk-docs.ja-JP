@@ -1,14 +1,14 @@
 ---
-title: "Itinerary Designer での作業 |Microsoft ドキュメント"
-ms.custom: 
+title: Itinerary Designer での作業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06742cb8-f6d6-46e2-adc0-6be9a3d6a447
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976784"
 ---
 # <a name="working-in-itinerary-designer"></a><span data-ttu-id="6c6ae-102">Itinerary Designer での作業</span><span class="sxs-lookup"><span data-stu-id="6c6ae-102">Working in Itinerary Designer</span></span>
 <span data-ttu-id="6c6ae-103">Microsoft Visual c# プロジェクトを作成した後は、新しい itinerary モデルを作成し、既存の日程をプロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="6c6ae-103">After you create a Microsoft Visual C# project, you can create new itinerary models and add existing itineraries to the project.</span></span> <span data-ttu-id="6c6ae-104">次の手順では、新しい旅程を作成、既存の itinerary モデルを追加または日程の名前を変更する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6c6ae-104">The following steps describe how to create a new itinerary, add an existing itinerary model, or change the name of an itinerary.</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="save-an-itinerary"></a><span data-ttu-id="6c6ae-119">日程を保存します。</span><span class="sxs-lookup"><span data-stu-id="6c6ae-119">Save an itinerary</span></span>  
   
-<span data-ttu-id="6c6ae-120">**ファイル** メニューのをクリックして**保存\<itinerary 名前\>**です。</span><span class="sxs-lookup"><span data-stu-id="6c6ae-120">On the **File** menu, click **Save \<itinerary name\>**.</span></span>  
+<span data-ttu-id="6c6ae-120">**ファイル** メニューのをクリックして**保存\<itinerary 名前\>** です。</span><span class="sxs-lookup"><span data-stu-id="6c6ae-120">On the **File** menu, click **Save \<itinerary name\>**.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="6c6ae-121">Itinerary ファイルは、対応する XML 形式での DSL モデルとして保存されます。</span><span class="sxs-lookup"><span data-stu-id="6c6ae-121">Itinerary files are saved as DSL models in corresponding XML format.</span></span>  

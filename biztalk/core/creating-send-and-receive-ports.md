@@ -1,11 +1,11 @@
 ---
-title: "作成する送信ポートと受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 作成する送信ポートと受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards OneWorld adapters, receive ports
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - receive ports, creating [JD Edwards OneWorld adapters]
 - creating, send ports [JD Edwards OneWorld adapters]
 ms.assetid: fb4ca8b1-40d9-4beb-a791-554086f8ca98
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014033"
 ---
 # <a name="creating-send-and-receive-ports"></a><span data-ttu-id="53735-102">作成する送信ポートと受信ポート</span><span class="sxs-lookup"><span data-stu-id="53735-102">Creating Send and Receive Ports</span></span>
 <span data-ttu-id="53735-103">次の手順を使用して、BizTalk Adapter for JD Edwards OneWorld 用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信ポートおよび受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="53735-103">Use the following procedures to create [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send and receive ports for BizTalk Adapter for JD Edwards OneWorld.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/07/2017
   
     -   <span data-ttu-id="53735-114">**受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**です。</span><span class="sxs-lookup"><span data-stu-id="53735-114">For the **Receive Pipeline**, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
-5.  <span data-ttu-id="53735-115">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53735-115">Click **OK**.</span></span>  
+5.  <span data-ttu-id="53735-115">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53735-115">Click **OK**.</span></span>  
   
 ## <a name="creating-a-receive-port"></a><span data-ttu-id="53735-116">作成する、受信ポート</span><span class="sxs-lookup"><span data-stu-id="53735-116">Creating a Receive Port</span></span>  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/07/2017
   
 3.  <span data-ttu-id="53735-120">右クリック**受信ポート** をクリック**新規**、クリックして**一方向の受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="53735-120">Right-click **Receive Ports** and click **New**, and then click **One-way Receive Port**.</span></span>  
   
-     <span data-ttu-id="53735-121">**一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、クリックしてして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="53735-121">On the **One-Way Receive Port Properties** screen, in the **Name** field, type `ReceiveFromHttp`, and then click **OK**.</span></span>  
+     <span data-ttu-id="53735-121">**一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、クリックしてして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="53735-121">On the **One-Way Receive Port Properties** screen, in the **Name** field, type `ReceiveFromHttp`, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="53735-122">次の情報を入力、**一方向受信ポートのプロパティ**ウィンドウ。</span><span class="sxs-lookup"><span data-stu-id="53735-122">Enter the following information in the **One-way Receive Port Properties** window:</span></span>  
   

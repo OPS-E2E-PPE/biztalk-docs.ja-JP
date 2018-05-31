@@ -1,14 +1,14 @@
 ---
-title: "ESB 例外管理フレームワークの設計 |Microsoft ドキュメント"
-ms.custom: 
+title: ESB 例外管理フレームワークの設計 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cfc2688c-c01c-4244-9e35-3d482135d8b7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008011"
 ---
 # <a name="design-of-the-esb-exception-management-framework"></a><span data-ttu-id="653b5-102">ESB 例外管理フレームワークの設計</span><span class="sxs-lookup"><span data-stu-id="653b5-102">Design of the ESB Exception Management Framework</span></span>
 <span data-ttu-id="653b5-103">例外を管理するための一貫性があり再利用可能なのパターンは、任意の開発プロジェクトのコアの考慮事項です。それらは保守容易性を最大化し、展開後にアプリケーションをサポートするために容易にできるようにするのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="653b5-103">Consistent and re-usable patterns for managing exceptions are a core consideration of any development project; they help to maximize maintainability and make it easier to support the application after deployment.</span></span>  

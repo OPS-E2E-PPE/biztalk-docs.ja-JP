@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で ESB Toolkit の SOA ガバナンス統合 |Microsoft ドキュメント"
-description: "BizTalk Server で ESB ツールキットを使用して、SOA ベースのシステムおよびサード パーティ統合での課題の一覧"
-caps.latest.revision: "3"
+title: BizTalk Server で ESB Toolkit の SOA ガバナンス統合 |Microsoft ドキュメント
+description: BizTalk Server で ESB ツールキットを使用して、SOA ベースのシステムおよびサード パーティ統合での課題の一覧
+caps.latest.revision: 3
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccb5ac2d-cd90-414d-a6c7-045a8fe9450b
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295018"
 ---
 # <a name="soa-governance-integration"></a><span data-ttu-id="66c02-103">SOA ガバナンスの統合</span><span class="sxs-lookup"><span data-stu-id="66c02-103">SOA Governance Integration</span></span>
 <span data-ttu-id="66c02-104">エンタープライズ レベルのアプリケーションでは、ビジネス要件、政府法律、サービス レベル アグリーメント (Sla)、および顧客とパートナーの要望を取引に従っていることができる堅牢性と信頼性の管理機能をサポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="66c02-104">Enterprise-level applications must support robust and reliable management features to be able to comply with business requirements, government legislation, service level agreements (SLAs), and customer and trading partner expectations.</span></span> <span data-ttu-id="66c02-105">実行時のガバナンス焦点を具体的にはの課題と要件については、サービス指向アーキテクチャ (SOA) を正常に実行する – ベースのこれらの要件を満たすシステムです。</span><span class="sxs-lookup"><span data-stu-id="66c02-105">Run-time governance focuses specifically on the challenges of, and requirements for, successfully running service-oriented architecture (SOA)–based systems that meet these requirements.</span></span> <span data-ttu-id="66c02-106">ビジネス システムによって提供されるサービスの品質は、その成功または失敗を定義する主要な要素です。</span><span class="sxs-lookup"><span data-stu-id="66c02-106">The quality of service delivered by a business system is the predominant factor that defines its success or failure.</span></span>  

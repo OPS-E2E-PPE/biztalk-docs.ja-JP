@@ -1,14 +1,14 @@
 ---
-title: "カスタム ハンドラーを使用して例外を送信する外部の処理 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム ハンドラーを使用して例外を送信する外部の処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53fa661e-d391-47c0-92d5-1d0c45b5963d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294058"
 ---
 # <a name="handling-externally-submitted-exceptions-using-a-custom-handler"></a><span data-ttu-id="ec62a-102">カスタム ハンドラーを使用して例外を送信する外部の処理</span><span class="sxs-lookup"><span data-stu-id="ec62a-102">Handling Externally Submitted Exceptions Using a Custom Handler</span></span>
 <span data-ttu-id="ec62a-103">このユース ケースでは、外部のクライアントは、Web サービスを通じた例外メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="ec62a-103">In this use case, an external client submits an exception message through a Web service.</span></span> <span data-ttu-id="ec62a-104">ESB 例外エンコーダ パイプライン コンポーネントでは、事前に構成されて、送信ポート、フォールト メッセージをサブスクライブします。処理し、表示できる Microsoft InfoPath を使用して図 1 に示すようにディスク ファイルとしてが引き続き発生します。</span><span class="sxs-lookup"><span data-stu-id="ec62a-104">A send port, preconfigured with the ESB Exception Encoder pipeline component, subscribes to the fault message; it processes and persists it as a disk file that you can view using Microsoft InfoPath, as shown in Figure 1.</span></span>  

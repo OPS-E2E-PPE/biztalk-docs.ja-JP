@@ -1,14 +1,14 @@
 ---
-title: "ポータル レポート ページ |Microsoft ドキュメント"
-ms.custom: 
+title: ポータル レポート ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 51d793cc-dcea-4c29-883b-a5045d39d4f6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294602"
 ---
 # <a name="portal-reports-page"></a><span data-ttu-id="c70d3-102">ポータル レポート ページ</span><span class="sxs-lookup"><span data-stu-id="c70d3-102">Portal Reports Page</span></span>
 <span data-ttu-id="c70d3-103">図 1 に示すように、ポータル レポート ページには、次のグラフが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c70d3-103">The Portal Reports page, shown in Figure 1, displays the following charts:</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="c70d3-121">クリックして、 **SelectApplications**最初のグラフの上にリンクし、選択するか表示されるインストール済みの Microsoft BizTalk Server アプリケーションの一覧にあるチェック ボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="c70d3-121">Click the **SelectApplications** link above the first chart, and then select or clear the check boxes in the list of installed Microsoft BizTalk Server applications that appears.</span></span> <span data-ttu-id="c70d3-122">また、またはすべてのアプリケーションの選択を表示するリンクを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="c70d3-122">You can also use the links that appear to select all or none of the applications.</span></span> <span data-ttu-id="c70d3-123">をクリックして**保存**選択されたアプリケーションについての情報を表示またはをクリックする**キャンセル**変更を破棄します。</span><span class="sxs-lookup"><span data-stu-id="c70d3-123">Click **Save** to show the information for the selected applications, or click **Cancel** to abandon your changes.</span></span>  
   
--   <span data-ttu-id="c70d3-124">最初のグラフの上のドロップダウン リストを使用すると、グラフ データを表示するのにときに経由する間隔を選択できます。</span><span class="sxs-lookup"><span data-stu-id="c70d3-124">Use the drop-down list above the first chart to select the interval over which you want the charts to show data.</span></span> <span data-ttu-id="c70d3-125">前のデータを含めることができます**時間、日、週、月、四半期、年、**または**すべて**です。</span><span class="sxs-lookup"><span data-stu-id="c70d3-125">You can choose to include data for the previous **Hour, Day, Week, Month, Quarter, Year,** or **ALL**.</span></span>  
+-   <span data-ttu-id="c70d3-124">最初のグラフの上のドロップダウン リストを使用すると、グラフ データを表示するのにときに経由する間隔を選択できます。</span><span class="sxs-lookup"><span data-stu-id="c70d3-124">Use the drop-down list above the first chart to select the interval over which you want the charts to show data.</span></span> <span data-ttu-id="c70d3-125">前のデータを含めることができます**時間、日、週、月、四半期、年、** または**すべて**です。</span><span class="sxs-lookup"><span data-stu-id="c70d3-125">You can choose to include data for the previous **Hour, Day, Week, Month, Quarter, Year,** or **ALL**.</span></span>  
   
 -   <span data-ttu-id="c70d3-126">アプリケーション内でサービスによってデータの内訳を表示するページのグラフのいずれかをクリックします。</span><span class="sxs-lookup"><span data-stu-id="c70d3-126">Click one of the charts in the page to show a breakdown of the data by service within the application.</span></span> <span data-ttu-id="c70d3-127">選択したグラフによっては、この個々 のエラー、警告、エラーの種類、再送信、またはサービスごとのアラート配信登録の数や傾向線を示しています。</span><span class="sxs-lookup"><span data-stu-id="c70d3-127">Depending on the chart you select, this shows a count or trend line for the individual faults, alerts, error types, resubmissions, or alert subscriptions for each service.</span></span>  
   

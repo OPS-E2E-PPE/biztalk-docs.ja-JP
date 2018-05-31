@@ -1,14 +1,14 @@
 ---
-title: "ESB Itinerary スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: ESB Itinerary スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 168e7b98-6282-494e-bde8-3171e0be7d59
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295226"
 ---
 # <a name="the-esb-itinerary-schema"></a><span data-ttu-id="0298f-102">ESB Itinerary スキーマ</span><span class="sxs-lookup"><span data-stu-id="0298f-102">The ESB Itinerary Schema</span></span>
 <span data-ttu-id="0298f-103">Itinerary.xsd をという名前の ESB 行程スキーマは、一連の処理手順については、一般に呼ば itinerary サービスとして日程を定義します。</span><span class="sxs-lookup"><span data-stu-id="0298f-103">The ESB Itinerary schema named Itinerary.xsd defines an itinerary as a set of processing instructions, generally referred to as itinerary services.</span></span> <span data-ttu-id="0298f-104">Itinerary サービスには、スキーマ定義を次に示すように 1 つまたは複数の itinerary サービスと、対応する競合回避モジュールの接続文字列を含めることがあります。</span><span class="sxs-lookup"><span data-stu-id="0298f-104">An itinerary service may contain one or more itinerary services and the corresponding resolver connection strings, as shown in the following schema definition.</span></span>  

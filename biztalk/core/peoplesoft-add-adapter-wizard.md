@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263442"
 ---
 # <a name="peoplesoft-add-adapter-wizard"></a><span data-ttu-id="b2c90-102">PeopleSoft アダプターの追加ウィザード</span><span class="sxs-lookup"><span data-stu-id="b2c90-102">PeopleSoft Add Adapter Wizard</span></span>
 <span data-ttu-id="b2c90-103">PeopleSoft システムのメタデータ情報にアクセスするには、アダプターの追加ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="b2c90-103">Use the Add Adapter Wizard to access metadata information from the PeopleSoft system.</span></span>  

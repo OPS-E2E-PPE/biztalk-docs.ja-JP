@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241778"
 ---
 # <a name="error-messages"></a><span data-ttu-id="11b04-102">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="11b04-102">Error Messages</span></span>
 <span data-ttu-id="11b04-103">次の表は、PeopleSoft Enterprise システムのコンポーネント インターフェイスのエラー メッセージ、各メッセージの説明、および考えられる修正方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="11b04-103">The following table lists error messages in the PeopleSoft Enterprise system's component interfaces, their descriptions, and possible corrections.</span></span>  

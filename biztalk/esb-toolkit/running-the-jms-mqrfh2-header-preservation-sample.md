@@ -1,14 +1,14 @@
 ---
-title: "JMS MQRFH2 ヘッダーの保存のサンプルを実行して |Microsoft ドキュメント"
-ms.custom: 
+title: JMS MQRFH2 ヘッダーの保存のサンプルを実行して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65982dca-77e1-4267-9528-26c59237e9b1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295130"
 ---
 # <a name="running-the-jms-mqrfh2-header-preservation-sample"></a><span data-ttu-id="03ed0-102">JMS MQRFH2 ヘッダーの保存のサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="03ed0-102">Running the JMS MQRFH2 Header Preservation Sample</span></span>
 <span data-ttu-id="03ed0-103">このサンプルのこの部分は、WebSphere キューにメッセージを展開します。</span><span class="sxs-lookup"><span data-stu-id="03ed0-103">This part of this sample deposits a message into a WebSphere queue.</span></span> <span data-ttu-id="03ed0-104">ESB は、このメッセージを取得し、送信 WebSphere キューにデポジットします。</span><span class="sxs-lookup"><span data-stu-id="03ed0-104">The ESB picks up this message and deposits it into an outbound WebSphere queue.</span></span> <span data-ttu-id="03ed0-105">これは、こと、ESB と Microsoft BizTalk を保持する完全に忠実な RFH2 ヘッダー メッセージが BizTalk Server を通過として示されます。</span><span class="sxs-lookup"><span data-stu-id="03ed0-105">This demonstrates that the ESB and Microsoft BizTalk preserve full-fidelity RFH2 headers as a message travels through BizTalk Server.</span></span>  
@@ -53,4 +54,4 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="03ed0-122">遅延後に、アプリケーションの実行中は、ESB に、ESB 出力メッセージが表示されます。JMS です。サンプルです。DYNAMICQ1 と ESB です。JMS です。サンプルです。DYNAMICQ1 キュー。</span><span class="sxs-lookup"><span data-stu-id="03ed0-122">After a delay while the application executes, the ESB output message appears in the ESB.JMS.SAMPLE.DYNAMICQ1 and ESB.JMS.SAMPLE.DYNAMICQ1 queues.</span></span> <span data-ttu-id="03ed0-123">WebSphere キュー エクスプ ローラーを開き、これを確認するキューを参照します。</span><span class="sxs-lookup"><span data-stu-id="03ed0-123">Open the WebSphere Queue Explorer and browse the queues to confirm this.</span></span>  
   
-10. <span data-ttu-id="03ed0-124">RfhUtil ユーティリティに戻るし、メッセージをキューに接続します。</span><span class="sxs-lookup"><span data-stu-id="03ed0-124">Go back to the RfhUtil utility and connect to the queues to see the messages.</span></span> <span data-ttu-id="03ed0-125">クリックして、 **MQMD、RFH、**と**jms** 、いる点を除き、入力と出力値が送信先キューにメッセージの変更されていないことと、応答をキューにメッセージが同じであることを確認するタブ標準 JMS メッセージするのではなく、メッセージは「その他」としてマークされます。</span><span class="sxs-lookup"><span data-stu-id="03ed0-125">Click the **MQMD, RFH,** and **jms** tabs to verify that the input and output values are unchanged for the message in the Destination Queue, and that the message in the Reply To queue is the same except that, instead of being a standard JMS message, the message is marked as "other".</span></span>
+10. <span data-ttu-id="03ed0-124">RfhUtil ユーティリティに戻るし、メッセージをキューに接続します。</span><span class="sxs-lookup"><span data-stu-id="03ed0-124">Go back to the RfhUtil utility and connect to the queues to see the messages.</span></span> <span data-ttu-id="03ed0-125">クリックして、 **MQMD、RFH、** と**jms** 、いる点を除き、入力と出力値が送信先キューにメッセージの変更されていないことと、応答をキューにメッセージが同じであることを確認するタブ標準 JMS メッセージするのではなく、メッセージは「その他」としてマークされます。</span><span class="sxs-lookup"><span data-stu-id="03ed0-125">Click the **MQMD, RFH,** and **jms** tabs to verify that the input and output values are unchanged for the message in the Destination Queue, and that the message in the Reply To queue is the same except that, instead of being a standard JMS message, the message is marked as "other".</span></span>

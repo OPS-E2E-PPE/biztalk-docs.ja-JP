@@ -1,14 +1,14 @@
 ---
-title: "アラート ([管理] ビュー) を管理する |Microsoft ドキュメント"
-ms.custom: 
+title: アラート ([管理] ビュー) を管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 27f8bf7d-15b7-448d-8c13-e4969b90d021
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294442"
 ---
 # <a name="manage-alerts-administration-view"></a><span data-ttu-id="30753-102">アラート ([管理] ビュー) を管理します。</span><span class="sxs-lookup"><span data-stu-id="30753-102">Manage Alerts (Administration View)</span></span>
 <span data-ttu-id="30753-103">図 1 は、管理者を使用してすべての通知とユーザーのアクティビティの概要の一覧を表示、管理ビューで、[アラート] ページを示します。</span><span class="sxs-lookup"><span data-stu-id="30753-103">Figure 1 shows the Alerts page in administration view, which administrators can use to view a list of all alerts and a summary of their activity.</span></span> <span data-ttu-id="30753-104">テーブルには、各アラートについての行が表示されます。</span><span class="sxs-lookup"><span data-stu-id="30753-104">A table displays a row for each alert.</span></span> <span data-ttu-id="30753-105">各行は、警告名、作成者の名前、(最後の 1 時間、日、または月以内のアラートのアクティブ化の数) などのアラートの全般的な統計を示していますリンクで、アラートの一覧、および cli のセットを含むアクション列を表示するサブスクライバーの数。アラートの操作を実行する ckable アイコン。</span><span class="sxs-lookup"><span data-stu-id="30753-105">Each row shows the alert name, the name of the creator, general statistics for the alert (such as number of alert activations within the last hour, day, or month), a count of subscribers for the alerts with a link to view a list, and an Actions column containing a set of clickable icons to perform actions on the alert.</span></span>  

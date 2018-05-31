@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cafbe72-2b90-4d8e-9a1d-5735cefeb3d4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286378"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-jd-edwards-enterpriseone"></a><span data-ttu-id="cc5d7-102">チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の</span><span class="sxs-lookup"><span data-stu-id="cc5d7-102">Tutorial: Using the BizTalk Adapter for JD Edwards EnterpriseOne</span></span>
 <span data-ttu-id="cc5d7-103">以下は、BizTalk コンテキスト プロパティを使用して、j. d. を制御するには</span><span class="sxs-lookup"><span data-stu-id="cc5d7-103">The following demonstrates using BizTalk Context Properties to control the J.D.</span></span>  <span data-ttu-id="cc5d7-104">オーケストレーションで Edwards OneWorld セッションです。</span><span class="sxs-lookup"><span data-stu-id="cc5d7-104">Edwards OneWorld session in your orchestration.</span></span> <span data-ttu-id="cc5d7-105">このチュートリアルでは、j. d. for Microsoft BizTalk アダプターにバインドされた送信ポートに BeginDoc、EditLine、および EndDoc 呼び出しを送信するオーケストレーションがある前提としています</span><span class="sxs-lookup"><span data-stu-id="cc5d7-105">The tutorial assumes you have an orchestration that sends BeginDoc, EditLine and EndDoc calls to a send port bound to the Microsoft BizTalk Adapter for J.D.</span></span> <span data-ttu-id="cc5d7-106">Edwards OneWorld です。</span><span class="sxs-lookup"><span data-stu-id="cc5d7-106">Edwards OneWorld.</span></span>  

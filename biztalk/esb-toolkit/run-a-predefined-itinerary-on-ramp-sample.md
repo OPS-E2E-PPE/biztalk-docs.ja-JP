@@ -1,14 +1,14 @@
 ---
-title: "定義済みの Itinerary ランプでサンプルを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 定義済みの Itinerary ランプでサンプルを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b4400193-20ac-479a-8bf9-b1c99eb35231
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976680"
 ---
 # <a name="run-a-predefined-itinerary-on-ramp-sample"></a><span data-ttu-id="e3986-102">定義済みの Itinerary ランプでサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="e3986-102">Run a Predefined Itinerary On-Ramp Sample</span></span>
 <span data-ttu-id="e3986-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]実行できる 20 の定義済み行程ユース ケースが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e3986-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes 20 predefined Itinerary use cases you can execute.</span></span> <span data-ttu-id="e3986-104">これらのリストについては、ユース ケースを参照してください[、サンプル行程シナリオ](../esb-toolkit/the-sample-itinerary-scenarios.md)です。</span><span class="sxs-lookup"><span data-stu-id="e3986-104">For a list of these use cases, see [The Sample Itinerary Scenarios](../esb-toolkit/the-sample-itinerary-scenarios.md).</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
     position="0" serviceInstanceId="" />  
 ```  
   
- <span data-ttu-id="e3986-124">このオーケストレーション サービス**\<サービス\>**要素は図 2 に示すようにフィルターのプロパティを持つ直接バインド オーケストレーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="e3986-124">The orchestration service in this **\<Service\>** element specifies the direct-bound orchestration that has the filter properties shown in Figure 2.</span></span> <span data-ttu-id="e3986-125">オーケストレーションは、値を持つメッセージのみにサブスクライブしていることを確認**Microsoft.Practices.ESB.Services.Transform**の**ServiceName**コンテキスト プロパティ、値**保留中**の**ServiceState**コンテキスト プロパティ、およびオーケストレーションの値を**ServiceType**コンテキスト プロパティです。</span><span class="sxs-lookup"><span data-stu-id="e3986-125">Notice that the orchestration subscribes only to messages that have the value **Microsoft.Practices.ESB.Services.Transform** for the **ServiceName** context property, the value **Pending** for the **ServiceState** context property, and the value Orchestration for the **ServiceType** context property.</span></span>  
+ <span data-ttu-id="e3986-124">このオーケストレーション サービス**\<サービス\>** 要素は図 2 に示すようにフィルターのプロパティを持つ直接バインド オーケストレーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="e3986-124">The orchestration service in this **\<Service\>** element specifies the direct-bound orchestration that has the filter properties shown in Figure 2.</span></span> <span data-ttu-id="e3986-125">オーケストレーションは、値を持つメッセージのみにサブスクライブしていることを確認**Microsoft.Practices.ESB.Services.Transform**の**ServiceName**コンテキスト プロパティ、値**保留中**の**ServiceState**コンテキスト プロパティ、およびオーケストレーションの値を**ServiceType**コンテキスト プロパティです。</span><span class="sxs-lookup"><span data-stu-id="e3986-125">Notice that the orchestration subscribes only to messages that have the value **Microsoft.Practices.ESB.Services.Transform** for the **ServiceName** context property, the value **Pending** for the **ServiceState** context property, and the value Orchestration for the **ServiceType** context property.</span></span>  
   
  <span data-ttu-id="e3986-126">![フィルター式](../esb-toolkit/media/ch6-filterexpression.gif "Ch6 FilterExpression")</span><span class="sxs-lookup"><span data-stu-id="e3986-126">![Filter Expression](../esb-toolkit/media/ch6-filterexpression.gif "Ch6-FilterExpression")</span></span>  
   

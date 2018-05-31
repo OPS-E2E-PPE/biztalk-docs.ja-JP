@@ -1,14 +1,14 @@
 ---
-title: "ESB リゾルバーとアダプターのプロバイダー フレームワーク |Microsoft ドキュメント"
-ms.custom: 
+title: ESB リゾルバーとアダプターのプロバイダー フレームワーク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c82c2247-1f0a-48bd-98c2-9c816f4d68d7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007371"
 ---
 # <a name="esb-resolver-and-adapter-provider-framework"></a><span data-ttu-id="7e94c-102">ESB リゾルバーとアダプターのプロバイダー フレームワーク</span><span class="sxs-lookup"><span data-stu-id="7e94c-102">ESB Resolver and Adapter Provider Framework</span></span>
 <span data-ttu-id="7e94c-103">アダプター プロバイダーのフレームワークとの競合回避モジュールを動的にエンドポイント情報と BizTalk Server マップの種類を解決する包括的なプラグ可能なアーキテクチャを提供します。</span><span class="sxs-lookup"><span data-stu-id="7e94c-103">The Resolver and Adapter Provider Framework provides a comprehensive, pluggable architecture for dynamically resolving endpoint information and BizTalk Server map types.</span></span> <span data-ttu-id="7e94c-104">開発者が独自の要件に合わせて、別の解決方法およびルーティング メソッドをサポートするためのメカニズムを拡張する動作を変更できるようにの拡張コンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="7e94c-104">It uses extensible components, which allow developers to change the behavior to suit their own requirements and extend the mechanism to support alternative resolution and routing methods.</span></span>  

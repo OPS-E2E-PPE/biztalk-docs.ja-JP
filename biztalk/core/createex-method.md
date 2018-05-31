@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238290"
 ---
 # <a name="createex-method"></a><span data-ttu-id="0b0f9-102">CreateEx メソッド</span><span class="sxs-lookup"><span data-stu-id="0b0f9-102">CreateEx Method</span></span>
 <span data-ttu-id="0b0f9-103">一意なキーと指定されたプロパティを使用して新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="0b0f9-103">Creates a new record using a set of unique keys and specified properties.</span></span>  

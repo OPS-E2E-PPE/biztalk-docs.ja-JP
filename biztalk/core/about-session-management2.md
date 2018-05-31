@@ -1,14 +1,14 @@
 ---
-title: "セッション Management2 に関する |Microsoft ドキュメント"
-ms.custom: 
+title: セッション Management2 に関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3ecdb4f-d384-42ac-9776-e7ad14d5f151
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225610"
 ---
 # <a name="about-session-management"></a><span data-ttu-id="e1532-102">セッション管理について</span><span class="sxs-lookup"><span data-stu-id="e1532-102">About Session Management</span></span>
 <span data-ttu-id="e1532-103">Microsoft BizTalk Adapter for JD Edwards EnterpriseOne は、JD Edwards EnterpriseOne サーバーの呼び出しを送信する接続セッションを作成します。</span><span class="sxs-lookup"><span data-stu-id="e1532-103">The Microsoft BizTalk Adapter for JD Edwards EnterpriseOne creates a connection session to send a call to the JD Edwards EnterpriseOne server.</span></span> <span data-ttu-id="e1532-104">呼び出しが終了すると、セッションはプールに格納され、その後の呼び出しで再利用されます。</span><span class="sxs-lookup"><span data-stu-id="e1532-104">When the call terminates, the session is put in a pool to be re-used by a subsequent call.</span></span> <span data-ttu-id="e1532-105">このアダプターは、JD Edwards EnterpriseOne サーバーの同時呼び出しを処理する複数の接続セッションを作成します。</span><span class="sxs-lookup"><span data-stu-id="e1532-105">The adapter creates multiple connection sessions to handle concurrent calls to the JD Edwards EnterpriseOne server.</span></span> <span data-ttu-id="e1532-106">プールは不要になったセッションを削除するために定期的に消去されます。</span><span class="sxs-lookup"><span data-stu-id="e1532-106">The pool is periodically cleaned to remove sessions that are no longer necessary.</span></span>  

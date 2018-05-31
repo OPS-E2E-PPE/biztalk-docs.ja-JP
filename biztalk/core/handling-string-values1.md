@@ -13,7 +13,7 @@ helpviewer_keywords:
 - strings, configuring
 - strings, right-justified
 ms.assetid: a180b818-1009-45f5-a503-d10ed7dd27fc
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22246682"
 ---
 # <a name="handling-string-values"></a><span data-ttu-id="9d95f-102">文字列値の処理</span><span class="sxs-lookup"><span data-stu-id="9d95f-102">Handling String Values</span></span>
 <span data-ttu-id="9d95f-103">このトピックでは、一部の文字列引数を右揃え (および左側に埋め込み) で構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9d95f-103">This topic describes how to configure certain string arguments as right-justified (and left padded).</span></span>  

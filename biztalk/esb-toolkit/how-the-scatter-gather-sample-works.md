@@ -1,14 +1,14 @@
 ---
-title: "スキャッター/ギャザー サンプルの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: スキャッター/ギャザー サンプルの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ccfacb7-4fd2-4a1a-bece-27eedd86bbe9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294922"
 ---
 # <a name="how-the-scatter-gather-sample-works"></a><span data-ttu-id="2c49d-102">スキャッター/ギャザー サンプルのしくみ</span><span class="sxs-lookup"><span data-stu-id="2c49d-102">How the Scatter-Gather Sample Works</span></span>
 <span data-ttu-id="2c49d-103">サンプル アプリケーション スキャッター/ギャザー itinerary ファイルから読み込まれた旅程を含む SOAP ヘッダーのセットが作成され、ディスクから指定されたメッセージ ファイルを読み込み、itinerary ヘッダーをメッセージに追加および入り口のを通じて ESB に送信処理しています。</span><span class="sxs-lookup"><span data-stu-id="2c49d-103">The sample application builds a set of SOAP headers containing the itinerary loaded from the Scatter-Gather itinerary file, loads the specified message file from disk, appends the itinerary headers to the message, and submits it to the ESB through an on-ramp for processing.</span></span> <span data-ttu-id="2c49d-104">旅行計画は、応答を生成する場合、アプリケーションはこれを収集し、アプリケーション ウィンドウに表示します。</span><span class="sxs-lookup"><span data-stu-id="2c49d-104">If the itinerary generates a response, the application collects this and displays it in the application window.</span></span>  

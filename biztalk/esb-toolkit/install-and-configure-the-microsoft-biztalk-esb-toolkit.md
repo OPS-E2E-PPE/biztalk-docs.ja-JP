@@ -1,7 +1,7 @@
 ---
 title: インストールして、Microsoft BizTalk ESB Toolkit の構成 |Microsoft ドキュメント
 description: インストールして、BizTalk Server で ESB Toolkit を構成する手順の手順を実行して命令
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 manager: anneta
 ms.custom: ''
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22297002"
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-esb-toolkit"></a><span data-ttu-id="1445f-103">インストールして、Microsoft BizTalk ESB Toolkit の構成</span><span class="sxs-lookup"><span data-stu-id="1445f-103">Install and configure the Microsoft BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="1445f-104">BizTalk Server 2013 と新しいバージョンでは、開始[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]と統合されて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップします。</span><span class="sxs-lookup"><span data-stu-id="1445f-104">Starting with BizTalk Server 2013 and newer versions, [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] is integrated with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.</span></span> <span data-ttu-id="1445f-105">このトピックは、インストールおよび構成する方法を示します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、し、ESB Toolkit のアップグレードをコミュニティに書き込まれたリンクも含まれます。</span><span class="sxs-lookup"><span data-stu-id="1445f-105">This topic shows you how to install and configure [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], and also includes a community-written link to upgrade the ESB Toolkit.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/28/2018
   
 ## <a name="install"></a><span data-ttu-id="1445f-107">インストール</span><span class="sxs-lookup"><span data-stu-id="1445f-107">Install</span></span> 
   
-1.  <span data-ttu-id="1445f-108">実行、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.exe ファイルを管理者として。</span><span class="sxs-lookup"><span data-stu-id="1445f-108">Run the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.exe file as Administrator.</span></span> <span data-ttu-id="1445f-109">セットアップに、次のように選択します。**インストール[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]**です。</span><span class="sxs-lookup"><span data-stu-id="1445f-109">In setup, select **Install [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]**.</span></span>  
+1.  <span data-ttu-id="1445f-108">実行、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.exe ファイルを管理者として。</span><span class="sxs-lookup"><span data-stu-id="1445f-108">Run the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.exe file as Administrator.</span></span> <span data-ttu-id="1445f-109">セットアップに、次のように選択します。**インストール[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]** です。</span><span class="sxs-lookup"><span data-stu-id="1445f-109">In setup, select **Install [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]**.</span></span>  
   
 2.  <span data-ttu-id="1445f-110">ライセンス契約に同意し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="1445f-110">Accept the license agreement, and then select **Next**.</span></span>  
   
@@ -79,15 +80,15 @@ ms.lasthandoff: 03/28/2018
   
     -   <span data-ttu-id="1445f-142">**SSO サーバー**: SSO サーバーの名前を入力してください</span><span class="sxs-lookup"><span data-stu-id="1445f-142">**SSO Server**: Enter the name of the SSO server</span></span>
   
-    -   <span data-ttu-id="1445f-143">**構成ファイル**: は、省略記号**([...])**、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照</span><span class="sxs-lookup"><span data-stu-id="1445f-143">**Configuration file**: Select the ellipsis **(…)**, and then browse to the esb.config file (\Program Files (x86)\Microsoft BizTalk ESB Toolkit)</span></span>
+    -   <span data-ttu-id="1445f-143">**構成ファイル**: は、省略記号 **([...])**、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照</span><span class="sxs-lookup"><span data-stu-id="1445f-143">**Configuration file**: Select the ellipsis **(…)**, and then browse to the esb.config file (\Program Files (x86)\Microsoft BizTalk ESB Toolkit)</span></span>
   
     -   <span data-ttu-id="1445f-144">**アプリケーション名**: SSO アプリケーションの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="1445f-144">**Application Name**: Enter a name for the SSO application.</span></span> <span data-ttu-id="1445f-145">たとえば、入力`ESB Toolkit`です。</span><span class="sxs-lookup"><span data-stu-id="1445f-145">For example,  enter `ESB Toolkit`.</span></span>  
   
     -   <span data-ttu-id="1445f-146">**連絡先情報**: 次の形式で有効な電子メール アドレス、適切な連絡先情報を入力してください:`someone@example.com`です。</span><span class="sxs-lookup"><span data-stu-id="1445f-146">**Contact Information**: Enter a valid email address the appropriate contact information in the following format: `someone@example.com`.</span></span>  
   
-    -   <span data-ttu-id="1445f-147">**管理者グループ名**: は、省略記号**([...])**、適切な管理グループを参照</span><span class="sxs-lookup"><span data-stu-id="1445f-147">**Administrator Group Name**: Select the ellipsis **(…)**, and then browse to the appropriate admin group</span></span>  
+    -   <span data-ttu-id="1445f-147">**管理者グループ名**: は、省略記号 **([...])**、適切な管理グループを参照</span><span class="sxs-lookup"><span data-stu-id="1445f-147">**Administrator Group Name**: Select the ellipsis **(…)**, and then browse to the appropriate admin group</span></span>  
   
-    -   <span data-ttu-id="1445f-148">**ユーザー グループ名**: は、省略記号**([...])**、適切なグループを参照</span><span class="sxs-lookup"><span data-stu-id="1445f-148">**User Group Name**: Select the ellipsis **(…)**, and then browse to the appropriate group</span></span>  
+    -   <span data-ttu-id="1445f-148">**ユーザー グループ名**: は、省略記号 **([...])**、適切なグループを参照</span><span class="sxs-lookup"><span data-stu-id="1445f-148">**User Group Name**: Select the ellipsis **(…)**, and then browse to the appropriate group</span></span>  
 
 8.  <span data-ttu-id="1445f-149">選択**構成を適用**です。</span><span class="sxs-lookup"><span data-stu-id="1445f-149">Select **Apply Configuration**.</span></span> <span data-ttu-id="1445f-150">IIS を開き、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] に必要なアプリケーションが、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] の構成で指定した Web サイトに作成されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="1445f-150">Open IIS and notice that the applications required for [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] are now created under the website you specified while configuring [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)].</span></span>  
   

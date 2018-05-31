@@ -1,11 +1,11 @@
 ---
-title: "MATH_NUMERIC 型 1 を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: MATH_NUMERIC 型 1 を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters [JD Edwards EnterpriseOne adapters], currency
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - JD Edwards EnterpriseOne adapters, currency
 - exponents, values [JD Edwards EnterpriseOne adapters]
 ms.assetid: 2a302216-f0a6-4afb-8f7d-bb1475ea1c57
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288514"
 ---
 # <a name="using-the-mathnumeric-type"></a><span data-ttu-id="d693a-102">MATH_NUMERIC 型の使用</span><span class="sxs-lookup"><span data-stu-id="d693a-102">Using the MATH_NUMERIC Type</span></span>
 <span data-ttu-id="d693a-103">ここでは、MATH_NUMERIC 型および指数の処理方法、最大桁数、および最大 10 進桁数の詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="d693a-103">This topic describes the MATH_NUMERIC type and details how exponents are handled, the maximum number of digits, and the maximum number of decimal digits.</span></span> <span data-ttu-id="d693a-104">また、次のものに関する説明も含まれています。</span><span class="sxs-lookup"><span data-stu-id="d693a-104">It also includes a discussion on:</span></span>  
@@ -104,7 +105,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="d693a-151">1.9e-31/100.0 = 0.00000000000000000000000000000000</span><span class="sxs-lookup"><span data-stu-id="d693a-151">1.9e-31 / 100.0 = 0.00000000000000000000000000000000</span></span>  
   
- <span data-ttu-id="d693a-152">それ以外では、非常に大きい正の値どうしを乗算した場合に、予期しない結果が発生します。</span><span class="sxs-lookup"><span data-stu-id="d693a-152">In other cases, unpredictable results occur, as when a very large positive value is multiplied by another.</span></span> <span data-ttu-id="d693a-153">1.01e32 * 2.053e32 信頼性の高い結果を生成しませんし、エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="d693a-153">1.01e32 * 2.053e32 does not yield reliable results and does not raise an error.</span></span> <span data-ttu-id="d693a-154">実際に使用する場合には、通常、これらの範囲を超えることはありません。</span><span class="sxs-lookup"><span data-stu-id="d693a-154">For most business scenarios, these ranges are not exceeded.</span></span>  
+ <span data-ttu-id="d693a-152">それ以外では、非常に大きい正の値どうしを乗算した場合に、予期しない結果が発生します。</span><span class="sxs-lookup"><span data-stu-id="d693a-152">In other cases, unpredictable results occur, as when a very large positive value is multiplied by another.</span></span> <span data-ttu-id="d693a-153">1.01e32 \* 2.053e32 信頼性の高い結果を生成しませんし、エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="d693a-153">1.01e32 \* 2.053e32 does not yield reliable results and does not raise an error.</span></span> <span data-ttu-id="d693a-154">実際に使用する場合には、通常、これらの範囲を超えることはありません。</span><span class="sxs-lookup"><span data-stu-id="d693a-154">For most business scenarios, these ranges are not exceeded.</span></span>  
   
 ## <a name="currency"></a><span data-ttu-id="d693a-155">Currency</span><span class="sxs-lookup"><span data-stu-id="d693a-155">Currency</span></span>  
  <span data-ttu-id="d693a-156">JD Edwards EnterpriseOne のビジネス関数が通貨値を予期している場合、常に 4 文字の通貨コード用の別のパラメーターがあります。</span><span class="sxs-lookup"><span data-stu-id="d693a-156">When a JD Edwards EnterpriseOne business function expects a currency value, the business function always has a separate parameter for a four-character currency code.</span></span> <span data-ttu-id="d693a-157">JD Edwards EnterpriseOne システム用に構成された既定値とは異なる通貨を使用しない限り、このコードを渡す必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d693a-157">It is not necessary to pass in this code unless you are using a currency other than the default configured for the JD Edwards EnterpriseOne system.</span></span>  

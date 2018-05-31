@@ -1,14 +1,14 @@
 ---
-title: "方法: メッセージを変換して、要求-応答メッセージ交換パターンを使用してサービス エンドポイントへのルート |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: メッセージを変換して、要求-応答メッセージ交換パターンを使用してサービス エンドポイントへのルート |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b1e656fb-6c5f-4b2b-a1b6-4c812b78ee22
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010355"
 ---
 # <a name="how-to-transform-a-message-and-route-to-a-service-endpoint-using-a-request-response-message-exchange-pattern"></a><span data-ttu-id="07c82-102">方法: メッセージを変換して、要求-応答メッセージ交換パターンを使用してサービス エンドポイントへのルート</span><span class="sxs-lookup"><span data-stu-id="07c82-102">How to: Transform a Message and Route to a Service Endpoint Using a Request-Response Message Exchange Pattern</span></span>
 ## <a name="goal"></a><span data-ttu-id="07c82-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="07c82-103">Goal</span></span>  

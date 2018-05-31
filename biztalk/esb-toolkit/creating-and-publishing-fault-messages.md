@@ -1,14 +1,14 @@
 ---
-title: "エラー メッセージを作成およびパブリッシュ |Microsoft ドキュメント"
-ms.custom: 
+title: エラー メッセージを作成およびパブリッシュ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc7ba1d9-b647-4cba-a3dc-4400505ff51f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290682"
 ---
 # <a name="creating-and-publishing-fault-messages"></a><span data-ttu-id="67d0e-102">作成、およびエラー メッセージの公開</span><span class="sxs-lookup"><span data-stu-id="67d0e-102">Creating and Publishing Fault Messages</span></span>
 <span data-ttu-id="67d0e-103">例外管理フレームワークの機能を使用して例外を管理する方法を理解するためは、ここでは、ESB アプリケーションへのメッセージの送信に基づいた一般的なシナリオを示します。</span><span class="sxs-lookup"><span data-stu-id="67d0e-103">To help you understand how to use the features of the Exception Management Framework to manage exceptions, this section presents a common scenario based on the submission of a message to an ESB application.</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="67d0e-121">ESB 例外処理機構は、現在を自動的にシリアル化**例外**オブジェクト、エラー メッセージにします。</span><span class="sxs-lookup"><span data-stu-id="67d0e-121">The ESB Exception mechanism automatically serializes the current **Exception** object into the fault message.</span></span>  
   
-6.  <span data-ttu-id="67d0e-122">必要に応じて、例外ハンドラーのコードは現在のオーケストレーション メッセージの ESB フォールト メッセージを使用して、追加できます、 **AddMessage (faultMsg、messageToAdd)**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="67d0e-122">Optionally, code in the exception handler can add current orchestration messages to the ESB fault message using the **AddMessage(faultMsg, messageToAdd)** method.</span></span> <span data-ttu-id="67d0e-123">このメソッドは、シリアル化し、次のコード例に示すように、すべてのコンテキスト プロパティを含むメッセージが引き続き発生します。</span><span class="sxs-lookup"><span data-stu-id="67d0e-123">This method serializes and persists the message, including all the context properties, as shown in the following code example.</span></span>  
+6.  <span data-ttu-id="67d0e-122">必要に応じて、例外ハンドラーのコードは現在のオーケストレーション メッセージの ESB フォールト メッセージを使用して、追加できます、 **AddMessage (faultMsg、messageToAdd)** メソッドです。</span><span class="sxs-lookup"><span data-stu-id="67d0e-122">Optionally, code in the exception handler can add current orchestration messages to the ESB fault message using the **AddMessage(faultMsg, messageToAdd)** method.</span></span> <span data-ttu-id="67d0e-123">このメソッドは、シリアル化し、次のコード例に示すように、すべてのコンテキスト プロパティを含むメッセージが引き続き発生します。</span><span class="sxs-lookup"><span data-stu-id="67d0e-123">This method serializes and persists the message, including all the context properties, as shown in the following code example.</span></span>  
   
     ```csharp  
     // Add other current orchestration messages to the fault message.  

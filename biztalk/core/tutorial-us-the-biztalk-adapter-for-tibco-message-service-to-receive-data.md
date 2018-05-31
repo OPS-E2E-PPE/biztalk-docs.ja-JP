@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを受信する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを受信する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc5a63ec-1897-4c9b-b37f-cdcec151b1c9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008579"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-enterprise-message-service-to-receive-data"></a><span data-ttu-id="759e7-102">チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用したデータの受信</span><span class="sxs-lookup"><span data-stu-id="759e7-102">Tutorial: Using the BizTalk Adapter for TIBCO Enterprise Message Service to Receive Data</span></span>
 <span data-ttu-id="759e7-103">BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO システムからデータを受信できます。</span><span class="sxs-lookup"><span data-stu-id="759e7-103">You can use the BizTalk Adapter for TIBCO Enterprise Message Service (EMS) to receive data from a TIBCO system.</span></span> <span data-ttu-id="759e7-104">このチュートリアルでは、これを示す SDK サンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="759e7-104">This walkthrough describes an SDK sample that illustrates this.</span></span>  
@@ -100,9 +101,9 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="759e7-164">プロパティの詳細については、次を参照してください。 [TIBCO Enterprise メッセージ サービス受信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-receive-handlers.md)です。</span><span class="sxs-lookup"><span data-stu-id="759e7-164">For more information about the properties, see [Creating TIBCO Enterprise Message Service Receive Handlers](../core/creating-tibco-enterprise-message-service-receive-handlers.md).</span></span>  
   
-6.  <span data-ttu-id="759e7-165">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="759e7-165">Click **OK**.</span></span>  
+6.  <span data-ttu-id="759e7-165">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="759e7-165">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="759e7-166">選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="759e7-166">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
+7.  <span data-ttu-id="759e7-166">選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="759e7-166">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
   
 8.  <span data-ttu-id="759e7-167">受信場所を右クリックし、をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="759e7-167">Right-click the receive location and click **Enable**.</span></span>  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 12/01/2017
     |<span data-ttu-id="759e7-192">FileSendPort</span><span class="sxs-lookup"><span data-stu-id="759e7-192">FileSendPort</span></span>|<span data-ttu-id="759e7-193">TIBCOEMSOneWayFileSP</span><span class="sxs-lookup"><span data-stu-id="759e7-193">TIBCOEMSOneWayFileSP</span></span>|  
     |<span data-ttu-id="759e7-194">TibcoEMSOneWayReceiveOperation</span><span class="sxs-lookup"><span data-stu-id="759e7-194">TibcoEMSOneWayReceiveOperation</span></span>|<span data-ttu-id="759e7-195">TIBCOEMSOneWayRP</span><span class="sxs-lookup"><span data-stu-id="759e7-195">TIBCOEMSOneWayRP</span></span>|  
   
-6.  <span data-ttu-id="759e7-196">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="759e7-196">Click **OK**.</span></span>  
+6.  <span data-ttu-id="759e7-196">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="759e7-196">Click **OK**.</span></span>  
   
 #### <a name="start-the-orchestration"></a><span data-ttu-id="759e7-197">オーケストレーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="759e7-197">Start the orchestration</span></span>  
   

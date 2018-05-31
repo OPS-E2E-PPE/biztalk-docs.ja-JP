@@ -1,14 +1,14 @@
 ---
-title: "ESB ディスパッチャー コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: ESB ディスパッチャー コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 85655b5f-4717-42d1-b005-0a5592d5653b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294906"
 ---
 # <a name="the-esb-dispatcher-component"></a><span data-ttu-id="d4b5a-102">ESB ディスパッチャー コンポーネント</span><span class="sxs-lookup"><span data-stu-id="d4b5a-102">The ESB Dispatcher Component</span></span>
 <span data-ttu-id="d4b5a-103">Itinerary サービスのメッセージング ベース ESB ディスパッチャー コンポーネント内で実行されます。</span><span class="sxs-lookup"><span data-stu-id="d4b5a-103">Messaging-based itinerary services are executed inside the ESB Dispatcher component.</span></span> <span data-ttu-id="d4b5a-104">ディスパッチャーのコンポーネントでは、送信メッセージのエンドポイントの場所のプロパティを動的に設定でき、メッセージを動的に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="d4b5a-104">The Dispatcher component can also dynamically set endpoint location properties for outbound messages and dynamically transform messages.</span></span>  

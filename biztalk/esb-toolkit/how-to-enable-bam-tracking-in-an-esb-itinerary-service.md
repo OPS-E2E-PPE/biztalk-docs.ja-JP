@@ -1,14 +1,14 @@
 ---
-title: "方法: ESB Itinerary サービスで BAM の追跡を有効にする |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: ESB Itinerary サービスで BAM の追跡を有効にする |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58859937-f8d0-4c33-9a7a-62fec8441936
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009627"
 ---
 # <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a><span data-ttu-id="1f9f4-102">方法: ESB Itinerary サービスで BAM の追跡を有効にします。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-102">How to: Enable BAM Tracking in an ESB Itinerary Service</span></span>
 ## <a name="goal"></a><span data-ttu-id="1f9f4-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="1f9f4-103">Goal</span></span>  
@@ -190,7 +191,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="1f9f4-203">をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント[!INCLUDE[SQLServer2008or2005](../includes/sqlserver2008or2005-md.md)]、順にクリック**SQL Server Management Studio**です。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-203">Click **Start** on the taskbar, point to **All Programs**, point to [!INCLUDE[SQLServer2008or2005](../includes/sqlserver2008or2005-md.md)], and then click **SQL Server Management Studio**.</span></span>  
   
-2.  <span data-ttu-id="1f9f4-204">**[新しいクエリ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-204">Click **New Query**.</span></span>  
+2.  <span data-ttu-id="1f9f4-204">**[新しいクエリ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-204">Click **New Query**.</span></span>  
   
 3.  <span data-ttu-id="1f9f4-205">クエリ ウィンドウで、次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-205">In the query pane, type the following:</span></span>  
   
@@ -200,7 +201,7 @@ ms.lasthandoff: 12/01/2017
     GO  
     ```  
   
-4.  <span data-ttu-id="1f9f4-206">**[実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-206">Click **Execute**.</span></span>  
+4.  <span data-ttu-id="1f9f4-206">**[実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-206">Click **Execute**.</span></span>  
   
 5.  <span data-ttu-id="1f9f4-207">結果ウィンドウで、使用、**タイムスタンプ**最新のエントリを検索する列。</span><span class="sxs-lookup"><span data-stu-id="1f9f4-207">In the Results pane, use the **TimeStamp** column to locate the most recent entry.</span></span>  
   

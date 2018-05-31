@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用してデータを PeopleSoft Enterprise に書き込む |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用してデータを PeopleSoft Enterprise に書き込む |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 837dd4db-576d-41c1-9fe8-e1e46861270b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976080"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-write-data-to-peoplesoft-enterprise"></a><span data-ttu-id="eee2d-102">チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用した PeopleSoft Enterprise へのデータの書き込み</span><span class="sxs-lookup"><span data-stu-id="eee2d-102">Tutorial: Using the BizTalk Adapter for PeopleSoft Enterprise to Write Data to PeopleSoft Enterprise</span></span>
 <span data-ttu-id="eee2d-103">BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または内部アプリケーションから受信した情報に基づくデータを PeopleSoft システムに書き込むことができます。</span><span class="sxs-lookup"><span data-stu-id="eee2d-103">The BizTalk Adapter for PeopleSoft Enterprise can be used to write data to a PeopleSoft System with information received from a trading partner or internal application.</span></span> <span data-ttu-id="eee2d-104">ここでは、この機能を示す SDK サンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="eee2d-104">This walkthrough describes an SDK sample that illustrates this functionality.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="eee2d-117">**ランタイム プロジェクト ファイル名**</span><span class="sxs-lookup"><span data-stu-id="eee2d-117">**Runtime Project Filename**</span></span>|<span data-ttu-id="eee2d-118">**ランタイム プロジェクト ファイルの説明**</span><span class="sxs-lookup"><span data-stu-id="eee2d-118">**Runtime Project File Description**</span></span>|  
 |----------------------------------|------------------------------------------|  
 |<span data-ttu-id="eee2d-119">OneWaySend.btproj</span><span class="sxs-lookup"><span data-stu-id="eee2d-119">OneWaySend.btproj,</span></span><br /><br /> <span data-ttu-id="eee2d-120">OneWaySend.sln</span><span class="sxs-lookup"><span data-stu-id="eee2d-120">OneWaySend.sln</span></span>|<span data-ttu-id="eee2d-121">アプリケーションのプロジェクトおよびソリューション ファイル。</span><span class="sxs-lookup"><span data-stu-id="eee2d-121">Project and solution files for the application.</span></span>|  
-|<span data-ttu-id="eee2d-122">LOCATIONService.xsd、</span><span class="sxs-lookup"><span data-stu-id="eee2d-122">LOCATIONService.xsd,</span></span><br /><br /> <span data-ttu-id="eee2d-123">LOCATIONService_1.xsd、</span><span class="sxs-lookup"><span data-stu-id="eee2d-123">LOCATIONService_1.xsd,</span></span><br /><br /> <span data-ttu-id="eee2d-124">LOCATIONService_2.xsd</span><span class="sxs-lookup"><span data-stu-id="eee2d-124">LOCATIONService_2.xsd</span></span>|<span data-ttu-id="eee2d-125">アプリケーションのスキーマ ファイル。</span><span class="sxs-lookup"><span data-stu-id="eee2d-125">Schema files for the application.</span></span> <span data-ttu-id="eee2d-126">**注:**アダプター スキーマ ファイルは、プロジェクトでは、使用してもともと作成された、**アダプター メタデータの追加ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-126">**Note:**  The adapter schema files in the project were originally created using the **Add Adapter Metadata Wizard**.</span></span> <span data-ttu-id="eee2d-127">アダプター メタデータの追加ウィザードの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マニュアルの「アダプター メタデータを BizTalk プロジェクトに追加する方法」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eee2d-127">For more information on the Add Adapter Metadata Wizard see the topic "How to Add Adapter Metadata to a BizTalk Project" in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] documentation.</span></span>|  
+|<span data-ttu-id="eee2d-122">LOCATIONService.xsd、</span><span class="sxs-lookup"><span data-stu-id="eee2d-122">LOCATIONService.xsd,</span></span><br /><br /> <span data-ttu-id="eee2d-123">LOCATIONService_1.xsd、</span><span class="sxs-lookup"><span data-stu-id="eee2d-123">LOCATIONService_1.xsd,</span></span><br /><br /> <span data-ttu-id="eee2d-124">LOCATIONService_2.xsd</span><span class="sxs-lookup"><span data-stu-id="eee2d-124">LOCATIONService_2.xsd</span></span>|<span data-ttu-id="eee2d-125">アプリケーションのスキーマ ファイル。</span><span class="sxs-lookup"><span data-stu-id="eee2d-125">Schema files for the application.</span></span> <span data-ttu-id="eee2d-126">**注:** アダプター スキーマ ファイルは、プロジェクトでは、使用してもともと作成された、**アダプター メタデータの追加ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-126">**Note:**  The adapter schema files in the project were originally created using the **Add Adapter Metadata Wizard**.</span></span> <span data-ttu-id="eee2d-127">アダプター メタデータの追加ウィザードの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マニュアルの「アダプター メタデータを BizTalk プロジェクトに追加する方法」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eee2d-127">For more information on the Add Adapter Metadata Wizard see the topic "How to Add Adapter Metadata to a BizTalk Project" in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] documentation.</span></span>|  
 |<span data-ttu-id="eee2d-128">PeopleSoftOneWaySend.odx</span><span class="sxs-lookup"><span data-stu-id="eee2d-128">PeopleSoftOneWaySend.odx</span></span>|<span data-ttu-id="eee2d-129">アプリケーションが使用するオーケストレーション。</span><span class="sxs-lookup"><span data-stu-id="eee2d-129">The orchestration used by the application.</span></span>|  
 |<span data-ttu-id="eee2d-130">PeopleSoftOneWaySend.snk</span><span class="sxs-lookup"><span data-stu-id="eee2d-130">PeopleSoftOneWaySend.snk</span></span>|<span data-ttu-id="eee2d-131">厳密な名前のキー ファイル。</span><span class="sxs-lookup"><span data-stu-id="eee2d-131">The strong naming key file.</span></span>|  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="eee2d-139">値を入力して、**名前**フィールド、たとえば**PeopleSoft**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-139">Enter a value for the **Name** field, for example **PeopleSoft**.</span></span>  
   
-5.  <span data-ttu-id="eee2d-140">選択**PeopleSoft enterprise (r)**で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-140">Select **PeopleSoft Enterprise(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
+5.  <span data-ttu-id="eee2d-140">選択**PeopleSoft enterprise (r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-140">Select **PeopleSoft Enterprise(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
   
 #### <a name="create-a-biztalk-send-port"></a><span data-ttu-id="eee2d-141">BizTalk 送信ポートを作成する</span><span class="sxs-lookup"><span data-stu-id="eee2d-141">Create a BizTalk Send Port</span></span>  
   
@@ -80,13 +81,13 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="eee2d-148">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="eee2d-148">**Property**</span></span>|<span data-ttu-id="eee2d-149">**値**</span><span class="sxs-lookup"><span data-stu-id="eee2d-149">**Value**</span></span>|  
     |------------------|---------------|  
-    |<span data-ttu-id="eee2d-150">アプリケーション サーバーのパス</span><span class="sxs-lookup"><span data-stu-id="eee2d-150">Application server path</span></span>|<span data-ttu-id="eee2d-151">PeopleSoft Server のコンピューターおよびポートの場所 (例: //PSServer:8888)。</span><span class="sxs-lookup"><span data-stu-id="eee2d-151">PeopleSoft Server's machine and port location, for example //PSServer:8888.</span></span> <span data-ttu-id="eee2d-152">**注:**する上記の例ででした入力ように//PSServer の値、PeopleSoft サーバーは、既定のポート値 9000 を使用している場合、9000 の既定のポートが使用されるポート番号を指定しない場合。</span><span class="sxs-lookup"><span data-stu-id="eee2d-152">**Note:**  If you do not specify a port number, the default port of 9000 is used so in the example above you could enter a value of //PSServer if the PeopleSoft Server uses the default port value of 9000.</span></span>|  
+    |<span data-ttu-id="eee2d-150">アプリケーション サーバーのパス</span><span class="sxs-lookup"><span data-stu-id="eee2d-150">Application server path</span></span>|<span data-ttu-id="eee2d-151">PeopleSoft Server のコンピューターおよびポートの場所 (例: //PSServer:8888)。</span><span class="sxs-lookup"><span data-stu-id="eee2d-151">PeopleSoft Server's machine and port location, for example //PSServer:8888.</span></span> <span data-ttu-id="eee2d-152">**注:** する上記の例ででした入力ように//PSServer の値、PeopleSoft サーバーは、既定のポート値 9000 を使用している場合、9000 の既定のポートが使用されるポート番号を指定しない場合。</span><span class="sxs-lookup"><span data-stu-id="eee2d-152">**Note:**  If you do not specify a port number, the default port of 9000 is used so in the example above you could enter a value of //PSServer if the PeopleSoft Server uses the default port value of 9000.</span></span>|  
     |<span data-ttu-id="eee2d-153">JAVA_HOME</span><span class="sxs-lookup"><span data-stu-id="eee2d-153">JAVA_HOME</span></span>|<span data-ttu-id="eee2d-154">Java 2 Platform SDK ファイルに関連付けられているホーム ディレクトリへのパス (例: C:\j2sdk1.4.2_08)。</span><span class="sxs-lookup"><span data-stu-id="eee2d-154">Path to the home directory associated with the Java 2 Platform SDK files, for example C:\j2sdk1.4.2_08</span></span>|  
     |<span data-ttu-id="eee2d-155">Password</span><span class="sxs-lookup"><span data-stu-id="eee2d-155">Password</span></span>|<span data-ttu-id="eee2d-156">PeopleSoft システムへの接続時に使用するパスワード。</span><span class="sxs-lookup"><span data-stu-id="eee2d-156">Password used when connecting to the PeopleSoft system.</span></span>|  
     |<span data-ttu-id="eee2d-157">PeopleSoft 8.x JAR ファイル</span><span class="sxs-lookup"><span data-stu-id="eee2d-157">PeopleSoft 8.x JAR files</span></span>|<span data-ttu-id="eee2d-158">PeopleSoft Java Object Adapter JAR ファイルの場所**psjoa.jar**C:\JARS\psjoa.jar 例を示します。</span><span class="sxs-lookup"><span data-stu-id="eee2d-158">Location of the PeopleSoft Java Object Adapter JAR file, **psjoa.jar**, for example C:\JARS\psjoa.jar.</span></span>|  
     |<span data-ttu-id="eee2d-159">ユーザー名</span><span class="sxs-lookup"><span data-stu-id="eee2d-159">User name</span></span>|<span data-ttu-id="eee2d-160">PeopleSoft システムへの接続時に使用するユーザー名。</span><span class="sxs-lookup"><span data-stu-id="eee2d-160">Username for connecting to the PeopleSoft system.</span></span>|  
   
-6.  <span data-ttu-id="eee2d-161">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eee2d-161">Click **OK**.</span></span>  
+6.  <span data-ttu-id="eee2d-161">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eee2d-161">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="eee2d-162">選択、 **XML Transmit**パイプラインで使用可能なパイプラインの一覧から、**送信パイプライン**ドロップダウン リスト をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-162">Select the **XML Transmit** pipeline from the list of pipelines available in the **Send pipeline** dropdown and click **OK**.</span></span>  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="eee2d-173">用に作成したフォルダーの場所を入力、**受信フォルダー**プロパティをクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-173">Enter the location of the folder that you created earlier for the **Receive Folder** property and click **OK**.</span></span>  
   
-6.  <span data-ttu-id="eee2d-174">選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-174">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
+6.  <span data-ttu-id="eee2d-174">選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-174">Select **XMLReceive** from the list of available pipelines in the **Receive pipeline** dropdown box and click **OK**.</span></span>  
   
 7.  <span data-ttu-id="eee2d-175">受信場所を右クリックし、をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-175">Right-click the receive location and click **Enable**.</span></span>  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="eee2d-188">ダブルクリックして**LOCATIONService_1.xsd**ソリューション エクスプ ローラーで、スキーマ エディターでファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="eee2d-188">Double-click **LOCATIONService_1.xsd** in the Solution Explorer to open the file in the Schema Editor.</span></span>  
   
-2.  <span data-ttu-id="eee2d-189">右クリックし、 **\<スキーマ\>**スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="eee2d-189">Right-click the **\<Schema\>** node in the Schema Editor, and click **Properties** to display the properties for the node.</span></span>  
+2.  <span data-ttu-id="eee2d-189">右クリックし、 **\<スキーマ\>** スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="eee2d-189">Right-click the **\<Schema\>** node in the Schema Editor, and click **Properties** to display the properties for the node.</span></span>  
   
 3.  <span data-ttu-id="eee2d-190">選択**CreateEx**で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-190">Select **CreateEx** from the list of available nodes in the **Root Reference** dropdown box.</span></span> <span data-ttu-id="eee2d-191">これから生成されるサンプルのドキュメント インスタンスを生成するときにそのように実行する、 **CreateEx**スキーマのノードです。</span><span class="sxs-lookup"><span data-stu-id="eee2d-191">This should be done so that when you generate a sample document instance it will be generated from the **CreateEx** node of the schema.</span></span>  
   
@@ -160,9 +161,9 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="eee2d-197">ソリューション エクスプ ローラーで LOCATIONService_1.xsd を右クリックし、をクリックして**インスタンスの生成**を指定した場所にドキュメント インスタンスを生成します。</span><span class="sxs-lookup"><span data-stu-id="eee2d-197">Right-click LOCATIONService_1.xsd in Solution Explorer and click **Generate Instance** to generate a document instance in the specified location.</span></span>  
   
-9. <span data-ttu-id="eee2d-198">右クリックし、 **\<スキーマ\>**スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="eee2d-198">Right-click the **\<Schema\>** node in the Schema Editor, and click **Properties** to display the properties for the node.</span></span>  
+9. <span data-ttu-id="eee2d-198">右クリックし、 **\<スキーマ\>** スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="eee2d-198">Right-click the **\<Schema\>** node in the Schema Editor, and click **Properties** to display the properties for the node.</span></span>  
   
-10. <span data-ttu-id="eee2d-199">選択 (**既定)**で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-199">Select (**Default)** from the list of available nodes in the **Root Reference** dropdown box.</span></span>  
+10. <span data-ttu-id="eee2d-199">選択 (**既定)** で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="eee2d-199">Select (**Default)** from the list of available nodes in the **Root Reference** dropdown box.</span></span>  
   
 #### <a name="modify-the-generated-document-instance"></a><span data-ttu-id="eee2d-200">生成されたドキュメント インスタンスを変更する</span><span class="sxs-lookup"><span data-stu-id="eee2d-200">Modify the generated document instance</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "方法: ビジネス ルール ポリシーを使用して、日程の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: ビジネス ルール ポリシーを使用して、日程の選択 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f6373a8-d9d6-46c6-95e3-f62dd33c342a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010587"
 ---
 # <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a><span data-ttu-id="3e162-102">方法: ビジネス ルール ポリシーを使用して、日程を選択</span><span class="sxs-lookup"><span data-stu-id="3e162-102">How to: Select an Itinerary Using a Business Rules Policy</span></span>
 ## <a name="goal"></a><span data-ttu-id="3e162-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="3e162-103">Goal</span></span>  
@@ -120,7 +121,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  <span data-ttu-id="3e162-156">**アクション**セクションを右クリックして**GlobalBankWestItinerary**、クリックして**引数の再設定**です。</span><span class="sxs-lookup"><span data-stu-id="3e162-156">In the **Actions** section, right-click **GlobalBankWestItinerary**, and then click **Reset argument**.</span></span>  
   
-8.  <span data-ttu-id="3e162-157">をクリックして**\<空の文字列\>**し入力**GlobalBankEastItinerary**です。</span><span class="sxs-lookup"><span data-stu-id="3e162-157">Click **\<empty string\>** and then type **GlobalBankEastItinerary**.</span></span>  
+8.  <span data-ttu-id="3e162-157">をクリックして**\<空の文字列\>** し入力**GlobalBankEastItinerary**です。</span><span class="sxs-lookup"><span data-stu-id="3e162-157">Click **\<empty string\>** and then type **GlobalBankEastItinerary**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="3e162-158">操作方法に関するトピックの後半 GlobalBank 東部からメッセージを処理するこの行程を作成します。</span><span class="sxs-lookup"><span data-stu-id="3e162-158">Later in the How-to topic, you will create this itinerary to process messages from GlobalBank East.</span></span>  
@@ -295,7 +296,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="3e162-257">右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="3e162-257">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
   
-4.  <span data-ttu-id="3e162-258">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="3e162-258">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="3e162-258">**受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="3e162-258">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="3e162-259">**受信場所のプロパティ** ダイアログ ボックスで、**名前**ボックスに、入力**OnRamp.Itinerary.HowTo**です。</span><span class="sxs-lookup"><span data-stu-id="3e162-259">In the **Receive Location Properties** dialog box, in the **Name** box, type **OnRamp.Itinerary.HowTo**.</span></span>  
   

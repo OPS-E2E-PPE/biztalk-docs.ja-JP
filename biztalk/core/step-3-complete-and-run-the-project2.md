@@ -1,14 +1,14 @@
 ---
-title: "手順 3: が完了し、実行、Project2 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: が完了し、実行、Project2 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04e5b82f-e88c-4a2c-bdda-f986725458e3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277162"
 ---
 # <a name="step-3-complete-and-run-the-project"></a><span data-ttu-id="abcfd-102">手順 3: が完了し、プロジェクトを実行</span><span class="sxs-lookup"><span data-stu-id="abcfd-102">Step 3: Complete and Run the Project</span></span>
 <span data-ttu-id="abcfd-103">アセンブリ キーを追加し、ポートをバインドしたら、オーケストレーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="abcfd-103">After adding the assembly key and binding the ports, it is time to test the orchestration.</span></span>  

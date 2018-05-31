@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 参照スキーマ DLL2 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 参照スキーマ DLL2 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1db92227-6164-42b9-b60c-12dd2cae46e2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277530"
 ---
 # <a name="step-1-reference-the-schema-dll"></a><span data-ttu-id="f9ef7-102">手順 1: スキーマ DLL を参照します。</span><span class="sxs-lookup"><span data-stu-id="f9ef7-102">Step 1: Reference the Schema DLL</span></span>
 <span data-ttu-id="f9ef7-103">BizTalk では、メッセージを変更できません。</span><span class="sxs-lookup"><span data-stu-id="f9ef7-103">In BizTalk, messages are immutable.</span></span> <span data-ttu-id="f9ef7-104">したがって、プロパティ値を変更するには、新しいメッセージを作成して変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f9ef7-104">Therefore, to change a property value you must create and modify a new message.</span></span> <span data-ttu-id="f9ef7-105">作成して、受信および送信図形の間でメッセージの割り当て図形を挿入することで、新しいメッセージを変更します。</span><span class="sxs-lookup"><span data-stu-id="f9ef7-105">You create and modify the new message by inserting a message assignment shape between the Receive and Send shapes.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/jde-properties-selection.gif "JDE_properties_selection")  
   
-10. <span data-ttu-id="f9ef7-124">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9ef7-124">Click **OK**.</span></span>  
+10. <span data-ttu-id="f9ef7-124">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9ef7-124">Click **OK**.</span></span>  
   
 11. <span data-ttu-id="f9ef7-125">オーケストレーションをダブルクリックしてオーケストレーション デザイナにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="f9ef7-125">Double-click your orchestration to access the Orchestration Designer.</span></span>  
   
