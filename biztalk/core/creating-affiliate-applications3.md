@@ -14,7 +14,7 @@ helpviewer_keywords:
 - affiliate applications, creating
 - SSO tickets
 ms.assetid: 800644fd-2286-4e59-894b-260f584dd29f
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24015153"
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、シングル サインオン (SSO) を使用して関連アプリケーションを利用する方法について説明します。  

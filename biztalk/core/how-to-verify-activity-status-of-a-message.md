@@ -1,11 +1,11 @@
 ---
-title: "メッセージのアクティビティの状態を確認する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのアクティビティの状態を確認する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities, verifying status
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - verifying message status in PeopleSoft
 - messages, verifying status
 ms.assetid: b8cee6f9-0f65-4228-a87a-3f3aca6182bf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256546"
 ---
 # <a name="how-to-verify-activity-status-of-a-message"></a>メッセージのアクティビティの状態を確認する方法
 PeopleSoft HTTP ホストおよび PeopleSoft がイベントを送信ポートを作成するのにには、PeopleSoft Integration Broker を使用します。 メッセージがアクティブになっており、ルーティングされていることを確認するには、次の手順に従います。  
@@ -30,7 +31,7 @@ PeopleSoft HTTP ホストおよび PeopleSoft がイベントを送信ポート�
   
 1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**PeopleSoft Application Name**、し、**アプリケーション デザイナー**です。  
   
-2.  **PeopleSoft sign-on**画面で、入力、**ユーザー ID**と**パスワード**、クリックして**[ok]**です。  
+2.  **PeopleSoft sign-on**画面で、入力、**ユーザー ID**と**パスワード**、クリックして **[ok]** です。  
   
      ![](../core/media/psadapter-24-task-userpass.gif "PSAdapter_24_Task_UserPass")  
   
@@ -48,7 +49,7 @@ PeopleSoft HTTP ホストおよび PeopleSoft がイベントを送信ポート�
   
      ![](../core/media/psadapter-28-task-locationproperties.gif "PSAdapter_28_Task_LocationProperties")  
   
-6.  アプリケーション デザイナーを右クリックして**[location_tbl]**を選択して**メッセージ プロパティ**です。  
+6.  アプリケーション デザイナーを右クリックして **[location_tbl]** を選択して**メッセージ プロパティ**です。  
   
      ![](../core/media/psadapter-29-task-loctionmenu.gif "PSAdapter_29_Task_LoctionMenu")  
   
@@ -78,7 +79,7 @@ PeopleSoft HTTP ホストおよび PeopleSoft がイベントを送信ポート�
   
     -   **ig.isc.password::** PS のパスワード  
   
-    -   **ig.isc.toolsrel::**特定のリリース  
+    -   **ig.isc.toolsrel::** 特定のリリース  
   
 ## <a name="see-also"></a>参照  
  [PeopleSoft HTTP ホストおよびポートを作成します。](../core/creating-a-peoplesoft-http-host-and-port.md)

@@ -1,11 +1,11 @@
 ---
-title: "コンポーネント インターフェイス ユーザー定義メソッド |Microsoft ドキュメント"
-ms.custom: 
+title: コンポーネント インターフェイス ユーザー定義メソッド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - component interfaces, user-defined methods
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - samples, custom methods
 - component interfaces, limitations for custom CI
 ms.assetid: e4b15889-35ff-44aa-819d-eade9690bdd6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233834"
 ---
 # <a name="component-interface-user-defined-methods"></a>コンポーネント インターフェイス ユーザー定義メソッド
 Microsoft BizTalk Adapter for PeopleSoft Enterprise は、コンポーネント インターフェイスでユーザー定義メソッドをサポートします。 署名の形式は次のとおりです。  

@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: baecebcd-c324-40aa-bacf-876f45b6c37f
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24014457"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a>BizTalk 管理コンソールで JD Edwards EnterpriseOne の成果物を構成します。
 Microsoft BizTalk Adapter for J.D.Edwards EnterpriseOne には、Receive Handler フォルダーと Send Handler フォルダーの両方が含まれています。 これらのフォルダーには、BizTalkServerApplication が含まれています。 BizTalk Adapter for J.D.Edwards EnterpriseOne は、BizTalk Server と共にインプロセスで実行され、分離ホスト プロセスでは実行されません。  
@@ -69,7 +70,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
   
 4.  **全般**, の **トランスポートの種類** ボックスで、 **JDE EnterpriseOne** ドロップ ダウン リストでします。  
   
-5.  **アドレス (URI)**プロパティは、省略記号 (**.**). **JDE EnterpriseOne トランスポートのプロパティ**を開きます。 
+5.  **アドレス (URI)** プロパティは、省略記号 (**.**). **JDE EnterpriseOne トランスポートのプロパティ**を開きます。 
   
      ![](../core/media/jdeenterprise-trans.gif "JDEEnterprise_Trans")  
   
@@ -172,9 +173,9 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
   
     4.  送信パイプラインのドロップダウン リストから選択 **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**します。  
   
-    5.  **受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**します。  
+    5.  **受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** します。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
 
 
 ## <a name="see-also"></a>参照  

@@ -1,14 +1,14 @@
 ---
-title: "PeopleSoft から受信 |Microsoft ドキュメント"
-ms.custom: 
+title: PeopleSoft から受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9acc71ec-05b8-4490-b3ba-0ce7f27a5a6a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014385"
 ---
 # <a name="receiving-from-peoplesoft"></a>PeopleSoft からの受信
 Microsoft Adapter for PeopleSoft Enterprise は送信アダプターです。 アダプターでは送信請求 - 応答をサポートしているため、クエリを送信し、応答を受け取ることができます。 ただし、データを PeopleSoft からのみ受信する場合は、さらに 2 つの手順が必要です。  

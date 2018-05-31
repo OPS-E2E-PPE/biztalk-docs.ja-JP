@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233306"
 ---
 # <a name="completing-the-exception-message"></a>例外完了メッセージ
 例外のフローを完了するには、作成、**送信**メッセージし、エラー メッセージ _ 3 を監視対象フォルダーにリダイレクトします。  

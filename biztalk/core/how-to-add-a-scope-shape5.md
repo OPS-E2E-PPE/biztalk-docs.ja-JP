@@ -1,17 +1,17 @@
 ---
-title: "スコープ Shape5 を追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スコープ Shape5 を追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adding, Scope shapes
 - Scope shape, adding
 ms.assetid: 1e16eda1-c4bd-4428-a477-78c453aeb1aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246738"
 ---
 # <a name="how-to-add-a-scope-shape"></a>スコープ図形を追加する方法
 次の手順を追加するに従って、**スコープ**図形です。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230714"
 ---
 # <a name="basic-orchestration-design"></a>基本的なオーケストレーション デザイン
 基本的なオーケストレーションを作成すると、オーケストレーションの受信ポートで XML を受信します。 その XML をバックエンド システムに送信して処理します。 バックエンド システムで例外が発生した場合はオーケストレーションが停止します。 生成される例外には、完了しなかったオーケストレーションの情報が示されます。  

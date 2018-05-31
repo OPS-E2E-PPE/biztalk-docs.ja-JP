@@ -1,18 +1,18 @@
 ---
-title: "Exception1 のメッセージを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Exception1 のメッセージを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exceptions, adding messages
 - messages, exceptions
 - faults, adding messages
 ms.assetid: e087db39-e745-47d4-a888-0b82a9f855c8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246594"
 ---
 # <a name="how-to-add-a-message-for-an-exception"></a>例外のメッセージを追加する方法
 このトピックでは、例外に関するメッセージを追加する方法について説明します。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **プロパティ**ウィンドウで、設定、**メッセージの種類**です。  
   
-     選択**.Net クラス**、し、 **SystemString**です。  
+     選択 **.Net クラス**、し、 **SystemString**です。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 例外処理の使用](../core/using-biztalk-server-exception-handling5.md)

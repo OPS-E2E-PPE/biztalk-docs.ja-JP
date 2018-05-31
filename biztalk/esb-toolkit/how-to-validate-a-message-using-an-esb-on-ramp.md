@@ -1,14 +1,14 @@
 ---
-title: "方法: ESB 入り口を使用して、メッセージの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: ESB 入り口を使用して、メッセージの検証 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43dfc791-7cb6-45a4-898f-f53def199c08
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009523"
 ---
 # <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>方法: ESB 入り口を使用して、メッセージの検証
 ## <a name="goal"></a>[目標]  
@@ -151,7 +152,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
   
-4.  **受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして**[ok]**です。  
+4.  **受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして **[ok]** です。  
   
 5.  **受信場所のプロパティ** ダイアログ ボックスで、「 **OnRamp.Itinerary.HowTo**で、**名前**ボックス。  
   
@@ -182,7 +183,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  クリックして、 **ItineraryFactKey**プロパティ、および入力**Resolver.Itinerary**です。  
   
-    2.  クリックして、 **ResolverConnectionString**プロパティ、および入力**行程:\\\name=Validation;**です。  
+    2.  クリックして、 **ResolverConnectionString**プロパティ、および入力**行程:\\\name=Validation;** です。  
   
     3.  をクリックして**OK**を閉じる、**パイプラインの構成** ダイアログ ボックス。  
   

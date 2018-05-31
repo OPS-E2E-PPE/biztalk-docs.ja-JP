@@ -1,18 +1,18 @@
 ---
-title: "エラー Messages2 |Microsoft ドキュメント"
-ms.custom: 
+title: エラー Messages2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - error messages, JD Edwards OneWorld adapters
 - adapters [JD Edwards OneWorld adapters], error messages
 - JD Edwards OneWorld adapters, error messages
 ms.assetid: 9fb65d50-83c6-426e-a0d6-674800ecf70f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241898"
 ---
 # <a name="error-messages"></a>エラー メッセージ
 次の表は、JD Edwards OneWorld システムのエラー メッセージと、その修正方法の説明です。  

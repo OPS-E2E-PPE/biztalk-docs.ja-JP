@@ -1,14 +1,14 @@
 ---
-title: "行程ベースのルーティング アイテム |Microsoft ドキュメント"
-ms.custom: 
+title: 行程ベースのルーティング アイテム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cff38ab7-5a16-42cc-9065-075e9db7acd3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296826"
 ---
 # <a name="itinerary-based-routing-artifacts"></a>行程ベースのルーティング コンポーネント
 行程ベースのルーティング機能、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]複数のアセンブリで定義されているキーの成果物のセットが含まれます。 次の表を操作するときの開発者と追加の ESB itinerary サービス実装と旅程ベースのルーティング実装を拡張するためのカテゴリによってこれらの成果物が一覧表示します。  

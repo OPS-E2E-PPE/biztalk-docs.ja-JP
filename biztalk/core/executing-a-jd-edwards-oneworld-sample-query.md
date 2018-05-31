@@ -1,14 +1,14 @@
 ---
-title: "JD Edwards OneWorld サンプル クエリを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: JD Edwards OneWorld サンプル クエリを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b060d383-a2df-472f-90cc-e79078b0bcfd
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975772"
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a>JD Edwards OneWorld サンプル クエリを実行します。
 JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムからアクセスするには、JD Edwards OneWorld アダプターを使用します。 このアダプターは、付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。
@@ -93,7 +94,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
     5.  **受信パイプライン。**  `XMLReceive`  
   
-4.  **[構成]**をクリックし、次のプロパティ値を入力します。  
+4.  **[構成]** をクリックし、次のプロパティ値を入力します。  
   
     1.  **ホスト:** \<JDEOW ホスト名を入力してください\>  
   
@@ -105,7 +106,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
          `C:\JDEOWJars\BTSLIBInterop.jar; C:\JDEOWJars\Connector.jar; C:\JDEOWJars\Kernel.jar;C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\J.D. Edwards OneWorld®\Classes\JDEJAccess.jar`  
   
-    5.  **パスワード:**ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。  
+    5.  **パスワード:** ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。  
   
     6.  **ポート:**  `6009`  
   
@@ -119,9 +120,9 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
 次に、BizTalk プロジェクトを作成[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、間の通信を処理するプロジェクトで、オーケストレーションを構成して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と JD Edwards OneWorld システムです。 送信と受信のポートを追加し、プロジェクトをビルドしてから、プロジェクトを展開します。  
 
   
-1.  開いている[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、C:\LABS フォルダーに新しい BizTalk プロジェクトを作成します。 **[ファイル]** メニューの **[新規作成]**をクリックします。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[テンプレート]** セクションで **[空の BizTalk Server プロジェクト]** 入力`JDE_OW_Test`クリックして一意のプロジェクト名として**OK**です。  
+1.  開いている[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、C:\LABS フォルダーに新しい BizTalk プロジェクトを作成します。 **[ファイル]** メニューの **[新規作成]** をクリックします。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[テンプレート]** セクションで **[空の BizTalk Server プロジェクト]** 入力`JDE_OW_Test`クリックして一意のプロジェクト名として**OK**です。  
   
-2.  ソリューション エクスプローラーでプロジェクト名を右クリックし、 **[追加]**をクリックし、 **[生成した項目の追加]**をクリックします。 [カテゴリ] ウィンドウで、次のように選択します。**アダプター メタデータの追加**、[テンプレート] ペインで選択**アダプター メタデータの追加**、順にクリック**追加**です。  
+2.  ソリューション エクスプローラーでプロジェクト名を右クリックし、 **[追加]** をクリックし、 **[生成した項目の追加]** をクリックします。 [カテゴリ] ウィンドウで、次のように選択します。**アダプター メタデータの追加**、[テンプレート] ペインで選択**アダプター メタデータの追加**、順にクリック**追加**です。  
   
 3.  アダプターの追加ウィザードで選択、 **JD Edwards OneWorld**アダプター、select、 **[jde_oneworldport]** 、前の手順で作成したポートを送信し、をクリックして**次**.  
   
@@ -145,11 +146,11 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 1.  **BizTalk Orchestration.odx** ファイルをダブルクリックし、オーケストレーションを開きます。  
   
-2.  BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
+2.  BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。  
   
 3.  **ポートのプロパティ** ページで、入力`JDE_File_In`の**名前**、クリックして**次へ**です。  
   
-4.  **[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]**を選択し、次のプロパティ値を入力または選択します。  
+4.  **[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]** を選択し、次のプロパティ値を入力または選択します。  
   
      **ポートの種類名**:`JDE_FileIn_Port`  
   
@@ -163,15 +164,15 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      **[ポートのバインド]**: **[後で指定する]**  
   
-6.  **[次へ]**をクリックし、 **[完了]**をクリックします。  
+6.  **[次へ]** をクリックし、 **[完了]** をクリックします。  
   
  次に、送信/受信ポートを作成します。これは、クエリが格納された最初の XML 入力ファイルを JD Edwards OneWorld システムに送信するためのものです。 このポートは、クエリの結果が格納された出力 XML ファイルを JD Edwards OneWorld システムから受信するのにも使用されます。  
   
 #### <a name="configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a>JD Edwards OneWorld とインターフェイスへの送信/受信ポートを構成します。  
   
-1.  BizTalk Orchestration.odx ファイルで右ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
+1.  BizTalk Orchestration.odx ファイルで右ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。  
   
-2.  **[ポートの種類の選択]** ページで、 **[既存のポートの種類を使用する]**をクリックします。 **使用可能なポートの種類** **JD_OW_Test.N0100041**、順にクリック**次へ**です。  
+2.  **[ポートの種類の選択]** ページで、 **[既存のポートの種類を使用する]** をクリックします。 **使用可能なポートの種類** **JD_OW_Test.N0100041**、順にクリック**次へ**です。  
   
      ![](../core/media/a421358c-6e90-4fe0-b243-6beb1b51955a.gif "a421358c-6e90-4fe0-b243-6beb1b51955a")  
   
@@ -181,17 +182,17 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      **[ポートのバインド]**: **[後で指定する]**  
   
-4.  **[次へ]**をクリックし、 **[完了]**をクリックします。 ポート画面に、ポートと使用可能なメソッドが表示されます。  
+4.  **[次へ]** をクリックし、 **[完了]** をクリックします。 ポート画面に、ポートと使用可能なメソッドが表示されます。  
   
  最後に、送信ポートを構成します。これは、クエリの結果を格納した XML ファイルをファイル アダプターがディスクに出力するときに使用されます。  
   
 #### <a name="configure-a-send-port-to-output-the-xml-file-to-disk"></a>XML ファイルをディスクに出力する送信ポートを構成します。  
   
-1.  BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
+1.  BizTalk Orchestration.odx ファイルで、左ポート画面を右クリックし、をクリックして**新しい構成済みポート**です。 ポート構成ウィザードが起動します。 **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。  
   
 2.  **ポートのプロパティ** ページで、入力`JDE_FileOut`の**名前**、クリックして**次へ**です。  
   
-3.  **[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]**を選択し、次のプロパティ値を入力または選択します。  
+3.  **[ポートの種類の選択]** ページで、 **[新しいポートの種類の作成]** を選択し、次のプロパティ値を入力または選択します。  
   
      **ポートの種類名**:`JDE_FileOut_Port`  
   
@@ -205,7 +206,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      **[ポートのバインド]**: **[後で指定する]**  
   
-5.  **[次へ]**をクリックし、 **[完了]**をクリックします。  
+5.  **[次へ]** をクリックし、 **[完了]** をクリックします。  
   
  ポート画面に、JD Edwards OneWorld のサービスのための新しいポートと使用できるメソッドが表示されます。 JD Edwards OneWorld システムとの間でファイルを送受信するように JD Edwards OneWorld アダプターを設定する作業は、後で行います。  
   
@@ -256,13 +257,13 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      **sn-k labs.snk**  
   
-3.  ソリューション エクスプ ローラーで右クリックし、 **[jd_ow_test]**プロジェクトをクリックして**プロパティ**プロジェクトのプロジェクト デザイナーを起動します。  
+3.  ソリューション エクスプ ローラーで右クリックし、 **[jd_ow_test]** プロジェクトをクリックして**プロパティ**プロジェクトのプロジェクト デザイナーを起動します。  
   
 4.  **[署名]** タブをクリックします。  
   
-5.  **[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]**をクリックします。  
+5.  **[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]** をクリックします。  
   
-6.  キー ファイル **labs.snk**を一覧から選択して **[開く]**をクリックします。  
+6.  キー ファイル **labs.snk**を一覧から選択して **[開く]** をクリックします。  
   
 7.  プロジェクト デザイナーの **[展開]** タブをクリックします。  
   
@@ -272,7 +273,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      ![](../core/media/jdeow-buildcompleteoutput.gif "JDEOW_BuildCompleteOutput")  
   
-10. ビルドが完了したらを右クリックし、 **[XX_JD Edwards oneworldquery]**プロジェクトをクリックして**展開**です。 出力ウィンドウに、次のように出力が表示されます。  
+10. ビルドが完了したらを右クリックし、 **[XX_JD Edwards oneworldquery]** プロジェクトをクリックして**展開**です。 出力ウィンドウに、次のように出力が表示されます。  
   
      ![](../core/media/jdeow-deployoutput.gif "JDEOW_DeployOutput")  
   
@@ -287,7 +288,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      `C:\LABS\JDE_OW_TEST\SAMPLE.XML`  
   
-3.  クリックして **OK.** [プロパティ] ウィンドウで選択**\<スキーマ\>**設定と**ルート参照:**に`AddressBookMasterMBF`です。 これにより、生成された XML のみを含む、**クエリ**xml です。  
+3.  クリックして **OK.** [プロパティ] ウィンドウで選択**\<スキーマ\>** 設定と**ルート参照:** に`AddressBookMasterMBF`です。 これにより、生成された XML のみを含む、**クエリ**xml です。  
   
      ![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")  
   
@@ -305,9 +306,9 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 4.  **[Orchestration_1]** を選択し、 **[ホスト]** ドロップダウン ボックスをクリックします。 **[BizTalkServerApplication]** を選択します。  
   
-5.  **受信ポート**をクリックして **\<None\>**です。 ドロップダウン リストの **[新しい受信ポート]**を選択します。  
+5.  **受信ポート**をクリックして **\<None\>** です。 ドロップダウン リストの **[新しい受信ポート]** を選択します。  
   
-6.  **名前**、型`JDE_FileIn_Port`、順にクリック**OK**です。 受信場所を指定する必要があるというメッセージ ボックスが表示されます。 **[OK]**をクリックし、 **[新規作成]**をクリックします。  
+6.  **名前**、型`JDE_FileIn_Port`、順にクリック**OK**です。 受信場所を指定する必要があるというメッセージ ボックスが表示されます。 **[OK]** をクリックし、 **[新規作成]** をクリックします。  
   
      ![](../core/media/jdeow-filein-port-receiveportproperties.gif "JDEOW_FileIn_Port_ReceivePortProperties")  
   
@@ -323,7 +324,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      ![](../core/media/jdeow-filein-loc-receivelocationproperties.gif "JDEOW_FileIn_Loc_ReceiveLocationProperties")  
   
-8.  をクリックして**構成**、型`C:\LABS\JDE_OW_Test\FileIn`の**受信フォルダー**、クリックして**[ok]** 3 回です。  
+8.  をクリックして**構成**、型`C:\LABS\JDE_OW_Test\FileIn`の**受信フォルダー**、クリックして **[ok]** 3 回です。  
   
      ![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")  
   
@@ -339,7 +340,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      **[パイプライン]**: **XMLTransmit** および **XMLReceive**  
   
-11. **[構成]**をクリックし、次のプロパティ値を入力します。  
+11. **[構成]** をクリックし、次のプロパティ値を入力します。  
   
      **ホスト:** \<JDEOW ホスト名を入力してください\>  
   
@@ -351,7 +352,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      `C:JDEOWJarsBTSLIBInterop.jar; C:JDEOWJarsConnector.jar; C:JDEOWJarsKernel.jar;C:Program FilesMicrosoft BizTalk Adapters for Enterprise ApplicationsJ.D. Edwards OneWorld®ClassesJDEJAccess.jar`  
   
-     **パスワード:**ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。  
+     **パスワード:** ドロップダウン リストを使用して、JD Edwards OneWorld パスワードを入力します。  
   
      **ポート:**  `6009`  
   

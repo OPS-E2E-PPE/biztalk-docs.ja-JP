@@ -1,14 +1,14 @@
 ---
-title: "使用してグラフやレポートの傾向を分析フォールト |Microsoft ドキュメント"
-ms.custom: 
+title: 使用してグラフやレポートの傾向を分析フォールト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f46dddb-bb9b-498d-bef3-ad9664f6c8ec
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290466"
 ---
 # <a name="analyzing-fault-trends-using-charts-and-reports"></a>グラフとレポートを使用してフォールト傾向の分析
 このセクションでは、グラフおよび ESB 管理ポータルを生成するレポートについて説明します。 これらのグラフとレポートは、貴重な詳細やエラー、警告、およびメッセージ再送信の傾向情報を提供します。 次の情報を表示できます。  

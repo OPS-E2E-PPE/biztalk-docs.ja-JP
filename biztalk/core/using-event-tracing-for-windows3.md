@@ -17,7 +17,7 @@ helpviewer_keywords:
 - BTATIBCOEMSTrace command
 - Event Tracing for Windows
 ms.assetid: 71954431-2015-4d50-b69e-500c883b1e04
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973616"
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー メッセージ、警告メッセージ、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションの変換、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
@@ -52,11 +53,11 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、エラー �
   
  BizTalk Adapter for TIBCO Enterprise Message Service には、さまざまな種類のメッセージをログに記録することを可能にするプロバイダーがあります。  
   
--   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。  
   
      使用 **-受信者** 実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
   
--   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。  
   
      使用 **-送信機**実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
   
@@ -71,7 +72,7 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
  各要素の説明は次のとおりです。  
   
--   **\<Trace 要素\>**プロバイダーの種類は、(必須)。  
+-   **\<Trace 要素\>** プロバイダーの種類は、(必須)。  
   
  そのオプションは次のとおりです。  
   

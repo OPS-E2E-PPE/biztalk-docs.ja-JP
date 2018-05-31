@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを受信する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを受信する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc5a63ec-1897-4c9b-b37f-cdcec151b1c9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008579"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-enterprise-message-service-to-receive-data"></a>チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用したデータの受信
 BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO システムからデータを受信できます。 このチュートリアルでは、これを示す SDK サンプルについて説明します。  
@@ -100,9 +101,9 @@ BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO
   
      プロパティの詳細については、次を参照してください。 [TIBCO Enterprise メッセージ サービス受信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-receive-handlers.md)です。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
-7.  選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
+7.  選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
   
 8.  受信場所を右クリックし、をクリックして**を有効にする**です。  
   
@@ -152,7 +153,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO
     |FileSendPort|TIBCOEMSOneWayFileSP|  
     |TibcoEMSOneWayReceiveOperation|TIBCOEMSOneWayRP|  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 #### <a name="start-the-orchestration"></a>オーケストレーションを開始します。  
   

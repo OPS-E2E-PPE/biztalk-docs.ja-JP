@@ -1,15 +1,15 @@
 ---
-title: "受信スキーマと TIBCO Rendezvous アダプターを持つイベントを処理 |Microsoft ドキュメント"
-description: "スキーマの操作が TIBCO Rendezvous の受信側と biztalk TIBCO Rendezvous の BizTalk アダプターを使用してイベント処理"
-ms.custom: 
+title: 受信スキーマと TIBCO Rendezvous アダプターを持つイベントを処理 |Microsoft ドキュメント
+description: スキーマの操作が TIBCO Rendezvous の受信側と biztalk TIBCO Rendezvous の BizTalk アダプターを使用してイベント処理
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 26cb20f9-4d26-48f6-a5e9-a51348a56538
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014097"
 ---
 # <a name="using-tibco-rendezvous-receive-ports-from-biztalk-server"></a>BizTalk Server からの TIBCO Rendezvous 受信ポートの使用
 

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー) |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a065ba89-9fdb-47dc-9021-fb95cf347cdc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013841"
 ---
 # <a name="biztalk-server-message-context-properties-send-handlers"></a>BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)
 BizTalk Server オーケストレーションの実行時には、メッセージ ペイロードに加えて、メッセージに含まれる補足情報にもアクセスできる必要があります。  
@@ -31,7 +32,7 @@ BizTalk Server オーケストレーションの実行時には、メッセー�
 ## <a name="getting-a-tibco-reply"></a>TIBCO の返信の取得  
  **質問:** TIBCO Rendezvous の読み取りおよび応答の送信サブジェクトとして使用できるように、オーケストレーション内の返信サブジェクトを操作については、BizTalk アダプターにはどのしますか? BizTalk Adapter for TIBCO Rendezvous では Rendezvous からの受信メッセージのメッセージ コンテキストにどのようにアクセスしますか。  
   
- **回答:**返信サブジェクトが、受信メッセージのコンテキストで値が入力され、オーケストレーションで読み取ることができます。 最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。  
+ **回答:** 返信サブジェクトが、受信メッセージのコンテキストで値が入力され、オーケストレーションで読み取ることができます。 最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。  
   
 1.  BizTalk Server プロジェクトで、<install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll への参照を追加します。  
   

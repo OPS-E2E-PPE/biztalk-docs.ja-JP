@@ -1,14 +1,14 @@
 ---
-title: "TIBCO EMS アダプターの SSO の要件 |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO EMS アダプターの SSO の要件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 645c7b3f-f860-4c20-b5ca-a8fb93736344
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24012977"
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 

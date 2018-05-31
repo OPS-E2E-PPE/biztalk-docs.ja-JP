@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d617a97-c165-46bb-b5a7-b66f0c1ff9f2
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24014489"
 ---
 # <a name="create-tibco-rendezvous-receive-artifacts"></a>TIBCO Rendezvous の受信の成果物を作成します。
 通知やイベントの作成は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での他の呼び出しの作成と似ています。 ここでは、TIBCO Rendezvous メッセージを待機する受信場所を作成する方法について説明します。  
@@ -59,7 +60,7 @@ TIBCO Rendezvous システムは、選択したサブジェクト名にメッセ
   
 4.  **受信場所** ] ページで、次の操作します。  
   
-    1.  **[新規作成]**をクリックします。  
+    1.  **[新規作成]** をクリックします。  
   
     2.  **受信場所** ウィンドウで、 **全般** ] ページで入力、 **名前** 受信場所のです。  
   
@@ -71,13 +72,13 @@ TIBCO Rendezvous システムは、選択したサブジェクト名にメッセ
   
     6.  選択、 **有効にするサービス時間帯** チェック ボックスをオンします。  
   
-    7.  **[OK]**をクリックします。  
+    7.  **[OK]** をクリックします。  
   
 5.  **受信マップ** ページで、選択したポートでドキュメントを変換するための受信マップを選択します。  
   
 6.  **追跡** ] ページで、必要なメッセージ本文を追跡および追跡メッセージのプロパティを選択します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
 
 ## <a name="set-the-transport-properties"></a>トランスポートのプロパティを設定します。
 メッセージをリッスンするように Microsoft BizTalk Adapter for TIBCO Rendezvous を構成するときは、どのサブジェクト名をリッスンするかを指定します。 必須のプロパティはこれだけです。  

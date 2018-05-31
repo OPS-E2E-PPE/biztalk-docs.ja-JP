@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cafbe72-2b90-4d8e-9a1d-5735cefeb3d4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286378"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-jd-edwards-enterpriseone"></a>チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の
 以下は、BizTalk コンテキスト プロパティを使用して、j. d. を制御するには  オーケストレーションで Edwards OneWorld セッションです。 このチュートリアルでは、j. d. for Microsoft BizTalk アダプターにバインドされた送信ポートに BeginDoc、EditLine、および EndDoc 呼び出しを送信するオーケストレーションがある前提としています Edwards OneWorld です。  

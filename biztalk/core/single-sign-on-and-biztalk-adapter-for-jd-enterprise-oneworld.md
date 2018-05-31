@@ -19,6 +19,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016069"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a>シングル サインオンと BizTalk Adapter for JD Enterprise OneWorld
 シングル サインオン (SSO) 資格情報がデータベースから取得した、SSO 資格情報です。したがって、する必要はありませんでサーバー システムのログオン資格情報を入力する、**トランスポートのプロパティ**ウィンドウです。  

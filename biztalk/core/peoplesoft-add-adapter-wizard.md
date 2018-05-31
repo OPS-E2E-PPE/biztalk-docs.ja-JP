@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263442"
 ---
 # <a name="peoplesoft-add-adapter-wizard"></a>PeopleSoft アダプターの追加ウィザード
 PeopleSoft システムのメタデータ情報にアクセスするには、アダプターの追加ウィザードを使用します。  

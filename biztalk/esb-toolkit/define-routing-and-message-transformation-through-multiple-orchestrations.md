@@ -1,14 +1,14 @@
 ---
-title: "ルーティングの定義と、メッセージの日程を使用して複数のオーケストレーションを通じて変換 |Microsoft ドキュメント"
-ms.custom: 
+title: ルーティングの定義と、メッセージの日程を使用して複数のオーケストレーションを通じて変換 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63141b83-798e-40d0-908d-6b7649923e69
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294018"
 ---
 # <a name="defining-routing-and-message-transformation-through-multiple-orchestrations-using-itineraries"></a>定義するルーティングと旅程を使用して複数のオーケストレーションでメッセージの変換
 このユース ケースでは、処理のために送信メッセージには、サービスを実行して、解決の要件の一覧を記述する itinerary の SOAP ヘッダーが含まれています。 旅行計画では、メッセージが、処理サイクル中に通過する 1 つ以上の Microsoft BizTalk Server オーケストレーションを指定します。 必要に応じて、旅行計画には、エンドポイントまたはメッセージの変換要件を決定するため、動的なルーティング情報を含めることができます。 図 1 は、プロセスの概略を示します。  

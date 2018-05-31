@@ -1,14 +1,14 @@
 ---
-title: "方法: 3.0 uddi サービスを発行レジストリ |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: 3.0 uddi サービスを発行レジストリ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c3bd0ed-e5f1-43eb-98d1-e3247a565ba2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009915"
 ---
 # <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a>方法: 3.0 uddi サービスを発行レジストリ
 ## <a name="goal"></a>[目標]  
@@ -67,7 +68,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  クリックして、**インスタンス情報** タブをクリックして**インスタンス情報の追加**です。  
   
-2.  **を含む tModel 名の検索**ボックスに、入力**%esb**  をクリックし、**検索**です。  
+2.  **を含む tModel 名の検索**ボックスに、入力 **%esb**  をクリックし、**検索**です。  
   
 3.  見つけてクリックして、 **tModel**の**transporttype**です。  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  **カテゴリ** タブで、をクリックして**カスタム カテゴリの追加**です。  
   
-3.  **検索**ボックスに、入力**%esb**  をクリックし、**検索**です。  
+3.  **検索**ボックスに、入力 **%esb**  をクリックし、**検索**です。  
   
 4.  見つけてクリックして、 **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel です。  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  クリックして、 **Services**タブです。  
   
-3.  **サービス名**ボックスに、入力**%po**、クリックして**検索**です。  
+3.  **サービス名**ボックスに、入力 **%po**、クリックして**検索**です。  
   
 4.  **検索** ウィンドウで、**結果** タブで、をクリックして**NewPOService**です。  
   

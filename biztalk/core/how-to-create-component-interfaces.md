@@ -1,17 +1,17 @@
 ---
-title: "コンポーネント インターフェイスを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: コンポーネント インターフェイスを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating component interfaces
 - component interfaces, creating
 ms.assetid: 9def053a-cbf6-4b34-b2e8-b2d03bffc5fe
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249298"
 ---
 # <a name="how-to-create-component-interfaces"></a>コンポーネント インターフェイスの作成方法
 コンポーネント インターフェイスは、PeopleSoft アプリケーション デザイナーを使用して作成します  (アプリケーション デザイナの詳細については、PeopleSoft Enterprise のドキュメントを参照してください)。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  PeopleSoft アプリケーション デザイナを開きます。  
   
-2.  **[ファイル]** メニューの **[新規作成]**をクリックします。  
+2.  **[ファイル]** メニューの **[新規作成]** をクリックします。  
   
      ![](../core/media/psadapter-42-ps-new-compinterface.gif "PSAdapter_42_PS_New_CompInterface")  
   

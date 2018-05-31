@@ -1,14 +1,14 @@
 ---
-title: "手順 4: 作成のサンプル XML BeginDoc2 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: 作成のサンプル XML BeginDoc2 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cdda509-085f-4485-b488-c045d589ee96
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277538"
 ---
 # <a name="step-4-create-a-sample-xml-begindoc"></a>手順 4: サンプル XML BeginDoc を作成します。
 次のコードを XML ファイルに保存します。 テストで、この例のステップを使用し、コード例で選択されている J.D. Edwards EnterpriseOne オブジェクト [JDE://CSALES/B4200310] を使用する場合、これを入力フォルダにドロップします。結果は、指定した出力フォルダ (EndDocOut ポートにバインドされたフォルダ) に書き込まれます。  

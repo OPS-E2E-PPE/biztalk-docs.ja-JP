@@ -1,14 +1,14 @@
 ---
-title: "メッセージの InfoPath テンプレート |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの InfoPath テンプレート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bb055b1-8480-44dd-8739-f2981bca63c3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295146"
 ---
 # <a name="the-infopath-message-template"></a>InfoPath メッセージ テンプレート
 ESB の管理ポータルで ESB フォールト メッセージを表示する代わりに、ユーザーの利用できますで提供される、ESB 例外メッセージ ビューアーをという名前の Microsoft InfoPath メッセージ テンプレート、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  

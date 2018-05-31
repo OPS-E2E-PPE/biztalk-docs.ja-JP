@@ -1,14 +1,14 @@
 ---
-title: "方法: 既知のメッセージの種類のポリシーをルール実装のビジネスを使用してコンテンツ ベース ルーティング |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: 既知のメッセージの種類のポリシーをルール実装のビジネスを使用してコンテンツ ベース ルーティング |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44451c85-929a-4d13-b0dd-53ea600d0859
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010043"
 ---
 # <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>方法: 既知のメッセージの種類のポリシーをルール実装のビジネスを使用してコンテンツ ベース ルーティング
 ## <a name="goal"></a>[目標]  
@@ -102,7 +103,7 @@ ms.lasthandoff: 12/01/2017
   
 10. ファクト エクスプ ローラーからドラッグして、**終点送信トランスポート場所の設定**の定義を**アクション**です。  
   
-11. をクリックして**\<空の文字列\>**し入力**C:\HowTos\Out\West%MessageID%.xml**です。  
+11. をクリックして**\<空の文字列\>** し入力**C:\HowTos\Out\West%MessageID%.xml**です。  
   
 12. ファクト エクスプ ローラーからドラッグして、**設定の終了点送信トランスポートの種類**定義**アクション**です。  
   

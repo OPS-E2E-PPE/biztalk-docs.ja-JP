@@ -1,14 +1,14 @@
 ---
-title: "例外処理サービスのサンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: 例外処理サービスのサンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d69e720c-89e4-42c2-b4d0-31f0b865ab7f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007787"
 ---
 # <a name="running-the-exception-handling-service-sample"></a>例外処理サービスのサンプルを実行しています。
 例外処理サービスのサンプルでは、外部アプリケーションから、例外処理の ESB フレームワークにはエラーを送信するために、例外処理の Web サービスを使用する方法を示します。 このサンプルを実行するため、次の手順が必要です[例外管理のサンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples.md)です。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  Windows エクスプ ローラーで、インストールされている、フォルダー \Source\Samples\ExceptionHandlingService を開き、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプルを開き、ExceptionHandlingService.sln をという名前の Visual Studio ソリューション ファイルです。  
   
-2.  Visual Studio で、[**デバッグの開始]**ツールバー。  
+2.  Visual Studio で、[**デバッグの開始]** ツールバー。  
   
 3.  フォームを読み込みますが、をクリックして、**生成例外**ボタンをクリックします。  
   

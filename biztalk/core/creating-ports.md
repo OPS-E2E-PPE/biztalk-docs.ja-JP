@@ -1,11 +1,11 @@
 ---
-title: "ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: ポートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, creating
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - send ports
 - send ports, creating
 ms.assetid: 4f99f884-5b84-4f9f-8cec-dd5da259ba7f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015129"
 ---
 # <a name="creating-ports"></a>ポートの作成
 シングル サインオン用の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信ポートと受信ポートを作成するには、次の手順を実行します。  
@@ -46,9 +47,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
   
-    4.  送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。  
+    4.  送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。  
   
-    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
+    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。  
   
     6.  をクリックして**構成**送信ポートを構成します。  
   
@@ -62,9 +63,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  **SSO を使用する****はい**です。  
   
-    4.  **[OK]**をクリックします。  
+    4.  **[OK]** をクリックします。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="creating-a-receive-port"></a>作成する、受信ポート  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  **受信場所** ページで、次の操作します。  
   
-    1.  **[新規作成]**をクリックします。  
+    1.  **[新規作成]** をクリックします。  
   
     2.  **受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。  
   
@@ -96,13 +97,13 @@ ms.lasthandoff: 11/07/2017
   
     6.  選択、**有効にするサービス時間帯**チェック ボックスをオンします。  
   
-    7.  **[OK]**をクリックします。  
+    7.  **[OK]** をクリックします。  
   
 5.  **受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。  
   
 6.  **追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

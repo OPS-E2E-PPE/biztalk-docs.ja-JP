@@ -1,14 +1,14 @@
 ---
-title: "ESB Itinerary フォワーダー コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: ESB Itinerary フォワーダー コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 607cc8a0-4964-4751-baca-c3329983c98b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295338"
 ---
 # <a name="the-esb-itinerary-forwarder-component"></a>ESB Itinerary フォワーダー コンポーネント
 日程が複数の Web サービスを呼び出す必要があります順番に、ESB 行程フォワーダー コンポーネントが使用されます。 コンポーネントを使用するのには、受信パイプライン、双方向出口の応答側に関連付けられています。  

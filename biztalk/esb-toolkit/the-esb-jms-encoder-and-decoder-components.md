@@ -1,14 +1,14 @@
 ---
-title: "ESB JMS エンコーダーとデコーダー コンポーネントは、|Microsoft ドキュメント"
-ms.custom: 
+title: ESB JMS エンコーダーとデコーダー コンポーネントは、|Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4e5591c2-d2ca-4168-8026-059fe51dd588
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295682"
 ---
 # <a name="the-esb-jms-encoder-and-decoder-components"></a>ESB JMS エンコーダーおよびデコーダー コンポーネント
 一部の統合ソリューションに関連して Java Message Service (JMS) と IBM WebSphere MQ; の間に送信される SOAP メッセージ[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]このような状況で使用するためのマネージ コードで記述された 2 つの JMS パイプライン コンポーネントが含まれています。 コンポーネントの読み取りまたは書き込みのメッセージに関連付けられているコンテキスト プロパティの値を使用して、MQ メッセージ ヘッダーの JMS 部分。 現在、60 を超えるのさまざまな種類の JMS ヘッダー WebSphere MQ Series システムで使用するにはESB JMS コンポーネントは、MQRFH2 ヘッダーでのみ動作します。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
  ESB コアを自動的にインストールすると、BizTalk Server パイプライン コンポーネント フォルダーで JMS エンコーダーとデコーダーの JMS のコンポーネントがインストールされます。  
   
 ## <a name="how-it-works"></a>しくみ  
- JMS パイプライン コンポーネントは、メッセージのヘッダーを検査しを持つメッセージに対してのみ機能、 **MQMD_Format**ヘッダーに設定**RFH (MQRFH2)**です。 ただし、このプロパティを設定した場合でも、コンポーネントは IBM RFH2 形式への準拠していることを確認するヘッダーを検査します。 コンポーネントを示す解析エラーを生成するヘッダーがこの形式に準拠していない場合、 **MQMD_Format**にパラメーターが設定された**RFH (MQRFH2)**ヘッダーの構造に準拠していませんが、RFH2 標準です。 受信メッセージ ヘッダーの解析が失敗した場合、デコーダー コンポーネントにより、渡すには、メッセージが、という名前のメッセージ コンテキスト プロパティを設定**MQRFH2_ParseError**に**True**です。  
+ JMS パイプライン コンポーネントは、メッセージのヘッダーを検査しを持つメッセージに対してのみ機能、 **MQMD_Format**ヘッダーに設定**RFH (MQRFH2)** です。 ただし、このプロパティを設定した場合でも、コンポーネントは IBM RFH2 形式への準拠していることを確認するヘッダーを検査します。 コンポーネントを示す解析エラーを生成するヘッダーがこの形式に準拠していない場合、 **MQMD_Format**にパラメーターが設定された**RFH (MQRFH2)** ヘッダーの構造に準拠していませんが、RFH2 標準です。 受信メッセージ ヘッダーの解析が失敗した場合、デコーダー コンポーネントにより、渡すには、メッセージが、という名前のメッセージ コンテキスト プロパティを設定**MQRFH2_ParseError**に**True**です。  
   
  **MQRFH2** JMS コンポーネントと BizTalk に展開されているプロパティ スキーマは、すべての MQRFH2 ヘッダーのプロパティを公開します。 格納されている XML ドキュメントの受信メッセージのヘッダーを降格した後、ヘッダーのデータが存在する、 **MQRFH2_NameValueData**メッセージのコンテキスト プロパティです。 長さを調整します。 エンコーダー、 **NameValueData**いることを確認するフォルダーは、正しい長さ。 値を変更する場合は、これらのヘッダー、および影響の使い方を理解、適切な IBM のドキュメントを確認します。  
   

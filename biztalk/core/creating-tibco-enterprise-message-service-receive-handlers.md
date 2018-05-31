@@ -1,15 +1,15 @@
 ---
-title: "TIBCO EMS の作成の成果物を受け取る |Microsoft ドキュメント"
-description: "受信ポートを作成し、BizTalk Server で、TIBCO Enterprise Message Service アダプタを使用するトランスポートのプロパティを設定"
-ms.custom: 
+title: TIBCO EMS の作成の成果物を受け取る |Microsoft ドキュメント
+description: 受信ポートを作成し、BizTalk Server で、TIBCO Enterprise Message Service アダプタを使用するトランスポートのプロパティを設定
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1307e3c-0237-4f19-a642-58e694fe95d0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015377"
 ---
 # <a name="create-tibco-ems-receive-artifacts"></a>TIBCO EMS の作成の成果物の受信
 
@@ -40,7 +41,7 @@ TIBCO Enterprise Message Service の受信元は、特定のキューまたは�
   
 4.  **受信場所** ページで、次の操作します。  
   
-    1.  **[新規作成]**をクリックします。  
+    1.  **[新規作成]** をクリックします。  
   
     2.  **受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。  
   
@@ -52,13 +53,13 @@ TIBCO Enterprise Message Service の受信元は、特定のキューまたは�
   
     6.  選択、**有効にするサービス時間帯**チェック ボックスをオンします。  
   
-    7.  **[OK]**をクリックします。  
+    7.  **[OK]** をクリックします。  
   
 5.  **受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。  
   
 6.  **追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
 
 ## <a name="set-the-receive-port-transport-properties"></a>受信ポートのトランスポート プロパティを設定します。
 TIBCO Enterprise Message System (EMS) の受信場所を**URL**と**Target Namespace** TIBCO EMS システムには、必要な唯一の構成値。    

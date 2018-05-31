@@ -1,14 +1,14 @@
 ---
-title: "サービス レベル管理 |Microsoft ドキュメント"
-ms.custom: 
+title: サービス レベル管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add50343-5470-4db3-a029-c827523e2f2c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294730"
 ---
 # <a name="service-level-management"></a>サービス レベル管理
 AmberPoint SMS サービス レベル マネージャーは、特定のパフォーマンスやエンタープライズ レベルの SOA ベースのシステム内の可用性に関する問題の可視性を提供します。 インストルメント化し、各 Microsoft BizTalk Server 受信場所と送信ポートのメトリックを追跡します。 これは、これらのコンポーネントの継続的なパフォーマンス特性に加え、リアルタイムの正常性と状態表示されます。 図 1 は、受信場所に関連付けられているメトリックの表示を示しています。  

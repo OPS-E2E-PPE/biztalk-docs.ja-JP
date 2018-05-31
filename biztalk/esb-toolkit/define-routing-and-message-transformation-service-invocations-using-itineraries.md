@@ -1,14 +1,14 @@
 ---
-title: "ルーティングの定義と、日程を使用して変換サービスの呼び出しをメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: ルーティングの定義と、日程を使用して変換サービスの呼び出しをメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6f2448e-a5a7-496c-86d3-47f12e6f1251
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294282"
 ---
 # <a name="defining-routing-and-message-transformation-service-invocations-using-itineraries"></a>定義するルーティングと旅程を使用してメッセージ変換サービスの呼び出し
 このユース ケースでは、処理のために送信メッセージには、サービスを実行して、解決の要件の一覧を記述する itinerary の SOAP ヘッダーが含まれています。 具体的には、変換およびルーティング サービスは、Universal Description、検出、および Integration (UDDI)、ビジネス ルール エンジン ポリシー、XML パス言語 (XPath)、または静的参照を通じて解決を必要に応じて各が必要です。 このユース ケースは、メッセージの発行時に、旅行計画に他のサービスを追加することによって拡張できます。  

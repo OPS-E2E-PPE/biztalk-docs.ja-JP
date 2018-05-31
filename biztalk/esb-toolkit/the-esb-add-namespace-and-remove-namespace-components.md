@@ -1,14 +1,14 @@
 ---
-title: "Namespace を追加する、ESB Namespace コンポーネントを削除および |Microsoft ドキュメント"
-ms.custom: 
+title: Namespace を追加する、ESB Namespace コンポーネントを削除および |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21df1b21-b73c-4e31-a234-49a1a6b53cc7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296250"
 ---
 # <a name="the-esb-add-namespace-and-remove-namespace-components"></a>Namespace を追加する、ESB Namespace コンポーネントおよび削除
 多くの企業早期導入の XML テクノロジの時点であったとき基準がまだに新たなドキュメントの共有なしで共通です。 したがってが厳密に実行しなかったこれは、通常、ケース今日、一意のルート名前空間を含めるための要件です。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **NamespacePrefix**プロパティの値は予約済みの値のいずれかにすることはできません (**ns0**に**ns6**) と英数字にする必要があります。  
   
- これらの規則からのすべてのバリエーションにより、メッセージを中断、実行時に例外がスローするコンポーネント (としてマークされている**– 中断された再開可能な**)、Windows アプリケーション イベント ログ エントリの書き込みとします。  
+ これらの規則からのすべてのバリエーションにより、メッセージを中断、実行時に例外がスローするコンポーネント (としてマークされている **– 中断された再開可能な**)、Windows アプリケーション イベント ログ エントリの書き込みとします。  
   
  削除 Namespace コンポーネントは、XML ドキュメントからすべてのルート名前空間を削除します。 コンポーネントが 1 つのドキュメントから削除できる名前空間の数は、処理中に、現在のノードを保持するために使用できる物理メモリによって制限されます。 ただし、コンポーネントは、プロセスをストリーミング標準の BizTalk Server 2009 パイプラインのメッセージを使用し、ドキュメント内の現在のノードだけをドキュメント全体を読み込む代わりに、メモリに読み込みます。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="component-properties"></a>コンポーネント プロパティ  
  Namespace の追加コンポーネントは、5 つのパブリック プロパティを公開します。  
   
--   **NamespacePrefix**です。 これは、間に挿入される、名前空間のプレフィックス、 **xmlns:**部分と、次の等号 (=) に署名します。 標準の BizTalk スキーマ名前空間プレフィックスとの競合を避けるためには、値は使用しないでください**ns0**を通じて**ns9**です。  
+-   **NamespacePrefix**です。 これは、間に挿入される、名前空間のプレフィックス、 **xmlns:** 部分と、次の等号 (=) に署名します。 標準の BizTalk スキーマ名前空間プレフィックスとの競合を避けるためには、値は使用しないでください**ns0**を通じて**ns9**です。  
   
 -   **NamespaceBase**です。 これは、名前空間内の値によって生成される結果をプレフィックスの静的なセクション、**区切り**と**Xpath**プロパティです。  
   
@@ -82,6 +83,6 @@ ms.lasthandoff: 09/20/2017
   
 -   **エンコード**です。 これは、次の値のいずれかの出力メッセージのエンコーディング: **ascii、unicode/utf16**または**utf8**です。  
   
--   **RemoveByteOrderMark**です。 これは、コンポーネントがバイト順マークを削除するかどうかを示すブール型プロパティ (通常**0xEFBB、0xBFFFFE、**または**0 xfeff**)、XML ドキュメント ストリームの先頭からです。  
+-   **RemoveByteOrderMark**です。 これは、コンポーネントがバイト順マークを削除するかどうかを示すブール型プロパティ (通常**0xEFBB、0xBFFFFE、** または**0 xfeff**)、XML ドキュメント ストリームの先頭からです。  
   
  これらのコンポーネントを使用する方法の例は、次を参照してください。[をインストールすると、Namespace コンポーネント サンプルを実行している](../esb-toolkit/installing-and-running-the-namespace-component-sample.md)です。

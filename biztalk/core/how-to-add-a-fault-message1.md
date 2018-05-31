@@ -1,11 +1,11 @@
 ---
-title: "フォールト Message1 を追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールト Message1 を追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exceptions, adding messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - adding, fault messages
 - faults, adding messages
 ms.assetid: 9d21de6b-c1a5-46e9-a9dc-d6aa7b5fe34b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246650"
 ---
 # <a name="how-to-add-a-fault-message"></a>エラー メッセージを追加する方法
 最初に作成したバックエンド システムへのポートには、要求と応答が含まれていました。 例外を取得するには、これにエラーを追加する必要があります。  

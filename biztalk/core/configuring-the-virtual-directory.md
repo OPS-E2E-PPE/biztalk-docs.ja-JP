@@ -1,17 +1,17 @@
 ---
-title: "仮想ディレクトリの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 仮想ディレクトリの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - virtual directory, configuring
 - configuring virtual directory
 ms.assetid: 548e3bee-66bc-424c-895d-e8672a3d6301
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968816"
 ---
 # <a name="configuring-the-virtual-directory"></a>仮想ディレクトリの構成
 このトピックでは、仮想ディレクトリを構成してユーザーのアプリケーションを確認する手順を示します。  
@@ -32,15 +33,15 @@ ms.lasthandoff: 11/28/2017
   
 2.  をクリックして**開始**、 をポイント**プログラム**、 をクリックして**管理ツール**、 をクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-3.  展開**\<サーバー名\>**順に展開**サイト**です。  
+3.  展開**\<サーバー名\>** 順に展開**サイト**です。  
   
 4.  右クリック**Default Web Site**  をクリック**仮想ディレクトリの追加**です。  
   
 5.  **仮想ディレクトリの追加** ダイアログ ボックスで、別名を入力します。  
   
-6.  手順 1. で作成したフォルダーのパスを入力します。 またはをクリックして**([...])**フォルダーの場所を参照します。  
+6.  手順 1. で作成したフォルダーのパスを入力します。 またはをクリックして **([...])** フォルダーの場所を参照します。  
   
-7.  **[OK]**をクリックします。 下のフォルダーが表示されます、 **Default Web Site**フォルダーです。  
+7.  **[OK]** をクリックします。 下のフォルダーが表示されます、 **Default Web Site**フォルダーです。  
   
 8.  フォルダーを右クリックし、をクリックして**アプリケーションへの変換**です。  
   

@@ -1,11 +1,11 @@
 ---
-title: "Orchestrations1 を実行している |Microsoft ドキュメント"
-ms.custom: 
+title: Orchestrations1 を実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - strong name keys, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, compiling
 - orchestrations, deploying
 ms.assetid: b992bdba-630d-4f28-aca8-c568f3c27968
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972736"
 ---
 # <a name="running-orchestrations"></a>オーケストレーションの実行
 次の手順では、オーケストレーションのビルド、展開、バインド、および開始の方法について説明します。  

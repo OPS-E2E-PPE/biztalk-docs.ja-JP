@@ -1,14 +1,14 @@
 ---
-title: "インストール スクリプトを使用して、JMS MQRFH2 サンプルのインストール |Microsoft ドキュメント"
-ms.custom: 
+title: インストール スクリプトを使用して、JMS MQRFH2 サンプルのインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 785f3e32-83b4-406a-af1b-9499115fbb8f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974384"
 ---
 # <a name="install-the-jms-mqrfh2-sample-using-the-install-scripts"></a>インストール スクリプトを使用して、JMS MQRFH2 サンプルをインストールします。
 このセクションでは、JMS MQRFH2 で提供するインストール スクリプトを使用してサンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
@@ -35,11 +36,11 @@ ms.lasthandoff: 11/28/2017
   
     -   ESB です。JMS です。サンプルです。SENDTOBIZTALK  
   
-3.  **[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。  
+3.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
 4.  **実行** ダイアログ ボックスで、「 **cmd**、ENTER キーを押します。  
   
-5.  次のコマンド実行交換、 *\<パス\>*をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\JMS\Install\Scripts\\):  
+5.  次のコマンド実行交換、 *\<パス\>* をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\JMS\Install\Scripts\\):  
   
     ```  
     <path>\Setup_bin.cmd  

@@ -1,14 +1,14 @@
 ---
-title: "処理命令の詳細 |Microsoft ドキュメント"
-ms.custom: 
+title: 処理命令の詳細 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed5d92fb-d53b-49a2-b2c7-8558708d6554
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008939"
 ---
 # <a name="processing-instructions-in-detail"></a>処理命令の詳細
 このトピックでは、形式と旅程処理に必要ないくつかのコンテキスト プロパティを定義するシステム Properties.xsd プロパティ スキーマの構造について説明します。 メッセージが受信され、BizTalk Server パイプライン; を通して処理されたときに、これらのプロパティは昇格されます。昇格させたプロパティがいるため、BizTalk Server コンポーネントを利用可能です。 次のプロパティは、システム Properties.xsd プロパティ スキーマで定義されます。  

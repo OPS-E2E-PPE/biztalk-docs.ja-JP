@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287426"
 ---
 # <a name="updateex-method"></a>UpdateEx メソッド
 入力キー パラメーター (key1、key2、... に基づいてプロパティを更新するために使用 keyn)。 `UpdateEx` を使用する場合は、コレクション内のアイテムを削除できません。 削除には別のメソッドを使用します。 詳細については、次を参照してください。 [DeleteOnly メソッド](../core/deleteonly-method.md)です。  

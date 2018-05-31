@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server Projects1 へのスキーマのインポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server Projects1 へのスキーマのインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, importing into BizTalk Server
 - orchestration types, port types
 ms.assetid: fa640195-a735-4201-a893-48f3405ddcb5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015449"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>BizTalk Server プロジェクトへのスキーマのインポート
 ここでは、BizTalk Server プロジェクトにスキーマをインポートする手順について説明します。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  をクリックして**アダプタの追加**、し、**開く**です。  
   
-3.  アダプターを選択して**、j. d.Edwards OneWorld XE**です。  
+3.  アダプターを選択して **、j. d.Edwards OneWorld XE**です。  
   
 4.  ドロップダウン リストで、ポートを選択**SSOSendToJD Edwards OneWorld XE**、クリックして**次**です。  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/07/2017
   
 5.  展開**myJ.D です。Edwards OneWorld XESSO**です。  
   
-6.  項目へ移動します (またはドラッグ) にある矢印アイコンをクリックして、**送信**ウィンドウ、およびクリック**[ok]**です。  
+6.  項目へ移動します (またはドラッグ) にある矢印アイコンをクリックして、**送信**ウィンドウ、およびクリック **[ok]** です。  
   
      SSOSchedule プロジェクトにスキーマが追加されます。  
   

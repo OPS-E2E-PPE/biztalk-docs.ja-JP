@@ -1,15 +1,15 @@
 ---
-title: "JD Edwards OneWorld アダプターのアーキテクチャ |Microsoft ドキュメント"
-description: "アーキテクチャ、プール、制限事項、および BizTalk Adapter for JD Edwards OneWorld では、BizTalk Server での複数の注文項目"
-ms.custom: 
+title: JD Edwards OneWorld アダプターのアーキテクチャ |Microsoft ドキュメント
+description: アーキテクチャ、プール、制限事項、および BizTalk Adapter for JD Edwards OneWorld では、BizTalk Server での複数の注文項目
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05560ec1-f09d-4cf3-bce0-386d7aa63c0f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014841"
 ---
 # <a name="jd-edwards-oneworld-adapter-architecture"></a>JD Edwards OneWorld アダプターのアーキテクチャ
 

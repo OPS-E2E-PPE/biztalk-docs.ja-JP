@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976208"
 ---
 # <a name="introduction-to-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit の概要
 アーキテクチャと Microsoft の内容について説明します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 サービスを有効にする柔軟なセキュリティで保護された、エンタープライズ アプリケーションを開発する Enterprise Service Bus (ESB) アーキテクチャ パターンを適用する方法および再利用可能なサービスと新しいエンド ツー エンドに既存のサービスの迅速な組織にも、ドキュメントを示していますビジネス プロセス。  

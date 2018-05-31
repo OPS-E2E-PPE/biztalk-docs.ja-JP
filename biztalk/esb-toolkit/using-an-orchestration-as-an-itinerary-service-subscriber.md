@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションを使用して、Itinerary サービス サブスクライバーとして |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションを使用して、Itinerary サービス サブスクライバーとして |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 278564f1-de9f-4fbf-8c7f-09b3e607c28b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295322"
 ---
 # <a name="using-an-orchestration-as-an-itinerary-service-subscriber"></a>Itinerary サービス サブスクライバーとして、オーケストレーションを使用します。
 オーケストレーション itinerary サービスとして動作することもできます。 参加するには、行程でオーケストレーション直接バインド; としてを最初にデザインする必要があります。これを行うと類似の前のトピックでは、送信ポート フィルター サブスクリプションを使用して[行程サービス サブスクライバーとして、送信ポートを使用して](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)です。 図 1 は、次の条件を満たすすべてのメッセージを取得するのに適切なオーケストレーションのフィルター式の例を示します。  

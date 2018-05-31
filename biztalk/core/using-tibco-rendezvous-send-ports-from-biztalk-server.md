@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 34e3edf7-cfc5-4c89-8069-63e8784bc9f9
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24013737"
 ---
 # <a name="using-tibco-rendezvous-send-ports"></a>TIBCO Rendezvous の送信ポートの使用
 送信ポートはあらゆる種類のメッセージを送信できます。 BizTalk Server で Microsoft BizTalk Adapter for TIBCO Rendezvous を介してメッセージを送信する場合、アダプターはメッセージ コンテキストのプロパティ値に基づいてメッセージを生成するか、既定値を使用して、メッセージを指定されたサブジェクトに送信します。  

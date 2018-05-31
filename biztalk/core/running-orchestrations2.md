@@ -1,11 +1,11 @@
 ---
-title: "Orchestrations2 を実行している |Microsoft ドキュメント"
-ms.custom: 
+title: Orchestrations2 を実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - strong name keys, creating
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - stopping host instances
 - restarting host instances
 ms.assetid: a098d552-d302-44f6-9af9-d77d16549fd3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973216"
 ---
 # <a name="running-orchestrations"></a>オーケストレーションの実行
 次の手順では、オーケストレーションのビルド、展開、バインド、および開始の方法について説明します。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-compile-and-deploy-an-orchestration"></a>オーケストレーションをコンパイルおよび展開するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーを右クリックし、 **[ssoschedule]**プロジェクト、および選択**プロパティ**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーを右クリックし、 **[ssoschedule]** プロジェクト、および選択**プロパティ**です。  
   
 2.  をクリックして**共通プロパティ**を展開し、**アセンブリ**ノード。  
   
@@ -60,9 +61,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  Configuration properties \deployment\server がドット (.) または、コンピューター名であることを確認し、をクリックして**OK**です。  
   
-5.  ソリューション エクスプ ローラーで右クリック**[ssoschedule]**、順にクリック**リビルド**です。  
+5.  ソリューション エクスプ ローラーで右クリック **[ssoschedule]**、順にクリック**リビルド**です。  
   
-6.  右クリック**[ssoschedule]**、クリックして**展開**です。  
+6.  右クリック **[ssoschedule]**、クリックして**展開**です。  
   
 ## <a name="starting-the-orchestration"></a>オーケストレーションの開始  
   

@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce67da59-26a6-44a2-929c-ed3acb21d407
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969552"
 ---
 # <a name="create-peoplesoft-send-artifacts"></a>PeopleSoft 送信アイテムを作成します。
 Microsoft BizTalk Adapter for PeopleSoft Enterprise は、PeopleSoft にアクセスして、使用できるコンポーネントを探索したり、SOAP 要求を処理したりします。 このトピックでは、PeopleSoft アダプターを使用する BizTalk Server 管理コンソールで、送信の成果物を作成する方法を示します。
@@ -39,7 +40,7 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise は、PeopleSoft にアク�
   
     4.  送信パイプラインのドロップダウン リストから選択 **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**します。  
   
-    5.  **受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**します。  
+    5.  **受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** します。  
   
     6.  選択**構成**送信ポートを構成します。  
   

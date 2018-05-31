@@ -1,14 +1,14 @@
 ---
-title: "方法: ビジネス ルール ポリシーを使用して、日程の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: ビジネス ルール ポリシーを使用して、日程の選択 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f6373a8-d9d6-46c6-95e3-f62dd33c342a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010587"
 ---
 # <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a>方法: ビジネス ルール ポリシーを使用して、日程を選択
 ## <a name="goal"></a>[目標]  
@@ -120,7 +121,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  **アクション**セクションを右クリックして**GlobalBankWestItinerary**、クリックして**引数の再設定**です。  
   
-8.  をクリックして**\<空の文字列\>**し入力**GlobalBankEastItinerary**です。  
+8.  をクリックして**\<空の文字列\>** し入力**GlobalBankEastItinerary**です。  
   
     > [!NOTE]
     >  操作方法に関するトピックの後半 GlobalBank 東部からメッセージを処理するこの行程を作成します。  
@@ -295,7 +296,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
   
-4.  **受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして**[ok]**です。  
+4.  **受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして **[ok]** です。  
   
 5.  **受信場所のプロパティ** ダイアログ ボックスで、**名前**ボックスに、入力**OnRamp.Itinerary.HowTo**です。  
   

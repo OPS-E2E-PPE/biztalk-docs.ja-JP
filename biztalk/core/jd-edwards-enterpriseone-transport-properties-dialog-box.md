@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014009"
 ---
 # <a name="jd-edwards-enterpriseone-transport-properties-dialog-box"></a>[JD Edwards EnterpriseOne トランスポートのプロパティ] ダイアログ ボックス
 [JD Edwards EnterpriseOne トランスポートのプロパティ] ダイアログ ボックスでは、アダプターに必要なプロパティを設定します。  

@@ -1,14 +1,14 @@
 ---
-title: "ポータルのホーム ページ |Microsoft ドキュメント"
-ms.custom: 
+title: ポータルのホーム ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60072c30-d57b-4bd8-a7ee-b4d0fa50de58
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295042"
 ---
 # <a name="portal-home-page"></a>ポータル ホーム ページ
 図 1 は、ホーム ページで、次の 4 つのセクションで構成を示しています。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 -   ホーム ページを最初に読み込む場合は、最初のグラフ内のすべてのアプリケーションが見えない可能性があります。 情報を表示するアプリケーションを選択するをクリックして、**アプリケーションの選択**最初のグラフの上にリンクし、選択するか表示されるインストール済みの BizTalk アプリケーションの一覧にあるチェック ボックスをオフにします。 また、またはすべてのアプリケーションの選択を表示するリンクを使用することができます。 をクリックして**保存**選択されたアプリケーションについての情報を表示またはをクリックする**キャンセル**変更を破棄します。 アプリケーションの既定のリストを変更することができます、[ポータルの [設定] ページ](../esb-toolkit/portal-my-settings-page.md)です。  
   
--   ポータルが情報を表示する期間を変更するには、最初のグラフ上のドロップダウン リストで、設定を変更します。 前の情報を表示することを選択できます**時間、日、週、**または**月**です。 既定の期間を変更することができます、[ポータルの [設定] ページ](../esb-toolkit/portal-my-settings-page.md)です。  
+-   ポータルが情報を表示する期間を変更するには、最初のグラフ上のドロップダウン リストで、設定を変更します。 前の情報を表示することを選択できます**時間、日、週、** または**月**です。 既定の期間を変更することができます、[ポータルの [設定] ページ](../esb-toolkit/portal-my-settings-page.md)です。  
   
 -   有効にまたは UDDI エントリの自動発行をオフにする、クリックして、**変更**の上部にあるリンク、**レジストリ**ページのセクションです。 開き、[レジストリ設定 ページ](../esb-toolkit/registry-settings-page.md)で、次を指定します。  
   

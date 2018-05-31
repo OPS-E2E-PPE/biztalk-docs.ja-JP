@@ -1,11 +1,11 @@
 ---
-title: "作成する送信ポートと受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 作成する送信ポートと受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards OneWorld adapters, receive ports
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - receive ports, creating [JD Edwards OneWorld adapters]
 - creating, send ports [JD Edwards OneWorld adapters]
 ms.assetid: fb4ca8b1-40d9-4beb-a791-554086f8ca98
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014033"
 ---
 # <a name="creating-send-and-receive-ports"></a>作成する送信ポートと受信ポート
 次の手順を使用して、BizTalk Adapter for JD Edwards OneWorld 用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信ポートおよび受信ポートを作成します。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/07/2017
   
     -   **受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**です。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="creating-a-receive-port"></a>作成する、受信ポート  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/07/2017
   
 3.  右クリック**受信ポート** をクリック**新規**、クリックして**一方向の受信ポート**です。  
   
-     **一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、クリックしてして**[ok]**です。  
+     **一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、クリックしてして **[ok]** です。  
   
 4.  次の情報を入力、**一方向受信ポートのプロパティ**ウィンドウ。  
   

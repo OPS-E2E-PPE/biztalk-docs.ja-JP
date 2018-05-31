@@ -1,7 +1,7 @@
 ---
 title: インストールして、Microsoft BizTalk ESB Toolkit の構成 |Microsoft ドキュメント
 description: インストールして、BizTalk Server で ESB Toolkit を構成する手順の手順を実行して命令
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 manager: anneta
 ms.custom: ''
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22297002"
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-esb-toolkit"></a>インストールして、Microsoft BizTalk ESB Toolkit の構成
 BizTalk Server 2013 と新しいバージョンでは、開始[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]と統合されて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップします。 このトピックは、インストールおよび構成する方法を示します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、し、ESB Toolkit のアップグレードをコミュニティに書き込まれたリンクも含まれます。  
@@ -27,7 +28,7 @@ BizTalk Server 2013 と新しいバージョンでは、開始[!INCLUDE[esbToolk
   
 ## <a name="install"></a>インストール 
   
-1.  実行、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.exe ファイルを管理者として。 セットアップに、次のように選択します。**インストール[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]**です。  
+1.  実行、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup.exe ファイルを管理者として。 セットアップに、次のように選択します。**インストール[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]** です。  
   
 2.  ライセンス契約に同意し、**次**です。  
   
@@ -79,15 +80,15 @@ BizTalk Server 2013 と新しいバージョンでは、開始[!INCLUDE[esbToolk
   
     -   **SSO サーバー**: SSO サーバーの名前を入力してください
   
-    -   **構成ファイル**: は、省略記号**([...])**、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照
+    -   **構成ファイル**: は、省略記号 **([...])**、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照
   
     -   **アプリケーション名**: SSO アプリケーションの名前を入力します。 たとえば、入力`ESB Toolkit`です。  
   
     -   **連絡先情報**: 次の形式で有効な電子メール アドレス、適切な連絡先情報を入力してください:`someone@example.com`です。  
   
-    -   **管理者グループ名**: は、省略記号**([...])**、適切な管理グループを参照  
+    -   **管理者グループ名**: は、省略記号 **([...])**、適切な管理グループを参照  
   
-    -   **ユーザー グループ名**: は、省略記号**([...])**、適切なグループを参照  
+    -   **ユーザー グループ名**: は、省略記号 **([...])**、適切なグループを参照  
 
 8.  選択**構成を適用**です。 IIS を開き、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] に必要なアプリケーションが、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] の構成で指定した Web サイトに作成されていることを確認します。  
   

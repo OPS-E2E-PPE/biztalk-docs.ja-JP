@@ -1,14 +1,14 @@
 ---
-title: "BizTalk メッセージ ボックス データベースに永続化せず変換 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk メッセージ ボックス データベースに永続化せず変換 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7f5b4caf-88e9-41dd-a644-e229e411a4a7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294986"
 ---
 # <a name="transformation-without-persisting-to-the-biztalk-message-box-database"></a>BizTalk メッセージ ボックス データベースに永続化せず変換
 このユース ケースで Web サービスへの呼び出しが適用するには、適切なマップの実行時の解像度に基づいて、メッセージのリアルタイムの変換を実行し、変換後の結果を返します。 図 1 は、プロセスの概略を示します。  

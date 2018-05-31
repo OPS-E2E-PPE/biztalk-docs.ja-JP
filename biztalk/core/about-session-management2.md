@@ -1,14 +1,14 @@
 ---
-title: "セッション Management2 に関する |Microsoft ドキュメント"
-ms.custom: 
+title: セッション Management2 に関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3ecdb4f-d384-42ac-9776-e7ad14d5f151
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225610"
 ---
 # <a name="about-session-management"></a>セッション管理について
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne は、JD Edwards EnterpriseOne サーバーの呼び出しを送信する接続セッションを作成します。 呼び出しが終了すると、セッションはプールに格納され、その後の呼び出しで再利用されます。 このアダプターは、JD Edwards EnterpriseOne サーバーの同時呼び出しを処理する複数の接続セッションを作成します。 プールは不要になったセッションを削除するために定期的に消去されます。  

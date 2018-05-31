@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015899"
 ---
 # <a name="jd-edwards-oneworld-transport-properties-dialog-box"></a>[JD Edwards OneWorld トランスポートのプロパティ] ダイアログ ボックス
 [JD Edwards OneWorld トランスポートのプロパティ] ダイアログ ボックスでは、アダプターに必要なプロパティを設定します。  

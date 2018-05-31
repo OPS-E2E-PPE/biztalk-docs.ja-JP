@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for JD Edwards EnterpriseOne のアーキテクチャ |Microsoft ドキュメント"
-description: "デザイン時および実行時に BizTalk の JD Edwards EnterpriseOne アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。"
-ms.custom: 
+title: BizTalk Adapter for JD Edwards EnterpriseOne のアーキテクチャ |Microsoft ドキュメント
+description: デザイン時および実行時に BizTalk の JD Edwards EnterpriseOne アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0441c5d2-6a46-45b6-8ab5-0bdac3590f56
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013761"
 ---
 # <a name="architecture-of-biztalk-adapter-for-jd-edwards-enterpriseone"></a>BizTalk Adapter for JD Edwards EnterpriseOne のアーキテクチャ
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne を使用すると、JD Edwards EnterpriseOne のビジネス関数にアクセスできます。 JD Edwards EnterpriseOne は、JDENet と呼ばれる独自のメッセージング アーキテクチャを使用して、クライアント コンピューターとサーバー コンピューター間の通信を処理します。 JDENet は、Connector.jar および Kernel.jar という JAR ファイルにある JD Edwards EnterpriseOne コネクタ クラスによって実装されています。 通信は、TCP/IP をトランスポート プロトコルとして使用して実装されており、既定のポートは 6009 または 6010 です。 この値を設定する場所の詳細についてを参照してください[アイテムを BizTalk 管理コンソールに追加](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)です。  

@@ -1,15 +1,15 @@
 ---
-title: "TIBCO EMS 送信アーティファクトを作成 |Microsoft ドキュメント"
-description: "送信ポートを作成し、BizTalk Server で、TIBCO Enterprise Message Service アダプタを使用するトランスポートのプロパティを構成します。"
-ms.custom: 
+title: TIBCO EMS 送信アーティファクトを作成 |Microsoft ドキュメント
+description: 送信ポートを作成し、BizTalk Server で、TIBCO Enterprise Message Service アダプタを使用するトランスポートのプロパティを構成します。
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8f82609c-1847-4796-a24c-28cb350ec739
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014185"
 ---
 # <a name="creating--tibco-enterprise-message-service-send-handlers"></a>TIBCO Enterprise Message Service 送信ハンドラーの作成
 ここでは、送信ポートを設定して TIBCO Enterprise Message Service (EMS) に接続する方法、およびオーケストレーションに XML を入れ実行時に TIBCO EMS と連携する方法を説明します。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/07/2017
   
     3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
   
-    4.  **送信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpipelines.xmltransmit]**です。 **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
+    4.  **送信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。 **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。  
 
         > [!NOTE]
         > BizTalk Adapter for TIBCO Enterprise Message Service では、受信、送信、および [xmlreceive] の [xmltransmit] を選択することが必要です。  
@@ -80,7 +81,7 @@ TIBCO Enterprise Message Service トランスポート プロパティは、デ�
   
     |パラメーター|Description|  
     |---------------|-----------------|  
-    |`Destination`|必須の設定です。 送信先の名前と種類を定義します。 例: staticqueue [Q1] です。<br /><br /> キューまたはトピックは、次の形式を定義します。 {static} {dynamic] Queue [queuename] または {static} {dynamic] Topic [topicname] です。 **注:**が存在しない送信先にメッセージを送信することができます。 このような場合は、TIBCO Enterprise Message Service を作成、変換先です。これを呼びます、*動的送信先*です。 これはプロデューサーによって作成され、メッセージが消費されてプロデューサーが切断された時点で削除されます。 A*静的送信先*は送信先ですのみ作成できますが、TIBCO Enterprise Message Service 管理者。 送信先との接続を開いている状態で動的ポートに接続することはできません。BizTalk Adapter for TIBCO Enterprise Message Service はサーバー上の名前の参照メカニズムを利用するからです。 名前の参照を使用するときは、静的ポートのみが表示されます。 動的ポートに接続するときに静的送信先を使用できます。ただし、その名前の送信先が存在しない場合は、送信先が作成されます。 Destination では、ポートを定義するときに、使用する送信先の種類を明示的に指定できます。 転送先の構文が大文字小文字を区別: staticqueue [queue_name] statictopic [topic_name] dynamicqueue [queue_name];dynamictopic [topic_name] です。|  
+    |`Destination`|必須の設定です。 送信先の名前と種類を定義します。 例: staticqueue [Q1] です。<br /><br /> キューまたはトピックは、次の形式を定義します。 {static} {dynamic] Queue [queuename] または {static} {dynamic] Topic [topicname] です。 **注:** が存在しない送信先にメッセージを送信することができます。 このような場合は、TIBCO Enterprise Message Service を作成、変換先です。これを呼びます、*動的送信先*です。 これはプロデューサーによって作成され、メッセージが消費されてプロデューサーが切断された時点で削除されます。 A*静的送信先*は送信先ですのみ作成できますが、TIBCO Enterprise Message Service 管理者。 送信先との接続を開いている状態で動的ポートに接続することはできません。BizTalk Adapter for TIBCO Enterprise Message Service はサーバー上の名前の参照メカニズムを利用するからです。 名前の参照を使用するときは、静的ポートのみが表示されます。 動的ポートに接続するときに静的送信先を使用できます。ただし、その名前の送信先が存在しない場合は、送信先が作成されます。 Destination では、ポートを定義するときに、使用する送信先の種類を明示的に指定できます。 転送先の構文が大文字小文字を区別: staticqueue [queue_name] statictopic [topic_name] dynamicqueue [queue_name];dynamictopic [topic_name] です。|  
     |`Port Number`|TIBCO EMS サーバーがリッスンするポートです。|  
     |`Server Name`|必須の設定です。 TIBCO EMS サーバーをホストしているシステムの名前です。|  
   

@@ -1,14 +1,14 @@
 ---
-title: "方法: XML と旅程のルーティング先を使用してファイルの場所へのルートに、テキスト ドキュメントを変換 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: XML と旅程のルーティング先を使用してファイルの場所へのルートに、テキスト ドキュメントを変換 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01597a5f-5ca3-440e-ad97-70332233f319
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010195"
 ---
 # <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>方法: テキスト ドキュメントを XML と旅程のルーティング先を使用してファイルの場所へのルートに変換
 ## <a name="goal"></a>[目標]  
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  Visual Studio を右クリックして**DataFormatTransformation.Schemas**、クリックして**プロパティ**です。 をクリックして**アプリケーション**、し、入力**GlobalBank.ESB.DataFormatTransformation.Schemas**で、**アセンブリ名**ボックス。  
   
-2.  右クリック**DataFormatTransformation.Schemas**、クリックして**プロパティ**です。 をクリックして**署名**、ことを確認し、**アセンブリに署名** チェック ボックスが選択されていること、およびアセンブリの場所を指す**.\\.\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**です。  
+2.  右クリック**DataFormatTransformation.Schemas**、クリックして**プロパティ**です。 をクリックして**署名**、ことを確認し、**アセンブリに署名** チェック ボックスが選択されていること、およびアセンブリの場所を指す **.\\.\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**です。  
   
 3.  右クリック**DataFormatTransformation.Pipelines**、クリックして**削除**です。  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
   
-4.  **受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして**[ok]**です。  
+4.  **受信ポートの選択**ダイアログ ボックスで、をクリックして**OnRamp.Itinerary**、クリックして **[ok]** です。  
   
 5.  **受信場所のプロパティ** ダイアログ ボックスで、**名前**ボックスに、入力**OnRamp.Itinerary.FlatFile.FILE**です。  
   
@@ -145,7 +146,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  クリックして、 **ItineraryFactKey**プロパティ、および入力**Resolver.Itinerary**です。  
   
-    2.  クリックして、 **ResolverConnectionString**プロパティ、型**行程:\\\name=DataFormatTransformation;**順にクリック**[ok]**です。  
+    2.  クリックして、 **ResolverConnectionString**プロパティ、型**行程:\\\name=DataFormatTransformation;** 順にクリック **[ok]** です。  
   
 3.  をクリックして**OK**を閉じる、**受信場所のプロパティ** ダイアログ ボックス。  
   

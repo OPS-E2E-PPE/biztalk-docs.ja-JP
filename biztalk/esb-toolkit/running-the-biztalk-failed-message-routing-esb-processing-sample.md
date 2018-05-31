@@ -1,14 +1,14 @@
 ---
-title: "メッセージのルーティング ESB 処理サンプル BizTalk を実行できませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのルーティング ESB 処理サンプル BizTalk を実行できませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2a536a0-cfc8-4ba3-adcd-2b8b580bff85
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008803"
 ---
 # <a name="running-the-biztalk-failed-message-routing-esb-processing-sample"></a>メッセージのルーティング ESB 処理サンプル BizTalk を実行できませんでした。
 Microsoft BizTalk できませんでしたメッセージ ルーティング ESB 処理サンプルでは、使用する方法を示しています、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]管理、シリアル化、および BizTalk ですべての条件下で発生する例外をレンダリングする汎用メカニズムとして例外管理フレームワークサーバー。 これには、BizTalk 失敗のメッセージのルーティング メカニズムとフォールトによって生成されたメッセージから、オーケストレーション内での例外管理フレームワークによって生成される例外が含まれます。  

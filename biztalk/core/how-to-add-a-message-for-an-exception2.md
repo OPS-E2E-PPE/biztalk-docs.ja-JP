@@ -1,11 +1,11 @@
 ---
-title: "Exception2 のメッセージを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Exception2 のメッセージを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exceptions, adding messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - exception handling, adding messages
 - fault messages, adding
 ms.assetid: 9d8a3801-78cd-4c18-8deb-3fbe4a49a2f9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246202"
 ---
 # <a name="how-to-add-a-message-for-an-exception"></a>例外のメッセージを追加する方法
 最初に作成したバックエンド システムへのポートには、要求と応答が含まれています。 エラーに割り当てることができるように、メッセージを追加する必要があります。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  右クリック**Message_3**を選択して**プロパティ**です。  
   
-3.  設定、**メッセージの種類**よう: 選択**.NET クラス**、し、 **System, String**  
+3.  設定、**メッセージの種類**よう: 選択 **.NET クラス**、し、 **System, String**  
   
  ![](../core/media/jdeoneworld-03-addscope.gif "JdeOneWorld_03_addscope")  
   

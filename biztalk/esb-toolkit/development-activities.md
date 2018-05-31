@@ -1,14 +1,14 @@
 ---
-title: "開発作業 |Microsoft ドキュメント"
-ms.custom: 
+title: 開発作業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1617fa8c-6560-4c1e-aa8a-8ce558a8db04
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294314"
 ---
 # <a name="development-activities"></a>開発アクティビティ
 ここでの開発作業について説明[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]シナリオ行程デザイナーを使用し、次のトピックが含まれています。  

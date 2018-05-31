@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: Microsoft BizTalk Adapter を使用して TIBCO Rendezvous の |Microsoft ドキュメント"
-description: "TIBCO Rendevous からデータを受信し、データを BizTalk Server でアダプターを使用して TIBCO Rendevous に送信するためのステップ バイ ステップ ガイド"
-ms.custom: 
+title: 'チュートリアル: Microsoft BizTalk Adapter を使用して TIBCO Rendezvous の |Microsoft ドキュメント'
+description: TIBCO Rendevous からデータを受信し、データを BizTalk Server でアダプターを使用して TIBCO Rendevous に送信するためのステップ バイ ステップ ガイド
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0be332bc-1148-4f2c-9509-6f09a67da057
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013105"
 ---
 # <a name="tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous"></a>チュートリアル: Microsoft BizTalk Adapter を使用して TIBCO Rendezvous の
 

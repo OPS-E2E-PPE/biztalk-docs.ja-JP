@@ -1,12 +1,13 @@
 ---
-title: "BizTalk Server コード サンプル"
-description: "BizTalk Server サンプルのコレクションをダウンロードするか、個々 のサンプルの一覧を参照します。"
+title: BizTalk Server コード サンプル
+description: BizTalk Server サンプルのコレクションをダウンロードするか、個々 のサンプルの一覧を参照します。
 ms.prod: biztalk-server
 ms.openlocfilehash: 78626ac10d49795a4ba86cf6d92294e4cb6a05d0
 ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289634"
 ---
 # <a name="biztalk-server-code-samples"></a>BizTalk Server コード サンプル
 

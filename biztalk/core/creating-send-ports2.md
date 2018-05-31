@@ -1,14 +1,14 @@
 ---
-title: "TIBCO Rendezvous の SSO の送信ポートを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Rendezvous の SSO の送信ポートを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c260a8f-6050-4cea-85e2-fa38e996b302
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016045"
 ---
 # <a name="creating-send-ports"></a>送信ポートの作成
 シングル サインオン (SSO) および関連アプリケーションを使用する送信ポートを作成した場合は、ユーザー名とパスワードのパラメーターは入力する必要はありません。 選択した**はい**の**SSO を使用する**、一覧から TIBCO Rendezvous システムを表すために作成した SSO 関連アプリケーションを選択します。  

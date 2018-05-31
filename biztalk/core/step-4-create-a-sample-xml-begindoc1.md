@@ -1,14 +1,14 @@
 ---
-title: "手順 4: 作成のサンプル XML BeginDoc1 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: 作成のサンプル XML BeginDoc1 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e494b4b2-4c83-4293-8ae8-acae29018e7f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276730"
 ---
 # <a name="step-4-create-a-sample-xml-begindoc"></a>手順 4: サンプル XML BeginDoc を作成します。
 以下のコードを XML ファイルに保存します。 テストで、この例のステップを使用し、コード例で選択されている J.D. Edwards OneWorld オブジェクトの選択 [jde://csales/b4200310] を入力フォルダーと、指定した出力フォルダー (EndDocOut ポートにバインドされているフォルダー) を含んでいるにこれを削除することができます。  

@@ -10,15 +10,16 @@ ms.topic: article
 helpviewer_keywords:
 - SELECT statement, syntax for
 ms.assetid: 47120d74-bf41-4622-a6bc-7b8ddc959305
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 343e96bb25a062bd524f25c770137bc64227063d
+ms.sourcegitcommit: ba3c4876acc1bf3ee2961ca80c18d930a42c6696
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32320962"
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>SAP の SELECT ステートメントの構文
 次のセクションでは、文法仕様に対する SELECT クエリを実装するための記述、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。 いくつかのケースでは、構文は、基本の TRANSACT-SQL 構文から若干異なることを確認します。  
@@ -41,7 +42,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
  サポートされている条件と式は、次のようには。  
   
--   **\<condition\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
+-   **\<条件\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
   
 -   **\<expr\>** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
   
@@ -59,7 +60,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
     -   ときに、 **no_conversion**フィールドに、変換があるかどうかとは、定義されている終了オプションは使用されませんし、テーブル内のそれらのフィールドが .NET 文字列として公開されます。  
   
--   設定すると**batchsize\<サイズ\>**、SELECT ステートメントの実行により複数の呼び出しを SAP システム的に各呼び出しでのみ行われる\<サイズ\>レコードの数取得されます。 例では、指定した場合の ' 100'、SELECT クエリ batchsize が SAP システムへの各呼び出しでのみ 100 のレコードを取得します。 場合**batchsize\<サイズ\>**が指定されていない、10,000 の既定値は、バッチ サイズと見なされます。 SAP システムでコンピューターと行の数の物理メモリに基づくバッチ サイズの最適な値を指定する必要があることに注意してください。 バッチ サイズの最適な値を指定するときにエラーは、メモリ不足の例外、可能性があります。  
+-   設定すると**batchsize\<サイズ\>**、SELECT ステートメントの実行により複数の呼び出しを SAP システム的に各呼び出しでのみ行われる\<サイズ\>レコードの数取得されます。 例では、指定した場合の ' 100'、SELECT クエリ batchsize が SAP システムへの各呼び出しでのみ 100 のレコードを取得します。 場合**batchsize\<サイズ\>** が指定されていない、10,000 の既定値は、バッチ サイズと見なされます。 SAP システムでコンピューターと行の数の物理メモリに基づくバッチ サイズの最適な値を指定する必要があることに注意してください。 バッチ サイズの最適な値を指定するときにエラーは、メモリ不足の例外、可能性があります。  
   
 -   設定すると**disabledatavalidation**、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] DATS、TIM、NUMC 列に存在する値を検証しませんが、代わりに文字列として公開します。  
   
@@ -208,9 +209,9 @@ Table | '['Table']'
   
 -   SELECT ステートメントを使用して、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]選択クエリで引数の値のパラメーターの名前をサポートしています。 ただし、パラメーター名に関してこれらの規則に従うことを確認してください。  
   
-    -   SELECT クエリで、"@"記号はパラメーターの名前を付ける必要があります。  
+    -   SELECT クエリで、"\@"記号はパラメーターの名前を付ける必要があります。  
   
-    -   "@"記号は、英字 (A ~ Z または a ~ z) の後になければなりません。  
+    -   "\@"シンボルは、英字 (A ~ Z または a ~ z) の後になければなりません。  
   
     -   パラメーター名は英数字文字を含めることができます (A ~ Z、a ~ z、または 0 ~ 9) と特殊文字。 パラメーター名に含めることができる唯一の特殊な文字は、アンダー スコア「_」と「#」のハッシュです。  
   

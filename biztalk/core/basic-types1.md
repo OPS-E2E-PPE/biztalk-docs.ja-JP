@@ -1,11 +1,11 @@
 ---
-title: "基本的な Types1 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的な Types1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards OneWorld adapters, data types
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - JD Edwards OneWorld adapters, .NET Framework
 - adapters [JD Edwards OneWorld adapters], business functions
 ms.assetid: d306ea1b-fb74-4fa3-9681-405252928df1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231858"
 ---
 # <a name="basic-types"></a>基本型
 Microsoft BizTalk Adapter for JD Edwards OneWorld は、JD Edwards OneWorld ビジネス関数へのアクセスのみ提供します。 ビジネス関数メタデータは、ビジネス関数インターフェイスをとおして読み取られ、ビジネス関数の一覧および関連するデータ構造の検索に使用されます。 メタデータは、すべてのビジネス関数メソッドのすべてのケースで厳密に型指定されます。  

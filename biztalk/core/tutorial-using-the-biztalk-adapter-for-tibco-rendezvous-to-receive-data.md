@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: では、TIBCO Rendezvous アダプターを使用して、受信 |Microsoft ドキュメント"
-description: "BizTalk Server で TIBCO Rendezvous の BizTalk アダプタを使用して TIBCO システムからデータを受信するステップ バイ ステップ ガイド"
-ms.custom: 
+title: 'チュートリアル: では、TIBCO Rendezvous アダプターを使用して、受信 |Microsoft ドキュメント'
+description: BizTalk Server で TIBCO Rendezvous の BizTalk アダプタを使用して TIBCO システムからデータを受信するステップ バイ ステップ ガイド
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58e7a739-701d-4085-a840-54f81c55e943
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015441"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data"></a>チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用したデータの受信
 BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデータを受信できます。 このチュートリアルでは、これを示す SDK サンプルについて説明します。  
@@ -52,13 +53,13 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
   
 4.  値を入力して、**名前**フィールド、たとえば**TIBCO Rendezvous**です。  
   
-5.  選択**TIBCO(r) Rendezvous(r)**で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。  
+5.  選択**TIBCO(r) Rendezvous(r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。  
   
 ## <a name="step-2-create-a-receive-port"></a>手順 2: 作成、受信ポート  
   
 1.  **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**受信ポート**です。  
   
-2.  受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.**を表示する、**受信ポートのプロパティ**ダイアログ。  
+2.  受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.** を表示する、**受信ポートのプロパティ**ダイアログ。  
   
 3.  値を入力、**名前**フィールド、たとえば**TIBCORvOneWayRP**、 をクリック**OK**です。  
   
@@ -99,9 +100,9 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
   
      プロパティの詳細については、次を参照してください。[受信作成の成果物](../core/creating-tibco-rendezvous-receive-handlers.md)です。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
-9. 選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
+9. 選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
   
 10. 受信場所を右クリックし、をクリックして**を有効にする**です。  
   
@@ -151,7 +152,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
     |SendPort|TIBCORvOneWayFileSP|  
     |ReceivePort|TIBCORvOneWayRP|  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7. オーケストレーションを右クリックし、をクリックして**開始**を参加させて、オーケストレーションを開始します。  
   

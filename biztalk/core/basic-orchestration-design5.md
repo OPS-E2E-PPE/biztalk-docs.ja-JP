@@ -1,17 +1,17 @@
 ---
-title: "基本的なオーケストレーション Design5 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的なオーケストレーション Design5 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, design
 - exception handling, orchestration design
 ms.assetid: 0941d617-e30c-4ca7-852f-193e16781ca7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230850"
 ---
 # <a name="basic-orchestration-design"></a>基本的なオーケストレーション デザイン
 BizTalk Adapter for PeopleSoft Enterprise で基本的なオーケストレーションを作成する場合、XML の受信はオーケストレーションの受信ポートで行います。 次に、その XML をバックエンド システムに送信して処理します。 バックエンド システムで、例外が発生する可能性がありますはオーケストレーションを停止し、エラーが生成されます。 生成されるエラーには、完了しなかったオーケストレーションの情報が示されます。 エラーの原因をデバッグする際、この情報はあまり役に立ちません。  

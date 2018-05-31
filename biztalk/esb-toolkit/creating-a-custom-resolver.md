@@ -1,14 +1,14 @@
 ---
-title: "カスタム競合回避モジュールを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム競合回避モジュールを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2775460-8e04-40be-9557-8278336b031c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,17 +17,18 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975904"
 ---
 # <a name="creating-a-custom-resolver"></a>カスタム競合回避モジュールを作成します。
 競合回避モジュールとアダプターのプロバイダー フレームワーク実装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]ディスパッチャーをという名前のパイプライン コンポーネントと ItineraryReceive および ItinerarySend という名前のパイプラインを使用します。  
   
- ディスパッチャー パイプライン コンポーネントには 4 つのプロパティ:**検証、Enabled、エンドポイント、**と**MapName**です。 **エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\**  (ルートを使用する解像度の種類を表しますモニカー) です。  
+ ディスパッチャー パイプライン コンポーネントには 4 つのプロパティ:**検証、Enabled、エンドポイント、** と**MapName**です。 **エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\**  (ルートを使用する解像度の種類を表しますモニカー) です。  
   
 ```  
 UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serviceProvider=Microsoft.Practices.ESB  
 ```  
   
- サポートされているその他のモニカーを含める**XPATH:\\\\、静的:\\\\、**と**BRE:\\\\**です。 各モニカー型を実装する特定のクラスを使用して、 **IResolveProvider**インターフェイスです。 その他のモニカーの種類のカスタム独自競合回避モジュールを作成し、動的解決のシステムで使用するためを登録できます。  
+ サポートされているその他のモニカーを含める**XPATH:\\\\、静的:\\\\、** と**BRE:\\\\**です。 各モニカー型を実装する特定のクラスを使用して、 **IResolveProvider**インターフェイスです。 その他のモニカーの種類のカスタム独自競合回避モジュールを作成し、動的解決のシステムで使用するためを登録できます。  
   
  モニカーは、競合回避モジュールの接続文字列に相当します。 個別のスキーマは、パラメーターとそのルート モニカーを定義します。 競合回避モジュールは、競合回避モジュールを接続文字列、検証、および結果を使用してクエリを実行し、設定、**ディクショナリ**ルーティング、変換、itinerary 選択またはに固有の他の何らかの目的のために使用できるオブジェクト、サービス。  
   

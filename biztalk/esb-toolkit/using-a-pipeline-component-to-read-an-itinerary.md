@@ -1,14 +1,14 @@
 ---
-title: "パイプライン コンポーネントを使用して、日程を読み取る |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントを使用して、日程を読み取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e3b40c7-0f17-4d33-a26f-f51346a98be5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296194"
 ---
 # <a name="using-a-pipeline-component-to-read-an-itinerary"></a>パイプライン コンポーネントを使用して、日程を読み取る
 受信パイプラインで受信するメッセージには、その処理要件 (クライアント側行程) を定義する SOAP ヘッダー内のメタデータを含めることができます。 図 1 は、ESB 行程 ESB ディスパッチャー パイプライン コンポーネントの使用方法を示します。  
@@ -101,4 +102,4 @@ ms.lasthandoff: 09/20/2017
   
     -   **Microsoft.Practices.ESB.Services.Transform です。** このサービスは、受信メッセージのペイロードに対して BizTalk マップを実行します。 サービスは、変換要件を検証し、ドキュメント仕様の名前とメッセージの種類を含む BizTalk コンテキスト プロパティを更新します。 ESB ディスパッチャーは、変換サービスの名前、ESB ディスパッチャー パイプライン コンポーネントの対応するプロパティに表示される場合のみ、このサービスを実行します。  
   
-    -   **Microsoft.Practices.ESB.Services.Routing です。**このサービスは、適切なエンドポイントのルーティング情報を設定するアダプター プロバイダーのフレームワークとの競合回避モジュールを使用します。 ESB ディスパッチャーは、これは、ルーティング サービスの名前、ESB ディスパッチャー パイプライン コンポーネントの対応するプロパティに表示される場合にのみ、このサービスを実行します。
+    -   **Microsoft.Practices.ESB.Services.Routing です。** このサービスは、適切なエンドポイントのルーティング情報を設定するアダプター プロバイダーのフレームワークとの競合回避モジュールを使用します。 ESB ディスパッチャーは、これは、ルーティング サービスの名前、ESB ディスパッチャー パイプライン コンポーネントの対応するプロパティに表示される場合にのみ、このサービスを実行します。

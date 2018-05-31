@@ -1,14 +1,14 @@
 ---
-title: "例外の収集と修復と再送信メッセージをルーティング |Microsoft ドキュメント"
-ms.custom: 
+title: 例外の収集と修復と再送信メッセージをルーティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a61658a-0bac-4802-b506-02e61a3d2a9b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006763"
 ---
 # <a name="collecting-exceptions-and-routing-messages-for-repair-and-resubmit"></a>例外の収集と修復と再送信メッセージをルーティングします。
 このユース ケースでのカスタム例外ハンドラーが、Web サービス経由で受信したエラー メッセージを取得しに含まれている InfoPath テンプレートと互換性のある形式でディスク ファイルにルーティング、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 ユーザーが Microsoft InfoPath を使用して、ファイルを開くことができます、メッセージの内容を編集および図 1 に示すように、処理のためにメッセージを再送信します。  

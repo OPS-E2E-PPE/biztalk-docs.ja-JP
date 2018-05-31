@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: を使用して、TIBCO Rendezvous アダプター送信 |Microsoft ドキュメント"
-description: "BizTalk Server で TIBCO Rendezvous の BizTalk アダプターを使用して TIBCO システムにデータを送信するステップ バイ ステップ ガイド"
-ms.custom: 
+title: 'チュートリアル: を使用して、TIBCO Rendezvous アダプター送信 |Microsoft ドキュメント'
+description: BizTalk Server で TIBCO Rendezvous の BizTalk アダプターを使用して TIBCO システムにデータを送信するステップ バイ ステップ ガイド
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b761ce2d-3465-43e0-bd8d-4d68b523226a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014441"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data"></a>チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用したデータの送信
 BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデータを送信できます。 このチュートリアルでは、これを示す SDK サンプルについて説明します。  
@@ -51,7 +52,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
   
 4.  値を入力して、**名前**フィールドです。 たとえば、入力**TIBCO Rendezvous**です。  
   
-5.  選択**TIBCO(r) Rendezvous(r)**で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。  
+5.  選択**TIBCO(r) Rendezvous(r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。  
   
 ## <a name="step-2-create-a-send-port"></a>手順 2: 送信ポートを作成します。  
   
@@ -90,7 +91,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
   
      プロパティの詳細については、次を参照してください。[送信成果物が作成](../core/creating-tibco-rendezvous-send-handlers.md)です。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 9. 選択、 **XML Transmit**パイプラインで使用可能なパイプラインの一覧から、**送信パイプライン**ドロップダウン リスト をクリック**OK**です。  
   
@@ -100,7 +101,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
   
 1.  **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**受信ポート**です。  
   
-2.  受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.**受信ポートのプロパティ ダイアログを表示します。  
+2.  受信ポート フォルダーを右クリックし、をクリックして**新規**、**一方向の受信ポートしています.** 受信ポートのプロパティ ダイアログを表示します。  
   
 3.  値を入力、**名前**フィールド、たとえば**TIBCORndOneWayFileRP**、 をクリック**OK**です。  
   
@@ -116,7 +117,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
   
 5.  用に作成したフォルダーの場所を入力、**受信フォルダー**プロパティをクリック**OK**です。  
   
-6.  選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
+6.  選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
   
 7.  受信場所を右クリックし、をクリックして**を有効にする**です。  
   

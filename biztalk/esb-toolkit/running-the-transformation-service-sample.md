@@ -1,14 +1,14 @@
 ---
-title: "変換サービスのサンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: 変換サービスのサンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 42064d32-5ec5-4219-a338-c5769969b958
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295234"
 ---
 # <a name="running-the-transformation-service-sample"></a>変換サービス サンプルを実行します。
 好きなツール、Web サービス メソッドを実行できるユーティリティを使用して変換サービス サンプルを実行することができます。 たとえば、Storm から使用可能なを使用することができます[CodePlex](http://go.microsoft.com/fwlink/?LinkId=187762) ([http://go.microsoft.com/fwlink/?LinkId=187762](http://go.microsoft.com/fwlink/?LinkId=187762))、変換の Web サービスを呼び出す独自のテスト クライアントを作成することもできます。  

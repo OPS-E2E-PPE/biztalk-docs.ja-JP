@@ -1,14 +1,14 @@
 ---
-title: "エラー メッセージを作成およびパブリッシュ |Microsoft ドキュメント"
-ms.custom: 
+title: エラー メッセージを作成およびパブリッシュ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc7ba1d9-b647-4cba-a3dc-4400505ff51f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290682"
 ---
 # <a name="creating-and-publishing-fault-messages"></a>作成、およびエラー メッセージの公開
 例外管理フレームワークの機能を使用して例外を管理する方法を理解するためは、ここでは、ESB アプリケーションへのメッセージの送信に基づいた一般的なシナリオを示します。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  ESB 例外処理機構は、現在を自動的にシリアル化**例外**オブジェクト、エラー メッセージにします。  
   
-6.  必要に応じて、例外ハンドラーのコードは現在のオーケストレーション メッセージの ESB フォールト メッセージを使用して、追加できます、 **AddMessage (faultMsg、messageToAdd)**メソッドです。 このメソッドは、シリアル化し、次のコード例に示すように、すべてのコンテキスト プロパティを含むメッセージが引き続き発生します。  
+6.  必要に応じて、例外ハンドラーのコードは現在のオーケストレーション メッセージの ESB フォールト メッセージを使用して、追加できます、 **AddMessage (faultMsg、messageToAdd)** メソッドです。 このメソッドは、シリアル化し、次のコード例に示すように、すべてのコンテキスト プロパティを含むメッセージが引き続き発生します。  
   
     ```csharp  
     // Add other current orchestration messages to the fault message.  

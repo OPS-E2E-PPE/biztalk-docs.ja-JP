@@ -12,7 +12,7 @@ helpviewer_keywords:
 - BTAJDEEnterpriseOneTrace command
 - Event Tracing for Windows
 ms.assetid: 5f07d317-5ae2-4d1e-a343-941f3079dc4b
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973680"
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 その他のトレース メッセージを表示するには、Event Tracing for Windows (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル。 たとえば、tracerpt.exe や tracedmp.ex します。 Tracept.exe アプリケーションに変換、 \*を 2 つのテキスト ファイルに .etl: summary.txt と dumpfile.csv です。  
@@ -43,11 +44,11 @@ Microsoft BizTalk Adapter for JD Edwards EnterpriseOne は、エラー、警告�
   
  BizTalk Adapter for JD Edwards EnterpriseOne には 3 つのプロバイダーがあり、異なる種類のメッセージを記録できます。  
   
--   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。 使用 **-受信者** 実行時にアダプターによって受信されたログからメッセージを取得します。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。 使用 **-受信者** 実行時にアダプターによって受信されたログからメッセージを取得します。  
   
--   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。 使用 **-送信機** 実行時にアダプターによって送信されたログからメッセージを取得します。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。 使用 **-送信機** 実行時にアダプターによって送信されたログからメッセージを取得します。  
   
--   **管理ログ プロバイダー**:\<トレース要素\>スイッチが**-管理**使用**-管理**生成されたログからすべてのメッセージを取得するにはサーバー システムの参照中にです。  
+-   **管理ログ プロバイダー**:\<トレース要素\>スイッチが **-管理**使用 **-管理**生成されたログからすべてのメッセージを取得するにはサーバー システムの参照中にです。  
   
 ### <a name="btajdeenterpriseonetrace-command"></a>BTAJDEEnterpriseOneTrace コマンド  
  ETW を使用して、BizTalk Adapter for JD Edwards EnterpriseOne のコマンドを実行する **BTAJDEEnterpriseOneTrace.cmd**します。 このコマンドは次のように使用します。  
@@ -59,7 +60,7 @@ BTAJDEEnterpriseOneTrace <Trace element> -stop
   
 ```  
   
- 場所: **\<トレース要素\>**プロバイダーの種類は、(必須)。  
+ 場所: **\<トレース要素\>** プロバイダーの種類は、(必須)。  
   
  そのオプションがあります。  
   

@@ -1,17 +1,17 @@
 ---
-title: "インストールに関するエラー メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: インストールに関するエラー メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installation, error message
 - error messages, installation
 ms.assetid: 593b033f-03da-43ae-a948-f87aa5e4bccd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971920"
 ---
 # <a name="installation-error-message"></a>インストールに関するエラー メッセージ
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインストールした後に、送信場所または受信場所を定義すると、次のエラーが発生する可能性があります。  
@@ -84,7 +85,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインスト�
 2.  出力から TIBCO.EMS アセンブリ バージョン番号をコピーします。  
   
     > [!CAUTION]
-    >  2 つのバージョン番号が表示されます。1 つは gacutil ユーティリティのバージョン番号です。 2 番目のバージョンの番号は、直後に表示する**バージョン =**です。  
+    >  2 つのバージョン番号が表示されます。1 つは gacutil ユーティリティのバージョン番号です。 2 番目のバージョンの番号は、直後に表示する**バージョン =** です。  
   
 3.  直後に、引用符の間、BTSNTSVC.exe.config ファイルにバージョン番号を貼り付け**newVersion =** (前の XML 例内の文字を太字)。  
   

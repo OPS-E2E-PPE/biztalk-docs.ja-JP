@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246522"
 ---
 # <a name="get-method"></a>Get メソッド
 入力キー パラメーター (key1、key2、... に基づいてプロパティを取得するために使用 keyn)。 出力パラメーターは、キー パラメーターに一致するレコードのプロパティを含む構造です。 コンポーネント インターフェイスのインスタンスが 1 つしかない場合 (キーがない場合) は、Get 関数にキー パラメーターは含まれません。 参照してください[Find メソッド](../core/find-method.md)です。  

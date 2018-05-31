@@ -1,14 +1,14 @@
 ---
-title: "Web サービスの BizTalk 操作 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスの BizTalk 操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af38815f-f643-4598-9148-6499071d12e4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296914"
 ---
 # <a name="the-biztalk-operations-web-service"></a>操作で BizTalk Web サービス
 Microsoft BizTalk Operations Web サービスでは、オブジェクトおよび BizTalk Server でメッセージに関する情報を公開します。 サービス名は**ESB.BizTalkOperationsService**、し、サービスは、さまざまなホスト、オーケストレーション、アプリケーション、および BizTalk アプリケーションの状態のリストなどの項目を返すメソッドを公開します。  

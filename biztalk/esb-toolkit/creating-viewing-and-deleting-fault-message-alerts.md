@@ -1,14 +1,14 @@
 ---
-title: "メッセージのアラートの作成、表示、およびエラーを削除する |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのアラートの作成、表示、およびエラーを削除する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59df2b40-b42c-4167-873c-0819839919da
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974448"
 ---
 # <a name="creating-viewing-and-deleting-fault-message-alerts"></a>作成、表示、およびエラー メッセージの通知を削除します。
 ポータルから、エラー メッセージが受信したときに、ESB の管理ポータルがアラートを生成することができます、アラートの指定された条件と、メッセージ内の値の比較に基づいています。 ポータルでは個別にリンクされているアラートの通知とユーザーのリストを保持してもと、事前にアラートを生成するときにこれらのユーザーが通知します。  

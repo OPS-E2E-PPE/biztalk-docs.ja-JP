@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b7bc3ab-16fa-4e91-8730-9431473b2fb4
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973272"
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a>TIBCO Rendezvous をトラブルシューティングします。
   
@@ -46,15 +47,15 @@ Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、およ
   
  BizTalk Adapter for TIBCO Rendezvous には 3 つのプロバイダーがあります。 そのため、異なる種類のメッセージを記録できます。  
   
--   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。  
   
 -   使用 **-受信者** 実行時にアダプターで受信されたログからメッセージを取得します。  
   
--   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。  
   
      使用 **-送信機** 実行時にアダプターによって送信されたログからメッセージを取得します。  
   
--   **管理ログ プロバイダー —**、\<トレース要素\>スイッチが**-管理**です。  
+-   **管理ログ プロバイダー —**、\<トレース要素\>スイッチが **-管理**です。  
   
      使用 **-管理**サーバー システムの参照中に生成されたログからメッセージを取得します。  
   
@@ -67,7 +68,7 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- 場所: **\<トレース要素\>**プロバイダーの種類は、(必須)。  
+ 場所: **\<トレース要素\>** プロバイダーの種類は、(必須)。  
   
  そのオプションは次のとおりです。  
   

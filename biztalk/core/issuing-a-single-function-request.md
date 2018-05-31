@@ -1,18 +1,18 @@
 ---
-title: "単一関数の要求を発行する |Microsoft ドキュメント"
-ms.custom: 
+title: 単一関数の要求を発行する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - single-function requests
 - business functions, executing with single-function call
 - examples, single-function requests
 ms.assetid: 7448c1a7-be88-4ea7-a357-03cd7024729a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262034"
 ---
 # <a name="issuing-a-single-function-request"></a>単一関数の要求の発行
 次の GetEffectiveAddress の例は JD Edwards EnterpriseOne への単一関数の呼び出しであり、この要求の結果は標準の応答ドキュメントです。 単一関数の要求では、XML オブジェクト内の 1 つの callMethod だけを指定します。  

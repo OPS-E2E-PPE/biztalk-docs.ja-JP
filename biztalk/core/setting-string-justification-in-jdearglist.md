@@ -1,15 +1,15 @@
 ---
-title: "JD Edwards OneWorld アダプターで文字列の位置揃えを設定 |Microsoft ドキュメント"
-description: "BizTalk Server オーケストレーションに、JD Edwards OneWorld アダプターを使用する jdearglist ファイルを更新します。"
-ms.custom: 
+title: JD Edwards OneWorld アダプターで文字列の位置揃えを設定 |Microsoft ドキュメント
+description: BizTalk Server オーケストレーションに、JD Edwards OneWorld アダプターを使用する jdearglist ファイルを更新します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9b013a-839d-45f1-9da0-c96fd45b25e5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013001"
 ---
 # <a name="set-string-justification-in-jdearglist"></a>Jdearglist での位置揃えの文字列を設定します。
 

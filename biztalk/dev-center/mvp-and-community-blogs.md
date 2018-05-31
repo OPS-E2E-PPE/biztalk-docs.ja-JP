@@ -1,12 +1,12 @@
 ---
-title: "統合と Azure Mvp、コミュニティによって作成されたブログ リスト |Microsoft ドキュメント"
-description: "ブログと BizTalk Server、Logic Apps の統合および Azure Mvp、コミュニティ メンバーによって web サイト"
+title: 統合と Azure Mvp、コミュニティによって作成されたブログ リスト |Microsoft ドキュメント
+description: ブログと BizTalk Server、Logic Apps の統合および Azure Mvp、コミュニティ メンバーによって web サイト
 author: MandiOhlinger
 manager: anneta
 ms.date: 08/23/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.author: mandia
 ms.openlocfilehash: ea6ec410696c1e1f7325c610eb7770e64a574101
@@ -14,6 +14,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290834"
 ---
 # <a name="mvp-and-community-written-blogs"></a>MVP やコミュニティによって記述されたブログ
 

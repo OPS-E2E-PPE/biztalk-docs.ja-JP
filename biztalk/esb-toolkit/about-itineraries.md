@@ -1,14 +1,14 @@
 ---
-title: "行程に関する |Microsoft ドキュメント"
-ms.custom: 
+title: 行程に関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4d34632f-8652-49dd-97b7-2513aacc1bd7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290610"
 ---
 # <a name="about-itineraries"></a>行程について
 日程、ESB 仲介ポリシー処理に基づいて命令のシーケンスを実行するための表現である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]拡張可能な形式です。 日程が宣言型の itinerary サービスの構成で仲介コンポーネントに関連付けられているのシーケンスを記述する高度な仲介言語として見なすことができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンです。 メッセージの処理方法を説明する仲介フローをデザインすることができ、ビジュアルの描画として全体の流れを整理することができます。 実行時に、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンは、行程デザイナーによって生成される旅程を実行します。  

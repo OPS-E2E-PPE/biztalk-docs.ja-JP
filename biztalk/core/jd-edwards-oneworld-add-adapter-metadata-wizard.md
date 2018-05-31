@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261778"
 ---
 # <a name="jd-edwards-oneworld-add-adapter-metadata-wizard"></a>JD Edwards OneWorld アダプター メタデータの追加ウィザード
 JD Edwards OneWorld システムのメタデータ情報にアクセスするには、アダプター メタデータの追加ウィザードを使用します。  

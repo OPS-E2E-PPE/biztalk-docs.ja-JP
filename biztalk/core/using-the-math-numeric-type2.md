@@ -1,11 +1,11 @@
 ---
-title: "MATH_NUMERIC Type2 を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: MATH_NUMERIC Type2 を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exponents, JD Edwards OneWorld adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MATH_NUMERIC type
 - adapters [JD Edwards OneWorld adapters], currency
 ms.assetid: 14d04576-0028-4af4-84bd-92c4ca492126
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288418"
 ---
 # <a name="using-the-mathnumeric-type"></a>MATH_NUMERIC 型の使用
 ここでは、MATH_NUMERIC 型および指数の処理方法、最大桁数、および最大 10 進桁数の詳細について説明します。 次の項目についても説明します。  

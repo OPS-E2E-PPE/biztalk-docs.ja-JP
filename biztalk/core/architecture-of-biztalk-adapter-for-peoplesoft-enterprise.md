@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for PeopleSoft Enterprise のアーキテクチャ |Microsoft ドキュメント"
-description: "メッセージを受信する方法について説明します、メッセージがどのように検証すると、BizTalk Server で、PeopleSoft アダプターを使用する場合は、コンポーネント インターフェイス メソッドの情報を提供"
-ms.custom: 
+title: BizTalk Adapter for PeopleSoft Enterprise のアーキテクチャ |Microsoft ドキュメント
+description: メッセージを受信する方法について説明します、メッセージがどのように検証すると、BizTalk Server で、PeopleSoft アダプターを使用する場合は、コンポーネント インターフェイス メソッドの情報を提供
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f246e974-a082-430c-ad15-23a5e597738b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013697"
 ---
 # <a name="peoplesoft-enterprise-adapter-architecture"></a>PeopleSoft Enterprise アダプターのアーキテクチャ
 Microsoft BizTalk Adapter for PeopleSoft Enterprise は、基本的な操作の実行中に BizTalk Server から XML メッセージを受信します。 この XML メッセージは SOAP エンベロープに埋め込まれます。 BizTalk Adapter for PeopleSoft Enterprise は、SOAP 要求をサーバーに転送します。 このアダプターは、Jolt トランザクション プロトコルによって PeopleSoft システムに接続する PeopleSoft psjoa クラスを使用して、PeopleSoft システムと通信します。 PeopleSoft システムは、要求を受信して、ビジネス ロジックを実行します。 応答は、同様のプロセスによって戻されます。  

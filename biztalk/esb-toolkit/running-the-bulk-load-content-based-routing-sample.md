@@ -1,14 +1,14 @@
 ---
-title: "コンテンツ ベース ルーティングのサンプルを読み込む一括を実行している |Microsoft ドキュメント"
-ms.custom: 
+title: コンテンツ ベース ルーティングのサンプルを読み込む一括を実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e981567-7c6c-4c13-bd5b-597efdd3fb50
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294946"
 ---
 # <a name="running-the-bulk-load-content-based-routing-sample"></a>サンプルを実行して、一括読み込みコンテンツ ベース ルーティング
 このサンプルの一部では、一括読み込み、ESB と Microsoft BizTalk は、各メッセージに指定されたキュー名に基づいて異なる送信先キューにルーティング、メッセージのキューについて説明します。 前の 2 つの部分できたように、サンプルの機能を使用します。  
@@ -33,6 +34,6 @@ ms.lasthandoff: 09/20/2017
   
 5.  **ロード** ダイアログ ボックスで、既定値に設定されたすべての値のままにします。  
   
-6.  **ロード**ダイアログ ボックスで、をクリックして**[ok]**入力キューにすべてのメッセージを追加します。  
+6.  **ロード**ダイアログ ボックスで、をクリックして **[ok]** 入力キューにすべてのメッセージを追加します。  
   
 7.  遅延後に、アプリケーションの実行中は、JMS ヘッダー内の値に応じて、さまざまな送信先キューに、ESB 出力メッセージが表示されます。 ただし、同じ返信先キューは、ので、ESB で表示されるすべての応答すべて指定します。JMS です。サンプルです。応答キューです。 WebSphere キュー エクスプ ローラーを開き、これを確認するキューを参照します。

@@ -1,14 +1,14 @@
 ---
-title: "ESB Itinerary セレクター コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: ESB Itinerary セレクター コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2cd8a85-e036-4817-9541-3fd720ca04ef
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295154"
 ---
 # <a name="the-esb-itinerary-selector-component"></a>ESB Itinerary セレクター コンポーネント
 ESB 行程セレクター コンポーネントには、行程をによる競合回避モジュールのヘルプ メッセージの適切なサーバー側日程を選択すると、ESB を通過する SOAP ヘッダーがない入力方向のメッセージが可能です。 コンポーネントは、クライアントによって要求されるとおり、名前と、日程のバージョンを定義する SOAP ヘッダーを使用するメッセージも使用されます。  

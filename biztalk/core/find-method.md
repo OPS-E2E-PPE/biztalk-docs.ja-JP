@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245970"
 ---
 # <a name="find-method"></a>Find メソッド
 指定された部分検索キーに合致するキーの一覧を返すために使用します。 インスタンスが 1 つだけしかないコンポーネント インターフェイスの場合、つまりキーが存在しない場合、`Find()` 関数は生成されません。 関連項目[Get メソッド](../core/get-method.md)です。  

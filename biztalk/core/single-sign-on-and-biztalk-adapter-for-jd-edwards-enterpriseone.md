@@ -1,18 +1,18 @@
 ---
-title: "シングル サインオンと BizTalk Adapter JD Edwards EnterpriseOne for |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオンと BizTalk Adapter JD Edwards EnterpriseOne for |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards EnterpriseOne adapters, Single Sign-On
 - Single Sign-On, JD Edwards EnterpriseOne adapters
 - adapters [JD Edwards EnterpriseOne adapters], Single Sign-On
 ms.assetid: efcc3a2d-18a6-4090-9e95-143fb7a356b2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015817"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone"></a>シングル サインオンと BizTalk Adapter for JD Edwards EnterpriseOne
 Microsoft Adapter for JD Edwards EnterpriseOne でシングル サインオン (SSO) を使用すると、アダプターは SSO 資格情報データベースから資格情報を取得します。 したがって、する必要はありませんでサーバー システムのログオン資格情報を入力する、**トランスポートのプロパティ** ダイアログ ボックス。  

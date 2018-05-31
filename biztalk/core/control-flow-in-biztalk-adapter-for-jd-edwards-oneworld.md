@@ -1,11 +1,11 @@
 ---
-title: "BizTalk adapter for JD Edwards OneWorld のフロー制御 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk adapter for JD Edwards OneWorld のフロー制御 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection pooling
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - apartment threading
 - apartment threading, business functions
 ms.assetid: 1ec865d0-2257-453b-9230-1f3787ebac38
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237978"
 ---
 # <a name="control-flow-in-biztalk-adapter-for-jd-edwards-oneworld"></a>BizTalk Adapter for JD Edwards OneWorld の制御フロー
 このトピックでは、Microsoft BizTalk Adapter for JD Edwards OneWorld のデザイン時および実行時の制御フローについて説明します。  

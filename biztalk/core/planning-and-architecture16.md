@@ -1,14 +1,14 @@
 ---
-title: "アーキテクチャと TIBCO Enterprise Message Service の要件 |Microsoft ドキュメント"
-ms.custom: 
+title: アーキテクチャと TIBCO Enterprise Message Service の要件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2b240099-a8fa-4b69-8517-99123cd7db78
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013609"
 ---
 # <a name="architecture-and-limitations"></a>アーキテクチャと制限事項
 

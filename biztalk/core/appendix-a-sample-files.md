@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230114"
 ---
 # <a name="appendix-a-sample-files"></a>付録 a: サンプル ファイル
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne では、JD Edwards EnterpriseOne 内でビジネス関数を実行するための jdeRequest と jdeResponse XML 構造をサポートしています。  

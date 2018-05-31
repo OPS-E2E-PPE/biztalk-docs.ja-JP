@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用してデータを PeopleSoft Enterprise に書き込む |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用してデータを PeopleSoft Enterprise に書き込む |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 837dd4db-576d-41c1-9fe8-e1e46861270b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976080"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-write-data-to-peoplesoft-enterprise"></a>チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用した PeopleSoft Enterprise へのデータの書き込み
 BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または内部アプリケーションから受信した情報に基づくデータを PeopleSoft システムに書き込むことができます。 ここでは、この機能を示す SDK サンプルについて説明します。  
@@ -45,7 +46,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または�
 |**ランタイム プロジェクト ファイル名**|**ランタイム プロジェクト ファイルの説明**|  
 |----------------------------------|------------------------------------------|  
 |OneWaySend.btproj<br /><br /> OneWaySend.sln|アプリケーションのプロジェクトおよびソリューション ファイル。|  
-|LOCATIONService.xsd、<br /><br /> LOCATIONService_1.xsd、<br /><br /> LOCATIONService_2.xsd|アプリケーションのスキーマ ファイル。 **注:**アダプター スキーマ ファイルは、プロジェクトでは、使用してもともと作成された、**アダプター メタデータの追加ウィザード**です。 アダプター メタデータの追加ウィザードの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マニュアルの「アダプター メタデータを BizTalk プロジェクトに追加する方法」を参照してください。|  
+|LOCATIONService.xsd、<br /><br /> LOCATIONService_1.xsd、<br /><br /> LOCATIONService_2.xsd|アプリケーションのスキーマ ファイル。 **注:** アダプター スキーマ ファイルは、プロジェクトでは、使用してもともと作成された、**アダプター メタデータの追加ウィザード**です。 アダプター メタデータの追加ウィザードの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マニュアルの「アダプター メタデータを BizTalk プロジェクトに追加する方法」を参照してください。|  
 |PeopleSoftOneWaySend.odx|アプリケーションが使用するオーケストレーション。|  
 |PeopleSoftOneWaySend.snk|厳密な名前のキー ファイル。|  
   
@@ -61,7 +62,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または�
   
 4.  値を入力して、**名前**フィールド、たとえば**PeopleSoft**です。  
   
-5.  選択**PeopleSoft enterprise (r)**で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。  
+5.  選択**PeopleSoft enterprise (r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウン リスト をクリック**OK**です。  
   
 #### <a name="create-a-biztalk-send-port"></a>BizTalk 送信ポートを作成する  
   
@@ -80,13 +81,13 @@ BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または�
   
     |**プロパティ**|**値**|  
     |------------------|---------------|  
-    |アプリケーション サーバーのパス|PeopleSoft Server のコンピューターおよびポートの場所 (例: //PSServer:8888)。 **注:**する上記の例ででした入力ように//PSServer の値、PeopleSoft サーバーは、既定のポート値 9000 を使用している場合、9000 の既定のポートが使用されるポート番号を指定しない場合。|  
+    |アプリケーション サーバーのパス|PeopleSoft Server のコンピューターおよびポートの場所 (例: //PSServer:8888)。 **注:** する上記の例ででした入力ように//PSServer の値、PeopleSoft サーバーは、既定のポート値 9000 を使用している場合、9000 の既定のポートが使用されるポート番号を指定しない場合。|  
     |JAVA_HOME|Java 2 Platform SDK ファイルに関連付けられているホーム ディレクトリへのパス (例: C:\j2sdk1.4.2_08)。|  
     |Password|PeopleSoft システムへの接続時に使用するパスワード。|  
     |PeopleSoft 8.x JAR ファイル|PeopleSoft Java Object Adapter JAR ファイルの場所**psjoa.jar**C:\JARS\psjoa.jar 例を示します。|  
     |ユーザー名|PeopleSoft システムへの接続時に使用するユーザー名。|  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  選択、 **XML Transmit**パイプラインで使用可能なパイプラインの一覧から、**送信パイプライン**ドロップダウン リスト をクリック**OK**です。  
   
@@ -112,7 +113,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または�
   
 5.  用に作成したフォルダーの場所を入力、**受信フォルダー**プロパティをクリック**OK**です。  
   
-6.  選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
+6.  選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
   
 7.  受信場所を右クリックし、をクリックして**を有効にする**です。  
   
@@ -143,7 +144,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または�
   
 1.  ダブルクリックして**LOCATIONService_1.xsd**ソリューション エクスプ ローラーで、スキーマ エディターでファイルを開きます。  
   
-2.  右クリックし、 **\<スキーマ\>**スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。  
+2.  右クリックし、 **\<スキーマ\>** スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。  
   
 3.  選択**CreateEx**で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。 これから生成されるサンプルのドキュメント インスタンスを生成するときにそのように実行する、 **CreateEx**スキーマのノードです。  
   
@@ -160,9 +161,9 @@ BizTalk Adapter for PeopleSoft Enterprise を使用して、取引先または�
   
 8.  ソリューション エクスプ ローラーで LOCATIONService_1.xsd を右クリックし、をクリックして**インスタンスの生成**を指定した場所にドキュメント インスタンスを生成します。  
   
-9. 右クリックし、 **\<スキーマ\>**スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。  
+9. 右クリックし、 **\<スキーマ\>** スキーマ エディターでノード**プロパティ**ノードのプロパティを表示します。  
   
-10. 選択 (**既定)**で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。  
+10. 選択 (**既定)** で利用可能なノードの一覧から、**ルート参照**ボックスの一覧です。  
   
 #### <a name="modify-the-generated-document-instance"></a>生成されたドキュメント インスタンスを変更する  
   

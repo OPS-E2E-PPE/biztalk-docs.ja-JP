@@ -11,7 +11,7 @@ helpviewer_keywords:
 - ETW
 - Event Tracing for Windows
 ms.assetid: 88b91b74-2b2e-40e0-a3e9-1ebd6367abe8
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25974416"
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for JD Edwards OneWorld ではエラー、警告、および情報のメッセージを Windows イベント ビューアーに記録します。 その他のトレース メッセージを表示するには、Event Tracing for Windows (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル: tracerpt.exe や tracedmp.exe などです。  
@@ -46,15 +47,15 @@ Microsoft BizTalk Adapter for JD Edwards OneWorld ではエラー、警告、お
   
  BizTalk Adapter for JD Edwards OneWorld には 5 つのプロバイダーがあり、さまざまな種類のメッセージを記録できます。  
   
--   **受信側のログ プロバイダーです。** \<トレース要素\>スイッチが**-受信者**です。  
+-   **受信側のログ プロバイダーです。** \<トレース要素\>スイッチが **-受信者**です。  
   
--   **受信元 CastDetails プロバイダー。** \<トレース要素\>スイッチが**- castDetailsReceive**です。  
+-   **受信元 CastDetails プロバイダー。** \<トレース要素\>スイッチが **- castDetailsReceive**です。  
   
--   **送信元ログ プロバイダーです。** \<トレース要素\>スイッチが**-トランスミッター**です。  
+-   **送信元ログ プロバイダーです。** \<トレース要素\>スイッチが **-トランスミッター**です。  
   
--   **送信元 CastDetails プロバイダー。** \<トレース要素\>スイッチが**- castDetailsTransmit**です。  
+-   **送信元 CastDetails プロバイダー。** \<トレース要素\>スイッチが **- castDetailsTransmit**です。  
   
--   **管理ログ プロバイダーです。** \<トレース要素\>スイッチが**-管理**です。  
+-   **管理ログ プロバイダーです。** \<トレース要素\>スイッチが **-管理**です。  
   
  BTAJDEOneWorldTrace コマンド  
   
@@ -68,7 +69,7 @@ BTAJDEOneWorldTrace <Trace element> -stop
   
  各要素の説明は次のとおりです。  
   
--   **\<Trace 要素\>**プロバイダーの種類は、(必須)。  
+-   **\<Trace 要素\>** プロバイダーの種類は、(必須)。  
   
 -   そのオプションがあります。  
   

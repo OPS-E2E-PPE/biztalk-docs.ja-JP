@@ -1,14 +1,14 @@
 ---
-title: "開発活動の前提条件 |Microsoft ドキュメント"
-ms.custom: 
+title: 開発活動の前提条件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 54c91405-f9a4-4676-b5c5-fe90b3b51b45
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006259"
 ---
 # <a name="prerequisites-for-the-development-activities"></a>開発活動の前提条件
 このセクションの一部として含まれている開発作業の手順を実行するように環境を準備する方法について説明、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 開発作業の手順のいずれかの操作を行う前に、次のセットアップを完了します。  
@@ -61,6 +62,6 @@ ms.lasthandoff: 12/01/2017
   
 5.  選択、**ソリューションのディレクトリを作成**チェック ボックスをオンします。  
   
-6.  **ソリューション名**ボックスに、入力**パターン**、クリックして**[ok]**ソリューションを作成します。  
+6.  **ソリューション名**ボックスに、入力**パターン**、クリックして **[ok]** ソリューションを作成します。  
   
 7.  削除、 **Class1.cs**ファイルから、 **ItineraryLibrary**プロジェクト。

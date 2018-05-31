@@ -1,14 +1,14 @@
 ---
-title: "エラーの設定 ページ |Microsoft ドキュメント"
-ms.custom: 
+title: エラーの設定 ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67f10b8b-9a32-40ca-9ce4-0b69e159c36c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294146"
 ---
 # <a name="fault-settings-page"></a>[エラーの設定] ページ
 図 1 は、フォールトの設定 ページを示します。 このページには、変更可能な管理の設定の範囲が表示されます。  

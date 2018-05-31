@@ -1,17 +1,17 @@
 ---
-title: "付録 b: PeopleSoft アプリケーションの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: '付録 b: PeopleSoft アプリケーションの使用 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PeopleSoft, using
 - using PeopleSoft application
 ms.assetid: 36475836-1d23-4bb4-a3c1-cdd3fff28476
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964144"
 ---
 # <a name="appendix-b-using-the-peoplesoft-application"></a>付録 b: PeopleSoft アプリケーションの使用
 このセクションでは、オーケストレーションのテストに役立つ、PeopleSoft のさまざまな領域の使用法について説明します。  

@@ -1,14 +1,14 @@
 ---
-title: "方法: ESB Itinerary サービスで BAM の追跡を有効にする |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: ESB Itinerary サービスで BAM の追跡を有効にする |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58859937-f8d0-4c33-9a7a-62fec8441936
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009627"
 ---
 # <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a>方法: ESB Itinerary サービスで BAM の追跡を有効にします。
 ## <a name="goal"></a>[目標]  
@@ -190,7 +191,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  をクリックして**開始**タスク バーで、をポイント**すべてのプログラム**、 をポイント[!INCLUDE[SQLServer2008or2005](../includes/sqlserver2008or2005-md.md)]、順にクリック**SQL Server Management Studio**です。  
   
-2.  **[新しいクエリ]**をクリックします。  
+2.  **[新しいクエリ]** をクリックします。  
   
 3.  クエリ ウィンドウで、次のように入力します。  
   
@@ -200,7 +201,7 @@ ms.lasthandoff: 12/01/2017
     GO  
     ```  
   
-4.  **[実行]**をクリックします。  
+4.  **[実行]** をクリックします。  
   
 5.  結果ウィンドウで、使用、**タイムスタンプ**最新のエントリを検索する列。  
   

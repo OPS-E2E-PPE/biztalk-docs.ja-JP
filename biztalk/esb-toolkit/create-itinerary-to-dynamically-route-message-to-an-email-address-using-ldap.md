@@ -1,14 +1,14 @@
 ---
-title: "方法: 動的に LDAP クエリを使用する電子メール アドレスにメッセージをルーティングする日程を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '方法: 動的に LDAP クエリを使用する電子メール アドレスにメッセージをルーティングする日程を作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d9929dd-5e45-4b0d-90df-52a35e68b0ba
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010115"
 ---
 # <a name="how-to-create-an-itinerary-to-dynamically-route-a-message-to-an-email-address-using-an-ldap-query"></a>方法: 動的に LDAP クエリを使用する電子メール アドレスにメッセージをルーティングする日程を作成します。
 ## <a name="goal"></a>[目標]  
@@ -91,7 +92,7 @@ ms.lasthandoff: 12/01/2017
   
     3.  **トランスポート名**ドロップダウン リストをクリックして**SMTP**です。  
   
-    4.  クリックして、**トランスポート場所**プロパティ、および入力**{メール}**  
+    4.  クリックして、**トランスポート場所**プロパティ、および入力 **{メール}**  
   
     5.  クリックして、 **SearchRoot**プロパティ、および入力**ou = 従業員、dc = globalbank、dc = com**  
   
@@ -113,9 +114,9 @@ ms.lasthandoff: 12/01/2017
   
     3.  クリックして、 **MessagePartsAttachment**プロパティ、および入力**2**です。  
   
-    4.  クリックして、**サブジェクト**プロパティ、および入力**{givenName} の順序**です。  
+    4.  クリックして、**サブジェクト**プロパティ、および入力 **{givenName} の順序**です。  
   
-    5.  構成、 **SMTPAuthentication、smtphost の各ユーザー名、**と**パスワード**プロパティは、ローカル環境の接続情報を使用します。  
+    5.  構成、 **SMTPAuthentication、smtphost の各ユーザー名、** と**パスワード**プロパティは、ローカル環境の接続情報を使用します。  
   
     6.  をクリックして**OK**を閉じる、**エンドポイント構成** ダイアログ ボックス。  
   

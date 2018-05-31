@@ -1,11 +1,11 @@
 ---
-title: "メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, headers
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - message headers
 - EMS messages
 ms.assetid: 65bb3431-7186-4d4c-b004-932cdf070e73
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266690"
 ---
 # <a name="messages"></a>メッセージ
 JMS メッセージのように、Enterprise Message Service (EMS) メッセージには、次の 3 つの別々 の部分が含まれています: ヘッダー、プロパティ、および本文です。 ヘッダーは、EMS メッセージで唯一の必須部分です。 ここでは、Microsoft BizTalk Adapter for TIBCO Enterprise Message Service でのメッセージの処理方法について説明します。  
@@ -37,7 +38,7 @@ JMS メッセージのように、Enterprise Message Service (EMS) メッセー�
  メッセージ ヘッダーには、値が格納された、一連の定義済みフィールドがあります。 BizTalk Adapter for TIBCO Enterprise Message Service は、ヘッダーに設定できる値と設定できない値を認識しています。 読み取り専用の値を設定しようとすると、その値はリダイレクトされるか、Properties{} セクションに設定されます。  
   
 ### <a name="header-example"></a>ヘッダーの例  
- 次の例でわかるように**プロパティ = {先 = {String:queue [Q2]}}**です。 `Properties`文字列を含むプロパティであり、文字列の内容は**Q2**です。 これは Destination セクションとは無関係です。Destination セクションには、ユーザーが設定した値が格納されています。この値は他のセクションには該当しないため、このセクションに保持されています。  
+ 次の例でわかるように**プロパティ = {先 = {String:queue [Q2]}}** です。 `Properties`文字列を含むプロパティであり、文字列の内容は**Q2**です。 これは Destination セクションとは無関係です。Destination セクションには、ユーザーが設定した値が格納されています。この値は他のセクションには該当しないため、このセクションに保持されています。  
   
  オーケストレーションで `ReplyTo` プロパティを設定すると、応答の送信先となる最終的なコンシューマを指定できます。 TIBCOEMS からメッセージを受信すると、`Destination` プロパティが設定されます。 この 2 つ目のプロパティは、TIBCOEMS からメッセージを受信するオーケストレーションでは読み取り専用であり、編集できません。  
   

@@ -1,14 +1,14 @@
 ---
-title: "カスタム Itinerary メッセージング サービスを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム Itinerary メッセージング サービスを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2de44c21-68ca-4cf1-a117-bcb35af1b4a9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973736"
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a>カスタム Itinerary メッセージング サービスを作成します。
 Itinerary フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を実装するクラスを使用して、itinerary 手順の実行をサポートしている、 **IMessagingService** itinerary メッセージング サービスを実行するインターフェイスです。 サービスで、次を担当するときに、カスタムのメッセージング サービスを実装できます。  
@@ -76,7 +77,7 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
  **メッセージングのカスタム itinerary サービスを実装するには**  
   
-1.  派生するクラスを含むアセンブリを作成**IMessagingService;**で、 **Execute**メソッド (存在する場合)、メッセージまたはメッセージのコンテキストを変更するために必要なすべてのロジックが含まれます。  
+1.  派生するクラスを含むアセンブリを作成**IMessagingService;** で、 **Execute**メソッド (存在する場合)、メッセージまたはメッセージのコンテキストを変更するために必要なすべてのロジックが含まれます。  
   
 2.  内のエントリを追加、 **itineraryServices** Esb.config ファイルを追加して、サービスのセクションで、  **\<itineraryService\>** と GUID を持つ要素、 **id**属性をサービスとしての名前、**名前**属性とクラスの完全修飾名、**型**属性、**メッセージング**として、**スコープ**属性、および、許可されているステージ (たとえば、 **OnRampReceive**、 **OnRampSend**、 **OffRampSend**、 **OffRampReceive**、 **AllSend**、 **AllReceive**、または**すべて**) として、**ステージ**属性。  
   

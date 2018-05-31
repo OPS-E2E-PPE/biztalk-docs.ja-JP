@@ -1,14 +1,14 @@
 ---
-title: "メッセージ強化サンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ強化サンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7015a2fe-3727-48f3-a2ed-c368e0630626
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294826"
 ---
 # <a name="running-the-message-enrichment-sample"></a>メッセージ強化サンプルを実行しています。
 Message Enrichment サンプルでは、行程入り口サンプルに用意されている、テスト クライアントの Windows フォーム アプリケーションを使用します。  

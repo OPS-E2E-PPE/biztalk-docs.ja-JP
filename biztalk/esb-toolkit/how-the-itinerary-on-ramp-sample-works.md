@@ -1,14 +1,14 @@
 ---
-title: "Itinerary 入り口サンプルの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: Itinerary 入り口サンプルの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f4f318c-b955-4a3d-88db-c0d324b63b21
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974896"
 ---
 # <a name="how-the-itinerary-on-ramp-sample-works"></a>Itinerary 入り口サンプルの動作
 サンプル行程テスト用クライアント アプリケーションがビルドされたら、クライアント アプリケーションのウィンドウでコントロールを使用して作成した日程を含む SOAP ヘッダーのセットがディスクから指定されたメッセージ ファイルを読み込み、itinerary ヘッダーをメッセージに追加し、ESB 行程入り口処理を通じてに送信します。 旅行計画は、応答を生成する場合、アプリケーションは、応答を収集し、アプリケーション ウィンドウに表示します。  

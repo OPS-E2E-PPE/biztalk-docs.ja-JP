@@ -1,15 +1,15 @@
 ---
-title: "JD Edwards OneWorld のアーキテクチャ |Microsoft ドキュメント"
-description: "デザイン時および実行時に BizTalk の JD Edwards OneWorld アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。"
-ms.custom: 
+title: JD Edwards OneWorld のアーキテクチャ |Microsoft ドキュメント
+description: デザイン時および実行時に BizTalk の JD Edwards OneWorld アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9200a090-a587-4b60-9447-d281580f2078
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014793"
 ---
 # <a name="architecture-of-jd-edwards-oneworld"></a>JD Edwards OneWorld のアーキテクチャ
 Microsoft BizTalk Adapter for JD Edwards OneWorld を使用すると、JD Edwards OneWorld のビジネス関数にアクセスできます。 JD Edwards OneWorld は、JDENet と呼ばれる独自のメッセージング アーキテクチャを使用して、クライアント コンピューターとサーバー コンピューター間の通信を処理します。 JDENet は、JAR ファイルは、Connector.jar および Kernel.jar で JD Edwards OneWorld コネクタ クラスによって実装されます。 通信は、TCP/IP をトランスポート プロトコルとして使用して実装されており、既定のポートは 6009 または 6010 です。 この値を設定する場所の詳細についてを参照してください[アイテムを BizTalk 管理コンソールに追加](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)です。  
@@ -28,7 +29,7 @@ Microsoft BizTalk Adapter for JD Edwards OneWorld を使用すると、JD Edward
   
  JD Edwards OneWorld のビジネス関数を呼び出すには、2 つのメッセージが必要です。  
   
--   最初のメッセージは、ビジネス関数を処理するサーバーの場所を返します。 これを行うと呼ばれるテーブルのセットの検索を実行して*オブジェクト構成マッピング (OCM)*です。  
+-   最初のメッセージは、ビジネス関数を処理するサーバーの場所を返します。 これを行うと呼ばれるテーブルのセットの検索を実行して*オブジェクト構成マッピング (OCM)* です。  
   
 -   2 番目のメッセージでは、JD Edwards OneWorld から渡す引数または JD Edwards OneWorld に渡す引数が入ったフォーマット済みメッセージ バッファーを適切なサーバーに送信し、応答を待ちます。 バッファーは基になる C++ 構造体の Typedef に従ってフォーマットされます。  
   

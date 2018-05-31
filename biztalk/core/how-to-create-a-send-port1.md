@@ -1,17 +1,17 @@
 ---
-title: "送信 Port1 を作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 Port1 を作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating send ports
 - send ports, creating
 ms.assetid: bf32e9f5-ebed-43d2-b9a9-6ab91925d973
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015041"
 ---
 # <a name="how-to-create-a-send-port"></a>送信ポートを作成する方法
 JD Edwards EnterpriseOne 用の BizTalk Server 送信ポートを作成するには、次の手順を使用します。  
@@ -38,7 +39,7 @@ JD Edwards EnterpriseOne 用の BizTalk Server 送信ポートを作成するに
   
 5.  をクリックして**トランスポート**左側のウィンドウでします。  
   
-6.  をクリックして**トランスポートの種類**を選択して**[jdeentone]**です。  
+6.  をクリックして**トランスポートの種類**を選択して **[jdeentone]** です。  
   
 7.  選択、**アドレス (URI)**、省略記号 (...) ボタンをクリックします。  
   

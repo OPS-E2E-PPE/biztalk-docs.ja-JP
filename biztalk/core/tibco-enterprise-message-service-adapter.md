@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Enterprise Message Service アダプタ |Microsoft ドキュメント"
-description: "インストール、チュートリアルの手順、アーキテクチャについて説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Server で TIBCO EMS の BizTalk アダプターを使用する場合は、例外処理を追加"
-ms.custom: 
+title: TIBCO Enterprise Message Service アダプタ |Microsoft ドキュメント
+description: インストール、チュートリアルの手順、アーキテクチャについて説明、SSO のセキュリティを使用して、アプリケーションの作成、バインド ファイルをインポートおよび BizTalk Server で TIBCO EMS の BizTalk アダプターを使用する場合は、例外処理を追加
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 362556d2-295c-4496-a429-ad7ecc44db76
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013721"
 ---
 # <a name="tibco-enterprise-message-service-adapter"></a>TIBCO Enterprise Message Service アダプタ
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service を使用すると、キューおよびトピック btsBizTalkServerNoVersion を使用して TIBCO EMS によって管理されるを公開およびサブスクライブできます。  次のセクションでは、作業の開始、作成するアプリケーション、および詳細について説明します。  

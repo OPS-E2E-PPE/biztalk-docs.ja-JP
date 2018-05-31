@@ -1,14 +1,14 @@
 ---
-title: "警告キュー オプションおよび通知の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 警告キュー オプションおよび通知の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f78afbf9-6e27-4887-8424-f265fbd8448a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290154"
 ---
 # <a name="configuring-alert-queue-options-and-notifications"></a>警告キュー オプションの構成と通知
 ESB の管理ポータルでは、アラートを生成するようにキューに置き、アラートにサブスクライブするユーザーに、アラート通知を送信、ESB Notification Service を使用して、ポータルにエラー メッセージが到着 ESB Alert サービスを使用します。 ESB の管理ポータルでこれらのサービスで使用する設定を編集することができます。  

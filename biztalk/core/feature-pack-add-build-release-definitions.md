@@ -11,11 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2df2cb82508a12e8e8d279204130d2deedd744f4
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 37928509c255dbb2720ad393dfc0f1cee0386a85
+ms.sourcegitcommit: ba3c4876acc1bf3ee2961ca80c18d930a42c6696
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32320946"
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>手順 3: ビルドを作成し、リリース定義
 
@@ -91,9 +92,10 @@ ms.lasthandoff: 04/16/2018
 
 7. 選択、**展開**タスク、および値を入力します。 
 
-    **操作名**: オプション: ***新しい BizTalk アプリケーションを作成する**: 新しいアプリケーションを展開します。 アプリケーションが既に存在する場合、その (完全に停止)、現在のアプリケーションをアンインストールし、新しいアプリケーションをインストールします。 継続的な統合が有効になっているでは、リポジトリで更新されるときに、そのアプリケーションが自動的に再です。 
-        * **既存の BizTalk アプリケーションを更新して**: スキーマなどの変更を既に実行中のアプリケーションに追加します。 アプリケーションの完全再展開は必要ありません。
-        * **BizTalk Server アプリケーションをインストール**:[アプリケーションをインストールする](../core/how-to-install-a-biztalk-application.md)、BizTalk 管理のコンピューター名、および展開パッケージのパスを入力するとします。
+    **操作名**: オプション。   
+        - **新しい BizTalk アプリケーションを作成する**: 新しいアプリケーションを展開します。 アプリケーションが既に存在する場合、その (完全に停止)、現在のアプリケーションをアンインストールし、新しいアプリケーションをインストールします。 継続的な統合が有効になっているでは、リポジトリで更新されるときに、そのアプリケーションが自動的に再です。   
+        - **既存の BizTalk アプリケーションを更新して**: スキーマなどの変更を既に実行中のアプリケーションに追加します。 アプリケーションの完全再展開は必要ありません。  
+        - **BizTalk Server アプリケーションをインストール**:[アプリケーションをインストールする](../core/how-to-install-a-biztalk-application.md)、BizTalk 管理のコンピューター名、および展開パッケージのパスを入力するとします。  
 
      ![配置操作](../core/media/vsts-deploy-operations.png)
 

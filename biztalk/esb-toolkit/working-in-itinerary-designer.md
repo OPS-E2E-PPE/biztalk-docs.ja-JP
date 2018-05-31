@@ -1,14 +1,14 @@
 ---
-title: "Itinerary Designer での作業 |Microsoft ドキュメント"
-ms.custom: 
+title: Itinerary Designer での作業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06742cb8-f6d6-46e2-adc0-6be9a3d6a447
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976784"
 ---
 # <a name="working-in-itinerary-designer"></a>Itinerary Designer での作業
 Microsoft Visual c# プロジェクトを作成した後は、新しい itinerary モデルを作成し、既存の日程をプロジェクトに追加します。 次の手順では、新しい旅程を作成、既存の itinerary モデルを追加または日程の名前を変更する方法について説明します。  
@@ -52,7 +53,7 @@ Microsoft Visual c# プロジェクトを作成した後は、新しい itinerar
   
 #### <a name="save-an-itinerary"></a>日程を保存します。  
   
-**ファイル** メニューのをクリックして**保存\<itinerary 名前\>**です。  
+**ファイル** メニューのをクリックして**保存\<itinerary 名前\>** です。  
   
 > [!NOTE]
 >  Itinerary ファイルは、対応する XML 形式での DSL モデルとして保存されます。  

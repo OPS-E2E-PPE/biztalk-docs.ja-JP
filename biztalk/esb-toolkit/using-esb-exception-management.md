@@ -1,14 +1,14 @@
 ---
-title: "ESB 例外管理を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: ESB 例外管理を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: de6ce411-2d34-4fd8-9644-6fbc9cec266d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008539"
 ---
 # <a name="using-esb-exception-management"></a>ESB 例外管理を使用します。
 エラーと例外といくつかの ESB で別の処理ステージ中にコンテキストの範囲で発生します。 このセクションでは、例外の処理に関する情報を提供し、ESB の管理ポータルで詳細情報を公開する方法について説明します。  

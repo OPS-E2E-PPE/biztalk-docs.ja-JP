@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: TIBCO EMS メッセージ コンテキスト プロパティを使用して |Microsoft ドキュメント"
-description: "BizTalk Server に、オーケストレーションで TIBCO Enterprise Message Service のメッセージ記述子フィールドを使用するステップ バイ ステップ ガイド"
-ms.custom: 
+title: 'チュートリアル: TIBCO EMS メッセージ コンテキスト プロパティを使用して |Microsoft ドキュメント'
+description: BizTalk Server に、オーケストレーションで TIBCO Enterprise Message Service のメッセージ記述子フィールドを使用するステップ バイ ステップ ガイド
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e52593b-5001-4740-89fb-e003e12d8e69
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974000"
 ---
 # <a name="tutorial-use-tibco-ems-message-descriptors"></a>チュートリアル: を使用して TIBCO EMS メッセージ記述子
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  検索 **\<TIBCO EMS_Adapter_installation_directory\>\bin**、し、 **Microsoft.Adapters.TibcoEMSProperties.dll**です。  
   
-5.  **[開く]**をクリックします。  
+5.  **[開く]** をクリックします。  
   
      DLL が表示されます、**選択されたコンポーネント**で、**参照の追加** ダイアログ ボックス。  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
      Message_1 を Message_2 に割り当てます。 したがって、両方のメッセージに同じメッセージの種類を割り当てる必要があります。  
   
-10. **[表示]** メニューの **[ツールボックス]**をクリックします。  
+10. **[表示]** メニューの **[ツールボックス]** をクリックします。  
   
 11. ドラッグ、**メッセージの割り当て**図形に新しいメッセージを作成するオーケストレーションです。  
   

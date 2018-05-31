@@ -1,14 +1,14 @@
 ---
-title: "JD Edwards OneWorld システムを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: JD Edwards OneWorld システムを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5346aa04-ebd7-4545-9062-b349fd73b7f1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287474"
 ---
 # <a name="using-a-jd-edwards-oneworld-system"></a>JD Edwards OneWorld システムの使用
 JD Edwards OneWorld システムに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムからアクセスするには、JD Edwards OneWorld アダプターを使用します。 このアダプターは、Microsoft が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 用に提供する 8 つの基幹業務 (LOB) アダプターの 1 つです。  
@@ -57,7 +58,7 @@ JD Edwards OneWorld システムに [!INCLUDE[btsBizTalkServerNoVersion](../incl
   
      ![](../core/media/2f58413f-41a9-4ed9-ba5c-1d6d59eafb01.gif "2f58413f-41a9-4ed9-ba5c-1d6d59eafb01")  
   
-     **Address Book Revisions - [Work With Addresses]**ダイアログ ボックスで、2 つのレコードが、検索結果として表示されます。  
+     **Address Book Revisions - [Work With Addresses]** ダイアログ ボックスで、2 つのレコードが、検索結果として表示されます。  
   
      ![](../core/media/9284df4e-ca9b-48ab-b2bf-a90d765d4a05.gif "9284df4e-ca9b-48ab-b2bf-a90d765d4a05")  
   

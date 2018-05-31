@@ -1,14 +1,14 @@
 ---
-title: "JMS ヘッダーを保持し、オーケストレーションでルーティングするときに |Microsoft ドキュメント"
-ms.custom: 
+title: JMS ヘッダーを保持し、オーケストレーションでルーティングするときに |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9a59ff3-0cbf-499f-92b2-cf5b808d8b3f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294674"
 ---
 # <a name="preserving-jms-headers-when-routing-through-an-orchestration"></a>オーケストレーションでルーティングするときに、JMS ヘッダーを保持します。
 このユース ケースでは、コンポーネントがで提供される[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]Java Message Service (JMS) ヘッダーを受信メッセージから抽出し、し、それらを再構築でメッセージを送信します。 JMS メッセージ ヘッダーの保存図 1 に示すようには、オーケストレーション内からヘッダーのコンテキストへのアクセスを示します。  

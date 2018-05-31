@@ -1,14 +1,14 @@
 ---
-title: "動的解決のサンプルを実行している |Microsoft ドキュメント"
-ms.custom: 
+title: 動的解決のサンプルを実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c933839f-13e6-4b49-9838-2773e3f99b64
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300050"
 ---
 # <a name="running-the-dynamic-resolution-sample"></a>動的解決のサンプルを実行します。
 使用例のいずれかを実行する GlobalBank.ESB BizTalk アプリケーションに適切な Microsoft BizTalk バインド ファイルをインポートしし、サンプルの入力フォルダに適切なメッセージをドロップまたはサンプルの Web サービスを呼び出します。 動的解決のサンプルには、次の 2 つの主なシナリオがサポートされています。  

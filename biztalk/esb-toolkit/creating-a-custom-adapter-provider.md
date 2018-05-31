@@ -1,14 +1,14 @@
 ---
-title: "カスタム アダプター プロバイダーの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム アダプター プロバイダーの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb93acf8-fd9d-4315-8690-f0c152a954b5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974280"
 ---
 # <a name="creating-a-custom-adapter-provider"></a>カスタム アダプター プロバイダーの作成
 前のセクションで説明されていると、競合回避モジュールの実行、後に、動的な解決サービスは、結果は、エンドポイント (変換ではない) かどうかをチェックします。 サービスのインスタンスであるアダプター マネージャー インスタンスを作成、エンドポイントである場合の**AdapterMgr**クラスです。  

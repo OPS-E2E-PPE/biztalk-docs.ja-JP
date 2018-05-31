@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24013641"
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用方法を説明します。 エンタープライズ シングル サインオンの使用方法の詳細については、Microsoft のドキュメントを参照してください。  

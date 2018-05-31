@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Event Tracing for Windows, components
 - BTAPeopleSoftTrace command
 ms.assetid: 330ef84b-5e2a-4b79-85a9-72271eb489d2
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973552"
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、および情報メッセージを、Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW が有効である場合、このメッセージを受信する *.etl ファイルが作成されます。 ファイルはバイナリ形式で、読み取れるに変換する必要があります。 これを行うには解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル; tracerpt.exe や tracedmp.exe などです。  
@@ -53,15 +54,15 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise は、エラー、警告、�
   
  BizTalk Adapter for PeopleSoft Enterprise には、5 つのプロバイダーが用意されており、種類の異なるメッセージをログに記録できます。  
   
--   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。  
   
--   **受信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが**- castDetailsReceive**です。  
+-   **受信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが **- castDetailsReceive**です。  
   
--   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。  
   
--   **送信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが**- castDetailsTransmit**です。  
+-   **送信元 CastDetails プロバイダー**:\<トレース要素\>スイッチが **- castDetailsTransmit**です。  
   
--   **管理ログ プロバイダー**:\<トレース要素\>スイッチが**-管理**です。  
+-   **管理ログ プロバイダー**:\<トレース要素\>スイッチが **-管理**です。  
   
 ## <a name="btapeoplesofttrace-command"></a>BTAPeopleSoftTrace コマンド  
  ETW を使用して、アダプターのコマンドを実行する **BTAPeopleSoftTrace.cmd**します。 このコマンドは次のように使用します。  

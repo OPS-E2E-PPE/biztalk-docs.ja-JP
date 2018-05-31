@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265146"
 ---
 # <a name="peoplesoft-transport-properties-dialog-box"></a>PeopleSoft トランスポートのプロパティ ダイアログ ボックス
 [PeopleSoft トランスポートのプロパティ] ダイアログ ボックスでは、アダプターに必要なプロパティを設定します。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 |エージェントの更新|選択**はい**の**エージェントの更新**runtimeagent.exe および browsingagent.exe の処理を必要時に自動的に再起動を強制します。<br /><br /> たとえば、サーバーとの接続が失われた場合や、サーバーに追加したものがアダプター ウィザードに表示されない場合に、処理を自動的に再起動することができます。|  
 |**シングル サインオン**||  
 |[関連アプリケーション]|シングル サインオン (SSO) を使用している場合のみ、一覧から関連アプリケーションを選択します。|  
-|SSO の使用|選択**はい**SSO; を使用している場合、パスワードは必要ありませんここでします。 **注:**既にパスワードを入力したシングル サインオンを使用する場合は、パスワード フィールドおよび選択を右クリックして**交わしたパスワード**です。|  
+|SSO の使用|選択**はい**SSO; を使用している場合、パスワードは必要ありませんここでします。 **注:** 既にパスワードを入力したシングル サインオンを使用する場合は、パスワード フィールドおよび選択を右クリックして**交わしたパスワード**です。|  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス](../core/ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise.md)

@@ -1,14 +1,14 @@
 ---
-title: "行程ベースのルーティング |Microsoft ドキュメント"
-ms.custom: 
+title: 行程ベースのルーティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 28028721-798c-4302-a532-d863ed8ea88b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294514"
 ---
 # <a name="itinerary-based-routing"></a>行程ベースのルーティング
 コア機能の 1 つ、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]はエンタープライズ レベルのメッセージング アプリケーションの開発を簡略化し、多数の静的なを維持するためのコストを削減する行程ベースのルーティングのプロビジョニングの送信ポートと受信場所。  

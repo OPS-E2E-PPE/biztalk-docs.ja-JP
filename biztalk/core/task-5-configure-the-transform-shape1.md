@@ -1,14 +1,14 @@
 ---
-title: "タスク 5: 構成変換 Shape1 |Microsoft ドキュメント"
-ms.custom: 
+title: 'タスク 5: 構成変換 Shape1 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93a73fd2-0f34-4681-8aed-7d54d69c86d3
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278746"
 ---
 # <a name="task-5-configure-the-transform-shape"></a>タスク 5: 変換図形を構成します。
 変換図形を構成するには、次の手順に従います。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  ダブルクリックして**変換 _ 1**を開きます。  
   
-    1.  ソースを選択し、下の追加行をクリックして**変数名**選択**[begindocresponsemsg]**です。  
+    1.  ソースを選択し、下の追加行をクリックして**変数名**選択 **[begindocresponsemsg]** です。  
   
          ![](../core/media/jde-transform-source.gif "JDE_transform_source")  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
          ![](../core/media/jde-transform-destination.gif "JDE_transform_destination")  
   
-3.  ソリューション エクスプ ローラーでダブルクリック**[transform_1.btm]**マッピング ツールを開きます。 次の 4 つのアイテムをリンクします。  
+3.  ソリューション エクスプ ローラーでダブルクリック **[transform_1.btm]** マッピング ツールを開きます。 次の 4 つのアイテムをリンクします。  
   
     -   mnCMJobNo  
   
@@ -87,13 +88,13 @@ ms.lasthandoff: 09/20/2017
   
      クリックし、中央で右クリック**図形の挿入**、し、**変換**です。  
   
-5.  ダブルクリックして**[transform_2]**を開きます。  
+5.  ダブルクリックして **[transform_2]** を開きます。  
   
     1.  選択**ソース**下にある行の追加 をクリック**変数名**選択**begindocresponsemsg**です。  
   
     2.  選択**先**下にある行の追加 をクリック**変数名**を選択**enddocmsg**、 をクリック**ok**です。  
   
-6.  ソリューション エクスプ ローラーでダブルクリック**[transform_2.btm]**マッピング ツールを開きます。 次の 4 つのアイテムをリンクします。  
+6.  ソリューション エクスプ ローラーでダブルクリック **[transform_2.btm]** マッピング ツールを開きます。 次の 4 つのアイテムをリンクします。  
   
     -   mnCMJobNo  
   

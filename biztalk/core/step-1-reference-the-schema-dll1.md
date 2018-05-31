@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 参照スキーマ DLL1 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 参照スキーマ DLL1 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47e4b773-e484-4931-9ab2-b8dd0080ea1c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279442"
 ---
 # <a name="step-1-reference-the-schema-dll"></a>手順 1: スキーマ DLL を参照します。
 BizTalk では、メッセージを変更できません。 したがって、プロパティ値を変更するには、新しいメッセージを作成して変更する必要があります。 作成して、受信および送信図形の間でメッセージの割り当て図形を挿入することで、新しいメッセージを変更します。  
@@ -57,7 +58,7 @@ BizTalk では、メッセージを変更できません。 したがって、�
   
      ![プロパティ選択画面](../core/media/properties-selection.gif "properties_selection")  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 11. オーケストレーションをダブルクリックしてオーケストレーション デザイナにアクセスします。  
   

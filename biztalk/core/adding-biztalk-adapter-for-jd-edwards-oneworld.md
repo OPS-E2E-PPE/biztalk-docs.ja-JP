@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for JD Edwards OneWorld に追加 |Microsoft ドキュメント"
-description: "JD Edwards OneWorld を BizTalk 管理コンソールに追加、送信ポートを作成、トランスポートのプロパティを構成および BizTalk Server で JD Edwards OneWorld アダプターを使用するときに、XMLReceive パイプラインと XMLTransmit パイプラインを使用"
-ms.custom: 
+title: BizTalk Adapter for JD Edwards OneWorld に追加 |Microsoft ドキュメント
+description: JD Edwards OneWorld を BizTalk 管理コンソールに追加、送信ポートを作成、トランスポートのプロパティを構成および BizTalk Server で JD Edwards OneWorld アダプターを使用するときに、XMLReceive パイプラインと XMLTransmit パイプラインを使用
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03126f4e-9156-4c0c-ab5c-0627f0c05263
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014257"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a>BizTalk 管理コンソールで JD Edwards EnterpriseOne の成果物を構成します。
 Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラーと送信ハンドラーの両方のフォルダーが含まれています。 送信ハンドラー フォルダーには、BizTalkServerApplication が含まれています。 BizTalk Adapter for JD Edwards OneWorld は作成可能です。BizTalk Server とインプロセスで実行され、分離されたホスト プロセスでは実行されません。  
@@ -30,7 +31,7 @@ Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラー
   
 3.  アダプターの名前を入力します。 たとえば、入力`JDEOneWorld`です。  
   
-4.  選択**[jdeoneworld]**から、**アダプター**一覧**OK**です。  
+4.  選択 **[jdeoneworld]** から、**アダプター**一覧**OK**です。  
 
   
 ### <a name="check-if-the-adapter-is-working"></a>アダプターが動作しているかどうかは確認します。 
@@ -62,7 +63,7 @@ Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラー
   
 3.  **送信ポートのプロパティ**、select、**名前**フィールド、および送信ポートの名前を入力します。 たとえば、入力**SendToJDE**です。  
   
-4.  **型**ドロップダウン リストで、 **[jdeoneworld]**です。  
+4.  **型**ドロップダウン リストで、 **[jdeoneworld]** です。  
   
 5.  **URI**ドロップダウン リストで、送信ハンドラーを選択します。  
   
@@ -118,7 +119,7 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
     > [!NOTE]
     >  browsingagent.exe が最新の状態に更新されるのは、ユーザーが現在の参照セッションを終了したときです。 たとえば、終了する必要があります、**項目の生成された追加**参照セッションとを browsingagent.exe を更新します。  
   
-7.  必要なすべての情報を提供すると、をクリックして**適用**、クリックして**[ok]**の接続情報を受け入れます。  
+7.  必要なすべての情報を提供すると、をクリックして**適用**、クリックして **[ok]** の接続情報を受け入れます。  
   
      JD Edwards OneWorld にアクセスするには、BizTalk Adapter for JD Edwards OneWorld の接続パラメーターを設定する必要があります。  
   

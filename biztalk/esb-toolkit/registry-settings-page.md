@@ -1,14 +1,14 @@
 ---
-title: "レジストリの設定 ページ |Microsoft ドキュメント"
-ms.custom: 
+title: レジストリの設定 ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f964200-516a-48e7-aa95-e3df968bc743
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294554"
 ---
 # <a name="registry-settings-page"></a>[レジストリ設定] ページ
 図 1 は、レジストリの設定 ページを示しています。 設定を変更することができます、ポータルでは、Universal Description, Discovery, and Integration (UDDI) サービスとやり取りするときにします。  

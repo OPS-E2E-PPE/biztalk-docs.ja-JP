@@ -1,12 +1,12 @@
 ---
-title: "ホワイト ペーパー、ブログ、および Host Integration Server のダウンロード |Microsoft ドキュメント"
-description: "自分の管理パック、Sdk、ベスト プラクティス アナライザー、およびホワイト ペーパーをダウンロードします。"
+title: ホワイト ペーパー、ブログ、および Host Integration Server のダウンロード |Microsoft ドキュメント
+description: 自分の管理パック、Sdk、ベスト プラクティス アナライザー、およびホワイト ペーパーをダウンロードします。
 author: MandiOhlinger
 manager: anneta
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.author: mandia
 ms.openlocfilehash: 4c2a19381719569422c43a1e146096ddb25042ba
@@ -14,6 +14,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290082"
 ---
 # <a name="his-popular-downloads-and-blogs"></a>彼の一般的なダウンロードとブログ
 

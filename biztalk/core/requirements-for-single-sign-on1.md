@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオンの要件 |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオンの要件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1111377-2fe1-4d65-ac0d-c89d2f1740b8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015625"
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 シングル サインオン (SSO) を使用するには、以下のソフトウェアがインストールされている必要があります。  

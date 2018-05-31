@@ -1,14 +1,14 @@
 ---
-title: "動的解決のサンプルについては、双方向のメッセージング シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: 動的解決のサンプルについては、双方向のメッセージング シナリオ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e89792f1-c725-46c4-946c-23211e2f892a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296042"
 ---
 # <a name="two-way-messaging-scenarios-for-the-dynamic-resolution-sample"></a>動的解決のサンプルについては、双方向のメッセージング シナリオ
 このトピックの双方向のメッセージング シナリオを実行する方法を示しています、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]動的解決のサンプルです。  

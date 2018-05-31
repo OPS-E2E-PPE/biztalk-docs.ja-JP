@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Rendezvous アダプターのインストール、スキーマ、および制限事項 |Microsoft ドキュメント"
-description: "インストール、スキーマの生成、および BizTalk Server で TIBCO Rendezvous の BizTalk アダプターの制限事項"
-ms.custom: 
+title: TIBCO Rendezvous アダプターのインストール、スキーマ、および制限事項 |Microsoft ドキュメント
+description: インストール、スキーマの生成、および BizTalk Server で TIBCO Rendezvous の BizTalk アダプターの制限事項
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6404e7e-f671-4c57-a222-0bbe7cbc334f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013601"
 ---
 # <a name="install-schemas-and-limitations-of-the-tibco-rendezvous-adapter"></a>インストール、スキーマ、および、TIBCO Rendezvous アダプターの制限事項
 

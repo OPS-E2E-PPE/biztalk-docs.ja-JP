@@ -1,14 +1,14 @@
 ---
-title: "ポリシーと使用状況情報を監視 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーと使用状況情報を監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c0d2fd0-e65f-4c96-a5f5-81c9afc9c04e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008715"
 ---
 # <a name="monitoring-policies-and-usage-information"></a>ポリシーと使用状況情報の監視
 SOA サービス マネージャーでは、作成と監視ポリシーを編集できるようにするメカニズムを提供します。 たとえば、図 1 には、ポリシー テンプレートを適用して、アプリケーションの監視をアクティブ化の画面が表示されます。  

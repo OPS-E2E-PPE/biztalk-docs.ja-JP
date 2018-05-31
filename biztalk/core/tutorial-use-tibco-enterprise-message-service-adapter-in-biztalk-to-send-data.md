@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用してデータを送信する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1912d594-3839-4e04-bc40-93bd7cc0b309
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010683"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-enterprise-message-service-to-send-data"></a>チュートリアル: BizTalk Adapter for TIBCO Enterprise Message Service を使用したデータの送信
 BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO システムにデータを送信できます。 このチュートリアルでは、これを示す SDK サンプルについて説明します。  
@@ -91,7 +92,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO
   
      プロパティの詳細については、次を参照してください。 [TIBCO Enterprise メッセージ サービス送信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-send-handlers.md)です。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  選択、 **XML Transmit**パイプラインで使用可能なパイプラインの一覧から、**送信パイプライン**ドロップダウン リスト をクリック**OK**です。  
   
@@ -117,7 +118,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO
   
 5.  用に作成したフォルダーの場所を入力、**受信フォルダー**プロパティをクリック**OK**です。  
   
-6.  選択**[xmlreceive]**で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
+6.  選択 **[xmlreceive]** で使用可能なパイプラインの一覧から、**受信パイプライン**ドロップダウン リスト ボックスし、をクリックして**OK**です。  
   
 7.  受信場所を右クリックし、をクリックして**を有効にする**です。  
   

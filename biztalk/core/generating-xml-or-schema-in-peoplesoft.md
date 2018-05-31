@@ -1,11 +1,11 @@
 ---
-title: "PeopleSoft で XML またはスキーマを生成する |Microsoft ドキュメント"
-ms.custom: 
+title: PeopleSoft で XML またはスキーマを生成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - generating schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - generating XML
 - XML, generating
 ms.assetid: adfe2936-0dc2-42d2-b26a-718f8cc57eff
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246690"
 ---
 # <a name="generating-xml-or-schema-in-peoplesoft"></a>PeopleSoft での XML またはスキーマの生成
 次の手順では、PeopleSoft Enterprise を使用して、XML ファイルを作成し、PeopleSoft イベントをトリガーする方法について説明します。 これを行うには、PeopleSoft 環境の一部を変更します。 この変更によって XML ファイルがアクティブ化され、オーケストレーションで監視対象に設定したファイル フォルダーに送信されます。 その後、BizTalk Server で、XML をインポートしてスキーマを生成します。  
@@ -35,9 +36,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  **場所**画面で、次の情報を入力します。  
   
-    -   **ID:**入力**共有**です。  
+    -   **ID:** 入力**共有**です。  
   
-    -   **Location Code:**で始まるコードを入力`WKLOC`です。  
+    -   **Location Code:** で始まるコードを入力`WKLOC`です。  
   
      ![](../core/media/psadapter-18-task-sharesearch.gif "PSAdapter_18_Task_ShareSearch")  
   

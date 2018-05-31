@@ -1,14 +1,14 @@
 ---
-title: "TIBCO Rendezvous のデータ型のマッピングの送信ハンドラーの |Microsoft ドキュメント"
-ms.custom: 
+title: TIBCO Rendezvous のデータ型のマッピングの送信ハンドラーの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa1a9233-8781-45a8-9c55-a18ecaa0f456
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015241"
 ---
 # <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a>TIBCO Rendezvous での送信ハンドラーのデータ型マッピング
 XML スキーマの種類は、TIBCO Rendezvous に型情報 (xsi:type=) が提供されている場合にのみ、TIBCO Rendezvous の型にマップできます。 サポートされない型はすべて、可能な場合は、文字列にマップされます。 マップできない場合、またはポート構成でこのオプションが無効である場合は、エラーが生成されます。  

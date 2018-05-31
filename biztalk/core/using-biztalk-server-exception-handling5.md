@@ -1,15 +1,15 @@
 ---
-title: "例外処理を TIBCO EMS 追加 |Microsoft ドキュメント"
-description: "BizTalk Server で、TIBCO EMS アダプターを使用して、オーケストレーションの例外の処理の概要"
-ms.custom: 
+title: 例外処理を TIBCO EMS 追加 |Microsoft ドキュメント
+description: BizTalk Server で、TIBCO EMS アダプターを使用して、オーケストレーションの例外の処理の概要
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4471f7b7-4a50-4d99-ad01-94712ce162fe
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013097"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>BizTalk Server 例外処理を使用します。
 

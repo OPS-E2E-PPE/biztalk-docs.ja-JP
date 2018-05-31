@@ -17,7 +17,7 @@ helpviewer_keywords:
 - right-justified string values
 - strings, right-justified
 ms.assetid: 23d54731-b2b9-4610-a533-e041237e0bb3
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22246370"
 ---
 # <a name="handling-string-values"></a>文字列値の処理
 このトピックでは、一部の文字列引数を右揃え (および左側に埋め込み) で構成する方法について説明します。  
