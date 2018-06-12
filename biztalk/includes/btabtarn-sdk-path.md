@@ -1,0 +1,1 @@
+<span data-ttu-id="e80e2-101">\<*ドライブ*\>\Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\</span><span class="sxs-lookup"><span data-stu-id="e80e2-101">\<*drive*\>\Program Files (x86)\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\\</span></span>
