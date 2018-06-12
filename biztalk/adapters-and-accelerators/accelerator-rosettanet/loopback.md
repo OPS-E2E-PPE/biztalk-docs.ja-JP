@@ -1,11 +1,11 @@
 ---
-title: "ループバック |Microsoft ドキュメント"
-ms.custom: 
+title: ループバック |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, 0A1 agreements
@@ -23,15 +23,16 @@ helpviewer_keywords:
 - syntax [loopbacks]
 - agreements, Loopback utility
 ms.assetid: b4ebbdac-05be-4dfc-a133-6b752994e85a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23c2f18d8422440f9a40645642787723642f3ee6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b4fcd620ff90a4ca1650e4a93ad05194c1749774
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855653"
 ---
 # <a name="loopback"></a>ループバック
 home-to-partner アグリーメントのミラー コピーであるループバック アグリーメントが自動的に生成されるようにするには、ループバック ユーティリティを使用します。 このユーティリティを使用すると、1 台のコンピューターで home-to-partner と partner-to-home のメッセージ交換を実行できます。 このユーティリティは、0A1 メッセージの有無にかかわらず使用できます。 ループバック アグリーメントは、アクション メッセージ (非 0A1) アグリーメントと 0A1 アグリーメントのどちらに対しても作成できます。  
@@ -39,7 +40,7 @@ home-to-partner アグリーメントのミラー コピーであるループバ
  このユーティリティは、ホーム組織を送信者のロールに登録したり、登録を解除したりするためにも使用できます。 ユーティリティを使用して、ホーム組織を有効にする、2 つの送信ポートが作成されます\<ホーム\>です。Async および\<ホーム\>です。組織が、パートナーとの通信に使用する同期します。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*\>\ Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\  
+ \<*ドライブ*\>\ Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\  
   
 ## <a name="running-loopback"></a>ループバックの実行  
   
@@ -47,7 +48,7 @@ home-to-partner アグリーメントのミラー コピーであるループバ
   
 1.  コマンド プロンプトを開きます。  
   
-2.  移動\<*ドライブ*\>\ Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\です。  
+2.  移動\<*ドライブ*\>\ Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\です。  
   
 3.  コマンド プロンプトで次のように入力します。**ループバック**、必須と適切なスイッチを入力して、ENTER キーを押します。  
   
@@ -61,18 +62,18 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
 ## <a name="syntax-description"></a>構文の説明  
  次の表で、ループバック ユーティリティが使用する構文の各要素について説明します。  
   
-|**構文**|**Description**|  
+|**構文**|**description**|  
 |----------------|---------------------|  
-|**有効にします。**|<home_organization> で指定された組織を送信者ロールとして登録します。 2 つの送信ポートを作成\<ホーム\>です。Async および\<ホーム\>です。パートナーが、ホーム組織への通信に使用する同期します。|  
-|**無効にします。**|送信者ロールとしてのホーム組織の登録を解除します。|  
+|**enable**|<home_organization> で指定された組織を送信者ロールとして登録します。 2 つの送信ポートを作成\<ホーム\>です。Async および\<ホーム\>です。パートナーが、ホーム組織への通信に使用する同期します。|  
+|**disable**|送信者ロールとしてのホーム組織の登録を解除します。|  
 |**home_organization**|送信者ロールとして登録する (または登録解除する) 組織。|  
-|**ミラー**|指定されたアグリーメントに基づいてループバック アグリーメントを作成\< **agreement_name**\>です。|  
-|**非ミラー化します。**|指定されたアグリーメントに基づいてループバック アグリーメントを削除\< **agreement_name\>**です。|  
+|**mirror**|指定されたアグリーメントに基づいてループバック アグリーメントを作成\< **agreement_name**\>です。|  
+|**非ミラー化します。**|指定されたアグリーメントに基づいてループバック アグリーメントを削除\< **agreement_name\>** です。|  
 |**agreement_name**|ループバック シナリオでミラー化または非ミラー化するアグリーメント。|  
-|**NoF**|セット、 **0A1 アグリーメント**をループバック ユーティリティによってミラー化されたアクション メッセージ アグリーメントのプロパティ\<0A1_agreement\>です。 A **/NoF**のみが含まれているループバック コマンドにスイッチを追加できます、 **ミラー/**スイッチします。|  
+|**NoF**|セット、 **0A1 アグリーメント**をループバック ユーティリティによってミラー化されたアクション メッセージ アグリーメントのプロパティ\<0A1_agreement\>です。 A **/NoF**のみが含まれているループバック コマンドにスイッチを追加できます、 **ミラー/** スイッチします。|  
 |**0A1_agreement**|agreement_name のミラー アグリーメントによって使用される 0A1 アグリーメント。 このアグリーメントは、応答側 0A1 アグリーメントをミラー化することによって生成されます。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  ループバック ユーティリティは、ループバック アグリーメントの作成におけるロールを切り替えます。 ループバック ユーティリティを実行すると、元のアグリーメントのホーム組織は、ループバック アグリーメントでは取引先組織になります。 同様に、元のアグリーメントの取引先組織は、ループバック アグリーメントではホーム組織になります。 ループバック ユーティリティは、ホーム ロール プロパティの設定も切り替えます。 このユーティリティを実行すると、元のアグリーメントで開始側だったホーム ロール プロパティは応答側になり、応答側だったホーム ロール プロパティは開始側になります。 その他のプロパティはどれも変化しません。  
   
  ループバック ユーティリティでは、ループバック アグリーメントに元のアグリーメントと同じ名前が付けられ、先頭に "loopback:" が追加されます。 混乱を防ぐため、"loopback" で始まる名前をアグリーメントに付けないでください。  
@@ -130,7 +131,7 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
     |--------------|----------------|  
     |**自分の所属組織**|ホーム組織に設定します。|  
     |**パートナー組織**|取引先に設定します。|  
-    |**ホーム ロール**|設定**PIP Failure Notifier (開始側)**です。|  
+    |**ホーム ロール**|設定**PIP Failure Notifier (開始側)** です。|  
   
 3.  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールを使用して、ホーム組織に送信する応答側 0A1 メッセージのアグリーメントを作成し、次の操作を行います。  
   
@@ -138,15 +139,15 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
     |--------------|----------------|  
     |**自分の所属組織**|ホーム組織に設定します。|  
     |**パートナー組織**|取引先に設定します。|  
-    |**ホーム ロール**|設定**Failure Report Administrator (応答側)**です。|  
+    |**ホーム ロール**|設定**Failure Report Administrator (応答側)** です。|  
   
 4.  使用して[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールで、設定、 **0A1 アグリーメント**ホーム組織の開始側 0A1 アグリーメントの名前に、ホーム組織の要求アクション メッセージ アグリーメントのプロパティです。  
   
-5.  ループバック ユーティリティを使用して、取引先組織によって送信される開始側 0A1 メッセージのアグリーメントを作成します。 これを行うには、ホーム組織の応答側 0A1 アグリーメントをミラー化します。 新しい 0A1 アグリーメントでは、名前作成**ループバック:\<0A1 アグリーメント名\>**です。 `My organization` 、パートナーにプロパティが設定されている、`Partner organization`プロパティが、ホーム組織に設定され、`Home role`プロパティは**PIP Failure Notifier (開始側)**です。  
+5.  ループバック ユーティリティを使用して、取引先組織によって送信される開始側 0A1 メッセージのアグリーメントを作成します。 これを行うには、ホーム組織の応答側 0A1 アグリーメントをミラー化します。 新しい 0A1 アグリーメントでは、名前作成**ループバック:\<0A1 アグリーメント名\>** です。 `My organization` 、パートナーにプロパティが設定されている、`Partner organization`プロパティが、ホーム組織に設定され、`Home role`プロパティは**PIP Failure Notifier (開始側)** です。  
   
-6.  ループバック ユーティリティを使用して、取引先組織の応答側 0A1 メッセージのアグリーメントを作成します。 これを行うには、ホーム組織の開始側 0A1 アグリーメントをミラー化します。 新しい 0A1 アグリーメントでは、名前作成**ループバック:\<0A1 アグリーメント名\>**です。 `My organization` 、パートナーにプロパティが設定されている、`Partner organization`プロパティが、ホーム組織に設定され、`Home role`プロパティは**Failure Report Administrator (応答側)**です。  
+6.  ループバック ユーティリティを使用して、取引先組織の応答側 0A1 メッセージのアグリーメントを作成します。 これを行うには、ホーム組織の開始側 0A1 アグリーメントをミラー化します。 新しい 0A1 アグリーメントでは、名前作成**ループバック:\<0A1 アグリーメント名\>** です。 `My organization` 、パートナーにプロパティが設定されている、`Partner organization`プロパティが、ホーム組織に設定され、`Home role`プロパティは**Failure Report Administrator (応答側)** です。  
   
-7.  ループバック ユーティリティを使用して、取引先組織の応答アクション メッセージのアグリーメントを作成します。 同じコマンドで、[0A1 アグリーメント] プロパティを取引先の応答側 0A1 アグリーメントに設定する必要があります。 ホーム組織の要求アクション メッセージ アグリーメントをミラー化を使用して、これを行う、 **/NoF**スイッチと取引先の応答側 0A1 アグリーメントの名前。 新しい応答アクション メッセージ アグリーメントでは、名前作成**ループバック:\<契約名\>**です。 `My organization` プロパティは取引先に設定され、"0A1 アグリーメント" プロパティは取引先の応答側 0A1 アグリーメントに設定されます。  
+7.  ループバック ユーティリティを使用して、取引先組織の応答アクション メッセージのアグリーメントを作成します。 同じコマンドで、[0A1 アグリーメント] プロパティを取引先の応答側 0A1 アグリーメントに設定する必要があります。 ホーム組織の要求アクション メッセージ アグリーメントをミラー化を使用して、これを行う、 **/NoF**スイッチと取引先の応答側 0A1 アグリーメントの名前。 新しい応答アクション メッセージ アグリーメントでは、名前作成**ループバック:\<契約名\>** です。 `My organization` プロパティは取引先に設定され、"0A1 アグリーメント" プロパティは取引先の応答側 0A1 アグリーメントに設定されます。  
   
 ## <a name="see-also"></a>参照  
  [ユーティリティ](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   

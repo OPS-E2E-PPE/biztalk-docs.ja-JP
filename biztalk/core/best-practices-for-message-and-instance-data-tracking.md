@@ -1,25 +1,26 @@
 ---
-title: "メッセージとインスタンス データ追跡のベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージとインスタンス データ追跡のベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HAT, best practices
 - best practices, HAT
 ms.assetid: 2ac5c87b-2059-4912-9cec-2ae4eaac56df
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a6f673b0a70903575918eb87dc4bd8edc9841e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 680958d2950edffeaa56c7c3b8d7f8da40967173
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34849018"
 ---
 # <a name="best-practices-for-message-and-instance-data-tracking"></a>メッセージとインスタンス データ追跡のベスト プラクティス
 履歴および追跡データを使用するためのベスト プラクティスを次に示します。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **必要に応じて、ビジネス ニーズに追跡を構成します。**  
   
-    -   履歴データおよび追跡データを表示するためには、BizTalk Server 管理コンソールを使用して追跡を構成しておく必要があります。 追跡オプションを有効または無効にする場合は、いくつかの注意事項があります。 追跡するデータが多いと、それだけ早く、BizTalk 追跡 (BizTalkDTADb) データベースのサイズが肥大化し、実行時のパフォーマンスに悪影響が生じます。 詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用した追跡構成](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)です。  
+    -   履歴データおよび追跡データを表示するためには、BizTalk Server 管理コンソールを使用して追跡を構成しておく必要があります。 追跡オプションを有効または無効にする場合は、いくつかの注意事項があります。 追跡するデータが多いと、それだけ早く、BizTalk 追跡 (BizTalkDTADb) データベースのサイズが肥大化し、実行時のパフォーマンスに悪影響が生じます。 詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用した追跡構成](http://msdn.microsoft.com/49b7f9d3-60b5-41bd-ba8b-029253926bef)です。  
   
 -   **適切なトラブルシューティングのための追跡の種類を選択または監査**  
   
@@ -53,4 +54,4 @@ ms.lasthandoff: 09/20/2017
     -   追跡を有効にする場合は、データベースのサイズが大きくなりすぎないように、BizTalk 追跡データベースのデータを定期的にアーカイブ/削除する必要があります。これにより、システムのパフォーマンスを最適な状態に維持することができます。 詳細については、次を参照してください。[アーカイブ化および BizTalk 追跡データベースを削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)です。  
   
 ## <a name="see-also"></a>参照  
- [追跡メッセージを表示し、インスタンス データ](../core/viewing-tracked-message-and-instance-data.md)
+ [追跡メッセージおよびインスタンス データの表示](../core/viewing-tracked-message-and-instance-data.md)

@@ -1,11 +1,11 @@
 ---
-title: "手順 7: サンプル LOB メッセージの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: サンプル LOB メッセージの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, LOB
@@ -13,22 +13,23 @@ helpviewer_keywords:
 - creating, LOB messages
 - LOBs, creating messages
 ms.assetid: 3023bbc0-5bc4-4e5a-a345-c3253874f0d3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1246f56615381d2627db3058dc821ba85bf8b74d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7f4bb518217a3fac3f42b60daccbfedc51ee15c0
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855493"
 ---
 # <a name="step-7-create-a-sample-lob-message"></a>手順 7: サンプル LOB メッセージを作成します。
 ここでは、LOB アプリケーション ユーティリティを使用して、サンプルの基幹業務 (LOB) メッセージを作成します。  
   
 ### <a name="to-create-a-sample-message-using-the-lob-application-utility"></a>LOB アプリケーション ユーティリティを使用してサンプル メッセージを作成するには  
   
-1.  [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk フォルダーをダブルクリックし、**LOBApplication.exe**です。  
+1.  [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動\<*ドライブ*\>: \Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk フォルダーをダブルクリック**LOBApplication.exe**です。  
   
 2.  **LOB Application**  ダイアログ ボックスで、次の操作します。  
   
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
     |**取引先名**|型**パートナー**です。|  
     |**PIP の名前**|型**0c1**です。|  
     |**[PIP Version]**|型**R01.02**です。|  
-    |**[ファイル名]**|省略記号ボタン (**.**) に移動する\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobapplication\sampleinstances です。 選択**[0c1 request.xml]**クリックして、ファイルの一覧から**開く**です。|  
+    |**[ファイル名]**|省略記号ボタン (**.**) に移動する\<*ドライブ*:\>\Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobapplication\sampleinstances. 選択 **[0c1 request.xml]** クリックして、ファイルの一覧から**開く**です。|  
     |**メッセージのカテゴリ**|選択**アクション**ドロップダウン リストからです。|  
   
 3.  **LOB Application**ダイアログ ボックスで、をクリックして**Submit Message**です。  

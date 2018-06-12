@@ -1,11 +1,11 @@
 ---
-title: "PIP 実装 |Microsoft ドキュメント"
-ms.custom: 
+title: PIP 実装 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PIPs
@@ -23,18 +23,19 @@ helpviewer_keywords:
 - DTDs, XSDs
 - schemas, XSDs
 ms.assetid: 0d964223-e0b6-4377-b26a-5fdc89ec81f4
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9eeadda11d70998eff676c38a1d21e618acd2762
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ef7ab139b7efe94df33f393554814c8f7e59efcb
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855549"
 ---
 # <a name="pip-implementation"></a>PIP の実装
-RosettaNet Partner Interface Process (Pip) は、サプライ チェーン内の取引先間のビジネス プロセスを定義します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]一連の Pip のボックスのことができますを作成して Pip を追加します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]RosettaNet 組織によって定義されたすべての Pip をサポートしています。  
+RosettaNet Partner Interface Process (Pip) は、サプライ チェーン内の取引先間のビジネス プロセスを定義します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 一連の Pip のボックスのことができますを作成して Pip を追加します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RosettaNet 組織によって定義されたすべての Pip をサポートしています。  
   
  詳細については、次を参照してください。 [RosettaNet Pip](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md)です。  
   
@@ -44,7 +45,7 @@ RosettaNet Partner Interface Process (Pip) は、サプライ チェーン内の
 > [!NOTE]
 >  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、最近 RosettaNet 組織によって発行された、XSD 仕様を使用する次世代の PIP もサポートします。  
   
- 新しい PIP を実装するためには、PIP の DTD を XSD へ変換する必要があります。 ダウンロードすることで、RosettaNet の Web サイトから PIP に関連付けられている DTD [http://go.microsoft.com/fwlink/?linkid=33859](http://go.microsoft.com/fwlink/?linkid=33859)です。 次に、PIP に基づく [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] プロセス構成プロファイルを作成します。 詳細については、次を参照してください。[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)です。  
+ 新しい PIP を実装するためには、PIP の DTD を XSD へ変換する必要があります。 ダウンロードすることで、RosettaNet の Web サイトから PIP に関連付けられている DTD [ http://go.microsoft.com/fwlink/?linkid=33859](http://go.microsoft.com/fwlink/?linkid=33859)です。 次に、PIP に基づく [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] プロセス構成プロファイルを作成します。 詳細については、次を参照してください。[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)です。  
   
  既存のプロファイルに基づいて、新しいプロセス構成プロファイルを作成できます。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)です。 1 つのプロセス構成プロファイルに基づいて、同じパートナー間で複数のアグリーメントを作成できます。 ただし、アクティブ化できるアグリーメントは一度に 1 つだけです。 作成し、アグリーメントをアクティブ化する、次を参照してください。[を作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)です。  
   
@@ -59,7 +60,7 @@ RosettaNet Partner Interface Process (Pip) は、サプライ チェーン内の
 -   RNIF 1.1 および RNIF 2.01 のすべてのシグナル メッセージの Service Content  
   
 ## <a name="sample-schemas"></a>サンプル スキーマ  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]セットアップに pip セットがインストール\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\schemas です。 これらはサンプルとしてのみ使用します。 実際に使用する前に、これらのスキーマを公開された最新の RosettaNet PIP 仕様およびメッセージ ガイドラインと照らし合わせることを強くお勧めします。 BTARN は、すべての RosettaNet PIP の実装をサポートします。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] セットアップに pip セットがインストール\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\schemas です。 これらはサンプルとしてのみ使用します。 実際に使用する前に、これらのスキーマを公開された最新の RosettaNet PIP 仕様およびメッセージ ガイドラインと照らし合わせることを強くお勧めします。 BTARN は、すべての RosettaNet PIP の実装をサポートします。  
   
 ## <a name="element-level-constraints-in-btarn"></a>BTARN の要素レベルの制約  
  BTARN では、PIP メッセージ ガイドライン文書で指定されている要素レベルの制約をプロセス構成の設定として実装します。 ランタイム コンポーネントはプロセス構成を使用して、特定の PIP の処理方法を決定します。  

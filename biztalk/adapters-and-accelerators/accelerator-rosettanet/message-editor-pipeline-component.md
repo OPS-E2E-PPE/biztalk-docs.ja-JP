@@ -1,11 +1,11 @@
 ---
-title: "メッセージ エディタ パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ エディタ パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, Message Editor Pipeline Component
@@ -13,15 +13,16 @@ helpviewer_keywords:
 - messages, editing
 - pipelines, Message Editor Pipeline Component
 ms.assetid: f2b22dea-54e8-410b-868f-2978139f438b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f5877fe04a87a8387340c8e4b004300f41e609e
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7f7685fbf800ad69b20eda31e9b64cb75ec7c511
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855685"
 ---
 # <a name="message-editor-pipeline-component"></a>メッセージ エディター パイプライン コンポーネント
 このコンポーネントにより、送信または受信パイプライン内のマルチパート メッセージの一部を自動的に編集できます。 このコンポーネントは既存のパイプラインに追加して、通常の処理の一部として置換のためのパイプラインを設定します。  
@@ -35,11 +36,11 @@ ms.lasthandoff: 12/01/2017
   
 2.  **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
   
-3.  C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline Component、選択移動**[messageeditor.csproj]**、クリックして**開く**です。  
+3.  C:\Program Files (x86) \Microsoft BizTalk に移動\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline Component、選択 **[messageeditor.csproj]**、クリックして**開く**.  
   
 4.  Visual Studio コマンド プロンプトを起動します。  
   
-5.  コマンド プロンプトで、C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug に移動します。  
+5.  コマンド プロンプトで C:\Program Files (x86) \Microsoft BizTalk に移動\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug です。  
   
 6.  コマンド プロンプトで次のように入力します。 **sn-k MessageEditor.snk**キーを作成し、ENTER キーを押します。  
   
@@ -47,13 +48,13 @@ ms.lasthandoff: 12/01/2017
   
 8.  **MessageEditor プロパティ** ページで **署名** タブをクリックして**アセンブリに署名**チェック ボックスをオンします。  
   
-9. **厳密な名前キー ファイルを選択して**ドロップダウン、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug 参照および選択**MessageEditor.snk**  をクリックし、**開く**です。  
+9. **厳密な名前キー ファイルを選択して**ドロップダウン リストで、C:\Program Files (x86) \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug を選択**MessageEditor.snk**  をクリックし、**開く**です。  
   
 10. ソリューション エクスプ ローラーで右クリック**MessageEditor**、クリックして**ビルド**です。 出力ペインで、ビルドが成功したことを確認します。  
   
 11. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
   
-12. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug 移動を右クリックして**[microsoft.solutions.btarn.sdk.messageeditor.dll]**、クリックして**コピー**です。  
+12. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug 移動を右クリックして **[microsoft.solutions.btarn.sdk.messageeditor.dll]**、クリックして**コピー**です。  
   
 13. C:\Program files \microsoft BizTalk Server 2013\Pipeline コンポーネントに移動、右クリック**パイプライン コンポーネント**、順にクリック**貼り付け**です。  
   

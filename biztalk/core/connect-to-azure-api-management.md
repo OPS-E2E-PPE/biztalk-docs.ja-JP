@@ -1,23 +1,24 @@
 ---
-title: "API Management の SOAP エンドポイントを公開 |Microsoft ドキュメント"
-description: "BizTalk Wcf-basic HTTP を公開するには、使用する機能パック 1 および Feature Pack 2 は、API management 内で SOAP エンドポイントと場所を受信します。 BizTalk 管理コンソールを使用してこれを行うか、Azure ポータルで API Management 内で直接、エンドポイントを貼り付けますことができます。"
-ms.custom: 
+title: API Management の SOAP エンドポイントを公開 |Microsoft ドキュメント
+description: BizTalk Wcf-basic HTTP を公開するには、使用する機能パック 1 および Feature Pack 2 は、API management 内で SOAP エンドポイントと場所を受信します。 BizTalk 管理コンソールを使用してこれを行うか、Azure ポータルで API Management 内で直接、エンドポイントを貼り付けますことができます。
+ms.custom: ''
 ms.date: 11/21/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a87bfb40-7e6f-46aa-8ac7-db6d13ce7eb2
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: valrobb
 manager: anneta
-ms.openlocfilehash: 8ac1e824ad11ef18eac6deb1252101bbd1ec187a
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: eb716729dcdbac07c5b17cf267866cf282046a70
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848954"
 ---
 # <a name="publish-biztalk-soap-endpoints-in-api-management"></a>API Management で BizTalk SOAP エンドポイントを公開します。
 
@@ -28,10 +29,10 @@ Azure API Management 内でサービスとして、BizTalk SOAP エンドポイ�
 **以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]Feature Pack 2**Wcf-basichttp を公開する BizTalk 管理コンソールを使用して Azure API Management 内のエンドポイントと場所を受信します。 
 
 > [!TIP]
-> [API Management とは何ですか。](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)を理解し、Azure サービスに関する詳細については、優れたリソースです。
+> [API Management とは何ですか。](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)を理解し、Azure サービスに関する詳細については、優れたリソースです。
 
 ## <a name="prerequisites"></a>前提条件
-* 構成およびセットアップ[Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started)
+* 構成およびセットアップ[Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-get-started)
 * 作成、[仮想ネットワーク](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet)BizTalk コンピューターと、API Management インスタンス間で
 * インストール[Feature Pack 2](https://aka.ms/bts2016fp2) BizTalk Server で
 
@@ -58,7 +59,7 @@ Azure API Management 内でサービスとして、BizTalk SOAP エンドポイ�
 
     ![WSDL BizTalk から API を作成します。](../core/media/create-api-from-wsdl-biztalk.png)
 
-4. **[作成]**を選択します。
+4. **[作成]** を選択します。
 
 ## <a name="create-using-the-biztalk-administration"></a>BizTalk 管理コンソールを使用して作成します。
 
@@ -92,7 +93,7 @@ Azure API Management 内でサービスとして、BizTalk SOAP エンドポイ�
 3. 選択**発行**です。 成功すると、受信場所が表示されますで API Management でサービスとして、 [Azure ポータル](https://portal.azure.com)です。 
 
 ## <a name="do-more"></a>複数の操作を行います
-Azure API Management とは、多数の Logic Apps を含む、Azure のサービスによって使用される強力なサービスです。 API Management には、多くの機能、転送率の制限、クォータ、独自の Api へのアクセスを持つなど、キャッシュ、および詳細が含まれています。 参照してください[API Management は何ですか?](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)作業を開始します。
+Azure API Management とは、多数の Logic Apps を含む、Azure のサービスによって使用される強力なサービスです。 API Management には、多くの機能、転送率の制限、クォータ、独自の Api へのアクセスを持つなど、キャッシュ、および詳細が含まれています。 参照してください[API Management は何ですか?](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)作業を開始します。
 
 ## <a name="see-also"></a>参照
 [Feature Pack の構成](configure-the-feature-pack.md)

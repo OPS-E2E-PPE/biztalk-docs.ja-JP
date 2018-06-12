@@ -1,26 +1,27 @@
 ---
-title: "Message Repair and New Submission の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Message Repair and New Submission の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Message Repair and New Submission, configuring
 - A4SWIFT, Message Repair and New Submission
 - configuring, Message Repair and New Submission
 ms.assetid: e3e5e865-109c-469e-8b5b-c2675583d5a5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00e42bcfc5e744aa005e2e0a790dfc505b7a834d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d2cdbad69b017a3927d3912de42053072d061b6
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848970"
 ---
 # <a name="configuring-message-repair-and-new-submission"></a>Message Repair and New Submission を構成します。
 次のセクションの Message Repair and New Submission の機能を構成する手順を実行する必要があります[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]、次の図に示すようにします。  
@@ -33,12 +34,12 @@ ms.lasthandoff: 09/20/2017
   
 -   [証明書のインストール](../../adapters-and-accelerators/accelerator-swift/installing-certificates.md)  
   
--   [A4SWIFT のプロパティの設定](../../adapters-and-accelerators/accelerator-swift/setting-a4swift-properties.md)  
+-   [A4SWIFT プロパティの設定](../../adapters-and-accelerators/accelerator-swift/setting-a4swift-properties.md)  
   
--   [A4SWIFT のユーザーを追加して、Windows グループの更新](../../adapters-and-accelerators/accelerator-swift/adding-a4swift-users-and-updating-windows-groups.md)  
+-   [A4SWIFT ユーザーの追加と Windows グループの更新](../../adapters-and-accelerators/accelerator-swift/adding-a4swift-users-and-updating-windows-groups.md)  
   
--   [ロールや部門の追加](../../adapters-and-accelerators/accelerator-swift/adding-roles-and-departments.md)  
+-   [ロールと部門の追加](../../adapters-and-accelerators/accelerator-swift/adding-roles-and-departments.md)  
   
--   [A4SWIFT エンベロープ スキーマを展開します。](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-envelope-schemas.md)  
+-   [A4SWIFT エンベロープ スキーマの展開](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-envelope-schemas.md)  
   
--   [InfoPath フォーム テンプレートの発行](http://msdn.microsoft.com/en-us/2947e1ad-8c44-4cdb-bbde-7683e186b41b)
+-   [InfoPath フォーム テンプレートの発行](http://msdn.microsoft.com/2947e1ad-8c44-4cdb-bbde-7683e186b41b)

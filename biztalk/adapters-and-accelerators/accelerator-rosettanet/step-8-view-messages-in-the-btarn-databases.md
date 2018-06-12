@@ -1,26 +1,27 @@
 ---
-title: "手順 8: BTARN データベース内のメッセージの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8: BTARN データベース内のメッセージの表示 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, viewing
 - loopback tutorial, viewing messages
 - databases, viewing messages
 ms.assetid: c549670c-4428-483c-906c-eff163ddef9a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2324cca59a9104d8f40b5b6b69eca76af1004384
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 018bd2515dc2c363474c8058a861fd763cb73352
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855445"
 ---
 # <a name="step-8-view-messages-in-the-btarn-databases"></a>手順 8: BTARN データベース内のメッセージの表示
 ここでは、ループバック シナリオが正しく動作していることを確認するために、SQL クエリ アナライザーを使用して、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] データベースに格納されている基幹業務 (LOB) メッセージを表示します。  
@@ -52,14 +53,14 @@ ms.lasthandoff: 09/20/2017
 -   SQL 送信ポートがサブスクリプション フィルターに基づいてメッセージを取得します。 次に、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] DATA データベースの MessagesToLOB テーブルにメッセージを格納します。  
   
 > [!NOTE]
->  応答側パブリック応答側は受信確認または例外シグナル、発信側に戻れるの生成を担当します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]MessagesFromLOB テーブルには、シグナル メッセージは保存されません。 これは、LOB アプリケーションがシグナル メッセージを生成しないためです。 アクション メッセージはプライベート応答側を経由し、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によって MessagesToLOB テーブルに格納されます。  
+>  応答側パブリック応答側は受信確認または例外シグナル、発信側に戻れるの生成を担当します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MessagesFromLOB テーブルには、シグナル メッセージは保存されません。 これは、LOB アプリケーションがシグナル メッセージを生成しないためです。 アクション メッセージはプライベート応答側を経由し、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によって MessagesToLOB テーブルに格納されます。  
   
 > [!NOTE]
->  ダブル アクション Pip の応答側の LOB は応答メッセージを生成します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]開始側プロセスと同じプロセスを経由する MessagesFromLOB テーブルにドロップします。 この場合、開始側のパブリック開始側プロセスが、応答メッセージの受信確認または例外シグナルを送信します。  
+>  ダブル アクション Pip の応答側の LOB は応答メッセージを生成します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 開始側プロセスと同じプロセスを経由する MessagesFromLOB テーブルにドロップします。 この場合、開始側のパブリック開始側プロセスが、応答メッセージの受信確認または例外シグナルを送信します。  
   
 ### <a name="to-view-messages-in-the-btarn-databases"></a>BTARN データベース内のメッセージを表示するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2008 R2**、順にクリック**SQL Server Management Studio**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server\<バージョン\>**、クリックして**SQL ServerManagement Studio**です。  
   
 2.  [サーバー] ダイアログ ボックスへの接続でクリックして**接続**です。  
   
@@ -87,4 +88,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
  [ループバック](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)   
- [ループバック チュートリアル](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)
+ [ループバックのチュートリアル](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)

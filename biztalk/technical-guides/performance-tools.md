@@ -1,23 +1,24 @@
 ---
-title: "パフォーマンス ツール |Microsoft ドキュメント"
-description: "BizUnit、IOMeter、オーケストレーション プロファイラー、Log Parser、LoadGen、および SQL ツールを使用して BizTalk Server パフォーマンスの問題を調査します。"
-ms.custom: 
+title: パフォーマンス ツール |Microsoft ドキュメント
+description: BizUnit、IOMeter、オーケストレーション プロファイラー、Log Parser、LoadGen、および SQL ツールを使用して BizTalk Server パフォーマンスの問題を調査します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d26c17a-3eb9-41a5-b0dc-31b974bf3d9b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96bc63c4473d1a48b65024d4e9f7ee67bbb1d722
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: c5cff86a15aed9a131ed16086d1aebb33739f5f2
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848938"
 ---
 # <a name="performance-tools"></a>パフォーマンス ツール
 このトピックでは、BizTalk Server ソリューションのパフォーマンスの評価に使用できるツールについて説明します。 このトピックで説明するツールがあるさまざまな目的です。他のユーザーに、BizTalk Server ソリューションの特定の側面のパフォーマンスを評価する重点中に、エンド ツー エンドのパフォーマンスを評価中に設計されています。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 12/01/2017
 >  、Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。  
   
 ## <a name="iometer"></a>IOMeter  
- IOMeter は、ディスク I/O パフォーマンスの測定に使用されるオープン ソース ツールです。 参照してください[http://www.iometer.org](http://www.iometer.org/)です。
+ IOMeter は、ディスク I/O パフォーマンスの測定に使用されるオープン ソース ツールです。 参照してください[ http://www.iometer.org](http://www.iometer.org/)です。
   
 > [!NOTE]  
 >  、Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。  
@@ -71,7 +72,7 @@ Windows パフォーマンス ツールは、遅延プロシージャ呼び出�
 参照してください[Windows パフォーマンス分析](https://docs.microsoft.com/windows-hardware/test/weg/performance-tools)です。
   
 ## <a name="sql-server-tools-for-performance-monitoring-and-tuning"></a>パフォーマンス監視およびチューニング用の SQL Server ツール  
- SQL Server は、SQL Server のイベントを監視するためと、物理データベース デザインをチューニングするために、いくつかのツールを提供します。 参照してください[パフォーマンス監視およびチューニング ツール](https://docs.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)です。 
+ SQL Server は、SQL Server のイベントを監視するためと、物理データベース デザインをチューニングするために、いくつかのツールを提供します。 参照してください[パフォーマンス監視およびチューニング ツール](https://docs.microsoft.com/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)です。 
   
 ### <a name="sql-profiler"></a>SQL Profiler  
  SQL Server に送信される TRANSACT-SQL ステートメントをキャプチャする Microsoft SQL Server Profiler を使用することができ、これらのステートメントからの SQL Server の結果セットです。 SQL Server は SQL Server と緊密に統合されて、SQL Server プロファイル トレースを分析からの読み取りと SQL Server データベースへの書き込み時に BizTalk Server で発生する可能性がありますのある問題を分析するのに役立てることがあります。 参照してください[SQL Server Profiler を使用して](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler-templates-and-permissions)です。

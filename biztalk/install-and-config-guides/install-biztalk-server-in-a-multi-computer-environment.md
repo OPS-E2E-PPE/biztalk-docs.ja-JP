@@ -1,23 +1,24 @@
 ---
-title: "複数コンピューター環境で BizTalk Server のインストール |Microsoft ドキュメント"
-description: "マルチ サーバー インストールとセットアップ ガイダンス BizTalk と SQL Server が BAM を含む別のコンピューターにインストールされている場合"
-ms.custom: 
+title: 複数コンピューター環境で BizTalk Server のインストール |Microsoft ドキュメント
+description: マルチ サーバー インストールとセットアップ ガイダンス BizTalk と SQL Server が BAM を含む別のコンピューターにインストールされている場合
+ms.custom: ''
 ms.date: 11/30/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4d0e707-6b9e-49e1-9f17-19b3bac1229e
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26100e268e6dd657369bb044461c42a6ba0b5a9c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 22fd52c38d7c05fd91453900a26c048ba13bb9f4
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34849010"
 ---
 # <a name="install-biztalk-server-in-a-multi-computer-environment"></a>複数コンピューター環境での BizTalk Server のインストール
 
@@ -226,7 +227,7 @@ BAM スケール アウト警告の既存のトポロジを BizTalk Server 2013 
 4. 移行プログラム (bm.exe) が使用されているサーバーを除くすべてのサーバーへの通知サービスを登録してください。
 
     1. **プログラム**をクリックして**Microsoft SQL Server 2005**、 をクリックして**構成ツール**、クリックして**Notification Services コマンド プロンプト**.
-    2. コマンド プロンプトで次のように入力します。`nscontrol register -name BamAlerts -server <NS DB Server> -service -serviceusername "<NSServiceUserName>" -servicepassword "<NSServicePassword>"`
+    2. コマンド プロンプトで次のように入力します。 `nscontrol register -name BamAlerts -server <NS DB Server> -service -serviceusername "<NSServiceUserName>" -servicepassword "<NSServicePassword>"`
 
     これにより、Notification Services が、適切なデータベース (この情報は、nscontrol により、サービス コンピューターのレジストリに保持) にログオンします。
 
@@ -327,7 +328,7 @@ BAM スケール アウト警告の既存のトポロジを BizTalk Server 2013 
 ## <a name="databases-list"></a>データベースの一覧
 BizTalk Server で使用される SQL Server データベースの一覧を次に示します:
 
-| データ ストア名 | 既定のデータベース名 | Volume | 容量の増大 | Description | 
+| データ ストア名 | 既定のデータベース名 | Volume | 容量の増大 | 説明 | 
 | ---|---|---|---|---|
 | SSO データベース | SSODB | Low | Low | このエンタープライズ シングル サインオン資格情報データベースには、ユーザー名およびパスワードが安全に格納されます。| 
 | BizTalk 管理データベース | BizTalkMgmtDb | Low | Low | このデータベースには、BizTalk Server のすべてのインスタンスのメタ情報が一元的に保存されます。| 
@@ -342,7 +343,7 @@ BizTalk Server で使用される SQL Server データベースの一覧を次�
 
 #### <a name="sql-server-databases-used-by-sharepoint"></a>SharePoint で使用される SQL Server データベース
 
-| データ ストア名 | 既定のデータベース名 | Volume | 容量の増大 | Description | 
+| データ ストア名 | 既定のデータベース名 | Volume | 容量の増大 | 説明 | 
 |---|---|---|---|---|
 | Windows SharePoint Services 構成データベース | ユーザー定義 | Low | Low | このデータベースには、サーバーのすべてのグローバル設定が含まれます。 | 
 | Windows SharePoint Services コンテンツ データベース | ユーザー定義 | Medium | Medium | このデータベースには、すべてのサイト コンテンツ (一覧の項目やドキュメントなど) が格納されます。 | 
@@ -351,7 +352,7 @@ BizTalk Server で使用される SQL Server データベースの一覧を次�
 
 1. **Active Directory ドメイン サービス インストール**-複数サーバー環境に BizTalk Server のインストールに必要な最初の手順は、さまざまな BizTalk Server グループとアカウントの Active Directory ドメイン サービスをインストールします。 Active Directory ドメインを作成するには、以下を参照してください:
 
-    - Windows Server 2012 以降: [Active Directory ドメイン サービスのインストール](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+    - Windows Server 2012 以降: [Active Directory ドメイン サービスのインストール](https://docs.microsoft.com/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
     - Windows Server 2008 R2: [AD DS のインストールと削除のステップ バイ ステップ ガイド](https://technet.microsoft.com/library/cc755258(WS.10).aspx)
 
     > [!IMPORTANT]
@@ -388,7 +389,7 @@ BizTalk Server で使用される SQL Server データベースの一覧を次�
 - **クラスター ファイル システム**– を参照してください[ファイル システムをクラスター化する方法](http://go.microsoft.com/fwlink/p/?LinkId=189517)です。
 
 ## <a name="use-scom"></a>SCOM を使用します。
-Operations Manager 用には、BizTalk Server 管理パックは、BizTalk Server コンポーネントおよび複数のコンピューターで実行されているアプリケーションの包括的な検出と監視を提供します。 BizTalk Server 管理パックの詳細については、http://www.microsoft.com/download/details.aspx?id=39617 を参照してください。
+Operations Manager 用には、BizTalk Server 管理パックは、BizTalk Server コンポーネントおよび複数のコンピューターで実行されているアプリケーションの包括的な検出と監視を提供します。 BizTalk Server 管理パックの詳細については、次を参照してください。http://www.microsoft.com/download/details.aspx?id=39617です。
   
 ## <a name="next"></a>Next  
-[BizTalk を構成します。](configure-biztalk-server.md)
+[BizTalk の構成](configure-biztalk-server.md)

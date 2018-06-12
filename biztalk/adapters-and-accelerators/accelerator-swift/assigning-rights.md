@@ -1,11 +1,11 @@
 ---
-title: "権利の割り当て |Microsoft ドキュメント"
-ms.custom: 
+title: 権利の割り当て |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - user accounts, assigning permissions
@@ -18,15 +18,16 @@ helpviewer_keywords:
 - unparsed document library
 - security, permissions
 ms.assetid: cee44240-aa00-4080-9e7f-728b2421102b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a980fde1a4aea5d2e741fa576e55e659c0835f9d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a0d152442bf375c43d371e5ca5c3fcfb9dc5939
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848962"
 ---
 # <a name="assigning-rights"></a>権利の割り当てください。
 前のトピックで作成された各サイトのグループは、ドキュメント ライブラリでは、次のアクセス許可を許可する必要があります。  
@@ -49,4 +50,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="new-swift-mt-mx-messages-document-library"></a>新しい SWIFT MT/MX メッセージ ドキュメント ライブラリ  
  新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリは、MRSR サイトの展開時に作成されます。 新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリでは、新しい SWIFT XML テンプレートや「定型」メッセージを格納します。 これらのメッセージを使用して、新しい SWIFT InfoPath XML 形式で表されるメッセージを作成することができます。 これらのメッセージは、ドキュメント ライブラリにアップロード ボタンをクリックすると、ユーザーが新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリにアップロードされます。 さらに、指定したユーザーにアクセスを制限する SWIFT メッセージの新しいテンプレートを配布できます。 これを行うには、最初、新しいドキュメント ライブラリを作成して、ドキュメント ライブラリに必要な XML テンプレートをコピーできます。  
   
- FormPublish ツールの詳細については、次を参照してください。 [FormPublish ツール](http://msdn.microsoft.com/en-us/09a6ed31-5917-4776-9a5e-955af440cdac)「ツール」セクションでします。
+ FormPublish ツールの詳細については、次を参照してください。 [FormPublish ツール](http://msdn.microsoft.com/09a6ed31-5917-4776-9a5e-955af440cdac)「ツール」セクションでします。

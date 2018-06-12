@@ -1,21 +1,22 @@
 ---
-title: "Event Hubs アダプターを使用して |Microsoft ドキュメント"
-description: "BizTalk Server で Azure Event Hubs アダプターを使用してメッセージの送受信を行う"
-ms.custom: 
+title: Event Hubs アダプターを使用して |Microsoft ドキュメント
+description: BizTalk Server で Azure Event Hubs アダプターを使用してメッセージの送受信を行う
+ms.custom: ''
 ms.date: 11/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: plarsen
 manager: anneta
-ms.openlocfilehash: f394665a40b0a786ef6411b68ff8871e1a683614
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: cb9bbe26f07d87d7cccc084b6842b6d0974fdbb3
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848922"
 ---
 # <a name="event-hub-adapter-in-biztalk"></a>BizTalk でイベント ハブのアダプター
 
@@ -26,7 +27,7 @@ Azure Event Hubs は現在ストリーミング プラットフォーム、拡�
 
 ## <a name="prerequisites"></a>前提条件
 
-* 作成、 [Azure イベント ハブの名前空間とイベント ハブ](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create)
+* 作成、 [Azure イベント ハブの名前空間とイベント ハブ](https://docs.microsoft.com/azure/event-hubs/event-hubs-create)
 * 作成、[コンテナーと Azure blob ストレージ アカウント](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)
 * インストール[Feature Pack 2](https://aka.ms/bts2016fp2) BizTalk Server で
 
@@ -52,9 +53,9 @@ Azure Event Hubs は現在ストリーミング プラットフォーム、拡�
 
     |プロパティ|目的|  
     |---|---|  
-    | **名前空間** | Sb のようなものである、イベント ハブ名前空間を選択します//*youreventhubnamespace*.servicebus.windows.net/。 |
-    | **名前** | (これは、イベント ハブ名前空間内で作成した)、イベント ハブの名前を選択します。 |
-    | **既定のパーティション キー** | 省略可。 [Event Hub プログラミング ガイド](https://docs.microsoft.com/azure/event-hubs/event-hubs-programming-guide)このキーの詳細を提供します。 |
+    | **Namespace** | Sb のようなものである、イベント ハブ名前空間を選択します//*youreventhubnamespace*.servicebus.windows.net/。 |
+    | **Name** | (これは、イベント ハブ名前空間内で作成した)、イベント ハブの名前を選択します。 |
+    | **既定のパーティション キー** | 任意。 [Event Hub プログラミング ガイド](https://docs.microsoft.com/azure/event-hubs/event-hubs-programming-guide)このキーの詳細を提供します。 |
     | **[認証]** | **Namespace Access Signature** 、既定値は、イベント ハブ名前空間を作成するときに作成される RootManageSharedAccessKey が自動的に使用します。<br/><br/>**エンティティ Access Signature** SAS ポリシーが、イベント ハブのレベルで (、イベント ハブ名前空間レベルではなく) を作成することができます。 <br/><br/>[Event Hubs の機能概要](https://docs.microsoft.com/azure/event-hubs/event-hubs-features)の詳細について説明します。 |
 
     完了したらのプロパティが、次のようになります。 
@@ -62,7 +63,7 @@ Azure Event Hubs は現在ストリーミング プラットフォーム、拡�
     ![エンドポイントのプロパティ](../core/media/event-hub-endpoint-properties.png)
 
 
-5. 省略可。 構成、**メッセージ**プロパティです。 **ユーザー定義メッセージのプロパティの Namespace**値は、Event Hubs メッセージ プロパティにマップされる BizTalk メッセージのスキーマを表します。
+5. 任意。 構成、**メッセージ**プロパティです。 **ユーザー定義メッセージのプロパティの Namespace**値は、Event Hubs メッセージ プロパティにマップされる BizTalk メッセージのスキーマを表します。
 
 6. 選択**Ok**して変更を保存します。 
 
@@ -71,7 +72,7 @@ Azure Event Hubs は現在ストリーミング プラットフォーム、拡�
 
 単純なを使用するファイルの受信ポートと、Azure Event Hub にメッセージを送信する場所です。 
 
-1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所は、設定、**受信フォルダー**に **C:\Temp\In\**に、ファイル マスクを設定および **\*.xml**です。
+1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所は、設定、**受信フォルダー**に **C:\Temp\In\** に、ファイル マスクを設定および **\*.xml**です。
 2. Event Hub に送信ポートのプロパティを設定、**フィルター**に`BTS.ReceivePortName == FileReceivePort`です。
 3. テキスト エディターに貼り付け、ファイルに保存**EventHubMessage.xml**です。 これは、サンプル メッセージです。 
 
@@ -107,8 +108,8 @@ Azure Event Hubs は現在ストリーミング プラットフォーム、拡�
 
     |プロパティ|目的|  
     |---|---|  
-    | **名前空間** | Sb のようなものである、イベント ハブ名前空間を選択します//*youreventhubnamespace*.servicebus.windows.net/。 |
-    | **名前** | (これは、イベント ハブ名前空間内で作成した)、イベント ハブの名前を選択します。 |
+    | **Namespace** | Sb のようなものである、イベント ハブ名前空間を選択します//*youreventhubnamespace*.servicebus.windows.net/。 |
+    | **Name** | (これは、イベント ハブ名前空間内で作成した)、イベント ハブの名前を選択します。 |
     | **コンシューマー グループ** | Event Hub 内のコンシューマー グループを選択します。 既定のグループが自動的に作成されます。 <br/><br/>[Event Hubs の機能概要](https://docs.microsoft.com/azure/event-hubs/event-hubs-features)詳細を示します。 |
     | **[認証]** | **Namespace Access Signature** 、既定値は、イベント ハブ名前空間を作成するときに作成される RootManageSharedAccessKey が自動的に使用します。<br/><br/>**エンティティ Access Signature** SAS ポリシーが、イベント ハブのレベルで (、イベント ハブ名前空間レベルではなく) を作成することができます。 <br/><br/>[Event Hubs の機能概要](https://docs.microsoft.com/azure/event-hubs/event-hubs-features)の詳細について説明します。 |
 
@@ -129,8 +130,8 @@ Azure Event Hubs は現在ストリーミング プラットフォーム、拡�
 
     |プロパティ|目的|  
     |---|---|  
-    | **ユーザーの Namespace メッセージのプロパティを定義します。** | http://schemas.microsoft.com/BizTalk/EventHubAdapter/EventData/User は既定のスキーマが、別のスキーマを入力することができます。 この値は、Event Hubs メッセージ プロパティにマップされる BizTalk メッセージのスキーマを表します。 |
-    | **ユーザー定義プロパティを昇格させる** | 省略可。 たい場合は、これらのプロパティを昇格させることができます。 <br/><br/>**注**<br/>昇格させる必要があるプロパティが展開されている porperty スキーマを持っている必要があります*する前に*イベントを受信します。|
+    | **ユーザーの Namespace メッセージのプロパティを定義します。** | http://schemas.microsoft.com/BizTalk/EventHubAdapter/EventData/User 既定のスキーマが、別のスキーマを入力することができます。 この値は、Event Hubs メッセージ プロパティにマップされる BizTalk メッセージのスキーマを表します。 |
+    | **ユーザー定義プロパティを昇格させる** | 任意。 たい場合は、これらのプロパティを昇格させることができます。 <br/><br/>**注**<br/>昇格させる必要があるプロパティが展開されている porperty スキーマを持っている必要があります*する前に*イベントを受信します。|
 
 7. 選択**Ok**して変更を保存します。 
 
@@ -138,7 +139,7 @@ Azure Event Hubs は現在ストリーミング プラットフォーム、拡�
 
 単純な File 送信ポートを使用するには、Azure Event Hub からメッセージを受信します。 
 
-1. ファイル アダプターを使用して送信ポートを作成します。 送信ポートのプロパティ内で、設定、**コピー先フォルダー**に **C:\Temp\Out\**、設定と、および**ファイル名**に**%MessageID%.xml**.
+1. ファイル アダプターを使用して送信ポートを作成します。 送信ポートのプロパティ内で、設定、**コピー先フォルダー**に **C:\Temp\Out\**、設定と、および**ファイル名**に **%MessageID%.xml**.
 2. 送信ポートのプロパティは、ファイルで、設定、**フィルター**に`BTS.ReceivePortName == EHReceivePort`です。
 3. 開始イベント ハブは、場所とファイル送信ポートを受信します。
 4. コピー先フォルダー (c:\temp\out) にメッセージを探します。

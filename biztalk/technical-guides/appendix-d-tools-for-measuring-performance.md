@@ -1,22 +1,23 @@
 ---
-title: "付録 d: パフォーマンスを測定するためのツールの |Microsoft ドキュメント"
-ms.custom: 
+title: '付録 d: パフォーマンスを測定するためのツールの |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 024f4a08-f3fd-4786-8549-0da5463c0bb9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19953e021a2416f777d9b28c14b1eb8516c70c81
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f34e2bcda68a9ce2b56af5987f26f071378a52df
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848890"
 ---
 # <a name="appendix-d-tools-for-measuring-performance"></a>付録 d: ツールのパフォーマンス測定
 このトピックでは、監視し、BizTalk Server 環境のパフォーマンスを評価に使用できるいくつかのツールについて説明します。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 12/01/2017
 >  、Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。  
   
 ## <a name="iometer"></a>IOMeter  
- IOMeter は、ディスク I/O パフォーマンスの測定に使用されるオープン ソース ツールです。 参照してください[http://www.iometer.org](http://www.iometer.org/)です。
+ IOMeter は、ディスク I/O パフォーマンスの測定に使用されるオープン ソース ツールです。 参照してください[ http://www.iometer.org](http://www.iometer.org/)です。
   
 > [!NOTE]  
 >  、Microsoft では、このツールの使用はサポートされていないと、Microsoft はこのプログラムの適合性に関して保証を行いません。 このプログラムは、ユーザー自身の責任で使用してください。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 12/01/2017
  Pathping は、ターゲット ホストするための方法で 1 つまたは複数のルーター ホップでデータ損失の可能性に関する情報を提供します。 これを行うには、pathping は、パス内の各ルーターをインターネット制御メッセージ プロトコル (ICMP) パケットを送信します。 
   
 ## <a name="sql-server-tools-for-performance-monitoring-and-tuning"></a>パフォーマンス監視およびチューニング用の SQL Server ツール  
-SQL Server は、SQL Server のイベントを監視するためと、物理データベース デザインをチューニングするために、いくつかのツールを提供します。 参照してください[パフォーマンス監視およびチューニング ツール](https://docs.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)です。 
+SQL Server は、SQL Server のイベントを監視するためと、物理データベース デザインをチューニングするために、いくつかのツールを提供します。 参照してください[パフォーマンス監視およびチューニング ツール](https://docs.microsoft.com/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)です。 
   
 ### <a name="sql-profiler"></a>SQL Profiler  
  SQL Server に送信される TRANSACT-SQL ステートメントをキャプチャする Microsoft SQL Server Profiler を使用することができ、これらのステートメントからの SQL Server の結果セットです。 SQL Server は SQL Server と緊密に統合されて、SQL Server プロファイル トレースを分析からの読み取りと SQL Server データベースへの書き込み時に BizTalk Server で発生する可能性がありますのある問題を分析するのに役立てることがあります。 参照してください[SQL Server Profiler を使用して](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler-templates-and-permissions)です。
