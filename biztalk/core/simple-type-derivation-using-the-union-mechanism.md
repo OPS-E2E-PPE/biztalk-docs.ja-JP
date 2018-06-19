@@ -1,14 +1,14 @@
 ---
-title: "ユニオン メカニズムを使用した単純型派生 |Microsoft ドキュメント"
-ms.custom: 
+title: ユニオン メカニズムを使用した単純型派生 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e51ae390-78f5-4fb9-9163-2a8023aea1ec
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270378"
 ---
 # <a name="simple-type-derivation-using-the-union-mechanism"></a><span data-ttu-id="58cee-102">ユニオン メカニズムを使用した単純型の派生</span><span class="sxs-lookup"><span data-stu-id="58cee-102">Simple Type Derivation Using the Union Mechanism</span></span>
 <span data-ttu-id="58cee-103">ユニオン メカニズムを使用して既存の単純型から新しい単純型を派生させる場合、一連の型を指定することにより、対応する属性または要素の値に対し、複数の型を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="58cee-103">When you derive a new simple type from an existing simple type by using the union mechanism, you are specifying that the value for this attribute or element can be of more than one type, according to a list of types that you specify.</span></span> <span data-ttu-id="58cee-104">たとえば、1 つの属性または要素に対して、日付、時刻、日付/時刻のすべての型を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="58cee-104">For example, you can specify that an attribute or element value is either a date, a time, or a date/time value.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "EDIFACT のトランザクション セット APERAK-IFTRIN |Microsoft ドキュメント"
-ms.custom: 
+title: EDIFACT のトランザクション セット APERAK-IFTRIN |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f22e42cd-6acf-4c60-8d6e-a744f3296560
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010939"
 ---
 # <a name="edifact-transaction-sets-aperak-iftrin"></a><span data-ttu-id="14e67-102">EDIFACT トランザクション セット APERAK-IFTRIN</span><span class="sxs-lookup"><span data-stu-id="14e67-102">EDIFACT Transaction Sets APERAK-IFTRIN</span></span>
 <span data-ttu-id="14e67-103">このトピックでは、BizTalk Server でサポートされている EDIFACT トランザクション セットが一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="14e67-103">This topic lists the EDIFACT transaction sets that are supported by BizTalk Server.</span></span>  

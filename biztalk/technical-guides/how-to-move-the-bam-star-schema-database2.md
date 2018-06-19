@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a6832ac2-c8c5-4515-883e-26d125d6ace0
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010571"
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a><span data-ttu-id="46eaf-102">BAM スター スキーマ データベースを移動する方法</span><span class="sxs-lookup"><span data-stu-id="46eaf-102">How to Move the BAM Star Schema Database</span></span>
 <span data-ttu-id="46eaf-103">ここでは、BAM スター スキーマ データベースを他のサーバーに移動する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="46eaf-103">You can use this procedure to move the BAM Star Schema database to another server.</span></span>  <span data-ttu-id="46eaf-104">エンド ツー エンドのシナリオの観点から、BAM スター スキーマ データベースの移動にも 2 つの主要な手順が含まれます。</span><span class="sxs-lookup"><span data-stu-id="46eaf-104">From an end-to-end scenario perspective, moving the BAM Star Schema database involves two major steps:</span></span>  
@@ -111,7 +112,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="46eaf-159">SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。</span><span class="sxs-lookup"><span data-stu-id="46eaf-159">In SQL Server Business Intelligence Development Studio, create a new project.</span></span> <span data-ttu-id="46eaf-160">クリックして **ファイル**, 、 をクリックして **新規**, 、 をクリックし、 **プロジェクト**します。</span><span class="sxs-lookup"><span data-stu-id="46eaf-160">Click **File**, click **New**, and then click **Project**.</span></span>  
   
-3.  <span data-ttu-id="46eaf-161">**新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="46eaf-161">In the **New Project** dialog box, in the **Project Types** box, click **Business Intelligence Projects**.</span></span> <span data-ttu-id="46eaf-162">右側のウィンドウで、**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="46eaf-162">On the right pane, in the **Templates** box, click **Integration Services Project**, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="46eaf-161">**新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="46eaf-161">In the **New Project** dialog box, in the **Project Types** box, click **Business Intelligence Projects**.</span></span> <span data-ttu-id="46eaf-162">右側のウィンドウで、**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="46eaf-162">On the right pane, in the **Templates** box, click **Integration Services Project**, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="46eaf-163">**Integration Services プロジェクト**ダイアログ ボックスで、ソリューション エクスプ ローラーで右クリックし**SSIS パッケージ**、クリックして**既存のパッケージの追加**です。</span><span class="sxs-lookup"><span data-stu-id="46eaf-163">In the **Integration Services Project** dialog box, in Solution Explorer, right-click **SSIS Packages**, and then click **Add Existing Package**.</span></span>  
   
@@ -172,7 +173,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="46eaf-195">オブジェクト エクスプ ローラーで、**データベース**、展開**BAMAnalysis**、展開**データ ソース**、データ ソースをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="46eaf-195">In the Object Explorer, expand **Databases**, expand **BAMAnalysis**, expand **Data Sources**, and then double-click a data source.</span></span>  
   
-4.  <span data-ttu-id="46eaf-196">**データ ソースのプロパティ** ダイアログ ボックスで、省略記号ボタンをクリックして**(...)**に対して、**接続文字列**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="46eaf-196">In the **Data Source Properties** dialog box, click the ellipsis button **(…)** against the **Connection String** property.</span></span>  
+4.  <span data-ttu-id="46eaf-196">**データ ソースのプロパティ** ダイアログ ボックスで、省略記号ボタンをクリックして **(...)** に対して、**接続文字列**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="46eaf-196">In the **Data Source Properties** dialog box, click the ellipsis button **(…)** against the **Connection String** property.</span></span>  
   
 5.  <span data-ttu-id="46eaf-197">**接続マネージャー**  ダイアログ ボックスで、**サーバー名**ボックスを BAMStarSchema データベースをホストしているサーバーの名前を入力し、をクリックして**OK**をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="46eaf-197">In the **Connection Manager** dialog box, in the **Server name** box, enter the name of the server hosting the BAMStarSchema database, click **OK**, and then click **OK**.</span></span>  
   

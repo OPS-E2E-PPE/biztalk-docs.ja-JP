@@ -1,18 +1,18 @@
 ---
-title: "BAM アクティビティのイベント ストリームの実装 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM アクティビティのイベント ストリームの実装 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], about activities
 - activities [BAM]
 - BAM, activities
 ms.assetid: 94e6d9dd-93c3-4ab0-9de7-a860dd1e3406
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257346"
 ---
 # <a name="implementing-bam-activities-with-event-streams"></a><span data-ttu-id="32c71-102">イベント ストリームを使用した BAM アクティビティの実装</span><span class="sxs-lookup"><span data-stu-id="32c71-102">Implementing BAM Activities with Event Streams</span></span>
 <span data-ttu-id="32c71-103">BAM アクティビティは、注文書やローンの申し込みなど、ビジネスの作業単位を表します。</span><span class="sxs-lookup"><span data-stu-id="32c71-103">A BAM activity represents a unit of work in the business, such as purchase order or loan application.</span></span> <span data-ttu-id="32c71-104">アクティビティは、作業単位に関する履歴 (マイルストーン) とデータをビジネス エンド ユーザーまたはインフォメーション ワーカーに提示します。</span><span class="sxs-lookup"><span data-stu-id="32c71-104">The activity shows the history (milestones) and data about this unit of work to the business end user, or information worker.</span></span> <span data-ttu-id="32c71-105">たとえば、ローンの申し込みアクティビティには、"ローン承認済み" などのマイルストーンや、"申し込み者名" や "ローン金額" などのデータが含まれることがあります。</span><span class="sxs-lookup"><span data-stu-id="32c71-105">For example, a loan application activity might contain milestones such as “Loan approved” and data such as “Applicant name” and “Loan amount.”</span></span> <span data-ttu-id="32c71-106">BAM アクティビティは、抽象化レベルが高いため実際に実装されている IT インフラストラクチャから独立していますが、ビジネス プロセスに直接マップされることもあります。</span><span class="sxs-lookup"><span data-stu-id="32c71-106">BAM activities often map directly to a business process, although as a high-level abstraction an activity is independent of the actual implementation of your IT infrastructure.</span></span>  

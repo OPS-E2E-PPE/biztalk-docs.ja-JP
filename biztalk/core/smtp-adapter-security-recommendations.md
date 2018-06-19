@@ -1,18 +1,18 @@
 ---
-title: "SMTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SMTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SMTP adapters], security
 - SMTP adapters, security
 - security, SMTP adapters
 ms.assetid: 45f13744-a0eb-4b4e-85cd-6b862b384ad5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276498"
 ---
 # <a name="smtp-adapter-security-recommendations"></a><span data-ttu-id="649d4-102">SMTP アダプタのセキュリティに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="649d4-102">SMTP Adapter Security Recommendations</span></span>
 <span data-ttu-id="649d4-103">SMTP アダプタは、BizTalk Server を実行しているサーバーと他のアプリケーション間で簡易メール転送プロトコル (SMTP) を介して情報を交換するために使用します。</span><span class="sxs-lookup"><span data-stu-id="649d4-103">You use the SMTP adapter to exchange information between a server running BizTalk Server and other applications by means of the Simple Mail Transfer Protocol (SMTP) protocol.</span></span> <span data-ttu-id="649d4-104">BizTalk Server から他のアプリケーションにメッセージを送信するには、電子メール メッセージを作成し、指定した電子メール アドレスに配信します。</span><span class="sxs-lookup"><span data-stu-id="649d4-104">BizTalk Server can send messages to other applications by creating an e-mail message and delivering it to a specified e-mail address.</span></span> <span data-ttu-id="649d4-105">SMTP アダプタは、メッセージの送信のみに使用できます。</span><span class="sxs-lookup"><span data-stu-id="649d4-105">You can use the SMTP adapter only for sending messages.</span></span> <span data-ttu-id="649d4-106">SMTP アダプターに関する詳細については、次を参照してください。 [SMTP アダプター](../core/smtp-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="649d4-106">For more information about the SMTP adapter, see [SMTP Adapter](../core/smtp-adapter.md).</span></span>  

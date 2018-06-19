@@ -1,11 +1,11 @@
 ---
-title: "BizTalk のデザイン時ツール |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk のデザイン時ツール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Adapter Framework
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - BTARN, schemas
 - BizTalk Pipeline Designer
 ms.assetid: a981e167-f178-4fef-be0e-02fa15feffc2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006633"
 ---
 # <a name="biztalk-design-time-tools"></a><span data-ttu-id="db62d-102">BizTalk のデザイン時ツール</span><span class="sxs-lookup"><span data-stu-id="db62d-102">BizTalk Design-Time Tools</span></span>
 <span data-ttu-id="db62d-103">作業する開発者[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] BizTalk Server に組み込まれたデザイン時ツールのセットを使用できます。</span><span class="sxs-lookup"><span data-stu-id="db62d-103">Developers working on [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] can use the set of design-time tools built into BizTalk Server.</span></span> <span data-ttu-id="db62d-104">これらのツールが組み込ま[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="db62d-104">These tools are integrated into [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)].</span></span> <span data-ttu-id="db62d-105">詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。</span><span class="sxs-lookup"><span data-stu-id="db62d-105">For more information about [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] tools, see [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server Help.</span></span>  

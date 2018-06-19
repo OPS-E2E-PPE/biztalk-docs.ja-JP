@@ -1,11 +1,11 @@
 ---
-title: "プロパティ スキーマを非表示にしたりする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティ スキーマを非表示にしたりする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [schemas], showing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [schemas], hiding
 - managing [schemas], properties
 ms.assetid: e7cc1838-cc3f-4dd3-a7d1-e66e7ee82d0c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255474"
 ---
 # <a name="how-to-show-and-hide-property-schemas"></a><span data-ttu-id="d6d6a-102">プロパティ スキーマを表示または非表示にする方法</span><span class="sxs-lookup"><span data-stu-id="d6d6a-102">How to Show and Hide Property Schemas</span></span>
 <span data-ttu-id="d6d6a-103">このトピックでは、BizTalk Server 管理コンソールを使用してアプリケーションの Schemas フォルダーでプロパティ スキーマを表示または非表示にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d6d6a-103">This topic describes how to use the BizTalk Server Administration console to show and hide property schemas in the Schemas folder for an application.</span></span> <span data-ttu-id="d6d6a-104">プロパティ スキーマは、昇格させたプロパティを、インスタンス メッセージからメッセージ コンテキストへ、あるいは、メッセージ コンテキストからインスタンス メッセージへとコピーするプロセスを実行する、簡易版の BizTalk スキーマといえます。</span><span class="sxs-lookup"><span data-stu-id="d6d6a-104">A property schema is a simple version of a BizTalk schema that plays a role in the process of copying promoted properties back and forth between the instance message and the message context.</span></span> <span data-ttu-id="d6d6a-105">プロパティ スキーマを非表示にすると、ドキュメント スキーマのみが表示され、スキーマ ビューが簡略化されます。</span><span class="sxs-lookup"><span data-stu-id="d6d6a-105">You might want to hide property schemas to simplify the schema view, so that you only see document schemas.</span></span>  

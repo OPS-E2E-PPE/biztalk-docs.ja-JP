@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278226"
 ---
 # <a name="transforms-sendport-node"></a><span data-ttu-id="346a0-102">Transforms (SendPort ノード)</span><span class="sxs-lookup"><span data-stu-id="346a0-102">Transforms (SendPort Node)</span></span>
 <span data-ttu-id="346a0-103">バインド ファイルの SendPort ノードの Transforms ノードには、バインド ファイルと共にエクスポートされる一方向送信ポートの送信変換のコレクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="346a0-103">The Transforms node of the SendPort node of a binding file contains the collection of outbound transforms of a one way send port that is exported with the binding file.</span></span>  

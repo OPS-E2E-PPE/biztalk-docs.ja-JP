@@ -1,17 +1,17 @@
 ---
-title: "インストールして、HTTP フロント エンド サーバー上の BizTalk Server の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: インストールして、HTTP フロント エンド サーバー上の BizTalk Server の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP server, installing BizTalk Server
 - BizTalk Server, installing on HTTP servers
 ms.assetid: dc1b3675-483a-478f-b30d-62efb73ad13c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004411"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-http-front-end-servers"></a><span data-ttu-id="3c500-102">インストールして、HTTP フロント エンド サーバー上の BizTalk Server の構成</span><span class="sxs-lookup"><span data-stu-id="3c500-102">Installing and Configuring BizTalk Server on the HTTP Front-End Servers</span></span>
 <span data-ttu-id="3c500-103">インストールして MRSR サイトをホストするため、HTTP フロント エンド サーバーとして使用する BizTalk Server を構成する方法について説明し、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]テンプレート フォーム。</span><span class="sxs-lookup"><span data-stu-id="3c500-103">This section describes how to install and configure BizTalk Server to be used as the HTTP front-end server for hosting the MRSR site and the [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] template forms.</span></span>  

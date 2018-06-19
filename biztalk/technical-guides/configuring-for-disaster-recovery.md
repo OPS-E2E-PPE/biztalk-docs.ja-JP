@@ -1,14 +1,14 @@
 ---
-title: "災害復旧のための構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 災害復旧のための構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acdafe68-c8bf-4064-afca-6dfd22d15052
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010955"
 ---
 # <a name="configuring-for-disaster-recovery"></a><span data-ttu-id="a5c0a-102">災害復旧のための構成</span><span class="sxs-lookup"><span data-stu-id="a5c0a-102">Configuring for Disaster Recovery</span></span>
 <span data-ttu-id="a5c0a-103">既存のバックアップを拡張する BizTalk Server のログ配布機能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブです。</span><span class="sxs-lookup"><span data-stu-id="a5c0a-103">The BizTalk Server Log Shipping feature extends the existing Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job.</span></span> <span data-ttu-id="a5c0a-104">BizTalk Server のログ配布バックアップ ジョブによって生成されるバックアップ セットの系列を手動で復元する必要があるし、システム障害時のダウンタイムを短縮します。</span><span class="sxs-lookup"><span data-stu-id="a5c0a-104">BizTalk Server Log Shipping eliminates the need to manually restore a series of backup sets produced by the backup job, and reduces downtime in the event of a system failure.</span></span> <span data-ttu-id="a5c0a-105">BizTalk Server のログ配布は、BizTalk の障害復旧手順の重要なコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="a5c0a-105">BizTalk Server Log Shipping is a critical component for BizTalk disaster recovery procedures.</span></span>  

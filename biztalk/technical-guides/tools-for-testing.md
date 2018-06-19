@@ -1,14 +1,14 @@
 ---
-title: "テスト用ツール |Microsoft ドキュメント"
-ms.custom: 
+title: テスト用ツール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a9b71f02-86df-4b03-bd2c-4d4d2014db02
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009691"
 ---
 # <a name="tools-for-testing"></a><span data-ttu-id="50390-102">テスト用ツール</span><span class="sxs-lookup"><span data-stu-id="50390-102">Tools for Testing</span></span>
 <span data-ttu-id="50390-103">次の表の運用の準備に関連付けられているテストの実行に使用できるツールが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="50390-103">The table below lists tools that you can use to perform the testing associated with operational readiness of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

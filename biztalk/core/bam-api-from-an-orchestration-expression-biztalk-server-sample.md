@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションの式のサンプルから BAM API を |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの式のサンプルから BAM API を |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 341bc333-9bfc-484c-b431-9a71f9188792
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710985"
 ---
 # <a name="bam-api-from-an-orchestration-expression-biztalk-server-sample"></a><span data-ttu-id="f1881-102">オーケストレーション式からの BAM API (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="f1881-102">BAM API from an Orchestration Expression (BizTalk Server Sample)</span></span>
 <span data-ttu-id="f1881-103">このサンプルで示す方法。</span><span class="sxs-lookup"><span data-stu-id="f1881-103">This sample demonstrates how to:</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 02/28/2018
 -   <span data-ttu-id="f1881-106">追跡プロファイルを使用して追跡される BAM データと、BAM API を使用して追跡される BAM データの間の関係を作成する。</span><span class="sxs-lookup"><span data-stu-id="f1881-106">Create a relationship between BAM data that is tracked by using a tracking profile, and BAM data tracked by using the BAM API.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="f1881-107">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="f1881-107">Where to Find This Sample</span></span>  
- <span data-ttu-id="f1881-108">このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamFromExpression です。</span><span class="sxs-lookup"><span data-stu-id="f1881-108">You can find this sample at *\<Samples Path\>*\BAM\BamFromExpression.</span></span>  
+ <span data-ttu-id="f1881-108">このサンプルを見つけることができます*\<サンプル パス\>* \BAM\BamFromExpression です。</span><span class="sxs-lookup"><span data-stu-id="f1881-108">You can find this sample at *\<Samples Path\>* \BAM\BamFromExpression.</span></span>  
   
  <span data-ttu-id="f1881-109">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="f1881-109">The following table lists the files in this sample and describes their purpose.</span></span>  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="create-the-tracking-profile"></a><span data-ttu-id="f1881-134">追跡プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f1881-134">Create the tracking profile</span></span>  
   
-1.  <span data-ttu-id="f1881-135">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BAMFromExpression\Setup.bat です。</span><span class="sxs-lookup"><span data-stu-id="f1881-135">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\BAMFromExpression\Setup.bat.</span></span> <span data-ttu-id="f1881-136">Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。</span><span class="sxs-lookup"><span data-stu-id="f1881-136">Setup.bat initializes the BAM infrastructure for this sample, and deploys the BAM activity.</span></span>  
+1.  <span data-ttu-id="f1881-135">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BAMFromExpression\Setup.bat です。</span><span class="sxs-lookup"><span data-stu-id="f1881-135">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\BAMFromExpression\Setup.bat.</span></span> <span data-ttu-id="f1881-136">Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。</span><span class="sxs-lookup"><span data-stu-id="f1881-136">Setup.bat initializes the BAM infrastructure for this sample, and deploys the BAM activity.</span></span>  
   
 2.  <span data-ttu-id="f1881-137">**プログラム** > **Microsoft BizTalk Server**を右クリックして**追跡プロファイル エディター**、および**を管理者として実行**.</span><span class="sxs-lookup"><span data-stu-id="f1881-137">From your **Programs** > **Microsoft BizTalk Server**, right-click **Tracking Profile Editor**, and **Run as administrator**.</span></span>
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 02/28/2018
   
 13. <span data-ttu-id="f1881-160">ドラッグ、 **Send_1** 右側のウィンドウに図形 **送信** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="f1881-160">Drag the **Send_1** shape in the right pane to **Send** in the left pane.</span></span>  
   
-14. <span data-ttu-id="f1881-161">追跡プロファイルを保存*\<サンプル パス\>*\BAM\BamFromExpression\ BamFromExpression.btt です。</span><span class="sxs-lookup"><span data-stu-id="f1881-161">Save the tracking profile to *\<Samples Path\>*\BAM\BamFromExpression\ BamFromExpression.btt.</span></span>  
+14. <span data-ttu-id="f1881-161">追跡プロファイルを保存*\<サンプル パス\>* \BAM\BamFromExpression\ BamFromExpression.btt です。</span><span class="sxs-lookup"><span data-stu-id="f1881-161">Save the tracking profile to *\<Samples Path\>* \BAM\BamFromExpression\ BamFromExpression.btt.</span></span>  
   
 15. <span data-ttu-id="f1881-162">**ツール**  メニューのをクリックして **追跡プロファイルの適用**します。</span><span class="sxs-lookup"><span data-stu-id="f1881-162">On the **Tools** menu, click **Apply Tracking Profile**.</span></span>  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="run-this-sample"></a><span data-ttu-id="f1881-166">このサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="f1881-166">Run this sample</span></span>  
   
-<span data-ttu-id="f1881-167">ファイルをコピー *\<サンプル パス\>*に \BamFromExpression\InputMessage.xml *\<サンプル パス\>*\BamFromExpression\Input です。</span><span class="sxs-lookup"><span data-stu-id="f1881-167">Copy the file *\<Samples Path\>*\BamFromExpression\InputMessage.xml to *\<Samples Path\>*\BamFromExpression\Input.</span></span>  
+<span data-ttu-id="f1881-167">ファイルをコピー *\<サンプル パス\>* に \BamFromExpression\InputMessage.xml *\<サンプル パス\>* \BamFromExpression\Input です。</span><span class="sxs-lookup"><span data-stu-id="f1881-167">Copy the file *\<Samples Path\>* \BamFromExpression\InputMessage.xml to *\<Samples Path\>* \BamFromExpression\Input.</span></span>  
   
-<span data-ttu-id="f1881-168">約 10 秒後に、出力メッセージが表示されます*\<サンプル パス\>*\BamFromExpression\Output です。</span><span class="sxs-lookup"><span data-stu-id="f1881-168">In about 10 seconds the output message will appear in *\<Samples Path\>*\BamFromExpression\Output.</span></span>  
+<span data-ttu-id="f1881-168">約 10 秒後に、出力メッセージが表示されます*\<サンプル パス\>* \BamFromExpression\Output です。</span><span class="sxs-lookup"><span data-stu-id="f1881-168">In about 10 seconds the output message will appear in *\<Samples Path\>* \BamFromExpression\Output.</span></span>  
   
 ## <a name="view-the-bam-data"></a><span data-ttu-id="f1881-169">BAM データを表示します。</span><span class="sxs-lookup"><span data-stu-id="f1881-169">View the BAM data</span></span>  
   
@@ -116,9 +117,9 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="re-run-the-sample"></a><span data-ttu-id="f1881-187">このサンプルを再実行します。</span><span class="sxs-lookup"><span data-stu-id="f1881-187">Re-run the sample</span></span>  
   
-1.  <span data-ttu-id="f1881-188">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。</span><span class="sxs-lookup"><span data-stu-id="f1881-188">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\BamFromExpression\Cleanup.bat to remove the tracking profile and other BAM infrastructure.</span></span> 
+1.  <span data-ttu-id="f1881-188">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。</span><span class="sxs-lookup"><span data-stu-id="f1881-188">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\BamFromExpression\Cleanup.bat to remove the tracking profile and other BAM infrastructure.</span></span> 
   
-2.  <span data-ttu-id="f1881-189">実行*\<サンプル パス\>*\BAM\BamFromExpression\Setup.bat をサンプルをコンパイルして展開します。</span><span class="sxs-lookup"><span data-stu-id="f1881-189">Run *\<Samples Path\>*\BAM\BamFromExpression\Setup.bat to compile the sample and deploy it.</span></span>  
+2.  <span data-ttu-id="f1881-189">実行*\<サンプル パス\>* \BAM\BamFromExpression\Setup.bat をサンプルをコンパイルして展開します。</span><span class="sxs-lookup"><span data-stu-id="f1881-189">Run *\<Samples Path\>* \BAM\BamFromExpression\Setup.bat to compile the sample and deploy it.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="f1881-190">参照</span><span class="sxs-lookup"><span data-stu-id="f1881-190">See Also</span></span>  
  <span data-ttu-id="f1881-191">[ビジネス アクティビティ監視 (BizTalk Server Samples フォルダ)](../core/business-activity-monitoring-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="f1881-191">[Business Activity Monitoring (BizTalk Server Samples Folder)](../core/business-activity-monitoring-biztalk-server-samples-folder.md) </span></span>  

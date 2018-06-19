@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 267a8bc6-a0ab-4335-bc04-c22d5a56792f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22303002"
 ---
 # <a name="planning-for-performance"></a><span data-ttu-id="29edb-102">パフォーマンスの計画</span><span class="sxs-lookup"><span data-stu-id="29edb-102">Planning for Performance</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="29edb-103">アプリケーション プラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="29edb-103"> is an application platform.</span></span> <span data-ttu-id="29edb-104">またはではないだけサーバー製品開発者製品だけです。</span><span class="sxs-lookup"><span data-stu-id="29edb-104">It is not just a server product or just a developer product.</span></span> <span data-ttu-id="29edb-105">指向アーキテクチャのサービスを有効にして、ワークフロー、自動化する、エンタープライズ アプリケーション統合をビジネス プロセス管理システムを構築するために使用されるアプリケーション プラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="29edb-105">It is an application platform that is used to build business process management systems, to integrate enterprise applications, to automate workflows, and to enable service oriented architectures.</span></span>  

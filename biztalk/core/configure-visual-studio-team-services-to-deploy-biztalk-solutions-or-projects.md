@@ -1,17 +1,17 @@
 ---
 redirect_url: /biztalk/core/feature-pack-add-build-release-definitions/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
-title: "BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2555712a-dfe4-420e-9a61-1d1a6d98c322
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/09/2017
+ms.locfileid: "24054586"
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a><span data-ttu-id="b1013-102">BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services を構成します。</span><span class="sxs-lookup"><span data-stu-id="b1013-102">Configure Visual Studio Team Services to deploy BizTalk Server solutions or projects</span></span>
 <span data-ttu-id="b1013-103">自動的に展開する VSTS セットアップ[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="b1013-103">Set up VSTS to automatically deploy [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] projects.</span></span> 
@@ -78,13 +79,13 @@ ms.lasthandoff: 11/09/2017
 
     ![手順は必要ありませんの削除します。](../core/media/delete-steps-not-needed.png)
 
-10. <span data-ttu-id="b1013-137">**省略可能な**します。</span><span class="sxs-lookup"><span data-stu-id="b1013-137">**Optional**.</span></span> <span data-ttu-id="b1013-138">継続的な統合 (CI) を有効にする場合は、選択**トリガー**メニューのおよびチェックで**継続的インテグレーション (CI)**です。</span><span class="sxs-lookup"><span data-stu-id="b1013-138">If you want to enable Continous Integration (CI), select **Triggers** in the menu, and check **Continous integration (CI)**.</span></span>
+10. <span data-ttu-id="b1013-137">**省略可能な**します。</span><span class="sxs-lookup"><span data-stu-id="b1013-137">**Optional**.</span></span> <span data-ttu-id="b1013-138">継続的な統合 (CI) を有効にする場合は、選択**トリガー**メニューのおよびチェックで**継続的インテグレーション (CI)** です。</span><span class="sxs-lookup"><span data-stu-id="b1013-138">If you want to enable Continous Integration (CI), select **Triggers** in the menu, and check **Continous integration (CI)**.</span></span>
 
 <span data-ttu-id="b1013-139">次に、エージェントをインストール、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b1013-139">Next, install the agent on your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].</span></span> 
 
 ## <a name="install-the-agent"></a><span data-ttu-id="b1013-140">エージェントをインストールします。</span><span class="sxs-lookup"><span data-stu-id="b1013-140">Install the Agent</span></span>
 
-<span data-ttu-id="b1013-141">ソリューションが機能するには、ローカル コンピューター上のプライベート Windows エージェントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="b1013-141">For the solution to work, enable a private Windows Agent on your local machine.</span></span> <span data-ttu-id="b1013-142">思い出してください**、エージェントは、1 つだけにインストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]グループで**です。</span><span class="sxs-lookup"><span data-stu-id="b1013-142">Remember, **the agent must be installed on only one [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] in the group**.</span></span> 
+<span data-ttu-id="b1013-141">ソリューションが機能するには、ローカル コンピューター上のプライベート Windows エージェントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="b1013-141">For the solution to work, enable a private Windows Agent on your local machine.</span></span> <span data-ttu-id="b1013-142">思い出してください **、エージェントは、1 つだけにインストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]グループで**です。</span><span class="sxs-lookup"><span data-stu-id="b1013-142">Remember, **the agent must be installed on only one [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] in the group**.</span></span> 
 
 1. <span data-ttu-id="b1013-143">定義に、選択、**全般**(上部) のタブです。</span><span class="sxs-lookup"><span data-stu-id="b1013-143">In your definition, select the **General** tab (at the top).</span></span>
 2. <span data-ttu-id="b1013-144">**既定のエージェント キュー**プロパティを選択、**既定**一覧からエージェントです。</span><span class="sxs-lookup"><span data-stu-id="b1013-144">For the **Default agent queue** property, select the **Default** agent from the list.</span></span> 

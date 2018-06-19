@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279242"
 ---
 # <a name="transforms-receiveport-node"></a><span data-ttu-id="00337-102">Transforms (ReceivePort ノード)</span><span class="sxs-lookup"><span data-stu-id="00337-102">Transforms (ReceivePort Node)</span></span>
 <span data-ttu-id="00337-103">バインド ファイルの ReceivePort ノードの Transforms ノードには、バインド ファイルと共にエクスポートされる一方向受信ポートの受信変換のコレクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="00337-103">The Transforms node of the ReceivePort node of a binding file contains the collection of inbound transforms of a one way receive port that is exported with the binding file.</span></span>  

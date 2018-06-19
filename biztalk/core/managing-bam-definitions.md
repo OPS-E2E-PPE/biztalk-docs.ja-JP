@@ -1,11 +1,11 @@
 ---
-title: "BAM 定義を管理する |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 定義を管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM definitions]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [BAM], definitions
 - managing [BAM definitions], about managing BAM definitions
 ms.assetid: 7aba0e40-b8d3-4afc-9e4c-92392f1f6269
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262530"
 ---
 # <a name="managing-bam-definitions"></a><span data-ttu-id="a6c06-102">BAM 定義の管理</span><span class="sxs-lookup"><span data-stu-id="a6c06-102">Managing BAM Definitions</span></span>
 <span data-ttu-id="a6c06-103">BAM 定義は、BAM インフラストラクチャの一部であり、</span><span class="sxs-lookup"><span data-stu-id="a6c06-103">A BAM definition is part of the BAM infrastructure.</span></span> <span data-ttu-id="a6c06-104">追跡および集計するデータの定義、および追跡データに関するビジネス エンド ユーザー向けビューの定義を設定します。</span><span class="sxs-lookup"><span data-stu-id="a6c06-104">It defines the data to track and aggregate, as well as the business end user's view on the tracking data.</span></span> <span data-ttu-id="a6c06-105">このセクションのトピックでは、アクティビティ、ビュー、アイテム、警告など、BAM 定義の要素を管理するための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="a6c06-105">The topics in this section give procedures for managing the elements of BAM definitions, which include activities, views, artifacts, and alerts.</span></span>  

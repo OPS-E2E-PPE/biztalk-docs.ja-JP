@@ -1,11 +1,11 @@
 ---
-title: "BTARN 送信パイプライン |Microsoft ドキュメント"
-ms.custom: 
+title: BTARN 送信パイプライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Assembler
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - XML Preprocessor
 - messages, message flow
 ms.assetid: 88562132-0ea4-4b5a-9445-b69f6c84e5ea
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007523"
 ---
 # <a name="btarn-send-pipeline"></a><span data-ttu-id="fe78c-102">BTARN 送信パイプライン</span><span class="sxs-lookup"><span data-stu-id="fe78c-102">BTARN Send Pipeline</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="fe78c-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend パイプライン (RNIFSend.btp) で転送するための RosettaNet Implementation Framework (RNIF) メッセージを作成します。</span><span class="sxs-lookup"><span data-stu-id="fe78c-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] prepares a RosettaNet Implementation Framework (RNIF) message for transmission in the RNIFSend pipeline (RNIFSend.btp).</span></span> <span data-ttu-id="fe78c-104">送信パイプラインには、次のものが組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="fe78c-104">The send pipeline includes the following:</span></span>  

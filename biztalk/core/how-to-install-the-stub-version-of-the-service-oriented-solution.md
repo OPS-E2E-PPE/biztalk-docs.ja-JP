@@ -1,11 +1,11 @@
 ---
-title: "指向ソリューションのスタブ バージョンのサービスをインストールする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 指向ソリューションのスタブ バージョンのサービスをインストールする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IIS, installing virtual directories [service solutions]
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - service solution tutorial, building solutions
 - service solution tutorial, installing
 ms.assetid: 45de7681-4df0-47a4-a02c-509140423a1e
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010411"
 ---
 # <a name="how-to-install-the-stub-version-of-the-service-oriented-solution"></a><span data-ttu-id="61cc9-102">サービス指向ソリューションのスタブ バージョンのインストール方法</span><span class="sxs-lookup"><span data-stu-id="61cc9-102">How to Install the Stub Version of the Service Oriented Solution</span></span>
 <span data-ttu-id="61cc9-103">次の手順では、サービス指向ソリューションのスタブ バージョンをインストールするための事前準備を行う方法およびコンピューターにソリューションをインストールする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-103">The following steps describe how to prepare your computer before you install the stub version of the service oriented solution, and then how to install the solution on your computer.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  <span data-ttu-id="61cc9-114">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.</span><span class="sxs-lookup"><span data-stu-id="61cc9-114">Click **Start**, point to **All Programs**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-    2.  <span data-ttu-id="61cc9-115">**インターネット インフォメーション サービス (IIS) マネージャー**、マシン名を展開**サイト**、展開**Default Web Site**、展開**aspnet_client**、展開**[system_web]**です。</span><span class="sxs-lookup"><span data-stu-id="61cc9-115">In the **Internet Information Services (IIS) Manager**, the machine name, expand  **Sites**, expand **Default Web Site**, expand **aspnet_client**, expand **system_web**.</span></span>  
+    2.  <span data-ttu-id="61cc9-115">**インターネット インフォメーション サービス (IIS) マネージャー**、マシン名を展開**サイト**、展開**Default Web Site**、展開**aspnet_client**、展開 **[system_web]** です。</span><span class="sxs-lookup"><span data-stu-id="61cc9-115">In the **Internet Information Services (IIS) Manager**, the machine name, expand  **Sites**, expand **Default Web Site**, expand **aspnet_client**, expand **system_web**.</span></span>  
   
     3.  <span data-ttu-id="61cc9-116">サブフォルダーが 2.X であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-116">Make sure that the sub-folder is 2.X.</span></span>  
   
@@ -174,25 +175,25 @@ ms.lasthandoff: 12/01/2017
   
          <span data-ttu-id="61cc9-174">Access Permissions = Read, Run scripts</span><span class="sxs-lookup"><span data-stu-id="61cc9-174">Access Permissions = Read, Run scripts</span></span>  
   
-9. <span data-ttu-id="61cc9-175">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-175">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub, click **Properties**, and then modify the settings as follows:</span></span>  
+9. <span data-ttu-id="61cc9-175">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-175">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="61cc9-176">**仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。</span><span class="sxs-lookup"><span data-stu-id="61cc9-176">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
     2.  <span data-ttu-id="61cc9-177">をクリックして**ディレクトリ セキュリティ** タブで、をクリックして**編集**で、**認証とアクセス制御**グループ ボックスで、**統合 Windows 認証のみ有効になっている**、し、その他のオフ**認証アクセス**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="61cc9-177">Click **Directory Security** tab, click **Edit** in the **Authentication and access control** group box, select **Only Integrated Windows Authentication enabled**, and then clear other **Authentication access** checkboxes.</span></span> <span data-ttu-id="61cc9-178">をクリックして**OK**を終了します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-178">Click **OK** to exit.</span></span>  
   
-10. <span data-ttu-id="61cc9-179">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubSAP をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-179">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP, click **Properties**, and then modify the settings as follows:</span></span>  
+10. <span data-ttu-id="61cc9-179">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubSAP をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-179">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="61cc9-180">**仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。</span><span class="sxs-lookup"><span data-stu-id="61cc9-180">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
     2.  <span data-ttu-id="61cc9-181">をクリックして**ディレクトリ セキュリティ**] タブで、をクリックして**編集**で、**認証とアクセス制御**ボックスで、グループ化し、[ **の匿名アクセスの有効化**.</span><span class="sxs-lookup"><span data-stu-id="61cc9-181">Click **Directory Security** tab, click **Edit** in the **Authentication and access control** group box, and then select **Enable Anonymous Access**.</span></span> <span data-ttu-id="61cc9-182">をクリックして**OK**を終了します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-182">Click **OK** to exit.</span></span>  
   
-11. <span data-ttu-id="61cc9-183">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-183">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions, click **Properties**, and then modify the settings as follows:</span></span>  
+11. <span data-ttu-id="61cc9-183">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-183">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="61cc9-184">**仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。</span><span class="sxs-lookup"><span data-stu-id="61cc9-184">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
     2.  <span data-ttu-id="61cc9-185">をクリックして**ディレクトリ セキュリティ**] タブで、をクリックして**編集**で、**認証とアクセス制御**ボックスで、グループ化し、[ **の匿名アクセスの有効化**.</span><span class="sxs-lookup"><span data-stu-id="61cc9-185">Click **Directory Security** tab, click **Edit** in the **Authentication and access control** group box, and then select **Enable Anonymous Access**.</span></span> <span data-ttu-id="61cc9-186">をクリックして**OK**を終了します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-186">Click **OK** to exit.</span></span>  
   
-12. <span data-ttu-id="61cc9-187">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-187">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker, click **Properties**, and then modify the settings as follows:</span></span>  
+12. <span data-ttu-id="61cc9-187">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="61cc9-187">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="61cc9-188">**仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。</span><span class="sxs-lookup"><span data-stu-id="61cc9-188">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
@@ -205,7 +206,7 @@ ms.lasthandoff: 12/01/2017
 1.  <span data-ttu-id="61cc9-193">開始**Visual Studio コマンド プロンプト**です。</span><span class="sxs-lookup"><span data-stu-id="61cc9-193">Start **Visual Studio Command Prompt**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="61cc9-194">ファイルに**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**と**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**17f20caea2afcc8c のすべてのインスタンスを a1054514fc67bded に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="61cc9-194">In the files **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs** and **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**, replace all the instances of 17f20caea2afcc8c with a1054514fc67bded.</span></span>  
+    >  <span data-ttu-id="61cc9-194">ファイルに **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**と **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**17f20caea2afcc8c のすべてのインスタンスを a1054514fc67bded に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="61cc9-194">In the files **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs** and **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**, replace all the instances of 17f20caea2afcc8c with a1054514fc67bded.</span></span>  
   
 2.  <span data-ttu-id="61cc9-195">Visual Studio コマンド プロンプトで、ディレクトリを %BTSSolutionsPath%\SO\BTSSoln フォルダーに変更し、次のコマンドを実行して、サービス指向ソリューションのスタブ バージョンをビルドします。</span><span class="sxs-lookup"><span data-stu-id="61cc9-195">At the Visual Studio Command Prompt, change the directory to the %BTSSolutionsPath%\SO\BTSSoln folder, and then run the following command to build the stub version of service-oriented solution.</span></span>  
   

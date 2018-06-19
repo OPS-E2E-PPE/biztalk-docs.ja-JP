@@ -1,14 +1,14 @@
 ---
-title: "受信ホストをクラスタ リング |Microsoft ドキュメント"
-ms.custom: 
+title: 受信ホストをクラスタ リング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93544f39-836f-4a4f-9587-230bfa3a9d4e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008307"
 ---
 # <a name="clustering-receiving-hosts"></a><span data-ttu-id="7f458-102">受信ホストをクラスタ リング</span><span class="sxs-lookup"><span data-stu-id="7f458-102">Clustering Receiving Hosts</span></span>
 <span data-ttu-id="7f458-103">BizTalk Server を使用すると、BizTalk ホスト内のクラスター リソースとして構成する機能を提供する、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスター グループ。</span><span class="sxs-lookup"><span data-stu-id="7f458-103">BizTalk Server provides functionality that allows you to configure a BizTalk Host as a clustered resource within a [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] cluster group.</span></span> <span data-ttu-id="7f458-104">ホスト クラスターのサポートをサポートする受信高可用性を統合 BizTalk アダプターを複数のホスト インスタンスで、同時が実行されない、FTP 受信ハンドラーなど、特定の状況では、POP3 受信ハンドラーに提供されます。</span><span class="sxs-lookup"><span data-stu-id="7f458-104">Host cluster support is provided to support high availability for integrated BizTalk receive adapters that should not be run in multiple host instances simultaneously, such as the FTP receive handler or, under certain circumstances, the POP3 receive handler.</span></span> <span data-ttu-id="7f458-105">MSMQ サービスのクラスター化が必要となるような状況でも、MSMQ アダプターによって送受信されたメッセージについて、トランザクションの一貫性を確実に保つことができます。</span><span class="sxs-lookup"><span data-stu-id="7f458-105">Host cluster support is also provided to ensure transactional consistency for messages sent or received by the MSMQ adapter in scenarios that require that the MSMQ service is clustered.</span></span>  

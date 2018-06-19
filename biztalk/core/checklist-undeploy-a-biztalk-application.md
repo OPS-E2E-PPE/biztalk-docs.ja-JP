@@ -1,11 +1,11 @@
 ---
-title: "チェックリスト: BizTalk アプリケーションの展開解除 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: BizTalk アプリケーションの展開解除 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, undeploying
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - applications, undeploying
 - applications, checklists
 ms.assetid: 5bf9c142-b912-48c3-bfa8-13fe5243b7b8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231634"
 ---
 # <a name="checklist-undeploy-a-biztalk-application"></a><span data-ttu-id="a30e8-102">チェックリスト: BizTalk アプリケーションの展開解除します。</span><span class="sxs-lookup"><span data-stu-id="a30e8-102">Checklist: Undeploy a BizTalk Application</span></span>
 |<span data-ttu-id="a30e8-103">手順</span><span class="sxs-lookup"><span data-stu-id="a30e8-103">Step</span></span>|<span data-ttu-id="a30e8-104">リファレンス</span><span class="sxs-lookup"><span data-stu-id="a30e8-104">Reference</span></span>|  

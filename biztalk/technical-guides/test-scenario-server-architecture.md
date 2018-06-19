@@ -1,14 +1,14 @@
 ---
-title: "サーバーのシナリオ アーキテクチャのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: サーバーのシナリオ アーキテクチャのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2015-12-09
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e3afb57-c3ff-4314-9605-cf9fe936e63f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010851"
 ---
 # <a name="test-scenario-server-architecture"></a><span data-ttu-id="1cfd4-102">テスト シナリオのサーバーのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="1cfd4-102">Test Scenario Server Architecture</span></span>
 <span data-ttu-id="1cfd4-103">このトピックでは、ロード テスト中にサーバーと、ロード テストの実行対象となる、個別のサーバーのアーキテクチャ間のメッセージ フローの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="1cfd4-103">This topic provides an overview of the flow of messages between servers during load testing and the distinct server architectures against which the load test was performed.</span></span>  

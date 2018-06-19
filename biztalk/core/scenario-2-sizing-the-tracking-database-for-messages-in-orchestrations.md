@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269834"
 ---
 # <a name="scenario-2-sizing-the-tracking-database--for-messages-in-orchestrations"></a><span data-ttu-id="63652-102">シナリオ 2: オーケストレーションでメッセージの追跡データベースのサイズ変更</span><span class="sxs-lookup"><span data-stu-id="63652-102">Scenario 2: Sizing the Tracking Database  for Messages in Orchestrations</span></span>
 <span data-ttu-id="63652-103">オーケストレーションを含む例を見てみましょう。</span><span class="sxs-lookup"><span data-stu-id="63652-103">Let's look at an example that includes an orchestration.</span></span> <span data-ttu-id="63652-104">次の図は、ビジネス プロセス全体を示しています。</span><span class="sxs-lookup"><span data-stu-id="63652-104">The following figure displays the entire business process.</span></span> <span data-ttu-id="63652-105">このシナリオでは、メッセージが BizTalk Server に格納され、オーケストレーションを通じて送信されます。メッセージは、オーケストレーション内で変更され、送信ポートを通じて送信されます。</span><span class="sxs-lookup"><span data-stu-id="63652-105">In this scenario, a message comes into BizTalk Server, is sent through an orchestration, is changed within the orchestration, and is then sent out through a send port.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "トランザクション セットの詳細ステータス レポート |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション セットの詳細ステータス レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d81367c7-c74e-42cb-b856-748962b727ec
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279514"
 ---
 # <a name="transaction-set-details-status-report"></a><span data-ttu-id="bdfa0-102">トランザクション セットの詳細の状態レポート</span><span class="sxs-lookup"><span data-stu-id="bdfa0-102">Transaction Set Details Status Report</span></span>
 <span data-ttu-id="bdfa0-103">このレポートには、インターチェンジ/確認の状態レポートで選択した特定の EDI インターチェンジにあるトランザクション セットに関する詳細が示されます。</span><span class="sxs-lookup"><span data-stu-id="bdfa0-103">This report shows the details for transaction sets in a specific EDI interchange selected from within the Interchange/ACK Status report.</span></span> <span data-ttu-id="bdfa0-104">この状態レポートを表示するには、インターチェンジ/確認の状態レポートのクエリ結果ペインに表示されているインターチェンジを右クリックし、をクリックして**トランザクション セットの詳細**です。</span><span class="sxs-lookup"><span data-stu-id="bdfa0-104">To display this status report, right-click an interchange listed in the Query results pane of the Interchange/ACK Status report, and then click **Transaction Set Details**.</span></span>  

@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3be483f8-2617-459e-9081-aab886c75d93
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 5145111b2c585edab92cc10c3e3614e8bb91a85d
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250990"
 ---
 # <a name="how-to-create-an-affiliate-application"></a><span data-ttu-id="cb6ac-102">関連アプリケーションを作成する方法</span><span class="sxs-lookup"><span data-stu-id="cb6ac-102">How to Create an Affiliate Application</span></span>
 <span data-ttu-id="cb6ac-103">MMC スナップインを使用することができます、または**createapps」と入力**XML ファイルで指定された、1 つまたは複数のアプリケーションを作成するコマンド。</span><span class="sxs-lookup"><span data-stu-id="cb6ac-103">You can use the MMC Snap-In or the **createapps** command to create one or more applications, as specified by the XML file.</span></span> <span data-ttu-id="cb6ac-104">XML ファイルの Windows-Initiated シングル サインオン (SSO) の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cb6ac-104">The following is an example XML file for Windows-Initiated Single Sign-On (SSO):</span></span>  

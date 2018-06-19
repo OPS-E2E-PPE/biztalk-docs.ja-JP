@@ -1,14 +1,14 @@
 ---
-title: "フィルターするにはパスワードを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: フィルターするにはパスワードを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb429f8b-c301-45a3-8a4f-bbe6f2c566a3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255938"
 ---
 # <a name="how-to-use-password-filters"></a><span data-ttu-id="4c976-102">パスワード フィルタを使用する方法</span><span class="sxs-lookup"><span data-stu-id="4c976-102">How to Use Password Filters</span></span>
 <span data-ttu-id="4c976-103">ENTSSO パスワード同期機能は、Microsoft Windows Active Directory と Windows 以外のシステムのパスワードを同期します。</span><span class="sxs-lookup"><span data-stu-id="4c976-103">The ENTSSO Password Synchronization feature synchronizes passwords between Microsoft Windows Active Directory and non-Windows systems.</span></span> <span data-ttu-id="4c976-104">しかし、多くの外部システムは、Active Directory とは異なるパスワード ポリシー要件を備えています</span><span class="sxs-lookup"><span data-stu-id="4c976-104">However, many external systems have password policy requirements which differ from those in Active Directory.</span></span> <span data-ttu-id="4c976-105">(たとえば、IBM システムでは、パスワードは 8 文字以内の大文字で指定する必要があります)。このため、パスワード セキュリティに限って、ENTSSO では 2 つのシステム間の "最小限の共通要件" を使用します。</span><span class="sxs-lookup"><span data-stu-id="4c976-105">(For example, an IBM system may require a password to be upper case and limited to 8 characters.) This forces ENTSSO to use the “lowest common denominator” between the two systems, limiting password security.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "System Center Operations Manager 2007 での BizTalk Server の監視 |Microsoft ドキュメント"
-ms.custom: 
+title: System Center Operations Manager 2007 での BizTalk Server の監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4cee8275-bbd0-435f-ac54-07f582190538
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009643"
 ---
 # <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a><span data-ttu-id="c0768-102">System Center Operations Manager 2007 での BizTalk Server の監視</span><span class="sxs-lookup"><span data-stu-id="c0768-102">Monitoring BizTalk Server with System Center Operations Manager 2007</span></span>
 <span data-ttu-id="c0768-103">BizTalk アプリケーションと Microsoft System Center Operations Manager (Operations Manager) とインフラストラクチャの監視は、推奨される監視アプローチです。</span><span class="sxs-lookup"><span data-stu-id="c0768-103">Monitoring your BizTalk applications and infrastructure with Microsoft System Center Operations Manager (Operations Manager) is the preferred monitoring approach.</span></span> <span data-ttu-id="c0768-104">Operations Manager 用の Microsoft BizTalk Server 管理パックの提供を実行するコンピューターの監視を主体的および対応[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c0768-104">The Microsoft BizTalk Server management packs for Operations Manager provide proactive and reactive monitoring of computers running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="c0768-105">これらの管理パックが数十個の包括的かつ自動的に監視できるように、組み込み、カスタマイズ可能な規則を提供[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c0768-105">These management packs provide dozens of built-in, customizable rules to allow for comprehensive and automated monitoring of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

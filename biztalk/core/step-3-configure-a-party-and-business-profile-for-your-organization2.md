@@ -1,14 +1,14 @@
 ---
-title: "手順 3: Organization2 用のパーティとビジネス プロファイルの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Organization2 用のパーティとビジネス プロファイルの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 024d1ec7-237a-43cb-8159-90f9c71a670e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277634"
 ---
 # <a name="step-3-configure-a-party-and-business-profile-for-your-organization"></a><span data-ttu-id="6b90d-102">手順 3: 組織のパーティとビジネス プロファイルを構成します。</span><span class="sxs-lookup"><span data-stu-id="6b90d-102">Step 3: Configure a Party and Business Profile for Your Organization</span></span>
 <span data-ttu-id="6b90d-103">![手順 11 の 3](../core/media/tut-step3-of-11.gif "Tut_Step3_of_11")</span><span class="sxs-lookup"><span data-stu-id="6b90d-103">![Step 3 of 11](../core/media/tut-step3-of-11.gif "Tut_Step3_of_11")</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="6b90d-112">選択、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="6b90d-112">Select the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box.</span></span> <span data-ttu-id="6b90d-113">チェック ボックスをオンにすることを指定、パーティ (この場合、 **Contoso**) も BizTalk Server をホストします。</span><span class="sxs-lookup"><span data-stu-id="6b90d-113">By selecting the check box you specify that the party (in this case, **Contoso**) also hosts BizTalk Server.</span></span>  
   
-5.  <span data-ttu-id="6b90d-114">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6b90d-114">Click **OK**.</span></span>  
+5.  <span data-ttu-id="6b90d-114">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6b90d-114">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="6b90d-115">パーティ名を右クリックし、**新規**、クリックして**ビジネス プロファイル**です。</span><span class="sxs-lookup"><span data-stu-id="6b90d-115">Right-click the party name, point to **New**, and then click **Business Profile**.</span></span>  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="6b90d-117">パーティを作成すると、プロファイルも作成されます。</span><span class="sxs-lookup"><span data-stu-id="6b90d-117">When you create a party, a profile is also created.</span></span> <span data-ttu-id="6b90d-118">新しいプロファイルを作成する代わりに、そのプロファイルの名前を変更して使用できます。</span><span class="sxs-lookup"><span data-stu-id="6b90d-118">You can rename and use that profile instead of creating a new one.</span></span> <span data-ttu-id="6b90d-119">プロファイルの名前を変更するプロファイルを右クリックし **プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="6b90d-119">To rename a profile, right-click the profile and select **Properties**.</span></span> <span data-ttu-id="6b90d-120">**全般** ページで、プロファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="6b90d-120">In the **General** page, specify a name for the profile.</span></span>  
   
-8.  <span data-ttu-id="6b90d-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6b90d-121">Click **OK**.</span></span>  
+8.  <span data-ttu-id="6b90d-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6b90d-121">Click **OK**.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="6b90d-122">次の手順</span><span class="sxs-lookup"><span data-stu-id="6b90d-122">Next Steps</span></span>  
  <span data-ttu-id="6b90d-123">パートナー組織のパーティとビジネス プロファイルを構成する (**Fabrikam**)」の説明に従って、[手順 4:、取引先のパーティとビジネス プロファイルを構成する](../core/step-4-configure-a-party-and-business-profile-for-your-trading-partner2.md)です。</span><span class="sxs-lookup"><span data-stu-id="6b90d-123">You configure a party and business profile for your partner organization (**Fabrikam**), as described in [Step 4: Configure a Party and Business Profile for Your Trading Partner](../core/step-4-configure-a-party-and-business-profile-for-your-trading-partner2.md).</span></span>  

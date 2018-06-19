@@ -1,14 +1,14 @@
 ---
-title: "インターセプタ EventSource 要素 |Microsoft ドキュメント"
-ms.custom: 
+title: インターセプタ EventSource 要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d78846c1-3984-43af-a13f-9d5c0a66d3b5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257474"
 ---
 # <a name="interceptor-eventsource-element"></a><span data-ttu-id="439b1-102">インターセプタ EventSource 要素</span><span class="sxs-lookup"><span data-stu-id="439b1-102">Interceptor EventSource Element</span></span>
 <span data-ttu-id="439b1-103">**EventSource**要素が 1 つ以上のインターセプター構成ファイルに表示されるイベントのソースに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="439b1-103">The **EventSource** element provides information about the source of one or more of the events appearing in the interceptor configuration file.</span></span> <span data-ttu-id="439b1-104">イベント ソース名だけでなく、ソースのテクノロジとマニフェストを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="439b1-104">In addition to an event source name, you need to indicate the technology and a manifest for the source.</span></span>  

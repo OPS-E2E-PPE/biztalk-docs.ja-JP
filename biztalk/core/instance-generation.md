@@ -1,14 +1,14 @@
 ---
-title: "インスタンスの生成 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンスの生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14060dca-5e14-474a-bf2c-4e8bc56e3c61
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257266"
 ---
 # <a name="instance-generation"></a><span data-ttu-id="cb8fa-102">インスタンスの生成</span><span class="sxs-lookup"><span data-stu-id="cb8fa-102">Instance Generation</span></span>
 <span data-ttu-id="cb8fa-103">BizTalk エディターを起動、 **IInstanceGenerator.GenerateInstance**次の条件が満たされたときに、拡張機能のメソッド。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-103">BizTalk Editor invokes the **IInstanceGenerator.GenerateInstance** method of an extension when the following conditions are met:</span></span>  

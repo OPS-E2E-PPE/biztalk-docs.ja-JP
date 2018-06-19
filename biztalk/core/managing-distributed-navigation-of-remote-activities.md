@@ -1,14 +1,14 @@
 ---
-title: "リモート アクティビティの分散ナビゲーションを管理する |Microsoft ドキュメント"
-ms.custom: 
+title: リモート アクティビティの分散ナビゲーションを管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cf6e0c2-ea72-4621-9ca7-fa43e404ec46
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263074"
 ---
 # <a name="managing-distributed-navigation-of-remote-activities"></a><span data-ttu-id="1ad63-102">リモート アクティビティの分散ナビゲーションの管理</span><span class="sxs-lookup"><span data-stu-id="1ad63-102">Managing Distributed Navigation of Remote Activities</span></span>
 <span data-ttu-id="1ad63-103">リモート アクティビティの分散ナビゲーションは、ビジネス ユーザーが個別の BAM データベースに存在するアクティビティに移動してそれらのアクティビティを参照するプロセスです。</span><span class="sxs-lookup"><span data-stu-id="1ad63-103">Distributed navigation of remote activities is the process by which a business user navigates to and views activities that exist in separate BAM databases.</span></span> <span data-ttu-id="1ad63-104">BAM インフラストラクチャを構成して分散ナビゲーションを提供する場合、BAM ポータル内のビジネス ユーザーがリモート アクティビティにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="1ad63-104">When you configure the BAM infrastructure to provide distributed navigation, the remote activity is accessible to the business user in the BAM portal.</span></span> <span data-ttu-id="1ad63-105">ユーザーがアクティビティをクリックすると、そのアクティビティはリモートの BAM ポータルで開かれます。</span><span class="sxs-lookup"><span data-stu-id="1ad63-105">When the user clicks the activity, the activity is opened on the remote BAM portal.</span></span> <span data-ttu-id="1ad63-106">この時点でユーザーは意識する必要のないシームレスな手法でリモートの BAM ポータルに転送され、対象のアクティビティがユーザーのホーム データ ストアに存在していたかのようにアクティビティの検索、集計、および警告管理に移動できます。</span><span class="sxs-lookup"><span data-stu-id="1ad63-106">At this point the user has been transferred in a transparent and seamless manner to the remote BAM portal and can navigate to the activity search, aggregations, and alert management for the activity as if the activity existed on the user's home data store.</span></span>  

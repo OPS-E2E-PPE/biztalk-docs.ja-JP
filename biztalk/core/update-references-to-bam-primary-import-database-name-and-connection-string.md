@@ -1,14 +1,14 @@
 ---
-title: "BAM プライマリ インポート データベースの名前と接続文字列を更新 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM プライマリ インポート データベースの名前と接続文字列を更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 02/01/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3c58db0-f14f-429a-813c-bae29f6950d3
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c670558deccec266f90ae7ed042dba1105b15596
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28956652"
 ---
 # <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a><span data-ttu-id="7410f-102">BAM プライマリ インポート データベース名および接続文字列への参照を更新します。</span><span class="sxs-lookup"><span data-stu-id="7410f-102">Update References to the BAM Primary Import Database Name and Connection String</span></span>
 <span data-ttu-id="7410f-103">BAMPrimaryImport データベースをバックアップしておくと、システムまたはデータに障害が発生したときに、別のコンピューターにバックアップを復元し、その名前を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="7410f-103">If you backed up your BAMPrimaryImport database in the event of a system or data failure, you can restore that backup to a different computer and rename the backup.</span></span>  
@@ -118,7 +119,7 @@ ms.lasthandoff: 02/03/2018
   
     4.  <span data-ttu-id="7410f-158">**ファイル**  メニューのをクリックして **を閉じるし、Microsoft Excel へ戻る**します。</span><span class="sxs-lookup"><span data-stu-id="7410f-158">On the **File** menu, click **Close and Return to Microsoft Excel**.</span></span>  
   
-    5.  <span data-ttu-id="7410f-159">**[ファイル]** メニューの **[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7410f-159">On the **File** menu, click **Save**.</span></span>  
+    5.  <span data-ttu-id="7410f-159">**[ファイル]** メニューの **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7410f-159">On the **File** menu, click **Save**.</span></span>  
   
 11. <span data-ttu-id="7410f-160">BizTalk Server アプリケーション サービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="7410f-160">Restart the BizTalk Application service.</span></span>  
   

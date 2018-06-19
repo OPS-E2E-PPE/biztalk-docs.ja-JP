@@ -1,17 +1,17 @@
 ---
-title: "BAM パフォーマンス カウンター |Microsoft ドキュメント"
-ms.custom: 
+title: BAM パフォーマンス カウンター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], performance counters
 - performance, counters [BAM]
 ms.assetid: e23f7038-36a5-4957-bc73-47011763d109
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230914"
 ---
 # <a name="bam-performance-counters"></a><span data-ttu-id="31af2-102">BAM パフォーマンス カウンター</span><span class="sxs-lookup"><span data-stu-id="31af2-102">BAM Performance Counters</span></span>
 <span data-ttu-id="31af2-103">パフォーマンス カウンターを使用すると、BAM イベント バス サービスによって実行される作業に関する特定の側面を監視できます。</span><span class="sxs-lookup"><span data-stu-id="31af2-103">Performance counters allow you to monitor specific aspects of work performed by the BAM Event Bus Service.</span></span> <span data-ttu-id="31af2-104">パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="31af2-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span>  

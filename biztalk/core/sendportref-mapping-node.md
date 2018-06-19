@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269970"
 ---
 # <a name="sendportref-mapping-node"></a><span data-ttu-id="84d79-102">SendPortRef (Mapping ノード)</span><span class="sxs-lookup"><span data-stu-id="84d79-102">SendPortRef (Mapping Node)</span></span>
 <span data-ttu-id="84d79-103">バインド ファイルの Mapping ノードの SendPortRef ノードには、親マッピング ノードが参照する送信ポートの名前が示されます。</span><span class="sxs-lookup"><span data-stu-id="84d79-103">The SendPortRef node of the Mapping node of a binding file lists the names of the send ports referenced by the parent mapping node.</span></span>  

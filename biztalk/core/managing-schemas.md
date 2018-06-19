@@ -1,15 +1,15 @@
 ---
-title: "スキーマの管理 |Microsoft ドキュメント"
-description: "BizTalk server での表示と非表示のプロパティを含むスキーマを使用する BizTalk 管理コンソールを使用して、XSD を表示、追跡を有効にします。"
-ms.custom: 
+title: スキーマの管理 |Microsoft ドキュメント
+description: BizTalk server での表示と非表示のプロパティを含むスキーマを使用する BizTalk 管理コンソールを使用して、XSD を表示、追跡を有効にします。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c5632e79-b182-41c9-9138-eb88b44e3172
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262602"
 ---
 # <a name="manage-schemas"></a><span data-ttu-id="039d3-103">スキーマを管理します。</span><span class="sxs-lookup"><span data-stu-id="039d3-103">Manage Schemas</span></span>
 

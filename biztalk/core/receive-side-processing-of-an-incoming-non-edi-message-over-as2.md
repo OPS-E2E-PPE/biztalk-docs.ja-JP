@@ -1,14 +1,14 @@
 ---
-title: "受信側 AS2 経由で受信した非 EDI メッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信側 AS2 経由で受信した非 EDI メッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fee10cba-8b1a-4d2c-b9d9-efbb74c3f461
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269450"
 ---
 # <a name="receive-side-processing-of-an-incoming-non-edi-message-over-as2"></a><span data-ttu-id="d07a1-102">AS2 経由で受信した非 EDI メッセージの受信側の処理</span><span class="sxs-lookup"><span data-stu-id="d07a1-102">Receive-Side Processing of an Incoming Non-EDI Message over AS2</span></span>
 <span data-ttu-id="d07a1-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属の AS2 パイプラインを使用すると、AS2 トランスポート経由の EDI メッセージまたは非 EDI メッセージを処理できます。</span><span class="sxs-lookup"><span data-stu-id="d07a1-103">The AS2 pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] can be used to process an EDI message or a non-EDI message over AS2 transport.</span></span> <span data-ttu-id="d07a1-104">この 2 つの種類のペイロードで使用されるパイプラインは異なります。</span><span class="sxs-lookup"><span data-stu-id="d07a1-104">Different pipelines are used for the two different types of payloads.</span></span> <span data-ttu-id="d07a1-105">AS2 経由の受信 EDI メッセージの処理には、AS2EdiReceive パイプラインを使用し、関連する MDN (有効になっている場合) を返すときには AS2Send パイプラインを使用します。</span><span class="sxs-lookup"><span data-stu-id="d07a1-105">You use the AS2EdiReceive pipeline to process an incoming EDI message over AS2, and the AS2Send pipeline to return the associated MDN (if enabled).</span></span> <span data-ttu-id="d07a1-106">AS2 経由で受信した非 EDI メッセージの処理には、AS2Receive パイプラインを使用し、関連する MDN (有効になっている場合) を返すときには AS2Send パイプラインを使用します。</span><span class="sxs-lookup"><span data-stu-id="d07a1-106">You use the AS2Receive pipeline to process an incoming non-EDI message over AS2, and the AS2Send pipeline to return the associated MDN (if enabled).</span></span> <span data-ttu-id="d07a1-107">非 EDI メッセージは、任意のバイナリ ペイロードです。</span><span class="sxs-lookup"><span data-stu-id="d07a1-107">The non-EDI message can be any binary payload.</span></span>  
