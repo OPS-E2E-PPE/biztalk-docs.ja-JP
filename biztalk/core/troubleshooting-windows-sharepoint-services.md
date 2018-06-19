@@ -1,14 +1,14 @@
 ---
-title: "Windows SharePoint Services のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Windows SharePoint Services のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9acf9a0d-2c92-4227-80f8-b2d0cca0c232
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286994"
 ---
 # <a name="troubleshooting-windows-sharepoint-services"></a><span data-ttu-id="ea3ca-102">Windows Sharepoint Services のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="ea3ca-102">Troubleshooting Windows SharePoint Services</span></span>
 <span data-ttu-id="ea3ca-103">Microsoft [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] は Windows SharePoint Services アダプターによって使用されます。</span><span class="sxs-lookup"><span data-stu-id="ea3ca-103">Microsoft [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] is used by the Windows SharePoint Services adapter.</span></span> <span data-ttu-id="ea3ca-104">このトピックでは、Windows SharePoint Services で発生する可能性がある既知の問題点とその解決策について説明します。</span><span class="sxs-lookup"><span data-stu-id="ea3ca-104">This topic describes some known issues that may be encountered with Windows SharePoint Services and possible resolutions to these issues.</span></span>  

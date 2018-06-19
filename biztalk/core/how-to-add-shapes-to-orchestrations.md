@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションに図形を追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションに図形を追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shapes, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Message Assignment shape [Orchestration Designer]
 - Scope shape [Orchestration Designer]
 ms.assetid: d39eb12c-cdc6-4918-93d9-536db1dfb889
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246954"
 ---
 # <a name="how-to-add-shapes-to-orchestrations"></a><span data-ttu-id="ab4ba-102">オーケストレーションに図形を追加する方法</span><span class="sxs-lookup"><span data-stu-id="ab4ba-102">How to Add Shapes to Orchestrations</span></span>
 <span data-ttu-id="ab4ba-103">このセクションでは、オーケストレーションに図形を追加する手順と、オーケストレーションから図形を削除する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="ab4ba-103">This section describes the procedures for adding and removing shapes in your orchestration.</span></span> <span data-ttu-id="ab4ba-104">使用できる図形の詳細については、次を参照してください。[オーケストレーション図形](../core/orchestration-shapes.md)です。</span><span class="sxs-lookup"><span data-stu-id="ab4ba-104">For more information about the available shapes, see [Orchestration Shapes](../core/orchestration-shapes.md).</span></span>  

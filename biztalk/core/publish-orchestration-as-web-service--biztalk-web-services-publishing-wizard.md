@@ -16,7 +16,7 @@ helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, about BizTalk Web Services Publishing Wizard
 - orchestrations, publishing
 ms.assetid: d990f8e4-88ce-4718-8a94-63796b8d92dc
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25975344"
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-an-orchestration-as-a-web-service"></a><span data-ttu-id="a4314-102">BizTalk Web サービス公開ウィザードを使用してオーケストレーションを Web サービスとして公開する方法</span><span class="sxs-lookup"><span data-stu-id="a4314-102">How to Use the BizTalk Web Services Publishing Wizard to Publish an Orchestration as a Web Service</span></span>
 <span data-ttu-id="a4314-103">BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開することができます。</span><span class="sxs-lookup"><span data-stu-id="a4314-103">You use the BizTalk Web Services Publishing Wizard to publish an orchestration as a Web service.</span></span>  
@@ -106,7 +107,7 @@ ms.lasthandoff: 03/28/2018
     -   <span data-ttu-id="a4314-184">**BizTalk を作成する受信場所。**</span><span class="sxs-lookup"><span data-stu-id="a4314-184">**Create BizTalk receive locations.**</span></span> <span data-ttu-id="a4314-185">このオプションでは、生成された各 .asmx ファイルに対応する SOAP アダプターの受信ポートと受信場所が自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="a4314-185">This option automatically creates the SOAP adapter receive ports and locations that correspond to each generated .asmx file.</span></span> <span data-ttu-id="a4314-186">受信場所が既に存在する場合、既存の受信場所は置き換えられません。</span><span class="sxs-lookup"><span data-stu-id="a4314-186">If a receive location already exists, it is not replaced.</span></span> <span data-ttu-id="a4314-187">SOAP アダプターを解決する形式を使用して、受信場所/\<*仮想ディレクトリ名*\>/\<*オーケストレーション namespace_typename_portname* \>.asmx です。</span><span class="sxs-lookup"><span data-stu-id="a4314-187">Receive locations for the SOAP adapter are resolved using the format /\<*virtual directory name*\>/\<*orchestration namespace_typename_portname*\>.asmx.</span></span> <span data-ttu-id="a4314-188">このオプションの選択後、受信ポートと場所を生成するアプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="a4314-188">After selecting this option, choose the application where the receive ports and locations will be generated.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="a4314-189">プロジェクトの場所には、別のサーバーを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="a4314-189">The project location can exist on a different server.</span></span> <span data-ttu-id="a4314-190">別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>**です。</span><span class="sxs-lookup"><span data-stu-id="a4314-190">To publish a Web service to a different server, type the project name as **http://<*servername*>/<*project_name*>**.</span></span>  
+        >  <span data-ttu-id="a4314-189">プロジェクトの場所には、別のサーバーを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="a4314-189">The project location can exist on a different server.</span></span> <span data-ttu-id="a4314-190">別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>** です。</span><span class="sxs-lookup"><span data-stu-id="a4314-190">To publish a Web service to a different server, type the project name as **http://<*servername*>/<*project_name*>**.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="a4314-191">プロジェクトの場所には、既定以外の Web サイトを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="a4314-191">The project location can exist on a non-default Web site.</span></span> <span data-ttu-id="a4314-192">既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。</span><span class="sxs-lookup"><span data-stu-id="a4314-192">When publishing to a non-default Web site, include the port number of the Web site in the URL.</span></span> <span data-ttu-id="a4314-193">たとえば、 http://localhost:8080/< *project_name*>。</span><span class="sxs-lookup"><span data-stu-id="a4314-193">For example, http://localhost:8080/<*project_name*>.</span></span>  
@@ -127,7 +128,7 @@ ms.lasthandoff: 03/28/2018
 12. <span data-ttu-id="a4314-204">をクリックして **完了** BizTalk Web サービス公開ウィザードを完了します。</span><span class="sxs-lookup"><span data-stu-id="a4314-204">Click **Finish** to complete the BizTalk Web Services Publishing Wizard.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="a4314-205">オーケストレーションを Windows Vista で Web サービスとして公開している場合、サービスをホストする仮想ディレクトリを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4314-205">If you are publishing an orchestration as a web service on Windows Vista, you must update the virtual directory hosting the service.</span></span> <span data-ttu-id="a4314-206">コマンド プロンプトから次のコマンドを発行するには、置換\<vdir\>仮想ディレクトリの名前に置き換えます: **%systemroot%\system32\inetsrv\appcmd です。EXE 構成の移行"Default Web Site/\<vdir 名前\>"**です。</span><span class="sxs-lookup"><span data-stu-id="a4314-206">To do so, issue the following command from the command prompt, replacing \<vdir\> with the name of the virtual directory: **%systemroot%\system32\inetsrv\APPCMD.EXE migrate config "Default Web Site/\<vdir name\>"**.</span></span>  
+>  <span data-ttu-id="a4314-205">オーケストレーションを Windows Vista で Web サービスとして公開している場合、サービスをホストする仮想ディレクトリを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4314-205">If you are publishing an orchestration as a web service on Windows Vista, you must update the virtual directory hosting the service.</span></span> <span data-ttu-id="a4314-206">コマンド プロンプトから次のコマンドを発行するには、置換\<vdir\>仮想ディレクトリの名前に置き換えます: **%systemroot%\system32\inetsrv\appcmd です。EXE 構成の移行"Default Web Site/\<vdir 名前\>"** です。</span><span class="sxs-lookup"><span data-stu-id="a4314-206">To do so, issue the following command from the command prompt, replacing \<vdir\> with the name of the virtual directory: **%systemroot%\system32\inetsrv\APPCMD.EXE migrate config "Default Web Site/\<vdir name\>"**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="a4314-207">参照</span><span class="sxs-lookup"><span data-stu-id="a4314-207">See Also</span></span>  
  <span data-ttu-id="a4314-208">[Web サービスとしてのオーケストレーションの公開](../core/publishing-an-orchestration-as-a-web-service.md) </span><span class="sxs-lookup"><span data-stu-id="a4314-208">[Publishing an Orchestration as a Web Service](../core/publishing-an-orchestration-as-a-web-service.md) </span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "フラット ファイル メッセージのトレーラー |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル メッセージのトレーラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cfe115a5-4fdc-4779-94f3-437b5a06fbd4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246290"
 ---
 # <a name="flat-file-message-trailers"></a><span data-ttu-id="ec6bb-102">フラット ファイル メッセージのトレーラー</span><span class="sxs-lookup"><span data-stu-id="ec6bb-102">Flat File Message Trailers</span></span>
 <span data-ttu-id="ec6bb-103">フラット ファイル インスタンス メッセージのヘッダーのフラット ファイル逆アセンブラーでは、省略可能なフラット ファイル インスタンス メッセージ トレーラーの解析で構成したフラット ファイル スキーマによって制御されるよう、**トレーラー スキーマ**デザイン時フラット ファイル逆アセンブラーのプロパティまたは**XMLNORM です。TrailerSpecName**メッセージ コンテキスト プロパティです。</span><span class="sxs-lookup"><span data-stu-id="ec6bb-103">As with flat file instance message headers, the parsing of the optional flat file instance message trailer by the flat file disassembler is controlled by the flat file schema that you have configured in the **Trailer schema** design-time property of the flat file disassembler or the **XMLNORM.TrailerSpecName** message context property.</span></span> <span data-ttu-id="ec6bb-104">いずれかの方法を使用してスキーマを指定しなかった場合、フラット ファイル逆アセンブラーは、フラット ファイル インスタンス メッセージにトレーラーが含まれないと見なします。</span><span class="sxs-lookup"><span data-stu-id="ec6bb-104">If you have not specified a schema using one of these two methods, the flat file disassembler will assume that the flat file instance message does not contain a trailer.</span></span>  

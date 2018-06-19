@@ -1,14 +1,14 @@
 ---
-title: "EDI 検証、スキーマ、およびメッセージに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 検証、スキーマ、およびメッセージに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 417c3e18-9a97-4d59-bc2b-e96a8c33d388
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264562"
 ---
 # <a name="known-issues-with-edi-validation-schemas-and-messages"></a><span data-ttu-id="2a0bb-102">EDI 検証、スキーマ、およびメッセージに関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="2a0bb-102">Known Issues with EDI Validation, Schemas, and Messages</span></span>
 <span data-ttu-id="2a0bb-103">このトピックでは、検証に関する既知の問題について説明します。</span><span class="sxs-lookup"><span data-stu-id="2a0bb-103">This topic describes known validation issues.</span></span>  

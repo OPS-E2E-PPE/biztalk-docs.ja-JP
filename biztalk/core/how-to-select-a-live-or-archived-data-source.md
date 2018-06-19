@@ -1,11 +1,11 @@
 ---
-title: "ライブまたはアーカイブ済みのデータ ソースを選択する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ライブまたはアーカイブ済みのデータ ソースを選択する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Management database, archived data
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - real-time data, Management database
 - archived data, HAT
 ms.assetid: e2325823-22e1-4a1a-865b-15757b215b29
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255290"
 ---
 # <a name="how-to-select-a-live-or-archived-data-source"></a><span data-ttu-id="2c130-102">ライブ データまたはアーカイブ済みのデータのデータ ソースを選択する方法</span><span class="sxs-lookup"><span data-stu-id="2c130-102">How to Select a Live or Archived Data Source</span></span>
 <span data-ttu-id="2c130-103">BizTalktracking では、アーカイブ済みのデータとライブ データの両方にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2c130-103">BizTalktracking enables you to access both archived and live data.</span></span> <span data-ttu-id="2c130-104">メインからライブまたはアーカイブ済みのデータ ソースを選択する**BizTalk Server 管理コンソール**BizTalk Server 管理コンソールのノードです。</span><span class="sxs-lookup"><span data-stu-id="2c130-104">You select a live or archived data source from the main **BizTalk Server Administration** node BizTalk Server Administration Console.</span></span>  <span data-ttu-id="2c130-105">既定のソースは、BizTalk 管理サーバーから取得されるライブ データです。</span><span class="sxs-lookup"><span data-stu-id="2c130-105">The default source is live data, retrieved from the BizTalk Management database.</span></span> <span data-ttu-id="2c130-106">アーカイブ済みのデータを使用する場合は、使用する適切なサーバーとデータベースを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c130-106">If you choose to work with archived data, you must select the appropriate server/s and database/s with which to work.</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="2c130-120">**データベース名**ドロップダウン リスト ボックスで、 **BizTalkMgmtDb**です。</span><span class="sxs-lookup"><span data-stu-id="2c130-120">In the **Database name** drop-down list box, select **BizTalkMgmtDb**.</span></span>  
   
-6.  <span data-ttu-id="2c130-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c130-121">Click **OK**.</span></span>  
+6.  <span data-ttu-id="2c130-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c130-121">Click **OK**.</span></span>  
   
 ### <a name="to-select-archived-data"></a><span data-ttu-id="2c130-122">アーカイブ済みのデータを選択するには</span><span class="sxs-lookup"><span data-stu-id="2c130-122">To select archived data</span></span>  
   
@@ -67,4 +68,4 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="2c130-127">**データベース名**ドロップダウン リスト ボックスで、 **BizTalkMgmtDb**です。</span><span class="sxs-lookup"><span data-stu-id="2c130-127">In the **Database name** drop-down list box, select **BizTalkMgmtDb**.</span></span>  
   
-6.  <span data-ttu-id="2c130-128">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c130-128">Click **OK**.</span></span>
+6.  <span data-ttu-id="2c130-128">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c130-128">Click **OK**.</span></span>

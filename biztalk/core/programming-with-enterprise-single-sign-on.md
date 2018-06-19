@@ -1,14 +1,14 @@
 ---
-title: "エンタープライズ シングル サインオンを使用したプログラミング |Microsoft ドキュメント"
-ms.custom: 
+title: エンタープライズ シングル サインオンを使用したプログラミング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1b10b7be-a741-471e-ac3f-cd04549166d3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264618"
 ---
 # <a name="programming-with-enterprise-single-sign-on"></a><span data-ttu-id="6aea0-102">エンタープライズ シングル サインオンを使用したプログラミング</span><span class="sxs-lookup"><span data-stu-id="6aea0-102">Programming with Enterprise Single Sign-On</span></span>
 <span data-ttu-id="6aea0-103">エンタープライズ シングル サインオン (SSO) は、エンタープライズ シングル サインオン サービス (ENTSSO) に実装されているテクノロジで、ユーザーがサインオン画面での作業を何度も行うことなく、複数のリモート サービスにアクセスできるようにします。</span><span class="sxs-lookup"><span data-stu-id="6aea0-103">Enterprise Single Sign-On (SSO) is a technology implemented in the Enterprise Single Sign-On service (ENTSSO) that enables users to access multiple remote services without having to work their way through additional sign-on screens.</span></span>  

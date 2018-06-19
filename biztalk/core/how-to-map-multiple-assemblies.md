@@ -1,18 +1,18 @@
 ---
-title: "複数のアセンブリをマップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 複数のアセンブリをマップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies, tracking profiles
 - tracking profiles, mapping assemblies
 - assemblies, maps
 ms.assetid: 136f1943-9643-4551-8b5b-150c4b4bfebe
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254354"
 ---
 # <a name="how-to-map-multiple-assemblies"></a><span data-ttu-id="612be-102">複数のアセンブリをマップする方法</span><span class="sxs-lookup"><span data-stu-id="612be-102">How to Map Multiple Assemblies</span></span>
 <span data-ttu-id="612be-103">BizTalk アプリケーションを複数のアセンブリから構成し、それらのアセンブリに BAM アクティビティで参照するデータ項目を格納することができます。</span><span class="sxs-lookup"><span data-stu-id="612be-103">BizTalk applications can consist of multiple assemblies in which the data items that a BAM activity references reside.</span></span> <span data-ttu-id="612be-104">追跡プロファイルに複数のアセンブリをマップするには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="612be-104">The following procedure shows you how to map multiple assemblies to a tracking profile.</span></span>  

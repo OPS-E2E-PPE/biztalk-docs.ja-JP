@@ -1,17 +1,17 @@
 ---
-title: "スキーマ生成ウィザードを拡張する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ生成ウィザードを拡張する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - utilities, Schema Generator Wizard
 - Schema Generator Wizard
 ms.assetid: ea4b5532-f904-4da0-9612-e092e7e4edc1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254018"
 ---
 # <a name="how-to-extend-the-schema-generator-wizard"></a><span data-ttu-id="44e36-102">スキーマ生成ウィザードを拡張する方法</span><span class="sxs-lookup"><span data-stu-id="44e36-102">How to Extend the Schema Generator Wizard</span></span>
 <span data-ttu-id="44e36-103">既存のスキーマ生成ウィザードを拡張する方法とスキーマの生成用の新規作成ウィザードを作成する方法。</span><span class="sxs-lookup"><span data-stu-id="44e36-103">How to extend the existing Schema Generator Wizard and how to create a new wizard for schema generation.</span></span>  

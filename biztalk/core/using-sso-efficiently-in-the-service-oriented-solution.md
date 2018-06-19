@@ -1,18 +1,18 @@
 ---
-title: "サービスの SSO の効率的な使用指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サービスの SSO の効率的な使用指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, service solutions
 - service solution tutorial, SSO
 - SSO, using from code
 ms.assetid: 809e0ad3-cc7f-4095-87d1-63031675a47f
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289266"
 ---
 # <a name="using-sso-efficiently-in-the-service-oriented-solution"></a><span data-ttu-id="d1baf-102">指向ソリューションのサービスで SSO の効率的な使用</span><span class="sxs-lookup"><span data-stu-id="d1baf-102">Using SSO Efficiently in the Service Oriented Solution</span></span>
 <span data-ttu-id="d1baf-103">サービス指向ソリューションでは、バックエンド システムの構成値の保存と資格情報の処理にエンタープライズ シングル サインオン (SSO) が使用されます。</span><span class="sxs-lookup"><span data-stu-id="d1baf-103">The service oriented solution uses Enterprise Single Sign-On (SSO) both to store configuration values and to handle credentials for the back-end systems.</span></span> <span data-ttu-id="d1baf-104">待機時間を減らすために、このソリューションでは構成値のローカル キャッシュが使用されます。</span><span class="sxs-lookup"><span data-stu-id="d1baf-104">To reduce latency, the solution uses a local cache for the configuration values.</span></span> <span data-ttu-id="d1baf-105">キャッシュは 5 分おきに更新されます。</span><span class="sxs-lookup"><span data-stu-id="d1baf-105">The solution refreshes the cache every five minutes.</span></span>  

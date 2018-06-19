@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server のセキュリティ機能 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のセキュリティ機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, security
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - data, security
 - messages, security
 ms.assetid: 5ab15023-fa71-439e-b3aa-420fe28806fa
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269906"
 ---
 # <a name="security-features-in-biztalk-server"></a><span data-ttu-id="fa822-102">BizTalk Server のセキュリティ機能</span><span class="sxs-lookup"><span data-stu-id="fa822-102">Security Features in BizTalk Server</span></span>
 <span data-ttu-id="fa822-103">Microsoft® BizTalk® Server には、イントラネット内およびインターネット経由の両方で、ドキュメントを送受信するための標準のゲートウェイが用意されています。</span><span class="sxs-lookup"><span data-stu-id="fa822-103">Microsoft® BizTalk® Server provides a standard gateway for sending and receiving documents both within an intranet and through the Internet.</span></span> <span data-ttu-id="fa822-104">BizTalk Server で送受信されるメッセージには、ビジネス上重要な内容が含まれることがあります。そのため、メッセージの転送時と BizTalk Server での処理および保存時の両方で、メッセージとそれに含まれる情報をセキュリティで保護する方法を検討することが重要です。</span><span class="sxs-lookup"><span data-stu-id="fa822-104">Due to the possible business-critical nature of the messages sent to and from BizTalk Server, it is important to consider measures to help secure these messages and the information they contain both as they are in transit and while BizTalk Server processes and stores them.</span></span> <span data-ttu-id="fa822-105">このセクションでは、BizTalk Server のセキュリティ機能、および使用方法についてすることができますに保護するに、データと環境情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="fa822-105">This section provides information about the BizTalk Server security features, and how you can use them to help secure your data and environment.</span></span>  

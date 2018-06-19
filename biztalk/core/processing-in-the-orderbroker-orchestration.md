@@ -1,11 +1,11 @@
 ---
-title: "OrderBroker オーケストレーションで処理 |Microsoft ドキュメント"
-ms.custom: 
+title: OrderBroker オーケストレーションで処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - examples, orchestration processing [process management solution]
 - scopes, nesting
 ms.assetid: c296e00c-b3ad-4161-baf7-258899185c34
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266634"
 ---
 # <a name="processing-in-the-orderbroker-orchestration"></a><span data-ttu-id="c3149-102">OrderBroker オーケストレーションでの処理</span><span class="sxs-lookup"><span data-stu-id="c3149-102">Processing in the OrderBroker Orchestration</span></span>
 <span data-ttu-id="c3149-103">このセクションの内容について説明しますが、どのように**OrderBroker**オーケストレーションが注文を受け付けるし、準備がプロセス マネージャー。</span><span class="sxs-lookup"><span data-stu-id="c3149-103">This section describes how the **OrderBroker** orchestration takes orders and prepares them for a process manager.</span></span> <span data-ttu-id="c3149-104">まず、オーケストレーションの一般的な動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="c3149-104">The section begins by discussing the general workings of the orchestration.</span></span> <span data-ttu-id="c3149-105">次に、オーケストレーションがメッセージを処理する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="c3149-105">The next part discusses how the orchestration processes a message.</span></span> <span data-ttu-id="c3149-106">最後に、オーケストレーションがアトミック トランザクションを使用してパフォーマンスを向上させるしくみを明らかにします。</span><span class="sxs-lookup"><span data-stu-id="c3149-106">It then highlights how the orchestration uses an atomic transaction to improve performance.</span></span>  

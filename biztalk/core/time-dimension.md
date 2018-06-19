@@ -1,17 +1,17 @@
 ---
-title: "時間ディメンション |Microsoft ドキュメント"
-ms.custom: 
+title: 時間ディメンション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Time dimension [BAM]
 - aggregations [BAM], Time dimension
 ms.assetid: 8f83b758-09a1-4efb-ae0e-32753f56c4e4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279450"
 ---
 # <a name="time-dimension"></a><span data-ttu-id="fa578-102">時間ディメンション</span><span class="sxs-lookup"><span data-stu-id="fa578-102">Time Dimension</span></span>
 <span data-ttu-id="fa578-103">時間ディメンションを使用すると、時間を基準として集計を作成できます。</span><span class="sxs-lookup"><span data-stu-id="fa578-103">The time dimension allows aggregations to be created with respect to time.</span></span> <span data-ttu-id="fa578-104">たとえば、時間ディメンションを使用して、次のテーブルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="fa578-104">For example a time dimension can be used to create the following table:</span></span>  

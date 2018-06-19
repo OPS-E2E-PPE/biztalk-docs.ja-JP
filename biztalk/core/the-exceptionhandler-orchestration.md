@@ -1,11 +1,11 @@
 ---
-title: "ExceptionHandler オーケストレーション |Microsoft ドキュメント"
-ms.custom: 
+title: ExceptionHandler オーケストレーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, systems
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, errors [process management solutions]
 - process management solution tutorial, errors
 ms.assetid: ac154e76-9dfe-433a-948b-e098df705fe5
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280026"
 ---
 # <a name="the-exceptionhandler-orchestration"></a><span data-ttu-id="d47a7-102">ExceptionHandler オーケストレーション</span><span class="sxs-lookup"><span data-stu-id="d47a7-102">The ExceptionHandler Orchestration</span></span>
 <span data-ttu-id="d47a7-103">ビジネス プロセス管理ソリューションで 2 つの種類の例外を使用します。 システム例外とアプリケーションの例外。</span><span class="sxs-lookup"><span data-stu-id="d47a7-103">The Business Process Management solution uses two kinds of exceptions: system exceptions and application exceptions.</span></span> <span data-ttu-id="d47a7-104">システム例外を含めるようなリソース エラー: ネットワーク接続の失敗、例を示します。</span><span class="sxs-lookup"><span data-stu-id="d47a7-104">System exceptions include things like resource errors—a network connection failing, for example.</span></span> <span data-ttu-id="d47a7-105">このような問題は、時間が経つと自然に解決する可能性があるので、ソリューションはシステム例外の原因となったすべての操作を再試行します。</span><span class="sxs-lookup"><span data-stu-id="d47a7-105">There is a chance that such a problem may resolve itself after an interval so that the solution retries all operations that produce system exceptions.</span></span> <span data-ttu-id="d47a7-106">アプリケーション例外は、論理エラーや不整合など、自然に解決する可能性の少ない事象を原因として生じます。</span><span class="sxs-lookup"><span data-stu-id="d47a7-106">Application exceptions are produced by things less likely to resolve themselves, such as logical errors or some form of inconsistency.</span></span> <span data-ttu-id="d47a7-107">ソリューションを使用して、 **ExceptionHandlerOrch**システムとアプリケーションの両方のエラーを処理するオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="d47a7-107">The solution uses the **ExceptionHandlerOrch** orchestration to process both system and application errors.</span></span>  

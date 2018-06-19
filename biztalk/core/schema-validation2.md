@@ -1,14 +1,14 @@
 ---
-title: "スキーマ Validation2 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ Validation2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f9d1576-10df-4c5a-9ae0-618f0dd54b4e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269242"
 ---
 # <a name="schema-validation"></a><span data-ttu-id="60f8a-102">スキーマの検証</span><span class="sxs-lookup"><span data-stu-id="60f8a-102">Schema Validation</span></span>
 <span data-ttu-id="60f8a-103">EDI 受信パイプラインと EDI 送信パイプラインは、次のスキーマを使用してメッセージを検証します。</span><span class="sxs-lookup"><span data-stu-id="60f8a-103">The EDI receive pipeline and EDI send pipeline validate a message using the following schemas:</span></span>  

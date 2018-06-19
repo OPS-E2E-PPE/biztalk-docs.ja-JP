@@ -1,18 +1,18 @@
 ---
-title: "無効にする方法、受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効にする方法、受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive locations], disabling
 - receive locations, disabling
 - disabling, receive locations
 ms.assetid: 079a5c2c-3aec-49b3-afac-f3202404bca1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249818"
 ---
 # <a name="how-to-disable-a-receive-location"></a><span data-ttu-id="54c0f-102">受信場所を無効にする方法</span><span class="sxs-lookup"><span data-stu-id="54c0f-102">How to Disable a Receive Location</span></span>
 <span data-ttu-id="54c0f-103">このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所を無効にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="54c0f-103">This topic describes how to use the BizTalk Server Administration console to disable a receive location.</span></span> <span data-ttu-id="54c0f-104">受信場所を無効にした場合、受信場所でメッセージの受信が停止されます。</span><span class="sxs-lookup"><span data-stu-id="54c0f-104">When you disable a receive location, it stops receiving messages.</span></span> <span data-ttu-id="54c0f-105">必要な場合は、受信場所を無効にした後で、もう一度受信場所を有効にすると、メッセージを再び受信できるようになります。</span><span class="sxs-lookup"><span data-stu-id="54c0f-105">If you want, after disabling a receive location, you can enable it again, so that it will again receive messages.</span></span>  

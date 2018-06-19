@@ -1,14 +1,14 @@
 ---
-title: "マップの警告とエラーを解決する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マップの警告とエラーを解決する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8a3e7f3-c96c-4d3d-9f7c-d2bfd9ace4fd
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254882"
 ---
 # <a name="how-to-resolve-map-warnings-and-errors"></a><span data-ttu-id="0b717-102">マップ作成時の警告およびエラーの解決方法</span><span class="sxs-lookup"><span data-stu-id="0b717-102">How to Resolve Map Warnings and Errors</span></span>
 <span data-ttu-id="0b717-103">マップをコンパイルすると、コンパイル処理で警告やエラーが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="0b717-103">When you compile a map, you may find that warnings and errors result from the compilation process.</span></span>  

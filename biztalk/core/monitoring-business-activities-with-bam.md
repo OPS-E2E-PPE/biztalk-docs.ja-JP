@@ -1,11 +1,11 @@
 ---
-title: "BAM によるビジネス アクティビティの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM によるビジネス アクティビティの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], business activities
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - monitoring business activities [BAM], about monitoring business activities
 - monitoring business activities [BAM]
 ms.assetid: 282a07b9-1fb2-4a83-a9b8-7d1df6c15a5b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262794"
 ---
 # <a name="monitoring-business-activities-with-bam"></a><span data-ttu-id="99e58-102">BAM によるビジネス アクティビティの監視</span><span class="sxs-lookup"><span data-stu-id="99e58-102">Monitoring Business Activities with BAM</span></span>
 <span data-ttu-id="99e58-103">ビジネス アクティビティ監視 (BAM) を使用すると、ビジネス アナリストはビジネス プロセスに関するデータを監視できます。</span><span class="sxs-lookup"><span data-stu-id="99e58-103">Business Analysts use Business Activity Monitoring (BAM) to monitor data about business processes.</span></span> <span data-ttu-id="99e58-104">ビジネス アナリストは、Microsoft Office Excel の BAM ブックを使用して、ビジネス プロセスから収集するデータの種類と、収集したデータをビジネス ユーザーが表示する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="99e58-104">Business analysts use the BAM workbook in Microsoft Office Excel to define what data to collect from business processes and to define the way in which business users will view the collected data.</span></span>  

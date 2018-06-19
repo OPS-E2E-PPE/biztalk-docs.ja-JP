@@ -1,17 +1,17 @@
 ---
-title: "パターンは、ビジネス プロセス管理ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: パターンは、ビジネス プロセス管理ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, programming patterns
 - patterns [process management solutions], programming
 ms.assetid: bfd97daf-2a86-4faf-8901-b6bfb520d7b5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263626"
 ---
 # <a name="patterns-in-the-business-process-management-solution"></a><span data-ttu-id="86686-102">ビジネス プロセス管理ソリューションのパターン</span><span class="sxs-lookup"><span data-stu-id="86686-102">Patterns in the Business Process Management Solution</span></span>
 <span data-ttu-id="86686-103">このセクションでは、ビジネス プロセス管理ソリューションを作成する基本的なプログラミング パターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="86686-103">This section looks at the basic programming patterns making up the Business Process Management solution.</span></span> <span data-ttu-id="86686-104">ソリューションに関連するエンタープライズ パターンの検討から開始し、これらのパターンを BizTalk パターンに発展させます。</span><span class="sxs-lookup"><span data-stu-id="86686-104">It begins by considering the enterprise patterns involved in the solution and develops those patterns into BizTalk patterns.</span></span> <span data-ttu-id="86686-105">次に、これらのパターンがどのように BizTalk コンポーネントに変換され、それらのコンポーネントがどのようにアセンブリとアプリケーションに分類されるかを見ていきます。</span><span class="sxs-lookup"><span data-stu-id="86686-105">It then looks at how those patterns are translated into BizTalk components and how those components are then grouped into assemblies and applications.</span></span> <span data-ttu-id="86686-106">最後のセクションでは、エンタープライズ パターン、BizTalk Server 固有のパターン、その他の一般的なプログラミング パターンを含めて、ソリューションで使用されているパターンの分類を示します。</span><span class="sxs-lookup"><span data-stu-id="86686-106">The final section catalogs the patterns in the solution, whether those are enterprise patterns, BizTalk Server patterns, or other general programming patterns.</span></span>  

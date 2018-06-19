@@ -1,14 +1,14 @@
 ---
-title: "メッセージのバッチ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのバッチ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5f893d16-2670-4463-9a89-6f5be912a045
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262722"
 ---
 # <a name="message-batches"></a><span data-ttu-id="51fe8-102">メッセージ バッチ</span><span class="sxs-lookup"><span data-stu-id="51fe8-102">Message Batches</span></span>
 <span data-ttu-id="51fe8-103">一括処理する必要があるメッセージのグループがアダプターに存在する場合は、これらのメッセージをバッチで処理してパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="51fe8-103">When your adapter has a group of messages that need to be processed at one time, you should batch these messages to optimize performance.</span></span> <span data-ttu-id="51fe8-104">プログラム的には、メッセージ バッチとは関連する操作が含まれているメッセージの集まりということになります。</span><span class="sxs-lookup"><span data-stu-id="51fe8-104">Programmatically, message batches are collections of messages with an associated operation.</span></span> <span data-ttu-id="51fe8-105">各メッセージを個別に送信するのではなく、バッチ内のメッセージをグループ化、によっては、リソースとタスクの処理の使用を最適化します。</span><span class="sxs-lookup"><span data-stu-id="51fe8-105">By grouping messages in a batch rather than submitting each message individually, you optimize the use of resources and processing tasks.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="51fe8-106">バッチ処理を使用します。</span><span class="sxs-lookup"><span data-stu-id="51fe8-106"> uses batching to:</span></span>  

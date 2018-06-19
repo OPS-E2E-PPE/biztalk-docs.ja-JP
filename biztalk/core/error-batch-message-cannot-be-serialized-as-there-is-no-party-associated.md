@@ -1,14 +1,14 @@
 ---
-title: "パーティに関連付けられている送信ポートがあるために、バッチ メッセージをシリアル化することはできません |Microsoft ドキュメント"
-ms.custom: 
+title: パーティに関連付けられている送信ポートがあるために、バッチ メッセージをシリアル化することはできません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d697ff9c-a6d1-4a3c-9ec3-4cd496f7eec2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241482"
 ---
 # <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a><span data-ttu-id="60396-102">送信ポートに関連付けられたパーティが存在しないため、バッチ メッセージをシリアル化できません</span><span class="sxs-lookup"><span data-stu-id="60396-102">Batch message cannot be serialized as there is no party associated with send port</span></span>
 ## <a name="details"></a><span data-ttu-id="60396-103">詳細</span><span class="sxs-lookup"><span data-stu-id="60396-103">Details</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "必要な関連アプリケーション名が指定されていません |Microsoft ドキュメント"
-ms.custom: 
+title: 必要な関連アプリケーション名が指定されていません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3e82a39-b052-4702-bfe2-700756a0ee6a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268466"
 ---
 # <a name="required-affiliate-application-name-not-specified"></a><span data-ttu-id="6fd4f-102">必要な関連アプリケーション名が指定されていません</span><span class="sxs-lookup"><span data-stu-id="6fd4f-102">Required affiliate application name not specified</span></span>
 ## <a name="details"></a><span data-ttu-id="6fd4f-103">詳細</span><span class="sxs-lookup"><span data-stu-id="6fd4f-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="6fd4f-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="6fd4f-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="6fd4f-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6fd4f-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="6fd4f-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6fd4f-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="6fd4f-126">ポート**型**一覧で、 **Wcf-custom**です。</span><span class="sxs-lookup"><span data-stu-id="6fd4f-126">In the port **Type** list, select **WCF-Custom**.</span></span>  
   

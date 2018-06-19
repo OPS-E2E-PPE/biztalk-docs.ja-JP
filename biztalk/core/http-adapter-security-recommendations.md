@@ -1,18 +1,18 @@
 ---
-title: "HTTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, HTTP adapters
 - configuring [HTTP adapters], security
 - HTTP adapters, security
 ms.assetid: ef6043c2-c62a-40e5-b2e1-53e60f87a761
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256762"
 ---
 # <a name="http-adapter-security-recommendations"></a><span data-ttu-id="867cc-102">HTTP アダプタのセキュリティに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="867cc-102">HTTP Adapter Security Recommendations</span></span>
 <span data-ttu-id="867cc-103">HTTP アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] とアプリケーション間で HTTP (Hypertext Transfer Protocol) を介して情報を交換するために使用します。</span><span class="sxs-lookup"><span data-stu-id="867cc-103">You use the HTTP adapter to exchange information between [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and an application by means of the Hypertext Transfer Protocol (HTTP).</span></span> <span data-ttu-id="867cc-104">アプリケーションは、指定された HTTP URL に HTTP POST 要求または HTTP GET 要求を送信することで、サーバーにメッセージを送信できます。</span><span class="sxs-lookup"><span data-stu-id="867cc-104">Applications can send messages to a server by sending HTTP POST or HTTP GET requests to a specified HTTP URL.</span></span> <span data-ttu-id="867cc-105">HTTP アダプターに関する詳細については、次を参照してください。 [HTTP アダプター](../core/http-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="867cc-105">For more information about the HTTP adapter, see [HTTP Adapter](../core/http-adapter.md).</span></span> <span data-ttu-id="867cc-106">HTTP アダプターをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="867cc-106">It is recommended that you use the following guidelines for securing and deploying the HTTP adapter in your environment:</span></span>  

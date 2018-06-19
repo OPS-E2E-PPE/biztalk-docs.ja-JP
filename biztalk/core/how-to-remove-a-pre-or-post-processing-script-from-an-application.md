@@ -1,11 +1,11 @@
 ---
-title: "前または処理後のスクリプトをアプリケーションから削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 前または処理後のスクリプトをアプリケーションから削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [scripts], deleting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - scripts, deleting
 - applications, scripts
 ms.assetid: 7911f098-97f2-4a5d-87fe-20b55231113e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254762"
 ---
 # <a name="how-to-remove-a-pre--or-post-processing-script-from-an-application"></a><span data-ttu-id="d2e71-102">処理前または処理後のスクリプトをアプリケーションから削除する方法</span><span class="sxs-lookup"><span data-stu-id="d2e71-102">How to Remove a Pre- or Post-processing Script from an Application</span></span>
 <span data-ttu-id="d2e71-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、処理前または処理後のスクリプトをアプリケーションから削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d2e71-103">This topic describes how to use the BizTalk Server Administration console or the command line to remove a pre- or post-processing script from an application.</span></span> <span data-ttu-id="d2e71-104">これにより、BizTalk 管理データベースからスクリプトが削除されます。そのため、アプリケーションの.msi ファイルにスクリプトがエクスポートされません。</span><span class="sxs-lookup"><span data-stu-id="d2e71-104">This removes the script from the BizTalk Management database, so that it will not be exported in the application .msi file.</span></span> <span data-ttu-id="d2e71-105">ローカル ファイル システムに存在しているスクリプトは削除されません。</span><span class="sxs-lookup"><span data-stu-id="d2e71-105">This does not remove the script from the local file system, if it exists there.</span></span>  

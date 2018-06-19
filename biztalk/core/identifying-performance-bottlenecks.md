@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256642"
 ---
 # <a name="identifying-performance-bottlenecks"></a><span data-ttu-id="4044c-102">パフォーマンスのボトルネックの特定</span><span class="sxs-lookup"><span data-stu-id="4044c-102">Identifying Performance Bottlenecks</span></span>
 <span data-ttu-id="4044c-103">理想的な状況では、システムがほぼすべての機能を利用して実行されている (使用できるリソースを効率的に使用している) 場合、維持可能なスループットが実現し、総保有コスト (TCO) を削減できます。</span><span class="sxs-lookup"><span data-stu-id="4044c-103">Ideally, when a system is running at almost full capacity (optimal utilization of available resources), sustainable throughput can be achieved, lowering total cost of ownership (TCO).</span></span>  

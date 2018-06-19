@@ -1,14 +1,14 @@
 ---
-title: "ネイティブ パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ネイティブ パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: adb6b994-c20c-4f43-82c5-a07b29498cdf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248714"
 ---
 # <a name="how-to-configure-native-pipeline-components"></a><span data-ttu-id="fda4a-102">ネイティブ パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="fda4a-102">How to Configure Native Pipeline Components</span></span>
 <span data-ttu-id="fda4a-103">次のコードは、`IPersistPropertyBag` インターフェイスを使用してネイティブ パイプライン コンポーネントを構成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="fda4a-103">The following code shows how to configure native pipeline components using the `IPersistPropertyBag` interface.</span></span>  

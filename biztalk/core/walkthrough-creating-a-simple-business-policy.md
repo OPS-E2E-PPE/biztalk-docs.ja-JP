@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: 単純なビジネス ポリシーの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: 単純なビジネス ポリシーの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02d35735-dce2-4ee2-965e-dae307a125b0
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975821"
 ---
 # <a name="walkthrough-creating-a-simple-business-policy"></a><span data-ttu-id="e1ee3-102">チュートリアル: 単純なビジネス ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-102">Walkthrough: Creating a Simple Business Policy</span></span>
 <span data-ttu-id="e1ee3-103">このチュートリアルは、ビジネス ルール作成ツールを使用してという名前の単純なビジネス ポリシーを作成する手順を示します**ProcessPurchaseOrder**という名前のルールを含む**ApprovedRule**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-103">This walkthrough provides step-by-step procedures for using the Business Rule Composer to create a simple business policy named **ProcessPurchaseOrder** containing a rule named **ApprovedRule**.</span></span> <span data-ttu-id="e1ee3-104">**ApprovedRule**ルールは、ユーザーが、ファクトとして XML ドキュメントを送信するを必要としの値を設定、**ステータス**フィールドをドキュメントに**Approved**場合、の値**数量**フィールドは、以下を**500**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-104">The **ApprovedRule** rule expects the user to submit an XML document as a fact, and sets the value of the **Status** field in the document to **Approved** if the value of the **Quantity** field is less than or equal to **500**.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="e1ee3-117">**開始**] メニューの [開いている**メモ帳**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-117">On the **Start** menu, open **Notepad**.</span></span>  
   
-2.  <span data-ttu-id="e1ee3-118">**[ファイル]** メニューの **[新規作成]**をポイントし、 **[ファイル]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-118">On the **File** menu, point to **New**, and then click **File**.</span></span>  
+2.  <span data-ttu-id="e1ee3-118">**[ファイル]** メニューの **[新規作成]** をポイントし、 **[ファイル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-118">On the **File** menu, point to **New**, and then click **File**.</span></span>  
   
 3.  <span data-ttu-id="e1ee3-119">次の XML テキストをエディターにコピーします。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-119">Copy the following XML text to the editor:</span></span>  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="e1ee3-120">**ファイル** メニューのをクリックして**TextFile1.txt に名前を付けて**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-120">On the **File** menu, click **Save TextFile1.txt As**.</span></span>  
   
-5.  <span data-ttu-id="e1ee3-121">値を変更**名前を付けて保存型**から**テキスト ドキュメント (\*.txt)**に**すべてのファイル**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-121">Change the value for **Save As type** from **Text Documents(\*.txt)** to **All Files**.</span></span>  
+5.  <span data-ttu-id="e1ee3-121">値を変更**名前を付けて保存型**から**テキスト ドキュメント (\*.txt)** に**すべてのファイル**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-121">Change the value for **Save As type** from **Text Documents(\*.txt)** to **All Files**.</span></span>  
   
 6.  <span data-ttu-id="e1ee3-122">型**PO.xsd**で、**ファイル名**テキスト ボックスで、ディレクトリに移動**C:\BRE-Walkthroughs**の値を変更**エンコード**に**Unicode**  をクリックし、**保存**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-122">Type **PO.xsd** in the **File name** text box, change the directory to **C:\BRE-Walkthroughs**, change the value of **Encoding** to **Unicode** and then click **Save**.</span></span>  
   
@@ -93,11 +94,11 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="e1ee3-131">ポリシー エクスプ ローラー ウィンドウで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-131">In the Policy Explorer window, right-click **Policies**, and then click **Add New Policy**.</span></span>  
   
-3.  <span data-ttu-id="e1ee3-132">ポリシーの名前を編集**"policy1"**を**ProcessPurchaseOrder** ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-132">Edit the name of the policy, **Policy1**, to **ProcessPurchaseOrder** and press ENTER.</span></span> <span data-ttu-id="e1ee3-133">ポリシーの名前を変更することも、**プロパティ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-133">You can also change the name of the policy in the **Properties** window.</span></span>  
+3.  <span data-ttu-id="e1ee3-132">ポリシーの名前を編集 **"policy1"** を**ProcessPurchaseOrder** ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-132">Edit the name of the policy, **Policy1**, to **ProcessPurchaseOrder** and press ENTER.</span></span> <span data-ttu-id="e1ee3-133">ポリシーの名前を変更することも、**プロパティ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-133">You can also change the name of the policy in the **Properties** window.</span></span>  
   
 4.  <span data-ttu-id="e1ee3-134">右クリック**バージョン 1.0**、クリックして**新しいルールの追加**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-134">Right-click **Version 1.0**, and then click **AddNewRule**.</span></span>  
   
-5.  <span data-ttu-id="e1ee3-135">ルールの名前を編集**Rule1**に**ApprovalRule** ENTER キーを押します**です。**</span><span class="sxs-lookup"><span data-stu-id="e1ee3-135">Edit the name of the rule from **Rule1** to **ApprovalRule** and press ENTER**.**</span></span> <span data-ttu-id="e1ee3-136">内のルールの名前を変更することも、**プロパティ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-136">You can also change the name of the rule in the **Properties** window.</span></span>  
+5.  <span data-ttu-id="e1ee3-135">ルールの名前を編集**Rule1**に**ApprovalRule** ENTER キーを押します**です。**</span><span class="sxs-lookup"><span data-stu-id="e1ee3-135">Edit the name of the rule from **Rule1** to **ApprovalRule** and press ENTER **.**</span></span> <span data-ttu-id="e1ee3-136">内のルールの名前を変更することも、**プロパティ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-136">You can also change the name of the rule in the **Properties** window.</span></span>  
   
 6.  <span data-ttu-id="e1ee3-137">[ファクト エクスプ ローラー] ウィンドウ、 **XML スキーマ**タブです。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-137">In the Facts Explorer window, click the **XML Schemas** tab.</span></span>  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="e1ee3-152">![ビジネス ルール作成ツール &#45; DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")</span><span class="sxs-lookup"><span data-stu-id="e1ee3-152">![Business Rule Composer&#45;DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")</span></span>  
   
-14. <span data-ttu-id="e1ee3-153">[THEN] ペインでをクリックして**\<値を入力\>**し入力**Approved**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-153">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
+14. <span data-ttu-id="e1ee3-153">[THEN] ペインでをクリックして**\<値を入力\>** し入力**Approved**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-153">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
   
 15. <span data-ttu-id="e1ee3-154">ポリシー エクスプ ローラー ウィンドウで右クリック**バージョン 1.0 (未保存)**、クリックして**保存**です。</span><span class="sxs-lookup"><span data-stu-id="e1ee3-154">In the Policy Explorer window, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
   

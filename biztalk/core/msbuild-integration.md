@@ -1,14 +1,14 @@
 ---
-title: "MSBUILD の統合 |Microsoft ドキュメント"
-ms.custom: 
+title: MSBUILD の統合 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f33e6078-49a6-4b58-a7bb-3b76c235712f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007275"
 ---
 # <a name="msbuild-integration"></a><span data-ttu-id="cd5e3-102">MSBUILD の統合</span><span class="sxs-lookup"><span data-stu-id="cd5e3-102">MSBUILD Integration</span></span>
 <span data-ttu-id="cd5e3-103">Visual Studio は MSBUILD プロジェクト ファイル形式を使用して BizTalk Server プロジェクトを含むマネージ プロジェクトに関するビルド情報を格納して、BizTalk プロジェクトをビルドするには、コンピューターの有無に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="cd5e3-103">Visual Studio uses the MSBUILD project file format to store build information about managed projects including BizTalk Server projects, and you can build BizTalk projects on a computer with or without [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="cd5e3-104">このセクションでは、この新機能の詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="cd5e3-104">This section gives you details over this new feature.</span></span>  

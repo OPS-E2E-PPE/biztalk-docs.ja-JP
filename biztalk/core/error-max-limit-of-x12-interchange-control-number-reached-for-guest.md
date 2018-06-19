@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジ制御番号が Guest の設定に達すると、許容される X12 上限 |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジ制御番号が Guest の設定に達すると、許容される X12 上限 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9737053d-6065-4c88-8dfa-5f69b48e0e82
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241674"
 ---
 # <a name="max-limit-of-acceptable-x12-interchange-control-number-has-reached-for-guest-settings"></a><span data-ttu-id="886e3-102">Guest の設定の X12 インターチェンジ制御番号が、許容される上限に到達しました</span><span class="sxs-lookup"><span data-stu-id="886e3-102">Max limit of acceptable X12 interchange control number has reached for Guest settings</span></span>
 ## <a name="details"></a><span data-ttu-id="886e3-103">詳細</span><span class="sxs-lookup"><span data-stu-id="886e3-103">Details</span></span>  

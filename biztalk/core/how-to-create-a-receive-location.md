@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249690"
 ---
 # <a name="how-to-create-a-receive-location"></a><span data-ttu-id="01c12-102">受信場所を作成する方法</span><span class="sxs-lookup"><span data-stu-id="01c12-102">How to Create a Receive Location</span></span>
 <span data-ttu-id="01c12-103">このトピックでは、BizTalk Server 管理コンソールを使用して、新しい受信場所を作成し、その受信場所が属する受信ポートを指定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="01c12-103">This topic describes how to use the BizTalk Server Administration console to create a new receive location and specify the receive port to which it belongs.</span></span> <span data-ttu-id="01c12-104">受信場所は、受信メッセージを受信するアドレスと、そのアドレスで受信したメッセージを処理するメッセージング パイプラインで構成されます。</span><span class="sxs-lookup"><span data-stu-id="01c12-104">A receive location is an address where inbound messages arrive as well as the messaging pipeline that processes messages received at that address.</span></span>  

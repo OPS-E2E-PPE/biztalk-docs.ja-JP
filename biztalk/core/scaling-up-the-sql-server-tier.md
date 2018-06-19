@@ -1,11 +1,11 @@
 ---
-title: "SQL Server 層のスケール アップ |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server 層のスケール アップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, scaling
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - scaling, scaling up
 - scaling, strategies
 ms.assetid: 4352c4af-6861-43d9-b433-9ca25668b439
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269682"
 ---
 # <a name="scaling-up-the-sql-server-tier"></a><span data-ttu-id="a1d32-102">SQL Server 層のスケール アップ</span><span class="sxs-lookup"><span data-stu-id="a1d32-102">Scaling Up the SQL Server Tier</span></span>
 <span data-ttu-id="a1d32-103">このパターンで、スループットまたは待機時間の要件に応じて、既存の SQL メッセージ ボックス データベースをアップグレードしてスケール アップします。</span><span class="sxs-lookup"><span data-stu-id="a1d32-103">In this pattern, the existing SQL MessageBox database is upgraded to scale according to the requirements in throughput or latency.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "作成する方法について呼び出されたオーケストレーションに受信サブスクリプション |Microsoft ドキュメント"
-ms.custom: 
+title: 作成する方法について呼び出されたオーケストレーションに受信サブスクリプション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3423309a-cb5a-40a5-9582-6ee3ac82b538
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250146"
 ---
 # <a name="how-to-create-receive-subscriptions-at-invoked-orchestrations"></a><span data-ttu-id="82ef4-102">呼び出されたオーケストレーションに受信サブスクリプションを作成する方法</span><span class="sxs-lookup"><span data-stu-id="82ef4-102">How to Create Receive Subscriptions at Invoked Orchestrations</span></span>
 <span data-ttu-id="82ef4-103">経由でパラメーターとしてメッセージを渡すことができますが、**オーケストレーションの開始**図形の後に呼び出されたオーケストレーションに、呼び出し元オーケストレーションからメッセージを送信するいくつかのシナリオで、オーケストレーションを開始するときに、呼び出し。</span><span class="sxs-lookup"><span data-stu-id="82ef4-103">Although you can pass messages as parameters through the **Start Orchestration** shape when you start an orchestration, in some scenarios you may want to send messages from the caller orchestration to the invoked orchestration after the invocation.</span></span> <span data-ttu-id="82ef4-104">たとえば、渡すべきメッセージが呼び出しの時点で判明していない場合や、呼び出されたオーケストレーションに他のオーケストレーションから動的にメッセージを送信する場合などです。</span><span class="sxs-lookup"><span data-stu-id="82ef4-104">For example, you may not know what messages you want to pass at the time of invocation, or other orchestrations may need to send messages to the invoked orchestration dynamically.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "アプリケーションを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, creating
 - creating, applications
 ms.assetid: 6a8682a7-3bef-4978-996f-5a9c5154ce62
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250138"
 ---
 # <a name="how-to-create-an-application"></a><span data-ttu-id="dbd04-102">アプリケーションを作成する方法</span><span class="sxs-lookup"><span data-stu-id="dbd04-102">How to Create an Application</span></span>
 <span data-ttu-id="dbd04-103">新しい BizTalk アプリケーションを作成するには、次の 3 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="dbd04-103">There are three ways to create a new BizTalk application:</span></span>  
@@ -63,7 +64,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="dbd04-139">一覧からアプリケーションを削除する場合は、アプリケーションを選択し、をクリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="dbd04-139">If you want to remove an application from the list, select the application and click **Remove**.</span></span>  
   
-9. <span data-ttu-id="dbd04-140">完了したら、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbd04-140">When finished, click **OK**.</span></span>  
+9. <span data-ttu-id="dbd04-140">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbd04-140">When finished, click **OK**.</span></span>  
   
 #### <a name="using-the-command-line"></a><span data-ttu-id="dbd04-141">コマンドラインを使用</span><span class="sxs-lookup"><span data-stu-id="dbd04-141">Using the command line</span></span>  
   

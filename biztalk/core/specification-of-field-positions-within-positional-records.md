@@ -1,14 +1,14 @@
 ---
-title: "位置指定レコードにおけるフィールド位置の仕様 |Microsoft ドキュメント"
-ms.custom: 
+title: 位置指定レコードにおけるフィールド位置の仕様 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33c2eee3-ec30-46c5-a143-a3d2e2f265a6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279346"
 ---
 # <a name="specification-of-field-positions-within-positional-records"></a><span data-ttu-id="42608-102">位置指定レコードにおけるフィールド位置の仕様</span><span class="sxs-lookup"><span data-stu-id="42608-102">Specification of Field Positions within Positional Records</span></span>
 <span data-ttu-id="42608-103">位置指定レコードを定義するには、そのレコードに含まれるフィールドの位置情報と長さ情報を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="42608-103">To define a positional record, you must provide information about the positions and lengths of the fields within that record.</span></span> <span data-ttu-id="42608-104">レコードにサブレコードが含まれている場合、サブレコードに含まれるフィールドの位置と長さが集計されて、上位レコードの情報が生成されます。</span><span class="sxs-lookup"><span data-stu-id="42608-104">If the record contains subrecords, the positions and lengths of the fields in the subrecord are rolled up to contribute to the information about the containing record.</span></span>  
@@ -24,7 +25,7 @@ ms.lasthandoff: 09/20/2017
  <span data-ttu-id="42608-105">指定した値の合計、**位置指定オフセット**と**位置指定値**、特定のプロパティ**フィールド要素**または**フィールド属性**ノードが、対応するフィールドに割り当てられる文字数を決定します。</span><span class="sxs-lookup"><span data-stu-id="42608-105">The sum of the values you specify for the **Positional Offset** and **Positional Length** properties for a particular **Field Element** or **Field Attribute** node determines the number of characters dedicated to the corresponding field.</span></span> <span data-ttu-id="42608-106">レコードおよびそのサブレコードに含まれるすべてのフィールドについて、このような一連の合計値を取得することによって各フィールドの境界が決定されます。</span><span class="sxs-lookup"><span data-stu-id="42608-106">The series of these sums across all of the fields in the record and any of its subrecords determine the boundaries of the fields in the records.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="42608-107">ときに、**カウント位置 (バイト単位)**のプロパティ、**スキーマ**に設定されているノード**はい**、**位置指定値**と**位置のオフセット**プロパティは、文字ではなくバイト数を指定します。</span><span class="sxs-lookup"><span data-stu-id="42608-107">When the **Count Positions In Bytes** property of the **Schema** node is set to **Yes**, the **Positional Length** and **Position Offset** properties specify bytes rather than characters.</span></span>  
+>  <span data-ttu-id="42608-107">ときに、**カウント位置 (バイト単位)** のプロパティ、**スキーマ**に設定されているノード**はい**、**位置指定値**と**位置のオフセット**プロパティは、文字ではなくバイト数を指定します。</span><span class="sxs-lookup"><span data-stu-id="42608-107">When the **Count Positions In Bytes** property of the **Schema** node is set to **Yes**, the **Positional Length** and **Position Offset** properties specify bytes rather than characters.</span></span>  
 
 <span data-ttu-id="42608-108">これらのプロパティの詳細を参照してください[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。</span><span class="sxs-lookup"><span data-stu-id="42608-108">See more details on these properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
   

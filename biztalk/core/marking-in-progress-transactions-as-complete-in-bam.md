@@ -1,11 +1,11 @@
 ---
-title: "BAM で完了済みとして実行中のトランザクションのマークを付ける |Microsoft ドキュメント"
-ms.custom: 
+title: BAM で完了済みとして実行中のトランザクションのマークを付ける |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, data recovery
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM, data loss
 - data loss, BAM
 ms.assetid: 8f734953-483a-481a-9ded-b48923859199
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262370"
 ---
 # <a name="marking-in-progress-transactions-as-complete-in-bam"></a><span data-ttu-id="126d2-102">BAM の進行中トランザクションを "完了" としてマークする</span><span class="sxs-lookup"><span data-stu-id="126d2-102">Marking In-Progress Transactions as Complete in BAM</span></span>
 <span data-ttu-id="126d2-103">ビジネス アクティビティ監視 (BAM) は、不完全なトレース インスタンスのデータを、特殊なアクティブ インスタンス テーブルに格納します。</span><span class="sxs-lookup"><span data-stu-id="126d2-103">Business Activity Monitoring (BAM) keeps data for incomplete trace instances in a special active instance table.</span></span> <span data-ttu-id="126d2-104">インスタンス レコードの一部が、最後のバックアップの前に開始し、バックアップの後に完了した場合、これらのレコードはアクティブ インスタンス テーブル内に残ったままになります。</span><span class="sxs-lookup"><span data-stu-id="126d2-104">If some instance records were started before the last backup but completed after the backup, those records will remain in the active instance table.</span></span> <span data-ttu-id="126d2-105">これができないシステムに機能してから、アクティブなインスタンス テーブルから移動できるようにを完了すると、これらのレコード手動でマークできます。</span><span class="sxs-lookup"><span data-stu-id="126d2-105">Although this does not prevent the system from functioning, you can manually mark these records as completed so that they can be moved out of the active instance table.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256634"
 ---
 # <a name="how-to-use-a-net-assembly-as-a-data-source"></a><span data-ttu-id="de15d-102">.NET アセンブリをデータ ソースとして使用する方法</span><span class="sxs-lookup"><span data-stu-id="de15d-102">How to Use a .NET Assembly as a Data Source</span></span>
 <span data-ttu-id="de15d-103">.NET アセンブリをデータ ソースとして指定できます。</span><span class="sxs-lookup"><span data-stu-id="de15d-103">You can specify a .NET assembly as a data source.</span></span> <span data-ttu-id="de15d-104">アセンブリからクラスまたはクラス メンバーを続けて選択して、ボキャブラリの定義やルール上にドラッグできます。</span><span class="sxs-lookup"><span data-stu-id="de15d-104">You can subsequently select a class or class member from the assembly, and drag it onto a vocabulary definition or rule.</span></span>  

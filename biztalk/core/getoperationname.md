@@ -1,14 +1,14 @@
 ---
-title: "GetOperationName |Microsoft ドキュメント"
-ms.custom: 
+title: GetOperationName |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f858269c-d412-43e3-85e1-398afa9375ab
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246138"
 ---
 # <a name="getoperationname"></a><span data-ttu-id="9ee1d-102">GetOperationName</span><span class="sxs-lookup"><span data-stu-id="9ee1d-102">GetOperationName</span></span>
 <span data-ttu-id="9ee1d-103">現在の操作の名前をスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="9ee1d-103">Pushes the name of the current operation onto the stack.</span></span>  

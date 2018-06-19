@@ -1,14 +1,14 @@
 ---
-title: "送信 AS2 メッセージを生成する |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 AS2 メッセージを生成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 288c8101-9a96-4f98-ae18-df43c7cdb3a0
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246546"
 ---
 # <a name="generating-an-outgoing-as2-message"></a><span data-ttu-id="f48d1-102">送信 AS2 メッセージの生成</span><span class="sxs-lookup"><span data-stu-id="f48d1-102">Generating an Outgoing AS2 Message</span></span>
 <span data-ttu-id="f48d1-103">AS2EDISend および AS2Send の各送信パイプラインは、次に示すように送信メッセージを生成します。</span><span class="sxs-lookup"><span data-stu-id="f48d1-103">The AS2EDISend and AS2Send send pipelines generate an outbound message as follows.</span></span> <span data-ttu-id="f48d1-104">各パイプラインの一方向アグリーメント タブでプロパティを使用して、**アグリーメントのプロパティ** ダイアログ ボックスを送信 AS2 メッセージを生成します。</span><span class="sxs-lookup"><span data-stu-id="f48d1-104">Each pipeline uses the properties in the one-way agreement tab of the **Agreement Properties** dialog box to generate the outgoing AS2 message.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "バッチ要素が構成されている文字の最大数を超えました |Microsoft ドキュメント"
-ms.custom: 
+title: バッチ要素が構成されている文字の最大数を超えました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ad12733-295a-43ba-8147-34c8716c2d37
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278346"
 ---
 # <a name="the-batch-element-exceeded-the-maximum-configured-character-count"></a><span data-ttu-id="fecfe-102">バッチ要素の文字数が、構成されている最大文字数を超えました</span><span class="sxs-lookup"><span data-stu-id="fecfe-102">The batch element exceeded the maximum configured character count</span></span>
 ## <a name="details"></a><span data-ttu-id="fecfe-103">詳細</span><span class="sxs-lookup"><span data-stu-id="fecfe-103">Details</span></span>  

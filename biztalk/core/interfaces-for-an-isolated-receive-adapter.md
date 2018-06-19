@@ -1,14 +1,14 @@
 ---
-title: "受信アダプターの分離インターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: 受信アダプターの分離インターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5c6b195e-76bf-4c3e-a324-5513bc24fed1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257770"
 ---
 # <a name="interfaces-for-an-isolated-receive-adapter"></a><span data-ttu-id="a4a3d-102">分離受信アダプター用のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="a4a3d-102">Interfaces for an Isolated Receive Adapter</span></span>
 <span data-ttu-id="a4a3d-103">分離受信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以外のプロセス領域でホストされます。</span><span class="sxs-lookup"><span data-stu-id="a4a3d-103">Isolated receive adapters are hosted in a process space other than the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process.</span></span> <span data-ttu-id="a4a3d-104">メッセージング エンジンと連携するために、分離受信アダプターは、エンジンが分離受信アダプターを構成および制御できるように、起動時に分離受信アダプター自体を登録します。</span><span class="sxs-lookup"><span data-stu-id="a4a3d-104">To interact with the Messaging Engine, an isolated receive adapter registers itself on startup so that the engine can configure and control it.</span></span> <span data-ttu-id="a4a3d-105">アダプターが、トランスポート プロキシを作成し、インターフェイスの照会**IBTTransportProxy**、および呼び出し**IBTTransportProxy.RegisterIsolatedReceiver**を登録する、 **IBTTransportConfig**メッセージング エンジンにコールバック インターフェイス。</span><span class="sxs-lookup"><span data-stu-id="a4a3d-105">The adapter creates the transport proxy, queries for the interface **IBTTransportProxy**, and calls **IBTTransportProxy.RegisterIsolatedReceiver** to register its **IBTTransportConfig** callback interface with the Messaging Engine.</span></span> <span data-ttu-id="a4a3d-106">この同期呼び出しは、アダプターが最初のメッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信する前に発生します。</span><span class="sxs-lookup"><span data-stu-id="a4a3d-106">This synchronous call occurs before the adapter submits its first message to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="a4a3d-107">これによって、メッセージ エンジンは、アダプターへのコールバックを行い、どのエンドポイントがアクティブであるか、および受信メッセージの待ち受けの対象となる必要があるかをアダプターに示すことができます。</span><span class="sxs-lookup"><span data-stu-id="a4a3d-107">This allows the Messaging Engine to call back into the adapter and tell it which of its endpoints are active and should be listened on for incoming messages.</span></span> <span data-ttu-id="a4a3d-108">分離アダプターは次のインターフェイスを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4a3d-108">Isolated adapters must implement the following interfaces:</span></span>  

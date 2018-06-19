@@ -1,17 +1,17 @@
 ---
-title: "スケーリング、サービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: スケーリング、サービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scaling, service solutions
 - service solution tutorial, scaling
 ms.assetid: 6c22a68d-03e7-4174-b612-0e2246aa9413
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269178"
 ---
 # <a name="scaling-the-service-oriented-solution"></a><span data-ttu-id="a4be7-102">スケーリング、サービス指向ソリューション</span><span class="sxs-lookup"><span data-stu-id="a4be7-102">Scaling the Service Oriented Solution</span></span>
 <span data-ttu-id="a4be7-103">短いメッセージ待機時間を維持しながら高いスループットをサポートできるようにソリューションを拡張するには、インライン バージョンのソリューションを使用します。</span><span class="sxs-lookup"><span data-stu-id="a4be7-103">To scale the solution to support higher throughput while maintaining low message latency requires you to use the inline version of the solution.</span></span> <span data-ttu-id="a4be7-104">インライン ソリューションはバックエンド システムとやり取りするとき、メッセージ ボックス データベースをバイパスします。</span><span class="sxs-lookup"><span data-stu-id="a4be7-104">The inline solution bypasses the MessageBox database when interacting with the back-end systems.</span></span>  

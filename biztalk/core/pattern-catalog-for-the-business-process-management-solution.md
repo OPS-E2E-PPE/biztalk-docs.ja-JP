@@ -1,11 +1,11 @@
 ---
-title: "ビジネス プロセス管理ソリューションのカタログのパターンを |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションのカタログのパターンを |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Canonical Message pattern [process management solutions]
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - Application Reference pattern [process management solutions]
 - Inverse Direct Partner Binding pattern [process management solutions]
 ms.assetid: 246b109e-6006-404d-88b9-e6324ce3473c
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266418"
 ---
 # <a name="pattern-catalog-for-the-business-process-management-solution"></a><span data-ttu-id="96afb-102">ビジネス プロセス管理ソリューションのパターン カタログ</span><span class="sxs-lookup"><span data-stu-id="96afb-102">Pattern Catalog for the Business Process Management Solution</span></span>
 <span data-ttu-id="96afb-103">ビジネス プロセス管理ソリューションのパターンとしては、前のセクションのエンタープライズ統合パターンや BizTalk Server をプログラミングする一般的なパターンがあります。</span><span class="sxs-lookup"><span data-stu-id="96afb-103">The patterns in the business process management solution include common patterns of programming BizTalk Server, as well as the enterprise integration patterns in preceding sections.</span></span> <span data-ttu-id="96afb-104">このセクションの一覧は、両方のパターンを含みます。</span><span class="sxs-lookup"><span data-stu-id="96afb-104">The list in this section includes both kinds of patterns.</span></span>  

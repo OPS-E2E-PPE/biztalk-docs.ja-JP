@@ -1,14 +1,14 @@
 ---
-title: "アグリーメントにアクセスできません |。Microsoft ドキュメント"
-ms.custom: 
+title: アグリーメントにアクセスできません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72890ee9-54c9-48ed-8c6e-8b329d79c68b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286538"
 ---
 # <a name="unable-to-access-agreement"></a><span data-ttu-id="5a5b6-102">アグリーメントにアクセスできません</span><span class="sxs-lookup"><span data-stu-id="5a5b6-102">Unable to access agreement</span></span>
 ## <a name="details"></a><span data-ttu-id="5a5b6-103">詳細</span><span class="sxs-lookup"><span data-stu-id="5a5b6-103">Details</span></span>  
@@ -43,10 +44,10 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="5a5b6-123">適切なパーティを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="5a5b6-123">Right-click the correct party.</span></span>  
   
-4.  <span data-ttu-id="5a5b6-124">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a5b6-124">Click **Properties**.</span></span>  
+4.  <span data-ttu-id="5a5b6-124">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a5b6-124">Click **Properties**.</span></span>  
   
 5.  <span data-ttu-id="5a5b6-125">[*パーティ名*]**パーティ プロパティ** ダイアログ ボックスで、入力**ediint-as2 From Value**で、**名前**列です。</span><span class="sxs-lookup"><span data-stu-id="5a5b6-125">In the [*party name*] **Party Properties** dialog box, enter **EDIINT-AS2 From Value** in the **Name** column.</span></span>  
   
 6.  <span data-ttu-id="5a5b6-126">パーティ名を入力、**値**列です。</span><span class="sxs-lookup"><span data-stu-id="5a5b6-126">Enter the party name in the **Value** column.</span></span>  
   
-7.  <span data-ttu-id="5a5b6-127">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a5b6-127">Click **OK**.</span></span>
+7.  <span data-ttu-id="5a5b6-127">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a5b6-127">Click **OK**.</span></span>

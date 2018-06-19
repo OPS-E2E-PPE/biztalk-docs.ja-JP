@@ -1,14 +1,14 @@
 ---
-title: "エンベロープ スキーマで列挙をカスタマイズする |Microsoft ドキュメント"
-ms.custom: 
+title: エンベロープ スキーマで列挙をカスタマイズする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2b053d82-753f-4a05-9922-fa5dbd073ba9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241858"
 ---
 # <a name="customizing-enumerations-in-the-envelope-schema"></a><span data-ttu-id="b61b7-102">エンベロープ スキーマでの列挙のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="b61b7-102">Customizing Enumerations in the Envelope Schema</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="b61b7-103"> では、サービス (エンベロープ) スキーマで ID フィールドの列挙をカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="b61b7-103"> enables you to customize ID field enumerations in the service (envelope) schema.</span></span> <span data-ttu-id="b61b7-104">これにより、エンベロープの送信者 ID フィールドまたは受信者 ID フィールドに標準以外の値 (X12 標準の本文に定義された値以外の値セット) を使用しているインターチェンジの送受信を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="b61b7-104">This enables you to receive or send interchanges that have non-standard values (outside the set of values defined by the X12 standards body) in the sender or receiver ID fields in the envelope.</span></span> <span data-ttu-id="b61b7-105">また、アグリーメント プロパティを定義する際に、ヘッダー値のドロップダウン リストで使用できる修飾子を変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="b61b7-105">It also enables you to change the qualifiers that are available in drop-down lists for header values in agreement property definitions.</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="b61b7-163">BizTalk エディターで、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にある X12_ServiceSchemaExtension.xsd スキーマ (X12 または HIPAA の列挙を変更する場合) または EDIFACT_ServiceSchemaExtension.xsd スキーマを BizTalk プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="b61b7-163">Add the X12_ServiceSchemaExtension.xsd schema (to modify X12 or HIPAA enums) or the EDIFACT_ServiceSchemaExtension.xsd schema in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI to a BizTalk project in the BizTalk Editor.</span></span> <span data-ttu-id="b61b7-164">スキーマを開きます。</span><span class="sxs-lookup"><span data-stu-id="b61b7-164">Open the schema.</span></span>  
   
-3.  <span data-ttu-id="b61b7-165">列挙の値を変更するには、内の列挙型を選択、**プロパティ** ウィンドウで、を開くには、省略記号をクリックし、**列挙エディター**です。</span><span class="sxs-lookup"><span data-stu-id="b61b7-165">To change the values in an enumeration, select the enumeration in the **Properties** pane, and then click the ellipsis to open the **Enumeration Editor**.</span></span> <span data-ttu-id="b61b7-166">各行に 1 つの値が存在する、必要に応じて、値の一覧に追加、**値**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="b61b7-166">Add to the list of values, as needed, ensuring that there is one value on each line in the **Values** pane.</span></span> <span data-ttu-id="b61b7-167">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b61b7-167">Click **OK**.</span></span>  
+3.  <span data-ttu-id="b61b7-165">列挙の値を変更するには、内の列挙型を選択、**プロパティ** ウィンドウで、を開くには、省略記号をクリックし、**列挙エディター**です。</span><span class="sxs-lookup"><span data-stu-id="b61b7-165">To change the values in an enumeration, select the enumeration in the **Properties** pane, and then click the ellipsis to open the **Enumeration Editor**.</span></span> <span data-ttu-id="b61b7-166">各行に 1 つの値が存在する、必要に応じて、値の一覧に追加、**値**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="b61b7-166">Add to the list of values, as needed, ensuring that there is one value on each line in the **Values** pane.</span></span> <span data-ttu-id="b61b7-167">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b61b7-167">Click **OK**.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="b61b7-168">サービス スキーマの名前空間は変更できません。</span><span class="sxs-lookup"><span data-stu-id="b61b7-168">You cannot change the namespace for the service schema.</span></span> <span data-ttu-id="b61b7-169">スキーマは、製品にインストールされている元の拡張スキーマと同じ名前空間とルート ノード名を持つ必要があります。</span><span class="sxs-lookup"><span data-stu-id="b61b7-169">The schema should have the same namespace and root node name as the original extension schema installed with the product.</span></span>  

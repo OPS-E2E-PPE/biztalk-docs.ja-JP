@@ -1,11 +1,11 @@
 ---
-title: "トランザクション |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, transactions
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Server Orchestration Engine
 - Orchestration Designer, transactions
 ms.assetid: d9a748c7-be9f-4965-a30f-6b05bd6b42a3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279186"
 ---
 # <a name="transactions"></a><span data-ttu-id="3bdf8-102">トランザクション</span><span class="sxs-lookup"><span data-stu-id="3bdf8-102">Transactions</span></span>
 <span data-ttu-id="3bdf8-103">BizTalk Server オーケストレーション エンジンは、状態を管理し、ビジネス ロジックを適用し、複雑な処理やトランザクション セットの実行をサポートするアプリケーションを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="3bdf8-103">The BizTalk Server Orchestration Engine manages the state, applies business logic, and invokes the supporting applications of complex processes and/or transaction sets.</span></span>  

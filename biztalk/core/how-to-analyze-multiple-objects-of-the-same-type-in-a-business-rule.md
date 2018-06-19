@@ -1,17 +1,17 @@
 ---
-title: "ビジネス ルールで同じ種類の複数のオブジェクトを分析する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルールで同じ種類の複数のオブジェクトを分析する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, multiple types
 - Business Rules Framework, programming
 ms.assetid: ff9790c1-13b0-4eee-8cac-d4f25ef5f0b7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248434"
 ---
 # <a name="how-to-analyze-multiple-objects-of-the-same-type-in-a-business-rule"></a><span data-ttu-id="181ea-102">ビジネス ルールで同じ種類の複数のオブジェクトを分析する方法</span><span class="sxs-lookup"><span data-stu-id="181ea-102">How to Analyze Multiple Objects of the Same Type in a Business Rule</span></span>
 <span data-ttu-id="181ea-103">多くのシナリオでは、さまざまな種類のビジネス ルールが作成されます。また、エンジンにアサートされる各インスタンスの種類が個別に分析され、ルールに従って処理されることが期待されます。</span><span class="sxs-lookup"><span data-stu-id="181ea-103">In many scenarios, you will write a business rule against a type and expect each instance of the type that is asserted into the engine to be separately analyzed and acted upon by the rule.</span></span> <span data-ttu-id="181ea-104">ただし、場合によっては、特定の種類の複数のインスタンスをルールで同時に分析することがあります。</span><span class="sxs-lookup"><span data-stu-id="181ea-104">In some scenarios, however, you will want to analyze multiple instances of a given type simultaneously in a rule.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 10: X12 および AS2 取引先アグリーメントの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 10: X12 および AS2 取引先アグリーメントの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8fcdb3af-727a-4d20-9dcf-cf162e7d3398
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279202"
 ---
 # <a name="step-10-configure-the-x12-and-as2-trading-partner-agreement"></a><span data-ttu-id="32eab-102">手順 10: X12 および AS2 取引先アグリーメントを構成します。</span><span class="sxs-lookup"><span data-stu-id="32eab-102">Step 10: Configure the X12 and AS2 Trading Partner Agreement</span></span>
 <span data-ttu-id="32eab-103">![手順 11 の 10](../core/media/tut-step10-of-11.gif "Tut_Step10_of_11")</span><span class="sxs-lookup"><span data-stu-id="32eab-103">![Step 10 of 11](../core/media/tut-step10-of-11.gif "Tut_Step10_of_11")</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="32eab-116">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-116">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**.</span></span>  
   
-8.  <span data-ttu-id="32eab-117">次のタスクを実行、 **Fabrikam が Contoso ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-117">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
+8.  <span data-ttu-id="32eab-117">次のタスクを実行、 **Fabrikam が Contoso ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-117">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
   
     1.  <span data-ttu-id="32eab-118">**識別子** ページで、値を入力**AS2-から**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-118">On the **Identifiers** page, enter values for **AS2-From** and **AS2-To**.</span></span> <span data-ttu-id="32eab-119">**AS2-から**、入力`Fabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="32eab-119">For **AS2-From**, enter `Fabrikam`.</span></span> <span data-ttu-id="32eab-120">**AS2-To**、入力`Contoso`です。</span><span class="sxs-lookup"><span data-stu-id="32eab-120">For **AS2- To**, enter `Contoso`.</span></span>  
   
@@ -61,9 +62,9 @@ ms.lasthandoff: 09/20/2017
   
         3.  <span data-ttu-id="32eab-126">選択、**非同期 MDN を要求する**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="32eab-126">Select the **Request asynchronous MDN** check box.</span></span>  
   
-        4.  <span data-ttu-id="32eab-127">**- Receipt-delivery-option (URL)**テキスト ボックスに、入力`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="32eab-127">In the **Receipt-Delivery-Option (URL)** text box, enter `http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`.</span></span>  
+        4.  <span data-ttu-id="32eab-127">**- Receipt-delivery-option (URL)** テキスト ボックスに、入力`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="32eab-127">In the **Receipt-Delivery-Option (URL)** text box, enter `http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`.</span></span>  
   
-9. <span data-ttu-id="32eab-128">次のタスクを実行、 **Contoso が Fabrikam ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-128">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
+9. <span data-ttu-id="32eab-128">次のタスクを実行、 **Contoso が Fabrikam ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-128">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
     1.  <span data-ttu-id="32eab-129">**識別子** ページで、値を入力**AS2-から**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-129">On the **Identifiers** page, enter values for **AS2-From** and **AS2-To**.</span></span> <span data-ttu-id="32eab-130">**AS2-から**、入力`Contoso`です。</span><span class="sxs-lookup"><span data-stu-id="32eab-130">For **AS2-From**, enter `Contoso`.</span></span> <span data-ttu-id="32eab-131">**AS2-To**、入力`Fabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="32eab-131">For **AS2- To**, enter `Fabrikam`.</span></span>  
   
@@ -72,13 +73,13 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="32eab-133">入力する必要があります、Send_Async_997 送信ポート、**送信ポート**リストように[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信 997 メッセージのパーティを解決することができます。</span><span class="sxs-lookup"><span data-stu-id="32eab-133">The Send_Async_997 send port needs to be entered into the **Send Ports** list so that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] can resolve the party for the outgoing 997 message.</span></span> <span data-ttu-id="32eab-134">送信パイプラインは、送信ポートの名前をアグリーメント プロパティの送信ポートと照合します。</span><span class="sxs-lookup"><span data-stu-id="32eab-134">The send pipeline matches the name of the send port with the send port in the agreement properties.</span></span> <span data-ttu-id="32eab-135">これは、送信パイプラインがパーティの解決を試みる際に最初に照合する AS2-To プロパティがメッセージのコンテキストで昇格されないために必要になります。</span><span class="sxs-lookup"><span data-stu-id="32eab-135">This is necessary because in this case, the AS2-To property is not promoted in the context of the message, which is the first match that the send pipeline attempts to make to resolve the party.</span></span> <span data-ttu-id="32eab-136">詳細については、次を参照してください。[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)です。</span><span class="sxs-lookup"><span data-stu-id="32eab-136">For more information, see [Agreement Resolution for Outgoing AS2 Messages](../core/agreement-resolution-for-outgoing-as2-messages.md).</span></span>  
   
-10. <span data-ttu-id="32eab-137">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-137">Click **Apply**.</span></span>  
+10. <span data-ttu-id="32eab-137">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-137">Click **Apply**.</span></span>  
   
-11. <span data-ttu-id="32eab-138">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-138">Click **OK**.</span></span> <span data-ttu-id="32eab-139">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="32eab-139">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="32eab-140">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="32eab-140">The newly added agreement is enabled by default.</span></span>  
+11. <span data-ttu-id="32eab-138">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-138">Click **OK**.</span></span> <span data-ttu-id="32eab-139">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="32eab-139">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="32eab-140">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="32eab-140">The newly added agreement is enabled by default.</span></span>  
   
 ### <a name="to-create-an-x12-agreement"></a><span data-ttu-id="32eab-141">X12 アグリーメントを作成するには</span><span class="sxs-lookup"><span data-stu-id="32eab-141">To create an X12 agreement</span></span>  
   
-1.  <span data-ttu-id="32eab-142">右クリック**[fabrikam_profile]**、をポイント**新規**、クリックして**アグリーメント**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-142">Right-click **Fabrikam_Profile**, point to **New**, and then click **Agreement**.</span></span>  
+1.  <span data-ttu-id="32eab-142">右クリック **[fabrikam_profile]**、をポイント**新規**、クリックして**アグリーメント**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-142">Right-click **Fabrikam_Profile**, point to **New**, and then click **Agreement**.</span></span>  
   
 2.  <span data-ttu-id="32eab-143">**全般プロパティ** ページの**名前**テキスト ボックスに、アグリーメントの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="32eab-143">In the **General Properties** page, for the **Name** text box, enter a name for the agreement.</span></span>  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="32eab-148">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**、し、選択**reporting 用メッセージ ペイロードを格納**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-148">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**, and then select **Store message payload for reporting**.</span></span>  
   
-7.  <span data-ttu-id="32eab-149">次のタスクを実行、 **Fabrikam が Contoso ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-149">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
+7.  <span data-ttu-id="32eab-149">次のタスクを実行、 **Fabrikam が Contoso ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-149">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
   
     1.  <span data-ttu-id="32eab-150">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="32eab-150">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span> <span data-ttu-id="32eab-151">このチュートリアルでは、次のように設定します**ISA5**に**ZZ**、 **ISA6**に**7654321**、 **ISA7**に**ZZ。**、および**ISA8**に**1234567**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-151">For this tutorial, set **ISA5** to **ZZ**, **ISA6** to **7654321**, **ISA7** to **ZZ**, and **ISA8** to **1234567**.</span></span>  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="32eab-160">このプロパティをオフにすると、双方向受信ポートに関連付けられた送信ポートではなく、別の送信ポート経由で 997 受信確認を送信することができます。</span><span class="sxs-lookup"><span data-stu-id="32eab-160">Clearing this property enables you to send the 997 acknowledgment via a separate send port, rather than sending it over the send port associated with the two-way receive port.</span></span>  
   
-8.  <span data-ttu-id="32eab-161">次のタスクを実行、 **Contoso が Fabrikam ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-161">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
+8.  <span data-ttu-id="32eab-161">次のタスクを実行、 **Contoso が Fabrikam ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="32eab-161">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
     1.  <span data-ttu-id="32eab-162">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="32eab-162">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span>  <span data-ttu-id="32eab-163">このチュートリアルでは、次のように設定します**ISA5**に**ZZ**、 **ISA6**に**1234567**、 **ISA7**に**ZZ。**、および**ISA8**に**7654321**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-163">For this walkthrough, set **ISA5** to **ZZ**, **ISA6** to **1234567**, **ISA7** to **ZZ**, and **ISA8** to **7654321**.</span></span>  
   
@@ -125,17 +126,17 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="32eab-171">**トランザクションの種類**</span><span class="sxs-lookup"><span data-stu-id="32eab-171">**Transaction Type**</span></span>|<span data-ttu-id="32eab-172">たとえば、テスト メッセージのメッセージの種類を選択**864 – テキスト メッセージ**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-172">Select the message type of your test message, for example, **864 – Text Message**.</span></span>|  
         |<span data-ttu-id="32eab-173">**バージョン/リリース**</span><span class="sxs-lookup"><span data-stu-id="32eab-173">**Version/Release**</span></span>|<span data-ttu-id="32eab-174">入力**00401**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-174">Enter **00401**.</span></span>|  
         |<span data-ttu-id="32eab-175">**ターゲットの名前空間**</span><span class="sxs-lookup"><span data-stu-id="32eab-175">**Target namespace**</span></span>|<span data-ttu-id="32eab-176">選択**http://schemas.microsoft.com/BizTalk/EDI/X12/2006**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-176">Select **http://schemas.microsoft.com/BizTalk/EDI/X12/2006**.</span></span>|  
-        |<span data-ttu-id="32eab-177">**GS1**</span><span class="sxs-lookup"><span data-stu-id="32eab-177">**GS1**</span></span>|<span data-ttu-id="32eab-178">テスト メッセージのメッセージの種類が選択されているなどを確認してください。 **TX - テキスト メッセージ (864)**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-178">Verify that the message type of the test message is selected, for example, **TX - Text Message (864)**.</span></span>|  
+        |<span data-ttu-id="32eab-177">**GS1**</span><span class="sxs-lookup"><span data-stu-id="32eab-177">**GS1**</span></span>|<span data-ttu-id="32eab-178">テスト メッセージのメッセージの種類が選択されているなどを確認してください。 **TX - テキスト メッセージ (864)** です。</span><span class="sxs-lookup"><span data-stu-id="32eab-178">Verify that the message type of the test message is selected, for example, **TX - Text Message (864)**.</span></span>|  
         |<span data-ttu-id="32eab-179">**[GS2]**</span><span class="sxs-lookup"><span data-stu-id="32eab-179">**GS2**</span></span>|<span data-ttu-id="32eab-180">入力**01**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-180">Enter **01**.</span></span>|  
         |<span data-ttu-id="32eab-181">**[GS3]**</span><span class="sxs-lookup"><span data-stu-id="32eab-181">**GS3**</span></span>|<span data-ttu-id="32eab-182">入力**7654321**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-182">Enter **7654321**.</span></span>|  
-        |<span data-ttu-id="32eab-183">**GS4**</span><span class="sxs-lookup"><span data-stu-id="32eab-183">**GS4**</span></span>|<span data-ttu-id="32eab-184">日付の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="32eab-184">Select the date format that you want.</span></span> <span data-ttu-id="32eab-185">選択**CCYYMMDD**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-185">Select **CCYYMMDD**.</span></span> <span data-ttu-id="32eab-186">**注:**ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="32eab-186">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="32eab-187">ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。</span><span class="sxs-lookup"><span data-stu-id="32eab-187">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
+        |<span data-ttu-id="32eab-183">**GS4**</span><span class="sxs-lookup"><span data-stu-id="32eab-183">**GS4**</span></span>|<span data-ttu-id="32eab-184">日付の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="32eab-184">Select the date format that you want.</span></span> <span data-ttu-id="32eab-185">選択**CCYYMMDD**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-185">Select **CCYYMMDD**.</span></span> <span data-ttu-id="32eab-186">**注:** ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="32eab-186">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="32eab-187">ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。</span><span class="sxs-lookup"><span data-stu-id="32eab-187">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
         |<span data-ttu-id="32eab-188">**GS5**</span><span class="sxs-lookup"><span data-stu-id="32eab-188">**GS5**</span></span>|<span data-ttu-id="32eab-189">時刻の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="32eab-189">Select the time format that you want.</span></span> <span data-ttu-id="32eab-190">選択**HHMMSSdd**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-190">Select **HHMMSSdd**.</span></span>|  
-        |<span data-ttu-id="32eab-191">**GS7**</span><span class="sxs-lookup"><span data-stu-id="32eab-191">**GS7**</span></span>|<span data-ttu-id="32eab-192">選択**T - 運輸データ調整委員会 (TDCC)**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-192">Select **T - Transportation Data Coordinating Committee (TDCC)**.</span></span>|  
+        |<span data-ttu-id="32eab-191">**GS7**</span><span class="sxs-lookup"><span data-stu-id="32eab-191">**GS7**</span></span>|<span data-ttu-id="32eab-192">選択**T - 運輸データ調整委員会 (TDCC)** です。</span><span class="sxs-lookup"><span data-stu-id="32eab-192">Select **T - Transportation Data Coordinating Committee (TDCC)**.</span></span>|  
         |<span data-ttu-id="32eab-193">**GS8**</span><span class="sxs-lookup"><span data-stu-id="32eab-193">**GS8**</span></span>|<span data-ttu-id="32eab-194">EDI のバージョンとして入力されたことを確認してください。 **00401**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-194">Verify that the EDI version has been entered as **00401**.</span></span>|  
   
-9. <span data-ttu-id="32eab-195">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-195">Click **Apply**.</span></span>  
+9. <span data-ttu-id="32eab-195">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-195">Click **Apply**.</span></span>  
   
-10. <span data-ttu-id="32eab-196">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-196">Click **OK**.</span></span> <span data-ttu-id="32eab-197">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="32eab-197">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="32eab-198">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="32eab-198">The newly added agreement is enabled by default.</span></span>  
+10. <span data-ttu-id="32eab-196">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32eab-196">Click **OK**.</span></span> <span data-ttu-id="32eab-197">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="32eab-197">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="32eab-198">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="32eab-198">The newly added agreement is enabled by default.</span></span>  
   
 11. <span data-ttu-id="32eab-199">BizTalk サービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="32eab-199">Restart the BizTalk service.</span></span> <span data-ttu-id="32eab-200">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールの**プラットフォームの設定**をクリックして**ホスト インスタンス**を右クリックして**BizTalkServerApplication**をクリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="32eab-200">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, under **Platform Settings**, click **Host Instances**, right-click **BizTalkServerApplication**, and then click **Restart**.</span></span>  
   

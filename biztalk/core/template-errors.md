@@ -1,14 +1,14 @@
 ---
-title: "テンプレート エラー |Microsoft ドキュメント"
-ms.custom: 
+title: テンプレート エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a10862c-bffa-4ca5-81a0-df01e8051d23
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278410"
 ---
 # <a name="template-errors"></a><span data-ttu-id="55ee0-102">テンプレート エラー</span><span class="sxs-lookup"><span data-stu-id="55ee0-102">Template Errors</span></span>
 <span data-ttu-id="55ee0-103">ここでは、WCF のテンプレート エラーを診断および解決するための詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="55ee0-103">This section contains detailed information for diagnosing and resolving WCF Template errors.</span></span>  

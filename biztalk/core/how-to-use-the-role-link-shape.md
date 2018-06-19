@@ -1,11 +1,11 @@
 ---
-title: "ロール リンク図形を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ロール リンク図形を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Role Link shape [Orchestration Designer], adding links
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Role Link shape [Orchestration Designer]
 - Role Link shape [Orchestration Designer], deleting links
 ms.assetid: 857d493e-ef08-4a2f-b11d-0471932b8671
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255746"
 ---
 # <a name="how-to-use-the-role-link-shape"></a><span data-ttu-id="83a39-102">ロール リンク図形の使用方法</span><span class="sxs-lookup"><span data-stu-id="83a39-102">How to Use the Role Link Shape</span></span>
 <span data-ttu-id="83a39-103">A**ロール リンク**図形には、実装ロール プロバイダーの役割および使用ロールまたはコンシューマー ロール用のプレース ホルダーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="83a39-103">A **Role Link** shape contains placeholders for an implements role or provider role and a uses role or consumer role.</span></span> <span data-ttu-id="83a39-104">ロール リンク図形には、これらのいずれかのプレースホルダーを 1 つ、または両方のプレースホルダーを 1 つずつ含めることができます。</span><span class="sxs-lookup"><span data-stu-id="83a39-104">It can include one of either, or one of each.</span></span>  

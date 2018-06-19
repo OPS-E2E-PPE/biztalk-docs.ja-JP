@@ -1,14 +1,14 @@
 ---
-title: "アドレスが無効です (相対 uri) |Microsoft ドキュメント"
-ms.custom: 
+title: アドレスが無効です (相対 uri) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a953f3e-3768-4e61-8f25-ea958a5a701a
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257506"
 ---
 # <a name="invalid-address-relative-uri"></a><span data-ttu-id="cd7ee-102">アドレスが無効です (相対 URI)</span><span class="sxs-lookup"><span data-stu-id="cd7ee-102">Invalid address (relative uri)</span></span>
 ## <a name="details"></a><span data-ttu-id="cd7ee-103">詳細</span><span class="sxs-lookup"><span data-stu-id="cd7ee-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="cd7ee-126">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-126">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="cd7ee-127">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-127">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="cd7ee-127">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-127">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="cd7ee-128">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-128">In the port **Type** list, select the correct port.</span></span>  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="cd7ee-130">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-130">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="cd7ee-131">**アドレス (URI)**テキスト ボックスで、スラッシュ (「/」) で開始するように、アドレスを変更します。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-131">In the **Address (URI)** text box, change the address so that it starts with a forward slash ("/").</span></span>  
+9. <span data-ttu-id="cd7ee-131">**アドレス (URI)** テキスト ボックスで、スラッシュ (「/」) で開始するように、アドレスを変更します。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-131">In the **Address (URI)** text box, change the address so that it starts with a forward slash ("/").</span></span>  
   
  <span data-ttu-id="cd7ee-132">受信場所の詳細については、次の情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cd7ee-132">For additional information on receive locations, see the following resources:</span></span>  
   

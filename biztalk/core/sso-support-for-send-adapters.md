@@ -1,14 +1,14 @@
 ---
-title: "送信アダプターの SSO のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: 送信アダプターの SSO のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45dc2597-0036-4444-8b35-d18621b003d8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278434"
 ---
 # <a name="sso-support-for-send-adapters"></a><span data-ttu-id="997ac-102">送信アダプター用の SSO サポート</span><span class="sxs-lookup"><span data-stu-id="997ac-102">SSO Support for Send Adapters</span></span>
 <span data-ttu-id="997ac-103">エンタープライズ シングル サインオン (SSO) には、ローカル、ネットワーク、およびドメインの境界間で暗号化されたユーザーの資格情報を格納および転送するサービスが用意されています。</span><span class="sxs-lookup"><span data-stu-id="997ac-103">Enterprise Single Sign-On (SSO) provides services to store and transmit encrypted user credentials across local, network, and domain boundaries.</span></span> <span data-ttu-id="997ac-104">トランスポート アダプターを作成する場合は、SSO API を利用して、トランスポート アダプターがバックエンドのアプリケーションにアクセスするために使用するユーザーの資格情報を処理できます。</span><span class="sxs-lookup"><span data-stu-id="997ac-104">When you create a transport adapter, you can leverage SSO APIs to handle the user credentials that a transport adapter uses to access back-end applications.</span></span>  

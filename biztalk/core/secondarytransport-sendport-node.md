@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271306"
 ---
 # <a name="secondarytransport-sendport-node"></a><span data-ttu-id="2e428-102">SecondaryTransport (SendPort ノード)</span><span class="sxs-lookup"><span data-stu-id="2e428-102">SecondaryTransport (SendPort Node)</span></span>
 <span data-ttu-id="2e428-103">バインド ファイルの SendPort ノードの SecondaryTransport ノードは、バインド ファイルと共にエクスポートされる送信ポートにバインドされたセカンダリ トランスポートに関する特定の情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="2e428-103">The SecondaryTransport node of the SendPort node of a binding file provides specific information about the secondary transport that is bound to a send port exported with the binding file.</span></span> <span data-ttu-id="2e428-104">セカンダリ トランスポートが指定されている場合、プライマリ トランスポートでのすべての試行回数が完了した後にセカンダリ ポートが使用されます。</span><span class="sxs-lookup"><span data-stu-id="2e428-104">If a secondary transport is specified, it is used when all retry attempts with the primary transport have been exhausted.</span></span>  

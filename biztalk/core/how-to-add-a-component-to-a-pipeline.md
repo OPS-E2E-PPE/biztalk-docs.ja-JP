@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246482"
 ---
 # <a name="how-to-add-a-component-to-a-pipeline"></a><span data-ttu-id="dbd00-102">コンポーネントをパイプラインに追加する方法</span><span class="sxs-lookup"><span data-stu-id="dbd00-102">How to Add a Component to a Pipeline</span></span>
 <span data-ttu-id="dbd00-103">コンポーネントをパイプラインに追加する場合は、ツールボックスからデザイン画面にパイプラインをドラッグします。</span><span class="sxs-lookup"><span data-stu-id="dbd00-103">You add components to pipelines by dragging from the Toolbox to the design surface.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "メッセージング ペイロード ビュー |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージング ペイロード ビュー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Messaging Payload view [Tracking Profile Editor]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - message schemas, payloads
 - Tracking Profile Editor, Messaging Payload view
 ms.assetid: 2bc247c5-5b31-4cd7-8377-ff9614df1320
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263026"
 ---
 # <a name="messaging-payload-view"></a><span data-ttu-id="6470f-102">メッセージング ペイロード ビュー</span><span class="sxs-lookup"><span data-stu-id="6470f-102">Messaging Payload View</span></span>
 <span data-ttu-id="6470f-103">メッセージング ペイロード ビューには、選択したアクション (メッセージの送信や受信など) に関連付けられた XML メッセージのスキーマが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6470f-103">The Messaging Payload view displays the schema of the XML message associated with the selected action (for example, Message Sent or Received).</span></span> <span data-ttu-id="6470f-104">このビューは、オーケストレーション スケジュール ビューにある一部の図形のショートカット メニューから使用できます。</span><span class="sxs-lookup"><span data-stu-id="6470f-104">The view is available from the shortcut menu for some of the shapes in the Orchestration Schedule view.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 7: MDN の送信ポートを構成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: MDN の送信ポートを構成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 983033ac-9d32-47c8-9bb8-b4161bcdf183
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277962"
 ---
 # <a name="step-7-configure-the-mdn-send-port"></a><span data-ttu-id="dcb9b-102">手順 7: MDN の送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="dcb9b-102">Step 7: Configure the MDN Send Port</span></span>
 <span data-ttu-id="dcb9b-103">![手順 11 の 7](../core/media/tut-step7-of-11.gif "Tut_Step7_of_11")</span><span class="sxs-lookup"><span data-stu-id="dcb9b-103">![Step 7 of 11](../core/media/tut-step7-of-11.gif "Tut_Step7_of_11")</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="dcb9b-122">このフィルタにより、動的送信ポートは MessageBox から非同期の MDN のみを抽出するようになります。</span><span class="sxs-lookup"><span data-stu-id="dcb9b-122">This filter ensures that the dynamic send port only picks up asynchronous MDNs from the MessageBox.</span></span>  
   
-5.  <span data-ttu-id="dcb9b-123">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dcb9b-123">Click **OK**.</span></span>  
+5.  <span data-ttu-id="dcb9b-123">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dcb9b-123">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="dcb9b-124">**送信ポート**のペイン、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**Send_Async_MDN**、クリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="dcb9b-124">In the **Send Ports** pane of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click **Send_Async_MDN**, and then click **Start**.</span></span>  
   

@@ -1,18 +1,18 @@
 ---
-title: "BizTalk アプリケーションのバインドをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションのバインドをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, exportings
 - applications, exporting
 - applications, bindings
 ms.assetid: 700d2781-480b-42ed-a313-1a67a7406369
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255082"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-application"></a><span data-ttu-id="b6ff1-102">BizTalk アプリケーションのバインドをエクスポートする方法</span><span class="sxs-lookup"><span data-stu-id="b6ff1-102">How to Export Bindings for a BizTalk Application</span></span>
 <span data-ttu-id="b6ff1-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk アプリケーションのバインドをエクスポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b6ff1-103">This topic describes how to use the BizTalk Server Administration console or the command line export the bindings for a BizTalk application to an .xml file.</span></span> <span data-ttu-id="b6ff1-104">その後、バインド ファイルを別のアプリケーションにインポートすることで、アプリケーションの現在のバインドが、インポートした同じ名前のバインドで上書きされます。</span><span class="sxs-lookup"><span data-stu-id="b6ff1-104">You can then import the binding file into another application, which overwrites the current bindings in the application with the imported bindings of the same name.</span></span> <span data-ttu-id="b6ff1-105">詳細については、次を参照してください。 [BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="b6ff1-105">For more information, see [How to Import Bindings into a BizTalk Application](../core/how-to-import-bindings-into-a-biztalk-application.md).</span></span> <span data-ttu-id="b6ff1-106">バインド ファイルの使用の詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="b6ff1-106">For more information about using binding files, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="b6ff1-116">例: **C:\Bindings\Application1Bindings_Staging1.xml**</span><span class="sxs-lookup"><span data-stu-id="b6ff1-116">Example: **C:\Bindings\Application1Bindings_Staging1.xml**</span></span>  
   
-5.  <span data-ttu-id="b6ff1-117">いることを確認**、現在のアプリケーションからのすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b6ff1-117">Ensure that **Export all bindings from the current application** is selected, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="b6ff1-117">いることを確認 **、現在のアプリケーションからのすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b6ff1-117">Ensure that **Export all bindings from the current application** is selected, and then click **OK**.</span></span>  
   
 6.  <span data-ttu-id="b6ff1-118">グループのすべてのパーティ情報をエクスポートするには、選択、**グローバル パーティ情報をエクスポート**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="b6ff1-118">To export all party information for the group, select the **Export Global Party information** check box.</span></span>  
   

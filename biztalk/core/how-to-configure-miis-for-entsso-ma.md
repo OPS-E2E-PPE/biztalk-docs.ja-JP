@@ -1,14 +1,14 @@
 ---
-title: "ENTSSO MA 用に MIIS を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ENTSSO MA 用に MIIS を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7820384-ff64-4628-9e35-02b13803928f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248138"
 ---
 # <a name="how-to-configure-miis-for-entsso-ma"></a><span data-ttu-id="b1ec4-102">ENTSSO MA 用に MIIS を構成する方法</span><span class="sxs-lookup"><span data-stu-id="b1ec4-102">How to Configure MIIS for ENTSSO MA</span></span>
 <span data-ttu-id="b1ec4-103">Microsoft Identity Integration Server (MIIS) を実行しているコンピュータにエンタープライズ シングル サインオン (SSO) の管理機能 (完全なバージョンまたは管理機能のみのバージョン) をインストールすると、ENTSSO 管理エージェントが自動的にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-103">When you install the Enterprise Single Sign-On (SSO) Administration feature (either the full version or the Admin-only version) on a computer running Microsoft Identity Integration Server (MIIS), the ENTSSO Management Agent is automatically installed.</span></span> <span data-ttu-id="b1ec4-104">これにより、MIIS を起動するときには、ほとんどすべての構成が既に実行されていることになります。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-104">This means that when you open MIIS, nearly all of the configuration has already been done.</span></span> <span data-ttu-id="b1ec4-105">構成が行われていないのは、接続情報だけです。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-105">The only part missing is the connection information.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="b1ec4-113">起動、**管理エージェント作成ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-113">This starts the **Create Management Agent Wizard**.</span></span>  
   
-4.  <span data-ttu-id="b1ec4-114">**接続情報の構成**] ページの [、**接続先:**フィールドに、SSO サーバーの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-114">On the **Configure Connection Information** page, in the **Connect To:** field, enter the name of the SSO Server.</span></span>  
+4.  <span data-ttu-id="b1ec4-114">**接続情報の構成**] ページの [、**接続先:** フィールドに、SSO サーバーの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-114">On the **Configure Connection Information** page, in the **Connect To:** field, enter the name of the SSO Server.</span></span>  
   
 5.  <span data-ttu-id="b1ec4-115">ENTSSO 管理エージェントの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-115">Enter the name of the ENTSSO Management Agent.</span></span> <span data-ttu-id="b1ec4-116">この名前は、ENTSSO.xml ファイルで指定されている名前と一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-116">This name must match the name specified in your ENTSSO.xml file.</span></span>  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="b1ec4-119">**パスワード**フィールドに、そのユーザーのパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-119">In the **Password** field, enter the password for that user.</span></span>  
   
-8.  <span data-ttu-id="b1ec4-120">をクリックして**[次へ]**、既定値のままに到達するまで、**拡張機能の構成**ページ。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-120">Click **Next**, accepting the defaults until you reach the **Configure Extensions** page.</span></span>  
+8.  <span data-ttu-id="b1ec4-120">をクリックして **[次へ]**、既定値のままに到達するまで、**拡張機能の構成**ページ。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-120">Click **Next**, accepting the defaults until you reach the **Configure Extensions** page.</span></span>  
   
 9. <span data-ttu-id="b1ec4-121">近く**接続情報**パスワード拡張機能をクリックして**設定**です。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-121">Near **Connection information** for password extension, click **Settings**.</span></span>  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 11. <span data-ttu-id="b1ec4-125">**ユーザー**と**パスワード**フィールドに、アカウントのユーザー名とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-125">In the **User** and **Password** fields, enter the user name and password for the account.</span></span>  
   
-12. <span data-ttu-id="b1ec4-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-126">Click **OK**.</span></span>  
+12. <span data-ttu-id="b1ec4-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-126">Click **OK**.</span></span>  
   
 13. <span data-ttu-id="b1ec4-127">**MIISCreate 管理エージェント**をクリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="b1ec4-127">In the **MIISCreate Management Agent**, click **Finish**.</span></span>  
   

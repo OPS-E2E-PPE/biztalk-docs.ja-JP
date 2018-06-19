@@ -1,14 +1,14 @@
 ---
-title: "圧縮解除処理中に発生した ASN.1 データ長フィールドが無効か存在しません |Microsoft ドキュメント"
-ms.custom: 
+title: 圧縮解除処理中に発生した ASN.1 データ長フィールドが無効か存在しません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd08648d-77b9-42a3-a50e-fd87eb36758a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241170"
 ---
 # <a name="invalid-or-missing-asn1-data-length-field-encountered-during-decompression-processing"></a><span data-ttu-id="f2686-102">圧縮解除中に無効な ASN.1 データ長フィールドが検出されたか、ASN.1 データ長フィールドが見つかりませんでした</span><span class="sxs-lookup"><span data-stu-id="f2686-102">Invalid or missing ASN.1 Data Length field encountered during decompression processing</span></span>
 ## <a name="details"></a><span data-ttu-id="f2686-103">詳細</span><span class="sxs-lookup"><span data-stu-id="f2686-103">Details</span></span>  

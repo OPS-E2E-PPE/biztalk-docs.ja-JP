@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーション展開の開発タスク |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーション展開の開発タスク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing, deploying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - applications, developing
 - developing, tasks
 ms.assetid: b441d4f4-122e-4caf-8381-723c6142b0b6
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242554"
 ---
 # <a name="development-tasks-for-biztalk-application-deployment"></a><span data-ttu-id="b3a83-102">BizTalk アプリケーション展開の開発作業</span><span class="sxs-lookup"><span data-stu-id="b3a83-102">Development Tasks for BizTalk Application Deployment</span></span>
 <span data-ttu-id="b3a83-103">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] から BizTalk アプリケーションに BizTalk アセンブリを展開し、アプリケーションを完成させて、テスト環境に展開できるようにアプリケーションを準備するための手順を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b3a83-103">The following are the steps involved in deploying BizTalk assemblies from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] into a BizTalk application, completing the application, and preparing it for deployment to the test environment.</span></span> <span data-ttu-id="b3a83-104">この展開シナリオは、プログラマが特定の BizTalk ビジネス ソリューションの開発およびデバッグを行う開発環境において一般的なものです。</span><span class="sxs-lookup"><span data-stu-id="b3a83-104">This deployment scenario is common in a development environment, where a programmer is developing and debugging a particular BizTalk business solution.</span></span>  

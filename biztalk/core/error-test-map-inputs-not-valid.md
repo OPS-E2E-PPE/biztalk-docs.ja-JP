@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242178"
 ---
 # <a name="error---test-map-inputs-not-valid"></a><span data-ttu-id="f9414-102">エラー - マップのテスト用の入力が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="f9414-102">Error - Test Map Inputs Not Valid</span></span>
 <span data-ttu-id="f9414-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="f9414-103">**Error Code**</span></span>  

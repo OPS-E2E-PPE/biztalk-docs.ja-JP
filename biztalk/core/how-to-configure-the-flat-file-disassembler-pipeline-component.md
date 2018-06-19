@@ -1,18 +1,18 @@
 ---
-title: "フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], configuring
 - pipeline components, Flat File Disassembler
 - messages, flat files
 ms.assetid: c09996f6-6035-42a3-a75f-4def4ac39a95
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249050"
 ---
 # <a name="how-to-configure-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="1a937-102">フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="1a937-102">How to Configure the Flat File Disassembler Pipeline Component</span></span>
 <span data-ttu-id="1a937-103">フラット ファイル逆アセンブラー パイプライン コンポーネントは、フラット ファイル形式のドキュメントを逆アセンブルして XML 形式に変換するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="1a937-103">The Flat File Disassembler pipeline component is used for disassembling documents in flat file format and converting them into XML format.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
     |<span data-ttu-id="1a937-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1a937-107">Use this</span></span>|<span data-ttu-id="1a937-108">目的</span><span class="sxs-lookup"><span data-stu-id="1a937-108">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="1a937-109">**ドキュメント スキーマ**</span><span class="sxs-lookup"><span data-stu-id="1a937-109">**Document schema**</span></span>|<span data-ttu-id="1a937-110">フラット ファイル形式から XML 形式へメッセージを解析する際に使用するフラット ファイルのドキュメント スキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="1a937-110">Select a flat file document schema to use for parsing the message from flat file to XML format.</span></span> <span data-ttu-id="1a937-111">解析用のフラット ファイル ドキュメント スキーマは、BizTalk エディターで作成できます。</span><span class="sxs-lookup"><span data-stu-id="1a937-111">The flat file document schema for parsing can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="1a937-112">既定値: なし**注:**コンパイル時エラーが発生またはこのプロパティのスキーマを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1a937-112">Default value: None **Note:**  You must specify a schema for this property, or a compile-time error will occur.</span></span>|  
+    |<span data-ttu-id="1a937-109">**ドキュメント スキーマ**</span><span class="sxs-lookup"><span data-stu-id="1a937-109">**Document schema**</span></span>|<span data-ttu-id="1a937-110">フラット ファイル形式から XML 形式へメッセージを解析する際に使用するフラット ファイルのドキュメント スキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="1a937-110">Select a flat file document schema to use for parsing the message from flat file to XML format.</span></span> <span data-ttu-id="1a937-111">解析用のフラット ファイル ドキュメント スキーマは、BizTalk エディターで作成できます。</span><span class="sxs-lookup"><span data-stu-id="1a937-111">The flat file document schema for parsing can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="1a937-112">既定値: なし**注:** コンパイル時エラーが発生またはこのプロパティのスキーマを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1a937-112">Default value: None **Note:**  You must specify a schema for this property, or a compile-time error will occur.</span></span>|  
     |<span data-ttu-id="1a937-113">**ヘッダー スキーマ**</span><span class="sxs-lookup"><span data-stu-id="1a937-113">**Header schema**</span></span>|<span data-ttu-id="1a937-114">フラット ファイル メッセージのヘッダー部のスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="1a937-114">Select a schema for the header part of the flat file message.</span></span> <span data-ttu-id="1a937-115">フラット ファイル メッセージのヘッダー部のスキーマは、BizTalk エディターで作成できます。</span><span class="sxs-lookup"><span data-stu-id="1a937-115">The schema for the header part of the flat file message can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="1a937-116">既定値: なし</span><span class="sxs-lookup"><span data-stu-id="1a937-116">Default value: None</span></span>|  
     |<span data-ttu-id="1a937-117">**ヘッダーを保存します。**</span><span class="sxs-lookup"><span data-stu-id="1a937-117">**Preserve header**</span></span>|<span data-ttu-id="1a937-118">このプロパティを設定**True**メッセージ コンテキストで、フラット ファイル メッセージのヘッダーを格納する必要がある場合。</span><span class="sxs-lookup"><span data-stu-id="1a937-118">Set this property to **True** if you need to store the flat file message header on the message context.</span></span> <span data-ttu-id="1a937-119">フラット ファイル メッセージのヘッダーを保存すると、ヘッダー構造およびコンテンツは BizTalk Server でメッセージと共に移動されます。</span><span class="sxs-lookup"><span data-stu-id="1a937-119">Preserving the header of the flat file message enables the header structure and content to flow with the message through BizTalk Server.</span></span> <span data-ttu-id="1a937-120">ヘッダーは、フラット ファイル アセンブラー パイプライン コンポーネントで、メッセージをフラット ファイル形式にシリアル化する際に使用されます。</span><span class="sxs-lookup"><span data-stu-id="1a937-120">The header can then be used when serializing the message back to flat file format in the Flat File Assembler pipeline component.</span></span><br /><br /> <span data-ttu-id="1a937-121">ヘッダー スキーマ名は実行時に動的に取得されることがあります。そのため、保存したヘッダーがフラット ファイル アセンブラーでシリアル化されるとき、ヘッダー ドキュメントのデザイン時プロパティにヘッダー スキーマ名が含まれていない場合があります。</span><span class="sxs-lookup"><span data-stu-id="1a937-121">When the preserved header is being serialized by the Flat File Assembler, the header document design-time property can lack the name of the header schema, because this information can be obtained dynamically at run time.</span></span> <span data-ttu-id="1a937-122">この場合、保存したヘッダーのメッセージの種類が使用されます。</span><span class="sxs-lookup"><span data-stu-id="1a937-122">This is accomplished by using the message type of the preserved header.</span></span><br /><br /> <span data-ttu-id="1a937-123">既定値: **False**</span><span class="sxs-lookup"><span data-stu-id="1a937-123">Default value: **False**</span></span>|  
     |<span data-ttu-id="1a937-124">**トレーラー スキーマ**</span><span class="sxs-lookup"><span data-stu-id="1a937-124">**Trailer schema**</span></span>|<span data-ttu-id="1a937-125">フラット ファイル メッセージのトレーラー部のスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="1a937-125">Select a schema for the trailer part of the flat file message.</span></span> <span data-ttu-id="1a937-126">フラット ファイル メッセージのトレーラー部のスキーマは、BizTalk エディターで作成できます。</span><span class="sxs-lookup"><span data-stu-id="1a937-126">The schema for the trailer part of the flat file message can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="1a937-127">既定値: なし</span><span class="sxs-lookup"><span data-stu-id="1a937-127">Default value: None</span></span>|  

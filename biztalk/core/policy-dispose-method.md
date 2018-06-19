@@ -1,14 +1,14 @@
 ---
-title: "Policy.Dispose メソッド |Microsoft ドキュメント"
-ms.custom: 
+title: Policy.Dispose メソッド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db37c6b9-acf0-42ee-9356-4d1567934862
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263634"
 ---
 # <a name="policydispose-method"></a><span data-ttu-id="c255b-102">Policy.Dispose メソッド</span><span class="sxs-lookup"><span data-stu-id="c255b-102">Policy.Dispose Method</span></span>
 <span data-ttu-id="c255b-103">**Policy.Dispose**メソッドによって使用されているリソースを解放する、**ポリシー**クラス、さらにを返します、**ポリシー**キャッシュするオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="c255b-103">The **Policy.Dispose** method releases resources used by the **Policy** class, and also returns the **Policy** object to the cache.</span></span> <span data-ttu-id="c255b-104">同じポリシーが再度呼び出される場合、キャッシュされた**ポリシー**オブジェクトを使用すると、新しいを作成するために必要な時間を節約**ポリシー**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="c255b-104">When the same policy is invoked again, the cached **Policy** object is used, which saves the time needed for creating a new **Policy** object.</span></span>  

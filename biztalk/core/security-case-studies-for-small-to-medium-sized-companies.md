@@ -1,11 +1,11 @@
 ---
-title: "小規模中規模の企業からのセキュリティのケース スタディ |Microsoft ドキュメント"
-ms.custom: 
+title: 小規模中規模の企業からのセキュリティのケース スタディ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, small distributions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, architecture
 - architecture, medium distributions
 ms.assetid: b33e3f2a-ddc4-47a8-92d7-511ae0cc880e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269290"
 ---
 # <a name="security-case-studies-for-small-to-medium-sized-companies"></a><span data-ttu-id="bf291-102">小規模中規模の企業からのセキュリティのケース スタディ</span><span class="sxs-lookup"><span data-stu-id="bf291-102">Security Case Studies for Small to Medium-Sized Companies</span></span>
 <span data-ttu-id="bf291-103">自社のデータやリソースが、特定のユーザーまたはアプリケーションからしかアクセスされることのないように真剣に取り組む企業にとって、セキュリティは重大な関心事です。</span><span class="sxs-lookup"><span data-stu-id="bf291-103">Security is a concern of any company that is serious about making sure that only a select group of people or applications can access its data and resources.</span></span> <span data-ttu-id="bf291-104">セキュリティに対するアプローチや実装の方法は、個々の企業によってさまざまです。</span><span class="sxs-lookup"><span data-stu-id="bf291-104">Companies approach and implement security in a variety of ways.</span></span>  

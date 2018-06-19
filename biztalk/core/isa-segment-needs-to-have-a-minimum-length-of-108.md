@@ -1,14 +1,14 @@
 ---
-title: "ISA セグメントは、108 の最小長を持つ必要があります |Microsoft ドキュメント"
-ms.custom: 
+title: ISA セグメントは、108 の最小長を持つ必要があります |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57641445-cebb-4219-998d-54038d7ddf19
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261898"
 ---
 # <a name="isa-segment-needs-to-have-a-minimum-length-of-108"></a><span data-ttu-id="d6b30-102">ISA セグメントは、108 文字以上の文字列から構成されている必要があります</span><span class="sxs-lookup"><span data-stu-id="d6b30-102">ISA segment needs to have a minimum length of 108</span></span>
 ## <a name="details"></a><span data-ttu-id="d6b30-103">詳細</span><span class="sxs-lookup"><span data-stu-id="d6b30-103">Details</span></span>  

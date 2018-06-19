@@ -1,11 +1,11 @@
 ---
-title: "待ち受け図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 待ち受け図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Listen shape [Orchestration Designer], about Listen shape
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Listen shape [Orchestration Designer], branching
 - configuring [Orchestration Designer], Listen shapes
 ms.assetid: 4765dc0a-a30e-4515-83bc-72b4f37268cf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247898"
 ---
 # <a name="how-to-configure-the-listen-shape"></a><span data-ttu-id="59377-102">待ち受け図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="59377-102">How to Configure the Listen Shape</span></span>
 <span data-ttu-id="59377-103">アプリケーションは、待ち受けアクションを実行して、1 つ以上のポートで複数のメッセージの 1 つを待機するか、指定されたタイムアウト間隔後に待機を停止して、結果に基づいて分岐することができます。</span><span class="sxs-lookup"><span data-stu-id="59377-103">Listen actions enable applications to wait for one of several messages on one or more ports, or to stop waiting after a specified time-out interval, and branch based upon the results.</span></span>  

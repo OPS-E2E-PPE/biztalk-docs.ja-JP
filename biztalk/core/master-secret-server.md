@@ -1,11 +1,11 @@
 ---
-title: "マスター シークレット サーバー |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット サーバー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, about Master Secret server
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Master Secret server, encryption key
 - SSO, Master Secret server
 ms.assetid: 93685a19-6c27-45db-bfc1-957574362687
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262514"
 ---
 # <a name="master-secret-server"></a><span data-ttu-id="2295d-102">マスタ シークレット サーバー</span><span class="sxs-lookup"><span data-stu-id="2295d-102">Master Secret Server</span></span>
 <span data-ttu-id="2295d-103">マスタ シークレット サーバーは、マスタ シークレット (暗号化キー) を格納する、エンタープライズ シングル サインオン (SSO) サーバーです。</span><span class="sxs-lookup"><span data-stu-id="2295d-103">The master secret server is the Enterprise Single Sign-On (SSO) server that stores the master secret (encryption key).</span></span> <span data-ttu-id="2295d-104">マスタ シークレット サーバーでは、SSO 管理者からの要求に応じてマスタ シークレットを生成します。</span><span class="sxs-lookup"><span data-stu-id="2295d-104">The master secret server generates the master secret when an SSO administrator requests it.</span></span> <span data-ttu-id="2295d-105">また、暗号化されたマスタ シークレットをレジストリに格納します。</span><span class="sxs-lookup"><span data-stu-id="2295d-105">The master secret server stores the encrypted master secret in the registry.</span></span> <span data-ttu-id="2295d-106">マスタ シークレットにアクセスできるのは、シングル サインオン管理者だけです。</span><span class="sxs-lookup"><span data-stu-id="2295d-106">Only Single Sign-On administrators can access the master secret.</span></span>  

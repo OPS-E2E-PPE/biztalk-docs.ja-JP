@@ -1,14 +1,14 @@
 ---
-title: "BAM API を使用して BAM インターセプタの読み込み |Microsoft ドキュメント"
-ms.custom: 
+title: BAM API を使用して BAM インターセプタの読み込み |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d77ea5fb-a796-48f1-8c77-173e995c5252
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261930"
 ---
 # <a name="loading-bam-interceptors-using-the-bam-api"></a><span data-ttu-id="6ea0f-102">BAM API を使用した BAM インターセプタの読み込み</span><span class="sxs-lookup"><span data-stu-id="6ea0f-102">Loading BAM Interceptors Using the BAM API</span></span>
 <span data-ttu-id="6ea0f-103">このトピックでは、構成ファイルではなく、コードを使用した WF インターセプタおよび WCF インターセプタの読み込みについて説明します。</span><span class="sxs-lookup"><span data-stu-id="6ea0f-103">This topic provides information about loading the WF and WCF interceptors from your code rather than through a configuration file.</span></span>  

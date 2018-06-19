@@ -1,14 +1,14 @@
 ---
-title: "含まれているグループの数が一致しません |Microsoft ドキュメント"
-ms.custom: 
+title: 含まれているグループの数が一致しません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d61ac17-92cd-4a5e-81e6-e2c6fc4085bb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263034"
 ---
 # <a name="number-of-included-groups-do-not-match"></a><span data-ttu-id="2ea3e-102">含まれているグループの数が一致しません</span><span class="sxs-lookup"><span data-stu-id="2ea3e-102">Number of included groups do not match</span></span>
 ## <a name="details"></a><span data-ttu-id="2ea3e-103">詳細</span><span class="sxs-lookup"><span data-stu-id="2ea3e-103">Details</span></span>  

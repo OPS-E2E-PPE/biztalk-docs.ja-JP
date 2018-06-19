@@ -1,14 +1,14 @@
 ---
-title: "フィールド要素 ノードとフィールド属性 ノード |Microsoft ドキュメント"
-ms.custom: 
+title: フィールド要素 ノードとフィールド属性 ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a1fffbca-8886-42c0-9214-cd0c5314850c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22245874"
 ---
 # <a name="field-element-nodes-vs-field-attribute-nodes"></a><span data-ttu-id="ee221-102">[フィールド要素] ノードと[フィールド属性] ノード</span><span class="sxs-lookup"><span data-stu-id="ee221-102">Field Element Nodes vs. Field Attribute Nodes</span></span>
 

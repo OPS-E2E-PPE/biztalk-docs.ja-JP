@@ -1,14 +1,14 @@
 ---
-title: "ホストのプロパティを変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ホストのプロパティを変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5df9d7f-b6c2-4bb7-a845-284e6323e3d6
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255658"
 ---
 # <a name="update-host-properties"></a><span data-ttu-id="c1638-102">ホストのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c1638-102">Update Host Properties</span></span>
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="c1638-109">現在ログインしているユーザーのグループ メンバシップを変更する際に、そのグループがドメインのメンバでもある場合は、変更を加えた後にいったんログアウトしてから、ログインしてください。</span><span class="sxs-lookup"><span data-stu-id="c1638-109">If you change the group membership of the current logged-in user, and the group is also a member of the domain, you should logout and login after changes are completed.</span></span> <span data-ttu-id="c1638-110">この手順を実行しないと、新しいグループ メンバシップは現在のログインに反映されないため、アクセスは拒否されます。</span><span class="sxs-lookup"><span data-stu-id="c1638-110">Failure to do this will result in denied access because new group membership will not be reflected by the current login.</span></span>  
   
--   <span data-ttu-id="c1638-111">**ホストの追跡:**グループ内の少なくとも 1 つのホストは、正常性とビジネス データを追跡する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c1638-111">**Host tracking:** At least one host in the group must track health and business data.</span></span> <span data-ttu-id="c1638-112">このオプションは、ホストで BizTalk の追跡コンポーネントを読み込んで、状態監視データおよびビジネス データを処理するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="c1638-112">This option indicates whether the host loads the BizTalk Tracking component to process health monitoring and business data.</span></span>  
+-   <span data-ttu-id="c1638-111">**ホストの追跡:** グループ内の少なくとも 1 つのホストは、正常性とビジネス データを追跡する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c1638-111">**Host tracking:** At least one host in the group must track health and business data.</span></span> <span data-ttu-id="c1638-112">このオプションは、ホストで BizTalk の追跡コンポーネントを読み込んで、状態監視データおよびビジネス データを処理するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="c1638-112">This option indicates whether the host loads the BizTalk Tracking component to process health monitoring and business data.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="c1638-113">追跡ホストのホスト インスタンスを少なくとも 1 つ作成することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c1638-113">We recommend that you create at least one host instance of the tracking host.</span></span> <span data-ttu-id="c1638-114">追跡ホストの実行中のホスト インスタンスが存在しない場合、メッセージ ボックス データベースにデータが蓄積され続けるため、パフォーマンスの低下につながります。</span><span class="sxs-lookup"><span data-stu-id="c1638-114">If there is no running host instance of the tracking host, the MessageBox database will continue to accumulate data with a subsequent degradation in performance.</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="c1638-127">ホスト インスタンスを削除し、別の信頼設定とサービス アカウントを使用するホスト インスタンスを再作成できます。</span><span class="sxs-lookup"><span data-stu-id="c1638-127">You can delete the host instance, and re-create it with a different trust setting and service account.</span></span>  
   
--   <span data-ttu-id="c1638-128">**グループ内の既定ホスト:**必要がある既定のホスト グループで常にします。</span><span class="sxs-lookup"><span data-stu-id="c1638-128">**Default host in the group:** There must be a default host in the group at all times.</span></span> <span data-ttu-id="c1638-129">オーケストレーションを参加させる処理では、ユーザーが明示的に別のホストを選択しない限り、オーケストレーションのホストに既定のホストが自動的に使用されます。</span><span class="sxs-lookup"><span data-stu-id="c1638-129">The orchestration enlistment process automatically uses the default host to host the orchestration, unless the user explicitly selects a different host.</span></span> <span data-ttu-id="c1638-130">最初に作成されたホストが既定のホストとして指定されます。</span><span class="sxs-lookup"><span data-stu-id="c1638-130">The first host created is marked as the default host.</span></span> <span data-ttu-id="c1638-131">既定のホストについては、次を参照してください。[ホスト](../core/hosts.md)です。</span><span class="sxs-lookup"><span data-stu-id="c1638-131">For information about the default host, see [Hosts](../core/hosts.md).</span></span>  
+-   <span data-ttu-id="c1638-128">**グループ内の既定ホスト:** 必要がある既定のホスト グループで常にします。</span><span class="sxs-lookup"><span data-stu-id="c1638-128">**Default host in the group:** There must be a default host in the group at all times.</span></span> <span data-ttu-id="c1638-129">オーケストレーションを参加させる処理では、ユーザーが明示的に別のホストを選択しない限り、オーケストレーションのホストに既定のホストが自動的に使用されます。</span><span class="sxs-lookup"><span data-stu-id="c1638-129">The orchestration enlistment process automatically uses the default host to host the orchestration, unless the user explicitly selects a different host.</span></span> <span data-ttu-id="c1638-130">最初に作成されたホストが既定のホストとして指定されます。</span><span class="sxs-lookup"><span data-stu-id="c1638-130">The first host created is marked as the default host.</span></span> <span data-ttu-id="c1638-131">既定のホストについては、次を参照してください。[ホスト](../core/hosts.md)です。</span><span class="sxs-lookup"><span data-stu-id="c1638-131">For information about the default host, see [Hosts](../core/hosts.md).</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="c1638-132">前提条件</span><span class="sxs-lookup"><span data-stu-id="c1638-132">Prerequisites</span></span>  
  <span data-ttu-id="c1638-133">ホストの作成、ホスト プロパティの変更、およびホストの削除には、次のユーザー権利が必要です。</span><span class="sxs-lookup"><span data-stu-id="c1638-133">You must have the following user rights to create hosts, modify host properties, and delete hosts:</span></span>  

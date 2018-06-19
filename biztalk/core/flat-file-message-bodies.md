@@ -1,14 +1,14 @@
 ---
-title: "フラット ファイル メッセージの本文 |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル メッセージの本文 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 097e49a1-75d2-44a4-9372-d78de7b7597c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246786"
 ---
 # <a name="flat-file-message-bodies"></a><span data-ttu-id="21cf3-102">フラット ファイル メッセージの本文</span><span class="sxs-lookup"><span data-stu-id="21cf3-102">Flat File Message Bodies</span></span>
 <span data-ttu-id="21cf3-103">フラット ファイル インスタンス メッセージの本文で必要となる部分は、フラット ファイル逆アセンブラーによって 1 つ以上の XML インスタンス メッセージに変換されます。</span><span class="sxs-lookup"><span data-stu-id="21cf3-103">A flat file instance message body, which is required, is what the flat file disassembler processes into one or more XML instance messages.</span></span> <span data-ttu-id="21cf3-104">受信フラット ファイル インスタンス メッセージの本文に含まれるデータを把握するには、本文に対応するフラット ファイル スキーマにフラット ファイル逆アセンブラーを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="21cf3-104">To know what data to expect in an inbound flat file instance message body, you must configure the flat file disassembler with the flat file schema that corresponds to the body.</span></span> <span data-ttu-id="21cf3-105">使用して、スキーマを指定することができます、**ドキュメント スキーマ**フラット ファイル逆アセンブラーのデザイン時プロパティまたは**XMLNORM です。DocumentSpecName**メッセージ コンテキスト プロパティです。</span><span class="sxs-lookup"><span data-stu-id="21cf3-105">You can specify the schema by using the **Document schema** design-time property of the flat file disassembler or the **XMLNORM.DocumentSpecName** message context property.</span></span> <span data-ttu-id="21cf3-106">フラット ファイル インスタンス メッセージには本文部分が必要であるため、これらの 2 つの方法のいずれかを使用して、適切なスキーマを構成してください。</span><span class="sxs-lookup"><span data-stu-id="21cf3-106">Because flat file instance messages must have a body part, you must configure the appropriate schema using one of these two methods.</span></span>  

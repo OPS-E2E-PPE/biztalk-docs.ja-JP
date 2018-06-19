@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 管理者グループを管理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 管理者グループを管理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Administrators group, user accounts
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Administration Console [BizTalk Server], administering
 - BizTalk Administrators group, about BizTalk Administrators group
 ms.assetid: 60ea689b-0b93-4fcc-b49c-6436e7be473f
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254754"
 ---
 # <a name="how-to-manage-the-biztalk-server-administrators-group"></a><span data-ttu-id="8abce-102">BizTalk Server 管理者グループを管理する方法</span><span class="sxs-lookup"><span data-stu-id="8abce-102">How to Manage the BizTalk Server Administrators Group</span></span>
 <span data-ttu-id="8abce-103">BizTalk Server 管理者グループには、管理タスクの実行に最低限必要な権限が割り当てられています。</span><span class="sxs-lookup"><span data-stu-id="8abce-103">The BizTalk Server Administrators group has the fewest privileges necessary to perform administrative tasks.</span></span> <span data-ttu-id="8abce-104">BizTalk Server 管理コンソールまたは WMI プロバイダを使用して管理タスクを実行できるようにするには、ユーザーを BizTalk Server 管理者グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="8abce-104">You add users to the BizTalk Server Administrators group so that they can perform administrative tasks by using the BizTalk Server Administration Console or the WMI provider.</span></span> <span data-ttu-id="8abce-105">また、BizTalk Server 管理コンソールまたは WMI プロバイダを使用して管理タスクを実行する必要がなくなった場合は、ユーザーを BizTalk Server 管理者グループから削除します。</span><span class="sxs-lookup"><span data-stu-id="8abce-105">You also remove users from the BizTalk Server Administrators group when they no longer need to perform administrative tasks by using the BizTalk Server Administration Console or the WMI provider.</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="8abce-124">**BizTalk Server 管理者のプロパティ** ダイアログ ボックスで、ユーザー アカウントをクリックして、削除する**削除**です。</span><span class="sxs-lookup"><span data-stu-id="8abce-124">In the **BizTalk Server Administrators Properties** dialog box, select the user account you want to remove, and then click **Remove**.</span></span>  
   
-6.  <span data-ttu-id="8abce-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8abce-125">Click **OK**.</span></span>  
+6.  <span data-ttu-id="8abce-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8abce-125">Click **OK**.</span></span>  
   
 ### <a name="to-add-users-to-the-domain-biztalk-server-administrators-group"></a><span data-ttu-id="8abce-126">ユーザーをドメインの BizTalk Server 管理者グループに追加するには</span><span class="sxs-lookup"><span data-stu-id="8abce-126">To add users to the domain BizTalk Server Administrators group</span></span>  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="8abce-138">**メンバー**  タブで、削除、およびをクリックするメンバーをクリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="8abce-138">On the **Members** tab, click the member you want to remove, and then click **Remove**.</span></span>  
   
-    4.  <span data-ttu-id="8abce-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8abce-139">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="8abce-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8abce-139">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="8abce-140">参照</span><span class="sxs-lookup"><span data-stu-id="8abce-140">See Also</span></span>  
  <span data-ttu-id="8abce-141">[BizTalk Server のセキュリティを管理します。](../core/managing-biztalk-server-security.md) </span><span class="sxs-lookup"><span data-stu-id="8abce-141">[Managing BizTalk Server Security](../core/managing-biztalk-server-security.md) </span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーションをインポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションをインポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, planning
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - applications, importing
 - importing, planning
 ms.assetid: 51169f35-d572-4612-9104-a59908e24874
-caps.latest.revision: "70"
+caps.latest.revision: 70
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010371"
 ---
 # <a name="how-to-import-a-biztalk-application"></a><span data-ttu-id="f8561-102">BizTalk アプリケーションをインポートする方法</span><span class="sxs-lookup"><span data-stu-id="f8561-102">How to Import a BizTalk Application</span></span>
 <span data-ttu-id="f8561-103">ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたはコマンド ラインを使用して、BizTalk アプリケーションを BizTalk グループにインポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f8561-103">This topic describes how to use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console or the command line import a BizTalk application into a BizTalk group.</span></span> <span data-ttu-id="f8561-104">BizTalk アプリケーションをインポートすると、BizTalk 管理データベースに BizTalk アプリケーションのアイテムが登録され、適切な BizTalk データベースにアイテムのデータが書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="f8561-104">Importing a BizTalk application registers the artifacts in the BizTalk Management database and writes the data of the artifacts to the appropriate BizTalk databases.</span></span> <span data-ttu-id="f8561-105">詳細については、「[新機能の動作との成果物がインポート](../core/what-happens-when-artifacts-are-imported.md)です。</span><span class="sxs-lookup"><span data-stu-id="f8561-105">For details, see [What Happens When Artifacts Are Imported](../core/what-happens-when-artifacts-are-imported.md).</span></span> <span data-ttu-id="f8561-106">アプリケーションをインポートしても、アプリケーションはインストールされません。</span><span class="sxs-lookup"><span data-stu-id="f8561-106">Importing an application does not install the application.</span></span> <span data-ttu-id="f8561-107">アプリケーションを実行できるようにするには、ファイルベースのアイテムが含まれているアプリケーションをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8561-107">You must install an application that includes file-based artifacts before it can run.</span></span>  
@@ -94,7 +95,7 @@ ms.lasthandoff: 12/01/2017
     > [!NOTE]
     >  <span data-ttu-id="f8561-179">このオプションを選択しない場合、アプリケーションに既に存在するアイテムが .msi ファイルに含まれていると、インポート操作に失敗し操作がロールバックされます。</span><span class="sxs-lookup"><span data-stu-id="f8561-179">If you do not select this option, and the .msi file contains an artifact that already exists in the application, the import operation will fail and roll back.</span></span> <span data-ttu-id="f8561-180">BizTalk アプリケーションまたはグループ内のアイテムのうち、特定の種類のアイテムは一意でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="f8561-180">Certain types of artifacts in a BizTalk application or group must be unique.</span></span> <span data-ttu-id="f8561-181">BizTalk グループに既に存在するアイテムを追加すると、現在のアプリケーションにはそのアイテムが存在しなくても、インポート操作に失敗します。これは上書きオプションを指定した場合も同様です。</span><span class="sxs-lookup"><span data-stu-id="f8561-181">If you are adding an artifact that already exists in the BizTalk group, but not in the current application, the import operation will fail, even if you specify the overwrite option.</span></span> <span data-ttu-id="f8561-182">どのアイテムを一意にする必要があり、どのような方法で、一意でなければなりませんの詳細については、次を参照してください。[成果物をする必要がありますする内で一意のアプリケーションまたはグループ](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)です。</span><span class="sxs-lookup"><span data-stu-id="f8561-182">For more information about which artifacts must be unique and in what ways they must be unique, see [Artifacts That Must Be Unique in an Application or Group](../core/artifacts-that-must-be-unique-in-an-application-or-group.md).</span></span>  
   
-7.  <span data-ttu-id="f8561-183">[アプリケーションのターゲット環境の設定] ページで、**ターゲットのステージング環境**ドロップダウン リストは、このアプリケーションのターゲット環境を選択し、をクリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="f8561-183">On the Application Target Environment Settings page, in the **Target Staging Environment** drop-down list, select the target environment for this application, and click **Next**.</span></span> <span data-ttu-id="f8561-184">この一覧には、このアプリケーションに追加されたすべてのバインド ファイルに指定されているすべての環境が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f8561-184">This list contains all environments that have been specified for any binding files that have been added to this application.</span></span> <span data-ttu-id="f8561-185">選択\<既定\>ターゲット環境を指定のあるものを除き、アプリケーションのすべてのバインドを適用するかどうか。</span><span class="sxs-lookup"><span data-stu-id="f8561-185">Select \<Default\> if you want to apply all bindings in the application except for those that have a target environment specified.</span></span> <span data-ttu-id="f8561-186">.Msi ファイルに明示的に適用するバインド ファイルが含まれていない場合のままにする\<既定\>選択します。</span><span class="sxs-lookup"><span data-stu-id="f8561-186">If the .msi file does not contain a binding file that you want to apply explicitly, you can leave \<Default\> selected.</span></span>  
+7.  <span data-ttu-id="f8561-183">[アプリケーションのターゲット環境の設定] ページで、**ターゲットのステージング環境**ドロップダウン リストは、このアプリケーションのターゲット環境を選択し、をクリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="f8561-183">On the Application Target Environment Settings page, in the **Target Staging Environment** drop-down list, select the target environment for this application, and click **Next**.</span></span> <span data-ttu-id="f8561-184">この一覧には、このアプリケーションに追加されたすべてのバインド ファイルに指定されているすべての環境が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f8561-184">This list contains all environments that have been specified for any binding files that have been added to this application.</span></span> <span data-ttu-id="f8561-185">選択\<既定\>ターゲット環境を指定のあるものを除き、アプリケーションのすべてのバインドを適用するかどうか。</span><span class="sxs-lookup"><span data-stu-id="f8561-185">Select \<Default\> if you want to apply all bindings in the application except for those that have a target environment specified.</span></span> <span data-ttu-id="f8561-186">.Msi ファイルに明示的に適用するバインド ファイルが含まれていない場合のままにする\<既定\>選択します。</span><span class="sxs-lookup"><span data-stu-id="f8561-186">If the .msi file does not contain a binding file that you want to apply explicitly, you can leave \<Default\> selected.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="f8561-187">バインド ファイルをアプリケーションに追加するときに、バインドのターゲット環境を指定します。</span><span class="sxs-lookup"><span data-stu-id="f8561-187">You specify the target environment for bindings when you add a binding file to an application.</span></span> <span data-ttu-id="f8561-188">背景情報について、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="f8561-188">For background information, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span> <span data-ttu-id="f8561-189">バインド ファイルを追加する方法の詳細については、次を参照してください。[アプリケーションにバインド ファイルを追加する方法](../core/how-to-add-a-binding-file-to-an-application2.md)です。</span><span class="sxs-lookup"><span data-stu-id="f8561-189">For instructions on adding binding files, see [How to Add a Binding File to an Application](../core/how-to-add-a-binding-file-to-an-application2.md).</span></span>  
@@ -106,7 +107,7 @@ ms.lasthandoff: 12/01/2017
     > [!NOTE]
     >  <span data-ttu-id="f8561-192">現在アプリケーションがローカル コンピューターで構成されている場合、アプリケーションを実行する必要がなければ、アプリケーションをインストールする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="f8561-192">Unless you need to run the application as it is currently configured on the local computer, you do not need to install it.</span></span> <span data-ttu-id="f8561-193">ただし、アプリケーションにファイルベースのアイテムが含まれている場合、アプリケーションが機能するためには、実行するすべてのコンピューターにアプリケーションをインストールする必要があります。アプリケーションのインポートでは BizTalk 管理データベースにしかアプリケーションは追加されません。</span><span class="sxs-lookup"><span data-stu-id="f8561-193">If the application includes file-based artifacts, however, you must install the application on all of the computers that will run it before it can begin functioning, as importing the application only adds it to the BizTalk Management database.</span></span>  
   
-10. <span data-ttu-id="f8561-194">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f8561-194">Click **Finish**.</span></span>  
+10. <span data-ttu-id="f8561-194">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f8561-194">Click **Finish**.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="f8561-195">ローカル ファイル システムへの書き込みアクセス許可が与えられてないなどの理由によりインストールに失敗する場合、インストールはロールバックされますが、インポート操作はロールバックされません。</span><span class="sxs-lookup"><span data-stu-id="f8561-195">If the installation fails, for example because you do not have Write permissions on the local file system, the installation is rolled back, but not the import operation.</span></span>  

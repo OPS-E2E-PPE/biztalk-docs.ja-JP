@@ -1,11 +1,11 @@
 ---
-title: "データベースの構造とジョブ |Microsoft ドキュメント"
-ms.custom: 
+title: データベースの構造とジョブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PurgeSubscriptionsJob_BizTalkMsgBoxDb job
@@ -32,7 +32,7 @@ helpviewer_keywords:
 - jobs [SQL Server Agent], Tracking database
 - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb job
 ms.assetid: f5f6b17d-0f5e-4821-a7eb-c345234ffc65
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -41,6 +41,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240562"
 ---
 # <a name="database-structure-and-jobs"></a><span data-ttu-id="5e612-102">データベース構造とジョブ</span><span class="sxs-lookup"><span data-stu-id="5e612-102">Database Structure and Jobs</span></span>
 <span data-ttu-id="5e612-103">このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のデータベース構造とデータベース ジョブについて説明します。</span><span class="sxs-lookup"><span data-stu-id="5e612-103">This topic discusses the database structure and database jobs for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -68,7 +69,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="5e612-121">DTA Purge and Archive (BizTalkDTADb)</span><span class="sxs-lookup"><span data-stu-id="5e612-121">DTA Purge and Archive (BizTalkDTADb)</span></span>|<span data-ttu-id="5e612-122">このジョブは、BizTalk 追跡 (BizTalkDTADb) データベースのデータを自動的にアーカイブして古いデータを削除します。</span><span class="sxs-lookup"><span data-stu-id="5e612-122">This job automatically archives data in the BizTalk Tracking (BizTalkDTADb) database and purges obsolete data.</span></span> <span data-ttu-id="5e612-123">構成して、このジョブの実行に関する詳細については、次を参照してください。[アーカイブ化および BizTalk 追跡データベースを削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="5e612-123">For more information about configuring and running this job, see [Archiving and Purging the BizTalk Tracking Database](../core/archiving-and-purging-the-biztalk-tracking-database.md).</span></span>|  
 |<span data-ttu-id="5e612-124">MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="5e612-124">MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="5e612-125">このジョブは、BizTalk Server ホスト インスタンス (NT サービス) の停止を検出し、そのホスト インスタンスで行われていたすべての作業を解放して、別のホスト インスタンスが作業できるようにします。</span><span class="sxs-lookup"><span data-stu-id="5e612-125">This job detects when a BizTalk Server host instance (NT service) has stopped and releases all work that was being done by that host instance so that it can be worked on by another host instance.</span></span>|  
 |<span data-ttu-id="5e612-126">MessageBox_Message_Cleanup_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="5e612-126">MessageBox_Message_Cleanup_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="5e612-127">このジョブは、BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベース テーブルで、サブスクライバーによって参照されなくなったすべてのメッセージを削除します。</span><span class="sxs-lookup"><span data-stu-id="5e612-127">This job removes all messages that are no longer being referenced by any subscribers in the BizTalk MessageBox (BizTalkMsgBoxDb) database tables.</span></span> <span data-ttu-id="5e612-128">**注意:** MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブによって開始された、スケジュールされていないジョブです。</span><span class="sxs-lookup"><span data-stu-id="5e612-128">**Caution:**  This is an unscheduled job which is started by the MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb job.</span></span> <span data-ttu-id="5e612-129">このジョブを手動で開始しないでください。</span><span class="sxs-lookup"><span data-stu-id="5e612-129">Do not manually start this job.</span></span>|  
-|<span data-ttu-id="5e612-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="5e612-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="5e612-131">このジョブは、メッセージの参照カウント ログを管理し、サブスクライバーによってジョブが参照されなくなったかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="5e612-131">This job manages the reference count logs for messages and determines when a message is no longer referenced by any subscriber.</span></span> <span data-ttu-id="5e612-132">**注:**でもこのジョブによって呼び出されるストアド プロシージャがストアド プロシージャを継続的に実行することを確認するためのロジックを含む、1 分ごと 1 回実行するこの SQL Server エージェント ジョブがスケジュールされていると思っています。</span><span class="sxs-lookup"><span data-stu-id="5e612-132">**Note:**  Even thought this SQL Server Agent job is scheduled to run once per minute, the stored procedure that is called by this job contains logic to ensure that the stored procedure runs continually.</span></span> <span data-ttu-id="5e612-133">この動作は仕様によるものなので、変更しないでください。</span><span class="sxs-lookup"><span data-stu-id="5e612-133">This is by design behavior and should not be modified.</span></span>|  
+|<span data-ttu-id="5e612-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="5e612-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="5e612-131">このジョブは、メッセージの参照カウント ログを管理し、サブスクライバーによってジョブが参照されなくなったかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="5e612-131">This job manages the reference count logs for messages and determines when a message is no longer referenced by any subscriber.</span></span> <span data-ttu-id="5e612-132">**注:** でもこのジョブによって呼び出されるストアド プロシージャがストアド プロシージャを継続的に実行することを確認するためのロジックを含む、1 分ごと 1 回実行するこの SQL Server エージェント ジョブがスケジュールされていると思っています。</span><span class="sxs-lookup"><span data-stu-id="5e612-132">**Note:**  Even thought this SQL Server Agent job is scheduled to run once per minute, the stored procedure that is called by this job contains logic to ensure that the stored procedure runs continually.</span></span> <span data-ttu-id="5e612-133">この動作は仕様によるものなので、変更しないでください。</span><span class="sxs-lookup"><span data-stu-id="5e612-133">This is by design behavior and should not be modified.</span></span>|  
 |<span data-ttu-id="5e612-134">MessageBox_Parts_Cleanup_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="5e612-134">MessageBox_Parts_Cleanup_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="5e612-135">このジョブは、BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベース テーブルで、メッセージによって参照されなくなったすべてのメッセージ部分を削除します。</span><span class="sxs-lookup"><span data-stu-id="5e612-135">This job removes all message parts that are no longer being referenced by any messages in the BizTalk MessageBox (BizTalkMsgBoxDb) database tables.</span></span> <span data-ttu-id="5e612-136">すべてのメッセージは、実際のメッセージ データを含んでいる 1 つまたは複数のメッセージ部分で構成されています。</span><span class="sxs-lookup"><span data-stu-id="5e612-136">All messages are made up of one or more message parts, which contain the actual message data.</span></span>|  
 |<span data-ttu-id="5e612-137">MessageBox_UpdateStats_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="5e612-137">MessageBox_UpdateStats_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="5e612-138">このジョブは、BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベースの統計を手動で更新します。</span><span class="sxs-lookup"><span data-stu-id="5e612-138">This job manually updates the statistics for the BizTalk MessageBox (BizTalkMsgBoxDb) database.</span></span>|  
 |<span data-ttu-id="5e612-139">BizTalk Server の監視</span><span class="sxs-lookup"><span data-stu-id="5e612-139">Monitor BizTalk Server</span></span>|<span data-ttu-id="5e612-140">このジョブは、孤立したインスタンスなど、既知の問題について BizTalkMgmtDb、BizTalkMsgBoxDb および BizTalkDTADb データベースをスキャンします。</span><span class="sxs-lookup"><span data-stu-id="5e612-140">This job scans the BizTalkMgmtDb, BizTalkMsgBoxDb and BizTalkDTADb database for any known issues, including orphaned instances.</span></span>|  

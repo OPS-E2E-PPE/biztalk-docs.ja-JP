@@ -1,11 +1,11 @@
 ---
-title: "受信確認の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信確認の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, publishing
@@ -30,7 +30,7 @@ helpviewer_keywords:
 - positive acknowledgements (ACK)
 - BTS.AckOwnerID property
 ms.assetid: 2e5986d4-9633-4b7b-8ff3-fa3da93c5400
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -39,6 +39,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288186"
 ---
 # <a name="using-acknowledgments"></a><span data-ttu-id="dcbbf-102">受信確認の使用</span><span class="sxs-lookup"><span data-stu-id="dcbbf-102">Using Acknowledgments</span></span>
 <span data-ttu-id="dcbbf-103">BizTalk メッセージング エンジンは、ポートを通じたメッセージの処理中に発生した条件に応じて、肯定受信確認応答 (ACK) および否定受信確認応答 (NACK) を生成します。</span><span class="sxs-lookup"><span data-stu-id="dcbbf-103">The BizTalk Messaging Engine generates positive acknowledgments (ACK) and negative acknowledgments (NACK) in response to conditions encountered during the processing of a message through a port.</span></span> <span data-ttu-id="dcbbf-104">BizTalk Server では、メッセージの転送が成功したことを示す受信確認、および転送の失敗やメッセージの中断を示す否定受信確認応答を作成します。</span><span class="sxs-lookup"><span data-stu-id="dcbbf-104">BizTalk Server publishes a positive acknowledgment to indicate successful transmission of a message and a negative acknowledgment to indicate transmission failure and suspension of a message.</span></span>  

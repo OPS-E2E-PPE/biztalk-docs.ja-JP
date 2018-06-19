@@ -1,14 +1,14 @@
 ---
-title: "応答のないプロセスのメモリ ダンプをキャプチャする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 応答のないプロセスのメモリ ダンプをキャプチャする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ad53376-2fab-4dee-8a6a-a44d157390f2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248586"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-non-responsive"></a><span data-ttu-id="da1bd-102">応答のないプロセスのメモリ ダンプを取得する方法</span><span class="sxs-lookup"><span data-stu-id="da1bd-102">How to Capture a Memory Dump of a Process that is Non Responsive</span></span>
 <span data-ttu-id="da1bd-103">BizTalk プロセス BTSNTSvc.exe として定義されている**ぶら下げ**プロセスが応答を停止するようです。</span><span class="sxs-lookup"><span data-stu-id="da1bd-103">The BizTalk process BTSNTSvc.exe is defined as **hanging** when the process seems to stop responding.</span></span> <span data-ttu-id="da1bd-104">プロセスのハングに共通する現象は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="da1bd-104">Common symptoms of a process hang include:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "Functoid が参照されているカスタムの開発 |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid が参照されているカスタムの開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e26d726-240c-4dfc-baa2-77451b8dc6c5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239226"
 ---
 # <a name="developing-a-custom-referenced-functoid"></a><span data-ttu-id="2517b-102">参照型のカスタム Functoid の開発</span><span class="sxs-lookup"><span data-stu-id="2517b-102">Developing a Custom Referenced Functoid</span></span>
 <span data-ttu-id="2517b-103">参照型のカスタム Functoid は、インラインの実装コードをマップにコピーしません。</span><span class="sxs-lookup"><span data-stu-id="2517b-103">Custom referenced functoids do not copy implementation code inline into the map.</span></span> <span data-ttu-id="2517b-104">代わりに、生成されたスタイル シートに関連付けられた拡張オブジェクト ファイルにアセンブリ、クラス、およびメソッドへの参照が配置され、実行時に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="2517b-104">Instead, a reference to the assembly, class, and method is placed in the extension object file associated with the generated style sheet and called at run time.</span></span>  

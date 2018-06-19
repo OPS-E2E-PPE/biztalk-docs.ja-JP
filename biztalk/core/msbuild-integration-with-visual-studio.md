@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio での MSBUILD の統合 |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio での MSBUILD の統合 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aedcabf7-b2cf-482a-9ade-7311e104bff9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262834"
 ---
 # <a name="msbuild-integration-with-visual-studio"></a><span data-ttu-id="24b37-102">MSBUILD の Visual Studio との統合</span><span class="sxs-lookup"><span data-stu-id="24b37-102">MSBUILD Integration with Visual Studio</span></span>
 <span data-ttu-id="24b37-103">Visual Studio では MSBUILD プロジェクト ファイル形式を使用して、BizTalk プロジェクトなどのマネージ プロジェクトに関するビルド情報を保存します。</span><span class="sxs-lookup"><span data-stu-id="24b37-103">Visual Studio uses the MSBUILD project file format to store build information about managed projects including BizTalk projects.</span></span> <span data-ttu-id="24b37-104">Visual Studio から追加および変更されたプロジェクト設定は、プロジェクトごとに生成される .btproj ファイルに反映されます。</span><span class="sxs-lookup"><span data-stu-id="24b37-104">Project settings added and changed through Visual Studio are reflected in the .btproj file that is generated for each project.</span></span> <span data-ttu-id="24b37-105">Visual Studio は、MSBUILD のホストされたインスタンスを使用して BizTalk プロジェクトをビルドします。つまり、BizTalk プロジェクトは Visual Studio でビルドすることも、コマンド ラインからビルドすることもできます。結果はどちらも同じです。</span><span class="sxs-lookup"><span data-stu-id="24b37-105">Visual Studio uses a hosted instance of MSBUILD to build BizTalk projects, meaning that a BizTalk project can be built in Visual Studio or from the command line, with identical results.</span></span>  

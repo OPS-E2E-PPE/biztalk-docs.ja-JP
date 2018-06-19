@@ -1,14 +1,14 @@
 ---
-title: "無効な制御標準識別子 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効な制御標準識別子 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d2b5a54-7f29-49c9-8bcf-a5b4b6d07ad3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257018"
 ---
 # <a name="invalid-control-standard-identifier"></a><span data-ttu-id="5623e-102">制御標準識別子が無効です</span><span class="sxs-lookup"><span data-stu-id="5623e-102">Invalid Control Standard Identifier</span></span>
 ## <a name="details"></a><span data-ttu-id="5623e-103">詳細</span><span class="sxs-lookup"><span data-stu-id="5623e-103">Details</span></span>  

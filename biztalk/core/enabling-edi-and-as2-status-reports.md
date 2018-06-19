@@ -1,14 +1,14 @@
 ---
-title: "EDI および AS2 状態レポートの有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI および AS2 状態レポートの有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa40fbad-51ad-40e0-9fe3-68e54beb11a5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242914"
 ---
 # <a name="enabling-edi-and-as2-status-reports"></a><span data-ttu-id="4fac0-102">EDI および AS2 状態レポートの有効化</span><span class="sxs-lookup"><span data-stu-id="4fac0-102">Enabling EDI and AS2 Status Reports</span></span>
 <span data-ttu-id="4fac0-103">このトピックでの EDI および AS2 状態レポートを構成する方法を説明する、**グループの概要**のページ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="4fac0-103">This topic describes how to configure the EDI and AS2 status reports in the **Group Overview** page of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="4fac0-121">バッチ処理オーケストレーションのインスタンスがアクティブなときにトランザクション セットのストレージを有効にした場合は、作成中のバッチについてのトランザクション セットが格納されません。</span><span class="sxs-lookup"><span data-stu-id="4fac0-121">If you enable storage of transaction sets while an instance of the batching orchestration is activated, transaction sets will not be stored for the batch being created.</span></span> <span data-ttu-id="4fac0-122">ただし、バッチ処理オーケストレーションのインスタンスがアクティブなときにトランザクション セットのストレージを無効にした場合は、ストレージがバッチ処理の途中で無効になります。</span><span class="sxs-lookup"><span data-stu-id="4fac0-122">However, if you disable storage of transaction sets while an instance of the batching orchestration is activated, the storage will be disabled in the middle of the batching.</span></span>  
   
-6.  <span data-ttu-id="4fac0-123">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-123">Click **OK**.</span></span>  
+6.  <span data-ttu-id="4fac0-123">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-123">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="4fac0-124">[コンピューターの管理] ダイアログ ボックスで BizTalk サービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="4fac0-124">Restart the BizTalk Service (in the Computer Management dialog box).</span></span> <span data-ttu-id="4fac0-125">AS2EdiReceive パイプラインまたは AS2EdiSend パイプラインは、ソリューションで使用されているが場合、IIS Admin サービスを再起動 (を使用して、 *iisreset*コマンド)、およびです。</span><span class="sxs-lookup"><span data-stu-id="4fac0-125">If the AS2EdiReceive pipeline or the AS2EdiSend pipeline is being used in your solution, restart the IIS Admin service (using the *iisreset* command), as well.</span></span>  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="4fac0-135">**EDIFACT でエンコードされたメッセージ**: EDI グローバル プロパティ ダイアログ ボックスの UNB セグメントの定義 ページで unb3.2 フィールド (コード修飾子) の値を選択する場合、このプロパティを選択するもする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fac0-135">**For EDIFACT-encoded messages**: If you select this property, you must also select a value for the UNB3.2 field (Code qualifier) in the UNB Segment Definition page of the EDI Global Properties dialog box.</span></span> <span data-ttu-id="4fac0-136">既定では、このプロパティが設定されていないと場合、インターチェンジは中断されます**レポート用にトランザクション セット/ペイロードを格納**が選択されているが、UNB3.2 の値が選択されていません。</span><span class="sxs-lookup"><span data-stu-id="4fac0-136">This property is not set by default, and the interchange will be suspended if **Store transaction set/payload for reporting** is selected, but a value is not selected for UNB3.2.</span></span>  
   
-4.  <span data-ttu-id="4fac0-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-137">Click **OK**.</span></span>  
+4.  <span data-ttu-id="4fac0-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-137">Click **OK**.</span></span>  
   
 ### <a name="to-enable-as2-status-reports"></a><span data-ttu-id="4fac0-138">AS2 状態レポート機能を有効にするには</span><span class="sxs-lookup"><span data-stu-id="4fac0-138">To enable AS2 status reports</span></span>  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="4fac0-143">これにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの状態レポートの UI にメッセージ エントリが入力されるようになります。</span><span class="sxs-lookup"><span data-stu-id="4fac0-143">This step causes message entries to be entered in the status report UI in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
   
-5.  <span data-ttu-id="4fac0-144">一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**受信者メッセージの追跡 (NRR)**ページ。</span><span class="sxs-lookup"><span data-stu-id="4fac0-144">In the one-way agreement tab of the **Agreement Properties** dialog box, click the **Receiver Message Tracking (NRR)** page.</span></span>  
+5.  <span data-ttu-id="4fac0-144">一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**受信者メッセージの追跡 (NRR)** ページ。</span><span class="sxs-lookup"><span data-stu-id="4fac0-144">In the one-way agreement tab of the **Agreement Properties** dialog box, click the **Receiver Message Tracking (NRR)** page.</span></span>  
   
 6.  <span data-ttu-id="4fac0-145">**受信者メッセージの追跡 (NRR)**  ページで、をクリックして**受信のエンコードされた AS2 メッセージの有効な NRR**受信メッセージのワイヤ形式の表示を有効にします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-145">In the **Receiver Message Tracking (NRR)** page, click **NRR enabled for inbound encoded AS2 messages** to enable display of the wire format of incoming messages.</span></span>  
   
@@ -105,7 +106,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="4fac0-151">**受信者メッセージの追跡 (NRR)** ] ページで [**送信 MDN の NRR の有効化**受信メッセージへの MDN 応答を表示できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-151">In the **Receiver Message Tracking (NRR)** page, click **NRR enabled for outbound MDN** to enable display of MDN responses to incoming messages.</span></span>  
   
-9. <span data-ttu-id="4fac0-152">一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**送信者メッセージ追跡 (NRR)**ページ。</span><span class="sxs-lookup"><span data-stu-id="4fac0-152">In the one-way agreement tab of the **Agreement Properties** dialog box, click the **Sender Message Tracking (NRR)** page.</span></span>  
+9. <span data-ttu-id="4fac0-152">一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**送信者メッセージ追跡 (NRR)** ページ。</span><span class="sxs-lookup"><span data-stu-id="4fac0-152">In the one-way agreement tab of the **Agreement Properties** dialog box, click the **Sender Message Tracking (NRR)** page.</span></span>  
   
 10. <span data-ttu-id="4fac0-153">**送信者メッセージ追跡 (NRR)**  ページで、をクリックして**エンコードされた送信の AS2 メッセージに対して有効な NRR**送信メッセージのワイヤ形式の表示を有効にします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-153">In the **Sender Message Tracking (NRR)** page, click **NRR enabled for outbound encoded AS2 messages** to enable display of the wire format of outgoing messages.</span></span>  
   
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
 12. <span data-ttu-id="4fac0-155">**送信者メッセージ追跡 (NRR)** ] ページで [**受信 MDN の NRR の有効化**送信メッセージへの MDN 応答を表示できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-155">In the **Sender Message Tracking (NRR)** page, click **NRR enabled for inbound MDN** to enable display of MDN responses to outgoing messages.</span></span>  
   
-13. <span data-ttu-id="4fac0-156">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-156">Click **OK**.</span></span>  
+13. <span data-ttu-id="4fac0-156">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fac0-156">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="4fac0-157">参照</span><span class="sxs-lookup"><span data-stu-id="4fac0-157">See Also</span></span>  
  <span data-ttu-id="4fac0-158">[EDI および AS2 ソリューションの監視](../core/monitoring-edi-and-as2-solutions.md) </span><span class="sxs-lookup"><span data-stu-id="4fac0-158">[Monitoring EDI and AS2 Solutions](../core/monitoring-edi-and-as2-solutions.md) </span></span>  

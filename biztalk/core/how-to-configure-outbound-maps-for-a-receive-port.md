@@ -1,11 +1,11 @@
 ---
-title: "送信マップを構成する方法、受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 送信マップを構成する方法、受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], configuring
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - configuring, receive ports
 - receive ports, outbound maps
 ms.assetid: 01a864a1-9e8c-4b82-9d03-91be09d556da
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248514"
 ---
 # <a name="how-to-configure-outbound-maps-for-a-receive-port"></a><span data-ttu-id="58969-102">受信ポートの送信マップを構成する方法</span><span class="sxs-lookup"><span data-stu-id="58969-102">How to Configure Outbound Maps for a Receive Port</span></span>
 <span data-ttu-id="58969-103">このトピックでは、BizTalk Server 管理コンソールを使用して受信ポートの送信マップを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="58969-103">This topic describes how to use the BizTalk Server Administration console to configure outbound maps for a receive port.</span></span> <span data-ttu-id="58969-104">要求 - 応答の受信ポートと共に送信マップを使用すると、送信メッセージのスキーマを別のスキーマに変換できます。たとえば、会社が使用するメッセージを取引先が使用するスキーマに変換できます。</span><span class="sxs-lookup"><span data-stu-id="58969-104">You can use outbound maps with request-response receive ports to transform outbound messages from one schema to another; for example to transform messages that your company uses into a schema that a partner uses.</span></span>  

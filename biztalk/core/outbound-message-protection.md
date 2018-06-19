@@ -1,11 +1,11 @@
 ---
-title: "送信メッセージの保護 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信メッセージの保護 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing, outbound messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - authenticating, warnings
 - messages, outbound
 ms.assetid: 839d3b44-bb44-454b-817c-67b7c8cd74c9
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264626"
 ---
 # <a name="outbound-message-protection"></a><span data-ttu-id="cdfaa-102">送信メッセージの保護</span><span class="sxs-lookup"><span data-stu-id="cdfaa-102">Outbound Message Protection</span></span>
 <span data-ttu-id="cdfaa-103">次の図に、承認されていないパーティに送信メッセージを読み取られないようにするための BizTalk Server のセキュリティ機能を示します。</span><span class="sxs-lookup"><span data-stu-id="cdfaa-103">The following figure shows the security features in BizTalk Server that you use to help protect outbound messages from being read by unauthorized parties.</span></span>  

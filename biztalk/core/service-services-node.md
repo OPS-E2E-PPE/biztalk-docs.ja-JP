@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270250"
 ---
 # <a name="service-services-node"></a><span data-ttu-id="fe6bb-102">Service (Services ノード)</span><span class="sxs-lookup"><span data-stu-id="fe6bb-102">Service (Services Node)</span></span>
 <span data-ttu-id="fe6bb-103">バインド ファイルの Service ノードには、そのバインド ファイルに基づいてエクスポートされるサービスに関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="fe6bb-103">The Service node of a binding file contains information about a service exported with the binding file.</span></span> <span data-ttu-id="fe6bb-104">この Service ノードには、サービスに関連付けられているポートおよびロールを説明するノード、およびサービスに関連付けられているホストを説明するノードも含まれます。</span><span class="sxs-lookup"><span data-stu-id="fe6bb-104">The service node also contains nodes that describe the ports and roles associated with the service and a node that describes the host associated with the service.</span></span>  

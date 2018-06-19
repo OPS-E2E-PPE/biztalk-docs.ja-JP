@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, properties
 - messages, about messages
 ms.assetid: 6048c191-b495-4fdc-b547-e3e322340a49
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279898"
 ---
 # <a name="the-biztalk-server-message"></a><span data-ttu-id="7fe99-102">BizTalk Server メッセージ</span><span class="sxs-lookup"><span data-stu-id="7fe99-102">The BizTalk Server Message</span></span>
 <span data-ttu-id="7fe99-103">基本的に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、メッセージ処理エンジンです。</span><span class="sxs-lookup"><span data-stu-id="7fe99-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is, at its core, a message-handling engine.</span></span> <span data-ttu-id="7fe99-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の詳細を理解するには、メッセージと BizTalk Server によるメッセージの表示、保存、および処理の方法を理解することが重要です。</span><span class="sxs-lookup"><span data-stu-id="7fe99-104">To understand the details of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], it is important to understand messages and how they are represented, stored, and processed by BizTalk Server.</span></span> <span data-ttu-id="7fe99-105">メッセージの概要を理解すると、BizTalk Server でのメッセージ処理の詳細が理解しやすくなります。</span><span class="sxs-lookup"><span data-stu-id="7fe99-105">The details of how BizTalk Server works with messages become easier to understand after you have gained an understanding of what a message is.</span></span>  

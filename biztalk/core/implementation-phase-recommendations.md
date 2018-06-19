@@ -1,14 +1,14 @@
 ---
-title: "実装フェーズの推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 実装フェーズの推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04877156-cc32-480b-8410-d26eb073c327
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257402"
 ---
 # <a name="implementation-phase-recommendations"></a><span data-ttu-id="1321f-102">実装フェーズの推奨事項</span><span class="sxs-lookup"><span data-stu-id="1321f-102">Implementation Phase Recommendations</span></span>
 <span data-ttu-id="1321f-103">実装フェーズでは、要件フェーズと設計フェーズの成果物を取得し、適切なテクノロジを使用してそれらを実装します。</span><span class="sxs-lookup"><span data-stu-id="1321f-103">The implementation phase takes the requirements and design phase products and implements them using appropriate technologies.</span></span> <span data-ttu-id="1321f-104">検証テストについては、このフェーズでテスト ケースを完了し、自動化して検証テストに備えます。</span><span class="sxs-lookup"><span data-stu-id="1321f-104">In the case of validation testing, it is during this phase that test cases are completed and automated in preparation for validation testing.</span></span> <span data-ttu-id="1321f-105">通常、このフェーズでシステムの初期バージョンに関する多数のテストを実施します。テストは、システムの検証だけでなく、テスト ケース自体に問題がないかどうかも検証します。</span><span class="sxs-lookup"><span data-stu-id="1321f-105">Typically, a lot of testing on the early system versions is also performed during this phase, not only to validate the system, but to validate that there are no problems with the test cases themselves.</span></span>  

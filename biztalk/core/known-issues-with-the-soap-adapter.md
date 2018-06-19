@@ -1,14 +1,14 @@
 ---
-title: "SOAP アダプターに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプターに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3229d73-170d-42b7-bab9-12ae5f2d0fa7
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262850"
 ---
 # <a name="known-issues-with-the-soap-adapter"></a><span data-ttu-id="b613f-102">SOAP アダプターに関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="b613f-102">Known Issues with the SOAP Adapter</span></span>
 <span data-ttu-id="b613f-103">ここでは、エラー回避に役立つ情報を記載します。</span><span class="sxs-lookup"><span data-stu-id="b613f-103">This section contains information that may help you avoid errors.</span></span>  

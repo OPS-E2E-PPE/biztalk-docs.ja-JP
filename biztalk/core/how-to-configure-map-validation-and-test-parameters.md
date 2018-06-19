@@ -1,14 +1,14 @@
 ---
-title: "マップの検証を構成する方法とパラメーターをテスト |Microsoft ドキュメント"
-ms.custom: 
+title: マップの検証を構成する方法とパラメーターをテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1768918c-e94f-476f-b288-9e030c691177
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248778"
 ---
 # <a name="how-to-configure-map-validation-and-test-parameters"></a><span data-ttu-id="31099-102">マップの検証を構成する方法とパラメーターのテスト</span><span class="sxs-lookup"><span data-stu-id="31099-102">How to Configure Map Validation and Test Parameters</span></span>
 <span data-ttu-id="31099-103">検証と、マップをテストする前に、マップの検証とテストのパラメーターを設定する必要があります、**プロパティ**マップのウィンドウ。</span><span class="sxs-lookup"><span data-stu-id="31099-103">Before validating and testing a map, you need to set the map validation and test parameters in the **Properties** window of the map.</span></span>  

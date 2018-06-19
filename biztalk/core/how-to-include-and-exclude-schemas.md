@@ -1,14 +1,14 @@
 ---
-title: "スキーマを含めたり除外したりする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマを含めたり除外したりする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9206458-e5d6-48d7-87a6-9471ba60dca7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254346"
 ---
 # <a name="how-to-include-and-exclude-schemas"></a><span data-ttu-id="536c5-102">スキーマを含めたり除外したりする方法</span><span class="sxs-lookup"><span data-stu-id="536c5-102">How to Include and Exclude Schemas</span></span>
 <span data-ttu-id="536c5-103">BizTalk プロジェクト フォルダーに存在するスキーマ ファイルが、実際にはそのプロジェクトに追加されていない場合があります。</span><span class="sxs-lookup"><span data-stu-id="536c5-103">A schema file can exist in a BizTalk project folder and not be included in that project.</span></span> <span data-ttu-id="536c5-104">このようなスキーマを、プロジェクトから除外されたスキーマといいます。</span><span class="sxs-lookup"><span data-stu-id="536c5-104">Such a schema is said to be excluded from the project.</span></span> <span data-ttu-id="536c5-105">除外されたスキーマは、BizTalk プロジェクトのビルド時にコンパイルされません。</span><span class="sxs-lookup"><span data-stu-id="536c5-105">Excluded schemas are not compiled when you build the BizTalk project.</span></span> <span data-ttu-id="536c5-106">このトピックでは、特定のスキーマを BizTalk プロジェクトから除外したり、除外したスキーマを BizTalk プロジェクトに追加したりするための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="536c5-106">This topic describes the steps required to include an excluded schema in a BizTalk project, and to exclude a schema from a BizTalk project.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="536c5-111">ソリューション エクスプローラーで、それまで除外されていたスキーマのアイコンが、通常のスキーマ アイコンに変化します。</span><span class="sxs-lookup"><span data-stu-id="536c5-111">The icon for the previously excluded schema in Solution Explorer changes from an empty outline to the normal schema icon.</span></span>  
   
-4.  <span data-ttu-id="536c5-112">必要に応じて、**プロジェクト**] メニューのをクリックして**[すべてのファイル**は含まれていないプロジェクトで、プロジェクト フォルダー内のすべてのファイルを非表示にします。</span><span class="sxs-lookup"><span data-stu-id="536c5-112">Optionally, on the **Project** menu, click **Show All Files** to hide all files in the project folder that are not included in the project.</span></span>  
+4.  <span data-ttu-id="536c5-112">必要に応じて、**プロジェクト**] メニューのをクリックして **[すべてのファイル**は含まれていないプロジェクトで、プロジェクト フォルダー内のすべてのファイルを非表示にします。</span><span class="sxs-lookup"><span data-stu-id="536c5-112">Optionally, on the **Project** menu, click **Show All Files** to hide all files in the project folder that are not included in the project.</span></span>  
   
 ### <a name="to-exclude-a-schema-from-a-biztalk-project"></a><span data-ttu-id="536c5-113">スキーマを BizTalk プロジェクトから除外するには</span><span class="sxs-lookup"><span data-stu-id="536c5-113">To exclude a schema from a BizTalk project</span></span>  
   

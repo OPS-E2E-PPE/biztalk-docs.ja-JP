@@ -1,14 +1,14 @@
 ---
-title: "メッセージをルーティングできません、バッチ処理オーケストレーションにエンコードの種類を特定できませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージをルーティングできません、バッチ処理オーケストレーションにエンコードの種類を特定できませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0d2ee38d-22c0-4fcf-bb68-b2ef00088c4c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241946"
 ---
 # <a name="the-message-cannot-be-routed-to-the-batching-orchestration-as-the-encoding-type-could-not-be-determined"></a><span data-ttu-id="3dbdd-102">エンコードの種類を決定できなかったため、バッチ処理オーケストレーションへメッセージをルーティングできません</span><span class="sxs-lookup"><span data-stu-id="3dbdd-102">The message cannot be routed to the batching orchestration as the Encoding type could not be determined</span></span>
 ## <a name="details"></a><span data-ttu-id="3dbdd-103">詳細</span><span class="sxs-lookup"><span data-stu-id="3dbdd-103">Details</span></span>  

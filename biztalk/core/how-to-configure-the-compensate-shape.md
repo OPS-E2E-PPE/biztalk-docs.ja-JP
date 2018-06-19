@@ -1,11 +1,11 @@
 ---
-title: "補正図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 補正図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Compensate shape [Orchestration Designer], about Compensate shape
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - configuring [Orchestration Designer], Compensate shape
 - Compensate shape [Orchestration Designer], configuring
 ms.assetid: 9f06289e-4d11-4864-9851-c210276865a7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248282"
 ---
 # <a name="how-to-configure-the-compensate-shape"></a><span data-ttu-id="039e7-102">補正図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="039e7-102">How to Configure the Compensate Shape</span></span>
 <span data-ttu-id="039e7-103">追加できるかどうか、オーケストレーションで入れ子になったトランザクションを使っている場合、**補正**補正ブロックまたはトランザクション スコープの例外ブロックに図形です。</span><span class="sxs-lookup"><span data-stu-id="039e7-103">If you are using nested transactions in your orchestration, you can add a **Compensate** shape in the compensation block or an exception block of a transaction scope.</span></span> <span data-ttu-id="039e7-104">これにより、入れ子にされたトランザクションに対して、オーケストレーション内で明示的に補正を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="039e7-104">This enables your orchestration to explicitly perform compensation on a nested transaction.</span></span> <span data-ttu-id="039e7-105">補正するトランザクションを指定する、**補正**形状、および入れ子になったトランザクション内のすべての補正コードが実行される正常にコミットされたトランザクションを提供します。</span><span class="sxs-lookup"><span data-stu-id="039e7-105">You specify which transaction you would like to be compensated in the **Compensate** shape, and any compensation code in the nested transaction will be run, provided the transaction committed successfully.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 3: BizTalk Server に Salesforce の営業案件通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: BizTalk Server に Salesforce の営業案件通知を受け取る |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: be9de6e3-6bd9-4275-b2fb-0a756c51aabf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279410"
 ---
 # <a name="step-3a-receive-salesforce-opportunity-notification-into-biztalk-server"></a><span data-ttu-id="27d28-102">手順 3: BizTalk Server に Salesforce の営業案件通知を受信</span><span class="sxs-lookup"><span data-stu-id="27d28-102">Step 3a: Receive Salesforce Opportunity Notification into BizTalk Server</span></span>
 <span data-ttu-id="27d28-103">このステップでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の作成を開始します。</span><span class="sxs-lookup"><span data-stu-id="27d28-103">In this step, we start creating a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="27d28-104">メッセージを処理するオーケストレーションの作成を開始する前に、まず、Salesforce から受信する営業案件通知メッセージのメッセージ スキーマを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="27d28-104">We should first include the message schema for the opportunities notification message that we’ll get from Salesforce and then start creating an orchestration to process the message.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="27d28-116">**生成した項目の追加**ダイアログ ボックスで、をクリックして**Consume WCF サービス**、クリックして**追加**を起動する、 **BizTalk WCF サービス使用**ウィザード。</span><span class="sxs-lookup"><span data-stu-id="27d28-116">In the **Add Generated Items** dialog box, click **Consume WCF Service**, and then click **Add** to launch the **BizTalk WCF Service Consuming** wizard.</span></span> <span data-ttu-id="27d28-117">[ようこそ] ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="27d28-117">On the welcome page, click **Next**.</span></span>  
   
-9. <span data-ttu-id="27d28-118">**メタデータ ソース**] ページで、[、**メタデータ ファイル (WSDL と XSD)**オプションをクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="27d28-118">On the **Metadata Source** page, select the **Metadata Files (WSDL and XSD)** option, and then click **Next**.</span></span>  
+9. <span data-ttu-id="27d28-118">**メタデータ ソース**] ページで、[、**メタデータ ファイル (WSDL と XSD)** オプションをクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="27d28-118">On the **Metadata Source** page, select the **Metadata Files (WSDL and XSD)** option, and then click **Next**.</span></span>  
   
 10. <span data-ttu-id="27d28-119">**メタデータ ファイル**] ページで [**追加**、Salesforce ポータルからダウンロードした WSDL ファイルを保存した場所に移動します。</span><span class="sxs-lookup"><span data-stu-id="27d28-119">On the **Metadata Files** page, click **Add**, and then navigate to the location where you saved the WSDL file downloaded from the Salesforce portal.</span></span> <span data-ttu-id="27d28-120">WSDL ファイルを選択し、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="27d28-120">Select the WSDL file and then click **Next**.</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="27d28-144">ソースとして設定**NotificationMessage**と変換先として**NotificationAck**です。</span><span class="sxs-lookup"><span data-stu-id="27d28-144">Set Source as **NotificationMessage** and Destination as **NotificationAck**.</span></span>  
   
-    4.  <span data-ttu-id="27d28-145">チェック ボックスを確認してください**[ok] をクリックしたら BizTalk マッパーを起動**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="27d28-145">Make sure the check box **When I click OK, launch the BizTalk Mapper** is selected.</span></span>  
+    4.  <span data-ttu-id="27d28-145">チェック ボックスを確認してください **[ok] をクリックしたら BizTalk マッパーを起動**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="27d28-145">Make sure the check box **When I click OK, launch the BizTalk Mapper** is selected.</span></span>  
   
     5.  <span data-ttu-id="27d28-146">**MapNotificationResponse.btm**Salesforce に送信する通知応答を作成します。</span><span class="sxs-lookup"><span data-stu-id="27d28-146">In **MapNotificationResponse.btm**, we’ll create a notification response to be sent back to Salesforce.</span></span> <span data-ttu-id="27d28-147">Salesforce が通知を送信するたびに、確認が返信されることが期待されます。</span><span class="sxs-lookup"><span data-stu-id="27d28-147">Every time Salesforce sends a notification, it expects an acknowledgement in return.</span></span> <span data-ttu-id="27d28-148">通知応答メッセージのスキーマことを示しています、 **Ack**応答内の要素は Boolean 型です。</span><span class="sxs-lookup"><span data-stu-id="27d28-148">The schema of the notification response message shows that the **Ack** element in the response is of type Boolean.</span></span> <span data-ttu-id="27d28-149">そのため、マップでは、削除する必要あります、**値のマッピング**functoid とセット、2 つの入力値 (状態と結果) に`true`です。</span><span class="sxs-lookup"><span data-stu-id="27d28-149">So, in the map, you must drop a **Value Mapping** functoid and set its two input values (Condition and Result) to `true`.</span></span> <span data-ttu-id="27d28-150">をクリックして**OK** functoid を保存します。</span><span class="sxs-lookup"><span data-stu-id="27d28-150">Click **OK** to save the functoid.</span></span>  
   

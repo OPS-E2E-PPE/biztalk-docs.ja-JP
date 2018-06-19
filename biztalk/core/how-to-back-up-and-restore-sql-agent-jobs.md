@@ -1,14 +1,14 @@
 ---
-title: "バックアップおよび SQL エージェント ジョブを復元する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップおよび SQL エージェント ジョブを復元する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f82fc5a5-5ea5-476c-bed1-c5d41a50e673
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247202"
 ---
 # <a name="how-to-back-up-and-restore-sql-agent-jobs"></a><span data-ttu-id="d1a53-102">SQL エージェント ジョブのバックアップ方法と復元方法</span><span class="sxs-lookup"><span data-stu-id="d1a53-102">How to Back Up and Restore SQL Agent Jobs</span></span>
 <span data-ttu-id="d1a53-103">このトピックでは、SQL Server エージェント ジョブをバックアップおよび復元する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d1a53-103">This topic describes how to back up and restore SQL Server Agent Jobs.</span></span> <span data-ttu-id="d1a53-104">SQL ジョブを構成してからバックアップすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="d1a53-104">You should back up your SQL jobs after you configure them.</span></span>  
@@ -66,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="d1a53-131">スクリプトを作成する各ジョブについて、手順 3. から繰り返します。</span><span class="sxs-lookup"><span data-stu-id="d1a53-131">Repeat this procedure from Step 3 for each job you want to script.</span></span> <span data-ttu-id="d1a53-132">BizTalk Server 関連ジョブの一覧を参照して、どのジョブのスクリプトを作成するかを判断してください。</span><span class="sxs-lookup"><span data-stu-id="d1a53-132">Refer to the list of BizTalk Server related jobs to determine which jobs you need to script.</span></span>  
   
-     <span data-ttu-id="d1a53-133">バックアップするには、少なくとも、 **Backup BizTalk Server (BizTalkMgmtDb)**ジョブを構成後します。</span><span class="sxs-lookup"><span data-stu-id="d1a53-133">At a minimum, you should back up the **Backup BizTalk Server (BizTalkMgmtDb)** job after it is configured.</span></span>  
+     <span data-ttu-id="d1a53-133">バックアップするには、少なくとも、 **Backup BizTalk Server (BizTalkMgmtDb)** ジョブを構成後します。</span><span class="sxs-lookup"><span data-stu-id="d1a53-133">At a minimum, you should back up the **Backup BizTalk Server (BizTalkMgmtDb)** job after it is configured.</span></span>  
   
 ## <a name="restore-a-job-from-a-script"></a><span data-ttu-id="d1a53-134">スクリプトからジョブを復元します。</span><span class="sxs-lookup"><span data-stu-id="d1a53-134">Restore a job from a script</span></span>  
   

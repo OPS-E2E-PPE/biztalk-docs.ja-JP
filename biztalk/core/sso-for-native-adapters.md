@@ -1,17 +1,17 @@
 ---
-title: "ネイティブ アダプターの SSO |Microsoft ドキュメント"
-ms.custom: 
+title: ネイティブ アダプターの SSO |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, SSO
 - SSO, adapters
 ms.assetid: d8527f0f-910c-42ce-9bd3-83ab6d4349c0
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278058"
 ---
 # <a name="sso-for-native-adapters"></a><span data-ttu-id="3a0a8-102">ネイティブ アダプターの SSO</span><span class="sxs-lookup"><span data-stu-id="3a0a8-102">SSO for Native Adapters</span></span>
 <span data-ttu-id="3a0a8-103">エンタープライズ シングル サインオン (SSO) を使用すると、さまざまなコンピューター システムや Web サイトと相互運用する際にサインオンの回数が 1 回で済みます。</span><span class="sxs-lookup"><span data-stu-id="3a0a8-103">Enterprise Single Sign-On (SSO) enables you to sign on only once when interoperating with different computer systems or Web sites.</span></span> <span data-ttu-id="3a0a8-104">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のこの機能により、BizTalk アダプターは、ネットワーク内で共通の認証メカニズムを使用している複数のアプリケーションに対し、Microsoft Windows の資格情報に基づいて、適切なユーザー ID および資格情報を提供できます。</span><span class="sxs-lookup"><span data-stu-id="3a0a8-104">This feature of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables BizTalk adapters to provide the appropriate user ID and credentials to multiple applications within your network that use a common authentication mechanism based on your Microsoft Windows credentials.</span></span> <span data-ttu-id="3a0a8-105">Windows によって資格情報が認証された後は、アプリケーションへの接続に他の資格情報を指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="3a0a8-105">After Windows authenticates your credentials, you do not need to provide additional credentials to connect to the applications.</span></span>  

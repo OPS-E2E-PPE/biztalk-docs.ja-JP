@@ -1,14 +1,14 @@
 ---
-title: "出力設定の XSLT を指定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 出力設定の XSLT を指定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c541432-fd4e-41cc-8bcc-f570ce5df439
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255338"
 ---
 # <a name="set-map-compilation-and-output-settings"></a><span data-ttu-id="90b20-102">マップのコンパイルを設定し、出力設定</span><span class="sxs-lookup"><span data-stu-id="90b20-102">Set map compilation and output settings</span></span>
 <span data-ttu-id="90b20-103">BizTalk マッパーでマップのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="90b20-103">Set the map properties in the BizTalk mapper.</span></span> 
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 
 ## <a name="set-the-map-level-compilation"></a><span data-ttu-id="90b20-106">マップ レベルのコンパイルを設定します。</span><span class="sxs-lookup"><span data-stu-id="90b20-106">Set the map-level compilation</span></span>
 
-<span data-ttu-id="90b20-107">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**を選択する、`XslTransform`または`XslCompiledTransform`マップをコンパイルするクラス。</span><span class="sxs-lookup"><span data-stu-id="90b20-107">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you choose the `XslTransform` or the `XslCompiledTransform` class to compile your maps.</span></span> 
+<span data-ttu-id="90b20-107">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** を選択する、`XslTransform`または`XslCompiledTransform`マップをコンパイルするクラス。</span><span class="sxs-lookup"><span data-stu-id="90b20-107">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you choose the `XslTransform` or the `XslCompiledTransform` class to compile your maps.</span></span> 
 
 1. <span data-ttu-id="90b20-108">グリッド ビューでは、マップを開きます。</span><span class="sxs-lookup"><span data-stu-id="90b20-108">Open your map in the Grid view.</span></span>
 2. <span data-ttu-id="90b20-109">マッパー グリッドの任意の場所を右クリックし、選択**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="90b20-109">Right-click anywhere in the mapper grid, and select **Properties**.</span></span>  

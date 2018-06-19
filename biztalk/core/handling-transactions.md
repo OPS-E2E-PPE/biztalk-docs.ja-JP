@@ -1,14 +1,14 @@
 ---
-title: "トランザクションの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクションの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d360742-e969-4651-b364-9edc6a93b8d4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248154"
 ---
 # <a name="handling-transactions"></a><span data-ttu-id="d3c50-102">トランザクションの処理</span><span class="sxs-lookup"><span data-stu-id="d3c50-102">Handling Transactions</span></span>
 ## <a name="transacted-receivers"></a><span data-ttu-id="d3c50-103">トランザクション受信元</span><span class="sxs-lookup"><span data-stu-id="d3c50-103">Transacted Receivers</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="transacted-transmitters"></a><span data-ttu-id="d3c50-120">トランザクション送信元</span><span class="sxs-lookup"><span data-stu-id="d3c50-120">Transacted Transmitters</span></span>  
  <span data-ttu-id="d3c50-121">トランザクション アダプターは、トランザクション以外のアダプターとほぼ同様です。</span><span class="sxs-lookup"><span data-stu-id="d3c50-121">Transacted adapters are for the most part very similar to nontransacted adapters.</span></span> <span data-ttu-id="d3c50-122">主な違いは、トランザクション アダプターの場合、メッセージ内のデータを、MSDTC トランザクションに参加しているリソースに送信する点です。</span><span class="sxs-lookup"><span data-stu-id="d3c50-122">The main difference is that the transacted adapter sends the data in the message to a resource that it has enlisted in an MSDTC transaction.</span></span>  
   
- <span data-ttu-id="d3c50-123">**実装のヒン ト:**トランザクション アダプターで使用する同じ MSDTC トランザクションを削除すること、先にデータを書き込むため、 **IBTTransportBatch.DeleteMessage**メソッドの呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="d3c50-123">**Implementation Tip:** For transacted sends, the adapter should use the same MSDTC transaction for writing the data to the destination and for deleting it through the **IBTTransportBatch.DeleteMessage** method call.</span></span> <span data-ttu-id="d3c50-124">トランザクションが行われる必要があるのは、この 2 つの操作だけです。</span><span class="sxs-lookup"><span data-stu-id="d3c50-124">Only these two operations need to be transacted.</span></span> <span data-ttu-id="d3c50-125">他の操作など**IBTTransportBatch.Resubmit**、 **IBTTransportBatch.MoveToNextTransport**、および**IBTTransportBatch.MoveToSuspendQ**にする必要はありませんトランザクション。</span><span class="sxs-lookup"><span data-stu-id="d3c50-125">Any other operations, such as **IBTTransportBatch.Resubmit**, **IBTTransportBatch.MoveToNextTransport**, and **IBTTransportBatch.MoveToSuspendQ** do not need to be transacted.</span></span> <span data-ttu-id="d3c50-126">これは、エンジンが暗黙的にトランザクションを使用し、これらの操作が送信先に対してアトミックである必要がないためです。</span><span class="sxs-lookup"><span data-stu-id="d3c50-126">This is because the engine implicitly uses a transaction and these types of operations do not need to be atomic with respect to the destination.</span></span>  
+ <span data-ttu-id="d3c50-123">**実装のヒン ト:** トランザクション アダプターで使用する同じ MSDTC トランザクションを削除すること、先にデータを書き込むため、 **IBTTransportBatch.DeleteMessage**メソッドの呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="d3c50-123">**Implementation Tip:** For transacted sends, the adapter should use the same MSDTC transaction for writing the data to the destination and for deleting it through the **IBTTransportBatch.DeleteMessage** method call.</span></span> <span data-ttu-id="d3c50-124">トランザクションが行われる必要があるのは、この 2 つの操作だけです。</span><span class="sxs-lookup"><span data-stu-id="d3c50-124">Only these two operations need to be transacted.</span></span> <span data-ttu-id="d3c50-125">他の操作など**IBTTransportBatch.Resubmit**、 **IBTTransportBatch.MoveToNextTransport**、および**IBTTransportBatch.MoveToSuspendQ**にする必要はありませんトランザクション。</span><span class="sxs-lookup"><span data-stu-id="d3c50-125">Any other operations, such as **IBTTransportBatch.Resubmit**, **IBTTransportBatch.MoveToNextTransport**, and **IBTTransportBatch.MoveToSuspendQ** do not need to be transacted.</span></span> <span data-ttu-id="d3c50-126">これは、エンジンが暗黙的にトランザクションを使用し、これらの操作が送信先に対してアトミックである必要がないためです。</span><span class="sxs-lookup"><span data-stu-id="d3c50-126">This is because the engine implicitly uses a transaction and these types of operations do not need to be atomic with respect to the destination.</span></span>  
   
  <span data-ttu-id="d3c50-127">次のオブジェクト間の対話処理図に、アダプターとエンジンが対話するようすを示します。</span><span class="sxs-lookup"><span data-stu-id="d3c50-127">The following object interaction diagram illustrates the interactions between the adapter and the engine.</span></span> <span data-ttu-id="d3c50-128">イベントのシーケンスは、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d3c50-128">The sequence of events is as follows:</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジで構造エラーが見つかりました。 考えられる原因は、復帰行がないための無効なセグメント終端記号と -改行のライン フィード、または |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジで構造エラーが見つかりました。 考えられる原因は、復帰行がないための無効なセグメント終端記号と -改行のライン フィード、または |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 035e37d5-d4a8-49d0-8d75-3bcf2426cac7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241746"
 ---
 # <a name="the-interchange-had-structural-error-a-likely-cause-is-invalid-segment-terminator-due-to-missing-carriage-line-and-or-line-feed-seperators"></a><span data-ttu-id="64c86-103">インターチェンジで構造エラーが見つかりました。</span><span class="sxs-lookup"><span data-stu-id="64c86-103">The interchange had structural error.</span></span> <span data-ttu-id="64c86-104">考えられる原因は、復帰行がないための無効なセグメント終端記号と- や改行のライン フィード</span><span class="sxs-lookup"><span data-stu-id="64c86-104">A likely cause is invalid segment terminator due to missing Carriage Line and-or Line Feed seperators</span></span>
 ## <a name="details"></a><span data-ttu-id="64c86-105">詳細</span><span class="sxs-lookup"><span data-stu-id="64c86-105">Details</span></span>  

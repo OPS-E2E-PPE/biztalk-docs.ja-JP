@@ -1,14 +1,14 @@
 ---
-title: "BAM インターセプタ動作を Machine.config ファイルに追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM インターセプタ動作を Machine.config ファイルに追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ea09925-264f-4976-8e34-f63bad70f886
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248826"
 ---
 # <a name="how-to-add-the-bam-interceptor-behavior-to-the-machineconfig-file"></a><span data-ttu-id="b41f1-102">BAM インターセプタ動作を Machine.config ファイルに追加する方法</span><span class="sxs-lookup"><span data-stu-id="b41f1-102">How to Add the BAM Interceptor Behavior to the Machine.config File</span></span>
 <span data-ttu-id="b41f1-103">BAM でデータを受信するには、BAM インターセプタ動作を Microsoft .NET machine.config ファイルに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b41f1-103">To intercept data in BAM, you must add the BAM interceptor behavior to the Microsoft .NET machine.config file.</span></span> <span data-ttu-id="b41f1-104">これは次の 2 つの方法で実行できます。</span><span class="sxs-lookup"><span data-stu-id="b41f1-104">You can do this in two ways:</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="b41f1-113">サービス構成エディターを開きます。</span><span class="sxs-lookup"><span data-stu-id="b41f1-113">Open the Service Configuration Editor.</span></span> <span data-ttu-id="b41f1-114">サービス構成エディターの使用方法の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=83557](http://go.microsoft.com/fwlink/?LinkId=83557)です。</span><span class="sxs-lookup"><span data-stu-id="b41f1-114">For information about using the Service Configuration Editor, see [http://go.microsoft.com/fwlink/?LinkId=83557](http://go.microsoft.com/fwlink/?LinkId=83557).</span></span>  
   
-2.  <span data-ttu-id="b41f1-115">ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。</span><span class="sxs-lookup"><span data-stu-id="b41f1-115">In the tree view pane (labeled **Configuration**), expand the node tree.</span></span> <span data-ttu-id="b41f1-116">をクリックして、 **[詳細設定]**フォルダー、をクリックして、**拡張機能**フォルダーをクリックし、**動作要素拡張**要素。</span><span class="sxs-lookup"><span data-stu-id="b41f1-116">Click the **Advanced** folder, click the **Extensions** folder, and then select the **behavior element extensions** element.</span></span>  
+2.  <span data-ttu-id="b41f1-115">ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。</span><span class="sxs-lookup"><span data-stu-id="b41f1-115">In the tree view pane (labeled **Configuration**), expand the node tree.</span></span> <span data-ttu-id="b41f1-116">をクリックして、 **[詳細設定]** フォルダー、をクリックして、**拡張機能**フォルダーをクリックし、**動作要素拡張**要素。</span><span class="sxs-lookup"><span data-stu-id="b41f1-116">Click the **Advanced** folder, click the **Extensions** folder, and then select the **behavior element extensions** element.</span></span>  
   
 3.  <span data-ttu-id="b41f1-117">新しい動作要素の拡張機能を作成します。</span><span class="sxs-lookup"><span data-stu-id="b41f1-117">Create a new behavior element extension.</span></span> <span data-ttu-id="b41f1-118">クリックして、**新規**Extension 構成要素エディタ ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="b41f1-118">Click the **New** button to open the Extension Configuration Element Editor dialog box.</span></span> <span data-ttu-id="b41f1-119">**構成名**動作、BAMEndPointBehaviorExtension などの一意の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b41f1-119">In **Configuration Name** enter a unique name for the behavior, for example BAMEndPointBehaviorExtension.</span></span>  
   

@@ -1,18 +1,18 @@
 ---
-title: "SMTP 送信ハンドラを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SMTP 送信ハンドラを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2015-10-22
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send handlers, SMTP adapters
 - SMTP adapters, send handlers
 - configuring [SMTP adapters], send handlers
 ms.assetid: b68a36ce-f0a5-4302-a405-bb154c935f47
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22248498"
 ---
 # <a name="how-to-configure-an-smtp-send-handler"></a><span data-ttu-id="9c7be-102">SMTP 送信ハンドラを構成する方法</span><span class="sxs-lookup"><span data-stu-id="9c7be-102">How to Configure an SMTP Send Handler</span></span>
 <span data-ttu-id="9c7be-103">SMTP 送信ハンドラのプロパティは、BizTalk 管理コンソールで設定できます。</span><span class="sxs-lookup"><span data-stu-id="9c7be-103">You can set SMTP send handler properties in the BizTalk Administration console.</span></span> <span data-ttu-id="9c7be-104">個別の SMTP 送信ポートでプロパティが設定されていない場合は、これらの送信ハンドラのプロパティが送信ポートの構成値として使用されます。</span><span class="sxs-lookup"><span data-stu-id="9c7be-104">These send handler properties are used as the send port configuration values if the properties are not set on the individual SMTP send port.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 01/17/2018
     |<span data-ttu-id="9c7be-132">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="9c7be-132">**User name**</span></span>|<span data-ttu-id="9c7be-133">SMTP サーバーで認証を使用するユーザー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="9c7be-133">Enter the user name to use for authentication with the SMTP server.</span></span><br /><br /> <span data-ttu-id="9c7be-134">場合、このプロパティが値を必要と **認証の種類** は **基本認証**します。</span><span class="sxs-lookup"><span data-stu-id="9c7be-134">This property requires a value if **Authentication type** is **Basic authentication**.</span></span><br /><br /> <span data-ttu-id="9c7be-135">最小長: 0</span><span class="sxs-lookup"><span data-stu-id="9c7be-135">Minimum length: 0</span></span><br /><br /> <span data-ttu-id="9c7be-136">最大長: 256</span><span class="sxs-lookup"><span data-stu-id="9c7be-136">Maximum length: 256</span></span>|  
     |<span data-ttu-id="9c7be-137">**パスワード**</span><span class="sxs-lookup"><span data-stu-id="9c7be-137">**Password**</span></span>|<span data-ttu-id="9c7be-138">SMTP サーバーで認証を使用するパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="9c7be-138">Enter the password to use for authentication with the SMTP server.</span></span><br /><br /> <span data-ttu-id="9c7be-139">場合、このプロパティが値を必要と **認証の種類** は **基本認証**します。</span><span class="sxs-lookup"><span data-stu-id="9c7be-139">This property requires a value if **Authentication type** is **Basic authentication**.</span></span><br /><br /> <span data-ttu-id="9c7be-140">最小長: 0</span><span class="sxs-lookup"><span data-stu-id="9c7be-140">Minimum length: 0</span></span><br /><br /> <span data-ttu-id="9c7be-141">最大長: 256</span><span class="sxs-lookup"><span data-stu-id="9c7be-141">Maximum length: 256</span></span>|  
   
-5.  <span data-ttu-id="9c7be-142">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9c7be-142">Click **OK**.</span></span>  
+5.  <span data-ttu-id="9c7be-142">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9c7be-142">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="9c7be-143">参照</span><span class="sxs-lookup"><span data-stu-id="9c7be-143">See Also</span></span>  
  [<span data-ttu-id="9c7be-144">SMTP アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="9c7be-144">Configuring the SMTP Adapter</span></span>](../core/configuring-the-smtp-adapter.md)

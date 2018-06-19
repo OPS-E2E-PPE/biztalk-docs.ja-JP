@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240786"
 ---
 # <a name="error---table-looping-functoid-without-link-to-destination-schema"></a><span data-ttu-id="d781c-102">エラー - テーブル ループ Functoid に送信先スキーマへのリンクがありません。</span><span class="sxs-lookup"><span data-stu-id="d781c-102">Error - Table Looping Functoid Without Link to Destination Schema</span></span>
 <span data-ttu-id="d781c-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="d781c-103">**Error Code**</span></span>  

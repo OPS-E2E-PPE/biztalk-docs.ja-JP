@@ -1,17 +1,17 @@
 ---
-title: "Excel でビジネス アクティビティとビューの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: Excel でビジネス アクティビティとビューの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Excel add-in [BAM], creating business activities
 - monitoring business activities [BAM], creating business activities
 ms.assetid: 000532f0-cb9a-40ac-a6c5-a8bd4e49f8d0
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239682"
 ---
 # <a name="defining-business-activities-and-views-in-excel"></a><span data-ttu-id="83a58-102">Excel でのビジネス アクティビティとビジネス ビューの定義</span><span class="sxs-lookup"><span data-stu-id="83a58-102">Defining Business Activities and Views in Excel</span></span>
 <span data-ttu-id="83a58-103">BAM ソリューションを作成する場合は、まず関連データの種類とそのデータを解釈する方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="83a58-103">Your first step in creating any BAM solution is to identify what data you're interested in and how that data should be interpreted.</span></span> <span data-ttu-id="83a58-104">これには、Excel 用の BAM アドインを使用します。</span><span class="sxs-lookup"><span data-stu-id="83a58-104">To do this, you use the BAM Add-in for Excel.</span></span> <span data-ttu-id="83a58-105">このアドインを使用すると、ビジネス アクティビティを定義して、関連データの希望リストを定義できます。</span><span class="sxs-lookup"><span data-stu-id="83a58-105">The add-in allows you to define a wish-list of the data of interest by defining a business activity.</span></span> <span data-ttu-id="83a58-106">また、データを解釈する方法と、さまざまなカテゴリのビジネス ユーザーにデータを公開する方法を定義できます。</span><span class="sxs-lookup"><span data-stu-id="83a58-106">You can also define the way the data should be interpreted and shown to different categories of business users.</span></span>  

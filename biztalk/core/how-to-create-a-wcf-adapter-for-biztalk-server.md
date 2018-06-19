@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の WCF アダプターを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の WCF アダプターを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ddaeb72-d263-4291-bd79-485fc736e6e7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249346"
 ---
 # <a name="how-to-create-a-wcf-adapter-for-biztalk-server"></a><span data-ttu-id="f7071-102">BizTalk Server の WCF アダプタを作成する方法</span><span class="sxs-lookup"><span data-stu-id="f7071-102">How to Create a WCF Adapter for BizTalk Server</span></span>
 <span data-ttu-id="f7071-103">BizTalk [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] アダプタの作成作業は、3 つの部分で構成されます。</span><span class="sxs-lookup"><span data-stu-id="f7071-103">There are three parts to creating a BizTalk [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] adapter.</span></span>  

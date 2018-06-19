@@ -1,11 +1,11 @@
 ---
-title: "BAM 警告の実行を管理する |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 警告の実行を管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM definitions], executing alerts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM Management utility
 - alerts, executing
 ms.assetid: 44bb738e-fa2c-4b32-9e8d-e756d6c3778e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262562"
 ---
 # <a name="managing-bam-alert-execution"></a><span data-ttu-id="3460c-102">BAM 警告の実行の管理</span><span class="sxs-lookup"><span data-stu-id="3460c-102">Managing BAM Alert Execution</span></span>
 <span data-ttu-id="3460c-103">BAM 警告の実行は、BAM ポータル、BAM 管理ユーティリティ、および ProcessBamNSFiles.vbs スクリプトの 3 つの方法で変更できます。</span><span class="sxs-lookup"><span data-stu-id="3460c-103">BAM Alert execution can be modified through three avenues, The BAM Portal, the BAM management utility, and the ProcessBamNSFiles.vbs script.</span></span>  

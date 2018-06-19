@@ -1,14 +1,14 @@
 ---
-title: "無効または見つからない末尾に ASN.1 CMS 圧縮構造されたバイト圧縮解除処理中に |Microsoft ドキュメント"
-ms.custom: 
+title: 無効または見つからない末尾に ASN.1 CMS 圧縮構造されたバイト圧縮解除処理中に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b73ce58-d827-4ffc-b2d7-78836298efc8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241018"
 ---
 # <a name="invalid-or-missing-trailing-asn1-cms-compressed-structure-bytes-during-decompression-processing"></a><span data-ttu-id="ce3e0-102">圧縮解除処理中に ASN.1 CMS 圧縮構造の末尾に無効なバイトが検出されたか、バイトが見つかりませんでした</span><span class="sxs-lookup"><span data-stu-id="ce3e0-102">Invalid or missing trailing ASN.1 CMS compressed structure bytes during decompression processing</span></span>
 ## <a name="details"></a><span data-ttu-id="ce3e0-103">詳細</span><span class="sxs-lookup"><span data-stu-id="ce3e0-103">Details</span></span>  

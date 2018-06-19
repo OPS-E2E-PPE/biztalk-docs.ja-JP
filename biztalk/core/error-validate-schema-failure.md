@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240378"
 ---
 # <a name="error---validate-schema-failure"></a><span data-ttu-id="7a0ee-102">エラー - スキーマの検証エラー</span><span class="sxs-lookup"><span data-stu-id="7a0ee-102">Error - Validate Schema Failure</span></span>
 <span data-ttu-id="7a0ee-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="7a0ee-103">**Explanation**</span></span>  

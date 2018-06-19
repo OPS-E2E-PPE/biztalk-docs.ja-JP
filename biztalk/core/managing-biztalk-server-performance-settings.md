@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22263362"
 ---
 # <a name="manage-biztalk-server-performance-settings"></a><span data-ttu-id="4d48c-103">BizTalk Server パフォーマンス設定を管理します。</span><span class="sxs-lookup"><span data-stu-id="4d48c-103">Manage BizTalk Server Performance Settings</span></span>
   

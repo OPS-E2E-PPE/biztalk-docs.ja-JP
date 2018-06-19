@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーションをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, exporting
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - applications, warnings
 - exporting, security
 ms.assetid: a1d6ffca-3d29-44c7-a811-6cf8b42e23f6
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255954"
 ---
 # <a name="how-to-export-a-biztalk-application"></a><span data-ttu-id="37030-102">BizTalk アプリケーションをエクスポートする方法</span><span class="sxs-lookup"><span data-stu-id="37030-102">How to Export a BizTalk Application</span></span>
 <span data-ttu-id="37030-103">ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたはコマンド ラインを使用して、アプリケーションをエクスポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="37030-103">This topic describes how to use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console or the command line to export an application.</span></span> <span data-ttu-id="37030-104">BizTalk アプリケーションをエクスポートすると、Windows Installer (.msi) ファイルが生成されます。このファイルには、アプリケーションと、エクスポートするよう選択したアプリケーションのアイテムが含まれます。</span><span class="sxs-lookup"><span data-stu-id="37030-104">Exporting a BizTalk application generates a Windows Installer (.msi) file that contains the application and any of its artifacts that you select to export.</span></span> <span data-ttu-id="37030-105">既定のオプションではアプリケーションのすべてのアイテムが選択されていますが、アイテムのサブセットを選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="37030-105">The default option is to select all of the application's artifacts, but you can select a subset of them.</span></span> <span data-ttu-id="37030-106">生成された .msi ファイルは別の BizTalk グループにインポートできます。これによって、新しいグループの既存のアプリケーションにアイテムを追加したり、既存のアプリケーションのアイテムを更新したり、グループ内にインポート対象のアイテムを含んだ新しいアプリケーションを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="37030-106">You can then import the .msi file into another BizTalk group to add the artifacts to an existing application in the new group, update the artifacts in an existing application, or create a new application in the group that contains the artifacts being imported.</span></span> <span data-ttu-id="37030-107">詳細については、次を参照してください。[を BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="37030-107">For more information, see [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span> <span data-ttu-id="37030-108">」の説明に従って、それを実行するコンピューターでアプリケーションをインストールする .msi ファイルを使用するも[を BizTalk アプリケーションをインストールする方法](../core/how-to-install-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="37030-108">You also use the .msi file to install the application on the computers that will run it, as described in [How to Install a BizTalk Application](../core/how-to-install-a-biztalk-application.md).</span></span> <span data-ttu-id="37030-109">アプリケーションにファイルベースのアイテムが含まれる場合、アプリケーションを使用するにはそのアイテムもインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="37030-109">If the application includes file-based artifacts, you must also install it before it can begin functioning.</span></span>  

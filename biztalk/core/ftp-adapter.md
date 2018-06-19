@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246338"
 ---
 # <a name="ftp-adapter"></a><span data-ttu-id="cf8df-102">FTP アダプタ</span><span class="sxs-lookup"><span data-stu-id="cf8df-102">FTP Adapter</span></span>
 <span data-ttu-id="cf8df-103">FTP アダプターを使用すると、FTP サーバーと Microsoft BizTalk Server の間でデータを交換できます。これにより、基幹業務アプリケーションを搭載したさまざまなプラットフォームに保存されている重要なデータを統合できます。</span><span class="sxs-lookup"><span data-stu-id="cf8df-103">The FTP adapter exchanges data between an FTP server and Microsoft BizTalk Server, and allows for the integration of vital data stored on a variety of platforms with line-of-business applications.</span></span> <span data-ttu-id="cf8df-104">アダプターは、SOCKS4 経由で FTP サーバーまたは SOCKS5 プロキシ サーバーに接続できます。</span><span class="sxs-lookup"><span data-stu-id="cf8df-104">The adapter can connect to the FTP server via SOCKS4 or SOCKS5 proxy server.</span></span>  

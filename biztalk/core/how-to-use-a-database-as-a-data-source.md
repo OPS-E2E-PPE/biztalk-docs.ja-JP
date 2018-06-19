@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255714"
 ---
 # <a name="how-to-use-a-database-as-a-data-source"></a><span data-ttu-id="440ca-102">データベースをデータ ソースとして使用する方法</span><span class="sxs-lookup"><span data-stu-id="440ca-102">How to Use a Database as a Data Source</span></span>
 <span data-ttu-id="440ca-103">データベースをデータ ソースとして指定できます。</span><span class="sxs-lookup"><span data-stu-id="440ca-103">You can specify a database as a data source.</span></span> <span data-ttu-id="440ca-104">データベースからテーブルまたはテーブルの列を続けて選択し、ファクトとして使用するボキャブラリ定義またはルール上にドラッグできます。</span><span class="sxs-lookup"><span data-stu-id="440ca-104">You can subsequently select a table or table column from the database, and drag it onto a vocabulary definition or rule to use as a fact.</span></span>  

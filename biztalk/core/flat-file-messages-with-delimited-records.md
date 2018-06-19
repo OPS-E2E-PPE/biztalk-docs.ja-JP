@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ad7119b-4e39-43df-9dba-a04382eb6db2
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22246714"
 ---
 # <a name="flat-file-messages-with-delimited-records"></a><span data-ttu-id="56e67-102">区切られたレコードのあるフラット ファイル メッセージ</span><span class="sxs-lookup"><span data-stu-id="56e67-102">Flat File Messages with Delimited Records</span></span>
 <span data-ttu-id="56e67-103">フラット ファイル インスタンス メッセージ内の区切られたレコードには、入れ子のレコード、および事前に定義された文字や文字セットによって分けられている個別のフィールド (データ項目) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="56e67-103">Delimited records within a flat file instance message contain nested records and/or individual fields (items of data) that are separated by a predefined character or set of characters.</span></span> <span data-ttu-id="56e67-104">これらの区切り記号に従って、フィールドが解析されます。</span><span class="sxs-lookup"><span data-stu-id="56e67-104">The fields are parsed according to these separating delimiters.</span></span> <span data-ttu-id="56e67-105">フラット ファイル インスタンス メッセージ内に、次のような区切られたレコードが存在する場合を例として説明します。このレコードには、仮の注文書を基にした 2 つの商品が含まれています。</span><span class="sxs-lookup"><span data-stu-id="56e67-105">For example, consider the following delimited records from a flat file instance message, which contain two line items from a hypothetical purchase order:</span></span>  

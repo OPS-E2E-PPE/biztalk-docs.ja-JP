@@ -1,17 +1,17 @@
 ---
-title: "データ ディメンション |Microsoft ドキュメント"
-ms.custom: 
+title: データ ディメンション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data dimension [BAM]
 - aggregations [BAM], data dimensions
 ms.assetid: 07b5e56a-4fd5-4c88-a98a-758e514d0621
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238354"
 ---
 # <a name="data-dimension"></a><span data-ttu-id="5d93e-102">データ ディメンション</span><span class="sxs-lookup"><span data-stu-id="5d93e-102">Data Dimension</span></span>
 <span data-ttu-id="5d93e-103">行と列に使用する BAM アクティビティ内のテキスト項目の値をデータ ディメンションを定義できます。</span><span class="sxs-lookup"><span data-stu-id="5d93e-103">Defining a data dimension allows the value of some text items in the BAM activity to be used on rows or columns.</span></span> <span data-ttu-id="5d93e-104">たとえば、製品という名前のデータ ディメンションを使用して、次のテーブルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="5d93e-104">For example a data dimension named Product can be used to create the following table:</span></span>  

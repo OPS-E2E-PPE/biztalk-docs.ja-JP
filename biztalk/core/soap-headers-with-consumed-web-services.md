@@ -1,11 +1,11 @@
 ---
-title: "使用する Web サービスでの SOAP ヘッダー |Microsoft ドキュメント"
-ms.custom: 
+title: 使用する Web サービスでの SOAP ヘッダー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP headers, code samples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - SOAP headers, Web services
 - Web services, code samples
 ms.assetid: 7be2eee1-ce1c-4611-985c-91dbc8492d6e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276570"
 ---
 # <a name="soap-headers-with-consumed-web-services"></a><span data-ttu-id="6e755-102">消費済み Web サービスでの SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6e755-102">SOAP Headers with Consumed Web Services</span></span>
 <span data-ttu-id="6e755-103">使用してオーケストレーションを Web サービスを追加した後、 **Web 参照の追加**ダイアログ ボックスで、Web サービスで Web サービス記述言語 (WSDL) を定義する SOAP ヘッダーを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="6e755-103">After you add Web services to your orchestration using the **Add Web Reference** dialog box, you can use the SOAP headers that the Web Services Description Language (WSDL) defines in the Web service.</span></span>  

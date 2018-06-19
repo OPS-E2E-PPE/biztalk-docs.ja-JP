@@ -1,11 +1,11 @@
 ---
-title: "トランスポートの詳細、送信ポートのオプションを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: トランスポートの詳細、送信ポートのオプションを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, transport options [send ports]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [send ports], configuring
 - managing [send ports], transport options
 ms.assetid: b0033e09-3c18-4e53-a470-e12978e61ba1
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,12 +23,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250682"
 ---
 # <a name="how-to-configure-transport-advanced-options-for-a-send-port"></a><span data-ttu-id="b5c60-102">送信ポートに対してトランスポートの詳細オプションを構成する方法</span><span class="sxs-lookup"><span data-stu-id="b5c60-102">How to Configure Transport Advanced Options for a Send Port</span></span>
 <span data-ttu-id="b5c60-103">トランスポートの詳細、送信ポートのオプションを構成するのにには、BizTalk Server 管理コンソールを使用します。</span><span class="sxs-lookup"><span data-stu-id="b5c60-103">Use the BizTalk Server Administration console to configure transport advanced options for a send port.</span></span> <span data-ttu-id="b5c60-104">これらのオプションは、メッセージ エラーが発生したときにメッセージ送信を再試行する回数や、ポートのサービス時間帯スケジュールなど、メッセージをどのように処理するかを定義するものです。</span><span class="sxs-lookup"><span data-stu-id="b5c60-104">These options determine how messages are handled by the send port, such as the number of times to retry sending messages on message failure and the service window schedule for the port.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="b5c60-105">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**アダプターの種類に応じて、動的送信ポートで順次配送を有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="b5c60-105">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can enable ordered delivery for dynamic send ports, depending on the adapter type.</span></span> <span data-ttu-id="b5c60-106">このオプションはのみアダプターの種類の使用可能なファイル アダプターや FTP アダプターなどの静的送信ポートの順次配送を保証する場所です。</span><span class="sxs-lookup"><span data-stu-id="b5c60-106">This option is only available for the adapter types where ordered delivery is guaranteed for static send ports, such as the File adapter, or the FTP adapter.</span></span>
+> <span data-ttu-id="b5c60-105">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** アダプターの種類に応じて、動的送信ポートで順次配送を有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="b5c60-105">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can enable ordered delivery for dynamic send ports, depending on the adapter type.</span></span> <span data-ttu-id="b5c60-106">このオプションはのみアダプターの種類の使用可能なファイル アダプターや FTP アダプターなどの静的送信ポートの順次配送を保証する場所です。</span><span class="sxs-lookup"><span data-stu-id="b5c60-106">This option is only available for the adapter types where ordered delivery is guaranteed for static send ports, such as the File adapter, or the FTP adapter.</span></span>
 > 
 > <span data-ttu-id="b5c60-107">6 つのメッセージを検討してください: M1、M2、M3、M4、M5、および M6 です。</span><span class="sxs-lookup"><span data-stu-id="b5c60-107">Consider six messages: M1, M2, M3, M4, M5, and M6.</span></span> <span data-ttu-id="b5c60-108">ファイルの場所には、M1、M3、M5 が意図したものです。</span><span class="sxs-lookup"><span data-stu-id="b5c60-108">M1, M3, M5 are meant for a file location.</span></span> <span data-ttu-id="b5c60-109">FTP の M2、M4、および M6 を意図されています。</span><span class="sxs-lookup"><span data-stu-id="b5c60-109">M2, M4, and M6 are meant for FTP.</span></span> <span data-ttu-id="b5c60-110">順次配送の動的送信ポートにより、M1、M3、および M5 は並べ替えることです。M2、M4、および M6 はそれぞれ順序付けします。</span><span class="sxs-lookup"><span data-stu-id="b5c60-110">The ordered delivery dynamic send port makes sure that M1, M3, and M5 are ordered; and M2, M4, and M6 are ordered respectively.</span></span> 
 > 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239690"
 ---
 # <a name="enlisted-parties-role-node"></a><span data-ttu-id="ab1f2-102">Enlisted Parties (Role ノード)</span><span class="sxs-lookup"><span data-stu-id="ab1f2-102">Enlisted Parties (Role Node)</span></span>
 <span data-ttu-id="ab1f2-103">バインド ファイルの [参加しているパーティ] ノードは、バインド ファイルと共にエクスポートされるロールに関連付けられた参加しているパーティに関する特定の情報を含むすべての [参加しているパーティ] ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="ab1f2-103">The Enlisted Parties node of a binding file is the parent node for all of the Enlisted Party nodes which contain specific information about the enlisted parties associated with a role that is exported with the binding file.</span></span>  

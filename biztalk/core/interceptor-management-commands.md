@@ -1,14 +1,14 @@
 ---
-title: "インターセプター管理コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: インターセプター管理コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2be6460-1f81-4bc3-a831-34ff24d65d34
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974392"
 ---
 # <a name="interceptor-management-commands"></a><span data-ttu-id="a05b5-102">インターセプター管理コマンド</span><span class="sxs-lookup"><span data-stu-id="a05b5-102">Interceptor Management Commands</span></span>
 <span data-ttu-id="a05b5-103">新しい BAM インターセプター機能をサポートするために、4 つの新しいコマンドが BAM 管理ユーティリティに追加されました。</span><span class="sxs-lookup"><span data-stu-id="a05b5-103">To support the new BAM interceptor functionality, four new commands have been added to the BAM Management utility.</span></span>  

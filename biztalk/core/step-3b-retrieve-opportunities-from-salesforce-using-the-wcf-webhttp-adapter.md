@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 115c908f-777b-4c51-85ea-71d639b01775
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279554"
 ---
 # <a name="step-3b-retrieve-opportunity-details-from-salesforce-using-the-wcf-webhttp-adapter"></a><span data-ttu-id="ac9df-102">手順 3 b: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得</span><span class="sxs-lookup"><span data-stu-id="ac9df-102">Step 3b: Retrieve Opportunity Details from Salesforce using the WCF-WebHttp Adapter</span></span>
 <span data-ttu-id="ac9df-103">このセクションでは、受信する営業案件通知を処理するオーケストレーションを強化し、通知から営業案件名を抽出し、それを使用して Salesforce に送信する要求クエリを作成します。</span><span class="sxs-lookup"><span data-stu-id="ac9df-103">In this section, we’ll enhance the orchestration to process the incoming opportunity notification, extract the opportunity name from the notification, and use that to create a request query to send to Salesforce.</span></span> <span data-ttu-id="ac9df-104">こうすることで、営業案件に関連付けられている製品固有の詳細情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="ac9df-104">This retrieves specific details about the products associated with the opportunity.</span></span> <span data-ttu-id="ac9df-105">Salesforce からのクエリ応答は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信されます。</span><span class="sxs-lookup"><span data-stu-id="ac9df-105">The query response from Salesforce is received back into [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="ac9df-106">これを達成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="ac9df-106">To achieve this, we’ll perform the following steps:</span></span>  
@@ -65,7 +66,7 @@ SELECT Amount, Id, Name,(SELECT Quantity, ListPrice, PricebookEntry.UnitPrice, P
     |-|-|  
     |<span data-ttu-id="ac9df-140">Input[0]</span><span class="sxs-lookup"><span data-stu-id="ac9df-140">Input[0]</span></span>|<span data-ttu-id="ac9df-141">SELECT Amount, Id, Name,(SELECT Quantity, ListPrice, PricebookEntry.UnitPrice, PricebookEntry.Name FROM OpportunityLineItems) FROM Opportunity Where Name = '</span><span class="sxs-lookup"><span data-stu-id="ac9df-141">SELECT Amount, Id, Name,(SELECT Quantity, ListPrice, PricebookEntry.UnitPrice, PricebookEntry.Name FROM OpportunityLineItems) FROM Opportunity Where Name = '</span></span>|  
     |<span data-ttu-id="ac9df-142">Input [1]</span><span class="sxs-lookup"><span data-stu-id="ac9df-142">Input[1]</span></span>|<span data-ttu-id="ac9df-143">Name 要素を 2 番目の入力として使用するために、送信元スキーマの Name 要素を Functoid に接続します。</span><span class="sxs-lookup"><span data-stu-id="ac9df-143">Connect the Name element in the source schema to the functoid to use the value of the Name element as the second input.</span></span>|  
-    |<span data-ttu-id="ac9df-144">[2] の入力</span><span class="sxs-lookup"><span data-stu-id="ac9df-144">Input[2]</span></span>|<span data-ttu-id="ac9df-145">'**注:**最後の入力値に対してのみ単一引用符 (') を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac9df-145">' **Note:**  For the last input value, specify only a closing single quote (').</span></span>|  
+    |<span data-ttu-id="ac9df-144">[2] の入力</span><span class="sxs-lookup"><span data-stu-id="ac9df-144">Input[2]</span></span>|<span data-ttu-id="ac9df-145">'**注:** 最後の入力値に対してのみ単一引用符 (') を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac9df-145">' **Note:**  For the last input value, specify only a closing single quote (').</span></span>|  
   
      <span data-ttu-id="ac9df-146">次のスクリーン ショットの構成を示しています、**文字列連結**functoid です。</span><span class="sxs-lookup"><span data-stu-id="ac9df-146">The following screenshot depicts the configuration for the **String Concatenate** functoid.</span></span>  
   

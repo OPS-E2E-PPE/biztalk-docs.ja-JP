@@ -1,11 +1,11 @@
 ---
-title: "カスタム補正をオーケストレーションに追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム補正をオーケストレーションに追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, compensations
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - customizing, orchestrations
 - Compensate shape [Orchestration Designer], custom compensation
 ms.assetid: d153498d-8f98-42ae-90b9-e3083d669aef
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248122"
 ---
 # <a name="how-to-add-custom-compensation-to-an-orchestration"></a><span data-ttu-id="ac996-102">カスタム補正をオーケストレーションに追加する方法</span><span class="sxs-lookup"><span data-stu-id="ac996-102">How to Add Custom Compensation to an Orchestration</span></span>
 <span data-ttu-id="ac996-103">長時間トランザクションとして構成されたオーケストレーションのトランザクションにはカスタム補正コードを記述し、トランザクションの効果を取り消したり、元に戻したりできます。</span><span class="sxs-lookup"><span data-stu-id="ac996-103">An orchestration transaction that is configured as long running can have custom compensation code to reverse or undo the effects of the transaction.</span></span> <span data-ttu-id="ac996-104">呼び出し元のオーケストレーションの補正ブロックを使用して呼び出すことができます、オーケストレーションが正常に完了したが、別のオーケストレーションによって呼び出された場合は、**補正**図形です。</span><span class="sxs-lookup"><span data-stu-id="ac996-104">If the orchestration has completed successfully and has been called by another orchestration, the calling orchestration can invoke its compensation block using a **Compensate** shape.</span></span>  

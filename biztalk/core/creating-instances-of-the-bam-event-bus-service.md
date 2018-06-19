@@ -1,14 +1,14 @@
 ---
-title: "BAM イベント バス サービスのインスタンスを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: BAM イベント バス サービスのインスタンスを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 454bdde7-45a6-41ab-9196-f662273f0f2b
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238418"
 ---
 # <a name="creating-instances-of-the-bam-event-bus-service"></a><span data-ttu-id="f056b-102">BAM イベント バス サービスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="f056b-102">Creating Instances of the BAM Event Bus Service</span></span>
 <span data-ttu-id="f056b-103">BAM イベント バス サービスは、BizTalk アプリケーション ホスト内で実行されます。</span><span class="sxs-lookup"><span data-stu-id="f056b-103">The BAM Event Bus Service runs inside a BizTalk application host.</span></span> <span data-ttu-id="f056b-104">既定のホストを使用して BAM イベント バス サービスをホストするか、新しいホストを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="f056b-104">You can use the default host to host the BAM Event Bus Service, or you can create a new host.</span></span> <span data-ttu-id="f056b-105">あるホストが BAM イベント バス サービスをホストする場合、そのホスト用に作成する新しいインスタンスも BAM イベント バス サービスをホストします。</span><span class="sxs-lookup"><span data-stu-id="f056b-105">If a host hosts the BAM Event Bus service, any new instances you create for that host also hosts the service.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="f056b-122">Reconfigure、およびをクリックするホストを右クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="f056b-122">Right-click the host you want to reconfigure, and then click **Properties** .</span></span>  
   
-2.  <span data-ttu-id="f056b-123">**全般**] タブで [**ホストの追跡を許可する**、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="f056b-123">On the **General** tab, select **Allow Host Tracking**, and then click **OK**.</span></span>  
+2.  <span data-ttu-id="f056b-123">**全般**] タブで [**ホストの追跡を許可する**、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="f056b-123">On the **General** tab, select **Allow Host Tracking**, and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="f056b-124">そのホストのすべてのインスタンスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="f056b-124">Restart all instances of that host.</span></span>  
   

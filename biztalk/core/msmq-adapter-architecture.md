@@ -1,17 +1,17 @@
 ---
-title: "MSMQ アダプターのアーキテクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターのアーキテクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, MSMQ adapters
 - MSMQ adapters, architecture
 ms.assetid: acecc2a4-0670-487e-be39-28a24c8c3f16
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263050"
 ---
 # <a name="msmq-adapter-architecture"></a><span data-ttu-id="858be-102">MSMQ アダプターのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="858be-102">MSMQ Adapter Architecture</span></span>
 <span data-ttu-id="858be-103">MSMQ アダプターを使用すると、Microsoft メッセージ キュー (MSMQ) の機能を利用できます。MSMQ の機能は MSMQ アダプターを使用しない限り、BizTalk Server で使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="858be-103">The MSMQ adapter lets you take advantage of Microsoft Message Queuing (also known as MSMQ) features that are otherwise unavailable in BizTalk Server.</span></span>  

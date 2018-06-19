@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server ランタイムのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server ランタイムのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, runtime
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - DACLs
 - .NET Framework Code Access Security Mechanism
 ms.assetid: 1933789d-b79a-47ad-8f70-6f1e99bc2be0
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232234"
 ---
 # <a name="biztalk-server-runtime-security-recommendations"></a><span data-ttu-id="2540c-102">BizTalk Server ランタイムのセキュリティに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="2540c-102">BizTalk Server Runtime Security Recommendations</span></span>
 <span data-ttu-id="2540c-103">メッセージの受信、送信、処理、および追跡を行うすべてのコンピューターに BizTalk Server ランタイム (エンジン) をインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2540c-103">You must install the BizTalk Server runtime, or engine, on all the computers from which you want to receive, send, process, and track messages.</span></span> <span data-ttu-id="2540c-104">つまり、BizTalk ホスト インスタンス (処理サーバー) を作成するコンピューターにランタイム コンポーネントをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2540c-104">In other words, you must install the run time components on any computer where you create a BizTalk Host instance (processing servers).</span></span> <span data-ttu-id="2540c-105">BizTalk Server ランタイムをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2540c-105">It is recommended you follow these guidelines for securing and deploying the BizTalk Server runtime in your environment.</span></span>  

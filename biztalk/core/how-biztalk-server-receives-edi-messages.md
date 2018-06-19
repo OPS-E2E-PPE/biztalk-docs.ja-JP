@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server が EDI メッセージを受信する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server が EDI メッセージを受信する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f3bb88c-9226-4791-b100-ba68dea45278
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246442"
 ---
 # <a name="how-biztalk-server-receives-edi-messages"></a><span data-ttu-id="4b474-102">BizTalk Server が EDI メッセージを受信する方法</span><span class="sxs-lookup"><span data-stu-id="4b474-102">How BizTalk Server Receives EDI Messages</span></span>
 <span data-ttu-id="4b474-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI メッセージを受信すると、取引先アグリーメント参照とスキーマ探索の実行、メッセージの検証、受信確認の送信 (該当する場合)、および EDI バッチの解析が行われます。</span><span class="sxs-lookup"><span data-stu-id="4b474-103">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI message, it performs trading partner agreement lookup and schema discovery, validates the message, sends an acknowledgment (if appropriate), and parses the EDI batch.</span></span> <span data-ttu-id="4b474-104">この処理は、EDI 受信パイプラインの EDI 逆アセンブラーによって行われます。</span><span class="sxs-lookup"><span data-stu-id="4b474-104">This processing is performed by the EDI disassembler in the EDI Receive Pipeline.</span></span>  

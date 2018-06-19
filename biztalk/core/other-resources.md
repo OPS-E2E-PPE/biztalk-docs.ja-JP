@@ -1,11 +1,11 @@
 ---
-title: "その他のリソース |Microsoft ドキュメント"
-ms.custom: 
+title: その他のリソース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, System.BizTalk:Rules
@@ -36,7 +36,7 @@ helpviewer_keywords:
 - certificates, System.BizTalk:Certificate
 - scripts, System.BizTalk:PreProcessingScript
 ms.assetid: 0be6834b-a562-4d1c-b8d5-43e30eba309e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -45,6 +45,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264066"
 ---
 # <a name="other-resources"></a><span data-ttu-id="69396-102">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="69396-102">Other Resources</span></span>
 <span data-ttu-id="69396-103">次のリソースは、BizTalk アプリケーションで使用できる外部アイテムの種類です。</span><span class="sxs-lookup"><span data-stu-id="69396-103">The following resources are supported external artifact types that can be used in a BizTalk Application.</span></span> <span data-ttu-id="69396-104">リソースには、次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="69396-104">Resources include the following:</span></span>  

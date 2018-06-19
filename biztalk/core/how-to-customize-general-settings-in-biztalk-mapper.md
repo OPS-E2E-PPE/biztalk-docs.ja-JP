@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249330"
 ---
 # <a name="how-to-customize-general-settings-in-biztalk-mapper"></a><span data-ttu-id="3ba48-102">BizTalk マッパーの全般的な設定をカスタマイズする方法</span><span class="sxs-lookup"><span data-stu-id="3ba48-102">How to Customize General Settings in BizTalk Mapper</span></span>
 <span data-ttu-id="3ba48-103">マップの特定の表示オプションの既定の設定を変更できます。</span><span class="sxs-lookup"><span data-stu-id="3ba48-103">You can change the default settings of certain view options in a map.</span></span> <span data-ttu-id="3ba48-104">これらの設定は、Visual Studio を開くたびに使用できます。</span><span class="sxs-lookup"><span data-stu-id="3ba48-104">These settings would be available to you whenever you open Visual Studio.</span></span> <span data-ttu-id="3ba48-105">ここでは、このようなオプションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3ba48-105">This topic provides information on such options.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-customize-the-general-settings"></a><span data-ttu-id="3ba48-110">全般的な設定をカスタマイズするには</span><span class="sxs-lookup"><span data-stu-id="3ba48-110">To customize the general settings</span></span>  
   
-1.  <span data-ttu-id="3ba48-111">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3ba48-111">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], on the **Tools** menu, click **Options**.</span></span>  
+1.  <span data-ttu-id="3ba48-111">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3ba48-111">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], on the **Tools** menu, click **Options**.</span></span>  
   
      <span data-ttu-id="3ba48-112">または、キーボードの Alt キーを押しながら TO を押してもかまいません。</span><span class="sxs-lookup"><span data-stu-id="3ba48-112">Alternatively, you can hold down the ALT key and press TO from the keyboard.</span></span> <span data-ttu-id="3ba48-113">マッパーのキーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。</span><span class="sxs-lookup"><span data-stu-id="3ba48-113">For a list of Mapper keyboard shortcuts, see [BizTalk Mapper Keyboard Shortcuts](../core/biztalk-mapper-keyboard-shortcuts.md).</span></span>  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="3ba48-123">送信元スキーマ、送信先スキーマ、および Functoid の名前、ラベル、コメント、入力、スクリプトの検索の既定値</span><span class="sxs-lookup"><span data-stu-id="3ba48-123">Search defaults for source schema, destination schema, and also functoid names, labels, comments, inputs, and scripts.</span></span>  
   
-4.  <span data-ttu-id="3ba48-124">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3ba48-124">Click **OK**.</span></span> <span data-ttu-id="3ba48-125">設定が既定値として保存されます。</span><span class="sxs-lookup"><span data-stu-id="3ba48-125">The settings are saved as default.</span></span>  
+4.  <span data-ttu-id="3ba48-124">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3ba48-124">Click **OK**.</span></span> <span data-ttu-id="3ba48-125">設定が既定値として保存されます。</span><span class="sxs-lookup"><span data-stu-id="3ba48-125">The settings are saved as default.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="3ba48-126">カスタマイズした設定を使用しない場合は、クリックして**既定値に戻す**で、**オプション** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="3ba48-126">If you do not want to use the customized settings, click **Restore Defaults** in the **Options** dialog box.</span></span>  

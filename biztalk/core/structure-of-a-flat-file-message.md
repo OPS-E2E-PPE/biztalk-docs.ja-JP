@@ -1,14 +1,14 @@
 ---
-title: "フラット ファイル メッセージの構造体 |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル メッセージの構造体 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00f2adf6-a47c-498b-b5ae-c6bd55bafceb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278938"
 ---
 # <a name="structure-of-a-flat-file-message"></a><span data-ttu-id="049dc-102">フラット ファイル メッセージの構造</span><span class="sxs-lookup"><span data-stu-id="049dc-102">Structure of a Flat File Message</span></span>
 <span data-ttu-id="049dc-103">Microsoft のコンテキストで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、フラット ファイル インスタンス メッセージは次の 3 つの論理部分を含めることができるテキスト ファイル: ヘッダー、本文、およびトレーラー、その順序で。</span><span class="sxs-lookup"><span data-stu-id="049dc-103">In the context of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], a flat file instance message is a text file that can contain three logical parts: a header, a body, and a trailer, in that order.</span></span> <span data-ttu-id="049dc-104">ヘッダーおよびトレーラーはいずれも省略できます。</span><span class="sxs-lookup"><span data-stu-id="049dc-104">Both the header and the trailer are optional.</span></span> <span data-ttu-id="049dc-105">3 つすべての部分から成るフラット ファイル インスタンス メッセージの例を次に示します。太字で表示されている部分が本文です。</span><span class="sxs-lookup"><span data-stu-id="049dc-105">The following example shows a flat file instance message that consists of all three parts, with the body shown in bold type.</span></span>  

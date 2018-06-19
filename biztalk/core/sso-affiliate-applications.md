@@ -1,11 +1,11 @@
 ---
-title: "SSO 関連アプリケーション |Microsoft ドキュメント"
-ms.custom: 
+title: SSO 関連アプリケーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, designing applications
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - SSO, applications
 - applications [SSO], designing
 ms.assetid: 002ecf7e-4d52-425a-9498-0e7bd6545047
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975738"
 ---
 # <a name="sso-affiliate-applications"></a><span data-ttu-id="39ad9-102">SSO 関連アプリケーション</span><span class="sxs-lookup"><span data-stu-id="39ad9-102">SSO Affiliate Applications</span></span>
 <span data-ttu-id="39ad9-103">エンタープライズ シングル サインオン (SSO) 関連アプリケーションは、SSO を使用して接続するホスト、バックエンド システム、または基幹業務アプリケーションなどのシステムやサブシステムを表す論理エンティティです。</span><span class="sxs-lookup"><span data-stu-id="39ad9-103">The Enterprise Single Sign-On (SSO) Affiliate applications are logical entities that represent a system or sub-system such as a host, back-end system, or line of business application to which you are connecting using SSO.</span></span> <span data-ttu-id="39ad9-104">メインフレームや UNIX コンピュータなどのバックエンド システムを表すこともあります。</span><span class="sxs-lookup"><span data-stu-id="39ad9-104">An affiliate application can represent a back-end system such as a mainframe or UNIX computer.</span></span> <span data-ttu-id="39ad9-105">また、SAP などのアプリケーションや、システムの一部分に当たる "手当"、"給与明細" などのサブシステムを表すこともあります。</span><span class="sxs-lookup"><span data-stu-id="39ad9-105">It can also represent an application such as SAP, or a subdivision of the system, such as the "Benefits" or "Pay stub" sub-systems.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "ポリシー |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Engine, policies
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - policies, creating
 - policies, updating
 ms.assetid: 2e0ae081-938d-4e2a-947e-1c0ecfebb4b8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264434"
 ---
 # <a name="policies"></a><span data-ttu-id="308fa-102">ポリシー</span><span class="sxs-lookup"><span data-stu-id="308fa-102">Policies</span></span>
 <span data-ttu-id="308fa-103">ポリシーはルールの論理的なグループです。</span><span class="sxs-lookup"><span data-stu-id="308fa-103">A policy is a logical grouping of rules.</span></span> <span data-ttu-id="308fa-104">あるバージョンのポリシーを作成し、保存し、ファクトに適用してテストし、目的の結果が得られた場合には、公開して実稼働環境に展開することができます。</span><span class="sxs-lookup"><span data-stu-id="308fa-104">You compose a version of a policy, save it, test it by applying it to facts, and, when you are satisfied with the results, publish it and deploy it to a production environment.</span></span>  

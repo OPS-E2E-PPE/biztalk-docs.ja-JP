@@ -1,18 +1,18 @@
 ---
-title: "潜在的な脅威を識別する |Microsoft ドキュメント"
-ms.custom: 
+title: 潜在的な脅威を識別する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - planning, security
 - security, potential threats
 - security, planning
 ms.assetid: 1d70a0c1-6daf-47bb-af15-a4b35a7bafc2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257498"
 ---
 # <a name="identifying-potential-threats"></a><span data-ttu-id="66885-102">潜在的な脅威を識別します。</span><span class="sxs-lookup"><span data-stu-id="66885-102">Identifying Potential Threats</span></span>
 <span data-ttu-id="66885-103">STRIDE モデルを使用すると、BizTalk Server の展開に存在する可能性がある脅威を特定できます。</span><span class="sxs-lookup"><span data-stu-id="66885-103">You can use the STRIDE model to identify potential threats to your BizTalk Server deployment.</span></span> <span data-ttu-id="66885-104">STRIDE とは、次のカテゴリから派生した頭字語: *S*poofing identity *T*とデータを含んだ ampering *R*、これが否認*すれば*漏洩、 *D*サービス、および権限の昇格ービス拒否します。</span><span class="sxs-lookup"><span data-stu-id="66885-104">STRIDE is an acronym derived from the following categories: *S*poofing identity, *T*ampering with data, *R*epudiation, *I*nformation disclosure, *D*enial of service, and Elevation of privileges.</span></span> <span data-ttu-id="66885-105">このセクションには、BizTalk Server 環境に存在する可能性がある脅威の例と、脅威を緩和するメカニズムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="66885-105">This section contains examples of potential threats to a BizTalk Server environment, and mechanisms to mitigate them.</span></span>  

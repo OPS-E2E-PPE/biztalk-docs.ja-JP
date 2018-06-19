@@ -13,7 +13,7 @@ helpviewer_keywords:
 - subscriptions, viewing
 - subscriptions, searching
 ms.assetid: 95f8fd20-2750-412b-a67b-18976e7706e2
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255522"
 ---
 # <a name="how-to-search-for-subscriptions"></a><span data-ttu-id="9d3d4-102">サブスクリプションを検索する方法</span><span class="sxs-lookup"><span data-stu-id="9d3d4-102">How to Search for Subscriptions</span></span>
 <span data-ttu-id="9d3d4-103">使用することができます、 **クエリ** サブスクリプションを検索するには、BizTalk Server 管理コンソールでタブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d3d4-103">You can use the **Query** tab in the BizTalk Server Administration Console to search for subscriptions.</span></span> <span data-ttu-id="9d3d4-104">これは、システム内に定義されているすべてのサブスクリプションを確認する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="9d3d4-104">This is useful when you want to review all of the subscriptions defined in the system.</span></span> <span data-ttu-id="9d3d4-105">ルーティング エラーのトラブルシューティングを行う際、構成が正しくないためにエラーの原因となっているサブスクリプションがあるかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="9d3d4-105">When troubleshooting routing failures, you can review subscriptions to see if any of them are improperly configured, thereby causing the routing failure.</span></span>  

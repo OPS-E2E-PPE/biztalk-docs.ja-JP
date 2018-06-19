@@ -1,14 +1,14 @@
 ---
-title: "すべての一覧を表示する方法には、データベースが参照されている |Microsoft ドキュメント"
-ms.custom: 
+title: すべての一覧を表示する方法には、データベースが参照されている |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7f6166dd-6228-45c2-98ef-4de2a4345189
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253770"
 ---
 # <a name="how-to-list-all-referenced-databases"></a><span data-ttu-id="d73b0-102">すべての参照先データベースを一覧表示する方法</span><span class="sxs-lookup"><span data-stu-id="d73b0-102">How to List All Referenced Databases</span></span>
 <span data-ttu-id="d73b0-103">管理者を使用して、 **get 参照**のすべてのローカルの BAM プライマリ インポート データベースへの参照が指定されている他の BizTalk server で BAM プライマリ インポート データベースの一覧を表示するコマンド。</span><span class="sxs-lookup"><span data-stu-id="d73b0-103">Administrators use the **get-references** command to list all of the BAM Primary Import databases on other BizTalk servers that have been given references to the local BAM Primary Import database.</span></span>  

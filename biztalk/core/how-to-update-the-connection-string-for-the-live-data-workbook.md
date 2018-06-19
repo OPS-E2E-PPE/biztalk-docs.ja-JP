@@ -1,14 +1,14 @@
 ---
-title: "ライブ データ ブックの接続文字列を更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ライブ データ ブックの接続文字列を更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d2702fb-637c-46db-8b62-08ae15f983ba
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255314"
 ---
 # <a name="how-to-update-the-connection-string-for-the-live-data-workbook"></a><span data-ttu-id="e823e-102">ライブ データ ブックの接続文字列を更新する方法</span><span class="sxs-lookup"><span data-stu-id="e823e-102">How to Update the Connection String for the Live Data Workbook</span></span>
 <span data-ttu-id="e823e-103">BAM プライマリ インポート データベースを別のサーバーに移動するときには、BAM ライブ データ ブックの接続文字列を、新しいサーバーを示すように更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e823e-103">When you move the BAM Primary Import database to another server, the connection string in a BAM live data workbook must be updated to point to the new server.</span></span> <span data-ttu-id="e823e-104">この更新には Excel 用 BAM アドインを使用します。</span><span class="sxs-lookup"><span data-stu-id="e823e-104">You use the BAM Add-in for Excel to make this update.</span></span>  

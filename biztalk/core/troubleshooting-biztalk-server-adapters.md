@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server アダプターのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server アダプターのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 428b127f-df1e-4c41-9cc8-486519f15fa1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278954"
 ---
 # <a name="troubleshooting-biztalk-server-adapters"></a><span data-ttu-id="9e00e-102">BizTalk Server アダプターのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="9e00e-102">Troubleshooting BizTalk Server Adapters</span></span>
 <span data-ttu-id="9e00e-103">このトピックでは、BizTalk 統合アダプターで発生する可能性がある問題を特定および解決するために使用できる、一般的なトラブルシューティング手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="9e00e-103">This topic describes common trouble shooting steps that can be used to identify and resolve problems that may be occurring in the BizTalk Integrated adapters.</span></span>  

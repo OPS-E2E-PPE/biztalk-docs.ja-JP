@@ -1,11 +1,11 @@
 ---
-title: "グループからサーバーを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: グループからサーバーを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, servers
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - servers, groups
 - deleting, servers
 ms.assetid: 85596e18-fa17-4f44-bc20-2e4cb578e109
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255386"
 ---
 # <a name="how-to-remove-a-server-from-a-group"></a><span data-ttu-id="b860f-102">サーバーをグループから削除する方法</span><span class="sxs-lookup"><span data-stu-id="b860f-102">How to Remove a Server from a Group</span></span>
 <span data-ttu-id="b860f-103">サーバーは、1 つの BizTalk グループに関連付けられたのみできます。</span><span class="sxs-lookup"><span data-stu-id="b860f-103">A server can only be associated with one BizTalk group.</span></span> <span data-ttu-id="b860f-104">サーバーが別のグループに既に属している場合、まず現在のグループからサーバーを削除し、その後でサーバーを新しいグループに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b860f-104">If a server already belongs to another group, you must first remove that server from its current group before you can add it to a new group.</span></span>  
@@ -45,13 +46,13 @@ ms.lasthandoff: 09/20/2017
     > [!CAUTION]
     >  <span data-ttu-id="b860f-111">グループの構成を解除すると、そのコンピューターで既に構成されているすべての依存機能の構成が解除されます。</span><span class="sxs-lookup"><span data-stu-id="b860f-111">Unconfiguring a group will also unconfigure all dependent features that are already configured on that computer.</span></span>  
   
-4.  <span data-ttu-id="b860f-112">**[はい]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b860f-112">Click **Yes**.</span></span>  
+4.  <span data-ttu-id="b860f-112">**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b860f-112">Click **Yes**.</span></span>  
   
 5.  <span data-ttu-id="b860f-113">Microsoft BizTalk Server 構成ウィザードでクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="b860f-113">In the Microsoft BizTalk Server Configuration Wizard, click **Next**.</span></span>  
   
      <span data-ttu-id="b860f-114">グループ、および、そのグループに依存する機能の構成が解除されます。</span><span class="sxs-lookup"><span data-stu-id="b860f-114">The Group and its dependent features are unconfigured.</span></span>  
   
-6.  <span data-ttu-id="b860f-115">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b860f-115">Click **Finish**.</span></span>  
+6.  <span data-ttu-id="b860f-115">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b860f-115">Click **Finish**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="b860f-116">参照</span><span class="sxs-lookup"><span data-stu-id="b860f-116">See Also</span></span>  
  <span data-ttu-id="b860f-117">[グループを管理します。](../core/managing-groups.md) </span><span class="sxs-lookup"><span data-stu-id="b860f-117">[Managing Groups](../core/managing-groups.md) </span></span>  

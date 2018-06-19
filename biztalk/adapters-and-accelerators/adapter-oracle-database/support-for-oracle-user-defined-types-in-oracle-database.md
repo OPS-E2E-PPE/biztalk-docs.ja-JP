@@ -1,14 +1,14 @@
 ---
-title: "Oracle データベースの Oracle ユーザー定義型のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースの Oracle ユーザー定義型のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68edf0f2-a798-4096-86ca-85d2cfa9088a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006923"
 ---
 # <a name="support-for-oracle-user-defined-types-in-oracle-database"></a><span data-ttu-id="8c4de-102">Oracle データベースの Oracle ユーザー定義型のサポート</span><span class="sxs-lookup"><span data-stu-id="8c4de-102">Support for Oracle User-Defined Types in Oracle Database</span></span>
 <span data-ttu-id="8c4de-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle User-Defined 型 (Udt) を含む Oracle データベースでの成果物に対する操作の実行をサポートします。</span><span class="sxs-lookup"><span data-stu-id="8c4de-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports performing operations on artifacts in the Oracle database that contain Oracle User-Defined Types (UDTs).</span></span> <span data-ttu-id="8c4de-104">Udt は、次の成果物になくてもかまいません。</span><span class="sxs-lookup"><span data-stu-id="8c4de-104">The UDTs can be present in the following artifacts:</span></span>  

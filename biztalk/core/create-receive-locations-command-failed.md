@@ -1,14 +1,14 @@
 ---
-title: "作成する受信場所のコマンドが失敗した |Microsoft ドキュメント"
-ms.custom: 
+title: 作成する受信場所のコマンドが失敗した |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f73ff211-af7f-40be-ad7e-7bde7bf75a2d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238034"
 ---
 # <a name="create-receive-locations-command-failed"></a><span data-ttu-id="9ee12-102">受信場所の作成コマンドが失敗しました</span><span class="sxs-lookup"><span data-stu-id="9ee12-102">Create receive locations command failed</span></span>
 ## <a name="details"></a><span data-ttu-id="9ee12-103">詳細</span><span class="sxs-lookup"><span data-stu-id="9ee12-103">Details</span></span>  

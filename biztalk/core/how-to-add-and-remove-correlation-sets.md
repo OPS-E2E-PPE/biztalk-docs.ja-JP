@@ -1,11 +1,11 @@
 ---
-title: "追加および関連付けセットを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 追加および関連付けセットを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - correlation sets, deleting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - deleting, correlation sets
 - creating, correlation sets
 ms.assetid: 922b56b2-6150-4edd-9f8e-8d11a447fc28
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246746"
 ---
 # <a name="how-to-add-and-remove-correlation-sets"></a><span data-ttu-id="df010-102">追加および関連付けセットを削除する方法</span><span class="sxs-lookup"><span data-stu-id="df010-102">How to Add and Remove Correlation Sets</span></span>
 <span data-ttu-id="df010-103">[オーケストレーションの種類] ウィンドウを使用すると、オーケストレーションに対して関連付けセットを追加または削除できます。</span><span class="sxs-lookup"><span data-stu-id="df010-103">You can use the Orchestration View window to add correlation sets to or remove them from your orchestration.</span></span> <span data-ttu-id="df010-104">関連付けセットは、関連付けの種類のインスタンスです。</span><span class="sxs-lookup"><span data-stu-id="df010-104">A correlation set is an instance of a correlation type.</span></span>  

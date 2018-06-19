@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250394"
 ---
 # <a name="how-to-customize-colors-and-font-in-biztalk-mapper"></a><span data-ttu-id="3c8c4-102">BizTalk マッパーの色とフォントをカスタマイズする方法</span><span class="sxs-lookup"><span data-stu-id="3c8c4-102">How to Customize Colors and Font in BizTalk Mapper</span></span>
 <span data-ttu-id="3c8c4-103">各種のリンクに関連付けられた色やグリッド ビューで選択されたオブジェクトの色は、必要に応じて変更できます。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-103">You can change the colors associated with various types of links and the color of selected objects in the Grid view.</span></span> <span data-ttu-id="3c8c4-104">また、スキーマのツリー ノードを表示するときに使用されるフォントを変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-104">You can also change the font used to display the schema tree nodes.</span></span> <span data-ttu-id="3c8c4-105">このトピックでは、こうした変更を行うための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-105">This topic provides step-by-step instructions for making such changes.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-change-the-colors-and-font-used-in-biztalk-mapper"></a><span data-ttu-id="3c8c4-109">BizTalk マッパーで使用される色やフォントを変更するには</span><span class="sxs-lookup"><span data-stu-id="3c8c4-109">To change the colors and font used in BizTalk Mapper</span></span>  
   
-1.  <span data-ttu-id="3c8c4-110">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-110">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], on the **Tools** menu, click **Options**.</span></span>  
+1.  <span data-ttu-id="3c8c4-110">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-110">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], on the **Tools** menu, click **Options**.</span></span>  
   
 2.  <span data-ttu-id="3c8c4-111">**オプション** ダイアログ ボックスで、展開、 **BizTalk マッパー**ノードをクリックして**色とフォント**です。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-111">In the **Options** dialog box, expand the **BizTalk Mapper** node, and then click **Colors & Fonts**.</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="3c8c4-148">**フォント**メイン編集ウィンドウのビューで使用するフォントをダイアログ ボックスで、変更します。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-148">In the **Font** dialog box, change the font used in the views in the main editing window.</span></span>  
   
-6.  <span data-ttu-id="3c8c4-149">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-149">Click **OK**.</span></span> <span data-ttu-id="3c8c4-150">設定が選択済みとして適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-150">The settings are applied as chosen.</span></span>  
+6.  <span data-ttu-id="3c8c4-149">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-149">Click **OK**.</span></span> <span data-ttu-id="3c8c4-150">設定が選択済みとして適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-150">The settings are applied as chosen.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="3c8c4-151">カスタマイズした設定を使用しない場合は、クリックして**既定値に戻す**で、**オプション** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="3c8c4-151">If you do not want to use the customized settings, click **Restore Defaults** in the **Options** dialog box.</span></span>  

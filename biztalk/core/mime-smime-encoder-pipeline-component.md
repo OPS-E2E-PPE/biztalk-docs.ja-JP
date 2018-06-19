@@ -1,18 +1,18 @@
 ---
-title: "MIME/SMIME エンコーダー パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: MIME/SMIME エンコーダー パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, MIME/SMIME Encoder
 - MIME/SMIME Encoder [pipeline component]
 - BTS.EncryptionCert property
 ms.assetid: 397505e6-47d0-4b63-9197-814ee4388369
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263066"
 ---
 # <a name="mime-smime-encoder-pipeline-component"></a><span data-ttu-id="d0415-102">MIME/SMIME エンコーダー パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="d0415-102">MIME-SMIME Encoder Pipeline Component</span></span>
 <span data-ttu-id="d0415-103">MIME/SMIME エンコーダー コンポーネントは、送信パイプラインのエンコード ステージに配置できます。</span><span class="sxs-lookup"><span data-stu-id="d0415-103">The MIME/SMIME Encoder component can be placed into the Encode stage of a send pipeline.</span></span> <span data-ttu-id="d0415-104">サポートされているエンコードは、7bit、8bit、binary、quoted-printable、base64、および UUencode です。</span><span class="sxs-lookup"><span data-stu-id="d0415-104">It supports 7bit, 8bit, binary, quoted-printable, base64, and UUencode encoding.</span></span> <span data-ttu-id="d0415-105">データのローカライズによって文字セットが変わっても、エンコードは変更されません。</span><span class="sxs-lookup"><span data-stu-id="d0415-105">Localized data character set changes do not affect the encoding.</span></span>  

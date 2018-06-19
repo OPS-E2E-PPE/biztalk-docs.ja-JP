@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254594"
 ---
 # <a name="how-to-open-a-saved-query"></a><span data-ttu-id="d6688-102">保存したクエリを開く方法</span><span class="sxs-lookup"><span data-stu-id="d6688-102">How to Open a Saved Query</span></span>
 <span data-ttu-id="d6688-103">保存したクエリは、クエリの保存先フォルダーから直接開くか、BizTalk Server 管理コンソール内から開くことができます。</span><span class="sxs-lookup"><span data-stu-id="d6688-103">You can open a saved query directly from the folder where the query is saved or from within the BizTalk Server Administration Console.</span></span> <span data-ttu-id="d6688-104">フォルダーから直接クエリを開くと、管理コンソールの適切な BizTalk Server グループが開きます。</span><span class="sxs-lookup"><span data-stu-id="d6688-104">When you open a query directly from a folder, it opens the appropriate BizTalk Server group in the Administration Console.</span></span> <span data-ttu-id="d6688-105">管理コンソール内からクエリを開くと、一覧に表示された任意のグループにクエリを実行するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d6688-105">When you open a query from within the Administration Console, you have the option of running the query on any of the groups listed.</span></span>  

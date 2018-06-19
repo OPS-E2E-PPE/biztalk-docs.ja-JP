@@ -1,11 +1,11 @@
 ---
-title: "省略可能なノード |Microsoft ドキュメント"
-ms.custom: 
+title: 省略可能なノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, BizTalk Mapper
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - BizTalk Mapper, testing
 - maps, optional nodes
 ms.assetid: 7dcd203e-fb23-438a-87d1-42323acd87cc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263346"
 ---
 # <a name="optional-nodes"></a><span data-ttu-id="ba800-102">省略可能なノード</span><span class="sxs-lookup"><span data-stu-id="ba800-102">Optional Nodes</span></span>
 <span data-ttu-id="ba800-103">省略可能なノードを使用すると、マップをテストしたときに警告が生成されます。</span><span class="sxs-lookup"><span data-stu-id="ba800-103">Using optional nodes will produce a warning when you test your map.</span></span> <span data-ttu-id="ba800-104">送信元ノードが省略可能であると見なされる条件には、次の 2 つがあります。</span><span class="sxs-lookup"><span data-stu-id="ba800-104">There are two conditions in which a source node may be considered optional:</span></span>  

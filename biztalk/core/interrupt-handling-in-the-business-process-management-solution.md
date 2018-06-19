@@ -1,17 +1,17 @@
 ---
-title: "ビジネス プロセス管理ソリューションでの処理を中断 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションでの処理を中断 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing, pausing
 - process management solution tutorial, pausing processing
 ms.assetid: 23ce7617-f705-4b7d-8447-221dec9fb196
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257778"
 ---
 # <a name="interrupt-handling-in-the-business-process-management-solution"></a><span data-ttu-id="679b4-102">ビジネス プロセス管理ソリューションでの処理を中断します。</span><span class="sxs-lookup"><span data-stu-id="679b4-102">Interrupt Handling in the Business Process Management Solution</span></span>
 <span data-ttu-id="679b4-103">このセクションでは、ビジネス プロセス管理ソリューションで使用される割り込み処理のメカニズムについて説明します。</span><span class="sxs-lookup"><span data-stu-id="679b4-103">This section describes the interrupt handling mechanism used in the Business Process Management Solution.</span></span> <span data-ttu-id="679b4-104">割り込みメカニズムを使用すると、注文の更新時または取り消し時に注文処理を停止できます。</span><span class="sxs-lookup"><span data-stu-id="679b4-104">Using the interrupt mechanism enables you to halt order processing when an order is updated or canceled.</span></span>  

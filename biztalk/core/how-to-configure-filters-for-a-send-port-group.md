@@ -1,11 +1,11 @@
 ---
-title: "送信ポート グループのフィルターを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポート グループのフィルターを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - filters, configuring
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - managing [send port groups], filters
 - managing [send port groups], configuring
 ms.assetid: 4c4bb408-5146-4740-a1d4-0ee72ec123fb
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248594"
 ---
 # <a name="how-to-configure-filters-for-a-send-port-group"></a><span data-ttu-id="cb89a-102">送信ポート グループ用のフィルターを構成する方法</span><span class="sxs-lookup"><span data-stu-id="cb89a-102">How to Configure Filters for a Send Port Group</span></span>
 <span data-ttu-id="cb89a-103">このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、送信ポート グループ用のフィルターを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="cb89a-103">This topic describes how to use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to configure one or more filters for a send port group.</span></span> <span data-ttu-id="cb89a-104">フィルターを使用することにより、シンプルなメッセージング アプリケーションや、コンテンツ ベースのルーティング (CBR) アプリケーションを作成できます。</span><span class="sxs-lookup"><span data-stu-id="cb89a-104">You can use filters to create simple messaging or content-based routing (CBR) applications.</span></span> <span data-ttu-id="cb89a-105">フィルターとは、メッセージのプロパティやフィールドに対する条件を設定することにより、どのメッセージを、どの送信ポート グループにルーティングするかを定義するものです。</span><span class="sxs-lookup"><span data-stu-id="cb89a-105">A filter sets conditions for message properties or fields that determine which messages are routed to the send port group.</span></span> <span data-ttu-id="cb89a-106">オーケストレーションによって送信ポート グループにルーティングされるメッセージについては、フィルターは適用されません。</span><span class="sxs-lookup"><span data-stu-id="cb89a-106">A filter does not filter the messages that an orchestration routes to the send port group.</span></span>  

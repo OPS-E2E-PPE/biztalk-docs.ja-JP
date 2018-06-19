@@ -1,14 +1,14 @@
 ---
-title: "Web サービスを使用する際の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスを使用する際の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea7038dc-4740-4c0a-b6a1-08bc22f42bc2
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242002"
 ---
 # <a name="considerations-when-consuming-web-services"></a><span data-ttu-id="d0881-102">Web サービスを使用する際の考慮事項</span><span class="sxs-lookup"><span data-stu-id="d0881-102">Considerations When Consuming Web Services</span></span>
 <span data-ttu-id="d0881-103">ここでは、Web サービスを使用する際に考慮すべき情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="d0881-103">This section provides information that you should take into consideration when consuming Web services.</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 09/20/2017
  <span data-ttu-id="d0881-146">プログラムを使って、構成プロパティをメッセージ コンテキストに設定できます。</span><span class="sxs-lookup"><span data-stu-id="d0881-146">It is possible to set configuration properties programmatically on the message context.</span></span> <span data-ttu-id="d0881-147">これらのプロパティは、送信ポートが静的であるか動的であるかにかかわらず、オーケストレーションまたはカスタム パイプライン コンポーネントに設定できます。</span><span class="sxs-lookup"><span data-stu-id="d0881-147">You can set these properties in an orchestration or a custom pipeline component whether or not the send port is static or dynamic.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="d0881-148">構成するのには**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**に**[後で指定]**で、 **Webサービス**のタブ、 **SOAP トランスポートのプロパティ**ダイアログ ボックスで、BizTalk Server 管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="d0881-148">To configure the **MethodName** property for the static SOAP send port programmatically, you need to set **Method name** to **[Specify Later]** in the **Web Service** tab of the **SOAP Transport Properties** dialog box in the BizTalk Server Administration Console.</span></span>  
+>  <span data-ttu-id="d0881-148">構成するのには**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**に **[後で指定]** で、 **Webサービス**のタブ、 **SOAP トランスポートのプロパティ**ダイアログ ボックスで、BizTalk Server 管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="d0881-148">To configure the **MethodName** property for the static SOAP send port programmatically, you need to set **Method name** to **[Specify Later]** in the **Web Service** tab of the **SOAP Transport Properties** dialog box in the BizTalk Server Administration Console.</span></span>  
 >   
 >  <span data-ttu-id="d0881-149">詳細については、 **MethodName**プロパティを参照してください[を消費する Web サービスの URI を動的に設定する方法](../core/how-to-dynamically-set-the-uri-of-a-consumed-web-service.md)です。</span><span class="sxs-lookup"><span data-stu-id="d0881-149">For more information about the **MethodName** property, see [How to Dynamically Set the URI of a Consumed Web Service](../core/how-to-dynamically-set-the-uri-of-a-consumed-web-service.md).</span></span>  
 >   
@@ -112,7 +113,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d0881-181">Web メソッドが必要**SoapDocumentMethodAttribute**の代わりに**ください**です。</span><span class="sxs-lookup"><span data-stu-id="d0881-181">Web methods should have **SoapDocumentMethodAttribute** instead of **SoapRpcMethodAttribute**.</span></span>  
   
--   <span data-ttu-id="d0881-182">Web サービスおよびメソッドを使用する必要があります、**リテラル**の代わりにバインド**Encoded**など**[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**です。</span><span class="sxs-lookup"><span data-stu-id="d0881-182">Web services and methods must use the **Literal** binding instead of **Encoded** such as **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**.</span></span>  
+-   <span data-ttu-id="d0881-182">Web サービスおよびメソッドを使用する必要があります、**リテラル**の代わりにバインド**Encoded**など **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]** です。</span><span class="sxs-lookup"><span data-stu-id="d0881-182">Web services and methods must use the **Literal** binding instead of **Encoded** such as **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**.</span></span>  
   
 -   <span data-ttu-id="d0881-183">Web メソッドのパラメータと戻り値の型**XmlRootAttribute** 、有効な**Namespace**プロパティ ネイティブ XSD 型、および XmlNode 型でない限り、します。</span><span class="sxs-lookup"><span data-stu-id="d0881-183">Web method parameters and return types must have **XmlRootAttribute** with a valid **Namespace** property unless they are native XSD types and the XmlNode type.</span></span>  
   

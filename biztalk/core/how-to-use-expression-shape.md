@@ -1,11 +1,11 @@
 ---
-title: "式図形を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 式図形を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [Orchestration Designer], Expression shapes
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Expression shape [Orchestration Designer], configuring
 - Expression shape [Orchestration Designer], about Expression shape
 ms.assetid: 2d702aa9-b824-4f47-a416-70707ce8ef29
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256058"
 ---
 # <a name="how-to-use-expression-shape"></a><span data-ttu-id="71806-102">式図形の使用方法</span><span class="sxs-lookup"><span data-stu-id="71806-102">How to Use Expression Shape</span></span>
 <span data-ttu-id="71806-103">**式**図形では、オーケストレーションで選択した任意の xlang/s 式を入力することができます。</span><span class="sxs-lookup"><span data-stu-id="71806-103">The **Expression** shape enables you to enter any XLANG/s expression you choose in your orchestration.</span></span> <span data-ttu-id="71806-104">たとえば、外部プログラムに対して .NET 呼び出しを行ったり、オーケストレーション変数の値を操作できます。</span><span class="sxs-lookup"><span data-stu-id="71806-104">For example, you can make a .NET call to run an external program, or simply manipulate the values of your orchestration variables.</span></span>  

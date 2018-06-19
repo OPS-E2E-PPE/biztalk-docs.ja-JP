@@ -1,18 +1,18 @@
 ---
-title: "Web セットアップ パッケージを配布する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Web セットアップ パッケージを配布する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, Web services
 - Web services, distributing
 - Web services, deploying
 ms.assetid: 0db71fdf-80d9-4ad5-b0d4-730d0bb549d4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254122"
 ---
 # <a name="how-to-distribute-the-web-setup-package"></a><span data-ttu-id="cbc57-102">Web セットアップ パッケージを配布する方法</span><span class="sxs-lookup"><span data-stu-id="cbc57-102">How to Distribute the Web Setup Package</span></span>
 <span data-ttu-id="cbc57-103">インストール パッケージを作成した後、Web サービスをセットアップするために MSI ファイルと BindingInfo.xml ファイルがコピーされる配布フォルダを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbc57-103">After you create the installation package, you need to create a distribution folder where a MSI file and a BindingInfo.xml file are copied to set up the Web service.</span></span>  

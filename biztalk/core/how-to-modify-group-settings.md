@@ -1,15 +1,15 @@
 ---
-title: "更新プログラム グループの設定 |Microsoft ドキュメント"
-description: "BizTalk Server 管理コンソールを使用して、グループのパフォーマンス設定を変更します。"
-ms.custom: 
+title: 更新プログラム グループの設定 |Microsoft ドキュメント
+description: BizTalk Server 管理コンソールを使用して、グループのパフォーマンス設定を変更します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe0cbeb8-23d6-45cf-8535-c989914f5124
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254810"
 ---
 # <a name="how-to-update-the-biztalk-group-settings"></a><span data-ttu-id="eb15e-103">BizTalk グループの設定を更新する方法</span><span class="sxs-lookup"><span data-stu-id="eb15e-103">How to update the BizTalk group settings</span></span>
 <span data-ttu-id="eb15e-104">ダッシュボードの設定を使用すると、特定の BizTalk グループに属するすべてのコンピューターで使用する構成情報を変更できます。</span><span class="sxs-lookup"><span data-stu-id="eb15e-104">Using the Settings Dashboard, you can modify the configuration information used across all machines in a given BizTalk group.</span></span> <span data-ttu-id="eb15e-105">ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でグループレベルのパフォーマンス設定を変更する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="eb15e-105">This topic provides the step-by-step procedure to modify the group-level performance settings in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="eb15e-106">これらの設定は特定のグループのすべてのコンピューターに適用できます。</span><span class="sxs-lookup"><span data-stu-id="eb15e-106">These settings are applicable for all the machines in a given group.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="eb15e-130">**大きなメッセージ サイズ**</span><span class="sxs-lookup"><span data-stu-id="eb15e-130">**Large message size**</span></span>|<span data-ttu-id="eb15e-131">バッチでのストリーミングまたは変換中のストリーミングをトリガーする個別メッセージのサイズのしきい値を設定します。</span><span class="sxs-lookup"><span data-stu-id="eb15e-131">Set the threshold size of an individual message that triggers streaming in a batch and/or during transformations.</span></span>|<span data-ttu-id="eb15e-132">1 - 10000000</span><span class="sxs-lookup"><span data-stu-id="eb15e-132">1 - 10000000</span></span>|<span data-ttu-id="eb15e-133">1000000</span><span class="sxs-lookup"><span data-stu-id="eb15e-133">1000000</span></span>|<span data-ttu-id="eb15e-134">既存の最大**大きなメッセージ サイズ**と**LargeMessageFragmentSize**値。</span><span class="sxs-lookup"><span data-stu-id="eb15e-134">Maximum of the existing **Large message size** and **LargeMessageFragmentSize** values.</span></span>|  
     |<span data-ttu-id="eb15e-135">**追跡とレポート**</span><span class="sxs-lookup"><span data-stu-id="eb15e-135">**Tracking and Reporting**</span></span>||-|-|-|  
     |<span data-ttu-id="eb15e-136">**メッセージ ボックス パフォーマンス カウンターのサンプリング間隔**</span><span class="sxs-lookup"><span data-stu-id="eb15e-136">**Message box performance counter sampling interval**</span></span>|<span data-ttu-id="eb15e-137">パフォーマンス カウンターを更新する間隔を設定します。</span><span class="sxs-lookup"><span data-stu-id="eb15e-137">Set the interval at which performance counters are refreshed.</span></span><br /><br /> <span data-ttu-id="eb15e-138">間隔により、データベースに対する負荷とカウンターの値の新しさがトレードオフされます。</span><span class="sxs-lookup"><span data-stu-id="eb15e-138">The interval trades off load on database versus up-to-dateness of counters.</span></span> <span data-ttu-id="eb15e-139">値を大きくするとデータがあまり更新されなくなり、データベースに対する負荷が小さくなります。</span><span class="sxs-lookup"><span data-stu-id="eb15e-139">The higher value means less frequently updated data, and thus lesser load on the database.</span></span>|<span data-ttu-id="eb15e-140">1 – 整数型の最大値</span><span class="sxs-lookup"><span data-stu-id="eb15e-140">1 – Maximum value of type Integer</span></span>|-|<span data-ttu-id="eb15e-141">BizTalk グループがあれば、そのコンピューターで最も大きな値。</span><span class="sxs-lookup"><span data-stu-id="eb15e-141">Largest value on any machine in the BizTalk group if present.</span></span> <span data-ttu-id="eb15e-142">そうでない場合は、既定値。</span><span class="sxs-lookup"><span data-stu-id="eb15e-142">If not, default.</span></span>|  
-    |<span data-ttu-id="eb15e-143">**グループ レベルの追跡を有効にします。**</span><span class="sxs-lookup"><span data-stu-id="eb15e-143">**Enable group level tracking**</span></span>|<span data-ttu-id="eb15e-144">このオプションを選択すると、BizTalk Server のグループ レベルの追跡が有効になります。</span><span class="sxs-lookup"><span data-stu-id="eb15e-144">Select this option to turn the group level tracking for BizTalk Server on.</span></span><br /><br /> <span data-ttu-id="eb15e-145">グローバル追跡を無効にすると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループ全体の追跡インターセプターが無効になります。</span><span class="sxs-lookup"><span data-stu-id="eb15e-145">Turning off global tracking disables the tracking interceptors for the entire [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] group.</span></span> <span data-ttu-id="eb15e-146">つまり、BizTalk は追跡テーブル内のイベントを追跡しません。</span><span class="sxs-lookup"><span data-stu-id="eb15e-146">This means, BizTalk Server will not track events in its tracking tables.</span></span> <span data-ttu-id="eb15e-147">**注:**この設定では、BAM の追跡は影響しません。</span><span class="sxs-lookup"><span data-stu-id="eb15e-147">**Note:**  This setting does not impact BAM Tracking.</span></span>|<span data-ttu-id="eb15e-148">On、Off します。</span><span class="sxs-lookup"><span data-stu-id="eb15e-148">On, Off</span></span>|<span data-ttu-id="eb15e-149">基準</span><span class="sxs-lookup"><span data-stu-id="eb15e-149">On</span></span>|-|  
+    |<span data-ttu-id="eb15e-143">**グループ レベルの追跡を有効にします。**</span><span class="sxs-lookup"><span data-stu-id="eb15e-143">**Enable group level tracking**</span></span>|<span data-ttu-id="eb15e-144">このオプションを選択すると、BizTalk Server のグループ レベルの追跡が有効になります。</span><span class="sxs-lookup"><span data-stu-id="eb15e-144">Select this option to turn the group level tracking for BizTalk Server on.</span></span><br /><br /> <span data-ttu-id="eb15e-145">グローバル追跡を無効にすると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループ全体の追跡インターセプターが無効になります。</span><span class="sxs-lookup"><span data-stu-id="eb15e-145">Turning off global tracking disables the tracking interceptors for the entire [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] group.</span></span> <span data-ttu-id="eb15e-146">つまり、BizTalk は追跡テーブル内のイベントを追跡しません。</span><span class="sxs-lookup"><span data-stu-id="eb15e-146">This means, BizTalk Server will not track events in its tracking tables.</span></span> <span data-ttu-id="eb15e-147">**注:** この設定では、BAM の追跡は影響しません。</span><span class="sxs-lookup"><span data-stu-id="eb15e-147">**Note:**  This setting does not impact BAM Tracking.</span></span>|<span data-ttu-id="eb15e-148">On、Off します。</span><span class="sxs-lookup"><span data-stu-id="eb15e-148">On, Off</span></span>|<span data-ttu-id="eb15e-149">基準</span><span class="sxs-lookup"><span data-stu-id="eb15e-149">On</span></span>|-|  
   
 3.  <span data-ttu-id="eb15e-150">をクリックして**適用**を変更を適用し、別のタブに進みます。をクリックしてまたは**OK**を変更を適用し、設定ダッシュ ボードを終了します。</span><span class="sxs-lookup"><span data-stu-id="eb15e-150">Click **Apply** to apply the modifications and proceed to another tab. Or click **OK** to apply the modifications and exit the Settings Dashboard.</span></span>  
   

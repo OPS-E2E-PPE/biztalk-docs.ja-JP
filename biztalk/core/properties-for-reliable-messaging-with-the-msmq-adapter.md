@@ -1,11 +1,11 @@
 ---
-title: "MSMQ アダプターで信頼できるメッセージング プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターで信頼できるメッセージング プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, properties
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - MSMQ adapters, reliability
 - MSMQ adapters, clustering
 ms.assetid: 34bfe028-b2aa-4816-a437-3679d19dffb2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,6 +32,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268850"
 ---
 # <a name="properties-for-reliable-messaging-with-the-msmq-adapter"></a><span data-ttu-id="bd31d-102">MSMQ アダプターで信頼できるメッセージのプロパティ</span><span class="sxs-lookup"><span data-stu-id="bd31d-102">Properties for Reliable Messaging with the MSMQ Adapter</span></span>
 <span data-ttu-id="bd31d-103">MSMQ アダプターを適切に構成することにより、MSMQ アダプターを使用したメッセージの送受信の信頼性を向上させることができます。</span><span class="sxs-lookup"><span data-stu-id="bd31d-103">You can improve the reliability of sending and receiving messages with the MSMQ adapter by the way you configure the MSMQ adapter.</span></span> <span data-ttu-id="bd31d-104">このトピックでは、信頼性の高いメッセージングを実現できる、いくつかの構成プロパティの使用について説明します。</span><span class="sxs-lookup"><span data-stu-id="bd31d-104">This topic discusses using several configuration properties for reliable messaging.</span></span>  

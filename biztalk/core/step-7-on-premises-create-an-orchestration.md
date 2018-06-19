@@ -1,14 +1,14 @@
 ---
-title: "手順 (オンプレミス) 7: オーケストレーションを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 (オンプレミス) 7: オーケストレーションを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c0b6d0e-cf00-4eee-9b89-28210bad46f4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280226"
 ---
 # <a name="step-7-on-premises-create-an-orchestration"></a><span data-ttu-id="e4888-102">オーケストレーションを作成する手順 7 (オンプレミス)。</span><span class="sxs-lookup"><span data-stu-id="e4888-102">Step 7 (On Premises): Create an Orchestration</span></span>
 <span data-ttu-id="e4888-103">後に、ビジネス シナリオに従って[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]販売注文メッセージを受信、Service Bus キューからメッセージ内の注文数量が 100 より大きいかどうかを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-103">According to the business scenario, after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives the sales order message from the Service Bus Queue, it needs to check whether the quantity ordered in the message is greater than 100.</span></span> <span data-ttu-id="e4888-104">メッセージが挿入された数量が 100 より大きい場合、 **SalesOrder**テーブル。</span><span class="sxs-lookup"><span data-stu-id="e4888-104">If the quantity is greater than 100, the message is inserted into the **SalesOrder** table.</span></span> <span data-ttu-id="e4888-105">そうでない場合は、共有ファイルの場所にメッセージが送信されます。</span><span class="sxs-lookup"><span data-stu-id="e4888-105">Otherwise, the message is sent to a shared file location.</span></span> <span data-ttu-id="e4888-106">Northwind はオーケストレーションを作成することによってこのビジネス ロジックを実現します。</span><span class="sxs-lookup"><span data-stu-id="e4888-106">Northwind achieves this business logic by creating an orchestration.</span></span> <span data-ttu-id="e4888-107">このトピックでは、オーケストレーションの作成方法を、手順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="e4888-107">This topic provides step-by-step guidance on how to create the orchestration.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 |------------------|---------------------------|  
 |<span data-ttu-id="e4888-118">Message1_SO_Inbound</span><span class="sxs-lookup"><span data-stu-id="e4888-118">Message1_SO_Inbound</span></span>|<span data-ttu-id="e4888-119">このメッセージは、のインスタンス、 **ECommerceSalesOrder.xsd**スキーマです。</span><span class="sxs-lookup"><span data-stu-id="e4888-119">This message is an instance of the **ECommerceSalesOrder.xsd** schema.</span></span>|  
 |<span data-ttu-id="e4888-120">Message2_SO_Inbound</span><span class="sxs-lookup"><span data-stu-id="e4888-120">Message2_SO_Inbound</span></span>|<span data-ttu-id="e4888-121">このメッセージのコピーである、 **Message1_SO_Inbound**です。</span><span class="sxs-lookup"><span data-stu-id="e4888-121">This message is a copy of the **Message1_SO_Inbound**.</span></span> <span data-ttu-id="e4888-122">ベスト プラクティスとして、メッセージのコピーを作成し、元のメッセージを残したまま、新しいメッセージを修正してください。</span><span class="sxs-lookup"><span data-stu-id="e4888-122">As a best practice, you must create a copy of the message and then modify the new message, leaving the original message intact.</span></span> <span data-ttu-id="e4888-123">詳細については、次を参照してください。 [BizTalk Server メッセージ](http://msdn.microsoft.com/library/aa560436)です。</span><span class="sxs-lookup"><span data-stu-id="e4888-123">For more information, see [The BizTalk Server Message](http://msdn.microsoft.com/library/aa560436).</span></span>|  
-|<span data-ttu-id="e4888-124">Message1_SO_Outbound</span><span class="sxs-lookup"><span data-stu-id="e4888-124">Message1_SO_Outbound</span></span>|<span data-ttu-id="e4888-125">このメッセージは、のインスタンス、 **TableOperations.dbo.SalesOrder (Insert)**スキーマです。</span><span class="sxs-lookup"><span data-stu-id="e4888-125">This message is an instance of the **TableOperations.dbo.SalesOrder (Insert)** schema.</span></span>|  
+|<span data-ttu-id="e4888-124">Message1_SO_Outbound</span><span class="sxs-lookup"><span data-stu-id="e4888-124">Message1_SO_Outbound</span></span>|<span data-ttu-id="e4888-125">このメッセージは、のインスタンス、 **TableOperations.dbo.SalesOrder (Insert)** スキーマです。</span><span class="sxs-lookup"><span data-stu-id="e4888-125">This message is an instance of the **TableOperations.dbo.SalesOrder (Insert)** schema.</span></span>|  
   
 #### <a name="to-create-the-messages"></a><span data-ttu-id="e4888-126">メッセージを作成するには</span><span class="sxs-lookup"><span data-stu-id="e4888-126">To create the messages</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
         Message2_SO_Inbound(*) = Message1_SO_Inbound(*); //copy the context properties on the message  
         ```  
   
-         <span data-ttu-id="e4888-162">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e4888-162">Click **OK**.</span></span>  
+         <span data-ttu-id="e4888-162">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e4888-162">Click **OK**.</span></span>  
   
 3.  <span data-ttu-id="e4888-163">ビジネス シナリオに従って、注文項目の数量に応じて別の宛先にメッセージを送信しなければならない場合があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-163">According to the business scenario, the message must be sent to different destinations based on the quantity of ordered items.</span></span> <span data-ttu-id="e4888-164">このため、受信する販売注文メッセージから、数量の値を抽出する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-164">So, you must now extract the quantity value from the incoming sales order message.</span></span>  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 09/20/2017
         quantityOrdered = Message2_SO_Inbound.Quantity;  
         ```  
   
-         <span data-ttu-id="e4888-180">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e4888-180">Click **OK**.</span></span>  
+         <span data-ttu-id="e4888-180">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e4888-180">Click **OK**.</span></span>  
   
 4.  <span data-ttu-id="e4888-181">注文数量を抽出したら、次に、メッセージ フローがたどる 2 つの異なるパスを配置するための判断ブロックを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-181">After extracting the order quantity, you now need to create a decision block where you layout two separate paths the message flow takes.</span></span> <span data-ttu-id="e4888-182">追加することによって、オーケストレーションに判断ブロックを作成する、**判断**図形です。</span><span class="sxs-lookup"><span data-stu-id="e4888-182">You create the decision block in an orchestration by adding a **Decide** shape.</span></span>  
   
@@ -111,12 +112,12 @@ ms.lasthandoff: 09/20/2017
   
         |<span data-ttu-id="e4888-185">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="e4888-185">Property name</span></span>|<span data-ttu-id="e4888-186">値</span><span class="sxs-lookup"><span data-stu-id="e4888-186">Value</span></span>|  
         |-------------------|-----------|  
-        |<span data-ttu-id="e4888-187">[Identifier]</span><span class="sxs-lookup"><span data-stu-id="e4888-187">Identifier</span></span>|<span data-ttu-id="e4888-188">入力`Yes`です。</span><span class="sxs-lookup"><span data-stu-id="e4888-188">Enter `Yes`.</span></span> <span data-ttu-id="e4888-189">**注:**という名前の既定では、他のルート**Else**です。</span><span class="sxs-lookup"><span data-stu-id="e4888-189">**Note:**  The other route is by default named **Else**.</span></span>|  
+        |<span data-ttu-id="e4888-187">[Identifier]</span><span class="sxs-lookup"><span data-stu-id="e4888-187">Identifier</span></span>|<span data-ttu-id="e4888-188">入力`Yes`です。</span><span class="sxs-lookup"><span data-stu-id="e4888-188">Enter `Yes`.</span></span> <span data-ttu-id="e4888-189">**注:** という名前の既定では、他のルート**Else**です。</span><span class="sxs-lookup"><span data-stu-id="e4888-189">**Note:**  The other route is by default named **Else**.</span></span>|  
         |<span data-ttu-id="e4888-190">式</span><span class="sxs-lookup"><span data-stu-id="e4888-190">Expression</span></span>|<span data-ttu-id="e4888-191">入力`quantityOrdered > 100`です。</span><span class="sxs-lookup"><span data-stu-id="e4888-191">Enter `quantityOrdered > 100`.</span></span>|  
   
          <span data-ttu-id="e4888-192">これで、2 つのルートが利用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="e4888-192">You now have two routes available.</span></span> <span data-ttu-id="e4888-193">場合の値、 **quantityOrdered**変数が 100 より大きい場合、メッセージは、**はい**ルート。</span><span class="sxs-lookup"><span data-stu-id="e4888-193">If the value in the **quantityOrdered** variable is greater than 100, the message takes the **Yes** route.</span></span> <span data-ttu-id="e4888-194">ない場合は、 **Else**ルート。</span><span class="sxs-lookup"><span data-stu-id="e4888-194">Otherwise, it takes the **Else** route.</span></span> <span data-ttu-id="e4888-195">ここで、各ルート内で実行するアクションを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-195">You must now define the actions to be performed within each route.</span></span>  
   
-5.  <span data-ttu-id="e4888-196">ビジネス シナリオに従って、注文数量が 100 を超える場合、メッセージを SalesOrder テーブルに挿入する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-196">According to the business scenario, if the order quantity is greater than 100, the message must be inserted into the SalesOrder table.</span></span> <span data-ttu-id="e4888-197">したがって、 **[はい]**ルート、ECommerceSalesOrder.xsd スキーマを TableOperations.SalesOrder.Insert スキーマを変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-197">So, in the **Yes** route, you must transform the ECommerceSalesOrder.xsd schema to the TableOperations.SalesOrder.Insert schema.</span></span> <span data-ttu-id="e4888-198">トピックの挿入スキーマを作成した[手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマ生成](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)です。</span><span class="sxs-lookup"><span data-stu-id="e4888-198">You created the Insert schema in the topic [Step 5 (On Premises): Generate the Schema for Inserting a Message inito SalesOrder Table](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md).</span></span> <span data-ttu-id="e4888-199">スキーマを変換した後、メッセージを、SQL Server データベース テーブルに送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-199">After transforming the schema, you must send the message to the message out to the SQL Server database table.</span></span>  
+5.  <span data-ttu-id="e4888-196">ビジネス シナリオに従って、注文数量が 100 を超える場合、メッセージを SalesOrder テーブルに挿入する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-196">According to the business scenario, if the order quantity is greater than 100, the message must be inserted into the SalesOrder table.</span></span> <span data-ttu-id="e4888-197">したがって、 **[はい]** ルート、ECommerceSalesOrder.xsd スキーマを TableOperations.SalesOrder.Insert スキーマを変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-197">So, in the **Yes** route, you must transform the ECommerceSalesOrder.xsd schema to the TableOperations.SalesOrder.Insert schema.</span></span> <span data-ttu-id="e4888-198">トピックの挿入スキーマを作成した[手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマ生成](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)です。</span><span class="sxs-lookup"><span data-stu-id="e4888-198">You created the Insert schema in the topic [Step 5 (On Premises): Generate the Schema for Inserting a Message inito SalesOrder Table](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md).</span></span> <span data-ttu-id="e4888-199">スキーマを変換した後、メッセージを、SQL Server データベース テーブルに送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4888-199">After transforming the schema, you must send the message to the message out to the SQL Server database table.</span></span>  
   
     1.  <span data-ttu-id="e4888-200">内で、**はい**ルーティング、ドラッグ アンド ドロップ、**メッセージの構築**図形です。</span><span class="sxs-lookup"><span data-stu-id="e4888-200">Within the **Yes** route, drag and drop a **Construct Message** shape.</span></span> <span data-ttu-id="e4888-201">設定、**構築メッセージ**する図形のプロパティが**Message1_SO_Outbound**です。</span><span class="sxs-lookup"><span data-stu-id="e4888-201">Set the **Messages Constructed** property for the shape to **Message1_SO_Outbound**.</span></span>  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="e4888-224">**ポートの種類を選択** ページで選択**新しいポートの種類を作成する**オプションを選択、**一方向**通信パターンでのアクセス制限については、既定値をそのまま使用し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="e4888-224">In the **Select a Port Type** page, select **Create a new port type** option, select the **One-Way** communication pattern, leave the default for access restrictions, and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="e4888-225">**ポートのバインド**] ページで、ポートの方向] を選択、**常にこのポートでメッセージを受信**、ポートのバインドを既定値のままにし、[クリックして**[次へ**.</span><span class="sxs-lookup"><span data-stu-id="e4888-225">In the **Port Binding** page, for the port direction, select **I’ll always be receiving messages on this port**, leave the port biding to the default value, and then click **Next**.</span></span>  
+4.  <span data-ttu-id="e4888-225">**ポートのバインド**] ページで、ポートの方向] を選択、**常にこのポートでメッセージを受信**、ポートのバインドを既定値のままにし、[クリックして **[次へ**.</span><span class="sxs-lookup"><span data-stu-id="e4888-225">In the **Port Binding** page, for the port direction, select **I’ll always be receiving messages on this port**, leave the port biding to the default value, and then click **Next**.</span></span>  
   
 5.  <span data-ttu-id="e4888-226">最後のページでをクリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="e4888-226">On the last page, click **Finish**.</span></span>  
   

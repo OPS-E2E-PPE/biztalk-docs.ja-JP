@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268858"
 ---
 # <a name="secure-and-protect-your-biztalk-messages"></a><span data-ttu-id="c63d9-102">セキュリティで保護し、BizTalk メッセージを保護します。</span><span class="sxs-lookup"><span data-stu-id="c63d9-102">Secure and protect your BizTalk messages</span></span>
 <span data-ttu-id="c63d9-103">Microsoft® BizTalk® Server には、イントラネット内およびインターネット経由の両方で、ドキュメントを送受信するための標準のゲートウェイが用意されています。</span><span class="sxs-lookup"><span data-stu-id="c63d9-103">Microsoft® BizTalk® Server provides a standard gateway for sending and receiving documents both within an intranet and through the Internet.</span></span> <span data-ttu-id="c63d9-104">可能な基幹業務の特性により、BizTalk Server との間に送信されたメッセージがこれらのメッセージおよび送信中に、BizTalk Server プロセスとストアの中にはその両方を含まれる情報を保護するための対策を検討してください。します。</span><span class="sxs-lookup"><span data-stu-id="c63d9-104">Due to the possible business-critical nature of the messages sent to and from BizTalk Server, it is important to consider measures for securing these messages and the information they contain both as they are in transit and while BizTalk Server processes and stores them.</span></span> <span data-ttu-id="c63d9-105">ここでは、BizTalk Server のセキュリティ機能と、これらの機能を使用してデータと環境をセキュリティで保護する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="c63d9-105">This section provides information about the BizTalk Server security features, and how you can use them to secure your data and environment.</span></span>  

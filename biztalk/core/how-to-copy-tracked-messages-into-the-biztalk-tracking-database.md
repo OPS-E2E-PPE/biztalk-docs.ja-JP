@@ -30,6 +30,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22248130"
 ---
 # <a name="how-to-copy-tracked-messages-into-the-biztalk-tracking-database"></a><span data-ttu-id="737f1-102">追跡メッセージを BizTalk 追跡データベースにコピーする方法</span><span class="sxs-lookup"><span data-stu-id="737f1-102">How to Copy Tracked Messages into the BizTalk Tracking Database</span></span>
 <span data-ttu-id="737f1-103">アーカイブおよび削除プロセスでは、さまざまな SQL Server データベースに対するアクセスや更新が行われる可能性があるため、関連する SQL Server インスタンス間にリンク サーバーを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="737f1-103">The archiving and purging process potentially accesses and/or updates databases in different SQL servers, so you must set up linked servers between the involved SQL Server instances.</span></span> <span data-ttu-id="737f1-104">リンク サーバーを使用すると、追跡メッセージを BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベース サーバーから BizTalk 追跡 (BizTalkDTADb) データベースに直接コピーできます。</span><span class="sxs-lookup"><span data-stu-id="737f1-104">You can directly copy tracked messages from the BizTalk MessageBox (BizTalkMsgBoxDb) database server to your BizTalk Tracking (BizTalkDTADb) database using a linked server.</span></span> <span data-ttu-id="737f1-105">次のそれぞれのインスタンス間にリンク サーバーを設定してください。</span><span class="sxs-lookup"><span data-stu-id="737f1-105">You must set up linked servers between:</span></span>  

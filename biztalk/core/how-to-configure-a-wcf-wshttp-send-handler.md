@@ -1,11 +1,11 @@
 ---
-title: "Wcf-wshttp 送信ハンドラーを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-wshttp 送信ハンドラーを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-WSHttp adapters, global variables
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - configuring [WCF-WSHttp adapters], global variables
 - send handlers, WCF-WSHttp adapters
 ms.assetid: b2c30edb-8f7b-4d3c-812b-5b877c47fda1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248458"
 ---
 # <a name="how-to-configure-a-wcf-wshttp-send-handler"></a><span data-ttu-id="ffd09-102">WCF-WSHttp 送信ハンドラーを構成する方法</span><span class="sxs-lookup"><span data-stu-id="ffd09-102">How to Configure a WCF-WSHttp Send Handler</span></span>
 <span data-ttu-id="ffd09-103">WCF-WSHttp 送信ハンドラーを構成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="ffd09-103">Use the following procedure to configure the WCF-WSHttp send handler.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="ffd09-124">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="ffd09-124">**User name**</span></span>|<span data-ttu-id="ffd09-125">認証に使用するユーザー名を指定します。</span><span class="sxs-lookup"><span data-stu-id="ffd09-125">Specify the user name to use for authentication.</span></span> <span data-ttu-id="ffd09-126">統合認証または基本認証が使用されている場合は、"ドメイン\ユーザー名" のように、ユーザー名にドメインを含めます。</span><span class="sxs-lookup"><span data-stu-id="ffd09-126">If integrated or Basic authentication is used, the user name includes the domain, that is, domain\username.</span></span> <span data-ttu-id="ffd09-127">ダイジェスト認証を使用する場合、ユーザー名がドメインを含まない\\です。</span><span class="sxs-lookup"><span data-stu-id="ffd09-127">If Digest authentication is used, the user name does not include domain\\.</span></span><br /><br /> <span data-ttu-id="ffd09-128">このプロパティには、値の場合にのみが必要です。**プロキシを使用して**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="ffd09-128">This property requires a value only if **Use proxy** is selected.</span></span><br /><br /> <span data-ttu-id="ffd09-129">型:文字列</span><span class="sxs-lookup"><span data-stu-id="ffd09-129">Type: String</span></span><br /><br /> <span data-ttu-id="ffd09-130">最小長: 0</span><span class="sxs-lookup"><span data-stu-id="ffd09-130">Minimum length: 0</span></span><br /><br /> <span data-ttu-id="ffd09-131">最大長: 256</span><span class="sxs-lookup"><span data-stu-id="ffd09-131">Maximum length: 256</span></span><br /><br /> <span data-ttu-id="ffd09-132">既定値は空の文字列です。</span><span class="sxs-lookup"><span data-stu-id="ffd09-132">The default is an empty string.</span></span>|  
     |<span data-ttu-id="ffd09-133">**Password**</span><span class="sxs-lookup"><span data-stu-id="ffd09-133">**Password**</span></span>|<span data-ttu-id="ffd09-134">認証に使用するパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="ffd09-134">Specify the password to use for authentication.</span></span><br /><br /> <span data-ttu-id="ffd09-135">このプロパティには、値の場合にのみが必要です。**プロキシを使用して**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="ffd09-135">This property requires a value only if **Use proxy** is selected.</span></span><br /><br /> <span data-ttu-id="ffd09-136">型:文字列</span><span class="sxs-lookup"><span data-stu-id="ffd09-136">Type: String</span></span><br /><br /> <span data-ttu-id="ffd09-137">最小長: 0</span><span class="sxs-lookup"><span data-stu-id="ffd09-137">Minimum length: 0</span></span><br /><br /> <span data-ttu-id="ffd09-138">最大長: 256</span><span class="sxs-lookup"><span data-stu-id="ffd09-138">Maximum length: 256</span></span><br /><br /> <span data-ttu-id="ffd09-139">既定値は空の文字列です。</span><span class="sxs-lookup"><span data-stu-id="ffd09-139">The default is an empty string.</span></span>|  
   
-5.  <span data-ttu-id="ffd09-140">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ffd09-140">Click **OK**.</span></span>  
+5.  <span data-ttu-id="ffd09-140">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ffd09-140">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="ffd09-141">参照</span><span class="sxs-lookup"><span data-stu-id="ffd09-141">See Also</span></span>  
  [<span data-ttu-id="ffd09-142">Wcf-wshttp アダプタを構成します。</span><span class="sxs-lookup"><span data-stu-id="ffd09-142">Configuring the WCF-WSHttp Adapter</span></span>](../core/configuring-the-wcf-wshttp-adapter.md)

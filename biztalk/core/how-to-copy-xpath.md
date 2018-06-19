@@ -1,14 +1,14 @@
 ---
-title: "XPath をコピーする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: XPath をコピーする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 404599d4-0fb3-4c7c-91e6-1295d9d0965e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248530"
 ---
 # <a name="how-to-copy-xpath"></a><span data-ttu-id="a187b-102">XPath をコピーする方法</span><span class="sxs-lookup"><span data-stu-id="a187b-102">How to Copy XPath</span></span>
 <span data-ttu-id="a187b-103">XSD (XML Schema Definition) 言語は、BizTalk Server で定義されるメッセージ スキーマの基礎となる構文を提供します。</span><span class="sxs-lookup"><span data-stu-id="a187b-103">The XML Schema definition (XSD) language provides the underlying syntax of the message schemas defined within BizTalk Server.</span></span> <span data-ttu-id="a187b-104">BizTalk マッパーのツリー ビューでは、それぞれ独自のプロパティのセットを備えた、レコード ノードおよびフィールド ノードの BizTalk 固有のグラフィカルな階層 (他の種類のノード間) を使用します。ただし、このような階層は、XSD として構築および保存されます。</span><span class="sxs-lookup"><span data-stu-id="a187b-104">Although the tree views in BizTalk Mapper use a BizTalk-specific graphical hierarchy of record and field nodes (among other types of nodes), each with its own set of properties, such hierarchies are constructed and persisted as XSD.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="a187b-112">XSD パスが必要し、なる をクリックし、スキーマ ノードを右クリックして**コピー XPath**です。</span><span class="sxs-lookup"><span data-stu-id="a187b-112">Right-click the schema node for which you want the XSD path, and then click **Copy XPath**.</span></span>  
   
-2.  <span data-ttu-id="a187b-113">テキスト エディターを開きます。</span><span class="sxs-lookup"><span data-stu-id="a187b-113">Open a text editor.</span></span> <span data-ttu-id="a187b-114">**[編集]** メニューの **[貼り付け]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a187b-114">On the **Edit** menu, click **Paste**.</span></span> <span data-ttu-id="a187b-115">XSD パスを確認できるようになります。</span><span class="sxs-lookup"><span data-stu-id="a187b-115">You can now see the XSD path.</span></span>  
+2.  <span data-ttu-id="a187b-113">テキスト エディターを開きます。</span><span class="sxs-lookup"><span data-stu-id="a187b-113">Open a text editor.</span></span> <span data-ttu-id="a187b-114">**[編集]** メニューの **[貼り付け]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a187b-114">On the **Edit** menu, click **Paste**.</span></span> <span data-ttu-id="a187b-115">XSD パスを確認できるようになります。</span><span class="sxs-lookup"><span data-stu-id="a187b-115">You can now see the XSD path.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a187b-116">または、Ctrl + V キーを押してテキスト エディターにパスを貼り付けることもできます。</span><span class="sxs-lookup"><span data-stu-id="a187b-116">Alternatively, you can press CTRL+V to paste the path in a text editor.</span></span>  

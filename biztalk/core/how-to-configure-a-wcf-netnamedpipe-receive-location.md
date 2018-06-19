@@ -1,14 +1,14 @@
 ---
-title: "Wcf-netnamedpipe 受信場所を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-netnamedpipe 受信場所を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2e8242a-64c7-43de-af5e-25c22e182c72
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250570"
 ---
 # <a name="how-to-configure-a-wcf-netnamedpipe-receive-location"></a><span data-ttu-id="dca29-102">WCF-NetNamedPipe 受信場所を構成する方法</span><span class="sxs-lookup"><span data-stu-id="dca29-102">How to Configure a WCF-NetNamedPipe Receive Location</span></span>
 <span data-ttu-id="dca29-103">WCF-NetNamedPipe 受信場所は、プログラムから、または BizTalk 管理コンソールを使用して構成できます。</span><span class="sxs-lookup"><span data-stu-id="dca29-103">You can configure a WCF-NetNamedPipe receive location either programmatically or by using the BizTalk Administration console.</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="dca29-245">**受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-netnamedpipe**から、クリックしてドロップダウン リスト、**構成**です。</span><span class="sxs-lookup"><span data-stu-id="dca29-245">In the **Receive Location Properties** dialog box, in the **Transport** section next to **Type**, select **WCF-NetNamedPipe** from the drop-down list, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="dca29-246">**Wcf-netnamedpipe トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-netnamedpipe 受信場所。</span><span class="sxs-lookup"><span data-stu-id="dca29-246">In the **WCF-NetNamedPipe Transport Properties** dialog box, on the **General** tab, configure the endpoint address and the service identity for the WCF-NetNamedPipe receive location.</span></span> <span data-ttu-id="dca29-247">詳細については、**全般** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポートのプロパティ ダイアログ ボックス、受信の [全般]**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。</span><span class="sxs-lookup"><span data-stu-id="dca29-247">For more information about the **General** tab in the **WCF-NetNamedPipe Transport Properties** dialog box, see the **WCF-NetNamedPipe Transport Properties Dialog Box, Receive, General** tab [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>  
+5.  <span data-ttu-id="dca29-246">**Wcf-netnamedpipe トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-netnamedpipe 受信場所。</span><span class="sxs-lookup"><span data-stu-id="dca29-246">In the **WCF-NetNamedPipe Transport Properties** dialog box, on the **General** tab, configure the endpoint address and the service identity for the WCF-NetNamedPipe receive location.</span></span> <span data-ttu-id="dca29-247">詳細については、**全般** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポートのプロパティ ダイアログ ボックス、受信の [全般]** タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。</span><span class="sxs-lookup"><span data-stu-id="dca29-247">For more information about the **General** tab in the **WCF-NetNamedPipe Transport Properties** dialog box, see the **WCF-NetNamedPipe Transport Properties Dialog Box, Receive, General** tab [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>  
   
 6.  <span data-ttu-id="dca29-248">**Wcf-netnamedpipe トランスポートのプロパティ** ダイアログ ボックスで、**バインド** タブで、タイムアウトおよびトランザクションのプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="dca29-248">In the **WCF-NetNamedPipe Transport Properties** dialog box, on the **Binding** tab, configure the time-out and transaction properties.</span></span> <span data-ttu-id="dca29-249">詳細については、**バインド** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポートのプロパティ ダイアログ ボックス、受信、バインディング**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。</span><span class="sxs-lookup"><span data-stu-id="dca29-249">For more information about the **Binding** tab in the **WCF-NetNamedPipe Transport Properties** dialog box, see the **WCF-NetNamedPipe Transport Properties Dialog Box, Receive, Binding** tab [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
   

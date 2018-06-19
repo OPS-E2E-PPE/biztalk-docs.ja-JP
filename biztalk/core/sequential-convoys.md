@@ -1,17 +1,17 @@
 ---
-title: "シーケンシャルなコンボイ |Microsoft ドキュメント"
-ms.custom: 
+title: シーケンシャルなコンボイ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - convoy sets
 - correlation sets, sequential receive tasks
 ms.assetid: f05ff42c-2236-42a3-8166-19700e0c3d97
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271586"
 ---
 # <a name="sequential-convoys"></a><span data-ttu-id="df57d-102">シーケンシャルなコンボイ</span><span class="sxs-lookup"><span data-stu-id="df57d-102">Sequential Convoys</span></span>
 <span data-ttu-id="df57d-103">シーケンシャルなコンボイを使用すると、複数の単一メッセージを結合して必要とされる結果を実現することが可能になります。</span><span class="sxs-lookup"><span data-stu-id="df57d-103">A sequential convoy enables multiple single messages to join together to achieve a required result.</span></span> <span data-ttu-id="df57d-104">シーケンシャルなコンボイは、事前定義された順序を持つ、一連の関連するメッセージです。</span><span class="sxs-lookup"><span data-stu-id="df57d-104">A sequential convoy is a set of related messages that have a predefined order.</span></span> <span data-ttu-id="df57d-105">これらのメッセージが完全に同一である必要はありませんが、BizTalk Server は各メッセージを順番に受け取る必要があります。</span><span class="sxs-lookup"><span data-stu-id="df57d-105">Although the messages do not have to be exactly the same, BizTalk Server must receive them in a sequential order.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "名前空間の型が見つからない |Microsoft ドキュメント"
-ms.custom: 
+title: 名前空間の型が見つからない |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66387fa6-3ba3-499f-99d6-bb0033c68adc
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286458"
 ---
 # <a name="type-cannot-be-found-in-namespace"></a><span data-ttu-id="1e26d-102">種類が名前空間に見つかりません</span><span class="sxs-lookup"><span data-stu-id="1e26d-102">Type cannot be found in namespace</span></span>
 ## <a name="details"></a><span data-ttu-id="1e26d-103">詳細</span><span class="sxs-lookup"><span data-stu-id="1e26d-103">Details</span></span>  

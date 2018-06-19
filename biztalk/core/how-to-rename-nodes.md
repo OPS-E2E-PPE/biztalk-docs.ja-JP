@@ -1,14 +1,14 @@
 ---
-title: "ノードの名前を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ノードの名前を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed703a3f-7e47-4adf-aed4-e5133470a979
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255250"
 ---
 # <a name="how-to-rename-nodes"></a><span data-ttu-id="15898-102">ノードの名前を変更する方法</span><span class="sxs-lookup"><span data-stu-id="15898-102">How to Rename Nodes</span></span>
 <span data-ttu-id="15898-103">既存のノードの名前を変更したい場合があります。</span><span class="sxs-lookup"><span data-stu-id="15898-103">There will probably be times when you want to rename existing nodes.</span></span> <span data-ttu-id="15898-104">このトピックでは、そのための 2 とおりの方法を紹介します。</span><span class="sxs-lookup"><span data-stu-id="15898-104">This topic describes two variations on this task.</span></span>  

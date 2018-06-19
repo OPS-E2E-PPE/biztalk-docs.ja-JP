@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオン: イベント 10578 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シングル サインオン: イベント 10578 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4693bc25-d4d5-4cc7-b9bd-42d3471b2b0c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271050"
 ---
 # <a name="single-sign-on-event-10578"></a><span data-ttu-id="2988a-102">シングル サインオン: イベント 10578</span><span class="sxs-lookup"><span data-stu-id="2988a-102">Single Sign-On: Event 10578</span></span>
 ## <a name="details"></a><span data-ttu-id="2988a-103">詳細</span><span class="sxs-lookup"><span data-stu-id="2988a-103">Details</span></span>  

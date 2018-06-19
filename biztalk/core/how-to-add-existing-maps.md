@@ -1,14 +1,14 @@
 ---
-title: "既存のマップを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 既存のマップを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fbeaea05-016e-488c-90f3-af8c6b9a3d84
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247458"
 ---
 # <a name="how-to-add-existing-maps"></a><span data-ttu-id="06f0f-102">既存のマップを追加する方法</span><span class="sxs-lookup"><span data-stu-id="06f0f-102">How to Add Existing Maps</span></span>
 <span data-ttu-id="06f0f-103">既存のマップを BizTalk プロジェクトに追加できます。</span><span class="sxs-lookup"><span data-stu-id="06f0f-103">There may be times when you want to add an existing map to a BizTalk project.</span></span> <span data-ttu-id="06f0f-104">この操作を行う前に、マップの送信元スキーマおよび送信先スキーマがマップを追加する BizTalk プロジェクトに含まれている (または対応する .NET アセンブリによって参照されている) ことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="06f0f-104">Before doing so, you must ensure that the source and destination schemas of the map are included in the BizTalk project to which you are adding the map; or, referenced by the corresponding .NET assembly.</span></span>  

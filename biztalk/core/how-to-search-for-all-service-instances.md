@@ -14,7 +14,7 @@ helpviewer_keywords:
 - service instances, searching
 - instances, services
 ms.assetid: 48cb885c-aaf1-44e8-9810-2e70cf63db81
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255122"
 ---
 # <a name="how-to-search-for-all-service-instances"></a><span data-ttu-id="978c8-102">すべてのサービス インスタンスを検索する方法</span><span class="sxs-lookup"><span data-stu-id="978c8-102">How to Search for All Service Instances</span></span>
 <span data-ttu-id="978c8-103">使用することができます、 **クエリ**  タブで、BizTalk Server 管理コンソールのすべてのサービス インスタンスを検索します。</span><span class="sxs-lookup"><span data-stu-id="978c8-103">You can use the **Query** tab in the BizTalk Server Administration Console to search for all service instances.</span></span> <span data-ttu-id="978c8-104">実行中のインスタンスまたは中断されたインスタンスがある場合、特定のサービスの種類の参加を解除することはできません。</span><span class="sxs-lookup"><span data-stu-id="978c8-104">You cannot unenlist a specific service type if there are any running or suspended instances.</span></span> <span data-ttu-id="978c8-105">特定のサービスの種類の参加を解除する前に、すべてのサービス インスタンスを検索して、実行中または中断されたインスタンスがないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="978c8-105">For example, before you can unenlist a specific service type, you can search for all service instances to ensure that there are no running or suspended instances.</span></span>  

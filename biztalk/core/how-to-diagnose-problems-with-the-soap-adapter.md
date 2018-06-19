@@ -1,14 +1,14 @@
 ---
-title: "SOAP アダプターに関する問題を診断する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプターに関する問題を診断する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16c93333-cb32-49bc-a1c4-9d726ab41850
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249474"
 ---
 # <a name="how-to-diagnose-problems-with-the-soap-adapter"></a><span data-ttu-id="a2ec4-102">SOAP アダプターに関する問題を診断する方法</span><span class="sxs-lookup"><span data-stu-id="a2ec4-102">How to Diagnose Problems with the SOAP Adapter</span></span>
 <span data-ttu-id="a2ec4-103">ここでは、SOAP アダプターに関する問題の診断手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="a2ec4-103">This section contains steps that can be followed to help diagnose problems with the SOAP adapter.</span></span>  

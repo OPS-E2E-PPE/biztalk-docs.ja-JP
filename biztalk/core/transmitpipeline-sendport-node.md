@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279274"
 ---
 # <a name="transmitpipeline-sendport-node"></a><span data-ttu-id="4eb50-102">TransmitPipeline (SendPort ノード)</span><span class="sxs-lookup"><span data-stu-id="4eb50-102">TransmitPipeline (SendPort Node)</span></span>
 <span data-ttu-id="4eb50-103">バインド ファイルの SendPort ノードの TransmitPipeline ノードでは、バインド ファイルと共にエクスポートされる送信ポートにバインドされる送信パイプラインに関する特定の情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="4eb50-103">The TransmitPipeline node of the SendPort node of a binding file provides specific information about the send pipeline bound to a send port exported with a binding file.</span></span>  

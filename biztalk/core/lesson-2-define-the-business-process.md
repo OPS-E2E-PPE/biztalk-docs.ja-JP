@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262050"
 ---
 # <a name="lesson-2-define-the-business-process"></a><span data-ttu-id="f765b-102">レッスン 2: ビジネス プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="f765b-102">Lesson 2: Define the Business Process</span></span>
 <span data-ttu-id="f765b-103">このレッスンでは、エンタープライズ アプリケーション Integration(EAI) ソリューション内の 2 つ目のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="f765b-103">In this lesson, you create the second project in the Enterprise Application Integration(EAI) solution.</span></span> <span data-ttu-id="f765b-104">このプロジェクトには、オーケストレーションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f765b-104">This project contains an orchestration.</span></span>  

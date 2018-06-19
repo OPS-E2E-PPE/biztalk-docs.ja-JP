@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279338"
 ---
 # <a name="transporttype"></a><span data-ttu-id="5d1cf-102">TransportType</span><span class="sxs-lookup"><span data-stu-id="5d1cf-102">TransportType</span></span>
 <span data-ttu-id="5d1cf-103">バインド ファイルの SendHandler ノードの TransportType ノードには、バインド ファイルと共にエクスポートされる送信ハンドラーに関連付けられたアダプターに関する特定の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="5d1cf-103">The TransportType node of the SendHandler node of a binding file contains specific information about the adapter associated with a send handler that is exported with the binding file.</span></span>  

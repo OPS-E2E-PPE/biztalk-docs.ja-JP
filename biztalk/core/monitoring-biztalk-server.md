@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96e244dc-b826-4a9f-a4e1-6dabc41eb144
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22265362"
 ---
 # <a name="monitoring-biztalk-server"></a><span data-ttu-id="9d21f-103">BizTalk Server の監視</span><span class="sxs-lookup"><span data-stu-id="9d21f-103">Monitoring BizTalk Server</span></span>
 <span data-ttu-id="9d21f-104">BizTalk Server のアプリケーションとインフラストラクチャを定期的に監視して、見つかった問題を解決し、ユーザーが常に BizTalk Server アプリケーションにアクセスできるようにします。</span><span class="sxs-lookup"><span data-stu-id="9d21f-104">Monitoring your BizTalk Server applications and infrastructure on a regular basis and resolving any issues that you find helps to keep your BizTalk Server applications accessible to your users.</span></span> <span data-ttu-id="9d21f-105">監視の目的は、例外が検出されないままになる (したがって解決されないままになる) 時間を最小限に抑えることです。</span><span class="sxs-lookup"><span data-stu-id="9d21f-105">The goal of monitoring is to minimize the amount of time that an exception goes undetected and, therefore, unresolved.</span></span> <span data-ttu-id="9d21f-106">また監視は、例外の原因となる状況を見つけるのにも役立ちます。</span><span class="sxs-lookup"><span data-stu-id="9d21f-106">Additionally, you can use monitoring to help detect situations that might cause an exception.</span></span>  

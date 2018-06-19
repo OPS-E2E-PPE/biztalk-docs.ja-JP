@@ -1,14 +1,14 @@
 ---
-title: "送信するバッチ要素がないと、パーティに対して構成されていないので、空のメッセージを送信できません |Microsoft ドキュメント"
-ms.custom: 
+title: 送信するバッチ要素がないと、パーティに対して構成されていないので、空のメッセージを送信できません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0752079a-173e-4de3-96f4-e5de01b799b5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241962"
 ---
 # <a name="there-are-no-batch-elements-to-send-and-an-empty-message-cannot-be-sent-as-it-is-not-configured-for-party"></a><span data-ttu-id="f5819-102">空のメッセージがパーティ用に構成されていないため、送信するバッチ要素がないので空のメッセージを送信できません</span><span class="sxs-lookup"><span data-stu-id="f5819-102">There are no batch elements to send and an empty message cannot be sent as it is not configured for party</span></span>
 ## <a name="details"></a><span data-ttu-id="f5819-103">詳細</span><span class="sxs-lookup"><span data-stu-id="f5819-103">Details</span></span>  

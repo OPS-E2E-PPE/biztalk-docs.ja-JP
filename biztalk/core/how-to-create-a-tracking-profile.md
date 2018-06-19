@@ -1,17 +1,17 @@
 ---
-title: "追跡プロファイルを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡プロファイルを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tracking profiles, creating
 - creating, tracking profiles
 ms.assetid: 676ae7e8-f3eb-45f1-ad2e-807b434c0bf9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248938"
 ---
 # <a name="how-to-create-a-tracking-profile"></a><span data-ttu-id="033b0-102">追跡プロファイルを作成する方法</span><span class="sxs-lookup"><span data-stu-id="033b0-102">How to Create a Tracking Profile</span></span>
 <span data-ttu-id="033b0-103">展開されたアセンブリおよび BizTalk Server メッセージング プロパティに BAM アクティビティ定義をリンクするために、追跡プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="033b0-103">You create tracking profiles to link BAM activity definitions to deployed assemblies and BizTalk Server messaging properties.</span></span> <span data-ttu-id="033b0-104">追跡プロファイル エディターを開くと、インポート アクティビティ リンクまたはインポートのメニュー項目をクリックして、新しい追跡プロファイルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="033b0-104">When you open the Tracking Profile Editor, you can create a new tracking profile by either clicking the import activity link or the import menu item.</span></span>  

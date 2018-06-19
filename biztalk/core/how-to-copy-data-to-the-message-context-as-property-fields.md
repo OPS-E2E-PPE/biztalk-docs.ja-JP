@@ -1,14 +1,14 @@
 ---
-title: "プロパティ フィールドとしてメッセージ コンテキストにデータをコピーする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティ フィールドとしてメッセージ コンテキストにデータをコピーする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fdfe475-d9b4-4cf9-898f-dbd7e719c27c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249986"
 ---
 # <a name="how-to-copy-data-to-the-message-context-as-property-fields"></a><span data-ttu-id="2fd05-102">プロパティ フィールドとしてメッセージ コンテキストにデータをコピーする方法</span><span class="sxs-lookup"><span data-stu-id="2fd05-102">How to Copy Data to the Message Context as Property Fields</span></span>
 <span data-ttu-id="2fd05-103">としてプロパティを昇格させることができます、**プロパティ フィールド**としてプロパティの昇格とほぼ同じ方法で、**識別フィールド**、使用することもでき、**クイック昇格**機能プロセスを合理化します。</span><span class="sxs-lookup"><span data-stu-id="2fd05-103">You can promote a property as a **Property Field** in much the same way as promoting a property as a **Distinguished Field**, and you can also use the **Quick Promotion** feature to streamline the process.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="2fd05-125">ダブルクリックして**プロパティ**列のセルに追加した行を**プロパティ フィールドの一覧**、ドロップダウン リストを選択し、**プロパティ スキーマ**と対応する**フィールド要素**選択したノードを昇格するノードです。</span><span class="sxs-lookup"><span data-stu-id="2fd05-125">Double-click **Property** column cell for the row you just added to the **Property Fields List**, and then in the drop-down list, select the **Property Schema** and corresponding **Field Element** node into which you want to promote the selected node.</span></span> <span data-ttu-id="2fd05-126">ドロップダウン リストの値があるフォーム X:Y、X は内のプロパティ スキーマの名前空間プレフィックス、**プロパティ スキーマの一覧**、Y はノードの名前、**フィールド要素**そのプロパティ スキーマのノードです。</span><span class="sxs-lookup"><span data-stu-id="2fd05-126">Drop-down list values have the form X:Y, where X is the namespace prefix of a property schema in the **Property Schemas List**, and Y is the node name of a **Field Element** node in that property schema.</span></span>  
   
-     <span data-ttu-id="2fd05-127">ドロップダウン リストの既定値は、最初にプロパティ スキーマ**(Field 要素)**がまだ昇格されていない、ノードは、すべての関連するプロパティ スキーマの間でアルファベット順に並べ替え。</span><span class="sxs-lookup"><span data-stu-id="2fd05-127">The default value in the drop-down list is the first property schema **(Field Element)** node that has not yet been promoted, sorted alphabetically across all relevant property schemas.</span></span> <span data-ttu-id="2fd05-128">多くの場合、この既定値は、指定したスキーマ ノードの昇格先となるプロパティ スキーマ ノードではないので、注意してください。</span><span class="sxs-lookup"><span data-stu-id="2fd05-128">This will rarely be the property schema node into which you intend to promote a given schema node.</span></span>  
+     <span data-ttu-id="2fd05-127">ドロップダウン リストの既定値は、最初にプロパティ スキーマ **(Field 要素)** がまだ昇格されていない、ノードは、すべての関連するプロパティ スキーマの間でアルファベット順に並べ替え。</span><span class="sxs-lookup"><span data-stu-id="2fd05-127">The default value in the drop-down list is the first property schema **(Field Element)** node that has not yet been promoted, sorted alphabetically across all relevant property schemas.</span></span> <span data-ttu-id="2fd05-128">多くの場合、この既定値は、指定したスキーマ ノードの昇格先となるプロパティ スキーマ ノードではないので、注意してください。</span><span class="sxs-lookup"><span data-stu-id="2fd05-128">This will rarely be the property schema node into which you intend to promote a given schema node.</span></span>  
   
 10. <span data-ttu-id="2fd05-129">プロモーションの追加のノードをクリックすると、ダイアログ ボックスの左側にあるスキーマ ツリーで選択できる**追加**および 9 を選択するたびにステップを実行することです。</span><span class="sxs-lookup"><span data-stu-id="2fd05-129">You can select additional nodes for promotion in the schema tree on the left side of the dialog box, clicking **Add** and then performing step 9 after each selection.</span></span>  
   

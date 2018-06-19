@@ -1,11 +1,11 @@
 ---
-title: "スケール アウト受信ホスト |Microsoft ドキュメント"
-ms.custom: 
+title: スケール アウト受信ホスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2016-03-17
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, receive adapters
@@ -34,7 +34,7 @@ helpviewer_keywords:
 - File adapters, scaling
 - clustering
 ms.assetid: 94f35426-37fa-4ad2-8e35-d82fdca02262
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -43,6 +43,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272554"
 ---
 # <a name="scaled-out-receiving-hosts"></a><span data-ttu-id="f6169-102">受信ホストのスケールアウト</span><span class="sxs-lookup"><span data-stu-id="f6169-102">Scaled-Out Receiving Hosts</span></span>
 <span data-ttu-id="f6169-103">受信機能 (受信場所やパイプラインなど) をつかさどるホストはセキュリティの処理境界として機能し、メッセージのデコードや復号化は、そのホスト内のパイプラインで行われます。</span><span class="sxs-lookup"><span data-stu-id="f6169-103">When a host contains a receiving item, such as a receive location or pipeline, it acts as a security boundary, and the message decoding and decrypting occurs in a pipeline within the host.</span></span> <span data-ttu-id="f6169-104">受信ホストの高可用性を確保するためには、それぞれが受信ホストのインスタンスを実行する複数の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターを用意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f6169-104">To make the receiving hosts highly available, you must have two or more [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers that are running instances of each receiving host.</span></span> <span data-ttu-id="f6169-105">受信ホストをスケール アウトすることにより、メッセージ処理の負荷の大きい [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で可用性を確保できます。</span><span class="sxs-lookup"><span data-stu-id="f6169-105">By scaling out the receiving hosts you can guarantee availability for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployments that are messaging intensive.</span></span> <span data-ttu-id="f6169-106">こうすることで、受信ホストが実行するオーケストレーション処理を最小限に抑えながら、さまざまなタイプのメッセージを高速かつ高い信頼性でルーティングさせることができます。</span><span class="sxs-lookup"><span data-stu-id="f6169-106">While these deployments might perform minimal processing for orchestrations, they can route many messages of varying types with great speed and reliability.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "ビジネス プロセスの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセスの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5e0fdfe-e298-4f32-a7c5-d081b926a206
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22243274"
 ---
 # <a name="defining-business-processes"></a><span data-ttu-id="f1f69-102">ビジネス プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="f1f69-102">Defining Business Processes</span></span>
 <span data-ttu-id="f1f69-103">異なるシステム間でのメッセージの交換は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で問題を解決するために必要な条件です。</span><span class="sxs-lookup"><span data-stu-id="f1f69-103">The exchange of messages between different systems is a necessary part of solving the problems that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] addresses.</span></span> <span data-ttu-id="f1f69-104">ただし、実際の目標は、アプリケーションに基づいてビジネス プロセスを定義および実行することになります。</span><span class="sxs-lookup"><span data-stu-id="f1f69-104">The real goal, however, is to define and execute business processes based on the applications.</span></span> <span data-ttu-id="f1f69-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エンジンで、こうしたビジネス プロセスのロジックを定義するには、オーケストレーションを使用します。</span><span class="sxs-lookup"><span data-stu-id="f1f69-105">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine uses orchestrations to define the logic of these business processes.</span></span> <span data-ttu-id="f1f69-106">また、ビジネス ルールのグループを作成および評価するには、ビジネス ルール エンジンを使用します。</span><span class="sxs-lookup"><span data-stu-id="f1f69-106">To create and evaluate groups of business rules, it uses the Business Rule Engine.</span></span> <span data-ttu-id="f1f69-107">ここでは、オーケストレーションとビジネス ルール エンジンの両方について説明します。</span><span class="sxs-lookup"><span data-stu-id="f1f69-107">This section describes both orchestrations and the Business Rule Engine.</span></span>  

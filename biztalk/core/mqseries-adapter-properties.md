@@ -1,11 +1,11 @@
 ---
-title: "MQSeries アダプターのプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: MQSeries アダプターのプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQXQH_RemoteQName property [MQSeries adapters]
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - MQXQH_RemoteQMgrName property [MQSeries adapters]
 - MQMD_MsgId property [MQSeries adapters]
 ms.assetid: c3cfbc8c-4c9b-431e-b0b6-4c065a69ce6b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263570"
 ---
 # <a name="mqseries-adapter-properties"></a><span data-ttu-id="3dace-102">MQSeries アダプターのプロパティ</span><span class="sxs-lookup"><span data-stu-id="3dace-102">MQSeries Adapter Properties</span></span>
 <span data-ttu-id="3dace-103">BizTalk オーケストレーションから MQSeries ヘッダー プロパティにアクセスするには、プロジェクトに MQSeries.dll アセンブリへの参照を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3dace-103">To access MQSeries header properties from a BizTalk orchestration, you must add a reference to the MQSeries.dll assembly to your project.</span></span> <span data-ttu-id="3dace-104">このアセンブリは、MQSeries アダプターをインストールした場所 ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] など) にあります。</span><span class="sxs-lookup"><span data-stu-id="3dace-104">This assembly is located where you installed the MQSeries adapter, for example, [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].</span></span>  

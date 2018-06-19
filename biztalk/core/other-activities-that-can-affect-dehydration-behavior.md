@@ -1,14 +1,14 @@
 ---
-title: "退避の動作に影響を与える他のアクティビティ |Microsoft ドキュメント"
-ms.custom: 
+title: 退避の動作に影響を与える他のアクティビティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed940448-d3b1-4308-9b38-887904e03bd0
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264042"
 ---
 # <a name="other-activities-that-can-affect-dehydration-behavior"></a><span data-ttu-id="a778d-102">退避の動作に影響する可能性のあるその他のアクティビティ</span><span class="sxs-lookup"><span data-stu-id="a778d-102">Other Activities That Can Affect Dehydration Behavior</span></span>
 <span data-ttu-id="a778d-103">次のアクティビティは、退避および全体のパフォーマンスに直接的または間接的に影響するため、テスト シナリオに組み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="a778d-103">The following activities directly or indirectly impact dehydration and overall performance and so should be factored into any testing scenarios.</span></span>  

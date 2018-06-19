@@ -1,14 +1,14 @@
 ---
-title: "インターネット インフォメーション サービスのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: インターネット インフォメーション サービスのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f77084f1-5797-42ab-bbf6-fe815144232e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280106"
 ---
 # <a name="troubleshooting-internet-information-services"></a><span data-ttu-id="e14df-102">インターネット インフォメーション サービスのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="e14df-102">Troubleshooting Internet Information Services</span></span>
 <span data-ttu-id="e14df-103">Microsoft インターネット インフォメーション サービス (IIS) は、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] において、HTTP アダプター、SOAP アダプター、Windows SharePoint Services アダプターなど、さまざまな機能に幅広く使用されます。</span><span class="sxs-lookup"><span data-stu-id="e14df-103">Microsoft Internet Information Services (IIS) is used extensively by Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] for various functionality including the HTTP, SOAP, and Windows SharePoint Services adapters.</span></span> <span data-ttu-id="e14df-104">このトピックでは、IIS で発生する可能性がある既知の問題とその解決策について説明します。</span><span class="sxs-lookup"><span data-stu-id="e14df-104">This topic describes some known issues that you may encounter with IIS and possible resolutions to these issues.</span></span>  
@@ -141,7 +142,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="e14df-173">既定では、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] の HTTPERR ログ ファイルは、次のディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="e14df-173">By default the HTTPERR log files on [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] are located in the following directory:</span></span>  
   
-     <span data-ttu-id="e14df-174">*%Windir%*system32LogFilesHTTPERR</span><span class="sxs-lookup"><span data-stu-id="e14df-174">*%WinDir%*system32LogFilesHTTPERR</span></span>  
+     <span data-ttu-id="e14df-174">*%Windir%* system32LogFilesHTTPERR</span><span class="sxs-lookup"><span data-stu-id="e14df-174">*%WinDir%* system32LogFilesHTTPERR</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="e14df-175">HTTPERR ログ ファイルを使用できるのは、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または Windows Vista のコンピューターだけです。</span><span class="sxs-lookup"><span data-stu-id="e14df-175">The HTTPERR log file is only available on a [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], or Windows Vista computer.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "GetUserData |Microsoft ドキュメント"
-ms.custom: 
+title: GetUserData |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c243555b-109f-47e3-8084-ab13a8e22ac5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246386"
 ---
 # <a name="getuserdata"></a><span data-ttu-id="c30b0-102">GetUserData</span><span class="sxs-lookup"><span data-stu-id="c30b0-102">GetUserData</span></span>
 <span data-ttu-id="c30b0-103">現在のユーザー データをスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="c30b0-103">Pushes the current user data onto the stack.</span></span>  

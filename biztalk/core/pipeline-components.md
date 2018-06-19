@@ -1,17 +1,17 @@
 ---
-title: "パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, components
 - pipeline components
 ms.assetid: fd7061e0-a9cd-4f6f-a149-9f01fb9d23cb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264306"
 ---
 # <a name="pipeline-components"></a><span data-ttu-id="7f4c4-102">パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="7f4c4-102">Pipeline Components</span></span>
 <span data-ttu-id="7f4c4-103">Visual Studio ツールボックスには、パイプラインの作成に使用できるいくつかの標準 BizTalk Server コンポーネントが組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="7f4c4-103">The Visual Studio Toolbox is populated with several standard BizTalk Server components that you can use to create a pipeline.</span></span>  

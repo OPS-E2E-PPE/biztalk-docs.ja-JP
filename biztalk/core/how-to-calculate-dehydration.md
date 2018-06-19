@@ -1,14 +1,14 @@
 ---
-title: "退避を計算する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 退避を計算する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88f2d09c-60db-4daf-b850-23f2c8915502
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248314"
 ---
 # <a name="how-to-calculate-dehydration"></a><span data-ttu-id="6c245-102">退避を計算する方法</span><span class="sxs-lookup"><span data-stu-id="6c245-102">How to Calculate Dehydration</span></span>
 <span data-ttu-id="6c245-103">退避を計算するには、構成されたプロパティおよび特定の実行時の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="6c245-103">To calculate dehydration, you use the configured properties and certain run-time values.</span></span> <span data-ttu-id="6c245-104">仮定の退避シナリオを計算する方法を次の例に示します。</span><span class="sxs-lookup"><span data-stu-id="6c245-104">The following example demonstrates how to calculate a hypothetical dehydration scenario.</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="6c245-122">退避するかどうかの決定は、次のブール値条件の結果によって決まります (true = 退避)。</span><span class="sxs-lookup"><span data-stu-id="6c245-122">The decision whether to dehydrate is the result of the following Boolean condition (true = dehydrate):</span></span>  
   
--   <span data-ttu-id="6c245-123">待避 = (EstimatedTime > TestThreshold または TimeBlocked > (2* TestThreshold))</span><span class="sxs-lookup"><span data-stu-id="6c245-123">Dehydrate = (EstimatedTime > TestThreshold OR TimeBlocked > (2* TestThreshold))</span></span>  
+-   <span data-ttu-id="6c245-123">待避 = (EstimatedTime > TestThreshold または TimeBlocked > (2\* TestThreshold))</span><span class="sxs-lookup"><span data-stu-id="6c245-123">Dehydrate = (EstimatedTime > TestThreshold OR TimeBlocked > (2\* TestThreshold))</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="6c245-124">推定時間は遅延が終了するまでの残り時間です (5 分間と 2 分間の遅延が経過した場合、TimeBlocked=120 秒、EstimatedTime=180 秒です)。</span><span class="sxs-lookup"><span data-stu-id="6c245-124">Estimated time is the time remaining until the delay is ended (if delayed for 5 minutes and 2 minutes has passed, TimeBlocked=120 seconds, EstimatedTime=180 seconds).</span></span>  

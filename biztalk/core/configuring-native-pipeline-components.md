@@ -1,11 +1,11 @@
 ---
-title: "ネイティブ パイプライン コンポーネントの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: ネイティブ パイプライン コンポーネントの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Pipeline Designer, pipeline components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Pipeline Designer, code sample
 - IPersistPropertyBag interface
 ms.assetid: a3332a60-8cd6-43fa-9ecf-e1e54e71fef7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233178"
 ---
 # <a name="configuring-native-pipeline-components"></a><span data-ttu-id="a4f8d-102">ネイティブ パイプライン コンポーネントの構成</span><span class="sxs-lookup"><span data-stu-id="a4f8d-102">Configuring Native Pipeline Components</span></span>
 <span data-ttu-id="a4f8d-103">パイプライン コンポーネントは、独自のカスタム プロパティをデザイン時に公開できます。</span><span class="sxs-lookup"><span data-stu-id="a4f8d-103">Pipeline components can expose their own custom properties at design time.</span></span> <span data-ttu-id="a4f8d-104">コンポーネントのパブリック プロパティに読み取りと書き込みのアクセサーが実装されていた場合、これらのすべてのプロパティがパイプライン デザイナーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4f8d-104">Any public property defined in the component will be rendered in Pipeline Designer providing that read and write accessors for that property are implemented.</span></span> <span data-ttu-id="a4f8d-105">パイプライン デザイナーは、対応する宣言に従ってコンポーネントのプロパティを表示します。たとえば、プロパティが読み取り専用として宣言されていた場合、パイプライン デザイナーでもそのように表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4f8d-105">Pipeline Designer will display the component properties in accordance with their declaration; for example, if the property is declared as read-only, it will be displayed as such in Pipeline Designer.</span></span>  

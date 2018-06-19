@@ -1,11 +1,11 @@
 ---
-title: "データ変換の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: データ変換の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XSLT
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - maps, code sample [XSLT]
 - XSLT, code samples
 ms.assetid: 05abe091-5202-4590-99ec-e60ca53a4324
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238962"
 ---
 # <a name="data-transformation-configuration"></a><span data-ttu-id="26f6e-102">データ変換の構成</span><span class="sxs-lookup"><span data-stu-id="26f6e-102">Data Transformation Configuration</span></span>
 <span data-ttu-id="26f6e-103">要素からマップされた XSLT (Extensible Stylesheet Language Transformations) の一般的な例は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="26f6e-103">When mapping from an element, a typical Extensible Stylesheet Language Transformations (XSLT) looks as follows.</span></span>  

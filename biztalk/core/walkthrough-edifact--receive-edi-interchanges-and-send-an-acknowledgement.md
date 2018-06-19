@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル (EDIFACT): EDI インターチェンジの受信と受信確認を送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル (EDIFACT): EDI インターチェンジの受信と受信確認を送信する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02751f0c-8e7e-4879-93e4-8bc475640756
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291938"
 ---
 # <a name="walkthrough-edifact-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a><span data-ttu-id="6d2e0-102">チュートリアル (EDIFACT): EDI インターチェンジの受信と受信確認の送信</span><span class="sxs-lookup"><span data-stu-id="6d2e0-102">Walkthrough (EDIFACT): Receiving EDI Interchanges and Sending Back an Acknowledgement</span></span>
 <span data-ttu-id="6d2e0-103">このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して EDIFACT インターチェンジの受信用のソリューションを作成する一連の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-103">This walkthrough provides a set of step-by-step procedures that creates a solution for receiving EDIFACT interchanges using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="6d2e0-104">このソリューションでは、ある取引先 (Fabrikam) から別の取引先 (Contoso) に EDIFACT インターチェンジが送信されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-104">In this solution, an EDIFACT interchange is sent from a trading partner, Fabrikam, to another trading partner, Contoso.</span></span>  
@@ -149,13 +150,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="6d2e0-162">受信ポートの名前を指定し、をクリックして**受信場所**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-162">Name the receive port, and then click **Receive Locations** in the console tree.</span></span>  
   
-4.  <span data-ttu-id="6d2e0-163">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-163">Click **New**.</span></span>  
+4.  <span data-ttu-id="6d2e0-163">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-163">Click **New**.</span></span>  
   
 5.  <span data-ttu-id="6d2e0-164">名前、受信場所は、select**ファイル**の**型**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-164">Name the receive location, select **FILE** for **Type**, and then click **Configure**.</span></span>  
   
 6.  <span data-ttu-id="6d2e0-165">フォルダーを参照**受信フォルダー**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-165">Browse to a folder for **Receive folder** text box.</span></span> <span data-ttu-id="6d2e0-166">このフォルダーは、この手順のステップ 1. で作成したフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-166">You created this folder in step 1 of this procedure.</span></span> <span data-ttu-id="6d2e0-167">ファイル マスクを入力します。  **\*.edi**または **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-167">Enter a file mask, such as **\*.edi** or **\*.txt**.</span></span>  
   
-7.  <span data-ttu-id="6d2e0-168">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-168">Click **OK**.</span></span>  
+7.  <span data-ttu-id="6d2e0-168">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-168">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="6d2e0-169">**受信パイプライン** **EdiReceive**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-169">For **Receive pipeline**, select **EdiReceive**.</span></span>  
   
@@ -175,7 +176,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="6d2e0-179">**コピー先フォルダー**インターチェンジを受信するフォルダーを参照します。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-179">For **Destination folder**, browse to the folder to receive the interchange.</span></span> <span data-ttu-id="6d2e0-180">このフォルダーは、この手順のステップ 1. で作成したフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-180">You created this folder in step 1 of this procedure.</span></span> <span data-ttu-id="6d2e0-181">**ファイル マスク**、インターチェンジの形式を入力します。  **\*.edi**または **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-181">For **File mask**, enter the interchange format, such as **\*.edi** or **\*.txt**.</span></span>  
   
-6.  <span data-ttu-id="6d2e0-182">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-182">Click **OK**.</span></span>  
+6.  <span data-ttu-id="6d2e0-182">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-182">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="6d2e0-183">**送信パイプライン** **EdiSend**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-183">In **Send pipeline**, select **EdiSend**.</span></span>  
   
@@ -184,7 +185,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="6d2e0-187">前のフィルター設定では、この送信ポートに関連付けられたフォルダーに、受信確認ではなくインターチェンジが送信されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-187">The above filter setting ensures that interchanges, not acknowledgments, will be sent to the folder associated with this send port.</span></span>  
   
-9. <span data-ttu-id="6d2e0-188">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-188">Click **OK**.</span></span>  
+9. <span data-ttu-id="6d2e0-188">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-188">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="6d2e0-189">コンソール ツリーでクリックして**送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-189">In the console tree, click **Send Ports**.</span></span> <span data-ttu-id="6d2e0-190">**送信ポート** ウィンドウは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-190">In the **Send Ports** pane, right-click your send port, and then click **Start**.</span></span>  
   
@@ -200,13 +201,13 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="6d2e0-196">**コピー先フォルダー**、2 つの受信確認を受信するフォルダーを参照します。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-196">For **Destination folder**, browse to a folder to receive the two acknowledgments.</span></span> <span data-ttu-id="6d2e0-197">このフォルダーは、この手順のステップ 1. で作成したフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-197">You created this folder in step 1 of this procedure.</span></span> <span data-ttu-id="6d2e0-198">**ファイル マスク**、インターチェンジの形式を入力します。  **\*.edi**または **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-198">For **File mask**, enter the interchange format, such as **\*.edi** or **\*.txt**.</span></span>  
   
-6.  <span data-ttu-id="6d2e0-199">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-199">Click **OK**.</span></span>  
+6.  <span data-ttu-id="6d2e0-199">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-199">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="6d2e0-200">**送信パイプライン** **EdiSend**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-200">In **Send pipeline**, select **EdiSend**.</span></span>  
   
 8.  <span data-ttu-id="6d2e0-201">コンソール ツリーで、次のように選択します。**フィルター**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-201">In the console tree, select **Filters**.</span></span> <span data-ttu-id="6d2e0-202">確認をサブスクライブするフィルターを入力します。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-202">Enter a filter to subscribe to acknowledgments.</span></span> <span data-ttu-id="6d2e0-203">たとえば、**プロパティ**、入力**BTS です。MessageType**; の**演算子**、入力 **==** ; および**値**、受信確認のスキーマを入力`http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-203">For example, for **Property**, enter **BTS.MessageType**; for **Operator**, enter **==**; and for **Value** enter the schema for the acknowledgment, `http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`.</span></span>  
   
-9. <span data-ttu-id="6d2e0-204">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-204">Click **OK**.</span></span>  
+9. <span data-ttu-id="6d2e0-204">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-204">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="6d2e0-205">コンソール ツリーでクリックして**送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-205">In the console tree, click **Send Ports**.</span></span> <span data-ttu-id="6d2e0-206">**送信ポート** ウィンドウは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-206">In the **Send Ports** pane, right-click your send port, and then click **Start**.</span></span>  
   
@@ -258,7 +259,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="6d2e0-238">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**、し、選択**reporting 用メッセージ ペイロードを格納**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-238">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**, and then select **Store message payload for reporting**.</span></span>  
   
-7.  <span data-ttu-id="6d2e0-239">次のタスクを実行、 **Fabrikam が Contoso ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-239">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
+7.  <span data-ttu-id="6d2e0-239">次のタスクを実行、 **Fabrikam が Contoso ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-239">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
   
     1.  <span data-ttu-id="6d2e0-240">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**UNB2.1**、 **[unb2.2]**、 **UNB3.1**、および**UNB3.2**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-240">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**UNB2.1**, **UNB2.2**, **UNB3.1**, and **UNB3.2**) that correspond to the values for those header fields in your test message.</span></span>  
   
@@ -268,14 +269,14 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="6d2e0-245">テスト メッセージとしては、このトピックの前半に示したサンプル メッセージを使用している場合は、設定**UNB2.1**に**7654321**、 **UNB2.2**に**ZZZ-相互定義**、 **UNB3.1**に**1234567**、および**UNB3.2**に**ZZZ-相互定義**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-245">If you are using the sample message provided earlier in this topic as your test message, set **UNB2.1** to **7654321**, **UNB2.2** to **ZZZ – Mutually Defined**, **UNB3.1** to **1234567**, and **UNB3.2** to **ZZZ – Mutually Defined**.</span></span>  
   
-    2.  <span data-ttu-id="6d2e0-246">**受信確認**ページで、**インターチェンジの設定** セクションで、チェック**メッセージの受信 (CONTRL が必要です)**と**受信確認 (CONTRL) が必要**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-246">On the **Acknowledgements** page under the **Interchange Settings** section, check **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected**.</span></span>  
+    2.  <span data-ttu-id="6d2e0-246">**受信確認**ページで、**インターチェンジの設定** セクションで、チェック**メッセージの受信 (CONTRL が必要です)** と**受信確認 (CONTRL) が必要**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-246">On the **Acknowledgements** page under the **Interchange Settings** section, check **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected**.</span></span>  
   
-    3.  <span data-ttu-id="6d2e0-247">**エンベロープ**ページで、**インターチェンジの設定** セクションで、チェック**適用の UNA セグメント (文字列サービス通知)**と**適用の UNG セグメント (機能グループ ヘッダー)**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-247">On the **Envelopes** page under the **Interchange Settings** section, check **Apply UNA segment (String service advice)** and **Apply UNG segments (Functional group header)**.</span></span>  
+    3.  <span data-ttu-id="6d2e0-247">**エンベロープ**ページで、**インターチェンジの設定** セクションで、チェック**適用の UNA セグメント (文字列サービス通知)** と**適用の UNG セグメント (機能グループ ヘッダー)** です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-247">On the **Envelopes** page under the **Interchange Settings** section, check **Apply UNA segment (String service advice)** and **Apply UNG segments (Functional group header)**.</span></span>  
   
-    4.  <span data-ttu-id="6d2e0-248">**検証**ページで、、**インターチェンジの設定**セクションで、確認してください**インターチェンジ制御番号 (UNB5)**オプションがオフになっています。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-248">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (UNB5)** option is unchecked.</span></span>  
+    4.  <span data-ttu-id="6d2e0-248">**検証**ページで、、**インターチェンジの設定**セクションで、確認してください**インターチェンジ制御番号 (UNB5)** オプションがオフになっています。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-248">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (UNB5)** option is unchecked.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="6d2e0-249">オフにすると、**インターチェンジ制御番号 (UNB5)**プロパティでは、同じメッセージの複数のインスタンスを受信することができます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-249">Clearing the **Interchange Control Number (UNB5)** property enables you to receive multiple instances of the same message.</span></span>  
+        >  <span data-ttu-id="6d2e0-249">オフにすると、**インターチェンジ制御番号 (UNB5)** プロパティでは、同じメッセージの複数のインスタンスを受信することができます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-249">Clearing the **Interchange Control Number (UNB5)** property enables you to receive multiple instances of the same message.</span></span>  
   
     5.  <span data-ttu-id="6d2e0-250">**文字セットと区切り記号**ページで、**インターチェンジの設定** セクションで、選択、 **CR LF**オプションを**UNA6 サフィックス**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-250">On the **Charset and Separators** page under the **Interchange Settings** section, select the **CR LF** option for **UNA6 Suffix**.</span></span>  
   
@@ -311,13 +312,13 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="6d2e0-293">**UNG7.3**</span><span class="sxs-lookup"><span data-stu-id="6d2e0-293">**UNG7.3**</span></span>|<span data-ttu-id="6d2e0-294">空白のままにできます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-294">You can leave this blank.</span></span>|  
         |<span data-ttu-id="6d2e0-295">**UNG8**</span><span class="sxs-lookup"><span data-stu-id="6d2e0-295">**UNG8**</span></span>|<span data-ttu-id="6d2e0-296">空白のままにできます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-296">You can leave this blank.</span></span>|  
   
-8.  <span data-ttu-id="6d2e0-297">次のタスクを実行、 **Contoso が Fabrikam ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-297">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
+8.  <span data-ttu-id="6d2e0-297">次のタスクを実行、 **Contoso が Fabrikam ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-297">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="6d2e0-298">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-298">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="6d2e0-299">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります**UNG2.1**、 **UNG2.2**、 **UNG3.1**、および**UNG3.2**.</span><span class="sxs-lookup"><span data-stu-id="6d2e0-299">To successfully create an agreement, both one-way agreement tabs must have values defined for **UNG2.1**, **UNG2.2**, **UNG3.1**, and **UNG3.2**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="6d2e0-300">受信確認の生成方法に関連するプロパティを構成、受信確認、同じメッセージ トランザクションの一部である場合でも、 **Contoso が Fabrikam ->**タブです。これが必要な受信確認コンテキスト プロパティで指定した値の逆に、送信者および受信者の修飾子を設定、 **Contoso が Fabrikam ->**タブです。たとえば場合、送信者と受信者の識別子が 7654321 と 1234567 に設定されて、 **Fabrikam が Contoso ->**  タブでは、送信者と受信者のコンテキスト プロパティは、受信確認で 1234567 と 7654321 に設定されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-300">Even though the acknowledgement is part of the same message transaction, the properties related to how the acknowledgement should be generated are configured in the **Contoso->Fabrikam** tab. This is required because the acknowledgement context properties for the sender and receiver qualifiers are set to the opposite of the values you specified in the **Contoso->Fabrikam** tab. For example, if sender and receiver identifiers are set to 7654321 and 1234567 in the **Fabrikam->Contoso** tab, the sender and receiver context properties will be set to 1234567 and 7654321 in the acknowledgement.</span></span> <span data-ttu-id="6d2e0-301">通常、もう一方の一方向アグリーメントに関するタブでも、送信者 ID と受信者 ID がそれぞれ 1234567 と 7654321 に設定されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-301">Typically, the other one-way agreement tab would also have the sender and receiver identifiers set to 1234567 and 7654321 respectively.</span></span> <span data-ttu-id="6d2e0-302">そのため、受信確認メッセージは、そのアグリーメントに従って解決され、プロパティの設定が取得されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-302">Hence, the acknowledgement message would resolve to that agreement and the properties setting will be picked.</span></span> <span data-ttu-id="6d2e0-303">別の要素の区切り記号 CR LF を使用する受信確認をするかどうかまたはを使用する受信確認がある場合は、のプロパティを指定するなど、 **Contoso が Fabrikam ->**タブ。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-303">So, if you want to have the acknowledgement to use different element separators or if you want to have the acknowledgement to use CR LF, specify the properties in the **Contoso->Fabrikam** tab.</span></span>  
+    >  <span data-ttu-id="6d2e0-300">受信確認の生成方法に関連するプロパティを構成、受信確認、同じメッセージ トランザクションの一部である場合でも、 **Contoso が Fabrikam ->** タブです。これが必要な受信確認コンテキスト プロパティで指定した値の逆に、送信者および受信者の修飾子を設定、 **Contoso が Fabrikam ->** タブです。たとえば場合、送信者と受信者の識別子が 7654321 と 1234567 に設定されて、 **Fabrikam が Contoso ->**  タブでは、送信者と受信者のコンテキスト プロパティは、受信確認で 1234567 と 7654321 に設定されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-300">Even though the acknowledgement is part of the same message transaction, the properties related to how the acknowledgement should be generated are configured in the **Contoso->Fabrikam** tab. This is required because the acknowledgement context properties for the sender and receiver qualifiers are set to the opposite of the values you specified in the **Contoso->Fabrikam** tab. For example, if sender and receiver identifiers are set to 7654321 and 1234567 in the **Fabrikam->Contoso** tab, the sender and receiver context properties will be set to 1234567 and 7654321 in the acknowledgement.</span></span> <span data-ttu-id="6d2e0-301">通常、もう一方の一方向アグリーメントに関するタブでも、送信者 ID と受信者 ID がそれぞれ 1234567 と 7654321 に設定されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-301">Typically, the other one-way agreement tab would also have the sender and receiver identifiers set to 1234567 and 7654321 respectively.</span></span> <span data-ttu-id="6d2e0-302">そのため、受信確認メッセージは、そのアグリーメントに従って解決され、プロパティの設定が取得されます。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-302">Hence, the acknowledgement message would resolve to that agreement and the properties setting will be picked.</span></span> <span data-ttu-id="6d2e0-303">別の要素の区切り記号 CR LF を使用する受信確認をするかどうかまたはを使用する受信確認がある場合は、のプロパティを指定するなど、 **Contoso が Fabrikam ->** タブ。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-303">So, if you want to have the acknowledgement to use different element separators or if you want to have the acknowledgement to use CR LF, specify the properties in the **Contoso->Fabrikam** tab.</span></span>  
     >   
     >  <span data-ttu-id="6d2e0-304">概念的には、受信確認のプロパティを同じセンダを持つ任意の一方向アグリーメント タブから取得され、として受信者の修飾子は、受信確認のコンテキスト プロパティで設定します。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-304">Conceptually, the properties for the acknowledgement will be picked from any one-way agreement tab that has the same sender and receiver qualifiers as set in the acknowledgement’s context properties.</span></span> <span data-ttu-id="6d2e0-305">ただし、実際に使いやすいように、一般的には、インターチェンジの解決用に作成したアグリーメントのもう 1 つの一方向のアグリーメント タブでこの設定を行います。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-305">However, for ease of practical use, you would typically set this in the other one-way agreement tab of the agreement that you created to which the interchange would have resolved.</span></span>  
   
@@ -326,9 +327,9 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="6d2e0-307">テスト メッセージとしては、このトピックの前半に示したサンプル メッセージを使用している場合は、設定**UNB2.1**に**1234567**、 **UNB2.2**に**ZZZ-相互定義**、 **UNB3.1**に**7654321**、および**UNB3.2**に**ZZZ-相互定義**です。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-307">If you are using the sample message provided earlier in this topic as your test message, set **UNB2.1** to **1234567**, **UNB2.2** to **ZZZ – Mutually Defined**, **UNB3.1** to **7654321**, and **UNB3.2** to **ZZZ – Mutually Defined**.</span></span>  
   
-9. <span data-ttu-id="6d2e0-308">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-308">Click **Apply**.</span></span>  
+9. <span data-ttu-id="6d2e0-308">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-308">Click **Apply**.</span></span>  
   
-10. <span data-ttu-id="6d2e0-309">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-309">Click **OK**.</span></span> <span data-ttu-id="6d2e0-310">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-310">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="6d2e0-311">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-311">The newly added agreement is enabled by default.</span></span>  
+10. <span data-ttu-id="6d2e0-309">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-309">Click **OK**.</span></span> <span data-ttu-id="6d2e0-310">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-310">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="6d2e0-311">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-311">The newly added agreement is enabled by default.</span></span>  
   
 ### <a name="testing-the-walkthrough"></a><span data-ttu-id="6d2e0-312">チュートリアルのテスト</span><span class="sxs-lookup"><span data-stu-id="6d2e0-312">Testing the Walkthrough</span></span>  
  <span data-ttu-id="6d2e0-313">ここでは、チュートリアルをテストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6d2e0-313">This section provides information on how to test the walkthrough.</span></span>  

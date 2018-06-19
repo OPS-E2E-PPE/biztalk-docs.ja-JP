@@ -1,15 +1,15 @@
 ---
-title: "新しいホストを作成 |Microsoft ドキュメント"
+title: 新しいホストを作成 |Microsoft ドキュメント
 descriptions: Use BizTalk Administration to create a new host in BizTalk Server
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 811e6e57-5c37-471a-aff4-5b2b68c367b1
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250202"
 ---
 # <a name="create-a-new-host"></a><span data-ttu-id="f1b00-102">新しいホストを作成します。</span><span class="sxs-lookup"><span data-stu-id="f1b00-102">Create a New Host</span></span>
 <span data-ttu-id="f1b00-103">BizTalk ホストとは、アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどのアイテムの論理的なコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="f1b00-103">A BizTalk Host is a logical container for items such as adapter handlers, receive locations (including pipelines), and orchestrations.</span></span> <span data-ttu-id="f1b00-104">セキュリティ対策のため、およびホストの管理を容易にするために、メッセージの処理、受信、および送信用の各ホストを分離し、信頼済みのアイテムとそうでないアイテムのホストを使い分けることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="f1b00-104">We recommend that you use separate hosts for processing, receiving, and sending messages, and that you use separate hosts for trusted and non-trusted items to facilitate implementing security measures and to improve manageability of the hosts.</span></span> <span data-ttu-id="f1b00-105">BizTalk サーバーごとにインストールできるホストのインスタンスは 1 つだけです。</span><span class="sxs-lookup"><span data-stu-id="f1b00-105">You can install only one instance of a host per BizTalk server.</span></span> <span data-ttu-id="f1b00-106">ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)です。</span><span class="sxs-lookup"><span data-stu-id="f1b00-106">For more information about hosts, see [Hosts](../core/hosts.md).</span></span>  

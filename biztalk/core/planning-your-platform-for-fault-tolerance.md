@@ -1,11 +1,11 @@
 ---
-title: "フォールト トレランスのためには、プラットフォームの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールト トレランスのためには、プラットフォームの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, BizTalk Server
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - Primary Import database [BAM], fault tolerance
 - fail-over clustering
 ms.assetid: 512ed6b8-db1e-434a-8009-63e952cf5500
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265026"
 ---
 # <a name="planning-your-platform-for-fault-tolerance"></a><span data-ttu-id="eb7d7-102">フォールト トレランスのためには、プラットフォームの計画</span><span class="sxs-lookup"><span data-stu-id="eb7d7-102">Planning Your Platform for Fault Tolerance</span></span>
 <span data-ttu-id="eb7d7-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、Microsoft Windows プラットフォームおよび Microsoft SQL Server プラットフォームを基盤としています。</span><span class="sxs-lookup"><span data-stu-id="eb7d7-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is built on the Microsoft Windows and Microsoft SQL Server platforms.</span></span> <span data-ttu-id="eb7d7-104">BizTalk Server の障害に対する耐性や回復力は、その基盤となるプラットフォームの耐性と回復力にかかっています。</span><span class="sxs-lookup"><span data-stu-id="eb7d7-104">The ability of BizTalk Server to survive or recover from a disaster depends on the ability of the underlying platform to survive or recover.</span></span>  

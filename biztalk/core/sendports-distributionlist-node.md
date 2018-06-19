@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269634"
 ---
 # <a name="sendports-distributionlist-node"></a><span data-ttu-id="76f8f-102">SendPorts (DistributionList ノード)</span><span class="sxs-lookup"><span data-stu-id="76f8f-102">SendPorts (DistributionList Node)</span></span>
 <span data-ttu-id="76f8f-103">バインド ファイルの DistributionList ノードの SendPorts ノードは、同報リスト内の送信ポート参照のコンテナー ノードです。</span><span class="sxs-lookup"><span data-stu-id="76f8f-103">The SendPorts node of the DistributionList node of a binding file is the container node for the send port references in the distribution list.</span></span>  

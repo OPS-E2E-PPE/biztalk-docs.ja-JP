@@ -1,14 +1,14 @@
 ---
-title: "EDI ヘッダーをオーバーライドする |Microsoft ドキュメント"
-ms.custom: 
+title: EDI ヘッダーをオーバーライドする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16c19d3d-eab2-4d44-8752-25aeadb537a4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265442"
 ---
 # <a name="overriding-edi-headers"></a><span data-ttu-id="cf05c-102">EDI ヘッダーの上書き</span><span class="sxs-lookup"><span data-stu-id="cf05c-102">Overriding EDI Headers</span></span>
 <span data-ttu-id="cf05c-103">EDI エンコード インターチェンジを送信する場合、メッセージに適用される EDI エンベロープは、通常、受信アグリーメントの EDI プロパティに、またはフォールバック アグリーメントのプロパティに基づきます。</span><span class="sxs-lookup"><span data-stu-id="cf05c-103">When sending an EDI-encoded interchange, the EDI envelope applied to the message is normally based upon the EDI properties of the receiving agreement, or the fallback agreement properties.</span></span> <span data-ttu-id="cf05c-104">しかし、多くの場合、ランタイムに生成される値に基づいて EDI エンベロープ プロパティを設定すると便利です。</span><span class="sxs-lookup"><span data-stu-id="cf05c-104">However it is often useful to set the EDI envelope properties based on runtime generated values.</span></span>  

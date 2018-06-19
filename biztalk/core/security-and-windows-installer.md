@@ -1,17 +1,17 @@
 ---
-title: "セキュリティと Windows インストーラー |Microsoft ドキュメント"
-ms.custom: 
+title: セキュリティと Windows インストーラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, Windows installer
 - Windows installer
 ms.assetid: efa68c3e-2006-4665-bd41-07defaf4e2e2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269786"
 ---
 # <a name="security-and-windows-installer"></a><span data-ttu-id="5ddd7-102">セキュリティと Windows インストーラー</span><span class="sxs-lookup"><span data-stu-id="5ddd7-102">Security and Windows Installer</span></span>
 <span data-ttu-id="5ddd7-103">Windows インストーラーは、BizTalk アプリケーションをインストールおよび更新するための強力なツールです。</span><span class="sxs-lookup"><span data-stu-id="5ddd7-103">Windows Installer is a powerful tool for installing and updating BizTalk applications.</span></span> <span data-ttu-id="5ddd7-104">Windows インストーラーを使用する場合は、悪意を持って作成された Windows インストーラー (.msi) ファイルがもたらす可能性のあるセキュリティ上の問題に注意し、これを回避するための適切な措置をとる必要があります。</span><span class="sxs-lookup"><span data-stu-id="5ddd7-104">When using Windows Installer, you should be aware of the security issues that can be created by malicious Windows Installer (.msi) file creators and take steps to prevent them.</span></span>  

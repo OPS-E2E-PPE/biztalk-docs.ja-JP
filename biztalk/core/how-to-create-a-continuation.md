@@ -1,11 +1,11 @@
 ---
-title: "Continuation を作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Continuation を作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities, relating events
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - tracking profiles, continuations
 - tracking profiles, connecting activities
 ms.assetid: 31d6fc24-676e-418c-8e78-1a46b045905d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248850"
 ---
 # <a name="how-to-create-a-continuation"></a><span data-ttu-id="a7c65-102">Continuation を作成する方法</span><span class="sxs-lookup"><span data-stu-id="a7c65-102">How to Create a Continuation</span></span>
 <span data-ttu-id="a7c65-103">Continuation は、接続されたアクティビティを構築することによって、1 つ以上のオーケストレーション内のどのビジネス イベントが関連付けられているのかを示すために作成します。</span><span class="sxs-lookup"><span data-stu-id="a7c65-103">You create continuations to indicate which business events in one or more orchestrations are related by constructing connected activities.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="a7c65-113">既存の追跡プロファイルを開くか、追跡プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="a7c65-113">Open an existing tracking profile or create a tracking profile.</span></span> <span data-ttu-id="a7c65-114">追跡プロファイルを作成する方法の詳細については、次を参照してください。[追跡プロファイルを作成する方法](../core/how-to-create-a-tracking-profile.md)です。</span><span class="sxs-lookup"><span data-stu-id="a7c65-114">For information about creating a tracking profile, see [How to Create a Tracking Profile](../core/how-to-create-a-tracking-profile.md).</span></span>  
   
-2.  <span data-ttu-id="a7c65-115">識別、*継続トークン、*は両方のアクティビティに使用される固有の情報の一部であります。</span><span class="sxs-lookup"><span data-stu-id="a7c65-115">Identify a *continuation token,* which is a piece of unique information that is available to both activities.</span></span> <span data-ttu-id="a7c65-116">たとえば場合、 **CreditHistory**アクティビティがから送信されたメッセージによってアクティブ化、 **LoanProcess**内のアクティビティ、 **EquityLoan**オーケストレーションの SSN フィールド、メッセージは、両方のアクティビティに一般的になっているために、継続トークンとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="a7c65-116">For example, if a **CreditHistory** activity is activated by a message sent from a **LoanProcess** activity within an **EquityLoan**orchestration, the SSN field of the message can be used as a continuation token because it is common to both activities.</span></span>  
+2.  <span data-ttu-id="a7c65-115">識別、*継続トークン、* は両方のアクティビティに使用される固有の情報の一部であります。</span><span class="sxs-lookup"><span data-stu-id="a7c65-115">Identify a *continuation token,* which is a piece of unique information that is available to both activities.</span></span> <span data-ttu-id="a7c65-116">たとえば場合、 **CreditHistory**アクティビティがから送信されたメッセージによってアクティブ化、 **LoanProcess**内のアクティビティ、 **EquityLoan**オーケストレーションの SSN フィールド、メッセージは、両方のアクティビティに一般的になっているために、継続トークンとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="a7c65-116">For example, if a **CreditHistory** activity is activated by a message sent from a **LoanProcess** activity within an **EquityLoan**orchestration, the SSN field of the message can be used as a continuation token because it is common to both activities.</span></span>  
   
 3.  <span data-ttu-id="a7c65-117">アクティビティを右クリックし **新しい Continuation** continuation (CreditHistory) を作成します。</span><span class="sxs-lookup"><span data-stu-id="a7c65-117">Right-click the activity and then select **New Continuation** to create a continuation (CreditHistory).</span></span> <span data-ttu-id="a7c65-118">作成した Continuation のノードに名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="a7c65-118">Name the continuation node you just created.</span></span>  
   

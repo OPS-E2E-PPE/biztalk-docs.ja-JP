@@ -1,11 +1,11 @@
 ---
-title: "HTTP アダプタの構成およびチューニング パラメータ |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプタの構成およびチューニング パラメータ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, parameters
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - DisableChunkEncoding key [HTTP adapters]
 - HttpOutCompleteSize key [HTTP adapters]
 ms.assetid: c8989a88-722a-40b5-94cf-4b6840add02e
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257786"
 ---
 # <a name="http-adapter-configuration-and-tuning-parameters"></a><span data-ttu-id="46b19-102">HTTP アダプタの構成およびチューニング パラメータ</span><span class="sxs-lookup"><span data-stu-id="46b19-102">HTTP Adapter Configuration and Tuning Parameters</span></span>
 <span data-ttu-id="46b19-103">HTTP アダプタの構成およびチューニング パラメータの一部には、レジストリ キー エントリから、また BizTalk Server インストールのルート ディレクトリにある BTSNTSvc.exe.config 構成ファイルを変更することによってアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="46b19-103">Several configuration and tuning parameters are accessible for the HTTP adapter through registry key entries and through the modification of the BTSNTSvc.exe.config file that is located in the root BizTalk Server installation directory.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="46b19-108">**DisableChunkEncoding**、 **RequestQueueSize**、および**HttpReceiveThreadsPerCpu**で定義する必要があります**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc.3.0\HttpReceive**です。</span><span class="sxs-lookup"><span data-stu-id="46b19-108">**DisableChunkEncoding**, **RequestQueueSize**, and **HttpReceiveThreadsPerCpu** must be defined in **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc.3.0\HttpReceive**.</span></span>  
   
--   <span data-ttu-id="46b19-109">**HttpOutTimeoutInterval**、 **HttpOutInflightSize**、および**HttpOutCompleteSize**で定義する必要があります**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc {GUID}**場所**GUID** HTTP 送信ハンドラのホストの id を指定します。</span><span class="sxs-lookup"><span data-stu-id="46b19-109">**HttpOutTimeoutInterval**, **HttpOutInflightSize**, and **HttpOutCompleteSize** must be defined in **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc{GUID}** where **GUID** is the ID of the host for the HTTP send handler.</span></span>  
+-   <span data-ttu-id="46b19-109">**HttpOutTimeoutInterval**、 **HttpOutInflightSize**、および**HttpOutCompleteSize**で定義する必要があります**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc {GUID}** 場所**GUID** HTTP 送信ハンドラのホストの id を指定します。</span><span class="sxs-lookup"><span data-stu-id="46b19-109">**HttpOutTimeoutInterval**, **HttpOutInflightSize**, and **HttpOutCompleteSize** must be defined in **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc{GUID}** where **GUID** is the ID of the host for the HTTP send handler.</span></span>  
   
 |<span data-ttu-id="46b19-110">キー名</span><span class="sxs-lookup"><span data-stu-id="46b19-110">Key name</span></span>|<span data-ttu-id="46b19-111">型</span><span class="sxs-lookup"><span data-stu-id="46b19-111">Type</span></span>|<span data-ttu-id="46b19-112">既定値</span><span class="sxs-lookup"><span data-stu-id="46b19-112">Default</span></span>|<span data-ttu-id="46b19-113">説明</span><span class="sxs-lookup"><span data-stu-id="46b19-113">Explanation</span></span>|  
 |--------------|----------|-------------|-----------------|  

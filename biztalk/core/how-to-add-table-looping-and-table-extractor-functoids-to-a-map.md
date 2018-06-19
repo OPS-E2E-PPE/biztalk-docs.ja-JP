@@ -1,14 +1,14 @@
 ---
-title: "テーブル ループを追加し、テーブル抽出 Functoid をマップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: テーブル ループを追加し、テーブル抽出 Functoid をマップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c837ab8-55db-471a-af26-9fbd0497d7d4
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249794"
 ---
 # <a name="how-to-add-table-looping-and-table-extractor-functoids-to-a-map"></a><span data-ttu-id="e8621-102">マップにテーブル ループ Functoid およびテーブル抽出 Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="e8621-102">How to Add Table Looping and Table Extractor Functoids to a Map</span></span>
 <span data-ttu-id="e8621-103">**テーブル ループ**と**テーブル抽出**functoid は一緒に使用されます。</span><span class="sxs-lookup"><span data-stu-id="e8621-103">The **Table Looping** and **Table Extractor** functoids are used together.</span></span> <span data-ttu-id="e8621-104">**テーブル ループ**functoid が構成する内部テーブルです。</span><span class="sxs-lookup"><span data-stu-id="e8621-104">The **Table Looping** functoid has an internal table you configure.</span></span> <span data-ttu-id="e8621-105">各入力レコードまたはフィールドの**テーブル ループ**functoid は一度に 1 つずつ、テーブルの行を出力します。</span><span class="sxs-lookup"><span data-stu-id="e8621-105">For each input record or field, the **Table Looping** functoid outputs the rows of the table, one at a time.</span></span> <span data-ttu-id="e8621-106">**テーブル抽出**functoid が行から目的の項目を抽出し、出力インスタンス メッセージに渡します。</span><span class="sxs-lookup"><span data-stu-id="e8621-106">The **Table Extractor** functoid extracts the desired item from a row and passes it on to the output instance message.</span></span>  
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="e8621-156">**テーブル抽出 Functoid の構成** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e8621-156">The **Configure Table Extractor Functoid** dialog box appears.</span></span>  
   
-15. <span data-ttu-id="e8621-157">クリックして、 ![functoid への定数入力パラメーターの追加](../core/media/add-input-parameters.gif "Add_input_parameters")クリックすると、2 番目の入力パラメーターを作成します。</span><span class="sxs-lookup"><span data-stu-id="e8621-157">Click the ![Adding constant input parameters to a functoid](../core/media/add-input-parameters.gif "Add_input_parameters") button to create the second input parameter.</span></span> <span data-ttu-id="e8621-158">テーブル グリッドで、対応する列の番号を入力**テーブル ループ**functoid のデータを抽出します。</span><span class="sxs-lookup"><span data-stu-id="e8621-158">Type the number of the column in the table grid of the corresponding **Table Looping** functoid from which you want to extract data.</span></span> <span data-ttu-id="e8621-159">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e8621-159">Click **OK**.</span></span>  
+15. <span data-ttu-id="e8621-157">クリックして、 ![functoid への定数入力パラメーターの追加](../core/media/add-input-parameters.gif "Add_input_parameters")クリックすると、2 番目の入力パラメーターを作成します。</span><span class="sxs-lookup"><span data-stu-id="e8621-157">Click the ![Adding constant input parameters to a functoid](../core/media/add-input-parameters.gif "Add_input_parameters") button to create the second input parameter.</span></span> <span data-ttu-id="e8621-158">テーブル グリッドで、対応する列の番号を入力**テーブル ループ**functoid のデータを抽出します。</span><span class="sxs-lookup"><span data-stu-id="e8621-158">Type the number of the column in the table grid of the corresponding **Table Looping** functoid from which you want to extract data.</span></span> <span data-ttu-id="e8621-159">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e8621-159">Click **OK**.</span></span>  
   
      <span data-ttu-id="e8621-160">**テーブル抽出 Functoid の構成** ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e8621-160">The **Configure Table Extractor Functoid** dialog box closes.</span></span>  
   

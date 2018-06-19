@@ -1,14 +1,14 @@
 ---
-title: "トランザクション プロトコルをサポートされていません |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション プロトコルをサポートされていません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11fb2497-9971-4e85-b21a-161734f071e0
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286890"
 ---
 # <a name="unsupported-transaction-protocol"></a><span data-ttu-id="01d47-102">トランザクション プロトコルがサポートされていません</span><span class="sxs-lookup"><span data-stu-id="01d47-102">Unsupported transaction protocol</span></span>
 ## <a name="details"></a><span data-ttu-id="01d47-103">詳細</span><span class="sxs-lookup"><span data-stu-id="01d47-103">Details</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="01d47-123">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="01d47-123">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="01d47-124">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="01d47-124">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="01d47-124">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="01d47-124">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="01d47-125">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="01d47-125">In the port **Type** list, select the correct port.</span></span>  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="01d47-128">**トランザクション**セクションで、選択、**トランザクションを有効にする**オプション。</span><span class="sxs-lookup"><span data-stu-id="01d47-128">In the **Transactions** section, choose the **Enable transactions** option.</span></span>  
   
-10. <span data-ttu-id="01d47-129">**トランザクション プロトコル**ドロップダウン リストで、いずれかを選択**OleTransactions**または**[wsatomictransactions]**です。</span><span class="sxs-lookup"><span data-stu-id="01d47-129">In the **Transactions protocol** drop-down list, choose either **OleTransactions** or **WSAtomicTransactions**.</span></span>  
+10. <span data-ttu-id="01d47-129">**トランザクション プロトコル**ドロップダウン リストで、いずれかを選択**OleTransactions**または **[wsatomictransactions]** です。</span><span class="sxs-lookup"><span data-stu-id="01d47-129">In the **Transactions protocol** drop-down list, choose either **OleTransactions** or **WSAtomicTransactions**.</span></span>  
   
  <span data-ttu-id="01d47-130">これらの手順が適用されるのは、次のトランスポートの種類のみです。</span><span class="sxs-lookup"><span data-stu-id="01d47-130">These steps only apply to the following transport types:</span></span>  
   

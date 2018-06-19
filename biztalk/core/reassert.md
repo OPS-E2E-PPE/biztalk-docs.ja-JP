@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269650"
 ---
 # <a name="reassert"></a><span data-ttu-id="dfe1b-102">再アサート</span><span class="sxs-lookup"><span data-stu-id="dfe1b-102">Reassert</span></span>
 <span data-ttu-id="dfe1b-103">*Reassert*を呼び出す意味、 **Assert**エンジンに既にあるオブジェクトに対して関数の作業メモリです。</span><span class="sxs-lookup"><span data-stu-id="dfe1b-103">To *reassert* means to call the **Assert** function on an object that is already in the engine's working memory.</span></span> <span data-ttu-id="dfe1b-104">reassert コマンドは、オブジェクトに対して retract コマンドを発行し、続けて assert コマンドを発行することと同じです。</span><span class="sxs-lookup"><span data-stu-id="dfe1b-104">A reassert command is equivalent to issuing a retract command for the object, followed by an assert command.</span></span>  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8986e4a7-0c0a-415f-8a74-4fca71d3f1b5
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22232722"
 ---
 # <a name="biztalk-framework-schema-and-properties"></a><span data-ttu-id="056f5-102">BizTalk Framework スキーマおよびプロパティ</span><span class="sxs-lookup"><span data-stu-id="056f5-102">BizTalk Framework Schema and Properties</span></span>
 <span data-ttu-id="056f5-103">**http://schemas.microsoft.com/BizTalk/2003/btf2-properties**名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキストのプロパティを設定するために使用できるプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="056f5-103">The **http://schemas.microsoft.com/BizTalk/2003/btf2-properties** namespace contains properties you can use to set message and part context properties for the BizTalk Framework Disassembler pipeline component.</span></span> <span data-ttu-id="056f5-104">BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、これらのプロパティを使用して、作成されるメッセージの適切なヘッダーを生成します。</span><span class="sxs-lookup"><span data-stu-id="056f5-104">The BizTalk Framework Disassembler pipeline component uses these properties to generate the appropriate headers in the message that is created.</span></span> <span data-ttu-id="056f5-105">次の表は、BizTalk Framework のプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="056f5-105">The following table describes the BizTalk Framework properties.</span></span>  

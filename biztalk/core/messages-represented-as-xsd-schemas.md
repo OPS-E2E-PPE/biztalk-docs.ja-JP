@@ -1,18 +1,18 @@
 ---
-title: "XSD スキーマとして表されるメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: XSD スキーマとして表されるメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Message Assignment shape [Orchestration Designer], maps
 - maps, transforms
 - Expression Editor, assigning maps
 ms.assetid: 646e84d4-1dcc-4f92-9205-84cb6c7df297
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262970"
 ---
 # <a name="messages-represented-as-xsd-schemas"></a><span data-ttu-id="6c5b8-102">XSD スキーマとして表されるメッセージ</span><span class="sxs-lookup"><span data-stu-id="6c5b8-102">Messages Represented as XSD Schemas</span></span>
 <span data-ttu-id="6c5b8-103">XSD メッセージの種類のテンプレート XML インスタンスは、デザイン時に定義されてディスクに格納されます。</span><span class="sxs-lookup"><span data-stu-id="6c5b8-103">A template XML instance of the XSD message type is defined at design time and then stored on disk.</span></span> <span data-ttu-id="6c5b8-104">実行時には、XML は .NET コンポーネントによってディスクから取得され、XmlDocument として返されます。</span><span class="sxs-lookup"><span data-stu-id="6c5b8-104">At run time, a .NET component picks up the XML from disk and returns it as an XmlDocument.</span></span> <span data-ttu-id="6c5b8-105">オーケストレーション コードでは、オーケストレーションで宣言されているメッセージ インスタンスに、この XmlDocument 結果を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="6c5b8-105">The orchestration code can assign this XmlDocument result to the message instance declared in the orchestration.</span></span>  

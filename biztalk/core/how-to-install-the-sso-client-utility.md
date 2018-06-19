@@ -1,11 +1,11 @@
 ---
-title: "SSO クライアント ユーティリティをインストールする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO クライアント ユーティリティをインストールする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, SSO
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - client utility [SSO]
 - SSO, installing
 ms.assetid: e14d257e-2fde-46af-b90c-5dbc0884536b
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254250"
 ---
 # <a name="how-to-install-the-sso-client-utility"></a><span data-ttu-id="1b241-102">SSO クライアント ユーティリティをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="1b241-102">How to Install the SSO Client Utility</span></span>
 <span data-ttu-id="1b241-103">スタンドアロンの SSO クライアント ユーティリティ (コマンド ライン ユーティリティ ベースおよびユーザー インターフェイス ベース) を使用すると、エンド ユーザーが SSO データベースでクライアントのマッピングを構成できます。</span><span class="sxs-lookup"><span data-stu-id="1b241-103">The stand-alone SSO client utility (command-line utility and user interface-based) allows end users to configure their client mappings in the SSO database.</span></span> <span data-ttu-id="1b241-104">クライアント ユーティリティは、SSO 管理機能と一緒にインストールされる自己展開型ファイル (SSOClientInstall.exe) からインストールできます。</span><span class="sxs-lookup"><span data-stu-id="1b241-104">You can install the client utility from a self-extracting file (SSOClientInstall.exe) which is installed with the SSO administration feature.</span></span> <span data-ttu-id="1b241-105">管理者は、ネットワーク共有上にインストーラ パッケージのコピーを配置することで、クライアント ユーザーがインストーラ パッケージを使用できるようにすることもできます。</span><span class="sxs-lookup"><span data-stu-id="1b241-105">Administrators can also make the installer package available to client users by placing a copy of the installer package on a network share.</span></span>  

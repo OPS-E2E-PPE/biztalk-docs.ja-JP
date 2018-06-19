@@ -1,14 +1,14 @@
 ---
-title: "Web サービスのアクセス許可の問題を解決するためのガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスのアクセス許可の問題を解決するためのガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e29543e9-9b87-437b-ac91-8f1cce01fab4
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246778"
 ---
 # <a name="guidelines-for-resolving-web-services-permissions-problems"></a><span data-ttu-id="794ef-102">Web サービスの権限の問題を解決するためのガイドライン</span><span class="sxs-lookup"><span data-stu-id="794ef-102">Guidelines for Resolving Web Services Permissions Problems</span></span>
 <span data-ttu-id="794ef-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には Web サービスが広く採用され、SOAP アダプターで使用したり、オーケストレーションを Web サービスとして公開したりできるようになっています。</span><span class="sxs-lookup"><span data-stu-id="794ef-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] makes extensive use of Web services for use with the SOAP adapter and when publishing orchestrations as Web services.</span></span> <span data-ttu-id="794ef-104">このトピックでは、Web サービスのアクセス許可の問題を最小限に抑えるための一般的なガイドラインを提供し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に影響を与える Web サービスのアクセス許可の問題をトラブルシューティングするための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="794ef-104">This topic provides some general guidelines for minimizing Web services permissions problems and steps that you can follow to troubleshoot Web services permissions problems that affect [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

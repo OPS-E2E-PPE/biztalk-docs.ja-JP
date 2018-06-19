@@ -1,11 +1,11 @@
 ---
-title: "スケジュールを構成する方法、受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: スケジュールを構成する方法、受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, receive locations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - scheduling, receive locations
 - managing [receive locations], configuring
 ms.assetid: 2653e1c3-ddbd-4d3f-be64-2a5fcd7cf267
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248706"
 ---
 # <a name="how-to-configure-scheduling-for-a-receive-location"></a><span data-ttu-id="dc944-102">受信場所のスケジュールを構成する方法</span><span class="sxs-lookup"><span data-stu-id="dc944-102">How to Configure Scheduling for a Receive Location</span></span>
 <span data-ttu-id="dc944-103">このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所のスケジュール プロパティを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="dc944-103">This topic describes how to use the BizTalk Server Administration console to configure scheduling properties for a receive location.</span></span> <span data-ttu-id="dc944-104">受信場所がメッセージの処理を開始および停止する日付を指定できます。</span><span class="sxs-lookup"><span data-stu-id="dc944-104">You can specify the dates when you want the receive location to start and stop processing messages.</span></span> <span data-ttu-id="dc944-105">また、1 日の中で、受信場所がメッセージを処理する特定の時間を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="dc944-105">You can also specify certain times of the day during which you want the receive location to process messages.</span></span>  

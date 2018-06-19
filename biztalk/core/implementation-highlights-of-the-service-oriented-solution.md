@@ -1,18 +1,18 @@
 ---
-title: "サービスの実装の要点指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サービスの実装の要点指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, performance
 - performance, service solutions
 - service solution tutorial, implementing
 ms.assetid: 3dbd8dfd-45b7-4290-ba07-b0c5e6264629
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257754"
 ---
 # <a name="implementation-highlights-of-the-service-oriented-solution"></a><span data-ttu-id="d32c1-102">指向ソリューションのサービスの実装の要点</span><span class="sxs-lookup"><span data-stu-id="d32c1-102">Implementation Highlights of the Service Oriented Solution</span></span>
 <span data-ttu-id="d32c1-103">ソリューションは、特定のコンテキストの特定の問題を解決します。</span><span class="sxs-lookup"><span data-stu-id="d32c1-103">A solution solves a particular problem in a specific context.</span></span> <span data-ttu-id="d32c1-104">サービス指向ソリューションも例外ではなく、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] とそのシナリオに固有のソリューションです。</span><span class="sxs-lookup"><span data-stu-id="d32c1-104">The Service Oriented solution is no exception and is specific to Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the scenario.</span></span> <span data-ttu-id="d32c1-105">Woodgrove Bank シナリオの詳細については、次を参照してください。[サービス指向ソリューションを理解する](../core/understanding-the-service-oriented-solution.md)です。</span><span class="sxs-lookup"><span data-stu-id="d32c1-105">For more information about the Woodgrove Bank scenario, see [Understanding the Service Oriented Solution](../core/understanding-the-service-oriented-solution.md).</span></span>  

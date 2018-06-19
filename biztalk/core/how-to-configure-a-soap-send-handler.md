@@ -1,11 +1,11 @@
 ---
-title: "SOAP 送信ハンドラーを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP 送信ハンドラーを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send handlers, SOAP adapters
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - SOAP adapters, send handlers
 - denial of service, SOAP adapters
 ms.assetid: fd610a3f-ca10-42e0-b81e-219e07e33830
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248242"
 ---
 # <a name="how-to-configure-a-soap-send-handler"></a><span data-ttu-id="c8163-102">SOAP 送信ハンドラーを構成する方法</span><span class="sxs-lookup"><span data-stu-id="c8163-102">How to Configure a SOAP Send Handler</span></span>
 <span data-ttu-id="c8163-103">次の手順を実行して、SOAP 送信ハンドラーを構成します。</span><span class="sxs-lookup"><span data-stu-id="c8163-103">Use the following procedure to configure the SOAP send handler.</span></span>  
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="c8163-127">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="c8163-127">**User name**</span></span>|<span data-ttu-id="c8163-128">認証に使用するユーザー名を指定します。</span><span class="sxs-lookup"><span data-stu-id="c8163-128">Specify the user name to use for authentication.</span></span><br /><br /> <span data-ttu-id="c8163-129">場合にこのプロパティが値にのみ必要と**プロキシを使用して**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="c8163-129">This property only requires a value if **Use proxy** is selected.</span></span><br /><br /> <span data-ttu-id="c8163-130">型:文字列</span><span class="sxs-lookup"><span data-stu-id="c8163-130">Type: String</span></span><br /><br /> <span data-ttu-id="c8163-131">最小長: 0</span><span class="sxs-lookup"><span data-stu-id="c8163-131">Minimum length: 0</span></span><br /><br /> <span data-ttu-id="c8163-132">最大長: 256</span><span class="sxs-lookup"><span data-stu-id="c8163-132">Maximum length: 256</span></span>|  
     |<span data-ttu-id="c8163-133">**Password**</span><span class="sxs-lookup"><span data-stu-id="c8163-133">**Password**</span></span>|<span data-ttu-id="c8163-134">認証に使用するパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="c8163-134">Specify the password to use for authentication.</span></span><br /><br /> <span data-ttu-id="c8163-135">場合にこのプロパティが値にのみ必要と**プロキシを使用して**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="c8163-135">This property only requires a value if **Use proxy** is selected.</span></span><br /><br /> <span data-ttu-id="c8163-136">型:文字列</span><span class="sxs-lookup"><span data-stu-id="c8163-136">Type: String</span></span><br /><br /> <span data-ttu-id="c8163-137">最小長: 0</span><span class="sxs-lookup"><span data-stu-id="c8163-137">Minimum length: 0</span></span><br /><br /> <span data-ttu-id="c8163-138">最大長: 256</span><span class="sxs-lookup"><span data-stu-id="c8163-138">Maximum length: 256</span></span>|  
   
-5.  <span data-ttu-id="c8163-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8163-139">Click **OK**.</span></span>  
+5.  <span data-ttu-id="c8163-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8163-139">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c8163-140">参照</span><span class="sxs-lookup"><span data-stu-id="c8163-140">See Also</span></span>  
  <span data-ttu-id="c8163-141">[SOAP アダプターの構成](../core/configuring-the-soap-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="c8163-141">[Configuring the SOAP Adapter](../core/configuring-the-soap-adapter.md) </span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "メッセージング イベント ストリーム |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージング イベント ストリーム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2dc56aff-c093-4c79-9cc7-f72079ee927f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262786"
 ---
 # <a name="messaging-event-streams"></a><span data-ttu-id="6c9fa-102">メッセージング イベント ストリーム</span><span class="sxs-lookup"><span data-stu-id="6c9fa-102">Messaging Event Streams</span></span>
 <span data-ttu-id="6c9fa-103">メッセージング イベント ストリーム (MES) は、BizTalk Server がインストールされているコンピューターでアプリケーションを実行し、BizTalk パイプライン トランザクションの一部である項目を追跡する場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="6c9fa-103">You use Messaging Event Streams (MES) when your application runs on a computer on which BizTalk Server is installed and you are you are tracking items that are part of BizTalk pipeline transactions.</span></span> <span data-ttu-id="6c9fa-104">MES を使用すると、BAM イベントの永続化と BizTalk パイプライン トランザクションとの同期を維持することができます。</span><span class="sxs-lookup"><span data-stu-id="6c9fa-104">Using MES ensures that your BAM event persistence remains in sync with the BizTalk pipeline transactions.</span></span>  

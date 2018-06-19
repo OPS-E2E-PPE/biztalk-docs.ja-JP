@@ -1,17 +1,17 @@
 ---
-title: "リンクを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: リンクを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, links
 - BizTalk Mapper, links
 ms.assetid: e8596c50-62e9-40a7-ad61-29cbdb4f4fc9
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238570"
 ---
 # <a name="creating-links"></a><span data-ttu-id="44507-102">リンクを作成します。</span><span class="sxs-lookup"><span data-stu-id="44507-102">Creating Links</span></span>
 <span data-ttu-id="44507-103">BizTalk マッパーを使用すると、リンク作成に関連する一部の要素を自動化できます。</span><span class="sxs-lookup"><span data-stu-id="44507-103">BizTalk Mapper helps you automate some elements involved in link creation.</span></span> <span data-ttu-id="44507-104">簡易リンク作成は、単純なデータ型に似ています。</span><span class="sxs-lookup"><span data-stu-id="44507-104">Simple link creation is similar to simple data types.</span></span> <span data-ttu-id="44507-105">プログラミング言語の構造の割り当てに似ている高度な形式のリンク作成もあります。</span><span class="sxs-lookup"><span data-stu-id="44507-105">There are more sophisticated forms of link creation that are more like structure assignment in a programming language.</span></span> <span data-ttu-id="44507-106">たとえば、入力インスタンス メッセージから対応する出力インスタンス メッセージに複数の項目のデータを移動する方法を指定するリンク作成などがあります。</span><span class="sxs-lookup"><span data-stu-id="44507-106">An example is a single link creation that specifies how multiple items of data are to be moved from input instance messages to corresponding output instance messages.</span></span>  

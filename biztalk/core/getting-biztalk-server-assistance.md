@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server の参考資料の取得 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の参考資料の取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - help for BizTalk Server
 - BizTalk Server, getting help
 ms.assetid: 99d23c71-18c6-4342-b5d7-3426dc44835e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247138"
 ---
 # <a name="getting-biztalk-server-assistance"></a><span data-ttu-id="f563d-102">BizTalk Server の参考資料の入手</span><span class="sxs-lookup"><span data-stu-id="f563d-102">Getting BizTalk Server Assistance</span></span>
 <span data-ttu-id="f563d-103">マイクロソフトでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に関して主に 3 つの情報源を提供しています。</span><span class="sxs-lookup"><span data-stu-id="f563d-103">There are three principal sources of information from Microsoft about [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:</span></span>  

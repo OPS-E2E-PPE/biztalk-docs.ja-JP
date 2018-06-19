@@ -1,18 +1,18 @@
 ---
-title: "ポリシーのファクト取得コンポーネントを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーのファクト取得コンポーネントを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rule Composer, policies
 - Business Rule Composer, facts
 - policies, facts
 ms.assetid: a7bcf3e5-3f28-4f0e-b112-8c97dee072a1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247098"
 ---
 # <a name="how-to-configure-a-fact-retriever-for-a-policy"></a><span data-ttu-id="c24d8-102">ポリシーのファクト取得コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="c24d8-102">How to Configure a Fact Retriever for a Policy</span></span>
 <span data-ttu-id="c24d8-103">変更される頻度の低いファクトを保存しておくことができます。ホスト アプリケーションの初回実行サイクルの前に、これらのファクトをストレージから取得し、1 度だけルール エンジンに適用することにより、それ以降の複数の実行サイクルで、キャッシュされたファクトが再利用されます。</span><span class="sxs-lookup"><span data-stu-id="c24d8-103">You can store facts that do not change frequently, and then before the first execution cycle of your host application, you can retrieve these facts from storage, present them once to the rule engine for caching, and reuse them over multiple execution cycles.</span></span>  

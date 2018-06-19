@@ -1,14 +1,14 @@
 ---
-title: "マップなしのマップを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マップなしのマップを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 520ec44f-5aca-4271-8835-b8e784214061
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248794"
 ---
 # <a name="how-to-create-a-map-without-maps"></a><span data-ttu-id="7a6ef-102">マップを使用しないでマップを作成する方法</span><span class="sxs-lookup"><span data-stu-id="7a6ef-102">How to Create a Map without Maps</span></span>
 <span data-ttu-id="7a6ef-103">インスタンス メッセージを変換するための XSLT コードが既に手元にある場合は、マップを作成する代わりに、XSLT コードを使って直接データを変換できます。</span><span class="sxs-lookup"><span data-stu-id="7a6ef-103">If you have XSLT code you have been using to convert instance messages, you can use that code directly instead of creating a map.</span></span>  

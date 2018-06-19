@@ -1,14 +1,14 @@
 ---
-title: "解析中にエラーが発生しました。 Edifact インターチェンジの次のエラーが発生しました |Microsoft ドキュメント"
-ms.custom: 
+title: 解析中にエラーが発生しました。 Edifact インターチェンジの次のエラーが発生しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fa8f9d5-5b7c-47c9-96d3-77be280b78e9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241138"
 ---
 # <a name="error-encountered-during-parsing-the-edifact-interchange-had-the-following-errors"></a><span data-ttu-id="8d503-103">解析中にエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="8d503-103">Error encountered during parsing.</span></span> <span data-ttu-id="8d503-104">EDIFACT インターチェンジに次のエラーがありました</span><span class="sxs-lookup"><span data-stu-id="8d503-104">The Edifact interchange had the following errors</span></span>
 ## <a name="details"></a><span data-ttu-id="8d503-105">詳細</span><span class="sxs-lookup"><span data-stu-id="8d503-105">Details</span></span>  

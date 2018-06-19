@@ -1,14 +1,14 @@
 ---
-title: "テスト環境でメッセージ ボックス データベースからデータを手動で削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: テスト環境でメッセージ ボックス データベースからデータを手動で削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 398991a9-344a-487a-a817-dfc97d48ebe6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254058"
 ---
 # <a name="how-to-manually-purge-data-from-the-messagebox-database-in-a-test-environment"></a><span data-ttu-id="e0709-102">テスト環境でメッセージ ボックス データベースから手動でデータを削除する方法</span><span class="sxs-lookup"><span data-stu-id="e0709-102">How to Manually Purge Data from the MessageBox Database in a Test Environment</span></span>
 <span data-ttu-id="e0709-103">開発環境またはテスト環境で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行する場合、メッセージ ボックス データベースに格納されているデータは、通常、ビジネスで重要な "実際の" データではないので、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="e0709-103">When running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in a development or test environment, data that is stored in the MessageBox database is not usually business critical "live" data and therefore may be deleted.</span></span> <span data-ttu-id="e0709-104">このようなシナリオでは、メッセージ ボックス データベースからデータを削除するための簡単な方法が必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e0709-104">In these scenarios, you may need a "quick and dirty" method for purging data from the MessageBox database.</span></span> <span data-ttu-id="e0709-105">bts_CleanupMsgbox ストアド プロシージャを使用して、メッセージ ボックス データベースから手動でデータを削除するには、このトピックの手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e0709-105">Follow the procedures in this topic to manually purge data from the MessageBox database using the bts_CleanupMsgbox stored procedure.</span></span>  

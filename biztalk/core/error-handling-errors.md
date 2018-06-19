@@ -1,14 +1,14 @@
 ---
-title: "エラーの処理エラー |Microsoft ドキュメント"
-ms.custom: 
+title: エラーの処理エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 602be8a5-1f28-457d-8e12-ba06cff65491
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240826"
 ---
 # <a name="error-handling-errors"></a><span data-ttu-id="28d16-102">エラー処理エラー</span><span class="sxs-lookup"><span data-stu-id="28d16-102">Error Handling Errors</span></span>
 <span data-ttu-id="28d16-103">診断および WCF エラー処理のエラーを解決するための情報です。</span><span class="sxs-lookup"><span data-stu-id="28d16-103">Information for diagnosing and resolving WCF Error Handling errors.</span></span>  
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="28d16-129">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="28d16-129">In the port **Type** list, select the correct port.</span></span>  
   
-7.  <span data-ttu-id="28d16-130">**[構成]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="28d16-130">Select **Configure**.</span></span>  
+7.  <span data-ttu-id="28d16-130">**[構成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="28d16-130">Select **Configure**.</span></span>  
   
 8.  <span data-ttu-id="28d16-131">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、**メッセージ**タブです。</span><span class="sxs-lookup"><span data-stu-id="28d16-131">In the **WCF [***transport type***] Transport Properties** dialog box, select the **Messages** tab.</span></span>  
   

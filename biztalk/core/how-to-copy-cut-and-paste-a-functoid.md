@@ -1,14 +1,14 @@
 ---
-title: "コピー、切り取り、および Functoid を貼り付けする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: コピー、切り取り、および Functoid を貼り付けする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 825847e4-87db-4b40-8e5d-5b5b1c79c6de
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249530"
 ---
 # <a name="how-to-copy-cut-and-paste-a-functoid"></a><span data-ttu-id="6b976-102">コピー、切り取り、および貼り付けする方法について</span><span class="sxs-lookup"><span data-stu-id="6b976-102">How to Copy, Cut, and Paste a Functoid</span></span>
 <span data-ttu-id="6b976-103">BizTalk マッパーのコピー機能、切り取り機能、および貼り付け機能により、Functoid を再利用できます。</span><span class="sxs-lookup"><span data-stu-id="6b976-103">The copy/cut/paste feature in the BizTalk Mapper enables the reusability of functoids.</span></span> <span data-ttu-id="6b976-104">マップで、1 つ以上の Functoid をあるグリッド ページから別のグリッド ページにコピー、切り取り、および貼り付けることができます。</span><span class="sxs-lookup"><span data-stu-id="6b976-104">In a map, you can copy, cut, and paste one or more functoids from one grid page to another.</span></span> <span data-ttu-id="6b976-105">このトピックでは、これらの操作を実行するための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="6b976-105">This topic provides step-by-step instructions to perform these operations.</span></span>  

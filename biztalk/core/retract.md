@@ -1,11 +1,11 @@
 ---
-title: "取り消し |Microsoft ドキュメント"
-ms.custom: 
+title: 取り消し |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Retract function [Business Rules Engine], TypedData table
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Retract function [Business Rules Engine], .NET objects
 - .NET objects
 ms.assetid: 24b6b894-6810-4497-a122-8c91f0b2e816
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270114"
 ---
 # <a name="retract"></a><span data-ttu-id="44f13-102">取り消し</span><span class="sxs-lookup"><span data-stu-id="44f13-102">Retract</span></span>
 <span data-ttu-id="44f13-103">使用することができます、 **Retract**関数をビジネス ルール エンジンの作業メモリからオブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="44f13-103">You can use the **Retract** function to remove objects from the Business Rule Engine's working memory.</span></span> <span data-ttu-id="44f13-104">ここでは、ルール エンジンの作業メモリからさまざまな種類のエンティティを取り消す操作に関係する動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="44f13-104">The following paragraphs describe the behavior associated with retracting entities of different types from the rule engine's working memory.</span></span>  

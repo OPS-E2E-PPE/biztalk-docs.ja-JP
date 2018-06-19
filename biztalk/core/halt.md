@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246098"
 ---
 # <a name="halt"></a><span data-ttu-id="cbe1c-102">停止</span><span class="sxs-lookup"><span data-stu-id="cbe1c-102">Halt</span></span>
 <span data-ttu-id="cbe1c-103">使用することができます、**停止**ルール エンジンの現在の実行を停止するように機能します。</span><span class="sxs-lookup"><span data-stu-id="cbe1c-103">You can use the **Halt** function to halt the current rule engine execution.</span></span> <span data-ttu-id="cbe1c-104">**停止**関数型のパラメーターを 1 つ取ります`Boolean`です。</span><span class="sxs-lookup"><span data-stu-id="cbe1c-104">The **Halt** function takes one parameter of type `Boolean`.</span></span> <span data-ttu-id="cbe1c-105">パラメーターの値を `true` に指定すると、ルール エンジンは保留候補ルールを含む議題もクリアします。</span><span class="sxs-lookup"><span data-stu-id="cbe1c-105">If you specify the value for the parameter as `true`, the rule engine also clears the agenda that contains the pending candidate rules.</span></span>  

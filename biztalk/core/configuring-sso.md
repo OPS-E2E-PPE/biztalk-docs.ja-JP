@@ -1,11 +1,11 @@
 ---
-title: "SSO の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, command line utilities
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - SSO, tools
 - SSOManage [SSO]
 ms.assetid: 6f755735-9b48-4771-beec-ced844f3d532
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233042"
 ---
 # <a name="configuring-sso"></a><span data-ttu-id="2c783-102">SSO を構成します。</span><span class="sxs-lookup"><span data-stu-id="2c783-102">Configuring SSO</span></span>
 <span data-ttu-id="2c783-103">コマンド ライン ユーティリティ、UI ツール、または COM インターフェイスか Microsoft .NET インターフェイスを使用して、エンタープライズ シングル サインオンを構成できます。</span><span class="sxs-lookup"><span data-stu-id="2c783-103">You can configure Enterprise Single Sign-On by using command line utilities, UI tools, or COM or Microsoft .NET interfaces.</span></span>  

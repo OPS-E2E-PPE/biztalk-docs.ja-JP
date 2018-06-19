@@ -1,14 +1,14 @@
 ---
-title: "Nil 値 Functoid |Microsoft ドキュメント"
-ms.custom: 
+title: Nil 値 Functoid |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0b7fdcc-f77c-4f6d-958f-a4978d94fc73
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262914"
 ---
 # <a name="nil-value-functoid"></a><span data-ttu-id="54eef-102">Nil 値 Functoid</span><span class="sxs-lookup"><span data-stu-id="54eef-102">Nil Value Functoid</span></span>
 

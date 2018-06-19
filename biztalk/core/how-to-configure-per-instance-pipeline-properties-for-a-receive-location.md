@@ -1,11 +1,11 @@
 ---
-title: "インスタンスごとのパイプライン プロパティを構成する方法、受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンスごとのパイプライン プロパティを構成する方法、受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, properties
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - receive locations, pipelines
 - managing [receive locations], configuring
 ms.assetid: e1ed3b10-2f39-479b-a3e6-22b4b2872192
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248842"
 ---
 # <a name="how-to-configure-per-instance-pipeline-properties-for-a-receive-location"></a><span data-ttu-id="f5394-102">受信場所のインスタンスごとにパイプライン プロパティを構成する方法</span><span class="sxs-lookup"><span data-stu-id="f5394-102">How to Configure Per-instance Pipeline Properties for a Receive Location</span></span>
 <span data-ttu-id="f5394-103">このトピックでは、BizTalk グループにパイプラインを展開した後、BizTalk Server 管理コンソールを使用して受信場所のパイプライン プロパティを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f5394-103">This topic describes how to use the BizTalk Server Administration console to configure pipeline properties for a receive location after the pipeline has been deployed into a BizTalk group.</span></span> <span data-ttu-id="f5394-104">受信場所のパイプライン プロパティを変更した場合、その受信場所についてのみ、既定のパイプライン プロパティが上書きされます。したがって、BizTalk グループに含まれる各受信場所について、それぞれ異なるパイプライン プロパティを構成することも可能です。</span><span class="sxs-lookup"><span data-stu-id="f5394-104">Changes that you make overwrite the default pipeline properties for this receive location only, so if you want, you can configure different pipeline properties for each receive location in the BizTalk group.</span></span>  

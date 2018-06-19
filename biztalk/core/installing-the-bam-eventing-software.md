@@ -1,14 +1,14 @@
 ---
-title: "BAM イベント ソフトウェアをインストールする |Microsoft ドキュメント"
-ms.custom: 
+title: BAM イベント ソフトウェアをインストールする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3638d34-f5a8-4ffd-99eb-d38aed4c0732
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257450"
 ---
 # <a name="installing-the-bam-eventing-software"></a><span data-ttu-id="9cbbd-102">BAM イベント ソフトウェアのインストール</span><span class="sxs-lookup"><span data-stu-id="9cbbd-102">Installing the BAM-Eventing Software</span></span>
 <span data-ttu-id="9cbbd-103">BAM イベント API を使用する BAM ソリューションを実装するか、または Windows Workflow Foundation 用に BAM インターセプターを使用するように Windows Workflow Foundation または Windows Communication Foundation アプリケーションを構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使って BAM イベント ソフトウェアをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-103">To implement BAM solutions using the BAM eventing APIs or configure your Windows Workflow Foundation or Windows Communication Foundation application to use the BAM interceptor for Windows Workflow Foundation, you must install the BAM-Eventing software by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Setup program.</span></span> <span data-ttu-id="9cbbd-104">このソフトウェアは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムの一部としてインストールするか、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ アプリケーションで [追加ソフトウェア] の [BAM イベント サポート] を選択して単独でインストールできます。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-104">This software can be installed as part of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime or separately by selecting BAM Eventing Support under Additional Software in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup application.</span></span>  
@@ -31,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="9cbbd-110">展開**追加のソフトウェア**、クリックして、 **BAM イベント**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-110">Expand **Additional Software**, and then select the **BAM-Eventing** check box.</span></span>  
   
-5.  <span data-ttu-id="9cbbd-111">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-111">Click **Next**.</span></span>  
+5.  <span data-ttu-id="9cbbd-111">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-111">Click **Next**.</span></span>  
   
-6.  <span data-ttu-id="9cbbd-112">**[インストール]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-112">Click **Install**.</span></span>  
+6.  <span data-ttu-id="9cbbd-112">**[インストール]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-112">Click **Install**.</span></span>  
   
 7.  <span data-ttu-id="9cbbd-113">インストール手順が完了したらをクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9cbbd-113">When the installation procedure is complete, click **OK**.</span></span>  
   
