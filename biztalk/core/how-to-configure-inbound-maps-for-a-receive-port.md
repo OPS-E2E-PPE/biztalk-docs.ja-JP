@@ -1,11 +1,11 @@
 ---
-title: "受信マップを構成する方法、受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 受信マップを構成する方法、受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], configuring
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - maps, inbound
 - managing [receive ports], inbound maps
 ms.assetid: b7448b39-f024-4353-818b-f753c2d60751
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248306"
 ---
 # <a name="how-to-configure-inbound-maps-for-a-receive-port"></a><span data-ttu-id="5ba37-102">受信ポートの受信マップを構成する方法</span><span class="sxs-lookup"><span data-stu-id="5ba37-102">How to Configure Inbound Maps for a Receive Port</span></span>
 <span data-ttu-id="5ba37-103">このトピックでは、BizTalk Server 管理コンソールを使用して、受信ポートの受信マップを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5ba37-103">This topic describes how to use the BizTalk Server Administration console to configure inbound maps for a receive port.</span></span> <span data-ttu-id="5ba37-104">受信マップを使用すると、受信メッセージのスキーマを別のスキーマに変換できます。たとえば、パートナーから受信したメッセージを、自社で使用されているスキーマに変換することが可能となります。</span><span class="sxs-lookup"><span data-stu-id="5ba37-104">You use inbound maps to transform inbound messages from one schema to another; for example to transform messages received from a partner into a schema that your company uses.</span></span>  

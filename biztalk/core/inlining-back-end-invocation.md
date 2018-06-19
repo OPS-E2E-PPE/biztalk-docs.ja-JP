@@ -1,11 +1,11 @@
 ---
-title: "バック エンド呼び出しのインライン展開 |Microsoft ドキュメント"
-ms.custom: 
+title: バック エンド呼び出しのインライン展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MessageBox database, performance
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Inline Invocation of Back-End Processes [service solutions], performance
 - performance, MessageBox database
 ms.assetid: 991d080f-a4cc-4f14-bab3-3b8b74636daf
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257186"
 ---
 # <a name="inlining-back-end-invocation"></a><span data-ttu-id="6e5d2-102">バック エンド呼び出しのインライン展開</span><span class="sxs-lookup"><span data-stu-id="6e5d2-102">Inlining Back-end Invocation</span></span>
 <span data-ttu-id="6e5d2-103">完全ソリューションのインライン呼び出しバージョンでは、処理時間の短縮が可能になります。</span><span class="sxs-lookup"><span data-stu-id="6e5d2-103">The inline call version, of the full solutions, provides the fastest processing times.</span></span> <span data-ttu-id="6e5d2-104">インライン バージョンでは、メッセージ ボックス データベースにおいてバックエンド システムに対する要求および応答メッセージを維持するオーバーヘッドがありません。</span><span class="sxs-lookup"><span data-stu-id="6e5d2-104">The inline version eliminates the overhead of persisting the request and response messages to and from the backend systems in the MessageBox database.</span></span> <span data-ttu-id="6e5d2-105">アダプタ バージョンでは、メッセージは送信オーケストレーションからメッセージ ボックスに送信されます。</span><span class="sxs-lookup"><span data-stu-id="6e5d2-105">In the adapter version, the message goes from the sending orchestration to the MessageBox.</span></span> <span data-ttu-id="6e5d2-106">アダプタを実行するホストがメッセージを受け取ってバックエンド プロセスに送信しますが、このとき、メッセージがメッセージ ボックスに再度送信されます。</span><span class="sxs-lookup"><span data-stu-id="6e5d2-106">The host running the adapter picks up the message, and sends the message to the back-end process by again posting it to the message box.</span></span>  

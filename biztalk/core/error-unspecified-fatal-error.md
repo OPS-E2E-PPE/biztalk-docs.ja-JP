@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240810"
 ---
 # <a name="error---unspecified-fatal-error"></a><span data-ttu-id="d3f5f-102">エラー - 特定できない致命的なエラー</span><span class="sxs-lookup"><span data-stu-id="d3f5f-102">Error - Unspecified Fatal Error</span></span>
 <span data-ttu-id="d3f5f-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="d3f5f-103">**Error Code**</span></span>  

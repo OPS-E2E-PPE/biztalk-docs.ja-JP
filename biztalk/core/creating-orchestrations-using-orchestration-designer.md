@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション デザイナーを使用してオーケストレーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション デザイナーを使用してオーケストレーションの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, Orchestration Designer
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, creating
 - creating, orchestrations
 ms.assetid: 622423f0-372d-4f56-bcf1-e5775189ad45
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238066"
 ---
 # <a name="creating-orchestrations-using-orchestration-designer"></a><span data-ttu-id="9b0ce-102">オーケストレーション デザイナーを使用してオーケストレーションの作成</span><span class="sxs-lookup"><span data-stu-id="9b0ce-102">Creating Orchestrations Using Orchestration Designer</span></span>
 <span data-ttu-id="9b0ce-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ワークフローでのオーケストレーション</span><span class="sxs-lookup"><span data-stu-id="9b0ce-103">Orchestration in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] workflow</span></span>  

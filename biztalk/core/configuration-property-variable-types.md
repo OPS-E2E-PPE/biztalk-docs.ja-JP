@@ -1,11 +1,11 @@
 ---
-title: "構成プロパティの変数の型 |Microsoft ドキュメント"
-ms.custom: 
+title: 構成プロパティの変数の型 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - binding files, data types
 - adapters, data types
 ms.assetid: 703219ce-e275-4a07-a2ad-28010d8363e6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232810"
 ---
 # <a name="configuration-property-variable-types"></a><span data-ttu-id="0979b-102">構成プロパティの変数の型</span><span class="sxs-lookup"><span data-stu-id="0979b-102">Configuration Property Variable Types</span></span>
 <span data-ttu-id="0979b-103">バインド ファイルの TransportTypeData\CustomProps ノードのアダプター構成プロパティは、.NET Framework の VarEnum 列挙で使用できるデータ型に従います。</span><span class="sxs-lookup"><span data-stu-id="0979b-103">The adapter configuration properties in a TransportTypeData\CustomProps node of a binding file adhere to the data types available in the .NET Framework VarEnum enumeration.</span></span> <span data-ttu-id="0979b-104">該当するデータ型を以下の表に示します。</span><span class="sxs-lookup"><span data-stu-id="0979b-104">Relevant data types are listed in the table below:</span></span>  

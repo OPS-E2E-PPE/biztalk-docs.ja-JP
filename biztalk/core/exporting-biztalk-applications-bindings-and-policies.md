@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーション、バインド、およびポリシーのエクスポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーション、バインド、およびポリシーのエクスポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, exporting
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - applications, exporting
 - exporting, bindings
 ms.assetid: ac101206-be49-47c9-a354-4f39e8b77acf
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245810"
 ---
 # <a name="exporting-biztalk-applications-bindings-and-policies"></a><span data-ttu-id="8bedc-102">BizTalk アプリケーション、バインド、およびポリシーのエクスポート</span><span class="sxs-lookup"><span data-stu-id="8bedc-102">Exporting BizTalk Applications, Bindings, and Policies</span></span>
 <span data-ttu-id="8bedc-103">ここでは、BizTalk アプリケーション、バインド、またはポリシーをエクスポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8bedc-103">This section describes how to export a BizTalk application, bindings, or policies.</span></span> <span data-ttu-id="8bedc-104">BizTalk アプリケーションに含まれるアイテムの一部またはすべてをエクスポートすることも、バインドまたはポリシーだけをエクスポートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="8bedc-104">You can export some or all of the artifacts contained in a BizTalk application, or you can export only its bindings or policies.</span></span> <span data-ttu-id="8bedc-105">アプリケーションをエクスポートすると、Windows インストーラー (.msi) ファイルが作成されます。このファイルには、エクスポートするよう選択したアプリケーションのアイテムが含まれます。</span><span class="sxs-lookup"><span data-stu-id="8bedc-105">Exporting an application creates a Windows Installer (.msi) file containing the application artifacts that you selected for export.</span></span> <span data-ttu-id="8bedc-106">バインドまたはポリシーをエクスポートすると、バインドまたはポリシーの .xml ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="8bedc-106">Exporting bindings or policies creates an .xml file of the bindings or policies.</span></span> <span data-ttu-id="8bedc-107">このプロセスの基礎知識については、次を参照してください。[発生時に成果物はエクスポート内容](../core/what-happens-when-artifacts-are-exported.md)です。</span><span class="sxs-lookup"><span data-stu-id="8bedc-107">For background information on this process, see [What Happens When Artifacts Are Exported](../core/what-happens-when-artifacts-are-exported.md).</span></span>  

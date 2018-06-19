@@ -1,11 +1,11 @@
 ---
-title: "関連付けセットを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 関連付けセットを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - correlation sets, send activities
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - correlation sets, configuring
 - correlation types, assigning
 ms.assetid: 060bf2ba-c173-4dca-a8c4-4c5341e5ceaa
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248170"
 ---
 # <a name="how-to-configure-correlation-sets"></a><span data-ttu-id="e1a58-102">関連付けセットを構成する方法</span><span class="sxs-lookup"><span data-stu-id="e1a58-102">How to Configure Correlation Sets</span></span>
 <span data-ttu-id="e1a58-103">関連付けセットを構成するには、既存の関連付けの種類を選択し、新しい関連付けの種類を作成するか、既存の関連付けの種類を変更します。</span><span class="sxs-lookup"><span data-stu-id="e1a58-103">To configure your correlation set, you can select an existing correlation type, create a new correlation type, or modify an existing correlation type.</span></span>  

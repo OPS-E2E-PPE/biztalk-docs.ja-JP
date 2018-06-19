@@ -1,14 +1,14 @@
 ---
-title: "区切り記号が一意ではない、セグメントとコンポーネントの区切り記号は、同じ |Microsoft ドキュメント"
-ms.custom: 
+title: 区切り記号が一意ではない、セグメントとコンポーネントの区切り記号は、同じ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 13c41899-02af-4678-a4ad-f3dc48c1fdfb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238442"
 ---
 # <a name="delimiters-are-not-unique-segment-and-component-separators-are-the-same"></a><span data-ttu-id="b31e6-102">区切り記号が一意ではなく、セグメントとコンポーネントの区切り記号が同じです</span><span class="sxs-lookup"><span data-stu-id="b31e6-102">Delimiters are not unique, segment and component separators are the same</span></span>
 ## <a name="details"></a><span data-ttu-id="b31e6-103">詳細</span><span class="sxs-lookup"><span data-stu-id="b31e6-103">Details</span></span>  

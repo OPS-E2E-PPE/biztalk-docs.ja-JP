@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server チュートリアル |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server チュートリアル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, getting started
 - getting started, tutorials
 ms.assetid: 58019f98-e91a-4705-b689-c269174d6bae
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232074"
 ---
 # <a name="biztalk-server-tutorials"></a><span data-ttu-id="3a78e-102">BizTalk Server チュートリアル</span><span class="sxs-lookup"><span data-stu-id="3a78e-102">BizTalk Server Tutorials</span></span>
 <span data-ttu-id="3a78e-103">使用する方法を説明するチュートリアル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3a78e-103">Tutorials to learn how to use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>

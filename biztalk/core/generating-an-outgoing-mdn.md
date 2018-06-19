@@ -1,14 +1,14 @@
 ---
-title: "送信 MDN の生成 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 MDN の生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12d7da1c-0d3c-42d4-9388-29f499353d13
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247954"
 ---
 # <a name="generating-an-outgoing-mdn"></a><span data-ttu-id="4b3e3-102">送信 MDN の生成</span><span class="sxs-lookup"><span data-stu-id="4b3e3-102">Generating an Outgoing MDN</span></span>
 <span data-ttu-id="4b3e3-103">AS2 受信パイプラインは、受信メッセージに対する MDN (Message Disposition Notification) 応答を生成します。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-103">The AS2 receive pipelines generate an MDN (Message Disposition Notification) response for an incoming message.</span></span> <span data-ttu-id="4b3e3-104">これは、AS2EDIReceive 受信パイプラインの EDI 逆アセンブラー パイプライン コンポーネント (EDI エンコード メッセージに応答する場合) または AS2Receive 受信パイプラインの AS2 逆アセンブラー パイプライン コンポーネント (EDI でエンコードされていないメッセージに応答する場合) によって行われます。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-104">This is performed by the EDI Disassembler pipeline component in the AS2EDIReceive receive pipeline (in response to an EDI-encoded message) or the AS2 Disassembler pipeline component in the AS2Receive receive pipeline (in response to a non-EDI-encoded message).</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="4b3e3-116">場合、MDN が送信されます、 **mdn を要求する**プロパティが選択されています。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-116">An MDN will be sent if the **Request MDN** property is selected.</span></span>  
   
--   <span data-ttu-id="4b3e3-117">場合、 **mdn を要求する**プロパティが選択されていると、**非同期 MDN を要求する**プロパティが選択されている MDN は非同期に送信されます場合、。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-117">If the **Request MDN** property is selected, and the **Request asynchronous MDN** property is selected, the MDN will be sent asynchronously.</span></span> <span data-ttu-id="4b3e3-118">MDN は、URL に送信すること、 **- Receipt-delivery-option (URL)**プロパティが、元のメッセージよりも別の接続をします。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-118">The MDN will be sent to the URL that the **Receipt-Delivery-Option (URL)** property is set to, over a different connection than the original message.</span></span>  
+-   <span data-ttu-id="4b3e3-117">場合、 **mdn を要求する**プロパティが選択されていると、**非同期 MDN を要求する**プロパティが選択されている MDN は非同期に送信されます場合、。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-117">If the **Request MDN** property is selected, and the **Request asynchronous MDN** property is selected, the MDN will be sent asynchronously.</span></span> <span data-ttu-id="4b3e3-118">MDN は、URL に送信すること、 **- Receipt-delivery-option (URL)** プロパティが、元のメッセージよりも別の接続をします。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-118">The MDN will be sent to the URL that the **Receipt-Delivery-Option (URL)** property is set to, over a different connection than the original message.</span></span>  
   
 -   <span data-ttu-id="4b3e3-119">場合、 **mdn を要求する**プロパティが選択されているが、**非同期 MDN を要求する**プロパティが選択されていない、元のメッセージと同じ接続経由で MDN が同期的に送信されます。</span><span class="sxs-lookup"><span data-stu-id="4b3e3-119">If the **Request MDN** property is selected, but the **Request asynchronous MDN** property is not selected, the MDN will be sent synchronously over the same connection as the original message.</span></span>  
   

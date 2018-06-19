@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240186"
 ---
 # <a name="error---node-not-valid-for-property-field-promotion"></a><span data-ttu-id="801e0-102">エラー - ノードがプロパティ フィールドの昇格では無効です。</span><span class="sxs-lookup"><span data-stu-id="801e0-102">Error - Node Not Valid For Property Field Promotion</span></span>
 <span data-ttu-id="801e0-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="801e0-103">**Error Code**</span></span>  

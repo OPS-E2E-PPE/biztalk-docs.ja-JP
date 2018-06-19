@@ -1,14 +1,14 @@
 ---
-title: "構成エラー。 メッセージの署名は &#39; このパーティ用に構成されたシグネチャと一致する t |Microsoft ドキュメント"
-ms.custom: 
+title: 構成エラー。 メッセージの署名は &#39; このパーティ用に構成されたシグネチャと一致する t |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cea0016-12e8-4ee8-ac44-11024b5e74ef
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232490"
 ---
 # <a name="configuration-error-the-message-signature-doesn39t-match-the-signature-configured-for-this-party"></a><span data-ttu-id="138bc-103">構成エラー。</span><span class="sxs-lookup"><span data-stu-id="138bc-103">Configuration error.</span></span> <span data-ttu-id="138bc-104">メッセージの署名は &#39; 一致このパーティ用に構成された署名</span><span class="sxs-lookup"><span data-stu-id="138bc-104">The message signature doesn&#39;t match the signature configured for this party</span></span>
 ## <a name="details"></a><span data-ttu-id="138bc-105">詳細</span><span class="sxs-lookup"><span data-stu-id="138bc-105">Details</span></span>  

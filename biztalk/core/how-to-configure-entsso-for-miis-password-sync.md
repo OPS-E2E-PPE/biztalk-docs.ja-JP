@@ -1,14 +1,14 @@
 ---
-title: "MIIS パスワード同期用に ENTSSO を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: MIIS パスワード同期用に ENTSSO を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89438935-37c1-4ac9-9ca2-7af8d9bfd3ae
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248946"
 ---
 # <a name="how-to-configure-entsso-for-miis-password-sync"></a><span data-ttu-id="62741-102">MIIS パスワード同期用に ENTSSO を構成する方法</span><span class="sxs-lookup"><span data-stu-id="62741-102">How to Configure ENTSSO for MIIS Password Sync</span></span>
 <span data-ttu-id="62741-103">XML ファイルと Microsoft Identity Integration Server (MIIS) の構成が終わったら、残りの構成手順は、エンタープライズ シングル サインオン (ENTSSO) システムで行います。</span><span class="sxs-lookup"><span data-stu-id="62741-103">After configuring the XML file and Microsoft Identity Integration Server (MIIS), the remaining configuration steps take place in the Enterprise Single Sign-On (ENTSSO) system.</span></span>  
@@ -31,13 +32,13 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="62741-108">選択**MIIS からパスワード同期を許可する**です。</span><span class="sxs-lookup"><span data-stu-id="62741-108">Select **Allow password sync from MIIS**.</span></span>  
   
-5.  <span data-ttu-id="62741-109">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62741-109">Click **OK**.</span></span>  
+5.  <span data-ttu-id="62741-109">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62741-109">Click **OK**.</span></span>  
   
 ### <a name="to-enable-password-sync-on-the-system-level"></a><span data-ttu-id="62741-110">パスワード同期をシステム レベルで有効にするには</span><span class="sxs-lookup"><span data-stu-id="62741-110">To enable Password Sync on the system level</span></span>  
   
 1.  <span data-ttu-id="62741-111">エンタープライズ シングル サインオンを右クリックし、**システム**ノード。</span><span class="sxs-lookup"><span data-stu-id="62741-111">In Enterprise Single Sign-On, right-click the **System** node.</span></span>  
   
-2.  <span data-ttu-id="62741-112">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62741-112">Click **Properties**.</span></span>  
+2.  <span data-ttu-id="62741-112">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62741-112">Click **Properties**.</span></span>  
   
      <span data-ttu-id="62741-113">**プロパティ** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="62741-113">The **Properties** dialog box appears.</span></span>  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="62741-130">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Identity Integration Server**、順にクリック**Identity Manager**です。</span><span class="sxs-lookup"><span data-stu-id="62741-130">Click **Start**, point to **All Programs**, point to **Microsoft Identity Integration Server**, and then click **Identity Manager**.</span></span>  
   
-2.  <span data-ttu-id="62741-131">**[ツール]** メニューの **[オプション]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62741-131">On the **Tools** menu, click **Options**.</span></span>  
+2.  <span data-ttu-id="62741-131">**[ツール]** メニューの **[オプション]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62741-131">On the **Tools** menu, click **Options**.</span></span>  
   
 3.  <span data-ttu-id="62741-132">選択**パスワード同期を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="62741-132">Select **Enable Password Synchronization**.</span></span>  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="62741-135">**プロパティ** ページで、**ディレクトリ パーティションを構成する**、し、**パスワードの同期ソースとしてこのパーティションを有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="62741-135">On the **Properties** page, select **Configure Directory Partitions**, and then select **Enable this partition as a password synchronization source**.</span></span>  
   
-7.  <span data-ttu-id="62741-136">をクリックして**ターゲット**、し、ENTSSOMA2 が MIIS からパスワード変更を受信できるようにします。</span><span class="sxs-lookup"><span data-stu-id="62741-136">Click **Targets**, and then select ENTSSOMA2 to enable it to receive password changes from MIIS.</span></span> <span data-ttu-id="62741-137">[ENTSSOMA] の選択を解除します。</span><span class="sxs-lookup"><span data-stu-id="62741-137">Deselect ENTSSOMA.</span></span> <span data-ttu-id="62741-138">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="62741-138">Click **OK**, and then click **OK** again.</span></span>  
+7.  <span data-ttu-id="62741-136">をクリックして**ターゲット**、し、ENTSSOMA2 が MIIS からパスワード変更を受信できるようにします。</span><span class="sxs-lookup"><span data-stu-id="62741-136">Click **Targets**, and then select ENTSSOMA2 to enable it to receive password changes from MIIS.</span></span> <span data-ttu-id="62741-137">[ENTSSOMA] の選択を解除します。</span><span class="sxs-lookup"><span data-stu-id="62741-137">Deselect ENTSSOMA.</span></span> <span data-ttu-id="62741-138">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="62741-138">Click **OK**, and then click **OK** again.</span></span>  
   
 8.  <span data-ttu-id="62741-139">**管理エージェント**ビューで、 **ENTSSOMA2**です。</span><span class="sxs-lookup"><span data-stu-id="62741-139">In the **Management Agent** view, select **ENTSSOMA2**.</span></span> <span data-ttu-id="62741-140">右側のペインで選択**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="62741-140">In the right-hand pane, select **Properties**.</span></span> <span data-ttu-id="62741-141">**プロパティ**] ページで [**拡張機能の構成**です。</span><span class="sxs-lookup"><span data-stu-id="62741-141">On the **Properties** page, click **Configure Extensions**.</span></span>  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="62741-147">このアカウントは、INTSVR1.fabrikam.com に対して構成されている ENTSSO サービス アカウントと一致させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="62741-147">This account should match the ENTSSO service account configured on INTSVR1.fabrikam.com.</span></span>  
   
-11. <span data-ttu-id="62741-148">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="62741-148">Click **OK**, and then click **OK** again.</span></span>  
+11. <span data-ttu-id="62741-148">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="62741-148">Click **OK**, and then click **OK** again.</span></span>  
   
 12. <span data-ttu-id="62741-149">MIIS のパスワード同期を無効にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="62741-149">You can also disable password sync for MIIS.</span></span> <span data-ttu-id="62741-150">これを行うに**Identity Manager**をクリックして、**ツール** メニューのをクリックして**オプション**、選択を解除**パスワード同期を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="62741-150">To do this, in **Identity Manager**, click the **Tools** menu, click **Options**, and then deselect **Enable Password Synchronization**.</span></span>  
   

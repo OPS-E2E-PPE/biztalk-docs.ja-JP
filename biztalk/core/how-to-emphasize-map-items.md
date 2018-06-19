@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2732b36-ca57-4566-ba26-da27a3082f32
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22255442"
 ---
 # <a name="how-to-emphasize-map-items"></a><span data-ttu-id="298aa-102">マップ項目を強調する方法</span><span class="sxs-lookup"><span data-stu-id="298aa-102">How to Emphasize Map Items</span></span>
 <span data-ttu-id="298aa-103">BizTalk マッパーでマップ項目を選択すると、関連付けられたすべてのリンクと Functoid が強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="298aa-103">In the BizTalk Mapper, when you select a map item, all the associated links and functoids are emphasized.</span></span> <span data-ttu-id="298aa-104">これは、マップに多くのリンクが設定されていて、リレーションシップや関連するスキーマ項目を識別するのが難しい場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="298aa-104">This is useful in maps with many links, where it is difficult to identify a relationship and the related schema items.</span></span>  

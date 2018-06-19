@@ -1,17 +1,17 @@
 ---
-title: "ビジネス プロセス管理ソリューションでの例外処理 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションでの例外処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, tutorials
 - process management solution tutorial, errors
 ms.assetid: ac9fcb33-7dac-448e-88b8-04d4d439ea6a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245882"
 ---
 # <a name="exception-handling-in-the-business-process-management-solution"></a><span data-ttu-id="b781a-102">ビジネス プロセス管理ソリューションでの例外処理</span><span class="sxs-lookup"><span data-stu-id="b781a-102">Exception Handling in the Business Process Management Solution</span></span>
 <span data-ttu-id="b781a-103">ビジネス プロセス管理ソリューションでは、標準の BizTalk Server 例外処理に加えて特殊な例外処理オーケストレーションを使用します。アダプタ、パイプライン、マッピング、およびルーティングのエラーには新しいエラー報告機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="b781a-103">The business process management solution uses a special exception handling orchestration, as well as the standard BizTalk Server exception handling, and for adapter, pipeline, mapping, and routing failures, the new error reporting feature.</span></span> <span data-ttu-id="b781a-104">このカスタマイズされたシステムを構築、 **ExceptionHandler**オーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="b781a-104">This customized system is built around the **ExceptionHandler** orchestration.</span></span> <span data-ttu-id="b781a-105">ソリューションを使用して、 **ExceptionHandler**操作を再試行するか、一時的な問題の発生後に成功する可能性がありますの呼び出しを再試行するオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="b781a-105">The solution uses the **ExceptionHandler** orchestration to retry an operation or to retry a call that might succeed after a transient problem.</span></span>  

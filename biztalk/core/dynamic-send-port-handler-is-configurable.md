@@ -1,14 +1,14 @@
 ---
-title: "動的送信ポート ハンドラーは構成可能 |Microsoft ドキュメント"
-ms.custom: 
+title: 動的送信ポート ハンドラーは構成可能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5eb8f5ef-af95-4b2e-9a43-6f1240b25855
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22240594"
 ---
 # <a name="dynamic-send-port-handler-is-configurable"></a><span data-ttu-id="c88ed-102">動的送信ポート ハンドラーは構成可能</span><span class="sxs-lookup"><span data-stu-id="c88ed-102">Dynamic Send Port Handler is Configurable</span></span>
 <span data-ttu-id="c88ed-103">アダプターの送信ハンドラーがの構成可能な動的送信ポートを作成するときに *すべて* アダプターをインストールします。</span><span class="sxs-lookup"><span data-stu-id="c88ed-103">When creating a Dynamic Send Port, an adapter Send Handler is configurable for *every* installed adapter.</span></span> <span data-ttu-id="c88ed-104">以下のシナリオについて考えてみます。</span><span class="sxs-lookup"><span data-stu-id="c88ed-104">Consider the following scenario:</span></span>  

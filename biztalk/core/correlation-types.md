@@ -1,11 +1,11 @@
 ---
-title: "関連付けの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: 関連付けの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - correlation sets, correlation types
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - correlation types, about correlation types
 - correlation types, validating
 ms.assetid: 1aa5ca5c-c37d-4091-9f5d-331a6b202d4e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237778"
 ---
 # <a name="correlation-types"></a><span data-ttu-id="4b730-102">関連付けの種類</span><span class="sxs-lookup"><span data-stu-id="4b730-102">Correlation Types</span></span>
 <span data-ttu-id="4b730-103">各関連付けセットがに基づいて、**関連付けの種類**、これは単にプロパティの一覧です。</span><span class="sxs-lookup"><span data-stu-id="4b730-103">Each correlation set is based on a **correlation type**, which is simply a list of properties.</span></span> <span data-ttu-id="4b730-104">これらのプロパティは、メッセージ自体の中に存在するデータ プロパティ、またはメッセージ内で伝えられているデータに関連しないシステムまたはメッセージの詳細を説明するコンテキスト プロパティである可能性があります。</span><span class="sxs-lookup"><span data-stu-id="4b730-104">These properties might be data properties, which are found in the message itself, or context properties, which describe details of the system or messages that are unrelated to the data being conveyed in the message.</span></span>  

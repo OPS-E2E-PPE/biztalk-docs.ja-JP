@@ -1,11 +1,11 @@
 ---
-title: "ボキャブラリのバージョンを維持する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ボキャブラリのバージョンを維持する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, vocabularies
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - updating, vocabularies
 - vocabularies, updating
 ms.assetid: 43593c6f-4590-4940-ac17-4015928e5838
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254370"
 ---
 # <a name="how-to-maintain-vocabulary-versions"></a><span data-ttu-id="bf15f-102">ボキャブラリのバージョンを維持する方法</span><span class="sxs-lookup"><span data-stu-id="bf15f-102">How to Maintain Vocabulary Versions</span></span>
 <span data-ttu-id="bf15f-103">ボキャブラリの定義をボキャブラリのバージョンに追加することにより、将来の開発に備えて特定のバージョンをルール ストアに保存できます。また、そのバージョンを公開して、厳密に定義されたデータ関連の用語のセットを作成し、ポリシーを作成する際に、これらの用語をルールに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="bf15f-103">When you have added vocabulary definitions to a version of your vocabulary, you can save the version to the rule store for further development, or you can publish the version to create a well-defined, immutable set of data-bound terms that are available to users to add to rules as they develop their policies.</span></span> <span data-ttu-id="bf15f-104">ただし、ボキャブラリをバージョンに追加したとしても、既存のルールでは、古いバージョンが参照される点に注意してください。</span><span class="sxs-lookup"><span data-stu-id="bf15f-104">Note that fact that existing rules will still point to the old versions.</span></span>  

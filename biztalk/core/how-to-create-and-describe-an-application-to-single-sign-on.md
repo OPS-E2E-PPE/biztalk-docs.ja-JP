@@ -1,14 +1,14 @@
 ---
-title: "作成し、アプリケーションでのシングル サインオンを記述する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成し、アプリケーションでのシングル サインオンを記述する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d717885-b132-4ba0-a93b-03377ac5eb97
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249090"
 ---
 # <a name="how-to-create-and-describe-an-application-to-single-sign-on"></a><span data-ttu-id="fb2d5-102">作成し、アプリケーションでのシングル サインオンを記述する方法</span><span class="sxs-lookup"><span data-stu-id="fb2d5-102">How to Create and Describe an Application to Single Sign-On</span></span>
 <span data-ttu-id="fb2d5-103">一般的な管理タスクとして、関連アプリケーションをエンタープライズ シングル サインオン (SSO) データベースに追加することが挙げられます。</span><span class="sxs-lookup"><span data-stu-id="fb2d5-103">A common administrative task that you might need to perform is adding an affiliate application into the Enterprise Single Sign-On (SSO) database.</span></span> <span data-ttu-id="fb2d5-104">関連アプリケーションをエンタープライズ SSO データベースに追加することによって、ユーザーおよび資格情報を関連アプリケーションに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="fb2d5-104">Adding an affiliate application to the Enterprise SSO database enables you to associate users and credentials with the affiliated application.</span></span>  

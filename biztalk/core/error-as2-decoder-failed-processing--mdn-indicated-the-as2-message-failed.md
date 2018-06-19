@@ -1,14 +1,14 @@
 ---
-title: "AS2 デコーダーは MDN には、失敗したメッセージの AS2 処理が示されているために、処理が失敗しました |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 デコーダーは MDN には、失敗したメッセージの AS2 処理が示されているために、処理が失敗しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2bce620a-f336-435e-b7c3-3db060f2819d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240122"
 ---
 # <a name="the-as2-decoder-failed-processing-because-the-mdn-indicated-the-as2-message-failed-processing"></a><span data-ttu-id="efa31-102">AS2 メッセージを処理できなかったことが MDN によって示されたため、AS2 デコーダーの処理は失敗しました</span><span class="sxs-lookup"><span data-stu-id="efa31-102">The AS2 Decoder failed processing because the MDN indicated the AS2 message failed processing</span></span>
 ## <a name="details"></a><span data-ttu-id="efa31-103">詳細</span><span class="sxs-lookup"><span data-stu-id="efa31-103">Details</span></span>  

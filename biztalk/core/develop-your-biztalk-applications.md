@@ -1,14 +1,14 @@
 ---
-title: "BizTalk アプリケーションの開発 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションの開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f124ec8-95d9-4c20-bdbe-3d086b594e95
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238818"
 ---
 # <a name="develop-your-biztalk-applications"></a><span data-ttu-id="9ba29-102">BizTalk アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="9ba29-102">Develop your BizTalk applications</span></span>
 <span data-ttu-id="9ba29-103">このセクションでは、BizTalk アプリケーションの作成に携わる開発者向けの情報が記載されています。</span><span class="sxs-lookup"><span data-stu-id="9ba29-103">This section contains information for developers who are tasked with creating BizTalk applications.</span></span> <span data-ttu-id="9ba29-104">これらのアプリケーションが作成されると、通常、オペレーション コンソールと管理タスクの情報を使用して、管理者によって管理されます。</span><span class="sxs-lookup"><span data-stu-id="9ba29-104">Once these applications are created, they are usually managed by an administrator, using information found in the Operations and Administrative Tasks.</span></span>  

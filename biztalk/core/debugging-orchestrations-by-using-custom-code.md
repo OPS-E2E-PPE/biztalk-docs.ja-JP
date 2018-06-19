@@ -1,17 +1,17 @@
 ---
-title: "カスタム コードを使用してオーケストレーションのデバッグ |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム コードを使用してオーケストレーションのデバッグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, debugging
 - building, debugging
 ms.assetid: 94e569fa-8dea-4027-abb5-37b4a8015621
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239890"
 ---
 # <a name="debugging-orchestrations-by-using-custom-code"></a><span data-ttu-id="03998-102">カスタム コードを使用したオーケストレーションのデバッグ</span><span class="sxs-lookup"><span data-stu-id="03998-102">Debugging Orchestrations by using Custom Code</span></span>
 <span data-ttu-id="03998-103">出力を書き込むことができる場合、オーケストレーションは、テスト環境で動作にプロトタイプを作成し、メッセージ フィールドとオーケストレーション変数の値を変更する、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で次のコードを使用して、コンソール**式**図形。</span><span class="sxs-lookup"><span data-stu-id="03998-103">If your orchestration is going to be exercised in a test environment or you are creating a prototype and want to modify the values of message fields and orchestration variables, you can write the output to the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] console by using the following code in an **Expression** shape:</span></span>  
@@ -45,9 +46,9 @@ System.Diagnostics.Debug.WriteLine(iResult);
   
 3.  <span data-ttu-id="03998-115">クリックして、**デバッグ**メニュー**プロセスにアタッチしています.**</span><span class="sxs-lookup"><span data-stu-id="03998-115">Click the **Debug** menu and select **Attach to Process…**</span></span> <span data-ttu-id="03998-116">表示する、**プロセスにアタッチする**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="03998-116">to display the **Attach to Process** dialog.</span></span>  
   
-4.  <span data-ttu-id="03998-117">クリックして、**を選択しています.**</span><span class="sxs-lookup"><span data-stu-id="03998-117">Click the **Select…**</span></span> <span data-ttu-id="03998-118">ボタンの横に、**にアタッチ:**を表示するテキスト ボックス、**コードの種類の選択**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="03998-118">button next to the **Attach to:** text box to display the **Select Code Type** dialog.</span></span>  
+4.  <span data-ttu-id="03998-117">クリックして、**を選択しています.**</span><span class="sxs-lookup"><span data-stu-id="03998-117">Click the **Select…**</span></span> <span data-ttu-id="03998-118">ボタンの横に、**にアタッチ:** を表示するテキスト ボックス、**コードの種類の選択**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="03998-118">button next to the **Attach to:** text box to display the **Select Code Type** dialog.</span></span>  
   
-5.  <span data-ttu-id="03998-119">オプションを選択する をクリックします**コードの種類:**を選択し、**マネージ**をクリックし、 **ok**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="03998-119">Click to select the option to **Debug these code types:** and select **Managed** and then click the **OK** button.</span></span>  
+5.  <span data-ttu-id="03998-119">オプションを選択する をクリックします**コードの種類:** を選択し、**マネージ**をクリックし、 **ok**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="03998-119">Click to select the option to **Debug these code types:** and select **Managed** and then click the **OK** button.</span></span>  
   
 6.  <span data-ttu-id="03998-120">クリックして選択、 **BTSNTSvc.exe**からプロセス**選択可能なプロセス**をクリックし、**アタッチ**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="03998-120">Click to select the **BTSNTSvc.exe** process from **Available Processes** and then click the **Attach** button.</span></span>  
   

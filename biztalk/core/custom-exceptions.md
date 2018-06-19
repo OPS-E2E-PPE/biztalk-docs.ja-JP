@@ -1,11 +1,11 @@
 ---
-title: "カスタム例外 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム例外 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, compensation blocks
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Terminate shape [Orchestration Designer], called orchestrations
 - process management solution tutorial, errors
 ms.assetid: 0c923303-82ad-4a20-9c7c-5e38c477993a
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240138"
 ---
 # <a name="custom-exceptions"></a><span data-ttu-id="851a2-102">カスタム例外</span><span class="sxs-lookup"><span data-stu-id="851a2-102">Custom Exceptions</span></span>
 <span data-ttu-id="851a2-103">回復できないエラーが発生すると、ビジネス プロセス管理ソリューションは、例外ハンドラとカスタム例外を組み合わせて使用します。</span><span class="sxs-lookup"><span data-stu-id="851a2-103">For situations where there is an unrecoverable error, the Business Process Management solution uses a combination of exception handlers and custom exceptions.</span></span>  

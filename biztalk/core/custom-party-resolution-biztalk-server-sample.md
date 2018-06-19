@@ -1,11 +1,11 @@
 ---
-title: "カスタム パーティの解決 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム パーティの解決 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, parties
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - parties, pipeline components [custom]
 - parties, custom
 ms.assetid: 1f88450f-5fe9-486d-bfb8-fd11181c78b4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238698"
 ---
 # <a name="custom-party-resolution-biztalk-server-sample"></a><span data-ttu-id="f7c2b-102">カスタム パーティの解決 (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="f7c2b-102">Custom Party Resolution (BizTalk Server Sample)</span></span>
 <span data-ttu-id="f7c2b-103">カスタム パーティの解決サンプルでは、カスタム パイプライン コンポーネントを作成し、カスタム パーティを解決する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-103">The Custom Party Resolution sample demonstrates how to write a custom pipeline component to resolve a custom party.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 3.  <span data-ttu-id="f7c2b-108">XML メッセージがフォルダに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-108">The XML message is written to a folder.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="f7c2b-109">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="f7c2b-109">Where to Find This Sample</span></span>  
- <span data-ttu-id="f7c2b-110">*\<サンプル パス >*\Pipelines\CustomPartyResolution\\</span><span class="sxs-lookup"><span data-stu-id="f7c2b-110">*\<Samples Path>*\Pipelines\CustomPartyResolution\\</span></span>  
+ <span data-ttu-id="f7c2b-110">*\<サンプル パス >* \Pipelines\CustomPartyResolution\\</span><span class="sxs-lookup"><span data-stu-id="f7c2b-110">*\<Samples Path>* \Pipelines\CustomPartyResolution\\</span></span>  
   
  <span data-ttu-id="f7c2b-111">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-111">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="f7c2b-146">コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-146">In a command window, change directory (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="f7c2b-147">*\<サンプル パス >*\Pipelines\CustomPartyResolution\\</span><span class="sxs-lookup"><span data-stu-id="f7c2b-147">*\<Samples Path>*\Pipelines\CustomPartyResolution\\</span></span>  
+     <span data-ttu-id="f7c2b-147">*\<サンプル パス >* \Pipelines\CustomPartyResolution\\</span><span class="sxs-lookup"><span data-stu-id="f7c2b-147">*\<Samples Path>* \Pipelines\CustomPartyResolution\\</span></span>  
   
 2.  <span data-ttu-id="f7c2b-148">ファイル Setup.bat を実行します。処理内容は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-148">Run the file Setup.bat, which will perform the following actions:</span></span>  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="f7c2b-151">カスタム パーティの解決パイプライン コンポーネントをビルドおよび展開します。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-151">Builds and deploys the Custom Party Resolution pipeline component.</span></span>  
   
-    -   <span data-ttu-id="f7c2b-152">ビルドしたパイプライン コンポーネントへのコピー、 *\<インストール パス >*\Pipeline Components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-152">Copies the built pipeline component to the *\<Installation Path>*\Pipeline Components directory.</span></span>  
+    -   <span data-ttu-id="f7c2b-152">ビルドしたパイプライン コンポーネントへのコピー、 *\<インストール パス >* \Pipeline Components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-152">Copies the built pipeline component to the *\<Installation Path>* \Pipeline Components directory.</span></span>  
   
     -   <span data-ttu-id="f7c2b-153">送信ポートおよび受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f7c2b-153">Creates the send and receive ports.</span></span>  
   

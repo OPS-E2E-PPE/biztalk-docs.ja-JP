@@ -1,14 +1,14 @@
 ---
-title: "System.Net のログ記録を有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: System.Net のログ記録を有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5eea50b9-1f46-45fc-a327-585adb4583a0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239938"
 ---
 # <a name="enabling-systemnet-logging"></a><span data-ttu-id="cb068-102">System.Net のログ記録の有効化</span><span class="sxs-lookup"><span data-stu-id="cb068-102">Enabling System.Net Logging</span></span>
 <span data-ttu-id="cb068-103">ログ記録を有効にすることができます、`System.Net`と`System.Net.Sockets` [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] BTSNtSvc.exe サービスの名前空間。</span><span class="sxs-lookup"><span data-stu-id="cb068-103">You can enable logging for the `System.Net` and `System.Net.Sockets`[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] namespace for the BTSNtSvc.exe service.</span></span> <span data-ttu-id="cb068-104">これにより、BizTalk Server のインストールでの問題の特定に役立つ情報が記録された詳細なログ ファイルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="cb068-104">This will cause a detailed log file to be created containing information that may help you identify issues with your BizTalk Server installation.</span></span>  

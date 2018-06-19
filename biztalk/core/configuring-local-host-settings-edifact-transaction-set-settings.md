@@ -1,14 +1,14 @@
 ---
-title: "ローカル ホスト設定の構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント"
-ms.custom: 
+title: ローカル ホスト設定の構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f7c9cb9-7b4b-41de-a3f3-c0519b18673c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234202"
 ---
 # <a name="configuring-local-host-settings-edifact-transaction-set-settings"></a><span data-ttu-id="29b7a-102">ローカル ホストの設定の構成 (EDIFACT トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="29b7a-102">Configuring Local Host Settings (EDIFACT-Transaction Set Settings)</span></span>
 <span data-ttu-id="29b7a-103">受信したインターチェンジを処理するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はインターチェンジの処理および検証に使用するスキーマを決定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="29b7a-103">To process an incoming interchange, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] must determine the schema that it needs to use in processing and validating the interchange.</span></span> <span data-ttu-id="29b7a-104">この場合、スキーマに関連付けられたターゲット名前空間および使用するスキーマを決定します。</span><span class="sxs-lookup"><span data-stu-id="29b7a-104">This consists of determining the target namespace associated with the schema, and determining the schema to be used.</span></span> <span data-ttu-id="29b7a-105">パーティ アグリーメントに関するこのページで、ターゲット名前空間の決定に使用するプロパティを入力します。</span><span class="sxs-lookup"><span data-stu-id="29b7a-105">In this page of the party agreement, you enter the properties to be used in determining the target namespace.</span></span> <span data-ttu-id="29b7a-106">BizTalk Server が、スキーマを決定する方法が説明されている[アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)です。</span><span class="sxs-lookup"><span data-stu-id="29b7a-106">How BizTalk Server determines the schema is described in [Agreement Resolution, Schema Discovery, and Authorization for Received EDI Messages](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md).</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="29b7a-123">トランザクションの一部が設定した場合、検証の設定をセットとして**末尾の区切り記号のポリシー**に**オプション**または**必須**を選択できます**空を作成末尾の区切り記号のタグで XML**して、インターチェンジの送信者が末尾の区切り記号に空の XML タグが含まれます。</span><span class="sxs-lookup"><span data-stu-id="29b7a-123">As part of the transaction set validation settings, if you set **Trailing Separator Policy** to **Optional** or **Mandatory**, you can select **Create empty XML tags for trailing separators** to have the interchange sender include empty XML tags for trailing separators.</span></span>  
   
-4.  <span data-ttu-id="29b7a-124">選択**小数点区切り文字として使用してドット (.)**できるようにする BizTalk Server では、10 進数を含むインターチェンジから作成された XML メッセージにドット (.) を含めます。</span><span class="sxs-lookup"><span data-stu-id="29b7a-124">Select **Use Dot (.) as decimal separator** to enable BizTalk Server include a dot (.) in the XML message created out of an interchange that contains a decimal number.</span></span>  
+4.  <span data-ttu-id="29b7a-124">選択**小数点区切り文字として使用してドット (.)** できるようにする BizTalk Server では、10 進数を含むインターチェンジから作成された XML メッセージにドット (.) を含めます。</span><span class="sxs-lookup"><span data-stu-id="29b7a-124">Select **Use Dot (.) as decimal separator** to enable BizTalk Server include a dot (.) in the XML message created out of an interchange that contains a decimal number.</span></span>  
   
 5.  <span data-ttu-id="29b7a-125">**カスタマイズ Target Namespace**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="29b7a-125">In the **Customize Target Namespace** section, do the following:</span></span>  
   

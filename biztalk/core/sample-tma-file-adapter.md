@@ -1,11 +1,11 @@
 ---
-title: "サンプル TMA: ファイル アダプターの |Microsoft ドキュメント"
-ms.custom: 
+title: 'サンプル TMA: ファイル アダプターの |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, File adapters
 - security examples [TMA], File adapters
 ms.assetid: bcb862c0-fe02-4335-8b59-242d28049e3f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271890"
 ---
 # <a name="sample-tma-file-adapter"></a><span data-ttu-id="8cfcb-102">サンプル TMA: ファイル アダプタ</span><span class="sxs-lookup"><span data-stu-id="8cfcb-102">Sample TMA: File Adapter</span></span>
 <span data-ttu-id="8cfcb-103">ここでは、サンプル アーキテクチャのファイル アダプター シナリオ向けの脅威モデル分析 (TMA) について説明します。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-103">This topic presents the threat model analysis (TMA) for the File adapter scenario for the sample architecture.</span></span> <span data-ttu-id="8cfcb-104">次の図では、ファイル アダプタ シナリオのサンプル アーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-104">The following figure shows the sample architecture for the File adapter scenario.</span></span>  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="8cfcb-139">未認証のユーザーが、BizTalk Server にメッセージを送信できる</span><span class="sxs-lookup"><span data-stu-id="8cfcb-139">Unauthorized user can submit messages to BizTalk Server</span></span>|<span data-ttu-id="8cfcb-140">BizTalk Server がメッセージを取得するファイル フォルダへの書き込みアクセス許可をユーザーが持っている場合、未認証のユーザーが BizTalk Server にメッセージを送信することがあります。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-140">If a user has write permissions to the file folder from which BizTalk Server picks up messages, an unauthorized user can submit messages to BizTalk Server.</span></span>|<span data-ttu-id="8cfcb-141">メッセージ本文</span><span class="sxs-lookup"><span data-stu-id="8cfcb-141">Message body</span></span>|<span data-ttu-id="8cfcb-142">サービス拒否が起こる</span><span class="sxs-lookup"><span data-stu-id="8cfcb-142">Denial of service</span></span><br /><br /> <span data-ttu-id="8cfcb-143">特権の昇格</span><span class="sxs-lookup"><span data-stu-id="8cfcb-143">Elevation of privileges</span></span>|  
   
 ## <a name="step-3-review-threats-file-adapter-scenario"></a><span data-ttu-id="8cfcb-144">手順 3.</span><span class="sxs-lookup"><span data-stu-id="8cfcb-144">Step 3.</span></span> <span data-ttu-id="8cfcb-145">脅威の確認 (ファイル アダプタ シナリオ)</span><span class="sxs-lookup"><span data-stu-id="8cfcb-145">Review Threats (File Adapter Scenario)</span></span>  
- <span data-ttu-id="8cfcb-146">このセクションでは、サンプル アーキテクチャのファイル アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-146">This section provides the results of the risk analysis we did for threats we identified for the File adapter scenario for the sample architecture.</span></span> <span data-ttu-id="8cfcb-147">主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-147">After the main threat model meeting, we reviewed the threats and used the following impact categories to identify the risk for each threat: **D**amage potential, **R**eproducibility, **E**xploitability, **A**ffected users, and **D**iscoverability.</span></span>  
+ <span data-ttu-id="8cfcb-146">このセクションでは、サンプル アーキテクチャのファイル アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-146">This section provides the results of the risk analysis we did for threats we identified for the File adapter scenario for the sample architecture.</span></span> <span data-ttu-id="8cfcb-147">主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。** xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-147">After the main threat model meeting, we reviewed the threats and used the following impact categories to identify the risk for each threat: **D**amage potential, **R**eproducibility, **E**xploitability, **A**ffected users, and **D**iscoverability.</span></span>  
   
  <span data-ttu-id="8cfcb-148">次の表は、ファイル アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威のリスクの度合いを示しています。</span><span class="sxs-lookup"><span data-stu-id="8cfcb-148">The following table lists the risk ratings for the threats we identified when you use the File adapter to send and receive messages to and from BizTalk Server.</span></span>  
   

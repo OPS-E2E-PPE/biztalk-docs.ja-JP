@@ -1,11 +1,11 @@
 ---
-title: "メッセージング プロパティ ビュー |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージング プロパティ ビュー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, message schemas
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Messaging Property view
 - message schemas, XML messages
 ms.assetid: 80d040e9-d58b-41d1-b26d-19aff4d3126b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262898"
 ---
 # <a name="messaging-property-view"></a><span data-ttu-id="757cf-102">メッセージング プロパティ ビュー</span><span class="sxs-lookup"><span data-stu-id="757cf-102">Messaging Property View</span></span>
 <span data-ttu-id="757cf-103">メッセージング プロパティ ビューには、プロパティに関連付けられている XML メッセージのスキーマが表示されます。</span><span class="sxs-lookup"><span data-stu-id="757cf-103">The Messaging Property view displays the schema of the XML message associated with the property.</span></span> <span data-ttu-id="757cf-104">このビューは、オーケストレーション スケジュール ビューにある一部の図形のショートカット メニューから使用できます。</span><span class="sxs-lookup"><span data-stu-id="757cf-104">The view is available from the shortcut menu for some of the shapes in the Orchestration Schedule view.</span></span>  

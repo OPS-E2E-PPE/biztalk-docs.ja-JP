@@ -1,14 +1,14 @@
 ---
-title: "BAM インターセプターのエラー メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM インターセプターのエラー メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 270dd5b7-33bf-4847-86f1-8798d63421b8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234650"
 ---
 # <a name="bam-interceptor-error-messages"></a><span data-ttu-id="2df7c-102">BAM インターセプターのエラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="2df7c-102">BAM Interceptor Error Messages</span></span>
 <span data-ttu-id="2df7c-103">WF インターセプターまたは WCF BAM インターセプターを使用する場合、無効なインターセプター構成ファイルの問題から、コンテキスト プロパティを抽出する際の実行時の問題、または一方向の WCF 操作の応答からイベント追跡を試行する際の実行時の問題まで、多岐にわたる問題が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2df7c-103">When using the WF or WCF BAM interceptors, you may experience issues ranging from an invalid interceptor configuration file to runtime issues extracting context properties or trying to track events from the reply of a one-way WCF operation.</span></span>  

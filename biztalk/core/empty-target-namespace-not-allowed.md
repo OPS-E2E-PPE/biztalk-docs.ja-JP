@@ -1,14 +1,14 @@
 ---
-title: "空のターゲット名前空間が許可されていません |Microsoft ドキュメント"
-ms.custom: 
+title: 空のターゲット名前空間が許可されていません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9226ecf3-2630-4cdf-9bce-4a95fba5e60d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239514"
 ---
 # <a name="empty-target-namespace-not-allowed"></a><span data-ttu-id="dca9a-102">空のターゲットの名前空間は許可されていません</span><span class="sxs-lookup"><span data-stu-id="dca9a-102">Empty target namespace not allowed</span></span>
 ## <a name="details"></a><span data-ttu-id="dca9a-103">詳細</span><span class="sxs-lookup"><span data-stu-id="dca9a-103">Details</span></span>  

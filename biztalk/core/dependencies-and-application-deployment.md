@@ -1,11 +1,11 @@
 ---
-title: "依存関係とアプリケーションの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: 依存関係とアプリケーションの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [applications], dependencies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - artifacts, dependencies
 - applications, dependencies
 ms.assetid: b78c5a0d-b042-4862-bce7-59469365b369
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242210"
 ---
 # <a name="dependencies-and-application-deployment"></a><span data-ttu-id="6c618-102">依存関係とアプリケーションの展開</span><span class="sxs-lookup"><span data-stu-id="6c618-102">Dependencies and Application Deployment</span></span>
 <span data-ttu-id="6c618-103">このトピックでは、複数の BizTalk アプリケーション内にあるアイテム間の依存関係が、アプリケーションの展開と保守に及ぼす影響について説明します。</span><span class="sxs-lookup"><span data-stu-id="6c618-103">This topic describes how dependencies between artifacts in two or more BizTalk applications affect application deployment and maintenance.</span></span>  

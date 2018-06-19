@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250242"
 ---
 # <a name="how-to-create-a-send-port"></a><span data-ttu-id="052f9-102">送信ポートを作成する方法</span><span class="sxs-lookup"><span data-stu-id="052f9-102">How to Create a Send Port</span></span>
 <span data-ttu-id="052f9-103">このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="052f9-103">This topic describes how to use the BizTalk Server Administration console to create a send port.</span></span> <span data-ttu-id="052f9-104">送信ポートを作成する場合、次のような送信ポートの種類を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="052f9-104">When creating a send port, you must select the type of send port to create, as follows:</span></span>  

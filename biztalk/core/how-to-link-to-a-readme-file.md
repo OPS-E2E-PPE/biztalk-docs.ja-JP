@@ -1,11 +1,11 @@
 ---
-title: "Readme ファイルにリンクする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Readme ファイルにリンクする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - linking, readme files
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - linking, applications
 - applications, linking
 ms.assetid: 7ddbfe77-c8b5-4f90-80ee-8fd5ba57170b
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254890"
 ---
 # <a name="how-to-link-to-a-readme-file"></a><span data-ttu-id="586b9-102">Readme ファイルにリンクする方法</span><span class="sxs-lookup"><span data-stu-id="586b9-102">How to Link to a Readme File</span></span>
 <span data-ttu-id="586b9-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、コントロール パネルの [プログラムの追加と削除] でユーザーがリンクをクリックしたときに表示される Readme.htm ファイルを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="586b9-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a Readme.htm file that will appear when a user clicks a link in Add or Remove Programs in Control Panel.</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="586b9-126">**先**アプリケーションのインストール フォルダーの完全なパスが既定では、次のように指定された: %BTAD_InstallDir%\Readme.htm です。</span><span class="sxs-lookup"><span data-stu-id="586b9-126">In **Destination location**, the full path of the application installation folder is specified by default, as follows: %BTAD_InstallDir%\Readme.htm.</span></span> <span data-ttu-id="586b9-127">このパスを変更する必要がありません。</span><span class="sxs-lookup"><span data-stu-id="586b9-127">You should not change this path.</span></span> <span data-ttu-id="586b9-128">アプリケーションのインストール フォルダーへの正しいパスが指定されていない場合、インストール中にファイルがこのパスにコピーされず、リンクが機能しません。</span><span class="sxs-lookup"><span data-stu-id="586b9-128">If the correct path to the application installation folder is not provided, the file is not copied to it during installation, and the link will not work.</span></span>  
   
-7.  <span data-ttu-id="586b9-129">完了したら、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="586b9-129">When finished, click **OK**.</span></span>  
+7.  <span data-ttu-id="586b9-129">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="586b9-129">When finished, click **OK**.</span></span>  
   
 #### <a name="using-the-command-line"></a><span data-ttu-id="586b9-130">コマンドラインを使用</span><span class="sxs-lookup"><span data-stu-id="586b9-130">Using the command line</span></span>  
   

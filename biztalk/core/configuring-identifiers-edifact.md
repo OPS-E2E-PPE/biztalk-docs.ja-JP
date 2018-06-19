@@ -1,14 +1,14 @@
 ---
-title: "識別子の構成 (EDIFACT) |Microsoft ドキュメント"
-ms.custom: 
+title: 識別子の構成 (EDIFACT) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 097292f2-1aa5-42e4-aeee-c7d4cbdae17c
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233850"
 ---
 # <a name="configuring-identifiers-edifact"></a><span data-ttu-id="72609-102">識別子の構成 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="72609-102">Configuring Identifiers (EDIFACT)</span></span>
 <span data-ttu-id="72609-103">未承認の受信者がインターチェンジを受信していないことを確認するには、パートナー アグリーメントで、受信者の参照パスワードを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="72609-103">In the partner agreement, you must set the recipient reference password, in order to verify that the interchange is not being received by unauthorized recipients.</span></span>  
@@ -26,7 +27,7 @@ ms.lasthandoff: 09/20/2017
 >   
 >  -   <span data-ttu-id="72609-105">**DestinationPartyName** **追加のアグリーメント リゾルバー**セクションです。</span><span class="sxs-lookup"><span data-stu-id="72609-105">**DestinationPartyName** under **Additional Agreement Resolvers** section.</span></span>  
 >   
->  <span data-ttu-id="72609-106">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="72609-106">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="72609-107">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、チェック ボックスをオフにしたパーティ A、に対して、上記のプロパティの無効になりますで、**パーティ A にパーティ B]-> [**一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="72609-107">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
+>  <span data-ttu-id="72609-106">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="72609-106">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="72609-107">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、チェック ボックスをオフにしたパーティ A、に対して、上記のプロパティの無効になりますで、**パーティ A にパーティ B]-> [** 一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="72609-107">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="72609-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="72609-108">Prerequisites</span></span>  
  <span data-ttu-id="72609-109">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="72609-109">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="72609-113">一方向アグリーメント タブの下にある**インターチェンジの設定**セクションで、**識別子**です。</span><span class="sxs-lookup"><span data-stu-id="72609-113">On a one-way agreement tab, under **Interchange Settings** section, click **Identifiers**.</span></span>  
   
-3.  <span data-ttu-id="72609-114">**送信者 (UNB2)**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="72609-114">In the **Sender (UNB2)** section, do the following:</span></span>  
+3.  <span data-ttu-id="72609-114">**送信者 (UNB2)** セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="72609-114">In the **Sender (UNB2)** section, do the following:</span></span>  
   
     1.  <span data-ttu-id="72609-115">**Id (UNB2.1)**、1 つの最小値、35 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-115">For **Identification (UNB2.1)**, enter an alphanumeric value with a minimum of one and a maximum of 35.</span></span> <span data-ttu-id="72609-116">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="72609-116">This is a required field.</span></span>  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="72609-119">**逆ルーティングのアドレス (UNB2.3)**、1 つの文字の最小値、最大 14 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-119">For **Reverse routing address (UNB2.3)**, enter an alphanumeric value with a minimum of one character and a maximum of 14 characters.</span></span> <span data-ttu-id="72609-120">このフィールドの入力は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="72609-120">This is an optional field.</span></span>  
   
-4.  <span data-ttu-id="72609-121">**受信者 (UNB3)**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="72609-121">In the **Recipient (UNB3)** section, do the following:</span></span>  
+4.  <span data-ttu-id="72609-121">**受信者 (UNB3)** セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="72609-121">In the **Recipient (UNB3)** section, do the following:</span></span>  
   
     1.  <span data-ttu-id="72609-122">**Id (UNB3.1)**、1 つの最小値、35 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-122">For **Identification (UNB3.1)**, enter an alphanumeric value with a minimum of one and a maximum of 35.</span></span> <span data-ttu-id="72609-123">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="72609-123">This is a required field.</span></span>  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="72609-126">**逆ルーティングのアドレス (UNB3.3)**、1 つの文字の最小値、最大 14 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-126">For **Reverse routing address (UNB3.3)**, enter an alphanumeric value with a minimum of one character and a maximum of 14 characters.</span></span> <span data-ttu-id="72609-127">このフィールドの入力は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="72609-127">This is an optional field.</span></span>  
   
-    4.  <span data-ttu-id="72609-128">必要な場合、**受信者の参照パスワード (UNB6)**セクションで、受信者の参照パスワードの値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-128">If required, in the **Recipient reference password (UNB6)** section, enter values for the recipient reference password.</span></span> <span data-ttu-id="72609-129">**値 (UNB6.1)**、1 つの最小値、14 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-129">For **Value (UNB6.1)**, enter an alphanumeric value with a minimum of one and a maximum of 14.</span></span> <span data-ttu-id="72609-130">**修飾子 (UNB6.2)**、1 つの文字の最小値、最大 2 つの文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-130">For **Qualifier (UNB6.2)**, enter an alphanumeric value with a minimum of one character and a maximum of two characters.</span></span> <span data-ttu-id="72609-131">これらは省略可能なフィールドです。</span><span class="sxs-lookup"><span data-stu-id="72609-131">These are optional fields.</span></span> <span data-ttu-id="72609-132">これらの値が、受信したインターチェンジの "UNB6.1" フィールドおよび "UNB6.2" フィールドと一致しない場合、インターチェンジは中断されます。</span><span class="sxs-lookup"><span data-stu-id="72609-132">If these values do not match the UNB6.1 and UNB6.2 fields in a received interchange, BizTalk Server will suspend the interchange.</span></span>  
+    4.  <span data-ttu-id="72609-128">必要な場合、**受信者の参照パスワード (UNB6)** セクションで、受信者の参照パスワードの値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-128">If required, in the **Recipient reference password (UNB6)** section, enter values for the recipient reference password.</span></span> <span data-ttu-id="72609-129">**値 (UNB6.1)**、1 つの最小値、14 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-129">For **Value (UNB6.1)**, enter an alphanumeric value with a minimum of one and a maximum of 14.</span></span> <span data-ttu-id="72609-130">**修飾子 (UNB6.2)**、1 つの文字の最小値、最大 2 つの文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="72609-130">For **Qualifier (UNB6.2)**, enter an alphanumeric value with a minimum of one character and a maximum of two characters.</span></span> <span data-ttu-id="72609-131">これらは省略可能なフィールドです。</span><span class="sxs-lookup"><span data-stu-id="72609-131">These are optional fields.</span></span> <span data-ttu-id="72609-132">これらの値が、受信したインターチェンジの "UNB6.1" フィールドおよび "UNB6.2" フィールドと一致しない場合、インターチェンジは中断されます。</span><span class="sxs-lookup"><span data-stu-id="72609-132">If these values do not match the UNB6.1 and UNB6.2 fields in a received interchange, BizTalk Server will suspend the interchange.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="72609-133">組み合わせ**UNB6.1**と**UNB6.2**一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="72609-133">The combination of **UNB6.1** and **UNB6.2** must be unique.</span></span>  

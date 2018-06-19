@@ -1,18 +1,18 @@
 ---
-title: "オーケストレーションを参加させる方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションを参加させる方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [orchestrations], enlisting
 - orchestrations, enlisting
 - enlisting, orchestrations
 ms.assetid: b21a398b-8c9a-42ae-aac0-de35dbfd8176
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255842"
 ---
 # <a name="how-to-enlist-an-orchestration"></a><span data-ttu-id="4323f-102">オーケストレーションを参加させる方法</span><span class="sxs-lookup"><span data-stu-id="4323f-102">How to Enlist an Orchestration</span></span>
 <span data-ttu-id="4323f-103">このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションをホストに参加させる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4323f-103">This topic describes how to use the BizTalk Server Administration console to enlist an orchestration into a host.</span></span> <span data-ttu-id="4323f-104">オーケストレーションは参加させて初めて開始できるようになります。</span><span class="sxs-lookup"><span data-stu-id="4323f-104">The orchestration must be enlisted before you can start it.</span></span>  

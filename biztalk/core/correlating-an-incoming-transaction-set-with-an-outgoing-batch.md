@@ -1,14 +1,14 @@
 ---
-title: "送信バッチ設定で受信トランザクションを相互に関連付ける |Microsoft ドキュメント"
-ms.custom: 
+title: 送信バッチ設定で受信トランザクションを相互に関連付ける |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fbe40f8-7379-42be-b8a7-070ce8a7ce26
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239410"
 ---
 # <a name="correlating-an-incoming-transaction-set-with-an-outgoing-batch"></a><span data-ttu-id="ebf7d-102">受信トランザクション セットと送信パッチの関連付け</span><span class="sxs-lookup"><span data-stu-id="ebf7d-102">Correlating an Incoming Transaction Set with an Outgoing Batch</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="ebf7d-103"> では、バッチ処理オーケストレーションに送信された EDI トランザクション セットを、送信バッチに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="ebf7d-103"> enables you to correlate an EDI transaction set submitted to the Batching Orchestration with an outgoing batch.</span></span> <span data-ttu-id="ebf7d-104">これを行うには、バッチ処理オーケストレーションに送信されたトランザクション セットの状態レポートのエントリ (BTSInterchangeID) を、オーケストレーションの状態レポートのエントリ (ActivityID) に関連付けます。</span><span class="sxs-lookup"><span data-stu-id="ebf7d-104">You do so by correlating a status reporting entry for the transaction set submitted to the Batching Orchestration (the BTSInterchangeID) to a status reporting entry for the orchestration (ActivityID).</span></span> <span data-ttu-id="ebf7d-105">この関連付けは、BusinessMessageJournal BAM アクティビティのエントリを使用して行います。</span><span class="sxs-lookup"><span data-stu-id="ebf7d-105">This correlation is performed using entries in the BusinessMessageJournal BAM activity.</span></span> <span data-ttu-id="ebf7d-106">これらのエントリは、バッチ処理オーケストレーションが、バッチ要素の受信時に作成します。</span><span class="sxs-lookup"><span data-stu-id="ebf7d-106">These entries are created by the Batching Orchestration when a batch element is received.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "XML アセンブラー パイプライン コンポーネントでの文字エン コード |Microsoft ドキュメント"
-ms.custom: 
+title: XML アセンブラー パイプライン コンポーネントでの文字エン コード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBaseMessagePart.Charset property
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Target Charset property
 - XML Assembler [pipeline component], character encoding
 ms.assetid: c031fbbf-f00f-41ba-8ac9-cec7d625cef6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232106"
 ---
 # <a name="character-encoding-in-the-xml-assembler-pipeline-component"></a><span data-ttu-id="2848a-102">XML アセンブラー パイプライン コンポーネントでの文字エン コード</span><span class="sxs-lookup"><span data-stu-id="2848a-102">Character Encoding in the XML Assembler Pipeline Component</span></span>
 <span data-ttu-id="2848a-103">XML アセンブラー パイプライン コンポーネントでは、ユーザー指定の文字エンコード方法に基づいてメッセージを生成します。指定できるエンコード方法は、次の表に示す 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="2848a-103">The XML Assembler pipeline component can produce messages in user-specified character encoding in two ways, as shown in the following table.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="2848a-104">エンコード レベル</span><span class="sxs-lookup"><span data-stu-id="2848a-104">Encoding level</span></span>|<span data-ttu-id="2848a-105">エンコード方法</span><span class="sxs-lookup"><span data-stu-id="2848a-105">Encoding method</span></span>|  
 |--------------------|---------------------|  
 |<span data-ttu-id="2848a-106">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="2848a-106">Component</span></span>|<span data-ttu-id="2848a-107">設定、**表せない**パイプライン デザイナーでコンポーネントのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="2848a-107">Set the **Target charset** component property in Pipeline Designer.</span></span>|  
-|<span data-ttu-id="2848a-108">メッセージ</span><span class="sxs-lookup"><span data-stu-id="2848a-108">Message</span></span>|<span data-ttu-id="2848a-109">設定、 **XMLNorm.TargetCharset**メッセージ コンテキストのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="2848a-109">Set the **XMLNorm.TargetCharset** property on the message context.</span></span> <span data-ttu-id="2848a-110">**注:**メッセージ コンテキスト プロパティは常にパイプライン デザイナーで設定されたコンテキスト プロパティをオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="2848a-110">**Note:**  A message context property always overrides any context property set in Pipeline Designer.</span></span>|  
+|<span data-ttu-id="2848a-108">メッセージ</span><span class="sxs-lookup"><span data-stu-id="2848a-108">Message</span></span>|<span data-ttu-id="2848a-109">設定、 **XMLNorm.TargetCharset**メッセージ コンテキストのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="2848a-109">Set the **XMLNorm.TargetCharset** property on the message context.</span></span> <span data-ttu-id="2848a-110">**注:** メッセージ コンテキスト プロパティは常にパイプライン デザイナーで設定されたコンテキスト プロパティをオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="2848a-110">**Note:**  A message context property always overrides any context property set in Pipeline Designer.</span></span>|  
   
  <span data-ttu-id="2848a-111">XML アセンブラーでは、次のアルゴリズムに基づいて、出力メッセージのエンコードを決定します。</span><span class="sxs-lookup"><span data-stu-id="2848a-111">The XML Assembler uses the following algorithm to determine output message encoding:</span></span>  
   

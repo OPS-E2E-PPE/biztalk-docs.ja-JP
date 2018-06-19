@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオンを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオンを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 511edc1d-de82-4d17-88ea-6cacfccde10d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247770"
 ---
 # <a name="how-to-configure-single-sign-on"></a><span data-ttu-id="520d9-102">シングル サインオンを構成する方法</span><span class="sxs-lookup"><span data-stu-id="520d9-102">How to Configure Single Sign-On</span></span>
 <span data-ttu-id="520d9-103">エンタープライズ シングル サインオンにアクセスする前に、エンタープライズ シングル サインオンが現在のユーザーに正しく設定されていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="520d9-103">Before accessing Enterprise Single Sign-On, you should make sure that Enterprise Single Sign-On is set correctly for the current user.</span></span> <span data-ttu-id="520d9-104">ほとんどの構成には、2 つのインターフェイスのいずれかを使用します。</span><span class="sxs-lookup"><span data-stu-id="520d9-104">For most configurations, you use one of two interfaces.</span></span> <span data-ttu-id="520d9-105">`ISSOAdmin`一般的な管理インターフェイス新しい関連アプリケーションを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="520d9-105">`ISSOAdmin` is the general administration interface that enables you to create new affiliation applications.</span></span> <span data-ttu-id="520d9-106">一方、ISSOAdmin.GetGlobalInfo と ISSOAdmin.UpdateGlobalInfo を使用すると、さまざまなフラグや管理値を設定できます。</span><span class="sxs-lookup"><span data-stu-id="520d9-106">However, by using ISSOAdmin.GetGlobalInfo and ISSOAdmin.UpdateGlobalInfo, you can set a variety of flags and administration values.</span></span> <span data-ttu-id="520d9-107">次の手順で説明するように、たとえば SSO チケットが有効であることを保証するタスクに使用できます。</span><span class="sxs-lookup"><span data-stu-id="520d9-107">One possible task, as described in the following procedure, is to ensure that SSO ticketing has been enabled.</span></span>  

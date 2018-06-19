@@ -1,17 +1,17 @@
 ---
-title: "ビジネス ルールの作成と |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルールの作成と |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, Business Rules Editor
 - Business Rules Editor
 ms.assetid: a15fd09b-ff4e-4c26-8cb6-5ffd258a2182
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238242"
 ---
 # <a name="creating-and-using-business-rules"></a><span data-ttu-id="175c4-102">ビジネス ルールの作成および使用</span><span class="sxs-lookup"><span data-stu-id="175c4-102">Creating and Using Business Rules</span></span>
 <span data-ttu-id="175c4-103">ビジネス ルール (またはビジネス ポリシー) は、組織の構造、活動、および戦略を定義し、制御するものです。</span><span class="sxs-lookup"><span data-stu-id="175c4-103">Business rules (or business policies) define and control the structure, operation, and strategy of an organization.</span></span> <span data-ttu-id="175c4-104">ビジネス ルールは手順書や契約書などで正式に規定されている場合もあれば、従業員の知識や専門知識として存在する場合もあります。</span><span class="sxs-lookup"><span data-stu-id="175c4-104">Business rules may be formally defined in procedure manuals, contracts, or agreements, or may exist as knowledge or expertise embodied in employees.</span></span> <span data-ttu-id="175c4-105">ビジネス ルールは動的で時間と共に変化し、すべての種類のアプリケーションで使用されます。</span><span class="sxs-lookup"><span data-stu-id="175c4-105">Business rules are dynamic and subject to change over time, and can be found in all types of applications.</span></span> <span data-ttu-id="175c4-106">金融保険、e ビジネス、輸送、電気通信、Web ベースのサービス、パーソナル化などは、ビジネス ルールによって統制される数多くのビジネス分野のごく一部に過ぎません。</span><span class="sxs-lookup"><span data-stu-id="175c4-106">Finance and insurance, e-business, transportation, telecommunications, Web-based services, and personalization are just a few of the many business domains that are governed by business rules.</span></span> <span data-ttu-id="175c4-107">これらのビジネス分野が共通して抱えているニーズは、ビジネス上の戦略、ポリシー、および規定を情報技術 (IT) 担当者に伝えてソフトウェア アプリケーションに組み込むことです。</span><span class="sxs-lookup"><span data-stu-id="175c4-107">Each of these business domains shares the need to convey business strategies, policies, and regulations to information technology (IT) personnel for inclusion into software applications.</span></span>  

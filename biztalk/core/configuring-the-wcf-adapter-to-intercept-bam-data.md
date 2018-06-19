@@ -1,14 +1,14 @@
 ---
-title: "BAM データを受信する WCF アダプタの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM データを受信する WCF アダプタの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd705c27-5d04-47e5-9bb2-61235f8fe544
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232770"
 ---
 # <a name="configuring-the-wcf-adapter-to-intercept-bam-data"></a><span data-ttu-id="508f3-102">BAM データを受信するための WCF アダプタの構成</span><span class="sxs-lookup"><span data-stu-id="508f3-102">Configuring the WCF Adapter to Intercept BAM Data</span></span>
 <span data-ttu-id="508f3-103">このセクションでは、BAM WCF インターセプタと連携するように BizTalk WCF アダプタを構成するために必要な手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="508f3-103">This section contains information about the steps you must take to configure the BizTalk WCF adapter to work with the BAM WCF interceptor.</span></span>  

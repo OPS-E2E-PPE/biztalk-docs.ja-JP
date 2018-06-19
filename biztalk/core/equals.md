@@ -1,14 +1,14 @@
 ---
-title: "等しい |Microsoft ドキュメント"
-ms.custom: 
+title: 等しい |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac93031a-9d18-443d-9e38-71ef9edd5a30
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239818"
 ---
 # <a name="equals"></a><span data-ttu-id="de74e-102">[等しい]</span><span class="sxs-lookup"><span data-stu-id="de74e-102">Equals</span></span>
 <span data-ttu-id="de74e-103">スタックから上位 2 項目を削除し、その 2 つの項目を比較して、結果をスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="de74e-103">Removes the top two items from the stack, compares the two items, and then pushes the result onto the stack.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk エディターを使用してスキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk エディターを使用してスキーマの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03fac91b-5b67-4baf-968c-294c525d3018
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238938"
 ---
 # <a name="create-schemas-using-biztalk-editor"></a><span data-ttu-id="880ce-102">BizTalk エディターを使用してスキーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="880ce-102">Create Schemas Using BizTalk Editor</span></span>
 

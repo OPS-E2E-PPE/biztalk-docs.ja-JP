@@ -1,14 +1,14 @@
 ---
-title: "レコードを自動的にリンクする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: レコードを自動的にリンクする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc2926c7-07c2-45d1-afde-d3f894f6b88d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254850"
 ---
 # <a name="how-to-link-records-automatically"></a><span data-ttu-id="a08ed-102">レコードを自動的にリンクする方法</span><span class="sxs-lookup"><span data-stu-id="a08ed-102">How to Link Records Automatically</span></span>
 <span data-ttu-id="a08ed-103">BizTalk マッパーでは、ショートカットを使用して、送信元スキーマと送信先スキーマの 2 つのレコード要素間のリンクを効率的に作成することができます。</span><span class="sxs-lookup"><span data-stu-id="a08ed-103">The BizTalk Mapper provides you with just-in-time assistance, through a shortcut menu, when you create links between two record elements of source and destination schemas.</span></span> <span data-ttu-id="a08ed-104">このトピックでは、ショートカット メニューを使用してリンク操作を実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a08ed-104">This topic provides information about how to use the shortcut menu to perform the linking operations.</span></span>  

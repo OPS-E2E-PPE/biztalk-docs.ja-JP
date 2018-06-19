@@ -1,11 +1,11 @@
 ---
-title: "データ型のプロパティの変換 |Microsoft ドキュメント"
-ms.custom: 
+title: データ型のプロパティの変換 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQSeries adapters, data type conversion
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - MQCHAR property [MQSeries adapters]
 - configuring [MQSeries adapters], data type conversion
 ms.assetid: 5b81eab0-f7a1-42f3-b212-a211b2893fd5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238666"
 ---
 # <a name="data-type-conversion-of-properties"></a><span data-ttu-id="b7e5e-102">プロパティのデータ型の変換</span><span class="sxs-lookup"><span data-stu-id="b7e5e-102">Data Type Conversion of Properties</span></span>
 <span data-ttu-id="b7e5e-103">MQSeries メッセージのヘッダー プロパティは、そのメッセージ自体に含まれているデータ構造です。</span><span class="sxs-lookup"><span data-stu-id="b7e5e-103">Header properties in an MQSeries message are data structures contained in the message itself.</span></span> <span data-ttu-id="b7e5e-104">MQSeries アダプタでは、メッセージの送受信時に MQSeries メッセージ ヘッダーの特定の値を自動的に検証および変換します。</span><span class="sxs-lookup"><span data-stu-id="b7e5e-104">The MQSeries adapter automatically validates and converts certain values in MQSeries message headers when sending and receiving messages.</span></span>  

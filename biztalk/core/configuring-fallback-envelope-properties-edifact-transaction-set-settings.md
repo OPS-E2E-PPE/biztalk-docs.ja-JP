@@ -1,14 +1,14 @@
 ---
-title: "フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b56a5a93-35ac-4293-b00e-28dcd89dfa2a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233722"
 ---
 # <a name="configuring-fallback-envelope-properties-edifact-transaction-set-settings"></a><span data-ttu-id="367e4-102">フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="367e4-102">Configuring Fallback Envelope Properties (EDIFACT-Transaction Set Settings)</span></span>
 <span data-ttu-id="367e4-103">**エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する EDIFACT エンコード インターチェンジの UNG セグメントを生成する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="367e4-103">In the **Envelopes** page of the **Transaction Set Settings** section, you define how BizTalk Server generates the UNG segments for an EDIFACT-encoded interchange that it sends to the party.</span></span>  
@@ -34,13 +35,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="367e4-111">**機能グループ ID (UNG1)**、1 つの文字の最小値、最大 6 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="367e4-111">For **Functional group ID (UNG1)**, enter an alphanumeric value with a minimum of one character and a maximum of six characters.</span></span> <span data-ttu-id="367e4-112">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="367e4-112">This is a required field.</span></span>  
   
-4.  <span data-ttu-id="367e4-113">識別する値を入力**アプリケーション送信者 (UNG2)**です。</span><span class="sxs-lookup"><span data-stu-id="367e4-113">Enter values to identify **Application sender (UNG2)**.</span></span>  
+4.  <span data-ttu-id="367e4-113">識別する値を入力**アプリケーション送信者 (UNG2)** です。</span><span class="sxs-lookup"><span data-stu-id="367e4-113">Enter values to identify **Application sender (UNG2)**.</span></span>  
   
     -   <span data-ttu-id="367e4-114">**Id (UNG2.1)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="367e4-114">For **Identification (UNG2.1)**, enter an alphanumeric value with a minimum of one character and a maximum of 35 characters.</span></span> <span data-ttu-id="367e4-115">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="367e4-115">This is a required field.</span></span>  
   
     -   <span data-ttu-id="367e4-116">**コードの修飾子 (UNG2.2)**、1 つの文字の最小値、最大 4 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="367e4-116">For **Code qualifier (UNG2.2)**, enter an alphanumeric value with a minimum of one character and a maximum of four characters.</span></span> <span data-ttu-id="367e4-117">このフィールドの入力は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="367e4-117">This is an optional field.</span></span>  
   
-5.  <span data-ttu-id="367e4-118">識別する値を入力**アプリケーション受信者 (UNG3)**です。</span><span class="sxs-lookup"><span data-stu-id="367e4-118">Enter values to identify **Application recipient (UNG3)**.</span></span>  
+5.  <span data-ttu-id="367e4-118">識別する値を入力**アプリケーション受信者 (UNG3)** です。</span><span class="sxs-lookup"><span data-stu-id="367e4-118">Enter values to identify **Application recipient (UNG3)**.</span></span>  
   
     -   <span data-ttu-id="367e4-119">**の Id (UNG3.1)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="367e4-119">For **Identification (UNG3.1)**, enter an alphanumeric value with a minimum of one character and a maximum of 35 characters.</span></span> <span data-ttu-id="367e4-120">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="367e4-120">This is a required field.</span></span>  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="367e4-123">**制御機関 (UNG6)**、1 つの文字の最小値、最大 2 つの文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="367e4-123">For **Controlling agency (UNG6)**, enter an alphanumeric value with a minimum of one character and a maximum of two characters.</span></span> <span data-ttu-id="367e4-124">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="367e4-124">This is a required field.</span></span>  
   
-7.  <span data-ttu-id="367e4-125">識別する値を入力**メッセージ バージョン (UNG7)**です。</span><span class="sxs-lookup"><span data-stu-id="367e4-125">Enter values to identify **Message version (UNG7)**.</span></span>  
+7.  <span data-ttu-id="367e4-125">識別する値を入力**メッセージ バージョン (UNG7)** です。</span><span class="sxs-lookup"><span data-stu-id="367e4-125">Enter values to identify **Message version (UNG7)**.</span></span>  
   
     -   <span data-ttu-id="367e4-126">**バージョン (UNG7.1)**、1 つの文字の最小値、最大 3 つの文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="367e4-126">For **Version (UNG7.1)**, enter an alphanumeric value with a minimum of one character and a maximum of three characters.</span></span> <span data-ttu-id="367e4-127">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="367e4-127">This is a required field.</span></span>  
   

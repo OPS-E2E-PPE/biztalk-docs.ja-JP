@@ -1,14 +1,14 @@
 ---
-title: "単一のメッセージにインターチェンジの複数の受信を有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: 単一のメッセージにインターチェンジの複数の受信を有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c98bcd2e-495a-49d8-a471-6e23b1e161f9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240834"
 ---
 # <a name="enabling-the-receiving-of-multiple-interchanges-in-a-single-message"></a><span data-ttu-id="637e9-102">単一メッセージ内の複数インターチェンジの受信を可能にする</span><span class="sxs-lookup"><span data-stu-id="637e9-102">Enabling the Receiving of Multiple Interchanges in a Single Message</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="637e9-103"> は、複数のインターチェンジを含むメッセージを処理できます。</span><span class="sxs-lookup"><span data-stu-id="637e9-103"> can process a message that contains multiple interchanges.</span></span> <span data-ttu-id="637e9-104">X12 メッセージには、複数の ISA ヘッダーと IEA トレーラーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="637e9-104">For an X12 message, such a message would include multiple ISA headers and IEA trailers.</span></span> <span data-ttu-id="637e9-105">EDIFACT メッセージには、複数の UNA/UNB ヘッダーと UNZ トレーラーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="637e9-105">For an EDIFACT message, such a message would include multiple UNA/UNB headers and UNZ trailers.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="637e9-121">**パイプラインの構成**ダイアログ ボックスで、設定、 **DetectMID**パイプライン プロパティを**True**です。</span><span class="sxs-lookup"><span data-stu-id="637e9-121">In the **Configure Pipeline** dialog box, set the **DetectMID** pipeline property to **True**.</span></span>  
   
-4.  <span data-ttu-id="637e9-122">をクリックして**[ok]**、をクリックして**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="637e9-122">Click **OK**, then click **OK** again.</span></span>  
+4.  <span data-ttu-id="637e9-122">をクリックして **[ok]**、をクリックして**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="637e9-122">Click **OK**, then click **OK** again.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="637e9-123">参照</span><span class="sxs-lookup"><span data-stu-id="637e9-123">See Also</span></span>  
  [<span data-ttu-id="637e9-124">EDI ソリューションのポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="637e9-124">Configuring Ports for an EDI Solution</span></span>](../core/configuring-ports-for-an-edi-solution.md)

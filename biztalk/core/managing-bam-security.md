@@ -1,17 +1,17 @@
 ---
-title: "BAM セキュリティの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM セキュリティの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, BAM
 - managing [BAM], security
 ms.assetid: 21749ae3-b42a-43c2-b85e-1f958bd78170
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262322"
 ---
 # <a name="managing-bam-security"></a><span data-ttu-id="f0a8c-102">BAM セキュリティの管理</span><span class="sxs-lookup"><span data-stu-id="f0a8c-102">Managing BAM Security</span></span>
 <span data-ttu-id="f0a8c-103">このセクションでは、BAM セキュリティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="f0a8c-103">This section provides information about BAM security.</span></span> <span data-ttu-id="f0a8c-104">BAM ビューのユーザー アカウントの管理手順と、警告に対するサブスクリプションの管理手順が記載されています。</span><span class="sxs-lookup"><span data-stu-id="f0a8c-104">It includes procedures for managing user accounts for BAM views and managing subscriptions to alerts.</span></span>  

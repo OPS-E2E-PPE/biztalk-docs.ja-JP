@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジの状態と確認の詳細の状態レポート |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジの状態と確認の詳細の状態レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebba4af5-6dff-4bb8-9c63-739ef49bbbb8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257642"
 ---
 # <a name="interchange-status-and-ack-details-status-report"></a><span data-ttu-id="03d52-102">インターチェンジの状態と確認の詳細の状態レポート</span><span class="sxs-lookup"><span data-stu-id="03d52-102">Interchange Status and ACK Details Status Report</span></span>
 <span data-ttu-id="03d52-103">この状態レポートには、インターチェンジの詳細と、関連するインターチェンジの (技術) 確認および機能確認が表示されます。</span><span class="sxs-lookup"><span data-stu-id="03d52-103">This status report displays details of an interchange and its correlated interchange (technical) acknowledgment and functional acknowledgments.</span></span> <span data-ttu-id="03d52-104">インターチェンジ/確認の状態レポート内のインターチェンジを右クリックし、このレポートを表示する**インターチェンジの状態と確認の詳細**です。</span><span class="sxs-lookup"><span data-stu-id="03d52-104">You display this report for right-clicking an interchange within the Interchange/ACK status report, and then clicking **Interchange status and ack details**.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "Web サービスの配列を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスの配列を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, Web services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, Web services
 - orchestrations, Web ports
 ms.assetid: 29ecaaed-aa8a-4cf9-a7c8-4b0d6dd412ac
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249898"
 ---
 # <a name="how-to-consume-web-service-arrays"></a><span data-ttu-id="44616-102">方法: Web サービスの配列を使用する</span><span class="sxs-lookup"><span data-stu-id="44616-102">How to Consume Web Service Arrays</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="44616-103"> では、BizTalk オーケストレーションから Web サービスで公開される配列を使用できます。</span><span class="sxs-lookup"><span data-stu-id="44616-103"> provides the ability to consume arrays that are exposed in Web services from a BizTalk Orchestration.</span></span>  
@@ -51,9 +52,9 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="44616-117">ドラッグ、**ポート**を起動するオーケストレーション デザイナーで、ツールボックスから図形をポートのいずれかを表示、**ポート構成ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="44616-117">Drag a **Port** shape from the toolbox to one of the port surfaces in the Orchestration Designer to launch the **Port Configuration Wizard**.</span></span> <span data-ttu-id="44616-118">をクリックして、**次**ボタンをクリックして、**ポート構成ウィザード**を表示する、**ポートのプロパティ**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="44616-118">Click the **Next** button in the **Port Configuration Wizard** to display the **Port Properties** dialog.</span></span>  
   
-    -   <span data-ttu-id="44616-119">値を入力して、**名前**テキスト ボックスに、ポートを特定し、をクリックして、 **[次へ]**を表示するボタン、**ポートの種類を選択**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="44616-119">Enter a value into the **Name** text box to identify the port, and click the **Next** button to display the **Select a Port Type** dialog.</span></span>  
+    -   <span data-ttu-id="44616-119">値を入力して、**名前**テキスト ボックスに、ポートを特定し、をクリックして、 **[次へ]** を表示するボタン、**ポートの種類を選択**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="44616-119">Enter a value into the **Name** text box to identify the port, and click the **Next** button to display the **Select a Port Type** dialog.</span></span>  
   
-    -   <span data-ttu-id="44616-120">オプションを選択して**既存のポートの種類を使用して**、Web に対応する型が参照を追加して、をクリックして、Web ポートを選択して、 **[次へ]**を表示するボタン、**ポートのバインド**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="44616-120">Select the option to **Use an existing Port Type**, select the Web Port type that corresponds to the Web reference you added, and click the **Next** button to display the **Port Binding** dialog.</span></span>  
+    -   <span data-ttu-id="44616-120">オプションを選択して**既存のポートの種類を使用して**、Web に対応する型が参照を追加して、をクリックして、Web ポートを選択して、 **[次へ]** を表示するボタン、**ポートのバインド**ダイアログ。</span><span class="sxs-lookup"><span data-stu-id="44616-120">Select the option to **Use an existing Port Type**, select the Web Port type that corresponds to the Web reference you added, and click the **Next** button to display the **Port Binding** dialog.</span></span>  
   
     -   <span data-ttu-id="44616-121">**ポートのバインド**ダイアログを適切な選択**ポートのバインド**オプションし、をクリックして、**次** ボタン、をクリックして、**完了**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="44616-121">In the **Port Binding** dialog select the appropriate **Port binding** option and click the **Next** button, then click the **Finish** button.</span></span> <span data-ttu-id="44616-122">これで、オーケストレーション デザイナーに、Web サービスでサポートされる操作を含む Web ポートが表示されます。</span><span class="sxs-lookup"><span data-stu-id="44616-122">You should now have a Web port displayed in the Orchestration Designer that includes the operations supported by the Web service.</span></span>  
   

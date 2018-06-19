@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server データベースを移動 |Microsoft ドキュメント"
-description: "BizTalk Server データベースを含むサービスを停止して、SQL Server エージェント ジョブを使用して、新しいサーバーに移動する手順"
-ms.custom: 
+title: BizTalk Server データベースを移動 |Microsoft ドキュメント
+description: BizTalk Server データベースを含むサービスを停止して、SQL Server エージェント ジョブを使用して、新しいサーバーに移動する手順
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec302e6d-c89d-4fe7-849f-97b5566e8ba4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254178"
 ---
 # <a name="how-to-move-the-biztalk-server-databases"></a><span data-ttu-id="0bef2-103">BizTalk Server データベースを移動する方法</span><span class="sxs-lookup"><span data-stu-id="0bef2-103">How to Move the BizTalk Server Databases</span></span>
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="0bef2-117">SQL Server エージェント ジョブは、以下に示す、新しいサーバーに転送するための説明に従ってスクリプト[Back Up and SQL エージェント ジョブを復元する方法](../core/how-to-back-up-and-restore-sql-agent-jobs.md)です。</span><span class="sxs-lookup"><span data-stu-id="0bef2-117">Script the SQL Server Agent jobs listed below for transfer to the new server, as described at [How to Back Up and Restore SQL Agent Jobs](../core/how-to-back-up-and-restore-sql-agent-jobs.md).</span></span>  <span data-ttu-id="0bef2-118">それぞれのスクリプトを新しいサーバーで実行してジョブを再作成します。</span><span class="sxs-lookup"><span data-stu-id="0bef2-118">Run each of the scripts on the new server to recreate the jobs.</span></span>  
   
-     <span data-ttu-id="0bef2-119">それぞれのスクリプトを新しいサーバーで実行してジョブを再作成します。</span><span class="sxs-lookup"><span data-stu-id="0bef2-119">Run each of the scripts on the new server to recreate the jobs.</span></span> <span data-ttu-id="0bef2-120">などの特定のジョブ、 **BizTalk Server のバックアップ (BizTalkMsgBoxDb)**ジョブに、新しいサーバーのファイル パスとサーバー名は、古いサーバーと同じ場合を除き、再構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0bef2-120">Certain jobs, such as the **Backup BizTalk Server (BizTalkMsgBoxDb)** job, will have to be reconfigured unless the new server file paths and server name are identical to the old server.</span></span>  
+     <span data-ttu-id="0bef2-119">それぞれのスクリプトを新しいサーバーで実行してジョブを再作成します。</span><span class="sxs-lookup"><span data-stu-id="0bef2-119">Run each of the scripts on the new server to recreate the jobs.</span></span> <span data-ttu-id="0bef2-120">などの特定のジョブ、 **BizTalk Server のバックアップ (BizTalkMsgBoxDb)** ジョブに、新しいサーバーのファイル パスとサーバー名は、古いサーバーと同じ場合を除き、再構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0bef2-120">Certain jobs, such as the **Backup BizTalk Server (BizTalkMsgBoxDb)** job, will have to be reconfigured unless the new server file paths and server name are identical to the old server.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="0bef2-121">SSIS または DTS を使用することもできます。**ジョブ転送**タスクは、新しいサーバーにジョブを移動するが、ほとんどのユーザーはおそらくほうが簡単な SQL Management Studio を使用してジョブのスクリプトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0bef2-121">You can also use the SSIS/DTS **Transfer Jobs** task to move the jobs to the new server, but most users will probably find it easier to script the jobs using SQL Management Studio.</span></span>  

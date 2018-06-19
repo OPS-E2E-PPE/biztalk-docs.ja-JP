@@ -1,14 +1,14 @@
 ---
-title: "バッチ id に対する制御メッセージの作成に失敗しました |Microsoft ドキュメント"
-ms.custom: 
+title: バッチ id に対する制御メッセージの作成に失敗しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f03078e7-46b0-4082-9d66-6b892152a12d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238194"
 ---
 # <a name="creation-of-control-message-failed-for-batch-id"></a><span data-ttu-id="057b5-102">バッチ ID に対する制御メッセージの作成が失敗しました</span><span class="sxs-lookup"><span data-stu-id="057b5-102">Creation of Control Message failed for Batch id</span></span>
 ## <a name="details"></a><span data-ttu-id="057b5-103">詳細</span><span class="sxs-lookup"><span data-stu-id="057b5-103">Details</span></span>  

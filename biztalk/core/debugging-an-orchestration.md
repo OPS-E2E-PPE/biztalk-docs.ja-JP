@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションのデバッグ |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションのデバッグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugging, Orchestration Debugger
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - debugging, HAT
 - HAT, debugging
 ms.assetid: aae99cfd-d3dd-41c8-ae7a-b2733352cd69
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238586"
 ---
 # <a name="debugging-an-orchestration"></a><span data-ttu-id="e1d37-102">オーケストレーションのデバッグ</span><span class="sxs-lookup"><span data-stu-id="e1d37-102">Debugging an Orchestration</span></span>
 <span data-ttu-id="e1d37-103">オーケストレーション デバッガーを使用すると、単一のオーケストレーション インスタンスのアクティビティを図形ごとに追跡できます。</span><span class="sxs-lookup"><span data-stu-id="e1d37-103">The Orchestration Debugger enables you to track the activity of a single orchestration instance on a shape-by-shape basis.</span></span> <span data-ttu-id="e1d37-104">これにより、オーケストレーション デザイナーで作成されたオーケストレーションの描画されたビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e1d37-104">It displays a rendered view of the orchestration created in the Orchestration Designer.</span></span>  

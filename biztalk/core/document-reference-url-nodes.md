@@ -1,18 +1,18 @@
 ---
-title: "ドキュメント参照 URL ノード |Microsoft ドキュメント"
-ms.custom: 
+title: ドキュメント参照 URL ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Document Reference URL nodes [Tracking Profile Editor]
 - Tracking Profile Editor, node descriptions
 - definition files [BAM], related documents
 ms.assetid: 38c8ae50-ed56-451c-9549-db852d4770e5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238970"
 ---
 # <a name="document-reference-url-nodes"></a><span data-ttu-id="4378b-102">ドキュメント参照 URL ノード</span><span class="sxs-lookup"><span data-stu-id="4378b-102">Document Reference URL Nodes</span></span>
 <span data-ttu-id="4378b-103">ドキュメント参照 URL ノードは、ナレッジ ワーカーが作成した監視モデルから開発者がインポートする、アクティビティ定義ファイル内に存在します。</span><span class="sxs-lookup"><span data-stu-id="4378b-103">Document Reference URL nodes exist in the activity definition file that the developer imports from the knowledge worker created observation model.</span></span> <span data-ttu-id="4378b-104">ドキュメント参照 URL ノードには、このアクティビティに関連するドキュメントが格納されている場所への参照が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4378b-104">Document Reference URL nodes contain references to a location that contains a document that is related to this activity.</span></span> <span data-ttu-id="4378b-105">たとえば注文書の承認ワーク フローを表すアクティビティなど、すべての種類のドキュメントが対象になります。ドキュメント参照 URL は、基になる注文書を指すこともあります。</span><span class="sxs-lookup"><span data-stu-id="4378b-105">This can be any type of document, for example an activity that represents a purchase order approval work flow, the Document Reference URL might point to the underlying purchase order document.</span></span>  

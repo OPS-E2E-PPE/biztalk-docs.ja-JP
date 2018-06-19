@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジ (X12) の設定の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジ (X12) の設定の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9db609eb-76e6-4548-9a4e-1673c01f0c76
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232938"
 ---
 # <a name="configuring-interchange-settings-x12"></a><span data-ttu-id="8cd36-102">インターチェンジの設定の構成 (X12)</span><span class="sxs-lookup"><span data-stu-id="8cd36-102">Configuring Interchange Settings (X12)</span></span>
 <span data-ttu-id="8cd36-103">X12 インターチェンジ処理のプロパティは、パーティから送られてきた X12 エンコード インターチェンジのエンベロープを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でどのように処理するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="8cd36-103">X12 interchange processing properties define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the envelope of an X12-encoded interchange received from a party.</span></span>  

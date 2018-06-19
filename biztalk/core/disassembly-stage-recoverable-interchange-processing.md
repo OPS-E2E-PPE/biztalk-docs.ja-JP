@@ -1,14 +1,14 @@
 ---
-title: "逆アセンブリ ステージ (回復可能なインターチェンジ処理) |Microsoft ドキュメント"
-ms.custom: 
+title: 逆アセンブリ ステージ (回復可能なインターチェンジ処理) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 552b1e90-f75d-4713-8c7b-155a52819308
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242154"
 ---
 # <a name="disassembly-stage-recoverable-interchange-processing"></a><span data-ttu-id="96522-102">逆アセンブリ ステージ (回復可能なインターチェンジ処理)</span><span class="sxs-lookup"><span data-stu-id="96522-102">Disassembly Stage (Recoverable Interchange Processing)</span></span>
 <span data-ttu-id="96522-103">インターチェンジは、逆アセンブリ ステージにおいて 2 つのモードで処理されます。</span><span class="sxs-lookup"><span data-stu-id="96522-103">Interchanges are processed at the disassembly stage in two modes:</span></span>  

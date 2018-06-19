@@ -1,17 +1,17 @@
 ---
-title: "SOAP アダプターの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプターの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SOAP adapters]
 - SOAP adapters, configuring
 ms.assetid: 810f3543-21d3-4bb5-b477-6463f4576335
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232594"
 ---
 # <a name="configuring-the-soap-adapter"></a><span data-ttu-id="5b5e9-102">SOAP アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="5b5e9-102">Configuring the SOAP Adapter</span></span>
 <span data-ttu-id="5b5e9-103">このセクションでは、SOAP アダプターを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5b5e9-103">This section describes how to configure a SOAP adapter.</span></span>  

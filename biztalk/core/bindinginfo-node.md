@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232274"
 ---
 # <a name="bindinginfo-node"></a><span data-ttu-id="19f98-102">BindingInfo ノード</span><span class="sxs-lookup"><span data-stu-id="19f98-102">BindingInfo Node</span></span>
 <span data-ttu-id="19f98-103">**BindingInfo**バインド ファイルのノードは、バインド ファイルのルート ノードと、バインド ファイル内のエントリのすべてに適用される情報だけでなく、バインド ファイルがエクスポートされた BizTalk Server に関する情報が含まれています差出人。</span><span class="sxs-lookup"><span data-stu-id="19f98-103">The **BindingInfo** node of a binding file is the root node of a binding file and contains information that applies to all of the entries in the binding file as well as information about the BizTalk Server that the binding file was exported from.</span></span>  

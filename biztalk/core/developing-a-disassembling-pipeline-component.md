@@ -1,11 +1,11 @@
 ---
-title: "パイプライン コンポーネントの開発、逆アセンブル |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントの開発、逆アセンブル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IDisassemblerComponent interface, disassembling
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - IBaseComponent interface, disassembling
 - pipeline components [custom], disassembling
 ms.assetid: 77c0aa7d-4d1b-4a8f-bef8-d38e7e4045c6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239706"
 ---
 # <a name="developing-a-disassembling-pipeline-component"></a><span data-ttu-id="60111-102">逆アセンブラー パイプライン コンポーネントの開発</span><span class="sxs-lookup"><span data-stu-id="60111-102">Developing a Disassembling Pipeline Component</span></span>
 <span data-ttu-id="60111-103">逆アセンブラー パイプライン コンポーネントは入力時に 1 通のメッセージを受け取り、出力時に 0 通以上のメッセージを生成します。</span><span class="sxs-lookup"><span data-stu-id="60111-103">A disassembling pipeline component receives one message on input and produces zero or more messages on output.</span></span> <span data-ttu-id="60111-104">逆アセンブラー コンポーネントは、メッセージのインターチェンジを個別のドキュメントに分割するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="60111-104">Disassembling components are used to split interchanges of messages into individual documents.</span></span> <span data-ttu-id="60111-105">逆アセンブラー コンポーネントは次のインターフェイスを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="60111-105">Disassembler components must implement the following interfaces:</span></span>  

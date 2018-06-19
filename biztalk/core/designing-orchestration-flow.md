@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238746"
 ---
 # <a name="designing-orchestration-flow"></a><span data-ttu-id="5ab19-102">オーケストレーション フローの設計</span><span class="sxs-lookup"><span data-stu-id="5ab19-102">Designing Orchestration Flow</span></span>
 <span data-ttu-id="5ab19-103">ここでは、オーケストレーションでビジネス プロセス フローを設計する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5ab19-103">This section shows how to design your business process flow in orchestrations.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジの設定 (EDIFACT) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジの設定 (EDIFACT) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8873a88c-89c7-49b0-9886-5fc603947643
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232946"
 ---
 # <a name="configuring-interchange-settings-edifact"></a><span data-ttu-id="792fc-102">インターチェンジの設定の構成 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="792fc-102">Configuring Interchange Settings (EDIFACT)</span></span>
 <span data-ttu-id="792fc-103">EDIFACT インターチェンジ処理のプロパティは、パーティから送られてきた EDIFACT エンコード インターチェンジのエンベロープを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でどのように処理するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="792fc-103">EDIFACT interchange processing properties define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process the envelope of an EDIFACT-encoded interchange received from a party.</span></span>  

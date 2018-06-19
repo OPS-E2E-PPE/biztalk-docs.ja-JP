@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション、ポート、およびメッセージのエラーを調査 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション、ポート、およびメッセージのエラーを調査 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Administration Console [BizTalk Server], Group Hub page
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - messages, errors
 - data, MessageBox database
 ms.assetid: 50b0d272-2d48-4e0f-82ce-6ecc7a65b064
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262306"
 ---
 # <a name="investigating-orchestration-port-and-message-failures"></a><span data-ttu-id="d224e-102">オーケストレーション、ポート、およびメッセージのエラーの調査</span><span class="sxs-lookup"><span data-stu-id="d224e-102">Investigating Orchestration, Port, and Message Failures</span></span>
 <span data-ttu-id="d224e-103">オーケストレーション、ポート、およびメッセージのエラーを調査するには、BizTalk Server 2006 管理コンソールのグループ ハブ ページを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d224e-103">You can use the Group Hub page in the BizTalk Server Administration Console to investigate orchestration, port, and message failures.</span></span> <span data-ttu-id="d224e-104">グループ ハブ ページでは、メッセージ ボックス データベース内のデータにアクセスすることで、現在のシステムのリアルタイムの状態にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d224e-104">The Group Hub page provides access to the current real-time state of the system, accessing data in the MessageBox database.</span></span> <span data-ttu-id="d224e-105">オーケストレーション、ポート、メッセージングなどのすべてのサービス インスタンスと、それに関連するメッセージを表示できます。</span><span class="sxs-lookup"><span data-stu-id="d224e-105">You can view all service instances such as orchestrations, ports, and messaging, along with their associated messages.</span></span> <span data-ttu-id="d224e-106">グループ ハブ ページでは、次の操作を行えます。</span><span class="sxs-lookup"><span data-stu-id="d224e-106">Using the Group Hub page you can:</span></span>  

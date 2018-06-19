@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255058"
 ---
 # <a name="how-to-save-a-pipeline"></a><span data-ttu-id="899d1-102">パイプラインを保存する方法</span><span class="sxs-lookup"><span data-stu-id="899d1-102">How to Save a Pipeline</span></span>
 <span data-ttu-id="899d1-103">パイプラインを保存すると、パイプライン構成に関する情報が .btp ファイルに保存されます。パイプライン構成に関しては、次のような情報があります。</span><span class="sxs-lookup"><span data-stu-id="899d1-103">Saving a pipeline stores information about the pipeline configuration to a .btp file, which specifies:</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-save-a-pipeline"></a><span data-ttu-id="899d1-108">パイプラインを保存するには</span><span class="sxs-lookup"><span data-stu-id="899d1-108">To save a pipeline</span></span>  
   
-1.  <span data-ttu-id="899d1-109">**[ファイル]** メニューの **[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="899d1-109">On the **File** menu, click **Save**.</span></span>  
+1.  <span data-ttu-id="899d1-109">**[ファイル]** メニューの **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="899d1-109">On the **File** menu, click **Save**.</span></span>  
   
      <span data-ttu-id="899d1-110">- または -</span><span class="sxs-lookup"><span data-stu-id="899d1-110">—Or—</span></span>  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="899d1-113">**ファイルに名前を付けて** ダイアログ ボックスで、**ファイル**名フィールドに、パイプラインの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="899d1-113">In the **Save File As** dialog box, in the **File** name field, type a name for the pipeline.</span></span> <span data-ttu-id="899d1-114">入力しない場合は、既定の名前が使用されます。</span><span class="sxs-lookup"><span data-stu-id="899d1-114">A default name is supplied for you.</span></span>  
   
-5.  <span data-ttu-id="899d1-115">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="899d1-115">Click **OK**.</span></span>  
+5.  <span data-ttu-id="899d1-115">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="899d1-115">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="899d1-116">参照</span><span class="sxs-lookup"><span data-stu-id="899d1-116">See Also</span></span>  
  <span data-ttu-id="899d1-117">[新しいパイプラインを作成する方法](../core/how-to-create-a-new-pipeline.md) </span><span class="sxs-lookup"><span data-stu-id="899d1-117">[How to Create a New Pipeline](../core/how-to-create-a-new-pipeline.md) </span></span>  

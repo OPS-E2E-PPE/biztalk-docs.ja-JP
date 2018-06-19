@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239770"
 ---
 # <a name="error---could-generate-multiple-equivalent-children"></a><span data-ttu-id="0d90b-102">エラー - には、複数の同レベルの子が生成されました</span><span class="sxs-lookup"><span data-stu-id="0d90b-102">Error - Could Generate Multiple Equivalent Children</span></span>
 <span data-ttu-id="0d90b-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="0d90b-103">**Error Code**</span></span>  

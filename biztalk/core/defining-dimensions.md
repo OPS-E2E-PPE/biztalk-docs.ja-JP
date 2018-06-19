@@ -1,11 +1,11 @@
 ---
-title: "ディメンションの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: ディメンションの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], dimensions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Excel add-in [BAM], creating dimensions
 - dimensions [BAM]
 ms.assetid: c00e0c45-eef2-42d9-832c-4be08d79203f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238490"
 ---
 # <a name="defining-dimensions"></a><span data-ttu-id="185b8-102">ディメンションの定義</span><span class="sxs-lookup"><span data-stu-id="185b8-102">Defining Dimensions</span></span>
 <span data-ttu-id="185b8-103">Microsoft Excel では、ディメンションをカテゴリとして定義し、それによってテーブルのデータを分析に使用できるようにレベル分けします。</span><span class="sxs-lookup"><span data-stu-id="185b8-103">Microsoft Excel defines dimensions as categories used to organize data in a table into levels that will be used for analysis.</span></span> <span data-ttu-id="185b8-104">たとえば、場所データのディメンションの場合、市や都道府県、国/地域などのレベルが考えられます。</span><span class="sxs-lookup"><span data-stu-id="185b8-104">For example, a location data dimension might contain levels such as city, state/province, and country/region.</span></span> <span data-ttu-id="185b8-105">BAM ビュー ウィザードで BAM ビューを作成すると、次の 1 つ以上の種類のディメンションを追加できます。</span><span class="sxs-lookup"><span data-stu-id="185b8-105">When creating BAM Views in the BAM View wizard, you can add one or more of the following dimension types:</span></span>  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22234730"
 ---
 # <a name="cbrsample-biztalk-server-sample"></a><span data-ttu-id="a391e-102">CBRSample (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="a391e-102">CBRSample (BizTalk Server Sample)</span></span>
 <span data-ttu-id="a391e-103">CBRSample サンプルは、フィルタと送信マップを適用して、コンテンツに基づいてインスタンス メッセージを変換およびルーティングする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="a391e-103">The CBRSample sample demonstrates how to apply filters and an outbound map to transform and route instance messages based on content.</span></span>  

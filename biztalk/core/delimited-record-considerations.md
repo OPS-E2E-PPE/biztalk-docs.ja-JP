@@ -1,14 +1,14 @@
 ---
-title: "区切られたレコードの考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 区切られたレコードの考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f93dd94-6ab1-4ae0-801d-e44e722d6f09
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238394"
 ---
 # <a name="delimited-record-considerations"></a><span data-ttu-id="8ff67-102">区切り記号付きレコードに関する注意点</span><span class="sxs-lookup"><span data-stu-id="8ff67-102">Delimited Record Considerations</span></span>
 <span data-ttu-id="8ff67-103">おかなければならないことに注意を操作するときに区切り記号付きの考慮事項の数がある**レコード**スキーマ内のノードです。</span><span class="sxs-lookup"><span data-stu-id="8ff67-103">There are a number of considerations that you should keep in mind when working with delimited **Record** nodes within your schemas.</span></span> <span data-ttu-id="8ff67-104">注意事項には、区切り記号に関連した下位ノードの順序、フラット ファイル形式のメッセージをアセンブルするときに区切り記号を省略してよいかどうかの判断、区切り記号付きレコードと位置指定レコードを混在させる際の制約などがあります。</span><span class="sxs-lookup"><span data-stu-id="8ff67-104">This includes the considerations about the order of subordinate nodes relative to their delimiters, cases in which you can choose to omit delimiters when assembling the flat file representation of a message, and restrictions regarding the intermixing of delimited and positional records.</span></span> <span data-ttu-id="8ff67-105">このセクションでは、これらの注意事項に関する情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="8ff67-105">This section provides information about these considerations.</span></span>  

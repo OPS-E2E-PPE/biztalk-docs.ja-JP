@@ -1,14 +1,14 @@
 ---
-title: "送信アダプターの交換パターン |Microsoft ドキュメント"
-ms.custom: 
+title: 送信アダプターの交換パターン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ad65fb5-640d-4bd2-aabe-946210f58a22
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248354"
 ---
 # <a name="exchange-patterns-for-send-adapters"></a><span data-ttu-id="7fb1b-102">送信アダプターの交換パターン</span><span class="sxs-lookup"><span data-stu-id="7fb1b-102">Exchange Patterns for Send Adapters</span></span>
 <span data-ttu-id="7fb1b-103">送信アダプターには、BizTalk メッセージング エンジンから、回線で送信されるメッセージが配信されます。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-103">Send adapters are delivered messages from the BizTalk Messaging Engine to be transmitted over the wire.</span></span> <span data-ttu-id="7fb1b-104">配信されたメッセージは、一方向または双方向のメッセージ交換パターンを使用して送信される場合があります。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-104">These messages may be sent by using a one-way or two-way message exchange pattern.</span></span> <span data-ttu-id="7fb1b-105">この双方向のメッセージ交換パターンを処理するアダプターを送信請求 - 応答アダプターと呼びます。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-105">An adapter that handles this two-way message exchange pattern is called a Solicit-Response adapter.</span></span>  
@@ -32,9 +33,9 @@ ms.lasthandoff: 09/20/2017
   
  ![](../core/media/io-cpu-bound-threadpools.gif "Io_cpu_bound_threadpools")  
   
- <span data-ttu-id="7fb1b-122">**パフォーマンス ヒント:**最適なパフォーマンスを送信アダプターする必要が非ブロッキングとバッチに注意してください。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-122">**Performance Tip:** For the best performance, send adapters should be nonblocking and batch aware.</span></span> <span data-ttu-id="7fb1b-123">BizTalk ファイル アダプターをブロッキング呼び出しを行うバッチ非対応から、非ブロッキング呼び出しを行うバッチ対応に変更すると、パフォーマンスが 3 倍向上します。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-123">When the BizTalk File adapter was changed from blocking and non-batch aware to nonblocking and batch aware, a threefold performance gain was realized.</span></span>  
+ <span data-ttu-id="7fb1b-122">**パフォーマンス ヒント:** 最適なパフォーマンスを送信アダプターする必要が非ブロッキングとバッチに注意してください。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-122">**Performance Tip:** For the best performance, send adapters should be nonblocking and batch aware.</span></span> <span data-ttu-id="7fb1b-123">BizTalk ファイル アダプターをブロッキング呼び出しを行うバッチ非対応から、非ブロッキング呼び出しを行うバッチ対応に変更すると、パフォーマンスが 3 倍向上します。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-123">When the BizTalk File adapter was changed from blocking and non-batch aware to nonblocking and batch aware, a threefold performance gain was realized.</span></span>  
   
- <span data-ttu-id="7fb1b-124">**トラブルシューティングのヒント:**ブロッキング送信ホスト インスタンス全体のパフォーマンスの低下が発生することができます。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-124">**Troubleshooting Tip:** Blocking transmits can cause a performance degradation of an entire host instance.</span></span> <span data-ttu-id="7fb1b-125">場合、アダプターはで過度のブロッキング**TransmitMessage**エンジンのスレッドから他のアダプターにメッセージを配信できなくなります。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-125">If the adapter does excessive blocking in **TransmitMessage** it will prevent engine threads from delivering messages to other adapters.</span></span>  
+ <span data-ttu-id="7fb1b-124">**トラブルシューティングのヒント:** ブロッキング送信ホスト インスタンス全体のパフォーマンスの低下が発生することができます。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-124">**Troubleshooting Tip:** Blocking transmits can cause a performance degradation of an entire host instance.</span></span> <span data-ttu-id="7fb1b-125">場合、アダプターはで過度のブロッキング**TransmitMessage**エンジンのスレッドから他のアダプターにメッセージを配信できなくなります。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-125">If the adapter does excessive blocking in **TransmitMessage** it will prevent engine threads from delivering messages to other adapters.</span></span>  
   
 ## <a name="non-batched-sends"></a><span data-ttu-id="7fb1b-126">バッチ化されていない送信</span><span class="sxs-lookup"><span data-stu-id="7fb1b-126">Non-Batched Sends</span></span>  
  <span data-ttu-id="7fb1b-127">バッチ対応アダプターを実装する必要があります**IBTTransmitter**詳しく説明したよう[非同期送信アダプター用のインターフェイス](../core/interfaces-for-an-asynchronous-send-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-127">Adapters that are not batch aware should implement **IBTTransmitter** as detailed in [Interfaces for an Asynchronous Send Adapter](../core/interfaces-for-an-asynchronous-send-adapter.md).</span></span> <span data-ttu-id="7fb1b-128">アダプターがメッセージング エンジンに送信する必要がある各メッセージの呼び出しに対する**IBTTransmitter.TransmitMessage**です。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-128">For each message that the adapter needs to transmit the Messaging Engine calls **IBTTransmitter.TransmitMessage**.</span></span> <span data-ttu-id="7fb1b-129">次のオブジェクト間の対話処理図は、一般的なメッセージの送信方法の詳細について示しています。その方法は、次に示す手順で構成されています。</span><span class="sxs-lookup"><span data-stu-id="7fb1b-129">The object interaction diagram below details the typical approach for transmitting messages, which consists of the following steps:</span></span>  

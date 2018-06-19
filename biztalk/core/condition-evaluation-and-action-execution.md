@@ -1,11 +1,11 @@
 ---
-title: "条件の評価とアクションの実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 条件の評価とアクションの実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Action stage [Business Rules Engine]
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - conflict resolution [Business Rules Engine]
 - Business Rules Engine, stages
 ms.assetid: dcaa32c2-3403-4f54-92e2-128686bfc193
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233346"
 ---
 # <a name="condition-evaluation-and-action-execution"></a><span data-ttu-id="07618-102">条件の評価とアクションの実行</span><span class="sxs-lookup"><span data-stu-id="07618-102">Condition Evaluation and Action Execution</span></span>
 <span data-ttu-id="07618-103">ビジネス ルール フレームワークは、.NET オブジェクト、XML ドキュメント、データベース テーブルにルールをリンクすることができる効率的な推論エンジンを提供します。</span><span class="sxs-lookup"><span data-stu-id="07618-103">The Business Rules Framework provides a highly efficient inference engine capable of linking rules to .NET objects, XML documents, or database tables.</span></span>  

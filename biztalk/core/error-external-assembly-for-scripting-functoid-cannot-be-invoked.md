@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240922"
 ---
 # <a name="error---external-assembly-for-scripting-functoid-cannot-be-invoked"></a><span data-ttu-id="b6650-102">エラー - スクリプト Functoid の外部アセンブリを呼び出すことができません。</span><span class="sxs-lookup"><span data-stu-id="b6650-102">Error - External Assembly for Scripting Functoid Cannot Be Invoked</span></span>
 <span data-ttu-id="b6650-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="b6650-103">**Error Code**</span></span>  

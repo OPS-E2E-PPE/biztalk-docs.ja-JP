@@ -1,14 +1,14 @@
 ---
-title: "技術確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: 技術確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f2a7564-dbd3-48d0-b0a6-a77a0560459f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242514"
 ---
 # <a name="edifact-contrl-message-as-technical-acknowledgment"></a><span data-ttu-id="e2045-102">技術確認としての EDIFACT CONTRL メッセージ</span><span class="sxs-lookup"><span data-stu-id="e2045-102">EDIFACT CONTRL Message as Technical Acknowledgment</span></span>
 <span data-ttu-id="e2045-103">ビジネス プロファイル設定または取引先アグリーメント (2 つのビジネス プロファイル間でアグリーメントが定義されていない場合はフォールバック アグリーメント) で技術確認を生成するように選択した場合、またはメッセージの UNB9 フィールドが "2" に設定されている場合、技術確認として CONTRL メッセージが生成されます。</span><span class="sxs-lookup"><span data-stu-id="e2045-103">If you have selected to generate a technical acknowledgment in business profile settings or trading partner agreement (or fallback agreement if no agreement is defined between the two business profiles), or if the UNB9 field in the message is set to "2", a CONTRL message will be generated as a technical acknowledgment.</span></span> <span data-ttu-id="e2045-104">この確認では、インターチェンジの受信結果が報告されます。</span><span class="sxs-lookup"><span data-stu-id="e2045-104">This ACK reports the results of the receipt of the interchange.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "メッセージのライフ サイクル |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのライフ サイクル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - orchestrations, about orchestrations
 - messages, send ports
 ms.assetid: d2374f86-9b5f-404f-ba7b-9cab69873fa8
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262826"
 ---
 # <a name="lifecycle-of-a-message"></a><span data-ttu-id="6997f-102">メッセージのライフサイクル</span><span class="sxs-lookup"><span data-stu-id="6997f-102">Lifecycle of a Message</span></span>
 <span data-ttu-id="6997f-103">次の図は、メッセージングという観点から捉えた BizTalk Server アーキテクチャの概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="6997f-103">The following figure provides a high-level overview of the BizTalk Server architecture from a messaging perspective.</span></span>  
@@ -84,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="6997f-156">使用して**GetInstance**サービス インスタンス オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="6997f-156">Use **GetInstance** to retrieve a Service Instance object.</span></span>  
   
--   <span data-ttu-id="6997f-157">使用して**Instance.Messages [**サービス インスタンスで現在参照されているすべてのメッセージを列挙します。</span><span class="sxs-lookup"><span data-stu-id="6997f-157">Use **Instance.Messages [ ]** to enumerate all messages which the service instance currently references.</span></span>  
+-   <span data-ttu-id="6997f-157">使用して**Instance.Messages [** サービス インスタンスで現在参照されているすべてのメッセージを列挙します。</span><span class="sxs-lookup"><span data-stu-id="6997f-157">Use **Instance.Messages [ ]** to enumerate all messages which the service instance currently references.</span></span>  
   
 -   <span data-ttu-id="6997f-158">メソッドを使用し、メッセージ オブジェクトなど**Message.BodyPart**と**Message.Context**にアクセスし、保存します。</span><span class="sxs-lookup"><span data-stu-id="6997f-158">Use methods on the message object such as **Message.BodyPart [ ]** and **Message.Context [  ]** to access and save it.</span></span>  
   

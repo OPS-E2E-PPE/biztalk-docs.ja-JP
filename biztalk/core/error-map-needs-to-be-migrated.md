@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240554"
 ---
 # <a name="error---map-needs-to-be-migrated"></a><span data-ttu-id="45660-102">エラー - マップを移行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="45660-102">Error - Map Needs to be Migrated</span></span>
 <span data-ttu-id="45660-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="45660-103">**Error Code**</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "アプリケーションにファイルを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションにファイルを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], adding files
 - files, adding to applications
 - managing [resources], adding files
 ms.assetid: 6665b946-113a-4026-a0a3-6b67ede4b689
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247738"
 ---
 # <a name="how-to-add-a-file-to-an-application"></a><span data-ttu-id="09a0d-102">アプリケーションにファイルを追加する方法</span><span class="sxs-lookup"><span data-stu-id="09a0d-102">How to Add a File to an Application</span></span>
 <span data-ttu-id="09a0d-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アプリケーションにファイルを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="09a0d-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a file to a BizTalk application.</span></span> <span data-ttu-id="09a0d-104">アプリケーションをインストールすると、アプリケーションに追加するファイルはインストール フォルダーにコピーされます。</span><span class="sxs-lookup"><span data-stu-id="09a0d-104">Files that you add to your application are copied to the installation folder when the application is installed.</span></span> <span data-ttu-id="09a0d-105">ファイルをアプリケーションの .msi ファイルにエクスポートして、アプリケーションと共にさまざまな環境に移動することもできます。</span><span class="sxs-lookup"><span data-stu-id="09a0d-105">Files can also can be exported into the application's .msi file and moved to different deployment environments with the application.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="09a0d-122">**先**ファイルをファイル名を含む、.msi ファイルから、アプリケーションがインストールされているときにコピーする場所の完全なパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="09a0d-122">In **Destination**, type the full path of the location where the file is to be copied when the application is installed from the .msi file, including the file name.</span></span> <span data-ttu-id="09a0d-123">既定値は、アプリケーションのインストール フォルダー、%BTAD_InstallDir% です。</span><span class="sxs-lookup"><span data-stu-id="09a0d-123">The default is %BTAD_InstallDir%, the application installation folder.</span></span> <span data-ttu-id="09a0d-124">このパスを指定しないと、インストールでローカル ファイル システムにファイルがコピーされません。</span><span class="sxs-lookup"><span data-stu-id="09a0d-124">If this path is not provided, the file is not copied to the local file system during installation.</span></span>  
   
-8.  <span data-ttu-id="09a0d-125">完了したら、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="09a0d-125">When finished, click **OK**.</span></span>  
+8.  <span data-ttu-id="09a0d-125">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="09a0d-125">When finished, click **OK**.</span></span>  
   
 #### <a name="using-the-command-line"></a><span data-ttu-id="09a0d-126">コマンドラインを使用</span><span class="sxs-lookup"><span data-stu-id="09a0d-126">Using the command line</span></span>  
   

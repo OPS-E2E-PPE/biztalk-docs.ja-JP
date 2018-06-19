@@ -1,14 +1,14 @@
 ---
-title: "設計フェーズの推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 設計フェーズの推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ee3d183e-a6f3-47d0-90ac-99b12c064607
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239746"
 ---
 # <a name="design-phase-recommendations"></a><span data-ttu-id="6c1ea-102">設計フェーズの推奨事項</span><span class="sxs-lookup"><span data-stu-id="6c1ea-102">Design Phase Recommendations</span></span>
 <span data-ttu-id="6c1ea-103">設計フェーズの主な成果物は、システムの設計仕様と、システムの機能およびパフォーマンスを検証するためのテスト ケースの設計仕様です。</span><span class="sxs-lookup"><span data-stu-id="6c1ea-103">The primary deliverables for the design phase are design specifications for both the system and the test cases for validating system functionality and performance.</span></span> <span data-ttu-id="6c1ea-104">機能およびテストの実現可能性の調査は、通常、設計プロセスの一部として行われます。以下で説明するように、この調査には初期開発が含まれ、検証設計の場合は POC (Proof of Concept: 概念実証) 実装の早期テストも必要になります。</span><span class="sxs-lookup"><span data-stu-id="6c1ea-104">Investigations of the feasibility of features and tests are a typical part of the design process, involving initial development and, in the case of validation design, some early testing of proof-of-concept implementations as discussed in this section below.</span></span>  

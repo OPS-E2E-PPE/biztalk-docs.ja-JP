@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションに証明書を追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションに証明書を追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, certificates
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [certificates], applications
 - managing [resources], certificates
 ms.assetid: 7c615002-6627-4134-9c2b-bf1c89d626c2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248178"
 ---
 # <a name="how-to-add-a-certificate-to-an-application"></a><span data-ttu-id="7641a-102">証明書をアプリケーションに追加する方法</span><span class="sxs-lookup"><span data-stu-id="7641a-102">How to Add a Certificate to an Application</span></span>
 <span data-ttu-id="7641a-103">ここでは、コマンド ラインを使用して、BizTalk アプリケーションに証明書を追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7641a-103">This topic describes how to use the command line to add a certificate to a BizTalk application.</span></span> <span data-ttu-id="7641a-104">このオプションは、BizTalk Server 管理コンソールでは利用できません。</span><span class="sxs-lookup"><span data-stu-id="7641a-104">This option is not available in the BizTalk Server Administration console.</span></span> <span data-ttu-id="7641a-105">BizTalk アプリケーションに証明書を追加することで、証明書をアプリケーションと一緒にパッケージ化して、BizTalk グループの 1 つから別のグループに送信することができるようになります。</span><span class="sxs-lookup"><span data-stu-id="7641a-105">You add a certificate to a BizTalk application so that you can transport the certificate from one BizTalk group to another, packaged with an application.</span></span> <span data-ttu-id="7641a-106">証明書を使用すると、ID を検証して送信ポートと受信場所へのセキュリティで保護されたリンクを確立することができます。</span><span class="sxs-lookup"><span data-stu-id="7641a-106">You use certificates to verify identities and to establish secure links for send ports and receive locations.</span></span> <span data-ttu-id="7641a-107">詳細については、次を参照してください。[送信ポートに証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-send-port.md)と[受信場所に証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-receive-location.md)です。</span><span class="sxs-lookup"><span data-stu-id="7641a-107">For more information, see [How to Assign a Certificate to a Send Port](../core/how-to-assign-a-certificate-to-a-send-port.md) and [How to Assign a Certificate to a Receive Location](../core/how-to-assign-a-certificate-to-a-receive-location.md).</span></span>  

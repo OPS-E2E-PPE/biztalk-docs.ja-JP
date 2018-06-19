@@ -1,14 +1,14 @@
 ---
-title: "構成の署名、圧縮、および AS2 トランスポートでの暗号化 |Microsoft ドキュメント"
-ms.custom: 
+title: 構成の署名、圧縮、および AS2 トランスポートでの暗号化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc3537a7-c065-4a33-a375-29e7902b5ffa
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233978"
 ---
 # <a name="configuring-signing-compression-and-encryption-in-as2-transport"></a><span data-ttu-id="5f814-102">AS2 トランスポートでの署名、圧縮、および暗号化の構成</span><span class="sxs-lookup"><span data-stu-id="5f814-102">Configuring Signing, Compression, and Encryption in AS2 Transport</span></span>
 <span data-ttu-id="5f814-103">デジタル署名、署名の確認、暗号化、および解読は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソール内から構成できます。</span><span class="sxs-lookup"><span data-stu-id="5f814-103">You can configure digital signatures, signature verification, encryption, and decryption from within the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span> <span data-ttu-id="5f814-104">この構成では、AS2 パイプラインおよび BizTalk パーティに適切なプロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5f814-104">This configuration requires that you set the appropriate properties for the AS2 pipelines and BizTalk parties.</span></span>  
@@ -34,14 +35,14 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="5f814-117">署名、圧縮、または、送信メッセージの暗号化を確認、**メッセージに署名する必要があります**、**メッセージを圧縮する**、および**メッセージを暗号化する**プロパティを**検証**(送信 AS2 メッセージ) の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5f814-117">To sign, compress, and/or encrypt an outbound message, check the **Message should be signed**, **Message should be compressed**, and **Message should be encrypted** properties on the **Validation** page of the one-way agreement tab (for the outgoing AS2 message) in the **Agreement Properties** dialog box.</span></span>  
   
--   <span data-ttu-id="5f814-118">送信メッセージへの応答として署名付き MDN を要求するには、確認、 **MDN を要求**と**署名付き MDN を要求**プロパティを**受信確認 (Mdn)**のページ、一方向アグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5f814-118">To request a signed MDN in response to an outbound message, check the **Request MDN** and **Request signed MDN** properties on the **Acknowledgements (MDNs)** page of the one-way agreement tab of the **Agreement Properties** dialog box.</span></span>  
+-   <span data-ttu-id="5f814-118">送信メッセージへの応答として署名付き MDN を要求するには、確認、 **MDN を要求**と**署名付き MDN を要求**プロパティを**受信確認 (Mdn)** のページ、一方向アグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5f814-118">To request a signed MDN in response to an outbound message, check the **Request MDN** and **Request signed MDN** properties on the **Acknowledgements (MDNs)** page of the one-way agreement tab of the **Agreement Properties** dialog box.</span></span>  
   
 -   <span data-ttu-id="5f814-119">受信メッセージが署名されている、圧縮を指定または確認、暗号化、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**、プロパティ、**メッセージに署名する必要があります**プロパティを**メッセージを圧縮する**プロパティ、および**メッセージを暗号化する**プロパティを**検証**一方向アグリーメントのページ[タブ (受信 AS2 メッセージ) で、**アグリーメントのプロパティ**] ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5f814-119">To specify that an inbound message is signed, compressed, and/or encrypted, check the **Use agreement settings for validation and MDN instead of message header** property, the **Message should be signed** property, the **Message should be compressed** property, and the **Message should be encrypted** property on the **Validation** page of the one-way agreement tab (for the incoming AS2 message) in the **Agreement Properties** dialog box.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="5f814-120">ときに、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティが選択されている、受信メッセージのすべてのヘッダーの詳細は無視され、アグリーメント設定に基づいて、メッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="5f814-120">When the **Use agreement settings for validation and MDN instead of message header** property is selected, all header details of the incoming message are ignored and the message is processed based on the agreement settings.</span></span>  
   
--   <span data-ttu-id="5f814-121">選択して受信メッセージのプロパティはオーバーライドされた場合、受信メッセージへの応答で、署名付き MDN を指定する、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティ、確認、 **署名付き mdn を要求してもする**プロパティ**受信確認 (Mdn)**のページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5f814-121">To specify a signed MDN in response to an inbound message, when the inbound message properties are overridden by selecting the **Use agreement settings for validation and MDN instead of message header** property, check the **Request Signed MDN** property on **Acknowledgements (MDNs)** page of the **Agreement Properties** dialog box.</span></span>  
+-   <span data-ttu-id="5f814-121">選択して受信メッセージのプロパティはオーバーライドされた場合、受信メッセージへの応答で、署名付き MDN を指定する、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティ、確認、 **署名付き mdn を要求してもする**プロパティ**受信確認 (Mdn)** のページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="5f814-121">To specify a signed MDN in response to an inbound message, when the inbound message properties are overridden by selecting the **Use agreement settings for validation and MDN instead of message header** property, check the **Request Signed MDN** property on **Acknowledgements (MDNs)** page of the **Agreement Properties** dialog box.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="5f814-122">ときに、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティが選択されている、受信メッセージのすべてのヘッダーの詳細は無視され、アグリーメント設定に基づいて、メッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="5f814-122">When the **Use agreement settings for validation and MDN instead of message header** property is selected, all header details of the incoming message are ignored and the message is processed based on the agreement settings.</span></span>  

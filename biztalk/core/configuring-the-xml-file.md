@@ -1,14 +1,14 @@
 ---
-title: "XML ファイルの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: XML ファイルの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52851901-8374-412f-9c29-83845d8d4861
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233826"
 ---
 # <a name="configuring-the-xml-file"></a><span data-ttu-id="2c63c-102">XML ファイルの構成</span><span class="sxs-lookup"><span data-stu-id="2c63c-102">Configuring the XML File</span></span>
 <span data-ttu-id="2c63c-103">エンタープライズ シングル サインオン (SSO) をインストールすると、ENTSSO.xml という XML ファイルが Extensions ディレクトリにインストールされます。</span><span class="sxs-lookup"><span data-stu-id="2c63c-103">When you install Enterprise Single Sign-On (SSO), an XML file named ENTSSO.xml is installed in your Extensions directory.</span></span> <span data-ttu-id="2c63c-104">このファイルを編集することにより、ENTSSO 管理エージェント (MA) のすべてのインスタンスに適用される構成を定義できます。</span><span class="sxs-lookup"><span data-stu-id="2c63c-104">By editing the file, you define the configuration for all instances of the ENTSSO Management Agent (MA).</span></span>  

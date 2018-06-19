@@ -1,14 +1,14 @@
 ---
-title: "AS2 のイベント |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 のイベント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c9de140d-8961-4c19-a2e5-14631016541f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233594"
 ---
 # <a name="as2-events"></a><span data-ttu-id="98079-102">AS2 のイベント</span><span class="sxs-lookup"><span data-stu-id="98079-102">AS2 Events</span></span>
 <span data-ttu-id="98079-103">次の表に、AS2 処理時にイベント ログに送信される可能性のあるイベント メッセージの一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="98079-103">The following table lists event messages that may be posted in the event log during AS2 processing.</span></span>  

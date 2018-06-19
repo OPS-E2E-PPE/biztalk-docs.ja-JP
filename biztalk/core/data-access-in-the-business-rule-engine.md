@@ -1,18 +1,18 @@
 ---
-title: "ビジネス ルール エンジンでのデータ アクセス |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール エンジンでのデータ アクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Engine, data access
 - Business Rules Engine, helper classes
 - data, data access
 ms.assetid: 38da32af-1e0d-43fb-b946-fb49a11f1681
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238618"
 ---
 # <a name="data-access-in-the-business-rule-engine"></a><span data-ttu-id="1599c-102">ビジネス ルール エンジンでのデータ アクセス</span><span class="sxs-lookup"><span data-stu-id="1599c-102">Data Access in the Business Rule Engine</span></span>
 <span data-ttu-id="1599c-103">ルール エンジンは、.NET オブジェクトだけをネイティブにサポートしています。</span><span class="sxs-lookup"><span data-stu-id="1599c-103">The rule engine supports only .NET objects natively.</span></span> <span data-ttu-id="1599c-104">データベースのデータを扱う場合、直接 ADO.NET オブジェクトを使用できます。ただし、このエンジンにはヘルパー クラスが提供されているので、データベースのデータをルールから簡単に使用できます。</span><span class="sxs-lookup"><span data-stu-id="1599c-104">To handle data from a database, you can use the ADO.NET objects directly, but the engine provides some helper classes to simplify the use of database data from rules.</span></span> <span data-ttu-id="1599c-105">ルール エンジンは、次の 3 つのデータベースに関連する型を公開することでのサポートを拡張します。 **TypedDataRow**、 **TypedDataTable**、および**DataConnection**です。</span><span class="sxs-lookup"><span data-stu-id="1599c-105">The rule engine extends its support by exposing three database-related types: **TypedDataRow**, **TypedDataTable**, and **DataConnection**.</span></span> <span data-ttu-id="1599c-106">このセクションでは、これらのヘルパー クラス、それぞれの型を使用するタイミングに関する推奨事項、およびそれぞれの型を使用する際のパフォーマンスへの影響について説明します。</span><span class="sxs-lookup"><span data-stu-id="1599c-106">This section describes these helper classes, gives recommendations about when to use each type, and discusses some performance implications when using them.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "例外の原因 |Microsoft ドキュメント"
-ms.custom: 
+title: 例外の原因 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, errors
 - errors, orchestrations
 - errors, causes
 ms.assetid: b0422382-d034-4c58-87c6-fc269dbbfe43
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232466"
 ---
 # <a name="causes-of-exceptions"></a><span data-ttu-id="d2807-102">例外の原因</span><span class="sxs-lookup"><span data-stu-id="d2807-102">Causes of Exceptions</span></span>
 <span data-ttu-id="d2807-103">次のような場合、オーケストレーション内で例外が生成されることがあります。</span><span class="sxs-lookup"><span data-stu-id="d2807-103">Exceptions can be generated within an orchestration in the following ways:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server プロジェクトのバージョン管理 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server プロジェクトのバージョン管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dcdd5354-6335-4320-adbf-28ac934c9ce6
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234194"
 ---
 # <a name="biztalk-server-project-versioning"></a><span data-ttu-id="e2330-102">BizTalk Server プロジェクトのバージョン管理</span><span class="sxs-lookup"><span data-stu-id="e2330-102">BizTalk Server Project Versioning</span></span>
 <span data-ttu-id="e2330-103">[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] を使った開発では、バージョン管理は標準的なルール セットに従って行います。これらのルールに従うと、バージョン番号の変更による影響を最小限に抑えることができます。</span><span class="sxs-lookup"><span data-stu-id="e2330-103">When developing with the [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)], versioning is governed by a standard set of rules that work to minimize the impact of version number changes.</span></span> <span data-ttu-id="e2330-104">状況に応じて、[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]アプリケーションまたはコンポーネントを展開すると、アプリケーション構成ファイル、XCOPY のインストールを使用して、またはその他の依存関係を処理できる[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]展開メカニズムです。</span><span class="sxs-lookup"><span data-stu-id="e2330-104">Depending on how a [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]application or component is deployed, dependencies can be handled by an application configuration file, through XCOPY installation, or by other [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] deployment mechanisms.</span></span> <span data-ttu-id="e2330-105">以下では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用することによってバージョン管理と依存関係にどの程度の複雑さが加わるかについて示します。</span><span class="sxs-lookup"><span data-stu-id="e2330-105">As the following sections will show, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adds additional complexity to versioning and dependencies.</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="e2330-170">メモ帳で、上、**ファイル** メニューのをクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="e2330-170">In Notepad, on the **File** menu, click **Open**.</span></span> <span data-ttu-id="e2330-171">**開く** ダイアログ ボックスで、マップ ファイルをクリックして、変更する**開く**です。</span><span class="sxs-lookup"><span data-stu-id="e2330-171">In the **Open** dialog box, select the map file you want to modify, and then click **Open**.</span></span>  
   
-3.  <span data-ttu-id="e2330-172">**[編集]** メニューの **[検索]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2330-172">On the **Edit** menu, click **Find**.</span></span> <span data-ttu-id="e2330-173">**検索** ダイアログ ボックスに、入力**アセンブリ =**、クリックして**次を検索**です。</span><span class="sxs-lookup"><span data-stu-id="e2330-173">In the **Find** dialog box, enter **Assembly=**, and then click **Find Next**.</span></span>  
+3.  <span data-ttu-id="e2330-172">**[編集]** メニューの **[検索]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2330-172">On the **Edit** menu, click **Find**.</span></span> <span data-ttu-id="e2330-173">**検索** ダイアログ ボックスに、入力**アセンブリ =**、クリックして**次を検索**です。</span><span class="sxs-lookup"><span data-stu-id="e2330-173">In the **Find** dialog box, enter **Assembly=**, and then click **Find Next**.</span></span>  
   
 4.  <span data-ttu-id="e2330-174">外部アセンブリへのスクリプト参照がある場合、メモ帳では次のような XML 要素が検索されます。</span><span class="sxs-lookup"><span data-stu-id="e2330-174">If there is a script reference to an external assembly, Notepad should find an XML element like the following:</span></span>  
   

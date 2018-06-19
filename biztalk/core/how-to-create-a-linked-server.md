@@ -1,17 +1,17 @@
 ---
-title: "リンク サーバーを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: リンク サーバーを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - servers, linking for backups
 - backing up, linking servers
 ms.assetid: 7d4aba3d-77c0-4cdf-8547-71e821ce34a1
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249810"
 ---
 # <a name="how-to-create-a-linked-server"></a><span data-ttu-id="2f7b4-102">リンク サーバーを作成する方法</span><span class="sxs-lookup"><span data-stu-id="2f7b4-102">How to Create a Linked Server</span></span>
 <span data-ttu-id="2f7b4-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が分散型トポロジにインストールされている場合は、BizTalk グループに属するデータベースが複数の [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] に存在します。</span><span class="sxs-lookup"><span data-stu-id="2f7b4-103">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is installed in a distributed topology, the databases that belong to a BizTalk Group exist on multiple [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span> <span data-ttu-id="2f7b4-104">BizTalk 管理サーバーから BizTalk 環境全体をバックアップする前に、各リモート サーバーへのリンク サーバー接続を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f7b4-104">You must configure a linked server connection to each of the remote servers before you can back up the entire BizTalk environment from the BizTalk Management server.</span></span> <span data-ttu-id="2f7b4-105">リンク サーバーは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 分散クエリで使用される OLE DB データ ソースです。</span><span class="sxs-lookup"><span data-stu-id="2f7b4-105">A linked server is an OLE DB data source that is used in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] distributed queries.</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="2f7b4-128">**サーバーの種類** **SQL Server**です。</span><span class="sxs-lookup"><span data-stu-id="2f7b4-128">Under **Server type**, select **SQL Server**.</span></span>  
   
-5.  <span data-ttu-id="2f7b4-129">左ペインで、 **[セキュリティ]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f7b4-129">In the left pane, select **Security**.</span></span> 
+5.  <span data-ttu-id="2f7b4-129">左ペインで、 **[セキュリティ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f7b4-129">In the left pane, select **Security**.</span></span> 
 
     <span data-ttu-id="2f7b4-130">このステップでは、リモート サーバーのログインを作成したローカル アカウントをマップします。</span><span class="sxs-lookup"><span data-stu-id="2f7b4-130">In this step, you map the local account you created to the remote server login.</span></span> <span data-ttu-id="2f7b4-131">オプション:</span><span class="sxs-lookup"><span data-stu-id="2f7b4-131">Your options:</span></span> 
     

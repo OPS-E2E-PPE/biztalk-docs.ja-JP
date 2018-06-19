@@ -1,14 +1,14 @@
 ---
-title: "インデックス Functoid をマップに追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: インデックス Functoid をマップに追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbfccfcc-c333-422f-b40b-13ca4152e588
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247674"
 ---
 # <a name="how-to-add-index-functoids-to-a-map"></a><span data-ttu-id="c91d8-102">マップにインデックス Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="c91d8-102">How to Add Index Functoids to a Map</span></span>
 <span data-ttu-id="c91d8-103">**インデックス**functoid では、一連のループ レコードの特定のレコードから情報を選択することができます。</span><span class="sxs-lookup"><span data-stu-id="c91d8-103">The **Index** functoid enables you to select information from a specific record in a series of looping records.</span></span> <span data-ttu-id="c91d8-104">各**インデックス**functoid が 1 つのフィールドから情報を選択します。</span><span class="sxs-lookup"><span data-stu-id="c91d8-104">Each **Index** functoid selects information from a single field.</span></span>  

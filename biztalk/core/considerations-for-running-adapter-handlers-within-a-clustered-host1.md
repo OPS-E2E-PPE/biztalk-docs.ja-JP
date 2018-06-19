@@ -1,11 +1,11 @@
 ---
-title: "クラスター化された Host1 でアダプター ハンドラーの実行に関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: クラスター化された Host1 でアダプター ハンドラーの実行に関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2016-03-17
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - high availability
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - MSMQ adapters, clustering
 - clustering
 ms.assetid: ee66663c-4f4d-4515-9df1-aacf4fc72be4
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238482"
 ---
 # <a name="considerations-for-running-adapter-handlers-within-a-clustered-host"></a><span data-ttu-id="82d89-102">クラスター化されたホストでのアダプター ハンドラーの実行に関する注意点</span><span class="sxs-lookup"><span data-stu-id="82d89-102">Considerations for Running Adapter Handlers within a Clustered Host</span></span>
 <span data-ttu-id="82d89-103">BizTalk ホストのクラスター サポートを利用すると、統合された BizTalk アダプター (FTP アダプター、SFTP アダプター、MSMQ アダプター、および POP3 アダプター) に対して高可用性を実現できます。</span><span class="sxs-lookup"><span data-stu-id="82d89-103">BizTalk host cluster support is available to provide high availability for the following integrated BizTalk adapters: the FTP adapter, the SFTP adapter, the MSMQ adapter, and the POP3 adapter.</span></span> <span data-ttu-id="82d89-104">また、順次配送の目的でアダプターの単一インスタンスを実行する場合に、ホスト クラスター サポートを利用して高い可用性を実現できます。</span><span class="sxs-lookup"><span data-stu-id="82d89-104">Host cluster support is also provided so that there is high availability for running a single instance of an adapter for purposes of ordered delivery.</span></span>  

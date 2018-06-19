@@ -1,14 +1,14 @@
 ---
-title: "Wcf-custom 送信ハンドラーを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-custom 送信ハンドラーを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00758b87-dffb-488b-9cf3-564d0ccd5938
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249338"
 ---
 # <a name="how-to-configure-a-wcf-custom-send-handler"></a><span data-ttu-id="944d4-102">WCF-Custom 送信ハンドラーを構成する方法</span><span class="sxs-lookup"><span data-stu-id="944d4-102">How to Configure a WCF-Custom Send Handler</span></span>
 <span data-ttu-id="944d4-103">[!INCLUDE[wcfadapter_short](../includes/wcfadapter-short-md.md)] で、machine.config 以外の場所からカスタム動作拡張機能を検索する場合は、送信ハンドラーのプロパティを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="944d4-103">You must configure the send handler properties if you want the [!INCLUDE[wcfadapter_short](../includes/wcfadapter-short-md.md)] to look up the custom behavior extensions from locations other than machine.config.</span></span>  

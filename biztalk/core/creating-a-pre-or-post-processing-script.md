@@ -1,11 +1,11 @@
 ---
-title: "作成する前または処理後のスクリプト |Microsoft ドキュメント"
-ms.custom: 
+title: 作成する前または処理後のスクリプト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scripts, post-processing
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - scripts, deploying
 - deploying, scripts
 ms.assetid: d5fbaec8-fbfe-4ceb-8ba8-0933baa37a1f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239298"
 ---
 # <a name="creating-a-pre--or-post-processing-script"></a><span data-ttu-id="91fe0-102">処理前または処理後のスクリプトの作成</span><span class="sxs-lookup"><span data-stu-id="91fe0-102">Creating a Pre- or Post-processing Script</span></span>
 <span data-ttu-id="91fe0-103">アプリケーションの展開時に操作を実行するスクリプトを作成し、展開プロセスのどの時点でそのスクリプトを実行するかを定義できます。</span><span class="sxs-lookup"><span data-stu-id="91fe0-103">You can create a script to perform actions when an application is deployed, and then define when it will run during the deployment process.</span></span> <span data-ttu-id="91fe0-104">同じスクリプトにインストールとクリーンアップ コードの両方を含めることができます。これらのコードは環境変数を使って区切ります。</span><span class="sxs-lookup"><span data-stu-id="91fe0-104">You can include both installation and cleanup code in the same script, using environment variables to delimit the code.</span></span> <span data-ttu-id="91fe0-105">コマンドライン引数をスクリプトに渡すこともできます。</span><span class="sxs-lookup"><span data-stu-id="91fe0-105">You can also pass command-line arguments into the script.</span></span>  

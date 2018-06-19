@@ -1,11 +1,11 @@
 ---
-title: "メッセージの送信者の認証 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの送信者の認証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - parties, authenticating
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - authenticating, digital signatures
 - authenticating, messages
 ms.assetid: 813a2fb9-0346-4129-9cc5-1713f72a491e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232010"
 ---
 # <a name="authenticating-the-sender-of-a-message"></a><span data-ttu-id="93dc7-102">メッセージの送信者の認証</span><span class="sxs-lookup"><span data-stu-id="93dc7-102">Authenticating the Sender of a Message</span></span>
 <span data-ttu-id="93dc7-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、さまざまなメカニズムを使用して、パーティまたはプロセスが本物であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="93dc7-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses different mechanisms to verify that a party is who they claim to be, or that a process is what it claims to be.</span></span> <span data-ttu-id="93dc7-104">さらに、プロセスでメッセージの元の送信者の情報を BizTalk Server に中継できるようにするかどうか、また BizTalk Server でパーティをパートナーとして認識するかどうかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="93dc7-104">Furthermore, you can specify whether the process can relay to BizTalk Server who the original sender of the message is, and whether BizTalk Server recognizes the party as a partner.</span></span>  

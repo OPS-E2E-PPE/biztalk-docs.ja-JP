@@ -1,17 +1,17 @@
 ---
-title: "BizTalk エディターのキーボード ショートカット |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk エディターのキーボード ショートカット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Editor, keyboard shortcuts
 - keyboard shortcuts, BizTalk Editor
 ms.assetid: 20674105-3e85-4115-b816-110639b2238c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233290"
 ---
 # <a name="biztalk-editor-keyboard-shortcuts"></a><span data-ttu-id="dd1be-102">BizTalk エディターのキーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="dd1be-102">BizTalk Editor Keyboard Shortcuts</span></span>
 <span data-ttu-id="dd1be-103">他の標準的な Microsoft Windows アプリケーションと同様、BizTalk エディターでも、メニューのコマンドをキーボード ショートカットで実行できます。</span><span class="sxs-lookup"><span data-stu-id="dd1be-103">As in any standard Microsoft Windows application, you can use keyboard shortcuts in BizTalk Editor to access commands that are otherwise available by using menus.</span></span> <span data-ttu-id="dd1be-104">使用できるキーボード ショートカットを次の表に示します。</span><span class="sxs-lookup"><span data-stu-id="dd1be-104">The following table describes the available keyboard shortcuts.</span></span>  

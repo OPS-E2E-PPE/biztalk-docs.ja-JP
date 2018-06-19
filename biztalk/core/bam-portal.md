@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータル |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - BAM, portals
 - BAM portal, aggregations
 ms.assetid: 593c9637-6b97-4ad8-8af7-2b49325acf10
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232082"
 ---
 # <a name="bam-portal"></a><span data-ttu-id="3ab23-102">BAM ポータル</span><span class="sxs-lookup"><span data-stu-id="3ab23-102">BAM Portal</span></span>
 <span data-ttu-id="3ab23-103">ビジネス エンド ユーザーは、BAM ポータルを使用すると、ビジネス目標に対する進捗状況を測定する主要業績評価指標 (KPI) や、ビジネス プロセスに関するその他の情報を監視できます。</span><span class="sxs-lookup"><span data-stu-id="3ab23-103">Business end users use the BAM portal to monitor Key Performance Indicators (KPIs), which measure progress toward a business goal, as well as other information about their business process.</span></span> <span data-ttu-id="3ab23-104">また、ビジネス アナリストは、BAM ポータルを使用して監視モデルの作成を監視します。監視モデルとは、ビジネス プロセス内の表示要件の概要定義といえます。</span><span class="sxs-lookup"><span data-stu-id="3ab23-104">Business analysts use the BAM portal to oversee the creation of observation models, which are high-level definitions of the visibility requirements within the business process.</span></span> <span data-ttu-id="3ab23-105">管理者は、ビジネス プロセス管理システムの状態の監視など、さまざまな監視作業で BAM ポータルを使用します。</span><span class="sxs-lookup"><span data-stu-id="3ab23-105">Administrators use it for a variety of monitoring activities, including monitoring the health of the business process management system.</span></span>  

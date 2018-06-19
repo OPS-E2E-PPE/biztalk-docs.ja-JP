@@ -1,14 +1,14 @@
 ---
-title: "ノードを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ノードを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d907767-7794-4e8d-96a1-7e592b85ad53
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249322"
 ---
 # <a name="how-to-delete-nodes"></a><span data-ttu-id="14206-102">ノードを削除する方法</span><span class="sxs-lookup"><span data-stu-id="14206-102">How to Delete Nodes</span></span>
 <span data-ttu-id="14206-103">スキーマ ツリーのノードを削除したい場合があります。</span><span class="sxs-lookup"><span data-stu-id="14206-103">There will be times when you want to delete a node in the schema tree.</span></span> <span data-ttu-id="14206-104">このトピックでは、この作業を行うための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="14206-104">This topic provides step-by-step instructions for this task.</span></span>  

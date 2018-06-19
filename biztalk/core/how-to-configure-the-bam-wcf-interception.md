@@ -1,14 +1,14 @@
 ---
-title: "BAM WCF インターセプションを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM WCF インターセプションを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d85aa130-3219-4df1-8974-a44a51a15002
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249210"
 ---
 # <a name="how-to-configure-the-bam-wcf-interception"></a><span data-ttu-id="351e3-102">BAM WCF インターセプションを構成する方法</span><span class="sxs-lookup"><span data-stu-id="351e3-102">How to Configure the BAM WCF Interception</span></span>
 <span data-ttu-id="351e3-103">BAM を WCF インターセプション用に構成するには、イベント ソースに対する正しいアセンブリ マニフェストにアクセスするようにインターセプター構成ファイルを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="351e3-103">To configure BAM for WCF interception, you must modify the interceptor configuration file to access the proper assembly manifest for your event sources.</span></span>  

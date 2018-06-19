@@ -1,17 +1,17 @@
 ---
-title: "処理領域に固有のショートカットをキーボード |Microsoft ドキュメント"
-ms.custom: 
+title: 処理領域に固有のショートカットをキーボード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Orchestration Designer
 - Orchestration Designer, keyboard shortcuts
 ms.assetid: d993d341-99f2-4788-b1f3-6a8b911e5278
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262066"
 ---
 # <a name="keyboard-shortcuts-specific-to-the-process-area"></a><span data-ttu-id="86ebd-102">処理領域に固有のキーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="86ebd-102">Keyboard Shortcuts Specific to the Process Area</span></span>
 <span data-ttu-id="86ebd-103">処理領域で使用できるキーボード操作を次の表に示します。処理領域はデザイン画面の中央の領域で、オーケストレーションのプロセス フローの定義に使用します。</span><span class="sxs-lookup"><span data-stu-id="86ebd-103">The following table describes the keyboard navigation available in the Process Area, the central area of the design surface used to define the process flow of the orchestration.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="86ebd-126">END</span><span class="sxs-lookup"><span data-stu-id="86ebd-126">END</span></span>|<span data-ttu-id="86ebd-127">選択対象をオーケストレーションの終了図形に入るコネクタに変更します。</span><span class="sxs-lookup"><span data-stu-id="86ebd-127">Selection changes to the connector that leads into the End shape of the orchestration.</span></span>|  
 |<span data-ttu-id="86ebd-128">NumLock+マイナス記号 (-)</span><span class="sxs-lookup"><span data-stu-id="86ebd-128">NUM LOCK + -</span></span>|<span data-ttu-id="86ebd-129">選択した複雑な図形を折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="86ebd-129">Collapses the selected complex shape.</span></span>|  
 |<span data-ttu-id="86ebd-130">NumLock+プラス記号 (+)</span><span class="sxs-lookup"><span data-stu-id="86ebd-130">NUM LOCK + +</span></span>|<span data-ttu-id="86ebd-131">選択した複雑な図形を展開します。</span><span class="sxs-lookup"><span data-stu-id="86ebd-131">Expands the selected complex shape.</span></span>|  
-|<span data-ttu-id="86ebd-132">NumLock+*</span><span class="sxs-lookup"><span data-stu-id="86ebd-132">NUM LOCK + *</span></span>|<span data-ttu-id="86ebd-133">選択した複雑な図形を展開します。その図形に複雑な子の図形がある場合は、その子の図形も展開します。</span><span class="sxs-lookup"><span data-stu-id="86ebd-133">Expands the selected complex shape, plus any child complex shapes it may have.</span></span>|  
+|<span data-ttu-id="86ebd-132">NumLock+\*</span><span class="sxs-lookup"><span data-stu-id="86ebd-132">NUM LOCK + \*</span></span>|<span data-ttu-id="86ebd-133">選択した複雑な図形を展開します。その図形に複雑な子の図形がある場合は、その子の図形も展開します。</span><span class="sxs-lookup"><span data-stu-id="86ebd-133">Expands the selected complex shape, plus any child complex shapes it may have.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="86ebd-134">参照</span><span class="sxs-lookup"><span data-stu-id="86ebd-134">See Also</span></span>  
  [<span data-ttu-id="86ebd-135">オーケストレーション デザイナーのキーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="86ebd-135">Orchestration Designer Keyboard Shortcuts</span></span>](../core/orchestration-designer-keyboard-shortcuts.md)

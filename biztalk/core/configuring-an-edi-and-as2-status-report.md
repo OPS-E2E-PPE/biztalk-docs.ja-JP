@@ -1,15 +1,15 @@
 ---
-title: "EDI および AS2 状態レポートの構成 |Microsoft ドキュメント"
-description: "作成、EDI または AS2 状態レポート クエリ式、および BizTalk Server でのレポートに表示されているデータを選択"
-ms.custom: 
+title: EDI および AS2 状態レポートの構成 |Microsoft ドキュメント
+description: 作成、EDI または AS2 状態レポート クエリ式、および BizTalk Server でのレポートに表示されているデータを選択
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6490864d-f1e6-4932-aefb-c332a595aad7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233682"
 ---
 # <a name="configure-an-edi-and-as2-status-report"></a><span data-ttu-id="37e63-103">EDI および AS2 状態レポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="37e63-103">Configure an EDI and AS2 Status Report</span></span>
 <span data-ttu-id="37e63-104">EDI を有効にするか、状態レポートを表示する AS2 状態レポートを後から、使用する、 **EDI 状態レポート**または**EDIINT 状態レポート**のセクションで、**グループ ハブ**タブ、**グループの概要** ページで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="37e63-104">After you have enabled EDI or AS2 status reports, you display the status report you want from the **EDI Status Reports** or **EDIINT Status Reports** section of the **Group Hub** tab of the **Group Overview** page in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span> <span data-ttu-id="37e63-105">状態レポートを表示するときに、データの既定のセットが表示されます。</span><span class="sxs-lookup"><span data-stu-id="37e63-105">When you display a status report, you will see a default set of data.</span></span> <span data-ttu-id="37e63-106">状態レポートの次の要素を構成できます。</span><span class="sxs-lookup"><span data-stu-id="37e63-106">You can configure the following aspects of the status reports:</span></span>  

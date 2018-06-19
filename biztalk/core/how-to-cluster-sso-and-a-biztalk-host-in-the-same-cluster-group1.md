@@ -1,14 +1,14 @@
 ---
-title: "SSO と同じクラスター Group1 の BizTalk ホストをクラスター化する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO と同じクラスター Group1 の BizTalk ホストをクラスター化する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 413cc8f4-f343-4c1c-8b79-3b15cb4c101d
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250626"
 ---
 # <a name="how-to-cluster-sso-and-a-biztalk-host-in-the-same-cluster-group"></a><span data-ttu-id="a4675-102">SSO と BizTalk ホストを同じクラスター グループでクラスター化する方法</span><span class="sxs-lookup"><span data-stu-id="a4675-102">How to Cluster SSO and a BizTalk Host in the Same Cluster Group</span></span>
 <span data-ttu-id="a4675-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、1 つ以上の BizTalk ホストとエンタープライズ シングル サインオン (SSO) サービスを同じ Windows Server クラスターでクラスター化できます。</span><span class="sxs-lookup"><span data-stu-id="a4675-103">With [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] you can cluster one or more BizTalk hosts and the Enterprise Single Sign-On (SSO) service on the same Windows Server cluster.</span></span>  
@@ -143,10 +144,10 @@ ms.lasthandoff: 09/20/2017
   
     9. <span data-ttu-id="a4675-188">クリックして、**の依存関係** タブをクリックして、プロパティ ダイアログ ボックスの**挿入**です。</span><span class="sxs-lookup"><span data-stu-id="a4675-188">Click the **Dependencies** tab of the properties dialog box and click **Insert**.</span></span>  
   
-    10. <span data-ttu-id="a4675-189">下のボックスのドロップダウンをクリックして**リソース**を選択、**名前:**リソースをクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a4675-189">Click the drop down box under **Resource**, select the **Name:** resource and click **OK**.</span></span>  
+    10. <span data-ttu-id="a4675-189">下のボックスのドロップダウンをクリックして**リソース**を選択、**名前:** リソースをクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a4675-189">Click the drop down box under **Resource**, select the **Name:** resource and click **OK**.</span></span>  
   
         > [!IMPORTANT]
-        >  <span data-ttu-id="a4675-190">依存関係を追加しない場合、**名前:**リソース、SSO クライアント コンピューターはエラーを生成、次のような SSO サービスのクラスター化されたこのインスタンスに接続しようとするとします。</span><span class="sxs-lookup"><span data-stu-id="a4675-190">If you do not add the dependency to the **Name:** resource, SSO client computers will generate an error similar to the following when they try to contact this clustered instance of the SSO service:</span></span>  
+        >  <span data-ttu-id="a4675-190">依存関係を追加しない場合、**名前:** リソース、SSO クライアント コンピューターはエラーを生成、次のような SSO サービスのクラスター化されたこのインスタンスに接続しようとするとします。</span><span class="sxs-lookup"><span data-stu-id="a4675-190">If you do not add the dependency to the **Name:** resource, SSO client computers will generate an error similar to the following when they try to contact this clustered instance of the SSO service:</span></span>  
         >   
         >  <span data-ttu-id="a4675-191">マスター シークレットを取得できませんでした。</span><span class="sxs-lookup"><span data-stu-id="a4675-191">Failed to retrieve master secrets.</span></span>  
         >   

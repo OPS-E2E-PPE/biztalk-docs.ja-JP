@@ -1,11 +1,11 @@
 ---
-title: "アダプターをセキュリティで保護するためのベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターをセキュリティで保護するためのベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, security
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - best practices, security
 - adapters, best practices
 ms.assetid: 004e1a01-b316-4eee-967f-5a806431de2b
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233298"
 ---
 # <a name="best-practices-for-securing-adapters"></a><span data-ttu-id="9033e-102">アダプターをセキュリティで保護するためのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="9033e-102">Best Practices for Securing Adapters</span></span>
 <span data-ttu-id="9033e-103">このトピックでは、アダプターのセキュリティに関するベスト プラクティスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="9033e-103">This topic provides a list of best practices for adapter security.</span></span>  
@@ -93,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="9033e-141">テキスト ボックスの横にある省略記号 (...) ボタンをクリックして**ログイン名**を表示する、 **[ログインの**] ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="9033e-141">Click the ellipses (…) button next to the text box for **Login name** to display the **Select Login** dialog box.</span></span>  
   
-    5.  <span data-ttu-id="9033e-142">[参照] ボタンをクリックすると、入力、 **EDI Subsystem Users**グループ化、およびクリックして**[ok] です。**</span><span class="sxs-lookup"><span data-stu-id="9033e-142">Click the Browse button, enter the **EDI Subsystem Users** group, and then click **OK.**</span></span> <span data-ttu-id="9033e-143">メッセージが表示されたら、**見つかった複数のオブジェクト**ダイアログ ボックスで、 **EDI Subsystem Users**ログインとクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="9033e-143">If prompted with the **Multiple Objects Found** dialog box, select the **EDI Subsystem Users** login and click **OK**.</span></span>  
+    5.  <span data-ttu-id="9033e-142">[参照] ボタンをクリックすると、入力、 **EDI Subsystem Users**グループ化、およびクリックして **[ok] です。**</span><span class="sxs-lookup"><span data-stu-id="9033e-142">Click the Browse button, enter the **EDI Subsystem Users** group, and then click **OK.**</span></span> <span data-ttu-id="9033e-143">メッセージが表示されたら、**見つかった複数のオブジェクト**ダイアログ ボックスで、 **EDI Subsystem Users**ログインとクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="9033e-143">If prompted with the **Multiple Objects Found** dialog box, select the **EDI Subsystem Users** login and click **OK**.</span></span>  
   
     6.  <span data-ttu-id="9033e-144">**データベース ユーザー - 新規** ダイアログ ボックスに「 **EDI Subsystem Users**の**ユーザー名** テキスト ボックス をクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="9033e-144">On the **Database User - New** dialog box enter **EDI Subsystem Users** for the **User name** textbox and click **OK**.</span></span>  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
     6.  <span data-ttu-id="9033e-154">クリックして、**追加**をこのグループに BizTalk サービスのユーザー アカウントを追加するボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9033e-154">Click the **Add** button to add the user account for the BizTalk Service to this group.</span></span>  
   
-    7.  <span data-ttu-id="9033e-155">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9033e-155">Click **OK**.</span></span>  
+    7.  <span data-ttu-id="9033e-155">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9033e-155">Click **OK**.</span></span>  
   
 -   <span data-ttu-id="9033e-156">**BizTalk Server を構成するにはローカル グループを使用する: 場合**</span><span class="sxs-lookup"><span data-stu-id="9033e-156">**If BizTalk Server is configured to use local groups:**</span></span>  
   
@@ -132,4 +133,4 @@ ms.lasthandoff: 09/20/2017
   
     5.  <span data-ttu-id="9033e-161">クリックして、**追加**をこのグループに BizTalk サービスのユーザー アカウントを追加するボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9033e-161">Click the **Add** button to add the user account for the BizTalk service to this group.</span></span>  
   
-    6.  <span data-ttu-id="9033e-162">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9033e-162">Click **OK**.</span></span>
+    6.  <span data-ttu-id="9033e-162">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9033e-162">Click **OK**.</span></span>

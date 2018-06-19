@@ -1,14 +1,14 @@
 ---
-title: "状態と動作状況の追跡 |Microsoft ドキュメント"
-ms.custom: 
+title: 状態と動作状況の追跡 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c5d7415-38da-47b5-8dbc-0a2ea74548d9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,9 +17,10 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246602"
 ---
 # <a name="health-and-activity-tracking"></a><span data-ttu-id="a74f1-102">状態と動作状況の追跡</span><span class="sxs-lookup"><span data-stu-id="a74f1-102">Health and Activity Tracking</span></span>
-<span data-ttu-id="a74f1-103">**状態と動作状況の追跡 (HAT)**でツールが削除されて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 です。</span><span class="sxs-lookup"><span data-stu-id="a74f1-103">The **Health and Activity Tracking (HAT)** tool was removed in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009.</span></span>  <span data-ttu-id="a74f1-104">追跡および live に関連する情報を表示する、HAT ツールの役割、履歴メッセージ データが BizTalk 追跡データベースに格納されています。</span><span class="sxs-lookup"><span data-stu-id="a74f1-104">The role of the HAT tool was to track and display information relating to live and historical message data stored in the BizTalk Tracking database.</span></span>  <span data-ttu-id="a74f1-105">オーケストレーションのフローをデバッグすることや、メッセージを連続表示してフローを確認することができました。</span><span class="sxs-lookup"><span data-stu-id="a74f1-105">The tool allowed debugging of the flow of an orchestration and the ability to view the flow of a message through a sequential display.</span></span>  <span data-ttu-id="a74f1-106">クエリ ビルダーでは、追跡データの標準クエリおよびカスタム クエリを実行できました。</span><span class="sxs-lookup"><span data-stu-id="a74f1-106">A Query Builder allowed standard and custom queries of the tracking data.</span></span>  
+<span data-ttu-id="a74f1-103">**状態と動作状況の追跡 (HAT)** でツールが削除されて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 です。</span><span class="sxs-lookup"><span data-stu-id="a74f1-103">The **Health and Activity Tracking (HAT)** tool was removed in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009.</span></span>  <span data-ttu-id="a74f1-104">追跡および live に関連する情報を表示する、HAT ツールの役割、履歴メッセージ データが BizTalk 追跡データベースに格納されています。</span><span class="sxs-lookup"><span data-stu-id="a74f1-104">The role of the HAT tool was to track and display information relating to live and historical message data stored in the BizTalk Tracking database.</span></span>  <span data-ttu-id="a74f1-105">オーケストレーションのフローをデバッグすることや、メッセージを連続表示してフローを確認することができました。</span><span class="sxs-lookup"><span data-stu-id="a74f1-105">The tool allowed debugging of the flow of an orchestration and the ability to view the flow of a message through a sequential display.</span></span>  <span data-ttu-id="a74f1-106">クエリ ビルダーでは、追跡データの標準クエリおよびカスタム クエリを実行できました。</span><span class="sxs-lookup"><span data-stu-id="a74f1-106">A Query Builder allowed standard and custom queries of the tracking data.</span></span>  
   
  <span data-ttu-id="a74f1-107">状態と動作状況の追跡ツールは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メニューから直接起動はされないようになりましたが、その追跡機能は引き続き間接的に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境内に存在しています。</span><span class="sxs-lookup"><span data-stu-id="a74f1-107">While the Health Activity Tracking tool is no longer invoked directly from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] menu, its tracking functionality still indirectly exists from within the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span>  <span data-ttu-id="a74f1-108">状態と動作状況の情報は、BizTalk Server 管理コンソールの [グループ ハブ] ページ内で、強化された統合と追加の追跡クエリを通じて利用できます。</span><span class="sxs-lookup"><span data-stu-id="a74f1-108">Health and activity information is available through improved integration and additional tracking queries within the Group Hub page in the BizTalk Server Administration console.</span></span>  
   

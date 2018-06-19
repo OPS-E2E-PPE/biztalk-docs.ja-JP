@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241394"
 ---
 # <a name="error---schema-dependency-not-valid"></a><span data-ttu-id="d2c81-102">エラー - スキーマの依存関係が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="d2c81-102">Error - Schema Dependency Not Valid</span></span>
 <span data-ttu-id="d2c81-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="d2c81-103">**Error Code**</span></span>  

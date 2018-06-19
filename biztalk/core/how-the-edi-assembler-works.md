@@ -1,14 +1,14 @@
 ---
-title: "EDI アセンブラーの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI アセンブラーの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3785870-08ab-4fc2-8f7e-7c5a37639a7a
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22250490"
 ---
 # <a name="how-the-edi-assembler-works"></a><span data-ttu-id="80611-102">EDI アセンブラの動作</span><span class="sxs-lookup"><span data-stu-id="80611-102">How the EDI Assembler Works</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="80611-103"> は、送信される EDI エンコード インターチェンジの処理の大部分を、EDI 送信パイプライン (`Microsoft.BizTalk.DefaultPipelines.EDISendPipeline`) で実行します。</span><span class="sxs-lookup"><span data-stu-id="80611-103"> performs most processing of EDI-encoded interchanges to be sent in the EDI Send Pipeline (`Microsoft.BizTalk.DefaultPipelines.EDISendPipeline`).</span></span> <span data-ttu-id="80611-104">このパイプラインには、EDI アセンブラ パイプライン コンポーネントが含まれ、このコンポーネントにより、次の処理が実行されます。</span><span class="sxs-lookup"><span data-stu-id="80611-104">This pipeline includes the EDI assembler pipeline component, which performs the following processing:</span></span>  
@@ -98,7 +99,7 @@ ms.lasthandoff: 01/17/2018
 |<span data-ttu-id="80611-218">グループ制御番号</span><span class="sxs-lookup"><span data-stu-id="80611-218">Group control number</span></span>|<span data-ttu-id="80611-219">GS6</span><span class="sxs-lookup"><span data-stu-id="80611-219">GS6</span></span>|<span data-ttu-id="80611-220">UNG5</span><span class="sxs-lookup"><span data-stu-id="80611-220">UNG5</span></span>|  
 |<span data-ttu-id="80611-221">トランザクション セット制御番号 (X12)</span><span class="sxs-lookup"><span data-stu-id="80611-221">Transaction set control number (X12)</span></span><br /><br /> <span data-ttu-id="80611-222">トランザクション セット参照番号 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="80611-222">Transaction set reference number (EDIFACT)</span></span>|<span data-ttu-id="80611-223">ST2</span><span class="sxs-lookup"><span data-stu-id="80611-223">ST2</span></span>|<span data-ttu-id="80611-224">UNH1</span><span class="sxs-lookup"><span data-stu-id="80611-224">UNH1</span></span>|  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="80611-225">[次へ] で入力した値の範囲に基づいて、送信インターチェンジのインターチェンジ制御番号を設定、**インターチェンジ制御番号 (ISA13)**プロパティを**ローカル ホスト設定**(ページ[**インターチェンジの設定**) 一方向アグリーメント タブで、**アグリーメントのプロパティ**] ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="80611-225"> will set the interchange control number for the next interchange sent based on the range of values that you entered in the **Interchange control number (ISA13)** property on the **Local Host Settings** page (under **Interchange Settings**) of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="80611-226">この番号は、以降のインターチェンジごとに増分されます (最大値に達するまで)。</span><span class="sxs-lookup"><span data-stu-id="80611-226">It will increment this number for each subsequent interchange, until the maximum value is reached.</span></span>  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="80611-225">[次へ] で入力した値の範囲に基づいて、送信インターチェンジのインターチェンジ制御番号を設定、**インターチェンジ制御番号 (ISA13)** プロパティを**ローカル ホスト設定**(ページ[**インターチェンジの設定**) 一方向アグリーメント タブで、**アグリーメントのプロパティ**] ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="80611-225"> will set the interchange control number for the next interchange sent based on the range of values that you entered in the **Interchange control number (ISA13)** property on the **Local Host Settings** page (under **Interchange Settings**) of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="80611-226">この番号は、以降のインターチェンジごとに増分されます (最大値に達するまで)。</span><span class="sxs-lookup"><span data-stu-id="80611-226">It will increment this number for each subsequent interchange, until the maximum value is reached.</span></span>  
   
  <span data-ttu-id="80611-227">インターチェンジ制御番号が EdiOverride コンテキスト プロパティを使用して指定されている場合は、その値がこのインターチェンジで使用されるので、アグリーメントで指定されたインターチェンジ制御番号の影響は受けません。</span><span class="sxs-lookup"><span data-stu-id="80611-227">If the interchange control number is specified using the EdiOverride context properties, the value specified will be used for this interchange and will not affect the interchange control number specified in agreement.</span></span>  
   

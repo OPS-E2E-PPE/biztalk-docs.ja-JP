@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234082"
 ---
 # <a name="biztalk-mapper-errors"></a><span data-ttu-id="4890c-102">BizTalk マッパーのエラー</span><span class="sxs-lookup"><span data-stu-id="4890c-102">BizTalk Mapper Errors</span></span>
 <span data-ttu-id="4890c-103">ここでは、BizTalk マッパー関連のコンパイル メッセージについての補足情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4890c-103">This section provides supplemental information about compilation messages associated with BizTalk Mapper.</span></span> <span data-ttu-id="4890c-104">この情報にアクセスするには、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のタスク一覧ウィンドウで、関連するメッセージの 1 つを選択して F1 キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4890c-104">You can access this information using the F1 key when one of the relevant messages is selected in the Task List window in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="4890c-105">BizTalk マッパーの概念と手順については、次を参照してください。 [BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)です。</span><span class="sxs-lookup"><span data-stu-id="4890c-105">For conceptual and procedural information for BizTalk Mapper, see [Creating Maps Using BizTalk Mapper](../core/creating-maps-using-biztalk-mapper.md).</span></span>  

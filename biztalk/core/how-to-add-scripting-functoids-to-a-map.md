@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248474"
 ---
 # <a name="how-to-add-scripting-functoids-to-a-map"></a><span data-ttu-id="d8524-102">マップにスクリプト Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="d8524-102">How to Add Scripting Functoids to a Map</span></span>
 <span data-ttu-id="d8524-103">**スクリプト**functoid では、実行時に使用できない機能を実行するカスタム スクリプトまたはコードを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d8524-103">The **Scripting** functoid enables you to use custom script or code at run time to perform functions otherwise not available.</span></span> <span data-ttu-id="d8524-104">使用しての実行時に COM オブジェクトを呼び出すなど、**スクリプト**functoid し、独自のカスタム スクリプトを記述します。</span><span class="sxs-lookup"><span data-stu-id="d8524-104">For example, you can call a COM object at run time by using the **Scripting** functoid and writing your own custom script.</span></span>  
@@ -84,7 +85,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  <span data-ttu-id="d8524-136">複数の関数を含むスクリプトを作成すると、最初の関数がメイン関数または主要な関数として扱われます。他の関数は、主要な関数の実行時にのみ呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="d8524-136">If you create a script containing multiple functions, the first function will be treated as the main or primary function; other functions are only called if they are called in the execution of the primary function.</span></span>  
   
-     <span data-ttu-id="d8524-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d8524-137">Click **OK**.</span></span>  
+     <span data-ttu-id="d8524-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d8524-137">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="d8524-138">スクリプトまたは外部アセンブリの関連付けられているメソッドに入力パラメーターが必要な場合は、基本的な Functoid の処理と同様に、適切な数および種類の入力リンクを作成します。</span><span class="sxs-lookup"><span data-stu-id="d8524-138">If your script or the associated method in an external assembly requires input parameters, create the appropriate number and type of input links as you would for a basic functoid.</span></span>  
   

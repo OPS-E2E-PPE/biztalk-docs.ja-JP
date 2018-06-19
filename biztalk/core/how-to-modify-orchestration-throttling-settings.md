@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254626"
 ---
 # <a name="how-to-modify-orchestration-throttling-settings"></a><span data-ttu-id="e0a13-102">オーケストレーション制限の設定を変更する方法</span><span class="sxs-lookup"><span data-stu-id="e0a13-102">How to Modify Orchestration Throttling Settings</span></span>
 <span data-ttu-id="e0a13-103">BizTalk 設定ダッシュボードを使用して、BizTalk グループ全体で、特定のホストについてオーケストレーションの制限の構成設定を変更できます。</span><span class="sxs-lookup"><span data-stu-id="e0a13-103">Using the BizTalk Settings Dashboard, you can modify the orchestration throttling configuration settings of a given host, across the BizTalk Group.</span></span> <span data-ttu-id="e0a13-104">これらの設定は、特定のホストに割り当てられているすべてのホスト インスタンスに適用されます。</span><span class="sxs-lookup"><span data-stu-id="e0a13-104">These settings apply to all host instances assigned to the given host.</span></span> <span data-ttu-id="e0a13-105">このトピックでは、これらの設定を変更する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="e0a13-105">This topic provides the step-by-step procedure to modify these settings.</span></span>  

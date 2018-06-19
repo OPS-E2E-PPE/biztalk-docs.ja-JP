@@ -1,14 +1,14 @@
 ---
-title: "EDI メッセージの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI メッセージの検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 71f34561-d280-48bb-b1dd-ce37b87c5023
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238826"
 ---
 # <a name="edi-message-validation"></a><span data-ttu-id="3b156-102">EDI メッセージの検証</span><span class="sxs-lookup"><span data-stu-id="3b156-102">EDI Message Validation</span></span>
 <span data-ttu-id="3b156-103">EDI データは、自己記述型タグを持たない区切られたファイルとして送信されます。そのため、エンコーディング規則は厳密な書式規則を適用して、送信先アプリケーションが下流の処理で情報を正常に解析および利用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="3b156-103">EDI data is transmitted as delimited files (without self describing tags) and therefore the encoding rules enforce strict formatting rules to ensure the destination application is able to successfully parse and consume the information for downstream processing.</span></span>  

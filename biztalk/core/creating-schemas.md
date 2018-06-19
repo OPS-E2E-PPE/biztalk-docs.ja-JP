@@ -1,14 +1,14 @@
 ---
-title: "スキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 20b88194-b400-4ebc-8882-d493fbf30e0f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238538"
 ---
 # <a name="creating-schemas"></a><span data-ttu-id="48f11-102">スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="48f11-102">Creating Schemas</span></span>
 <span data-ttu-id="48f11-103">BizTalk エディターを使用して、2 つの種類のスキーマを作成することができます。 メッセージのスキーマとプロパティ スキーマです。</span><span class="sxs-lookup"><span data-stu-id="48f11-103">You can use BizTalk Editor to create two types of schemas: message schemas and property schemas.</span></span>  

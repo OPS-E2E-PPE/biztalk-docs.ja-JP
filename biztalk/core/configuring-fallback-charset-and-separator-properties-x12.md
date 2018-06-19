@@ -1,14 +1,14 @@
 ---
-title: "フォールバック文字セットと区切り記号のプロパティ (X12) 構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック文字セットと区切り記号のプロパティ (X12) 構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 477f4952-6a4e-4e98-a37f-f6e1fe7db3d3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233842"
 ---
 # <a name="configuring-fallback-charset-and-separator-properties-x12"></a><span data-ttu-id="0cd87-102">フォールバックの文字セットと区切り記号のプロパティを構成する (X12)</span><span class="sxs-lookup"><span data-stu-id="0cd87-102">Configuring Fallback Charset and Separator Properties (X12)</span></span>
 <span data-ttu-id="0cd87-103">フォールバック アグリーメントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が、送信 X12 メッセージのエンベロープを作成するときにパーティのプロパティを検証するために使用する文字セットを指定できます。</span><span class="sxs-lookup"><span data-stu-id="0cd87-103">In the fallback agreement, you can specify the character set that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to validate party properties when creating the envelope for an outgoing X12 message.</span></span> <span data-ttu-id="0cd87-104">また、インターチェンジのセグメントに使用する区切り記号と終端記号を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="0cd87-104">You can also specify what separators and terminators will be used for the segments in the interchange.</span></span>  

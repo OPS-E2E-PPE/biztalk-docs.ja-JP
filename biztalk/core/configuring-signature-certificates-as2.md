@@ -1,14 +1,14 @@
 ---
-title: "(AS2) の署名証明書の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: (AS2) の署名証明書の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8539e210-1656-4fff-b026-36b81689061f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233266"
 ---
 # <a name="configuring-signature-certificates-as2"></a><span data-ttu-id="271ee-102">署名証明書の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="271ee-102">Configuring Signature Certificates (AS2)</span></span>
 <span data-ttu-id="271ee-103">このページの設定の一部として、このアグリーメントに解決されるすべての送信メッセージまたは MDN の署名に使用される証明書を指定できます。</span><span class="sxs-lookup"><span data-stu-id="271ee-103">As part of the settings on this page, you can specify the certificates to be used for signing all outgoing messages and MDN that resolve to this agreement.</span></span> <span data-ttu-id="271ee-104">このページの設定は BizTalk グループのプロパティの一部として提供された証明書設定を上書きします。</span><span class="sxs-lookup"><span data-stu-id="271ee-104">The settings on this page override the certificate settings provided as part of the BizTalk Group properties.</span></span> <span data-ttu-id="271ee-105">証明書の使用方法の詳細については、次を参照してください。 [AS2 用の証明書を構成する](../core/configuring-certificates-for-as2.md)です。</span><span class="sxs-lookup"><span data-stu-id="271ee-105">For more information on how certificates are used, see [Configuring Certificates for AS2](../core/configuring-certificates-for-as2.md).</span></span>  

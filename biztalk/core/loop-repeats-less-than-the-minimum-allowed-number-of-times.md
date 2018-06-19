@@ -1,14 +1,14 @@
 ---
-title: "小さい値の回数が許容される最小の繰り返しをループ |Microsoft ドキュメント"
-ms.custom: 
+title: 小さい値の回数が許容される最小の繰り返しをループ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0be21d1d-86da-456b-83e6-c91f1dc9fb48
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261986"
 ---
 # <a name="loop-repeats-less-than-the-minimum-allowed-number-of-times"></a><span data-ttu-id="3f721-102">ループの繰り返し回数が許容される最小値を下回っています</span><span class="sxs-lookup"><span data-stu-id="3f721-102">Loop repeats less than the minimum allowed number of times</span></span>
 ## <a name="details"></a><span data-ttu-id="3f721-103">詳細</span><span class="sxs-lookup"><span data-stu-id="3f721-103">Details</span></span>  

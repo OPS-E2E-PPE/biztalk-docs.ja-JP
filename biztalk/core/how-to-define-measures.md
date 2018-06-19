@@ -1,18 +1,18 @@
 ---
-title: "メジャーを定義する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メジャーを定義する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Excel add-in [BAM], creating measures
 - aggregations [BAM], measures
 - BAM views, measures
 ms.assetid: fd3dfe6b-cc63-4306-8aad-a9d2a9af01e8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249146"
 ---
 # <a name="how-to-define-measures"></a><span data-ttu-id="81b03-102">メジャーを定義する方法</span><span class="sxs-lookup"><span data-stu-id="81b03-102">How to Define Measures</span></span>
 <span data-ttu-id="81b03-103">メジャーでは、アクティビティの計算方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="81b03-103">A measure defines how an activity is calculated.</span></span> <span data-ttu-id="81b03-104">BAM ビューの作成時、ビューのアクティビティにメジャーを定義できます。</span><span class="sxs-lookup"><span data-stu-id="81b03-104">When you create a BAM view you can define a measure for the activity in the view.</span></span> <span data-ttu-id="81b03-105">たとえば、発注アクティビティの場合は、PO の合計金額、PO の数、PO の平均金額などを計算できます。</span><span class="sxs-lookup"><span data-stu-id="81b03-105">For example, for a purchase order activity, you can calculate the total PO amount, the number of POs, the average PO amount, and so on.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="81b03-125">最大値 (RTA では未サポート)</span><span class="sxs-lookup"><span data-stu-id="81b03-125">Maximum (not supported for RTAs)</span></span>  
   
-5.  <span data-ttu-id="81b03-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="81b03-126">Click **OK**.</span></span> <span data-ttu-id="81b03-127">ディメンションとメジャーの追加が完了したらをクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="81b03-127">When you finish adding dimensions and measures, click **Next**.</span></span>  
+5.  <span data-ttu-id="81b03-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="81b03-126">Click **OK**.</span></span> <span data-ttu-id="81b03-127">ディメンションとメジャーの追加が完了したらをクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="81b03-127">When you finish adding dimensions and measures, click **Next**.</span></span>  
   
 6.  <span data-ttu-id="81b03-128">**新しい BAM ビュー: 概要** ページで、新しいビューに関する情報を確認してをクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="81b03-128">On the **New BAM View: Summary** page, review the information regarding your new view, and then click **Next**.</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "フラット ファイル アセンブラー パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, Flat File Assembler
 - Flat File Assembler [pipeline component]
 ms.assetid: 3c851771-55b2-4d21-9291-d707dd66837c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245866"
 ---
 # <a name="flat-file-assembler-pipeline-component"></a><span data-ttu-id="ca93b-102">フラット ファイル アセンブラー パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ca93b-102">Flat File Assembler Pipeline Component</span></span>
 <span data-ttu-id="ca93b-103">フラット ファイル アセンブラーは、個別のドキュメントを 1 つのバッチとしてまとめ、必要に応じて、ヘッダーやトレーラーを追加します。</span><span class="sxs-lookup"><span data-stu-id="ca93b-103">A Flat File Assembler combines individual documents into a batch and optionally adds a header or trailer (or both) to it.</span></span> <span data-ttu-id="ca93b-104">フラット ファイルの詳細については、次を参照してください。[区切り記号付きレコードとフラット ファイル メッセージ](../core/flat-file-messages-with-delimited-records.md)です。</span><span class="sxs-lookup"><span data-stu-id="ca93b-104">For more information about flat files, see [Flat File Messages with Delimited Records](../core/flat-file-messages-with-delimited-records.md).</span></span> <span data-ttu-id="ca93b-105">参照してください[位置指定レコードのフラット ファイル メッセージ](../core/flat-file-messages-with-positional-records.md)です。</span><span class="sxs-lookup"><span data-stu-id="ca93b-105">Also see [Flat File Messages with Positional Records](../core/flat-file-messages-with-positional-records.md).</span></span>  

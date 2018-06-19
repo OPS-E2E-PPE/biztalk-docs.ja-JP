@@ -1,14 +1,14 @@
 ---
-title: "AS2 BizTalk Server での処理 |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 BizTalk Server での処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0027d3db-24a5-459d-9f4e-a75f49d31d82
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233738"
 ---
 # <a name="as2-processing-in-biztalk-server"></a><span data-ttu-id="90561-102">BizTalk Server での AS2 処理</span><span class="sxs-lookup"><span data-stu-id="90561-102">AS2 Processing in BizTalk Server</span></span>
 <span data-ttu-id="90561-103">このトピックでは、AS2 メッセージの受信側と送信側の処理、および取引先アグリーメントが AS2 メッセージングにどのように役立つかの概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="90561-103">This topic provides an overview of receive-side and send-side processing of AS2 messages, and how trading partner agreements can help achieve AS2 messaging.</span></span>  

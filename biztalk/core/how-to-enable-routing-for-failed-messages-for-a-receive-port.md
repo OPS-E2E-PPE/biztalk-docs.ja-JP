@@ -1,11 +1,11 @@
 ---
-title: "ルーティングを有効にする方法が失敗したメッセージの受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: ルーティングを有効にする方法が失敗したメッセージの受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive ports, routing
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - routing, failed messages
 - errors, receive ports
 ms.assetid: 22366664-545d-4981-9bde-4df48b115002
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254090"
 ---
 # <a name="how-to-enable-routing-for-failed-messages-for-a-receive-port"></a><span data-ttu-id="3bf1e-102">受信ポートが処理に失敗したメッセージのルーティングを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="3bf1e-102">How to Enable Routing for Failed Messages for a Receive Port</span></span>
 <span data-ttu-id="3bf1e-103">このトピックでは、BizTalk Server 管理コンソールを使用して、受信ポートが処理するメッセージのルーティングを有効にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3bf1e-103">This topic describes how to use the BizTalk Server Administration console to enable routing for the messages processed by a receive port.</span></span> <span data-ttu-id="3bf1e-104">このオプションを有効にすると、処理に失敗したメッセージが、他の送信ポートやオーケストレーション スケジュールなど、メッセージをサブスクライブするアプリケーションにルーティングされます。</span><span class="sxs-lookup"><span data-stu-id="3bf1e-104">When you enable this option, BizTalk Server will attempt to route any message that fails processing to a subscribing application (such as another receive port or orchestration schedule).</span></span> <span data-ttu-id="3bf1e-105">このオプションを無効にした場合 (既定)、失敗したメッセージは中断され、否定受信確認応答 (NACK) が生成されます。</span><span class="sxs-lookup"><span data-stu-id="3bf1e-105">When this option is not enabled (the default), BizTalk Server suspends failed messages and generates a negative acknowledgment (NACK).</span></span> <span data-ttu-id="3bf1e-106">失敗したメッセージの管理に関する背景情報については、次を参照してください。[できませんでしたメッセージのルーティングを使用して](../core/using-failed-message-routing.md)です。</span><span class="sxs-lookup"><span data-stu-id="3bf1e-106">For background information about managing failed messages, see [Using Failed Message Routing](../core/using-failed-message-routing.md).</span></span>  

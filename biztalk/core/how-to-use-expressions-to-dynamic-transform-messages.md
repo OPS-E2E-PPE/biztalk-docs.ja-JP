@@ -1,14 +1,14 @@
 ---
-title: "メッセージを動的に変換する式を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージを動的に変換する式を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48387d97-9312-4df5-b614-727ea9035bf8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256938"
 ---
 # <a name="how-to-use-expressions-to-dynamic-transform-messages"></a><span data-ttu-id="d476e-102">メッセージを動的に変換する式の使用方法</span><span class="sxs-lookup"><span data-stu-id="d476e-102">How to Use Expressions to Dynamic Transform Messages</span></span>
 <span data-ttu-id="d476e-103">式を使用して、オーケストレーション内のメッセージを動的に変換できます。</span><span class="sxs-lookup"><span data-stu-id="d476e-103">You can use expressions to dynamic transform messages in your orchestration.</span></span> <span data-ttu-id="d476e-104">XLANG 内から呼び出すことができる変換メソッドを公開する、**メッセージの割り当て**図形の内側、**メッセージの構築**図形です。</span><span class="sxs-lookup"><span data-stu-id="d476e-104">XLANG exposes a transform method that can be called from within a **Message Assignment** shape inside of a **Construct Message** shape.</span></span> <span data-ttu-id="d476e-105">これは、同じときに呼び出される、**変換**図形は使用しますが、プログラムによって、オーケストレーション内で指定したマップを使用してメッセージを変換することができます。</span><span class="sxs-lookup"><span data-stu-id="d476e-105">This is the same method that is called when a **Transform** shape is used, but allows you to programmatically transform the messages using the map you designated within the orchestration.</span></span> <span data-ttu-id="d476e-106">これは、種類に関係なくメッセージ処理を行う場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="d476e-106">This is useful when you are doing type-agnostic message processing.</span></span> <span data-ttu-id="d476e-107">たとえば、あるビジネス プロセスで、受け取った受信メッセージで指定されているパラメーターに基づいて一連のマップの中から受信メッセージの変換用のマップを選択する必要がある場合、式図形内で変換メソッドを使用すると、ビジネス プロセス全体を維持したままこれを実現することができます。</span><span class="sxs-lookup"><span data-stu-id="d476e-107">For example, if you have a business process that needs to choose from a series of maps to transform inbound messages based on the parameters provided by the received inbound messages, you can achieve this by using the transform method in the Expression shape while maintaining your overall business process intact.</span></span>  

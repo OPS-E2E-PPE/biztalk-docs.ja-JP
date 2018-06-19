@@ -1,14 +1,14 @@
 ---
-title: "EDI インターチェンジと関連する ACK の状態レポート |Microsoft ドキュメント"
-ms.custom: 
+title: EDI インターチェンジと関連する ACK の状態レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a112cc3d-d34c-4652-a8ee-3355a31d4a03
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242370"
 ---
 # <a name="edi-interchange-and-correlated-ack-status-report"></a><span data-ttu-id="5a472-102">EDI インターチェンジと関連する ACK の状態レポート</span><span class="sxs-lookup"><span data-stu-id="5a472-102">EDI Interchange and Correlated ACK Status Report</span></span>
 <span data-ttu-id="5a472-103">このレポートでは、EDI 送信パイプラインおよび受信パイプラインで処理されるすべての EDI インターチェンジ、およびそれらのインターチェンジに関連した確認を示します。</span><span class="sxs-lookup"><span data-stu-id="5a472-103">This report shows all EDI interchanges that are processed by the EDI send and receive pipelines, and the acknowledgment correlated to those interchanges.</span></span>  

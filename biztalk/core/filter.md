@@ -1,14 +1,14 @@
 ---
-title: "フィルター |Microsoft ドキュメント"
-ms.custom: 
+title: フィルター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b8dad59d-4a47-4794-bbf9-cba02fe7f0bf
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245802"
 ---
 # <a name="filter"></a><span data-ttu-id="99f65-102">[フィルター]</span><span class="sxs-lookup"><span data-stu-id="99f65-102">Filter</span></span>
 <span data-ttu-id="99f65-103">`Filter` 要素には、`Expression` または `true` に評価される `false` が含まれています。これに基づいて、イベントは処理またはスキップされます。</span><span class="sxs-lookup"><span data-stu-id="99f65-103">The `Filter` element contains an `Expression` that evaluates to `true` or `false` and determines when an event should be processed or skipped.</span></span>  

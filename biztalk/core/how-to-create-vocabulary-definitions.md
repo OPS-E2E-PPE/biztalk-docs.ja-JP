@@ -1,18 +1,18 @@
 ---
-title: "ボキャブラリの定義を作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ボキャブラリの定義を作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, vocabularies
 - vocabularies, creating
 - vocabularies, definitions
 ms.assetid: 6f8fc4c2-2c46-4a7d-a02f-89de0396e3e2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250562"
 ---
 # <a name="how-to-create-vocabulary-definitions"></a><span data-ttu-id="139a2-102">ボキャブラリの定義を作成する方法</span><span class="sxs-lookup"><span data-stu-id="139a2-102">How to Create Vocabulary Definitions</span></span>
 <span data-ttu-id="139a2-103">ボキャブラリの定義ウィザードを使用して、ボキャブラリの定義を作成できます。</span><span class="sxs-lookup"><span data-stu-id="139a2-103">You can use the Vocabulary Definition Wizard to create vocabulary definitions.</span></span> <span data-ttu-id="139a2-104">ボキャブラリの定義は、定数値、値の範囲、値セット、または .NET アセンブリ、XML ドキュメント、データベース テーブルの要素として定義できます。</span><span class="sxs-lookup"><span data-stu-id="139a2-104">You can define a vocabulary definition as a constant value, a range of values, a set of values, or elements of a .NET assembly, XML document, or database table.</span></span> <span data-ttu-id="139a2-105">パブリック変数を選択する場合があります**取得**と**設定**オプションと同様に、データベースおよび XML の定義ウィザード。</span><span class="sxs-lookup"><span data-stu-id="139a2-105">If you select a public variable, there will be **Get** and **Set** options just like in Database and XML definition wizard.</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="139a2-123">をクリックして**範囲の下限**、順にクリック**編集**範囲の下限の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="139a2-123">Click **Range Low**, and then click **Edit** to specify the values for the lower range.</span></span> <span data-ttu-id="139a2-124">パラメーター定義ダイアログが表示されます。</span><span class="sxs-lookup"><span data-stu-id="139a2-124">The parameter definition dialog will be opened.</span></span>  
   
-7.  <span data-ttu-id="139a2-125">選択**定数値の使用**定数の値を入力または選択**公開済みのボキャブラリから定義を使用**ボキャブラリの定義を参照し、をクリックし、 **[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-125">Select **Use Constant Value** and enter a constant value, or select **Use Definition from a Published Vocabulary** and browse to a vocabulary definition, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="139a2-125">選択**定数値の使用**定数の値を入力または選択**公開済みのボキャブラリから定義を使用**ボキャブラリの定義を参照し、をクリックし、 **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="139a2-125">Select **Use Constant Value** and enter a constant value, or select **Use Definition from a Published Vocabulary** and browse to a vocabulary definition, and then click **OK**.</span></span>  
   
 8.  <span data-ttu-id="139a2-126">手順 6 および 7 を繰り返します**範囲の上限**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-126">Repeat steps 6 and 7 for **Range High**.</span></span>  
   
@@ -108,11 +109,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="139a2-146">ボキャブラリのバージョンを右クリックし、をクリックして**新しい定義の追加**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-146">Right-click the vocabulary version, and then click **Add New Definition**.</span></span>  
   
-2.  <span data-ttu-id="139a2-147">ボキャブラリの定義ウィザードで選択**.NET クラスまたはクラス メンバー**、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-147">In the Vocabulary Definition Wizard, select **.NET Class or Class Member**, and then click **Next**.</span></span>  
+2.  <span data-ttu-id="139a2-147">ボキャブラリの定義ウィザードで選択 **.NET クラスまたはクラス メンバー**、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-147">In the Vocabulary Definition Wizard, select **.NET Class or Class Member**, and then click **Next**.</span></span>  
   
 3.  <span data-ttu-id="139a2-148">編集、**定義名**と**説明**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="139a2-148">Edit the **Definition Name** and **Description** fields.</span></span>  
   
-4.  <span data-ttu-id="139a2-149">**[参照]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-149">Click **Browse**.</span></span>  
+4.  <span data-ttu-id="139a2-149">**[参照]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-149">Click **Browse**.</span></span>  
   
 5.  <span data-ttu-id="139a2-150">**.NET アセンブリ**ダイアログ ボックスでは、アセンブリを選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-150">In the **.NET Assemblies** dialog box, select an assembly, and then click **OK**.</span></span>  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="139a2-158">詳細については、このトピックの後半にある「パラメーターを使用して、ボキャブラリの定義の表示書式を指定するには」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="139a2-158">For more information, see "To specify the display format of a vocabulary definition by using parameters" later in this topic.</span></span>  
   
-9. <span data-ttu-id="139a2-159">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-159">Click **Finish**.</span></span>  
+9. <span data-ttu-id="139a2-159">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-159">Click **Finish**.</span></span>  
   
      <span data-ttu-id="139a2-160">![ボキャブラリの定義](../core/media/4259101f-26dd-488f-81c0-f8d225e4016e.gif "4259101f-26dd-488f-81c0-f8d225e4016e")</span><span class="sxs-lookup"><span data-stu-id="139a2-160">![Vocabulary Definitions](../core/media/4259101f-26dd-488f-81c0-f8d225e4016e.gif "4259101f-26dd-488f-81c0-f8d225e4016e")</span></span>  
 <span data-ttu-id="139a2-161">Net オブジェクトのボキャブラリの定義</span><span class="sxs-lookup"><span data-stu-id="139a2-161">Net object vocabulary definition</span></span>  
@@ -151,7 +152,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="139a2-170">値を設定する場合は、クリックして**次**、し、表示形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="139a2-170">If you chose to set the value, click **Next**, and then specify the display format.</span></span>  
   
-8.  <span data-ttu-id="139a2-171">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-171">Click **Finish**.</span></span>  
+8.  <span data-ttu-id="139a2-171">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-171">Click **Finish**.</span></span>  
   
      <span data-ttu-id="139a2-172">![ボキャブラリの定義](../core/media/fd81b534-ec41-4147-b716-1e10ffc01d6f.gif "fd81b534-ec41-4147-b716-1e10ffc01d6f")</span><span class="sxs-lookup"><span data-stu-id="139a2-172">![Vocabulary Definitions](../core/media/fd81b534-ec41-4147-b716-1e10ffc01d6f.gif "fd81b534-ec41-4147-b716-1e10ffc01d6f")</span></span>  
 <span data-ttu-id="139a2-173">XML のボキャブラリの定義</span><span class="sxs-lookup"><span data-stu-id="139a2-173">XML vocabulary definition</span></span>  
@@ -167,7 +168,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="139a2-180">定義名と定義の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="139a2-180">Type a definition name and definition description.</span></span>  
   
-4.  <span data-ttu-id="139a2-181">**[参照]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-181">Click **Browse**.</span></span>  
+4.  <span data-ttu-id="139a2-181">**[参照]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-181">Click **Browse**.</span></span>  
   
 5.  <span data-ttu-id="139a2-182">接続する SQL Server コンピューターを選択します。</span><span class="sxs-lookup"><span data-stu-id="139a2-182">Select a SQL Server computer to connect with.</span></span> <span data-ttu-id="139a2-183">SQL Server コンピューターが現在開始されていない場合は、選択、**停止されている場合、SQL Server 開始**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="139a2-183">If the SQL Server computer is not currently started, select the **Start SQL Server if it is stopped** check box.</span></span>  
   
@@ -181,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="139a2-191">テーブルを選択した場合は、表示名を入力します。</span><span class="sxs-lookup"><span data-stu-id="139a2-191">If you selected a table, type a display name.</span></span>  
   
-10. <span data-ttu-id="139a2-192">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-192">Click **Finish**.</span></span>  
+10. <span data-ttu-id="139a2-192">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="139a2-192">Click **Finish**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="139a2-193">既定では、 **DataConnection**バインディングの使用</span><span class="sxs-lookup"><span data-stu-id="139a2-193">By default, **DataConnection** binding is used</span></span>  
@@ -193,7 +194,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="139a2-197">一覧からパラメーターを選択**パラメーター**をクリックしてボキャブラリの定義ウィザードでは、**編集**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-197">Select a parameter from the list of **Parameters** in Vocabulary Definition Wizard, and then click **Edit**.</span></span>  
   
-2.  <span data-ttu-id="139a2-198">選択**定数値の使用**定数の値を入力または選択**公開済みのボキャブラリから定義を使用**ボキャブラリの定義を参照し、をクリックし、 **[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-198">Select **Use Constant Value** and enter a constant value, or select **Use Definition from a Published Vocabulary** and browse to a vocabulary definition, and then click **OK**.</span></span>  
+2.  <span data-ttu-id="139a2-198">選択**定数値の使用**定数の値を入力または選択**公開済みのボキャブラリから定義を使用**ボキャブラリの定義を参照し、をクリックし、 **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="139a2-198">Select **Use Constant Value** and enter a constant value, or select **Use Definition from a Published Vocabulary** and browse to a vocabulary definition, and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="139a2-199">表示形式文字列を入力するか、をクリックして**既定**をクリックして既定の表示書式文字列に戻す**完了**です。</span><span class="sxs-lookup"><span data-stu-id="139a2-199">Type the display format string or click **Default** to revert to the default display format string, and then click **Finish**.</span></span>  
   

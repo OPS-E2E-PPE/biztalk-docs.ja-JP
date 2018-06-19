@@ -1,14 +1,14 @@
 ---
-title: "全般設定 (AS2) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 全般設定 (AS2) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8592c52e-5156-418c-9c49-7478f73c372e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234626"
 ---
 # <a name="configuring-general-settings-as2"></a><span data-ttu-id="4c07b-102">全般的な設定の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="4c07b-102">Configuring General Settings (AS2)</span></span>
 <span data-ttu-id="4c07b-103">全般的な設定の一部としてアグリーメント名、アグリーメントで使用するプロトコル (AS2)、およびアグリーメント対象のパーティとプロファイルを指定し、アグリーメントにより処理されるすべてのメッセージに対してレポート機能を有効にするかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4c07b-103">As part of the general settings, you specify agreement name, the protocol it will use (AS2), the parties and profiles that the agreement is between, and whether to have reporting enabled for all messages processed through the agreement.</span></span> <span data-ttu-id="4c07b-104">また、アグリーメントの中でパーティの連絡先情報を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="4c07b-104">You can also specify the party contact information as part of the agreement.</span></span>  
@@ -98,7 +99,7 @@ ms.lasthandoff: 09/20/2017
     2.  <span data-ttu-id="4c07b-178">**テキスト 1**、**テキスト 2**、および**アグリーメント**テキスト ボックスでは、パーティとのアグリーメントに関する情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="4c07b-178">In the **Text 1**, **Text 2**, and **Agreement** text boxes, enter information about the agreement with a party.</span></span>  
   
         > [!IMPORTANT]
-        >  <span data-ttu-id="4c07b-179">クリックすると**[ok]**または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="4c07b-179">If you click **OK** or **Apply** after providing all the values listed in this page, you will get an error.</span></span> <span data-ttu-id="4c07b-180">その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。</span><span class="sxs-lookup"><span data-stu-id="4c07b-180">That is because the mandatory values to create an agreement are not yet provided.</span></span> <span data-ttu-id="4c07b-181">これらは、AS2-から AS2 に-の値を**識別子**各一方向アグリーメント タブのページです。</span><span class="sxs-lookup"><span data-stu-id="4c07b-181">These are AS2-From to AS2-To values on the **Identifiers** page of each one-way agreement tab.</span></span>  
+        >  <span data-ttu-id="4c07b-179">クリックすると **[ok]** または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="4c07b-179">If you click **OK** or **Apply** after providing all the values listed in this page, you will get an error.</span></span> <span data-ttu-id="4c07b-180">その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。</span><span class="sxs-lookup"><span data-stu-id="4c07b-180">That is because the mandatory values to create an agreement are not yet provided.</span></span> <span data-ttu-id="4c07b-181">これらは、AS2-から AS2 に-の値を**識別子**各一方向アグリーメント タブのページです。</span><span class="sxs-lookup"><span data-stu-id="4c07b-181">These are AS2-From to AS2-To values on the **Identifiers** page of each one-way agreement tab.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="4c07b-182">次の手順</span><span class="sxs-lookup"><span data-stu-id="4c07b-182">Next Steps</span></span>  
  <span data-ttu-id="4c07b-183">アグリーメントの識別子設定を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c07b-183">You must now configure the identifier settings for the agreement.</span></span> <span data-ttu-id="4c07b-184">手順を参照してください[識別子の構成 (AS2)](../core/configuring-identifiers-as2.md)です。</span><span class="sxs-lookup"><span data-stu-id="4c07b-184">For instructions see [Configuring Identifiers (AS2)](../core/configuring-identifiers-as2.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "フォールバック ローカル ホスト設定 (X12 トランザクション セットの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック ローカル ホスト設定 (X12 トランザクション セットの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68511199-a7ed-45b3-807d-70378b2c6ebb
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233394"
 ---
 # <a name="configuring-fallback-local-host-settngs-x12-transaction-set-settings"></a><span data-ttu-id="a8107-102">フォールバック ローカル ホスト設定の構成 (X12 トランザクションセットの設定)</span><span class="sxs-lookup"><span data-stu-id="a8107-102">Configuring Fallback Local Host Settngs (X12-Transaction Set Settings)</span></span>
 <span data-ttu-id="a8107-103">受信したインターチェンジを処理するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はインターチェンジの処理および検証に使用するスキーマを決定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8107-103">To process an incoming interchange, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] must determine the schema that it needs to use in processing and validating the interchange.</span></span> <span data-ttu-id="a8107-104">この場合、スキーマに関連付けられたターゲット名前空間および使用するスキーマを決定します。</span><span class="sxs-lookup"><span data-stu-id="a8107-104">This consists of determining the target namespace associated with the schema, and determining the schema to be used.</span></span> <span data-ttu-id="a8107-105">フォールバック アグリーメントに関するこのページで、フォールバック ターゲットの名前空間を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8107-105">In this page of the fallback agreement, you specify the fallback target namespace.</span></span> <span data-ttu-id="a8107-106">どの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]スキーマについては、「を決定[アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)です。</span><span class="sxs-lookup"><span data-stu-id="a8107-106">How [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] determines the schema is described in [Agreement Resolution, Schema Discovery, and Authorization for Received EDI Messages](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md).</span></span>  

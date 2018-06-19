@@ -1,14 +1,14 @@
 ---
-title: "シーケンス グループ、グループの選択、またはすべてのグループ ノードを挿入する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: シーケンス グループ、グループの選択、またはすべてのグループ ノードを挿入する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19aee400-1369-4310-b1b4-1bfeb2643236
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254842"
 ---
 # <a name="how-to-insert-a-sequence-group-choice-group-or-all-group-node"></a><span data-ttu-id="f01f1-102">シーケンス グループ、グループの選択、またはすべてのグループ ノードを挿入する方法</span><span class="sxs-lookup"><span data-stu-id="f01f1-102">How to Insert a Sequence Group, Choice Group, or All Group Node</span></span>
 <span data-ttu-id="f01f1-103">BizTalk エディターは、要素の次の 3 つの種類のグループ ノードをサポートしています:**シーケンス グループ**、**選択肢グループ**、および**すべてのグループ**です。</span><span class="sxs-lookup"><span data-stu-id="f01f1-103">BizTalk Editor supports three types of group nodes for elements: **Sequence Group**, **Choice Group**, and **All Group**.</span></span> <span data-ttu-id="f01f1-104">これらの異なるグループ ノードを使用して、対応するインスタンス メッセージのグループの子ノードにさまざまな制約を適用できます。</span><span class="sxs-lookup"><span data-stu-id="f01f1-104">These different types of group nodes establish different constraints on the child nodes of the group in corresponding instance messages.</span></span> <span data-ttu-id="f01f1-105">これらの各グループにおける制約の詳細については、Web 上で XSD (XML Schema Definition) に関する情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f01f1-105">For information about the constraints of these different types of groups, you should refer directly to information about the XML Schema definition (XSD) language on the Web.</span></span> <span data-ttu-id="f01f1-106">この情報へのリンクを参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)です。</span><span class="sxs-lookup"><span data-stu-id="f01f1-106">For links to this information, see [XSD Resources on the Web](../core/xsd-resources-on-the-web.md).</span></span>  

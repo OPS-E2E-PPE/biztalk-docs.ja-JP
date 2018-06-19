@@ -1,14 +1,14 @@
 ---
-title: "EDI パーティに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI パーティに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86475960-cdb2-4b39-817a-b5d834f498a9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261786"
 ---
 # <a name="known-issues-with-edi-parties"></a><span data-ttu-id="fdd1f-102">EDI パーティに関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="fdd1f-102">Known Issues with EDI Parties</span></span>
 <span data-ttu-id="fdd1f-103">このセクションには、EDI パーティと、パートナー アグリーメント マネージャに関する既知の問題を説明するトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fdd1f-103">This section contains topics that describe known issues with EDI parties and the Partner Agreement Manager.</span></span>  

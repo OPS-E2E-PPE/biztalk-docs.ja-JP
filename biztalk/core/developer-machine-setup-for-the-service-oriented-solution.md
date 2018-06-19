@@ -1,18 +1,18 @@
 ---
-title: "開発者のコンピュータ設定、サービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: 開発者のコンピュータ設定、サービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developer servers
 - service solution tutorial, deployment prerequisites
 - service solution tutorial, developer servers
 ms.assetid: a088696f-c1ee-4578-ac02-af29b6de086b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239458"
 ---
 # <a name="developer-machine-setup-for-the-service-oriented-solution"></a><span data-ttu-id="e821e-102">サービス指向ソリューションに対する開発者のコンピュータ設定</span><span class="sxs-lookup"><span data-stu-id="e821e-102">Developer Machine Setup for the Service Oriented Solution</span></span>
 <span data-ttu-id="e821e-103">サービス指向のアーキテクチャ (SOA) は、分散システムを構築するためのアプローチです。</span><span class="sxs-lookup"><span data-stu-id="e821e-103">Service Oriented Architecture (SOA) is an approach to building distributed systems.</span></span> <span data-ttu-id="e821e-104">サービス指向ソリューションでは、クライアントで使用できる 1 つのサービスにさまざまなプロトコルを使用して複数のバックエンド システムを集計することができますを示しています。</span><span class="sxs-lookup"><span data-stu-id="e821e-104">The service oriented solution demonstrates how several back-end systems using different protocols can be aggregated into a single service that clients can consume.</span></span> <span data-ttu-id="e821e-105">このソリューションでは、対象となるサービス レベル契約に適した配信やパフォーマンスの特性を保証するアプローチによって、各種のサービスを統合しています。</span><span class="sxs-lookup"><span data-stu-id="e821e-105">This solution integrates services with an approach that guarantees delivery and performance characteristics for the service level agreement that you need to satisfy.</span></span>  

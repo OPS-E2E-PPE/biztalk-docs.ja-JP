@@ -1,14 +1,14 @@
 ---
-title: "受信アダプターの交換パターンの |Microsoft ドキュメント"
-ms.custom: 
+title: 受信アダプターの交換パターンの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e505559e-66be-4c32-a2a8-a242cba10000
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246298"
 ---
 # <a name="exchange-patterns-for-receive-adapters"></a><span data-ttu-id="e7108-102">受信アダプターの交換パターン</span><span class="sxs-lookup"><span data-stu-id="e7108-102">Exchange Patterns for Receive Adapters</span></span>
 <span data-ttu-id="e7108-103">受信アダプターは、外部からデータを受信し、これをメッセージとして [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信します。</span><span class="sxs-lookup"><span data-stu-id="e7108-103">Receive adapters receive data from the "wire" and submit it as a message into [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="e7108-104">この送信プロセスには、一方向または双方向のメッセージ交換パターンが可能です。</span><span class="sxs-lookup"><span data-stu-id="e7108-104">This submittal process can be a one-way or a two-way message exchange pattern.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262906"
 ---
 # <a name="moduleref-modulerefcollection-node"></a><span data-ttu-id="e5b43-102">ModuleRef (ModuleRefCollection ノード)</span><span class="sxs-lookup"><span data-stu-id="e5b43-102">ModuleRef (ModuleRefCollection Node)</span></span>
 <span data-ttu-id="e5b43-103">バインド ファイルの ModuleRef ノードには、バインド ファイルと共にエクスポートされた .NET アセンブリに関する特定の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5b43-103">The ModuleRef node of a binding file contains specific information about a .NET assembly that was exported with the binding file.</span></span> <span data-ttu-id="e5b43-104">ModuleRef ノードには、カスタム コード、スキーマ、およびオーケストレーションを含むアセンブリの説明などを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="e5b43-104">A ModuleRef node can include but is not limited to descriptions of assemblies that contain custom code, schemas, and orchestrations.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "サーバー グループを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: サーバー グループを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, servers
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - servers, groups
 - managing [servers], adding to groups
 ms.assetid: 6eca1eeb-1a56-4470-b3bc-c64865cf6270
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247682"
 ---
 # <a name="how-to-add-a-server-to-a-group"></a><span data-ttu-id="43954-102">グループにサーバーを追加する方法</span><span class="sxs-lookup"><span data-stu-id="43954-102">How to Add a Server to a Group</span></span>
 <span data-ttu-id="43954-103">BizTalk Server 構成ウィザードを使用して、BizTalk グループにサーバーを追加できます。</span><span class="sxs-lookup"><span data-stu-id="43954-103">You can use BizTalk Server Configuration to add a server to a BizTalk group.</span></span> <span data-ttu-id="43954-104">BizTalk グループにサーバーを追加して、BizTalk Server 環境をスケール アウトします。</span><span class="sxs-lookup"><span data-stu-id="43954-104">You add additional servers to a BizTalk group to scale out your BizTalk Server environment.</span></span>  

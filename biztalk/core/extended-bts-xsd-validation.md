@@ -1,14 +1,14 @@
 ---
-title: "拡張された (BTS-XSD) 検証 |Microsoft ドキュメント"
-ms.custom: 
+title: 拡張された (BTS-XSD) 検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f225115d-8890-4149-8e46-d1bc8af17e62
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245954"
 ---
 # <a name="extended-bts-xsd-validation"></a><span data-ttu-id="58982-102">拡張された (BTS-XSD) 検証</span><span class="sxs-lookup"><span data-stu-id="58982-102">Extended (BTS-XSD) Validation</span></span>
 <span data-ttu-id="58982-103">EDI 受信パイプラインと EDI 送信パイプラインは、データ型が EDI データ型ではない要素を使用してスキーマがカスタマイズされている場合にのみ、拡張された検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="58982-103">The EDI receive pipeline and EDI send pipeline perform extended validation only if the schema has been customized with elements whose data type is not an EDI data type.</span></span> <span data-ttu-id="58982-104">これらの追加された要素は、EDI 検証では検証されず、拡張された検証の対象にもなりません。</span><span class="sxs-lookup"><span data-stu-id="58982-104">These added elements would not be validated by EDI validation, so will be covered by extended validation.</span></span> <span data-ttu-id="58982-105">拡張された検証には `System.Xml.XmlValidatingReader` が使用され、標準 XSD に定義可能なすべてのチェックが含まれます。</span><span class="sxs-lookup"><span data-stu-id="58982-105">Extended validation uses `System.Xml.XmlValidatingReader` and includes all checks that can be defined in a standard XSD.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "証明書を割り当てる方法、受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: 証明書を割り当てる方法、受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, receive locations
 - receive locations, certificates
 - managing [receive locations], certificates
 ms.assetid: 54ae300e-62c5-480f-a9b7-e5c3457a0f80
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248034"
 ---
 # <a name="how-to-assign-a-certificate-to-a-receive-location"></a><span data-ttu-id="6d926-102">受信場所に証明書を割り当てる方法</span><span class="sxs-lookup"><span data-stu-id="6d926-102">How to Assign a Certificate to a Receive Location</span></span>
 <span data-ttu-id="6d926-103">このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所にセキュリティ証明書を割り当てる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6d926-103">This topic describes how to use the BizTalk Server Administration console to assign a security certificate to a receive location.</span></span> <span data-ttu-id="6d926-104">この手順は、双方向の受信場所に対してのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="6d926-104">You can perform this procedure on a two-way receive location only.</span></span> <span data-ttu-id="6d926-105">証明書は、BizTalk Server が実行されているコンピューターの "その他のユーザー" 証明書ストアに格納しておく必要があります。それ以外の場合、この受信場所に関連付けられているメッセージは処理されずにエラーが記録されます。</span><span class="sxs-lookup"><span data-stu-id="6d926-105">The certificate must exist in the Other People certificate store on the computer running BizTalk Server, or messages associated with this receive location will not be processed, and errors will be logged.</span></span>  

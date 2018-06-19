@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server がサイズの大きいメッセージを処理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server がサイズの大きいメッセージを処理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62c070be-dff5-4349-9e36-dd3a7caf1752
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249634"
 ---
 # <a name="how-biztalk-server-processes-large-messages"></a><span data-ttu-id="7098c-102">BizTalk Server がサイズの大きなメッセージを処理する方法</span><span class="sxs-lookup"><span data-stu-id="7098c-102">How BizTalk Server Processes Large Messages</span></span>
 ## <a name="what-is-a-large-message"></a><span data-ttu-id="7098c-103">サイズの大きなメッセージとは何ですか?</span><span class="sxs-lookup"><span data-stu-id="7098c-103">What is a large message?</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="7098c-144">この値を作成した後、バイト数を 10 進数で入力して、新しいしきい値を設定します。</span><span class="sxs-lookup"><span data-stu-id="7098c-144">After you have created this value, enter a decimal value with the number of bytes to set the new threshold to.</span></span> <span data-ttu-id="7098c-145">たとえば、10 進数値 2097152 を入力して、メッセージ サイズのしきい値を既定値の 1 MB から 2 MB に増やします。</span><span class="sxs-lookup"><span data-stu-id="7098c-145">For example, enter a decimal value of 2097152 to increase the message size threshold to 2 MB (from the default of 1 MB).</span></span> <span data-ttu-id="7098c-146">スループットを向上させるため、使用できるメモリ容量が大きいシステムではこの値を大きくしてください。</span><span class="sxs-lookup"><span data-stu-id="7098c-146">Increase this value on systems with a large amount of available memory to improve throughput.</span></span> <span data-ttu-id="7098c-147">ドキュメントをディスクにバッファリングすると、全体のスループットに対してメモリが節約されます。</span><span class="sxs-lookup"><span data-stu-id="7098c-147">Buffering documents to disk conserves memory at a cost to overall throughput.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="7098c-148">既定では、マッピング中に、ファイル システムにバッファリングされるドキュメントは書き込むことが、 *%temp%* BizTalk Server コンピューターのディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="7098c-148">By default, documents that are buffered to the file system during mapping are written to the *%temp%* directory of the BizTalk Server computer.</span></span> <span data-ttu-id="7098c-149">設定を変更、 *%temp%*環境変数マッピング中に、ファイル システムにサイズの大きいメッセージをバッファリングするときにパフォーマンスを向上させるために非システムのディスクにします。</span><span class="sxs-lookup"><span data-stu-id="7098c-149">Change the setting for the *%temp%* environment variable to a non-system disk to improve performance when buffering large messages to the file system during mapping.</span></span>  
+    >  <span data-ttu-id="7098c-148">既定では、マッピング中に、ファイル システムにバッファリングされるドキュメントは書き込むことが、 *%temp%* BizTalk Server コンピューターのディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="7098c-148">By default, documents that are buffered to the file system during mapping are written to the *%temp%* directory of the BizTalk Server computer.</span></span> <span data-ttu-id="7098c-149">設定を変更、 *%temp%* 環境変数マッピング中に、ファイル システムにサイズの大きいメッセージをバッファリングするときにパフォーマンスを向上させるために非システムのディスクにします。</span><span class="sxs-lookup"><span data-stu-id="7098c-149">Change the setting for the *%temp%* environment variable to a non-system disk to improve performance when buffering large messages to the file system during mapping.</span></span>  
   
 2.  <span data-ttu-id="7098c-150">オーケストレーションでのマップの使用を最小限に抑えます。</span><span class="sxs-lookup"><span data-stu-id="7098c-150">Minimize the use of maps in orchestrations:</span></span>  
   

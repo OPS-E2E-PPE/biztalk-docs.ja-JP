@@ -1,11 +1,11 @@
 ---
-title: "送信アダプタの WCF での WCF サービスを使用する際の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信アダプタの WCF での WCF サービスを使用する際の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - consuming, WCF services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - consuming, best practices
 - WCF services, consuming
 ms.assetid: 8bbcfd99-3495-458d-bd7a-6d170a29dde2
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238802"
 ---
 # <a name="considerations-when-consuming-wcf-services-with-the-wcf-send-adapters"></a><span data-ttu-id="e4a4f-102">WCF サービスを WCF 送信アダプタと共に使用する場合の考慮事項</span><span class="sxs-lookup"><span data-stu-id="e4a4f-102">Considerations When Consuming WCF Services with the WCF Send Adapters</span></span>
 <span data-ttu-id="e4a4f-103">このトピックでは、WCF サービスを WCF アダプタと共に使用する際に考慮する必要がある情報を示します。</span><span class="sxs-lookup"><span data-stu-id="e4a4f-103">This topic provides information that you should take into consideration when consuming WCF services with the WCF adapters.</span></span>  

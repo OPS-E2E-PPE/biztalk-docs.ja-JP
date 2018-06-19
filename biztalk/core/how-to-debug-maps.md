@@ -1,14 +1,14 @@
 ---
-title: "マップをデバッグする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マップをデバッグする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1ee1e26-fced-4126-b48a-71007043424d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249034"
 ---
 # <a name="how-to-debug-maps"></a><span data-ttu-id="cffe4-102">マップをデバッグする方法</span><span class="sxs-lookup"><span data-stu-id="cffe4-102">How to Debug Maps</span></span>
 <span data-ttu-id="cffe4-103">**マップのデバッグ**の識別と複雑なマッピングの問題を修正する便利な機能です。</span><span class="sxs-lookup"><span data-stu-id="cffe4-103">The **Debug Map** feature is useful in identifying and fixing complex mapping issues.</span></span> <span data-ttu-id="cffe4-104">このトピックでは、インライン XSLT デバッガーを使用したマップのデバッグ手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="cffe4-104">This topic provides step-by-step instructions for debugging maps using the inline XSLT debugger.</span></span>  

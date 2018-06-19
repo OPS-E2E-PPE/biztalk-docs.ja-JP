@@ -1,11 +1,11 @@
 ---
-title: "追加する方法、受信場所が、受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 追加する方法、受信場所が、受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, adding to receive ports
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive ports, adding receive locations
 - adding, receive locations
 ms.assetid: a71d50dc-629e-4b7f-aa59-6d2274d4cac3
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247386"
 ---
 # <a name="how-to-add-a-receive-location-to-a-receive-port"></a><span data-ttu-id="e4e26-102">受信ポートに受信場所を追加する方法</span><span class="sxs-lookup"><span data-stu-id="e4e26-102">How to Add a Receive Location to a Receive Port</span></span>
 <span data-ttu-id="e4e26-103">このトピックでは、BizTalk Server 管理コンソールを使用して、受信ポートに新しい受信場所を追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e4e26-103">This topic describes how to use the BizTalk Server Administration console to add a new receive location to a receive port.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="e4e26-112">**名前**、新しい受信場所の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e4e26-112">In **Name**, type a name for the new receive location.</span></span>  
   
-5.  <span data-ttu-id="e4e26-113">次の手順で、受信場所のプロパティを構成する[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="e4e26-113">Configure properties for the receive location by following the instructions in [How to Create a Receive Location](../core/how-to-create-a-receive-location.md), and then click **OK**.</span></span>  
+5.  <span data-ttu-id="e4e26-113">次の手順で、受信場所のプロパティを構成する[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="e4e26-113">Configure properties for the receive location by following the instructions in [How to Create a Receive Location](../core/how-to-create-a-receive-location.md), and then click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="e4e26-114">参照</span><span class="sxs-lookup"><span data-stu-id="e4e26-114">See Also</span></span>  
  [<span data-ttu-id="e4e26-115">受信ポートの管理</span><span class="sxs-lookup"><span data-stu-id="e4e26-115">Managing Receive Ports</span></span>](../core/managing-receive-ports.md)

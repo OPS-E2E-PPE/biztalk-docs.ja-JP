@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server データベースの |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server データベースの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Notification Services Application database [BAM]
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - Tracking database
 - MessageBox database
 ms.assetid: bb504a26-cae6-4f2a-9b86-3554ef8f6045
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242610"
 ---
 # <a name="databases-in-biztalk-server"></a><span data-ttu-id="2a530-102">BizTalk Server のデータベース</span><span class="sxs-lookup"><span data-stu-id="2a530-102">Databases in BizTalk Server</span></span>
 <span data-ttu-id="2a530-103">Microsoft BizTalk Server によって、SQL Server にいくつかのデータベースがインストールされます。</span><span class="sxs-lookup"><span data-stu-id="2a530-103">Microsoft BizTalk Server installs several databases in SQL Server.</span></span> <span data-ttu-id="2a530-104">このトピックでは、これらのデータベース、およびこれらのデータベースで使用される SQL ロジック グループについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2a530-104">This topic describes these databases, and the SQL logic groups used by these databases.</span></span>  

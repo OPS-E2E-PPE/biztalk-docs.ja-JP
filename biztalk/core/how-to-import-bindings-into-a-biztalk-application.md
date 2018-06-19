@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーションにバインドをインポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションにバインドをインポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, bindings
 - bindings, importing
 ms.assetid: 89841b23-4e1b-46ff-8f00-cdad65d6216d
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254138"
 ---
 # <a name="how-to-import-bindings-into-a-biztalk-application"></a><span data-ttu-id="9987a-102">BizTalk アプリケーションにバインドをインポートする方法</span><span class="sxs-lookup"><span data-stu-id="9987a-102">How to Import Bindings into a BizTalk Application</span></span>
 <span data-ttu-id="9987a-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルから BizTalk アプリケーションにバインドをインポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9987a-103">This topic describes how to use the BizTalk Server Administration console or the command line to import bindings into a BizTalk application from an .xml file.</span></span> <span data-ttu-id="9987a-104">」の説明に従って、BizTalk グループにバインドにインポートすることもできます[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)です。</span><span class="sxs-lookup"><span data-stu-id="9987a-104">You can also import bindings into a BizTalk group, as described in [How to Import Bindings into a BizTalk Group](../core/how-to-import-bindings-into-a-biztalk-group.md).</span></span>  

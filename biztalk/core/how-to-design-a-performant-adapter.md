@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスの高いアダプターを設計する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスの高いアダプターを設計する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5a1f338-fd7c-41c8-a181-8da8b293c4cc
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250538"
 ---
 # <a name="how-to-design-a-performant-adapter"></a><span data-ttu-id="6cfc1-102">パフォーマンスの高いアダプターをデザインする方法</span><span class="sxs-lookup"><span data-stu-id="6cfc1-102">How to Design a Performant Adapter</span></span>
 <span data-ttu-id="6cfc1-103">アダプターのパフォーマンスを確保するには、すべてのアダプターを、メッセージのバッチの送信、バッチの転送、およびバッチ単位での一般的なメッセージ操作を実行可能なバッチ対応にしておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="6cfc1-103">For performance purposes all adapters should be batch-aware with regard to submitting batches of messages, transmitting batches, and generally performing operations on messages in batches.</span></span> <span data-ttu-id="6cfc1-104">また、アダプターのパフォーマンス関連の属性 (バッチのサイズやバッチ内のバイト数など) をできる限り構成可能な属性として公開し、アダプターのデザイン時ユーザー インターフェイスで構成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="6cfc1-104">Adapters should try to expose configurable performance-related attributes, such as the size of batches or the number of bytes in a batch, that are configurable from the adapter's design-time user interface.</span></span>  

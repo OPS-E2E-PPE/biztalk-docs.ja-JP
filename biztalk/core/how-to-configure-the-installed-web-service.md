@@ -1,18 +1,18 @@
 ---
-title: "インストールされている Web サービスを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: インストールされている Web サービスを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, configuring
 - deploying, Web services
 - Web services, deploying
 ms.assetid: 5a281daa-9e1c-47b0-9002-66ea18ed6caf
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247778"
 ---
 # <a name="how-to-configure-the-installed-web-service"></a><span data-ttu-id="941e8-102">インストールされている Web サービスを構成する方法</span><span class="sxs-lookup"><span data-stu-id="941e8-102">How to Configure the Installed Web Service</span></span>
 <span data-ttu-id="941e8-103">Web サービス ファイルをインストールした後、その Web サービスからメッセージを受信するように BizTalk Server を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="941e8-103">After you install the Web service files, you must configure BizTalk Server to receive messages from the Web service.</span></span>  

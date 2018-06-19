@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server にアダプターのインストール |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server にアダプターのインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1164468d-75a9-4116-87a6-6055948c198b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257722"
 ---
 # <a name="install-the-adapter-into-biztalk-server"></a><span data-ttu-id="f0f0e-102">BizTalk Server へのアダプターのインストール</span><span class="sxs-lookup"><span data-stu-id="f0f0e-102">Install the Adapter into BizTalk Server</span></span>
 <span data-ttu-id="f0f0e-103">適切な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エントリがレジストリに書き込まれた後に、アダプターを BizTalk 管理データベースに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-103">After the proper [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] entries have been written to the registry the adapter must be added to the BizTalk Management database.</span></span> <span data-ttu-id="f0f0e-104">アダプターをこのデータベースに追加すると、アクティブに構成されたアダプターになり、正しく構成されている場合はメッセージを処理できます。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-104">After the adapter is added to this database it is an actively configured adapter and can process messages when it is properly configured.</span></span> <span data-ttu-id="f0f0e-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用してアダプターをデータベースにインストールします。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-105">You install the adapter into the database by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="f0f0e-106">データベース内のアダプターをインストールした後に、ホスト インスタンスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-106">After installing the adapter in the database, restart the host instance.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="f0f0e-118">[アダプター]</span><span class="sxs-lookup"><span data-stu-id="f0f0e-118">Adapter</span></span>|<span data-ttu-id="f0f0e-119">選択**Static DotNetFile**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-119">Select **Static DotNetFile** from the drop-down list.</span></span>|  
     |<span data-ttu-id="f0f0e-120">Description</span><span class="sxs-lookup"><span data-stu-id="f0f0e-120">Description</span></span>|<span data-ttu-id="f0f0e-121">型**静的アダプターのサンプル**です。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-121">Type **Sample Static Adapter**.</span></span>|  
   
-6.  <span data-ttu-id="f0f0e-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-122">Click **OK**.</span></span>  
+6.  <span data-ttu-id="f0f0e-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-122">Click **OK**.</span></span>  
   
      <span data-ttu-id="f0f0e-123">これで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの右ウィンドウにあるアダプターの一覧に静的アダプターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f0f0e-123">The static adapter now appears in the list of adapters in the right window of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
   

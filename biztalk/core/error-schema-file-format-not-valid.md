@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241954"
 ---
 # <a name="error---schema-file-format-not-valid"></a><span data-ttu-id="24904-102">エラー - スキーマ ファイルの形式が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="24904-102">Error - Schema File Format Not Valid</span></span>
 <span data-ttu-id="24904-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="24904-103">**Explanation**</span></span>  

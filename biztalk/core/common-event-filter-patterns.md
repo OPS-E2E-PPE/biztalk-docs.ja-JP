@@ -1,14 +1,14 @@
 ---
-title: "一般的なイベント フィルタ パターン |Microsoft ドキュメント"
-ms.custom: 
+title: 一般的なイベント フィルタ パターン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc80168b-25bd-4228-b84c-d38bf4e2fe4a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234522"
 ---
 # <a name="common-event-filter-patterns"></a><span data-ttu-id="ec3b2-102">一般的なイベント フィルタ パターン</span><span class="sxs-lookup"><span data-stu-id="ec3b2-102">Common Event Filter Patterns</span></span>
 <span data-ttu-id="ec3b2-103">Windows Workflow Foundation (WF) 用の BAM インターセプタを使用すると、インターセプタ構成ファイル内で頻繁に使用する、一般的なフィルタ パターンがあることに気付きます。</span><span class="sxs-lookup"><span data-stu-id="ec3b2-103">As you work with the BAM Interceptor for Windows Workflow Foundation (WF), you will likely notice that there are a set of common filter patterns that you will use frequently in your interceptor configuration files.</span></span> <span data-ttu-id="ec3b2-104">これらのフィルタ パターンの一部はアプリケーションと環境に固有ですが、多くのパターンは、環境にまたがりさまざまなアプリケーションで使用できます。</span><span class="sxs-lookup"><span data-stu-id="ec3b2-104">While some of these filter patterns will be unique to your applications and environments, many patterns can be used across environments and in diverse applications.</span></span>  

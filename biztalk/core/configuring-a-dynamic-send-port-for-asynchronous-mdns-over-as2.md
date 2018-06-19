@@ -1,14 +1,14 @@
 ---
-title: "AS2 経由で Mdn が非同期の動的送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 経由で Mdn が非同期の動的送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72646c90-89db-4884-824b-6921bb824f8d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233450"
 ---
 # <a name="configuring-a-dynamic-send-port-for-asynchronous-mdns-over-as2"></a><span data-ttu-id="df3be-102">AS2 経由の非同期 MDN の動的送信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="df3be-102">Configuring a Dynamic Send Port for Asynchronous MDNs over AS2</span></span>
 <span data-ttu-id="df3be-103">EDIINT/AS2 でエンコードされた非同期 MDN メッセージを HTTP/HTTPS 経由で送信するには、次のように構成された動的な HTTP 送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="df3be-103">To send an asynchronous EDIINT/AS2-encoded MDN message over HTTP/HTTPS, create a dynamic HTTP send port with the following configuration:</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 -   <span data-ttu-id="df3be-134">アドレスに MDN をルーティングする、 **- Receipt-delivery-option**メッセージのヘッダー行にします。</span><span class="sxs-lookup"><span data-stu-id="df3be-134">Route the MDN to the address in the **Receipt-Delivery-Option** line in the header of the message.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="df3be-135">場合、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティ設定されて**検証**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックスで、送信ポートから送信 MDN メッセージに入力された URL に、 **- Receipt-delivery-option**アグリーメントのプロパティに記載されているアドレスがない**-Receipt-delivery-option**受信した AS2 メッセージのヘッダー。</span><span class="sxs-lookup"><span data-stu-id="df3be-135">If the **Use agreement settings for validation and MDN instead of message header** property is set in **Validation** page of the one-way agreement tab of the **Agreement Properties** dialog box, the send port will send the MDN message to the URL entered into the **Receipt-Delivery-Option** agreement property, not to the address mentioned in **Receipt-Delivery-Option** header of the received AS2 message.</span></span>  
+    >  <span data-ttu-id="df3be-135">場合、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティ設定されて**検証**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックスで、送信ポートから送信 MDN メッセージに入力された URL に、 **- Receipt-delivery-option**アグリーメントのプロパティに記載されているアドレスがない **-Receipt-delivery-option**受信した AS2 メッセージのヘッダー。</span><span class="sxs-lookup"><span data-stu-id="df3be-135">If the **Use agreement settings for validation and MDN instead of message header** property is set in **Validation** page of the one-way agreement tab of the **Agreement Properties** dialog box, the send port will send the MDN message to the URL entered into the **Receipt-Delivery-Option** agreement property, not to the address mentioned in **Receipt-Delivery-Option** header of the received AS2 message.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="df3be-136">参照</span><span class="sxs-lookup"><span data-stu-id="df3be-136">See Also</span></span>  
  [<span data-ttu-id="df3be-137">AS2 ソリューションのポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="df3be-137">Configuring Ports for an AS2 Solution</span></span>](../core/configuring-ports-for-an-as2-solution.md)

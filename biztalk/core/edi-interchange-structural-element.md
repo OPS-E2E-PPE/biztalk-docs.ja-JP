@@ -1,14 +1,14 @@
 ---
-title: "EDI インターチェンジの構造体要素 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI インターチェンジの構造体要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03f47ae2-fa0f-4d88-a700-85f3d515d2d0
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239530"
 ---
 # <a name="edi-interchange-structural-element"></a><span data-ttu-id="62dcb-102">EDI のインターチェンジ構造体要素</span><span class="sxs-lookup"><span data-stu-id="62dcb-102">EDI Interchange Structural Element</span></span>
 <span data-ttu-id="62dcb-103">インターチェンジは、EDI メッセージの最上位レベルの構造体要素です。</span><span class="sxs-lookup"><span data-stu-id="62dcb-103">The interchange is the highest-level structural element of an EDI message.</span></span> <span data-ttu-id="62dcb-104">これには、2 つのパートナーによって交換される 1 つ以上のグループのコレクションが格納されます。</span><span class="sxs-lookup"><span data-stu-id="62dcb-104">It contains a collection of one or more groups exchanged by two partners.</span></span> <span data-ttu-id="62dcb-105">インターチェンジの送信先は、1 つの取引先である必要があります。</span><span class="sxs-lookup"><span data-stu-id="62dcb-105">The destination of an interchange must be a single trading partner.</span></span> <span data-ttu-id="62dcb-106">インターチェンジには、1 つ以上の種類のトランザクション セット/メッセージを格納できます。</span><span class="sxs-lookup"><span data-stu-id="62dcb-106">Interchanges may contain transaction sets/message of one or more than one type.</span></span>  

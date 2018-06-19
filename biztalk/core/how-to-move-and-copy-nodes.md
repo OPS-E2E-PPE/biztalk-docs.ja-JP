@@ -1,14 +1,14 @@
 ---
-title: "移動してノードをコピーする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 移動してノードをコピーする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4f1ec14-c607-4da3-9139-73a61963b819
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254770"
 ---
 # <a name="how-to-move-and-copy-nodes"></a><span data-ttu-id="83c87-102">移動してノードをコピーする方法</span><span class="sxs-lookup"><span data-stu-id="83c87-102">How to Move and Copy Nodes</span></span>
 <span data-ttu-id="83c87-103">既存のノードは、スキーマ ツリー内の別の場所に移動できます。</span><span class="sxs-lookup"><span data-stu-id="83c87-103">You will probably encounter situations where you want to move an existing node to a different location in the schema tree.</span></span> <span data-ttu-id="83c87-104">また、既存のノードをコピーして、スキーマ ツリー内の別の場所に貼り付けることによって作業を効率化することもできます。</span><span class="sxs-lookup"><span data-stu-id="83c87-104">You might also be able to save time by making a copy of an existing node and then pasting it into a different location in the schema tree.</span></span> <span data-ttu-id="83c87-105">このトピックでは、ノードの移動やコピーの操作手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="83c87-105">This topic provides step-by-step instructions for performing these tasks.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server が AS2 メッセージを送信する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server が AS2 メッセージを送信する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0afe65fb-fb22-484c-b54d-34421bb32721
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246322"
 ---
 # <a name="how-biztalk-server-sends-as2-messages"></a><span data-ttu-id="4cb41-102">BizTalk Server が AS2 メッセージを送信する方法</span><span class="sxs-lookup"><span data-stu-id="4cb41-102">How BizTalk Server Sends AS2 Messages</span></span>
 <span data-ttu-id="4cb41-103">このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の AS2 コンポーネントが送信 AS2 メッセージを処理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4cb41-103">This section describes how the AS2 components in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process outgoing AS2 messages.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "値のマッピング Functoid をマップに追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 値のマッピング Functoid をマップに追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc70067a-67a1-4a0e-95e5-b0cb327d2cee
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247842"
 ---
 # <a name="how-to-add-value-mapping-functoids-to-a-map"></a><span data-ttu-id="f7997-102">マップに値のマッピング Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="f7997-102">How to Add Value Mapping Functoids to a Map</span></span>
 <span data-ttu-id="f7997-103">**値のマッピング**functoid は、最初のパラメーターが true の場合に、2 番目のパラメーターの値を返します。</span><span class="sxs-lookup"><span data-stu-id="f7997-103">The **Value Mapping** functoid returns the value of its second parameter if its first parameter is true.</span></span> <span data-ttu-id="f7997-104">この Functoid は、主にフィールドの属性をレコードの属性に変更する場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="f7997-104">A common use of the functoid is to change the attributes of a field into the attributes of a record.</span></span>  

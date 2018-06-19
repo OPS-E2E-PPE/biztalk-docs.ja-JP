@@ -1,14 +1,14 @@
 ---
-title: "EDI ヘッダーとトレーラー |Microsoft ドキュメント"
-ms.custom: 
+title: EDI ヘッダーとトレーラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cf1dae3-9570-413d-a85d-94dcbb561906
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241930"
 ---
 # <a name="edi-headers-and-trailers"></a><span data-ttu-id="5b550-102">EDI ヘッダーとトレーラー</span><span class="sxs-lookup"><span data-stu-id="5b550-102">EDI Headers and Trailers</span></span>
 <span data-ttu-id="5b550-103">EDI インターチェンジの各部分は、ヘッダーとトレーラーで区切られます。これらのヘッダーとトレーラーは、X12 または EDIFACT 標準に準拠している必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b550-103">The parts of an EDI interchange are delimited by headers and trailers that must conform to the X12 or EDIFACT standards.</span></span> <span data-ttu-id="5b550-104">インターチェンジ制御ヘッダーとトレーラーは 1 回のみ出現します。トランザクション セットとグループがインターチェンジ内でバッチ化される場合は、機能グループおよびトランザクション セットのヘッダーとトレーラーが繰り返されます。</span><span class="sxs-lookup"><span data-stu-id="5b550-104">The interchange control header and trailer occur just once; the functional group and transaction set headers and trailers are repeated if the transaction sets and groups are batched within the interchange.</span></span> <span data-ttu-id="5b550-105">各ヘッダーとトレーラーは、ヘッダーとトレーラーの内容に関する情報を含む一連のデータ要素で構成されます。</span><span class="sxs-lookup"><span data-stu-id="5b550-105">Each of the headers and trailers consists of a series of data elements that contain information about the content that the header and trailer contain.</span></span>  

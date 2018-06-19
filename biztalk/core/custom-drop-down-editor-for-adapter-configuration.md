@@ -1,14 +1,14 @@
 ---
-title: "アダプター構成のカスタム ドロップダウン エディター |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター構成のカスタム ドロップダウン エディター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a1b0961-652f-42b8-a18a-17abe9542cdd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238498"
 ---
 # <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="2ef42-102">アダプター構成のカスタム ドロップダウン エディター</span><span class="sxs-lookup"><span data-stu-id="2ef42-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
 <span data-ttu-id="2ef42-103">カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワードを入力するためのドロップダウン テキスト ボックスを表示するクラス。</span><span class="sxs-lookup"><span data-stu-id="2ef42-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="2ef42-104">**GetEditStyle**オーバーライド**UIEditorEditStyle.DropDown**ドロップダウン サブコントロールを示すです。</span><span class="sxs-lookup"><span data-stu-id="2ef42-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="2ef42-105">サービス メソッド**DropDownControl**と**CloseDropDown**で作成されたコントロールを管理**CreatePassword**です。</span><span class="sxs-lookup"><span data-stu-id="2ef42-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "送信ポートのインスタンスの情報を表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートのインスタンスの情報を表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, viewing
 - managing [send ports], viewing
 - viewing, send ports
 ms.assetid: 37cf6561-5341-4a05-b531-33ab0334966e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256714"
 ---
 # <a name="how-to-view-instance-information-for-a-send-port"></a><span data-ttu-id="89134-102">送信ポートのインスタンス情報を表示する方法</span><span class="sxs-lookup"><span data-stu-id="89134-102">How to View Instance Information for a Send Port</span></span>
 <span data-ttu-id="89134-103">このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートの実行中のサービス インスタンスを一覧表示する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="89134-103">This topic describes how to use the BizTalk Server Administration console to view a list of the running service instances of a send port.</span></span> <span data-ttu-id="89134-104">サービス インスタンスとは、メッセージが送信ポートに送信されたときに作成される、送信ポート サービスのインスタンスです。</span><span class="sxs-lookup"><span data-stu-id="89134-104">A service instance is an instance of the send port service that is created when a message is sent to the send port.</span></span> <span data-ttu-id="89134-105">このトピックの手順を実行すると、送信ポートのグループ概要ページにインスタンス情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="89134-105">When you follow the procedure in this topic, instance information displays in the Group Overview page for the send port.</span></span>  

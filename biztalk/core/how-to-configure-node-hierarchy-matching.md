@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22248674"
 ---
 # <a name="how-to-configure-node-hierarchy-matching"></a><span data-ttu-id="d6886-102">ノード階層の照合を構成する方法</span><span class="sxs-lookup"><span data-stu-id="d6886-102">How to Configure Node Hierarchy Matching</span></span>
 <span data-ttu-id="d6886-103">マップにリンクを作成すると、BizTalk マッパーが自動的にコンパイラ リンクを作成して、描画されたリンクが実装されます。</span><span class="sxs-lookup"><span data-stu-id="d6886-103">When you create a link in a map, the BizTalk Mapper automatically creates compiler links to implement the link you have drawn.</span></span> <span data-ttu-id="d6886-104">**ターゲット リンク** リンクのプロパティは、BizTalk マッパーによるコンパイラ リンクの描画を制御します。</span><span class="sxs-lookup"><span data-stu-id="d6886-104">The **Target Links** property of a link controls how the BizTalk Mapper draws the compiler links.</span></span> <span data-ttu-id="d6886-105">ここでは、ターゲット リンクを設定する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d6886-105">This topic provides information about how to set the target links.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "ローカル ホスト設定 (EDIFACT インターチェンジの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: ローカル ホスト設定 (EDIFACT インターチェンジの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f1cf8696-d1f4-49aa-aa0a-ecf66f55e01d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234690"
 ---
 # <a name="configuring-local-host-settings-edifact-interchange-settings"></a><span data-ttu-id="9ce42-102">ローカル ホスト設定の構成 (EDIFACT インターチェンジの設定)</span><span class="sxs-lookup"><span data-stu-id="9ce42-102">Configuring Local Host Settings (EDIFACT-Interchange Settings)</span></span>
 <span data-ttu-id="9ce42-103">ローカル ホスト設定は、EDI インターチェンジの処理方法を管理します。</span><span class="sxs-lookup"><span data-stu-id="9ce42-103">The local host settings govern how the EDI interchanges are processed.</span></span> <span data-ttu-id="9ce42-104">このページの設定は、2 つのカテゴリに分類できます。受信元の設定 (着信インターチェンジ) と送信者の設定 (送信インターチェンジ) です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-104">The settings on this page can be divided into two categories – receiver’s settings (for incoming interchanges) and sender’s settings (for outgoing interchanges).</span></span> <span data-ttu-id="9ce42-105">受信元の設定の一部で、受信バッチをトランザクション セットに分割するか、保存するかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="9ce42-105">As part of the receiver’s settings, you can specify whether an incoming batch will be split into transaction sets or preserved.</span></span> <span data-ttu-id="9ce42-106">保存する場合は、エラーが発生したときに、BizTalk Server によってインターチェンジまたはトランザクション セットを保留するかどうかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="9ce42-106">If preserved, you can specify whether BizTalk Server suspends the interchange or transaction set if an error occurs.</span></span> <span data-ttu-id="9ce42-107">送信者の設定の一部として、送信メッセージの制御番号の生成方法を指定できます。</span><span class="sxs-lookup"><span data-stu-id="9ce42-107">As part of the sender’s settings, you can specify how the control numbers are generated for outgoing messages.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="9ce42-108">次のプロパティが無効になっている**パーティ A にパーティ B]-> [**をオフにした場合は、一方向アグリーメント タブの**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**パーティ A のチェック ボックス</span><span class="sxs-lookup"><span data-stu-id="9ce42-108">The following properties are disabled on **Party A->Party B** one-way agreement tab if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box for Party A.</span></span>  
+>  <span data-ttu-id="9ce42-108">次のプロパティが無効になっている**パーティ A にパーティ B]-> [** をオフにした場合は、一方向アグリーメント タブの**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**パーティ A のチェック ボックス</span><span class="sxs-lookup"><span data-stu-id="9ce42-108">The following properties are disabled on **Party A->Party B** one-way agreement tab if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box for Party A.</span></span>  
 >   
 >  -   <span data-ttu-id="9ce42-109">すべてのプロパティ、**送信者の設定**セクションです。</span><span class="sxs-lookup"><span data-stu-id="9ce42-109">All properties under the **Sender’s Settings** section.</span></span>  
 >   
@@ -72,14 +73,14 @@ ms.lasthandoff: 09/20/2017
     >   
     >  <span data-ttu-id="9ce42-149">制御番号を指定した最小値をリセットする をクリックして、**リセット**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ce42-149">To reset the control number to the minimum value specified, click the **Reset** button.</span></span> <span data-ttu-id="9ce42-150">確認**範囲外の時は下限にリセット**最大値を超えた場合、最小値に自動的にリセットします。</span><span class="sxs-lookup"><span data-stu-id="9ce42-150">Check **Reset to lower limit when out of bound** to automatically reset to the minimum value if the maximum value is exceeded.</span></span>  
   
-2.  <span data-ttu-id="9ce42-151">**グループ制御番号 (UNG5)**をプレフィックスを入力し、参照番号の範囲、およびサフィックスを送信する最初のインターチェンジのグループ制御番号の BizTalk Server を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ce42-151">For **Group control number (UNG5)**, enter the prefix, reference number range, and suffix that BizTalk Server should use for the group control number of the first interchange that it sends.</span></span>  
+2.  <span data-ttu-id="9ce42-151">**グループ制御番号 (UNG5)** をプレフィックスを入力し、参照番号の範囲、およびサフィックスを送信する最初のインターチェンジのグループ制御番号の BizTalk Server を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ce42-151">For **Group control number (UNG5)**, enter the prefix, reference number range, and suffix that BizTalk Server should use for the group control number of the first interchange that it sends.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="9ce42-152">最初のフィールド (**UNG5.1**) プレフィックス以外の場合は、2 番目と 3 番目のフィールドは、(**UNG5.2**)、グループ制御番号と 4 番目のフィールドを使用する数値の範囲を含む (**UNG5.3**) はサフィックスです。</span><span class="sxs-lookup"><span data-stu-id="9ce42-152">The first field (**UNG5.1**) is the prefix; the second and third fields (**UNG5.2**) contain the range of numbers to use for the group control number; and the fourth field (**UNG5.3**) is the suffix.</span></span> <span data-ttu-id="9ce42-153">プレフィックスとサフィックスは省略可能ですが、制御番号は必須です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-153">The prefix and suffix are optional; the control number is required.</span></span> <span data-ttu-id="9ce42-154">制御番号は、最大値に達するまで、新しいメッセージごとに増やされます。プレフィックスとサフィックスは変わりません。</span><span class="sxs-lookup"><span data-stu-id="9ce42-154">The control number is incremented for each new message until the maximum value is reached; the prefix and suffix remain the same.</span></span> <span data-ttu-id="9ce42-155">数値だけが許可**UNG5.2**です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-155">Only numbers are allowed in **UNG5.2**.</span></span> <span data-ttu-id="9ce42-156">最大文字数は、制御番号が 14 文字、プレフィックスとサフィックスでは 13 文字、これらすべてのフィールドの組み合わせで 14 文字です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-156">The maximum number of characters is 14 for the control number, 13 for the prefix and suffix, and 14 for all three fields combined.</span></span>  
     >   
     >  <span data-ttu-id="9ce42-157">グループ制御番号を指定した最小値をリセットする をクリックして、**リセット**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ce42-157">To reset the group control number to the minimum value specified, click the **Reset** button.</span></span> <span data-ttu-id="9ce42-158">確認**範囲外の時は下限にリセット**最大値を超えた場合、最小値に自動的にリセットします。</span><span class="sxs-lookup"><span data-stu-id="9ce42-158">Check **Reset to lower limit when out of bound** to automatically reset to the minimum value if the maximum value is exceeded.</span></span>  
   
-3.  <span data-ttu-id="9ce42-159">**メッセージ ヘッダー (UNH)**をクリックして**新しい ID を適用**プレフィックスと入力し、参照番号の範囲、BizTalk Server がトランザクション セット参照番号を使用するサフィックスを入力します。</span><span class="sxs-lookup"><span data-stu-id="9ce42-159">For **Message Header (UNH)**, click **Apply new ID**, enter the prefix, enter the reference number range, and enter the suffix that BizTalk Server should use for the transaction set reference number.</span></span>  
+3.  <span data-ttu-id="9ce42-159">**メッセージ ヘッダー (UNH)** をクリックして**新しい ID を適用**プレフィックスと入力し、参照番号の範囲、BizTalk Server がトランザクション セット参照番号を使用するサフィックスを入力します。</span><span class="sxs-lookup"><span data-stu-id="9ce42-159">For **Message Header (UNH)**, click **Apply new ID**, enter the prefix, enter the reference number range, and enter the suffix that BizTalk Server should use for the transaction set reference number.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="9ce42-160">最初のフィールド (**UNH1.1**) プレフィックス以外の場合は、2 番目と 3 番目のフィールドは、(**UNH1.2**) は参照番号の範囲と 4 番目のフィールド (**UNH1.3**) はサフィックスです。</span><span class="sxs-lookup"><span data-stu-id="9ce42-160">The first field (**UNH1.1**) is the prefix; the second and third fields (**UNH1.2**) are the reference number range; and the fourth field (**UNH1.3**) is the suffix.</span></span> <span data-ttu-id="9ce42-161">プレフィックスとサフィックスは省略可能ですが、参照番号は必須です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-161">The prefix and suffix are optional; the reference number is required.</span></span> <span data-ttu-id="9ce42-162">参照番号は、新しいメッセージごとに増やされます。プレフィックスとサフィックスは変わりません。</span><span class="sxs-lookup"><span data-stu-id="9ce42-162">The reference number is incremented for each new message; the prefix and suffix remain the same.</span></span> <span data-ttu-id="9ce42-163">参照番号の既定値の範囲は 1 ～ 99999999999999 です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-163">The default value range for the reference number is 1 to 99999999999999.</span></span> <span data-ttu-id="9ce42-164">数値だけが許可**UNH1.2**です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-164">Only numbers are allowed in **UNH1.2**.</span></span> <span data-ttu-id="9ce42-165">最大文字数は、制御番号が 14 文字、プレフィックスとサフィックスでは 13 文字、これらすべてのフィールドの組み合わせで 14 文字です。</span><span class="sxs-lookup"><span data-stu-id="9ce42-165">The maximum number of characters is 14 for the control number, 13 for the prefix and suffix, and 14 for all three fields combined.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "Web サービスの有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスの有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Web services, planning
 - Web services, enabling
 ms.assetid: 2a4681f6-9ded-423d-baa5-5831e6a85c61
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242458"
 ---
 # <a name="enabling-web-services"></a><span data-ttu-id="4fbfb-102">Web サービスの有効化</span><span class="sxs-lookup"><span data-stu-id="4fbfb-102">Enabling Web Services</span></span>
 <span data-ttu-id="4fbfb-103">Web サービスを公開するには、インターネット インフォメーション サービス (IIS)、BizTalk 分離ホスト、および Windows のユーザー アカウントとグループ アカウントを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fbfb-103">To publish Web services, you must configure Internet Information Services (IIS), BizTalk Isolated Hosts, and Windows user and group accounts.</span></span> <span data-ttu-id="4fbfb-104">このセクションでは、IIS の Web サービスを有効にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4fbfb-104">This section discusses how to enable Web services in IIS.</span></span> <span data-ttu-id="4fbfb-105">Web サービスの有効化の詳細については、IIS のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="4fbfb-105">For more information about enabling Web services, see the IIS documentation.</span></span>  

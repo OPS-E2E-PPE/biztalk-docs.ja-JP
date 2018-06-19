@@ -1,14 +1,14 @@
 ---
-title: "エンベロープ (X12 トランザクション セットの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: エンベロープ (X12 トランザクション セットの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9313a7b9-72fa-4071-8c65-007371643179
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234338"
 ---
 # <a name="configuring-envelopes-x12-transaction-set-settings"></a><span data-ttu-id="efc0e-102">エンベロープの構成 (X12 トランザクション セットの設定)</span><span class="sxs-lookup"><span data-stu-id="efc0e-102">Configuring Envelopes (X12-Transaction Set Settings)</span></span>
 <span data-ttu-id="efc0e-103">**エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する X12 エンコード インターチェンジの GS および ST セグメントを生成する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="efc0e-103">In the **Envelops** page of the **Transaction Set Settings** section, you define how BizTalk Server generates the GS and ST segments for an X12-encoded interchange that it sends to the party.</span></span> <span data-ttu-id="efc0e-104">GS セグメントは、X12 エンコード インターチェンジの機能グループを識別および指定します。</span><span class="sxs-lookup"><span data-stu-id="efc0e-104">A GS segment identifies and specifies a functional group for an X12-encoded interchange.</span></span> <span data-ttu-id="efc0e-105">ST セグメントは、X12 エンコード インターチェンジのメッセージ ヘッダーです。</span><span class="sxs-lookup"><span data-stu-id="efc0e-105">An ST segment is the message header for an X12-encoded interchange.</span></span>  

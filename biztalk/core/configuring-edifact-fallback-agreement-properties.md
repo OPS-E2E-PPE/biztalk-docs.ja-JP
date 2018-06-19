@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233234"
 ---
 # <a name="configuring-edifact-fallback-agreement-properties"></a><span data-ttu-id="85575-102">EDIFACT フォールバック アグリーメントのプロパティの構成</span><span class="sxs-lookup"><span data-stu-id="85575-102">Configuring EDIFACT Fallback Agreement Properties</span></span>
 <span data-ttu-id="85575-103">ここで説明するプロパティは、EDIFACT でエンコードされたインターチェンジが交換されるたびに適用されます。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、そのインターチェンジ (受信または送信) が解決されるアグリーメントを判断できません。</span><span class="sxs-lookup"><span data-stu-id="85575-103">The properties described in this section apply whenever EDIFACT-encoded interchanges are exchanged and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cannot determine the agreement that the interchanges (inbound or outbound) resolve to.</span></span> <span data-ttu-id="85575-104">ここでは、X12 と EDIFACT 両方のエンコード メッセージに共通する一般的なフォールバック設定についても説明します。</span><span class="sxs-lookup"><span data-stu-id="85575-104">This section also describes general fallback settings common to both X12 and EDIFACT encoded messages.</span></span>  

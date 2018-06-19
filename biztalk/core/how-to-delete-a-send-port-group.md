@@ -1,18 +1,18 @@
 ---
-title: "送信ポート グループを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポート グループを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send port groups, deleting
 - managing [send port groups], deleting
 - deleting, send port groups
 ms.assetid: 90c01e58-d35c-4cb2-ac6d-92199199fb42
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248898"
 ---
 # <a name="how-to-delete-a-send-port-group"></a><span data-ttu-id="e4806-102">送信ポート グループを削除する方法</span><span class="sxs-lookup"><span data-stu-id="e4806-102">How to Delete a Send Port Group</span></span>
 <span data-ttu-id="e4806-103">このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポート グループを BizTalk アプリケーションから削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e4806-103">This topic describes how use the BizTalk Server Administration console to delete a send port group from a BizTalk application.</span></span> <span data-ttu-id="e4806-104">送信ポート グループを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも送信ポート グループが削除されます。</span><span class="sxs-lookup"><span data-stu-id="e4806-104">When you do this, the send port group is also deleted from the BizTalk Management database for the group.</span></span> <span data-ttu-id="e4806-105">送信ポート グループを削除しても、そこに含まれる送信ポートは削除されません。</span><span class="sxs-lookup"><span data-stu-id="e4806-105">Deleting a send port group does not delete any send ports that it contains.</span></span>  

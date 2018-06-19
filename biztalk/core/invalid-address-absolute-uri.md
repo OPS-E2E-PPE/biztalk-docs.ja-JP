@@ -1,14 +1,14 @@
 ---
-title: "アドレスが無効です (絶対 uri) |Microsoft ドキュメント"
-ms.custom: 
+title: アドレスが無効です (絶対 uri) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5db292ad-9105-492d-a6c5-a7108159901a
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256962"
 ---
 # <a name="invalid-address-absolute-uri"></a><span data-ttu-id="5977a-102">アドレスが無効です (絶対 URI)</span><span class="sxs-lookup"><span data-stu-id="5977a-102">Invalid address (absolute uri)</span></span>
 ## <a name="details"></a><span data-ttu-id="5977a-103">詳細</span><span class="sxs-lookup"><span data-stu-id="5977a-103">Details</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="5977a-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="5977a-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="5977a-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5977a-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="5977a-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5977a-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="5977a-126">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="5977a-126">In the port **Type** list, select the correct port.</span></span>  
   
@@ -53,4 +54,4 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="5977a-128">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="5977a-128">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="5977a-129">**アドレス (URI)**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="5977a-129">In the **Address (URI)** text box.</span></span> <span data-ttu-id="5977a-130">アドレスを変更します。</span><span class="sxs-lookup"><span data-stu-id="5977a-130">change the address.</span></span> <span data-ttu-id="5977a-131">整形式の絶対アドレスの一例は http://localhost/path/service.svc です。</span><span class="sxs-lookup"><span data-stu-id="5977a-131">An example of a well-formed absolute address is http://localhost/path/service.svc</span></span>
+9. <span data-ttu-id="5977a-129">**アドレス (URI)** テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="5977a-129">In the **Address (URI)** text box.</span></span> <span data-ttu-id="5977a-130">アドレスを変更します。</span><span class="sxs-lookup"><span data-stu-id="5977a-130">change the address.</span></span> <span data-ttu-id="5977a-131">整形式の絶対アドレスの一例は http://localhost/path/service.svc です。</span><span class="sxs-lookup"><span data-stu-id="5977a-131">An example of a well-formed absolute address is http://localhost/path/service.svc</span></span>

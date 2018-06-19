@@ -1,14 +1,14 @@
 ---
-title: "その他の Visual Studio のウィンドウを管理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: その他の Visual Studio のウィンドウを管理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b86f50e2-ca25-4521-b31a-06ac16f129b1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254442"
 ---
 # <a name="how-to-manage-other-visual-studio-windows"></a><span data-ttu-id="ffa4e-102">その他の Visual Studio のウィンドウを管理する方法</span><span class="sxs-lookup"><span data-stu-id="ffa4e-102">How to Manage Other Visual Studio Windows</span></span>
 <span data-ttu-id="ffa4e-103">BizTalk エディターでの一部の操作では、他の Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ウィンドウ (出力ウィンドウおよびタスク一覧ウィンドウ) が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ffa4e-103">Certain operations in BizTalk Editor use other Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] windows, namely the Output window and the Task List window.</span></span> <span data-ttu-id="ffa4e-104">これらのウィンドウは、サンプル インスタンス メッセージの生成やスキーマおよびインスタンスの検証などの操作による出力を表示するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="ffa4e-104">These windows are used to display output from operations, such as generating sample instance messages and validating schemas and instances.</span></span> <span data-ttu-id="ffa4e-105">このトピックでは、これらのウィンドウを管理するための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="ffa4e-105">This topic provides step-by-step instructions about managing these windows.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "全般設定 (EDIFACT) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 全般設定 (EDIFACT) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e18892d3-c1a4-41c8-98c2-a116ce2805ba
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234570"
 ---
 # <a name="configuring-general-settings-edifact"></a><span data-ttu-id="87640-102">全般設定の構成 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="87640-102">Configuring General Settings (EDIFACT)</span></span>
 <span data-ttu-id="87640-103">全般設定で指定する項目は、アグリーメント名、使用するプロトコル (X12 または EDIFACT)、このアグリーメントを結ぶパーティとプロファイル、およびこのアグリーメントを介して処理される全メッセージに対してレポート機能を有効にするかどうかです。</span><span class="sxs-lookup"><span data-stu-id="87640-103">As part of the general settings, you specify agreement name, the protocol it will use (X12 or EDIFACT), the parties and profiles that the agreement is between, and whether to have reporting enabled for all messages processed through the agreement.</span></span> <span data-ttu-id="87640-104">また、アグリーメントの中でパーティの連絡先情報を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="87640-104">You can also specify the party contact information as part of the agreement.</span></span>  
@@ -101,7 +102,7 @@ ms.lasthandoff: 09/20/2017
     2.  <span data-ttu-id="87640-185">**テキスト 1**、**テキスト 2**、および**アグリーメント**テキスト ボックスでは、パーティとのアグリーメントに関する情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="87640-185">In the **Text 1**, **Text 2**, and **Agreement** text boxes, enter information about the agreement with a party.</span></span>  
   
         > [!IMPORTANT]
-        >  <span data-ttu-id="87640-186">クリックすると**[ok]**または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="87640-186">If you click **OK** or **Apply** after providing all the values listed in this page, you will get an error.</span></span> <span data-ttu-id="87640-187">その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。</span><span class="sxs-lookup"><span data-stu-id="87640-187">That is because the mandatory values to create an agreement are not yet provided.</span></span> <span data-ttu-id="87640-188">UNB2 と UNB3 の値は、、**識別子**各一方向アグリーメント タブのページです。</span><span class="sxs-lookup"><span data-stu-id="87640-188">These are UNB2 and UNB3 values on the **Identifiers** page of each one-way agreement tab.</span></span>  
+        >  <span data-ttu-id="87640-186">クリックすると **[ok]** または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="87640-186">If you click **OK** or **Apply** after providing all the values listed in this page, you will get an error.</span></span> <span data-ttu-id="87640-187">その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。</span><span class="sxs-lookup"><span data-stu-id="87640-187">That is because the mandatory values to create an agreement are not yet provided.</span></span> <span data-ttu-id="87640-188">UNB2 と UNB3 の値は、、**識別子**各一方向アグリーメント タブのページです。</span><span class="sxs-lookup"><span data-stu-id="87640-188">These are UNB2 and UNB3 values on the **Identifiers** page of each one-way agreement tab.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="87640-189">次の手順</span><span class="sxs-lookup"><span data-stu-id="87640-189">Next Steps</span></span>  
  <span data-ttu-id="87640-190">ここで、アグリーメントのインターチェンジまたはトランザクション セットの設定を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="87640-190">You must now configure the interchange or transaction set settings for the agreement.</span></span> <span data-ttu-id="87640-191">手順を参照してください[インターチェンジの設定 (EDIFACT) を構成する](../core/configuring-interchange-settings-edifact.md)または[構成トランザクション セットの設定 (EDIFACT)](../core/configuring-transaction-set-settings-edifact.md)です。</span><span class="sxs-lookup"><span data-stu-id="87640-191">For instructions see [Configuring Interchange Settings (EDIFACT)](../core/configuring-interchange-settings-edifact.md) or [Configuring Transaction Set Settings (EDIFACT)](../core/configuring-transaction-set-settings-edifact.md).</span></span>  

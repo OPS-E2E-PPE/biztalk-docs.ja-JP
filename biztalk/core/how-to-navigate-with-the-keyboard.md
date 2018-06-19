@@ -1,17 +1,17 @@
 ---
-title: "キーボードで移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: キーボードで移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Pipeline Designer, keyboard shortcuts
 - keyboard shortcuts, Pipeline Designer
 ms.assetid: 2e41bdfc-98ee-45d8-9d94-8d3dbf6d1194
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254706"
 ---
 # <a name="how-to-navigate-with-the-keyboard"></a><span data-ttu-id="39bbb-102">キーボードで移動する方法</span><span class="sxs-lookup"><span data-stu-id="39bbb-102">How to Navigate with the Keyboard</span></span>
 <span data-ttu-id="39bbb-103">マウスの代わりにキーボードを使用して、デザイン画面を操作できます。</span><span class="sxs-lookup"><span data-stu-id="39bbb-103">You can navigate through the design surface by using your keyboard instead of your mouse.</span></span> <span data-ttu-id="39bbb-104">次の表は、使用可能なキーを示しています。</span><span class="sxs-lookup"><span data-stu-id="39bbb-104">The following table shows the keys that you can use.</span></span>  

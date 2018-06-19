@@ -1,14 +1,14 @@
 ---
-title: "Id の作成に失敗しました |Microsoft ドキュメント"
-ms.custom: 
+title: Id の作成に失敗しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 531f1057-1b6d-40ae-bf2f-a36baf4e0341
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246002"
 ---
 # <a name="failed-to-create-identity"></a><span data-ttu-id="16ae0-102">ID を作成できませんでした</span><span class="sxs-lookup"><span data-stu-id="16ae0-102">Failed to create identity</span></span>
 ## <a name="details"></a><span data-ttu-id="16ae0-103">詳細</span><span class="sxs-lookup"><span data-stu-id="16ae0-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="16ae0-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="16ae0-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="16ae0-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16ae0-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="16ae0-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16ae0-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="16ae0-126">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="16ae0-126">In the port **Type** list, select the correct port.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "圧縮された AS2 メッセージの処理中に圧縮解除が失敗しました。 | Microsoft Docs"
-ms.custom: 
+title: 圧縮された AS2 メッセージの処理中に圧縮解除が失敗しました。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5246ee97-cc60-4878-9447-de870c0f4c34
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238458"
 ---
 # <a name="decompression-failed-while-processing-a-compressed-as2-message"></a><span data-ttu-id="e4352-103">圧縮された AS2 メッセージの処理中に圧縮解除が失敗しました。</span><span class="sxs-lookup"><span data-stu-id="e4352-103">Decompression failed while processing a compressed AS2 message.</span></span>
 ## <a name="details"></a><span data-ttu-id="e4352-104">詳細</span><span class="sxs-lookup"><span data-stu-id="e4352-104">Details</span></span>  

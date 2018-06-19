@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server のシステム アーキテクチャの設計 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のシステム アーキテクチャの設計 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, security
 - security, deploying
 ms.assetid: b7ded72a-2487-4bb7-9894-cd13235a52c7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239274"
 ---
 # <a name="designing-the-system-architectures-for-biztalk-server"></a><span data-ttu-id="d7e46-102">BizTalk Server のシステム アーキテクチャの設計</span><span class="sxs-lookup"><span data-stu-id="d7e46-102">Designing the System Architectures for BizTalk Server</span></span>
 <span data-ttu-id="d7e46-103">セキュリティ、パフォーマンス、可用性、および運用に関する Microsoft® BizTalk® Server 展開の要件は、ビジネス ニーズ、要件、パートナー、企業規模などにより大きく異なります。</span><span class="sxs-lookup"><span data-stu-id="d7e46-103">The requirements of your Microsoft® BizTalk® Server deployment for security, performance, availability, and operation are highly dependent on your business needs, requirements, partners, company size, and so on.</span></span> <span data-ttu-id="d7e46-104">BizTalk Server コンポーネントのいずれかの構成を典型としてとらえたり、その構成のための規範的なガイダンスを示すことは困難ですが、このセクションでは、大規模なエンタープライズの実稼動環境において、セキュリティで保護された分散構成で BizTalk Server のさまざまな機能を構成する方法に関するガイダンスおよび推奨事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="d7e46-104">While it is difficult to consider any single configuration of BizTalk Server components as typical and provide prescriptive guidance for it, this section provides guidance and recommendations on how to configure the different BizTalk Server features in a distributed, secure configuration for the production environment of a large enterprise.</span></span>  

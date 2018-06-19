@@ -1,14 +1,14 @@
 ---
-title: "アダプタの変数 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプタの変数 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aeda96bc-5141-4c42-8a29-b0a28bc47aa4
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233882"
 ---
 # <a name="adapter-variables"></a><span data-ttu-id="b8a15-102">アダプター変数</span><span class="sxs-lookup"><span data-stu-id="b8a15-102">Adapter Variables</span></span>
 <span data-ttu-id="b8a15-103">すべてのカスタム アダプターで処理する必要のある変数がいくつか存在します。</span><span class="sxs-lookup"><span data-stu-id="b8a15-103">There are a number of variables that any custom adapter needs to handle.</span></span> <span data-ttu-id="b8a15-104">これらの変数に代入される値は、アダプターに実装されるカスタム ロジックに影響します。</span><span class="sxs-lookup"><span data-stu-id="b8a15-104">Values assigned to these variables influence custom logic that the adapter implements.</span></span> <span data-ttu-id="b8a15-105">トランスポート固有またはアプリケーション固有の構成プロパティも、ソリューションのサポートに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="b8a15-105">Transport-specific or application-specific configuration properties can also help to support your solution.</span></span> <span data-ttu-id="b8a15-106">このような共通の変数を次の表に示します。</span><span class="sxs-lookup"><span data-stu-id="b8a15-106">The following table lists these common variables.</span></span> <span data-ttu-id="b8a15-107">それぞれの変数をカスタム アダプターでサポートするかどうかは個々に決定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8a15-107">You must decide if you want to support each one in your custom adapter.</span></span>  

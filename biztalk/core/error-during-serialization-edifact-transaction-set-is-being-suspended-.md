@@ -1,15 +1,15 @@
 ---
-title: "Edifact トランザクション セットがインターチェンジのエラーに含まれている |Microsoft ドキュメント"
-description: "シリアル化中にエラーが発生しました。 インターチェンジに含まれる EDIFACT トランザクション セット (グループ以外) が、次のエラーで中断されています"
-ms.custom: 
+title: Edifact トランザクション セットがインターチェンジのエラーに含まれている |Microsoft ドキュメント
+description: シリアル化中にエラーが発生しました。 インターチェンジに含まれる EDIFACT トランザクション セット (グループ以外) が、次のエラーで中断されています
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a0a33ac-d83e-495c-ba75-88c15ad7cfcd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241474"
 ---
 # <a name="edifact-transaction-set-is-suspended-error-and-details"></a><span data-ttu-id="c198a-104">Edifact トランザクション セットは、中断されたエラーの詳細</span><span class="sxs-lookup"><span data-stu-id="c198a-104">Edifact transaction set is suspended error and details</span></span>
 

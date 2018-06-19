@@ -1,11 +1,11 @@
 ---
-title: "1 つのグループからサーバーを移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 1 つのグループからサーバーを移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, servers
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [servers], moving
 - servers, groups
 ms.assetid: 3f789a62-f597-426b-9cea-74c1fe22b694
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254570"
 ---
 # <a name="how-to-move-a-server-from-one-group-to-another"></a><span data-ttu-id="35468-102">サーバーをあるグループから別のグループに移動する方法</span><span class="sxs-lookup"><span data-stu-id="35468-102">How to Move a Server from One Group to Another</span></span>
 <span data-ttu-id="35468-103">1 つの BizTalk Server グループに関連付けることができるサーバーは 1 つだけです。</span><span class="sxs-lookup"><span data-stu-id="35468-103">A server can only be associated with one BizTalk Server group.</span></span> <span data-ttu-id="35468-104">サーバーをあるグループから別のグループに移動するには、まず元のグループの構成を解除してそのグループからサーバーを削除したうえで、新しいグループに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="35468-104">To move a server from one group to another, you must first remove the server from the original group by unconfiguring it, and then add the server to the new group.</span></span>  
@@ -42,13 +43,13 @@ ms.lasthandoff: 09/20/2017
     > [!CAUTION]
     >  <span data-ttu-id="35468-111">グループの構成を解除すると、そのコンピューターで既に構成されているすべての依存機能の構成が解除されます。</span><span class="sxs-lookup"><span data-stu-id="35468-111">Unconfiguring a group will also unconfigure all dependent features that are already configured on that computer.</span></span>  
   
-4.  <span data-ttu-id="35468-112">**[はい]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35468-112">Click **Yes**.</span></span>  
+4.  <span data-ttu-id="35468-112">**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35468-112">Click **Yes**.</span></span>  
   
 5.  <span data-ttu-id="35468-113">**Microsoft BizTalk Server 構成**ウィンドウで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="35468-113">In the **Microsoft BizTalk Server Configuration** window, click **Next**.</span></span>  
   
      <span data-ttu-id="35468-114">エンタープライズ SSO、グループ、および、それらに依存する機能の構成が解除されます。</span><span class="sxs-lookup"><span data-stu-id="35468-114">Enterprise SSO, the Group, and their dependent features are unconfigured.</span></span>  
   
-6.  <span data-ttu-id="35468-115">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35468-115">Click **Finish**.</span></span>  
+6.  <span data-ttu-id="35468-115">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35468-115">Click **Finish**.</span></span>  
   
 7.  <span data-ttu-id="35468-116">**Microsoft BizTalk Server 構成**ウィンドウで、**カスタム構成**です。</span><span class="sxs-lookup"><span data-stu-id="35468-116">In the **Microsoft BizTalk Server Configuration** window, select **Custom configuration**.</span></span>  
   

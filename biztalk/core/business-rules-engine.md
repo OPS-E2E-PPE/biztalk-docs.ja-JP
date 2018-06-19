@@ -1,11 +1,11 @@
 ---
-title: "ビジネス ルール エンジン |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール エンジン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, Business Rules Engine
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Business Rules Engine, rules
 - Business Rules Engine, about Business Rules Engine
 ms.assetid: 87b38507-9f6d-4863-88a6-9c20f15a4e55
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232618"
 ---
 # <a name="business-rules-engine"></a><span data-ttu-id="3fdbc-102">ビジネス ルール エンジン</span><span class="sxs-lookup"><span data-stu-id="3fdbc-102">Business Rules Engine</span></span>
 <span data-ttu-id="3fdbc-103">ビジネス ルール フレームワークは、Microsoft .NET 準拠のクラス ライブラリです。</span><span class="sxs-lookup"><span data-stu-id="3fdbc-103">The Business Rules Framework is a Microsoft .NET-compliant class library.</span></span> <span data-ttu-id="3fdbc-104">このフレームワークは、非常に判読しやすく意味論的にも充実した宣言型のルールを、任意のビジネス オブジェクト (.NET コンポーネント)、XML ドキュメント、またはデータベース テーブルにリンクできる効率的な推論エンジンを提供します。</span><span class="sxs-lookup"><span data-stu-id="3fdbc-104">It provides an efficient inference engine that can link highly readable, declarative, semantically rich rules to any business objects (.NET components), XML documents, or database tables.</span></span> <span data-ttu-id="3fdbc-105">アプリケーション開発者は、ビジネス ロジックの小さな構成要素 (小さなルール セット) を基にしてルールを作成することによって、ビジネス ルールを構築できます。ルールは、.NET オブジェクト、データベース テーブル、および XML ドキュメントに含まれている情報 (ファクト) に対して適用されます。</span><span class="sxs-lookup"><span data-stu-id="3fdbc-105">Application developers can build business rules by constructing rules from small building blocks of business logic (small rule sets) that operate on information (facts) contained in .NET objects, database tables, and XML documents.</span></span> <span data-ttu-id="3fdbc-106">このデザイン パターンによって、コードの再利用、デザインの簡潔化、およびビジネス ロジックのモジュール化が促進されます。</span><span class="sxs-lookup"><span data-stu-id="3fdbc-106">This design pattern promotes code reuse, design simplicity, and modularity of business logic.</span></span> <span data-ttu-id="3fdbc-107">また、ルール エンジンを利用することで、ビジネス アプリケーションのアーキテクチャやデザインに制約が生じることはありません。</span><span class="sxs-lookup"><span data-stu-id="3fdbc-107">In addition, the rule engine does not impose on the architecture or design of business applications.</span></span> <span data-ttu-id="3fdbc-108">実際、ルール エンジンを直接呼び出してルール テクノロジをビジネス アプリケーションに追加することも、ビジネス オブジェクトを変更せずにこれらを呼び出す外部ロジックを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="3fdbc-108">In fact, you can add rule technology to a business application by directly invoking the rule engine, or you can have external logic that invokes your business objects without modifying them.</span></span> <span data-ttu-id="3fdbc-109">つまり、このテクノロジによって、開発者は最小限の作業でアプリケーションを作成および保守できるようになります。</span><span class="sxs-lookup"><span data-stu-id="3fdbc-109">In short, the technology enables developers to create and maintain applications with minimal effort.</span></span>  

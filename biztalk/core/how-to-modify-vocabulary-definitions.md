@@ -1,11 +1,11 @@
 ---
-title: "ボキャブラリの定義を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ボキャブラリの定義を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - vocabularies, facts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - vocabularies, definitions
 - vocabularies, modifying
 ms.assetid: 866bb9b9-34e1-4a05-a84e-540c7f7fae3b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254170"
 ---
 # <a name="how-to-modify-vocabulary-definitions"></a><span data-ttu-id="62460-102">ボキャブラリの定義を変更する方法</span><span class="sxs-lookup"><span data-stu-id="62460-102">How to Modify Vocabulary Definitions</span></span>
 <span data-ttu-id="62460-103">ボキャブラリの定義ウィザードを使用して、未公開バージョンのボキャブラリに関する、ボキャブラリの定義を変更できます。ボキャブラリの定義ウィザードで、表示名または表示名に関連するバインドを変更します。</span><span class="sxs-lookup"><span data-stu-id="62460-103">You can modify a vocabulary definition in an unpublished version of a vocabulary by using the Vocabulary Definition Wizard to change the display name or to change the binding associated with the display name.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="62460-112">[ファクト エクスプ ローラー] ウィンドウ、**ボキャブラリ**タブをクリックし、更新する未公開のボキャブラリのバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="62460-112">In the Facts Explorer window, click the **Vocabularies** tab, and select the unpublished vocabulary version that you want to update.</span></span>  
   
-2.  <span data-ttu-id="62460-113">をクリックして**データベース**、 **XML スキーマ**、または**.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="62460-113">Click **Databases**, **XML Schemas**, or **.NET Classes**.</span></span>  
+2.  <span data-ttu-id="62460-113">をクリックして**データベース**、 **XML スキーマ**、または **.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="62460-113">Click **Databases**, **XML Schemas**, or **.NET Classes**.</span></span>  
   
 3.  <span data-ttu-id="62460-114">データ ソース階層を移動して、該当するファクトを参照します。</span><span class="sxs-lookup"><span data-stu-id="62460-114">Navigate through the data source hierarchy to the fact you want.</span></span>  
   

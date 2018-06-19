@@ -1,11 +1,11 @@
 ---
-title: "バインド ファイルとアプリケーションの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: バインド ファイルとアプリケーションの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings
@@ -29,7 +29,7 @@ helpviewer_keywords:
 - binding files, deploying
 - bindings, binding files
 ms.assetid: 396ad021-8001-4ed8-8b28-85b72f981fae
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -38,6 +38,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234066"
 ---
 # <a name="binding-files-and-application-deployment"></a><span data-ttu-id="1a1f6-102">バインド ファイルとアプリケーションの展開</span><span class="sxs-lookup"><span data-stu-id="1a1f6-102">Binding Files and Application Deployment</span></span>
 <span data-ttu-id="1a1f6-103">ここでは、BizTalk アセンブリとアプリケーションの展開が容易になる、バインド ファイルの使用について概説します。</span><span class="sxs-lookup"><span data-stu-id="1a1f6-103">This topic provides overview information about using binding files to make BizTalk assembly and application deployment easier.</span></span> <span data-ttu-id="1a1f6-104">以下のシナリオでバインド ファイルを使用すると、バインドを手動で構成する必要がないので、迅速に展開できます。</span><span class="sxs-lookup"><span data-stu-id="1a1f6-104">You may find that binding files speed deployment in the following scenarios by avoiding the need to manually configure bindings:</span></span>  

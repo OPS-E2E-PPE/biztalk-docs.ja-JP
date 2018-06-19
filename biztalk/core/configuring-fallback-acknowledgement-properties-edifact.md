@@ -1,14 +1,14 @@
 ---
-title: "フォールバック受信確認プロパティ (EDIFACT) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック受信確認プロパティ (EDIFACT) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6062b881-3214-4e68-acbc-1f8c255fd86b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233018"
 ---
 # <a name="configuring-fallback-acknowledgement-properties-edifact"></a><span data-ttu-id="a11ea-102">フォールバック受信確認プロパティを構成する (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="a11ea-102">Configuring Fallback Acknowledgement Properties (EDIFACT)</span></span>
 <span data-ttu-id="a11ea-103">フォールバック アグリーメントでは、パーティに返す受信確認の種類を指定できます。</span><span class="sxs-lookup"><span data-stu-id="a11ea-103">In the fallback agreement, you can specify what type of acknowledgment to return to a party.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="a11ea-108">**EDIFACT フォールバックの設定**] ダイアログ ボックスで、 **EDIFACT アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[ **受信確認**です。</span><span class="sxs-lookup"><span data-stu-id="a11ea-108">In the **EDIFACT Fallback Settings** dialog box, in the **EDIFACT Agreement Pages** tab, under the **Interchange Settings** section, click **Acknowledgements**.</span></span>  
   
-3.  <span data-ttu-id="a11ea-109">選択**メッセージの受信 (CONTRL が必要です)**をインターチェンジ送信者に技術 (CONTRL) 確認を返します。</span><span class="sxs-lookup"><span data-stu-id="a11ea-109">Select **Receipt of message (CONTRL) expected** to return a technical (CONTRL) acknowledgment to the interchange sender.</span></span>  
+3.  <span data-ttu-id="a11ea-109">選択**メッセージの受信 (CONTRL が必要です)** をインターチェンジ送信者に技術 (CONTRL) 確認を返します。</span><span class="sxs-lookup"><span data-stu-id="a11ea-109">Select **Receipt of message (CONTRL) expected** to return a technical (CONTRL) acknowledgment to the interchange sender.</span></span>  
   
 4.  <span data-ttu-id="a11ea-110">選択**確認 (CONTRL) が必要です**をインターチェンジ送信者に機能 (CONTRL) 確認を返します。</span><span class="sxs-lookup"><span data-stu-id="a11ea-110">Select **Acknowledgement (CONTRL) expected** to return a functional (CONTRL) acknowledgment to the interchange sender.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "フラット ファイル メッセージのヘッダー |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル メッセージのヘッダー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1981daaf-149a-426d-9a2f-5fcf64bce185
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246354"
 ---
 # <a name="flat-file-message-headers"></a><span data-ttu-id="18a13-102">フラット ファイル メッセージのヘッダー</span><span class="sxs-lookup"><span data-stu-id="18a13-102">Flat File Message Headers</span></span>
 <span data-ttu-id="18a13-103">構成したフラット ファイル スキーマによって制御されますが、フラット ファイル逆アセンブラーでは、省略可能なフラット ファイル インスタンス メッセージ ヘッダーの解析、**ヘッダー スキーマ**フラット ファイル逆アセンブラーのデザイン時プロパティまたは**XMLNORM です。HeaderSpecName**メッセージ コンテキスト プロパティです。</span><span class="sxs-lookup"><span data-stu-id="18a13-103">The parsing of the optional flat file instance message header by the flat file disassembler is controlled by the flat file schema that you have configured in the **Header schema** design-time property of the flat file disassembler or the **XMLNORM.HeaderSpecName** message context property.</span></span> <span data-ttu-id="18a13-104">いずれかの方法を使用してスキーマを指定しなかった場合、フラット ファイル逆アセンブラーは、フラット ファイル インスタンス メッセージにヘッダーが含まれないと想定します。</span><span class="sxs-lookup"><span data-stu-id="18a13-104">If you have not specified a schema using one of these two methods, the flat file disassembler assumes that the flat file instance message does not contain a header.</span></span>  

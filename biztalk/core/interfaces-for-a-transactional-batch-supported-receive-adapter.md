@@ -1,14 +1,14 @@
 ---
-title: "受信アダプターのバッチでサポートされているトランザクション パブリケーション用のインターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: 受信アダプターのバッチでサポートされているトランザクション パブリケーション用のインターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5289e8b8-4447-4196-9f7c-5e60c6598d8d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257578"
 ---
 # <a name="interfaces-for-a-transactional-batch-supported-receive-adapter"></a><span data-ttu-id="0e5e8-102">バッチ処理に対応したトランザクション受信アダプター用のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="0e5e8-102">Interfaces for a Transactional Batch-Supported Receive Adapter</span></span>
 <span data-ttu-id="0e5e8-103">メッセージのトランザクション送信が必要な場合、受信アダプターはトランザクションを作成して制御します。</span><span class="sxs-lookup"><span data-stu-id="0e5e8-103">A receive adapter creates and controls transactions when the transactional submission of messages is required.</span></span>  

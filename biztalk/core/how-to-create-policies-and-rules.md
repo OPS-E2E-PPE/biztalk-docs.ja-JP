@@ -1,11 +1,11 @@
 ---
-title: "ポリシーとルールを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーとルールを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, business rules
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - policies, arguments
 - policies, creating
 ms.assetid: 59f06a67-edde-443b-9fbb-55ec4429837a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250330"
 ---
 # <a name="how-to-create-policies-and-rules"></a><span data-ttu-id="96243-102">ポリシーおよびルールを作成する方法</span><span class="sxs-lookup"><span data-stu-id="96243-102">How to Create Policies and Rules</span></span>
 <span data-ttu-id="96243-103">論理演算子の論理グループの条件で規則を作成することができます (**AND**、 **OR**、および**いない**) 述語 (組み込みまたはユーザー定義の関数に適用or 演算子) を受け取る引数 (組み込みまたはユーザー定義のファクトの参照)。</span><span class="sxs-lookup"><span data-stu-id="96243-103">You can create rules with conditions that are logical groupings of logical operators (**AND**, **OR**, and **NOT**) applied to predicates (built-in or user-defined functions or operators) that take arguments (built-in or user-defined fact references).</span></span> <span data-ttu-id="96243-104">右クリックすることができますも**条件**演算子または論理演算子、コンテキスト メニューから論理演算子および組み込み述語を選択します。</span><span class="sxs-lookup"><span data-stu-id="96243-104">You can also right-click **Conditions** or logical operators and select a logical operator or built-in predicate from the context menu.</span></span>  
@@ -42,9 +43,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="96243-109">ポリシー エクスプローラ ペインで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。</span><span class="sxs-lookup"><span data-stu-id="96243-109">In the Policy Explorer pane, right-click **Policies**, and then click **Add New Policy**.</span></span>  
   
-     <span data-ttu-id="96243-110">新しいフォルダーを**"policy1"**の下に作成**ポリシー**です。</span><span class="sxs-lookup"><span data-stu-id="96243-110">A new folder, **Policy1**, is created under **Policies**.</span></span> <span data-ttu-id="96243-111">既定では、新しいポリシーのバージョン 1 が作成されます。</span><span class="sxs-lookup"><span data-stu-id="96243-111">By default, version 1 of a new policy is created for you.</span></span>  
+     <span data-ttu-id="96243-110">新しいフォルダーを **"policy1"** の下に作成**ポリシー**です。</span><span class="sxs-lookup"><span data-stu-id="96243-110">A new folder, **Policy1**, is created under **Policies**.</span></span> <span data-ttu-id="96243-111">既定では、新しいポリシーのバージョン 1 が作成されます。</span><span class="sxs-lookup"><span data-stu-id="96243-111">By default, version 1 of a new policy is created for you.</span></span>  
   
-2.  <span data-ttu-id="96243-112">をクリックして**"policy1"**です。</span><span class="sxs-lookup"><span data-stu-id="96243-112">Click **Policy1**.</span></span>  
+2.  <span data-ttu-id="96243-112">をクリックして **"policy1"** です。</span><span class="sxs-lookup"><span data-stu-id="96243-112">Click **Policy1**.</span></span>  
   
 3.  <span data-ttu-id="96243-113">"名前" プロパティ ペインに、名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="96243-113">In the Name property pane, type a name.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "バインドのプロパティの競合 |Microsoft ドキュメント"
-ms.custom: 
+title: バインドのプロパティの競合 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b08c317e-a617-464b-9ee4-007fb41d99b2
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233242"
 ---
 # <a name="conflicting-binding-properties"></a><span data-ttu-id="5dfc0-102">バインド プロパティの競合</span><span class="sxs-lookup"><span data-stu-id="5dfc0-102">Conflicting binding properties</span></span>
 ## <a name="details"></a><span data-ttu-id="5dfc0-103">詳細</span><span class="sxs-lookup"><span data-stu-id="5dfc0-103">Details</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="5dfc0-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="5dfc0-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="5dfc0-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5dfc0-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="5dfc0-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5dfc0-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="5dfc0-126">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="5dfc0-126">In the port **Type** list, select the correct port.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "データベースまたはサーバー名を取得できませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: データベースまたはサーバー名を取得できませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0590f43b-0aec-491f-bca5-c50ab12552a5
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237850"
 ---
 # <a name="could-not-get-the-database-or-the-server-names"></a><span data-ttu-id="5f54b-102">データベース名またはサーバー名を取得できませんでした</span><span class="sxs-lookup"><span data-stu-id="5f54b-102">Could not get the database or the server names</span></span>
 ## <a name="details"></a><span data-ttu-id="5f54b-103">詳細</span><span class="sxs-lookup"><span data-stu-id="5f54b-103">Details</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="5f54b-121">右クリック**BizTalk グループ**です。</span><span class="sxs-lookup"><span data-stu-id="5f54b-121">Right-click **BizTalk Group**.</span></span>  
   
-4.  <span data-ttu-id="5f54b-122">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f54b-122">Click **Properties**.</span></span>  
+4.  <span data-ttu-id="5f54b-122">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f54b-122">Click **Properties**.</span></span>  
   
 5.  <span data-ttu-id="5f54b-123">左側のウィンドウでをクリックして**全般**です。</span><span class="sxs-lookup"><span data-stu-id="5f54b-123">In the left pane, click **General**.</span></span>  
   

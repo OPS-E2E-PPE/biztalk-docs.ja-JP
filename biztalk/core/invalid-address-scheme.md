@@ -1,14 +1,14 @@
 ---
-title: "無効なアドレス スキーム |Microsoft ドキュメント"
-ms.custom: 
+title: 無効なアドレス スキーム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b059289-654e-40d6-a092-2a685e6e10f7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257794"
 ---
 # <a name="invalid-address-scheme"></a><span data-ttu-id="688cf-102">アドレス スキームが無効です</span><span class="sxs-lookup"><span data-stu-id="688cf-102">Invalid address scheme</span></span>
 ## <a name="details"></a><span data-ttu-id="688cf-103">詳細</span><span class="sxs-lookup"><span data-stu-id="688cf-103">Details</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="688cf-123">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="688cf-123">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="688cf-124">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="688cf-124">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="688cf-124">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="688cf-124">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="688cf-125">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="688cf-125">In the port **Type** list, select the correct port.</span></span>  
   
@@ -53,6 +54,6 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="688cf-127">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="688cf-127">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="688cf-128">**アドレス (URI)**テキスト ボックスに、アドレスの値が使用されている WCF アダプターの種類と一致していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="688cf-128">In the **Address (URI)** text box, ensure that address value matches the type of the WCF adapter that is being used.</span></span>  
+9. <span data-ttu-id="688cf-128">**アドレス (URI)** テキスト ボックスに、アドレスの値が使用されている WCF アダプターの種類と一致していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="688cf-128">In the **Address (URI)** text box, ensure that address value matches the type of the WCF adapter that is being used.</span></span>  
   
  <span data-ttu-id="688cf-129">また、システム指定のバインディングの種類で、Wcf-custom アダプターを使用する場合の値を確認、**バインドの種類**ボックスの一覧、**バインディング**タブです。場合、**バインドの種類**するように構成**customBinding**、アドレスがで表示されているトランスポート バインド要素と一致する必要があります、**バインドの種類**リストで、 **バインド**タブです。</span><span class="sxs-lookup"><span data-stu-id="688cf-129">Also, if you use the WCF-Custom adapter with a system-provided binding type, check the value of the **Binding Type** list on the **Binding** tab. If the **Binding Type** is configured to **customBinding**, the address should match the transport binding element listed in the **Binding Type** list on the **Binding** tab.</span></span>

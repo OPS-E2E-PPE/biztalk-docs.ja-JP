@@ -1,17 +1,17 @@
 ---
-title: "コードの保守の BAM に関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: コードの保守の BAM に関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, code maintenance
 - BAMInterceptor class
 ms.assetid: e1f1d8e0-207c-47e1-b9bd-a473c86922ce
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238098"
 ---
 # <a name="considerations-for-bam-code-maintenance"></a><span data-ttu-id="88cd4-102">BAM コードの管理に関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="88cd4-102">Considerations for BAM Code Maintenance</span></span>
 <span data-ttu-id="88cd4-103">BAM を使用するアプリケーションのインストルメント化の方法を決定する場合は、要件が変更になる可能性を考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88cd4-103">When you decide how to instrument your application to use BAM, you should consider the likelihood that requirements will change.</span></span> <span data-ttu-id="88cd4-104">[Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.aspx) クラスの 1 つでメソッドを呼び出して監視対象データを書き込む場合、基本的には、アプリケーションに観測モデルをハードコーディングします。</span><span class="sxs-lookup"><span data-stu-id="88cd4-104">If you call methods on one of the [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.aspx) classes to write the data that is being monitored, you are essentially “hard-coding” the observation model into the application.</span></span> <span data-ttu-id="88cd4-105">監視対象データを変更する必要がある場合は、アプリケーションをオフラインにして、コードを変更し、アプリケーションを再コンパイルして、更新したアプリケーションを再展開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88cd4-105">If you need to change which data is being monitored, you will have to take the application offline, change the code, recompile the application, and then redeploy the updated application.</span></span>  

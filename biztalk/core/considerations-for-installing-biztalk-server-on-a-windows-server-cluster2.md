@@ -1,11 +1,11 @@
 ---
-title: "Windows Server Cluster2 に BizTalk Server をインストールするための考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: Windows Server Cluster2 に BizTalk Server をインストールするための考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Configure Your Server Wizard
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Network DTC access
 - MSDTC
 ms.assetid: 4daea7c6-7d26-440c-a2a0-fa018a25b2b3
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237938"
 ---
 # <a name="considerations-for-installing-biztalk-server-on-a-windows-server-cluster"></a><span data-ttu-id="c5c0b-102">BizTalk Server を Windows Server クラスターにインストールする際の考慮事項</span><span class="sxs-lookup"><span data-stu-id="c5c0b-102">Considerations for Installing BizTalk Server on a Windows Server Cluster</span></span>
 <span data-ttu-id="c5c0b-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を Windows Server クラスターにインストールする場合は特別な注意が必要です。</span><span class="sxs-lookup"><span data-stu-id="c5c0b-103">Special considerations must be made when installing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on a Windows Server cluster.</span></span> <span data-ttu-id="c5c0b-104">このトピックでは、これらの注意事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="c5c0b-104">This topic lists these considerations.</span></span>  

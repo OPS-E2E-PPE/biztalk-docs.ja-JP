@@ -1,11 +1,11 @@
 ---
-title: "送信ポートまたは送信ポート グループを参加させる方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートまたは送信ポート グループを参加させる方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enlisting, send port groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [send ports], enlisting
 - managing [send port groups], enlisting
 ms.assetid: d4298b8e-7dc7-4382-af86-c4db0982b7e0
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254474"
 ---
 # <a name="how-to-enlist-a-send-port-or-send-port-group"></a><span data-ttu-id="5a9a4-102">送信ポートまたは送信ポート グループを参加させる方法</span><span class="sxs-lookup"><span data-stu-id="5a9a4-102">How to Enlist a Send Port or Send Port Group</span></span>
 <span data-ttu-id="5a9a4-103">このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートまたは送信ポート グループを参加させる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a9a4-103">This topic describes how to use the BizTalk Server Administration console to enlist a send port or send port group.</span></span> <span data-ttu-id="5a9a4-104">送信ポートまたは送信ポート グループを参加させると、送信ポートまたは送信ポート グループが BizTalk ホストに関連付けられ、送信ポートまたは送信ポート グループのサブスクリプションが作成されます。</span><span class="sxs-lookup"><span data-stu-id="5a9a4-104">Enlisting a send port or send port group associates the send port or send port group with a BizTalk host and creates the subscriptions for the send port or send port group.</span></span> <span data-ttu-id="5a9a4-105">送信ポート グループに送信ポートが含まれていない場合は、送信ポート グループを参加させてもサブスクリプションは作成されません。</span><span class="sxs-lookup"><span data-stu-id="5a9a4-105">If a send port group does not contain a send port, enlisting the send port group does not create any subscriptions.</span></span> <span data-ttu-id="5a9a4-106">また、送信ポート グループを参加させても、送信ポート グループに含まれている送信ポートの状態は変わりません。</span><span class="sxs-lookup"><span data-stu-id="5a9a4-106">In addition, enlisting a send port group does not change the state of any send ports that it contains.</span></span>  

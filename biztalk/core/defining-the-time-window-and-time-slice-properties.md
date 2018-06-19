@@ -1,11 +1,11 @@
 ---
-title: "時間枠とタイム スライスのプロパティを定義する |Microsoft ドキュメント"
-ms.custom: 
+title: 時間枠とタイム スライスのプロパティを定義する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], aggregations
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - BAMConfiguration.xml file
 - aggregations [BAM], real-time data
 ms.assetid: 7f07b179-da10-4702-baf7-69516c8f16a6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239058"
 ---
 # <a name="defining-the-time-window-and-time-slice-properties"></a><span data-ttu-id="cf3fe-102">TimeWindow プロパティと TimeSlice プロパティの定義</span><span class="sxs-lookup"><span data-stu-id="cf3fe-102">Defining the Time Window and Time Slice Properties</span></span>
 <span data-ttu-id="cf3fe-103">管理者は、BAMConfiguration.xml ファイルの TimeWindow プロパティと TimeSlice プロパティを使用して、BAM プライマリ インポート データベースのリアルタイム集計のテーブルに格納されるデータの有効期間を定義することができます。</span><span class="sxs-lookup"><span data-stu-id="cf3fe-103">Administrators use the TimeWindow and the TimeSlice properties in the BAMConfiguration.xml file to define the life of the data in the real-time aggregation tables in the BAM primary import database.</span></span>  

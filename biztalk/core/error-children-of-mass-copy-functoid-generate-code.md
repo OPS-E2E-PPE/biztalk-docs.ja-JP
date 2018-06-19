@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240570"
 ---
 # <a name="error---children-of-mass-copy-functoid-generate-code"></a><span data-ttu-id="ebe9c-102">エラー - 一括コピー Functoid の子がコードを生成します</span><span class="sxs-lookup"><span data-stu-id="ebe9c-102">Error - Children of Mass Copy Functoid Generate Code</span></span>
 <span data-ttu-id="ebe9c-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="ebe9c-103">**Error Code**</span></span>  

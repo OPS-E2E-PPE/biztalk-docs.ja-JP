@@ -1,14 +1,14 @@
 ---
-title: "新しいマップを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 新しいマップを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43b36cd8-f28e-4349-87d5-c94b7d8761bf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249874"
 ---
 # <a name="how-to-create-new-maps"></a><span data-ttu-id="16b70-102">新しいマップを作成する方法</span><span class="sxs-lookup"><span data-stu-id="16b70-102">How to Create New Maps</span></span>
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 5.  <span data-ttu-id="16b70-120">**BizTalk 型の選択**] ダイアログ ボックスで、展開、**スキーマ**ノードは、適切な送信元スキーマを選択し、[ **OK**です。</span><span class="sxs-lookup"><span data-stu-id="16b70-120">In the **BizTalk Type Picker** dialog box, expand the **Schemas** node, select the appropriate source schema, and then select **OK**.</span></span>  
 
     > [!TIP] 
-    > <span data-ttu-id="16b70-121">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="16b70-121">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can resize the Type Picker window to see the full name of your schema.</span></span>
+    > <span data-ttu-id="16b70-121">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="16b70-121">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can resize the Type Picker window to see the full name of your schema.</span></span>
   
      <span data-ttu-id="16b70-122">送信元スキーマの単一のルートが存在するかを使用して、スキーマのルート ノードが設定された場合のみ、**ルート参照**のプロパティ、**スキーマ**ノード、送信元スキーマが左側のウィンドウで開きます手順 7. に進むことができます。</span><span class="sxs-lookup"><span data-stu-id="16b70-122">If only a single root exists in the source schema, or a root node has been established for the schema using the **Root Reference** property of the **Schema** node, the source schema opens in the left pane, and you can proceed to step 7.</span></span>  
   

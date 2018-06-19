@@ -1,14 +1,14 @@
 ---
-title: "データが格納されているバッチの状態レポートの |Microsoft ドキュメント"
-ms.custom: 
+title: データが格納されているバッチの状態レポートの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d55aa0e1-095f-434e-8530-f1a946ad4430
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238594"
 ---
 # <a name="data-stored-for-batching-status-reports"></a><span data-ttu-id="e9954-102">バッチの状態レポート用に格納されるデータ</span><span class="sxs-lookup"><span data-stu-id="e9954-102">Data Stored for Batching Status Reports</span></span>
 <span data-ttu-id="e9954-103">ときに、**レポートをオンに**、アグリーメントのプロパティが選択されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は各バッチ処理のインスタンスの状態を格納します。</span><span class="sxs-lookup"><span data-stu-id="e9954-103">When the **Turn ON Reporting** property is selected for an agreement, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will store the status of each batching instance.</span></span> <span data-ttu-id="e9954-104">このプロパティで使用できる、**全般プロパティ**のページ、**全般** タブで、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="e9954-104">This property is in available in the **General Properties** page of the **General** tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="e9954-105">状態は、次のいずれかの値になります。</span><span class="sxs-lookup"><span data-stu-id="e9954-105">The status can be any of the following:</span></span>  

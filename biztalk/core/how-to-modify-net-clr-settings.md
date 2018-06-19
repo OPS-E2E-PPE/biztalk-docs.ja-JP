@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254298"
 ---
 # <a name="how-to-modify-net-clr-settings"></a><span data-ttu-id="b3826-102">.NET CLR の設定を変更する方法</span><span class="sxs-lookup"><span data-stu-id="b3826-102">How to Modify .NET CLR Settings</span></span>
 <span data-ttu-id="b3826-103">BizTalk ホストのインスタンスに関連付けられた .NET スレッド プールで使用できる Windows スレッド数を更新するには、BizTalk 設定ダッシュボードを使用して、CLR (共通ランタイム言語) Hosting の値を変更できます。</span><span class="sxs-lookup"><span data-stu-id="b3826-103">To update the number of Windows threads available in the .NET thread pool associated with an instance of a BizTalk host, you can modify the appropriate Common Runtime Language (CLR) Hosting values using the BizTalk Settings Dashboard.</span></span> <span data-ttu-id="b3826-104">このトピックでは、これらの設定を変更する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="b3826-104">This topic provides the step-by-step procedure to modify these settings.</span></span>  

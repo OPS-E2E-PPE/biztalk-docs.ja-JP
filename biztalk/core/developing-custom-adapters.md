@@ -1,14 +1,14 @@
 ---
-title: "カスタム アダプターの開発 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム アダプターの開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44765fbb-b24d-43b6-a40c-d28e319b90a5
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239914"
 ---
 # <a name="developing-custom-adapters"></a><span data-ttu-id="e3665-102">カスタム アダプターの開発</span><span class="sxs-lookup"><span data-stu-id="e3665-102">Developing Custom Adapters</span></span>
 <span data-ttu-id="e3665-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、外部のシステム、アプリケーション、およびエンティティとメッセージを交換するために、アダプターの概念を使用します。</span><span class="sxs-lookup"><span data-stu-id="e3665-103">To exchange messages with external systems, applications, and entities, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the concept of an adapter.</span></span> <span data-ttu-id="e3665-104">アダプターは、COM または[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]ビジネス エンドユーザーからのメッセージを転送するコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="e3665-104">Adapters are COM or [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] components that transfer messages to and from business end.</span></span> <span data-ttu-id="e3665-105">さまざまな通信プロトコルを使用して、(ファイル システム、データベース、カスタム ビジネス アプリケーションなど) のポイント。</span><span class="sxs-lookup"><span data-stu-id="e3665-105">points (such as file systems, databases, and custom business applications) by using various communication protocols.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="e3665-106">さまざまなプロトコルをサポートするネイティブ アダプターを提供します。</span><span class="sxs-lookup"><span data-stu-id="e3665-106"> provides native adapters that support various protocols.</span></span> <span data-ttu-id="e3665-107">たとえば、次のオブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="e3665-107">These include:</span></span>  

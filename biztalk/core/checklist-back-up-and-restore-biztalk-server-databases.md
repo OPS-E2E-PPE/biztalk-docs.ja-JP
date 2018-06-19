@@ -1,11 +1,11 @@
 ---
-title: "チェックリスト: をバックアップし、BizTalk Server データベースを復元 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: をバックアップし、BizTalk Server データベースを復元 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, BizTalk Server
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - checklists, restoring
 - BizTalk Server, restoring
 ms.assetid: 12f7e02e-57b1-4e55-8e44-7fe2d7920f5a
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232706"
 ---
 # <a name="checklist-back-up-and-restore-biztalk-server-databases"></a><span data-ttu-id="32918-102">チェックリスト: をバックアップし、BizTalk Server データベースの復元</span><span class="sxs-lookup"><span data-stu-id="32918-102">Checklist: Back Up and Restore BizTalk Server Databases</span></span>
 <span data-ttu-id="32918-103">BizTalk Server をバックアップまたは復元する場合は、あらかじめ必要な作業を把握しておくことが大切です。</span><span class="sxs-lookup"><span data-stu-id="32918-103">Before attempting to back up or restore BizTalk Server, be sure to familiarize yourself with the processes involved.</span></span>  

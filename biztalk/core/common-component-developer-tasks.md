@@ -1,14 +1,14 @@
 ---
-title: "一般的なコンポーネントの開発者のタスク |Microsoft ドキュメント"
-ms.custom: 
+title: 一般的なコンポーネントの開発者のタスク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b74e258f-2b4f-4e2f-b068-680f7d9546e8
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232418"
 ---
 # <a name="common-component-developer-tasks"></a><span data-ttu-id="94492-102">一般的なコンポーネント開発者のタスク</span><span class="sxs-lookup"><span data-stu-id="94492-102">Common Component Developer Tasks</span></span>
 <span data-ttu-id="94492-103">コンポーネント開発者は、BizTalk Server ソリューションで使用される高度な BizTalk Server コンポーネントを設計し、開発します。</span><span class="sxs-lookup"><span data-stu-id="94492-103">Component developers design and develop advanced BizTalk Server components that are later used in BizTalk Server solutions.</span></span>  

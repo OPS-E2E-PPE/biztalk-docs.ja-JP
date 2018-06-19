@@ -1,14 +1,14 @@
 ---
-title: "メッセージ ボックスの直接バインド ポートを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ ボックスの直接バインド ポートを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1839184b-408e-4ac6-94a4-a0eb708183f6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255914"
 ---
 # <a name="how-to-use-messagebox-direct-bound-ports"></a><span data-ttu-id="03573-102">メッセージ ボックスの直接バインド ポートの使用方法</span><span class="sxs-lookup"><span data-stu-id="03573-102">How to Use MessageBox Direct Bound Ports</span></span>
 <span data-ttu-id="03573-103">メッセージ ボックスの直接バインド ポートを使用すると、明示的な受信者がない状態でメッセージをメッセージ ボックス データベースに直接ドロップでき、特定の送信者からのメッセージではなく特定の条件を満たすメッセージをサブスクライブできます。</span><span class="sxs-lookup"><span data-stu-id="03573-103">MessageBox direct bound ports enable you to drop messages directly into the MessageBox database without an explicit recipient, and to subscribe to messages that meet certain criteria rather than messages that come from a particular sender.</span></span>  

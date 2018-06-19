@@ -1,14 +1,14 @@
 ---
-title: "オープン タイムアウトが無効です |Microsoft ドキュメント"
-ms.custom: 
+title: オープン タイムアウトが無効です |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0047cf43-fcc3-40b4-abeb-bf1b6e7a422b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257706"
 ---
 # <a name="invalid-open-timeout"></a><span data-ttu-id="309dd-102">オープン タイムアウトが無効です</span><span class="sxs-lookup"><span data-stu-id="309dd-102">Invalid open timeout</span></span>
 ## <a name="details"></a><span data-ttu-id="309dd-103">詳細</span><span class="sxs-lookup"><span data-stu-id="309dd-103">Details</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="309dd-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="309dd-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="309dd-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="309dd-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="309dd-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="309dd-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="309dd-126">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="309dd-126">In the port **Type** list, select the correct port.</span></span>  
   

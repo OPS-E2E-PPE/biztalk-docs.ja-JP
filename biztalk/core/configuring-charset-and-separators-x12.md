@@ -1,14 +1,14 @@
 ---
-title: "文字セットと区切り記号 (X12) 構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 文字セットと区切り記号 (X12) 構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6249f2e1-70b0-4960-bbc4-0c3fefd26faa
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234498"
 ---
 # <a name="configuring-charset-and-separators-x12"></a><span data-ttu-id="7adef-102">文字セットと区切り記号を構成する (X12)</span><span class="sxs-lookup"><span data-stu-id="7adef-102">Configuring Charset and Separators (X12)</span></span>
 <span data-ttu-id="7adef-103">パートナー アグリーメントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が、送信 X12 メッセージのエンベロープを作成するときにパーティのプロパティを検証するために使用する文字セットを指定できます。</span><span class="sxs-lookup"><span data-stu-id="7adef-103">In the partner agreement, you can specify the character set that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to validate party properties when creating the envelope for an outgoing X12 message.</span></span> <span data-ttu-id="7adef-104">また、インターチェンジのセグメントに使用する区切り記号と終端記号を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="7adef-104">You can also specify what separators and terminators will be used for the segments in the interchange.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 > -   <span data-ttu-id="7adef-110">**サフィックス**</span><span class="sxs-lookup"><span data-stu-id="7adef-110">**Suffix**</span></span>  
 > -   <span data-ttu-id="7adef-111">**使用してペイロードの区切り記号を置き換えます**</span><span class="sxs-lookup"><span data-stu-id="7adef-111">**Replace separators in payload with**</span></span>  
 >   
->  <span data-ttu-id="7adef-112">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="7adef-112">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="7adef-113">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、チェック ボックスをオフにしたパーティ A、に対して、上記のプロパティの無効になりますで、**パーティ A にパーティ B]-> [**一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="7adef-113">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
+>  <span data-ttu-id="7adef-112">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="7adef-112">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="7adef-113">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、チェック ボックスをオフにしたパーティ A、に対して、上記のプロパティの無効になりますで、**パーティ A にパーティ B]-> [** 一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="7adef-113">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="7adef-114">前提条件</span><span class="sxs-lookup"><span data-stu-id="7adef-114">Prerequisites</span></span>  
  <span data-ttu-id="7adef-115">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7adef-115">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="7adef-129">**セグメント終端記号**、EDI セグメントの終了を示す単一の文字を入力します。</span><span class="sxs-lookup"><span data-stu-id="7adef-129">For **Segment terminator**, enter a single character to indicate the end of an EDI segment.</span></span> <span data-ttu-id="7adef-130">選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。</span><span class="sxs-lookup"><span data-stu-id="7adef-130">Select **Char** for a character data element or **Hex** for a hexadecimal data element.</span></span>  
   
-     <span data-ttu-id="7adef-131">型の場合**Char**、既定値は **~**です。</span><span class="sxs-lookup"><span data-stu-id="7adef-131">If the type is **Char**, the default value is **~**.</span></span>  
+     <span data-ttu-id="7adef-131">型の場合**Char**、既定値は **~** です。</span><span class="sxs-lookup"><span data-stu-id="7adef-131">If the type is **Char**, the default value is **~**.</span></span>  
   
      <span data-ttu-id="7adef-132">型の場合**Hex**、既定値は**7 e**です。</span><span class="sxs-lookup"><span data-stu-id="7adef-132">If the type is **Hex**, the default value is **7E**.</span></span>  
   
@@ -83,11 +84,11 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="7adef-146">**どの**セグメント終端記号 + **CR LF**サフィックス</span><span class="sxs-lookup"><span data-stu-id="7adef-146">**Any** Segment Terminator + **CR LF** Suffix</span></span>  
   
-    -   <span data-ttu-id="7adef-147">**D (16 進)**セグメント終端記号 + **None**サフィックス: この組み合わせは、セグメント終端記号が空白で、サフィックスが CR に設定されている場合とは動作します。</span><span class="sxs-lookup"><span data-stu-id="7adef-147">**D (Hex)** Segment Terminator + **None** Suffix: This combination behaves as if Segment Terminator is blank and Suffix is set to CR.</span></span>  
+    -   <span data-ttu-id="7adef-147">**D (16 進)** セグメント終端記号 + **None**サフィックス: この組み合わせは、セグメント終端記号が空白で、サフィックスが CR に設定されている場合とは動作します。</span><span class="sxs-lookup"><span data-stu-id="7adef-147">**D (Hex)** Segment Terminator + **None** Suffix: This combination behaves as if Segment Terminator is blank and Suffix is set to CR.</span></span>  
   
     -   <span data-ttu-id="7adef-148">(16 進) セグメント終端記号 + **None**サフィックス: この組み合わせは、セグメント終端記号が空白で、サフィックスが LF に設定されている場合とは動作します。</span><span class="sxs-lookup"><span data-stu-id="7adef-148">A (Hex) Segment Terminator + **None** Suffix: This combination behaves as if Segment Terminator is blank and Suffix is set to LF.</span></span>  
   
-    -   <span data-ttu-id="7adef-149">**D (16 進)**セグメント終端記号 + **LF**サフィックス: この組み合わせは、セグメント終端記号が CR で、サフィックスが LF に設定されている場合とは動作します。</span><span class="sxs-lookup"><span data-stu-id="7adef-149">**D (Hex)** Segment Terminator + **LF** Suffix: This combination behaves as if Segment Terminator is CR and Suffix is set to LF.</span></span>  
+    -   <span data-ttu-id="7adef-149">**D (16 進)** セグメント終端記号 + **LF**サフィックス: この組み合わせは、セグメント終端記号が CR で、サフィックスが LF に設定されている場合とは動作します。</span><span class="sxs-lookup"><span data-stu-id="7adef-149">**D (Hex)** Segment Terminator + **LF** Suffix: This combination behaves as if Segment Terminator is CR and Suffix is set to LF.</span></span>  
   
 8.  <span data-ttu-id="7adef-150">確認の場合は、ペイロード データには、データ、セグメント、またはコンポーネント区切り記号としても使用される文字が含まれています、**ペイロードの区切り記号を置き換えます**し、置換文字を指定します。</span><span class="sxs-lookup"><span data-stu-id="7adef-150">If the payload data contains characters that are also used as data, segment, or component separators, check **Replace separators in payload with** and specify a replacement character.</span></span> <span data-ttu-id="7adef-151">送信 X12 メッセージの生成時に、ペイロード データの区切り記号のインスタンスはすべて指定された文字で置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="7adef-151">When generating the outbound X12 message, all instances of separator characters in the payload data will be replaced with the specified character.</span></span> <span data-ttu-id="7adef-152">選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。</span><span class="sxs-lookup"><span data-stu-id="7adef-152">Select **Char** for a character data element or **Hex** for a hexadecimal data element.</span></span> <span data-ttu-id="7adef-153">形式を変更すると、入力した文字が自動的に変更**Char**に**Hex**またはその逆です。</span><span class="sxs-lookup"><span data-stu-id="7adef-153">The character you entered will automatically change when you change the format from **Char** to **Hex** or vice-versa.</span></span>  
   

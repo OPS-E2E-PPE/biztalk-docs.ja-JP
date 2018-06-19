@@ -1,14 +1,14 @@
 ---
-title: "EDI 送信コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 送信コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fce270db-a573-48b3-be15-0178a5b7785b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239930"
 ---
 # <a name="edi-send-components"></a><span data-ttu-id="474be-102">EDI 送信コンポーネント</span><span class="sxs-lookup"><span data-stu-id="474be-102">EDI Send Components</span></span>
 <span data-ttu-id="474be-103">このトピックでは、EDI/AS2 メッセージ以外の EDI メッセージを処理するパイプラインおよびパイプライン コンポーネントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="474be-103">The pipeline and pipeline components described in this topic process EDI messages that are not EDI/AS2 messages.</span></span> <span data-ttu-id="474be-104">EDI および AS2 の EDI および AS2 メッセージを送信する方法については、次を参照してください。 [AS2 送信コンポーネント](../core/as2-send-components.md)です。</span><span class="sxs-lookup"><span data-stu-id="474be-104">For information about the sending of EDI/AS2 or non-EDI/AS2 messages, see [AS2 Send Components](../core/as2-send-components.md).</span></span> <span data-ttu-id="474be-105">AS2 の送信コンポーネントは、AS2 の処理だけでなく、EDI の処理も実行します。</span><span class="sxs-lookup"><span data-stu-id="474be-105">Note that AS2 send components perform EDI processing in addition to AS2 processing.</span></span>  

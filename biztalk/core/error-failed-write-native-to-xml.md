@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239810"
 ---
 # <a name="error---failed-write-native-to-xml"></a><span data-ttu-id="ee268-102">エラー - XML へのネイティブな書き込みに失敗しました</span><span class="sxs-lookup"><span data-stu-id="ee268-102">Error - Failed Write Native to XML</span></span>
 <span data-ttu-id="ee268-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="ee268-103">**Error Code**</span></span>  

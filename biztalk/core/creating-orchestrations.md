@@ -1,17 +1,17 @@
 ---
-title: "オーケストレーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, creating
 - creating, orchestrations
 ms.assetid: 992418df-0acb-448f-9e12-ad857bf93f62
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238210"
 ---
 # <a name="creating-orchestrations"></a><span data-ttu-id="62798-102">オーケストレーションの作成</span><span class="sxs-lookup"><span data-stu-id="62798-102">Creating Orchestrations</span></span>
 <span data-ttu-id="62798-103">このセクションでは、オーケストレーションの作成時やビジネス プロセス フローの設計時に実行する必要がある、さまざまなタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="62798-103">This section describes the various tasks that you need to perform as you create your orchestrations and design your business process flows.</span></span>  

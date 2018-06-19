@@ -1,14 +1,14 @@
 ---
-title: "送信バッチの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信バッチの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75e6f41a-0e24-47bf-9234-125791c62044
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234618"
 ---
 # <a name="configuring-an-outgoing-batch"></a><span data-ttu-id="e14c0-102">送信バッチの構成</span><span class="sxs-lookup"><span data-stu-id="e14c0-102">Configuring an Outgoing Batch</span></span>
 <span data-ttu-id="e14c0-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でトランザクション セットを EDI インターチェンジへバッチ処理する方法を定義するには、アグリーメントに対して 1 つ以上のバッチ構成を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e14c0-103">To define the way that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] batches transaction sets into an EDI interchange, you must create one or more batch configurations for an agreement.</span></span> <span data-ttu-id="e14c0-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でそのアグリーメントに関連付けられ、バッチのフィルター条件を満たすインターチェンジはすべて、そのバッチ構成の同じリリース条件に従ってバッチ処理されてリリースされます。</span><span class="sxs-lookup"><span data-stu-id="e14c0-104">All interchanges that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] associates to that agreement and that meet the filter criteria for a batch will be batched and released according to the same release criteria for that batch configuration.</span></span>  

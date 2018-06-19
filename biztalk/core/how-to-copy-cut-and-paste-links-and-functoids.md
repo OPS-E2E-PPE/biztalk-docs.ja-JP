@@ -1,14 +1,14 @@
 ---
-title: "コピー、切り取り、およびリンクおよび Functoid を貼り付けする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: コピー、切り取り、およびリンクおよび Functoid を貼り付けする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80b4792a-5ff6-4603-96cd-b3d3d530c12f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250370"
 ---
 # <a name="how-to-copy-cut-and-paste-links-and-functoids"></a><span data-ttu-id="0d2d8-102">リンクと Functoid をコピー、切り取り、および貼り付けする方法</span><span class="sxs-lookup"><span data-stu-id="0d2d8-102">How to Copy, Cut, and Paste Links and Functoids</span></span>
 <span data-ttu-id="0d2d8-103">BizTalk マッパーのコピー/切り取り/貼り付け機能を利用すると、リレーションシップを再利用できます。</span><span class="sxs-lookup"><span data-stu-id="0d2d8-103">The copy/cut/paste feature in the BizTalk Mapper enables the reusability of a relationship.</span></span> <span data-ttu-id="0d2d8-104">このトピックでは、マップ内の Functoid やリンクのコピー、切り取り、および貼り付けの手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="0d2d8-104">This topic provides step-by-step instructions to copy, cut, and paste functoids and/or links in a map.</span></span>  

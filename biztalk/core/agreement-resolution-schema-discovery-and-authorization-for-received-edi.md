@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22234234"
 ---
 # <a name="agreement-resolution-schema-discovery-and-authorization-for-received-edi-messages"></a><span data-ttu-id="2271d-102">受信した EDI メッセージのアグリーメントの解決、スキーマ探索、および認証</span><span class="sxs-lookup"><span data-stu-id="2271d-102">Agreement Resolution, Schema Discovery, and Authorization for Received EDI Messages</span></span>
 <span data-ttu-id="2271d-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI メッセージを受信すると、そのメッセージの処理方法を決定するために、EDI 受信パイプラインによって取引先アグリーメント解決、スキーマ探索、および認証のプロセスが実行されます。</span><span class="sxs-lookup"><span data-stu-id="2271d-103">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI message, the EDI receive pipeline performs trading partner agreement lookup, schema discovery, and authorization processes to determine how to process the message.</span></span>  

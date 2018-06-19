@@ -1,11 +1,11 @@
 ---
-title: "既定のパイプライン |Microsoft ドキュメント"
-ms.custom: 
+title: 既定のパイプライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, PassThruTransmit
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Microsoft.BizTalk.DefaultPipelines assembly
 - pipelines, default
 ms.assetid: 7d82bb2c-c7f1-44a1-9e1b-89b0bb806845
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239306"
 ---
 # <a name="default-pipelines"></a><span data-ttu-id="830e5-102">既定のパイプライン</span><span class="sxs-lookup"><span data-stu-id="830e5-102">Default Pipelines</span></span>
 <span data-ttu-id="830e5-103">新しいアプリケーションを作成すると、既定のパイプラインが作成および展開され、各 BizTalk プロジェクトに対して、\References フォルダーの Microsoft.BizTalk.DefaultPipelines アセンブリに表示されます。</span><span class="sxs-lookup"><span data-stu-id="830e5-103">When you create a new application, the default pipelines are created and deployed by default and appear in the Microsoft.BizTalk.DefaultPipelines assembly in the \References folder for every BizTalk project.</span></span> <span data-ttu-id="830e5-104">パイプライン デザイナーでは、既定のパイプラインを変更できません。</span><span class="sxs-lookup"><span data-stu-id="830e5-104">The default pipelines cannot be modified in Pipeline Designer.</span></span> <span data-ttu-id="830e5-105">これらのパイプラインは、送信ポートまたは受信場所を BizTalk エクスプローラーで構成するときに選択できます。</span><span class="sxs-lookup"><span data-stu-id="830e5-105">These pipelines can be selected when configuring a send port or receive location in BizTalk Explorer.</span></span> <span data-ttu-id="830e5-106">ここでは、既定のパイプラインの概要および使用時期について説明します。</span><span class="sxs-lookup"><span data-stu-id="830e5-106">This topic describes the default pipelines and when to use them.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "EDI セグメントの構造体要素 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI セグメントの構造体要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f474a3d-004a-4981-b155-b0a5775918ba
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242218"
 ---
 # <a name="edi-segment-structural-element"></a><span data-ttu-id="04b05-102">EDI セグメントの構造要素</span><span class="sxs-lookup"><span data-stu-id="04b05-102">EDI Segment Structural Element</span></span>
 <span data-ttu-id="04b05-103">セグメントは、メッセージの情報の中間単位であり、1 つ以上のデータ要素を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="04b05-103">The segment contains one or more data elements, and is an intermediate unit of information in the message.</span></span> <span data-ttu-id="04b05-104">各セグメントは、3 文字のデータ セグメント識別子で始まり、セグメント終端記号 (既定ではアポストロフィ (')) で終わります。</span><span class="sxs-lookup"><span data-stu-id="04b05-104">Each segment starts with a three-character data segment identifier, and ends with a segment terminator (by default the apostrophe (')).</span></span> <span data-ttu-id="04b05-105">セグメント内のデータ要素は、データ要素区切り記号で区切られます。</span><span class="sxs-lookup"><span data-stu-id="04b05-105">The data elements within the segment are separated by data element separators.</span></span> <span data-ttu-id="04b05-106">既定のデータ要素区切り記号は正符号 (+) です。</span><span class="sxs-lookup"><span data-stu-id="04b05-106">The data element separator is by default the plus sign (+).</span></span> <span data-ttu-id="04b05-107">セグメントは、必須セグメントまたは省略可能なセグメントに分類されます。</span><span class="sxs-lookup"><span data-stu-id="04b05-107">A segment is classified as Mandatory or Optional.</span></span> <span data-ttu-id="04b05-108">送信インターチェンジの区切り記号は、2 つの取引先間のアグリーメントで設定するか、フォールバック取引先アグリーメントの一部として設定することができます。</span><span class="sxs-lookup"><span data-stu-id="04b05-108">Separators for outgoing interchanges can be set in the agreements between two trading partners or as part of fallback trading partner agreement.</span></span>  

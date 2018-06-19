@@ -1,11 +1,11 @@
 ---
-title: "SOAP 受信場所を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP 受信場所を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SOAP adapters], virtual directories
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - SOAP adapters, virtual directories
 - receive locations, SOAP adapters
 ms.assetid: 7e348409-9181-47e4-b3c0-c73eb2acffa3
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250162"
 ---
 # <a name="how-to-configure-a-soap-receive-location"></a><span data-ttu-id="b780e-102">SOAP の受信場所を構成する方法</span><span class="sxs-lookup"><span data-stu-id="b780e-102">How to Configure a SOAP Receive Location</span></span>
 <span data-ttu-id="b780e-103">SOAP の受信場所は、プログラムから、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して構成できます。</span><span class="sxs-lookup"><span data-stu-id="b780e-103">You can configure a SOAP receive location either programmatically or by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -109,11 +110,11 @@ explorer.SaveChanges();
   
     |<span data-ttu-id="b780e-141">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b780e-141">Use this</span></span>|<span data-ttu-id="b780e-142">目的</span><span class="sxs-lookup"><span data-stu-id="b780e-142">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="b780e-143">**仮想ディレクトリと Web サービス .asmx ファイル**</span><span class="sxs-lookup"><span data-stu-id="b780e-143">**Virtual directory plus Web Service .asmx file**</span></span>|<span data-ttu-id="b780e-144">Microsoft BizTalk Web サービス公開ウィザードで作成された .asmx ファイルを示します。</span><span class="sxs-lookup"><span data-stu-id="b780e-144">Indicate the .asmx file created by the BizTalk Web Services Publishing Wizard.</span></span><br /><br /> <span data-ttu-id="b780e-145">このメッセージの形式は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="b780e-145">The format of this message is similar to the following:</span></span><br /><br /> <span data-ttu-id="b780e-146">/PurchaseOrder/POOrchestration.asmx</span><span class="sxs-lookup"><span data-stu-id="b780e-146">/PurchaseOrder/POOrchestration.asmx</span></span><br /><br /> <span data-ttu-id="b780e-147">この場合、.asmx ファイルの完全な場所は http://localhost/PurchaseOrder/POOrchestration.asmx になります。</span><span class="sxs-lookup"><span data-stu-id="b780e-147">Where the full location of the .asmx file is http://localhost/PurchaseOrder/POOrchestration.asmx.</span></span> <span data-ttu-id="b780e-148">**注:**の URI を送信ポートまたは受信場所は、256 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="b780e-148">**Note:**  The URI for a send port or receive location cannot exceed 256 characters.</span></span>|  
+    |<span data-ttu-id="b780e-143">**仮想ディレクトリと Web サービス .asmx ファイル**</span><span class="sxs-lookup"><span data-stu-id="b780e-143">**Virtual directory plus Web Service .asmx file**</span></span>|<span data-ttu-id="b780e-144">Microsoft BizTalk Web サービス公開ウィザードで作成された .asmx ファイルを示します。</span><span class="sxs-lookup"><span data-stu-id="b780e-144">Indicate the .asmx file created by the BizTalk Web Services Publishing Wizard.</span></span><br /><br /> <span data-ttu-id="b780e-145">このメッセージの形式は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="b780e-145">The format of this message is similar to the following:</span></span><br /><br /> <span data-ttu-id="b780e-146">/PurchaseOrder/POOrchestration.asmx</span><span class="sxs-lookup"><span data-stu-id="b780e-146">/PurchaseOrder/POOrchestration.asmx</span></span><br /><br /> <span data-ttu-id="b780e-147">この場合、.asmx ファイルの完全な場所は http://localhost/PurchaseOrder/POOrchestration.asmx になります。</span><span class="sxs-lookup"><span data-stu-id="b780e-147">Where the full location of the .asmx file is http://localhost/PurchaseOrder/POOrchestration.asmx.</span></span> <span data-ttu-id="b780e-148">**注:** の URI を送信ポートまたは受信場所は、256 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="b780e-148">**Note:**  The URI for a send port or receive location cannot exceed 256 characters.</span></span>|  
     |<span data-ttu-id="b780e-149">**パブリック アドレス**</span><span class="sxs-lookup"><span data-stu-id="b780e-149">**Public address**</span></span>|<span data-ttu-id="b780e-150">この受信場所の完全修飾 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="b780e-150">Specify the fully qualified URI for this receive location.</span></span> <span data-ttu-id="b780e-151">このプロパティの値は、サーバー名と仮想ディレクトリの組み合わせです。</span><span class="sxs-lookup"><span data-stu-id="b780e-151">The value for this property is a combination of the server name and the virtual directory.</span></span> <span data-ttu-id="b780e-152">指定した URI は、取引先が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信するときに接続するパブリック Web サイトの URL を示す必要があります。</span><span class="sxs-lookup"><span data-stu-id="b780e-152">The specified URI should designate the public Web site URL for trading partners to connect to when sending messages to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span><br /><br /> <span data-ttu-id="b780e-153">この情報は省略可能であり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では使用されません。</span><span class="sxs-lookup"><span data-stu-id="b780e-153">This information is optional and is not used by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="b780e-154">このパラメーターを使用すると、管理者は、受信場所が関連付けられているパブリック URL を記述できます。</span><span class="sxs-lookup"><span data-stu-id="b780e-154">This parameter is available to allow administrators to document the public URL that the receive location is tied to.</span></span>|  
     |<span data-ttu-id="b780e-155">**シングル サインオンを使用します。**</span><span class="sxs-lookup"><span data-stu-id="b780e-155">**Use Single Sign-On**</span></span>|<span data-ttu-id="b780e-156">SOAP アダプターがエンタープライズ シングル サインオンを使用することを示します。</span><span class="sxs-lookup"><span data-stu-id="b780e-156">Indicate that the SOAP adapter uses Enterprise Single Sign-On.</span></span> <span data-ttu-id="b780e-157">**注:** BizTalk Web サービス公開ウィザードでは、SharePoint Portal Server シングル サインオンを使用することができます。 このプロパティは、エンタープライズ シングル サインオンだけ有効です。</span><span class="sxs-lookup"><span data-stu-id="b780e-157">**Note:**  The BizTalk Web Services Publishing Wizard allows you to use SharePoint Portal Server Single Sign-On; this property only enables Enterprise Single Sign-On.</span></span>|  
   
-6.  <span data-ttu-id="b780e-158">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b780e-158">Click **OK**.</span></span>  
+6.  <span data-ttu-id="b780e-158">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b780e-158">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="b780e-159">**受信場所のプロパティ** ダイアログ ボックスで、受信場所の構成を完了し、をクリックするには、適切な値を入力して**OK**設定を保存します。</span><span class="sxs-lookup"><span data-stu-id="b780e-159">In the **Receive Location Properties** dialog box, enter the appropriate values to complete the configuration of the receive location, and then click **OK** to save settings.</span></span> <span data-ttu-id="b780e-160">については、**受信場所のプロパティ**ダイアログ ボックスを参照してください[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)です。</span><span class="sxs-lookup"><span data-stu-id="b780e-160">For information about the **Receive Locations Properties** dialog box, see [How to Create a Receive Location](../core/how-to-create-a-receive-location.md).</span></span>  
   
@@ -140,7 +141,7 @@ explorer.SaveChanges();
   
 7.  <span data-ttu-id="b780e-175">規定の Web サイトを展開し、Web サイトの下にある仮想ディレクトリを表示します。</span><span class="sxs-lookup"><span data-stu-id="b780e-175">Expand the Default Web site to view the virtual directories under the Web site.</span></span>  
   
-8.  <span data-ttu-id="b780e-176">ASP.NET 4.0 を使用して、をクリックを更新する仮想ディレクトリを右クリックして**アプリケーションの管理**、クリックして**詳細設定**です。</span><span class="sxs-lookup"><span data-stu-id="b780e-176">Right-click the virtual directory that you want to update to use ASP.NET 4.0, click **Manage Application**, and then click **Advanced Settings**.</span></span> <span data-ttu-id="b780e-177">**アプリケーション プール**フィールドには、選択した仮想ディレクトリの設定、アプリケーション プールが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b780e-177">The **Application Pool** field displays the application pool set for the selected virtual directory.</span></span> <span data-ttu-id="b780e-178">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b780e-178">Click **OK**.</span></span>  
+8.  <span data-ttu-id="b780e-176">ASP.NET 4.0 を使用して、をクリックを更新する仮想ディレクトリを右クリックして**アプリケーションの管理**、クリックして**詳細設定**です。</span><span class="sxs-lookup"><span data-stu-id="b780e-176">Right-click the virtual directory that you want to update to use ASP.NET 4.0, click **Manage Application**, and then click **Advanced Settings**.</span></span> <span data-ttu-id="b780e-177">**アプリケーション プール**フィールドには、選択した仮想ディレクトリの設定、アプリケーション プールが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b780e-177">The **Application Pool** field displays the application pool set for the selected virtual directory.</span></span> <span data-ttu-id="b780e-178">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b780e-178">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="b780e-179">インターネット インフォメーション サービス (IIS) マネージャー] ウィンドウで、[**アプリケーション プール**です。</span><span class="sxs-lookup"><span data-stu-id="b780e-179">In the Internet Information Services (IIS) Manager window, click **Application Pools**.</span></span> <span data-ttu-id="b780e-180">詳細ペインに、サーバーのアプリケーション プールの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b780e-180">The details pane displays a list of application pools on the server.</span></span>  
   

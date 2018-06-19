@@ -14,7 +14,7 @@ helpviewer_keywords:
 - applications, .NET assemblies
 - .NET assemblies, adding to applications
 ms.assetid: 75dc3303-a622-40df-881e-3109cbc81c91
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22249234"
 ---
 # <a name="how-to-add-a-net-assembly-to-an-application"></a><span data-ttu-id="38e5d-102">.NET アセンブリをアプリケーションに追加する方法</span><span class="sxs-lookup"><span data-stu-id="38e5d-102">How to Add a .NET Assembly to an Application</span></span>
 <span data-ttu-id="38e5d-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アセンブリではない .NET アセンブリを BizTalk アプリケーションに追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="38e5d-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a .NET assembly that is not a BizTalk assembly to a BizTalk application.</span></span> <span data-ttu-id="38e5d-104">.NET アセンブリをアプリケーションに追加する際には、次の重要事項を念頭に置いてください。</span><span class="sxs-lookup"><span data-stu-id="38e5d-104">When adding a .NET assembly to an application, bear in mind the following important points:</span></span>  
@@ -68,7 +69,7 @@ ms.lasthandoff: 03/23/2018
   
 9. <span data-ttu-id="38e5d-141">このアセンブリが依存するアイテムがこのアプリケーションに存在しない場合は、それを追加する **アプリケーションに追加**, を成果物を参照してクリックして **開く**します。</span><span class="sxs-lookup"><span data-stu-id="38e5d-141">If an artifact on which this assembly depends is not present in this application, and you want to add it, click **Add to Application**, browse to the artifact, and then click **Open**.</span></span>  
   
-10. <span data-ttu-id="38e5d-142">完了したら、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38e5d-142">When finished, click **OK**.</span></span>  
+10. <span data-ttu-id="38e5d-142">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38e5d-142">When finished, click **OK**.</span></span>  
   
 #### <a name="using-the-command-line"></a><span data-ttu-id="38e5d-143">コマンドラインを使用してください。</span><span class="sxs-lookup"><span data-stu-id="38e5d-143">Using the command line</span></span>  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 03/23/2018
   
 2.  <span data-ttu-id="38e5d-145">コマンド プロンプトで次のコマンドを入力します。このとき、下の表を参考にして適切な値に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="38e5d-145">Type the following command, substituting the appropriate values, as described in the following table.</span></span>  
   
-     <span data-ttu-id="38e5d-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]</span><span class="sxs-lookup"><span data-stu-id="38e5d-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+     <span data-ttu-id="38e5d-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]</span><span class="sxs-lookup"><span data-stu-id="38e5d-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
      <span data-ttu-id="38e5d-147">例:</span><span class="sxs-lookup"><span data-stu-id="38e5d-147">Example:</span></span>  
   

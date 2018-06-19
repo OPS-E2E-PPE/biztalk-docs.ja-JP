@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247362"
 ---
 # <a name="how-to-add-parameters-to-orchestrations"></a><span data-ttu-id="41fd9-102">オーケストレーションにパラメーターを追加する方法</span><span class="sxs-lookup"><span data-stu-id="41fd9-102">How to Add Parameters to Orchestrations</span></span>
 <span data-ttu-id="41fd9-103">[オーケストレーションの種類] ウィンドウでは、オーケストレーションが受け取るパラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="41fd9-103">You can specify what parameters your orchestration should take in the Orchestration View window.</span></span> <span data-ttu-id="41fd9-104">オーケストレーションは、次の項目をパラメーターとして受け取ることができます。</span><span class="sxs-lookup"><span data-stu-id="41fd9-104">An orchestration can take the following items as parameters:</span></span>  

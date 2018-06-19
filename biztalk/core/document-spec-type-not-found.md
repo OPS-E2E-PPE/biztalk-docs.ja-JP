@@ -1,14 +1,14 @@
 ---
-title: "ドキュメント仕様の種類が見つかりません |。Microsoft ドキュメント"
-ms.custom: 
+title: ドキュメント仕様の種類が見つかりません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cb2a458-d0f4-420d-8d35-0e739167464f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239482"
 ---
 # <a name="document-spec-type-not-found"></a><span data-ttu-id="36ac6-102">ドキュメント仕様の種類が見つかりません</span><span class="sxs-lookup"><span data-stu-id="36ac6-102">Document spec type not found</span></span>
 ## <a name="details"></a><span data-ttu-id="36ac6-103">詳細</span><span class="sxs-lookup"><span data-stu-id="36ac6-103">Details</span></span>  

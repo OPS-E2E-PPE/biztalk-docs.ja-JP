@@ -1,14 +1,14 @@
 ---
-title: "エンジンの永続性と耐久性 |Microsoft ドキュメント"
-ms.custom: 
+title: エンジンの永続性と耐久性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bd209e9-75d2-422f-b3b2-377986f41f2f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242594"
 ---
 # <a name="engine-persistence-and-durability"></a><span data-ttu-id="60f56-102">エンジンの永続性と耐久性</span><span class="sxs-lookup"><span data-stu-id="60f56-102">Engine Persistence and Durability</span></span>
 <span data-ttu-id="60f56-103">このセクションでは、SQL Server を介してプロセスの状態をディスクに永続化することによって、疎結合されたビジネス プロセスを BizTalk Server が確実に統合する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="60f56-103">This section explains how BizTalk Server reliably integrates loosely coupled business processes by persisting process state to disk via SQL Server.</span></span> <span data-ttu-id="60f56-104">トランザクションを活用し、状態の永続化を適切なタイミングで行うことによって、ハードウェアまたはソフトウェアに障害が発生しても、プロセスの状態が失われることのないシステム環境を保証できます。</span><span class="sxs-lookup"><span data-stu-id="60f56-104">By persisting state at appropriate times, leveraging transactions, the system guarantees that no process state is lost even in the event of a hardware or software outage.</span></span> <span data-ttu-id="60f56-105">これはシステムの耐久性とも呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="60f56-105">This is referred to as system durability.</span></span>  

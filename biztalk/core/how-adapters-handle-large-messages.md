@@ -1,14 +1,14 @@
 ---
-title: "アダプターがサイズの大きいメッセージを処理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターがサイズの大きいメッセージを処理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c48671fd-b6cf-4507-92b4-35a4cd135714
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247018"
 ---
 # <a name="how-adapters-handle-large-messages"></a><span data-ttu-id="4a8bb-102">アダプターがサイズの大きいメッセージを処理する方法</span><span class="sxs-lookup"><span data-stu-id="4a8bb-102">How Adapters Handle Large Messages</span></span>
 <span data-ttu-id="4a8bb-103">BizTalk メッセージング エンジンでは、サイズが非常に大きいメッセージを処理でき、メッセージの最大サイズに制限はありません。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-103">The BizTalk Messaging Engine can process very large messages and imposes no restriction on the maximum size of a message.</span></span> <span data-ttu-id="4a8bb-104">ただし、最適なパフォーマンスとリソース管理を維持するにはメッセージ サイズの制限を考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-104">However, you should consider limits to message size to maintain optimum performance and resource management.</span></span> <span data-ttu-id="4a8bb-105">メッセージ サイズが大きくなると、1 秒あたりの処理メッセージ数は減少します。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-105">As message size increases the number of messages processed per second decreases.</span></span> <span data-ttu-id="4a8bb-106">シナリオを設計し容量を計画するときには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で処理される平均的なメッセージ サイズ、メッセージの種類、およびメッセージの数を検討してください。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-106">Consider the average message size, message type, and number of messages being processed by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] when designing your scenario and planning for capacity.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="4a8bb-119">アダプターでは、メッセージング エンジンにメッセージを送信するときに、データ ストリームを BizTalk メッセージに関連付けます。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-119">When an adapter submits a message to the engine it should attach its data stream to the BizTalk message.</span></span> <span data-ttu-id="4a8bb-120">一部のアダプターでは、これはネットワーク ストリームの実装となります。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-120">For some adapters this may mean implementing a network stream.</span></span> <span data-ttu-id="4a8bb-121">アダプターからメッセージが送信されると、メッセージング エンジンでは受信パイプラインを実行します。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-121">When the message is submitted, the engine executes the receive pipeline.</span></span> <span data-ttu-id="4a8bb-122">パイプラインの実行中、データの変更を必要とするパイプライン コンポーネントによってメッセージが複製され、新しいメッセージのストリームが前のメッセージのストリームに結合されます。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-122">During pipeline execution, the pipeline components that want to change the data clone the message, wiring up the stream from the new message to the stream on the previous message.</span></span> <span data-ttu-id="4a8bb-123">パイプラインの実行後、メッセージング エンジンでパイプラインからメッセージを取り出し、そのメッセージのストリームを繰り返し読み込みます。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-123">After the pipeline has been executed, the Messaging Engine takes a message out of the pipeline and executes a loop reading the stream on that message.</span></span> <span data-ttu-id="4a8bb-124">つまり、前のストリームの読み込みを呼び出し、その読み込みによってさらに前のストリームの読み込みを呼び出すという方法で、ネットワーク ストリームまでさかのぼります。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-124">This reading of the stream invokes a read on the previous stream, which in turn invokes a read on the previous stream, and so on back to the network stream.</span></span> <span data-ttu-id="4a8bb-125">メッセージング エンジンでは読み込んだデータを定期的にメッセージ ボックスにフラッシュし、フラット メモリ モデルを維持します。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-125">The engine periodically flushes the data to the MessageBox to maintain a flat memory model.</span></span>  
   
- <span data-ttu-id="4a8bb-126">**トラブルシューティングのヒント:**送信側では、アダプターがストリームの読み取りを行う。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-126">**Troubleshooting Tip:** On the send side, the adapter is responsible for reading the stream.</span></span> <span data-ttu-id="4a8bb-127">送信パイプラインによって昇格または書き込みが行われるメッセージ コンテキスト プロパティを、送信アダプターが読み込む場合、これらのプロパティはストリーム全体が読み込まれるまで書き込まれません。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-127">If the send adapter wants to read any message context properties that are promoted or written in the send pipeline, these properties may not be written until the entire stream is read.</span></span> <span data-ttu-id="4a8bb-128">ストリームが完全に読み込まれて初めて、アダプターではすべてのパイプライン コンポーネントの実行が完了したことを確認できます。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-128">Only when the stream has been completely read can the adapter be sure that all of the pipeline components have finished executing.</span></span>  
+ <span data-ttu-id="4a8bb-126">**トラブルシューティングのヒント:** 送信側では、アダプターがストリームの読み取りを行う。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-126">**Troubleshooting Tip:** On the send side, the adapter is responsible for reading the stream.</span></span> <span data-ttu-id="4a8bb-127">送信パイプラインによって昇格または書き込みが行われるメッセージ コンテキスト プロパティを、送信アダプターが読み込む場合、これらのプロパティはストリーム全体が読み込まれるまで書き込まれません。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-127">If the send adapter wants to read any message context properties that are promoted or written in the send pipeline, these properties may not be written until the entire stream is read.</span></span> <span data-ttu-id="4a8bb-128">ストリームが完全に読み込まれて初めて、アダプターではすべてのパイプライン コンポーネントの実行が完了したことを確認できます。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-128">Only when the stream has been completely read can the adapter be sure that all of the pipeline components have finished executing.</span></span>  
   
 ## <a name="locating-a-specific-byte-in-the-stream"></a><span data-ttu-id="4a8bb-129">ストリーム内の特定バイトの指定</span><span class="sxs-lookup"><span data-stu-id="4a8bb-129">Locating a Specific Byte in the Stream</span></span>  
  <span data-ttu-id="4a8bb-130">シナリオによっては、エラーによって中断されるメッセージを処理するために、アダプターが、ストリームを先頭方向に向かって検索する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-130">There are scenarios in which an adapter may need to locate the stream back to the beginning to handle failed messages that need to be suspended.</span></span> <span data-ttu-id="4a8bb-131">この例として、チャンク エンコードを使用してデータを受信し、送信請求 - 応答の組み合わせで応答メッセージを送信する HTTP アダプターがあります。</span><span class="sxs-lookup"><span data-stu-id="4a8bb-131">An example of this is an HTTP adapter that is receiving data using chunked encoding to submit the response message in a solicit-response pair.</span></span>  

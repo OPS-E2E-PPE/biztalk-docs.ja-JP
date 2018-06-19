@@ -1,11 +1,11 @@
 ---
-title: "項目のデータをマップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 項目のデータをマップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data extraction
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tracking profiles, orchestrations
 - tracking profiles, data extraction
 ms.assetid: ae8b395e-152a-4e08-af31-3c9276f52711
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253954"
 ---
 # <a name="how-to-map-item-data"></a><span data-ttu-id="7c1bc-102">データ項目をマップする方法</span><span class="sxs-lookup"><span data-stu-id="7c1bc-102">How to Map Item Data</span></span>
 <span data-ttu-id="7c1bc-103">データ項目をマップして、オーケストレーションからのデータ抽出を定義します。</span><span class="sxs-lookup"><span data-stu-id="7c1bc-103">You map item data to define the data extraction from an orchestration.</span></span>  

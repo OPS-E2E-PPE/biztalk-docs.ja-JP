@@ -1,11 +1,11 @@
 ---
-title: "アーカイブおよび BizTalk 追跡データベースからデータを削除するために BTS_BACKUP_USERS ロールを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アーカイブおよび BizTalk 追跡データベースからデータを削除するために BTS_BACKUP_USERS ロールを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - purging, BTS_BACKUP_USERS role
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Tracking database, archiving
 - purging, DTA Purge and Archive job
 ms.assetid: c27aad2a-5788-4236-b5eb-ca730bf79851
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232450"
 ---
 # <a name="how-to-configure-the-btsbackupusers-role-for-archiving-and-purging-data-from-the-biztalk-tracking-database"></a><span data-ttu-id="12928-102">BizTalk 追跡データベースのデータをアーカイブおよび削除するための BTS_BACKUP_USERS ロールの構成方法</span><span class="sxs-lookup"><span data-stu-id="12928-102">How to Configure the BTS_BACKUP_USERS Role for Archiving and Purging Data from the BizTalk Tracking Database</span></span>
 <span data-ttu-id="12928-103">DTA Purge and Archive (BizTAlkDTADb) ジョブの実行には、通常はログオン中の SQL Server エージェント サービス アカウントのユーザーの資格情報が使用されます。</span><span class="sxs-lookup"><span data-stu-id="12928-103">The DTA Purge and Archive (BizTAlkDTADb) job normally runs using the credentials of the logged-on SQL Server Agent service account user.</span></span> <span data-ttu-id="12928-104">ただし、セキュリティを高めるため、BTS_BACKUP_USERS ロールのメンバーであるアカウントの資格情報で実行されるように DTA Purge and Archive (BizTalkDTADb) ジョブを構成できます。</span><span class="sxs-lookup"><span data-stu-id="12928-104">For added security, however, you can configure the DTA Purge and Archive (BizTalkDTADb) job to run using the credentials of an account which is a member of the BTS_BACKUP_USERS role.</span></span> <span data-ttu-id="12928-105">その結果、最低限必要なアクセス許可しかないアカウントで SQL Server エージェントのジョブが実行され、特権の昇格を防ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="12928-105">This helps to prevent elevation of privileges by running SQL Server Agent jobs under accounts with essential permissions.</span></span>  

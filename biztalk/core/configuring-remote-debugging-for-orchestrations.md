@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションのリモート デバッグの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションのリモート デバッグの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Microsoft.XLANGs.BizTalk.Client.dll.config, code sample
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - building, debugging
 - building, code sample
 ms.assetid: 722efaec-d160-48dc-b94b-0733c9904d98
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233410"
 ---
 # <a name="configuring-remote-debugging-for-orchestrations"></a><span data-ttu-id="c4f9f-102">オーケストレーションのリモート デバッグの構成</span><span class="sxs-lookup"><span data-stu-id="c4f9f-102">Configuring Remote Debugging for Orchestrations</span></span>
 <span data-ttu-id="c4f9f-103">クライアントとサーバーの間のリモート デバッグは詳細に構成することができます。</span><span class="sxs-lookup"><span data-stu-id="c4f9f-103">You can completely configure remote debugging between client and server.</span></span> <span data-ttu-id="c4f9f-104">クライアントの構成は、Microsoft.XLANGs.BizTalk.Client.dll.config で指定されます。サーバーの構成は、BTSNTSvc.exe.config で指定されます。それぞれの既定の構成の一覧を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c4f9f-104">The client configuration is specified in Microsoft.XLANGs.BizTalk.Client.dll.config. The server configuration is specified in BTSNTSvc.exe.config. The following is a listing of the default configuration for each.</span></span>  

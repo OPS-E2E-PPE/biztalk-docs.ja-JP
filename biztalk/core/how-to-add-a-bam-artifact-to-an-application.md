@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションに BAM アイテムを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションに BAM アイテムを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, definition files [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [applications], definition files [BAM]
 - definition files [BAM], managing
 ms.assetid: 86f19030-e510-4527-ba74-10498c361c00
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247426"
 ---
 # <a name="how-to-add-a-bam-artifact-to-an-application"></a><span data-ttu-id="f5eb3-102">BAM アイテムをアプリケーションに追加する方法</span><span class="sxs-lookup"><span data-stu-id="f5eb3-102">How to Add a BAM Artifact to an Application</span></span>
 <span data-ttu-id="f5eb3-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アプリケーションに BAM アイテムを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f5eb3-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a BAM artifact to a BizTalk application.</span></span> <span data-ttu-id="f5eb3-104">BAM 定義ファイルを追加しても、その BAM 定義が展開されるわけではありません。</span><span class="sxs-lookup"><span data-stu-id="f5eb3-104">Adding a BAM definition file does not deploy the BAM definition.</span></span> <span data-ttu-id="f5eb3-105">BAM 定義は、アプリケーションの .msi ファイルがインポートされたときに展開されます。</span><span class="sxs-lookup"><span data-stu-id="f5eb3-105">The BAM definition is deployed when the application .msi file is imported.</span></span>  
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="f5eb3-121">例: **C:\My Applications\MyBAMfile.xml**</span><span class="sxs-lookup"><span data-stu-id="f5eb3-121">Example: **C:\My Applications\MyBAMfile.xml**</span></span>  
   
-7.  <span data-ttu-id="f5eb3-122">完了したら、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5eb3-122">When finished, click **OK**.</span></span>  
+7.  <span data-ttu-id="f5eb3-122">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5eb3-122">When finished, click **OK**.</span></span>  
   
 #### <a name="using-the-command-line"></a><span data-ttu-id="f5eb3-123">コマンドラインを使用</span><span class="sxs-lookup"><span data-stu-id="f5eb3-123">Using the command line</span></span>  
   

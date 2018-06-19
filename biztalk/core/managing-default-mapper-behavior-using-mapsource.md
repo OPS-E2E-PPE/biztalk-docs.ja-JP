@@ -1,14 +1,14 @@
 ---
-title: "既定のマッパーを使用して動作を管理する&lt;mapsource&gt; |Microsoft ドキュメント"
-ms.custom: 
+title: 既定のマッパーを使用して動作を管理する&lt;mapsource&gt; |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: deea839c-e52e-44c6-ac0d-4396dc5b10d8
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263378"
 ---
 # <a name="managing-default-mapper-behavior-using-ltmapsourcegt"></a><span data-ttu-id="abb84-102">既定のマッパーを使用して動作を管理する&lt;mapsource&gt;</span><span class="sxs-lookup"><span data-stu-id="abb84-102">Managing Default Mapper Behavior Using &lt;mapsource&gt;</span></span>
 <span data-ttu-id="abb84-103">BizTalk マッパーの特定の既定動作を変更するにはの属性を変更することによって、 **mapsource**直接マップ ソース (.btm) ファイル内の要素。</span><span class="sxs-lookup"><span data-stu-id="abb84-103">You can modify certain default behaviors of BizTalk Mapper by modifying attributes of the **mapsource** element directly in a map source (.btm) file.</span></span>  

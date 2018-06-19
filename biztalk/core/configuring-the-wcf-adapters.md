@@ -1,11 +1,11 @@
 ---
-title: "WCF アダプタの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプタの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - NetTcpBinding [WCF adapters]
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - bindings, pre-defined [WCF adapters]
 - WCF adapters, configuring
 ms.assetid: af01e2d4-303d-407a-b853-dd90b0246a8a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233162"
 ---
 # <a name="configuring-the-wcf-adapters"></a><span data-ttu-id="87b7e-102">WCF アダプタの構成</span><span class="sxs-lookup"><span data-stu-id="87b7e-102">Configuring the WCF Adapters</span></span>
 <span data-ttu-id="87b7e-103">Windows Communication Foundation (WCF) 向け BizTalk アダプターを使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で WCF ベースのアプリケーションと通信できます。</span><span class="sxs-lookup"><span data-stu-id="87b7e-103">The BizTalk Adapters for Windows Communication Foundation (WCF) allow  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to communicate with WCF-based applications.</span></span> <span data-ttu-id="87b7e-104">BizTalk WCF アダプターは、WCF 定義済みバインドを表す 5 つの物理アダプターを含める-**BasicHttpBinding**、 **WsHttpBinding**、 **NetTcpBinding**、 **NetNamedPipeBinding**、および**NetMsmqBinding**です。</span><span class="sxs-lookup"><span data-stu-id="87b7e-104">The BizTalk WCF adapters include five physical adapters that represent the WCF predefined bindings—**BasicHttpBinding**, **WsHttpBinding**, **NetTcpBinding**, **NetNamedPipeBinding**, and **NetMsmqBinding**.</span></span> <span data-ttu-id="87b7e-105">定義済みバインド用 WCF アダプタの目的は、大半のアプリケーション要件に必要な情報の構成を合理化することです。</span><span class="sxs-lookup"><span data-stu-id="87b7e-105">The WCF adapters for the predefined bindings are provided to enable you to easily configure necessary information for most application requirements.</span></span>  

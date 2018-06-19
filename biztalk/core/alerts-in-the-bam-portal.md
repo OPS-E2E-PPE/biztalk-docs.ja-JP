@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルでアラート |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルでアラート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Alert Management page [BAM portal]
 - alerts, subscriptions
 ms.assetid: 715a4187-aafa-46be-8b00-8eaba2e569e5
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232714"
 ---
 # <a name="alerts-in-the-bam-portal"></a><span data-ttu-id="034aa-102">BAM ポータルの警告</span><span class="sxs-lookup"><span data-stu-id="034aa-102">Alerts in the BAM Portal</span></span>
 <span data-ttu-id="034aa-103">警告を使用すると、主要業績評価指標 (KPI) など、ユーザーへリアルタイムに配信することができる、ビジネス プロセスに関する重要なイベントを定義できます。</span><span class="sxs-lookup"><span data-stu-id="034aa-103">Alerts allow you to define important events about your business process, such as Key Performance Indicators (KPIs), that can be delivered to users on a real-time basis.</span></span> <span data-ttu-id="034aa-104">ユーザーは警告にサブスクライブすることで、その警告で監視されているビジネス イベントの通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="034aa-104">Users subscribe to alerts to receive notification of the business event that the alert monitors.</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 |<span data-ttu-id="034aa-148">フィールド名</span><span class="sxs-lookup"><span data-stu-id="034aa-148">Field Name</span></span>|<span data-ttu-id="034aa-149">目次</span><span class="sxs-lookup"><span data-stu-id="034aa-149">Contents</span></span>|  
 |----------------|--------------|  
-|<span data-ttu-id="034aa-150">名前</span><span class="sxs-lookup"><span data-stu-id="034aa-150">Name</span></span>|<span data-ttu-id="034aa-151">警告の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="034aa-151">The name of the alert.</span></span> <span data-ttu-id="034aa-152">警告の名前は、電子メールとして配信される警告の件名、およびファイルとして配信される警告のファイル名に使用されます。</span><span class="sxs-lookup"><span data-stu-id="034aa-152">The name of the alert is used as the subject of alerts delivered as e-mail and as the file name for alerts delivered as a file.</span></span> <span data-ttu-id="034aa-153">**注:**名は 100 文字を上限と、次の文字を含めることはできません ~! @# $% ^&amp;* ();</span><span class="sxs-lookup"><span data-stu-id="034aa-153">**Note:**  Names are limited to 100 characters and cannot contain the following characters, ~!@#$%^&amp;*();</span></span>|  
+|<span data-ttu-id="034aa-150">名前</span><span class="sxs-lookup"><span data-stu-id="034aa-150">Name</span></span>|<span data-ttu-id="034aa-151">警告の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="034aa-151">The name of the alert.</span></span> <span data-ttu-id="034aa-152">警告の名前は、電子メールとして配信される警告の件名、およびファイルとして配信される警告のファイル名に使用されます。</span><span class="sxs-lookup"><span data-stu-id="034aa-152">The name of the alert is used as the subject of alerts delivered as e-mail and as the file name for alerts delivered as a file.</span></span> <span data-ttu-id="034aa-153">**注:** 名は 100 文字を上限と、次の文字を含めることはできません ~! @# $% ^&amp;\* ();</span><span class="sxs-lookup"><span data-stu-id="034aa-153">**Note:**  Names are limited to 100 characters and cannot contain the following characters, ~!@#$%^&amp;\*();</span></span>|  
 |<span data-ttu-id="034aa-154">メッセージ</span><span class="sxs-lookup"><span data-stu-id="034aa-154">Message</span></span>|<span data-ttu-id="034aa-155">警告と共に配信するメッセージのテキストです。</span><span class="sxs-lookup"><span data-stu-id="034aa-155">The text of the message that will be delivered with the alert.</span></span>|  
 |<span data-ttu-id="034aa-156">[Priority]</span><span class="sxs-lookup"><span data-stu-id="034aa-156">Priority</span></span>|<span data-ttu-id="034aa-157">警告で報告される問題の重要度を示します。</span><span class="sxs-lookup"><span data-stu-id="034aa-157">Indicates the severity of the issue the alert is reporting.</span></span> <span data-ttu-id="034aa-158">優先度レベルは、High、Medium、および Low です。</span><span class="sxs-lookup"><span data-stu-id="034aa-158">The priority levels are High, Medium, and Low.</span></span> <span data-ttu-id="034aa-159">電子メールで配信する警告の場合、この設定が電子メール メッセージの重要度フラグの種類に反映されます。</span><span class="sxs-lookup"><span data-stu-id="034aa-159">For alerts delivered by e-mail, this setting determines the type of importance flag on the e-mail message.</span></span>|  
 |<span data-ttu-id="034aa-160">所有者</span><span class="sxs-lookup"><span data-stu-id="034aa-160">Owners</span></span>|<span data-ttu-id="034aa-161">警告の所有者です。</span><span class="sxs-lookup"><span data-stu-id="034aa-161">The owner of the alert.</span></span> <span data-ttu-id="034aa-162">所有者の既定値は、警告の作成者と同一です。</span><span class="sxs-lookup"><span data-stu-id="034aa-162">The default value for the owner is the same as the creator of the alert.</span></span> <span data-ttu-id="034aa-163">複数の所有者を入力する場合は、各所有者をセミコロンで区切ります。</span><span class="sxs-lookup"><span data-stu-id="034aa-163">Multiple owners are entered as a semi-colon delimited list.</span></span>|  

@@ -1,17 +1,17 @@
 ---
-title: "高可用性 SSO インストール オプション |Microsoft ドキュメント"
-ms.custom: 
+title: 高可用性 SSO インストール オプション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - high availability, SSO
 - SSO, high availability
 ms.assetid: b6e7722e-8fe5-49fe-bf53-bdcca2bb4ad2
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246154"
 ---
 # <a name="high-availability-sso-installation-options"></a><span data-ttu-id="24d1d-102">高可用性 SSO インストール オプション</span><span class="sxs-lookup"><span data-stu-id="24d1d-102">High-Availability SSO Installation Options</span></span>
 <span data-ttu-id="24d1d-103">このセクションの各トピックでは、複数コンピュータ展開など、エンタープライズ シングル サインオンの高可用性に注目したインストールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="24d1d-103">The topics in this section describe installation focused on high availability of Enterprise Single Sign-On, such as multicomputer deployment.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "別のノードまたは種類への参照を作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 別のノードまたは種類への参照を作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c60be9ad-01a9-40e7-b43b-8c3d09bbb32f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250354"
 ---
 # <a name="create-references-to-another-node-or-type"></a><span data-ttu-id="0c938-102">別のノードまたは種類への参照を作成します。</span><span class="sxs-lookup"><span data-stu-id="0c938-102">Create References to Another Node or Type</span></span>
 <span data-ttu-id="0c938-103">グローバル ノードを使用するには再利用可能なデータ型を作成する — 構造の一部分-その構造が適切な場所で、スキーマ全体で使用できます。</span><span class="sxs-lookup"><span data-stu-id="0c938-103">You can use global nodes to create reusable data types—fragments of structure—that you can use throughout the schema wherever that structure is appropriate.</span></span> <span data-ttu-id="0c938-104">直接の子であるノードのみを使用できます、**スキーマ**グローバル型を作成するノードです。</span><span class="sxs-lookup"><span data-stu-id="0c938-104">You can only use nodes that are direct children of the **Schema** node to create global types.</span></span>  

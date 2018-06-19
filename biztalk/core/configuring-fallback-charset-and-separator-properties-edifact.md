@@ -1,14 +1,14 @@
 ---
-title: "フォールバック文字セットと区切り記号 (EDIFACT) のプロパティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック文字セットと区切り記号 (EDIFACT) のプロパティの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9eadc9c1-ebec-42f5-a9ca-06cb28bebcdf
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233898"
 ---
 # <a name="configuring-fallback-charset-and-separator-properties-edifact"></a><span data-ttu-id="9afdf-102">フォールバック文字セットと区切り記号のプロパティの構成 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="9afdf-102">Configuring Fallback Charset and Separator Properties (EDIFACT)</span></span>
 <span data-ttu-id="9afdf-103">フォールバック アグリーメントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が、送信 EDIFACT メッセージのエンベロープを作成するときにパーティのプロパティを検証するために使用する文字セット (UNA) を指定できます。</span><span class="sxs-lookup"><span data-stu-id="9afdf-103">In the fallback agreement, you can specify the character set (UNA) that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to validate party properties when creating the envelope for an outgoing EDIFACT message.</span></span> <span data-ttu-id="9afdf-104">インターチェンジのセグメントに使用する区切り記号と終端記号 (UNB) も指定できます。</span><span class="sxs-lookup"><span data-stu-id="9afdf-104">You can also specify what separators and terminators (UNB) will be used for the segments in the interchange.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="9afdf-113">**EDIFACT フォールバックの設定**] ダイアログ ボックスで、 **EDIFACT アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[**文字セットと区切り記号**です。</span><span class="sxs-lookup"><span data-stu-id="9afdf-113">In the **EDIFACT Fallback Settings** dialog box, in the **EDIFACT Agreement Pages** tab, under the **Interchange Settings** section, click **Charset and Separators**.</span></span>  
   
-3.  <span data-ttu-id="9afdf-114">**構文 (UNB1)**セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="9afdf-114">In the **Syntax (UNB1)** section, do the following:</span></span>  
+3.  <span data-ttu-id="9afdf-114">**構文 (UNB1)** セクションで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="9afdf-114">In the **Syntax (UNB1)** section, do the following:</span></span>  
   
     1.  <span data-ttu-id="9afdf-115">**識別子 (UNB1.1)**、送信インターチェンジに適用される設定の EDIFACT 文字を入力します。</span><span class="sxs-lookup"><span data-stu-id="9afdf-115">For **Identifier (UNB1.1)**, enter the EDIFACT character set to be applied on the outgoing interchange.</span></span> <span data-ttu-id="9afdf-116">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="9afdf-116">This is a required field.</span></span>  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="9afdf-127">**リリース インジケータ (UNA4)**、直後の文字が構文区切り文字、終端記号、またはリリース文字ではなく、元のデータの一部であることを示すリリース インジケーターの値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9afdf-127">For **Release indicator (UNA4)**, enter a value for the release indicator that indicates that the following character is not a syntax separator, terminator, or release character, but is part of the original data.</span></span> <span data-ttu-id="9afdf-128">選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。</span><span class="sxs-lookup"><span data-stu-id="9afdf-128">Select **Char** for a character data element or **Hex** for a hexadecimal data element.</span></span> <span data-ttu-id="9afdf-129">文字の書式を変更すると、入力した文字が自動的に変更されます。</span><span class="sxs-lookup"><span data-stu-id="9afdf-129">The character you entered will automatically change if you change its format.</span></span>  
   
-    5.  <span data-ttu-id="9afdf-130">**繰り返し区切り記号 (UNA5)**を区切るために使用される繰り返し区切り記号は、トランザクション セット内で繰り返すをセグメントの値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9afdf-130">For **Repetition separator (UNA5)**, enter a value for the repetition separator that is used to separate segments that repeat within a transaction set.</span></span> <span data-ttu-id="9afdf-131">選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。</span><span class="sxs-lookup"><span data-stu-id="9afdf-131">Select **Char** for a character data element or **Hex** for a hexadecimal data element.</span></span> <span data-ttu-id="9afdf-132">文字の書式を変更すると、入力した文字が自動的に変更されます。</span><span class="sxs-lookup"><span data-stu-id="9afdf-132">The character you entered will automatically change if you change its format.</span></span>  
+    5.  <span data-ttu-id="9afdf-130">**繰り返し区切り記号 (UNA5)** を区切るために使用される繰り返し区切り記号は、トランザクション セット内で繰り返すをセグメントの値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9afdf-130">For **Repetition separator (UNA5)**, enter a value for the repetition separator that is used to separate segments that repeat within a transaction set.</span></span> <span data-ttu-id="9afdf-131">選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。</span><span class="sxs-lookup"><span data-stu-id="9afdf-131">Select **Char** for a character data element or **Hex** for a hexadecimal data element.</span></span> <span data-ttu-id="9afdf-132">文字の書式を変更すると、入力した文字が自動的に変更されます。</span><span class="sxs-lookup"><span data-stu-id="9afdf-132">The character you entered will automatically change if you change its format.</span></span>  
   
     6.  <span data-ttu-id="9afdf-133">**セグメント終端記号 (UNA6)**、EDI セグメントの末尾を示すセグメント終端記号の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9afdf-133">For **Segment terminator (UNA6)**, enter a value for the segment terminator that indicates the end of an EDI segment.</span></span>  
   

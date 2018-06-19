@@ -1,14 +1,14 @@
 ---
-title: "リンクの表示を最適化する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: リンクの表示を最適化する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a9e16ff-01d3-4b7d-91c4-59d17266ee6d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254386"
 ---
 # <a name="how-to-optimize-the-display-of-links"></a><span data-ttu-id="783fb-102">リンクの表示を最適化する方法</span><span class="sxs-lookup"><span data-stu-id="783fb-102">How to Optimize the Display of Links</span></span>
 <span data-ttu-id="783fb-103">スキーマの規模が大きい場合、マップに含まれる送信元スキーマと送信先スキーマとのリンクの数が多数になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="783fb-103">When the schemas are big, your maps might include a large number of links between the source and the destination schemas.</span></span> <span data-ttu-id="783fb-104">マップ画面全体で多くのリンクを使用する可能性がありますが難しいと感じてリンクまたはで動作する必要があるオブジェクトを追跡するためにします。</span><span class="sxs-lookup"><span data-stu-id="783fb-104">With many links across the map surface, you may find it difficult to track a link or an object you need to work on.</span></span> <span data-ttu-id="783fb-105">また、送信元スキーマ、リンク、Functoid、および送信先スキーマのエンドツーエンドの関係を追跡することも難しくなる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="783fb-105">Also, it can be difficult for you to track an end-to-end relationship between a source schema, the links, the functoids, and the destination schema.</span></span> <span data-ttu-id="783fb-106">BizTalk マッパーでは、複雑で大規模なスキーマを効率的に管理し、マップ内のリンクの表示を最適化することができます。</span><span class="sxs-lookup"><span data-stu-id="783fb-106">In the BizTalk Mapper, you can better manage complex and large schemas, and bring out an optimized display of links in the map.</span></span> <span data-ttu-id="783fb-107">このトピックでは、リンクの表示方法について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="783fb-107">This topic provides details about how to view links.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "暗号化されたメッセージの証明書をインストールする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 暗号化されたメッセージの証明書をインストールする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e11fdb81-041c-4ba6-849d-d511ead0e8be
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254778"
 ---
 # <a name="how-to-install-the-certificates-for-encrypted-messages"></a><span data-ttu-id="9ea26-102">暗号化されたメッセージ用の証明書をインストールする方法</span><span class="sxs-lookup"><span data-stu-id="9ea26-102">How to Install the Certificates for Encrypted Messages</span></span>
 <span data-ttu-id="9ea26-103">暗号化されたメッセージを送受信するための証明書をインストールする手順の概要を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9ea26-103">The following procedure lists the high-level steps that you have to follow to install the certificates for receiving and sending encrypted messages.</span></span>  

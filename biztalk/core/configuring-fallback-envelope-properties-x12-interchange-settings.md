@@ -1,14 +1,14 @@
 ---
-title: "フォールバック エンベロープ プロパティ (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック エンベロープ プロパティ (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e9b05ea-2a0f-42d6-adc2-c1f1f2b7a993
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233330"
 ---
 # <a name="configuring-fallback-envelope-properties-x12-interchange-settings"></a><span data-ttu-id="5102b-102">フォールバック エンベロープ プロパティの構成 (X12 インターチェンジの設定)</span><span class="sxs-lookup"><span data-stu-id="5102b-102">Configuring Fallback Envelope Properties (X12-Interchange Settings)</span></span>
 <span data-ttu-id="5102b-103">X12 インターチェンジのエンベロープの生成の設定は、受信側パーティに送信する X12 エンコード インターチェンジのエンベロープを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でどのように生成するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="5102b-103">X12 interchange envelope generation settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generates the envelope of an X12-encoded interchange to be sent to the receiving party.</span></span> <span data-ttu-id="5102b-104">このフォールバック アグリーメントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がパーティに送信する X12 エンコード インターチェンジの ISA セグメントをどのように生成するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="5102b-104">In this fallback agreement, you define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generates the ISA segment for an X12-encoded interchange that it sends to the party.</span></span> <span data-ttu-id="5102b-105">ISA セグメントは、X12 エンコード インターチェンジのインターチェンジ制御ヘッダーです。</span><span class="sxs-lookup"><span data-stu-id="5102b-105">An ISA segment is the interchange control header for an X12-encoded interchange.</span></span>  

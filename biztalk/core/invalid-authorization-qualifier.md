@@ -1,14 +1,14 @@
 ---
-title: "無効な認証修飾子 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効な認証修飾子 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc2a9f83-833f-4ea0-9421-7382ee1b1a54
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257442"
 ---
 # <a name="invalid-authorization-qualifier"></a><span data-ttu-id="9e30d-102">認証修飾子が無効です</span><span class="sxs-lookup"><span data-stu-id="9e30d-102">Invalid Authorization Qualifier</span></span>
 ## <a name="details"></a><span data-ttu-id="9e30d-103">詳細</span><span class="sxs-lookup"><span data-stu-id="9e30d-103">Details</span></span>  

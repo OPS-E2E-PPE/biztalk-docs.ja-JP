@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240906"
 ---
 # <a name="error---no-script-type-for-scripting-functoid"></a><span data-ttu-id="a8b6e-102">エラー - スクリプト Functoid のスクリプトの種類はありません。</span><span class="sxs-lookup"><span data-stu-id="a8b6e-102">Error - No Script Type for Scripting Functoid</span></span>
 <span data-ttu-id="a8b6e-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="a8b6e-103">**Error Code**</span></span>  

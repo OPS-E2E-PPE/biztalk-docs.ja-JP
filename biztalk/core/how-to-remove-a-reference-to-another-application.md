@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254362"
 ---
 # <a name="how-to-remove-a-reference-to-another-application"></a><span data-ttu-id="6163c-102">他のアプリケーションへの参照を削除する方法</span><span class="sxs-lookup"><span data-stu-id="6163c-102">How to Remove a Reference to Another Application</span></span>
 <span data-ttu-id="6163c-103">このトピックでは、BizTalk Server 管理コンソールを使用して、1 つのアプリケーションから別のアプリケーションへの参照を削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6163c-103">This topic describes how to use the BizTalk Server Administration console to remove a reference from one application to another application.</span></span> <span data-ttu-id="6163c-104">同じ BizTalk グループの別のアプリケーション内に存在するアイテムを、現在のアプリケーションで使用する必要がなくなった場合は、参照を削除します。</span><span class="sxs-lookup"><span data-stu-id="6163c-104">You remove a reference when you no longer need to use an artifact in the current application that exists in another application in the same BizTalk group.</span></span> <span data-ttu-id="6163c-105">参照の追加の詳細については、次を参照してください。[を別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="6163c-105">For more information on adding references, see [How to Add a Reference to Another Application](../core/how-to-add-a-reference-to-another-application.md).</span></span>  

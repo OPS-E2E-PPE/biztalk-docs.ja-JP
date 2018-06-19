@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239858"
 ---
 # <a name="engine-control-functions"></a><span data-ttu-id="065d9-102">エンジン制御関数</span><span class="sxs-lookup"><span data-stu-id="065d9-102">Engine Control Functions</span></span>
 <span data-ttu-id="065d9-103">このセクションでは、アプリケーションまたはポリシーがルール エンジンの作業メモリ内のファクトを制御できるようにするビジネス ルール エンジンの制御関数に関連する動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="065d9-103">This section explains the behaviors associated with several Business Rule engine control functions that allow an application or policy to control the facts in the rule engine's working memory.</span></span> <span data-ttu-id="065d9-104">作業メモリ内に存在するファクトによって、評価される条件と実行されるアクションが決まります。</span><span class="sxs-lookup"><span data-stu-id="065d9-104">The presence of facts in the working memory drives the conditions that are evaluated and the actions that are executed.</span></span>  

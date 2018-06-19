@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22257514"
 ---
 # <a name="instance-message-processing-using-distinguished-fields"></a><span data-ttu-id="51c8b-102">識別フィールドを使用したインスタンス メッセージの処理</span><span class="sxs-lookup"><span data-stu-id="51c8b-102">Instance Message Processing Using Distinguished Fields</span></span>
 <span data-ttu-id="51c8b-103">使用してプロパティの昇格、 **識別フィールド** メカニズムには、プロパティ スキーマの作成は不要です。</span><span class="sxs-lookup"><span data-stu-id="51c8b-103">Promoting properties by using the **Distinguished Field** mechanism does not require the creation of a property schema.</span></span> <span data-ttu-id="51c8b-104">すべてのプロパティの昇格では使用すると、 **プロパティの昇格** を使用してアクセス可能なダイアログ ボックス、 **プロパティの昇格** のプロパティ、 **スキーマ** ノード メッセージ スキーマでまたはを使用して、 **昇格と &#124; 文字です。プロモーションを表示する** コマンドを **BizTalk** またはショートカット メニュー。</span><span class="sxs-lookup"><span data-stu-id="51c8b-104">As with all property promotion, you use the **Promote Properties** dialog box, which is accessible by using the **Promote Properties** property of the **Schema** node in message schemas, or by using the **Promote &#124; Show Promotions** command on the **BizTalk** or shortcut menus.</span></span>  

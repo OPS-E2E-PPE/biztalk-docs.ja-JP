@@ -1,14 +1,14 @@
 ---
-title: "ビジネス アクティビティの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス アクティビティの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83b3c92f-3062-413e-8d89-797f1c7ea7ab
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232730"
 ---
 # <a name="business-activity-monitoring"></a><span data-ttu-id="89f04-102">ビジネス アクティビティの監視</span><span class="sxs-lookup"><span data-stu-id="89f04-102">Business Activity Monitoring</span></span>
 <span data-ttu-id="89f04-103">インフォメーション ワーカーがビジネス プロセスを確認し評価する際には、柔軟性が必要です。</span><span class="sxs-lookup"><span data-stu-id="89f04-103">Information workers need flexibility in looking at and evaluating business processes.</span></span> <span data-ttu-id="89f04-104">たとえば、購買部長は 1 日に承認および拒否される注文書の数を確認する必要があり、販売部長は受注製品を 1 時間ごとに更新するとします。</span><span class="sxs-lookup"><span data-stu-id="89f04-104">A purchasing manager might need to see how many POs are approved and denied each day, for example, while a sales manager might want an hourly update on what products are being ordered.</span></span> <span data-ttu-id="89f04-105">これらの異なるニーズを満たすには、特定のビジネス プロセスで起こっている事象を追跡するための全般的なフレームワークが必要です。</span><span class="sxs-lookup"><span data-stu-id="89f04-105">Meeting these diverse needs requires a general framework for tracking what’s going on with a particular business process.</span></span> <span data-ttu-id="89f04-106">これはまさに、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のビジネス アクティビティ監視 (BAM) コンポーネントによって提供されるものです。</span><span class="sxs-lookup"><span data-stu-id="89f04-106">This is exactly what the Business Activity Monitoring (BAM) component in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides.</span></span>  

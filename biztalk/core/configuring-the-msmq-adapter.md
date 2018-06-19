@@ -1,17 +1,17 @@
 ---
-title: "MSMQ アダプターの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, configuring
 - configuring [MSMQ adapters]
 ms.assetid: 8f873ee1-4eaa-43d2-948d-aecc406a0bfb
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232954"
 ---
 # <a name="configuring-the-msmq-adapter"></a><span data-ttu-id="076c6-102">MSMQ アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="076c6-102">Configuring the MSMQ Adapter</span></span>
 <span data-ttu-id="076c6-103">このセクションでは、MSMQ アダプタの構成情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="076c6-103">This section includes information about configuring the MSMQ adapter.</span></span> <span data-ttu-id="076c6-104">MSMQ アダプタは、受信場所と送信ポートの両方に構成できます。</span><span class="sxs-lookup"><span data-stu-id="076c6-104">You can configure the MSMQ adapter for both receive locations and send ports.</span></span>  

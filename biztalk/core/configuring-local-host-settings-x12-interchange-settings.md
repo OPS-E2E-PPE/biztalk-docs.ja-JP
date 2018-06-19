@@ -1,14 +1,14 @@
 ---
-title: "ローカル ホスト設定 (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: ローカル ホスト設定 (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c66c1e63-c654-4ccb-b424-34c06f1ce94e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234754"
 ---
 # <a name="configuring-local-host-settings-x12-interchange-settings"></a><span data-ttu-id="63914-102">ローカルホスト設定の構成 (X12 インターチェンジの設定)</span><span class="sxs-lookup"><span data-stu-id="63914-102">Configuring Local Host Settings (X12-Interchange Settings)</span></span>
 <span data-ttu-id="63914-103">ローカル ホスト設定は、EDI インターチェンジの処理方法を管理します。</span><span class="sxs-lookup"><span data-stu-id="63914-103">The local host settings govern how the EDI interchanges are processed.</span></span> <span data-ttu-id="63914-104">このページの設定は、2 つのカテゴリに分類できます。受信元の設定 (着信インターチェンジ) と送信者の設定 (送信インターチェンジ) です。</span><span class="sxs-lookup"><span data-stu-id="63914-104">The settings on this page can be divided into two categories – receiver’s settings (for incoming interchanges) and sender’s settings (for outgoing interchanges).</span></span> <span data-ttu-id="63914-105">受信元の設定の一部で、受信バッチをトランザクション セットに分割するか、保存するかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="63914-105">As part of the receiver’s settings, you can specify whether an incoming batch will be split into transaction sets or preserved.</span></span> <span data-ttu-id="63914-106">保存する場合は、エラーが発生したときに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によってインターチェンジまたはトランザクション セットを保留するかどうかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="63914-106">If preserved, you can specify whether [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] suspends the interchange or transaction set if an error occurs.</span></span> <span data-ttu-id="63914-107">送信者の設定の一部として、送信メッセージに対して制御番号がどのように生成されるかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="63914-107">As part of the sender’s settings, you can specify how the control numbers are generated for outgoing messages</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 >  <span data-ttu-id="63914-108">ここで説明する設定は、HIPAA インターチェンジにも当てはまります。</span><span class="sxs-lookup"><span data-stu-id="63914-108">The settings described here also apply to HIPAA interchanges.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="63914-109">次のプロパティが無効になっている**パーティ A にパーティ B]-> [**をオフにした場合は、一方向アグリーメント タブの**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**パーティ A のチェック ボックス</span><span class="sxs-lookup"><span data-stu-id="63914-109">The following properties are disabled on **Party A->Party B** one-way agreement tab if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box for Party A.</span></span>  
+>  <span data-ttu-id="63914-109">次のプロパティが無効になっている**パーティ A にパーティ B]-> [** をオフにした場合は、一方向アグリーメント タブの**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**パーティ A のチェック ボックス</span><span class="sxs-lookup"><span data-stu-id="63914-109">The following properties are disabled on **Party A->Party B** one-way agreement tab if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box for Party A.</span></span>  
 >   
 >  -   <span data-ttu-id="63914-110">すべてのプロパティ、**送信者の設定**セクションです。</span><span class="sxs-lookup"><span data-stu-id="63914-110">All properties under the **Sender’s Settings** section.</span></span>  
 >   
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="63914-119">クリア、**要求-応答で送信パイプラインに確認をルーティングの受信ポート**別で、受信確認の送信ポートを返します。</span><span class="sxs-lookup"><span data-stu-id="63914-119">Clear the **Route ACK to send pipeline on request-response receive port** to return the acknowledgment by a separate send port.</span></span> <span data-ttu-id="63914-120">双方向の要求 - 応答の受信ポートに関連付けられた送信ポートで確認を返す場合は、このプロパティをオンのままにします。</span><span class="sxs-lookup"><span data-stu-id="63914-120">Leave the property selected to return the acknowledgment on the send port associated with the two-way request-response receive port.</span></span>  
   
-4.  <span data-ttu-id="63914-121">受信確認で使用されるトランザクション セット制御番号の範囲を指定するには、内の値を入力してください。、 **ACK 制御番号 (ST02)**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="63914-121">To designate the range of transaction set control numbers used in an acknowledgment, enter values in the **ACK Control number (ST02)** fields.</span></span> <span data-ttu-id="63914-122">中央の 2 つのフィールドに数値を入力し、プレフィックスとサフィックスのフィールド (省略可能) に英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-122">Enter a numeric value for the middle two fields, and an alphanumeric value (if desired) for the prefix and suffix fields.</span></span> <span data-ttu-id="63914-123">中央のフィールドは必須で、制御番号の最小値と最大値を指定します。プレフィックスとサフィックスは省略可能です。</span><span class="sxs-lookup"><span data-stu-id="63914-123">The middle fields are required and contain the minimum and maximum values for the control number; the prefix and suffix are optional.</span></span> <span data-ttu-id="63914-124">3 つのすべてのフィールドの最大長は 9 文字です。</span><span class="sxs-lookup"><span data-stu-id="63914-124">The maximum length for all three fields is nine characters.</span></span>  
+4.  <span data-ttu-id="63914-121">受信確認で使用されるトランザクション セット制御番号の範囲を指定するには、内の値を入力してください。、 **ACK 制御番号 (ST02)** フィールドです。</span><span class="sxs-lookup"><span data-stu-id="63914-121">To designate the range of transaction set control numbers used in an acknowledgment, enter values in the **ACK Control number (ST02)** fields.</span></span> <span data-ttu-id="63914-122">中央の 2 つのフィールドに数値を入力し、プレフィックスとサフィックスのフィールド (省略可能) に英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-122">Enter a numeric value for the middle two fields, and an alphanumeric value (if desired) for the prefix and suffix fields.</span></span> <span data-ttu-id="63914-123">中央のフィールドは必須で、制御番号の最小値と最大値を指定します。プレフィックスとサフィックスは省略可能です。</span><span class="sxs-lookup"><span data-stu-id="63914-123">The middle fields are required and contain the minimum and maximum values for the control number; the prefix and suffix are optional.</span></span> <span data-ttu-id="63914-124">3 つのすべてのフィールドの最大長は 9 文字です。</span><span class="sxs-lookup"><span data-stu-id="63914-124">The maximum length for all three fields is nine characters.</span></span>  
   
      <span data-ttu-id="63914-125">最小値にトランザクション セット制御番号を現在のリセット をクリックして**リセット**です。</span><span class="sxs-lookup"><span data-stu-id="63914-125">To reset the current transaction set control number to the minimum value, click **Reset**.</span></span> <span data-ttu-id="63914-126">確認**範囲外の時は下限にリセット**最大値を超えた制御番号を下限にリセットします。</span><span class="sxs-lookup"><span data-stu-id="63914-126">Check **Reset to lower limit when out of bound** to reset the control number to the lower limit once the maximum value has been exceeded.</span></span>  
   
@@ -72,11 +73,11 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="63914-149">制御番号を指定した最小値をリセットする をクリックして、**リセット**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="63914-149">To reset the control number to the minimum value specified, click the **Reset** button.</span></span> <span data-ttu-id="63914-150">確認**範囲外の時は下限にリセット**最大値を超えた場合、最小値に自動的にリセットします。</span><span class="sxs-lookup"><span data-stu-id="63914-150">Check **Reset to lower limit when out of bound** to automatically reset to the minimum value if the maximum value is exceeded.</span></span>  
   
-2.  <span data-ttu-id="63914-151">**グループ制御番号 (GS06)**範囲のグループ制御番号の BizTalk Server が使用する数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-151">For **Group control number (GS06)**, enter the range of numbers that BizTalk Server should use for the group control number.</span></span> <span data-ttu-id="63914-152">1 ～ 9 文字の数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-152">Enter a numeric value with a minimum of one character and a maximum of nine characters.</span></span> <span data-ttu-id="63914-153">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="63914-153">This is a required field.</span></span>  
+2.  <span data-ttu-id="63914-151">**グループ制御番号 (GS06)** 範囲のグループ制御番号の BizTalk Server が使用する数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-151">For **Group control number (GS06)**, enter the range of numbers that BizTalk Server should use for the group control number.</span></span> <span data-ttu-id="63914-152">1 ～ 9 文字の数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-152">Enter a numeric value with a minimum of one character and a maximum of nine characters.</span></span> <span data-ttu-id="63914-153">このフィールドは必須です。</span><span class="sxs-lookup"><span data-stu-id="63914-153">This is a required field.</span></span>  
   
      <span data-ttu-id="63914-154">グループ制御番号を指定した最小値をリセットする をクリックして、**リセット**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="63914-154">To reset the group control number to the minimum value specified, click the **Reset** button.</span></span> <span data-ttu-id="63914-155">確認**範囲外の時は下限にリセット**最大値を超えた場合、最小値に自動的にリセットします。</span><span class="sxs-lookup"><span data-stu-id="63914-155">Check **Reset to lower limit when out of bound** to automatically reset to the minimum value if the maximum value is exceeded.</span></span>  
   
-3.  <span data-ttu-id="63914-156">**トランザクション セット制御番号 (ST02)**をクリックして**新しい ID を適用**し、省略可能なプレフィックスとサフィックスの数値フィールドの値を必要ミドル ネーム、および英数字の値の範囲を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-156">For **Transaction Set Control number (ST02)**, click **Apply new ID** and then enter a range of numeric values for the required middle fields, and alphanumeric values for the optional prefix and suffix.</span></span> <span data-ttu-id="63914-157">4 つのすべてのフィールドの最大長は 9 文字です。</span><span class="sxs-lookup"><span data-stu-id="63914-157">The maximum length of all four fields is nine characters.</span></span>  
+3.  <span data-ttu-id="63914-156">**トランザクション セット制御番号 (ST02)** をクリックして**新しい ID を適用**し、省略可能なプレフィックスとサフィックスの数値フィールドの値を必要ミドル ネーム、および英数字の値の範囲を入力します。</span><span class="sxs-lookup"><span data-stu-id="63914-156">For **Transaction Set Control number (ST02)**, click **Apply new ID** and then enter a range of numeric values for the required middle fields, and alphanumeric values for the optional prefix and suffix.</span></span> <span data-ttu-id="63914-157">4 つのすべてのフィールドの最大長は 9 文字です。</span><span class="sxs-lookup"><span data-stu-id="63914-157">The maximum length of all four fields is nine characters.</span></span>  
   
      <span data-ttu-id="63914-158">最小値にトランザクション セット制御番号を現在のリセット をクリックして**リセット**です。</span><span class="sxs-lookup"><span data-stu-id="63914-158">To reset the current transaction set control number to the minimum value, click **Reset**.</span></span> <span data-ttu-id="63914-159">選択**範囲外の時は下限にリセット**最大値を超過した場合、制御番号を最小値にリセットします。</span><span class="sxs-lookup"><span data-stu-id="63914-159">Select **Reset to lower limit when out of bound** to reset the control number to the minimum value if the maximum value has been exceeded.</span></span>  
   
