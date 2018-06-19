@@ -1,18 +1,18 @@
 ---
-title: "新しい PIP による BTARN の拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: 新しい PIP による BTARN の拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, extending functionality
 - PIPs, extending BTARN
 - BTARN, PIPs
 ms.assetid: 3db5cd5c-031f-4451-9be5-4b5d6163c3b1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007177"
 ---
 # <a name="extending-btarn-with-a-new-pip"></a><span data-ttu-id="65935-102">新しい PIP による BTARN の拡張</span><span class="sxs-lookup"><span data-stu-id="65935-102">Extending BTARN with a New PIP</span></span>
 <span data-ttu-id="65935-103">このトピックを拡張する方法について説明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]新しいプロセス PIP (Partner Interface) スキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="65935-103">This topic describes how to extend [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] with a new Partner Interface Process (PIP) schema.</span></span> <span data-ttu-id="65935-104">[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張すると、RosettaNet PIP が BTARN セットアップ プログラムによってインストールされるどのスキーマとも関連付けられていない場合に、その PIP に基づくスキーマを追加できるようになります。</span><span class="sxs-lookup"><span data-stu-id="65935-104">This lets you add a schema based on a RosettaNet PIP when that PIP is not associated with any of the schemas installed by the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Setup program.</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  <span data-ttu-id="65935-113">Visual Studio を起動します。</span><span class="sxs-lookup"><span data-stu-id="65935-113">Start Visual Studio.</span></span>  
   
-5.  <span data-ttu-id="65935-114">**[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="65935-114">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
+5.  <span data-ttu-id="65935-114">**[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="65935-114">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
 6.  <span data-ttu-id="65935-115">新しいプロジェクト ダイアログ ボックスで、次のように選択します。 **BizTalk プロジェクト**をクリックして、左側のウィンドウ**空の BizTalk Server プロジェクト**右側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="65935-115">In the New Project dialog box, select **BizTalk Projects** in the left pane, and then click **Empty BizTalk Server Project** in the right pane.</span></span>  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 12/01/2017
   
 26. <span data-ttu-id="65935-145">[プロパティ] ウィンドウでスクロールして**ドキュメントの種類**です。</span><span class="sxs-lookup"><span data-stu-id="65935-145">In the Properties window, scroll down to **Document Type**.</span></span> <span data-ttu-id="65935-146">**ドキュメントの種類**ボックスで、 **PIP**\<*3 桁のコード*\>など、 **PIP3A2**です。</span><span class="sxs-lookup"><span data-stu-id="65935-146">In the **Document Type** box, **PIP**\<*three-digit code*\>, for example, **PIP3A2**.</span></span> <span data-ttu-id="65935-147">**ドキュメント バージョン**ボックスに、入力**v**\<*xx.xx* \>または**R** \< *xx.xx*\>など、 **R01.02**です。</span><span class="sxs-lookup"><span data-stu-id="65935-147">In the **Document Version** box, type **v**\<*xx.xx*\> or **R**\<*xx.xx*\>, for example, **R01.02**.</span></span> <span data-ttu-id="65935-148">このバージョン番号は、RosettaNet PIP 仕様に記載されています。</span><span class="sxs-lookup"><span data-stu-id="65935-148">This version should be as documented in the RosettaNet PIP specification.</span></span>  
   
-27. <span data-ttu-id="65935-149">[プロパティ] ウィンドウでスクロールして**ルート参照**です。</span><span class="sxs-lookup"><span data-stu-id="65935-149">In the Properties window, scroll down to **Root Reference**.</span></span> <span data-ttu-id="65935-150">をクリックして**ルート参照**、ドロップダウン リストから、スキーマ、たとえば、select のルート ノードを選択して**[pip3c5billingstatementnotification]**です。</span><span class="sxs-lookup"><span data-stu-id="65935-150">Click **Root Reference**, and from the drop-down list, select the root node of the schema, for example, select **Pip3C5BillingStatementNotification**.</span></span>  
+27. <span data-ttu-id="65935-149">[プロパティ] ウィンドウでスクロールして**ルート参照**です。</span><span class="sxs-lookup"><span data-stu-id="65935-149">In the Properties window, scroll down to **Root Reference**.</span></span> <span data-ttu-id="65935-150">をクリックして**ルート参照**、ドロップダウン リストから、スキーマ、たとえば、select のルート ノードを選択して **[pip3c5billingstatementnotification]** です。</span><span class="sxs-lookup"><span data-stu-id="65935-150">Click **Root Reference**, and from the drop-down list, select the root node of the schema, for example, select **Pip3C5BillingStatementNotification**.</span></span>  
   
 28. <span data-ttu-id="65935-151">[プロパティ] ウィンドウで、スクロールまで**Target Namespace**です。</span><span class="sxs-lookup"><span data-stu-id="65935-151">In the Properties window, scroll up to **Target Namespace**.</span></span> <span data-ttu-id="65935-152">**Target Namespace**、型**http://schemas.microsoft.com/biztalk/btarn/2004/\<DTD ファイル名\>.dtd**DTD ファイル名はたとえば、 **3C5_MS_R01_00_BillingStatementNotification.dtd**です。</span><span class="sxs-lookup"><span data-stu-id="65935-152">For **Target Namespace**, type **http://schemas.microsoft.com/biztalk/btarn/2004/\<DTD file name\>.dtd**, where the DTD file name is, for example, **3C5_MS_R01_00_BillingStatementNotification.dtd**.</span></span>  
   
@@ -101,13 +102,13 @@ ms.lasthandoff: 12/01/2017
   
 29. <span data-ttu-id="65935-157">[プロパティ] ウィンドウで、スクロールまで**Imports**です。</span><span class="sxs-lookup"><span data-stu-id="65935-157">In the Properties window, scroll up to **Imports**.</span></span> <span data-ttu-id="65935-158">横にある省略記号ボタン (...) をクリックして**Imports**、クリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="65935-158">Click the ellipsis button (...) next to **Imports**, and then click **Add**.</span></span>  
   
-30. <span data-ttu-id="65935-159">**BizTalk 型の選択**] ダイアログ ボックスで、展開\<*プロジェクト名*\>、展開**参照**、展開**Microsoft.Solutions.BTARN.Schemas.RNPIPs**、展開**スキーマ**[ **Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**をクリックして**[ok]**、クリックして**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="65935-159">In the **BizTalk Type Picker** dialog box, expand \<*Project Name*\>, expand **References**, expand **Microsoft.Solutions.BTARN.Schemas.RNPIPs**, expand **Schemas**, select **Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**, click **OK**, and then click **OK** again.</span></span>  
+30. <span data-ttu-id="65935-159">**BizTalk 型の選択**] ダイアログ ボックスで、展開\<*プロジェクト名*\>、展開**参照**、展開**Microsoft.Solutions.BTARN.Schemas.RNPIPs**、展開**スキーマ**[ **Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**をクリックして **[ok]**、クリックして**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="65935-159">In the **BizTalk Type Picker** dialog box, expand \<*Project Name*\>, expand **References**, expand **Microsoft.Solutions.BTARN.Schemas.RNPIPs**, expand **Schemas**, select **Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**, click **OK**, and then click **OK** again.</span></span>  
   
 31. <span data-ttu-id="65935-160">プロジェクト名を右クリックし、をクリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="65935-160">Right-click the project name, and then click **Deploy**.</span></span>  
   
 32. <span data-ttu-id="65935-161">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="65935-161">Click **Start**, point to **All Programs**, point to **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-33. <span data-ttu-id="65935-162">BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)**の順に展開および**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="65935-162">In BizTalk Administration Console, expand **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**, and then expand **Hosts**.</span></span> <span data-ttu-id="65935-163">**ホスト**をクリックして**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="65935-163">Under **Host**, click **BizTalkServerApplication**.</span></span>  
+33. <span data-ttu-id="65935-162">BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)** の順に展開および**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="65935-162">In BizTalk Administration Console, expand **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**, and then expand **Hosts**.</span></span> <span data-ttu-id="65935-163">**ホスト**をクリックして**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="65935-163">Under **Host**, click **BizTalkServerApplication**.</span></span>  
   
 34. <span data-ttu-id="65935-164">右側のウィンドウで、ホストの名前を右クリックし、をクリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="65935-164">In the right pane, right-click the name of the host, and then click **Restart**.</span></span>  
   

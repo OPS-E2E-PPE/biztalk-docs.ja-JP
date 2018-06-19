@@ -18,7 +18,7 @@ helpviewer_keywords:
 - managing [SSO], disabling
 - SSO, administrator accounts
 ms.assetid: 6c300e09-b781-45de-b2da-b1083164a1c0
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972720"
 ---
 # <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a><span data-ttu-id="91724-102">SSO 管理者を指定し、関連管理者アカウント方法</span><span class="sxs-lookup"><span data-stu-id="91724-102">How to Specify SSO Administrators and Affiliate Administrators Accounts</span></span>
 <span data-ttu-id="91724-103">エンタープライズ シングル サインオン (SSO) 管理者アカウントと関連管理者アカウントは、ホスト グループまたは個別のアカウントにすることができます。</span><span class="sxs-lookup"><span data-stu-id="91724-103">The Enterprise Single Sign-On (SSO) Administrators and Affiliate Administrators accounts can be host group or individual accounts.</span></span> <span data-ttu-id="91724-104">これらのアカウントは、SSO システムを構成する前に作成しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="91724-104">You must create these accounts before you configure the SSO system.</span></span>  

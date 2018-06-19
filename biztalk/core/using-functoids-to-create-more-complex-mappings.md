@@ -1,14 +1,14 @@
 ---
-title: "Functoid を使用して、複雑なマッピングを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid を使用して、複雑なマッピングを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d53e3a3-5ccd-4733-8c2f-3101e41fca61
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287162"
 ---
 # <a name="using-functoids-to-create-more-complex-mappings"></a><span data-ttu-id="c32f6-102">Functoid を使用した複雑なマッピングの作成</span><span class="sxs-lookup"><span data-stu-id="c32f6-102">Using Functoids to Create More Complex Mappings</span></span>
 

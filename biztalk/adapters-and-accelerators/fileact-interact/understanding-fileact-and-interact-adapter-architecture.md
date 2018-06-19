@@ -1,14 +1,14 @@
 ---
-title: "FileAct を理解し、アダプターのアーキテクチャの対話 |Microsoft ドキュメント"
-ms.custom: 
+title: FileAct を理解し、アダプターのアーキテクチャの対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8f97a7fe-20df-4509-bb6e-53743c3a57df
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223410"
 ---
 # <a name="understanding-fileact-and-interact-adapter-architecture"></a><span data-ttu-id="dd2ce-102">FileAct を理解し、アダプターのアーキテクチャの対話</span><span class="sxs-lookup"><span data-stu-id="dd2ce-102">Understanding FileAct and InterAct Adapter Architecture</span></span>
 <span data-ttu-id="dd2ce-103">SWIFT アダプターは、BizTalk アダプター フレームワークに基づいています。</span><span class="sxs-lookup"><span data-stu-id="dd2ce-103">The SWIFT Adapter is based on the BizTalk Adapter Framework.</span></span> <span data-ttu-id="dd2ce-104">BizTalk Server 内のアダプターの分類を使用して、SWIFT アダプター, FileAct および InterAct、意味は次の。</span><span class="sxs-lookup"><span data-stu-id="dd2ce-104">Using the classifications of adapters within BizTalk Server, the SWIFT adapters, FileAct and InterAct, represent the following:</span></span>  

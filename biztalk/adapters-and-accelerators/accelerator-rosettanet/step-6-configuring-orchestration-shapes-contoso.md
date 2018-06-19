@@ -1,17 +1,17 @@
 ---
-title: "手順 6: オーケストレーション図形 (Contoso) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: オーケストレーション図形 (Contoso) の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, configuring shapes
 - private process tutorial, configuring orchestration shapes
 ms.assetid: ce680693-cf72-4ca6-a062-019de5a9257b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009387"
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a><span data-ttu-id="4287d-102">手順 6: オーケストレーション図形 (Contoso) の構成</span><span class="sxs-lookup"><span data-stu-id="4287d-102">Step 6: Configuring Orchestration Shapes (Contoso)</span></span>
 <span data-ttu-id="4287d-103">この手順で作成した PrivateResponder オーケストレーションに追加するオーケストレーション図形を構成する[手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)です。</span><span class="sxs-lookup"><span data-stu-id="4287d-103">In this step, you configure the orchestration shapes you added to the PrivateResponder orchestration that you created in [Step 5: Modifying the Contoso Private Process Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md).</span></span> <span data-ttu-id="4287d-104">間の通信の設定が含まれます[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server と Contoso のエンタープライズ リソース プランニング (ERP) システムです。</span><span class="sxs-lookup"><span data-stu-id="4287d-104">This includes setting up the communication between [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server and the Enterprise Resource Planning (ERP) system for Contoso.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 12/01/2017
     PIP3A2RequestMessage = Helper.NormalizeHeader(Microsoft.Solutions.BTARN.Shared.SCContainer.ConvertFromContainer(ActionMessage));  
     ```  
   
-5.  <span data-ttu-id="4287d-110">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-110">Click **OK**.</span></span>  
+5.  <span data-ttu-id="4287d-110">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-110">Click **OK**.</span></span>  
   
 ### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a><span data-ttu-id="4287d-111">ConstructContoso3A2RequestMessage 変換図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="4287d-111">To configure the ConstructContoso3A2RequestMessage Transform shape</span></span>  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  <span data-ttu-id="4287d-115">プロパティ ウィンドウで、選択、**マップ名**プロパティ、省略記号ボタンをクリックして (**.**) 変換の構成 ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="4287d-115">In the Properties window, select the **Map Name** property, and then click the ellipsis button (**…**) to open the Transform Configuration dialog box.</span></span>  
   
-5.  <span data-ttu-id="4287d-116">変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス**  **\<参照されたアセンブリから選択\>**を開くには、成果物の種類の選択 ダイアログ ボックスのドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4287d-116">In the Transform Configuration dialog box, click **Existing Map**, and then in the **Fully Qualified Map Name box**, select **\<Select from Referenced Assembly\>** from the drop-down list to open the Select Artifact Type dialog box.</span></span>  
+5.  <span data-ttu-id="4287d-116">変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス**  **\<参照されたアセンブリから選択\>** を開くには、成果物の種類の選択 ダイアログ ボックスのドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4287d-116">In the Transform Configuration dialog box, click **Existing Map**, and then in the **Fully Qualified Map Name box**, select **\<Select from Referenced Assembly\>** from the drop-down list to open the Select Artifact Type dialog box.</span></span>  
   
 6.  <span data-ttu-id="4287d-117">成果物の種類の選択 ダイアログ ボックスで、選択、 **ContosoPriceAndAvailability**左側のウィンドウでアセンブリを選択**PIP3A2RequestToContosoPriceRequest**右側のウィンドウでマップをクリック**Ok**です。</span><span class="sxs-lookup"><span data-stu-id="4287d-117">In the Select Artifact Type dialog box, select the **ContosoPriceAndAvailability** assembly in the left pane, select **PIP3A2RequestToContosoPriceRequest** map in the right pane, and then click **OK**.</span></span>  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="4287d-124">**ポリシー パラメーターの指定**一覧で、クリックして**ここをクリックして新しい行を追加する**、し、 **contoso3a2responsemessage**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4287d-124">In the **Specify policy parameters** list, click **Click here to add a new row**, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
   
-4.  <span data-ttu-id="4287d-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-125">Click **OK**.</span></span>  
+4.  <span data-ttu-id="4287d-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-125">Click **OK**.</span></span>  
   
 ### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a><span data-ttu-id="4287d-126">Construct3A2ResponseMessage 変換図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="4287d-126">To configure the Construct3A2ResponseMessage Transform shape</span></span>  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="4287d-128">[プロパティ] ウィンドウで選択、**構築メッセージ**プロパティ、および選択**PIP3A2ResponseMessage**ドロップダウン リスト、キーを押しますから**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="4287d-128">In the Properties window, select the **Messages Constructed** property, and then select **PIP3A2ResponseMessage** from the drop-down list, and then press **Enter**.</span></span>  
   
-3.  <span data-ttu-id="4287d-129">選択、 **[transform_2]**図形内、 **Construct3A2ResponseMessage**図形です。</span><span class="sxs-lookup"><span data-stu-id="4287d-129">Select the **Transform_2** shape within the **Construct3A2ResponseMessage** shape.</span></span>  
+3.  <span data-ttu-id="4287d-129">選択、 **[transform_2]** 図形内、 **Construct3A2ResponseMessage**図形です。</span><span class="sxs-lookup"><span data-stu-id="4287d-129">Select the **Transform_2** shape within the **Construct3A2ResponseMessage** shape.</span></span>  
   
 4.  <span data-ttu-id="4287d-130">[プロパティ] ウィンドウでをクリックして**マップ名**、省略記号ボタンをクリックして (**.**).</span><span class="sxs-lookup"><span data-stu-id="4287d-130">In the Properties window, click **Map Name**, and then click the ellipsis button (**…**).</span></span>  
   
@@ -88,13 +89,13 @@ ms.lasthandoff: 12/01/2017
   
 8.  <span data-ttu-id="4287d-134">クリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**、し、 **PIP3A2RequestMessage**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4287d-134">Click the **Click here to add a new row** label under **Variable Name**, and then select **PIP3A2RequestMessage** from the drop-down list.</span></span>  
   
-9. <span data-ttu-id="4287d-135">をクリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**クリックし、次の行で**[contoso3a2responsemessage]**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4287d-135">Click the **Click here to add a new row** label under **Variable Name** on the next line, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
+9. <span data-ttu-id="4287d-135">をクリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**クリックし、次の行で **[contoso3a2responsemessage]** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4287d-135">Click the **Click here to add a new row** label under **Variable Name** on the next line, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
   
 10. <span data-ttu-id="4287d-136">選択**変換先**左のペインで選択**PIP3A2ResponseMessage**から、**変数名**クリックしてドロップダウン リスト**OK**.</span><span class="sxs-lookup"><span data-stu-id="4287d-136">Select **Destination** in the left pane, select **PIP3A2ResponseMessage** from the **Variable Name** drop-down list, and then click **OK**.</span></span>  
   
 11. <span data-ttu-id="4287d-137">ソリューション エクスプ ローラーで右クリックし、 **ContosoResponse3A2RequestMerge.btm**ファイルを開き、をクリックして**ファイルを開く**です。</span><span class="sxs-lookup"><span data-stu-id="4287d-137">In Solution Explorer, right-click the **ContosoResponse3A2RequestMerge.btm** file, and then click **Open With**.</span></span>  
   
-12. <span data-ttu-id="4287d-138">**開く選択-Contosoresponse3a2requestmerge.btm**ダイアログ ボックスで、 **XML エディター**クリックして、プログラムの一覧から**OK**です。</span><span class="sxs-lookup"><span data-stu-id="4287d-138">In the **Open With - ContosoResponse3A2RequestMerge.btm** dialog box, select **XML Editor** from the list of programs, and then click **OK**.</span></span> <span data-ttu-id="4287d-139">**[はい]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-139">Click **Yes**.</span></span>  
+12. <span data-ttu-id="4287d-138">**開く選択-Contosoresponse3a2requestmerge.btm**ダイアログ ボックスで、 **XML エディター**クリックして、プログラムの一覧から**OK**です。</span><span class="sxs-lookup"><span data-stu-id="4287d-138">In the **Open With - ContosoResponse3A2RequestMerge.btm** dialog box, select **XML Editor** from the list of programs, and then click **OK**.</span></span> <span data-ttu-id="4287d-139">**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-139">Click **Yes**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="4287d-140">このチュートリアルでは、このマップのために必要なリンクの数が多いため[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML Editor マップ情報を手動でコピーして、マップを構築するためにします。</span><span class="sxs-lookup"><span data-stu-id="4287d-140">Due to the large number of links required for this map, this tutorial uses [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 2008 HTML/XML Editor to construct the map by copying the map information manually.</span></span>  
@@ -151,7 +152,7 @@ ms.lasthandoff: 12/01/2017
     }]]></Script></ScripterCode></Functoid><Functoid FunctoidID="3" X-Cell="54" Y-Cell="239" Functoid-FID="107" Functoid-Name="String Concatenate" Label=""><Input-Parameters><Parameter Type="Constant" Value="Response" Guid="{FA85B113-6FB4-4932-A125-5CF751A536B5}"/></Input-Parameters></Functoid></Functoids></Page></Pages></mapsource>  
     ```  
   
-15. <span data-ttu-id="4287d-144">**[ファイル]** メニューの **[すべてを保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-144">On the **File** menu, click **Save All**.</span></span>  
+15. <span data-ttu-id="4287d-144">**[ファイル]** メニューの **[すべてを保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-144">On the **File** menu, click **Save All**.</span></span>  
   
 ### <a name="to-configure-the-expression1-shape"></a><span data-ttu-id="4287d-145">式_1 図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="4287d-145">To configure the Expression_1 shape</span></span>  
   
@@ -174,7 +175,7 @@ ms.lasthandoff: 12/01/2017
     Helper.ReturnSCWithDocType(contosoResponseXML) );  
     ```  
   
-4.  <span data-ttu-id="4287d-149">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-149">Click **OK**.</span></span>  
+4.  <span data-ttu-id="4287d-149">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4287d-149">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="4287d-150">参照</span><span class="sxs-lookup"><span data-stu-id="4287d-150">See Also</span></span>  
  [<span data-ttu-id="4287d-151">手順 7: ポートの作成と構成</span><span class="sxs-lookup"><span data-stu-id="4287d-151">Step 7: Creating and Configuring Ports</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

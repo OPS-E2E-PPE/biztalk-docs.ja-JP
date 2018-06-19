@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269722"
 ---
 # <a name="scenario-1-sizing-the-tracking-database--for-simple-biztalk-messages"></a><span data-ttu-id="9c598-102">シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ変更</span><span class="sxs-lookup"><span data-stu-id="9c598-102">Scenario 1: Sizing the Tracking Database  for Simple BizTalk Messages</span></span>
 <span data-ttu-id="9c598-103">次の図は、BizTalk Server が、メッセージを一切変換せずに単純に送受信するようすを示したものです。</span><span class="sxs-lookup"><span data-stu-id="9c598-103">In the following figure, a simple BizTalk Server message passes in and out of BizTalk Server without undergoing any message transformation.</span></span>  

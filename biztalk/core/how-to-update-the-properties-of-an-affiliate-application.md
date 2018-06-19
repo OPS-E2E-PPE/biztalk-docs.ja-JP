@@ -1,17 +1,17 @@
 ---
-title: "関連アプリケーションのプロパティを更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 関連アプリケーションのプロパティを更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], updating properties
 - applications [SSO], properties
 ms.assetid: b06eefdd-a5ca-4a32-93d7-72246e31a2e4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972648"
 ---
 # <a name="how-to-update-the-properties-of-an-affiliate-application"></a><span data-ttu-id="05b91-102">関連アプリケーションのプロパティを更新する方法</span><span class="sxs-lookup"><span data-stu-id="05b91-102">How to Update the Properties of an Affiliate Application</span></span>
 <span data-ttu-id="05b91-103">MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーション プロパティを更新できます。</span><span class="sxs-lookup"><span data-stu-id="05b91-103">You can use the MMC Snap-In or this command to update one or more application properties, as specified by the XML file.</span></span> <span data-ttu-id="05b91-104">この作業を実行するには、関連管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="05b91-104">You must be an Affiliate Administrator to perform this task.</span></span> <span data-ttu-id="05b91-105">更新できるフィールドを示す XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="05b91-105">The following is an example XML file that lists the fields you can update.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="05b91-123">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="05b91-123">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="05b91-124">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="05b91-124">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="05b91-125">型**ssomanage – updateapps\<アプリケーション ファイル名\>**ここで、アプリケーション ファイル名は、XML ファイルです。</span><span class="sxs-lookup"><span data-stu-id="05b91-125">Type **ssomanage –updateapps \<application file name\>**, where the application file name is the XML file.</span></span>  
+3.  <span data-ttu-id="05b91-125">型**ssomanage – updateapps\<アプリケーション ファイル名\>** ここで、アプリケーション ファイル名は、XML ファイルです。</span><span class="sxs-lookup"><span data-stu-id="05b91-125">Type **ssomanage –updateapps \<application file name\>**, where the application file name is the XML file.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="05b91-126">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="05b91-126">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

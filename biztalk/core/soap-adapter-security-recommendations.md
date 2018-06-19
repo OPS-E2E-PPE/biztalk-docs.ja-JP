@@ -1,17 +1,17 @@
 ---
-title: "SOAP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, security
 - security, SOAP adapters
 ms.assetid: f869bd82-df93-45e1-b747-b538820253fb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279594"
 ---
 # <a name="soap-adapter-security-recommendations"></a><span data-ttu-id="cbe1a-102">SOAP アダプタのセキュリティに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="cbe1a-102">SOAP Adapter Security Recommendations</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="cbe1a-103"> では、SOAP アダプターを使用して Web サービスを公開 (受信) および使用 (送信) できます。</span><span class="sxs-lookup"><span data-stu-id="cbe1a-103"> uses the SOAP adapter to publish (receive) and consume (send) Web services.</span></span> <span data-ttu-id="cbe1a-104">SOAP アダプターに関する詳細については、次を参照してください。 [SOAP アダプター](../core/soap-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="cbe1a-104">For more information about the SOAP adapter, see [SOAP Adapter](../core/soap-adapter.md).</span></span> <span data-ttu-id="cbe1a-105">Web サービスの詳細については、次を参照してください。 [Web サービスを使用する](../core/using-web-services.md)です。</span><span class="sxs-lookup"><span data-stu-id="cbe1a-105">For more information about Web services, see [Using Web Services](../core/using-web-services.md).</span></span> <span data-ttu-id="cbe1a-106">SOAP アダプターをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cbe1a-106">It is recommended you follow these guidelines for securing and deploying the SOAP adapter in your environment.</span></span>  

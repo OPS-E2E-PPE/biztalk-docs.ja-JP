@@ -1,18 +1,18 @@
 ---
-title: "BAM 構成スキーマの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 構成スキーマの変更 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuration schema [BAM]
 - managing [BAM], configuration schema
 - BAMConfiguration.xml file
 ms.assetid: 8901fb05-1519-4033-8489-67a9b745ed43
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263282"
 ---
 # <a name="modifying-the-bam-configuration-schema"></a><span data-ttu-id="a3580-102">BAM 構成スキーマの変更</span><span class="sxs-lookup"><span data-stu-id="a3580-102">Modifying the BAM Configuration Schema</span></span>
 <span data-ttu-id="a3580-103">この構成ファイルは、構成ウィザードで自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="a3580-103">The Configuration Wizard creates this configuration file automatically.</span></span> <span data-ttu-id="a3580-104">サーバー名または他の構成情報を変更する場合、展開の完了後に、このファイルを手動で変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a3580-104">You must modify this file manually if you change your server names or other configuration information after you complete the deployment.</span></span>  

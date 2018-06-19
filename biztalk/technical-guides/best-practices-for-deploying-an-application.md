@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションを展開するためのベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを展開するためのベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53852303-d368-4f9e-b4e2-f5918f65000b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010707"
 ---
 # <a name="best-practices-for-deploying-an-application"></a><span data-ttu-id="c23c5-102">アプリケーションを展開するためのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="c23c5-102">Best Practices for Deploying an Application</span></span>
 <span data-ttu-id="c23c5-103">このトピックでは、BizTalk アプリケーションの展開に従う必要のあるベスト プラクティスを示します。</span><span class="sxs-lookup"><span data-stu-id="c23c5-103">This topic lists best practices that you should follow in deploying BizTalk applications.</span></span>  

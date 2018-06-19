@@ -1,11 +1,11 @@
 ---
-title: "Windows ビジネス ルール作成ツール |Microsoft ドキュメント"
-ms.custom: 
+title: Windows ビジネス ルール作成ツール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rule Composer
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, Business Rule Composer
 - Business Rule Composer, about Business Rule Composer
 ms.assetid: 7e763b2a-6c34-46bd-a7b9-fa4c9c7f96af
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289946"
 ---
 # <a name="windows-of-the-business-rule-composer"></a><span data-ttu-id="a6135-102">ビジネス ルール作成ツールの Windows</span><span class="sxs-lookup"><span data-stu-id="a6135-102">Windows of the Business Rule Composer</span></span>
 <span data-ttu-id="a6135-103">ビジネス ルール作成ツールは、作成、バージョン管理、および展開するポリシーとボキャブラリを使用するグラフィカル ツールです。</span><span class="sxs-lookup"><span data-stu-id="a6135-103">The Business Rule Composer is a graphical tool used for authoring, versioning, and deploying policies and vocabularies.</span></span> <span data-ttu-id="a6135-104">このセクションでは、ビジネス ルール作成ツールのさまざまなウィンドウについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a6135-104">This section provides information about different windows of the Business Rule Composer.</span></span>  

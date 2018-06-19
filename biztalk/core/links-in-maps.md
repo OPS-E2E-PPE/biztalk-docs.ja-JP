@@ -1,11 +1,11 @@
 ---
-title: "マップ内のリンク |Microsoft ドキュメント"
-ms.custom: 
+title: マップ内のリンク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoid types, Looping
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - maps, links
 - BizTalk Mapper, links
 ms.assetid: 3db77b8d-7b86-4c00-99a0-0513aff9b56b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262090"
 ---
 # <a name="links-in-maps"></a><span data-ttu-id="e5c07-102">マップのリンク</span><span class="sxs-lookup"><span data-stu-id="e5c07-102">Links in Maps</span></span>
 <span data-ttu-id="e5c07-103">リンクを使用して、入力インスタンス メッセージの要素や属性のデータを、出力インスタンスの要素や属性にコピーするときの基本的な機能を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5c07-103">Links specify the basic function of copying data from an element or attribute in an input instance message to an element or attribute in an output instance.</span></span> <span data-ttu-id="e5c07-104">送信元スキーマと送信先スキーマのレコード間およびフィールド間のリンクをデザイン時に作成しておくと、</span><span class="sxs-lookup"><span data-stu-id="e5c07-104">You create links between records and fields in the source and destination schemas at design time.</span></span> <span data-ttu-id="e5c07-105">実行時には、送信元スキーマに準拠した入力インスタンス メッセージから、送信先スキーマに準拠した出力インスタンス メッセージが作成されます。</span><span class="sxs-lookup"><span data-stu-id="e5c07-105">This drives the creation, at run time, of an output instance message conforming to the destination schema from an input instance message conforming to the source schema.</span></span>  

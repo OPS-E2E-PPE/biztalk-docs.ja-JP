@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Accelerator for SWIFT のドキュメント |Microsoft ドキュメント"
-description: "リンクをインストール、構成、展開、開始、セキュリティで保護された、開発、および BizTalk Server に SWIFT アクセラレータのトラブルシューティング"
-ms.custom: 
+title: BizTalk Accelerator for SWIFT のドキュメント |Microsoft ドキュメント
+description: リンクをインストール、構成、展開、開始、セキュリティで保護された、開発、および BizTalk Server に SWIFT アクセラレータのトラブルシューティング
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a742cd84-a159-461b-a410-6e75a45e7d8b
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006483"
 ---
 # <a name="microsoft-biztalk-accelerator-for-swift-documentation"></a><span data-ttu-id="4ea53-103">BizTalk Accelerator for SWIFT のドキュメント</span><span class="sxs-lookup"><span data-stu-id="4ea53-103">Microsoft BizTalk Accelerator for SWIFT documentation</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="4ea53-104">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]にアドインが[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server では、標準ベースのツールを開いて、Society のワールドワイド銀行間財務通信 (SWIFT) メッセージ形式のサポートを実装する BizTalk Server のランタイムの機能を利用して、.</span><span class="sxs-lookup"><span data-stu-id="4ea53-104"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] is an add-in to [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Server, and leverages the open standards-based tools and run-time facilities of BizTalk Server to implement support for Society for Worldwide Interbank Financial Telecommunication (SWIFT) message formats.</span></span>  

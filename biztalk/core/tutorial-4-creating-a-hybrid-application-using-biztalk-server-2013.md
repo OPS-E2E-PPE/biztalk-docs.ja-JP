@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル 4: BizTalk Server 2013 を使用するハイブリッド アプリケーションを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 4: BizTalk Server 2013 を使用するハイブリッド アプリケーションを作成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3a9de95f-7d2c-437d-be5b-0062592f32c6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287346"
 ---
 # <a name="tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013"></a><span data-ttu-id="09316-102">チュートリアル 4: BizTalk Server 2013 を使用するハイブリッド アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="09316-102">Tutorial 4: Creating a Hybrid Application Using BizTalk Server 2013</span></span>
 <span data-ttu-id="09316-103">ここでは、[!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が関連するハイブリッド アプリケーションを作成する方法の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="09316-103">This section provides a step-by-step walkthrough on how to create a hybrid application involving [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "データベースをクラスター |Microsoft ドキュメント"
-ms.custom: 
+title: データベースをクラスター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1b68bc3f-c0c4-4050-8ca3-df6dd1927637
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009475"
 ---
 # <a name="clustering-the-biztalk-server-databases"></a><span data-ttu-id="853cc-102">BizTalk Server データベースのクラスター化</span><span class="sxs-lookup"><span data-stu-id="853cc-102">Clustering the BizTalk Server Databases</span></span>
 <span data-ttu-id="853cc-103">BizTalk Server データベースに障害が発生すると、BizTalk Server 環境は正常に機能することができなくなります。</span><span class="sxs-lookup"><span data-stu-id="853cc-103">If the BizTalk Server databases become unavailable, the BizTalk Server environment will not function correctly.</span></span> <span data-ttu-id="853cc-104">次の図に示すように、BizTalk Server データベースに対して、Microsoft SQL Server クラスターを作成することによって高可用性を確保できます。</span><span class="sxs-lookup"><span data-stu-id="853cc-104">To provide high availability, you can create a Microsoft SQL Server cluster for the BizTalk Server databases, as shown in the following figure.</span></span>  

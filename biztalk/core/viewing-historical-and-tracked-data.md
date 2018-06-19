@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287690"
 ---
 # <a name="viewing-historical-and-tracked-data"></a><span data-ttu-id="7c8d1-102">履歴および追跡データの表示</span><span class="sxs-lookup"><span data-stu-id="7c8d1-102">Viewing Historical and Tracked Data</span></span>
 <span data-ttu-id="7c8d1-103">ここでは、BizTalk Server 管理コンソールの [グループ ハブ] ページでの履歴データおよび追跡データの表示方法に関するタスク固有の情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="7c8d1-103">This section provides task-specific information about using how to view historical and tracked data from the Group Hub page in the BizTalk Server Administration Console.</span></span>  

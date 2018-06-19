@@ -1,17 +1,17 @@
 ---
-title: "動的なデータ検証を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 動的なデータ検証を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - dynamic data validation
 - validating, dynamic data
 ms.assetid: 8dac7f74-92a7-447c-97bf-b1f3ce39b614
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009043"
 ---
 # <a name="using-dynamic-data-validation"></a><span data-ttu-id="b4035-102">動的なデータ検証を使用します。</span><span class="sxs-lookup"><span data-stu-id="b4035-102">Using Dynamic Data Validation</span></span>
 <span data-ttu-id="b4035-103">動的データの検証の重要な部分は、メッセージの内容をメッセージの形式とメッセージの内容の検証を含む動的データに対して検証しています。</span><span class="sxs-lookup"><span data-stu-id="b4035-103">An important part of dynamic data validation is validating message content against dynamic data, which includes validating the message format and the message content.</span></span> <span data-ttu-id="b4035-104">ドキュメント スキーマを[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server は、XSD ファイルで実装して、定義して、メッセージの形式を検証します。</span><span class="sxs-lookup"><span data-stu-id="b4035-104">A document schema, which [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server implements in an XSD file, defines and validates message formats.</span></span> <span data-ttu-id="b4035-105">ビジネス ルールは、メッセージの内容を定義する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ビジネス ルール エンジン ポリシーを介してを検証します。</span><span class="sxs-lookup"><span data-stu-id="b4035-105">Business rules define message content, which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] validates through Business Rule Engine policies.</span></span> <span data-ttu-id="b4035-106">コンテンツの検証には、メッセージ インスタンス内のデータが、相対的な頻度で変化するデータと一致することの確認を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="b4035-106">Content validation can include confirmation that data in the message instance matches data that may change with relative frequency.</span></span> [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="b4035-107">[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]コードを再コンパイルやサービスをシャット ダウンすることがなく、運用環境でこのデータを更新できるように、動的な方法でこの種類の検証を実装します。</span><span class="sxs-lookup"><span data-stu-id="b4035-107">[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] implements this type of validation in a dynamic manner, so that you can update this data in a production environment, without having to recompile code or shut down services.</span></span>  

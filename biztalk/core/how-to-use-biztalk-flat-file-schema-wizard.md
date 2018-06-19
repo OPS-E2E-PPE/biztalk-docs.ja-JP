@@ -1,14 +1,14 @@
 ---
-title: "BizTalk フラット ファイル スキーマ ウィザードを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk フラット ファイル スキーマ ウィザードを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7cb8b18-266d-422e-bdb8-1efefb6b4c8e
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258298"
 ---
 # <a name="how-to-use-biztalk-flat-file-schema-wizard"></a><span data-ttu-id="571a7-102">BizTalk フラット ファイル スキーマ ウィザードの使用方法</span><span class="sxs-lookup"><span data-stu-id="571a7-102">How to Use BizTalk Flat File Schema Wizard</span></span>
 <span data-ttu-id="571a7-103">BizTalk Server の以前のリリースでは、XSD (XML スキーマ定義) 言語のスキーマをフラット ファイル パイプライン コンポーネント (フラット ファイル アセンブラーやフラット ファイル逆アセンブラーなど) に認識させるには、BizTalk スキーマ エディターでスキーマに注釈を手動で追加する必要がありました。</span><span class="sxs-lookup"><span data-stu-id="571a7-103">In previous releases of BizTalk Server, you had to manually add the annotations to XML Schema Definition language (XSD) schemas in the BizTalk Schema Editor to make these schemas understandable to Flat File Pipeline components, such as Flat File Disassembler and Flat File Assembler.</span></span> <span data-ttu-id="571a7-104">同様の操作は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のスキーマ エディターでも行うことができますが、</span><span class="sxs-lookup"><span data-stu-id="571a7-104">You can still do this using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Schema Editor.</span></span> <span data-ttu-id="571a7-105">ソリューションの作成で手動による操作と時間を減らすために、BizTalk フラット ファイル スキーマ ウィザードを使用することをお勧めします。このウィザードは、次の機能を備えています。</span><span class="sxs-lookup"><span data-stu-id="571a7-105">To reduce the number of manual steps and time needed to create solutions, you use the BizTalk Flat File Schema Wizard, which provides the following functionalities:</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="571a7-123">**名前**テキスト ボックスで、新しいスキーマの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="571a7-123">In the **Name** text box, type a name for the new schema.</span></span>  
   
-    4.  <span data-ttu-id="571a7-124">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="571a7-124">Click **Add**.</span></span>  
+    4.  <span data-ttu-id="571a7-124">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="571a7-124">Click **Add**.</span></span>  
   
          <span data-ttu-id="571a7-125">BizTalk フラット ファイル スキーマ ウィザードが開きます。</span><span class="sxs-lookup"><span data-stu-id="571a7-125">The BizTalk Flat File Schema Wizard opens.</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="571a7-133">**名前**テキスト ボックスで、新しいスキーマの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="571a7-133">In the **Name** text box, type a name for the new schema.</span></span>  
   
-    4.  <span data-ttu-id="571a7-134">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="571a7-134">Click **Add**.</span></span>  
+    4.  <span data-ttu-id="571a7-134">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="571a7-134">Click **Add**.</span></span>  
   
     5.  <span data-ttu-id="571a7-135">右クリック**ルート**選択**フラット ファイル インスタンスからレコードを定義**です。</span><span class="sxs-lookup"><span data-stu-id="571a7-135">Right-click **Root** and select **Define Record from Flat File Instance**.</span></span>  
   
@@ -210,7 +211,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  <span data-ttu-id="571a7-226">前に感嘆符が表示されます、**子ノード**次のインスタンスで。</span><span class="sxs-lookup"><span data-stu-id="571a7-226">You will see an exclamation mark in front of the **child nodes** in the following instances:</span></span>  
   
--   <span data-ttu-id="571a7-227">**フィールド属性**後に定義されて**フィールド要素**、**レコード、**または**繰り返しレコード**です。</span><span class="sxs-lookup"><span data-stu-id="571a7-227">The **Field attribute** is defined after **Field element**, **Record,** or **Repeating record**.</span></span>  
+-   <span data-ttu-id="571a7-227">**フィールド属性**後に定義されて**フィールド要素**、**レコード、** または**繰り返しレコード**です。</span><span class="sxs-lookup"><span data-stu-id="571a7-227">The **Field attribute** is defined after **Field element**, **Record,** or **Repeating record**.</span></span>  
   
 -   <span data-ttu-id="571a7-228">子要素に名前がない。</span><span class="sxs-lookup"><span data-stu-id="571a7-228">The child element does not have a name.</span></span>  
   

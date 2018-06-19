@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Expression Editor
 - Expression Editor, Orchestration Designer
 ms.assetid: 1e0353d3-c2f3-4c10-86e3-8620e62dd0d5
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22268386"
 ---
 # <a name="requirements-and-limitations-for-expressions"></a><span data-ttu-id="07c42-102">式の要件と制限事項</span><span class="sxs-lookup"><span data-stu-id="07c42-102">Requirements and Limitations for Expressions</span></span>
 <span data-ttu-id="07c42-103">オーケストレーション デザイナーの BizTalk 式エディターは、IntelliSense を備えた標準の Visual Studio テキスト エディターです。</span><span class="sxs-lookup"><span data-stu-id="07c42-103">BizTalk Expression Editor in Orchestration Designer is a standard Visual Studio text editor, which means it offers IntelliSense.</span></span> <span data-ttu-id="07c42-104">BizTalk 式エディターは、テキスト形式で式を入力するために使用します。</span><span class="sxs-lookup"><span data-stu-id="07c42-104">You use BizTalk Expression Editor to enter an expression in textual form.</span></span>  

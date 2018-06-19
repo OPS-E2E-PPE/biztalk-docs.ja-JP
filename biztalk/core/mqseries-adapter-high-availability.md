@@ -1,11 +1,11 @@
 ---
-title: "MQSeries アダプターの高可用性 |Microsoft ドキュメント"
-ms.custom: 
+title: MQSeries アダプターの高可用性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, MQSeries adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MQSeries adapters, performance
 - high availability, MQSeries adapters
 ms.assetid: 4339b10b-b35d-47c0-b78a-c60207e06c8e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263234"
 ---
 # <a name="mqseries-adapter-high-availability"></a><span data-ttu-id="b7774-102">MQSeries アダプターの高可用性</span><span class="sxs-lookup"><span data-stu-id="b7774-102">MQSeries Adapter High Availability</span></span>
 <span data-ttu-id="b7774-103">MQSeries アダプターを使用する場合、次に示すいくつかの方法で可用性を向上させることができます。</span><span class="sxs-lookup"><span data-stu-id="b7774-103">You can improve availability in the following ways when you use the adapter:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server ツールのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server ツールのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 038a5f5c-d6eb-42db-88d6-70f3deba7a8a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279770"
 ---
 # <a name="troubleshooting-biztalk-server-tools"></a><span data-ttu-id="553bb-102">BizTalk Server ツールのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="553bb-102">Troubleshooting BizTalk Server Tools</span></span>
 <span data-ttu-id="553bb-103">このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属するツールの使用時に発生する一般的な問題に関する情報をまとめて提供します。</span><span class="sxs-lookup"><span data-stu-id="553bb-103">This topic provides a centralized location for information about common problems encountered while using the tools included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

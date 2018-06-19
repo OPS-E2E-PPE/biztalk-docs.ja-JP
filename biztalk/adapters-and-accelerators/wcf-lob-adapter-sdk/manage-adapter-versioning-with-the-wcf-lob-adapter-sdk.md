@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK と、アダプター バージョンの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK と、アダプター バージョンの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb596fdd-251c-4978-9f33-cf2883d281d8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225834"
 ---
 # <a name="manage-adapter-versioning-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="8dced-102">WCF LOB Adapter SDK と、アダプター バージョンを管理します。</span><span class="sxs-lookup"><span data-stu-id="8dced-102">Manage adapter versioning with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="8dced-103">アダプターとその有効期間中に、可能性のある数回の初期デプロイ後アダプター (およびが公開するエンドポイント) は、さまざまな理由を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8dced-103">After initial deployment of adapters and potentially several times during their lifetime, adapters (and the endpoints they expose) may need to be changed for a variety of reasons.</span></span> <span data-ttu-id="8dced-104">これらの理由には、ビジネス ニーズ、情報テクノロジの要件、または基幹業務システムまたはアダプター自体に関する問題の変更が含まれます。</span><span class="sxs-lookup"><span data-stu-id="8dced-104">These reasons include changing business needs, information technology requirements, or issues with the line of business system or the adapter itself.</span></span> <span data-ttu-id="8dced-105">使用して記述されているアダプターのバージョン管理を処理するためのさまざまな方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="8dced-105">This topic discusses different strategies for handling versioning for adapters that are written using the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)].</span></span>  

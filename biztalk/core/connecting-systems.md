@@ -1,14 +1,14 @@
 ---
-title: "システム接続 |Microsoft ドキュメント"
-ms.custom: 
+title: システム接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c4895e5-7272-415f-a0de-905256fa0a43
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008651"
 ---
 # <a name="connecting-systems"></a><span data-ttu-id="02d9e-102">システムの接続</span><span class="sxs-lookup"><span data-stu-id="02d9e-102">Connecting Systems</span></span>
 <span data-ttu-id="02d9e-103">異なるコンピュータ上の異なるソフトウェアの間で効率的にメッセージを交換することは、統合に必要な絶対条件です。</span><span class="sxs-lookup"><span data-stu-id="02d9e-103">The effective exchange of messages across different software on different machines is an absolute requirement for integration.</span></span> <span data-ttu-id="02d9e-104">存在する通信スタイルの多様性を指定するには、BizTalk Server は、さまざまなプロトコルとメッセージ形式をサポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="02d9e-104">Given the diversity of communication styles that exist, BizTalk Server must support a variety of protocols and message formats.</span></span> <span data-ttu-id="02d9e-105">次に説明するように、この通信の実現にはエンジンのかなりの部分が充てられていますが、</span><span class="sxs-lookup"><span data-stu-id="02d9e-105">As described next, a significant portion of the engine is devoted to making this communication work.</span></span> <span data-ttu-id="02d9e-106">エンジンが機能するには、内部で XML ドキュメントを使用する必要があるということも重要なポイントです。</span><span class="sxs-lookup"><span data-stu-id="02d9e-106">One important fact to keep in mind, however, is that the engine works only with XML documents internally.</span></span> <span data-ttu-id="02d9e-107">メッセージはどのような形式で届いた場合も、受信後に XML ドキュメントに変換される必要があります。</span><span class="sxs-lookup"><span data-stu-id="02d9e-107">Whatever format a message arrives in, it must be converted to an XML document after it is received.</span></span> <span data-ttu-id="02d9e-108">同様に、受信者がドキュメントを XML 形式で受信できない場合、ドキュメントはエンジンによって受信先に必要な形式に変換されます。</span><span class="sxs-lookup"><span data-stu-id="02d9e-108">Similarly, if the recipient of a document can’t accept that document as XML, the engine converts it into the format expected by the target.</span></span>  

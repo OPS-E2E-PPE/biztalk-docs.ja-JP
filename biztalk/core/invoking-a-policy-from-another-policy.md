@@ -1,14 +1,14 @@
 ---
-title: "ポリシー別のポリシーからを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシー別のポリシーからを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5bf658a-02a1-426a-abe5-8c9de673cf0d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973560"
 ---
 # <a name="invoking-a-policy-from-another-policy"></a><span data-ttu-id="65a0e-102">別のポリシーからのポリシーの呼び出し</span><span class="sxs-lookup"><span data-stu-id="65a0e-102">Invoking a Policy from Another Policy</span></span>
 <span data-ttu-id="65a0e-103">次のいずれかのメソッドを使用すると、ポリシー (子) を別のポリシー (親) から呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="65a0e-103">You can invoke a policy (child) from another policy (parent) by using one of the following methods:</span></span>  
@@ -37,13 +38,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="65a0e-114">[ファクト エクスプ ローラー] ウィンドウ、 **.NET クラス**タブです。</span><span class="sxs-lookup"><span data-stu-id="65a0e-114">In the Facts Explorer window, click the **.NET Classes** tab.</span></span>  
   
-2.  <span data-ttu-id="65a0e-115">右クリック**.NET アセンブリ**、クリックして**参照**です。</span><span class="sxs-lookup"><span data-stu-id="65a0e-115">Right-click **.NET Assemblies**, and then click **Browse**.</span></span>  
+2.  <span data-ttu-id="65a0e-115">右クリック **.NET アセンブリ**、クリックして**参照**です。</span><span class="sxs-lookup"><span data-stu-id="65a0e-115">Right-click **.NET Assemblies**, and then click **Browse**.</span></span>  
   
 3.  <span data-ttu-id="65a0e-116">選択**Microsoft.RuleEngine**から、 **.NET アセンブリ**一覧をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="65a0e-116">Select **Microsoft.RuleEngine** from the **.NET Assemblies** list, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="65a0e-117">展開**ポリシー**です。</span><span class="sxs-lookup"><span data-stu-id="65a0e-117">Expand **Policy**.</span></span>  
   
-5.  <span data-ttu-id="65a0e-118">ドラッグ**Execute (Object facts)**または**Execute (Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** [THEN] ペインにします。</span><span class="sxs-lookup"><span data-stu-id="65a0e-118">Drag **Execute(Object facts)** or **Execute(Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** to the THEN pane.</span></span>  
+5.  <span data-ttu-id="65a0e-118">ドラッグ**Execute (Object facts)** または**Execute (Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** [THEN] ペインにします。</span><span class="sxs-lookup"><span data-stu-id="65a0e-118">Drag **Execute(Object facts)** or **Execute(Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** to the THEN pane.</span></span>  
   
 6.  <span data-ttu-id="65a0e-119">クリックして、 **XML スキーマ**ノード。</span><span class="sxs-lookup"><span data-stu-id="65a0e-119">Click the **XML Schemas** node.</span></span>  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="65a0e-123">スキーマをファクトとして渡すし、をクリックする、XML ドキュメントを選択**開く**です。</span><span class="sxs-lookup"><span data-stu-id="65a0e-123">Select the schema for the XML document you want to pass as a fact, and then click **Open**.</span></span>  
   
-9. <span data-ttu-id="65a0e-124">ドラッグ*\<スキーマ名\>*の最初の引数は、.xsd、 **Policy.Execute**子ポリシーにファクトとして親ポリシーに渡される XML ドキュメントを渡す方法です。</span><span class="sxs-lookup"><span data-stu-id="65a0e-124">Drag *\<Schema name\>*.xsd to the first argument of the **Policy.Execute** method to pass the XML document that is passed to the parent policy as a fact to the child policy.</span></span>  
+9. <span data-ttu-id="65a0e-124">ドラッグ*\<スキーマ名\>* の最初の引数は、.xsd、 **Policy.Execute**子ポリシーにファクトとして親ポリシーに渡される XML ドキュメントを渡す方法です。</span><span class="sxs-lookup"><span data-stu-id="65a0e-124">Drag *\<Schema name\>*.xsd to the first argument of the **Policy.Execute** method to pass the XML document that is passed to the parent policy as a fact to the child policy.</span></span>  
   
 10. <span data-ttu-id="65a0e-125">使用する場合、 **Execute**を受け取らないメソッド、 **IRuleSetTrackingInterceptor** 2 番目の引数として、次の手順をスキップします。</span><span class="sxs-lookup"><span data-stu-id="65a0e-125">If you use the **Execute** method that does not take the **IRuleSetTrackingInterceptor** as the second argument, skip the following steps.</span></span>  
   

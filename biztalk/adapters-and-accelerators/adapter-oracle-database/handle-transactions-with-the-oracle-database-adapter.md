@@ -1,14 +1,14 @@
 ---
-title: "Oracle データベース アダプターでトランザクションの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターでトランザクションの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 971c2fba-640c-4ae5-9ab3-2d8227c1627d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005707"
 ---
 # <a name="handle-transactions-with-the-oracle-database-adapter"></a><span data-ttu-id="144a6-102">Oracle データベース アダプターでトランザクションを処理します。</span><span class="sxs-lookup"><span data-stu-id="144a6-102">Handle Transactions with the Oracle Database adapter</span></span>
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]<span data-ttu-id="144a6-103">Oracle データベースで操作を実行中のトランザクションを開始しません。</span><span class="sxs-lookup"><span data-stu-id="144a6-103"> does not initiate a transaction while performing an operation on the Oracle database.</span></span> <span data-ttu-id="144a6-104">代わりに、アダプターは、アダプターのクライアントによって提供されるトランザクション コンテキストを使用して操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="144a6-104">Instead, the adapter performs the operations using the transaction context provided by the adapter clients.</span></span> <span data-ttu-id="144a6-105">使用してトランザクションで操作を実行するために、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、する必要があります。</span><span class="sxs-lookup"><span data-stu-id="144a6-105">In order to perform operations in a transaction using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], you must:</span></span>  

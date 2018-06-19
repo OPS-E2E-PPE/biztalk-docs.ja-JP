@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279466"
 ---
 # <a name="tpe-activity-view-nodes"></a><span data-ttu-id="e1200-102">TPE アクティビティ ビューのノード</span><span class="sxs-lookup"><span data-stu-id="e1200-102">TPE Activity View Nodes</span></span>
 <span data-ttu-id="e1200-103">このセクションのトピックでは、追跡プロファイル エディターで、内部ビジネス プロセスの特定のビューと関連データをオーケストレーションにマップするために使用されるツリー ノードの種類について説明します。</span><span class="sxs-lookup"><span data-stu-id="e1200-103">The topics in this section describe the types of tree nodes used by Tracking Profile Editor to map a specific view of an internal business processes, as well as associated data, to an orchestration.</span></span>  

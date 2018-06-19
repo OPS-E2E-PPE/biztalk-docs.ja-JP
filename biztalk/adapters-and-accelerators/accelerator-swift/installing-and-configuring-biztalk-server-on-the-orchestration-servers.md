@@ -1,17 +1,17 @@
 ---
-title: "インストールして、オーケストレーション サーバー上の BizTalk Server の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: インストールして、オーケストレーション サーバー上の BizTalk Server の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, installing on orchestration server
 - orchestration server, installing BizTalk Server
 ms.assetid: 72376a80-1377-4058-9478-fee668b804d0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004211"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-orchestration-servers"></a><span data-ttu-id="4cd47-102">インストールして、オーケストレーション サーバーに BizTalk Server を構成します。</span><span class="sxs-lookup"><span data-stu-id="4cd47-102">Installing and Configuring BizTalk Server on the Orchestration Servers</span></span>
 <span data-ttu-id="4cd47-103">このセクションでは、インストールを修復または新規のメッセージの発信オーケストレーションおよび FIN 修復と調整のオーケストレーションを実行するため、オーケストレーション サーバーとして使用する BizTalk Server を構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4cd47-103">This section describes how to install and configure BizTalk Server to be used as the orchestration server for running the Message Repair/New Submission orchestration and the FIN Repair and Reconciliation orchestration.</span></span>  

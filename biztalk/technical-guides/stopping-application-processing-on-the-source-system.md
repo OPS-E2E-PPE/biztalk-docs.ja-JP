@@ -1,14 +1,14 @@
 ---
-title: "ソース システムで処理するアプリケーションを停止しています |Microsoft ドキュメント"
-ms.custom: 
+title: ソース システムで処理するアプリケーションを停止しています |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cde5fc62-4bc2-4ef0-81bc-c7d39ff36cb6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302354"
 ---
 # <a name="stopping-application-processing-on-the-source-system"></a><span data-ttu-id="12c99-102">ソース システムで処理するアプリケーションを停止しています</span><span class="sxs-lookup"><span data-stu-id="12c99-102">Stopping Application Processing on the Source System</span></span>
 <span data-ttu-id="12c99-103">ときにアプリケーションの処理を停止するか、ソース[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム サーバーの既存のデータベース サーバーを使用してドキュメントの処理に参加することはできます。</span><span class="sxs-lookup"><span data-stu-id="12c99-103">Application processing should be stopped when the source [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime servers are still able to participate in document processing using the existing database servers.</span></span> <span data-ttu-id="12c99-104">このシナリオでアクティビティを処理する必要があります停止整合性の復元操作を完了できるようにします。</span><span class="sxs-lookup"><span data-stu-id="12c99-104">In this scenario, processing activity must be stopped so that a consistent restore operation can be completed.</span></span>  

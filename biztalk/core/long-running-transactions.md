@@ -1,11 +1,11 @@
 ---
-title: "実行時間の長いトランザクション |Microsoft ドキュメント"
-ms.custom: 
+title: 実行時間の長いトランザクション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - long-running transactions, about long-running transactions
@@ -31,7 +31,7 @@ helpviewer_keywords:
 - transactions, nesting
 - examples, scopes
 ms.assetid: 4bf4d0c8-903a-411f-963b-bd4cfdfc2958
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -40,6 +40,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262778"
 ---
 # <a name="long-running-transactions"></a><span data-ttu-id="5da16-102">長時間トランザクション</span><span class="sxs-lookup"><span data-stu-id="5da16-102">Long-Running Transactions</span></span>
 <span data-ttu-id="5da16-103">長時間トランザクションは、BizTalk オーケストレーションでよく使用される重要なコンストラクターです。</span><span class="sxs-lookup"><span data-stu-id="5da16-103">Long-running transactions are important, commonly used constructs in BizTalk orchestrations.</span></span> <span data-ttu-id="5da16-104">スコープ ベースのカスタム補正、スコープ ベースのカスタム例外処理、およびトランザクションの入れ子に対応した機能があり、各機能を活用することで、堅牢なトランザクション アーキテクチャをきわめて柔軟に設計することができます。</span><span class="sxs-lookup"><span data-stu-id="5da16-104">They provide you with facilities for custom scope-based compensation, custom scope-based exception handling, and the ability to nest transactions, all of which give you great flexibility in designing robust transaction architecture.</span></span>  

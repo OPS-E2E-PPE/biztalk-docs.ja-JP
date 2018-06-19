@@ -1,14 +1,14 @@
 ---
-title: "テスト用のマップ ファイル プロパティを使用する |Microsoft ドキュメント"
-ms.custom: 
+title: テスト用のマップ ファイル プロパティを使用する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47798d09-b31e-4131-b75c-f4c51fd1d464
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287082"
 ---
 # <a name="using-map-file-properties-for-testing"></a><span data-ttu-id="59a8e-102">テストに必要なマップ ファイルのプロパティの使用</span><span class="sxs-lookup"><span data-stu-id="59a8e-102">Using Map File Properties for Testing</span></span>
 

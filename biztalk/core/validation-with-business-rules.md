@@ -1,11 +1,11 @@
 ---
-title: "ビジネス ルールによる検証 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルールによる検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, process management solutions
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, validating
 - process management solution tutorial, business rules
 ms.assetid: a67f3781-629a-4157-9a27-3b73d7a5a3a8
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287778"
 ---
 # <a name="validation-with-business-rules"></a><span data-ttu-id="5db29-102">ビジネス ルールによる検証</span><span class="sxs-lookup"><span data-stu-id="5db29-102">Validation with Business Rules</span></span>
 <span data-ttu-id="5db29-103">通常、検証を行うには、ビジネス ルール フレームワークを使用してビジネス ルールのセットを作成し、</span><span class="sxs-lookup"><span data-stu-id="5db29-103">A common way to do validation is to construct a set of business rules using the Business Rules Framework.</span></span> <span data-ttu-id="5db29-104">検証を行うオーケストレーションでルールの呼び出し図形を使用します。</span><span class="sxs-lookup"><span data-stu-id="5db29-104">Then you use the Call Rules shape in the orchestration where you want to perform validation.</span></span>  

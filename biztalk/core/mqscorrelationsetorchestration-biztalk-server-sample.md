@@ -1,11 +1,11 @@
 ---
-title: "MQSCorrelationSetOrchestration (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: MQSCorrelationSetOrchestration (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, examples
 - MQSeries adapters, examples
 ms.assetid: fcda65d0-e3ec-4ead-978d-3904903b8762
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974984"
 ---
 # <a name="mqscorrelationsetorchestration-biztalk-server-sample"></a><span data-ttu-id="6e4c6-102">MQSCorrelationSetOrchestration (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="6e4c6-102">MQSCorrelationSetOrchestration (BizTalk Server Sample)</span></span>
 <span data-ttu-id="6e4c6-103">MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレーションに MQSeries キューをルーティングして戻すために送信されるメッセージを関連付けるための MQSeries 関連付け識別子を使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-103">The MQSCorrelationSetOrchestration sample demonstrates how to use the MQSeries correlation identifier for correlating messages sent to an MQSeries queue back to a running orchestration.</span></span> <span data-ttu-id="6e4c6-104">オーケストレーションが、識別子の値を使用して MQSeries 関連付け識別子とメッセージを設定、 **MQMD_CorrelId**と**MQMD_MsgID**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-104">The orchestration sets the MQSeries correlation identifier and message identifier values using the **MQMD_CorrelId** and **MQMD_MsgID** properties.</span></span> <span data-ttu-id="6e4c6-105">MQSeries キュー マネージャーは、MessageID の値をメッセージの CorrelationID プロパティにコピーします。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-105">The MQSeries Queue Manager copies the MessageID value to the CorrelationID property of the message.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="6e4c6-114">このサンプルは、オーケストレーションで処理中のドキュメントを MQSeries キューに送信可能であり (多くの場合、追加の処理を行うため)、実行中のオーケストレーションにルーティングして戻されるというシナリオを示します。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-114">This sample illustrates a scenario in which a document that is being processed by an orchestration can be sent to an MQSeries queue (presumably for additional processing) and returned back to the running orchestration.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="6e4c6-115">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="6e4c6-115">Where to Find This Sample</span></span>  
- <span data-ttu-id="6e4c6-116">*\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span><span class="sxs-lookup"><span data-stu-id="6e4c6-116">*\<Samples Path\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span></span>  
+ <span data-ttu-id="6e4c6-116">*\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span><span class="sxs-lookup"><span data-stu-id="6e4c6-116">*\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span></span>  
   
  <span data-ttu-id="6e4c6-117">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-117">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="6e4c6-132">をクリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-132">Click **Start**, point to **Programs**, point to **IBM WebSphere MQ**, and then click **WebSphere MQ Explorer**.</span></span>  
   
-2.  <span data-ttu-id="6e4c6-133">ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-133">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="6e4c6-134">既定のキュー マネージャーの名前は通常**qm _ < コンピューター名 >**場所*machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-134">The default queue manager is typically named **QM_<machine_name>** where *machine_name* is the name of your computer.</span></span>  
+2.  <span data-ttu-id="6e4c6-133">ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-133">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="6e4c6-134">既定のキュー マネージャーの名前は通常**qm _ < コンピューター名 >** 場所*machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-134">The default queue manager is typically named **QM_<machine_name>** where *machine_name* is the name of your computer.</span></span>  
   
 3.  <span data-ttu-id="6e4c6-135">右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-135">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
   
 15. <span data-ttu-id="6e4c6-152">**キュー**ボックスで「mqcorrelation」をクリック**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-152">In the **Queue** box, type "MQCorrelation", and then click **Export**.</span></span>  
   
-16. <span data-ttu-id="6e4c6-153">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-153">In the **Export** dialog box, click **Create Queue**, and then click**OK**or **Done** until you have exited all dialog boxes.</span></span>  
+16. <span data-ttu-id="6e4c6-153">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="6e4c6-153">In the **Export** dialog box, click **Create Queue**, and then click**OK**or **Done** until you have exited all dialog boxes.</span></span>  
   
 ### <a name="to-create-the-send-port-to-mqseries"></a><span data-ttu-id="6e4c6-154">MQSeries に対する送信ポートを作成するには</span><span class="sxs-lookup"><span data-stu-id="6e4c6-154">To create the send port to MQSeries</span></span>  
   

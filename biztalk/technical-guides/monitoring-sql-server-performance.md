@@ -1,15 +1,15 @@
 ---
-title: "SQL Server のパフォーマンスの監視 |Microsoft ドキュメント"
-description: "パフォーマンス ツール、アクティビティの監視、およびデータ コレクションを使用して BizTalk Server データベースを監視します。"
-ms.custom: 
+title: SQL Server のパフォーマンスの監視 |Microsoft ドキュメント
+description: パフォーマンス ツール、アクティビティの監視、およびデータ コレクションを使用して BizTalk Server データベースを監視します。
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 020fa764-968e-467c-b146-d069f5606a0f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007899"
 ---
 # <a name="monitor-sql-server-performance"></a><span data-ttu-id="e4971-103">SQL Server のパフォーマンスの監視</span><span class="sxs-lookup"><span data-stu-id="e4971-103">Monitor SQL Server Performance</span></span>
 <span data-ttu-id="e4971-104">SQL Server は、SQL Server のイベントを監視するためと、物理データベース デザインをチューニングするために、いくつかのツールを提供します。</span><span class="sxs-lookup"><span data-stu-id="e4971-104">SQL Server provides several tools for monitoring events in SQL Server and for tuning the physical database design.</span></span> <span data-ttu-id="e4971-105">[パフォーマンスの監視およびチューニング ツール](https://docs.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)これらのツールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e4971-105">[Tools for Performance Monitoring and Tuning](https://docs.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools) describes these tools.</span></span> 

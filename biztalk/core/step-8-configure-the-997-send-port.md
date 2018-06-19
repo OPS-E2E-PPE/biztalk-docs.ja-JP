@@ -1,14 +1,14 @@
 ---
-title: "手順 8: 997 送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8: 997 送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4780c491-9f1a-4f13-b346-6a2e1801ec09
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277218"
 ---
 # <a name="step-8-configure-the-997-send-port"></a><span data-ttu-id="b5a83-102">手順 8: 997 送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="b5a83-102">Step 8: Configure the 997 Send Port</span></span>
 <span data-ttu-id="b5a83-103">![手順 11 の 8](../core/media/tut-step8-of-11.gif "Tut_Step8_of_11")</span><span class="sxs-lookup"><span data-stu-id="b5a83-103">![Step 8 of 11](../core/media/tut-step8-of-11.gif "Tut_Step8_of_11")</span></span>  
@@ -42,12 +43,12 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="b5a83-117">**送信ポートのプロパティ**ダイアログ ボックスで、 **AS2EdiSend**の**送信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-117">In the **Send Port Properties** dialog box, select **AS2EdiSend** for **Send Pipeline**.</span></span>  
   
-5.  <span data-ttu-id="b5a83-118">をクリックして**フィルター**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="b5a83-118">Click **Filters** in the console tree.</span></span> <span data-ttu-id="b5a83-119">**プロパティ** **BTS です。MessageType**です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-119">For **Property**, select **BTS.MessageType**.</span></span> <span data-ttu-id="b5a83-120">**演算子**  **==**です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-120">For **Operator**, select **==**.</span></span> <span data-ttu-id="b5a83-121">**値**、入力`http://schemas.microsoft.com/Edi/X12#X12_997_Root`です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-121">For **Value**, enter `http://schemas.microsoft.com/Edi/X12#X12_997_Root`.</span></span>  
+5.  <span data-ttu-id="b5a83-118">をクリックして**フィルター**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="b5a83-118">Click **Filters** in the console tree.</span></span> <span data-ttu-id="b5a83-119">**プロパティ** **BTS です。MessageType**です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-119">For **Property**, select **BTS.MessageType**.</span></span> <span data-ttu-id="b5a83-120">**演算子**  **==** です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-120">For **Operator**, select **==**.</span></span> <span data-ttu-id="b5a83-121">**値**、入力`http://schemas.microsoft.com/Edi/X12#X12_997_Root`です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-121">For **Value**, enter `http://schemas.microsoft.com/Edi/X12#X12_997_Root`.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="b5a83-122">このフィルタにより、送信ポートはメッセージ ボックスから 997 受信確認だけを取得するようになります。</span><span class="sxs-lookup"><span data-stu-id="b5a83-122">This filter ensures that the send port will only pick up 997 acknowledgments from the MessageBox.</span></span>  
   
-6.  <span data-ttu-id="b5a83-123">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5a83-123">Click **OK**.</span></span>  
+6.  <span data-ttu-id="b5a83-123">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5a83-123">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="b5a83-124">**送信ポート**のペイン、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、 **Send_Async_997**送信ポートをクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="b5a83-124">In the **Send Ports** pane of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Send_Async_997** send port, and then click **Start**.</span></span>  
   

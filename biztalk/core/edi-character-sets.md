@@ -1,14 +1,14 @@
 ---
-title: "EDI 文字セット |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 文字セット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57fae748-d66e-4ecf-be00-70147078ef93
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971392"
 ---
 # <a name="edi-character-sets"></a><span data-ttu-id="6a164-102">EDI 文字セット</span><span class="sxs-lookup"><span data-stu-id="6a164-102">EDI Character Sets</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="6a164-103"> では、文字セットを使用して EDI インターチェンジ全体を検証します。</span><span class="sxs-lookup"><span data-stu-id="6a164-103"> uses a character set to validate an entire EDI interchange.</span></span> <span data-ttu-id="6a164-104">X12 でエンコードされたメッセージに使用される文字セットと、EDIFACT または KEDIFACT でエンコードされたメッセージに使用される文字セットは、異なる方法で決定されます。</span><span class="sxs-lookup"><span data-stu-id="6a164-104">The character sets used for an X12-encoded message and an EDIFACT- or KEDIFACT-encoded message are determined in different ways.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="6a164-124">UNA セグメントとセグメント名 UNB には、ASCII 文字セット内の値のみを使用できます。</span><span class="sxs-lookup"><span data-stu-id="6a164-124">The UNA Segment and Segment Name UNB are limited to the values in the ASCII character set.</span></span>  
   
 ## <a name="kedifact-character-set"></a><span data-ttu-id="6a164-125">KEDIFACT 文字セット</span><span class="sxs-lookup"><span data-stu-id="6a164-125">KEDIFACT Character Set</span></span>  
- <span data-ttu-id="6a164-126">EDIFACT の場合と同様に、KEDIFACT エンコード インターチェンジの文字セットも UNB1 データ要素で設定されます。</span><span class="sxs-lookup"><span data-stu-id="6a164-126">As with EDIFACT, the character set for a KEDIFACT-encoded interchange is established in the UNB1 data element.</span></span> <span data-ttu-id="6a164-127">EDIFACT の場合と、文字のセットによって適用すべき[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]KEDIFACT インターチェンジの処理が確立されている場合のデータ要素で**UNB1**の**文字セットと区切り記号**双方向のページアグリーメントのタブ (アグリーメントが定義されている) 場合、または**文字セットと区切り記号**のアグリーメント タブのページで、 **EDIFACT フォールバックの設定** ダイアログ ボックス (アグリーメントが定義されていない) 場合。</span><span class="sxs-lookup"><span data-stu-id="6a164-127">As for EDIFACT, the character set to be applied by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] when processing a KEDIFACT interchange is established in data element **UNB1** of **Charset and Separators** page in the bi-directional agreement tabs (if an agreement is defined) or the **Charset and Separators** page in the agreement tab of the **EDIFACT Fallback Settings** dialog box (if no agreement is defined).</span></span> <span data-ttu-id="6a164-128">値、**識別子 (UNB1.1)**要素は KECA に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a164-128">The value for the **Identifier (UNB1.1)** element must be set to KECA.</span></span>  
+ <span data-ttu-id="6a164-126">EDIFACT の場合と同様に、KEDIFACT エンコード インターチェンジの文字セットも UNB1 データ要素で設定されます。</span><span class="sxs-lookup"><span data-stu-id="6a164-126">As with EDIFACT, the character set for a KEDIFACT-encoded interchange is established in the UNB1 data element.</span></span> <span data-ttu-id="6a164-127">EDIFACT の場合と、文字のセットによって適用すべき[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]KEDIFACT インターチェンジの処理が確立されている場合のデータ要素で**UNB1**の**文字セットと区切り記号**双方向のページアグリーメントのタブ (アグリーメントが定義されている) 場合、または**文字セットと区切り記号**のアグリーメント タブのページで、 **EDIFACT フォールバックの設定** ダイアログ ボックス (アグリーメントが定義されていない) 場合。</span><span class="sxs-lookup"><span data-stu-id="6a164-127">As for EDIFACT, the character set to be applied by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] when processing a KEDIFACT interchange is established in data element **UNB1** of **Charset and Separators** page in the bi-directional agreement tabs (if an agreement is defined) or the **Charset and Separators** page in the agreement tab of the **EDIFACT Fallback Settings** dialog box (if no agreement is defined).</span></span> <span data-ttu-id="6a164-128">値、**識別子 (UNB1.1)** 要素は KECA に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a164-128">The value for the **Identifier (UNB1.1)** element must be set to KECA.</span></span>  
   
 ## <a name="x12-character-set"></a><span data-ttu-id="6a164-129">X12 文字セット</span><span class="sxs-lookup"><span data-stu-id="6a164-129">X12 Character Set</span></span>  
  <span data-ttu-id="6a164-130">BizTalk 受信パイプラインまたは送信パイプラインが X12 エンコード メッセージの EDI 検証を実行する際には、パイプラインの CharacterSet プロパティで選択された X12 文字セットを使用します。</span><span class="sxs-lookup"><span data-stu-id="6a164-130">When the BizTalk receive pipeline or send pipeline performs EDI validation of an X12-encoded message, it uses the X12 character set selected in the CharacterSet property of the pipeline.</span></span> <span data-ttu-id="6a164-131">このプロパティを設定するには、受信場所または送信ポートの [プロパティ] ダイアログ ボックスを開き、受信パイプラインまたは送信パイプラインの横にある省略記号をクリックし、逆アセンブラーまたはアセンブラーの CharacterSet プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="6a164-131">To set this property, open the Properties dialog box for the receive location or send port, click the ellipses next to the receive or send pipeline, and then set the CharacterSet property for the Disassembler or Assembler.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
 > [!NOTE]
 >  <span data-ttu-id="6a164-142">双方向アグリーメントまたはフォールバック アグリーメントでデータ要素区切り記号、コンポーネント要素区切り記号、およびセグメント終端記号に入力する値は、ASCII 文字セット内の値に限られます。</span><span class="sxs-lookup"><span data-stu-id="6a164-142">The values entered for the data-element separator, component-element separator, and segment terminator in the bi-directional agreement or fallback agreement are limited to the values in the ASCII character set.</span></span> <span data-ttu-id="6a164-143">これらのプロパティは、X12 文字セットに対しては検証されません。</span><span class="sxs-lookup"><span data-stu-id="6a164-143">These properties are not validated against the X12 character set.</span></span>  
   
- <span data-ttu-id="6a164-144">基本文字セットには、大文字、数字、スペース、および特殊文字が含まれています A ~ Z、0 ~ 9、!。</span><span class="sxs-lookup"><span data-stu-id="6a164-144">The Basic character set includes the following uppercase letters, digits, space, and special characters: A through Z, 0 through 9, !</span></span> <span data-ttu-id="6a164-145">“ & ’ ( ) * + , - .</span><span class="sxs-lookup"><span data-stu-id="6a164-145">“ & ’ ( ) * + , - .</span></span> <span data-ttu-id="6a164-146">/ : ; ?</span><span class="sxs-lookup"><span data-stu-id="6a164-146">/ : ; ?</span></span> <span data-ttu-id="6a164-147">(スペース) を = です。</span><span class="sxs-lookup"><span data-stu-id="6a164-147">= (space).</span></span>  
+ <span data-ttu-id="6a164-144">基本文字セットには、大文字、数字、スペース、および特殊文字が含まれています A ~ Z、0 ~ 9、!。</span><span class="sxs-lookup"><span data-stu-id="6a164-144">The Basic character set includes the following uppercase letters, digits, space, and special characters: A through Z, 0 through 9, !</span></span> <span data-ttu-id="6a164-145">“ & ’ ( ) \* + , - .</span><span class="sxs-lookup"><span data-stu-id="6a164-145">“ & ’ ( ) \* + , - .</span></span> <span data-ttu-id="6a164-146">/ : ; ?</span><span class="sxs-lookup"><span data-stu-id="6a164-146">/ : ; ?</span></span> <span data-ttu-id="6a164-147">(スペース) を = です。</span><span class="sxs-lookup"><span data-stu-id="6a164-147">= (space).</span></span>  
   
  <span data-ttu-id="6a164-148">拡張文字セットには、基本文字セット、および文字の小文字、言語選択文字、およびその他の特殊文字の文字が含まれています。 a ~ z、% @ [] _ {} \ &#124;です。\< \> ~ # $.</span><span class="sxs-lookup"><span data-stu-id="6a164-148">The Extended character set includes the characters in the Basic character set, and lowercase letters, select language characters, and other special characters: a through z, % @ [ ] _ { } \ &#124; \< \> ~ # $.</span></span>  
   

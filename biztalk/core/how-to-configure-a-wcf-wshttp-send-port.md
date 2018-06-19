@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 035d9a62-b8a3-4705-a7bc-b62676437206
-caps.latest.revision: ''
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25974664"
 ---
 # <a name="how-to-configure-a-wcf-wshttp-send-port"></a><span data-ttu-id="aa6dd-102">WCF-WSHttp 送信ポートを構成する方法</span><span class="sxs-lookup"><span data-stu-id="aa6dd-102">How to Configure a WCF-WSHttp Send Port</span></span>
 <span data-ttu-id="aa6dd-103">WCF-WSHttp 送信ポートは、プログラムから、または BizTalk 管理コンソールを使用して構成できます。</span><span class="sxs-lookup"><span data-stu-id="aa6dd-103">You can configure a WCF-WSHttp send port either programmatically or by using the BizTalk Administration console.</span></span>  

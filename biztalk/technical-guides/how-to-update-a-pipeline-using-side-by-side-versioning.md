@@ -1,14 +1,14 @@
 ---
-title: "サイド バイ サイドのバージョン管理を使用してパイプラインを更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: サイド バイ サイドのバージョン管理を使用してパイプラインを更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd884a76-71dd-4c90-b4ba-f1cd7f48eb04
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008379"
 ---
 # <a name="how-to-update-a-pipeline-using-side-by-side-versioning"></a><span data-ttu-id="06525-102">サイド バイ サイドのバージョン管理を使用してパイプラインを更新する方法</span><span class="sxs-lookup"><span data-stu-id="06525-102">How to Update a Pipeline Using Side-by-Side Versioning</span></span>
 <span data-ttu-id="06525-103">サイド バイ サイドのバージョン管理によって追加された新しいパイプラインを使用する簡単な方法は、送信ポートで、新しく展開されたパイプライン バージョンを選択または受信場所です。</span><span class="sxs-lookup"><span data-stu-id="06525-103">The simple way to use a new pipeline added by side-by-side versioning is to select the newly deployed pipeline version in the send port or receive location.</span></span> <span data-ttu-id="06525-104">これにより、古いパイプライン新しいと置き換わります。</span><span class="sxs-lookup"><span data-stu-id="06525-104">This will replace the old pipeline with the new one.</span></span> <span data-ttu-id="06525-105">ただし、本当のサイド バイ サイドの機能を旧バージョンとの互換性のため必要がある場合する必要がありますの新しい送信ポートを作成および受信場所と指定された新しいパイプライン バージョンにバインドします。</span><span class="sxs-lookup"><span data-stu-id="06525-105">However, if you need true side-by-side functionality for backwards-compatibility, then you must create new send ports and receive locations and bind them to the new pipeline version specified.</span></span>  

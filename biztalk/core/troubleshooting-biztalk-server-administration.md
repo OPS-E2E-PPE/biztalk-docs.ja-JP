@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 管理のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 管理のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dfb56b0-352f-4012-b030-087bbcfe09d4
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975080"
 ---
 # <a name="troubleshooting-biztalk-server-administration"></a><span data-ttu-id="bb853-102">BizTalk Server 管理のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="bb853-102">Troubleshooting BizTalk Server Administration</span></span>
 <span data-ttu-id="bb853-103">このセクションでは、BizTalk Server 管理コンソールの使用時に発生する一般的な問題に関する情報をまとめて提供します。</span><span class="sxs-lookup"><span data-stu-id="bb853-103">This section provides a centralized location for information about common problems encountered while using the BizTalk Server Administration console.</span></span>  

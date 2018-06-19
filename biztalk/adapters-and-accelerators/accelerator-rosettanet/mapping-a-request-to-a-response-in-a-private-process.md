@@ -1,11 +1,11 @@
 ---
-title: "プライベート プロセスで応答する要求をマッピング |Microsoft ドキュメント"
-ms.custom: 
+title: プライベート プロセスで応答する要求をマッピング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, maps
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - requests, mapping
 - requests, private processes
 ms.assetid: 5452c0a2-3a9b-43e7-bfa7-713eef0eab3b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008371"
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a><span data-ttu-id="3baaf-102">プライベート プロセスで応答する要求のマッピング</span><span class="sxs-lookup"><span data-stu-id="3baaf-102">Mapping a Request to a Response in a Private Process</span></span>
 <span data-ttu-id="3baaf-103">このトピックにプライベート応答側のプロセスで受信した要求メッセージをマップする方法について説明: から、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を応答メッセージを送信できる、応答側パブリック プロセス、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]応答側パブリック プロセス。</span><span class="sxs-lookup"><span data-stu-id="3baaf-103">This topic describes how to map a request message received by the private responder process—from the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] public responder process, to a response message that can be sent to the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] public responder process.</span></span>  
@@ -98,7 +99,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  <span data-ttu-id="3baaf-148">**変換**をクリックして**先**です。</span><span class="sxs-lookup"><span data-stu-id="3baaf-148">Under **Transform**, click **Destination**.</span></span> <span data-ttu-id="3baaf-149">変数の下の空のボックスをクリックし、ドロップダウン リストから応答メッセージの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="3baaf-149">Click the empty box under variable, and select the name of the response message from the drop-down list.</span></span>  
   
-8.  <span data-ttu-id="3baaf-150">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3baaf-150">Click **OK**.</span></span>  
+8.  <span data-ttu-id="3baaf-150">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3baaf-150">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="3baaf-151">参照</span><span class="sxs-lookup"><span data-stu-id="3baaf-151">See Also</span></span>  
  [<span data-ttu-id="3baaf-152">プログラミング ガイド</span><span class="sxs-lookup"><span data-stu-id="3baaf-152">Programming Guide</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)

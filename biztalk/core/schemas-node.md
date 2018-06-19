@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269314"
 ---
 # <a name="schemas-node"></a><span data-ttu-id="b2dc5-102">[スキーマ] ノード</span><span class="sxs-lookup"><span data-stu-id="b2dc5-102">Schemas Node</span></span>
 <span data-ttu-id="b2dc5-103">使用して、**スキーマ**BizTalk で使用できる現在のアプリケーションおよびシステム スキーマで展開されているスキーマを表示するノードです。</span><span class="sxs-lookup"><span data-stu-id="b2dc5-103">Use the **Schemas** node to display schemas deployed in the current application and system schemas that are available in BizTalk.</span></span> <span data-ttu-id="b2dc5-104">右クリックし、**スキーマ**次のコマンドを表示するノード。</span><span class="sxs-lookup"><span data-stu-id="b2dc5-104">Right-click the **Schemas** node to display the following commands:</span></span>  

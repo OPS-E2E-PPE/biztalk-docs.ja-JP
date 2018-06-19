@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2010 Performance Optimization Guide |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2010 Performance Optimization Guide |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a56b27f-3e57-47db-a776-520f2d67d65e
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010731"
 ---
 # <a name="biztalk-server-2010-performance-optimization-guide"></a><span data-ttu-id="3dc55-102">BizTalk Server 2010 Performance Optimization Guide</span><span class="sxs-lookup"><span data-stu-id="3dc55-102">BizTalk Server 2010 Performance Optimization Guide</span></span>
 <span data-ttu-id="3dc55-103">Microsoft® BizTalk® Server 2010 のパフォーマンス最適化ガイドへようこそ。</span><span class="sxs-lookup"><span data-stu-id="3dc55-103">Welcome to the Microsoft® BizTalk® Server 2010 Performance Optimization Guide.</span></span> <span data-ttu-id="3dc55-104">BizTalk Server ソリューションのパフォーマンスを最適化するための詳細な情報を提供するには、このガイドを作成しました。</span><span class="sxs-lookup"><span data-stu-id="3dc55-104">We created this guide to provide in-depth information for optimizing the performance of a BizTalk Server solution.</span></span> <span data-ttu-id="3dc55-105">エンタープライズ アプリケーションの展開中に頻繁に、完全エンド ツー エンドのパフォーマンスのテスト機能は見落とされがちです。</span><span class="sxs-lookup"><span data-stu-id="3dc55-105">Full end-to-end performance testing is frequently overlooked during enterprise application deployment.</span></span> <span data-ttu-id="3dc55-106">Microsoft が拡張性の高いメッセージング インフラストラクチャを構築されたことを知ること、BizTalk Server を使用している多くの組織時間をほとんどまたはまったくない独自のアプリケーションのパフォーマンスのテストを実施します。</span><span class="sxs-lookup"><span data-stu-id="3dc55-106">Knowing that Microsoft has built a scalable messaging infrastructure, many organizations that use BizTalk Server spend little or no time conducting performance testing of their own applications.</span></span> <span data-ttu-id="3dc55-107">BizTalk Server アプリケーションは、カスタム コンポーネントだけでなく Microsoft によって提供されるには、多くの部分で構成されます。</span><span class="sxs-lookup"><span data-stu-id="3dc55-107">BizTalk Server applications consist of many parts, which may include custom-built components as well as those provided by Microsoft.</span></span> <span data-ttu-id="3dc55-108">それ以外は考えられるのパフォーマンスを Microsoft がこれらのコンポーネントのあらゆる組み合わせをテストします。</span><span class="sxs-lookup"><span data-stu-id="3dc55-108">It is impossible for Microsoft to performance test every possible combination of these components.</span></span> <span data-ttu-id="3dc55-109">そのため、完全かつ適切実施、アプリケーションのパフォーマンス テストは、任意の展開の重要な手順です。</span><span class="sxs-lookup"><span data-stu-id="3dc55-109">Therefore, fully and properly conducting a performance test of your application is a critical step of any deployment.</span></span>  

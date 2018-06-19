@@ -1,18 +1,18 @@
 ---
-title: "手順 3: アセンブリに厳密な名前を割り当てます |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: アセンブリに厳密な名前を割り当てます |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies
 - message enrichment tutorial, strong name assemblies
 - strong name assemblies
 ms.assetid: 8709e4e1-b428-42af-ba3c-08225c17a9eb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26004955"
 ---
 # <a name="step-3-assign-a-strong-name-to-the-assembly"></a><span data-ttu-id="86791-102">手順 3: アセンブリに厳密な名前を割り当てます</span><span class="sxs-lookup"><span data-stu-id="86791-102">Step 3: Assign a Strong Name to the Assembly</span></span>
 <span data-ttu-id="86791-103">この手順で作成して割り当てるの厳密な名前、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アセンブリ。</span><span class="sxs-lookup"><span data-stu-id="86791-103">In this step, you create and assign a strong name for the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] assembly.</span></span> <span data-ttu-id="86791-104">厳密な名前のアセンブリは、いくつかのセキュリティ上の利点を提供し、グローバル アセンブリ キャッシュ (GAC) でプロジェクトを展開するために必要な。</span><span class="sxs-lookup"><span data-stu-id="86791-104">A strong-named assembly provides several security benefits and is required in order to deploy your project in the global assembly cache (GAC).</span></span> <span data-ttu-id="86791-105">厳密な名前では、デジタル署名と一意キーのペアを割り当てることによって、アセンブリの一意性を保証します。</span><span class="sxs-lookup"><span data-stu-id="86791-105">A strong name guarantees the uniqueness of the assembly by assigning a digital signature and a unique key pair.</span></span> <span data-ttu-id="86791-106">これは、アセンブリの系列をにより、それ以降のバージョンのアセンブリを生成できないことができますも保護します。</span><span class="sxs-lookup"><span data-stu-id="86791-106">This also protects the lineage of the assembly by ensuring that no one can generate a subsequent version of the assembly.</span></span> <span data-ttu-id="86791-107">最後に、厳密な名前は、アセンブリの内容がのビルド以降に変更していないことを保証するために強力な整合性チェックを提供します。</span><span class="sxs-lookup"><span data-stu-id="86791-107">Lastly, a strong name provides a strong integrity check to guarantee that the contents of the assembly have not changed since you built it.</span></span>  

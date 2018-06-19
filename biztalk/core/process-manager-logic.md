@@ -1,17 +1,17 @@
 ---
-title: "プロセス マネージャのロジック |Microsoft ドキュメント"
-ms.custom: 
+title: プロセス マネージャのロジック |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, processing
 - processing, processing logic
 ms.assetid: 6b69fc71-0f01-4513-9361-d7787d0cde6d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264482"
 ---
 # <a name="process-manager-logic"></a><span data-ttu-id="30b54-102">プロセス マネージャのロジック</span><span class="sxs-lookup"><span data-stu-id="30b54-102">Process Manager Logic</span></span>
 <span data-ttu-id="30b54-103">このセクションについて説明方法、プロセス マネージャ、 **OrderManager**オーケストレーションで、注文が処理されます。</span><span class="sxs-lookup"><span data-stu-id="30b54-103">This section describes how the process manager, the **OrderManager** orchestration, processes orders.</span></span> <span data-ttu-id="30b54-104">各種の注文メッセージに含まれる主要なフィールドや、オーケストレーションにおける新しい注文と更新された注文の処理について説明します。</span><span class="sxs-lookup"><span data-stu-id="30b54-104">It describes key fields in the various order messages and follows new and updated orders through the orchestration.</span></span>  

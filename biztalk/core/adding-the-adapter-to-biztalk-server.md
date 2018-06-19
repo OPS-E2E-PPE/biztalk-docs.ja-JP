@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 0491ac0f26b19a96d11cf633263010026961c58b
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013481"
 ---
 # <a name="adding-the-adapter-to-biztalk-server"></a><span data-ttu-id="cc56f-101">BizTalk Server にアダプターを追加します。</span><span class="sxs-lookup"><span data-stu-id="cc56f-101">Adding the Adapter to BizTalk Server</span></span>
 <span data-ttu-id="cc56f-102">Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラーと送信ハンドラーの両方のフォルダーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cc56f-102">Microsoft BizTalk Adapter for JD Edwards OneWorld contains both the Receive Handler and Send Handler folders.</span></span> <span data-ttu-id="cc56f-103">送信ハンドラー フォルダーには、BizTalkServerApplication が含まれています。</span><span class="sxs-lookup"><span data-stu-id="cc56f-103">The Send Handler folder contains BizTalkServerApplication.</span></span> <span data-ttu-id="cc56f-104">BizTalk Adapter for JD Edwards OneWorld は作成可能です。BizTalk Server とインプロセスで実行され、分離されたホスト プロセスでは実行されません。</span><span class="sxs-lookup"><span data-stu-id="cc56f-104">BizTalk Adapter for JD Edwards OneWorld is creatable; it runs in-process with BizTalk Server and does not run in an isolated host process.</span></span>  
@@ -23,14 +24,14 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="cc56f-110">**アダプター プロパティ**ダイアログ ボックスで、アダプターの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="cc56f-110">In the **Adapter Properties** dialog box, type a name for the adapter.</span></span> <span data-ttu-id="cc56f-111">たとえば、JDEdwards です。</span><span class="sxs-lookup"><span data-stu-id="cc56f-111">For example, JDEdwards.</span></span>  
   
-5.  <span data-ttu-id="cc56f-112">選択**[jdeoneworld]**から、**アダプター**一覧をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cc56f-112">Select **JDEOneWorld** from the **Adapter** list, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="cc56f-112">選択 **[jdeoneworld]** から、**アダプター**一覧をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cc56f-112">Select **JDEOneWorld** from the **Adapter** list, and then click **OK**.</span></span>  
   
 ## <a name="verifying-the-adapter"></a><span data-ttu-id="cc56f-113">アダプターの確認</span><span class="sxs-lookup"><span data-stu-id="cc56f-113">Verifying the Adapter</span></span>  
  <span data-ttu-id="cc56f-114">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、できることを確認するを確認して、アダプターが正しく機能している、**論理システム**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="cc56f-114">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, you can verify that the adapter is functioning correctly by looking at the **Logical System** window.</span></span> <span data-ttu-id="cc56f-115">初回のインストレーションでは、このウィンドウは空です。これは、サーバー システムへの接続が未確立で、論理システムが作成されていないからです。</span><span class="sxs-lookup"><span data-stu-id="cc56f-115">On initial installation, this window is empty because you have not yet established a connection to the server system, nor have you created any logical systems.</span></span>  
   
 #### <a name="to-verify-that-the-adapter-is-running-correctly"></a><span data-ttu-id="cc56f-116">アダプターが正常に動作していることを確認するには</span><span class="sxs-lookup"><span data-stu-id="cc56f-116">To verify that the adapter is running correctly</span></span>  
   
-1.  <span data-ttu-id="cc56f-117">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開**プラットフォームの設定**、展開**アダプター**、し、 **[Jdeoneworld]**です。</span><span class="sxs-lookup"><span data-stu-id="cc56f-117">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand **Platform Settings**, expand **Adapters**, and then select **JDEOneWorld**.</span></span>  
+1.  <span data-ttu-id="cc56f-117">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開**プラットフォームの設定**、展開**アダプター**、し、 **[Jdeoneworld]** です。</span><span class="sxs-lookup"><span data-stu-id="cc56f-117">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand **Platform Settings**, expand **Adapters**, and then select **JDEOneWorld**.</span></span>  
   
 2.  <span data-ttu-id="cc56f-118">詳細ウィンドウで右クリック**BizTalkServerApplication**を選択して**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="cc56f-118">In the details pane, right-click **BizTalkServerApplication**, and select **Properties**.</span></span>  
   

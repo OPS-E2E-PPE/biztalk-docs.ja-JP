@@ -1,15 +1,15 @@
 ---
-title: "サービスを再起動またはシャット ダウンする手順 |Microsoft ドキュメント"
-description: "開始、停止、一時停止、再開、または BizTalk Server を再起動してサービス、または BizTalk Server コンピューターをシャット ダウン"
-ms.custom: 
+title: サービスを再起動またはシャット ダウンする手順 |Microsoft ドキュメント
+description: 開始、停止、一時停止、再開、または BizTalk Server を再起動してサービス、または BizTalk Server コンピューターをシャット ダウン
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d6449ba-2892-49c6-a697-847608d10ec5
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973408"
 ---
 # <a name="restart-biztalk-services-or-shut-down-the-biztalk-server"></a><span data-ttu-id="63134-103">BizTalk サービスを再起動するか、BizTalk Server をシャット ダウン</span><span class="sxs-lookup"><span data-stu-id="63134-103">Restart BizTalk services, or shut down the BizTalk Server</span></span>
 

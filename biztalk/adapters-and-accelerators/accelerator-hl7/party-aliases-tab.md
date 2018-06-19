@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005587"
 ---
 # <a name="party-aliases-tab"></a><span data-ttu-id="75d01-102">パーティ エイリアス タブ</span><span class="sxs-lookup"><span data-stu-id="75d01-102">Party Aliases Tab</span></span>
 <span data-ttu-id="75d01-103">使用する、**パーティ エイリアス**タブには、選択したパーティに関する情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="75d01-103">You use the **Party Aliases** tab to view information about the selected party.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "SelectiveBindingImport (アプリケーションの展開サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: SelectiveBindingImport (アプリケーションの展開サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding files, importing
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - deploying, scripts
 - examples, binding files
 ms.assetid: 963bfc80-8cc4-4d90-96b4-e85ae04405cf
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974832"
 ---
 # <a name="selectivebindingimport-application-deployment-sample"></a><span data-ttu-id="f6db7-102">SelectiveBindingImport (アプリケーションの展開サンプル)</span><span class="sxs-lookup"><span data-stu-id="f6db7-102">SelectiveBindingImport (Application Deployment Sample)</span></span>
 <span data-ttu-id="f6db7-103">このトピックでは、SelectiveBindingImport サンプルの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f6db7-103">This topic explains how to use the SelectiveBindingImport sample.</span></span> <span data-ttu-id="f6db7-104">このサンプル スクリプトを使用すると、1 つのアプリケーションをさまざまな展開先環境にインポートするときに、異なるバインドをそのアプリケーションに適用できます。</span><span class="sxs-lookup"><span data-stu-id="f6db7-104">You can use this sample script to apply different bindings to an application when you import the application into different destination environments.</span></span> <span data-ttu-id="f6db7-105">この方法は、ネットワーク共有に格納されているバインド ファイルからバインドをインポートするときに使用できます。</span><span class="sxs-lookup"><span data-stu-id="f6db7-105">You can use this approach when you want to import the bindings from binding files that are stored on a network share.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="f6db7-116">このサンプルは、BizTalk アプリケーションの .msi ファイルに含まれている処理後のスクリプトを使用して、ネットワーク共有からバインド ファイルを選択的にインポートする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f6db7-116">This sample illustrates how to selectively import binding files from a network share by using a post-processing script contained in a BizTalk application .msi file.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="f6db7-117">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="f6db7-117">Where to Find This Sample</span></span>  
- <span data-ttu-id="f6db7-118">次のサンプル フォルダーとファイルを検索できます*\<サンプル パス\>*\Application Deployment\SelectiveBindingImport:</span><span class="sxs-lookup"><span data-stu-id="f6db7-118">You can find the following sample folders and files under *\<Samples Path\>*\Application Deployment\SelectiveBindingImport:</span></span>  
+ <span data-ttu-id="f6db7-118">次のサンプル フォルダーとファイルを検索できます*\<サンプル パス\>* \Application Deployment\SelectiveBindingImport:</span><span class="sxs-lookup"><span data-stu-id="f6db7-118">You can find the following sample folders and files under *\<Samples Path\>* \Application Deployment\SelectiveBindingImport:</span></span>  
   
 -   <span data-ttu-id="f6db7-119">Develop (フォルダー)</span><span class="sxs-lookup"><span data-stu-id="f6db7-119">Develop (Folder)</span></span>  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-run-the-sample"></a><span data-ttu-id="f6db7-130">サンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="f6db7-130">To run the sample</span></span>  
   
-1.  <span data-ttu-id="f6db7-131">実行**から Build.Bat、 *\<サンプル パス\>*\Application Deployment\CreateApp**ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="f6db7-131">Run **Build.Bat from the *\<Samples Path\>*\Application Deployment\CreateApp** directory.</span></span> <span data-ttu-id="f6db7-132">これには、次のファイルが作成、 *\<サンプル パス\>*\Application Deployment\CreateApp\Dlls フォルダー: Schemas.dll、Maps.dll、および Orchestrations.dll です。</span><span class="sxs-lookup"><span data-stu-id="f6db7-132">This creates the following files in the *\<Samples Path\>*\Application Deployment\CreateApp\Dlls folder: Schemas.dll, Maps.dll, and Orchestrations.dll.</span></span>  
+1.  <span data-ttu-id="f6db7-131">実行**から Build.Bat、 *\<サンプル パス\>* \Application Deployment\CreateApp**ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="f6db7-131">Run **Build.Bat from the *\<Samples Path\>* \Application Deployment\CreateApp** directory.</span></span> <span data-ttu-id="f6db7-132">これには、次のファイルが作成、 *\<サンプル パス\>* \Application Deployment\CreateApp\Dlls フォルダー: Schemas.dll、Maps.dll、および Orchestrations.dll です。</span><span class="sxs-lookup"><span data-stu-id="f6db7-132">This creates the following files in the *\<Samples Path\>* \Application Deployment\CreateApp\Dlls folder: Schemas.dll, Maps.dll, and Orchestrations.dll.</span></span>  
   
 2.  <span data-ttu-id="f6db7-133">**アプリケーションを作成します。**</span><span class="sxs-lookup"><span data-stu-id="f6db7-133">**Create the application.**</span></span> <span data-ttu-id="f6db7-134">BizTalk Server 管理コンソールには、アプリケーションを」の説明に従って作成[アプリケーションを作成する方法](../core/how-to-create-an-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="f6db7-134">In the BizTalk Server Administration console, create an application, as described in [How to Create an Application](../core/how-to-create-an-application.md).</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "構成フレームワークの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 構成フレームワークの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2015-10-28
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18ec869d-6e81-42f5-9961-29b06e03fa54
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976624"
 ---
 # <a name="working-with-the-configuration-framework"></a><span data-ttu-id="3949e-102">構成フレームワークを使用した作業</span><span class="sxs-lookup"><span data-stu-id="3949e-102">Working with the Configuration Framework</span></span>
 <span data-ttu-id="3949e-103">構成フレームワークを使用すると、セットアップ時に Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成をすばやく簡単に変更できます。</span><span class="sxs-lookup"><span data-stu-id="3949e-103">The Configuration Framework enables you to quickly and easily change Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] configuration at setup.</span></span> <span data-ttu-id="3949e-104">Microsoft Windows インストーラ (MSI) と組み合わせた構成フレームワークでは、コンピュータの状態と操作に必要な構成タスクが読み取られ、レポートされます。</span><span class="sxs-lookup"><span data-stu-id="3949e-104">In conjunction with the Microsoft Windows Installer (MSI), the Configuration Framework reads and reports the state of your computer and the configuration tasks requiring action.</span></span>  

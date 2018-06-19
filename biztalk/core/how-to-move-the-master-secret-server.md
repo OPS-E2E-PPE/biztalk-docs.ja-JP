@@ -1,18 +1,18 @@
 ---
-title: "マスター シークレット サーバーを移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット サーバーを移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [Master Secret server], migrating
 - migrating, Master Secret server
 - Master Secret server, migrating
 ms.assetid: 2bc5137e-f81d-486d-bb91-7c5981896f79
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007811"
 ---
 # <a name="how-to-move-the-master-secret-server"></a><span data-ttu-id="4349f-102">マスター シークレット サーバーを移動する方法</span><span class="sxs-lookup"><span data-stu-id="4349f-102">How to Move the Master Secret Server</span></span>
 <span data-ttu-id="4349f-103">このトピックでは、マスター シークレットをあるサーバーから別のサーバーに移動するための手順、およびマスター シークレットをあるサーバーから Windows Server クラスターに移動するための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="4349f-103">This topic documents the steps you can follow to move the master secret from one server to another and the steps you can follow to move the master secret from one server to a Windows Server Cluster.</span></span>  

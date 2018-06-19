@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9aa88ca7-a731-4295-8692-6dd36fdf0872
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973168"
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a><span data-ttu-id="94c8f-102">マップを開く、保存、終了する方法と、マップの名前を変更する方法</span><span class="sxs-lookup"><span data-stu-id="94c8f-102">How to Open, Save, Close, and Rename Maps</span></span>
 <span data-ttu-id="94c8f-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のマップは、.btm という拡張子付きのファイルとして、ファイル システム内に格納されます。</span><span class="sxs-lookup"><span data-stu-id="94c8f-103">In Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], maps exist as files in the file system with .btm extensions.</span></span> <span data-ttu-id="94c8f-104">ただし、マップを開く、保存する、閉じるなどの操作は、BizTalk プロジェクト内から行うのが一般的です。</span><span class="sxs-lookup"><span data-stu-id="94c8f-104">Nevertheless, it is much more common to work with maps as items in a BizTalk project, from which you perform operations such as opening, saving, and closing maps.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="94c8f-114">ソリューション エクスプローラーで、マップの保存先を選択します。</span><span class="sxs-lookup"><span data-stu-id="94c8f-114">In Solution Explorer, select the map you want to save to a new location.</span></span>  
   
-2.  <span data-ttu-id="94c8f-115">**ファイル** メニューのをクリックして**保存*\<名のマップの\>*として**です。</span><span class="sxs-lookup"><span data-stu-id="94c8f-115">On the **File** menu, click **Save *\<Name of Map\>* As**.</span></span>  
+2.  <span data-ttu-id="94c8f-115">**ファイル** メニューのをクリックして**保存*\<名のマップの\>* として**です。</span><span class="sxs-lookup"><span data-stu-id="94c8f-115">On the **File** menu, click **Save *\<Name of Map\>* As**.</span></span>  
   
 3.  <span data-ttu-id="94c8f-116">**ファイルに名前を付けて**  ダイアログ ボックスで、マップを保存するフォルダーの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="94c8f-116">In the **Save File As** dialog box, browse to the folder location where you want to save the map.</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="94c8f-126">ソリューション エクスプローラーで、閉じるマップを選択します。</span><span class="sxs-lookup"><span data-stu-id="94c8f-126">In Solution Explorer, select the map you want to close.</span></span>  
   
-2.  <span data-ttu-id="94c8f-127">**[ファイル]** メニューの **[閉じる]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94c8f-127">On the **File** menu, click **Close**.</span></span>  
+2.  <span data-ttu-id="94c8f-127">**[ファイル]** メニューの **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94c8f-127">On the **File** menu, click **Close**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="94c8f-128">閉じるアイコンをクリックすることもできます (**[x]**)、Microsoft の右上隅に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。</span><span class="sxs-lookup"><span data-stu-id="94c8f-128">You can also click the close icon ([**x**]) in the upper-right corner of the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] editing window.</span></span>  

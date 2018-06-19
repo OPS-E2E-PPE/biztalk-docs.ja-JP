@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222058"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="f3cb9-102">BizTalk Adapter for Siebel eBusiness Applications の概要します。</span><span class="sxs-lookup"><span data-stu-id="f3cb9-102">Get started with the BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="f3cb9-103">このセクションでは、Microsoft に新しいユーザーのアダプター、前提条件、およびトピックの概要を説明する[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f3cb9-103">This section provides an overview of the adapter, prerequisites, and topics for users who are new to the Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="f3cb9-104">機能についても説明[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]とアダプターを使用して、Siebel システムで実行できるさまざまな操作です。</span><span class="sxs-lookup"><span data-stu-id="f3cb9-104">It discusses the features of [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] and the different operations that can be performed on the Siebel system using the adapter.</span></span>  

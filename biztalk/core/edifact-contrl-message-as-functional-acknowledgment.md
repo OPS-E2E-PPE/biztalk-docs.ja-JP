@@ -1,14 +1,14 @@
 ---
-title: "機能確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: 機能確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d3c2be0-0993-4b2d-b6c3-286020117078
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007947"
 ---
 # <a name="edifact-contrl-message-as-functional-acknowledgment"></a><span data-ttu-id="965f8-102">機能確認としての EDIFACT CONTRL メッセージ</span><span class="sxs-lookup"><span data-stu-id="965f8-102">EDIFACT CONTRL Message as Functional Acknowledgment</span></span>
 <span data-ttu-id="965f8-103">ビジネス プロファイル設定または取引先アグリーメント (2 つのビジネス プロファイル間でアグリーメントが定義されていない場合はフォールバック アグリーメント) で機能確認を生成するように選択した場合、またはメッセージの UNB9 フィールドが "1" に設定されている場合、機能確認 (ACK) として CONTRL メッセージが生成されます。</span><span class="sxs-lookup"><span data-stu-id="965f8-103">If you have selected to generate a functional acknowledgment in business profile settings or trading partner agreement (or fallback agreement if no agreement is defined between the two business profiles), or if the UNB9 field in the message is set to "1", a CONTRL message will be generated as a functional acknowledgment (ACK).</span></span> <span data-ttu-id="965f8-104">この確認では、インターチェンジの構文チェックの結果が報告されます。</span><span class="sxs-lookup"><span data-stu-id="965f8-104">This ACK reports the results of syntax checks of the interchange.</span></span>  

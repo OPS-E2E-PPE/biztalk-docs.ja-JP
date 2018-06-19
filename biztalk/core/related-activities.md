@@ -1,11 +1,11 @@
 ---
-title: "関連アクティビティ |Microsoft ドキュメント"
-ms.custom: 
+title: 関連アクティビティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], related activities
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Query Builder [BAM portal], viewing details
 - queries [BAM], viewing details
 ms.assetid: 141b7943-d244-4810-aa88-12aa4a2b7658
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971856"
 ---
 # <a name="related-activities"></a><span data-ttu-id="8ce32-102">関連するアクティビティ</span><span class="sxs-lookup"><span data-stu-id="8ce32-102">Related Activities</span></span>
 <span data-ttu-id="8ce32-103">[関連アクティビティ] 領域には、クエリの基礎となるアクティビティに関連するアクティビティが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="8ce32-103">The Related Activities area contains a list of activities that are related to the activity on which the query is based.</span></span> <span data-ttu-id="8ce32-104">たとえば、1 回の発注で指示された品物を複数回に分けて出荷することが可能である場合、単一の発注アクティビティに対する関連アクティビティは、複数の出荷アクティビティになります。</span><span class="sxs-lookup"><span data-stu-id="8ce32-104">An example of a related activity for a Purchase Order activity would be multiple Shipment activities, since items on a single purchase order can be delivered in multiple shipments.</span></span>  

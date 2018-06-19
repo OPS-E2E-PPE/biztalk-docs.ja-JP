@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオン: イベント 11022 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シングル サインオン: イベント 11022 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c65ca12b-dda8-408b-9512-39df6f8e035b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276994"
 ---
 # <a name="single-sign-on-event-11022"></a><span data-ttu-id="ccc18-102">シングル サインオン: イベント 11022</span><span class="sxs-lookup"><span data-stu-id="ccc18-102">Single Sign-On: Event 11022</span></span>
 ## <a name="details"></a><span data-ttu-id="ccc18-103">詳細</span><span class="sxs-lookup"><span data-stu-id="ccc18-103">Details</span></span>  

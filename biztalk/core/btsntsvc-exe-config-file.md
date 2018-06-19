@@ -1,14 +1,14 @@
 ---
-title: "BTSNTSvc.exe.config ファイル |Microsoft ドキュメント"
-ms.custom: 
+title: BTSNTSvc.exe.config ファイル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2bb89a7-4fff-4ccf-a0a7-20ca610f2ddf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004819"
 ---
 # <a name="btsntsvcexeconfig-file"></a><span data-ttu-id="1653d-102">BTSNTSvc.exe.config ファイル</span><span class="sxs-lookup"><span data-stu-id="1653d-102">BTSNTSvc.exe.config File</span></span>
 <span data-ttu-id="1653d-103">退避プロパティとその既定値は、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] を使用するか、または XML として BizTalk 構成ファイル (BTSNTSvc.exe.config または BTSNTSvc64.exe.config) で構成可能です。</span><span class="sxs-lookup"><span data-stu-id="1653d-103">Dehydration properties and their default values are configurable in [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] or as XML in the BizTalk configuration file (BTSNTSvc.exe.config or BTSNTSvc64.exe.config).</span></span> <span data-ttu-id="1653d-104">BizTalk 構成ファイルの値が先に適用されます。</span><span class="sxs-lookup"><span data-stu-id="1653d-104">The values in the BizTalk configuration file are applied first.</span></span> <span data-ttu-id="1653d-105">次に、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] の設定が適用されます。</span><span class="sxs-lookup"><span data-stu-id="1653d-105">Then, the [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] settings are applied.</span></span> <span data-ttu-id="1653d-106">退避プロパティは、オーケストレーションを含んでいるすべてのホスト インスタンスの開始時に読み取られます。</span><span class="sxs-lookup"><span data-stu-id="1653d-106">The dehydration properties are read when all host instances containing an orchestration start.</span></span>  

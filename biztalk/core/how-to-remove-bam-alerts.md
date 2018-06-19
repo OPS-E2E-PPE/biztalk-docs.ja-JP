@@ -1,18 +1,18 @@
 ---
-title: "BAM 警告を削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 警告を削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM definitions], deleting alerts
 - Remove-Alerts command [BAM]
 - alerts, deleting
 ms.assetid: 9deb0ab2-a22f-477d-af31-35410d04fc6c
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970712"
 ---
 # <a name="how-to-remove-bam-alerts"></a><span data-ttu-id="39fc1-102">BAM 警告を削除する方法</span><span class="sxs-lookup"><span data-stu-id="39fc1-102">How to Remove BAM Alerts</span></span>
 <span data-ttu-id="39fc1-103">管理者を使用して、**削除アラート**指定されたビューからすべてのアラートを削除するコマンド。</span><span class="sxs-lookup"><span data-stu-id="39fc1-103">Administrators use the **remove-alerts** command to remove all the alerts from a specified view.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="39fc1-106">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。</span><span class="sxs-lookup"><span data-stu-id="39fc1-106">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
   
-3.  <span data-ttu-id="39fc1-107">型**bm 削除アラートの表示:\<ビュー名\>**です。</span><span class="sxs-lookup"><span data-stu-id="39fc1-107">Type **bm remove-alerts -View:\<view name\>**.</span></span>  
+3.  <span data-ttu-id="39fc1-107">型**bm 削除アラートの表示:\<ビュー名\>** です。</span><span class="sxs-lookup"><span data-stu-id="39fc1-107">Type **bm remove-alerts -View:\<view name\>**.</span></span>  
   
 4.  <span data-ttu-id="39fc1-108">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="39fc1-108">Press **ENTER**.</span></span>  
   

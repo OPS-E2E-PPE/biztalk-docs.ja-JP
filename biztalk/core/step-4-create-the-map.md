@@ -1,14 +1,14 @@
 ---
-title: "手順 4: マップの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: マップの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f7f1f6d-0e57-4a65-b91d-c81fcc832961
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973984"
 ---
 # <a name="step-4-create-the-map"></a><span data-ttu-id="d4f80-102">ステップ 4: マップの作成</span><span class="sxs-lookup"><span data-stu-id="d4f80-102">Step 4: Create the Map</span></span>
 <span data-ttu-id="d4f80-103">![手順 5 の 4](../core/media/step-4of5.gif "Step_4of5")</span><span class="sxs-lookup"><span data-stu-id="d4f80-103">![Step 4 of 5](../core/media/step-4of5.gif "Step_4of5")</span></span>  
   
  <span data-ttu-id="d4f80-104">**所要時間:** 6 分</span><span class="sxs-lookup"><span data-stu-id="d4f80-104">**Time to complete:** 6 minutes</span></span>  
   
- <span data-ttu-id="d4f80-105">**目標:**この手順では、要求メッセージを RequestDecline メッセージに変換するマップを作成します。</span><span class="sxs-lookup"><span data-stu-id="d4f80-105">**Objective:** In this step, you create a map that transforms Request message to RequestDecline message.</span></span>  
+ <span data-ttu-id="d4f80-105">**目標:** この手順では、要求メッセージを RequestDecline メッセージに変換するマップを作成します。</span><span class="sxs-lookup"><span data-stu-id="d4f80-105">**Objective:** In this step, you create a map that transforms Request message to RequestDecline message.</span></span>  
   
- <span data-ttu-id="d4f80-106">**目的:**マップ、倉庫在庫システムに返される要求拒否メッセージで、要求 ID 番号と総計が含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d4f80-106">**Purpose:** The map ensures that the request ID number and the grand total are included in the request decline message returned to the warehouse inventory system.</span></span> <span data-ttu-id="d4f80-107">ここでは BizTalk マッパーを使用して、送信メッセージ用に定義されているフィールドに受信メッセージのフィールドを関連付けます。</span><span class="sxs-lookup"><span data-stu-id="d4f80-107">You use BizTalk Mapper to link fields in an incoming message to fields defined for the outgoing message.</span></span> <span data-ttu-id="d4f80-108">この操作は、2 種類のメッセージのスキーマ構造が異なるため、必要です。</span><span class="sxs-lookup"><span data-stu-id="d4f80-108">This is necessary because these two messages do not have the same schema structure.</span></span>  
+ <span data-ttu-id="d4f80-106">**目的:** マップ、倉庫在庫システムに返される要求拒否メッセージで、要求 ID 番号と総計が含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d4f80-106">**Purpose:** The map ensures that the request ID number and the grand total are included in the request decline message returned to the warehouse inventory system.</span></span> <span data-ttu-id="d4f80-107">ここでは BizTalk マッパーを使用して、送信メッセージ用に定義されているフィールドに受信メッセージのフィールドを関連付けます。</span><span class="sxs-lookup"><span data-stu-id="d4f80-107">You use BizTalk Mapper to link fields in an incoming message to fields defined for the outgoing message.</span></span> <span data-ttu-id="d4f80-108">この操作は、2 種類のメッセージのスキーマ構造が異なるため、必要です。</span><span class="sxs-lookup"><span data-stu-id="d4f80-108">This is necessary because these two messages do not have the same schema structure.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="d4f80-109">前提条件</span><span class="sxs-lookup"><span data-stu-id="d4f80-109">Prerequisites</span></span>  
  <span data-ttu-id="d4f80-110">このステップを開始する前に、以下の要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="d4f80-110">Note the following requirements before you begin this step:</span></span>  
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="d4f80-122">**インストールされたテンプレート**</span><span class="sxs-lookup"><span data-stu-id="d4f80-122">**Installed Templates**</span></span>|<span data-ttu-id="d4f80-123">をクリックして**マップ ファイル**、クリックして**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="d4f80-123">Click **Map Files**, and then click **Map**.</span></span>|  
     |<span data-ttu-id="d4f80-124">**名前**</span><span class="sxs-lookup"><span data-stu-id="d4f80-124">**Name**</span></span>|<span data-ttu-id="d4f80-125">型**MapToReqDecline.btm**です。</span><span class="sxs-lookup"><span data-stu-id="d4f80-125">Type **MapToReqDecline.btm**.</span></span>|  
   
-3.  <span data-ttu-id="d4f80-126">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d4f80-126">Click **Add**.</span></span>  
+3.  <span data-ttu-id="d4f80-126">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d4f80-126">Click **Add**.</span></span>  
   
      <span data-ttu-id="d4f80-127">送信元スキーマ、送信先スキーマ、およびマッパー グリッドを次に示します。</span><span class="sxs-lookup"><span data-stu-id="d4f80-127">The following figure shows the Source Schema, Destination Schema, and Mapper Grid.</span></span>  
   

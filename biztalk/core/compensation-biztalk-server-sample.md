@@ -1,11 +1,11 @@
 ---
-title: "補正 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: 補正 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, compensations
 - compensations, orchestrations
 ms.assetid: 9d10c7be-6a4c-44cc-bf29-78ecdf147bd1
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975133"
 ---
 # <a name="compensation-biztalk-server-sample"></a><span data-ttu-id="9f1be-102">補正 (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="9f1be-102">Compensation (BizTalk Server Sample)</span></span>
 <span data-ttu-id="9f1be-103">補正のサンプルを使用する方法を示しています、**補正**オーケストレーションの図形です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-103">The Compensation sample demonstrates how to use the **Compensate** shape in an orchestration.</span></span>  
@@ -113,13 +114,13 @@ ms.lasthandoff: 11/28/2017
   
     1.  <span data-ttu-id="9f1be-202">**BizTalk Web サービス公開ウィザードへようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-202">On the **Welcome to the BizTalk Web Services Publishing Wizard** page, click **Next**.</span></span>  
   
-    2.  <span data-ttu-id="9f1be-203">**Web サービスの作成**] ページで、[ **web サービスとして公開する BizTalk オーケストレーション**をクリックし、 **[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-203">On the **Create Web Service** page, select **Publish BizTalk orchestration as web services**, and then click **Next**.</span></span>  
+    2.  <span data-ttu-id="9f1be-203">**Web サービスの作成**] ページで、[ **web サービスとして公開する BizTalk オーケストレーション**をクリックし、 **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-203">On the **Create Web Service** page, select **Publish BizTalk orchestration as web services**, and then click **Next**.</span></span>  
   
     3.  <span data-ttu-id="9f1be-204">**BizTalk アセンブリ**ページを参照して選択\<*サンプル パス*\>\Orchestrations\Compensation\bin\Release\CompensationOrchestration.dll をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-204">On the **BizTalk Assembly** page, browse and select \<*Samples Path*\>\Orchestrations\Compensation\bin\Release\CompensationOrchestration.dll, and then click **Next**.</span></span>  
   
     4.  <span data-ttu-id="9f1be-205">**オーケストレーションとポート** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-205">On the **Orchestrations and Ports** page, click **Next**.</span></span>  
   
-    5.  <span data-ttu-id="9f1be-206">**Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型**http://Microsoft.BizTalk.Samples.Compensation/**をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-206">On the **Web Service Properties** page, in **Target namespace of web service**, type **http://Microsoft.BizTalk.Samples.Compensation/**, and then click **Next**.</span></span>  
+    5.  <span data-ttu-id="9f1be-206">**Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型**http://Microsoft.BizTalk.Samples.Compensation/** をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-206">On the **Web Service Properties** page, in **Target namespace of web service**, type **http://Microsoft.BizTalk.Samples.Compensation/**, and then click **Next**.</span></span>  
   
     6.  <span data-ttu-id="9f1be-207">**Web サービス プロジェクト**] ページの [**場所**、型**http://localhost/CompensationOrchestrationWebServiceProxy**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-207">On the **Web Service Project** page, in **Location**, type **http://localhost/CompensationOrchestrationWebServiceProxy**.</span></span>  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="9f1be-225">**セキュリティ** タブで、をクリックして**インターネット**、クリックして**レベルのカスタマイズ**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-225">On the **Security** tab, click **Internet**, and then click **Custom Level**.</span></span>  
   
-    3.  <span data-ttu-id="9f1be-226">**[その他]**セクションで、いることを確認、**ドメイン間でデータ ソースにアクセス**設定が有効であり、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-226">In the **Miscellaneous** section, ensure that the **Access data sources across domains** setting is enabled, and then click **OK**.</span></span> <span data-ttu-id="9f1be-227">InfoPath ユーザー インターフェイス ソリューションのスクリプト コードを実行するには、この設定が必要です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-227">This setting is required for the InfoPath user interface solution scripting code to run.</span></span>  
+    3.  <span data-ttu-id="9f1be-226">**[その他]** セクションで、いることを確認、**ドメイン間でデータ ソースにアクセス**設定が有効であり、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-226">In the **Miscellaneous** section, ensure that the **Access data sources across domains** setting is enabled, and then click **OK**.</span></span> <span data-ttu-id="9f1be-227">InfoPath ユーザー インターフェイス ソリューションのスクリプト コードを実行するには、この設定が必要です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-227">This setting is required for the InfoPath user interface solution scripting code to run.</span></span>  
   
     4.  <span data-ttu-id="9f1be-228">Windows エクスプ ローラーに移動\<*サンプル パス*\>\Orchestrations\Compensation\InfoPath を右クリックして**Contact Info Update.xsn**  をクリックし、 **デザイン**です。</span><span class="sxs-lookup"><span data-stu-id="9f1be-228">In Windows Explorer, navigate to \<*Samples Path*\>\Orchestrations\Compensation\InfoPath, right-click **Contact Info Update.xsn** and then click **Design**.</span></span>  
   

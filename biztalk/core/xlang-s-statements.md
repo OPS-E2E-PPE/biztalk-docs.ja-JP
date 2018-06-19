@@ -1,14 +1,14 @@
 ---
-title: "XLANG のステートメント |Microsoft ドキュメント"
-ms.custom: 
+title: XLANG のステートメント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 620d0452-a8da-4285-b8b2-5a932ffcde28
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290338"
 ---
 # <a name="xlang-s-statements"></a><span data-ttu-id="ce2b9-102">XLANG のステートメント</span><span class="sxs-lookup"><span data-stu-id="ce2b9-102">XLANG-s Statements</span></span>
 <span data-ttu-id="ce2b9-103">Xlang/s ステートメントは一般に、2 つのカテゴリのいずれかに分類: 単純なステートメントなど、独自に作用する**受信**または**送信**、および複雑なステートメントに含まれているいずれかの単純なステートメントをグループ化またはその他の複雑なステートメントなど**スコープ**、**並列**、および**リッスン**です。</span><span class="sxs-lookup"><span data-stu-id="ce2b9-103">XLANG/s statements generally fall into one of two categories: simple statements that act on their own, such as **receive** or **send**, and complex statements that contain or group either simple statements or other complex statements, such as **scope**, **parallel**, and **listen**.</span></span> <span data-ttu-id="ce2b9-104">それぞれのステートメントは、BizTalk オーケストレーション デザイナーのオーケストレーション図形に対応しています。</span><span class="sxs-lookup"><span data-stu-id="ce2b9-104">Each statement is corresponding to an orchestration shape in the BizTalk Orchestration Designer.</span></span> <span data-ttu-id="ce2b9-105">XLANG/s では、次のステートメントを定義しています。</span><span class="sxs-lookup"><span data-stu-id="ce2b9-105">XLANG/s defines the following statements:</span></span>  

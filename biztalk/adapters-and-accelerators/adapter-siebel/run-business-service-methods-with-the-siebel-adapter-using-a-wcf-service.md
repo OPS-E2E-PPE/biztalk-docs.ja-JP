@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して、Siebel アダプターとビジネス サービス メソッドを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して、Siebel アダプターとビジネス サービス メソッドを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, invoking business service methods
 - business service methods, invoking by using the WCF service model
 ms.assetid: b41cf944-efdc-453f-824b-70581e7143e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222178"
 ---
 # <a name="invoke-business-service-methods-with-the-siebel-adapter-using-the-wcf-service-model"></a><span data-ttu-id="f968b-102">WCF サービス モデルを使用して、Siebel アダプターとビジネス サービス メソッドを呼び出す</span><span class="sxs-lookup"><span data-stu-id="f968b-102">Invoke Business Service Methods with the Siebel adapter using the WCF Service Model</span></span>
 <span data-ttu-id="f968b-103">Siebel ビジネス サービスのターゲット メソッドであること、WCF クライアントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="f968b-103">You can create a WCF client that targets methods of Siebel business services.</span></span> <span data-ttu-id="f968b-104">WCF クライアントを使用して、Siebel システムでこれらのメソッドを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="f968b-104">You can then use the WCF client to invoke these methods on the Siebel system.</span></span> <span data-ttu-id="f968b-105">[ビジネス サービス] ノードに表示された Siebel ビジネス サービス、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f968b-105">Siebel business services are surfaced under the Business Services node in the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="f968b-106">各ビジネス サービスによって公開されるメソッドは、そのサービスに対応するノードの下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="f968b-106">The methods exposed by each business service are surfaced under the node corresponding to that service.</span></span> <span data-ttu-id="f968b-107">」の手順を行うことができる[Siebel アダプターと WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)ビジネス サービスの WCF クライアントを生成して、サービスのメソッドの呼び出しに使用します。</span><span class="sxs-lookup"><span data-stu-id="f968b-107">You can follow the steps in [Overview of the WCF Service Model with the Siebel Adapter](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md) to generate a WCF client for a business service and to use it to invoke the service's methods.</span></span>  

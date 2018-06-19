@@ -1,18 +1,18 @@
 ---
-title: "パブリック キー トークンのユーティリティを置き換える |Microsoft ドキュメント"
-ms.custom: 
+title: パブリック キー トークンのユーティリティを置き換える |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Replace Public Key Token Utility
 - utilities, Replace Public Key Token Utility
 - public key token
 ms.assetid: ed8673b9-af06-4bd7-b8b7-7371e4dd0fed
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972048"
 ---
 # <a name="replace-public-key-token-utility"></a><span data-ttu-id="3bbd2-102">公開キー トークンの置換ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="3bbd2-102">Replace Public Key Token Utility</span></span>
 <span data-ttu-id="3bbd2-103">このユーティリティを使用すると、ファイル内の公開キー トークンまたは変数のいずれかを、厳密な名前のアセンブリ キー (.snk) ファイルから抽出した公開キー トークンに置き換えることができます。</span><span class="sxs-lookup"><span data-stu-id="3bbd2-103">This utility can be used to replace either a public key token or variable in a file with a public key token derived from a strong name assembly key (.snk) file.</span></span>  

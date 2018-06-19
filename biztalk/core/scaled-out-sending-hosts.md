@@ -1,11 +1,11 @@
 ---
-title: "スケール アウトされた送信ホスト |Microsoft ドキュメント"
-ms.custom: 
+title: スケール アウトされた送信ホスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - hosts, sending
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - hosts, scaling
 - adapters, scaling
 ms.assetid: a3d79e0b-8c1e-471c-88e2-623600dfd81a
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007747"
 ---
 # <a name="scaled-out-sending-hosts"></a><span data-ttu-id="3b83c-102">送信ホストのスケールアウト</span><span class="sxs-lookup"><span data-stu-id="3b83c-102">Scaled-Out Sending Hosts</span></span>
 <span data-ttu-id="3b83c-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信機能に高い可用性を確保するには、送信ホストをスケールアウトします。</span><span class="sxs-lookup"><span data-stu-id="3b83c-103">A scaled-out sending host makes sure that the sending functionality in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is highly available.</span></span> <span data-ttu-id="3b83c-104">メッセージを送信するためのホストにコンピューターを追加し、複数の送信ホスト インスタンスを実行することによって冗長性と可用性を高めることができます。</span><span class="sxs-lookup"><span data-stu-id="3b83c-104">If you add multiple computers to a host for sending messages, you can run multiple sending host instances for redundancy and high availability.</span></span>  

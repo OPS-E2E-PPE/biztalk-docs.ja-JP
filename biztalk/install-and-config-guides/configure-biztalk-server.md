@@ -18,6 +18,7 @@ ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31816982"
 ---
 # <a name="configure-biztalk-server"></a><span data-ttu-id="d95a8-103">BizTalk Server の構成</span><span class="sxs-lookup"><span data-stu-id="d95a8-103">Configure BizTalk Server</span></span>
 <span data-ttu-id="d95a8-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、基本構成またはカスタム構成を使用して構成できます。</span><span class="sxs-lookup"><span data-stu-id="d95a8-104">Configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] using basic configuration or custom configuration.</span></span>

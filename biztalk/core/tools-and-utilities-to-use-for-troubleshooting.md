@@ -1,14 +1,14 @@
 ---
-title: "トラブルシューティングで使用するツールとユーティリティ |Microsoft ドキュメント"
-ms.custom: 
+title: トラブルシューティングで使用するツールとユーティリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c817384f-e328-439d-9c41-a94ed75670ce
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008419"
 ---
 # <a name="tools-and-utilities-to-use-for-troubleshooting"></a><span data-ttu-id="feab1-102">トラブルシューティングで使用するツールとユーティリティ</span><span class="sxs-lookup"><span data-stu-id="feab1-102">Tools and Utilities to Use for Troubleshooting</span></span>
 <span data-ttu-id="feab1-103">このセクションでは、いくつかのツールと Microsoft BizTalk Server コンポーネントまたは依存関係の問題の根本原因を診断するために使用できるユーティリティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="feab1-103">This section describes several tools and utilities that can be useful for diagnosing the root cause of a problem in a Microsoft BizTalk Server component or dependency.</span></span>  

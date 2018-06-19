@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009027"
 ---
 # <a name="transmitpipeline-receiveport-node"></a><span data-ttu-id="2ec7d-102">TransmitPipeline (ReceivePort ノード)</span><span class="sxs-lookup"><span data-stu-id="2ec7d-102">TransmitPipeline (ReceivePort Node)</span></span>
 <span data-ttu-id="2ec7d-103">バインド ファイルの ReceivePort ノードの TransmitPipeline ノードでは、バインド ファイルと共にエクスポートされる双方向受信ポートにバインドされている送信パイプラインに関する特定の情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="2ec7d-103">The TransmitPipeline node of the ReceivePort node of a binding file provides specific information about the send pipeline bound to a two way receive port exported with the binding file.</span></span>  

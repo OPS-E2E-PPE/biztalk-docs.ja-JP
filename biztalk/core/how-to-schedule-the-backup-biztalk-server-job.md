@@ -1,15 +1,15 @@
 ---
-title: "バックアップの BizTalk Server のジョブのスケジュールを設定 |Microsoft ドキュメント"
-description: "BizTalk Server のバックアップ ジョブのパラメーターを構成および実行毎月、毎週、日単位、または 1 時間ごとに、スケジュールを設定"
-ms.custom: 
+title: バックアップの BizTalk Server のジョブのスケジュールを設定 |Microsoft ドキュメント
+description: BizTalk Server のバックアップ ジョブのパラメーターを構成および実行毎月、毎週、日単位、または 1 時間ごとに、スケジュールを設定
+ms.custom: ''
 ms.date: 11/02/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e89fff4-da87-4cdc-acc4-46f03c3269fc
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 9aaed443492b74729171fef79c634bff561af929
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2017
+ms.locfileid: "23980754"
 ---
 # <a name="schedule-the-backup-biztalk-server-job"></a><span data-ttu-id="2fa8d-103">バックアップの BizTalk Server ジョブのスケジュール</span><span class="sxs-lookup"><span data-stu-id="2fa8d-103">Schedule the Backup BizTalk Server Job</span></span>
 <span data-ttu-id="2fa8d-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブは、SQL Server エージェント サービスにより設定されたスケジュールに従って実行されます。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-104">The Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job runs as scheduled by the SQL Server Agent service.</span></span> <span data-ttu-id="2fa8d-105">バックアップの実行頻度を変更するには、SQL Server Management Studio を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブのスケジュールを変更します。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-105">If you want to create more frequent or less frequent backups, you can change the schedule of the Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job by using SQL Server Management Studio.</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/03/2017
   
 6.  <span data-ttu-id="2fa8d-114">**ジョブ ステップの一覧** **BackupFull**、し、**編集**です。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-114">In the **Job step list**, select **BackupFull**, and then select **Edit**.</span></span>  
   
-7.  <span data-ttu-id="2fa8d-115">**ジョブ ステップのプロパティ - BackupFull**で、**コマンド**ボックスで、完全バックアップを実行する頻度を変更することで、コマンドを更新します**'h'** (1 時間ごと)、**が '。** (毎日) **'w'** (毎週)、 **am'** (毎月)、 **'y'** (毎年)。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-115">In the **Job Step Properties - BackupFull**, in the **Command** box, update the command by changing the frequency to run a full backup: **'h'** (hourly), **'d'** (daily), **'w'** (weekly), **'m'** (monthly), **'y'** (yearly).</span></span> <span data-ttu-id="2fa8d-116">**[ OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-116">Select **OK**.</span></span>  
+7.  <span data-ttu-id="2fa8d-115">**ジョブ ステップのプロパティ - BackupFull**で、**コマンド**ボックスで、完全バックアップを実行する頻度を変更することで、コマンドを更新します **'h'** (1 時間ごと)、**が '。** (毎日) **'w'** (毎週)、 **am'** (毎月)、 **'y'** (毎年)。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-115">In the **Job Step Properties - BackupFull**, in the **Command** box, update the command by changing the frequency to run a full backup: **'h'** (hourly), **'d'** (daily), **'w'** (weekly), **'m'** (monthly), **'y'** (yearly).</span></span> <span data-ttu-id="2fa8d-116">**[ OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-116">Select **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="2fa8d-117">BizTalk Server のバックアップ ジョブを初めて実行するには、完全バックアップが完了します。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-117">The first time the Backup BizTalk Server job runs, it completes a full backup.</span></span>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/03/2017
     > [!NOTE]
     >  <span data-ttu-id="2fa8d-144">[ジョブのスケジュール](https://docs.microsoft.com/sql/ssms/agent/schedule-a-job)詳細を示します。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-144">[Scheduling Jobs](https://docs.microsoft.com/sql/ssms/agent/schedule-a-job) provides more details.</span></span>
   
-13. <span data-ttu-id="2fa8d-145">**ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)**をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-145">In the **Job Properties - Backup BizTalk Server (BizTalkMgmtDb)**, click **OK**.</span></span>  
+13. <span data-ttu-id="2fa8d-145">**ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)** をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="2fa8d-145">In the **Job Properties - Backup BizTalk Server (BizTalkMgmtDb)**, click **OK**.</span></span>  
   
 ## <a name="more-good-stuff"></a><span data-ttu-id="2fa8d-146">便利な機能</span><span class="sxs-lookup"><span data-stu-id="2fa8d-146">More good stuff</span></span>  
  <span data-ttu-id="2fa8d-147">[バックアップの BizTalk Server のジョブを構成します。](../core/how-to-configure-the-backup-biztalk-server-job.md) </span><span class="sxs-lookup"><span data-stu-id="2fa8d-147">[Configure the Backup BizTalk Server Job](../core/how-to-configure-the-backup-biztalk-server-job.md) </span></span>  

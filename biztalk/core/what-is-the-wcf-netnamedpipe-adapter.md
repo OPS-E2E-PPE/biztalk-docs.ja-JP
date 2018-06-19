@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289250"
 ---
 # <a name="what-is-the-wcf-netnamedpipe-adapter"></a><span data-ttu-id="02373-103">Wcf-netnamedpipe アダプタとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="02373-103">What Is the WCF-NetNamedPipe Adapter?</span></span>
 <span data-ttu-id="02373-104">WCF-NetNamedPipe アダプタは、サービスとクライアントの両方が WCF ベースである環境において、同一コンピュータ上でのプロセス間通信を可能にします。</span><span class="sxs-lookup"><span data-stu-id="02373-104">The WCF-NetNamedPipe adapter provides cross-process communication on the same computer in an environment in which both services and clients are WCF based.</span></span> <span data-ttu-id="02373-105">このアダプタからは、SOAP の信頼性機能とトランザクション機能にフル アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="02373-105">It provides full access to SOAP reliability and transaction features.</span></span> <span data-ttu-id="02373-106">このアダプタでは名前付きパイプ トランスポートが使用され、メッセージではバイナリ エンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="02373-106">The adapter uses the named pipe transport, and messages have binary encoding.</span></span> <span data-ttu-id="02373-107">コンピュータ間通信ではこのアダプタを使用できません。</span><span class="sxs-lookup"><span data-stu-id="02373-107">This adapter cannot be used in cross-computer communication.</span></span>  

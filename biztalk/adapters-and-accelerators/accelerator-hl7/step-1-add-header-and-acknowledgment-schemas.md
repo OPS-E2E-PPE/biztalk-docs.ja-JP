@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 追加のヘッダーと受信確認スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 追加のヘッダーと受信確認スキーマ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 808132bf-02e7-4ff4-b914-9fae5d27e5fd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005339"
 ---
 # <a name="step-1-add-header-and-acknowledgment-schemas"></a><span data-ttu-id="30e8a-102">手順 1: ヘッダーと受信確認スキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="30e8a-102">Step 1: Add Header and Acknowledgment Schemas</span></span>
 <span data-ttu-id="30e8a-103">この手順では、BTAHL72XCommon プロジェクト テンプレートに基づく新しいプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="30e8a-103">In this step, you create a new project based on the BTAHL72XCommon Project template.</span></span> <span data-ttu-id="30e8a-104">このテンプレートには、メッセージ ヘッダー (MSH_25_GLO_DEF.xsd) と受信確認 (ACK_24_GLO_DEF.xsd) の 3 つの一般的なスキーマが含まれています (ACK_25_GLO_DEF.xsd) とします。</span><span class="sxs-lookup"><span data-stu-id="30e8a-104">This template contains the three common schemas for message headers (MSH_25_GLO_DEF.xsd) and acknowledgments (ACK_24_GLO_DEF.xsd) and (ACK_25_GLO_DEF.xsd).</span></span> <span data-ttu-id="30e8a-105">そのためのプロジェクトでこれらのスキーマを含める必要がありますを BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) ビルドや、メッセージ ヘッダーと受信確認を正しく検証します。</span><span class="sxs-lookup"><span data-stu-id="30e8a-105">You must include these schemas in a project so that BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) builds and/or validates the message headers and acknowledgments correctly.</span></span> <span data-ttu-id="30e8a-106">このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X です。</span><span class="sxs-lookup"><span data-stu-id="30e8a-106">This process is common across all schema versions of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="30e8a-115">**場所**ボックスを参照 **\<** *ドライブ***:\>\Batching チュートリアル**です。</span><span class="sxs-lookup"><span data-stu-id="30e8a-115">In the **Location** box, browse to **\<***drive***:\>\Batching Tutorial**.</span></span>  
   
-6.  <span data-ttu-id="30e8a-116">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="30e8a-116">Click **OK**.</span></span>  
+6.  <span data-ttu-id="30e8a-116">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="30e8a-116">Click **OK**.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="30e8a-117">ソリューション エクスプ ローラーで、3 つのスキーマ (MSH_25_GLO_DEF.xsd、ACK_24_GLO_DEF.xsd、および ACK_25_GLO_DEF.xsd) は、プロジェクトに含まれます。</span><span class="sxs-lookup"><span data-stu-id="30e8a-117">In Solution Explorer, three schemas (MSH_25_GLO_DEF.xsd, ACK_24_GLO_DEF.xsd, and ACK_25_GLO_DEF.xsd) are included in the project.</span></span>  

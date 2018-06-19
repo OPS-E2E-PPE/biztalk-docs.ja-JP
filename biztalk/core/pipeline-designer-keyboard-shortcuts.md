@@ -1,17 +1,17 @@
 ---
-title: "パイプライン デザイナーのキーボード ショートカット |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン デザイナーのキーボード ショートカット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Pipeline Designer, keyboard shortcuts
 - keyboard shortcuts, Pipeline Designer
 ms.assetid: 1f40da23-2dd8-4d25-9b99-f83b1696ceb7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264050"
 ---
 # <a name="pipeline-designer-keyboard-shortcuts"></a><span data-ttu-id="ebd40-102">パイプライン デザイナーのキーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="ebd40-102">Pipeline Designer Keyboard Shortcuts</span></span>
 <span data-ttu-id="ebd40-103">マウスの代わりにキーボードを使用して、デザイン画面を操作できます。</span><span class="sxs-lookup"><span data-stu-id="ebd40-103">You can navigate through the design surface by using your keyboard instead of your mouse.</span></span> <span data-ttu-id="ebd40-104">次の表に、使用できるキーボード ショートカットを示します。</span><span class="sxs-lookup"><span data-stu-id="ebd40-104">The following table shows the keyboard shortcuts that you can use.</span></span>  

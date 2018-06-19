@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で RosettaNet accelerator に関する既知の問題 |Microsoft ドキュメント"
-description: "既知の問題と解決策の障害、BAM、インストールおよび構成、および BizTalk Server で BTARN で複数の 0A1 通知を参照してください。"
-caps.latest.revision: "11"
+title: BizTalk Server で RosettaNet accelerator に関する既知の問題 |Microsoft ドキュメント
+description: 既知の問題と解決策の障害、BAM、インストールおよび構成、および BizTalk Server で BTARN で複数の 0A1 通知を参照してください。
+caps.latest.revision: 11
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010779"
 ---
 # <a name="known-issues"></a><span data-ttu-id="346bc-103">既知の問題</span><span class="sxs-lookup"><span data-stu-id="346bc-103">Known Issues</span></span>
 <span data-ttu-id="346bc-104">ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] に関するエラーを回避するときに役立つ情報を紹介します。</span><span class="sxs-lookup"><span data-stu-id="346bc-104">This section contains useful information that may help you avoid errors with [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="346bc-105">既知の問題は次の分野に分かれています。</span><span class="sxs-lookup"><span data-stu-id="346bc-105">The known issues are grouped into the following areas:</span></span>  
@@ -194,7 +195,7 @@ GO
  <span data-ttu-id="346bc-239">エラーの説明を記録したり送信したりする必要がある場合、aspx コードをカスタマイズして、応答メッセージに実際のテキストを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="346bc-239">If you need to log or send an error description, you can customize the aspx code to have the actual text returned in the response.</span></span> <span data-ttu-id="346bc-240">そのためには、HttpResponse.Status (本来の asp 要求の応答オブジェクト) または HttpWebResponse.StatusDescription ([!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] コールにより、HttpWebRequest オブジェクトの GetResponse メソッドに返される) を使用します。</span><span class="sxs-lookup"><span data-stu-id="346bc-240">To do so, use HttpResponse.Status (which is the intrinsic asp request’s response object) or HttpWebResponse.StatusDescription (which is returned by the [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] call to the HttpWebRequest object’s GetResponse method).</span></span> <span data-ttu-id="346bc-241">該当する応答オブジェクトのいずれかから戻り値を返すには、Response.Status 値を、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] に付属の aspx コードに設定されている Response.StatusCode の設定値と同様に設定します。</span><span class="sxs-lookup"><span data-stu-id="346bc-241">To return the return values from one of the applicable response objects, set the Response.Status value similar to how Response.StatusCode is set in the aspx code that ships with [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].</span></span>  
   
 ### <a name="rnif-11-messages-cannot-be-read-in-plain-text-from-non-repudiation-tables-if-the-encoding-method-is-set-to-base64"></a><span data-ttu-id="346bc-242">エンコード方式を Base64 に設定している場合に否認不可テーブルから RNIF 1.1 のメッセージをプレーン テキストで読むことができない</span><span class="sxs-lookup"><span data-stu-id="346bc-242">RNIF 1.1 messages cannot be read in plain text from non-repudiation tables if the encoding method is set to Base64</span></span>  
- <span data-ttu-id="346bc-243">これはエンコード方式が Base64 に設定されている場合にのみ発生します。</span><span class="sxs-lookup"><span data-stu-id="346bc-243">This only happens if the encoding method is set to Base64.</span></span> <span data-ttu-id="346bc-244">エンコード方式が quoted-printable または 8 ビットに設定されている場合は、否認不可テーブルからメッセージをクリア テキストで読むことができます。</span><span class="sxs-lookup"><span data-stu-id="346bc-244">Messages can be read in clear text from non-repudiation tables if encoding method is set to quoted-printable or 8-bit.</span></span> <span data-ttu-id="346bc-245">メッセージを参照するには、メッセージ ファイルを拡張子 *.eml で保存してから、Outlook Express でそれを開くと、自動的にデコードされます。</span><span class="sxs-lookup"><span data-stu-id="346bc-245">You need to save the message file with *.eml extension and then open it using Outlook Express to read the message and Outlook Express will decode the message for you.</span></span> <span data-ttu-id="346bc-246">または、以下のコードを使用すると、Base64 でエンコードされているメッセージを否認不可テーブルから読むことができます。</span><span class="sxs-lookup"><span data-stu-id="346bc-246">You may also use the code below to read the Base64 encoded messages from non-repudiation tables.</span></span>  
+ <span data-ttu-id="346bc-243">これはエンコード方式が Base64 に設定されている場合にのみ発生します。</span><span class="sxs-lookup"><span data-stu-id="346bc-243">This only happens if the encoding method is set to Base64.</span></span> <span data-ttu-id="346bc-244">エンコード方式が quoted-printable または 8 ビットに設定されている場合は、否認不可テーブルからメッセージをクリア テキストで読むことができます。</span><span class="sxs-lookup"><span data-stu-id="346bc-244">Messages can be read in clear text from non-repudiation tables if encoding method is set to quoted-printable or 8-bit.</span></span> <span data-ttu-id="346bc-245">メッセージを参照するには、メッセージ ファイルを拡張子 \*.eml で保存してから、Outlook Express でそれを開くと、自動的にデコードされます。</span><span class="sxs-lookup"><span data-stu-id="346bc-245">You need to save the message file with \*.eml extension and then open it using Outlook Express to read the message and Outlook Express will decode the message for you.</span></span> <span data-ttu-id="346bc-246">または、以下のコードを使用すると、Base64 でエンコードされているメッセージを否認不可テーブルから読むことができます。</span><span class="sxs-lookup"><span data-stu-id="346bc-246">You may also use the code below to read the Base64 encoded messages from non-repudiation tables.</span></span>  
   
 ```  
 byte[] textBytes = Convert.FromBase64String(txtEncodedText.Text);  

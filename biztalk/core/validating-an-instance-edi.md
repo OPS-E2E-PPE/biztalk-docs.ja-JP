@@ -1,14 +1,14 @@
 ---
-title: "インスタンス (EDI) の検証 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス (EDI) の検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0fe4e87-5ab4-41e4-8ceb-8f6cf40cae0b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288914"
 ---
 # <a name="validating-an-instance-edi"></a><span data-ttu-id="fac57-102">インスタンスの検証 (EDI)</span><span class="sxs-lookup"><span data-stu-id="fac57-102">Validating an Instance (EDI)</span></span>
 <span data-ttu-id="fac57-103">デザイン時にインスタンスを EDI スキーマに対して検証することができます。</span><span class="sxs-lookup"><span data-stu-id="fac57-103">You can validate an instance against its EDI schema at design time.</span></span> <span data-ttu-id="fac57-104">それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。</span><span class="sxs-lookup"><span data-stu-id="fac57-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="fac57-105">検証するインスタンスは、単一のトランザクション セット (インターチェンジとグループ ヘッダーなし)、単一のトランザクション セットを持つインターチェンジ (インターチェンジとグループ ヘッダーあり)、複数のトランザクション セットを持つ完全なバッチ処理されたインターチェンジ (インターチェンジとグループ ヘッダーあり) のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="fac57-105">The instance that you validate can be a single transaction set (without interchange and group headers), an interchange with a single transaction set (with interchange and group headers), or a complete batched interchange with multiple transaction sets (with interchange and group headers).</span></span>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="fac57-134">インスタンスが必要があります以外の文字を使用するかどうかは**基本的な****拡張**または**Unicode**で**構文識別子**です。</span><span class="sxs-lookup"><span data-stu-id="fac57-134">If your instance should use a character set other than **Basic**, select **Extended** or **Unicode** in **Syntax identifier**.</span></span>  
   
-    4.  <span data-ttu-id="fac57-135">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fac57-135">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="fac57-135">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fac57-135">Click **OK**.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="fac57-136">**EDI インスタンスのプロパティ** ダイアログ ボックスが 2 回クリックした後に表示される**OK**です。</span><span class="sxs-lookup"><span data-stu-id="fac57-136">The **EDI Instance Properties** dialog box might appear a second time after you have clicked **OK**.</span></span> <span data-ttu-id="fac57-137">場合は、クリックして**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="fac57-137">If so, click **OK** again.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "バインド拡張機能のバインドの種類を取得できません |。Microsoft ドキュメント"
-ms.custom: 
+title: バインド拡張機能のバインドの種類を取得できません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a7cfc81-7439-48f9-8cac-42b2419ecd9d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973768"
 ---
 # <a name="unable-to-get-binding-type-for-binding-extension"></a><span data-ttu-id="2c838-102">バインド拡張機能のバインドの種類を取得できません</span><span class="sxs-lookup"><span data-stu-id="2c838-102">Unable to get binding type for binding extension</span></span>
 ## <a name="details"></a><span data-ttu-id="2c838-103">詳細</span><span class="sxs-lookup"><span data-stu-id="2c838-103">Details</span></span>  
@@ -37,9 +38,9 @@ ms.lasthandoff: 11/28/2017
 ## <a name="user-action"></a><span data-ttu-id="2c838-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="2c838-120">User Action</span></span>  
  <span data-ttu-id="2c838-121">解決するのには、このエラーは、次の 1 つ以上を実行します。</span><span class="sxs-lookup"><span data-stu-id="2c838-121">To resolve this error do one or more of the following:</span></span>  
   
--   <span data-ttu-id="2c838-122">確認、 **machine.config ファイル**で**%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**が、 \< **bindingExtensions** \>要素が適切に構成します。</span><span class="sxs-lookup"><span data-stu-id="2c838-122">Ensure the **machine.config file** in **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config** has the \<**bindingExtensions**\> element configured properly.</span></span>  
+-   <span data-ttu-id="2c838-122">確認、 **machine.config ファイル**で **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**が、 \< **bindingExtensions** \>要素が適切に構成します。</span><span class="sxs-lookup"><span data-stu-id="2c838-122">Ensure the **machine.config file** in **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config** has the \<**bindingExtensions**\> element configured properly.</span></span>  
   
--   <span data-ttu-id="2c838-123">Windows エクスプ ローラーに移動**%WinDir%\Assembly**、カスタム バインディングの拡張機能を実装するアセンブリが正しくインストールされているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="2c838-123">In Windows Explorer, go to **%WinDir%\Assembly**, and make sure the assemblies implementing the custom binding extension are installed properly.</span></span>  
+-   <span data-ttu-id="2c838-123">Windows エクスプ ローラーに移動 **%WinDir%\Assembly**、カスタム バインディングの拡張機能を実装するアセンブリが正しくインストールされているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="2c838-123">In Windows Explorer, go to **%WinDir%\Assembly**, and make sure the assemblies implementing the custom binding extension are installed properly.</span></span>  
   
 -   <span data-ttu-id="2c838-124">WCF-Custom アダプターの場合、BizTalk 管理コンソールで、WCF トランスポートを実行するホスト インスタンスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="2c838-124">For the WCF-Custom adapter, in the BizTalk Administration console, restart the host instance running the WCF transport.</span></span>  
   

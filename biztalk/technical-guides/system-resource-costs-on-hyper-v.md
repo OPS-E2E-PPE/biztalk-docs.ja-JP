@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f25a76c-1c41-41c0-b28d-d7473dbe1cd1
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009427"
 ---
 # <a name="system-resource-costs-on-hyper-v"></a><span data-ttu-id="7b563-102">HYPER-V のシステム リソースのコスト</span><span class="sxs-lookup"><span data-stu-id="7b563-102">System Resource Costs on Hyper-V</span></span>
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a><span data-ttu-id="7b563-103">HYPER-V でゲスト オペレーティング システムを実行しているに関連付けられたシステム リソースのコスト</span><span class="sxs-lookup"><span data-stu-id="7b563-103">System Resource Costs Associated with Running a Guest Operating System on Hyper-V</span></span>  
@@ -142,7 +143,7 @@ ms.lasthandoff: 03/28/2018
 |<span data-ttu-id="7b563-287">1 秒あたりの書き込み I/o</span><span class="sxs-lookup"><span data-stu-id="7b563-287">Write I/Os per second</span></span>|<span data-ttu-id="7b563-288">89.00</span><span class="sxs-lookup"><span data-stu-id="7b563-288">89.00</span></span>|<span data-ttu-id="7b563-289">82.87</span><span class="sxs-lookup"><span data-stu-id="7b563-289">82.87</span></span>|<span data-ttu-id="7b563-290">93.11%</span><span class="sxs-lookup"><span data-stu-id="7b563-290">93.11%</span></span>|  
 |<span data-ttu-id="7b563-291">1 秒あたりの合計 Mb</span><span class="sxs-lookup"><span data-stu-id="7b563-291">Total MBs per second</span></span>|<span data-ttu-id="7b563-292">0.53</span><span class="sxs-lookup"><span data-stu-id="7b563-292">0.53</span></span>|<span data-ttu-id="7b563-293">0.49</span><span class="sxs-lookup"><span data-stu-id="7b563-293">0.49</span></span>|<span data-ttu-id="7b563-294">92.45%</span><span class="sxs-lookup"><span data-stu-id="7b563-294">92.45%</span></span>|  
 |<span data-ttu-id="7b563-295">平均応答時間 (ミリ秒) の読み取り</span><span class="sxs-lookup"><span data-stu-id="7b563-295">Average read response time (ms)</span></span>|<span data-ttu-id="7b563-296">5.4066</span><span class="sxs-lookup"><span data-stu-id="7b563-296">5.4066</span></span>|<span data-ttu-id="7b563-297">5.7797</span><span class="sxs-lookup"><span data-stu-id="7b563-297">5.7797</span></span>|<span data-ttu-id="7b563-298">93.54%</span><span class="sxs-lookup"><span data-stu-id="7b563-298">93.54%</span></span>|  
-|<span data-ttu-id="7b563-299">書き込みの平均応答時間 (ミリ秒)</span><span class="sxs-lookup"><span data-stu-id="7b563-299">Average write response time (ms)</span></span>|<span data-ttu-id="7b563-300">0.2544</span><span class="sxs-lookup"><span data-stu-id="7b563-300">0.2544</span></span>|<span data-ttu-id="7b563-301">0.3716</span><span class="sxs-lookup"><span data-stu-id="7b563-301">0.3716</span></span>|<span data-ttu-id="7b563-302">68.42%**注:**パススルー ディスクの書き込みの平均応答時間がまだ内でもはパス スルー ディスクの書き込みの平均応答時間の相対的なパフォーマンスでは、物理ディスクのパフォーマンスの 68.42% でしたが、10 ミリ秒の許容範囲を確立します。</span><span class="sxs-lookup"><span data-stu-id="7b563-302">68.42% **Note:**  Although the relative performance of the pass through disks for Average write response time was 68.42% of the performance of physical disks, the Average write response time of the passthrough disks was still well within established acceptable limits of 10 ms.</span></span>|  
+|<span data-ttu-id="7b563-299">書き込みの平均応答時間 (ミリ秒)</span><span class="sxs-lookup"><span data-stu-id="7b563-299">Average write response time (ms)</span></span>|<span data-ttu-id="7b563-300">0.2544</span><span class="sxs-lookup"><span data-stu-id="7b563-300">0.2544</span></span>|<span data-ttu-id="7b563-301">0.3716</span><span class="sxs-lookup"><span data-stu-id="7b563-301">0.3716</span></span>|<span data-ttu-id="7b563-302">68.42%**注:** パススルー ディスクの書き込みの平均応答時間がまだ内でもはパス スルー ディスクの書き込みの平均応答時間の相対的なパフォーマンスでは、物理ディスクのパフォーマンスの 68.42% でしたが、10 ミリ秒の許容範囲を確立します。</span><span class="sxs-lookup"><span data-stu-id="7b563-302">68.42% **Note:**  Although the relative performance of the pass through disks for Average write response time was 68.42% of the performance of physical disks, the Average write response time of the passthrough disks was still well within established acceptable limits of 10 ms.</span></span>|  
 |<span data-ttu-id="7b563-303">I/O の平均応答時間 (ミリ秒)</span><span class="sxs-lookup"><span data-stu-id="7b563-303">Average I/O response time (ms)</span></span>|<span data-ttu-id="7b563-304">3.7066</span><span class="sxs-lookup"><span data-stu-id="7b563-304">3.7066</span></span>|<span data-ttu-id="7b563-305">3.9904</span><span class="sxs-lookup"><span data-stu-id="7b563-305">3.9904</span></span>|<span data-ttu-id="7b563-306">93.89%</span><span class="sxs-lookup"><span data-stu-id="7b563-306">93.89%</span></span>|  
   
 > [!NOTE]  

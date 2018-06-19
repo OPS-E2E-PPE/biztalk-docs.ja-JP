@@ -1,14 +1,14 @@
 ---
-title: "管理者用の BAM タスク |Microsoft ドキュメント"
-ms.custom: 
+title: 管理者用の BAM タスク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d9ae9a6-50fa-4f82-8e48-8dffa55c127f
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008427"
 ---
 # <a name="bam-tasks-for-administrators"></a><span data-ttu-id="e2d59-102">管理者の BAM タスク</span><span class="sxs-lookup"><span data-stu-id="e2d59-102">BAM Tasks for Administrators</span></span>
 <span data-ttu-id="e2d59-103">このトピックでは、BAM インフラストラクチャを管理する際に BAM 管理者が実行する一般的なタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e2d59-103">This topic describes typical tasks that BAM administrators undertake in managing the BAM infrastructure.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="e2d59-134">BAM 通知を作成する、C:\Program files \microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol の実行の分散環境では、各コンピューター上のサービス名の登録 - bamalerts-サーバー\<サーバー名\>-サービス - serviceusername\<警告ユーザー アカウント\>-servicepassword \<passwd\>コマンド プロンプトからです。</span><span class="sxs-lookup"><span data-stu-id="e2d59-134">To create the BAM notification service on each computer in the distributed environment run C:\Program Files\Microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol register -name bamalerts -server \<server name\> -service -serviceusername \<alertsuseraccount\> -servicepassword \<passwd\> from a command prompt.</span></span>  
   
-3.  <span data-ttu-id="e2d59-135">各コンピューターで、分散された Notifications Services 用に構成されている BAM インフラストラクチャ構成ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="e2d59-135">Edit the BAM infrastructure configuration file on each computer being configured for distributed Notifications Serviced.</span></span> <span data-ttu-id="e2d59-136">構成ファイルを取得するを使用して、 **bm.exe get config ファイル名:\<出力ファイル\>**コマンド。</span><span class="sxs-lookup"><span data-stu-id="e2d59-136">To get the configuration file, use the **bm.exe get-config -FileName:\<output file\>** command.</span></span>  
+3.  <span data-ttu-id="e2d59-135">各コンピューターで、分散された Notifications Services 用に構成されている BAM インフラストラクチャ構成ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="e2d59-135">Edit the BAM infrastructure configuration file on each computer being configured for distributed Notifications Serviced.</span></span> <span data-ttu-id="e2d59-136">構成ファイルを取得するを使用して、 **bm.exe get config ファイル名:\<出力ファイル\>** コマンド。</span><span class="sxs-lookup"><span data-stu-id="e2d59-136">To get the configuration file, use the **bm.exe get-config -FileName:\<output file\>** command.</span></span>  
   
 4.  <span data-ttu-id="e2d59-137">構成ファイルを編集し、分散された Notification Services 環境でサーバーを参照します。</span><span class="sxs-lookup"><span data-stu-id="e2d59-137">Edit the configuration file to reference the servers in the distributed Notification services environment:</span></span>  
   

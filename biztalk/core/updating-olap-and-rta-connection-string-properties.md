@@ -1,11 +1,11 @@
 ---
-title: "OLAP および RTA 接続文字列プロパティの更新 |Microsoft ドキュメント"
-ms.custom: 
+title: OLAP および RTA 接続文字列プロパティの更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], connection strings
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - OLAP cubes, connection strings
 - connection strings, BAM
 ms.assetid: 870615b9-6f84-49cb-81bf-b870cc1d3dda
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286858"
 ---
 # <a name="updating-olap-and-rta-connection-string-properties"></a><span data-ttu-id="adcbe-102">OLAP 接続文字列および RTA 接続文字列のプロパティの更新</span><span class="sxs-lookup"><span data-stu-id="adcbe-102">Updating OLAP and RTA Connection String Properties</span></span>
 <span data-ttu-id="adcbe-103">OLAP 接続文字列およびリアルタイム集計 (RTA) 接続文字列の更新の詳細については、次のトピックを参照してください。これらのトピックでは、代替コンピューターへの BAM データベースの復元について説明しています。</span><span class="sxs-lookup"><span data-stu-id="adcbe-103">For information about updating the OLAP and real-time aggregation (RTA) connection strings, see the following topics that describe restoring BAM databases to alternate computers:</span></span>  

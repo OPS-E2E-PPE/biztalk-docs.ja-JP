@@ -1,17 +1,17 @@
 ---
-title: "HTTPSolicitResponse |Microsoft ドキュメント"
-ms.custom: 
+title: HTTPSolicitResponse |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: b149544e-3279-4ac9-b31f-fff3e41ec8e7
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973128"
 ---
 # <a name="httpsolicitresponse"></a><span data-ttu-id="3ed3d-102">HTTPSolicitResponse</span><span class="sxs-lookup"><span data-stu-id="3ed3d-102">HTTPSolicitResponse</span></span>
 <span data-ttu-id="3ed3d-103">HTTPSolicitResponse サンプルは、オーケストレーション データの処理に ASP.NET アプリケーションを利用する Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-103">The HTTPSolicitResponse sample demonstrates how to create a Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration that leverages an ASP.NET application to help process orchestration data.</span></span> <span data-ttu-id="3ed3d-104">このサンプルでは、オーケストレーションは要求 - 応答のポートを利用して、ASP.NET アプリケーションにメッセージを送信し、応答を受信します。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-104">In this sample, the orchestration makes use of a request/response port to send a message to the ASP.NET application and to retrieve the response.</span></span> <span data-ttu-id="3ed3d-105">HTTP アダプターを使用することにより、BizTalk Server オーケストレーションと ASP.NET アプリケーションを統合できます。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-105">You achieve the integration between the BizTalk Server orchestration and the ASP.NET application by using the HTTP adapter.</span></span> <span data-ttu-id="3ed3d-106">詳細については、次を参照してください。 [HTTP アダプター](../core/http-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-106">For more information, see [HTTP Adapter](../core/http-adapter.md).</span></span>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
     -   <span data-ttu-id="3ed3d-145">このサンプルで使用するマルチプライア ASP.NET アプリケーションをコンパイルして構成します。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-145">Compiles and configures the multiplier ASP.NET application used by this sample.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="3ed3d-146">IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを**.Net Framework v4.0**です。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-146">While creating application pool in IIS Manager, set the **DefaultAppPool** .NET Framework version to **.Net Framework v4.0**.</span></span>  
+        >  <span data-ttu-id="3ed3d-146">IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを **.Net Framework v4.0**です。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-146">While creating application pool in IIS Manager, set the **DefaultAppPool** .NET Framework version to **.Net Framework v4.0**.</span></span>  
   
     -   <span data-ttu-id="3ed3d-147">このサンプルで使用する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションをコンパイルし、展開します。</span><span class="sxs-lookup"><span data-stu-id="3ed3d-147">Compiles and deploys the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration used in this sample.</span></span>  
   

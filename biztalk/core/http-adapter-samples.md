@@ -1,17 +1,17 @@
 ---
-title: "HTTP アダプター サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプター サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: 6796ea39-2947-45df-b228-1ecdb23a7ab8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970984"
 ---
 # <a name="http-adapter-samples"></a><span data-ttu-id="2241a-102">HTTP アダプター サンプル</span><span class="sxs-lookup"><span data-stu-id="2241a-102">HTTP Adapter Samples</span></span>
 <span data-ttu-id="2241a-103">このセクションでは、BizTalk HTTP アダプターを使用するときの高度な機能を示すサンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2241a-103">This section contains samples that illustrate advanced functionality when using the BizTalk HTTP Adapter.</span></span>  

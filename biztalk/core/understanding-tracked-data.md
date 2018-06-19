@@ -1,11 +1,11 @@
 ---
-title: "追跡データを理解する |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡データを理解する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - instances, viewing
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - suspended instances
 - instances, suspended
 ms.assetid: dcc3fbd5-cd2c-4780-a577-0ccd521cf5eb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286586"
 ---
 # <a name="understanding-tracked-data"></a><span data-ttu-id="2b862-102">追跡データについて</span><span class="sxs-lookup"><span data-stu-id="2b862-102">Understanding Tracked Data</span></span>
 <span data-ttu-id="2b862-103">クエリの追跡を実行すると、クエリ結果ウィンドウ下部の結果一覧に追跡情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2b862-103">When you run a tracking query, the tracked information appears in the results list at the bottom of the Query Results window.</span></span>  

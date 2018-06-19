@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション デザイナーでの作業 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション デザイナーでの作業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, saving
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - orchestrations, naming conventions
 - orchestrations, deleting
 ms.assetid: 13e72b41-d9b6-4508-9a44-b3c7c1804f36
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975480"
 ---
 # <a name="working-in-orchestration-designer"></a><span data-ttu-id="5c8d8-102">オーケストレーション デザイナーの操作</span><span class="sxs-lookup"><span data-stu-id="5c8d8-102">Working in Orchestration Designer</span></span>
 <span data-ttu-id="5c8d8-103">BizTalk プロジェクトを起動すると、新しいオーケストレーションを作成したり、既存のオーケストレーションをプロジェクトに追加したりできるようになります。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-103">After you have started a BizTalk project, you can create new orchestrations and add existing orchestrations to the project.</span></span> <span data-ttu-id="5c8d8-104">オーケストレーションの作成と保存、プロジェクトへの既存のオーケストレーションの追加や削除、オーケストレーションの名前の変更、およびオーケストレーションのプロパティの設定については、次の手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-104">See the following procedures to create and save an orchestration, to add an existing orchestration to a project or remove one from it, to change the name of an orchestration, and to set orchestration properties.</span></span>  
@@ -63,7 +64,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-save-an-orchestration"></a><span data-ttu-id="5c8d8-120">オーケストレーションを保存するには</span><span class="sxs-lookup"><span data-stu-id="5c8d8-120">To save an orchestration</span></span>  
   
--   <span data-ttu-id="5c8d8-121">**ファイル** メニューのをクリックして**保存\<オーケストレーション名\>**です。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-121">On the **File** menu, click **Save \<orchestration name\>**.</span></span>  
+-   <span data-ttu-id="5c8d8-121">**ファイル** メニューのをクリックして**保存\<オーケストレーション名\>** です。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-121">On the **File** menu, click **Save \<orchestration name\>**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="5c8d8-122">オーケストレーション ファイルは、utf-8 として保存されます。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-122">Orchestration files are saved as UTF-8.</span></span>  <span data-ttu-id="5c8d8-123">スキーマ、マップ、およびパイプラインは、utf-16 として保存されます。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-123">Schemas, maps, and pipelines are saved as UTF-16.</span></span>  
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="5c8d8-159">[トランザクション識別子]</span><span class="sxs-lookup"><span data-stu-id="5c8d8-159">Transaction Identifier</span></span>|<span data-ttu-id="5c8d8-160">トランザクション オーケストレーションの一意の識別子です。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-160">Unique identifier for a transactional orchestration.</span></span>|  
     |<span data-ttu-id="5c8d8-161">トランザクションの種類</span><span class="sxs-lookup"><span data-stu-id="5c8d8-161">Transaction Type</span></span>|<span data-ttu-id="5c8d8-162">オーケストレーションがアトミックのトランザクションであるか、長時間トランザクションであるか、またはトランザクションではないかを指定します。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-162">Determines whether the orchestration is an atomic transaction, a long-running transaction, or is not transacted.</span></span>|  
     |<span data-ttu-id="5c8d8-163">型修飾子</span><span class="sxs-lookup"><span data-stu-id="5c8d8-163">Type Modifier</span></span>|<span data-ttu-id="5c8d8-164">オーケストレーション レベルの変数のスコープを指定します。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-164">Determines the scope of orchestration-level variables:</span></span><br /><br /> <span data-ttu-id="5c8d8-165">プライベート: このオーケストレーションへのアクセスが含まれているモジュールに制限されます。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-165">Private—Access to this orchestration is limited to the containing module.</span></span><br /><br /> <span data-ttu-id="5c8d8-166">パブリック: このオーケストレーションへのアクセスが制限されていません。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-166">Public—Access to this orchestration is not limited.</span></span><br /><br /> <span data-ttu-id="5c8d8-167">内部-このオーケストレーションへのアクセスは、同じプロジェクト内のモジュールに制限されます。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-167">Internal—Access to this orchestration is limited to modules within the same project.</span></span>|  
-    |<span data-ttu-id="5c8d8-168">[型名]</span><span class="sxs-lookup"><span data-stu-id="5c8d8-168">Typename</span></span>|<span data-ttu-id="5c8d8-169">含んでいるモジュールにおけるこのオーケストレーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-169">Determines the name of this orchestration within the containing module.</span></span> <span data-ttu-id="5c8d8-170">**注:**場合、ルート レベルの名前空間と同じである型名を使用するメッセージを定義して、変数を実行しようと Typename に基づいてそれらに対する割り当て操作時に、オーケストレーション デザイナーのエラーを受信可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-170">**Note:**  If you to use a Typename that is the same as a root-level namespace, you may receive an error from Orchestration Designer when you define messages and variables based on the Typename and attempt to perform assign operations on them.</span></span> <span data-ttu-id="5c8d8-171">たとえば、[型名] を System と指定して、System.String のようなメッセージや変数を定義すると、エラーが発生することがあります。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-171">For example, if you specify a Typename of System, and then define messages and variables like System.String, you may receive an error.</span></span>|  
+    |<span data-ttu-id="5c8d8-168">[型名]</span><span class="sxs-lookup"><span data-stu-id="5c8d8-168">Typename</span></span>|<span data-ttu-id="5c8d8-169">含んでいるモジュールにおけるこのオーケストレーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-169">Determines the name of this orchestration within the containing module.</span></span> <span data-ttu-id="5c8d8-170">**注:** 場合、ルート レベルの名前空間と同じである型名を使用するメッセージを定義して、変数を実行しようと Typename に基づいてそれらに対する割り当て操作時に、オーケストレーション デザイナーのエラーを受信可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-170">**Note:**  If you to use a Typename that is the same as a root-level namespace, you may receive an error from Orchestration Designer when you define messages and variables based on the Typename and attempt to perform assign operations on them.</span></span> <span data-ttu-id="5c8d8-171">たとえば、[型名] を System と指定して、System.String のようなメッセージや変数を定義すると、エラーが発生することがあります。</span><span class="sxs-lookup"><span data-stu-id="5c8d8-171">For example, if you specify a Typename of System, and then define messages and variables like System.String, you may receive an error.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="5c8d8-172">参照</span><span class="sxs-lookup"><span data-stu-id="5c8d8-172">See Also</span></span>  
  <span data-ttu-id="5c8d8-173">[オーケストレーション図形](../core/orchestration-shapes.md) </span><span class="sxs-lookup"><span data-stu-id="5c8d8-173">[Orchestration Shapes](../core/orchestration-shapes.md) </span></span>  

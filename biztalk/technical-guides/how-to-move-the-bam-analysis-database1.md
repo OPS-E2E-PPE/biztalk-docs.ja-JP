@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8094153-072b-427a-b3a0-7310a37cf584
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010483"
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a><span data-ttu-id="5d852-102">BAM 分析データベースを移動する方法</span><span class="sxs-lookup"><span data-stu-id="5d852-102">How to Move the BAM Analysis Database</span></span>
 <span data-ttu-id="5d852-103">ここでは、BAM 分析データベースを他のサーバーに移動する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="5d852-103">You can use this procedure to move the BAM Analysis database to another server.</span></span>  <span data-ttu-id="5d852-104">エンド ツー エンドのシナリオの観点から、BAM 分析データベースの移動にも 2 つの主要な手順が含まれます。</span><span class="sxs-lookup"><span data-stu-id="5d852-104">From an end-to-end scenario perspective, moving the BAM Analysis database involves two major steps:</span></span>  
@@ -109,7 +110,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="5d852-157">SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。</span><span class="sxs-lookup"><span data-stu-id="5d852-157">In SQL Server Business Intelligence Development Studio, create a new project.</span></span> <span data-ttu-id="5d852-158">クリックして **ファイル**, 、 をクリックして **新規**, 、 をクリックし、 **プロジェクト**します。</span><span class="sxs-lookup"><span data-stu-id="5d852-158">Click **File**, click **New**, and then click **Project**.</span></span>  
   
-3.  <span data-ttu-id="5d852-159">**新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="5d852-159">In the **New Project** dialog box, in the **Project Types** box, click **Business Intelligence Projects**.</span></span> <span data-ttu-id="5d852-160">右側のウィンドウで、**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="5d852-160">On the right pane, in the **Templates** box, click **Integration Services Project**, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="5d852-159">**新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="5d852-159">In the **New Project** dialog box, in the **Project Types** box, click **Business Intelligence Projects**.</span></span> <span data-ttu-id="5d852-160">右側のウィンドウで、**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="5d852-160">On the right pane, in the **Templates** box, click **Integration Services Project**, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="5d852-161">**Integration Services プロジェクト**ダイアログ ボックスで、ソリューション エクスプ ローラーで右クリックし**SSIS パッケージ**、クリックして**既存のパッケージの追加**です。</span><span class="sxs-lookup"><span data-stu-id="5d852-161">In the **Integration Services Project** dialog box, in Solution Explorer, right-click **SSIS Packages**, and then click **Add Existing Package**.</span></span>  
   

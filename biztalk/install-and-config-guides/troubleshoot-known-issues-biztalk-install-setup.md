@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4d0e707-6b9e-49e1-9f17-19b3bac1229e
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26011035"
 ---
 # <a name="troubleshoot-biztalk-server-setup"></a><span data-ttu-id="be520-103">BizTalk Server のセットアップをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="be520-103">Troubleshoot BizTalk Server Setup</span></span>
 
@@ -339,7 +340,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 ##### <a name="rpc-error-occurs-when-connecting-to-a-client-computer"></a><span data-ttu-id="be520-308">クライアント コンピューターに接続するときに、RPC エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="be520-308">RPC error occurs when connecting to a client computer</span></span>  
   
 <span data-ttu-id="be520-309">**問題**</span><span class="sxs-lookup"><span data-stu-id="be520-309">**Problem**</span></span>  
- <span data-ttu-id="be520-310">などのコマンドを実行すると**ssomanage-displayapp** *< applicationname\>*コンピューター、情報を取得するリモート SSO サーバーに接続しようとしましたここで、が表示されたら、。次のエラー: エラー: 0x800706BA: RPC サーバーは使用できません。</span><span class="sxs-lookup"><span data-stu-id="be520-310">When you run a command such as **ssomanage -displayapp** *<applicationname\>*, where the computer attempt to connect to a remote SSO Server to retrieve the information, you receive the following error: ERROR: 0x800706BA: The RPC server is unavailable.</span></span>  
+ <span data-ttu-id="be520-310">などのコマンドを実行すると**ssomanage-displayapp** *< applicationname\>* コンピューター、情報を取得するリモート SSO サーバーに接続しようとしましたここで、が表示されたら、。次のエラー: エラー: 0x800706BA: RPC サーバーは使用できません。</span><span class="sxs-lookup"><span data-stu-id="be520-310">When you run a command such as **ssomanage -displayapp** *<applicationname\>*, where the computer attempt to connect to a remote SSO Server to retrieve the information, you receive the following error: ERROR: 0x800706BA: The RPC server is unavailable.</span></span>  
   
 <span data-ttu-id="be520-311">**原因**</span><span class="sxs-lookup"><span data-stu-id="be520-311">**Cause**</span></span>  
  <span data-ttu-id="be520-312">このエラーは、間違ったサーバー情報を指定した場合、またはリモート サーバーで SSO サービスを利用できない場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="be520-312">This error occurs when you specify the wrong server information, or when the SSO Service is not available on the remote server.</span></span>  

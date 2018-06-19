@@ -18,7 +18,7 @@ helpviewer_keywords:
 - MQSeries adapters, errors
 - Adapter Trace Utility
 ms.assetid: fdc73d99-3b73-491d-9b2f-7064364fefa7
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26006632"
 ---
 # <a name="analyzing-mqseries-adapter-errors-with-the-trace-tools"></a><span data-ttu-id="38a98-102">トレース ツールを使用して MQSeries アダプターのエラーの分析</span><span class="sxs-lookup"><span data-stu-id="38a98-102">Analyzing MQSeries Adapter Errors with the Trace Tools</span></span>
 <span data-ttu-id="38a98-103">アプリケーションの実行時に、トレース ツールを使用して、メッセージングのエラーを分析します。</span><span class="sxs-lookup"><span data-stu-id="38a98-103">You use the trace tools to analyze messaging failures when you run your application.</span></span> <span data-ttu-id="38a98-104">MQSeries アダプタでは、アダプタと BizTalk アプリケーション (trace.cmd) 用と、MQSAgent (MQSTrace.cmd) 用の 2 つのツールを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38a98-104">With the MQSeries adapter you must use two tools, one for the adapter and your BizTalk application (trace.cmd), and the other for the MQSAgent (MQSTrace.cmd).</span></span> <span data-ttu-id="38a98-105">どちらのツールでも、tracelog.exe が使用されます。</span><span class="sxs-lookup"><span data-stu-id="38a98-105">Both tools use tracelog.exe.</span></span> <span data-ttu-id="38a98-106">まだインストールしていない場合は、インストールしてください。</span><span class="sxs-lookup"><span data-stu-id="38a98-106">You have to install tracelog.exe if you do not already have it.</span></span>  
@@ -46,9 +47,9 @@ ms.lasthandoff: 03/28/2018
   
 5.  <span data-ttu-id="38a98-114">**[Microsoft Windows Core SDK]** 機能を展開し、 **[Tools]** 機能を展開します。</span><span class="sxs-lookup"><span data-stu-id="38a98-114">Expand the **Microsoft Windows Core SDK** feature, and then expand the **Tools** feature.</span></span>  
   
-6.  <span data-ttu-id="38a98-115">**[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38a98-115">Choose the **Tools (Intel 64-bit)** feature, and then click **Will be installed on local hard drive**.</span></span>  
+6.  <span data-ttu-id="38a98-115">**[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38a98-115">Choose the **Tools (Intel 64-bit)** feature, and then click **Will be installed on local hard drive**.</span></span>  
   
-7.  <span data-ttu-id="38a98-116">**[Next]**を 2 回クリックし、インストールを開始します。 ****</span><span class="sxs-lookup"><span data-stu-id="38a98-116">Click **Next**, and then click **Next** again to start the installation.</span></span>  
+7.  <span data-ttu-id="38a98-116">**[Next]** を 2 回クリックし、インストールを開始します。 ****</span><span class="sxs-lookup"><span data-stu-id="38a98-116">Click **Next**, and then click **Next** again to start the installation.</span></span>  
   
 8.  <span data-ttu-id="38a98-117">検索、 *ドライブ*:\\*MicrosoftPlatformSDKInstallationFolder\bin* フォルダー、および Microsoft BizTalk Server のインストール フォルダーに Tracelog.exe ファイルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="38a98-117">Locate the *drive*:\\*MicrosoftPlatformSDKInstallationFolder\bin* folder, and then copy the Tracelog.exe file to the Microsoft BizTalk Server installation folder.</span></span> <span data-ttu-id="38a98-118">BizTalk Server のインストール フォルダには、Trace.cmd ファイルも含まれています。</span><span class="sxs-lookup"><span data-stu-id="38a98-118">The BizTalk Server installation folder also contains the Trace.cmd file.</span></span>  
   

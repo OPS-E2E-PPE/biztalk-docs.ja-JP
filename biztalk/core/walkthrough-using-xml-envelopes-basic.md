@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: XML エンベロープ (基本) の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: XML エンベロープ (基本) の使用 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - content-based routing, promoting properties
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - routing, messages
 - routing, promoting properties
 ms.assetid: 02d0c596-0cfe-4bae-9f1b-d7dbc17e18a9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975757"
 ---
 # <a name="walkthrough-using-xml-envelopes-basic"></a><span data-ttu-id="1b062-102">チュートリアル: を使用して XML エンベロープ (Basic)</span><span class="sxs-lookup"><span data-stu-id="1b062-102">Walkthrough: Using XML Envelopes (Basic)</span></span>
 <span data-ttu-id="1b062-103">この例では、架空のエラー追跡システムを実装して、基本的な XML エンベロープの逆アセンブルを示します。</span><span class="sxs-lookup"><span data-stu-id="1b062-103">This example demonstrates basic XML envelope disassembly by implementing part of a fictitious error-tracking system.</span></span> <span data-ttu-id="1b062-104">この例は次の要件を満たしています。</span><span class="sxs-lookup"><span data-stu-id="1b062-104">The example meets the following requirements:</span></span>  
@@ -105,7 +106,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="1b062-151">ルート ノードの名前を "ルート" から "エンベロープ" に変更します。</span><span class="sxs-lookup"><span data-stu-id="1b062-151">Change the name of the root node from "Root" to "Envelope".</span></span>  
   
-4.  <span data-ttu-id="1b062-152">次に、スキーマをエンベロープ スキーマとしてマークします。</span><span class="sxs-lookup"><span data-stu-id="1b062-152">Now mark the schema as an envelope schema.</span></span> <span data-ttu-id="1b062-153">クリックして、 **\<スキーマ\>**ノード。</span><span class="sxs-lookup"><span data-stu-id="1b062-153">Click the **\<Schema\>** node.</span></span> <span data-ttu-id="1b062-154">プロパティ ペインで、スキーマ参照プロパティを設定**エンベロープ**に`OK`です。</span><span class="sxs-lookup"><span data-stu-id="1b062-154">In the Properties pane, set the schema reference property **Envelope** to `OK`.</span></span>  
+4.  <span data-ttu-id="1b062-152">次に、スキーマをエンベロープ スキーマとしてマークします。</span><span class="sxs-lookup"><span data-stu-id="1b062-152">Now mark the schema as an envelope schema.</span></span> <span data-ttu-id="1b062-153">クリックして、 **\<スキーマ\>** ノード。</span><span class="sxs-lookup"><span data-stu-id="1b062-153">Click the **\<Schema\>** node.</span></span> <span data-ttu-id="1b062-154">プロパティ ペインで、スキーマ参照プロパティを設定**エンベロープ**に`OK`です。</span><span class="sxs-lookup"><span data-stu-id="1b062-154">In the Properties pane, set the schema reference property **Envelope** to `OK`.</span></span>  
   
 5.  <span data-ttu-id="1b062-155">設定、**ボディ XPath**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="1b062-155">Set the **Body XPath** property.</span></span> <span data-ttu-id="1b062-156">これを行うをクリックして、**エンベロープ**ノード。</span><span class="sxs-lookup"><span data-stu-id="1b062-156">To do this, click the **Envelope** node.</span></span> <span data-ttu-id="1b062-157">[プロパティ] ウィンドウで、省略記号ボタンをクリックして (**.**) ボタンをクリックして、**ボディ XPath**プロパティを選択**エンベロープ**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-157">In the Properties window, click the ellipsis (**...**) button in the **Body XPath** property, select **Envelope**, and then click **OK**.</span></span>  
   
@@ -141,9 +142,9 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-deploy-basicxmlenvelope"></a><span data-ttu-id="1b062-168">BasicXMLEnvelope を配置するには</span><span class="sxs-lookup"><span data-stu-id="1b062-168">To deploy BasicXMLEnvelope</span></span>  
   
-1.  <span data-ttu-id="1b062-169">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、選択**[BasicXMLEnvelope の配置**ビルド] メニューからです。</span><span class="sxs-lookup"><span data-stu-id="1b062-169">From [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], choose **Deploy BasicXMLEnvelope** from the Build menu.</span></span> <span data-ttu-id="1b062-170">この操作により、BizTalk Server に "BasicXMLEnvelope" アプリケーションとしてビルドおよび配置されます。</span><span class="sxs-lookup"><span data-stu-id="1b062-170">This will build and deploy it to BizTalk Server as the application "BasicXMLEnvelope".</span></span>  
+1.  <span data-ttu-id="1b062-169">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、選択 **[BasicXMLEnvelope の配置**ビルド] メニューからです。</span><span class="sxs-lookup"><span data-stu-id="1b062-169">From [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], choose **Deploy BasicXMLEnvelope** from the Build menu.</span></span> <span data-ttu-id="1b062-170">この操作により、BizTalk Server に "BasicXMLEnvelope" アプリケーションとしてビルドおよび配置されます。</span><span class="sxs-lookup"><span data-stu-id="1b062-170">This will build and deploy it to BizTalk Server as the application "BasicXMLEnvelope".</span></span>  
   
-2.  <span data-ttu-id="1b062-171">BizTalk Server 管理コンソールで、展開、**アプリケーション**ことを確認するグループ**[basicxmlenvelope]**が、カスタム アプリケーションとして存在します。</span><span class="sxs-lookup"><span data-stu-id="1b062-171">In the BizTalk Server Administration console, expand the **Applications** group to verify that **BasicXMLEnvelope** is present as a custom application.</span></span>  
+2.  <span data-ttu-id="1b062-171">BizTalk Server 管理コンソールで、展開、**アプリケーション**ことを確認するグループ **[basicxmlenvelope]** が、カスタム アプリケーションとして存在します。</span><span class="sxs-lookup"><span data-stu-id="1b062-171">In the BizTalk Server Administration console, expand the **Applications** group to verify that **BasicXMLEnvelope** is present as a custom application.</span></span>  
   
 ##### <a name="to-configure-the-receive-port"></a><span data-ttu-id="1b062-172">受信ポートを構成するには</span><span class="sxs-lookup"><span data-stu-id="1b062-172">To configure the receive port</span></span>  
   
@@ -196,7 +197,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-configure-the-example-for-recoverable-interchange-processing"></a><span data-ttu-id="1b062-211">回復可能なインターチェンジ処理の例を構成するには</span><span class="sxs-lookup"><span data-stu-id="1b062-211">To configure the example for recoverable interchange processing</span></span>  
   
-1.  <span data-ttu-id="1b062-212">BizTalk Server 管理コンソールで、展開、 **[basicxmlenvelope]**アプリケーションでは、をクリックして**受信ポート**、し、受信ポートをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="1b062-212">In the BizTalk Server Administration console, expand the **BasicXMLEnvelope** application, click **Receive Ports**, and then double-click the Receive port.</span></span> <span data-ttu-id="1b062-213">これは既に作成したポートです。</span><span class="sxs-lookup"><span data-stu-id="1b062-213">This is the port you created previously.</span></span>  
+1.  <span data-ttu-id="1b062-212">BizTalk Server 管理コンソールで、展開、 **[basicxmlenvelope]** アプリケーションでは、をクリックして**受信ポート**、し、受信ポートをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="1b062-212">In the BizTalk Server Administration console, expand the **BasicXMLEnvelope** application, click **Receive Ports**, and then double-click the Receive port.</span></span> <span data-ttu-id="1b062-213">これは既に作成したポートです。</span><span class="sxs-lookup"><span data-stu-id="1b062-213">This is the port you created previously.</span></span>  
   
 2.  <span data-ttu-id="1b062-214">**受信ポートのプロパティ**ダイアログ ボックスで、をクリックして**受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-214">In the **Receive Port Properties** dialog box, click **Receive Locations**.</span></span> <span data-ttu-id="1b062-215">をクリックして**プロパティ**を呼び出すこと、 **ReceiveError 受信場所のプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="1b062-215">Click **Properties** to bring up the **ReceiveError Receive Location Properties** dialog box.</span></span> <span data-ttu-id="1b062-216">省略記号ボタン (**.**) ボタンをクリックして、**受信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-216">Click the ellipsis (**...**) button for the **Receive Pipeline**.</span></span>  
   
@@ -242,7 +243,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-promote-the-priority-field-in-the-error-schema"></a><span data-ttu-id="1b062-233">[エラー] スキーマの "優先度" フィールドを昇格させるには</span><span class="sxs-lookup"><span data-stu-id="1b062-233">To promote the Priority field in the Error schema</span></span>  
   
-1.  <span data-ttu-id="1b062-234">**[Basicxmlenvelope]**でプロジェクトを開いて[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開き、**エラー**スキーマを展開し、**エラー**ノード。</span><span class="sxs-lookup"><span data-stu-id="1b062-234">With the **BasicXMLEnvelope** project open in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the **Error** schema and expand the **Error** node.</span></span>  
+1.  <span data-ttu-id="1b062-234">**[Basicxmlenvelope]** でプロジェクトを開いて[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開き、**エラー**スキーマを展開し、**エラー**ノード。</span><span class="sxs-lookup"><span data-stu-id="1b062-234">With the **BasicXMLEnvelope** project open in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the **Error** schema and expand the **Error** node.</span></span>  
   
 2.  <span data-ttu-id="1b062-235">右クリックし、**優先度**要素を指す**昇格**、順にクリック**クイック昇格**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-235">Right-click the **Priority** element, point to **Promote**, and then click **Quick Promote**.</span></span>  
   
@@ -294,7 +295,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-test-the-routing-solution"></a><span data-ttu-id="1b062-266">ソリューションのルーティングをテストするには</span><span class="sxs-lookup"><span data-stu-id="1b062-266">To test the routing solution</span></span>  
   
-1.  <span data-ttu-id="1b062-267">BizTalk Server 管理コンソールで、展開、**アプリケーション**グループで、右クリックし、 **[basicxmlenvelope]**クリックしてアプリケーションでは、**開始**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-267">In the BizTalk Server Administration console, expand the **Applications** group, right-click the **BasicXMLEnvelope** application, and then click **Start**.</span></span> <span data-ttu-id="1b062-268">確認するメッセージが表示されたら、クリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-268">When prompted to confirm, click **Start**.</span></span> <span data-ttu-id="1b062-269">これにより、新しい送信ポートが参加します。</span><span class="sxs-lookup"><span data-stu-id="1b062-269">This enlists the new send ports.</span></span>  
+1.  <span data-ttu-id="1b062-267">BizTalk Server 管理コンソールで、展開、**アプリケーション**グループで、右クリックし、 **[basicxmlenvelope]** クリックしてアプリケーションでは、**開始**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-267">In the BizTalk Server Administration console, expand the **Applications** group, right-click the **BasicXMLEnvelope** application, and then click **Start**.</span></span> <span data-ttu-id="1b062-268">確認するメッセージが表示されたら、クリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="1b062-268">When prompted to confirm, click **Start**.</span></span> <span data-ttu-id="1b062-269">これにより、新しい送信ポートが参加します。</span><span class="sxs-lookup"><span data-stu-id="1b062-269">This enlists the new send ports.</span></span>  
   
 2.  <span data-ttu-id="1b062-270">受信場所にテスト メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="1b062-270">Drop the test message into the receive location.</span></span> <span data-ttu-id="1b062-271">エラー メッセージが異なる送信場所にルーティングされていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="1b062-271">Notice how error messages are routed to the different send locations:</span></span>  
   

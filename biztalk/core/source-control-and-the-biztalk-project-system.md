@@ -1,18 +1,18 @@
 ---
-title: "ソース管理と、BizTalk プロジェクト システム |Microsoft ドキュメント"
-ms.custom: 
+title: ソース管理と、BizTalk プロジェクト システム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Microsoft Source Code Control Interface (MSSCCI)
 - projects, security
 - security, projects
 ms.assetid: 0f5c2f4d-5e16-4277-b750-60813a3ff964
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008203"
 ---
 # <a name="source-control-and-the-biztalk-project-system"></a><span data-ttu-id="9d413-102">ソース管理と、BizTalk プロジェクト システム</span><span class="sxs-lookup"><span data-stu-id="9d413-102">Source Control and the BizTalk Project System</span></span>
 <span data-ttu-id="9d413-103">ソース管理とは、ファイルのバージョンの格納や追跡を行ったり、ファイルへのアクセスを制御するメカニズムです。このメカニズムは、ソフトウェアの主要部分によって実行されます。</span><span class="sxs-lookup"><span data-stu-id="9d413-103">Source control is a mechanism in which a central piece of software stores and tracks file versions and controls who can access the files.</span></span> <span data-ttu-id="9d413-104">ソース管理では、次の操作が行えます。</span><span class="sxs-lookup"><span data-stu-id="9d413-104">When you use source control, you can:</span></span>  

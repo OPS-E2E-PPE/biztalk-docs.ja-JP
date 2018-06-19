@@ -1,11 +1,11 @@
 ---
-title: "ルール |Microsoft ドキュメント"
-ms.custom: 
+title: ルール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, actions
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - business rules, facts
 - business rules
 ms.assetid: b288dd07-33f1-42fe-bbfb-02674ef3b3ca
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268778"
 ---
 # <a name="rules"></a><span data-ttu-id="b8eef-102">ルール</span><span class="sxs-lookup"><span data-stu-id="b8eef-102">Rules</span></span>
 <span data-ttu-id="b8eef-103">ビジネス ルールはビジネス プロセスの運営を管理する宣言型ステートメントです。</span><span class="sxs-lookup"><span data-stu-id="b8eef-103">Business rules are declarative statements that govern the conduct of business processes.</span></span> <span data-ttu-id="b8eef-104">ルールは条件とアクションで構成されます。</span><span class="sxs-lookup"><span data-stu-id="b8eef-104">A rule consists of a condition and actions.</span></span> <span data-ttu-id="b8eef-105">条件を評価するに評価されると、 **true**、ルール エンジンは、1 つまたは複数のアクションを開始します。</span><span class="sxs-lookup"><span data-stu-id="b8eef-105">The condition is evaluated, and if it evaluates to **true**, the rule engine initiates one or more actions.</span></span>  

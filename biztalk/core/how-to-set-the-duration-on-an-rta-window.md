@@ -1,11 +1,11 @@
 ---
-title: "RTA 時間帯の期間を設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: RTA 時間帯の期間を設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], aggregations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Set-RTAWindow command [BAM]
 - managing [BAM], time intervals
 ms.assetid: 3042c3f5-be0f-48fb-9831-daa4868b90fe
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971360"
 ---
 # <a name="how-to-set-the-duration-on-an-rta-window"></a><span data-ttu-id="9da66-102">特定の RTA 時間帯の期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="9da66-102">How to Set the Duration on an RTA Window</span></span>
 <span data-ttu-id="9da66-103">管理者を使用して、**セット rtawindow**コマンドを指定されたリアルタイム集計 (RTA) の期間を設定します。</span><span class="sxs-lookup"><span data-stu-id="9da66-103">Administrators use the **set-rtawindow** command to set the duration for the specified real-time aggregation (RTA).</span></span>  

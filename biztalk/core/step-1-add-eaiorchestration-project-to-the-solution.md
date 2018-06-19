@@ -1,14 +1,14 @@
 ---
-title: "手順 1: EAIOrchestration プロジェクトをソリューションに追加する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: EAIOrchestration プロジェクトをソリューションに追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9aa0d9-2075-4c7e-8baf-1ecd2721859a
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276866"
 ---
 # <a name="step-1-add-eaiorchestration-project-to-the-solution"></a><span data-ttu-id="b6480-102">ステップ 1: EAIOrchestration プロジェクトのソリューションへの追加</span><span class="sxs-lookup"><span data-stu-id="b6480-102">Step 1: Add EAIOrchestration Project to the Solution</span></span>
 <span data-ttu-id="b6480-103">![4 のステップ 1](../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span><span class="sxs-lookup"><span data-stu-id="b6480-103">![Step 1 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span></span>  
   
  <span data-ttu-id="b6480-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="b6480-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="b6480-105">**目標:**ここでは、EAI ソリューションに 2 番目のプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6480-105">**Objective:** In this step, you add a second project to the EAI solution.</span></span> <span data-ttu-id="b6480-106">新しいプロジェクトにオーケストレーションを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6480-106">Then you add an orchestration to the new project.</span></span>  
+ <span data-ttu-id="b6480-105">**目標:** ここでは、EAI ソリューションに 2 番目のプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6480-105">**Objective:** In this step, you add a second project to the EAI solution.</span></span> <span data-ttu-id="b6480-106">新しいプロジェクトにオーケストレーションを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6480-106">Then you add an orchestration to the new project.</span></span>  
   
- <span data-ttu-id="b6480-107">**目的:**オーケストレーションに別のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="b6480-107">**Purpose:** You create a separate project for the orchestration.</span></span> <span data-ttu-id="b6480-108">これは、ソリューションの開発に複数のスタッフが携わっている場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="b6480-108">This is helpful when you have several different people working on one solution.</span></span> <span data-ttu-id="b6480-109">このレッスンでは、新しいオーケストレーションを使用してビジネス プロセスを自動化します。</span><span class="sxs-lookup"><span data-stu-id="b6480-109">You use the new orchestration to automate the business process in this lesson.</span></span>  
+ <span data-ttu-id="b6480-107">**目的:** オーケストレーションに別のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="b6480-107">**Purpose:** You create a separate project for the orchestration.</span></span> <span data-ttu-id="b6480-108">これは、ソリューションの開発に複数のスタッフが携わっている場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="b6480-108">This is helpful when you have several different people working on one solution.</span></span> <span data-ttu-id="b6480-109">このレッスンでは、新しいオーケストレーションを使用してビジネス プロセスを自動化します。</span><span class="sxs-lookup"><span data-stu-id="b6480-109">You use the new orchestration to automate the business process in this lesson.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="b6480-110">前提条件</span><span class="sxs-lookup"><span data-stu-id="b6480-110">Prerequisites</span></span>  
  <span data-ttu-id="b6480-111">このステップを開始する前に、以下の要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="b6480-111">Note the following requirements before you begin this step:</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="b6480-122">**名前**</span><span class="sxs-lookup"><span data-stu-id="b6480-122">**Name**</span></span>|<span data-ttu-id="b6480-123">「`EAIOrchestration`.</span><span class="sxs-lookup"><span data-stu-id="b6480-123">Type `EAIOrchestration`.</span></span>|  
     |<span data-ttu-id="b6480-124">**場所**</span><span class="sxs-lookup"><span data-stu-id="b6480-124">**Location**</span></span>|<span data-ttu-id="b6480-125">「`C:\BTSTutorials\EAISolution`.</span><span class="sxs-lookup"><span data-stu-id="b6480-125">Type `C:\BTSTutorials\EAISolution`.</span></span>|  
   
-3.  <span data-ttu-id="b6480-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6480-126">Click **OK**.</span></span>  
+3.  <span data-ttu-id="b6480-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6480-126">Click **OK**.</span></span>  
   
 #### <a name="to-add-an-orchestration"></a><span data-ttu-id="b6480-127">オーケストレーションを追加するには</span><span class="sxs-lookup"><span data-stu-id="b6480-127">To add an orchestration</span></span>  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="b6480-132">**インストールされたテンプレート**</span><span class="sxs-lookup"><span data-stu-id="b6480-132">**Installed Templates**</span></span>|<span data-ttu-id="b6480-133">をクリックして**オーケストレーション ファイル**、クリックして**BizTalk オーケストレーション**です。</span><span class="sxs-lookup"><span data-stu-id="b6480-133">Click **Orchestration Files**, and then click **BizTalk Orchestration**.</span></span>|  
     |<span data-ttu-id="b6480-134">**名前**</span><span class="sxs-lookup"><span data-stu-id="b6480-134">**Name**</span></span>|<span data-ttu-id="b6480-135">型**EAIProcess.odx**です。</span><span class="sxs-lookup"><span data-stu-id="b6480-135">Type **EAIProcess.odx**.</span></span>|  
   
-3.  <span data-ttu-id="b6480-136">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6480-136">Click **Add**.</span></span>  
+3.  <span data-ttu-id="b6480-136">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6480-136">Click **Add**.</span></span>  
   
      <span data-ttu-id="b6480-137">オーケストレーション デザイナーが開きます。</span><span class="sxs-lookup"><span data-stu-id="b6480-137">Orchestration Designer opens.</span></span> <span data-ttu-id="b6480-138">オーケストレーション デザイナーに EAIProcess オーケストレーションが表示されている状態を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6480-138">The following figure shows Orchestration Designer with the EAIProcess orchestration.</span></span>  
   

@@ -1,11 +1,11 @@
 ---
-title: "セキュリティおよびプライバシーに関する標準 |Microsoft ドキュメント"
-ms.custom: 
+title: セキュリティおよびプライバシーに関する標準 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, privacy standards
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BizTalk Accelerator for SWIFT, security
 - security, BizTalk Accelerator for SWIFT
 ms.assetid: 5794b25f-8a73-4f5b-97ef-1b0f61775c4b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005315"
 ---
 # <a name="security-and-privacy-standards"></a><span data-ttu-id="7a04d-102">標準のセキュリティとプライバシー</span><span class="sxs-lookup"><span data-stu-id="7a04d-102">Security and privacy standards</span></span>
 <span data-ttu-id="7a04d-103">財務アプリケーションはサービスとの統合ソリューションを使用して開発[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ネイティブによって一般的に保護された[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]セキュリティ機能です。</span><span class="sxs-lookup"><span data-stu-id="7a04d-103">Financial Services applications and integration solutions developed using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] are generally secured by native [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] security features.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="7a04d-104">など、事実上インターネット暗号化メッセージングの標準とトランスポート プロトコル、署名証明書、積極的なセキュリティ メカニズムを使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]認証、およびエンタープライズ シングル サインオンをセキュリティで保護[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション、データ、およびランタイム。</span><span class="sxs-lookup"><span data-stu-id="7a04d-104"> uses aggressive security mechanisms such as de facto Internet encrypted messaging standards and transport protocols, signing certificates, [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Authentication, and Enterprise Single Sign-On to secure [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications, data, and runtime.</span></span>  

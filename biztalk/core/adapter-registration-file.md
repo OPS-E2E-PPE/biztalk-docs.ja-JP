@@ -1,14 +1,14 @@
 ---
-title: "アダプターの登録ファイル |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの登録ファイル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6750f0ed-4411-4a63-a7fe-f66132cd1e22
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26009107"
 ---
 # <a name="adapter-registration-file"></a><span data-ttu-id="2876c-102">アダプターの登録ファイル</span><span class="sxs-lookup"><span data-stu-id="2876c-102">Adapter Registration File</span></span>
 <span data-ttu-id="2876c-103">カスタム アダプター コードを正常にビルドしたら、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2876c-103">After the custom adapter code has been successfully built it must be registered with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="2876c-104">これを行うには、レジストリを適切なアダプターの設定で更新します。</span><span class="sxs-lookup"><span data-stu-id="2876c-104">You do this by updating the registry with the appropriate adapter settings.</span></span> <span data-ttu-id="2876c-105">レジストリ ファイルは手動で記述できますが、正確かつ複雑な情報を入力する必要があるため、手動での記述はエラーを招く原因となります。</span><span class="sxs-lookup"><span data-stu-id="2876c-105">You can manually write a registry file, but this is prone to errors due to the preciseness and complexity of the information that you need to enter.</span></span> <span data-ttu-id="2876c-106">推奨される方法は、アダプターのレジストリ ウィザードを実行することです。</span><span class="sxs-lookup"><span data-stu-id="2876c-106">A better decision is to run the Adapter Registry Wizard.</span></span> <span data-ttu-id="2876c-107">アダプターのレジストリ ウィザードには、最初からレジストリ ファイルを作成するのとまったく同じオプションが用意されており、ファイルでエラーが発生する可能性を減らすことができます。</span><span class="sxs-lookup"><span data-stu-id="2876c-107">The Adapter Registry Wizard gives you all the same options as creating a registry file from scratch, and reduces the likelihood of errors in the file.</span></span> <span data-ttu-id="2876c-108">アダプター レジストリ ウィザードの詳細については、次を参照してください。[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)です。</span><span class="sxs-lookup"><span data-stu-id="2876c-108">For more information about the Adapter Registry Wizard, see [Adapter Registry Wizard](../core/adapter-registry-wizard.md).</span></span>  

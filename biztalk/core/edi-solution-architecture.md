@@ -1,14 +1,14 @@
 ---
-title: "EDI ソリューションのアーキテクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: EDI ソリューションのアーキテクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 55709a89-7706-4c64-ada3-16951951c943
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239882"
 ---
 # <a name="edi-solution-architecture"></a><span data-ttu-id="4bfc7-102">EDI ソリューションのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="4bfc7-102">EDI Solution Architecture</span></span>
 <span data-ttu-id="4bfc7-103">電子データ交換 (EDI) は、ビジネス エンティティがデータを電子的に交換するために最も広く使用されている方法の 1 つです。</span><span class="sxs-lookup"><span data-stu-id="4bfc7-103">Electronic Data Interchange (EDI) is one of the most prevalent means by which business entities exchange data electronically.</span></span> <span data-ttu-id="4bfc7-104">EDI を使用するには、メッセージの構文や標準 (ANSI X12、UN/EDIFACT など)、メッセージング プロトコル、およびトランスポートが必要です。</span><span class="sxs-lookup"><span data-stu-id="4bfc7-104">EDI usage entails message syntax and standards (including ANSI X12 and UN/EDIFACT), messaging protocol, and transports.</span></span> <span data-ttu-id="4bfc7-105">EDI によるメッセージングには、次のような特性があります。</span><span class="sxs-lookup"><span data-stu-id="4bfc7-105">The following are characteristics of EDI messaging:</span></span>  

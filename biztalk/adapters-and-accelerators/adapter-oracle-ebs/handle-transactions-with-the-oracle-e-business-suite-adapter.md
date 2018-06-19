@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite アダプターでトランザクションの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite アダプターでトランザクションの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b443be9d-a93d-4836-8717-5ee9dad4442f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005187"
 ---
 # <a name="handle-transactions-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="47a60-102">Oracle E-business Suite アダプターでトランザクションを処理します。</span><span class="sxs-lookup"><span data-stu-id="47a60-102">Handle transactions with the Oracle E-Business Suite adapter</span></span>
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]<span data-ttu-id="47a60-103">Oracle E-business suite 操作の実行中にトランザクションを開始しません。</span><span class="sxs-lookup"><span data-stu-id="47a60-103"> does not initiate a transaction while performing an operation in Oracle E-Business Suite.</span></span> <span data-ttu-id="47a60-104">代わりに、アダプターは、アダプターのクライアントによって提供されるトランザクション コンテキストを使用して操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="47a60-104">Instead, the adapter performs the operations using the transaction context provided by the adapter clients.</span></span> <span data-ttu-id="47a60-105">使用してトランザクションで操作を実行するために、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]、する必要があります。</span><span class="sxs-lookup"><span data-stu-id="47a60-105">In order to perform operations in a transaction using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], you must:</span></span>  

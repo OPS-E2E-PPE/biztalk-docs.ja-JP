@@ -1,14 +1,14 @@
 ---
-title: "クラスの静的メンバーを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: クラスの静的メンバーを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3a51171c-8de0-45dd-8659-f674cf27acbe
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262274"
 ---
 # <a name="invoking-static-members-of-a-class"></a><span data-ttu-id="c1113-102">クラスの静的メンバーの呼び出し</span><span class="sxs-lookup"><span data-stu-id="c1113-102">Invoking Static Members of a Class</span></span>
 <span data-ttu-id="c1113-103">既定では、ルール エンジンは、.NET クラスのインスタンスをアサートして、.NET クラスの静的メンバーを呼び出すポリシーを実行するよう要求します。</span><span class="sxs-lookup"><span data-stu-id="c1113-103">By default, the rule engine requires you to assert an instance of a .NET class to execute a policy that invokes a static member of the .NET class.</span></span> <span data-ttu-id="c1113-104">値を変更することでこの動作を変更することができます、 **StaticSupport**下のレジストリ キー **HKEY_LOCAL_MACHINE\Software\Microsoft\BusinessRules\3.0**次の表に、値のいずれかにします。</span><span class="sxs-lookup"><span data-stu-id="c1113-104">You can modify this behavior by changing the value of the **StaticSupport** registry key under **HKEY_LOCAL_MACHINE\Software\Microsoft\BusinessRules\3.0** to one of the values in the following table.</span></span>  

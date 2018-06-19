@@ -1,14 +1,14 @@
 ---
-title: "インストール後の構成データベース Optimizations1 |Microsoft ドキュメント"
-ms.custom: 
+title: インストール後の構成データベース Optimizations1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 763b5358-97ed-4ada-8318-0ad07388ba89
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302330"
 ---
 # <a name="post-configuration-database-optimizations"></a><span data-ttu-id="d4b73-102">インストール後の構成データベースの最適化</span><span class="sxs-lookup"><span data-stu-id="d4b73-102">Post-Configuration Database Optimizations</span></span>
 <span data-ttu-id="d4b73-103">推奨事項に従うだけでなく[事前構成データベースを最適化](../technical-guides/post-configuration-database-optimizations1.md)、いくつかの手順は、SQL Server 上の BizTalk Server データベースのパフォーマンスを最適化するために従う必要があります*後*BizTalk Server がインストールされているし、BizTalk Server データベースが構成されています。</span><span class="sxs-lookup"><span data-stu-id="d4b73-103">In addition to following the recommendations in [Pre-Configuration Database Optimizations](../technical-guides/post-configuration-database-optimizations1.md), several steps should be followed to optimize BizTalk Server database performance on SQL Server *after* BizTalk Server has been installed and the BizTalk Server databases have been configured.</span></span> <span data-ttu-id="d4b73-104">このトピックでは、これらの最適化の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="d4b73-104">This topic provides a list of these optimizations.</span></span>  

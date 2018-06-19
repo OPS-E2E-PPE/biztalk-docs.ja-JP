@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, security
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - deploying, BAM portal
 - security, BAM portal
 ms.assetid: 8a8bd331-c5a8-4d8b-9e93-96e6cd581a1d
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008731"
 ---
 # <a name="planning-for-the-bam-portal"></a><span data-ttu-id="d1d68-102">BAM ポータルの計画</span><span class="sxs-lookup"><span data-stu-id="d1d68-102">Planning for the BAM Portal</span></span>
 <span data-ttu-id="d1d68-103">このトピックでは、ビジネス アクティビティ監視 (BAM) ポータルの展開を計画するときに考慮する必要がある項目について説明します。</span><span class="sxs-lookup"><span data-stu-id="d1d68-103">This topic describes items that you should consider when planning your Business Activity Monitoring (BAM) portal deployment.</span></span>  

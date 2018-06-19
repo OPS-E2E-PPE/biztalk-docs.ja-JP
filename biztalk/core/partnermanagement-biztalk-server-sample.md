@@ -1,14 +1,14 @@
 ---
-title: "PartnerManagement (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: PartnerManagement (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83e2a84f-ab25-4a7c-b8d7-0ba2dfa93095
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973656"
 ---
 # <a name="partnermanagement-biztalk-server-sample"></a><span data-ttu-id="48d63-102">PartnerManagement (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="48d63-102">PartnerManagement (BizTalk Server Sample)</span></span>
 <span data-ttu-id="48d63-103">PartnerManagement サンプルでパーティを管理する方法を示します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="48d63-103">The PartnerManagement sample demonstrates how to manage parties in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by using the **ExplorerOM** administration objects.</span></span>  
@@ -126,7 +127,7 @@ ms.lasthandoff: 11/28/2017
   
     ```  
   
-8.  <span data-ttu-id="48d63-148">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="48d63-148">On the **Build** menu, click **Build Solution**.</span></span>  
+8.  <span data-ttu-id="48d63-148">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="48d63-148">On the **Build** menu, click **Build Solution**.</span></span>  
   
 #### <a name="to-run-this-sample"></a><span data-ttu-id="48d63-149">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="48d63-149">To run this sample</span></span>  
   

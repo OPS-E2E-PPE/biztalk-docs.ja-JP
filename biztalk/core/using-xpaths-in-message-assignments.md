@@ -1,11 +1,11 @@
 ---
-title: "メッセージ割り当てにおける Xpath の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ割り当てにおける Xpath の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XPaths, XPath function
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - XPaths, code samples
 - XPaths, nodes
 ms.assetid: f2e12409-bb77-4315-b03b-5c7736ae51d5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288114"
 ---
 # <a name="using-xpaths-in-message-assignments"></a><span data-ttu-id="3e132-102">メッセージ割り当てにおける Xpath の使用</span><span class="sxs-lookup"><span data-stu-id="3e132-102">Using XPaths in Message Assignments</span></span>
 <span data-ttu-id="3e132-103">使用することができます、 **xpath** XPath 値をメッセージ部分に割り当てるか、メッセージ部分を参照する XPath に値を代入する関数。</span><span class="sxs-lookup"><span data-stu-id="3e132-103">You can use the **xpath** function to assign an XPath value to a message part, or to assign a value to an XPath that refers to a message part.</span></span> <span data-ttu-id="3e132-104">メッセージおよびメッセージ部分に割り当てる方法に関する詳細については、次を参照してください。[メッセージの構築](../core/constructing-messages.md)です。</span><span class="sxs-lookup"><span data-stu-id="3e132-104">For more information on assigning to messages and message parts, see [Constructing Messages](../core/constructing-messages.md).</span></span>  

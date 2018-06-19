@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Accelerator for SWIFT ランタイム |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Accelerator for SWIFT ランタイム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - runtime, architecture
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - A4SWIFT, network
 - topology
 ms.assetid: c0f59760-7d7d-4b22-a7dc-54e563971d4a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005283"
 ---
 # <a name="biztalk-accelerator-for-swift-runtime"></a><span data-ttu-id="f28a7-102">BizTalk Accelerator for SWIFT のランタイム</span><span class="sxs-lookup"><span data-stu-id="f28a7-102">BizTalk Accelerator for SWIFT Runtime</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="f28a7-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 2 つのフォームの機能を提供します。 開発材料とランタイム コンポーネント。</span><span class="sxs-lookup"><span data-stu-id="f28a7-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] provides functionality in two forms: development materials and runtime components.</span></span> <span data-ttu-id="f28a7-104">開発の資料には、XSD スキーマ、検証規則とポリシー、およびサンプル コードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f28a7-104">Development materials include XSD schemas, validation rules and policies, and sample code.</span></span> <span data-ttu-id="f28a7-105">ランタイム コンポーネントには、カスタム SWIFT 逆アセンブラー、カスタムの SWIFT アセンブラー、Message Repair および New Submission オーケストレーション (MrsrRepair.odx)、および FIN 対応調整オーケストレーション (FrrMain.odx) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f28a7-105">Runtime components include the custom SWIFT disassembler, the custom SWIFT assembler, the Message Repair and New Submission orchestration (MrsrRepair.odx), and the FIN Response Reconciliation orchestration (FrrMain.odx).</span></span> <span data-ttu-id="f28a7-106">Message Repair and New Submission の詳細については、次を参照してください。 [Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md)です。</span><span class="sxs-lookup"><span data-stu-id="f28a7-106">For more information on Message Repair and New Submission, see [Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md).</span></span> <span data-ttu-id="f28a7-107">FRR の詳細については、次を参照してください。 [FIN 対応調整](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation.md)です。</span><span class="sxs-lookup"><span data-stu-id="f28a7-107">For more information on FRR, see [FIN Response Reconciliation](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation.md).</span></span>  

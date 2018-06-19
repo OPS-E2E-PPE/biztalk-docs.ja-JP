@@ -1,14 +1,14 @@
 ---
-title: "管理と監視 |Microsoft ドキュメント"
-ms.custom: 
+title: 管理と監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 92724f79-32bb-40d3-a0af-147aba00d87e
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264466"
 ---
 # <a name="management-and-monitoring"></a><span data-ttu-id="daedb-102">管理と監視</span><span class="sxs-lookup"><span data-stu-id="daedb-102">Management and Monitoring</span></span>
 <span data-ttu-id="daedb-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エンジンで構築されるすべてのアプリケーションは管理が必要です。</span><span class="sxs-lookup"><span data-stu-id="daedb-103">Every application built on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine requires management.</span></span> <span data-ttu-id="daedb-104">ここでは、新しいアプリケーションのインストール方法、</span><span class="sxs-lookup"><span data-stu-id="daedb-104">How are new applications installed?</span></span> <span data-ttu-id="daedb-105">可能な構成、</span><span class="sxs-lookup"><span data-stu-id="daedb-105">What configurations are possible?</span></span> <span data-ttu-id="daedb-106">システムの内部で現在発生している状況などを</span><span class="sxs-lookup"><span data-stu-id="daedb-106">What’s happening inside the system right now?</span></span> <span data-ttu-id="daedb-107">確認するためのツールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="daedb-107">This section looks at the tools provided to answer these questions.</span></span>  

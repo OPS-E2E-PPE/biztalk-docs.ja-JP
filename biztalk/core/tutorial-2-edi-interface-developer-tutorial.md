@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル 2: EDI インターフェイス開発チュートリアル |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 2: EDI インターフェイス開発チュートリアル |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d10fb650-cbb9-41e5-a80d-06afd0513814
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286946"
 ---
 # <a name="tutorial-2-edi-interface-developer-tutorial"></a><span data-ttu-id="18b17-102">チュートリアル 2: EDI インターフェイス開発チュートリアル</span><span class="sxs-lookup"><span data-stu-id="18b17-102">Tutorial 2: EDI Interface Developer Tutorial</span></span>
 <span data-ttu-id="18b17-103">このチュートリアルでは、インターフェイス開発シナリオで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の EDI 機能を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="18b17-103">This tutorial demonstrates how to use the EDI functionality in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in an Interface Developer scenario.</span></span>  

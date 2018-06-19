@@ -1,14 +1,14 @@
 ---
-title: "手順 2: ビジネス プロセスの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: ビジネス プロセスの定義 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b37bd9f1-5ee2-434d-950a-cf12967b6fc2
-caps.latest.revision: "49"
+caps.latest.revision: 49
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974704"
 ---
 # <a name="step-2-define-the-business-process"></a><span data-ttu-id="3c3f4-102">ステップ 2: ビジネス プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="3c3f4-102">Step 2: Define the Business Process</span></span>
 <span data-ttu-id="3c3f4-103">![手順 4 2](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="3c3f4-103">![Step 2 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="3c3f4-104">**所要時間:** 8 分</span><span class="sxs-lookup"><span data-stu-id="3c3f4-104">**Time to complete:** 8 minutes</span></span>  
   
- <span data-ttu-id="3c3f4-105">**目標:**このステップで、ビジネス プロセスを定義するオーケストレーション デザイナーを使用しています。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-105">**Objective:** In this step, you use Orchestration Designer to define your business process.</span></span>  
+ <span data-ttu-id="3c3f4-105">**目標:** このステップで、ビジネス プロセスを定義するオーケストレーション デザイナーを使用しています。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-105">**Objective:** In this step, you use Orchestration Designer to define your business process.</span></span>  
   
- <span data-ttu-id="3c3f4-106">**目的:**オーケストレーションのワークフローが表し、在庫補充要求を承認するため、会社のビジネス プロセスを自動化します。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-106">**Purpose:** The workflow of the orchestration represents and automates your company's business process for approving inventory replenishment requests.</span></span>  
+ <span data-ttu-id="3c3f4-106">**目的:** オーケストレーションのワークフローが表し、在庫補充要求を承認するため、会社のビジネス プロセスを自動化します。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-106">**Purpose:** The workflow of the orchestration represents and automates your company's business process for approving inventory replenishment requests.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="3c3f4-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="3c3f4-107">Prerequisites</span></span>  
  <span data-ttu-id="3c3f4-108">このステップを開始する前に、以下の要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-108">Note the following requirements before you begin this step:</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="3c3f4-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3c3f4-130">Use this</span></span>|<span data-ttu-id="3c3f4-131">目的</span><span class="sxs-lookup"><span data-stu-id="3c3f4-131">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="3c3f4-132">**[Identifier]**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-132">**Identifier**</span></span>|<span data-ttu-id="3c3f4-133">型**RequestMessage**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-133">Type **RequestMessage**.</span></span>|  
-    |<span data-ttu-id="3c3f4-134">**メッセージの種類**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-134">**Message Type**</span></span>|<span data-ttu-id="3c3f4-135">をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**.</span><span class="sxs-lookup"><span data-stu-id="3c3f4-135">Click **Schemas**, and then click **\<Select from referenced assembly …\>**.</span></span> <span data-ttu-id="3c3f4-136">[アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**要求**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-136">From the Select Artifact Type window, click **EAISchemas**, and then click **Request**.</span></span> <span data-ttu-id="3c3f4-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-137">Click **OK**</span></span>|  
+    |<span data-ttu-id="3c3f4-134">**メッセージの種類**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-134">**Message Type**</span></span>|<span data-ttu-id="3c3f4-135">をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**.</span><span class="sxs-lookup"><span data-stu-id="3c3f4-135">Click **Schemas**, and then click **\<Select from referenced assembly …\>**.</span></span> <span data-ttu-id="3c3f4-136">[アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**要求**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-136">From the Select Artifact Type window, click **EAISchemas**, and then click **Request**.</span></span> <span data-ttu-id="3c3f4-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-137">Click **OK**</span></span>|  
   
 4.  <span data-ttu-id="3c3f4-138">オーケストレーション ビューを右クリックして**メッセージ**、クリックして**新しいメッセージ**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-138">From Orchestration View, right-click **Messages**, and then click **New Message**.</span></span>  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="3c3f4-140">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3c3f4-140">Use this</span></span>|<span data-ttu-id="3c3f4-141">目的</span><span class="sxs-lookup"><span data-stu-id="3c3f4-141">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="3c3f4-142">**[Identifier]**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-142">**Identifier**</span></span>|<span data-ttu-id="3c3f4-143">型**RequestDeclineMessage**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-143">Type **RequestDeclineMessage**.</span></span>|  
-    |<span data-ttu-id="3c3f4-144">**メッセージの種類**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-144">**Message Type**</span></span>|<span data-ttu-id="3c3f4-145">をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**.</span><span class="sxs-lookup"><span data-stu-id="3c3f4-145">Click **Schemas**, and then click **\<Select from referenced assembly …\>**.</span></span> <span data-ttu-id="3c3f4-146">[アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**RequestDecline**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-146">From the Select Artifact Type window, click **EAISchemas**, and then click **RequestDecline**.</span></span> <span data-ttu-id="3c3f4-147">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-147">Click **OK**</span></span>|  
+    |<span data-ttu-id="3c3f4-144">**メッセージの種類**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-144">**Message Type**</span></span>|<span data-ttu-id="3c3f4-145">をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**.</span><span class="sxs-lookup"><span data-stu-id="3c3f4-145">Click **Schemas**, and then click **\<Select from referenced assembly …\>**.</span></span> <span data-ttu-id="3c3f4-146">[アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**RequestDecline**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-146">From the Select Artifact Type window, click **EAISchemas**, and then click **RequestDecline**.</span></span> <span data-ttu-id="3c3f4-147">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-147">Click **OK**</span></span>|  
   
 #### <a name="to-configure-the-properties-of-the-shapes"></a><span data-ttu-id="3c3f4-148">図形のプロパティを構成するには</span><span class="sxs-lookup"><span data-stu-id="3c3f4-148">To configure the properties of the shapes</span></span>  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="3c3f4-169">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3c3f4-169">Use this</span></span>|<span data-ttu-id="3c3f4-170">目的</span><span class="sxs-lookup"><span data-stu-id="3c3f4-170">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="3c3f4-171">**名前**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-171">**Name**</span></span>|<span data-ttu-id="3c3f4-172">型**DeclineRule**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-172">Type **DeclineRule**.</span></span>|  
-    |<span data-ttu-id="3c3f4-173">**[式]**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-173">**Expression**</span></span>|<span data-ttu-id="3c3f4-174">省略記号ボタン (**.**)、し、入力`RequestMessage(EAISchemas.PropertySchema.GrandTotal ) > 10000`です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-174">Click the ellipses (**…**), and then type `RequestMessage(EAISchemas.PropertySchema.GrandTotal ) > 10000`.</span></span> <span data-ttu-id="3c3f4-175">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-175">Click **OK**.</span></span>|  
+    |<span data-ttu-id="3c3f4-173">**[式]**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-173">**Expression**</span></span>|<span data-ttu-id="3c3f4-174">省略記号ボタン (**.**)、し、入力`RequestMessage(EAISchemas.PropertySchema.GrandTotal ) > 10000`です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-174">Click the ellipses (**…**), and then type `RequestMessage(EAISchemas.PropertySchema.GrandTotal ) > 10000`.</span></span> <span data-ttu-id="3c3f4-175">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-175">Click **OK**.</span></span>|  
   
 7.  <span data-ttu-id="3c3f4-176">デザイン画面でクリックして、 **ConstructMessage_1**図形です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-176">On the design surface, click the **ConstructMessage_1** shape.</span></span>  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="3c3f4-186">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3c3f4-186">Use this</span></span>|<span data-ttu-id="3c3f4-187">目的</span><span class="sxs-lookup"><span data-stu-id="3c3f4-187">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="3c3f4-188">**名前**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-188">**Name**</span></span>|<span data-ttu-id="3c3f4-189">型**TransformRequestToRequestDeclineMessage**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-189">Type **TransformRequestToRequestDeclineMessage**.</span></span>|  
-    |<span data-ttu-id="3c3f4-190">**マップ名**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-190">**Map Name**</span></span>|<span data-ttu-id="3c3f4-191">**...** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-191">Click **…**.</span></span> <span data-ttu-id="3c3f4-192">[変換の構成] で、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-192">From Transform Configuration, do the following:</span></span><br /><br /> <span data-ttu-id="3c3f4-193">構成情報の入力</span><span class="sxs-lookup"><span data-stu-id="3c3f4-193">Enter the configuration information:</span></span><br /><br /> <span data-ttu-id="3c3f4-194">-**既存のマップ**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-194">- Click **Existing Map**.</span></span><br /><br /> <span data-ttu-id="3c3f4-195">完全修飾マップ名:</span><span class="sxs-lookup"><span data-stu-id="3c3f4-195">Fully Qualified Map Name:</span></span><br /><br /> <span data-ttu-id="3c3f4-196">- **\<参照されたアセンブリから選択\>**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-196">- Select **\<Select from referenced assembly\>**.</span></span>  <span data-ttu-id="3c3f4-197">左側のウィンドウから次のように選択します。 **EAISchemas**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-197">From the left pane, select **EAISchemas**.</span></span>  <span data-ttu-id="3c3f4-198">右ペインで、[EAISchemas.MapToReqDecline] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-198">From the right pane, select EAISchemas.MapToReqDecline.</span></span>  <span data-ttu-id="3c3f4-199">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-199">Click **OK**.</span></span><br /><br /> <span data-ttu-id="3c3f4-200">ソース</span><span class="sxs-lookup"><span data-stu-id="3c3f4-200">Source</span></span><br /><br /> <span data-ttu-id="3c3f4-201">-RequestMessage</span><span class="sxs-lookup"><span data-stu-id="3c3f4-201">- RequestMessage</span></span><br /><br /> <span data-ttu-id="3c3f4-202">転送先</span><span class="sxs-lookup"><span data-stu-id="3c3f4-202">Destination</span></span><br /><br /> <span data-ttu-id="3c3f4-203">-RequestDeclineMessage</span><span class="sxs-lookup"><span data-stu-id="3c3f4-203">- RequestDeclineMessage</span></span>|  
+    |<span data-ttu-id="3c3f4-190">**マップ名**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-190">**Map Name**</span></span>|<span data-ttu-id="3c3f4-191">**...** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-191">Click **…**.</span></span> <span data-ttu-id="3c3f4-192">[変換の構成] で、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-192">From Transform Configuration, do the following:</span></span><br /><br /> <span data-ttu-id="3c3f4-193">構成情報の入力</span><span class="sxs-lookup"><span data-stu-id="3c3f4-193">Enter the configuration information:</span></span><br /><br /> <span data-ttu-id="3c3f4-194">-**既存のマップ**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-194">- Click **Existing Map**.</span></span><br /><br /> <span data-ttu-id="3c3f4-195">完全修飾マップ名:</span><span class="sxs-lookup"><span data-stu-id="3c3f4-195">Fully Qualified Map Name:</span></span><br /><br /> <span data-ttu-id="3c3f4-196">- **\<参照されたアセンブリから選択\>** です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-196">- Select **\<Select from referenced assembly\>**.</span></span>  <span data-ttu-id="3c3f4-197">左側のウィンドウから次のように選択します。 **EAISchemas**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-197">From the left pane, select **EAISchemas**.</span></span>  <span data-ttu-id="3c3f4-198">右ペインで、[EAISchemas.MapToReqDecline] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-198">From the right pane, select EAISchemas.MapToReqDecline.</span></span>  <span data-ttu-id="3c3f4-199">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-199">Click **OK**.</span></span><br /><br /> <span data-ttu-id="3c3f4-200">ソース</span><span class="sxs-lookup"><span data-stu-id="3c3f4-200">Source</span></span><br /><br /> <span data-ttu-id="3c3f4-201">-RequestMessage</span><span class="sxs-lookup"><span data-stu-id="3c3f4-201">- RequestMessage</span></span><br /><br /> <span data-ttu-id="3c3f4-202">転送先</span><span class="sxs-lookup"><span data-stu-id="3c3f4-202">Destination</span></span><br /><br /> <span data-ttu-id="3c3f4-203">-RequestDeclineMessage</span><span class="sxs-lookup"><span data-stu-id="3c3f4-203">- RequestDeclineMessage</span></span>|  
   
 11. <span data-ttu-id="3c3f4-204">デザイン画面でクリックして、 **Send_1**図形です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-204">On the design surface, click the **Send_1** shape.</span></span>  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="3c3f4-208">**名前**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-208">**Name**</span></span>|<span data-ttu-id="3c3f4-209">型**SendRequestDecline**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-209">Type **SendRequestDecline**.</span></span>|  
     |<span data-ttu-id="3c3f4-210">**メッセージ**</span><span class="sxs-lookup"><span data-stu-id="3c3f4-210">**Message**</span></span>|<span data-ttu-id="3c3f4-211">選択**RequestDeclineMessage**です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-211">Select **RequestDeclineMessage**.</span></span>|  
   
-13. <span data-ttu-id="3c3f4-212">デザイン画面でクリックして、 **[send_2]**図形です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-212">On the design surface, click the **Send_2** shape.</span></span>  
+13. <span data-ttu-id="3c3f4-212">デザイン画面でクリックして、 **[send_2]** 図形です。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-212">On the design surface, click the **Send_2** shape.</span></span>  
   
 14. <span data-ttu-id="3c3f4-213">[プロパティ ウィンドウ] で、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="3c3f4-213">In the Properties window, do the following:</span></span>  
   

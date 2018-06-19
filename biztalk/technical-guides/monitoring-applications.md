@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4be98ba2-6acd-4dee-b6ea-db71bbd368f0
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008991"
 ---
 # <a name="monitoring-applications"></a><span data-ttu-id="33a67-102">アプリケーションの監視</span><span class="sxs-lookup"><span data-stu-id="33a67-102">Monitoring Applications</span></span>
 <span data-ttu-id="33a67-103">BizTalk を監視するための Microsoft System Center Operations Manager のセットアップ アプリケーション通常できますに細分化プログレッシブ 4 段階のプロセスには、次のように。</span><span class="sxs-lookup"><span data-stu-id="33a67-103">Setting up Microsoft System Center Operations Manager to monitor BizTalk applications typically can be broken down into a progressive four-step process as follows:</span></span>  

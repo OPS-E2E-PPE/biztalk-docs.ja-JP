@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22230218"
 ---
 # <a name="an-error-occurred-when-validating-an-as2-message"></a><span data-ttu-id="38607-102">AS2 メッセージの検証中にエラーが発生しました</span><span class="sxs-lookup"><span data-stu-id="38607-102">An error occurred when validating an AS2 message</span></span>
 ## <a name="details"></a><span data-ttu-id="38607-103">詳細</span><span class="sxs-lookup"><span data-stu-id="38607-103">Details</span></span>  

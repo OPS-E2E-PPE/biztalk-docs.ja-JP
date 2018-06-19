@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 715af9cc-d718-483d-b593-64462aa5a58b
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976056"
 ---
 # <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a><span data-ttu-id="e70c8-103">チュートリアル: フラット ファイル逆アセンブル ヘッダーおよびトレーラーを使用します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-103">Walkthrough: Flat File Disassembly Using a Header and Trailer</span></span>
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/28/2018
 ### <a name="create-a-new-biztalk-project"></a><span data-ttu-id="e70c8-120">新しい BizTalk プロジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="e70c8-120">Create a New BizTalk Project</span></span>  
  <span data-ttu-id="e70c8-121">BizTalk プロジェクトを作成する必要があるソリューションをビルドする前に、ソリューションに厳密な名前が付いていることを確認し、アプリケーション名をそのソリューションに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-121">Before building a solution you need to create a BizTalk project, ensure that it is strongly named, and assign it an application name.</span></span> <span data-ttu-id="e70c8-122">アプリケーション名を割り当てると、そのソリューションが BizTalk Server によって既定の BizTalk アプリケーションに配置されるのを防ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-122">Assigning an application name prevents BizTalk Server from deploying the solution into the default BizTalk application.</span></span>  
   
-1.  <span data-ttu-id="e70c8-123">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して新しい BizTalk プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-123">Use [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] to create a new BizTalk project.</span></span> <span data-ttu-id="e70c8-124">プロジェクトを呼び出す **[ffdisassemblerwalkthrough]**します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-124">Call the project **FFDisassemblerWalkthrough**.</span></span>  
+1.  <span data-ttu-id="e70c8-123">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して新しい BizTalk プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-123">Use [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] to create a new BizTalk project.</span></span> <span data-ttu-id="e70c8-124">プロジェクトを呼び出す **[ffdisassemblerwalkthrough]** します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-124">Call the project **FFDisassemblerWalkthrough**.</span></span>  
   
 2.  <span data-ttu-id="e70c8-125">キー ファイルを作成してプロジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-125">Generate a key file and assign it to the project.</span></span> <span data-ttu-id="e70c8-126">このタスクの詳細については、次を参照してください。 [署名 ページ、プロジェクト デザイナー](http://go.microsoft.com/fwlink/?LinkId=125876)します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-126">For more information about this task, see [Signing Page, Project Designer](http://go.microsoft.com/fwlink/?LinkId=125876).</span></span>  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="e70c8-176">![ヘッダー スキーマ用に選択されたデータ](../core/media/ffwiz-header-select-document-data.gif "ffwiz_header_select_document_data")</span><span class="sxs-lookup"><span data-stu-id="e70c8-176">![Data selected for header schema](../core/media/ffwiz-header-select-document-data.gif "ffwiz_header_select_document_data")</span></span>  
   
-     <span data-ttu-id="e70c8-177">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-177">Click **Next**.</span></span>  
+     <span data-ttu-id="e70c8-177">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-177">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="e70c8-178">**レコード書式**  ページで  **次** を既定値を受け入れるようにします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-178">On the **Select Record Format** page, click **Next** to accept the default.</span></span> <span data-ttu-id="e70c8-179">データ ファイルでは相対位置を使用していないので、既定の "区切り記号" を使用できます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-179">You can accept the default "by delimiter symbol" because the data file does not use relative position.</span></span>  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="e70c8-187">問題がなければをクリックして **完了** ウィザードを完了します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-187">When you are satisfied, click **Finish** to complete the wizard.</span></span>  
   
-10. <span data-ttu-id="e70c8-188">クリックして、 **\<スキーマ\>**ヘッダー スキーマ ペイン内のノードです。</span><span class="sxs-lookup"><span data-stu-id="e70c8-188">Click the **\<Schema\>** node in the Header schema pane.</span></span> <span data-ttu-id="e70c8-189">プロパティ ペインで次のように変更します。 **Element FormDefault** に **Qualified**します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-189">In the Properties pane, change **Element FormDefault** to **Qualified**.</span></span> <span data-ttu-id="e70c8-190">これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-190">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
+10. <span data-ttu-id="e70c8-188">クリックして、 **\<スキーマ\>** ヘッダー スキーマ ペイン内のノードです。</span><span class="sxs-lookup"><span data-stu-id="e70c8-188">Click the **\<Schema\>** node in the Header schema pane.</span></span> <span data-ttu-id="e70c8-189">プロパティ ペインで次のように変更します。 **Element FormDefault** に **Qualified**します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-189">In the Properties pane, change **Element FormDefault** to **Qualified**.</span></span> <span data-ttu-id="e70c8-190">これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-190">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-trailer-schema"></a><span data-ttu-id="e70c8-191">フラット ファイル スキーマ ウィザードを使用してトレーラー スキーマを作成するには</span><span class="sxs-lookup"><span data-stu-id="e70c8-191">Use the Flat File Schema Wizard to create the trailer schema</span></span>  
   
@@ -147,7 +148,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="e70c8-203">![トレーラー スキーマ用に選択されたデータ](../core/media/ffwiz-trailer-select-document-data.gif "ffwiz_trailer_select_document_data")</span><span class="sxs-lookup"><span data-stu-id="e70c8-203">![Data selected for trailer schema](../core/media/ffwiz-trailer-select-document-data.gif "ffwiz_trailer_select_document_data")</span></span>  
   
-     <span data-ttu-id="e70c8-204">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-204">Click **Next**.</span></span>  
+     <span data-ttu-id="e70c8-204">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-204">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="e70c8-205">**レコード書式**  ページで  **次** を既定値を受け入れるようにします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-205">On the **Select Record Format** page, click **Next** to accept the default.</span></span> <span data-ttu-id="e70c8-206">データ ファイルでは相対位置を使用していないので、既定の "区切り記号" を使用できます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-206">You can accept the default "by delimiter symbol" because the data file does not use relative position.</span></span>  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="e70c8-214">問題がなければをクリックして **完了** ウィザードを完了します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-214">When you are satisfied, click **Finish** to complete the wizard.</span></span>  
   
-10. <span data-ttu-id="e70c8-215">クリックして、 **\<スキーマ\>**トレーラー スキーマ ペイン内のノードです。</span><span class="sxs-lookup"><span data-stu-id="e70c8-215">Click the **\<Schema\>** node in the Trailer schema pane.</span></span> <span data-ttu-id="e70c8-216">プロパティ ペインで次のように変更します。 **elementFormDefault** に **Qualified**します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-216">In the Properties pane, change **elementFormDefault** to **Qualified**.</span></span> <span data-ttu-id="e70c8-217">これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-217">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
+10. <span data-ttu-id="e70c8-215">クリックして、 **\<スキーマ\>** トレーラー スキーマ ペイン内のノードです。</span><span class="sxs-lookup"><span data-stu-id="e70c8-215">Click the **\<Schema\>** node in the Trailer schema pane.</span></span> <span data-ttu-id="e70c8-216">プロパティ ペインで次のように変更します。 **elementFormDefault** に **Qualified**します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-216">In the Properties pane, change **elementFormDefault** to **Qualified**.</span></span> <span data-ttu-id="e70c8-217">これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-217">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-body-schema"></a><span data-ttu-id="e70c8-218">フラット ファイル スキーマ ウィザードを使用してボディ スキーマを作成するには</span><span class="sxs-lookup"><span data-stu-id="e70c8-218">Use the Flat File Schema Wizard to create the body schema</span></span>  
   
@@ -184,7 +185,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="e70c8-230">![ボディ スキーマ用に選択されたデータ](../core/media/ffwiz-body-select-document-data.gif "ffwiz_body_select_document_data")</span><span class="sxs-lookup"><span data-stu-id="e70c8-230">![Data selected for body schema](../core/media/ffwiz-body-select-document-data.gif "ffwiz_body_select_document_data")</span></span>  
   
-     <span data-ttu-id="e70c8-231">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-231">Click **Next**.</span></span>  
+     <span data-ttu-id="e70c8-231">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-231">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="e70c8-232">**レコード書式**  ページで  **次** を既定値を受け入れるようにします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-232">On the **Select Record Format** page, click **Next** to accept the default.</span></span> <span data-ttu-id="e70c8-233">データ ファイルでは相対位置を使用していないので、既定の "区切り記号" を使用できます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-233">You can accept the default "by delimiter symbol" because the data file does not use relative position.</span></span>  
   
@@ -202,13 +203,13 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="e70c8-245">![構成で区切られたレコードのタグ識別子](../core/media/ffwiz-bodyerror-delimited-record.gif "ffwiz_bodyerror_delimited_record")</span><span class="sxs-lookup"><span data-stu-id="e70c8-245">![Configuring delimited record with tag identifier](../core/media/ffwiz-bodyerror-delimited-record.gif "ffwiz_bodyerror_delimited_record")</span></span>  
   
-     <span data-ttu-id="e70c8-246">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-246">Click **Next**.</span></span>  
+     <span data-ttu-id="e70c8-246">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-246">Click **Next**.</span></span>  
   
 13. <span data-ttu-id="e70c8-247">ここでは、Error レコードの子要素を定義します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-247">Now define the child elements of the Error record.</span></span>  
   
      <span data-ttu-id="e70c8-248">![5 つの要素で定義されたエラー レコード](../core/media/ffwiz-bodyerror-child-elements.gif "ffwiz_bodyerror_child_elements")</span><span class="sxs-lookup"><span data-stu-id="e70c8-248">![Error record defined with five elements](../core/media/ffwiz-bodyerror-child-elements.gif "ffwiz_bodyerror_child_elements")</span></span>  
   
-     <span data-ttu-id="e70c8-249">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-249">Click **Next**.</span></span>  
+     <span data-ttu-id="e70c8-249">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-249">Click **Next**.</span></span>  
   
 14. <span data-ttu-id="e70c8-250">**スキーマ ビュー**  ページで、そのスキーマを検証します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-250">On the **Schema View** page, verify the schema.</span></span>  
   
@@ -275,7 +276,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="e70c8-285">をクリックして **受信場所**, 、順にクリック **新規** 受信場所を追加します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-285">Click **Receive Locations**, and then click **New** to add a receive location.</span></span> <span data-ttu-id="e70c8-286">新しい受信場所に "ReceiveErrorLocation" という名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-286">Name the new receive location "ReceiveErrorLocation".</span></span> <span data-ttu-id="e70c8-287">設定、 **受信パイプライン** に **FFReceivePipeline**します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-287">Set the **Receive Pipeline** to **FFReceivePipeline**.</span></span> <span data-ttu-id="e70c8-288">**トランスポートの種類**, [ **ファイル**, 、] をクリックし、 **構成**します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-288">For **Transport Type**, select **FILE**, and then click **Configure**.</span></span> <span data-ttu-id="e70c8-289">設定し、作成した受信ディレクトリを選択して、 **ファイル マスク** \*.txt にします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-289">Select the receive directory you created, and then set the **File mask** to \*.txt.</span></span>  
   
-5.  <span data-ttu-id="e70c8-290">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-290">Click **OK**.</span></span> <span data-ttu-id="e70c8-291">受信ポートが正しく構成されます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-291">Your receive port should now be configured.</span></span> <span data-ttu-id="e70c8-292">クリックして **OK** を閉じます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-292">Click **OK** to close.</span></span>  
+5.  <span data-ttu-id="e70c8-290">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e70c8-290">Click **OK**.</span></span> <span data-ttu-id="e70c8-291">受信ポートが正しく構成されます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-291">Your receive port should now be configured.</span></span> <span data-ttu-id="e70c8-292">クリックして **OK** を閉じます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-292">Click **OK** to close.</span></span>  
   
 ##### <a name="configure-the-send-port"></a><span data-ttu-id="e70c8-293">送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-293">Configure the send port</span></span>  
   
@@ -296,7 +297,7 @@ ms.lasthandoff: 03/28/2018
 ### <a name="run-the-example"></a><span data-ttu-id="e70c8-304">例の実行</span><span class="sxs-lookup"><span data-stu-id="e70c8-304">Run the Example</span></span>  
  <span data-ttu-id="e70c8-305">次に、例を実行します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-305">It is now time to run the example.</span></span> <span data-ttu-id="e70c8-306">BizTalk Server 管理コンソールを使用すると、アプリケーションを起動する、受信場所に、テスト ファイルをコピーし、送信場所に生成される内容を確認します。</span><span class="sxs-lookup"><span data-stu-id="e70c8-306">After using the BizTalk Server Management console to start the application, copy the test files to the receive location and observe what is produced in the send location.</span></span>  
   
-1.  <span data-ttu-id="e70c8-307">BizTalk Server 管理コンソールを右クリックし、 **[flatfileexample]**アプリケーション、およびクリック**開始**です。</span><span class="sxs-lookup"><span data-stu-id="e70c8-307">In the BizTalk Server Administration console, right-click the **FlatFileExample** application, and then click **Start**.</span></span> <span data-ttu-id="e70c8-308">送信を開始し、および受信ポートこれを参加させます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-308">This enlists and starts the send and receive ports.</span></span>  
+1.  <span data-ttu-id="e70c8-307">BizTalk Server 管理コンソールを右クリックし、 **[flatfileexample]** アプリケーション、およびクリック**開始**です。</span><span class="sxs-lookup"><span data-stu-id="e70c8-307">In the BizTalk Server Administration console, right-click the **FlatFileExample** application, and then click **Start**.</span></span> <span data-ttu-id="e70c8-308">送信を開始し、および受信ポートこれを参加させます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-308">This enlists and starts the send and receive ports.</span></span>  
   
 2.  <span data-ttu-id="e70c8-309">サンプルの Errorfile.txt のコピーを受信ディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-309">Drop the copy of the sample Errorfile.txt into the receive directory.</span></span> <span data-ttu-id="e70c8-310">2 つの出力ファイルが送信ディレクトリに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="e70c8-310">Two output files should be written to the send directory.</span></span>  
   

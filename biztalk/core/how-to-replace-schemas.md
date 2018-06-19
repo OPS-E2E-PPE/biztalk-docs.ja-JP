@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 104e60d3-1303-4e56-b13a-c10ab14ba383
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972632"
 ---
 # <a name="how-to-replace-schemas"></a><span data-ttu-id="49bc0-102">スキーマを置換する方法</span><span class="sxs-lookup"><span data-stu-id="49bc0-102">How to Replace Schemas</span></span>
 <span data-ttu-id="49bc0-103">更新されたスキーマを取引先から受け取った場合など、既存のマップ内にある送信元や送信先スキーマの置換が必要になることがあります。</span><span class="sxs-lookup"><span data-stu-id="49bc0-103">There may be times when you want to replace either the source or destination schema in an existing map, such as when you receive an updated schema from a trading partner.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 03/28/2018
      <span data-ttu-id="49bc0-110">![スキーマを選択](../core/media/biztalk-typepicker.gif "BizTalk_TypePicker")</span><span class="sxs-lookup"><span data-stu-id="49bc0-110">![Select the Schema](../core/media/biztalk-typepicker.gif "BizTalk_TypePicker")</span></span>  
 
     > [!TIP] 
-    > <span data-ttu-id="49bc0-111">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="49bc0-111">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can resize the Type Picker window to see the full name of your schema.</span></span>
+    > <span data-ttu-id="49bc0-111">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="49bc0-111">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you can resize the Type Picker window to see the full name of your schema.</span></span>
       
      <span data-ttu-id="49bc0-112">置換スキーマに単一のルートが存在するか、置換を使用してスキーマのルート ノードが設定された場合のみ、 **ルート参照** のプロパティ、 **スキーマ** ノード、該当するペインに置換スキーマが開きますおよび手順 3. を実行する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="49bc0-112">If only a single root exists in the replacement schema, or a root node has been established for the replacement schema using the **Root Reference** property of the **Schema** node, the replacement schema opens in the relevant pane, and you will not need to perform step 3.</span></span>  
   

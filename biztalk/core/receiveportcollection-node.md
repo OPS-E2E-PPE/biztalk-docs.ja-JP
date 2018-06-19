@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268394"
 ---
 # <a name="receiveportcollection-node"></a><span data-ttu-id="f355b-102">ReceivePortCollection ノード</span><span class="sxs-lookup"><span data-stu-id="f355b-102">ReceivePortCollection Node</span></span>
 <span data-ttu-id="f355b-103">バインド ファイルの ReceivePortCollection ノードは、バインド ファイルと共にエクスポートされる受信ポートに関する特定の情報を含むすべての ReceivePort ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="f355b-103">The ReceivePortCollection node of a binding file is the parent node for all of the ReceivePort nodes which contain specific information about a receive port that is exported with the binding file.</span></span>  

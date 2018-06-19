@@ -1,14 +1,14 @@
 ---
-title: "BAM Notification を移動する方法はサービス Databases1 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM Notification を移動する方法はサービス Databases1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89b4938e-ea4a-48d3-80c3-eb9401e28323
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009803"
 ---
 # <a name="how-to-move-the-bam-notification-services-databases"></a><span data-ttu-id="f7bc0-102">BAM Notification Services データベースを移動する方法</span><span class="sxs-lookup"><span data-stu-id="f7bc0-102">How to Move the BAM Notification Services Databases</span></span>
 <span data-ttu-id="f7bc0-103">この手順を使用すると、BAM Notification Services データベースを別のサーバーに移動します。</span><span class="sxs-lookup"><span data-stu-id="f7bc0-103">You can use this procedure to move the BAM Notification Services database to another server.</span></span>  <span data-ttu-id="f7bc0-104">エンド ツー エンドのシナリオの観点から BAM Notification Services データベースの移動にも 2 つの主要な手順が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f7bc0-104">From an end-to-end scenario perspective, moving the BAM Notification Services database involves two major steps:</span></span>  

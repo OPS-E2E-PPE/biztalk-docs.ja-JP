@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4da99e74-a41d-4ab1-a07d-e3bee6187216
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25971960"
 ---
 # <a name="how-to-enable-tracing-in-bam"></a><span data-ttu-id="17f21-102">BAM のトレースを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="17f21-102">How to Enable Tracing in BAM</span></span>
 <span data-ttu-id="17f21-103">BAM のトレースを有効にすると、次の 5 つの BAM コンポーネント内で発生した問題のトラブルシューティングに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="17f21-103">You can enable tracing in BAM to help troubleshoot problems within the following five BAM components:</span></span>  

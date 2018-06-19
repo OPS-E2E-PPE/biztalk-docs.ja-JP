@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263146"
 ---
 # <a name="msmq-adapter"></a><span data-ttu-id="9d33b-102">MSMQ アダプター</span><span class="sxs-lookup"><span data-stu-id="9d33b-102">MSMQ Adapter</span></span>
 <span data-ttu-id="9d33b-103">MSMQ アダプターでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からメッセージキュー 4.0 を使用できます。</span><span class="sxs-lookup"><span data-stu-id="9d33b-103">The MSMQ adapter lets you use Message Queuing 4.0 from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="9d33b-104">メッセージ キュー テクノロジを BizTalk Server と統合すると、一時的にオフラインになる可能性がある異種ネットワークやシステムを経由して、それぞれ別の時間に実行されるアプリケーションどうしがやりとりできるようになります。</span><span class="sxs-lookup"><span data-stu-id="9d33b-104">Integrating Message Queuing technology with BizTalk Server enables applications that are running at different times to communicate across heterogeneous networks and systems that may be temporarily offline.</span></span>  

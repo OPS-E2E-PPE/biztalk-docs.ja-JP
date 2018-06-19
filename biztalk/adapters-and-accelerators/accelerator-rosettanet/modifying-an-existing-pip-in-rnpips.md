@@ -1,11 +1,11 @@
 ---
-title: "Rnpip の既存の PIP の変更 |Microsoft ドキュメント"
-ms.custom: 
+title: Rnpip の既存の PIP の変更 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RNPIPs
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - PIPs, modifying
 - assemblies, RNPIPs
 ms.assetid: f2ed25c4-1979-4691-9315-e7568e7cca8b
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006291"
 ---
 # <a name="modifying-an-existing-pip-in-rnpips"></a><span data-ttu-id="5583d-102">Rnpip の既存の PIP の変更</span><span class="sxs-lookup"><span data-stu-id="5583d-102">Modifying an Existing PIP in RNPIPs</span></span>
 <span data-ttu-id="5583d-103">このトピックを変更し、再デプロイしてインストール プロセス PIP (Partner Interface) スキーマの 1 つの方法について説明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップします。</span><span class="sxs-lookup"><span data-stu-id="5583d-103">This topic describes how to change and re-deploy one of the Partner Interface Process (PIP) schemas installed by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] setup.</span></span> <span data-ttu-id="5583d-104">スキーマは、RNPIP アセンブリの一部として展開します。</span><span class="sxs-lookup"><span data-stu-id="5583d-104">You deploy the schema as part of the RNPIPs assembly.</span></span>  
@@ -41,9 +42,9 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="5583d-111">**ファイル** メニューのをポイント**開く**、クリックして**プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-111">In the **File** menu, point to **Open**, and then click **Project**.</span></span>  
   
-6.  <span data-ttu-id="5583d-112">**プロジェクトを開く**] ダイアログ ボックスに移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\クリックして、スキーマ**[RNPIPs.btproj**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-112">In the **Open Project** dialog box, move to \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\Schemas, and then select **RNPIPs.btproj**.</span></span>  
+6.  <span data-ttu-id="5583d-112">**プロジェクトを開く**] ダイアログ ボックスに移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\クリックして、スキーマ **[RNPIPs.btproj**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-112">In the **Open Project** dialog box, move to \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\Schemas, and then select **RNPIPs.btproj**.</span></span>  
   
-7.  <span data-ttu-id="5583d-113">**ビュー**  メニューをクリックして**BizTalk エクスプ ローラー**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-113">In the **View** menu, click **BizTalk Explorer**.</span></span> <span data-ttu-id="5583d-114">展開**アセンブリ**、し、右クリックし、 **Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-114">Expand **Assemblies**, and then right-click **Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)**.</span></span> <span data-ttu-id="5583d-115">をクリックして**展開解除**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-115">Click **Undeploy**.</span></span>  
+7.  <span data-ttu-id="5583d-113">**ビュー**  メニューをクリックして**BizTalk エクスプ ローラー**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-113">In the **View** menu, click **BizTalk Explorer**.</span></span> <span data-ttu-id="5583d-114">展開**アセンブリ**、し、右クリックし、 **Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)** です。</span><span class="sxs-lookup"><span data-stu-id="5583d-114">Expand **Assemblies**, and then right-click **Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)**.</span></span> <span data-ttu-id="5583d-115">をクリックして**展開解除**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-115">Click **Undeploy**.</span></span>  
   
 8.  <span data-ttu-id="5583d-116">開始**Visual Studio 2012 コマンド プロンプト**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-116">Start **Visual Studio 2012 Command Prompt**.</span></span>  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 12/01/2017
   
 17. <span data-ttu-id="5583d-125">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-125">Click **Start**, point to **All Programs**, point to **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-18. <span data-ttu-id="5583d-126">BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)**の順に展開および**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-126">In BizTalk Administration Console, expand **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**, and then expand **Hosts**.</span></span>  
+18. <span data-ttu-id="5583d-126">BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)** の順に展開および**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-126">In BizTalk Administration Console, expand **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**, and then expand **Hosts**.</span></span>  
   
 19. <span data-ttu-id="5583d-127">右側のウィンドウで、ホストの名前を右クリックし、をクリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-127">In the right pane, right-click the name of the host, and then click **Stop**.</span></span> <span data-ttu-id="5583d-128">サービスが停止した後、ホストの名前を右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="5583d-128">After the service has stopped, right-click the name of the host, and then click **Start**.</span></span>  
   

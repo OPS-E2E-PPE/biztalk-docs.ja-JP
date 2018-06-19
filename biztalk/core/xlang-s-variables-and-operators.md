@@ -1,14 +1,14 @@
 ---
-title: "XLANG の変数および演算子 |Microsoft ドキュメント"
-ms.custom: 
+title: XLANG の変数および演算子 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02512789-2cb9-4ba9-aa78-e59b248e6b24
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974728"
 ---
 # <a name="xlang-s-variables-and-operators"></a><span data-ttu-id="6feb4-102">XLANG の変数および演算子</span><span class="sxs-lookup"><span data-stu-id="6feb4-102">XLANG-s Variables and Operators</span></span>
 <span data-ttu-id="6feb4-103">このセクションでは、XLANG/s 言語で使用される変数および演算子について説明します。</span><span class="sxs-lookup"><span data-stu-id="6feb4-103">This section discusses the variables and operators used in the XLANG/s language.</span></span>  
@@ -45,8 +46,8 @@ ms.lasthandoff: 11/28/2017
   
 |<span data-ttu-id="6feb4-122">演算子</span><span class="sxs-lookup"><span data-stu-id="6feb4-122">Operator</span></span>|<span data-ttu-id="6feb4-123">Description</span><span class="sxs-lookup"><span data-stu-id="6feb4-123">Description</span></span>|<span data-ttu-id="6feb4-124">例</span><span class="sxs-lookup"><span data-stu-id="6feb4-124">Example</span></span>|  
 |--------------|-----------------|-------------|  
-|<span data-ttu-id="6feb4-125">オン</span><span class="sxs-lookup"><span data-stu-id="6feb4-125">checked</span></span>|<span data-ttu-id="6feb4-126">算術オーバーフローでエラーが発生します</span><span class="sxs-lookup"><span data-stu-id="6feb4-126">Raises error on arithmetic overflow</span></span>|<span data-ttu-id="6feb4-127">checked(x = y * 1000)</span><span class="sxs-lookup"><span data-stu-id="6feb4-127">checked(x = y * 1000)</span></span>|  
-|<span data-ttu-id="6feb4-128">オンになっていません。</span><span class="sxs-lookup"><span data-stu-id="6feb4-128">unchecked</span></span>|<span data-ttu-id="6feb4-129">算術オーバーフローを無視</span><span class="sxs-lookup"><span data-stu-id="6feb4-129">Ignores arithmetic overflow</span></span>|<span data-ttu-id="6feb4-130">unchecked(x = y * 1000)</span><span class="sxs-lookup"><span data-stu-id="6feb4-130">unchecked(x = y * 1000)</span></span>|  
+|<span data-ttu-id="6feb4-125">オン</span><span class="sxs-lookup"><span data-stu-id="6feb4-125">checked</span></span>|<span data-ttu-id="6feb4-126">算術オーバーフローでエラーが発生します</span><span class="sxs-lookup"><span data-stu-id="6feb4-126">Raises error on arithmetic overflow</span></span>|<span data-ttu-id="6feb4-127">checked(x = y \* 1000)</span><span class="sxs-lookup"><span data-stu-id="6feb4-127">checked(x = y \* 1000)</span></span>|  
+|<span data-ttu-id="6feb4-128">オンになっていません。</span><span class="sxs-lookup"><span data-stu-id="6feb4-128">unchecked</span></span>|<span data-ttu-id="6feb4-129">算術オーバーフローを無視</span><span class="sxs-lookup"><span data-stu-id="6feb4-129">Ignores arithmetic overflow</span></span>|<span data-ttu-id="6feb4-130">unchecked(x = y \* 1000)</span><span class="sxs-lookup"><span data-stu-id="6feb4-130">unchecked(x = y \* 1000)</span></span>|  
 |<span data-ttu-id="6feb4-131">新機能</span><span class="sxs-lookup"><span data-stu-id="6feb4-131">new</span></span>|<span data-ttu-id="6feb4-132">クラスのインスタンスを作成</span><span class="sxs-lookup"><span data-stu-id="6feb4-132">Creates an instance of a class</span></span>|<span data-ttu-id="6feb4-133">myObject = new MyClass;</span><span class="sxs-lookup"><span data-stu-id="6feb4-133">myObject = new MyClass;</span></span>|  
 |<span data-ttu-id="6feb4-134">typeof</span><span class="sxs-lookup"><span data-stu-id="6feb4-134">typeof</span></span>|<span data-ttu-id="6feb4-135">型を取得</span><span class="sxs-lookup"><span data-stu-id="6feb4-135">Retrieves a type</span></span>|<span data-ttu-id="6feb4-136">myMapType = typeof(myMap)</span><span class="sxs-lookup"><span data-stu-id="6feb4-136">myMapType = typeof(myMap)</span></span>|  
 |<span data-ttu-id="6feb4-137">succeeded</span><span class="sxs-lookup"><span data-stu-id="6feb4-137">succeeded</span></span>|<span data-ttu-id="6feb4-138">トランザクション スコープまたはオーケストレーションが正常に完了するかどうかをテスト</span><span class="sxs-lookup"><span data-stu-id="6feb4-138">Tests for successful completion of transactional scope or orchestration</span></span>|<span data-ttu-id="6feb4-139">成功した (\<子トランザクションの現在のスコープまたはサービスのトランザクション ID\>)</span><span class="sxs-lookup"><span data-stu-id="6feb4-139">succeeded(\<transaction ID for child transaction of current scope or service\>)</span></span>|  
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="6feb4-147">!</span><span class="sxs-lookup"><span data-stu-id="6feb4-147">!</span></span>|<span data-ttu-id="6feb4-148">論理否定</span><span class="sxs-lookup"><span data-stu-id="6feb4-148">Logical negation</span></span>|<span data-ttu-id="6feb4-149">!myBool</span><span class="sxs-lookup"><span data-stu-id="6feb4-149">!myBool</span></span>|  
 |~|<span data-ttu-id="6feb4-150">ビットごとの補数</span><span class="sxs-lookup"><span data-stu-id="6feb4-150">Bitwise complement</span></span>|<span data-ttu-id="6feb4-151">x = ~y</span><span class="sxs-lookup"><span data-stu-id="6feb4-151">x = ~y</span></span>|  
 |<span data-ttu-id="6feb4-152">()</span><span class="sxs-lookup"><span data-stu-id="6feb4-152">()</span></span>|<span data-ttu-id="6feb4-153">キャスト</span><span class="sxs-lookup"><span data-stu-id="6feb4-153">Cast</span></span>|<span data-ttu-id="6feb4-154">(bool) myInt</span><span class="sxs-lookup"><span data-stu-id="6feb4-154">(bool) myInt</span></span>|  
-|*|<span data-ttu-id="6feb4-155">時間</span><span class="sxs-lookup"><span data-stu-id="6feb4-155">Times</span></span>|<span data-ttu-id="6feb4-156">Weight = MyMsg.numOrders * 20</span><span class="sxs-lookup"><span data-stu-id="6feb4-156">Weight = MyMsg.numOrders * 20</span></span>|  
+|*|<span data-ttu-id="6feb4-155">時間</span><span class="sxs-lookup"><span data-stu-id="6feb4-155">Times</span></span>|<span data-ttu-id="6feb4-156">Weight = MyMsg.numOrders \* 20</span><span class="sxs-lookup"><span data-stu-id="6feb4-156">Weight = MyMsg.numOrders \* 20</span></span>|  
 |/|<span data-ttu-id="6feb4-157">割った値</span><span class="sxs-lookup"><span data-stu-id="6feb4-157">Divided by</span></span>|<span data-ttu-id="6feb4-158">x / y</span><span class="sxs-lookup"><span data-stu-id="6feb4-158">x / y</span></span>|  
 |+|<span data-ttu-id="6feb4-159">プラス</span><span class="sxs-lookup"><span data-stu-id="6feb4-159">Plus</span></span>|<span data-ttu-id="6feb4-160">x + y</span><span class="sxs-lookup"><span data-stu-id="6feb4-160">x + y</span></span>|  
 |-|<span data-ttu-id="6feb4-161">負符号</span><span class="sxs-lookup"><span data-stu-id="6feb4-161">Minus</span></span>|<span data-ttu-id="6feb4-162">x - y</span><span class="sxs-lookup"><span data-stu-id="6feb4-162">x - y</span></span>|  

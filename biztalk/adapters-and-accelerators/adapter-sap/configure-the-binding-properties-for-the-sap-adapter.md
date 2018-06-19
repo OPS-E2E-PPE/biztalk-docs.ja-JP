@@ -1,17 +1,17 @@
 ---
-title: "SAP アダプターのバインドのプロパティを構成する |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターのバインドのプロパティを構成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding properties, specifying at design time
 - binding properties, specifying at run time
 ms.assetid: 259a5895-c19d-409c-b2fc-bfdf59d5d74b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217442"
 ---
 # <a name="configure-the-binding-properties-for-the-sap-adapter"></a><span data-ttu-id="7345d-102">SAP アダプターのバインドのプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="7345d-102">Configure the binding properties for the SAP adapter</span></span>
 <span data-ttu-id="7345d-103">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]動作特性を制御できるようにするいくつかのバインドのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="7345d-103">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces several binding properties that enable you to control some of its behavioral characteristics.</span></span> <span data-ttu-id="7345d-104">このセクションで説明および Visual Studio (設計時) からのバインドのプロパティを設定する方法について、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (実行時)。</span><span class="sxs-lookup"><span data-stu-id="7345d-104">This section provides information about setting the binding properties from Visual Studio (design time) and from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console (run time).</span></span> <span data-ttu-id="7345d-105">デザイン時に、特定の操作のスキーマを生成するバインドのプロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7345d-105">At design time, you must specify the binding properties to generate schema for specific operations.</span></span> <span data-ttu-id="7345d-106">、実行時に、送信の一部としてのバインドのプロパティを指定か、SAP システムからメッセージを送受信するためのポートが表示される必要があります。</span><span class="sxs-lookup"><span data-stu-id="7345d-106">At run time, you must specify the binding properties as part of the send or receive port for sending or receiving messages from the SAP system.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="7345d-121">**アダプターの構成**ダイアログ ボックスで、をクリックして、**バインド プロパティ**タブをクリックし、別のバインディング プロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="7345d-121">In the **Configure Adapter** dialog box, click the **Binding Properties** tab, and then specify the different binding properties.</span></span>  
   
-6.  <span data-ttu-id="7345d-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-122">Click **OK**.</span></span>  
+6.  <span data-ttu-id="7345d-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-122">Click **OK**.</span></span>  
   
 ### <a name="enter-binding-properties-using-add-adapter-metadata-wizard"></a><span data-ttu-id="7345d-123">アダプター メタデータの追加ウィザードを使用してバインドのプロパティを入力してください。</span><span class="sxs-lookup"><span data-stu-id="7345d-123">Enter binding properties using Add Adapter Metadata Wizard</span></span>  
   
@@ -59,14 +60,14 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="7345d-128">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="7345d-128">**Categories**</span></span>|<span data-ttu-id="7345d-129">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="7345d-129">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="7345d-130">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="7345d-130">**Templates**</span></span>|<span data-ttu-id="7345d-131">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="7345d-131">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="7345d-132">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-132">Click **Add**.</span></span> <span data-ttu-id="7345d-133">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="7345d-133">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="7345d-132">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-132">Click **Add**.</span></span> <span data-ttu-id="7345d-133">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="7345d-133">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="7345d-134">アダプターの追加ウィザードで選択**WCF SAP**です。</span><span class="sxs-lookup"><span data-stu-id="7345d-134">In the Add Adapter Wizard, select **WCF-SAP**.</span></span> <span data-ttu-id="7345d-135">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="7345d-135">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="7345d-136">BizTalk で構成されている WCF SAP ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="7345d-136">If you already have a WCF-SAP port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  <span data-ttu-id="7345d-137">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-137">Click **Next**.</span></span>  
+5.  <span data-ttu-id="7345d-137">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-137">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="7345d-138">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**sapBinding**、 をクリック**構成**.</span><span class="sxs-lookup"><span data-stu-id="7345d-138">In the **Consume Adapter Service** dialog box, from the **Select a binding** drop-down list select **sapBinding**, and click **Configure**.</span></span>  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="7345d-142">既存の SAP WCF 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="7345d-142">If you selected an existing WCF-SAP send port, you need not specify the binding properties.</span></span> <span data-ttu-id="7345d-143">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="7345d-143">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="7345d-144">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="7345d-144">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="7345d-145">このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="7345d-145">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="7345d-146">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="7345d-146">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-8.  <span data-ttu-id="7345d-147">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-147">Click **OK**.</span></span>  
+8.  <span data-ttu-id="7345d-147">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-147">Click **OK**.</span></span>  
   
 ## <a name="enter-binding-properties-at-run-time"></a><span data-ttu-id="7345d-148">実行時のバインドのプロパティを入力してください。</span><span class="sxs-lookup"><span data-stu-id="7345d-148">Enter Binding Properties at Run Time</span></span>  
  <span data-ttu-id="7345d-149">実行時は、WCF カスタム ポートまたはで WCF SAP 構成の一部としてのバインドのプロパティを指定できます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="7345d-149">For run time, you can specify the binding properties as part of the WCF-Custom port or WCF-SAP configuration in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -115,7 +116,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="7345d-168">バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいてが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7345d-168">The binding properties are displayed based on whether you are configuring a send port or a receive port.</span></span> <span data-ttu-id="7345d-169">たとえば、バインディングのプロパティの受信に関連する操作利用できない受信操作には、受信ポートの構成が必要とするために、送信ポートを構成するときにします。</span><span class="sxs-lookup"><span data-stu-id="7345d-169">For example, binding properties related to inbound operations are not available while configuring a send port because inbound operations require a receive port configuration.</span></span>  
   
-6.  <span data-ttu-id="7345d-170">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-170">Click **OK**.</span></span>  
+6.  <span data-ttu-id="7345d-170">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7345d-170">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="7345d-171">参照</span><span class="sxs-lookup"><span data-stu-id="7345d-171">See Also</span></span>  
 [<span data-ttu-id="7345d-172">SAP アプリケーションを作成する構成要素</span><span class="sxs-lookup"><span data-stu-id="7345d-172">Building blocks to create SAP applications</span></span>](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

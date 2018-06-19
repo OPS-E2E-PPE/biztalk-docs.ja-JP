@@ -1,14 +1,14 @@
 ---
-title: "単体テストのスキーマおよびマップの機能を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 単体テストのスキーマおよびマップの機能を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29bcb159-ffdb-44b9-a3ff-565973d41797
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288994"
 ---
 # <a name="using-the-unit-testing-feature-with-schemas-and-maps"></a><span data-ttu-id="887bf-102">スキーマとマップを含む単体テスト機能の使用</span><span class="sxs-lookup"><span data-stu-id="887bf-102">Using the Unit Testing Feature with Schemas and Maps</span></span>
 <span data-ttu-id="887bf-103">このトピックでは、単体テスト機能を使用してスキーマとマップの単体テストを HelloWorld オーケストレーション サンプルに追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="887bf-103">This topic demonstrates how to use the unit testing feature to add a unit test for the schemas and map in the HelloWorld orchestration example.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="887bf-117">**新しいテスト プロジェクト** ダイアログ ボックスで、プロジェクト名としてのままにして**TestProject1**  をクリック**作成**です。</span><span class="sxs-lookup"><span data-stu-id="887bf-117">In the **New Test Project** dialog box, leave the project name as **TestProject1** and click **Create**.</span></span>  
   
-9. <span data-ttu-id="887bf-118">**単体テストの作成** ダイアログ ボックスで、種類を展開し、選択、 **POSchema()**下でコンス トラクター、 **poschema()**ノード。</span><span class="sxs-lookup"><span data-stu-id="887bf-118">In the **Create Unit Tests** dialog box, expand the types and select the **POSchema()** constructor under the **Microsoft.Samples.BizTalk.HelloWorld.POSchema** node.</span></span> <span data-ttu-id="887bf-119">選択も**POToInvoice()**下でコンス トラクター、 **Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**ノード。</span><span class="sxs-lookup"><span data-stu-id="887bf-119">Also select **POToInvoice()** constructor under the **Microsoft.Samples.BizTalk.HelloWorld.POToInvoice** node.</span></span> <span data-ttu-id="887bf-120">次の図は、選択する要素を示しています。</span><span class="sxs-lookup"><span data-stu-id="887bf-120">The figure below shows the selections that should be made.</span></span> <span data-ttu-id="887bf-121">次に、選択した場合、キーを押して**OK**です。</span><span class="sxs-lookup"><span data-stu-id="887bf-121">After making the selections shown below, press **OK**.</span></span>  
+9. <span data-ttu-id="887bf-118">**単体テストの作成** ダイアログ ボックスで、種類を展開し、選択、 **POSchema()** 下でコンス トラクター、 **poschema()** ノード。</span><span class="sxs-lookup"><span data-stu-id="887bf-118">In the **Create Unit Tests** dialog box, expand the types and select the **POSchema()** constructor under the **Microsoft.Samples.BizTalk.HelloWorld.POSchema** node.</span></span> <span data-ttu-id="887bf-119">選択も**POToInvoice()** 下でコンス トラクター、 **Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**ノード。</span><span class="sxs-lookup"><span data-stu-id="887bf-119">Also select **POToInvoice()** constructor under the **Microsoft.Samples.BizTalk.HelloWorld.POToInvoice** node.</span></span> <span data-ttu-id="887bf-120">次の図は、選択する要素を示しています。</span><span class="sxs-lookup"><span data-stu-id="887bf-120">The figure below shows the selections that should be made.</span></span> <span data-ttu-id="887bf-121">次に、選択した場合、キーを押して**OK**です。</span><span class="sxs-lookup"><span data-stu-id="887bf-121">After making the selections shown below, press **OK**.</span></span>  
   
      ![](../core/media/schemaandmapsunittestwizardselection.gif "SchemaAndMapsUnitTestWizardSelection")  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 09/20/2017
 5.  <span data-ttu-id="887bf-137">テストが不合格の場合、[テスト結果] ウィンドウのテストをダブルクリックして、不合格の原因となったアサートまたは例外を確認します。</span><span class="sxs-lookup"><span data-stu-id="887bf-137">If any test fails you can double-click the test in the Test Results window to see the assert or exception that caused that test failure.</span></span>  
   
 ## <a name="test-code-summary"></a><span data-ttu-id="887bf-138">テスト コードのまとめ</span><span class="sxs-lookup"><span data-stu-id="887bf-138">Test Code Summary</span></span>  
- <span data-ttu-id="887bf-139">単体テストが有効にすると、 **HelloWorld**プロジェクト、c# のクラスに関連付けられている**POSchema.xsd**から派生した、 **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**クラスです。</span><span class="sxs-lookup"><span data-stu-id="887bf-139">When unit testing was enabled for the **HelloWorld** project, the C# class associated with **POSchema.xsd** was derived from the **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase** class.</span></span> <span data-ttu-id="887bf-140">**[Poschemainstancevalidationtest]**メソッド**TestProject1**使用、 **ValidateInstance**のメソッド、 **POSchema**にクラスPO スキーマに対する SamplePOInput.xml を検証します。</span><span class="sxs-lookup"><span data-stu-id="887bf-140">The **POSchemaInstanceValidationTest** method in **TestProject1** used the **ValidateInstance** method of the **POSchema** class to validate SamplePOInput.xml against the PO schema.</span></span>  
+ <span data-ttu-id="887bf-139">単体テストが有効にすると、 **HelloWorld**プロジェクト、c# のクラスに関連付けられている**POSchema.xsd**から派生した、 **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**クラスです。</span><span class="sxs-lookup"><span data-stu-id="887bf-139">When unit testing was enabled for the **HelloWorld** project, the C# class associated with **POSchema.xsd** was derived from the **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase** class.</span></span> <span data-ttu-id="887bf-140">**[Poschemainstancevalidationtest]** メソッド**TestProject1**使用、 **ValidateInstance**のメソッド、 **POSchema**にクラスPO スキーマに対する SamplePOInput.xml を検証します。</span><span class="sxs-lookup"><span data-stu-id="887bf-140">The **POSchemaInstanceValidationTest** method in **TestProject1** used the **ValidateInstance** method of the **POSchema** class to validate SamplePOInput.xml against the PO schema.</span></span>  
   
  <span data-ttu-id="887bf-141">同様に、単体テストが有効な場合の**HelloWorld**プロジェクト、c# のクラスに関連付けられている、 **POToInvoice.btm**マップの派生元の**Microsoft.BizTalk.TestTools.Mapper.TestableMapBase**クラスです。</span><span class="sxs-lookup"><span data-stu-id="887bf-141">Similarly, when unit testing was enabled for the **HelloWorld** project, the C# class associated with the **POToInvoice.btm** map was derived from the **Microsoft.BizTalk.TestTools.Mapper.TestableMapBase** class.</span></span> <span data-ttu-id="887bf-142">**POToInvoiceMaptest**使用する方法、 **TestMap**のメソッド、 **POToInvoice**同じ SamplePOInput.xml メッセージを使用してマップをテストするクラス。</span><span class="sxs-lookup"><span data-stu-id="887bf-142">The **POToInvoiceMaptest** method used the **TestMap** method of the **POToInvoice** class to test the map using the same SamplePOInput.xml message.</span></span> <span data-ttu-id="887bf-143">これにより、SampleInvoiceOutput.xml が HelloWorld ディレクトリで作成されました。</span><span class="sxs-lookup"><span data-stu-id="887bf-143">This resulted in SampleInvoiceOutput.xml being created in the HelloWorld directory.</span></span>  
   

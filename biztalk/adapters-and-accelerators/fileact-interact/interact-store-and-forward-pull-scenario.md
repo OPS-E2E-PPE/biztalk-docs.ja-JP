@@ -1,14 +1,14 @@
 ---
-title: "ストアと順方向 (プル) シナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: ストアと順方向 (プル) シナリオを対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eabd46c8-8fd4-44d4-bd05-3bea8b22e74e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224122"
 ---
 # <a name="interact-store-and-forward-pull-scenario"></a><span data-ttu-id="3ac58-102">ストアと順方向 (プル) シナリオを対話します。</span><span class="sxs-lookup"><span data-stu-id="3ac58-102">InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="3ac58-103">このセクションの手順を開始する前に」の手順を完了する必要があります、 [、チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)セクションです。</span><span class="sxs-lookup"><span data-stu-id="3ac58-103">Before you begin the steps in this section, you must complete the steps in the [Preparing to Use the Tutorial](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md) section.</span></span>  

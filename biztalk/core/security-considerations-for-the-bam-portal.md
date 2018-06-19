@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルのセキュリティに関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルのセキュリティに関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, security
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BAM portal, user accounts
 - security, BAM portal
 ms.assetid: 5c8e6034-dfb8-4dba-b040-0c19504abdb2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269386"
 ---
 # <a name="security-considerations-for-the-bam-portal"></a><span data-ttu-id="02f97-102">BAM ポータルのセキュリティに関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="02f97-102">Security Considerations for the BAM Portal</span></span>
 <span data-ttu-id="02f97-103">最小特権の原則に従って、ユーザー アカウントには、BAM ポータルでは定型的なタスクのみを実行できる、制限付きのアクセス許可を与える必要があります。</span><span class="sxs-lookup"><span data-stu-id="02f97-103">Using the principle of least privilege, user accounts should have restrictive permissions to perform routine tasks in the BAM portal.</span></span> <span data-ttu-id="02f97-104">セキュリティと適切なユーザー アクセスとのバランスが取れるように BAM のユーザー アカウントを設定する際は、次のことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="02f97-104">Keep the following points in mind as you set up your user accounts for BAM to balance security with appropriate access for users.</span></span>  

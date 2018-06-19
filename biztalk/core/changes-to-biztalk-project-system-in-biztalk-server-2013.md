@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2013 での BizTalk プロジェクト システムの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2013 での BizTalk プロジェクト システムの変更 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82f0dd18-073c-4cba-aa0d-48076c58f874
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006275"
 ---
 # <a name="changes-to-biztalk-project-system-in-biztalk-server-2013"></a><span data-ttu-id="64dcf-102">BizTalk Server 2013 での BizTalk プロジェクト システムへの変更</span><span class="sxs-lookup"><span data-stu-id="64dcf-102">Changes to BizTalk Project System in BizTalk Server 2013</span></span>
 <span data-ttu-id="64dcf-103">このトピックでは変更の概要を BizTalk Server で BizTalk プロジェクト システムにします。</span><span class="sxs-lookup"><span data-stu-id="64dcf-103">This topic gives you a high-level overview of changes to the BizTalk Project System in BizTalk Server.</span></span>  
@@ -76,4 +77,4 @@ ms.lasthandoff: 12/01/2017
  <span data-ttu-id="64dcf-148">BizTalk Server では、柔軟なパッケージに行うのための BizTalk アイテムとヘルパー クラスを結合することができます。</span><span class="sxs-lookup"><span data-stu-id="64dcf-148">BizTalk Server allows you to combine helper classes with BizTalk artifacts for flexible packaging needs only.</span></span>  <span data-ttu-id="64dcf-149">ただしを使用して直接新しい c# ファイルを追加することはできません、**新しい項目の追加**または**新しいクラスの追加**メニュー オプション。</span><span class="sxs-lookup"><span data-stu-id="64dcf-149">However, you cannot add a new C# file directly by using the **Add New Item** or **Add New Class** menu options.</span></span>  
   
 ## <a name="generatecsfiles-registry-key-is-obsolete"></a><span data-ttu-id="64dcf-150">GenerateCSFiles レジストリ キーの廃止</span><span class="sxs-lookup"><span data-stu-id="64dcf-150">GenerateCSFiles registry key is obsolete</span></span>  
- <span data-ttu-id="64dcf-151">**GenerateCSFiles**レジストリ キーは廃止されます。</span><span class="sxs-lookup"><span data-stu-id="64dcf-151">The **GenerateCSFiles** registry key is obsolete now.</span></span> <span data-ttu-id="64dcf-152">生成されたすべての .cs ファイルは、[ソリューション エクスプローラー] ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="64dcf-152">All generated .cs files are displayed in the Solution Explorer window.</span></span> <span data-ttu-id="64dcf-153">をクリックする必要があります**[すべてのファイル**ツールバー項目では、ソリューション エクスプ ローラー] ウィンドウで、一部の BizTalk アイテムに関連付けられた .cs ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="64dcf-153">You may need to click **Show All Files** toolbar item in the Solution Explorer window to see .cs files associated with some of the BizTalk items.</span></span>
+ <span data-ttu-id="64dcf-151">**GenerateCSFiles**レジストリ キーは廃止されます。</span><span class="sxs-lookup"><span data-stu-id="64dcf-151">The **GenerateCSFiles** registry key is obsolete now.</span></span> <span data-ttu-id="64dcf-152">生成されたすべての .cs ファイルは、[ソリューション エクスプローラー] ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="64dcf-152">All generated .cs files are displayed in the Solution Explorer window.</span></span> <span data-ttu-id="64dcf-153">をクリックする必要があります **[すべてのファイル**ツールバー項目では、ソリューション エクスプ ローラー] ウィンドウで、一部の BizTalk アイテムに関連付けられた .cs ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="64dcf-153">You may need to click **Show All Files** toolbar item in the Solution Explorer window to see .cs files associated with some of the BizTalk items.</span></span>

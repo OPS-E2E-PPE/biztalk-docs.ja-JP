@@ -1,14 +1,14 @@
 ---
-title: "インスタンス (EDI) の生成 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス (EDI) の生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 362b9803-4d4a-4d17-9ad6-439ec4c7d8aa
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247418"
 ---
 # <a name="generating-an-instance-edi"></a><span data-ttu-id="9b42d-102">インスタンスの生成 (EDI)</span><span class="sxs-lookup"><span data-stu-id="9b42d-102">Generating an Instance (EDI)</span></span>
 <span data-ttu-id="9b42d-103">デザイン時に、EDI スキーマからメッセージ インスタンスを生成できます。</span><span class="sxs-lookup"><span data-stu-id="9b42d-103">You can generate a message instance from an EDI schema at design time.</span></span> <span data-ttu-id="9b42d-104">それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。</span><span class="sxs-lookup"><span data-stu-id="9b42d-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span>  

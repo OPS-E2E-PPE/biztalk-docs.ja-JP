@@ -1,11 +1,11 @@
 ---
-title: "集計とは何ですか。 | Microsoft Docs"
-ms.custom: 
+title: 集計とは何ですか。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - OLAP cubes, BAM
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - aggregations [BAM], about aggregations
 - aggregations [BAM]
 ms.assetid: 77d40602-ef56-4a5b-a18f-56ccbff573a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289162"
 ---
 # <a name="what-is-an-aggregation"></a><span data-ttu-id="1e807-103">集計とは何ですか。</span><span class="sxs-lookup"><span data-stu-id="1e807-103">What Is an Aggregation?</span></span>
 <span data-ttu-id="1e807-104">Excel では、集計を事前計算された要約データとして定義し、質問の答えをあらかじめ用意しておくことで、クエリの応答時間を短縮します。</span><span class="sxs-lookup"><span data-stu-id="1e807-104">Excel defines aggregations as pre-calculated summaries of data that improve query response time by having the answers ready before the questions are asked.</span></span> <span data-ttu-id="1e807-105">たとえば、数十万行が格納されているデータ ウェアハウスのファクト テーブルに対して、特定の 2 つの製品の出荷スケジュールを要求するクエリがあるとします。この計算でファクト テーブルをスキャンする必要があると、応答に時間がかかります。</span><span class="sxs-lookup"><span data-stu-id="1e807-105">For example, when a data warehouse fact table contains hundreds of thousands of rows, a query requesting the shipping schedules for two particular products can take a long time to answer if the fact table has to be scanned to compute the answer.</span></span> <span data-ttu-id="1e807-106">ただし、このクエリの回答となる集計データがあらかじめ計算されていれば、即座に応答できます。</span><span class="sxs-lookup"><span data-stu-id="1e807-106">However, the response can be almost immediate if the summarization data to answer this query has been pre-calculated.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "BizTalk WCF サービス公開ウィザードを使用して、コンテンツ ベース ルーティングの WCF 受信場所用にサービス メタデータを公開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk WCF サービス公開ウィザードを使用して、コンテンツ ベース ルーティングの WCF 受信場所用にサービス メタデータを公開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF Service Publishing Wizard, publishing metadata
 - WCF services, metadata
 ms.assetid: e900b0a0-db17-4db9-a639-54891e02d6d7
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975608"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing"></a><span data-ttu-id="906a8-102">BizTalk WCF サービス公開ウィザードを使用してコンテンツ ベース ルーティングの WCF 受信場所にサービス メタデータを公開する方法</span><span class="sxs-lookup"><span data-stu-id="906a8-102">How to Use the BizTalk WCF Service Publishing Wizard to Publish Service Metadata for a WCF Receive Location for Content-Based Routing</span></span>
 <span data-ttu-id="906a8-103">BizTalk WCF サービス公開ウィザードを使用して WCF サービスを作成し、コンテンツベース ルーティングの既存の WCF 受信場所にメタデータを公開します。</span><span class="sxs-lookup"><span data-stu-id="906a8-103">You use the BizTalk WCF Service Publishing Wizard to create a WCF service to publish service metadata for existing WCF receive locations for content-based routing.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="906a8-112">**BizTalk WCF サービス公開ウィザードへようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="906a8-112">On the **Welcome to the BizTalk WCF Service Publishing Wizard** page, click **Next**.</span></span>  
   
-3.  <span data-ttu-id="906a8-113">**WCF サービスの種類**] ページで、[、**メタデータのみのエンドポイント (MEX)**に wcf サービス メタデータを提供する WCF サービスを発行するオプションを受信場所は、次の手順で選択します。</span><span class="sxs-lookup"><span data-stu-id="906a8-113">On the **WCF Service Type** page, select the **Metdata only endpoint (MEX)** option to publish the WCF services to provide service metadata for the WCF receive location that you will select in the next step.</span></span>  
+3.  <span data-ttu-id="906a8-113">**WCF サービスの種類**] ページで、[、**メタデータのみのエンドポイント (MEX)** に wcf サービス メタデータを提供する WCF サービスを発行するオプションを受信場所は、次の手順で選択します。</span><span class="sxs-lookup"><span data-stu-id="906a8-113">On the **WCF Service Type** page, select the **Metdata only endpoint (MEX)** option to publish the WCF services to provide service metadata for the WCF receive location that you will select in the next step.</span></span>  
   
      <span data-ttu-id="906a8-114">![WCF サービスの種類ページ](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")</span><span class="sxs-lookup"><span data-stu-id="906a8-114">![WCF Service Type page](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")</span></span>  
   

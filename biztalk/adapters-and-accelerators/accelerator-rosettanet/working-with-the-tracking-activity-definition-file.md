@@ -1,11 +1,11 @@
 ---
-title: "追跡アクティビティ定義ファイルの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡アクティビティ定義ファイルの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tracking, activity definition file
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tracking, managing views
 - activity definition file, activity fields
 ms.assetid: 0592a844-aad7-4054-b1e7-344f1086f0b1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009379"
 ---
 # <a name="working-with-the-tracking-activity-definition-file"></a><span data-ttu-id="0d6c2-102">追跡アクティビティ定義ファイルの操作</span><span class="sxs-lookup"><span data-stu-id="0d6c2-102">Working with the Tracking Activity Definition File</span></span>
 <span data-ttu-id="0d6c2-103">アクティビティ定義ファイルには、追跡に関する情報が含まれています。 プロセスとメッセージ アクティビティ[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-103">The activity definition file contains information about the tracking process and message activities in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="0d6c2-104">BizTalk ビジネス アクティビティ監視 (BAM) 追跡データを管理するのにには、このファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-104"> uses this file to manage data tracking in BizTalk Business Activity Monitoring (BAM).</span></span> <span data-ttu-id="0d6c2-105">定義ファイルは XML ファイル (Tracking.xml) を[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]でインストール、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAMTracking フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-105">The definition file is an XML file (Tracking.xml) that [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] setup installs in the \<*drive*\>:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAMTracking folder.</span></span> <span data-ttu-id="0d6c2-106">通常は、Tracking.xml で定義されたアクティビティで十分に目的を達成できます。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-106">The activities defined in Tracking.xml may be sufficient for your purposes.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-create-different-tracking-views"></a><span data-ttu-id="0d6c2-116">別の追跡ビューを作成するには</span><span class="sxs-lookup"><span data-stu-id="0d6c2-116">To create different tracking views</span></span>  
   
-1.  <span data-ttu-id="0d6c2-117">**[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-117">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="0d6c2-118">入力**cmd**クリックして実行 ダイアログ ボックスの名前 テキスト ボックスで**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-118">Enter **cmd** in the Open text box of the Run dialog box, and then click **OK**.</span></span> <span data-ttu-id="0d6c2-119">コマンド ライン ダイアログ ボックスで、tracking.xml の展開を解除し、をクリックするには、次のコードを入力してください**OK**:。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-119">In the command line dialog box, enter the following code to undeploy tracking.xml, then click **OK**:</span></span>  
+1.  <span data-ttu-id="0d6c2-117">**[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-117">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="0d6c2-118">入力**cmd**クリックして実行 ダイアログ ボックスの名前 テキスト ボックスで**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-118">Enter **cmd** in the Open text box of the Run dialog box, and then click **OK**.</span></span> <span data-ttu-id="0d6c2-119">コマンド ライン ダイアログ ボックスで、tracking.xml の展開を解除し、をクリックするには、次のコードを入力してください**OK**:。</span><span class="sxs-lookup"><span data-stu-id="0d6c2-119">In the command line dialog box, enter the following code to undeploy tracking.xml, then click **OK**:</span></span>  
   
     ```  
     cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  

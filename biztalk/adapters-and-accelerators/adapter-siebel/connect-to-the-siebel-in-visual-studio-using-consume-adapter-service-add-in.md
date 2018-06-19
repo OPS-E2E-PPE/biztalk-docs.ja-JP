@@ -1,14 +1,14 @@
 ---
-title: "ビジュアルの Siebel システムへの接続 Studio を使用してアダプターを使用する追加のサービスの |Microsoft ドキュメント"
-ms.custom: 
+title: ビジュアルの Siebel システムへの接続 Studio を使用してアダプターを使用する追加のサービスの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2baaa361-1b14-4d00-bcef-f68bc3fa7139
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222458"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-consume-adapter-service-add-in"></a><span data-ttu-id="2c96d-102">ビジュアルの Siebel システムに接続するアダプターを使用する Studio を使用してアドインでは、サービス</span><span class="sxs-lookup"><span data-stu-id="2c96d-102">Connect to the Siebel System in Visual Studio Using Consume Adapter Service Add-in</span></span>
 <span data-ttu-id="2c96d-103">[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]をインストールするときにインストールされている[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-103">The [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] is installed when you install [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="2c96d-104">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]コンピューターにインストールされているすべての WCF カスタム バインドを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="2c96d-104">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] loads all the WCF-Custom bindings installed on the computer.</span></span> <span data-ttu-id="2c96d-105">WCF ベースを使用する Siebel システムへの接続に[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]BizTalk プロジェクトで使用する必要があります、 **siebelBinding**です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-105">To connect to a Siebel system using the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] in a BizTalk project, you must use the **siebelBinding**.</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="2c96d-115">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="2c96d-115">**Categories**</span></span>|<span data-ttu-id="2c96d-116">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-116">Click **Consume Adapter Service**.</span></span>|  
         |<span data-ttu-id="2c96d-117">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="2c96d-117">**Templates**</span></span>|<span data-ttu-id="2c96d-118">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-118">Click **Consume Adapter Service**.</span></span>|  
   
-    4.  <span data-ttu-id="2c96d-119">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c96d-119">Click **Add**.</span></span> <span data-ttu-id="2c96d-120">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2c96d-120">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
+    4.  <span data-ttu-id="2c96d-119">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c96d-119">Click **Add**.</span></span> <span data-ttu-id="2c96d-120">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2c96d-120">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
   
 2.  <span data-ttu-id="2c96d-121">**バインディングを選択**ドロップダウン リスト、選択**siebelBinding**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-121">From the **Select a binding** drop-down list, select **siebelBinding**, and then click **Configure**.</span></span>  
   
@@ -54,9 +55,9 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="2c96d-128">クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="2c96d-128">Click the **Binding Properties** tab, and then specify values for the binding properties, if any, required by the operations you want to target.</span></span> <span data-ttu-id="2c96d-129">バインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Siebel のバインド プロパティ読む](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-129">For more information about binding properties, see [Read about BizTalk Adapter for Siebel Binding Properties](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span></span>  
   
-7.  <span data-ttu-id="2c96d-130">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c96d-130">Click **OK**.</span></span>  
+7.  <span data-ttu-id="2c96d-130">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c96d-130">Click **OK**.</span></span>  
   
-8.  <span data-ttu-id="2c96d-131">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c96d-131">Click **Connect**.</span></span> <span data-ttu-id="2c96d-132">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-132">Once the connection is established, the connection status is shown as **Connected**.</span></span>  
+8.  <span data-ttu-id="2c96d-131">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c96d-131">Click **Connect**.</span></span> <span data-ttu-id="2c96d-132">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="2c96d-132">Once the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="2c96d-133">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="2c96d-133">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span>  
   

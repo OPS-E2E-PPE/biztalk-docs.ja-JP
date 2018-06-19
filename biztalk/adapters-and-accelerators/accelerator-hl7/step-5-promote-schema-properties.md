@@ -1,18 +1,18 @@
 ---
-title: "手順 5: スキーマのプロパティを昇格させる |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: スキーマのプロパティを昇格させる |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, pomoted properties
 - promoted properties
 - schemas, promoted properties
 ms.assetid: cb51cece-1b65-4ba2-b8e6-ce8b6694cdb6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004475"
 ---
 # <a name="step-5-promote-schema-properties"></a><span data-ttu-id="89cdb-102">手順 5: スキーマのプロパティを昇格させる</span><span class="sxs-lookup"><span data-stu-id="89cdb-102">Step 5: Promote Schema Properties</span></span>
 <span data-ttu-id="89cdb-103">このステップでは、スキーマ プロパティを昇格できるように、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]オーケストレーションは、後の手順で作成するこれらのプロパティ値を参照できます。</span><span class="sxs-lookup"><span data-stu-id="89cdb-103">In this step, you promote schema properties so that a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] orchestration can reference those property values that you create in later steps.</span></span> <span data-ttu-id="89cdb-104">プロモーションはメッセージのインスタンス内で特定の値を参照しにアクセスできるようにするために使用メカニズム[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]コンポーネントやオーケストレーションなど、コンテンツ ベース ルーティングの目的。</span><span class="sxs-lookup"><span data-stu-id="89cdb-104">Promotion is a mechanism that you use to reference a specific value within a message instance and make it accessible to [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] components such as orchestration or for content-based routing purposes.</span></span> <span data-ttu-id="89cdb-105">さらに、昇格させたプロパティでは表示[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]の式エディターでの IntelliSense[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="89cdb-105">Additionally, a promoted property is visible by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] IntelliSense in the Expression Editor of [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span>  

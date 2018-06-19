@@ -1,14 +1,14 @@
 ---
-title: "障害復旧 SQL サーバーを準備する |Microsoft ドキュメント"
-ms.custom: 
+title: 障害復旧 SQL サーバーを準備する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44b77fe8-393d-4781-b0b0-5b7f6e50a67b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008075"
 ---
 # <a name="preparing-the-disaster-recovery-sql-servers"></a><span data-ttu-id="6b65f-102">障害復旧 SQL サーバーを準備します。</span><span class="sxs-lookup"><span data-stu-id="6b65f-102">Preparing the Disaster Recovery SQL Servers</span></span>
 <span data-ttu-id="6b65f-103">セットを作成します.[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース障害復旧サイトのインスタンス。</span><span class="sxs-lookup"><span data-stu-id="6b65f-103">Createa set of [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances in the disaster recovery site.</span></span> <span data-ttu-id="6b65f-104">災害復旧を確実に[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスが同じレベルの運用環境のパフォーマンスを提供できます[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンス、災害復旧[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]類似したデータベースのインスタンスを構成する必要がありますハードウェアとを実行している物理コンピューターの台数[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="6b65f-104">To ensure that the disaster recovery [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances can provide the same level of performance as the production [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances, the disaster recovery [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances should be configured with similar hardware and number of physical computers running [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span> <span data-ttu-id="6b65f-105">このシナリオでは、BizTalk Server の各実稼働用に構成されるログ配布で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、対応するのには適用先のデータベース インスタンス[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスの災害復旧サイトにします。</span><span class="sxs-lookup"><span data-stu-id="6b65f-105">In this scenario, BizTalk Server log shipping will be configured for each production [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instance to apply to a corresponding [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instance at the disaster recovery site.</span></span>  

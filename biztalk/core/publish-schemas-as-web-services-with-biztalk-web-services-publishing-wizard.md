@@ -1,17 +1,17 @@
 ---
-title: "公開ウィザード Web サービスとしてのスキーマを公開するサービス、BizTalk Web を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 公開ウィザード Web サービスとしてのスキーマを公開するサービス、BizTalk Web を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, publishing
 - BizTalk Web Services Publishing Wizard, schemas
 ms.assetid: b22de720-1416-486a-988f-e52527ad9ab1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25974816"
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-schemas-as-a-web-service"></a><span data-ttu-id="8b18d-102">BizTalk Web サービス公開ウィザードを使用してスキーマを Web サービスとして公開する方法</span><span class="sxs-lookup"><span data-stu-id="8b18d-102">How to Use the BizTalk Web Services Publishing Wizard to Publish Schemas as a Web Service</span></span>
 <span data-ttu-id="8b18d-103">BizTalk Web サービス公開ウィザードを使用して、スキーマを Web サービスとして公開することができます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-103">You use the BizTalk Web Services Publishing Wizard to publish schemas as a Web service.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 01/17/2018
   
 8.  <span data-ttu-id="8b18d-162">選択した場合は **追加の SOAP ヘッダーを追加**, 、 **要求 SOAP ヘッダー** と **応答 SOAP ヘッダー** ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-162">If you selected **Add additional SOAP headers**, the **Request SOAP Headers** and **Response SOAP Headers** pages appear.</span></span> <span data-ttu-id="8b18d-163">リストにログインを追加したりを使用して要求と応答の SOAP ヘッダーを削除する、 **追加** と **削除** 次のダイアログ ボックスにボタン。</span><span class="sxs-lookup"><span data-stu-id="8b18d-163">You can add and remove request and response SOAP headers using the **Add** and **Remove** buttons in the following dialog boxes:</span></span>  
   
-    -   <span data-ttu-id="8b18d-164">SOAP ヘッダーを追加する をクリックして **追加**します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-164">To add a SOAP header, click **Add**.</span></span> <span data-ttu-id="8b18d-165">**BizTalk アセンブリ名 (\\*.dll)** テキスト ボックスで、アセンブリ名を入力するかで SOAP ヘッダー スキーマを含むアセンブリを参照、 **BizTalk アセンブリ ファイル** テキスト ボックスです。</span><span class="sxs-lookup"><span data-stu-id="8b18d-165">In the **BizTalk assembly name (\\*.dll)** text box, type the assembly name or browse for the assembly containing the SOAP Header schema in the **BizTalk assembly file** text box.</span></span> <span data-ttu-id="8b18d-166">**利用可能なスキーマ型** リスト ビューには、スキーマの場合は、各ルート要素が表示されます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-166">The **Available schema types** list view displays each root element of the schema.</span></span> <span data-ttu-id="8b18d-167">要求または応答の SOAP ヘッダーとして追加するルート ノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-167">Select a root node to add as a request or response SOAP header.</span></span> <span data-ttu-id="8b18d-168">複数の項目を選択する、CTRL キーを押しながらクリックして **OK**します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-168">To select multiple items, hold the CTRL key and click **OK**.</span></span>  
+    -   <span data-ttu-id="8b18d-164">SOAP ヘッダーを追加する をクリックして **追加**します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-164">To add a SOAP header, click **Add**.</span></span> <span data-ttu-id="8b18d-165">**BizTalk アセンブリ名 (\*.dll)** テキスト ボックスで、アセンブリ名を入力するかで SOAP ヘッダー スキーマを含むアセンブリを参照、 **BizTalk アセンブリ ファイル** テキスト ボックスです。</span><span class="sxs-lookup"><span data-stu-id="8b18d-165">In the **BizTalk assembly name (\*.dll)** text box, type the assembly name or browse for the assembly containing the SOAP Header schema in the **BizTalk assembly file** text box.</span></span> <span data-ttu-id="8b18d-166">**利用可能なスキーマ型** リスト ビューには、スキーマの場合は、各ルート要素が表示されます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-166">The **Available schema types** list view displays each root element of the schema.</span></span> <span data-ttu-id="8b18d-167">要求または応答の SOAP ヘッダーとして追加するルート ノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-167">Select a root node to add as a request or response SOAP header.</span></span> <span data-ttu-id="8b18d-168">複数の項目を選択する、CTRL キーを押しながらクリックして **OK**します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-168">To select multiple items, hold the CTRL key and click **OK**.</span></span>  
   
     -   <span data-ttu-id="8b18d-169">一覧から SOAP ヘッダーを削除するに追加された SOAP ヘッダーの一覧から選択し、 **削除**します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-169">To remove a SOAP header from the list, select it from the list of added SOAP headers, and then click **Remove**.</span></span>  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 01/17/2018
     -   <span data-ttu-id="8b18d-185">**BizTalk を作成する受信場所。**</span><span class="sxs-lookup"><span data-stu-id="8b18d-185">**Create BizTalk receive locations.**</span></span> <span data-ttu-id="8b18d-186">このオプションでは、生成された各 .asmx ファイルに対応する SOAP アダプターの受信ポートと受信場所が自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-186">This option automatically creates the SOAP adapter receive ports and locations that correspond to each generated .asmx file.</span></span> <span data-ttu-id="8b18d-187">別の受信場所が既に存在する場合、受信場所は置き換えられません。</span><span class="sxs-lookup"><span data-stu-id="8b18d-187">If another receive location already exists, the receive location is not be replaced.</span></span> <span data-ttu-id="8b18d-188">SOAP アダプターを解決する形式を使用して、受信場所"/\<*仮想ディレクトリ名*\>/\<*オーケストレーション namespace_typename_portname* \>.asmx"です。</span><span class="sxs-lookup"><span data-stu-id="8b18d-188">Receive locations for the SOAP adapter are resolved using the format "/\<*virtual directory name*\>/\<*orchestration namespace_typename_portname*\>.asmx".</span></span> <span data-ttu-id="8b18d-189">このオプションの選択後、受信ポートと場所を生成するアプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="8b18d-189">After selecting this option, choose the application where the receive ports and locations will be generated.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="8b18d-190">プロジェクトの場所には、別のサーバーを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-190">The project location can exist on a different server.</span></span> <span data-ttu-id="8b18d-191">別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>**です。</span><span class="sxs-lookup"><span data-stu-id="8b18d-191">To publish a Web service to a different server, type the project name as **http://<*servername*>/<*project_name*>**.</span></span>  
+        >  <span data-ttu-id="8b18d-190">プロジェクトの場所には、別のサーバーを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-190">The project location can exist on a different server.</span></span> <span data-ttu-id="8b18d-191">別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>** です。</span><span class="sxs-lookup"><span data-stu-id="8b18d-191">To publish a Web service to a different server, type the project name as **http://<*servername*>/<*project_name*>**.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="8b18d-192">プロジェクトの場所には、既定以外の Web サイトを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="8b18d-192">The project location can exist on a non-default Web site.</span></span> <span data-ttu-id="8b18d-193">既定以外の Web サイトに発行するときは、URL に Web サイトのポート番号を含める: http://localhost:8080/<*project_name*> です。</span><span class="sxs-lookup"><span data-stu-id="8b18d-193">When publishing to a non-default Web site, include the port number of the Web site in the URL: http://localhost:8080/<*project_name*>.</span></span>  

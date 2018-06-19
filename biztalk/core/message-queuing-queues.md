@@ -1,11 +1,11 @@
 ---
-title: "メッセージ キューのキュー |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ キューのキュー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [MSMQ adapters], queue paths
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - naming conventions, queue paths [MSMQ adapters]
 - configuring [MSMQ adapters], message queues
 ms.assetid: b802348e-8543-4b06-a6e4-149b86139fb1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971464"
 ---
 # <a name="message-queuing-queues"></a><span data-ttu-id="052cb-102">メッセージ キューのキュー</span><span class="sxs-lookup"><span data-stu-id="052cb-102">Message Queuing Queues</span></span>
 <span data-ttu-id="052cb-103">このセクションでは、Microsoft メッセージ キュー (MSMQ) アダプタを使用する際に、MSMQ キューを指定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="052cb-103">This section describes how to specify Microsoft Message Queuing (also known as MSMQ) queues when you use the MSMQ adapter.</span></span> <span data-ttu-id="052cb-104">パスを指定するための名前付け規則、およびパスをキューの指定に変換するときの形式名の役割についても説明します。</span><span class="sxs-lookup"><span data-stu-id="052cb-104">It describes the conventions for specifying paths and also describes the role that format names play in translating paths into queue designations.</span></span>  
@@ -40,9 +41,9 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="052cb-109">パブリック キュー</span><span class="sxs-lookup"><span data-stu-id="052cb-109">Public queue</span></span>|<span data-ttu-id="052cb-110">*Computername*\QueueName</span><span class="sxs-lookup"><span data-stu-id="052cb-110">*Computername*\QueueName</span></span>|  
 |<span data-ttu-id="052cb-111">専用キュー</span><span class="sxs-lookup"><span data-stu-id="052cb-111">Private queue</span></span>|<span data-ttu-id="052cb-112">*Computername*\Private$\QueueName</span><span class="sxs-lookup"><span data-stu-id="052cb-112">*Computername*\Private$\QueueName</span></span>|  
 |<span data-ttu-id="052cb-113">ジャーナル キュー</span><span class="sxs-lookup"><span data-stu-id="052cb-113">Journal queue</span></span>|<span data-ttu-id="052cb-114">*Computername*\QueueName\Journal$</span><span class="sxs-lookup"><span data-stu-id="052cb-114">*Computername*\QueueName\Journal$</span></span>|  
-|<span data-ttu-id="052cb-115">コンピューター ジャーナル キュー**注:**受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-115">Computer journal queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-116">*Computername*\Journal$</span><span class="sxs-lookup"><span data-stu-id="052cb-116">*Computername*\Journal$</span></span>|  
-|<span data-ttu-id="052cb-117">コンピューターの配信不能キュー**注:**受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-117">Computer dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-118">*Computername*\Deadletter$</span><span class="sxs-lookup"><span data-stu-id="052cb-118">*Computername*\Deadletter$</span></span>|  
-|<span data-ttu-id="052cb-119">コンピューター トランザクション配信不能キュー**注:**受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-119">Computer transaction dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-120">*Computername*\XactDeadletter$</span><span class="sxs-lookup"><span data-stu-id="052cb-120">*Computername*\XactDeadletter$</span></span>|  
+|<span data-ttu-id="052cb-115">コンピューター ジャーナル キュー**注:** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-115">Computer journal queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-116">*Computername*\Journal$</span><span class="sxs-lookup"><span data-stu-id="052cb-116">*Computername*\Journal$</span></span>|  
+|<span data-ttu-id="052cb-117">コンピューターの配信不能キュー**注:** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-117">Computer dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-118">*Computername*\Deadletter$</span><span class="sxs-lookup"><span data-stu-id="052cb-118">*Computername*\Deadletter$</span></span>|  
+|<span data-ttu-id="052cb-119">コンピューター トランザクション配信不能キュー**注:** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-119">Computer transaction dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-120">*Computername*\XactDeadletter$</span><span class="sxs-lookup"><span data-stu-id="052cb-120">*Computername*\XactDeadletter$</span></span>|  
   
 > [!NOTE]
 >  <span data-ttu-id="052cb-121">キューのパスは、一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="052cb-121">The path of the queue must be unique.</span></span>  

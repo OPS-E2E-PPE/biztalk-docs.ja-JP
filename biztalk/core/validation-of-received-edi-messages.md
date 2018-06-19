@@ -1,14 +1,14 @@
 ---
-title: "受信した EDI メッセージの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信した EDI メッセージの検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c56a3c0-042e-4611-8131-d51098064f0f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288058"
 ---
 # <a name="validation-of-received-edi-messages"></a><span data-ttu-id="8c34a-102">受信した EDI メッセージの検証</span><span class="sxs-lookup"><span data-stu-id="8c34a-102">Validation of Received EDI Messages</span></span>
 <span data-ttu-id="8c34a-103">EDI 受信パイプラインは、受信メッセージを処理するとき、エンベロープとメッセージ データに対して一連の検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="8c34a-103">When the EDI receive pipeline processes an incoming message, it performs a series of validations on the envelope and message data.</span></span> <span data-ttu-id="8c34a-104">これらの処理のうちの一部は常に実行されますが、有効にした場合にのみ実行される処理もあります。</span><span class="sxs-lookup"><span data-stu-id="8c34a-104">Some of these processes are always performed; some are performed only if you enable them.</span></span> <span data-ttu-id="8c34a-105">これらの検証には、以下が含まれます。</span><span class="sxs-lookup"><span data-stu-id="8c34a-105">These validations include the following:</span></span>  

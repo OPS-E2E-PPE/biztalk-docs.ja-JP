@@ -1,15 +1,15 @@
 ---
-title: "Oracle E-business Suite アダプターでの運用上の問題のトラブルシューティング |Microsoft ドキュメント"
-description: "一般的な問題と Oracle EBS アダプターの BizTalk アダプター パック (BAP) の解決策"
-ms.custom: 
+title: Oracle E-business Suite アダプターでの運用上の問題のトラブルシューティング |Microsoft ドキュメント
+description: 一般的な問題と Oracle EBS アダプターの BizTalk アダプター パック (BAP) の解決策
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 667633e0-055a-418a-ab64-d4f6e6c7a898
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010203"
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="040d3-103">Oracle E-business Suite アダプターでの運用上の問題のトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="040d3-103">Troubleshoot Operational Issues with the Oracle E-Business Suite adapter</span></span>
 <span data-ttu-id="040d3-104">このセクションで説明を使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="040d3-104">This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].</span></span>  

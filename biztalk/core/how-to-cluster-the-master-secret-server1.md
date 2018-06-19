@@ -1,11 +1,11 @@
 ---
-title: "マスター シークレット Server1 をクラスター化する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット Server1 をクラスター化する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, second node
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - clustering, Master Secret server
 - Master Secret server, clustering
 ms.assetid: ef817fa4-e43d-4e3d-8686-5bd675708001
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972952"
 ---
 # <a name="how-to-cluster-the-master-secret-server"></a><span data-ttu-id="101e2-102">マスター シークレット サーバーをクラスター化する方法</span><span class="sxs-lookup"><span data-stu-id="101e2-102">How to Cluster the Master Secret Server</span></span>
 <span data-ttu-id="101e2-103">マスター シークレット サーバーのエンタープライズ シングル サインオン (SSO) サービスを正常にクラスター化するには、このセクションに記載されている指示に従うことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="101e2-103">We recommended that you follow the instructions in this section to cluster the Enterprise Single Sign-On (SSO) service on the master secret server successfully.</span></span>  
@@ -178,7 +179,7 @@ ms.lasthandoff: 11/28/2017
   
 11. <span data-ttu-id="101e2-180">クリックして、**の依存関係** タブをクリックして、プロパティ ダイアログ ボックスの**挿入**です。</span><span class="sxs-lookup"><span data-stu-id="101e2-180">Click the **Dependencies** tab of the properties dialog box and click **Insert**.</span></span>  
   
-12. <span data-ttu-id="101e2-181">下のボックスのドロップダウンをクリックして**リソース**を選択、**名前:**リソースをクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="101e2-181">Click the drop down box under **Resource**, select the **Name:** resource and click **OK**.</span></span>  
+12. <span data-ttu-id="101e2-181">下のボックスのドロップダウンをクリックして**リソース**を選択、**名前:** リソースをクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="101e2-181">Click the drop down box under **Resource**, select the **Name:** resource and click **OK**.</span></span>  
   
 ### <a name="to-restore-the-master-secret-on-the-second-cluster-node"></a><span data-ttu-id="101e2-182">2 番目のクラスタ ノードでマスタ シークレットを復元するには</span><span class="sxs-lookup"><span data-stu-id="101e2-182">To restore the master secret on the second cluster node</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "HIPAA ドキュメント スキーマ バージョン 5010 |Microsoft ドキュメント"
-ms.custom: 
+title: HIPAA ドキュメント スキーマ バージョン 5010 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62e50964-66e1-4ed9-a1a1-68556b13b024
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006369"
 ---
 # <a name="hipaa-document-schema-version-5010"></a><span data-ttu-id="8211c-102">HIPAA ドキュメント スキーマ バージョン 5010</span><span class="sxs-lookup"><span data-stu-id="8211c-102">HIPAA Document Schema Version 5010</span></span>
 <span data-ttu-id="8211c-103">言語設定が部門の保健福祉 (HHS) は、バージョン 5010 の現在の HIPAA バージョン 4010A1 に置換される 2009 年 1 月 16 日の最終規則を発表しました。</span><span class="sxs-lookup"><span data-stu-id="8211c-103">The U.S. Department of Health and Human Services (HHS) announced a final rule on January 16, 2009, that replaces the current HIPAA version 4010A1 with version 5010.</span></span> <span data-ttu-id="8211c-104">HIPAA 標準バージョン 5010 では、構造、序文、技術、およびデータ コンテンツの面で改良が加えられています。</span><span class="sxs-lookup"><span data-stu-id="8211c-104">Version 5010 of the HIPAA standards includes improvements in structural, front matter, technical, and data content.</span></span> <span data-ttu-id="8211c-105">その結果、データのあいまいさが減少し除去されています。また、それまでは満たされていなかったビジネス ニーズのいくつかについても満たされるようになっています。</span><span class="sxs-lookup"><span data-stu-id="8211c-105">These improvements will reduce and eliminate ambiguities in data while also addressing a few previously unmet business needs.</span></span> <span data-ttu-id="8211c-106">BizTalk Server では、HIPAA バージョン 5010 のサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="8211c-106">BizTalk Server provides support for HIPAA version 5010.</span></span>  

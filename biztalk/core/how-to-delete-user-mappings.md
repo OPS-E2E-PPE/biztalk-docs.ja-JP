@@ -11,7 +11,7 @@ helpviewer_keywords:
 - maps [SSO], deleting
 - managing [SSO maps], deleting user maps
 ms.assetid: de511113-b0b0-4920-91dc-4c9e380fda58
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970664"
 ---
 # <a name="how-to-delete-user-mappings"></a><span data-ttu-id="dd68c-102">ユーザー マッピングを削除する方法</span><span class="sxs-lookup"><span data-stu-id="dd68c-102">How to Delete User Mappings</span></span>
 <span data-ttu-id="dd68c-103">以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。</span><span class="sxs-lookup"><span data-stu-id="dd68c-103">Use these commands to delete one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="dd68c-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-104">The following is an example XML file.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="dd68c-110">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-110">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="dd68c-111">既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="dd68c-111">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="dd68c-112">型 **ssomanage – deletemappings *\<マッピング ファイル名\>* * *、どこで\<*マッピング ファイル名*\>を含むファイルの名前を指定します、ユーザーのマッピングを削除します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-112">Type **ssomanage –deletemappings *\<mappings file name\>***, where \<*mappings file name*\> is the name of the file that contains the user mapping(s) you want to delete.</span></span>  
+3.  <span data-ttu-id="dd68c-112">型 **ssomanage – deletemappings *\<マッピング ファイル名\>* * *、どこで\<* マッピング ファイル名*\>を含むファイルの名前を指定します、ユーザーのマッピングを削除します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-112">Type **ssomanage –deletemappings *\<mappings file name\>***, where \<* mappings file name*\> is the name of the file that contains the user mapping(s) you want to delete.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="dd68c-113">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="dd68c-113">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="dd68c-116">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-116">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="dd68c-117">既定のインストール ディレクトリは*\<ドライブ*\>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="dd68c-117">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="dd68c-118">型 **ssomanage – deletemapping *\<ドメイン\>*\\*\<username\> *  *\<アプリケーション名\>* * *、どこで*\<ドメイン\>*は Windows ドメイン ユーザー アカウントを *\<ユーザー名\>*は、Windows ユーザー名と\<*アプリケーション名*\>ユーザー マッピングを削除する特定のアプリケーションは、します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-118">Type **ssomanage –deletemapping *\<domain\>*\\*\<username\>* *\<application name\>***, where *\<domain\>* is the Windows domain for the user account, *\<username\>* is the Windows user name, and \<*application name*\> is the specific application for which you want to remove the user mapping.</span></span>  
+3.  <span data-ttu-id="dd68c-118">型 **ssomanage – deletemapping *\<ドメイン\>*\\*\<username\> *  *\<アプリケーション名\>* * *、どこで*\<ドメイン\>* は Windows ドメイン ユーザー アカウントを *\<ユーザー名\>* は、Windows ユーザー名と\<* アプリケーション名*\>ユーザー マッピングを削除する特定のアプリケーションは、します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-118">Type **ssomanage –deletemapping *\<domain\>*\\*\<username\>* *\<application name\>***, where *\<domain\>* is the Windows domain for the user account, *\<username\>* is the Windows user name, and \<* application name*\> is the specific application for which you want to remove the user mapping.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="dd68c-119">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="dd68c-119">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="dd68c-122">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-122">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="dd68c-123">既定のインストール ディレクトリは*\<ドライブ*\>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="dd68c-123">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="dd68c-124">型 * * ssoclient – deletemapping *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>*ユーザー マッピングを削除する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-124">Type **ssoclient –deletemapping *\<application name\>***, where *\<application name\>* is the name of the affiliate application you want to remove the user mapping for.</span></span>  
+3.  <span data-ttu-id="dd68c-124">型 * * ssoclient – deletemapping *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>* ユーザー マッピングを削除する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="dd68c-124">Type **ssoclient –deletemapping *\<application name\>***, where *\<application name\>* is the name of the affiliate application you want to remove the user mapping for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="dd68c-125">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="dd68c-125">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

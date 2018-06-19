@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263850"
 ---
 # <a name="plan-and-architect-your-biztalk-server-solution"></a><span data-ttu-id="1e3da-102">計画し、BizTalk Server ソリューションの設計</span><span class="sxs-lookup"><span data-stu-id="1e3da-102">Plan and architect your BizTalk Server solution</span></span>
 <span data-ttu-id="1e3da-103">このセクションでは、作業環境のプランニングに役立つ BizTalk Server の詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="1e3da-103">This section provides information about BizTalk Server to help you plan your environment.</span></span>  

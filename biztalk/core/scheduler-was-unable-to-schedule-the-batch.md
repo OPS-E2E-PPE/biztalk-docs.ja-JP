@@ -1,14 +1,14 @@
 ---
-title: "スケジューラはバッチをスケジュールできませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: スケジューラはバッチをスケジュールできませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ac6d79c-c995-4c95-a4da-ee2f50b9a13a
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269194"
 ---
 # <a name="scheduler-was-unable-to-schedule-the-batch"></a><span data-ttu-id="64b3b-102">スケジューラはバッチをスケジュールできませんでした</span><span class="sxs-lookup"><span data-stu-id="64b3b-102">Scheduler was unable to schedule the batch</span></span>
 ## <a name="details"></a><span data-ttu-id="64b3b-103">詳細</span><span class="sxs-lookup"><span data-stu-id="64b3b-103">Details</span></span>  
@@ -43,10 +44,10 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="64b3b-120">適切なパーティを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="64b3b-120">Right-click the correct party.</span></span>  
   
-4.  <span data-ttu-id="64b3b-121">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64b3b-121">Click **Properties**.</span></span>  
+4.  <span data-ttu-id="64b3b-121">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64b3b-121">Click **Properties**.</span></span>  
   
 5.  <span data-ttu-id="64b3b-122">[*パーティ名*]**パーティ プロパティ**ダイアログ ボックスで、左側のウィンドウでをクリックして**送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="64b3b-122">In the [*party name*] **Party Properties** dialog box, in the left pane, click **Send Ports**.</span></span>  
   
 6.  <span data-ttu-id="64b3b-123">[送信ポートの名前を入力、**送信ポート**] ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="64b3b-123">Enter the Send port name in the **Send Ports** list.</span></span>  
   
-7.  <span data-ttu-id="64b3b-124">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64b3b-124">Click **OK**.</span></span>
+7.  <span data-ttu-id="64b3b-124">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64b3b-124">Click **OK**.</span></span>

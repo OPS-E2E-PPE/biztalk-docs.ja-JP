@@ -1,14 +1,14 @@
 ---
-title: "データベースの可用性の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: データベースの可用性の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6aa74257-4159-46f6-b538-f7e9083d74ad
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008443"
 ---
 # <a name="planning-for-database-availability"></a><span data-ttu-id="54381-102">データベースの可用性の計画</span><span class="sxs-lookup"><span data-stu-id="54381-102">Planning for Database Availability</span></span>
 <span data-ttu-id="54381-103">BizTalk Server メッセージング エンジンは、ビジネス プロセスは、信頼できると、保存することで持続性の状態およびビジネス データを BizTalk メッセージ ボックス データベースと呼ばれる SQL Server データベースを処理することにより、します。</span><span class="sxs-lookup"><span data-stu-id="54381-103">The BizTalk Server Messaging engine ensures that business processes are reliable and durable by persisting process state and business data to a SQL Server database known as the BizTalk Messagebox database.</span></span> <span data-ttu-id="54381-104">信頼性および持続データの持続性に有効なは、基になるデータ ストアとして、BizTalk Server データベースの高可用性の計画が非常に重要です。</span><span class="sxs-lookup"><span data-stu-id="54381-104">Because the reliability and durability of the persisted data is only as good as the underlying data store, planning for high availability of the BizTalk Server databases is critically important.</span></span>  

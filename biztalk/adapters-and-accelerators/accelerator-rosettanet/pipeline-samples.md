@@ -1,18 +1,18 @@
 ---
-title: "パイプラインのサンプル |Microsoft ドキュメント"
-ms.custom: 
+title: パイプラインのサンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, examples
 - SDK samples, pipelines
 - examples, pipelines
 ms.assetid: 1e53658b-1a7a-4dc0-963b-ebd14155c267
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004395"
 ---
 # <a name="pipeline-samples"></a><span data-ttu-id="b4d51-102">パイプラインのサンプル</span><span class="sxs-lookup"><span data-stu-id="b4d51-102">Pipeline Samples</span></span>
 <span data-ttu-id="b4d51-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) には、送信パイプラインのサンプルおよび受信パイプラインのサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b4d51-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) includes a send pipeline sample and a receive pipeline sample.</span></span> <span data-ttu-id="b4d51-104">ここでは、各サンプルの機能、サンプルを構築して実行する手順、および予期される結果について説明します。</span><span class="sxs-lookup"><span data-stu-id="b4d51-104">This section provides information about the functionality that each sample demonstrates, instructions for building and running the samples, and the results that you can expect.</span></span>  

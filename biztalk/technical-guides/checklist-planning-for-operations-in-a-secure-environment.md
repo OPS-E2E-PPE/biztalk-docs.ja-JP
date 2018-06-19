@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: がセキュリティで保護された環境での操作の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: がセキュリティで保護された環境での操作の計画 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0d6464df-6736-46e2-a0c7-cc2a256c5144
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976832"
 ---
 # <a name="checklist-planning-for-operations-in-a-secure-environment"></a><span data-ttu-id="a5b29-102">チェックリスト: がセキュリティで保護された環境での操作の計画</span><span class="sxs-lookup"><span data-stu-id="a5b29-102">Checklist: Planning for Operations in a Secure Environment</span></span>
 <span data-ttu-id="a5b29-103">実行している[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セキュリティで保護された環境での展開と構成の追加の手順が必要です。</span><span class="sxs-lookup"><span data-stu-id="a5b29-103">Running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in a secure environment requires additional steps for deployment and configuration.</span></span> <span data-ttu-id="a5b29-104">オペレーティング システムの既定のインストールが必要を使用しないこれらのアカウントが、シナリオに制限の厳しいセキュリティ ポリシーが適用されたときに、このセクションの情報はアカウントにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5b29-104">While default operating system installations need not take these into account, but scenarios where restrictive security policies have been applied, you should take into account information in this section.</span></span> <span data-ttu-id="a5b29-105">サーバーに適用される制限のレベルが異なる場合がありますが、次の情報を選択し、ほとんどのケースを反映する必要がありますが、適切な開始点です。</span><span class="sxs-lookup"><span data-stu-id="a5b29-105">The level of restriction applied onto servers may vary but information below should cover most cases and would be a a good starting point.</span></span>  

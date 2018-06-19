@@ -1,14 +1,14 @@
 ---
-title: "BizTalk アセンブリ ビューアーを使用してアセンブリの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アセンブリ ビューアーを使用してアセンブリの表示 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9831eb88-84bc-4d18-8174-43c3baab83fe
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287746"
 ---
 # <a name="viewing-assemblies-with-the-biztalk-assembly-viewer"></a><span data-ttu-id="4f767-102">BizTalk アセンブリ ビューアーを使用したアセンブリの表示</span><span class="sxs-lookup"><span data-stu-id="4f767-102">Viewing Assemblies with the BizTalk Assembly Viewer</span></span>
 <span data-ttu-id="4f767-103">アプリケーションの開発時やアセンブリの展開時には、どのアセンブリが展開されていて使用可能であるかを表示できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="4f767-103">When you are developing applications or deploying assemblies, you need to see which assemblies are deployed and available to you.</span></span> <span data-ttu-id="4f767-104">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、このための便利なツールとして BizTalk アセンブリ ビューアーが用意されています。</span><span class="sxs-lookup"><span data-stu-id="4f767-104">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides a convenient tool for this purpose - BizTalk Assembly Viewer.</span></span>  

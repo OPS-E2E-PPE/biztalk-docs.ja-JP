@@ -1,14 +1,14 @@
 ---
-title: "FileAct アダプター配信通知 |Microsoft ドキュメント"
-ms.custom: 
+title: FileAct アダプター配信通知 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fbd8207b-c50f-4a5d-ac2f-7dc8f5af54c7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223970"
 ---
 # <a name="fileact-adapter-delivery-notification"></a><span data-ttu-id="e6293-102">FileAct アダプター配信通知</span><span class="sxs-lookup"><span data-stu-id="e6293-102">FileAct Adapter Delivery Notification</span></span>
 <span data-ttu-id="e6293-103">受信確認 (署名とダイジェストの検証を含む) の完了の確認メッセージ要求で指定されているの後に、FileAct アダプターは、送信者に適切な配信通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="e6293-103">After verifying the completion of receipt (including signature and digest verification) as indicated in the message request, the FileAct adapter transmits the appropriate delivery notification to the sender.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk グループから BizTalk アプリケーションを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk グループから BizTalk アプリケーションを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - undeploying, applications
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - managing [applications], groups
 - groups, applications
 ms.assetid: 968a6436-ae1a-4f85-bb44-e704826a0197
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250106"
 ---
 # <a name="how-to-delete-a-biztalk-application-from-the-biztalk-group"></a><span data-ttu-id="3f11d-102">BizTalk グループから BizTalk アプリケーションを削除する方法</span><span class="sxs-lookup"><span data-stu-id="3f11d-102">How to Delete a BizTalk Application from the BizTalk Group</span></span>
 <span data-ttu-id="3f11d-103">BizTalk グループからアプリケーションを削除できます。</span><span class="sxs-lookup"><span data-stu-id="3f11d-103">You can delete an application from the BizTalk group.</span></span> <span data-ttu-id="3f11d-104">アプリケーションを削除すると、グループの BizTalk データベースからアプリケーションのデータがすべて削除され、BizTalk Server 管理コンソールにアプリケーションが表示されなくなります。</span><span class="sxs-lookup"><span data-stu-id="3f11d-104">This removes all of its data from the BizTalk databases for the group, and the application no longer displays in the BizTalk Server Administration console.</span></span> <span data-ttu-id="3f11d-105">アプリケーションはアンインストールされません。</span><span class="sxs-lookup"><span data-stu-id="3f11d-105">It does not uninstall the application.</span></span>  

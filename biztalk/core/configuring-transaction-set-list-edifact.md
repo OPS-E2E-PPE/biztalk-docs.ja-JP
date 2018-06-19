@@ -1,14 +1,14 @@
 ---
-title: "トランザクション セットの構成 (EDIFACT) のリスト |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション セットの構成 (EDIFACT) のリスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b03ace75-70bf-47c9-9a94-df813d7cab1e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005171"
 ---
 # <a name="configuring-transaction-set-list-edifact"></a><span data-ttu-id="d5fd7-102">トランザクション セットの一覧の構成 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="d5fd7-102">Configuring Transaction Set List (EDIFACT)</span></span>
 <span data-ttu-id="d5fd7-103">BizTalk Server では、含まれているまたは EDI インターチェンジを処理中に除外する必要がありますは常にトランザクション セットのリストを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="d5fd7-103">BizTalk Server enables you to define a list of transaction sets that must always be included or excluded while processing an EDI interchange.</span></span> <span data-ttu-id="d5fd7-104">ここでは、トランザクション セットの一覧を作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d5fd7-104">This section provides instructions on how to create the transaction set list.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "BizTalk メッセージ キューの大きいメッセージ用拡張機能 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk メッセージ キューの大きいメッセージ用拡張機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Message Queuing Large Message Extension
 - utilities, BizTalk Message Queuing Large Message Extension
 ms.assetid: 5d6892d3-fda8-41a3-8111-d28c11bd71fb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006403"
 ---
 # <a name="biztalk-message-queuing-large-message-extension"></a><span data-ttu-id="b24db-102">BizTalk メッセージ キューのサイズの大きいメッセージ用拡張機能</span><span class="sxs-lookup"><span data-stu-id="b24db-102">BizTalk Message Queuing Large Message Extension</span></span>
 <span data-ttu-id="b24db-103">4megabytes よりも大きい本体を持つメッセージを処理できないネイティブのメッセージ キュー (MB)。</span><span class="sxs-lookup"><span data-stu-id="b24db-103">Native message queuing cannot process a message with a body larger than 4megabytes (MB).</span></span> <span data-ttu-id="b24db-104">ただし、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、4 MB を超えるメッセージを処理できるようにする、ネイティブのメッセージ キュー用のアドオンが用意されています。</span><span class="sxs-lookup"><span data-stu-id="b24db-104">However, Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes an add-on for native message queuing that permits processing messages larger than 4 MB.</span></span> <span data-ttu-id="b24db-105">このアドオンは、Mqrtlarge.dll ファイルとして提供され、公開、 **MQSendLargeMessage**と**MQReceiveLargeMessage**アプリケーション プログラミング インターフェイス (Api)、および COM 類似モデル。</span><span class="sxs-lookup"><span data-stu-id="b24db-105">This add-on is delivered as the Mqrtlarge.dll file, and exposes the **MQSendLargeMessage** and **MQReceiveLargeMessage** application programming interfaces (APIs), and the analogous COM model.</span></span> <span data-ttu-id="b24db-106">これらの関数は、標準メッセージ キュー Api として実装されて**MQSendMessage**と**MQReceiveMessage**それぞれします。</span><span class="sxs-lookup"><span data-stu-id="b24db-106">These functions are implemented as standard message queuing APIs, **MQSendMessage** and **MQReceiveMessage** respectively.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 |<span data-ttu-id="b24db-113">ファイル</span><span class="sxs-lookup"><span data-stu-id="b24db-113">File(s)</span></span>|<span data-ttu-id="b24db-114">Description</span><span class="sxs-lookup"><span data-stu-id="b24db-114">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="b24db-115">Mqrtlarge.dll</span><span class="sxs-lookup"><span data-stu-id="b24db-115">Mqrtlarge.dll</span></span>|<span data-ttu-id="b24db-116">公開する Win32 ダイナミック リンク ライブラリ**MQSendLargeMessage**と**MQReceiveLargeMessage**です。</span><span class="sxs-lookup"><span data-stu-id="b24db-116">A Win32 dynamic-link library that exposes **MQSendLargeMessage** and **MQReceiveLargeMessage**.</span></span><br /><br /> <span data-ttu-id="b24db-117">ヘッダー ファイルに配置されます、 *\<インストール パス\>*\SDK\Include ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="b24db-117">The header files are located in the *\<Installation Path\>*\SDK\Include directory.</span></span> <span data-ttu-id="b24db-118">**注:**インストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット版の Mqrtlarge.dll にアクセスするために Windows の 64 ビット バージョンにします。</span><span class="sxs-lookup"><span data-stu-id="b24db-118">**Note:**  You must install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] onto a 64 bit version of Windows in order to access the 64 bit version of Mqrtlarge.dll.</span></span>|  
+|<span data-ttu-id="b24db-115">Mqrtlarge.dll</span><span class="sxs-lookup"><span data-stu-id="b24db-115">Mqrtlarge.dll</span></span>|<span data-ttu-id="b24db-116">公開する Win32 ダイナミック リンク ライブラリ**MQSendLargeMessage**と**MQReceiveLargeMessage**です。</span><span class="sxs-lookup"><span data-stu-id="b24db-116">A Win32 dynamic-link library that exposes **MQSendLargeMessage** and **MQReceiveLargeMessage**.</span></span><br /><br /> <span data-ttu-id="b24db-117">ヘッダー ファイルに配置されます、 *\<インストール パス\>* \SDK\Include ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="b24db-117">The header files are located in the *\<Installation Path\>* \SDK\Include directory.</span></span> <span data-ttu-id="b24db-118">**注:** インストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット版の Mqrtlarge.dll にアクセスするために Windows の 64 ビット バージョンにします。</span><span class="sxs-lookup"><span data-stu-id="b24db-118">**Note:**  You must install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] onto a 64 bit version of Windows in order to access the 64 bit version of Mqrtlarge.dll.</span></span>|  
   
  <span data-ttu-id="b24db-119">**このユーティリティの使用**</span><span class="sxs-lookup"><span data-stu-id="b24db-119">**Using This Utility**</span></span>  
   

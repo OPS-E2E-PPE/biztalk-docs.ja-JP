@@ -1,15 +1,15 @@
 ---
-title: "プロジェクト項目の追加 |Microsoft ドキュメント"
-description: "オーケストレーション、スキーマ、マップ、およびパイプラインを Visual Studio で BizTalk Server プロジェクトに追加します。"
-ms.custom: 
+title: プロジェクト項目の追加 |Microsoft ドキュメント
+description: オーケストレーション、スキーマ、マップ、およびパイプラインを Visual Studio で BizTalk Server プロジェクトに追加します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1b922d5-8ece-4e1a-a390-e6ae1222665a
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710225"
 ---
 # <a name="add-project-items"></a><span data-ttu-id="e3e1d-103">プロジェクト項目を追加します。</span><span class="sxs-lookup"><span data-stu-id="e3e1d-103">Add Project Items</span></span>
 <span data-ttu-id="e3e1d-104">BizTalk プロジェクト システムのコンテキストでは、プロジェクト項目は構成済みの項目のことであり、マップやスキーマなどがあります。</span><span class="sxs-lookup"><span data-stu-id="e3e1d-104">In the context of the BizTalk project system, a project item is a configured item, such as a map or schema.</span></span> <span data-ttu-id="e3e1d-105">BizTalk アプリケーションには、1 つ以上のオーケストレーション、スキーマ、マップ、およびパイプラインを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="e3e1d-105">A BizTalk application might contain one or more orchestrations, schemas, maps, and pipelines.</span></span>  

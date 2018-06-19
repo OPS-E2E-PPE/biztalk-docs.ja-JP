@@ -1,14 +1,14 @@
 ---
-title: "スキーマにノードを挿入 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマにノードを挿入 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f422a91a-6fdb-4cff-b681-e6f1e3a1a04f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256306"
 ---
 # <a name="inserting-nodes-into-a-schema"></a><span data-ttu-id="42fd7-102">スキーマへのノードの挿入</span><span class="sxs-lookup"><span data-stu-id="42fd7-102">Inserting Nodes into a Schema</span></span>
 <span data-ttu-id="42fd7-103">スキーマを作成する過程で最も実施頻度の高い作業の 1 つは、各種のノードをスキーマ ツリーのさまざまな位置や階層に挿入することによって、対応するインスタンス メッセージの構造を作成することです。</span><span class="sxs-lookup"><span data-stu-id="42fd7-103">One of the main types of tasks you will perform in the course of developing a schema is inserting nodes of various types into the schema tree at different locations and depths, thereby creating the structure that will represent the corresponding instance messages.</span></span> <span data-ttu-id="42fd7-104">このセクションでは、ノードを挿入するための方法をいくつか説明します。</span><span class="sxs-lookup"><span data-stu-id="42fd7-104">This section describes several ways to insert a node.</span></span>  

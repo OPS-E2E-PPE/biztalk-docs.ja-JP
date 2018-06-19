@@ -1,11 +1,11 @@
 ---
-title: "ポリシー バージョンを管理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシー バージョンを管理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, publishing
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - policies, versioning
 - policies, updating
 ms.assetid: 6e35b2bd-1ecd-45ea-aff3-4ad2437568a4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254498"
 ---
 # <a name="how-to-maintain-policy-versions"></a><span data-ttu-id="584ff-102">ポリシー バージョンを管理する方法</span><span class="sxs-lookup"><span data-stu-id="584ff-102">How to Maintain Policy Versions</span></span>
 <span data-ttu-id="584ff-103">ルールをポリシーのバージョンに追加することにより、将来の開発に備えて特定のバージョンをルール ストアに保存できます。また、そのバージョンを公開して、厳密に定義されたルールのセットを作成し、これらのルールをルール ベースのアプリケーション用に展開することができます。</span><span class="sxs-lookup"><span data-stu-id="584ff-103">After you add rules to a version of your policy, you can save the version to the rule store for further development, or you can publish it to create a well-defined, immutable set of rules that can be deployed for use in a rule-based application.</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-update-a-policy-to-use-an-updated-assembly"></a><span data-ttu-id="584ff-121">ポリシーを更新して更新済みアセンブリを使用するには</span><span class="sxs-lookup"><span data-stu-id="584ff-121">To update a policy to use an updated assembly</span></span>  
   
-1.  <span data-ttu-id="584ff-122">をクリックして**開始**、 をポイント**管理ツール**、 をポイント**.NET Framework 構成**、クリックして**アセンブリの構成**.</span><span class="sxs-lookup"><span data-stu-id="584ff-122">Click **Start**, point to **Administrative Tools**, point to **.NET Framework Configuration**, and then click **Configured Assemblies**.</span></span>  
+1.  <span data-ttu-id="584ff-122">をクリックして**開始**、 をポイント**管理ツール**、 をポイント **.NET Framework 構成**、クリックして**アセンブリの構成**.</span><span class="sxs-lookup"><span data-stu-id="584ff-122">Click **Start**, point to **Administrative Tools**, point to **.NET Framework Configuration**, and then click **Configured Assemblies**.</span></span>  
   
 2.  <span data-ttu-id="584ff-123">ターゲット アセンブリのプロパティに移動し、**バインド ポリシー**タブです。</span><span class="sxs-lookup"><span data-stu-id="584ff-123">Go to properties for the target assembly and click the **Binding Policy** tab.</span></span>  
   

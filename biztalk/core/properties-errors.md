@@ -1,14 +1,14 @@
 ---
-title: "プロパティ エラー |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティ エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d297db1a-352c-4e5a-b0aa-6edae8d74824
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265082"
 ---
 # <a name="properties-errors"></a><span data-ttu-id="0e887-102">プロパティ エラー</span><span class="sxs-lookup"><span data-stu-id="0e887-102">Properties Errors</span></span>
 <span data-ttu-id="0e887-103">ここでは、WCF のプロパティ エラーを診断および解決するための詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="0e887-103">This section contains detailed information for diagnosing and resolving WCF Properties errors.</span></span>  

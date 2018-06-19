@@ -1,17 +1,17 @@
 ---
-title: "トランザクション MSMQ アダプターで処理 |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション MSMQ アダプターで処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, transaction handling
 - transactions, MSMQ adapters
 ms.assetid: 2e5dd0da-3852-48bf-9372-b019ecab23be
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008747"
 ---
 # <a name="transaction-handling-with-the-msmq-adapter"></a><span data-ttu-id="d6cd8-102">トランザクション MSMQ アダプターで処理</span><span class="sxs-lookup"><span data-stu-id="d6cd8-102">Transaction Handling with the MSMQ Adapter</span></span>
 <span data-ttu-id="d6cd8-103">このセクションでは、送受信の際のトランザクションの機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="d6cd8-103">This section discusses how transactions work in receiving and sending.</span></span>  

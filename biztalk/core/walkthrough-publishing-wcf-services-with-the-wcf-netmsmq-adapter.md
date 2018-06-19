@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスを発行する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスを発行する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e623b6dc-32e5-467c-bb7d-68b7a75723c1
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010723"
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a><span data-ttu-id="22d39-102">チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスの発行</span><span class="sxs-lookup"><span data-stu-id="22d39-102">Walkthrough: Publishing WCF Services with the WCF-NetMsmq Adapter</span></span>
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="22d39-137">ソリューション エクスプ ローラーで、 **BizTalkApp**、開き、 **OrderProcess.odx**を確認します。</span><span class="sxs-lookup"><span data-stu-id="22d39-137">In Solution Explorer, expand **BizTalkApp**, and then open **OrderProcess.odx** to review.</span></span> <span data-ttu-id="22d39-138">サンプル オーケストレーションは発注要求メッセージを受信し、注文応答メッセージを返します。</span><span class="sxs-lookup"><span data-stu-id="22d39-138">The sample orchestration receives order request messages, and simply returns the order response messages.</span></span>  
   
-4.  <span data-ttu-id="22d39-139">**BizTalkApp**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="22d39-139">Because the **BizTalkApp** assembly must be installed in the GAC, it will need a strong name key file to complete the deployment process.</span></span> <span data-ttu-id="22d39-140">右クリックし、 **BizTalkApp**プロジェクトをクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-140">Right-click the **BizTalkApp** project, and then click **Properties**.</span></span> <span data-ttu-id="22d39-141">**プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-141">On the **Properties** page, click **Signing**, and select **Sign the assembly**.</span></span> <span data-ttu-id="22d39-142">下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規\>**を入力し、`keyfile.snk`で、**キー ファイル名** テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="22d39-142">Click the down arrow in the **Choose a strong name key file** drop-down list, click **\<New\>** and enter `keyfile.snk` in the **key file name** textbox.</span></span> <span data-ttu-id="22d39-143">オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-143">Uncheck **Protect my key file with a password**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="22d39-139">**BizTalkApp**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="22d39-139">Because the **BizTalkApp** assembly must be installed in the GAC, it will need a strong name key file to complete the deployment process.</span></span> <span data-ttu-id="22d39-140">右クリックし、 **BizTalkApp**プロジェクトをクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-140">Right-click the **BizTalkApp** project, and then click **Properties**.</span></span> <span data-ttu-id="22d39-141">**プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-141">On the **Properties** page, click **Signing**, and select **Sign the assembly**.</span></span> <span data-ttu-id="22d39-142">下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規\>** を入力し、`keyfile.snk`で、**キー ファイル名** テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="22d39-142">Click the down arrow in the **Choose a strong name key file** drop-down list, click **\<New\>** and enter `keyfile.snk` in the **key file name** textbox.</span></span> <span data-ttu-id="22d39-143">オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-143">Uncheck **Protect my key file with a password**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="22d39-144">クリックして、**展開**タブをクリックし、変更、**サーバー**プロパティだけでなく、BizTalk 管理データベースを別のデータベース サーバーを使用する場合**LOCALHOST**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-144">Click the **Deployment** tab, and then change the **Server** property if you use a different database server for the BizTalk Management database besides **LOCALHOST**.</span></span>  <span data-ttu-id="22d39-145">確認**BizTalk アプリケーション**に値が設定されている**WCFNetMsmqAdapterPublishing**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-145">Ensure **BizTalk Application** value is set to **WCFNetMsmqAdapterPublishing**.</span></span> <span data-ttu-id="22d39-146">確認**グローバル アセンブリ キャッシュにインストール**に設定されている**True**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-146">Ensure **Install to Global Assembly Cache** is set to **True**.</span></span>  
   
@@ -102,13 +103,13 @@ ms.lasthandoff: 12/01/2017
   
     3.  <span data-ttu-id="22d39-166">**受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「 `WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder`、クリックしてして**ok**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-166">In the **Receive Port Properties** dialog box, in the **Name** text box, type `WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder`, and then click **OK**.</span></span>  
   
-    4.  <span data-ttu-id="22d39-167">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**[wcfnetmsmqadapterpublishing.receivepurchaseorder]**、 をポイント**新規**、クリックして**受信場所**.</span><span class="sxs-lookup"><span data-stu-id="22d39-167">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, right-click **WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder**, point to **New**, and then click **Receive Location**.</span></span>  
+    4.  <span data-ttu-id="22d39-167">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして **[wcfnetmsmqadapterpublishing.receivepurchaseorder]**、 をポイント**新規**、クリックして**受信場所**.</span><span class="sxs-lookup"><span data-stu-id="22d39-167">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, right-click **WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder**, point to **New**, and then click **Receive Location**.</span></span>  
   
     5.  <span data-ttu-id="22d39-168">**受信場所のプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq`です。</span><span class="sxs-lookup"><span data-stu-id="22d39-168">In the **Receive Location Properties** dialog box, in the **Name** text box, type `WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq`.</span></span>  
   
     6.  <span data-ttu-id="22d39-169">**受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-netmsmq**から、クリックしてドロップダウン リスト、**構成**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-169">In the **Receive Location Properties** dialog box, in the **Transport** section next to **Type**, select **WCF-NetMsmq** from the drop-down list, and then click **Configure**.</span></span>  
   
-    7.  <span data-ttu-id="22d39-170">**Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)**テキスト ボックスで、「`net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`です。</span><span class="sxs-lookup"><span data-stu-id="22d39-170">In the **WCF-NetMsmq Transport Properties** dialog box, on the **General**  tab, in the **Address (URI)** text box, type `net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`.</span></span>  
+    7.  <span data-ttu-id="22d39-170">**Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)** テキスト ボックスで、「`net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`です。</span><span class="sxs-lookup"><span data-stu-id="22d39-170">In the **WCF-NetMsmq Transport Properties** dialog box, on the **General**  tab, in the **Address (URI)** text box, type `net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`.</span></span>  
   
     8.  <span data-ttu-id="22d39-171">**Wcf-netmsmq トランスポートのプロパティ**ダイアログ ボックスの**バインド** タブで、ことを確認して、**トランザクション** チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="22d39-171">In the **WCF-NetMsmq Transport Properties** dialog box, on the **Binding**  tab, make sure that the **Transactional** check box is selected.</span></span>  
   
@@ -152,9 +153,9 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="22d39-193">**WCF サービスの種類** ページで、、**メタデータのみのエンドポイント (MEX)** WCFNetMsmq のメタデータを公開する チェック ボックスの受信場所。</span><span class="sxs-lookup"><span data-stu-id="22d39-193">On the **WCF Service Type** page, select the **Metadata only endpoint (MEX)** check box to publish the metadata for the WCFNetMsmq receive location.</span></span> <span data-ttu-id="22d39-194">選択**WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq**から、**受信場所のメタデータを公開**クリックしてドロップダウン リスト、**次**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-194">Select **WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq** from the **Publish metadata for receive location** drop-down list, and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="22d39-195">**WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-195">On the **Create WCF Service** page, select **Publish BizTalk orchestrations as WCF service**, and then click **Next**.</span></span>  
+4.  <span data-ttu-id="22d39-195">**WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="22d39-195">On the **Create WCF Service** page, select **Publish BizTalk orchestrations as WCF service**, and then click **Next**.</span></span>  
   
-5.  <span data-ttu-id="22d39-196">**BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)**テキスト ボックスで、をクリックして**参照**を参照する、 **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**フォルダーで、をクリックし、サンプル オーケストレーションを含むアセンブリをダブルクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-196">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\*.dll)** text box, click **Browse** to browse to the **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development** folder, double-click the assembly containing the sample orchestration to publish, and then click **Next**.</span></span>  
+5.  <span data-ttu-id="22d39-196">**BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)** テキスト ボックスで、をクリックして**参照**を参照する、 **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**フォルダーで、をクリックし、サンプル オーケストレーションを含むアセンブリをダブルクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-196">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\*.dll)** text box, click **Browse** to browse to the **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development** folder, double-click the assembly containing the sample orchestration to publish, and then click **Next**.</span></span>  
   
 6.  <span data-ttu-id="22d39-197">**オーケストレーションとポート** ページで、ことを確認して、**ポート: PurchaseOrderRequestPort**ノードがページで、選択されているし をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-197">On the **Orchestrations and Ports** page, make sure that the **Port: PurchaseOrderRequestPort** node is selected on the page, and then click **Next**.</span></span>  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="22d39-233">Visual Studio で、ソリューション エクスプ ローラーで右クリックし**WCFClient**、 をポイント**追加**、クリックして**既存項目の**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-233">In Visual Studio, in Solution Explorer, right-click **WCFClient**, point to **Add**, and then click **Existing Item**.</span></span>  
   
-4.  <span data-ttu-id="22d39-234">**既存項目の追加** ダイアログ ボックスを参照、 **WCFClient**フォルダーを選択**すべてのファイル (\*.\*)**で、**ファイルの種類**ドロップダウン リストで、 **BizTalkServiceInstance.cs**と**output.config**ファイル、および  をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-234">In the **Add Existing Item** dialog box, browse to the **WCFClient** folder, select **All Files (\*.\*)** in the **Files of type** drop-down list, select the **BizTalkServiceInstance.cs** and **output.config** files, and then click **Add**.</span></span>  
+4.  <span data-ttu-id="22d39-234">**既存項目の追加** ダイアログ ボックスを参照、 **WCFClient**フォルダーを選択**すべてのファイル (\*.\*)** で、**ファイルの種類**ドロップダウン リストで、 **BizTalkServiceInstance.cs**と**output.config**ファイル、および  をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-234">In the **Add Existing Item** dialog box, browse to the **WCFClient** folder, select **All Files (\*.\*)** in the **Files of type** drop-down list, select the **BizTalkServiceInstance.cs** and **output.config** files, and then click **Add**.</span></span>  
   
 5.  <span data-ttu-id="22d39-235">展開**WCFClient**を右クリックして**output.config**、 をクリックして**の名前を変更**、し、入力`App.config`新しい名前として。</span><span class="sxs-lookup"><span data-stu-id="22d39-235">Expand **WCFClient**, right-click **output.config**, click **Rename**, and then type `App.config` as the new name.</span></span>  
   
@@ -223,7 +224,7 @@ ms.lasthandoff: 12/01/2017
   
 ## <a name="test-the-sample-solution-with-the-wcf-netmsmq-adapter"></a><span data-ttu-id="22d39-240">Wcf-netmsmq アダプターを使用するサンプル ソリューションをテストします。</span><span class="sxs-lookup"><span data-stu-id="22d39-240">Test the sample solution with the WCF-NetMsmq adapter</span></span>  
   
-1.  <span data-ttu-id="22d39-241">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、 **[wcfnetmsmqadapterpublishing]**アプリケーション、およびクリック**開始**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-241">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, right-click the **WCFNetMsmqAdapterPublishing** application, and then click **Start**.</span></span> <span data-ttu-id="22d39-242">**開始**ダイアログ ボックスで、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-242">In the **Start** dialog box, click **Start**.</span></span>  
+1.  <span data-ttu-id="22d39-241">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、 **[wcfnetmsmqadapterpublishing]** アプリケーション、およびクリック**開始**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-241">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, right-click the **WCFNetMsmqAdapterPublishing** application, and then click **Start**.</span></span> <span data-ttu-id="22d39-242">**開始**ダイアログ ボックスで、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-242">In the **Start** dialog box, click **Start**.</span></span>  
   
 2.  <span data-ttu-id="22d39-243">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**プラットフォームの設定**、展開**ホスト インスタンス**を右クリックして**BizTalkServerApplication**または別クリックして、ホスト インスタンスの適切な**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="22d39-243">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **Platform Settings**, expand **Host Instances**, right-click **BizTalkServerApplication** or another appropriate host instance, and then click **Restart**.</span></span> <span data-ttu-id="22d39-244">このステップは必須ではありませんが、この時点でサンプルが正しく動作することを確認しておくことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="22d39-244">While this step is not required, it is a good idea to ensure the sample works correctly up to this point.</span></span>  
   

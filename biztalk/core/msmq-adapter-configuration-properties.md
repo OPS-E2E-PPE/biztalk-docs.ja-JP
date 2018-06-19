@@ -1,11 +1,11 @@
 ---
-title: "MSMQ アダプター構成プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプター構成プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, receive locations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - MSMQ adapters, code sample
 - send ports, adapters
 ms.assetid: d660d0ce-bff9-4bc5-be1d-38954c2fdbe2
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974552"
 ---
 # <a name="msmq-adapter-configuration-properties"></a><span data-ttu-id="5872d-102">MSMQ アダプター構成プロパティ</span><span class="sxs-lookup"><span data-stu-id="5872d-102">MSMQ Adapter Configuration Properties</span></span>
 <span data-ttu-id="5872d-103">次の表に、MSMQ アダプターの受信場所に設定できる構成プロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="5872d-103">The following table lists the configuration properties that you can set for an MSMQ adapter receive location:</span></span>  

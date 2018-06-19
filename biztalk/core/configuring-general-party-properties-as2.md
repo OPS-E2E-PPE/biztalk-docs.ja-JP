@@ -1,14 +1,14 @@
 ---
-title: "[全般] パーティ プロパティ (AS2) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '[全般] パーティ プロパティ (AS2) の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c9a4dbd0-8849-403a-af82-58ee0b10f85a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007052"
 ---
 # <a name="configuring-general-party-properties-as2"></a><span data-ttu-id="6d2b1-102">パーティの全般プロパティの構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="6d2b1-102">Configuring General Party Properties (AS2)</span></span>
 <span data-ttu-id="6d2b1-103">パーティまたは取引先は、ビジネス リレーションシップの参加組織を表します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-103">A party or trading partner represents a participating organization in a business relationship.</span></span> <span data-ttu-id="6d2b1-104">パーティのプロパティには次の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-104">Party properties contain the following information:</span></span>  
@@ -41,8 +42,8 @@ ms.lasthandoff: 12/01/2017
     |<span data-ttu-id="6d2b1-114">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6d2b1-114">Use this</span></span>|<span data-ttu-id="6d2b1-115">目的</span><span class="sxs-lookup"><span data-stu-id="6d2b1-115">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="6d2b1-116">**名前**</span><span class="sxs-lookup"><span data-stu-id="6d2b1-116">**Name**</span></span>|<span data-ttu-id="6d2b1-117">パーティ名を入力します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-117">Enter a party name.</span></span>|  
-    |<span data-ttu-id="6d2b1-118">**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**</span><span class="sxs-lookup"><span data-stu-id="6d2b1-118">**Local BizTalk processes messages received by the party or supports sending messages from this party**</span></span>|<span data-ttu-id="6d2b1-119">パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-119">Select this checkbox to specify that the party represents the same trading partner that also hosts [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="6d2b1-120">**重要:**に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-120">**Important:**  For a two-party TPM solution that uses out-of-the-box pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you must select this check box for at least one party.</span></span> <span data-ttu-id="6d2b1-121">**注:**このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-121">**Note:**  If you clear this check box, some properties will be disabled while creating the agreements for this party.</span></span>|  
-    |<span data-ttu-id="6d2b1-122">**追加のプロパティ – 名前/値**</span><span class="sxs-lookup"><span data-stu-id="6d2b1-122">**Additional Properties – Name / Value**</span></span>|<span data-ttu-id="6d2b1-123">パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-123">Enter a name-value pair to store any information about the party.</span></span> <span data-ttu-id="6d2b1-124">名前と値の組み合わせは、必要な数だけ追加できます。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-124">You can add as many name-value pairs as you want.</span></span> <span data-ttu-id="6d2b1-125">**注:**なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-125">**Note:**  The name-value pairs are not used by the BizTalk Server for any processing; this data is for information purposes only.</span></span>|  
+    |<span data-ttu-id="6d2b1-118">**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**</span><span class="sxs-lookup"><span data-stu-id="6d2b1-118">**Local BizTalk processes messages received by the party or supports sending messages from this party**</span></span>|<span data-ttu-id="6d2b1-119">パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-119">Select this checkbox to specify that the party represents the same trading partner that also hosts [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="6d2b1-120">**重要:** に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-120">**Important:**  For a two-party TPM solution that uses out-of-the-box pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you must select this check box for at least one party.</span></span> <span data-ttu-id="6d2b1-121">**注:** このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-121">**Note:**  If you clear this check box, some properties will be disabled while creating the agreements for this party.</span></span>|  
+    |<span data-ttu-id="6d2b1-122">**追加のプロパティ – 名前/値**</span><span class="sxs-lookup"><span data-stu-id="6d2b1-122">**Additional Properties – Name / Value**</span></span>|<span data-ttu-id="6d2b1-123">パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-123">Enter a name-value pair to store any information about the party.</span></span> <span data-ttu-id="6d2b1-124">名前と値の組み合わせは、必要な数だけ追加できます。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-124">You can add as many name-value pairs as you want.</span></span> <span data-ttu-id="6d2b1-125">**注:** なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-125">**Note:**  The name-value pairs are not used by the BizTalk Server for any processing; this data is for information purposes only.</span></span>|  
     |<span data-ttu-id="6d2b1-126">**Del**</span><span class="sxs-lookup"><span data-stu-id="6d2b1-126">**Delete**</span></span>|<span data-ttu-id="6d2b1-127">選択した名前と値の組み合わせを削除する場合にクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-127">Click to delete the selected name-value pair.</span></span>|  
   
 3.  <span data-ttu-id="6d2b1-128">**送信ポート**のページ、**パーティ プロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-128">On the **Send Ports** page of the **Party Properties** dialog box, do the following:</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/01/2017
     > [!NOTE]
     >  <span data-ttu-id="6d2b1-160">パーティに対して指定する証明書を使用して、パーティからの AS2 メッセージまたは MDN の署名を確認します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-160">The certificate you specify for a party is used to verify signature of an AS2 message or MDN from the party.</span></span> <span data-ttu-id="6d2b1-161">パーティの署名確認に使用する証明書は、他のパーティの署名確認に使用する証明書と重複しない、一意のものでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-161">The certificate used to verify a signature for a party must be unique from the certificates used to verify signatures for other parties.</span></span> <span data-ttu-id="6d2b1-162">AS2 メッセージに使用される証明書の詳細については、次を参照してください。 [AS2 セキュリティ](../core/as2-security.md)です。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-162">For more information on certificates used with AS2 messages, see [AS2 Security](../core/as2-security.md).</span></span> <span data-ttu-id="6d2b1-163">送信メッセージの署名、受信メッセージの署名の確認、送信メッセージの暗号化、および受信メッセージの解読のための証明書のインストールと定義が必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-163">You may need to install and define certificates for outbound signing, inbound signature verification, outbound encryption, and inbound decryption.</span></span>  
   
-5.  <span data-ttu-id="6d2b1-164">をクリックして**適用**、プロパティを受け入れるか、をクリックする**[ok]**構成設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-164">Click **Apply** to accept the properties, or click **OK** to complete the configuration setting.</span></span> <span data-ttu-id="6d2b1-165">どちらの操作では、設定を検証します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-165">Either action will validate the settings.</span></span>  
+5.  <span data-ttu-id="6d2b1-164">をクリックして**適用**、プロパティを受け入れるか、をクリックする **[ok]** 構成設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-164">Click **Apply** to accept the properties, or click **OK** to complete the configuration setting.</span></span> <span data-ttu-id="6d2b1-165">どちらの操作では、設定を検証します。</span><span class="sxs-lookup"><span data-stu-id="6d2b1-165">Either action will validate the settings.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="6d2b1-166">参照</span><span class="sxs-lookup"><span data-stu-id="6d2b1-166">See Also</span></span>  
  [<span data-ttu-id="6d2b1-167">AS2 プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="6d2b1-167">Configuring AS2 Properties</span></span>](../core/configuring-as2-properties.md)

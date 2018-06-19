@@ -1,15 +1,15 @@
 ---
-title: "WCF アダプターで WCF 機能拡張ポイントを有効にする |Microsoft ドキュメント"
-description: "アセンブリをインストールし、machine.config の構成、拡張 BizTalk 管理者を追加作成する受信場所で BizTalk Server で WCF アダプターの WCF 機能拡張ポイントを有効にするには"
-ms.custom: 
+title: WCF アダプターで WCF 機能拡張ポイントを有効にする |Microsoft ドキュメント
+description: アセンブリをインストールし、machine.config の構成、拡張 BizTalk 管理者を追加作成する受信場所で BizTalk Server で WCF アダプターの WCF 機能拡張ポイントを有効にするには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c2af105-5272-4a6a-95d2-066312ab788e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975416"
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a><span data-ttu-id="68708-103">WCF アダプターを使用して WCF 機能拡張ポイントを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="68708-103">How to Enable the WCF Extensibility Points with the WCF Adapters</span></span>
 <span data-ttu-id="68708-104">次の 3 つの WCF 機能拡張ポイントを有効にする — 動作拡張機能、バインド要素の拡張機能、およびバインド拡張機能: Wcf-custom および Wcf-customisolated アダプタを使用しています。</span><span class="sxs-lookup"><span data-stu-id="68708-104">Enable three WCF extensibility points—behavior extension, binding element extension, and binding extension—with the WCF-Custom and WCF-CustomIsolated adapters.</span></span> <span data-ttu-id="68708-105">これを行うには、まず WCF 機能拡張ポイントを実装するアセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、コンピューターの machine.config ファイルを変更した後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して WCF-Custom アダプターまたは WCF-CustomIsolated アダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="68708-105">To do so, you first install the assemblies implementing the WCF extensibility points in the global assembly cache (GAC), then modify the machine.config file on your computers, and then configure the WCF-Custom or the WCF-CustomIsolated adapter by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="68708-121">コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。</span><span class="sxs-lookup"><span data-stu-id="68708-121">At a command prompt, go to the %FrameworkDir%\v4.X.XXXXX\CONFIG folder, and then open the **machine.config** file by using Notepad.</span></span>  
   
-2.  <span data-ttu-id="68708-122">メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>**要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingExtensions\>** 内の WCF バインド拡張機能要素 **\<system.serverModel\>\\< 拡張\>**要素。</span><span class="sxs-lookup"><span data-stu-id="68708-122">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingExtensions\>** element for a WCF binding extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="68708-123">たとえば、netHttpBinding、カスタム バインド拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。</span><span class="sxs-lookup"><span data-stu-id="68708-123">For example, to enable a custom binding extension, netHttpBinding, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
+2.  <span data-ttu-id="68708-122">メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>** 要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingExtensions\>** 内の WCF バインド拡張機能要素 **\<system.serverModel\>\\< 拡張\>** 要素。</span><span class="sxs-lookup"><span data-stu-id="68708-122">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingExtensions\>** element for a WCF binding extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="68708-123">たとえば、netHttpBinding、カスタム バインド拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。</span><span class="sxs-lookup"><span data-stu-id="68708-123">For example, to enable a custom binding extension, netHttpBinding, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
   
     ```  
     <system.serviceModel>  
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/28/2017
     ```  
   
     > [!NOTE]
-    >  - <span data-ttu-id="68708-124">コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。</span><span class="sxs-lookup"><span data-stu-id="68708-124">You can find the information for the assemblies to register by using the command, **gacutil /lr** *<assembly_name>*.</span></span>  
+    >  - <span data-ttu-id="68708-124">コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >* です。</span><span class="sxs-lookup"><span data-stu-id="68708-124">You can find the information for the assemblies to register by using the command, **gacutil /lr** *<assembly_name>*.</span></span>  
     >  - <span data-ttu-id="68708-125">参照してください[bindingExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingextensions)この要素上です。</span><span class="sxs-lookup"><span data-stu-id="68708-125">See [bindingExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingextensions) on this element.</span></span>
   
 3.  <span data-ttu-id="68708-126">メモ帳で、machine.config ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="68708-126">In Notepad, save the machine.config file.</span></span>  
@@ -87,11 +88,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="68708-133">WCF-CustomIsolated アダプターを使用する場合は、IIS 管理コンソールで、WCF 受信場所に関連付けられたアプリケーション プールを再起動します。</span><span class="sxs-lookup"><span data-stu-id="68708-133">If you use the WCF-CustomIsolated adapter, in the IIS Management console, restart the application pool associated with the WCF receive location.</span></span>  
   
-4.  <span data-ttu-id="68708-134">WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>*です。</span><span class="sxs-lookup"><span data-stu-id="68708-134">If you want to configure a receive location to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Receive Locations**, and then in the right pane, double-click *\<Receive location\>*.</span></span>  
+4.  <span data-ttu-id="68708-134">WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>* です。</span><span class="sxs-lookup"><span data-stu-id="68708-134">If you want to configure a receive location to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Receive Locations**, and then in the right pane, double-click *\<Receive location\>*.</span></span>  
   
     -   <span data-ttu-id="68708-135">**受信場所のプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**または**Wcf-customisolated**を使用して、をクリックする、WCF アダプタによって**構成**です。</span><span class="sxs-lookup"><span data-stu-id="68708-135">In the **Receive Location Properties** dialog box, in the **Type** drop-down list, select **WCF-Custom** or **WCF-CustomIsolated** depending on the WCF adapter that you want to use, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="68708-136">WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>*です。</span><span class="sxs-lookup"><span data-stu-id="68708-136">If you want to configure a send port to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Send Ports**, and then in the right pane, double-click *\<Send port\>*.</span></span>  
+5.  <span data-ttu-id="68708-136">WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>* です。</span><span class="sxs-lookup"><span data-stu-id="68708-136">If you want to configure a send port to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Send Ports**, and then in the right pane, double-click *\<Send port\>*.</span></span>  
   
     -   <span data-ttu-id="68708-137">**送信ポートのプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="68708-137">In the **Send Port Properties** dialog box, in the **Type** drop-down list, select **WCF-Custom**, and then click **Configure**.</span></span>  
   
@@ -103,7 +104,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="68708-141">コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。</span><span class="sxs-lookup"><span data-stu-id="68708-141">At a command prompt, go to the %FrameworkDir%\v4.X.XXXXX\CONFIG folder, and then open the **machine.config** file by using Notepad.</span></span>  
   
-2.  <span data-ttu-id="68708-142">メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>**要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingElementExtensions\>**  WCF バインド要素の要素内に拡張機能、  **\<system.serverModel\>\\< 拡張\>**要素。</span><span class="sxs-lookup"><span data-stu-id="68708-142">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingElementExtensions\>** element for a WCF binding element extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="68708-143">たとえば、droppingInterceptor、カスタム バインディング要素拡張を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。</span><span class="sxs-lookup"><span data-stu-id="68708-143">For example, to enable a custom binding element extension, droppingInterceptor, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
+2.  <span data-ttu-id="68708-142">メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>** 要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingElementExtensions\>**  WCF バインド要素の要素内に拡張機能、  **\<system.serverModel\>\\< 拡張\>** 要素。</span><span class="sxs-lookup"><span data-stu-id="68708-142">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingElementExtensions\>** element for a WCF binding element extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="68708-143">たとえば、droppingInterceptor、カスタム バインディング要素拡張を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。</span><span class="sxs-lookup"><span data-stu-id="68708-143">For example, to enable a custom binding element extension, droppingInterceptor, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
   
     ```  
     <system.serviceModel>  
@@ -116,7 +117,7 @@ ms.lasthandoff: 11/28/2017
     ```  
   
     > [!NOTE]
-    > - <span data-ttu-id="68708-144">コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。</span><span class="sxs-lookup"><span data-stu-id="68708-144">You can find the information for the assemblies to register by using the command, **gacutil /lr** *<assembly_name>*.</span></span>  
+    > - <span data-ttu-id="68708-144">コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >* です。</span><span class="sxs-lookup"><span data-stu-id="68708-144">You can find the information for the assemblies to register by using the command, **gacutil /lr** *<assembly_name>*.</span></span>  
     > - <span data-ttu-id="68708-145">参照してください[bindingElementExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingelementextensions)この要素上です。</span><span class="sxs-lookup"><span data-stu-id="68708-145">See [bindingElementExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingelementextensions) on this element.</span></span>
   
 3.  <span data-ttu-id="68708-146">メモ帳で、machine.config ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="68708-146">In Notepad, save the machine.config file.</span></span>  
@@ -137,11 +138,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="68708-153">WCF-CustomIsolated アダプターを使用する場合は、IIS 管理コンソールで、WCF 受信場所に関連付けられたアプリケーション プールを再起動します。</span><span class="sxs-lookup"><span data-stu-id="68708-153">If you use the WCF-CustomIsolated adapter, in the IIS Management console, restart the application pool associated with the WCF receive location.</span></span>  
   
-4.  <span data-ttu-id="68708-154">WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>*です。</span><span class="sxs-lookup"><span data-stu-id="68708-154">If you want to configure a receive location to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Receive Locations**, and then in the right pane, double-click *\<Receive location\>*.</span></span>  
+4.  <span data-ttu-id="68708-154">WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>* です。</span><span class="sxs-lookup"><span data-stu-id="68708-154">If you want to configure a receive location to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Receive Locations**, and then in the right pane, double-click *\<Receive location\>*.</span></span>  
   
     -   <span data-ttu-id="68708-155">**受信場所のプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**または**Wcf-customisolated**を使用して、をクリックする、WCF アダプタによって**構成**です。</span><span class="sxs-lookup"><span data-stu-id="68708-155">In the **Receive Location Properties** dialog box, in the **Type** drop-down list, select **WCF-Custom** or **WCF-CustomIsolated** depending on the WCF adapter that you want to use, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="68708-156">WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>*です。</span><span class="sxs-lookup"><span data-stu-id="68708-156">If you want to configure a send port to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Send Ports**, and then in the right pane, double-click *\<Send port\>*.</span></span>  
+5.  <span data-ttu-id="68708-156">WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>* です。</span><span class="sxs-lookup"><span data-stu-id="68708-156">If you want to configure a send port to use a WCF extensibility point, in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Send Ports**, and then in the right pane, double-click *\<Send port\>*.</span></span>  
   
     -   <span data-ttu-id="68708-157">**送信ポートのプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="68708-157">In the **Send Port Properties** dialog box, in the **Type** drop-down list, select **WCF-Custom**, and then click **Configure**.</span></span>  
   
@@ -166,7 +167,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="68708-169">コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。</span><span class="sxs-lookup"><span data-stu-id="68708-169">At a command prompt, go to the %FrameworkDir%\v4.X.XXXXX\CONFIG folder, and then open the **machine.config** file by using Notepad.</span></span>  
   
-2.  <span data-ttu-id="68708-170">メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>**要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<behaviorExtensions\>**  WCF 動作拡張機能の要素内部、  **\<system.serverModel\>\\< 拡張\>**要素。</span><span class="sxs-lookup"><span data-stu-id="68708-170">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<behaviorExtensions\>** element for a WCF behavior extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="68708-171">たとえば、schemaValidator、カスタム動作拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。</span><span class="sxs-lookup"><span data-stu-id="68708-171">For example, To enable a custom behavior extension, schemaValidator, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
+2.  <span data-ttu-id="68708-170">メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>** 要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<behaviorExtensions\>**  WCF 動作拡張機能の要素内部、  **\<system.serverModel\>\\< 拡張\>** 要素。</span><span class="sxs-lookup"><span data-stu-id="68708-170">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<behaviorExtensions\>** element for a WCF behavior extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="68708-171">たとえば、schemaValidator、カスタム動作拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。</span><span class="sxs-lookup"><span data-stu-id="68708-171">For example, To enable a custom behavior extension, schemaValidator, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
   
     ```  
     <system.serviceModel>  
@@ -179,7 +180,7 @@ ms.lasthandoff: 11/28/2017
     ```  
   
     > [!NOTE]
-    >  - <span data-ttu-id="68708-172">コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。</span><span class="sxs-lookup"><span data-stu-id="68708-172">You can find the information for the assemblies to register by using the command, **gacutil /lr** *<assembly_name>*.</span></span>  
+    >  - <span data-ttu-id="68708-172">コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >* です。</span><span class="sxs-lookup"><span data-stu-id="68708-172">You can find the information for the assemblies to register by using the command, **gacutil /lr** *<assembly_name>*.</span></span>  
     >  - <span data-ttu-id="68708-173">参照してください[behaviorExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/behaviorextensions)この要素上です。</span><span class="sxs-lookup"><span data-stu-id="68708-173">See [behaviorExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/behaviorextensions) on this element.</span></span>
   
 3.  <span data-ttu-id="68708-174">メモ帳で、machine.config ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="68708-174">In Notepad, save the machine.config file.</span></span>  
@@ -200,11 +201,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="68708-181">WCF-CustomIsolated アダプターを使用する場合は、IIS 管理コンソールで、WCF 受信場所に関連付けられたアプリケーション プールを再起動します。</span><span class="sxs-lookup"><span data-stu-id="68708-181">If you use the WCF-CustomIsolated adapter, in the IIS Management console, restart the application pool associated with the WCF receive location.</span></span>  
   
-4.  <span data-ttu-id="68708-182">BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開の受信場所を構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>*です。</span><span class="sxs-lookup"><span data-stu-id="68708-182">If you want to configure a receive location to use a WCF extensibility point, in the BizTalk Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Receive Locations**, and then in the right pane, double-click *\<Receive location\>*.</span></span>  
+4.  <span data-ttu-id="68708-182">BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開の受信場所を構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>* です。</span><span class="sxs-lookup"><span data-stu-id="68708-182">If you want to configure a receive location to use a WCF extensibility point, in the BizTalk Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Receive Locations**, and then in the right pane, double-click *\<Receive location\>*.</span></span>  
   
     -   <span data-ttu-id="68708-183">**受信場所のプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**または**Wcf-customisolated**を使用して、をクリックする、WCF アダプタによって**構成**です。</span><span class="sxs-lookup"><span data-stu-id="68708-183">In the **Receive Location Properties** dialog box, in the **Type** drop-down list, select **WCF-Custom** or **WCF-CustomIsolated** depending on the WCF adapter that you want to use, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="68708-184">BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開する送信ポートを構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>*です。</span><span class="sxs-lookup"><span data-stu-id="68708-184">If you want to configure a send port to use a WCF extensibility point, in the BizTalk Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Send Ports**, and then in the right pane, double-click *\<Send port\>*.</span></span>  
+5.  <span data-ttu-id="68708-184">BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開する送信ポートを構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>* です。</span><span class="sxs-lookup"><span data-stu-id="68708-184">If you want to configure a send port to use a WCF extensibility point, in the BizTalk Administration console, expand **BizTalk Group**, expand *\<BizTalk application\>*, expand **Send Ports**, and then in the right pane, double-click *\<Send port\>*.</span></span>  
   
     -   <span data-ttu-id="68708-185">**送信ポートのプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="68708-185">In the **Send Port Properties** dialog box, in the **Type** drop-down list, select **WCF-Custom**, and then click **Configure**.</span></span>  
   

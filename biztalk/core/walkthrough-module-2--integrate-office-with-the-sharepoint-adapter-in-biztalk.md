@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: モジュール 2 - Windows SharePoint と Office の統合サービスのアダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: モジュール 2 - Windows SharePoint と Office の統合サービスのアダプター |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services adapters, InfoPath forms
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapter tutorials, integrating Microsoft Office
 - Windows SharePoint Services, document libraries
 ms.assetid: 2f81a712-bb20-4c32-bbac-fb438deded38
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291458"
 ---
 # <a name="walkthrough-module-2---integrating-office-with-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="26a94-102">チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合</span><span class="sxs-lookup"><span data-stu-id="26a94-102">Walkthrough: Module 2 - Integrating Office with the Windows SharePoint Services Adapter</span></span>
 <span data-ttu-id="26a94-103">このチュートリアルでは、継続の[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信する](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)Microsoft Office と統合する方法を説明し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンテンツ ベースルーティング (CBR) アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="26a94-103">This walkthrough is a continuation of [Walkthrough: Module 1 - Sending and Receiving Messages with the Windows SharePoint Services Adapter](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md) and shows you how to integrate Microsoft Office with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] content-based routing (CBR) application you created.</span></span> <span data-ttu-id="26a94-104">概要については、Windows SharePoint Services アダプターを参照してください。 [Windows SharePoint Services アダプターは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="26a94-104">For an introduction to the Windows SharePoint Services adapter see [What Is the Windows SharePoint Services Adapter?](../core/what-is-the-windows-sharepoint-services-adapter.md).</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="26a94-124">内の作業ディレクトリへのファイル パスを入力、**場所**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="26a94-124">Type the file path to your working directory in the **Location** field.</span></span> <span data-ttu-id="26a94-125">たとえば、 `C:\WSSAdapterWalkthrough\`のようにします。</span><span class="sxs-lookup"><span data-stu-id="26a94-125">For example, `C:\WSSAdapterWalkthrough\`.</span></span>  
   
-7.  <span data-ttu-id="26a94-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-126">Click **OK**.</span></span>  
+7.  <span data-ttu-id="26a94-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-126">Click **OK**.</span></span>  
   
 #### <a name="associate-the-key-file-with-the-assembly"></a><span data-ttu-id="26a94-127">アセンブリとキー ファイルの関連付け</span><span class="sxs-lookup"><span data-stu-id="26a94-127">Associate the key file with the assembly</span></span>  
   
@@ -70,11 +71,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="26a94-129">**[署名]** タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-129">Click the **Signing** tab.</span></span>  
   
-3.  <span data-ttu-id="26a94-130">**[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-130">Select **Sign the assembly** option, click drop-down list for the **Choose a strong name key file** option, and then click **Browse**.</span></span>  
+3.  <span data-ttu-id="26a94-130">**[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-130">Select **Sign the assembly** option, click drop-down list for the **Choose a strong name key file** option, and then click **Browse**.</span></span>  
   
 4.  <span data-ttu-id="26a94-131">「`C:\WSSAdapterWalkthrough\OrderProcess.snk`.</span><span class="sxs-lookup"><span data-stu-id="26a94-131">Type `C:\WSSAdapterWalkthrough\OrderProcess.snk`.</span></span>  
   
-5.  <span data-ttu-id="26a94-132">**[開く]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-132">Click **Open**.</span></span>  
+5.  <span data-ttu-id="26a94-132">**[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-132">Click **Open**.</span></span>  
   
 #### <a name="create-an-xsd-schema-by-using-the-biztalk-editor"></a><span data-ttu-id="26a94-133">BizTalk エディタを使用した XSD スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="26a94-133">Create an XSD schema by using the BizTalk Editor</span></span>  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="26a94-161">**ドキュメント テンプレート**セクションで、`None`の**ドキュメント テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="26a94-161">In the **Document Template** section, select `None` for the **Document Template**.</span></span>  
   
-7.  <span data-ttu-id="26a94-162">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-162">Click **Create**.</span></span> <span data-ttu-id="26a94-163">作成した空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="26a94-163">You will be redirected to the empty library you just created.</span></span>  
+7.  <span data-ttu-id="26a94-162">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-162">Click **Create**.</span></span> <span data-ttu-id="26a94-163">作成した空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="26a94-163">You will be redirected to the empty library you just created.</span></span>  
   
 8.  <span data-ttu-id="26a94-164">左側にある、をクリックして**設定の変更と列**です。</span><span class="sxs-lookup"><span data-stu-id="26a94-164">On the left side, click **Modify Settings and Columns**.</span></span>  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="26a94-166">**名前と種類**、型`Namespace`で、**名前**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="26a94-166">Under **Name and Type**, type `Namespace` in the **Name** field.</span></span>  
   
-11. <span data-ttu-id="26a94-167">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-167">Click **OK**.</span></span>  
+11. <span data-ttu-id="26a94-167">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-167">Click **OK**.</span></span>  
   
 12. <span data-ttu-id="26a94-168">`WSSAdapterWalkthrough` Web サイトを閉じます。</span><span class="sxs-lookup"><span data-stu-id="26a94-168">Close the `WSSAdapterWalkthrough` Web site.</span></span>  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="26a94-173">**データ ソース ウィザード**、 をクリックして**参照**最後の手順で作成したスキーマ ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="26a94-173">In the **Data Source Wizard**, click **Browse** and select the schema file you created in the last procedure.</span></span> <span data-ttu-id="26a94-174">たとえば、 `C:\WSSAdapterWalkthrough\OrderProcess\OrderProcess\OrderProcessSchema.xsd`のようにします。</span><span class="sxs-lookup"><span data-stu-id="26a94-174">For example, `C:\WSSAdapterWalkthrough\OrderProcess\OrderProcess\OrderProcessSchema.xsd`.</span></span>  
   
-5.  <span data-ttu-id="26a94-175">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-175">Click **Next**, and then click **Finish**.</span></span>  
+5.  <span data-ttu-id="26a94-175">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-175">Click **Next**, and then click **Finish**.</span></span>  
   
 6.  <span data-ttu-id="26a94-176">**データ ソース**タスク ウィンドウで、右クリックし、 **PurchaseOrder**ノードをクリックして**コントロール付きセクション**です。</span><span class="sxs-lookup"><span data-stu-id="26a94-176">In the **Data Source** task pane, right-click the **PurchaseOrder** node, and then click **Section with Controls**.</span></span> <span data-ttu-id="26a94-177">テンプレートにフォームが作成されます。</span><span class="sxs-lookup"><span data-stu-id="26a94-177">This will create the form on the template.</span></span>  
   
@@ -164,7 +165,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="26a94-181">**発行ウィザード**、 をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="26a94-181">In the **Publishing Wizard**, click **Next**.</span></span>  
   
-11. <span data-ttu-id="26a94-182">選択**Web サーバーに**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="26a94-182">Select **To a Web Server**, and then click **Next**.</span></span>  
+11. <span data-ttu-id="26a94-182">選択**Web サーバーに**、クリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="26a94-182">Select **To a Web Server**, and then click **Next**.</span></span>  
   
 12. <span data-ttu-id="26a94-183">パスとファイル名を入力、`InfoPathSolutions`ドキュメント ライブラリをクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="26a94-183">Type the path and filename to your `InfoPathSolutions` document library, and then click **Next**.</span></span> <span data-ttu-id="26a94-184">たとえば、 `http://<server_name>/sites/WSSAdapterWalkthrough/InfoPathSolutions/PurchaseOrder.xsn`のようにします。</span><span class="sxs-lookup"><span data-stu-id="26a94-184">For example, `http://<server_name>/sites/WSSAdapterWalkthrough/InfoPathSolutions/PurchaseOrder.xsn`.</span></span>  
   
@@ -197,7 +198,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="26a94-201">**名前と種類**、型`Partner Name`で、**列名**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="26a94-201">Under **Name and Type**, type `Partner Name` in the **Column name** field.</span></span>  
   
-6.  <span data-ttu-id="26a94-202">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-202">Click **OK**.</span></span>  
+6.  <span data-ttu-id="26a94-202">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-202">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="26a94-203">`WSSAdapterWalkthrough` Web サイトを閉じます。</span><span class="sxs-lookup"><span data-stu-id="26a94-203">Close the `WSSAdapterWalkthrough` Web site.</span></span>  
   
@@ -226,7 +227,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="26a94-217">**Windows SharePoint Services 統合**、型`Partner Name`で、**列 01**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="26a94-217">Under **Windows SharePoint Services Integration**, type `Partner Name` in the **Column 01** field.</span></span>  
   
-11. <span data-ttu-id="26a94-218">型`%XPATH=//pons:PurchaseOrder/pons:BillTo%`で、**列 01 の値**フィールドで、をクリックして**OK**、順にクリック**[ok]**を終了するには、もう一度、**送信ポートのプロパティ**ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="26a94-218">Type `%XPATH=//pons:PurchaseOrder/pons:BillTo%` in the **Column 01 Value** field, click **OK**, and then click **OK** again to exit the **Send Port Properties** dialog box.</span></span>  
+11. <span data-ttu-id="26a94-218">型`%XPATH=//pons:PurchaseOrder/pons:BillTo%`で、**列 01 の値**フィールドで、をクリックして**OK**、順にクリック **[ok]** を終了するには、もう一度、**送信ポートのプロパティ**ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="26a94-218">Type `%XPATH=//pons:PurchaseOrder/pons:BillTo%` in the **Column 01 Value** field, click **OK**, and then click **OK** again to exit the **Send Port Properties** dialog box.</span></span>  
   
 #### <a name="restart-the-send-port"></a><span data-ttu-id="26a94-219">送信ポートを再起動します。</span><span class="sxs-lookup"><span data-stu-id="26a94-219">Restart the send port</span></span>  
   
@@ -257,7 +258,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="26a94-237">**Purchase Order Date**フィールドに「`1/2/2005`です。</span><span class="sxs-lookup"><span data-stu-id="26a94-237">In the **Purchase Order Date** field, type `1/2/2005`.</span></span>  
   
-8.  <span data-ttu-id="26a94-238">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-238">Click **Save**.</span></span>  
+8.  <span data-ttu-id="26a94-238">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a94-238">Click **Save**.</span></span>  
   
 9. <span data-ttu-id="26a94-239">**名前を付けて保存** ダイアログ ボックスで、「`http://<server_name>/sites/WSSAdapterWalkthrough/Source`で、**ファイル名**フィールド、および enter キー押しです。</span><span class="sxs-lookup"><span data-stu-id="26a94-239">In the **Save As** dialog box, type `http://<server_name>/sites/WSSAdapterWalkthrough/Source`in the **file name** field, and then hit Enter.</span></span>  
   

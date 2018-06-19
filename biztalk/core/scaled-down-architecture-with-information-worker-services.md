@@ -1,17 +1,17 @@
 ---
-title: "縮小されたアーキテクチャでは、インフォメーション ワーカー サービス |Microsoft ドキュメント"
-ms.custom: 
+title: 縮小されたアーキテクチャでは、インフォメーション ワーカー サービス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, small distributions
 - architecture, examples
 ms.assetid: ce1217bf-84a5-4888-89ba-dce85dc38340
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269250"
 ---
 # <a name="scaled-down-architecture-with-information-worker-services"></a><span data-ttu-id="63be5-102">インフォメーション ワーカー サービスを使用した縮小されたアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="63be5-102">Scaled Down Architecture with Information Worker Services</span></span>
 <span data-ttu-id="63be5-103">BizTalk Server の展開のシステム アーキテクチャに関する詳細については、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。</span><span class="sxs-lookup"><span data-stu-id="63be5-103">For complete information about the system architecture for BizTalk Server deployment, see [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md).</span></span>  

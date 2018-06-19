@@ -1,18 +1,18 @@
 ---
-title: "手順 12: オーケストレーション図形の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 12: オーケストレーション図形の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, orchestration shapes
 - orchestrations, shapes
 - message enrichment tutorial, orchestrations
 ms.assetid: 9388254b-2841-4489-838e-de913ceff151
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006427"
 ---
 # <a name="step-12-configure-orchestration-shapes"></a><span data-ttu-id="36275-102">手順 12: オーケストレーション図形を構成します。</span><span class="sxs-lookup"><span data-stu-id="36275-102">Step 12: Configure Orchestration Shapes</span></span>
 <span data-ttu-id="36275-103">このステップでは、不十分な構成のスマート タグを削除するためにオーケストレーション図形の構成を完了します。</span><span class="sxs-lookup"><span data-stu-id="36275-103">In this step, you complete the configuration of the orchestration shapes in order to remove the insufficient configuration smart tags.</span></span> <span data-ttu-id="36275-104">指定する**DoorbellOutputMessage**最初の変換プロセスの出力として指定する**DoorbellMap.btm**そのプロセスで使用されるマップとして。</span><span class="sxs-lookup"><span data-stu-id="36275-104">You designate **DoorbellOutputMessage** as the output of the first transform process, designating **DoorbellMap.btm** as the map used in that process.</span></span> <span data-ttu-id="36275-105">指定する**DoorbellFinalMessage** 2 番目の出力と同じプロセスを変換およびその他のフィールドのデータを持つメッセージを拡充する式を追加します。</span><span class="sxs-lookup"><span data-stu-id="36275-105">You then designate **DoorbellFinalMessage** as the output of the second transform process, and add the expression that enriches the message with additional field data.</span></span>  
@@ -85,7 +86,7 @@ ms.lasthandoff: 12/01/2017
   
     ```  
   
-14. <span data-ttu-id="36275-124">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="36275-124">Click **OK**.</span></span>  
+14. <span data-ttu-id="36275-124">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="36275-124">Click **OK**.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="36275-125">式では、"HeaderInfo.LoadXml"には、キャリッジ リターンと、式内のスペースを削除します。</span><span class="sxs-lookup"><span data-stu-id="36275-125">In the "HeaderInfo.LoadXml" expression, delete the carriage returns and spaces within the expression.</span></span> <span data-ttu-id="36275-126">"HeaderInfo.LoadXml"ステートメントは、1 つの行にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="36275-126">The "HeaderInfo.LoadXml" statement should be on one line.</span></span>  

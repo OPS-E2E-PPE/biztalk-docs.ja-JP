@@ -1,14 +1,14 @@
 ---
-title: "HIPAA トランザクション セット |Microsoft ドキュメント"
-ms.custom: 
+title: HIPAA トランザクション セット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d659d3d-ada4-4bbc-9005-6c5caad394c1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005755"
 ---
 # <a name="hipaa-transaction-sets"></a><span data-ttu-id="00b0e-102">HIPAA トランザクション セット</span><span class="sxs-lookup"><span data-stu-id="00b0e-102">HIPAA Transaction Sets</span></span>
 <span data-ttu-id="00b0e-103">このトピックでは、HIPAA トランザクション セットおよび BizTalk Server でサポートされているバージョンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="00b0e-103">This topic describes the HIPAA transaction sets and versions that are supported by BizTalk Server.</span></span>  

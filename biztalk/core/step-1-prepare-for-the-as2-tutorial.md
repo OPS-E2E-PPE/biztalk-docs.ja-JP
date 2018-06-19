@@ -1,14 +1,14 @@
 ---
-title: "手順 1: AS2 チュートリアルの準備 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: AS2 チュートリアルの準備 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3421c33b-0ccd-4e9d-b1c3-b161278e4d98
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279546"
 ---
 # <a name="step-1-prepare-for-the-as2-tutorial"></a><span data-ttu-id="9e834-102">手順 1: AS2 チュートリアルを準備します。</span><span class="sxs-lookup"><span data-stu-id="9e834-102">Step 1: Prepare for the AS2 Tutorial</span></span>
 <span data-ttu-id="9e834-103">![11 の手順 1.](../core/media/tut-step1-of-11.gif "Tut_Step1_of_11")</span><span class="sxs-lookup"><span data-stu-id="9e834-103">![Step 1 of 11](../core/media/tut-step1-of-11.gif "Tut_Step1_of_11")</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="9e834-141">選択**Everyone**で、**グループまたはユーザー名**ボックスで、チェック ボックスをクリックして**書き込み**(下にある、**許可**列)、で**権限** ウィンドウで、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9e834-141">Select **Everyone** in the **Group or user names** box, click the check box for **Write** (under the **Allow** column) in the **Permissions** pane, and then click **OK**.</span></span>  
   
-5.  <span data-ttu-id="9e834-142">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e834-142">Click **OK**.</span></span>  
+5.  <span data-ttu-id="9e834-142">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e834-142">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="9e834-143">次の手順を繰り返して、 \\_MDNToFabrikam フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="9e834-143">Repeat these steps for the \\_MDNToFabrikam folder.</span></span>  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="9e834-149">このチュートリアルを使用し、選択するインプロセス ホストを右クリックし、詳細ウィンドウで、**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="9e834-149">In the details pane, right-click the in-process host you want to use for this tutorial and then select **Properties**.</span></span>  
   
-4.  <span data-ttu-id="9e834-150">**ホストのプロパティ**ダイアログ ボックスの**全般**] タブで [ **32 ビットのみ**、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="9e834-150">In the **Host Properties** dialog box, on the **General** tab, select **32-bit only**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="9e834-150">**ホストのプロパティ**ダイアログ ボックスの**全般**] タブで [ **32 ビットのみ**、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="9e834-150">In the **Host Properties** dialog box, on the **General** tab, select **32-bit only**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="9e834-151">分離ホストについて手順 3. ～ 4. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="9e834-151">Repeat steps 3-4 for the isolated host.</span></span>  
   

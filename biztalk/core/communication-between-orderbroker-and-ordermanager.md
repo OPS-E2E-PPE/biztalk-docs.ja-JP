@@ -1,17 +1,17 @@
 ---
-title: "OrderBroker と OrderManager 間の通信 |Microsoft ドキュメント"
-ms.custom: 
+title: OrderBroker と OrderManager 間の通信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, publishing [MessageBox database]
 - MessageBox database, publishing
 ms.assetid: 1b77dcd2-f7a5-4013-b9a2-c06ace161792
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231874"
 ---
 # <a name="communication-between-orderbroker-and-ordermanager"></a><span data-ttu-id="4651d-102">OrderBroker と OrderManager 間の通信</span><span class="sxs-lookup"><span data-stu-id="4651d-102">Communication between OrderBroker and OrderManager</span></span>
 <span data-ttu-id="4651d-103">注文ブローカと注文マネージャーのオーケストレーション (**OrderBroker**、 **OrderManager**)、メッセージ ボックス データベースはなくのパートナーの直接バインド経由で通信します。</span><span class="sxs-lookup"><span data-stu-id="4651d-103">The order broker and the order manager orchestrations (**OrderBroker**, **OrderManager**) communicate through the MessageBox database rather than being direct partner bound.</span></span> <span data-ttu-id="4651d-104">これにより、ブローカとマネージャは疎結合して、必要に応じて個別の BizTalk グループおよび地理的に分散した場所に存在できます。</span><span class="sxs-lookup"><span data-stu-id="4651d-104">This ensures that the broker and manager are loosely coupled so that they can, if necessary, be located in separate BizTalk groups and in geographically-separated locations.</span></span> <span data-ttu-id="4651d-105">このようにオーケストレーションを分割するときに必要なのは、管理の構成だけです。コードの変更は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="4651d-105">Separating the orchestrations this way requires only administrative configuration and does not require any code changes.</span></span>  

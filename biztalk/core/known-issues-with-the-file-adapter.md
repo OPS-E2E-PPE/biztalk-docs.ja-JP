@@ -1,14 +1,14 @@
 ---
-title: "ファイル アダプターに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: ファイル アダプターに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6aaf448c-0035-4648-910b-ae2f15106342
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262890"
 ---
 # <a name="known-issues-with-the-file-adapter"></a><span data-ttu-id="dc2e5-102">ファイル アダプターに関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="dc2e5-102">Known Issues with the File Adapter</span></span>
 <span data-ttu-id="dc2e5-103">ここでは、エラー回避に役立つ情報を記載します。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-103">This section contains information that may help you avoid errors.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="dc2e5-116">指定されたパスまたは共有が存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-116">Ensure that the specified path or share exists.</span></span>  
   
--   <span data-ttu-id="dc2e5-117">として使用するアカウントを確認してください、**ログオン:**アカウントが、ファイル受信ハンドラーのホスト インスタンス用に読み取りし、書き込みのアクセス許可を指定した受信場所。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-117">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
+-   <span data-ttu-id="dc2e5-117">として使用するアカウントを確認してください、**ログオン:** アカウントが、ファイル受信ハンドラーのホスト インスタンス用に読み取りし、書き込みのアクセス許可を指定した受信場所。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-117">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
   
 -   <span data-ttu-id="dc2e5-118">ファイル受信アダプターが監視するフォルダーに書き込まれたファイルの名前が 256 文字を超えていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-118">Ensure that files written to the folder monitored by the File receive adapter do not have file names exceeding 256 characters.</span></span>  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="dc2e5-131">指定した受信場所のファイルにシステム属性が付いていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-131">Ensure that the files in the specified receive location are not marked with a system attribute.</span></span>  
   
--   <span data-ttu-id="dc2e5-132">として使用するアカウントを確認してください、**ログオン:**アカウントが、ファイル受信ハンドラーのホスト インスタンス用に読み取りし、書き込みのアクセス許可を指定した受信場所。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-132">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
+-   <span data-ttu-id="dc2e5-132">として使用するアカウントを確認してください、**ログオン:** アカウントが、ファイル受信ハンドラーのホスト インスタンス用に読み取りし、書き込みのアクセス許可を指定した受信場所。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-132">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
   
 -   <span data-ttu-id="dc2e5-133">ファイル受信アダプターが監視するフォルダーに書き込まれたファイルの名前が 256 文字を超えていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-133">Ensure that files written to the folder monitored by the File receive adapter do not have file names exceeding 256 characters.</span></span>  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="dc2e5-146">指定されたパスまたは共有が存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-146">Ensure that the specified path or share exists.</span></span>  
   
--   <span data-ttu-id="dc2e5-147">として使用するアカウントを確認してください、**ログオン:**ファイル送信ハンドラーのホスト インスタンスのアカウントに読み取りし、書き込み権限を指定したディレクトリまたはファイル共有です。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-147">Ensure that the account used as the **Logon:** account for the File send handler host instance has read and write permissions to the specified directory or file share.</span></span>  
+-   <span data-ttu-id="dc2e5-147">として使用するアカウントを確認してください、**ログオン:** ファイル送信ハンドラーのホスト インスタンスのアカウントに読み取りし、書き込み権限を指定したディレクトリまたはファイル共有です。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-147">Ensure that the account used as the **Logon:** account for the File send handler host instance has read and write permissions to the specified directory or file share.</span></span>  
   
 -   <span data-ttu-id="dc2e5-148">指定したディレクトリまたはファイル共有内の既存のファイルに、システム属性が付いていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="dc2e5-148">Ensure that existing files in the specified directory or file share are not marked with the system attribute.</span></span>  
   

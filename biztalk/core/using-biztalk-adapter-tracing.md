@@ -23,6 +23,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26009211"
 ---
 # <a name="using-biztalk-adapter-tracing"></a><span data-ttu-id="166b1-102">BizTalk アダプターのトレースの使用</span><span class="sxs-lookup"><span data-stu-id="166b1-102">Using BizTalk Adapter Tracing</span></span>
 <span data-ttu-id="166b1-103">ここでは、Trace Log tool (トレース ログ ツール) をインストールする方法、および BizTalk アダプターのトレースを可能にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="166b1-103">This topic describes how to install the Trace Log tool and how to enable BizTalk adapter tracing.</span></span>  
@@ -41,15 +42,15 @@ ms.lasthandoff: 04/20/2018
     > [!NOTE]
     >  <span data-ttu-id="166b1-111">64 ビット版の Windows を使用している場合は、お使いのシステム用の正しいファイルを選択してダウンロードしてください。</span><span class="sxs-lookup"><span data-stu-id="166b1-111">If you are using a 64-bit version of Windows choose the correct files to download for your system.</span></span>  
   
-3.  <span data-ttu-id="166b1-112">**[Select an Installation Type]** ダイアログ ボックスで、 **[Custom]** インストールを選択し、 **[Next]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="166b1-112">In the **Select an Installation Type** dialog box, choose the option for a **Custom** installation, and then click **Next**.</span></span>  
+3.  <span data-ttu-id="166b1-112">**[Select an Installation Type]** ダイアログ ボックスで、 **[Custom]** インストールを選択し、 **[Next]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="166b1-112">In the **Select an Installation Type** dialog box, choose the option for a **Custom** installation, and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="166b1-113">既定のインストール先をそのまま使用し、 **[Next]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="166b1-113">Accept the default installation location and then click **Next**.</span></span>  
+4.  <span data-ttu-id="166b1-113">既定のインストール先をそのまま使用し、 **[Next]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="166b1-113">Accept the default installation location and then click **Next**.</span></span>  
   
 5.  <span data-ttu-id="166b1-114">**[Custom Installation]** ダイアログ ボックスで、利用可能な機能をすべてオフにします。</span><span class="sxs-lookup"><span data-stu-id="166b1-114">In the **Custom Installation** dialog box, click to clear all the available features.</span></span>  
   
 6.  <span data-ttu-id="166b1-115">**[Microsoft Windows Core SDK]** 機能を展開し、 **[Tools]** 機能を展開します。</span><span class="sxs-lookup"><span data-stu-id="166b1-115">Expand the **Microsoft Windows Core SDK** feature, and then expand the **Tools** feature.</span></span>  
   
-7.  <span data-ttu-id="166b1-116">**[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="166b1-116">Choose the **Tools (Intel 64-bit)** feature, and then click **Will be installed on local hard drive**.</span></span>  
+7.  <span data-ttu-id="166b1-116">**[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="166b1-116">Choose the **Tools (Intel 64-bit)** feature, and then click **Will be installed on local hard drive**.</span></span>  
   
 8.  <span data-ttu-id="166b1-117">**次へ**をクリックし、**次へ**をクリックしてインストールを開始します。</span><span class="sxs-lookup"><span data-stu-id="166b1-117">Click **Next**, and then click **Next** again to start the installation.</span></span>  
   

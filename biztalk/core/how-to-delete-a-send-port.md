@@ -1,18 +1,18 @@
 ---
-title: "送信ポートを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send ports], deleting
 - send ports, deleting
 - deleting, send ports
 ms.assetid: aff5980e-57bf-400c-82bd-3d02e143f227
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006171"
 ---
 # <a name="how-to-delete-a-send-port"></a><span data-ttu-id="809ba-102">送信ポートを削除する方法</span><span class="sxs-lookup"><span data-stu-id="809ba-102">How to Delete a Send Port</span></span>
 <span data-ttu-id="809ba-103">このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートを BizTalk アプリケーションから削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="809ba-103">This topic describes how to use the BizTalk Server Administration console to delete a send port from a BizTalk application.</span></span> <span data-ttu-id="809ba-104">送信ポートを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも送信ポート グループが削除されます。</span><span class="sxs-lookup"><span data-stu-id="809ba-104">When you do this, the send port is also deleted from the BizTalk Management database for the group.</span></span>  

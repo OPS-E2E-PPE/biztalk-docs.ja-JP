@@ -13,7 +13,7 @@ helpviewer_keywords:
 - streaming, support in BizTalk Server
 - streaming, support in the WCF channel model
 ms.assetid: c6cbe870-6794-4bf1-90c1-db65a242e8fe
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22217914"
 ---
 # <a name="streaming-large-object-data-types-in-oracle-database-adapter"></a><span data-ttu-id="4a8a2-102">Oracle データベース アダプターにストリーミングのラージ オブジェクト データ型</span><span class="sxs-lookup"><span data-stu-id="4a8a2-102">Streaming large object data types in Oracle Database adapter</span></span>
 <span data-ttu-id="4a8a2-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle ラージ オブジェクト (LOB) データ型のストリーミングをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4a8a2-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports streaming for Oracle large object (LOB) data types.</span></span> <span data-ttu-id="4a8a2-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作が呼び出され、SOAP メッセージを交換することによって応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="4a8a2-104">With the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] operations are invoked and responses are returned by exchanging SOAP messages.</span></span> <span data-ttu-id="4a8a2-105">SOAP メッセージの本文は、XML ノードから構成されます。</span><span class="sxs-lookup"><span data-stu-id="4a8a2-105">A SOAP message body is composed of XML nodes.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 03/28/2018
   
     -   <span data-ttu-id="4a8a2-132">**XmlReader**を呼び出して**Message.GetReaderAtBodyContents()**、または</span><span class="sxs-lookup"><span data-stu-id="4a8a2-132">An **XmlReader** by calling **Message.GetReaderAtBodyContents()**, or</span></span>  
   
-    -   <span data-ttu-id="4a8a2-133">**XmlDictionaryWriter**を呼び出して**Message.WriteBodyContents(XmlDictionaryWriter)**です。</span><span class="sxs-lookup"><span data-stu-id="4a8a2-133">An **XmlDictionaryWriter** by calling **Message.WriteBodyContents(XmlDictionaryWriter)**.</span></span>  
+    -   <span data-ttu-id="4a8a2-133">**XmlDictionaryWriter**を呼び出して**Message.WriteBodyContents(XmlDictionaryWriter)** です。</span><span class="sxs-lookup"><span data-stu-id="4a8a2-133">An **XmlDictionaryWriter** by calling **Message.WriteBodyContents(XmlDictionaryWriter)**.</span></span>  
   
  <span data-ttu-id="4a8a2-134">次の表では、WCF のさまざまな組み合わせを作成して、メッセージを処理の動作方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4a8a2-134">The following table shows how WCF behaves for different combinations of creating and consuming messages.</span></span>  
   

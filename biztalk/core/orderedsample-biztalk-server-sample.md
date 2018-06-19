@@ -1,11 +1,11 @@
 ---
-title: "OrderedSample (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: OrderedSample (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, orchestrations
 - MQSeries adapters, examples
 ms.assetid: 7e59ff43-d425-40cd-9725-af13084f83d9
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974752"
 ---
 # <a name="orderedsample-biztalk-server-sample"></a><span data-ttu-id="10e66-102">OrderedSample (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="10e66-102">OrderedSample (BizTalk Server Sample)</span></span>
 <span data-ttu-id="10e66-103">OrderedSample サンプルは、オーケストレーションを使用して、順序付けられた一連のメッセージをラウンド トリップ方式で送受信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="10e66-103">The OrderedSample sample demonstrates how to use an orchestration to receive and send an ordered series of messages in a round-trip fashion.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="10e66-111">オーケストレーションでは、メッセージのバッチおよび 1 つのメッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="10e66-111">The orchestration can receive batches of messages and single messages.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="10e66-112">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="10e66-112">Where to Find This Sample</span></span>  
- <span data-ttu-id="10e66-113">*\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample</span><span class="sxs-lookup"><span data-stu-id="10e66-113">*\<Samples Path\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample</span></span>  
+ <span data-ttu-id="10e66-113">*\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample</span><span class="sxs-lookup"><span data-stu-id="10e66-113">*\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample</span></span>  
   
  <span data-ttu-id="10e66-114">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="10e66-114">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -73,11 +74,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="10e66-140">右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-140">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
-4.  <span data-ttu-id="10e66-141">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**"queue1"**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-141">In **Create Local Queue** dialog box, in **Queue Name**, type **"queue1"**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="10e66-141">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型 **"queue1"**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="10e66-141">In **Create Local Queue** dialog box, in **Queue Name**, type **"queue1"**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="10e66-142">右クリック**キュー**をクリックして**新規**、順にクリック**ローカル キュー**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-142">Right-click **Queues**, click **New**, and then click **Local Queue**.</span></span>  
   
-6.  <span data-ttu-id="10e66-143">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**queue2**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-143">In the **Create Local Queue** dialog box, in **Queue Name**, type **"queue2"**, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="10e66-143">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**queue2**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="10e66-143">In the **Create Local Queue** dialog box, in **Queue Name**, type **"queue2"**, and then click **OK**.</span></span>  
   
 ## <a name="creating-the-receive-location-and-the-mqseries-queue"></a><span data-ttu-id="10e66-144">受信場所と MQSeries キューの作成</span><span class="sxs-lookup"><span data-stu-id="10e66-144">Creating the Receive Location and the MQSeries Queue</span></span>  
  <span data-ttu-id="10e66-145">この手順では、MQSeries へのメッセージ送信および MQSeries からの関連メッセージの受信を行うための送信ポートと受信場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="10e66-145">This procedure creates the send port and receive location to send the message to and receive the correlation message from MQSeries.</span></span> <span data-ttu-id="10e66-146">MQSeries キューは、受信場所がまだ作成されていない場合に受信場所を作成したときにも作成されます。</span><span class="sxs-lookup"><span data-stu-id="10e66-146">The MQSeries queue will also be created when you create the receive location if not already created.</span></span>  
@@ -104,9 +105,9 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="10e66-157">をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-157">Click **Configure**.</span></span>  
   
-11. <span data-ttu-id="10e66-158">**MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**のポーリング間隔**ボックスに、入力**「10」**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-158">In the **MQSeries Transport Properties** dialog box, in the **Polling Interval** box, type **"10"**.</span></span>  
+11. <span data-ttu-id="10e66-158">**MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**のポーリング間隔**ボックスに、入力 **「10」** です。</span><span class="sxs-lookup"><span data-stu-id="10e66-158">In the **MQSeries Transport Properties** dialog box, in the **Polling Interval** box, type **"10"**.</span></span>  
   
-12. <span data-ttu-id="10e66-159">**キュー定義**ボックスで、クリックして、**省略記号 (...)**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="10e66-159">In the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
+12. <span data-ttu-id="10e66-159">**キュー定義**ボックスで、クリックして、**省略記号 (...)** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="10e66-159">In the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
   
 13. <span data-ttu-id="10e66-160">**キュー定義** ダイアログ ボックスで、**サーバー名**ボックスに、コンピューター名を入力します。</span><span class="sxs-lookup"><span data-stu-id="10e66-160">In the **Queue Definition** dialog box, in the **Server Name** box, type your computer name.</span></span>  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 11/28/2017
   
 15. <span data-ttu-id="10e66-162">**キュー**ボックスに、入力" **queue1**"、クリックして**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-162">In the **Queue** box, type " **queue1**", and then click **Export**.</span></span>  
   
-16. <span data-ttu-id="10e66-163">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="10e66-163">In the **Export** dialog box, click **Create Queue**, and then click **OK** or **Done** until you have exited all dialog boxes.</span></span>  
+16. <span data-ttu-id="10e66-163">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="10e66-163">In the **Export** dialog box, click **Create Queue**, and then click **OK** or **Done** until you have exited all dialog boxes.</span></span>  
   
 ## <a name="creating-the-send-port-and-mqseries-queue"></a><span data-ttu-id="10e66-164">送信ポートと MQSeries キューの作成</span><span class="sxs-lookup"><span data-stu-id="10e66-164">Creating the Send Port and MQSeries Queue</span></span>  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="10e66-170">をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-170">Click **Configure**.</span></span>  
   
-6.  <span data-ttu-id="10e66-171">**MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**ボックスで、クリックして、**省略記号 (...)**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="10e66-171">In the **MQSeries Transport Properties** dialog box, in the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
+6.  <span data-ttu-id="10e66-171">**MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**ボックスで、クリックして、**省略記号 (...)** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="10e66-171">In the **MQSeries Transport Properties** dialog box, in the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
   
 7.  <span data-ttu-id="10e66-172">**キュー定義** ダイアログ ボックスで、**サーバー名**ボックスに、コンピューター名を入力します。</span><span class="sxs-lookup"><span data-stu-id="10e66-172">In the **Queue Definition** dialog box, in the **Server Name** box, type your computer name.</span></span>  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 11/28/2017
   
 9. <span data-ttu-id="10e66-174">**キュー**ボックスに、入力" **queue2**"、クリックして**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="10e66-174">In the **Queue** box, type " **queue2**", and then click **Export**.</span></span>  
   
-10. <span data-ttu-id="10e66-175">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="10e66-175">In the **Export** dialog box, click **Create Queue**, and then click **OK** or **Done** until you have exited all dialog boxes.</span></span>  
+10. <span data-ttu-id="10e66-175">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="10e66-175">In the **Export** dialog box, click **Create Queue**, and then click **OK** or **Done** until you have exited all dialog boxes.</span></span>  
   
 #### <a name="to-enable-the-receive-location-and-start-the-send-port"></a><span data-ttu-id="10e66-176">受信場所を有効にして送信ポートを開始するには</span><span class="sxs-lookup"><span data-stu-id="10e66-176">To enable the receive location and start the send port</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "ENTSSO 管理エージェントを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ENTSSO 管理エージェントを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9c89b494-db12-4d2a-a030-6acd34489cab
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256138"
 ---
 # <a name="how-to-use-the-entsso-management-agent"></a><span data-ttu-id="2cb20-102">ENTSSO 管理エージェントを使用する方法</span><span class="sxs-lookup"><span data-stu-id="2cb20-102">How to Use the ENTSSO Management Agent</span></span>
 <span data-ttu-id="2cb20-103">エンタープライズ シングル サインオン (SSO) のこのバージョンには、Microsoft Identity Integration Server (MIIS) の管理エージェントが含まれます。この管理エージェントは、エンタープライズ SSO を MIIS のアカウント同期機能と統合します。</span><span class="sxs-lookup"><span data-stu-id="2cb20-103">This version of Enterprise Single Sign-On (SSO) contains a Management Agent (MA) for Microsoft Identity Integration Server (MIIS), which integrates Enterprise SSO with the account synchronization capabilities of MIIS.</span></span> <span data-ttu-id="2cb20-104">これにより、MIIS 管理者は、SSO データベースで SSO マッピングを管理できます。</span><span class="sxs-lookup"><span data-stu-id="2cb20-104">This enables an MIIS administrator to manage SSO mappings in the SSO Database.</span></span>  

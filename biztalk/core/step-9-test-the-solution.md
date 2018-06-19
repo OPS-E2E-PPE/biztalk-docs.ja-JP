@@ -1,14 +1,14 @@
 ---
-title: "手順 9: ソリューションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 9: ソリューションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df446ccc-add3-4dd3-b674-253dda385541
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973072"
 ---
 # <a name="step-9-test-the-solution"></a><span data-ttu-id="1c764-102">手順 9: ソリューションをテストします。</span><span class="sxs-lookup"><span data-stu-id="1c764-102">Step 9: Test the Solution</span></span>
 <span data-ttu-id="1c764-103">このトピックでは、EDI アグリーメントが展開されている HTTP エンドポイントに X12 840 販売注文メッセージを送信することで、ハイブリッド アプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="1c764-103">In this topic you test the hybrid application by sending a X12 840 sales order message to the HTTP endpoint where the EDI agreement is deployed.</span></span> <span data-ttu-id="1c764-104">販売注文メッセージのサンプルは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="1c764-104">The sample sales order message looks like the following:</span></span>  

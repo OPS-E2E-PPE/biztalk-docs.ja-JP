@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239738"
 ---
 # <a name="distributionlistcollection-node"></a><span data-ttu-id="d2f18-102">DistributionListCollection ノード</span><span class="sxs-lookup"><span data-stu-id="d2f18-102">DistributionListCollection Node</span></span>
 <span data-ttu-id="d2f18-103">バインド ファイルの DistributionListCollection ノードは、バインド ファイルと共にエクスポートされる同報リストに関する特定の情報を含む、すべての DistributionList ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="d2f18-103">The DistributionListCollection node of a binding file is the parent node for all of the DistributionList nodes which contain specific information about distribution lists that are exported with the binding file.</span></span>  

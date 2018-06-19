@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでの相関関係の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでの相関関係の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, messages
 - messages, validating
 ms.assetid: d919afa9-bada-406a-bf4b-7b46c831c6d5
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287370"
 ---
 # <a name="using-correlations-in-orchestrations"></a><span data-ttu-id="cf7d2-102">オーケストレーションでの関連付けの使用</span><span class="sxs-lookup"><span data-stu-id="cf7d2-102">Using Correlations in Orchestrations</span></span>
 <span data-ttu-id="cf7d2-103">関連付けは、受信メッセージをオーケストレーションの適切なインスタンスに一致させるプロセスです。</span><span class="sxs-lookup"><span data-stu-id="cf7d2-103">Correlation is the process of matching an incoming message with the appropriate instance of an orchestration.</span></span> <span data-ttu-id="cf7d2-104">たとえば、オーケストレーションからメッセージを送信して応答を受信したり、同じオーケストレーションに応答を返信します。</span><span class="sxs-lookup"><span data-stu-id="cf7d2-104">For example, orchestration sends out of a message and receives the response or responses back into the same orchestration.</span></span> <span data-ttu-id="cf7d2-105">以下の 3 つの関連付けメッセージ交換パターンがあります。</span><span class="sxs-lookup"><span data-stu-id="cf7d2-105">There are three correlated messages exchange patterns:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "高可用性と Microsoft Operations Framework |Microsoft ドキュメント"
-ms.custom: 
+title: 高可用性と Microsoft Operations Framework |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 54d8bae3-b241-4371-b8fc-a9cbdca6b495
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710445"
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a><span data-ttu-id="b6f77-102">高可用性と MOF</span><span class="sxs-lookup"><span data-stu-id="b6f77-102">High Availability and the Microsoft Operations Framework</span></span>
 <span data-ttu-id="b6f77-103">計画と可用性の高い Microsoft BizTalk Server ソリューションの実装を Microsoft Operations Framework (MOF) プロセス モデルを適用すると、リリース ライフ サイクルのさまざまな段階で適切なプロセスがあることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="b6f77-103">Applying the Microsoft Operations Framework (MOF) process model to the planning and implementation of a highly available Microsoft BizTalk Server solution can help you make sure that you have appropriate processes at the different stages of the release life cycle.</span></span> <span data-ttu-id="b6f77-104">高可用性に影響するすべてのライフ サイクル ステージをあらかじめ把握しておくことにより、可用性の問題に伴うインストール、メンテナンス、およびトラブルシューティングを、より円滑に行うことができます。</span><span class="sxs-lookup"><span data-stu-id="b6f77-104">By looking ahead at all the life cycle stages where high availability surfaces, you can make the installation, maintenance, and troubleshooting of availability issues in your environment easier.</span></span>  

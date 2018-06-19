@@ -1,14 +1,14 @@
 ---
-title: "マルチ サーバーの BizTalk 環境に Active Directory アクセス許可を実装するためのガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: マルチ サーバーの BizTalk 環境に Active Directory アクセス許可を実装するためのガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 315e25c4-b21d-4b5f-a1d2-1e2777b57f9e
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975976"
 ---
 # <a name="guidelines-for-implementing-active-directory-permissions-on-multi-server-biztalk-installations"></a><span data-ttu-id="9f895-102">複数サーバーの BizTalk インストールでの Active Directory アクセス許可の実装に関するガイドライン</span><span class="sxs-lookup"><span data-stu-id="9f895-102">Guidelines for Implementing Active Directory Permissions on Multi Server BizTalk Installations</span></span>
 <span data-ttu-id="9f895-103">このトピックでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストールで使用するユーザー アカウントとグループから構成される Active Directory 組織単位を作成する際のガイドラインを示します。</span><span class="sxs-lookup"><span data-stu-id="9f895-103">This topic describes guidelines for creating Active Directory Organizational Units, which consist of the user accounts and groups that you use in a Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation.</span></span>  
@@ -172,7 +173,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="9f895-237">クリックして、**ログに**を表示するボタン、**ログオンできるワークステーション** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="9f895-237">Click the **Log On To** button to display the **Logon Workstations** dialog box.</span></span>  
   
-6.  <span data-ttu-id="9f895-238">オプションをクリックして**、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="9f895-238">Click the option for **The following computers**, add each computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], and then click **OK**.</span></span>  
+6.  <span data-ttu-id="9f895-238">オプションをクリックして **、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="9f895-238">Click the option for **The following computers**, add each computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], and then click **OK**.</span></span>  
   
 7.  <span data-ttu-id="9f895-239">をクリックして、**リモート_コントロール**のタブ、**プロパティ** ダイアログ ボックスをクリックし、オプションをオフに**リモート_コントロールを有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="9f895-239">Click the **Remote Control** tab of the **Properties** dialog box, and then click to clear the option to **Enable remote control**.</span></span>  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="9f895-280">クリックして、**ログに**を表示するボタン、**ログオンできるワークステーション** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="9f895-280">Click the **Log On To** button to display the **Logon Workstations** dialog box.</span></span>  
   
-6.  <span data-ttu-id="9f895-281">オプションをクリックして**、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="9f895-281">Click the option for **The following computers**, add each computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], and then click **OK**.</span></span>  
+6.  <span data-ttu-id="9f895-281">オプションをクリックして **、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="9f895-281">Click the option for **The following computers**, add each computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], and then click **OK**.</span></span>  
   
 7.  <span data-ttu-id="9f895-282">をクリックして、**リモート_コントロール**のタブ、**プロパティ**、チェック ボックスをクリックしてダイアログ ボックスで、**リモート_コントロールを有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="9f895-282">Click the **Remote Control** tab of the **Properties** dialog box, and then click to check the option to **Enable remote control**.</span></span>  
   
@@ -231,7 +232,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="9f895-290">**グループ名**</span><span class="sxs-lookup"><span data-stu-id="9f895-290">**Group Name**</span></span>|<span data-ttu-id="9f895-291">**グループの種類**</span><span class="sxs-lookup"><span data-stu-id="9f895-291">**Group Type**</span></span>|<span data-ttu-id="9f895-292">**メンバー**</span><span class="sxs-lookup"><span data-stu-id="9f895-292">**Members**</span></span>|  
 |--------------------|--------------------|-----------------|  
 |<span data-ttu-id="9f895-293">BizTalk Application Users</span><span class="sxs-lookup"><span data-stu-id="9f895-293">BizTalk Application Users</span></span>|<span data-ttu-id="9f895-294">グローバルまたはユニバーサル</span><span class="sxs-lookup"><span data-stu-id="9f895-294">Global or Universal</span></span>|<span data-ttu-id="9f895-295">-BTServiceHost</span><span class="sxs-lookup"><span data-stu-id="9f895-295">-   BTServiceHost</span></span><br /><span data-ttu-id="9f895-296">-BTUserHostInstance</span><span class="sxs-lookup"><span data-stu-id="9f895-296">-   BTUserHostInstance</span></span>|  
-|<span data-ttu-id="9f895-297">BizTalk 開発ユーザー</span><span class="sxs-lookup"><span data-stu-id="9f895-297">BizTalk Development Users</span></span>|<span data-ttu-id="9f895-298">グローバルまたはユニバーサル</span><span class="sxs-lookup"><span data-stu-id="9f895-298">Global or Universal</span></span>|<span data-ttu-id="9f895-299">(開発ユーザーのローカル ドメイン アカウント)**注:**ベスト プラクティスとして有効にしないアップラインの環境で BizTalk 開発ユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="9f895-299">(local domain accounts of development users) **Note:**  As a best practice, do not enable the BizTalk Development Users group in up-line environments.</span></span>|  
+|<span data-ttu-id="9f895-297">BizTalk 開発ユーザー</span><span class="sxs-lookup"><span data-stu-id="9f895-297">BizTalk Development Users</span></span>|<span data-ttu-id="9f895-298">グローバルまたはユニバーサル</span><span class="sxs-lookup"><span data-stu-id="9f895-298">Global or Universal</span></span>|<span data-ttu-id="9f895-299">(開発ユーザーのローカル ドメイン アカウント)**注:** ベスト プラクティスとして有効にしないアップラインの環境で BizTalk 開発ユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="9f895-299">(local domain accounts of development users) **Note:**  As a best practice, do not enable the BizTalk Development Users group in up-line environments.</span></span>|  
 |<span data-ttu-id="9f895-300">BizTalk 展開ユーザー</span><span class="sxs-lookup"><span data-stu-id="9f895-300">BizTalk Deployment Users</span></span>|<span data-ttu-id="9f895-301">グローバルまたはユニバーサル</span><span class="sxs-lookup"><span data-stu-id="9f895-301">Global or Universal</span></span>|<span data-ttu-id="9f895-302">(展開ユーザーのローカル ドメイン アカウント)</span><span class="sxs-lookup"><span data-stu-id="9f895-302">(local domain accounts of deployment users)</span></span>|  
 |<span data-ttu-id="9f895-303">BizTalk ホスト ユーザー</span><span class="sxs-lookup"><span data-stu-id="9f895-303">BizTalk Host Users</span></span>|<span data-ttu-id="9f895-304">グローバルまたはユニバーサル</span><span class="sxs-lookup"><span data-stu-id="9f895-304">Global or Universal</span></span>|<span data-ttu-id="9f895-305">BTUserHostInstance</span><span class="sxs-lookup"><span data-stu-id="9f895-305">BTUserHostInstance</span></span>|  
 |<span data-ttu-id="9f895-306">BizTalk 分離ホスト ユーザー</span><span class="sxs-lookup"><span data-stu-id="9f895-306">BizTalk Isolated Host Users</span></span>|<span data-ttu-id="9f895-307">グローバルまたはユニバーサル</span><span class="sxs-lookup"><span data-stu-id="9f895-307">Global or Universal</span></span>|<span data-ttu-id="9f895-308">-BTServiceHostIso</span><span class="sxs-lookup"><span data-stu-id="9f895-308">-   BTServiceHostIso</span></span><br /><span data-ttu-id="9f895-309">-BTUserHostInstance</span><span class="sxs-lookup"><span data-stu-id="9f895-309">-   BTUserHostInstance</span></span>|  
@@ -247,7 +248,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="9f895-339">ドメイン グループは、グローバル グループにもユニバーサル グループにもすることができます。</span><span class="sxs-lookup"><span data-stu-id="9f895-339">Domain groups can be Global or Universal groups.</span></span>  
   
--   <span data-ttu-id="9f895-340">使用して *\<DomainName\>\\< ユーザー名\>*構成ウィザードでドメイン アカウント情報を指定する場合。</span><span class="sxs-lookup"><span data-stu-id="9f895-340">Use *\<DomainName\>\\<UserName\>* when specifying domain account information in the Configuration Wizard.</span></span>  
+-   <span data-ttu-id="9f895-340">使用して *\<DomainName\>\\< ユーザー名\>* 構成ウィザードでドメイン アカウント情報を指定する場合。</span><span class="sxs-lookup"><span data-stu-id="9f895-340">Use *\<DomainName\>\\<UserName\>* when specifying domain account information in the Configuration Wizard.</span></span>  
   
 -   <span data-ttu-id="9f895-341">グループとユーザー アカウントおよびサービス アカウントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターが属しているドメインに属する必要があります (これは構成ウィザードで確認され、他のドメインのアカウントや他のドメインのアカウントを含むグループは表示されません)。</span><span class="sxs-lookup"><span data-stu-id="9f895-341">Groups and user/service accounts must belong to the domain in which the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computer belongs (the Configuration Wizard checks this and will not display accounts or groups containing accounts from other domains).</span></span>  
   

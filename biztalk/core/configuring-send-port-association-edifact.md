@@ -1,14 +1,14 @@
 ---
-title: "送信ポートの関連付け (EDIFACT) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートの関連付け (EDIFACT) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d7faabc7-072c-408c-bbd5-f0a039be81f8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005979"
 ---
 # <a name="configuring-send-port-association-edifact"></a><span data-ttu-id="639ac-102">送信ポートの関連付けの構成 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="639ac-102">Configuring Send Port Association (EDIFACT)</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="639ac-103"> では送信ポートの関連付けを使用して、送信 EDI インターチェンジのアグリーメントを解決します。</span><span class="sxs-lookup"><span data-stu-id="639ac-103"> uses send port association to resolve an agreement for an outgoing EDI interchange.</span></span> <span data-ttu-id="639ac-104">メッセージにサブスクライブする送信ポートをアグリーメントと関連付けられた送信ポートと一致させることで、EDI インターチェンジはアグリーメントに解決されます。</span><span class="sxs-lookup"><span data-stu-id="639ac-104">An EDI interchange is resolved to an agreement by matching the send port that subscribed to the message with the send port associated with an agreement.</span></span> <span data-ttu-id="639ac-105">このトピックでは、送信ポートをアグリーメントと関連付ける方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="639ac-105">This topic provides instructions on how to associate send ports to an agreement.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 12/01/2017
 > [!IMPORTANT]
 >  <span data-ttu-id="639ac-113">オフにした場合に、このページで、送信ポートの関連付けグリッドが無効になって、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェック ボックスを作成するパーティを作成中にはアグリーメント。</span><span class="sxs-lookup"><span data-stu-id="639ac-113">The send port association grid is disabled on this page if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box while creating the party for which you are creating the agreement.</span></span>  
 >   
->  <span data-ttu-id="639ac-114">グリッドは、パーティから送信されるインターチェンジのプロパティに対応する一方向のアグリーメント タブでのみ無効になります。</span><span class="sxs-lookup"><span data-stu-id="639ac-114">The grid is disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="639ac-115">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、パーティ A に対しては、チェック ボックスをオフ、グリッドが無効な場合、**パーティ A にパーティ B]-> [**一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="639ac-115">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the grid is disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
+>  <span data-ttu-id="639ac-114">グリッドは、パーティから送信されるインターチェンジのプロパティに対応する一方向のアグリーメント タブでのみ無効になります。</span><span class="sxs-lookup"><span data-stu-id="639ac-114">The grid is disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="639ac-115">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、パーティ A に対しては、チェック ボックスをオフ、グリッドが無効な場合、**パーティ A にパーティ B]-> [** 一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="639ac-115">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the grid is disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="639ac-116">前提条件</span><span class="sxs-lookup"><span data-stu-id="639ac-116">Prerequisites</span></span>  
  <span data-ttu-id="639ac-117">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="639ac-117">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "(Azure) の手順 1: EDI プロジェクトを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '(Azure) の手順 1: EDI プロジェクトを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d353129-04f0-456b-b371-b346959f5155
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010003"
 ---
 # <a name="step-1-for-azure-create-the-edi-project"></a><span data-ttu-id="0d65e-102">手順 1 (Azure 用): EDI プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0d65e-102">Step 1 (For Azure): Create the EDI Project</span></span>
 <span data-ttu-id="0d65e-103">このセクションでは、Contoso が、[!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] の 2012 年 4 月リリース版を使用して EDI プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0d65e-103">In this section, Contoso creates an EDI project using the [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] April 2012 release.</span></span> <span data-ttu-id="0d65e-104">プロジェクトの一部として、Contoso は以下の項目を追加します。</span><span class="sxs-lookup"><span data-stu-id="0d65e-104">As part of the project, Contoso adds the following:</span></span>  

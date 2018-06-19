@@ -1,11 +1,11 @@
 ---
-title: "パターンを使用したデザイン: ビジネス プロセス管理ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: 'パターンを使用したデザイン: ビジネス プロセス管理ソリューション |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - patterns [process management solutions], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, programming patterns
 - designing, programming patterns
 ms.assetid: 0583f4a4-01db-4d5b-a1f5-1694c1ddbd30
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239666"
 ---
 # <a name="designing-with-patterns-the-business-process-management-solution"></a><span data-ttu-id="83f26-102">パターンを使用したデザイン: ビジネス プロセス管理ソリューション</span><span class="sxs-lookup"><span data-stu-id="83f26-102">Designing with Patterns: the Business Process Management Solution</span></span>
 <span data-ttu-id="83f26-103">ビジネス プロセス管理ソリューションは、BizTalk アプリケーションでプロセス マネージャを構築する方法の 1 つです。</span><span class="sxs-lookup"><span data-stu-id="83f26-103">The business process management solution shows one way to construct a process manager in a BizTalk application.</span></span> <span data-ttu-id="83f26-104">このソリューションでは、1 つのコンポーネントを使用して、注文処理に含まれる一連のステージを選択および制御します。</span><span class="sxs-lookup"><span data-stu-id="83f26-104">The solution uses a component to select and control the sequence of stages in order processing.</span></span> <span data-ttu-id="83f26-105">ソリューションが注文を取得: 新しいサービス、変更、またはサービスの取り消しがあります:、ログに記録し、処理のため渡す前に、順序を確認します。</span><span class="sxs-lookup"><span data-stu-id="83f26-105">The solution takes an order—which may be for new service, a change, or cancellation of service—logs it, and acknowledges the order before passing it on for processing.</span></span> <span data-ttu-id="83f26-106">注文処理は、注文を扱う 1 つ以上のステージで構成されます。</span><span class="sxs-lookup"><span data-stu-id="83f26-106">The processing consists of one or more stages that handle the order.</span></span> <span data-ttu-id="83f26-107">処理が終わったら、元の注文要求に最後の応答を返します。</span><span class="sxs-lookup"><span data-stu-id="83f26-107">Finally, the solution returns a final response to the original order request.</span></span>  

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-peoplesoft-enterprise/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 907c21377a6affd5a99576137a5babaa1626c135
 ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971304"
 ---
 # <a name="import-binding-files"></a><span data-ttu-id="12a42-101">バインド ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="12a42-101">Import Binding Files</span></span>
 
@@ -17,7 +18,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="12a42-106">新しいコンピュータで、応答用のフォルダが存在し、同じである。同じでない場合は、バインド ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="12a42-106">The folders for the responses must exist and be identical on the new computer—or edit the binding file.</span></span>  
   
--   <span data-ttu-id="12a42-107">PeopleSoft Enterprise システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。</span><span class="sxs-lookup"><span data-stu-id="12a42-107">PeopleSoft Enterprise system passwords, if present in the configuration, are saved as ***** in the binding file.</span></span> 
+-   <span data-ttu-id="12a42-107">PeopleSoft Enterprise システム パスワードが構成に存在する場合、パスワードが \*\*\*\*\* としてバインド ファイルに保存されている。</span><span class="sxs-lookup"><span data-stu-id="12a42-107">PeopleSoft Enterprise system passwords, if present in the configuration, are saved as \*\*\*\*\* in the binding file.</span></span> 
   
 > [!NOTE]
 >  <span data-ttu-id="12a42-108">展開すると、受信場所の構成が上書きされます。</span><span class="sxs-lookup"><span data-stu-id="12a42-108">Deployment overwrites receive location configuration.</span></span> <span data-ttu-id="12a42-109">バインド ファイルとアセンブリを展開先のコンピュータに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="12a42-109">When you deploy a binding file and assembly on a target computer, the send ports and receive locations are replaced with those in the XML binding file when they are imported.</span></span>  

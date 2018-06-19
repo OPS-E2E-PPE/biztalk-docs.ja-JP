@@ -1,14 +1,14 @@
 ---
-title: "手順 1: エコー アダプター プロジェクトを作成する WCF LOB アダプター開発ウィザードを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: エコー アダプター プロジェクトを作成する WCF LOB アダプター開発ウィザードを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 634a6498-55b0-462d-a5ca-16507b3787f5
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227330"
 ---
 # <a name="step-1-use-the-wcf-lob-adapter-development-wizard-to-create-the-echo-adapter-project"></a><span data-ttu-id="bad1b-102">手順 1: WCF LOB アダプター開発ウィザードを使用してエコー アダプター プロジェクトを作成するには</span><span class="sxs-lookup"><span data-stu-id="bad1b-102">Step 1: Use the WCF LOB Adapter Development Wizard to Create the Echo Adapter Project</span></span>
 <span data-ttu-id="bad1b-103">![手順 9 の 1](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-1of9.gif "Step_1of9")</span><span class="sxs-lookup"><span data-stu-id="bad1b-103">![Step 1 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-1of9.gif "Step_1of9")</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
     |<span data-ttu-id="bad1b-114">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bad1b-114">Use this</span></span>|<span data-ttu-id="bad1b-115">目的</span><span class="sxs-lookup"><span data-stu-id="bad1b-115">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="bad1b-116">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="bad1b-116">**Project types**</span></span>|<span data-ttu-id="bad1b-117">をクリックして**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="bad1b-117">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="bad1b-116">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="bad1b-116">**Project types**</span></span>|<span data-ttu-id="bad1b-117">をクリックして**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="bad1b-117">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="bad1b-118">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="bad1b-118">**Templates**</span></span>|<span data-ttu-id="bad1b-119">をクリックして**WCF LOB アダプター**です。</span><span class="sxs-lookup"><span data-stu-id="bad1b-119">Click **WCF LOB Adapter**.</span></span>|  
     |<span data-ttu-id="bad1b-120">**名前**</span><span class="sxs-lookup"><span data-stu-id="bad1b-120">**Name**</span></span>|<span data-ttu-id="bad1b-121">型**EchoAdapter**です。</span><span class="sxs-lookup"><span data-stu-id="bad1b-121">Type **EchoAdapter**.</span></span>|  
     |<span data-ttu-id="bad1b-122">**場所**</span><span class="sxs-lookup"><span data-stu-id="bad1b-122">**Location**</span></span>|<span data-ttu-id="bad1b-123">型**C:\Tutorials**です。</span><span class="sxs-lookup"><span data-stu-id="bad1b-123">Type **C:\Tutorials**.</span></span>|  
@@ -47,13 +48,13 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/3a349be4-1a7d-480a-8e9d-cfcba63cd14a.gif "3a349be4-1a7d-480a-8e9d-cfcba63cd14a")  
   
-3.  <span data-ttu-id="bad1b-129">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-129">Click **OK**.</span></span>  
+3.  <span data-ttu-id="bad1b-129">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-129">Click **OK**.</span></span>  
   
 4.  <span data-ttu-id="bad1b-130">**ようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="bad1b-130">On the **Welcome** page, click **Next**.</span></span> <span data-ttu-id="bad1b-131">次の図に示しています、**ようこそ**ページ。</span><span class="sxs-lookup"><span data-stu-id="bad1b-131">The following figure shows the **Welcome** page.</span></span>  
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0b8ef97f-044d-481f-8c7c-0d034fdba37d.gif "0b8ef97f-044d-481f-8c7c-0d034fdba37d")  
   
-5.  <span data-ttu-id="bad1b-132">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-132">Click **Next**.</span></span>  
+5.  <span data-ttu-id="bad1b-132">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-132">Click **Next**.</span></span>  
   
 ## <a name="enter-the-scheme-and-namespace-information"></a><span data-ttu-id="bad1b-133">スキームと名前空間の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="bad1b-133">Enter the scheme and namespace information</span></span>  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0d72dab2-7992-47e4-bc4e-3e720b1cde38.gif "0d72dab2-7992-47e4-bc4e-3e720b1cde38")  
   
-2.  <span data-ttu-id="bad1b-142">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-142">Click **Next**.</span></span>  
+2.  <span data-ttu-id="bad1b-142">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-142">Click **Next**.</span></span>  
   
 ## <a name="enter-the-data-flow-and-metadata-features"></a><span data-ttu-id="bad1b-143">データ フローとメタデータ機能を入力します。</span><span class="sxs-lookup"><span data-stu-id="bad1b-143">Enter the data flow and metadata features</span></span>  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/4fa6f67d-4703-41db-b5f3-28cf9d6a40d2.gif "4fa6f67d-4703-41db-b5f3-28cf9d6a40d2")  
   
-2.  <span data-ttu-id="bad1b-163">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-163">Click **Next**.</span></span>  
+2.  <span data-ttu-id="bad1b-163">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-163">Click **Next**.</span></span>  
   
 ## <a name="enter-the-adapter-properties"></a><span data-ttu-id="bad1b-164">アダプターのプロパティを入力してください。</span><span class="sxs-lookup"><span data-stu-id="bad1b-164">Enter the adapter properties</span></span>  
   
@@ -142,7 +143,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/84de11a5-a737-4aa5-96c8-61922e704f2b.gif "84de11a5-a737-4aa5-96c8-61922e704f2b")  
   
-6.  <span data-ttu-id="bad1b-218">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-218">Click **Next**.</span></span>  
+6.  <span data-ttu-id="bad1b-218">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-218">Click **Next**.</span></span>  
   
 ## <a name="enter-the-connection-properties"></a><span data-ttu-id="bad1b-219">接続プロパティを入力します。</span><span class="sxs-lookup"><span data-stu-id="bad1b-219">Enter the connection properties</span></span>  
   
@@ -184,7 +185,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="bad1b-266">**既定値**</span><span class="sxs-lookup"><span data-stu-id="bad1b-266">**Default value**</span></span>|<span data-ttu-id="bad1b-267">型**False**です。</span><span class="sxs-lookup"><span data-stu-id="bad1b-267">Type **False**.</span></span>|  
     |<span data-ttu-id="bad1b-268">**[追加]**</span><span class="sxs-lookup"><span data-stu-id="bad1b-268">**Add**</span></span>|<span data-ttu-id="bad1b-269">新しいアダプター プロパティを追加する をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-269">Click to add the new adapter property.</span></span>|  
   
-6.  <span data-ttu-id="bad1b-270">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-270">Click **Next**.</span></span>  
+6.  <span data-ttu-id="bad1b-270">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bad1b-270">Click **Next**.</span></span>  
   
 ## <a name="end-the-wizard"></a><span data-ttu-id="bad1b-271">ウィザードを終了します。</span><span class="sxs-lookup"><span data-stu-id="bad1b-271">End the wizard</span></span>  
   

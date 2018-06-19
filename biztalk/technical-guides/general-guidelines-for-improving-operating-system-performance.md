@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc9ca38e-1feb-4f34-a64b-d04566e85db9
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976576"
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a><span data-ttu-id="cfd92-102">オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン</span><span class="sxs-lookup"><span data-stu-id="cfd92-102">General Guidelines for Improving Operating System Performance</span></span>
 <span data-ttu-id="cfd92-103">オペレーティング システムのパフォーマンスを向上させるために、次の一般的なガイドラインに従ってください。</span><span class="sxs-lookup"><span data-stu-id="cfd92-103">The following general guidelines should be followed to improve operating system performance:</span></span>  
@@ -116,7 +117,7 @@ ms.lasthandoff: 03/28/2018
   
 15. <span data-ttu-id="cfd92-170">右側のペインで、ダブルクリック**Services**です。</span><span class="sxs-lookup"><span data-stu-id="cfd92-170">In the right-hand pane, double-click **Services**.</span></span>  
   
-16. <span data-ttu-id="cfd92-171">右側のペインで**サービス (ローカル)**を右クリックして**COM + システム アプリケーション**、 をクリックして**再起動**サービスが再起動するまで待機します。</span><span class="sxs-lookup"><span data-stu-id="cfd92-171">In the right-hand pane of **Services (Local)**, right-click **COM+ System Application**, click **Restart**, and wait for the service to restart.</span></span>  
+16. <span data-ttu-id="cfd92-171">右側のペインで**サービス (ローカル)** を右クリックして**COM + システム アプリケーション**、 をクリックして**再起動**サービスが再起動するまで待機します。</span><span class="sxs-lookup"><span data-stu-id="cfd92-171">In the right-hand pane of **Services (Local)**, right-click **COM+ System Application**, click **Restart**, and wait for the service to restart.</span></span>  
   
 17. <span data-ttu-id="cfd92-172">**[分散トランザクション コーディネーター]** サービスを右クリックして再起動します。</span><span class="sxs-lookup"><span data-stu-id="cfd92-172">Right-click and restart the **Distributed Transaction Coordinator** service.</span></span>  
   
@@ -251,7 +252,7 @@ ms.lasthandoff: 03/28/2018
   
     2.  <span data-ttu-id="cfd92-293">クリックして、 **の依存関係**  タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="cfd92-293">Click the **Dependencies** tab.</span></span>  
   
-    3.  <span data-ttu-id="cfd92-294">**このサービスは、次のシステム コンポーネントによって異なります。**一覧で、このサービスに依存するサービスに注意してください。</span><span class="sxs-lookup"><span data-stu-id="cfd92-294">In the **This service depends on the following system components** list, note the services this service depends on.</span></span>  
+    3.  <span data-ttu-id="cfd92-294">**このサービスは、次のシステム コンポーネントによって異なります。** 一覧で、このサービスに依存するサービスに注意してください。</span><span class="sxs-lookup"><span data-stu-id="cfd92-294">In the **This service depends on the following system components** list, note the services this service depends on.</span></span>  
   
     4.  <span data-ttu-id="cfd92-295">**、次のシステム コンポーネントがこのサービスに依存**一覧で、サービスをクリックして、このサービスなしで開始できません**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cfd92-295">In the **The following system components depend on this service** list, note the services that cannot start without this service, and then click **OK**.</span></span>  
   
@@ -263,7 +264,7 @@ ms.lasthandoff: 03/28/2018
   
     3.  <span data-ttu-id="cfd92-300">直ちにサービスを停止する場合は、クリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="cfd92-300">If you want to stop the service immediately, click **Stop**.</span></span>  
   
-         <span data-ttu-id="cfd92-301">場合、**その他のサービスの停止**注されるその他の依存サービスは停止しても、クリックして、ダイアログ ボックスが表示されます**[はい]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cfd92-301">If the **Stop Other Services** dialog box appears, note the other dependent services that will also stop, and then click **Yes**, and then click **OK**.</span></span>  
+         <span data-ttu-id="cfd92-301">場合、**その他のサービスの停止**注されるその他の依存サービスは停止しても、クリックして、ダイアログ ボックスが表示されます **[はい]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cfd92-301">If the **Stop Other Services** dialog box appears, note the other dependent services that will also stop, and then click **Yes**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="cfd92-302">手順 4 を他の不要なサービスを無効にする.</span><span class="sxs-lookup"><span data-stu-id="cfd92-302">Repeat step 4 to disable the other nonessential services.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "成果物の更新 |Microsoft ドキュメント"
-ms.custom: 
+title: 成果物の更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 40feab57-4286-4bdf-8f52-25d02b3fa60c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302578"
 ---
 # <a name="updating-an-artifact"></a><span data-ttu-id="e55dd-102">成果物の更新</span><span class="sxs-lookup"><span data-stu-id="e55dd-102">Updating an Artifact</span></span>
 <span data-ttu-id="e55dd-103">2 つ以上の BizTalk アプリケーション内のアイテム間の依存関係には、アプリケーションの展開と保守に大きな影響を及ぼすことができます。</span><span class="sxs-lookup"><span data-stu-id="e55dd-103">Dependencies between artifacts in two or more BizTalk applications can have a significant effect on application deployment and maintenance.</span></span> <span data-ttu-id="e55dd-104">その成果物を正常に機能するために使用する必要があるときに、成果物は別に依存して、たとえば、オーケストレーションが必要なメッセージを正しく送信するために特定のパイプラインを使用します。</span><span class="sxs-lookup"><span data-stu-id="e55dd-104">An artifact is dependent on another when it needs to use that artifact in order to function properly, for example an orchestration that needs to use a specific pipeline in order to transmit messages correctly.</span></span>  

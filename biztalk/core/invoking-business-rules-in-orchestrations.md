@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでビジネス ルールの呼び出し |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでビジネス ルールの呼び出し |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Call Rules shape [Orchestration Designer], business rules
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - policies, Call Rules shape [Orchestration Designer]
 - orchestrations, business rules
 ms.assetid: ac3a3277-e9ea-4f40-9326-c63076c6b90e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261826"
 ---
 # <a name="invoking-business-rules-in-orchestrations"></a><span data-ttu-id="7f007-102">オーケストレーションでビジネス ルールの呼び出し</span><span class="sxs-lookup"><span data-stu-id="7f007-102">Invoking Business Rules in Orchestrations</span></span>
 <span data-ttu-id="7f007-103">呼び出すことができます、ポリシー (ルール セット) を使用してオーケストレーションから、**ルールの呼び出し**図形です。</span><span class="sxs-lookup"><span data-stu-id="7f007-103">You can invoke a policy (or rule set) from an orchestration by using the **Call Rules** shape.</span></span> <span data-ttu-id="7f007-104">ポリシーは、そのポリシー内のルールに基づいて動作するルール エンジンを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="7f007-104">The policy invokes the rule engine, which operates on the rules in the policy.</span></span>  

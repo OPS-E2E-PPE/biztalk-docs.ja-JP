@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: fe877aa8c7b76a638df93a073eed0cf26f71a609
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013281"
 ---
 # <a name="how-to-create-send-ports-for-jd-edwards-enterpriseone"></a><span data-ttu-id="dc775-101">JD Edwards EnterpriseOne 用送信ポートの作成方法</span><span class="sxs-lookup"><span data-stu-id="dc775-101">How to Create Send Ports for JD Edwards EnterpriseOne</span></span>
 <span data-ttu-id="dc775-102">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc775-102">Using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], create a send port.</span></span>  
@@ -27,5 +28,5 @@ ms.lasthandoff: 11/07/2017
   
     -   <span data-ttu-id="dc775-110">**送信ハンドラー**ドロップダウン リストで、送信ハンドラーのアドレスを選択します。</span><span class="sxs-lookup"><span data-stu-id="dc775-110">From the **Send handler** drop-down list, select the send handler address.</span></span>  
   
-5.  <span data-ttu-id="dc775-111">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc775-111">Click **OK**.</span></span>  
+5.  <span data-ttu-id="dc775-111">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc775-111">Click **OK**.</span></span>  
   

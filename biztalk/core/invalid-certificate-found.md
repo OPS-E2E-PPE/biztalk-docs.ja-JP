@@ -1,14 +1,14 @@
 ---
-title: "無効な証明書が見つかりました |Microsoft ドキュメント"
-ms.custom: 
+title: 無効な証明書が見つかりました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1b3a9ae8-a9d7-4025-bacd-443e136ff980
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257850"
 ---
 # <a name="invalid-certificate-found"></a><span data-ttu-id="b5342-102">無効な証明書が見つかりました</span><span class="sxs-lookup"><span data-stu-id="b5342-102">Invalid certificate found</span></span>
 ## <a name="details"></a><span data-ttu-id="b5342-103">詳細</span><span class="sxs-lookup"><span data-stu-id="b5342-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="b5342-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="b5342-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="b5342-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="b5342-126">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5342-126">In the port **Type** list, select the correct port.</span></span>  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="b5342-128">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="b5342-128">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="b5342-129">**[編集]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-129">Click **Edit**.</span></span>  
+9. <span data-ttu-id="b5342-129">**[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-129">Click **Edit**.</span></span>  
   
 10. <span data-ttu-id="b5342-130">**Id エディター**  ダイアログ ボックスでの検索条件の確認、**証明書参照**セクションが有効な証明書を示すために正しく構成されてです。</span><span class="sxs-lookup"><span data-stu-id="b5342-130">In the **Identity Editor** dialog box, make sure the search criteria in the **Certificate Reference** section is configured properly to indicate valid certificates.</span></span>  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="b5342-136">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-136">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="b5342-137">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-137">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="b5342-137">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5342-137">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="b5342-138">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5342-138">In the port **Type** list, select the correct port.</span></span>  
   

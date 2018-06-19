@@ -1,11 +1,11 @@
 ---
-title: "エラー処理 |Microsoft ドキュメント"
-ms.custom: 
+title: エラー処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Messaging Engine, errors
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - errors, messages
 - messages, errors
 ms.assetid: ebc889cc-eeac-483c-baf3-407a218f6d14
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242618"
 ---
 # <a name="error-handling"></a><span data-ttu-id="3f57f-102">エラー処理</span><span class="sxs-lookup"><span data-stu-id="3f57f-102">Error Handling</span></span>
 <span data-ttu-id="3f57f-103">メッセージが BizTalk Server のメッセージング サブシステムを通過するときの経路には、処理および転送の拠点がいくつか存在します。</span><span class="sxs-lookup"><span data-stu-id="3f57f-103">The pathway that a message follows through the BizTalk Server messaging subsystem encompasses several points of processing and transfer.</span></span> <span data-ttu-id="3f57f-104">この経路上のいずれかの場所で障害が発生することも考えられます。障害は、BizTalk Server インフラストラクチャ内だけでなく、アプリケーション側で実装された要素 (カスタム パイプライン コンポーネントやオーケストレーションなど) 内で発生することもあります。</span><span class="sxs-lookup"><span data-stu-id="3f57f-104">At each point along this pathway, failures can occur in both BizTalk Server infrastructure and application-provided elements such as custom pipeline components and orchestrations.</span></span>  

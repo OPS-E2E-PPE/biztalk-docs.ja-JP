@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: プログラムによって、ポリシーの実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: プログラムによって、ポリシーの実行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6398e7af-2ed1-4596-879c-3b7d000b8de2
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290378"
 ---
 # <a name="walkthrough-executing-the-policy-programmatically"></a><span data-ttu-id="872b2-102">チュートリアル: プログラムによって、ポリシーの実行</span><span class="sxs-lookup"><span data-stu-id="872b2-102">Walkthrough: Executing the Policy Programmatically</span></span>
 <span data-ttu-id="872b2-103">このチュートリアルで作成したポリシーを呼び出すための手順では、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのコンソール アプリケーションからプログラムでします。</span><span class="sxs-lookup"><span data-stu-id="872b2-103">This walkthrough provides step-by-step procedures for invoking the policy you created in the [Walkthrough: Creating a Simple Business Policy](../core/walkthrough-creating-a-simple-business-policy.md) walkthrough from a console application programmatically.</span></span>  
@@ -42,18 +43,18 @@ ms.lasthandoff: 09/20/2017
   
     |<span data-ttu-id="872b2-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="872b2-118">Use this</span></span>|<span data-ttu-id="872b2-119">目的</span><span class="sxs-lookup"><span data-stu-id="872b2-119">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="872b2-120">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="872b2-120">**Project types**</span></span>|<span data-ttu-id="872b2-121">をクリックして**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="872b2-121">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="872b2-120">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="872b2-120">**Project types**</span></span>|<span data-ttu-id="872b2-121">をクリックして**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="872b2-121">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="872b2-122">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="872b2-122">**Templates**</span></span>|<span data-ttu-id="872b2-123">をクリックして**コンソール アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="872b2-123">Click **Console Application**.</span></span>|  
     |<span data-ttu-id="872b2-124">**名前**</span><span class="sxs-lookup"><span data-stu-id="872b2-124">**Name**</span></span>|<span data-ttu-id="872b2-125">型**ConsoleClient**です。</span><span class="sxs-lookup"><span data-stu-id="872b2-125">Type **ConsoleClient**.</span></span>|  
     |<span data-ttu-id="872b2-126">**場所**</span><span class="sxs-lookup"><span data-stu-id="872b2-126">**Location**</span></span>|<span data-ttu-id="872b2-127">プロジェクト ファイルを保存するフォルダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="872b2-127">Specify a folder where you want to save the project files.</span></span>|  
     |<span data-ttu-id="872b2-128">**[ソリューション名]**</span><span class="sxs-lookup"><span data-stu-id="872b2-128">**Solution Name**</span></span>|<span data-ttu-id="872b2-129">型**ConsoleClientSol**です。</span><span class="sxs-lookup"><span data-stu-id="872b2-129">Type **ConsoleClientSol**.</span></span>|  
     |<span data-ttu-id="872b2-130">**ソリューションのディレクトリを作成します。**</span><span class="sxs-lookup"><span data-stu-id="872b2-130">**Create directory for solution**</span></span>|<span data-ttu-id="872b2-131">ソリューション ファイルのディレクトリを作成するには、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="872b2-131">Select this check box to create a directory for the solution files.</span></span>|  
   
-4.  <span data-ttu-id="872b2-132">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="872b2-132">Click **OK**.</span></span> <span data-ttu-id="872b2-133">**ConsoleClient**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="872b2-133">The **ConsoleClient** project should appear in Solution Explorer.</span></span> <span data-ttu-id="872b2-134">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="872b2-134">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
+4.  <span data-ttu-id="872b2-132">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="872b2-132">Click **OK**.</span></span> <span data-ttu-id="872b2-133">**ConsoleClient**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="872b2-133">The **ConsoleClient** project should appear in Solution Explorer.</span></span> <span data-ttu-id="872b2-134">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="872b2-134">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
   
 5.  <span data-ttu-id="872b2-135">ソリューション エクスプ ローラーで右クリック**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="872b2-135">In Solution Explorer, right-click **References**, and then click **Add Reference**.</span></span>  
   
-6.  <span data-ttu-id="872b2-136">をクリックして**参照**を参照、 **\program files \microsoft BizTalk**、順にダブルクリック**[microsoft.ruleengine.dll]**です。</span><span class="sxs-lookup"><span data-stu-id="872b2-136">Click **Browse**, browse to the **\Program Files\Common Files\Microsoft BizTalk**, and then double-click **Microsoft.RuleEngine.dll**.</span></span>  
+6.  <span data-ttu-id="872b2-136">をクリックして**参照**を参照、 **\program files \microsoft BizTalk**、順にダブルクリック **[microsoft.ruleengine.dll]** です。</span><span class="sxs-lookup"><span data-stu-id="872b2-136">Click **Browse**, browse to the **\Program Files\Common Files\Microsoft BizTalk**, and then double-click **Microsoft.RuleEngine.dll**.</span></span>  
   
 7.  <span data-ttu-id="872b2-137">先頭に次の行を追加、 **Program.cs**後、既存のファイル`using`ステートメント。</span><span class="sxs-lookup"><span data-stu-id="872b2-137">Add the following lines to the top of the **Program.cs** file after the existing `using` statements:</span></span>  
   
@@ -200,7 +201,7 @@ ms.lasthandoff: 09/20/2017
     }  
     ```  
   
--   <span data-ttu-id="872b2-162">追加することがあります、 **Console.ReadLine()**ステートメントの最後に、 **Main**アプリケーションが待機すると、アプリケーションを終了するように機能します。</span><span class="sxs-lookup"><span data-stu-id="872b2-162">You may want to add a **Console.ReadLine()** statement at the end of the **Main** function so that the application waits for you to terminate the application.</span></span>  
+-   <span data-ttu-id="872b2-162">追加することがあります、 **Console.ReadLine()** ステートメントの最後に、 **Main**アプリケーションが待機すると、アプリケーションを終了するように機能します。</span><span class="sxs-lookup"><span data-stu-id="872b2-162">You may want to add a **Console.ReadLine()** statement at the end of the **Main** function so that the application waits for you to terminate the application.</span></span>  
   
 -   <span data-ttu-id="872b2-163">このチュートリアルでは、クライアントが ProcessPurchaseOrder ポリシーに送信するファクトは 1 つだけです。</span><span class="sxs-lookup"><span data-stu-id="872b2-163">In this walkthrough, the client submits only one fact to the ProcessPurchaseOrder policy.</span></span> <span data-ttu-id="872b2-164">ファクトの配列を作成し、オーバー ロードを使用する必要がある場合は、クライアントは、1 つ以上のファクトをポリシーを送信する必要があります、 **Execute**メソッド パラメーターとして配列を受け取る。</span><span class="sxs-lookup"><span data-stu-id="872b2-164">If the client needs to submit more than one fact to a policy, it needs to create an array of facts and use the overloaded **Execute** method that takes an array as a parameter.</span></span> <span data-ttu-id="872b2-165">次のサンプル コードは、その方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="872b2-165">The following sample code shows how to do that:</span></span>  
   

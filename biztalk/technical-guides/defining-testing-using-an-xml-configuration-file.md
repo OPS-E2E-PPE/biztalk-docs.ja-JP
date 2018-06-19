@@ -1,14 +1,14 @@
 ---
-title: "XML 構成ファイルを使用したテストの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: XML 構成ファイルを使用したテストの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8339bcf-26d7-4a43-b68e-c4220a7a851d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976336"
 ---
 # <a name="defining-testing-using-an-xml-configuration-file"></a><span data-ttu-id="6464a-102">XML 構成ファイルを使用したテストを定義します。</span><span class="sxs-lookup"><span data-stu-id="6464a-102">Defining Testing Using an XML Configuration File</span></span>
 <span data-ttu-id="6464a-103">BizUnit は、テストを定義する 2 つの方法を提供しています: XML 構成ファイルを使用して、Excel ワークシートを使用しています。</span><span class="sxs-lookup"><span data-stu-id="6464a-103">BizUnit offers two ways to define tests: via an XML configuration file and via an Excel worksheet.</span></span> <span data-ttu-id="6464a-104">このトピックのねらいでテストを定義する XML 構成ファイルの使用ただし、する必要がありますも見て BizUnit SDK ので、Excel を使用するための BizUnit テスト_ケースを定義する方法の興味深い例を示します。</span><span class="sxs-lookup"><span data-stu-id="6464a-104">This topic focuses on using an XML configuration file to define tests; however, you should also look at the BizUnit SDK, since it provides an interesting example of how to define BizUnit test cases using Excel.</span></span> <span data-ttu-id="6464a-105">さらに、BizUnit テスト ケースの迅速に作成できる GUI を提供するための BizUnit デザイナー ツールを調査することもできます。</span><span class="sxs-lookup"><span data-stu-id="6464a-105">In addition, you may wish to investigate the BizUnit Designer tool, which provides a GUI that allows for rapid creation of BizUnit test cases.</span></span> <span data-ttu-id="6464a-106">このトピックでは、非常に単純なシナリオを使用して XML 構成を使用してテスト_ケースを定義する方法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="6464a-106">This topic provides an overview of how to define test cases using XML configuration using a very simplified scenario.</span></span>  

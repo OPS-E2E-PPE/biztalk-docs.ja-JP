@@ -1,11 +1,11 @@
 ---
-title: "手順 7: ビルドと DoubleAction SDK サンプルの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: ビルドと DoubleAction SDK サンプルの展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, building solutions
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - building solutions
 - double action tutorial, deploying solutions
 ms.assetid: f67f8aee-1004-48ee-a6fd-881097382888
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005379"
 ---
 # <a name="step-7-building-and-deploying-the-doubleaction-sdk-sample"></a><span data-ttu-id="c5d7a-102">手順 7: ビルドと DoubleAction SDK サンプルの展開</span><span class="sxs-lookup"><span data-stu-id="c5d7a-102">Step 7: Building and Deploying the DoubleAction SDK Sample</span></span>
 <span data-ttu-id="c5d7a-103">DoubleAction.odx サンプルでは、オーケストレーションを実装し、ダブル アクションの PIP (Partner Interface Process) である 0C2、0C4、3A2、および 3A40 に対する応答を自動的に生成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-103">The DoubleAction.odx sample shows how to implement an orchestration to generate responses automatically for the double-action Partner Interface Processes (PIPs) 0C2, 0C4, 3A2, and 3A4.</span></span> <span data-ttu-id="c5d7a-104">このサンプル プロジェクトを拡張し、さらに多くのダブルアクション PIP をサポートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-104">You can extend this sample project to support additional double-action PIPs.</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 12/01/2017
         > [!NOTE]
         >  <span data-ttu-id="c5d7a-123">DoubleAction.odx にバインドされていることを確認**MessagesToLOB_Receive_Port**オーケストレーションが開始されているとします。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-123">Verify that DoubleAction.odx has been bound to **MessagesToLOB_Receive_Port**, and that the orchestration has been started.</span></span>  
   
-3.  <span data-ttu-id="c5d7a-124">BizTalk Server 管理コンソールで、展開、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション 1**ノード。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-124">In BizTalk Server Administration Console, expand the **BizTalk Group**, **Applications**, and **BizTalk Application 1** nodes.</span></span> <span data-ttu-id="c5d7a-125">クリックして、**オーケストレーション**ノード。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-125">Click the **Orchestrations** node.</span></span> <span data-ttu-id="c5d7a-126">右クリックし、 **DoubleAction**オーケストレーション、およびクリック**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-126">Right-click the **DoubleAction** orchestration, and then click **Properties**.</span></span> <span data-ttu-id="c5d7a-127">[プロパティ] ダイアログ ボックス、**バインド**ノードを展開し、セット、**ホスト**に**BizTalkServerApplication**設定と、**受信ポート**に**[messagetolob_receiveport]**です。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-127">In the Properties dialog box, click the **Bindings** node, and then set the **Host** to **BizTalkServerApplication** and set the **Receive Port** to **MessageToLOB_ReceivePort**.</span></span> <span data-ttu-id="c5d7a-128">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-128">Click **OK**.</span></span> <span data-ttu-id="c5d7a-129">右クリックし、 **DoubleAction**オーケストレーション、およびクリック**開始**です。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-129">Right-click the **DoubleAction** orchestration, and then click **Start**.</span></span>  
+3.  <span data-ttu-id="c5d7a-124">BizTalk Server 管理コンソールで、展開、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション 1**ノード。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-124">In BizTalk Server Administration Console, expand the **BizTalk Group**, **Applications**, and **BizTalk Application 1** nodes.</span></span> <span data-ttu-id="c5d7a-125">クリックして、**オーケストレーション**ノード。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-125">Click the **Orchestrations** node.</span></span> <span data-ttu-id="c5d7a-126">右クリックし、 **DoubleAction**オーケストレーション、およびクリック**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-126">Right-click the **DoubleAction** orchestration, and then click **Properties**.</span></span> <span data-ttu-id="c5d7a-127">[プロパティ] ダイアログ ボックス、**バインド**ノードを展開し、セット、**ホスト**に**BizTalkServerApplication**設定と、**受信ポート**に **[messagetolob_receiveport]** です。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-127">In the Properties dialog box, click the **Bindings** node, and then set the **Host** to **BizTalkServerApplication** and set the **Receive Port** to **MessageToLOB_ReceivePort**.</span></span> <span data-ttu-id="c5d7a-128">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-128">Click **OK**.</span></span> <span data-ttu-id="c5d7a-129">右クリックし、 **DoubleAction**オーケストレーション、およびクリック**開始**です。</span><span class="sxs-lookup"><span data-stu-id="c5d7a-129">Right-click the **DoubleAction** orchestration, and then click **Start**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c5d7a-130">参照</span><span class="sxs-lookup"><span data-stu-id="c5d7a-130">See Also</span></span>  
  [<span data-ttu-id="c5d7a-131">Fabrikam ソリューションの作成と構成</span><span class="sxs-lookup"><span data-stu-id="c5d7a-131">Creating and Configuring the Fabrikam Solution</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-the-fabrikam-solution.md)

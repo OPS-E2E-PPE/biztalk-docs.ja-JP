@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジの集計レポート |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジの集計レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4619e8d0-9e9e-4d19-a67a-ac1058a0579b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257882"
 ---
 # <a name="interchange-aggregation-report"></a><span data-ttu-id="2530a-102">インターチェンジの集計レポート</span><span class="sxs-lookup"><span data-stu-id="2530a-102">Interchange Aggregation Report</span></span>
 <span data-ttu-id="2530a-103">このレポートでは、同じ EDI エンコードの種類、送信者パーティ、受信者パーティ、および方向を共有する EDI インターチェンジの数を示すレコードが 1 つ提供されます。</span><span class="sxs-lookup"><span data-stu-id="2530a-103">This report provides one record that indicates the number of EDI interchanges that share the same EDI encoding type, sender party, receiver party, and direction.</span></span> <span data-ttu-id="2530a-104">このレポートには、個別のインターチェンジの詳細情報は含まれません。</span><span class="sxs-lookup"><span data-stu-id="2530a-104">This report does not provide details about the individual interchanges.</span></span>  

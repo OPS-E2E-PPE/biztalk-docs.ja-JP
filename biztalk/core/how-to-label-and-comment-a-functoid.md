@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970816"
 ---
 # <a name="how-to-label-and-comment-a-functoid"></a><span data-ttu-id="1f518-102">Functoid にラベル付けする方法とコメントを追加する方法</span><span class="sxs-lookup"><span data-stu-id="1f518-102">How to Label and Comment a Functoid</span></span>
 <span data-ttu-id="1f518-103">ラベルとコメントは、マップの Functoid またはリンクの目的を文書化するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="1f518-103">Labels and comments are helpful to document the purpose of a functoid or a link in a map.</span></span> <span data-ttu-id="1f518-104">使用することができます、**ラベル**functoid の名前を指定するプロパティです。</span><span class="sxs-lookup"><span data-stu-id="1f518-104">You can use the **Label** property to provide a name for a functoid.</span></span> <span data-ttu-id="1f518-105">**コメント**プロパティでは、によって実行される操作についての関連する通常、functoid に関する追加情報を提供することができます。</span><span class="sxs-lookup"><span data-stu-id="1f518-105">The **Comments** property enables you to provide additional information about the functoid, typically relevant information about the operation being performed by it.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="1f518-121">次の情報を入力し、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1f518-121">Enter the following information, and then click **OK**.</span></span>  
   
-    -   <span data-ttu-id="1f518-122">**ラベル –**新しい名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="1f518-122">**Label –** Enter the new name.</span></span>  
+    -   <span data-ttu-id="1f518-122">**ラベル –** 新しい名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="1f518-122">**Label –** Enter the new name.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="1f518-123">使用できる文字の最大数は 256 です。</span><span class="sxs-lookup"><span data-stu-id="1f518-123">The maximum number of characters allowed is 256.</span></span> <span data-ttu-id="1f518-124">数は 256 文字の文字列が指定されている場合は、最初の 256 文字が受け入れられ、残りの部分は破棄されます。</span><span class="sxs-lookup"><span data-stu-id="1f518-124">If a string with more than 256 characters is specified, the first 256 characters are accepted and the rest are discarded.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="1f518-130">**プロパティ**ウィンドウが、次の情報を入力し、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1f518-130">In the **Properties** window, enter the following information, and then click **OK**.</span></span>  
   
-    -   <span data-ttu-id="1f518-131">**ラベル –**新しい名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="1f518-131">**Label –** Enter the new name.</span></span>  
+    -   <span data-ttu-id="1f518-131">**ラベル –** 新しい名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="1f518-131">**Label –** Enter the new name.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="1f518-132">使用できる文字の最大数は 256 です。</span><span class="sxs-lookup"><span data-stu-id="1f518-132">The maximum number of characters allowed is 256.</span></span> <span data-ttu-id="1f518-133">数は 256 文字の文字列が指定されている場合は、最初の 256 文字が受け入れられ、残りの部分は破棄されます。</span><span class="sxs-lookup"><span data-stu-id="1f518-133">If a string with more than 256 characters is specified, the first 256 characters are accepted and the rest are discarded.</span></span>  

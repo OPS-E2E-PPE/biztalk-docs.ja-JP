@@ -14,7 +14,7 @@ helpviewer_keywords:
 - WCF services, publishing
 - best practices, WCF adapters
 ms.assetid: 797b7ffd-534c-4f09-9738-fb17b208bc96
-caps.latest.revision: ''
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972592"
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a><span data-ttu-id="3a063-102">WCF 受信アダプターで WCF サービスを公開する場合の考慮事項</span><span class="sxs-lookup"><span data-stu-id="3a063-102">Considerations When Publishing WCF Services with the WCF Receive Adapters</span></span>
 <span data-ttu-id="3a063-103">このトピックでは、WCF 受信アダプターで WCF サービスを公開する際に考慮する必要がある情報を示します。</span><span class="sxs-lookup"><span data-stu-id="3a063-103">This topic provides information that you should take into consideration when publishing WCF services with the WCF receive adapters.</span></span>  <span data-ttu-id="3a063-104">WCF アダプターを使用してサービスを公開すると、サービスを標準の WCF サービスのように WCF クライアントから呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="3a063-104">Publishing a service using a WCF adapter allows it to be called by a WCF client as if it were a typical WCF service.</span></span>  

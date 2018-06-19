@@ -1,17 +1,17 @@
 ---
-title: "SWIFT アセンブラーの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT アセンブラーの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assembler, configuring
 - configuring, assembler
 ms.assetid: 76944226-e29b-4a7f-a4ab-3c3d5f13ec51
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004611"
 ---
 # <a name="configuring-the-swift-assembler"></a><span data-ttu-id="c2a80-102">SWIFT アセンブラーを構成します。</span><span class="sxs-lookup"><span data-stu-id="c2a80-102">Configuring the SWIFT Assembler</span></span>
 <span data-ttu-id="c2a80-103">を呼び出すときは、SWIFT アセンブラーは、次のタスクを実行、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]送信パイプライン。</span><span class="sxs-lookup"><span data-stu-id="c2a80-103">The SWIFT assembler performs the following tasks when you invoke it in a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] send pipeline:</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "インスタンス データの照会 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス データの照会 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, instance data
 - queries [BAM], instance data
 ms.assetid: ae4a8854-d5c2-4b36-a0ef-3f74e138306e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971832"
 ---
 # <a name="querying-instance-data"></a><span data-ttu-id="ebb08-102">インスタンス データへのクエリ</span><span class="sxs-lookup"><span data-stu-id="ebb08-102">Querying Instance Data</span></span>
 <span data-ttu-id="ebb08-103">BAM プライマリ インポート データベースに動的に作成される SQL ビューのクエリには、個別のアクティビティ インスタンスについての情報を使用できます。</span><span class="sxs-lookup"><span data-stu-id="ebb08-103">The data about individual activity instances is available for queries in a dynamically created SQL View in the BAM Primary Import Database.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "Siebel を Visual Studio を使用してデータをインポート |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel を Visual Studio を使用してデータをインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33701361-eca2-4795-a5e0-78162a98e9ba
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450507"
 ---
 # <a name="import-siebel-data-using-visual-studio"></a><span data-ttu-id="8d54d-102">Siebel を Visual Studio を使用してデータをインポートします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-102">Import Siebel Data Using Visual Studio</span></span>
 <span data-ttu-id="8d54d-103">このセクションでは、Microsoft の使用方法に関する情報を提供[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Siebel システムから SQL Server データベースにデータをインポートします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-103">This section provides information about how to use Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to import data from a Siebel system into a SQL Server database.</span></span> <span data-ttu-id="8d54d-104">また、作成し、このデータをインポートする SSIS パッケージを実行する方法の手順についても提供します。</span><span class="sxs-lookup"><span data-stu-id="8d54d-104">It also provides instructions on how to create and execute an SSIS package to import this data.</span></span>  
@@ -36,9 +37,9 @@ ms.lasthandoff: 10/17/2017
   
 3.  <span data-ttu-id="8d54d-113">[ようこそ] 画面で、情報を参照し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-113">Read the information on the Welcome screen, and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="8d54d-114">**データ ソースを選択** ダイアログ ボックスから、**データ ソース**ドロップ ダウン リスト**.NET Framework Data Provider 用 Siebel eBusiness Applications**です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-114">In the **Choose a Data Source** dialog box, from the **Data Source** drop-down list **.NET Framework Data Provider for Siebel eBusiness Applications**.</span></span> <span data-ttu-id="8d54d-115">さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。</span><span class="sxs-lookup"><span data-stu-id="8d54d-115">Specify values for the different connection properties for the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] connection string.</span></span> <span data-ttu-id="8d54d-116">接続文字列プロパティの詳細については、次を参照してください。 [Siebel 接続文字列のデータ プロバイダーのプロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-116">For more information about the connection string properties, see [Data provider properties for the Siebel connection string](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md).</span></span>  
+4.  <span data-ttu-id="8d54d-114">**データ ソースを選択** ダイアログ ボックスから、**データ ソース**ドロップ ダウン リスト **.NET Framework Data Provider 用 Siebel eBusiness Applications**です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-114">In the **Choose a Data Source** dialog box, from the **Data Source** drop-down list **.NET Framework Data Provider for Siebel eBusiness Applications**.</span></span> <span data-ttu-id="8d54d-115">さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。</span><span class="sxs-lookup"><span data-stu-id="8d54d-115">Specify values for the different connection properties for the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] connection string.</span></span> <span data-ttu-id="8d54d-116">接続文字列プロパティの詳細については、次を参照してください。 [Siebel 接続文字列のデータ プロバイダーのプロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-116">For more information about the connection string properties, see [Data provider properties for the Siebel connection string](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md).</span></span>  
   
-     <span data-ttu-id="8d54d-117">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-117">Click **Next**.</span></span>  
+     <span data-ttu-id="8d54d-117">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-117">Click **Next**.</span></span>  
   
 5.  <span data-ttu-id="8d54d-118">**先選択** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="8d54d-118">In the **Choose a Destination** dialog box:</span></span>  
   
@@ -50,13 +51,13 @@ ms.lasthandoff: 10/17/2017
   
     4.  <span data-ttu-id="8d54d-122">**データベース**ドロップダウン リストで、Siebel テーブルをインポートするデータベースを選択します。</span><span class="sxs-lookup"><span data-stu-id="8d54d-122">From the **Database** drop-down list, select the database to which you want to import the Siebel table.</span></span>  
   
-    5.  <span data-ttu-id="8d54d-123">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-123">Click **Next**.</span></span>  
+    5.  <span data-ttu-id="8d54d-123">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-123">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="8d54d-124">**テーブルのコピーを指定またはクエリ** ダイアログ ボックスで、選択、**を転送するデータを指定するクエリを記述**オプション。</span><span class="sxs-lookup"><span data-stu-id="8d54d-124">In the **Specify Table Copy or Query** dialog box, choose the **Write a query to specify the data to transfer** option.</span></span>  
   
 7.  <span data-ttu-id="8d54d-125">**ソース クエリを指定する** ダイアログ ボックスで、SQL Server にインポートするデータをフィルター選択クエリを指定します。</span><span class="sxs-lookup"><span data-stu-id="8d54d-125">In the **Provide a Source Query** dialog box, specify a SELECT query to filter the data to be imported into the SQL Server.</span></span> <span data-ttu-id="8d54d-126">クエリを SELECT の文法の詳細については、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]を参照してください[Siebel の SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md)です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-126">For more information about the grammar for a SELECT query for the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], see [Syntax for a SELECT Statement in Siebel](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md).</span></span>  
   
-8.  <span data-ttu-id="8d54d-127">クエリを検証するには、をクリックして、**解析**ボタンをクリックし**OK**をクリックしてポップアップ ダイアログ ボックスで、 **[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-127">To validate the query, click the **Parse** button, click **OK** in the pop-up dialog box, and then click **Next**.</span></span>  
+8.  <span data-ttu-id="8d54d-127">クエリを検証するには、をクリックして、**解析**ボタンをクリックし**OK**をクリックしてポップアップ ダイアログ ボックスで、 **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="8d54d-127">To validate the query, click the **Parse** button, click **OK** in the pop-up dialog box, and then click **Next**.</span></span>  
   
 9. <span data-ttu-id="8d54d-128">**[ソース テーブルおよびビュー** ] ダイアログ ボックスで、ソース テーブルと対象テーブルに対してチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-128">In the **Select Source Tables and Views** dialog box, select the check box against the source and destination tables.</span></span> <span data-ttu-id="8d54d-129">ソースは、Siebel からデータを取得するように指定したクエリを示します。</span><span class="sxs-lookup"><span data-stu-id="8d54d-129">The source is the query you specified to retrieve data from Siebel.</span></span> <span data-ttu-id="8d54d-130">変換先は、SQL Server データベースに作成されるテーブルになります。</span><span class="sxs-lookup"><span data-stu-id="8d54d-130">The destination will be the table that will be created in the SQL Server database.</span></span>  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/17/2017
   
     -   <span data-ttu-id="8d54d-138">Nullable、サイズ、有効桁数、小数点以下桁数などその他のフィールドの属性を変更します。</span><span class="sxs-lookup"><span data-stu-id="8d54d-138">Change other field attributes such as nullable, size, precision, and scale.</span></span>  
   
-    -   <span data-ttu-id="8d54d-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-139">Click **OK**.</span></span>  
+    -   <span data-ttu-id="8d54d-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8d54d-139">Click **OK**.</span></span>  
   
      <span data-ttu-id="8d54d-140">![Siebel テーブルと SQL テーブル間の列マッピング](../../adapters-and-accelerators/adapter-siebel/media/a3047801-3fa6-496b-91d8-3888dfbb0169.gif "a3047801-3fa6-496b-91d8-3888dfbb0169")</span><span class="sxs-lookup"><span data-stu-id="8d54d-140">![Column mappings between Siebel and SQL table](../../adapters-and-accelerators/adapter-siebel/media/a3047801-3fa6-496b-91d8-3888dfbb0169.gif "a3047801-3fa6-496b-91d8-3888dfbb0169")</span></span>  
   

@@ -1,18 +1,18 @@
 ---
-title: "XLANG s の予約語 |Microsoft ドキュメント"
-ms.custom: 
+title: XLANG s の予約語 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, reserved words
 - XLANG/s, reserved words
 - orchestrations, XLANG/s
 ms.assetid: 06128c96-8a06-4998-822d-7b20f44291d1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290362"
 ---
 # <a name="xlang-s-reserved-words"></a><span data-ttu-id="544c8-102">XLANG s の予約語</span><span class="sxs-lookup"><span data-stu-id="544c8-102">XLANG-s Reserved Words</span></span>
 <span data-ttu-id="544c8-103">XLANG/s では、さまざまなキーワード、型名、識別名が予約されています。</span><span class="sxs-lookup"><span data-stu-id="544c8-103">XLANG/s reserves various keywords, type names, and identifier names for its own usage.</span></span>  

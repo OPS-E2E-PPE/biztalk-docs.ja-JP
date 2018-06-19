@@ -1,11 +1,11 @@
 ---
-title: "スキーマ リゾルバ コンポーネント (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ リゾルバ コンポーネント (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, examples
 - examples, Flat File Disassembler [pipeline component]
 ms.assetid: 9ef68988-c4ee-42d5-83b5-a5c978b2007d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974920"
 ---
 # <a name="schema-resolver-component-biztalk-server-sample"></a><span data-ttu-id="ee49c-102">スキーマ リゾルバ コンポーネント (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="ee49c-102">Schema Resolver Component (BizTalk Server Sample)</span></span>
 <span data-ttu-id="ee49c-103">スキーマ リゾルバ コンポーネントのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] フラット ファイル逆アセンブラ コンポーネントの機能を拡張する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ee49c-103">The Schema Resolver Component sample demonstrates how to extend the functionality of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] flat file disassembler component.</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="ee49c-109">スキーマ リゾルバ コンポーネントは、フラット ファイル逆アセンブラ コンポーネントのスキーマを選択する、もう 1 つの方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ee49c-109">The Schema Resolver component demonstrates an alternative method of selecting the schema for a flat file disassembler.</span></span> <span data-ttu-id="ee49c-110">このサンプルでは、4 つのスキーマが定義されており、各スキーマのメッセージの最初の 2 文字は一意です。</span><span class="sxs-lookup"><span data-stu-id="ee49c-110">In this sample, four schemas are defined and the first two characters of a message for each schema are unique.</span></span> <span data-ttu-id="ee49c-111">一意である最初の 2 文字、および対応するスキーマの間でマッピングが定義されます。</span><span class="sxs-lookup"><span data-stu-id="ee49c-111">A mapping is defined between the unique first two characters and the corresponding schema.</span></span> <span data-ttu-id="ee49c-112">入力メッセージがスキーマ リゾルバ コンポーネントに提供されると、最初の 2 文字が読み取られ、対応するドキュメントに使用するスキーマが決定されて、メッセージ コンテキストでスキーマ情報が保存された後に、標準のフラット ファイル逆アセンブラ コンポーネントが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="ee49c-112">When the input message is given to the Schema Resolver component, it reads the first two characters, determines which schema to use for the corresponding document, saves the schema information on the message context, and then calls into the standard flat file disassembler component.</span></span> <span data-ttu-id="ee49c-113">標準フラット ファイル逆アセンブラ コンポーネントはメッセージ コンテキストからスキーマ情報を読み取り、そのスキーマを使用してドキュメントを解析します。</span><span class="sxs-lookup"><span data-stu-id="ee49c-113">The standard flat file disassembler component reads the schema information from the message context and uses that schema to parse the document.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="ee49c-114">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="ee49c-114">Where to Find This Sample</span></span>  
- <span data-ttu-id="ee49c-115">*\<パスのサンプル\>*\Pipelines\SchemaResolverComponent\\</span><span class="sxs-lookup"><span data-stu-id="ee49c-115">*\<Samples Path\>*\Pipelines\SchemaResolverComponent\\</span></span>  
+ <span data-ttu-id="ee49c-115">*\<パスのサンプル\>* \Pipelines\SchemaResolverComponent\\</span><span class="sxs-lookup"><span data-stu-id="ee49c-115">*\<Samples Path\>* \Pipelines\SchemaResolverComponent\\</span></span>  
   
  <span data-ttu-id="ee49c-116">次の表は、このサンプルで使用したファイルを示し、その目的を説明しています。</span><span class="sxs-lookup"><span data-stu-id="ee49c-116">The following table shows the files used in this sample and describes their purpose.</span></span>  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="ee49c-142">コマンド ウィンドウで、ディレクトリを次のフォルダに変更します (cd)。</span><span class="sxs-lookup"><span data-stu-id="ee49c-142">In a command window, change directory (cd) to the following folder:</span></span>  
   
-     <span data-ttu-id="ee49c-143">*\<パスのサンプル\>*\Pipelines\SchemaResolverComponent</span><span class="sxs-lookup"><span data-stu-id="ee49c-143">*\<Samples Path\>*\Pipelines\SchemaResolverComponent</span></span>  
+     <span data-ttu-id="ee49c-143">*\<パスのサンプル\>* \Pipelines\SchemaResolverComponent</span><span class="sxs-lookup"><span data-stu-id="ee49c-143">*\<Samples Path\>* \Pipelines\SchemaResolverComponent</span></span>  
   
 2.  <span data-ttu-id="ee49c-144">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="ee49c-144">Run the file Setup.bat, which performs the following actions:</span></span>  
   

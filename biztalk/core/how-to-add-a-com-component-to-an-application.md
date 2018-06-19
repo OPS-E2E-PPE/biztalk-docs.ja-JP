@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションに COM コンポーネントを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションに COM コンポーネントを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], COM components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, COM components
 - COM components, applications
 ms.assetid: fdda1a9d-96af-41fe-9d94-ee1fbd80a7c9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007283"
 ---
 # <a name="how-to-add-a-com-component-to-an-application"></a><span data-ttu-id="e19e3-102">COM コンポーネントをアプリケーションに追加する方法</span><span class="sxs-lookup"><span data-stu-id="e19e3-102">How to Add a COM Component to an Application</span></span>
 <span data-ttu-id="e19e3-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して BizTalk アプリケーションに COM コンポーネントを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e19e3-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a COM component to a BizTalk application:</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="e19e3-126">例: **%BTAD_InstallDir%\MyComponent.dll**</span><span class="sxs-lookup"><span data-stu-id="e19e3-126">Example: **%BTAD_InstallDir%\MyComponent.dll**</span></span>  
   
-8.  <span data-ttu-id="e19e3-127">完了したら、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e19e3-127">When finished, click **OK**.</span></span>  
+8.  <span data-ttu-id="e19e3-127">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e19e3-127">When finished, click **OK**.</span></span>  
   
 #### <a name="using-the-command-line"></a><span data-ttu-id="e19e3-128">コマンドラインを使用</span><span class="sxs-lookup"><span data-stu-id="e19e3-128">Using the command line</span></span>  
   

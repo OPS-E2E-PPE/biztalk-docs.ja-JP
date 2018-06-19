@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65e15d9e-40ae-4850-9c13-88033cb3b3bb
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972368"
 ---
 # <a name="how-to-save-rename-and-close-schemas"></a><span data-ttu-id="c8ad7-102">スキーマの保存、名前変更、および終了の方法</span><span class="sxs-lookup"><span data-stu-id="c8ad7-102">How to Save, Rename, and Close Schemas</span></span>
 <span data-ttu-id="c8ad7-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、スキーマは XSD (XML Schema Definition) 言語ファイルであり、ファイル システムに .xsd という拡張子で格納されます。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-103">In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], schemas are XML Schema definition (XSD) language files and reside on the file system with .xsd extensions.</span></span> <span data-ttu-id="c8ad7-104">BizTalk エディターを使用したスキーマの作成には、スキーマ ファイルの保存と終了、場合によっては、ファイル名の変更といった作業が常に伴います。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-104">When you use BizTalk Editor to develop schemas, you will routinely need to save and close schema files, and occasionally you may need to rename them.</span></span> <span data-ttu-id="c8ad7-105">このトピックでは、こうした基本操作に必要な手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-105">This topic describes the steps required to perform these basic operations.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/28/2018
      <span data-ttu-id="c8ad7-109">スキーマに対する変更がまだ保存されていなかった場合、スキーマを保存すると、メイン編集ウィンドウ上部のタブに表示される名前からアスタリスク (\*) が消えます。このアスタリスクは、変更内容が保存されていないことを示すマークです。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-109">If the schema had unsaved changes, its name as displayed on the tab at the top of the main editing window will no longer end with an asterisk (\*), which is used to indicate unsaved changes.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="c8ad7-110">クリックして、新しい名前でスキーマを保存することができます**保存*\<名前のスキーマ\>*として**上、**ファイル**メニュー。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-110">You can save the schema under a new name by clicking **Save *\<Name of Schema\>* As** on the **File** menu.</span></span>  
+>  <span data-ttu-id="c8ad7-110">クリックして、新しい名前でスキーマを保存することができます**保存*\<名前のスキーマ\>* として**上、**ファイル**メニュー。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-110">You can save the schema under a new name by clicking **Save *\<Name of Schema\>* As** on the **File** menu.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="c8ad7-111">クリックして、プロジェクトの変更されたすべての項目の保存の一部としてスキーマを保存する **すべてを保存** 上、 **ファイル** メニュー。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-111">You can save the schema as part of saving all changed items in the project by clicking **Save All** on the **File** menu.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="c8ad7-125">必要に応じて、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウ上部にある適切なタブをクリックして、終了するスキーマの BizTalk エディターをアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-125">If necessary, activate BizTalk Editor for the schema to be closed by clicking the appropriate tab at the top of the main editing window in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-2.  <span data-ttu-id="c8ad7-126">**[ファイル]** メニューの **[閉じる]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-126">On the **File** menu, click **Close**.</span></span>  
+2.  <span data-ttu-id="c8ad7-126">**[ファイル]** メニューの **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-126">On the **File** menu, click **Close**.</span></span>  
   
      <span data-ttu-id="c8ad7-127">BizTalk エディターによってスキーマが終了されます。</span><span class="sxs-lookup"><span data-stu-id="c8ad7-127">BizTalk Editor closes for the schema that has been closed.</span></span>  
   

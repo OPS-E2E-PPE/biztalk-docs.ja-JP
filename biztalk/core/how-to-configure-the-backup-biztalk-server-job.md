@@ -1,15 +1,15 @@
 ---
-title: "バックアップの BizTalk Server のジョブを構成する |Microsoft ドキュメント"
-description: 
-ms.custom: 
+title: バックアップの BizTalk Server のジョブを構成する |Microsoft ドキュメント
+description: ''
+ms.custom: ''
 ms.date: 11/22/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 026622c9-fcb4-4db0-af48-1379feb30372
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972848"
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a><span data-ttu-id="3d4e3-102">バックアップの BizTalk Server のジョブを構成します。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-102">Configure the Backup BizTalk Server Job</span></span>
 <span data-ttu-id="3d4e3-103">インストールし、BizTalk Server を構成した後は、バックアップを構成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データをバックアップするジョブです。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-103">After you install and configure BizTalk Server, configure the Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job to back up your data.</span></span> 
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/28/2017
 
 
 ## <a name="overview"></a><span data-ttu-id="3d4e3-105">概要</span><span class="sxs-lookup"><span data-stu-id="3d4e3-105">Overview</span></span>
-<span data-ttu-id="3d4e3-106">**Backup BizTalk Server (BizTalkMgmtDb)**ジョブには、次の手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-106">The **Backup BizTalk Server (BizTalkMgmtDb)** job includes the following steps:</span></span>
+<span data-ttu-id="3d4e3-106">**Backup BizTalk Server (BizTalkMgmtDb)** ジョブには、次の手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-106">The **Backup BizTalk Server (BizTalkMgmtDb)** job includes the following steps:</span></span>
 
 -   <span data-ttu-id="3d4e3-107">手順 1 –**セット圧縮オプション**: を有効にするか、バックアップ中に圧縮を無効にします。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-107">Step 1 – **Set Compression Option**: Enable or disable compression during backup</span></span>
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="3d4e3-141">**[SQL Server エージェント]** を展開し、**[ジョブ]** を展開します。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-141">Expand **SQL Server Agent**, and expand **Jobs**.</span></span>  
   
-3.  <span data-ttu-id="3d4e3-142">右クリック**Backup BizTalk Server (BizTalkMgmtDb)**選択**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-142">Right-click **Backup BizTalk Server (BizTalkMgmtDb)** and select **Properties**.</span></span> <span data-ttu-id="3d4e3-143">ジョブのプロパティで選択**手順**です。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-143">In the job properties, select **Steps**.</span></span>  
+3.  <span data-ttu-id="3d4e3-142">右クリック**Backup BizTalk Server (BizTalkMgmtDb)** 選択**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-142">Right-click **Backup BizTalk Server (BizTalkMgmtDb)** and select **Properties**.</span></span> <span data-ttu-id="3d4e3-143">ジョブのプロパティで選択**手順**です。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-143">In the job properties, select **Steps**.</span></span>  
   
 4.  <span data-ttu-id="3d4e3-144">選択、 **Set Compression Option**ステップ、および選択**編集**:</span><span class="sxs-lookup"><span data-stu-id="3d4e3-144">Select the **Set Compression Option** step, and select **Edit**:</span></span>  
 
@@ -134,12 +135,12 @@ ms.lasthandoff: 11/28/2017
   
     1.  <span data-ttu-id="3d4e3-181">**@MarkName**: これは、バックアップ ファイルの名前付け規則の一部:\<サーバー名\>\_\<データベース名\>**\_ログ\_** \<ログ マーク名\> \_\<タイムスタンプ\></span><span class="sxs-lookup"><span data-stu-id="3d4e3-181">**@MarkName**: This is part of the naming convention for backup files: \<Server Name\>\_\<Database Name\>**\_Log\_**\< Log Mark Name \>\_\<Timestamp\></span></span>  
     
-    2.  <span data-ttu-id="3d4e3-182">**@BackupPath**: 完全な宛先 (単一引用符を含む)、コンピューターおよびフォルダー パスに格納する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、データベースのログ、または Azure blob ストレージ アカウントとコンテナー。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-182">**@BackupPath**: Full destination path (including single quotes) to the computer and folder to store the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database logs, or the Azure blob storage account and container.</span></span> <span data-ttu-id="3d4e3-183">*\<移行先パス\>*ローカルまたは別のサーバーへの UNC パスにもなります。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-183">The *\<destination path\>* can also be local or a UNC path to another server.</span></span>  
+    2.  <span data-ttu-id="3d4e3-182">**@BackupPath**: 完全な宛先 (単一引用符を含む)、コンピューターおよびフォルダー パスに格納する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、データベースのログ、または Azure blob ストレージ アカウントとコンテナー。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-182">**@BackupPath**: Full destination path (including single quotes) to the computer and folder to store the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database logs, or the Azure blob storage account and container.</span></span> <span data-ttu-id="3d4e3-183">*\<移行先パス\>* ローカルまたは別のサーバーへの UNC パスにもなります。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-183">The *\<destination path\>* can also be local or a UNC path to another server.</span></span>  
   
      <span data-ttu-id="3d4e3-184">MarkAndBackupLog ステップで、バックアップのログをマークした後、バックアップします。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-184">The MarkAndBackupLog step marks the logs for backup, and then backs them up.</span></span>  
   
     > [!IMPORTANT]
-    >  <span data-ttu-id="3d4e3-185">回避する**データ損失の可能性**および**パフォーマンスを向上させる**、 *\<移行先パス\>*別のコンピューターに設定する必要がありますまたはから元のデータベース ログを格納するために使用されるとは別のハード ドライブを選択します。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-185">To avoid **potential data loss** and for **performance improvement**, the *\<destination path\>* should be set to a different computer, or hard drive, different from what is used to store the original database logs.</span></span>  
+    >  <span data-ttu-id="3d4e3-185">回避する**データ損失の可能性**および**パフォーマンスを向上させる**、 *\<移行先パス\>* 別のコンピューターに設定する必要がありますまたはから元のデータベース ログを格納するために使用されるとは別のハード ドライブを選択します。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-185">To avoid **potential data loss** and for **performance improvement**, the *\<destination path\>* should be set to a different computer, or hard drive, different from what is used to store the original database logs.</span></span>  
   
      <span data-ttu-id="3d4e3-186">**[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-186">Select **OK**.</span></span>  
   
@@ -167,7 +168,7 @@ ms.lasthandoff: 11/28/2017
 
 ## <a name="execute-backupsetupallprocssql-and-logshippingdestinationlogicsql"></a><span data-ttu-id="3d4e3-206">Backup_Setup_All_Procs.sql および LogShipping_Destination_Logic.sql を実行します。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-206">Execute Backup_Setup_All_Procs.sql and LogShipping_Destination_Logic.sql</span></span>
 
-<span data-ttu-id="3d4e3-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]機能パック 2 (FP2)**で Backup_Setup_All_Procs.sql および LogShipping_Destination_Logic.sql スクリプトを使用する`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`です。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2 (FP2)** used the Backup_Setup_All_Procs.sql and LogShipping_Destination_Logic.sql scripts in `\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`.</span></span> 
+<span data-ttu-id="3d4e3-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]機能パック 2 (FP2)** で Backup_Setup_All_Procs.sql および LogShipping_Destination_Logic.sql スクリプトを使用する`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`です。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2 (FP2)** used the Backup_Setup_All_Procs.sql and LogShipping_Destination_Logic.sql scripts in `\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`.</span></span> 
 
 <span data-ttu-id="3d4e3-208">BizTalk Server のバックアップ ジョブが既に構成されているし、切り替えたい場合は、Azure を使用する (ディスク) ではなく blob も、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="3d4e3-208">If your Backup BizTalk Server job is already configured, and you want to switch to using Azure blob (instead of a disk), then also do the following:</span></span> 
 

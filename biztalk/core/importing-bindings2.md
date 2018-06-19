@@ -1,18 +1,18 @@
 ---
-title: "インポート Bindings2 |Microsoft ドキュメント"
-ms.custom: 
+title: インポート Bindings2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, requirements
 - importing, bindings
 - bindings, importing
 ms.assetid: 9e10bc04-aba8-430a-b8fd-de9399d54f88
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006131"
 ---
 # <a name="importing-bindings"></a><span data-ttu-id="27d79-102">バインドのインポート</span><span class="sxs-lookup"><span data-stu-id="27d79-102">Importing Bindings</span></span>
 <span data-ttu-id="27d79-103">このセクションの各トピックでは、バインドを BizTalk グループまたはアプリケーションにインポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="27d79-103">The topics in this section describe how to import bindings into a BizTalk group or application.</span></span>  

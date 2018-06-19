@@ -1,14 +1,14 @@
 ---
-title: "データベースの自動拡張設定を定義 |Microsoft ドキュメント"
-ms.custom: 
+title: データベースの自動拡張設定を定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dd86dd49-6505-4673-b413-d3af729dfca9
-caps.latest.revision: 
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710789"
 ---
 # <a name="define-auto-growth-settings-for-databases"></a><span data-ttu-id="a5160-102">データベースの自動拡張設定を定義します。</span><span class="sxs-lookup"><span data-stu-id="a5160-102">Define Auto-Growth Settings for Databases</span></span>
 <span data-ttu-id="a5160-103">データベースの自動拡張は、の代わりに、メッセージ ボックス データベースと BizTalk 追跡データベースの特にのパーセント値のメガバイト数が固定に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5160-103">You should set database auto-growth to a fixed number of megabytes instead of to a percentage, especially for the MessageBox and BizTalk Tracking databases.</span></span> <span data-ttu-id="a5160-104">BizTalk アプリケーションとスループット、に応じて、メッセージ ボックス データベースおよび追跡データベースを非常に大きい取得できます。</span><span class="sxs-lookup"><span data-stu-id="a5160-104">Depending on your BizTalk application and throughput, the MessageBox and Tracking databases can get quite large.</span></span> <span data-ttu-id="a5160-105">パーセンテージを自動拡張を設定した場合、自動拡張できますかなり大きくなる場合もします。</span><span class="sxs-lookup"><span data-stu-id="a5160-105">If you set auto-growth to a percentage, then the auto-growth can be substantial as well.</span></span>  

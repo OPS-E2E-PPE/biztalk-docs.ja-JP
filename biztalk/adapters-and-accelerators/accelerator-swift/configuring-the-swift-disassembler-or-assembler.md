@@ -1,11 +1,11 @@
 ---
-title: "SWIFT 逆アセンブラーまたはアセンブラーの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT 逆アセンブラーまたはアセンブラーの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assembler, configuring
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - disassembler, configuring
 - configuring, assembler
 ms.assetid: 56e421f2-0292-40af-b878-0cba1b034e19
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005067"
 ---
 # <a name="configuring-the-swift-disassembler-or-assembler"></a><span data-ttu-id="ca92d-102">SWIFT 逆アセンブラーまたはアセンブラーを構成します。</span><span class="sxs-lookup"><span data-stu-id="ca92d-102">Configuring the SWIFT Disassembler or Assembler</span></span>
 <span data-ttu-id="ca92d-103">カスタム パイプラインに SWIFT 逆アセンブラーまたはアセンブラー SWIFT を追加した後、動的なメッセージの種類の探索、受信バッチ解除処理、XML 検証の有効/無効の場合など、特定のシナリオを対象にする機能を提供することを構成する必要があります。ビジネス ルール エンジン (BRE) の検証、およびなど)。</span><span class="sxs-lookup"><span data-stu-id="ca92d-103">After you add the SWIFT disassembler or SWIFT assembler to a custom pipeline, you must configure it to provide the functionality you want for the particular scenario (such as enabling/disabling dynamic message type discovery, inbound debatching, XML validation, Business Rule Engine (BRE) validation, and so on).</span></span> <span data-ttu-id="ca92d-104">コンパイルおよびそれらを呼び出すカスタム パイプラインを展開する前に、開発時に SWIFT 逆アセンブラーまたはアセンブラーを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca92d-104">You must configure the SWIFT disassembler and assembler during development time before you compile and deploy the custom pipelines that invoke them.</span></span> <span data-ttu-id="ca92d-105">SWIFT の逆アセンブラーまたはアセンブラーを構成するのには、パイプライン デザイナーでコンポーネントを選択し、構成プロパティをプロパティ ウィンドウで編集します。</span><span class="sxs-lookup"><span data-stu-id="ca92d-105">To configure the SWIFT disassembler/assembler, select the component in Pipeline Designer and edit the configuration properties in the Properties window.</span></span>  

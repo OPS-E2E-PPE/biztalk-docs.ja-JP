@@ -1,14 +1,14 @@
 ---
-title: "手順 6: エコー アダプター メタデータの解決ハンドラーを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: エコー アダプター メタデータの解決ハンドラーを実装する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0105d1b0-efbd-457b-af0d-08e29408a318
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227002"
 ---
 # <a name="step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter"></a><span data-ttu-id="83009-102">手順 6: エコー アダプター メタデータの解決ハンドラーを実装します。</span><span class="sxs-lookup"><span data-stu-id="83009-102">Step 6: Implement the Metadata Resolve Handler for the Echo Adapter</span></span>
 <span data-ttu-id="83009-103">![手順 9 の 6](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span><span class="sxs-lookup"><span data-stu-id="83009-103">![Step 6 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span></span>  
@@ -229,7 +230,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 3.  <span data-ttu-id="83009-142">**名前**テキスト ボックスで、「 **CustomGreetingTypeMetadata**です。</span><span class="sxs-lookup"><span data-stu-id="83009-142">In the **Name** text box, type **CustomGreetingTypeMetadata**.</span></span>  
   
-4.  <span data-ttu-id="83009-143">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="83009-143">Click **Add**.</span></span>  
+4.  <span data-ttu-id="83009-143">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="83009-143">Click **Add**.</span></span>  
   
 5.  <span data-ttu-id="83009-144">Visual Studio エディターでは、次のように、既存のコードを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="83009-144">In the Visual Studio editor, replace the existing code with the following:</span></span>  
   
@@ -358,7 +359,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 3.  <span data-ttu-id="83009-149">**名前**テキスト ボックスで、「 **CustomGreeting**です。</span><span class="sxs-lookup"><span data-stu-id="83009-149">In the **Name** text box, type **CustomGreeting**.</span></span>  
   
-4.  <span data-ttu-id="83009-150">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="83009-150">Click **Add**.</span></span>  
+4.  <span data-ttu-id="83009-150">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="83009-150">Click **Add**.</span></span>  
   
 5.  <span data-ttu-id="83009-151">ソリューション エクスプ ローラーで右クリックし、 **CustomGreeting.xsd**ファイルして選択**コードの表示**です。</span><span class="sxs-lookup"><span data-stu-id="83009-151">In Solution Explorer, right-click the **CustomGreeting.xsd** file and choose **View Code**.</span></span>  
   

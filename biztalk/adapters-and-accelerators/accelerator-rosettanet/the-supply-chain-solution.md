@@ -1,17 +1,17 @@
 ---
-title: "サプライ チェーン ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サプライ チェーン ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trading partners, supply chains
 - supply chains, solutions
 ms.assetid: c53e37ec-6055-46ba-a13f-1370dbfe44fb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006451"
 ---
 # <a name="the-supply-chain-solution"></a><span data-ttu-id="4215e-102">サプライ チェーン ソリューション</span><span class="sxs-lookup"><span data-stu-id="4215e-102">The Supply Chain Solution</span></span>
 <span data-ttu-id="4215e-103">ビジネス プロセスとデータ通信に関する問題の解決に、テクノロジが役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4215e-103">Technology can help solve the business challenges related to business process and data communications.</span></span> <span data-ttu-id="4215e-104">先端企業は情報技術 (IT) システムを利用することで、パートナーとの通信をオフラインで互換性のないプロセスから、統合かつ標準化されたプロセスへと変革することができます。</span><span class="sxs-lookup"><span data-stu-id="4215e-104">Information Technology (IT) systems can help high-technology companies transform the communications with their partners from disconnected, incompatible processes to integrated, standardized ones.</span></span>  

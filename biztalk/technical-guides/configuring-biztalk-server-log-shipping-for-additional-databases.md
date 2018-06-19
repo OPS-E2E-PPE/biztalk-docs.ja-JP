@@ -1,15 +1,15 @@
 ---
-title: "BizTalk ログの配布を他のデータベースの構成 |Microsoft ドキュメント"
-description: "BizTalk Server のバックアップ ジョブ、および BizTalk Server でのログ配布にカスタム データベースを追加します。"
-ms.custom: 
+title: BizTalk ログの配布を他のデータベースの構成 |Microsoft ドキュメント
+description: BizTalk Server のバックアップ ジョブ、および BizTalk Server でのログ配布にカスタム データベースを追加します。
+ms.custom: ''
 ms.date: 11/01/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fc2ae67-5cb9-4d53-9bf7-c88f84914960
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976536"
 ---
 # <a name="configuring-biztalk-server-log-shipping-for-additional-databases"></a><span data-ttu-id="29634-103">BizTalk Server に対してログ配布を他のデータベースを構成します。</span><span class="sxs-lookup"><span data-stu-id="29634-103">Configuring BizTalk Server Log Shipping for Additional Databases</span></span>
 

@@ -1,14 +1,14 @@
 ---
-title: "ListApps コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: ListApps コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7a5eb0af-e153-4639-a6c0-56c951827c7c
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262162"
 ---
 # <a name="listapps-command"></a><span data-ttu-id="90c86-102">ListApps コマンド</span><span class="sxs-lookup"><span data-stu-id="90c86-102">ListApps Command</span></span>
 <span data-ttu-id="90c86-103">指定された BizTalk 管理データベースに存在するすべての BizTalk アプリケーションについて、名前と説明をコンソールに出力します。</span><span class="sxs-lookup"><span data-stu-id="90c86-103">Prints to the console the name and description of all of the BizTalk applications in the specified BizTalk Management database.</span></span>  
@@ -28,8 +29,8 @@ ms.lasthandoff: 09/20/2017
   
 |<span data-ttu-id="90c86-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="90c86-107">Parameter</span></span>|<span data-ttu-id="90c86-108">必須</span><span class="sxs-lookup"><span data-stu-id="90c86-108">Required</span></span>|<span data-ttu-id="90c86-109">Description</span><span class="sxs-lookup"><span data-stu-id="90c86-109">Description</span></span>|  
 |---------------|--------------|-----------------|  
-|<span data-ttu-id="90c86-110">**/サーバー** (または**/S**、「解説」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="90c86-110">**/Server** (or **/S**, see Remarks)</span></span>|<span data-ttu-id="90c86-111">不可</span><span class="sxs-lookup"><span data-stu-id="90c86-111">No</span></span>|<span data-ttu-id="90c86-112">BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。</span><span class="sxs-lookup"><span data-stu-id="90c86-112">Name of the SQL Server instance hosting the BizTalk Management database, in the form ServerName\InstanceName,Port.</span></span><br /><br /> <span data-ttu-id="90c86-113">インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="90c86-113">Instance name is only required when the instance name is different than the server name.</span></span> <span data-ttu-id="90c86-114">ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="90c86-114">Port is only required when SQL Server uses a port number other than the default (1433).</span></span><br /><br /> <span data-ttu-id="90c86-115">例 :</span><span class="sxs-lookup"><span data-stu-id="90c86-115">Examples:</span></span><br /><br /> <span data-ttu-id="90c86-116">Server=MyServer</span><span class="sxs-lookup"><span data-stu-id="90c86-116">Server=MyServer</span></span><br /><br /> <span data-ttu-id="90c86-117">Server=MyServer\MySQLServer,1533</span><span class="sxs-lookup"><span data-stu-id="90c86-117">Server=MyServer\MySQLServer,1533</span></span><br /><br /> <span data-ttu-id="90c86-118">指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。</span><span class="sxs-lookup"><span data-stu-id="90c86-118">If not provided, the name of the SQL Server instance running on the local computer is used.</span></span>|  
-|<span data-ttu-id="90c86-119">**/データベース**(または**/D**、「解説」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="90c86-119">**/Database** (or **/D**, see Remarks)</span></span>|<span data-ttu-id="90c86-120">不可</span><span class="sxs-lookup"><span data-stu-id="90c86-120">No</span></span>|<span data-ttu-id="90c86-121">BizTalk 管理データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="90c86-121">Name of the BizTalk Management database.</span></span> <span data-ttu-id="90c86-122">指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。</span><span class="sxs-lookup"><span data-stu-id="90c86-122">If not specified, the BizTalk Management database running in the local instance of SQL Server is used.</span></span>|  
+|<span data-ttu-id="90c86-110">**/サーバー** (または **/S**、「解説」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="90c86-110">**/Server** (or **/S**, see Remarks)</span></span>|<span data-ttu-id="90c86-111">不可</span><span class="sxs-lookup"><span data-stu-id="90c86-111">No</span></span>|<span data-ttu-id="90c86-112">BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。</span><span class="sxs-lookup"><span data-stu-id="90c86-112">Name of the SQL Server instance hosting the BizTalk Management database, in the form ServerName\InstanceName,Port.</span></span><br /><br /> <span data-ttu-id="90c86-113">インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="90c86-113">Instance name is only required when the instance name is different than the server name.</span></span> <span data-ttu-id="90c86-114">ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="90c86-114">Port is only required when SQL Server uses a port number other than the default (1433).</span></span><br /><br /> <span data-ttu-id="90c86-115">例 :</span><span class="sxs-lookup"><span data-stu-id="90c86-115">Examples:</span></span><br /><br /> <span data-ttu-id="90c86-116">Server=MyServer</span><span class="sxs-lookup"><span data-stu-id="90c86-116">Server=MyServer</span></span><br /><br /> <span data-ttu-id="90c86-117">Server=MyServer\MySQLServer,1533</span><span class="sxs-lookup"><span data-stu-id="90c86-117">Server=MyServer\MySQLServer,1533</span></span><br /><br /> <span data-ttu-id="90c86-118">指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。</span><span class="sxs-lookup"><span data-stu-id="90c86-118">If not provided, the name of the SQL Server instance running on the local computer is used.</span></span>|  
+|<span data-ttu-id="90c86-119">**/データベース**(または **/D**、「解説」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="90c86-119">**/Database** (or **/D**, see Remarks)</span></span>|<span data-ttu-id="90c86-120">不可</span><span class="sxs-lookup"><span data-stu-id="90c86-120">No</span></span>|<span data-ttu-id="90c86-121">BizTalk 管理データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="90c86-121">Name of the BizTalk Management database.</span></span> <span data-ttu-id="90c86-122">指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。</span><span class="sxs-lookup"><span data-stu-id="90c86-122">If not specified, the BizTalk Management database running in the local instance of SQL Server is used.</span></span>|  
   
 ## <a name="sample"></a><span data-ttu-id="90c86-123">サンプル</span><span class="sxs-lookup"><span data-stu-id="90c86-123">Sample</span></span>  
  <span data-ttu-id="90c86-124">**BTSTask ListApps**</span><span class="sxs-lookup"><span data-stu-id="90c86-124">**BTSTask ListApps**</span></span>  

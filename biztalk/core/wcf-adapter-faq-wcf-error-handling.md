@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプター FAQ: WCF エラー処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 'WCF アダプター FAQ: WCF エラー処理 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fdbd1ea6-4898-415c-ac5e-f804565759a8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288634"
 ---
 # <a name="wcf-adapter-faq-wcf-error-handling"></a><span data-ttu-id="9c38c-102">WCF アダプター FAQ: WCF エラー処理</span><span class="sxs-lookup"><span data-stu-id="9c38c-102">WCF Adapter FAQ: WCF Error Handling</span></span>
 ## <a name="how-do-the-wcf-adapters-handle-errors-and-soap-faults-during-message-processing"></a><span data-ttu-id="9c38c-103">WCF アダプターは、メッセージ処理中のエラーや SOAP エラーをどのように処理しますか?</span><span class="sxs-lookup"><span data-stu-id="9c38c-103">How do the WCF adapters handle errors and SOAP faults during message processing?</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "EDI のサポートに関する問題 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI のサポートに関する問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a67361c9-7dbc-4e26-906c-95e54ae88962
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004429"
 ---
 # <a name="edi-support-issues"></a><span data-ttu-id="d9168-102">EDI のサポートに関する問題点</span><span class="sxs-lookup"><span data-stu-id="d9168-102">EDI Support Issues</span></span>
 <span data-ttu-id="d9168-103">このセクションでは、BizTalk Server が EDI および AS2 の処理をサポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d9168-103">This section describes how BizTalk Server supports EDI and AS2 processing.</span></span>  

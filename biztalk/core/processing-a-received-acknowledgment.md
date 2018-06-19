@@ -1,14 +1,14 @@
 ---
-title: "受信した確認の処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信した確認の処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67f67a95-7368-40c2-a162-6ffc9de076fc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,9 +17,10 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971184"
 ---
 # <a name="processing-a-received-acknowledgment"></a><span data-ttu-id="7f6ea-102">受信した確認の処理</span><span class="sxs-lookup"><span data-stu-id="7f6ea-102">Processing a Received Acknowledgment</span></span>
-<span data-ttu-id="7f6ea-103">アグリーメントの中で関連するプロパティが指定されている場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、技術確認を必要とします。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will expect a technical acknowledgment if the relevant property is specified in the agreement.</span></span> <span data-ttu-id="7f6ea-104">これは、x12 の場合、 **TA1 が必要**プロパティに、**受信確認**一方向アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックスまたはフォールバック アグリーメントからプロパティ。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-104">For X12, this is the **TA1 Expected** property in the **Acknowledgements** page of the one-way agreement in the **Agreement Properties** dialog box or from fallback agreement properties.</span></span> <span data-ttu-id="7f6ea-105">これは、edifact の場合、**メッセージの受信 (CONTRL が必要です)**プロパティに、**受信確認**一方向アグリーメントのページ、**アグリーメントのプロパティ** ダイアログボックスか、フォールバック アグリーメントのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-105">For EDIFACT, this is the **Receipt of message (CONTRL) expected** property in the **Acknowledgements** page of the one-way agreement in the **Agreement Properties** dialog box or from fallback agreement properties.</span></span> <span data-ttu-id="7f6ea-106">受信アグリーメントでは、受信したメッセージを処理するときに、メッセージ内の ISA14 値または UNB9 値の結果として技術確認を生成します。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-106">When the receiving agreement processes the received message, it will generate the technical acknowledgment as a result of the value of ISA14 or UNB9 in the message.</span></span>  
+<span data-ttu-id="7f6ea-103">アグリーメントの中で関連するプロパティが指定されている場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、技術確認を必要とします。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will expect a technical acknowledgment if the relevant property is specified in the agreement.</span></span> <span data-ttu-id="7f6ea-104">これは、x12 の場合、 **TA1 が必要**プロパティに、**受信確認**一方向アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックスまたはフォールバック アグリーメントからプロパティ。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-104">For X12, this is the **TA1 Expected** property in the **Acknowledgements** page of the one-way agreement in the **Agreement Properties** dialog box or from fallback agreement properties.</span></span> <span data-ttu-id="7f6ea-105">これは、edifact の場合、**メッセージの受信 (CONTRL が必要です)** プロパティに、**受信確認**一方向アグリーメントのページ、**アグリーメントのプロパティ** ダイアログボックスか、フォールバック アグリーメントのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-105">For EDIFACT, this is the **Receipt of message (CONTRL) expected** property in the **Acknowledgements** page of the one-way agreement in the **Agreement Properties** dialog box or from fallback agreement properties.</span></span> <span data-ttu-id="7f6ea-106">受信アグリーメントでは、受信したメッセージを処理するときに、メッセージ内の ISA14 値または UNB9 値の結果として技術確認を生成します。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-106">When the receiving agreement processes the received message, it will generate the technical acknowledgment as a result of the value of ISA14 or UNB9 in the message.</span></span>  
   
  <span data-ttu-id="7f6ea-107">アグリーメントの中で関連するプロパティが指定されている場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、X12 エンコードまたは EDIFACT エンコードの機能確認を必要とします。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will expect a functional acknowledgment for either X12 or EDIFACT encoding if the relevant property is specified in the agreement.</span></span> <span data-ttu-id="7f6ea-108">X12 の場合、このプロパティは、 **997 が必要**で、**受信確認**一方向アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックスまたはフォールバック アグリーメントからプロパティ。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-108">For X12, this property is the **997 Expected** in the **Acknowledgements** page of the one-way agreement in the **Agreement Properties** dialog box or from fallback agreement properties.</span></span> <span data-ttu-id="7f6ea-109">Edifact の場合、このプロパティは、**確認 (CONTRL) が必要です**プロパティに、**受信確認**一方向アグリーメントのページ、**アグリーメントのプロパティ**ダイアログ ボックスか、フォールバック アグリーメントのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-109">For EDIFACT, this property is the **Acknowledgement (CONTRL) expected** property in the **Acknowledgements** page of the one-way agreement in the **Agreement Properties** dialog box or from fallback agreement properties.</span></span> <span data-ttu-id="7f6ea-110">受信アグリーメントでは、受信したメッセージを処理するときに、メッセージ内の ISA14 値または UNB9 値の結果として技術確認を生成します。</span><span class="sxs-lookup"><span data-stu-id="7f6ea-110">When the receiving agreement processes the received message, it will generate the technical acknowledgment as a result of the value of ISA14 or UNB9 in the message.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: を作成して、ポリシーで、ボキャブラリを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: を作成して、ポリシーで、ボキャブラリを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c306a6e-3384-4f43-9c75-c5407cd9aed2
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975920"
 ---
 # <a name="walkthrough-creating-and-using-a-vocabulary-in-the-policy"></a><span data-ttu-id="92240-102">チュートリアル: を作成して、ポリシーで、ボキャブラリを使用します。</span><span class="sxs-lookup"><span data-stu-id="92240-102">Walkthrough: Creating and Using a Vocabulary in the Policy</span></span>
 <span data-ttu-id="92240-103">このチュートリアルでは、ボキャブラリを作成してで使用の詳細な手順、 **ProcessPurchaseOrder**ポリシー。</span><span class="sxs-lookup"><span data-stu-id="92240-103">This walkthrough provides step-by-step procedures for creating a vocabulary and using the vocabulary in the **ProcessPurchaseOrder** policy.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="92240-124">手順 3 を POVocabulary ボキャブラリの名前を変更しなかった場合に、ボキャブラリの名前を変更**POVocabulary**プロパティ ウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="92240-124">If you did not change the name of the vocabulary to POVocabulary in step 3, change the name of the vocabulary to **POVocabulary**in the Properties window.</span></span>  
   
-5.  <span data-ttu-id="92240-125">右クリック**バージョン 1.0 (未保存)**で**POVocabulary**、クリックして**新しい定義の追加**です。</span><span class="sxs-lookup"><span data-stu-id="92240-125">Right-click **Version 1.0(not saved)** in **POVocabulary**, and then click **Add New Definition**.</span></span>  
+5.  <span data-ttu-id="92240-125">右クリック**バージョン 1.0 (未保存)** で**POVocabulary**、クリックして**新しい定義の追加**です。</span><span class="sxs-lookup"><span data-stu-id="92240-125">Right-click **Version 1.0(not saved)** in **POVocabulary**, and then click **Add New Definition**.</span></span>  
   
 6.  <span data-ttu-id="92240-126">ボキャブラリの定義ウィザードで選択**XML ドキュメントの要素または属性**、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="92240-126">In the Vocabulary Definition Wizard, select **XML Document Element or Attribute**, and then click **Next**.</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="92240-135">![BRE &#45;チュートリアル &#45;SelectGet](../core/media/3034649a-2d81-4f08-8044-3ab66a201672.gif "3034649a-2d81-4f08-8044-3ab66a201672")</span><span class="sxs-lookup"><span data-stu-id="92240-135">![BRE&#45;Walkthrough&#45;SelectGet](../core/media/3034649a-2d81-4f08-8044-3ab66a201672.gif "3034649a-2d81-4f08-8044-3ab66a201672")</span></span>  
   
-12. <span data-ttu-id="92240-136">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="92240-136">Click **Finish**.</span></span>  
+12. <span data-ttu-id="92240-136">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="92240-136">Click **Finish**.</span></span>  
   
 13. <span data-ttu-id="92240-137">右クリック**バージョン 1.0 (未保存)**、クリックして**新しい定義の追加**です。</span><span class="sxs-lookup"><span data-stu-id="92240-137">Right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
   
@@ -78,9 +79,9 @@ ms.lasthandoff: 11/28/2017
   
 18. <span data-ttu-id="92240-142">変更、**ドキュメントの種類**に**RuleTest.PO**です。</span><span class="sxs-lookup"><span data-stu-id="92240-142">Change the **document type** to **RuleTest.PO**.</span></span> <span data-ttu-id="92240-143">この手順は非常に重要です。</span><span class="sxs-lookup"><span data-stu-id="92240-143">This step is very important.</span></span>  
   
-19. <span data-ttu-id="92240-144">確認して、**操作の実行設定**オプションを選択して、をクリックして**[次へ] です。**</span><span class="sxs-lookup"><span data-stu-id="92240-144">Make sure that the  **Perform Set operation** option is selected, and then click **Next.**</span></span>  
+19. <span data-ttu-id="92240-144">確認して、**操作の実行設定**オプションを選択して、をクリックして **[次へ] です。**</span><span class="sxs-lookup"><span data-stu-id="92240-144">Make sure that the  **Perform Set operation** option is selected, and then click **Next.**</span></span>  
   
-20. <span data-ttu-id="92240-145">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="92240-145">Click **Finish**.</span></span>  
+20. <span data-ttu-id="92240-145">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="92240-145">Click **Finish**.</span></span>  
   
 21. <span data-ttu-id="92240-146">右クリック**バージョン 1.0 (未保存)**、クリックして**新しい定義の追加**です。</span><span class="sxs-lookup"><span data-stu-id="92240-146">Right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="92240-155">右クリック**ProcessPurchaseOrder**  をクリックし、**ポリシーのバージョンの貼り付け**です。</span><span class="sxs-lookup"><span data-stu-id="92240-155">Right-click **ProcessPurchaseOrder** and then click **Paste Policy Version**.</span></span>  
   
-3.  <span data-ttu-id="92240-156">をクリックして**ApprovalRule**で**バージョン 1.1 (未保存)**です。</span><span class="sxs-lookup"><span data-stu-id="92240-156">Click **ApprovalRule** in **Version 1.1(not saved)**.</span></span>  
+3.  <span data-ttu-id="92240-156">をクリックして**ApprovalRule**で**バージョン 1.1 (未保存)** です。</span><span class="sxs-lookup"><span data-stu-id="92240-156">Click **ApprovalRule** in **Version 1.1(not saved)**.</span></span>  
   
 4.  <span data-ttu-id="92240-157">ファクト エクスプ ローラー ウィンドウで、**ボキャブラリ**、展開**POVocabulary**、展開**バージョン 1.0**、し、ドラッグ**要求された数量**、LessThanOrEqual の述語の左側 (lhs) の引数を置換する IF ペインにします。</span><span class="sxs-lookup"><span data-stu-id="92240-157">In the Facts Explorer window, expand **Vocabularies**, expand **POVocabulary**, expand **Version 1.0**, and then drag **Requested Quantity** to the IF pane to replace the left hand side (LHS) argument of the LessThanOrEqual predicate.</span></span>  
   
@@ -119,11 +120,11 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="92240-163">ドラッグ**要求の状態**を**し**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="92240-163">Drag **Request Status** to the **THEN** pane.</span></span>  
   
-8.  <span data-ttu-id="92240-164">をクリックして**\<空の文字列\>**し入力**Approved**です。</span><span class="sxs-lookup"><span data-stu-id="92240-164">Click **\<empty string\>** and then type **Approved**.</span></span>  
+8.  <span data-ttu-id="92240-164">をクリックして**\<空の文字列\>** し入力**Approved**です。</span><span class="sxs-lookup"><span data-stu-id="92240-164">Click **\<empty string\>** and then type **Approved**.</span></span>  
   
-9. <span data-ttu-id="92240-165">右クリック**バージョン 1.1 (未保存)**をクリックして ポリシー エクスプ ローラー ウィンドウ、**保存**です。</span><span class="sxs-lookup"><span data-stu-id="92240-165">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Save**.</span></span>  
+9. <span data-ttu-id="92240-165">右クリック**バージョン 1.1 (未保存)** をクリックして ポリシー エクスプ ローラー ウィンドウ、**保存**です。</span><span class="sxs-lookup"><span data-stu-id="92240-165">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Save**.</span></span>  
   
-10. <span data-ttu-id="92240-166">右クリック**バージョン 1.1 (未保存)**をクリックして ポリシー エクスプ ローラー ウィンドウ、**発行**です。</span><span class="sxs-lookup"><span data-stu-id="92240-166">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Publish**.</span></span>  
+10. <span data-ttu-id="92240-166">右クリック**バージョン 1.1 (未保存)** をクリックして ポリシー エクスプ ローラー ウィンドウ、**発行**です。</span><span class="sxs-lookup"><span data-stu-id="92240-166">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Publish**.</span></span>  
   
 ### <a name="to-test-the-solution"></a><span data-ttu-id="92240-167">ソリューションをテストするには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="92240-167">To test the solution</span></span>  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="92240-188">このチュートリアルでは、ポリシーのファクトとして XML ドキュメントのみを使用しました。</span><span class="sxs-lookup"><span data-stu-id="92240-188">In this walkthrough, you used only an XML document as a fact to the policy.</span></span> <span data-ttu-id="92240-189">ポリシーの作成には、.NET のファクトやデータベースのファクトを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="92240-189">You can also use .NET facts and database facts when you create policies</span></span>  
   
--   <span data-ttu-id="92240-190">選択すると**「設定」操作の実行**ボキャブラリの定義ウィザードの 2 番目のページを指定できます、**表示書式文字列**次のページにします。</span><span class="sxs-lookup"><span data-stu-id="92240-190">When you select **Perform "Set" operation** on the second page of the Vocabulary Definition Wizard, you can specify a **Display format string** on the page that follows.</span></span> <span data-ttu-id="92240-191">表示形式文字列を変更するなど、**要求の状態 {0}**に**要求の状態: {0}**クリックする前に**完了**の手順 20. で、"を作成ボキャブラリ"プロシージャです。</span><span class="sxs-lookup"><span data-stu-id="92240-191">For example, you could change the display format string from **Request Status {0}** to **Request status is: {0}** before clicking **Finish** in the step 20 of the "create vocabulary" procedure.</span></span>  
+-   <span data-ttu-id="92240-190">選択すると **「設定」操作の実行**ボキャブラリの定義ウィザードの 2 番目のページを指定できます、**表示書式文字列**次のページにします。</span><span class="sxs-lookup"><span data-stu-id="92240-190">When you select **Perform "Set" operation** on the second page of the Vocabulary Definition Wizard, you can specify a **Display format string** on the page that follows.</span></span> <span data-ttu-id="92240-191">表示形式文字列を変更するなど、**要求の状態 {0}** に**要求の状態: {0}** クリックする前に**完了**の手順 20. で、"を作成ボキャブラリ"プロシージャです。</span><span class="sxs-lookup"><span data-stu-id="92240-191">For example, you could change the display format string from **Request Status {0}** to **Request status is: {0}** before clicking **Finish** in the step 20 of the "create vocabulary" procedure.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="92240-192">次の手順</span><span class="sxs-lookup"><span data-stu-id="92240-192">Next Steps</span></span>  
  <span data-ttu-id="92240-193">これで、このチュートリアルを完了すると、実行、[チュートリアル: ポリシーにルールを追加する](../core/walkthrough-adding-a-rule-to-the-policy.md)する新しい規則を追加するための手順を説明するチュートリアル、 **ProcessPurchaseOrder**ポリシー。</span><span class="sxs-lookup"><span data-stu-id="92240-193">Now that you have completed this walkthrough, perform the [Walkthrough: Adding a Rule to the Policy](../core/walkthrough-adding-a-rule-to-the-policy.md) walkthrough, which gives you step-by-step instructions for adding a new rule to the **ProcessPurchaseOrder** policy.</span></span>  

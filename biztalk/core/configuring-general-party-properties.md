@@ -1,14 +1,14 @@
 ---
-title: "パーティの全般プロパティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: パーティの全般プロパティの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbabf7e5-6388-4900-ad47-cf5d5af396b5
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005651"
 ---
 # <a name="configuring-general-party-properties"></a><span data-ttu-id="419d4-102">パーティの全般プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="419d4-102">Configuring General Party Properties</span></span>
 <span data-ttu-id="419d4-103">パーティまたは取引先は、ビジネス リレーションシップの参加組織を表します。</span><span class="sxs-lookup"><span data-stu-id="419d4-103">A party or trading partner represents a participating organization in a business relationship.</span></span> <span data-ttu-id="419d4-104">パーティのプロパティには次の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="419d4-104">Party properties contain the following information:</span></span>  
@@ -41,8 +42,8 @@ ms.lasthandoff: 12/01/2017
     |<span data-ttu-id="419d4-114">プロパティ</span><span class="sxs-lookup"><span data-stu-id="419d4-114">Use this</span></span>|<span data-ttu-id="419d4-115">目的</span><span class="sxs-lookup"><span data-stu-id="419d4-115">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="419d4-116">**名前**</span><span class="sxs-lookup"><span data-stu-id="419d4-116">**Name**</span></span>|<span data-ttu-id="419d4-117">パーティ名を入力します。</span><span class="sxs-lookup"><span data-stu-id="419d4-117">Enter a party name.</span></span>|  
-    |<span data-ttu-id="419d4-118">**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**</span><span class="sxs-lookup"><span data-stu-id="419d4-118">**Local BizTalk processes messages received by the party or supports sending messages from this party**</span></span>|<span data-ttu-id="419d4-119">パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="419d4-119">Select this checkbox to specify that the party represents the same trading partner that also hosts [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="419d4-120">**重要:**に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="419d4-120">**Important:**  For a two-party TPM solution that uses out-of-the-box pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you must select this check box for at least one party.</span></span> <span data-ttu-id="419d4-121">**注:**このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。</span><span class="sxs-lookup"><span data-stu-id="419d4-121">**Note:**  If you clear this check box, some properties will be disabled while creating the agreements for this party.</span></span>|  
-    |<span data-ttu-id="419d4-122">**追加のプロパティ – 名前/値**</span><span class="sxs-lookup"><span data-stu-id="419d4-122">**Additional Properties – Name / Value**</span></span>|<span data-ttu-id="419d4-123">パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="419d4-123">Enter a name-value pair to store any information about the party.</span></span> <span data-ttu-id="419d4-124">名前と値の組み合わせは、必要な数だけ追加できます。</span><span class="sxs-lookup"><span data-stu-id="419d4-124">You can add as many name-value pairs as you want.</span></span> <span data-ttu-id="419d4-125">**注:**なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。</span><span class="sxs-lookup"><span data-stu-id="419d4-125">**Note:**  The name-value pairs are not used by the BizTalk Server for any processing; this data is for information purposes only.</span></span>|  
+    |<span data-ttu-id="419d4-118">**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**</span><span class="sxs-lookup"><span data-stu-id="419d4-118">**Local BizTalk processes messages received by the party or supports sending messages from this party**</span></span>|<span data-ttu-id="419d4-119">パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="419d4-119">Select this checkbox to specify that the party represents the same trading partner that also hosts [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="419d4-120">**重要:** に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="419d4-120">**Important:**  For a two-party TPM solution that uses out-of-the-box pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you must select this check box for at least one party.</span></span> <span data-ttu-id="419d4-121">**注:** このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。</span><span class="sxs-lookup"><span data-stu-id="419d4-121">**Note:**  If you clear this check box, some properties will be disabled while creating the agreements for this party.</span></span>|  
+    |<span data-ttu-id="419d4-122">**追加のプロパティ – 名前/値**</span><span class="sxs-lookup"><span data-stu-id="419d4-122">**Additional Properties – Name / Value**</span></span>|<span data-ttu-id="419d4-123">パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="419d4-123">Enter a name-value pair to store any information about the party.</span></span> <span data-ttu-id="419d4-124">名前と値の組み合わせは、必要な数だけ追加できます。</span><span class="sxs-lookup"><span data-stu-id="419d4-124">You can add as many name-value pairs as you want.</span></span> <span data-ttu-id="419d4-125">**注:** なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。</span><span class="sxs-lookup"><span data-stu-id="419d4-125">**Note:**  The name-value pairs are not used by the BizTalk Server for any processing; this data is for information purposes only.</span></span>|  
     |<span data-ttu-id="419d4-126">**Del**</span><span class="sxs-lookup"><span data-stu-id="419d4-126">**Delete**</span></span>|<span data-ttu-id="419d4-127">選択した名前と値の組み合わせを削除する場合にクリックします。</span><span class="sxs-lookup"><span data-stu-id="419d4-127">Click to delete the selected name-value pair.</span></span>|  
   
 3.  <span data-ttu-id="419d4-128">**送信ポート**のページ、**パーティ プロパティ** ダイアログ ボックスで、次の操作です。</span><span class="sxs-lookup"><span data-stu-id="419d4-128">On the **Send Ports** page of the **Party Properties** dialog box, do the following.</span></span>  
@@ -66,7 +67,7 @@ ms.lasthandoff: 12/01/2017
     |<span data-ttu-id="419d4-152">**拇印**</span><span class="sxs-lookup"><span data-stu-id="419d4-152">**Thumbprint**</span></span>|<span data-ttu-id="419d4-153">パーティの解決および署名の確認に使用される秘密キー証明書の拇印を表示します。</span><span class="sxs-lookup"><span data-stu-id="419d4-153">Displays the thumbprint of the private key certificate that is used for party resolution and signature verification.</span></span> <span data-ttu-id="419d4-154">証明書の拇印には、HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH、H は 16 進数字 (0 ~ 9 の数字) または a ~ F の文字の形式があります。</span><span class="sxs-lookup"><span data-stu-id="419d4-154">The certificate thumbprint has the format HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH, where H is a hexadecimal digit (a number from 0 through 9 or a letter from A through F).</span></span>|  
     |<span data-ttu-id="419d4-155">**証明書を削除します。**</span><span class="sxs-lookup"><span data-stu-id="419d4-155">**Remove certificate**</span></span>|<span data-ttu-id="419d4-156">表示されている証明書を削除する場合にクリックします。</span><span class="sxs-lookup"><span data-stu-id="419d4-156">Click to remove the displayed certificate.</span></span>|  
   
-5.  <span data-ttu-id="419d4-157">をクリックして**適用**、プロパティを受け入れるか、をクリックする**[ok]**構成設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="419d4-157">Click **Apply** to accept the properties, or click **OK** to complete the configuration setting.</span></span> <span data-ttu-id="419d4-158">どちらの操作では、設定を検証します。</span><span class="sxs-lookup"><span data-stu-id="419d4-158">Either action will validate the settings.</span></span>  
+5.  <span data-ttu-id="419d4-157">をクリックして**適用**、プロパティを受け入れるか、をクリックする **[ok]** 構成設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="419d4-157">Click **Apply** to accept the properties, or click **OK** to complete the configuration setting.</span></span> <span data-ttu-id="419d4-158">どちらの操作では、設定を検証します。</span><span class="sxs-lookup"><span data-stu-id="419d4-158">Either action will validate the settings.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="419d4-159">参照</span><span class="sxs-lookup"><span data-stu-id="419d4-159">See Also</span></span>  
  [<span data-ttu-id="419d4-160">EDI のプロパティの構成</span><span class="sxs-lookup"><span data-stu-id="419d4-160">Configuring EDI Properties</span></span>](../core/configuring-edi-properties.md)

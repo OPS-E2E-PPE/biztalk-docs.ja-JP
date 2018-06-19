@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションの退避のパフォーマンス カウンター |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの退避のパフォーマンス カウンター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3ab92e0e-6a33-4aaa-ab14-0c82322b04d5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263786"
 ---
 # <a name="orchestration-dehydration-performance-counters"></a><span data-ttu-id="ad447-102">オーケストレーションの退避のパフォーマンス カウンター</span><span class="sxs-lookup"><span data-stu-id="ad447-102">Orchestration Dehydration Performance Counters</span></span>
 <span data-ttu-id="ad447-103">次の表に、退避の動作を監視するために使用される、オーケストレーション エンジンのパフォーマンス カウンターを示します。</span><span class="sxs-lookup"><span data-stu-id="ad447-103">The following table lists the names of Orchestration Engine performance counters that are specific to monitoring the behavior of dehydration.</span></span> <span data-ttu-id="ad447-104">パフォーマンス モニターを使用すると、これらのカウンターを監視しながら退避パラメーターを調整できます。</span><span class="sxs-lookup"><span data-stu-id="ad447-104">Use Performance Monitor to watch these counters while tuning your dehydration parameters.</span></span>  

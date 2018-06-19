@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 内のアセンブリを展開する方法 |Microsoft ドキュメント"
-description: "GAC にアセンブリを展開し、BizTalk Server 内のアセンブリのバージョン管理を有効にします。"
-ms.custom: 
+title: BizTalk Server 内のアセンブリを展開する方法 |Microsoft ドキュメント
+description: GAC にアセンブリを展開し、BizTalk Server 内のアセンブリのバージョン管理を有効にします。
+ms.custom: ''
 ms.date: 01/21/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7f99ed5-b64a-4a38-99d7-83070fb69030
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006115"
 ---
 # <a name="biztalk-assemblies"></a><span data-ttu-id="845b2-103">BizTalk アセンブリ</span><span class="sxs-lookup"><span data-stu-id="845b2-103">BizTalk Assemblies</span></span>
 <span data-ttu-id="845b2-104">Microsoft BizTalk Server と .NET Framework の特徴として最も重要な点は、BizTalk Server のアイテム、マップ、スキーマ、オーケストレーション、パイプラインがすべて、.NET アセンブリにコンパイルされることです。</span><span class="sxs-lookup"><span data-stu-id="845b2-104">The most important aspect of Microsoft BizTalk Server and the .NET Framework is that all BizTalk Server artifacts; maps, schemas, orchestrations, and pipelines, get compiled into .NET assemblies.</span></span> <span data-ttu-id="845b2-105">このしくみが意味するのは、これらのアセンブリに厳密な名前が必要であり、そのために .NET のバージョン管理規則にも従う必要が生じることです。</span><span class="sxs-lookup"><span data-stu-id="845b2-105">The two most important implications of this design are that these assemblies must have strong names, and because of that, they also follow .NET versioning rules.</span></span> <span data-ttu-id="845b2-106">結果として、BizTalk のプロジェクトは、別の .NET プロジェクトまたはアセンブリ (BizTalk プロジェクトを含む) の特定のバージョンに対して構築されると、新しいバージョンに対して再構築されるまではそのバージョンを使い続けることになります。</span><span class="sxs-lookup"><span data-stu-id="845b2-106">The main implication of this is that a BizTalk project, once built against a particular version of another .NET project or assembly (including BizTalk projects), continues to use that version until it has been rebuilt against a newer version.</span></span>  

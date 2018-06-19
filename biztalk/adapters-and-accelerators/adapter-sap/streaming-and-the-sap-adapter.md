@@ -1,11 +1,11 @@
 ---
-title: "ストリーミングと SAP アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: ストリーミングと SAP アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, support in WCF service model
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - streaming, and the SAP adapter
 - streaming, support in WCF channel model
 ms.assetid: 9fa1788b-f21b-4dec-be14-27dd8080a9d4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218250"
 ---
 # <a name="streaming-and-the-sap-adapter"></a><span data-ttu-id="fa3da-102">ストリーミングと SAP アダプター</span><span class="sxs-lookup"><span data-stu-id="fa3da-102">Streaming and the SAP Adapter</span></span>
 <span data-ttu-id="fa3da-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]メッセージ自体と、クライアント アプリケーションのストリーミングをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="fa3da-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports message streaming between itself and a client application.</span></span> <span data-ttu-id="fa3da-104">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]操作が呼び出され、SOAP メッセージを交換することによって応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="fa3da-104">With the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] operations are invoked and responses are returned by exchanging SOAP messages.</span></span> <span data-ttu-id="fa3da-105">SOAP メッセージの本文は、XML ノードから構成されます。</span><span class="sxs-lookup"><span data-stu-id="fa3da-105">A SOAP message body is composed of XML nodes.</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="fa3da-137">**XmlReader**を呼び出して**Message.GetReaderAtBodyContents()**、または</span><span class="sxs-lookup"><span data-stu-id="fa3da-137">An **XmlReader** by calling **Message.GetReaderAtBodyContents()**, or</span></span>  
   
-    -   <span data-ttu-id="fa3da-138">**XmlDictionaryWriter**を呼び出して**Message.WriteBodyContents(XmlDictionaryWriter)**です。</span><span class="sxs-lookup"><span data-stu-id="fa3da-138">An **XmlDictionaryWriter** by calling **Message.WriteBodyContents(XmlDictionaryWriter)**.</span></span>  
+    -   <span data-ttu-id="fa3da-138">**XmlDictionaryWriter**を呼び出して**Message.WriteBodyContents(XmlDictionaryWriter)** です。</span><span class="sxs-lookup"><span data-stu-id="fa3da-138">An **XmlDictionaryWriter** by calling **Message.WriteBodyContents(XmlDictionaryWriter)**.</span></span>  
   
  <span data-ttu-id="fa3da-139">次の表では、WCF のさまざまな組み合わせを作成して、メッセージを処理の動作方法を示します。</span><span class="sxs-lookup"><span data-stu-id="fa3da-139">The following table shows how WCF behaves for different combinations of creating and consuming messages.</span></span>  
   

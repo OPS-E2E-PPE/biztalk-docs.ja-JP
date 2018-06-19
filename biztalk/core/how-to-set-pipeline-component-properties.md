@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255722"
 ---
 # <a name="how-to-set-pipeline-component-properties"></a><span data-ttu-id="33d37-102">パイプライン コンポーネントのプロパティを設定する方法</span><span class="sxs-lookup"><span data-stu-id="33d37-102">How to Set Pipeline Component Properties</span></span>
 <span data-ttu-id="33d37-103">各コンポーネントには、使用する前に構成することが必要なプロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="33d37-103">Each component has properties that should be configured prior to use.</span></span>  

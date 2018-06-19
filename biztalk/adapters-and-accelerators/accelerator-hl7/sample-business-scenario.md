@@ -1,11 +1,11 @@
 ---
-title: "ビジネス シナリオのサンプル |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス シナリオのサンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTAHL7, business example
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - health care organizations, business example
 - business processes, example
 ms.assetid: 54bfbe45-4638-4488-bbd8-c642926a35d3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004803"
 ---
 # <a name="sample-business-scenario"></a><span data-ttu-id="38408-102">このサンプル ビジネス シナリオ</span><span class="sxs-lookup"><span data-stu-id="38408-102">Sample Business Scenario</span></span>
 <span data-ttu-id="38408-103">医療プロセスは複雑な多くの場合、れ多くのシステム。</span><span class="sxs-lookup"><span data-stu-id="38408-103">Health care processes are often complex and involve many systems.</span></span> <span data-ttu-id="38408-104">例としては患者を病院に入ったときに発生するプロセスし医師がラボ テスト用の患者情報を送信します。</span><span class="sxs-lookup"><span data-stu-id="38408-104">An example is the process that occurs when a patient enters a hospital, and a physician sends the patient for a lab test.</span></span> <span data-ttu-id="38408-105">この手順に関係するには 5 つのパーティを示します。</span><span class="sxs-lookup"><span data-stu-id="38408-105">Involved in this procedure are five parties:</span></span>  

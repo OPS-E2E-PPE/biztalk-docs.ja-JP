@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005499"
 ---
 # <a name="how-to-connect-to-an-existing-group"></a><span data-ttu-id="71ff5-102">既存のグループに接続する方法</span><span class="sxs-lookup"><span data-stu-id="71ff5-102">How to Connect to an Existing Group</span></span>
 <span data-ttu-id="71ff5-103">使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]これらのグループは、同じドメイン内または信頼されたドメイン内のコンピューターにある限り、企業内で 1 つまたは複数の BizTalk Server グループをリモートで管理する、企業内のコンピューターの管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="71ff5-103">You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console on any computer in your enterprise to remotely manage one or more BizTalk Server groups within your enterprise, as long as these groups are located on computers within the same domain or within trusted domains.</span></span>  

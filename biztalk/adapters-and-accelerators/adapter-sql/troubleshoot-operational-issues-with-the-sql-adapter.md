@@ -1,15 +1,15 @@
 ---
-title: "Biztalk SQL アダプターでの運用上の問題のトラブルシューティング |Microsoft ドキュメント"
-description: "共通の問題と、SQL アダプターの BizTalk アダプター パック (BAP) の解決策"
-ms.custom: 
+title: Biztalk SQL アダプターでの運用上の問題のトラブルシューティング |Microsoft ドキュメント
+description: 共通の問題と、SQL アダプターの BizTalk アダプター パック (BAP) の解決策
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c75f85f4-cd03-4c6a-aac9-a6d02d3c3449
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010987"
 ---
 # <a name="troubleshoot-operational-issues-with-the-sql-adapter"></a><span data-ttu-id="9db66-103">SQL アダプタで運用上の問題をトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="9db66-103">Troubleshoot Operational Issues with the SQL adapter</span></span>
 <span data-ttu-id="9db66-104">このセクションで説明を使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="9db66-104">This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)].</span></span>  

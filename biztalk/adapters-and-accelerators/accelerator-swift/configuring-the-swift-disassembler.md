@@ -1,17 +1,17 @@
 ---
-title: "SWIFT の逆アセンブラーの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT の逆アセンブラーの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, disassembler
 - disassembler, configuring
 ms.assetid: f3773781-7412-421c-943c-18cc665da8d9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005363"
 ---
 # <a name="configuring-the-swift-disassembler"></a><span data-ttu-id="44d47-102">SWIFT の逆アセンブラーを構成します。</span><span class="sxs-lookup"><span data-stu-id="44d47-102">Configuring the SWIFT Disassembler</span></span>
 <span data-ttu-id="44d47-103">を呼び出すときは、SWIFT 逆アセンブラー (DASM) は、次のタスクを実行、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信パイプライン。</span><span class="sxs-lookup"><span data-stu-id="44d47-103">The SWIFT disassembler (DASM) performs the following tasks when you invoke it in a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] receive pipeline:</span></span>  

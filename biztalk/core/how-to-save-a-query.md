@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255378"
 ---
 # <a name="how-to-save-a-query"></a><span data-ttu-id="49658-102">クエリを保存する方法</span><span class="sxs-lookup"><span data-stu-id="49658-102">How to Save a Query</span></span>
 <span data-ttu-id="49658-103">後で再利用するためにクエリを保存できます。</span><span class="sxs-lookup"><span data-stu-id="49658-103">You can save a query for later reuse.</span></span> <span data-ttu-id="49658-104">既定では、保存されたクエリが格納されている、**マイ ドキュメント**を作成してそれらを保存したユーザーのフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="49658-104">By default, saved queries are stored in the **My Documents** folder of the user who created and saved them.</span></span>  

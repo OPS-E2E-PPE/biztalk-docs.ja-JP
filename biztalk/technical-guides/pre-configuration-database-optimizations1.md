@@ -1,14 +1,14 @@
 ---
-title: "事前構成データベース Optimizations1 |Microsoft ドキュメント"
-ms.custom: 
+title: 事前構成データベース Optimizations1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebd0b32a-490d-4db2-a1fc-bf3bef93aeea
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010555"
 ---
 # <a name="pre-configuration-database-optimizations"></a><span data-ttu-id="805dd-102">事前構成データベースの最適化</span><span class="sxs-lookup"><span data-stu-id="805dd-102">Pre-Configuration Database Optimizations</span></span>
 <span data-ttu-id="805dd-103">BizTalk Server は、Microsoft SQL Server で最大 13 個の独立したデータベースの作成を必要とするデータベースを非常に大量に消費するアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="805dd-103">BizTalk Server is an extremely database-intensive application that may require the creation of up to 13 separate databases in Microsoft SQL Server.</span></span> <span data-ttu-id="805dd-104">ため、BizTalk Server 環境で SQL Server が再生される重要な役割がきわめて重要 SQL Server では、パフォーマンスを最適に構成されているチューニングがあります。</span><span class="sxs-lookup"><span data-stu-id="805dd-104">Because of the critical role that SQL Server plays in any BizTalk Server environment, it is of paramount importance that SQL Server is configured/tuned for optimal performance.</span></span> <span data-ttu-id="805dd-105">SQL Server が正しく実行するチューニングされなかった場合は、BizTalk Server で使用するデータベースがボトルネックになり、BizTalk Server 環境の全体的なパフォーマンスが低下します。</span><span class="sxs-lookup"><span data-stu-id="805dd-105">If SQL Server is not tuned to perform well, then the databases used by BizTalk Server will become a bottleneck and the overall performance of the BizTalk Server environment will suffer.</span></span> <span data-ttu-id="805dd-106">このトピックでは、BizTalk Server をインストールして、BizTalk Server データベースを構成する前に従う必要があります複数の SQL Server パフォーマンス最適化機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="805dd-106">This topic describes several SQL Server performance optimizations that should be followed before installing BizTalk Server and configuring the BizTalk Server databases.</span></span>  

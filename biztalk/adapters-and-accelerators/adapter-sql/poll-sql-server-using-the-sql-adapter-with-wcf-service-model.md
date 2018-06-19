@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルで、SQL アダプターを使用してポーリング SQL Server |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルで、SQL アダプターを使用してポーリング SQL Server |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eef2e868-bd51-4393-b091-f67299b4759d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222914"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-wcf-service-model"></a><span data-ttu-id="2840c-102">WCF サービス モデルで、SQL アダプターを使用して SQL サーバーにポーリング</span><span class="sxs-lookup"><span data-stu-id="2840c-102">Poll SQL Server using the SQL Adapter with WCF Service Model</span></span>
 <span data-ttu-id="2840c-103">構成することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server からデータ変更のポーリングに基づいたメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="2840c-103">You can configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive polling-based data-changed messages from SQL Server.</span></span> <span data-ttu-id="2840c-104">データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="2840c-104">You can specify a polling statement that the adapter executes to poll the database.</span></span> <span data-ttu-id="2840c-105">ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。</span><span class="sxs-lookup"><span data-stu-id="2840c-105">The polling statement can be a SELECT statement or a stored procedure that returns a result set.</span></span> <span data-ttu-id="2840c-106">ポーリングのメッセージの種類に基づいて、アダプターは、さまざまなポーリング操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="2840c-106">Based on the type of polling message received, the adapter exposes different polling operations:</span></span>  

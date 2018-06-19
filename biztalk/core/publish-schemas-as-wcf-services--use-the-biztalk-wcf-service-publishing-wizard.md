@@ -1,11 +1,11 @@
 ---
-title: "BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, WCF services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - WCF services, schemas
 - WCF Service Publishing Wizard
 ms.assetid: 3b770fd5-5b7b-493f-9016-d7d58854c5ff
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975384"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-schemas-as-wcf-services"></a><span data-ttu-id="b4f08-102">BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法</span><span class="sxs-lookup"><span data-stu-id="b4f08-102">How to Use the BizTalk WCF Service Publishing Wizard to Publish Schemas as WCF Services</span></span>
 <span data-ttu-id="b4f08-103">スキーマを WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="b4f08-103">You use the BizTalk WCF Service Publishing Wizard to publish schemas as WCF services.</span></span>  
@@ -45,16 +46,16 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="b4f08-113">**WCF サービスの種類**ページ、オンまたはオフ、**メタデータ エンドポイントを有効にする**分離された WCF の受信場所のインターネット インフォメーション サービス (IIS) によってホストされているかどうかを示すチェック ボックスが発行します。サービス メタデータが HTTP/GET 要求を使用した取得用。</span><span class="sxs-lookup"><span data-stu-id="b4f08-113">On the **WCF Service Type** page, select or clear the **Enable metadata endpoint** check box to indicate whether the isolated WCF receive location hosted by Internet Information Services (IIS) will publish service metadata for retrieval using an HTTP/GET request.</span></span>  
   
-     <span data-ttu-id="b4f08-114">このチェック ボックスをオンすると、ウィザードが生成されます、Web.config ファイルを**httpGetEnabled**の属性、  **\<serviceMetadata\>**  に要素が設定されている**true**です。</span><span class="sxs-lookup"><span data-stu-id="b4f08-114">When this check box is selected, the wizard generates a Web.config file  in which the **httpGetEnabled** attribute of the **\<serviceMetadata\>** element is set to **true**.</span></span> <span data-ttu-id="b4f08-115">メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-115">You can use a metadata import tool (such as SvcUtil.exe) to generate the client code required to call this service in the development environment.</span></span> <span data-ttu-id="b4f08-116">メタデータが公開されるアドレスは、エンドポイント アドレスと**? wsdl**クエリ文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f08-116">The address at which the metadata is published is the endpoint address plus a **?wsdl** query string.</span></span>  
+     <span data-ttu-id="b4f08-114">このチェック ボックスをオンすると、ウィザードが生成されます、Web.config ファイルを**httpGetEnabled**の属性、  **\<serviceMetadata\>**  に要素が設定されている**true**です。</span><span class="sxs-lookup"><span data-stu-id="b4f08-114">When this check box is selected, the wizard generates a Web.config file  in which the **httpGetEnabled** attribute of the **\<serviceMetadata\>** element is set to **true**.</span></span> <span data-ttu-id="b4f08-115">メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-115">You can use a metadata import tool (such as SvcUtil.exe) to generate the client code required to call this service in the development environment.</span></span> <span data-ttu-id="b4f08-116">メタデータが公開されるアドレスは、エンドポイント アドレスと **? wsdl**クエリ文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f08-116">The address at which the metadata is published is the endpoint address plus a **?wsdl** query string.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="b4f08-117">機密性の高いサービス メタデータが誤って漏洩を防ぐためには、実稼働環境でこの動作を無効にすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b4f08-117">To prevent unintentional disclosure of potentially sensitive service metadata, we recommend that you disable this behavior in the production environment.</span></span> <span data-ttu-id="b4f08-118">これは、httpgetenabled を false に設定、または、MEX 仮想ディレクトリを削除して実行できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-118">This can be done by setting httpgetenabled to false, or deleting the MEX virtual directory.</span></span>  
   
-5.  <span data-ttu-id="b4f08-119">**WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)**ドロップダウン リストで、WCF サービスの公開に使用する分離 WCF アダプターを選択します。</span><span class="sxs-lookup"><span data-stu-id="b4f08-119">On the **WCF Service Type** page, in the **Adapter name (Transport type)** drop-down list, select the isolated WCF adapter with which the WCF services are published.</span></span> <span data-ttu-id="b4f08-120">以下のいずれかのアダプターを選択できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-120">You can select any of the following adapters:</span></span>  
+5.  <span data-ttu-id="b4f08-119">**WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)** ドロップダウン リストで、WCF サービスの公開に使用する分離 WCF アダプターを選択します。</span><span class="sxs-lookup"><span data-stu-id="b4f08-119">On the **WCF Service Type** page, in the **Adapter name (Transport type)** drop-down list, select the isolated WCF adapter with which the WCF services are published.</span></span> <span data-ttu-id="b4f08-120">以下のいずれかのアダプターを選択できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-120">You can select any of the following adapters:</span></span>  
   
     -   <span data-ttu-id="b4f08-121">**Wcf-basichttp です。**</span><span class="sxs-lookup"><span data-stu-id="b4f08-121">**WCF-BasicHttp.**</span></span> <span data-ttu-id="b4f08-122">: WCF-BasicHttp 受信アダプターは、ASMX ベースのサービスなど WS-I 基本プロファイル 1.1 準拠の Web サービスと通信できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-122">The WCF-BasicHttp adapter can communicate with WS-I Basic Profile 1.1-conformant Web services like ASMX-based services.</span></span>  
   
-    -   <span data-ttu-id="b4f08-123">**Wcf-wshttp です。**</span><span class="sxs-lookup"><span data-stu-id="b4f08-123">**WCF-WSHttp.**</span></span> <span data-ttu-id="b4f08-124">: WCF-WSHttp アダプターは、HTTP および HTTPS を使用し WS-* 標準をとおしてサービスと通信できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-124">The WCF-WSHttp adapter can communicate with a service through the WS-* standards over HTTP and HTTPS.</span></span>  
+    -   <span data-ttu-id="b4f08-123">**Wcf-wshttp です。**</span><span class="sxs-lookup"><span data-stu-id="b4f08-123">**WCF-WSHttp.**</span></span> <span data-ttu-id="b4f08-124">: WCF-WSHttp アダプターは、HTTP および HTTPS を使用し WS-\* 標準をとおしてサービスと通信できます。</span><span class="sxs-lookup"><span data-stu-id="b4f08-124">The WCF-WSHttp adapter can communicate with a service through the WS-\* standards over HTTP and HTTPS.</span></span>  
   
     -   <span data-ttu-id="b4f08-125">**Wcf-customisolated です。**</span><span class="sxs-lookup"><span data-stu-id="b4f08-125">**WCF-CustomIsolated.**</span></span> <span data-ttu-id="b4f08-126">: WCF-CustomIsolated アダプターを使用すると、HTTP トランスポートで WCF (Windows Communication Foundation) の拡張機能を利用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="b4f08-126">The WCF-CustomIsolated adapter enables the use of Windows Communication Foundation (WCF) extensibility features over the HTTP transport.</span></span>  
   

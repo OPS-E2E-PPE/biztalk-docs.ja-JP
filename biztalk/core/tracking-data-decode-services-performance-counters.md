@@ -1,14 +1,14 @@
 ---
-title: "Tracking Data Decode Services のパフォーマンス カウンター |Microsoft ドキュメント"
-ms.custom: 
+title: Tracking Data Decode Services のパフォーマンス カウンター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 733450b1-71b5-48a4-9ac3-cd880324440c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973248"
 ---
 # <a name="tracking-data-decode-services-performance-counters"></a><span data-ttu-id="2ee2b-102">Tracking Data Decode Services のパフォーマンス カウンター</span><span class="sxs-lookup"><span data-stu-id="2ee2b-102">Tracking Data Decode Services Performance Counters</span></span>
 <span data-ttu-id="2ee2b-103">パフォーマンス カウンターを使用すると、サービスによってサイトまたはシステムで実行されている作業の具体的な側面を監視できます。</span><span class="sxs-lookup"><span data-stu-id="2ee2b-103">Performance counters allow you to monitor specific aspects of work performed on the site or system by service.</span></span> <span data-ttu-id="2ee2b-104">パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="2ee2b-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span>  

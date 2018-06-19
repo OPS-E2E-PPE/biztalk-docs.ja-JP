@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc4f2656-2faa-4503-9551-05e1b6eceb1a
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010875"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a><span data-ttu-id="ae11a-102">BAM プライマリ インポート データベースを移動する方法</span><span class="sxs-lookup"><span data-stu-id="ae11a-102">How to Move the BAM Primary Import Database</span></span>
 <span data-ttu-id="ae11a-103">ここでは、BAM プライマリ インポート データベースを他のサーバーに移動する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="ae11a-103">You can use this procedure to move the BAM Primary Import database to another server.</span></span> <span data-ttu-id="ae11a-104">エンド ツー エンドのシナリオの観点から BAM プライマリ インポート データベースの移動にも 2 つの主要な手順が含まれます。</span><span class="sxs-lookup"><span data-stu-id="ae11a-104">From an end-to-end scenario perspective, moving the BAM Primary Import database involves two major steps:</span></span>  
@@ -148,7 +149,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="ae11a-171">**ファイル**  メニューのをクリックして **を閉じるし、Microsoft Excel へ戻る**します。</span><span class="sxs-lookup"><span data-stu-id="ae11a-171">On the **File** menu, click **Close and Return to Microsoft Excel**.</span></span>  
   
-5.  <span data-ttu-id="ae11a-172">**[ファイル]** メニューの **[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae11a-172">On the **File** menu, click **Save**.</span></span>  
+5.  <span data-ttu-id="ae11a-172">**[ファイル]** メニューの **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae11a-172">On the **File** menu, click **Save**.</span></span>  
   
 ###  <a name="BKMK_UpdatePckg"></a> <span data-ttu-id="ae11a-173">サーバーとすべての BAM SSIS パッケージ内のデータベース名を更新するには</span><span class="sxs-lookup"><span data-stu-id="ae11a-173">To update server and database names in all BAM SSIS packages</span></span>  
   
@@ -156,7 +157,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="ae11a-176">SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。</span><span class="sxs-lookup"><span data-stu-id="ae11a-176">In SQL Server Business Intelligence Development Studio, create a new project.</span></span> <span data-ttu-id="ae11a-177">クリックして **ファイル**, 、 をクリックして **新規**, 、 をクリックし、 **プロジェクト**します。</span><span class="sxs-lookup"><span data-stu-id="ae11a-177">Click **File**, click **New**, and then click **Project**.</span></span>  
   
-3.  <span data-ttu-id="ae11a-178">**新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="ae11a-178">In the **New Project** dialog box, in the **Project Types** box, click **Business Intelligence Projects**.</span></span> <span data-ttu-id="ae11a-179">右側のウィンドウでの**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**をクリックし、 **[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="ae11a-179">In the right pane, in the **Templates** box, click **Integration Services Project**, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="ae11a-178">**新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="ae11a-178">In the **New Project** dialog box, in the **Project Types** box, click **Business Intelligence Projects**.</span></span> <span data-ttu-id="ae11a-179">右側のウィンドウでの**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**をクリックし、 **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="ae11a-179">In the right pane, in the **Templates** box, click **Integration Services Project**, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="ae11a-180">**Integration Services プロジェクト**ダイアログ ボックスで、ソリューション エクスプ ローラーで右クリックし**SSIS パッケージ**、クリックして**既存のパッケージの追加**です。</span><span class="sxs-lookup"><span data-stu-id="ae11a-180">In the **Integration Services Project** dialog box, in Solution Explorer, right-click **SSIS Packages**, and then click **Add Existing Package**.</span></span>  
   
@@ -210,7 +211,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="ae11a-208">オブジェクト エクスプ ローラーで、**データベース**、展開**BAMAnalysis**、展開**データ ソース**、データ ソースをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae11a-208">In the Object Explorer, expand **Databases**, expand **BAMAnalysis**, expand **Data Sources**, and then double-click a data source.</span></span>  
   
-4.  <span data-ttu-id="ae11a-209">**データ ソースのプロパティ** ダイアログ ボックスで、省略記号ボタンをクリックして**(...)**に対して、**接続文字列**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="ae11a-209">In the **Data Source Properties** dialog box, click the ellipsis button **(…)** against the **Connection String** property.</span></span>  
+4.  <span data-ttu-id="ae11a-209">**データ ソースのプロパティ** ダイアログ ボックスで、省略記号ボタンをクリックして **(...)** に対して、**接続文字列**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="ae11a-209">In the **Data Source Properties** dialog box, click the ellipsis button **(…)** against the **Connection String** property.</span></span>  
   
 5.  <span data-ttu-id="ae11a-210">**接続マネージャー**  ダイアログ ボックスで、**サーバー名**ボックスを BAMPrimaryImport データベースをホストしているサーバーの名前を入力し、をクリックして**OK**をクリックして**Ok**です。</span><span class="sxs-lookup"><span data-stu-id="ae11a-210">In the **Connection Manager** dialog box, in the **Server name** box, enter the name of the server hosting the BAMPrimaryImport database, click **OK**, and then click **OK**.</span></span>  
   

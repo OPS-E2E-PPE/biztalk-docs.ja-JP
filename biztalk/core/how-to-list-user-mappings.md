@@ -1,17 +1,17 @@
 ---
-title: "ユーザー マッピングを一覧表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー マッピングを一覧表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO maps], listing maps
 - maps [SSO], listing maps
 ms.assetid: f9b73785-3a59-45c8-9e88-d2d16b5a46aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972152"
 ---
 # <a name="how-to-list-user-mappings"></a><span data-ttu-id="b62ba-102">ユーザー マッピングを一覧表示する方法</span><span class="sxs-lookup"><span data-stu-id="b62ba-102">How to List User Mappings</span></span>
 <span data-ttu-id="b62ba-103">ここで示すコマンドを使用すると、指定したユーザーの既存のマッピングすべてを一覧表示できます。</span><span class="sxs-lookup"><span data-stu-id="b62ba-103">Use this command to list all the existing mappings for the specified user.</span></span>  
   
  <span data-ttu-id="b62ba-104">この作業を行うには、SSO 管理者、アプリケーション管理者、SSO 関連管理者、またはユーザーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="b62ba-104">You must be an SSO administrator, application administrator, SSO affiliate administrator, or user to do this task.</span></span>  
   
- <span data-ttu-id="b62ba-105">(E) として表示される有効なユーザー マッピング\<*ドメイン*\>\\*\<username\>*無効になっているときに、(D)としてユーザーマッピングが表示されます\<*ドメイン*\>\\*\<username\>*です。</span><span class="sxs-lookup"><span data-stu-id="b62ba-105">Enabled user mappings appear as (E) \<*domain*\>\\*\<username\>*, while disabled user mappings appear as (D) \<*domain*\>\\*\<username\>*.</span></span>  
+ <span data-ttu-id="b62ba-105">(E) として表示される有効なユーザー マッピング\<*ドメイン*\>\\*\<username\>* 無効になっているときに、(D)としてユーザーマッピングが表示されます\<*ドメイン*\>\\*\<username\>* です。</span><span class="sxs-lookup"><span data-stu-id="b62ba-105">Enabled user mappings appear as (E) \<*domain*\>\\*\<username\>*, while disabled user mappings appear as (D) \<*domain*\>\\*\<username\>*.</span></span>  
   
 ### <a name="to-list-user-mappings-using-the-administration-utility"></a><span data-ttu-id="b62ba-106">管理ユーティリティを使用してユーザー マッピングを一覧表示するには</span><span class="sxs-lookup"><span data-stu-id="b62ba-106">To list user mappings using the administration utility</span></span>  
   
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="b62ba-110">次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="b62ba-110">Do one of the following:</span></span>  
   
-    -   <span data-ttu-id="b62ba-111">型**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>*** 関連アプリケーション内の特定のユーザーがすべてのマッピングを一覧表示登録したが属している、where *\<ドメイン\>*は、Microsoft Windows ドメイン ユーザー アカウントと *\<username\>* は、ユーザー マッピングを一覧表示する Windows ユーザー名。</span><span class="sxs-lookup"><span data-stu-id="b62ba-111">Type **ssomanage –listmappings *\<domain\>\\<username\>*** to list all the mappings a given user has in the affiliate applications he/she belongs to, where *\<domain\>* is the Microsoft Windows domain for the user account, and *\<username\>* is the Windows user name for which you want to list the user mappings.</span></span> <span data-ttu-id="b62ba-112">ユーザーが関連管理者または SSO 管理者である場合にこのコマンドを実行すると、すべての関連アプリケーションを対象に、そのユーザーのすべてのマッピングが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="b62ba-112">If the user is an Affiliate Administrator or an SSO Administrator, this command will list all the mappings for that user in all the affiliate applications.</span></span>  
+    -   <span data-ttu-id="b62ba-111">型**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>*** 関連アプリケーション内の特定のユーザーがすべてのマッピングを一覧表示登録したが属している、where *\<ドメイン\>* は、Microsoft Windows ドメイン ユーザー アカウントと *\<username\>* は、ユーザー マッピングを一覧表示する Windows ユーザー名。</span><span class="sxs-lookup"><span data-stu-id="b62ba-111">Type **ssomanage –listmappings *\<domain\>\\<username\>*** to list all the mappings a given user has in the affiliate applications he/she belongs to, where *\<domain\>* is the Microsoft Windows domain for the user account, and *\<username\>* is the Windows user name for which you want to list the user mappings.</span></span> <span data-ttu-id="b62ba-112">ユーザーが関連管理者または SSO 管理者である場合にこのコマンドを実行すると、すべての関連アプリケーションを対象に、そのユーザーのすべてのマッピングが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="b62ba-112">If the user is an Affiliate Administrator or an SSO Administrator, this command will list all the mappings for that user in all the affiliate applications.</span></span>  
   
          <span data-ttu-id="b62ba-113">または</span><span class="sxs-lookup"><span data-stu-id="b62ba-113">Or</span></span>  
   

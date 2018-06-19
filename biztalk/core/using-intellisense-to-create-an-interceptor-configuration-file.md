@@ -1,14 +1,14 @@
 ---
-title: "IntelliSense を使用して、インターセプター構成ファイルを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: IntelliSense を使用して、インターセプター構成ファイルを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 349ea1bf-a5d1-4464-bf4b-d8746c622377
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287970"
 ---
 # <a name="using-intellisense-to-create-an-interceptor-configuration-file"></a><span data-ttu-id="4d241-102">IntelliSense を使用したインターセプター構成ファイルの作成</span><span class="sxs-lookup"><span data-stu-id="4d241-102">Using IntelliSense to Create an Interceptor Configuration File</span></span>
 <span data-ttu-id="4d241-103">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の Intellisense およびスキーマ検証を使用して、図式的に有効なインターセプター構成ファイルを構築できます。</span><span class="sxs-lookup"><span data-stu-id="4d241-103">You can use IntelliSense and schema validation in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] to help you construct interceptor configuration files that are schematically valid.</span></span> <span data-ttu-id="4d241-104">BAM 管理ユーティリティは、基本的なインターセプター構成スキーマに対してインターセプター構成ファイルを検証し、ファイルが無効な場合はスキーマを展開しません。</span><span class="sxs-lookup"><span data-stu-id="4d241-104">The BAM management utility validates your interceptor configuration file against the base interceptor configuration schema and, if the file is not valid, does not deploy the schema.</span></span> <span data-ttu-id="4d241-105">ファイルが基本的なインターセプター構成スキーマに対する検証に合格すると、[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] スキーマや [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] スキーマなど、テクノロジ固有のスキーマに対して実行時に検証が行われ、エラーが発生した場合は傍受を行いません。</span><span class="sxs-lookup"><span data-stu-id="4d241-105">If the file passes validation against the base interceptor configuration schema, it is validated against technology-specific schemas like the [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] schema or the [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] schema during run time and if errors are encountered, no interception will occur.</span></span> <span data-ttu-id="4d241-106">インターセプター構成ファイルを構築するときに、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のスキーマ検証を使用することで、これらのエラーを回避できます。</span><span class="sxs-lookup"><span data-stu-id="4d241-106">You can avoid these errors by using schema validation in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] when constructing your interceptor configuration file.</span></span>  

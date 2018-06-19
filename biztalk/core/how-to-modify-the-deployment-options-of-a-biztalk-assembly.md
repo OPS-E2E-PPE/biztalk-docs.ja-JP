@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アセンブリの展開オプションを変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アセンブリの展開オプションを変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - modifying, deploying
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [assemblies], deploying
 - assemblies, deploying
 ms.assetid: d25e2f71-08bd-4786-ab6c-35ae4e88b8cc
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007755"
 ---
 # <a name="how-to-modify-the-deployment-options-of-a-biztalk-assembly"></a><span data-ttu-id="d80f1-102">BizTalk アセンブリの展開オプションを変更する方法</span><span class="sxs-lookup"><span data-stu-id="d80f1-102">How to Modify the Deployment Options of a BizTalk Assembly</span></span>
 <span data-ttu-id="d80f1-103">このトピックでは、BizTalk Server 管理コンソールを使用して BizTalk アセンブリの展開オプションを変更する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d80f1-103">This topic describes how to use the BizTalk Server Administration console to modify the deployment options of a BizTalk assembly.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="d80f1-111">**MSI ファイル インストール (します gacutil) のグローバル アセンブリ キャッシュに追加します。**</span><span class="sxs-lookup"><span data-stu-id="d80f1-111">**Add to the global assembly cache on MSI file install (gacutil).**</span></span> <span data-ttu-id="d80f1-112">アプリケーションが .msi ファイルからインストールされるときに、ローカル コンピューターの GAC にアセンブリをインストールします。</span><span class="sxs-lookup"><span data-stu-id="d80f1-112">Install the assembly to the GAC on the local computer when the application is installed from the .msi file.</span></span>  
   
--   <span data-ttu-id="d80f1-113">**移行先の場所:**コピー先となるアセンブリ ファイルは、アプリケーションがインストールされているときにパスします。</span><span class="sxs-lookup"><span data-stu-id="d80f1-113">**Destination location:** Path to which the assembly file will be copied when the application is installed.</span></span> <span data-ttu-id="d80f1-114">パスを指定しないと、インストール時にローカル ファイル システムにアセンブリ ファイルがコピーされません。</span><span class="sxs-lookup"><span data-stu-id="d80f1-114">If a path is not provided, the assembly file is not copied to the local file system on installation.</span></span>  
+-   <span data-ttu-id="d80f1-113">**移行先の場所:** コピー先となるアセンブリ ファイルは、アプリケーションがインストールされているときにパスします。</span><span class="sxs-lookup"><span data-stu-id="d80f1-113">**Destination location:** Path to which the assembly file will be copied when the application is installed.</span></span> <span data-ttu-id="d80f1-114">パスを指定しないと、インストール時にローカル ファイル システムにアセンブリ ファイルがコピーされません。</span><span class="sxs-lookup"><span data-stu-id="d80f1-114">If a path is not provided, the assembly file is not copied to the local file system on installation.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="d80f1-115">前提条件</span><span class="sxs-lookup"><span data-stu-id="d80f1-115">Prerequisites</span></span>  
  <span data-ttu-id="d80f1-116">このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントを使用してログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d80f1-116">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="d80f1-117">また、アセンブリを直ちに GAC に追加するオプションを選択する場合は、アカウントはローカルの管理者グループのメンバーである必要もあります。</span><span class="sxs-lookup"><span data-stu-id="d80f1-117">In addition, if you select an option that immediately adds the assembly to the GAC, your account must also be a member of the local Administrator's group.</span></span> <span data-ttu-id="d80f1-118">詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="d80f1-118">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 3: 複数の単体テストを同時に実行するロード テストの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 複数の単体テストを同時に実行するロード テストの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5dd7e31-7188-4edf-9513-ea2725950b47
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976552"
 ---
 # <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a><span data-ttu-id="a2cd2-102">手順 3: 複数の単体テストを同時に実行するロード テストを作成します。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-102">Step 3: Create a Load Test to Perform Multiple Unit Tests Simultaneously</span></span>
 <span data-ttu-id="a2cd2-103">ロード テストの実行のいずれかの複数のインスタンスまたは複数の単体テストをアプリケーションのパフォーマンスと負荷を処理する能力を測定するようにします。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-103">Load tests run multiple instances of one or more unit tests so that you can measure your application's performance and ability to handle load.</span></span> <span data-ttu-id="a2cd2-104">Visual Studio 2010 のロード テストの主要なコンポーネントは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-104">The primary components of a Visual Studio 2010 load test include:</span></span>  
@@ -43,11 +44,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="a2cd2-129">ソリューション エクスプ ローラーを右クリックし、 **BTSLoad**プロジェクトをポイントし、**追加**、クリックして**ロード テスト**を開始する、**新しいロード テスト ウィザード**.</span><span class="sxs-lookup"><span data-stu-id="a2cd2-129">In Solution Explorer, right-click on the **BTSLoad** project, point to **Add**, and then click **Load Test** to start the **New Load Test Wizard**.</span></span>  
   
-4.  <span data-ttu-id="a2cd2-130">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-130">Click **Next**.</span></span>  
+4.  <span data-ttu-id="a2cd2-130">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-130">Click **Next**.</span></span>  
   
-5.  <span data-ttu-id="a2cd2-131">**ロード テスト シナリオの設定の編集**ページで、**ロード テスト シナリオの名前を入力:**型**BTS_Messaging_Step**です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-131">On the **Edit Settings for a Load Test Scenario** page under **Enter a name for the load test scenario:** type **BTS_Messaging_Step**.</span></span> <span data-ttu-id="a2cd2-132">[**待ち時間のプロファイル**選択**待ち時間を使用しないでください**] をクリックし、 **[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-132">Under **Think time profile** select **Do not use think times** and then click **Next**.</span></span>  
+5.  <span data-ttu-id="a2cd2-131">**ロード テスト シナリオの設定の編集**ページで、**ロード テスト シナリオの名前を入力:** 型**BTS_Messaging_Step**です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-131">On the **Edit Settings for a Load Test Scenario** page under **Enter a name for the load test scenario:** type **BTS_Messaging_Step**.</span></span> <span data-ttu-id="a2cd2-132">[**待ち時間のプロファイル**選択**待ち時間を使用しないでください**] をクリックし、 **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-132">Under **Think time profile** select **Do not use think times** and then click **Next**.</span></span>  
   
-6.  <span data-ttu-id="a2cd2-133">**ロード パターン設定の編集、負荷テスト シナリオ**選択のページ**ステップ ロード**、以下の値を入力し、をクリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-133">On the **Edit load pattern settings for a load test scenario** page select **Step load**, enter the values below and then click **Next**.</span></span>  
+6.  <span data-ttu-id="a2cd2-133">**ロード パターン設定の編集、負荷テスト シナリオ**選択のページ**ステップ ロード**、以下の値を入力し、をクリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-133">On the **Edit load pattern settings for a load test scenario** page select **Step load**, enter the values below and then click **Next**.</span></span>  
   
     -   <span data-ttu-id="a2cd2-134">**ユーザー カウントの開始:** 30 ユーザー</span><span class="sxs-lookup"><span data-stu-id="a2cd2-134">**Start user count:** 30 users</span></span>  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="a2cd2-181">パフォーマンス カテゴリ</span><span class="sxs-lookup"><span data-stu-id="a2cd2-181">Performance Category</span></span>|<span data-ttu-id="a2cd2-182">パフォーマンス カウンター</span><span class="sxs-lookup"><span data-stu-id="a2cd2-182">Performance Counter</span></span>|  
     |--------------------------|-------------------------|  
     |<span data-ttu-id="a2cd2-183">プロセッサ</span><span class="sxs-lookup"><span data-stu-id="a2cd2-183">Processor</span></span>|<span data-ttu-id="a2cd2-184">_Total カウンター インスタンスのプロセッサ時間 (%)</span><span class="sxs-lookup"><span data-stu-id="a2cd2-184">% Processor Time for the _Total counter instance.</span></span>|  
-    |<span data-ttu-id="a2cd2-185">Biztalk: メッセージ ボックス: 一般的なカウンター</span><span class="sxs-lookup"><span data-stu-id="a2cd2-185">BizTalk:Message Box: General Counters</span></span>|<span data-ttu-id="a2cd2-186">スプールのサイズ、  *\<BizTalk メッセージ ボックス データベース名\>*:*\<SQL Server インスタンス名\>*カウンター インスタンス。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-186">Spool Size for the *\<BizTalk MessageBox database name\>*:*\<SQL Server instance name\>* counter instance.</span></span> <span data-ttu-id="a2cd2-187">**注:***\<BizTalk メッセージ ボックス データベース名\>*と *\<SQL Server インスタンス名\>*だけのプレース ホルダー、BizTalk メッセージ ボックス データベースおよび BizTalk メッセージ ボックス データベースを格納する SQL Server インスタンスの実際の名前。  </span><span class="sxs-lookup"><span data-stu-id="a2cd2-187">**Note:**  *\<BizTalk MessageBox database name\>* and *\<SQL Server instance name\>* are just placeholders for the actual names of the BizTalk MessageBox database and the SQL Server instance that houses the BizTalk MessageBox database.</span></span> <span data-ttu-id="a2cd2-188">これらのプレース ホルダーは、BizTalk メッセージ ボックス データベースと関連付けられている SQL Server インスタンスの実際の名前に置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-188">These placeholders should be replaced with the actual names of the BizTalk MessageBox database and associated SQL Server instance.</span></span>|  
+    |<span data-ttu-id="a2cd2-185">Biztalk: メッセージ ボックス: 一般的なカウンター</span><span class="sxs-lookup"><span data-stu-id="a2cd2-185">BizTalk:Message Box: General Counters</span></span>|<span data-ttu-id="a2cd2-186">スプールのサイズ、  *\<BizTalk メッセージ ボックス データベース名\>*:*\<SQL Server インスタンス名\>* カウンター インスタンス。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-186">Spool Size for the *\<BizTalk MessageBox database name\>*:*\<SQL Server instance name\>* counter instance.</span></span> <span data-ttu-id="a2cd2-187">**注:***\<BizTalk メッセージ ボックス データベース名\>* と *\<SQL Server インスタンス名\>* だけのプレース ホルダー、BizTalk メッセージ ボックス データベースおよび BizTalk メッセージ ボックス データベースを格納する SQL Server インスタンスの実際の名前。  </span><span class="sxs-lookup"><span data-stu-id="a2cd2-187">**Note:**  *\<BizTalk MessageBox database name\>* and *\<SQL Server instance name\>* are just placeholders for the actual names of the BizTalk MessageBox database and the SQL Server instance that houses the BizTalk MessageBox database.</span></span> <span data-ttu-id="a2cd2-188">これらのプレース ホルダーは、BizTalk メッセージ ボックス データベースと関連付けられている SQL Server インスタンスの実際の名前に置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-188">These placeholders should be replaced with the actual names of the BizTalk MessageBox database and associated SQL Server instance.</span></span>|  
     |<span data-ttu-id="a2cd2-189">BizTalk:メッセージング</span><span class="sxs-lookup"><span data-stu-id="a2cd2-189">BizTalk:Messaging</span></span>|<span data-ttu-id="a2cd2-190">受信ホスト カウンター インスタンスの受信/秒を説明します。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-190">Documents received/Sec for the receive host counter instance.</span></span><br /><br /> <span data-ttu-id="a2cd2-191">ドキュメント処理数/秒の送信ホスト カウンター インスタンス。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-191">Documents processed/Sec for the transmit host counter instance.</span></span>|  
     |<span data-ttu-id="a2cd2-192">BizTalk:Message Agent</span><span class="sxs-lookup"><span data-stu-id="a2cd2-192">BizTalk:Message Agent</span></span>|<span data-ttu-id="a2cd2-193">ドキュメントのメッセージ配信の受信速度では、ホストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-193">Message delivery incoming rate for the document receive host.</span></span>|  
     |<span data-ttu-id="a2cd2-194">BizTalk:Message Agent</span><span class="sxs-lookup"><span data-stu-id="a2cd2-194">BizTalk:Message Agent</span></span>|<span data-ttu-id="a2cd2-195">メッセージは、ドキュメントの送信ホストの送信速度を公開します。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-195">Message publishing outgoing rate for the document transmit host.</span></span>|  
@@ -161,7 +162,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="a2cd2-213">手順 24、オプションを選択します**既定のホストで実行する**、select、**型ホスト**の**既定**、し、 **32 ビットまたは 64 ビット プロセスでテストを実行**、。オプションを選択して**64 ビット コンピューターで 64 ビット プロセスでテストを実行**です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-213">For Step 24, select the option **to Run in default host**, select a **Host type** of **Default**, and under **Run tests in 32 or 64 bit process**, select the option to **Run tests in 64 bit process on 64 bit machine**.</span></span>  
   
-7.  <span data-ttu-id="a2cd2-214">ステップ 25 選択**、個々 のテストを実行時間を超えた場合の失敗としてマーク**し選択 30 分の既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-214">For Step 25, select **Mark an individual test as failed if its execution time exceeds** and leave the default value of 30 minutes selected.</span></span>  
+7.  <span data-ttu-id="a2cd2-214">ステップ 25 選択 **、個々 のテストを実行時間を超えた場合の失敗としてマーク**し選択 30 分の既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-214">For Step 25, select **Mark an individual test as failed if its execution time exceeds** and leave the default value of 30 minutes selected.</span></span>  
   
 8.  <span data-ttu-id="a2cd2-215">27b、ステップのチェック ボックスをオンに**テスト ディレクトリ内のアセンブリに対して読み込みコンテキストを使用して**、クリックして**名前を付けて保存**です。</span><span class="sxs-lookup"><span data-stu-id="a2cd2-215">For Step 27b, select the check box for **Use the Load Context for assemblies in the test directory**, and then click **Save As**.</span></span>  
   

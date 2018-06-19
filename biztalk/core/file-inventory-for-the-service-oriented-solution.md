@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975456"
 ---
 # <a name="file-inventory-for-the-service-oriented-solution"></a><span data-ttu-id="ad955-102">ファイル インベントリ サービス指向ソリューション</span><span class="sxs-lookup"><span data-stu-id="ad955-102">File Inventory for the Service Oriented Solution</span></span>
 <span data-ttu-id="ad955-103">このセクションでは、サービス指向ソリューションのサブディレクトリおよびソース ファイルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="ad955-103">This section lists subdirectories and source files for the Service Oriented solution.</span></span> <span data-ttu-id="ad955-104">サービス指向ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO です。</span><span class="sxs-lookup"><span data-stu-id="ad955-104">The default installation directory for the Service Oriented solution source files is [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO.</span></span> <span data-ttu-id="ad955-105">次の表では、このパスを交換する前に説明\<インストール ディレクトリ\>です。</span><span class="sxs-lookup"><span data-stu-id="ad955-105">Descriptions before the following tables replace this path with \<Install Directory\>.</span></span>  

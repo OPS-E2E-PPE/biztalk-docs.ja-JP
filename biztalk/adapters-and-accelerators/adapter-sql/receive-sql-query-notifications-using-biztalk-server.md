@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL クエリ通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL クエリ通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 69444df7-f2ae-4d1a-9b49-817b437517d8
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223818"
 ---
 # <a name="receive-sql-query-notifications-using-biztalk-server"></a><span data-ttu-id="579c8-102">BizTalk Server を使用して SQL クエリ通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="579c8-102">Receive SQL Query Notifications using BizTalk Server</span></span>
 <span data-ttu-id="579c8-103">構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のテーブルまたはビューの通知メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="579c8-103">You can configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive notification messages for SQL Server tables or views.</span></span> <span data-ttu-id="579c8-104">SQL Server 通知を登録するアダプターを使用する SQL ステートメントを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="579c8-104">You can specify a SQL statement that the adapter uses to register for notifications with SQL Server.</span></span> <span data-ttu-id="579c8-105">通知のステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを指定できます。</span><span class="sxs-lookup"><span data-stu-id="579c8-105">The notification statement can be a SELECT statement or a stored procedure that returns a result set.</span></span> <span data-ttu-id="579c8-106">クエリ通知の詳細についてを参照してください「を使用してクエリ通知」 [http://go.microsoft.com/fwlink/?LinkId=122159](http://go.microsoft.com/fwlink/?LinkId=122159)です。</span><span class="sxs-lookup"><span data-stu-id="579c8-106">For more information about query notifications, see “Using Query Notifications” at  [http://go.microsoft.com/fwlink/?LinkId=122159](http://go.microsoft.com/fwlink/?LinkId=122159).</span></span> <span data-ttu-id="579c8-107">クエリ通知のために使用するクエリについてを参照してください「を作成するクエリ通知の」 [http://go.microsoft.com/fwlink/?LinkId=122160](http://go.microsoft.com/fwlink/?LinkId=122160)です。</span><span class="sxs-lookup"><span data-stu-id="579c8-107">For information about queries that can be used for query notifications, see “Creating a Query for Notification” at [http://go.microsoft.com/fwlink/?LinkId=122160](http://go.microsoft.com/fwlink/?LinkId=122160).</span></span>  

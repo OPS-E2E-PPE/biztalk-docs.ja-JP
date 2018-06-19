@@ -1,17 +1,17 @@
 ---
-title: "Medical Claims Processing and Testing Policies (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Medical Claims Processing and Testing Policies (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: c0bdf7b7-3e55-4560-a5a8-00c5b661d14d
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007987"
 ---
 # <a name="medical-claims-processing-and-testing-policies-biztalk-server-sample"></a><span data-ttu-id="65b24-102">Medical Claims 処理およびテストのポリシー (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="65b24-102">Medical Claims Processing and Testing Policies (BizTalk Server Sample)</span></span>
 <span data-ttu-id="65b24-103">Medical Claims Processing and Testing Policies サンプルは、データベース テーブルおよび受信ドキュメントから派生したファクトを検証し、.NET ベースのオブジェクトを使用して請求処理の結果を記録する複数のルールを含むルール セットを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="65b24-103">The Medical Claims Processing and Testing Policies sample demonstrates how to create a rule set containing multiple rules that examine facts derived from a database table and the inbound document, and which use .NET-based objects to record the results of the claims processing.</span></span>  

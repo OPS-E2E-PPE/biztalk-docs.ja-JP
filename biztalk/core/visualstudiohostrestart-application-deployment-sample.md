@@ -1,14 +1,14 @@
 ---
-title: "VisualStudioHostRestart (アプリケーションの展開サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: VisualStudioHostRestart (アプリケーションの展開サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0b82627-1552-479d-a083-cdc9fe4843c3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974104"
 ---
 # <a name="visualstudiohostrestart-application-deployment-sample"></a><span data-ttu-id="b0c51-102">VisualStudioHostRestart (アプリケーションの展開サンプル)</span><span class="sxs-lookup"><span data-stu-id="b0c51-102">VisualStudioHostRestart (Application Deployment Sample)</span></span>
 <span data-ttu-id="b0c51-103">このトピックでは、ローカル コンピュータの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で実行しているホスト インスタンスを再起動するための VisualStudioHostRestart サンプル スクリプトを使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b0c51-103">This topic explains how to use the VisualStudioHostRestart sample script to restart a host instance running under [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on the local computer.</span></span> <span data-ttu-id="b0c51-104">このスクリプトは、Visual Studio にアセンブリを再展開するときに使用できます。これにより、BizTalk Server ランタイムに変更内容がすぐに反映されます。</span><span class="sxs-lookup"><span data-stu-id="b0c51-104">You can use this script when redeploying assemblies in Visual Studio so that the BizTalk Server runtime immediately picks up the changes.</span></span> <span data-ttu-id="b0c51-105">また、プロジェクトの展開のプロパティで設定できるオプションを使用して、ホスト インスタンスを再起動することもできます。</span><span class="sxs-lookup"><span data-stu-id="b0c51-105">Alternatively, you can use the option to restart host instances, which you can set in Deployment properties for the project.</span></span> <span data-ttu-id="b0c51-106">詳細については、次を参照してください。 [Visual Studio の配置プロパティを設定する方法](../core/how-to-set-deployment-properties-in-visual-studio.md)です。</span><span class="sxs-lookup"><span data-stu-id="b0c51-106">For more information, see [How to Set Deployment Properties in Visual Studio](../core/how-to-set-deployment-properties-in-visual-studio.md).</span></span>  
@@ -29,7 +30,7 @@ ms.lasthandoff: 11/28/2017
 2.  <span data-ttu-id="b0c51-110">ローカル コンピュータのすべてのインプロセス ホスト インスタンスを開始します。</span><span class="sxs-lookup"><span data-stu-id="b0c51-110">Starts all in-process host instances on the local computer.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="b0c51-111">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="b0c51-111">Where to Find This Sample</span></span>  
- <span data-ttu-id="b0c51-112">サンプルにありますが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次のように、インストール フォルダー: *\<サンプル パス\>*\Application Deployment\VisualStudioHostRestart です。</span><span class="sxs-lookup"><span data-stu-id="b0c51-112">The sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder, as follows: *\<Samples path\>*\Application Deployment\VisualStudioHostRestart.</span></span>  
+ <span data-ttu-id="b0c51-112">サンプルにありますが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次のように、インストール フォルダー: *\<サンプル パス\>* \Application Deployment\VisualStudioHostRestart です。</span><span class="sxs-lookup"><span data-stu-id="b0c51-112">The sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder, as follows: *\<Samples path\>* \Application Deployment\VisualStudioHostRestart.</span></span>  
   
  <span data-ttu-id="b0c51-113">サンプルには、次のファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b0c51-113">The sample includes the following file:</span></span>  
   

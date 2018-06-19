@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec290d38-0220-4bf2-b596-2d6453e51c8d
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: d0632f7e4217cb9bbccd2ee604688f22eb6de348
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250982"
 ---
 # <a name="how-to-delete-an-affiliate-application"></a><span data-ttu-id="d21f9-102">関連アプリケーションを削除する方法</span><span class="sxs-lookup"><span data-stu-id="d21f9-102">How to Delete an Affiliate Application</span></span>
 <span data-ttu-id="d21f9-103">MMC スナップインを使用して、または**deleteapps**資格情報データベースから指定された関連アプリケーションを削除するコマンド。</span><span class="sxs-lookup"><span data-stu-id="d21f9-103">Use the MMC Snap-In or the **deleteapps** command to delete the specified affiliate application from the Credential database.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="d21f9-113">既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="d21f9-113">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="d21f9-114">型`ssomanage –deleteapp <application name>`ここで、 *\<アプリケーション名 >*資格情報データベースから削除する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="d21f9-114">Type `ssomanage –deleteapp <application name>`, where *\<application name>* is the name of the affiliate application you want to remove from the Credential database.</span></span>  
+3.  <span data-ttu-id="d21f9-114">型`ssomanage –deleteapp <application name>`ここで、 *\<アプリケーション名 >* 資格情報データベースから削除する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="d21f9-114">Type `ssomanage –deleteapp <application name>`, where *\<application name>* is the name of the affiliate application you want to remove from the Credential database.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="d21f9-115">参照</span><span class="sxs-lookup"><span data-stu-id="d21f9-115">See Also</span></span>  
  <span data-ttu-id="d21f9-116">[SSO 関連アプリケーション](../esso/sso-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="d21f9-116">[SSO Affiliate Applications](../esso/sso-affiliate-applications.md) </span></span>  

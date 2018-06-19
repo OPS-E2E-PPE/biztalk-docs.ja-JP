@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25972616"
 ---
 # <a name="running-sso-projects"></a><span data-ttu-id="48b44-102">SSO プロジェクトの実行</span><span class="sxs-lookup"><span data-stu-id="48b44-102">Running SSO Projects</span></span>
 <span data-ttu-id="48b44-103">Internet Explorer からシングル サインオン (SSO) のサンプル プロジェクトを実行できます。</span><span class="sxs-lookup"><span data-stu-id="48b44-103">You can run a sample Single Sign-On (SSO) project from Internet Explorer.</span></span>  

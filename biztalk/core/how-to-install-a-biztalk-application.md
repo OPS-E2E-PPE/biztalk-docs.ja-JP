@@ -13,7 +13,7 @@ helpviewer_keywords:
 - installing, warnings
 - applications, installing
 ms.assetid: 99ee0b1a-d46a-4fb6-802b-6827dc740418
-caps.latest.revision: ''
+caps.latest.revision: 56
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "26010539"
 ---
 # <a name="how-to-install-a-biztalk-application"></a><span data-ttu-id="3d991-102">BizTalk アプリケーションをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="3d991-102">How to Install a BizTalk Application</span></span>
 <span data-ttu-id="3d991-103">ここでは、ローカル コンピューターにアプリケーションをインストールする方法について説明します。ローカル コンピューターにアプリケーションをインストールするには、Windows インターフェイスでアプリケーションの Windows インストーラー (.msi) ファイルをダブルクリックする方法と、コマンド ラインから msiexec を実行する方法があります。</span><span class="sxs-lookup"><span data-stu-id="3d991-103">This topic describes how to install an application on the local computer by double-clicking the Windows Installer (.msi) file for the application in the Windows interface or by running msiexec from the command line.</span></span> <span data-ttu-id="3d991-104">」の説明に従って、インポート ウィザードの最後の手順として、インストール ウィザードに開始することもできます[を BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="3d991-104">You can also start the Installation Wizard as the last step of the Import Wizard, as described in [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span>  

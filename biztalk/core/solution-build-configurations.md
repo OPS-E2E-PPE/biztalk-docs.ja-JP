@@ -1,11 +1,11 @@
 ---
-title: "ソリューション ビルド構成 |Microsoft ドキュメント"
-ms.custom: 
+title: ソリューション ビルド構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Configuration Manager
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - solutions, developing
 - solutions, build configuration
 ms.assetid: 6f2cce47-388d-4c93-9146-768f53b8207e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006907"
 ---
 # <a name="solution-build-configurations"></a><span data-ttu-id="12178-102">ソリューション ビルドの構成</span><span class="sxs-lookup"><span data-stu-id="12178-102">Solution Build Configurations</span></span>
 <span data-ttu-id="12178-103">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でビルドする他のプロジェクトと同様に、構成マネージャーを使用して、ソリューション ビルドの構成を指定できます。</span><span class="sxs-lookup"><span data-stu-id="12178-103">As with other projects that you build in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], you can use Configuration Manager to specify solution build configurations.</span></span> <span data-ttu-id="12178-104">ソリューション ビルド構成を使用すると、ソリューションのビルドでどのプロジェクトに含めると、それを展開するかどうかを決定できます。</span><span class="sxs-lookup"><span data-stu-id="12178-104">Solution build configurations enable you to determine which projects to include in builds of a solution and if they will be deployed.</span></span> <span data-ttu-id="12178-105">BizTalk Server では、両方がサポート**デバッグ**と**リリース**の構成をビルドします。</span><span class="sxs-lookup"><span data-stu-id="12178-105">BizTalk Server supports both **Debug** and **Release** build configurations.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-configure-build-properties-in-configuration-manager"></a><span data-ttu-id="12178-109">構成マネージャーでビルド プロパティを設定するには</span><span class="sxs-lookup"><span data-stu-id="12178-109">To configure build properties in Configuration Manager</span></span>  
   
-1.  <span data-ttu-id="12178-110">**[ビルド]** メニューの **[構成マネージャー]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="12178-110">On the **Build** menu, click **Configuration Manager**.</span></span>  
+1.  <span data-ttu-id="12178-110">**[ビルド]** メニューの **[構成マネージャー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="12178-110">On the **Build** menu, click **Configuration Manager**.</span></span>  
   
 2.  <span data-ttu-id="12178-111">**Configuration Manager**ダイアログ ボックスで、ビルド プロパティを構成するには次のいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="12178-111">In the **Configuration Manager** dialog box, select one of following to configure the build properties.</span></span>  
   

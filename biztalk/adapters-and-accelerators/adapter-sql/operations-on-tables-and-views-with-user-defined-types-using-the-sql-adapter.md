@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用してユーザー定義の型とテーブルとビューでの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用してユーザー定義の型とテーブルとビューでの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4006bbe-91ca-4cd9-844d-5ed63142001f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006835"
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a><span data-ttu-id="eb4dd-102">SQL アダプターを使用してユーザー定義の型とテーブルとビューでの操作</span><span class="sxs-lookup"><span data-stu-id="eb4dd-102">Operations on tables and views with user-defined types using the SQL adapter</span></span>
 <span data-ttu-id="eb4dd-103">使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]テーブルまたはユーザー定義型 (Udt) 列を含むビューの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="eb4dd-103">You can use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to perform operations on tables or views that have columns of user-defined types (UDTs).</span></span> <span data-ttu-id="eb4dd-104">標準のテーブルの操作 (Insert、Update、Delete、および選択) に UDT 型の列にデータを読み書きするを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="eb4dd-104">You can use the standard table operations (Insert, Update, Delete, and Select) to read or write data into columns on UDT types.</span></span> <span data-ttu-id="eb4dd-105">このようなテーブルでストアド プロシージャと関数を実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="eb4dd-105">You can also execute stored procedures and functions on such tables.</span></span> <span data-ttu-id="eb4dd-106">ただし、UDT 列を含むテーブルを操作するために、アダプターを使用する前に、特定のタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eb4dd-106">However, you need to perform certain tasks before you can use the adapter to operate on tables with UDT columns.</span></span> <span data-ttu-id="eb4dd-107">これらのタスクを実行すると、アダプターを使用できます。</span><span class="sxs-lookup"><span data-stu-id="eb4dd-107">Once you have performed these tasks, you can use the adapter to:</span></span>  

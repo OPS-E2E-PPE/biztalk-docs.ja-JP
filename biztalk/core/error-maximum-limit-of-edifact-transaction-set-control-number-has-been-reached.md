@@ -1,14 +1,14 @@
 ---
-title: "パーティの設定の Edifact トランザクション セット制御番号の上限に達しているに受信確認の生成に失敗しました |Microsoft ドキュメント"
-ms.custom: 
+title: パーティの設定の Edifact トランザクション セット制御番号の上限に達しているに受信確認の生成に失敗しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bcbb6374-0403-42b0-892b-b35157a2c74a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005851"
 ---
 # <a name="acknowledgement-generation-has-failed-as-maximum-limit-of-edifact-transaction-set-control-number-has-been-reached-for-party-settings"></a><span data-ttu-id="88b47-102">パーティの設定の EDIFACT トランザクション セット制御番号が上限に到達したため、受信確認の生成に失敗しました</span><span class="sxs-lookup"><span data-stu-id="88b47-102">Acknowledgement generation has failed as maximum limit of Edifact transaction set control number has been reached for party settings</span></span>
 ## <a name="details"></a><span data-ttu-id="88b47-103">詳細</span><span class="sxs-lookup"><span data-stu-id="88b47-103">Details</span></span>  

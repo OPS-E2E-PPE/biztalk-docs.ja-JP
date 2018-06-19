@@ -1,14 +1,14 @@
 ---
-title: "無効な区切り記号の許容範囲外にあるため、区切り記号の少なくとも 1 つの設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効な区切り記号の許容範囲外にあるため、区切り記号の少なくとも 1 つの設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c1286559-765b-4728-945d-cf3386e1ba06
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241458"
 ---
 # <a name="invalid-delimiter-set-because-at-least-one-of-the-delimiters-is-outside-the-allowed-range"></a><span data-ttu-id="e3d65-102">1 つ以上の区切り記号が有効範囲外であるため、設定されている区切り記号は無効です</span><span class="sxs-lookup"><span data-stu-id="e3d65-102">Invalid delimiter set because at least one of the delimiters is outside the allowed range</span></span>
 ## <a name="details"></a><span data-ttu-id="e3d65-103">詳細</span><span class="sxs-lookup"><span data-stu-id="e3d65-103">Details</span></span>  

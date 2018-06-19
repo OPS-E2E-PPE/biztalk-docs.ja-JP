@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: は、POP3 アダプタを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: は、POP3 アダプタを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, POP3 adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - POP3 adapters, tutorials
 - configuring [POP3 adapters], Outlook Express
 ms.assetid: b44c3b1d-7b4f-425c-831a-1ce5f6379595
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975944"
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a><span data-ttu-id="c2f5f-102">チュートリアル: POP3 アダプターを使用する BizTalk アプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="c2f5f-102">Walkthrough: Creating a BizTalk Application That Uses the POP3 Adapter</span></span>
 <span data-ttu-id="c2f5f-103">このセクションでは、POP3 アダプタを使用する簡単な Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-103">This section takes you through creating a simple Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application using the POP3 adapter.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="create-the-receive-location"></a><span data-ttu-id="c2f5f-125">受信場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-125">Create the receive location</span></span>  
  <span data-ttu-id="c2f5f-126">受信場所を作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-126">Follow these steps to create the receive location:</span></span>  
   
-1.  <span data-ttu-id="c2f5f-127">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールが既定のデータベースをダブルクリックして **\<**  *machine_name***\>です。>.biztalkmgmtdb.dbo**ここで、 *machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-127">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console double-click the default database **\<***machine_name***\>.BizTalkMgmtDb.dbo**, where *machine_name* is the name of your computer.</span></span> <span data-ttu-id="c2f5f-128">をクリックして**アプリケーション**をクリックし、 **[biztalk.application.1]**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-128">Click **Applications**, then click **BizTalk.Application.1**.</span></span>  
+1.  <span data-ttu-id="c2f5f-127">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールが既定のデータベースをダブルクリックして **\<**  *machine_name***\>です。>.biztalkmgmtdb.dbo**ここで、 *machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-127">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console double-click the default database **\<***machine_name***\>.BizTalkMgmtDb.dbo**, where *machine_name* is the name of your computer.</span></span> <span data-ttu-id="c2f5f-128">をクリックして**アプリケーション**をクリックし、 **[biztalk.application.1]** です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-128">Click **Applications**, then click **BizTalk.Application.1**.</span></span>  
   
 2.  <span data-ttu-id="c2f5f-129">右クリック**受信ポート**をクリックして**新規**、 をクリックして**一方向受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-129">Right-click **Receive Ports**, click **New**, click **One-way receive port**.</span></span>  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="c2f5f-145">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ファイル システムにフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-145">Create a folder on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] file system.</span></span> <span data-ttu-id="c2f5f-146">このフォルダが送信ポートの送信先になります。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-146">This will be the destination for the send port.</span></span>  
   
-2.  <span data-ttu-id="c2f5f-147">右クリック**送信ポート**、] をクリックして**、[新規**クリックして**静的な一方向送信ポート。**</span><span class="sxs-lookup"><span data-stu-id="c2f5f-147">Right-click **Send Ports**, click **New,** then click **Static one-way Send Port.**</span></span>  
+2.  <span data-ttu-id="c2f5f-147">右クリック**送信ポート**、] をクリックして **、[新規**クリックして**静的な一方向送信ポート。**</span><span class="sxs-lookup"><span data-stu-id="c2f5f-147">Right-click **Send Ports**, click **New,** then click **Static one-way Send Port.**</span></span>  
   
 3.  <span data-ttu-id="c2f5f-148">**送信ポートのプロパティ** ダイアログ ボックスで、**トランスポートの種類**ボックスで、**ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-148">In the **Send Port Properties** dialog box, in the **Transport Type** box, select **FILE**.</span></span>  
   
@@ -101,13 +102,13 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="c2f5f-150">**トランスポート**ボックスで、クリックして、**構成**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-150">In the **Transport** box, click the **Configure** button.</span></span>  
   
-6.  <span data-ttu-id="c2f5f-151">横に、**コピー先フォルダー**ボックスで、をクリックして**参照**、上に作成したフォルダーを選択して、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-151">Next to the **Destination folder** box, click **Browse**, select the folder that you created on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and then click **OK**.</span></span>  
+6.  <span data-ttu-id="c2f5f-151">横に、**コピー先フォルダー**ボックスで、をクリックして**参照**、上に作成したフォルダーを選択して、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-151">Next to the **Destination folder** box, click **Browse**, select the folder that you created on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and then click **OK**.</span></span>  
   
-7.  <span data-ttu-id="c2f5f-152">**ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-152">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="c2f5f-152">**ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-152">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
   
 8.  <span data-ttu-id="c2f5f-153">**送信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-153">In the **Send Pipeline** box, select **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**.</span></span>  
   
-9. <span data-ttu-id="c2f5f-154">**[フィルター]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-154">Click **Filters**.</span></span>  
+9. <span data-ttu-id="c2f5f-154">**[フィルター]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-154">Click **Filters**.</span></span>  
   
 10. <span data-ttu-id="c2f5f-155">**プロパティ**ボックスで、 **BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-155">In the **Property** box, select **BTS.ReceivePortName**.</span></span>  
   
@@ -133,9 +134,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="c2f5f-167">**表示名**ボックスで、表示名を入力し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-167">In the **Display name** box, type a display name, and then click **Next**.</span></span>  
   
-5.  <span data-ttu-id="c2f5f-168">**インターネット電子メール アドレス**] ダイアログ ボックスで、**電子メール アドレス**ボックスに、入力**EmailTest @< domain_name >**、クリックして**[次へ**.</span><span class="sxs-lookup"><span data-stu-id="c2f5f-168">In the **Internet E-mail address** dialog box, in the **E-mail address** box, type **EmailTest@<domain_name>**, and then click **Next**.</span></span>  
+5.  <span data-ttu-id="c2f5f-168">**インターネット電子メール アドレス**] ダイアログ ボックスで、**電子メール アドレス**ボックスに、入力**EmailTest @< domain_name >**、クリックして **[次へ**.</span><span class="sxs-lookup"><span data-stu-id="c2f5f-168">In the **Internet E-mail address** dialog box, in the **E-mail address** box, type **EmailTest@<domain_name>**, and then click **Next**.</span></span>  
   
-     <span data-ttu-id="c2f5f-169">適切な値を入力することを確認*< domain_name >*です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-169">Make sure to enter the appropriate value for *<domain_name>*.</span></span> <span data-ttu-id="c2f5f-170">この値は、Windows サーバーの POP3 サービスの管理インターフェイスでこのメールボックスを作成したドメインの名前と一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-170">This value should match the name of the domain under which this mailbox was created in the POP3 Service Administration interface on the Windows server.</span></span>  
+     <span data-ttu-id="c2f5f-169">適切な値を入力することを確認 *< domain_name >* です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-169">Make sure to enter the appropriate value for *<domain_name>*.</span></span> <span data-ttu-id="c2f5f-170">この値は、Windows サーバーの POP3 サービスの管理インターフェイスでこのメールボックスを作成したドメインの名前と一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-170">This value should match the name of the domain under which this mailbox was created in the POP3 Service Administration interface on the Windows server.</span></span>  
   
 6.  <span data-ttu-id="c2f5f-171">**電子メール サーバー名** ダイアログ ボックスで、**受信メール**と**発信メール**ボックスに、サーバー名または Windows server の IP アドレスを入力し、 をクリックして**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-171">In the **E-mail Server names** dialog box, in the **Incoming mail** and **Outgoing mail** boxes, type the server name or IP address of the Windows server, and then click **Next**.</span></span>  
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 11/28/2017
   
 11. <span data-ttu-id="c2f5f-176">**インターネット アカウント**ダイアログ ボックスで、をクリックして**閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-176">In the **Internet Accounts** dialog box, click **Close**.</span></span>  
   
-12. <span data-ttu-id="c2f5f-177">Outlook Express を使用してテスト メッセージを作成する型**テスト**に、**サブジェクト**フィールド、および種類**EmailTest @< domain_name >**に、 **に**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-177">Use Outlook Express to compose a test message, type **Test** into the **Subject** field, and type **EmailTest@<domain_name>** into the **To** field.</span></span>  
+12. <span data-ttu-id="c2f5f-177">Outlook Express を使用してテスト メッセージを作成する型**テスト**に、**サブジェクト**フィールド、および種類**EmailTest @< domain_name >** に、 **に**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-177">Use Outlook Express to compose a test message, type **Test** into the **Subject** field, and type **EmailTest@<domain_name>** into the **To** field.</span></span>  
   
 13. <span data-ttu-id="c2f5f-178">をクリックして**送信**テスト メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-178">Click **Send** to send the test message.</span></span> <span data-ttu-id="c2f5f-179">確実に、Outlook Express メッセージを送信テストすぐに、をクリックして、**送受信**Outlook Express ツールバーのボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="c2f5f-179">To ensure that Outlook Express sends the test message immediately, click the **Send/Recv** button in the Outlook Express toolbar.</span></span>  
   

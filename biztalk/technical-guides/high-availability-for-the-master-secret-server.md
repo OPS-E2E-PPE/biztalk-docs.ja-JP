@@ -1,14 +1,14 @@
 ---
-title: "マスター シークレット サーバーの高可用性 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット サーバーの高可用性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b99cb04-61a5-41cc-a409-35897c17b789
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008843"
 ---
 # <a name="high-availability-for-the-master-secret-server"></a><span data-ttu-id="4962b-102">マスター シークレット サーバーの高可用性</span><span class="sxs-lookup"><span data-stu-id="4962b-102">High Availability for the Master Secret Server</span></span>
 <span data-ttu-id="4962b-103">SSO は、ため、全体的な Microsoft BizTalk Server インフラストラクチャの重要な一部のマッピングの資格情報やシングル サインオン エンタープライズ シングル サインオン (SSO) 機能を使用しない場合でも[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SSO を使用してセキュリティで保護されたポートの情報構成します。</span><span class="sxs-lookup"><span data-stu-id="4962b-103">Even if you do not use the Enterprise Single Sign-On (SSO) functionality for mapping credentials and single sign-on, SSO is a critical part of the overall Microsoft BizTalk Server infrastructure, because [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses SSO to help secure information for port configuration.</span></span> <span data-ttu-id="4962b-104">ポートの構成データを暗号化して、SSO データベースに格納します。</span><span class="sxs-lookup"><span data-stu-id="4962b-104">The port configuration data is encrypted and stored in the SSO database.</span></span> <span data-ttu-id="4962b-105">各 BizTalk サーバーでは、ポートの構成データを暗号化および暗号化に使用する SSO サービス (ENTSSO.exe) があります。</span><span class="sxs-lookup"><span data-stu-id="4962b-105">Each BizTalk server has an SSO service (ENTSSO.exe) that is used for encrypting and decrypting the port configuration data.</span></span>  

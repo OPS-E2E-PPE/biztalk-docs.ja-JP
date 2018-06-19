@@ -1,14 +1,14 @@
 ---
-title: "Windows PowerShell スクリプト |Microsoft ドキュメント"
-ms.custom: 
+title: Windows PowerShell スクリプト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9848e3ed-8686-4bb8-b8f5-7e3111a83177
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976344"
 ---
 # <a name="windows-powershell-scripts"></a><span data-ttu-id="30095-102">Windows PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="30095-102">Windows PowerShell Scripts</span></span>
 <span data-ttu-id="30095-103">このトピックには、このガイドで説明されているレジストリ設定を適用する BizTalk Server 環境内のコンピューターで実行できる Windows PowerShell スクリプトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="30095-103">This topic contains Windows PowerShell scripts that can be run on the computers in a BizTalk Server environment to apply registry settings described in this guide.</span></span>  

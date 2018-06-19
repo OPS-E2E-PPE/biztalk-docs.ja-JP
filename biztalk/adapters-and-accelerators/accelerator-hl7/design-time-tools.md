@@ -1,11 +1,11 @@
 ---
-title: "デザイン時ツール |Microsoft ドキュメント"
-ms.custom: 
+title: デザイン時ツール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Adapter Framework
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - design-time tools
 - Orchestration Designer
 ms.assetid: 709bd782-d2ad-49be-ba33-e957eba2a0cc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005051"
 ---
 # <a name="design-time-tools"></a><span data-ttu-id="c3239-102">デザイン時ツール</span><span class="sxs-lookup"><span data-stu-id="c3239-102">Design Time Tools</span></span>
 <span data-ttu-id="c3239-103">作業する開発者[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) BizTalk Server に組み込まれたデザイン時ツールのセットを使用します。</span><span class="sxs-lookup"><span data-stu-id="c3239-103">Developers working on [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) have the use of a set of design time tools built into BizTalk Server.</span></span> <span data-ttu-id="c3239-104">これらのツールが組み込ま[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c3239-104">These tools are integrated into [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="c3239-105">詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。</span><span class="sxs-lookup"><span data-stu-id="c3239-105">For more information about [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] tools, see [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server Help.</span></span>  

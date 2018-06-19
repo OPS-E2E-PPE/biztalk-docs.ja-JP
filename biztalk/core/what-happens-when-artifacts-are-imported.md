@@ -1,17 +1,17 @@
 ---
-title: "アイテムのインポート時の動作 |Microsoft ドキュメント"
-ms.custom: 
+title: アイテムのインポート時の動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing, artifacts
 - artifacts, importing
 ms.assetid: a83957df-6e16-419a-b693-87985b498cc4
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974912"
 ---
 # <a name="what-happens-when-artifacts-are-imported"></a><span data-ttu-id="46cf3-102">アイテムのインポート時の動作</span><span class="sxs-lookup"><span data-stu-id="46cf3-102">What Happens When Artifacts Are Imported</span></span>
 <span data-ttu-id="46cf3-103">このトピックでは、アイテムがインポートされるときの動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="46cf3-103">This topic describes what happens to artifacts when they are imported.</span></span> <span data-ttu-id="46cf3-104">アイテムのインポートには次の 3 つの方法があり、ここではそれぞれについて説明します。</span><span class="sxs-lookup"><span data-stu-id="46cf3-104">There are three ways to import artifacts, which are covered in this topic:</span></span>  

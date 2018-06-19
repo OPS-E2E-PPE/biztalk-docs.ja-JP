@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で、BAM ポータルの管理 |Microsoft ドキュメント"
-Description: "インストールして、BizTalk Server で BAM ポータルの構成の概要"
-ms.custom: 
+title: BizTalk Server で、BAM ポータルの管理 |Microsoft ドキュメント
+Description: インストールして、BizTalk Server で BAM ポータルの構成の概要
+ms.custom: ''
 ms.date: 08/15/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3a08aa85-3a45-4a8c-bdb5-5615ca097ce1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262570"
 ---
 # <a name="manage-the-bam-portal"></a><span data-ttu-id="ae1aa-103">BAM ポータルを管理します。</span><span class="sxs-lookup"><span data-stu-id="ae1aa-103">Manage the BAM portal</span></span>
 

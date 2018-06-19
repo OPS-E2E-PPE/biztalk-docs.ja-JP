@@ -1,18 +1,18 @@
 ---
-title: "サーバーの名前付け規則 |Microsoft ドキュメント"
-ms.custom: 
+title: サーバーの名前付け規則 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, naming conventions
 - naming conventions, servers
 - installation, naming conventions
 ms.assetid: 98989c15-51d7-4a67-b054-abe6993a98a6
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22273202"
 ---
 # <a name="server-naming-conventions"></a><span data-ttu-id="783d2-102">サーバーの名前付け規則</span><span class="sxs-lookup"><span data-stu-id="783d2-102">Server Naming Conventions</span></span>
 <span data-ttu-id="783d2-103">BizTalk Server の展開のシステム アーキテクチャに関する詳細については、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。</span><span class="sxs-lookup"><span data-stu-id="783d2-103">For complete information about the system architecture for BizTalk Server deployment, see [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "データベースのパフォーマンスの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: データベースのパフォーマンスの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7212fa37-88e0-4b5f-af97-c72063357645
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009507"
 ---
 # <a name="planning-for-database-performance"></a><span data-ttu-id="d5d09-102">データベースのパフォーマンスの計画</span><span class="sxs-lookup"><span data-stu-id="d5d09-102">Planning for Database Performance</span></span>
 

@@ -1,11 +1,11 @@
 ---
-title: "FTP アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: FTP アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [FTP adapters], schemas
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - Password property [FTP adapters]
 - MaxConnections property [FTP adapters]
 ms.assetid: 677fdb61-c2b0-4df2-a826-840113e61e8b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006139"
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a><span data-ttu-id="23c93-102">FTP アダプター プロパティ スキーマおよびプロパティ</span><span class="sxs-lookup"><span data-stu-id="23c93-102">FTP Adapter Property Schema and Properties</span></span>
 <span data-ttu-id="23c93-103">FTP アダプタ プロパティ スキーマのプロパティを次の表に示します。</span><span class="sxs-lookup"><span data-stu-id="23c93-103">The following table contains the properties in the FTP adapter property schema.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
   
 |<span data-ttu-id="23c93-105">名前</span><span class="sxs-lookup"><span data-stu-id="23c93-105">Name</span></span>|<span data-ttu-id="23c93-106">型</span><span class="sxs-lookup"><span data-stu-id="23c93-106">Type</span></span>|<span data-ttu-id="23c93-107">Description</span><span class="sxs-lookup"><span data-stu-id="23c93-107">Description</span></span>|  
 |----------|----------|-----------------|  
-|<span data-ttu-id="23c93-108">**RepresentationType**</span><span class="sxs-lookup"><span data-stu-id="23c93-108">**RepresentationType**</span></span>|<span data-ttu-id="23c93-109">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-109">xs:string</span></span>|<span data-ttu-id="23c93-110">FTP アダプタによって送信されるデータの形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-110">Specifies how the FTP adapter sends data.</span></span><br /><br /> <span data-ttu-id="23c93-111">**有効な値:**バイナリまたは ASCII</span><span class="sxs-lookup"><span data-stu-id="23c93-111">**Valid values:** binary or ASCII</span></span>|  
+|<span data-ttu-id="23c93-108">**RepresentationType**</span><span class="sxs-lookup"><span data-stu-id="23c93-108">**RepresentationType**</span></span>|<span data-ttu-id="23c93-109">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-109">xs:string</span></span>|<span data-ttu-id="23c93-110">FTP アダプタによって送信されるデータの形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-110">Specifies how the FTP adapter sends data.</span></span><br /><br /> <span data-ttu-id="23c93-111">**有効な値:** バイナリまたは ASCII</span><span class="sxs-lookup"><span data-stu-id="23c93-111">**Valid values:** binary or ASCII</span></span>|  
 |<span data-ttu-id="23c93-112">**SSOAffiliateApplication**</span><span class="sxs-lookup"><span data-stu-id="23c93-112">**SSOAffiliateApplication**</span></span>|<span data-ttu-id="23c93-113">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-113">xs:string</span></span>|<span data-ttu-id="23c93-114">FTP 送信ポートで使用するエンタープライズ シングル サインオン関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-114">Specifies the Enterprise Single Sign-On affiliate application to use on the FTP send port.</span></span>|  
 |<span data-ttu-id="23c93-115">**UserName**</span><span class="sxs-lookup"><span data-stu-id="23c93-115">**UserName**</span></span>|<span data-ttu-id="23c93-116">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-116">xs:string</span></span>|<span data-ttu-id="23c93-117">メッセージの送信時に FTP サーバーにログオンするユーザーの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-117">Specifies the user name to log on to the FTP server when sending messages.</span></span>|  
 |<span data-ttu-id="23c93-118">**Password**</span><span class="sxs-lookup"><span data-stu-id="23c93-118">**Password**</span></span>|<span data-ttu-id="23c93-119">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-119">xs:string</span></span>|<span data-ttu-id="23c93-120">メッセージの送信時に FTP サーバーへのログオンに使用するパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-120">Specifies the password to use when logging on to the FTP server when sending messages.</span></span>|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 12/01/2017
 |<span data-ttu-id="23c93-150">**SpoolingFolder**</span><span class="sxs-lookup"><span data-stu-id="23c93-150">**SpoolingFolder**</span></span>|<span data-ttu-id="23c93-151">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-151">xs:string</span></span>|<span data-ttu-id="23c93-152">FTP サーバーの一時フォルダの場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-152">Specifies the location for a temporary folder on the FTP server.</span></span> <span data-ttu-id="23c93-153">このフォルダは、転送エラーの修復に使用されます。</span><span class="sxs-lookup"><span data-stu-id="23c93-153">You use this to ensure recovery from a transfer failure.</span></span>|  
 |<span data-ttu-id="23c93-154">**UseSsl**</span><span class="sxs-lookup"><span data-stu-id="23c93-154">**UseSsl**</span></span>|<span data-ttu-id="23c93-155">xs:boolean</span><span class="sxs-lookup"><span data-stu-id="23c93-155">xs:boolean</span></span>|<span data-ttu-id="23c93-156">FTPS サーバーとの通信で FTP アダプターが強制的に SSL を使用するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-156">Specifies whether the FTP adapter must use SSL to communicate with the FTPS server.</span></span>|  
 |<span data-ttu-id="23c93-157">**UseDataProtection**</span><span class="sxs-lookup"><span data-stu-id="23c93-157">**UseDataProtection**</span></span>|<span data-ttu-id="23c93-158">xs:boolean</span><span class="sxs-lookup"><span data-stu-id="23c93-158">xs:boolean</span></span>|<span data-ttu-id="23c93-159">ファイル転送に SSL 暗号化を使用するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-159">Specifies whether SSL encryption is used for file transfers.</span></span> <span data-ttu-id="23c93-160">FTPS サーバーとの間でデータ ファイルを送受信する場合にアダプターで強制的に SSL 暗号化を使用する場合は True を選択します。</span><span class="sxs-lookup"><span data-stu-id="23c93-160">Choose true if the adapter must use SSL encryption when it sends and receives data files from the FTPS server.</span></span> <span data-ttu-id="23c93-161">アダプターがデータ ファイルをプレーンテキストで送受信する場合は False を選択します。</span><span class="sxs-lookup"><span data-stu-id="23c93-161">Choose false for the adapter to send and receive data files as plaintext.</span></span>|  
-|<span data-ttu-id="23c93-162">**FtpsConnectionMode**</span><span class="sxs-lookup"><span data-stu-id="23c93-162">**FtpsConnectionMode**</span></span>|<span data-ttu-id="23c93-163">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-163">xs:string</span></span>|<span data-ttu-id="23c93-164">FTPS サーバーに対する SSL 接続のモードを指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-164">Specifies the mode of SSL connection made to the FTPS server.</span></span><br /><br /> <span data-ttu-id="23c93-165">**有効な値:**暗黙的または明示的な</span><span class="sxs-lookup"><span data-stu-id="23c93-165">**Valid Values:** Implicit or Explicit</span></span>|  
+|<span data-ttu-id="23c93-162">**FtpsConnectionMode**</span><span class="sxs-lookup"><span data-stu-id="23c93-162">**FtpsConnectionMode**</span></span>|<span data-ttu-id="23c93-163">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-163">xs:string</span></span>|<span data-ttu-id="23c93-164">FTPS サーバーに対する SSL 接続のモードを指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-164">Specifies the mode of SSL connection made to the FTPS server.</span></span><br /><br /> <span data-ttu-id="23c93-165">**有効な値:** 暗黙的または明示的な</span><span class="sxs-lookup"><span data-stu-id="23c93-165">**Valid Values:** Implicit or Explicit</span></span>|  
 |<span data-ttu-id="23c93-166">**ClientCertificateHash**</span><span class="sxs-lookup"><span data-stu-id="23c93-166">**ClientCertificateHash**</span></span>|<span data-ttu-id="23c93-167">xs:string</span><span class="sxs-lookup"><span data-stu-id="23c93-167">xs:string</span></span>|<span data-ttu-id="23c93-168">SSL (Secure Sockets Layer) のネゴシエーションで使用する必要のあるクライアント証明書の SHA1 ハッシュを指定します。</span><span class="sxs-lookup"><span data-stu-id="23c93-168">Specifies the SHA1 hash of the client certificate that must be used in the Secure Sockets Layer (SSL) negotiation.</span></span><br /><br /> <span data-ttu-id="23c93-169">このハッシュに基づいて、BizTalk ホスト インスタンスを実行しているユーザー アカウントの個人ストアからクライアント証明書が取得されます。</span><span class="sxs-lookup"><span data-stu-id="23c93-169">Based on this hash, the client certificate is picked up from the personal store of the user account under which the BizTalk host instance is running.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="23c93-170">参照</span><span class="sxs-lookup"><span data-stu-id="23c93-170">See Also</span></span>  

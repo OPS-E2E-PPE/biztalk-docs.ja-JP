@@ -1,14 +1,14 @@
 ---
-title: "ビジュアルの Siebel システムへの接続 Studio を使用して、アダプター メタデータのウィザードを追加 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジュアルの Siebel システムへの接続 Studio を使用して、アダプター メタデータのウィザードを追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0a82fcc-b3ac-4936-9210-03c99d3741d7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222770"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-add-adapter-metadata-wizard"></a><span data-ttu-id="b0ebd-102">ビジュアルの Siebel システムへの接続 Studio を使用して、アダプター メタデータのウィザードを追加</span><span class="sxs-lookup"><span data-stu-id="b0ebd-102">Connect to the Siebel System in Visual Studio Using Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="b0ebd-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]は BizTalk アダプターとしても公開し、そのため、使用することができます、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]アダプターを使用して、Siebel システムに対して実行する操作のスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] is also exposed as a BizTalk adapter and hence, you can use the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] to generate schema for the operations you want to perform on the Siebel system using the adapter.</span></span>  
@@ -39,14 +40,14 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="b0ebd-113">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="b0ebd-113">**Categories**</span></span>|<span data-ttu-id="b0ebd-114">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-114">Click **Consume Adapter Service**.</span></span>|  
         |<span data-ttu-id="b0ebd-115">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="b0ebd-115">**Templates**</span></span>|<span data-ttu-id="b0ebd-116">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-116">Click **Consume Adapter Service**.</span></span>|  
   
-    4.  <span data-ttu-id="b0ebd-117">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-117">Click **Add**.</span></span> <span data-ttu-id="b0ebd-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+    4.  <span data-ttu-id="b0ebd-117">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-117">Click **Add**.</span></span> <span data-ttu-id="b0ebd-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
     5.  <span data-ttu-id="b0ebd-119">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、WCF Siebel を選択します。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-119">In the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], select WCF-Siebel.</span></span> <span data-ttu-id="b0ebd-120">コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-120">Select the computer on which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is installed and the name of the BizTalk database.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="b0ebd-121">既に存在する場合、 **Wcf-siebel**で構成されている BizTalk のポートからポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-121">If you already have a **WCF-Siebel** port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-    6.  <span data-ttu-id="b0ebd-122">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-122">Click **Next**.</span></span>  
+    6.  <span data-ttu-id="b0ebd-122">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-122">Click **Next**.</span></span>  
   
 2.  <span data-ttu-id="b0ebd-123">**バインディングを選択**ドロップダウン リスト、選択**siebelBinding**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-123">From the **Select a binding** drop-down list, select **siebelBinding**, and then click **Configure**.</span></span>  
   
@@ -64,9 +65,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="b0ebd-132">使用してメタデータを生成する場合[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]と既存の WCF Siebel 送信ポートを選択して、バインドのプロパティを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-132">If you are generating metadata using [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] and you selected an existing WCF-Siebel send port, you need not specify the binding properties.</span></span> <span data-ttu-id="b0ebd-133">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-133">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="b0ebd-134">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-134">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="b0ebd-135">このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-135">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="b0ebd-136">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-136">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-7.  <span data-ttu-id="b0ebd-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-137">Click **OK**.</span></span>  
+7.  <span data-ttu-id="b0ebd-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-137">Click **OK**.</span></span>  
   
-8.  <span data-ttu-id="b0ebd-138">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-138">Click **Connect**.</span></span> <span data-ttu-id="b0ebd-139">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-139">Once the connection is established, the connection status is shown as **Connected**.</span></span>  
+8.  <span data-ttu-id="b0ebd-138">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-138">Click **Connect**.</span></span> <span data-ttu-id="b0ebd-139">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-139">Once the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="b0ebd-140">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="b0ebd-140">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span>  
   

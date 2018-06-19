@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008445"
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a><span data-ttu-id="b7903-102">識別フィールドに逆アセンブラー パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="b7903-102">Distinguished Fields in Disassembler Pipeline Components</span></span>
 <span data-ttu-id="b7903-103">スキーマで定義された識別フィールドは、XML 逆アセンブラー、BizTalk 逆アセンブラー、またはフラット ファイル逆アセンブラー パイプランによって、次の形式でメッセージ コンテキストに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="b7903-103">Distinguished fields defined in a schema are written to the message context by the XML Disassembler, BizTalk Framework Disassembler, or Flat File Disassembler pipeline components in the following format:</span></span>  

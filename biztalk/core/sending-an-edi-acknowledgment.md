@@ -1,14 +1,14 @@
 ---
-title: "EDI 受信確認を送信する |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 受信確認を送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a036d08-8a65-43ad-b72c-2a246d302792
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272522"
 ---
 # <a name="sending-an-edi-acknowledgment"></a><span data-ttu-id="2af4d-102">EDI 受信確認を送信します。</span><span class="sxs-lookup"><span data-stu-id="2af4d-102">Sending an EDI Acknowledgment</span></span>
 <span data-ttu-id="2af4d-103">受信確認は、EDI メッセージ送信の状態を示します。</span><span class="sxs-lookup"><span data-stu-id="2af4d-103">Acknowledgments indicate the status of EDI message transmission.</span></span> <span data-ttu-id="2af4d-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI インターチェンジを受信すると、どの受信確認が有効になっているかに応じて、1 つ以上の受信確認が EDI インターチェンジの送信者に返されます。</span><span class="sxs-lookup"><span data-stu-id="2af4d-104">After [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI interchange, it will return one or more acknowledgments to the sender of an EDI interchange, depending upon which acknowledgments have been enabled.</span></span>  
@@ -59,20 +60,20 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="2af4d-136">受信したインターチェンジのデータ要素が確認を要求した場合。</span><span class="sxs-lookup"><span data-stu-id="2af4d-136">A data element in the received interchange prompts the acknowledgment.</span></span> <span data-ttu-id="2af4d-137">X12 エンコード メッセージのため、受信パイプラインは、ISA14 データ要素が 1 に設定されている場合に技術 TA1 確認を生成します。</span><span class="sxs-lookup"><span data-stu-id="2af4d-137">For X12-encoded messages, the receive pipeline will generate a technical TA1 ACK if the ISA14 data element is set to 1.</span></span> <span data-ttu-id="2af4d-138">EDIFACT エンコード メッセージのため、受信パイプラインは、UNB9 データ要素が 2 に設定および、UNB9 データ要素が 1 に設定されている場合は機能 CONTRL 確認で生成する場合に技術 CONTRL 確認を生成します。</span><span class="sxs-lookup"><span data-stu-id="2af4d-138">For EDIFACT-encoded messages, the receive pipeline will generate a technical CONTRL ACK if the UNB9 data element is set to 2, and it will generate a functional CONTRL ACK if the UNB9 data element is set to 1.</span></span>  
   
--   <span data-ttu-id="2af4d-139">確認を要求するようにアグリーメントのプロパティが設定されている場合。</span><span class="sxs-lookup"><span data-stu-id="2af4d-139">An agreement property prompts the acknowledgment.</span></span> <span data-ttu-id="2af4d-140">これらのプロパティは、X12 インターチェンジの場合、 **TA1 が必要**と**997 が必要**プロパティで、**受信確認**の双方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2af4d-140">For X12 interchanges, these properties are the **TA1 Expected** and **997 Expected** properties in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="2af4d-141">EDIFACT インターチェンジの場合は、これらのプロパティは、**メッセージの受信 (CONTRL が必要です)**と**確認 (CONTRL) が必要です**で、**受信確認**のページ双方向アグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2af4d-141">For EDIFACT interchanges, these properties are the **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected** in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="2af4d-142">特定種類の確認を有効にすると、その種類の確認をバッチ処理するかどうかを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="2af4d-142">When you enable a type of acknowledgment, you can also indicate whether to batch that type of acknowledgment.</span></span>  
+-   <span data-ttu-id="2af4d-139">確認を要求するようにアグリーメントのプロパティが設定されている場合。</span><span class="sxs-lookup"><span data-stu-id="2af4d-139">An agreement property prompts the acknowledgment.</span></span> <span data-ttu-id="2af4d-140">これらのプロパティは、X12 インターチェンジの場合、 **TA1 が必要**と**997 が必要**プロパティで、**受信確認**の双方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2af4d-140">For X12 interchanges, these properties are the **TA1 Expected** and **997 Expected** properties in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="2af4d-141">EDIFACT インターチェンジの場合は、これらのプロパティは、**メッセージの受信 (CONTRL が必要です)** と**確認 (CONTRL) が必要です**で、**受信確認**のページ双方向アグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2af4d-141">For EDIFACT interchanges, these properties are the **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected** in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="2af4d-142">特定種類の確認を有効にすると、その種類の確認をバッチ処理するかどうかを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="2af4d-142">When you enable a type of acknowledgment, you can also indicate whether to batch that type of acknowledgment.</span></span>  
   
 -   <span data-ttu-id="2af4d-143">確認を要求するようにグローバル プロパティが設定されている場合 (インターチェンジに対するアグリーメントを特定できないとき)。</span><span class="sxs-lookup"><span data-stu-id="2af4d-143">A global property prompts the acknowledgment when no agreement is determined for the interchange.</span></span> <span data-ttu-id="2af4d-144">このプロパティとは、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2af4d-144">These properties are the</span></span>  
   
     -   <span data-ttu-id="2af4d-145">**TA1 が必要**と**997 が必要**内のプロパティ、**受信確認**のアグリーメント タブのページ、 **X12 フォールバック設定** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2af4d-145">**TA1 Expected** and **997 Expected** properties in the **Acknowledgements** page of the agreement tab of the **X12 Fallback Settings** dialog box.</span></span>  
   
-    -   <span data-ttu-id="2af4d-146">**メッセージの受信 (CONTRL が必要です)**と**確認 (CONTRL) が必要です**で、**受信確認**のアグリーメント タブのページ、 **EDIFACT フォールバック設定** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2af4d-146">**Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected** in the **Acknowledgements** page of the agreement tab of the **EDIFACT Fallback Settings** dialog box.</span></span>  
+    -   <span data-ttu-id="2af4d-146">**メッセージの受信 (CONTRL が必要です)** と**確認 (CONTRL) が必要です**で、**受信確認**のアグリーメント タブのページ、 **EDIFACT フォールバック設定** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2af4d-146">**Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected** in the **Acknowledgements** page of the agreement tab of the **EDIFACT Fallback Settings** dialog box.</span></span>  
   
  <span data-ttu-id="2af4d-147">EDIFACT では、EDI 受信パイプラインは、技術確認と機能確認の両方が要求された場合に 2 つの別々の CONTRL 確認を返します。</span><span class="sxs-lookup"><span data-stu-id="2af4d-147">For EDIFACT, the EDI receive pipeline will return two separate CONTRL acknowledgments if both a technical acknowledgment and a functional acknowledgment are prompted.</span></span> <span data-ttu-id="2af4d-148">技術 CONTRL 確認には、受信確認情報のみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="2af4d-148">The technical CONTRL ACK will include receipt acknowledgment information only.</span></span> <span data-ttu-id="2af4d-149">機能 CONTRL 確認には、受信情報と機能確認情報の両方が含まれます。</span><span class="sxs-lookup"><span data-stu-id="2af4d-149">The functional CONTRL ACK will include both receipt information and functional acknowledgment information.</span></span> <span data-ttu-id="2af4d-150">詳細については、次を参照してください。 [EDIFACT CONTRL 確認](../core/edifact-contrl-acknowledgment.md)です。</span><span class="sxs-lookup"><span data-stu-id="2af4d-150">For more information, see [EDIFACT CONTRL Acknowledgment](../core/edifact-contrl-acknowledgment.md).</span></span>  
   
 ## <a name="identifying-an-acknowledgment-with-a-control-number"></a><span data-ttu-id="2af4d-151">制御番号による受信確認の識別</span><span class="sxs-lookup"><span data-stu-id="2af4d-151">Identifying an Acknowledgment with a Control Number</span></span>  
  <span data-ttu-id="2af4d-152">X12 の場合はトランザクション セット制御番号 (ST2 データ要素) によって、EDIFACT の場合はトランザクション セット参照番号 (UNH1 データ要素) によって、各確認を識別する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2af4d-152">Each acknowledgment needs to be identified by a transaction set control number for X12 (the ST2 data element) or a transaction set reference number for EDIFACT (the UNH1 data element).</span></span> <span data-ttu-id="2af4d-153">出力方向の受信確認では、アグリーメントが構成されている場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]トランザクション セット制御または参照番号を次に基づくアグリーメントの設定値に設定されます。</span><span class="sxs-lookup"><span data-stu-id="2af4d-153">If an agreement is configured for the outgoing acknowledgment, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will set the transaction set control or reference number to the value set for the agreement based on the following:</span></span>  
   
--   <span data-ttu-id="2af4d-154">**X12 受信確認**– (**ACK 制御番号 (ST02)**プロパティ**ローカル ホスト設定**ページ (**受信者の設定**セクション)、アグリーメントのタブの**アグリーメントのプロパティ** ダイアログ ボックス</span><span class="sxs-lookup"><span data-stu-id="2af4d-154">**For X12 acknowledgements** – (**ACK Control number (ST02)** property in **Local Host Settings** Page (**Receiver’s Settings** section) of the agreement tab in **Agreement Properties** dialog box</span></span>  
+-   <span data-ttu-id="2af4d-154">**X12 受信確認**– (**ACK 制御番号 (ST02)** プロパティ**ローカル ホスト設定**ページ (**受信者の設定**セクション)、アグリーメントのタブの**アグリーメントのプロパティ** ダイアログ ボックス</span><span class="sxs-lookup"><span data-stu-id="2af4d-154">**For X12 acknowledgements** – (**ACK Control number (ST02)** property in **Local Host Settings** Page (**Receiver’s Settings** section) of the agreement tab in **Agreement Properties** dialog box</span></span>  
   
 -   <span data-ttu-id="2af4d-155">**EDIFACT 受信確認の**– (**Edifact Ack 制御番号**プロパティ**ローカル ホスト設定**ページ (**受信者の設定**セクション) のアグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス</span><span class="sxs-lookup"><span data-stu-id="2af4d-155">**For EDIFACT acknowledgements** – (**Edifact Ack Control number** property in **Local Host Settings** Page (**Receiver’s Settings** section) of the agreement tab in **Agreement Properties** dialog box</span></span>  
   

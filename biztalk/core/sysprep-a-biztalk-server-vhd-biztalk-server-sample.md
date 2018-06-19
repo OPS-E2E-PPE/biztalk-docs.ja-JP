@@ -1,14 +1,14 @@
 ---
-title: "Sysprep による BizTalk Server VHD (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Sysprep による BizTalk Server VHD (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 35f0146d-60ed-4265-983a-0e3665ef2ae4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007771"
 ---
 # <a name="sysprep-a-biztalk-server-vhd-biztalk-server-sample"></a><span data-ttu-id="459a2-102">Sysprep による BizTalk Server VHD の準備 (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="459a2-102">Sysprep a BizTalk Server VHD (BizTalk Server Sample)</span></span>
 <span data-ttu-id="459a2-103">Sysprep は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされている仮想マシンのスナップショットを作成し、他の仮想マシンに簡単に展開できるようにします。</span><span class="sxs-lookup"><span data-stu-id="459a2-103">Sysprep creates a snapshot of a virtual machine with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installed for quick deployment on other virtual machines.</span></span>  

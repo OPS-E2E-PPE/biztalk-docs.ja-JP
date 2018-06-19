@@ -1,14 +1,14 @@
 ---
-title: "単体テスト |Microsoft ドキュメント"
-ms.custom: 
+title: 単体テスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c40e5b82-dbb2-4767-8286-88e2de4129f3
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009835"
 ---
 # <a name="unit-testing"></a><span data-ttu-id="eaf85-102">単体テスト</span><span class="sxs-lookup"><span data-stu-id="eaf85-102">Unit Testing</span></span>
 <span data-ttu-id="eaf85-103">BizTalk Server には、単体テストを有効にできる機能が導入されています、**展開**BizTalk プロジェクトのプロパティ ページ。</span><span class="sxs-lookup"><span data-stu-id="eaf85-103">BizTalk Server introduces a unit testing feature that can be enabled on the **Deployment** property page of a BizTalk project.</span></span> <span data-ttu-id="eaf85-104">次のスクリーン ショットは、このプロジェクトのプロジェクトを右クリックすると、プロジェクト デザイナーからアクセス設定を示しています。**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="eaf85-104">The following screenshot shows this project setting accessed from Project Designer when you right-click a project and click **Properties**.</span></span>  

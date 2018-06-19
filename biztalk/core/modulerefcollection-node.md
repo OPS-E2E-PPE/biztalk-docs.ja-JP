@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262682"
 ---
 # <a name="modulerefcollection-node"></a><span data-ttu-id="af4a6-102">ModuleRefCollection ノード</span><span class="sxs-lookup"><span data-stu-id="af4a6-102">ModuleRefCollection Node</span></span>
 <span data-ttu-id="af4a6-103">バインド ファイルの ModuleRefCollection セクションは、バインド ファイルと共にエクスポートされる .NET アセンブリに関する特定の情報を含むすべての ModuleRef ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="af4a6-103">The ModuleRefCollection section of a binding file is the parent node for all of the ModuleRef nodes which contain specific information about .NET assemblies exported with the binding file.</span></span>  

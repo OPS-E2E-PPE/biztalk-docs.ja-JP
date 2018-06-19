@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で BAM エンド ツー エンドのサンプル |Microsoft ドキュメント"
-description: "BizTalk Server でビジネス アクティビティの監視を使用して複数のコンポーネントからイベントを関連付ける方法のシナリオ"
-ms.custom: 
+title: BizTalk Server で BAM エンド ツー エンドのサンプル |Microsoft ドキュメント
+description: BizTalk Server でビジネス アクティビティの監視を使用して複数のコンポーネントからイベントを関連付ける方法のシナリオ
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81406038-7f3f-499f-a003-12423d92c44b
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009883"
 ---
 # <a name="bam-end-to-end-biztalk-server-sample"></a><span data-ttu-id="a01d3-103">BAM End-to-End (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="a01d3-103">BAM End-to-End (BizTalk Server Sample)</span></span>
 <span data-ttu-id="a01d3-104">エンド ツー エンドの例では、BAM を使用して、複数のコンポーネント (この場合は、3 つのオーケストレーションとパイプライン) からのイベントを関連付ける方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-104">The End-to-End sample demonstrates how to correlate events from multiple components (in this case, three orchestrations and a pipeline) by using BAM.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/01/2017
 
 <span data-ttu-id="a01d3-117">このサンプルの動作は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="a01d3-117">The sample works as follows:</span></span>  
   
-1.  <span data-ttu-id="a01d3-118">入力メッセージを取得、 *\<サンプル パス\>*\BamEndToEnd\Input フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="a01d3-118">An input message is retrieved from the *\<Samples Path\>*\BamEndToEnd\Input folder.</span></span>  
+1.  <span data-ttu-id="a01d3-118">入力メッセージを取得、 *\<サンプル パス\>* \BamEndToEnd\Input フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="a01d3-118">An input message is retrieved from the *\<Samples Path\>* \BamEndToEnd\Input folder.</span></span>  
   
 2.  <span data-ttu-id="a01d3-119">パイプライン コンポーネントによって、一意の DocumentID がメッセージに割り当てられ、BAM API を使用して新しい BAM アクティビティが開始されます。</span><span class="sxs-lookup"><span data-stu-id="a01d3-119">The pipeline component assigns a unique DocumentID to the message, and uses the BAM API to begin a new BAM activity.</span></span> <span data-ttu-id="a01d3-120">オーケストレーションで利用できるように、入力メッセージの個別の部分として DocumentID が添付されます。</span><span class="sxs-lookup"><span data-stu-id="a01d3-120">The DocumentID is attached as a separate part of the input message to make it available to the orchestrations.</span></span>  
   
@@ -54,12 +55,12 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="a01d3-123">Orchestration2 によって入力メッセージが変更され、Orchestration3 をアクティブ化するメッセージ ボックス データベースに送信されます。</span><span class="sxs-lookup"><span data-stu-id="a01d3-123">Orchestration2 modifies the input message and sends it to the MessageBox database, which activates Orchestration3.</span></span>  
   
-6.  <span data-ttu-id="a01d3-124">Orchestration3 によってメッセージが変更され、フォルダーに書き込まれます*\<サンプル パス\>*\BamEndToEnd\Output です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-124">Orchestration3 modifies the message and writes it to the folder *\<Samples Path\>*\BamEndToEnd\Output.</span></span>  
+6.  <span data-ttu-id="a01d3-124">Orchestration3 によってメッセージが変更され、フォルダーに書き込まれます*\<サンプル パス\>* \BamEndToEnd\Output です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-124">Orchestration3 modifies the message and writes it to the folder *\<Samples Path\>* \BamEndToEnd\Output.</span></span>  
   
 7.  <span data-ttu-id="a01d3-125">各オーケストレーションによって BAM アクティビティ内のアクティビティ項目が更新されます。</span><span class="sxs-lookup"><span data-stu-id="a01d3-125">Each orchestration updates activity items in the BAM activity.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="a01d3-126">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="a01d3-126">Where to Find This Sample</span></span>  
- <span data-ttu-id="a01d3-127">このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamEndToEnd です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-127">You can find this sample at *\<Samples Path\>*\BAM\BamEndToEnd.</span></span>  
+ <span data-ttu-id="a01d3-127">このサンプルを見つけることができます*\<サンプル パス\>* \BAM\BamEndToEnd です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-127">You can find this sample at *\<Samples Path\>* \BAM\BamEndToEnd.</span></span>  
   
  <span data-ttu-id="a01d3-128">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="a01d3-128">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -101,11 +102,11 @@ ms.lasthandoff: 12/01/2017
   
 ##  <a name="To_Build_Sample"></a><span data-ttu-id="a01d3-186">ビルドおよび初期化するこのサンプル</span><span class="sxs-lookup"><span data-stu-id="a01d3-186">Build and initialize this sample</span></span>  
   
-1.  <span data-ttu-id="a01d3-187">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BAMEndToEnd\Setup.bat です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-187">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\BAMEndToEnd\Setup.bat.</span></span> <span data-ttu-id="a01d3-188">Setup.bat は、このサンプルの BAM インフラストラクチャをビルドして初期化します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-188">Setup.bat builds and initializes the BAM infrastructure for this sample.</span></span> <span data-ttu-id="a01d3-189">コマンド プロンプトは開いたままにします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-189">Keep the command prompt open.</span></span>  
+1.  <span data-ttu-id="a01d3-187">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BAMEndToEnd\Setup.bat です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-187">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\BAMEndToEnd\Setup.bat.</span></span> <span data-ttu-id="a01d3-188">Setup.bat は、このサンプルの BAM インフラストラクチャをビルドして初期化します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-188">Setup.bat builds and initializes the BAM infrastructure for this sample.</span></span> <span data-ttu-id="a01d3-189">コマンド プロンプトは開いたままにします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-189">Keep the command prompt open.</span></span>  
   
 2.  <span data-ttu-id="a01d3-190">Orchestration1、Orchestration2、および Orchestration3 を BAM アクティビティにマップするための追跡プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-190">Create a tracking profile to map Orchestration1, Orchestration2, and Orchestration3 to the BAM activity.</span></span> <span data-ttu-id="a01d3-191">(という別の手順の方法の詳細については、追跡プロファイルの作成は複雑なプロセスなので**追跡プロファイルを作成する**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-191">(Because creating the tracking profile is a complex process, the detailed instructions are in a separate procedure called **To create a tracking profile**.</span></span> <span data-ttu-id="a01d3-192">この手順については、このドキュメントの後半で説明します)。</span><span class="sxs-lookup"><span data-stu-id="a01d3-192">This procedure appears later in this document.)</span></span>  
   
-3.  <span data-ttu-id="a01d3-193">前の手順で作成した追跡プロファイル BamEndToEnd.btt を展開します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-193">Deploy the tracking profile BamEndToEnd.btt that you created in the previous step.</span></span>  <span data-ttu-id="a01d3-194">コマンド プロンプトでを変更、 *\<サンプル パス\>*\BAM\BamEndToEnd ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="a01d3-194">In the command prompt change to the *\<Samples Path\>*\BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="a01d3-195">追跡プロファイルを展開する次の行を入力し、キーを押します**Enter**:</span><span class="sxs-lookup"><span data-stu-id="a01d3-195">To deploy the tracking profile, type the following line, and then press **Enter**:</span></span>  
+3.  <span data-ttu-id="a01d3-193">前の手順で作成した追跡プロファイル BamEndToEnd.btt を展開します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-193">Deploy the tracking profile BamEndToEnd.btt that you created in the previous step.</span></span>  <span data-ttu-id="a01d3-194">コマンド プロンプトでを変更、 *\<サンプル パス\>* \BAM\BamEndToEnd ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="a01d3-194">In the command prompt change to the *\<Samples Path\>* \BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="a01d3-195">追跡プロファイルを展開する次の行を入力し、キーを押します**Enter**:</span><span class="sxs-lookup"><span data-stu-id="a01d3-195">To deploy the tracking profile, type the following line, and then press **Enter**:</span></span>  
   
     `“<BizTalkInstallationPath>\Tracking\bttdeploy” BamEndToEnd.btt`
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 12/01/2017
   
 ##  <a name="To_Run_Sample"></a><span data-ttu-id="a01d3-199">このサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-199">Run this sample</span></span>  
   
-<span data-ttu-id="a01d3-200">ファイルをコピー *\<サンプル パス\>*フォルダーに \BamEndToEnd\InputMessage.xml *\<サンプル パス\>*\BamEndToEnd\Input です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-200">Copy the file *\<Samples Path\>*\BamEndToEnd\InputMessage.xml into the folder *\<Samples Path\>*\BamEndToEnd\Input.</span></span> <span data-ttu-id="a01d3-201">Input フォルダーから、数秒後に、メッセージが表示されなくなります、出力メッセージが表示されます、 *\<サンプル パス\>*\BamEndToEnd\Output フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="a01d3-201">After a few seconds, the message disappears from the Input folder, and an output message appears in the *\<Samples Path\>*\BamEndToEnd\Output folder.</span></span>  
+<span data-ttu-id="a01d3-200">ファイルをコピー *\<サンプル パス\>* フォルダーに \BamEndToEnd\InputMessage.xml *\<サンプル パス\>* \BamEndToEnd\Input です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-200">Copy the file *\<Samples Path\>* \BamEndToEnd\InputMessage.xml into the folder *\<Samples Path\>* \BamEndToEnd\Input.</span></span> <span data-ttu-id="a01d3-201">Input フォルダーから、数秒後に、メッセージが表示されなくなります、出力メッセージが表示されます、 *\<サンプル パス\>* \BamEndToEnd\Output フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="a01d3-201">After a few seconds, the message disappears from the Input folder, and an output message appears in the *\<Samples Path\>* \BamEndToEnd\Output folder.</span></span>  
   
 ##  <a name="To_View_Data"></a><span data-ttu-id="a01d3-202">BAM データを表示します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-202">View the BAM data</span></span>  
   
@@ -130,14 +131,14 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="rerun-this-sample"></a><span data-ttu-id="a01d3-209">このサンプルを再実行します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-209">Rerun this sample</span></span>  
   
-1.  <span data-ttu-id="a01d3-210">管理者は、コマンド プロンプトを開き、変更、 *\<サンプル パス\>*\BAM\BamEndToEnd ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="a01d3-210">Open a command prompt as Administrator, and change to the *\<Samples Path\>*\BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="a01d3-211">次の行を入力します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-211">Type the following line:</span></span>  
+1.  <span data-ttu-id="a01d3-210">管理者は、コマンド プロンプトを開き、変更、 *\<サンプル パス\>* \BAM\BamEndToEnd ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="a01d3-210">Open a command prompt as Administrator, and change to the *\<Samples Path\>* \BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="a01d3-211">次の行を入力します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-211">Type the following line:</span></span>  
   
     `“C:\Program Files\Microsoft BizTalk Server <version>\Tracking\bttdeploy” BamEndToEnd.btt /remove`  
   
     > [!NOTE]
     >  <span data-ttu-id="a01d3-212">インストールしていない場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]C ドライブにインストールしたドライブ文字"C"を置き換えます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-212">If you did not install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to the C drive, replace "C" with the drive letter where you installed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-2.  <span data-ttu-id="a01d3-213">実行*\<パスのサンプル\>*\BAM\BAMEndToEnd\Cleanup.bat です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-213">Run *\<Samples Path\>*\BAM\BAMEndToEnd\Cleanup.bat.</span></span> <span data-ttu-id="a01d3-214">Cleanup.bat は、このサンプルの BAM インフラストラクチャを削除します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-214">Cleanup.bat removes the BAM infrastructure for this sample.</span></span>  
+2.  <span data-ttu-id="a01d3-213">実行*\<パスのサンプル\>* \BAM\BAMEndToEnd\Cleanup.bat です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-213">Run *\<Samples Path\>* \BAM\BAMEndToEnd\Cleanup.bat.</span></span> <span data-ttu-id="a01d3-214">Cleanup.bat は、このサンプルの BAM インフラストラクチャを削除します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-214">Cleanup.bat removes the BAM infrastructure for this sample.</span></span>  
   
 3.  <span data-ttu-id="a01d3-215">手順に従います**このサンプルをビルドして初期化**」セクションを参照します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-215">Perform the steps in **To build and initialize this sample** section in this topic.</span></span>  
   
@@ -147,7 +148,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="a01d3-219">左側のウィンドウで、**追跡プロファイル エディター**ウィンドウで、をクリックして**ここをクリックして、BAM アクティビティ定義をインポートする**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-219">In the left pane of the **Tracking Profile Editor** window, click **Click here to import a BAM Activity Definition**.</span></span>  
   
-3.  <span data-ttu-id="a01d3-220">**BAM アクティビティ定義名**のセクションで、 **BAM アクティビティ定義のインポート**ダイアログ ボックスで、 **[endtoendactivity]**、クリックして**[ok]**.</span><span class="sxs-lookup"><span data-stu-id="a01d3-220">In the  **BAM Activity Definition Name** section of the **Import BAM Activity Definition** dialog box, select **EndToEndActivity**, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="a01d3-220">**BAM アクティビティ定義名**のセクションで、 **BAM アクティビティ定義のインポート**ダイアログ ボックスで、 **[endtoendactivity]**、クリックして **[ok]**.</span><span class="sxs-lookup"><span data-stu-id="a01d3-220">In the  **BAM Activity Definition Name** section of the **Import BAM Activity Definition** dialog box, select **EndToEndActivity**, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="a01d3-221">右側のペインで、**追跡プロファイル エディター**ウィンドウで、をクリックして**ここをクリックすると、イベント ソースを選択する**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-221">In the right pane of the **Tracking Profile Editor** window, click **Click here to select an event source**.</span></span>  
   
@@ -155,21 +156,21 @@ ms.lasthandoff: 12/01/2017
   
 6.  <span data-ttu-id="a01d3-223">**オーケストレーション名**のセクション、**オーケストレーションの選択**ダイアログ ボックスで、**で BamEndToEnd.Services.Orchestration1**、順にクリック**OK**.</span><span class="sxs-lookup"><span data-stu-id="a01d3-223">In the **Orchestration Name** section of the **Select Orchestration** dialog box, select **BamEndToEnd.Services.Orchestration1**, and then click **OK**.</span></span>  
   
-7.  <span data-ttu-id="a01d3-224">左側のウィンドウで、**追跡プロファイル エディター**ウィンドウを右クリックして**endtoendactivity**、クリックして**新しい continuationid**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-224">In the left pane of the **Tracking Profile Editor** window, right-click **EndToEndActivity**, and then click **New ContinuationID**.</span></span> <span data-ttu-id="a01d3-225">新しい continuation ID の名前を付けます**orch1 _**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-225">Name the new continuation ID **Orch1_**.</span></span> <span data-ttu-id="a01d3-226">2 つの continuation Id という名前を作成するには、この手順を繰り返します**orch2 _**と**orch3 _**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-226">Repeat this step to create two more continuation IDs named **Orch2_** and **Orch3_**.</span></span>  
+7.  <span data-ttu-id="a01d3-224">左側のウィンドウで、**追跡プロファイル エディター**ウィンドウを右クリックして**endtoendactivity**、クリックして**新しい continuationid**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-224">In the left pane of the **Tracking Profile Editor** window, right-click **EndToEndActivity**, and then click **New ContinuationID**.</span></span> <span data-ttu-id="a01d3-225">新しい continuation ID の名前を付けます**orch1 _** です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-225">Name the new continuation ID **Orch1_**.</span></span> <span data-ttu-id="a01d3-226">2 つの continuation Id という名前を作成するには、この手順を繰り返します**orch2 _** と**orch3 _** です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-226">Repeat this step to create two more continuation IDs named **Orch2_** and **Orch3_**.</span></span>  
   
-8.  <span data-ttu-id="a01d3-227">右クリック**[endtoendactivity]**、クリックして**新しい Continuation**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-227">Right-click **EndToEndActivity**, and then click **New Continuation**.</span></span> <span data-ttu-id="a01d3-228">新しい continuation の名前**orch2 _**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-228">Name the new continuation **Orch2_**.</span></span> <span data-ttu-id="a01d3-229">という continuation も作成するには、この手順を繰り返します**orch3 _**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-229">Repeat this step to create another continuation named **Orch3_**.</span></span>  
+8.  <span data-ttu-id="a01d3-227">右クリック **[endtoendactivity]**、クリックして**新しい Continuation**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-227">Right-click **EndToEndActivity**, and then click **New Continuation**.</span></span> <span data-ttu-id="a01d3-228">新しい continuation の名前**orch2 _** です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-228">Name the new continuation **Orch2_**.</span></span> <span data-ttu-id="a01d3-229">という continuation も作成するには、この手順を繰り返します**orch3 _** です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-229">Repeat this step to create another continuation named **Orch3_**.</span></span>  
   
 9. <span data-ttu-id="a01d3-230">右クリックし、 **Receive1**図形をクリックして**コンテキスト プロパティ スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-230">Right-click the **Receive1** shape, and then click **Context Property Schemas**.</span></span>  
   
 10. <span data-ttu-id="a01d3-231">末尾にスクロール、**コンテキスト プロパティ名**、一覧表示し、ダブルクリック**BAMEndToEnd.Services.PropertySchema.DocumentID**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-231">Scroll to the end of the **Context Property Name** list, and then double-click **BAMEndToEnd.Services.PropertySchema.DocumentID**.</span></span>  
   
-11. <span data-ttu-id="a01d3-232">展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を右側のウィンドウで**orch1 _**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-232">Expand **\<Schema\>**, and then drag **DocumentID** in the right pane to **Orch1_** in the left pane.</span></span>  
+11. <span data-ttu-id="a01d3-232">展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を右側のウィンドウで**orch1 _** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-232">Expand **\<Schema\>**, and then drag **DocumentID** in the right pane to **Orch1_** in the left pane.</span></span>  
   
 12. <span data-ttu-id="a01d3-233">矢印の付いたフォルダー アイコンをクリックして (![フォルダーと上矢印ボタン](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示するには、2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-233">Click the folder icon with the arrow (![button with folder and up arrow](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) twice to display the orchestration.</span></span>  
   
-13. <span data-ttu-id="a01d3-234">ドラッグ、 **Receive1**図形を右側のペインで**[sbegin1]**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-234">Drag the **Receive1** shape in the right pane to **SBegin1** in the left pane.</span></span>  
+13. <span data-ttu-id="a01d3-234">ドラッグ、 **Receive1**図形を右側のペインで **[sbegin1]** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-234">Drag the **Receive1** shape in the right pane to **SBegin1** in the left pane.</span></span>  
   
-14. <span data-ttu-id="a01d3-235">ドラッグ、 **StartOrchestration_1**図形を右側のペインで**[send1]**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-235">Drag the **StartOrchestration_1** shape in the right pane to **SEnd1** in the left pane.</span></span>  
+14. <span data-ttu-id="a01d3-235">ドラッグ、 **StartOrchestration_1**図形を右側のペインで **[send1]** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-235">Drag the **StartOrchestration_1** shape in the right pane to **SEnd1** in the left pane.</span></span>  
   
 15. <span data-ttu-id="a01d3-236">右クリックし、 **StartOrchestration_1**図形をクリックして**メッセージ ペイロード スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-236">Right-click the **StartOrchestration_1** shape, and then click **Message Payload Schemas**.</span></span>  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 12/01/2017
   
 19. <span data-ttu-id="a01d3-241">末尾にスクロール、**コンテキスト プロパティ名**、一覧表示し、ダブルクリック**BAMEndToEnd.Services.PropertySchema.DocumentID**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-241">Scroll to the end of the **Context Property Name** list, and then double-click **BAMEndToEnd.Services.PropertySchema.DocumentID**.</span></span>  
   
-20. <span data-ttu-id="a01d3-242">展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を**orch2 _**左側のウィンドウで継続します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-242">Expand **\<Schema\>**, and then drag **DocumentID** to the **Orch2_** continuation in the left pane.</span></span>  
+20. <span data-ttu-id="a01d3-242">展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を**orch2 _** 左側のウィンドウで継続します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-242">Expand **\<Schema\>**, and then drag **DocumentID** to the **Orch2_** continuation in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a01d3-243">Orch2_ Continuation と Orch2_ Continuation ID を混同しないように注意してください。</span><span class="sxs-lookup"><span data-stu-id="a01d3-243">Do not confuse the Orch2_ continuation with the Orch2_ continuation ID.</span></span> <span data-ttu-id="a01d3-244">Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンには、キー (が含まれていません。![continuation のアイコン](../core/media/test.gif "テスト"))。</span><span class="sxs-lookup"><span data-stu-id="a01d3-244">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
@@ -198,16 +199,16 @@ ms.lasthandoff: 12/01/2017
   
 25. <span data-ttu-id="a01d3-249">値"Message_3"を含む行をダブルクリックして、**メッセージ**列と値に"BAMPart"で、**一部**列です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-249">Double-click the row that contains the value “Message_3” in the **Message** column and the value “BAMPart” in the **Part** column.</span></span>  
   
-26. <span data-ttu-id="a01d3-250">展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch2 _**左側のウィンドウで continuation ID。</span><span class="sxs-lookup"><span data-stu-id="a01d3-250">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch2_** continuation ID in the left pane.</span></span>  
+26. <span data-ttu-id="a01d3-250">展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch2 _** 左側のウィンドウで continuation ID。</span><span class="sxs-lookup"><span data-stu-id="a01d3-250">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch2_** continuation ID in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a01d3-251">Orch2_ Continuation と Orch2_ Continuation ID を混同しないように注意してください。</span><span class="sxs-lookup"><span data-stu-id="a01d3-251">Do not confuse the Orch2_ continuation with the Orch2_ continuation ID.</span></span> <span data-ttu-id="a01d3-252">Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンには、キー (が含まれていません。![continuation のアイコン](../core/media/test.gif "テスト"))。</span><span class="sxs-lookup"><span data-stu-id="a01d3-252">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
   
 27. <span data-ttu-id="a01d3-253">矢印の付いたフォルダー アイコンをクリックして (![フォルダーとし、上のボタン &#45; 矢印](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示するには、2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-253">Click the folder icon with the arrow (![button with folder and up&#45;arrow](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) twice to display the orchestration.</span></span>  
   
-28. <span data-ttu-id="a01d3-254">ドラッグ、 **ConstructMessage_1**図形を右側のペインで**[sbegin2]**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-254">Drag the **ConstructMessage_1** shape in the right pane to **SBegin2** in the left pane.</span></span>  
+28. <span data-ttu-id="a01d3-254">ドラッグ、 **ConstructMessage_1**図形を右側のペインで **[sbegin2]** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-254">Drag the **ConstructMessage_1** shape in the right pane to **SBegin2** in the left pane.</span></span>  
   
-29. <span data-ttu-id="a01d3-255">ドラッグ、 **Send_1**図形を右側のペインで**[send2]**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-255">Drag the **Send_1** shape in the right pane to **SEnd2** in the left pane.</span></span>  
+29. <span data-ttu-id="a01d3-255">ドラッグ、 **Send_1**図形を右側のペインで **[send2]** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-255">Drag the **Send_1** shape in the right pane to **SEnd2** in the left pane.</span></span>  
   
 30. <span data-ttu-id="a01d3-256">右クリックし、 **Send_1**図形をクリックして**メッセージ ペイロード スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-256">Right-click the **Send_1** shape, and then click **Message Payload Schemas**.</span></span>  
   
@@ -219,7 +220,7 @@ ms.lasthandoff: 12/01/2017
   
 34. <span data-ttu-id="a01d3-260">値"Message_3"を含む行をダブルクリックして、**メッセージ**列と値に"BAMPart"で、**一部**列です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-260">Double-click the row that contains the value “Message_3” in the **Message** column and the value “BAMPart” in the **Part** column.</span></span>  
   
-35. <span data-ttu-id="a01d3-261">展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch3 _**左側のウィンドウで継続します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-261">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation in the left pane.</span></span>  
+35. <span data-ttu-id="a01d3-261">展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch3 _** 左側のウィンドウで継続します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-261">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a01d3-262">Orch3_ Continuation と Orch3_ Continuation ID を混同しないように注意してください。</span><span class="sxs-lookup"><span data-stu-id="a01d3-262">Do not confuse the Orch3_ continuation with the Orch3_ continuation ID.</span></span> <span data-ttu-id="a01d3-263">Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンには、キー (が含まれていません。![continuation のアイコン](../core/media/test.gif "テスト"))。</span><span class="sxs-lookup"><span data-stu-id="a01d3-263">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
@@ -234,29 +235,29 @@ ms.lasthandoff: 12/01/2017
   
 40. <span data-ttu-id="a01d3-268">値"Message_3"を含む行をダブルクリックして、**メッセージ**列と値に"BAMPart"で、**一部**列です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-268">Double-click the row that contains the value “Message_3” in the **Message** column and the value “BAMPart” in the **Part** column.</span></span>  
   
-41. <span data-ttu-id="a01d3-269">展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch3 _**左側のウィンドウで continuation ID。</span><span class="sxs-lookup"><span data-stu-id="a01d3-269">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation ID in the left pane.</span></span>  
+41. <span data-ttu-id="a01d3-269">展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch3 _** 左側のウィンドウで continuation ID。</span><span class="sxs-lookup"><span data-stu-id="a01d3-269">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation ID in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a01d3-270">Orch3_ Continuation と Orch3_ Continuation ID を混同しないように注意してください。</span><span class="sxs-lookup"><span data-stu-id="a01d3-270">Do not confuse the Orch3_ continuation with the Orch3_ continuation ID.</span></span> <span data-ttu-id="a01d3-271">Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンには、キー (が含まれていません。![continuation のアイコン](../core/media/test.gif "テスト"))。</span><span class="sxs-lookup"><span data-stu-id="a01d3-271">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
   
 42. <span data-ttu-id="a01d3-272">矢印の付いたフォルダー アイコンをクリックして (![フォルダーと上矢印ボタン](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示するには、2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-272">Click the folder icon with the arrow (![button with folder and up arrow](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) twice to display the orchestration.</span></span>  
   
-43. <span data-ttu-id="a01d3-273">ドラッグ、 **Receive1**図形を右側のペインで**[sbegin3]**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-273">Drag the **Receive1** shape in the right pane to **SBegin3** in the left pane.</span></span>  
+43. <span data-ttu-id="a01d3-273">ドラッグ、 **Receive1**図形を右側のペインで **[sbegin3]** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-273">Drag the **Receive1** shape in the right pane to **SBegin3** in the left pane.</span></span>  
   
-44. <span data-ttu-id="a01d3-274">ドラッグ、 **Send_1**図形を右側のペインで**[send3]**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-274">Drag the **Send_1** shape in the right pane to **SEnd3** in the left pane.</span></span>  
+44. <span data-ttu-id="a01d3-274">ドラッグ、 **Send_1**図形を右側のペインで **[send3]** 左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-274">Drag the **Send_1** shape in the right pane to **SEnd3** in the left pane.</span></span>  
   
 45. <span data-ttu-id="a01d3-275">右クリックし、 **Send_1**図形をクリックして**メッセージ ペイロード スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-275">Right-click the **Send_1** shape, and then click **Message Payload Schema**.</span></span>  
   
 46. <span data-ttu-id="a01d3-276">展開**Schema3**、し、ドラッグ**Data3**を右側のウィンドウで**Data3**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="a01d3-276">Expand **Schema3**, and then drag **Data3** in the right pane to **Data3** in the left pane.</span></span>  
   
-47. <span data-ttu-id="a01d3-277">右クリック**DocumentID**下、 **orch2 _**継続をクリックして**ポート マッピング**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-277">Right-click **DocumentID** below the **Orch2_** continuation, and then click **Set Port Mappings**.</span></span>  
+47. <span data-ttu-id="a01d3-277">右クリック**DocumentID**下、 **orch2 _** 継続をクリックして**ポート マッピング**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-277">Right-click **DocumentID** below the **Orch2_** continuation, and then click **Set Port Mappings**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a01d3-278">Orch2_ Continuation と Orch2_ Continuation ID を混同しないように注意してください。</span><span class="sxs-lookup"><span data-stu-id="a01d3-278">Do not confuse the Orch2_ continuation with the Orch2_ continuation ID.</span></span> <span data-ttu-id="a01d3-279">Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンには、キー (が含まれていません。![continuation のアイコン](../core/media/test.gif "テスト"))。</span><span class="sxs-lookup"><span data-stu-id="a01d3-279">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
   
 48. <span data-ttu-id="a01d3-280">**ポートの選択**のセクションで、**ポートの選択**ダイアログ ボックスで、をクリックして**BamEndToEnd_ReceivePort**、大きい をクリックして-不等号 ( **>**)、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-280">In the **Select Ports** section of the **Select Ports** dialog box, click **BamEndToEnd_ReceivePort**, click the greater-than sign (**>**), and then click **OK**.</span></span>  
   
-49. <span data-ttu-id="a01d3-281">追跡プロファイルを保存*\<サンプル パス\>*\BAM\BamEndToEnd\BamEndToEnd.btt です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-281">Save the tracking profile to *\<Samples Path\>*\BAM\BamEndToEnd\BamEndToEnd.btt.</span></span>  
+49. <span data-ttu-id="a01d3-281">追跡プロファイルを保存*\<サンプル パス\>* \BAM\BamEndToEnd\BamEndToEnd.btt です。</span><span class="sxs-lookup"><span data-stu-id="a01d3-281">Save the tracking profile to *\<Samples Path\>* \BAM\BamEndToEnd\BamEndToEnd.btt.</span></span>  
   
 ## <a name="important-details"></a><span data-ttu-id="a01d3-282">重要な詳細情報</span><span class="sxs-lookup"><span data-stu-id="a01d3-282">Important details</span></span>  
  <span data-ttu-id="a01d3-283">追跡プロファイルは、パイプラインではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a01d3-283">Tracking profiles are not supported for pipelines.</span></span> <span data-ttu-id="a01d3-284">ただしへの呼び出し**BeginActivity**パイプライン コンポーネントは、同じようにオーケストレーションで ActivityID を使用します。</span><span class="sxs-lookup"><span data-stu-id="a01d3-284">However, the call to **BeginActivity** in the pipeline component is the same as using ActivityID in an orchestration.</span></span> <span data-ttu-id="a01d3-285">呼び出し**EnableContinuation**オーケストレーションでの continuation の使用と同じです。</span><span class="sxs-lookup"><span data-stu-id="a01d3-285">The call to **EnableContinuation** is the same as using a continuation in an orchestration.</span></span>  

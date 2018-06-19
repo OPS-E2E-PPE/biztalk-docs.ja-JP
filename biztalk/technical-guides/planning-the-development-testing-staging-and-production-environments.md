@@ -1,14 +1,14 @@
 ---
-title: "開発、テスト、ステージング、実稼働環境の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 開発、テスト、ステージング、実稼働環境の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6c83a42d-117f-4a24-a669-b3e4e1c9a056
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008971"
 ---
 # <a name="planning-the-development-testing-staging-and-production-environments"></a><span data-ttu-id="8fd73-102">開発、テスト、ステージング、実稼働環境の計画</span><span class="sxs-lookup"><span data-stu-id="8fd73-102">Planning the Development, Testing, Staging, and Production Environments</span></span>
 <span data-ttu-id="8fd73-103">このトピックでは、BizTalk ソリューションのリリース管理プロセスで使用される環境について説明します。</span><span class="sxs-lookup"><span data-stu-id="8fd73-103">This topic discusses the environments used in the release management process for a BizTalk solution.</span></span> <span data-ttu-id="8fd73-104">同様に、エンタープライズ ソフトウェア ソリューションを開発および BizTalk ソリューションをリリースするときに確立されているソフトウェアのリリース管理のガイドラインに従ってください。</span><span class="sxs-lookup"><span data-stu-id="8fd73-104">As with any enterprise software solution, you should follow established software release management guidelines when you develop and release a BizTalk solution.</span></span> <span data-ttu-id="8fd73-105">このプロセスは、次の段階を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="8fd73-105">This process should include the following distinct stages:</span></span>  

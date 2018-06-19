@@ -1,11 +1,11 @@
 ---
-title: "マークされたトランザクション、完全バックアップ、およびログ バックアップ |Microsoft ドキュメント"
-ms.custom: 
+title: マークされたトランザクション、完全バックアップ、およびログ バックアップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, transaction logs
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - transaction logs
 - backing up, backup jobs
 ms.assetid: a383a16d-1e40-4b0b-a515-f1cb90bfb4d2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973592"
 ---
 # <a name="marked-transactions-full-backups-and-log-backups"></a><span data-ttu-id="eb037-102">マークされたトランザクション、完全バックアップ、ログ バックアップ</span><span class="sxs-lookup"><span data-stu-id="eb037-102">Marked Transactions, Full Backups, and Log Backups</span></span>
 <span data-ttu-id="eb037-103">BizTalk Server のバックアップ ジョブは、BizTalk Server のデータベースと呼ばれるトランザクションの種類と組み合わせて、データベースの完全バックアップとトランザクション ログのバックアップを使用して、すべての同期のバックアップを作成、*マークされたトランザクション*です。</span><span class="sxs-lookup"><span data-stu-id="eb037-103">The Backup BizTalk Server Job creates synchronized backups of all BizTalk Server databases by using full database backups and transaction log backups, in conjunction with a type of transaction known as a *marked transaction*.</span></span> <span data-ttu-id="eb037-104">"マークされたトランザクション" とは、そのトランザクションに参加するすべてのデータベースのトランザクション ログに対してマークを設定するトランザクションです。</span><span class="sxs-lookup"><span data-stu-id="eb037-104">Marked transactions are transactions that place a mark into the transaction log of all databases participating in the transaction.</span></span> <span data-ttu-id="eb037-105">新しい分散トランザクションの開始を抑制しながら、現在実行されている分散トランザクションの完了を待機し、適切な時期が来たらトランザクションを実行してマークを設定するというものです。</span><span class="sxs-lookup"><span data-stu-id="eb037-105">The marked transaction blocks new distributed transactions from starting, waits for the distributed transactions that are currently running to complete, and then executes to place the mark.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="transaction-log-backups"></a><span data-ttu-id="eb037-113">トランザクション ログのバックアップ</span><span class="sxs-lookup"><span data-stu-id="eb037-113">Transaction log backups</span></span>  
  <span data-ttu-id="eb037-114">BizTalk Server のバックアップ ジョブを実行する 2 つ目のプロセスは*MarkAndBackupLog*です。</span><span class="sxs-lookup"><span data-stu-id="eb037-114">The second process that the Backup BizTalk Server job performs is *MarkAndBackupLog*.</span></span> <span data-ttu-id="eb037-115">ジョブを実行するたびに、このプロセスですべての BizTalk Server データベースにマークが設定され、トランザクション ログ バックアップが実行されます。</span><span class="sxs-lookup"><span data-stu-id="eb037-115">This process places a mark in all BizTalk Server databases and performs a transaction log backup every time the job executes.</span></span>  
   
- <span data-ttu-id="eb037-116">使用して作成された文字列のマークは *\<ServerName\>*_*\<DatabaseName\>*_Log\_  *\<LogMarkName\>*\_*\<タイムスタンプ\>*.bak、場所、 *\<ログ マーク名\>*は、SQL Server エージェント ジョブで構成します。</span><span class="sxs-lookup"><span data-stu-id="eb037-116">The mark is the string created by using *\<ServerName\>*_*\<DatabaseName\>*_Log\_*\<LogMarkName\>*\_*\<Timestamp\>*.bak, where the *\<Log Mark Name\>* is configured in the SQL Server Agent job.</span></span> <span data-ttu-id="eb037-117">各データベースの最後のログを復元するときに、このマークが使用されます。</span><span class="sxs-lookup"><span data-stu-id="eb037-117">This mark must be used when restoring the last log to each database.</span></span>  
+ <span data-ttu-id="eb037-116">使用して作成された文字列のマークは *\<ServerName\>*_*\<DatabaseName\>*_Log\_  *\<LogMarkName\>*\_*\<タイムスタンプ\>*.bak、場所、 *\<ログ マーク名\>* は、SQL Server エージェント ジョブで構成します。</span><span class="sxs-lookup"><span data-stu-id="eb037-116">The mark is the string created by using *\<ServerName\>*_*\<DatabaseName\>*_Log\_*\<LogMarkName\>*\_*\<Timestamp\>*.bak, where the *\<Log Mark Name\>* is configured in the SQL Server Agent job.</span></span> <span data-ttu-id="eb037-117">各データベースの最後のログを復元するときに、このマークが使用されます。</span><span class="sxs-lookup"><span data-stu-id="eb037-117">This mark must be used when restoring the last log to each database.</span></span>  
   
  <span data-ttu-id="eb037-118">詳細については、SQL Server Books Online の「トランザクション ログ バックアップ」および「関連するデータベースのバックアップと復旧」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb037-118">For more information, see "Transaction Log Backups" and "Backup and Recovery of Related Databases" in SQL Server Books Online.</span></span>  
   

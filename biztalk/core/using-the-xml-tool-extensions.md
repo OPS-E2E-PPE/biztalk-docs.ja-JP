@@ -1,14 +1,14 @@
 ---
-title: "XML ツール拡張機能の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: XML ツール拡張機能の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5613bf15-6c0a-4a82-b200-24d0801d7ece
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006315"
 ---
 # <a name="using-the-xml-tool-extensions"></a><span data-ttu-id="779fe-102">XML ツール拡張の使用</span><span class="sxs-lookup"><span data-stu-id="779fe-102">Using the XML Tool Extensions</span></span>
 <span data-ttu-id="779fe-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の XML ツール拡張を使用すると、スキーマ、マップ、およびメッセージ インスタンスに対してタスクを実行できます。</span><span class="sxs-lookup"><span data-stu-id="779fe-103">The XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enable you to perform tasks on schemas, maps, and message instances.</span></span> <span data-ttu-id="779fe-104">これらの拡張は、デザイン時に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境で使用します。</span><span class="sxs-lookup"><span data-stu-id="779fe-104">You use these extensions at design time in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="779fe-105">実行できるタスクは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="779fe-105">The tasks you can perform are:</span></span>  

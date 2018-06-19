@@ -1,14 +1,14 @@
 ---
-title: "フェーズ 4: 評価環境を構築 |Microsoft ドキュメント"
-ms.custom: 
+title: 'フェーズ 4: 評価環境を構築 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b90d7c5-60ca-4a81-b3d9-6d4e9d91e684
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008675"
 ---
 # <a name="phase-4-building-the-assessment-environment"></a><span data-ttu-id="eeb7e-102">フェーズ 4: 評価環境を構築します。</span><span class="sxs-lookup"><span data-stu-id="eeb7e-102">Phase 4: Building the Assessment Environment</span></span>
 <span data-ttu-id="eeb7e-103">パフォーマンス評価のビルド ラボの段階を使用して、前のフェーズで行われた設計に関する決定事項への準拠のハードウェアとソフトウェア環境をインストールできます。</span><span class="sxs-lookup"><span data-stu-id="eeb7e-103">The Build lab phase of a performance assessment is used to install the hardware and software for the environment in conformance to the design decisions made in previous phases.</span></span> <span data-ttu-id="eeb7e-104">ビルド ラボ フェーズできますが、時間がかかるために、このフェーズの以前のフェーズを重複に通常とは異なるはできません。</span><span class="sxs-lookup"><span data-stu-id="eeb7e-104">Because the Build lab phase can be time consuming, it is not unusual for this phase to overlap earlier phases.</span></span> <span data-ttu-id="eeb7e-105">多くのシナリオで、アプリケーションのアーキテクチャに関する最終的な判断が行わ前に、ハードウェアとオペレーティング システムをインストールすることがあります。</span><span class="sxs-lookup"><span data-stu-id="eeb7e-105">In many scenarios, the hardware and operating system may be installed before a final decision has been made as to the application architecture.</span></span> <span data-ttu-id="eeb7e-106">パフォーマンス評価のビルド ラボの段階には、通常、このトピックで説明したタスクが含まれます。</span><span class="sxs-lookup"><span data-stu-id="eeb7e-106">The Build lab phase of a performance assessment typically includes the tasks discussed in this topic.</span></span>  

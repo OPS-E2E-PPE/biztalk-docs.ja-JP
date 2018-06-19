@@ -1,17 +1,17 @@
 ---
-title: "変換図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 変換図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [Orchestration Designer], Transform shape
 - Transform shape [Orchestration Designer]
 ms.assetid: ca81d153-77a6-4bcc-b14f-8f48469fffe0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972136"
 ---
 # <a name="how-to-configure-the-transform-shape"></a><span data-ttu-id="2c79c-102">変換図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="2c79c-102">How to Configure the Transform Shape</span></span>
 <span data-ttu-id="2c79c-103">![](../core/media/ebiz-orch-transform.gif "ebiz_orch_transform")</span><span class="sxs-lookup"><span data-stu-id="2c79c-103">![](../core/media/ebiz-orch-transform.gif "ebiz_orch_transform")</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="2c79c-126">選択した場合**既存のマップ**の下向き矢印をクリックして、**名前**フィールドを使用するマップ ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="2c79c-126">If you selected **Existing Map**, click the Down arrow in the **Name** field to select which map file to use.</span></span> <span data-ttu-id="2c79c-127">このリスト ボックスには、プロジェクトで使用できるすべての既存のマップがアルファベット順に表示されます。</span><span class="sxs-lookup"><span data-stu-id="2c79c-127">This list box displays an alphabetically sorted list of all the existing maps available in the project.</span></span> <span data-ttu-id="2c79c-128">テキストをクリックした場合、この一覧に\<参照されたアセンブリから選択\>、**成果物の種類の選択** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2c79c-128">In this list, if you click the text \<Select from referenced assembly\>, the **Select Artifact Type** dialog box is displayed.</span></span> <span data-ttu-id="2c79c-129">使用できるように、選択の詳細については、次を参照してください。[成果物の種類の選択 ダイアログ ボックスを使用する方法](../core/how-to-use-the-select-artifact-type-dialog-box.md)です。</span><span class="sxs-lookup"><span data-stu-id="2c79c-129">For more information about the selections it makes available, see [How to Use the Select Artifact Type Dialog Box](../core/how-to-use-the-select-artifact-type-dialog-box.md).</span></span>  
   
 ### <a name="select-source-and-destination-messages"></a><span data-ttu-id="2c79c-130">変換元のメッセージと変換先のメッセージの選択</span><span class="sxs-lookup"><span data-stu-id="2c79c-130">Select Source and Destination Messages</span></span>  
- <span data-ttu-id="2c79c-131">この部分を使用して、**変換の構成**で選択したマップを構成するダイアログ ボックス、**新規または既存マップ ファイルですか?**セクションです。</span><span class="sxs-lookup"><span data-stu-id="2c79c-131">Use this part of the **Transform Configuration** dialog box to configure the map you selected in the **New/Existing Map File?** section.</span></span> <span data-ttu-id="2c79c-132">選択した場合は**新しいマップ**セクションでは、このセクションで構成することによってそのマップを作成します。</span><span class="sxs-lookup"><span data-stu-id="2c79c-132">If you selected **New Map** in that section, you create that map by configuring it in this section.</span></span>  
+ <span data-ttu-id="2c79c-131">この部分を使用して、**変換の構成**で選択したマップを構成するダイアログ ボックス、**新規または既存マップ ファイルですか?** セクションです。</span><span class="sxs-lookup"><span data-stu-id="2c79c-131">Use this part of the **Transform Configuration** dialog box to configure the map you selected in the **New/Existing Map File?** section.</span></span> <span data-ttu-id="2c79c-132">選択した場合は**新しいマップ**セクションでは、このセクションで構成することによってそのマップを作成します。</span><span class="sxs-lookup"><span data-stu-id="2c79c-132">If you selected **New Map** in that section, you create that map by configuring it in this section.</span></span>  
   
  <span data-ttu-id="2c79c-133">選択した場合**既存のマップ**、次の 2 つのいずれかの操作をこのセクションの内容を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="2c79c-133">If you selected **Existing Map**, you can use this section to do one of two things:</span></span>  
   

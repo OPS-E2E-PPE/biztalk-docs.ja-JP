@@ -1,14 +1,14 @@
 ---
-title: "よく寄せられる質問、BizTalk Adapter Pack の |Microsoft ドキュメント"
-ms.custom: 
+title: よく寄せられる質問、BizTalk Adapter Pack の |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0cdaf09a-50fe-4f30-bd9d-60e316351846
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227090"
 ---
 # <a name="frequently-asked-questions"></a><span data-ttu-id="002bc-102">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="002bc-102">Frequently Asked Questions</span></span>
 <span data-ttu-id="002bc-103">よく寄せられる質問 (Faq)、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="002bc-103">Frequently asked questions (FAQs) about the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)].</span></span>  

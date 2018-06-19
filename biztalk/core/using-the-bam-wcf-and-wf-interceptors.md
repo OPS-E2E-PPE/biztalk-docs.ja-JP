@@ -1,14 +1,14 @@
 ---
-title: "BAM WCF インターセプタと WF インターセプタを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: BAM WCF インターセプタと WF インターセプタを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a87a643-8e15-47d1-8d2a-3d899a1494ff
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287938"
 ---
 # <a name="using-the-bam-wcf-and-wf-interceptors"></a><span data-ttu-id="809e5-102">BAM WCF インターセプタと WF インターセプタの使用</span><span class="sxs-lookup"><span data-stu-id="809e5-102">Using the BAM WCF and WF Interceptors</span></span>
 <span data-ttu-id="809e5-103">BAM インターセプターでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の BAM インターセプター機能が Windows Workflow Foundation (WF)、Windows Communication Framework (WCF) などのランタイム環境に拡張されます。</span><span class="sxs-lookup"><span data-stu-id="809e5-103">BAM interceptors extend the BAM interceptor functionality for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] into Windows Workflow Foundation (WF), Windows Communication Framework (WCF), and other runtime environments.</span></span> <span data-ttu-id="809e5-104">BAM インターセプタを使用すると、WF または WCF のソリューションを再コンパイルせずにビジネス プロセスを追跡できます。統合は、アプリケーション イベントを BAM アクティビティにマップし、データ、関連付け ID、継続トークンなどの必須アイテムと省略可能アイテムを定義する一連の要素と XML を使用して、構成ファイル経由で行われます。</span><span class="sxs-lookup"><span data-stu-id="809e5-104">By using a BAM interceptor, you can track your business processes without recompiling your WF or WCF solution — integration is done through a configuration file using XML and a series of elements that map application events to BAM activities and define the data, correlation ID, continuation token and other required and optional artifacts.</span></span>  

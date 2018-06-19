@@ -1,14 +1,14 @@
 ---
-title: "アダプターのパフォーマンスを向上させるためにバッチ処理の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのパフォーマンスを向上させるためにバッチ処理の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65589925-af94-45f1-b501-37c21618b2cf
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300386"
 ---
 # <a name="configuring-batching-to-improve-adapter-performance"></a><span data-ttu-id="51bba-102">アダプターのパフォーマンスを向上させるためにバッチ処理の構成</span><span class="sxs-lookup"><span data-stu-id="51bba-102">Configuring Batching to Improve Adapter Performance</span></span>
 <span data-ttu-id="51bba-103">アダプターがバッチを処理する方法には、パフォーマンスに大きな影響を及ぼすことができます。</span><span class="sxs-lookup"><span data-stu-id="51bba-103">The way an adapter processes a batch can have a significant effect on performance.</span></span> <span data-ttu-id="51bba-104">トランザクションごとに一定の遅延が発生するため、複数の操作を 1 つのバッチにまとめることによってトランザクションの数を最小限に抑える必要があります。</span><span class="sxs-lookup"><span data-stu-id="51bba-104">Because there is a fixed delay associated with each transaction, you should try to minimize the number of transactions by combining more than one operation into a single batch.</span></span>  

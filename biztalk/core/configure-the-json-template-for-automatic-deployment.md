@@ -1,17 +1,17 @@
 ---
 redirect_url: /biztalk/core/feature-pack-add-application-project/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
-title: "自動展開用の JSON テンプレートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 自動展開用の JSON テンプレートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.prod: biztalk-server
 ms.topic: article
 ms.assetid: 0b7755a6-5a5a-4a6b-8f99-ac12a5fbf3d4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/09/2017
+ms.locfileid: "24054522"
 ---
 # <a name="configure-the-json-template-for-automatic-deployment"></a><span data-ttu-id="b1af0-102">自動展開用の JSON テンプレートを構成します。</span><span class="sxs-lookup"><span data-stu-id="b1af0-102">Configure the JSON template for automatic deployment</span></span>
 

@@ -1,11 +1,11 @@
 ---
-title: "カスタム パイプライン コンポーネントの開発 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム パイプライン コンポーネントの開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom]
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - pipeline components [custom], interfaces
 - pipeline components [custom], component types
 ms.assetid: cce61e0d-f1e3-4ec2-b38c-7c6eaf83ac10
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005467"
 ---
 # <a name="developing-custom-pipeline-components"></a><span data-ttu-id="01c59-102">カスタム パイプライン コンポーネントの開発</span><span class="sxs-lookup"><span data-stu-id="01c59-102">Developing Custom Pipeline Components</span></span>
 <span data-ttu-id="01c59-103">ここでは、パイプライン コンポーネントを開発する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="01c59-103">This section describes how to develop a pipeline component.</span></span> <span data-ttu-id="01c59-104">3 種類のパイプライン コンポーネントを作成することができます: 全般、アセンブル、および逆アセンブルします。</span><span class="sxs-lookup"><span data-stu-id="01c59-104">You can create three types of pipeline components: general, assembling, and disassembling.</span></span> <span data-ttu-id="01c59-105">これらの各パイプライン コンポーネントでは、プローブ機能を追加実装できます。</span><span class="sxs-lookup"><span data-stu-id="01c59-105">Each of the three types can additionally implement probing functionality.</span></span> <span data-ttu-id="01c59-106">各パイプライン コンポーネントの種類が関連付けられているインターフェイスを BizTalk メッセージング エンジンに接続するコンポーネントを実装する必要があります。パイプライン インターフェイス コンポーネントの種類を識別するには、 **IComponent**、 **IAssemblerComponent**、および**IDisassemblerComponent**です。</span><span class="sxs-lookup"><span data-stu-id="01c59-106">Each type of pipeline component has an associated interface that must be implemented for the component to be plugged into the BizTalk Messaging Engine; the pipeline interfaces that distinguish the types of components are **IComponent**, **IAssemblerComponent**, and **IDisassemblerComponent**.</span></span> <span data-ttu-id="01c59-107">プルーブ コンポーネントを実装する必要があります、 **IProbeMessage**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="01c59-107">For probing components, you must implement the **IProbeMessage** interface.</span></span>  

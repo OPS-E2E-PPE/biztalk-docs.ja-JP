@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974792"
 ---
 # <a name="message-reference-for-the-service-oriented-solution"></a><span data-ttu-id="bff8c-102">サービス指向ソリューションのメッセージ リファレンス</span><span class="sxs-lookup"><span data-stu-id="bff8c-102">Message Reference for the Service Oriented Solution</span></span>
 <span data-ttu-id="bff8c-103">このセクションでは、ソリューションの各オーケストレーションで使用されるメッセージおよびメッセージの種類の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="bff8c-103">This section lists the messages and message types used by each orchestration in the solution.</span></span> <span data-ttu-id="bff8c-104">メッセージおよびメッセージの種類は、アプリケーションのバージョンごとに記載されています。</span><span class="sxs-lookup"><span data-stu-id="bff8c-104">The messages and types are listed by version of the application.</span></span>  

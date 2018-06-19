@@ -1,11 +1,11 @@
 ---
-title: "管理 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: 管理 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, SSO
 - SSOMANAGE command line utility
 ms.assetid: f738e344-4d81-4557-b399-68b59c413245
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970968"
 ---
 # <a name="manage-biztalk-server-sample"></a><span data-ttu-id="a2384-102">管理 (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="a2384-102">Manage (BizTalk Server Sample)</span></span>
 <span data-ttu-id="a2384-103">シングル サインオン (SSO) 管理のサンプルは、以下の種類の管理操作を実行するために、コマンド ライン ユーティリティ ssomanage.exe で使用できる .xml ファイルを構成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a2384-103">The Manage Single Sign-On (SSO) sample demonstrates how to construct .xml files that you can use with the ssomanage.exe command-line utility to perform the following types of administration operations:</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="a2384-110">このサンプルには、上記の種類の操作のそれぞれに対する XSD とサンプル .xml ファイルのペアが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a2384-110">This sample includes pairs of XSD and sample .xml files for each of these types of operations.</span></span> <span data-ttu-id="a2384-111">サンプル .xml ファイルの値は有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="a2384-111">The values in the sample .xml files are not valid.</span></span> <span data-ttu-id="a2384-112">各自の要件に合わせて値を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a2384-112">You must make changes to the values that are appropriate to your specific requirements.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="a2384-113">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="a2384-113">Where to Find This Sample</span></span>  
- <span data-ttu-id="a2384-114">*\<パスのサンプル\>*\SSO\Manage\\</span><span class="sxs-lookup"><span data-stu-id="a2384-114">*\<Samples Path\>*\SSO\Manage\\</span></span>  
+ <span data-ttu-id="a2384-114">*\<パスのサンプル\>* \SSO\Manage\\</span><span class="sxs-lookup"><span data-stu-id="a2384-114">*\<Samples Path\>* \SSO\Manage\\</span></span>  
   
  <span data-ttu-id="a2384-115">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="a2384-115">The following table shows the files in this sample and describes their purpose.</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "進捗ディメンション |Microsoft ドキュメント"
-ms.custom: 
+title: 進捗ディメンション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], progress dimensions
 - Progress dimension [BAM]
 ms.assetid: 472fcbf6-502f-4c81-bf48-f7eec98e391b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973496"
 ---
 # <a name="progress-dimension"></a><span data-ttu-id="39039-102">進捗ディメンション</span><span class="sxs-lookup"><span data-stu-id="39039-102">Progress Dimension</span></span>
 <span data-ttu-id="39039-103">到達したマイルストーンで BAM アクティビティをグループ化するには、進捗ディメンションを使用します。</span><span class="sxs-lookup"><span data-stu-id="39039-103">Use a progress dimension to group BAM activities by milestones they have reached.</span></span> <span data-ttu-id="39039-104">これを例でわかりやすく示します。</span><span class="sxs-lookup"><span data-stu-id="39039-104">This is best illustrated by an example.</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="39039-165">**進捗マイルス トーン**のボックス、**新しい進捗マイルス トーン** ダイアログ ボックスで、デザインした階層の最上位レベルに、進捗マイルス トーンの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="39039-165">In the **Progress Milestone** box of the **New Progress Milestone** dialog box, type the name of the progress milestone at the top level of the hierarchy that you designed.</span></span> <span data-ttu-id="39039-166">実行中の例のように入力`Received`です。</span><span class="sxs-lookup"><span data-stu-id="39039-166">For the running example, you would type `Received`.</span></span>  
   
-7.  <span data-ttu-id="39039-167">進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="39039-167">Select the business milestone that corresponds to the progress milestone, and then click **OK**.</span></span> <span data-ttu-id="39039-168">例については、実行中、選択**受信日時 (\<アクティビティ名\>)**です。</span><span class="sxs-lookup"><span data-stu-id="39039-168">For the running example, you would select **Received (\<activity name\>)**.</span></span>  
+7.  <span data-ttu-id="39039-167">進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="39039-167">Select the business milestone that corresponds to the progress milestone, and then click **OK**.</span></span> <span data-ttu-id="39039-168">例については、実行中、選択**受信日時 (\<アクティビティ名\>)** です。</span><span class="sxs-lookup"><span data-stu-id="39039-168">For the running example, you would select **Received (\<activity name\>)**.</span></span>  
   
 8.  <span data-ttu-id="39039-169">**新しいディメンション**ダイアログ ボックスで、をクリックして**新しいステージ**です。</span><span class="sxs-lookup"><span data-stu-id="39039-169">In the **New Dimension** dialog box, click **New Stage**.</span></span>  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
 11. <span data-ttu-id="39039-173">**進捗マイルス トーン**のボックス、**新しい進捗マイルス トーン** ダイアログ ボックスに、第 1 レベルのマイルス トーンのいずれかの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="39039-173">In the **Progress milestone** box of the **New Progress Milestone** dialog box, type the name of one of the first-level milestones.</span></span> <span data-ttu-id="39039-174">たとえばを使用して、入力`Approved`です。</span><span class="sxs-lookup"><span data-stu-id="39039-174">For the example we are using, you would type `Approved`.</span></span>  
   
-12. <span data-ttu-id="39039-175">**ビジネス マイルス トーン**ドロップダウン ボックスでは、進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="39039-175">In the **Business milestone** drop-down box, select the business milestone that corresponds to the progress milestone, and then click **OK**.</span></span> <span data-ttu-id="39039-176">例については、実行中、選択**Approved (\<アクティビティ名\>)**です。</span><span class="sxs-lookup"><span data-stu-id="39039-176">For the running example, you would select **Approved (\<activity name\>)**.</span></span>  
+12. <span data-ttu-id="39039-175">**ビジネス マイルス トーン**ドロップダウン ボックスでは、進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="39039-175">In the **Business milestone** drop-down box, select the business milestone that corresponds to the progress milestone, and then click **OK**.</span></span> <span data-ttu-id="39039-176">例については、実行中、選択**Approved (\<アクティビティ名\>)** です。</span><span class="sxs-lookup"><span data-stu-id="39039-176">For the running example, you would select **Approved (\<activity name\>)**.</span></span>  
   
 13. <span data-ttu-id="39039-177">前の 3 つの手順を繰り返して、同じ進捗段階内の他のマイルストーンをすべて追加します。</span><span class="sxs-lookup"><span data-stu-id="39039-177">Repeat the previous three steps to add any other milestones that are within the same progress stage.</span></span>  
   

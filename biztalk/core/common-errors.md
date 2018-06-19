@@ -1,14 +1,14 @@
 ---
-title: "一般的なエラー |Microsoft ドキュメント"
-ms.custom: 
+title: 一般的なエラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fe48a8e-def0-4a00-aa7f-9a49ae555351
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971536"
 ---
 # <a name="common-errors"></a><span data-ttu-id="c3884-102">一般的なエラー</span><span class="sxs-lookup"><span data-stu-id="c3884-102">Common Errors</span></span>
 <span data-ttu-id="c3884-103">ここでは、BizTalk マッパーを使用してマップを作成しているときによく発生するエラー メッセージを示します。</span><span class="sxs-lookup"><span data-stu-id="c3884-103">This topic lists out common error messages you may encounter while creating maps using BizTalk Mapper.</span></span>  

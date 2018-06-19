@@ -1,14 +1,14 @@
 ---
-title: "無効な AS2-パーティ用に構成名 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効な AS2-パーティ用に構成名 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a203e5f2-d1d9-433f-b2bb-d679bb8fea58
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257370"
 ---
 # <a name="invalid-as2-to-name-configured-for-party"></a><span data-ttu-id="635d0-102">パーティに対して無効な AS2-To 名が構成されました</span><span class="sxs-lookup"><span data-stu-id="635d0-102">Invalid AS2-To name configured for Party</span></span>
 ## <a name="details"></a><span data-ttu-id="635d0-103">詳細</span><span class="sxs-lookup"><span data-stu-id="635d0-103">Details</span></span>  

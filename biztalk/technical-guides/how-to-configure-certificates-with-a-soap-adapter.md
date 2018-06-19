@@ -1,14 +1,14 @@
 ---
-title: "SOAP アダプターと証明書を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプターと証明書を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 20ee05c5-9cea-456d-bff6-49dd249f0ff4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298282"
 ---
 # <a name="how-to-configure-certificates-with-a-soap-adapter"></a><span data-ttu-id="59c85-102">SOAP アダプターと証明書を構成する方法</span><span class="sxs-lookup"><span data-stu-id="59c85-102">How to Configure Certificates with a SOAP Adapter</span></span>
 <span data-ttu-id="59c85-103">SOAP 送信アダプタを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。</span><span class="sxs-lookup"><span data-stu-id="59c85-103">The SOAP send adapter can help secure a connection with servers that accept or require client certificates.</span></span> <span data-ttu-id="59c85-104">クライアント証明書を指定した場合、SOAP 送信アダプタではクライアント証明書を必要とするか受け付けるサーバーに接続するときに、この証明書を使用します。</span><span class="sxs-lookup"><span data-stu-id="59c85-104">If you specify a client certificate, the SOAP send adapter uses the certificate when connecting with servers that require or accept client certificates.</span></span> <span data-ttu-id="59c85-105">クライアント証明書を指定しないと、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、SOAP 送信アダプターは、メッセージの送信に失敗し、標準の再試行ロジックに従っています。</span><span class="sxs-lookup"><span data-stu-id="59c85-105">If you do not specify a client certificate and the destination server requires client certificates, the sender is not authenticated and the SOAP send adapter fails to send the message and follows the standard retry logic.</span></span>  
@@ -40,4 +41,4 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="59c85-117">**SSL クライアント証明書の拇印**、適切な拇印を入力します。</span><span class="sxs-lookup"><span data-stu-id="59c85-117">In **SSL client certificate thumbprint**, enter the appropriate thumbprint.</span></span>  
   
-6.  <span data-ttu-id="59c85-118">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="59c85-118">Click **OK**, and then click **OK** again.</span></span>
+6.  <span data-ttu-id="59c85-118">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="59c85-118">Click **OK**, and then click **OK** again.</span></span>

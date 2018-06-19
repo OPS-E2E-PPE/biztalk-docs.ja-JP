@@ -1,14 +1,14 @@
 ---
-title: "BizTalk ホストの高可用性 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk ホストの高可用性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3153f7f7-7e82-4b0c-9b48-e9f871de285d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009995"
 ---
 # <a name="high-availability-for-biztalk-hosts"></a><span data-ttu-id="530bd-102">BizTalk ホストの高可用性</span><span class="sxs-lookup"><span data-stu-id="530bd-102">High Availability for BizTalk Hosts</span></span>
 <span data-ttu-id="530bd-103">BizTalk Server は、非常に柔軟に特定の受信とメッセージを送信することができる物理的にオーケストレーション処理などの機能領域を実行する論理的なホストを戦略的に割り当てることができますので、高可用性をアドレス指定複数サーバーに配置します。</span><span class="sxs-lookup"><span data-stu-id="530bd-103">BizTalk Server provides great flexibility in addressing high availability because you can strategically dedicate logical hosts to run specific areas of functionality, such as receiving and sending messages or processing orchestrations, that can be physically deployed to multiple servers.</span></span>  

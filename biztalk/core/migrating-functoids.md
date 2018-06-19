@@ -1,11 +1,11 @@
 ---
-title: "Functoid の移行 |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid の移行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoids, migrating
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - migrating, functoids
 - migrating, Scripting functoids
 ms.assetid: fc5b3ac9-28c6-41df-b779-15a8c3188528
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009323"
 ---
 # <a name="migrating-functoids"></a><span data-ttu-id="7a5ec-102">Functoid の移行</span><span class="sxs-lookup"><span data-stu-id="7a5ec-102">Migrating Functoids</span></span>
 <span data-ttu-id="7a5ec-103">以前のバージョンの BizTalk Server から BizTalk Server にマップを移行するときに、マップに含まれる functoid も移行します。</span><span class="sxs-lookup"><span data-stu-id="7a5ec-103">When you migrate a map from previous versions of BizTalk Server to BizTalk Server, any functoids included in the map are also migrated.</span></span> <span data-ttu-id="7a5ec-104">移行する functoid が含まれない場合**スクリプト**functoid、追加の移行タスクは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="7a5ec-104">If the functoids you migrate do not include **Scripting** functoids, no additional migration tasks are required.</span></span> <span data-ttu-id="7a5ec-105">ただし、マップが含まれる場合**スクリプト**functoid またはカスタム functoid を追加の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7a5ec-105">However if your map includes **Scripting** functoids or custom functoids, you may have additional steps to perform.</span></span>  

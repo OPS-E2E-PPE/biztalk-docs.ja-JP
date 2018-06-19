@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b56b7492-2ea0-4c63-8f1b-430eb277517d
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26009771"
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a><span data-ttu-id="96d02-102">チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理</span><span class="sxs-lookup"><span data-stu-id="96d02-102">Walkthrough: Custom Message Processing with the WCF-NetTcp Adapter</span></span>
 <span data-ttu-id="96d02-103">このチュートリアルでは、WCF-NetTcp アダプターを使用して、[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] クライアントから BizTalk 受信場所に、バイナリ JPEG イメージ データが埋め込まれた [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="96d02-103">In this walkthrough a [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] client submits a [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] message containing embedded binary JPEG image data to a BizTalk receive location using the WCF-NetTcp adapter.</span></span> <span data-ttu-id="96d02-104">バイナリ エンコードされた JPEG イメージを取得による、XPath ステートメント (Base64 ノード エンコード) を使用して、抽出された、 **受信メッセージの本文** アダプターの構成で設定します。</span><span class="sxs-lookup"><span data-stu-id="96d02-104">The binary encoded JPEG image gets extracted by using an XPath statement (with Base64 Node encoding) through the **Inbound Message Body** settings in the adapter’s configuration.</span></span> <span data-ttu-id="96d02-105">XPath 処理は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信メッセージの処理に使用される既定の方法とは異なります。</span><span class="sxs-lookup"><span data-stu-id="96d02-105">XPath processing differs from the default method that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses to handle incoming messages.</span></span> <span data-ttu-id="96d02-106">アダプターがの内容全体を取得する既定の方法で、**本文**の要素、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ、および BizTalk メッセージ ボックス データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="96d02-106">In the default method, the adapter obtains the entire contents of the **Body** element of the [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] message, and then submits it to the BizTalk MessageBox database.</span></span> <span data-ttu-id="96d02-107">XPath メッセージ処理では、受信 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージの特定の部分が抽出されてカスタム BizTalk メッセージが作成されます。</span><span class="sxs-lookup"><span data-stu-id="96d02-107">XPath message processing extracts specific parts of an incoming [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] message to create a custom BizTalk message.</span></span> <span data-ttu-id="96d02-108">このサンプルでは、XPath 処理がという名前の XML 要素を検索し**SendPicture**では、着信[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ (XML 形式で)。</span><span class="sxs-lookup"><span data-stu-id="96d02-108">In this sample XPath processing locates an XML element named **SendPicture** in the incoming [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] message (which is in XML format).</span></span> <span data-ttu-id="96d02-109">この要素が検出されると、Base64 エンコードされたバイナリ オブジェクトとしての要素の値が抽出され、そのバイナリ値が BizTalk メッセージに配置されます。</span><span class="sxs-lookup"><span data-stu-id="96d02-109">After finding that element, XPath extracts the element's value as a binary Base64 encoded object, and places that binary value into a BizTalk message.</span></span> <span data-ttu-id="96d02-110">このメッセージはメッセージ ボックス データベースに発行された後、送信ポート フィルター サブスクリプションを使用して FILE 送信ポートに出力されます。</span><span class="sxs-lookup"><span data-stu-id="96d02-110">The message is published to the MessageBox database, then output to a FILE send port with the help of a send port filter subscription.</span></span> <span data-ttu-id="96d02-111">このサンプルでオーケストレーションは使用されず、すべての処理は XPath を使用して BizTalk メッセージング経由で行われます。</span><span class="sxs-lookup"><span data-stu-id="96d02-111">No orchestrations are used in this sample, and all the processing is done through BizTalk messaging using XPath.</span></span>  
@@ -83,7 +84,7 @@ ms.lasthandoff: 01/17/2018
   
     2.  <span data-ttu-id="96d02-167">**トランスポート**  をクリックして、 **型** ドロップダウン リスト ボックスで、 **ファイル** クリックしてドロップダウン リストから **構成**します。</span><span class="sxs-lookup"><span data-stu-id="96d02-167">In the **Transport** section, click the **Type** drop-down list box, select **FILE** from the drop-down list, and then click **Configure**.</span></span>  
   
-    3.  <span data-ttu-id="96d02-168">[ **インストール先フォルダー** 入力 `C:\WCFCustomMessageProcessing\Out`, 、] をクリック **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="96d02-168">Under **Destination Folder** enter `C:\WCFCustomMessageProcessing\Out`, and click **OK**.</span></span>  
+    3.  <span data-ttu-id="96d02-168">[ **インストール先フォルダー** 入力 `C:\WCFCustomMessageProcessing\Out`, 、] をクリック **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="96d02-168">Under **Destination Folder** enter `C:\WCFCustomMessageProcessing\Out`, and click **OK**.</span></span>  
   
     4.  <span data-ttu-id="96d02-169">をクリックして **フィルター**, [ `BTS.ReceivePortName == NetTcpRP`, 、] をクリックし、 **[ok] です。**</span><span class="sxs-lookup"><span data-stu-id="96d02-169">Click **Filters**, select `BTS.ReceivePortName == NetTcpRP`, and then click **OK.**</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "EDI 文字セットのサポート |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 文字セットのサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4f4492b-8cbe-48ed-810a-3e73e1cb5996
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005835"
 ---
 # <a name="edi-character-set-support"></a><span data-ttu-id="3effb-102">EDI 文字セットのサポート</span><span class="sxs-lookup"><span data-stu-id="3effb-102">EDI Character Set Support</span></span>
 <span data-ttu-id="3effb-103">このトピックでは、文字セットが BizTalk Server の EDI 機能でサポートされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="3effb-103">This topic indicates which character sets are supported in the EDI features of BizTalk Server.</span></span>  

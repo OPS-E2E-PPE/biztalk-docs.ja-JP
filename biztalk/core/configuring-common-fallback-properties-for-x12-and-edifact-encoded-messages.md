@@ -1,14 +1,14 @@
 ---
-title: "エンコードされたメッセージの共通フォールバック プロパティの X12 および EDIFACT の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: エンコードされたメッセージの共通フォールバック プロパティの X12 および EDIFACT の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7393d6ac-b901-43ef-a8d6-c5b0b3033257
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006035"
 ---
 # <a name="configuring-common-fallback-properties-for-x12-and-edifact-encoded-messages"></a><span data-ttu-id="96764-102">X12 および EDIFACT でエンコードされたメッセージの共通フォールバック プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="96764-102">Configuring Common Fallback Properties for X12 and EDIFACT Encoded Messages</span></span>
 <span data-ttu-id="96764-103">フォールバック プロパティは、X12 (HIPAA を含む) でエンコードされたインターチェンジと EDIFACT でエンコードされたインターチェンジの両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="96764-103">Fallback properties apply to both X12 (including HIPAA) - and EDIFACT-encoded interchanges.</span></span> <span data-ttu-id="96764-104">すべてのフォールバック アグリーメント プロパティと同じく、これらのプロパティは、受信メッセージまたは送信メッセージが解決されるアグリーメントを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が特定していない場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="96764-104">As with all fallback agreement properties, these properties apply only when [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has not determined the agreement to which an incoming our outgoing message resolves to.</span></span>  

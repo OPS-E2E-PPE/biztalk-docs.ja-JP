@@ -1,18 +1,18 @@
 ---
-title: "BizTalk グループのバインドをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk グループのバインドをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, exporting
 - groups, bindings
 - groups, exporting
 ms.assetid: 51955266-f87f-41c9-992c-93036b40f663
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253986"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-group"></a><span data-ttu-id="a8608-102">BizTalk グループのバインドをエクスポートする方法</span><span class="sxs-lookup"><span data-stu-id="a8608-102">How to Export Bindings for a BizTalk Group</span></span>
 <span data-ttu-id="a8608-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk グループのバインドをエクスポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a8608-103">This topic describes how to use the BizTalk Server Administration console or the command line to export the bindings for a BizTalk group to an .xml file.</span></span> <span data-ttu-id="a8608-104">」の説明に従って、BizTalk グループまたはアプリケーションにこれらのバインドにインポートすること、ことができます[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)と[BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="a8608-104">You can then import these bindings into a BizTalk group or application, as described in [How to Import Bindings into a BizTalk Group](../core/how-to-import-bindings-into-a-biztalk-group.md) and [How to Import Bindings into a BizTalk Application](../core/how-to-import-bindings-into-a-biztalk-application.md).</span></span> <span data-ttu-id="a8608-105">バインド ファイルの使用の詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="a8608-105">For more information about using binding files, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="a8608-115">例: C:\Bindings\Group1Bindings_Staging1.xml</span><span class="sxs-lookup"><span data-stu-id="a8608-115">Example: C:\Bindings\Group1Bindings_Staging1.xml</span></span>  
   
-4.  <span data-ttu-id="a8608-116">いることを確認**、現在のグループからすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a8608-116">Ensure that **Export all bindings from the current group** is selected, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="a8608-116">いることを確認 **、現在のグループからすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a8608-116">Ensure that **Export all bindings from the current group** is selected, and then click **OK**.</span></span>  
   
      <span data-ttu-id="a8608-117">指定した場所の .xml ファイルに、バインドがエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="a8608-117">The bindings are exported to an .xml file in the location that you specified.</span></span>  
   

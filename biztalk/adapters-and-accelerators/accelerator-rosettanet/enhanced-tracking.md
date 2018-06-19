@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007259"
 ---
 # <a name="enhanced-tracking"></a><span data-ttu-id="37d1a-102">拡張追跡</span><span class="sxs-lookup"><span data-stu-id="37d1a-102">Enhanced Tracking</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="37d1a-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プロセスとメッセージを追跡するために、拡張機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="37d1a-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] provides an enhanced ability to track processes and messages.</span></span> <span data-ttu-id="37d1a-104">ネイティブな機能のビジネス アクティビティ監視 (BAM) で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]はメタデータのみを追跡します。</span><span class="sxs-lookup"><span data-stu-id="37d1a-104">The native functionality for Business Activity Monitoring (BAM) in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is to track metadata only.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="37d1a-105">追跡メッセージの内容、service content とヘッダーの両方です。</span><span class="sxs-lookup"><span data-stu-id="37d1a-105"> tracks message content—both service content and headers.</span></span>  

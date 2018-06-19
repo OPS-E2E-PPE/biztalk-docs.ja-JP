@@ -1,14 +1,14 @@
 ---
-title: "サイズの大きいメッセージを MSMQ に |Microsoft ドキュメント"
-ms.custom: 
+title: サイズの大きいメッセージを MSMQ に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1fb87b46-5656-42c0-be99-8ab66e51bb4d
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976112"
 ---
 # <a name="large-message-to-msmq"></a><span data-ttu-id="76583-102">MSMQ にサイズの大きいメッセージ</span><span class="sxs-lookup"><span data-stu-id="76583-102">Large Message to MSMQ</span></span>
 <span data-ttu-id="76583-103">MSMQ のサンプル サイズの大きいメッセージは、.xml ドキュメント 4 メガバイト (MB) よりも大きいメッセージ キュー (MSMQ とも呼ばれます) から BizTalk MSMQ アダプターを使用して送信する方法を示します、 **MQSendLargeMessage** API によって実装されていませんMQRTLarge.dll です。</span><span class="sxs-lookup"><span data-stu-id="76583-103">The Large Message to MSMQ sample demonstrates how to send an .xml document larger than 4 megabytes (MB) from Message Queuing (also known as MSMQ) to the BizTalk MSMQ adapter by using the **MQSendLargeMessage** API implemented by MQRTLarge.dll.</span></span>  
@@ -72,17 +73,17 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="76583-148">クリックして、**構成**を開く ボタン、 **File トランスポートのプロパティ**フォーム。</span><span class="sxs-lookup"><span data-stu-id="76583-148">Click the **Configure** button to open the **File Transport Properties** form.</span></span> <span data-ttu-id="76583-149">入力**C:\Demo**で**コピー先フォルダー**です。</span><span class="sxs-lookup"><span data-stu-id="76583-149">Enter **C:\Demo** in **Destination Folder**.</span></span> <span data-ttu-id="76583-150">ホスト インスタンス ID で C:\Demo フォルダーにアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="76583-150">Ensure that the host instance identity has access to the C:\Demo folder.</span></span>  
   
-8.  <span data-ttu-id="76583-151">いることを確認**ファイル名**に設定されている**%MessageID%.xml**です。</span><span class="sxs-lookup"><span data-stu-id="76583-151">Ensure that **File Name** is set to **%MessageID%.xml**.</span></span> <span data-ttu-id="76583-152">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-152">Click **OK**.</span></span>  
+8.  <span data-ttu-id="76583-151">いることを確認**ファイル名**に設定されている **%MessageID%.xml**です。</span><span class="sxs-lookup"><span data-stu-id="76583-151">Ensure that **File Name** is set to **%MessageID%.xml**.</span></span> <span data-ttu-id="76583-152">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-152">Click **OK**.</span></span>  
   
-9. <span data-ttu-id="76583-153">**[フィルター]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-153">Click **Filters**.</span></span>  
+9. <span data-ttu-id="76583-153">**[フィルター]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-153">Click **Filters**.</span></span>  
   
     1.  <span data-ttu-id="76583-154">設定**プロパティ**に**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="76583-154">Set **Property** to **BTS.ReceivePortName**.</span></span>  
   
-    2.  <span data-ttu-id="76583-155">設定**演算子**に **=**です。</span><span class="sxs-lookup"><span data-stu-id="76583-155">Set **Operator** to **=**.</span></span>  
+    2.  <span data-ttu-id="76583-155">設定**演算子**に **=** です。</span><span class="sxs-lookup"><span data-stu-id="76583-155">Set **Operator** to **=**.</span></span>  
   
     3.  <span data-ttu-id="76583-156">設定**値**に**MyReceivePort**です。</span><span class="sxs-lookup"><span data-stu-id="76583-156">Set **Value** to **MyReceivePort**.</span></span>  
   
-    4.  <span data-ttu-id="76583-157">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-157">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="76583-157">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-157">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="76583-158">MSMQ からのメッセージを受け付ける受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="76583-158">Create a receive port to accept the message from MSMQ.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/28/2017
   
     5.  <span data-ttu-id="76583-167">**受信場所のプロパティ**ダイアログ ボックスで、セット**トランスポートの種類**に**MSMQ**です。</span><span class="sxs-lookup"><span data-stu-id="76583-167">In the **Receive Location Properties** dialog box, set **Transport Type** to **MSMQ**.</span></span>  
   
-    6.  <span data-ttu-id="76583-168">**アドレス (URI)**セクションで、**構成**を開くには、 **MSMQ トランスポートのプロパティ**フォーム。</span><span class="sxs-lookup"><span data-stu-id="76583-168">In the **Address (URI)** section, click **Configure** to open the **MSMQ Transport Properties** form.</span></span> <span data-ttu-id="76583-169">設定**キュー**に**localhost \private$ \test**です。</span><span class="sxs-lookup"><span data-stu-id="76583-169">Set **Queue** to **localhost\private$\test**.</span></span>  
+    6.  <span data-ttu-id="76583-168">**アドレス (URI)** セクションで、**構成**を開くには、 **MSMQ トランスポートのプロパティ**フォーム。</span><span class="sxs-lookup"><span data-stu-id="76583-168">In the **Address (URI)** section, click **Configure** to open the **MSMQ Transport Properties** form.</span></span> <span data-ttu-id="76583-169">設定**キュー**に**localhost \private$ \test**です。</span><span class="sxs-lookup"><span data-stu-id="76583-169">Set **Queue** to **localhost\private$\test**.</span></span>  
   
     7.  <span data-ttu-id="76583-170">設定**トランザクション**に`True`、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="76583-170">Set **Transactional** to `True`, and then click **OK**.</span></span>  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="76583-180">**キュー名**、入力**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="76583-180">Under **Queue name**, enter **test**.</span></span> <span data-ttu-id="76583-181">いることを確認、**トランザクション** チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="76583-181">Ensure that the **Transactional** check box is selected.</span></span>  
   
-6.  <span data-ttu-id="76583-182">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-182">Click **OK**.</span></span>  
+6.  <span data-ttu-id="76583-182">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-182">Click **OK**.</span></span>  
   
 #### <a name="to-create-the-msmq-queue-in-windows"></a><span data-ttu-id="76583-183">Windows で MSMQ キューを作成するには</span><span class="sxs-lookup"><span data-stu-id="76583-183">To create the MSMQ queue in Windows</span></span> 
   
@@ -137,13 +138,13 @@ ms.lasthandoff: 11/28/2017
 2.  <span data-ttu-id="76583-185">展開**サービスとアプリケーション**の順に展開し、**メッセージ キュー**ノード。</span><span class="sxs-lookup"><span data-stu-id="76583-185">Expand **Services and Applications**, and then expand the **Message Queuing** node.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="76583-186">場合**メッセージ キュー**がコンピューターにインストールされていないに移動して**コントロール パネル] > プログラム > プログラムと機能**、し、[ **Windows の機能のオンまたはオフ**です。</span><span class="sxs-lookup"><span data-stu-id="76583-186">If **Message Queuing** is not installed in the computer, go to **Control Panel > Programs > Programs and Features**, and then select **Turn Windows features on or off**.</span></span> <span data-ttu-id="76583-187">下のすべての機能を確認して**Microsoft メッセージ キュー (MSMQ) Server**、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="76583-187">Check all the features under **Microsoft Message Queue (MSMQ) Server**, and then click **OK**.</span></span>  
+    >  <span data-ttu-id="76583-186">場合**メッセージ キュー**がコンピューターにインストールされていないに移動して**コントロール パネル] > プログラム > プログラムと機能**、し、[ **Windows の機能のオンまたはオフ**です。</span><span class="sxs-lookup"><span data-stu-id="76583-186">If **Message Queuing** is not installed in the computer, go to **Control Panel > Programs > Programs and Features**, and then select **Turn Windows features on or off**.</span></span> <span data-ttu-id="76583-187">下のすべての機能を確認して**Microsoft メッセージ キュー (MSMQ) Server**、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="76583-187">Check all the features under **Microsoft Message Queue (MSMQ) Server**, and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="76583-188">右クリックし、**専用キュー**ノード、をクリックして**新規**、順にクリック**プライベート キュー**です。</span><span class="sxs-lookup"><span data-stu-id="76583-188">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
   
 4.  <span data-ttu-id="76583-189">**キュー名**、入力**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="76583-189">Under **Queue name**, enter **test**.</span></span> <span data-ttu-id="76583-190">いることを確認、**トランザクション** チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="76583-190">Ensure that the **Transactional** check box is selected.</span></span>  
   
-5.  <span data-ttu-id="76583-191">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-191">Click **OK**.</span></span>  
+5.  <span data-ttu-id="76583-191">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76583-191">Click **OK**.</span></span>  
   
 ## <a name="creating-a-test-file-and-running-the-sample"></a><span data-ttu-id="76583-192">テスト ファイルの作成とサンプルの実行</span><span class="sxs-lookup"><span data-stu-id="76583-192">Creating a Test File and Running the Sample</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプター FAQ: 開発ライブラリ |Microsoft ドキュメント"
-ms.custom: 
+title: 'WCF アダプター FAQ: 開発ライブラリ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d05b635a-d46d-4f7d-896b-8ed7a799e80f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009179"
 ---
 # <a name="wcf-adapter-faq-development-libraries"></a><span data-ttu-id="58c0c-102">WCF アダプターに関する FAQ: 開発ライブラリ</span><span class="sxs-lookup"><span data-stu-id="58c0c-102">WCF Adapter FAQ: Development Libraries</span></span>
 ## <a name="when-does-it-make-more-sense-to-use-the-wcf-adapters-vs-a-wcf-custom-binding-to-communicate-with-an-external-application-or-system"></a><span data-ttu-id="58c0c-103">外部アプリケーションまたはシステムと通信する際に、WCF アダプターと WCF カスタム バインドのどちらを使用するのが適切ですか。</span><span class="sxs-lookup"><span data-stu-id="58c0c-103">When does it make more sense to use the WCF adapters vs. a WCF custom binding to communicate with an external application or system?</span></span>  

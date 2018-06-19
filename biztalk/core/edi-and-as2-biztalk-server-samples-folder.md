@@ -1,14 +1,14 @@
 ---
-title: "EDI および AS2 (BizTalk Server Samples フォルダ) |Microsoft ドキュメント"
-ms.custom: 
+title: EDI および AS2 (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: faea052e-b891-4f00-9a45-6ed17e588702
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005780"
 ---
 # <a name="edi-and-as2-biztalk-server-samples-folder"></a><span data-ttu-id="a5c4f-102">EDI および AS2 (BizTalk Server Samples フォルダ)</span><span class="sxs-lookup"><span data-stu-id="a5c4f-102">EDI and AS2 (BizTalk Server Samples Folder)</span></span>
 <span data-ttu-id="a5c4f-103">Microsoft BizTalk Server には、ソフトウェア開発キット (SDK) の中に次の EDI および AS2 のサンプルが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a5c4f-103">Microsoft BizTalk Server includes the following EDI and AS2 samples in its software development kit (SDK).</span></span> <span data-ttu-id="a5c4f-104">ここでは、EDI のサンプルで示される機能に関する詳細、サンプルの構築と実行の手順、および期待される効果について説明します。</span><span class="sxs-lookup"><span data-stu-id="a5c4f-104">This section provides detailed information about the functionality demonstrated by the EDI samples, instructions for building and running the samples, and the results you can expect.</span></span>  

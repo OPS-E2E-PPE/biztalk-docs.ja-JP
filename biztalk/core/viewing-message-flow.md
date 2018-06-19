@@ -1,11 +1,11 @@
 ---
-title: "メッセージ フローの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ フローの表示 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing, messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - HAT, Message Flow view
 - messages, HAT
 ms.assetid: 08d2c052-98d0-43ca-99e5-48d0754411df
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289314"
 ---
 # <a name="viewing-message-flow"></a><span data-ttu-id="c703d-102">メッセージ フローの表示</span><span class="sxs-lookup"><span data-stu-id="c703d-102">Viewing Message Flow</span></span>
 <span data-ttu-id="c703d-103">メッセージ フローは、メッセージで実行される一連の連続的な処理手順です。</span><span class="sxs-lookup"><span data-stu-id="c703d-103">A message flow is the set of contiguous processing steps taken by a message.</span></span> <span data-ttu-id="c703d-104">BizTalk Server 管理コンソールの [グループの概要] ページでサービスまたはメッセージ インスタンスを右クリックすると表示されるショートカット メニューから、メッセージ ビューにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="c703d-104">You access the message view through the shortcut menu that appears when you right-click a service or message instance in the Group Overview page in the BizTalk Server Administration Console.</span></span> <span data-ttu-id="c703d-105">メッセージ フロー ビューで、メッセージ フロー ビューとオーケストレーション デバッガーを切り替えることができます。</span><span class="sxs-lookup"><span data-stu-id="c703d-105">Once in the Message Flow view, you can switch back and forth between the Message Flow view and the Orchestration Debugger.</span></span>  

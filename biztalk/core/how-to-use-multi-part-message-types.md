@@ -1,11 +1,11 @@
 ---
-title: "マルチパート メッセージの種類を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マルチパート メッセージの種類を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - multi-part message types, parts
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - creating, multi-part messages
 - messages, about messages
 ms.assetid: 009a39bd-cfc4-42d9-918c-88ac24bfc370
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972080"
 ---
 # <a name="how-to-use-multi-part-message-types"></a><span data-ttu-id="a98b8-102">マルチパート メッセージの種類を使用する方法</span><span class="sxs-lookup"><span data-stu-id="a98b8-102">How to Use Multi-part Message Types</span></span>
 <span data-ttu-id="a98b8-103">各メッセージには、マルチパート メッセージの種類、0 個以上のメッセージ部分で構成されるメッセージ構造の記述があります。</span><span class="sxs-lookup"><span data-stu-id="a98b8-103">Each message has a multi-part message type, a description of the message structure that consists of zero or more message parts.</span></span> <span data-ttu-id="a98b8-104">これらの部分は、XSD (XML Schema Definition) 言語スキーマまたは .NET クラスによって定義されます。</span><span class="sxs-lookup"><span data-stu-id="a98b8-104">The parts are defined by XML Schema Definition (XSD) language schemas or .NET classes.</span></span> <span data-ttu-id="a98b8-105">独自のマルチパート メッセージの種類を定義したり、既存の .NET クラスおよびスキーマを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="a98b8-105">You can define your own multi-part message types, or you can use existing .NET classes and schemas.</span></span>  
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="a98b8-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a98b8-127">Property</span></span>|<span data-ttu-id="a98b8-128">Description</span><span class="sxs-lookup"><span data-stu-id="a98b8-128">Description</span></span>|  
     |--------------|-----------------|  
-    |<span data-ttu-id="a98b8-129">**型修飾子**</span><span class="sxs-lookup"><span data-stu-id="a98b8-129">**Type Modifier**</span></span>|<span data-ttu-id="a98b8-130">マルチパート メッセージの種類のスコープを設定します。</span><span class="sxs-lookup"><span data-stu-id="a98b8-130">Determines the scope of the multi-part message type:</span></span><br /><br /> <span data-ttu-id="a98b8-131">-   **Private-**マルチパート メッセージの種類へのアクセスが含まれているモジュールに制限されます。</span><span class="sxs-lookup"><span data-stu-id="a98b8-131">-   **Private—**Access to this multi-part message type is limited to the containing module.</span></span><br /><span data-ttu-id="a98b8-132">-   **[パブリック]:**マルチパート メッセージの種類へのアクセスは制限されません。</span><span class="sxs-lookup"><span data-stu-id="a98b8-132">-   **Public—**Access to this multi-part message type is not limited.</span></span><br /><span data-ttu-id="a98b8-133">-   **内部 —**マルチパート メッセージの種類へのアクセスは、同じプロジェクト内のモジュールに制限されます。</span><span class="sxs-lookup"><span data-stu-id="a98b8-133">-   **Internal—**Access to this multi-part message type is limited to modules within the same project.</span></span>|  
+    |<span data-ttu-id="a98b8-129">**型修飾子**</span><span class="sxs-lookup"><span data-stu-id="a98b8-129">**Type Modifier**</span></span>|<span data-ttu-id="a98b8-130">マルチパート メッセージの種類のスコープを設定します。</span><span class="sxs-lookup"><span data-stu-id="a98b8-130">Determines the scope of the multi-part message type:</span></span><br /><br /> <span data-ttu-id="a98b8-131">-   **Private-** マルチパート メッセージの種類へのアクセスが含まれているモジュールに制限されます。</span><span class="sxs-lookup"><span data-stu-id="a98b8-131">-   **Private—** Access to this multi-part message type is limited to the containing module.</span></span><br /><span data-ttu-id="a98b8-132">-   **[パブリック]:** マルチパート メッセージの種類へのアクセスは制限されません。</span><span class="sxs-lookup"><span data-stu-id="a98b8-132">-   **Public—** Access to this multi-part message type is not limited.</span></span><br /><span data-ttu-id="a98b8-133">-   **内部 —** マルチパート メッセージの種類へのアクセスは、同じプロジェクト内のモジュールに制限されます。</span><span class="sxs-lookup"><span data-stu-id="a98b8-133">-   **Internal—** Access to this multi-part message type is limited to modules within the same project.</span></span>|  
   
 ## <a name="add-parts-to-an-existing-multi-part-message"></a><span data-ttu-id="a98b8-134">既存のマルチパート メッセージに部分を追加します。</span><span class="sxs-lookup"><span data-stu-id="a98b8-134">Add parts to an existing multi-part message</span></span>  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="a98b8-139">変数を作成 (たとえば*xlangPart*) 型の**Microsoft.XLANGs.BaseTypes.XLANGMessage**です。</span><span class="sxs-lookup"><span data-stu-id="a98b8-139">Create a variable (for example *xlangPart*) of type **Microsoft.XLANGs.BaseTypes.XLANGMessage**.</span></span>  
   
--   <span data-ttu-id="a98b8-140">呼び出す*xlangPart***です。AddPart(...)**式図形から適切な引数を使用します。</span><span class="sxs-lookup"><span data-stu-id="a98b8-140">Call *xlangPart***.AddPart(…)** using the appropriate arguments from an Expression shape.</span></span>  
+-   <span data-ttu-id="a98b8-140">呼び出す*xlangPart***です。AddPart(...)** 式図形から適切な引数を使用します。</span><span class="sxs-lookup"><span data-stu-id="a98b8-140">Call *xlangPart***.AddPart(…)** using the appropriate arguments from an Expression shape.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="a98b8-141">追加された部分は型**XmlDocument**を使用してカスタムの書式設定されたメッセージ部分を追加することはできませんので、 **AddPart()**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="a98b8-141">The added parts are of type **XmlDocument** so you cannot add a custom formatted message part using the **AddPart()** method.</span></span>  
+    >  <span data-ttu-id="a98b8-141">追加された部分は型**XmlDocument**を使用してカスタムの書式設定されたメッセージ部分を追加することはできませんので、 **AddPart()** メソッドです。</span><span class="sxs-lookup"><span data-stu-id="a98b8-141">The added parts are of type **XmlDocument** so you cannot add a custom formatted message part using the **AddPart()** method.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="a98b8-142">宣言された部分の数よりも大きい値を含むマルチパート メッセージを受信する場合、オーケストレーション エンジン読み取りの数の部分がありますが、メッセージに作成で宣言されたメッセージ部分の数に一致する部分の適切な部分の種類型と、コンストラクト**XmlDocument**残りの部分の部分です。</span><span class="sxs-lookup"><span data-stu-id="a98b8-142">If a multi part message that contains greater than the number of declared parts is received, the orchestration engine reads how many parts there are in the message, then constructs the proper part types for the parts that match the number of parts in the declared message type and then constructs **XmlDocument** parts for the remaining parts.</span></span>  

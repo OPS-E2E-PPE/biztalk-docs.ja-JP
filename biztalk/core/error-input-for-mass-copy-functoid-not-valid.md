@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240530"
 ---
 # <a name="error---input-for-mass-copy-functoid-not-valid"></a><span data-ttu-id="31aae-102">エラー - が有効でない一括コピー Functoid の入力</span><span class="sxs-lookup"><span data-stu-id="31aae-102">Error - Input for Mass Copy Functoid Not Valid</span></span>
 <span data-ttu-id="31aae-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="31aae-103">**Error Code**</span></span>  

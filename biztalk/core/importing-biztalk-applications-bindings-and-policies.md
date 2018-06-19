@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーション、バインド、およびポリシーのインポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーション、バインド、およびポリシーのインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing, applications
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - importing, bindings
 - bindings, importing
 ms.assetid: 678bdb03-efaa-4053-9048-b71fc539d191
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256778"
 ---
 # <a name="importing-biztalk-applications-bindings-and-policies"></a><span data-ttu-id="12bd9-102">BizTalk アプリケーション、バインド、およびポリシーのインポート</span><span class="sxs-lookup"><span data-stu-id="12bd9-102">Importing BizTalk Applications, Bindings, and Policies</span></span>
 <span data-ttu-id="12bd9-103">このセクションの各トピックでは、BizTalk アプリケーション、バインド、およびポリシーを BizTalk グループまたはアプリケーションにインポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="12bd9-103">The topics in this section describe how to import BizTalk applications, bindings and policies into a BizTalk group or application.</span></span> <span data-ttu-id="12bd9-104">説明したよう[を BizTalk アプリケーションをエクスポートする方法](../core/how-to-export-a-biztalk-application.md)アプリケーションのエクスポートを異なる BizTalk グループ内のアプリケーションに、アプリケーションのアイテムをインポートし、使用できる Windows インストーラー (.msi) ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="12bd9-104">As mentioned in [How to Export a BizTalk Application](../core/how-to-export-a-biztalk-application.md), exporting an application creates a Windows Installer (.msi) file that you can then use to import the application's artifacts into an application in a different BizTalk group.</span></span> <span data-ttu-id="12bd9-105">インポートに指定したアプリケーションがそのグループ内に存在しない場合は、アプリケーションが作成されます。</span><span class="sxs-lookup"><span data-stu-id="12bd9-105">If the application that you specify for the import does not already exist in the group, the application is created.</span></span> <span data-ttu-id="12bd9-106">これに加えて、そのグループの BizTalk Server データベースに、アプリケーションのアイテムが登録され、データが格納されます。</span><span class="sxs-lookup"><span data-stu-id="12bd9-106">In addition, application's artifacts are registered and their data stored in the BizTalk databases of the group.</span></span> <span data-ttu-id="12bd9-107">詳細については、次を参照してください。[新機能の動作との成果物がインポート](../core/what-happens-when-artifacts-are-imported.md)です。</span><span class="sxs-lookup"><span data-stu-id="12bd9-107">For more information, see [What Happens When Artifacts Are Imported](../core/what-happens-when-artifacts-are-imported.md).</span></span>  

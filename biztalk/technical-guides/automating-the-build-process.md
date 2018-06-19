@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26010267"
 ---
 # <a name="automating-the-build-process"></a><span data-ttu-id="80565-102">ビルド プロセスを自動化します。</span><span class="sxs-lookup"><span data-stu-id="80565-102">Automating the Build Process</span></span>
 <span data-ttu-id="80565-103">自動ビルド プロセスは、コンパイル、展開され、通常、あらかじめ決められた間隔でプロジェクトの最新のソース コードに対するビルド確認テスト (Bvt) を実行します。</span><span class="sxs-lookup"><span data-stu-id="80565-103">An automated build process compiles, deploys and then runs build verification tests (BVTs) against the latest source code for a project at regular, predetermined intervals.</span></span> <span data-ttu-id="80565-104">「ビルド レポートを」ビルド処理の成否の詳細には、プロジェクトの利害関係者に配布します。</span><span class="sxs-lookup"><span data-stu-id="80565-104">Then a “build report,” which details the success or failure of the build process, is disseminated to the project stakeholders.</span></span> <span data-ttu-id="80565-105">ビルド レポートを分析して、プロジェクトの区分が注意を払い、プロジェクトを以前のバージョン/ビルド ロールバックかどうかに必要かを判断します。</span><span class="sxs-lookup"><span data-stu-id="80565-105">The build report is analyzed to determine what areas of the project need attention and if the project should be rolled back to an earlier version/build.</span></span>  

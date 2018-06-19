@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: BizTalk Server のポリシー実行の追跡 |Microsoft ドキュメント"
-description: "追跡を有効にして、BizTalk Server で、ポリシーの追跡の詳細を表示するのには、チュートリアル"
-ms.custom: 
+title: 'チュートリアル: BizTalk Server のポリシー実行の追跡 |Microsoft ドキュメント'
+description: 追跡を有効にして、BizTalk Server で、ポリシーの追跡の詳細を表示するのには、チュートリアル
+ms.custom: ''
 ms.date: 04/05/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef88eae7-f0f8-4f3f-85d0-3961a47395b6
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975096"
 ---
 # <a name="walkthrough-tracking-policy-execution"></a><span data-ttu-id="e94ac-103">チュートリアル: ポリシーの実行を追跡します。</span><span class="sxs-lookup"><span data-stu-id="e94ac-103">Walkthrough: Tracking Policy Execution</span></span>
 <span data-ttu-id="e94ac-104">追跡を有効にするための手順、 **ProcessPurchaseOrder**ポリシー、およびポリシーが実行された後に追跡情報を表示するためです。</span><span class="sxs-lookup"><span data-stu-id="e94ac-104">Step-by-step procedures for enabling tracking for the **ProcessPurchaseOrder** policy, and for viewing the tracking information after the policy is executed.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="e94ac-113">**ポリシーの追加** ダイアログ ボックスで、展開**ProcessPurchaseOrder**、バージョンを選択して**1.3**です。</span><span class="sxs-lookup"><span data-stu-id="e94ac-113">In the **Add Policies** dialog box, expand **ProcessPurchaseOrder**, and select Version **1.3**.</span></span>  
   
-5.  <span data-ttu-id="e94ac-114">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e94ac-114">Click **OK**.</span></span>  
+5.  <span data-ttu-id="e94ac-114">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e94ac-114">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="e94ac-115">表示されない場合**ProcessPurchaseOrder**一覧で、f5 キーを押して表示を更新するを選択します。</span><span class="sxs-lookup"><span data-stu-id="e94ac-115">If you don't see **ProcessPurchaseOrder** in the list, select F5 to refresh the view.</span></span>
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="e94ac-117">**ポリシー追跡オプション** ダイアログ ボックスで、すべてのチェック ボックスを**ファクト アクティビティ**、**条件の評価**、**ルールの実行**、および**議題の更新**です。</span><span class="sxs-lookup"><span data-stu-id="e94ac-117">In the **Policy Tracking Options** dialog box, select all the check boxes for **Fact activity**, **Condition evaluation**, **Rule firings**, and **Agenda updates**.</span></span>  
   
-9. <span data-ttu-id="e94ac-118">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e94ac-118">Click **OK**.</span></span>  
+9. <span data-ttu-id="e94ac-118">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e94ac-118">Click **OK**.</span></span>  
   
 ## <a name="test-the-solution-and-view-the-tracking-information"></a><span data-ttu-id="e94ac-119">ソリューションをテストして、追跡情報を表示</span><span class="sxs-lookup"><span data-stu-id="e94ac-119">Test the solution and view the tracking information</span></span>  
   

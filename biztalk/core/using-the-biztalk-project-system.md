@@ -1,11 +1,11 @@
 ---
-title: "BizTalk プロジェクト システムの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk プロジェクト システムの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Editor, opening
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Orchestration Designer, opening
 - Pipeline Designer, opening
 ms.assetid: a28c715e-128c-463a-b421-9b3efe76a530
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008195"
 ---
 # <a name="using-the-biztalk-project-system"></a><span data-ttu-id="70344-102">BizTalk プロジェクト システムの使用</span><span class="sxs-lookup"><span data-stu-id="70344-102">Using the BizTalk Project System</span></span>
 <span data-ttu-id="70344-103">BizTalk プロジェクト システムを使用すると、BizTalk ソリューションを Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境で作成、編成、および構成できます。</span><span class="sxs-lookup"><span data-stu-id="70344-103">You can use the BizTalk project system to create, organize, and configure BizTalk solutions in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="70344-104">このセクションの各トピックおよび手順では、BizTalk プロジェクト システムを使用して、さまざまな作業を行う方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="70344-104">The topics and procedures in this section describe how to perform various tasks by using the BizTalk project system.</span></span>  

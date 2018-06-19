@@ -1,14 +1,14 @@
 ---
-title: "単体テストを実行する |Microsoft ドキュメント"
-ms.custom: 
+title: 単体テストを実行する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 40275d0b-b2ee-400c-9ef5-b9386ab0ae53
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009859"
 ---
 # <a name="performing-unit-testing"></a><span data-ttu-id="d321f-102">単体テストを実行します。</span><span class="sxs-lookup"><span data-stu-id="d321f-102">Performing Unit Testing</span></span>
 <span data-ttu-id="d321f-103">単体テストでは、コンポーネント レベルでフォーカスがある状態し、期待どおりにかどうか、BizTalk ソリューションの個々 のコンポーネントを実行することを検証するテストの成功/失敗ステータスは、基本的にします。</span><span class="sxs-lookup"><span data-stu-id="d321f-103">Unit testing is focused at the component level and is basically a pass/fail test that verifies if individual components of the BizTalk solution perform as expected.</span></span> <span data-ttu-id="d321f-104">単体テスト、BizTalk ソリューションのいくつかのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="d321f-104">You have several options for unit testing your BizTalk solution.</span></span>  

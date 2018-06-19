@@ -1,17 +1,17 @@
 ---
-title: "アイテムの表示の名前を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アイテムの表示の名前を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM views, renaming items
 - Excel add-in [BAM], renaming items
 ms.assetid: 0fc68e0d-1d6b-4ad1-b059-7b5318050530
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255562"
 ---
 # <a name="how-to-rename-view-items"></a><span data-ttu-id="29f55-102">表示項目の名前を変更する方法</span><span class="sxs-lookup"><span data-stu-id="29f55-102">How to Rename View Items</span></span>
 <span data-ttu-id="29f55-103">多くの場合、ビジネス アクティビティ用に収集するデータには、クレジット カード番号や社会保障番号などの機密情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="29f55-103">Often the data you collect for a business activity contains sensitive information, for example credit card numbers or social security numbers.</span></span> <span data-ttu-id="29f55-104">したがって、ビジネス ユーザーの種類によっては、フィルター処理されたデータのサブセットのみが表示されるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="29f55-104">This means that some types of business users should see only a filtered subset of the data.</span></span>  

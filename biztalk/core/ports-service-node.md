@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263458"
 ---
 # <a name="ports-service-node"></a><span data-ttu-id="8a9e0-102">Ports (Service ノード)</span><span class="sxs-lookup"><span data-stu-id="8a9e0-102">Ports (Service Node)</span></span>
 <span data-ttu-id="8a9e0-103">バインド ファイルの Ports ノードは、バインド ファイルと共にエクスポートされるサービスにバインドされるポートに関する特定の情報を含むすべての Port ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="8a9e0-103">The Ports node of a binding file is the parent node for all of the Port nodes which contain specific information about ports bound to a service that is exported with the binding file.</span></span>  

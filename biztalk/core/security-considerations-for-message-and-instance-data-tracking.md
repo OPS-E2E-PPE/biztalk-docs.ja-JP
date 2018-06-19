@@ -1,11 +1,11 @@
 ---
-title: "メッセージとインスタンス データ追跡のセキュリティに関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージとインスタンス データ追跡のセキュリティに関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - permissions, HAT
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - HAT, security
 - Management database, HAT
 ms.assetid: 83e47dc2-c8e2-42a2-9c85-d511e7dae83f
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271770"
 ---
 # <a name="security-considerations-for-message-and-instance-data-tracking"></a><span data-ttu-id="480df-102">メッセージとインスタンス データの追跡のセキュリティに関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="480df-102">Security Considerations for Message and Instance Data Tracking</span></span>
 <span data-ttu-id="480df-103">セキュリティ上の理由により、メッセージとサービス インスタンスの追跡では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の以前のリリースとは異なりブラウザーや URL を使用しません。</span><span class="sxs-lookup"><span data-stu-id="480df-103">For security reasons, message and service instance tracking does not use browsers or URLs as in previous releases of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="480df-104">この監視オプションは BizTalk Server 管理コンソールの [グループの概要] ページに含まれています。</span><span class="sxs-lookup"><span data-stu-id="480df-104">This monitoring option is included as a part of the Group Overview page in the BizTalk Server Administration Console.</span></span>  <span data-ttu-id="480df-105">下位互換性のため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではセキュリティ上の理由からシェル内で Microsoft Internet Explorer をホストします。</span><span class="sxs-lookup"><span data-stu-id="480df-105">For backward compatibility, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] still hosts Microsoft Internet Explorer inside a shell for security reasons.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "エンジンの MST を測定するためのシナリオをテスト |Microsoft ドキュメント"
-ms.custom: 
+title: エンジンの MST を測定するためのシナリオをテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e54667b9-7262-43c8-a013-9242eb062daf
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008019"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a><span data-ttu-id="f2736-102">エンジンの MST を測定するためのテスト シナリオ</span><span class="sxs-lookup"><span data-stu-id="f2736-102">Test Scenarios for Measuring MST of the Engine</span></span>
 <span data-ttu-id="f2736-103">このセクションでは、BizTalk システムを次の 3 つの負荷レベルで起動したときの効率性を測定するために実装したテスト シナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="f2736-103">This section describes a test scenario that was implemented to measure the effect of driving a BizTalk system at three different levels of load:</span></span>  
@@ -86,9 +87,9 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="f2736-167">メッセージ ボックス データベースで 1 秒あたりのロック タイムアウトはデータベースによって測定される、 **Lock timeouts/sec**カウンターで利用可能な**SQLServer:Locks**パフォーマンス オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f2736-167">The lock timeouts per second on the MessageBox database as measured by the **Lock Timeouts/sec** counter available with the **SQLServer:Locks** performance object.</span></span>  
   
--   <span data-ttu-id="f2736-168">削除されたメッセージに関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。</span><span class="sxs-lookup"><span data-stu-id="f2736-168">The time in seconds for the most recent run of the SQL agent job that cleans up message box tables associated with removed messages.</span></span> <span data-ttu-id="f2736-169">これは、によって測定、 **MsgBox Msg Cleanup(Purge Jobs)**カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f2736-169">This is measured by the **MsgBox Msg Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
+-   <span data-ttu-id="f2736-168">削除されたメッセージに関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。</span><span class="sxs-lookup"><span data-stu-id="f2736-168">The time in seconds for the most recent run of the SQL agent job that cleans up message box tables associated with removed messages.</span></span> <span data-ttu-id="f2736-169">これは、によって測定、 **MsgBox Msg Cleanup(Purge Jobs)** カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f2736-169">This is measured by the **MsgBox Msg Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
   
--   <span data-ttu-id="f2736-170">削除されたメッセージ部分に関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。</span><span class="sxs-lookup"><span data-stu-id="f2736-170">The time in seconds for the most recent run of the SQL agent job which cleans up message box tables associated with removed message parts.</span></span> <span data-ttu-id="f2736-171">これは、によって測定、 **MsgBox パーツ Cleanup(Purge Jobs)**カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f2736-171">This is measured by the **MsgBox Parts Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
+-   <span data-ttu-id="f2736-170">削除されたメッセージ部分に関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。</span><span class="sxs-lookup"><span data-stu-id="f2736-170">The time in seconds for the most recent run of the SQL agent job which cleans up message box tables associated with removed message parts.</span></span> <span data-ttu-id="f2736-171">これは、によって測定、 **MsgBox パーツ Cleanup(Purge Jobs)** カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f2736-171">This is measured by the **MsgBox Parts Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
   
  <span data-ttu-id="f2736-172">維持可能な最大スループットを特定するテストを行う最には、スプール テーブルが無制限に拡大し始める時点まで入力負荷を増やします。</span><span class="sxs-lookup"><span data-stu-id="f2736-172">When testing to determine the maximum sustainable throughput, input load was increased up to the point that the spool table started to grow indefinitely.</span></span>  
   

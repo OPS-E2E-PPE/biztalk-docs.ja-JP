@@ -1,14 +1,14 @@
 ---
-title: "配置およびアプリケーションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: 配置およびアプリケーションのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2c86d5f-1849-4b7d-8061-23f156245f5b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007003"
 ---
 # <a name="deploy-and-test-the-application"></a><span data-ttu-id="95066-102">アプリの配置およびテスト</span><span class="sxs-lookup"><span data-stu-id="95066-102">Deploy and test the application</span></span>
 > [!NOTE]
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
   
     4.  <span data-ttu-id="95066-119">受信場所が JSON 注文書を取得するフォルダーの場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="95066-119">Provide the folder location from where the receive location will pick the incoming JSON purchase order.</span></span> <span data-ttu-id="95066-120">指定`*.json`クリックしてファイル マスクとして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="95066-120">Specify `*.json` as the file mask and then click **OK**.</span></span>  
   
-    5.  <span data-ttu-id="95066-121">**受信パイプライン**ドロップダウン リストで、 **JSONToXml**です。</span><span class="sxs-lookup"><span data-stu-id="95066-121">From the **Receive Pipeline** drop-down, select **JSONToXml**.</span></span> <span data-ttu-id="95066-122">このカスタム受信パイプラインを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリで作成しました。</span><span class="sxs-lookup"><span data-stu-id="95066-122">You created this custom receive pipeline in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.</span></span> <span data-ttu-id="95066-123">省略記号ボタンを右クリックして**([...])** 、パイプラインの横にし、ボタン**Stage 1 – Deocde コンポーネント**、次の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="95066-123">Right-click the ellipsis **(…)** button next to the pipeline, and then under **Stage 1 – Deocde Component**, provide the following values:</span></span>  
+    5.  <span data-ttu-id="95066-121">**受信パイプライン**ドロップダウン リストで、 **JSONToXml**です。</span><span class="sxs-lookup"><span data-stu-id="95066-121">From the **Receive Pipeline** drop-down, select **JSONToXml**.</span></span> <span data-ttu-id="95066-122">このカスタム受信パイプラインを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリで作成しました。</span><span class="sxs-lookup"><span data-stu-id="95066-122">You created this custom receive pipeline in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.</span></span> <span data-ttu-id="95066-123">省略記号ボタンを右クリックして **([...])** 、パイプラインの横にし、ボタン**Stage 1 – Deocde コンポーネント**、次の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="95066-123">Right-click the ellipsis **(…)** button next to the pipeline, and then under **Stage 1 – Deocde Component**, provide the following values:</span></span>  
   
         -   <span data-ttu-id="95066-124">RootNode-`ROOT`</span><span class="sxs-lookup"><span data-stu-id="95066-124">RootNode - `ROOT`</span></span>  
   

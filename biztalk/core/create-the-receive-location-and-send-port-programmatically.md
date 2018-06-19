@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47850e66-ce33-4c6a-8190-168071792c0b
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25976008"
 ---
 # <a name="create-the-receive-location-and-send-port-programmatically"></a><span data-ttu-id="e4ba2-102">受信場所を作成し、プログラムでの送信ポート</span><span class="sxs-lookup"><span data-stu-id="e4ba2-102">Create the receive location and send port programmatically</span></span>
 <span data-ttu-id="e4ba2-103">構成、Wcf-basichttp 受信場所と送信ポートをプログラムでします。</span><span class="sxs-lookup"><span data-stu-id="e4ba2-103">Configure a WCF-BasicHttp receive location and send port programmatically.</span></span> <span data-ttu-id="e4ba2-104">BizTalk 管理コンソールを使用するのを参照してください。 [、Wcf-basichttp アダプタ](../core/wcf-basichttp-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="e4ba2-104">To use the BizTalk Administration console, see [WCF-BasicHttp adapter](../core/wcf-basichttp-adapter.md).</span></span> 

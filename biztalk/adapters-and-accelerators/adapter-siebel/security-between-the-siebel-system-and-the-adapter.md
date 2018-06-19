@@ -1,18 +1,18 @@
 ---
-title: "Siebel システムとアダプター間のセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel システムとアダプター間のセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, IPsec
 - connection URI
 - security considerations, between the Siebel system and the adapter
 ms.assetid: 40b03d4e-f489-4dce-ba7b-6b6f394275ac
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222258"
 ---
 # <a name="security-between-the-siebel-system-and-the-adapter"></a><span data-ttu-id="3195b-102">Siebel システムとアダプター間のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="3195b-102">Security between the Siebel system and the adapter</span></span>
 ## <a name="encryption-and-authentication"></a><span data-ttu-id="3195b-103">暗号化と認証</span><span class="sxs-lookup"><span data-stu-id="3195b-103">Encryption and authentication</span></span>

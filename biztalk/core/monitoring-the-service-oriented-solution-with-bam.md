@@ -1,18 +1,18 @@
 ---
-title: "BAM によるソリューションを指向サービスを監視する |Microsoft ドキュメント"
-ms.custom: 
+title: BAM によるソリューションを指向サービスを監視する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - monitoring, service solutions
 - service solution tutorial, monitoring
 - OrchestrationEventStream object
 ms.assetid: 9b251580-9371-490e-9218-0ce3f6b00fa6
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264114"
 ---
 # <a name="monitoring-the-service-oriented-solution-with-bam"></a><span data-ttu-id="49051-102">BAM によるソリューションを指向サービスを監視します。</span><span class="sxs-lookup"><span data-stu-id="49051-102">Monitoring the Service Oriented Solution with BAM</span></span>
 <span data-ttu-id="49051-103">ソリューション内のすべてのバージョンのアクティビティの監視、 **CustomerService**ビジネス アクティビティ監視 (BAM) API を使用してオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="49051-103">The solution monitors activity in all versions of the **CustomerService** orchestration using the Business Activity Monitoring (BAM) API.</span></span> <span data-ttu-id="49051-104">具体的には、使用して、新しい**OrchestrationEventStream**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="49051-104">More specifically, it uses the new **OrchestrationEventStream** object.</span></span>  

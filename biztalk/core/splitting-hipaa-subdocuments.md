@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66d9badd-00c6-43a3-807e-0ad313983adc
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22278330"
 ---
 # <a name="splitting-hipaa-subdocuments"></a><span data-ttu-id="8a243-102">HIPAA サブドキュメントの分割</span><span class="sxs-lookup"><span data-stu-id="8a243-102">Splitting HIPAA Subdocuments</span></span>
 <span data-ttu-id="8a243-103">HIPAA の EDI インターチェンジには、通常、1 つのトランザクション セット内に、ST ヘッダーと SE ヘッダーで囲まれた複数の子ドキュメント/サブドキュメントがあります。</span><span class="sxs-lookup"><span data-stu-id="8a243-103">EDI interchanges for HIPAA commonly have multiple child/sub documents within a single transaction set, as bounded by the ST/SE headers.</span></span> <span data-ttu-id="8a243-104">EDI 受信パイプラインでは、このようなトランザクション セットから、複数の個別の HIPAA サブドキュメントを作成することがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="8a243-104">The EDI receive pipeline supports creation of separate HIPAA subdocuments from such an transaction set.</span></span> <span data-ttu-id="8a243-105">これは、HIPAA 以外の EDI インターチェンジとは異なる点です。HIPAA 以外の EDI インターチェンジでは、1 つのトランザクション セットが単一のメッセージとして処理されます。</span><span class="sxs-lookup"><span data-stu-id="8a243-105">This is different from non-HIPAA EDI interchanges, in which a single transaction set is processed as a single message.</span></span>  

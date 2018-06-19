@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターを使用してへの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターを使用してへの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connecting, to a Siebel system
 - connection URI
 ms.assetid: 6ba04179-5626-42b1-a01b-0c0638d31da3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221842"
 ---
 # <a name="connect-to-siebel-using-the-adapter"></a><span data-ttu-id="5b0e9-102">Siebel アダプターを使用してへの接続します。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-102">Connect to Siebel using the adapter</span></span>
 <span data-ttu-id="5b0e9-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアント接続の識別子 URI (Uniform Resource)、Siebel システムへの接続と呼ばれる、接続文字列を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] requires adapter clients to provide a connection string, called the connection Uniform Resource Identifier (URI), to connect to a Siebel system.</span></span> <span data-ttu-id="5b0e9-104">接続 URI のアダプターのクライアントは、外部システムに接続するための接続パラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-104">With a connection URI, adapter clients can specify connection parameters to connect to an external system.</span></span> <span data-ttu-id="5b0e9-105">接続 URI の詳細については、次を参照してください。 [Siebel システムへの接続を作成する](../../adapters-and-accelerators/adapter-siebel/create-a-connection-to-the-siebel-system.md)です。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-105">For more information about the connection URI, see [Create a Connection to the Siebel System](../../adapters-and-accelerators/adapter-siebel/create-a-connection-to-the-siebel-system.md).</span></span>  

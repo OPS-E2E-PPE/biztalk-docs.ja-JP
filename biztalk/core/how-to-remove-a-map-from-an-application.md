@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションからマップを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションからマップを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, maps
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [maps], deleting
 - managing [maps], applications
 ms.assetid: 27d9bb08-36f0-46ff-ae9a-2247be6e3f96
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254634"
 ---
 # <a name="how-to-remove-a-map-from-an-application"></a><span data-ttu-id="c4101-102">マップをアプリケーションから削除する方法</span><span class="sxs-lookup"><span data-stu-id="c4101-102">How to Remove a Map from an Application</span></span>
 <span data-ttu-id="c4101-103">このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アプリケーションからマップを削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="c4101-103">This topic describes how to use the BizTalk Server Administration console to remove a map from a BizTalk application.</span></span> <span data-ttu-id="c4101-104">マップの新しいバージョンを展開した後で、マップを削除する場合があります。</span><span class="sxs-lookup"><span data-stu-id="c4101-104">You might want to remove a map after deploying a new version of the map.</span></span> <span data-ttu-id="c4101-105">詳細とアプリケーションのアイテムを更新するための重要な考慮事項は、次を参照してください。 [BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)です。</span><span class="sxs-lookup"><span data-stu-id="c4101-105">For more information and important considerations for updating application artifacts, see [Updating BizTalk Applications](../core/updating-biztalk-applications.md).</span></span>  

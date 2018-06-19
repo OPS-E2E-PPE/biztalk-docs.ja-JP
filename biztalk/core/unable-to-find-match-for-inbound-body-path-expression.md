@@ -1,14 +1,14 @@
 ---
-title: "受信本文のパス式に一致するものが見つかりません |Microsoft ドキュメント"
-ms.custom: 
+title: 受信本文のパス式に一致するものが見つかりません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0382348-96c4-414c-9dda-a390d491dee8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286714"
 ---
 # <a name="unable-to-find-match-for-inbound-body-path-expression"></a><span data-ttu-id="41357-102">受信本文のパス式に一致する内容が見つかりません</span><span class="sxs-lookup"><span data-stu-id="41357-102">Unable to find match for inbound body path expression</span></span>
 ## <a name="details"></a><span data-ttu-id="41357-103">詳細</span><span class="sxs-lookup"><span data-stu-id="41357-103">Details</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="41357-123">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="41357-123">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="41357-124">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41357-124">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="41357-124">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41357-124">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="41357-125">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="41357-125">In the port **Type** list, select the correct port.</span></span>  
   

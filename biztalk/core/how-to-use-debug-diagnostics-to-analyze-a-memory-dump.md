@@ -1,14 +1,14 @@
 ---
-title: "デバッグ診断ツールを使用して、メモリ ダンプを分析する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: デバッグ診断ツールを使用して、メモリ ダンプを分析する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 986a91a7-feab-4014-bbd5-e8b966b8b841
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256602"
 ---
 # <a name="how-to-use-debug-diagnostics-to-analyze-a-memory-dump"></a><span data-ttu-id="e6d9f-102">デバッグ診断ツールを使用してメモリ ダンプを分析する方法</span><span class="sxs-lookup"><span data-stu-id="e6d9f-102">How to Use Debug Diagnostics to Analyze a Memory Dump</span></span>
 <span data-ttu-id="e6d9f-103">IIS 診断**デバッグ診断ツール**キャプチャされたメモリ ダンプ ファイルの基本分析が可能な機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e6d9f-103">The IIS Diagnostics **Debug Diagnostics Tool** includes a feature that can provide a basic analysis of a captured memory dump file.</span></span> <span data-ttu-id="e6d9f-104">メモリ ダンプ ファイルの分析を実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e6d9f-104">To perform an analysis of a memory dump file follow these steps.</span></span>  

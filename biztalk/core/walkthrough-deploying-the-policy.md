@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ポリシーを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ポリシーを展開する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 205760e2-9cd4-496f-93cd-0f93bc5d3231
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975912"
 ---
 # <a name="walkthrough-deploying-the-policy"></a><span data-ttu-id="ef523-102">チュートリアル: ポリシーを展開します。</span><span class="sxs-lookup"><span data-stu-id="ef523-102">Walkthrough: Deploying the Policy</span></span>
 <span data-ttu-id="ef523-103">このチュートリアルでを展開する手順、 **ProcessPurchaseOrder**次の 3 つの方法でポリシー。</span><span class="sxs-lookup"><span data-stu-id="ef523-103">This walkthrough provides step-by-step instructions for deploying the **ProcessPurchaseOrder** policy in the following three ways:</span></span>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="ef523-161">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="ef523-161">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span> <span data-ttu-id="ef523-162">これを行うには、アプリケーションを右クリックし、**管理者として実行**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-162">To do this, right-click the application, and then select **Run as administrator**.</span></span>  
   
-2.  <span data-ttu-id="ef523-163">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-163">Click **Next**.</span></span>  
+2.  <span data-ttu-id="ef523-163">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-163">Click **Next**.</span></span>  
   
 3.  <span data-ttu-id="ef523-164">**展開タスク**] ページで、[**エクスポート ポリシー/ボキャブラリをファイルにデータベースから**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-164">On the **Deployment Task** page, select **Export Policy/Vocabulary to file from database**, and then click **Next**.</span></span>  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 11/28/2017
   
 12. <span data-ttu-id="ef523-174">手順 8. ～ 9. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="ef523-174">Repeat steps 8 and 9.</span></span>  
   
-13. <span data-ttu-id="ef523-175">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-175">Click **Finish**.</span></span>  
+13. <span data-ttu-id="ef523-175">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-175">Click **Finish**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ef523-176">バージョン 1.0 および 1.1 の両方をエクスポートする必要が**POVocabulary**ため**ProcessPurchaseOrder** 1.3 の両方のバージョンによって異なります**POVocabulary**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-176">You need to export both version 1.0 and version 1.1 of **POVocabulary** because **ProcessPurchaseOrder** 1.3 depends on both versions of **POVocabulary**.</span></span> <span data-ttu-id="ef523-177">**許可される項目の最大数**バージョン 1.1 のボキャブラリから定義を使用します。</span><span class="sxs-lookup"><span data-stu-id="ef523-177">The **Maximum number of items allowed** definition is used from version 1.1 of the vocabulary.</span></span> <span data-ttu-id="ef523-178">**要求された数量**と**要求の状態**定義はバージョン 1.0 から使用されます。</span><span class="sxs-lookup"><span data-stu-id="ef523-178">The **Requested Quantity** and **Request Status** definitions are used from version 1.0.</span></span>  
@@ -123,7 +124,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="ef523-188">入力するかを指定する参照**C:\BRE-walkthroughs\ProcessPOPolicy13.xml** XML 出力ファイル名として。</span><span class="sxs-lookup"><span data-stu-id="ef523-188">Type or browse to specify **C:\BRE-walkthroughs\ProcessPOPolicy13.xml** as the XML output file name.</span></span>  
   
-8.  <span data-ttu-id="ef523-189">をクリックして**[次へ]** 4 回、順にクリック**完了**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-189">Click **Next** thrice, and then click **Finish**.</span></span>  
+8.  <span data-ttu-id="ef523-189">をクリックして **[次へ]** 4 回、順にクリック**完了**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-189">Click **Next** thrice, and then click **Finish**.</span></span>  
   
 #### <a name="to-delete-processpurchaseorder-and-povocabulary"></a><span data-ttu-id="ef523-190">ProcessPurchaseOrder および POVocabulary を削除するには</span><span class="sxs-lookup"><span data-stu-id="ef523-190">To delete ProcessPurchaseOrder and POVocabulary</span></span>  
   
@@ -166,15 +167,15 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="ef523-214">をクリックして**次**ビジネス ルール エンジン展開ウィザードでします。</span><span class="sxs-lookup"><span data-stu-id="ef523-214">Click **Next** in the Business Rules Engine Deployment Wizard.</span></span>  
   
-8.  <span data-ttu-id="ef523-215">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-215">Click **Next**.</span></span>  
+8.  <span data-ttu-id="ef523-215">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-215">Click **Next**.</span></span>  
   
-9. <span data-ttu-id="ef523-216">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-216">Click **Next**.</span></span>  
+9. <span data-ttu-id="ef523-216">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-216">Click **Next**.</span></span>  
   
 10. <span data-ttu-id="ef523-217">選択**このウィザードを再度実行**、順にクリック**完了**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-217">Select **Run this wizard again**, and then click **Finish**.</span></span>  
   
 11. <span data-ttu-id="ef523-218">手順 2 ~ 9 をインポートする**POVocabulary11.xml**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-218">Repeat steps 2-9 to import **POVocabulary11.xml**.</span></span>  
   
-12. <span data-ttu-id="ef523-219">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-219">Click **Finish**.</span></span>  
+12. <span data-ttu-id="ef523-219">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-219">Click **Finish**.</span></span>  
   
 #### <a name="to-verify-that-povocabulary-10-and-11-are-re-created"></a><span data-ttu-id="ef523-220">POVocabulary 1.0 および 1.1 が再作成されたことを確認するには</span><span class="sxs-lookup"><span data-stu-id="ef523-220">To verify that POVocabulary 1.0 and 1.1 are re-created</span></span>  
   
@@ -208,9 +209,9 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="ef523-237">をクリックして**次**ビジネス ルール エンジン展開ウィザードでします。</span><span class="sxs-lookup"><span data-stu-id="ef523-237">Click **Next** in the Business Rules Engine Deployment Wizard.</span></span>  
   
-8.  <span data-ttu-id="ef523-238">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-238">Click **Next**.</span></span>  
+8.  <span data-ttu-id="ef523-238">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-238">Click **Next**.</span></span>  
   
-9. <span data-ttu-id="ef523-239">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-239">Click **Next**, and then click **Finish**.</span></span>  
+9. <span data-ttu-id="ef523-239">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-239">Click **Next**, and then click **Finish**.</span></span>  
   
 #### <a name="to-verify-that-processpurchaseorder-13-is-re-created"></a><span data-ttu-id="ef523-240">ProcessPurchaseOrder 1.3 が再作成されたことを確認するには</span><span class="sxs-lookup"><span data-stu-id="ef523-240">To verify that ProcessPurchaseOrder 1.3 is re-created</span></span>  
   
@@ -287,7 +288,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="ef523-281">右側の一覧内を右クリックし、**追加**、クリックして**ポリシー**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-281">Right-click in the list on the right, point to **Add**, and then click **Policy**.</span></span>  
   
-5.  <span data-ttu-id="ef523-282">展開、 **ProcessPurchaseOrder**ノードで、チェック ボックスを選択**Version 1.3 (Published)**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-282">Expand the **ProcessPurchaseOrder** node, select the check box for **Version 1.3 (Published)**, and then click **OK**.</span></span> <span data-ttu-id="ef523-283">のインスタンスにアクセスするたびに SQL Server ログインを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ef523-283">.</span></span>  
+5.  <span data-ttu-id="ef523-282">展開、 **ProcessPurchaseOrder**ノードで、チェック ボックスを選択**Version 1.3 (Published)**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="ef523-282">Expand the **ProcessPurchaseOrder** node, select the check box for **Version 1.3 (Published)**, and then click **OK**.</span></span> <span data-ttu-id="ef523-283">のインスタンスにアクセスするたびに SQL Server ログインを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ef523-283">.</span></span>  
   
 6.  <span data-ttu-id="ef523-284">右クリック**ProcessPurchaseOrder**、クリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-284">Right-click **ProcessPurchaseOrder**, and then click **Deploy**.</span></span> <span data-ttu-id="ef523-285">表示されない場合**ProcessPurchaseOrder**一覧で、f5 キーを押して表示を更新します。</span><span class="sxs-lookup"><span data-stu-id="ef523-285">If you do not see **ProcessPurchaseOrder** in the list, press F5 to refresh the view.</span></span>  
   
@@ -313,7 +314,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="ef523-297">**先**として msi ファイルの名前とディレクトリを指定 ページで、 **C:\BRE-Walkthroughs\RuleTestApp.msi**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-297">On the **Destination** page, specify the directory and name for the MSI as **C:\BRE-Walkthroughs\RuleTestApp.msi**.</span></span>  
   
-9. <span data-ttu-id="ef523-298">**[エクスポート]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-298">Click **Export**.</span></span>  
+9. <span data-ttu-id="ef523-298">**[エクスポート]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-298">Click **Export**.</span></span>  
   
 10. <span data-ttu-id="ef523-299">**概要**] ページで [**完了**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-299">On the **Summary** page, click **Finish**.</span></span>  
   
@@ -324,7 +325,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="ef523-303">BizTalk Server 管理コンソールで、右クリック**RuleTestApp**、かどうか確認し、**削除**メニューを有効または無効にします。</span><span class="sxs-lookup"><span data-stu-id="ef523-303">In BizTalk Server Administration, right-click **RuleTestApp**, and check if the **Delete** menu is enabled or disabled.</span></span>  
   
-2.  <span data-ttu-id="ef523-304">場合**削除**は無効になっているを右クリックし**[ruletestapp]**、] をクリックして**停止**[**完全停止 - インスタンスの終了**をクリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-304">If **Delete** is disabled, right-click **RuleTestApp**, click **Stop**, select **Full Stop - Terminate Instance**, and then click **Stop**.</span></span>  
+2.  <span data-ttu-id="ef523-304">場合**削除**は無効になっているを右クリックし **[ruletestapp]**、] をクリックして**停止**[**完全停止 - インスタンスの終了**をクリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-304">If **Delete** is disabled, right-click **RuleTestApp**, click **Stop**, select **Full Stop - Terminate Instance**, and then click **Stop**.</span></span>  
   
 3.  <span data-ttu-id="ef523-305">右クリック**RuleTestApp**、クリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-305">Right-click **RuleTestApp**, and then click **Delete**.</span></span>  
   
@@ -354,7 +355,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="ef523-320">**のインポート ウィザードへようこそ**ページで、参照の前にエクスポートした MSI ファイル (RuleTestApp.msi) を選択し、**インポートする MSI ファイル**設定します。</span><span class="sxs-lookup"><span data-stu-id="ef523-320">On the **Welcome to the Import Wizard** page, browse and select the MSI file (RuleTestApp.msi) you exported earlier for the **MSI file to import** setting.</span></span>  
   
-5.  <span data-ttu-id="ef523-321">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-321">Click **Next**.</span></span>  
+5.  <span data-ttu-id="ef523-321">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef523-321">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="ef523-322">**アプリケーション設定** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="ef523-322">On the **Application Settings** page, click **Next**.</span></span>  
   

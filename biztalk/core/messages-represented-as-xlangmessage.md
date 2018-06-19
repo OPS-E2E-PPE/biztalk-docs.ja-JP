@@ -1,14 +1,14 @@
 ---
-title: "XLANGMessage として表されるメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: XLANGMessage として表されるメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aadca870-2f93-4be3-8733-a0cd3815add7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972272"
 ---
 # <a name="messages-represented-as-xlangmessage"></a><span data-ttu-id="ef32d-102">XLANGMessage として表されるメッセージ</span><span class="sxs-lookup"><span data-stu-id="ef32d-102">Messages Represented as XLANGMessage</span></span>
 <span data-ttu-id="ef32d-103">**XLANGMessage**オブジェクト、XLANG サービスで宣言されたメッセージ インスタンスを表します。</span><span class="sxs-lookup"><span data-stu-id="ef32d-103">An **XLANGMessage** object represents a message instance declared with an XLANG service.</span></span> <span data-ttu-id="ef32d-104">このオブジェクトを取得するには、メソッド呼び出しのパラメーターとしてメッセージに参照を渡します。</span><span class="sxs-lookup"><span data-stu-id="ef32d-104">This object is obtained by passing a reference to a message as a parameter in a method invocation.</span></span> <span data-ttu-id="ef32d-105">**XLANGPart**オブジェクトは、XLANG サービス内のメッセージ インスタンスに含まれるメッセージ部分を表します。</span><span class="sxs-lookup"><span data-stu-id="ef32d-105">An **XLANGPart** object represents a message part contained in a message instance within an XLANG service.</span></span> <span data-ttu-id="ef32d-106">このオブジェクトは取得を受信側のパラメーター型がメソッドの呼び出しで一部の参照を渡すか**XLANGPart**の渡された参照を列挙することによって、または**XLANGMessage**です。</span><span class="sxs-lookup"><span data-stu-id="ef32d-106">This object is obtained either by passing a part reference in a method invocation where the receiving parameter type is **XLANGPart** or by enumerating on a passed reference of **XLANGMessage**.</span></span>  

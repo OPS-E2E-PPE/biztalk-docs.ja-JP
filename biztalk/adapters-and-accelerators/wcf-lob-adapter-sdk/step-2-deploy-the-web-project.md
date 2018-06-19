@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Web プロジェクトを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Web プロジェクトを展開する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb775a89-2e2d-43e5-94ae-f75c1756dbd7
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450291"
 ---
 # <a name="step-2-deploy-the-web-project"></a><span data-ttu-id="a8b9c-102">手順 2: Web プロジェクトを展開します。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-102">Step 2: Deploy the Web Project</span></span>
 <span data-ttu-id="a8b9c-103">![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="a8b9c-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
@@ -44,9 +45,9 @@ ms.lasthandoff: 10/17/2017
   
 5.  <span data-ttu-id="a8b9c-116">**ソリューション エクスプ ローラー**EchoWeb プロジェクトを右クリックし、、 **Web サイトの発行**です。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-116">In **Solution Explorer**, right click the EchoWeb project, and then select **Publish Web Site**.</span></span>  
   
-6.  <span data-ttu-id="a8b9c-117">**Web サイトの発行** ダイアログ ボックスの**ターゲットの場所**、入力**http://machinename/EchoWeb**です。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-117">In the **Publish Web Site** dialog box, for **Target location**, enter **http://machinename/EchoWeb**.</span></span> <span data-ttu-id="a8b9c-118">選択**このプリコンパイル済みサイトを更新できるように**、**固定名およびシングル ページ アセンブリを使用する**、および**プリコンパイル済みアセンブリに厳密な名前を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-118">Select **Allow this precompiled site to be updatable**, **Use fixed naming and single page assemblies**, and **Enable strong naming on precompiled assemblies**.</span></span> <span data-ttu-id="a8b9c-119">**ファイルの場所をキー**フィールドで省略記号ボタンをクリックして**([...])**ボタンをクリックし、以前作成した EchoWebKey.snk ファイルを選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-119">In the **Key file location** field, click the ellipsis **(…)** button, select the EchoWebKey.snk file created previously, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="a8b9c-117">**Web サイトの発行** ダイアログ ボックスの**ターゲットの場所**、入力**http://machinename/EchoWeb**です。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-117">In the **Publish Web Site** dialog box, for **Target location**, enter **http://machinename/EchoWeb**.</span></span> <span data-ttu-id="a8b9c-118">選択**このプリコンパイル済みサイトを更新できるように**、**固定名およびシングル ページ アセンブリを使用する**、および**プリコンパイル済みアセンブリに厳密な名前を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-118">Select **Allow this precompiled site to be updatable**, **Use fixed naming and single page assemblies**, and **Enable strong naming on precompiled assemblies**.</span></span> <span data-ttu-id="a8b9c-119">**ファイルの場所をキー**フィールドで省略記号ボタンをクリックして **([...])** ボタンをクリックし、以前作成した EchoWebKey.snk ファイルを選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-119">In the **Key file location** field, click the ellipsis **(…)** button, select the EchoWebKey.snk file created previously, and then click **OK**.</span></span>  
   
-7.  <span data-ttu-id="a8b9c-120">Web サイトが正しく作成されたことを確認するには、Internet Explorer を起動、入力**"http://localhost/EchoWeb/EchoOutboundContract.svc"**でアドレス バー、および、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-120">To verify that the Web site was correctly created, start Internet Explorer, enter  **"http://localhost/EchoWeb/EchoOutboundContract.svc"** in the address bar, and then press ENTER.</span></span> <span data-ttu-id="a8b9c-121">EchoOutboundContractClient を説明する Web ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-121">A Web page that describes the EchoOutboundContractClient should appear.</span></span>  
+7.  <span data-ttu-id="a8b9c-120">Web サイトが正しく作成されたことを確認するには、Internet Explorer を起動、入力 **"http://localhost/EchoWeb/EchoOutboundContract.svc"** でアドレス バー、および、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-120">To verify that the Web site was correctly created, start Internet Explorer, enter  **"http://localhost/EchoWeb/EchoOutboundContract.svc"** in the address bar, and then press ENTER.</span></span> <span data-ttu-id="a8b9c-121">EchoOutboundContractClient を説明する Web ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-121">A Web page that describes the EchoOutboundContractClient should appear.</span></span>  
   
 ## <a name="what-did-i-just-do"></a><span data-ttu-id="a8b9c-122">でしただけは何ですか。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-122">What did I just do?</span></span>  
  <span data-ttu-id="a8b9c-123">IIS に Web プロジェクトをパブリッシュしただけです。</span><span class="sxs-lookup"><span data-stu-id="a8b9c-123">You have just published your Web project to IIS.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "Orchestrations3 を実行している |Microsoft ドキュメント"
-ms.custom: 
+title: Orchestrations3 を実行している |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, running
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Call Orchestration shape [Orchestration Designer], starting orchestrations
 - Receive shape [Orchestration Designer], activating orchestrations
 ms.assetid: 5bfe61c9-80e0-4a0a-b6b1-ab48037e665e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269050"
 ---
 # <a name="running-orchestrations"></a><span data-ttu-id="b57fd-102">オーケストレーションの実行</span><span class="sxs-lookup"><span data-stu-id="b57fd-102">Running Orchestrations</span></span>
 <span data-ttu-id="b57fd-103">オーケストレーション インスタンスに構成されていますか別のオーケストレーションからの明示的な呼び出しによってトリガーされる: を使用して、**オーケストレーションの呼び出し**図形または**オーケストレーションの開始**図形 — の受信時、アクティブ化メッセージ。</span><span class="sxs-lookup"><span data-stu-id="b57fd-103">Orchestration instances are designed to be triggered either by an explicit call from another orchestration—using a **Call Orchestration** shape or **Start Orchestration** shape—or by receipt of an activation message.</span></span> <span data-ttu-id="b57fd-104">アクティベーション メッセージ スキーマが指定された、**メッセージ**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="b57fd-104">The activation message schema is specified in the **Message** property.</span></span> <span data-ttu-id="b57fd-105">同様に、オーケストレーションをデザインする必要があり、設定するか、 **Activate**プロパティを**受信**true、または呼び出し元のオーケストレーションが存在しを実行する正しく構成されているかどうかを確認する図形、新しいオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="b57fd-105">You should design your orchestration accordingly, and either set the **Activate** property on a **Receive** shape to true, or make sure that a calling orchestration exists and is configured properly to run the new orchestration.</span></span>  

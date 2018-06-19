@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション エラー |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Catch Exception block [Orchestration Designer], suspended orchestrations
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - orchestrations, HAT
 - HAT, orchestrations
 ms.assetid: d0a799fb-7859-4774-b444-979f22f04215
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263810"
 ---
 # <a name="orchestration-failures"></a><span data-ttu-id="5aca5-102">オーケストレーション エラー</span><span class="sxs-lookup"><span data-stu-id="5aca5-102">Orchestration Failures</span></span>
 <span data-ttu-id="5aca5-103">各オーケストレーションの複雑さは異なります。たとえば、.NET オブジェクトを呼び出すオーケストレーションもあれば、変換図形と割り当て図形を経由してメッセージを構築するオーケストレーションもあります。</span><span class="sxs-lookup"><span data-stu-id="5aca5-103">Orchestrations vary in complexity; for example, an orchestration may call a .NET object or construct messages via transform and assignment shape.</span></span> <span data-ttu-id="5aca5-104">このように、オーケストレーションの内容やカスタマイズ レベルはさまざまなので、発生する可能性のあるすべてのエラーを列挙することはできません。</span><span class="sxs-lookup"><span data-stu-id="5aca5-104">As a result, it is impossible to list out every possible failure, due to the variety of its content as well as level of customization.</span></span> <span data-ttu-id="5aca5-105">ただし、オーケストレーションで発生するすべてのエラーは例外として表示されます。</span><span class="sxs-lookup"><span data-stu-id="5aca5-105">However, all failures encountered in orchestrations appear as exceptions.</span></span>  

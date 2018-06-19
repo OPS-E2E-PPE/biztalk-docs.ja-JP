@@ -1,14 +1,14 @@
 ---
-title: "ユーザー コード内の参照をメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー コード内の参照をメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a1584be-35fd-4dc2-a5a9-559300e67e0e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263250"
 ---
 # <a name="message-references-in-user-code"></a><span data-ttu-id="024e3-102">ユーザー コードでのメッセージ参照</span><span class="sxs-lookup"><span data-stu-id="024e3-102">Message References in User Code</span></span>
 <span data-ttu-id="024e3-103">メッセージが構築された時点では、メッセージ ボックス データベースとコンピューターのメモリにメッセージ表現が存在します。</span><span class="sxs-lookup"><span data-stu-id="024e3-103">When a message is constructed, a representation of the message is in the MessageBox database and another representation is in memory on the computer.</span></span> <span data-ttu-id="024e3-104">メッセージ参照を .NET オブジェクトまたは外部アセンブリに渡し、この .NET オブジェクトまたは外部アセンブリでコンピューターのメモリにあるメッセージ表現を変更することによってメッセージ割り当てを行った場合、BizTalk オーケストレーション エンジンではその変更が認識されません。</span><span class="sxs-lookup"><span data-stu-id="024e3-104">If you make the message assignment by passing a message reference to a .NET object or to an external assembly, and then the .NET object or the external assembly modifies the representation in memory on the computer, the BizTalk Orchestration Engine is not aware of the modification.</span></span>  

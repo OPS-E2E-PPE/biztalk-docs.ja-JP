@@ -1,14 +1,14 @@
 ---
-title: "EDIFACT のトランザクション セット IFTSAI-WKGRRE |Microsoft ドキュメント"
-ms.custom: 
+title: EDIFACT のトランザクション セット IFTSAI-WKGRRE |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0ba9321-4ee6-44d2-837c-2e43bedabcb0
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010523"
 ---
 # <a name="edifact-transaction-sets-iftsai-wkgrre"></a><span data-ttu-id="059b6-102">EDIFACT トランザクション セット IFTSAI-WKGRRE</span><span class="sxs-lookup"><span data-stu-id="059b6-102">EDIFACT Transaction Sets IFTSAI-WKGRRE</span></span>
 <span data-ttu-id="059b6-103">このトピックでは、BizTalk Server でサポートされている EDIFACT トランザクション セットが一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="059b6-103">This topic lists the EDIFACT transaction sets that are supported by BizTalk Server.</span></span>  

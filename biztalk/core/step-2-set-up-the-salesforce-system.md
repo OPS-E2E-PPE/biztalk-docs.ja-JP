@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Salesforce システムのセットアップ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Salesforce システムのセットアップ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a4b09fb-70a7-4eec-b1e3-f05de0e84df1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279930"
 ---
 # <a name="step-2-set-up-the-salesforce-system"></a><span data-ttu-id="babb2-102">手順 2: Salesforce システムをセットアップします。</span><span class="sxs-lookup"><span data-stu-id="babb2-102">Step 2: Set up the Salesforce System</span></span>
 <span data-ttu-id="babb2-103">このステップでは、営業案件が正常にクローズされたときに通知を送信するように Salesforce を構成します。</span><span class="sxs-lookup"><span data-stu-id="babb2-103">In this step, you configure Salesforce to send notifications when an opportunity is successfully closed.</span></span> <span data-ttu-id="babb2-104">通知を送信する前に、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="babb2-104">Before you can send notifications, you need to perform the following steps:</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="babb2-117">**新しいアカウント** ページで、さまざまなフィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="babb2-117">On the **New Account** page, provide values for the various fields.</span></span> <span data-ttu-id="babb2-118">値を指定する**アカウント名**は必須です。</span><span class="sxs-lookup"><span data-stu-id="babb2-118">Specifying a value for **Account Name** is mandatory.</span></span> <span data-ttu-id="babb2-119">このチュートリアルでは、指定のアカウント名に`Customer1`です。</span><span class="sxs-lookup"><span data-stu-id="babb2-119">For this tutorial, specify the account name as `Customer1`.</span></span>  
   
-4.  <span data-ttu-id="babb2-120">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="babb2-120">Click **Save**.</span></span>  
+4.  <span data-ttu-id="babb2-120">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="babb2-120">Click **Save**.</span></span>  
   
 ### <a name="to-create-an-opportunity-for-the-customer"></a><span data-ttu-id="babb2-121">顧客の営業案件を作成するには</span><span class="sxs-lookup"><span data-stu-id="babb2-121">To create an Opportunity for the customer</span></span>  
   
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="babb2-165">指定して、**エンドポイント URL**として`https://btssalesforce.servicebus.windows.net/notifications/opportunity`です。</span><span class="sxs-lookup"><span data-stu-id="babb2-165">Specify the **Endpoint URL** as `https://btssalesforce.servicebus.windows.net/notifications/opportunity`.</span></span>  
   
-         <span data-ttu-id="babb2-166">ここでは、 **btssalesforce**は、[!INCLUDE[sb](../includes/sb-md.md)]前半の手順で作成した名前空間。</span><span class="sxs-lookup"><span data-stu-id="babb2-166">Here, **btssalesforce** is your [!INCLUDE[sb](../includes/sb-md.md)] namespace that you created in earlier steps.</span></span> <span data-ttu-id="babb2-167">**/notifications/**リレーを作成するのには、このチュートリアルの後の手順を表します。</span><span class="sxs-lookup"><span data-stu-id="babb2-167">**/notifications/opportunity/** represents the relay that we will create in later steps of this tutorial.</span></span>  
+         <span data-ttu-id="babb2-166">ここでは、 **btssalesforce**は、[!INCLUDE[sb](../includes/sb-md.md)]前半の手順で作成した名前空間。</span><span class="sxs-lookup"><span data-stu-id="babb2-166">Here, **btssalesforce** is your [!INCLUDE[sb](../includes/sb-md.md)] namespace that you created in earlier steps.</span></span> <span data-ttu-id="babb2-167">**/notifications/** リレーを作成するのには、このチュートリアルの後の手順を表します。</span><span class="sxs-lookup"><span data-stu-id="babb2-167">**/notifications/opportunity/** represents the relay that we will create in later steps of this tutorial.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="babb2-168">先に作成した [!INCLUDE[sb](../includes/sb-md.md)] 名前空間を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="babb2-168">You must specify the [!INCLUDE[sb](../includes/sb-md.md)] namespace that you created earlier.</span></span>  
@@ -150,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
     5.  <span data-ttu-id="babb2-188">下にある**OAuth の使用可能なスコープ**を選択**フル アクセス**、 **、あなたに代わって要求をいつでも実行**、および**アクセスデータを管理および**をクリックし、**追加**に移動するボタン、 **OAuth スコープの選択**です。</span><span class="sxs-lookup"><span data-stu-id="babb2-188">Under **Available OAuth Scopes**, select **Full access**, **Perform requests on your behalf at any time**, and **Access and manage your data** and then click the **Add** button to move them into the **Selected OAuth Scopes**.</span></span>  
   
-    6.  <span data-ttu-id="babb2-189">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="babb2-189">Click **Save**.</span></span> <span data-ttu-id="babb2-190">表示されるページに関する情報を格納する、**コンシューマー キー**と**コンシューマー シークレット**です。</span><span class="sxs-lookup"><span data-stu-id="babb2-190">The page that appears contains information about the **Consumer Key** and **Consumer Secret**.</span></span> <span data-ttu-id="babb2-191">これらの値はメモしておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="babb2-191">You must make a note of these values.</span></span> <span data-ttu-id="babb2-192">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から Salesforce に接続する際には、これらの値が必要です。</span><span class="sxs-lookup"><span data-stu-id="babb2-192">You will need these values while connecting to Salesforce from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+    6.  <span data-ttu-id="babb2-189">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="babb2-189">Click **Save**.</span></span> <span data-ttu-id="babb2-190">表示されるページに関する情報を格納する、**コンシューマー キー**と**コンシューマー シークレット**です。</span><span class="sxs-lookup"><span data-stu-id="babb2-190">The page that appears contains information about the **Consumer Key** and **Consumer Secret**.</span></span> <span data-ttu-id="babb2-191">これらの値はメモしておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="babb2-191">You must make a note of these values.</span></span> <span data-ttu-id="babb2-192">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から Salesforce に接続する際には、これらの値が必要です。</span><span class="sxs-lookup"><span data-stu-id="babb2-192">You will need these values while connecting to Salesforce from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
          <span data-ttu-id="babb2-193">![Salesforce アクセス キー](../core/media/bts-sf-consumer-keys.jpg "BTS_SF_Consumer_Keys")</span><span class="sxs-lookup"><span data-stu-id="babb2-193">![Keys for Salesforce access](../core/media/bts-sf-consumer-keys.jpg "BTS_SF_Consumer_Keys")</span></span>  
   

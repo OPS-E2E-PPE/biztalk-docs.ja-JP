@@ -1,14 +1,14 @@
 ---
-title: "証明書ウィザード ユーティリティ |Microsoft ドキュメント"
-ms.custom: 
+title: 証明書ウィザード ユーティリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ff72810-c7b3-4f67-8f9f-e127eacc153e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006179"
 ---
 # <a name="certificate-wizard-utility"></a><span data-ttu-id="17b26-102">証明書ウィザード ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="17b26-102">Certificate Wizard Utility</span></span>
 <span data-ttu-id="17b26-103">.pfx ファイルまたは .cer ファイルの証明書をプライベート ストアまたはパブリック ストアにインポートして Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用できるようにするには、CertWizard ユーティリティを使用します。</span><span class="sxs-lookup"><span data-stu-id="17b26-103">You use the CertWizard utility to import a certificate from a .pfx or .cer file into a private or public store for use with Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 12/01/2017
 |<span data-ttu-id="17b26-121">Filepassword</span><span class="sxs-lookup"><span data-stu-id="17b26-121">Filepassword</span></span>|<span data-ttu-id="17b26-122">.pfx ファイルのロックを解除するために必要なパスワード。</span><span class="sxs-lookup"><span data-stu-id="17b26-122">The password required to unlock the .pfx file.</span></span>|  
 |<span data-ttu-id="17b26-123">Useridentity</span><span class="sxs-lookup"><span data-stu-id="17b26-123">Useridentity</span></span>|<span data-ttu-id="17b26-124">1 つまたは複数の BizTalk ホストが使用するサービス ID。</span><span class="sxs-lookup"><span data-stu-id="17b26-124">A service identity that one or more BizTalk Hosts uses.</span></span> <span data-ttu-id="17b26-125">ホストを指定せずに、ユーザー アカウントを使用して証明書をインポートするには、適切なユーザー アカウントを入力します。</span><span class="sxs-lookup"><span data-stu-id="17b26-125">Enter a user account if you do not want to specify the host, but want to import a certificate under a user account.</span></span> <span data-ttu-id="17b26-126">**注:** Useridentity スイッチを追加しない場合、ユーティリティはインポートし、すべてのユーザーの証明書を設定します。</span><span class="sxs-lookup"><span data-stu-id="17b26-126">**Note:**  If you do not add the Useridentity switch, the utility imports and set the certificate for all users.</span></span> <span data-ttu-id="17b26-127">**注:** Useridentity スイッチを追加する値を入力しなかった場合は、WMI に自動的にユーザー id が生成されます。</span><span class="sxs-lookup"><span data-stu-id="17b26-127">**Note:**  If you add the Useridentity switch, but do not enter a value, WMI automatically generates the user identity.</span></span>|  
 |<span data-ttu-id="17b26-128">Password</span><span class="sxs-lookup"><span data-stu-id="17b26-128">Password</span></span>|<span data-ttu-id="17b26-129">サービス ID ユーザーのパスワード。</span><span class="sxs-lookup"><span data-stu-id="17b26-129">The password for the service identity user.</span></span>|  
-|<span data-ttu-id="17b26-130">Thumbprint</span><span class="sxs-lookup"><span data-stu-id="17b26-130">Thumbprint</span></span>|<span data-ttu-id="17b26-131">ファイルに複数の証明書が含まれている場合に使用する、特定の証明書の拇印。</span><span class="sxs-lookup"><span data-stu-id="17b26-131">The thumbprint of a specific certificate, in case the file contains more than one certificate.</span></span> <span data-ttu-id="17b26-132">**注:**公開証明書ファイルの場合、ファイルには複数の証明書が含まれていて、拇印を指定しないユーティリティ インポート ファイル内のすべての証明書。</span><span class="sxs-lookup"><span data-stu-id="17b26-132">**Note:**  For a public certificate file, if the file contains more than one certificate and you do not specify the thumbprint, the utility imports all certificates in the file.</span></span> <span data-ttu-id="17b26-133">プライベート証明書ファイルの場合は、インポートする証明書を選択するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17b26-133">For a private certificate file, the utility prompts you to select the certificate to import.</span></span>|  
+|<span data-ttu-id="17b26-130">Thumbprint</span><span class="sxs-lookup"><span data-stu-id="17b26-130">Thumbprint</span></span>|<span data-ttu-id="17b26-131">ファイルに複数の証明書が含まれている場合に使用する、特定の証明書の拇印。</span><span class="sxs-lookup"><span data-stu-id="17b26-131">The thumbprint of a specific certificate, in case the file contains more than one certificate.</span></span> <span data-ttu-id="17b26-132">**注:** 公開証明書ファイルの場合、ファイルには複数の証明書が含まれていて、拇印を指定しないユーティリティ インポート ファイル内のすべての証明書。</span><span class="sxs-lookup"><span data-stu-id="17b26-132">**Note:**  For a public certificate file, if the file contains more than one certificate and you do not specify the thumbprint, the utility imports all certificates in the file.</span></span> <span data-ttu-id="17b26-133">プライベート証明書ファイルの場合は、インポートする証明書を選択するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17b26-133">For a private certificate file, the utility prompts you to select the certificate to import.</span></span>|  
 |<span data-ttu-id="17b26-134">使用方法</span><span class="sxs-lookup"><span data-stu-id="17b26-134">Usage</span></span>|<span data-ttu-id="17b26-135">インポートしたプライベート証明書の用途。</span><span class="sxs-lookup"><span data-stu-id="17b26-135">The intended usage of the imported private certificate.</span></span> <span data-ttu-id="17b26-136">次のいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="17b26-136">Can be one of the following:</span></span><br /><br /> <span data-ttu-id="17b26-137">**サインオン**(の署名証明書の)</span><span class="sxs-lookup"><span data-stu-id="17b26-137">**sign** (for a signing certificate)</span></span><br /><br /> <span data-ttu-id="17b26-138">**復号化**(の暗号化解除証明書の)</span><span class="sxs-lookup"><span data-stu-id="17b26-138">**decrypt** (for a decryption certificate)</span></span><br /><br /> <span data-ttu-id="17b26-139">**両方**(用の証明書を署名する証明書と暗号化解除証明書の両方)</span><span class="sxs-lookup"><span data-stu-id="17b26-139">**both** (for a certificate that is both a signing certificate and a decryption certificate)</span></span><br /><br /> <span data-ttu-id="17b26-140">**none** (用の証明書を署名する証明書と暗号化解除証明書の両方)。</span><span class="sxs-lookup"><span data-stu-id="17b26-140">**none** (also for a certificate that is both a signing certificate and a decryption certificate).</span></span> <span data-ttu-id="17b26-141">**注:** /Usage スイッチを none に設定した場合、ウィザードが設定されていない証明書の拇印、BizTalk ホストと BizTalk グループにします。</span><span class="sxs-lookup"><span data-stu-id="17b26-141">**Note:**  If you set the /Usage switch to none, the wizard will not set the thumbprint for the certificate on the BizTalk Hosts or the BizTalk Group.</span></span>|  
 |<span data-ttu-id="17b26-142">Exportable</span><span class="sxs-lookup"><span data-stu-id="17b26-142">Exportable</span></span>|<span data-ttu-id="17b26-143">指定できます**True**または**False**です。</span><span class="sxs-lookup"><span data-stu-id="17b26-143">Can be **True** or **False**.</span></span> <span data-ttu-id="17b26-144">場合**True**、秘密キーを再エクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="17b26-144">If **True**, the private key can be re-exported.</span></span>|  
   

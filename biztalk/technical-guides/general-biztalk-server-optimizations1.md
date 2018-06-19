@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の一般的な Optimizations1 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の一般的な Optimizations1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8032553-bae3-440d-9197-b926160b0bdf
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25976792"
 ---
 # <a name="general-biztalk-server-optimizations"></a><span data-ttu-id="a004b-102">BizTalk Server の一般的な最適化</span><span class="sxs-lookup"><span data-stu-id="a004b-102">General BizTalk Server Optimizations</span></span>
 <span data-ttu-id="a004b-103">BizTalk Server のパフォーマンスを向上させるのには、次の推奨事項を使用できます。</span><span class="sxs-lookup"><span data-stu-id="a004b-103">The following recommendations can be used to increase BizTalk Server performance.</span></span> <span data-ttu-id="a004b-104">BizTalk Server をインストールして、構成後、このトピックで示した最適化が適用されます。</span><span class="sxs-lookup"><span data-stu-id="a004b-104">The optimizations listed in this topic are applied after BizTalk Server has been installed and configured.</span></span>  

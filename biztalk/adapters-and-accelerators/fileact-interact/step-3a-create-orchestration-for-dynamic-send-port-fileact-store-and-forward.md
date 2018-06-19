@@ -1,14 +1,14 @@
 ---
-title: "手順 3: FileAct ストア アンド フォワード (プル) シナリオの動的送信ポート用のオーケストレーションを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: FileAct ストア アンド フォワード (プル) シナリオの動的送信ポート用のオーケストレーションを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5675d476-ad36-4bbc-8e87-786edc9c805d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223546"
 ---
 # <a name="step-3a-create-an-orchestration-for-dynamic-send-port-for-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="9dd68-102">手順 3: FileAct ストア アンド フォワード (プル) シナリオの動的送信ポート用のオーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="9dd68-102">Step 3A: Create an orchestration for dynamic send port for FileAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="9dd68-103">このセクションの手順を開始する前に」の手順を完了する必要があります、[手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)セクションです。</span><span class="sxs-lookup"><span data-stu-id="9dd68-103">Before you begin the steps in this section, you must complete the steps in the [Step 2C: Add a FILEACT Send Port for the FileAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md) section.</span></span>  

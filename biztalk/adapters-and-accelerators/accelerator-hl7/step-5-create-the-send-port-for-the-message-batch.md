@@ -1,14 +1,14 @@
 ---
-title: "手順 5: は、メッセージ バッチの送信ポートを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: は、メッセージ バッチの送信ポートを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5db815df-5b76-4ba4-99ab-c7766b0c301a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26006011"
 ---
 # <a name="step-5-create-the-send-port-for-the-message-batch"></a><span data-ttu-id="2212c-102">手順 5: メッセージのバッチの送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="2212c-102">Step 5: Create the Send Port for the Message Batch</span></span>
 <span data-ttu-id="2212c-103">この手順では、送信先パーティを作成するメッセージのバッチを配信する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="2212c-103">In this step, you create a send port to deliver the message batch that you create to the destination party.</span></span> <span data-ttu-id="2212c-104">これは、ファイル アダプターの種類に静的な一方向のポートです。</span><span class="sxs-lookup"><span data-stu-id="2212c-104">This is a static one-way port with a FILE adapter type.</span></span> <span data-ttu-id="2212c-105">ここで、変換先 (\Tutorial_BatchMsgDrop) のファイルのフォルダーを指定する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチ ファイルが削除されます。</span><span class="sxs-lookup"><span data-stu-id="2212c-105">You designate a file folder for the destination (\Tutorial_BatchMsgDrop) where [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will drop the message batch file.</span></span> <span data-ttu-id="2212c-106">ポートで送信するメッセージのバッチの種類を示すポートのフィルターを定義するとします。</span><span class="sxs-lookup"><span data-stu-id="2212c-106">You define a filter for the port indicating what type of message batches the ports will send.</span></span> <span data-ttu-id="2212c-107">フィルターは、Tutorial_BatchDest と OutboundBatch のメッセージの種類の変換先を指定します。</span><span class="sxs-lookup"><span data-stu-id="2212c-107">The filter specifies the destination of Tutorial_BatchDest and the message type of OutboundBatch.</span></span>  
@@ -41,10 +42,10 @@ ms.lasthandoff: 01/17/2018
     |<span data-ttu-id="2212c-121">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2212c-121">Use this</span></span>|<span data-ttu-id="2212c-122">目的</span><span class="sxs-lookup"><span data-stu-id="2212c-122">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="2212c-123">**インストール先フォルダー**</span><span class="sxs-lookup"><span data-stu-id="2212c-123">**Destination folder**</span></span>|<span data-ttu-id="2212c-124">参照 **\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchMsgDropのアクセラレータ**.</span><span class="sxs-lookup"><span data-stu-id="2212c-124">Browse to **\<*drive*:\>\Program Files\Microsoft  BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BatchMsgDrop**.</span></span> <span data-ttu-id="2212c-125">これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ バッチを含んでいるファイルを記述します。</span><span class="sxs-lookup"><span data-stu-id="2212c-125">This is the path to the location on the file system or public share to which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will write the file containing the message batch.</span></span>|  
-    |<span data-ttu-id="2212c-126">**[ファイル名]**</span><span class="sxs-lookup"><span data-stu-id="2212c-126">**File name**</span></span>|<span data-ttu-id="2212c-127">型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。</span><span class="sxs-lookup"><span data-stu-id="2212c-127">Type **%MessageID%.txt** (replace the .xml extension with the .txt extension).</span></span>|  
+    |<span data-ttu-id="2212c-126">**[ファイル名]**</span><span class="sxs-lookup"><span data-stu-id="2212c-126">**File name**</span></span>|<span data-ttu-id="2212c-127">型 **%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。</span><span class="sxs-lookup"><span data-stu-id="2212c-127">Type **%MessageID%.txt** (replace the .xml extension with the .txt extension).</span></span>|  
     |<span data-ttu-id="2212c-128">**[コピー モード]**</span><span class="sxs-lookup"><span data-stu-id="2212c-128">**Copy mode**</span></span>|<span data-ttu-id="2212c-129">選択**新規作成**です。</span><span class="sxs-lookup"><span data-stu-id="2212c-129">Select **Create New**.</span></span>|  
   
-4.  <span data-ttu-id="2212c-130">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2212c-130">Click **OK**.</span></span>  
+4.  <span data-ttu-id="2212c-130">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2212c-130">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="2212c-131">送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。</span><span class="sxs-lookup"><span data-stu-id="2212c-131">In the Send Port Properties dialog box, for **Send pipeline**, select **BTAHL72XPipelines.BTAHL72XSendPipeline**.</span></span>  
   

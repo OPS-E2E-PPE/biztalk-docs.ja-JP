@@ -1,11 +1,11 @@
 ---
-title: "ツールボックスを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ツールボックスを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Pipeline Designer, toolbox
 - pipelines, creating
 ms.assetid: 7a60c590-1a38-46fe-addf-0aa2c8b63cf9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257274"
 ---
 # <a name="how-to-use-the-toolbox"></a><span data-ttu-id="31786-102">ツールボックスの使用方法</span><span class="sxs-lookup"><span data-stu-id="31786-102">How to Use the Toolbox</span></span>
 <span data-ttu-id="31786-103">パイプラインを作成する場合は、コンポーネント (図形) をツールボックスからデザイン画面にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="31786-103">You create a pipeline by dragging components (shapes) from the Toolbox to the design surface.</span></span> <span data-ttu-id="31786-104">パイプライン デザイナーでは、作成プロセスに特定の制限を設けることによって、有効なパイプラインをアセンブルできます。</span><span class="sxs-lookup"><span data-stu-id="31786-104">Pipeline Designer helps you assemble valid pipelines by placing certain restrictions on the creation process.</span></span> <span data-ttu-id="31786-105">作成しているパイプラインの種類に適用できるツールボックス コンポーネントのみ選択できます。</span><span class="sxs-lookup"><span data-stu-id="31786-105">You can only select Toolbox components that apply to the pipeline type you are creating.</span></span> <span data-ttu-id="31786-106">たとえば、受信パイプラインの場合は有効なツールボックス コンポーネントとしてデコーダー、逆アセンブラー、および検証が示されますが、エンコードとアセンブラーは無効 (淡色表示) になります。</span><span class="sxs-lookup"><span data-stu-id="31786-106">For example, a receive pipeline will show decoders, disassemblers, and validators as valid Toolbox components, while encoders and assemblers will be disabled (dimmed).</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-a-pipeline-component-to-the-toolbox"></a><span data-ttu-id="31786-117">パイプライン コンポーネントをツールボックスに追加するには</span><span class="sxs-lookup"><span data-stu-id="31786-117">To add a pipeline component to the Toolbox</span></span>  
   
-1.  <span data-ttu-id="31786-118">**[ツール]** メニューで **[ツールボックス アイテムの選択]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="31786-118">On the **Tools** menu, click **Choose Toolbox Items**.</span></span>  
+1.  <span data-ttu-id="31786-118">**[ツール]** メニューで **[ツールボックス アイテムの選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="31786-118">On the **Tools** menu, click **Choose Toolbox Items**.</span></span>  
   
      <span data-ttu-id="31786-119">- または -</span><span class="sxs-lookup"><span data-stu-id="31786-119">—Or—</span></span>  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="31786-124">ツールボックスに追加するコンポーネントを選択します。</span><span class="sxs-lookup"><span data-stu-id="31786-124">Select the component you want to add to the Toolbox.</span></span>  
   
-4.  <span data-ttu-id="31786-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="31786-125">Click **OK**.</span></span> <span data-ttu-id="31786-126">コンポーネントが表示されます、 **BizTalk パイプライン コンポーネント**ツールボックス タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="31786-126">The component will appear on the **BizTalk Pipeline Components** tab of the Toolbox.</span></span>  
+4.  <span data-ttu-id="31786-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="31786-125">Click **OK**.</span></span> <span data-ttu-id="31786-126">コンポーネントが表示されます、 **BizTalk パイプライン コンポーネント**ツールボックス タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="31786-126">The component will appear on the **BizTalk Pipeline Components** tab of the Toolbox.</span></span>  
   
 ### <a name="to-remove-a-pipeline-component-from-the-toolbox"></a><span data-ttu-id="31786-127">パイプライン コンポーネントをツールボックスから削除するには</span><span class="sxs-lookup"><span data-stu-id="31786-127">To remove a pipeline component from the Toolbox</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "SAP アダプターの接続 URI の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターの接続 URI の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI, specifying at run time
 - connection URI, specifying at design time
 ms.assetid: 8df8e4a7-13f7-48c0-8af2-451253ced7e7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218538"
 ---
 # <a name="configure-the-connection-uri-for-the-sap-adapter"></a><span data-ttu-id="e1bf6-102">SAP アダプターの接続 URI を構成します。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-102">Configure the connection URI for the SAP adapter</span></span>
 <span data-ttu-id="e1bf6-103">接続 URI は、SAP システムに接続する接続文字列です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-103">A connection URI is a connection string to connect to an SAP system.</span></span> <span data-ttu-id="e1bf6-104">SAP システムとの接続を確立するために必要なさまざまなパラメーターが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-104">It contains various parameters required to establish connection with an SAP system.</span></span> <span data-ttu-id="e1bf6-105">デザイン時に、メタデータを生成する SAP システムへの接続に URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-105">At design time, you must specify the URI to connect to the SAP system to generate the metadata.</span></span> <span data-ttu-id="e1bf6-106">実行時に、操作を実行する SAP システムへの接続に URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-106">At run time, you must specify the URI to connect to the SAP system to perform operations.</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="e1bf6-123">クリックして、**バインド プロパティ** タブの値を指定します、バインディング、存在する場合は、スキーマを生成する前に指定する必要です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-123">Click the **Binding Properties** tab and specify the binding values, if any, which are required to be specified before generating the schema.</span></span> <span data-ttu-id="e1bf6-124">たとえばの値を指定する必要があります、 **GenerateFlatFileCompatibleIDoc** SAP システムから IDOC を受信するためのスキーマを生成する前にプロパティです。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-124">For example, you must specify a value for the **GenerateFlatFileCompatibleIDoc** property before generating schema for receiving IDOC from an SAP system.</span></span> <span data-ttu-id="e1bf6-125">バインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-125">For more information about binding properties, see [Read about BizTalk Adapter for mySAP Business Suite binding properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
   
-8.  <span data-ttu-id="e1bf6-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-126">Click **OK**.</span></span>  
+8.  <span data-ttu-id="e1bf6-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-126">Click **OK**.</span></span>  
   
 ### <a name="enter-the-connection-uri-using-add-adapter-metadata-wizard"></a><span data-ttu-id="e1bf6-127">入力アダプター メタデータの追加ウィザードを使用して、URI の接続</span><span class="sxs-lookup"><span data-stu-id="e1bf6-127">Enter the connection URI using Add Adapter Metadata Wizard</span></span>  
   
@@ -61,14 +62,14 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="e1bf6-132">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="e1bf6-132">**Categories**</span></span>|<span data-ttu-id="e1bf6-133">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-133">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="e1bf6-134">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="e1bf6-134">**Templates**</span></span>|<span data-ttu-id="e1bf6-135">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-135">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="e1bf6-136">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-136">Click **Add**.</span></span> <span data-ttu-id="e1bf6-137">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-137">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="e1bf6-136">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-136">Click **Add**.</span></span> <span data-ttu-id="e1bf6-137">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-137">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="e1bf6-138">アダプターの追加ウィザードで選択**WCF SAP**です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-138">In the Add Adapter Wizard, select **WCF-SAP**.</span></span> <span data-ttu-id="e1bf6-139">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-139">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="e1bf6-140">BizTalk で構成されている WCF SAP ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-140">If you already have a WCF-SAP port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  <span data-ttu-id="e1bf6-141">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-141">Click **Next**.</span></span>  
+5.  <span data-ttu-id="e1bf6-141">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-141">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="e1bf6-142">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**sapBinding**、 をクリック**構成**.</span><span class="sxs-lookup"><span data-stu-id="e1bf6-142">In the **Consume Adapter Service** dialog box, from the **Select a binding** drop-down list select **sapBinding**, and click **Configure**.</span></span>  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="e1bf6-149">既存の SAP WCF 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-149">If you selected an existing WCF-SAP send port, you need not specify the binding properties.</span></span> <span data-ttu-id="e1bf6-150">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-150">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="e1bf6-151">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-151">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="e1bf6-152">このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-152">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="e1bf6-153">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-153">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-10. <span data-ttu-id="e1bf6-154">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-154">Click **OK**.</span></span>  
+10. <span data-ttu-id="e1bf6-154">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-154">Click **OK**.</span></span>  
   
 ## <a name="enter-the-connection-uri-at-run-time"></a><span data-ttu-id="e1bf6-155">実行時に、接続 URI を入力してください。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-155">Enter the connection URI at run time</span></span>  
  <span data-ttu-id="e1bf6-156">構成の一部として、Wcf-custom または WCF SAP ポートの URI を指定する、実行時に、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-156">For run time, you can specify the URI as part of the WCF-Custom or WCF-SAP port configuration in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -99,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="e1bf6-163">**Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-163">In the **WCF-Custom Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-5.  <span data-ttu-id="e1bf6-164">**アドレス (URI)**テキスト ボックスで、接続、SAP システムへの接続に URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-164">In the **Address (URI)** text box, specify the connection URI to connect to the SAP system.</span></span> <span data-ttu-id="e1bf6-165">詳細については、接続 URI の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-165">For more information about the connection URI for the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
+5.  <span data-ttu-id="e1bf6-164">**アドレス (URI)** テキスト ボックスで、接続、SAP システムへの接続に URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-164">In the **Address (URI)** text box, specify the connection URI to connect to the SAP system.</span></span> <span data-ttu-id="e1bf6-165">詳細については、接続 URI の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-165">For more information about the connection URI for the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
   
 6.  <span data-ttu-id="e1bf6-166">**Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。**バインディングの種類**ドロップダウン リストで、 **sapBinding**です。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-166">In the **WCF-Custom Transport Properties** dialog box, click the **Binding** tab. From the **Binding Type** drop-down list, select **sapBinding**.</span></span>  
   
@@ -115,7 +116,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="e1bf6-172">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-172">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-9. <span data-ttu-id="e1bf6-173">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-173">Click **OK**.</span></span>  
+9. <span data-ttu-id="e1bf6-173">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-173">Click **OK**.</span></span>  
   
 ### <a name="enter-the-connection-uri-for-the-wcf-sap-port"></a><span data-ttu-id="e1bf6-174">WCF SAP ポートの接続 URI を入力してください。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-174">Enter the connection URI for the WCF-SAP port</span></span>  
   
@@ -151,7 +152,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="e1bf6-193">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-193">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-10. <span data-ttu-id="e1bf6-194">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-194">Click **OK**.</span></span>  
+10. <span data-ttu-id="e1bf6-194">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e1bf6-194">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="e1bf6-195">参照</span><span class="sxs-lookup"><span data-stu-id="e1bf6-195">See Also</span></span>  
 [<span data-ttu-id="e1bf6-196">SAP アプリケーションを作成する構成要素</span><span class="sxs-lookup"><span data-stu-id="e1bf6-196">Building blocks to create SAP applications</span></span>](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

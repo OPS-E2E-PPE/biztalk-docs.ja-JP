@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ファクト作成コンポーネントの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ファクト作成コンポーネントの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 041c8f73-c72e-43fd-8446-144cecdc95ef
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290306"
 ---
 # <a name="walkthrough-creating-a-fact-creator"></a><span data-ttu-id="f138b-102">チュートリアル: ファクト作成コンポーネントの作成</span><span class="sxs-lookup"><span data-stu-id="f138b-102">Walkthrough: Creating a Fact Creator</span></span>
 <span data-ttu-id="f138b-103">このチュートリアルは、ファクト作成コンポーネントを作成する手順を示します**POFactCreator**、テストに使用できる、 **ProcessPurchaseOrder**以前で作成したポリシーチュートリアル。</span><span class="sxs-lookup"><span data-stu-id="f138b-103">This walkthrough provides step-by-step procedures for creating a fact creator component, **POFactCreator**, which you can use to test the **ProcessPurchaseOrder** policy you created in earlier walkthroughs.</span></span>  
@@ -42,20 +43,20 @@ ms.lasthandoff: 09/20/2017
   
     |<span data-ttu-id="f138b-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f138b-118">Use this</span></span>|<span data-ttu-id="f138b-119">目的</span><span class="sxs-lookup"><span data-stu-id="f138b-119">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="f138b-120">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="f138b-120">**Project types**</span></span>|<span data-ttu-id="f138b-121">をクリックして**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-121">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="f138b-120">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="f138b-120">**Project types**</span></span>|<span data-ttu-id="f138b-121">をクリックして**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="f138b-121">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="f138b-122">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="f138b-122">**Templates**</span></span>|<span data-ttu-id="f138b-123">をクリックして**クラス ライブラリ**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-123">Click **Class Library**.</span></span>|  
     |<span data-ttu-id="f138b-124">**名前**</span><span class="sxs-lookup"><span data-stu-id="f138b-124">**Name**</span></span>|<span data-ttu-id="f138b-125">型**POFactCreatorLib**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-125">Type **POFactCreatorLib**.</span></span>|  
     |<span data-ttu-id="f138b-126">**場所**</span><span class="sxs-lookup"><span data-stu-id="f138b-126">**Location**</span></span>|<span data-ttu-id="f138b-127">指定**C:\BRE-Walkthroughs**場所として。</span><span class="sxs-lookup"><span data-stu-id="f138b-127">Specify **C:\BRE-Walkthroughs** as the location.</span></span>|  
     |<span data-ttu-id="f138b-128">**[ソリューション名]**</span><span class="sxs-lookup"><span data-stu-id="f138b-128">**Solution Name**</span></span>|<span data-ttu-id="f138b-129">型**POFactCreatorSol**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-129">Type **POFactCreatorSol**.</span></span>|  
     |<span data-ttu-id="f138b-130">**ソリューションのディレクトリを作成します。**</span><span class="sxs-lookup"><span data-stu-id="f138b-130">**Create directory for solution**</span></span>|<span data-ttu-id="f138b-131">ソリューション ファイルのディレクトリを作成するには、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="f138b-131">Select this check box to create a directory for the solution files.</span></span>|  
   
-4.  <span data-ttu-id="f138b-132">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f138b-132">Click **OK**.</span></span> <span data-ttu-id="f138b-133">**POFactCreatorLib**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="f138b-133">The **POFactCreatorLib** project should appear in Solution Explorer.</span></span> <span data-ttu-id="f138b-134">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="f138b-134">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
+4.  <span data-ttu-id="f138b-132">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f138b-132">Click **OK**.</span></span> <span data-ttu-id="f138b-133">**POFactCreatorLib**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="f138b-133">The **POFactCreatorLib** project should appear in Solution Explorer.</span></span> <span data-ttu-id="f138b-134">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="f138b-134">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
   
 5.  <span data-ttu-id="f138b-135">[プロパティ] ウィンドウで、ファイルの名前変更**Class1.cs**を**POFactCreator.cs**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-135">In the Properties window, change the name of the file, **Class1.cs**, to **POFactCreator.cs**.</span></span>  
   
 6.  <span data-ttu-id="f138b-136">ソリューション エクスプ ローラー ウィンドウで右クリック**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-136">In the Solution Explorer window, right-click **References**, and then click **Add Reference**.</span></span>  
   
-7.  <span data-ttu-id="f138b-137">をクリックして**参照**に移動**C:\Program files \common files \microsoft BizTalk**、順にダブルクリック**[microsoft.ruleengine.dll]**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-137">Click **Browse**, navigate to **C:\Program Files\Common Files\Microsoft BizTalk**, and then double-click **Microsoft.RuleEngine.dll**.</span></span>  
+7.  <span data-ttu-id="f138b-137">をクリックして**参照**に移動**C:\Program files \common files \microsoft BizTalk**、順にダブルクリック **[microsoft.ruleengine.dll]** です。</span><span class="sxs-lookup"><span data-stu-id="f138b-137">Click **Browse**, navigate to **C:\Program Files\Common Files\Microsoft BizTalk**, and then double-click **Microsoft.RuleEngine.dll**.</span></span>  
   
 8.  <span data-ttu-id="f138b-138">先頭に次の行を追加、 **POFactCreator.cs**後、既存のファイル`using`ステートメント。</span><span class="sxs-lookup"><span data-stu-id="f138b-138">Add the following lines to the top of the **POFactCreator.cs** file after the existing `using` statements:</span></span>  
   
@@ -171,7 +172,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="f138b-167">**.NET アセンブリ**ダイアログ ボックスで、 **POFactCreatorLib**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-167">In the **.NET Assemblies** dialog box, select **POFactCreatorLib**, and then click **OK**.</span></span>  
   
-5.  <span data-ttu-id="f138b-168">**バインドの選択**ダイアログ ボックスで、をクリックして**POFactCreator**で**POFactCreatorLib、10.0.0**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-168">In the **Select Binding** dialog box, click **POFactCreator** in **POFactCreatorLib, 10.0.0**, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="f138b-168">**バインドの選択**ダイアログ ボックスで、をクリックして**POFactCreator**で**POFactCreatorLib、10.0.0**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="f138b-168">In the **Select Binding** dialog box, click **POFactCreator** in **POFactCreatorLib, 10.0.0**, and then click **OK**.</span></span>  
   
 6.  <span data-ttu-id="f138b-169">をクリックして**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="f138b-169">Click **Test**.</span></span>  
   

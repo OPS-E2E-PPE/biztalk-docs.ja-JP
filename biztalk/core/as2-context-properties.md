@@ -1,14 +1,14 @@
 ---
-title: "AS2 コンテキスト プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 コンテキスト プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b4d63104-f31e-4ed2-b294-ba3ea8a39ae6
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007555"
 ---
 # <a name="as2-context-properties"></a><span data-ttu-id="ef41e-102">AS2 のコンテキスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="ef41e-102">AS2 Context Properties</span></span>
 <span data-ttu-id="ef41e-103">5 つの種類のコンテキスト プロパティは、BizTalk Server で AS2 メッセージに適用されます。</span><span class="sxs-lookup"><span data-stu-id="ef41e-103">Five types of context properties apply to AS2 messages in BizTalk Server:</span></span>  

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 64f202316e59040a77cb04da99857e8539a184ac
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015017"
 ---
 # <a name="deployment-limitations"></a><span data-ttu-id="42528-101">展開の制限事項</span><span class="sxs-lookup"><span data-stu-id="42528-101">Deployment Limitations</span></span>
 <span data-ttu-id="42528-102">アスタリスクでトランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) が BizTalk 展開ウィザードによってエクスポートし、管理に渡されるバインド ファイルに同じ形式でコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="42528-102">The Transport Adapter password is stored as asterisks (\*\*\*\*\*\*) in the binding file that is exported by BizTalk Deployment Wizard, and is passed to the management component in the same format.</span></span> <span data-ttu-id="42528-103">アスタリスクをランダムな英数字の値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="42528-103">Edit the binding file before importing by replacing the asterisks with random alphanumeric values (that is, not the correct password).</span></span> <span data-ttu-id="42528-104">使用して、正しいパスワードを入力し、**トランスポートのプロパティ**バインド ファイルをインポートした後のページです。</span><span class="sxs-lookup"><span data-stu-id="42528-104">Then enter the correct password using the **Transport Properties** page after importing the binding file.</span></span>  

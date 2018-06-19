@@ -1,14 +1,14 @@
 ---
-title: "X12 グローバル トランザクションの上限にエラー確認の生成に失敗しました |Microsoft ドキュメント"
-ms.custom: 
+title: X12 グローバル トランザクションの上限にエラー確認の生成に失敗しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8bbcae14-6e5c-4f79-87c6-311b4b54c7ff
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006083"
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-global"></a><span data-ttu-id="19580-102">X12 グローバル トランザクションの上限にエラー確認の生成に失敗しました</span><span class="sxs-lookup"><span data-stu-id="19580-102">Error-Ack generation has failed as maximum limit of X12 transaction-global</span></span>
 ## <a name="details"></a><span data-ttu-id="19580-103">詳細</span><span class="sxs-lookup"><span data-stu-id="19580-103">Details</span></span>  

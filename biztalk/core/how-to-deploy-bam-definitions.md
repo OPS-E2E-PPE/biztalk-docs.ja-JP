@@ -1,11 +1,11 @@
 ---
-title: "BAM 定義を展開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 定義を展開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, definitions [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - definitions [BAM], deploying
 - Deploy-All command [BAM]
 ms.assetid: 02b8888c-6f6c-45dd-8445-6e507a02f5f0
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970739"
 ---
 # <a name="how-to-deploy-bam-definitions"></a><span data-ttu-id="4bace-102">BAM 定義を展開する方法</span><span class="sxs-lookup"><span data-stu-id="4bace-102">How to Deploy BAM Definitions</span></span>
 <span data-ttu-id="4bace-103">管理者を使用して、**展開すべて**Excel ブックまたは XML 定義ファイルから BAM 定義を展開する BAM 管理ユーティリティのコマンドは、ブックからエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="4bace-103">Administrators use the **deploy-all** BAM Management utility command to deploy a BAM definition from the Excel workbook or the XML definitions file exported from the workbook.</span></span> <span data-ttu-id="4bace-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の完全インストールを実行すると、構成ウィザードで BAM 構成 XML が自動的に構成されます。</span><span class="sxs-lookup"><span data-stu-id="4bace-104">When you perform a complete installation of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], the Configuration Wizard automatically configures the BAM Configuration XML.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="4bace-121">」と入力して、追跡フォルダーに移動**C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking**コマンド プロンプトでします。</span><span class="sxs-lookup"><span data-stu-id="4bace-121">Navigate to the tracking folder by typing **C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking** at the command prompt.</span></span> <span data-ttu-id="4bace-122">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4bace-122">Press **ENTER**.</span></span>  
   
-3.  <span data-ttu-id="4bace-123">型**bm 展開すべて-definitionfile:\<BAM 定義ファイル\>**です。</span><span class="sxs-lookup"><span data-stu-id="4bace-123">Type **bm deploy-all -DefinitionFile:\<BAM definition file\>**.</span></span>  
+3.  <span data-ttu-id="4bace-123">型**bm 展開すべて-definitionfile:\<BAM 定義ファイル\>** です。</span><span class="sxs-lookup"><span data-stu-id="4bace-123">Type **bm deploy-all -DefinitionFile:\<BAM definition file\>**.</span></span>  
   
 4.  <span data-ttu-id="4bace-124">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4bace-124">Press **ENTER**.</span></span>  
   

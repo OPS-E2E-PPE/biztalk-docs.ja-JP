@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio を使用して自動テストを容易に |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio を使用して自動テストを容易に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 78f622af-08d5-480c-bd5e-f1db52e8d490
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302290"
 ---
 # <a name="using-visual-studio-to-facilitate-automated-testing"></a><span data-ttu-id="ada26-102">自動テストを容易にするために Visual Studio を使用します。</span><span class="sxs-lookup"><span data-stu-id="ada26-102">Using Visual Studio to Facilitate Automated Testing</span></span>
 <span data-ttu-id="ada26-103">Visual Studio 2010 では、最大数百台のサーバー アプリケーションに同時にアクセスするユーザーのロード プロファイルをシミュレートする強力なロード テスト機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="ada26-103">Visual Studio 2010 provides powerful load test functionality that can simulate a load profile of up to hundreds of users simultaneously accessing a server application.</span></span> <span data-ttu-id="ada26-104">このロード テスト機能は、今後の分析用のデータベースでこれらのメトリックを保存する機能と、選択した主要業績評価指標のリアルタイムのメトリックを提供します。</span><span class="sxs-lookup"><span data-stu-id="ada26-104">This load testing functionality provides real time metrics for selected key performance indicators as well as the ability to store these metrics in a database for future analysis.</span></span> <span data-ttu-id="ada26-105">このセクションでは、Visual Studio ロード テストを実行する BizTalk Server アプリケーションのパフォーマンスを評価するの使用について説明します。</span><span class="sxs-lookup"><span data-stu-id="ada26-105">This section describes the use of Visual Studio Load testing to evaluate the performance of a BizTalk Server application.</span></span>  

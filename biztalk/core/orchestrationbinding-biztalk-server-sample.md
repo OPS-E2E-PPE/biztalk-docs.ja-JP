@@ -1,14 +1,14 @@
 ---
-title: "OrchestrationBinding (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: OrchestrationBinding (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea14c0db-ea83-4bf9-b417-f877b3cb1bf9
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973800"
 ---
 # <a name="orchestrationbinding-biztalk-server-sample"></a><span data-ttu-id="3c564-102">OrchestrationBinding (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="3c564-102">OrchestrationBinding (BizTalk Server Sample)</span></span>
 <span data-ttu-id="3c564-103">オーケストレーションのバインドのサンプルでは、 [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) 管理オブジェクトを使用してオーケストレーションを構成および管理します。</span><span class="sxs-lookup"><span data-stu-id="3c564-103">The Orchestration Binding sample demonstrates using the [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) administrative objects to configure and manage orchestrations.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="3c564-130">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル OrchestrationBinding.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="3c564-130">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file OrchestrationBinding.sln.</span></span>  
   
-3.  <span data-ttu-id="3c564-131">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c564-131">On the **Build** menu, click **Build Solution**.</span></span>  
+3.  <span data-ttu-id="3c564-131">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c564-131">On the **Build** menu, click **Build Solution**.</span></span>  
   
 #### <a name="to-run-this-sample"></a><span data-ttu-id="3c564-132">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="3c564-132">To run this sample</span></span>  
   

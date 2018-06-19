@@ -1,14 +1,14 @@
 ---
-title: "既存のノードの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 既存のノードの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19e9cdb6-011f-4317-8e0a-3dbb852a0e4b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289378"
 ---
 # <a name="working-with-existing-nodes"></a><span data-ttu-id="e04a3-102">既存のノードの操作</span><span class="sxs-lookup"><span data-stu-id="e04a3-102">Working with Existing Nodes</span></span>
 <span data-ttu-id="e04a3-103">スキーマ ツリーにノードを配置した後、ノードを別の場所に移動したり、ノードの名前を変更することなどが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e04a3-103">After nodes have been placed into the schema tree, you will probably find it necessary to move nodes to different locations, rename them, and so on.</span></span> <span data-ttu-id="e04a3-104">このセクションでは、このような一般的な作業について説明します。</span><span class="sxs-lookup"><span data-stu-id="e04a3-104">This section provides step-by-step instructions for the most common such tasks.</span></span>  

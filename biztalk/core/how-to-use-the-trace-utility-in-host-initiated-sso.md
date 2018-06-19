@@ -1,17 +1,17 @@
 ---
-title: "側開始 SSO のホストで、トレース ユーティリティを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 側開始 SSO のホストで、トレース ユーティリティを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - host initiated SSO, trace utility
 - trace utility
 ms.assetid: a53444d1-3f63-42a6-8ee6-b60ff9af9e41
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973456"
 ---
 # <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a><span data-ttu-id="8b16c-102">側開始 SSO のホストで、トレース ユーティリティを使用する方法</span><span class="sxs-lookup"><span data-stu-id="8b16c-102">How to Use the Trace Utility in Host Initiated SSO</span></span>
 <span data-ttu-id="8b16c-103">トラブルシューティングの主要な方法はトレースを行うことです。</span><span class="sxs-lookup"><span data-stu-id="8b16c-103">The primary method of troubleshooting is tracing.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-use-the-trace-utility"></a><span data-ttu-id="8b16c-109">Trace ユーティリティを使用するには</span><span class="sxs-lookup"><span data-stu-id="8b16c-109">To use the trace utility</span></span>  
   
-1.  <span data-ttu-id="8b16c-110">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8b16c-110">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="8b16c-110">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8b16c-110">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="8b16c-111">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="8b16c-111">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   

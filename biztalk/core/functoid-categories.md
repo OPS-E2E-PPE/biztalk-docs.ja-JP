@@ -1,14 +1,14 @@
 ---
-title: "Functoid カテゴリ |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid カテゴリ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 029905e2-f01a-436a-b2ed-a364379c9cc5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246762"
 ---
 # <a name="functoid-categories"></a><span data-ttu-id="1f936-102">Functoid カテゴリ</span><span class="sxs-lookup"><span data-stu-id="1f936-102">Functoid Categories</span></span>
 <span data-ttu-id="1f936-103">BizTalk の Functoid は、使用目的に応じてカテゴリに分けられています。</span><span class="sxs-lookup"><span data-stu-id="1f936-103">BizTalk functoids are divided into categories according to their intended use.</span></span> <span data-ttu-id="1f936-104">たとえば、データベース Functoid は実行時にデータベースからデータを抽出することを目的とし、数値演算 Functoid は数学的演算を実行するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="1f936-104">For example, database functoids are designed for extracting data from a database at run time, mathematical functoids are used to perform mathematical operations, and so on.</span></span> <span data-ttu-id="1f936-105">BizTalk マッパーでは、Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスにカテゴリごとに表示されます。</span><span class="sxs-lookup"><span data-stu-id="1f936-105">In BizTalk Mapper, functoids appear by category in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Toolbox.</span></span> 

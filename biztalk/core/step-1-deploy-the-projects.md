@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 配置プロジェクト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 配置プロジェクト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0467c140-1f4c-4cfa-b46f-dc1d0f8755d4
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974128"
 ---
 # <a name="step-1-deploy-the-projects"></a><span data-ttu-id="6f733-102">ステップ 1: プロジェクトの配置</span><span class="sxs-lookup"><span data-stu-id="6f733-102">Step 1: Deploy the Projects</span></span>
 <span data-ttu-id="6f733-103">![手順 1/3](../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span><span class="sxs-lookup"><span data-stu-id="6f733-103">![Step 1 of 3](../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/28/2017
   
  <span data-ttu-id="6f733-105">**目標:** EAISchemas および EAIOrchestration プロジェクトを配置するこの手順でします。</span><span class="sxs-lookup"><span data-stu-id="6f733-105">**Objective:** In this step, you deploy the EAISchemas and EAIOrchestration projects.</span></span>  
   
- <span data-ttu-id="6f733-106">**目的:**プロジェクトまたは Visual Studio でソリューションを展開するときに、アセンブリに自動的に構築され、指定されたアプリケーションに展開します。</span><span class="sxs-lookup"><span data-stu-id="6f733-106">**Purpose:** When you deploy a project or solution in Visual Studio, the assemblies are automatically built and deployed into the specified application.</span></span> <span data-ttu-id="6f733-107">このプロセスの一部として、アセンブリは、アセンブリに含まれるオーケストレーション、スキーマ、およびマップ (これらは "アイテム" と呼ばれます) と共にローカルの BizTalk 管理データベースにインポートされ、データベース内で指定したアプリケーションに関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="6f733-107">As part of this process, the assembly along with the orchestrations, schemas, and maps that it contains (called "artifacts") are imported into the local BizTalk Management database and associated in the database with the specified application.</span></span>  
+ <span data-ttu-id="6f733-106">**目的:** プロジェクトまたは Visual Studio でソリューションを展開するときに、アセンブリに自動的に構築され、指定されたアプリケーションに展開します。</span><span class="sxs-lookup"><span data-stu-id="6f733-106">**Purpose:** When you deploy a project or solution in Visual Studio, the assemblies are automatically built and deployed into the specified application.</span></span> <span data-ttu-id="6f733-107">このプロセスの一部として、アセンブリは、アセンブリに含まれるオーケストレーション、スキーマ、およびマップ (これらは "アイテム" と呼ばれます) と共にローカルの BizTalk 管理データベースにインポートされ、データベース内で指定したアプリケーションに関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="6f733-107">As part of this process, the assembly along with the orchestrations, schemas, and maps that it contains (called "artifacts") are imported into the local BizTalk Management database and associated in the database with the specified application.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="6f733-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="6f733-108">Prerequisites</span></span>  
   

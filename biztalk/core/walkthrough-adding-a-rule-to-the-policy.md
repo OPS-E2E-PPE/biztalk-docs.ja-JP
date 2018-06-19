@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ポリシーにルールを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ポリシーにルールを追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b2a682c0-a5d7-4550-924d-be9fa29b84d2
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975704"
 ---
 # <a name="walkthrough-adding-a-rule-to-the-policy"></a><span data-ttu-id="5ee44-102">チュートリアル: ポリシーにルールを追加します。</span><span class="sxs-lookup"><span data-stu-id="5ee44-102">Walkthrough: Adding a Rule to the Policy</span></span>
 <span data-ttu-id="5ee44-103">このチュートリアルでは、という名前のルールを追加するための手順は**DeniedRule**を**ProcessPurchaseOrder**ポリシー。</span><span class="sxs-lookup"><span data-stu-id="5ee44-103">This walkthrough provides step-by-step procedures for adding a rule named **DeniedRule** to the **ProcessPurchaseOrder** policy.</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="5ee44-129">ドラッグ**要求の状態**[THEN] ペインにします。</span><span class="sxs-lookup"><span data-stu-id="5ee44-129">Drag **Request Status** to the THEN pane.</span></span>  
   
-11. <span data-ttu-id="5ee44-130">をクリックして**\<空の文字列\>**し、入力**Denied**です。</span><span class="sxs-lookup"><span data-stu-id="5ee44-130">Click **\<empty string\>** and then type **Denied**.</span></span>  
+11. <span data-ttu-id="5ee44-130">をクリックして**\<空の文字列\>** し、入力**Denied**です。</span><span class="sxs-lookup"><span data-stu-id="5ee44-130">Click **\<empty string\>** and then type **Denied**.</span></span>  
   
 12. <span data-ttu-id="5ee44-131">右クリック**Version 1.2 (未保存)**、クリックして**保存**です。</span><span class="sxs-lookup"><span data-stu-id="5ee44-131">Right-click **Version 1.2 (not saved)**, and then click **Save**.</span></span>  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="5ee44-135">値を変更して、SamplePO.xml ファイルと SamplePO2.xml ファイルをメモ帳で開き、**ステータス**フィールドを**XYZ**です。</span><span class="sxs-lookup"><span data-stu-id="5ee44-135">Open the SamplePO.xml and SamplePO2.xml files in Notepad and change the value of the **Status** field to **XYZ**.</span></span>  
   
-2.  <span data-ttu-id="5ee44-136">ポリシー エクスプ ローラー] ウィンドウで、**ポリシー**、展開**ProcessPurchaseOrder**を右クリックして**バージョン 1.2**、クリックして**[ポリシーのテスト**.</span><span class="sxs-lookup"><span data-stu-id="5ee44-136">In the Policy Explorer window, expand **Policies**, expand **ProcessPurchaseOrder**, right-click **Version 1.2**, and then click **Test Policy**.</span></span>  
+2.  <span data-ttu-id="5ee44-136">ポリシー エクスプ ローラー] ウィンドウで、**ポリシー**、展開**ProcessPurchaseOrder**を右クリックして**バージョン 1.2**、クリックして **[ポリシーのテスト**.</span><span class="sxs-lookup"><span data-stu-id="5ee44-136">In the Policy Explorer window, expand **Policies**, expand **ProcessPurchaseOrder**, right-click **Version 1.2**, and then click **Test Policy**.</span></span>  
   
 3.  <span data-ttu-id="5ee44-137">下にある、 **XMLDocuments**ノードで、選択**RuleTest.PO**、クリックして**インスタンスを追加**です。</span><span class="sxs-lookup"><span data-stu-id="5ee44-137">Under the **XMLDocuments** node, select **RuleTest.PO**, and then click **Add Instance**.</span></span>  
   

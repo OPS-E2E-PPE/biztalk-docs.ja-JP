@@ -1,14 +1,14 @@
 ---
-title: "スタンドアロン MSBUILD |Microsoft ドキュメント"
-ms.custom: 
+title: スタンドアロン MSBUILD |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21aa3693-3788-4874-b506-6f4584fb4fd5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007699"
 ---
 # <a name="standalone-msbuild"></a><span data-ttu-id="2b409-102">スタンドアロン MSBUILD</span><span class="sxs-lookup"><span data-stu-id="2b409-102">Standalone MSBUILD</span></span>
 <span data-ttu-id="2b409-103">**プロジェクトがビルド**コンポーネント[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]なしの BizTalk Server ソリューションを構築することができます[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2b409-103">The **Project Build** component of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] allows you to build BizTalk Server solutions without [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="2b409-104">インストールする、**プロジェクトがビルド**コンポーネント、サーバーを**Project Build コンポーネント**オプション、**追加のソフトウェア カテゴリ**インストール中にします。</span><span class="sxs-lookup"><span data-stu-id="2b409-104">To install the **Project Build** component on your server, select the **Project Build Component** option in the **Additional Software category** during installation.</span></span> <span data-ttu-id="2b409-105">選択を解除する必要があります、**開発ツールおよび SDK**インストールする場合は[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]されていないコンピューターで[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2b409-105">You should unselect the **Developer Tools and SDK** as you are installing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on a computer without [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 12/01/2017
   
 ## <a name="to-build-a-biztalk-project"></a><span data-ttu-id="2b409-107">BizTalk プロジェクトをビルドするには</span><span class="sxs-lookup"><span data-stu-id="2b409-107">To build a BizTalk project</span></span>  
   
-1.  <span data-ttu-id="2b409-108">**[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2b409-108">Click **Start**, and click **Run**.</span></span>  
+1.  <span data-ttu-id="2b409-108">**[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2b409-108">Click **Start**, and click **Run**.</span></span>  
   
 2.  <span data-ttu-id="2b409-109">型**cmd**、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="2b409-109">Type **cmd**, and press ENTER.</span></span>  
   

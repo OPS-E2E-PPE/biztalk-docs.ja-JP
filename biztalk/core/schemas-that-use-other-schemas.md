@@ -1,14 +1,14 @@
 ---
-title: "他のスキーマを使用するスキーマを |Microsoft ドキュメント"
-ms.custom: 
+title: 他のスキーマを使用するスキーマを |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02954d46-48ce-4cdf-a012-74c212ce8b6d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271602"
 ---
 # <a name="schemas-that-use-other-schemas"></a><span data-ttu-id="c7d2c-102">他のスキーマを使用したスキーマ</span><span class="sxs-lookup"><span data-stu-id="c7d2c-102">Schemas That Use Other Schemas</span></span>
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 |---------------------------|--------------------|  
 |<span data-ttu-id="c7d2c-112">[インポート]</span><span class="sxs-lookup"><span data-stu-id="c7d2c-112">Import</span></span>|<span data-ttu-id="c7d2c-113">-にアクセスして、インポートされたスキーマで定義された型を使用します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-113">-   Accesses and uses types defined in the imported schema.</span></span><br /><span data-ttu-id="c7d2c-114">のインポートされるスキーマで型を使用または新しい型を派生させて; 必要があります。型の変更は許可します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-114">-   Must use types in the imported schema as is, or derive new types from them; no type modification allowed.</span></span><br /><span data-ttu-id="c7d2c-115">他の名前空間で定義された型を使用するためのメカニズムを提供します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-115">-   Provides a mechanism for using types defined in other namespaces.</span></span> <span data-ttu-id="c7d2c-116">インポートされるスキーマには、インポートするスキーマとは異なるターゲットの名前空間が存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-116">Indeed, an imported schema must have a target namespace that is different from the importing schema.</span></span><br /><span data-ttu-id="c7d2c-117">-使用、**インポート**要素とその**名前空間**と**schemaLocation**属性の他のスキーマを参照します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-117">-   Uses the **import** element and its **namespace** and **schemaLocation** attributes to reference the other schema.</span></span>|  
 |<span data-ttu-id="c7d2c-118">[追加]</span><span class="sxs-lookup"><span data-stu-id="c7d2c-118">Include</span></span>|<span data-ttu-id="c7d2c-119">-にアクセスして、インクルードされるスキーマで定義された型を使用します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-119">-   Accesses and uses types defined in the included schema.</span></span><br /><span data-ttu-id="c7d2c-120">のインクルードされるスキーマで型を使用または新しい型を派生させて; 必要があります。型の変更は許可します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-120">-   Must use types in the included schema as is, or derive new types from them; no type modification allowed.</span></span><br /><span data-ttu-id="c7d2c-121">-インクルードされるスキーマをインクルードするスキーマと同じターゲット名前空間にする必要があります。 またはインクルードされるスキーマのターゲットの名前空間を空にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-121">-   The included schema must be in the same target namespace as the including schema, or the target namespace of the included schema must be empty.</span></span><br /><span data-ttu-id="c7d2c-122">-使用、**含める**要素とその**schemaLocation**属性の他のスキーマを参照します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-122">-   Uses the **include** element and its **schemaLocation** attribute to reference the other schema.</span></span>|  
-|<span data-ttu-id="c7d2c-123">再定義</span><span class="sxs-lookup"><span data-stu-id="c7d2c-123">Redefine</span></span>|<span data-ttu-id="c7d2c-124">-にアクセスして、再定義されたスキーマで定義された型を使用します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-124">-   Accesses and uses types defined in the redefined schema.</span></span><br /><span data-ttu-id="c7d2c-125">再定義されたスキーマで型を使用して、新しい型を派生させて、したり、それらに対する変更を指定できます。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-125">-   Can use types in the redefined schema as is, derive new types from them, or specify modifications to them.</span></span><br /><span data-ttu-id="c7d2c-126">再定義されたスキーマは、再定義するスキーマと同じターゲット名前空間にする必要があります。 または再定義されたスキーマのターゲットの名前空間を空にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-126">-   The redefined schema must be in the same target namespace as the redefining schema, or the target namespace of the redefined schema must be empty.</span></span><br /><span data-ttu-id="c7d2c-127">-使用、 **redefine**要素とその**schemaLocation**属性の他のスキーマを参照します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-127">-   Uses the **redefine** element and its **schemaLocation** attribute to reference the other schema.</span></span> <span data-ttu-id="c7d2c-128">型を再定義がで指定された、 **redefine**要素。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-128">Any type redefinitions are specified with the **redefine** element.</span></span> <span data-ttu-id="c7d2c-129">**注:**再定義するメカニズムを使用して高度な XSD 概念は、これを使用する方法とタイミングを十分に理解した後にのみ使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-129">**Note:**      Using the redefine mechanism is an advanced XSD concept and should only be used after you have sufficient understanding of how and when it should be used.</span></span>|  
+|<span data-ttu-id="c7d2c-123">再定義</span><span class="sxs-lookup"><span data-stu-id="c7d2c-123">Redefine</span></span>|<span data-ttu-id="c7d2c-124">-にアクセスして、再定義されたスキーマで定義された型を使用します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-124">-   Accesses and uses types defined in the redefined schema.</span></span><br /><span data-ttu-id="c7d2c-125">再定義されたスキーマで型を使用して、新しい型を派生させて、したり、それらに対する変更を指定できます。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-125">-   Can use types in the redefined schema as is, derive new types from them, or specify modifications to them.</span></span><br /><span data-ttu-id="c7d2c-126">再定義されたスキーマは、再定義するスキーマと同じターゲット名前空間にする必要があります。 または再定義されたスキーマのターゲットの名前空間を空にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-126">-   The redefined schema must be in the same target namespace as the redefining schema, or the target namespace of the redefined schema must be empty.</span></span><br /><span data-ttu-id="c7d2c-127">-使用、 **redefine**要素とその**schemaLocation**属性の他のスキーマを参照します。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-127">-   Uses the **redefine** element and its **schemaLocation** attribute to reference the other schema.</span></span> <span data-ttu-id="c7d2c-128">型を再定義がで指定された、 **redefine**要素。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-128">Any type redefinitions are specified with the **redefine** element.</span></span> <span data-ttu-id="c7d2c-129">**注:** 再定義するメカニズムを使用して高度な XSD 概念は、これを使用する方法とタイミングを十分に理解した後にのみ使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-129">**Note:**      Using the redefine mechanism is an advanced XSD concept and should only be used after you have sufficient understanding of how and when it should be used.</span></span>|  
   
 > [!NOTE]
 >  <span data-ttu-id="c7d2c-130">インポートの間の類似点と相違点に関する詳細については、含めるとメカニズムを再定義に記載されているリソースを参照してください[Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)です。</span><span class="sxs-lookup"><span data-stu-id="c7d2c-130">For complete information about the differences and similarities between the import, include, and redefine mechanisms, see the references listed in [XSD Resources on the Web](../core/xsd-resources-on-the-web.md).</span></span>  

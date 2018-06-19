@@ -1,14 +1,14 @@
 ---
-title: "証明書参照から X509CertificateIdentity を作成できませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: 証明書参照から X509CertificateIdentity を作成できませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3acee8e-c035-4e58-8bfc-397885b4d185
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246066"
 ---
 # <a name="failed-to-create-x509certificateidentity-from-certificate-reference"></a><span data-ttu-id="64912-102">証明書参照から X509CertificateIdentity を作成できませんでした</span><span class="sxs-lookup"><span data-stu-id="64912-102">Failed to create X509CertificateIdentity from certificate reference</span></span>
 ## <a name="details"></a><span data-ttu-id="64912-103">詳細</span><span class="sxs-lookup"><span data-stu-id="64912-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="64912-125">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="64912-125">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="64912-126">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64912-126">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="64912-126">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64912-126">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="64912-127">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="64912-127">In the port **Type** list, select the correct port.</span></span>  
   

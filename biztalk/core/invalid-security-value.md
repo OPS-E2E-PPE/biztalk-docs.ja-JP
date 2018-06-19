@@ -1,14 +1,14 @@
 ---
-title: "無効なセキュリティ値 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効なセキュリティ値 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ee380da7-c05e-4b9b-84ee-f7ffee90eb0e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257210"
 ---
 # <a name="invalid-security-value"></a><span data-ttu-id="99a07-102">セキュリティの値が無効です</span><span class="sxs-lookup"><span data-stu-id="99a07-102">Invalid Security Value</span></span>
 ## <a name="details"></a><span data-ttu-id="99a07-103">詳細</span><span class="sxs-lookup"><span data-stu-id="99a07-103">Details</span></span>  

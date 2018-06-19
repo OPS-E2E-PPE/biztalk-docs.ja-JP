@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MQSeries adapters, examples
 - examples, pipelines
 ms.assetid: ac709e45-524b-45ab-9673-060790ecbed2
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976120"
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a><span data-ttu-id="82b53-102">MQSSendPipelineComponent (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="82b53-102">MQSSendPipelineComponent (BizTalk Server Sample)</span></span>
 <span data-ttu-id="82b53-103">このサンプルでは、一連の MQSeries プロパティ値を XML ファイルから読み取って、メッセージに適用する、パイプライン コンポーネントの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="82b53-103">This sample demonstrates how to write a pipeline component that reads a set of MQSeries property values from an XML file and applies them to a message.</span></span>  
@@ -31,9 +32,9 @@ ms.lasthandoff: 03/28/2018
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="82b53-106">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="82b53-106">Where to Find This Sample</span></span>  
   
--   <span data-ttu-id="82b53-107">*\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent</span><span class="sxs-lookup"><span data-stu-id="82b53-107">*\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent</span></span>  
+-   <span data-ttu-id="82b53-107">*\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent</span><span class="sxs-lookup"><span data-stu-id="82b53-107">*\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent</span></span>  
   
--   <span data-ttu-id="82b53-108">*\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline</span><span class="sxs-lookup"><span data-stu-id="82b53-108">*\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline</span></span>  
+-   <span data-ttu-id="82b53-108">*\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline</span><span class="sxs-lookup"><span data-stu-id="82b53-108">*\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline</span></span>  
   
  <span data-ttu-id="82b53-109">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="82b53-109">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -148,7 +149,7 @@ ms.lasthandoff: 03/28/2018
   
     1.  <span data-ttu-id="82b53-184">BizTalk 管理コンソールを開きます。</span><span class="sxs-lookup"><span data-stu-id="82b53-184">Open the BizTalk Administration Console.</span></span>  
   
-    2.  <span data-ttu-id="82b53-185">クリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**を展開し、をクリックし、**アセンブリ**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="82b53-185">Click to expand **BizTalk Group [\<servername\>:\<management database\>]**, and then click to expand the **Assemblies** folder.</span></span>  
+    2.  <span data-ttu-id="82b53-185">クリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]** を展開し、をクリックし、**アセンブリ**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="82b53-185">Click to expand **BizTalk Group [\<servername\>:\<management database\>]**, and then click to expand the **Assemblies** folder.</span></span>  
   
          <span data-ttu-id="82b53-186">展開されたパイプライン アセンブリは、表示するか、 **アセンブリ** フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="82b53-186">The deployed pipeline assembly should be visible under the **Assemblies** folder.</span></span>  
   
@@ -190,7 +191,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="82b53-207">右クリック **キュー**, 、 をポイント **新規**, 、クリックして **ローカル キュー**します。</span><span class="sxs-lookup"><span data-stu-id="82b53-207">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
-4.  <span data-ttu-id="82b53-208">**ローカル キューの作成** ダイアログ ボックスで、 **キュー名**, 、型 **SETHEADER**, 、クリックして **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="82b53-208">In **Create Local Queue** dialog box, in **Queue Name**, type **SETHEADER**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="82b53-208">**ローカル キューの作成** ダイアログ ボックスで、 **キュー名**, 、型 **SETHEADER**, 、クリックして **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="82b53-208">In **Create Local Queue** dialog box, in **Queue Name**, type **SETHEADER**, and then click **OK**.</span></span>  
   
 ## <a name="creating-the-send-port-and-mqseries-queue"></a><span data-ttu-id="82b53-209">送信ポートと MQSeries キューの作成</span><span class="sxs-lookup"><span data-stu-id="82b53-209">Creating the Send Port and MQSeries Queue</span></span>  
  <span data-ttu-id="82b53-210">この手順では、出力メッセージ用の送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="82b53-210">This procedure creates the send port for the output message.</span></span> <span data-ttu-id="82b53-211">MQSeries キューは、送信ポートがまだ作成されていない場合に送信ポートを作成したときにも作成されます。</span><span class="sxs-lookup"><span data-stu-id="82b53-211">The MQSeries queue is also created when you create the send port if you have not already created it.</span></span>  
@@ -203,7 +204,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="82b53-215">**トランスポートの種類** ボックスで、 **MQSeries**します。</span><span class="sxs-lookup"><span data-stu-id="82b53-215">In the **Transport Type** box, select **MQSeries**.</span></span>  
   
-4.  <span data-ttu-id="82b53-216">**送信パイプライン** ボックスで、 **[setmqseriesheaderpropertypipeline.setmqseriesheaderssendpipeline]**します。</span><span class="sxs-lookup"><span data-stu-id="82b53-216">In the **Send pipeline** box, select **SetMQSeriesHeaderPropertyPipeline.SetMQSeriesHeadersSendPipeline**.</span></span>  
+4.  <span data-ttu-id="82b53-216">**送信パイプライン** ボックスで、 **[setmqseriesheaderpropertypipeline.setmqseriesheaderssendpipeline]** します。</span><span class="sxs-lookup"><span data-stu-id="82b53-216">In the **Send pipeline** box, select **SetMQSeriesHeaderPropertyPipeline.SetMQSeriesHeadersSendPipeline**.</span></span>  
   
 5.  <span data-ttu-id="82b53-217">**フィルター**, 、次の名前/値ペアを持つ、新しいエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="82b53-217">In **Filters**, add a new entry with the following name/value pairs:</span></span>  
   

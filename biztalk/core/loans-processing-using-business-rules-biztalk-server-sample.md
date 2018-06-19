@@ -1,17 +1,17 @@
 ---
-title: "Loans Processing Using Business Rules (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Loans Processing Using Business Rules (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 3e1c80c6-adc1-4a0f-83fd-409ce1b8f21f
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008347"
 ---
 # <a name="loans-processing-using-business-rules-biztalk-server-sample"></a><span data-ttu-id="e57e1-102">ローン処理を使用してビジネス ルール (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="e57e1-102">Loans Processing Using Business Rules (BizTalk Server Sample)</span></span>
 <span data-ttu-id="e57e1-103">Loans Processing Using Business Rules サンプルは、オーケストレーション内で管理しているルール セットを使用する方法、および入力 (ファクトと呼ばれます) の組み合わせを使用して、処理中のドキュメント内のフィールドの設定値を計算する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="e57e1-103">The Loans Processing Using Business Rules sample demonstrates how to use a set of rules managed within an orchestration, and how to use a combination of inputs known as facts, to calculate settings for some fields within a document being processed.</span></span> <span data-ttu-id="e57e1-104">ファクトは、.NET ベースのアセンブリ呼び出しの結果、メッセージの XML から取得した値、またはデータベースから取得したデータです。</span><span class="sxs-lookup"><span data-stu-id="e57e1-104">Facts can be the result of calling a .NET-based assembly, the values retrieved from the XML of the message, or the data retrieved from a database.</span></span> <span data-ttu-id="e57e1-105">このサンプルでは、ルールを必要に応じて変更して、再展開の必要なしに後続の計算に影響を与える方法も示します。</span><span class="sxs-lookup"><span data-stu-id="e57e1-105">The sample also demonstrates how you can change the rules at any time, affecting subsequent calculations without the need to redeploy.</span></span>  
@@ -141,7 +142,7 @@ ms.lasthandoff: 12/01/2017
     |<span data-ttu-id="e57e1-207">4</span><span class="sxs-lookup"><span data-stu-id="e57e1-207">4</span></span>|<span data-ttu-id="e57e1-208">常駐状態ルール</span><span class="sxs-lookup"><span data-stu-id="e57e1-208">Residency Status Rule</span></span>|<span data-ttu-id="e57e1-209">IF **PlaceOfResidence &#124;です。TimeInMonths** > 18</span><span class="sxs-lookup"><span data-stu-id="e57e1-209">IF **PlaceOfResidence &#124; TimeInMonths** > 18</span></span><br /><br /> <span data-ttu-id="e57e1-210">**ResidencyStatus** = **有効**</span><span class="sxs-lookup"><span data-stu-id="e57e1-210">THEN **ResidencyStatus** = **Valid**</span></span>|  
     |<span data-ttu-id="e57e1-211">!1, !2, !3, !4</span><span class="sxs-lookup"><span data-stu-id="e57e1-211">!1, !2, !3, !4</span></span>|<span data-ttu-id="e57e1-212">否定ルール</span><span class="sxs-lookup"><span data-stu-id="e57e1-212">Negation Rules</span></span>|<span data-ttu-id="e57e1-213">論理条件**いない**ルール 1 ~ 4 で説明されている、対応する条件のです。</span><span class="sxs-lookup"><span data-stu-id="e57e1-213">Conditions that are a logical **NOT** of the corresponding condition described in rules 1–4.</span></span> <span data-ttu-id="e57e1-214">設定されている文字列の変更の結果として得られる操作には。</span><span class="sxs-lookup"><span data-stu-id="e57e1-214">Resulting actions are a change in the string that is being set.</span></span>|  
   
-6.  <span data-ttu-id="e57e1-215">右クリックし、**バージョン 1.1 (未保存)**ノードをクリックして**保存**です。</span><span class="sxs-lookup"><span data-stu-id="e57e1-215">Right-click the **Version 1.1(not saved)** node, and then click **Save**.</span></span>  
+6.  <span data-ttu-id="e57e1-215">右クリックし、**バージョン 1.1 (未保存)** ノードをクリックして**保存**です。</span><span class="sxs-lookup"><span data-stu-id="e57e1-215">Right-click the **Version 1.1(not saved)** node, and then click **Save**.</span></span>  
   
 7.  <span data-ttu-id="e57e1-216">右クリックし、**バージョン 1.1**ノードをクリックして**発行**です。</span><span class="sxs-lookup"><span data-stu-id="e57e1-216">Right-click the **Version 1.1** node, and then click **Publish**.</span></span>  
   

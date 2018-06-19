@@ -24,6 +24,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25974272"
 ---
 # <a name="httpsso-biztalk-server-sample"></a><span data-ttu-id="e879a-102">HTTPSSO (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="e879a-102">HTTPSSO (BizTalk Server Sample)</span></span>
 <span data-ttu-id="e879a-103">HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタでエンタープライズ シングル サインオン (SSO) を使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e879a-103">The HTTPSSO sample demonstrates how to use the Enterprise Single Sign-On (SSO) feature with the Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP adapter.</span></span>  
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/20/2018
   
 4.  <span data-ttu-id="e879a-157">Visual Studio を使用して、プロジェクト ファイル SsoSample.csproj を開きます。</span><span class="sxs-lookup"><span data-stu-id="e879a-157">Open the project file SsoSample.csproj using Visual Studio.</span></span>  
   
-5.  <span data-ttu-id="e879a-158">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e879a-158">On the **Build** menu, click **Build Solution**.</span></span>  
+5.  <span data-ttu-id="e879a-158">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e879a-158">On the **Build** menu, click **Build Solution**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="e879a-159">ビルドを続行する前に、ソリューションを保存するように要求されます。</span><span class="sxs-lookup"><span data-stu-id="e879a-159">You may be asked to save a solution file before the build can proceed.</span></span>  

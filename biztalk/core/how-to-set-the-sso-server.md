@@ -1,11 +1,11 @@
 ---
-title: "SSO サーバーを設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO サーバーを設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - servers, selecting [SSO]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [SSO], selecting servers
 - SSOManage [SSO]
 ms.assetid: a0b0176d-b426-4ab1-8a7e-1f96f4214683
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972168"
 ---
 # <a name="how-to-set-the-sso-server"></a><span data-ttu-id="33769-102">SSO サーバーを設定する方法</span><span class="sxs-lookup"><span data-stu-id="33769-102">How to Set the SSO Server</span></span>
 <span data-ttu-id="33769-103">ssomanage を使用するたびに、まず、ユーザーが接続先のシングル サインオン サーバーを参照するように設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="33769-103">Each time you use ssomanage, you must first point the user to the Single Sign-On server you want to connect to.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="33769-111">必要に応じて、、**すべてのユーザーの SSO サーバーの設定**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="33769-111">If appropriate, select the **Set SSO Server for all users** check box.</span></span>  
   
-5.  <span data-ttu-id="33769-112">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33769-112">Click **OK**.</span></span>  
+5.  <span data-ttu-id="33769-112">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33769-112">Click **OK**.</span></span>  
   
 ### <a name="to-set-the-enterprise-single-sign-on-server-for-a-single-user-using-the-command-line"></a><span data-ttu-id="33769-113">コマンド ラインで 1 人のユーザーに対してエンタープライズ シングル サインオン サーバーを設定するには</span><span class="sxs-lookup"><span data-stu-id="33769-113">To set the Enterprise Single Sign-On Server for a single user using the command line</span></span>  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="33769-115">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="33769-115">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="33769-116">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="33769-116">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="33769-117">型**ssomanage – server \<SSO サーバー名\>**ここで、  **\<SSO サーバー名\>**シングル サインオン サーバーのコンピューター名をユーザーには接続しようとしています。</span><span class="sxs-lookup"><span data-stu-id="33769-117">Type **ssomanage –server \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server the user wants to connect to.</span></span>  
+3.  <span data-ttu-id="33769-117">型**ssomanage – server \<SSO サーバー名\>** ここで、  **\<SSO サーバー名\>** シングル サインオン サーバーのコンピューター名をユーザーには接続しようとしています。</span><span class="sxs-lookup"><span data-stu-id="33769-117">Type **ssomanage –server \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server the user wants to connect to.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="33769-118">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="33769-118">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="33769-121">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="33769-121">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="33769-122">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="33769-122">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="33769-123">型**ssomanage – serverall \<SSO サーバー名\>**ここで、  **\<SSO サーバー名\>**シングル サインオン サーバーのすべてのコンピューター名にはシングル サインオン ユーザー アカウントのメンバーが指すされます。</span><span class="sxs-lookup"><span data-stu-id="33769-123">Type **ssomanage –serverall \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server all members of the Single Sign-On Users account will be pointed to.</span></span>  
+3.  <span data-ttu-id="33769-123">型**ssomanage – serverall \<SSO サーバー名\>** ここで、  **\<SSO サーバー名\>** シングル サインオン サーバーのすべてのコンピューター名にはシングル サインオン ユーザー アカウントのメンバーが指すされます。</span><span class="sxs-lookup"><span data-stu-id="33769-123">Type **ssomanage –serverall \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server all members of the Single Sign-On Users account will be pointed to.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="33769-124">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="33769-124">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

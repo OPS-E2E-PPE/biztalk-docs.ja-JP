@@ -13,7 +13,7 @@ helpviewer_keywords:
 - policies, importing
 - managing [policies], importing
 ms.assetid: 92f6ef18-279f-416d-b13e-8b9642539d27
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972336"
 ---
 # <a name="how-to-import-a-policy"></a><span data-ttu-id="444a9-102">ポリシーをインポートする方法</span><span class="sxs-lookup"><span data-stu-id="444a9-102">How to Import a Policy</span></span>
 <span data-ttu-id="444a9-103">このトピックでは、BizTalk Server 管理コンソールを使用して BizTalk グループにポリシーをインポートする方法と、BTSTask コマンド ライン ツールを使用してポリシーを BizTalk アプリケーションにインポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="444a9-103">This topic describes how to use the BizTalk Server Administration console to import a policy into a BizTalk group or the BTSTask command-line tool to import a policy into a BizTalk application.</span></span>  
@@ -66,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="444a9-136">[参照] をクリックして、ポリシーを含む .xml ファイルに **開く**します。</span><span class="sxs-lookup"><span data-stu-id="444a9-136">Browse to the .xml file containing the policy and click **Open**.</span></span>  
   
-     <span data-ttu-id="444a9-137">ポリシーがグループにインポートしに表示、**ポリシー**のフォルダー **\<すべての成果物\>**です。</span><span class="sxs-lookup"><span data-stu-id="444a9-137">The policy is imported into the group and displays in the **Policies** folder of **\<All Artifacts\>**.</span></span>  
+     <span data-ttu-id="444a9-137">ポリシーがグループにインポートしに表示、**ポリシー**のフォルダー **\<すべての成果物\>** です。</span><span class="sxs-lookup"><span data-stu-id="444a9-137">The policy is imported into the group and displays in the **Policies** folder of **\<All Artifacts\>**.</span></span>  
   
 #### <a name="using-the-command-line"></a><span data-ttu-id="444a9-138">コマンドラインを使用してください。</span><span class="sxs-lookup"><span data-stu-id="444a9-138">Using the command line</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="444a9-140">次の表に示すように適切な値を置き換えて、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="444a9-140">Type the following command, substituting the appropriate values, as described in the following table:</span></span>  
   
-     <span data-ttu-id="444a9-141">**BTSTask ImportApp/:** *値*[**/applicationname は: * **値*] [**/overwrite**] [**/Server:***値 *] [* */database:***値 *]</span><span class="sxs-lookup"><span data-stu-id="444a9-141">**BTSTask ImportApp /Package:** *value* [**/ApplicationName:***value*] [**/Overwrite**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+     <span data-ttu-id="444a9-141">**BTSTask ImportApp/:** *値*[**/applicationname は: * **値*] [**/overwrite **] [**/Server:***値 *] [* */database:*** 値 *]</span><span class="sxs-lookup"><span data-stu-id="444a9-141">**BTSTask ImportApp /Package:** *value* [**/ApplicationName:***value*] [**/Overwrite **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
      <span data-ttu-id="444a9-142">例:</span><span class="sxs-lookup"><span data-stu-id="444a9-142">Example:</span></span>  
   

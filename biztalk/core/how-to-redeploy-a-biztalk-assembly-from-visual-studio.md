@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio から BizTalk アセンブリを再展開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio から BizTalk アセンブリを再展開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5c4bb627-48de-4874-bb25-af2c513dbc51
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009499"
 ---
 # <a name="how-to-redeploy-a-biztalk-assembly-from-visual-studio"></a><span data-ttu-id="5e37d-102">Visual Studio から BizTalk アセンブリを再展開する方法</span><span class="sxs-lookup"><span data-stu-id="5e37d-102">How to Redeploy a BizTalk Assembly from Visual Studio</span></span>
 <span data-ttu-id="5e37d-103">アセンブリの開発プロセスでは、展開、テスト、修正、再展開を繰り返し行うことがしばしば必要になります。</span><span class="sxs-lookup"><span data-stu-id="5e37d-103">In the process of developing an assembly, you often need to deploy, test, modify, and redeploy it repeatedly.</span></span> <span data-ttu-id="5e37d-104">以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バージョン番号を変更せずにアセンブリを再展開するには、まず [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でアセンブリに含まれるアイテムの停止、参加解除、バインド解除を手動で行い、次に BizTalk 管理 (構成) データベースからそのアセンブリを削除する必要がありました。</span><span class="sxs-lookup"><span data-stu-id="5e37d-104">In previous versions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], if you wanted to redeploy an assembly without changing the version number, you first needed to manually stop, unenlist, and unbind artifacts contained in the assembly in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and then remove the assembly from the BizTalk Management (configuration) database.</span></span> <span data-ttu-id="5e37d-105">さらに、アセンブリの再展開の後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でアイテムをバインドし、参加させ、開始する必要がありました。</span><span class="sxs-lookup"><span data-stu-id="5e37d-105">In addition, after redeploying the assembly, you needed to bind, enlist, and start its artifacts in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

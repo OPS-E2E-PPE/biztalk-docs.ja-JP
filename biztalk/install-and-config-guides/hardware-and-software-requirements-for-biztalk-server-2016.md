@@ -18,6 +18,7 @@ ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31816925"
 ---
 # <a name="hardware-and-software-requirements-for-biztalk-server-2016"></a><span data-ttu-id="d13c5-103">BizTalk Server 2016 のハードウェアとソフトウェアの要件</span><span class="sxs-lookup"><span data-stu-id="d13c5-103">Hardware and Software Requirements for BizTalk Server 2016</span></span>
 

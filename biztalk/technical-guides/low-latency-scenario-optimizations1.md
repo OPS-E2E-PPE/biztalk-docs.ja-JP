@@ -1,14 +1,14 @@
 ---
-title: "低待機時間シナリオ Optimizations1 |Microsoft ドキュメント"
-ms.custom: 
+title: 低待機時間シナリオ Optimizations1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd2a891a-ee4b-4542-b3ce-434e2a6474be
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009187"
 ---
 # <a name="low-latency-scenario-optimizations"></a><span data-ttu-id="9b310-102">低待機時間シナリオの最適化</span><span class="sxs-lookup"><span data-stu-id="9b310-102">Low-Latency Scenario Optimizations</span></span>
 <span data-ttu-id="9b310-103">既定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]低待機時間ではなく、スループットを最適化します。</span><span class="sxs-lookup"><span data-stu-id="9b310-103">By default, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is optimized for throughput rather than low-latency.</span></span> <span data-ttu-id="9b310-104">次の最適化が適用された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]テスト シナリオではこのガイドに使用します。</span><span class="sxs-lookup"><span data-stu-id="9b310-104">The following optimizations were applied to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] for the test scenario used for this guide.</span></span>  

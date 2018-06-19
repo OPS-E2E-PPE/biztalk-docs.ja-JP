@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256450"
 ---
 # <a name="information---display-extension-xml-file"></a><span data-ttu-id="7db94-102">情報 - 拡張 XML ファイルの表示</span><span class="sxs-lookup"><span data-stu-id="7db94-102">Information - Display Extension XML File</span></span>
 <span data-ttu-id="7db94-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="7db94-103">**Error Code**</span></span>  

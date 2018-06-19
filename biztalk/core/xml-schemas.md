@@ -1,14 +1,14 @@
 ---
-title: "XML スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: XML スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1ec364e7-866d-4164-be91-be75a40ce878
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008099"
 ---
 # <a name="xml-schemas"></a><span data-ttu-id="c4a13-102">XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="c4a13-102">XML Schemas</span></span>
 <span data-ttu-id="c4a13-103">XML スキーマは、XML で表されるビジネス ドキュメントの詳細情報を記述します。</span><span class="sxs-lookup"><span data-stu-id="c4a13-103">An XML schema describes a business document that is represented in XML.</span></span> <span data-ttu-id="c4a13-104">Microsoft BizTalk Server では、正規表現として XML を使用して、ビジネス ドキュメントのため受信および送信ドキュメントには、翻訳は不要です。</span><span class="sxs-lookup"><span data-stu-id="c4a13-104">Because Microsoft BizTalk Server uses XML as its canonical representation for business documents, inbound and outbound documents do not require any translation.</span></span> <span data-ttu-id="c4a13-105">また、すべてのスキーマで使用できる基本的なプロパティだけを使用して、XML スキーマを BizTalk エディターで作成できるので、スキーマ エディター拡張機能を有効にする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="c4a13-105">XML schemas can be created in BizTalk Editor using only the basic set of properties that are available within all schemas, and do not require any schema editor extensions to be enabled.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "UnenlistParties (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: UnenlistParties (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, parties
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, administering
 - administering, examples
 ms.assetid: a751a0fc-ca94-4610-a8aa-db3a24159334
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973472"
 ---
 # <a name="unenlistparties-biztalk-server-sample"></a><span data-ttu-id="6ae94-102">UnenlistParties (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="6ae94-102">UnenlistParties (BizTalk Server Sample)</span></span>
 <span data-ttu-id="6ae94-103">UnenlistParties サンプルは、展開された BizTalk Server アセンブリに関連付けられているすべてのパーティの参加を解除する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6ae94-103">The UnenlistParties sample demonstrates how to unenlist all of the parties associated with a deployed BizTalk Server assembly.</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="6ae94-130">ファイル UnenlistParties.exe を実行し、次の 2 つのコマンド ライン引数のいずれかを渡します。</span><span class="sxs-lookup"><span data-stu-id="6ae94-130">Run the file UnenlistParties.exe, passing one of the two following command-line arguments:</span></span>  
   
-    -   <span data-ttu-id="6ae94-131">**\<** ***AssemblyName* \>**です。</span><span class="sxs-lookup"><span data-stu-id="6ae94-131">**\<** ***AssemblyName* \>**.</span></span> <span data-ttu-id="6ae94-132">すべての関連パーティの参加を解除するアセンブリの名前。</span><span class="sxs-lookup"><span data-stu-id="6ae94-132">The name of an assembly from which all associated parties are to be unenlisted.</span></span> <span data-ttu-id="6ae94-133">アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。</span><span class="sxs-lookup"><span data-stu-id="6ae94-133">If the assembly name contains spaces, enclose the name in quotes.</span></span>  
+    -   <span data-ttu-id="6ae94-131">**\<** ***AssemblyName* \>** です。</span><span class="sxs-lookup"><span data-stu-id="6ae94-131">**\<** ***AssemblyName* \>**.</span></span> <span data-ttu-id="6ae94-132">すべての関連パーティの参加を解除するアセンブリの名前。</span><span class="sxs-lookup"><span data-stu-id="6ae94-132">The name of an assembly from which all associated parties are to be unenlisted.</span></span> <span data-ttu-id="6ae94-133">アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。</span><span class="sxs-lookup"><span data-stu-id="6ae94-133">If the assembly name contains spaces, enclose the name in quotes.</span></span>  
   
     -   <span data-ttu-id="6ae94-134">**/?.**</span><span class="sxs-lookup"><span data-stu-id="6ae94-134">**/?.**</span></span> <span data-ttu-id="6ae94-135">ヘルプを表示します。</span><span class="sxs-lookup"><span data-stu-id="6ae94-135">Displays help.</span></span>  
   
