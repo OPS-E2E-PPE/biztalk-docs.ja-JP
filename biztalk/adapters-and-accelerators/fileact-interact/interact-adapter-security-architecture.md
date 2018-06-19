@@ -1,14 +1,14 @@
 ---
-title: "アダプターのセキュリティ アーキテクチャを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのセキュリティ アーキテクチャを対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a4924b8c-1fda-4a0c-b9be-8f2ccba38013
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225362"
 ---
 # <a name="interact-adapter-security-architecture"></a>アダプターのセキュリティ アーキテクチャを対話します。
 メッセージの送信および受信確認のセキュリティは、SWIFTNet リンク (SNL) と SWIFTAlliance ゲートウェイ (SAG) に固有の証明書と暗号化の機能を使用して実装されます。 SWIFT では、サービスが、「エンド ツー エンド」署名の適用に対話するために設計されていることをお勧め、つまり、メッセージの要求と応答の両方に署名します。  

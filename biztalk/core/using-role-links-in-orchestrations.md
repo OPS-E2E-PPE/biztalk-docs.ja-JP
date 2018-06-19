@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでロール リンクの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでロール リンクの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - role links
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - role links, properties
 - role links, initializing
 ms.assetid: 0cf85544-12c9-4541-8925-61a6e946cce0
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288466"
 ---
 # <a name="using-role-links-in-orchestrations"></a>オーケストレーションでのロール リンクの使用
 ロール リンクは、オーケストレーションと取引先間の対話処理を抽象化したものです。 ロール リンクを使用すると、ビジネス プロセス全体を維持したまま、取引先の解決、メッセージの内容、またはデータベースの検索結果に基づいて取引先を動的に選択できます。  

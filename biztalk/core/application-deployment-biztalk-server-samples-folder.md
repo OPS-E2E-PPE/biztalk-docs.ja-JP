@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションの展開 (BizTalk Server Samples フォルダ) |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションの展開 (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, examples
 - examples, deploying
 ms.assetid: a583476e-7736-4804-8c85-8f951f757bfe
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230250"
 ---
 # <a name="application-deployment-biztalk-server-samples-folder"></a>アプリケーションの展開 (BizTalk Server Samples フォルダー)
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、アプリケーション展開のサンプルがいくつか付属しています。 このセクションでは、各サンプルで示されている機能、サンプルをビルドおよび実行する方法、および予想される実行結果について詳しく説明します。  

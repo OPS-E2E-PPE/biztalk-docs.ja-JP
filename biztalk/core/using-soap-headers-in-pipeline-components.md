@@ -1,11 +1,11 @@
 ---
-title: "パイプライン コンポーネントにおける SOAP ヘッダーの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントにおける SOAP ヘッダーの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP headers, code samples
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Web services, SOAP headers
 - creating, SOAP headers
 ms.assetid: 5b4a8902-e8f5-44a4-88f7-17f47a9deecd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287274"
 ---
 # <a name="using-soap-headers-in-pipeline-components"></a>パイプライン コンポーネントにおける SOAP ヘッダーの使用
 パイプライン コンポーネントでは、SOAP ヘッダー コンテキスト プロパティにアクセスするに使用するコンテキスト プロパティ名とターゲットの名前空間の組み合わせで説明したよう[オーケストレーションの SOAP ヘッダーを使用して](../core/using-soap-headers-in-orchestrations.md)です。  

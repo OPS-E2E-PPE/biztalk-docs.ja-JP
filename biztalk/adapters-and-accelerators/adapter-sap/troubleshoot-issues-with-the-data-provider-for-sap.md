@@ -1,17 +1,17 @@
 ---
-title: "Data Provider 用 SAP に関する問題のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Data Provider 用 SAP に関する問題のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for SAP, troubleshooting
 - troubleshooting, Data Provider for SAP
 ms.assetid: 6fe9baed-0404-4f15-b76e-88cc11c5ff46
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217986"
 ---
 # <a name="troubleshoot-issues-with-the-data-provider-for-sap"></a>Data Provider 用 SAP に関する問題をトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。  

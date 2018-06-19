@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK のアダプタのチャネルとサービス間の相違 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK のアダプタのチャネルとサービス間の相違 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24d41d96-0ea1-4a97-bd45-b65afdbbd923
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225010"
 ---
 # <a name="difference-between-adapter-channel-and-service-in-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK のアダプタのチャネルとサービス間の相違
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]と[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]各提供一連の Api を使用して、同じコンピューター上またはネットワーク経由でアプリケーションを使用するアプリケーションの機能を公開することができます。 最も適切なフレームワークを選択するには、公開されている機能のビジネス要件および公開する対象のシステム アプリケーションのプロパティを考慮する必要があります。 このトピックでは、適切なフレームワークを選択する際のガイドラインを提供します。  

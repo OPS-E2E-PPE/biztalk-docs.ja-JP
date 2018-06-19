@@ -1,14 +1,14 @@
 ---
-title: "手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acdc30e1-d80c-40bf-864d-bf136c77a2b8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225274"
 ---
 # <a name="step-2a-add-file-receive-locations-for-the-interact-store-and-forward-pull-scenario"></a>手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加
 この手順を開始する前に行う必要があります[手順 2: InterAct ストアと転送シナリオ Paramfile に SWIFTNet 構成を追加](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md)です。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
     |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**です。|  
     |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 10. 手順 1. と 2. を繰り返します。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
     |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**です。|  
     |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
   
-17. **[OK]**をクリックします。  
+17. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 2 b: InterAct ストア アンド フォワード (プル) シナリオの Sw:HandleRequest メッセージをキャプチャするファイルの送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270282"
 ---
 # <a name="receivelocation-receivelocations-node"></a>ReceiveLocation (ReceiveLocations ノード)
 バインド ファイルの ReceiveLocations ノードの ReceiveLocation ノードには、バインド ファイルと共にエクスポートされる受信場所に関する特定の情報が含まれます。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 |ReceiveLocationTransportTypeData|要素|xs:string|受信場所のトランスポートの種類のプロパティを指定します。|任意|既定値: 空<br /><br /> 参照してください[統合 BizTalk アダプターの構成プロパティ](../core/configuration-properties-for-integrated-biztalk-adapters.md)アダプター特定プロパティについては、この文字列に格納できます。|  
 |[ReceivePipeline](../core/receivepipeline-receivelocation-node.md)|レコード|PipelineRef (ComplexType)|受信場所の受信パイプラインを指定します。|必須|既定値: なし|  
 |ReceivePipelineData|要素|xs:string|この受信場所に使用する受信パイプラインに固有のカスタム構成を指定します。|必須|既定値: 空|  
-|[送信パイプライン](../core/sendpipeline-receivelocation-node.md)|レコード|PipelineRef (ComplexType)|双方向受信場所の送信パイプラインを指定します。 **注:**で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パイプライン双方向受信用は指定された受信場所ではなく、受信ポートに送信します。 バインド ファイルで指定されていない場合、受信場所は、属する受信ポートの送信パイプラインを自動的に継承します。|必須|既定値: なし|  
+|[送信パイプライン](../core/sendpipeline-receivelocation-node.md)|レコード|PipelineRef (ComplexType)|双方向受信場所の送信パイプラインを指定します。 **注:** で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パイプライン双方向受信用は指定された受信場所ではなく、受信ポートに送信します。 バインド ファイルで指定されていない場合、受信場所は、属する受信ポートの送信パイプラインを自動的に継承します。|必須|既定値: なし|  
 |SendPipelineData|要素|xs:string|この受信場所に使用する送信パイプラインに固有のカスタム構成を指定します。|必須|既定値: 空|  
 |[EncryptionCert](../core/encryptioncert-receivelocation-node.md)|レコード|CertificateInfo (ComplexType)|この受信場所に関連付けられた暗号化証明書を指定します。|任意|既定値: なし|  
 |[有効化]|要素|xs:boolean|受信場所が有効かどうかを指定します。|必須|既定値: なし|  

@@ -1,15 +1,15 @@
 ---
-title: "Biztalk wcf-custom アダプタと SQL アダプタを使用してポートを構成する |Microsoft ドキュメント"
-description: "Wcf-custom 送信を作成し、BizTalk Server で SQL Server のアダプターを使用する受信ポート"
-ms.custom: 
+title: Biztalk wcf-custom アダプタと SQL アダプタを使用してポートを構成する |Microsoft ドキュメント
+description: Wcf-custom 送信を作成し、BizTalk Server で SQL Server のアダプターを使用する受信ポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d44d9932-0a5e-4072-a480-2f8dc544ca79
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226034"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sql-adapter"></a>Wcf-custom アダプタと SQL アダプタを使用してポートを構成します。
 Wcf-custom 送信ポートと受信ポートを使用して SQL サーバーの送信および受信の操作を実行する手順、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
@@ -42,7 +43,7 @@ Wcf-custom 送信ポートと受信ポートを使用して SQL サーバーの�
   
 7.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
     2.  **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)各操作のアクションの一覧についてはします。 たとえば、SQL Server データベース内のテーブルに対する挿入操作を呼び出すアクションは。  
   
@@ -78,7 +79,7 @@ Wcf-custom 送信ポートと受信ポートを使用して SQL サーバーの�
   
     2.  **受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 ## <a name="deploy-adapters-to-receive-messages-from-sql-server"></a>SQL Server からメッセージを受信アダプターを展開します。
  次の実行 Wcf-custom を構成する手順を使用して SQL サーバーからメッセージを受信するためのポートの受信、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
@@ -103,7 +104,7 @@ Wcf-custom 送信ポートと受信ポートを使用して SQL サーバーの�
   
 8.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
     2.  クリックして、**バインド** タブとの間、**バインディングの種類**ドロップダウン リストで、 **sqlBinding**です。 によって公開されている別のバインディング プロパティを指定することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 バインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  
   

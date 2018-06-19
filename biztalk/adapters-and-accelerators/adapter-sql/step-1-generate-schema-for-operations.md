@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 操作のスキーマを生成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 操作のスキーマを生成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63218a5e-9af2-40af-9992-ac5e204d2832
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224962"
 ---
 # <a name="step-1-generate-schema-for-operations"></a>手順 1: 操作のスキーマを生成します。
 ![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **所要時間:** 5 分  
   
- **目標:**で SQL Server データベースを使用して、実行する操作のスキーマを生成するこの手順で、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 このチュートリアルでは、次のスキーマを生成する必要があります。  
+ **目標:** で SQL Server データベースを使用して、実行する操作のスキーマを生成するこの手順で、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 このチュートリアルでは、次のスキーマを生成する必要があります。  
   
 -   **通知**(受信操作)。  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  スキーマを生成、**通知**操作を受信します。  
   
-    1.  ADAPTER_SAMPLES データベースに接続した後、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]から、**選択コントラクト型**一覧で、選択**サービス (入力方向の操作)**です。  
+    1.  ADAPTER_SAMPLES データベースに接続した後、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]から、**選択コントラクト型**一覧で、選択**サービス (入力方向の操作)** です。  
   
     2.  **カテゴリを選択**ボックスで、ルート ノードをクリックして (**/**)。  
   
-    3.  **利用可能なカテゴリと操作**ボックスで、**通知** をクリック**追加**です。 **通知**操作が表示されます、**カテゴリと操作を追加**ボックス。 **[OK]**をクリックします。  
+    3.  **利用可能なカテゴリと操作**ボックスで、**通知** をクリック**追加**です。 **通知**操作が表示されます、**カテゴリと操作を追加**ボックス。 **[OK]** をクリックします。  
   
 4.  スキーマを生成、 **UPDATE_EMPLOYEE**でストアド プロシージャと挿入操作**Purchase_Order**テーブル。  
   
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  同時に受信および送信操作のスキーマを生成することはできません。 そのため、手順 3. をクリックした後**OK**のスキーマを生成する**通知**操作、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を閉じます。 送信操作のスキーマを生成する SQL Server データベースに再接続する必要があります。  
   
-    2.  **選択コントラクト型**一覧で、選択**クライアント (送信操作)**です。  
+    2.  **選択コントラクト型**一覧で、選択**クライアント (送信操作)** です。  
   
     3.  **カテゴリを選択**ボックスで、クリックして、 **Strongly-Typed プロシージャ**ノード。 **利用可能なカテゴリと操作**s ボックスで、 **UPDATE_EMPLOYEE**、クリックして**追加**です。  
   

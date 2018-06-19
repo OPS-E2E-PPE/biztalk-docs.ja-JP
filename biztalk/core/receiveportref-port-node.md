@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268482"
 ---
 # <a name="receiveportref-port-node"></a>ReceivePortRef (Port ノード)
 バインド ファイルの Port ノードの ReceivePortRef ノードは、サービスによって参照される受信ポートに関する情報を指定します。  

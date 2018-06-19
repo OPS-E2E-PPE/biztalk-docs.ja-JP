@@ -1,14 +1,14 @@
 ---
-title: "FileAct アダプターとは何ですか。 | Microsoft Docs"
-ms.custom: 
+title: FileAct アダプターとは何ですか。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05ec8f1e-57f9-4e2d-ab8b-22b5c4b28055
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225322"
 ---
 # <a name="what-is-the-fileact-adapter"></a>FileAct アダプターとは何ですか。
 SWIFTNet の FileAct アダプターは、ファイルを転送するための世界銀行間財務通信 (SWIFT) セキュリティで保護された IP ネットワーク (SIPN) の BizTalk Server と、Society 間の接続に提供します。 SIPN は、金融機関、金融業界インフラストラクチャ、および顧客を接続するセキュリティで保護されたプライベート ネットワーク経由でメッセージとファイルを転送します。 FileAct アダプターは、SWIFTNet リンク (SNL) アプリケーション プログラミング インターフェイス (API) s、SIPN への接続に使用します。  

@@ -1,14 +1,14 @@
 ---
-title: "アグリーメントの解決は、プロトコルが失敗しましたコンテキスト プロパティに基づく |。Microsoft ドキュメント"
-ms.custom: 
+title: アグリーメントの解決は、プロトコルが失敗しましたコンテキスト プロパティに基づく |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58fccd84-579c-4b5e-872b-33730d4079e8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229938"
 ---
 # <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a>プロトコルに対するコンテキスト プロパティに基づくアグリーメントの解決が失敗しました
 ## <a name="details"></a>詳細  

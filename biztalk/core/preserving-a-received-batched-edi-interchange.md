@@ -1,14 +1,14 @@
 ---
-title: "バッチ EDI インターチェンジを受信した保持 |Microsoft ドキュメント"
-ms.custom: 
+title: バッチ EDI インターチェンジを受信した保持 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10d21b9b-9684-422a-8948-8bd71a4d5a10
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265682"
 ---
 # <a name="preserving-a-received-batched-edi-interchange"></a>受信したバッチ EDI インターチェンジの保存
 > [!NOTE]
 >  このトピックに記載されているすべてのユーザー インターフェイス オプションで使用できる、**ローカル ホスト設定**ページ (**受信者の設定**セクション) で双方向アグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。  
   
- EDI 受信パイプラインが受信バッチ EDI インターチェンジを保存する場合、各トランザクション セットまたはメッセージを別々の中間 XML ファイルに解析する通常の処理は実行されません。 EDI 受信パイプラインは、インターチェンジをトランザクション セットまたはメッセージに分割せず、1 つのドキュメントとして処理します。 これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または**- インターチェンジの保存時にトランザクション セットを中断エラー**です。  
+ EDI 受信パイプラインが受信バッチ EDI インターチェンジを保存する場合、各トランザクション セットまたはメッセージを別々の中間 XML ファイルに解析する通常の処理は実行されません。 EDI 受信パイプラインは、インターチェンジをトランザクション セットまたはメッセージに分割せず、1 つのドキュメントとして処理します。 これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または **- インターチェンジの保存時にトランザクション セットを中断エラー**です。  
   
  **スキーマの検証**  
   

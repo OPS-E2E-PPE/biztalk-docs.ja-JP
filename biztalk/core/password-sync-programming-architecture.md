@@ -1,14 +1,14 @@
 ---
-title: "パスワード同期のプログラミング アーキテクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: パスワード同期のプログラミング アーキテクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 679edbf1-fb08-4472-b366-3e1d361b20e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264674"
 ---
 # <a name="password-sync-programming-architecture"></a>パスワード同期のプログラミング アーキテクチャ
 パスワード同期アダプターが、エンタープライズ シングル サインオン システムの残りの部分と対話するためにプル モデルを使用します。 つまり、アクティブに受信パスワードの変更、エンタープライズ シングル サインオン (ENTSSO) サービスおよび Windows 以外のシステムからもします。 同様に、このアダプターは、あるシステムから別のシステムへ受け取ったパスワードの変更をプッシュします。 このモデルで、アダプターと連携 3 つのアーキテクチャ コンポーネント: ENTSSO アーキテクチャ、パスワード同期 (PS) ヘルパー コンポーネント、および指定した非 Windows システムです。  

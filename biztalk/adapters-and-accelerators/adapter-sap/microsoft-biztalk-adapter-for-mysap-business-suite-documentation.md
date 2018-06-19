@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Adapter 用 mySAP Business Suite ドキュメント |Microsoft ドキュメント"
-description: "取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack での mySAP アダプターのトラブルシューティングを行う"
-ms.custom: 
+title: Microsoft BizTalk Adapter 用 mySAP Business Suite ドキュメント |Microsoft ドキュメント
+description: 取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack での mySAP アダプターのトラブルシューティングを行う
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 26b728d7-f1e9-470a-aba5-10c9f53e2d2b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217370"
 ---
 # <a name="microsoft-biztalk-adapter-for-mysap-business-suite-documentation"></a>Microsoft BizTalk Adapter 用 mySAP Business Suite ドキュメント
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]さまざまなしくみを理解、アダプター、アダプターを使用して、別の接続オプションについて説明するアプリケーションを作成する方法、やアプリケーションを作成する方法を学習するのに役立つリソースが含まれています。

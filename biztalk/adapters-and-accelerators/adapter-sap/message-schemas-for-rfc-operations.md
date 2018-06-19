@@ -1,17 +1,17 @@
 ---
-title: "RFC 操作のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: RFC 操作のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RFC operations, message structure for
 - RFC operations, message actions for
 ms.assetid: 50cd9b28-2e66-4c76-9d19-f0da6e7b8e10
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217306"
 ---
 # <a name="message-schemas-for-rfc-operations"></a>RFC 操作のメッセージ スキーマ
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]操作として SAP リモート関数呼び出し (RFC) を表示します。 このトピックには、メッセージ スキーマおよび RFC 操作に使用されるメッセージのアクションに関する情報が含まれています。 メッセージの構造は、着信および発信の RFC 操作に対して同じです。 アダプタでは、RFC 操作の概要については、次を参照してください。 [SAP Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)です。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 |メッセージ|XML メッセージの構造体|Description|  
 |-------------|---------------------------|-----------------|  
 |RFC<br /><br /> ([RFC_NAME])|`<[RFC_NAME] xmlns="[VERSION]/Rfc/">   <IN1_PARAM_NAME>v1</IN1_PARAM_NAME>   <IN2_PARAM_NAME>v2</IN2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Rfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]>`|SAP システムで RFC を呼び出します。<br /><br /> に変更するインポートしてテーブル パラメーターがサポートされます。<br /><br /> -インポートし、SAP 構造体の型、SAP テーブル型または SAP 単純なデータ型のパラメーターを変更できます。|  
-|RFC 応答 ([RFC_NAME] 応答)。|`<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`|RFC を返します。<br /><br /> エクスポートする、変更するとテーブルのパラメーターがサポートされます。<br /><br /> **注:**応答メッセージに表示されませんテーブル パラメーター既定では、します。 応答メッセージ内のテーブルのパラメーターを必要とする場合は、要求メッセージ内で空のテーブルのパラメーターを渡す必要があります。<br /><br /> -インポートし、SAP 構造体の型、SAP テーブル型または SAP 単純なデータ型のパラメーターを変更できます。|  
+|RFC 応答 ([RFC_NAME] 応答)。|`<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`|RFC を返します。<br /><br /> エクスポートする、変更するとテーブルのパラメーターがサポートされます。<br /><br /> **注:** 応答メッセージに表示されませんテーブル パラメーター既定では、します。 応答メッセージ内のテーブルのパラメーターを必要とする場合は、要求メッセージ内で空のテーブルのパラメーターを渡す必要があります。<br /><br /> -インポートし、SAP 構造体の型、SAP テーブル型または SAP 単純なデータ型のパラメーターを変更できます。|  
 |RfcGetAttributes<br /><br /> (RfcGetAttributes)|`<RfcGetAttributes> </RfcGetAttributes>`|RfcGetAttributes は RFC SDK の API 操作によって提示されるを[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 RfcGetAttributes 操作を使用すると、クライアント プログラムが、言語、システム ID、および RFC 接続に関連付けられているパートナーのコード ページを取得します。|  
 |RfcGetAttributes 応答<br /><br /> (RfcGetAttributesResponse)|`<RfcGetAttributesResponse>   <Language>lang</Language>   <SysId>id</SysId>   <PartnerCodePage>pnrcp</PartnerCodePage> </RfcGetAttributesResponse>`|RfcGetAttributes 操作に対する応答は、言語、システム ID、および RFC 接続に関連付けられているパートナーのコード ページを返します。|  
   

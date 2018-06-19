@@ -1,14 +1,14 @@
 ---
-title: "BizTalk FileAct アダプター エンド ツー エンドのチュートリアルの対話と |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk FileAct アダプター エンド ツー エンドのチュートリアルの対話と |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2015-12-10
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73fbfb10-73e8-4365-a943-bcb9055f4f74
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222962"
 ---
 # <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a>BizTalk FileAct と対話するアダプターのエンド ツー エンドのチュートリアル
 The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]エンド ツー エンドのチュートリアルを使用する方法に関する情報を提供する[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]をリアルタイムに設定し、格納、およびメッセージ交換のシナリオを転送します。  

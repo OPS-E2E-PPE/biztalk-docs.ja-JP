@@ -1,14 +1,14 @@
 ---
-title: "手順 3: ファイルの受信場所が、対話ストアと転送シナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: ファイルの受信場所が、対話ストアと転送シナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5f4bae51-6869-4334-a3a1-ef7e662197ca
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224178"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-interact-store-and-forward-scenario"></a>手順 3: ファイルの受信場所が、対話ストアと転送シナリオの追加
 完全な[手順 2: InterAct ストアと転送シナリオ Paramfile に SWIFTNet 構成を追加](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md)この手順を開始する前にします。
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
     |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**です。|  
     |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ## <a name="complete-steps"></a>詳細な手順
  [手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   

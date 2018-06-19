@@ -1,17 +1,17 @@
 ---
-title: "Siebel ビジネス サービスに対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel ビジネス サービスに対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations, on business services
 - business services, operations on
 ms.assetid: 29a1a88c-8c7b-46f1-8faf-49ddd32ba2f0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221946"
 ---
 # <a name="operations-on-business-services-in-siebel"></a>Siebel ビジネス サービスに対する操作
 Siebel ビジネス サービスは、Siebel の直接呼び出すことができるビジネス メソッドのコレクションです。 ビジネス コンポーネントとビジネス オブジェクトは、特定のデータと Siebel のテーブルに関連付けられているは、ビジネス サービスは、特定のタスクを実行するオブジェクトを呼び出します。  

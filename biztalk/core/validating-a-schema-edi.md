@@ -1,14 +1,14 @@
 ---
-title: "スキーマ (EDI) の検証 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ (EDI) の検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6175460-2dcf-4fef-b770-02f0a058bf93
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287786"
 ---
 # <a name="validating-a-schema-edi"></a>スキーマの検証 (EDI)
 デザイン時に EDI スキーマを検証できます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。 スキーマの検証操作では、EDI ルールに基づいてスキーマの検証が行われます。 スキーマを検証するために入力メッセージ インスタンスを指定する必要はありません。  

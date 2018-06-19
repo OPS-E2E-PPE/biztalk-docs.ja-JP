@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269018"
 ---
 # <a name="sample-biztalk-server-architectures"></a>BizTalk Server のサンプル アーキテクチャ
 Microsoft® BizTalk® Server 環境に最大限のセキュリティを提供するために、BizTalk Server に含まれているデータとサービスの重要度、および攻撃者がサーバーに侵入した場合に生じる影響に基づいて、BizTalk Server を分散するアーキテクチャを使用することをお勧めします。  

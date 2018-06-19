@@ -1,11 +1,11 @@
 ---
-title: "XML 逆アセンブラーで認識されないメッセージのパイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: XML 逆アセンブラーで認識されないメッセージのパイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Allow Unrecognized Messages property
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipeline components, XML Disassembler
 - XML Disassembler [pipeline component], unrecognized messages
 ms.assetid: 5a6be3a8-0bac-426a-bf0b-5091191091de
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286746"
 ---
 # <a name="unrecognized-messages-in-the-xml-disassembler-pipeline-component"></a>XML 逆アセンブラー パイプライン コンポーネントで認識されないメッセージ
 次のような場合、XML 逆アセンブラー コンポーネントで、メッセージが "認識されないメッセージ" として処理されます。  

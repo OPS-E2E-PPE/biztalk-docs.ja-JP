@@ -1,11 +1,11 @@
 ---
-title: "送信ポートおよび送信ポート グループ |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートおよび送信ポート グループ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, states
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - send port groups, about send port groups
 - states, send ports
 ms.assetid: 274bdd27-9098-46a2-8762-8b57bbfc95b8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271826"
 ---
 # <a name="send-ports-and-send-port-groups"></a>送信ポートと送信ポート グループ
 A*送信ポート*Microsoft BizTalk Server がメッセージを送信する先の場所は、または元となる BizTalk Server がメッセージを受信します。 また、BizTalk Server は送信ポートの機能を使用して、通信アクションを実装します。 この場所は、ポートの名前により一意に識別されます。  

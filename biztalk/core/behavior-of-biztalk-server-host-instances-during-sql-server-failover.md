@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時の動作 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時の動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5642417-d27f-4539-a369-5fa11bec4a4f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231250"
 ---
 # <a name="behavior-of-biztalk-server-host-instances-during-sql-server-failover"></a>SQL Server フェールオーバー時の BizTalk Server ホスト インスタンスの動作
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のクラスター化インスタンスに格納されている [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベースは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] のクラスター化インスタンスにフェールオーバーが発生した場合、一時的に使用できなくなります。 このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースが使用できなくなった場合の、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に関連するホスト インスタンスの動作について説明します。  

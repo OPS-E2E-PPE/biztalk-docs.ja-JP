@@ -1,11 +1,11 @@
 ---
-title: "シナリオ: 複数のコンピューター間でのアイテムの分散 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シナリオ: 複数のコンピューター間でのアイテムの分散 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [artifacts], multiple computers
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - deploying [artifacts], examples
 - examples, deploying
 ms.assetid: 7000cded-1fda-4276-b7f3-3f427f686f64
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269162"
 ---
 # <a name="scenario-distributing-artifacts-among-multiple-computers"></a>シナリオ: 複数のコンピューター間での成果物を配布します。
 このトピックでは、アプリケーション内のアイテムを、別々のコンピューターに選択的にインストールする場合のアプリケーション展開シナリオについて説明します。 これを行うのは、アプリケーション内の特定のアセンブリまたはその他の種類のアイテムを、BizTalk グループ内の特定のコンピューターにのみインストールする場合です。 そのためには、アプリケーションに含まれているアイテムを、物理コンピューターに同時にインストールするアイテムに応じて、複数の .msi ファイルにエクスポートします。  

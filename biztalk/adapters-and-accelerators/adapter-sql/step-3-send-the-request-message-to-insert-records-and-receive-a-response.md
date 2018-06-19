@@ -1,14 +1,14 @@
 ---
-title: "手順 3: レコードを挿入し、応答を受信する要求メッセージの送信 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: レコードを挿入し、応答を受信する要求メッセージの送信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a8a8906-7c7d-437c-9f04-345ad4ac460e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224090"
 ---
 # <a name="step-3-send-the-request-message-to-insert-records-and-receive-a-response"></a>手順 3: レコードを挿入し、応答を受信する要求メッセージを送信します。
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 10 分  
   
- **目標:**にレコードを挿入する要求メッセージを送信するこの手順で、 **Purchase_Order**テーブルが表示され、応答を受信します。  
+ **目標:** にレコードを挿入する要求メッセージを送信するこの手順で、 **Purchase_Order**テーブルが表示され、応答を受信します。  
   
 ## <a name="prerequisites"></a>前提条件  
  完了する必要があります[手順 2: 挿入操作の要求メッセージに UPDATE_EMPLOYEE 応答メッセージをマップ](../../adapters-and-accelerators/adapter-sql/step-2-map-update_employee-response-to-insert-operation-request.md)です。  

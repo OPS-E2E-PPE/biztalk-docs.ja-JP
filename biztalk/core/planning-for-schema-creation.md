@@ -1,14 +1,14 @@
 ---
-title: "スキーマの作成の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの作成の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4ecb9154-b457-4209-b9b9-572c186bf5e7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264642"
 ---
 # <a name="planning-for-schema-creation"></a>スキーマの作成の計画
 スキーマは、メッセージのインスタンスがその定義に準拠しているかどうかを検証したり、異なる形式 (XML と非 XML) のインスタンス メッセージを相互に変換するための方法を定義したり、あるいは、特定の構造を持つ XML インスタンス メッセージを、それとは別の構造を持つ XML インスタンス メッセージに変換する方法を定義したりする場合に使用されます。 インスタンス メッセージの変換とインスタンス メッセージの変換の違いの詳細については、次を参照してください。[変換 vs です。翻訳](../core/data-transformation.md)です。  

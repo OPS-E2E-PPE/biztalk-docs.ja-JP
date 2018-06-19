@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタ チュートリアル |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタ チュートリアル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ecebca37-b26a-49d5-ae19-2936c8010d50
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222482"
 ---
 # <a name="sql-adapter-tutorials"></a>SQL アダプタ チュートリアル
 最初の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]チュートリアルには、WCF ベースを使用する、SQL アダプターの以前のバージョンを使用して作成された BizTalk プロジェクトを移行する方法の詳細な手順が含まれています。[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 他の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]が含まれている手順を使用して SQL サーバーに対する操作の実行については、ステップ バイ ステップ シナリオ ベースの[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  

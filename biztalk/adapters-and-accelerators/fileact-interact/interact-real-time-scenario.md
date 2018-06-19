@@ -1,14 +1,14 @@
 ---
-title: "リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: リアルタイムのシナリオを対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc73c84b-3361-41b0-b1b3-dc3c2ab31ccc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223114"
 ---
 # <a name="interact-real-time-scenario"></a>リアルタイムのシナリオを対話します。
 このシナリオでは、メッセージを処理するリアルタイムで InterAct アダプターを構成します。 現金レポートなど、SWIFT ソリューション シナリオで使用することができます。 詳細については、SWIFT Web サイトを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=100479](http://go.microsoft.com/fwlink/?LinkId=100479)です。  

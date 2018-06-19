@@ -1,14 +1,14 @@
 ---
-title: "手順 4 b: 送信ポートの開始し、受信ポートを InterAct ストアと転送シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 b: 送信ポートの開始し、受信ポートを InterAct ストアと転送シナリオ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7b0ecd4-ea08-4567-80bd-14f465ba4867
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224426"
 ---
 # <a name="step-4b-start-the-send-ports-and-receive-ports-for-the-interact-store-and-forward-scenario"></a>手順 4 b: 送信ポートの開始し、受信ポートを InterAct ストアと転送シナリオ
 この手順を開始する前に行う必要があります[手順 4A: InterAct ストア アンド フォワードのシナリオの SWIFTNet サービス起動](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-interact-store-and-forward-scenario.md)です。  

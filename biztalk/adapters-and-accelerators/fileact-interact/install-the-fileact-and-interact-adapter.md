@@ -1,14 +1,14 @@
 ---
-title: "FileAct をインストールし、アダプターの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: FileAct をインストールし、アダプターの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf387d59-373b-4151-9dfd-30c511978862
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224170"
 ---
 # <a name="install-the-fileact-and-interact-adapter"></a>FileAct をインストールし、アダプターの対話
 このセクションをインストールする手順を説明[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]– for SWIFT です。 アダプターをインストールする前に、前提条件のソフトウェアをインストールする必要があります。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 1. 実行、 **Setup.exe**管理者は、インストールを開始します。  
   
-2.  **[インストール]**を選択します。  
+2.  **[インストール]** を選択します。  
   
 3.  ユーザー名と組織名を入力し、**次**です。  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
 6.  **概要**] ページで、[**インストール**コンポーネントの一覧をインストールします。  
   
     > [!NOTE]
-    >  ときに**構成ウィザードの実行**がオン (既定)、 **Microsoft BizTalk FileAct およびアダプター構成の対話**を選択するときに、ウィザードが自動的に実行されます**[完了]**.  
+    >  ときに**構成ウィザードの実行**がオン (既定)、 **Microsoft BizTalk FileAct およびアダプター構成の対話**を選択するときに、ウィザードが自動的に実行されます **[完了]**.  
   
 7. インストールが完了したら、選択**完了**です。 
 

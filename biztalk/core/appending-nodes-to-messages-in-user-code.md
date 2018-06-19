@@ -1,17 +1,17 @@
 ---
-title: "ユーザー コード内のメッセージにノードを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー コード内のメッセージにノードを追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, nodes
 - messages, cloning
 ms.assetid: 636e0064-095e-49d1-850f-eaee0f0ffe77
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229978"
 ---
 # <a name="appending-nodes-to-messages-in-user-code"></a>ユーザー コード内のメッセージにノードを追加します。
 BizTalk Server でのメッセージの処理方法により、新しいノードを既存のメッセージに直接追加することは単純にはできません。 代わりに、次のように既存のメッセージを複製する必要があります。  

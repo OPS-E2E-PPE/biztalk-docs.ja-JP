@@ -1,14 +1,14 @@
 ---
-title: "POP3 アダプターでメッセージの処理のマルチパート |Microsoft ドキュメント"
-ms.custom: 
+title: POP3 アダプターでメッセージの処理のマルチパート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 56ad041f-f155-4c1c-ab87-1405c80d9b68
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266442"
 ---
 # <a name="processing-multi-part-messages-with-the-pop3-adapter"></a>POP3 アダプタでのマルチパート メッセージの処理
 POP3 アダプターに記載された IETF 標準に準拠する MIME でエンコードされたメッセージを処理できる[RFC 2045](http://go.microsoft.com/fwlink/?LinkId=58810)、 [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=58811)、および[RFC 2047](http://go.microsoft.com/fwlink/?LinkId=58812)です。 MIME エンコード メッセージは、コンテンツの種類が異なる 1 つ以上の部分を含めることができます。 このトピックでは、POP3 アダプタがマルチパートの MIME エンコード メッセージを処理する方法について説明します。  

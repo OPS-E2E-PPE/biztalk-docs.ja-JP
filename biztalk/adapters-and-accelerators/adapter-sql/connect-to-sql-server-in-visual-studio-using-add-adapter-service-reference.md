@@ -1,14 +1,14 @@
 ---
-title: "SQL への接続で Visual Studio を使用して Server プラグインのアダプター サービス参照の追加 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL への接続で Visual Studio を使用して Server プラグインのアダプター サービス参照の追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3fc3b824-d20b-4531-81f3-89b4a1ff3216
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226538"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>SQL への接続で Visual Studio を使用して Server プラグインのアダプター サービス参照の追加
 使用して SQL サーバーに接続する、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] .NET プログラミング ソリューションで使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 このトピックでは、使用する方法の説明、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**なし**|Windows 認証を使用して SQL Server に接続します。|  
     |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
   
 4.  クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
@@ -55,9 +56,9 @@ ms.lasthandoff: 09/20/2017
   
 5.  クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
-7.  **[接続]**をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
+7.  **[接続]** をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
   
      次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。 グラフィカル ユーザー インターフェイスが同じ、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
   

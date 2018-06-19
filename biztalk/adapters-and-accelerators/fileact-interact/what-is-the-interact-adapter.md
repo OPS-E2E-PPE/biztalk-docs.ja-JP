@@ -1,14 +1,14 @@
 ---
-title: "アダプターを操作しますか? | Microsoft Docs"
-ms.custom: 
+title: アダプターを操作しますか? | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a09063df-c6c4-41b9-96a1-e5059777fa72
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224754"
 ---
 # <a name="what-is-the-interact-adapter"></a>アダプターを操作しますか?
 対話 SWIFTNet のアダプタでは、メッセージの転送を BizTalk Server と SWIFT セキュリティで保護された IP ネットワーク (SIPN) 間の接続を提供します。 SIPN は、金融機関、金融業界インフラストラクチャ、および顧客の相互接続をセキュリティで保護されたプライベート ネットワーク経由でメッセージとファイルを転送します。 InterAct アダプターは、SWIFTNet リンク (SNL) アプリケーション プログラミング インターフェイス (API) s、SIPN への接続に使用します。  

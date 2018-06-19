@@ -1,11 +1,11 @@
 ---
-title: "サンプル シナリオの脅威モデル分析 |Microsoft ドキュメント"
-ms.custom: 
+title: サンプル シナリオの脅威モデル分析 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - TMA, security
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - TMA, examples
 - examples, TMA
 ms.assetid: e35d1d7f-a71a-42f5-b1f4-fe3234ba7686
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269114"
 ---
 # <a name="sample-scenarios-for-threat-model-analysis"></a>脅威モデル分析のサンプル シナリオ
 このセクションで識別される、サンプル アーキテクチャの各使用シナリオの手順を実行し、脅威モデル分析 (TMA) の結果を示します[小さな & Medium-Sized 企業向けのサンプル アーキテクチャ](../core/sample-architectures-for-small-medium-sized-companies.md)です。 このセクションの目的は、TMA の手順を示すことです。 TMA の動作を理解するのに役立ち、サンプル アプリケーションで特定された潜在的な脅威、およびその脅威の影響を軽減するための推奨方法についての説明もあります。  

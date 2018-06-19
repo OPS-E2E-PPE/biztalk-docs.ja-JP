@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して Oracle データベースの変更通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して Oracle データベースの変更通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 495a29bc-72f6-4140-8160-0b917d935503
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215226"
 ---
 # <a name="receive-oracle-database-change-notifications-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースの変更通知を受信します。
 構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからデータベース変更の通知メッセージを受信します。 Oracle データベースがある通知に対して、アダプターを登録に使用する SELECT ステートメントを指定することができます。 通知の登録、SELECT ステートメントの結果セットが変更されたときに通知メッセージを受信します。 アダプターで通知をサポートする方法の詳細については、次を参照してください。[データベースの変更通知の受信、Oracle データベース アダプターの使用に関する考慮事項](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)です。  

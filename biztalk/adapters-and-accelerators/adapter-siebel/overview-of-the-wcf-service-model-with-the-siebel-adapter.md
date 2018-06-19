@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターと WCF サービス モデルの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターと WCF サービス モデルの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, invoke operations on the Siebel system with a WCF client
 - WCF service model, overview of
 ms.assetid: 0e812473-0f50-4972-8b07-ec8edc2ef000
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222114"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-siebel-adapter"></a>Siebel アダプターと WCF サービス モデルの概要
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を WCF サービスとしての Siebel システムを公開します。 Siebel ビジネス サービスのメソッドを呼び出す例については、Siebel システムのアイテムに対して操作を実行するには、さらに、Siebel システムで操作を実行すると、アダプターでの操作を呼び出します。 したがって、コードは、アダプターによって提示される WCF サービスのクライアントとして機能します。  

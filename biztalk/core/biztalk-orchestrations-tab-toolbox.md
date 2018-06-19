@@ -1,11 +1,11 @@
 ---
-title: "BizTalk オーケストレーション タブ、ツールボックス |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk オーケストレーション タブ、ツールボックス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Clipboard Ring tab [Visual Studio]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Toolbox [Visual Studio]
 - Visual Studio Toolbox
 ms.assetid: 3af1141e-74e9-4e71-b879-354b03ff9ae7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230770"
 ---
 # <a name="biztalk-orchestrations-tab-toolbox"></a>BizTalk オーケストレーション タブ、ツールボックス
 オーケストレーション デザイナーを使用するプロジェクトを開く (、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーション)、ツールボックスにも表示されます、 **BizTalk オーケストレーション**タブです。このタブで、ツールと呼ばれる*図形*が表示され、使用できるときに使用、 **BizTalk オーケストレーション**タブを展開します。  

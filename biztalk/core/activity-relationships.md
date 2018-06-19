@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225234"
 ---
 # <a name="activity-relationships"></a>アクティビティの関係
 アクティビティ リレーションシップは、アクティビティが他の 1 つまたは複数のアクティビティに関連している場合に存在します。 この例として、単一の発注アクティビティに複数の出荷アクティビティが関連している場合や、単一の出荷アクティビティに 2 つの発注アクティビティの項目が含まれている場合などが挙げられます。  

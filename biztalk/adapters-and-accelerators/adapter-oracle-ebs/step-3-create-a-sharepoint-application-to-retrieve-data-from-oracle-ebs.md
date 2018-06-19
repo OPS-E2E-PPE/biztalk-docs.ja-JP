@@ -1,14 +1,14 @@
 ---
-title: "手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eaa16011-9284-4ccf-8132-9c1e14cc6aa7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217202"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-e-business-suite"></a>手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成します。
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 15 分  
   
- **目標:**今すぐ Microsoft Office SharePoint Server にアプリケーション定義ファイルをインポートし、Oracle E-business Suite からデータを取得するアプリケーションを設定する必要があります。  
+ **目標:** 今すぐ Microsoft Office SharePoint Server にアプリケーション定義ファイルをインポートし、Oracle E-business Suite からデータを取得するアプリケーションを設定する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  Employee.xml、[参照] を開くと、アプリケーション定義のインポート ページで、ファイルを選択し、をクリックして**開く**です。  
   
-5.  **[インポート]**をクリックします。  
+5.  **[インポート]** をクリックします。  
   
 6.  アプリケーション定義ファイルが正常にインポートされると、クリックして**OK**です。  
   

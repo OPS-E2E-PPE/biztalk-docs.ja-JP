@@ -1,14 +1,14 @@
 ---
-title: "手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマの生成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマの生成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab0bc1a7-8bcd-4110-88e6-4eddf0b57068
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279322"
 ---
 # <a name="step-5-on-premises-generate-the-schema-for-inserting-a-message-inito-salesorder-table"></a>手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマを生成します。
 ビジネス シナリオに従って、X12 販売注文メッセージは、Contoso から送信される必要があります挿入される Northwind の**SalesOrder**テーブルの場合は、注文、数量が 100 より大きい。 メッセージを挿入する、 **SalesOrder**テーブルのスキーマを生成する必要があります、**挿入**テーブルで操作します。 このトピックでは、作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション、およびしを使用して、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]を実行するためのスキーマを生成する、**挿入**での操作、 **SalesOrder**テーブル。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**なし**|Windows 認証を使用して SQL Server に接続します。|  
     |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
   
 6.  クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI](http://msdn.microsoft.com/library/dd788089.aspx)です。  
   

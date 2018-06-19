@@ -1,11 +1,11 @@
 ---
-title: "スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, schema types
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - XML schemas
 - flat file schemas
 ms.assetid: aea772bd-e7ab-448e-ba82-e7c8f38087db
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270090"
 ---
 # <a name="schemas"></a>スキーマ
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、処理、およびメッセージの構造体としてのこれらの定義を参照するすべてのメッセージの構造を定義する XML スキーマ定義 (XSD) 言語を使用して*スキーマ*です。 ほとんど例外なく、構造化されたメッセージは、アプリケーションの中核を成すものです。 これらの構造化されたメッセージは、大小さまざまな形式になります。また、多種多様なバックエンド システムおよびデータ ストアを対象とします。 構造化されたメッセージを頻繁に作成して使用するシステムは、さまざまな形式を使用します。 構造化されたメッセージの最も一般的な形式は、XML とフラット ファイルです。  

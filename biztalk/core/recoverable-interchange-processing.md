@@ -1,11 +1,11 @@
 ---
-title: "回復可能なインターチェンジ処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 回復可能なインターチェンジ処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - interchange processing [Messaging Engine], modes
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - System.Xml.XmlReader
 - interchange modes [Messaging Engine]
 ms.assetid: d9e366fe-b2a0-4f1a-b6b9-1264717e4731
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268266"
 ---
 # <a name="recoverable-interchange-processing"></a>回復可能なインターチェンジ処理
 このセクションで説明**回復可能なインターチェンジ処理**により、次のステージまたはフェーズで、インターチェンジの 1 つまたは複数のメッセージが失敗した場合でも完全に処理するインターチェンジの機能。  

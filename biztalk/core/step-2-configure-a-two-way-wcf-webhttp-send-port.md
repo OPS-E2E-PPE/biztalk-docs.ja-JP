@@ -1,14 +1,14 @@
 ---
-title: "手順 2: 双方向 Wcf-webhttp 送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 双方向 Wcf-webhttp 送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bcab296-7921-4df4-abcc-eea78cc827e8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278890"
 ---
 # <a name="step-2-configure-a-two-way-wcf-webhttp-send-port"></a>手順 2: 双方向 Wcf-webhttp 送信ポートを構成します。
 この手順で構成する、双方向**Wcf-webhttp**米国航空会社のスケジュールで遅延を取得するための REST リソース URL を起動するポートを送信します。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
         3.  下にある、**ユーザー名資格情報**ボックスで、クリックして**編集**です。 **クライアントの資格情報**ダイアログ ボックスで、**シングル サインオンに使用しない**、ユーザー名とから取得したパスワードを入力し、**マイ アカウント**した後タブログインして[Windows Azure Marketplace](http://go.microsoft.com/fwlink/p/?LinkId=257913)です。 に対して資格情報が表示されている、**顧客 ID** (ユーザー名) と**プライマリ アカウント キー** (パスワード) ラベル。  
   
-        4.  **[OK]**をクリックします。  
+        4.  **[OK]** をクリックします。  
   
     5.  **メッセージ** タブの**動詞の本文を抑制**、要求メッセージからメッセージ ペイロードを除去する動詞を指定します。 このチュートリアルを指定`GET`です。 その理由を次に示します: 米国航空会社のフライト遅延の REST エンドポイントに対する GET メソッド呼び出しには、メッセージ ペイロードは不要REST リソース URL は、情報を取得するだけで十分です。 ただし、トリガーを**Wcf-webhttp** rest 呼び出しを送信ポート、いくつかのメッセージ本文を持つダミー メッセージをドロップします。 前に説明したように、REST エンドポイントはメッセージのペイロードを想定していないので、送信ポートから REST エンドポイントにダミー メッセージを送信できません。 そのため、REST エンドポイントを呼び出す前に、アダプターを切り離しますで指定した動詞についてのみ、ダミー メッセージからメッセージ ペイロード、**動詞の本文を抑制**テキスト ボックス。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
         |**演算子**|を設定します。**==**|  
         |**値**|を設定します。`ReceivePortRestAzureMarketPlace`|  
   
-    7.  **[OK]**をクリックします。  
+    7.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)

@@ -1,14 +1,14 @@
 ---
-title: "WCF チャネル モデルを使用して SQL アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して SQL アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11df5cc2-b532-45a8-9055-d05f4704a6e5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222234"
 ---
 # <a name="develop-sql-applications-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して SQL アプリケーションを開発します。
 使用することができます、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]チャネル モデルを使用する、 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL サーバー バインドで作成されたチャネル インスタンス経由で直接 XML メッセージを送信することによってです。  

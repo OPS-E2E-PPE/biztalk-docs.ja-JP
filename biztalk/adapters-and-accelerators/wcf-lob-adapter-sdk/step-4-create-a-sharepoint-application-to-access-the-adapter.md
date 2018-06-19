@@ -1,14 +1,14 @@
 ---
-title: "手順 4: アダプターにアクセスする Sharepoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: アダプターにアクセスする Sharepoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2d8c398-370a-4c62-961d-0eab6066ad5a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226882"
 ---
 # <a name="step-4-create-a-sharepoint-application-to-access-the-adapter"></a>手順 4: アダプターにアクセスする Sharepoint アプリケーションを作成します。
 ![4 のステップ 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
@@ -83,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **グループ アカウント名**フィールドに、このアプリケーションの定義をセキュリティで保護するために使用する Windows グループを入力します。 たとえば、 **DOMAIN\Domain ユーザー**です。  
   
-6.  **[設定]**をクリックします。  
+6.  **[設定]** をクリックします。  
   
 7.  EchoSSO アカウント情報の提供 ページで、 **Username**フィールド型**testuser**、し、**パスワード**フィールド型**testpassword**.  
   
@@ -121,11 +122,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  [新しい Web パーツ] ページで、**名前**フィールドに「 **EchoPart**、し、[**ページ全体を垂直方向**から、 **レイアウトテンプレートを選択した**] ボックスの一覧です。  
   
-6.  **[作成]**をクリックします。  
+6.  **[作成]** をクリックします。  
   
 #### <a name="to-add-a-business-data-web-part"></a>ビジネス データ Web パーツを追加するには  
   
-1.  **[Web パーツの追加]**をクリックします。  
+1.  **[Web パーツの追加]** をクリックします。  
   
 2.  **Web パーツの追加**ダイアログ ボックスで、**ビジネス データ一覧**、クリックして**追加**です。  
   

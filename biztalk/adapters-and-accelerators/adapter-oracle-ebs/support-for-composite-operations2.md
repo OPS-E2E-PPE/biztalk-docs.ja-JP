@@ -1,14 +1,14 @@
 ---
-title: "複合 Operations2 のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: 複合 Operations2 のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f65cf10-4e27-4872-bc6a-defe6cbab198
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216442"
 ---
 # <a name="support-for-composite-operations"></a>複合操作のサポート
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが、次の操作、および任意の順序で任意の数を含めることができる複合操作を実行できるようにします。  

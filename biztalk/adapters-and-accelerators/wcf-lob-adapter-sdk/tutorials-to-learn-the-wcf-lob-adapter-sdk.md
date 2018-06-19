@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK を説明するチュートリアル |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を説明するチュートリアル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99002b01-da8a-483e-ada3-1ffbe9cd7357
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226122"
 ---
 # <a name="tutorials-to-learn-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を説明するチュートリアル
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]チュートリアルを使用する方法に関する情報を格納する[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]開発機能豊富な基幹業務アダプタが、企業内でエンタープライズ アプリケーション統合を容易になります。 使用して、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、WCF バインディングで使用できる任意のアプリケーションで使用できる操作および公開するデータを含む[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  

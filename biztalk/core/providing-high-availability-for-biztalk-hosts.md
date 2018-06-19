@@ -1,11 +1,11 @@
 ---
-title: "BizTalk ホストの高可用性を実現する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk ホストの高可用性を実現する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - hosts, planning
 - MessageBox database
 ms.assetid: 9583b85c-7cad-4016-8065-5ca7de3f4359
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271898"
 ---
 # <a name="providing-high-availability-for-biztalk-hosts"></a>BizTalk ホストの高可用性
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、メッセージの送受信やオーケストレーション処理など、特定の機能領域ごとに論理的なホストを割り当てることができるため、高可用性を柔軟に実現することができます。  

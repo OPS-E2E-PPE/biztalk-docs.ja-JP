@@ -1,14 +1,14 @@
 ---
-title: "アダプター サービス参照のプラグインを使用して Visual Studio での Oracle E-business Suite への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター サービス参照のプラグインを使用して Visual Studio での Oracle E-business Suite への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7fe4d1b7-8201-4816-ae90-020520f29714
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218474"
 ---
 # <a name="connect-to-oracle-e-business-suite-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>アダプター サービス参照のプラグインを使用して Visual Studio での Oracle E-business Suite への接続します。
 Oracle E-business Suite に接続する、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] .NET プログラミング ソリューションで使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 このトピックでは、使用する方法の説明、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
@@ -51,9 +52,9 @@ Oracle E-business Suite に接続する、 [!INCLUDE[adapteroraclebusinessshort]
   
 5.  クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。 バインドのプロパティの詳細については、次を参照してください。 [Oracle E-business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
-7.  **[接続]**をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
+7.  **[接続]** をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
   
      次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。 グラフィカル ユーザー インターフェイスは、の同じ、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
   

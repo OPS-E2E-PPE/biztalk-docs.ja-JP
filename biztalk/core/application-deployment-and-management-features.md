@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションの展開と管理機能 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションの展開と管理機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - what's new, Installation Wizard
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - applications, what's new
 - what's new, applications
 ms.assetid: 2d09d6b1-1003-406f-81da-14e21a1cbc81
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231042"
 ---
 # <a name="application-deployment-and-management-features"></a>アプリケーションの展開および管理の機能
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、BizTalk ビジネス ソリューションの展開を支援するための機能が用意されています。  

@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル 1: SQL アダプタを BizTalk プロジェクトの移行 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 1: SQL アダプタを BizTalk プロジェクトの移行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b4d2dbb-e37c-4d70-831f-3bdac3c28c97
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225370"
 ---
 # <a name="tutorial-1-migrate-biztalk-projects-to-the-sql-adapter"></a>チュートリアル 1: SQL アダプタを BizTalk プロジェクトを移行します。
 以前のバージョンを Microsoft に同梱されている SQL アダプターの[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]WCF ベースとは異なります[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]など、多くの点で。  

@@ -1,14 +1,14 @@
 ---
-title: "PL-SQL Api に対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: PL-SQL Api に対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d47b894d-1047-48ed-8f8c-865c343a12db
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216010"
 ---
 # <a name="operations-on-plsql-apis"></a>PL/SQL Api に対する操作
 Oracle E-business Suite では、一連のパッケージ化された関数およびストアド プロシージャの形式で PL/SQL Api を提供します。 これらのパッケージ化された関数およびプロシージャでの操作として表示された[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。 

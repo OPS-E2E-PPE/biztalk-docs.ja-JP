@@ -1,14 +1,14 @@
 ---
-title: "この AS2 インターチェンジのパーティが AS2 の値を含める必要があります-から |Microsoft ドキュメント"
-ms.custom: 
+title: この AS2 インターチェンジのパーティが AS2 の値を含める必要があります-から |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d338759-5646-4dc2-8319-a42aaa8c3d9c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278778"
 ---
 # <a name="the-party-for-this-as2-interchange-must-contain-a-value-for-as2-from"></a>この AS2 インターチェンジのパーティには、AS2-From の値が含まれている必要があります
 ## <a name="details"></a>詳細  

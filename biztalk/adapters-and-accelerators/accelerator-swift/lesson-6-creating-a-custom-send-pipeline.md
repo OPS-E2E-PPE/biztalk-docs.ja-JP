@@ -1,17 +1,17 @@
 ---
-title: "レッスン 6: カスタムを作成する送信パイプライン |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 6: カスタムを作成する送信パイプライン |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - custom pipelines
 - send pipelines, custom pipelines
 ms.assetid: 73a3a546-1e43-4b93-87d3-9bfb32685a57
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210162"
 ---
 # <a name="lesson-6-creating-a-custom-send-pipeline"></a>レッスン 6: カスタムの送信パイプラインを作成します。
 このレッスンでは、BizTalk パイプライン デザイナを使用して、カスタム送信パイプラインを作成します。 送信パイプラインは前に、のメッセージで実行するパイプライン[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]が宛先にメッセージを送信します。  

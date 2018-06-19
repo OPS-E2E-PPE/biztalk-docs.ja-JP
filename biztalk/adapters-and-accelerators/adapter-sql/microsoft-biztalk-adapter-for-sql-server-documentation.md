@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Adapter for SQL Server ドキュメント |Microsoft ドキュメント"
-description: "取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack での SQL アダプターのトラブルシューティング"
-ms.custom: 
+title: Microsoft BizTalk Adapter for SQL Server ドキュメント |Microsoft ドキュメント
+description: 取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack での SQL アダプターのトラブルシューティング
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1979ca70-9075-4fdb-b4b4-0749c92b792f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223058"
 ---
 # <a name="microsoft-biztalk-adapter-for-sql-server-documentation"></a>Microsoft BizTalk Adapter for SQL Server ドキュメント
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]さまざまなしくみを理解、アダプター、アダプターを使用して、別の接続オプションについて説明するアプリケーションを作成する方法、やアプリケーションを作成する方法を学習するのに役立つリソースが含まれています。

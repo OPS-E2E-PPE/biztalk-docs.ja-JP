@@ -1,15 +1,15 @@
 ---
-title: "BizTalk server、Siebel アプリケーションの開発 |Microsoft ドキュメント"
-description: "Siebel を WCF を使用してアプリケーションを作成または BizTalk Server と BizTalk アダプター パック (BAP)"
-ms.custom: 
+title: BizTalk server、Siebel アプリケーションの開発 |Microsoft ドキュメント
+description: Siebel を WCF を使用してアプリケーションを作成または BizTalk Server と BizTalk アダプター パック (BAP)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2bc04906-6d64-433c-b357-797ec5883279
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222602"
 ---
 # <a name="develop-your-siebel-applications"></a>Siebel アプリケーションを開発します。
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 |タスク|BizTalk Server|WCF サービスのモデル|WCF チャネル モデル|ADO.NET インターフェイス|  
 |----------|--------------------|-----------------------|-----------------------|-----------------------|  
-|ビジネス コンポーネントの基本的な Insert、Update、Delete、およびクエリの操作|[ビジネス コンポーネントを使用して BizTalk Server と Siebel アダプターに対する操作を実行します。](run-operations-on-business-components-using-the-siebel-adapter-in-biztalk.md)|[WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。](run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)|[WCF チャネル モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。](run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)|[Siebel ビジネス コンポーネントに対して選択クエリを実行](run-a-select-query-on-business-components-with-siebel.md)**注:**を使用して、SELECT 操作を実行することができますのみ、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]です。|  
+|ビジネス コンポーネントの基本的な Insert、Update、Delete、およびクエリの操作|[ビジネス コンポーネントを使用して BizTalk Server と Siebel アダプターに対する操作を実行します。](run-operations-on-business-components-using-the-siebel-adapter-in-biztalk.md)|[WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。](run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)|[WCF チャネル モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。](run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)|[Siebel ビジネス コンポーネントに対して選択クエリを実行](run-a-select-query-on-business-components-with-siebel.md)**注:** を使用して、SELECT 操作を実行することができますのみ、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]です。|  
 |MVG フィールドのビジネス コンポーネントに対する操作|[MVG フィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行します。](run-operations-on-business-components-with-mvg-fields-using-the-siebel-adapter.md)|[WCF サービス モデルを使用して、Siebel アダプターと MVG フィールドのビジネス コンポーネントでの操作を実行します。](work-with-mvp-fields-using-the-siebel-adapter-and-the-wcf-service-model.md)|||  
 |候補リストのフィールドのビジネス コンポーネントに対する操作|[候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントに対する操作を実行します。](run-tasks-on-business-components-with-picklist-fields-using-the-siebel-adapter.md)||||  
 |ビジネス サービスを呼び出す|[ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出し](invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter.md)|||[Siebel ビジネス サービスの実行操作を実行します。](run-an-execute-operation-on-business-services-with-siebel.md)|  

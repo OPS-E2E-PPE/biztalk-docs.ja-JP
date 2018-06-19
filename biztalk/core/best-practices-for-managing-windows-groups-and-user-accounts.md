@@ -1,11 +1,11 @@
 ---
-title: "Windows グループとユーザー アカウントを管理するためのベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: Windows グループとユーザー アカウントを管理するためのベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - best practices, Windows groups
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - hosts, best practices
 - best practices, hosts
 ms.assetid: 0c4a141e-97ce-434a-8e45-a56c634bbd6c
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,6 +32,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231226"
 ---
 # <a name="best-practices-for-managing-windows-groups-and-user-accounts"></a>Windows グループおよびユーザー アカウントの管理のベスト プラクティス
 このセクションでは、Windows グループおよびユーザー アカウントのセキュリティ管理のベスト プラクティスおよびヒントについて説明します。  

@@ -1,15 +1,15 @@
 ---
-title: "SAP アダプターの BizTalk で使用する SAP RFC の作成の概要 |Microsoft ドキュメント"
-description: "作成、RFC では、RFC 変換先、および送信 SAP システム - BizTalk アダプター パック (BAP) の RFC"
-ms.custom: 
+title: SAP アダプターの BizTalk で使用する SAP RFC の作成の概要 |Microsoft ドキュメント
+description: 作成、RFC では、RFC 変換先、および送信 SAP システム - BizTalk アダプター パック (BAP) の RFC
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 35937183-fc1e-49cd-8a75-8f62effe0013
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216522"
 ---
 # <a name="create-and-send-an-rfc-in-sap"></a>作成および送信 RFC SAP
 RFC を作成する SAP システムで完了する高度なタスクを一覧表示します。 各タスクには、非常に詳細な手順が含まれます。 その結果、これらのタスクを完了または SAP ガイダンスを参照してください、SAP 管理者に連絡をお勧めします。  

@@ -1,14 +1,14 @@
 ---
-title: "AS2 処理におけるアグリーメントの役割 |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 処理におけるアグリーメントの役割 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb6a6fe1-8fb4-4998-a1b4-aadad7e672c4
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279434"
 ---
 # <a name="the-role-of-agreements-in-as2-processing"></a>AS2 処理におけるアグリーメントのロール
 組織は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、1 つ以上の取引先との間で AS2 メッセージを送受信します。 取引先は、組織内の Business Entities であるビジネス プロファイルを順番に定義します。 さまざまな取引先に属する 2 つのビジネス プロファイル間の双方向の取引先契約に AS2 プロパティを設定します。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269866"
 ---
 # <a name="sendpipeline-receivelocation-node"></a>SendPipeline (ReceiveLocation ノード)
 バインド ファイルの ReceiveLocation ノードの SendPipeline ノードでは、バインド ファイルと共にエクスポートされる受信場所にバインドされる送信パイプラインに関する特定の情報が提供されます。  

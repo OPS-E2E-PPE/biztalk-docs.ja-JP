@@ -1,14 +1,14 @@
 ---
-title: "EXECQUERY コマンドを使用して SAP クエリの実行 |Microsoft ドキュメント"
-ms.custom: 
+title: EXECQUERY コマンドを使用して SAP クエリの実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 520153bf-9477-4b35-8953-3f5cb444ab9f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217210"
 ---
 # <a name="execute-an-sap-query-using-the-execquery-command"></a>EXECQUERY コマンドを使用して SAP クエリを実行します。
 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ADO.NET データ ソースとしての SAP システムを公開します。 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、EXECQUERY ステートメントを実行して、SAP システムで定義済みのクエリを実行できます。  

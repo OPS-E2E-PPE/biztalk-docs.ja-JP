@@ -1,14 +1,14 @@
 ---
-title: "バックアップと復元の BizTalk Server |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップと復元の BizTalk Server |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe03a75a-1ea6-4ccc-9543-7989ec6b1cff
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230786"
 ---
 # <a name="backing-up-and-restoring-biztalk-server"></a>BizTalk Server のバックアップと復元
 ハードウェアに障害が発生した場合に備えて、BizTalk Server のデータベースとコンポーネントの適切なバックアップを取っておくことは、必須の作業です。 適切なバックアップを用意しておけば、データの損失を最小限にとどめて障害から回復することができます。 BizTalk Server をどのように復元するかは、ハードウェア障害が発生したシステムにインストールされているコンポーネントによって異なります。 ここでは、次のようなハードウェア障害が発生した場合を想定します。  

@@ -1,11 +1,11 @@
 ---
-title: "アクティビティ ノードと ActivityID ノード |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティ ノードと ActivityID ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ActivityID nodes [Tracking Profile Editor]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, node descriptions
 - activities [BAM], definitions
 ms.assetid: 94d4130a-53c5-4cd5-916a-4a6bd9acbf23
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224674"
 ---
 # <a name="activity-and-activityid-nodes"></a>アクティビティ ノードと ActivityID ノード
 アクティビティ ノードと ActivityID ノードは、アクティビティ定義の格納と識別に使用します。 アクティビティ ノードは、アクティビティ定義に含まれる項目の親フォルダーです。 すべてのデータ項目とビジネス イベント ノードは、関連付けられているアクティビティ ノードの下位ノードで、アクティビティ ノードに含まれています。 アクティビティ ノードの名前は、アクティビティ自体の名前が反映されます。  

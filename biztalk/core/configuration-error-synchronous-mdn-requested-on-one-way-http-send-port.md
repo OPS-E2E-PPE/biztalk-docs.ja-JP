@@ -1,14 +1,14 @@
 ---
-title: "構成エラー。 送信ポートで一方向の HTTP 要求、同期 MDN |Microsoft ドキュメント"
-ms.custom: 
+title: 構成エラー。 送信ポートで一方向の HTTP 要求、同期 MDN |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bd38eb3-321f-4738-b35e-390f4f54673e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231898"
 ---
 # <a name="configuration-error-synchronous-mdn-requested-on-one-way-http-send-port"></a>構成エラー。 一方向の HTTP 送信ポートで同期 MDN が要求されました
 ## <a name="details"></a>詳細  

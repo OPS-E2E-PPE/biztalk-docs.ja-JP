@@ -1,11 +1,11 @@
 ---
-title: "BizTalk プロジェクト システムについて |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk プロジェクト システムについて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, about projects
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - creating, business solutions
 - business solutions, creating
 ms.assetid: 69807e57-356e-451d-b803-4253b891b617
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226266"
 ---
 # <a name="about-the-biztalk-project-system"></a>BizTalk プロジェクト システムについて
 BizTalk プロジェクト システムを使用して、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションやビジネス ソリューションの一部またはすべてを作成できます。 ソリューションの中核となる要素は、スキーマ、オーケストレーション、Web メッセージの種類、クラス、パイプライン、マップ、参照などの項目の集合である BizTalk プロジェクトです。ユーザーは、これらの項目をビルドしてアセンブリを生成し、生成したアセンブリを展開します。  

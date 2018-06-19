@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信するためのサポート |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信するためのサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - notifications, polling-based
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - polling interval
 - polling
 ms.assetid: 9ff29d3f-ebb1-4d82-9106-150f939cbd9e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218802"
 ---
 # <a name="support-for-receiving-polling-based-data-changed-messages-in-oracle-database"></a>Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信するためのサポート
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースに格納されたデータへの変更を知らせる Oracle データベースからメッセージを受信するクライアント プログラムを有効にします。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプターが指定された選択クエリ、ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内の関数を実行する場合、「ポーリング ベース」のメッセージの受信をサポートしていますが、データを取得しでは、通常、クライアントに結果を提供時間間隔。 これを有効にする、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] POLLINGSTMT 操作を公開します。 さらに、すべてのストアド プロシージャ、関数、およびプロシージャおよびパッケージ内の関数は、ポーリングの受信操作として公開されます。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
 |ポーリング|Notification|  
 |-------------|------------------|  
 |サポートされているすべての Oracle データベース バージョンのポーリングがサポートされている、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。|通知は、Oracle データベース バージョン 10.2 に対してのみサポートされているおよびそれ以降です。|  
-|一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。 **ヒント:**ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|データの変更通知は瞬時では常にします。|  
+|一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。 **ヒント:** ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|データの変更通知は瞬時では常にします。|  
 |ポーリングは、アダプターによって開始されます。 アダプターでは、データのポーリングを使用し、ポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証する SQL ステートメントを実行します。|通知は、Oracle データベースで開始されます。 だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セットの変更がある場合に通知を開始するように指示します。 通知は、Oracle データベースの機能です。|  
 |ポーリング ステートメントを使用して、読み取るまたは Oracle データベース内のデータを更新することができます。|通知のステートメントを使用すると、Oracle データベースでデータを読み取るだけです。|  
 |ポーリングでは、実際のデータが変更されたことについて通知されます。|Insert などのデータ変更の種類のみ通知を通知は、更新、および削除します。|  

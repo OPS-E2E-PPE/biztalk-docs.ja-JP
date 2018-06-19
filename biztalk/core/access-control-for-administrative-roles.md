@@ -1,11 +1,11 @@
 ---
-title: "管理ロールのアクセス制御 |Microsoft ドキュメント"
-ms.custom: 
+title: 管理ロールのアクセス制御 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - roles, administrative
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - administrative roles
 - access control, administrative roles
 ms.assetid: 328e049b-921d-4057-85f0-7d008ec308bb
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225818"
 ---
 # <a name="access-control-for-administrative-roles"></a>管理ロールのアクセス制御
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ツールを開いてデータベースや Windows リソースにアクセスし、そのツールがサポートしているさまざまな作業を実行するには、SQL Server および Windows で適切なユーザー権限が与えられていなければなりません。  

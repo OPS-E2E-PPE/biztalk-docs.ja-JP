@@ -1,17 +1,17 @@
 ---
-title: "ポーリング Operations2 のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: ポーリング Operations2 のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - POLLINGSTMT operation, message actions for
 - POLLINGSTMT operation, message structure for
 ms.assetid: b82edcc2-9437-4c7b-ba2b-7b966fff3f15
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214602"
 ---
 # <a name="message-schemas-for-the-polling-operations"></a>ポーリング操作のメッセージ スキーマ
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ポーリングによっては、Oracle データベースのターゲット オブジェクトに関連するさまざまな受信操作を表示します。 テーブルとビューをポーリングするには、ストアド プロシージャ、関数、およびパッケージ化したプロシージャと関数は、ポーリングの受信操作として公開されますが、1 つの POLLINGSTMT 操作が確認できます。  

@@ -1,14 +1,14 @@
 ---
-title: "SQL Server への接続を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server への接続を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44a03b2c-55b5-49a0-92cc-6f017720d34a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225402"
 ---
 # <a name="create-a-connection-to-sql-server"></a>SQL Server への接続を作成します。
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 そのため、WCF エンドポイントのアドレスを使用して SQL Server データベースへの通信を可能になります。 WCF では、エンドポイントのアドレスはサービスのネットワークの場所を識別し、として、Uniform Resource Identifier ()、通常表現されます。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接続プロパティが含まれて、URI とは、この場所の表現を[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]SQL Server データベースへの接続を確立するために使用します。 接続 URI を指定する必要がありますとします。  

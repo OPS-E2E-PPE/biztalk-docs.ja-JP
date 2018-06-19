@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22230186"
 ---
 # <a name="an-error-occurred-when-decrypting-an-as2-message"></a>AS2 メッセージの解読中にエラーが発生しました
 ## <a name="details"></a>詳細  

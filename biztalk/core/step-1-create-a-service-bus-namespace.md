@@ -1,14 +1,14 @@
 ---
-title: "手順 1: サービス バスの Namespace を作成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: サービス バスの Namespace を作成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ede1ac50-bbfb-4aeb-8217-1877ae218f89
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276762"
 ---
 # <a name="step-1-create-a-service-bus-namespace"></a>手順 1: サービス バスの Namespace を作成します。
 この手順で作成、 [!INCLUDE[winazure](../includes/winazure-md.md)] [!INCLUDE[sb](../includes/sb-md.md)]名前空間。 この名前空間を使用して、Salesforce からの営業案件通知を受信するリレー エンドポイントをホストします。 このソリューションを作成するプロセスの後半で、このリレー エンドポイントを使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムで通知メッセージを受信します。  

@@ -1,18 +1,18 @@
 ---
-title: "ビジネス プロセス管理ソリューションをインストールする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションをインストールする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, examples
 - process management solution tutorial, installing
 - process management solution tutorial, deployment prerequisites
 ms.assetid: 930f3bb1-05e6-4b02-852d-6139aaf341f0
-caps.latest.revision: "61"
+caps.latest.revision: 61
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974936"
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションのインストール方法
 次の手順では、ビジネス プロセス管理 (BPM) ソリューションをコンピューターにインストールするための準備方法と、このコンピューターにソリューションをインストールする方法について説明します。  
@@ -178,7 +179,7 @@ ms.lasthandoff: 11/28/2017
 1.  コマンド プロンプトで、現在のフォルダーを %btssolutionspath%\bpm、型に変更`SetupBPM.bat`、ENTER キーを押します。  
   
     > [!NOTE]
-    >  ファイルに SetupBPM.bat を実行する前に**%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl**と**%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**8f8bbebbb3fb375a のすべてのインスタンスを XXXXXXXXXXXXXXXX に置き換えます。  
+    >  ファイルに SetupBPM.bat を実行する前に **%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl**と **%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**8f8bbebbb3fb375a のすべてのインスタンスを XXXXXXXXXXXXXXXX に置き換えます。  
   
      SetupBPM.bat では、次のタスクが実行されます。  
   

@@ -1,11 +1,11 @@
 ---
-title: "ロール リンクとサービス リンク ロール |Microsoft ドキュメント"
-ms.custom: 
+title: ロール リンクとサービス リンク ロール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, orchestrations
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - role links, about role links
 - orchestrations, deleting
 ms.assetid: 23b4ca34-a1a5-44d4-a50d-661277681c72
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268682"
 ---
 # <a name="role-links-and-service-link-roles"></a>ロール リンクとサービス リンク ロール
 A*ロール*サービスを使用するか、サービスを実装するポートの種類のコレクションです。 ロールは、パーティが単一または複数のオーケストレーションを持つ場合の対話処理の種類を表します。 パーティの数が増えるにつれて、ロールによって管理を柔軟かつ簡単に行えるようになります。 たとえば、あるオーケストレーションで出荷業者のロールを使用するとします。 出荷業者は、1 つまたは 2 つのパーティが関連付けられている必要があります。 オーケストレーションでアイテムの出荷業者を決定する際には、出荷業者ロールのパーティの価格が比較されます。  

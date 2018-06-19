@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75d34c48-0f2a-42e4-a60b-e04bcf2404e1
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227034"
 ---
 # <a name="step-2-create-an-application-definition-file-for-siebel-business-component-operations"></a>手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成します。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 15 分  
   
- **目標:**ビジネス データ カタログを公開し、ポータルに基幹業務 (LOB) アプリケーションからのデータが組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用できるアプリケーション定義ファイルをビルドする必要があります。  
+ **目標:** ビジネス データ カタログを公開し、ポータルに基幹業務 (LOB) アプリケーションからのデータが組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用できるアプリケーション定義ファイルをビルドする必要があります。  
   
  ビジネス データ カタログ定義エディター ツールでは、ビジネス データ カタログのアプリケーション定義ファイルを作成することができます。 このツールには、XML 定義ファイルを自動的に生成されます。 そのため、手動でエディターを作成するファイル、XML ではありません。  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
      URL を入力する必要がありますが、WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに使用可能な[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作の公開](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)です。  
   
-5.  **[接続]**をクリックします。  
+5.  **[接続]** をクリックします。  
   
 6.  クリックして、 **Web メソッドの追加** タブに、WCF アダプター サービス開発ウィザードで選択した操作を参照してください。 表示されます、**クエリ**メソッドです。  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  PropertyView コレクション エディター] ウィンドウで、[**追加**、プロパティ ウィンドウで、次のように入力します。`HttpHeaderPassword`の、**名前**フィールドです。 同様に、入力`MyPassHeader`の**PropertyValue**フィールドです。 選択**System.String**の**型**フィールドです。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ### <a name="set-up-single-sign-on-for-connecting-to-a-siebel-system"></a>Siebel システムに接続するためのシングル サインオンを設定します。  
  このトピックのすべてのプロシージャの実行が完了したら後、は、アプリケーション定義、SharePoint アプリケーションにインポートできる XML が作成されます。 アプリケーションからは、Siebel システムの関連するデータを取得する (Web メソッドとして公開) Siebel ビジネス コンポーネント操作を呼び出します。 これを有効にするには、SharePoint アプリケーションで Siebel システムのユーザーとユーザー間のマッピングを作成する必要があります。 アプリケーション定義の XML をインポートした後は、SharePoint サーバーの全体管理 Web サイトでこのマッピングを作成します。  
@@ -114,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
      ![SSO プロパティの追加](../../adapters-and-accelerators/adapter-siebel/media/59ce70eb-498f-406b-965d-c273c2d6ed14.gif "59ce70eb-498f-406b-965d-c273c2d6ed14")  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ### <a name="requirement-perform-a-query-operation-on-the-account-business-component"></a>アカウントのビジネス コンポーネントでクエリ操作を実行する要件。  
  この例の最初の要件では、アカウントのビジネス コンポーネントでクエリ操作の実行に使用できるアプリケーション定義を作成します。 この要件を達成するのには、次の一連のタスクを行う必要があります。  
@@ -168,7 +169,7 @@ ms.lasthandoff: 09/20/2017
   
      ![Finder メソッド インスタンスの追加](../../adapters-and-accelerators/adapter-siebel/media/e8343988-d7c1-4b04-85b0-ca7d07097490.gif "e8343988-d7c1-4b04-85b0-ca7d07097490")  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 6.  プロパティ ウィンドウで、次のように入力します。`QueryAccount`の、**名前**フィールドです。  
   

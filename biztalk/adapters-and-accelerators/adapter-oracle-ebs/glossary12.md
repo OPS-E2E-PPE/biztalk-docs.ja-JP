@@ -1,15 +1,15 @@
 ---
-title: "BizTalk では、Oracle E-business Suite アダプターの用語集 |Microsoft ドキュメント"
-description: "共通の用語と Oracle EBS アダプターの BizTalk アダプター パック (BAP) の定義"
-ms.custom: 
+title: BizTalk では、Oracle E-business Suite アダプターの用語集 |Microsoft ドキュメント
+description: 共通の用語と Oracle EBS アダプターの BizTalk アダプター パック (BAP) の定義
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 328b0ed2-58e2-45d5-8322-a72179ad5c8b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218642"
 ---
 # <a name="glossary"></a>用語集
 次の用語と定義がで使用される[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。  
@@ -128,7 +129,7 @@ WCF に含まれているコマンド ライン ユーティリティです。 �
 **SOAP メッセージ**  
 整形式 XML ドキュメント。 SOAP エンベロープと SOAP エンコーディングの名前空間、XML 宣言 (省略可能)、実際の SOAP エンベロープ (ルート要素)、SOAP ヘッダー (省略可能) および SOAP メッセージ本文で構成されます。
 
-**SQL Server Integration Services (SSIS)**インポート、エクスポート、およびさまざまなデータ ソースからデータを変換に使用されるコンポーネントです。 以前のデータ変換サービス (DTS) と呼ばれます。
+**SQL Server Integration Services (SSIS)** インポート、エクスポート、およびさまざまなデータ ソースからデータを変換に使用されるコンポーネントです。 以前のデータ変換サービス (DTS) と呼ばれます。
 
 **厳密に型指定されたデータ**  
 データ セットまたは基になるオブジェクトの種類にバインドされている結果セットです。 厳密に型指定された XML データ セット内の各行で構成されます入力すると、基になるオブジェクトの種類のフィールドに対応する要素の名前します。
@@ -160,4 +161,4 @@ WCF に含まれているコマンド ライン ユーティリティです。 �
   
 ## <a name="x"></a>×  
   
-**XML スキーマ定義言語 (XSD)**スキーマ言語。 World Wide Web Consortium (W3C) XML Schema Part 1 に準拠している要素、属性、およびデータ型を定義する XML スキーマ: XML スキーマ定義言語の構造の推奨事項です。 W3C XML Schema Part 2: Datatypes recommendation 』 は、勧告の XML スキーマで使用されるデータ型を定義します。 XSD (XML Schema Definition) 言語により、XML メッセージの構造とデータ型を定義できます。
+**XML スキーマ定義言語 (XSD)** スキーマ言語。 World Wide Web Consortium (W3C) XML Schema Part 1 に準拠している要素、属性、およびデータ型を定義する XML スキーマ: XML スキーマ定義言語の構造の推奨事項です。 W3C XML Schema Part 2: Datatypes recommendation 』 は、勧告の XML スキーマで使用されるデータ型を定義します。 XSD (XML Schema Definition) 言語により、XML メッセージの構造とデータ型を定義できます。

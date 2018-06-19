@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268698"
 ---
 # <a name="role-roles-node"></a>Role (Roles ノード)
 バインド ファイルの Roles ノードの Role ノードは、バインド ファイルと共にエクスポートされるサービスにバインドされるロールに関する情報を指定します。  

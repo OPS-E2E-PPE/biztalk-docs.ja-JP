@@ -1,14 +1,14 @@
 ---
-title: "エラー処理の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: エラー処理の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc793386-d2ec-4e02-9283-3237f65c9e01
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287466"
 ---
 # <a name="using-fault-handling"></a>エラー処理の使用
 中に[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]しない限り、エラー、例外メッセージの処理はクライアントに返されません、 **FaultException** (または subtype) がスローされますまたは**FaultContract**は実装されています。 したがって、このようなシナリオでは、エラー メッセージ自体からデータを追跡することしかできません。 コールバックの実装で例外が自動的に両方のエラー メッセージとして返さ**ServerFault**と**ClientFault**ポイントを追跡します。 ただし、どのような場合でも、一般的なメッセージを示す汎用エラーが戻されます。 WCF エラー コントラクトの詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=83132](http://go.microsoft.com/fwlink/?LinkId=83132)です。  

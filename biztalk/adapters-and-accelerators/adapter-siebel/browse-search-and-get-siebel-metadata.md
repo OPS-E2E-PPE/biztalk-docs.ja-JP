@@ -16,7 +16,7 @@ helpviewer_keywords:
 - metadata, searching
 - searching, metadata
 ms.assetid: 48fc3bb1-b949-4b8d-ab62-a41cd8c2f0a0
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22222570"
 ---
 # <a name="browse-search-and-get-siebel-metadata"></a>参照、検索、および Siebel メタデータの取得
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプターを使用して、Siebel システムと通信するためのメッセージ構造を記述する Siebel システムからのサーフェス メタデータ。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  

@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK を使用して LOB システムを理解する |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を使用して LOB システムを理解する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0f97846-5ef2-4530-853a-fba5469156f7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225802"
 ---
 # <a name="understand-the-lob-system-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して LOB システムを理解します。
 使用して、アダプターを開発する前に、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]対象の基幹業務システムを十分に理解する必要があります。 基幹業務システム、公開、およびセキュリティ、トランザクション、およびその他の機能を提供するサポートのさまざまなレベルで提供される機能を理解していない場合、アダプターが提供されない機能がアダプタで必要なコンシューマー。 このセクションでは、効果的に使用してアダプターをデザインするために理解する必要があります領域について説明します。  

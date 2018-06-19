@@ -1,11 +1,11 @@
 ---
-title: "ビジネス ルールにおけるポリシー テスト トレース出力情報 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルールにおけるポリシー テスト トレース出力情報 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, business rules
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, testing
 - policies, testing
 ms.assetid: 26ff584e-97a1-4d76-a8a9-a55b4c99231f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265066"
 ---
 # <a name="policy-test-trace-output-information-for-business-rules"></a>ビジネス ルールにおけるポリシー テストのトレース出力情報
 このセクションでは、ビジネス ルール作成ツールでポリシーをテストする場合に表示される追跡情報について説明します。 [グループ ハブ] ページでメッセージ イベントとサービス インスタンスの追跡クエリを使用してポリシー実行の追跡結果を表示すると、同様の情報が表示されます。  

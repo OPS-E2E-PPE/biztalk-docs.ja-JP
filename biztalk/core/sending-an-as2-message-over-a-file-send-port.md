@@ -1,14 +1,14 @@
 ---
-title: "FILE 送信ポート経由で AS2 メッセージの送信 |Microsoft ドキュメント"
-ms.custom: 
+title: FILE 送信ポート経由で AS2 メッセージの送信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8c5ce9ff-fd73-4d5f-9b16-387c1e520c3a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270730"
 ---
 # <a name="sending-an-as2-message-over-a-file-send-port"></a>FILE 送信ポートを使用した AS2 メッセージの送信
 通常、AS2 メッセージは HTTP アダプターを介して送信されます。 ただし、カスタム コンポーネントを作成する場合は、AS2 メッセージを FILE アダプター経由で送信できます。 このトピックでは、このようなソリューションのしくみについて説明し、ソリューションのサンプル コードを示します。  

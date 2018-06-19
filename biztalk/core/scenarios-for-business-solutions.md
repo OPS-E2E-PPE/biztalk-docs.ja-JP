@@ -1,11 +1,11 @@
 ---
-title: "ビジネス ソリューションのシナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ソリューションのシナリオ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business solutions, tutorials
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - tutorials, business solutions
 - solutions, tutorials
 ms.assetid: f6239905-a1bf-4223-bdca-6677f2d6049b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269122"
 ---
 # <a name="scenarios-for-business-solutions"></a>ビジネス ソリューションのシナリオ
 このセクションでは、2 つの完全なモデル BizTalk アプリケーションについて説明します。 各アプリケーションは、特定のビジネス パターンを表し、その他の構成要素である統合パターンを示しています。  

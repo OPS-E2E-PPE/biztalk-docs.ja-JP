@@ -1,14 +1,14 @@
 ---
-title: "WCF サービスのモデルを使用して SQL の ExecuteReader、ExecuteScalar、ExecuteNonQuery 操作 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービスのモデルを使用して SQL の ExecuteReader、ExecuteScalar、ExecuteNonQuery 操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62f166af-b657-491b-b20d-1ae7886f27ce
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224650"
 ---
 # <a name="executereader-executescalar-or-executenonquery-operations-in-sql-using-wcf-service-model"></a>WCF サービスのモデルを使用して SQL の ExecuteReader、ExecuteScalar、ExecuteNonQuery 操作
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]など一般的な SQL Server 操作を公開する**ExecuteNonQuery**、 **ExecuteReader**、および**ExecuteScalar**です。 これらの操作を使用して、SQL Server データベースで任意の SQL ステートメントを実行することができます。 これらの操作は、応答するための SQL ステートメントの種類によって異なります。 アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)です。  

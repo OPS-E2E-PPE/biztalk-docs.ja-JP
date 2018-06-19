@@ -1,14 +1,14 @@
 ---
-title: "InterAct アダプター コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: InterAct アダプター コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aad60b57-4cc8-44b9-98f5-e5a2ba3a41e2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224690"
 ---
 # <a name="interact-adapter-components"></a>InterAct アダプター コンポーネント
 InterAct アダプターには、クライアントとサーバー コンポーネントがあります。 含まれていること、A4SWIFT の (最小) インストール SWIFT Alliance ゲートウェイ (SAG) と同じコンピューターに Windows Server が実行されている場合に注意してください。 SWIFTNet リンク (SNL) が、SAG から別のコンピューターにする可能性があるにも注意してください。 プログラミング インターフェイス (API) のホスト アダプター SWIFT によって提供されるリモート アプリケーションは、コンポーネントの場所に関係なく、SAG A4SWIFT から通信するために使用されます。  

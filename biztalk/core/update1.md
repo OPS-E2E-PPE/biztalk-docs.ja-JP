@@ -1,11 +1,11 @@
 ---
-title: "更新プログラム 1 |Microsoft ドキュメント"
-ms.custom: 
+title: 更新プログラム 1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Update function [Business Rules Engine]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - .NET objects
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: 939e45dc-6433-42f3-a336-8f3c247417ac
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288402"
 ---
 # <a name="update"></a>Update
 ときに**更新**関数が呼び出される、オブジェクト、オブジェクトが再アサートされた再評価されることをエンジンに新しいデータおよび状態に基づいて。 型のオブジェクトを指定できます**TypedXmlDocument**または .NET クラスまたは**DataConnection**または**TypedDataTable**です。  
@@ -50,7 +51,7 @@ IF ItemB.Id == 2
 THEN ItemB.Value = 100  
 ```  
   
- オブジェクトを作業メモリに再度アサートする機能により、ユーザーは、順行連鎖シナリオでの動作を明示的に制御できます。 しかし、この例では再アサーションの副作用により、ルール 1 も再評価されます。 **ItemA.Id**は変更されませんでした、ルール 1 にもう一度評価**true**と**assert (itemb)**アクションが再実行します。 その結果、無限ループが発生します。  
+ オブジェクトを作業メモリに再度アサートする機能により、ユーザーは、順行連鎖シナリオでの動作を明示的に制御できます。 しかし、この例では再アサーションの副作用により、ルール 1 も再評価されます。 **ItemA.Id**は変更されませんでした、ルール 1 にもう一度評価**true**と**assert (itemb)** アクションが再実行します。 その結果、無限ループが発生します。  
   
 > [!NOTE]
 >  ルールの再評価の既定の最大ループ カウントが 2 ^32 です。 一定の規則の時間が長く、ポリシーの実行の最後の可能性があります。 調整することによって、数を減らすことができます、**実行ループの最大の深さ**ポリシーのバージョンのプロパティです。  

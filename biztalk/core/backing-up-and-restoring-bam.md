@@ -1,11 +1,11 @@
 ---
-title: "バックアップと復元 BAM |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップと復元 BAM |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up [BAM]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - restoring [BAM]
 - BAM, backing up
 ms.assetid: 5d477492-fdb7-4866-92a8-2720fea15839
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230298"
 ---
 # <a name="backing-up-and-restoring-bam"></a>BAM のバックアップと復元
 このセクションでは、BAM 分析、追跡分析、BAM スター スキーマ、および BAM アーカイブ データベースをバックアップおよび復元する方法について説明します。  

@@ -1,14 +1,14 @@
 ---
-title: "SharePoint での SAP アダプターの使用時の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SharePoint での SAP アダプターの使用時の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d310741-b648-4028-a75f-35b843edcc8d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218130"
 ---
 # <a name="considerations-when-using-the-sap-adapter-with-sharepoint"></a>SharePoint での SAP アダプターの使用時の考慮事項
 このトピックの内容には使用しているときに発生する可能性の問題に関する情報が含まれています、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]解像度と共に、Microsoft Office SharePoint Server とします。 問題は、2 つのカテゴリに分けられます。  

@@ -1,17 +1,17 @@
 ---
-title: "手順 1: RFC を呼び出すため vPrev BizTalk プロジェクトを変更する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: RFC を呼び出すため vPrev BizTalk プロジェクトを変更する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, modifying previous version of BizTalk project for invoking an RFC
 - migration
 ms.assetid: 2d4a6cd7-d216-4e0f-8f82-41e044cd325b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218106"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc"></a>手順 1: RFC を呼び出すため vPrev BizTalk プロジェクトを変更します。
 ![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 10 分  
   
- **目標:**このステップで、次を変更する既存の vPrev BizTalk プロジェクト。  
+ **目標:** このステップで、次を変更する既存の vPrev BizTalk プロジェクト。  
   
 -   WCF ベースを使用して SD_RFC_CUSTOMER_GET RFC のメタデータを生成する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、**追加**、クリックして**新しい項目の**します。  
   
-         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**RequestMap.btm**です。 **[追加]**をクリックします。  
+         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**RequestMap.btm**です。 **[追加]** をクリックします。  
   
     2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**ResponseMap.btm**です。 **[追加]**をクリックします。  
+         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**ResponseMap.btm**です。 **[追加]** をクリックします。  
   
     2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
   

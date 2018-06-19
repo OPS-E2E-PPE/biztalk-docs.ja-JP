@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269962"
 ---
 # <a name="sendportref-sendports-node"></a>SendPortRef (SendPorts ノード)
 バインド ファイルの SendPorts ノードの SendPortRef ノードには、同報リストによって参照される送信ポートの名前を指定します。  

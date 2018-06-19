@@ -1,14 +1,14 @@
 ---
-title: "Windows Server クラスターのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Windows Server クラスターのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 283cf4cd-ce40-48b7-8549-9ab17d7d2c34
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279962"
 ---
 # <a name="troubleshooting-a-windows-server-cluster"></a>Windows Server クラスターのトラブルシューティング
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、ホスト クラスター サポートを利用するために Windows Server クラスターをサポートし、エンタープライズ シングル サインオン (SSO) マスター シークレットおよび [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの高可用性を実現します。 このトピックでは、Windows Server クラスター環境で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用するための一般的なガイドラインを示し、Windows Server クラスター環境で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用する際に発生する可能性がある既知の問題点について説明します。  

@@ -1,14 +1,14 @@
 ---
-title: "アダプターの構成コンポーネントを高度な |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの構成コンポーネントを高度な |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb31b996-6959-4b5a-9a9f-f48fd91a6180
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230010"
 ---
 # <a name="advanced-configuration-components-for-adapters"></a>アダプターの高度な構成コンポーネント
 BizTalk アダプター フレームワークは、カスタム ドロップダウン エディター、カスタム モーダル ダイアログ エディター、およびカスタム型コンバーターをサポートします。 これらのカスタム デザイン コンポーネントは、ユーザー名やパスワード情報を入力として受け取る場合に特に役に立ちます。  

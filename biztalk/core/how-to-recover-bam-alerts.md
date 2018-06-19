@@ -1,14 +1,14 @@
 ---
-title: "BAM 警告を復旧する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 警告を復旧する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 56c477b4-4605-4763-b20a-3baf4529f13f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972544"
 ---
 # <a name="how-to-recover-bam-alerts"></a>BAM 警告を復旧する方法
 ビジネス アクティビティの監視 (BAM) を使用している場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の復旧処理の一環として BAM 警告を復旧する必要もあります。  

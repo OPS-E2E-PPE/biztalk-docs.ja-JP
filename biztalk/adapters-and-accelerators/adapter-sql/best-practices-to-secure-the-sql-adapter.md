@@ -1,14 +1,14 @@
 ---
-title: "ベスト プラクティスは、SQL アダプタをセキュリティで保護する |Microsoft ドキュメント"
-ms.custom: 
+title: ベスト プラクティスは、SQL アダプタをセキュリティで保護する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e32379d7-800a-49b7-a09a-6b3f04a6e5ef
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225554"
 ---
 # <a name="best-practices-to-secure-the-sql-adapter"></a>SQL アダプタをセキュリティで保護するベスト プラクティス
 使用または使用するアプリケーションを開発するときに機密データの保護の詳細を完全に従う必要のあるベスト プラクティス、[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]です。  

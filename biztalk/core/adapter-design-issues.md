@@ -1,14 +1,14 @@
 ---
-title: "アダプターのデザインに関する問題 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのデザインに関する問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e5568be-a046-40ff-a94a-eda086457564
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226562"
 ---
 # <a name="adapter-design-issues"></a>アダプターのデザインの問題点
 アダプターの構成は、ユーザーがデザイン時に構成を変更すると、シングル サインオン (SSO) データベースに格納されます。 実行時に、メッセージング エンジンはアダプターの構成を取得し、その構成をアダプターに送信します。 アダプターには、次の 4 種類の構成情報が送信されます。  
@@ -172,7 +173,7 @@ return int.Parse(s);
 }   
 ```  
   
- **実装のヒン ト:**アダプターは一般に使用する必要があります、 **OutboundTransportLocation**メッセージ コンテキスト プロパティをメッセージを送信するアドレスを決定します。 この方法を実行すると、静的送信と動的送信に対する送信を一貫して処理できます。 また、この方法を使用すると、実稼動のバインド ファイルのアドレスを簡単に変更できます。  
+ **実装のヒン ト:** アダプターは一般に使用する必要があります、 **OutboundTransportLocation**メッセージ コンテキスト プロパティをメッセージを送信するアドレスを決定します。 この方法を実行すると、静的送信と動的送信に対する送信を一貫して処理できます。 また、この方法を使用すると、実稼動のバインド ファイルのアドレスを簡単に変更できます。  
   
 ## <a name="xsd"></a>[XSD]  
  SDK ファイル アダプターのサンプルに含まれる 4 つの XSD ファイル ハンドル アダプター構成では、主に: ReceiveHandler.xsd、ReceiveLocation.xsd、TransmitLocation.xsd、および TransmitHandler.xsd です。  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server と WCF LOB Adapter SDK を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server と WCF LOB Adapter SDK を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43ff0357-76e6-42bc-a1f7-0385d9378a5f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226018"
 ---
 # <a name="using-biztalk-server-and-the-wcf-lob-adapter-sdk"></a>BizTalk Server と WCF LOB Adapter SDK を使用します。
 このセクションには、リレーションシップに関する情報が含まれています。[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 このセクションに含まれる情報が各によって提供される 2 つの異なるフレームワークの比較が含まれています、移行するためのヒント、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]カスタム アダプター。  

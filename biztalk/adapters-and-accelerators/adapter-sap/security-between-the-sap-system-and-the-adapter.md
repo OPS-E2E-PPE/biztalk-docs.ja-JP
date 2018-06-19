@@ -1,11 +1,11 @@
 ---
-title: "SAP システムとアダプター間のセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: SAP システムとアダプター間のセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Secure Network Communications
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - security considerations, between SAP system and adapter
 - user name password credentials
 ms.assetid: fa21df0b-a364-4a52-8c38-49c5ee6267cc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217946"
 ---
 # <a name="security-between-the-sap-system-and-the-adapter"></a>SAP システムとアダプター間のセキュリティ
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] SAP セキュリティで保護されたネットワーク通信 (SNC) またはユーザー名パスワード資格情報、SAP サーバーとの間のセキュリティで保護された通信をサポートしています。 ユーザー名パスワードの資格情報は、SAP システムに接続の認証のみを提供します。接続経由で交換されるデータのすべてのセキュリティは提供されません。 SNC とユーザー名パスワードの資格情報を同時に使用することはできません。  

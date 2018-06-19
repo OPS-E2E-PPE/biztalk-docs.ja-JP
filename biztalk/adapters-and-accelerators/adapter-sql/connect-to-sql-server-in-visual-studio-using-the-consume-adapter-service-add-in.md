@@ -1,14 +1,14 @@
 ---
-title: "アダプター サービスのアドインを使用して Visual Studio での SQL Server に接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター サービスのアドインを使用して Visual Studio での SQL Server に接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d4fa2bd-ac9e-41b1-8fea-e6a41cbfd1a2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224210"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-the-consume-adapter-service-add-in"></a>アダプター サービスのアドインを使用して Visual Studio での SQL Server に接続します。
 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]をインストールするときにインストールされている[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]コンピューターにインストールされているすべての WCF カスタム バインドを読み込みます。 WCF ベースを使用して SQL Server に接続する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]BizTalk プロジェクトで使用する必要があります、 **sqlbinding**です。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
         |**カテゴリ**|をクリックして**アダプター サービスの使用**です。|  
         |**[テンプレート]**|をクリックして**アダプター サービスの使用**です。|  
   
-    4.  **[追加]**をクリックします。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。  
+    4.  **[追加]** をクリックします。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。  
   
 2.  **バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、クリックして**構成**です。  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**なし**|Windows 認証を使用して SQL Server に接続します。|  
     |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
   
 4.  クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
@@ -66,9 +67,9 @@ ms.lasthandoff: 09/20/2017
   
 5.  クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
-7.  **[接続]**をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
+7.  **[接続]** をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
   
      次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。  
   

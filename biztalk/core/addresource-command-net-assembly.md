@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef6ec298-35fe-4845-9549-685993d2c659
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22231658"
 ---
 # <a name="addresource-command-net-assembly"></a>AddResource コマンド: .NET アセンブリ
 使用する (マネージ COM コンポーネントまたは COM + コンポーネントを含む) を .NET アセンブリを BizTalk アプリケーションを追加する、 **AddResource** コマンドを指定 **System.BizTalk:Assembly** 、型パラメーターです。 このコマンドを実行すると、該当するアセンブリが BizTalk 管理データベースに追加されます。 このアセンブリは、BizTalk 管理コンソール (追加先アプリケーションの Resources フォルダー) にも表示されます。 さらに、アセンブリが使用すると表示されている、 [ListApp コマンド](../core/listapp-command.md)です。  
@@ -24,7 +25,7 @@ ms.lasthandoff: 03/23/2018
  アプリケーションに同じ完全名の既存のアセンブリが存在する場合は、Overwrite パラメーターを指定できます。 完全名は、名前、公開キー トークン、カルチャ、およびバージョンから成ります。 この場合、既存のアセンブリは上書きされます。 依存関係に関する詳細については、次を参照してください。[の依存関係とアプリケーションの配置](../core/dependencies-and-application-deployment.md)です。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]  
+ **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]  
   
 ## <a name="parameters"></a>パラメーター  
   

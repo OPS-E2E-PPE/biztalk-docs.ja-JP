@@ -1,14 +1,14 @@
 ---
-title: "プログラミングのシングル サインオンの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: プログラミングのシングル サインオンの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a0a3978-cdbf-4703-9d1d-23e0f4923c9c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264826"
 ---
 # <a name="programming-single-sign-on-overview"></a>プログラミングのシングル サインオンの概要
 複数の異なるアプリケーションに依存するビジネス プロセスでは、場合によっては、複数の異なるセキュリティ ドメインの操作が必要になります。 たとえば、Microsoft Windows オペレーティング システムのアプリケーションにアクセスするときは、それに応じたセキュリティ資格情報のセットを使用する必要があり、IBM メインフレームのアプリケーションにアクセスするときは、別の資格情報を使用する必要があります。 このような多くの資格情報を操作することは、ユーザーにとって困難です。このため、プロセスを自動化する必要性が高まっています。 この問題に対処するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、エンタープライズ シングル サインオン (SSO) が提供されます。 SSO では、Windows ユーザー ID を Windows 以外のユーザー資格情報にマップすることができます。 このサービスによって、さまざまなシステムのアプリケーションを使用するビジネス プロセスの作業を単純化できます。  

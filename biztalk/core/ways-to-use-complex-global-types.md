@@ -1,14 +1,14 @@
 ---
-title: "複合グローバル型を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 複合グローバル型を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ddea1c7b-eb0e-4521-8576-0ea6f9460847
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288658"
 ---
 # <a name="ways-to-use-complex-global-types"></a>複合グローバル型の使用方法
 複合型を複合グローバル型に変換すると、スキーマ内の他の場所で再利用できます。 複合型を定義してグローバル複合型に変換することに関する詳細については、次を参照してください。[複合グローバル型の定義と名前付け](../core/complex-global-type-definition-and-naming.md)です。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 -   **Base Data Type プロパティ**です。 複合グローバル型のバリエーション (機能を拡張または制限したもののいずれか) を使用したい場合、このプロパティを、複合グローバル型に対して指定した型名に設定します (ドロップダウン リストから選択できます)。 このプロパティを設定すると、 **Derived By**ノードのプロパティに対する変更を**拡張子**(および**コンテンツ タイプ**プロパティに対する変更を**ComplexContent**)、既定の派生型には、複合グローバル型を拡張することを示すです。 変更することができます**制限**特性の場合は、変更します。 派生元のベースの複合グローバル型を変更すると、派生された型に自動的に変更が反映されます。ただし、派生された型の変更は、基本型に反映されません。  
   
 > [!NOTE]
->  これらのプロパティのいずれかを設定すると、もう一方の既存の設定が自動的に削除されます。 さらに、自動相互作用の他の設定など、関連するプロパティが表示されます、 **Derived By**プロパティを**(既定)**から既存の設定を削除、**ベースデータ型**プロパティです。  
+>  これらのプロパティのいずれかを設定すると、もう一方の既存の設定が自動的に削除されます。 さらに、自動相互作用の他の設定など、関連するプロパティが表示されます、 **Derived By**プロパティを **(既定)** から既存の設定を削除、**ベースデータ型**プロパティです。  
   
 > [!NOTE]
 >  XSD ビューの変更を参照しながら、テストのスキーマを作成し、これらのプロパティに別の値を使用できます。  

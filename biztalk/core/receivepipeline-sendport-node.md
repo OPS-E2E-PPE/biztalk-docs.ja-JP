@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268874"
 ---
 # <a name="receivepipeline-sendport-node"></a>ReceivePipeline (SendPort ノード)
 バインド ファイルの SendPort ノードの ReceivePipeline ノードには、バインド ファイルと共にエクスポートされる双方向送信ポートにバインドされる受信パイプラインに関する特定の情報が含まれます。  

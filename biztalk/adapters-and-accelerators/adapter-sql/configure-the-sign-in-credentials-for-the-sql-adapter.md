@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタの資格情報 で、サインオンの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタの資格情報 で、サインオンの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9c20e177-0e64-4df3-a3dd-dca3fcf314db
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226242"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sql-adapter"></a>SQL アダプタの資格情報 で、サインオンを構成します。
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアント クライアントの資格情報を提供する必要があります。 アダプターは、SQL Server でユーザーを認証し、接続を確立するために、これらの資格情報を使用します。  
@@ -52,9 +53,9 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**なし**|Windows 認証を使用して SQL Server に接続します。|  
     |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ### <a name="using-add-adapter-metadata-wizard"></a>アダプター メタデータのウィザードを使用して追加  
   
@@ -67,14 +68,14 @@ ms.lasthandoff: 09/20/2017
     |**カテゴリ**|をクリックして**アダプターを追加**です。|  
     |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
   
-3.  **[追加]**をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+3.  **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
   
 4.  アダプターの追加ウィザードで選択**WCF-SQL**です。 BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。  
   
     > [!IMPORTANT]
     >  BizTalk で構成されている WCF SQL ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
 6.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**sqlBinding**、順にクリック**構成**です。  
   
@@ -87,9 +88,9 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**なし**|Windows 認証を使用して SQL Server に接続します。|  
     |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ## <a name="enter-credentials-from-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールから資格情報を入力してください。  
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または WCF SQL ポートの構成の一部として、資格情報を指定することができます。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 09/20/2017
   
     -   選択、**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ### <a name="enter-credentials-for-the-wcf-sql-port"></a>WCF SQL ポートの資格情報を入力します。  
   
@@ -156,7 +157,7 @@ ms.lasthandoff: 09/20/2017
   
     -   選択、**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
 [SQL アダプタを BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

@@ -1,14 +1,14 @@
 ---
-title: "ノード名プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: ノード名プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95d9e5bf-7439-4ef4-ad14-e8d3e8eff911
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972800"
 ---
 # <a name="node-name-property"></a>"ノード名" プロパティ
 BizTalk エディターでノードをスキーマ ツリーに挿入すると、ノードの名前が変更されるノードと名前が変更されないノードがあります。 基本的に、できるし、名前を変更する必要があります**レコード**ノード、**フィールド要素**ノード、および**フィールド属性**ノード。 これらのノードに名前を指定すると、その名前は、スキーマで定義されるメッセージの XML 要素および XML 属性の名前として使用されます。  

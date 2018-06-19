@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL ストアド プロシージャを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL ストアド プロシージャを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4edd2fac-0b54-4406-932e-e3044a66b2e6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222290"
 ---
 # <a name="invoke-stored-procedures-in-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL ストアド プロシージャを呼び出す
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントは、ストアド プロシージャを呼び出す、WCF クライアントで呼び出すことができますの操作として、ストアド プロシージャを検出します。 ストアド プロシージャが結果セットを返す方法に基づき、アダプターは、すべてのストアド プロシージャとしてを分類します。  

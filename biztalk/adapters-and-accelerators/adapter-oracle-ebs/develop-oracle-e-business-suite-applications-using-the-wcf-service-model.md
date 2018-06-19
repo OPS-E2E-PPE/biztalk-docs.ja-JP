@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して Oracle E-business Suite アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して Oracle E-business Suite アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cf3430d-12e9-437c-b398-d978faa4da2b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217322"
 ---
 # <a name="develop-oracle-e-business-suite-applications-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle E-business Suite アプリケーションを開発します。
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]接続する WCF サービスのモデルと呼ばれるプログラミング モデルを提供、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。 サービス モデルに追加された解決するには、WCF の WCF チャネルのプログラミング モデルの制限の一部。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
  WCF クライアント クラスを生成する、次のツールのいずれかを使用して、関連付けられているサービス メタデータからヘルパー コードを[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を公開します。  
   
--   **ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)**WCF に付属しています。  
+-   **ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)** WCF に付属しています。  
   
--   **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**に付属している、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。 このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [Oracle E-business Suite ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)です。  
+-   **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** に付属している、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。 このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [Oracle E-business Suite ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)です。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  次のトピックでは、WCF サービス モデルを使用するアプリケーションを開発する方法に関する情報を提供します。  

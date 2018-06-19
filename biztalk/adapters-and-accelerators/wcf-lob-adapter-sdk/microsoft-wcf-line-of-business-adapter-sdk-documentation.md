@@ -1,15 +1,15 @@
 ---
-title: "Microsoft Windows Communication Foundation の行のビジネス アダプター SDK のドキュメント |Microsoft ドキュメント"
-description: "リンクをインストール、開始、計画し設計、開発、および BizTalk Server で WCF LOB Adapter SDK のトラブルシューティング"
-ms.custom: 
+title: Microsoft Windows Communication Foundation の行のビジネス アダプター SDK のドキュメント |Microsoft ドキュメント
+description: リンクをインストール、開始、計画し設計、開発、および BizTalk Server で WCF LOB Adapter SDK のトラブルシューティング
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a2b098c-ef41-4cc0-8063-1fd043f1176f
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225826"
 ---
 # <a name="microsoft-windows-communication-foundation-line-of-business-adapter-sdk-documentation"></a>Microsoft Windows Communication Foundation の行のビジネス アダプター SDK のドキュメント
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ドキュメントには、開発、配置、およびで作成されたアダプターを使用するのに役立つリソースが含まれています、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216026"
 ---
 # <a name="develop-sap-applications-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して SAP アプリケーションを開発します。
 使用することができます、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]チャネル モデルを使用する、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] SAP バインドで作成されたチャネル インスタンス経由で直接 XML メッセージを送信することによってです。  

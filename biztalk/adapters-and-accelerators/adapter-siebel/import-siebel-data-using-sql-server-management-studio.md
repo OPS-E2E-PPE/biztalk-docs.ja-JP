@@ -1,17 +1,17 @@
 ---
-title: "Siebel を SQL Server Management Studio を使用してデータをインポート |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel を SQL Server Management Studio を使用してデータをインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SQL Server Management Studio, importing data by using
 - how to, import data by using SQL Server Management Studio
 ms.assetid: 67da7f7b-37ea-4a31-89ef-a9f6974ff976
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223722"
 ---
 # <a name="import-siebel-data-using-sql-server-management-studio"></a>Siebel を SQL Server Management Studio を使用してデータをインポートします。
 このセクションでは、SQL Server Management Studio を使用して、Siebel システムから SQL Server データベースにデータをインポートする方法に関する情報を提供します。 また、作成し、このデータをインポートする SSIS パッケージを実行する方法の手順についても提供します。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **データ ソースを選択** ダイアログ ボックスから、**データソース**ドロップダウン リストで、 **.NET Framework Data Provider 用 Siebel eBusiness Applications**です。 さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。 接続文字列プロパティの詳細については、次を参照してください。 [Siebel 接続文字列のデータ プロバイダーのプロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)です。  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
 6.  **先選択** ダイアログ ボックス。  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  **データベース**ドロップダウン リストで、Siebel テーブルをインポートするデータベースを選択します。  
   
-    5.  **[次へ]**をクリックします。  
+    5.  **[次へ]** をクリックします。  
   
 7.  **テーブルのコピーを指定またはクエリ** ダイアログ ボックスで、選択、**を転送するデータを指定するクエリを記述**オプション。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
   
     -   Nullable、サイズ、有効桁数、小数点以下桁数などその他のフィールドの属性を変更します。  
   
-         終了したら **[OK]**をクリックします。  
+         終了したら **[OK]** をクリックします。  
   
 12. **ソース テーブルおよびビュー**ダイアログ ボックスで、をクリックして**次へ**です。  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 09/20/2017
   
     -   **パッケージの保護レベル**-ドロップダウン リスト、選択、保護は、パッケージ レベルし、資格情報を指定必要な場所です。  
   
-    -   **[次へ]**をクリックします。  
+    -   **[次へ]** をクリックします。  
   
      パッケージを保存することを選択する場合は、次の手順に進みます。 それ以外の場合、手順 15 に進みます。  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
     -   ファイル システムにパッケージを保存する場合は、指定のファイルの場所と名前、**ファイル名**テキスト ボックス。  
   
-         終了したら **[次へ]**をクリックします。  
+         終了したら **[次へ]** をクリックします。  
   
 15. **ウィザードを完了** ダイアログ ボックスで、ウィザードを実行し、をクリックする操作の概要を確認**完了**です。  
   
@@ -123,11 +124,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  **Windows エクスプ ローラー**パッケージを保存した場所に移動し、パッケージをダブルクリックします。  
   
-2.  **[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[実行]**をクリックします。 **パッケージ実行の進行状況** ダイアログ ボックスには、さまざまなタスクの進行状況が表示されます。  
+2.  **[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[実行]** をクリックします。 **パッケージ実行の進行状況** ダイアログ ボックスには、さまざまなタスクの進行状況が表示されます。  
   
 3.  すべてのタスクが正常に実行される、クリックして**閉じる**です。  
   
-4.  **[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[閉じる]**をクリックします。  
+4.  **[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[閉じる]** をクリックします。  
   
  パッケージの実行に関する詳細についてでパッケージの実行」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)です。 いずれかの SSIS パッケージに関連するその他の情報を参照してください"パッケージ操作方法に関するトピック (SSIS)"で[http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)です。  
   

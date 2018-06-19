@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269554"
 ---
 # <a name="sample-architectures-for-small-amp-medium-sized-companies"></a>サンプル アーキテクチャの小規模&amp;中規模企業
 このセクションでは、中小企業の資産を保護する必要がある場合に、Microsoft BizTalk Server を展開するためのサンプル アーキテクチャについて説明します。 これらのアーキテクチャでは、重層的な防御とサービスの分離を使用して、攻撃の影響を最小限に抑えていますが、ハードウェア、ソフトウェア、および人材の数量は大企業で一般的に必要であるとされる数量を想定しています。  

@@ -1,14 +1,14 @@
 ---
-title: "手順 3: ファイルの受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: ファイルの受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5579375-8c05-4583-bcaa-b483ac275d8a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224562"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario"></a>手順 3: ファイルの受信場所を追加、リアルタイムのシナリオの対話
 検証のテスト ファイルを簡単に削除することができます、受信場所を設定します。 この場所を使用するには、シナリオをテストします。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
     |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**です。|  
     |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   

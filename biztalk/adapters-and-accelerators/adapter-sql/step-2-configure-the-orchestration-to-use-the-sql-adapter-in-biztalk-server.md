@@ -1,14 +1,14 @@
 ---
-title: "手順 2: SQL アダプターを使用して BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: SQL アダプターを使用して BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6152560-5ff0-4bdc-818c-e906b9642f52
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223794"
 ---
 # <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-using-the-sql-adapter"></a>手順 2: SQL アダプターを使用して BizTalk Server 管理コンソールでオーケストレーションを構成します。
 ![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
   
- **目標:**このステップでは、次のタスクを実行します。  
+ **目標:** このステップでは、次のタスクを実行します。  
   
 -   WCF カスタム作成送信-受信ポートを使用して、SQL Server データベースからメッセージを送受信、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 前の手順で作成したマップを使用するには、このポートを構成します。  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
      ![送信マップを構成する](../../adapters-and-accelerators/adapter-sql/media/5b54e09b-8784-4df6-a279-e8aed813114e.gif "5b54e09b-8784-4df6-a279-e8aed813114e")  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ### <a name="to-configure-the-biztalk-application"></a>BizTalk アプリケーションを構成するには  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  このトピックの前半で作成した、Wcf-custom 送信ポートを選択します。  
   
-    4.  **[OK]**をクリックします。  
+    4.  **[OK]** をクリックします。  
   
 ## <a name="next-steps"></a>次の手順  
  WCF ベースを使用して SQL Server データベースにメッセージを送信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 今すぐ」の説明に従って、SQL Server データベースで挿入操作を実行する要求メッセージを送信することによって移行済みの BizTalk アプリケーションをテストする必要があります[手順 3: SQL アダプタを使用する移行されたアプリケーションをテスト](../../adapters-and-accelerators/adapter-sql/step-3-test-the-migrated-application-that-uses-the-sql-adapter.md)です。  

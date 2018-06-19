@@ -1,14 +1,14 @@
 ---
-title: "FileAct アダプター リアルタイム エンド ツー エンド プリミティブ |Microsoft ドキュメント"
-ms.custom: 
+title: FileAct アダプター リアルタイム エンド ツー エンド プリミティブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8591120-7259-49cb-90ac-954d8be226ed
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224930"
 ---
 # <a name="fileact-adapter-real-time-end-to-end-primitives"></a>FileAct アダプター リアルタイム エンド ツー エンド プリミティブ
 SWIFTNet プリミティブが、アプリケーションと SWIFTNet リンク (SNL) の間で交換される XML ドキュメントのペアです。 各エンド ツー エンド プリミティブ型、そこに側のプリミティブ – クライアント (または送信) の横にあるいずれかと、サーバーで 1 つのバージョンの 2 つ (または受信)。 4 つのメッセージの合計が含まれます。 ファイルの配置のプリミティブ、ファイルの取得のプリミティブ型、およびそれぞれに対して配信通知を送信します。  

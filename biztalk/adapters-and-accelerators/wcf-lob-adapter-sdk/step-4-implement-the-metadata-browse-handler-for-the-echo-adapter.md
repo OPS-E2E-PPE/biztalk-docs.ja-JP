@@ -1,14 +1,14 @@
 ---
-title: "手順 4: エコー アダプターのメタデータ参照のハンドラーを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: エコー アダプターのメタデータ参照のハンドラーを実装する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d31fc6c1-e4b5-4529-ba3e-2a8cfb8ece1c
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226986"
 ---
 # <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a>手順 4: エコー アダプターのメタデータ参照のハンドラーを実装します。
 ![手順 4. 9 の](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  
@@ -55,7 +56,7 @@ public interface IMetadataBrowseHandler : IConnectionHandler, IDisposable
   
 |**パラメーター**|**定義**|  
 |-------------------|--------------------|  
-|NodeId|メタデータ エクスプ ローラーの階層の各項目 (、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と<br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)])、nodeId がします。 各ノードの ID は一意である必要があり、カテゴリ、または操作することができます。 カテゴリは、サブカテゴリを持つことができます。 **注:**場合は null または空の文字列 ("")、ルート ノードから (「/」) で既定の操作が取得されます。|  
+|NodeId|メタデータ エクスプ ローラーの階層の各項目 (、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と<br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)])、nodeId がします。 各ノードの ID は一意である必要があり、カテゴリ、または操作することができます。 カテゴリは、サブカテゴリを持つことができます。 **注:** 場合は null または空の文字列 ("")、ルート ノードから (「/」) で既定の操作が取得されます。|  
 |childStartIndex|返される最初の子のインデックス。<br /><br /> エコー アダプターによってサポートされていません。|  
 |maxChildNodes|返される結果のノードの最大数。 Int32.Max を使用して、結果のすべてのノードを取得します。<br /><br /> エコー アダプターによってサポートされていません。|  
 |timeout|操作が完了する許可された最大時間。<br /><br /> エコー アダプターによってサポートされていません。|  
@@ -113,13 +114,13 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
- 次の 3 つの送信操作を参照するときに、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールを**選択コントラクト型**ドロップダウン リスト、選択、**クライアント (送信操作)**オプション。 これらの操作を参照してください、**利用可能なカテゴリと操作**リスト ボックスで、次のようにします。  
+ 次の 3 つの送信操作を参照するときに、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールを**選択コントラクト型**ドロップダウン リスト、選択、**クライアント (送信操作)** オプション。 これらの操作を参照してください、**利用可能なカテゴリと操作**リスト ボックスで、次のようにします。  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/c8755805-cbb0-40f1-887a-a3123f71ae7e.gif "c8755805-cbb0-40f1-887a-a3123f71ae7e")  
   
  前の図では、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`値に表示されます、**名前**の列、**利用可能なカテゴリと操作**ボックスの一覧です。 渡されたパラメーター、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`にコンス トラクターが、**ノード ID**の列、**利用可能なカテゴリと操作**リスト ボックスで、および`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A`値、ツールヒントとして表示されます右クリックすると、説明を含む、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`です。  
   
- 入力方向の操作を表示する、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールを**選択コントラクト型**ドロップダウン リスト、選択、**サービス (入力方向の操作)**オプション。 受信 OnReceiveEcho 操作を参照してください、**利用可能なカテゴリと操作**リスト ボックスで、次の図に示すようにします。  
+ 入力方向の操作を表示する、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールを**選択コントラクト型**ドロップダウン リスト、選択、**サービス (入力方向の操作)** オプション。 受信 OnReceiveEcho 操作を参照してください、**利用可能なカテゴリと操作**リスト ボックスで、次の図に示すようにします。  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb.gif "26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb")  
   
@@ -200,7 +201,7 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
   
 9. Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
-10. **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。 プロジェクトを正常にビルドする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
+10. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 プロジェクトを正常にビルドする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
   
 > [!NOTE]
 >  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 5: エコー アダプターのメタデータの検索ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)です。  

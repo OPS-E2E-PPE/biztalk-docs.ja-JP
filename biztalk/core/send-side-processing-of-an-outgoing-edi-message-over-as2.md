@@ -1,14 +1,14 @@
 ---
-title: "送信側の AS2 経由で送信 EDI メッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信側の AS2 経由で送信 EDI メッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfb63b22-6e2e-4d4f-b028-301c8d4d53b0
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271874"
 ---
 # <a name="send-side-processing-of-an-outgoing-edi-message-over-as2"></a>AS2 経由での送信 EDI メッセージの送信側の処理
 AS2 経由の EDI メッセージの送信側の処理には、EDI ペイロードを使用した AS2 メッセージの送信と、MDN および EDI 受信確認の受信 (有効な場合) があります。  

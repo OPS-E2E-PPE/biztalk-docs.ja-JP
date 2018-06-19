@@ -1,17 +1,17 @@
 ---
-title: "サービスからパイプラインを使用して指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サービスからパイプラインを使用して指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, pipelines
 - pipelines, service solutions
 ms.assetid: 0870fce1-52ec-4ff8-884f-a3199bd7ccbb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287210"
 ---
 # <a name="using-pipelines-from-the-service-oriented-solution"></a>サービスからパイプラインを使用して指向ソリューション
 カスタマ サービス オーケストレーションのインライン バージョン (**CustomerService**)、直接 payment tracking システムを呼び出します。 送信するメッセージを準備して受信するメッセージを処理するため、オーケストレーションは、コードからパイプラインを呼び出します。 このため、他のシナリオ バージョンのパイプラインを再利用できます。 また、パイプライン ステージのオーケストレーションの切り離しを保存します。  

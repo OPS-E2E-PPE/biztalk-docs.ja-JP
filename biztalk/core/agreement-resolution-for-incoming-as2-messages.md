@@ -1,14 +1,14 @@
 ---
-title: "受信 AS2 メッセージのアグリーメントの解決 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信 AS2 メッセージのアグリーメントの解決 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 746d01af-de6a-4d5d-9433-b0e1a2b41861
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230154"
 ---
 # <a name="agreement-resolution-for-incoming-as2-messages"></a>受信 AS2 メッセージのアグリーメントの解決
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDIINT/AS2 でエンコードされたメッセージを HTTP/HTTPS トランスポート経由で受信すると、メッセージを送信した取引先のビジネス プロファイルの特定を試みます。 これは、次の処理を順番に試みることによって行われます。  

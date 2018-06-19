@@ -1,14 +1,14 @@
 ---
-title: "手順 3: を構成し、アプリケーションを起動 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: を構成し、アプリケーションを起動 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4252470-805e-404f-80d5-df8d1ff3af63
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223506"
 ---
 # <a name="step-3-configure-and-start-the-application"></a>手順 3: を構成し、アプリケーションを起動
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 10 分  
   
- **目標:**この手順で構成して SampleApplication アプリケーションを起動します。 作成した論理アイテムに関連付ける SampleApplication アプリケーションを構成するときに[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]物理対応するとします。  
+ **目標:** この手順で構成して SampleApplication アプリケーションを起動します。 作成した論理アイテムに関連付ける SampleApplication アプリケーションを構成するときに[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]物理対応するとします。  
   
 ## <a name="prerequisites"></a>前提条件  
  完了する必要があります[手順 2: ポートを構成する](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)です。  

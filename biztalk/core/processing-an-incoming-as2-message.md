@@ -1,14 +1,14 @@
 ---
-title: "入力方向の AS2 メッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 入力方向の AS2 メッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 998ff334-71e2-4686-b2b7-44940a0ebed1
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266394"
 ---
 # <a name="processing-an-incoming-as2-message"></a>受信 AS2 メッセージの処理
 AS2 受信パイプラインでは、AS2 を経由して受信メッセージを処理します。 AS2EdiReceive 受信パイプラインでは、EDI 逆アセンブラーを使用して EDI エンコード メッセージを処理します。 AS2Receive 受信パイプラインでは、AS2 逆アセンブラーを使用して、EDI でエンコードされていないメッセージを処理します。 これらの 2 つのパイプラインは、それぞれ異なる方法で AS2 メッセージのペイロードを処理し、MDN を生成します。ただし、どちらの受信パイプラインも、AS2 デコーダーを使用して AS2 メッセージを処理します。  

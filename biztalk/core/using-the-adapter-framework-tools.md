@@ -1,14 +1,14 @@
 ---
-title: "アダプター フレームワーク ツールを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター フレームワーク ツールを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65357570-1d34-400a-831e-0422f6960ad4
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287666"
 ---
 # <a name="using-the-adapter-framework-tools"></a>アダプター フレームワーク ツールを使用します。
 BizTalk アダプター フレームワークでは、次のツールやビューを使用して、カスタム アダプターを管理および開発します。  

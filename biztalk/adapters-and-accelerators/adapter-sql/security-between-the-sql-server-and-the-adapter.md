@@ -1,14 +1,14 @@
 ---
-title: "SQL Server とアダプター間のセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server とアダプター間のセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4b0fd11-6753-4f52-9be7-3b6fa330fb8b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222498"
 ---
 # <a name="security-between-the-sql-server-and-the-adapter"></a>SQL Server とアダプター間のセキュリティ
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と互換性が標準の方法では、データベース サーバーとデータ交換をセキュリティで保護するために使用 SSO と IPSEC などです。 セキュリティ保護されていないデータの交換には、承認されていないアクターにデータを公開できます。 SQL Server のセキュリティに関する問題については、次を参照してください。 [for SQL Server のセキュリティに関する考慮事項](http://go.microsoft.com/fwlink/p/?LinkId=196954)SQL のドキュメントにします。  

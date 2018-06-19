@@ -1,14 +1,14 @@
 ---
-title: "アダプター デザイン時の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター デザイン時の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5e7b63c-6e17-4c54-9bbf-6964668a2420
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226170"
 ---
 # <a name="adapter-design-time-configuration"></a>アダプターのデザイン時構成
 アダプターには、実行時コンポーネントとデザイン時コンポーネントの両方が含まれます。 実行時コンポーネントを表示することはできません。 実行時コンポーネントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージの送信、受信、および処理をユーザーに意識させることなく行います。  

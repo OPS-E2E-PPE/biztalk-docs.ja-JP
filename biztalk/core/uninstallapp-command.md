@@ -1,14 +1,14 @@
 ---
-title: "UninstallApp コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: UninstallApp コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f45c9530-8138-40f1-b279-1428c5a7fbbc
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286786"
 ---
 # <a name="uninstallapp-command"></a>UninstallApp コマンド
 BizTalk アプリケーションをローカル コンピューターからアンインストールし、さらに、コントロール パネルの [プログラムの追加と削除] に表示されるプログラム一覧からも削除します。 このコマンドの実行結果は、[プログラムの追加と削除] を使ってアプリケーションを削除した場合と同じです。 このアプリケーションに対して複数の .msi ファイルがインストールされている場合、これらの .msi ファイルによってインストールされたアイテムがすべてアンインストールされます。  
@@ -33,7 +34,7 @@ BizTalk アプリケーションをローカル コンピューターからア�
   
 |パラメーター|必須|Description|  
 |---------------|--------------|-----------------|  
-|**/ApplicationName** (または**/A**、「解説」を参照してください)|はい|アンインストールする BizTalk アプリケーションの名前。 名前には、スペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
+|**/ApplicationName** (または **/A**、「解説」を参照してください)|はい|アンインストールする BizTalk アプリケーションの名前。 名前には、スペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
   
 ## <a name="sample"></a>サンプル  
  **Applicationname: myapplication BTSTask UninstallApp**  

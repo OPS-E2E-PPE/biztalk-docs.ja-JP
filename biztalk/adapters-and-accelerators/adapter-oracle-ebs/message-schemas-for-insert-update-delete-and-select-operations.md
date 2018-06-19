@@ -1,14 +1,14 @@
 ---
-title: "Insert、Update、Delete のメッセージ スキーマおよび操作の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: Insert、Update、Delete のメッセージ スキーマおよび操作の選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b8de271-67db-4279-8f95-0b4dd92fa3c4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218234"
 ---
 # <a name="message-schemas-for-insert-update-delete-and-select-operations"></a>メッセージ スキーマの挿入、更新、削除、および操作の選択
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]サーフェスの基本的な Insert、Update、Delete、および Oracle E-business Suite では、各インターフェイス テーブルと、基になるデータベース内の各テーブルの操作を選択します。 アダプターでは、Oracle E-business Suite では、各インターフェイス ビューと基になるデータベース内の各ビューの Select 操作も明らかです。 これらの操作は、WHERE 句で修飾された適切な SQL ステートメントを実行します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]これらの操作で厳密に型指定されたレコードとレコード セットを使用します。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 |---------------|-----------------|-----------------|---------------------------------|  
 |Insert|`<Insert xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <RECORDSET>     <InsertRecord>       <[FIELD1_NAME] InlineValue="value">[value1]</[FIELD1_NAME]>       <[FIELD2_NAME] InlineValue="value">[value2]</[FIELD2_NAME]>       …     </InsertRecord>   </RECORDSET> </Insert>`|値、 **InlineValue**属性に指定する場合は、要素の値を上書きします。|`INSERT INTO TABLE_NAME (FIELD1_NAME, FIELD2_NAME, …) VALUES (value1, value2, …);`|  
 |応答を挿入します。|`<InsertResponse xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <InsertResult>[rows inserted]</InsertResult> </InsertResponse>`|挿入された行の数が返されます、 **InsertResult**要素。|--|  
-|Select|`<Select xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <COLUMN_NAMES>[COLUMN_list]</COLUMN_NAMES>   <FILTER>WHERE_clause</FILTER> </Select>`|SELECT クエリは、フィルター要素で指定する WHERE 句を使用して、対象テーブルで実行されます。 結果セットにはで指定された列名のコンマ区切りリスト内の列が含まれています、**それら**要素。<br /><br /> **重要:**インターフェイス ビューとデータベースのビューに適用できる唯一の操作です。|`SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`|  
+|Select|`<Select xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <COLUMN_NAMES>[COLUMN_list]</COLUMN_NAMES>   <FILTER>WHERE_clause</FILTER> </Select>`|SELECT クエリは、フィルター要素で指定する WHERE 句を使用して、対象テーブルで実行されます。 結果セットにはで指定された列名のコンマ区切りリスト内の列が含まれています、**それら**要素。<br /><br /> **重要:** インターフェイス ビューとデータベースのビューに適用できる唯一の操作です。|`SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`|  
 |応答を選択します。|`<SelectResponse  xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <SelectResult>     <SelectRecord>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </SelectRecord>   </SelectResult> </SelectResponse>`|SELECT クエリによって生成される結果セットです。|--|  
 |Update|`<Update xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <RECORDSET>     <[FIELD1_NAME]>value1</[FIELD1_NAME]>     <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …   </RECORDSET>   <FILTER>WHERE_clause</FILTER> </Update>`|Where に一致する行句で指定された、**フィルター**要素で指定した値に更新が、 **RECORDSET**です。 指定されている列のみ、 **RECORDSET**要素が一致行ごとに更新されます。|`UPDATE [TABLE_NAME] SET [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, … WHERE WHERE_clause;`|  
 |更新の応答|`<UpdateResponse xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <UpdateResult>[rows inserted]</UpdateResult> </UpdateResponse>`|更新された行の数が返される、 **UpdateResult**要素。|--|  

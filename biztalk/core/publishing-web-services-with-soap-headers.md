@@ -1,11 +1,11 @@
 ---
-title: "SOAP ヘッダーによる Web サービスを発行 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP ヘッダーによる Web サービスを発行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP headers, orchestrations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - pipelines, SOAP headers
 - orchestrations, SOAP headers
 ms.assetid: c362caff-b75f-4c1b-9013-d2b9c74f5c65
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269026"
 ---
 # <a name="publishing-web-services-with-soap-headers"></a>SOAP ヘッダーで Web サービスの公開
 BizTalk Web サービス公開ウィザードを実行すると、Web サービスに SOAP ヘッダーが追加されます。 SOAP ヘッダーをサポートする Web サービスを公開すると、追加されたヘッダーは、SOAP ヘッダーの文字列表記を含むコンテキスト プロパティとして、オーケストレーションおよびパイプライン コンポーネントに対して使用可能となります。  

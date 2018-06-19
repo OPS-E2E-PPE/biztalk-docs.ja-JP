@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce25b112-38c9-40c8-9a5f-a2855572aabb
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22265802"
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a>ソース管理システムを使用した BizTalk Server の開発アイテムの管理
 BizTalk プロジェクトを予期しないシステム障害から保護することは、最優先事項として考える必要があります。 プロジェクト ファイルを保護する方法の 1 つは、Team Foundation Server ソース管理や Microsoft Visual SourceSafe のようなソース コード管理システムを使用することです。 ここでは、任意のソース管理システムで最適に動作するようプロジェクトを編成するための基本的な方法について説明し、Visual SourceSafe の具体的な使用方法を紹介します。  
@@ -98,7 +99,7 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
   
 2.  使用する SourceSafe データベースを選択します。  
   
-3.  **[ツール]** メニューの **[オプション]**をクリックします。  
+3.  **[ツール]** メニューの **[オプション]** をクリックします。  
   
 4.  クリックして、 **ファイルの種類**  タブをクリックします。  
   
@@ -106,7 +107,7 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
   
      *.btm;\*します。btp;\*します。xsd;\*します。odx  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
  これで Visual SourceSafe では、BizTalk Server ファイルの確認や形式の変更が試行されないようになります。  
   

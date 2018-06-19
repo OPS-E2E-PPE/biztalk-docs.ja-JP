@@ -1,18 +1,18 @@
 ---
-title: "アプリケーションまたはグループ内で一意である必要がありますの成果物 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションまたはグループ内で一意である必要がありますの成果物 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, artifacts
 - artifacts, requirements
 - applications, artifacts
 ms.assetid: a758cd74-a962-4e75-aea2-47752ab72a64
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230386"
 ---
 # <a name="artifacts-that-must-be-unique-in-an-application-or-group"></a>アプリケーションまたはグループ内で一意である必要があるアイテム
 次に示すように、BizTalk グループまたはアプリケーション内の特定の種類のアイテムは一意であることが必要です。  

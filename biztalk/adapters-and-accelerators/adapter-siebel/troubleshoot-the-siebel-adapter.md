@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222266"
 ---
 # <a name="troubleshoot-the-siebel-adapter"></a>Siebel アダプターをトラブルシューティングします。
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]を使用してまたはに限らずなど、さまざまな Microsoft テクノロジに依存[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、および Microsoft [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)] /[!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]です。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]の上に構築された、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、さらに必要がある[!INCLUDE[dotnet45](../../includes/dotnet45-md.md)]と[!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]です。 いずれかを使用してアプリケーションを作成して、アダプターを使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または BizTalk アプリケーションを作成しています。 これらのテクノロジと製品に関連する問題については、それぞれのドキュメントを参照してください。  

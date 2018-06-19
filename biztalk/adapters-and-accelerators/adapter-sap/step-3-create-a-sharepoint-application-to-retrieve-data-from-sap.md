@@ -1,11 +1,11 @@
 ---
-title: "手順 3: SAP からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: SAP からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO application, creating an
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Web Part page, creating a
 - Shared Services Provider, creating a
 ms.assetid: 7158caec-9dc0-477c-9db3-179e634e5196
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,13 +25,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219538"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-sap"></a>手順 3: SAP からデータを取得する SharePoint アプリケーションを作成します。
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 15 分  
   
- **目標:**今すぐビジネス データ カタログ定義エディター ツールを使用して作成したアプリケーション定義ファイルを実行し、Microsoft Office SharePoint Server にインポートする必要があります。  
+ **目標:** 今すぐビジネス データ カタログ定義エディター ツールを使用して作成したアプリケーション定義ファイルを実行し、Microsoft Office SharePoint Server にインポートする必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -94,9 +95,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  Customer_Orders.xml、[参照] を開くと、アプリケーション定義のインポート ページで、ファイルを選択し、をクリックして**開く**です。  
   
-5.  **[インポート]**をクリックします。  
+5.  **[インポート]** をクリックします。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
      アプリケーションをインポートした後に移動して、アプリケーションを表示することができます、**ビュー アプリケーション**リンクします。 アプリケーション内のエンティティを表示するのには、アプリケーション名をクリックします。  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  **保存場所**セクションで、**ドキュメント ライブラリ**一覧で、クリックして**フォーム テンプレート**です。  
   
-    5.  **[作成]**をクリックします。 次の図は、作成した後、Web パーツ ページを示します。  
+    5.  **[作成]** をクリックします。 次の図は、作成した後、Web パーツ ページを示します。  
   
          ![空の Web パーツ ページ](../../adapters-and-accelerators/adapter-sap/media/6aa68c43-59df-47c4-95a6-453f7c668025.gif "6aa68c43-59df-47c4-95a6-453f7c668025")  
   
@@ -181,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
      ![SharePoint 内の特定の列の表示](../../adapters-and-accelerators/adapter-sap/media/24213b67-aafe-4534-91a7-06bde7bcbf7c.gif "24213b67-aafe-4534-91a7-06bde7bcbf7c")  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ### <a name="adding-a-business-data-item-web-part"></a>ビジネス データ項目の Web パーツを追加します。  
  ビジネス データ項目の Web パーツを Web パーツ ページに追加する必要があります。 この Web パーツは、先ほど作成したビジネス データ一覧 Web パーツに接続します。 これにより、ビジネス データ一覧 Web パーツで選択した顧客の詳細を表示することができます。 この Web パーツに対応する、 **Specific Finder**メソッド インスタンス (*GetCustomerByNumber_Instance*) で、ビジネス データ カタログ定義エディターを作成しました。  
@@ -211,7 +212,7 @@ ms.lasthandoff: 09/20/2017
   
 9. **フィールド**セクションで、**選択**ページに表示するフィールドを選択します。  
   
-10. 展開、**外観**ノード、および、**タイトル**フィールドに、Web パーツのタイトルを指定します。 この Web パーツを指定する**、特定の顧客の詳細**です。  
+10. 展開、**外観**ノード、および、**タイトル**フィールドに、Web パーツのタイトルを指定します。 この Web パーツを指定する **、特定の顧客の詳細**です。  
   
 11. をクリックして**適用**、順にクリック**OK**です。  
   
@@ -248,7 +249,7 @@ ms.lasthandoff: 09/20/2017
   
 9. [ビューの編集] ページで、**列**セクションで、表示しない列に対して、テキスト ボックスをオフにします。  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 11. Web パーツを接続、**顧客リスト**Web パーツ。 そのためには次を行います。  
   

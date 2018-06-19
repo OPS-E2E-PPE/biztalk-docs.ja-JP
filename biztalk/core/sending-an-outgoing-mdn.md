@@ -1,14 +1,14 @@
 ---
-title: "送信 MDN を送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 MDN を送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2dce7620-d354-4b76-bcbc-f97dc93c3fc3
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271426"
 ---
 # <a name="sending-an-outgoing-mdn"></a>送信 MDN の送信
 送信 MDN は、AS2EDIReceive または AS2Receive 受信パイプラインにより生成され、AS2Send パイプラインにより送信されます。 このトピックでは、MDN の送信方法について説明します。 MDN を生成する方法の詳細については、次を参照してください。[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)です。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
  MDN を非同期に送信する場合、メッセージ ボックスから MDN を取得する個別の送信ポートから MDN を送信する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]個別の元の AS2 メッセージを配信するために使用される一意な TCP/IP 接続で配信される HTTP Post として MDN を送信します。 MDN が個別の HTTP Post として設定されていても、Post では HTTP 応答コマンドが必要です。  
   
- 非同期 MDN は、通常、元の AS2 メッセージの Receipt-Delivery-Option ヘッダーの URL に送信されます。 ただし場合、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティが設定されて、上、**検証**一方向の AS2 アグリーメント タブのページ、**アグリーメントプロパティ**、MDN は送信 URL にダイアログ ボックスを**- Receipt-delivery-option (URL)**アグリーメント プロパティに設定します。  
+ 非同期 MDN は、通常、元の AS2 メッセージの Receipt-Delivery-Option ヘッダーの URL に送信されます。 ただし場合、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティが設定されて、上、**検証**一方向の AS2 アグリーメント タブのページ、**アグリーメントプロパティ**、MDN は送信 URL にダイアログ ボックスを **- Receipt-delivery-option (URL)** アグリーメント プロパティに設定します。  
   
 ## <a name="how-the-send-pipeline-processes-an-outgoing-mdn"></a>送信パイプラインによる送信 MDN の処理方法  
  AS2Send パイプラインは、送信 MDN を次のように処理します。  

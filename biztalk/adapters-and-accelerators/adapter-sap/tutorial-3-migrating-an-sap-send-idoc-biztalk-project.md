@@ -1,17 +1,17 @@
 ---
-title: "チュートリアル 3: SAP を移行する BizTalk プロジェクトの IDOC を送信 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 3: SAP を移行する BizTalk プロジェクトの IDOC を送信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migrating, SAP Send IDOC BizTalk project
 - migration
 ms.assetid: c0a11432-5388-4054-8996-08a957cc02eb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217042"
 ---
 # <a name="tutorial-3-migrating-an-sap-send-idoc-biztalk-project"></a>チュートリアル 3: SAP 送信 IDOC の BizTalk プロジェクトを移行します。
 Microsoft BizTalk Server に付属している SAP アダプターの以前のバージョンが WCF ベース異なる[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]など、多くの点で。  

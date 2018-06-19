@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265658"
 ---
 # <a name="orchestration-debugger-user-interface"></a>オーケストレーション デバッガーのユーザー インターフェイス
 対話型 (デバッグ) モードでは、オーケストレーション デバッガー ビューに 3 つの領域が含まれています: ウィンドウ、追跡したイベント および オーケストレーション ペインのサービスを提供します。 また、対話モードでは、ビューの下部に変数一覧と変数のプロパティが表示されます。  

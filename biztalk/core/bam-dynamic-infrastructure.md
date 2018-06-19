@@ -1,17 +1,17 @@
 ---
-title: "BAM 動的インフラストラクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 動的インフラストラクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - infrastructure, BAM
 - BAM, infrastructure
 ms.assetid: 88f39438-3213-4f0d-8b8d-e6426c266138
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230450"
 ---
 # <a name="bam-dynamic-infrastructure"></a>BAM 動的インフラストラクチャ
 SQL Server のテーブル、BAM ビュー、ストアド プロシージャ、および構成され、増分使用して管理される BAM データベース (プライマリ インポート、アーカイブ、スター スキーマ、および分析) でデータ変換サービス (DTS) パッケージの BAM インフラストラクチャの構成します。BAM 定義を展開します。 インフラストラクチャは、ここで、実行時に、イベントは、相関、集計、および、ユーザーによるクエリの利用できるようです。  

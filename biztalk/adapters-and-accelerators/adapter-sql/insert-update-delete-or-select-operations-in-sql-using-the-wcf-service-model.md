@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 340048ad-ce28-4acf-ae4e-f18bdb3b6f47
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22226090"
 ---
 # <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作の選択
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]一連の SQL Server データベース テーブルおよびビューの基本的な Insert、Select、Update、および削除操作を検出します。 これらの操作を使用することができますを実行して単純な SQL Insert、Select、Update、Delete ステートメントで Where 修飾対象のテーブルまたはビューの句。 このトピックでは、WCF サービス モデルを使用してこれらの操作を実行する方法について説明します。  

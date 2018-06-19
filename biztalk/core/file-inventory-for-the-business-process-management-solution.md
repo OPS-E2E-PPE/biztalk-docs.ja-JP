@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973872"
 ---
 # <a name="file-inventory-for-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションのファイル一覧
 このセクションでは、ビジネス プロセス管理ソリューションのサブディレクトリおよびソース ファイルについて説明します。 ビジネス プロセス管理ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM です。 次の表では、このパスを交換する前に説明\<インストール ディレクトリ\>です。  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL からクエリ通知の複数受信場所を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL からクエリ通知の複数受信場所を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9afbe98e-8901-417c-a807-8db97fd7a24b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223426"
 ---
 # <a name="receive-query-notifications-on-multiple-receive-locations-from-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL からのクエリ通知の複数受信場所の受信します。
 同じデータベース内の複数の受信場所が同じテーブル (例: 従業員) のクエリ通知を受信するように構成の異なる BizTalk アプリケーションの一部として作成が存在するシナリオを検討してください。 同じテーブルには、数百のレコードを挿入、すべての受信場所は、通知メッセージを受け取ります。 効果的に間で通知を受信する複数の受信場所、このような形でその受信場所のいずれかで、通知が受信した場合、BizTalk アプリケーションから、操作を呼び出すことができます、その他の受信場所、同じ通知を取得できません。 そのため、できます。 実質的に複数の場所で受信した負荷分散通知します。  
@@ -50,7 +51,7 @@ DELETE FROM Employee WHERE Employee_ID=@var
     |プロパティのバインド|値|  
     |----------------------|-----------|  
     |**InboundOperationType**|これを設定して**通知**です。|  
-    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:**通知ステートメントのスキーマ名と共にテーブル名を常に指定する必要があります。 たとえば、 `dbo.Employee`のようにします。|  
+    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:** 通知ステートメントのスキーマ名と共にテーブル名を常に指定する必要があります。 たとえば、 `dbo.Employee`のようにします。|  
     |**NotifyOnListenerStart**|これを設定して**True**です。|  
   
 6.  BizTalk アプリケーションを起動します。  

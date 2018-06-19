@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Siebel アダプターと BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Siebel アダプターと BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41338723-055d-46b4-acee-6969ea79fac0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222642"
 ---
 # <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-with-the-siebel-adapter"></a>手順 2: BizTalk Server 管理コンソールで Siebel アダプターとオーケストレーションを構成します。
 ![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
   
- **目標:**このステップでは、次のタスクを実行します。  
+ **目標:** このステップでは、次のタスクを実行します。  
   
 -   作成、Wcf-custom 送信-受信ポートを使用して、Siebel システムからメッセージを送受信、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。 前の手順で作成したマップを使用するには、このポートを構成します。  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**資格情報**タブし、Siebel システムへの接続に資格情報を指定します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  送信ポートのプロパティ ダイアログ ボックスの左ペインで、をクリックして**受信マップ**です。 右側のペインの下のフィールドをクリックして、**マップ**列、およびドロップダウンの選択 から**ResponseMap**です。  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
      ![送信マップを構成する](../../adapters-and-accelerators/adapter-siebel/media/8f8efeaa-d5cd-4ed3-b2f3-a600c48c3bb9.gif "8f8efeaa-d5cd-4ed3-b2f3-a600c48c3bb9")  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ### <a name="to-configure-the-biztalk-application"></a>BizTalk アプリケーションを構成するには  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  このトピックの前半で作成した、Wcf-custom 送信ポートを選択します。  
   
-    4.  **[OK]**をクリックします。  
+    4.  **[OK]** をクリックします。  
   
      アプリケーションの構成の詳細についてを参照してください「どのように構成するアプリケーションへ」 [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)です。  
   

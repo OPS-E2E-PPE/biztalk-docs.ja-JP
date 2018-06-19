@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269562"
 ---
 # <a name="schema-trackedschemas-node"></a>Schema (TrackedSchemas ノード)
 バインド ファイルの TrackedSchemas ノードの Schema ノードでは、バインド ファイルと共にエクスポートされるサービスにバインドされるスキーマを記述します。  

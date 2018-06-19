@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL からの複数の受信ポートにメッセージ間でのポーリングの受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL からの複数の受信ポートにメッセージ間でのポーリングの受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21cf4875-1c04-41cf-98f5-d1307987ca55
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223962"
 ---
 # <a name="receive-polling-messages-across-multiple-receive-ports-from-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL からの複数の受信ポートにメッセージ間でのポーリングの受信します。
 2 つのポーリング操作を含む BizTalk アプリケーションを作成するシナリオを検討してください。 ポーリングの各操作は、別のテーブルに従業員とお客様同じデータベースからをポーリングします。 このようなアプリケーションを展開するときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を作成する必要がある管理コンソールで、2 つの受信ポート。 各接続 URI の受信ポートになります。  

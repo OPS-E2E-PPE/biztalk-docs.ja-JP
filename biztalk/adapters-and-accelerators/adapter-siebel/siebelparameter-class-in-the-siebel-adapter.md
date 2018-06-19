@@ -1,18 +1,18 @@
 ---
-title: "Siebel アダプターの SiebelParameter クラス |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターの SiebelParameter クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SiebelParameter
 - Data Provider for Siebel, SiebelParameter
 - SiebelParameter, supported properties and methods
 ms.assetid: 1dcb72c7-a470-4609-8aba-a5c8ad5f3ac9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222490"
 ---
 # <a name="siebelparameter-class-in-the-siebel-adapter"></a>Siebel アダプターの SiebelParameter クラス
 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、`DbParameter`実装を特定のコマンドのパラメーターを指定する ADO.NET クライアントを有効にします。 インスタンスを使用して、`System.Data.Common.DbCommand`のクラス、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、クライアント プログラムがのインスタンスを取得できます、`System.Data.Common.DbParameter`クラスです。  

@@ -1,18 +1,18 @@
 ---
-title: "管理者 (BizTalk Server Samples フォルダ) |Microsoft ドキュメント"
-ms.custom: 
+title: 管理者 (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SDK examples
 - examples, administering
 - administering, examples
 ms.assetid: 178d0ee2-d437-4945-a35d-1a8be524aff1
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230994"
 ---
 # <a name="admin-biztalk-server-samples-folder"></a>管理者 (BizTalk Server Samples フォルダ)
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、管理のサンプルがいくつか付属しています。 このセクションでは、各管理サンプルが示す機能、サンプルをビルドおよび実行する方法、および予測できる実行結果について詳しく説明します。  

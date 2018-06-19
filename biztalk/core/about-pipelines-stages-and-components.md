@@ -1,17 +1,17 @@
 ---
-title: "パイプライン、ステージ、およびコンポーネントについて |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン、ステージ、およびコンポーネントについて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Microsoft.BizTalk.Component.Interop namespace
 - pipelines, about pipelines
 ms.assetid: a98e1c93-f264-4577-bd12-4430a5859e3c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225466"
 ---
 # <a name="about-pipelines-stages-and-components"></a>パイプライン、ステージ、およびコンポーネントについて
 パイプラインとは、事前に定義された順序でメッセージを処理する、一連の .NET コンポーネントまたは COM コンポーネントを含んだソフトウェア インフラストラクチャのことです。 パイプラインでは、処理がステージと呼ばれる作業単位に分割されます。各ステージの順序もパイプラインによって決定されます。 ステージごとに論理的なワークグループが定義され、使用コンポーネントが決定されるほか、そのステージにおけるパイプライン コンポーネントの実行方法も指定されます。  

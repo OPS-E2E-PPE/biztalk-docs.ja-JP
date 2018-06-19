@@ -1,14 +1,14 @@
 ---
-title: "手順 3: テストのソリューション 2 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: テストのソリューション 2 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30dbc7c9-3c5f-4953-b26f-5c41141c22ad
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277274"
 ---
 # <a name="step-3-test-the-solution"></a>手順 3: ソリューションをテストします。
 ![手順 3 3](../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
  **目標:** EAI ソリューションでメッセージをどのように処理するかをテストするこの手順でします。  
   
- **目的:**この手順では、EAIProcess オーケストレーションでメッセージが正しく処理されているチェックします。 EAI アプリケーションに指定されている受信場所にサンプル メッセージを格納します。 EAI ソリューションが適切に機能している場合、倉庫から EAIProcess オーケストレーションへのメッセージで要求される項目数が 500 を超えると、オーケストレーションでは要求拒否メッセージが生成されます。 倉庫から EAIProcess オーケストレーションへのメッセージで要求される項目数が 500 以下であれば、メッセージは ERP システムに渡されます。  
+ **目的:** この手順では、EAIProcess オーケストレーションでメッセージが正しく処理されているチェックします。 EAI アプリケーションに指定されている受信場所にサンプル メッセージを格納します。 EAI ソリューションが適切に機能している場合、倉庫から EAIProcess オーケストレーションへのメッセージで要求される項目数が 500 を超えると、オーケストレーションでは要求拒否メッセージが生成されます。 倉庫から EAIProcess オーケストレーションへのメッセージで要求される項目数が 500 以下であれば、メッセージは ERP システムに渡されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を開始する前に行う必要があります[手順 2: 構成し、アプリケーションを起動](../core/step-2-configure-and-start-the-application1.md)です。  

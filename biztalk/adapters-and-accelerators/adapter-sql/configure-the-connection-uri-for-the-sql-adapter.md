@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターの接続 URI の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターの接続 URI の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6460b22-48e4-4b7e-b82e-151e7dab1e09
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226794"
 ---
 # <a name="configure-the-connection-uri-for-the-sql-adapter"></a>SQL アダプターの接続 URI を構成します。
 接続 URI は、SQL Server への接続に必要なパラメーターを含む接続文字列です。 使用しているときに、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]で[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]メタデータを生成する SQL Server に接続する URI を指定する必要があります。 構成、送信または受信ポートを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、操作を実行する SQL Server に接続する URI を指定する必要があります。  
@@ -48,13 +49,13 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**なし**|Windows 認証を使用して SQL Server に接続します。|  
     |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
   
 6.  クリックして、 **URI プロパティ**タブをクリックし、他のパラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
 7.  クリックして、**バインド プロパティ**タブをクリックし、値を指定、バインドのプロパティの場合は、スキーマを生成する前に必要なです。 バインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ### <a name="use-the-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードを使用します。  
   
@@ -67,14 +68,14 @@ ms.lasthandoff: 09/20/2017
     |**カテゴリ**|をクリックして**アダプターを追加**です。|  
     |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
   
-3.  **[追加]**をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+3.  **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
   
 4.  アダプターの追加ウィザードで選択**WCF-SQL**です。 BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。  
   
     > [!IMPORTANT]
     >  BizTalk で構成されている WCF SQL ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
 6.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、順にクリック**構成**.  
   
@@ -87,7 +88,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**なし**|Windows 認証を使用して SQL Server に接続します。|  
     |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
+    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
   
 8.  クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  既存の WCF-SQL 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。 バインドのプロパティは、送信ポートの構成から取得されます。 ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。 このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。 ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="enter-the-connection-uri-from-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールから、接続 URI を入力します。  
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または WCF SQL ポートの構成の一部として接続 URI を指定することができます。  
@@ -114,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。  
   
-5.  **アドレス (URI)**テキスト ボックスで、接続の SQL Server に接続する URI を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+5.  **アドレス (URI)** テキスト ボックスで、接続の SQL Server に接続する URI を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
 6.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。**バインディングの種類**ドロップダウン リストで、 **sqlBinding**です。  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 09/20/2017
   
     -   選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ### <a name="enter-the-connection-uri-for-the-wcf-sql-port"></a>WCF SQL ポートの接続 URI を入力してください。  
   
@@ -178,7 +179,7 @@ ms.lasthandoff: 09/20/2017
   
     -   選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
 [SQL アダプタを BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

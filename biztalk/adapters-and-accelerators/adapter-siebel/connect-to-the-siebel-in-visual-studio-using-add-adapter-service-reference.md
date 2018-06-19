@@ -1,14 +1,14 @@
 ---
-title: "ビジュアルの Siebel システムへの接続 Studio を使用してアダプター サービス参照のプラグインを追加 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジュアルの Siebel システムへの接続 Studio を使用してアダプター サービス参照のプラグインを追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d27121be-6407-4bb6-acb5-37dc8a3785c0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222090"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>ビジュアルの Siebel システムへの接続 Studio を使用してアダプター サービス参照のプラグインを追加
 使用して Siebel システムへの接続に、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] .NET プログラミング ソリューションで使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 このトピックでは、使用する方法の説明、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
@@ -45,9 +46,9 @@ ms.lasthandoff: 09/20/2017
   
 6.  クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。 バインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Siebel のバインド プロパティ読む](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)です。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
-8.  **[接続]**をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
+8.  **[接続]** をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
   
      次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。 グラフィカル ユーザー インターフェイスが同じ、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
   

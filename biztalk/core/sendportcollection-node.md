@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269674"
 ---
 # <a name="sendportcollection-node"></a>SendPortCollection ノード
 バインド ファイルの SendPortCollection ノードは、そのバインド ファイルでエクスポートされる送信ポートに関する情報を含むすべての SendPort ノードの親ノードです。  

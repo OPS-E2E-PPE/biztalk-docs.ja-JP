@@ -1,11 +1,11 @@
 ---
-title: "非同期ビジネス イベントの追跡 |Microsoft ドキュメント"
-ms.custom: 
+title: 非同期ビジネス イベントの追跡 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM, event tracking
 - BAM, performance
 ms.assetid: 6d51fadf-b329-4536-9618-d982d9c17882
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230474"
 ---
 # <a name="asynchronous-business-event-tracking"></a>非同期ビジネス イベントの追跡
 非同期 (を使用して`BufferedEventStream`)-このモデルには、大幅なパフォーマンス向上が用意されています。 このモデルでは、同期モデルに似た API を使用します (使用するコンストラクターだけが異なります)。 BufferedEventStream は、データをプライマリ インポート データベースにプッシュするのではなく、イベント データをバイナリ形式でメモリに蓄積してから、そのデータを 1 つのテーブル レコードとして中間処理用のデータベース (メッセージ ボックス データベース) に挿入します。 イベント バス サービスは、BizTalk によってメッセージ ボックス データベースのキューに格納されたデータを読み取り、そのデータをプライマリ インポート データベースにインポートします。  

@@ -1,14 +1,14 @@
 ---
-title: "HL7 の BizTalk アクセラレータをインストール |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 の BizTalk アクセラレータをインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52347742-f858-47bb-bc73-1a6095ea9e8e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205106"
 ---
 # <a name="install-biztalk-accelerator-for-hl7"></a>HL7 の BizTalk アクセラレータをインストールします。
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  既に選択されているデータベースが存在する場合は、メッセージ ボックスが表示されます。 [**OK**] をクリックし、続行します。  
     
-10. **[インストール]**を選択します。
+10. **[インストール]** を選択します。
   
 11. 選択**完了**完了したときにします。  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 09/20/2017
     |**データベース サーバー名**|既定値は、サーバー名です。 <br/><br/>**注**サーバー名の既定値は、BizTalkMgmtDb データベースが存在するコンピューターの名前。 この値を変更することはできません。|  
     |**HL7 データベース名**|データを含むデータベースの名前を入力、[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]ソリューションか、既定の設定です。 これはそのまま使用**BTAHL7**です。 <br/><br/> **注**データベース要件ごとに設定する ANSI、ASCII 文字を使用する必要があります[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]他の文字セットをサポートしていません。|  
   
-12. **[インストール]**を選択します。  
+12. **[インストール]** を選択します。  
   
 15. 選択**完了**完了したときにします。  
   

@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - deploying, orchestrations
 - orchestrations, about orchestrations
 ms.assetid: fb01f78a-b805-46be-a7d9-2b7597daab96
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266674"
 ---
 # <a name="orchestrations"></a>オーケストレーション
 *オーケストレーション*実行可能なビジネス プロセス (受信) にサブスクライブできるは、メッセージ ボックス データベースを介して (送信) メッセージを公開するとします。 また、オーケストレーションは新しいメッセージを構築することもできます。 サブスクリプションを使用してメッセージを受信し、ルーティング インフラストラクチャは、後ほど[メッセージのライフ サイクル](../core/lifecycle-of-a-message.md)です。 オーケストレーションに対応するサブスクリプションが到着すると、新しいインスタンスがアクティブ化され、メッセージが配信されます。インスタンス サブスクリプションの場合は、必要に応じてインスタンスが復元されてメッセージが配信されます。 オーケストレーションから送信されたメッセージは、受信場所に到着したメッセージと同じようにメッセージ ボックスに公開され、ルーティングで使用するための適切なプロパティがデータベースに挿入されます。  

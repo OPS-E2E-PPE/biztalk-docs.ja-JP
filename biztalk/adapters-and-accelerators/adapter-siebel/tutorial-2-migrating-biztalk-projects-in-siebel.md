@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル 2: Siebel に移行する BizTalk プロジェクトの |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 2: Siebel に移行する BizTalk プロジェクトの |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a2a1828-8cc8-4b80-99bd-c083c04e5d04
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223010"
 ---
 # <a name="tutorial-2-migrating-biztalk-projects-in-siebel"></a>チュートリアル 2: Siebel の BizTalk プロジェクトを移行します。
 Microsoft BizTalk Server に付属している Siebel アダプターの以前のバージョンが WCF ベース異なる[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]など、多くの点で。  

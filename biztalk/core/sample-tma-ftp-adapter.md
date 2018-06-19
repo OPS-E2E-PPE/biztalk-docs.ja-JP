@@ -1,11 +1,11 @@
 ---
-title: "サンプル TMA: FTP アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 'サンプル TMA: FTP アダプター |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - FTP adapters, TMA
 - DFD, FTP adapters
 ms.assetid: c648f84a-c83a-44f0-adc9-a3f98b597506
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271962"
 ---
 # <a name="sample-tma-ftp-adapter"></a>サンプル TMA: FTP アダプター
 このトピックでは、サンプル アーキテクチャの FTP アダプター シナリオ向けの脅威モデル分析 (TMA) について説明します。  

@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Adapter 用 Oracle Database の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Adapter 用 Oracle Database の概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapter, overview
 - ODP.NET
 - Oracle Data Provider for .NET 2.0
 ms.assetid: 852b8f82-ab34-45b8-ad7f-263d719a87f9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214210"
 ---
 # <a name="overview-of-biztalk-adapter-for-oracle-database"></a>BizTalk Adapter 用 Oracle Database の概要
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]を WCF サービスとして Oracle データベースを公開します。 アダプターのクライアントは、アダプターと SOAP メッセージを交換することで、Oracle データベースで操作を実行できます。 アダプターは、WCF メッセージを処理し、操作を実行する適切な ODP.NET 呼び出しします。 アダプターは、SOAP メッセージの形式でクライアントに Oracle データベースからの応答を返します。  

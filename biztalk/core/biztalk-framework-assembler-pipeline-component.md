@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Framework アセンブラー パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Framework アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, BizTalk Framework Assembler
 - BizTalk Framework Assembler [pipeline component]
 ms.assetid: 116dff8d-b7f8-4564-a7fb-6440682683dc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231106"
 ---
 # <a name="biztalk-framework-assembler-pipeline-component"></a>BizTalk Framework アセンブラー パイプライン コンポーネント
 BizTalk Framework は、HTTP または SMTP などの、回線上で使用できるトランスポート プロトコルを使用して、1 回限りの確実な配信を行うための方法の 1 つです。 このフレームワークは 1998 年から存在し、Web サービス (特に WSReliable) に基づいた、標準的なイニシアチブの先駆けと見なすことができます。 一般的に、1 回限りの確実なデータ配信の問題点は、メッセージ キュー (MSMQ とも呼ばれる) のようなテクノロジに関するものでした。 通常、このようなテクノロジでは、データ フローの両端のエンドポイントに共通のソフトウェアが必要となります。また、インターネットによる企業間のデータ通信などで必要となる、パブリック ネットワークに基づいたオープンなトランスポート プロトコルも使用できません。  

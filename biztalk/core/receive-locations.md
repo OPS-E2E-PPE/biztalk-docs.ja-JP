@@ -1,11 +1,11 @@
 ---
-title: "受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive locations
 - receive locations, receive location types
 ms.assetid: be5f7e5d-b63f-42f6-985e-895ba3912d34
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268626"
 ---
 # <a name="receive-locations"></a>受信場所
 受信場所の作成時には、着信メッセージを受信するアドレスと、そのアドレスで受信したメッセージを処理するメッセージング パイプラインを指定します。 受信場所の作成および有効化は、管理者のみが行えます。  

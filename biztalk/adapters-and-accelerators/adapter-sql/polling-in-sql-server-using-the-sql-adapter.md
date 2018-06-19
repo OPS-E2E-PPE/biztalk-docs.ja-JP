@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタを使用して SQL Server でのポーリング |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタを使用して SQL Server でのポーリング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c31b3cda-c05e-46db-827b-6c47a53d1a3a
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225850"
 ---
 # <a name="polling-in-sql-server-using-the-sql-adapter"></a>SQL アダプタを使用して SQL Server でのポーリング
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]SQL Server データベースからデータ変更メッセージを受信アダプターのクライアントを有効にします。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を取得または、データを更新し、一定の間隔で、アダプターがクライアントに結果を提供アダプターが指定された SQL ステートメント (SELECT ステートメントまたはストアド プロシージャ) を実行する、「ポーリング ベース」のメッセージの受信をサポート時間です。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
 |ポーリングは、アダプターによって開始されます。 アダプターは、データのポーリングを使用し、ポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証するステートメントを実行します。|クエリ通知は、SQL Server によって開始されます。 だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セットの変更がある場合に通知を開始するように指示します。|  
 |ポーリング ステートメントを使用して、読み取るまたは SQL Server データベース テーブル内のデータを更新することができます。|クエリ通知のステートメントを使用すると、SQL Server データベース テーブルにデータを読み取るだけです。|  
 |ポーリングでは、実際のデータが変更されたことについて通知されます。|クエリ通知は、Insert などのデータ変更の種類についてのみ通知は、更新、および削除します。|  
-|アダプター クライアントは、すべてのポーリング間隔の最後にデータの変更に関する通知は、データの変更通知は、ポーリング間隔によって異なります。 **ヒント:**ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、最後のデータの変更通知以降で発生したすべての変更の通知されるようにすた後ポーリング間隔を指定します。|データの変更通知は瞬時に発生します。|  
+|アダプター クライアントは、すべてのポーリング間隔の最後にデータの変更に関する通知は、データの変更通知は、ポーリング間隔によって異なります。 **ヒント:** ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、最後のデータの変更通知以降で発生したすべての変更の通知されるようにすた後ポーリング間隔を指定します。|データの変更通知は瞬時に発生します。|  
   
  クエリ通知の詳細については[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]を参照してください[を使用して BizTalk Server での SQL クエリ通知の受信](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)です。  
   

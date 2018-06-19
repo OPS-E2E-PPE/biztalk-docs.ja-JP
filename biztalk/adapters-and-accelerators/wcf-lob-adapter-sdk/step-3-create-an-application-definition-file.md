@@ -1,14 +1,14 @@
 ---
-title: "手順 3: アプリケーション定義ファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: アプリケーション定義ファイルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 843fafdb-571e-4da4-ad04-7dc7f23e03ac
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227010"
 ---
 # <a name="step-3-create-an-application-definition-file"></a>手順 3: アプリケーション定義ファイルを作成します。
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
@@ -45,11 +46,11 @@ ms.lasthandoff: 09/20/2017
   
 4.  **URL**ボックスには、WCF サービスの URL を入力します。 URL は、次の形式である必要があります。`https://machinename/EchoWeb/EchoOutboundContract.svc?wsdl`  
   
-5.  **[接続]**をクリックします。  
+5.  **[接続]** をクリックします。  
   
 6.  使用可能な操作を表示するをクリックして、 **Web メソッドの追加**タブです。EchoGreetings メソッドが表示されます。 メソッドは、デザイン画面にドラッグします。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  **LOB システムの名前を入力** ダイアログ ボックスに名前を入力、 **LOB システム名**ボックス。 この例では、次を入力してください。 **EchoWSLOB**、クリックして**OK**です。  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  メタデータ オブジェクト ペインで、展開、 **EchoGreetings**  ノードの順に展開し、**メソッド**ノード。  
   
-2.  クリックして、 **EchoGreetings**ノードのプロパティ ウィンドウで、省略記号ボタンをクリックし、 **(...)**ボタンをクリックして、**プロパティ**フィールドです。  
+2.  クリックして、 **EchoGreetings**ノードのプロパティ ウィンドウで、省略記号ボタンをクリックし、 **(...)** ボタンをクリックして、**プロパティ**フィールドです。  
   
 3.  PropertyView コレクション エディター ウィンドウで、**追加**、し、、**名前**型、プロパティ ペインのフィールド**HttpHeaderUserName**です。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  をクリックして**追加**、およびプロパティ ペイン型**HttpHeaderPassword** [名前] フィールドを入力し、 **MyPassHeader**の**PropertyValue**フィールドです。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ## <a name="set-up-single-sign-on-for-connecting-to-the-echo-adapter"></a>エコー アダプターに接続するためのシングル サインオンを設定します。  
  SharePoint からシングル サインオン情報を使用して、認証の値を持つ MyUserHeader および MyPassHeader を設定します。 シングル サインオンには、このアプリケーション定義ファイルをリンクするには、SecondarySsoApplicationId を指定する必要があります。  
@@ -83,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  メタデータ オブジェクト ペインで、展開、 **EchoWSLOB**  ノードの順に展開し、**インスタンス**ノード。  
   
-2.  をクリックして**EchoWSLOB_Instance**、プロパティ ペインで、省略記号ボタンをクリックして**([...])**ボタンをクリックして、**プロパティ**フィールドです。  
+2.  をクリックして**EchoWSLOB_Instance**、プロパティ ペインで、省略記号ボタンをクリックして **([...])** ボタンをクリックして、**プロパティ**フィールドです。  
   
 3.  PropertyView コレクション エディター] ウィンドウで、[**追加**、プロパティ ウィンドウで、次のように入力します。 **SecondarySsoApplicationId**で、**名前**フィールドです。  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
      ![Secondaryssoapplicationid の](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/68e6be61-77af-46b1-8ff0-b8538c526228.gif "68e6be61-77af-46b1-8ff0-b8538c526228")  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="create-input-filters-and-default-values"></a>入力フィルターと既定値を作成します。  
  アプリケーション定義ファイルを Web サービスに渡すことができるユーザーの入力を受け付けることがあります。 これを実現するには、次の一連のタスクを実行する必要があります。  
@@ -124,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
      ![メソッド インスタンスの作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/a932a7a0-c004-46bf-af5c-cc7392bafa43.gif "a932a7a0-c004-46bf-af5c-cc7392bafa43")  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  プロパティ ウィンドウで、次のように入力します。 **EchoGreetings_Instance**で、**名前**フィールドです。  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
      ![既定のパラメーター](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/70250957-9680-48ce-8bce-420ff18bb47a.gif "70250957-9680-48ce-8bce-420ff18bb47a")  
   
-6.  **[閉じる]**をクリックします。  
+6.  **[閉じる]** をクリックします。  
   
 ### <a name="to-export-the-application-definition-file"></a>アプリケーション定義ファイルをエクスポートするには  
   

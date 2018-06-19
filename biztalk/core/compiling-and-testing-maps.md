@@ -1,14 +1,14 @@
 ---
-title: "コンパイルして、マップのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: コンパイルして、マップのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b6644b82-0887-4289-88c1-92f16411b052
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231290"
 ---
 # <a name="compiling-and-testing-maps"></a>マップのコンパイルとテスト
 作成したマップは検証およびテストする必要があります。 このセクションでは、マップを検証およびテストするための手順について説明します。  

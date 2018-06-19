@@ -1,18 +1,18 @@
 ---
-title: "チュートリアル 1: エンタープライズ アプリケーション統合 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 1: エンタープライズ アプリケーション統合 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enterprise application integration tutorial
 - getting started tutorials, integrating enterprise applications
 - enterprise application integration tutorial, about the tutorial
 ms.assetid: aca5fc97-0fd6-4964-9cf1-482aa4f444b8
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287514"
 ---
 # <a name="tutorial-1-enterprise-application-integration"></a>チュートリアル 1: エンタープライズ アプリケーション統合
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アプリケーション統合とビジネス プロセス マネジメント (BPM) 用の開発環境と実行環境が提供されます。 このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用してエンタープライズ アプリケーション統合 (EAI) ソリューションをセットアップして展開する方法について、詳細に学習します。  

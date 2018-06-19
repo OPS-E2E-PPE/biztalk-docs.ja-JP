@@ -1,14 +1,14 @@
 ---
-title: "注文処理ステージで処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 注文処理ステージで処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 698005da-1ba8-4972-83db-f5ae45fd6a83
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265098"
 ---
 # <a name="processing-in-the-order-processing-stages"></a>注文処理ステージでの処理
 ビジネス プロセス管理ソリューションには、2 つの段階が含まれています、 **CableOrder1**と**CableOrder2**注文処理アクションを実行するオーケストレーションです。 注文処理ステージに分割する方法の詳細については、次を参照してください。[処理ステージの番号](../core/number-of-processing-stages.md)です。  

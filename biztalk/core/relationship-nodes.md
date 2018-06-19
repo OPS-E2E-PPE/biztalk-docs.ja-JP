@@ -1,11 +1,11 @@
 ---
-title: "リレーションシップ ノード |Microsoft ドキュメント"
-ms.custom: 
+title: リレーションシップ ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definition files [BAM], relationships
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, node descriptions
 - Tracking Profile Editor, definition files [BAM]
 ms.assetid: 74090133-24d1-4aba-a4fc-f12d19c881fb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268250"
 ---
 # <a name="relationship-nodes"></a>リレーションシップ ノード
 アクティビティ定義ファイルに複数のアクティビティが含まれている場合は常に、リレーションシップ フォルダーが使用されます。 フォルダー名は、関連するアクティビティと同じ名前になります。 リレーションシップ フォルダーの名前と関連するアクティビティのアクティビティ ID を照合し、データ項目の値を照合して、リンクを形成します。 リレーションシップは、それぞれ個別のノードを使用して定義します。  

@@ -1,14 +1,14 @@
 ---
-title: "ステップ 3 D: の Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: 'ステップ 3 D: の Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e05e4d20-4cf2-402f-aaea-66987cb6515a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225890"
 ---
 # <a name="step-3d-add-a-file-send-port-to-capture-the-swhandleresponse-message-for-the-interact-real-time-scenario"></a>ステップ 3 D: の Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオの対話
 完全な[手順 3 C: リアルタイム シナリオでは対話 Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)この手順を開始する前にします。
@@ -47,15 +48,15 @@ ms.lasthandoff: 09/20/2017
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
     |最初の行:**プロパティ**|ドロップダウン リストから選択**BTS です。SPName**です。|  
-    |最初の行:**演算子**|ドロップダウン リストから選択 **==**です。|  
+    |最初の行:**演算子**|ドロップダウン リストから選択 **==** です。|  
     |最初の行:**値**|型**Tutorial_IA_HandleRequest_RealTime**です。|  
     |最初の行:**でグループ化**|ドロップダウン リストから選択**または**です。|  
     |2 番目の行:**プロパティ**|ドロップダウン リストから選択**BTS です。MessageType**です。|  
-    |2 番目の行:**演算子**|ドロップダウン リストから選択 **==**です。|  
+    |2 番目の行:**演算子**|ドロップダウン リストから選択 **==** です。|  
     |2 番目の行:**値**|型**SwInt ExchangeResponse**です。|  
     |2 番目の行:**でグループ化**|既定値を使用します。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   

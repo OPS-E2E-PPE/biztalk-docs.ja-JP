@@ -1,14 +1,14 @@
 ---
-title: "手順 8: エコー アダプターの同期受信ハンドラーを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8: エコー アダプターの同期受信ハンドラーを実装する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 723eac73-40c4-41b4-aca1-dd7451d25bfe
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226634"
 ---
 # <a name="step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter"></a>手順 8: エコー アダプターの同期受信ハンドラーを実装します。
 ![手順 9 の 8](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")  
@@ -334,7 +335,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
   
 12. Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
-13. **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。 これは、エラーなしでコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
+13. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 これは、エラーなしでコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
   
 > [!NOTE]
 >  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 9: ビルドし、配置エコー アダプター](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)です。  

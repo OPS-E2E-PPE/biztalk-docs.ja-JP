@@ -1,18 +1,18 @@
 ---
-title: "スケジュール済みの集計 |Microsoft ドキュメント"
-ms.custom: 
+title: スケジュール済みの集計 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, aggregations
 - scheduling, aggregations [BAM]
 - aggregations [BAM], scheduling
 ms.assetid: 4e2da2eb-b1fc-4b27-98d6-564e6df719e1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269090"
 ---
 # <a name="scheduled-aggregations"></a>スケジュール済みの集計
 BAM では、動的に生成された OLAP キューブとデータ変換サービス (DTS) パッケージに基づいてスケジュール済みの集計を行います。 スケジュール済みの集計に含まれるデータは、DTS パッケージを実行したときのビジネス アクティビティのスナップショットを表します。 これを実現する、分析のための DTS パッケージの最初の手順は、ストアド プロシージャへの呼び出し**bam_Metadata_BeginAnalysis**から成るスナップショットを取得します。  

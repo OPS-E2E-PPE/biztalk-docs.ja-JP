@@ -1,14 +1,14 @@
 ---
-title: "手順 3: Siebel からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Siebel からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86bde531-2daf-452b-b3e6-5481d66f72e7
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225970"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel"></a>手順 3: Siebel からデータを取得する SharePoint アプリケーションを作成します。
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 15 分です。  
   
- **目標:**今すぐアプリケーション定義ファイルをエディターを使用して、ビジネス データ カタログの定義を作成して、Office SharePoint Server にインポートする必要があります。  
+ **目標:** 今すぐアプリケーション定義ファイルをエディターを使用して、ビジネス データ カタログの定義を作成して、Office SharePoint Server にインポートする必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -84,9 +85,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  Siebel_Account.xml、[参照] を開くと、アプリケーション定義のインポート ページで、ファイルを選択し、をクリックして**開く**です。  
   
-5.  **[インポート]**をクリックします。  
+5.  **[インポート]** をクリックします。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
  アプリケーションをインポートした後に移動して、アプリケーションを表示できます、**ビュー アプリケーション**リンクします。 アプリケーション内のエンティティを表示するのには、アプリケーション名をクリックします。  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  **保存場所**セクションで、**ドキュメント ライブラリ**一覧で、**フォーム テンプレート**です。  
   
-    5.  **[作成]**をクリックします。 次の図は、作成した後、Web パーツ ページを示します。  
+    5.  **[作成]** をクリックします。 次の図は、作成した後、Web パーツ ページを示します。  
   
          ![空の Web パーツ ページ](../../adapters-and-accelerators/adapter-siebel/media/1fa218f5-de81-43be-b1b1-c46de422f112.gif "1fa218f5-de81-43be-b1b1-c46de422f112")  
   

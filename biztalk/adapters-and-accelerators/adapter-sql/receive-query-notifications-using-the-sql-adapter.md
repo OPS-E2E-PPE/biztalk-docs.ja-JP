@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用してクエリ通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用してクエリ通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b2ed0f0-d005-4eec-b1a6-97a0c94678dc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224506"
 ---
 # <a name="receive-query-notifications-using-the-sql-adapter"></a>SQL アダプタを使用してクエリ通知を受信します。
 アダプターのクライアントは、通知を受信するクエリ、データの変更について、SQL Server データベースでサブスクライブできます。 SQL SELECT ステートメントまたはストアド プロシージャは、クエリ通知のトリガー用のテーブルにデータ変更の条件を指定、SQL Server クエリ通知を送信して、SELECT ステートメントまたはストアド プロシージャの変更の結果を設定するとします。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
 |クエリ通知は、SQL Server によって開始されます。 だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セットの変更がある場合に通知を開始するように指示します。|ポーリングは、アダプターによって開始されます。 アダプターは、データのポーリングを使用し、ポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証するステートメントを実行します。|  
 |クエリ通知のステートメントを使用すると、SQL Server データベース テーブルにデータを読み取るだけです。|ポーリング ステートメントを使用して、読み取るまたは SQL Server データベース テーブル内のデータを更新することができます。|  
 |クエリ通知が、Insert などのデータ変更の種類にのみ通知は、更新、および削除します。|ポーリングでは、実際のデータが変更されたことについて通知されます。|  
-|データの変更通知は瞬時に発生します。|アダプター クライアントは、すべてのポーリング間隔の最後にデータの変更に関する通知は、データの変更通知は、ポーリング間隔によって異なります。 **ヒント:**ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|  
+|データの変更通知は瞬時に発生します。|アダプター クライアントは、すべてのポーリング間隔の最後にデータの変更に関する通知は、データの変更通知は、ポーリング間隔によって異なります。 **ヒント:** ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|  
   
  クエリ通知の詳細については[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]を参照してください[を使用して BizTalk Server での SQL クエリ通知の受信](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)です。  
   

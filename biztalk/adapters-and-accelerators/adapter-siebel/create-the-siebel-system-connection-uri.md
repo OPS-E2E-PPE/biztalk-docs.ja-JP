@@ -1,11 +1,11 @@
 ---
-title: "Siebel システム接続 URI を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel システム接続 URI を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - how to, connect using connection URI
 - connecting using connection URI
 ms.assetid: 8cc78149-1c20-40db-aece-aab520ee04e7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224554"
 ---
 # <a name="create-the-siebel-system-connection-uri"></a>Siebel システム接続 URI を作成します。
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]接続 URI には、アダプターは、Siebel システムへの接続を確立するために使用するプロパティが含まれています。  
@@ -99,7 +100,7 @@ siebel://Username=[USER_NAME];Password=[PASSWORD]@[SERVER]:[PORT]?SiebelObjectMa
 |暗号化|間で使用する暗号化の種類、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]と Siebel システムです。 サポートされている値は none、mscrypto、または rsa です。 このパラメーターはオプションです。 指定されていない場合、Siebel システムは、既定値は (なし) を提供します。|  
 |Compresssion|間で使用する圧縮アルゴリズム、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]と Siebel システムです。 サポートされている値は、none または zlib です。 このパラメーターはオプションです。 指定されていない場合、Siebel システムは、既定値 (zlib) を提供します。|  
 |SiebelServer|Siebel サーバーです。 すべての Siebel 7.5 サーバー接続に必要な (7.5.2、7.5.3 などです。)。それ以外の場合、このパラメーターを設定しません。|  
-|SiebelRepository|Siebel リポジトリ。 複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。 **注:**サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。|  
+|SiebelRepository|Siebel リポジトリ。 複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。 **注:** サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。|  
   
  クエリの情報に設定されている Siebel パラメーターの詳細については、Siebel のドキュメントを参照してください。  
   

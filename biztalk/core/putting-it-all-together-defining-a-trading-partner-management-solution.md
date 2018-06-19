@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22269226"
 ---
 # <a name="putting-it-all-together-defining-a-trading-partner-management-solution"></a>まとめ: 取引先管理ソリューションを定義する
 TPM ソリューションの構築で使用するさまざまなコンポーネントについて理解できたので、次に標準的な TPM ソリューションの流れと、さまざまな構成要素の連携について説明します。 ここでは、TPM ソリューションのモデリングのベスト プラクティスも示します。  

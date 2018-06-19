@@ -1,14 +1,14 @@
 ---
-title: "BizTalk メッセージ コンテキストのプロパティに関する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk メッセージ コンテキストのプロパティに関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc700e43-a44c-482b-b91c-9f1d997a486a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225498"
 ---
 # <a name="about-biztalk-message-context-properties"></a>BizTalk メッセージ コンテキストのプロパティについて
 ドキュメントを受信すると、BizTalk Server アダプターは、そのドキュメントの BizTalk メッセージを作成します。 BizTalk メッセージには、受信したメッセージと共に、メッセージ コンテキストが含まれます。 メッセージ コンテキストは、BizTalk Server がドキュメントを処理する際に使用する、さまざまなプロパティのコンテナーです。 メッセージ コンテキストの各プロパティは、名前、名前空間、および値の 3 つで構成されています。 たとえば、次のメッセージ コンテキスト プロパティは、ドキュメントのインターチェンジ ID を示します。  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb0df3c-cd07-4bcf-af69-971065081fd6
-caps.latest.revision: ''
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22226658"
 ---
 # <a name="tutorial-1-develop-the-echo-adapter"></a>チュートリアル 1: エコー アダプターを開発します。
 このチュートリアルでを開発する機能のアダプターを使用して、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 アダプターは、架空の基幹業務システムなど、WCF LOB Adapter SDK の主な機能の多くを説明するための操作をシミュレートします。  

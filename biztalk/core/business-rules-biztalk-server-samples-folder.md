@@ -1,18 +1,18 @@
 ---
-title: "ビジネス ルール (BizTalk Server Samples フォルダ) |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - SDK examples
 - business rules, examples
 ms.assetid: d5c19d43-6688-4138-88b1-6e933ccbd14b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231442"
 ---
 # <a name="business-rules-biztalk-server-samples-folder"></a>ビジネス ルール (BizTalk Server Samples フォルダ)
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、ビジネス ルールのサンプルがいくつか付属しています。 このセクションでは、各ビジネス ルール サンプルが示す機能、サンプルをビルドして実行する方法、および予測される実行結果について詳しく説明します。  

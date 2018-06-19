@@ -1,18 +1,18 @@
 ---
-title: "オーケストレーションで永続化 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションで永続化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, persistence
 - persistence
 - BizTalk Server Orchestration Engine
 ms.assetid: 2f79d294-f7df-4d84-ba76-50618506b6c6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264594"
 ---
 # <a name="persistence-in-orchestrations"></a>オーケストレーションの永続性
 オーケストレーション エンジンは、さまざまな永続化ポイントでのオーケストレーション インスタンスの全体の状態を保存して、オーケストレーション インスタンスを復元できるようにします。 この状態には、メッセージや変数だけでなく、オーケストレーションで使用できるすべての .NET ベースのコンポーネントが含まれます。 エンジンは、次の永続化ポイントでの状態を保存します。  

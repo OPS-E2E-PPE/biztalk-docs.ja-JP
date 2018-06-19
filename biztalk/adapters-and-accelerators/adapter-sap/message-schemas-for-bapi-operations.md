@@ -1,18 +1,18 @@
 ---
-title: "BAPI 操作のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: BAPI 操作のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAPI operations, message schemas for
 - BAPI operations, message structure for
 - BAPI operations, message actions for
 ms.assetid: ef4d88e8-f31a-4b68-a303-6885b6f8c083
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217450"
 ---
 # <a name="message-schemas-for-bapi-operations"></a>BAPI 操作のメッセージ スキーマ
 次の説明は、メッセージ スキーマやメッセージのアクションでの Bapi の呼び出しに使用、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ビジネス オブジェクトのメソッドとして。 Bapi のアダプターでの RFC 操作として呼び出すこともできます。 Rfc 呼び出しに使用されるメッセージの詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)です。 常に、アダプターは、アダプターでの BAPI の起動方法に関係なく、SAP システムで RFC として、BAPI を呼び出します。 方法の概要については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポートの Bapi を参照してください[SAP での Bapi の操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)です。  

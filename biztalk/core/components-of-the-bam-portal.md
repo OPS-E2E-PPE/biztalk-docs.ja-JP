@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231314"
 ---
 # <a name="components-of-the-bam-portal"></a>BAM ポータルのコンポーネント
 BAM ポータルとは、3 つの機能領域から構成されるASP.NET Web ページです。これらの各領域は、ポータルの 3 つのページに対応しています。 これらのページは、このセクションで説明します。 アクティビティの検索、集計 ページ、および警告マネージャー ページ。 これらのページを使用すると、アクティビティの作成、既存のアクティビティの検索、および既存のアクティビティの変更を実行できます。  

@@ -1,14 +1,14 @@
 ---
-title: "手順 3 C: FileAct リアルタイム シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 C: FileAct リアルタイム シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc0a9173-20df-4c73-80ee-755987d639d2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224874"
 ---
 # <a name="step-3c-add-a-file-send-port-to-capture-swhandlerequest-message-for-the-fileact-real-time-scenario"></a>手順 3 C: FileAct リアルタイム シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加
 この手順を開始する前に行う必要があります[手順 3 b: FileAct リアルタイム シナリオ FILEACT 受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario.md)です。  
@@ -47,11 +48,11 @@ ms.lasthandoff: 09/20/2017
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
     |**プロパティ**|ドロップダウン リストから選択**BTS です。MessageType**です。|  
-    |**演算子**|ドロップダウン リストから選択 **==**です。|  
+    |**演算子**|ドロップダウン リストから選択 **==** です。|  
     |**値**|型**ソフトウェア HandleFileRequest**です。|  
     |**グループ化**|既定値をそのまま|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
