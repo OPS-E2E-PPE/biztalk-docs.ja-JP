@@ -1,11 +1,11 @@
 ---
-title: "スキーマの種類から Web メッセージ部分を構築する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの種類から Web メッセージ部分を構築する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, Web messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Transform shape [Orchestration Designer]
 - Web messages, Transform shape [Orchestration Designer]
 ms.assetid: 4452ade6-b10f-4564-bffc-18114896aeeb
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970776"
 ---
 # <a name="how-to-construct-a-web-message-part-from-a-schema-type"></a><span data-ttu-id="2bfb4-102">スキーマの種類から Web メッセージ部分を構築する方法</span><span class="sxs-lookup"><span data-stu-id="2bfb4-102">How to Construct a Web Message Part from a Schema Type</span></span>
 <span data-ttu-id="2bfb4-103">使用してスキーマの種類から Web メッセージ部分を作成する、**変換**図形です。</span><span class="sxs-lookup"><span data-stu-id="2bfb4-103">You create a Web message part from a schema type by using a **Transform** shape.</span></span> <span data-ttu-id="2bfb4-104">または、Web メッセージ部分を設定する .NET ヘルパー クラスを使用して、スキーマの種類から Web メッセージ部分を作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="2bfb4-104">Alternatively, you can create a Web message part from a schema type by using a .NET helper class to set the parts.</span></span> <span data-ttu-id="2bfb4-105">.NET クラスを使用してメッセージの種類を作成する方法の詳細については、次を参照してください。[ユーザー コードでメッセージを構築する](../core/constructing-messages-in-user-code.md)です。</span><span class="sxs-lookup"><span data-stu-id="2bfb4-105">For more information on creating message types by using a .NET class, see [Constructing Messages in User Code](../core/constructing-messages-in-user-code.md).</span></span>  

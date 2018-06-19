@@ -1,18 +1,18 @@
 ---
-title: "アダプター ハンドラーを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター ハンドラーを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, handlers
 - deleting, handlers [adapters]
 - handlers [adapters], deleting
 ms.assetid: 95db5652-e175-45d1-b713-1ad73655a592
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249626"
 ---
 # <a name="how-to-delete-an-adapter-handler"></a><span data-ttu-id="d47e7-102">アダプター ハンドラーを削除する方法</span><span class="sxs-lookup"><span data-stu-id="d47e7-102">How to Delete an Adapter Handler</span></span>
 <span data-ttu-id="d47e7-103">BizTalk Server 管理コンソールを使用して、送信または受信のアダプター ハンドラーを削除できます。</span><span class="sxs-lookup"><span data-stu-id="d47e7-103">You can delete a send or receive adapter handler by using the BizTalk Server Administration Console.</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="d47e7-110">をクリックして**はい**をこのアダプターのハンドラーを削除することを確認します。</span><span class="sxs-lookup"><span data-stu-id="d47e7-110">Click **Yes** to confirm that you want to delete this adapter handler.</span></span>  
   
-5.  <span data-ttu-id="d47e7-111">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d47e7-111">Click **OK**.</span></span>  
+5.  <span data-ttu-id="d47e7-111">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d47e7-111">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="d47e7-112">参照</span><span class="sxs-lookup"><span data-stu-id="d47e7-112">See Also</span></span>  
  [<span data-ttu-id="d47e7-113">作成して、アダプター ハンドラーを削除します。</span><span class="sxs-lookup"><span data-stu-id="d47e7-113">Creating and Deleting Adapter Handlers</span></span>](../core/creating-and-deleting-adapter-handlers.md)

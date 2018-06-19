@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションの追跡を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの追跡を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, tracking
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - tracking, orchestrations
 - HAT, orchestrations
 ms.assetid: 8f5ed525-11f8-4bef-95c4-cfe9c971b663
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249138"
 ---
 # <a name="how-to-configure-tracking-for-an-orchestration"></a><span data-ttu-id="91dfb-102">オーケストレーションの追跡を構成する方法</span><span class="sxs-lookup"><span data-stu-id="91dfb-102">How to Configure Tracking for an Orchestration</span></span>
 <span data-ttu-id="91dfb-103">このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションの追跡を構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="91dfb-103">This topic describes how to use the BizTalk Server Administration console to configure tracking for an orchestration.</span></span>  

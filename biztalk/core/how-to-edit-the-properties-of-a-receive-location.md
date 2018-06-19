@@ -1,11 +1,11 @@
 ---
-title: "プロパティを編集する方法、受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティを編集する方法、受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive locations], properties
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - editing, receive locations
 - editing, properties
 ms.assetid: 2b622050-a875-4896-bed6-65ca39a26dd3
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254466"
 ---
 # <a name="how-to-edit-the-properties-of-a-receive-location"></a><span data-ttu-id="7b123-102">受信場所のプロパティを編集する方法</span><span class="sxs-lookup"><span data-stu-id="7b123-102">How to Edit the Properties of a Receive Location</span></span>
 <span data-ttu-id="7b123-103">このトピックでは、BizTalk Server 管理コンソールを使用して既存の受信場所のプロパティを編集する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7b123-103">This topic describes how to use the BizTalk Server Administration console to edit properties of an existing receive location.</span></span> <span data-ttu-id="7b123-104">受信場所の作成方法の詳細については、次を参照してください。[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)です。</span><span class="sxs-lookup"><span data-stu-id="7b123-104">For instructions on creating a receive location, see [How to Create a Receive Location](../core/how-to-create-a-receive-location.md).</span></span>  

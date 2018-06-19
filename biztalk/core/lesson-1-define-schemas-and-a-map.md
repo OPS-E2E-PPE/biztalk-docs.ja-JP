@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262010"
 ---
 # <a name="lesson-1-define-schemas-and-a-map"></a><span data-ttu-id="e94c2-102">レッスン 1: スキーマおよびマップの定義</span><span class="sxs-lookup"><span data-stu-id="e94c2-102">Lesson 1: Define Schemas and a Map</span></span>
 <span data-ttu-id="e94c2-103">このレッスンでは、エンタープライズ アプリケーション統合 (EAI) ソリューションに、最初のプロジェクトを作成してビルドします。</span><span class="sxs-lookup"><span data-stu-id="e94c2-103">In this lesson, you create and build the first project in the enterprise application integration (EAI) solution.</span></span> <span data-ttu-id="e94c2-104">このプロジェクトには、2 つのメッセージ スキーマと 1 つのマップが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e94c2-104">The project contains two message schemas, and a map.</span></span>  

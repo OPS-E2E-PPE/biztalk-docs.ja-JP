@@ -1,18 +1,18 @@
 ---
-title: "Web サービスとして公開されたオーケストレーションから SOAP 例外をスローする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスとして公開されたオーケストレーションから SOAP 例外をスローする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, SOAP exceptions
 - orchestrations, SOAP errors
 - Web services, orchestrations
 ms.assetid: e1c7cd74-d1c8-4b9d-a418-4601b1f040d7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255578"
 ---
 # <a name="how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service"></a><span data-ttu-id="8ef84-102">Web サービスとして公開されたオーケストレーションから SOAP 例外をスローする方法</span><span class="sxs-lookup"><span data-stu-id="8ef84-102">How to Throw SOAP Exceptions from Orchestrations Published as a Web Service</span></span>
 <span data-ttu-id="8ef84-103">Web サービスとして公開されたオーケストレーションから SOAP 例外を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="8ef84-103">You can return a SOAP exception from an orchestration that you have published as a Web service.</span></span> <span data-ttu-id="8ef84-104">SOAP ポートにエラー メッセージを追加し、応答の代わりにそのエラー メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="8ef84-104">You add a fault message to your SOAP port and send the fault message instead of the response.</span></span>  

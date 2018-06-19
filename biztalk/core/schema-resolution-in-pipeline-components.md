@@ -1,18 +1,18 @@
 ---
-title: "スキーマの解決パイプライン コンポーネントで |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの解決パイプライン コンポーネントで |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, schema resolution
 - pipeline components, schema resolution
 - schemas, pipeline components
 ms.assetid: 35a79a6f-788b-4ca1-8483-36dcba5ae580
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972962"
 ---
 # <a name="schema-resolution-in-pipeline-components"></a><span data-ttu-id="b09a5-102">スキーマの解決パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="b09a5-102">Schema Resolution in Pipeline Components</span></span>
 <span data-ttu-id="b09a5-103">パイプラインの逆アセンブラー コンポーネントおよびアセンブラー コンポーネントは、XSD スキーマを使用して、メッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="b09a5-103">Pipeline disassembler and assembler components use XSD schemas to process messages.</span></span> <span data-ttu-id="b09a5-104">スキーマには、昇格させたプロパティの一覧、識別フィールド、フラット ファイル メッセージの注釈、XML エンベロープの注釈などの情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b09a5-104">The schemas contain information such as the list of promoted properties, distinguished fields, annotations for flat file messages, and annotations for XML envelopes.</span></span>  

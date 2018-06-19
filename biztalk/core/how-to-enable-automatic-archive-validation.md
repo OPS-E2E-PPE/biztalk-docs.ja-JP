@@ -11,7 +11,7 @@ helpviewer_keywords:
 - validating, archives [Tracking database]
 - archiving [Tracking database], validating archive
 ms.assetid: 406ca54a-6b1f-4bdb-9bad-bea5ea0f6e66
-caps.latest.revision: ''
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25971800"
 ---
 # <a name="how-to-enable-automatic-archive-validation"></a><span data-ttu-id="4546f-102">アーカイブの自動検証を有効にする方法</span><span class="sxs-lookup"><span data-stu-id="4546f-102">How to Enable Automatic Archive Validation</span></span>
 <span data-ttu-id="4546f-103">アーカイブ検証を使用すると、アーカイブを作成時に検証することができます。</span><span class="sxs-lookup"><span data-stu-id="4546f-103">Archive validation enables you to validate the archives as they are created.</span></span> <span data-ttu-id="4546f-104">アーカイブの自動検証を有効にするには、セカンダリ データベース サーバー (検証サーバー) をセットアップしておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="4546f-104">Before you can enable automatic archive validation, you must set up a secondary database server, also called a validation server.</span></span> <span data-ttu-id="4546f-105">アーカイブ プロセスは単純なバックアップなので、ハードウェアの問題で、ディスク上に格納される実際のイメージが破損する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="4546f-105">Because the archiving process is a simple backup, it is possible that the actual image stored on the disk can be corrupted due to a hardware issue.</span></span>  
@@ -87,7 +88,7 @@ ms.lasthandoff: 03/23/2018
   
 12. <span data-ttu-id="4546f-141">**ジョブ ステップの一覧**, をクリックして **検証**, 、順にクリック **編集**します。</span><span class="sxs-lookup"><span data-stu-id="4546f-141">In the **Job step list**, click **validate**, and then click **Edit**.</span></span>  
   
-13. <span data-ttu-id="4546f-142">**全般的な** ] ページで、 **コマンド** ボックスで、コマンドで、 **exec dtasp_ValidateArchive null の場合、null**, null の場合、null を続けて、引用符で囲まれた、BizTalk 追跡データベースの名前の単一引用符で囲まれた、BizTalk 追跡データベースをホストするサーバーの名前を置換し、[クリックして **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="4546f-142">On the **General** page, in the **Command** box, in the command, **exec dtasp_ValidateArchive null, null**, replace null, null with the name of the server hosting the BizTalk Tracking database, surrounded by single quotes, followed by the name of the BizTalk Tracking database, surrounded by quotes, and then click **OK**.</span></span> <span data-ttu-id="4546f-143">以下に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4546f-143">For example:</span></span>  
+13. <span data-ttu-id="4546f-142">**全般的な** ] ページで、 **コマンド** ボックスで、コマンドで、 **exec dtasp_ValidateArchive null の場合、null**, null の場合、null を続けて、引用符で囲まれた、BizTalk 追跡データベースの名前の単一引用符で囲まれた、BizTalk 追跡データベースをホストするサーバーの名前を置換し、[クリックして **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="4546f-142">On the **General** page, in the **Command** box, in the command, **exec dtasp_ValidateArchive null, null**, replace null, null with the name of the server hosting the BizTalk Tracking database, surrounded by single quotes, followed by the name of the BizTalk Tracking database, surrounded by quotes, and then click **OK**.</span></span> <span data-ttu-id="4546f-143">以下に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4546f-143">For example:</span></span>  
   
      <span data-ttu-id="4546f-144">**exec dtasp_ValidateArchive '** *\<TrackingServerName\>* **'、'**  *\<TrackingDatabaseName\>* **'**</span><span class="sxs-lookup"><span data-stu-id="4546f-144">**exec dtasp_ValidateArchive '** *\<TrackingServerName\>* **', '** *\<TrackingDatabaseName\>* **'**</span></span>  
   

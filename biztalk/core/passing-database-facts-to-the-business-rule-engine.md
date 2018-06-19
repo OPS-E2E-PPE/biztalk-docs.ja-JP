@@ -1,14 +1,14 @@
 ---
-title: "ビジネス ルール エンジン データベース ファクトを渡す |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール エンジン データベース ファクトを渡す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62285bbe-ee64-4c26-b48e-55f666dc1304
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264138"
 ---
 # <a name="passing-database-facts-to-the-business-rule-engine"></a><span data-ttu-id="3fe12-102">ビジネス ルール エンジンへのデータベースのファクトの引き渡し</span><span class="sxs-lookup"><span data-stu-id="3fe12-102">Passing Database Facts to the Business Rule Engine</span></span>
 <span data-ttu-id="3fe12-103">DataConnection と TypedDataTable オブジェクトをファクトとしてを必要とするポリシーをテストするビジネス ルール作成ツールを使用する場合、DataConnection と TypedDataTable オブジェクトが自動的に作成され、ビジネス ルール エンジンの作業メモリにアサートします。</span><span class="sxs-lookup"><span data-stu-id="3fe12-103">When you use the Business Rule Composer tool to test a policy that requires a DataConnection/TypedDataTable object as a fact, a DataConnection/TypedDataTable object is automatically created for you and asserted into the Business Rule Engine's working memory.</span></span> <span data-ttu-id="3fe12-104">さらに、ポリシーによるデータベースの更新がすべて自動的にコミットされます。</span><span class="sxs-lookup"><span data-stu-id="3fe12-104">Additionally, any database updates by the policy are committed automatically.</span></span>  

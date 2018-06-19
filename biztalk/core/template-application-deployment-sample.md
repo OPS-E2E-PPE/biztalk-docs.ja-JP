@@ -1,11 +1,11 @@
 ---
-title: "テンプレート (アプリケーションの展開サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: テンプレート (アプリケーションの展開サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - deploying, scripts
 - examples, deploying
 ms.assetid: 7e77ff8e-b2bc-4d38-b5fd-329d6d54221f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975016"
 ---
 # <a name="template-application-deployment-sample"></a><span data-ttu-id="84cc5-102">Template (アプリケーションの展開サンプル)</span><span class="sxs-lookup"><span data-stu-id="84cc5-102">Template (Application Deployment Sample)</span></span>
 <span data-ttu-id="84cc5-103">このトピックでは、Template サンプルを使用してアプリケーションを展開する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="84cc5-103">This topic describes how to use the Template sample for application deployment.</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="84cc5-131">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="84cc5-131">Where to Find This Sample</span></span>  
  <span data-ttu-id="84cc5-132">このサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストール フォルダーに格納されています</span><span class="sxs-lookup"><span data-stu-id="84cc5-132">The sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder, as follows:</span></span>  
   
- <span data-ttu-id="84cc5-133">*\<パスのサンプル\>*\Application Deployment\Template</span><span class="sxs-lookup"><span data-stu-id="84cc5-133">*\<Samples Path\>*\Application Deployment\Template</span></span>  
+ <span data-ttu-id="84cc5-133">*\<パスのサンプル\>* \Application Deployment\Template</span><span class="sxs-lookup"><span data-stu-id="84cc5-133">*\<Samples Path\>* \Application Deployment\Template</span></span>  
   
  <span data-ttu-id="84cc5-134">前に説明したように、サンプルには以下の 2 つのファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="84cc5-134">As previously mentioned, the sample includes the following two files:</span></span>  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="84cc5-143">例:</span><span class="sxs-lookup"><span data-stu-id="84cc5-143">Example:</span></span>  
   
-     <span data-ttu-id="84cc5-144">ログ ファイルの設定 ="*\<サンプル パス\>*\ApplicationDeployment\Templates\SampleLogOut.txt"</span><span class="sxs-lookup"><span data-stu-id="84cc5-144">set LogFile="*\<Samples Path\>*\ApplicationDeployment\Templates\SampleLogOut.txt"</span></span>  
+     <span data-ttu-id="84cc5-144">ログ ファイルの設定 ="*\<サンプル パス\>* \ApplicationDeployment\Templates\SampleLogOut.txt"</span><span class="sxs-lookup"><span data-stu-id="84cc5-144">set LogFile="*\<Samples Path\>* \ApplicationDeployment\Templates\SampleLogOut.txt"</span></span>  
   
 ### <a name="to-create-a-new-application"></a><span data-ttu-id="84cc5-145">新しいアプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="84cc5-145">To create a new application</span></span>  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="84cc5-175">BizTalk Server 管理コンソールを右クリックして**アプリケーション**、 をポイント**インポート**、クリックして**MSI ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="84cc5-175">In the BizTalk Server Administration console, right-click **Applications**, point to **Import**, and then click **MSI file**.</span></span>  
   
-2.  <span data-ttu-id="84cc5-176">インポート ウィザードのページへようこそ で**インポートする MSI ファイル**、事前にエクスポートしてをクリックした .msi ファイルのパスを入力**次**です。</span><span class="sxs-lookup"><span data-stu-id="84cc5-176">On the Welcome to the Import Wizard page, in **MSI file to import**, type the path of the .msi file that you previously exported, and then click **Next**.</span></span> <span data-ttu-id="84cc5-177">かどうか必要に応じてを参照できます、MSI ファイル をクリックして、 **(...)**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="84cc5-177">If necessary, you can browse for the MSI file by clicking the **(….)** button.</span></span>  
+2.  <span data-ttu-id="84cc5-176">インポート ウィザードのページへようこそ で**インポートする MSI ファイル**、事前にエクスポートしてをクリックした .msi ファイルのパスを入力**次**です。</span><span class="sxs-lookup"><span data-stu-id="84cc5-176">On the Welcome to the Import Wizard page, in **MSI file to import**, type the path of the .msi file that you previously exported, and then click **Next**.</span></span> <span data-ttu-id="84cc5-177">かどうか必要に応じてを参照できます、MSI ファイル をクリックして、 **(...)** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="84cc5-177">If necessary, you can browse for the MSI file by clicking the **(….)** button.</span></span>  
   
 3.  <span data-ttu-id="84cc5-178">[アプリケーションの設定] ページで、**アプリケーション名**ドロップダウン一覧で、アプリケーションの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="84cc5-178">On the Application Settings page, in the **Application name** drop-down list, select the application name.</span></span>  
   

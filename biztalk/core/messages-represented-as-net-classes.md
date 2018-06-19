@@ -1,17 +1,17 @@
 ---
-title: ".NET クラスとして表されるメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: .NET クラスとして表されるメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, expressions
 - orchestrations, filters
 ms.assetid: cdbea200-552e-4734-a370-2f93da07ea81
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263394"
 ---
 # <a name="messages-represented-as-net-classes"></a><span data-ttu-id="74cc1-102">.NET クラスとして表されるメッセージ</span><span class="sxs-lookup"><span data-stu-id="74cc1-102">Messages Represented as .NET Classes</span></span>
 <span data-ttu-id="74cc1-103">この方法ではまず、メッセージの種類を定義する .NET クラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="74cc1-103">This approach first involves creating a .NET class that defines your message type.</span></span> <span data-ttu-id="74cc1-104">このクラスには、既定のコンストラクターを指定する必要があります。指定しなかった場合、それを使用するオーケストレーションがコンパイルされません。</span><span class="sxs-lookup"><span data-stu-id="74cc1-104">The class must have a default constructor or the orchestration using it will not compile.</span></span> <span data-ttu-id="74cc1-105">このようなクラスの簡単な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="74cc1-105">A simple example of such a class is shown here.</span></span>  

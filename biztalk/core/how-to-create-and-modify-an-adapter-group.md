@@ -1,14 +1,14 @@
 ---
-title: "作成し、アダプター グループを変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成し、アダプター グループを変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a1eef051-2ed7-4e28-8cb9-0145d6c8ed76
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249226"
 ---
 # <a name="how-to-create-and-modify-an-adapter-group"></a><span data-ttu-id="2bd99-102">作成し、アダプター グループを変更する方法</span><span class="sxs-lookup"><span data-stu-id="2bd99-102">How to Create and Modify an Adapter Group</span></span>
 <span data-ttu-id="2bd99-103">シングル サインオン (SSO) に新たに実装された機能の 1 つに、アダプター グループを作成したり変更したりする機能があります。</span><span class="sxs-lookup"><span data-stu-id="2bd99-103">One of the new features of Single Sign-On (SSO) is the ability to create and modify adapter groups.</span></span> <span data-ttu-id="2bd99-104">アダプター グループとは、その名前からわかるように、複数のアダプターを 1 つにまとめたものです。</span><span class="sxs-lookup"><span data-stu-id="2bd99-104">As the name implies, an adapter group is a collection of adapters.</span></span> <span data-ttu-id="2bd99-105">アダプター グループを使用することで、一連のアダプターのプロパティ (セキュリティ設定など) を体系的に管理できます。</span><span class="sxs-lookup"><span data-stu-id="2bd99-105">You can use adapter groups to organize security settings and other properties for your adapters.</span></span>  

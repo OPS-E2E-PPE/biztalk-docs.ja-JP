@@ -1,14 +1,14 @@
 ---
-title: "分離アダプターをインスタンス化 |Microsoft ドキュメント"
-ms.custom: 
+title: 分離アダプターをインスタンス化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b8359a3-b098-4bb6-87b4-d3432d2671b1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257490"
 ---
 # <a name="instantiating-isolated-adapters"></a><span data-ttu-id="70604-102">分離アダプターのインスタンス化</span><span class="sxs-lookup"><span data-stu-id="70604-102">Instantiating Isolated Adapters</span></span>
 <span data-ttu-id="70604-103">分離アダプターは BizTalk Server によってインスタンス化されません。</span><span class="sxs-lookup"><span data-stu-id="70604-103">As discussed earlier, isolated adapters are not instantiated by BizTalk Server.</span></span> <span data-ttu-id="70604-104">代わりに、別のプロセスでインスタンス化され、ホストされます。</span><span class="sxs-lookup"><span data-stu-id="70604-104">Rather, they are instantiated and hosted in another process.</span></span> <span data-ttu-id="70604-105">トランスポート プロキシを作成するアダプターの責任**QueryInterface**の**IBTTransportProxy**、およびを呼び出す**IBTTransportProxy**.**RegisterIsolatedReceiver**メッセージング エンジンに登録します。</span><span class="sxs-lookup"><span data-stu-id="70604-105">It is the responsibility of the adapter to create its transport proxy, **QueryInterface**, for **IBTTransportProxy**, and then call **IBTTransportProxy**.**RegisterIsolatedReceiver** to register with the Messaging Engine.</span></span>  
@@ -56,7 +57,7 @@ private IBTTransportProxy transportProxy;
 }  
 ```  
   
- <span data-ttu-id="70604-114">**実装のヒン ト:**アダプターが進行中の作業の数を記録することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="70604-114">**Implementation Tip:** We recommend that the adapter keep a count of the work in progress.</span></span> <span data-ttu-id="70604-115">アダプターはブロック**Terminate**メッセージの数が 0 に到達するまでです。</span><span class="sxs-lookup"><span data-stu-id="70604-115">The adapter should block **Terminate** until the message count has reached zero.</span></span> <span data-ttu-id="70604-116">受信側では、BizTalk Server に対して公開されていない未処理の要求がこの作業に含まれます。</span><span class="sxs-lookup"><span data-stu-id="70604-116">On the receive side this work includes any outstanding requests that have not been published to BizTalk Server.</span></span> <span data-ttu-id="70604-117">後に受信アダプターに応答メッセージは配信されません**Terminate**が呼び出されています。</span><span class="sxs-lookup"><span data-stu-id="70604-117">Response messages are not delivered to a receive adapter after **Terminate** has been called.</span></span>  
+ <span data-ttu-id="70604-114">**実装のヒン ト:** アダプターが進行中の作業の数を記録することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="70604-114">**Implementation Tip:** We recommend that the adapter keep a count of the work in progress.</span></span> <span data-ttu-id="70604-115">アダプターはブロック**Terminate**メッセージの数が 0 に到達するまでです。</span><span class="sxs-lookup"><span data-stu-id="70604-115">The adapter should block **Terminate** until the message count has reached zero.</span></span> <span data-ttu-id="70604-116">受信側では、BizTalk Server に対して公開されていない未処理の要求がこの作業に含まれます。</span><span class="sxs-lookup"><span data-stu-id="70604-116">On the receive side this work includes any outstanding requests that have not been published to BizTalk Server.</span></span> <span data-ttu-id="70604-117">後に受信アダプターに応答メッセージは配信されません**Terminate**が呼び出されています。</span><span class="sxs-lookup"><span data-stu-id="70604-117">Response messages are not delivered to a receive adapter after **Terminate** has been called.</span></span>  
   
  <span data-ttu-id="70604-118">送信アダプターでは、処理中のメッセージが適切に処理される必要があります。</span><span class="sxs-lookup"><span data-stu-id="70604-118">For send adapters, messages that are in progress should be handled appropriately.</span></span> <span data-ttu-id="70604-119">つまり、正常に配信されたメッセージをアダプターのプライベート アプリケーション メッセージ キューから削除して、メッセージが 2 回以上送信されるのを防ぐ必要があります。</span><span class="sxs-lookup"><span data-stu-id="70604-119">This means any message that was successfully delivered should be deleted from the adapter's private application message queue to prevent messages from being sent more than once.</span></span>  
   

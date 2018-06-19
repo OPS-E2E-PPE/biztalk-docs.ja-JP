@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションを参加解除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションを参加解除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, unenlisting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [orchestrations], unenlisting
 - unenlisting, orchestrations
 ms.assetid: 038ed7bb-615c-4e4e-a5bb-79de2626de77
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255882"
 ---
 # <a name="how-to-unenlist-an-orchestration"></a><span data-ttu-id="21c1a-102">オーケストレーションを参加解除する方法</span><span class="sxs-lookup"><span data-stu-id="21c1a-102">How to Unenlist an Orchestration</span></span>
 <span data-ttu-id="21c1a-103">このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションを参加解除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="21c1a-103">This topic describes how to unenlist an orchestration by using the BizTalk Server Administration console.</span></span> <span data-ttu-id="21c1a-104">オーケストレーションを参加解除は、ホストから削除します。</span><span class="sxs-lookup"><span data-stu-id="21c1a-104">Unenlisting an orchestration removes it from the host.</span></span> <span data-ttu-id="21c1a-105">このオーケストレーションによってメッセージが処理されないように、サブスクリプションも削除されます。</span><span class="sxs-lookup"><span data-stu-id="21c1a-105">This removes the subscription so that the orchestration no longer processes messages.</span></span> <span data-ttu-id="21c1a-106">バインドを編集するには、事前にオーケストレーションを参加解除しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="21c1a-106">You must unenlist an orchestration before you can edit its bindings.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "ソリューションのインストルメント化: API の使用方法の詳細な手順 |Microsoft ドキュメント"
-ms.custom: 
+title: 'ソリューションのインストルメント化: API の使用方法の詳細な手順 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9e027ab-1927-4905-8970-8061ac55d591
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258234"
 ---
 # <a name="instrumenting-a-solution-step-by-step-api-usage"></a><span data-ttu-id="0253d-102">ソリューションのインストルメント化: API の使用方法の詳細な手順</span><span class="sxs-lookup"><span data-stu-id="0253d-102">Instrumenting a Solution: Step-by-Step API Usage</span></span>
 <span data-ttu-id="0253d-103">このトピックでは、主要な BAM API クラスを使用してアプリケーションをインストルメント化する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="0253d-103">This topic describes how to instrument an application using the key BAM API class.</span></span> <span data-ttu-id="0253d-104">以下のコードは、定数と、アプリケーションのインストルメント化に必要な最小限のコードを使用して、サンプル コードを単純化したものです。</span><span class="sxs-lookup"><span data-stu-id="0253d-104">In the following code snippets we have simplified the sample code by using constants and by using the minimum code necessary to instrument an application.</span></span>  

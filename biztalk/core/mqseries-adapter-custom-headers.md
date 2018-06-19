@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263090"
 ---
 # <a name="mqseries-adapter-custom-headers"></a><span data-ttu-id="8ba55-102">MQSeries アダプターのカスタム ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8ba55-102">MQSeries Adapter Custom Headers</span></span>
 <span data-ttu-id="8ba55-103">MQSeries メッセージで使用されるヘッダー構造が原因で、使用するカスタム ヘッダーの管理が必要になります。</span><span class="sxs-lookup"><span data-stu-id="8ba55-103">Because of the header structures used in MQSeries messages, you must manage any custom headers you want to use.</span></span> <span data-ttu-id="8ba55-104">カスタム ヘッダーは、MQSeries ヘッダーの処理に影響を与えないように、メッセージ本文の一部にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8ba55-104">Custom headers must be part of the message body to avoid interfering with the processing of the MQSeries headers.</span></span> <span data-ttu-id="8ba55-105">自動的に昇格されたプロパティは降格させないようにしてください。</span><span class="sxs-lookup"><span data-stu-id="8ba55-105">Make sure that you avoid demoting any one of the automatically promoted properties.</span></span> <span data-ttu-id="8ba55-106">自動的に昇格されるプロパティの詳細については、次を参照してください。 [MQSeries アダプターのプロパティ](../core/mqseries-adapter-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="8ba55-106">For more information about automatically promoted properties, see [MQSeries Adapter Properties](../core/mqseries-adapter-properties.md).</span></span>  

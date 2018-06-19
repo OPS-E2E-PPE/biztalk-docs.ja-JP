@@ -1,15 +1,15 @@
 ---
-title: "インポートまたはエクスポートする BizTalk の設定を使用して設定のダッシュ ボード |Microsoft ドキュメント"
-description: "BizTalk Server 管理コンソールを使用して、インポートまたは BizTalk Server 環境の間の設定をエクスポートするには"
-ms.custom: 
+title: インポートまたはエクスポートする BizTalk の設定を使用して設定のダッシュ ボード |Microsoft ドキュメント
+description: BizTalk Server 管理コンソールを使用して、インポートまたは BizTalk Server 環境の間の設定をエクスポートするには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc2f0b44-d79b-4f95-811a-0843e3d6d1c8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255138"
 ---
 # <a name="use-settings-dashboard-to-import-or-export-biztalk-settings"></a><span data-ttu-id="9d722-103">設定ダッシュ ボードを使用して、インポートまたは BizTalk の設定をエクスポートするには</span><span class="sxs-lookup"><span data-stu-id="9d722-103">Use Settings Dashboard to import or export BizTalk Settings</span></span> 
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="9d722-129">クリックして、**ファイルの場所を指定** ページで、クリックして![設定ファイルの参照](../core/media/importsettings-filelocationbrowse.gif "ImportSettings_FileLocationBrowse")です。</span><span class="sxs-lookup"><span data-stu-id="9d722-129">Click the **Specify File Location** page, and then click ![Browse the settings file](../core/media/importsettings-filelocationbrowse.gif "ImportSettings_FileLocationBrowse").</span></span> <span data-ttu-id="9d722-130">ファイル エクスプローラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d722-130">The file explorer appears.</span></span>  
   
-4.  <span data-ttu-id="9d722-131">ソース環境設定を含む XML ファイルを選択し、クリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="9d722-131">Select the XML file containing the source environment settings, and then click **Open**.</span></span> <span data-ttu-id="9d722-132">**ファイルの場所**XML ファイルのパスを表示し、**ソース グループ**ソース マシンのグループの情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="9d722-132">The **File Location** displays the path of the XML file and the **Source Group** is populated with the group information of the source machine.</span></span> <span data-ttu-id="9d722-133">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d722-133">Click **Next**.</span></span>  
+4.  <span data-ttu-id="9d722-131">ソース環境設定を含む XML ファイルを選択し、クリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="9d722-131">Select the XML file containing the source environment settings, and then click **Open**.</span></span> <span data-ttu-id="9d722-132">**ファイルの場所**XML ファイルのパスを表示し、**ソース グループ**ソース マシンのグループの情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="9d722-132">The **File Location** displays the path of the XML file and the **Source Group** is populated with the group information of the source machine.</span></span> <span data-ttu-id="9d722-133">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d722-133">Click **Next**.</span></span>  
   
 5.  <span data-ttu-id="9d722-134">**ホスト マッピング** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="9d722-134">On the **Host Mapping** page, do the following:</span></span>  
   

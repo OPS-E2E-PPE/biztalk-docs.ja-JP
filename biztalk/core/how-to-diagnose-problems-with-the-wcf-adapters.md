@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプタに関する問題を診断する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプタに関する問題を診断する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 997a4ecd-6077-45d6-82d3-3f658ca62fd4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250530"
 ---
 # <a name="how-to-diagnose-problems-with-the-wcf-adapters"></a><span data-ttu-id="ef5e8-102">WCF アダプタに関する問題の診断方法</span><span class="sxs-lookup"><span data-stu-id="ef5e8-102">How to Diagnose Problems with the WCF Adapters</span></span>
 <span data-ttu-id="ef5e8-103">このセクションでは、WCF アダプタに関する問題の診断手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="ef5e8-103">This section contains steps that you can follow to help diagnose problems with the WCF adapters.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="ef5e8-107">*%Windir%\\*system32\LogFiles\W3SVC1\\</span><span class="sxs-lookup"><span data-stu-id="ef5e8-107">*%WinDir%\\*system32\LogFiles\W3SVC1\\</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="ef5e8-108">*%Windir%*の場所のプレース ホルダー、[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]ディレクトリ、IIS サーバーにします。</span><span class="sxs-lookup"><span data-stu-id="ef5e8-108">*%WinDir%* is a placeholder for the location of the [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] directory on the IIS server.</span></span>  
+    >  <span data-ttu-id="ef5e8-108">*%Windir%* の場所のプレース ホルダー、[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]ディレクトリ、IIS サーバーにします。</span><span class="sxs-lookup"><span data-stu-id="ef5e8-108">*%WinDir%* is a placeholder for the location of the [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] directory on the IIS server.</span></span>  
   
      <span data-ttu-id="ef5e8-109">既定では、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] と [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ベースのコンピューターの HTTPERR ログ ファイルは次のディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="ef5e8-109">By default the HTTPERR log files on a [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] and [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] based computers are located in the following directory:</span></span>  
   

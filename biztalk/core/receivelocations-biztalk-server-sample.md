@@ -1,14 +1,14 @@
 ---
-title: "ReceiveLocations (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: ReceiveLocations (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87d75941-3973-4166-91b0-f1192b25a804
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972624"
 ---
 # <a name="receivelocations-biztalk-server-sample"></a><span data-ttu-id="b1d66-102">ReceiveLocations (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="b1d66-102">ReceiveLocations (BizTalk Server Sample)</span></span>
 <span data-ttu-id="b1d66-103">サンプルを作成する方法を示します ReceiveLocations に受信場所、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="b1d66-103">The ReceiveLocations sample demonstrates how to create receive locations in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by using the **ExplorerOM** administration objects.</span></span> <span data-ttu-id="b1d66-104">詳細については、受信場所全般を参照してください[受信場所](../core/receive-locations.md)です。</span><span class="sxs-lookup"><span data-stu-id="b1d66-104">For more information about receive locations in general, see [Receive Locations](../core/receive-locations.md).</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="b1d66-128">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル ReceiveLocations.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="b1d66-128">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file ReceiveLocations.sln.</span></span>  
   
-2.  <span data-ttu-id="b1d66-129">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b1d66-129">On the **Build** menu, click **Build Solution**.</span></span>  
+2.  <span data-ttu-id="b1d66-129">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b1d66-129">On the **Build** menu, click **Build Solution**.</span></span>  
   
 #### <a name="to-run-this-sample"></a><span data-ttu-id="b1d66-130">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="b1d66-130">To run this sample</span></span>  
   

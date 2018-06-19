@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262226"
 ---
 # <a name="mappings-enlisted-party-node"></a><span data-ttu-id="b5382-102">Mappings (Enlisted Party ノード)</span><span class="sxs-lookup"><span data-stu-id="b5382-102">Mappings (Enlisted Party Node)</span></span>
 <span data-ttu-id="b5382-103">バインド ファイルの Mappings ノードは、パーティ ポートとロール ポートの種類の操作の間のマッピングを記述するすべての Mapping ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="b5382-103">The Mappings node of a binding file is the parent node for all of the Mapping nodes which describe the mapping between a party port and role port type operation.</span></span>  

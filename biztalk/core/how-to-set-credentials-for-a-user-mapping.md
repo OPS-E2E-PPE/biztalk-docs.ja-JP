@@ -1,17 +1,17 @@
 ---
-title: "ユーザー マッピングの資格情報を設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー マッピングの資格情報を設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps [SSO], credentials
 - managing [SSO maps], configuring credentials
 ms.assetid: 75b29114-56b6-4db0-8666-61cf6c675401
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972144"
 ---
 # <a name="how-to-set-credentials-for-a-user-mapping"></a><span data-ttu-id="4ae8d-102">ユーザー マッピングの資格情報を設定する方法</span><span class="sxs-lookup"><span data-stu-id="4ae8d-102">How to Set Credentials for a User Mapping</span></span>
 <span data-ttu-id="4ae8d-103">ここで示すコマンドを使用すると、ユーザーが特定のアプリケーションにアクセスするための資格情報を設定できます。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-103">Use this command to set the credentials for a user to access a specific application.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="4ae8d-109">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-109">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="4ae8d-110">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-110">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="4ae8d-111">型**ssomanage – setcredentials\<ドメイン\>\\< ユーザー名\> \<applicationname\>**ここで、  **\<ドメイン\>**は Windows ドメイン ユーザー アカウントを **\<username\>** は、Windows ユーザー名と **\<applicationname\>** は、特定のアプリケーションの資格情報を設定します。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-111">Type **ssomanage –setcredentials \<domain\>\\<username\> \<applicationname\>**, where **\<domain\>** is the Windows domain for the user account, **\<username\>** is the Windows user name, and **\<applicationname\>** is the specific application for which you want to set the credentials for.</span></span>  
+3.  <span data-ttu-id="4ae8d-111">型**ssomanage – setcredentials\<ドメイン\>\\< ユーザー名\> \<applicationname\>** ここで、  **\<ドメイン\>** は Windows ドメイン ユーザー アカウントを **\<username\>** は、Windows ユーザー名と **\<applicationname\>** は、特定のアプリケーションの資格情報を設定します。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-111">Type **ssomanage –setcredentials \<domain\>\\<username\> \<applicationname\>**, where **\<domain\>** is the Windows domain for the user account, **\<username\>** is the Windows user name, and **\<applicationname\>** is the specific application for which you want to set the credentials for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="4ae8d-112">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-112">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="4ae8d-117">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-117">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="4ae8d-118">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-118">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="4ae8d-119">型**ssoclient-setcredentials\<アプリケーション名\>**ここで、 **\<アプリケーション名\>**関連アプリケーションの名前を指定します。ユーザー マッピングを削除します。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-119">Type **ssoclient -setcredentials \<application name\>**, where **\<application name\>** is the name of the affiliate application you want to remove the user mapping for.</span></span>  
+3.  <span data-ttu-id="4ae8d-119">型**ssoclient-setcredentials\<アプリケーション名\>** ここで、 **\<アプリケーション名\>** 関連アプリケーションの名前を指定します。ユーザー マッピングを削除します。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-119">Type **ssoclient -setcredentials \<application name\>**, where **\<application name\>** is the name of the affiliate application you want to remove the user mapping for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="4ae8d-120">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="4ae8d-120">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

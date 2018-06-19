@@ -1,17 +1,17 @@
 ---
-title: "BAM 集計を表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 集計を表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], viewing aggregations
 - viewing, aggregations [BAM]
 ms.assetid: aa697f16-ac47-46f9-98a5-a951961d0413
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256666"
 ---
 # <a name="how-to-view-bam-aggregations"></a><span data-ttu-id="3c51c-102">BAM 集計を表示する方法</span><span class="sxs-lookup"><span data-stu-id="3c51c-102">How to View BAM Aggregations</span></span>
 <span data-ttu-id="3c51c-103">BAM 集計は、ビジネス アナリストが Excel で Excel アドインを使用して定義します。</span><span class="sxs-lookup"><span data-stu-id="3c51c-103">BAM aggregations are defined by the business analyst in Excel using the Excel add-in.</span></span>  

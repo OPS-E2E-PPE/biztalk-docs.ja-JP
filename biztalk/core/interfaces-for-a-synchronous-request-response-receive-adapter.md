@@ -1,14 +1,14 @@
 ---
-title: "アダプターの受信要求-応答の同期用のインターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの受信要求-応答の同期用のインターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0c60832-52b5-4d2c-81ec-94c46c375b15
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257810"
 ---
 # <a name="interfaces-for-a-synchronous-request-response-receive-adapter"></a><span data-ttu-id="2a8c6-102">要求 - 応答の同期受信アダプター用のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="2a8c6-102">Interfaces for a Synchronous Request-Response Receive Adapter</span></span>
 <span data-ttu-id="2a8c6-103">すべての受信アダプターが要求 - 応答モードで動作するには、アダプターに次のインターフェイスを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a8c6-103">All receive adapters need to implement the following interfaces to work in request-response mode:</span></span>  

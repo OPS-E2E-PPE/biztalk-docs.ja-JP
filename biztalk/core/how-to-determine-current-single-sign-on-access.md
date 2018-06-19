@@ -1,14 +1,14 @@
 ---
-title: "現在のシングル サインオン アクセスを確認する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 現在のシングル サインオン アクセスを確認する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cab68dfc-27cd-4f7c-a0df-20c670306358
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249258"
 ---
 # <a name="how-to-determine-current-single-sign-on-access"></a><span data-ttu-id="cd0a0-102">現在のシングル サインオン アクセスを確認する方法</span><span class="sxs-lookup"><span data-stu-id="cd0a0-102">How to Determine Current Single Sign-On Access</span></span>
 <span data-ttu-id="cd0a0-103">ユーザーのために実行する必要のある最初の作業の 1 つは、どの関連アプリケーションが現在のユーザーに対して設定済みであるかを判断することです。</span><span class="sxs-lookup"><span data-stu-id="cd0a0-103">One of the first tasks you might need to perform for a user is to determine what affiliated applications have already been set up for the current user.</span></span> <span data-ttu-id="cd0a0-104">この判断を行うには、ISSOMapper.GetApplications を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="cd0a0-104">You can perform this query with a call to ISSOMapper.GetApplications.</span></span>  

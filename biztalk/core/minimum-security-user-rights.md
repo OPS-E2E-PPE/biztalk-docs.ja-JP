@@ -18,7 +18,7 @@ helpviewer_keywords:
 - user accounts, access control
 - security, permissions
 ms.assetid: 44b6e7da-8e6c-40c0-a250-52ab422c0adf
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22265586"
 ---
 # <a name="minimum-security-user-rights"></a><span data-ttu-id="b0f3b-102">セキュリティの最小ユーザー権限</span><span class="sxs-lookup"><span data-stu-id="b0f3b-102">Minimum Security User Rights</span></span>
 <span data-ttu-id="b0f3b-103">グループと BizTalk Server で使用するアカウントは、ほとんどのタスクを実行する必要がある最小ユーザー権限を持っています。</span><span class="sxs-lookup"><span data-stu-id="b0f3b-103">The groups and accounts that BizTalk Server uses have the minimum user rights they need to perform most tasks.</span></span> <span data-ttu-id="b0f3b-104">タスクによっては、所属しているグループに対し BizTalk Server で自動的に許可されている以外のユーザー権限が必要になる場合もあります。</span><span class="sxs-lookup"><span data-stu-id="b0f3b-104">Therefore, there are some tasks where you may need more user rights than the ones BizTalk Server automatically has granted the group to which you belong.</span></span> <span data-ttu-id="b0f3b-105">このトピックの内容:</span><span class="sxs-lookup"><span data-stu-id="b0f3b-105">In this topic:</span></span>  

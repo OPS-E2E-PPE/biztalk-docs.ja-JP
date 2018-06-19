@@ -1,14 +1,14 @@
 ---
-title: "無効なアドレスの長さ |Microsoft ドキュメント"
-ms.custom: 
+title: 無効なアドレスの長さ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8e16eb6-e77e-4361-ac91-0730004c4433
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257586"
 ---
 # <a name="invalid-address-length"></a><span data-ttu-id="b00a9-102">アドレスの長さが無効です</span><span class="sxs-lookup"><span data-stu-id="b00a9-102">Invalid address length</span></span>
 ## <a name="details"></a><span data-ttu-id="b00a9-103">詳細</span><span class="sxs-lookup"><span data-stu-id="b00a9-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="b00a9-125">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="b00a9-125">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="b00a9-126">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b00a9-126">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="b00a9-126">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b00a9-126">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="b00a9-127">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="b00a9-127">In the port **Type** list, select the correct port.</span></span>  
   
@@ -55,4 +56,4 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="b00a9-129">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="b00a9-129">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="b00a9-130">**アドレス (URI)**テキスト ボックスに、アドレスが 255 文字の最大の長さを超えていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b00a9-130">In the **Address (URI)** text box, ensure the address does not exceed the maximum length of 255 characters.</span></span>
+9. <span data-ttu-id="b00a9-130">**アドレス (URI)** テキスト ボックスに、アドレスが 255 文字の最大の長さを超えていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b00a9-130">In the **Address (URI)** text box, ensure the address does not exceed the maximum length of 255 characters.</span></span>

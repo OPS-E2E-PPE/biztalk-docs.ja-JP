@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22257898"
 ---
 # <a name="instance-message-processing-using-property-promotion"></a><span data-ttu-id="32490-102">プロパティの昇格を使用したインスタンス メッセージ処理</span><span class="sxs-lookup"><span data-stu-id="32490-102">Instance Message Processing Using Property Promotion</span></span>
 <span data-ttu-id="32490-103">使用してプロパティの昇格、 **プロパティ フィールド** メソッド、プロパティ スキーマの作成が必要です。</span><span class="sxs-lookup"><span data-stu-id="32490-103">Promoting properties by using the **Property Field** method requires the creation of a property schema.</span></span> <span data-ttu-id="32490-104">プロパティ スキーマの作成の詳細については、次を参照してください。[プロパティ スキーマを作成する方法](../core/how-to-create-property-schemas.md)です。</span><span class="sxs-lookup"><span data-stu-id="32490-104">For more information about creating a property schema, see [How to Create Property Schemas](../core/how-to-create-property-schemas.md).</span></span> <span data-ttu-id="32490-105">すべてのプロパティの昇格では使用すると、 **プロパティの昇格** を使用してアクセス可能なダイアログ ボックス、 **プロパティの昇格** のプロパティ、 **スキーマ** メッセージ スキーマ内のノードです。</span><span class="sxs-lookup"><span data-stu-id="32490-105">As with all property promotion, you use the **Promote Properties** dialog box, which is accessible by using the **Promote Properties** property of the **Schema** node in message schemas.</span></span>  

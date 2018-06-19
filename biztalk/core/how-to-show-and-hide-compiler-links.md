@@ -1,14 +1,14 @@
 ---
-title: "コンパイラ リンクを非表示にしたりする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: コンパイラ リンクを非表示にしたりする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66bfd9de-c4d2-46ee-854f-cf7c7cd07368
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255546"
 ---
 # <a name="how-to-show-and-hide-compiler-links"></a><span data-ttu-id="9c2f4-102">コンパイラ リンクを表示する/非表示にする方法</span><span class="sxs-lookup"><span data-stu-id="9c2f4-102">How to Show and Hide Compiler Links</span></span>
 <span data-ttu-id="9c2f4-103">マップをコンパイルすると、BizTalk マッパーにより、マップで必要となるすべてのリンクを示す追加のリンク (コンパイラ リンク) が作成されます。</span><span class="sxs-lookup"><span data-stu-id="9c2f4-103">When you compile a map, BizTalk Mapper creates additional links, known as compiler links to account for all linking needed in the map.</span></span> <span data-ttu-id="9c2f4-104">これらのリンクのいくつかは、作成したリンクによって暗黙的に指定されます。</span><span class="sxs-lookup"><span data-stu-id="9c2f4-104">Some of these links are only implied by the links you created.</span></span> <span data-ttu-id="9c2f4-105">マップをコンパイルまたはテストする際、追加されたコンパイラ リンクをメイン ウィンドウに表示するかどうかを、Visual Studio の出力ウィンドウの最終行で選択できます。</span><span class="sxs-lookup"><span data-stu-id="9c2f4-105">When you compile, or test, a map, the final line in the Visual Studio Output window allows you to show or hide these additional compiler links in the main window.</span></span> <span data-ttu-id="9c2f4-106">既定では、コンパイラ リンクは赤色の波線で表示されます。</span><span class="sxs-lookup"><span data-stu-id="9c2f4-106">By default, the compiler links appear as red dashed lines.</span></span>  

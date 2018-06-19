@@ -1,14 +1,14 @@
 ---
-title: "XDR スキーマを XSD スキーマに移行する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: XDR スキーマを XSD スキーマに移行する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90bde0d0-bfe6-4d6c-823c-8ed9c0e15783
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25971624"
 ---
 # <a name="how-to-migrate-xdr-schemas-to-xsd-schemas"></a><span data-ttu-id="30ed2-102">XDR スキーマを XSD スキーマに移行する方法</span><span class="sxs-lookup"><span data-stu-id="30ed2-102">How to Migrate XDR Schemas to XSD Schemas</span></span>
 <span data-ttu-id="30ed2-103">以前のバージョンの BizTalk Server のスキーマを移行する場合、XDR (XML-Data Reduced) スキーマを XSD (XML Schema Definition) 言語スキーマに変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="30ed2-103">If you are migrating schemas from a previous version of BizTalk Server, you will need to convert your XML-Data Reduced (XDR) schemas into XML Schema definition (XSD) language schemas.</span></span> <span data-ttu-id="30ed2-104">このトピックでは、必要な手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="30ed2-104">This topic describes the necessary steps.</span></span>  

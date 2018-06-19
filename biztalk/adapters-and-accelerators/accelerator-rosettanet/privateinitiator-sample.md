@@ -1,14 +1,14 @@
 ---
-title: "PrivateInitiator サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: PrivateInitiator サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4f176566-2a71-487d-84c1-5e7767701e8b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004379"
 ---
 # <a name="privateinitiator-sample"></a><span data-ttu-id="7155a-102">PrivateInitiator サンプル</span><span class="sxs-lookup"><span data-stu-id="7155a-102">PrivateInitiator Sample</span></span>
 <span data-ttu-id="7155a-103">PrivateInitiator.odx サンプルがインストールされている開始側プライベート プロセスのコードが含まれています[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server です。</span><span class="sxs-lookup"><span data-stu-id="7155a-103">The PrivateInitiator.odx sample contains the code for the initiator private process installed by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server.</span></span> <span data-ttu-id="7155a-104">これは、SQL アダプターベースの既定の送受信ポートを使用して RNIF Service Content メッセージを送受信する、汎用のプライベート プロセスです。</span><span class="sxs-lookup"><span data-stu-id="7155a-104">This is a generic private process that sends and receives RNIF service-content messages from the default SQL adapter-based send and receive ports.</span></span>  

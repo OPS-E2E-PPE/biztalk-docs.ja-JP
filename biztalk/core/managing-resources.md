@@ -1,15 +1,15 @@
 ---
-title: "リソースの管理 |Microsoft ドキュメント"
-description: "Btstask または BizTalk 管理コンソールを使用して、BizTalk Server で複数のアセンブリ、スクリプト、証明書、バインド ファイルで動作するには"
-ms.custom: 
+title: リソースの管理 |Microsoft ドキュメント
+description: Btstask または BizTalk 管理コンソールを使用して、BizTalk Server で複数のアセンブリ、スクリプト、証明書、バインド ファイルで動作するには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b478ef2e-1363-4c2c-a4b7-6a582a6b33a5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262442"
 ---
 # <a name="manage-resources"></a><span data-ttu-id="fe7ba-103">リソースを管理します。</span><span class="sxs-lookup"><span data-stu-id="fe7ba-103">Manage Resources</span></span>
 

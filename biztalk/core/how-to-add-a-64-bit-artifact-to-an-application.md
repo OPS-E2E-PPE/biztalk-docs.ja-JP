@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションを 64 ビット アイテムを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを 64 ビット アイテムを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, 64-bit support
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - BizTalk Server, 64-bit support
 - applications, 64-bit support
 ms.assetid: 46aca7d4-c5be-421e-b16d-7f3095c8cc67
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246626"
 ---
 # <a name="how-to-add-a-64-bit-artifact-to-an-application"></a><span data-ttu-id="bc82a-102">64 ビット アイテムをアプリケーションに追加する方法</span><span class="sxs-lookup"><span data-stu-id="bc82a-102">How to Add a 64-Bit Artifact to an Application</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="bc82a-103"> では、64 ビット アプリケーションもサポートされます。</span><span class="sxs-lookup"><span data-stu-id="bc82a-103"> includes support for 64-bit applications.</span></span> <span data-ttu-id="bc82a-104">つまり、32 ビット アイテムと同じ方法で 64 ビット アイテムを BizTalk アプリケーションに追加できます。ただし、次の 64 ビット アイテムを 32 ビットのコンピューターにインストールすると次のような問題が発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="bc82a-104">This means that you can add 64-bit artifacts to a BizTalk application in the same manner as 32-bit artifacts; however, you may encounter the following issues when installing the following 64-bit artifacts on a 32-bit computer:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "[プロパティ] ウィンドウを管理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: '[プロパティ] ウィンドウを管理する方法 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5277f9e-1043-4e68-883f-056d0ea633f3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254066"
 ---
 # <a name="how-to-manage-the-properties-window"></a><span data-ttu-id="11013-102">[プロパティ] ウィンドウの管理方法</span><span class="sxs-lookup"><span data-stu-id="11013-102">How to Manage the Properties Window</span></span>
 <span data-ttu-id="11013-103">BizTalk エディターは、スキーマ ツリーのノードに関連付けられたプロパティの値を、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [プロパティ] ウィンドウを使用して表示します。[プロパティ] ウィンドウは、プロパティの値を変更するためのインターフェイスとしても使用されています。</span><span class="sxs-lookup"><span data-stu-id="11013-103">BizTalk Editor uses the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window to display the values of the properties associated with nodes in the schema tree view, and provides an interface for changing those values.</span></span> <span data-ttu-id="11013-104">このトピックでは、[プロパティ] ウィンドウのいくつかの機能を操作するための手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="11013-104">This topic provides step-by-step instructions for managing certain characteristics of the Properties window.</span></span>  

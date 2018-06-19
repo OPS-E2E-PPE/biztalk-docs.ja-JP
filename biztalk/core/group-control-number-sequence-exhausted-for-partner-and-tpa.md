@@ -1,14 +1,14 @@
 ---
-title: "パートナーと TPA の制御番号シーケンスが終了をグループ化 |Microsoft ドキュメント"
-ms.custom: 
+title: パートナーと TPA の制御番号シーケンスが終了をグループ化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf341f8d-02ec-4618-a980-c8ac90654b1a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246402"
 ---
 # <a name="group-control-number-sequence-exhausted-for-partner-and-tpa"></a><span data-ttu-id="b8f67-102">パートナーと TPA のグループ制御番号のシーケンスが終了しました</span><span class="sxs-lookup"><span data-stu-id="b8f67-102">Group control number sequence exhausted for Partner and TPA</span></span>
 ## <a name="details"></a><span data-ttu-id="b8f67-103">詳細</span><span class="sxs-lookup"><span data-stu-id="b8f67-103">Details</span></span>  

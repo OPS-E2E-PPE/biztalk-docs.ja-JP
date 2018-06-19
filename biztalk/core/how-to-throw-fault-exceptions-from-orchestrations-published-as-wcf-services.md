@@ -1,11 +1,11 @@
 ---
-title: "WCF サービスとして公開されたオーケストレーションからエラー例外をスローする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービスとして公開されたオーケストレーションからエラー例外をスローする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, WCF services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, errors
 - orchestrations, WCF services
 ms.assetid: 89f57841-d40e-4a5a-90a8-5556a2766c03
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255738"
 ---
 # <a name="how-to-throw-fault-exceptions-from-orchestrations-published-as-wcf-services"></a><span data-ttu-id="9b943-102">WCF サービスとして公開されたオーケストレーションからエラー例外をスローする方法</span><span class="sxs-lookup"><span data-stu-id="9b943-102">How to Throw Fault Exceptions from Orchestrations Published as WCF Services</span></span>
 <span data-ttu-id="9b943-103">オーケストレーションから送信できる SOAP エラーには、型指定された SOAP エラーと型指定されていない SOAP エラーという 2 種類があります。</span><span class="sxs-lookup"><span data-stu-id="9b943-103">Two types of SOAP faults can be sent from an orchestration: typed and untyped SOAP faults.</span></span> <span data-ttu-id="9b943-104">型指定された SOAP エラーとは、操作が必要がある、 **System.ServiceModel.FaultContractAttribute**カスタム SOAP エラーの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="9b943-104">Typed SOAP faults are those in which an operation has a **System.ServiceModel.FaultContractAttribute** that specifies a custom SOAP fault type.</span></span> <span data-ttu-id="9b943-105">型指定されていない SOAP エラーとは、操作のコントラクトで指定されていないエラーのことです。</span><span class="sxs-lookup"><span data-stu-id="9b943-105">Untyped SOAP faults are those that are not specified in the contract for an operation.</span></span>  

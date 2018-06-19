@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254338"
 ---
 # <a name="how-to-open-a-pipeline"></a><span data-ttu-id="39464-102">パイプラインを開く方法</span><span class="sxs-lookup"><span data-stu-id="39464-102">How to Open a Pipeline</span></span>
 <span data-ttu-id="39464-103">パイプライン ファイルを開くと、パイプライン デザイナーが表示され、定義されたパイプラインとそのステージがデザイン領域に表示されます。</span><span class="sxs-lookup"><span data-stu-id="39464-103">Opening a pipeline file causes Pipeline Designer to appear with the defined pipeline and its stages in the design area.</span></span> <span data-ttu-id="39464-104">また、パイプライン デザイナー ツールボックスおよびプロパティ ウィンドウが表示されます (まだ表示されていない場合)。</span><span class="sxs-lookup"><span data-stu-id="39464-104">In addition, the Pipeline Designer Toolbox and the Properties window will appear if they are not already open.</span></span>  

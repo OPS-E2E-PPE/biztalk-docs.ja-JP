@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257314"
 ---
 # <a name="inboundtransforms-sendport-node"></a><span data-ttu-id="256f9-102">InboundTransforms (SendPort ノード)</span><span class="sxs-lookup"><span data-stu-id="256f9-102">InboundTransforms (SendPort Node)</span></span>
 <span data-ttu-id="256f9-103">バインド ファイルの SendPort ノードの InboundTransforms ノードには、バインド ファイルと共にエクスポートされる双方向送信ポートの受信変換のコレクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="256f9-103">The InboundTransforms node of the SendPort node of a binding file contains the collection of inbound transforms of a two-way send port that is exported with the binding file.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "他のスキーマを使用するスキーマを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 他のスキーマを使用するスキーマを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff0bcd9a-6c66-4c3b-bd41-64047a7c8392
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249418"
 ---
 # <a name="how-to-create-schemas-that-use-other-schemas"></a><span data-ttu-id="a3b8b-102">他のスキーマを使用するスキーマを作成する方法</span><span class="sxs-lookup"><span data-stu-id="a3b8b-102">How to Create Schemas That Use Other Schemas</span></span>
 <span data-ttu-id="a3b8b-103">XSD (XML Schema Definition) 言語には、あるスキーマを他のスキーマで使用するためのメカニズムが 3 つあります。</span><span class="sxs-lookup"><span data-stu-id="a3b8b-103">XML Schema definition (XSD) language provides three different but related mechanisms for using one schema within another schema.</span></span> <span data-ttu-id="a3b8b-104">スキーマのインポート、スキーマのインクルード、および、スキーマの再定義です。</span><span class="sxs-lookup"><span data-stu-id="a3b8b-104">These mechanisms are importing a schema, including a schema, and redefining a schema.</span></span> <span data-ttu-id="a3b8b-105">これらのメカニズムと違いの簡単な要約を参照してください。[スキーマを使用して他のスキーマを](../core/schemas-that-use-other-schemas.md)です。</span><span class="sxs-lookup"><span data-stu-id="a3b8b-105">For a brief summary of these mechanisms and how they differ, see [Schemas That Use Other Schemas](../core/schemas-that-use-other-schemas.md).</span></span> <span data-ttu-id="a3b8b-106">詳細については、次を参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)XSD 入門および仕様へのリンク用です。</span><span class="sxs-lookup"><span data-stu-id="a3b8b-106">For detailed information, see [XSD Resources on the Web](../core/xsd-resources-on-the-web.md) for links to the XSD primer and specifications.</span></span>  

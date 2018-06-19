@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22258002"
 ---
 # <a name="importbindings-command"></a><span data-ttu-id="3bb1f-102">ImportBindings コマンド</span><span class="sxs-lookup"><span data-stu-id="3bb1f-102">ImportBindings Command</span></span>
 <span data-ttu-id="3bb1f-103">XML ベースのバインド ファイルから、BizTalk アプリケーションまたはグループにバインドをインポートします。</span><span class="sxs-lookup"><span data-stu-id="3bb1f-103">Imports bindings from an XML-based binding file into a BizTalk application or group.</span></span> <span data-ttu-id="3bb1f-104">バインド可能性がありますがからエクスポートされたアセンブリ、アプリケーション、またはグループ、」の説明に従って[バインドのエクスポート](../core/exporting-bindings6.md)です。</span><span class="sxs-lookup"><span data-stu-id="3bb1f-104">The bindings may have been exported from an assembly, application, or group, as described in [Exporting Bindings](../core/exporting-bindings6.md).</span></span> <span data-ttu-id="3bb1f-105">バインドがどこからエクスポートされたかによって、ApplicationName パラメーターと GroupLevel パラメーターの作用が異なります。</span><span class="sxs-lookup"><span data-stu-id="3bb1f-105">Depending on the location from which the bindings were exported, the ApplicationName and GroupLevel parameters have different effects.</span></span> <span data-ttu-id="3bb1f-106">詳細については、後の「解説」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3bb1f-106">For more information, see "Remarks," later in this topic.</span></span>  

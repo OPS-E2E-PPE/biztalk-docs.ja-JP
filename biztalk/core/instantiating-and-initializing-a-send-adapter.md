@@ -1,14 +1,14 @@
 ---
-title: "インスタンス化して、送信アダプターの初期化 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス化して、送信アダプターの初期化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f10e6507-3351-4173-95f5-48546ca5f5c4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257666"
 ---
 # <a name="instantiating-and-initializing-a-send-adapter"></a><span data-ttu-id="2c5fc-102">送信アダプターのインスタンス化と初期化</span><span class="sxs-lookup"><span data-stu-id="2c5fc-102">Instantiating and Initializing a Send Adapter</span></span>
 <span data-ttu-id="2c5fc-103">既定では、送信アダプターは、最初のメッセージが配信されるまでインスタンス化されません。これは "レイジー作成" と呼ばれるプロセスです。</span><span class="sxs-lookup"><span data-stu-id="2c5fc-103">By default, send adapters are not instantiated until the first message is delivered to them, a process known as "lazy creation."</span></span> <span data-ttu-id="2c5fc-104">レイジー作成による既定のアプローチは、システム リソースの節約に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="2c5fc-104">The default lazy creation approach helps to conserve system resources.</span></span> <span data-ttu-id="2c5fc-105">作成された送信アダプターはキャッシュされ、BizTalk Server サービスが停止されるまで有効になります。</span><span class="sxs-lookup"><span data-stu-id="2c5fc-105">After the send adapter is created, it is cached and lives until the BizTalk Server service is stopped.</span></span>  

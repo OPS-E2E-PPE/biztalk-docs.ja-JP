@@ -1,14 +1,14 @@
 ---
-title: "スケジュール SQL Server Integration Services パッケージ |Microsoft ドキュメント"
-ms.custom: 
+title: スケジュール SQL Server Integration Services パッケージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 037ae2cf-c352-4823-95df-9a723f2b5a81
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975952"
 ---
 # <a name="scheduling-sql-server-integration-services-packages"></a><span data-ttu-id="0e05f-102">SQL Server Integration Services パッケージのスケジュール設定</span><span class="sxs-lookup"><span data-stu-id="0e05f-102">Scheduling SQL Server Integration Services Packages</span></span>
 <span data-ttu-id="0e05f-103">ユーザーは、オンライン分析処理 (OLAP) キューブに格納されたデータに基づく BAM ビューを作成します。</span><span class="sxs-lookup"><span data-stu-id="0e05f-103">Users create BAM views based on data stored in an online analytical processing (OLAP) cube.</span></span> <span data-ttu-id="0e05f-104">キューブのデータはキューブ更新 Integration Services パッケージによって更新されるので、OLAP ビューには最新のデータが反映されます。</span><span class="sxs-lookup"><span data-stu-id="0e05f-104">The Cube Update Integration Services package refreshes the data in the cube so that OLAP views reflect the correct data.</span></span>  
@@ -56,11 +57,11 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="0e05f-125">必要に応じて、ユーザー名とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="0e05f-125">If necessary, type your user name and password.</span></span>  
   
-6.  <span data-ttu-id="0e05f-126">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e05f-126">Click **Connect**.</span></span>  
+6.  <span data-ttu-id="0e05f-126">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e05f-126">Click **Connect**.</span></span>  
   
 7.  <span data-ttu-id="0e05f-127">コンソール ツリーで  **Integration Services**、展開**格納されたパッケージ**、順にクリック**MSDB**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-127">In the console tree, expand **Integration Services**, expand **Stored Packages**, and then click **MSDB**.</span></span>  
   
-8.  <span data-ttu-id="0e05f-128">右クリックし、 **bam_an _\<ビュー名\>**をパッケージ化し、をクリックして**パッケージの実行**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-128">Right-click the **BAM_AN_\<View name\>** package, and then click **Run Package**.</span></span>  
+8.  <span data-ttu-id="0e05f-128">右クリックし、 **bam_an _\<ビュー名\>** をパッケージ化し、をクリックして**パッケージの実行**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-128">Right-click the **BAM_AN_\<View name\>** package, and then click **Run Package**.</span></span>  
   
 ### <a name="to-run-the-maintaining-bam-data-integration-services-package"></a><span data-ttu-id="0e05f-129">BAM データ管理 Integration Services パッケージを実行するには</span><span class="sxs-lookup"><span data-stu-id="0e05f-129">To run the Maintaining BAM Data Integration Services package</span></span>  
   
@@ -74,11 +75,11 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="0e05f-134">必要に応じて、ユーザー名とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="0e05f-134">If necessary, type your user name and password.</span></span>  
   
-6.  <span data-ttu-id="0e05f-135">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e05f-135">Click **Connect**.</span></span>  
+6.  <span data-ttu-id="0e05f-135">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e05f-135">Click **Connect**.</span></span>  
   
 7.  <span data-ttu-id="0e05f-136">コンソール ツリーで  **Integration Services**、展開**格納されたパッケージ**、順にクリック**MSDB**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-136">In the console tree, expand **Integration Services**, expand **Stored Packages**, and then click **MSDB**.</span></span>  
   
-8.  <span data-ttu-id="0e05f-137">右クリックし、 **bam_dm _\<アクティビティ名\>**をパッケージ化し、をクリックして**パッケージの実行**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-137">Right-click the **BAM_DM_\<Activity name\>** package, and then click **Run Package**.</span></span>  
+8.  <span data-ttu-id="0e05f-137">右クリックし、 **bam_dm _\<アクティビティ名\>** をパッケージ化し、をクリックして**パッケージの実行**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-137">Right-click the **BAM_DM_\<Activity name\>** package, and then click **Run Package**.</span></span>  
   
 ### <a name="to-schedule-the-packages-to-run-regularly"></a><span data-ttu-id="0e05f-138">パッケージを定期的に実行するようにスケジュールを設定するには</span><span class="sxs-lookup"><span data-stu-id="0e05f-138">To schedule the packages to run regularly</span></span>  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="0e05f-143">必要に応じて、ユーザー名とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="0e05f-143">If necessary, type your user name and password.</span></span>  
   
-6.  <span data-ttu-id="0e05f-144">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e05f-144">Click **Connect**.</span></span>  
+6.  <span data-ttu-id="0e05f-144">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e05f-144">Click **Connect**.</span></span>  
   
 7.  <span data-ttu-id="0e05f-145">コンソール ツリーで、サーバーを展開し、選択**SQL Server エージェント**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-145">In the console tree, expand your server, and select **SQL Server Agent**.</span></span>  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 11/28/2017
   
 14. <span data-ttu-id="0e05f-153">**サーバー**ドロップダウン リストで、ジョブを実行しているサーバーを選択します。</span><span class="sxs-lookup"><span data-stu-id="0e05f-153">In the **Server** drop-down list, select the server on which you are running the job.</span></span>  
   
-15. <span data-ttu-id="0e05f-154">ファイル選択ボタンをクリックして、**パッケージ**テキスト ボックスで、スケジュールを設定するパッケージを選択 (どちらか、 **bam_dm _\<アクティビティ名\>**または**bam_an _\<ビュー名\>**パッケージ)、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-154">Click the file selector button for the **Package** text box, select the package you are scheduling (either the **BAM_DM_\<Activity name\>** or **BAM_AN_\<View name\>** package), and then click **OK**.</span></span>  
+15. <span data-ttu-id="0e05f-154">ファイル選択ボタンをクリックして、**パッケージ**テキスト ボックスで、スケジュールを設定するパッケージを選択 (どちらか、 **bam_dm _\<アクティビティ名\>** または**bam_an _\<ビュー名\>** パッケージ)、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-154">Click the file selector button for the **Package** text box, select the package you are scheduling (either the **BAM_DM_\<Activity name\>** or **BAM_AN_\<View name\>** package), and then click **OK**.</span></span>  
   
 16. <span data-ttu-id="0e05f-155">**ページの選択**ウィンドウで、をクリックして**スケジュール**、順にクリック**新規**です。</span><span class="sxs-lookup"><span data-stu-id="0e05f-155">In the **Select a page** window, click **Schedules**, and then click **New**.</span></span> <span data-ttu-id="0e05f-156">開き、**新しいジョブ スケジュール** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="0e05f-156">This opens the **New Job Schedule** dialog box.</span></span>  
   

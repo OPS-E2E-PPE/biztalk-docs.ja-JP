@@ -1,14 +1,14 @@
 ---
-title: "ルート ノード |Microsoft ドキュメント"
-ms.custom: 
+title: ルート ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2161f877-835e-434d-a8d1-2426f977d60e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268970"
 ---
 # <a name="root-nodes"></a><span data-ttu-id="2aa7e-102">ルート ノード</span><span class="sxs-lookup"><span data-stu-id="2aa7e-102">Root Nodes</span></span>
 <span data-ttu-id="2aa7e-103">BizTalk エディターでの子ノード、**スキーマ**ノードと呼ばれる**ルート**ノード。</span><span class="sxs-lookup"><span data-stu-id="2aa7e-103">In BizTalk Editor, child nodes of the **Schema** node are known as **Root** nodes.</span></span> <span data-ttu-id="2aa7e-104">**ルート**ノードは、特殊な種類の**レコード**ノード、通常よりも、いくつかのプロパティがあると**レコード**ノード。</span><span class="sxs-lookup"><span data-stu-id="2aa7e-104">**Root** nodes are a special type of **Record** node, and have a few more properties than regular **Record** nodes.</span></span> <span data-ttu-id="2aa7e-105">**ルート**ノードが、スキーマによって示されるドキュメントの種類を表し、必要に応じて変更することができます。</span><span class="sxs-lookup"><span data-stu-id="2aa7e-105">The **Root** node represents the type of document described by the schema, and can be renamed as appropriate.</span></span> <span data-ttu-id="2aa7e-106">たとえば、名前を変更できます、**ルート**ノードが purchaseOrder、orderAcknowledgment、shipnotice など、スキーマを表すメッセージの種類を説明するようにします。</span><span class="sxs-lookup"><span data-stu-id="2aa7e-106">For example, you can rename the **Root** node so that it describes the type of message that the schema represents, such as purchaseOrder, orderAcknowledgment, or shipNotice.</span></span>  

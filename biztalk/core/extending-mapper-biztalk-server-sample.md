@@ -1,11 +1,11 @@
 ---
-title: "Extending Mapper (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Extending Mapper (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Mapper, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, BizTalk Mapper
 - examples, XML tools
 ms.assetid: 6010a13f-b715-4766-ad91-5aa9b98589e3
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970656"
 ---
 # <a name="extending-mapper-biztalk-server-sample"></a><span data-ttu-id="8ca2d-102">Extending Mapper (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="8ca2d-102">Extending Mapper (BizTalk Server Sample)</span></span>
 <span data-ttu-id="8ca2d-103">Extending Mapper サンプルは、BizTalk マッパーの使用方法および拡張方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-103">The Extending Mapper sample demonstrates how to use and extend BizTalk Mapper.</span></span> <span data-ttu-id="8ca2d-104">このサンプルには、複数の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マップ ファイル (.btm) が含まれており、それぞれが BizTalk マッパーの異なる特徴を示しています。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-104">The sample includes several [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] map files (.btm), each of which illustrates different features of BizTalk Mapper.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="8ca2d-106">Extending Mapper サンプルは、コンテンツ ベースのルーティング (CBR) を使用し、オーケストレーションは使用しません。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-106">The Extending Mapper sample uses content-based routing (CBR) and does not use an orchestration.</span></span> <span data-ttu-id="8ca2d-107">サンプル送信ポートに対してフィルターを指定すると、サンプル送信ポートがサンプル受信ポートに直接接続されます。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-107">By specifying a filter on the sample send port, it is connected directly to the sample receive port.</span></span> <span data-ttu-id="8ca2d-108">送信ポートに対してマップが指定され、その送信ポートが処理済みのドキュメントに適用されます。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-108">A map is specified on the send port to be applied to the processed document.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="8ca2d-109">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="8ca2d-109">Where to Find This Sample</span></span>  
- <span data-ttu-id="8ca2d-110">*\<パスのサンプル\>*\XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="8ca2d-110">*\<Samples Path\>*\XmlTools\ExtendingMapper</span></span>  
+ <span data-ttu-id="8ca2d-110">*\<パスのサンプル\>* \XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="8ca2d-110">*\<Samples Path\>* \XmlTools\ExtendingMapper</span></span>  
   
  <span data-ttu-id="8ca2d-111">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-111">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="8ca2d-153">コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-153">In a command window, change directory (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="8ca2d-154">*\<パスのサンプル\>*\XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="8ca2d-154">*\<Samples Path\>*\XmlTools\ExtendingMapper</span></span>  
+     <span data-ttu-id="8ca2d-154">*\<パスのサンプル\>* \XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="8ca2d-154">*\<Samples Path\>* \XmlTools\ExtendingMapper</span></span>  
   
 2.  <span data-ttu-id="8ca2d-155">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-155">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -103,9 +104,9 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="8ca2d-182">公開キー トークン値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-182">Copy the public key token value.</span></span>  
   
-    3.  <span data-ttu-id="8ca2d-183">テキスト エディターで開き*\<サンプル パス\>*\XML Tools\ExtendingMapper\ExternalAssembly.xml です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-183">In a text editor, open *\<Samples Path\>*\XML Tools\ExtendingMapper\ExternalAssembly.xml.</span></span>  
+    3.  <span data-ttu-id="8ca2d-183">テキスト エディターで開き*\<サンプル パス\>* \XML Tools\ExtendingMapper\ExternalAssembly.xml です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-183">In a text editor, open *\<Samples Path\>* \XML Tools\ExtendingMapper\ExternalAssembly.xml.</span></span>  
   
-    4.  <span data-ttu-id="8ca2d-184">選択、 **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary、バージョン 1.0.0.0、カルチャを = = neutral, PublicKeyToken = 68496d20c737d84b"**属性があり、置換、 **PublicKeyToken**でコピーした値に、公開キー トークンを持つ値 c をステップ インします。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-184">Select the **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=68496d20c737d84b"**attribute, and replace the **PublicKeyToken** value with the public key token value you copied in step c.</span></span>  
+    4.  <span data-ttu-id="8ca2d-184">選択、 **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary、バージョン 1.0.0.0、カルチャを = = neutral, PublicKeyToken = 68496d20c737d84b"** 属性があり、置換、 **PublicKeyToken**でコピーした値に、公開キー トークンを持つ値 c をステップ インします。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-184">Select the **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=68496d20c737d84b"** attribute, and replace the **PublicKeyToken** value with the public key token value you copied in step c.</span></span>  
   
     5.  <span data-ttu-id="8ca2d-185">ExternalAssembly.xml を保存して閉じます。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-185">Save and close ExternalAssembly.xml.</span></span>  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="8ca2d-188">をクリックして**開始****すべてのプログラム**を選択**Microsoft BizTalk Server**、し、 **BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-188">Click **Start**, select **All Programs**, select **Microsoft BizTalk Server**, and then select **BizTalk Server Administration**.</span></span>  
   
-2.  <span data-ttu-id="8ca2d-189">BizTalk Server 管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**をクリックして展開**アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-189">In the BizTalk Server Administration console, click to expand **BizTalk Server Administration**, click to expand **BizTalk Group [\<servername\>:\<management database\>]**, and click to expand **Applications**.</span></span>  
+2.  <span data-ttu-id="8ca2d-189">BizTalk Server 管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]** をクリックして展開**アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-189">In the BizTalk Server Administration console, click to expand **BizTalk Server Administration**, click to expand **BizTalk Group [\<servername\>:\<management database\>]**, and click to expand **Applications**.</span></span>  
   
 3.  <span data-ttu-id="8ca2d-190">クリックして展開**ExtendingMapperApplication**、クリックして**送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-190">Click to expand **ExtendingMapperApplication**, and then click **Send Ports**.</span></span>  
   
@@ -141,9 +142,9 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-run-this-sample"></a><span data-ttu-id="8ca2d-235">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="8ca2d-235">To run this sample</span></span>  
   
-1.  <span data-ttu-id="8ca2d-236">入力ファイル ExtendingMapper.xml を入力フォルダーにコピー *\<サンプル パス\>*\XmlTools\ExtendingMapper\In です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-236">Copy the input file ExtendingMapper.xml into the input folder at *\<Samples Path\>*\XmlTools\ExtendingMapper\In.</span></span>  
+1.  <span data-ttu-id="8ca2d-236">入力ファイル ExtendingMapper.xml を入力フォルダーにコピー *\<サンプル パス\>* \XmlTools\ExtendingMapper\In です。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-236">Copy the input file ExtendingMapper.xml into the input folder at *\<Samples Path\>* \XmlTools\ExtendingMapper\In.</span></span>  
   
-2.  <span data-ttu-id="8ca2d-237">ファイルを変換およびにルーティングする方法に注意してください、 *\<サンプル パス\>*\XmlTools\ExtendingMapper\Out フォルダです。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-237">Notice how the file is transformed and routed to the *\<Samples Path\>*\XmlTools\ExtendingMapper\Out folder.</span></span> <span data-ttu-id="8ca2d-238">実行される変換は、適用したマップに基づきます。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-238">The transformation that occurs is based on the map you applied.</span></span>  
+2.  <span data-ttu-id="8ca2d-237">ファイルを変換およびにルーティングする方法に注意してください、 *\<サンプル パス\>* \XmlTools\ExtendingMapper\Out フォルダです。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-237">Notice how the file is transformed and routed to the *\<Samples Path\>* \XmlTools\ExtendingMapper\Out folder.</span></span> <span data-ttu-id="8ca2d-238">実行される変換は、適用したマップに基づきます。</span><span class="sxs-lookup"><span data-stu-id="8ca2d-238">The transformation that occurs is based on the map you applied.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="8ca2d-239">参照</span><span class="sxs-lookup"><span data-stu-id="8ca2d-239">See Also</span></span>  
  [<span data-ttu-id="8ca2d-240">XML ツール (BizTalk Server Samples フォルダー)</span><span class="sxs-lookup"><span data-stu-id="8ca2d-240">XML Tools (BizTalk Server Samples Folder)</span></span>](../core/xml-tools-biztalk-server-samples-folder.md)

@@ -11,7 +11,7 @@ helpviewer_keywords:
 - maps [SSO], creating
 - managing [SSO maps], creating user maps
 ms.assetid: c2e9f0db-920b-4d89-8e1e-5dc92805fd23
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970944"
 ---
 # <a name="how-to-create-user-mappings"></a><span data-ttu-id="70252-102">ユーザー マッピングを作成する方法</span><span class="sxs-lookup"><span data-stu-id="70252-102">How to Create User Mappings</span></span>
 <span data-ttu-id="70252-103">ここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のユーザー マッピングを作成できます。</span><span class="sxs-lookup"><span data-stu-id="70252-103">Use this command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="70252-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="70252-104">The following is an example XML file.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="70252-113">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="70252-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="70252-114">既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="70252-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="70252-115">型 * * ssomanage – createmappings *\<マッピング ファイル名\>* * *、どこで*\<マッピング ファイル名\>*を作成するユーザー マッピングが格納されているファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="70252-115">Type **ssomanage –createmappings *\<mappings file name\>***, where *\<mappings file name\>* is the name of file that contains the user mapping(s) you want to create.</span></span>  
+3.  <span data-ttu-id="70252-115">型 * * ssomanage – createmappings *\<マッピング ファイル名\>* * *、どこで*\<マッピング ファイル名\>* を作成するユーザー マッピングが格納されているファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="70252-115">Type **ssomanage –createmappings *\<mappings file name\>***, where *\<mappings file name\>* is the name of file that contains the user mapping(s) you want to create.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="70252-116">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="70252-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -66,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="70252-119">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="70252-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="70252-120">既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="70252-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="70252-121">型 * * ssoclient – setcredentials *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>*ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="70252-121">Type **ssoclient –setcredentials *\<application name \>***, where *\<application name \>* is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+3.  <span data-ttu-id="70252-121">型 * * ssoclient – setcredentials *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>* ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="70252-121">Type **ssoclient –setcredentials *\<application name \>***, where *\<application name \>* is the name of affiliate application that the user wants to create a mapping for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="70252-122">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="70252-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

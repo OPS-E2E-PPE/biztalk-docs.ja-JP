@@ -1,15 +1,15 @@
 ---
-title: "インストールし、BizTalk Server で BAM を構成する |Microsoft ドキュメント"
-description: "インストールし、BizTalk Server で 1 つまたは複数コンピューター環境でビジネス アクティビティの監視を構成します。"
-ms.custom: 
+title: インストールし、BizTalk Server で BAM を構成する |Microsoft ドキュメント
+description: インストールし、BizTalk Server で 1 つまたは複数コンピューター環境でビジネス アクティビティの監視を構成します。
+ms.custom: ''
 ms.date: 06/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01986f8f-5117-40d1-a477-b7184721864c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257122"
 ---
 # <a name="install-and-configure-bam"></a><span data-ttu-id="2f815-103">インストールして BAM を構成します。</span><span class="sxs-lookup"><span data-stu-id="2f815-103">Install and configure BAM</span></span>
 <span data-ttu-id="2f815-104">ビジネス アクティビティ監視 (BAM) は、BizTalk Server のインストールに含まれています。</span><span class="sxs-lookup"><span data-stu-id="2f815-104">Business Activity Monitoring (BAM) is included with the BizTalk Server installation.</span></span> <span data-ttu-id="2f815-105">インストールして、単一サーバー、または BizTalk Server と同じように、複数コンピューター環境で、BAM を構成することができます。</span><span class="sxs-lookup"><span data-stu-id="2f815-105">You can install and configure BAM on a single server, or in a multi-computer environment, just like BizTalk Server:</span></span> 

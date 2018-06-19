@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションでマップを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでマップを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfd628d8-c163-431d-8ad7-d7d77007c549
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255330"
 ---
 # <a name="how-to-use-maps-in-orchestrations"></a><span data-ttu-id="9b8ac-102">オーケストレーションでマップを使用する方法</span><span class="sxs-lookup"><span data-stu-id="9b8ac-102">How to Use Maps in Orchestrations</span></span>
 <span data-ttu-id="9b8ac-103">BizTalk マッパーは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境内で動作するツールです。</span><span class="sxs-lookup"><span data-stu-id="9b8ac-103">BizTalk Mapper is a tool that runs within the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="9b8ac-104">BizTalk マッパーを使用することにより、リンクと Functoid で入力スキーマと出力スキーマの関係を定義したマップを作成および編集できます。</span><span class="sxs-lookup"><span data-stu-id="9b8ac-104">You use BizTalk Mapper to create and edit maps in which you use links and functoids to define the relationship between an input and an output schema.</span></span> <span data-ttu-id="9b8ac-105">リンクは、レコードまたはフィールドのデータを直接コピーするような関係を定義するときに使用します。</span><span class="sxs-lookup"><span data-stu-id="9b8ac-105">A link defines a direct data copy of a record or field.</span></span> <span data-ttu-id="9b8ac-106">スキーマに含まれる項目どうしを直接接続したり、Functoid との接続を定義する場合にリンクが使用されます。</span><span class="sxs-lookup"><span data-stu-id="9b8ac-106">Links may directly connect to items in the other schema, or they may form connections to functoids.</span></span> <span data-ttu-id="9b8ac-107">Functoid は、複雑なデータ操作を実行するときに使用します。</span><span class="sxs-lookup"><span data-stu-id="9b8ac-107">Functoids perform more complex data manipulations.</span></span>  

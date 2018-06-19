@@ -1,18 +1,18 @@
 ---
-title: "リソースを更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: リソースを更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [resources], refreshing
 - refreshing resources
 - resources, refreshing
 ms.assetid: d6ff7c9d-8aaf-42a4-b1a3-00c05f6ac869
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254546"
 ---
 # <a name="how-to-refresh-a-resource"></a><span data-ttu-id="1f19c-102">リソースを更新する方法</span><span class="sxs-lookup"><span data-stu-id="1f19c-102">How to Refresh a Resource</span></span>
 <span data-ttu-id="1f19c-103">このトピックでは、BizTalk Server 管理コンソールを使用して、リソース アイテムを更新する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1f19c-103">This topic describes how to use the BizTalk Server Administration console to refresh a resource artifact.</span></span> <span data-ttu-id="1f19c-104">これにより、BizTalk 管理データベースのアイテム情報が更新されます。</span><span class="sxs-lookup"><span data-stu-id="1f19c-104">This updates the artifact information in the BizTalk Management database.</span></span> <span data-ttu-id="1f19c-105">これを行う別の方法は、BTSTask を使用してアプリケーションにアイテムを追加することによって、 [AddResource コマンド](../core/addresource-command.md)上書きオプションを使用します。</span><span class="sxs-lookup"><span data-stu-id="1f19c-105">Another way to do this is by adding the artifact to the application using the BTSTask [AddResource Command](../core/addresource-command.md) with the overwrite option.</span></span>  

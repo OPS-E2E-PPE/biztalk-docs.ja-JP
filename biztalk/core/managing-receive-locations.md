@@ -1,15 +1,15 @@
 ---
-title: "管理の受信場所 |Microsoft ドキュメント"
-description: "作成する、プロパティを変更する、有効にする (&) を無効にする、証明書の追加と削除など、BizTalk Server で受信場所を使用"
-ms.custom: 
+title: 管理の受信場所 |Microsoft ドキュメント
+description: 作成する、プロパティを変更する、有効にする (&) を無効にする、証明書の追加と削除など、BizTalk Server で受信場所を使用
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b3ff581-e7e9-4a6e-a9ea-70c55a3b9318
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262506"
 ---
 # <a name="manage-receive-locations"></a><span data-ttu-id="86c83-103">管理の受信場所</span><span class="sxs-lookup"><span data-stu-id="86c83-103">Manage Receive Locations</span></span>
 

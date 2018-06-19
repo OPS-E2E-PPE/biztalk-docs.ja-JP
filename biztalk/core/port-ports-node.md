@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264258"
 ---
 # <a name="port-ports-node"></a><span data-ttu-id="99e09-102">Port (Ports ノード)</span><span class="sxs-lookup"><span data-stu-id="99e09-102">Port (Ports Node)</span></span>
 <span data-ttu-id="99e09-103">バインド ファイルのポート ノードには、バインド ファイルと共にエクスポートされるサービスにバインドされているポートまたは同報リストに関する特定の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="99e09-103">The port node of a binding file contains specific information about a port or distribution list that is bound to a service that is exported with the binding file.</span></span>  

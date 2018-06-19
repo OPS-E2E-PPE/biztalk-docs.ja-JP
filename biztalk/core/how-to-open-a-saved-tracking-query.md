@@ -1,17 +1,17 @@
 ---
-title: "保存されている追跡クエリを開く方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 保存されている追跡クエリを開く方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - queries [HAT], opening
 - queries [HAT]
 ms.assetid: 7e63c45c-b74e-40e1-9035-b7191d0803ff
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254394"
 ---
 # <a name="how-to-open-a-saved-tracking-query"></a><span data-ttu-id="b91e7-102">保存されている追跡クエリを開く方法</span><span class="sxs-lookup"><span data-stu-id="b91e7-102">How to Open a Saved Tracking Query</span></span>
 <span data-ttu-id="b91e7-103">ライブ追跡データ データ (現在実行中のサービス インスタンスおよびメッセージ) に対するメッセージまたはサービス インスタンス クエリを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="b91e7-103">You can open a message or service instance query against live tracking data (currently running service instances and messages).</span></span> <span data-ttu-id="b91e7-104">これを行うには、BizTalk Server 管理コンソール内の [グループ ハブ] ページにある [クエリ] タブを使用します。</span><span class="sxs-lookup"><span data-stu-id="b91e7-104">This is done by using the Query tab on the Group Hub page from within the BizTalk Server Administration Console.</span></span>  

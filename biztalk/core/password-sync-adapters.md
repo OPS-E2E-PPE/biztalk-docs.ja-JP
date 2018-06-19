@@ -1,14 +1,14 @@
 ---
-title: "パスワード同期アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: パスワード同期アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 56f97cfa-59d4-4f0a-bd08-b4857ab42122
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264130"
 ---
 # <a name="password-sync-adapters"></a><span data-ttu-id="bc023-102">パスワード同期アダプター</span><span class="sxs-lookup"><span data-stu-id="bc023-102">Password Sync Adapters</span></span>
 <span data-ttu-id="bc023-103">A*パスワード同期アダプター*は、Windows 以外のシステムとの間のパスワードの変更を反映するコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="bc023-103">A *password sync adapter* is a component that propagates password changes to and from a non-Windows system.</span></span> <span data-ttu-id="bc023-104">パスワード同期アダプターは、従来のシングル サインオン アプリケーションと似ていますが、いくつか違いがあります。</span><span class="sxs-lookup"><span data-stu-id="bc023-104">Although password sync adapters are similar to traditional Single Sign-On applications, they have several differences:</span></span>  

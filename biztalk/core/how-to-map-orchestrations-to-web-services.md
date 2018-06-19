@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションを Web サービスにマップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションを Web サービスにマップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, Web services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, naming conventions
 - Web services, naming conventions
 ms.assetid: e6a58978-c81c-49f3-9428-9bff60f1ded7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,11 +23,12 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255730"
 ---
 # <a name="how-to-map-orchestrations-to-web-services"></a><span data-ttu-id="32d90-102">オーケストレーションを Web サービスにマップする方法</span><span class="sxs-lookup"><span data-stu-id="32d90-102">How to Map Orchestrations to Web Services</span></span>
 <span data-ttu-id="32d90-103">オーケストレーションには、複数の受信ポートを設定できます。</span><span class="sxs-lookup"><span data-stu-id="32d90-103">An orchestration can have multiple receive ports.</span></span> <span data-ttu-id="32d90-104">BizTalk Web サービス公開ウィザードを使用して、Web サービスとして公開する受信ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="32d90-104">Using the BizTalk Web Services Publishing Wizard, you select receive ports to publish as Web services.</span></span> <span data-ttu-id="32d90-105">このウィザードでは、受信ポートごとに 1 つの Web サービス (.asmx ファイル) が作成されます。</span><span class="sxs-lookup"><span data-stu-id="32d90-105">The wizard creates one Web service (.asmx file) for each receive port.</span></span> <span data-ttu-id="32d90-106">また、すべての受信ポートに対して 1 つの Web サービスが作成されます (すべて同じ種類 (一方向または要求 - 応答) の受信ポートである場合)。</span><span class="sxs-lookup"><span data-stu-id="32d90-106">The wizard can also create one Web service for all of the receive ports if they are the same receive port type (one-way or request/response).</span></span> <span data-ttu-id="32d90-107">操作は関数呼び出しになります。</span><span class="sxs-lookup"><span data-stu-id="32d90-107">Operations become function calls.</span></span> <span data-ttu-id="32d90-108">受信ポートでの各操作は Web メソッドになり、</span><span class="sxs-lookup"><span data-stu-id="32d90-108">Each operation in the receive port becomes a Web method.</span></span> <span data-ttu-id="32d90-109">要求操作は入力パラメータになります。</span><span class="sxs-lookup"><span data-stu-id="32d90-109">Request operations become input parameters.</span></span> <span data-ttu-id="32d90-110">応答操作は戻り値の型になります。</span><span class="sxs-lookup"><span data-stu-id="32d90-110">Response operations become return types.</span></span>  
   
- <span data-ttu-id="32d90-111">要求と応答の操作が同じ Web メッセージの種類の場合は、入力パラメーターは次のようになります。、 **ref**戻り値の型と**void**です。</span><span class="sxs-lookup"><span data-stu-id="32d90-111">If the request and response operations are the same Web message type, the input parameter becomes a **ref** and the return type is **void**.</span></span> <span data-ttu-id="32d90-112">ASP.NET Web クライアントは、同じ種類の入力および出力パラメータを組み合わせて、Web メソッドの署名を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="32d90-112">ASP.NET Web clients may change the Web method signature by combining the in and out parameters of the same type.</span></span> <span data-ttu-id="32d90-113">ASP.NET Web クライアントはから BizTalk Web メソッドを変更するなど、 **myService (文字列部分) を文字列**に**void myService (ref 文字列部分)**です。</span><span class="sxs-lookup"><span data-stu-id="32d90-113">For example, an ASP.NET Web client may change a BizTalk Web method from **string myService(string part)** to **void myService(ref string part)**.</span></span>  
+ <span data-ttu-id="32d90-111">要求と応答の操作が同じ Web メッセージの種類の場合は、入力パラメーターは次のようになります。、 **ref**戻り値の型と**void**です。</span><span class="sxs-lookup"><span data-stu-id="32d90-111">If the request and response operations are the same Web message type, the input parameter becomes a **ref** and the return type is **void**.</span></span> <span data-ttu-id="32d90-112">ASP.NET Web クライアントは、同じ種類の入力および出力パラメータを組み合わせて、Web メソッドの署名を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="32d90-112">ASP.NET Web clients may change the Web method signature by combining the in and out parameters of the same type.</span></span> <span data-ttu-id="32d90-113">ASP.NET Web クライアントはから BizTalk Web メソッドを変更するなど、 **myService (文字列部分) を文字列**に**void myService (ref 文字列部分)** です。</span><span class="sxs-lookup"><span data-stu-id="32d90-113">For example, an ASP.NET Web client may change a BizTalk Web method from **string myService(string part)** to **void myService(ref string part)**.</span></span>  
   
  <span data-ttu-id="32d90-114">操作メッセージの種類によって Web メソッドの署名が定義されます。</span><span class="sxs-lookup"><span data-stu-id="32d90-114">The operation message types define the Web method signatures.</span></span> <span data-ttu-id="32d90-115">また、各メッセージの種類の部分が Web メソッドのパラメータになります。</span><span class="sxs-lookup"><span data-stu-id="32d90-115">Each message type part is a parameter in the Web method.</span></span>  
   

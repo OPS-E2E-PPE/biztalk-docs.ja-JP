@@ -16,6 +16,7 @@ ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31817015"
 ---
 # <a name="step-1-add-the-biztalk-server-application-project-in-visual-studio"></a><span data-ttu-id="04a7f-103">手順 1: Visual Studio での BizTalk Server アプリケーション プロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="04a7f-103">Step 1: Add the BizTalk Server Application project in Visual Studio</span></span>
 

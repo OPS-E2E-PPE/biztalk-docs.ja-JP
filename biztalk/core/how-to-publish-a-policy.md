@@ -1,18 +1,18 @@
 ---
-title: "ポリシーを公開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーを公開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, publishing
 - managing [policies], publishing
 - publishing, policies
 ms.assetid: 730c57a7-526f-40ca-8610-88216558e375
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971160"
 ---
 # <a name="how-to-publish-a-policy"></a><span data-ttu-id="c501c-102">ポリシーを公開する方法</span><span class="sxs-lookup"><span data-stu-id="c501c-102">How to Publish a Policy</span></span>
 <span data-ttu-id="c501c-103">このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk グループでポリシーを公開する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="c501c-103">This topic describes how to use the BizTalk Server Administration console to publish a policy in a BizTalk group.</span></span> <span data-ttu-id="c501c-104">公開したポリシーで使用できるように、BizTalk アプリケーションに追加する」の説明に従って[アプリケーションにポリシーを追加する方法](../core/how-to-add-a-policy-to-an-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="c501c-104">Publishing a policy makes it available to add to a BizTalk application, as described in [How to Add a Policy to an Application](../core/how-to-add-a-policy-to-an-application.md).</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="c501c-117">をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。</span><span class="sxs-lookup"><span data-stu-id="c501c-117">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2.  <span data-ttu-id="c501c-118">コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、公開、展開するポリシーを含む BizTalk グループを展開して**アプリケーション**、順に展開**\<すべての成果物\>**です。</span><span class="sxs-lookup"><span data-stu-id="c501c-118">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group containing the policy to publish, expand **Applications**, and then expand **\<All Artifacts\>**.</span></span>  
+2.  <span data-ttu-id="c501c-118">コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、公開、展開するポリシーを含む BizTalk グループを展開して**アプリケーション**、順に展開**\<すべての成果物\>** です。</span><span class="sxs-lookup"><span data-stu-id="c501c-118">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group containing the policy to publish, expand **Applications**, and then expand **\<All Artifacts\>**.</span></span>  
   
 3.  <span data-ttu-id="c501c-119">をクリックして**ポリシー**ポリシーを右クリックし、クリックして**発行**です。</span><span class="sxs-lookup"><span data-stu-id="c501c-119">Click **Policies**, right-click the policy, and then click **Publish**.</span></span>  
   

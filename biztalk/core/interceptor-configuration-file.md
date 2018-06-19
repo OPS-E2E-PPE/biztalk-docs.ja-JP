@@ -1,14 +1,14 @@
 ---
-title: "インターセプター構成ファイル |Microsoft ドキュメント"
-ms.custom: 
+title: インターセプター構成ファイル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 490f5607-e7f6-4f7f-9121-1070db32a7cf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256922"
 ---
 # <a name="interceptor-configuration-file"></a><span data-ttu-id="548ee-102">インターセプタ構成ファイル</span><span class="sxs-lookup"><span data-stu-id="548ee-102">Interceptor Configuration File</span></span>
 <span data-ttu-id="548ee-103">Windows Workflow Foundation 用の BAM インターセプタと Windows Communication Foundation 用の BAM インターセプタは、インターセプタ構成ファイルに基づいて、受信するイベントとデータ要素を決定します。</span><span class="sxs-lookup"><span data-stu-id="548ee-103">The BAM interceptors for Windows Workflow Foundation and Windows Communication Foundation rely on an interceptor configuration file to determine what events and date elements to intercept.</span></span> <span data-ttu-id="548ee-104">構成ファイルは、XML 形式であり、インターセプタ構成スキーマおよび Windows Workflow Foundation スキーマと Windows Communication Framework スキーマのどちらか一方 (ターゲットにするテクノロジに応じて) により定義されます。</span><span class="sxs-lookup"><span data-stu-id="548ee-104">The configuration file is XML and is defined by the interceptor configuration schema and either the Windows Workflow Foundation schema or the Windows Communication Framework schema depending upon which technology you are targeting.</span></span>  

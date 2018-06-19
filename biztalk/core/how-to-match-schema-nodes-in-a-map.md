@@ -1,14 +1,14 @@
 ---
-title: "マップ内のスキーマのノードを照合する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マップ内のスキーマのノードを照合する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 584f85d2-6198-4ef3-90d9-a322f1457d9a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253938"
 ---
 # <a name="how-to-match-schema-nodes-in-a-map"></a><span data-ttu-id="06d7f-102">マップ内のスキーマ ノードを照合する方法</span><span class="sxs-lookup"><span data-stu-id="06d7f-102">How to Match Schema Nodes in a Map</span></span>
 <span data-ttu-id="06d7f-103">送信元スキーマまたは送信先スキーマが複雑な場合、要素をマップするのが難しいことがあります。</span><span class="sxs-lookup"><span data-stu-id="06d7f-103">When the source or destination schemas are complex, it can be difficult to map the elements.</span></span> <span data-ttu-id="06d7f-104">BizTalk マッパー、**指示一致**機能で、最適な一致を指摘することで複雑なスキーマ要素をマップすることができます。</span><span class="sxs-lookup"><span data-stu-id="06d7f-104">The BizTalk Mapper introduces the **Indicative Match** feature, which enables you to map complex schema elements by suggesting the best possible matches.</span></span> <span data-ttu-id="06d7f-105">このトピックでは、次の操作を実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="06d7f-105">This topic provides information about how to perform this operation.</span></span>  

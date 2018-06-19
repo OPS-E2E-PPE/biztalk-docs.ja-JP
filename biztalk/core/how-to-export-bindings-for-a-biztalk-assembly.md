@@ -1,18 +1,18 @@
 ---
-title: "BizTalk アセンブリのバインドをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アセンブリのバインドをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies, bindings
 - assemblies, exporting
 - exporting, assemblies
 ms.assetid: 7e37348d-5fa5-43cc-b3c0-2d8cb6a8f394
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254858"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-assembly"></a><span data-ttu-id="45832-102">BizTalk アセンブリのバインドをエクスポートする方法</span><span class="sxs-lookup"><span data-stu-id="45832-102">How to Export Bindings for a BizTalk Assembly</span></span>
 <span data-ttu-id="45832-103">このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk アセンブリのバインドをエクスポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="45832-103">This topic describes how to use the BizTalk Server Administration console or the command line to export the bindings for a BizTalk assembly to an .xml file.</span></span> <span data-ttu-id="45832-104">エクスポートしたバインドは、BizTalk アプリケーションにインポートできます。この際、既存のバインドにインポートするバインドと同じ名前が含まれている場合は、既存のバインドが上書きされます。</span><span class="sxs-lookup"><span data-stu-id="45832-104">You can then import these bindings into a BizTalk application, which overwrites existing bindings with the imported bindings of the same name.</span></span> <span data-ttu-id="45832-105">アセンブリを更新する前にバインドをエクスポートしておくと、更新後にインポートすることでバインドを再適用できます。</span><span class="sxs-lookup"><span data-stu-id="45832-105">You might want to export the bindings for an assembly before you update it, so that you can import the bindings after you update it to reapply them.</span></span> <span data-ttu-id="45832-106">アプリケーションおよびアセンブリの更新に関する詳細については、次を参照してください。 [BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)です。</span><span class="sxs-lookup"><span data-stu-id="45832-106">For more information about updating applications and assemblies, see [Updating BizTalk Applications](../core/updating-biztalk-applications.md).</span></span> <span data-ttu-id="45832-107">バインド ファイルの使用の詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="45832-107">For more information about using binding files, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="45832-117">例: **C:\Bindings\MyAssemblyBindings_Staging1.xml**</span><span class="sxs-lookup"><span data-stu-id="45832-117">Example: **C:\Bindings\MyAssemblyBindings_Staging1.xml**</span></span>  
   
-5.  <span data-ttu-id="45832-118">バインドのエクスポート] ページで、をクリックして**、選択したアセンブリのバインドをエクスポート**、し、[**アセンブリ**アセンブリをクリックします。</span><span class="sxs-lookup"><span data-stu-id="45832-118">On the Export Bindings page, click **Export bindings for the selected assembly**, and then in **Assembly**, click the assembly.</span></span>  
+5.  <span data-ttu-id="45832-118">バインドのエクスポート] ページで、をクリックして **、選択したアセンブリのバインドをエクスポート**、し、[**アセンブリ**アセンブリをクリックします。</span><span class="sxs-lookup"><span data-stu-id="45832-118">On the Export Bindings page, click **Export bindings for the selected assembly**, and then in **Assembly**, click the assembly.</span></span>  
   
 6.  <span data-ttu-id="45832-119">すべてのグループのパーティ情報をエクスポートする場合は、選択**グローバル パーティ情報をエクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="45832-119">If you want to export all of the party information in the group, select **Export Global Party Information**.</span></span>  
   

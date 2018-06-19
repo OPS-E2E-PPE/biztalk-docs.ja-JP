@@ -1,17 +1,17 @@
 ---
-title: "BAM の管理 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM の管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], about managing BAM
 - managing [BAM]
 ms.assetid: 2981a90d-aaa4-4991-beee-5ac1f12b5c9e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262450"
 ---
 # <a name="managing-bam"></a><span data-ttu-id="d94a4-102">BAM の管理</span><span class="sxs-lookup"><span data-stu-id="d94a4-102">Managing BAM</span></span>
 <span data-ttu-id="d94a4-103">ビジネス ユーザーは、ビジネス アクティビティの監視 (BAM) によって、重要なビジネスの業績評価指標にリアルタイムでアクセスできるようになります。</span><span class="sxs-lookup"><span data-stu-id="d94a4-103">Business Activity Monitoring (BAM) empowers business users by providing real-time access to critical business performance indicators.</span></span> <span data-ttu-id="d94a4-104">ビジネス ユーザーはこの情報を利用することにより、業務のスピードを上げ、効率化を実現することができます。</span><span class="sxs-lookup"><span data-stu-id="d94a4-104">Business users can use this information to improve the speed and effectiveness of business operations.</span></span> <span data-ttu-id="d94a4-105">BAM では、異種環境の複雑さとは無関係に、リアルタイムで、トランザクションとして一貫性のある方法で、ビジネス アクティビティの情報を収集します。</span><span class="sxs-lookup"><span data-stu-id="d94a4-105">BAM collects the business activity information in a real-time, transaction-consistent way regardless of the complexity of a heterogeneous environment.</span></span>  

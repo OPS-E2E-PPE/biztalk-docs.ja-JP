@@ -1,17 +1,17 @@
 ---
-title: "エクスポート Bindings6 |Microsoft ドキュメント"
-ms.custom: 
+title: エクスポート Bindings6 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, exporting
 - exporting, bindings
 ms.assetid: 052a429e-3237-44d4-8933-00aa5edfb212
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246282"
 ---
 # <a name="exporting-bindings"></a><span data-ttu-id="0723b-102">バインドをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="0723b-102">Exporting Bindings</span></span>
 <span data-ttu-id="0723b-103">このセクションの各トピックでは、BizTalk Server グループ、アセンブリ、またはアプリケーションのバインドを .xml ファイルにエクスポートする方法について説明します </span><span class="sxs-lookup"><span data-stu-id="0723b-103">The topics in this section describe how to export bindings for a BizTalk group, assembly, or application into an .xml file.</span></span> <span data-ttu-id="0723b-104">(バインドは、ホスト、送信ポート、送信ポート グループ、受信ポート、受信場所、パーティを、オーケストレーション、パイプライン、マップ、およびスキーマと関連付ける方法を定義します)。その後、.xml ファイルから別のグループまたはアプリケーションにバインドをインポートできます。</span><span class="sxs-lookup"><span data-stu-id="0723b-104">(Bindings define how hosts, send ports, send port groups, receive ports, receive locations, parties are associated with orchestrations, pipelines, maps, and schemas.) You can then import the bindings from the .xml file into another group or application.</span></span> <span data-ttu-id="0723b-105">バインドをインポートすると、グループまたはアプリケーション内の同じ名前の既存のバインドが上書きされます。</span><span class="sxs-lookup"><span data-stu-id="0723b-105">Importing bindings overwrites any existing bindings of the same name in the group or application.</span></span> <span data-ttu-id="0723b-106">バインドをアプリケーションに追加して、既存のバインドを上書きしないようにすることもできます。</span><span class="sxs-lookup"><span data-stu-id="0723b-106">You can also add bindings to an application, which does not overwrite existing bindings.</span></span> <span data-ttu-id="0723b-107">アプリケーションをインポートしない限り、追加したバインドは有効になりません。</span><span class="sxs-lookup"><span data-stu-id="0723b-107">The bindings that you add do not take effect until you import the application.</span></span>  

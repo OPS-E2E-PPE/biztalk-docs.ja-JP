@@ -1,14 +1,14 @@
 ---
-title: "メタデータ エラー |Microsoft ドキュメント"
-ms.custom: 
+title: メタデータ エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccb60c91-5905-4852-813b-586b82de4825
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262946"
 ---
 # <a name="metadata-errors"></a><span data-ttu-id="8b996-102">メタデータ エラー</span><span class="sxs-lookup"><span data-stu-id="8b996-102">Metadata Errors</span></span>
 <span data-ttu-id="8b996-103">診断および WCF のメタデータ エラーを解決するための情報です。</span><span class="sxs-lookup"><span data-stu-id="8b996-103">Information for diagnosing and resolving WCF Metadata errors.</span></span>  

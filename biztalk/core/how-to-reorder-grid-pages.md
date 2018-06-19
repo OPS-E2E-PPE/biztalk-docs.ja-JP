@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254802"
 ---
 # <a name="how-to-reorder-grid-pages"></a><span data-ttu-id="4e897-102">グリッド ページを並び替える方法</span><span class="sxs-lookup"><span data-stu-id="4e897-102">How to Reorder Grid Pages</span></span>
 <span data-ttu-id="4e897-103">マップが複雑である場合は、複数のグリッド ページを設定できます。グリッド ページの名前や順序を変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="4e897-103">If your map is complex, you can include multiple grid pages, and then rename and reorder them.</span></span> <span data-ttu-id="4e897-104">このトピックでは、これらの操作の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="4e897-104">This topic includes step-by-step instructions to perform these operations.</span></span>  

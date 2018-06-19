@@ -1,11 +1,11 @@
 ---
-title: "MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, examples
 - MQSeries adapters, examples
 ms.assetid: 5127d743-bb79-4e97-a2f3-446892e1bfa0
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975809"
 ---
 # <a name="mqscorrelationsetorchestrationwithsolicitresponse-biztalk-server-sample"></a><span data-ttu-id="d7db8-102">MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="d7db8-102">MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server Sample)</span></span>
 <span data-ttu-id="d7db8-103">MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではなく、MQSeries Server によって作成された関連付け識別子を使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-103">The MQSCorrelationSetOrchestrationWithSolicitResponse sample demonstrates how to use a correlation identifier produced by the MQSeries Server instead of by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
 >  <span data-ttu-id="d7db8-110">この方法を使用するオーケストレーションでは、MQSeries Server からのメッセージを関連付け識別子より前に受信すると、問題が発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="d7db8-110">Orchestrations using this technique may experience problems if the message from the MQSeries Server arrives before the correlation identifier.</span></span> <span data-ttu-id="d7db8-111">オーケストレーションをデザインするときは、MQSeries Server が関連付け識別子を返すことができるよう、処理時間を十分にとるようにしてください。</span><span class="sxs-lookup"><span data-stu-id="d7db8-111">Make sure that you design your orchestrations to allow enough time for the MQSeries Server to return the correlation identifier.</span></span> <span data-ttu-id="d7db8-112">この例では、このような競合状態が発生する可能性については考慮していません。</span><span class="sxs-lookup"><span data-stu-id="d7db8-112">This example does not consider this possible race condition.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="d7db8-113">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="d7db8-113">Where to Find This Sample</span></span>  
- <span data-ttu-id="d7db8-114">*\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span><span class="sxs-lookup"><span data-stu-id="d7db8-114">*\<Samples Path\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span></span>  
+ <span data-ttu-id="d7db8-114">*\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span><span class="sxs-lookup"><span data-stu-id="d7db8-114">*\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span></span>  
   
  <span data-ttu-id="d7db8-115">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="d7db8-115">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="d7db8-141">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-141">Click **Start**, point to **All Programs**, point to **IBM WebSphere MQ**, and then click **WebSphere MQ Explorer**.</span></span>  
   
-2.  <span data-ttu-id="d7db8-142">ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d7db8-142">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="d7db8-143">既定のキュー マネージャーの名前は通常**qm _***< machine_name >*場所*machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-143">The default queue manager is typically named **QM_***<machine_name>* where *machine_name* is the name of your computer.</span></span>  
+2.  <span data-ttu-id="d7db8-142">ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d7db8-142">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="d7db8-143">既定のキュー マネージャーの名前は通常**qm _***< machine_name >* 場所*machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-143">The default queue manager is typically named **QM_***<machine_name>* where *machine_name* is the name of your computer.</span></span>  
   
 3.  <span data-ttu-id="d7db8-144">右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-144">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 11/28/2017
   
 15. <span data-ttu-id="d7db8-166">**キュー**ボックスで「replytoq」をクリック**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-166">In the **Queue** box, type " REPLYTOQ", and then click **Export**.</span></span>  
   
-16. <span data-ttu-id="d7db8-167">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-167">In the **Export** dialog box, click **Create Queue**, and then click**OK**or **Done** until you have exited all dialog boxes.</span></span>  
+16. <span data-ttu-id="d7db8-167">**エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-167">In the **Export** dialog box, click **Create Queue**, and then click**OK**or **Done** until you have exited all dialog boxes.</span></span>  
   
 ## <a name="creating-the-send-port-and-mqseries-queue"></a><span data-ttu-id="d7db8-168">送信ポートと MQSeries キューの作成</span><span class="sxs-lookup"><span data-stu-id="d7db8-168">Creating the Send Port and MQSeries Queue</span></span>  
   
@@ -142,7 +143,7 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="d7db8-179">**キュー**ボックスで「solicitresponseq」をクリック**エクスポート**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-179">In the **Queue** box, type " SOLICITRESPONSEQ", and then click **Export**.</span></span>  
   
-11. <span data-ttu-id="d7db8-180">[エクスポート] ダイアログ ボックスで、**キューの作成**をクリックし、 **[ok]**または**実行**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-180">In the Export dialog box, click **Create Queue**, and then click **OK** or **Done** until you have exited all dialog boxes.</span></span>  
+11. <span data-ttu-id="d7db8-180">[エクスポート] ダイアログ ボックスで、**キューの作成**をクリックし、 **[ok]** または**実行**すべてのダイアログ ボックスを終了します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-180">In the Export dialog box, click **Create Queue**, and then click **OK** or **Done** until you have exited all dialog boxes.</span></span>  
   
 ## <a name="enabling-the-receive-location-and-starting-the-send-port"></a><span data-ttu-id="d7db8-181">受信場所の有効化と送信ポートの開始</span><span class="sxs-lookup"><span data-stu-id="d7db8-181">Enabling the Receive Location and Starting the Send Port</span></span>  
  <span data-ttu-id="d7db8-182">この手順では、オーケストレーション内でファイルを受信するために必要なフォルダーを作成し、関連付けられたメッセージと応答メッセージを出力フォルダーに送信します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-182">This procedure creates the folders required to receive the file into the orchestration and sends the correlated message and response message to the output folders.</span></span>  
@@ -169,7 +170,7 @@ ms.lasthandoff: 11/28/2017
 ||  
 |-|  
 |<span data-ttu-id="d7db8-193">アプリケーションが使用するオーケストレーションを変更するには</span><span class="sxs-lookup"><span data-stu-id="d7db8-193">To modify the Orchestration used by the application</span></span>|  
-|<span data-ttu-id="d7db8-194">Microsoft で[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックして**[mqscorrelationsolicitresponse.sln]**ソリューションを開きます。</span><span class="sxs-lookup"><span data-stu-id="d7db8-194">- In Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], double-click the solution file, **MQSCorrelationSolicitResponse.sln**, to open the solution.</span></span><br /><br /> <span data-ttu-id="d7db8-195">のソリューション エクスプ ローラー ペインで、元オーケストレーションをダブルクリックします**mqscorrelationsolicitresponse.odx**オーケストレーションを表示します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-195">- From the Solution Explorer pane, double-click the orchestration **MQSCorrelationSolicitResponse.odx** to view the orchestration.</span></span><br /><br /> <span data-ttu-id="d7db8-196">-メッセージの割り当て図形をダブルクリックして**MessageAssignment_1** BizTalk 式エディターを起動します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-196">- Double-click the message assignment shape **MessageAssignment_1** to launch the BizTalk Expression Editor.</span></span><br /><br /> <span data-ttu-id="d7db8-197">-次の式の該当する MQSeries キュー マネージャー名を入力してください。</span><span class="sxs-lookup"><span data-stu-id="d7db8-197">- Enter the appropriate MQSeries queue manager name for the following expression:</span></span><br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_ReplyToQMgr) = "QM_<machine_name>";`<br /><br /> <span data-ttu-id="d7db8-198">-最初の 100 バイトだけではなく、元のメッセージの内容全体を格納する BizTalk から送信される応答メッセージの希望する場合は、BizTalk 式エディターで次の行を変更します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-198">- If you would like for the response message sent from BizTalk to contain the entire contents of the original message instead of only the first 100 bytes, modify the following line in the BizTalk Expression Editor.</span></span><br /><br /> <span data-ttu-id="d7db8-199">-元の行。</span><span class="sxs-lookup"><span data-stu-id="d7db8-199">- Original line:</span></span><br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 768;`<br /><br /> <span data-ttu-id="d7db8-200">変更後:</span><span class="sxs-lookup"><span data-stu-id="d7db8-200">Change to:</span></span><br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 1792;`<br /><br /> <span data-ttu-id="d7db8-201">BizTalk 式エディターには、をクリックして**OK**を変更した式を保存します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-201">- In the BizTalk Expression Editor, click **OK** to save the modified expression.</span></span><br /><br /> <span data-ttu-id="d7db8-202">- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**ファイル**、し、**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-202">- In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], select **File**, and then select **Save All**.</span></span>|  
+|<span data-ttu-id="d7db8-194">Microsoft で[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックして **[mqscorrelationsolicitresponse.sln]** ソリューションを開きます。</span><span class="sxs-lookup"><span data-stu-id="d7db8-194">- In Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], double-click the solution file, **MQSCorrelationSolicitResponse.sln**, to open the solution.</span></span><br /><br /> <span data-ttu-id="d7db8-195">のソリューション エクスプ ローラー ペインで、元オーケストレーションをダブルクリックします**mqscorrelationsolicitresponse.odx**オーケストレーションを表示します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-195">- From the Solution Explorer pane, double-click the orchestration **MQSCorrelationSolicitResponse.odx** to view the orchestration.</span></span><br /><br /> <span data-ttu-id="d7db8-196">-メッセージの割り当て図形をダブルクリックして**MessageAssignment_1** BizTalk 式エディターを起動します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-196">- Double-click the message assignment shape **MessageAssignment_1** to launch the BizTalk Expression Editor.</span></span><br /><br /> <span data-ttu-id="d7db8-197">-次の式の該当する MQSeries キュー マネージャー名を入力してください。</span><span class="sxs-lookup"><span data-stu-id="d7db8-197">- Enter the appropriate MQSeries queue manager name for the following expression:</span></span><br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_ReplyToQMgr) = "QM_<machine_name>";`<br /><br /> <span data-ttu-id="d7db8-198">-最初の 100 バイトだけではなく、元のメッセージの内容全体を格納する BizTalk から送信される応答メッセージの希望する場合は、BizTalk 式エディターで次の行を変更します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-198">- If you would like for the response message sent from BizTalk to contain the entire contents of the original message instead of only the first 100 bytes, modify the following line in the BizTalk Expression Editor.</span></span><br /><br /> <span data-ttu-id="d7db8-199">-元の行。</span><span class="sxs-lookup"><span data-stu-id="d7db8-199">- Original line:</span></span><br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 768;`<br /><br /> <span data-ttu-id="d7db8-200">変更後:</span><span class="sxs-lookup"><span data-stu-id="d7db8-200">Change to:</span></span><br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 1792;`<br /><br /> <span data-ttu-id="d7db8-201">BizTalk 式エディターには、をクリックして**OK**を変更した式を保存します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-201">- In the BizTalk Expression Editor, click **OK** to save the modified expression.</span></span><br /><br /> <span data-ttu-id="d7db8-202">- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**ファイル**、し、**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-202">- In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], select **File**, and then select **Save All**.</span></span>|  
   
 ## <a name="building-and-deploying-the-sample"></a><span data-ttu-id="d7db8-203">ビルドと展開のサンプル</span><span class="sxs-lookup"><span data-stu-id="d7db8-203">Building and Deploying the Sample</span></span>  
  <span data-ttu-id="d7db8-204">この手順では、このアプリケーションで使用するオーケストレーションを含むソリューションをビルドして展開します。</span><span class="sxs-lookup"><span data-stu-id="d7db8-204">This procedure builds and deploys the solution that contains the orchestration used in this application.</span></span>  
@@ -198,7 +199,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="d7db8-215">BizTalk Server 管理コンソールで、展開、**オーケストレーション**フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="d7db8-215">In the BizTalk Server Administration console, expand the **Orchestrations** folder.</span></span>  
   
-2.  <span data-ttu-id="d7db8-216">詳細ウィンドウで右クリックし、 **[mqscorrelationsolicitresponse]**オーケストレーションとクリック**バインド**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-216">In the details pane, right-click the **MQSCorrelationSolicitResponse** orchestration and click **Bind**.</span></span>  
+2.  <span data-ttu-id="d7db8-216">詳細ウィンドウで右クリックし、 **[mqscorrelationsolicitresponse]** オーケストレーションとクリック**バインド**です。</span><span class="sxs-lookup"><span data-stu-id="d7db8-216">In the details pane, right-click the **MQSCorrelationSolicitResponse** orchestration and click **Bind**.</span></span>  
   
 3.  <span data-ttu-id="d7db8-217">オーケストレーション ポートを、以下の送信ポートおよび受信場所にバインドします。</span><span class="sxs-lookup"><span data-stu-id="d7db8-217">Bind the orchestration ports to the following send ports and receive locations:</span></span>  
   

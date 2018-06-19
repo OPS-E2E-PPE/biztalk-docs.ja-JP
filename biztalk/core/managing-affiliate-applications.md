@@ -1,18 +1,18 @@
 ---
-title: "関連アプリケーションの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: 関連アプリケーションの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications]
 - applications [SSO], managing
 - SSO, applications
 ms.assetid: 9bc6b120-6849-476a-b3af-c18bf2fa0197
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262210"
 ---
 # <a name="managing-affiliate-applications"></a><span data-ttu-id="7edce-102">関連アプリケーションの管理</span><span class="sxs-lookup"><span data-stu-id="7edce-102">Managing Affiliate Applications</span></span>
 <span data-ttu-id="7edce-103">このセクションでは、関連アプリケーションを作成および構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7edce-103">This section provides information about how to create and configure affiliate applications.</span></span>  

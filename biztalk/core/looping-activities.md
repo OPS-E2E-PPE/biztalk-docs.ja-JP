@@ -1,11 +1,11 @@
 ---
-title: "ループ アクティビティ |Microsoft ドキュメント"
-ms.custom: 
+title: ループ アクティビティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], looping activities
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, looping
 - orchestrations, activities
 ms.assetid: fb40fdd0-ac8f-486a-b3d0-9d2200a87cda
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262082"
 ---
 # <a name="looping-activities"></a><span data-ttu-id="c938d-102">ループ アクティビティ</span><span class="sxs-lookup"><span data-stu-id="c938d-102">Looping Activities</span></span>
 <span data-ttu-id="c938d-103">ループ アクティビティとは、オーケストレーション内でループ処理されるアクションのことです。</span><span class="sxs-lookup"><span data-stu-id="c938d-103">Looping activities refers to actions that loop within an orchestration.</span></span> <span data-ttu-id="c938d-104">オーケストレーション内でループ処理されるアクションからイベントをキャプチャできます。</span><span class="sxs-lookup"><span data-stu-id="c938d-104">It is possible to capture the events from actions that loop within an orchestration.</span></span> <span data-ttu-id="c938d-105">この操作を行うには、アクティビティをもう 1 つ作成し、ループ内の新しいアクティビティ マイルストーンとデータのすべてをマップします。</span><span class="sxs-lookup"><span data-stu-id="c938d-105">To do this, you create another activity and map all of the new activity milestones and data inside the loop.</span></span> <span data-ttu-id="c938d-106">ループ内でのデータ処理は、スケジュールされた実行ごとに 1 回以上行われるので、この操作が必要です。</span><span class="sxs-lookup"><span data-stu-id="c938d-106">This is necessary because the data processing in the loop will occur more than once per scheduled execution.</span></span> <span data-ttu-id="c938d-107">次の図は、この状況の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="c938d-107">The following figure shows an example of this situation.</span></span>  

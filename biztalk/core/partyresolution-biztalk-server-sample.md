@@ -1,11 +1,11 @@
 ---
-title: "PartyResolution (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: PartyResolution (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, parties
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - routing, messages
 - messages, routing
 ms.assetid: 220e6bc5-6f04-4f37-b0d0-f11c2cc14422
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975424"
 ---
 # <a name="partyresolution-biztalk-server-sample"></a><span data-ttu-id="6d676-102">PartyResolution (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="6d676-102">PartyResolution (BizTalk Server Sample)</span></span>
 <span data-ttu-id="6d676-103">PartyResolution サンプルは、パーティの解決で BizTalk オーケストレーションを使用して、2 つのうちいずれかの受信側にメッセージをルーティングする方法を示すものです。</span><span class="sxs-lookup"><span data-stu-id="6d676-103">The PartyResolution sample demonstrates how to use BizTalk orchestrations with party resolution to route messages to one of two possible recipients.</span></span>  
@@ -125,7 +126,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="6d676-168">Shipper1Process.odx および Shipper2Process.odx は、SupplierProcess.odx から出荷指令と出荷通知を受信し、SupplierProcess.odx に応答を返すようビルドされています。</span><span class="sxs-lookup"><span data-stu-id="6d676-168">Shipper1Process.odx and Shipper2Process.odx are built to receive the shipping order and the shipping advice from SupplierProcess.odx and to send the response back to SupplierProcess.odx.</span></span> <span data-ttu-id="6d676-169">両方の出荷業者側のオーケストレーションで、昇格させたプロパティ PONo に基づく種類の関連付けが使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d676-169">In both of the shipper orchestrations, correlation is used, and the correlation type is based on the promoted property PONo.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="6d676-170">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="6d676-170">Where to Find This Sample</span></span>  
- <span data-ttu-id="6d676-171">*\<パスのサンプル\>*\Orchestrations\PartyResolution\\</span><span class="sxs-lookup"><span data-stu-id="6d676-171">*\<Samples Path\>*\Orchestrations\PartyResolution\\</span></span>  
+ <span data-ttu-id="6d676-171">*\<パスのサンプル\>* \Orchestrations\PartyResolution\\</span><span class="sxs-lookup"><span data-stu-id="6d676-171">*\<Samples Path\>* \Orchestrations\PartyResolution\\</span></span>  
   
  <span data-ttu-id="6d676-172">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="6d676-172">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -222,9 +223,9 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
     2.  <span data-ttu-id="6d676-251">をクリックして**ホスト インスタンス**既定のインプロセス ホスト インスタンスに対して表示されるログオン アカウントを見つけるとします。</span><span class="sxs-lookup"><span data-stu-id="6d676-251">Click on **Host Instances** and find the Logon account shown for the default In-Process host instance.</span></span> <span data-ttu-id="6d676-252">既定のインストールでは、既定のインプロセス ホストの名前は BizTalkServerApplication です。</span><span class="sxs-lookup"><span data-stu-id="6d676-252">In a default installation the default In-Process host should be named BizTalkServerApplication.</span></span>  
   
-    3.  <span data-ttu-id="6d676-253">**[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-253">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="6d676-254">**実行**ボックスに、入力**mmc.exe**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-254">In the **Run** box, type **mmc.exe**, and then click **OK**.</span></span> <span data-ttu-id="6d676-255">ホスト インスタンス ログオン アカウントの正しいパスワードを入力し、そのアカウントで Microsoft 管理コンソール (MMC) を開きます。</span><span class="sxs-lookup"><span data-stu-id="6d676-255">Enter the correct password for the host instance logon account to open the Microsoft Management Console (MMC) under that account.</span></span>  
+    3.  <span data-ttu-id="6d676-253">**[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-253">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="6d676-254">**実行**ボックスに、入力**mmc.exe**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-254">In the **Run** box, type **mmc.exe**, and then click **OK**.</span></span> <span data-ttu-id="6d676-255">ホスト インスタンス ログオン アカウントの正しいパスワードを入力し、そのアカウントで Microsoft 管理コンソール (MMC) を開きます。</span><span class="sxs-lookup"><span data-stu-id="6d676-255">Enter the correct password for the host instance logon account to open the Microsoft Management Console (MMC) under that account.</span></span>  
   
-    4.  <span data-ttu-id="6d676-256">**[ファイル]** メニューの **[スナップインの追加と削除]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-256">On the **File** menu, click **Add/Remove Snap-in**.</span></span>  
+    4.  <span data-ttu-id="6d676-256">**[ファイル]** メニューの **[スナップインの追加と削除]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-256">On the **File** menu, click **Add/Remove Snap-in**.</span></span>  
   
     5.  <span data-ttu-id="6d676-257">**を追加または削除スナップイン**ダイアログ ボックスで、**証明書**、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-257">In the **Add or Remove Snap-ins** dialog box, select **Certificates**, and then click **Add**.</span></span>  
   
@@ -236,19 +237,19 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
     9. <span data-ttu-id="6d676-261">**コンピューターの選択**ダイアログ ボックスで、**ローカル コンピューター**、クリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-261">In the **Select Computer** dialog box, select **Local computer**, and then click **Finish**.</span></span>  
   
-    10. <span data-ttu-id="6d676-262">**を追加または削除スナップイン**ダイアログ ボックスで、をクリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-262">In the **Add or Remove Snap-ins** dialog box, click **OK**.</span></span>  
+    10. <span data-ttu-id="6d676-262">**を追加または削除スナップイン**ダイアログ ボックスで、をクリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="6d676-262">In the **Add or Remove Snap-ins** dialog box, click **OK**.</span></span>  
   
     11. <span data-ttu-id="6d676-263">展開、**証明書 - 現在のユーザー**ノードを展開し、**個人**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-263">Expand the **Certificates - Current User** node and then expand **Personal**.</span></span> <span data-ttu-id="6d676-264">右クリック**証明書**をクリックして**すべてのタスク**、順にクリック**インポート**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-264">Right-click **Certificates**, click **All Tasks**, and then click **Import**.</span></span>  
   
     12. <span data-ttu-id="6d676-265">ウィザードで秘密キーをインポートし、パスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="6d676-265">Import the private key and provide a password in the wizard.</span></span>  
   
-    13. <span data-ttu-id="6d676-266">展開、**証明書 (ローカル コンピューター)**ノードを展開し、**ほかの人**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-266">Expand the **Certificates (Local Computer)** node and then expand **Other People**.</span></span> <span data-ttu-id="6d676-267">右クリック**証明書**をクリックして**すべてのタスク**、順にクリック**インポート**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-267">Right-click **Certificates**, click **All Tasks**, and then click **Import**.</span></span>  
+    13. <span data-ttu-id="6d676-266">展開、**証明書 (ローカル コンピューター)** ノードを展開し、**ほかの人**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-266">Expand the **Certificates (Local Computer)** node and then expand **Other People**.</span></span> <span data-ttu-id="6d676-267">右クリック**証明書**をクリックして**すべてのタスク**、順にクリック**インポート**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-267">Right-click **Certificates**, click **All Tasks**, and then click **Import**.</span></span>  
   
     14. <span data-ttu-id="6d676-268">公開キーをインポートします。</span><span class="sxs-lookup"><span data-stu-id="6d676-268">Import the public key.</span></span>  
   
 7.  <span data-ttu-id="6d676-269">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックし、 **BizTalk グループ**ノードをクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-269">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, right-click the **BizTalk Group** node and then click **Properties**.</span></span> <span data-ttu-id="6d676-270">**BizTalk グループ - グループのプロパティ**ダイアログ ボックスで、**証明書**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-270">In the **BizTalk Group - Group Properties** dialog box, select **Certificate**.</span></span>  
   
-8.  <span data-ttu-id="6d676-271">**証明書**ダイアログ ボックスで、をクリックして**参照**をインポートした秘密キーを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d676-271">In the **Certificate** dialog box, click **Browse** and select the private key you just imported.</span></span> <span data-ttu-id="6d676-272">ここで指定した証明書は、送信メッセージの署名に使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d676-272">The certificate specified here is used to sign the outbound message.</span></span> <span data-ttu-id="6d676-273">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-273">Click **OK**.</span></span>  
+8.  <span data-ttu-id="6d676-271">**証明書**ダイアログ ボックスで、をクリックして**参照**をインポートした秘密キーを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d676-271">In the **Certificate** dialog box, click **Browse** and select the private key you just imported.</span></span> <span data-ttu-id="6d676-272">ここで指定した証明書は、送信メッセージの署名に使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d676-272">The certificate specified here is used to sign the outbound message.</span></span> <span data-ttu-id="6d676-273">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-273">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="6d676-274">このサンプルの BuyerAgency パーティを更新するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="6d676-274">To update the BuyerAgency party in this sample do the following:</span></span>  
   
@@ -258,13 +259,13 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
     3.  <span data-ttu-id="6d676-278">下にある、**エイリアス**セクションで、ダイアログ ボックスの設定の修飾子と名前で新しいエイリアスを追加**WindowsUser**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-278">Under the **Aliases** section of the dialog, add a new alias with the name and qualifier set to **WindowsUser**.</span></span> <span data-ttu-id="6d676-279">値の形式でユーザー名を設定\<ドメイン \ ユーザー名 > (somedomain \someuser など)。</span><span class="sxs-lookup"><span data-stu-id="6d676-279">Set the Value to a user name in format of \<domain\user name> (e.g. SOMEDOMAIN\someuser).</span></span>  
   
-    4.  <span data-ttu-id="6d676-280">選択**証明書** をクリックし、**参照**をインポートした公開キーを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d676-280">Select **Certificate** and then click **Browse** and select the public key you just imported.</span></span> <span data-ttu-id="6d676-281">ここで指定した証明書は、受信メッセージの送信者 ID の検証に使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d676-281">The certificate specified here is used to validate the sender identity of the inbound message.</span></span> <span data-ttu-id="6d676-282">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-282">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="6d676-280">選択**証明書** をクリックし、**参照**をインポートした公開キーを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d676-280">Select **Certificate** and then click **Browse** and select the public key you just imported.</span></span> <span data-ttu-id="6d676-281">ここで指定した証明書は、受信メッセージの送信者 ID の検証に使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d676-281">The certificate specified here is used to validate the sender identity of the inbound message.</span></span> <span data-ttu-id="6d676-282">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-282">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="6d676-283">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**プラットフォームの設定**、し、**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-283">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **Platform Settings**, and then select **Hosts**.</span></span>  
   
 11. <span data-ttu-id="6d676-284">右クリック**BizTalkServerApplication**  をクリックし、**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-284">Right-click **BizTalkServerApplication** and then click **Properties**.</span></span> <span data-ttu-id="6d676-285">**BizTalkServerApplication - ホストのプロパティ**ダイアログ ボックスで、**証明書**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-285">In the **BizTalkServerApplication - Host Properties** dialog box, select **Certificates**.</span></span>  
   
-12. <span data-ttu-id="6d676-286">をクリックして**参照**をインポートした秘密キーを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d676-286">Click **Browse** and select the private key you just imported.</span></span> <span data-ttu-id="6d676-287">ここで指定した証明書は、受信メッセージの解読に使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d676-287">The certificate specified here is used to decrypt the inbound messages.</span></span> <span data-ttu-id="6d676-288">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-288">Click **OK**.</span></span>  
+12. <span data-ttu-id="6d676-286">をクリックして**参照**をインポートした秘密キーを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d676-286">Click **Browse** and select the private key you just imported.</span></span> <span data-ttu-id="6d676-287">ここで指定した証明書は、受信メッセージの解読に使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d676-287">The certificate specified here is used to decrypt the inbound messages.</span></span> <span data-ttu-id="6d676-288">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d676-288">Click **OK**.</span></span>  
   
 13. <span data-ttu-id="6d676-289">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**プラットフォームの設定**、し、**ホスト インスタンス**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-289">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **Platform Settings**, and then select **Host Instances**.</span></span>  
   
@@ -276,13 +277,13 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
 1.  <span data-ttu-id="6d676-293">次のフォルダーから FilePolling.exe を実行します。</span><span class="sxs-lookup"><span data-stu-id="6d676-293">Run FilePolling.exe from the following folder:</span></span>  
   
-     <span data-ttu-id="6d676-294">*\<サンプル パス >*\Orchestrations\PartyResolution\FilePolling\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="6d676-294">*\<Samples Path>*\Orchestrations\PartyResolution\FilePolling\bin\Debug</span></span>  
+     <span data-ttu-id="6d676-294">*\<サンプル パス >* \Orchestrations\PartyResolution\FilePolling\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="6d676-294">*\<Samples Path>* \Orchestrations\PartyResolution\FilePolling\bin\Debug</span></span>  
   
 2.  <span data-ttu-id="6d676-295">をクリックして**ポーリングの開始**です。</span><span class="sxs-lookup"><span data-stu-id="6d676-295">Click **Start polling**.</span></span>  
   
 3.  <span data-ttu-id="6d676-296">用意されている PO インスタンス ファイル PurchaseOrder.xml を、次のフォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="6d676-296">Paste a copy of the provided PO instance file, PurchaseOrder.xml, in the following folder:</span></span>  
   
-     <span data-ttu-id="6d676-297">*\<サンプル パス >*\Orchestrations\PartyResolution\FileDrop\PurchaseOrder</span><span class="sxs-lookup"><span data-stu-id="6d676-297">*\<Samples Path>*\Orchestrations\PartyResolution\FileDrop\PurchaseOrder</span></span>  
+     <span data-ttu-id="6d676-297">*\<サンプル パス >* \Orchestrations\PartyResolution\FileDrop\PurchaseOrder</span><span class="sxs-lookup"><span data-stu-id="6d676-297">*\<Samples Path>* \Orchestrations\PartyResolution\FileDrop\PurchaseOrder</span></span>  
   
 4.  <span data-ttu-id="6d676-298">次の各時点でサンプルの進行状況を知らせるメッセージがメッセージ ボックスの形式で表示されるので、それを確認します。</span><span class="sxs-lookup"><span data-stu-id="6d676-298">Observe the sequence of messages that are provided in the form of message boxes that keep you informed about the progress of the sample:</span></span>  
   

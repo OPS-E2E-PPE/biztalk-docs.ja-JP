@@ -1,18 +1,18 @@
 ---
-title: "パフォーマンス カウンター |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンス カウンター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - technical reference, performance counters
 - performance, technical reference
 - performance, performance counters
 ms.assetid: bdc64017-c74e-4cf0-8769-d27e60161439
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263938"
 ---
 # <a name="performance-counters"></a><span data-ttu-id="611ce-102">パフォーマンス カウンター</span><span class="sxs-lookup"><span data-stu-id="611ce-102">Performance Counters</span></span>
 <span data-ttu-id="611ce-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、ボトルネックの追跡に使用できるパフォーマンス カウンターが組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="611ce-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes performance counters that you can use to detect bottlenecks.</span></span> <span data-ttu-id="611ce-104">このセクションでは、これらのパフォーマンス カウンターについて説明します。</span><span class="sxs-lookup"><span data-stu-id="611ce-104">These performance counters are described in this section.</span></span>  

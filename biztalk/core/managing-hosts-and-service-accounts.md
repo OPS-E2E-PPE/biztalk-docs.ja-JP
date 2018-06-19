@@ -1,11 +1,11 @@
 ---
-title: "ホストおよびサービス アカウントの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: ホストおよびサービス アカウントの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, managing
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Windows groups, managing
 - user accounts, managing
 ms.assetid: 25797571-f1f9-42a4-8fff-5b03076bbe36
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262386"
 ---
 # <a name="managing-hosts-and-service-accounts"></a><span data-ttu-id="d2c77-102">ホストとサービス アカウントの管理</span><span class="sxs-lookup"><span data-stu-id="d2c77-102">Managing Hosts and Service Accounts</span></span>
 <span data-ttu-id="d2c77-103">BizTalk Server の構成が済んだら、Windows グループおよびユーザー アカウントを管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2c77-103">After you configure BizTalk Server, you must manage Windows groups and user accounts.</span></span> <span data-ttu-id="d2c77-104">ここでは、BizTalk Server に必要なアカウントを管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d2c77-104">This section provides information about how to manage these accounts for BizTalk Server.</span></span>  

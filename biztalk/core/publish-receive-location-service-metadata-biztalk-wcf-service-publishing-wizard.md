@@ -1,11 +1,11 @@
 ---
-title: "BizTalk WCF サービス公開ウィザードを使用して、WCF 受信場所用にサービス メタデータを公開する方法は、オーケストレーション ポートにバインドされている |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk WCF サービス公開ウィザードを使用して、WCF 受信場所用にサービス メタデータを公開する方法は、オーケストレーション ポートにバインドされている |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF Service Publishing Wizard, publishing metadata
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, metadata
 - orchestrations, WCF services
 ms.assetid: 04ccce9f-8d18-433a-8299-d06fa155db06
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975048"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-bound-to-an-orchestration-port"></a><span data-ttu-id="974fe-102">BizTalk WCF サービス公開ウィザードを使用してオーケストレーション ポートにバインドされた WCF 受信場所にサービス メタデータを公開する方法</span><span class="sxs-lookup"><span data-stu-id="974fe-102">How to Use the BizTalk WCF Service Publishing Wizard to Publish Service Metadata for a WCF Receive Location Bound to an Orchestration Port</span></span>
 <span data-ttu-id="974fe-103">WCF サービスを作成して、オーケストレーション ポートにバインドされた既存の WCF 受信場所にサービス メタデータを公開するには、BizTalk WCF サービス公開ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="974fe-103">You use the BizTalk WCF Service Publishing Wizard to create a WCF service to publish service metadata for existing WCF receive locations bound to orchestration ports.</span></span>  
@@ -38,17 +39,17 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="974fe-112">**BizTalk WCF サービス公開ウィザードへようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="974fe-112">On the **Welcome to the BizTalk WCF Service Publishing Wizard** page, click **Next**.</span></span>  
   
-3.  <span data-ttu-id="974fe-113">**WCF サービスの種類**] ページで、[、**メタデータのみのエンドポイント (MEX)**に wcf サービス メタデータを提供する WCF サービスを発行するオプションを受信場所は、次の手順で選択します。</span><span class="sxs-lookup"><span data-stu-id="974fe-113">On the **WCF Service Type** page, select the **Metdata only endpoint (MEX)** option to publish the WCF services to provide service metadata for the WCF receive location that you will select in the next step.</span></span>  
+3.  <span data-ttu-id="974fe-113">**WCF サービスの種類**] ページで、[、**メタデータのみのエンドポイント (MEX)** に wcf サービス メタデータを提供する WCF サービスを発行するオプションを受信場所は、次の手順で選択します。</span><span class="sxs-lookup"><span data-stu-id="974fe-113">On the **WCF Service Type** page, select the **Metdata only endpoint (MEX)** option to publish the WCF services to provide service metadata for the WCF receive location that you will select in the next step.</span></span>  
   
      <span data-ttu-id="974fe-114">![WCF サービスの種類ページ](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")</span><span class="sxs-lookup"><span data-stu-id="974fe-114">![WCF Service Type page](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")</span></span>  
   
 4.  <span data-ttu-id="974fe-115">**WCF サービスの種類** ページの 、**受信場所のメタデータを公開**ドロップダウン リストでは、wcf 受信場所で、サービス メタデータを公開し、をクリックする**次へ**.</span><span class="sxs-lookup"><span data-stu-id="974fe-115">On the **WCF Service Type** page, in the **Publish metadata for receive location** drop-down list, select a WCF receive location to publish service metadata for, and then click **Next**.</span></span>  
   
-5.  <span data-ttu-id="974fe-116">**WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="974fe-116">On the **Create WCF Service** page, select **Publish BizTalk orchestrations as WCF service**, and then click **Next**.</span></span>  
+5.  <span data-ttu-id="974fe-116">**WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="974fe-116">On the **Create WCF Service** page, select **Publish BizTalk orchestrations as WCF service**, and then click **Next**.</span></span>  
   
      <span data-ttu-id="974fe-117">![WCF サービス ページを作成する](../core/media/86cb66b5-6842-4330-8942-20afa68ec5fa.gif "86cb66b5-6842-4330-8942-20afa68ec5fa")</span><span class="sxs-lookup"><span data-stu-id="974fe-117">![Create WCF Service page](../core/media/86cb66b5-6842-4330-8942-20afa68ec5fa.gif "86cb66b5-6842-4330-8942-20afa68ec5fa")</span></span>  
   
-6.  <span data-ttu-id="974fe-118">**BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)**テキスト ボックスで、BizTalk アセンブリ ファイルの名前を入力またはクリックして**参照**を参照するにはクリックして、サービス メタデータを公開するオーケストレーションを含むアセンブリ**次**です。</span><span class="sxs-lookup"><span data-stu-id="974fe-118">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\*.dll)** text box, type the name of the BizTalk assembly file or click **Browse** to browse to the assembly containing the orchestration(s) to publish service metadata for, and then click **Next**.</span></span>  
+6.  <span data-ttu-id="974fe-118">**BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)** テキスト ボックスで、BizTalk アセンブリ ファイルの名前を入力またはクリックして**参照**を参照するにはクリックして、サービス メタデータを公開するオーケストレーションを含むアセンブリ**次**です。</span><span class="sxs-lookup"><span data-stu-id="974fe-118">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\*.dll)** text box, type the name of the BizTalk assembly file or click **Browse** to browse to the assembly containing the orchestration(s) to publish service metadata for, and then click **Next**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="974fe-119">BizTalk アセンブリ ファイルを選択する前にすべての依存アセンブリを BizTalk アセンブリと同じフォルダーにコピーまたはグローバル アセンブリ キャッシュ (GAC) に依存アセンブリをインストールします。</span><span class="sxs-lookup"><span data-stu-id="974fe-119">Before selecting a BizTalk assembly file, copy all of the dependent assemblies into the same folder with the BizTalk assembly or install the dependent assemblies to the global assembly cache (GAC).</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="974fe-123">![BizTalk アセンブリ ページ](../core/media/d34a027e-ea82-4048-8b15-d97df795b0d4.gif "d34a027e-ea82-4048-8b15-d97df795b0d4")</span><span class="sxs-lookup"><span data-stu-id="974fe-123">![BizTalk Assembly page](../core/media/d34a027e-ea82-4048-8b15-d97df795b0d4.gif "d34a027e-ea82-4048-8b15-d97df795b0d4")</span></span>  
   
-7.  <span data-ttu-id="974fe-124">**オーケストレーションとポート** ページで、プラス記号 (+) をクリックして、各アセンブリおよびオーケストレーションのツリー ノードを展開します。</span><span class="sxs-lookup"><span data-stu-id="974fe-124">On the **Orchestrations and Ports** page, expand the tree nodes for each assembly and orchestration by clicking the plus sign (+).</span></span> <span data-ttu-id="974fe-125">メタデータを公開するオーケストレーションおよびポートのツリー ノードのチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="974fe-125">Select orchestrations and ports to publish metadata for by selecting the corresponding tree node check boxes.</span></span> <span data-ttu-id="974fe-126">ごとに 1 つの WCF サービスではなく選択した受信ポートの受信ポートを選択、すべての 1 つの WCF サービス (.svc ファイル) を作成する場合、**選択されているすべてのポートを 1 つの WCF サービスに結合**オプションをクリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="974fe-126">If you want to create one WCF service (.svc file) for all of the selected receive ports instead of one WCF service for each receive port, select the **Merge all selected ports into a single WCF service** option, and then click **Next**.</span></span>  
+7.  <span data-ttu-id="974fe-124">**オーケストレーションとポート** ページで、プラス記号 (+) をクリックして、各アセンブリおよびオーケストレーションのツリー ノードを展開します。</span><span class="sxs-lookup"><span data-stu-id="974fe-124">On the **Orchestrations and Ports** page, expand the tree nodes for each assembly and orchestration by clicking the plus sign (+).</span></span> <span data-ttu-id="974fe-125">メタデータを公開するオーケストレーションおよびポートのツリー ノードのチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="974fe-125">Select orchestrations and ports to publish metadata for by selecting the corresponding tree node check boxes.</span></span> <span data-ttu-id="974fe-126">ごとに 1 つの WCF サービスではなく選択した受信ポートの受信ポートを選択、すべての 1 つの WCF サービス (.svc ファイル) を作成する場合、**選択されているすべてのポートを 1 つの WCF サービスに結合**オプションをクリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="974fe-126">If you want to create one WCF service (.svc file) for all of the selected receive ports instead of one WCF service for each receive port, select the **Merge all selected ports into a single WCF service** option, and then click **Next**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="974fe-127">選択したすべてのポートを 1 つの WCF サービスに統合すると、選択したすべてのポートの種類が同じになり、ポート内の操作名も同じになります。</span><span class="sxs-lookup"><span data-stu-id="974fe-127">When you merge all selected ports into a single WCF service, all of the selected ports have the same port type, and the operation names in the ports are unique.</span></span>  

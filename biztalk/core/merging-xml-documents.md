@@ -1,17 +1,17 @@
 ---
-title: "XML ドキュメントのマージ |Microsoft ドキュメント"
-ms.custom: 
+title: XML ドキュメントのマージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML, documents
 - process management solution tutorial, merging XML documents
 ms.assetid: 444c983a-397a-4342-85e1-80bb152986d9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262642"
 ---
 # <a name="merging-xml-documents"></a><span data-ttu-id="18814-102">XML ドキュメントのマージ</span><span class="sxs-lookup"><span data-stu-id="18814-102">Merging XML Documents</span></span>
 <span data-ttu-id="18814-103">いずれかのメッセージを**OrderBroker**オーケストレーションを作成、SQL Server 履歴データベースを更新する 1 つです。</span><span class="sxs-lookup"><span data-stu-id="18814-103">One of the messages that the **OrderBroker** orchestration creates is one to update the SQL Server history database.</span></span> <span data-ttu-id="18814-104">このメッセージには、元の注文メッセージと注文メッセージのフィールドが含まれます。</span><span class="sxs-lookup"><span data-stu-id="18814-104">This message contains fields from the order message as well as the original order message.</span></span> <span data-ttu-id="18814-105">元の注文は、このメッセージに文字列として表示されます。</span><span class="sxs-lookup"><span data-stu-id="18814-105">The original order appears in this message a string.</span></span> <span data-ttu-id="18814-106">これは、データベースの注文履歴のデータ型と一致します。</span><span class="sxs-lookup"><span data-stu-id="18814-106">This matches the data type for the order history in the database.</span></span>  

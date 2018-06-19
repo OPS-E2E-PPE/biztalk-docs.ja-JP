@@ -1,11 +1,11 @@
 ---
-title: "コンポーネントのマップ |Microsoft ドキュメント"
-ms.custom: 
+title: コンポーネントのマップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - file types, maps
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BizTalk Mapper, file type
 - maps, components
 ms.assetid: be438d21-80a8-49d8-bd08-d85618ab23de
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262378"
 ---
 # <a name="map-components"></a><span data-ttu-id="96088-102">マップの構成要素</span><span class="sxs-lookup"><span data-stu-id="96088-102">Map Components</span></span>
 <span data-ttu-id="96088-103">マップの構成要素のほとんどは、.btm 拡張子を持つマップ ファイルに保存されます。</span><span class="sxs-lookup"><span data-stu-id="96088-103">Map files (having a .btm extension) store most of the components of a map.</span></span> <span data-ttu-id="96088-104">このファイルに格納される項目を次に示します。</span><span class="sxs-lookup"><span data-stu-id="96088-104">Items stored in the file include:</span></span>  

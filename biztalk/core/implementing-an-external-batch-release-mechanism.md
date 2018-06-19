@@ -1,14 +1,14 @@
 ---
-title: "外部バッチ リリース メカニズムを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: 外部バッチ リリース メカニズムを実装する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5633a448-cc29-4931-a3ad-206ae25c989b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258138"
 ---
 # <a name="implementing-an-external-batch-release-mechanism"></a><span data-ttu-id="562fe-102">外部バッチ リリース メカニズムの実装</span><span class="sxs-lookup"><span data-stu-id="562fe-102">Implementing an External Batch Release Mechanism</span></span>
 <span data-ttu-id="562fe-103">外部リリースのトリガーを使用すると、バッチのリリースをトリガーできます。</span><span class="sxs-lookup"><span data-stu-id="562fe-103">You can trigger the release of a batch using an external release trigger.</span></span> <span data-ttu-id="562fe-104">外部リリースのトリガーでは、バックエンドの基幹業務アプリケーションによって、特定のしきい値に到達したときに、リリースを自動的にトリガーできます。</span><span class="sxs-lookup"><span data-stu-id="562fe-104">The release could be automatically triggered by a back-end, line-of-business application upon reaching a certain threshold.</span></span> <span data-ttu-id="562fe-105">このメカニズムは、自動的に、スケジュールまたはトランザクション セットや文字の数によってバッチのリリースをトリガーするかをクリックして、バッチを手動でトリガーするだけでなく、**オーバーライド**ボタンをクリックして、**バッチ構成**一方向アグリーメント タブのページです。</span><span class="sxs-lookup"><span data-stu-id="562fe-105">This mechanism is in addition to automatically triggering the batch release by a schedule or a count of transaction sets or characters, or manually triggering the batch by clicking the **Override** button in the **Batch Configuration** page of the one-way agreement tab.</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="562fe-126">[受信パイプライン] で、[`BatchControlMessageRecvPipeline`] を選択します。</span><span class="sxs-lookup"><span data-stu-id="562fe-126">For Receive pipeline, select `BatchControlMessageRecvPipeline`.</span></span>  
   
-5.  <span data-ttu-id="562fe-127">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="562fe-127">Click **OK**.</span></span>  
+5.  <span data-ttu-id="562fe-127">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="562fe-127">Click **OK**.</span></span>  
   
 ### <a name="to-create-the-external-batch-release-trigger-message"></a><span data-ttu-id="562fe-128">外部バッチ リリース トリガー メッセージを作成するには</span><span class="sxs-lookup"><span data-stu-id="562fe-128">To create the external batch release trigger message</span></span>  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="562fe-155">**バッチ構成**] ページで、外部リリースのトリガーを対象となるし [バッチのタブをクリックして、**リリース**セクションで、**外部リリースのトリガー**.</span><span class="sxs-lookup"><span data-stu-id="562fe-155">In the **Batch Configuration** page, click the tab for the batch for which you want to have an external release trigger, and then under the **Release** section, select **External release trigger**.</span></span>  
   
-3.  <span data-ttu-id="562fe-156">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="562fe-156">Click **OK**.</span></span>  
+3.  <span data-ttu-id="562fe-156">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="562fe-156">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="562fe-157">参照</span><span class="sxs-lookup"><span data-stu-id="562fe-157">See Also</span></span>  
  <span data-ttu-id="562fe-158">[EDI バッチの構成](../core/configuring-edi-batches.md) </span><span class="sxs-lookup"><span data-stu-id="562fe-158">[Configuring EDI Batches](../core/configuring-edi-batches.md) </span></span>  

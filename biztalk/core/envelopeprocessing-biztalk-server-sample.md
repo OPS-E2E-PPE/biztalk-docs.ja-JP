@@ -1,11 +1,11 @@
 ---
-title: "EnvelopeProcessing (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: EnvelopeProcessing (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, envelopes
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - flat files, examples
 - envelopes, examples
 ms.assetid: b4cd979b-c7b4-446c-be29-c9f3169afa1f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972344"
 ---
 # <a name="envelopeprocessing-biztalk-server-sample"></a><span data-ttu-id="56b77-102">EnvelopeProcessing (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="56b77-102">EnvelopeProcessing (BizTalk Server Sample)</span></span>
 <span data-ttu-id="56b77-103">EnvelopeProcessing サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプラインでメッセージおよびメッセージ エンベロープを処理する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="56b77-103">The EnvelopeProcessing sample demonstrates how to process messages and message envelopes in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipelines.</span></span> <span data-ttu-id="56b77-104">さらに、フラット ファイル メッセージを XML メッセージに変換する方法も示します。</span><span class="sxs-lookup"><span data-stu-id="56b77-104">Further, it shows how to process flat file messages into XML messages.</span></span>  
@@ -97,13 +98,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="56b77-177">コマンド ウィンドウで、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="56b77-177">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="56b77-178">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\EnvelopeProcessing</span><span class="sxs-lookup"><span data-stu-id="56b77-178">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\EnvelopeProcessing</span></span>  
+     <span data-ttu-id="56b77-178">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\EnvelopeProcessing</span><span class="sxs-lookup"><span data-stu-id="56b77-178">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\EnvelopeProcessing</span></span>  
   
 2.  <span data-ttu-id="56b77-179">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="56b77-179">Run the file Setup.bat, which performs the following actions:</span></span>  
   
     -   <span data-ttu-id="56b77-180">次のフォルダに、このサンプルの入力フォルダ (EnvInput) と出力フォルダ (EnvOutput) を作成します。</span><span class="sxs-lookup"><span data-stu-id="56b77-180">Creates the input (EnvInput) and output (EnvOutput) folders for this sample in the folder:</span></span>  
   
-         <span data-ttu-id="56b77-181">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\EnvelopeProcessing\\</span><span class="sxs-lookup"><span data-stu-id="56b77-181">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\EnvelopeProcessing\\</span></span>  
+         <span data-ttu-id="56b77-181">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\EnvelopeProcessing\\</span><span class="sxs-lookup"><span data-stu-id="56b77-181">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\EnvelopeProcessing\\</span></span>  
   
     -   <span data-ttu-id="56b77-182">このサンプル用に Visual Studio プロジェクトをコンパイルおよび展開します。</span><span class="sxs-lookup"><span data-stu-id="56b77-182">Compiles and deploys the Visual Studio project for this sample.</span></span>  
   

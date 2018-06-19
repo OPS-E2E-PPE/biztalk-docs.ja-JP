@@ -1,18 +1,18 @@
 ---
-title: "成果物を追加または作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 成果物を追加または作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, artifacts
 - artifacts, creating
 - applications, artifacts
 ms.assetid: fea7487c-b5fa-457f-8c74-a20ea3a6df85
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249490"
 ---
 # <a name="how-to-create-or-add-an-artifact"></a><span data-ttu-id="04a0c-102">アイテムを作成または追加する方法</span><span class="sxs-lookup"><span data-stu-id="04a0c-102">How to Create or Add an Artifact</span></span>
 <span data-ttu-id="04a0c-103">BizTalk アプリケーションを作成した後は、ファイル システムからファイル ベースのアイテム (BizTalk アセンブリ、.NET アセンブリ、スクリプト、証明書など) を追加したり、ルール エンジン データベースからポリシーを追加したりできます。</span><span class="sxs-lookup"><span data-stu-id="04a0c-103">After you create a BizTalk application, you can add file-based artifacts (for example BizTalk assemblies, .NET assemblies, scripts, and certificates) from the file system or add policies from the Rule Engine database.</span></span> <span data-ttu-id="04a0c-104">また、送信ポート、送信ポート グループ、受信場所、および受信ポートをアプリケーション内に作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="04a0c-104">You can also create send ports, send port groups, receive locations, and receive ports within the application.</span></span> <span data-ttu-id="04a0c-105">アイテムを作成または追加すると、そのアイテムは BizTalk 管理データベースに追加されます。</span><span class="sxs-lookup"><span data-stu-id="04a0c-105">Creating or adding artifacts adds them to the BizTalk Management database.</span></span> <span data-ttu-id="04a0c-106">できますし、展開するアプリケーションとそのアイテム 1 つのエンティティとして」の説明に従って[BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)です。</span><span class="sxs-lookup"><span data-stu-id="04a0c-106">You can then deploy the application and its artifacts as a single entity, as described in [Deploying BizTalk Applications](../core/deploying-biztalk-applications.md).</span></span>  

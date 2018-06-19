@@ -1,18 +1,18 @@
 ---
-title: "ポリシーを実行する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーを実行する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Framework, policies
 - Business Rules Framework, code samples
 - Business Rules Framework, programming
 ms.assetid: 90d28d9d-0204-47de-a927-26e284c886e4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253802"
 ---
 # <a name="how-to-execute-policies"></a><span data-ttu-id="9b8a8-102">ポリシーを実行する方法</span><span class="sxs-lookup"><span data-stu-id="9b8a8-102">How to Execute Policies</span></span>
 <span data-ttu-id="9b8a8-103">次のサンプル コードを使用してプログラムからポリシーを実行するルール エンジンを起動する方法を示しています、**ポリシー**クラス内で、 **Microsoft.RuleEngine**アセンブリ。</span><span class="sxs-lookup"><span data-stu-id="9b8a8-103">The following sample code shows how to invoke the rule engine to execute a policy programmatically by using the **Policy** class in the **Microsoft.RuleEngine** assembly.</span></span>  

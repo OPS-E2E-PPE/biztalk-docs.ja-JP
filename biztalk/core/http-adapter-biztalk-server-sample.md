@@ -1,17 +1,17 @@
 ---
-title: "HTTP アダプター (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプター (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: f3bd8172-15c4-42fa-aa17-e4bed9d4aba4
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,12 +20,13 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974488"
 ---
 # <a name="http-adapter-biztalk-server-sample"></a><span data-ttu-id="9398d-102">HTTP アダプター (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="9398d-102">HTTP Adapter (BizTalk Server Sample)</span></span>
 <span data-ttu-id="9398d-103">HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用される要求 - 応答および送信請求 - 応答の通信パラダイムを実装する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9398d-103">The HTTP Adapter sample demonstrates how to implement the request/response and solicit/response communication paradigms used in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="9398d-104">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="9398d-104">Where to Find This Sample</span></span>  
- <span data-ttu-id="9398d-105">*\<パスのサンプル\>*\AdaptersDevelopment\HttpAdapter\\</span><span class="sxs-lookup"><span data-stu-id="9398d-105">*\<Samples Path\>*\AdaptersDevelopment\HttpAdapter\\</span></span>  
+ <span data-ttu-id="9398d-105">*\<パスのサンプル\>* \AdaptersDevelopment\HttpAdapter\\</span><span class="sxs-lookup"><span data-stu-id="9398d-105">*\<Samples Path\>* \AdaptersDevelopment\HttpAdapter\\</span></span>  
   
  <span data-ttu-id="9398d-106">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="9398d-106">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
     > [!IMPORTANT]
     >  <span data-ttu-id="9398d-152">BizTalk を 64 ビット コンピューターにインストールする場合は、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **HTTP.NET.reg**レジストリ ファイル。</span><span class="sxs-lookup"><span data-stu-id="9398d-152">If you install BizTalk on a 64 bit machine, change all instances of the HKEY_CLASSES_ROOT\CLSID\ registry entry to HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ in the **HTTP.NET.reg** registry file.</span></span>  
   
-3.  <span data-ttu-id="9398d-153">**レジストリ エディター**ダイアログ ボックスで、をクリックして**はい**サンプル アダプターをレジストリに追加し、をクリックする**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="9398d-153">In the **Registry Editor** dialog box, click **Yes** to add the sample adapter to the registry, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="9398d-153">**レジストリ エディター**ダイアログ ボックスで、をクリックして**はい**サンプル アダプターをレジストリに追加し、をクリックする **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="9398d-153">In the **Registry Editor** dialog box, click **Yes** to add the sample adapter to the registry, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="9398d-154">Windows エクスプ ローラーを閉じる、**ファイル** メニューのをクリックして**閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="9398d-154">To close Windows Explorer, on the **File** menu, click **Close**.</span></span>  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="9398d-165">[アダプター]</span><span class="sxs-lookup"><span data-stu-id="9398d-165">Adapter</span></span>|<span data-ttu-id="9398d-166">選択**HTTP.NET**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9398d-166">Select **HTTP.NET** from the drop-down list.</span></span>|  
     |<span data-ttu-id="9398d-167">Description</span><span class="sxs-lookup"><span data-stu-id="9398d-167">Description</span></span>|<span data-ttu-id="9398d-168">型**サンプル HTTP.NET アダプター**です。</span><span class="sxs-lookup"><span data-stu-id="9398d-168">Type **Sample HTTP.NET Adapter**.</span></span>|  
   
-5.  <span data-ttu-id="9398d-169">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9398d-169">Click **OK**.</span></span>  
+5.  <span data-ttu-id="9398d-169">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9398d-169">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="9398d-170">これで、BizTalk 管理コンソールの右ウィンドウにあるアダプターの一覧にアダプターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9398d-170">The adapter now appears in the list of adapters in the right window of the BizTalk Administration console.</span></span>  
   
@@ -137,7 +138,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="9398d-178">これで、アプリケーションで HTTP.NET アダプターを使用する準備が整いました。</span><span class="sxs-lookup"><span data-stu-id="9398d-178">The HTTP.NET adapter is now ready to be used by your application.</span></span> <span data-ttu-id="9398d-179">アダプターは、の形式を構成するときに、**仮想ディレクトリ**の形式は、トランスポートのプロパティ:/httpreceive/httpreceive.aspx?optionalQueryString です。</span><span class="sxs-lookup"><span data-stu-id="9398d-179">When configuring the adapter, the format for the **Virtual Directory** transport property is of the form: /httpreceive/httpreceive.aspx?optionalQueryString.</span></span>  
   
 ## <a name="comments"></a><span data-ttu-id="9398d-180">コメント</span><span class="sxs-lookup"><span data-stu-id="9398d-180">Comments</span></span>  
- <span data-ttu-id="9398d-181">提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス\>*\AdaptersDevelopment\BaseAdapter\v1.0.2\\です。</span><span class="sxs-lookup"><span data-stu-id="9398d-181">The HTTP.NET adapter makes use of the BaseAdapter classes provided in *\<Samples Path\>*\AdaptersDevelopment\BaseAdapter\v1.0..2\\.</span></span> <span data-ttu-id="9398d-182">BaseAdapter プロジェクトで提供されるクラスは、アダプターの開発を迅速化するためのものです。</span><span class="sxs-lookup"><span data-stu-id="9398d-182">The classes provided in the BaseAdapter project are intended to accelerate adapter development.</span></span> <span data-ttu-id="9398d-183">提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="9398d-183">Refer to the BaseAdapter code comments for details about the classes provided.</span></span>  
+ <span data-ttu-id="9398d-181">提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス\>* \AdaptersDevelopment\BaseAdapter\v1.0.2\\です。</span><span class="sxs-lookup"><span data-stu-id="9398d-181">The HTTP.NET adapter makes use of the BaseAdapter classes provided in *\<Samples Path\>* \AdaptersDevelopment\BaseAdapter\v1.0..2\\.</span></span> <span data-ttu-id="9398d-182">BaseAdapter プロジェクトで提供されるクラスは、アダプターの開発を迅速化するためのものです。</span><span class="sxs-lookup"><span data-stu-id="9398d-182">The classes provided in the BaseAdapter project are intended to accelerate adapter development.</span></span> <span data-ttu-id="9398d-183">提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="9398d-183">Refer to the BaseAdapter code comments for details about the classes provided.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="9398d-184">参照</span><span class="sxs-lookup"><span data-stu-id="9398d-184">See Also</span></span>  
  <span data-ttu-id="9398d-185">[アダプターの登録](../core/registering-an-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="9398d-185">[Registering an Adapter](../core/registering-an-adapter.md) </span></span>  

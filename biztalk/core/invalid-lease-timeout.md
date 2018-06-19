@@ -1,14 +1,14 @@
 ---
-title: "無効なリース タイムアウト |Microsoft ドキュメント"
-ms.custom: 
+title: 無効なリース タイムアウト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81b7b2a0-e9e6-4165-88bc-f712b5cbacb6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257354"
 ---
 # <a name="invalid-lease-timeout"></a><span data-ttu-id="f6e12-102">リース タイムアウトが無効です</span><span class="sxs-lookup"><span data-stu-id="f6e12-102">Invalid lease timeout</span></span>
 ## <a name="details"></a><span data-ttu-id="f6e12-103">詳細</span><span class="sxs-lookup"><span data-stu-id="f6e12-103">Details</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="f6e12-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="f6e12-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="f6e12-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6e12-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="f6e12-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6e12-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="f6e12-126">ポート**型**一覧で、 **Wcf-nettcp**です。</span><span class="sxs-lookup"><span data-stu-id="f6e12-126">In the port **Type** list, select **WCF-NetTcP**.</span></span>  
   
@@ -54,4 +55,4 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="f6e12-128">**Wcf-nettcp トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。</span><span class="sxs-lookup"><span data-stu-id="f6e12-128">In the **WCF-NetTcP Transport Properties** dialog box, click the **Binding** tab.</span></span>  
   
-9. <span data-ttu-id="f6e12-129">**接続プール設定**セクションで、確認、**リース タイムアウト (hh:mm:ss)**範囲が有効です。</span><span class="sxs-lookup"><span data-stu-id="f6e12-129">In the **Connection Pool settings** section, ensure the **Lease timeout (hh:mm:ss)** range is valid.</span></span> <span data-ttu-id="f6e12-130">使用可能な値は、0 ～ 23 時間、0 ～ 59 分、0 ～ 59 秒です。</span><span class="sxs-lookup"><span data-stu-id="f6e12-130">Acceptable values are 0 to 23 hours, 0 to 59 minutes, and 0 to 59 seconds.</span></span>
+9. <span data-ttu-id="f6e12-129">**接続プール設定**セクションで、確認、**リース タイムアウト (hh:mm:ss)** 範囲が有効です。</span><span class="sxs-lookup"><span data-stu-id="f6e12-129">In the **Connection Pool settings** section, ensure the **Lease timeout (hh:mm:ss)** range is valid.</span></span> <span data-ttu-id="f6e12-130">使用可能な値は、0 ～ 23 時間、0 ～ 59 分、0 ～ 59 秒です。</span><span class="sxs-lookup"><span data-stu-id="f6e12-130">Acceptable values are 0 to 23 hours, 0 to 59 minutes, and 0 to 59 seconds.</span></span>

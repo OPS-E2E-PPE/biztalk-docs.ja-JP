@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションをアップグレードする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションをアップグレードする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef3f032f-28a1-4d52-9d85-d5748c9e9682
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257890"
 ---
 # <a name="how-to-upgrade-an-orchestration"></a><span data-ttu-id="28ff5-102">オーケストレーションをアップグレードする方法</span><span class="sxs-lookup"><span data-stu-id="28ff5-102">How to Upgrade an Orchestration</span></span>
 <span data-ttu-id="28ff5-103">オーケストレーションの実行時間の長いトランザクションを処理またはが、送信請求-応答ポートからの応答を待機しているときに、実稼働環境で実行されているオーケストレーションを更新する方法です。</span><span class="sxs-lookup"><span data-stu-id="28ff5-103">How to update an orchestration that is running in a production environment when the orchestration handles long-running transactions or is waiting for a response from a solicit-response port.</span></span>
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="28ff5-124">クリックして、**アプリケーション**タブがアクティブでない場合、クリックして**アセンブリ情報**です。</span><span class="sxs-lookup"><span data-stu-id="28ff5-124">Click the **Application** tab if it is not already active, and then click **Assembly Information**.</span></span>  
   
-    3.  <span data-ttu-id="28ff5-125">右ペインで、アセンブリ バージョン番号を増分します。</span><span class="sxs-lookup"><span data-stu-id="28ff5-125">In the right pane, increase the assembly version number.</span></span> <span data-ttu-id="28ff5-126">メジャー バージョン番号またはマイナー バージョン番号だけを増分してください。</span><span class="sxs-lookup"><span data-stu-id="28ff5-126">You should increase only the major or minor version number.</span></span> <span data-ttu-id="28ff5-127">メジャー バージョン番号は、シーケンスの最初の桁 (**0**.0.0.0); マイナー バージョン番号は、シーケンス内の 2 番目の数字 (0 **。0**.0.0) です。</span><span class="sxs-lookup"><span data-stu-id="28ff5-127">The major version number is the first digit in the sequence (**0**.0.0.0); the minor version number is the second digit in the sequence (0.**0**.0.0).</span></span> <span data-ttu-id="28ff5-128">BizTalk Server では、0.0 などのシーケンスの後のバージョン番号の変更は認識されません。**0**.0 や 0.0.0 と表示されます**。0**します。</span><span class="sxs-lookup"><span data-stu-id="28ff5-128">BizTalk Server will not recognize a version number change that is later in the sequence, such as 0.0.**0**.0 or 0.0.0.**0**.</span></span>  
+    3.  <span data-ttu-id="28ff5-125">右ペインで、アセンブリ バージョン番号を増分します。</span><span class="sxs-lookup"><span data-stu-id="28ff5-125">In the right pane, increase the assembly version number.</span></span> <span data-ttu-id="28ff5-126">メジャー バージョン番号またはマイナー バージョン番号だけを増分してください。</span><span class="sxs-lookup"><span data-stu-id="28ff5-126">You should increase only the major or minor version number.</span></span> <span data-ttu-id="28ff5-127">メジャー バージョン番号は、シーケンスの最初の桁 (**0**.0.0.0); マイナー バージョン番号は、シーケンス内の 2 番目の数字 (0 **。0**.0.0) です。</span><span class="sxs-lookup"><span data-stu-id="28ff5-127">The major version number is the first digit in the sequence (**0**.0.0.0); the minor version number is the second digit in the sequence (0.**0**.0.0).</span></span> <span data-ttu-id="28ff5-128">BizTalk Server では、0.0 などのシーケンスの後のバージョン番号の変更は認識されません。**0**.0 や 0.0.0 と表示されます **。0**します。</span><span class="sxs-lookup"><span data-stu-id="28ff5-128">BizTalk Server will not recognize a version number change that is later in the sequence, such as 0.0.**0**.0 or 0.0.0.**0**.</span></span>  
   
     4.  <span data-ttu-id="28ff5-129">をクリックして**OK**を閉じる、**アセンブリ情報** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="28ff5-129">Click **OK** to close the **Assembly Information** dialog box.</span></span>  
   

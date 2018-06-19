@@ -1,18 +1,18 @@
 ---
-title: "マスタ シークレットの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: マスタ シークレットの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, managing
 - managing [Master Secret server]
 - SSO, Master Secret server
 ms.assetid: f79e8f3f-c740-4ea1-9589-b42552fcd52d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262178"
 ---
 # <a name="managing-the-master-secret"></a><span data-ttu-id="daa64-102">マスタ シークレットの管理</span><span class="sxs-lookup"><span data-stu-id="daa64-102">Managing the Master Secret</span></span>
 <span data-ttu-id="daa64-103">マスタ シークレットは、SSO データベースに格納されているすべての情報を暗号化するために使用されるキーです。</span><span class="sxs-lookup"><span data-stu-id="daa64-103">The master secret is the key used to encrypt all the information stored in the SSO database.</span></span> <span data-ttu-id="daa64-104">マスタ シークレット サーバーに障害が発生してマスタ シークレットが失われると、SSO データベースに格納されている情報を取得できなくなります。</span><span class="sxs-lookup"><span data-stu-id="daa64-104">If the master secret server fails and you lose the secret, you will not be able to retrieve the information stored in the SSO database.</span></span> <span data-ttu-id="daa64-105">そのため、マスタ シークレットは作成したらすぐにバックアップすることが重要です。</span><span class="sxs-lookup"><span data-stu-id="daa64-105">Therefore, it is very important to back up the master secret as soon as you generate it.</span></span>  
