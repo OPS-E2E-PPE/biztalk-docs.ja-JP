@@ -1,14 +1,14 @@
 ---
-title: "アダプター サービス参照の追加を使用して Visual Studio での Oracle データベースへの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター サービス参照の追加を使用して Visual Studio での Oracle データベースへの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93e56c1f-adee-4976-bc39-bb9b8102145e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215066"
 ---
 # <a name="connect-to-the-oracle-database-in-visual-studio-using-the-add-adapter-service-reference"></a><span data-ttu-id="79b40-102">アダプター サービス参照の追加を使用して Visual Studio での Oracle データベースへの接続します。</span><span class="sxs-lookup"><span data-stu-id="79b40-102">Connect to the Oracle Database in Visual Studio using the Add Adapter Service Reference</span></span>
 <span data-ttu-id="79b40-103">使用して Oracle データベースへの接続に、 [!INCLUDE[adapteroracle_short_md](../../includes/adapteroracle-short-md.md)] .NET プログラミング ソリューションで使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="79b40-103">To connect to the Oracle database using the [!INCLUDE[adapteroracle_short_md](../../includes/adapteroracle-short-md.md)] in a .NET programming solution, you must use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="79b40-104">このトピックでは、使用する方法の説明、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="79b40-104">This topic provides instructions on how to use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
@@ -47,9 +48,9 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="79b40-126">クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="79b40-126">Click the **Binding Properties** tab, and then specify values for the binding properties, if any, required by the operations you want to target.</span></span> <span data-ttu-id="79b40-127">たとえば、POLLINGSTMT 操作の対象とする場合は、設定する必要あります、 **PollingStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="79b40-127">For example, if you want to target the POLLINGSTMT operation, you must set the **PollingStatement** binding property.</span></span> <span data-ttu-id="79b40-128">バインドのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについてお読み](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="79b40-128">For more information about binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).</span></span>
   
-6.  <span data-ttu-id="79b40-129">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="79b40-129">Click **OK**.</span></span>  
+6.  <span data-ttu-id="79b40-129">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="79b40-129">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="79b40-130">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="79b40-130">Click **Connect**.</span></span> <span data-ttu-id="79b40-131">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="79b40-131">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="79b40-130">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="79b40-130">Click **Connect**.</span></span> <span data-ttu-id="79b40-131">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="79b40-131">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="79b40-132">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="79b40-132">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span>  
   

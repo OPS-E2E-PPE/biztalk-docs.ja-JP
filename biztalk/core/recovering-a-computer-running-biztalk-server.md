@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を実行しているコンピューターの回復 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を実行しているコンピューターの回復 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a55af6d6-f11a-46e4-9b8e-0a1ca35998c4
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268818"
 ---
 # <a name="recovering-a-computer-running-biztalk-server"></a><span data-ttu-id="2c1cc-102">BizTalk Server を実行しているコンピュータの復旧</span><span class="sxs-lookup"><span data-stu-id="2c1cc-102">Recovering a Computer Running BizTalk Server</span></span>
 <span data-ttu-id="2c1cc-103">BizTalk Server を実行しているコンピュータを復旧するには、BizTalk Server データベースにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c1cc-103">In order to recover a computer running BizTalk Server, you must be able to access the BizTalk Server databases.</span></span> <span data-ttu-id="2c1cc-104">必要であれば、BizTalk Server データベースを復元します。</span><span class="sxs-lookup"><span data-stu-id="2c1cc-104">If necessary, restore the BizTalk Server databases.</span></span> <span data-ttu-id="2c1cc-105">また、BizTalk Server を実行しているコンピュータを復旧するには、BizTalk Server と必要なすべてのコンポーネントを再インストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c1cc-105">In addition, before you can recover the computer running BizTalk Server, you must reinstall BizTalk Server and all of the prerequisites.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "BAM 動的インフラストラクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 動的インフラストラクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - infrastructure, BAM
 - BAM, infrastructure
 ms.assetid: 88f39438-3213-4f0d-8b8d-e6426c266138
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230450"
 ---
 # <a name="bam-dynamic-infrastructure"></a><span data-ttu-id="5be62-102">BAM 動的インフラストラクチャ</span><span class="sxs-lookup"><span data-stu-id="5be62-102">BAM Dynamic Infrastructure</span></span>
 <span data-ttu-id="5be62-103">SQL Server のテーブル、BAM ビュー、ストアド プロシージャ、および構成され、増分使用して管理される BAM データベース (プライマリ インポート、アーカイブ、スター スキーマ、および分析) でデータ変換サービス (DTS) パッケージの BAM インフラストラクチャの構成します。BAM 定義を展開します。</span><span class="sxs-lookup"><span data-stu-id="5be62-103">The BAM infrastructure consists of SQL Server tables, BAM views, stored procedures, and Data Transformation Services (DTS) packages in the BAM databases (Primary Import, Archive, Star Schema, and Analysis) as configured and managed through incremental deployments of BAM definitions.</span></span> <span data-ttu-id="5be62-104">インフラストラクチャは、ここで、実行時に、イベントは、相関、集計、および、ユーザーによるクエリの利用できるようです。</span><span class="sxs-lookup"><span data-stu-id="5be62-104">The infrastructure is where, at run time, events are correlated, aggregated, and then made available for querying by users.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "Web サービスを公開 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスを公開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
 - BizTalk Server Web Services Publishing Wizard
 ms.assetid: eed0717c-b390-492a-a3b9-ae31024805a2
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268546"
 ---
 # <a name="publishing-web-services"></a><span data-ttu-id="49c69-102">Web サービスの公開</span><span class="sxs-lookup"><span data-stu-id="49c69-102">Publishing Web Services</span></span>
 <span data-ttu-id="49c69-103">Web サービスを公開すると、Microsoft BizTalk Server にメッセージを送信する Web サービスを作成し、そのサービスをオーケストレーションやその他の送信アダプターで使用できます。</span><span class="sxs-lookup"><span data-stu-id="49c69-103">Publishing Web services enables you to create a Web service that can submit messages to Microsoft BizTalk Server for use by orchestrations and other send adapters.</span></span> <span data-ttu-id="49c69-104">公開された Web サービスを作成するには、BizTalk Web サービス公開ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="49c69-104">You create published Web services using the BizTalk Web Services Publishing Wizard.</span></span> <span data-ttu-id="49c69-105">SOAP 送信ハンドラーの構成方法の詳細については、次を参照してください。 [SOAP 送信ハンドラーを構成する方法](../core/how-to-configure-a-soap-send-handler.md)です。</span><span class="sxs-lookup"><span data-stu-id="49c69-105">For information about configuring a SOAP send handler, see [How to Configure a SOAP Send Handler](../core/how-to-configure-a-soap-send-handler.md).</span></span> <span data-ttu-id="49c69-106">SOAP 送信ポートの構成については、次を参照してください。 [SOAP 送信ポートを構成する方法](../core/how-to-configure-a-soap-send-port.md)です。</span><span class="sxs-lookup"><span data-stu-id="49c69-106">For information about configuring a SOAP send port, see [How to Configure a SOAP Send Port](../core/how-to-configure-a-soap-send-port.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "FileAct をインストールし、アダプターの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: FileAct をインストールし、アダプターの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf387d59-373b-4151-9dfd-30c511978862
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224170"
 ---
 # <a name="install-the-fileact-and-interact-adapter"></a><span data-ttu-id="419c0-102">FileAct をインストールし、アダプターの対話</span><span class="sxs-lookup"><span data-stu-id="419c0-102">Install the FileAct and InterAct Adapter</span></span>
 <span data-ttu-id="419c0-103">このセクションをインストールする手順を説明[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]– for SWIFT です。</span><span class="sxs-lookup"><span data-stu-id="419c0-103">This section provides instructions to install [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] – for SWIFT.</span></span> <span data-ttu-id="419c0-104">アダプターをインストールする前に、前提条件のソフトウェアをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="419c0-104">Before you install the adapters, you must install the prerequisite software.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 1. <span data-ttu-id="419c0-118">実行、 **Setup.exe**管理者は、インストールを開始します。</span><span class="sxs-lookup"><span data-stu-id="419c0-118">Run the **Setup.exe** as administrator to start the installation.</span></span>  
   
-2.  <span data-ttu-id="419c0-119">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="419c0-119">Select **Install**.</span></span>  
+2.  <span data-ttu-id="419c0-119">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="419c0-119">Select **Install**.</span></span>  
   
 3.  <span data-ttu-id="419c0-120">ユーザー名と組織名を入力し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="419c0-120">Enter your user name and organization name, and then select **Next**.</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
 6.  <span data-ttu-id="419c0-127">**概要**] ページで、[**インストール**コンポーネントの一覧をインストールします。</span><span class="sxs-lookup"><span data-stu-id="419c0-127">On the **Summary** page, select **Install** to install the listed components.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="419c0-128">ときに**構成ウィザードの実行**がオン (既定)、 **Microsoft BizTalk FileAct およびアダプター構成の対話**を選択するときに、ウィザードが自動的に実行されます**[完了]**.</span><span class="sxs-lookup"><span data-stu-id="419c0-128">When **Run Configuration Wizard** is selected (the default), the **Microsoft BizTalk FileAct and InterAct Adapter Configuration** wizard runs automatically when you select **Finish**.</span></span>  
+    >  <span data-ttu-id="419c0-128">ときに**構成ウィザードの実行**がオン (既定)、 **Microsoft BizTalk FileAct およびアダプター構成の対話**を選択するときに、ウィザードが自動的に実行されます **[完了]**.</span><span class="sxs-lookup"><span data-stu-id="419c0-128">When **Run Configuration Wizard** is selected (the default), the **Microsoft BizTalk FileAct and InterAct Adapter Configuration** wizard runs automatically when you select **Finish**.</span></span>  
   
 7. <span data-ttu-id="419c0-129">インストールが完了したら、選択**完了**です。</span><span class="sxs-lookup"><span data-stu-id="419c0-129">When the installation completes, select **Finish**.</span></span> 
 

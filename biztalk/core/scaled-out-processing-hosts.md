@@ -1,11 +1,11 @@
 ---
-title: "スケール アウトされた処理ホスト |Microsoft ドキュメント"
-ms.custom: 
+title: スケール アウトされた処理ホスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - high availability
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - hosts, scaling
 - clustering
 ms.assetid: c72ce8fc-7593-4700-8398-23d1a20515c3
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269330"
 ---
 # <a name="scaled-out-processing-hosts"></a><span data-ttu-id="5cf6b-102">スケールアウトした処理ホスト</span><span class="sxs-lookup"><span data-stu-id="5cf6b-102">Scaled-Out Processing Hosts</span></span>
 <span data-ttu-id="5cf6b-103">スケールアウトした処理ホストでは、オーケストレーション機能を 2 台以上のホスト コンピューターに分離することで、パフォーマンスの向上と高可用性を実現できます。</span><span class="sxs-lookup"><span data-stu-id="5cf6b-103">A scaled-out processing host improves performance and provides high availability by isolating orchestration functionality onto two or more separate host computers.</span></span> <span data-ttu-id="5cf6b-104">この分離により、複数のコンピューターを処理ホストに追加して冗長性を持たせることができます。</span><span class="sxs-lookup"><span data-stu-id="5cf6b-104">This isolation lets you add multiple computers to a processing host for redundancy.</span></span> <span data-ttu-id="5cf6b-105">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の処理ホストは、各種ビジネス プロセスの調整を行うホスト インスタンスを 1 つ以上実行し、オーケストレーション用にプログラムで使用するオブジェクトのインスタンスを 1 つ作成します。</span><span class="sxs-lookup"><span data-stu-id="5cf6b-105">A processing host in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runs one or more host instances that coordinate various business processes and creates an instance of programmatic objects for orchestrations.</span></span>  

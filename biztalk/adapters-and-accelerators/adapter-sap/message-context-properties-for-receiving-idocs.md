@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217362"
 ---
 # <a name="message-context-properties-for-receiving-idocs"></a><span data-ttu-id="3170b-102">Idoc を受信するためのメッセージ コンテキスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="3170b-102">Message Context Properties for Receiving IDOCs</span></span>
 <span data-ttu-id="3170b-103">Microsoft を使用して、IDOC を受信するため[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のメッセージ コンテキスト プロパティをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="3170b-103">For receiving an IDOC using Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports the following message context properties.</span></span>  

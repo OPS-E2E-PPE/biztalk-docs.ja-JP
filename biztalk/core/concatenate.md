@@ -1,14 +1,14 @@
 ---
-title: "連結 |Microsoft ドキュメント"
-ms.custom: 
+title: 連結 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e21a773d-a9cc-4a6f-b548-46badcd92aab
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231698"
 ---
 # <a name="concatenate"></a><span data-ttu-id="3fb71-102">連結</span><span class="sxs-lookup"><span data-stu-id="3fb71-102">Concatenate</span></span>
 <span data-ttu-id="3fb71-103">スタックから上位 2 項目を削除し、その 2 つの項目を連結して、結果をスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="3fb71-103">Removes the top two items from the stack, concatenates them, and then pushes the result onto the stack.</span></span>  

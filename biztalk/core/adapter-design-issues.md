@@ -1,14 +1,14 @@
 ---
-title: "アダプターのデザインに関する問題 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのデザインに関する問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e5568be-a046-40ff-a94a-eda086457564
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226562"
 ---
 # <a name="adapter-design-issues"></a><span data-ttu-id="5fc29-102">アダプターのデザインの問題点</span><span class="sxs-lookup"><span data-stu-id="5fc29-102">Adapter Design Issues</span></span>
 <span data-ttu-id="5fc29-103">アダプターの構成は、ユーザーがデザイン時に構成を変更すると、シングル サインオン (SSO) データベースに格納されます。</span><span class="sxs-lookup"><span data-stu-id="5fc29-103">Adapter configuration is stored in the Single Sign-On (SSO) database when the user makes configuration changes during design time.</span></span> <span data-ttu-id="5fc29-104">実行時に、メッセージング エンジンはアダプターの構成を取得し、その構成をアダプターに送信します。</span><span class="sxs-lookup"><span data-stu-id="5fc29-104">At run time the Messaging Engine retrieves the adapter's configuration and delivers it to the adapter.</span></span> <span data-ttu-id="5fc29-105">アダプターには、次の 4 種類の構成情報が送信されます。</span><span class="sxs-lookup"><span data-stu-id="5fc29-105">Four types of configuration information are delivered to adapters:</span></span>  
@@ -172,7 +173,7 @@ return int.Parse(s);
 }   
 ```  
   
- <span data-ttu-id="5fc29-143">**実装のヒン ト:**アダプターは一般に使用する必要があります、 **OutboundTransportLocation**メッセージ コンテキスト プロパティをメッセージを送信するアドレスを決定します。</span><span class="sxs-lookup"><span data-stu-id="5fc29-143">**Implementation Tip:** Adapters should in general use the **OutboundTransportLocation** message context property to determine the address to send the message to.</span></span> <span data-ttu-id="5fc29-144">この方法を実行すると、静的送信と動的送信に対する送信を一貫して処理できます。</span><span class="sxs-lookup"><span data-stu-id="5fc29-144">By doing this the adapter can handle transmissions to both static and dynamic sends consistently.</span></span> <span data-ttu-id="5fc29-145">また、この方法を使用すると、実稼動のバインド ファイルのアドレスを簡単に変更できます。</span><span class="sxs-lookup"><span data-stu-id="5fc29-145">This also simplifies the modification of addresses in production binding files.</span></span>  
+ <span data-ttu-id="5fc29-143">**実装のヒン ト:** アダプターは一般に使用する必要があります、 **OutboundTransportLocation**メッセージ コンテキスト プロパティをメッセージを送信するアドレスを決定します。</span><span class="sxs-lookup"><span data-stu-id="5fc29-143">**Implementation Tip:** Adapters should in general use the **OutboundTransportLocation** message context property to determine the address to send the message to.</span></span> <span data-ttu-id="5fc29-144">この方法を実行すると、静的送信と動的送信に対する送信を一貫して処理できます。</span><span class="sxs-lookup"><span data-stu-id="5fc29-144">By doing this the adapter can handle transmissions to both static and dynamic sends consistently.</span></span> <span data-ttu-id="5fc29-145">また、この方法を使用すると、実稼動のバインド ファイルのアドレスを簡単に変更できます。</span><span class="sxs-lookup"><span data-stu-id="5fc29-145">This also simplifies the modification of addresses in production binding files.</span></span>  
   
 ## <a name="xsd"></a><span data-ttu-id="5fc29-146">[XSD]</span><span class="sxs-lookup"><span data-stu-id="5fc29-146">XSD</span></span>  
  <span data-ttu-id="5fc29-147">SDK ファイル アダプターのサンプルに含まれる 4 つの XSD ファイル ハンドル アダプター構成では、主に: ReceiveHandler.xsd、ReceiveLocation.xsd、TransmitLocation.xsd、および TransmitHandler.xsd です。</span><span class="sxs-lookup"><span data-stu-id="5fc29-147">Four XSD files included in the SDK File Adapter sample primarily handle adapter configuration: ReceiveHandler.xsd, ReceiveLocation.xsd, TransmitLocation.xsd, and TransmitHandler.xsd.</span></span>  

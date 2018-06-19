@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションに関する |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションに関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, about orchestrations
 - Orchestration Designer, about Orchestration Designer
 ms.assetid: c0d9a3fb-da87-42cc-9e9e-e2c37232e606
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225138"
 ---
 # <a name="about-orchestrations"></a><span data-ttu-id="24747-102">オーケストレーションについて</span><span class="sxs-lookup"><span data-stu-id="24747-102">About Orchestrations</span></span>
 <span data-ttu-id="24747-103">オーケストレーションは、XLANG/s 言語に基づいて実行可能なビジネス プロセスを示すための、柔軟で強力なツールです。</span><span class="sxs-lookup"><span data-stu-id="24747-103">An orchestration is a flexible, powerful tool for representing an executable business process based on XLANG/s language.</span></span> <span data-ttu-id="24747-104">XLANG/s は、C# の表現機能を備えたメッセージング言語と見なすことができます。</span><span class="sxs-lookup"><span data-stu-id="24747-104">XLANG/s can be viewed as a messaging language with some of the expression capabilities of C#.</span></span> <span data-ttu-id="24747-105">フローの設計、データの解釈および生成、カスタム コードの呼び出しが可能であり、直感的に見てわかる図で、プロセス全体を編成できます。また実行時には、BizTalk オーケストレーション エンジンが、BizTalk オーケストレーション デザイナーで生成された実行可能なビジネス プロセスである XLANG/s ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="24747-105">You can design flow, interpret and generate data, call custom code, and organize the entire process in an intuitive visual drawing, and at run time, the BizTalk Orchestration Engine executes XLANG/s files which are the executable business processes that are produced by BizTalk Orchestration Designer.</span></span>  

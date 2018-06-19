@@ -1,11 +1,11 @@
 ---
-title: "送信ポートおよび送信ポート グループ |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートおよび送信ポート グループ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, states
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - send port groups, about send port groups
 - states, send ports
 ms.assetid: 274bdd27-9098-46a2-8762-8b57bbfc95b8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271826"
 ---
 # <a name="send-ports-and-send-port-groups"></a><span data-ttu-id="a9f1a-102">送信ポートと送信ポート グループ</span><span class="sxs-lookup"><span data-stu-id="a9f1a-102">Send Ports and Send Port Groups</span></span>
 <span data-ttu-id="a9f1a-103">A*送信ポート*Microsoft BizTalk Server がメッセージを送信する先の場所は、または元となる BizTalk Server がメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="a9f1a-103">A *send port* is the location to which Microsoft BizTalk Server sends messages or from which BizTalk Server receives messages.</span></span> <span data-ttu-id="a9f1a-104">また、BizTalk Server は送信ポートの機能を使用して、通信アクションを実装します。</span><span class="sxs-lookup"><span data-stu-id="a9f1a-104">It also provides the technology that BizTalk Server uses to implement the communication action.</span></span> <span data-ttu-id="a9f1a-105">この場所は、ポートの名前により一意に識別されます。</span><span class="sxs-lookup"><span data-stu-id="a9f1a-105">The name of the port uniquely identifies the location.</span></span>  

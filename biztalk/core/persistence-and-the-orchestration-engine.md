@@ -1,18 +1,18 @@
 ---
-title: "永続化し、オーケストレーション エンジン |Microsoft ドキュメント"
-ms.custom: 
+title: 永続化し、オーケストレーション エンジン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestration engine, persistence
 - persistence
 - orchestration engine, serialization
 ms.assetid: 088230ef-13b3-440b-9875-6449f29dd5c6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264930"
 ---
 # <a name="persistence-and-the-orchestration-engine"></a><span data-ttu-id="e9219-102">永続性とオーケストレーション エンジン</span><span class="sxs-lookup"><span data-stu-id="e9219-102">Persistence and the Orchestration Engine</span></span>
 <span data-ttu-id="e9219-103">状態の永続化、その管理および復元は、オーケストレーション エンジンのさまざまな基本的な機能の基盤を形成します。</span><span class="sxs-lookup"><span data-stu-id="e9219-103">State persistence, its management and restoration form the basis of a lot of fundamental functionalities of the orchestration engine.</span></span> <span data-ttu-id="e9219-104">特に、永続化は、以下が正しく機能するために重要です。</span><span class="sxs-lookup"><span data-stu-id="e9219-104">In particular, persistence is critical to the correct functioning of:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "セグメントは、少なくとも 2 つの文字の名前を持つ必要があります |Microsoft ドキュメント"
-ms.custom: 
+title: セグメントは、少なくとも 2 つの文字の名前を持つ必要があります |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f80bbc4a-151a-4094-8640-1944e8812730
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269146"
 ---
 # <a name="segment-should-have-a-name-with-at-least-two-characters"></a><span data-ttu-id="acec2-102">セグメントには 2 文字以上の名前を指定する必要があります</span><span class="sxs-lookup"><span data-stu-id="acec2-102">Segment should have a name with at least two characters</span></span>
 ## <a name="details"></a><span data-ttu-id="acec2-103">詳細</span><span class="sxs-lookup"><span data-stu-id="acec2-103">Details</span></span>  

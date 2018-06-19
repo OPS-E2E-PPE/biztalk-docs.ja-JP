@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter Pack の Siebel アダプターのメタデータのノードの Id |Microsoft ドキュメント"
-description: "メタデータ、検索、取得ノードの種類および Siebel アダプターの BizTalk アダプター パック (BAP) で公開される Siebel コンポーネントで使用される Id"
-ms.custom: 
+title: BizTalk Adapter Pack の Siebel アダプターのメタデータのノードの Id |Microsoft ドキュメント
+description: メタデータ、検索、取得ノードの種類および Siebel アダプターの BizTalk アダプター パック (BAP) で公開される Siebel コンポーネントで使用される Id
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bdffc8d1-0a0a-48d7-b134-5d16acf2c523
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223386"
 ---
 # <a name="node-types-and-ids-for-the-siebel-adapter"></a><span data-ttu-id="d6f9f-103">ノード型との Siebel アダプターの Id</span><span class="sxs-lookup"><span data-stu-id="d6f9f-103">Node types and IDs for the Siebel adapter</span></span>
 
@@ -71,7 +72,7 @@ ms.lasthandoff: 09/20/2017
  <span data-ttu-id="d6f9f-204">有効な検索式の場合は、Siebel のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d6f9f-204">For valid search expressions, refer to the Siebel documentation.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="d6f9f-205">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]のみ、現在選択されているノードの下のレベルでの検索をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d6f9f-205">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] only supports searches at the level below the currently selected node.</span></span>  <span data-ttu-id="d6f9f-206">たとえば、BusinessObjects を選択すると、A * は、サポートされているが、検索、A\*/A\*はありません。</span><span class="sxs-lookup"><span data-stu-id="d6f9f-206">For example, when BusinessObjects is selected, A* is a supported search, but A\*/A\* is not.</span></span>  
+>  <span data-ttu-id="d6f9f-205">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]のみ、現在選択されているノードの下のレベルでの検索をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d6f9f-205">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] only supports searches at the level below the currently selected node.</span></span>  <span data-ttu-id="d6f9f-206">たとえば、BusinessObjects を選択すると、A \* は、サポートされているが、検索、A\*/A\*はありません。</span><span class="sxs-lookup"><span data-stu-id="d6f9f-206">For example, when BusinessObjects is selected, A\* is a supported search, but A\*/A\* is not.</span></span>  
   
 ## <a name="metadata-retrieval-and-node-ids"></a><span data-ttu-id="d6f9f-207">メタデータを取得し、ノード Id</span><span class="sxs-lookup"><span data-stu-id="d6f9f-207">Metadata Retrieval and Node IDs</span></span>  
  <span data-ttu-id="d6f9f-208">Siebel アダプターは、成果物の種類ごとに次の特徴をキャプチャします。</span><span class="sxs-lookup"><span data-stu-id="d6f9f-208">The Siebel adapter captures the following characteristics for each type of artifact.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 4: プロジェクトをビルドします |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: プロジェクトをビルドします |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d88b1407-ecdd-4dbf-90da-02dc4781568c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225666"
 ---
 # <a name="step-4-build-the-project"></a><span data-ttu-id="015f6-102">手順 4: プロジェクトをビルドします</span><span class="sxs-lookup"><span data-stu-id="015f6-102">Step 4: Build the Project</span></span>
 <span data-ttu-id="015f6-103">![4 のステップ 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="015f6-103">![Step 4 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  
   
  <span data-ttu-id="015f6-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="015f6-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="015f6-105">**目標:**この手順では、BizTalk オーケストレーション プロジェクトをコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="015f6-105">**Objective:** In this step, you compile the BizTalk orchestration project.</span></span>  
+ <span data-ttu-id="015f6-105">**目標:** この手順では、BizTalk オーケストレーション プロジェクトをコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="015f6-105">**Objective:** In this step, you compile the BizTalk orchestration project.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="015f6-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="015f6-106">Prerequisites</span></span>  
  <span data-ttu-id="015f6-107">完了する必要があります[手順 3: 応答レコードの挿入と受信する要求メッセージを送信](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)です。</span><span class="sxs-lookup"><span data-stu-id="015f6-107">You must have completed [Step 3: Send the Request Message to Insert Records and Receive a Response](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md).</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="015f6-109">ソリューション エクスプ ローラーで BizTalk プロジェクト名を右クリックし、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="015f6-109">In the Solution Explorer, right-click the BizTalk project name, and then click **Properties**.</span></span>  
   
-2.  <span data-ttu-id="015f6-110">プロパティ ページ] ダイアログ ボックスのツリー ウィンドウで、[展開**共通プロパティ**をクリックして**アセンブリ**、プロパティ リストをクリックし、**アセンブリ キー ファイル**省略記号**[...]**.</span><span class="sxs-lookup"><span data-stu-id="015f6-110">In the property pages dialog box, in the tree pane, expand **Common Properties**, click **Assembly**, and then in the properties list, click the **Assembly Key File** ellipsis **[…]**.</span></span>  
+2.  <span data-ttu-id="015f6-110">プロパティ ページ] ダイアログ ボックスのツリー ウィンドウで、[展開**共通プロパティ**をクリックして**アセンブリ**、プロパティ リストをクリックし、**アセンブリ キー ファイル**省略記号 **[...]**.</span><span class="sxs-lookup"><span data-stu-id="015f6-110">In the property pages dialog box, in the tree pane, expand **Common Properties**, click **Assembly**, and then in the properties list, click the **Assembly Key File** ellipsis **[…]**.</span></span>  
   
 3.  <span data-ttu-id="015f6-111">」の説明に従って作成したアセンブリ キー ファイルへのパスを指定して[SQL アダプターを使用して SQL アプリケーションを作成するための必要条件](../../adapters-and-accelerators/adapter-sql/prerequisites-to-create-sql-applications-using-the-sql-adapter.md)、順にクリック**開く**です。</span><span class="sxs-lookup"><span data-stu-id="015f6-111">Specify a path to the assembly key file you created as described in [Prerequisites to create SQL applications using the SQL adapter](../../adapters-and-accelerators/adapter-sql/prerequisites-to-create-sql-applications-using-the-sql-adapter.md), and then click **Open**.</span></span>  
   
@@ -42,9 +43,9 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="015f6-114">**再展開**プロパティで、 **True**です。</span><span class="sxs-lookup"><span data-stu-id="015f6-114">For the **Redeploy** property, select **True**.</span></span>  
   
-     <span data-ttu-id="015f6-115">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="015f6-115">Click **OK**.</span></span>  
+     <span data-ttu-id="015f6-115">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="015f6-115">Click **OK**.</span></span>  
   
-5.  <span data-ttu-id="015f6-116">**[ファイル]** メニューの **[すべてを保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="015f6-116">On the **File** menu, click **Save All**.</span></span>  
+5.  <span data-ttu-id="015f6-116">**[ファイル]** メニューの **[すべてを保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="015f6-116">On the **File** menu, click **Save All**.</span></span>  
   
 6.  <span data-ttu-id="015f6-117">ソリューション エクスプ ローラーでソリューション名を右クリックし、をクリックして**ソリューションのビルド**です。</span><span class="sxs-lookup"><span data-stu-id="015f6-117">In Solution Explorer, right-click the solution name, and then click **Build Solution**.</span></span>  
   

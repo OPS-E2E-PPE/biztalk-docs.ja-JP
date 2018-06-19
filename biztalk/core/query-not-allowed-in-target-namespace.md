@@ -1,14 +1,14 @@
 ---
-title: "クエリ対象の名前空間は許可されません |Microsoft ドキュメント"
-ms.custom: 
+title: クエリ対象の名前空間は許可されません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d0475fe-2a44-415e-9995-dcb77e0d945d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268610"
 ---
 # <a name="query-not-allowed-in-target-namespace"></a><span data-ttu-id="171fa-102">クエリはターゲットの名前空間に指定できません</span><span class="sxs-lookup"><span data-stu-id="171fa-102">Query not allowed in target namespace</span></span>
 ## <a name="details"></a><span data-ttu-id="171fa-103">詳細</span><span class="sxs-lookup"><span data-stu-id="171fa-103">Details</span></span>  

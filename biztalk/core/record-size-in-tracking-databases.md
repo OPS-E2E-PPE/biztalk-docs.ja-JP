@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268314"
 ---
 # <a name="record-size-in-tracking-databases"></a><span data-ttu-id="6ba41-102">追跡データベースのレコード サイズ</span><span class="sxs-lookup"><span data-stu-id="6ba41-102">Record Size in Tracking Databases</span></span>
 <span data-ttu-id="6ba41-103">次の表は、追跡データベースのさまざまなイベント レコードに予期されるレコード サイズを示しています。この表は、BizTalk のハードウェア要件を計画する際に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6ba41-103">To help you plan your hardware requirements for BizTalk, the following table shows the expected record size for various event records in the Tracking database.</span></span>  

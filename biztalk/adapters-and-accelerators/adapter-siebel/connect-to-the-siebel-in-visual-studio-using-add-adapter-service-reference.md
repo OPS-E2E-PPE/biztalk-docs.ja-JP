@@ -1,14 +1,14 @@
 ---
-title: "ビジュアルの Siebel システムへの接続 Studio を使用してアダプター サービス参照のプラグインを追加 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジュアルの Siebel システムへの接続 Studio を使用してアダプター サービス参照のプラグインを追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d27121be-6407-4bb6-acb5-37dc8a3785c0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222090"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-add-adapter-service-reference-plug-in"></a><span data-ttu-id="ea491-102">ビジュアルの Siebel システムへの接続 Studio を使用してアダプター サービス参照のプラグインを追加</span><span class="sxs-lookup"><span data-stu-id="ea491-102">Connect to the Siebel System in Visual Studio Using Add Adapter Service Reference Plug-in</span></span>
 <span data-ttu-id="ea491-103">使用して Siebel システムへの接続に、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] .NET プログラミング ソリューションで使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ea491-103">To connect to a Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] in a .NET programming solution, you must use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="ea491-104">このトピックでは、使用する方法の説明、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ea491-104">This topic provides instructions on how to use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
@@ -45,9 +46,9 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="ea491-119">クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="ea491-119">Click the **Binding Properties** tab, and then specify values for the binding properties, if any, required by the operations you want to target.</span></span> <span data-ttu-id="ea491-120">バインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Siebel のバインド プロパティ読む](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="ea491-120">For more information about binding properties, see [Read about BizTalk Adapter for Siebel Binding Properties](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span></span>  
   
-7.  <span data-ttu-id="ea491-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea491-121">Click **OK**.</span></span>  
+7.  <span data-ttu-id="ea491-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea491-121">Click **OK**.</span></span>  
   
-8.  <span data-ttu-id="ea491-122">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea491-122">Click **Connect**.</span></span> <span data-ttu-id="ea491-123">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="ea491-123">Once the connection is established, the connection status is shown as **Connected**.</span></span>  
+8.  <span data-ttu-id="ea491-122">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea491-122">Click **Connect**.</span></span> <span data-ttu-id="ea491-123">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="ea491-123">Once the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="ea491-124">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="ea491-124">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span> <span data-ttu-id="ea491-125">グラフィカル ユーザー インターフェイスが同じ、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ea491-125">The graphical user interface is same for the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
   

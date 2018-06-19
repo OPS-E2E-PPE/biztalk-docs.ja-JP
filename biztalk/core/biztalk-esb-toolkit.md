@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 08035518-17ad-44d2-ab06-90d725c95ced
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22231890"
 ---
 # <a name="biztalk-esb-toolkit"></a><span data-ttu-id="fc359-102">BizTalk ESB Toolkit</span><span class="sxs-lookup"><span data-stu-id="fc359-102">BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="fc359-103">Microsoft BizTalk ESB Toolkit は、Microsoft BizTalk Server を使用して疎結合のメッセージング アーキテクチャをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="fc359-103">The Microsoft BizTalk ESB Toolkit uses Microsoft BizTalk Server to support a loosely coupled messaging architecture.</span></span> <span data-ttu-id="fc359-104">BizTalk Server には、メッセージング アプリケーション用の強力なパブリッシュ/サブスクライブ メカニズムが組み込まれています。このメカニズムは、サブスクリプションを作成および入力することによって機能し、サービス指向アーキテクチャ (SOA) アプリケーション向けの、高い効率と拡張性を備えたプラットフォームを提供します。</span><span class="sxs-lookup"><span data-stu-id="fc359-104">BizTalk Server includes a powerful publish/subscribe mechanism for messaging applications that works by creating and filling subscriptions, which provides a highly efficient and scalable platform for service-oriented architecture (SOA) applications.</span></span> <span data-ttu-id="fc359-105">BizTalk ESB Toolkit は、BizTalk Server の機能を拡張して、次のようなアプリケーションの構築に焦点を合わせたさまざまな新機能を提供します。そのアプリケーションとは、スケジュールに基づくサービス呼び出しによる軽量なサービス作成、エンドポイントやマップの動的な解決、Web サービスと WS-\* の統合、障害管理と報告、およびサードパーティの SOA 管理ソリューションとの統合を組み込んだ、堅牢な接続型のサービス指向アプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="fc359-105">The BizTalk ESB Toolkit extends the functionality of BizTalk Server to provide a range of new capabilities focused on building robust, connected, service-oriented applications that incorporate itinerary-based service invocation for lightweight service composition, dynamic resolution of endpoints and maps, Web service and WS-\* integration, fault management and reporting, and integration with third-party SOA governance solutions.</span></span>  

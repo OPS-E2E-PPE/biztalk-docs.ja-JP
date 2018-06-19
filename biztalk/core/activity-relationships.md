@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225234"
 ---
 # <a name="activity-relationships"></a><span data-ttu-id="36057-102">アクティビティの関係</span><span class="sxs-lookup"><span data-stu-id="36057-102">Activity Relationships</span></span>
 <span data-ttu-id="36057-103">アクティビティ リレーションシップは、アクティビティが他の 1 つまたは複数のアクティビティに関連している場合に存在します。</span><span class="sxs-lookup"><span data-stu-id="36057-103">An activity relationship exists when an activity relates to one or more other activities.</span></span> <span data-ttu-id="36057-104">この例として、単一の発注アクティビティに複数の出荷アクティビティが関連している場合や、単一の出荷アクティビティに 2 つの発注アクティビティの項目が含まれている場合などが挙げられます。</span><span class="sxs-lookup"><span data-stu-id="36057-104">An example of this is having multiple Shipment activities related to a single Purchase Order activity, or one Shipment activity containing items from two Purchase Order activities.</span></span>  

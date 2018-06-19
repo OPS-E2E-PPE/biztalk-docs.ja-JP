@@ -1,14 +1,14 @@
 ---
-title: "手順 3: ファイルの受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: ファイルの受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5579375-8c05-4583-bcaa-b483ac275d8a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224562"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario"></a><span data-ttu-id="abd84-102">手順 3: ファイルの受信場所を追加、リアルタイムのシナリオの対話</span><span class="sxs-lookup"><span data-stu-id="abd84-102">Step 3A: Add a FILE Receive Location for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="abd84-103">検証のテスト ファイルを簡単に削除することができます、受信場所を設定します。</span><span class="sxs-lookup"><span data-stu-id="abd84-103">Set up a receive location that enables you to easily drop test files for validation.</span></span> <span data-ttu-id="abd84-104">この場所を使用するには、シナリオをテストします。</span><span class="sxs-lookup"><span data-stu-id="abd84-104">You use this location to test the scenario.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="abd84-116">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="abd84-116">**Receive handler**</span></span>|<span data-ttu-id="abd84-117">ドロップダウン リストから選択**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="abd84-117">From the drop-down list, select **BizTalkServerApplication**.</span></span>|  
     |<span data-ttu-id="abd84-118">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="abd84-118">**Receive pipeline**</span></span>|<span data-ttu-id="abd84-119">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="abd84-119">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-9. <span data-ttu-id="abd84-120">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd84-120">Click **OK**.</span></span>  
+9. <span data-ttu-id="abd84-120">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd84-120">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="abd84-121">参照</span><span class="sxs-lookup"><span data-stu-id="abd84-121">See Also</span></span>  
  <span data-ttu-id="abd84-122">[手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="abd84-122">[Step 3: Create Send and Receive Ports for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span></span>  

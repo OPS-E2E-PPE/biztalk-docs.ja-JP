@@ -1,11 +1,11 @@
 ---
-title: "スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, schema types
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - XML schemas
 - flat file schemas
 ms.assetid: aea772bd-e7ab-448e-ba82-e7c8f38087db
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270090"
 ---
 # <a name="schemas"></a><span data-ttu-id="7d755-102">スキーマ</span><span class="sxs-lookup"><span data-stu-id="7d755-102">Schemas</span></span>
 <span data-ttu-id="7d755-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、処理、およびメッセージの構造体としてのこれらの定義を参照するすべてのメッセージの構造を定義する XML スキーマ定義 (XSD) 言語を使用して*スキーマ*です。</span><span class="sxs-lookup"><span data-stu-id="7d755-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the XML Schema definition (XSD) language to define the structure of all messages that it processes, and refers to these definitions of message structure as *schemas*.</span></span> <span data-ttu-id="7d755-104">ほとんど例外なく、構造化されたメッセージは、アプリケーションの中核を成すものです。</span><span class="sxs-lookup"><span data-stu-id="7d755-104">With few exceptions, structured messages are the core of any application.</span></span> <span data-ttu-id="7d755-105">これらの構造化されたメッセージは、大小さまざまな形式になります。また、多種多様なバックエンド システムおよびデータ ストアを対象とします。</span><span class="sxs-lookup"><span data-stu-id="7d755-105">These structured messages can take any form, large or small, and target a wide array of back-end systems and data stores.</span></span> <span data-ttu-id="7d755-106">構造化されたメッセージを頻繁に作成して使用するシステムは、さまざまな形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="7d755-106">Systems that create and consume the structured messages frequently use different formats.</span></span> <span data-ttu-id="7d755-107">構造化されたメッセージの最も一般的な形式は、XML とフラット ファイルです。</span><span class="sxs-lookup"><span data-stu-id="7d755-107">Two of the most common formats for structured messages are XML and flat files.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 1: vPrev SQL アダプターを使用して BizTalk プロジェクトを変更する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: vPrev SQL アダプターを使用して BizTalk プロジェクトを変更する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 25ad959b-2818-47b8-9a09-3681abb75887
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226426"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-using-the-sql-adapter"></a><span data-ttu-id="f9feb-102">手順 1: vPrev SQL アダプターを使用して BizTalk プロジェクトを変更します。</span><span class="sxs-lookup"><span data-stu-id="f9feb-102">Step 1: Modify the vPrev BizTalk Project using the SQL adapter</span></span>
 <span data-ttu-id="f9feb-103">![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span><span class="sxs-lookup"><span data-stu-id="f9feb-103">![Step 1 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span></span>  
   
  <span data-ttu-id="f9feb-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="f9feb-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="f9feb-105">**目標:**このステップで、次を変更する既存の vPrev BizTalk プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="f9feb-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
+ <span data-ttu-id="f9feb-105">**目標:** このステップで、次を変更する既存の vPrev BizTalk プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="f9feb-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
   
 -   <span data-ttu-id="f9feb-106">WCF ベースを使用して、Customer テーブルに対する挿入操作のメタデータを生成[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-106">Generate metadata for the Insert operation on the Customer table using the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="f9feb-126">BizTalk マッパーは、BizTalk プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="f9feb-126">Add a BizTalk Mapper to the BizTalk project.</span></span> <span data-ttu-id="f9feb-127">BizTalk プロジェクトを右クリックし、**追加**、クリックして**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="f9feb-127">Right-click the BizTalk project, point to **Add**, and then click **New Item**.</span></span>  
   
-         <span data-ttu-id="f9feb-128">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-128">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="f9feb-129">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-129">From the right pane, select **Map**.</span></span> <span data-ttu-id="f9feb-130">など、マップの名前を指定**RequestMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-130">Specify a name for the map, such as **RequestMap.btm**.</span></span> <span data-ttu-id="f9feb-131">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9feb-131">Click **Add**.</span></span>  
+         <span data-ttu-id="f9feb-128">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-128">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="f9feb-129">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-129">From the right pane, select **Map**.</span></span> <span data-ttu-id="f9feb-130">など、マップの名前を指定**RequestMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-130">Specify a name for the map, such as **RequestMap.btm**.</span></span> <span data-ttu-id="f9feb-131">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9feb-131">Click **Add**.</span></span>  
   
     2.  <span data-ttu-id="f9feb-132">送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="f9feb-132">From the Source Schema pane, click **Open Source Schema**.</span></span>  
   

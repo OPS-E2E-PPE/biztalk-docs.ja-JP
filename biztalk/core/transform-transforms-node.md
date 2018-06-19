@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279170"
 ---
 # <a name="transform-transforms-node"></a><span data-ttu-id="dfd6c-102">Transform (Transforms ノード)</span><span class="sxs-lookup"><span data-stu-id="dfd6c-102">Transform (Transforms Node)</span></span>
 <span data-ttu-id="dfd6c-103">バインド ファイルの Transforms ノードの Transform ノードには、バインド ファイルと共にエクスポートされる BizTalk Server マップに関する特定の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="dfd6c-103">The Transform node of the Transforms node of a binding file contains specific information about a BizTalk Server map that is exported with the binding file.</span></span>  

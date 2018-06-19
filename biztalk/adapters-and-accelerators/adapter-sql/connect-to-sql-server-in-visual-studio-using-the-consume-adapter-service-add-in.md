@@ -1,14 +1,14 @@
 ---
-title: "アダプター サービスのアドインを使用して Visual Studio での SQL Server に接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター サービスのアドインを使用して Visual Studio での SQL Server に接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d4fa2bd-ac9e-41b1-8fea-e6a41cbfd1a2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224210"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-the-consume-adapter-service-add-in"></a><span data-ttu-id="d600f-102">アダプター サービスのアドインを使用して Visual Studio での SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="d600f-102">Connect to SQL Server in Visual Studio using the Consume Adapter Service Add-in</span></span>
 <span data-ttu-id="d600f-103">[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]をインストールするときにインストールされている[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="d600f-103">The [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] is installed when you install [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="d600f-104">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]コンピューターにインストールされているすべての WCF カスタム バインドを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="d600f-104">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] loads all the WCF-Custom bindings installed on the computer.</span></span> <span data-ttu-id="d600f-105">WCF ベースを使用して SQL Server に接続する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]BizTalk プロジェクトで使用する必要があります、 **sqlbinding**です。</span><span class="sxs-lookup"><span data-stu-id="d600f-105">To connect to SQL Server using the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] in a BizTalk project, you must use the **sqlbinding**.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="d600f-116">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="d600f-116">**Categories**</span></span>|<span data-ttu-id="d600f-117">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="d600f-117">Click **Consume Adapter Service**.</span></span>|  
         |<span data-ttu-id="d600f-118">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="d600f-118">**Templates**</span></span>|<span data-ttu-id="d600f-119">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="d600f-119">Click **Consume Adapter Service**.</span></span>|  
   
-    4.  <span data-ttu-id="d600f-120">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d600f-120">Click **Add**.</span></span> <span data-ttu-id="d600f-121">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d600f-121">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
+    4.  <span data-ttu-id="d600f-120">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d600f-120">Click **Add**.</span></span> <span data-ttu-id="d600f-121">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d600f-121">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
   
 2.  <span data-ttu-id="d600f-122">**バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="d600f-122">From the **Select a binding** drop-down list, select **sqlBinding**, and then click **Configure**.</span></span>  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="d600f-127">**なし**</span><span class="sxs-lookup"><span data-stu-id="d600f-127">**None**</span></span>|<span data-ttu-id="d600f-128">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="d600f-128">Connect to SQL Server by using Windows authentication.</span></span>|  
     |<span data-ttu-id="d600f-129">**Windows**</span><span class="sxs-lookup"><span data-stu-id="d600f-129">**Windows**</span></span>|<span data-ttu-id="d600f-130">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="d600f-130">Connect to SQL Server by using Windows authentication.</span></span>|  
-    |<span data-ttu-id="d600f-131">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="d600f-131">**Username**</span></span>|<span data-ttu-id="d600f-132">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="d600f-132">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="d600f-133">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="d600f-133">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="d600f-134">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="d600f-134">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="d600f-131">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="d600f-131">**Username**</span></span>|<span data-ttu-id="d600f-132">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="d600f-132">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="d600f-133">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="d600f-133">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="d600f-134">**注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="d600f-134">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
 4.  <span data-ttu-id="d600f-135">クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="d600f-135">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="d600f-136">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="d600f-136">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
@@ -66,9 +67,9 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="d600f-141">クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="d600f-141">Click the **Binding Properties** tab, and then specify values for the binding properties, if any, required by the operations you want to target.</span></span>  
   
-6.  <span data-ttu-id="d600f-142">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d600f-142">Click **OK**.</span></span>  
+6.  <span data-ttu-id="d600f-142">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d600f-142">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="d600f-143">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d600f-143">Click **Connect**.</span></span> <span data-ttu-id="d600f-144">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="d600f-144">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="d600f-143">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d600f-143">Click **Connect**.</span></span> <span data-ttu-id="d600f-144">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="d600f-144">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="d600f-145">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="d600f-145">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span>  
   

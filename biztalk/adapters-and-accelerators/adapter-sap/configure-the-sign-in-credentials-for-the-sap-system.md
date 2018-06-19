@@ -1,14 +1,14 @@
 ---
-title: "SAP システムの資格情報で、サインオンの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP システムの資格情報で、サインオンの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb41106b-b673-4fcf-a56e-6208e3113469
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217810"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sap-system"></a><span data-ttu-id="ca817-102">SAP システムの資格情報で、サインオンを構成します。</span><span class="sxs-lookup"><span data-stu-id="ca817-102">Configure the sign in credentials for the SAP system</span></span>
 <span data-ttu-id="ca817-103">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアント クライアントの資格情報を提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca817-103">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] requires the adapter clients to provide client credentials.</span></span> <span data-ttu-id="ca817-104">アダプターは、SAP システムでユーザーを認証し、接続を確立するために、これらの資格情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="ca817-104">The adapter uses these credentials to authenticate the user with the SAP system and to establish a connection.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="ca817-122">**アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **ユーザー名**ユーザー名と、SAP システムへの接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="ca817-122">In the **Configure Adapter** dialog box, click the **Security** tab and from the **Client credential type** drop-down list box, select **Username** and specify the user name and password to connect to the SAP system.</span></span>  
   
-6.  <span data-ttu-id="ca817-123">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-123">Click **OK**.</span></span>  
+6.  <span data-ttu-id="ca817-123">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-123">Click **OK**.</span></span>  
   
 ### <a name="enter-credentials-using-add-adapter-metadata-wizard"></a><span data-ttu-id="ca817-124">アダプター メタデータの追加ウィザードを使用して資格情報を入力してください。</span><span class="sxs-lookup"><span data-stu-id="ca817-124">Enter credentials using Add Adapter Metadata Wizard</span></span>  
   
@@ -56,20 +57,20 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="ca817-129">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="ca817-129">**Categories**</span></span>|<span data-ttu-id="ca817-130">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="ca817-130">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="ca817-131">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="ca817-131">**Templates**</span></span>|<span data-ttu-id="ca817-132">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="ca817-132">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="ca817-133">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-133">Click **Add**.</span></span> <span data-ttu-id="ca817-134">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ca817-134">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="ca817-133">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-133">Click **Add**.</span></span> <span data-ttu-id="ca817-134">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ca817-134">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="ca817-135">アダプターの追加ウィザードで選択**WCF SAP**です。</span><span class="sxs-lookup"><span data-stu-id="ca817-135">In the Add Adapter Wizard, select **WCF-SAP**.</span></span> <span data-ttu-id="ca817-136">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="ca817-136">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="ca817-137">BizTalk で構成されている WCF SAP ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="ca817-137">If you already have a WCF-SAP port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  <span data-ttu-id="ca817-138">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-138">Click **Next**.</span></span>  
+5.  <span data-ttu-id="ca817-138">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-138">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="ca817-139">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**sapBinding**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="ca817-139">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **sapBinding**, and then click **Configure**.</span></span>  
   
 7.  <span data-ttu-id="ca817-140">**アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **ユーザー名**ユーザー名と、SAP システムへの接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="ca817-140">In the **Configure Adapter** dialog box, click the **Security** tab and from the **Client credential type** drop-down list box, select **Username** and specify the user name and password to connect to the SAP system.</span></span>  
   
-8.  <span data-ttu-id="ca817-141">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-141">Click **OK**.</span></span>  
+8.  <span data-ttu-id="ca817-141">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-141">Click **OK**.</span></span>  
   
 ## <a name="enter-client-credentials-at-run-time"></a><span data-ttu-id="ca817-142">実行時にクライアントの資格情報を入力してください。</span><span class="sxs-lookup"><span data-stu-id="ca817-142">Enter client credentials at run time</span></span>  
  <span data-ttu-id="ca817-143">実行時に、クライアントの資格情報を指定で Wcf-custom または WCF SAP ポートの構成の一部として、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="ca817-143">For run time, you can specify the client credentials as part of the WCF-Custom or WCF-SAP port configuration in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="ca817-155">選択**から資格情報を取得関連アプリケーション**オプション、および関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="ca817-155">Select **Get credentials from affiliate application** option, and specify an affiliate application.</span></span>  
   
-6.  <span data-ttu-id="ca817-156">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-156">Click **OK**.</span></span>  
+6.  <span data-ttu-id="ca817-156">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-156">Click **OK**.</span></span>  
   
 ### <a name="enter-credentials-for-the-wcf-sap-port"></a><span data-ttu-id="ca817-157">WCF SAP ポートの資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="ca817-157">Enter credentials for the WCF-SAP port</span></span>  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="ca817-170">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="ca817-170">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-7.  <span data-ttu-id="ca817-171">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-171">Click **OK**.</span></span>  
+7.  <span data-ttu-id="ca817-171">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ca817-171">Click **OK**.</span></span>  
   
 > [!NOTE]
 >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]<span data-ttu-id="ca817-172">また、エンタープライズ シングル サインオン (SSO) システムをサポートします。</span><span class="sxs-lookup"><span data-stu-id="ca817-172"> also supports the Enterprise Single Sign-On (SSO) system.</span></span> <span data-ttu-id="ca817-173">SSO は、BizTalk のシナリオで使用できるのみ、[!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]は SSO 関連アプリケーションを認識します。</span><span class="sxs-lookup"><span data-stu-id="ca817-173">SSO is only applicable in the BizTalk scenario, in which the [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)] is aware of SSO affiliate applications.</span></span> <span data-ttu-id="ca817-174">BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [SAP アダプターと BizTalk Server によるセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="ca817-174">For more information about security with respect to BizTalk Server, see [Security with the SAP adapter and BizTalk Server](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md).</span></span>

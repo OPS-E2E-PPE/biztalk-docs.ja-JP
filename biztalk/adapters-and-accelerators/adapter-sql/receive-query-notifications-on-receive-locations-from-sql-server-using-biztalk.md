@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL からクエリ通知の複数受信場所を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL からクエリ通知の複数受信場所を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9afbe98e-8901-417c-a807-8db97fd7a24b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223426"
 ---
 # <a name="receive-query-notifications-on-multiple-receive-locations-from-sql-using-biztalk-server"></a><span data-ttu-id="18e86-102">BizTalk Server を使用して SQL からのクエリ通知の複数受信場所の受信します。</span><span class="sxs-lookup"><span data-stu-id="18e86-102">Receive query notifications On Multiple Receive Locations from SQL using BizTalk Server</span></span>
 <span data-ttu-id="18e86-103">同じデータベース内の複数の受信場所が同じテーブル (例: 従業員) のクエリ通知を受信するように構成の異なる BizTalk アプリケーションの一部として作成が存在するシナリオを検討してください。</span><span class="sxs-lookup"><span data-stu-id="18e86-103">Consider a scenario where you have multiple receive locations created as part of different BizTalk applications configured to receive query notifications for the same table (e.g. Employee) in the same database.</span></span> <span data-ttu-id="18e86-104">同じテーブルには、数百のレコードを挿入、すべての受信場所は、通知メッセージを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="18e86-104">If a hundred records are inserted into the same table, all the receive locations will get the notification message.</span></span> <span data-ttu-id="18e86-105">効果的に間で通知を受信する複数の受信場所、このような形でその受信場所のいずれかで、通知が受信した場合、BizTalk アプリケーションから、操作を呼び出すことができます、その他の受信場所、同じ通知を取得できません。</span><span class="sxs-lookup"><span data-stu-id="18e86-105">To effectively receive notifications across multiple receive locations, you can call operations from your BizTalk application in such a way that if a notification is received by one receive location, the other receive location does not get the same notification.</span></span> <span data-ttu-id="18e86-106">そのため、できます。 実質的に複数の場所で受信した負荷分散通知します。</span><span class="sxs-lookup"><span data-stu-id="18e86-106">So, you can effectively load-balance notifications received on multiple locations.</span></span>  
@@ -50,7 +51,7 @@ DELETE FROM Employee WHERE Employee_ID=@var
     |<span data-ttu-id="18e86-125">プロパティのバインド</span><span class="sxs-lookup"><span data-stu-id="18e86-125">Binding Property</span></span>|<span data-ttu-id="18e86-126">値</span><span class="sxs-lookup"><span data-stu-id="18e86-126">Value</span></span>|  
     |----------------------|-----------|  
     |<span data-ttu-id="18e86-127">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="18e86-127">**InboundOperationType**</span></span>|<span data-ttu-id="18e86-128">これを設定して**通知**です。</span><span class="sxs-lookup"><span data-stu-id="18e86-128">Set this to **Notification**.</span></span>|  
-    |<span data-ttu-id="18e86-129">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="18e86-129">**NotificationStatement**</span></span>|<span data-ttu-id="18e86-130">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="18e86-130">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="18e86-131">**注:**通知ステートメントのスキーマ名と共にテーブル名を常に指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="18e86-131">**Note:** For notification statements, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="18e86-132">たとえば、 `dbo.Employee`のようにします。</span><span class="sxs-lookup"><span data-stu-id="18e86-132">For example, `dbo.Employee`.</span></span>|  
+    |<span data-ttu-id="18e86-129">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="18e86-129">**NotificationStatement**</span></span>|<span data-ttu-id="18e86-130">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="18e86-130">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="18e86-131">**注:** 通知ステートメントのスキーマ名と共にテーブル名を常に指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="18e86-131">**Note:** For notification statements, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="18e86-132">たとえば、 `dbo.Employee`のようにします。</span><span class="sxs-lookup"><span data-stu-id="18e86-132">For example, `dbo.Employee`.</span></span>|  
     |<span data-ttu-id="18e86-133">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="18e86-133">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="18e86-134">これを設定して**True**です。</span><span class="sxs-lookup"><span data-stu-id="18e86-134">Set this to **True**.</span></span>|  
   
 6.  <span data-ttu-id="18e86-135">BizTalk アプリケーションを起動します。</span><span class="sxs-lookup"><span data-stu-id="18e86-135">Start the BizTalk application.</span></span>  

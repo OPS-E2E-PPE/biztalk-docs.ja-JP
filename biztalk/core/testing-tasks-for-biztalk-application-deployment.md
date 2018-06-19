@@ -1,18 +1,18 @@
 ---
-title: "BizTalk アプリケーションの展開のテスト作業 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションの展開のテスト作業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [applications], testing
 - testing, deploying
 - testing, tasks
 ms.assetid: fb043755-6d01-4ceb-b189-5a5f286c2b37
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279714"
 ---
 # <a name="testing-tasks-for-biztalk-application-deployment"></a><span data-ttu-id="209f2-102">BizTalk アプリケーション展開のテスト作業</span><span class="sxs-lookup"><span data-stu-id="209f2-102">Testing Tasks for BizTalk Application Deployment</span></span>
 <span data-ttu-id="209f2-103">BizTalk アプリケーションのアイテムをテストおよびデバッグのためテスト環境に展開する手順を次に示します。</span><span class="sxs-lookup"><span data-stu-id="209f2-103">The following are the steps involved in deploying the artifacts of a BizTalk application to a test environment for testing and debugging.</span></span>  

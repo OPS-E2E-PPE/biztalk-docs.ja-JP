@@ -1,14 +1,14 @@
 ---
-title: "WCF チャネル モデルを使用して SQL でテーブルに対して挿入操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して SQL でテーブルに対して挿入操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3df95d78-3a9c-48c0-81ab-1f3206c5e3f7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224410"
 ---
 # <a name="run-an-insert-operation-on-a-table-in-sql-using-the-wcf-channel-model"></a><span data-ttu-id="84900-102">WCF チャネル モデルを使用して SQL でのテーブルに対して挿入操作の実行します。</span><span class="sxs-lookup"><span data-stu-id="84900-102">Run an Insert Operation on a Table in SQL using the WCF Channel Model</span></span>
 <span data-ttu-id="84900-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]一連の SQL Server データベース テーブルおよびビューの基本的な Insert、Select、Update、および削除操作を検出します。</span><span class="sxs-lookup"><span data-stu-id="84900-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] discovers a set of basic Insert, Select, Update, and Delete operations on SQL Server database tables and views.</span></span> <span data-ttu-id="84900-104">これらの操作を使用することができますを実行して単純な SQL Insert、Select、Update、Delete ステートメントで Where 修飾対象のテーブルまたはビューの句。</span><span class="sxs-lookup"><span data-stu-id="84900-104">By using these operations, you can perform simple SQL Insert, Select, Update, and Delete statements qualified by a Where clause on a target table or view.</span></span> <span data-ttu-id="84900-105">このトピックでは、WCF チャネル モデルを使用して SQL Server データベース テーブルに対して挿入操作を実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="84900-105">This topic provides instructions on how to perform an Insert operation on a SQL Server database table using the WCF channel model.</span></span>  

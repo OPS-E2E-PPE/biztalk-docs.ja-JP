@@ -1,11 +1,11 @@
 ---
-title: "アクティビティの状態 |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティの状態 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], status
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - activities [BAM], viewing status
 - queries [BAM], viewing details
 ms.assetid: 986ea044-576d-4e68-8ade-077165eaf735
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224642"
 ---
 # <a name="activity-status"></a><span data-ttu-id="e3846-102">アクティビティの状態</span><span class="sxs-lookup"><span data-stu-id="e3846-102">Activity Status</span></span>
 <span data-ttu-id="e3846-103">結果の詳細の [アクティビティの状態] 領域を使用すると、結果項目のすべての詳細情報を 1 ページで確認できます。</span><span class="sxs-lookup"><span data-stu-id="e3846-103">The Activity Status area of the results details allows you to view all of the details for the results item on a single page.</span></span>  

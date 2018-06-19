@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK を説明するチュートリアル |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を説明するチュートリアル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99002b01-da8a-483e-ada3-1ffbe9cd7357
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226122"
 ---
 # <a name="tutorials-to-learn-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="fcd39-102">WCF LOB Adapter SDK を説明するチュートリアル</span><span class="sxs-lookup"><span data-stu-id="fcd39-102">Tutorials to learn the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="fcd39-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]チュートリアルを使用する方法に関する情報を格納する[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]開発機能豊富な基幹業務アダプタが、企業内でエンタープライズ アプリケーション統合を容易になります。</span><span class="sxs-lookup"><span data-stu-id="fcd39-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] tutorials contain information about how you can use [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] to develop feature-rich line of business adapters to facilitate enterprise application integration within your enterprise.</span></span> <span data-ttu-id="fcd39-104">使用して、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、WCF バインディングで使用できる任意のアプリケーションで使用できる操作および公開するデータを含む[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="fcd39-104">By using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], the operations and data you expose can be consumed by any application that can consume a WCF binding, including [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span>  

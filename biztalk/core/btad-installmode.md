@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231114"
 ---
 # <a name="btadinstallmode"></a><span data-ttu-id="063d3-102">BTAD_InstallMode</span><span class="sxs-lookup"><span data-stu-id="063d3-102">BTAD_InstallMode</span></span>
 <span data-ttu-id="063d3-103">BTAD_InstallMode は、BizTalk アプリケーションの展開のインストール モードを表します。</span><span class="sxs-lookup"><span data-stu-id="063d3-103">BTAD_InstallMode describes the installation mode for BizTalk application deployment.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "Siebel アダプターの SiebelCommand クラス |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターの SiebelCommand クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SiebelCommand
 - Data Provider for Siebel, SiebelCommand
 - SiebelCommand, supported methods and properties
 ms.assetid: 7cba0e47-634b-4878-b480-80fbcbbf5c90
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222362"
 ---
 # <a name="siebelcommand-class-in-the-siebel-adapter"></a><span data-ttu-id="cb6d6-102">Siebel アダプターの SiebelCommand クラス</span><span class="sxs-lookup"><span data-stu-id="cb6d6-102">SiebelCommand class in the Siebel adapter</span></span>
 <span data-ttu-id="cb6d6-103">Siebel システムへの接続を確立した後、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] ADO.NET クライアントによって提供されるコマンドのパラメーターと Siebel コマンド文字列を解析し、コマンドは、WCF 要求メッセージにマップします。</span><span class="sxs-lookup"><span data-stu-id="cb6d6-103">After establishing a connection with the Siebel system, the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] parses the Siebel command strings and command parameters provided by the ADO.NET client and maps the command into a WCF request message.</span></span> <span data-ttu-id="cb6d6-104">[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]への要求を送信、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]し、応答の XML を取得し、アダプターから本文の内容。</span><span class="sxs-lookup"><span data-stu-id="cb6d6-104">The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] then sends the request to the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and obtains the response XML and the body contents from the adapter.</span></span> <span data-ttu-id="cb6d6-105">[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]を使用して、 `XMLDataReader` XML 本文からリレーショナル データを取得します。</span><span class="sxs-lookup"><span data-stu-id="cb6d6-105">The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] then uses the `XMLDataReader` to retrieve the relational data from the XML body.</span></span>  

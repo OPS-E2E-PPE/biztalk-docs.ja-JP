@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL からの複数の受信ポートにメッセージ間でのポーリングの受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL からの複数の受信ポートにメッセージ間でのポーリングの受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21cf4875-1c04-41cf-98f5-d1307987ca55
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223962"
 ---
 # <a name="receive-polling-messages-across-multiple-receive-ports-from-sql-using-biztalk-server"></a><span data-ttu-id="2ca3f-102">BizTalk Server を使用して SQL からの複数の受信ポートにメッセージ間でのポーリングの受信します。</span><span class="sxs-lookup"><span data-stu-id="2ca3f-102">Receive Polling Messages Across Multiple Receive Ports from SQL using BizTalk Server</span></span>
 <span data-ttu-id="2ca3f-103">2 つのポーリング操作を含む BizTalk アプリケーションを作成するシナリオを検討してください。</span><span class="sxs-lookup"><span data-stu-id="2ca3f-103">Consider a scenario where you want to create a BizTalk application that includes two polling operations.</span></span> <span data-ttu-id="2ca3f-104">ポーリングの各操作は、別のテーブルに従業員とお客様同じデータベースからをポーリングします。</span><span class="sxs-lookup"><span data-stu-id="2ca3f-104">Each polling operation polls separate tables, Employee and Customer, from the same database.</span></span> <span data-ttu-id="2ca3f-105">このようなアプリケーションを展開するときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を作成する必要がある管理コンソールで、2 つの受信ポート。</span><span class="sxs-lookup"><span data-stu-id="2ca3f-105">When you deploy such an application in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you will need to create two receive ports.</span></span> <span data-ttu-id="2ca3f-106">各接続 URI の受信ポートになります。</span><span class="sxs-lookup"><span data-stu-id="2ca3f-106">The connection URI for each receive port will be:</span></span>  

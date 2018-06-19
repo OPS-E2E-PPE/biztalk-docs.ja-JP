@@ -1,11 +1,11 @@
 ---
-title: "展開して、BizTalk アプリケーションの管理に必要なアクセス許可 |Microsoft ドキュメント"
-ms.custom: 
+title: 展開して、BizTalk アプリケーションの管理に必要なアクセス許可 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [applications], security
@@ -30,7 +30,7 @@ helpviewer_keywords:
 - assemblies, security
 - managing, security
 ms.assetid: 4a459ff1-661d-403a-99e0-d54b82e008d0
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -39,6 +39,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265546"
 ---
 # <a name="permissions-required-for-deploying-and-managing-a-biztalk-application"></a><span data-ttu-id="1f179-102">BizTalk アプリケーションの展開と管理に必要なアクセス許可</span><span class="sxs-lookup"><span data-stu-id="1f179-102">Permissions Required for Deploying and Managing a BizTalk Application</span></span>
 <span data-ttu-id="1f179-103">アプリケーションの展開には、BizTalk アプリケーションのインポート、エクスポート、およびインストールの他に、Visual Studio から BizTalk アセンブリを展開することが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1f179-103">Application deployment includes deploying BizTalk assemblies from Visual Studio as well as importing, exporting, and installing BizTalk applications.</span></span> <span data-ttu-id="1f179-104">これらの作業を実行するために必要な基本的なアクセス許可は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="1f179-104">The basic permissions you need to perform these tasks are as follows:</span></span>  

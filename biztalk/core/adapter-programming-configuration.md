@@ -1,14 +1,14 @@
 ---
-title: "アダプター プログラミングの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター プログラミングの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e5fef6c-6928-42e7-9a1f-42b5bd769937
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229986"
 ---
 # <a name="adapter-programming-configuration"></a><span data-ttu-id="a91eb-102">アダプター プログラミングの構成</span><span class="sxs-lookup"><span data-stu-id="a91eb-102">Adapter Programming Configuration</span></span>
 <span data-ttu-id="a91eb-103">パスワード同期アダプターは、その設計対象となるシステムによって構成の要件が異なります。</span><span class="sxs-lookup"><span data-stu-id="a91eb-103">Every type of password sync adapter has different configuration requirements, depending on what non-Windows system you design the adapter for.</span></span> <span data-ttu-id="a91eb-104">関連アプリケーションと同様、エンタープライズ シングル サインオンの構成ストアを使用することにより、構成プロパティを集中的かつより安全に保存できます。</span><span class="sxs-lookup"><span data-stu-id="a91eb-104">Like affiliate applications, you can use the Enterprise Single Sign-On configuration store to store configuration properties centrally and more securely.</span></span>  

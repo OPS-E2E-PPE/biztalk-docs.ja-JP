@@ -1,14 +1,14 @@
 ---
-title: "手順 3: InterAct ストアと転送 (するプル) シナリオの動的送信ポートのオーケストレーションを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: InterAct ストアと転送 (するプル) シナリオの動的送信ポートのオーケストレーションを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d5bbfed-f2cb-4caa-91e2-58f0bdb3b3c5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225282"
 ---
 # <a name="step-3a-create-an-orchestration-for-dynamic-send-port-for-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="2fe21-102">手順 3: InterAct ストアと転送 (するプル) シナリオの動的送信ポートのオーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="2fe21-102">Step 3A: Create an orchestration for dynamic send port for InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="2fe21-103">このセクションの手順を開始する前に」の手順を完了する必要があります、[手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポート追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md)セクションです。</span><span class="sxs-lookup"><span data-stu-id="2fe21-103">Before you begin the steps in this section, you must complete the steps in the [Step 2C: Add an INTERACT Send Port for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md) section.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "条件付きループ |Microsoft ドキュメント"
-ms.custom: 
+title: 条件付きループ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Looping functoids, conditional
 - Equal functoids
 - maps, conditional looping
 ms.assetid: eb16efb8-b12c-47d6-afc9-579fc85ea59c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231978"
 ---
 # <a name="conditional-looping"></a><span data-ttu-id="41703-102">条件付きループ</span><span class="sxs-lookup"><span data-stu-id="41703-102">Conditional Looping</span></span>
 <span data-ttu-id="41703-103">条件を追加することができます、**ループ**functoid の出力リンクを**ループ**functoid と**論理**functoid 同じ送信先レコードを送信します。</span><span class="sxs-lookup"><span data-stu-id="41703-103">You can add conditions to a **Looping** functoid by linking the output of a **Looping** functoid and a **Logical** functoid to the same destination record.</span></span> <span data-ttu-id="41703-104">論理条件が満たされている場合のみ、送信先レコードが作成されます。</span><span class="sxs-lookup"><span data-stu-id="41703-104">The destination records are created only when the logical condition is met.</span></span>  

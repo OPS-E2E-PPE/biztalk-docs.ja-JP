@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268402"
 ---
 # <a name="roles-service-node"></a><span data-ttu-id="6564d-102">Roles (Service ノード)</span><span class="sxs-lookup"><span data-stu-id="6564d-102">Roles (Service Node)</span></span>
 <span data-ttu-id="6564d-103">バインド ファイルの Roles ノードは、そのバインド ファイルと共にエクスポートされるサービスにバインドされている各ロールに関する情報を提供するすべての Role ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="6564d-103">The Roles node of a binding file is the parent node for all of the Role nodes which provide specific information about each role bound to a service that is exported with the binding file.</span></span>  

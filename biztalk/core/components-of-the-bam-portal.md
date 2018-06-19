@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231314"
 ---
 # <a name="components-of-the-bam-portal"></a><span data-ttu-id="8bdee-102">BAM ポータルのコンポーネント</span><span class="sxs-lookup"><span data-stu-id="8bdee-102">Components of the BAM Portal</span></span>
 <span data-ttu-id="8bdee-103">BAM ポータルとは、3 つの機能領域から構成されるASP.NET Web ページです。これらの各領域は、ポータルの 3 つのページに対応しています。</span><span class="sxs-lookup"><span data-stu-id="8bdee-103">The BAM portal is an ASP.NET Web page that is divided into three functional areas corresponding to the three pages of the portal.</span></span> <span data-ttu-id="8bdee-104">これらのページは、このセクションで説明します。 アクティビティの検索、集計 ページ、および警告マネージャー ページ。</span><span class="sxs-lookup"><span data-stu-id="8bdee-104">These pages are described in this section: Activity Search page, Aggregations page, and Alert Manager page.</span></span> <span data-ttu-id="8bdee-105">これらのページを使用すると、アクティビティの作成、既存のアクティビティの検索、および既存のアクティビティの変更を実行できます。</span><span class="sxs-lookup"><span data-stu-id="8bdee-105">You can use these pages to create activities, search for existing activities, and modify existing activities.</span></span>  

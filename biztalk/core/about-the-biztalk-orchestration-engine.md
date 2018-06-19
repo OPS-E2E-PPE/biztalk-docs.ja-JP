@@ -1,14 +1,14 @@
 ---
-title: "BizTalk オーケストレーション エンジンに関する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk オーケストレーション エンジンに関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac12012f-6253-4589-84b3-c1bb102ce8dd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224450"
 ---
 # <a name="about-the-biztalk-orchestration-engine"></a><span data-ttu-id="98c16-102">BizTalk オーケストレーション エンジンについて</span><span class="sxs-lookup"><span data-stu-id="98c16-102">About the BizTalk Orchestration Engine</span></span>
 <span data-ttu-id="98c16-103">実行時に、BizTalk オーケストレーション エンジンは、BizTalk オーケストレーション デザイナーによって生成された xlang/s ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="98c16-103">At run time, the BizTalk Orchestration Engine executes XLANG/s files that are produced by BizTalk Orchestration Designer.</span></span> <span data-ttu-id="98c16-104">オーケストレーション デザイナーは、ビジネス プロセスを視覚的にデザインするための機能豊富なグラフィカル ツールです。</span><span class="sxs-lookup"><span data-stu-id="98c16-104">Orchestration Designer is a rich graphical tool for visually designing business processes.</span></span> <span data-ttu-id="98c16-105">オーケストレーション デザイナーは、.odx という拡張子を持つ XLANG/s ファイルを生成します。このファイルのヘッダーには追加のビジュアル情報が格納され、本文にはカスタム属性情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="98c16-105">It generates XLANG/s files that have an .odx extension and contain additional visualization information in their headers and custom attribute information in their bodies.</span></span>  

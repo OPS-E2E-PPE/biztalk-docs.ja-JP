@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265658"
 ---
 # <a name="orchestration-debugger-user-interface"></a><span data-ttu-id="ee3aa-102">オーケストレーション デバッガーのユーザー インターフェイス</span><span class="sxs-lookup"><span data-stu-id="ee3aa-102">Orchestration Debugger User Interface</span></span>
 <span data-ttu-id="ee3aa-103">対話型 (デバッグ) モードでは、オーケストレーション デバッガー ビューに 3 つの領域が含まれています: ウィンドウ、追跡したイベント および オーケストレーション ペインのサービスを提供します。</span><span class="sxs-lookup"><span data-stu-id="ee3aa-103">In interactive (debug) mode, the Orchestration Debugger view contains three areas: Service pane, Tracked Events pane, and the Orchestration pane.</span></span> <span data-ttu-id="ee3aa-104">また、対話モードでは、ビューの下部に変数一覧と変数のプロパティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ee3aa-104">In addition, in interactive mode, the Variable list and Variable properties display across the bottom of the view.</span></span>  

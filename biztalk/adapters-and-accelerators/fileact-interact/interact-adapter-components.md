@@ -1,14 +1,14 @@
 ---
-title: "InterAct アダプター コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: InterAct アダプター コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aad60b57-4cc8-44b9-98f5-e5a2ba3a41e2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224690"
 ---
 # <a name="interact-adapter-components"></a><span data-ttu-id="1f595-102">InterAct アダプター コンポーネント</span><span class="sxs-lookup"><span data-stu-id="1f595-102">InterAct Adapter Components</span></span>
 <span data-ttu-id="1f595-103">InterAct アダプターには、クライアントとサーバー コンポーネントがあります。</span><span class="sxs-lookup"><span data-stu-id="1f595-103">The InterAct adapter has a client and a server component.</span></span> <span data-ttu-id="1f595-104">含まれていること、A4SWIFT の (最小) インストール SWIFT Alliance ゲートウェイ (SAG) と同じコンピューターに Windows Server が実行されている場合に注意してください。</span><span class="sxs-lookup"><span data-stu-id="1f595-104">Note that there may be an A4SWIFT (minimal) installation on the same computer as the SWIFT Alliance Gateway (SAG) if it is running Windows Server.</span></span> <span data-ttu-id="1f595-105">SWIFTNet リンク (SNL) が、SAG から別のコンピューターにする可能性があるにも注意してください。</span><span class="sxs-lookup"><span data-stu-id="1f595-105">Also note that the SWIFTNet Link (SNL) may be on a separate computer from the SAG.</span></span> <span data-ttu-id="1f595-106">プログラミング インターフェイス (API) のホスト アダプター SWIFT によって提供されるリモート アプリケーションは、コンポーネントの場所に関係なく、SAG A4SWIFT から通信するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="1f595-106">The remote application programming interface (API) host adapter provided by SWIFT is used to communicate from A4SWIFT to the SAG, regardless of the location of the components.</span></span>  

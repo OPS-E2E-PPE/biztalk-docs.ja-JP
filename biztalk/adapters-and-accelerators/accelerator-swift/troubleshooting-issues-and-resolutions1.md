@@ -1,17 +1,17 @@
 ---
-title: "トラブルシューティング: 問題と Resolutions1 |Microsoft ドキュメント"
-ms.custom: 
+title: 'トラブルシューティング: 問題と Resolutions1 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting
 - BizTalk Accelerator for SWIFT, troubleshooting
 ms.assetid: dbbca7e3-91b3-4508-af2f-264c1e23d234
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214554"
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a><span data-ttu-id="473f8-102">トラブルシューティング : 問題と解決策</span><span class="sxs-lookup"><span data-stu-id="473f8-102">Troubleshooting: Issues and Resolutions</span></span>
 <span data-ttu-id="473f8-103">このトピックの内容が実行中に関連する問題に対処[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="473f8-103">This topic addresses issues related to running [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="473f8-104">それぞれの問題は、具体的な現象、考えられる原因および解決策について説明します。</span><span class="sxs-lookup"><span data-stu-id="473f8-104">Each issue details a specific symptom, a possible cause, and a solution.</span></span>  

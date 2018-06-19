@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で SQL アプリケーションの開発 |Microsoft ドキュメント"
-description: "WCF, を使用して SQL アダプターのアプリケーションを作成または BizTalk Server と BizTalk アダプター パック (BAP)"
-ms.custom: 
+title: BizTalk Server で SQL アプリケーションの開発 |Microsoft ドキュメント
+description: WCF, を使用して SQL アダプターのアプリケーションを作成または BizTalk Server と BizTalk アダプター パック (BAP)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fac4b5b0-2980-4784-a081-e795654292ed
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224434"
 ---
 # <a name="develop-your-sql-applications"></a><span data-ttu-id="4e1f6-103">SQL アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="4e1f6-103">Develop your SQL applications</span></span>
 

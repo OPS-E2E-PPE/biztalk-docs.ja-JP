@@ -1,17 +1,17 @@
 ---
-title: "外部アセンブリを使用するスクリプト |Microsoft ドキュメント"
-ms.custom: 
+title: 外部アセンブリを使用するスクリプト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Scripting functoids, warnings
 - Scripting functoids, external assemblies
 ms.assetid: 0bdf6adc-91b9-462e-8fd0-9cb48bfa7817
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269202"
 ---
 # <a name="scripting-using-external-assemblies"></a><span data-ttu-id="c0c1a-102">外部アセンブリを使用するスクリプト</span><span class="sxs-lookup"><span data-stu-id="c0c1a-102">Scripting Using External Assemblies</span></span>
 <span data-ttu-id="c0c1a-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でスクリプトを使用する場合は、外部アセンブリを使ったスクリプトをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c0c1a-103">Scripting with external assemblies is the preferred way to use scripting in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="c0c1a-104">外部アセンブリは、いくつかの利点を提供します。</span><span class="sxs-lookup"><span data-stu-id="c0c1a-104">External assemblies provide several advantages:</span></span>  

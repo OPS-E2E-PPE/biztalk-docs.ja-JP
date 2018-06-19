@@ -1,17 +1,17 @@
 ---
-title: "サービスからパイプラインを使用して指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サービスからパイプラインを使用して指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, pipelines
 - pipelines, service solutions
 ms.assetid: 0870fce1-52ec-4ff8-884f-a3199bd7ccbb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287210"
 ---
 # <a name="using-pipelines-from-the-service-oriented-solution"></a><span data-ttu-id="d9db6-102">サービスからパイプラインを使用して指向ソリューション</span><span class="sxs-lookup"><span data-stu-id="d9db6-102">Using Pipelines from the Service Oriented Solution</span></span>
 <span data-ttu-id="d9db6-103">カスタマ サービス オーケストレーションのインライン バージョン (**CustomerService**)、直接 payment tracking システムを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="d9db6-103">The inline version of the customer service orchestration (**CustomerService**) calls the payment tracking system directly.</span></span> <span data-ttu-id="d9db6-104">送信するメッセージを準備して受信するメッセージを処理するため、オーケストレーションは、コードからパイプラインを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="d9db6-104">To prepare the sent message and process the received message, the orchestration calls the pipelines from code.</span></span> <span data-ttu-id="d9db6-105">このため、他のシナリオ バージョンのパイプラインを再利用できます。</span><span class="sxs-lookup"><span data-stu-id="d9db6-105">This allows the reuse of the pipelines from the other scenarios versions.</span></span> <span data-ttu-id="d9db6-106">また、パイプライン ステージのオーケストレーションの切り離しを保存します。</span><span class="sxs-lookup"><span data-stu-id="d9db6-106">It also maintains the decoupling of the orchestration from the pipeline stages.</span></span>  

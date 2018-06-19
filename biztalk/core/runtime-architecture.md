@@ -1,18 +1,18 @@
 ---
-title: "ランタイム アーキテクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: ランタイム アーキテクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - runtime, architecture
 - architecture, runtime
 - runtime
 ms.assetid: feff9a84-f19b-44c9-8d05-8e6015bb1ef9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268994"
 ---
 # <a name="runtime-architecture"></a><span data-ttu-id="03cc9-102">ランタイム アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="03cc9-102">Runtime Architecture</span></span>
 <span data-ttu-id="03cc9-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のさまざまなコンポーネントに関する詳細な情報を確認する前に、コンポーネントが製品の全体的なアーキテクチャにどのように組み込まれているかを理解しておくことが重要です。</span><span class="sxs-lookup"><span data-stu-id="03cc9-103">Before reviewing more detailed information about the various components in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], it is important that you have an understanding of how the components fit into the overall architecture of the product.</span></span> <span data-ttu-id="03cc9-104">BizTalk Server ランタイムは、メッセージがシステムに公開され、次に 1 つまたは複数のアクティブなサブスクライバーによって受信される公開/サブスクライブ アーキテクチャに基づいて構築されています。</span><span class="sxs-lookup"><span data-stu-id="03cc9-104">The BizTalk Server runtime is built on a publish/subscribe architecture in which a message is published into the system, and then received by one or more active subscribers.</span></span> <span data-ttu-id="03cc9-105">このアーキテクチャの異なる特性がありますが、BizTalk Server で実装されるモデルとも呼ばれます*コンテンツ ベースのパブリッシュ/サブスクライブ*です。</span><span class="sxs-lookup"><span data-stu-id="03cc9-105">Different flavors of this architecture exist, but the model implemented in BizTalk Server is often called *content-based publish/subscribe*.</span></span>  

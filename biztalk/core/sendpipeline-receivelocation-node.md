@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269866"
 ---
 # <a name="sendpipeline-receivelocation-node"></a><span data-ttu-id="2648f-102">SendPipeline (ReceiveLocation ノード)</span><span class="sxs-lookup"><span data-stu-id="2648f-102">SendPipeline (ReceiveLocation Node)</span></span>
 <span data-ttu-id="2648f-103">バインド ファイルの ReceiveLocation ノードの SendPipeline ノードでは、バインド ファイルと共にエクスポートされる受信場所にバインドされる送信パイプラインに関する特定の情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="2648f-103">The SendPipeline node of the ReceiveLocation node of a binding file provides specific information about the send pipeline bound to a receive location that is exported with the binding file.</span></span>  

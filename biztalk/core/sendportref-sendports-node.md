@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269962"
 ---
 # <a name="sendportref-sendports-node"></a><span data-ttu-id="c6ffe-102">SendPortRef (SendPorts ノード)</span><span class="sxs-lookup"><span data-stu-id="c6ffe-102">SendPortRef (SendPorts Node)</span></span>
 <span data-ttu-id="c6ffe-103">バインド ファイルの SendPorts ノードの SendPortRef ノードには、同報リストによって参照される送信ポートの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="c6ffe-103">The SendPortRef node of the SendPorts node of a binding file specifies the name of a send port referenced by a distribution list.</span></span>  

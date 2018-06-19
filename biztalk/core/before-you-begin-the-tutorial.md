@@ -1,14 +1,14 @@
 ---
-title: "このチュートリアルを開始する前に |Microsoft ドキュメント"
-ms.custom: 
+title: このチュートリアルを開始する前に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b77a49ba-9e15-4754-b8b9-7b7af6e6db0f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230778"
 ---
 # <a name="before-you-begin-the-tutorial"></a><span data-ttu-id="4a0dc-102">このチュートリアルを開始する前に</span><span class="sxs-lookup"><span data-stu-id="4a0dc-102">Before You Begin the Tutorial</span></span>
 <span data-ttu-id="4a0dc-103">チュートリアルを開始する前に、BizTalk Server を 1 つのコンピューターにインストールし、チュートリアルのファイルをインストールしてください。</span><span class="sxs-lookup"><span data-stu-id="4a0dc-103">Before you begin the tutorial, you must install BizTalk Server on a single computer, and also install the tutorial files.</span></span> <span data-ttu-id="4a0dc-104">チュートリアルの説明は、複数コンピューター環境向けには書かれていません。</span><span class="sxs-lookup"><span data-stu-id="4a0dc-104">The tutorial does not provide instructions for a multicomputer environment.</span></span> <span data-ttu-id="4a0dc-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の分散環境で作業する場合は、そのことを考慮して、チュートリアルのステップを実行してください。</span><span class="sxs-lookup"><span data-stu-id="4a0dc-105">If you are working in a distributed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment, you must take that into consideration when you perform the steps in the tutorials.</span></span>  

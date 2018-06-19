@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269554"
 ---
 # <a name="sample-architectures-for-small-amp-medium-sized-companies"></a><span data-ttu-id="4c9db-102">サンプル アーキテクチャの小規模&amp;中規模企業</span><span class="sxs-lookup"><span data-stu-id="4c9db-102">Sample Architectures for Small &amp; Medium-Sized Companies</span></span>
 <span data-ttu-id="4c9db-103">このセクションでは、中小企業の資産を保護する必要がある場合に、Microsoft BizTalk Server を展開するためのサンプル アーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4c9db-103">This section provides a sample architecture to deploy Microsoft BizTalk Server when you want to help to protect the assets in a small or medium-sized company.</span></span> <span data-ttu-id="4c9db-104">これらのアーキテクチャでは、重層的な防御とサービスの分離を使用して、攻撃の影響を最小限に抑えていますが、ハードウェア、ソフトウェア、および人材の数量は大企業で一般的に必要であるとされる数量を想定しています。</span><span class="sxs-lookup"><span data-stu-id="4c9db-104">While these architectures encourage defense in depth and separation of services to minimize the impact of an attack, they assume quantities of hardware, software, and human resources that are generally available to large companies.</span></span>  

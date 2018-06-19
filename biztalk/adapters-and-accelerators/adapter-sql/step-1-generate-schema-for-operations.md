@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 操作のスキーマを生成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 操作のスキーマを生成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63218a5e-9af2-40af-9992-ac5e204d2832
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224962"
 ---
 # <a name="step-1-generate-schema-for-operations"></a><span data-ttu-id="b2002-102">手順 1: 操作のスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="b2002-102">Step 1: Generate Schema for Operations</span></span>
 <span data-ttu-id="b2002-103">![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")</span><span class="sxs-lookup"><span data-stu-id="b2002-103">![Step 1 of 2](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")</span></span>  
   
  <span data-ttu-id="b2002-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="b2002-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="b2002-105">**目標:**で SQL Server データベースを使用して、実行する操作のスキーマを生成するこの手順で、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b2002-105">**Objective:** In this step, you generate schemas for the operations that you perform on the SQL Server database using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="b2002-106">このチュートリアルでは、次のスキーマを生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2002-106">For this tutorial, you must generate schema for the following:</span></span>  
+ <span data-ttu-id="b2002-105">**目標:** で SQL Server データベースを使用して、実行する操作のスキーマを生成するこの手順で、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b2002-105">**Objective:** In this step, you generate schemas for the operations that you perform on the SQL Server database using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="b2002-106">このチュートリアルでは、次のスキーマを生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2002-106">For this tutorial, you must generate schema for the following:</span></span>  
   
 -   <span data-ttu-id="b2002-107">**通知**(受信操作)。</span><span class="sxs-lookup"><span data-stu-id="b2002-107">**Notification** (inbound operation).</span></span>  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="b2002-121">スキーマを生成、**通知**操作を受信します。</span><span class="sxs-lookup"><span data-stu-id="b2002-121">Generate schema for the **Notification** inbound operation.</span></span>  
   
-    1.  <span data-ttu-id="b2002-122">ADAPTER_SAMPLES データベースに接続した後、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]から、**選択コントラクト型**一覧で、選択**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="b2002-122">After connecting to the ADAPTER_SAMPLES database, in the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], from the **Select contract type** list, select **Service (Inbound operations)**.</span></span>  
+    1.  <span data-ttu-id="b2002-122">ADAPTER_SAMPLES データベースに接続した後、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]から、**選択コントラクト型**一覧で、選択**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="b2002-122">After connecting to the ADAPTER_SAMPLES database, in the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], from the **Select contract type** list, select **Service (Inbound operations)**.</span></span>  
   
     2.  <span data-ttu-id="b2002-123">**カテゴリを選択**ボックスで、ルート ノードをクリックして (**/**)。</span><span class="sxs-lookup"><span data-stu-id="b2002-123">From the **Select a category** box, click the root node (**/**).</span></span>  
   
-    3.  <span data-ttu-id="b2002-124">**利用可能なカテゴリと操作**ボックスで、**通知** をクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="b2002-124">From the **Available categories and operations** box, select **Notification** and click **Add**.</span></span> <span data-ttu-id="b2002-125">**通知**操作が表示されます、**カテゴリと操作を追加**ボックス。</span><span class="sxs-lookup"><span data-stu-id="b2002-125">The **Notification** operation is now displayed in the **Added categories and operations** box.</span></span> <span data-ttu-id="b2002-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2002-126">Click **OK**.</span></span>  
+    3.  <span data-ttu-id="b2002-124">**利用可能なカテゴリと操作**ボックスで、**通知** をクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="b2002-124">From the **Available categories and operations** box, select **Notification** and click **Add**.</span></span> <span data-ttu-id="b2002-125">**通知**操作が表示されます、**カテゴリと操作を追加**ボックス。</span><span class="sxs-lookup"><span data-stu-id="b2002-125">The **Notification** operation is now displayed in the **Added categories and operations** box.</span></span> <span data-ttu-id="b2002-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2002-126">Click **OK**.</span></span>  
   
 4.  <span data-ttu-id="b2002-127">スキーマを生成、 **UPDATE_EMPLOYEE**でストアド プロシージャと挿入操作**Purchase_Order**テーブル。</span><span class="sxs-lookup"><span data-stu-id="b2002-127">Generate schema for the **UPDATE_EMPLOYEE** stored procedure and the Insert operation on **Purchase_Order** table.</span></span>  
   
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="b2002-129">同時に受信および送信操作のスキーマを生成することはできません。</span><span class="sxs-lookup"><span data-stu-id="b2002-129">You cannot generate schema for inbound and outbound operations at the same time.</span></span> <span data-ttu-id="b2002-130">そのため、手順 3. をクリックした後**OK**のスキーマを生成する**通知**操作、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を閉じます。</span><span class="sxs-lookup"><span data-stu-id="b2002-130">Hence, in step 3, after you click **OK** to generate the schema for **Notification** operation, the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] closes.</span></span> <span data-ttu-id="b2002-131">送信操作のスキーマを生成する SQL Server データベースに再接続する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2002-131">You must reconnect to the SQL Server database to generate schema for outbound operations.</span></span>  
   
-    2.  <span data-ttu-id="b2002-132">**選択コントラクト型**一覧で、選択**クライアント (送信操作)**です。</span><span class="sxs-lookup"><span data-stu-id="b2002-132">From the **Select contract type** list, select **Client (Outbound operations)**.</span></span>  
+    2.  <span data-ttu-id="b2002-132">**選択コントラクト型**一覧で、選択**クライアント (送信操作)** です。</span><span class="sxs-lookup"><span data-stu-id="b2002-132">From the **Select contract type** list, select **Client (Outbound operations)**.</span></span>  
   
     3.  <span data-ttu-id="b2002-133">**カテゴリを選択**ボックスで、クリックして、 **Strongly-Typed プロシージャ**ノード。</span><span class="sxs-lookup"><span data-stu-id="b2002-133">From the **Select a category** box, click the **Strongly-Typed Procedures** node.</span></span> <span data-ttu-id="b2002-134">**利用可能なカテゴリと操作**s ボックスで、 **UPDATE_EMPLOYEE**、クリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="b2002-134">From the **Available categories and operation**s box, select **UPDATE_EMPLOYEE**, and then click **Add**.</span></span>  
   

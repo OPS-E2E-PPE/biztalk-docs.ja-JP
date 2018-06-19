@@ -1,14 +1,14 @@
 ---
-title: "算術演算子 |Microsoft ドキュメント"
-ms.custom: 
+title: 算術演算子 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d73e153c-aac1-4cea-92d8-af4a1bea6e6a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230522"
 ---
 # <a name="arithmetic-operators"></a><span data-ttu-id="99584-102">算術演算子</span><span class="sxs-lookup"><span data-stu-id="99584-102">Arithmetic Operators</span></span>
 <span data-ttu-id="99584-103">ビジネス ルール フレームワークでは、ビジネス ルールの作成時に、加算、減算、乗算、除算、剰余の各演算子を使用できます。</span><span class="sxs-lookup"><span data-stu-id="99584-103">The Business Rules Framework supports using the addition, subtraction, multiplication, division, and remainder (modulo) operators in creating business rules.</span></span> <span data-ttu-id="99584-104">次の表に、算術演算子を示します。</span><span class="sxs-lookup"><span data-stu-id="99584-104">The following table describes the arithmetic operators.</span></span>  

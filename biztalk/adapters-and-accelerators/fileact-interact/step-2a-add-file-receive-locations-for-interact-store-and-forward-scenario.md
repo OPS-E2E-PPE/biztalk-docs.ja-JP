@@ -1,14 +1,14 @@
 ---
-title: "手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acdc30e1-d80c-40bf-864d-bf136c77a2b8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225274"
 ---
 # <a name="step-2a-add-file-receive-locations-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="07340-102">手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加</span><span class="sxs-lookup"><span data-stu-id="07340-102">Step 2A: Add FILE Receive Locations for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="07340-103">この手順を開始する前に行う必要があります[手順 2: InterAct ストアと転送シナリオ Paramfile に SWIFTNet 構成を追加](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md)です。</span><span class="sxs-lookup"><span data-stu-id="07340-103">Before you begin this step, you must complete [Step 2: Add SWIFTNet Configuration to the Paramfile for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md).</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="07340-115">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="07340-115">**Receive handler**</span></span>|<span data-ttu-id="07340-116">ドロップダウン リストから選択**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="07340-116">From the drop-down list, select **BizTalkServerApplication**.</span></span>|  
     |<span data-ttu-id="07340-117">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="07340-117">**Receive pipeline**</span></span>|<span data-ttu-id="07340-118">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="07340-118">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-9. <span data-ttu-id="07340-119">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="07340-119">Click **OK**.</span></span>  
+9. <span data-ttu-id="07340-119">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="07340-119">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="07340-120">手順 1. と 2. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="07340-120">Repeat steps 1 and 2.</span></span>  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="07340-129">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="07340-129">**Receive handler**</span></span>|<span data-ttu-id="07340-130">ドロップダウン リストから選択**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="07340-130">From the drop-down list, select **BizTalkServerApplication**.</span></span>|  
     |<span data-ttu-id="07340-131">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="07340-131">**Receive pipeline**</span></span>|<span data-ttu-id="07340-132">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="07340-132">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-17. <span data-ttu-id="07340-133">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="07340-133">Click **OK**.</span></span>  
+17. <span data-ttu-id="07340-133">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="07340-133">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="07340-134">参照</span><span class="sxs-lookup"><span data-stu-id="07340-134">See Also</span></span>  
  <span data-ttu-id="07340-135">[手順 2 b: InterAct ストア アンド フォワード (プル) シナリオの Sw:HandleRequest メッセージをキャプチャするファイルの送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md) </span><span class="sxs-lookup"><span data-stu-id="07340-135">[Step 2B: Add FILE Send Ports to Capture the Sw:HandleRequest Message for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md) </span></span>  

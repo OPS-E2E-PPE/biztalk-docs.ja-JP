@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215938"
 ---
 # <a name="swift-disassembler-configuration-properties"></a><span data-ttu-id="9e236-102">SWIFT 逆アセンブラーの構成プロパティ</span><span class="sxs-lookup"><span data-stu-id="9e236-102">SWIFT Disassembler Configuration Properties</span></span>
 <span data-ttu-id="9e236-103">次の表は、SWIFT 逆アセンブラー (DASM) プロパティ、説明、データ型と値の範囲を提供します。</span><span class="sxs-lookup"><span data-stu-id="9e236-103">The following table provides SWIFT disassembler (DASM) properties, descriptions, data types, and value ranges.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "Siebel を SQL Server Management Studio を使用してデータをインポート |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel を SQL Server Management Studio を使用してデータをインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SQL Server Management Studio, importing data by using
 - how to, import data by using SQL Server Management Studio
 ms.assetid: 67da7f7b-37ea-4a31-89ef-a9f6974ff976
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223722"
 ---
 # <a name="import-siebel-data-using-sql-server-management-studio"></a><span data-ttu-id="b4b63-102">Siebel を SQL Server Management Studio を使用してデータをインポートします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-102">Import Siebel Data Using SQL Server Management Studio</span></span>
 <span data-ttu-id="b4b63-103">このセクションでは、SQL Server Management Studio を使用して、Siebel システムから SQL Server データベースにデータをインポートする方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="b4b63-103">This section provides information about how to use SQL Server Management Studio to import data from a Siebel system into a SQL Server database.</span></span> <span data-ttu-id="b4b63-104">また、作成し、このデータをインポートする SSIS パッケージを実行する方法の手順についても提供します。</span><span class="sxs-lookup"><span data-stu-id="b4b63-104">It also provides instructions on how to create and execute an SSIS package to import this data.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="b4b63-119">**データ ソースを選択** ダイアログ ボックスから、**データソース**ドロップダウン リストで、 **.NET Framework Data Provider 用 Siebel eBusiness Applications**です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-119">In the **Choose a Data Source** dialog box, from the **Data Source** drop-down list, select **.NET Framework Data Provider for Siebel eBusiness Applications**.</span></span> <span data-ttu-id="b4b63-120">さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。</span><span class="sxs-lookup"><span data-stu-id="b4b63-120">Specify values for the different connection properties for the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] connection string.</span></span> <span data-ttu-id="b4b63-121">接続文字列プロパティの詳細については、次を参照してください。 [Siebel 接続文字列のデータ プロバイダーのプロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-121">For more information about the connection string properties, see [Data provider properties for the Siebel connection string](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md).</span></span>  
   
-     <span data-ttu-id="b4b63-122">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-122">Click **Next**.</span></span>  
+     <span data-ttu-id="b4b63-122">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-122">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="b4b63-123">**先選択** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b4b63-123">In the **Choose a Destination** dialog box:</span></span>  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="b4b63-127">**データベース**ドロップダウン リストで、Siebel テーブルをインポートするデータベースを選択します。</span><span class="sxs-lookup"><span data-stu-id="b4b63-127">From the **Database** drop-down list, select the database to which you want to import the Siebel table.</span></span>  
   
-    5.  <span data-ttu-id="b4b63-128">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-128">Click **Next**.</span></span>  
+    5.  <span data-ttu-id="b4b63-128">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-128">Click **Next**.</span></span>  
   
 7.  <span data-ttu-id="b4b63-129">**テーブルのコピーを指定またはクエリ** ダイアログ ボックスで、選択、**を転送するデータを指定するクエリを記述**オプション。</span><span class="sxs-lookup"><span data-stu-id="b4b63-129">In the **Specify Table Copy or Query** dialog box, choose the **Write a query to specify the data to transfer** option.</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="b4b63-144">Nullable、サイズ、有効桁数、小数点以下桁数などその他のフィールドの属性を変更します。</span><span class="sxs-lookup"><span data-stu-id="b4b63-144">Change other field attributes such as nullable, size, precision, and scale.</span></span>  
   
-         <span data-ttu-id="b4b63-145">終了したら **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-145">When you are finished, click **OK**.</span></span>  
+         <span data-ttu-id="b4b63-145">終了したら **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-145">When you are finished, click **OK**.</span></span>  
   
 12. <span data-ttu-id="b4b63-146">**ソース テーブルおよびビュー**ダイアログ ボックスで、をクリックして**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-146">In the **Select Source Tables and Views** dialog box, click **Next**.</span></span>  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="b4b63-151">**パッケージの保護レベル**-ドロップダウン リスト、選択、保護は、パッケージ レベルし、資格情報を指定必要な場所です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-151">From the **Package protection level** drop-down list, select a protection level for the package and specify credentials where required.</span></span>  
   
-    -   <span data-ttu-id="b4b63-152">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-152">Click **Next**.</span></span>  
+    -   <span data-ttu-id="b4b63-152">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-152">Click **Next**.</span></span>  
   
      <span data-ttu-id="b4b63-153">パッケージを保存することを選択する場合は、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="b4b63-153">If you chose to save the package, proceed to the next step.</span></span> <span data-ttu-id="b4b63-154">それ以外の場合、手順 15 に進みます。</span><span class="sxs-lookup"><span data-stu-id="b4b63-154">Otherwise, skip to step 15.</span></span>  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="b4b63-159">ファイル システムにパッケージを保存する場合は、指定のファイルの場所と名前、**ファイル名**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="b4b63-159">If you chose to save the package to the file system, specify the name and location of the file in the **File name** text box.</span></span>  
   
-         <span data-ttu-id="b4b63-160">終了したら **[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-160">When you are finished, click **Next**.</span></span>  
+         <span data-ttu-id="b4b63-160">終了したら **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-160">When you are finished, click **Next**.</span></span>  
   
 15. <span data-ttu-id="b4b63-161">**ウィザードを完了** ダイアログ ボックスで、ウィザードを実行し、をクリックする操作の概要を確認**完了**です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-161">In the **Complete the Wizard** dialog box, review the summary of actions that the wizard will perform, and then click **Finish**.</span></span>  
   
@@ -123,11 +124,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="b4b63-170">**Windows エクスプ ローラー**パッケージを保存した場所に移動し、パッケージをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-170">From **Windows Explorer**, navigate to the location where you saved the package, and double-click the package.</span></span>  
   
-2.  <span data-ttu-id="b4b63-171">**[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-171">In the **Execute Package Utility** dialog box, click **Execute**.</span></span> <span data-ttu-id="b4b63-172">**パッケージ実行の進行状況** ダイアログ ボックスには、さまざまなタスクの進行状況が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b4b63-172">The **Package Execution Progress** dialog box displays the progress of the different tasks.</span></span>  
+2.  <span data-ttu-id="b4b63-171">**[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-171">In the **Execute Package Utility** dialog box, click **Execute**.</span></span> <span data-ttu-id="b4b63-172">**パッケージ実行の進行状況** ダイアログ ボックスには、さまざまなタスクの進行状況が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b4b63-172">The **Package Execution Progress** dialog box displays the progress of the different tasks.</span></span>  
   
 3.  <span data-ttu-id="b4b63-173">すべてのタスクが正常に実行される、クリックして**閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-173">After all the tasks are successfully executed, click **Close**.</span></span>  
   
-4.  <span data-ttu-id="b4b63-174">**[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[閉じる]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-174">In the **Execute Package Utility** dialog box, click **Close**.</span></span>  
+4.  <span data-ttu-id="b4b63-174">**[パッケージ実行ユーティリティ]** ダイアログ ボックスで **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4b63-174">In the **Execute Package Utility** dialog box, click **Close**.</span></span>  
   
  <span data-ttu-id="b4b63-175">パッケージの実行に関する詳細についてでパッケージの実行」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-175">For more information about running packages, see "Running Packages" at [http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972).</span></span> <span data-ttu-id="b4b63-176">いずれかの SSIS パッケージに関連するその他の情報を参照してください"パッケージ操作方法に関するトピック (SSIS)"で[http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)です。</span><span class="sxs-lookup"><span data-stu-id="b4b63-176">For any other information related to SSIS packages, see "Package How-to Topics (SSIS)" at [http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973).</span></span>  
   

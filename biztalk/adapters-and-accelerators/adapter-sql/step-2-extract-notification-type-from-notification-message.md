@@ -1,14 +1,14 @@
 ---
-title: "手順 2: 通知メッセージからの通知の種類の抽出 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 通知メッセージからの通知の種類の抽出 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72f3e805-0f5f-42fa-8fe3-78ccbb375f74
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224162"
 ---
 # <a name="step-2-extract-notification-type-from-notification-message"></a><span data-ttu-id="9ed1a-102">手順 2: 通知メッセージからの通知の種類を抽出します。</span><span class="sxs-lookup"><span data-stu-id="9ed1a-102">Step 2: Extract Notification Type from Notification Message</span></span>
 <span data-ttu-id="9ed1a-103">![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="9ed1a-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="9ed1a-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="9ed1a-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="9ed1a-105">**目標:**このステップで、SQL Server データベースから受信した通知の種類を抽出する式図形を追加します。</span><span class="sxs-lookup"><span data-stu-id="9ed1a-105">**Objective:** In this step, you add an expression shape to extract the type of notification received from the SQL Server database.</span></span>  
+ <span data-ttu-id="9ed1a-105">**目標:** このステップで、SQL Server データベースから受信した通知の種類を抽出する式図形を追加します。</span><span class="sxs-lookup"><span data-stu-id="9ed1a-105">**Objective:** In this step, you add an expression shape to extract the type of notification received from the SQL Server database.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="9ed1a-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="9ed1a-106">Prerequisites</span></span>  
  <span data-ttu-id="9ed1a-107">完了する必要があります[手順 1: 通知を受信するオーケストレーション図形の追加](../../adapters-and-accelerators/adapter-sql/step-1-add-orchestration-shapes-to-receive-notification.md)です。</span><span class="sxs-lookup"><span data-stu-id="9ed1a-107">You must have completed [Step 1: Add Orchestration Shapes to Receive Notification](../../adapters-and-accelerators/adapter-sql/step-1-add-orchestration-shapes-to-receive-notification.md).</span></span>  

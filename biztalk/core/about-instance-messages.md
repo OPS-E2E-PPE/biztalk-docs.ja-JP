@@ -1,14 +1,14 @@
 ---
-title: "インスタンス メッセージについて |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス メッセージについて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: de7fc3d3-57a7-4df9-b981-127e21941e22
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224778"
 ---
 # <a name="about-instance-messages"></a><span data-ttu-id="4c85e-102">インスタンス メッセージについて</span><span class="sxs-lookup"><span data-stu-id="4c85e-102">About Instance Messages</span></span>
 <span data-ttu-id="4c85e-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、インスタンス メッセージの送受信を行います。通常、各インスタンス メッセージは、注文書などの 1 つ以上のビジネス ドキュメントを表します。</span><span class="sxs-lookup"><span data-stu-id="4c85e-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends and receives instance messages, each of which typically represents one or more business documents such as a purchase order.</span></span> <span data-ttu-id="4c85e-104">インスタンス メッセージは、1 つ以上のスキーマで定義されるメッセージ構造のインスタンスです。</span><span class="sxs-lookup"><span data-stu-id="4c85e-104">An instance message is an instance of a message structure defined by one or more schemas.</span></span> <span data-ttu-id="4c85e-105">スキーマまたはスキーマ セットは、有効なインスタンス メッセージを構成するための情報を定義します。</span><span class="sxs-lookup"><span data-stu-id="4c85e-105">A schema, or a set of schemas being used together, defines what constitutes a valid instance message.</span></span> <span data-ttu-id="4c85e-106">たとえば、注文書を定義して、複数のレコード (ShipTo レコード、BillTo レコード、Item レコードなど) を格納することがあります。</span><span class="sxs-lookup"><span data-stu-id="4c85e-106">For example, a purchase order might be defined to have several records within it, such as a ShipTo record, a BillTo record, an Items record, and so on.</span></span> <span data-ttu-id="4c85e-107">これらの各レコードを定義して、固有のサブレコードやフィールドを格納できます。</span><span class="sxs-lookup"><span data-stu-id="4c85e-107">Each of these records can be defined to contain their own subrecords and fields.</span></span> <span data-ttu-id="4c85e-108">対応するスキーマでは、これらのレコードやフィールドに関する情報を定義します。また、対応するインスタンス メッセージは、スキーマに基づいて構成された注文書のデータを含む実際の注文書を格納します。</span><span class="sxs-lookup"><span data-stu-id="4c85e-108">The corresponding schema defines the potential contents of these records and fields and the corresponding instance messages contain actual purchase orders that contain purchase order data structured according to the schema.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "バックアップと復元の後に BAM 管理ユーティリティ構成を更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップと復元の後に BAM 管理ユーティリティ構成を更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b27062b-546f-4030-983b-15d793912690
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286674"
 ---
 # <a name="how-to-update-the-bam-management-utility-configuration-after-a-backup-and-restore"></a><span data-ttu-id="49c7d-102">バックアップおよび復元の後で BAM 管理ユーティリティ構成を更新する方法</span><span class="sxs-lookup"><span data-stu-id="49c7d-102">How to Update the BAM Management Utility Configuration After a Backup and Restore</span></span>
 <span data-ttu-id="49c7d-103">BizTalk Server 環境の変更 (バックアップおよび復元のシーケンスなど) によってサーバー名とデータベース名の組み合わせが変更された場合は、BAM 管理ユーティリティ構成ファイル (bm.exe.config) を更新してこの名前変更を反映させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="49c7d-103">When the server\database name combination changes as the result of a change in your BizTalk Server environment such as a backup and restore sequence, you must update the BAM management utility configuration file (bm.exe.config) to reflect these name changes.</span></span>  
   
 ### <a name="to-update-the-bam-management-configuration-file-a-after-backup-and-restore"></a><span data-ttu-id="49c7d-104">バックアップおよび復元の後で BAM 管理構成ファイルを更新するには</span><span class="sxs-lookup"><span data-stu-id="49c7d-104">To update the BAM management configuration file a after backup and restore</span></span>  
   
-1.  <span data-ttu-id="49c7d-105">クリックしてメモ帳を使用して bm.exe.config ファイルを開く**開始**をクリックすると、**実行**、メモ帳」と入力[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]tracking\bm.exe.config、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="49c7d-105">Open the bm.exe.config file using Notepad by clicking **Start**, clicking **Run**, typing notepad [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]tracking\bm.exe.config, and then clicking **OK**.</span></span>  
+1.  <span data-ttu-id="49c7d-105">クリックしてメモ帳を使用して bm.exe.config ファイルを開く**開始**をクリックすると、**実行**、メモ帳」と入力[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]tracking\bm.exe.config、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="49c7d-105">Open the bm.exe.config file using Notepad by clicking **Start**, clicking **Run**, typing notepad [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]tracking\bm.exe.config, and then clicking **OK**.</span></span>  
   
 2.  <span data-ttu-id="49c7d-106">ファイルの appSettings セクションを探し、次の値を変更します。</span><span class="sxs-lookup"><span data-stu-id="49c7d-106">Locate the appSettings section in the file and change the following values:</span></span>  
   

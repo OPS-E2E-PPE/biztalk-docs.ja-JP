@@ -1,15 +1,15 @@
 ---
-title: "Biztalk wcf-custom アダプタと SQL アダプタを使用してポートを構成する |Microsoft ドキュメント"
-description: "Wcf-custom 送信を作成し、BizTalk Server で SQL Server のアダプターを使用する受信ポート"
-ms.custom: 
+title: Biztalk wcf-custom アダプタと SQL アダプタを使用してポートを構成する |Microsoft ドキュメント
+description: Wcf-custom 送信を作成し、BizTalk Server で SQL Server のアダプターを使用する受信ポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d44d9932-0a5e-4072-a480-2f8dc544ca79
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226034"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sql-adapter"></a><span data-ttu-id="ff5da-103">Wcf-custom アダプタと SQL アダプタを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-103">Configure a port using the WCF-custom adapter and SQL adapter</span></span>
 <span data-ttu-id="ff5da-104">Wcf-custom 送信ポートと受信ポートを使用して SQL サーバーの送信および受信の操作を実行する手順、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-104">Steps to configure WCF-Custom send and receive ports to perform outbound and inbound operations on SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="ff5da-116">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-116">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="ff5da-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="ff5da-118">接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-118">For more information about the connection URI, see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="ff5da-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="ff5da-118">接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-118">For more information about the connection URI, see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="ff5da-119">**全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-119">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="ff5da-120">参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)各操作のアクションの一覧についてはします。</span><span class="sxs-lookup"><span data-stu-id="ff5da-120">See [Messages and message schemas](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md) for a list of actions for each operation.</span></span> <span data-ttu-id="ff5da-121">たとえば、SQL Server データベース内のテーブルに対する挿入操作を呼び出すアクションは。</span><span class="sxs-lookup"><span data-stu-id="ff5da-121">For example, the action to invoke the Insert operation on a table in a SQL Server database is:</span></span>  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="ff5da-139">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-139">From the **Receive pipeline** drop-down list, select the pipeline that corresponds to XMLReceive.</span></span>  
   
-11. <span data-ttu-id="ff5da-140">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ff5da-140">Click **OK**.</span></span>  
+11. <span data-ttu-id="ff5da-140">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ff5da-140">Click **OK**.</span></span>  
   
 ## <a name="deploy-adapters-to-receive-messages-from-sql-server"></a><span data-ttu-id="ff5da-141">SQL Server からメッセージを受信アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-141">Deploy adapters to receive messages from SQL Server</span></span>
  <span data-ttu-id="ff5da-142">次の実行 Wcf-custom を構成する手順を使用して SQL サーバーからメッセージを受信するためのポートの受信、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="ff5da-142">Perform the following steps to configure a WCF-Custom receive port for receiving messages from SQL Server using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -103,7 +104,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="ff5da-153">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-153">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="ff5da-154">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-154">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="ff5da-155">接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-155">For more information about the connection URI, see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="ff5da-154">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff5da-154">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="ff5da-155">接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-155">For more information about the connection URI, see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="ff5da-156">クリックして、**バインド** タブとの間、**バインディングの種類**ドロップダウン リストで、 **sqlBinding**です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-156">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **sqlBinding**.</span></span> <span data-ttu-id="ff5da-157">によって公開されている別のバインディング プロパティを指定することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-157">You can specify the different binding properties exposed by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="ff5da-158">バインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="ff5da-158">For more information about binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  
   

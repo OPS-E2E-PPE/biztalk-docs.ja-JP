@@ -1,11 +1,11 @@
 ---
-title: "フラット ファイル逆アセンブラー パイプライン コンポーネントにおける文字エンコーディング |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル逆アセンブラー パイプライン コンポーネントにおける文字エンコーディング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBaseMessagePart.Charset property
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipeline components, Flat File Disassembler
 - Flat File Disassembler [pipeline component], character encoding
 ms.assetid: 0dbe24fb-c431-4edf-8aa9-4c040d6a7b32
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231642"
 ---
 # <a name="character-encoding-in-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="4fa5e-102">フラット ファイル逆アセンブラー パイプライン コンポーネントでの文字エン コード</span><span class="sxs-lookup"><span data-stu-id="4fa5e-102">Character Encoding in the Flat File Disassembler Pipeline Component</span></span>
 <span data-ttu-id="4fa5e-103">フラット ファイル逆アセンブラーでは、次のアルゴリズムに基づいて、入力メッセージを処理するためのエンコードに使用する文字セットを決定します。</span><span class="sxs-lookup"><span data-stu-id="4fa5e-103">The following algorithm is used by the Flat File Disassembler component to determine which encoding to use for processing an incoming message:</span></span>  

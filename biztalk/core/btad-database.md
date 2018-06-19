@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230594"
 ---
 # <a name="btaddatabase"></a><span data-ttu-id="5a3c3-102">BTAD_Database</span><span class="sxs-lookup"><span data-stu-id="5a3c3-102">BTAD_Database</span></span>
 <span data-ttu-id="5a3c3-103">アプリケーションのインポート時に処理前および処理後のスクリプトを実行すると、BTAD_Database 環境変数が設定されます。</span><span class="sxs-lookup"><span data-stu-id="5a3c3-103">When pre- and post-processing scripts run on application import, the BTAD_Database environment variable is set.</span></span> <span data-ttu-id="5a3c3-104">この変数は、グループの BizTalk 管理データベースの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="5a3c3-104">It specifies the name of the BizTalk Management database for the group.</span></span>  

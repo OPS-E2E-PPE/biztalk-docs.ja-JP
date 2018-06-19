@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server のアクセス許可のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のアクセス許可のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e47bd1fc-2edf-4525-97dd-4bd9d3e2d6ff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280082"
 ---
 # <a name="troubleshooting-biztalk-server-permissions"></a><span data-ttu-id="03903-102">BizTalk Server のアクセス許可に関するトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="03903-102">Troubleshooting BizTalk Server Permissions</span></span>
 <span data-ttu-id="03903-103">通常、BizTalk Server のアクセス許可に関する問題は、次のカテゴリのいずれかに分類されます。</span><span class="sxs-lookup"><span data-stu-id="03903-103">Permissions problems in BizTalk Server typically fall into one of the following categories:</span></span>  

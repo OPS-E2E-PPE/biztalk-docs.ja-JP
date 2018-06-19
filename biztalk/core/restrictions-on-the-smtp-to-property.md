@@ -1,17 +1,17 @@
 ---
-title: "SMTP の To プロパティに関する制限事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SMTP の To プロパティに関する制限事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SMTP adapters], restrictions
 - SMTP adapters, restrictions
 ms.assetid: c876d30e-44ab-462d-8c98-64416ed6dd1f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268338"
 ---
 # <a name="restrictions-on-the-smtp-to-property"></a><span data-ttu-id="0f927-102">SMTP の To プロパティに関する制限事項</span><span class="sxs-lookup"><span data-stu-id="0f927-102">Restrictions on the SMTP To Property</span></span>
 <span data-ttu-id="0f927-103">**に**プロパティは、メッセージの受信者の SMTP アドレスを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="0f927-103">The **To** property is a string that specifies the SMTP address of the recipient of the message.</span></span> <span data-ttu-id="0f927-104">SMTP サーバーでサポートされている区切り記号を使用して、複数のアドレスを指定できます。</span><span class="sxs-lookup"><span data-stu-id="0f927-104">You can list several addresses with a separator that SMTP server supports.</span></span>  

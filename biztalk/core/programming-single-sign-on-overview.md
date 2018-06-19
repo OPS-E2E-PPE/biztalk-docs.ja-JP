@@ -1,14 +1,14 @@
 ---
-title: "プログラミングのシングル サインオンの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: プログラミングのシングル サインオンの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a0a3978-cdbf-4703-9d1d-23e0f4923c9c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264826"
 ---
 # <a name="programming-single-sign-on-overview"></a><span data-ttu-id="9d422-102">プログラミングのシングル サインオンの概要</span><span class="sxs-lookup"><span data-stu-id="9d422-102">Programming Single Sign-On Overview</span></span>
 <span data-ttu-id="9d422-103">複数の異なるアプリケーションに依存するビジネス プロセスでは、場合によっては、複数の異なるセキュリティ ドメインの操作が必要になります。</span><span class="sxs-lookup"><span data-stu-id="9d422-103">A business process that relies on several different applications is likely to face the challenge of dealing with several different security domains.</span></span> <span data-ttu-id="9d422-104">たとえば、Microsoft Windows オペレーティング システムのアプリケーションにアクセスするときは、それに応じたセキュリティ資格情報のセットを使用する必要があり、IBM メインフレームのアプリケーションにアクセスするときは、別の資格情報を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9d422-104">Accessing an application on a Microsoft Windows operating system might require one set of security credentials, whereas accessing an application on an IBM mainframe might require different credentials.</span></span> <span data-ttu-id="9d422-105">このような多くの資格情報を操作することは、ユーザーにとって困難です。このため、プロセスを自動化する必要性が高まっています。</span><span class="sxs-lookup"><span data-stu-id="9d422-105">Dealing with this profusion of credentials is hard for users, and it can pose an even greater challenge for automating processes.</span></span> <span data-ttu-id="9d422-106">この問題に対処するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、エンタープライズ シングル サインオン (SSO) が提供されます。</span><span class="sxs-lookup"><span data-stu-id="9d422-106">To address this problem, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes Enterprise Single Sign-On (SSO).</span></span> <span data-ttu-id="9d422-107">SSO では、Windows ユーザー ID を Windows 以外のユーザー資格情報にマップすることができます。</span><span class="sxs-lookup"><span data-stu-id="9d422-107">SSO lets you map a Windows user ID to non-Windows user credentials.</span></span> <span data-ttu-id="9d422-108">このサービスによって、さまざまなシステムのアプリケーションを使用するビジネス プロセスの作業を単純化できます。</span><span class="sxs-lookup"><span data-stu-id="9d422-108">This service can simplify business processes that use applications on diverse systems.</span></span>  

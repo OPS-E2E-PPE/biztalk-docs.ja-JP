@@ -1,14 +1,14 @@
 ---
-title: "手順 3: アプリケーション定義ファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: アプリケーション定義ファイルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 843fafdb-571e-4da4-ad04-7dc7f23e03ac
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227010"
 ---
 # <a name="step-3-create-an-application-definition-file"></a><span data-ttu-id="b725d-102">手順 3: アプリケーション定義ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="b725d-102">Step 3: Create an Application Definition File</span></span>
 <span data-ttu-id="b725d-103">![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="b725d-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
@@ -45,11 +46,11 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="b725d-120">**URL**ボックスには、WCF サービスの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="b725d-120">In the **URL** box, type the URL for the WCF service.</span></span> <span data-ttu-id="b725d-121">URL は、次の形式である必要があります。`https://machinename/EchoWeb/EchoOutboundContract.svc?wsdl`</span><span class="sxs-lookup"><span data-stu-id="b725d-121">The URL must be in the following format: `https://machinename/EchoWeb/EchoOutboundContract.svc?wsdl`</span></span>  
   
-5.  <span data-ttu-id="b725d-122">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-122">Click **Connect**.</span></span>  
+5.  <span data-ttu-id="b725d-122">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-122">Click **Connect**.</span></span>  
   
 6.  <span data-ttu-id="b725d-123">使用可能な操作を表示するをクリックして、 **Web メソッドの追加**タブです。EchoGreetings メソッドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b725d-123">To see the available operations, click the **Add Web Method** tab. You should see the EchoGreetings method.</span></span> <span data-ttu-id="b725d-124">メソッドは、デザイン画面にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="b725d-124">Drag the method to the Design Surface.</span></span>  
   
-7.  <span data-ttu-id="b725d-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-125">Click **OK**.</span></span>  
+7.  <span data-ttu-id="b725d-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-125">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="b725d-126">**LOB システムの名前を入力** ダイアログ ボックスに名前を入力、 **LOB システム名**ボックス。</span><span class="sxs-lookup"><span data-stu-id="b725d-126">In the **Enter the name for the LOB System** dialog box, type a name in the **LOB System Name** box.</span></span> <span data-ttu-id="b725d-127">この例では、次を入力してください。 **EchoWSLOB**、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b725d-127">For this example, enter **EchoWSLOB**, and then click **OK**.</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="b725d-136">メタデータ オブジェクト ペインで、展開、 **EchoGreetings**  ノードの順に展開し、**メソッド**ノード。</span><span class="sxs-lookup"><span data-stu-id="b725d-136">In the Metadata Objects pane, expand the **EchoGreetings** node, and then expand the **Methods** node.</span></span>  
   
-2.  <span data-ttu-id="b725d-137">クリックして、 **EchoGreetings**ノードのプロパティ ウィンドウで、省略記号ボタンをクリックし、 **(...)**ボタンをクリックして、**プロパティ**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="b725d-137">Click the **EchoGreetings** node and, in the Properties pane, click the ellipsis **(…)** button in the **Properties** field.</span></span>  
+2.  <span data-ttu-id="b725d-137">クリックして、 **EchoGreetings**ノードのプロパティ ウィンドウで、省略記号ボタンをクリックし、 **(...)** ボタンをクリックして、**プロパティ**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="b725d-137">Click the **EchoGreetings** node and, in the Properties pane, click the ellipsis **(…)** button in the **Properties** field.</span></span>  
   
 3.  <span data-ttu-id="b725d-138">PropertyView コレクション エディター ウィンドウで、**追加**、し、、**名前**型、プロパティ ペインのフィールド**HttpHeaderUserName**です。</span><span class="sxs-lookup"><span data-stu-id="b725d-138">In the PropertyView Collection Editor window, click **Add**, and in the **Name** field of the Property pane, type  **HttpHeaderUserName**.</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="b725d-141">をクリックして**追加**、およびプロパティ ペイン型**HttpHeaderPassword** [名前] フィールドを入力し、 **MyPassHeader**の**PropertyValue**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="b725d-141">Click **Add**, and in the Property pane type **HttpHeaderPassword** for the Name field, then type **MyPassHeader** for the **PropertyValue** field.</span></span>  
   
-6.  <span data-ttu-id="b725d-142">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-142">Click **OK**.</span></span>  
+6.  <span data-ttu-id="b725d-142">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-142">Click **OK**.</span></span>  
   
 ## <a name="set-up-single-sign-on-for-connecting-to-the-echo-adapter"></a><span data-ttu-id="b725d-143">エコー アダプターに接続するためのシングル サインオンを設定します。</span><span class="sxs-lookup"><span data-stu-id="b725d-143">Set up Single Sign-On for Connecting to the Echo Adapter</span></span>  
  <span data-ttu-id="b725d-144">SharePoint からシングル サインオン情報を使用して、認証の値を持つ MyUserHeader および MyPassHeader を設定します。</span><span class="sxs-lookup"><span data-stu-id="b725d-144">SharePoint uses information from Single Sign-On to populate the MyUserHeader and MyPassHeader with authentication values.</span></span> <span data-ttu-id="b725d-145">シングル サインオンには、このアプリケーション定義ファイルをリンクするには、SecondarySsoApplicationId を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b725d-145">To link this application definition file to Single Sign-On, you must provide a SecondarySsoApplicationId.</span></span>  
@@ -83,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="b725d-147">メタデータ オブジェクト ペインで、展開、 **EchoWSLOB**  ノードの順に展開し、**インスタンス**ノード。</span><span class="sxs-lookup"><span data-stu-id="b725d-147">In the Metadata Objects pane, expand the **EchoWSLOB** node, and then expand the **Instances** node.</span></span>  
   
-2.  <span data-ttu-id="b725d-148">をクリックして**EchoWSLOB_Instance**、プロパティ ペインで、省略記号ボタンをクリックして**([...])**ボタンをクリックして、**プロパティ**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="b725d-148">Click **EchoWSLOB_Instance**, and in the Properties pane, click the ellipsis **(…)**button in the **Properties** field.</span></span>  
+2.  <span data-ttu-id="b725d-148">をクリックして**EchoWSLOB_Instance**、プロパティ ペインで、省略記号ボタンをクリックして **([...])** ボタンをクリックして、**プロパティ**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="b725d-148">Click **EchoWSLOB_Instance**, and in the Properties pane, click the ellipsis **(…)** button in the **Properties** field.</span></span>  
   
 3.  <span data-ttu-id="b725d-149">PropertyView コレクション エディター] ウィンドウで、[**追加**、プロパティ ウィンドウで、次のように入力します。 **SecondarySsoApplicationId**で、**名前**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="b725d-149">In the PropertyView Collection Editor window, click **Add**, and in the Property pane, type **SecondarySsoApplicationId** in the **Name** field.</span></span>  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="b725d-151">![Secondaryssoapplicationid の](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/68e6be61-77af-46b1-8ff0-b8538c526228.gif "68e6be61-77af-46b1-8ff0-b8538c526228")</span><span class="sxs-lookup"><span data-stu-id="b725d-151">![Set the SecondarySsoApplicationId](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/68e6be61-77af-46b1-8ff0-b8538c526228.gif "68e6be61-77af-46b1-8ff0-b8538c526228")</span></span>  
   
-5.  <span data-ttu-id="b725d-152">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-152">Click **OK**.</span></span>  
+5.  <span data-ttu-id="b725d-152">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-152">Click **OK**.</span></span>  
   
 ## <a name="create-input-filters-and-default-values"></a><span data-ttu-id="b725d-153">入力フィルターと既定値を作成します。</span><span class="sxs-lookup"><span data-stu-id="b725d-153">Create Input Filters and Default Values</span></span>  
  <span data-ttu-id="b725d-154">アプリケーション定義ファイルを Web サービスに渡すことができるユーザーの入力を受け付けることがあります。</span><span class="sxs-lookup"><span data-stu-id="b725d-154">The application definition file must be able to  accept user input that can be passed to a Web service.</span></span> <span data-ttu-id="b725d-155">これを実現するには、次の一連のタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b725d-155">To accomplish this, you must perform the following set of tasks:</span></span>  
@@ -124,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="b725d-169">![メソッド インスタンスの作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/a932a7a0-c004-46bf-af5c-cc7392bafa43.gif "a932a7a0-c004-46bf-af5c-cc7392bafa43")</span><span class="sxs-lookup"><span data-stu-id="b725d-169">![Create the Method Instance](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/a932a7a0-c004-46bf-af5c-cc7392bafa43.gif "a932a7a0-c004-46bf-af5c-cc7392bafa43")</span></span>  
   
-4.  <span data-ttu-id="b725d-170">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-170">Click **OK**.</span></span>  
+4.  <span data-ttu-id="b725d-170">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-170">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="b725d-171">プロパティ ウィンドウで、次のように入力します。 **EchoGreetings_Instance**で、**名前**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="b725d-171">In the Properties pane, type **EchoGreetings_Instance** in the **Name** field.</span></span>  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="b725d-191">![既定のパラメーター](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/70250957-9680-48ce-8bce-420ff18bb47a.gif "70250957-9680-48ce-8bce-420ff18bb47a")</span><span class="sxs-lookup"><span data-stu-id="b725d-191">![Default Parameters](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/70250957-9680-48ce-8bce-420ff18bb47a.gif "70250957-9680-48ce-8bce-420ff18bb47a")</span></span>  
   
-6.  <span data-ttu-id="b725d-192">**[閉じる]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-192">Click **Close**.</span></span>  
+6.  <span data-ttu-id="b725d-192">**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b725d-192">Click **Close**.</span></span>  
   
 ### <a name="to-export-the-application-definition-file"></a><span data-ttu-id="b725d-193">アプリケーション定義ファイルをエクスポートするには</span><span class="sxs-lookup"><span data-stu-id="b725d-193">To export the application definition file</span></span>  
   

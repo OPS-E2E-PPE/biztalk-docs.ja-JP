@@ -1,14 +1,14 @@
 ---
-title: "手順 2: 双方向 Wcf-webhttp 送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 双方向 Wcf-webhttp 送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bcab296-7921-4df4-abcc-eea78cc827e8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278890"
 ---
 # <a name="step-2-configure-a-two-way-wcf-webhttp-send-port"></a><span data-ttu-id="3bc98-102">手順 2: 双方向 Wcf-webhttp 送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="3bc98-102">Step 2: Configure a Two-way WCF-WebHttp Send Port</span></span>
 <span data-ttu-id="3bc98-103">この手順で構成する、双方向**Wcf-webhttp**米国航空会社のスケジュールで遅延を取得するための REST リソース URL を起動するポートを送信します。</span><span class="sxs-lookup"><span data-stu-id="3bc98-103">In this step you configure a two-way **WCF-WebHttp** send port to invoke the REST resource URL to retrieve delays in the US air carriers’ schedules.</span></span>  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
         3.  <span data-ttu-id="3bc98-134">下にある、**ユーザー名資格情報**ボックスで、クリックして**編集**です。</span><span class="sxs-lookup"><span data-stu-id="3bc98-134">Under the **User name credentials** box, click **Edit**.</span></span> <span data-ttu-id="3bc98-135">**クライアントの資格情報**ダイアログ ボックスで、**シングル サインオンに使用しない**、ユーザー名とから取得したパスワードを入力し、**マイ アカウント**した後タブログインして[Windows Azure Marketplace](http://go.microsoft.com/fwlink/p/?LinkId=257913)です。</span><span class="sxs-lookup"><span data-stu-id="3bc98-135">In the **Client Credentials** dialog box, select **Do no use Single-Sign On**, and enter the username and password that you retrieved from the **My Account** tab after you have logged into [Windows Azure Marketplace](http://go.microsoft.com/fwlink/p/?LinkId=257913).</span></span> <span data-ttu-id="3bc98-136">に対して資格情報が表示されている、**顧客 ID** (ユーザー名) と**プライマリ アカウント キー** (パスワード) ラベル。</span><span class="sxs-lookup"><span data-stu-id="3bc98-136">The credentials are listed against the **Customer ID** (user name) and **Primary Account Key** (password) labels.</span></span>  
   
-        4.  <span data-ttu-id="3bc98-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3bc98-137">Click **OK**.</span></span>  
+        4.  <span data-ttu-id="3bc98-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3bc98-137">Click **OK**.</span></span>  
   
     5.  <span data-ttu-id="3bc98-138">**メッセージ** タブの**動詞の本文を抑制**、要求メッセージからメッセージ ペイロードを除去する動詞を指定します。</span><span class="sxs-lookup"><span data-stu-id="3bc98-138">On the **Messages** tab, for **Suppress Body for Verbs**, specify the verb for which you want to strip the message payload from the request message.</span></span> <span data-ttu-id="3bc98-139">このチュートリアルを指定`GET`です。</span><span class="sxs-lookup"><span data-stu-id="3bc98-139">For this tutorial, specify this as `GET`.</span></span> <span data-ttu-id="3bc98-140">その理由を次に示します: 米国航空会社のフライト遅延の REST エンドポイントに対する GET メソッド呼び出しには、メッセージ ペイロードは不要REST リソース URL は、情報を取得するだけで十分です。</span><span class="sxs-lookup"><span data-stu-id="3bc98-140">Here’s why: A GET method call on the US Air Carrier flight delays REST endpoint does not require a message payload; the REST resource URL is sufficient to retrieve the information.</span></span> <span data-ttu-id="3bc98-141">ただし、トリガーを**Wcf-webhttp** rest 呼び出しを送信ポート、いくつかのメッセージ本文を持つダミー メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="3bc98-141">However, to trigger the **WCF-WebHttp** send port that makes the REST call, you drop a dummy message that has some message body.</span></span> <span data-ttu-id="3bc98-142">前に説明したように、REST エンドポイントはメッセージのペイロードを想定していないので、送信ポートから REST エンドポイントにダミー メッセージを送信できません。</span><span class="sxs-lookup"><span data-stu-id="3bc98-142">The send port must not send that dummy message to the REST endpoint because, as explained earlier, the endpoint does not expect a message payload.</span></span> <span data-ttu-id="3bc98-143">そのため、REST エンドポイントを呼び出す前に、アダプターを切り離しますで指定した動詞についてのみ、ダミー メッセージからメッセージ ペイロード、**動詞の本文を抑制**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="3bc98-143">So, before invoking the REST endpoint, the adapter strips the message payload from the dummy message only for the verbs that you specify in the **Suppress Body for Verbs** text box.</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="3bc98-148">**演算子**</span><span class="sxs-lookup"><span data-stu-id="3bc98-148">**Operator**</span></span>|<span data-ttu-id="3bc98-149">を設定します。**==**</span><span class="sxs-lookup"><span data-stu-id="3bc98-149">Set to **==**</span></span>|  
         |<span data-ttu-id="3bc98-150">**値**</span><span class="sxs-lookup"><span data-stu-id="3bc98-150">**Value**</span></span>|<span data-ttu-id="3bc98-151">を設定します。`ReceivePortRestAzureMarketPlace`</span><span class="sxs-lookup"><span data-stu-id="3bc98-151">Set to `ReceivePortRestAzureMarketPlace`</span></span>|  
   
-    7.  <span data-ttu-id="3bc98-152">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3bc98-152">Click **OK**.</span></span>  
+    7.  <span data-ttu-id="3bc98-152">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3bc98-152">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="3bc98-153">参照</span><span class="sxs-lookup"><span data-stu-id="3bc98-153">See Also</span></span>  
  [<span data-ttu-id="3bc98-154">チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し</span><span class="sxs-lookup"><span data-stu-id="3bc98-154">Tutorial 5: Invoking a REST Interface Using BizTalk Server</span></span>](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)

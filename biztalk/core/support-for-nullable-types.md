@@ -1,14 +1,14 @@
 ---
-title: "Null 許容型のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: Null 許容型のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a5ea191-09d5-47ab-a197-390fbbcf6306
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278722"
 ---
 # <a name="support-for-nullable-types"></a><span data-ttu-id="6d26e-102">Null 許容型のサポート</span><span class="sxs-lookup"><span data-stu-id="6d26e-102">Support for Nullable Types</span></span>
 <span data-ttu-id="6d26e-103">ルール エンジンは、ビジネス ルールでの Null 許容型の使用をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="6d26e-103">The rule engine supports using nullable types in a business rule.</span></span> <span data-ttu-id="6d26e-104">Null 許容型は、.NET クラス バインド、XML バインド、およびデータベース バインドで使用できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-104">You can use nullable types in .NET class bindings, XML bindings, and database bindings.</span></span> <span data-ttu-id="6d26e-105">現在、ビジネス ルール作成ツールは、ビジネス ルールでの Null 許容型の使用をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="6d26e-105">Currently, the Business Rule Composer tool does not support using nullable types in a business rule.</span></span> <span data-ttu-id="6d26e-106">Null 許容型は、プログラムによってルールを作成する場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-106">You can use the nullable types when creating rules programmatically.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "基本的な SQL Server データ型 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的な SQL Server データ型 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f744fe14-4134-486d-b060-9ac2d5f21c56
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222618"
 ---
 # <a name="basic-sql-server-data-types"></a><span data-ttu-id="05c6a-102">基本的な SQL Server データ型</span><span class="sxs-lookup"><span data-stu-id="05c6a-102">Basic SQL Server Data Types</span></span>
 <span data-ttu-id="05c6a-103">このトピックの内容について説明しますが、どのように[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]サーフェスの基本的な SQL Server データ型。</span><span class="sxs-lookup"><span data-stu-id="05c6a-103">This topic describes how the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]surfaces basic SQL Server data types.</span></span>  

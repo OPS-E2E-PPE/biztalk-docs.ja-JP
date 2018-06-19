@@ -1,14 +1,14 @@
 ---
-title: "アダプター インターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター インターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e7398aeb-7c1c-400e-a552-d0ab39e55a0b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225490"
 ---
 # <a name="adapter-interfaces"></a><span data-ttu-id="aa4e0-102">アダプター インターフェイス</span><span class="sxs-lookup"><span data-stu-id="aa4e0-102">Adapter Interfaces</span></span>
 <span data-ttu-id="aa4e0-103">カスタム アダプターには、実装する必要のあるインターフェイスが 3 つあります。また、省略可能なインターフェイスも 2 つあります。</span><span class="sxs-lookup"><span data-stu-id="aa4e0-103">There are three interfaces that custom adapters must implement, and two interfaces that are optional.</span></span>  

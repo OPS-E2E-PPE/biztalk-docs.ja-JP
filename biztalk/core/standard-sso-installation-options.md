@@ -1,17 +1,17 @@
 ---
-title: "標準 SSO インストール オプション |Microsoft ドキュメント"
-ms.custom: 
+title: 標準 SSO インストール オプション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, SSO
 - SSO, installing
 ms.assetid: 59aeb503-f369-4145-8a3c-ab60e9ed31a8
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279154"
 ---
 # <a name="standard-sso-installation-options"></a><span data-ttu-id="7f013-102">標準 SSO インストール オプション</span><span class="sxs-lookup"><span data-stu-id="7f013-102">Standard SSO Installation Options</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="7f013-103"> では、資格情報を安全に格納するためにエンタープライズ シングル サインオン (SSO) 機能を利用して、シングル サインオン シナリオを実現します。</span><span class="sxs-lookup"><span data-stu-id="7f013-103"> leverages the Enterprise Single Sign-On (SSO) capabilities for securely storing credentials to enable single sign-on scenarios.</span></span>  

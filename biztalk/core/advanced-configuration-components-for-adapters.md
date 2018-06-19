@@ -1,14 +1,14 @@
 ---
-title: "アダプターの構成コンポーネントを高度な |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの構成コンポーネントを高度な |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb31b996-6959-4b5a-9a9f-f48fd91a6180
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230010"
 ---
 # <a name="advanced-configuration-components-for-adapters"></a><span data-ttu-id="5819f-102">アダプターの高度な構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="5819f-102">Advanced Configuration Components for Adapters</span></span>
 <span data-ttu-id="5819f-103">BizTalk アダプター フレームワークは、カスタム ドロップダウン エディター、カスタム モーダル ダイアログ エディター、およびカスタム型コンバーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5819f-103">The BizTalk Adapter Framework supports a custom drop-down editor, a custom modal dialog editor, and a custom type converter.</span></span> <span data-ttu-id="5819f-104">これらのカスタム デザイン コンポーネントは、ユーザー名やパスワード情報を入力として受け取る場合に特に役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="5819f-104">These custom design components are especially useful when taking user name and password information as input.</span></span>  

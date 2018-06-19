@@ -1,14 +1,14 @@
 ---
-title: "手順 2: SQL アダプターを使用して BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: SQL アダプターを使用して BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6152560-5ff0-4bdc-818c-e906b9642f52
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223794"
 ---
 # <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-using-the-sql-adapter"></a><span data-ttu-id="ce15c-102">手順 2: SQL アダプターを使用して BizTalk Server 管理コンソールでオーケストレーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce15c-102">Step 2: Configure the Orchestration in BizTalk Server Administration Console using the SQL adapter</span></span>
 <span data-ttu-id="ce15c-103">![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="ce15c-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="ce15c-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="ce15c-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="ce15c-105">**目標:**このステップでは、次のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="ce15c-105">**Objective:** In this step, you perform the following tasks:</span></span>  
+ <span data-ttu-id="ce15c-105">**目標:** このステップでは、次のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="ce15c-105">**Objective:** In this step, you perform the following tasks:</span></span>  
   
 -   <span data-ttu-id="ce15c-106">WCF カスタム作成送信-受信ポートを使用して、SQL Server データベースからメッセージを送受信、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce15c-106">Create a WCF-Custom send-receive port to send and receive messages from the SQL Server database using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="ce15c-107">前の手順で作成したマップを使用するには、このポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce15c-107">Configure this port to use the maps you created in the previous step.</span></span>  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="ce15c-124">![送信マップを構成する](../../adapters-and-accelerators/adapter-sql/media/5b54e09b-8784-4df6-a279-e8aed813114e.gif "5b54e09b-8784-4df6-a279-e8aed813114e")</span><span class="sxs-lookup"><span data-stu-id="ce15c-124">![Configure outbound map](../../adapters-and-accelerators/adapter-sql/media/5b54e09b-8784-4df6-a279-e8aed813114e.gif "5b54e09b-8784-4df6-a279-e8aed813114e")</span></span>  
   
-8.  <span data-ttu-id="ce15c-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce15c-125">Click **OK**.</span></span>  
+8.  <span data-ttu-id="ce15c-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce15c-125">Click **OK**.</span></span>  
   
 ### <a name="to-configure-the-biztalk-application"></a><span data-ttu-id="ce15c-126">BizTalk アプリケーションを構成するには</span><span class="sxs-lookup"><span data-stu-id="ce15c-126">To configure the BizTalk application</span></span>  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="ce15c-135">このトピックの前半で作成した、Wcf-custom 送信ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="ce15c-135">Select the WCF-Custom send port you created earlier in this topic.</span></span>  
   
-    4.  <span data-ttu-id="ce15c-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce15c-136">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="ce15c-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce15c-136">Click **OK**.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="ce15c-137">次の手順</span><span class="sxs-lookup"><span data-stu-id="ce15c-137">Next Steps</span></span>  
  <span data-ttu-id="ce15c-138">WCF ベースを使用して SQL Server データベースにメッセージを送信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce15c-138">You have now completed migration of your vPrev BizTalk project to a BizTalk project that sends messages to the SQL Server database using the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="ce15c-139">今すぐ」の説明に従って、SQL Server データベースで挿入操作を実行する要求メッセージを送信することによって移行済みの BizTalk アプリケーションをテストする必要があります[手順 3: SQL アダプタを使用する移行されたアプリケーションをテスト](../../adapters-and-accelerators/adapter-sql/step-3-test-the-migrated-application-that-uses-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="ce15c-139">You must now test the migrated BizTalk application by sending a request message to perform an Insert operation on the SQL Server database, as described in [Step 3: Test the Migrated Application that uses the SQL adapter](../../adapters-and-accelerators/adapter-sql/step-3-test-the-migrated-application-that-uses-the-sql-adapter.md).</span></span>  

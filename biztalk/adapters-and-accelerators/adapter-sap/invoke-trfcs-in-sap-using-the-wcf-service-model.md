@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して SAP で tRFCs を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SAP で tRFCs を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tRFCs, invoking by using the WCF service model
 - WCF service model, invoking tRFCs
 ms.assetid: 456fa869-2f1a-42e0-adbf-86bfe0876846
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216658"
 ---
 # <a name="invoke-trfcs-in-sap-using-the-wcf-service-model"></a><span data-ttu-id="08fab-102">WCF サービス モデルを使用して SAP で tRFCs を呼び出す</span><span class="sxs-lookup"><span data-stu-id="08fab-102">Invoke tRFCs in SAP using the WCF Service Model</span></span>
 <span data-ttu-id="08fab-103">トランザクション リモート関数呼び出し (tRFCs) 保証、*ワンタイム*SAP システムの RFC を実行します。</span><span class="sxs-lookup"><span data-stu-id="08fab-103">Transactional Remote Function Calls (tRFCs) guarantee a *one-time* execution of an RFC on an SAP system.</span></span> <span data-ttu-id="08fab-104">いずれかの側に表示される、Rfc を呼び出すことができます、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC として。</span><span class="sxs-lookup"><span data-stu-id="08fab-104">You can invoke any of the RFCs surfaced by the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] as a tRFC.</span></span> <span data-ttu-id="08fab-105">WCF サービス モデルで tRFC の呼び出しは、違いは次の RFC の呼び出しと似ています。</span><span class="sxs-lookup"><span data-stu-id="08fab-105">Invoking a tRFC in the WCF service model is similar to invoking an RFC with the following differences:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "スキーマの作成の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの作成の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4ecb9154-b457-4209-b9b9-572c186bf5e7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264642"
 ---
 # <a name="planning-for-schema-creation"></a><span data-ttu-id="eeed3-102">スキーマの作成の計画</span><span class="sxs-lookup"><span data-stu-id="eeed3-102">Planning for Schema Creation</span></span>
 <span data-ttu-id="eeed3-103">スキーマは、メッセージのインスタンスがその定義に準拠しているかどうかを検証したり、異なる形式 (XML と非 XML) のインスタンス メッセージを相互に変換するための方法を定義したり、あるいは、特定の構造を持つ XML インスタンス メッセージを、それとは別の構造を持つ XML インスタンス メッセージに変換する方法を定義したりする場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="eeed3-103">You use schemas to validate instances of messages that are meant to conform to the schema, to define how instance messages in different formats (XML and non-XML) can be translated back and forth, and to define how XML instance messages with one structure can be transformed into XML instance messages with a different structure.</span></span> <span data-ttu-id="eeed3-104">インスタンス メッセージの変換とインスタンス メッセージの変換の違いの詳細については、次を参照してください。[変換 vs です。翻訳](../core/data-transformation.md)です。</span><span class="sxs-lookup"><span data-stu-id="eeed3-104">For more information about the distinction between instance message translation and instance message transformation, see [Transformation vs. Translation](../core/data-transformation.md).</span></span>  

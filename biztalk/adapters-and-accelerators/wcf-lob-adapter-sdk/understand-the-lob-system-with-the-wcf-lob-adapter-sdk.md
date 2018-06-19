@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK を使用して LOB システムを理解する |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を使用して LOB システムを理解する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0f97846-5ef2-4530-853a-fba5469156f7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225802"
 ---
 # <a name="understand-the-lob-system-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="c5b17-102">WCF LOB Adapter SDK を使用して LOB システムを理解します。</span><span class="sxs-lookup"><span data-stu-id="c5b17-102">Understand the LOB system with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="c5b17-103">使用して、アダプターを開発する前に、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]対象の基幹業務システムを十分に理解する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c5b17-103">Before developing your adapter using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], you must have a thorough understanding of the target line-of-business system.</span></span> <span data-ttu-id="c5b17-104">基幹業務システム、公開、およびセキュリティ、トランザクション、およびその他の機能を提供するサポートのさまざまなレベルで提供される機能を理解していない場合、アダプターが提供されない機能がアダプタで必要なコンシューマー。</span><span class="sxs-lookup"><span data-stu-id="c5b17-104">If you do not understand the functionality provided by the line-of-business system, how it is exposed, and the different level of support provided for security, transactions, and other features, your adapter may not provide the features required by adapter consumers.</span></span> <span data-ttu-id="c5b17-105">このセクションでは、効果的に使用してアダプターをデザインするために理解する必要があります領域について説明します。</span><span class="sxs-lookup"><span data-stu-id="c5b17-105">This section describes the areas you must understand to effectively design your adapter.</span></span>  

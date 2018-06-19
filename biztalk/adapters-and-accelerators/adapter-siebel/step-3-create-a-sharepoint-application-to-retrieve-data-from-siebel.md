@@ -1,14 +1,14 @@
 ---
-title: "手順 3: Siebel からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Siebel からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86bde531-2daf-452b-b3e6-5481d66f72e7
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225970"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel"></a><span data-ttu-id="5986a-102">手順 3: Siebel からデータを取得する SharePoint アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="5986a-102">Step 3: Create a SharePoint Application to Retrieve Data from Siebel</span></span>
 <span data-ttu-id="5986a-103">![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="5986a-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="5986a-104">**所要時間:** 15 分です。</span><span class="sxs-lookup"><span data-stu-id="5986a-104">**Time to complete:** 15 minutes.</span></span>  
   
- <span data-ttu-id="5986a-105">**目標:**今すぐアプリケーション定義ファイルをエディターを使用して、ビジネス データ カタログの定義を作成して、Office SharePoint Server にインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5986a-105">**Objective:** You must now take the application definition file you created by using the Business Data Catalog Definition Editor, and import it into Office SharePoint Server.</span></span>  
+ <span data-ttu-id="5986a-105">**目標:** 今すぐアプリケーション定義ファイルをエディターを使用して、ビジネス データ カタログの定義を作成して、Office SharePoint Server にインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5986a-105">**Objective:** You must now take the application definition file you created by using the Business Data Catalog Definition Editor, and import it into Office SharePoint Server.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="5986a-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="5986a-106">Prerequisites</span></span>  
   
@@ -84,9 +85,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="5986a-154">Siebel_Account.xml、[参照] を開くと、アプリケーション定義のインポート ページで、ファイルを選択し、をクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="5986a-154">On the Import Application Definition page that opens, browse to Siebel_Account.xml, select the file, and then click **Open**.</span></span>  
   
-5.  <span data-ttu-id="5986a-155">**[インポート]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5986a-155">Click **Import**.</span></span>  
+5.  <span data-ttu-id="5986a-155">**[インポート]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5986a-155">Click **Import**.</span></span>  
   
-6.  <span data-ttu-id="5986a-156">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5986a-156">Click **OK**.</span></span>  
+6.  <span data-ttu-id="5986a-156">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5986a-156">Click **OK**.</span></span>  
   
  <span data-ttu-id="5986a-157">アプリケーションをインポートした後に移動して、アプリケーションを表示できます、**ビュー アプリケーション**リンクします。</span><span class="sxs-lookup"><span data-stu-id="5986a-157">After importing the application, you can see your application by going to the **View Applications** link.</span></span> <span data-ttu-id="5986a-158">アプリケーション内のエンティティを表示するのには、アプリケーション名をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5986a-158">Click the application name to see the entities in the application.</span></span>  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="5986a-187">**保存場所**セクションで、**ドキュメント ライブラリ**一覧で、**フォーム テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="5986a-187">In **the Save Location** section, in the **Document Library** list, select **Form Templates**.</span></span>  
   
-    5.  <span data-ttu-id="5986a-188">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5986a-188">Click **Create**.</span></span> <span data-ttu-id="5986a-189">次の図は、作成した後、Web パーツ ページを示します。</span><span class="sxs-lookup"><span data-stu-id="5986a-189">The following figure shows a Web Part page after it is just created.</span></span>  
+    5.  <span data-ttu-id="5986a-188">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5986a-188">Click **Create**.</span></span> <span data-ttu-id="5986a-189">次の図は、作成した後、Web パーツ ページを示します。</span><span class="sxs-lookup"><span data-stu-id="5986a-189">The following figure shows a Web Part page after it is just created.</span></span>  
   
          <span data-ttu-id="5986a-190">![空の Web パーツ ページ](../../adapters-and-accelerators/adapter-siebel/media/1fa218f5-de81-43be-b1b1-c46de422f112.gif "1fa218f5-de81-43be-b1b1-c46de422f112")</span><span class="sxs-lookup"><span data-stu-id="5986a-190">![Empty Web Part page](../../adapters-and-accelerators/adapter-siebel/media/1fa218f5-de81-43be-b1b1-c46de422f112.gif "1fa218f5-de81-43be-b1b1-c46de422f112")</span></span>  
   

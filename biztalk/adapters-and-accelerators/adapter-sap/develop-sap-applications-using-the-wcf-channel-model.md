@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216026"
 ---
 # <a name="develop-sap-applications-using-the-wcf-channel-model"></a><span data-ttu-id="0cf7b-102">WCF チャネル モデルを使用して SAP アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="0cf7b-102">Develop SAP applications using the WCF Channel Model</span></span>
 <span data-ttu-id="0cf7b-103">使用することができます、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]チャネル モデルを使用する、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] SAP バインドで作成されたチャネル インスタンス経由で直接 XML メッセージを送信することによってです。</span><span class="sxs-lookup"><span data-stu-id="0cf7b-103">You can use the [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] channel model to consume the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] by sending XML messages directly over a channel instance created with the SAP Binding.</span></span>  

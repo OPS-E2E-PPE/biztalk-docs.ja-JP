@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268482"
 ---
 # <a name="receiveportref-port-node"></a><span data-ttu-id="db992-102">ReceivePortRef (Port ノード)</span><span class="sxs-lookup"><span data-stu-id="db992-102">ReceivePortRef (Port Node)</span></span>
 <span data-ttu-id="db992-103">バインド ファイルの Port ノードの ReceivePortRef ノードは、サービスによって参照される受信ポートに関する情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="db992-103">The ReceivePortRef node of the Port node of a binding file contains information about a receive port that is referenced by a service.</span></span>  

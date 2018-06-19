@@ -1,18 +1,18 @@
 ---
-title: "Oracle データベース アダプターの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, about
 - data adapter
 - LOB adapter
 ms.assetid: ed5b3510-11c4-4b10-bf85-c4066f3f80df
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214442"
 ---
 # <a name="get-started-with-the-oracle-database-adapter"></a><span data-ttu-id="37220-102">Oracle データベース アダプターを概要します。</span><span class="sxs-lookup"><span data-stu-id="37220-102">Get started with the Oracle Database adapter</span></span>
 <span data-ttu-id="37220-103">このセクションでは Microsoft に新しいユーザーのアダプター、前提条件、およびトピックの概要を説明する[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="37220-103">This section provides an overview of the adapter, prerequisites, and topics for users who are new to Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="37220-104">機能についても説明[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]とアダプターを使用して Oracle データベースで実行できるさまざまな操作です。</span><span class="sxs-lookup"><span data-stu-id="37220-104">It discusses the features of [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] and the different operations that can be performed on the Oracle database using the adapter.</span></span>  

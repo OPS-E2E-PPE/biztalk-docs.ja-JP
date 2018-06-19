@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタの資格情報 で、サインオンの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタの資格情報 で、サインオンの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9c20e177-0e64-4df3-a3dd-dca3fcf314db
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226242"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sql-adapter"></a><span data-ttu-id="c88ba-102">SQL アダプタの資格情報 で、サインオンを構成します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-102">Configure the sign in credentials for the SQL adapter</span></span>
 <span data-ttu-id="c88ba-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアント クライアントの資格情報を提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c88ba-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] requires the adapter clients to provide client credentials.</span></span> <span data-ttu-id="c88ba-104">アダプターは、SQL Server でユーザーを認証し、接続を確立するために、これらの資格情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-104">The adapter uses these credentials to authenticate the user with SQL Server and to establish a connection.</span></span>  
@@ -52,9 +53,9 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="c88ba-126">**なし**</span><span class="sxs-lookup"><span data-stu-id="c88ba-126">**None**</span></span>|<span data-ttu-id="c88ba-127">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-127">Connect to SQL Server by using Windows authentication.</span></span>|  
     |<span data-ttu-id="c88ba-128">**Windows**</span><span class="sxs-lookup"><span data-stu-id="c88ba-128">**Windows**</span></span>|<span data-ttu-id="c88ba-129">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-129">Connect to SQL Server by using Windows authentication.</span></span>|  
-    |<span data-ttu-id="c88ba-130">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="c88ba-130">**Username**</span></span>|<span data-ttu-id="c88ba-131">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-131">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="c88ba-132">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="c88ba-132">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="c88ba-133">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-133">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="c88ba-130">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="c88ba-130">**Username**</span></span>|<span data-ttu-id="c88ba-131">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-131">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="c88ba-132">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="c88ba-132">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="c88ba-133">**注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-133">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
-6.  <span data-ttu-id="c88ba-134">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-134">Click **OK**.</span></span>  
+6.  <span data-ttu-id="c88ba-134">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-134">Click **OK**.</span></span>  
   
 ### <a name="using-add-adapter-metadata-wizard"></a><span data-ttu-id="c88ba-135">アダプター メタデータのウィザードを使用して追加</span><span class="sxs-lookup"><span data-stu-id="c88ba-135">Using Add Adapter Metadata Wizard</span></span>  
   
@@ -67,14 +68,14 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="c88ba-140">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="c88ba-140">**Categories**</span></span>|<span data-ttu-id="c88ba-141">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="c88ba-141">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="c88ba-142">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="c88ba-142">**Templates**</span></span>|<span data-ttu-id="c88ba-143">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="c88ba-143">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="c88ba-144">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-144">Click **Add**.</span></span> <span data-ttu-id="c88ba-145">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="c88ba-145">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="c88ba-144">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-144">Click **Add**.</span></span> <span data-ttu-id="c88ba-145">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="c88ba-145">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="c88ba-146">アダプターの追加ウィザードで選択**WCF-SQL**です。</span><span class="sxs-lookup"><span data-stu-id="c88ba-146">In the Add Adapter Wizard, select **WCF-SQL**.</span></span> <span data-ttu-id="c88ba-147">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="c88ba-147">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="c88ba-148">BizTalk で構成されている WCF SQL ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="c88ba-148">If you already have a WCF-SQL port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  <span data-ttu-id="c88ba-149">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-149">Click **Next**.</span></span>  
+5.  <span data-ttu-id="c88ba-149">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-149">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="c88ba-150">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**sqlBinding**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="c88ba-150">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **sqlBinding**, and then click **Configure**.</span></span>  
   
@@ -87,9 +88,9 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="c88ba-155">**なし**</span><span class="sxs-lookup"><span data-stu-id="c88ba-155">**None**</span></span>|<span data-ttu-id="c88ba-156">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-156">Connect to SQL Server by using Windows authentication.</span></span>|  
     |<span data-ttu-id="c88ba-157">**Windows**</span><span class="sxs-lookup"><span data-stu-id="c88ba-157">**Windows**</span></span>|<span data-ttu-id="c88ba-158">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-158">Connect to SQL Server by using Windows authentication.</span></span>|  
-    |<span data-ttu-id="c88ba-159">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="c88ba-159">**Username**</span></span>|<span data-ttu-id="c88ba-160">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-160">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="c88ba-161">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="c88ba-161">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="c88ba-162">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-162">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="c88ba-159">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="c88ba-159">**Username**</span></span>|<span data-ttu-id="c88ba-160">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-160">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="c88ba-161">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="c88ba-161">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="c88ba-162">**注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-162">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
-8.  <span data-ttu-id="c88ba-163">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-163">Click **OK**.</span></span>  
+8.  <span data-ttu-id="c88ba-163">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-163">Click **OK**.</span></span>  
   
 ## <a name="enter-credentials-from-the-biztalk-server-administration-console"></a><span data-ttu-id="c88ba-164">BizTalk Server 管理コンソールから資格情報を入力してください。</span><span class="sxs-lookup"><span data-stu-id="c88ba-164">Enter credentials from the BizTalk Server Administration Console</span></span>  
  <span data-ttu-id="c88ba-165">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または WCF SQL ポートの構成の一部として、資格情報を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="c88ba-165">From the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you can specify the credentials as part of the WCF-Custom or WCF-SQL port configuration.</span></span>  
@@ -123,7 +124,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="c88ba-183">選択、**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-183">Select the **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-6.  <span data-ttu-id="c88ba-184">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-184">Click **OK**.</span></span>  
+6.  <span data-ttu-id="c88ba-184">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-184">Click **OK**.</span></span>  
   
 ### <a name="enter-credentials-for-the-wcf-sql-port"></a><span data-ttu-id="c88ba-185">WCF SQL ポートの資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-185">Enter credentials for the WCF-SQL port</span></span>  
   
@@ -156,7 +157,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="c88ba-204">選択、**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="c88ba-204">Select the **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-7.  <span data-ttu-id="c88ba-205">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-205">Click **OK**.</span></span>  
+7.  <span data-ttu-id="c88ba-205">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88ba-205">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c88ba-206">参照</span><span class="sxs-lookup"><span data-stu-id="c88ba-206">See Also</span></span>  
 [<span data-ttu-id="c88ba-207">SQL アダプタを BizTalk アプリケーションを開発する構成要素</span><span class="sxs-lookup"><span data-stu-id="c88ba-207">Building blocks to develop BizTalk applications with the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

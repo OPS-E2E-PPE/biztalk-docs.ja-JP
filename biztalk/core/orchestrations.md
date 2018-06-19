@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - deploying, orchestrations
 - orchestrations, about orchestrations
 ms.assetid: fb01f78a-b805-46be-a7d9-2b7597daab96
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266674"
 ---
 # <a name="orchestrations"></a><span data-ttu-id="2b89c-102">オーケストレーション</span><span class="sxs-lookup"><span data-stu-id="2b89c-102">Orchestrations</span></span>
 <span data-ttu-id="2b89c-103">*オーケストレーション*実行可能なビジネス プロセス (受信) にサブスクライブできるは、メッセージ ボックス データベースを介して (送信) メッセージを公開するとします。</span><span class="sxs-lookup"><span data-stu-id="2b89c-103">*Orchestrations* are executable business processes that can subscribe to (receive) and publish (send) messages through the MessageBox database.</span></span> <span data-ttu-id="2b89c-104">また、オーケストレーションは新しいメッセージを構築することもできます。</span><span class="sxs-lookup"><span data-stu-id="2b89c-104">In addition, orchestrations can construct new messages.</span></span> <span data-ttu-id="2b89c-105">サブスクリプションを使用してメッセージを受信し、ルーティング インフラストラクチャは、後ほど[メッセージのライフ サイクル](../core/lifecycle-of-a-message.md)です。</span><span class="sxs-lookup"><span data-stu-id="2b89c-105">Messages are received using the subscription and routing infrastructure discussed in [Lifecycle of a Message](../core/lifecycle-of-a-message.md).</span></span> <span data-ttu-id="2b89c-106">オーケストレーションに対応するサブスクリプションが到着すると、新しいインスタンスがアクティブ化され、メッセージが配信されます。インスタンス サブスクリプションの場合は、必要に応じてインスタンスが復元されてメッセージが配信されます。</span><span class="sxs-lookup"><span data-stu-id="2b89c-106">When subscriptions are filled for orchestrations, a new instance is activated and the message is delivered, or in the case of instance subscriptions, the instance is rehydrated if necessary and the message is then delivered.</span></span> <span data-ttu-id="2b89c-107">オーケストレーションから送信されたメッセージは、受信場所に到着したメッセージと同じようにメッセージ ボックスに公開され、ルーティングで使用するための適切なプロパティがデータベースに挿入されます。</span><span class="sxs-lookup"><span data-stu-id="2b89c-107">When messages are sent from an orchestration, they are published to the MessageBox in the same manner as a message arriving on a receive location with the appropriate properties getting inserted into the database for use in routing.</span></span>  

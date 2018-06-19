@@ -1,15 +1,15 @@
 ---
-title: "BizTalk では、Oracle E-business Suite アダプターの用語集 |Microsoft ドキュメント"
-description: "共通の用語と Oracle EBS アダプターの BizTalk アダプター パック (BAP) の定義"
-ms.custom: 
+title: BizTalk では、Oracle E-business Suite アダプターの用語集 |Microsoft ドキュメント
+description: 共通の用語と Oracle EBS アダプターの BizTalk アダプター パック (BAP) の定義
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 328b0ed2-58e2-45d5-8322-a72179ad5c8b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218642"
 ---
 # <a name="glossary"></a><span data-ttu-id="aeec2-103">用語集</span><span class="sxs-lookup"><span data-stu-id="aeec2-103">Glossary</span></span>
 <span data-ttu-id="aeec2-104">次の用語と定義がで使用される[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="aeec2-104">The following terms and definitions are used in [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].</span></span>  
@@ -128,7 +129,7 @@ ms.lasthandoff: 09/20/2017
 <span data-ttu-id="aeec2-197">**SOAP メッセージ**</span><span class="sxs-lookup"><span data-stu-id="aeec2-197">**SOAP message**</span></span>  
 <span data-ttu-id="aeec2-198">整形式 XML ドキュメント。</span><span class="sxs-lookup"><span data-stu-id="aeec2-198">A well-formed XML document.</span></span> <span data-ttu-id="aeec2-199">SOAP エンベロープと SOAP エンコーディングの名前空間、XML 宣言 (省略可能)、実際の SOAP エンベロープ (ルート要素)、SOAP ヘッダー (省略可能) および SOAP メッセージ本文で構成されます。</span><span class="sxs-lookup"><span data-stu-id="aeec2-199">It should use the SOAP envelope and SOAP encoding namespaces and include an optional XML declaration, followed by a SOAP envelope (the root element), which is made up of an optional SOAP header and a SOAP message body.</span></span>
 
-<span data-ttu-id="aeec2-200">**SQL Server Integration Services (SSIS)**インポート、エクスポート、およびさまざまなデータ ソースからデータを変換に使用されるコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="aeec2-200">**SQL Server Integration Services (SSIS)** A component that is used to import, export, and transform data from different data sources.</span></span> <span data-ttu-id="aeec2-201">以前のデータ変換サービス (DTS) と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="aeec2-201">Previously called data transformation service (DTS).</span></span>
+<span data-ttu-id="aeec2-200">**SQL Server Integration Services (SSIS)** インポート、エクスポート、およびさまざまなデータ ソースからデータを変換に使用されるコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="aeec2-200">**SQL Server Integration Services (SSIS)** A component that is used to import, export, and transform data from different data sources.</span></span> <span data-ttu-id="aeec2-201">以前のデータ変換サービス (DTS) と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="aeec2-201">Previously called data transformation service (DTS).</span></span>
 
 <span data-ttu-id="aeec2-202">**厳密に型指定されたデータ**</span><span class="sxs-lookup"><span data-stu-id="aeec2-202">**strongly-typed data**</span></span>  
 <span data-ttu-id="aeec2-203">データ セットまたは基になるオブジェクトの種類にバインドされている結果セットです。</span><span class="sxs-lookup"><span data-stu-id="aeec2-203">A data set or result set that is bound to an underlying object type.</span></span> <span data-ttu-id="aeec2-204">厳密に型指定された XML データ セット内の各行で構成されます入力すると、基になるオブジェクトの種類のフィールドに対応する要素の名前します。</span><span class="sxs-lookup"><span data-stu-id="aeec2-204">Each row in a strongly-typed XML data set is composed of typed, named elements that correspond to fields of the underlying object type.</span></span>
@@ -160,4 +161,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="x"></a><span data-ttu-id="aeec2-232">×</span><span class="sxs-lookup"><span data-stu-id="aeec2-232">X</span></span>  
   
-<span data-ttu-id="aeec2-233">**XML スキーマ定義言語 (XSD)**スキーマ言語。</span><span class="sxs-lookup"><span data-stu-id="aeec2-233">**XML Schema definition language (XSD)** A schema language.</span></span> <span data-ttu-id="aeec2-234">World Wide Web Consortium (W3C) XML Schema Part 1 に準拠している要素、属性、およびデータ型を定義する XML スキーマ: XML スキーマ定義言語の構造の推奨事項です。</span><span class="sxs-lookup"><span data-stu-id="aeec2-234">An XML Schema defines the elements, attributes, and data types that comply with the World Wide Web Consortium (W3C) XML Schema Part 1: Structures Recommendation for the XML Schema Definition Language.</span></span> <span data-ttu-id="aeec2-235">W3C XML Schema Part 2: Datatypes recommendation 』 は、勧告の XML スキーマで使用されるデータ型を定義します。</span><span class="sxs-lookup"><span data-stu-id="aeec2-235">The W3C XML Schema Part 2: Datatypes Recommendation is the recommendation for defining data types that are used in XML schemas.</span></span> <span data-ttu-id="aeec2-236">XSD (XML Schema Definition) 言語により、XML メッセージの構造とデータ型を定義できます。</span><span class="sxs-lookup"><span data-stu-id="aeec2-236">The XML Schema definition language enables you to define the structure and data types for XML messages.</span></span>
+<span data-ttu-id="aeec2-233">**XML スキーマ定義言語 (XSD)** スキーマ言語。</span><span class="sxs-lookup"><span data-stu-id="aeec2-233">**XML Schema definition language (XSD)** A schema language.</span></span> <span data-ttu-id="aeec2-234">World Wide Web Consortium (W3C) XML Schema Part 1 に準拠している要素、属性、およびデータ型を定義する XML スキーマ: XML スキーマ定義言語の構造の推奨事項です。</span><span class="sxs-lookup"><span data-stu-id="aeec2-234">An XML Schema defines the elements, attributes, and data types that comply with the World Wide Web Consortium (W3C) XML Schema Part 1: Structures Recommendation for the XML Schema Definition Language.</span></span> <span data-ttu-id="aeec2-235">W3C XML Schema Part 2: Datatypes recommendation 』 は、勧告の XML スキーマで使用されるデータ型を定義します。</span><span class="sxs-lookup"><span data-stu-id="aeec2-235">The W3C XML Schema Part 2: Datatypes Recommendation is the recommendation for defining data types that are used in XML schemas.</span></span> <span data-ttu-id="aeec2-236">XSD (XML Schema Definition) 言語により、XML メッセージの構造とデータ型を定義できます。</span><span class="sxs-lookup"><span data-stu-id="aeec2-236">The XML Schema definition language enables you to define the structure and data types for XML messages.</span></span>

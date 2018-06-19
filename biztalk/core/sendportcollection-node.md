@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269674"
 ---
 # <a name="sendportcollection-node"></a><span data-ttu-id="7ee6b-102">SendPortCollection ノード</span><span class="sxs-lookup"><span data-stu-id="7ee6b-102">SendPortCollection Node</span></span>
 <span data-ttu-id="7ee6b-103">バインド ファイルの SendPortCollection ノードは、そのバインド ファイルでエクスポートされる送信ポートに関する情報を含むすべての SendPort ノードの親ノードです。</span><span class="sxs-lookup"><span data-stu-id="7ee6b-103">The SendPortCollection node of a binding file is the parent node for all of the SendPort nodes which contain specific information about a send port that is exported with the binding file.</span></span>  

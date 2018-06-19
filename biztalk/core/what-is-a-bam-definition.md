@@ -1,18 +1,18 @@
 ---
-title: "BAM 定義について | Microsoft Docs"
-ms.custom: 
+title: BAM 定義について | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definitions [BAM], observation models
 - definitions [BAM], about BAM definitions
 - definitions [BAM]
 ms.assetid: 1ba1f45e-85fe-492f-8a2e-98bf3570c633
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289682"
 ---
 # <a name="what-is-a-bam-definition"></a><span data-ttu-id="b0dfe-103">BAM 定義について</span><span class="sxs-lookup"><span data-stu-id="b0dfe-103">What Is a BAM Definition?</span></span>
 <span data-ttu-id="b0dfe-104">BAM 定義は、BAM 監視モデルの XML 表現で、監視するビジネス プロセスの概要を定義したものです。</span><span class="sxs-lookup"><span data-stu-id="b0dfe-104">A BAM definition is an XML representation of a BAM observation model, which is a high-level definition a business process that you want to monitor.</span></span> <span data-ttu-id="b0dfe-105">監視モデル (つまり BAM 定義) の主要部分は、マイルストーン、収集するデータ イベント (BAM アクティビティ)、データ収集の説明、および情報をユーザー (BAM ビュー) に表示する方法で構成されています。</span><span class="sxs-lookup"><span data-stu-id="b0dfe-105">The main parts of the observation model, and therefore the BAM definition, are the milestone and data events to collect (the BAM activity); a description of any data aggregations; and how to present the information to users (the BAM view).</span></span>  

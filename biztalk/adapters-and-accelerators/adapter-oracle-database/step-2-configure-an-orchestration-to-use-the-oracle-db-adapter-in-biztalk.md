@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Oracle データベース アダプターを使用する BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Oracle データベース アダプターを使用する BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 598b4ab0-ff22-4dfa-aa9c-774c60c90227
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215554"
 ---
 # <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-to-use-the-oracle-database-adapter"></a><span data-ttu-id="c8b6f-102">手順 2: Oracle データベース アダプターを使用する BizTalk Server 管理コンソールでオーケストレーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-102">Step 2: Configure the Orchestration in BizTalk Server Administration Console to use the Oracle Database adapter</span></span>
 <span data-ttu-id="c8b6f-103">![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="c8b6f-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="c8b6f-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="c8b6f-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="c8b6f-105">**目標:**このステップでは、次のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-105">**Objective:** In this step, you perform the following tasks:</span></span>  
+ <span data-ttu-id="c8b6f-105">**目標:** このステップでは、次のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-105">**Objective:** In this step, you perform the following tasks:</span></span>  
   
 -   <span data-ttu-id="c8b6f-106">WCF カスタムを作成する送信の受信ポートを使用して Oracle データベースからメッセージを送受信、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-106">Create a WCF-Custom send-receive port to send and receive messages from the Oracle database using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="c8b6f-107">前の手順で作成したマップを使用するには、このポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-107">Configure this port to use the maps you created in the previous step.</span></span>  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="c8b6f-118">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスをクリックして、**資格情報**タブをクリックし、Oracle データベースへの接続に資格情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-118">In the **WCF-Custom Transport Properties** dialog box, click the **Credentials** tab, and specify the credentials to connect to an Oracle database.</span></span>  
   
-6.  <span data-ttu-id="c8b6f-119">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-119">Click **OK**.</span></span>  
+6.  <span data-ttu-id="c8b6f-119">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-119">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="c8b6f-120">送信ポートのプロパティ ダイアログ ボックスの左ペインで、をクリックして**受信マップ**です。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-120">From the left pane of the send port properties dialog box, click **Inbound Maps**.</span></span> <span data-ttu-id="c8b6f-121">右側のペインの下のフィールドをクリックして、**マップ**列、およびドロップダウンの選択 から**ResponseMap**です。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-121">From the right pane, click the field under the **Map** column, and from the drop-down select **ResponseMap**.</span></span>  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="c8b6f-125">![送信マップを構成する](../../adapters-and-accelerators/adapter-oracle-database/media/697b23d8-4231-4718-8a52-8013fac35e3e.gif "697b23d8-4231-4718-8a52-8013fac35e3e")</span><span class="sxs-lookup"><span data-stu-id="c8b6f-125">![Configure outbound map](../../adapters-and-accelerators/adapter-oracle-database/media/697b23d8-4231-4718-8a52-8013fac35e3e.gif "697b23d8-4231-4718-8a52-8013fac35e3e")</span></span>  
   
-9. <span data-ttu-id="c8b6f-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-126">Click **OK**.</span></span>  
+9. <span data-ttu-id="c8b6f-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-126">Click **OK**.</span></span>  
   
 ### <a name="to-configure-the-biztalk-application"></a><span data-ttu-id="c8b6f-127">BizTalk アプリケーションを構成するには</span><span class="sxs-lookup"><span data-stu-id="c8b6f-127">To configure the BizTalk application</span></span>  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="c8b6f-136">このトピックの前半で作成した、Wcf-custom 送信ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-136">Select the WCF-Custom send port you created earlier in this topic.</span></span>  
   
-    4.  <span data-ttu-id="c8b6f-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-137">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="c8b6f-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-137">Click **OK**.</span></span>  
   
      <span data-ttu-id="c8b6f-138">アプリケーションの構成の詳細についてを参照してください「どのように構成するアプリケーションへ」 [http://go.microsoft.com/fwlink/?LinkID=196961](http://go.microsoft.com/fwlink/?LinkID=196961)です。</span><span class="sxs-lookup"><span data-stu-id="c8b6f-138">For more information about configuring an application, see "How to Configure an Application" at [http://go.microsoft.com/fwlink/?LinkID=196961](http://go.microsoft.com/fwlink/?LinkID=196961).</span></span>  
   

@@ -1,11 +1,11 @@
 ---
-title: "SAP アダプターのクライアントの機能 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターのクライアントの機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - dynamic ports
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - adapters, support for performance counters
 - adapters, support for configuring adapters using binding properties
 ms.assetid: 9003c2c1-931d-405e-9a58-660032195af7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217114"
 ---
 # <a name="features-for-sap-adapter-clients"></a><span data-ttu-id="36384-102">SAP アダプターのクライアントの機能</span><span class="sxs-lookup"><span data-stu-id="36384-102">Features for SAP adapter clients</span></span>
 <span data-ttu-id="36384-103">トピックで説明されている機能だけでなく[BizTalk adapter 用 mySAP Business Suite のアーキテクチャの概要](../../adapters-and-accelerators/adapter-sap/architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite.md)、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアント用の便利な次の機能も提供します。</span><span class="sxs-lookup"><span data-stu-id="36384-103">In addition to the features discussed throughout the topics of [Architecture overview of BizTalk Adapter for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite.md), the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] also provides the following features that are useful for adapter clients.</span></span>  

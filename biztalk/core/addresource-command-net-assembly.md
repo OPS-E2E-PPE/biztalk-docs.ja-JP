@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef6ec298-35fe-4845-9549-685993d2c659
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22231658"
 ---
 # <a name="addresource-command-net-assembly"></a><span data-ttu-id="0d348-102">AddResource コマンド: .NET アセンブリ</span><span class="sxs-lookup"><span data-stu-id="0d348-102">AddResource Command: .NET Assembly</span></span>
 <span data-ttu-id="0d348-103">使用する (マネージ COM コンポーネントまたは COM + コンポーネントを含む) を .NET アセンブリを BizTalk アプリケーションを追加する、 **AddResource** コマンドを指定 **System.BizTalk:Assembly** 、型パラメーターです。</span><span class="sxs-lookup"><span data-stu-id="0d348-103">To add a .NET assembly (which includes managed COM or COM+ components) to a BizTalk application, you use the **AddResource** command and specify **System.BizTalk:Assembly** for the Type parameter.</span></span> <span data-ttu-id="0d348-104">このコマンドを実行すると、該当するアセンブリが BizTalk 管理データベースに追加されます。</span><span class="sxs-lookup"><span data-stu-id="0d348-104">Running this command adds the assembly to the BizTalk Management database.</span></span> <span data-ttu-id="0d348-105">このアセンブリは、BizTalk 管理コンソール (追加先アプリケーションの Resources フォルダー) にも表示されます。</span><span class="sxs-lookup"><span data-stu-id="0d348-105">The assembly is also displayed in the BizTalk Administration console, in the Resources folder of the application to which you added it.</span></span> <span data-ttu-id="0d348-106">さらに、アセンブリが使用すると表示されている、 [ListApp コマンド](../core/listapp-command.md)です。</span><span class="sxs-lookup"><span data-stu-id="0d348-106">In addition, the assembly is listed when you use the [ListApp Command](../core/listapp-command.md).</span></span>  
@@ -24,7 +25,7 @@ ms.lasthandoff: 03/23/2018
  <span data-ttu-id="0d348-107">アプリケーションに同じ完全名の既存のアセンブリが存在する場合は、Overwrite パラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="0d348-107">If an assembly has the same full name as an assembly that already exists in the application, you can specify the Overwrite parameter.</span></span> <span data-ttu-id="0d348-108">完全名は、名前、公開キー トークン、カルチャ、およびバージョンから成ります。</span><span class="sxs-lookup"><span data-stu-id="0d348-108">The full name consists of the name, public key token, culture, and version.</span></span> <span data-ttu-id="0d348-109">この場合、既存のアセンブリは上書きされます。</span><span class="sxs-lookup"><span data-stu-id="0d348-109">In this case, the existing assembly is overwritten.</span></span> <span data-ttu-id="0d348-110">依存関係に関する詳細については、次を参照してください。[の依存関係とアプリケーションの配置](../core/dependencies-and-application-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="0d348-110">For more information about dependencies, see [Dependencies and Application Deployment](../core/dependencies-and-application-deployment.md).</span></span>  
   
 ## <a name="usage"></a><span data-ttu-id="0d348-111">使用方法</span><span class="sxs-lookup"><span data-stu-id="0d348-111">Usage</span></span>  
- <span data-ttu-id="0d348-112">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]</span><span class="sxs-lookup"><span data-stu-id="0d348-112">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+ <span data-ttu-id="0d348-112">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]</span><span class="sxs-lookup"><span data-stu-id="0d348-112">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
 ## <a name="parameters"></a><span data-ttu-id="0d348-113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d348-113">Parameters</span></span>  
   

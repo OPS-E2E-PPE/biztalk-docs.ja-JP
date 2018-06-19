@@ -1,11 +1,11 @@
 ---
-title: "実行中のオーケストレーションのデータ損失の解決 |Microsoft ドキュメント"
-ms.custom: 
+title: 実行中のオーケストレーションのデータ損失の解決 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data loss, MessageBox database
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - orchestrations, data recovery
 - orchestrations, data loss
 ms.assetid: dc6f1fd2-1976-40f2-ab57-41c7db40705e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269002"
 ---
 # <a name="resolving-data-loss-of-in-progress-orchestrations"></a><span data-ttu-id="a2bfe-102">進行中のオーケストレーションのデータ損失の解決</span><span class="sxs-lookup"><span data-stu-id="a2bfe-102">Resolving Data Loss of In-Progress Orchestrations</span></span>
 <span data-ttu-id="a2bfe-103">メッセージ ボックス データベースには、現在進行中のオーケストレーションの状態情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="a2bfe-103">MessageBox databases contain the state of orchestrations that are currently in progress.</span></span> <span data-ttu-id="a2bfe-104">メッセージ ボックス データベースで正確にどのデータの損失があったかを検出する方法はありませんが、損失データの情報を収集するための手段はあります。</span><span class="sxs-lookup"><span data-stu-id="a2bfe-104">Although there is no way to tell exactly what data has been lost from the MessageBox databases, there are some steps you can take to gather information about the lost data:</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベース アダプターのクライアントの機能 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターのクライアントの機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data streaming, support for
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - dynamic ports in BizTalk, support for
 - data streaming
 ms.assetid: 63b52573-80a5-4206-95c3-478b86718fee
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214322"
 ---
 # <a name="features-for-oracle-database-adapter-clients"></a><span data-ttu-id="f8867-102">Oracle データベース アダプターのクライアントの機能</span><span class="sxs-lookup"><span data-stu-id="f8867-102">Features for Oracle Database adapter clients</span></span>
 <span data-ttu-id="f8867-103">トピックで説明されている機能だけでなく[概要の BizTalk Adapter 用 Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/overview-of-biztalk-adapter-for-oracle-database.md)、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプター クライアント用の便利な次の機能も提供します。</span><span class="sxs-lookup"><span data-stu-id="f8867-103">In addition to the features discussed throughout the topics of [Overview of BizTalk Adapter for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/overview-of-biztalk-adapter-for-oracle-database.md), the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] also provides the following features that are useful for adapter clients:</span></span>  

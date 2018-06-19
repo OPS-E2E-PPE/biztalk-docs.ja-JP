@@ -1,11 +1,11 @@
 ---
-title: "ロール リンクとサービス リンク ロール |Microsoft ドキュメント"
-ms.custom: 
+title: ロール リンクとサービス リンク ロール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, orchestrations
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - role links, about role links
 - orchestrations, deleting
 ms.assetid: 23b4ca34-a1a5-44d4-a50d-661277681c72
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268682"
 ---
 # <a name="role-links-and-service-link-roles"></a><span data-ttu-id="45a29-102">ロール リンクとサービス リンク ロール</span><span class="sxs-lookup"><span data-stu-id="45a29-102">Role Links and Service Link Roles</span></span>
 <span data-ttu-id="45a29-103">A*ロール*サービスを使用するか、サービスを実装するポートの種類のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="45a29-103">A *role* is a collection of port types that either uses a service or implements a service.</span></span> <span data-ttu-id="45a29-104">ロールは、パーティが単一または複数のオーケストレーションを持つ場合の対話処理の種類を表します。</span><span class="sxs-lookup"><span data-stu-id="45a29-104">A role represents the type of interaction that a party can have with one or many orchestrations.</span></span> <span data-ttu-id="45a29-105">パーティの数が増えるにつれて、ロールによって管理を柔軟かつ簡単に行えるようになります。</span><span class="sxs-lookup"><span data-stu-id="45a29-105">Roles provide flexibility and ease of management as the number of parties increase.</span></span> <span data-ttu-id="45a29-106">たとえば、あるオーケストレーションで出荷業者のロールを使用するとします。</span><span class="sxs-lookup"><span data-stu-id="45a29-106">For example, an orchestration might use the role of a Shipper.</span></span> <span data-ttu-id="45a29-107">出荷業者は、1 つまたは 2 つのパーティが関連付けられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="45a29-107">The Shipper would have one or two parties associated with it.</span></span> <span data-ttu-id="45a29-108">オーケストレーションでアイテムの出荷業者を決定する際には、出荷業者ロールのパーティの価格が比較されます。</span><span class="sxs-lookup"><span data-stu-id="45a29-108">When the orchestration decides which shipping company to use to ship an item, it compares the prices of the parties in the Shipper role.</span></span>  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb4fb73f-b783-4a04-9bd6-a135b3dd2655
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22268754"
 ---
 # <a name="required-user-rights-for-managing-bam-definition-files"></a><span data-ttu-id="87f43-102">BAM 定義ファイルの管理に必要なユーザー権利</span><span class="sxs-lookup"><span data-stu-id="87f43-102">Required User Rights for Managing BAM Definition Files</span></span>
 <span data-ttu-id="87f43-103">BAM 定義ファイルは、どのロールのユーザーでも作成、管理、および表示を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="87f43-103">BAM definition files can be created, managed, and viewed by users in any role.</span></span> <span data-ttu-id="87f43-104">BAM 定義ファイルの管理には、これらのファイルの展開と削除だけでなく、定義ファイルに関連付けられているアクティビティ、ビュー、警告、およびアイテムの管理も伴います。</span><span class="sxs-lookup"><span data-stu-id="87f43-104">Managing BAM definition files includes deploying and removing them as well as managing the activities, views, alerts, and artifacts that are associated with the definition file.</span></span>  

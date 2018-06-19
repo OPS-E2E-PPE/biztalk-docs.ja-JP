@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して SAP Rfc を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SAP Rfc を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - invoking RFCs, using the WCF service model
 - WCF service model, invoking RFCs
 ms.assetid: 06a373e2-5d16-4480-81ec-611bd0b9749c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217522"
 ---
 # <a name="invoke-rfcs-in-sap-using-the-wcf-service-model"></a><span data-ttu-id="16bb4-102">WCF サービス モデルを使用して SAP Rfc を呼び出す</span><span class="sxs-lookup"><span data-stu-id="16bb4-102">Invoke RFCs in SAP using the WCF Service Model</span></span>
 <span data-ttu-id="16bb4-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]クライアント プログラムで呼び出すことができる操作として、SAP システムでの Rfc を表示します。</span><span class="sxs-lookup"><span data-stu-id="16bb4-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] surfaces RFCs on the SAP system as operations that can be invoked by a client program.</span></span> <span data-ttu-id="16bb4-104">WCF サービス モデルでは、これらの操作が生成された WCF クライアント クラスのメソッドとして呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="16bb4-104">In the WCF service model, these operations are invoked as methods of a generated WCF client class.</span></span> <span data-ttu-id="16bb4-105">使用することができます、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]用、コードで起動する RFC の各メソッドを含む WCF クライアント クラスを生成します。</span><span class="sxs-lookup"><span data-stu-id="16bb4-105">You can use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate a WCF client class that contains methods for each RFC that you want to invoke in your code.</span></span> <span data-ttu-id="16bb4-106">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]も RFC の各によって使用されているパラメーターとデータ型をカプセル化する .NET 型を生成します。</span><span class="sxs-lookup"><span data-stu-id="16bb4-106">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] also generates .NET types to encapsulate the parameters and data types that are used by each RFC.</span></span> <span data-ttu-id="16bb4-107">この WCF クライアント クラスのインスタンスを作成し、ターゲットの Rfc を起動するには、そのメソッドを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="16bb4-107">You can then create an instance of this WCF client class and call its methods to invoke the target RFCs.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "手順 3: SAP からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: SAP からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO application, creating an
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Web Part page, creating a
 - Shared Services Provider, creating a
 ms.assetid: 7158caec-9dc0-477c-9db3-179e634e5196
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,13 +25,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219538"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-sap"></a><span data-ttu-id="d52e3-102">手順 3: SAP からデータを取得する SharePoint アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-102">Step 3: Create a SharePoint Application to Retrieve Data from SAP</span></span>
 <span data-ttu-id="d52e3-103">![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="d52e3-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="d52e3-104">**所要時間:** 15 分</span><span class="sxs-lookup"><span data-stu-id="d52e3-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="d52e3-105">**目標:**今すぐビジネス データ カタログ定義エディター ツールを使用して作成したアプリケーション定義ファイルを実行し、Microsoft Office SharePoint Server にインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d52e3-105">**Objective:** You must now take the application definition file that you created by using the Business Data Catalog Definition Editor tool, and import it into Microsoft Office SharePoint Server.</span></span>  
+ <span data-ttu-id="d52e3-105">**目標:** 今すぐビジネス データ カタログ定義エディター ツールを使用して作成したアプリケーション定義ファイルを実行し、Microsoft Office SharePoint Server にインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d52e3-105">**Objective:** You must now take the application definition file that you created by using the Business Data Catalog Definition Editor tool, and import it into Microsoft Office SharePoint Server.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="d52e3-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="d52e3-106">Prerequisites</span></span>  
   
@@ -94,9 +95,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="d52e3-155">Customer_Orders.xml、[参照] を開くと、アプリケーション定義のインポート ページで、ファイルを選択し、をクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="d52e3-155">On the Import Application Definition page that opens, browse to Customer_Orders.xml, select the file, and then click **Open**.</span></span>  
   
-5.  <span data-ttu-id="d52e3-156">**[インポート]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-156">Click **Import**.</span></span>  
+5.  <span data-ttu-id="d52e3-156">**[インポート]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-156">Click **Import**.</span></span>  
   
-6.  <span data-ttu-id="d52e3-157">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-157">Click **OK**.</span></span>  
+6.  <span data-ttu-id="d52e3-157">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-157">Click **OK**.</span></span>  
   
      <span data-ttu-id="d52e3-158">アプリケーションをインポートした後に移動して、アプリケーションを表示することができます、**ビュー アプリケーション**リンクします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-158">After importing the application, you can view your application by going to the **View Applications** link.</span></span> <span data-ttu-id="d52e3-159">アプリケーション内のエンティティを表示するのには、アプリケーション名をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-159">Click the application name to see the entities in the application.</span></span>  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="d52e3-197">**保存場所**セクションで、**ドキュメント ライブラリ**一覧で、クリックして**フォーム テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="d52e3-197">In the **Save Location** section, in the **Document Library** list, click **Form Templates**.</span></span>  
   
-    5.  <span data-ttu-id="d52e3-198">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-198">Click **Create**.</span></span> <span data-ttu-id="d52e3-199">次の図は、作成した後、Web パーツ ページを示します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-199">The following figure shows a Web Part page after it is just created.</span></span>  
+    5.  <span data-ttu-id="d52e3-198">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-198">Click **Create**.</span></span> <span data-ttu-id="d52e3-199">次の図は、作成した後、Web パーツ ページを示します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-199">The following figure shows a Web Part page after it is just created.</span></span>  
   
          <span data-ttu-id="d52e3-200">![空の Web パーツ ページ](../../adapters-and-accelerators/adapter-sap/media/6aa68c43-59df-47c4-95a6-453f7c668025.gif "6aa68c43-59df-47c4-95a6-453f7c668025")</span><span class="sxs-lookup"><span data-stu-id="d52e3-200">![Empty Web Part page](../../adapters-and-accelerators/adapter-sap/media/6aa68c43-59df-47c4-95a6-453f7c668025.gif "6aa68c43-59df-47c4-95a6-453f7c668025")</span></span>  
   
@@ -181,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="d52e3-226">![SharePoint 内の特定の列の表示](../../adapters-and-accelerators/adapter-sap/media/24213b67-aafe-4534-91a7-06bde7bcbf7c.gif "24213b67-aafe-4534-91a7-06bde7bcbf7c")</span><span class="sxs-lookup"><span data-stu-id="d52e3-226">![View specific columns in SharePoint](../../adapters-and-accelerators/adapter-sap/media/24213b67-aafe-4534-91a7-06bde7bcbf7c.gif "24213b67-aafe-4534-91a7-06bde7bcbf7c")</span></span>  
   
-10. <span data-ttu-id="d52e3-227">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-227">Click **OK**.</span></span>  
+10. <span data-ttu-id="d52e3-227">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-227">Click **OK**.</span></span>  
   
 ### <a name="adding-a-business-data-item-web-part"></a><span data-ttu-id="d52e3-228">ビジネス データ項目の Web パーツを追加します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-228">Adding a Business Data Item Web Part</span></span>  
  <span data-ttu-id="d52e3-229">ビジネス データ項目の Web パーツを Web パーツ ページに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d52e3-229">You must now add a Business Data Item Web Part to the Web Part page.</span></span> <span data-ttu-id="d52e3-230">この Web パーツは、先ほど作成したビジネス データ一覧 Web パーツに接続します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-230">You will also connect this Web Part to the Business Data List Web Part that you just created.</span></span> <span data-ttu-id="d52e3-231">これにより、ビジネス データ一覧 Web パーツで選択した顧客の詳細を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="d52e3-231">By doing so, you will be able to see the details for a customer that you select in the Business Data List Web Part.</span></span> <span data-ttu-id="d52e3-232">この Web パーツに対応する、 **Specific Finder**メソッド インスタンス (*GetCustomerByNumber_Instance*) で、ビジネス データ カタログ定義エディターを作成しました。</span><span class="sxs-lookup"><span data-stu-id="d52e3-232">This Web Part corresponds to the **Specific Finder** method instance (*GetCustomerByNumber_Instance*) that you created in the Business Data Catalog Definition Editor.</span></span>  
@@ -211,7 +212,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="d52e3-247">**フィールド**セクションで、**選択**ページに表示するフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-247">In the **Fields** section, click **Choose** to select the fields you want to display on the page.</span></span>  
   
-10. <span data-ttu-id="d52e3-248">展開、**外観**ノード、および、**タイトル**フィールドに、Web パーツのタイトルを指定します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-248">Expand the **Appearance** node, and in the **Title** field, specify a title for the Web Part.</span></span> <span data-ttu-id="d52e3-249">この Web パーツを指定する**、特定の顧客の詳細**です。</span><span class="sxs-lookup"><span data-stu-id="d52e3-249">For this Web Part, specify **Details for a Specific Customer**.</span></span>  
+10. <span data-ttu-id="d52e3-248">展開、**外観**ノード、および、**タイトル**フィールドに、Web パーツのタイトルを指定します。</span><span class="sxs-lookup"><span data-stu-id="d52e3-248">Expand the **Appearance** node, and in the **Title** field, specify a title for the Web Part.</span></span> <span data-ttu-id="d52e3-249">この Web パーツを指定する **、特定の顧客の詳細**です。</span><span class="sxs-lookup"><span data-stu-id="d52e3-249">For this Web Part, specify **Details for a Specific Customer**.</span></span>  
   
 11. <span data-ttu-id="d52e3-250">をクリックして**適用**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="d52e3-250">Click **Apply**, and then click **OK**.</span></span>  
   
@@ -248,7 +249,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="d52e3-276">[ビューの編集] ページで、**列**セクションで、表示しない列に対して、テキスト ボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-276">On the Edit View page, in the **Columns** section, clear the text boxes against the columns that you do not want to display.</span></span>  
   
-10. <span data-ttu-id="d52e3-277">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-277">Click **OK**.</span></span>  
+10. <span data-ttu-id="d52e3-277">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d52e3-277">Click **OK**.</span></span>  
   
 11. <span data-ttu-id="d52e3-278">Web パーツを接続、**顧客リスト**Web パーツ。</span><span class="sxs-lookup"><span data-stu-id="d52e3-278">Connect the Web Part to the **Customer List** Web Part.</span></span> <span data-ttu-id="d52e3-279">そのためには次を行います。</span><span class="sxs-lookup"><span data-stu-id="d52e3-279">To do so:</span></span>  
   

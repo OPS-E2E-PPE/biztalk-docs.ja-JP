@@ -1,18 +1,18 @@
 ---
-title: "ポリシー テストのトレース出力例 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシー テストのトレース出力例 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, policies
 - policies, testing
 - testing, examples
 ms.assetid: 92e1dc7f-1a8d-41a5-84b6-46d5ad9f2ef2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266682"
 ---
 # <a name="policy-test-trace-output-examples"></a><span data-ttu-id="adda6-102">ポリシー テストのトレース出力例</span><span class="sxs-lookup"><span data-stu-id="adda6-102">Policy Test Trace Output Examples</span></span>
 <span data-ttu-id="adda6-103">このセクションでは、さまざまな種類のファクトに関するポリシー テストの出力例について説明します。</span><span class="sxs-lookup"><span data-stu-id="adda6-103">This section contains examples of the policy test output for different types of facts.</span></span>  
@@ -127,7 +128,7 @@ THEN <do something>
   
  <span data-ttu-id="adda6-150">ルール セット名: LoanProcessing</span><span class="sxs-lookup"><span data-stu-id="adda6-150">Ruleset Name: LoanProcessing</span></span>  
   
- <span data-ttu-id="adda6-151">テスト式: 選択 * [CustInfo] から、[CreditCardBalance] > 0</span><span class="sxs-lookup"><span data-stu-id="adda6-151">Test Expression: select * from [CustInfo] where [CreditCardBalance] > 0</span></span>  
+ <span data-ttu-id="adda6-151">テスト式: 選択 \* [CustInfo] から、[CreditCardBalance] > 0</span><span class="sxs-lookup"><span data-stu-id="adda6-151">Test Expression: select \* from [CustInfo] where [CreditCardBalance] > 0</span></span>  
   
  <span data-ttu-id="adda6-152">左側のオペランド値: </span><span class="sxs-lookup"><span data-stu-id="adda6-152">Left Operand Value:</span></span>  
   

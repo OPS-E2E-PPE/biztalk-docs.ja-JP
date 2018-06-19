@@ -1,14 +1,14 @@
 ---
-title: "状態レポート データ ストア |Microsoft ドキュメント"
-ms.custom: 
+title: 状態レポート データ ストア |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6cd40ce8-1ac6-43b4-9cef-7cd045e8893c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278098"
 ---
 # <a name="status-report-data-stores"></a><span data-ttu-id="17f69-102">状態レポート データ ストア</span><span class="sxs-lookup"><span data-stu-id="17f69-102">Status Report Data Stores</span></span>
 <span data-ttu-id="17f69-103">状態レポート追跡データは、BAM プライマリ インポート データベースに格納されます。</span><span class="sxs-lookup"><span data-stu-id="17f69-103">Status reporting tracking data is stored in the BAM Primary Import database.</span></span> <span data-ttu-id="17f69-104">このデータベースの多数のテーブル (dbo.bam_AS2、dbo.bam.batching、dbo.bam.InterchangeStatusActivity などで始まるテーブルを含む) は、EDI および AS2 メッセージ データに使用されます。</span><span class="sxs-lookup"><span data-stu-id="17f69-104">A number of tables in this database are used for EDI and AS2 message data, including tables starting with dbo.bam_AS2, dbo.bam.batching, dbo.bam.InterchangeStatusActivity, and others.</span></span> <span data-ttu-id="17f69-105">EDI レポートが無効になっている場合でも、状態データはプライマリ インポートに格納されます。</span><span class="sxs-lookup"><span data-stu-id="17f69-105">Status data is stored in the Primary Import even if EDI reporting is disabled.</span></span> <span data-ttu-id="17f69-106">状態レポートがアクティブになっている場合、実行できるのは、状態レポート内のこのデータの表示と照会のみです。</span><span class="sxs-lookup"><span data-stu-id="17f69-106">You will only be to view and query this data in the status reporting UI if status reporting is activated.</span></span>  

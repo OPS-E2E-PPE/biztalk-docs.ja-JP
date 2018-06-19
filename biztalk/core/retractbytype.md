@@ -1,11 +1,11 @@
 ---
-title: "RetractByType |Microsoft ドキュメント"
-ms.custom: 
+title: RetractByType |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RetractByType function [Business Rules Engine], TypedXMLDocument
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - RetractByType function [Business Rules Engine], DataConnection
 - .NET objects
 ms.assetid: e8867553-ee3c-46be-84cd-d5373eaf3337
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268738"
 ---
 # <a name="retractbytype"></a><span data-ttu-id="17116-102">[種類別の取り消し]</span><span class="sxs-lookup"><span data-stu-id="17116-102">RetractByType</span></span>
 <span data-ttu-id="17116-103">**RetractByType**関数によって、作業メモリに指定した型のすべてのインスタンスが取り消された、 **Retract**関数には、特定の種類の特定の項目だけが取り消されます。</span><span class="sxs-lookup"><span data-stu-id="17116-103">The **RetractByType** function retracts all instances of a specified type in the working memory, whereas the **Retract**function retracts only specific items of a certain type.</span></span> <span data-ttu-id="17116-104">以下に述べる方法、 **RetractByType**関数は、さまざまな種類のエンティティで機能します。</span><span class="sxs-lookup"><span data-stu-id="17116-104">The following paragraphs describe how the **RetractByType** function works with entities of different types.</span></span>  

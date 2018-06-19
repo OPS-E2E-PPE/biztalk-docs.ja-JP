@@ -1,14 +1,14 @@
 ---
-title: "アダプター フレームワーク構成スキーマの拡張機能 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター フレームワーク構成スキーマの拡張機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 27c9727f-5f97-41ee-a0b8-45d90427b0af
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225226"
 ---
 # <a name="adapter-framework-configuration-schema-extensions"></a><span data-ttu-id="90822-102">アダプター フレームワーク構成スキーマの拡張機能</span><span class="sxs-lookup"><span data-stu-id="90822-102">Adapter Framework Configuration Schema Extensions</span></span>
 <span data-ttu-id="90822-103">BizTalk アダプター フレームワークは、XSD 定義に基づくユーザー インターフェイスの動的生成をサポートします。</span><span class="sxs-lookup"><span data-stu-id="90822-103">The BizTalk Adapter Framework supports the dynamic generation of user interfaces based on an XSD definition.</span></span> <span data-ttu-id="90822-104">アダプターは必要な XSD を提供し、アダプター フレームワークはユーザーが値を入力できるプロパティ ページを作成します。</span><span class="sxs-lookup"><span data-stu-id="90822-104">The adapter supplies the required XSD and the Adapter Framework creates a property page that allows the user to enter values.</span></span>  

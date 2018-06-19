@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用してクエリ通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用してクエリ通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b2ed0f0-d005-4eec-b1a6-97a0c94678dc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224506"
 ---
 # <a name="receive-query-notifications-using-the-sql-adapter"></a><span data-ttu-id="db8da-102">SQL アダプタを使用してクエリ通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="db8da-102">Receive query notifications using the SQL adapter</span></span>
 <span data-ttu-id="db8da-103">アダプターのクライアントは、通知を受信するクエリ、データの変更について、SQL Server データベースでサブスクライブできます。</span><span class="sxs-lookup"><span data-stu-id="db8da-103">The adapter clients can subscribe to receive query notifications about the data changes in the SQL Server database.</span></span> <span data-ttu-id="db8da-104">SQL SELECT ステートメントまたはストアド プロシージャは、クエリ通知のトリガー用のテーブルにデータ変更の条件を指定、SQL Server クエリ通知を送信して、SELECT ステートメントまたはストアド プロシージャの変更の結果を設定するとします。</span><span class="sxs-lookup"><span data-stu-id="db8da-104">A SQL SELECT statement or a stored procedure specifies the data-change criteria in a table for triggering of the query notifications, and the SQL Server sends query notifications as and when the result set for the SELECT statement or the stored procedure changes.</span></span>  
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="db8da-128">クエリ通知は、SQL Server によって開始されます。</span><span class="sxs-lookup"><span data-stu-id="db8da-128">Query notification is initiated by SQL Server.</span></span> <span data-ttu-id="db8da-129">だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セットの変更がある場合に通知を開始するように指示します。</span><span class="sxs-lookup"><span data-stu-id="db8da-129">The notification statement issued by the adapter just instructs the database to initiate notification in case there is a change in the result set of the statement.</span></span>|<span data-ttu-id="db8da-130">ポーリングは、アダプターによって開始されます。</span><span class="sxs-lookup"><span data-stu-id="db8da-130">Polling is initiated by the adapter.</span></span> <span data-ttu-id="db8da-131">アダプターは、データのポーリングを使用し、ポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証するステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="db8da-131">The adapter executes a statement to validate whether data is available for polling, and then initiates polling by executing the polling statement if some data is available for polling.</span></span>|  
 |<span data-ttu-id="db8da-132">クエリ通知のステートメントを使用すると、SQL Server データベース テーブルにデータを読み取るだけです。</span><span class="sxs-lookup"><span data-stu-id="db8da-132">You can use the query notification statement to only read data in a SQL Server database table.</span></span>|<span data-ttu-id="db8da-133">ポーリング ステートメントを使用して、読み取るまたは SQL Server データベース テーブル内のデータを更新することができます。</span><span class="sxs-lookup"><span data-stu-id="db8da-133">You can use the polling statement to read or update data in a SQL Server database table.</span></span>|  
 |<span data-ttu-id="db8da-134">クエリ通知が、Insert などのデータ変更の種類にのみ通知は、更新、および削除します。</span><span class="sxs-lookup"><span data-stu-id="db8da-134">Query notification informs only about the type of change in the data such as Insert, Update, and Delete.</span></span>|<span data-ttu-id="db8da-135">ポーリングでは、実際のデータが変更されたことについて通知されます。</span><span class="sxs-lookup"><span data-stu-id="db8da-135">Polling informs you about the actual data that has changed.</span></span>|  
-|<span data-ttu-id="db8da-136">データの変更通知は瞬時に発生します。</span><span class="sxs-lookup"><span data-stu-id="db8da-136">The data-change notification is instantaneous.</span></span>|<span data-ttu-id="db8da-137">アダプター クライアントは、すべてのポーリング間隔の最後にデータの変更に関する通知は、データの変更通知は、ポーリング間隔によって異なります。</span><span class="sxs-lookup"><span data-stu-id="db8da-137">The data-change notification depends on the polling interval, and the adapter clients are informed about the data changes at the end of every polling interval.</span></span> <span data-ttu-id="db8da-138">**ヒント:**ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。</span><span class="sxs-lookup"><span data-stu-id="db8da-138">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="db8da-139">代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="db8da-139">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last change notification.</span></span>|  
+|<span data-ttu-id="db8da-136">データの変更通知は瞬時に発生します。</span><span class="sxs-lookup"><span data-stu-id="db8da-136">The data-change notification is instantaneous.</span></span>|<span data-ttu-id="db8da-137">アダプター クライアントは、すべてのポーリング間隔の最後にデータの変更に関する通知は、データの変更通知は、ポーリング間隔によって異なります。</span><span class="sxs-lookup"><span data-stu-id="db8da-137">The data-change notification depends on the polling interval, and the adapter clients are informed about the data changes at the end of every polling interval.</span></span> <span data-ttu-id="db8da-138">**ヒント:** ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。</span><span class="sxs-lookup"><span data-stu-id="db8da-138">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="db8da-139">代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="db8da-139">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last change notification.</span></span>|  
   
  <span data-ttu-id="db8da-140">クエリ通知の詳細については[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]を参照してください[を使用して BizTalk Server での SQL クエリ通知の受信](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="db8da-140">For more information about query notification in [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)], see [Receive SQL Query Notifications by Using BizTalk Server](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md).</span></span>  
   

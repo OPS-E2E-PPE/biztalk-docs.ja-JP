@@ -1,14 +1,14 @@
 ---
-title: "バッチ EDI インターチェンジを受信した保持 |Microsoft ドキュメント"
-ms.custom: 
+title: バッチ EDI インターチェンジを受信した保持 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10d21b9b-9684-422a-8948-8bd71a4d5a10
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265682"
 ---
 # <a name="preserving-a-received-batched-edi-interchange"></a><span data-ttu-id="9ae1e-102">受信したバッチ EDI インターチェンジの保存</span><span class="sxs-lookup"><span data-stu-id="9ae1e-102">Preserving a Received Batched EDI Interchange</span></span>
 > [!NOTE]
 >  <span data-ttu-id="9ae1e-103">このトピックに記載されているすべてのユーザー インターフェイス オプションで使用できる、**ローカル ホスト設定**ページ (**受信者の設定**セクション) で双方向アグリーメント タブの**アグリーメントのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="9ae1e-103">All the user interface options mentioned in this topic are available in the **Local Host Settings** page (**Receiver’s Settings** section) of the bi-directional agreement tabs in the **Agreement Properties** dialog box.</span></span>  
   
- <span data-ttu-id="9ae1e-104">EDI 受信パイプラインが受信バッチ EDI インターチェンジを保存する場合、各トランザクション セットまたはメッセージを別々の中間 XML ファイルに解析する通常の処理は実行されません。</span><span class="sxs-lookup"><span data-stu-id="9ae1e-104">When the EDI receive pipeline preserves an inbound batched EDI interchange, the normal parsing of each transaction set/message into separate intermediate XML files is not performed.</span></span> <span data-ttu-id="9ae1e-105">EDI 受信パイプラインは、インターチェンジをトランザクション セットまたはメッセージに分割せず、1 つのドキュメントとして処理します。</span><span class="sxs-lookup"><span data-stu-id="9ae1e-105">The EDI receive pipeline processes the interchange as one document without splitting the transaction sets/messages.</span></span> <span data-ttu-id="9ae1e-106">これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または**- インターチェンジの保存時にトランザクション セットを中断エラー**です。</span><span class="sxs-lookup"><span data-stu-id="9ae1e-106">This occurs when the **Inbound batch processing option** property is set to **Preserve Interchange - suspend Interchange on Error** or **Preserve Interchange - suspend Transaction Sets on Error**.</span></span>  
+ <span data-ttu-id="9ae1e-104">EDI 受信パイプラインが受信バッチ EDI インターチェンジを保存する場合、各トランザクション セットまたはメッセージを別々の中間 XML ファイルに解析する通常の処理は実行されません。</span><span class="sxs-lookup"><span data-stu-id="9ae1e-104">When the EDI receive pipeline preserves an inbound batched EDI interchange, the normal parsing of each transaction set/message into separate intermediate XML files is not performed.</span></span> <span data-ttu-id="9ae1e-105">EDI 受信パイプラインは、インターチェンジをトランザクション セットまたはメッセージに分割せず、1 つのドキュメントとして処理します。</span><span class="sxs-lookup"><span data-stu-id="9ae1e-105">The EDI receive pipeline processes the interchange as one document without splitting the transaction sets/messages.</span></span> <span data-ttu-id="9ae1e-106">これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または **- インターチェンジの保存時にトランザクション セットを中断エラー**です。</span><span class="sxs-lookup"><span data-stu-id="9ae1e-106">This occurs when the **Inbound batch processing option** property is set to **Preserve Interchange - suspend Interchange on Error** or **Preserve Interchange - suspend Transaction Sets on Error**.</span></span>  
   
  <span data-ttu-id="9ae1e-107">**スキーマの検証**</span><span class="sxs-lookup"><span data-stu-id="9ae1e-107">**Schema Validation**</span></span>  
   

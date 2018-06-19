@@ -1,14 +1,14 @@
 ---
-title: "手順 3: を構成し、アプリケーションを起動 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: を構成し、アプリケーションを起動 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4252470-805e-404f-80d5-df8d1ff3af63
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223506"
 ---
 # <a name="step-3-configure-and-start-the-application"></a><span data-ttu-id="a6cf6-102">手順 3: を構成し、アプリケーションを起動</span><span class="sxs-lookup"><span data-stu-id="a6cf6-102">Step 3: Configure and Start the Application</span></span>
 <span data-ttu-id="a6cf6-103">![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="a6cf6-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="a6cf6-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="a6cf6-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="a6cf6-105">**目標:**この手順で構成して SampleApplication アプリケーションを起動します。</span><span class="sxs-lookup"><span data-stu-id="a6cf6-105">**Objective:** In this step, you configure and start the SampleApplication application.</span></span> <span data-ttu-id="a6cf6-106">作成した論理アイテムに関連付ける SampleApplication アプリケーションを構成するときに[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]物理対応するとします。</span><span class="sxs-lookup"><span data-stu-id="a6cf6-106">When you configure the SampleApplication application, you associate the logical artifacts you created in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] with their physical counterparts.</span></span>  
+ <span data-ttu-id="a6cf6-105">**目標:** この手順で構成して SampleApplication アプリケーションを起動します。</span><span class="sxs-lookup"><span data-stu-id="a6cf6-105">**Objective:** In this step, you configure and start the SampleApplication application.</span></span> <span data-ttu-id="a6cf6-106">作成した論理アイテムに関連付ける SampleApplication アプリケーションを構成するときに[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]物理対応するとします。</span><span class="sxs-lookup"><span data-stu-id="a6cf6-106">When you configure the SampleApplication application, you associate the logical artifacts you created in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] with their physical counterparts.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="a6cf6-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="a6cf6-107">Prerequisites</span></span>  
  <span data-ttu-id="a6cf6-108">完了する必要があります[手順 2: ポートを構成する](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)です。</span><span class="sxs-lookup"><span data-stu-id="a6cf6-108">You must have completed [Step 2: Configure the Ports](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md).</span></span>  

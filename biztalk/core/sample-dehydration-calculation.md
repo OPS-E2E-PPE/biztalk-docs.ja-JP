@@ -1,14 +1,14 @@
 ---
-title: "退避の計算をサンプル |Microsoft ドキュメント"
-ms.custom: 
+title: 退避の計算をサンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4da41d0d-10ee-4f64-97d1-3cfa9da153f7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268882"
 ---
 # <a name="sample-dehydration-calculation"></a><span data-ttu-id="1905f-102">退避の計算のサンプル</span><span class="sxs-lookup"><span data-stu-id="1905f-102">Sample Dehydration Calculation</span></span>
 <span data-ttu-id="1905f-103">次に示す例は、BizTalk が退避するかどうかをプライベート バイトを使用して計算するサンプルです。</span><span class="sxs-lookup"><span data-stu-id="1905f-103">Here is an example of a sample calculation, using private bytes, to determine if BizTalk will dehydrate or not.</span></span> <span data-ttu-id="1905f-104">ここでは、既定の構成値と、いくつかの実行時値の例を使用します。</span><span class="sxs-lookup"><span data-stu-id="1905f-104">It uses the default configured values, and some example run-time values.</span></span>  

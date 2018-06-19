@@ -1,11 +1,11 @@
 ---
-title: "ポートのバインド |Microsoft ドキュメント"
-ms.custom: 
+title: ポートのバインド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, warnings
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - bindings, deployment
 - bindings, dynamic
 ms.assetid: b61c725a-0082-42d3-b88a-533583161734
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265202"
 ---
 # <a name="port-bindings"></a><span data-ttu-id="dc2d1-102">ポートのバインド</span><span class="sxs-lookup"><span data-stu-id="dc2d1-102">Port Bindings</span></span>
 <span data-ttu-id="dc2d1-103">ポートのバインドとは、メッセージを送受信する場所と方法を定義した構成情報です。</span><span class="sxs-lookup"><span data-stu-id="dc2d1-103">A port binding is the configuration information that determines where and how a message will be sent or received.</span></span> <span data-ttu-id="dc2d1-104">ポートのバインドの参照先は、物理的な場所、パイプライン、他のオーケストレーションなど、バインドの種類によって異なります。</span><span class="sxs-lookup"><span data-stu-id="dc2d1-104">Depending on its type, a port binding might refer to physical locations, pipelines, or other orchestrations.</span></span>  

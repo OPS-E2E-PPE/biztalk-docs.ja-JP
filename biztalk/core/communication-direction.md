@@ -1,17 +1,17 @@
 ---
-title: "通信方向 |Microsoft ドキュメント"
-ms.custom: 
+title: 通信方向 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - port types, communication direction
 - communication direction [port types]
 ms.assetid: b278325e-a1da-49a6-8332-80a5f640cc22
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231378"
 ---
 # <a name="communication-direction"></a><span data-ttu-id="7ff26-102">[通信方向]</span><span class="sxs-lookup"><span data-stu-id="7ff26-102">Communication Direction</span></span>
 <span data-ttu-id="7ff26-103">各*ポート*独自通信の方向がします。</span><span class="sxs-lookup"><span data-stu-id="7ff26-103">Each *port* has its own communication direction.</span></span> <span data-ttu-id="7ff26-104">通信方向は、ポートの種類の通信方式と組み合わせて、ポートの使用方法の定義に使用されます。</span><span class="sxs-lookup"><span data-stu-id="7ff26-104">The communication direction is used in combination with the communication pattern of the port's type to complete the definition of how a port can be used.</span></span> <span data-ttu-id="7ff26-105">通信方向、つまり極性によって、そのポートでメッセージが送信される方向が決定します。</span><span class="sxs-lookup"><span data-stu-id="7ff26-105">The communication direction, or polarity, determines in which direction messages will be transmitted over that port.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用して SQL アプリケーションを作成する前提条件 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用して SQL アプリケーションを作成する前提条件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb3a8963-88a8-4db0-a740-eb54b041931c
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224514"
 ---
 # <a name="prerequisites-to-create-sql-applications-using-the-sql-adapter"></a><span data-ttu-id="63a27-102">SQL アダプターを使用して SQL アプリケーションを作成するための必要条件</span><span class="sxs-lookup"><span data-stu-id="63a27-102">Prerequisites to create SQL applications using the SQL adapter</span></span>
 <span data-ttu-id="63a27-103">使用して BizTalk アプリケーションを開発する前に行う必要があります、[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="63a27-103">What you must do before developing BizTalk applications using the [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)].</span></span> <span data-ttu-id="63a27-104">このトピックでは、BizTalk アプリケーションの開発に使用される一部の BizTalk Server ツールも表示されます。</span><span class="sxs-lookup"><span data-stu-id="63a27-104">The topic also lists some BizTalk Server tools that are used to develop BizTalk applications.</span></span>  

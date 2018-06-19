@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce25b112-38c9-40c8-9a5f-a2855572aabb
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22265802"
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a><span data-ttu-id="43a92-102">ソース管理システムを使用した BizTalk Server の開発アイテムの管理</span><span class="sxs-lookup"><span data-stu-id="43a92-102">Managing BizTalk Server Developer Artifacts with a Source Control Systems</span></span>
 <span data-ttu-id="43a92-103">BizTalk プロジェクトを予期しないシステム障害から保護することは、最優先事項として考える必要があります。</span><span class="sxs-lookup"><span data-stu-id="43a92-103">Protecting your BizTalk project from unexpected system failures should be a top priority.</span></span> <span data-ttu-id="43a92-104">プロジェクト ファイルを保護する方法の 1 つは、Team Foundation Server ソース管理や Microsoft Visual SourceSafe のようなソース コード管理システムを使用することです。</span><span class="sxs-lookup"><span data-stu-id="43a92-104">One way to protect project files is to use a source code control system like Team Foundation Server Source Control and Microsoft Visual SourceSafe.</span></span> <span data-ttu-id="43a92-105">ここでは、任意のソース管理システムで最適に動作するようプロジェクトを編成するための基本的な方法について説明し、Visual SourceSafe の具体的な使用方法を紹介します。</span><span class="sxs-lookup"><span data-stu-id="43a92-105">This topic discusses some basic strategies for organizing projects to best work with any source control system, and then provides specific suggestions for using Visual SourceSafe.</span></span>  
@@ -98,7 +99,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="43a92-174">使用する SourceSafe データベースを選択します。</span><span class="sxs-lookup"><span data-stu-id="43a92-174">Select the SourceSafe database to be used.</span></span>  
   
-3.  <span data-ttu-id="43a92-175">**[ツール]** メニューの **[オプション]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="43a92-175">On the **Tools** menu, click **Options**.</span></span>  
+3.  <span data-ttu-id="43a92-175">**[ツール]** メニューの **[オプション]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="43a92-175">On the **Tools** menu, click **Options**.</span></span>  
   
 4.  <span data-ttu-id="43a92-176">クリックして、 **ファイルの種類**  タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="43a92-176">Click the **File Types** tab.</span></span>  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="43a92-179">*.btm;\*します。btp;\*します。xsd;\*します。odx</span><span class="sxs-lookup"><span data-stu-id="43a92-179">*.btm;\*.btp;\*.xsd;\*.odx</span></span>  
   
-6.  <span data-ttu-id="43a92-180">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="43a92-180">Click **OK**.</span></span>  
+6.  <span data-ttu-id="43a92-180">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="43a92-180">Click **OK**.</span></span>  
   
  <span data-ttu-id="43a92-181">これで Visual SourceSafe では、BizTalk Server ファイルの確認や形式の変更が試行されないようになります。</span><span class="sxs-lookup"><span data-stu-id="43a92-181">Now Visual SourceSafe will not inspect BizTalk Server files and attempt to change their formatting.</span></span>  
   

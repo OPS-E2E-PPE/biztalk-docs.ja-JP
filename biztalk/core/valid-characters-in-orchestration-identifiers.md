@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287386"
 ---
 # <a name="valid-characters-in-orchestration-identifiers"></a><span data-ttu-id="a6e01-102">オーケストレーション識別子で有効な文字</span><span class="sxs-lookup"><span data-stu-id="a6e01-102">Valid Characters in Orchestration Identifiers</span></span>
 <span data-ttu-id="a6e01-103">項目、変数、型名などのオーケストレーション識別子にはいくつかの制約があります。</span><span class="sxs-lookup"><span data-stu-id="a6e01-103">Orchestration identifiers, such as item, variable and type names, have a few restrictions:</span></span>  

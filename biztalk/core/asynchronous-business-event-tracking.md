@@ -1,11 +1,11 @@
 ---
-title: "非同期ビジネス イベントの追跡 |Microsoft ドキュメント"
-ms.custom: 
+title: 非同期ビジネス イベントの追跡 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM, event tracking
 - BAM, performance
 ms.assetid: 6d51fadf-b329-4536-9618-d982d9c17882
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230474"
 ---
 # <a name="asynchronous-business-event-tracking"></a><span data-ttu-id="d990c-102">非同期ビジネス イベントの追跡</span><span class="sxs-lookup"><span data-stu-id="d990c-102">Asynchronous Business Event Tracking</span></span>
 <span data-ttu-id="d990c-103">非同期 (を使用して`BufferedEventStream`)-このモデルには、大幅なパフォーマンス向上が用意されています。</span><span class="sxs-lookup"><span data-stu-id="d990c-103">Asynchronous (using `BufferedEventStream`) - This model offers significant performance improvements.</span></span> <span data-ttu-id="d990c-104">このモデルでは、同期モデルに似た API を使用します (使用するコンストラクターだけが異なります)。</span><span class="sxs-lookup"><span data-stu-id="d990c-104">This uses a similar API to the synchronous model, using only a different constructor.</span></span> <span data-ttu-id="d990c-105">BufferedEventStream は、データをプライマリ インポート データベースにプッシュするのではなく、イベント データをバイナリ形式でメモリに蓄積してから、そのデータを 1 つのテーブル レコードとして中間処理用のデータベース (メッセージ ボックス データベース) に挿入します。</span><span class="sxs-lookup"><span data-stu-id="d990c-105">Instead of pushing the data into the primary import database, BufferedEventStream accumulates the event data in memory in binary form, and then inserts it as a single table record into an interim database (MessageBox).</span></span> <span data-ttu-id="d990c-106">イベント バス サービスは、BizTalk によってメッセージ ボックス データベースのキューに格納されたデータを読み取り、そのデータをプライマリ インポート データベースにインポートします。</span><span class="sxs-lookup"><span data-stu-id="d990c-106">The Event Bus service reads the data queued in the MessageBox database by BizTalk and imports it into the primary import database.</span></span>  

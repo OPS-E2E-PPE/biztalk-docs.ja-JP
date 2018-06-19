@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221922"
 ---
 # <a name="get-metadata-for-siebel-operations-in-visual-studio"></a><span data-ttu-id="4db43-102">Visual Studio での Siebel 操作のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="4db43-102">Get Metadata for Siebel Operations in Visual Studio</span></span>
 <span data-ttu-id="4db43-103">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] 2 つ提供[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]アダプターを使用してソリューションを開発するために使用できるコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="4db43-103">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] provides two [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] components that you can use to help you develop solutions using the adapter.</span></span>  

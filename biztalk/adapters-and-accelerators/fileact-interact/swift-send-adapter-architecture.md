@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 送信アダプターのアーキテクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT 送信アダプターのアーキテクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e52a5a21-0aa1-4cd9-a2a4-f9df425913a0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223874"
 ---
 # <a name="swift-send-adapter-architecture"></a><span data-ttu-id="108db-102">SWIFT 送信アダプターのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="108db-102">SWIFT Send Adapter Architecture</span></span>
 <span data-ttu-id="108db-103">一般に、BizTalk Server 送信アダプターは BizTalk サービス プロセス Btsntsvc.exe でホストされます。</span><span class="sxs-lookup"><span data-stu-id="108db-103">In general, BizTalk Server send adapters are hosted in the BizTalk service process, Btsntsvc.exe.</span></span> <span data-ttu-id="108db-104">これは、BizTalk Server が、アダプターの有効期間を管理することを意味します。</span><span class="sxs-lookup"><span data-stu-id="108db-104">This means that BizTalk Server manages the lifetime of the adapter.</span></span>  

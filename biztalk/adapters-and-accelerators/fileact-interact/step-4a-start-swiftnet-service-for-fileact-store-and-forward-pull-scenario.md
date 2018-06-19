@@ -1,14 +1,14 @@
 ---
-title: "手順 4 a: FileAct ストア アンド フォワード (プル) シナリオの SWIFTNet サービスを開始 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 a: FileAct ストア アンド フォワード (プル) シナリオの SWIFTNet サービスを開始 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd89cb07-aa25-43c4-afb1-7139ac7cdba9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224858"
 ---
 # <a name="step-4a-start-the-swiftnet-service-for-the-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="0b80b-102">手順 4 a: FileAct ストア アンド フォワード (プル) シナリオの SWIFTNet サービスの開始</span><span class="sxs-lookup"><span data-stu-id="0b80b-102">Step 4A: Start the SWIFTNet Service for the FileAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="0b80b-103">この手順を開始する前に行う必要があります[手順 3 b: FileAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md)です。</span><span class="sxs-lookup"><span data-stu-id="0b80b-103">Before you begin this step, you must complete [Step 3B: Bind the orchestration with dynamic send port for FileAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md).</span></span>  

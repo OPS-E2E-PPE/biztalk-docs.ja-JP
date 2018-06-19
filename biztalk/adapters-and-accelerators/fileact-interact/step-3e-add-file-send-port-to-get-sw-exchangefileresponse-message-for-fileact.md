@@ -1,14 +1,14 @@
 ---
-title: "ステップ 3 e: FileAct リアルタイム シナリオ Sw:ExchangeFileResponse メッセージをキャプチャする FILE 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: 'ステップ 3 e: FileAct リアルタイム シナリオ Sw:ExchangeFileResponse メッセージをキャプチャする FILE 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b9314f86-a2c9-4ef3-8474-b7e2e2f8bf66
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224938"
 ---
 # <a name="step-3e-add-a-file-send-port-to-capture-swexchangefileresponse-message-for-the-fileact-real-time-scenario"></a><span data-ttu-id="d864f-102">ステップ 3 e: FileAct リアルタイム シナリオ Sw:ExchangeFileResponse メッセージをキャプチャする FILE 送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="d864f-102">Step 3E: Add a FILE Send Port to Capture Sw:ExchangeFileResponse Message for the FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="d864f-103">この手順を開始する前に行う必要があります[ステップ 3 D: FileAct リアルタイム シナリオ FILEACT 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="d864f-103">Before you begin this step, you must complete [Step 3D: Add a FILEACT Send Port for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-real-time-scenario.md).</span></span>  
@@ -47,11 +48,11 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="d864f-119">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="d864f-119">**Use this**</span></span>|<span data-ttu-id="d864f-120">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="d864f-120">**To do this**</span></span>|  
     |------------------|--------------------|  
     |<span data-ttu-id="d864f-121">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="d864f-121">**Property**</span></span>|<span data-ttu-id="d864f-122">ドロップダウン リストから選択**BTS です。SPName**です。</span><span class="sxs-lookup"><span data-stu-id="d864f-122">From the drop-down list, select **BTS.SPName**.</span></span>|  
-    |<span data-ttu-id="d864f-123">**演算子**</span><span class="sxs-lookup"><span data-stu-id="d864f-123">**Operator**</span></span>|<span data-ttu-id="d864f-124">ドロップダウン リストから選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="d864f-124">From the drop-down list, select **==**.</span></span>|  
+    |<span data-ttu-id="d864f-123">**演算子**</span><span class="sxs-lookup"><span data-stu-id="d864f-123">**Operator**</span></span>|<span data-ttu-id="d864f-124">ドロップダウン リストから選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="d864f-124">From the drop-down list, select **==**.</span></span>|  
     |<span data-ttu-id="d864f-125">**値**</span><span class="sxs-lookup"><span data-stu-id="d864f-125">**Value**</span></span>|<span data-ttu-id="d864f-126">型 Tutorial_FA_SendRequest_RealTime です。</span><span class="sxs-lookup"><span data-stu-id="d864f-126">Type Tutorial_FA_SendRequest_RealTime.</span></span>|  
     |<span data-ttu-id="d864f-127">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="d864f-127">**Group by**</span></span>|<span data-ttu-id="d864f-128">既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d864f-128">Leave the default value.</span></span>|  
   
-9. <span data-ttu-id="d864f-129">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d864f-129">Click **OK**.</span></span>  
+9. <span data-ttu-id="d864f-129">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d864f-129">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="d864f-130">参照</span><span class="sxs-lookup"><span data-stu-id="d864f-130">See Also</span></span>  
  <span data-ttu-id="d864f-131">[手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="d864f-131">[Step 3: Create the Send Ports and Receive Ports for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span></span>  

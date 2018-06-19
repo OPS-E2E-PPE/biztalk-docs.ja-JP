@@ -1,14 +1,14 @@
 ---
-title: "エラー処理の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: エラー処理の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc793386-d2ec-4e02-9283-3237f65c9e01
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287466"
 ---
 # <a name="using-fault-handling"></a><span data-ttu-id="52811-102">エラー処理の使用</span><span class="sxs-lookup"><span data-stu-id="52811-102">Using Fault Handling</span></span>
 <span data-ttu-id="52811-103">中に[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]しない限り、エラー、例外メッセージの処理はクライアントに返されません、 **FaultException** (または subtype) がスローされますまたは**FaultContract**は実装されています。</span><span class="sxs-lookup"><span data-stu-id="52811-103">During [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] fault handling an exception message is not returned to the client unless a **FaultException** (or a subtype) is thrown or a **FaultContract** is implemented.</span></span> <span data-ttu-id="52811-104">したがって、このようなシナリオでは、エラー メッセージ自体からデータを追跡することしかできません。</span><span class="sxs-lookup"><span data-stu-id="52811-104">So you can only track data from the fault message itself in these scenarios.</span></span> <span data-ttu-id="52811-105">コールバックの実装で例外が自動的に両方のエラー メッセージとして返さ**ServerFault**と**ClientFault**ポイントを追跡します。</span><span class="sxs-lookup"><span data-stu-id="52811-105">An exception in callback implementations automatically comes back as a fault message for both **ServerFault** and **ClientFault** track points.</span></span> <span data-ttu-id="52811-106">ただし、どのような場合でも、一般的なメッセージを示す汎用エラーが戻されます。</span><span class="sxs-lookup"><span data-stu-id="52811-106">However, it will always return a generic fault with a generic message.</span></span> <span data-ttu-id="52811-107">WCF エラー コントラクトの詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=83132](http://go.microsoft.com/fwlink/?LinkId=83132)です。</span><span class="sxs-lookup"><span data-stu-id="52811-107">For more information about WCF fault contracts, see [http://go.microsoft.com/fwlink/?LinkId=83132](http://go.microsoft.com/fwlink/?LinkId=83132).</span></span>  

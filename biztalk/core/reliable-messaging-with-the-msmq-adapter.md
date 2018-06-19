@@ -1,11 +1,11 @@
 ---
-title: "MSMQ アダプターで信頼性の高いメッセージング |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターで信頼性の高いメッセージング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, reliability
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - MSMQ adapters, reliability
 - reliability, messages
 ms.assetid: 1a4b4f77-c508-4c3f-82f9-5722d0af6c63
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268370"
 ---
 # <a name="reliable-messaging-with-the-msmq-adapter"></a><span data-ttu-id="54a5c-102">MSMQ アダプターで信頼できるメッセージング</span><span class="sxs-lookup"><span data-stu-id="54a5c-102">Reliable Messaging with the MSMQ Adapter</span></span>
 <span data-ttu-id="54a5c-103">特定の構成設定とトランザクションを使用することにより、MSMQ アダプタを使用したメッセージの送受信の信頼性を向上させることができます。</span><span class="sxs-lookup"><span data-stu-id="54a5c-103">You can improve the reliability of sending and receiving messages with the MSMQ adapter by using particular configuration settings and by using transactions.</span></span>  

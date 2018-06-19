@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタを BizTalk アプリケーションを開発する基盤 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタを BizTalk アプリケーションを開発する基盤 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fac7cbf4-b111-43ad-8726-36d037918c9c
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223610"
 ---
 # <a name="building-blocks-to-develop-biztalk-applications-with-the-sql-adapter"></a><span data-ttu-id="32199-102">SQL アダプタを BizTalk アプリケーションを開発する構成要素</span><span class="sxs-lookup"><span data-stu-id="32199-102">Building blocks to develop BizTalk applications with the SQL adapter</span></span>
 <span data-ttu-id="32199-103">使用して SQL Server での操作を実行する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、デザイン時および実行時のタスクのセットを実行する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールをそれぞれします。</span><span class="sxs-lookup"><span data-stu-id="32199-103">To perform operations on SQL Server by using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must perform a set of design-time and run-time tasks using [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console respectively.</span></span> <span data-ttu-id="32199-104">このセクションでは、これらのタスクの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="32199-104">This section provides an overview of these tasks.</span></span> <span data-ttu-id="32199-105">すべてトピックでは、このセクションで、SQL Server を使用して特定の操作を実行する方法を示す[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、これらの高度なタスクでは、モデル化します。</span><span class="sxs-lookup"><span data-stu-id="32199-105">All the topics in this section, which demonstrate how to perform specific operations on SQL Server using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], are modeled on these high-level tasks.</span></span>  

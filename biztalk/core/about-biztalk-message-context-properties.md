@@ -1,14 +1,14 @@
 ---
-title: "BizTalk メッセージ コンテキストのプロパティに関する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk メッセージ コンテキストのプロパティに関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc700e43-a44c-482b-b91c-9f1d997a486a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225498"
 ---
 # <a name="about-biztalk-message-context-properties"></a><span data-ttu-id="aabd3-102">BizTalk メッセージ コンテキストのプロパティについて</span><span class="sxs-lookup"><span data-stu-id="aabd3-102">About BizTalk Message Context Properties</span></span>
 <span data-ttu-id="aabd3-103">ドキュメントを受信すると、BizTalk Server アダプターは、そのドキュメントの BizTalk メッセージを作成します。</span><span class="sxs-lookup"><span data-stu-id="aabd3-103">When a document is received by a BizTalk Server adapter, the adapter creates a BizTalk message for the document.</span></span> <span data-ttu-id="aabd3-104">BizTalk メッセージには、受信したメッセージと共に、メッセージ コンテキストが含まれます。</span><span class="sxs-lookup"><span data-stu-id="aabd3-104">The BizTalk message contains the document that was received as well as a message context.</span></span> <span data-ttu-id="aabd3-105">メッセージ コンテキストは、BizTalk Server がドキュメントを処理する際に使用する、さまざまなプロパティのコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="aabd3-105">The message context is a container for various properties that are used by BizTalk Server when processing the document.</span></span> <span data-ttu-id="aabd3-106">メッセージ コンテキストの各プロパティは、名前、名前空間、および値の 3 つで構成されています。</span><span class="sxs-lookup"><span data-stu-id="aabd3-106">Each property in the Message Context is composed of three things, a name, a namespace, and a value.</span></span> <span data-ttu-id="aabd3-107">たとえば、次のメッセージ コンテキスト プロパティは、ドキュメントのインターチェンジ ID を示します。</span><span class="sxs-lookup"><span data-stu-id="aabd3-107">For example, the following message context property describes the Interchange ID for a document:</span></span>  

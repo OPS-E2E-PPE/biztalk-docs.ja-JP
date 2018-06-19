@@ -1,14 +1,14 @@
 ---
-title: "MVG フィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: MVG フィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c5db211-76a2-4c27-97f4-382302c722da
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226962"
 ---
 # <a name="run-operations-on-business-components-with-mvg-fields-using-biztalk-server-and-the-siebel-adapter"></a><span data-ttu-id="fa9f5-102">MVG フィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="fa9f5-102">Run Operations on Business Components with MVG Fields Using BizTalk Server and the Siebel adapter</span></span>
 <span data-ttu-id="fa9f5-103">このセクションでは、複数値フィールドを含むビジネス コンポーネント操作の実行について説明します。</span><span class="sxs-lookup"><span data-stu-id="fa9f5-103">This section provides instructions on performing operation on a business component containing multi-value fields.</span></span> <span data-ttu-id="fa9f5-104">このようなビジネス コンポーネントでエンド ツー エンド操作を示すためを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fa9f5-104">To demonstrate an end-to-end operation on such business components, you need to perform:</span></span>  

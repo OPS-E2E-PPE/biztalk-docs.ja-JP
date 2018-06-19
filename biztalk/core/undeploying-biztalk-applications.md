@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーションを展開解除 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションを展開解除 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - undeploying, applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [applications], undeploying
 - undeploying
 ms.assetid: 424ada20-d023-4952-8a36-75f0327d87d5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286642"
 ---
 # <a name="undeploying-biztalk-applications"></a><span data-ttu-id="2acea-102">BizTalk アプリケーションを展開解除</span><span class="sxs-lookup"><span data-stu-id="2acea-102">Undeploying BizTalk Applications</span></span>
 <span data-ttu-id="2acea-103">BizTalk アプリケーションを BizTalk グループおよびホスト コンピューターから削除するには、展開解除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2acea-103">You must undeploy a BizTalk application to remove it from your BizTalk group and host computers.</span></span> <span data-ttu-id="2acea-104">このセクションでは、アプリケーションの展開解除に関する次のタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2acea-104">This section describes the following tasks involved in undeploying an application:</span></span>  

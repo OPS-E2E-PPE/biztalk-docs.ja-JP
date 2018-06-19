@@ -1,11 +1,11 @@
 ---
-title: "プロジェクト デザイナー: [展開] タブ |Microsoft ドキュメント"
-ms.custom: 
+title: 'プロジェクト デザイナー: [展開] タブ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - properties, Configuration database [BizTalk Server]
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - configuration properties [deployment], Management database property
 - configuration properties [deployment], Administration Group property
 ms.assetid: 5b64f99c-4ec6-4ed3-8590-46420e2f75b8
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264946"
 ---
 # <a name="project-designer-deployment-tab"></a><span data-ttu-id="f757b-102">プロジェクト デザイナー: [展開] タブ</span><span class="sxs-lookup"><span data-stu-id="f757b-102">Project Designer: Deployment Tab</span></span>
 <span data-ttu-id="f757b-103">**展開**プロジェクト デザイナーの [プロパティ] タブでは、BizTalk プロジェクトの配置の属性を構成することができます。</span><span class="sxs-lookup"><span data-stu-id="f757b-103">The **Deployment** property tab of the Project Designer allows you to configure the deployment attributes for the BizTalk project.</span></span> <span data-ttu-id="f757b-104">両方を構成する必要があります、**サーバー**と**構成データベース**(BizTalk 管理データベースとも呼ばれます) 展開を成功させるのに設定されるプロパティです。</span><span class="sxs-lookup"><span data-stu-id="f757b-104">You must configure both the **Server** and the **Configuration Database** (also known as the BizTalk Management database) properties as a set for deployment to be successful.</span></span>  

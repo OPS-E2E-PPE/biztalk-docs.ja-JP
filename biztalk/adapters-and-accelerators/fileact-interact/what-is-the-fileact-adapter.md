@@ -1,14 +1,14 @@
 ---
-title: "FileAct アダプターとは何ですか。 | Microsoft Docs"
-ms.custom: 
+title: FileAct アダプターとは何ですか。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05ec8f1e-57f9-4e2d-ab8b-22b5c4b28055
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225322"
 ---
 # <a name="what-is-the-fileact-adapter"></a><span data-ttu-id="84140-103">FileAct アダプターとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="84140-103">What Is the FileAct Adapter?</span></span>
 <span data-ttu-id="84140-104">SWIFTNet の FileAct アダプターは、ファイルを転送するための世界銀行間財務通信 (SWIFT) セキュリティで保護された IP ネットワーク (SIPN) の BizTalk Server と、Society 間の接続に提供します。</span><span class="sxs-lookup"><span data-stu-id="84140-104">The FileAct adapter for SWIFTNet provides connectivity between BizTalk Server and the Society for Worldwide Interbank Financial Telecommunication (SWIFT) Secure IP Network (SIPN) for the transfer of files.</span></span> <span data-ttu-id="84140-105">SIPN は、金融機関、金融業界インフラストラクチャ、および顧客を接続するセキュリティで保護されたプライベート ネットワーク経由でメッセージとファイルを転送します。</span><span class="sxs-lookup"><span data-stu-id="84140-105">The SIPN transfers messages and files over a secure private network which connects financial institutions, financial industry infrastructures, and customers.</span></span> <span data-ttu-id="84140-106">FileAct アダプターは、SWIFTNet リンク (SNL) アプリケーション プログラミング インターフェイス (API) s、SIPN への接続に使用します。</span><span class="sxs-lookup"><span data-stu-id="84140-106">The FileAct adapter uses the SWIFTNet Link (SNL) application programming interface (API)s to connect to the SIPN.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="84140-138">**否認不可の出力と受信します。**</span><span class="sxs-lookup"><span data-stu-id="84140-138">**Non-repudiation of emission and reception.**</span></span> <span data-ttu-id="84140-139">に関して問題が発生した場合に、ファイル転送が行われるように要求を確認する SWIFT を使用できます。</span><span class="sxs-lookup"><span data-stu-id="84140-139">In case of dispute, allows SWIFT to confirm that the file transfer did take place as claimed.</span></span>  
   
- <span data-ttu-id="84140-140">標準の SWIFTNet FileAct 機能に SWIFTNet PKI のセキュリティは、**です。**</span><span class="sxs-lookup"><span data-stu-id="84140-140">The standard SWIFTNet FileAct features include SWIFTNet PKI security**.**</span></span> <span data-ttu-id="84140-141">SWIFTNet FileAct は SWIFTNet PKI を使用して保護し、メッセージの認証と整合性の制御を提供します。</span><span class="sxs-lookup"><span data-stu-id="84140-141">SWIFTNet FileAct is secured with SWIFTNet PKI and offers message authentication and integrity control.</span></span>  
+ <span data-ttu-id="84140-140">標準の SWIFTNet FileAct 機能に SWIFTNet PKI のセキュリティは、**です。**</span><span class="sxs-lookup"><span data-stu-id="84140-140">The standard SWIFTNet FileAct features include SWIFTNet PKI security **.**</span></span> <span data-ttu-id="84140-141">SWIFTNet FileAct は SWIFTNet PKI を使用して保護し、メッセージの認証と整合性の制御を提供します。</span><span class="sxs-lookup"><span data-stu-id="84140-141">SWIFTNet FileAct is secured with SWIFTNet PKI and offers message authentication and integrity control.</span></span>  
   
  <span data-ttu-id="84140-142">すべてのメッセージと SWIFTNet で交換されるファイルには、一般的な一連のあるユーザーをバイパスできませんセキュリティ、検証、およびプラットフォームのルーティング規則を確認するチェックが行われます。</span><span class="sxs-lookup"><span data-stu-id="84140-142">All messages and files exchanged on SWIFTNet undergo a common set of checks to ensure that no user can bypass the security, validation and routing rules of the platform.</span></span> <span data-ttu-id="84140-143">これらのチェックは、SWIFTAlliance ゲートウェイ (SAG) アプリケーションによって実行されます。</span><span class="sxs-lookup"><span data-stu-id="84140-143">These checks are performed by the SWIFTAlliance Gateway (SAG) application.</span></span>  
   

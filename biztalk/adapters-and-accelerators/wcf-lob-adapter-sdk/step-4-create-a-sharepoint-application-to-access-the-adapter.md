@@ -1,14 +1,14 @@
 ---
-title: "手順 4: アダプターにアクセスする Sharepoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: アダプターにアクセスする Sharepoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2d8c398-370a-4c62-961d-0eab6066ad5a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226882"
 ---
 # <a name="step-4-create-a-sharepoint-application-to-access-the-adapter"></a><span data-ttu-id="7425e-102">手順 4: アダプターにアクセスする Sharepoint アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="7425e-102">Step 4: Create a Sharepoint Application to Access the Adapter</span></span>
 <span data-ttu-id="7425e-103">![4 のステップ 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="7425e-103">![Step 4 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  
@@ -83,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="7425e-138">**グループ アカウント名**フィールドに、このアプリケーションの定義をセキュリティで保護するために使用する Windows グループを入力します。</span><span class="sxs-lookup"><span data-stu-id="7425e-138">In the **Group account name** field, type the Windows group that will be used to secure this application definition.</span></span> <span data-ttu-id="7425e-139">たとえば、 **DOMAIN\Domain ユーザー**です。</span><span class="sxs-lookup"><span data-stu-id="7425e-139">For example, **DOMAIN\Domain Users**.</span></span>  
   
-6.  <span data-ttu-id="7425e-140">**[設定]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7425e-140">Click **Set**.</span></span>  
+6.  <span data-ttu-id="7425e-140">**[設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7425e-140">Click **Set**.</span></span>  
   
 7.  <span data-ttu-id="7425e-141">EchoSSO アカウント情報の提供 ページで、 **Username**フィールド型**testuser**、し、**パスワード**フィールド型**testpassword**.</span><span class="sxs-lookup"><span data-stu-id="7425e-141">On the Provide EchoSSO Account Information page, in the **Username** field type **testuser**, and then in the **Password** field type **testpassword**.</span></span>  
   
@@ -121,11 +122,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="7425e-165">[新しい Web パーツ] ページで、**名前**フィールドに「 **EchoPart**、し、[**ページ全体を垂直方向**から、 **レイアウトテンプレートを選択した**] ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="7425e-165">On the New Web Part page, in the **Name** field, type **EchoPart**, and then select **Full Page, Vertical** from the **Chose a Layout Template** list.</span></span>  
   
-6.  <span data-ttu-id="7425e-166">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7425e-166">Click **Create**.</span></span>  
+6.  <span data-ttu-id="7425e-166">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7425e-166">Click **Create**.</span></span>  
   
 #### <a name="to-add-a-business-data-web-part"></a><span data-ttu-id="7425e-167">ビジネス データ Web パーツを追加するには</span><span class="sxs-lookup"><span data-stu-id="7425e-167">To add a Business Data Web Part</span></span>  
   
-1.  <span data-ttu-id="7425e-168">**[Web パーツの追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7425e-168">Click **Add a Web Part**.</span></span>  
+1.  <span data-ttu-id="7425e-168">**[Web パーツの追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7425e-168">Click **Add a Web Part**.</span></span>  
   
 2.  <span data-ttu-id="7425e-169">**Web パーツの追加**ダイアログ ボックスで、**ビジネス データ一覧**、クリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="7425e-169">In the **Add Web Parts** dialog box, select **Business Data List**, and then click **Add**.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "無効な HTTP ヘッダーが検出されました引用符で囲まれた |Microsoft ドキュメント"
-ms.custom: 
+title: 無効な HTTP ヘッダーが検出されました引用符で囲まれた |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb530ee6-ec6a-4791-ae99-b9db426c0896
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230530"
 ---
 # <a name="an-invalid-quoted-http-header-encountered"></a><span data-ttu-id="3bf10-102">引用符で囲まれた無効な HTTP ヘッダーが検出されました</span><span class="sxs-lookup"><span data-stu-id="3bf10-102">An invalid quoted HTTP header encountered</span></span>
 ## <a name="details"></a><span data-ttu-id="3bf10-103">詳細</span><span class="sxs-lookup"><span data-stu-id="3bf10-103">Details</span></span>  

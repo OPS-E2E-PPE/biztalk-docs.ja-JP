@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221858"
 ---
 # <a name="message-versioning-support"></a><span data-ttu-id="5737b-102">メッセージ バージョン管理のサポート</span><span class="sxs-lookup"><span data-stu-id="5737b-102">Message Versioning Support</span></span>
 <span data-ttu-id="5737b-103">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]操作に対して表示されるメッセージ アクション、名前空間、およびノード Id でバージョン文字列の要素を含めることでバージョン管理をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="5737b-103">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] supports versioning by including a version string component in the message actions, namespaces, and node IDs surfaced for operations.</span></span> <span data-ttu-id="5737b-104">現在のバージョンは、http://Microsoft.LobServices.Siebel/2007/03 です。</span><span class="sxs-lookup"><span data-stu-id="5737b-104">The current version is http://Microsoft.LobServices.Siebel/2007/03.</span></span> <span data-ttu-id="5737b-105">つまり、Siebel リポジトリ内のアカウント ビジネス オブジェクトの挿入操作の場合、アダプターによって公開される挿入操作は、次。</span><span class="sxs-lookup"><span data-stu-id="5737b-105">This means that for an Insert operation on an Account business object in the Siebel repository, the Insert operation surfaced by the adapter has the following:</span></span>  

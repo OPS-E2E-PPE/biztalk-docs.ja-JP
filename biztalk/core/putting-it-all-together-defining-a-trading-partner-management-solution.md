@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22269226"
 ---
 # <a name="putting-it-all-together-defining-a-trading-partner-management-solution"></a><span data-ttu-id="25b51-102">まとめ: 取引先管理ソリューションを定義する</span><span class="sxs-lookup"><span data-stu-id="25b51-102">Putting it all Together: Defining a Trading Partner Management Solution</span></span>
 <span data-ttu-id="25b51-103">TPM ソリューションの構築で使用するさまざまなコンポーネントについて理解できたので、次に標準的な TPM ソリューションの流れと、さまざまな構成要素の連携について説明します。</span><span class="sxs-lookup"><span data-stu-id="25b51-103">Now that we have understood about the different types of components in building a TPM solution, let us understand the flow of a typical TPM solution and how the different building blocks work together.</span></span> <span data-ttu-id="25b51-104">ここでは、TPM ソリューションのモデリングのベスト プラクティスも示します。</span><span class="sxs-lookup"><span data-stu-id="25b51-104">This section also lists some best practices for modeling a TPM solution.</span></span>  

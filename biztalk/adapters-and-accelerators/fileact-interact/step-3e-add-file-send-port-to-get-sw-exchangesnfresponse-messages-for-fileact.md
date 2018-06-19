@@ -1,14 +1,14 @@
 ---
-title: "ステップ 3 e: FileAct ストア アンド ソフトウェア ExchangeSnFResponse メッセージをキャプチャするシナリオ前方の FILE 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: 'ステップ 3 e: FileAct ストア アンド ソフトウェア ExchangeSnFResponse メッセージをキャプチャするシナリオ前方の FILE 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04bad2ab-1ea4-4602-9dee-5b9af9be3b93
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223994"
 ---
 # <a name="step-3e-add-a-file-send-port-for-the-fileact-store-and-forward-scenario-to-capture-sw-exchangesnfresponse-messages"></a><span data-ttu-id="185e6-102">ステップ 3 e: FileAct ストア アンド ソフトウェア ExchangeSnFResponse メッセージをキャプチャするシナリオ前方の FILE 送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="185e6-102">Step 3E: Add a FILE Send Port for the FileAct Store and Forward Scenario to capture Sw-ExchangeSnFResponse messages</span></span>
 <span data-ttu-id="185e6-103">この手順を開始する前に行う必要があります[ステップ 3 D: FileAct ストア アンド フォワードのシナリオの FILEACT 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="185e6-103">Before you begin this step, you must complete [Step 3D: Add a FILEACT Send Port for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md).</span></span>  

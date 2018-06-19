@@ -1,18 +1,18 @@
 ---
-title: "候補リスト操作のメッセージのスキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: 候補リスト操作のメッセージのスキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - picklist operations, message schemas for
 - picklist operations, message actions
 - picklist operations, message
 ms.assetid: c0b62a8c-5a68-47ea-8676-1580601b5ec9
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221906"
 ---
 # <a name="message-schema-for-picklist-operations"></a><span data-ttu-id="84350-102">候補リスト操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="84350-102">Message Schema for Picklist Operations</span></span>
 <span data-ttu-id="84350-103">候補リストは、ビジネス コンポーネントで特別なフィールドの種類です。</span><span class="sxs-lookup"><span data-stu-id="84350-103">Picklists are special field types in business components.</span></span> <span data-ttu-id="84350-104">これらは、ユーザーが 1 つの値の割り当てを選択ことがあります値のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="84350-104">They represent a collection of values from which a user may pick a single value for assignment.</span></span> <span data-ttu-id="84350-105">候補リストでは、さまざまな種類です。</span><span class="sxs-lookup"><span data-stu-id="84350-105">Picklists are of different types.</span></span> <span data-ttu-id="84350-106">候補リストとその種類の詳細については、Siebel のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="84350-106">For more information about picklists and their types, refer to Siebel documentation.</span></span>  

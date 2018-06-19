@@ -1,14 +1,14 @@
 ---
-title: "SQL を使用したトランザクションの分離レベルとトランザクションのタイムアウトを構成する |Microsoft ドキュメント"
-ms.custom: 
+title: SQL を使用したトランザクションの分離レベルとトランザクションのタイムアウトを構成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 55355272-60c0-49e4-b37e-9198458ab305
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222370"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-sql"></a><span data-ttu-id="5ec30-102">SQL を使用したトランザクションの分離レベルとトランザクションのタイムアウトを構成します。</span><span class="sxs-lookup"><span data-stu-id="5ec30-102">Configure Transaction Isolation Level and Transaction Timeout with SQL</span></span>
 <span data-ttu-id="5ec30-103">入力方向の操作 (ポーリングおよび通知) を実行中を使用して、[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、トランザクション分離レベルとトランザクションのタイムアウト値を適切に構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5ec30-103">While performing inbound operations (Polling and Notification) using the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you should appropriately configure the transaction isolation level and the transaction timeout values.</span></span> <span data-ttu-id="5ec30-104">これを行うには :</span><span class="sxs-lookup"><span data-stu-id="5ec30-104">To do this:</span></span>  

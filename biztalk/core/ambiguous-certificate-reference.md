@@ -1,14 +1,14 @@
 ---
-title: "あいまいな証明書参照 |Microsoft ドキュメント"
-ms.custom: 
+title: あいまいな証明書参照 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7a6a60d-97e6-4c60-86be-83efb4a50f99
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230706"
 ---
 # <a name="ambiguous-certificate-reference"></a><span data-ttu-id="91ea5-102">証明書の参照があいまいです</span><span class="sxs-lookup"><span data-stu-id="91ea5-102">Ambiguous certificate reference</span></span>
 ## <a name="details"></a><span data-ttu-id="91ea5-103">詳細</span><span class="sxs-lookup"><span data-stu-id="91ea5-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="91ea5-124">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="91ea5-125">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-125">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="91ea5-125">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-125">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="91ea5-126">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="91ea5-126">In the port **Type** list, select the correct port.</span></span>  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="91ea5-128">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="91ea5-128">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="91ea5-129">**[編集]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-129">Click **Edit**.</span></span>  
+9. <span data-ttu-id="91ea5-129">**[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-129">Click **Edit**.</span></span>  
   
 10. <span data-ttu-id="91ea5-130">**Id エディター**  ダイアログ ボックスでの検索条件の確認、**証明書参照**セクションは、証明書の証明書を 1 つだけを示すために正しく構成されて**ストア名前**です。</span><span class="sxs-lookup"><span data-stu-id="91ea5-130">In the **Identity Editor** dialog box, make sure the search criteria in the **Certificate Reference** section is configured properly to indicate only one certificate in the certificate **Store name**.</span></span>  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="91ea5-135">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-135">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="91ea5-136">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-136">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="91ea5-136">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91ea5-136">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="91ea5-137">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="91ea5-137">In the port **Type** list, select the correct port.</span></span>  
   

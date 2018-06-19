@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - SAPDataReader, supported methods and classes
 ms.assetid: bd0e55ea-7413-498f-851f-ed97bd8bacab
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22217314"
 ---
 # <a name="sapdatareader-class-in-the-sap-adapter"></a><span data-ttu-id="69302-102">SAP アダプターで SAPDataReader クラス</span><span class="sxs-lookup"><span data-stu-id="69302-102">SAPDataReader class in the SAP adapter</span></span>
 <span data-ttu-id="69302-103">次のセクションではメソッドとプロパティの一覧表示、 **SAPDataReader**クラスです。</span><span class="sxs-lookup"><span data-stu-id="69302-103">The following section lists the methods and properties for the **SAPDataReader** class.</span></span> <span data-ttu-id="69302-104">これは、派生元**System.Data.Common.DbDataReader**です。</span><span class="sxs-lookup"><span data-stu-id="69302-104">This is derived from **System.Data.Common.DbDataReader**.</span></span>  

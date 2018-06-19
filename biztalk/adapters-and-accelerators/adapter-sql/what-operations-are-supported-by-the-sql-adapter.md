@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターによってどのような操作がサポートされている |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターによってどのような操作がサポートされている |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b8f4099-df19-48c4-a135-1ec264af3513
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222546"
 ---
 # <a name="what-operations-are-supported-by-the-sql-adapter"></a><span data-ttu-id="78f33-102">どのような操作、SQL アダプターによってサポートされます。</span><span class="sxs-lookup"><span data-stu-id="78f33-102">What operations are supported by the SQL adapter</span></span>
 <span data-ttu-id="78f33-103">アダプターのクライアントを使用して、によって、SQL Server データベースで操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="78f33-103">You can use the adapter clients to perform operations on the SQL Server database by:</span></span>  

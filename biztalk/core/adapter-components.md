@@ -1,14 +1,14 @@
 ---
-title: "アダプター コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 383e8bcb-2b4d-40f9-9e98-f49e8d6f30f7
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225330"
 ---
 # <a name="adapter-components"></a><span data-ttu-id="43cdf-102">アダプター コンポーネント</span><span class="sxs-lookup"><span data-stu-id="43cdf-102">Adapter Components</span></span>
 <span data-ttu-id="43cdf-103">カスタム アダプターは、ネイティブ アダプターで使用される標準化された構成、管理、および設定のメカニズムを共有します。</span><span class="sxs-lookup"><span data-stu-id="43cdf-103">A custom adapter shares the standardized configuration, management, and setup mechanisms used by the native adapters.</span></span> <span data-ttu-id="43cdf-104">アダプター フレームワークが標準化されているため、カスタム アダプターは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで管理されます。</span><span class="sxs-lookup"><span data-stu-id="43cdf-104">With the standardization to the Adapter Framework, a custom adapter is managed by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  

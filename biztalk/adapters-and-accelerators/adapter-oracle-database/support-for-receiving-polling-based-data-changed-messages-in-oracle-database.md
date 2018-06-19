@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信するためのサポート |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信するためのサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - notifications, polling-based
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - polling interval
 - polling
 ms.assetid: 9ff29d3f-ebb1-4d82-9106-150f939cbd9e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218802"
 ---
 # <a name="support-for-receiving-polling-based-data-changed-messages-in-oracle-database"></a><span data-ttu-id="3175c-102">Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信するためのサポート</span><span class="sxs-lookup"><span data-stu-id="3175c-102">Support for Receiving Polling-based Data-changed Messages in Oracle Database</span></span>
 <span data-ttu-id="3175c-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースに格納されたデータへの変更を知らせる Oracle データベースからメッセージを受信するクライアント プログラムを有効にします。</span><span class="sxs-lookup"><span data-stu-id="3175c-103">The[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] enables client programs to receive messages from the Oracle database informing them of changes to data stored in an Oracle database.</span></span> <span data-ttu-id="3175c-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプターが指定された選択クエリ、ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内の関数を実行する場合、「ポーリング ベース」のメッセージの受信をサポートしていますが、データを取得しでは、通常、クライアントに結果を提供時間間隔。</span><span class="sxs-lookup"><span data-stu-id="3175c-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports receiving "polling-based" messages wherein the adapter executes a specified SELECT query, stored procedure, function, or procedure or function within a package, retrieves the data, and provides the result to the client at regular intervals of time.</span></span> <span data-ttu-id="3175c-105">これを有効にする、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] POLLINGSTMT 操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="3175c-105">To enable this, the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] exposes a POLLINGSTMT operation.</span></span> <span data-ttu-id="3175c-106">さらに、すべてのストアド プロシージャ、関数、およびプロシージャおよびパッケージ内の関数は、ポーリングの受信操作として公開されます。</span><span class="sxs-lookup"><span data-stu-id="3175c-106">Moreover, all the stored procedures, functions, and procedures and function within packages are exposed as inbound operations for polling.</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="3175c-145">ポーリング</span><span class="sxs-lookup"><span data-stu-id="3175c-145">Polling</span></span>|<span data-ttu-id="3175c-146">Notification</span><span class="sxs-lookup"><span data-stu-id="3175c-146">Notification</span></span>|  
 |-------------|------------------|  
 |<span data-ttu-id="3175c-147">サポートされているすべての Oracle データベース バージョンのポーリングがサポートされている、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3175c-147">Polling is supported for all the Oracle database versions that are supported by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>|<span data-ttu-id="3175c-148">通知は、Oracle データベース バージョン 10.2 に対してのみサポートされているおよびそれ以降です。</span><span class="sxs-lookup"><span data-stu-id="3175c-148">Notification is supported only for Oracle database versions 10.2 and later.</span></span>|  
-|<span data-ttu-id="3175c-149">一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。</span><span class="sxs-lookup"><span data-stu-id="3175c-149">You can either configure the polling interval to check the data available for polling at regular intervals or instantaneously as and when the data is available.</span></span> <span data-ttu-id="3175c-150">**ヒント:**ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。</span><span class="sxs-lookup"><span data-stu-id="3175c-150">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="3175c-151">代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="3175c-151">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last change notification.</span></span>|<span data-ttu-id="3175c-152">データの変更通知は瞬時では常にします。</span><span class="sxs-lookup"><span data-stu-id="3175c-152">The data-change notification is always instantaneous.</span></span>|  
+|<span data-ttu-id="3175c-149">一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。</span><span class="sxs-lookup"><span data-stu-id="3175c-149">You can either configure the polling interval to check the data available for polling at regular intervals or instantaneously as and when the data is available.</span></span> <span data-ttu-id="3175c-150">**ヒント:** ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。</span><span class="sxs-lookup"><span data-stu-id="3175c-150">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="3175c-151">代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="3175c-151">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last change notification.</span></span>|<span data-ttu-id="3175c-152">データの変更通知は瞬時では常にします。</span><span class="sxs-lookup"><span data-stu-id="3175c-152">The data-change notification is always instantaneous.</span></span>|  
 |<span data-ttu-id="3175c-153">ポーリングは、アダプターによって開始されます。</span><span class="sxs-lookup"><span data-stu-id="3175c-153">Polling is initiated by the adapter.</span></span> <span data-ttu-id="3175c-154">アダプターでは、データのポーリングを使用し、ポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証する SQL ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="3175c-154">The adapter executes a SQL statement to validate whether data is available for polling, and then initiates polling by executing the polling statement if some data is available for polling.</span></span>|<span data-ttu-id="3175c-155">通知は、Oracle データベースで開始されます。</span><span class="sxs-lookup"><span data-stu-id="3175c-155">Notification is initiated by the Oracle database.</span></span> <span data-ttu-id="3175c-156">だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セットの変更がある場合に通知を開始するように指示します。</span><span class="sxs-lookup"><span data-stu-id="3175c-156">The notification statement issued by the adapter just instructs the database to initiate notification in case there is a change in the result set of the statement.</span></span> <span data-ttu-id="3175c-157">通知は、Oracle データベースの機能です。</span><span class="sxs-lookup"><span data-stu-id="3175c-157">Notification is a feature of the Oracle database.</span></span>|  
 |<span data-ttu-id="3175c-158">ポーリング ステートメントを使用して、読み取るまたは Oracle データベース内のデータを更新することができます。</span><span class="sxs-lookup"><span data-stu-id="3175c-158">You can use the polling statement to read or update data in the Oracle database.</span></span>|<span data-ttu-id="3175c-159">通知のステートメントを使用すると、Oracle データベースでデータを読み取るだけです。</span><span class="sxs-lookup"><span data-stu-id="3175c-159">You can use the notification statement to only read data in an Oracle database.</span></span>|  
 |<span data-ttu-id="3175c-160">ポーリングでは、実際のデータが変更されたことについて通知されます。</span><span class="sxs-lookup"><span data-stu-id="3175c-160">Polling informs you about the actual data that has changed.</span></span>|<span data-ttu-id="3175c-161">Insert などのデータ変更の種類のみ通知を通知は、更新、および削除します。</span><span class="sxs-lookup"><span data-stu-id="3175c-161">Notification informs only about the type of change in the data such as Insert, Update, and Delete.</span></span>|  

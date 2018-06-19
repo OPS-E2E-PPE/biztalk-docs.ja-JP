@@ -1,14 +1,14 @@
 ---
-title: "手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eaa16011-9284-4ccf-8132-9c1e14cc6aa7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217202"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-e-business-suite"></a><span data-ttu-id="fd33c-102">手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="fd33c-102">Step 3: Create a SharePoint application to retrieve data from Oracle E-Business Suite</span></span>
 <span data-ttu-id="fd33c-103">![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="fd33c-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="fd33c-104">**所要時間:** 15 分</span><span class="sxs-lookup"><span data-stu-id="fd33c-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="fd33c-105">**目標:**今すぐ Microsoft Office SharePoint Server にアプリケーション定義ファイルをインポートし、Oracle E-business Suite からデータを取得するアプリケーションを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fd33c-105">**Objective:** You must now import the application definition file in Microsoft Office SharePoint Server, and set up an application to retrieve data from Oracle E-Business Suite.</span></span>  
+ <span data-ttu-id="fd33c-105">**目標:** 今すぐ Microsoft Office SharePoint Server にアプリケーション定義ファイルをインポートし、Oracle E-business Suite からデータを取得するアプリケーションを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fd33c-105">**Objective:** You must now import the application definition file in Microsoft Office SharePoint Server, and set up an application to retrieve data from Oracle E-Business Suite.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="fd33c-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="fd33c-106">Prerequisites</span></span>  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="fd33c-148">Employee.xml、[参照] を開くと、アプリケーション定義のインポート ページで、ファイルを選択し、をクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="fd33c-148">On the Import Application Definition page that opens, browse to Employee.xml, select the file, and then click **Open**.</span></span>  
   
-5.  <span data-ttu-id="fd33c-149">**[インポート]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fd33c-149">Click **Import**.</span></span>  
+5.  <span data-ttu-id="fd33c-149">**[インポート]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fd33c-149">Click **Import**.</span></span>  
   
 6.  <span data-ttu-id="fd33c-150">アプリケーション定義ファイルが正常にインポートされると、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="fd33c-150">After the application definition file is imported successfully, click **OK**.</span></span>  
   

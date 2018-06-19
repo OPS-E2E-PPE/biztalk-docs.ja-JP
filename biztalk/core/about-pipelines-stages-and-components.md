@@ -1,17 +1,17 @@
 ---
-title: "パイプライン、ステージ、およびコンポーネントについて |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン、ステージ、およびコンポーネントについて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Microsoft.BizTalk.Component.Interop namespace
 - pipelines, about pipelines
 ms.assetid: a98e1c93-f264-4577-bd12-4430a5859e3c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225466"
 ---
 # <a name="about-pipelines-stages-and-components"></a><span data-ttu-id="5a347-102">パイプライン、ステージ、およびコンポーネントについて</span><span class="sxs-lookup"><span data-stu-id="5a347-102">About Pipelines, Stages, and Components</span></span>
 <span data-ttu-id="5a347-103">パイプラインとは、事前に定義された順序でメッセージを処理する、一連の .NET コンポーネントまたは COM コンポーネントを含んだソフトウェア インフラストラクチャのことです。</span><span class="sxs-lookup"><span data-stu-id="5a347-103">A pipeline is a piece of software infrastructure that contains a set of .NET or COM components that process messages in a predefined sequence.</span></span> <span data-ttu-id="5a347-104">パイプラインでは、処理がステージと呼ばれる作業単位に分割されます。各ステージの順序もパイプラインによって決定されます。</span><span class="sxs-lookup"><span data-stu-id="5a347-104">A pipeline divides processing into categories of work called stages, and determines the sequence in which the stages are performed.</span></span> <span data-ttu-id="5a347-105">ステージごとに論理的なワークグループが定義され、使用コンポーネントが決定されるほか、そのステージにおけるパイプライン コンポーネントの実行方法も指定されます。</span><span class="sxs-lookup"><span data-stu-id="5a347-105">Each stage defines logical work groups, determines which components can go in that stage, and specifies how the pipeline components in the stage are run.</span></span>  

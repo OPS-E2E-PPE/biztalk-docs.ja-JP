@@ -1,18 +1,18 @@
 ---
-title: "Siebel ビジネス コンポーネントに対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel ビジネス コンポーネントに対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business components, operations on
 - operations, on business components
 - operations, on business components with picklist fields
 ms.assetid: 5430a8bd-88eb-4851-92e3-676ca83780c9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223618"
 ---
 # <a name="operations-on-business-components-in-siebel"></a><span data-ttu-id="ab854-102">Siebel ビジネス コンポーネントに対する操作</span><span class="sxs-lookup"><span data-stu-id="ab854-102">Operations on Business Components in Siebel</span></span>
 <span data-ttu-id="ab854-103">Siebel ビジネス コンポーネントは、1 つの構造に 1 つまたは複数のデータベース テーブルから列を関連付ける論理エンティティです。</span><span class="sxs-lookup"><span data-stu-id="ab854-103">A Siebel business component is a logical entity that associates columns from one or more database tables into a single structure.</span></span> <span data-ttu-id="ab854-104">アダプターのクライアントは、アダプターを使用して、Siebel ビジネス コンポーネントでは、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="ab854-104">Adapter clients can perform the following operations on the Siebel business components by using the adapter:</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="ab854-136">**関連付けを解除**です。</span><span class="sxs-lookup"><span data-stu-id="ab854-136">**Disassociate**.</span></span> <span data-ttu-id="ab854-137">アダプターのクライアントには、親の検索式を指定することによってレコードと子レコードを切り離すこともできます。</span><span class="sxs-lookup"><span data-stu-id="ab854-137">Adapter clients can dissociate records by specifying search expressions for parent and child records.</span></span> <span data-ttu-id="ab854-138">これは、MVG フィールドのビジネス コンポーネントに対してのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="ab854-138">This is applicable only for business components with MVG fields.</span></span> <span data-ttu-id="ab854-139">検索式では、親と子の両方のビジネス コンポーネントの 1 つのレコードをフィルター処理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ab854-139">The search expressions must filter exactly one record for both the parent and child business components.</span></span>  
   
--   <span data-ttu-id="ab854-140">**Query_ [MVG_Child_Business_Comp]**です。</span><span class="sxs-lookup"><span data-stu-id="ab854-140">**Query_[MVG_Child_Business_Comp]**.</span></span> <span data-ttu-id="ab854-141">アダプターのクライアントは、親レコードと MVG フィールド名を指定して、親レコードに関連付けられている子レコードを照会できます。</span><span class="sxs-lookup"><span data-stu-id="ab854-141">Adapter clients can query the child records that are associated with a parent record by specifying the parent record and the MVG field name.</span></span> <span data-ttu-id="ab854-142">これは、MVG フィールドのビジネス コンポーネントに対してのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="ab854-142">This is applicable only for business components with MVG fields.</span></span>  
+-   <span data-ttu-id="ab854-140">**Query_ [MVG_Child_Business_Comp]** です。</span><span class="sxs-lookup"><span data-stu-id="ab854-140">**Query_[MVG_Child_Business_Comp]**.</span></span> <span data-ttu-id="ab854-141">アダプターのクライアントは、親レコードと MVG フィールド名を指定して、親レコードに関連付けられている子レコードを照会できます。</span><span class="sxs-lookup"><span data-stu-id="ab854-141">Adapter clients can query the child records that are associated with a parent record by specifying the parent record and the MVG field name.</span></span> <span data-ttu-id="ab854-142">これは、MVG フィールドのビジネス コンポーネントに対してのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="ab854-142">This is applicable only for business components with MVG fields.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ab854-143">その他のパラメーターに加えて、これらの操作は、ViewMode パラメーターを受け取る。</span><span class="sxs-lookup"><span data-stu-id="ab854-143">In addition to other parameters, these operations also take a ViewMode parameter.</span></span> <span data-ttu-id="ab854-144">このパラメーターは、ユーザーのアクセス許可を決定する整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ab854-144">This parameter takes an integer that determines the access permissions of the user.</span></span> <span data-ttu-id="ab854-145">ViewMode パラメーターとこれらの操作に関するその他のパラメーターの詳細については、下にあるビジネス コンポーネント操作の要求メッセージを参照してください。[ビジネス コンポーネント操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-component-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="ab854-145">For more information about the ViewMode parameter and the other parameters for these operations, see the request message for business component operations under [Message Schemas for Business Component Operations](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-component-operations.md).</span></span>  

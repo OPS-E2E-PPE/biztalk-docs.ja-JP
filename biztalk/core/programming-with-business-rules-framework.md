@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264810"
 ---
 # <a name="programming-with-business-rules-framework"></a><span data-ttu-id="d5687-102">ビジネス ルール フレームワークによるプログラミング</span><span class="sxs-lookup"><span data-stu-id="d5687-102">Programming with Business Rules Framework</span></span>
 <span data-ttu-id="d5687-103">ここでは、プログラムによるポリシーの実行、ファクト取得コンポーネントの作成など、BRE プログラマの関連タスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d5687-103">This section covers BRE programmer related tasks such as executing policies programmatically and creating a fact retriever component.</span></span>  

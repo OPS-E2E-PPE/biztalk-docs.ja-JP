@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973872"
 ---
 # <a name="file-inventory-for-the-business-process-management-solution"></a><span data-ttu-id="5c88d-102">ビジネス プロセス管理ソリューションのファイル一覧</span><span class="sxs-lookup"><span data-stu-id="5c88d-102">File Inventory for the Business Process Management Solution</span></span>
 <span data-ttu-id="5c88d-103">このセクションでは、ビジネス プロセス管理ソリューションのサブディレクトリおよびソース ファイルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="5c88d-103">This section lists subdirectories and source files for the Business Process Management solution.</span></span> <span data-ttu-id="5c88d-104">ビジネス プロセス管理ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM です。</span><span class="sxs-lookup"><span data-stu-id="5c88d-104">The default installation directory for the Business Process Management solution source files is [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM.</span></span> <span data-ttu-id="5c88d-105">次の表では、このパスを交換する前に説明\<インストール ディレクトリ\>です。</span><span class="sxs-lookup"><span data-stu-id="5c88d-105">Descriptions before the following tables replace this path with \<Install Directory\>.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "バックアップと復元の BizTalk Server |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップと復元の BizTalk Server |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe03a75a-1ea6-4ccc-9543-7989ec6b1cff
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230786"
 ---
 # <a name="backing-up-and-restoring-biztalk-server"></a><span data-ttu-id="fd198-102">BizTalk Server のバックアップと復元</span><span class="sxs-lookup"><span data-stu-id="fd198-102">Backing Up and Restoring BizTalk Server</span></span>
 <span data-ttu-id="fd198-103">ハードウェアに障害が発生した場合に備えて、BizTalk Server のデータベースとコンポーネントの適切なバックアップを取っておくことは、必須の作業です。</span><span class="sxs-lookup"><span data-stu-id="fd198-103">In the event of hardware failure, having a good backup of your BizTalk Server databases and components is essential.</span></span> <span data-ttu-id="fd198-104">適切なバックアップを用意しておけば、データの損失を最小限にとどめて障害から回復することができます。</span><span class="sxs-lookup"><span data-stu-id="fd198-104">A good backup will enable you to recover with little or no data loss.</span></span> <span data-ttu-id="fd198-105">BizTalk Server をどのように復元するかは、ハードウェア障害が発生したシステムにインストールされているコンポーネントによって異なります。</span><span class="sxs-lookup"><span data-stu-id="fd198-105">How you restore BizTalk Server depends on which components were installed on the system where hardware failure occurred.</span></span> <span data-ttu-id="fd198-106">ここでは、次のようなハードウェア障害が発生した場合を想定します。</span><span class="sxs-lookup"><span data-stu-id="fd198-106">This guide covers the following hardware failure scenarios:</span></span>  

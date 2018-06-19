@@ -1,11 +1,11 @@
 ---
-title: "XML 情報は、XML アセンブラー パイプライン コンポーネントで要素を設定 |Microsoft ドキュメント"
-ms.custom: 
+title: XML 情報は、XML アセンブラー パイプライン コンポーネントで要素を設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Assembler [pipeline component], processing instructions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - pipeline components, XML Assembler
 - XML Assembler [pipeline component], XML information set
 ms.assetid: 5a262763-838e-476b-8117-30c94bc1d64a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289522"
 ---
 # <a name="xml-information-set-elements-in-the-xml-assembler-pipeline-component"></a><span data-ttu-id="1a9fb-102">XML 情報は、XML アセンブラー パイプライン コンポーネントで要素を設定</span><span class="sxs-lookup"><span data-stu-id="1a9fb-102">XML Information Set Elements in the XML Assembler Pipeline Component</span></span>
 <span data-ttu-id="1a9fb-103">XML アセンブラー コンポーネントでは、各種の XML 要素が次のように扱われます。</span><span class="sxs-lookup"><span data-stu-id="1a9fb-103">The XML Assembler component handles XML information set elements as follows.</span></span>  

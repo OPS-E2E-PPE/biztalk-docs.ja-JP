@@ -1,14 +1,14 @@
 ---
-title: "手順 6 (社内): 作成、キューから Insert スキーマへのメッセージをマップする変換 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6 (社内): 作成、キューから Insert スキーマへのメッセージをマップする変換 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30a55f1e-32cc-409a-a814-084026f51b35
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276594"
 ---
 # <a name="step-6-on-premises-create-a-transform-to-map-the-message-from-the-queue-to-the-insert-schema"></a><span data-ttu-id="cafcf-102">手順 6 (社内): キューから Insert スキーマへのメッセージをマップする変換を作成します。</span><span class="sxs-lookup"><span data-stu-id="cafcf-102">Step 6 (On Premises): Create a Transform to Map the Message from the Queue to the Insert Schema</span></span>
 <span data-ttu-id="cafcf-103">によって受信されるメッセージ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Service Bus キューからでは、 **ECommerceSalesOrder.xsd**スキーマです。</span><span class="sxs-lookup"><span data-stu-id="cafcf-103">The message that is received by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] from the Service Bus Queue will be of the **ECommerceSalesOrder.xsd** schema.</span></span> <span data-ttu-id="cafcf-104">ただしにメッセージを挿入する、 **SalesOrder**テーブルでのメッセージがある必要があります**挿入**で生成したスキーマ[手順 5 (オンプレミス): にメッセージを挿入するためのスキーマの生成SalesOrder テーブル](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)です。</span><span class="sxs-lookup"><span data-stu-id="cafcf-104">However, to insert a message into the **SalesOrder** table, the message must be of **Insert** schema that you generated in [Step 5 (On Premises): Generate the Schema for Inserting a Message inito SalesOrder Table](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md).</span></span> <span data-ttu-id="cafcf-105">そのため、このトピックでは作成を変換するマップ、 **ECommerceSalesOrder.xsd** Insert 操作スキーマにスキーマです。</span><span class="sxs-lookup"><span data-stu-id="cafcf-105">So, in this topic, we create a map to transform the **ECommerceSalesOrder.xsd** schema into the Insert operation schema.</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="cafcf-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をポイントし、プロジェクトを右クリックし、作成されると、既に**追加**、クリックして**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="cafcf-107">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] you already created, right-click the project, point to **Add**, and then click **New Item**.</span></span> <span data-ttu-id="cafcf-108">**新しい項目の**ダイアログ ボックスで、**マップ**、マップ名を入力`SalesOrder_SQL.btm`、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="cafcf-108">In the **New Item** dialog box, select **Map**, enter the map name as `SalesOrder_SQL.btm`, and then click **Add**.</span></span>  
   
-2.  <span data-ttu-id="cafcf-109">マップでは、送信元スキーマの選択**ECommerceSalesOrder.xsd**です。</span><span class="sxs-lookup"><span data-stu-id="cafcf-109">In the map, for the source schema, select **ECommerceSalesOrder.xsd**.</span></span> <span data-ttu-id="cafcf-110">送信先スキーマの選択**TableOperations.SalesOrder.xsd (Insert)**スキーマです。</span><span class="sxs-lookup"><span data-stu-id="cafcf-110">For the destination schema, select **TableOperations.SalesOrder.xsd (Insert)** schema.</span></span>  
+2.  <span data-ttu-id="cafcf-109">マップでは、送信元スキーマの選択**ECommerceSalesOrder.xsd**です。</span><span class="sxs-lookup"><span data-stu-id="cafcf-109">In the map, for the source schema, select **ECommerceSalesOrder.xsd**.</span></span> <span data-ttu-id="cafcf-110">送信先スキーマの選択**TableOperations.SalesOrder.xsd (Insert)** スキーマです。</span><span class="sxs-lookup"><span data-stu-id="cafcf-110">For the destination schema, select **TableOperations.SalesOrder.xsd (Insert)** schema.</span></span>  
   
 3.  <span data-ttu-id="cafcf-111">送信元スキーマと送信先スキーマで次のノードを直接マップします。</span><span class="sxs-lookup"><span data-stu-id="cafcf-111">Directly map the following nodes in the source and destination schemas:</span></span>  
   

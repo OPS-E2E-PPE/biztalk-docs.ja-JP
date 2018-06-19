@@ -1,14 +1,14 @@
 ---
-title: "HL7 の BizTalk アクセラレータをインストール |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 の BizTalk アクセラレータをインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52347742-f858-47bb-bc73-1a6095ea9e8e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205106"
 ---
 # <a name="install-biztalk-accelerator-for-hl7"></a><span data-ttu-id="c18ac-102">HL7 の BizTalk アクセラレータをインストールします。</span><span class="sxs-lookup"><span data-stu-id="c18ac-102">Install BizTalk Accelerator for HL7</span></span>
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="c18ac-175">既に選択されているデータベースが存在する場合は、メッセージ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c18ac-175">If the database selected already exists, then a message box appears.</span></span> <span data-ttu-id="c18ac-176">[**OK**] をクリックし、続行します。</span><span class="sxs-lookup"><span data-stu-id="c18ac-176">Select **OK** to continue.</span></span>  
     
-10. <span data-ttu-id="c18ac-177">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="c18ac-177">Select **Install**.</span></span>
+10. <span data-ttu-id="c18ac-177">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="c18ac-177">Select **Install**.</span></span>
   
 11. <span data-ttu-id="c18ac-178">選択**完了**完了したときにします。</span><span class="sxs-lookup"><span data-stu-id="c18ac-178">Select **Finish** when completed.</span></span>  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="c18ac-282">**データベース サーバー名**</span><span class="sxs-lookup"><span data-stu-id="c18ac-282">**Database Server name**</span></span>|<span data-ttu-id="c18ac-283">既定値は、サーバー名です。</span><span class="sxs-lookup"><span data-stu-id="c18ac-283">The default value is the server name.</span></span> <br/><br/><span data-ttu-id="c18ac-284">**注**サーバー名の既定値は、BizTalkMgmtDb データベースが存在するコンピューターの名前。</span><span class="sxs-lookup"><span data-stu-id="c18ac-284">**Note**  The server name defaults to the name of the computer that the BizTalkMgmtDb database resides.</span></span> <span data-ttu-id="c18ac-285">この値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="c18ac-285">You cannot change this value.</span></span>|  
     |<span data-ttu-id="c18ac-286">**HL7 データベース名**</span><span class="sxs-lookup"><span data-stu-id="c18ac-286">**HL7 Database name**</span></span>|<span data-ttu-id="c18ac-287">データを含むデータベースの名前を入力、[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]ソリューションか、既定の設定です。 これはそのまま使用**BTAHL7**です。</span><span class="sxs-lookup"><span data-stu-id="c18ac-287">Enter the name of the database that contains the data for your [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)] solution, or accept the default setting; which is **BTAHL7**.</span></span> <br/><br/> <span data-ttu-id="c18ac-288">**注**データベース要件ごとに設定する ANSI、ASCII 文字を使用する必要があります[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]他の文字セットをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="c18ac-288">**Note**  You must use the ANSI-ASCII character set per database requirements; [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)] does not support other character sets.</span></span>|  
   
-12. <span data-ttu-id="c18ac-289">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="c18ac-289">Select **Install**.</span></span>  
+12. <span data-ttu-id="c18ac-289">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="c18ac-289">Select **Install**.</span></span>  
   
 15. <span data-ttu-id="c18ac-290">選択**完了**完了したときにします。</span><span class="sxs-lookup"><span data-stu-id="c18ac-290">Select **Finish** when completed.</span></span>  
   

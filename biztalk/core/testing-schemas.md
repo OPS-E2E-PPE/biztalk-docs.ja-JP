@@ -1,14 +1,14 @@
 ---
-title: "スキーマのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2e28b7c-9d0c-4336-8bee-4599d41a57f4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279586"
 ---
 # <a name="testing-schemas"></a><span data-ttu-id="c9a68-102">スキーマのテスト</span><span class="sxs-lookup"><span data-stu-id="c9a68-102">Testing Schemas</span></span>
 <span data-ttu-id="c9a68-103">スキーマを作成した後、XML 構造が正しいかどうかを検証したい場合があります。</span><span class="sxs-lookup"><span data-stu-id="c9a68-103">After you have created your schema, you may want to validate that it describes the XML structure you intend it to describe.</span></span> <span data-ttu-id="c9a68-104">スキーマに対して次の 3 つの操作を実行して、検証を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="c9a68-104">You can perform the following three operations on your schema to validate it:</span></span>  

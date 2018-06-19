@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用するポートのバインド ファイルを使用する物理ポートのバインドの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用するポートのバインド ファイルを使用する物理ポートのバインドの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95b54357-b23d-4ed7-8e31-bd60ed3e625f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225458"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-use-the-sql-adapter"></a><span data-ttu-id="a2580-102">SQL アダプターを使用するポートのバインド ファイルを使用する物理ポートのバインドを構成します。</span><span class="sxs-lookup"><span data-stu-id="a2580-102">Configure a physical port binding using a port binding file to use the SQL adapter</span></span>
 <span data-ttu-id="a2580-103">使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]スキーマ ファイルは、以外の SQL Server 成果物を表すメタデータを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]もポートのバインド ファイルを生成します。</span><span class="sxs-lookup"><span data-stu-id="a2580-103">When you use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to generate metadata for a SQL Server artifact, other than the schema files, the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] also generates a port binding file.</span></span> <span data-ttu-id="a2580-104">作成する物理送信ポートまたは受信ポートを BizTalk アプリケーションにこのバインド ファイルをインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="a2580-104">You can import this binding file into your BizTalk application to create a physical send or receive port.</span></span> <span data-ttu-id="a2580-105">バインド ファイルをインポートする方法の詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)です。</span><span class="sxs-lookup"><span data-stu-id="a2580-105">For instructions on importing binding files, see [Reuse adapter bindings](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md).</span></span> <span data-ttu-id="a2580-106">このバインド ファイルをインポートする場合、手動で作成する物理送信ポートまたは受信ポートをするはありません。</span><span class="sxs-lookup"><span data-stu-id="a2580-106">If you import this binding file, you do not have to manually create a physical send or receive port.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "スキーマ (EDI) の検証 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ (EDI) の検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6175460-2dcf-4fef-b770-02f0a058bf93
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287786"
 ---
 # <a name="validating-a-schema-edi"></a><span data-ttu-id="591b3-102">スキーマの検証 (EDI)</span><span class="sxs-lookup"><span data-stu-id="591b3-102">Validating a Schema (EDI)</span></span>
 <span data-ttu-id="591b3-103">デザイン時に EDI スキーマを検証できます。</span><span class="sxs-lookup"><span data-stu-id="591b3-103">You can validate an EDI schema at design time.</span></span> <span data-ttu-id="591b3-104">それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。</span><span class="sxs-lookup"><span data-stu-id="591b3-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="591b3-105">スキーマの検証操作では、EDI ルールに基づいてスキーマの検証が行われます。</span><span class="sxs-lookup"><span data-stu-id="591b3-105">The validate-schema operation validates the schema based on EDI rules.</span></span> <span data-ttu-id="591b3-106">スキーマを検証するために入力メッセージ インスタンスを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="591b3-106">You do not have to designate an input message instance to validate a schema.</span></span>  

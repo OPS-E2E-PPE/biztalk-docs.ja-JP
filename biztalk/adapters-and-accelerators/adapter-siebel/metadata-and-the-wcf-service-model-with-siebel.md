@@ -1,17 +1,17 @@
 ---
-title: "メタデータと、WCF サービスの Siebel 使用モデルの |Microsoft ドキュメント"
-ms.custom: 
+title: メタデータと、WCF サービスの Siebel 使用モデルの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, metadata
 - metadata, and the WCF service model
 ms.assetid: 3aca1835-fb9e-4841-a920-078da0b3fe76
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221898"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-siebel"></a><span data-ttu-id="ed730-102">メタデータと Siebel で WCF サービスのモデル</span><span class="sxs-lookup"><span data-stu-id="ed730-102">Metadata and the WCF Service Model with Siebel</span></span>
 <span data-ttu-id="ed730-103">使用する WCF サービス モデルで、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutile.exe) プロキシ クラスを生成する: WCF クライアント クラス — をコードできます操作の呼び出しで使用、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ed730-103">In the WCF service model, you use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the ServiceModel Metadata Utility Tool (svcutile.exe) to generate a proxy class—the WCF client class—through which your code can invoke operations on the [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].</span></span>  

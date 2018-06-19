@@ -1,14 +1,14 @@
 ---
-title: "基本 Functoid |Microsoft ドキュメント"
-ms.custom: 
+title: 基本 Functoid |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd4b6924-4ad1-4297-a12f-22de11328bab
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230946"
 ---
 # <a name="basic-functoids"></a><span data-ttu-id="ec28e-102">基本 Functoid</span><span class="sxs-lookup"><span data-stu-id="ec28e-102">Basic Functoids</span></span>
 <span data-ttu-id="ec28e-103">含まれない、**詳細**カテゴリは、基本 functoid と見なされます。</span><span class="sxs-lookup"><span data-stu-id="ec28e-103">Any functoid not in the **Advanced** category is considered a basic functoid.</span></span> <span data-ttu-id="ec28e-104">一般に、基本 Functoid は使いやすく、構成する入力パラメーターの数は少なく、ほとんどが単純なパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="ec28e-104">Basic functoids are generally easy to use, having few and, often, straightforward input parameters to be configured.</span></span> <span data-ttu-id="ec28e-105">このセクションでは、基本 Functoid に関する概要をカテゴリごとに説明します。</span><span class="sxs-lookup"><span data-stu-id="ec28e-105">This section provides conceptual information about the basic functoids, organized by category.</span></span>  

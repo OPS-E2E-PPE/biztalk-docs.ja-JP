@@ -1,14 +1,14 @@
 ---
-title: "SQL Server 接続 URI を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server 接続 URI を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 688e2215-a4d8-4f55-a37c-7d91c3de080f
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224098"
 ---
 # <a name="create-the-sql-server-connection-uri"></a><span data-ttu-id="e2dba-102">SQL Server の接続 URI を作成します。</span><span class="sxs-lookup"><span data-stu-id="e2dba-102">Create the SQL Server connection URI</span></span>
 <span data-ttu-id="e2dba-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]接続 URI には、アダプターは、SQL Server データベースへの接続を確立するために使用するプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e2dba-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] connection URI contains properties that the adapter uses to establish a connection to the SQL Server database.</span></span> <span data-ttu-id="e2dba-104">このトピックでは、SQL Server の接続 URI、に関する情報を提供し、その他のさまざまなプログラミング シナリオでの URI を指定する方法を説明するトピックへのリンクを示します。</span><span class="sxs-lookup"><span data-stu-id="e2dba-104">This topic provides information about the SQL Server connection URI, and provides links to other topics that explain how to specify a URI in different programming scenarios.</span></span>  

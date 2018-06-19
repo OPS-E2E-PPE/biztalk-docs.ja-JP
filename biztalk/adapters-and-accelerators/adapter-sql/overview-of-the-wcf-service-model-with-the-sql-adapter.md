@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターで WCF サービス モデルの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターで WCF サービス モデルの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7641bcc7-3845-4914-9b1b-cb86b998ea6d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222890"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-sql-adapter"></a><span data-ttu-id="66bf6-102">SQL アダプターで WCF サービス モデルの概要</span><span class="sxs-lookup"><span data-stu-id="66bf6-102">Overview of the WCF service model with the SQL adapter</span></span>
 <span data-ttu-id="66bf6-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]は WCF サービスとしての SQL Server 操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="66bf6-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] exposes a SQL Server operation as a WCF service.</span></span> <span data-ttu-id="66bf6-104">ストアド プロシージャを呼び出す例については、SQL Server の成果物の操作を実行するには、さらに、SQL Server で操作を実行すると、アダプターでの操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="66bf6-104">To perform operations on SQL Server artifacts, for example to invoke a stored procedure, you invoke an operation on the adapter, which, in turn, performs the operation on the SQL Server.</span></span> <span data-ttu-id="66bf6-105">したがって、コードは、アダプターによって提示される WCF サービスのクライアントとして機能します。</span><span class="sxs-lookup"><span data-stu-id="66bf6-105">Your code therefore acts as a client to the WCF service presented by the adapter.</span></span>  

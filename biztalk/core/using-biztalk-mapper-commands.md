@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 34fea0fb-0609-4571-be49-6ee3f03afe2a
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22289282"
 ---
 # <a name="using-biztalk-mapper-commands"></a><span data-ttu-id="0e41c-102">BizTalk マッパー コマンドの使用</span><span class="sxs-lookup"><span data-stu-id="0e41c-102">Using BizTalk Mapper Commands</span></span>
 <span data-ttu-id="0e41c-103">メニュー追加マッパーがアクティブになると、 **BizTalk** microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]シェルです。</span><span class="sxs-lookup"><span data-stu-id="0e41c-103">When BizTalkMapper becomes active, it adds a menu called **BizTalk** to the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] shell.</span></span> <span data-ttu-id="0e41c-104">このメニューを使用して、BizTalk マッパー コマンドおよびその機能にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0e41c-104">This menu provides access to the BizTalk Mapper commands and their functionality.</span></span> <span data-ttu-id="0e41c-105">BizTalk マッパーがアクティブの場合、 **BizTalk** メニューには、BizTalk マップを編集する固有のコマンドが用意されています。</span><span class="sxs-lookup"><span data-stu-id="0e41c-105">When BizTalk Mapper is active, the **BizTalk** menu provides the commands that are specific to editing BizTalk maps.</span></span>  

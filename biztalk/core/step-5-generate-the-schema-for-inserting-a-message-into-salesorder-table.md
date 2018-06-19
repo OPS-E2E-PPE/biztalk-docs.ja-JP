@@ -1,14 +1,14 @@
 ---
-title: "手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマの生成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマの生成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab0bc1a7-8bcd-4110-88e6-4eddf0b57068
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279322"
 ---
 # <a name="step-5-on-premises-generate-the-schema-for-inserting-a-message-inito-salesorder-table"></a><span data-ttu-id="dfc05-102">手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-102">Step 5 (On Premises): Generate the Schema for Inserting a Message inito SalesOrder Table</span></span>
 <span data-ttu-id="dfc05-103">ビジネス シナリオに従って、X12 販売注文メッセージは、Contoso から送信される必要があります挿入される Northwind の**SalesOrder**テーブルの場合は、注文、数量が 100 より大きい。</span><span class="sxs-lookup"><span data-stu-id="dfc05-103">According to the business scenario, the X12 sales order message sent from Contoso must be inserted into Northwind’s **SalesOrder** table if the quantity ordered is greater than 100.</span></span> <span data-ttu-id="dfc05-104">メッセージを挿入する、 **SalesOrder**テーブルのスキーマを生成する必要があります、**挿入**テーブルで操作します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-104">To insert a message into a **SalesOrder** table, you must generate the schema for the **Insert** operation on the table.</span></span> <span data-ttu-id="dfc05-105">このトピックでは、作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション、およびしを使用して、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]を実行するためのスキーマを生成する、**挿入**での操作、 **SalesOrder**テーブル。</span><span class="sxs-lookup"><span data-stu-id="dfc05-105">In this topic, you will create a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution, and then use the [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] to generate the schema for performing an **Insert** operation on the **SalesOrder** table.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="dfc05-118">**なし**</span><span class="sxs-lookup"><span data-stu-id="dfc05-118">**None**</span></span>|<span data-ttu-id="dfc05-119">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-119">Connect to SQL Server using Windows authentication.</span></span>|  
     |<span data-ttu-id="dfc05-120">**Windows**</span><span class="sxs-lookup"><span data-stu-id="dfc05-120">**Windows**</span></span>|<span data-ttu-id="dfc05-121">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-121">Connect to SQL Server using Windows authentication.</span></span>|  
-    |<span data-ttu-id="dfc05-122">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="dfc05-122">**Username**</span></span>|<span data-ttu-id="dfc05-123">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-123">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="dfc05-124">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="dfc05-124">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="dfc05-125">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-125">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="dfc05-122">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="dfc05-122">**Username**</span></span>|<span data-ttu-id="dfc05-123">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-123">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="dfc05-124">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="dfc05-124">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="dfc05-125">**注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-125">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
 6.  <span data-ttu-id="dfc05-126">クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="dfc05-126">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="dfc05-127">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI](http://msdn.microsoft.com/library/dd788089.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="dfc05-127">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)], see [SQL Server Connection URI](http://msdn.microsoft.com/library/dd788089.aspx).</span></span>  
   

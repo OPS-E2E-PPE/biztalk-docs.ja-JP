@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75d34c48-0f2a-42e4-a60b-e04bcf2404e1
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227034"
 ---
 # <a name="step-2-create-an-application-definition-file-for-siebel-business-component-operations"></a><span data-ttu-id="29c1d-102">手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="29c1d-102">Step 2: Create an Application Definition File for Siebel Business Component Operations</span></span>
 <span data-ttu-id="29c1d-103">![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="29c1d-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="29c1d-104">**所要時間:** 15 分</span><span class="sxs-lookup"><span data-stu-id="29c1d-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="29c1d-105">**目標:**ビジネス データ カタログを公開し、ポータルに基幹業務 (LOB) アプリケーションからのデータが組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="29c1d-105">**Objective:** The Business Data Catalog exposes and incorporates data from line-of-business (LOB) applications into portals.</span></span> <span data-ttu-id="29c1d-106">ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用できるアプリケーション定義ファイルをビルドする必要があります。</span><span class="sxs-lookup"><span data-stu-id="29c1d-106">To incorporate this data into your portal site, you must build an application definition file that Microsoft Office SharePoint Server can consume.</span></span>  
+ <span data-ttu-id="29c1d-105">**目標:** ビジネス データ カタログを公開し、ポータルに基幹業務 (LOB) アプリケーションからのデータが組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="29c1d-105">**Objective:** The Business Data Catalog exposes and incorporates data from line-of-business (LOB) applications into portals.</span></span> <span data-ttu-id="29c1d-106">ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用できるアプリケーション定義ファイルをビルドする必要があります。</span><span class="sxs-lookup"><span data-stu-id="29c1d-106">To incorporate this data into your portal site, you must build an application definition file that Microsoft Office SharePoint Server can consume.</span></span>  
   
  <span data-ttu-id="29c1d-107">ビジネス データ カタログ定義エディター ツールでは、ビジネス データ カタログのアプリケーション定義ファイルを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="29c1d-107">The Business Data Catalog Definition Editor tool enables you to create an application definition file for the Business Data Catalog.</span></span> <span data-ttu-id="29c1d-108">このツールには、XML 定義ファイルを自動的に生成されます。</span><span class="sxs-lookup"><span data-stu-id="29c1d-108">This tool automatically generates the XML for the definition file.</span></span> <span data-ttu-id="29c1d-109">そのため、手動でエディターを作成するファイル、XML ではありません。</span><span class="sxs-lookup"><span data-stu-id="29c1d-109">Therefore, you do not have to manually create the file in an XML editor.</span></span>  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="29c1d-132">URL を入力する必要がありますが、WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに使用可能な[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作の公開](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)です。</span><span class="sxs-lookup"><span data-stu-id="29c1d-132">The URL that you must type is available when you test whether the WCF service is published successfully, as described in [Step 1: Publish the Siebel Business Component Operations as a WCF Service](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md).</span></span>  
   
-5.  <span data-ttu-id="29c1d-133">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-133">Click **Connect**.</span></span>  
+5.  <span data-ttu-id="29c1d-133">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-133">Click **Connect**.</span></span>  
   
 6.  <span data-ttu-id="29c1d-134">クリックして、 **Web メソッドの追加** タブに、WCF アダプター サービス開発ウィザードで選択した操作を参照してください。</span><span class="sxs-lookup"><span data-stu-id="29c1d-134">Click the **Add Web Method** tab to see the operations you selected in the WCF Adapter Service Development Wizard.</span></span> <span data-ttu-id="29c1d-135">表示されます、**クエリ**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="29c1d-135">You will see the **Query** method.</span></span>  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="29c1d-162">PropertyView コレクション エディター] ウィンドウで、[**追加**、プロパティ ウィンドウで、次のように入力します。`HttpHeaderPassword`の、**名前**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="29c1d-162">In the PropertyView Collection Editor window, click **Add**, and in the Properties pane, type `HttpHeaderPassword` for the **Name** field.</span></span> <span data-ttu-id="29c1d-163">同様に、入力`MyPassHeader`の**PropertyValue**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="29c1d-163">Similarly, type `MyPassHeader` for the **PropertyValue** field.</span></span> <span data-ttu-id="29c1d-164">選択**System.String**の**型**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="29c1d-164">Select **System.String** for the **Type** field.</span></span>  
   
-5.  <span data-ttu-id="29c1d-165">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-165">Click **OK**.</span></span>  
+5.  <span data-ttu-id="29c1d-165">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-165">Click **OK**.</span></span>  
   
 ### <a name="set-up-single-sign-on-for-connecting-to-a-siebel-system"></a><span data-ttu-id="29c1d-166">Siebel システムに接続するためのシングル サインオンを設定します。</span><span class="sxs-lookup"><span data-stu-id="29c1d-166">Set up Single Sign-On for Connecting to a Siebel System</span></span>  
  <span data-ttu-id="29c1d-167">このトピックのすべてのプロシージャの実行が完了したら後、は、アプリケーション定義、SharePoint アプリケーションにインポートできる XML が作成されます。</span><span class="sxs-lookup"><span data-stu-id="29c1d-167">After you have finished performing all the procedures in this topic, you will have created an application definition XML that can be imported into a SharePoint application.</span></span> <span data-ttu-id="29c1d-168">アプリケーションからは、Siebel システムの関連するデータを取得する (Web メソッドとして公開) Siebel ビジネス コンポーネント操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="29c1d-168">From the application, you will invoke the Siebel business component operations (exposed as Web methods) to retrieve relevant data from the Siebel system.</span></span> <span data-ttu-id="29c1d-169">これを有効にするには、SharePoint アプリケーションで Siebel システムのユーザーとユーザー間のマッピングを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="29c1d-169">To enable this, you must create a mapping between a user in the Siebel system and the user in the SharePoint application.</span></span> <span data-ttu-id="29c1d-170">アプリケーション定義の XML をインポートした後は、SharePoint サーバーの全体管理 Web サイトでこのマッピングを作成します。</span><span class="sxs-lookup"><span data-stu-id="29c1d-170">You create this mapping in SharePoint Central Administration Web site after you have imported the application definition XML.</span></span>  
@@ -114,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="29c1d-178">![SSO プロパティの追加](../../adapters-and-accelerators/adapter-siebel/media/59ce70eb-498f-406b-965d-c273c2d6ed14.gif "59ce70eb-498f-406b-965d-c273c2d6ed14")</span><span class="sxs-lookup"><span data-stu-id="29c1d-178">![Add the SSO property](../../adapters-and-accelerators/adapter-siebel/media/59ce70eb-498f-406b-965d-c273c2d6ed14.gif "59ce70eb-498f-406b-965d-c273c2d6ed14")</span></span>  
   
-4.  <span data-ttu-id="29c1d-179">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-179">Click **OK**.</span></span>  
+4.  <span data-ttu-id="29c1d-179">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-179">Click **OK**.</span></span>  
   
 ### <a name="requirement-perform-a-query-operation-on-the-account-business-component"></a><span data-ttu-id="29c1d-180">アカウントのビジネス コンポーネントでクエリ操作を実行する要件。</span><span class="sxs-lookup"><span data-stu-id="29c1d-180">Requirement: Perform a Query Operation on the Account Business Component</span></span>  
  <span data-ttu-id="29c1d-181">この例の最初の要件では、アカウントのビジネス コンポーネントでクエリ操作の実行に使用できるアプリケーション定義を作成します。</span><span class="sxs-lookup"><span data-stu-id="29c1d-181">The first requirement of this example is to create an application definition that can be used to perform a Query operation on the Account business component.</span></span> <span data-ttu-id="29c1d-182">この要件を達成するのには、次の一連のタスクを行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="29c1d-182">To achieve this requirement, you must perform the following set of tasks:</span></span>  
@@ -168,7 +169,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="29c1d-211">![Finder メソッド インスタンスの追加](../../adapters-and-accelerators/adapter-siebel/media/e8343988-d7c1-4b04-85b0-ca7d07097490.gif "e8343988-d7c1-4b04-85b0-ca7d07097490")</span><span class="sxs-lookup"><span data-stu-id="29c1d-211">![Add a Finder method instance](../../adapters-and-accelerators/adapter-siebel/media/e8343988-d7c1-4b04-85b0-ca7d07097490.gif "e8343988-d7c1-4b04-85b0-ca7d07097490")</span></span>  
   
-5.  <span data-ttu-id="29c1d-212">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-212">Click **OK**.</span></span>  
+5.  <span data-ttu-id="29c1d-212">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29c1d-212">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="29c1d-213">プロパティ ウィンドウで、次のように入力します。`QueryAccount`の、**名前**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="29c1d-213">In the Properties pane, type `QueryAccount` for the **Name** field.</span></span>  
   

@@ -1,18 +1,18 @@
 ---
-title: "パイプライン (BizTalk Server Samples フォルダ) |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, examples
 - SDK examples
 - examples, pipelines
 ms.assetid: d1b6d984-ac0d-4149-99fd-93d3b6ed316c
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264882"
 ---
 # <a name="pipelines-biztalk-server-samples-folder"></a><span data-ttu-id="1ccc5-102">パイプライン (BizTalk Server Samples フォルダ)</span><span class="sxs-lookup"><span data-stu-id="1ccc5-102">Pipelines (BizTalk Server Samples Folder)</span></span>
 <span data-ttu-id="1ccc5-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、パイプラインのサンプルがいくつか付属しています。</span><span class="sxs-lookup"><span data-stu-id="1ccc5-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes several pipeline samples in its software development kit (SDK).</span></span> <span data-ttu-id="1ccc5-104">このセクションでは、各パイプライン サンプルが示す機能、サンプルをビルドして実行する方法、および予測される実行結果について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="1ccc5-104">This section provides detailed information about the functionality that each pipeline sample demonstrates, instructions for building and running the sample, and the results you can expect.</span></span>  

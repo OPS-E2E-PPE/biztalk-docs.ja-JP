@@ -1,14 +1,14 @@
 ---
-title: "FileAct アダプター リアルタイム エンド ツー エンド プリミティブ |Microsoft ドキュメント"
-ms.custom: 
+title: FileAct アダプター リアルタイム エンド ツー エンド プリミティブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8591120-7259-49cb-90ac-954d8be226ed
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224930"
 ---
 # <a name="fileact-adapter-real-time-end-to-end-primitives"></a><span data-ttu-id="8d5ab-102">FileAct アダプター リアルタイム エンド ツー エンド プリミティブ</span><span class="sxs-lookup"><span data-stu-id="8d5ab-102">FileAct Adapter Real-Time End-to-End Primitives</span></span>
 <span data-ttu-id="8d5ab-103">SWIFTNet プリミティブが、アプリケーションと SWIFTNet リンク (SNL) の間で交換される XML ドキュメントのペアです。</span><span class="sxs-lookup"><span data-stu-id="8d5ab-103">SWIFTNet primitives are a pair of XML documents exchanged between the application and SWIFTNet Link (SNL).</span></span> <span data-ttu-id="8d5ab-104">各エンド ツー エンド プリミティブ型、そこに側のプリミティブ – クライアント (または送信) の横にあるいずれかと、サーバーで 1 つのバージョンの 2 つ (または受信)。</span><span class="sxs-lookup"><span data-stu-id="8d5ab-104">For each end-to-end primitive, there are two versions of the primitive – one at the client (or send) side and one at the server (or receive) side.</span></span> <span data-ttu-id="8d5ab-105">4 つのメッセージの合計が含まれます。 ファイルの配置のプリミティブ、ファイルの取得のプリミティブ型、およびそれぞれに対して配信通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="8d5ab-105">This comprises a total of four messages: Put File primitive, Get File primitive, and a Send Delivery Notification for each.</span></span>  

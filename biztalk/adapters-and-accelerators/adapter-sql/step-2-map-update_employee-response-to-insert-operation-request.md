@@ -1,14 +1,14 @@
 ---
-title: "手順 2: マップ操作の要求メッセージを挿入する UPDATE_EMPLOYEE 応答メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: マップ操作の要求メッセージを挿入する UPDATE_EMPLOYEE 応答メッセージ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d12014a-0147-4227-88fa-0b290eff4cce
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224826"
 ---
 # <a name="step-2-map-the-updateemployee-response-message-to-insert-operation-request-message"></a><span data-ttu-id="24022-102">手順 2: マップ操作の要求メッセージを挿入する UPDATE_EMPLOYEE 応答メッセージ</span><span class="sxs-lookup"><span data-stu-id="24022-102">Step 2: Map the UPDATE_EMPLOYEE Response Message to Insert Operation Request Message</span></span>
 <span data-ttu-id="24022-103">![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="24022-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="24022-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="24022-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="24022-105">**目標:**挿入操作を実行する要求メッセージを作成するこの手順で、 **Purchase_Order**テーブルし、の応答メッセージをマップし、 **UPDATE_EMPLOYEE**格納されています。挿入操作の要求メッセージにプロシージャです。</span><span class="sxs-lookup"><span data-stu-id="24022-105">**Objective:** In this step, you create the request message to perform an Insert operation on the **Purchase_Order** table and then map the response message for the **UPDATE_EMPLOYEE** stored procedure to the request message for the Insert operation.</span></span> <span data-ttu-id="24022-106">これによりに挿入される応答メッセージの値を渡す、 **Purchase_Order**テーブル。</span><span class="sxs-lookup"><span data-stu-id="24022-106">By doing so, you pass on the values in the response message to be inserted in the **Purchase_Order** table.</span></span>  
+ <span data-ttu-id="24022-105">**目標:** 挿入操作を実行する要求メッセージを作成するこの手順で、 **Purchase_Order**テーブルし、の応答メッセージをマップし、 **UPDATE_EMPLOYEE**格納されています。挿入操作の要求メッセージにプロシージャです。</span><span class="sxs-lookup"><span data-stu-id="24022-105">**Objective:** In this step, you create the request message to perform an Insert operation on the **Purchase_Order** table and then map the response message for the **UPDATE_EMPLOYEE** stored procedure to the request message for the Insert operation.</span></span> <span data-ttu-id="24022-106">これによりに挿入される応答メッセージの値を渡す、 **Purchase_Order**テーブル。</span><span class="sxs-lookup"><span data-stu-id="24022-106">By doing so, you pass on the values in the response message to be inserted in the **Purchase_Order** table.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="24022-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="24022-107">Prerequisites</span></span>  
  <span data-ttu-id="24022-108">完了する必要があります[手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成する](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)です。</span><span class="sxs-lookup"><span data-stu-id="24022-108">You must have completed [Step 1: Create the Request Message for Insert Operation on Purchase_Order Table](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md).</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="24022-132">![変換先スキーマのマッピングの選択](../../adapters-and-accelerators/adapter-sql/media/sql-adap-tut-05-dest-map.gif "sql_adap_tut_05_dest_map")</span><span class="sxs-lookup"><span data-stu-id="24022-132">![Pick the destination schema for mapping](../../adapters-and-accelerators/adapter-sql/media/sql-adap-tut-05-dest-map.gif "sql_adap_tut_05_dest_map")</span></span>  
   
-11. <span data-ttu-id="24022-133">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="24022-133">Click **OK**.</span></span> <span data-ttu-id="24022-134">マップ ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="24022-134">The map file opens.</span></span>  
+11. <span data-ttu-id="24022-133">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="24022-133">Click **OK**.</span></span> <span data-ttu-id="24022-134">マップ ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="24022-134">The map file opens.</span></span>  
   
 12. <span data-ttu-id="24022-135">送信元と送信先スキーマ内のノードを展開します。</span><span class="sxs-lookup"><span data-stu-id="24022-135">Expand the nodes in the source and destination schemas.</span></span>  
   

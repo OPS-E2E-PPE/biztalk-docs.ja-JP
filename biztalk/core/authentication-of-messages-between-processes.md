@@ -1,11 +1,11 @@
 ---
-title: "プロセス間でメッセージの認証 |Microsoft ドキュメント"
-ms.custom: 
+title: プロセス間でメッセージの認証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PID
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - SSID
 - authenticating, warnings
 ms.assetid: fa746ee3-fc22-4e63-a5cc-8bc0cbeb536b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231306"
 ---
 # <a name="authentication-of-messages-between-processes"></a><span data-ttu-id="efa66-102">プロセス間でメッセージの認証</span><span class="sxs-lookup"><span data-stu-id="efa66-102">Authentication of Messages Between Processes</span></span>
 <span data-ttu-id="efa66-103">次の図に、BizTalk ホスト間でメッセージの認証に使用できる BizTalk Server のセキュリティ機能を示します。</span><span class="sxs-lookup"><span data-stu-id="efa66-103">The following figure shows the security features in BizTalk Server that enable you to authenticate messages between different BizTalk hosts.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "DTA 追跡のパフォーマンスに関する動作を理解する |Microsoft ドキュメント"
-ms.custom: 
+title: DTA 追跡のパフォーマンスに関する動作を理解する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b1a70951-bfed-435c-97f4-0b28a8e4e4dc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287026"
 ---
 # <a name="understanding-dta-tracking-performance-behavior"></a><span data-ttu-id="9b5a3-102">DTA 追跡のパフォーマンス特性について</span><span class="sxs-lookup"><span data-stu-id="9b5a3-102">Understanding DTA Tracking Performance Behavior</span></span>
 <span data-ttu-id="9b5a3-103">DTA 追跡の維持可能な最大スループット (MST) を決定する主要な要因として、次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="9b5a3-103">The primary factors that determine maximum sustainable throughput (MST) for DTA tracking are:</span></span>  

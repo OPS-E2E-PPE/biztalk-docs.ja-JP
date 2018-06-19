@@ -1,14 +1,14 @@
 ---
-title: "アダプター デザイン時の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター デザイン時の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5e7b63c-6e17-4c54-9bbf-6964668a2420
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226170"
 ---
 # <a name="adapter-design-time-configuration"></a><span data-ttu-id="231cb-102">アダプターのデザイン時構成</span><span class="sxs-lookup"><span data-stu-id="231cb-102">Adapter Design-Time Configuration</span></span>
 <span data-ttu-id="231cb-103">アダプターには、実行時コンポーネントとデザイン時コンポーネントの両方が含まれます。</span><span class="sxs-lookup"><span data-stu-id="231cb-103">An adapter contains both a run-time and a design-time component.</span></span> <span data-ttu-id="231cb-104">実行時コンポーネントを表示することはできません。</span><span class="sxs-lookup"><span data-stu-id="231cb-104">The run-time component is not visible to a user.</span></span> <span data-ttu-id="231cb-105">実行時コンポーネントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージの送信、受信、および処理をユーザーに意識させることなく行います。</span><span class="sxs-lookup"><span data-stu-id="231cb-105">It is transparently responsible for the transmission, receipt, and processing of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] messages.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "アクティビティを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e218e2a-27f8-4df2-a1e0-27392112d369
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287186"
 ---
 # <a name="using-an-activity"></a><span data-ttu-id="3af7c-102">アクティビティの使用</span><span class="sxs-lookup"><span data-stu-id="3af7c-102">Using an Activity</span></span>
 <span data-ttu-id="3af7c-103">BAM の最も簡単な使用方法は、BAM API を使用して明示的なマイルストーンまたはデータを送信することです。</span><span class="sxs-lookup"><span data-stu-id="3af7c-103">The simplest way to use BAM is to send explicit milestones or data using the BAM API.</span></span> <span data-ttu-id="3af7c-104">BAM アクティビティは、実際の作業単位との同期を維持している、SQL テーブルのレコードと考えることができます。</span><span class="sxs-lookup"><span data-stu-id="3af7c-104">You can think of the BAM activity as a record in a SQL table that you are keeping in synchronization with the actual unit of work.</span></span>  

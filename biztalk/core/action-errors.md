@@ -1,14 +1,14 @@
 ---
-title: "アクション エラー |Microsoft ドキュメント"
-ms.custom: 
+title: アクション エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87cf0a5b-d1dd-4807-9660-e8a8b7012b40
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225594"
 ---
 # <a name="action-errors"></a><span data-ttu-id="5fd8a-102">アクション エラー</span><span class="sxs-lookup"><span data-stu-id="5fd8a-102">Action Errors</span></span>
 <span data-ttu-id="5fd8a-103">ここでは、WCF のアクション エラーを診断および解決するための詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="5fd8a-103">This section contains detailed information for diagnosing and resolving WCF Action errors.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="5fd8a-129">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="5fd8a-129">In the port **Type** list, select the correct port.</span></span>  
   
-7.  <span data-ttu-id="5fd8a-130">**[構成]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fd8a-130">Select **Configure**.</span></span>  
+7.  <span data-ttu-id="5fd8a-130">**[構成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fd8a-130">Select **Configure**.</span></span>  
   
 8.  <span data-ttu-id="5fd8a-131">**WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="5fd8a-131">In the **WCF [***transport type***] Transport Properties** dialog box, select the **General** tab.</span></span>  
   

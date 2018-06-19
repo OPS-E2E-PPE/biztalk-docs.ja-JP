@@ -1,17 +1,17 @@
 ---
-title: "Admin ExplorerOM (BizTalk Server Samples フォルダ) |Microsoft ドキュメント"
-ms.custom: 
+title: Admin ExplorerOM (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, administering
 - administering, examples
 ms.assetid: f6553138-9ab3-4368-84bf-9813e909e372
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230034"
 ---
 # <a name="admin-explorerom-biztalk-server-samples-folder"></a><span data-ttu-id="5644b-102">Admin ExplorerOM (BizTalk Server Samples フォルダ)</span><span class="sxs-lookup"><span data-stu-id="5644b-102">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>
 <span data-ttu-id="5644b-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) の Admin\ExplorerOM フォルダーには、サンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="5644b-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes samples in the Admin\ExplorerOM folder in its software development kit (SDK).</span></span> <span data-ttu-id="5644b-104">このセクションでは、各 BizTalk エクスプローラー オブジェクト モデル管理サンプルが示す機能、サンプルをビルドおよび実行する方法、および予想される実行結果について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="5644b-104">This section provides detailed information about the functionality demonstrated by each BizTalk Explorer object model administration sample, instructions for building and running the sample, and the results you can expect.</span></span>  

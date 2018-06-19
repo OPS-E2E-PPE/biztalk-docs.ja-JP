@@ -1,11 +1,11 @@
 ---
-title: "要求-応答のメッセージング |Microsoft ドキュメント"
-ms.custom: 
+title: 要求-応答のメッセージング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - request/response messaging, about request/response messaging
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - request/response messaging, SOAP adapters
 - messages, patterns
 ms.assetid: 1a2f79b5-1f44-4191-8ce1-b3c9043be4f4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268522"
 ---
 # <a name="request-response-messaging"></a><span data-ttu-id="74eff-102">要求-応答のメッセージング</span><span class="sxs-lookup"><span data-stu-id="74eff-102">Request-Response Messaging</span></span>
 <span data-ttu-id="74eff-103">要求/応答メッセージ方式では、送信側が要求メッセージを送信し、受信側が応答メッセージを返します。</span><span class="sxs-lookup"><span data-stu-id="74eff-103">In a request/response messaging pattern, one party sends a request message and the receiving party returns a response message.</span></span> <span data-ttu-id="74eff-104">要求/応答処理の一般的な使用例としては、HTTP アダプターを使用した Web サーバーとブラウザー間の対話処理、および、Simple Object Access Protocol (SOAP) アダプターを使用した Web サービス処理の 2 つがあります。</span><span class="sxs-lookup"><span data-stu-id="74eff-104">Two typical examples of request/response processing are the interaction that a browser has with a Web server using the HTTP adapter, and Web service processing using the Simple Object Access Protocol (SOAP) adapter.</span></span> <span data-ttu-id="74eff-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の要求/応答メッセージは、通常のパブリッシュ/サブスクライブ形式で処理されます。</span><span class="sxs-lookup"><span data-stu-id="74eff-105">In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], both the request and the response messages are handled in a typical publish/subscribe fashion.</span></span> <span data-ttu-id="74eff-106">このことは、BizTalk アプリケーションのパフォーマンス調整を行うときの重要な注意事項です。高いスループットを必要とするシステムは、個々のメッセージの待ち時間を短くする必要のあるシステムとは異なる構成が行われる可能性があるためです。</span><span class="sxs-lookup"><span data-stu-id="74eff-106">This is an important consideration to understand when you performance-tune a BizTalk application, because a system requiring high throughput might be configured differently than one requiring low latency for individual messages.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Adapter for SQL Server の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Adapter for SQL Server の概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8e46690e-d5c4-4d6b-b7a0-9a5adf4431cd
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222746"
 ---
 # <a name="overview-of-biztalk-adapter-for-sql-server"></a><span data-ttu-id="064ad-102">BizTalk Adapter for SQL Server の概要</span><span class="sxs-lookup"><span data-stu-id="064ad-102">Overview of BizTalk Adapter for SQL Server</span></span>
 <span data-ttu-id="064ad-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]を WCF サービスとしての SQL Server データベースを公開します。</span><span class="sxs-lookup"><span data-stu-id="064ad-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] exposes the SQL Server database as a WCF service.</span></span> <span data-ttu-id="064ad-104">アダプターのクライアントは、アダプターと SOAP メッセージを交換することで、SQL Server データベースでの操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="064ad-104">Adapter clients can perform operations on the SQL Server database by exchanging SOAP messages with the adapter.</span></span> <span data-ttu-id="064ad-105">アダプターは、SOAP メッセージを処理し、操作を実行する適切な ADO.NET 呼び出しします。</span><span class="sxs-lookup"><span data-stu-id="064ad-105">The adapter consumes the SOAP message and makes appropriate ADO.NET calls to perform the operation.</span></span> <span data-ttu-id="064ad-106">アダプターは、SOAP メッセージの形式でクライアントに、SQL Server データベースからの応答を返します。</span><span class="sxs-lookup"><span data-stu-id="064ad-106">The adapter returns the response from the SQL Server database back to the client in the form of SOAP messages.</span></span>  

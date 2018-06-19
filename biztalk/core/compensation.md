@@ -1,11 +1,11 @@
 ---
-title: "補正 |Microsoft ドキュメント"
-ms.custom: 
+title: 補正 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - compensations, errors
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - atomic transactions, compensations
 - transactions, compensations
 ms.assetid: 0a80dd16-fd35-4f45-95b7-52bb9df80cbb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231602"
 ---
 # <a name="compensation"></a><span data-ttu-id="7f2d5-102">[補正]</span><span class="sxs-lookup"><span data-stu-id="7f2d5-102">Compensation</span></span>
 <span data-ttu-id="7f2d5-103">エラーが発生し、正常にコミットされたトランザクションの効果を元に戻したり、取り消したりする必要がある場合は、オーケストレーションに補正コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="7f2d5-103">If an error occurs and you need to undo or reverse the effects of a successfully committed transaction, you can do so by adding compensation code to your orchestration.</span></span>  

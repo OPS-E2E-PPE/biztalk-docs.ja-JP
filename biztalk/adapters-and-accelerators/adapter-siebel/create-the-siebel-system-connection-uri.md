@@ -1,11 +1,11 @@
 ---
-title: "Siebel システム接続 URI を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel システム接続 URI を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - how to, connect using connection URI
 - connecting using connection URI
 ms.assetid: 8cc78149-1c20-40db-aece-aab520ee04e7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224554"
 ---
 # <a name="create-the-siebel-system-connection-uri"></a><span data-ttu-id="df330-102">Siebel システム接続 URI を作成します。</span><span class="sxs-lookup"><span data-stu-id="df330-102">Create the Siebel system connection URI</span></span>
 <span data-ttu-id="df330-103">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]接続 URI には、アダプターは、Siebel システムへの接続を確立するために使用するプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="df330-103">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] connection URI contains properties that the adapter uses to establish a connection to the Siebel system.</span></span>  
@@ -99,7 +100,7 @@ siebel://Username=[USER_NAME];Password=[PASSWORD]@[SERVER]:[PORT]?SiebelObjectMa
 |<span data-ttu-id="df330-162">暗号化</span><span class="sxs-lookup"><span data-stu-id="df330-162">Encryption</span></span>|<span data-ttu-id="df330-163">間で使用する暗号化の種類、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]と Siebel システムです。</span><span class="sxs-lookup"><span data-stu-id="df330-163">The type of encryption to use between the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and the Siebel system.</span></span> <span data-ttu-id="df330-164">サポートされている値は none、mscrypto、または rsa です。</span><span class="sxs-lookup"><span data-stu-id="df330-164">Supported values are none, mscrypto, or rsa.</span></span> <span data-ttu-id="df330-165">このパラメーターはオプションです。</span><span class="sxs-lookup"><span data-stu-id="df330-165">This parameter is optional.</span></span> <span data-ttu-id="df330-166">指定されていない場合、Siebel システムは、既定値は (なし) を提供します。</span><span class="sxs-lookup"><span data-stu-id="df330-166">If it is not specified, the Siebel system supplies a default value (none).</span></span>|  
 |<span data-ttu-id="df330-167">Compresssion</span><span class="sxs-lookup"><span data-stu-id="df330-167">Compresssion</span></span>|<span data-ttu-id="df330-168">間で使用する圧縮アルゴリズム、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]と Siebel システムです。</span><span class="sxs-lookup"><span data-stu-id="df330-168">The compression algorithm to use between the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and the Siebel system.</span></span> <span data-ttu-id="df330-169">サポートされている値は、none または zlib です。</span><span class="sxs-lookup"><span data-stu-id="df330-169">Supported values are none or zlib.</span></span> <span data-ttu-id="df330-170">このパラメーターはオプションです。</span><span class="sxs-lookup"><span data-stu-id="df330-170">This parameter is optional.</span></span> <span data-ttu-id="df330-171">指定されていない場合、Siebel システムは、既定値 (zlib) を提供します。</span><span class="sxs-lookup"><span data-stu-id="df330-171">If it is not specified, the Siebel system supplies a default value (zlib).</span></span>|  
 |<span data-ttu-id="df330-172">SiebelServer</span><span class="sxs-lookup"><span data-stu-id="df330-172">SiebelServer</span></span>|<span data-ttu-id="df330-173">Siebel サーバーです。</span><span class="sxs-lookup"><span data-stu-id="df330-173">The Siebel server.</span></span> <span data-ttu-id="df330-174">すべての Siebel 7.5 サーバー接続に必要な (7.5.2、7.5.3 などです。)。それ以外の場合、このパラメーターを設定しません。</span><span class="sxs-lookup"><span data-stu-id="df330-174">Required for all Siebel 7.5 server connections (7.5.2, 7.5.3, etc.); otherwise, do not set this parameter.</span></span>|  
-|<span data-ttu-id="df330-175">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="df330-175">SiebelRepository</span></span>|<span data-ttu-id="df330-176">Siebel リポジトリ。</span><span class="sxs-lookup"><span data-stu-id="df330-176">The Siebel repository.</span></span> <span data-ttu-id="df330-177">複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。</span><span class="sxs-lookup"><span data-stu-id="df330-177">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="df330-178">**注:**サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="df330-178">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
+|<span data-ttu-id="df330-175">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="df330-175">SiebelRepository</span></span>|<span data-ttu-id="df330-176">Siebel リポジトリ。</span><span class="sxs-lookup"><span data-stu-id="df330-176">The Siebel repository.</span></span> <span data-ttu-id="df330-177">複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。</span><span class="sxs-lookup"><span data-stu-id="df330-177">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="df330-178">**注:** サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="df330-178">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
   
  <span data-ttu-id="df330-179">クエリの情報に設定されている Siebel パラメーターの詳細については、Siebel のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="df330-179">For more information about the Siebel parameters that are set in the query information, see your Siebel documentation.</span></span>  
   

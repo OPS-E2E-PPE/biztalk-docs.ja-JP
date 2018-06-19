@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して Oracle E-business Suite アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して Oracle E-business Suite アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cf3430d-12e9-437c-b398-d978faa4da2b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217322"
 ---
 # <a name="develop-oracle-e-business-suite-applications-using-the-wcf-service-model"></a><span data-ttu-id="e5a9f-102">WCF サービス モデルを使用して Oracle E-business Suite アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-102">Develop Oracle E-Business Suite applications using the WCF Service Model</span></span>
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]<span data-ttu-id="e5a9f-103">接続する WCF サービスのモデルと呼ばれるプログラミング モデルを提供、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-103"> provides a programming model called the WCF service model to connect to the [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].</span></span> <span data-ttu-id="e5a9f-104">サービス モデルに追加された解決するには、WCF の WCF チャネルのプログラミング モデルの制限の一部。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-104">The service model was added to WCF to address, in part, some of the limitations of the WCF channel programming model.</span></span>  
@@ -31,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="e5a9f-120">WCF クライアント クラスを生成する、次のツールのいずれかを使用して、関連付けられているサービス メタデータからヘルパー コードを[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を公開します。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-120">You can use either of the following tools to generate a WCF client class and associated helper code from the service metadata that the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] exposes:</span></span>  
   
--   <span data-ttu-id="e5a9f-121">**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)**WCF に付属しています。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-121">**The ServiceModel Metadata Utility Tool (svcutil.exe)**, which ships with WCF.</span></span>  
+-   <span data-ttu-id="e5a9f-121">**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)** WCF に付属しています。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-121">**The ServiceModel Metadata Utility Tool (svcutil.exe)**, which ships with WCF.</span></span>  
   
--   <span data-ttu-id="e5a9f-122">**[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**に付属している、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-122">**The [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**, which ships with the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] and is integrated with the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] design experience.</span></span> <span data-ttu-id="e5a9f-123">このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-123">This tool presents a standard Microsoft Windows interface that provides powerful browsing and searching capabilities on operations that the adapter exposes.</span></span> <span data-ttu-id="e5a9f-124">WCF クライアントを生成する方法の詳細については、次を参照してください。 [Oracle E-business Suite ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-124">For more information about how to generate a WCF client, see [Generate a WCF Client or a WCF Service Contract for Oracle E-Business Suite Solution Artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).</span></span>  
+-   <span data-ttu-id="e5a9f-122">**[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** に付属している、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-122">**The [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**, which ships with the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] and is integrated with the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] design experience.</span></span> <span data-ttu-id="e5a9f-123">このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-123">This tool presents a standard Microsoft Windows interface that provides powerful browsing and searching capabilities on operations that the adapter exposes.</span></span> <span data-ttu-id="e5a9f-124">WCF クライアントを生成する方法の詳細については、次を参照してください。 [Oracle E-business Suite ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-124">For more information about how to generate a WCF client, see [Generate a WCF Client or a WCF Service Contract for Oracle E-Business Suite Solution Artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).</span></span>  
   
 ## <a name="in-this-section"></a><span data-ttu-id="e5a9f-125">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e5a9f-125">In This Section</span></span>  
  <span data-ttu-id="e5a9f-126">次のトピックでは、WCF サービス モデルを使用するアプリケーションを開発する方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e5a9f-126">The following topics give information about how to develop applications that use the WCF service model:</span></span>  

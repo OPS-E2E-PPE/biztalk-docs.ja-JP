@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の依存関係のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の依存関係のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 677b7ef3-9a91-4f1e-bfc5-926bfab23a0f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279250"
 ---
 # <a name="troubleshooting-biztalk-server-dependencies"></a><span data-ttu-id="d10c2-102">BizTalk Server の依存関係に関するトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="d10c2-102">Troubleshooting BizTalk Server Dependencies</span></span>
 <span data-ttu-id="d10c2-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、デザイン時および実行時の操作において他の Microsoft 製品を頻繁に使用します。</span><span class="sxs-lookup"><span data-stu-id="d10c2-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] makes extensive use of several other Microsoft products for design time and run-time operations.</span></span> <span data-ttu-id="d10c2-104">ここでは、これらの基本テクノロジで発生する可能性がある問題を解決するために、トラブルシューティングのガイドラインを示します。</span><span class="sxs-lookup"><span data-stu-id="d10c2-104">This section contains troubleshooting guidelines for resolving problems that can occur in these underlying technologies.</span></span>  

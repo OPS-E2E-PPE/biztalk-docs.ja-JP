@@ -1,14 +1,14 @@
 ---
-title: "アグリーメントの解決と送信 EDI メッセージのスキーマの決定 |Microsoft ドキュメント"
-ms.custom: 
+title: アグリーメントの解決と送信 EDI メッセージのスキーマの決定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e37aeb9d-1e95-464d-bb71-73653c1d4674
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231514"
 ---
 # <a name="agreement-resolution-and-schema-determination-for-outgoing-edi-messages"></a><span data-ttu-id="35aed-102">送信 EDI メッセージのアグリーメントの解決とスキーマの決定</span><span class="sxs-lookup"><span data-stu-id="35aed-102">Agreement Resolution and Schema Determination for Outgoing EDI Messages</span></span>
 <span data-ttu-id="35aed-103">取引先への EDI メッセージを生成するには、EDI 送信パイプラインは次の作業を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="35aed-103">To generate an EDI message to a trading partner, the EDI send pipeline must do the following:</span></span>  

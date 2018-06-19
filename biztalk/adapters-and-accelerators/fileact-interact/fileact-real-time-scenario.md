@@ -1,14 +1,14 @@
 ---
-title: "FileAct リアルタイム シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: FileAct リアルタイム シナリオ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47983fc0-330e-488a-a0bd-5c11bf507e2f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222954"
 ---
 # <a name="fileact-real-time-scenario"></a><span data-ttu-id="22d34-102">FileAct リアルタイム シナリオ</span><span class="sxs-lookup"><span data-stu-id="22d34-102">FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="22d34-103">このシナリオを開始する前に行う必要があります[、チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)です。</span><span class="sxs-lookup"><span data-stu-id="22d34-103">Before you begin this scenario, you must complete [Preparing to Use the Tutorial](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md).</span></span>  

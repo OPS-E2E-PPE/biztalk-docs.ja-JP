@@ -1,14 +1,14 @@
 ---
-title: "アダプター グループとグループ アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター グループとグループ アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e0a9423-99dd-4474-afa1-fd8e1d074cd1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225378"
 ---
 # <a name="adapter-groups-and-group-adapters"></a><span data-ttu-id="70837-102">アダプター グループとグループ アダプター</span><span class="sxs-lookup"><span data-stu-id="70837-102">Adapter Groups and Group Adapters</span></span>
 <span data-ttu-id="70837-103">*アダプター グループ*収集、整理、一連のアダプターに使用できる管理メカニズムです。</span><span class="sxs-lookup"><span data-stu-id="70837-103">An *adapter group* is an administration mechanism that you can use to collect and organize a set of adapters.</span></span> <span data-ttu-id="70837-104">これに対し、*グループ アダプター*コンポーネント サービスのアダプター グループ内のすべてのアダプターです。</span><span class="sxs-lookup"><span data-stu-id="70837-104">In contrast, a *group adapter* is a component that services all adapters in an adapter group.</span></span> <span data-ttu-id="70837-105">たとえば、同じ COM コンポーネントを使用して、TCP/IP 経由でパスワード同期処理を行う複数のアダプターを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="70837-105">For example, you might write a set of adapters that all use the same COM component to transmit password synchronizations over TCP/IP.</span></span> <span data-ttu-id="70837-106">こうした一連のアダプターをアダプター グループと呼び、また、これらすべてのアダプターにサービスを提供するコンポーネントをグループ アダプターと呼びます。</span><span class="sxs-lookup"><span data-stu-id="70837-106">Your set of adapters is called the adapter group, whereas the component that services them all is called a group adapter.</span></span> <span data-ttu-id="70837-107">アダプター グループは、構成ストアで定義されます。</span><span class="sxs-lookup"><span data-stu-id="70837-107">Adapter groups are described in the configuration store.</span></span> <span data-ttu-id="70837-108">アダプター グループに関する情報 (更新情報を含む) は、`ISSOPSAdapter.ReceiveNotification` を使って取得できます。</span><span class="sxs-lookup"><span data-stu-id="70837-108">You can retrieve information and updates on an adapter group by using `ISSOPSAdapter.ReceiveNotification`.</span></span>  

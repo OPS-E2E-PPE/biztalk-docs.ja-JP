@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の以前のバージョンからのスキーマの移行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の以前のバージョンからのスキーマの移行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bdc86401-2002-40b8-a919-2c00cf42b557
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269626"
 ---
 # <a name="schema-migration-from-previous-versions-of-biztalk-server"></a><span data-ttu-id="8dfcd-102">旧バージョンの BizTalk Server からのスキーマの移行</span><span class="sxs-lookup"><span data-stu-id="8dfcd-102">Schema Migration from Previous Versions of BizTalk Server</span></span>
 <span data-ttu-id="8dfcd-103">このバージョンの BizTalk Server は XSD (XML Schema Definition) 言語を使用してメッセージ スキーマを表記しますが、旧バージョンは XDR (XML-Data Reduced) 構文を使用してメッセージ スキーマを表記していました。</span><span class="sxs-lookup"><span data-stu-id="8dfcd-103">This version of BizTalk Server uses XML Schema definition (XSD) language to represent message schemas, while previous versions used the XML-Data Reduced (XDR) syntax to represent message schemas.</span></span> <span data-ttu-id="8dfcd-104">旧バージョンの BizTalk Server からスキーマを移行する場合、XDR ではなく XSD を使用するようにスキーマを変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8dfcd-104">If you are migrating from a previous version of BizTalk Server, you must convert your schemas to use XSD rather than XDR.</span></span>  

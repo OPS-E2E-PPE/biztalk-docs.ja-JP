@@ -1,14 +1,14 @@
 ---
-title: "手順 4 C: FileAct リアルタイム シナリオのテスト インスタンスを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 C: FileAct リアルタイム シナリオのテスト インスタンスを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80e0cb59-8b4f-4273-a7a4-db3446008061
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225042"
 ---
 # <a name="step-4c-create-a-test-instance-for-the-fileact-real-time-scenario"></a><span data-ttu-id="cd40f-102">手順 4 C: FileAct リアルタイム シナリオのテスト インスタンスを作成</span><span class="sxs-lookup"><span data-stu-id="cd40f-102">Step 4C: Create a Test Instance for the FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="cd40f-103">この手順を開始する前に行う必要があります[手順 4B: FileAct リアルタイム シナリオでは、送信ポートおよび受信ポートを開始](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-the-fileact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="cd40f-103">Before you begin this step, you must complete [Step 4B: Start the Send Ports and Receive Ports for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-the-fileact-real-time-scenario.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "アダプターの GetSchema メソッド |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの GetSchema メソッド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c83340c-a775-435c-9633-3a692611e99e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225194"
 ---
 # <a name="adapter-getschema-method"></a><span data-ttu-id="e4a32-102">アダプターの GetSchema メソッド</span><span class="sxs-lookup"><span data-stu-id="e4a32-102">Adapter GetSchema Method</span></span>
 <span data-ttu-id="e4a32-103">参照されている WSDL ファイルが、スキーマ参照のみを含み、埋め込みスキーマを含まないものとします。</span><span class="sxs-lookup"><span data-stu-id="e4a32-103">Suppose the referenced WSDL file contains only schema references and does not contain embedded schemas.</span></span> <span data-ttu-id="e4a32-104">この場合、使用して、 **GetSchema**のメソッド、 **IAdapterConfig**インターフェイス WSDL ファイル内から参照されるスキーマを読み込めません。</span><span class="sxs-lookup"><span data-stu-id="e4a32-104">In this case, you use the **GetSchema** method of the **IAdapterConfig** interface to load a schema referenced from within a WSDL file.</span></span>  

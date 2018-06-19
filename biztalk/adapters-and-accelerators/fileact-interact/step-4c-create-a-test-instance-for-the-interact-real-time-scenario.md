@@ -1,14 +1,14 @@
 ---
-title: "手順 4 C: のテスト インスタンスを作成、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 C: のテスト インスタンスを作成、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3557acdc-eb3f-4c70-b64a-3f523a1ba650
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224418"
 ---
 # <a name="step-4c-create-a-test-instance-for-the-interact-real-time-scenario"></a><span data-ttu-id="140c0-102">手順 4 C: のテスト インスタンスを作成、リアルタイムのシナリオの対話</span><span class="sxs-lookup"><span data-stu-id="140c0-102">Step 4C: Create a Test Instance for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="140c0-103">この手順を開始する前に行う必要があります[手順 4B: 対話リアルタイム シナリオでは、送信ポートと受信ポートを開始](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-interact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="140c0-103">Before you begin this step, you must complete [Step 4B: Start the Send Ports and Receive Ports for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-interact-real-time-scenario.md).</span></span>  

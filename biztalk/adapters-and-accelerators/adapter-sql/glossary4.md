@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for BizTalk 内の SQL の用語集 |Microsoft ドキュメント"
-description: "共通の用語と定義は、BizTalk Adapter pack (BAP) で SQL アダプターによって使用されます。"
-ms.custom: 
+title: BizTalk Adapter for BizTalk 内の SQL の用語集 |Microsoft ドキュメント
+description: 共通の用語と定義は、BizTalk Adapter pack (BAP) で SQL アダプターによって使用されます。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c364917e-b72b-49e4-9fc6-0fcfe43c8da7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226210"
 ---
 # <a name="terms-used-by-the-sql-adapter"></a><span data-ttu-id="997ca-103">SQL アダプターによって使用される用語</span><span class="sxs-lookup"><span data-stu-id="997ca-103">Terms used by the SQL adapter</span></span>
 <span data-ttu-id="997ca-104">次の用語と定義がで使用される[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]ヘルプします。</span><span class="sxs-lookup"><span data-stu-id="997ca-104">The following terms and definitions are used in [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] Help.</span></span>  

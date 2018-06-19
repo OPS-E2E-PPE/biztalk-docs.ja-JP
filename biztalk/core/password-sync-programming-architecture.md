@@ -1,14 +1,14 @@
 ---
-title: "パスワード同期のプログラミング アーキテクチャ |Microsoft ドキュメント"
-ms.custom: 
+title: パスワード同期のプログラミング アーキテクチャ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 679edbf1-fb08-4472-b366-3e1d361b20e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264674"
 ---
 # <a name="password-sync-programming-architecture"></a><span data-ttu-id="20fd2-102">パスワード同期のプログラミング アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="20fd2-102">Password Sync Programming Architecture</span></span>
 <span data-ttu-id="20fd2-103">パスワード同期アダプターが、エンタープライズ シングル サインオン システムの残りの部分と対話するためにプル モデルを使用します。 つまり、アクティブに受信パスワードの変更、エンタープライズ シングル サインオン (ENTSSO) サービスおよび Windows 以外のシステムからもします。</span><span class="sxs-lookup"><span data-stu-id="20fd2-103">A password sync adapter uses a pull model for interacting with the rest of the Enterprise Single Sign-On system: that is, the adapter actively receives password changes from the Enterprise Single Sign-On (ENTSSO) service and also from the non-Windows system.</span></span> <span data-ttu-id="20fd2-104">同様に、このアダプターは、あるシステムから別のシステムへ受け取ったパスワードの変更をプッシュします。</span><span class="sxs-lookup"><span data-stu-id="20fd2-104">Similarly, the adapter pushes password changes received from one system to the other.</span></span> <span data-ttu-id="20fd2-105">このモデルで、アダプターと連携 3 つのアーキテクチャ コンポーネント: ENTSSO アーキテクチャ、パスワード同期 (PS) ヘルパー コンポーネント、および指定した非 Windows システムです。</span><span class="sxs-lookup"><span data-stu-id="20fd2-105">With this model, your adapter interacts with three architectural components: the ENTSSO architecture, the Password Sync (PS) Helper component, and a specified non-Windows system.</span></span>  

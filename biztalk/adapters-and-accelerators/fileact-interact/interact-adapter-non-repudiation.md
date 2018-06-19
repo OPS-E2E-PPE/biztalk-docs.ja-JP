@@ -1,14 +1,14 @@
 ---
-title: "アダプター否認不可を対話 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター否認不可を対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a13fb77c-b10c-4f8a-ba4b-efecc83e092c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224922"
 ---
 # <a name="interact-adapter-non-repudiation"></a><span data-ttu-id="ac2c6-102">アダプター否認不可を対話します。</span><span class="sxs-lookup"><span data-stu-id="ac2c6-102">InterAct Adapter Non-Repudiation</span></span>
 <span data-ttu-id="ac2c6-103">送信 InterAct メッセージの否認不可のサポートは、SwInt:NRIndicator を SwInt:RequestControl または必要に応じて、SwInt:ResponseControl で TRUE に設定して取得されます。</span><span class="sxs-lookup"><span data-stu-id="ac2c6-103">Non-repudiation support for an outgoing InterAct message is obtained by setting the SwInt:NRIndicator to TRUE in the SwInt:RequestControl or SwInt:ResponseControl, as appropriate.</span></span> <span data-ttu-id="ac2c6-104">これは必要なサービスが既定では、否認不可のサポートを選択していない場合にのみに従って、サービスのプロファイルです。</span><span class="sxs-lookup"><span data-stu-id="ac2c6-104">This is required only if the service does not select non-repudiation support by default, according to the Service Profile.</span></span>  

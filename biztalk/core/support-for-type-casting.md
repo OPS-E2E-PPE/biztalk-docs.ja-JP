@@ -1,14 +1,14 @@
 ---
-title: "型キャストのサポート |Microsoft ドキュメント"
-ms.custom: 
+title: 型キャストのサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6af46e34-5e33-4f61-8c19-4348f1bb4d4a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279506"
 ---
 # <a name="support-for-type-casting"></a><span data-ttu-id="fb4a7-102">型キャストのサポート</span><span class="sxs-lookup"><span data-stu-id="fb4a7-102">Support for Type Casting</span></span>
 <span data-ttu-id="fb4a7-103">使用することができます、**キャスト**のメソッド、 **ClassMemberBinding**クラスを 1 つの型のオブジェクトを別の互換性のある型のオブジェクトに変換します。</span><span class="sxs-lookup"><span data-stu-id="fb4a7-103">You can use the **Cast** method of the **ClassMemberBinding** class to convert an object of one type to an object of another compatible type.</span></span> <span data-ttu-id="fb4a7-104">現在、ビジネス ルール作成ツールはサポートされていませんルールの作成を使用して、**キャスト**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="fb4a7-104">Currently, the Business Rule Composer tool does not support creating rules by using the **Cast** method.</span></span> <span data-ttu-id="fb4a7-105">ルールをプログラムによって作成するには、ルール エンジン オブジェクト モデルを使用してこの機能を利用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fb4a7-105">You must create the rules programmatically by using the rule engine object model to take advantage of this feature.</span></span>  

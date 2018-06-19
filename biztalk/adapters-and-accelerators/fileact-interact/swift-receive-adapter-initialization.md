@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 受信アダプターの初期化 |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT 受信アダプターの初期化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce53aff3-6189-4033-b318-d703037518e0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224202"
 ---
 # <a name="swift-receive-adapter-initialization"></a><span data-ttu-id="01b18-102">SWIFT 受信アダプターの初期化</span><span class="sxs-lookup"><span data-stu-id="01b18-102">SWIFT Receive Adapter Initialization</span></span>
 <span data-ttu-id="01b18-103">迅速な対応サーバー アプリケーションの初期化プロセスでは、SWIFT クライアント アプリケーションのと似ています。</span><span class="sxs-lookup"><span data-stu-id="01b18-103">The initialization process for the SWIFT server application is similar to that for the SWIFT client application.</span></span> <span data-ttu-id="01b18-104">初期化の引数に渡されるコマンド ライン パラメーターとして、受信側実行可能ファイルです。</span><span class="sxs-lookup"><span data-stu-id="01b18-104">The initialization arguments are passed as command line parameters to the receiver executable.</span></span> <span data-ttu-id="01b18-105">デザイン時に、受信場所で構成されている、アプリケーション名は、コマンドラインの引数として渡されます。</span><span class="sxs-lookup"><span data-stu-id="01b18-105">The application name, configured in the receive location during design time, is passed as a command line argument.</span></span> <span data-ttu-id="01b18-106">このアプリケーションの名前は、受信場所の構成済みのプロパティを取得する URI を構築するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="01b18-106">This application name is used to construct the receive location URI to retrieve the configured properties.</span></span>  

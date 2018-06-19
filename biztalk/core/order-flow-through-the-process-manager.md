@@ -1,17 +1,17 @@
 ---
-title: "注文プロセス マネージャでフロー |Microsoft ドキュメント"
-ms.custom: 
+title: 注文プロセス マネージャでフロー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, processing
 - processing, processing logic
 ms.assetid: e2b51eff-44b5-440f-a7d1-0872543e5f27
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266658"
 ---
 # <a name="order-flow-through-the-process-manager"></a><span data-ttu-id="ea902-102">プロセス マネージャでの注文の流れ</span><span class="sxs-lookup"><span data-stu-id="ea902-102">Order Flow through the Process Manager</span></span>
 <span data-ttu-id="ea902-103">このセクションでは、どのように、Southridge Video の注文プロセス マネージャ、について説明します、 **OrderManager**オーケストレーションで、注文が処理されます。</span><span class="sxs-lookup"><span data-stu-id="ea902-103">This section describes how the Southridge Video order process manager, the **OrderManager** orchestration, processes orders.</span></span> <span data-ttu-id="ea902-104">順を追って、新しい注文のオーケストレーションでの処理過程を見ていきます。</span><span class="sxs-lookup"><span data-stu-id="ea902-104">This section follows a new order through the orchestration.</span></span> <span data-ttu-id="ea902-105">また、オーケストレーションによって注文の更新がどのように処理されるかについても説明します。</span><span class="sxs-lookup"><span data-stu-id="ea902-105">The section also discusses how the orchestration handles updates to orders.</span></span>  

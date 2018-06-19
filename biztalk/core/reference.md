@@ -1,14 +1,14 @@
 ---
-title: "リファレンス |Microsoft ドキュメント"
-ms.custom: 
+title: リファレンス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b916c55a-c84c-4008-8927-f8e584c36fe9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268602"
 ---
 # <a name="reference"></a><span data-ttu-id="34cdd-102">リファレンス</span><span class="sxs-lookup"><span data-stu-id="34cdd-102">Reference</span></span>
 <span data-ttu-id="34cdd-103">**参照**BAM アクティビティを 1 つまたは複数のリレーションシップを追加する要素を使用できます。</span><span class="sxs-lookup"><span data-stu-id="34cdd-103">The **Reference** element can be used to add one or more relationships to a BAM activity.</span></span> <span data-ttu-id="34cdd-104">この機能は、主キー、ID、URL などのポインタを関連するメッセージに追加する必要がある場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="34cdd-104">This is useful when you want to attach a pointer like a primary key, ID, or URL to a related message.</span></span> <span data-ttu-id="34cdd-105">たとえば、出荷バッチへの参照を発注アクティビティに保存できます。</span><span class="sxs-lookup"><span data-stu-id="34cdd-105">For example, you might store a reference to a Shipment Batch in a Purchase Order activity.</span></span>  

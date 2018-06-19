@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK を使用して、アダプターの作成や開発 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を使用して、アダプターの作成や開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ca8c03a-1e4a-4077-b4cb-4e184b520bbb
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224722"
 ---
 # <a name="develop-or-create-your-adapter-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="3ebf0-102">WCF LOB Adapter SDK を使用して、アダプターの作成や開発</span><span class="sxs-lookup"><span data-stu-id="3ebf0-102">Develop or create your adapter using the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="3ebf0-103">このセクションの内容には使用してアダプターを開発する開発者向けの情報が含まれています、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-103">This section contains information for developers who are creating adapters using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="3ebf0-104">アダプターの開発が完了した後は通常、使用されるか .NET でまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]操作とデータを目的となる対象の基幹業務システムにアクセスする手段としての開発者。</span><span class="sxs-lookup"><span data-stu-id="3ebf0-104">Once the adapter has been developed, it is usually consumed by either .NET or [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] developers as a way to access operations and data in a desired target line-of-business system.</span></span>  

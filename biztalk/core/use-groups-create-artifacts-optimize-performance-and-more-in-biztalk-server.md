@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286962"
 ---
 # <a name="use-groups-create-artifacts-optimize-performance-and-more-in-biztalk-server"></a><span data-ttu-id="35581-103">グループを使用して、アイテムを作成する、パフォーマンス、および BizTalk Server で複数の最適化</span><span class="sxs-lookup"><span data-stu-id="35581-103">Use groups, create artifacts, optimize performance, and more in BizTalk Server</span></span>
 <span data-ttu-id="35581-104">BizTalk Server グループ、アプリケーション、パフォーマンスの設定を管理およびサービスの再起動に関する情報。</span><span class="sxs-lookup"><span data-stu-id="35581-104">Information on managing BizTalk Server groups, applications, performance settings, and restarting the services.</span></span>  
