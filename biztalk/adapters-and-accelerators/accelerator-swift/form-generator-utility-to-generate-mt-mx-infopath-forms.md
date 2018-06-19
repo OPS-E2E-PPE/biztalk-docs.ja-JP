@@ -1,14 +1,14 @@
 ---
-title: "MT MX InfoPath フォームを生成するジェネレーター ユーティリティを形成 |Microsoft ドキュメント"
-ms.custom: 
+title: MT MX InfoPath フォームを生成するジェネレーター ユーティリティを形成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41f2fd51-c492-499b-89aa-1b44ed5c9669
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209210"
 ---
 # <a name="form-generator-utility-to-generate-mtmx-infopath-forms"></a><span data-ttu-id="26901-102">MT/MX InfoPath フォームを生成するフォーム ジェネレーター ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="26901-102">Form Generator Utility to Generate MT/MX InfoPath Forms</span></span>
 <span data-ttu-id="26901-103">このドキュメントの目的は、生成し、フォーム ジェネレーター ユーティリティを使用して、MT と MX InfoPath 2010 のフォームを公開する方法について説明です。</span><span class="sxs-lookup"><span data-stu-id="26901-103">The purpose of this document is to explain how to generate and publish MT and MX InfoPath 2010 forms using Form Generator Utility.</span></span> <span data-ttu-id="26901-104">これらの形式は、機能により使用される、Message Repair and New Submission の[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="26901-104">These forms are used by the Message Repair and New Submission feature of [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)].</span></span>  

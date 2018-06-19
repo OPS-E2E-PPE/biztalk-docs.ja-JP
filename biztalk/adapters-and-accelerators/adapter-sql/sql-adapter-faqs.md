@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターに関する Faq |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターに関する Faq |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 25369e6b-d1f2-4abc-9ffc-4cb9aef1d3fb
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224866"
 ---
 # <a name="sql-adapter-faqs"></a><span data-ttu-id="ad659-102">SQL アダプターに関する Faq</span><span class="sxs-lookup"><span data-stu-id="ad659-102">SQL adapter FAQs</span></span>
 <span data-ttu-id="ad659-103">次は一部よく寄せられる質問 (Faq) に関連する[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]と[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]一般にします。</span><span class="sxs-lookup"><span data-stu-id="ad659-103">The following are some frequently asked questions (FAQs) related to [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] and the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] in general.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206290"
 ---
 # <a name="step-9-restart-biztalk-serverhl7main"></a><span data-ttu-id="17565-102">手順 9: BizTalk Server_hl7_main を再起動します。</span><span class="sxs-lookup"><span data-stu-id="17565-102">Step 9: Restart BizTalk Server_hl7_main</span></span>
 <span data-ttu-id="17565-103">このステップで再起動して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルでは、変更するためにします。</span><span class="sxs-lookup"><span data-stu-id="17565-103">In this step, you restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] in order for the changes you made in this tutorial to take effect.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "マップの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: マップの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc9f8ad1-4aad-4866-8aa4-4877fdc5e5f9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969112"
 ---
 # <a name="creating-maps"></a><span data-ttu-id="519bd-102">マップの作成</span><span class="sxs-lookup"><span data-stu-id="519bd-102">Creating Maps</span></span>
 <span data-ttu-id="519bd-103">BizTalk マッパーの主要なユーザー インターフェイスが内のタブに表示される、 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。</span><span class="sxs-lookup"><span data-stu-id="519bd-103">The primary user interface for BizTalk Mapper is displayed on a tab within the [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] editing window.</span></span> <span data-ttu-id="519bd-104">この表示は、3 つのペインに分割されています。</span><span class="sxs-lookup"><span data-stu-id="519bd-104">This display is divided into three panes.</span></span> <span data-ttu-id="519bd-105">左ペインでは、送信元スキーマがツリーとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="519bd-105">The left pane displays the source schema as a tree.</span></span> <span data-ttu-id="519bd-106">右ペインでは、送信先スキーマがツリーとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="519bd-106">The right pane displays the destination schema as a tree.</span></span> <span data-ttu-id="519bd-107">中央のペインでは、グリッドが複数のページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="519bd-107">The middle pane displays the grid as multiple pages.</span></span> <span data-ttu-id="519bd-108">送信元スキーマのデータを送信先スキーマにどのようにマップするかを示すには、マップする対象のレコードとフィールドの間に線を引きます。</span><span class="sxs-lookup"><span data-stu-id="519bd-108">To indicate how you want to map data from the source schema to the destination schema, you draw lines between the records and fields you want to map.</span></span> <span data-ttu-id="519bd-109">これらの行が呼び出される*リンク*データのマッピングを指定する最も簡単な方法です。</span><span class="sxs-lookup"><span data-stu-id="519bd-109">These lines are called *links*, and they are the most basic way to specify the mapping of data.</span></span> <span data-ttu-id="519bd-110">レコードおよびフィールドのリンクの詳細については、次を参照してください。[マップでリンク](../core/links-in-maps.md)です。</span><span class="sxs-lookup"><span data-stu-id="519bd-110">For more information about linking records and fields, see [Links in Maps](../core/links-in-maps.md).</span></span>  

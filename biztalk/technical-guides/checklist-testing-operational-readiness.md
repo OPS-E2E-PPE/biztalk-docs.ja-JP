@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: 運用の準備のテスト |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: 運用の準備のテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ecdf2609-ba77-4756-a949-ab4e10c54313
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299274"
 ---
 # <a name="checklist-testing-operational-readiness"></a><span data-ttu-id="7a349-102">チェックリスト: テスト運用の準備</span><span class="sxs-lookup"><span data-stu-id="7a349-102">Checklist: Testing Operational Readiness</span></span>
 <span data-ttu-id="7a349-103">運用の準備のテストでは、見落とされがちまたは最小限に抑えるだけが実行される重要な手順です。</span><span class="sxs-lookup"><span data-stu-id="7a349-103">Testing for operational readiness is a vital procedure that is often overlooked or is performed only minimally.</span></span> <span data-ttu-id="7a349-104">すべてのエンタープライズ レベルのアプリケーションの重要な要件は、徹底的にテストしを使用して、ソリューションの開発[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]例外ではありません。</span><span class="sxs-lookup"><span data-stu-id="7a349-104">Thorough testing is a critical requirement of any enterprise-level application, and a solution developed using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is no exception.</span></span> <span data-ttu-id="7a349-105">少なくとも BizTalk ソリューションを実稼働環境に移行する前に次のテストを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7a349-105">At a minimum, you should perform the following testing before moving a BizTalk solution into production:</span></span>  

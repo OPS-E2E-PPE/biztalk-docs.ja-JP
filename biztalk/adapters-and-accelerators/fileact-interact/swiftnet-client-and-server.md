@@ -1,14 +1,14 @@
 ---
-title: "SWIFTNet クライアントとサーバー |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFTNet クライアントとサーバー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89d9f54f-af16-4f14-bbe4-8306758320d8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224658"
 ---
 # <a name="swiftnet-client-and-server"></a><span data-ttu-id="95ac1-102">SWIFTNet クライアントとサーバー</span><span class="sxs-lookup"><span data-stu-id="95ac1-102">SWIFTNet Client and Server</span></span>
 <span data-ttu-id="95ac1-103">SWIFT 条項クライアントとサーバーを使用して送信および受信について説明します。</span><span class="sxs-lookup"><span data-stu-id="95ac1-103">SWIFT uses the terms client and server to describe sending and receiving.</span></span> <span data-ttu-id="95ac1-104">SWIFT クライアントは、SWIFTNet 経由で通信を開始する SWIFTNet リンク (SNL) を呼び出すプロセスです。</span><span class="sxs-lookup"><span data-stu-id="95ac1-104">A SWIFT client is a process that calls the SWIFTNet Link (SNL) to initiate communication over SWIFTNet.</span></span> <span data-ttu-id="95ac1-105">BizTalk Server で、これは、送信アダプターが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="95ac1-105">In BizTalk Server, this is called the send adapter.</span></span> <span data-ttu-id="95ac1-106">SWIFT サーバーは、SWIFTNet 経由でトラフィックを受信すると、SNL によって呼び出されるプログラムです。</span><span class="sxs-lookup"><span data-stu-id="95ac1-106">A SWIFT server is a program that is called by the SNL when traffic comes in over SWIFTNet.</span></span> <span data-ttu-id="95ac1-107">BizTalk Server で、受信アダプターは、呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="95ac1-107">In BizTalk Server, this is called the receive adapter.</span></span>  
@@ -58,7 +59,7 @@ Callback(Request):
   
  <span data-ttu-id="95ac1-128">サーバー アプリケーションは、コールバック関数の中に SwCall API を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="95ac1-128">The server application can call the SwCall API while in the callback function.</span></span> <span data-ttu-id="95ac1-129">場合によっては、目的の結果または応答を生成できる SwCall 呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="95ac1-129">In some cases it must call SwCall to be able to produce the desired result or response.</span></span> <span data-ttu-id="95ac1-130">ただし、サーバー アプリケーションは、ネットワーク経由で通信を開始することができますされません。</span><span class="sxs-lookup"><span data-stu-id="95ac1-130">However, a server application can never initiate a communication over the network.</span></span> <span data-ttu-id="95ac1-131">サーバー アプリケーションでは、クライアント アプリケーションをすることはできません。</span><span class="sxs-lookup"><span data-stu-id="95ac1-131">A server application can never be a client application.</span></span>  
   
- <span data-ttu-id="95ac1-132">次の図に、呼び出しというラベルの付いた**初期化**SNL API 初期化プロセスは、複数の呼び出しを必要とする抽象化したものです。</span><span class="sxs-lookup"><span data-stu-id="95ac1-132">In the following figure, the call labeled **Initialize** is an abstraction for the SNL API initialization process, which requires multiple calls.</span></span> <span data-ttu-id="95ac1-133">ラベルの付いた呼び出し**SwCallback()**が複数回繰り返す、および呼び出しというラベルの付いた**SwCall()**は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="95ac1-133">The call labeled **SwCallback()** will be repeated several times, and the call labeled **SwCall()** is optional.</span></span>  
+ <span data-ttu-id="95ac1-132">次の図に、呼び出しというラベルの付いた**初期化**SNL API 初期化プロセスは、複数の呼び出しを必要とする抽象化したものです。</span><span class="sxs-lookup"><span data-stu-id="95ac1-132">In the following figure, the call labeled **Initialize** is an abstraction for the SNL API initialization process, which requires multiple calls.</span></span> <span data-ttu-id="95ac1-133">ラベルの付いた呼び出し**SwCallback()** が複数回繰り返す、および呼び出しというラベルの付いた**SwCall()** は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="95ac1-133">The call labeled **SwCallback()** will be repeated several times, and the call labeled **SwCall()** is optional.</span></span>  
   
  <span data-ttu-id="95ac1-134">![SNL サーバー機能](../../adapters-and-accelerators/fileact-interact/media/42395775-cdbc-4e36-8b36-566caefa2aaf.gif "42395775-cdbc-4e36-8b36-566caefa2aaf")</span><span class="sxs-lookup"><span data-stu-id="95ac1-134">![SNL Server functionality](../../adapters-and-accelerators/fileact-interact/media/42395775-cdbc-4e36-8b36-566caefa2aaf.gif "42395775-cdbc-4e36-8b36-566caefa2aaf")</span></span>  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210146"
 ---
 # <a name="step-2-creating-ports-for-the-contoso-3a2-price-and-availability-queryresponse-scenario"></a><span data-ttu-id="a76e2-102">手順 2: Contoso 3 a 2 Price and Availability クエリ/応答シナリオ用のポートの作成</span><span class="sxs-lookup"><span data-stu-id="a76e2-102">Step 2: Creating Ports for the Contoso 3A2 Price and Availability Query/Response Scenario</span></span>
 <span data-ttu-id="a76e2-103">この手順では、BizTalk Server によって提供される SQL アダプターを使用して送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="a76e2-103">In this step, you create send ports using the SQL adapter provided by BizTalk Server.</span></span> <span data-ttu-id="a76e2-104">この SQL ポートを使用して、Contoso の ERP システムとの間で 3A2 Price and Availability 応答を送受信します。</span><span class="sxs-lookup"><span data-stu-id="a76e2-104">You use the SQL port for sending and receiving the 3A2 Price and Availability response to and from the ERP system for Contoso.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 11. <span data-ttu-id="a76e2-116">SQL トランスポートのプロパティ ダイアログ ボックスで、**ドキュメント Target Namespace**ボックスに、入力**http://Contoso.com/Price**です。</span><span class="sxs-lookup"><span data-stu-id="a76e2-116">In the SQL Transport Properties dialog box, in the **Document Target Namespace** box, type **http://Contoso.com/Price**.</span></span>  
   
-12. <span data-ttu-id="a76e2-117">**応答ドキュメントのルート要素名**ボックスに、入力**[rootpriceresponse]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a76e2-117">In the **Response Document Root Element Name** box, type **rootPriceResponse**, and then click **OK**.</span></span>  
+12. <span data-ttu-id="a76e2-117">**応答ドキュメントのルート要素名**ボックスに、入力 **[rootpriceresponse]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a76e2-117">In the **Response Document Root Element Name** box, type **rootPriceResponse**, and then click **OK**.</span></span>  
   
 13. <span data-ttu-id="a76e2-118">静的な送信請求-応答送信ポートのプロパティ ダイアログ ボックスの左側のウィンドウでをクリックして**送信**です。</span><span class="sxs-lookup"><span data-stu-id="a76e2-118">In the left pane of the Static Solicit-Response Send Port Properties dialog box, click **Send**.</span></span>  
   

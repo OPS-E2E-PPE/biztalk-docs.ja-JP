@@ -1,11 +1,11 @@
 ---
-title: "展開またはポリシーを展開解除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 展開またはポリシーを展開解除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [policies], undeploying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - policies, undeploying
 - undeploying, policies
 ms.assetid: 9d26d4fe-9673-4baa-9927-02efda56b7a4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970104"
 ---
 # <a name="how-to-deploy-or-undeploy-a-policy"></a><span data-ttu-id="e28db-102">ポリシーを展開または展開解除する方法</span><span class="sxs-lookup"><span data-stu-id="e28db-102">How to Deploy or Undeploy a Policy</span></span>
 <span data-ttu-id="e28db-103">このトピックでは、BizTalk Server 管理コンソールを使用して、手動でポリシーを展開または展開解除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e28db-103">This topic describes how to use the BizTalk Server Administration console to deploy or undeploy a policy manually.</span></span> <span data-ttu-id="e28db-104">アプリケーションを開始すると、その中に含まれているすべてのポリシーが自動的に展開され、アプリケーションを停止すると、そのポリシーが自動的に展開解除されます。</span><span class="sxs-lookup"><span data-stu-id="e28db-104">In addition, starting an application automatically deploys any policies it contains, and stopping an application automatically undeploys its policies.</span></span> <span data-ttu-id="e28db-105">ポリシーを展開すると、そのポリシーを使用するアプリケーション内で有効になります。</span><span class="sxs-lookup"><span data-stu-id="e28db-105">Deploying a policy puts it into effect in the application that uses it.</span></span> <span data-ttu-id="e28db-106">ポリシーは、展開解除すると非アクティブとなり、BizTalk グループ内でそれを使用しているすべてのアプリケーションで動作しなくなります。</span><span class="sxs-lookup"><span data-stu-id="e28db-106">Undeploying a policy makes it inactive so that it no longer functions in any application that uses it in the BizTalk group.</span></span>  

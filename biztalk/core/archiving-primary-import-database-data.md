@@ -1,11 +1,11 @@
 ---
-title: "プライマリ インポート データベースのデータをアーカイブ |Microsoft ドキュメント"
-ms.custom: 
+title: プライマリ インポート データベースのデータをアーカイブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Primary Import database [BAM], archiving data
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [BAM], archiving data
 - data, archiving [BAM]
 ms.assetid: 4a014a59-0578-41fa-9441-8b582f54bbe8
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230418"
 ---
 # <a name="archiving-primary-import-database-data"></a><span data-ttu-id="0e760-102">プライマリ インポート データベースのアーカイブ</span><span class="sxs-lookup"><span data-stu-id="0e760-102">Archiving Primary Import Database Data</span></span>
 <span data-ttu-id="0e760-103">管理者は、プライマリ インポート データベースに格納されているアクティビティ インスタンス データをアーカイブする時間枠を指定できます。</span><span class="sxs-lookup"><span data-stu-id="0e760-103">An administrator can specify the time window for archiving activity instance data in the primary import database.</span></span> <span data-ttu-id="0e760-104">この操作には、BAMPrimaryImport データベースの BAM_Metadata_Activities テーブルの OnlineWindowTimeUnit プロパティと OnlineWindowTimeLength プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="0e760-104">You use the OnlineWindowTimeUnit and OnlineWindowTimeLength properties in the BAM_Metadata_Activities table in the BAMPrimaryImport database.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "サイド バイ サイドのバージョン管理を使用してスキーマの更新 |Microsoft ドキュメント"
-ms.custom: 
+title: サイド バイ サイドのバージョン管理を使用してスキーマの更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7360ec5-b5e9-40c7-9a7c-965fcc95ddb0
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302242"
 ---
 # <a name="updating-a-schema-using-side-by-side-versioning"></a><span data-ttu-id="cb87d-102">サイド バイ サイドのバージョン管理を使用してスキーマの更新</span><span class="sxs-lookup"><span data-stu-id="cb87d-102">Updating a Schema Using Side-by-Side Versioning</span></span>
 <span data-ttu-id="cb87d-103">スキーマをサイド バイ サイドのバージョン管理を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="cb87d-103">You can perform side-by-side versioning with schemas.</span></span> <span data-ttu-id="cb87d-104">こうと、スキーマの新しいバージョンをアセンブリに追加すると、既存のスキーマ (とそのバージョン) を中断している間、スキーマのバージョンをアップグレードする変更されません。</span><span class="sxs-lookup"><span data-stu-id="cb87d-104">You do so by adding a new version of the schema to an assembly, upgrading the version of the schema, while leaving the existing schema (and its version) unchanged.</span></span>  

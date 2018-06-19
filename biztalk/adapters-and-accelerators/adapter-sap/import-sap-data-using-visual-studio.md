@@ -1,18 +1,18 @@
 ---
-title: "Visual Studio を使用して SAP データのインポート |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio を使用して SAP データのインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing SAP data, how to
 - importing SAP data, using Visual Studio
 - Visual Studio, importing SAP data
 ms.assetid: 70cce089-232d-4ab9-81bd-6b0d6f0097d7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217754"
 ---
 # <a name="import-sap-data-using-visual-studio"></a><span data-ttu-id="9e81f-102">Visual Studio を使用して SAP データのインポート</span><span class="sxs-lookup"><span data-stu-id="9e81f-102">Import SAP Data Using Visual Studio</span></span>
 <span data-ttu-id="9e81f-103">このセクションでは、Microsoft を使用する方法の情報を提供[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]SAP システムから SQL Server データベースにデータをインポートします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-103">This section provides information on how to use Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to import data from an SAP system into a SQL Server database.</span></span> <span data-ttu-id="9e81f-104">このセクションでは、データをインポートする実行可能な SSIS パッケージを作成する方法の命令を提供します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-104">This section provides instruction on how to create an SSIS package that you can execute to import data.</span></span> <span data-ttu-id="9e81f-105">このセクションでは、SSIS パッケージを実行する方法についても情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-105">This section also provides information on how to execute the SSIS package.</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="9e81f-114">クリックして [ようこそ] 画面の情報を読み取る**次**です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-114">Read the information on the welcome screen and click **Next**.</span></span>  
   
-4.  <span data-ttu-id="9e81f-115">**データ ソースを選択** ダイアログ ボックスから、**データ ソース**ドロップ ダウン リスト**.NET Framework Data Provider 用 mySAP Business Suite**です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-115">In the **Choose a Data Source** dialog box, from the **Data Source** drop-down list **.NET Framework Data Provider for mySAP Business Suite**.</span></span> <span data-ttu-id="9e81f-116">ダイアログ ボックスは、SAP システムへの接続に別の接続パラメーターを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-116">The dialog box lists the different connection parameters to connect to an SAP system.</span></span> <span data-ttu-id="9e81f-117">使用して SAP システムへの接続に一般的な接続文字列、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]が必要です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-117">A typical connection string to connect to an SAP system using the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] requires:</span></span>  
+4.  <span data-ttu-id="9e81f-115">**データ ソースを選択** ダイアログ ボックスから、**データ ソース**ドロップ ダウン リスト **.NET Framework Data Provider 用 mySAP Business Suite**です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-115">In the **Choose a Data Source** dialog box, from the **Data Source** drop-down list **.NET Framework Data Provider for mySAP Business Suite**.</span></span> <span data-ttu-id="9e81f-116">ダイアログ ボックスは、SAP システムへの接続に別の接続パラメーターを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-116">The dialog box lists the different connection parameters to connect to an SAP system.</span></span> <span data-ttu-id="9e81f-117">使用して SAP システムへの接続に一般的な接続文字列、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]が必要です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-117">A typical connection string to connect to an SAP system using the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] requires:</span></span>  
   
     -   <span data-ttu-id="9e81f-118">接続の接続パラメーターを入力します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-118">The connection parameters for a connection type.</span></span> <span data-ttu-id="9e81f-119">[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] A、B、および D の接続の種類をサポートしていますSAP システムへの接続には、いずれかの接続パラメーターを指定する必要があります*1*種類の接続をします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-119">The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] supports connection types A, B, and D. To connect to an SAP system you must provide connection parameters for any *one* of these connection types.</span></span> <span data-ttu-id="9e81f-120">たとえば、接続の種類、システム数と、アプリケーション サーバーのホストの名前を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9e81f-120">For example, for connection type A, you must provide the name of the application server host and the system number.</span></span>  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="9e81f-127">RFC SDK トレースを使用するかどうか。</span><span class="sxs-lookup"><span data-stu-id="9e81f-127">Whether you want to use RFC SDK tracing.</span></span>  
   
-     <span data-ttu-id="9e81f-128">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-128">Click **Next**.</span></span>  
+     <span data-ttu-id="9e81f-128">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-128">Click **Next**.</span></span>  
   
 5.  <span data-ttu-id="9e81f-129">**先選択** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="9e81f-129">In the **Choose a Destination** dialog box:</span></span>  
   
@@ -70,13 +71,13 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="9e81f-133">**データベース**ドロップダウン リストで、SAP テーブルをインポートするデータベースを選択します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-133">From the **Database** drop-down list, select the database to which you want to import the SAP table.</span></span>  
   
-    5.  <span data-ttu-id="9e81f-134">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-134">Click **Next**.</span></span>  
+    5.  <span data-ttu-id="9e81f-134">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-134">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="9e81f-135">**テーブルのコピーを指定またはクエリ** ダイアログ ボックスで、選択、**を転送するデータを指定するクエリを記述**オプションし、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-135">In the **Specify Table Copy or Query** dialog box, choose the **Write a query to specify the data to transfer** option and click **Next**.</span></span>  
   
 7.  <span data-ttu-id="9e81f-136">**ソース クエリを指定する** ダイアログ ボックスで、SQL Server にインポートするデータをフィルター選択クエリを指定します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-136">In the **Provide a Source Query** dialog box, specify a SELECT query to filter the data to be imported into the SQL Server.</span></span> <span data-ttu-id="9e81f-137">クエリを SELECT の文法の詳細については、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]を参照してください[SAP の SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-137">For more information about the grammar for a SELECT query for the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], see [Syntax for a SELECT Statement in SAP](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md).</span></span>  
   
-     <span data-ttu-id="9e81f-138">をクリックして、**解析**クエリを検証し、をクリックするボタン**[ok]**ポップアップ ダイアログ ボックスにします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-138">Click the **Parse** button to validate the query and click **OK** in the pop-up dialog box.</span></span> <span data-ttu-id="9e81f-139">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-139">Click **Next**.</span></span>  
+     <span data-ttu-id="9e81f-138">をクリックして、**解析**クエリを検証し、をクリックするボタン **[ok]** ポップアップ ダイアログ ボックスにします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-138">Click the **Parse** button to validate the query and click **OK** in the pop-up dialog box.</span></span> <span data-ttu-id="9e81f-139">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-139">Click **Next**.</span></span>  
   
 8.  <span data-ttu-id="9e81f-140">**[ソース テーブルおよびビュー** ] ダイアログ ボックスで、ソース テーブルと対象テーブルに対してチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-140">In the **Select Source Tables and Views** dialog box, select the check box against the source and destination tables.</span></span> <span data-ttu-id="9e81f-141">ソースは、SAP からデータを取得するように指定したクエリを示します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-141">The source is the query you specified to retrieve data from SAP.</span></span> <span data-ttu-id="9e81f-142">変換先は、SQL Server データベースに作成されるテーブルです。</span><span class="sxs-lookup"><span data-stu-id="9e81f-142">The destination is the table that will be created in the SQL Server database.</span></span>  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="9e81f-151">Nullable、サイズ、有効桁数、小数点以下桁数などその他のフィールドの属性を変更します。</span><span class="sxs-lookup"><span data-stu-id="9e81f-151">Change other field attributes such as nullable, size, precision, and scale.</span></span>  
   
-    -   <span data-ttu-id="9e81f-152">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-152">Click **OK**.</span></span>  
+    -   <span data-ttu-id="9e81f-152">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e81f-152">Click **OK**.</span></span>  
   
 11. <span data-ttu-id="9e81f-153">**ソース テーブルおよびビュー**ダイアログ ボックスで、をクリックして**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="9e81f-153">In the **Select Source Tables and Views** dialog box, click **Next**.</span></span>  
   

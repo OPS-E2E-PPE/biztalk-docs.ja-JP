@@ -1,18 +1,18 @@
 ---
-title: "SAP からメタデータをプログラムで取得 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP からメタデータをプログラムで取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IMetadataRetrievalContract endpoint
 - metadata, retrieving programmatically
 - WS-Metadata Exchange (MEX) endpoint
 ms.assetid: 8d75332e-c103-4bd5-a9a2-56d21747a04e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216834"
 ---
 # <a name="get-metadata-programmatically-from-sap"></a><span data-ttu-id="04124-102">SAP からメタデータをプログラムで取得します。</span><span class="sxs-lookup"><span data-stu-id="04124-102">Get Metadata Programmatically from SAP</span></span>
 <span data-ttu-id="04124-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]は、WCF サービスとして SAP システムを公開するカスタムの WCF バインディング。</span><span class="sxs-lookup"><span data-stu-id="04124-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] is a custom WCF binding that exposes an SAP system as a WCF service.</span></span> <span data-ttu-id="04124-104">アダプターは、自己記述型のサービスとして SAP システムを公開します。サポートされる操作に関するメタデータを公開できるサービスは、します。</span><span class="sxs-lookup"><span data-stu-id="04124-104">The adapter exposes the SAP system as a self-describing service; that is, a service that is capable of publishing metadata about the operations that it supports.</span></span> <span data-ttu-id="04124-105">メタデータは、WCF サービス; を論理インターフェイスを説明します。つまり、サービス コントラクト、メッセージ、およびメッセージ スキーマ、サービスと対話するために使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="04124-105">Metadata describes the logical interface to a WCF service; that is, the service contract, messages, and message schemas that must be used to interact with the service.</span></span>  

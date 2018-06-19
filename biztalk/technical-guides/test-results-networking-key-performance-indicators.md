@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bdbc2df-9d19-4ae8-b540-ec1b9a7cdbe9
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22302586"
 ---
 # <a name="test-results-networking-key-performance-indicators"></a><span data-ttu-id="088af-102">テスト結果: ネットワー キング主要業績評価指標</span><span class="sxs-lookup"><span data-stu-id="088af-102">Test Results: Networking Key Performance Indicators</span></span>
 <span data-ttu-id="088af-103">このトピックでは、ネットワーク主要業績評価指標 (KPI)、テスト シナリオで監視された概要を示します。</span><span class="sxs-lookup"><span data-stu-id="088af-103">This topic summarizes Network Key Performance Indicators (KPI) observed during the test scenarios.</span></span> <span data-ttu-id="088af-104">これらのテスト評価のネットワークのパフォーマンスによって測定される、 **\Network インターフェイス (\*) \Bytes total/sec**パフォーマンス モニター カウンター、および測定することによって、 **SQL Network interface \bytes total/sec (Avg)** VSTS 2008 ロード テスト コント ローラーによって返されます。</span><span class="sxs-lookup"><span data-stu-id="088af-104">These tests evaluated Network Performance as measured by the **\Network Interface(\*)\Bytes Total/sec** performance monitor counter and by measuring the **SQL Network Interface\Bytes Total/sec (Avg )** returned by the VSTS 2008 Load Test Controller.</span></span>  

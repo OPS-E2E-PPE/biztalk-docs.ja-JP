@@ -1,11 +1,11 @@
 ---
-title: "基本的な Insert、Update、Delete のメッセージ スキーマおよびテーブルおよびビューの操作の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的な Insert、Update、Delete のメッセージ スキーマおよびテーブルおよびビューの操作の選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations on tables, message actions for
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - table operations, message schemas for
 - operations on tables, message structure for
 ms.assetid: 8228d5e6-14af-49e0-b34b-be03aea59189
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216002"
 ---
 # <a name="message-schemas-for-the-basic-insert-update-delete-and-select-operations-on-tables-and-views"></a><span data-ttu-id="cf87f-102">基本的な insert、メッセージ スキーマを更新、削除、およびテーブルおよびビューの操作の選択</span><span class="sxs-lookup"><span data-stu-id="cf87f-102">Message Schemas for the Basic Insert, Update, Delete, and Select Operations on Tables and Views</span></span>
 <span data-ttu-id="cf87f-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Insert、Update、Delete、および Select 操作ごとにテーブルが表示され、Oracle データベースで表示します。</span><span class="sxs-lookup"><span data-stu-id="cf87f-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces basic Insert, Update, Delete, and Select operations for each table and view in the Oracle database.</span></span> <span data-ttu-id="cf87f-104">これらの操作は、WHERE 句で修飾された適切な SQL ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="cf87f-104">These operations perform the appropriate SQL statement qualified by a WHERE clause.</span></span> <span data-ttu-id="cf87f-105">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]これらの操作で厳密に型指定されたレコードとレコード セットを使用します。</span><span class="sxs-lookup"><span data-stu-id="cf87f-105">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] uses strongly-typed records and record sets in these operations.</span></span>  

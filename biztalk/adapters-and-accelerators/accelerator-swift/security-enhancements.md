@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214058"
 ---
 # <a name="security-enhancements"></a><span data-ttu-id="5345b-102">セキュリティの強化</span><span class="sxs-lookup"><span data-stu-id="5345b-102">Security Enhancements</span></span>
 <span data-ttu-id="5345b-103">このデプロイ ガイドの各ステップはセキュリティで保護された展開用として設計されています、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]インストールします。</span><span class="sxs-lookup"><span data-stu-id="5345b-103">Each step of this deployment guide has been designed as a secure deployment for your [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] installation.</span></span>  

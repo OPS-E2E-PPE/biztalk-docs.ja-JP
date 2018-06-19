@@ -1,18 +1,18 @@
 ---
-title: "手順 10: オーケストレーションを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 10: オーケストレーションを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, creating
 - creating, orchestrations
 - message enrichment tutorial, orchestrations
 ms.assetid: 10f5cf3d-4a34-4c80-89d1-c390552cfc09
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206570"
 ---
 # <a name="step-10-create-an-orchestration"></a><span data-ttu-id="39dd8-102">手順 10: オーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="39dd8-102">Step 10: Create an Orchestration</span></span>
 <span data-ttu-id="39dd8-103">このステップでは、患者 ADT_A04 メッセージを完全に作成される追加の詳細を取得するためのビジネス プロセスを表すオーケストレーションを作成するのにオーケストレーション デザイナーを使用します。</span><span class="sxs-lookup"><span data-stu-id="39dd8-103">In this step, you use Orchestration Designer to create an orchestration to represent the business process for retrieving additional patient details to fully populate an ADT_A04 message.</span></span> <span data-ttu-id="39dd8-104">オーケストレーション デザイナーを使用して、このビジネス プロセスのアクションを表すために必要なオーケストレーション図形を選択します。</span><span class="sxs-lookup"><span data-stu-id="39dd8-104">Using Orchestration Designer, you select the orchestration shapes required to represent actions for this business process.</span></span> <span data-ttu-id="39dd8-105">以降の演習では、それらが正しく機能できるように、図形を構成する追加の情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="39dd8-105">In later exercises, you provide additional information to configure the shapes so that they can function properly.</span></span>  

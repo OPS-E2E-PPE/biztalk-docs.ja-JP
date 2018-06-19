@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968832"
 ---
 # <a name="how-to-add-orchestration-variables"></a><span data-ttu-id="9b190-102">オーケストレーション変数を追加する方法</span><span class="sxs-lookup"><span data-stu-id="9b190-102">How to Add Orchestration Variables</span></span>
 <span data-ttu-id="9b190-103">オーケストレーションの種類 ウィンドウでは、オーケストレーションのプロパティを管理することができます (とも呼ばれる**サービス**プロパティ)、パラメーター、ポート、メッセージ、およびその他の変数です。</span><span class="sxs-lookup"><span data-stu-id="9b190-103">The Orchestration View window enables you to manage an orchestration's properties (also known as **Service** properties), parameters, ports, messages, and other variables.</span></span> <span data-ttu-id="9b190-104">ポートおよびメッセージに加えて、整数型の変数、ブール変数、文字列変数、または .NET クラスの変数を作成できます。</span><span class="sxs-lookup"><span data-stu-id="9b190-104">In addition to ports and messages, you can create integer variables, Boolean variables, string variables, or variables of a .NET class.</span></span>  

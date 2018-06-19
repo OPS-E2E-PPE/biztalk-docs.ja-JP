@@ -1,18 +1,18 @@
 ---
-title: "アダプタ サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: アダプタ サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters
 - SDK samples, adapters
 - examples, adapters
 ms.assetid: 2e57bbc1-9c11-412b-b74c-52cf26bf3fc1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206498"
 ---
 # <a name="adapter-samples"></a><span data-ttu-id="8e158-102">アダプタ サンプル</span><span class="sxs-lookup"><span data-stu-id="8e158-102">Adapter Samples</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="8e158-103">® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] の Software Development Kit (SDK) には、アダプタのサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="8e158-103">® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] includes several adapter samples in its Software Development Kit (SDK).</span></span> <span data-ttu-id="8e158-104">このセクションでは、各アダプター サンプルが示す機能、サンプルをビルドおよび実行する方法、および予測できる実行結果について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="8e158-104">This section provides detailed information about the functionality demonstrated by each adapter sample, instructions for building and running the sample, and the results that you can expect.</span></span>  

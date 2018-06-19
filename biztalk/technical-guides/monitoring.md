@@ -1,14 +1,14 @@
 ---
-title: "監視 |Microsoft ドキュメント"
-ms.custom: 
+title: 監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7effa38f-f9f2-40b7-8d8b-fa13cf94aa4f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298906"
 ---
 # <a name="monitoring"></a><span data-ttu-id="fb460-102">監視</span><span class="sxs-lookup"><span data-stu-id="fb460-102">Monitoring</span></span>
 <span data-ttu-id="fb460-103">既定では、すべての BizTalk Server の監視およびタスクを使用して既定のアクション アカウントが、実行プロファイルで、BizTalk Server 監視アカウントのターゲットの特定の実行アカウントが定義されていない場合。</span><span class="sxs-lookup"><span data-stu-id="fb460-103">By default, all BizTalk Server monitoring and tasks use the default action account when there is no specific Run As Account defined for the target in the Run As Profile of the BizTalk Server Monitoring Account.</span></span> <span data-ttu-id="fb460-104">実行アカウントを BizTalk Server を監視するために必要なアクセス許可の最小セットを構成するのには、次のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="fb460-104">To configure a Run As Account with the minimum set of permissions that are required for BizTalk Server monitoring purposes, the following permissions are required:</span></span>  

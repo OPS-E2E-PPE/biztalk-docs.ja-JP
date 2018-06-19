@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 44da7839f0bee96db332dada214bdbc503067f56
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013161"
 ---
 # <a name="how-to-create-send-ports-for-tibco-rendezvous"></a><span data-ttu-id="c0dcc-101">TIBCO Rendezvous の送信ポートを作成する方法</span><span class="sxs-lookup"><span data-stu-id="c0dcc-101">How to Create Send Ports for TIBCO Rendezvous</span></span>
 <span data-ttu-id="c0dcc-102">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して送信ポートを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-102">Follow these steps to create a send port using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="c0dcc-109">**送信ハンドラー**ドロップダウン リストで、URI を選択します。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-109">From the **Send handler** drop-down list, select the URI.</span></span>  
   
-    4.  <span data-ttu-id="c0dcc-110">**送信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpipelines.xmltransmit]**です。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-110">From the **Send Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span> <span data-ttu-id="c0dcc-111">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-111">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
+    4.  <span data-ttu-id="c0dcc-110">**送信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-110">From the **Send Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span> <span data-ttu-id="c0dcc-111">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-111">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
     6.  <span data-ttu-id="c0dcc-112">をクリックして**構成**送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-112">Click **Configure** to configure the send port.</span></span>  
   
@@ -39,9 +40,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="c0dcc-117">**SSO を使用する****はい**です。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-117">For **Use SSO**, select **Yes**.</span></span>  
   
-    4.  <span data-ttu-id="c0dcc-118">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-118">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="c0dcc-118">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-118">Click **OK**.</span></span>  
   
-5.  <span data-ttu-id="c0dcc-119">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-119">Click **OK**.</span></span>  
+5.  <span data-ttu-id="c0dcc-119">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c0dcc-119">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c0dcc-120">参照</span><span class="sxs-lookup"><span data-stu-id="c0dcc-120">See Also</span></span>  
  [<span data-ttu-id="c0dcc-121">TIBCO Rendezvous 送信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="c0dcc-121">Creating TIBCO Rendezvous Send Handlers</span></span>](../core/creating-tibco-rendezvous-send-handlers.md)

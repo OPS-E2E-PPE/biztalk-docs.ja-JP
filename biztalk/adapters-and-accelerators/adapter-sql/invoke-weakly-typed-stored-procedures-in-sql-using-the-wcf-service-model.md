@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して sql ストアド プロシージャの弱い型指定を呼び出して |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して sql ストアド プロシージャの弱い型指定を呼び出して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aaf74a40-4c03-4a4a-9b91-c21babe154fa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225066"
 ---
 # <a name="invoke-weakly-typed-stored-procedures-in-sql-using-the-wcf-service-model"></a><span data-ttu-id="e36a0-102">WCF サービス モデルを使用して sql ストアド プロシージャの弱い型指定を呼び出す</span><span class="sxs-lookup"><span data-stu-id="e36a0-102">Invoke Weakly-typed Stored Procedures in SQL using the WCF Service Model</span></span>
 <span data-ttu-id="e36a0-103">リストされたプロシージャを起動すると、**プロシージャ**内のノード、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]出力は次のデータセットの配列の形式でします。</span><span class="sxs-lookup"><span data-stu-id="e36a0-103">When you invoke a procedure listed under the **Procedures** node in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], the output is in the form of a DataSet array.</span></span> <span data-ttu-id="e36a0-104">このトピックでは、データセットの配列を返す SQL Server でストアド プロシージャを呼び出す、WCF クライアントを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e36a0-104">This topic provides instructions on how to create a WCF client to invoke a stored procedure in SQL Server that returns a DataSet array.</span></span>  

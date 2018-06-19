@@ -1,11 +1,11 @@
 ---
-title: "宣言されている Z セグメントを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 宣言されている Z セグメントを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Z objects, creating segments
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Z segments, creating
 - creating, Z segments [Z objects]
 ms.assetid: afd1b7b7-089e-4c6a-a063-e708431bb888
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22204746"
 ---
 # <a name="creating-declared-z-segments"></a><span data-ttu-id="7501a-102">宣言されている Z セグメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="7501a-102">Creating Declared Z Segments</span></span>
 <span data-ttu-id="7501a-103">(宣言されていない Z セグメント、ボディ部に続く、マルチパーティ メッセージの最後の部分をする必要があります) とは異なり、スキーマの任意のレベルで宣言されている Z セグメントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="7501a-103">You can create declared Z segments at any level of a schema (unlike undeclared Z segments, which must be the last part of a multi-party message, following the body part).</span></span>  

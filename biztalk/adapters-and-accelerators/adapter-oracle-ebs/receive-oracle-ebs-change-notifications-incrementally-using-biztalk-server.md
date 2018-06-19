@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して増分値 Oracle E-business Suite 変更通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して増分値 Oracle E-business Suite 変更通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63dbeacc-ecde-497d-b12d-d5f9944a33f0
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967856"
 ---
 # <a name="receive-oracle-e-business-suite-change-notifications-incrementally-using-biztalk-server"></a><span data-ttu-id="a36ce-102">BizTalk Server を使用して増分値 Oracle E-business Suite 変更通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-102">Receive Oracle E-Business Suite change notifications incrementally using BizTalk Server</span></span>
 > [!IMPORTANT]
@@ -104,11 +105,11 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="a36ce-178">値を指定**InboundOperationType**、 **NotificationPort**、および**NotificationStatement**スキーマの生成中にプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="a36ce-178">Specify a value for **InboundOperationType**, **NotificationPort**, and **NotificationStatement** binding properties while generating the schema.</span></span> <span data-ttu-id="a36ce-179">このバインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Oracle E-business Suite バインド プロパティ読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-179">For more information about this binding property, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span> <span data-ttu-id="a36ce-180">バインドのプロパティを指定する方法については、次を参照してください。 [for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-180">For instructions on how to specify binding properties, see [Configure the Binding Properties for Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md).</span></span>  
   
-2.  <span data-ttu-id="a36ce-181">コントラクトの種類を選択して**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-181">Select the contract type as **Service (Inbound operations)**.</span></span>  
+2.  <span data-ttu-id="a36ce-181">コントラクトの種類を選択して**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-181">Select the contract type as **Service (Inbound operations)**.</span></span>  
   
 3.  <span data-ttu-id="a36ce-182">スキーマを生成、**通知**操作します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-182">Generate schema for the **Notification** operation.</span></span>  
   
-4.  <span data-ttu-id="a36ce-183">コントラクトの種類を選択して**クライアント (送信操作)**です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-183">Select the contract type as **Client (Outbound operations)**.</span></span>  
+4.  <span data-ttu-id="a36ce-183">コントラクトの種類を選択して**クライアント (送信操作)** です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-183">Select the contract type as **Client (Outbound operations)**.</span></span>  
   
 5.  <span data-ttu-id="a36ce-184">スキーマを生成、 **PROCESS_RECORDS**プロシージャです。</span><span class="sxs-lookup"><span data-stu-id="a36ce-184">Generate schema for the **PROCESS_RECORDS** procedure.</span></span> <span data-ttu-id="a36ce-185">この手順で使用可能な**ACCOUNT_PKG**パッケージです。</span><span class="sxs-lookup"><span data-stu-id="a36ce-185">This procedure is available under the **ACCOUNT_PKG** package.</span></span>  
   
@@ -265,8 +266,8 @@ Procedure(WCF.Action) = "PackageApis/SCOTT/ACCOUNT_PKG/PROCESS_RECORDS";
         |<span data-ttu-id="a36ce-328">プロパティのバインド</span><span class="sxs-lookup"><span data-stu-id="a36ce-328">Binding Property</span></span>|<span data-ttu-id="a36ce-329">値</span><span class="sxs-lookup"><span data-stu-id="a36ce-329">Value</span></span>|  
         |----------------------|-----------|  
         |<span data-ttu-id="a36ce-330">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="a36ce-330">**InboundOperationType**</span></span>|<span data-ttu-id="a36ce-331">これを設定して**通知**です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-331">Set this to **Notification**.</span></span>|  
-        |<span data-ttu-id="a36ce-332">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="a36ce-332">**NotificationPort**</span></span>|<span data-ttu-id="a36ce-333">ODP.NET が Oracle データベースからデータベースの変更通知をリッスンするように開く必要があるポート番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-333">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span> <span data-ttu-id="a36ce-334">これは、Windows ファイアウォールの例外一覧に追加する必要があります同じポート番号を設定します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-334">Set this to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="a36ce-335">Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-335">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959).</span></span><br /><br /> <span data-ttu-id="a36ce-336">**重要:**これを既定値は-1 を設定する場合は、通知メッセージを受け取るための Windows ファイアウォールを完全に無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a36ce-336">**Important:** If you set this to the default value of -1, you will have to completely disable Windows Firewall to receive notification messages.</span></span>|  
-        |<span data-ttu-id="a36ce-337">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="a36ce-337">**NotificationStatement**</span></span>|<span data-ttu-id="a36ce-338">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-338">Set this to:</span></span><br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> <span data-ttu-id="a36ce-339">**注:**スキーマ名とテーブル名を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a36ce-339">**Note:** You must specify the table name along with the schema name.</span></span> <span data-ttu-id="a36ce-340">たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。</span><span class="sxs-lookup"><span data-stu-id="a36ce-340">For example, `SCOTT.ACCOUNTACTIVITY`.</span></span>|  
+        |<span data-ttu-id="a36ce-332">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="a36ce-332">**NotificationPort**</span></span>|<span data-ttu-id="a36ce-333">ODP.NET が Oracle データベースからデータベースの変更通知をリッスンするように開く必要があるポート番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-333">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span> <span data-ttu-id="a36ce-334">これは、Windows ファイアウォールの例外一覧に追加する必要があります同じポート番号を設定します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-334">Set this to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="a36ce-335">Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-335">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959).</span></span><br /><br /> <span data-ttu-id="a36ce-336">**重要:** これを既定値は-1 を設定する場合は、通知メッセージを受け取るための Windows ファイアウォールを完全に無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a36ce-336">**Important:** If you set this to the default value of -1, you will have to completely disable Windows Firewall to receive notification messages.</span></span>|  
+        |<span data-ttu-id="a36ce-337">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="a36ce-337">**NotificationStatement**</span></span>|<span data-ttu-id="a36ce-338">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="a36ce-338">Set this to:</span></span><br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> <span data-ttu-id="a36ce-339">**注:** スキーマ名とテーブル名を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a36ce-339">**Note:** You must specify the table name along with the schema name.</span></span> <span data-ttu-id="a36ce-340">たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。</span><span class="sxs-lookup"><span data-stu-id="a36ce-340">For example, `SCOTT.ACCOUNTACTIVITY`.</span></span>|  
         |<span data-ttu-id="a36ce-341">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="a36ce-341">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="a36ce-342">これを設定して**True**です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-342">Set this to **True**.</span></span>|  
   
          <span data-ttu-id="a36ce-343">異なるバインディングのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Oracle E-business Suite バインド プロパティ読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="a36ce-343">For more information about the different binding properties, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span>  

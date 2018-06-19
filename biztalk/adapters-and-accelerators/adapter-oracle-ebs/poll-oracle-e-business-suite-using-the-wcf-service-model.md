@@ -1,14 +1,14 @@
 ---
-title: "WCF を使用してポーリング Oracle E-business Suite サービス モデル |Microsoft ドキュメント"
-ms.custom: 
+title: WCF を使用してポーリング Oracle E-business Suite サービス モデル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96670a39-4fec-49bf-85d1-947b1a1bc750
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215114"
 ---
 # <a name="poll-oracle-e-business-suite-using-the-wcf-service-model"></a><span data-ttu-id="242e4-102">WCF サービス モデルを使用してポーリング Oracle E-business Suite</span><span class="sxs-lookup"><span data-stu-id="242e4-102">Poll Oracle E-Business Suite using the WCF service model</span></span>
 <span data-ttu-id="242e4-103">構成することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースからのポーリングに基づいたメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="242e4-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive polling-based messages from the Oracle database.</span></span> <span data-ttu-id="242e4-104">アダプターは、Oracle データベースをポーリングする 2 つの方法を提供します。</span><span class="sxs-lookup"><span data-stu-id="242e4-104">The adapter provides two ways of polling the Oracle database:</span></span>  

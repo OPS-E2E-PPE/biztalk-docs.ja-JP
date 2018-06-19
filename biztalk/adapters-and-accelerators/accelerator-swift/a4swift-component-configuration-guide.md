@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209122"
 ---
 # <a name="a4swift-component-configuration-guide"></a><span data-ttu-id="500e9-102">A4SWIFT コンポーネント構成ガイド</span><span class="sxs-lookup"><span data-stu-id="500e9-102">A4SWIFT Component Configuration Guide</span></span>
 <span data-ttu-id="500e9-103">このガイドの構成に関する情報を提供する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="500e9-103">This guide provides information about configuring [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="500e9-104">A4SWIFT をインストールし、(インストール ガイドで説明)、A4SWIFT 構成ウィザードを完了した後は、この構成ガイドの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="500e9-104">Perform the steps in this configuration guide after you have installed A4SWIFT and completed the A4SWIFT Configuration Wizard (as described in the Installation Guide).</span></span> <span data-ttu-id="500e9-105">この構成のガイドには、次の手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="500e9-105">This configuration guide includes the following instructions:</span></span>  

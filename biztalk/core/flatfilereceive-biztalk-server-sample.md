@@ -1,14 +1,14 @@
 ---
-title: "FlatFileReceive (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: FlatFileReceive (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90bd9e8d-6ed9-49c4-8437-c0c8b2a9a78d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970168"
 ---
 # <a name="flatfilereceive-biztalk-server-sample"></a><span data-ttu-id="857e1-102">FlatFileReceive (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="857e1-102">FlatFileReceive (BizTalk Server Sample)</span></span>
 <span data-ttu-id="857e1-103">FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用してフラット ファイルを同等の .xml ファイルに変換する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="857e1-103">The FlatFileReceive sample demonstrates how you can use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to process a flat file into the equivalent .xml file.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="857e1-133">XmlTransmit が送信パイプラインとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="857e1-133">XmlTransmit is used as the send pipeline.</span></span> <span data-ttu-id="857e1-134">プロパティの降格または他のメッセージ処理が送信ポートで必要ない場合は、PassThruTransmit パイプラインを使用してください。</span><span class="sxs-lookup"><span data-stu-id="857e1-134">Use the PassThruTransmit pipeline when property demotion or other messaging processing is not required in the send port.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="857e1-135">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="857e1-135">Where to Find This Sample</span></span>  
- <span data-ttu-id="857e1-136">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive\\</span><span class="sxs-lookup"><span data-stu-id="857e1-136">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileReceive\\</span></span>  
+ <span data-ttu-id="857e1-136">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileReceive\\</span><span class="sxs-lookup"><span data-stu-id="857e1-136">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileReceive\\</span></span>  
   
  <span data-ttu-id="857e1-137">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="857e1-137">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -72,13 +73,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="857e1-160">コマンド ウィンドウで、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="857e1-160">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="857e1-161">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="857e1-161">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
+     <span data-ttu-id="857e1-161">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="857e1-161">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
   
 2.  <span data-ttu-id="857e1-162">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="857e1-162">Run the file Setup.bat, which performs the following actions:</span></span>  
   
     -   <span data-ttu-id="857e1-163">次のフォルダに、このサンプルの入力 (FFInput) フォルダと出力 (FFOutput) フォルダを作成します。</span><span class="sxs-lookup"><span data-stu-id="857e1-163">Creates the input (FFInput) and output (FFOutput) folders for this sample in the folder:</span></span>  
   
-         <span data-ttu-id="857e1-164">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="857e1-164">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
+         <span data-ttu-id="857e1-164">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="857e1-164">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
   
     -   <span data-ttu-id="857e1-165">このサンプル用に Visual Studio プロジェクトをコンパイルおよび展開します。</span><span class="sxs-lookup"><span data-stu-id="857e1-165">Compiles and deploys the Visual Studio project for this sample.</span></span>  
   

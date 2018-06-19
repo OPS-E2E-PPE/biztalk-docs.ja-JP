@@ -1,14 +1,14 @@
 ---
-title: "手順 1: BizTalk Server にドキュメントを送信する単体テストの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: BizTalk Server にドキュメントを送信する単体テストの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 688b14e4-bb16-4d12-86b8-37b8b6808472
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302698"
 ---
 # <a name="step-1-create-a-unit-test-to-submit-documents-to-biztalk-server"></a><span data-ttu-id="6e9d5-102">手順 1: BizTalk Server にドキュメントを送信する単体テストを作成します。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-102">Step 1: Create a Unit Test to Submit Documents to BizTalk Server</span></span>
 <span data-ttu-id="6e9d5-103">BizTalk Server などのアプリケーション サーバーのコンピューターは、ユーザーに代わって特定のタスクを実行する設計されています。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-103">Computer application servers such as BizTalk Server are designed to perform particular tasks on behalf of users.</span></span> <span data-ttu-id="6e9d5-104">これらのタスクは、アプリケーション サーバーを認識するプロトコルを使用して、アプリケーション サーバーを理解している標準に準拠するメッセージとして、アプリケーション サーバーに送信されるクライアント要求として開始されます。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-104">These tasks are initiated as client requests sent to the application server as messages that conform to a standard that the application server understands, via a protocol that the application server understands.</span></span> <span data-ttu-id="6e9d5-105">たとえば、クライアントは、SMTP プロトコル経由での電子メール サーバーにインターネット電子メール メッセージを送信して電子メールの処理を開始する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-105">For example, clients may initiate processing of email by sending internet e-mail messages to an email server via the SMTP protocol.</span></span> <span data-ttu-id="6e9d5-106">同様に、HTML クライアントを処理する web サーバーまたはデータベース サーバーの ASP 要求がクライアント SQL 要求を処理され、BizTalk Server はクライアントのさまざまな業界標準プロトコルを使用して複数の業界メッセージ標準に準拠して書式設定のメッセージを処理できます。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-106">Likewise, web servers process client HTML or ASP requests, database servers process client SQL requests and BizTalk Server can process client messages formatted in compliance with multiple industry message standards using numerous industry standard protocols.</span></span> <span data-ttu-id="6e9d5-107">通常、アプリケーション サーバーのワークロードの容量は、一定時間内で、アプリケーション サーバーを処理できるメッセージの数によって測定されます。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-107">The workload capacity of an application server is typically measured by the number of messages that the application server can process in a given time period.</span></span> <span data-ttu-id="6e9d5-108">BizTalk Server のワークロードの容量が、時間、ビジー状態で workday なども長期間にわたっての「1 秒あたりに受信したドキュメント」、「1 秒あたりに処理されたドキュメント」、「1 秒あたりに完了したオーケストレーション」数の平均として測定同様に、作業 1 週間です。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-108">The workload capacity of BizTalk Server is likewise measured as the average number of “documents received per second”, “documents processed per second” and/or “orchestrations completed per second” over an extended period of time, such as a busy workday or even a work week.</span></span> <span data-ttu-id="6e9d5-109">Visual Studio 2010 ロード テストの機能は、最大数百台のサーバー アプリケーションに同時にアクセスするユーザーのロード プロファイルをシミュレートできます。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-109">Visual Studio 2010 load test functionality can simulate a load profile of up to hundreds of users simultaneously accessing a server application.</span></span> <span data-ttu-id="6e9d5-110">このロード テスト機能は、今後の分析用のデータベースでこれらのメトリックを保存する機能と、選択した主要業績評価指標のリアルタイムのメトリックを提供します。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-110">This load testing functionality provides real time metrics for selected key performance indicators as well as the ability to store these metrics in a database for future analysis.</span></span> <span data-ttu-id="6e9d5-111">このドキュメントの説明のロード ユニットを作成する方法など、BizTalk Server アプリケーションをテストするために Visual Studio のテスト プロジェクトの使用をテスト、ロード テストを作成する方法に必要なパフォーマンス カウンター データをキャプチャするロード テストを構成する方法BizTalk Server アプリケーションの最大持続可能なスループット (MST) を決定します。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-111">This document desribes the use of Visual Studio Test projects for the purpose of load testing a BizTalk Server application, including how to create unit tests, how to create load tests and how to configure load tests to capture performance counter data required to determine the Maximum Sustainable Throughput (MST) of a BizTalk Server application.</span></span>  
@@ -38,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="6e9d5-126">クリックして展開**テスト ツール** をクリックし、**テスト プロジェクト**新しいテスト プロジェクトを作成するためのオプションを表示します。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-126">Click to expand **Test Tools** and then click **Test Project** to display options for creation of new test projects.</span></span>  
   
-4.  <span data-ttu-id="6e9d5-127">設定、**テスト プロジェクトの既定の言語:**に**Visual c# テスト プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-127">Set the **Default test project language:** to **Visual C# test project**.</span></span>  
+4.  <span data-ttu-id="6e9d5-127">設定、**テスト プロジェクトの既定の言語:** に**Visual c# テスト プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-127">Set the **Default test project language:** to **Visual C# test project**.</span></span>  
   
-5.  <span data-ttu-id="6e9d5-128">オプションを **は既定では、新しいテスト プロジェクトに追加するファイルを選択:**選択**Visual c# テスト プロジェクト**、Visual c# 用のテストの種類のすべてのテストを除くプロジェクトをオフに**単体テスト**です。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-128">Under the option to **Select the files that will be added to each new test project, by default:** select **Visual C# test project**, and uncheck all of the test types for Visual C# test projects except for **Unit Test**.</span></span>  
+5.  <span data-ttu-id="6e9d5-128">オプションを **は既定では、新しいテスト プロジェクトに追加するファイルを選択:** 選択**Visual c# テスト プロジェクト**、Visual c# 用のテストの種類のすべてのテストを除くプロジェクトをオフに**単体テスト**です。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-128">Under the option to **Select the files that will be added to each new test project, by default:** select **Visual C# test project**, and uncheck all of the test types for Visual C# test projects except for **Unit Test**.</span></span>  
   
 6.  <span data-ttu-id="6e9d5-129">**[OK]** をクリックして、 **[オプション]** ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6e9d5-129">Click **OK** to close the **Options** dialog box.</span></span>  
   

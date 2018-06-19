@@ -1,15 +1,15 @@
 ---
-title: "エンタープライズ シングル サインオンの概要 |Microsoft ドキュメント"
-description: "BizTalk Server でメッセージを処理、およびして SSO の SSO チケットを使用して、affilicate アプリケーションについてください。"
-ms.custom: 
+title: エンタープライズ シングル サインオンの概要 |Microsoft ドキュメント
+description: BizTalk Server でメッセージを処理、およびして SSO の SSO チケットを使用して、affilicate アプリケーションについてください。
+ms.custom: ''
 ms.date: 10/11/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2aaab59-8cf7-4848-b71a-e7c8682dd3bd
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5e6ef63416e8885a5ee91bd65618a842b3a0cc54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2017
+ms.locfileid: "23129699"
 ---
 # <a name="enterprise-single-sign-on-overview"></a><span data-ttu-id="d776b-103">エンタープライズ シングル サインオンの概要</span><span class="sxs-lookup"><span data-stu-id="d776b-103">Enterprise Single Sign-On Overview</span></span>
 <span data-ttu-id="d776b-104">数種類のアプリケーションに依存するビジネス プロセスでは、いくつかの異なるセキュリティ ドメインへのアクセスが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d776b-104">A business process that relies on several different applications may have to cross several different security domains.</span></span> <span data-ttu-id="d776b-105">たとえば、Microsoft Windows システムのアプリケーションにアクセスするときには、それに応じたセキュリティ資格情報のセットを使用する必要があり、IBM メインフレームのアプリケーションにアクセスするときには、RACF ユーザー名やパスワードなど、別の資格情報を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d776b-105">Accessing an application on a Microsoft Windows system may require one set of security credentials, while accessing an application on an IBM mainframe may require different credentials, such as an RACF username and password.</span></span> <span data-ttu-id="d776b-106">このような多くの資格情報を操作することはユーザーにとって不便なだけでなく、プロセスの自動化にとって大きな障害となります。</span><span class="sxs-lookup"><span data-stu-id="d776b-106">Dealing with this profusion of credentials is difficult for users, and it can be even harder for automated processes.</span></span> <span data-ttu-id="d776b-107">この問題に対処するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、エンタープライズ シングル サインオンが提供されます。</span><span class="sxs-lookup"><span data-stu-id="d776b-107">To address this problem, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes Enterprise Single Sign-On.</span></span>  

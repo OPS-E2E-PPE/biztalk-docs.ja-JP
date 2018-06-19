@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206458"
 ---
 # <a name="step-15-configure-the-send-and-receive-ports"></a><span data-ttu-id="c36bc-102">手順 15 は、送信を構成し、受信ポート</span><span class="sxs-lookup"><span data-stu-id="c36bc-102">Step 15: Configure the Send and Receive Ports</span></span>
 <span data-ttu-id="c36bc-103">前の手順で作成論理送信および受信ポートをオーケストレーション デザイナーを使用し、「後で」ポートのバインドの設定。</span><span class="sxs-lookup"><span data-stu-id="c36bc-103">In previous steps, you created a logical send and receive port using Orchestration Designer and set the port binding to "Specify Later".</span></span> <span data-ttu-id="c36bc-104">このステップでは、物理的な送信元と送信先の場所を定義して、オーケストレーションで作成した論理ポートを物理ポートをバインドして、ポートの構成を確定するのに BizTalk エクスプ ローラーを使用します。</span><span class="sxs-lookup"><span data-stu-id="c36bc-104">In this step, you use BizTalk Explorer to finalize the port configuration by defining the physical source and destination locations and binding the physical ports to the logical ports that you created in the orchestration.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="c36bc-110">クリックして、**構成**の右側にあるボタン、**型**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="c36bc-110">Click the **Configure** button to the right of the **Type** field.</span></span>  
   
-6.  <span data-ttu-id="c36bc-111">MLLP トランスポートのプロパティ ダイアログ ボックスの**接続名**入力**MLLPConnection**です。</span><span class="sxs-lookup"><span data-stu-id="c36bc-111">In the MLLP Transport Properties dialog box, for **Connection Name** enter **MLLPConnection**.</span></span> <span data-ttu-id="c36bc-112">**ホスト**入力**localhost**です。</span><span class="sxs-lookup"><span data-stu-id="c36bc-112">For **Host** enter **localhost**.</span></span> <span data-ttu-id="c36bc-113">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c36bc-113">Click **OK**.</span></span>  
+6.  <span data-ttu-id="c36bc-111">MLLP トランスポートのプロパティ ダイアログ ボックスの**接続名**入力**MLLPConnection**です。</span><span class="sxs-lookup"><span data-stu-id="c36bc-111">In the MLLP Transport Properties dialog box, for **Connection Name** enter **MLLPConnection**.</span></span> <span data-ttu-id="c36bc-112">**ホスト**入力**localhost**です。</span><span class="sxs-lookup"><span data-stu-id="c36bc-112">For **Host** enter **localhost**.</span></span> <span data-ttu-id="c36bc-113">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c36bc-113">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="c36bc-114">送信ポートのプロパティ ダイアログ ボックスでの**送信パイプライン**を選択**BTAHL72XPipelines.BTAHL72XSendPipeline**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="c36bc-114">In the Send Port Properties dialog box, for **Send pipeline**, select **BTAHL72XPipelines.BTAHL72XSendPipeline**, and then click **OK**.</span></span>  
   

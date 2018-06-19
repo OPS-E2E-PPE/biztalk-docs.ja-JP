@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: 監視の運用の準備 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: 監視の運用の準備 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef77ccc2-1d39-4e78-8fea-5c17d05c8174
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300018"
 ---
 # <a name="checklist-monitoring-operational-readiness"></a><span data-ttu-id="ee670-102">チェックリスト: 監視の運用の準備</span><span class="sxs-lookup"><span data-stu-id="ee670-102">Checklist: Monitoring Operational Readiness</span></span>
 <span data-ttu-id="ee670-103">このトピックは、実稼働環境を監視する際に従う必要のある手順を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="ee670-103">This topic lists the steps that you should follow when monitoring a production [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span>  

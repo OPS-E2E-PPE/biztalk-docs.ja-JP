@@ -1,14 +1,14 @@
 ---
-title: "信頼性を確保 |Microsoft ドキュメント"
-ms.custom: 
+title: 信頼性を確保 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 09cdce13-a75b-44d7-8388-7a868bb51c69
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299650"
 ---
 # <a name="maintaining-reliability"></a><span data-ttu-id="9da40-102">信頼性を維持します。</span><span class="sxs-lookup"><span data-stu-id="9da40-102">Maintaining Reliability</span></span>
 <span data-ttu-id="9da40-103">このセクションで信頼性の問題を解決する方法に関する情報を提供する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。</span><span class="sxs-lookup"><span data-stu-id="9da40-103">This section provides information about how you can resolve reliability issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="9da40-104">実行される定期的なメンテナンス チェックでこれらの問題を検出する可能性があります、[ルーチン メンテナンス チェックリスト](../technical-guides/routine-maintenance-checklists.md)このドキュメントの「します。</span><span class="sxs-lookup"><span data-stu-id="9da40-104">These issues may be discovered by the routine maintenance checks that are performed in the [Routine Maintenance Checklists](../technical-guides/routine-maintenance-checklists.md) section of this document.</span></span>  
@@ -86,7 +87,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-determine-whether-at-least-two-physical-biztalk-servers-are-part-of-the-biztalk-group"></a><span data-ttu-id="9da40-144">2 つの物理 BizTalk サーバーにはを少なくともかどうかを決定するには、BizTalk グループの一部であります。</span><span class="sxs-lookup"><span data-stu-id="9da40-144">To determine whether at least two physical BizTalk servers are part of the BizTalk group</span></span>  
   
-1.  <span data-ttu-id="9da40-145">開いている、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール をクリックして**開始**をポイントして、**すべてのプログラム**をポイントして、 **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**をクリックし、**BizTalk Server 管理**です。</span><span class="sxs-lookup"><span data-stu-id="9da40-145">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console by clicking **Start**, pointing to **All Programs**, pointing to **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**, and then clicking **BizTalk Server Administration**.</span></span>  
+1.  <span data-ttu-id="9da40-145">開いている、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール をクリックして**開始**をポイントして、**すべてのプログラム**をポイントして、 **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** をクリックし、**BizTalk Server 管理**です。</span><span class="sxs-lookup"><span data-stu-id="9da40-145">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console by clicking **Start**, pointing to **All Programs**, pointing to **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**, and then clicking **BizTalk Server Administration**.</span></span>  
   
 2.  <span data-ttu-id="9da40-146">展開、[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]ノード、展開、 **BizTalk グループ**ノードの順に展開し、**プラットフォームの設定**ノード。</span><span class="sxs-lookup"><span data-stu-id="9da40-146">Expand the [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] node, expand the **BizTalk Group** node, and then expand the **Platform Settings** node.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio での Oracle データベースへの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio での Oracle データベースへの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 766264c8-bb3f-49e9-b851-1022d1fa5076
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214730"
 ---
 # <a name="connect-to-oracle-database-in-visual-studio"></a><span data-ttu-id="86624-102">Visual Studio での Oracle データベースへの接続します。</span><span class="sxs-lookup"><span data-stu-id="86624-102">Connect to Oracle Database in Visual Studio</span></span>
 <span data-ttu-id="86624-103">使用する方法、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="86624-103">How to use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], and the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  

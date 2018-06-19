@@ -1,14 +1,14 @@
 ---
-title: "WCF チャネル モデルを使用して Oracle E-business Suite のインターフェイス テーブルに対して挿入操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して Oracle E-business Suite のインターフェイス テーブルに対して挿入操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a2e5ee3-552b-40a2-aaa6-5391347f1146
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216738"
 ---
 # <a name="run-an-insert-operation-on-an-interface-table-in-oracle-e-business-suite-using-the-wcf-channel-model"></a><span data-ttu-id="7fded-102">WCF チャネル モデルを使用して Oracle E-business suite のインターフェイス テーブルに対して挿入操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="7fded-102">Run an insert operation on an interface table in Oracle E-Business Suite using the WCF channel model</span></span>
 <span data-ttu-id="7fded-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite のインターフェイス テーブルに対する Insert、Select、Update、および Delete の操作のセットを検出します。</span><span class="sxs-lookup"><span data-stu-id="7fded-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] discovers a set of Insert, Select, Update, and Delete operations on Oracle E-Business Suite interface tables.</span></span> <span data-ttu-id="7fded-104">これらの操作を使用することができますを実行して単純な Insert、Select、Update、Delete ステートメントで修飾して、Where 句は、対象のインターフェイス テーブルにします。</span><span class="sxs-lookup"><span data-stu-id="7fded-104">By using these operations, you can perform simple Insert, Select, Update, and Delete statements qualified by a Where clause on a target interface table.</span></span> <span data-ttu-id="7fded-105">このトピックでは、WCF チャネル モデルを使用してインターフェイス テーブルに対する挿入操作を実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7fded-105">This topic provides instructions on how to perform an Insert operation on an interface table using the WCF channel model.</span></span>  

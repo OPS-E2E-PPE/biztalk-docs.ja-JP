@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server のログ配布は Windows クラスター名と IP アドレスを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のログ配布は Windows クラスター名と IP アドレスを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82ef6908-6009-4d06-8315-0bc85a0aad18
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300066"
 ---
 # <a name="biztalk-server-log-shipping-using-a-windows-cluster-name-and-ip-address"></a><span data-ttu-id="303e6-102">BizTalk Server のログ配布の Windows クラスター名と IP アドレスを使用して</span><span class="sxs-lookup"><span data-stu-id="303e6-102">BizTalk Server Log Shipping Using a Windows Cluster Name and IP Address</span></span>
 <span data-ttu-id="303e6-103">簡略化することは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の 2 つのインスタンスを使用してログ配布、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]クラスター内の元と移行先サーバーとして、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ配布のシナリオです。</span><span class="sxs-lookup"><span data-stu-id="303e6-103">It is possible to simplify [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] log shipping by using two instances of a [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] cluster as the source and destination servers in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] log shipping scenario.</span></span> <span data-ttu-id="303e6-104">次に、障害復旧イベントが発生した場合データベースの回復が簡略化だけで、名前と、クラスター化されたに関連付けられている IP アドレス リソースを切り替えることによって[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]以下に示すようをインスタンス化します。</span><span class="sxs-lookup"><span data-stu-id="303e6-104">Then, in the event of a disaster recovery event, database recovery is simplified by merely switching the name and IP address resources associated with the clustered [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] instances as described below.</span></span> <span data-ttu-id="303e6-105">このアプローチを使用する場合は、」の説明に従って、UpdateDatabase.vbs スクリプト実行する必要はありません[BizTalk Server のバックアップ ジョブでデータベースを復元する方法](../technical-guides/how-to-restore-databases-in-the-backup-biztalk-server-job.md)のため、データベース名は変更されません。</span><span class="sxs-lookup"><span data-stu-id="303e6-105">When using this approach there is no need to run the UpdateDatabase.vbs script as described in the topic [How to Restore Databases in the Backup BizTalk Server Job](../technical-guides/how-to-restore-databases-in-the-backup-biztalk-server-job.md) because the database name is unchanged.</span></span>  

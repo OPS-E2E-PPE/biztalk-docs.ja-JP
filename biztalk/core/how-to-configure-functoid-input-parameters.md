@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969544"
 ---
 # <a name="how-to-configure-functoid-input-parameters"></a><span data-ttu-id="4c29a-102">Functoid 入力パラメーターを構成する方法</span><span class="sxs-lookup"><span data-stu-id="4c29a-102">How to Configure Functoid Input Parameters</span></span>
 <span data-ttu-id="4c29a-103">マップ内の Functoid に対する入力パラメーターを適切に構成する操作は、最も重要な操作の 1 つです。ただし、Functoid を使用する際にエラーが発生する可能性があるので注意して行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c29a-103">Properly configuring the input parameters to the functoids in your map is one of the most important, and potentially error-prone, aspects of using functoids.</span></span> <span data-ttu-id="4c29a-104">Functoid の入力パラメーターは次のように構成できます。</span><span class="sxs-lookup"><span data-stu-id="4c29a-104">You can configure the functoid input parameters as follows:</span></span>  
@@ -138,7 +139,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="4c29a-180">この方法を使用して、入力パラメーター (入力リンクに対応するパラメーターを含む) を削除できます。</span><span class="sxs-lookup"><span data-stu-id="4c29a-180">You can delete any input parameter using this technique, even those that correspond to an input link.</span></span>  
   
-2.  <span data-ttu-id="4c29a-181">クリックして、![選択項目の削除](../core/media/delete-button.gif "Delete_button")ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c29a-181">Click the ![Deleting the selection](../core/media/delete-button.gif "Delete_button") button.</span></span> <span data-ttu-id="4c29a-182">選択した既存の入力パラメーターが、パラメーター一覧から削除されます。</span><span class="sxs-lookup"><span data-stu-id="4c29a-182">The selected existing input parameter is deleted from the parameter list.</span></span> <span data-ttu-id="4c29a-183">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c29a-183">Click **OK**.</span></span>  
+2.  <span data-ttu-id="4c29a-181">クリックして、![選択項目の削除](../core/media/delete-button.gif "Delete_button")ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c29a-181">Click the ![Deleting the selection](../core/media/delete-button.gif "Delete_button") button.</span></span> <span data-ttu-id="4c29a-182">選択した既存の入力パラメーターが、パラメーター一覧から削除されます。</span><span class="sxs-lookup"><span data-stu-id="4c29a-182">The selected existing input parameter is deleted from the parameter list.</span></span> <span data-ttu-id="4c29a-183">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c29a-183">Click **OK**.</span></span>  
   
      <span data-ttu-id="4c29a-184">または、削除する行を選択して、キーボードの Del キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4c29a-184">Alternatively, you can select the row you want to delete, and press the DELETE key from the keyboard.</span></span>  
   

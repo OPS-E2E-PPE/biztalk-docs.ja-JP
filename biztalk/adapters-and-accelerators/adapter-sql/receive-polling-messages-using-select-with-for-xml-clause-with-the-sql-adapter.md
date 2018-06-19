@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL から FOR XML 句で SELECT ステートメントを使用してポーリング メッセージを受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL から FOR XML 句で SELECT ステートメントを使用してポーリング メッセージを受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65c629c1-9ef7-4aa1-8ec1-f94a3cb41cb0
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967704"
 ---
 # <a name="receive-polling-messages-using-select-statements-with-for-xml-clause-from-sql-using-biztalk-server"></a><span data-ttu-id="4bd7d-102">BizTalk Server を使用して SQL から FOR XML 句で SELECT ステートメントを使用してポーリング メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-102">Receive polling messages using SELECT statements with FOR XML Clause from SQL using BizTalk Server</span></span>
 <span data-ttu-id="4bd7d-103">構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SELECT ステートメントまたは FOR XML 句を含むストアド プロシージャを使用して SQL Server のテーブルまたはビューのデータの定期的な変更メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-103">You can configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive periodic data-change messages for SQL Server tables or views by using SELECT statements or stored procedures that include a FOR XML clause.</span></span> <span data-ttu-id="4bd7d-104">これらのステートメントは、データベースをポーリングするアダプターを実行するポーリング ステートメントとして指定できます。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-104">You can specify these statements as polling statement that the adapter executes to poll the database.</span></span> <span data-ttu-id="4bd7d-105">ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-105">The polling statement can be a SELECT statement or a stored procedure that returns a result set.</span></span>  
@@ -86,7 +87,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
   
          <span data-ttu-id="4bd7d-160">これを行う sqltypes.xsd スキーマは、BizTalk プロジェクトに既に追加されたためです。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-160">You do this because you have already added the sqltypes.xsd schema to your BizTalk project.</span></span>  
   
-    4.  <span data-ttu-id="4bd7d-161">スキーマのターゲット名前空間を指定します。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-161">Provide a target namespace for the schema.</span></span> <span data-ttu-id="4bd7d-162">クリックして、 **\<スキーマ\>**ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-162">Click the **\<Schema\>** node, and in the properties pane, specify a namespace in the **Target Namespace** property.</span></span> <span data-ttu-id="4bd7d-163">このトピックの付与と名前空間`http://ForXmlPolling/namespace`です。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-163">For this topic, give the namespace as `http://ForXmlPolling/namespace`.</span></span>  
+    4.  <span data-ttu-id="4bd7d-161">スキーマのターゲット名前空間を指定します。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-161">Provide a target namespace for the schema.</span></span> <span data-ttu-id="4bd7d-162">クリックして、 **\<スキーマ\>** ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-162">Click the **\<Schema\>** node, and in the properties pane, specify a namespace in the **Target Namespace** property.</span></span> <span data-ttu-id="4bd7d-163">このトピックの付与と名前空間`http://ForXmlPolling/namespace`です。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-163">For this topic, give the namespace as `http://ForXmlPolling/namespace`.</span></span>  
   
 ## <a name="defining-messages-and-message-types"></a><span data-ttu-id="4bd7d-164">メッセージとメッセージの種類を定義します。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-164">Defining Messages and Message Types</span></span>  
  <span data-ttu-id="4bd7d-165">以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-165">The schema that you generated earlier describes the "types" required for the messages in the orchestration.</span></span> <span data-ttu-id="4bd7d-166">メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-166">A message is typically a variable, the type for which is defined by the corresponding schema.</span></span> <span data-ttu-id="4bd7d-167">スキーマが生成されるは、BizTalk プロジェクトのオーケストレーションの種類からのメッセージをリンクする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bd7d-167">Once the schema is generated, you must link it to the messages from the Orchestration view of the BizTalk project.</span></span>  

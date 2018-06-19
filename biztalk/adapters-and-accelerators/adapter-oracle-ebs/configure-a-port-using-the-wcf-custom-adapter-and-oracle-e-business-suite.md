@@ -1,15 +1,15 @@
 ---
-title: "Biztalk wcf-custom アダプターおよび Oracle E-business Suite を使用してポートの構成 |Microsoft ドキュメント"
-description: "BizTalk Server で Oracle EBS からメッセージを送信または受信する Wcf-custom アダプターを使用します。"
-ms.custom: 
+title: Biztalk wcf-custom アダプターおよび Oracle E-business Suite を使用してポートの構成 |Microsoft ドキュメント
+description: BizTalk Server で Oracle EBS からメッセージを送信または受信する Wcf-custom アダプターを使用します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83d0bb00-934c-40cf-8833-354e7ce7e927
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218370"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-e-business-suite"></a><span data-ttu-id="cf30f-103">Wcf-custom アダプターおよび Oracle E-business Suite を使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-103">Configure a port using the WCF-custom adapter and Oracle E-Business Suite</span></span>
 <span data-ttu-id="cf30f-104">Wcf-custom 送信を構成して受信ポートで Oracle E-business Suite を使用して送信および受信操作を実行する方法、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-104">How to configure WCF-Custom send and receive ports to perform outbound and inbound operations on Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="cf30f-116">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-116">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="cf30f-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、for Oracle E-business Suite 接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="cf30f-118">接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-118">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="cf30f-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、for Oracle E-business Suite 接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="cf30f-118">接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-118">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="cf30f-119">**全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-119">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="cf30f-120">参照してください[メッセージと Oracle EBS アダプターのメッセージ スキーマを](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)) の各操作のアクションのリスト。</span><span class="sxs-lookup"><span data-stu-id="cf30f-120">See [Messages and Message Schemas for Oracle EBS adapter](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)) for a list of actions for each operation.</span></span> <span data-ttu-id="cf30f-121">たとえば、資産のアプリケーション インターフェイス テーブル (FA_BOOKS) に対する挿入操作を呼び出すアクションは。</span><span class="sxs-lookup"><span data-stu-id="cf30f-121">For example, the action to invoke the Insert operation on an interface table (FA_BOOKS) under the Asset application is:</span></span>  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="cf30f-146">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-146">From the **Receive pipeline** drop-down list, select the pipeline that corresponds to XMLReceive.</span></span>  
   
-11. <span data-ttu-id="cf30f-147">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cf30f-147">Click **OK**.</span></span>  
+11. <span data-ttu-id="cf30f-147">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cf30f-147">Click **OK**.</span></span>  
   
 ## <a name="deploy-adapters-to-receive-messages-from-oracle-ebs"></a><span data-ttu-id="cf30f-148">Oracle EBS からメッセージを受信アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-148">Deploy adapters to receive messages from Oracle EBS</span></span> 
  <span data-ttu-id="cf30f-149">次の実行 Wcf-custom を構成する手順の受信ポートから Oracle E-business Suite を使用してメッセージを受信するため、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="cf30f-149">Perform the following steps to configure a WCF-Custom receive port for receiving messages from Oracle E-Business Suite using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -102,7 +103,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="cf30f-160">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-160">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="cf30f-161">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、for Oracle E-business Suite 接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-161">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="cf30f-162">接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-162">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="cf30f-161">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、for Oracle E-business Suite 接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="cf30f-161">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="cf30f-162">接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-162">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="cf30f-163">クリックして、**バインド** タブとの間、**バインディングの種類**ドロップダウン リストで、 **oracleEBSBinding**です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-163">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **oracleEBSBinding**.</span></span> <span data-ttu-id="cf30f-164">によって公開されている別のバインディング プロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-164">You can specify the different binding properties exposed by the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span> <span data-ttu-id="cf30f-165">バインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Oracle E-business Suite バインド プロパティ読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="cf30f-165">For more information about binding properties, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span>  
   

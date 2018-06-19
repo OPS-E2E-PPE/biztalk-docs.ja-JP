@@ -1,15 +1,15 @@
 ---
-title: "BizTalk の Wcf-oracledb アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "Wcf-oracledb 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート"
-ms.custom: 
+title: BizTalk の Wcf-oracledb アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: Wcf-oracledb 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9eafefb-9b30-4801-9be9-6034ae0d3b7d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215874"
 ---
 # <a name="configure-a-port-using-the-wcf-oracledb-adapter"></a><span data-ttu-id="53fc7-103">Wcf-oracledb アダプターを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="53fc7-103">Configure a port using the WCF-OracleDB adapter</span></span>
 <span data-ttu-id="53fc7-104">Wcf-oracledb を構成する方法は、送信し、受信ポートを使用して Oracle データベースの送信および受信操作を実行する、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="53fc7-104">How to configure WCF-OracleDB send and receive ports to perform outbound and inbound operations on the Oracle database using the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].</span></span>  
@@ -78,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="53fc7-138">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="53fc7-138">From the **Receive pipeline** drop-down list, select the pipeline that corresponds to XMLReceive.</span></span>  
   
-12. <span data-ttu-id="53fc7-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fc7-139">Click **OK**.</span></span>  
+12. <span data-ttu-id="53fc7-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fc7-139">Click **OK**.</span></span>  
   
 ## <a name="deploy-adapters-to-receive-messages-from-oracle-database"></a><span data-ttu-id="53fc7-140">Oracle データベースからメッセージを受信アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="53fc7-140">Deploy adapters to receive messages from Oracle Database</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL のクエリ通知した後、受信場所の内訳が表示される |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL のクエリ通知した後、受信場所の内訳が表示される |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e70fa4c2-d81b-4eb0-a23d-871b64c881e6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223018"
 ---
 # <a name="receive-query-notifications-after-a-receive-location-breakdown-in-sql-using-biztalk-server"></a><span data-ttu-id="10ef2-102">BizTalk Server を使用して SQL のクエリ通知した後、受信場所の内訳が表示されます。</span><span class="sxs-lookup"><span data-stu-id="10ef2-102">Receive query notifications After a Receive Location Breakdown in SQL using BizTalk Server</span></span>
 <span data-ttu-id="10ef2-103">EMPLOYEE テーブルに変更が加えられたときに、データベース変更の通知メッセージを受信する BizTalk アプリケーションが存在するシナリオを検討してください。</span><span class="sxs-lookup"><span data-stu-id="10ef2-103">Consider a scenario where you have a BizTalk application that receives database change notification messages when changes are made to the EMPLOYEE table.</span></span> <span data-ttu-id="10ef2-104">一部として、受信場所が構成されている場合、BizTalk アプリケーションが分割すると、同時に EMPLOYEE テーブルにレコードが追加される、最近追加されたレコードの通知を受け取ることはできません。</span><span class="sxs-lookup"><span data-stu-id="10ef2-104">If the receive location configured as part of the BizTalk application breaks down, and simultaneously records are added into the EMPLOYEE table, you will not receive notifications for the recently added records.</span></span> <span data-ttu-id="10ef2-105">わからない場合、受信場所が再び使用可能。</span><span class="sxs-lookup"><span data-stu-id="10ef2-105">You will also not know when the receive location is available again.</span></span> <span data-ttu-id="10ef2-106">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]バインド プロパティを公開**NotifyOnListenerStart**、されるを取得する通知が受信場所の回復を構成することができます。</span><span class="sxs-lookup"><span data-stu-id="10ef2-106">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] exposes a binding property, **NotifyOnListenerStart**, that you can configure to get a notification that the receive location has recovered.</span></span> <span data-ttu-id="10ef2-107">次の値を指定することができます、 **NotifyOnListenerStart**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="10ef2-107">You can specify the following values for the **NotifyOnListenerStart** binding property:</span></span>  

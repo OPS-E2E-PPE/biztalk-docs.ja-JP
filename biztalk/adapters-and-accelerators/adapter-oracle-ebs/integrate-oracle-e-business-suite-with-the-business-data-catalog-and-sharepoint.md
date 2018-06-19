@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite とビジネス データ カタログと SharePoint 統合 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite とビジネス データ カタログと SharePoint 統合 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 311f605d-78b4-41a0-b231-1a00a879f637
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216066"
 ---
 # <a name="integrate-oracle-e-business-suite-with-the-business-data-catalog-and-sharepoint"></a><span data-ttu-id="4e3d2-102">Oracle E-business Suite とビジネス データ カタログと SharePoint 統合します。</span><span class="sxs-lookup"><span data-stu-id="4e3d2-102">Integrate Oracle E-Business Suite with the business data catalog and SharePoint</span></span>
 <span data-ttu-id="4e3d2-103">[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]が含まれています、 [!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]、特定の LOB アーティファクトを WCF サービスが生成されます。</span><span class="sxs-lookup"><span data-stu-id="4e3d2-103">The [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] includes the [!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)], which generates a WCF service for specific LOB artifacts.</span></span> <span data-ttu-id="4e3d2-104">この WCF サービスは、Microsoft インターネット インフォメーション サービス (IIS) などのホスト環境でホストされます。</span><span class="sxs-lookup"><span data-stu-id="4e3d2-104">This WCF service is hosted in a hosting environment such as Microsoft Internet Information Services (IIS).</span></span> <span data-ttu-id="4e3d2-105">ビジネス データ カタログ定義エディターは、WCF サービスの Web サービス記述言語 (WSDL) を取得する WCF サービスがホストされている URL を使用します。</span><span class="sxs-lookup"><span data-stu-id="4e3d2-105">The Business Data Catalog Definition Editor uses the URL where the WCF service is hosted to get the Web Services Description Language (WSDL) for the WCF service.</span></span> <span data-ttu-id="4e3d2-106">WSDL を使用して、ビジネス データ カタログ定義エディターは、WCF サービスが使用できるメソッドを抽出します。</span><span class="sxs-lookup"><span data-stu-id="4e3d2-106">Using the WSDL, the Business Data Catalog Definition Editor extracts the methods available to the WCF service.</span></span> <span data-ttu-id="4e3d2-107">これらのメソッドは、エンティティとエンティティ間の関連付けを確立するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="4e3d2-107">These methods can be used to establish entities and the association between the entities.</span></span>  

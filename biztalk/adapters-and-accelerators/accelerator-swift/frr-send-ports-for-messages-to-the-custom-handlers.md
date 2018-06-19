@@ -1,11 +1,11 @@
 ---
-title: "カスタム ハンドラーへのメッセージの送信ポートを FRR |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム ハンドラーへのメッセージの送信ポートを FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, send ports
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - send ports, FRR
 - send ports, custom handlers
 ms.assetid: 486d7410-fde1-4a9b-a9c2-64c1ed85ebc0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207834"
 ---
 # <a name="frr-send-ports-for-messages-to-the-custom-handlers"></a><span data-ttu-id="a20d4-102">カスタム ハンドラーへのメッセージの送信ポートを FRR</span><span class="sxs-lookup"><span data-stu-id="a20d4-102">FRR Send Ports for Messages to the Custom Handlers</span></span>
 <span data-ttu-id="a20d4-103">FRR でカスタム ハンドラーを有効にするのには、特定の型の元のメッセージのコピーをカスタム ハンドラーにルーティングする一連の FRR 送信ポートを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a20d4-103">To enable custom handlers for FRR, you must create a series of FRR send ports, each one of which routes a copy of an original message of a certain type to the custom handlers.</span></span> <span data-ttu-id="a20d4-104">これらの送信ポートには次のパイプライン コンポーネントが必要です。</span><span class="sxs-lookup"><span data-stu-id="a20d4-104">These send ports must have the following pipeline components:</span></span>  

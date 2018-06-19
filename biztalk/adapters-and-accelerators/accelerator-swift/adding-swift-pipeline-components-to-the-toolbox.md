@@ -1,17 +1,17 @@
 ---
-title: "SWIFT パイプライン コンポーネントをツールボックスに追加する |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT パイプライン コンポーネントをツールボックスに追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - toolbox, adding pipelines
 - pipelines, adding to toolbox
 ms.assetid: 3821c10e-ef9b-4657-b934-cff6d096f654
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208930"
 ---
 # <a name="adding-swift-pipeline-components-to-the-toolbox"></a><span data-ttu-id="4905b-102">SWIFT パイプライン コンポーネントをツールボックスに追加します。</span><span class="sxs-lookup"><span data-stu-id="4905b-102">Adding SWIFT Pipeline Components to the Toolbox</span></span>
 <span data-ttu-id="4905b-103">SWIFT パイプライン コンポーネントを追加する必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ツールボックス、これらのコンポーネントを使用してカスタム パイプラインを作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4905b-103">You must add the SWIFT pipeline components to the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Toolbox, so that you can create custom pipelines using these components.</span></span> <span data-ttu-id="4905b-104">これは、Message Repair および New Submission または FIN 対応調整のいずれかのパイプラインを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4905b-104">This is required to create pipelines for either Message Repair and New Submission or FIN Response Reconciliation.</span></span>  
@@ -44,4 +45,4 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="4905b-114">**ツールボックス アイテムの選択** ダイアログ ボックスで、 **BizTalk パイプライン コンポーネント** タブで  **SWIFT アセンブラー**と**SWIFT 逆アセンブラー**.</span><span class="sxs-lookup"><span data-stu-id="4905b-114">In the **Choose Toolbox Items** dialog box, on the **BizTalk Pipeline Components** tab, select **SWIFT Assembler** and **SWIFT Disassembler**.</span></span> <span data-ttu-id="4905b-115">FIN 対応調整を使用する場合は、選択**SWIFT Frr 相関関係設定の競合回避モジュール**、 **SWIFT Frr MQSeries デコーダー**、および**SWIFT Frr MQSeries の送信コンポーネント**です。</span><span class="sxs-lookup"><span data-stu-id="4905b-115">If you will be using FIN Response Reconciliation, select **SWIFT Frr Correlation Set Resolver**, **SWIFT Frr MQSeries Decoder**, and **SWIFT Frr MQSeries Send Component**.</span></span>  
   
-3.  <span data-ttu-id="4905b-116">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4905b-116">Click **OK**.</span></span>
+3.  <span data-ttu-id="4905b-116">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4905b-116">Click **OK**.</span></span>

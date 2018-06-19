@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: d3460b45507c7cb73bb4025a8412a1fcc6cb0e59
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013857"
 ---
 # <a name="how-to-set-jd-edwards-oneworld-pipelines"></a><span data-ttu-id="88b08-101">JD Edwards OneWorld パイプラインの設定方法</span><span class="sxs-lookup"><span data-stu-id="88b08-101">How to Set JD Edwards OneWorld Pipelines</span></span>
 <span data-ttu-id="88b08-102">Microsoft BizTalk Adapter for JD Edwards OneWorld では、送信パイプラインと受信パイプラインについてそれぞれ、XMLTransmit および XMLReceive を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88b08-102">Microsoft BizTalk Adapter for JD Edwards OneWorld requires that you select XMLTransmit and XMLReceive for the send and receive pipelines respectively.</span></span>  
@@ -25,5 +26,5 @@ ms.lasthandoff: 11/07/2017
   
     2.  <span data-ttu-id="88b08-110">受信パイプラインを選択、**受信パイプライン**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="88b08-110">Select the Receive pipeline from the **Receive Pipeline** drop-down list.</span></span>  
   
-5.  <span data-ttu-id="88b08-111">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="88b08-111">Click **OK**.</span></span>  
+5.  <span data-ttu-id="88b08-111">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="88b08-111">Click **OK**.</span></span>  
   

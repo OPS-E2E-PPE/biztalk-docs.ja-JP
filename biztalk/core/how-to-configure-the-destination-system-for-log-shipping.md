@@ -1,11 +1,11 @@
 ---
-title: "ログ配布用に送信先システムを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ログ配布用に送信先システムを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2015-12-03
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, log shipping
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - system failures, backing up
 - backing up, system failures
 ms.assetid: 7b4425f5-b105-4fb2-a503-94ca1e75ad55
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969496"
 ---
 # <a name="how-to-configure-the-destination-system-for-log-shipping"></a><span data-ttu-id="b2203-102">ログ配布用に送信先システムを構成する方法</span><span class="sxs-lookup"><span data-stu-id="b2203-102">How to Configure the Destination System for Log Shipping</span></span>
 <span data-ttu-id="b2203-103">ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。</span><span class="sxs-lookup"><span data-stu-id="b2203-103">Log shipping provides standby server capabilities to reduce downtime in the event of a system failure.</span></span> <span data-ttu-id="b2203-104">ログ配布を使用すると、送信元システムのトランザクション ログを送信先システムに自動的に送信できます。</span><span class="sxs-lookup"><span data-stu-id="b2203-104">Log shipping allows you to automatically send transaction logs from the source system to the destination system.</span></span> <span data-ttu-id="b2203-105">送信先システムは、トランザクション ログを復元する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースです。 ソース データベースと密接に同期を維持します。</span><span class="sxs-lookup"><span data-stu-id="b2203-105">At the destination system, the transaction logs are restored to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases; keeping them closely synchronized with the source databases.</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="b2203-132">そうしたら：</span><span class="sxs-lookup"><span data-stu-id="b2203-132">Then:</span></span>  
   
-    1.  <span data-ttu-id="b2203-133">送信先システムで有効にする **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)**です。</span><span class="sxs-lookup"><span data-stu-id="b2203-133">On the destination system, enable **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)**.</span></span>  
+    1.  <span data-ttu-id="b2203-133">送信先システムで有効にする **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)** です。</span><span class="sxs-lookup"><span data-stu-id="b2203-133">On the destination system, enable **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)**.</span></span>  
   
     2.  <span data-ttu-id="b2203-134">クエリ ウィンドウで、置き換える *\<MyLogShippingSolution\>* わかりやすい記述には、単一引用符で囲みます。</span><span class="sxs-lookup"><span data-stu-id="b2203-134">In the query window, replace *\<MyLogShippingSolution\>* with a meaningful description, surrounded by single quotes.</span></span>  
   
@@ -125,9 +126,9 @@ ms.lasthandoff: 11/28/2017
   
 11. <span data-ttu-id="b2203-161">右クリック**SampleUpdateInfo.xml**を選択して**編集**です。</span><span class="sxs-lookup"><span data-stu-id="b2203-161">Right-click **SampleUpdateInfo.xml**, and select **Edit**.</span></span> <span data-ttu-id="b2203-162">次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="b2203-162">Do the following:</span></span>  
   
-    -   <span data-ttu-id="b2203-163">すべてのインスタンスを置き換える**"SourceServer"**ソース システムの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="b2203-163">Replace all instances of **"SourceServer"** with the name of the source system.</span></span>  
+    -   <span data-ttu-id="b2203-163">すべてのインスタンスを置き換える **"SourceServer"** ソース システムの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="b2203-163">Replace all instances of **"SourceServer"** with the name of the source system.</span></span>  
   
-    -   <span data-ttu-id="b2203-164">すべてのインスタンスを置き換える**"DestinationServer"**送信先システムの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="b2203-164">Replace all instances of **"DestinationServer"** with the name of the destination system.</span></span>  
+    -   <span data-ttu-id="b2203-164">すべてのインスタンスを置き換える **"DestinationServer"** 送信先システムの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="b2203-164">Replace all instances of **"DestinationServer"** with the name of the destination system.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="b2203-165">送信元システムおよび送信先システムの名前は、引用符で囲んでください。</span><span class="sxs-lookup"><span data-stu-id="b2203-165">Include the quotation marks around the name of the source and destination systems.</span></span>  
@@ -142,7 +143,7 @@ ms.lasthandoff: 11/28/2017
     >   
     >  <span data-ttu-id="b2203-168">これら 2 つのデータベースの既定の名前を変更した場合は、実際のデータベース名を使用してください。</span><span class="sxs-lookup"><span data-stu-id="b2203-168">If you changed the default name for these two databases, please use the actual database names.</span></span>  
   
-12. <span data-ttu-id="b2203-169">1 つ以上のメッセージ ボックス データベースがある場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムが一覧に別の MessageBoxDB 行を追加し、設定**IsMaster =「0」**マスター以外のデータベースにします。</span><span class="sxs-lookup"><span data-stu-id="b2203-169">If you have more than one MessageBox database in your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system, add another MessageBoxDB line to the list, and then set **IsMaster="0"** for the non-master databases.</span></span>  
+12. <span data-ttu-id="b2203-169">1 つ以上のメッセージ ボックス データベースがある場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムが一覧に別の MessageBoxDB 行を追加し、設定**IsMaster =「0」** マスター以外のデータベースにします。</span><span class="sxs-lookup"><span data-stu-id="b2203-169">If you have more than one MessageBox database in your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system, add another MessageBoxDB line to the list, and then set **IsMaster="0"** for the non-master databases.</span></span>  
   
 13. <span data-ttu-id="b2203-170">BAM またはルール エンジンを使用する場合は、必要に応じてこれらの行をコメント解除してください。</span><span class="sxs-lookup"><span data-stu-id="b2203-170">If you are using BAM or the Rules Engine, uncomment these lines as appropriate.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "HL7 メッセージで SFT |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 メッセージで SFT |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d5bf3ac5-8197-4ea3-ace8-ff59ac32313c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206170"
 ---
 # <a name="sft-in-hl7-messages"></a><span data-ttu-id="44eac-102">HL7 メッセージで SFT</span><span class="sxs-lookup"><span data-stu-id="44eac-102">SFT in HL7 Messages</span></span>
 [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]<span data-ttu-id="44eac-103">メッセージへのソフトウェアのセグメント (SFT) の追加をサポートします。</span><span class="sxs-lookup"><span data-stu-id="44eac-103"> supports adding software segments (SFT) to messages.</span></span> <span data-ttu-id="44eac-104">SFT セグメントは、送信元アプリケーションとして使用されるソフトウェア製品に関する追加情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="44eac-104">SFT segments provide additional information about the software products used as sending applications.</span></span> <span data-ttu-id="44eac-105">SFT セグメントは、主な診断に使用します。</span><span class="sxs-lookup"><span data-stu-id="44eac-105">SFT segments are primarily used for diagnostics.</span></span> <span data-ttu-id="44eac-106">、標準 HL7 v2.5 の一部として SFT セグメントは、アプリケーションの受信確認で表示されます。</span><span class="sxs-lookup"><span data-stu-id="44eac-106">As a part of the HL7 v2.5 standard, SFT segments are displayed in the application acknowledgement.</span></span>  

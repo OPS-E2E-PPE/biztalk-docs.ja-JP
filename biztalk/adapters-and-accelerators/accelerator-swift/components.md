@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210514"
 ---
 # <a name="components"></a><span data-ttu-id="68789-102">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="68789-102">Components</span></span>
 <span data-ttu-id="68789-103">使用する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]リレーションシップ、エンタープライズ アプリケーション統合 (EAI) とアプリケーション、およびビジネス ワークフローの自動化 パートナー取引を容易に SWIFT 指向のミドルウェア ソリューションを実装するコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="68789-103">You use [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] components to implement SWIFT-centric middleware solutions that facilitate trading partner relationships, enterprise application integration (EAI), and application and business workflow automation.</span></span> <span data-ttu-id="68789-104">たとえば、次のようなコンポーネントがあります。</span><span class="sxs-lookup"><span data-stu-id="68789-104">These components include:</span></span>  

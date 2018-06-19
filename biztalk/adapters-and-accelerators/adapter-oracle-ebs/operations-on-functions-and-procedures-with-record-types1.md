@@ -1,14 +1,14 @@
 ---
-title: "関数名とレコード Types1 プロシージャに対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 関数名とレコード Types1 プロシージャに対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: afc1c84f-2e36-493c-9ea8-4bc2248331db
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216082"
 ---
 # <a name="operations-on-functions-and-procedures-with-record-types"></a><span data-ttu-id="11e14-102">関数およびレコードの種類のプロシージャでの操作</span><span class="sxs-lookup"><span data-stu-id="11e14-102">Operations on Functions and Procedures with RECORD Types</span></span>
 <span data-ttu-id="11e14-103">Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="11e14-103">Oracle RECORD types are used to represent hierarchical information in parameters passed to PL/SQL functions and procedures.</span></span> <span data-ttu-id="11e14-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]複雑な XML 型としてレコードの種類を表示します。</span><span class="sxs-lookup"><span data-stu-id="11e14-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces RECORD types as complex XML types.</span></span> 

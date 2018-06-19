@@ -1,17 +1,17 @@
 ---
-title: "バックエンド アプリケーションからの受信メッセージの場所を FRR |Microsoft ドキュメント"
-ms.custom: 
+title: バックエンド アプリケーションからの受信メッセージの場所を FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, receive locations
 - receive locations, FRR
 ms.assetid: da0ad616-800f-493f-822f-eca1224722ab
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207538"
 ---
 # <a name="frr-receive-location-for-messages-from-the-back-end-application"></a><span data-ttu-id="2e7cc-102">FRR は、バックエンド アプリケーションからのメッセージの場所を受信します。</span><span class="sxs-lookup"><span data-stu-id="2e7cc-102">FRR Receive Location for Messages from the Back-End Application</span></span>
 <span data-ttu-id="2e7cc-103">FIN 対応調整 (FRR) を有効にするのには、FRR を設定する必要があります受信場所をバックエンド アプリケーションからメッセージを受信し、それを FRR オーケストレーションによって消費の BizTalk メッセージ ボックスにルーティングします。</span><span class="sxs-lookup"><span data-stu-id="2e7cc-103">To enable FIN response reconciliation (FRR), you must set up an FRR receive location that receives messages from the back-end application and routes them to the BizTalk MessageBox for consumption by the FRR orchestration.</span></span> <span data-ttu-id="2e7cc-104">受信場所には、次のパイプライン コンポーネントで作成する必要がありますカスタム FRR 受信パイプラインでメッセージがルーティングします。</span><span class="sxs-lookup"><span data-stu-id="2e7cc-104">The receive location routes a message through a custom FRR receive pipeline that you must create with the following pipeline components:</span></span>  

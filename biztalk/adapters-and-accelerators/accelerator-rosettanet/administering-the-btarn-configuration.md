@@ -1,17 +1,17 @@
 ---
-title: "BTARN 構成の管理 |Microsoft ドキュメント"
-ms.custom: 
+title: BTARN 構成の管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Accelerator for RosettaNet, administering
 - administering
 ms.assetid: 8db2851e-6aaf-49d9-a3f0-dee187595c01
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206770"
 ---
 # <a name="administering-the-btarn-configuration"></a><span data-ttu-id="bc50d-102">BTARN 構成の管理</span><span class="sxs-lookup"><span data-stu-id="bc50d-102">Administering the BTARN Configuration</span></span>
 <span data-ttu-id="bc50d-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールでは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成のあらゆる要素を 1 つのユーザー インターフェイスで管理できます。</span><span class="sxs-lookup"><span data-stu-id="bc50d-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console lets you administer all facets of the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration from one user interface.</span></span> <span data-ttu-id="bc50d-104">[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成には、プロセス構成、ホーム組織、パートナー、および取引先アグリーメントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="bc50d-104">The [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration includes process configurations, home organizations, partners, and trading partner agreements.</span></span> <span data-ttu-id="bc50d-105">[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールで、管理することも、証明書のインスタンスの管理[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™ イベントを表示し、パフォーマンスの表示、ログと警告します。</span><span class="sxs-lookup"><span data-stu-id="bc50d-105">From the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Management Console, you can also manage certificates, administer instances of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™, view events, and view performance logs and alerts.</span></span>  

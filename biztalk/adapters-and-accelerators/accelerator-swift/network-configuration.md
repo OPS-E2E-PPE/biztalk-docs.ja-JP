@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214426"
 ---
 # <a name="network-configuration"></a><span data-ttu-id="cebc1-102">ネットワークの構成</span><span class="sxs-lookup"><span data-stu-id="cebc1-102">Network Configuration</span></span>
 <span data-ttu-id="cebc1-103">このセクションでは、展開でネットワークを構成するための規範的なガイダンスを提供します。</span><span class="sxs-lookup"><span data-stu-id="cebc1-103">This section provides prescriptive guidance for configuring the network in your deployment.</span></span> <span data-ttu-id="cebc1-104">詳細については、次を参照してください。[の展開の準備](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="cebc1-104">For more information, see [Preparing for Deployment](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md).</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "送信パイプラインの作成、FRR |Microsoft ドキュメント"
-ms.custom: 
+title: 送信パイプラインの作成、FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, creating send pipelines
 - creating, send pipelines
 - send pipelines, creating
 ms.assetid: c6cd2047-ea53-425f-80cc-b02a1deb5292
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209458"
 ---
 # <a name="creating-the-frr-send-pipeline"></a><span data-ttu-id="cd712-102">FRR 送信パイプラインを作成します。</span><span class="sxs-lookup"><span data-stu-id="cd712-102">Creating the FRR Send Pipeline</span></span>
 <span data-ttu-id="cd712-103">FIN 対応調整を実行するには、SWIFT アセンブラーだけでなく、SWIFTAsmFrrMQSeriesHelper パイプライン コンポーネントを含む送信パイプラインを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd712-103">To perform FIN Response Reconciliation, you need to create a send pipeline that contains the SWIFTAsmFrrMQSeriesHelper pipeline component, in addition to the SWIFT assembler.</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="cd712-114">[新しい項目の追加] ダイアログ ボックスで選択**送信パイプライン**[テンプレート] ペインからです。</span><span class="sxs-lookup"><span data-stu-id="cd712-114">In the Add New Item dialog box, select **Send Pipeline** from the Templates pane.</span></span>  
   
-3.  <span data-ttu-id="cd712-115">**名前**ボックスで、受信パイプラインの名前を入力します。 **FRRSendPipeline.btp**です。</span><span class="sxs-lookup"><span data-stu-id="cd712-115">In the **Name** box, type a name for your receive pipeline, such as **FRRSendPipeline.btp**.</span></span> <span data-ttu-id="cd712-116">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd712-116">Click **Add**.</span></span>  
+3.  <span data-ttu-id="cd712-115">**名前**ボックスで、受信パイプラインの名前を入力します。 **FRRSendPipeline.btp**です。</span><span class="sxs-lookup"><span data-stu-id="cd712-115">In the **Name** box, type a name for your receive pipeline, such as **FRRSendPipeline.btp**.</span></span> <span data-ttu-id="cd712-116">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd712-116">Click **Add**.</span></span>  
   
 4.  <span data-ttu-id="cd712-117">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ビュー**し**ツールボックス**です。</span><span class="sxs-lookup"><span data-stu-id="cd712-117">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], click **View** and then **Toolbox**.</span></span>  
   

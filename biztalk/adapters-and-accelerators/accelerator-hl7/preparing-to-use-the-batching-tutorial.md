@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206042"
 ---
 # <a name="preparing-to-use-the-batching-tutorial"></a><span data-ttu-id="fa8b1-102">バッチ処理のチュートリアルを使用する準備をしています</span><span class="sxs-lookup"><span data-stu-id="fa8b1-102">Preparing to Use the Batching Tutorial</span></span>
 <span data-ttu-id="fa8b1-103">バッチ処理のチュートリアルを使用することができます、前に、このセクションのタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fa8b1-103">Before you can use the Batching tutorial, you must perform the tasks in this section.</span></span>  

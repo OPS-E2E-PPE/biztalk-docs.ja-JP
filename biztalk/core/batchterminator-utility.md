@@ -1,14 +1,14 @@
 ---
-title: "BatchTerminator ユーティリティ |Microsoft ドキュメント"
-ms.custom: 
+title: BatchTerminator ユーティリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 771241fa-7df5-4882-8430-c2f36200cc9d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967352"
 ---
 # <a name="batchterminator-utility"></a><span data-ttu-id="e889a-102">BatchTerminator ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="e889a-102">BatchTerminator Utility</span></span>
 <span data-ttu-id="e889a-103">BatchTerminator ユーティリティを使用すると、EDI インターチェンジのバッチ処理に使用されているアクティブなバッチ処理オーケストレーションをすべて終了できます。</span><span class="sxs-lookup"><span data-stu-id="e889a-103">The BatchTerminator utility enables you to terminate all live batching orchestrations being used to batch EDI interchanges.</span></span> <span data-ttu-id="e889a-104">このユーティリティは、多数のバッチ処理オーケストレーション インスタンスを実行していて、BizTalk Server システムの保守を行うためにすべてのバッチを終了する必要があるときに便利です。</span><span class="sxs-lookup"><span data-stu-id="e889a-104">This utility could prove useful if you have a large number of batching orchestration instances running, and you need to terminate all the batches in order to perform maintenance on the BizTalk server system.</span></span>  

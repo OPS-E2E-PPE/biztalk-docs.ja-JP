@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2665afde-0337-4795-ab4c-6223d39fdf9c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219306"
 ---
 # <a name="step-2-create-an-application-definition-file-for-the-oracle-e-business-suite-artifacts"></a><span data-ttu-id="f2dc5-102">手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-102">Step 2: Create an application definition file for the Oracle E-Business Suite artifacts</span></span>
 <span data-ttu-id="f2dc5-103">![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="f2dc5-130">WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに、URL が使用可能な[手順 1: create Oracle E-business アダプターを使用し、WCF サービスを発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)です。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-130">The URL is available when you test whether the WCF service is published successfully, as described in [Step 1: Use the Oracle E-Business Adapter to Create and Publish a WCF Service](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md).</span></span>  
   
-5.  <span data-ttu-id="f2dc5-131">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-131">Click **Connect**.</span></span>  
+5.  <span data-ttu-id="f2dc5-131">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-131">Click **Connect**.</span></span>  
   
 6.  <span data-ttu-id="f2dc5-132">WCF アダプター サービス開発ウィザードで選択した操作を表示するをクリックして、 **Web メソッドの追加**タブです。次のメソッドが表示されます:**選択**です。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-132">To see the operations you selected in the WCF Adapter Service Development Wizard, click the **Add Web Method** tab. You will see the following method: **Select**.</span></span>  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="f2dc5-135">![デザイン画面に Select メソッドの追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/05-add-lob-system.gif "05 _ add_lob_system")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-135">![Add Select method to the Design Surface](../../adapters-and-accelerators/adapter-oracle-ebs/media/05-add-lob-system.gif "05_Add_LOB_System")</span></span>  
   
-8.  <span data-ttu-id="f2dc5-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-136">Click **OK**.</span></span>  
+8.  <span data-ttu-id="f2dc5-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-136">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="f2dc5-137">**LOB システムの名前を入力** ダイアログ ボックスに名前を入力、 **LOB システム名**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-137">In the **Enter the name for the LOB System** dialog box, type a name in the **LOB System Name** box.</span></span> <span data-ttu-id="f2dc5-138">この例では、呼び出すこと**MS_SAMPLE_EMPLOYEE**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-138">For this example, call it **MS_SAMPLE_EMPLOYEE**, and then click **OK**.</span></span>  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="f2dc5-158">![プロパティを追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/07-propertviewcollection-editor.gif "07 _ propertviewcollection_editor")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-158">![Add a property](../../adapters-and-accelerators/adapter-oracle-ebs/media/07-propertviewcollection-editor.gif "07_PropertViewCollection_Editor")</span></span>  
   
-5.  <span data-ttu-id="f2dc5-159">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-159">Click **OK**.</span></span>  
+5.  <span data-ttu-id="f2dc5-159">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-159">Click **OK**.</span></span>  
   
 ##  <a name="Scenario1"></a><span data-ttu-id="f2dc5-160">ビジネス データ一覧 Web パーツを使用している従業員のシナリオ 1: クエリ</span><span class="sxs-lookup"><span data-stu-id="f2dc5-160">Scenario 1: Query for Employees using a Business Data List Web Part</span></span>  
  <span data-ttu-id="f2dc5-161">従業員がビジネス データ一覧 Web パーツを検索するために使用して従業員の名前に基づくできるアプリケーション定義ファイルを作成するには、次の一連のタスクを行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-161">To create an application definition file that can be used to search for employees from a Business Data List Web Part and based on employee name, you must perform the following set of tasks.</span></span>  
@@ -148,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="f2dc5-185">![Finder メソッド インスタンスの作成](../../adapters-and-accelerators/adapter-oracle-ebs/media/12-create-method-instance.gif "12 _ create_method_instance")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-185">![Create a Finder method instance](../../adapters-and-accelerators/adapter-oracle-ebs/media/12-create-method-instance.gif "12_Create_Method_Instance")</span></span>  
   
-4.  <span data-ttu-id="f2dc5-186">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-186">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f2dc5-186">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-186">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="f2dc5-187">プロパティ ウィンドウで、次のように入力します。 **Finder_Instance**で、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-187">In the Properties pane, type **Finder_Instance** in the **Name** box.</span></span>  
   
@@ -187,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="f2dc5-206">展開して、**フィルター**パラメーター、もう 1 つをクリックして**フィルター**ノード。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-206">Expand the **FILTER** parameter, and then click the second **FILTER** node.</span></span>  
   
-    4.  <span data-ttu-id="f2dc5-207">プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]**から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-207">In the Properties pane, select **EmployeeName[Employee]** from the **Identifier** list.</span></span>  
+    4.  <span data-ttu-id="f2dc5-207">プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]** から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-207">In the Properties pane, select **EmployeeName[Employee]** from the **Identifier** list.</span></span>  
   
          <span data-ttu-id="f2dc5-208">![フィルターのパラメーターの識別子を設定](../../adapters-and-accelerators/adapter-oracle-ebs/media/16-set-identifier.gif "16 _ set_identifier")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-208">![Setting identifier for the FILTER parameter](../../adapters-and-accelerators/adapter-oracle-ebs/media/16-set-identifier.gif "16_Set_Identifier")</span></span>  
   
@@ -199,7 +200,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="f2dc5-212">展開、**を返す**] ノードの [2 番目**返す**ノード、**項目**ノードをクリックして、**名前**ノード。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-212">Expand the **Return** node, then the second **Return** node, then the **Item** node, and then click the **Name** node.</span></span>  
   
-    4.  <span data-ttu-id="f2dc5-213">プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]**から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-213">In the Properties pane, select **EmployeeName[Employee]** from the **Identifier** list.</span></span>  
+    4.  <span data-ttu-id="f2dc5-213">プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]** から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-213">In the Properties pane, select **EmployeeName[Employee]** from the **Identifier** list.</span></span>  
   
 #### <a name="to-create-a-specific-finder-method-instance-for-the-select-method"></a><span data-ttu-id="f2dc5-214">Select メソッドの Specific Finder メソッド インスタンスを作成するには</span><span class="sxs-lookup"><span data-stu-id="f2dc5-214">To create a Specific Finder method instance for the Select method</span></span>  
   
@@ -213,7 +214,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="f2dc5-220">![Specific Finder メソッド インスタンスの追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/17-specific-finder.gif "17 _ specific_finder")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-220">![Add a Specific Finder method instance](../../adapters-and-accelerators/adapter-oracle-ebs/media/17-specific-finder.gif "17_Specific_Finder")</span></span>  
   
-4.  <span data-ttu-id="f2dc5-221">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-221">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f2dc5-221">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-221">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="f2dc5-222">プロパティ ウィンドウで、次のように入力します。 **SpeciFinder_Instance**の、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-222">In the Properties pane, type **SpeciFinder_Instance** for the **Name** box.</span></span>  
   
@@ -229,7 +230,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="f2dc5-229">![Id Enumerator メソッド インスタンスの作成](../../adapters-and-accelerators/adapter-oracle-ebs/media/18-id-enumerator.gif "18 _ id_enumerator")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-229">![Create an Id Enumerator method instance](../../adapters-and-accelerators/adapter-oracle-ebs/media/18-id-enumerator.gif "18_ID_Enumerator")</span></span>  
   
-4.  <span data-ttu-id="f2dc5-230">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-230">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f2dc5-230">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-230">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="f2dc5-231">プロパティ ウィンドウで、次のように入力します。 **IDEnumerator_Instance**の、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-231">In the Properties pane, type **IDEnumerator_Instance** for the **Name** box.</span></span>  
   
@@ -279,11 +280,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="f2dc5-261">をクリックして**MS_SAMPLE_EMPLOYEE_Instance**、プロパティ ペインでに対して省略記号 (...) ボタンをクリックし、**プロパティ**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-261">Click **MS_SAMPLE_EMPLOYEE_Instance**, and in the Properties pane, click the ellipsis (…) button against the **Properties** box.</span></span>  
   
-3.  <span data-ttu-id="f2dc5-262">**PropertyView コレクション エディター**ダイアログ ボックスで、をクリックして**追加**、プロパティ ウィンドウで、次のように入力します**SecondarySsoApplicationId**の、**名前。**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-262">In the **PropertyView Collection Editor** dialog box, click **Add**, and in the Property pane, type **SecondarySsoApplicationId** for the **Name** box.</span></span> <span data-ttu-id="f2dc5-263">同様に、入力**OracleSSO**の**PropertyValue**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-263">Similarly, type **OracleSSO** for the **PropertyValue** box.</span></span> <span data-ttu-id="f2dc5-264">選択**System.String**の**型**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-264">Select **System.String** for the **Type** box.</span></span>  
+3.  <span data-ttu-id="f2dc5-262">**PropertyView コレクション エディター**ダイアログ ボックスで、をクリックして**追加**、プロパティ ウィンドウで、次のように入力します**SecondarySsoApplicationId**の、**名前。** ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-262">In the **PropertyView Collection Editor** dialog box, click **Add**, and in the Property pane, type **SecondarySsoApplicationId** for the **Name** box.</span></span> <span data-ttu-id="f2dc5-263">同様に、入力**OracleSSO**の**PropertyValue**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-263">Similarly, type **OracleSSO** for the **PropertyValue** box.</span></span> <span data-ttu-id="f2dc5-264">選択**System.String**の**型**ボックス。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-264">Select **System.String** for the **Type** box.</span></span>  
   
      <span data-ttu-id="f2dc5-265">![SSO プロパティの追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/21-sso.gif "21 _ sso")</span><span class="sxs-lookup"><span data-stu-id="f2dc5-265">![Add the SSO Property](../../adapters-and-accelerators/adapter-oracle-ebs/media/21-sso.gif "21_SSO")</span></span>  
   
-4.  <span data-ttu-id="f2dc5-266">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-266">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f2dc5-266">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-266">Click **OK**.</span></span>  
   
 ##  <a name="Export"></a><span data-ttu-id="f2dc5-267">アプリケーション定義をファイルにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-267">Export the Application Definition to a File</span></span>  
  <span data-ttu-id="f2dc5-268">Oracle E-business Suite インスタンスのメタデータを含んでいるアプリケーション定義が作成されました。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-268">You have now created an application definition that contains Oracle E-Business Suite instance metadata.</span></span> <span data-ttu-id="f2dc5-269">Microsoft Office SharePoint Server にインポートできる XML ファイルにこの定義をエクスポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f2dc5-269">You must export this definition to an XML file, which can be imported into Microsoft Office SharePoint Server.</span></span>  

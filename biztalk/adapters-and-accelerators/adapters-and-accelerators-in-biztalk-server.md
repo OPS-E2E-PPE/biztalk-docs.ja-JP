@@ -1,15 +1,15 @@
 ---
-title: "アダプターと BizTalk server アクセラレータ |Microsoft ドキュメント"
-description: "すべてのアダプターと組み込みアダプター、BAP、HL7、Swift、RosettaNet、FileAct および InterAct を含む biztalk アクセラレータの概要"
-caps.latest.revision: "3"
+title: アダプターと BizTalk server アクセラレータ |Microsoft ドキュメント
+description: すべてのアダプターと組み込みアダプター、BAP、HL7、Swift、RosettaNet、FileAct および InterAct を含む biztalk アクセラレータの概要
+caps.latest.revision: 3
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df7f26a1-e47b-4323-b9f0-58842c55a6f8
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014177"
 ---
 # <a name="adapters-and-accelerators-in-biztalk-server"></a><span data-ttu-id="27579-103">アダプターと BizTalk server アクセラレータ</span><span class="sxs-lookup"><span data-stu-id="27579-103">Adapters and Accelerators in BizTalk Server</span></span>
  [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="27579-104">別のアダプターとのデータを受信し、さまざまなサービスにデータを送信し、システムの LOB アプリケーションを作成するためのアクセラレータが含まれます。</span><span class="sxs-lookup"><span data-stu-id="27579-104"> includes different adapters and accelerators for you to create applications that receive data, and send data to different services and LOB systems.</span></span> 

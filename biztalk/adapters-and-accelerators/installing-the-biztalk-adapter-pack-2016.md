@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter Pack 2016 のインストール |Microsoft ドキュメント"
-description: "BAP 2016、32 ビットと 64 ビットの標準またはカスタムのインストールはサイレント モードでインストールします。"
-ms.custom: 
+title: BizTalk Adapter Pack 2016 のインストール |Microsoft ドキュメント
+description: BAP 2016、32 ビットと 64 ビットの標準またはカスタムのインストールはサイレント モードでインストールします。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f3e1717-8063-4460-bfdc-a933cd58a5c1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967792"
 ---
 # <a name="install-the-biztalk-adapter-pack-2016"></a><span data-ttu-id="80ce6-103">BizTalk Adapter Pack 2016 をインストールします。</span><span class="sxs-lookup"><span data-stu-id="80ce6-103">Install the BizTalk Adapter Pack 2016</span></span>
 <span data-ttu-id="80ce6-104">インストール、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]次の 2 つの方法で。</span><span class="sxs-lookup"><span data-stu-id="80ce6-104">Install the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] in the following two ways:</span></span>  
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="80ce6-168">選択**Microsoft BizTalk Adapters インストール**です。</span><span class="sxs-lookup"><span data-stu-id="80ce6-168">Select **Install Microsoft BizTalk Adapters**.</span></span> <span data-ttu-id="80ce6-169">次のウィンドウで、前提条件のすべての不足しているプログラムが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="80ce6-169">In the next window, any missing prerequisite programs are listed.</span></span> <span data-ttu-id="80ce6-170">いずれかが存在しない場合、不足しているプログラムを選択し、セットアップでは、それをインストールします。</span><span class="sxs-lookup"><span data-stu-id="80ce6-170">If any are missing, then select the missing program, and setup installs it for you.</span></span> 
 
-    <span data-ttu-id="80ce6-171">たとえば、選択**手順 2: Microsoft BizTalk Adapter Pack のインストール**または**手順 3: インストール Microsoft BizTalk Adapter Pack (x64)**です。</span><span class="sxs-lookup"><span data-stu-id="80ce6-171">For example, select **Step 2: Install Microsoft BizTalk Adapter Pack** or **Step 3: Install Microsoft BizTalk Adapter Pack (x64)**.</span></span>  
+    <span data-ttu-id="80ce6-171">たとえば、選択**手順 2: Microsoft BizTalk Adapter Pack のインストール**または**手順 3: インストール Microsoft BizTalk Adapter Pack (x64)** です。</span><span class="sxs-lookup"><span data-stu-id="80ce6-171">For example, select **Step 2: Install Microsoft BizTalk Adapter Pack** or **Step 3: Install Microsoft BizTalk Adapter Pack (x64)**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="80ce6-172">インストールする場合、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]バーチャル マシンでは、セットアップ ウィザードの使用可能なディスク領域をチェックするメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="80ce6-172">If you are installing the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] on a virtual machine, the setup wizard may display a message that it's checking for available disk space.</span></span> <span data-ttu-id="80ce6-173">ハングまたはただ座っていて、このメッセージが表示されるかどうかは、ことをお勧め**サイレント モードでインストール**(」を参照)。</span><span class="sxs-lookup"><span data-stu-id="80ce6-173">If this message appears to hang or just sit there, then we recommend you **Install in silent mode** (in this topic).</span></span>  
@@ -106,7 +107,7 @@ ms.lasthandoff: 11/28/2017
   
     4.  <span data-ttu-id="80ce6-186">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="80ce6-186">Select **Next**.</span></span>  
   
-7.  <span data-ttu-id="80ce6-187">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="80ce6-187">Select **Install**.</span></span>  
+7.  <span data-ttu-id="80ce6-187">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="80ce6-187">Select **Install**.</span></span>  
   
 8.  <span data-ttu-id="80ce6-188">**カスタマー エクスペリエンス向上プログラム**、登録することもできます。</span><span class="sxs-lookup"><span data-stu-id="80ce6-188">In **Customer Experience Improvement Program**, you can choose to enroll.</span></span> <span data-ttu-id="80ce6-189">登録する場合は、Microsoft と、次のデータを共有できます。</span><span class="sxs-lookup"><span data-stu-id="80ce6-189">If you enroll, you can share the following data with Microsoft:</span></span>  
   
@@ -236,7 +237,7 @@ ms.lasthandoff: 11/28/2017
   
 <span data-ttu-id="80ce6-241">**64 ビット コンピューターでセットアップを実行してはスキーマ ファイルにアクセス中にエラーをスローする可能性があります。**</span><span class="sxs-lookup"><span data-stu-id="80ce6-241">**Running setup on a 64-bit computer may throw an error while accessing schema file**</span></span>  
   
-<span data-ttu-id="80ce6-242">[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップによって、Microsoft.Adapters へのアクセス中にエラーがスローされます*。\<AdapterName\>*_schema.xml ファイルが、アダプターのインストールを続行します。</span><span class="sxs-lookup"><span data-stu-id="80ce6-242">The [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] setup throws an error while accessing the Microsoft.Adapters.*\<AdapterName\>*_schema.xml file, but proceeds with the adapter installation.</span></span>  
+<span data-ttu-id="80ce6-242">[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップによって、Microsoft.Adapters へのアクセス中にエラーがスローされます *。\<AdapterName\>*_schema.xml ファイルが、アダプターのインストールを続行します。</span><span class="sxs-lookup"><span data-stu-id="80ce6-242">The [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] setup throws an error while accessing the Microsoft.Adapters.*\<AdapterName\>*_schema.xml file, but proceeds with the adapter installation.</span></span>  
   
 <span data-ttu-id="80ce6-243">**原因**</span><span class="sxs-lookup"><span data-stu-id="80ce6-243">**Cause**</span></span>  
   

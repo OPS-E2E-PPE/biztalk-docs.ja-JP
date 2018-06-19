@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB アダプター SDK を使用して、アダプターの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB アダプター SDK を使用して、アダプターの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 376b4dcf-2d2c-4872-a394-67edc0c3d088
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967296"
 ---
 # <a name="deploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="7615e-102">WCF LOB アダプター SDK を使用して、アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="7615e-102">Deploy an adapter using the WCF LOB adapter SDK</span></span>
 <span data-ttu-id="7615e-103">アダプターを展開するにはアダプター アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、machine.config ファイルにアダプターを登録します。</span><span class="sxs-lookup"><span data-stu-id="7615e-103">To deploy an adapter, you must install the adapter assembly into the global assembly cache (GAC), and then register the adapter in the machine.config file.</span></span>  
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="7615e-152">開く、**サービス構成エディター**です。</span><span class="sxs-lookup"><span data-stu-id="7615e-152">Open the **Service Configuration Editor**.</span></span> <span data-ttu-id="7615e-153">参照してください[サービス構成エディター](https://msdn.microsoft.com/library/ms732009.aspx)詳細についてはします。</span><span class="sxs-lookup"><span data-stu-id="7615e-153">See [Service Configuration Editor](https://msdn.microsoft.com/library/ms732009.aspx) for  more information.</span></span>
   
-2.  <span data-ttu-id="7615e-154">ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。</span><span class="sxs-lookup"><span data-stu-id="7615e-154">In the tree view pane (labeled **Configuration**), expand the node tree.</span></span> <span data-ttu-id="7615e-155">をクリックして、 **[詳細設定]**フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。</span><span class="sxs-lookup"><span data-stu-id="7615e-155">Click the **Advanced** folder, click the **Extensions** folder, and then select the binding extensions element.</span></span>  
+2.  <span data-ttu-id="7615e-154">ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。</span><span class="sxs-lookup"><span data-stu-id="7615e-154">In the tree view pane (labeled **Configuration**), expand the node tree.</span></span> <span data-ttu-id="7615e-155">をクリックして、 **[詳細設定]** フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。</span><span class="sxs-lookup"><span data-stu-id="7615e-155">Click the **Advanced** folder, click the **Extensions** folder, and then select the binding extensions element.</span></span>  
   
      <span data-ttu-id="7615e-156">![サービス構成エディター。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0a44a070-b788-4287-bd9e-c946fafcf11c.gif "0a44a070-b788-4287-bd9e-c946fafcf11c")</span><span class="sxs-lookup"><span data-stu-id="7615e-156">![Service configuration editor.](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0a44a070-b788-4287-bd9e-c946fafcf11c.gif "0a44a070-b788-4287-bd9e-c946fafcf11c")</span></span>  
   

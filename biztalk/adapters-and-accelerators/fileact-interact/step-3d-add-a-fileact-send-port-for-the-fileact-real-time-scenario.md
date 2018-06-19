@@ -1,14 +1,14 @@
 ---
-title: "ステップ 3 D: FileAct リアルタイム シナリオ FILEACT 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: 'ステップ 3 D: FileAct リアルタイム シナリオ FILEACT 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a22ba41-4f43-4fbb-92f7-a0fd7558d2ce
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966376"
 ---
 # <a name="step-3d-add-a-fileact-send-port-for-the-fileact-real-time-scenario"></a><span data-ttu-id="2a29e-102">ステップ 3 D: FileAct リアルタイム シナリオ FILEACT 送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="2a29e-102">Step 3D: Add a FILEACT Send Port for the FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="2a29e-103">この手順を開始する前に行う必要があります[手順 3 C: Sw:HandleRequest メッセージのキャプチャに FileAct リアルタイム シナリオでは、ファイル送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md)です。</span><span class="sxs-lookup"><span data-stu-id="2a29e-103">Before you start this step, you must complete [Step 3C: Add a FILE Send Port to Capture Sw:HandleRequest Message for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md).</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="2a29e-148">メッセージでのトランザクション数を転送する場合は、サービスのプロファイルでモードを設定「トランザクション数」に、FileAct 送信ポート。</span><span class="sxs-lookup"><span data-stu-id="2a29e-148">If message with Transaction Count is to be transferred, set the Service Profile Mode to “Transaction Count” in the FileAct send port.</span></span>  
   
-7.  <span data-ttu-id="2a29e-149">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a29e-149">Click **OK**.</span></span>  
+7.  <span data-ttu-id="2a29e-149">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a29e-149">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="2a29e-150">**送信ポートのプロパティ** ウィンドウで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="2a29e-150">In the **Send Port Properties** window, do the following:</span></span>  
   
@@ -73,11 +74,11 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="2a29e-160">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="2a29e-160">**Use this**</span></span>|<span data-ttu-id="2a29e-161">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="2a29e-161">**To do this**</span></span>|  
     |------------------|--------------------|  
     |<span data-ttu-id="2a29e-162">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="2a29e-162">**Property**</span></span>|<span data-ttu-id="2a29e-163">ドロップダウン リストから選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="2a29e-163">From the drop-down list, select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="2a29e-164">**演算子**</span><span class="sxs-lookup"><span data-stu-id="2a29e-164">**Operator**</span></span>|<span data-ttu-id="2a29e-165">ドロップダウン リストから選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="2a29e-165">From the drop-down list, select **==**.</span></span>|  
+    |<span data-ttu-id="2a29e-164">**演算子**</span><span class="sxs-lookup"><span data-stu-id="2a29e-164">**Operator**</span></span>|<span data-ttu-id="2a29e-165">ドロップダウン リストから選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="2a29e-165">From the drop-down list, select **==**.</span></span>|  
     |<span data-ttu-id="2a29e-166">**値**</span><span class="sxs-lookup"><span data-stu-id="2a29e-166">**Value**</span></span>|<span data-ttu-id="2a29e-167">型 Tutorial_FA_InputRequest_RealTime です。</span><span class="sxs-lookup"><span data-stu-id="2a29e-167">Type Tutorial_FA_InputRequest_RealTime.</span></span>|  
     |<span data-ttu-id="2a29e-168">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="2a29e-168">**Group by**</span></span>|<span data-ttu-id="2a29e-169">既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="2a29e-169">Leave the default value.</span></span>|  
   
-10. <span data-ttu-id="2a29e-170">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a29e-170">Click **OK**.</span></span>  
+10. <span data-ttu-id="2a29e-170">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a29e-170">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="2a29e-171">参照</span><span class="sxs-lookup"><span data-stu-id="2a29e-171">See Also</span></span>  
  <span data-ttu-id="2a29e-172">[手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="2a29e-172">[Step 3: Create the Send Ports and Receive Ports for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span></span>  

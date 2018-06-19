@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207082"
 ---
 # <a name="step-7-create-a-send-port-to-deliver-response-messages"></a><span data-ttu-id="19a2c-102">手順 7: 応答メッセージを配信する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="19a2c-102">Step 7: Create a Send Port to Deliver Response Messages</span></span>
 <span data-ttu-id="19a2c-103">この手順で、クエリに応答を返す、受付、放電、および転送 (ADT) を提供する送信ポートを作成するシステムです。</span><span class="sxs-lookup"><span data-stu-id="19a2c-103">In this step, you create the send port to deliver the query responses back to the Admissions, Discharge, and Transfer (ADT) system.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="19a2c-142">最初のフィルターは、送信ポートのみ DSR に準拠したメッセージを選択することを示す ^ 手順 3 a. で作成した Q01 スキーマです。</span><span class="sxs-lookup"><span data-stu-id="19a2c-142">The first filter specifies that the send port only selects messages conforming to the DSR^Q01 schema you created in step 3A.</span></span> <span data-ttu-id="19a2c-143">2 番目のフィルターを指定する変換先、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンは、これらのメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="19a2c-143">The second filter specifies the destination to which the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine sends these messages.</span></span>  
   
-6.  <span data-ttu-id="19a2c-144">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="19a2c-144">Click **OK**.</span></span>  
+6.  <span data-ttu-id="19a2c-144">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="19a2c-144">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="19a2c-145">管理コンソールで、をクリックして**送信ポート**を右クリックして**ADT_Send**、クリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="19a2c-145">In the Administration Console, click **Send Ports**, right-click **ADT_Send**, and then click **Start**.</span></span>  
   

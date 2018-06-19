@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: e5f68232aa0cb59835523df0afac01f3d1949489
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013881"
 ---
 # <a name="how-to-set-pipelines-for-peoplesoft-enterprise"></a><span data-ttu-id="c88df-101">PeopleSoft Enterprise のパイプラインを設定する方法</span><span class="sxs-lookup"><span data-stu-id="c88df-101">How to Set Pipelines for PeopleSoft Enterprise</span></span>
 <span data-ttu-id="c88df-102">Microsoft BizTalk Adapter for PeopleSoft Enterprise では、適切なパイプラインを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c88df-102">Microsoft BizTalk Adapter for PeopleSoft Enterprise requires that you select an appropriate pipeline.</span></span>  
@@ -27,11 +28,11 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="c88df-110">**送信ハンドラー**ドロップダウン リストで、URI を選択します。</span><span class="sxs-lookup"><span data-stu-id="c88df-110">From the **Send handler** drop-down list, select the URI.</span></span>  
   
-    4.  <span data-ttu-id="c88df-111">送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。</span><span class="sxs-lookup"><span data-stu-id="c88df-111">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
+    4.  <span data-ttu-id="c88df-111">送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。</span><span class="sxs-lookup"><span data-stu-id="c88df-111">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
   
-    5.  <span data-ttu-id="c88df-112">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。</span><span class="sxs-lookup"><span data-stu-id="c88df-112">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
+    5.  <span data-ttu-id="c88df-112">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。</span><span class="sxs-lookup"><span data-stu-id="c88df-112">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
-4.  <span data-ttu-id="c88df-113">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88df-113">Click **OK**.</span></span>  
+4.  <span data-ttu-id="c88df-113">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c88df-113">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c88df-114">参照</span><span class="sxs-lookup"><span data-stu-id="c88df-114">See Also</span></span>  
  [<span data-ttu-id="c88df-115">PeopleSoft 送信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="c88df-115">Creating PeopleSoft Send Handlers</span></span>](../core/creating-peoplesoft-send-handlers.md)

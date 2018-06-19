@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204434"
 ---
 # <a name="btahl7-pipelines"></a><span data-ttu-id="c96c6-102">BTAHL7 パイプライン</span><span class="sxs-lookup"><span data-stu-id="c96c6-102">BTAHL7 Pipelines</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="c96c6-103">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信のセットを提供および HL7 エンコードし、XML でエンコードされた両方の処理のパイプラインを送信します。</span><span class="sxs-lookup"><span data-stu-id="c96c6-103"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) provides a set of receive and send pipelines for both HL7-encoded and XML-encoded processing.</span></span> <span data-ttu-id="c96c6-104">これらのパイプラインは、医療ソリューションの BizTalk パイプライン処理を向上させます。</span><span class="sxs-lookup"><span data-stu-id="c96c6-104">These pipelines enhance BizTalk pipeline processing for health care solutions:</span></span>  

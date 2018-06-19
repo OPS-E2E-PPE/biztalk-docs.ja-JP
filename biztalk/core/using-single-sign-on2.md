@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-peoplesoft-enterprise/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 2c278864c45e045cd04c539ad8b077c998242fe9
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014617"
 ---
 # <a name="using-single-sign-on"></a><span data-ttu-id="5acba-101">シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="5acba-101">Using Single Sign-On</span></span>
 <span data-ttu-id="5acba-102">Microsoft BizTalk Adapter for PeopleSoft Enterprise ではシングル サインオン (SSO) をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="5acba-102">Microsoft BizTalk Adapter for PeopleSoft Enterprise provides Single Sign-On (SSO) support.</span></span> <span data-ttu-id="5acba-103">エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、PeopleSoft などのサーバー システムを表します。</span><span class="sxs-lookup"><span data-stu-id="5acba-103">An affiliate application created by Enterprise Single Sign-On tools represents a server system such as PeopleSoft.</span></span>  

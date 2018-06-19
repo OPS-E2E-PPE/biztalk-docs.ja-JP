@@ -1,11 +1,11 @@
 ---
-title: "ファイル アダプター構成プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: ファイル アダプター構成プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - File adapters, code sample
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - File adapters, properties
 - send ports, adapters
 ms.assetid: 53f4fd17-95b9-4861-b433-772b619e90c7
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969872"
 ---
 # <a name="file-adapter-configuration-properties"></a><span data-ttu-id="ce09a-102">ファイル アダプター構成プロパティ</span><span class="sxs-lookup"><span data-stu-id="ce09a-102">File Adapter Configuration Properties</span></span>
 <span data-ttu-id="ce09a-103">次の表に、ファイル アダプターの受信場所に設定できる構成プロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-103">The following table lists the configuration properties that you can set for a File adapter receive location:</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
 |-------------------|----------|-----------------|------------------|--------------|  
 |<span data-ttu-id="ce09a-109">RemoveReceivedFileRetryCount</span><span class="sxs-lookup"><span data-stu-id="ce09a-109">RemoveReceivedFileRetryCount</span></span>|<span data-ttu-id="ce09a-110">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="ce09a-110">VT_UI4</span></span>|<span data-ttu-id="ce09a-111">ファイル アダプターが読み取り、BizTalk Server に送信したファイルに対し、削除を再試行する回数を指定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-111">Specify the number of times that the File adapter will attempt to delete a file that it has read and submitted to BizTalk Server.</span></span>|<span data-ttu-id="ce09a-112">有効な値は、0 ～ 100 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-112">Valid values are from 0 to 100.</span></span>|<span data-ttu-id="ce09a-113">既定値は 5 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-113">The default value is 5.</span></span>|  
 |<span data-ttu-id="ce09a-114">RemoveReceivedFileMaxInterval</span><span class="sxs-lookup"><span data-stu-id="ce09a-114">RemoveReceivedFileMaxInterval</span></span>|<span data-ttu-id="ce09a-115">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="ce09a-115">VT_UI4</span></span>|<span data-ttu-id="ce09a-116">ファイル アダプターが読み取り、BizTalk Server に送信したファイルに対し、削除を試行するまでに待機する初期間隔をミリ秒単位で指定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-116">Specify the initial interval in milliseconds that the File adapter waits before attempting to delete a file that it has read and submitted to BizTalk Server.</span></span>|<span data-ttu-id="ce09a-117">有効な値は 1 ~ 1000 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-117">Valid values are from 1 to 1000.</span></span>|<span data-ttu-id="ce09a-118">既定値は 10 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-118">The default value is 10.</span></span>|  
-|<span data-ttu-id="ce09a-119">FileMask</span><span class="sxs-lookup"><span data-stu-id="ce09a-119">FileMask</span></span>|<span data-ttu-id="ce09a-120">VT_BSTR</span><span class="sxs-lookup"><span data-stu-id="ce09a-120">VT_BSTR</span></span>|<span data-ttu-id="ce09a-121">ファイルのマスクを指定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-121">Specify the mask for the files.</span></span>|<span data-ttu-id="ce09a-122">なし</span><span class="sxs-lookup"><span data-stu-id="ce09a-122">None</span></span>|<span data-ttu-id="ce09a-123">既定値は *.xml です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-123">The default value is *.xml.</span></span>|  
+|<span data-ttu-id="ce09a-119">FileMask</span><span class="sxs-lookup"><span data-stu-id="ce09a-119">FileMask</span></span>|<span data-ttu-id="ce09a-120">VT_BSTR</span><span class="sxs-lookup"><span data-stu-id="ce09a-120">VT_BSTR</span></span>|<span data-ttu-id="ce09a-121">ファイルのマスクを指定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-121">Specify the mask for the files.</span></span>|<span data-ttu-id="ce09a-122">なし</span><span class="sxs-lookup"><span data-stu-id="ce09a-122">None</span></span>|<span data-ttu-id="ce09a-123">既定値は \*.xml です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-123">The default value is \*.xml.</span></span>|  
 |<span data-ttu-id="ce09a-124">BatchSizeInBytes</span><span class="sxs-lookup"><span data-stu-id="ce09a-124">BatchSizeInBytes</span></span>|<span data-ttu-id="ce09a-125">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="ce09a-125">VT_UI4</span></span>|<span data-ttu-id="ce09a-126">BizTalk メッセージ ボックスに送信するファイルのバッチの最大合計バイト数を指定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-126">Specify the maximum total bytes for a batch of files sent to the BizTalk MessageBox.</span></span>|<span data-ttu-id="ce09a-127">有効な値は、1024 ~ 104857600 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-127">Valid values are from 1024 to 104857600.</span></span>|<span data-ttu-id="ce09a-128">既定値は、102400 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-128">The default value is 102400.</span></span>|  
 |<span data-ttu-id="ce09a-129">PollingInterval</span><span class="sxs-lookup"><span data-stu-id="ce09a-129">PollingInterval</span></span>|<span data-ttu-id="ce09a-130">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="ce09a-130">VT_UI4</span></span>|<span data-ttu-id="ce09a-131">ファイル アダプターが指定された場所をポーリングして新しいファイルを検索する間隔を、ミリ秒単位で指定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-131">Specify the interval in milliseconds that the File adapter will poll the specified location for new files.</span></span>|<span data-ttu-id="ce09a-132">有効な値は、1000 ~ 3600000 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-132">Valid values are from 1000 to 3600000.</span></span>|<span data-ttu-id="ce09a-133">ポーリングを無効にするには 1 に設定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-133">Set to 1 to disable polling.</span></span>|  
 |<span data-ttu-id="ce09a-134">BatchSize</span><span class="sxs-lookup"><span data-stu-id="ce09a-134">BatchSize</span></span>|<span data-ttu-id="ce09a-135">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="ce09a-135">VT_UI4</span></span>|<span data-ttu-id="ce09a-136">バッチ送信するメッセージの最大数を指定します。</span><span class="sxs-lookup"><span data-stu-id="ce09a-136">Specify the maximum number of messages to be submitted in a batch.</span></span>|<span data-ttu-id="ce09a-137">有効な値は 1 ~ 256 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-137">Valid values are from 1 to 256.</span></span>|<span data-ttu-id="ce09a-138">既定値は 20 です。</span><span class="sxs-lookup"><span data-stu-id="ce09a-138">The default value is 20.</span></span>|  

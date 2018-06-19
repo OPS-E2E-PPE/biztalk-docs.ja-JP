@@ -1,14 +1,14 @@
 ---
-title: "管理パックの監視、BizTalk Server 2013 の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: 管理パックの監視、BizTalk Server 2013 の概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e70cc4bf-8033-48cc-8d0f-65254377b7c4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298314"
 ---
 # <a name="introduction-to-the-biztalk-server-2013-monitoring-management-pack"></a><span data-ttu-id="e9a23-102">管理パックの監視、BizTalk Server 2013 の概要</span><span class="sxs-lookup"><span data-stu-id="e9a23-102">Introduction to the BizTalk Server 2013 Monitoring Management Pack</span></span>
 <span data-ttu-id="e9a23-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を主体的および対応の BizTalk Server の展開、アプリケーションとその構成アイテムの監視管理パックを提供します。</span><span class="sxs-lookup"><span data-stu-id="e9a23-103">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack provides both proactive and reactive monitoring of BizTalk Server deployment, applications and its constituent artifacts.</span></span> <span data-ttu-id="e9a23-104">この管理パックによって提供される監視には、正常性の監視、可用性と構成の監視、パフォーマンス データ コレクション、および既定のしきい値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e9a23-104">The monitoring provided by this management pack includes health monitoring, availability and configuration monitoring, performance data collection, and default thresholds.</span></span> <span data-ttu-id="e9a23-105">サービス指向の監視シナリオに BizTalk Server コンポーネントの監視を統合することができます。</span><span class="sxs-lookup"><span data-stu-id="e9a23-105">You can integrate the monitoring of BizTalk Server components into your service-oriented monitoring scenarios.</span></span> <span data-ttu-id="e9a23-106">この管理パックが提供される Web からダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e9a23-106">This management pack is provided as a Web download.</span></span>  

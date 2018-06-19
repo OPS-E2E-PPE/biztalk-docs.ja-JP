@@ -1,14 +1,14 @@
 ---
-title: "ツールとユーティリティのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: ツールとユーティリティのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 56b0946a-56de-47cd-95d9-365722cdbaed
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302386"
 ---
 # <a name="tools-and-utilities-for-troubleshooting"></a><span data-ttu-id="c715b-102">ツールとユーティリティのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="c715b-102">Tools and Utilities for Troubleshooting</span></span>
 <span data-ttu-id="c715b-103">このトピックは、いくつかのツールと、Microsoft の問題の根本原因を診断するために使用できるユーティリティについて説明します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンポーネントまたは依存関係。</span><span class="sxs-lookup"><span data-stu-id="c715b-103">This topic describes several tools and utilities that can be useful for diagnosing the root cause of a problem in a Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] component or dependency.</span></span>  

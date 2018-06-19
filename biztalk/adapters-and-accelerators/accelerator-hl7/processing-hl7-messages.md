@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206066"
 ---
 # <a name="processing-hl7-messages"></a><span data-ttu-id="d3602-102">HL7 メッセージの処理</span><span class="sxs-lookup"><span data-stu-id="d3602-102">Processing HL7 Messages</span></span>
 <span data-ttu-id="d3602-103">このセクションでは、メッセージ モード、シナリオ、メッセージの種類、およびメッセージの書式設定を含む、HL7 メッセージについての詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="d3602-103">This section provides specifics about HL7 messages, including message modes, scenarios, message types, and message formatting.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオンの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオンの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d1bc220-4087-4603-ac15-6bb0c62c59d4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302410"
 ---
 # <a name="planning-for-single-sign-on"></a><span data-ttu-id="701a6-102">シングル サインオンの計画</span><span class="sxs-lookup"><span data-stu-id="701a6-102">Planning for Single Sign-On</span></span>
 <span data-ttu-id="701a6-103">エンタープライズ シングル サインオン (SSO) の重要なコンポーネントである、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="701a6-103">Enterprise Single Sign-On (SSO) is a critical component of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="701a6-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ために、SSO を処理せず、実行時は機能できませんすべて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターの構成情報を暗号化して、SSO データベースに格納されていると[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SSO サービスを経由してこの情報にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="701a6-104">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] run time cannot function without the SSO service because all [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adapter configuration information is encrypted and stored in the SSO database and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] accesses this information via the SSO service.</span></span> <span data-ttu-id="701a6-105">SSO サービスが、BizTalk server で実行されていない場合、または SSO サービスには、SSO マスター シークレット サーバーへのアクセスがない場合、このアダプターの構成情報にアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="701a6-105">This adapter configuration information is not accessible if the SSO service is not running on the BizTalk server or if the SSO service does not have access to the SSO master secret server.</span></span>  

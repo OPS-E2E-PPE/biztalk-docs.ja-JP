@@ -1,14 +1,14 @@
 ---
-title: "AS2 セキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 セキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d15cb27f-e57f-4aa4-be72-4f1f14175fd9
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230146"
 ---
 # <a name="as2-security"></a><span data-ttu-id="1a706-102">AS2 セキュリティ</span><span class="sxs-lookup"><span data-stu-id="1a706-102">AS2 Security</span></span>
 <span data-ttu-id="1a706-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のネイティブの AS2 機能は、暗号化キー、デジタル署名、および証明書を使用して AS2 メッセージのセキュリティを保護するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="1a706-103">The native AS2 feature of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to help secure AS2 messages using encryption keys, digital signatures, and certificates.</span></span> <span data-ttu-id="1a706-104">これを行うには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と証明書を正しく構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1a706-104">This requires the correct configuration of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and the correct configuration of certificates.</span></span>  

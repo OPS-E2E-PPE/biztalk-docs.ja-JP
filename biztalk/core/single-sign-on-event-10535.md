@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオン: イベント 10535 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シングル サインオン: イベント 10535 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b570b0b-5c45-4be3-80c9-a2c50601b677
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270082"
 ---
 # <a name="single-sign-on-event-10535"></a><span data-ttu-id="d971e-102">シングル サインオン: イベント 10535</span><span class="sxs-lookup"><span data-stu-id="d971e-102">Single Sign-On: Event 10535</span></span>
 ## <a name="details"></a><span data-ttu-id="d971e-103">詳細</span><span class="sxs-lookup"><span data-stu-id="d971e-103">Details</span></span>  
@@ -34,13 +35,13 @@ ms.lasthandoff: 09/20/2017
 ## <a name="explanation"></a><span data-ttu-id="d971e-122">説明</span><span class="sxs-lookup"><span data-stu-id="d971e-122">Explanation</span></span>  
  <span data-ttu-id="d971e-123">この情報監査イベントは、ユーザー定義の監査レベルを満たすイベントが発生したことを示します。</span><span class="sxs-lookup"><span data-stu-id="d971e-123">This Information Audit event indicates that an event that meets the user defined audit level has occurred.</span></span> <span data-ttu-id="d971e-124">このイベント メッセージには次の項目が含まれます。</span><span class="sxs-lookup"><span data-stu-id="d971e-124">This event message includes:</span></span>  
   
- <span data-ttu-id="d971e-125">**関数:**実行されている関数</span><span class="sxs-lookup"><span data-stu-id="d971e-125">**Function:** Function being performed</span></span>  
+ <span data-ttu-id="d971e-125">**関数:** 実行されている関数</span><span class="sxs-lookup"><span data-stu-id="d971e-125">**Function:** Function being performed</span></span>  
   
  <span data-ttu-id="d971e-126">**追跡 ID:** SSO API が最初に生成された一意の GUID が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="d971e-126">**Tracking ID:** Unique GUID generated when an SSO API is first called.</span></span>  
   
- <span data-ttu-id="d971e-127">**クライアント コンピューター:**関数が開始したクライアント コンピューター。</span><span class="sxs-lookup"><span data-stu-id="d971e-127">**Client Computer:** Client computer where the function originated.</span></span>  
+ <span data-ttu-id="d971e-127">**クライアント コンピューター:** 関数が開始したクライアント コンピューター。</span><span class="sxs-lookup"><span data-stu-id="d971e-127">**Client Computer:** Client computer where the function originated.</span></span>  
   
- <span data-ttu-id="d971e-128">**クライアント ユーザー:**関数を呼び出したユーザー アカウントの名前。</span><span class="sxs-lookup"><span data-stu-id="d971e-128">**Client User:** The name of the user account that invoked the function.</span></span>  
+ <span data-ttu-id="d971e-128">**クライアント ユーザー:** 関数を呼び出したユーザー アカウントの名前。</span><span class="sxs-lookup"><span data-stu-id="d971e-128">**Client User:** The name of the user account that invoked the function.</span></span>  
   
  <span data-ttu-id="d971e-129">**アプリケーション名:** SSO の名前は、この関数に関連付けられているアプリケーションを関連します。</span><span class="sxs-lookup"><span data-stu-id="d971e-129">**Application Name:** Name of the SSO affiliate application associated with this function.</span></span>  
   

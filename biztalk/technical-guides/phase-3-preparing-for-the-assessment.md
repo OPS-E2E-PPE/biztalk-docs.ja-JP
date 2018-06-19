@@ -1,14 +1,14 @@
 ---
-title: "フェーズ 3: 評価の準備中 |Microsoft ドキュメント"
-ms.custom: 
+title: 'フェーズ 3: 評価の準備中 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d153ed62-f2cc-4080-8912-c98ecdd329f5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301842"
 ---
 # <a name="phase-3-preparing-for-the-assessment"></a><span data-ttu-id="49742-102">フェーズ 3: が評価用に準備します。</span><span class="sxs-lookup"><span data-stu-id="49742-102">Phase 3: Preparing for the Assessment</span></span>
 <span data-ttu-id="49742-103">パフォーマンス評価の段階できますと考えるのスコープのフェーズに「方法」"what"と計画フェーズの準備の「ときです」</span><span class="sxs-lookup"><span data-stu-id="49742-103">The Prepare phase of a performance assessment can be thought of as the “how” to the Scope phase’s “what” and the Plan phase’s “when.”</span></span> <span data-ttu-id="49742-104">この時点でパフォーマンス評価はすべての利害関係者必要があります、ラボを実行するため、活動、およびプランのスコープによって、合意しています。</span><span class="sxs-lookup"><span data-stu-id="49742-104">At this point in the performance assessment, all stakeholders should have agreed upon the scope of the engagement and the plans for conducting the lab.</span></span> <span data-ttu-id="49742-105">ここで、プランを実行し、パフォーマンス ラボの実行用に準備する手順を実行のパフォーマンス評価の準備フェーズになります。</span><span class="sxs-lookup"><span data-stu-id="49742-105">It is in the Prepare phase of the performance assessment where the plans are executed and steps are taken to get ready for execution of the performance lab.</span></span>  

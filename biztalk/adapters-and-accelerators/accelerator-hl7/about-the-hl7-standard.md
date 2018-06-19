@@ -1,18 +1,18 @@
 ---
-title: "HL7 標準について |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 標準について |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - standards [HL7]
 - HL7, standards
 - Health Level Seven (HL7)
 ms.assetid: 15f26ae3-d1ad-40a4-aafe-7148ef30cadb
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204842"
 ---
 # <a name="about-the-hl7-standard"></a><span data-ttu-id="f78b7-102">HL7 標準について</span><span class="sxs-lookup"><span data-stu-id="f78b7-102">About the HL7 Standard</span></span>
 <span data-ttu-id="f78b7-103">正常性レベル 7 (HL7) 標準の目的は、医療環境での通信を容易にです。</span><span class="sxs-lookup"><span data-stu-id="f78b7-103">The purpose of the Health Level Seven (HL7) standard is to facilitate communication in health care environments.</span></span> <span data-ttu-id="f78b7-104">主な目的を排除またはそれ以外の場合必要なカスタム インターフェイス プログラミングおよびプログラムのメンテナンスを大幅に短縮する、医療コンピューター アプリケーション間のデータの交換標準を提供します。</span><span class="sxs-lookup"><span data-stu-id="f78b7-104">The primary goal is to provide standards for the exchange of data among health care computer applications that eliminate or substantially reduce the custom interface programming and program maintenance that may otherwise be required.</span></span> <span data-ttu-id="f78b7-105">この主な目的は、目標値のセットとして区切ることができます。</span><span class="sxs-lookup"><span data-stu-id="f78b7-105">You can delineate this primary goal as a set of goals:</span></span>  

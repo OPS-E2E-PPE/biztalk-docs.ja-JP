@@ -1,14 +1,14 @@
 ---
-title: "Operations Manager コンソールの情報の表示 |Microsoft ドキュメント"
-ms.custom: 
+title: Operations Manager コンソールの情報の表示 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6acdf425-4c36-4d89-9493-81b33481fe6d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302562"
 ---
 # <a name="viewing-information-in-the-operations-manager-console"></a><span data-ttu-id="d4829-102">Operations Manager コンソールによる情報の表示</span><span class="sxs-lookup"><span data-stu-id="d4829-102">Viewing Information in the Operations Manager Console</span></span>
 <span data-ttu-id="d4829-103">用意されているビューを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を現在の可用性、構成、ヘルス、および BizTalk Server 環境のパフォーマンスを理解する管理パック。</span><span class="sxs-lookup"><span data-stu-id="d4829-103">Use the views provided with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack to understand the current availability, configuration, health, and performance of your BizTalk Server environment.</span></span> <span data-ttu-id="d4829-104">表示には、オブジェクトの長い一覧を含むことができます。</span><span class="sxs-lookup"><span data-stu-id="d4829-104">A view can contain a lengthy list of objects.</span></span> <span data-ttu-id="d4829-105">特定のオブジェクトまたはオブジェクトのグループを見つけるには、Operations Manager ツール バーの [スコープ]、[検索]、および [検索] ボタンを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d4829-105">To find a specific object or group of objects, you can use the Scope, Search, and Find buttons on the Operations Manager toolbar.</span></span> <span data-ttu-id="d4829-106">詳細については、管理の監視データを使用してスコープ、検索する方法を説明および Operations Manager 2007 R2\2012 ヘルプ トピックを検索します。</span><span class="sxs-lookup"><span data-stu-id="d4829-106">For more information, see the How to Manage Monitoring Data Using Scope, Search, and Find topic in Operations Manager 2007 R2\2012 Help.</span></span>  

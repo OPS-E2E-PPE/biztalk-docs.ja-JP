@@ -1,11 +1,11 @@
 ---
-title: "手順 3: 定義する、発行、および Contoso のビジネス ポリシーを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 定義する、発行、および Contoso のビジネス ポリシーを展開する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, deploying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - private process tutorial, creating policies
 - policies, creating
 ms.assetid: 529b16d8-226b-4046-a95d-64162ebd59a3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210666"
 ---
 # <a name="step-3-defining-publishing-and-deploying-the-business-policy-for-contoso"></a><span data-ttu-id="99c59-102">手順 3: を定義する、発行、および Contoso のビジネス ポリシーを展開します。</span><span class="sxs-lookup"><span data-stu-id="99c59-102">Step 3: Defining, Publishing, and Deploying the Business Policy for Contoso</span></span>
 <span data-ttu-id="99c59-103">ここでは、緊急時に使用するために、Contoso が製造する各製品を決められた数量だけ取っておくビジネス ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="99c59-103">In this step, you create a business policy that reserves a set quantity of units for each product that Contoso manufactures to be used in case of an emergency.</span></span>  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25969504"
 ---
 # <a name="how-to-audit-sso"></a><span data-ttu-id="c9efe-102">SSO を監査する方法</span><span class="sxs-lookup"><span data-stu-id="c9efe-102">How to Audit SSO</span></span>
 <span data-ttu-id="c9efe-103">MMC スナップインまたはコマンド ラインを使用して、成功と失敗の監査のレベルを設定できます。</span><span class="sxs-lookup"><span data-stu-id="c9efe-103">You can use the MMC Snap-In or the command line to set both the positive and negative auditing levels.</span></span> <span data-ttu-id="c9efe-104">監査の結果は、イベント ログと、データベースの監査ログの両方に保存されます。</span><span class="sxs-lookup"><span data-stu-id="c9efe-104">Results of the auditing are stored in both the event logs and the audit logs of the database.</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/20/2018
   
 2.  <span data-ttu-id="c9efe-123">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="c9efe-123">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="c9efe-124">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="c9efe-124">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="c9efe-125">型**ssoconfig – auditlevel\<正\>\<負\>**ここで、 **\<正\>**のレベルです操作が成功したときに監査と**\<負\>**操作が失敗したときの監査のレベルです。</span><span class="sxs-lookup"><span data-stu-id="c9efe-125">Type **ssoconfig –auditlevel \<positive\>\<negative\>**, where **\<positive\>** is the level of auditing when actions succeed, and **\<negative\>** is the level of auditing when actions fail.</span></span>  
+3.  <span data-ttu-id="c9efe-125">型**ssoconfig – auditlevel\<正\>\<負\>** ここで、 **\<正\>** のレベルです操作が成功したときに監査と**\<負\>** 操作が失敗したときの監査のレベルです。</span><span class="sxs-lookup"><span data-stu-id="c9efe-125">Type **ssoconfig –auditlevel \<positive\>\<negative\>**, where **\<positive\>** is the level of auditing when actions succeed, and **\<negative\>** is the level of auditing when actions fail.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="c9efe-126">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="c9efe-126">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/20/2018
   
 2.  <span data-ttu-id="c9efe-129">コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="c9efe-129">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="c9efe-130">既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="c9efe-130">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="c9efe-131">型**ssomanage – updatedb\<更新ファイル\>**ここで、 **\<更新ファイル\>**はパスとファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="c9efe-131">Type **ssomanage –updatedb \<update file\>**, where **\<update file\>**is the path and name of the file.</span></span>  
+3.  <span data-ttu-id="c9efe-131">型**ssomanage – updatedb\<更新ファイル\>** ここで、 **\<更新ファイル\>** はパスとファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="c9efe-131">Type **ssomanage –updatedb \<update file\>**, where **\<update file\>** is the path and name of the file.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="c9efe-132">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="c9efe-132">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

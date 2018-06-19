@@ -1,17 +1,17 @@
 ---
-title: "WCF チャネル モデルを使用して Oracle データベース LOB データ型をストリーミング |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して Oracle データベース LOB データ型をストリーミング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, Oracle LOB data types
 - WCF channel model, streaming Oracle LOB data types
 ms.assetid: 513a7cb8-495d-4019-bce1-b5babca3629f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215794"
 ---
 # <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a><span data-ttu-id="a6aae-102">ストリーミングの Oracle データベース LOB データ型 WCF チャネル モデルを使用します。</span><span class="sxs-lookup"><span data-stu-id="a6aae-102">Streaming Oracle Database LOB Data Types Using the WCF Channel Model</span></span>
 <span data-ttu-id="a6aae-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]エンド ツー エンドの特定の操作の LOB データのストリーミングをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="a6aae-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports end-to-end streaming of LOB data for certain operations.</span></span> <span data-ttu-id="a6aae-104">このトピックのセクションでは、WCF チャネル モデルを使用すると、LOB データのストリーミングを実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a6aae-104">The sections in this topic describe how to implement streaming for LOB data when you use the WCF channel model.</span></span>  

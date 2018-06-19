@@ -1,18 +1,18 @@
 ---
-title: "バッチ メッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: バッチ メッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, batching
 - batching, examples
 - batching, batch types
 ms.assetid: 264f91b5-3e33-4b87-9da3-866eaa464b0f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204762"
 ---
 # <a name="batch-message-processing"></a><span data-ttu-id="f060e-102">バッチ メッセージの処理</span><span class="sxs-lookup"><span data-stu-id="f060e-102">Batch Message Processing</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="f060e-103">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) HL7 の 3 種類の処理 2.X バッチ シナリオ。</span><span class="sxs-lookup"><span data-stu-id="f060e-103"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) handles three types of HL7 2.X batch scenarios:</span></span>  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22207826"
 ---
 # <a name="using-the-pip-specification-to-create-a-process-configuration"></a><span data-ttu-id="52f1f-102">PIP 仕様を使用して、プロセス構成を作成するには</span><span class="sxs-lookup"><span data-stu-id="52f1f-102">Using the PIP Specification to Create a Process Configuration</span></span>
 <span data-ttu-id="52f1f-103">ダウンロードした後、プロセス PIP (Partner Interface)、RosettaNet 組織 (RosettaNet.org) から、ダウンロード パッケージには、PIP 仕様ドキュメントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="52f1f-103">After you download a Partner Interface Process (PIP) from the RosettaNet organization (from RosettaNet.org), the download package includes a PIP specification document.</span></span> <span data-ttu-id="52f1f-104">このドキュメントには、[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] 管理コンソールでプロセス構成を作成する場合に使用する設定についてのガイダンスが記載されています。</span><span class="sxs-lookup"><span data-stu-id="52f1f-104">This document contains guidance on what settings to use when you create a process configuration in the [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Management Console.</span></span>  

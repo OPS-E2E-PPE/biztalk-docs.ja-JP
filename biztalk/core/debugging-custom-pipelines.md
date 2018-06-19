@@ -1,14 +1,14 @@
 ---
-title: "カスタム パイプラインのデバッグ |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム パイプラインのデバッグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 27e5445a-6415-4c52-a450-b74a71fc4aa2
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970352"
 ---
 # <a name="debugging-custom-pipelines"></a><span data-ttu-id="625eb-102">カスタム パイプラインのデバッグ</span><span class="sxs-lookup"><span data-stu-id="625eb-102">Debugging Custom Pipelines</span></span>
 <span data-ttu-id="625eb-103">カスタム パイプラインでメッセージ処理が失敗するときは、ソース レベルのデバッグを使用して、問題の特定と修正を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="625eb-103">When message processing fails in your custom pipeline, you can use source level debugging to identify and correct problems.</span></span> <span data-ttu-id="625eb-104">ソース レベルのデバッグは、BTSNTSVC.exe (カスタム パイプラインを配置している場合) または Pipeline.exe (スタンドアロン パイプライン ツールを使用している場合) にアタッチすることにより、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] デバッガーを使用して行います。</span><span class="sxs-lookup"><span data-stu-id="625eb-104">Source level debugging is done using the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] debugger by attaching to BTSNTSVC.exe (if the custom pipeline is deployed) or Pipeline.exe (if using the stand-alone pipeline tool).</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="625eb-112">カスタム パイプライン プロジェクトのソリューションを [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に読み込みます。</span><span class="sxs-lookup"><span data-stu-id="625eb-112">Load the custom pipeline project solution into [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-2.  <span data-ttu-id="625eb-113">ソリューションの出力パスを変更する*\<インストール フォルダー\>*\Pipeline Components です。</span><span class="sxs-lookup"><span data-stu-id="625eb-113">Change the output path for your solution to *\<Installation Folder\>*\Pipeline Components.</span></span> <span data-ttu-id="625eb-114">ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー\>* \Pipeline components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="625eb-114">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>*\Pipeline Components directory.</span></span>  
+2.  <span data-ttu-id="625eb-113">ソリューションの出力パスを変更する*\<インストール フォルダー\>* \Pipeline Components です。</span><span class="sxs-lookup"><span data-stu-id="625eb-113">Change the output path for your solution to *\<Installation Folder\>* \Pipeline Components.</span></span> <span data-ttu-id="625eb-114">ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー\>* \Pipeline components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="625eb-114">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>* \Pipeline Components directory.</span></span>  
   
 3.  <span data-ttu-id="625eb-115">内から[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]をクリックして、ソリューションをデプロイ**ビルド**&#124;です。**展開**です。</span><span class="sxs-lookup"><span data-stu-id="625eb-115">From within [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], deploy the solution by clicking **Build** &#124; **Deploy**.</span></span>  
   
@@ -56,9 +57,9 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="625eb-133">カスタム パイプライン プロジェクトのソリューションを [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に読み込みます。</span><span class="sxs-lookup"><span data-stu-id="625eb-133">Load the custom pipeline project solution into [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-2.  <span data-ttu-id="625eb-134">ソリューションの出力パスを変更する*\<インストール フォルダー\>*\Pipeline Components です。</span><span class="sxs-lookup"><span data-stu-id="625eb-134">Change the output path for your solution to *\<Installation Folder\>*\Pipeline Components.</span></span> <span data-ttu-id="625eb-135">ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー\>* \Pipeline components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="625eb-135">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>*\Pipeline Components directory.</span></span>  
+2.  <span data-ttu-id="625eb-134">ソリューションの出力パスを変更する*\<インストール フォルダー\>* \Pipeline Components です。</span><span class="sxs-lookup"><span data-stu-id="625eb-134">Change the output path for your solution to *\<Installation Folder\>* \Pipeline Components.</span></span> <span data-ttu-id="625eb-135">ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしをクリックして出力パスを変更、**参照** ボタンを選択して、 *\<インストール フォルダー\>* \Pipeline components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="625eb-135">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>* \Pipeline Components directory.</span></span>  
   
-3.  <span data-ttu-id="625eb-136">ソリューションの開始アクションを変更します。</span><span class="sxs-lookup"><span data-stu-id="625eb-136">Change the start action for your solution.</span></span> <span data-ttu-id="625eb-137">ソリューション エクスプ ローラーでプロジェクトを右クリックし、デバッグ タブをクリックして、外部プログラムの開始 をクリックし をクリック**しています.**</span><span class="sxs-lookup"><span data-stu-id="625eb-137">In Solution Explorer, right-click your project, click the Debug tab, click Start external program, then click **…**</span></span> <span data-ttu-id="625eb-138">移動して*\<インストール フォルダー\>*\SDK\Utilities\PipelineTools Pipeline.exe を選択します。</span><span class="sxs-lookup"><span data-stu-id="625eb-138">and navigate to *\<Installation Folder\>*\SDK\Utilities\PipelineTools and choose Pipeline.exe.</span></span> <span data-ttu-id="625eb-139">[開始オプション]、コンポーネントの適切なコマンドライン引数を入力します。</span><span class="sxs-lookup"><span data-stu-id="625eb-139">Under Start Options, enter the command line arguments appropriate for your component.</span></span> <span data-ttu-id="625eb-140">Pipeline.exe の詳細については、次を参照してください。[パイプライン ツール](../core/pipeline-tools.md)です。</span><span class="sxs-lookup"><span data-stu-id="625eb-140">For more information on Pipeline.exe, see [Pipeline Tools](../core/pipeline-tools.md).</span></span> <span data-ttu-id="625eb-141">一般的な構成では、パイプラインとサンプル ファイルを指定します。</span><span class="sxs-lookup"><span data-stu-id="625eb-141">A typical configuration specifies the pipeline and a sample file:</span></span>  
+3.  <span data-ttu-id="625eb-136">ソリューションの開始アクションを変更します。</span><span class="sxs-lookup"><span data-stu-id="625eb-136">Change the start action for your solution.</span></span> <span data-ttu-id="625eb-137">ソリューション エクスプ ローラーでプロジェクトを右クリックし、デバッグ タブをクリックして、外部プログラムの開始 をクリックし をクリック**しています.**</span><span class="sxs-lookup"><span data-stu-id="625eb-137">In Solution Explorer, right-click your project, click the Debug tab, click Start external program, then click **…**</span></span> <span data-ttu-id="625eb-138">移動して*\<インストール フォルダー\>* \SDK\Utilities\PipelineTools Pipeline.exe を選択します。</span><span class="sxs-lookup"><span data-stu-id="625eb-138">and navigate to *\<Installation Folder\>* \SDK\Utilities\PipelineTools and choose Pipeline.exe.</span></span> <span data-ttu-id="625eb-139">[開始オプション]、コンポーネントの適切なコマンドライン引数を入力します。</span><span class="sxs-lookup"><span data-stu-id="625eb-139">Under Start Options, enter the command line arguments appropriate for your component.</span></span> <span data-ttu-id="625eb-140">Pipeline.exe の詳細については、次を参照してください。[パイプライン ツール](../core/pipeline-tools.md)です。</span><span class="sxs-lookup"><span data-stu-id="625eb-140">For more information on Pipeline.exe, see [Pipeline Tools](../core/pipeline-tools.md).</span></span> <span data-ttu-id="625eb-141">一般的な構成では、パイプラインとサンプル ファイルを指定します。</span><span class="sxs-lookup"><span data-stu-id="625eb-141">A typical configuration specifies the pipeline and a sample file:</span></span>  
   
     ```  
     <Path>\YourPipeline.btp -d <Path>\YourTestFile.txt -c  

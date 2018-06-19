@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 設定のベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 設定のベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e62024e1-f502-45a8-932f-edd8460bcf5f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299522"
 ---
 # <a name="best-practices-for-biztalk-server-settings"></a><span data-ttu-id="abe23-102">BizTalk Server 設定のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="abe23-102">Best Practices for BizTalk Server Settings</span></span>
 <span data-ttu-id="abe23-103">このトピックの運用の準備手順を実行する際に従う必要のあるベスト プラクティスの一覧[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="abe23-103">This topic lists best practices that you should follow as you perform operational readiness procedures for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

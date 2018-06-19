@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンス基準を確立する |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンス基準を確立する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 181011d1-aa74-43fe-b05a-30b043956d70
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299986"
 ---
 # <a name="establishing-performance-criteria"></a><span data-ttu-id="6a4ad-102">パフォーマンス基準を確立します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-102">Establishing Performance Criteria</span></span>
 <span data-ttu-id="6a4ad-103">BizTalk Server ソリューションのパフォーマンスの目標は、通常、2 つのカテゴリ、スループットや待機時間のいずれかに分類されます。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-103">The performance goals of a BizTalk Server solution typically fall into one of two categories, throughput or latency.</span></span> <span data-ttu-id="6a4ad-104">このトピックでは、スループットや、BizTalk Server ソリューションの待機時間を評価するときに考慮すべき要因について説明します。</span><span class="sxs-lookup"><span data-stu-id="6a4ad-104">This topic describes the factors that should be considered when evaluating the throughput or latency of a BizTalk Server solution.</span></span>  

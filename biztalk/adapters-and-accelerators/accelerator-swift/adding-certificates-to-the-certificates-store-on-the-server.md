@@ -1,17 +1,17 @@
 ---
-title: "サーバー上の証明書ストアに証明書を追加する |Microsoft ドキュメント"
-ms.custom: 
+title: サーバー上の証明書ストアに証明書を追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, adding to certificates store
 - certificates store
 ms.assetid: 075cfae8-dce7-46f7-9539-796f03229ea2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209570"
 ---
 # <a name="adding-certificates-to-the-certificates-store-on-the-server"></a><span data-ttu-id="b17c5-102">サーバー上の証明書ストアに証明書を追加します。</span><span class="sxs-lookup"><span data-stu-id="b17c5-102">Adding Certificates to the Certificates Store on the Server</span></span>
 <span data-ttu-id="b17c5-103">サーバー コンピューター上の証明書 (ローカル コンピューター) ストアにその他のユーザー フォルダーに証明書を追加するのにには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="b17c5-103">Use the following steps to add certificates to the Other People folder in the Certificates (Local Computer) store on the server computer.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="b17c5-106">前の手順 (追加する証明書クライアントで証明書ストアを) 開く MMC ウィンドウをまだある場合は場合、は、この手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="b17c5-106">If you still have the MMC window open from the previous procedure (Adding Certificates to the Certificates Store on the Client), you can use it for this procedure.</span></span>  
   
-2.  <span data-ttu-id="b17c5-107">管理コンソール ウィンドウで、**証明書 (ローカル コンピューター)**フォルダーの順に展開および**ほかの人**です。</span><span class="sxs-lookup"><span data-stu-id="b17c5-107">In the Administration Console window, expand the **Certificates (Local Computer)** folder, and then expand **Other People**.</span></span>  
+2.  <span data-ttu-id="b17c5-107">管理コンソール ウィンドウで、**証明書 (ローカル コンピューター)** フォルダーの順に展開および**ほかの人**です。</span><span class="sxs-lookup"><span data-stu-id="b17c5-107">In the Administration Console window, expand the **Certificates (Local Computer)** folder, and then expand **Other People**.</span></span>  
   
 3.  <span data-ttu-id="b17c5-108">右クリック**証明書**、 をポイント**すべてのタスク**、クリックして**インポート**です。</span><span class="sxs-lookup"><span data-stu-id="b17c5-108">Right-click **Certificates**, point to **All Tasks**, and then click **Import**.</span></span>  
   

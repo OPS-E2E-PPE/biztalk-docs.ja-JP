@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベース アダプターの接続 URI の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターの接続 URI の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI, specifying at design time
 - connection URI, specifying at run time
 ms.assetid: 9f302b67-0bcc-44d1-9517-10d402873540
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216946"
 ---
 # <a name="configure-the-connection-uri-for-the-oracle-database-adapter"></a><span data-ttu-id="d00ed-102">Oracle データベース アダプターの接続 URI の構成します。</span><span class="sxs-lookup"><span data-stu-id="d00ed-102">Configure the connection URI for the Oracle Database adapter</span></span>
 <span data-ttu-id="d00ed-103">接続 URI は、Oracle データベースへの接続に必要なパラメーターを含む接続文字列です。</span><span class="sxs-lookup"><span data-stu-id="d00ed-103">A connection URI is a connection string that contains parameters required to connect to the Oracle database.</span></span> <span data-ttu-id="d00ed-104">使用しているときに、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]で[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]メタデータを生成する Oracle データベースに接続する URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d00ed-104">While using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you must specify the URI to connect to the Oracle database to generate the metadata.</span></span> <span data-ttu-id="d00ed-105">使用して、オーケストレーションの構成中に、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、操作を実行する Oracle データベースに接続する URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d00ed-105">While configuring an orchestration using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the URI to connect to the Oracle database to perform operations.</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="d00ed-124">をクリックして、**バインド プロパティ**タブをクリックし、バインディングの値を指定、存在する場合、スキーマを生成する前に必要とします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-124">Click the **Binding Properties** tab, and specify the binding values, if any, which are required before generating the schema.</span></span> <span data-ttu-id="d00ed-125">バインドのプロパティの詳細については、次を参照してください。 [Oracle データベースのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="d00ed-125">For more information about binding properties, see [Configure the binding properties for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md).</span></span>  
   
-8.  <span data-ttu-id="d00ed-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-126">Click **OK**.</span></span>  
+8.  <span data-ttu-id="d00ed-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-126">Click **OK**.</span></span>  
   
 #### <a name="to-specify-the-connection-uri-using-add-adapter-metadata-wizard"></a><span data-ttu-id="d00ed-127">アダプター メタデータの追加ウィザードを使用して接続 URI を指定するには</span><span class="sxs-lookup"><span data-stu-id="d00ed-127">To specify the Connection URI using Add Adapter Metadata Wizard</span></span>  
   
@@ -65,14 +66,14 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="d00ed-132">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="d00ed-132">**Categories**</span></span>|<span data-ttu-id="d00ed-133">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="d00ed-133">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="d00ed-134">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="d00ed-134">**Templates**</span></span>|<span data-ttu-id="d00ed-135">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="d00ed-135">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="d00ed-136">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-136">Click **Add**.</span></span> <span data-ttu-id="d00ed-137">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d00ed-137">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="d00ed-136">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-136">Click **Add**.</span></span> <span data-ttu-id="d00ed-137">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d00ed-137">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="d00ed-138">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] **Wcf-oracledb**です。</span><span class="sxs-lookup"><span data-stu-id="d00ed-138">In the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], select **WCF-OracleDB**.</span></span> <span data-ttu-id="d00ed-139">コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="d00ed-139">Select the computer on which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="d00ed-140">BizTalk で構成された Wcf-oracledb ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="d00ed-140">If you already have a WCF-OracleDB port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  <span data-ttu-id="d00ed-141">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-141">Click **Next**.</span></span>  
+5.  <span data-ttu-id="d00ed-141">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-141">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="d00ed-142">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**oracleDBBinding**、クリックして**構成**.</span><span class="sxs-lookup"><span data-stu-id="d00ed-142">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **oracleDBBinding**, and then click **Configure**.</span></span>  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="d00ed-148">をクリックして、**バインド プロパティ**タブをクリックし、バインディングの値を指定、存在する場合、スキーマを生成する前に必要とします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-148">Click the **Binding Properties** tab, and specify the binding values, if any, which are required before generating the schema.</span></span> <span data-ttu-id="d00ed-149">バインドのプロパティの詳細については、次を参照してください。 [Oracle データベースのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="d00ed-149">For more information about binding properties, see [Configure the binding properties for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md).</span></span>  
   
-10. <span data-ttu-id="d00ed-150">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-150">Click **OK**.</span></span>  
+10. <span data-ttu-id="d00ed-150">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-150">Click **OK**.</span></span>  
   
 ## <a name="specifying-the-connection-uri-from-the-biztalk-server-administration-console"></a><span data-ttu-id="d00ed-151">接続を BizTalk Server 管理コンソールから URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="d00ed-151">Specifying the Connection URI from the BizTalk Server Administration Console</span></span>  
  <span data-ttu-id="d00ed-152">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または Wcf-oracledb ポートの構成の一部として、資格情報を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d00ed-152">From the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the credentials as part of the WCF-Custom or WCF-OracleDB port configuration.</span></span>  
@@ -119,7 +120,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="d00ed-167">選択**から資格情報を取得関連アプリケーション**オプション、および関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="d00ed-167">Select **Get credentials from affiliate application** option, and specify an affiliate application.</span></span>  
   
-6.  <span data-ttu-id="d00ed-168">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-168">Click **OK**.</span></span>  
+6.  <span data-ttu-id="d00ed-168">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-168">Click **OK**.</span></span>  
   
 #### <a name="to-specify-the-connection-uri-for-the-wcf-oracledb-port"></a><span data-ttu-id="d00ed-169">Wcf-oracledb ポートの接続 URI を指定するには</span><span class="sxs-lookup"><span data-stu-id="d00ed-169">To specify the Connection URI for the WCF-OracleDB port</span></span>  
   
@@ -156,7 +157,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="d00ed-187">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="d00ed-187">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-8.  <span data-ttu-id="d00ed-188">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-188">Click **OK**.</span></span>  
+8.  <span data-ttu-id="d00ed-188">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d00ed-188">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="d00ed-189">参照</span><span class="sxs-lookup"><span data-stu-id="d00ed-189">See Also</span></span>  
 <span data-ttu-id="d00ed-190">[Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md) </span><span class="sxs-lookup"><span data-stu-id="d00ed-190">[Building Blocks to develop BizTalk Applications with Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md) </span></span>  

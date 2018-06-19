@@ -1,14 +1,14 @@
 ---
-title: "ストリーミングのメモリ使用率の最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: ストリーミングのメモリ使用率の最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8ba8820-65b4-4161-9f7a-3ae3d39e3d11
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299346"
 ---
 # <a name="optimizing-memory-usage-with-streaming"></a><span data-ttu-id="9e121-102">ストリーミングのメモリ使用量を最適化します。</span><span class="sxs-lookup"><span data-stu-id="9e121-102">Optimizing Memory Usage with Streaming</span></span>
 <span data-ttu-id="9e121-103">このトピックでは、ストリーミングのパターンを使用したオーケストレーションでメッセージを読み込むときに、WCF トランスポートを使用して、またはサイズの大きいメッセージの送受信時のメッセージのメモリ容量を最小限に抑えるための推奨事項を説明します。</span><span class="sxs-lookup"><span data-stu-id="9e121-103">This topic provides recommendations for using streaming patterns to minimize message memory footprints when sending or receiving large messages with a WCF transport or when loading messages in orchestrations.</span></span>   

@@ -1,18 +1,18 @@
 ---
-title: "HL7 のデータ型の ID |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 のデータ型の ID |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data types, data type ID
 - data types, messages
 - messages, data types
 ms.assetid: d1412886-ff0b-4333-b01e-1c3ae45240e2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204522"
 ---
 # <a name="data-type-id-in-hl7"></a><span data-ttu-id="11bb9-102">HL7 のデータ型の ID</span><span class="sxs-lookup"><span data-stu-id="11bb9-102">Data Type ID in HL7</span></span>
 <span data-ttu-id="11bb9-103">HL7 V2.1 場合は、データの種類 ID は、未定義のデータ型のプレース ホルダーです。</span><span class="sxs-lookup"><span data-stu-id="11bb9-103">In the case of HL7 V2.1, the data type ID is a placeholder for undefined data types.</span></span> <span data-ttu-id="11bb9-104">その使用例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="11bb9-104">The following are examples of its usage:</span></span>  

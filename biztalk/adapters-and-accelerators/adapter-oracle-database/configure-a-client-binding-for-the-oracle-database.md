@@ -1,18 +1,18 @@
 ---
-title: "Oracle データベースのバインディングをクライアントの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースのバインディングをクライアントの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - client binding, specifying in code
 - WCF client, creating
 - client binding, specifying in configuration file
 ms.assetid: f18c7296-c28a-4dec-9514-5299c8c2dffe
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214610"
 ---
 # <a name="configure-a-client-binding-for-the-oracle-database"></a><span data-ttu-id="85e96-102">Oracle データベースのバインド、クライアントを構成します。</span><span class="sxs-lookup"><span data-stu-id="85e96-102">Configure a client binding for the Oracle Database</span></span>
 <span data-ttu-id="85e96-103">WCF クライアント クラスを生成した後を WCF クライアント (インスタンス) を作成し、使用するには、そのメソッドを呼び出す、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="85e96-103">After you have generated the WCF client class, you can create a WCF client (instance) and invoke its methods to consume the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="85e96-104">操作用の WCF クライアント クラスとヘルパー コードを生成する方法についてを[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公開を参照してください[Oracle データベース ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="85e96-104">For information about how to generate the WCF client class and helper code for operations that the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes, see [Generate a WCF Client or a WCF Service Contract for Oracle Database Solution Artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span>  

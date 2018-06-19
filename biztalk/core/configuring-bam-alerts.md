@@ -1,11 +1,11 @@
 ---
-title: "BAM 警告の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 警告の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, alerts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - alerts, configuring
 - managing [BAM definitions], configuring alerts
 ms.assetid: 29327466-c8e9-41e8-bc12-f3ac6b5d3096
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968888"
 ---
 # <a name="configuring-bam-alerts"></a><span data-ttu-id="25389-102">BAM 警告の構成</span><span class="sxs-lookup"><span data-stu-id="25389-102">Configuring BAM Alerts</span></span>
 <span data-ttu-id="25389-103">管理者は、BAM 警告フレームワークの特定の要素を変更できます。</span><span class="sxs-lookup"><span data-stu-id="25389-103">Administrators can modify certain elements of the BAM alert framework.</span></span> <span data-ttu-id="25389-104">このトピックでは、管理者が使用できる構成オプションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="25389-104">This topic describes the configuration options available to administrators.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="25389-115">次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="25389-115">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  <span data-ttu-id="25389-116">コマンド プロンプトで入力して、追跡フォルダーに移動**cd"C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking"**または**cd"C:\Program Files (x86) \Microsoft BizTalkサーバー\<バージョン\>\Tracking"** 64 ビット コンピューターにします。</span><span class="sxs-lookup"><span data-stu-id="25389-116">Navigate to the tracking folder by typing at the command prompt **cd “C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking”** or **cd “C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\Tracking”** on a 64 bit computer.</span></span> <span data-ttu-id="25389-117">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="25389-117">Press **ENTER**.</span></span>  
+2.  <span data-ttu-id="25389-116">コマンド プロンプトで入力して、追跡フォルダーに移動**cd"C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking"** または**cd"C:\Program Files (x86) \Microsoft BizTalkサーバー\<バージョン\>\Tracking"** 64 ビット コンピューターにします。</span><span class="sxs-lookup"><span data-stu-id="25389-116">Navigate to the tracking folder by typing at the command prompt **cd “C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking”** or **cd “C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\Tracking”** on a 64 bit computer.</span></span> <span data-ttu-id="25389-117">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="25389-117">Press **ENTER**.</span></span>  
   
 3.  <span data-ttu-id="25389-118">ADF ファイルを取得します。</span><span class="sxs-lookup"><span data-stu-id="25389-118">Retrieve the ADF file.</span></span> <span data-ttu-id="25389-119">型**cscript ProcessBamNSFiles.vbs-取得\<ConfigFilePath\> \<構成ファイルのパス\> \< PID サーバー\> \< PID データベース\>** .</span><span class="sxs-lookup"><span data-stu-id="25389-119">Type **cscript ProcessBamNSFiles.vbs -Get \<ConfigFilePath\> \<ADFFilePath\> \< PID Server\> \< PID database \>**.</span></span> <span data-ttu-id="25389-120">構成ファイルのパス、ADF ファイルのパス、PID サーバー、および PID データベースは、インストール環境に適した値に置き換えてください。</span><span class="sxs-lookup"><span data-stu-id="25389-120">Replacing the ConfigFilePath, ADFFilePath, PID Server, and PID database with the appropriate values for your installation.</span></span>  
   

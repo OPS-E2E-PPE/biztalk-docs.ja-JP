@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8fd279fb-2c68-4de4-a586-5a8e42a685ff
-caps.latest.revision: ''
+caps.latest.revision: 48
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "23450299"
 ---
 # <a name="adapters-in-biztalk-server"></a><span data-ttu-id="8c375-103">BizTalk Server のアダプター</span><span class="sxs-lookup"><span data-stu-id="8c375-103">Adapters in BizTalk Server</span></span>
 <span data-ttu-id="8c375-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の主な設計目標の 1 つとして、取引先間でのビジネス ドキュメントの交換を容易にする点が挙げられます。</span><span class="sxs-lookup"><span data-stu-id="8c375-104">One of the primary design goals of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is to facilitate the exchange of business documents between trading partners.</span></span> <span data-ttu-id="8c375-105">この目標を達成するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、一般的に知られているデータ プロトコルやドキュメント形式を使用して BizTalk Server と取引先との間に接続を提供するアダプタがいくつか用意されています。</span><span class="sxs-lookup"><span data-stu-id="8c375-105">To help meet this goal, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes several adapters that provide connectivity between BizTalk Server and trading partners using commonly recognized data protocols and document formats.</span></span> <span data-ttu-id="8c375-106">このトピックでは、アダプタとアダプタを使用する理由について説明します。</span><span class="sxs-lookup"><span data-stu-id="8c375-106">This topic discusses what an adapter is and why you use an adapter.</span></span>  

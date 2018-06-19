@@ -1,18 +1,18 @@
 ---
-title: "手順 4: 作成、ADT を受け入れるための受信ポート ^ MLLP アダプターを使用して ADT システムから A03 メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: 作成、ADT を受け入れるための受信ポート ^ MLLP アダプターを使用して ADT システムから A03 メッセージ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2015-12-09
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive ports
 - end-to-end tutorial, receive ports
 - creating, receive ports
 ms.assetid: 3c4192d5-d011-48b0-a3f9-47c5225780ee
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207738"
 ---
 # <a name="step-4-create-the-receive-port-for-accepting-adta03-messages-from-adt-systems-using-the-mllp-adapter"></a><span data-ttu-id="2367b-102">手順 4: 作成、ADT を受け入れるための受信ポート ^ MLLP アダプターを使用して ADT システムから A03 メッセージ</span><span class="sxs-lookup"><span data-stu-id="2367b-102">Step 4: Create the Receive Port for Accepting ADT^A03 Messages from ADT Systems Using the MLLP Adapter</span></span>
 <span data-ttu-id="2367b-103">受信ポートを使用して、受信メッセージの受信場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="2367b-103">You use the receive port to specify the receive location for incoming messages.</span></span> <span data-ttu-id="2367b-104">ADT を受け付ける受信ポートを作成する次の手順に従います ^ MLLP アダプターを使用して、ADT システムから A03 メッセージ。</span><span class="sxs-lookup"><span data-stu-id="2367b-104">Use the following procedure to create the receive port for accepting ADT^A03 messages from the ADT System using the MLLP adapter.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 7. <span data-ttu-id="2367b-113">**トランスポート**セクションで、**型**、し、 **MLLP**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="2367b-113">In the **Transport** section, select **Type**, and then select **MLLP** from the drop-down list.</span></span>  
   
-8. <span data-ttu-id="2367b-114">**[構成]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2367b-114">Select **Configure**.</span></span> <span data-ttu-id="2367b-115">**MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="2367b-115">In **MLLP Transport Properties**, configure the following, and then select **OK**.</span></span>  
+8. <span data-ttu-id="2367b-114">**[構成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2367b-114">Select **Configure**.</span></span> <span data-ttu-id="2367b-115">**MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="2367b-115">In **MLLP Transport Properties**, configure the following, and then select **OK**.</span></span>  
   
     |<span data-ttu-id="2367b-116">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2367b-116">Use this</span></span>|<span data-ttu-id="2367b-117">目的</span><span class="sxs-lookup"><span data-stu-id="2367b-117">To do this</span></span>|  
     |---|---|  

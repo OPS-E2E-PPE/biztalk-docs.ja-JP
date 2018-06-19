@@ -1,14 +1,14 @@
 ---
-title: "インストール後の構成データベース Optimizations2 |Microsoft ドキュメント"
-ms.custom: 
+title: インストール後の構成データベース Optimizations2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 609eda22-8399-4b7c-b860-21b495d2f68d
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302666"
 ---
 # <a name="post-configuration-database-optimizations"></a><span data-ttu-id="89d39-102">インストール後の構成データベースの最適化</span><span class="sxs-lookup"><span data-stu-id="89d39-102">Post-Configuration Database Optimizations</span></span>
 <span data-ttu-id="89d39-103">推奨事項に従うだけでなく[事前構成データベース Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)、いくつかの手順は、SQL Server 上の BizTalk Server データベースのパフォーマンスを最適化するために従う必要があります*後*BizTalk Server がインストールされているし、BizTalk Server データベースが構成されています。</span><span class="sxs-lookup"><span data-stu-id="89d39-103">In addition to following the recommendations in [Pre-Configuration Database Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md), several steps should be followed to optimize BizTalk Server database performance on SQL Server *after* BizTalk Server has been installed and the BizTalk Server databases have been configured.</span></span> <span data-ttu-id="89d39-104">このトピックでは、これらの最適化の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="89d39-104">This topic provides a list of these optimizations.</span></span>  
@@ -55,9 +56,9 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="89d39-138">**BizTalk DTADB (BizTalk 追跡データベース ファイル):** 100 MB の増加に 2048 MB のファイル サイズと最大 1024 MB のログ ファイルに 100 MB の拡張を持つデータ ファイル。</span><span class="sxs-lookup"><span data-stu-id="89d39-138">**BizTalk DTADB (BizTalk Tracking database files):** Data file having a file size of 2048 MB with 100 MB growth and a log file of 1024 MB with 100 MB growth.</span></span>  
   
--   <span data-ttu-id="89d39-139">**BizTalkMgmtdb (BizTalk 管理データベース ファイル):**データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。</span><span class="sxs-lookup"><span data-stu-id="89d39-139">**BizTalkMgmtdb (BizTalk Management database files):** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
+-   <span data-ttu-id="89d39-139">**BizTalkMgmtdb (BizTalk 管理データベース ファイル):** データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。</span><span class="sxs-lookup"><span data-stu-id="89d39-139">**BizTalkMgmtdb (BizTalk Management database files):** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
   
--   <span data-ttu-id="89d39-140">**SSODB:**データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。</span><span class="sxs-lookup"><span data-stu-id="89d39-140">**SSODB:** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
+-   <span data-ttu-id="89d39-140">**SSODB:** データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。</span><span class="sxs-lookup"><span data-stu-id="89d39-140">**SSODB:** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
   
 -   <span data-ttu-id="89d39-141">**BizTalkMsgBoxDb (BizTalk メッセージ ボックス データベース):** 8 つのデータ ファイルは、それぞれは 100 MB の増加に 2 GB のファイル サイズと 20 GB のログ ファイルに 100 MB 拡張します。</span><span class="sxs-lookup"><span data-stu-id="89d39-141">**BizTalkMsgBoxDb (BizTalk MessageBox databases):** 8 data files, each having a file size of 2 GB with 100 MB growth and a log file of 20 GB with 100 MB growth.</span></span> <span data-ttu-id="89d39-142">BizTalk メッセージ ボックス データベースは、最もアクティブであるため、データ ファイルとトランザクション ログ ファイルをディスク I/O の競合の問題の可能性を減らすために専用のドライブ上に配置するをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="89d39-142">Because the BizTalk MessageBox databases are the most active, we recommend you place the data files and transaction log files on dedicated drives to reduce the likelihood of problems with disk I/O contention.</span></span> <span data-ttu-id="89d39-143">このラボ環境で、1 つのドライブを使用する、次のそれぞれに。</span><span class="sxs-lookup"><span data-stu-id="89d39-143">In our lab environment, we used one drive for each of the following:</span></span>  
   
@@ -91,12 +92,12 @@ GO
 ## <a name="verify-that-the-biztalk-server-sql-agent-jobs-are-running"></a><span data-ttu-id="89d39-153">BizTalk Server の SQL エージェント ジョブが実行されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="89d39-153">Verify that the BizTalk Server SQL Agent Jobs are running</span></span>  
  <span data-ttu-id="89d39-154">BizTalk Server には、動作状況と状態、サーバーを保つために重要な機能を実行するいくつかの SQL Server エージェント ジョブが含まれています。</span><span class="sxs-lookup"><span data-stu-id="89d39-154">BizTalk Server includes several SQL Server Agent jobs that perform important functions to keep your servers operational and healthy.</span></span> <span data-ttu-id="89d39-155">これらのジョブの状態を監視し、エラーなく実行されていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="89d39-155">You should monitor the health of these jobs and ensure they are running without errors.</span></span> <span data-ttu-id="89d39-156">BizTalk Server のパフォーマンスの問題の最も一般的な原因の 1 つは、BizTalk Server の SQL エージェント ジョブは実行中は、さらになる場合、メッセージ ボックス データベースおよび追跡データベース拡張がオフにします。</span><span class="sxs-lookup"><span data-stu-id="89d39-156">One of the most common causes of performance problems in BizTalk Server is the BizTalk Server SQL Agent Jobs are not running, which in turn can cause the MessageBox and Tracking databases to grow unchecked.</span></span> <span data-ttu-id="89d39-157">BizTalk Server の SQL エージェント ジョブが問題なく実行されていることを確認する手順に従います。</span><span class="sxs-lookup"><span data-stu-id="89d39-157">Follow these steps to ensure the BizTalk Server SQL Agent Jobs are running without problems:</span></span>  
   
-1.  <span data-ttu-id="89d39-158">**SQL Server エージェント サービスが実行されていることを確認してください。**です。</span><span class="sxs-lookup"><span data-stu-id="89d39-158">**Verify that the SQL Server Agent service is running**.</span></span>  
+1.  <span data-ttu-id="89d39-158">**SQL Server エージェント サービスが実行されていることを確認してください。** です。</span><span class="sxs-lookup"><span data-stu-id="89d39-158">**Verify that the SQL Server Agent service is running**.</span></span>  
   
 2.  <span data-ttu-id="89d39-159">**BizTalk Server によってインストールされる SQL Server エージェント ジョブが有効になっていることを確認し、正常に実行されている**です。</span><span class="sxs-lookup"><span data-stu-id="89d39-159">**Verify that the SQL Server Agent jobs installed by BizTalk Server are enabled and running successfully**.</span></span>  
     <span data-ttu-id="89d39-160">BizTalk Server SQL Server エージェント ジョブがきわめて重要です。 時間の経過と共に実行されていない場合システムのパフォーマンスが低下します。</span><span class="sxs-lookup"><span data-stu-id="89d39-160">The BizTalk Server SQL Server Agent jobs are crucial: if they are not running, system performance will degrade over time.</span></span>  
   
-3.  <span data-ttu-id="89d39-161">**適切なタイミングで、BizTalk Server SQL Server エージェント ジョブが完了することを確認してください。**です。</span><span class="sxs-lookup"><span data-stu-id="89d39-161">**Verify that the BizTalk Server SQL Server Agent jobs are completing in a timely manner**.</span></span>   
+3.  <span data-ttu-id="89d39-161">**適切なタイミングで、BizTalk Server SQL Server エージェント ジョブが完了することを確認してください。** です。</span><span class="sxs-lookup"><span data-stu-id="89d39-161">**Verify that the BizTalk Server SQL Server Agent jobs are completing in a timely manner**.</span></span>   
     <span data-ttu-id="89d39-162">Microsoft System Center Operations Manager の最新バージョンを設定すると、ジョブを監視します。</span><span class="sxs-lookup"><span data-stu-id="89d39-162">Set up the most recent version of Microsoft System Center Operations Manager to monitor the jobs.</span></span>  
     <span data-ttu-id="89d39-163">特定のジョブを特定のスケジュールの注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="89d39-163">You should be aware of schedules that are particular to certain jobs:</span></span>  
   
@@ -104,7 +105,7 @@ GO
   
     -   <span data-ttu-id="89d39-166">MessageBox_Message_Cleanup_BizTalkMsgBoxDb ジョブは有効になっているスケジュールも 10 秒ごと、MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブによって起動されました。</span><span class="sxs-lookup"><span data-stu-id="89d39-166">The MessageBox_Message_Cleanup_BizTalkMsgBoxDb job is not enabled or scheduled, but it is started by the MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb job every 10 seconds.</span></span> <span data-ttu-id="89d39-167">そのため、このジョブ有効になっている、スケジュール、したりしないでを手動で開始します。</span><span class="sxs-lookup"><span data-stu-id="89d39-167">Therefore, this job should not be enabled, scheduled, or manually started.</span></span>  
   
-4.  <span data-ttu-id="89d39-168">**SQL Server エージェント サービスのスタートアップの種類が正しく構成されていることを確認してください。**です。</span><span class="sxs-lookup"><span data-stu-id="89d39-168">**Verify that the Startup type of the SQL Server Agent service is configured correctly**.</span></span>  
+4.  <span data-ttu-id="89d39-168">**SQL Server エージェント サービスのスタートアップの種類が正しく構成されていることを確認してください。** です。</span><span class="sxs-lookup"><span data-stu-id="89d39-168">**Verify that the Startup type of the SQL Server Agent service is configured correctly**.</span></span>  
     <span data-ttu-id="89d39-169">SQL Server エージェント サービスを構成することを確認、**スタートアップの種類**の**自動**SQL Server エージェント サービスが、Windows Server クラスターでクラスター リソースとして構成されている場合を除き、します。</span><span class="sxs-lookup"><span data-stu-id="89d39-169">Verify the SQL Server Agent service is configured with a **Startup type** of **Automatic** unless the SQL Server Agent service is configured as a cluster resource on a Windows Server cluster.</span></span> <span data-ttu-id="89d39-170">SQL Server エージェント サービスがクラスター リソースとして構成されているかどうかは、構成する必要があります、**スタートアップの種類**として**手動**サービスは、クラスター サービスによって管理するためです。</span><span class="sxs-lookup"><span data-stu-id="89d39-170">If the SQL Server Agent service is configured as a cluster resource, then you should configure the **Startup type** as **Manual** because the service will be managed by the Cluster service.</span></span>  
   
 ## <a name="configure-purging-and-archiving-of-tracking-data"></a><span data-ttu-id="89d39-171">消去および追跡データのアーカイブを構成します。</span><span class="sxs-lookup"><span data-stu-id="89d39-171">Configure Purging and Archiving of Tracking Data</span></span>  

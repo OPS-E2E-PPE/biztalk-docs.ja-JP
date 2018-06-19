@@ -1,14 +1,14 @@
 ---
-title: "手順 5: 取引先の Web ページの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: 取引先の Web ページの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 38c3054d-932a-42b6-a821-8b30604d8426
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9aaed443492b74729171fef79c634bff561af929
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2017
+ms.locfileid: "23980770"
 ---
 # <a name="step-5-configure-the-trading-partner-web-pages"></a><span data-ttu-id="d542f-102">手順 5: 取引先の Web ページを構成します。</span><span class="sxs-lookup"><span data-stu-id="d542f-102">Step 5: Configure the Trading Partner Web Pages</span></span>
 <span data-ttu-id="d542f-103">![手順 5. 11 の](../core/media/tut-step5-of-11.gif "Tut_Step5_of_11")</span><span class="sxs-lookup"><span data-stu-id="d542f-103">![Step 5 of 11](../core/media/tut-step5-of-11.gif "Tut_Step5_of_11")</span></span>  
@@ -46,13 +47,13 @@ ms.lasthandoff: 11/03/2017
   
 3.  <span data-ttu-id="d542f-118">**スクリプト マップの追加** ダイアログ ボックスで、入力`BtsHttpReceive.dll`で、**要求パス**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="d542f-118">In the **Add Script Map** dialog box, enter `BtsHttpReceive.dll` in the **Request path** field.</span></span>  
   
-4.  <span data-ttu-id="d542f-119">**実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="d542f-119">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive.</span></span> <span data-ttu-id="d542f-120">選択**BtsHttpReceive.dll**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-120">Select **BtsHttpReceive.dll**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="d542f-119">**実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="d542f-119">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive.</span></span> <span data-ttu-id="d542f-120">選択**BtsHttpReceive.dll**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-120">Select **BtsHttpReceive.dll**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="d542f-121">入力`BizTalk HTTP Receive`で、`Name`フィールドをクリックして**要求の制限**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-121">Enter `BizTalk HTTP Receive` in the `Name` field, and then click **Request Restrictions**.</span></span>  
   
 6.  <span data-ttu-id="d542f-122">**要求の制限**ダイアログ ボックスで、**動詞**タブをクリックし**次の動詞のいずれかの**します。</span><span class="sxs-lookup"><span data-stu-id="d542f-122">In the **Request Restrictions** dialog box, select the **Verbs** tab and then select **One of the following verbs**.</span></span> <span data-ttu-id="d542f-123">入力`POST`動詞として。</span><span class="sxs-lookup"><span data-stu-id="d542f-123">Enter `POST` as the verb.</span></span>  
   
-7.  <span data-ttu-id="d542f-124">**アクセス**] タブで [**スクリプト**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-124">On the **Access** tab, select **Script**, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="d542f-124">**アクセス**] タブで [**スクリプト**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="d542f-124">On the **Access** tab, select **Script**, and then click **OK**.</span></span>  
   
 8.  <span data-ttu-id="d542f-125">をクリックして**OK** ISAPI 拡張を許可するメッセージが表示されたらをクリックし、**はい**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-125">Click **OK** and when prompted to allow the ISAPI extension, click **Yes**.</span></span>  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 11/03/2017
   
 1.  <span data-ttu-id="d542f-132">IIS マネージャーを右クリックして**アプリケーション プール**選択**アプリケーション プールの追加**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-132">In IIS Manager, right-click **Application Pools** and select **Add Application Pool**.</span></span>  
   
-2.  <span data-ttu-id="d542f-133">**アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="d542f-133">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** drop-down list.</span></span> <span data-ttu-id="d542f-134">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-134">Click **OK**.</span></span>  
+2.  <span data-ttu-id="d542f-133">**アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="d542f-133">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** drop-down list.</span></span> <span data-ttu-id="d542f-134">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-134">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="d542f-135">コンピューターにインストール済みの [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] のバージョンによって、バージョン番号が異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d542f-135">The version number may vary depending on the version of [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] installed on the machine.</span></span>  
@@ -83,7 +84,7 @@ ms.lasthandoff: 11/03/2017
     > [!NOTE]
     >  <span data-ttu-id="d542f-138">この手順は、64 ビットのコンピューター上で IIS を 32 ビット モードで実行する場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="d542f-138">This step is required only on a 64-bit machine if you want IIS to run in a 32-bit mode.</span></span>  
   
-5.  <span data-ttu-id="d542f-139">選択**Identity**をクリックし、**省略記号 (...)**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-139">Select **Identity** and then click the **ellipsis (…)** button.</span></span>  
+5.  <span data-ttu-id="d542f-139">選択**Identity**をクリックし、**省略記号 (...)** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-139">Select **Identity** and then click the **ellipsis (…)** button.</span></span>  
   
 6.  <span data-ttu-id="d542f-140">**アプリケーション プール Id**ダイアログ ボックスで、**カスタム アカウント** をクリックし、**設定**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-140">In the **Application Pool Identity** dialog box, select **Custom account** and then click **Set**.</span></span>  
   
@@ -95,9 +96,9 @@ ms.lasthandoff: 11/03/2017
   
 10. <span data-ttu-id="d542f-145">**アプリケーション プールの選択**ダイアログ ボックスで、 **BizTalkAppPool**  をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-145">In the **Select Application Pool** dialog box, select **BizTalkAppPool** and click **OK**.</span></span>  
   
-11. <span data-ttu-id="d542f-146">クリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 \fabrikam に移動、**物理パス**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-146">Click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam for the **Physical path**.</span></span>  
+11. <span data-ttu-id="d542f-146">クリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 \fabrikam に移動、**物理パス**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-146">Click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam for the **Physical path**.</span></span>  
   
-12. <span data-ttu-id="d542f-147">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="d542f-147">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="d542f-148">**[閉じる]**をクリックし、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-148">Click **Close**, and then click **OK**.</span></span>  
+12. <span data-ttu-id="d542f-147">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="d542f-147">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="d542f-148">**[閉じる]** をクリックし、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-148">Click **Close**, and then click **OK**.</span></span>  
   
 13. <span data-ttu-id="d542f-149">IIS マネージャーで、Fabrikam 仮想ディレクトリを選択し、**機能ビュー**をダブルクリックして**認証**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-149">In IIS Manager, select the Fabrikam virtual directory and in **Features View**, double-click **Authentication**.</span></span>  
   
@@ -114,9 +115,9 @@ ms.lasthandoff: 11/03/2017
     > [!NOTE]
     >  <span data-ttu-id="d542f-157">BizTalkAppPool は以前に Fabrikam Web ページを構成したときに作成されており、管理者グループのメンバーであるユーザーの ID に設定されています。</span><span class="sxs-lookup"><span data-stu-id="d542f-157">The BizTalkAppPool was created previously when configuring the Fabrikam Web page, and should be set to the identity of a user that is a member of the administrators group.</span></span>  
   
-4.  <span data-ttu-id="d542f-158">クリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive、**物理パス**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-158">Click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive for the **Physical path**.</span></span>  
+4.  <span data-ttu-id="d542f-158">クリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive、**物理パス**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-158">Click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive for the **Physical path**.</span></span>  
   
-5.  <span data-ttu-id="d542f-159">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="d542f-159">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="d542f-160">**[閉じる]**をクリックし、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-160">Click **Close**, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="d542f-159">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="d542f-159">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="d542f-160">**[閉じる]** をクリックし、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d542f-160">Click **Close**, and then click **OK**.</span></span>  
   
 6.  <span data-ttu-id="d542f-161">IIS マネージャーでは、Contoso 仮想ディレクトリを選択し、、**機能ビュー**をダブルクリックして**認証**です。</span><span class="sxs-lookup"><span data-stu-id="d542f-161">In IIS Manager, select the Contoso virtual directory and in the **Features View**, double-click **Authentication**.</span></span>  
   

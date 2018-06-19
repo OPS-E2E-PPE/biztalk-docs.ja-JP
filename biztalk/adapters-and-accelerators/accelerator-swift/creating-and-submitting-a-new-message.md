@@ -1,11 +1,11 @@
 ---
-title: "作成して、新しいメッセージを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 作成して、新しいメッセージを送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, submitting
 - messages, creating
 ms.assetid: 88b7a2d3-44a4-44e4-ba8c-527c10290925
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209866"
 ---
 # <a name="creating-and-submitting-a-new-message"></a><span data-ttu-id="889f5-102">作成して、新しいメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="889f5-102">Creating and Submitting a New Message</span></span>
 <span data-ttu-id="889f5-103">このセクションでは、新しいメッセージを送信する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="889f5-103">This section describes how to submit a new message.</span></span> <span data-ttu-id="889f5-104">として修復されたメッセージを表示して、新しいメッセージ必要がある確認および承認されたメッセージの作成者は、他のユーザーによってです。</span><span class="sxs-lookup"><span data-stu-id="889f5-104">As with a repaired message, a new message must be verified and approved by people other than the message creator.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 11. <span data-ttu-id="889f5-121">ウィンドウの上部にある [標準] ツールバーからをクリックして**送信**です。</span><span class="sxs-lookup"><span data-stu-id="889f5-121">From the Standard toolbar at the top of the window, click **Submit**.</span></span>  
   
-12. <span data-ttu-id="889f5-122">デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書の作成者は、作成した) の署名に使用する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="889f5-122">On the Digital Signature Wizard page for selecting the certificate to sign the form, select the certificate that you want to use to sign the form (the certificate that you created for the creator).</span></span> <span data-ttu-id="889f5-123">をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。</span><span class="sxs-lookup"><span data-stu-id="889f5-123">Click **View Certificate** if you want to verify that you are using the correct signature.</span></span> <span data-ttu-id="889f5-124">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="889f5-124">Click **Next**.</span></span>  
+12. <span data-ttu-id="889f5-122">デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書の作成者は、作成した) の署名に使用する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="889f5-122">On the Digital Signature Wizard page for selecting the certificate to sign the form, select the certificate that you want to use to sign the form (the certificate that you created for the creator).</span></span> <span data-ttu-id="889f5-123">をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。</span><span class="sxs-lookup"><span data-stu-id="889f5-123">Click **View Certificate** if you want to verify that you are using the correct signature.</span></span> <span data-ttu-id="889f5-124">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="889f5-124">Click **Next**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="889f5-125">デジタル署名の有効性を確認する をクリックして**デジタル署名**上、**ツール** メニューの デジタル署名を確認し、をクリックする をクリックして**ビュー署名済みフォーム**.</span><span class="sxs-lookup"><span data-stu-id="889f5-125">To verify the validity of a digital signature, click **Digital Signatures** on the **Tools** menu, click the digital signature that you want to verify, and then click **View Signed Form**.</span></span>  

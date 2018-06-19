@@ -1,14 +1,14 @@
 ---
-title: "アダプターを使用して Oracle E-business Suite への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターを使用して Oracle E-business Suite への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80ff31d4-be4c-42d7-a321-8f01b40dd71e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217866"
 ---
 # <a name="connect-to-oracle-e-business-suite-using-the-adapter"></a><span data-ttu-id="a5567-102">アダプターを使用して Oracle E-business Suite への接続します。</span><span class="sxs-lookup"><span data-stu-id="a5567-102">Connect to Oracle E-Business Suite using the adapter</span></span>
 <span data-ttu-id="a5567-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] ODP.NET 11.1.0.7 を使用して、Oracle E-business Suite に接続します。</span><span class="sxs-lookup"><span data-stu-id="a5567-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] uses ODP.NET 11.1.0.7 to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="a5567-104">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアント識別子 URI (Uniform Resource)、Oracle E-business Suite に接続する接続と呼ばれる、接続文字列を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5567-104">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] requires adapter clients to provide a connection string, called the connection Uniform Resource Identifier (URI), to connect to the Oracle E-Business Suite.</span></span> <span data-ttu-id="a5567-105">内部的には、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] URI を基になる、Oracle データベースに接続します。</span><span class="sxs-lookup"><span data-stu-id="a5567-105">Internally, the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] connects to the underlying Oracle database through the URI.</span></span> <span data-ttu-id="a5567-106">接続 URI のアダプターのクライアントは、外部システムに接続するための接続パラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="a5567-106">With a connection URI, adapter clients can specify connection parameters to connect to an external system.</span></span>  

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 0cd93bcd2d1855f137600214b6a07d52b6f52e4f
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013321"
 ---
 # <a name="how-to-create-receive-ports"></a><span data-ttu-id="05c7a-101">作成する方法の受信ポート</span><span class="sxs-lookup"><span data-stu-id="05c7a-101">How to Create Receive Ports</span></span>
 <span data-ttu-id="05c7a-102">Visual Studio を使用して受信ポートを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="05c7a-102">Follow these steps to create a receive port using Visual Studio.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="05c7a-110">**受信場所** ページで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="05c7a-110">On the **Receive Locations** page, do the following:</span></span>  
   
-    1.  <span data-ttu-id="05c7a-111">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="05c7a-111">Click **New**.</span></span>  
+    1.  <span data-ttu-id="05c7a-111">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="05c7a-111">Click **New**.</span></span>  
   
     2.  <span data-ttu-id="05c7a-112">**受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。</span><span class="sxs-lookup"><span data-stu-id="05c7a-112">In the **Receive Locations** window, on the **General** page, type the **Name** of the receive location.</span></span>  
   
@@ -39,13 +40,13 @@ ms.lasthandoff: 11/07/2017
   
     6.  <span data-ttu-id="05c7a-116">選択、**有効にするサービス時間帯**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="05c7a-116">Select the **Enable service window** checkbox.</span></span>  
   
-    7.  <span data-ttu-id="05c7a-117">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="05c7a-117">Click **OK**.</span></span>  
+    7.  <span data-ttu-id="05c7a-117">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="05c7a-117">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="05c7a-118">**受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。</span><span class="sxs-lookup"><span data-stu-id="05c7a-118">On the **Inbound Maps** page, select the inbound maps for transforming documents on the selected port.</span></span>  
   
 6.  <span data-ttu-id="05c7a-119">**追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。</span><span class="sxs-lookup"><span data-stu-id="05c7a-119">On the **Tracking** page, select the desired tracking message bodies and tracking message properties.</span></span>  
   
-7.  <span data-ttu-id="05c7a-120">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="05c7a-120">Click **OK**.</span></span>  
+7.  <span data-ttu-id="05c7a-120">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="05c7a-120">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="05c7a-121">参照</span><span class="sxs-lookup"><span data-stu-id="05c7a-121">See Also</span></span>  
  [<span data-ttu-id="05c7a-122">TIBCO Rendezvous 受信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="05c7a-122">Creating TIBCO Rendezvous Receive Handlers</span></span>](../core/creating-tibco-rendezvous-receive-handlers.md)

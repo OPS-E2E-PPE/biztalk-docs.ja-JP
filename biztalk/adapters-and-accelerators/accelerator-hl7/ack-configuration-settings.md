@@ -1,17 +1,17 @@
 ---
-title: "確認の構成の設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 確認の構成の設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, configuring
 - configuring, acknowledgements
 ms.assetid: 46e92560-7b1e-4d53-9de8-8ded4de90695
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204410"
 ---
 # <a name="ack-configuration-settings"></a><span data-ttu-id="45a39-102">確認の構成の設定</span><span class="sxs-lookup"><span data-stu-id="45a39-102">ACK Configuration Settings</span></span>
 <span data-ttu-id="45a39-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]パーサーが取引先管理 (TPM) の設定に基づいて受信確認を生成します。</span><span class="sxs-lookup"><span data-stu-id="45a39-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] parser generates acknowledgments based on Trading Partner Management (TPM) settings.</span></span> <span data-ttu-id="45a39-104">確認 (ACK) の設定は、パートナー情報に依存します。</span><span class="sxs-lookup"><span data-stu-id="45a39-104">The acknowledgment (ACK) settings are dependent on partner information.</span></span> <span data-ttu-id="45a39-105">スキーマの種類は使用されません。</span><span class="sxs-lookup"><span data-stu-id="45a39-105">Schema type is not used.</span></span> <span data-ttu-id="45a39-106">ときに[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]AL、SU または ER、含む MSH15 フィールドで、確認メッセージを受信[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK ヘッダーと TPM の構成の解析結果に基づくこのメッセージの ACK を送信することがあります。</span><span class="sxs-lookup"><span data-stu-id="45a39-106">When [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] receives an ACK message with the MSH15 field containing AL, SU or ER, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] may send an ACK for this message based on the result of parsing the ACK header and TPM configuration.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="45a39-107">パートナー ACK 設定を取得し、次の 5 つの値のいずれかを返します。</span><span class="sxs-lookup"><span data-stu-id="45a39-107"> retrieves the partner ACK settings and returns one of the following five values:</span></span>  

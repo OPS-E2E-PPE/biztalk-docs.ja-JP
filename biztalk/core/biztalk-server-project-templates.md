@@ -1,15 +1,15 @@
 ---
-title: "Visual Studio プロジェクト テンプレート |Microsoft ドキュメント"
-description: ".Btproj、BPEL、BizTalk Server で使用される .btaproj Visual Studio テンプレートを説明します。"
-ms.custom: 
+title: Visual Studio プロジェクト テンプレート |Microsoft ドキュメント
+description: .Btproj、BPEL、BizTalk Server で使用される .btaproj Visual Studio テンプレートを説明します。
+ms.custom: ''
 ms.date: 11/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2b3d494-db80-4314-afcd-d08d5a26e211
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 068c17d5ac10874b79e8ec5648cea74411c6247c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24020196"
 ---
 # <a name="biztalk-server-project-templates"></a><span data-ttu-id="80b6a-103">BizTalk Server プロジェクト テンプレート</span><span class="sxs-lookup"><span data-stu-id="80b6a-103">BizTalk Server Project Templates</span></span>
 

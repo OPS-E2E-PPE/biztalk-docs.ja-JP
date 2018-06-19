@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bafa119b-187e-4595-a673-358dc0a109b7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299098"
 ---
 # <a name="optimizing-performance"></a><span data-ttu-id="ad540-102">パフォーマンスの最適化</span><span class="sxs-lookup"><span data-stu-id="ad540-102">Optimizing Performance</span></span>
 <span data-ttu-id="ad540-103">Windows オペレーティング システム、SQL Server の既定のインストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、実稼働の最適なパフォーマンスを提供する、IIS を大幅に最適化できますと[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="ad540-103">A default installation of the Windows operating system, SQL Server, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and IIS can be significantly optimized to provide optimal performance for a production [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="ad540-104">WCF 構成パラメーターは、パフォーマンスが大幅に向上を提供する既定の設定からチューニングできます。</span><span class="sxs-lookup"><span data-stu-id="ad540-104">WCF configuration parameters can also be tuned from the default settings to provide significantly improved performance.</span></span> <span data-ttu-id="ad540-105">このセクションでは特定のパフォーマンスの最適化、実稼働環境を展開するときに従う必要がありますを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="ad540-105">This section provides specific performance optimizations that should be followed when deploying a production [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  

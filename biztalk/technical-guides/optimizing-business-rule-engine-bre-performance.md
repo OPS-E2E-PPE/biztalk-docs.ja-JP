@@ -1,14 +1,14 @@
 ---
-title: "ビジネス ルール エンジン (BRE) のパフォーマンスを最適化する |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール エンジン (BRE) のパフォーマンスを最適化する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c271b059-174d-4e8b-88b5-c3f408a97f1f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298930"
 ---
 # <a name="optimizing-business-rule-engine-bre-performance"></a><span data-ttu-id="3b2b3-102">ビジネス ルール エンジン (BRE) のパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="3b2b3-102">Optimizing Business Rule Engine (BRE) Performance</span></span>
 <span data-ttu-id="3b2b3-103">BizTalk Server ソリューションでビジネス ルール エンジン (BRE) を実装する場合は、次の要因を検討してください。</span><span class="sxs-lookup"><span data-stu-id="3b2b3-103">The following factors should be considered when implementing the Business Rule Engine (BRE) in a BizTalk Server solution:</span></span>  

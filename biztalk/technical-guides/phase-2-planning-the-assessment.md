@@ -1,14 +1,14 @@
 ---
-title: "フェーズ 2: 評価の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 'フェーズ 2: 評価の計画 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd67e9fb-afc9-48c7-91c9-eea5b66423a7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302002"
 ---
 # <a name="phase-2-planning-the-assessment"></a><span data-ttu-id="da0c2-102">フェーズ 2: 評価の計画</span><span class="sxs-lookup"><span data-stu-id="da0c2-102">Phase 2: Planning the Assessment</span></span>
 <span data-ttu-id="da0c2-103">パフォーマンス評価の計画の段階はスコープ フェーズ中に特定の成果物を完了するための特定のマイルス トーンの設定の大部分で構成されます。</span><span class="sxs-lookup"><span data-stu-id="da0c2-103">The Plan phase of a performance assessment largely consists of setting up specific milestones for the completion of the deliverables identified during the Scope phase.</span></span> <span data-ttu-id="da0c2-104">計画フェーズでは、スコープ フェーズ「時」の「何をします」</span><span class="sxs-lookup"><span data-stu-id="da0c2-104">The Plan phase is the “when” to the Scope phase’s “what.”</span></span> <span data-ttu-id="da0c2-105">サード パーティのソフトウェアおよび物理物流は、「方法」および"where"もこのような側面として計画段階で考慮すべき側面が実装するその他のリード タイムを必要があります。</span><span class="sxs-lookup"><span data-stu-id="da0c2-105">Third-party software and physical logistics are “how” and “where” aspects that should also be considered during the planning phase as these aspects may require additional lead time to implement.</span></span>  

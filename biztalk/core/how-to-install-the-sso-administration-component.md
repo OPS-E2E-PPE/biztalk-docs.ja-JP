@@ -1,15 +1,15 @@
 ---
-title: "SSO 管理コンポーネントのインストール |Microsoft ドキュメント"
-description: "SSO の管理を取得するカスタム インストールを実行して、ssomanage または SSO 管理を使用して、BizTalk Server でサーバー名を入力するには"
-ms.custom: 
+title: SSO 管理コンポーネントのインストール |Microsoft ドキュメント
+description: SSO の管理を取得するカスタム インストールを実行して、ssomanage または SSO 管理を使用して、BizTalk Server でサーバー名を入力するには
+ms.custom: ''
 ms.date: 09/27/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 096839e2-7129-498d-92ee-5afeea8dbe0d
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/28/2017
+ms.locfileid: "22317987"
 ---
 # <a name="how-to-install-the-sso-administration-component"></a><span data-ttu-id="ea8f1-103">SSO 管理コンポーネントをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="ea8f1-103">How to Install the SSO Administration Component</span></span>
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/28/2017
   
 3.  <span data-ttu-id="ea8f1-124">指定する SSO サーバーの名前を入力または参照します。</span><span class="sxs-lookup"><span data-stu-id="ea8f1-124">Enter or browse to the SSO server name you want to specify.</span></span> <span data-ttu-id="ea8f1-125">コンピューター上のすべてのユーザーの SSO サーバーを指定するには、選択**すべてのユーザーの SSO サーバーの設定**です。</span><span class="sxs-lookup"><span data-stu-id="ea8f1-125">To specify the SSO server for all users on the computer, select **Set SSO Server for all users**.</span></span>  
   
-4.  <span data-ttu-id="ea8f1-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea8f1-126">Click **OK**.</span></span>  
+4.  <span data-ttu-id="ea8f1-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea8f1-126">Click **OK**.</span></span>  
   
 ## <a name="enter-the-server-using-the-command-line-tool"></a><span data-ttu-id="ea8f1-127">コマンド ライン ツールを使用してサーバー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="ea8f1-127">Enter the server using the command line tool</span></span>  
   

@@ -1,18 +1,18 @@
 ---
-title: "送信ポート グループを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポート グループを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send port groups
 - send port groups, creating
 - managing [send port groups], creating
 ms.assetid: de3e72aa-83f4-4760-9f39-a488f904f1d3
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970368"
 ---
 # <a name="how-to-create-a-send-port-group"></a><span data-ttu-id="d44b7-102">送信ポート グループを作成する方法</span><span class="sxs-lookup"><span data-stu-id="d44b7-102">How to Create a Send Port Group</span></span>
 <span data-ttu-id="d44b7-103">このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アプリケーションで送信ポート グループを作成して、送信ポートを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d44b7-103">This topic describes how to use the BizTalk Server Administration console to create a send port group in a BizTalk application and then add send ports to it.</span></span> <span data-ttu-id="d44b7-104">送信ポート グループには、静的な一方向の送信ポートのみ追加できます。</span><span class="sxs-lookup"><span data-stu-id="d44b7-104">You can add static one-way send ports only to a send port group.</span></span> <span data-ttu-id="d44b7-105">メッセージをルーティングするには、送信ポート グループに少なくとも 1 つの送信ポートが存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d44b7-105">A send port group must contain at least one send port to route messages.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "グループの選択ノード |Microsoft ドキュメント"
-ms.custom: 
+title: グループの選択ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 466b525d-4d8c-4b8e-830d-eee27845c0dc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970400"
 ---
 # <a name="choice-group-nodes"></a><span data-ttu-id="27749-102">選択肢グループ ノード</span><span class="sxs-lookup"><span data-stu-id="27749-102">Choice Group Nodes</span></span>
 <span data-ttu-id="27749-103">挿入できる BizTalk エディターで、**選択肢グループ**を他のノード (またはノードのサブツリー全体) を含むノード インスタンス メッセージにうちの 1 つだけ表示されることができます。</span><span class="sxs-lookup"><span data-stu-id="27749-103">In BizTalk Editor, you can insert a **Choice Group** node to contain other nodes (or entire subtrees of nodes), only one of which can appear in an instance message.</span></span> <span data-ttu-id="27749-104">この場合、インスタンス メッセージには、選択されたいずれかのノードだけが含まれます。</span><span class="sxs-lookup"><span data-stu-id="27749-104">A given instance message, if valid, will have only one of the choices present.</span></span> <span data-ttu-id="27749-105">取り込むノードは、XML 要素に対応するノードであることが必要です。ただし、XML 属性に対応するノードではありません。</span><span class="sxs-lookup"><span data-stu-id="27749-105">The contained nodes must be nodes that correspond to XML elements, but cannot be nodes that correspond to XML attributes.</span></span>  

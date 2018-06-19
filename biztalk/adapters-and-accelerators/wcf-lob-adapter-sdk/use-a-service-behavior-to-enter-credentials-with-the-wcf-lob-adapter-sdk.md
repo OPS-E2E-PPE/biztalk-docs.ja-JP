@@ -1,14 +1,14 @@
 ---
-title: "サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力 |Microsoft ドキュメント"
-ms.custom: 
+title: サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b203cfa-6331-4498-b656-8cd8339f8613
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223882"
 ---
 # <a name="use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="db788-102">サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力</span><span class="sxs-lookup"><span data-stu-id="db788-102">Use a service behavior to enter credentials with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="db788-103">多くの場合、アダプターのコンシューマーは、対象の基幹業務システムに資格情報を渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="db788-103">Many times, adapter consumers will be required to pass credentials to the target line of business system.</span></span> <span data-ttu-id="db788-104">この機能を提供するには、WCF サービスの動作を提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="db788-104">To provide this functionality, you will need to provide a WCF service behavior.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "作成または編集のプロセスの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成または編集のプロセスの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process configuration, modifying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating, process configuration
 - modifying, process configuration
 ms.assetid: 39cc2c93-0986-48d3-8c6f-4280ec9af4e0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207122"
 ---
 # <a name="creating-or-editing-a-process-configuration"></a><span data-ttu-id="c3787-102">作成またはプロセス構成を編集します。</span><span class="sxs-lookup"><span data-stu-id="c3787-102">Creating or Editing a Process Configuration</span></span>
 <span data-ttu-id="c3787-103">このセクションを作成または構成を編集するプロセス、プロセス PIP (Partner Interface) で実装する方法について説明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c3787-103">This section describes how to create or edit a process configuration to implement a Partner Interface Process (PIP) in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="c3787-104">RosettaNet PIP は、2 つの取引先間におけるビジネス プロセス ダイアログを定義します。</span><span class="sxs-lookup"><span data-stu-id="c3787-104">A RosettaNet PIP defines a business-process dialog between two trading partners.</span></span> <span data-ttu-id="c3787-105">[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]パートナーと PIP を作成するには、プロセス構成を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c3787-105">In [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], to create a PIP with a partner, you must first create a process configuration.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="c3787-106">PIP のすべての構成の特徴を格納するのにには、このプロファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="c3787-106"> uses this profile to store all configuration characteristics of the PIP.</span></span> <span data-ttu-id="c3787-107">この構成は、パートナーとのアグリーメントの作成に使用できます。</span><span class="sxs-lookup"><span data-stu-id="c3787-107">You can then use this configuration to create an agreement with the partner.</span></span>  

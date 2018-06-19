@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルの集計ページ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルの集計ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], alerts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Aggregations page [BAM portal]
 - BAM portal, aggregations
 ms.assetid: 6bc1a6f2-9e9a-4db6-aaa1-188ed2f2641f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230066"
 ---
 # <a name="aggregations-on-the-bam-portal-page"></a><span data-ttu-id="5e46e-102">BAM ポータル ページでの集計</span><span class="sxs-lookup"><span data-stu-id="5e46e-102">Aggregations on the BAM Portal Page</span></span>
 <span data-ttu-id="5e46e-103">ビジネス エンド ユーザー、開発者、およびビジネス アナリストは、集計データを提供する必要があるときに BAM ポータル ページを使用します。集計データとは、データセットを事前に計算してまとめたもので、データセットが表す特性を伝達します。</span><span class="sxs-lookup"><span data-stu-id="5e46e-103">Business end users, developers, and business analysts use the BAM portal page when they need to present aggregated data, which are precalculated summaries of a data set that convey representative characteristics of that data set.</span></span> <span data-ttu-id="5e46e-104">BAM ポータルの [集計] ページを使用すると、グラフィカルなグラフやピボットテーブル レポートの形式で集計データを表示できます。</span><span class="sxs-lookup"><span data-stu-id="5e46e-104">The Aggregations page of the BAM portal allows you to display aggregated data in the form of a graphical chart and accompanying PivotTable report.</span></span>  

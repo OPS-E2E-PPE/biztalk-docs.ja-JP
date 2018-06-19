@@ -1,14 +1,14 @@
 ---
-title: "ネットワーク パフォーマンスを向上させるための一般的なガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: ネットワーク パフォーマンスを向上させるための一般的なガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 286c10d2-9262-4e3c-adde-f7b5780c2736
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298450"
 ---
 # <a name="general-guidelines-for-improving-network-performance"></a><span data-ttu-id="a0344-102">ネットワークのパフォーマンスを向上させるための一般的なガイドライン</span><span class="sxs-lookup"><span data-stu-id="a0344-102">General Guidelines for Improving Network Performance</span></span>
 <span data-ttu-id="a0344-103">最適な値にネットワーク設定を調整することが表示を効果的にネットワークのボトルネックを解決し、BizTalk Server ソリューションの全体的なネットワーク パフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="a0344-103">Adjusting network settings to optimal values has been shown to effectively address network bottlenecks and improve overall network performance in BizTalk Server solutions.</span></span> <span data-ttu-id="a0344-104">これは、BizTalk Server コンピューター、SQL Server コンピューター、およびその他のサーバー コンピューターを含む、ソリューションに関連するすべてのコンピューターで行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0344-104">This should be done on all computers involved in the solution, including BizTalk Server computers, SQL Server computers, and any other server computers.</span></span>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="a0344-144">ネットワーク アダプターの設定にアクセスする次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="a0344-144">Follow these steps to access settings for network adapters:</span></span>  
   
-1.  <span data-ttu-id="a0344-145">をクリックして**開始**] をクリックし、**コントロール パネルの [**です。</span><span class="sxs-lookup"><span data-stu-id="a0344-145">Click **Start** and then click **Control Panel**.</span></span>  
+1.  <span data-ttu-id="a0344-145">をクリックして**開始**] をクリックし、**コントロール パネルの [** です。</span><span class="sxs-lookup"><span data-stu-id="a0344-145">Click **Start** and then click **Control Panel**.</span></span>  
   
 2.  <span data-ttu-id="a0344-146">コントロール パネルで、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="a0344-146">In Control Panel, do one of the following:</span></span>  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="a0344-151">**ネットワーク** タブで、をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="a0344-151">On the **Networking** tab, click **Configure**.</span></span>  
   
-6.  <span data-ttu-id="a0344-152">クリックして、 **[詳細設定]**タブ プロパティにアクセスするネットワーク アダプターに構成することができます。</span><span class="sxs-lookup"><span data-stu-id="a0344-152">Click the **Advanced** tab to access properties that can be configured for the network adapter.</span></span>  
+6.  <span data-ttu-id="a0344-152">クリックして、 **[詳細設定]** タブ プロパティにアクセスするネットワーク アダプターに構成することができます。</span><span class="sxs-lookup"><span data-stu-id="a0344-152">Click the **Advanced** tab to access properties that can be configured for the network adapter.</span></span>  
   
  <span data-ttu-id="a0344-153">次のプロパティは、BizTalk Server 環境の各ネットワーク アダプターを構成してください。</span><span class="sxs-lookup"><span data-stu-id="a0344-153">The following properties should be configured for each network adapter in the BizTalk Server environment:</span></span>  
   

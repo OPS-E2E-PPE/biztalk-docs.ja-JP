@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22300138"
 ---
 # <a name="appendix-d-create-the-smtp-server"></a><span data-ttu-id="7f851-102">付録 D: SMTP サーバーの作成</span><span class="sxs-lookup"><span data-stu-id="7f851-102">Appendix D: Create the SMTP Server</span></span>
 <span data-ttu-id="7f851-103">SQL Server Database Mail で使用される SMTP サーバーを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f851-103">Create the SMTP Server used by SQL Server Database Mail.</span></span>  

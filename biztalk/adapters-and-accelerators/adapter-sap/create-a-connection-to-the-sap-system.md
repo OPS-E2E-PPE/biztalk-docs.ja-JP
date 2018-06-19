@@ -1,11 +1,11 @@
 ---
-title: "SAP システムへの接続を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP システムへの接続を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SAP system, connecting to
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - URI
 - Uniform Resource Identifier
 ms.assetid: 25d1eaa7-d02a-4fd0-8adf-83505cdb1ab8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216426"
 ---
 # <a name="create-a-connection-to-the-sap-system"></a><span data-ttu-id="54515-102">SAP システムへの接続を作成します。</span><span class="sxs-lookup"><span data-stu-id="54515-102">Create a connection to the SAP system</span></span>
 <span data-ttu-id="54515-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。</span><span class="sxs-lookup"><span data-stu-id="54515-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] is a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding.</span></span> <span data-ttu-id="54515-104">そのため、WCF エンドポイントのアドレスを使って、SAP システムへの通信を可能になります。</span><span class="sxs-lookup"><span data-stu-id="54515-104">As such, it enables communication to an SAP system through a WCF endpoint address.</span></span> <span data-ttu-id="54515-105">WCF では、エンドポイントのアドレスは、サービスのネットワークの場所を識別し、として、Uniform Resource Identifier () は通常表現します。</span><span class="sxs-lookup"><span data-stu-id="54515-105">In WCF the endpoint address identifies the network location of a service and is typically expressed as a Uniform Resource Identifier (URI).</span></span> <span data-ttu-id="54515-106">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]接続プロパティが含まれて、URI とは、この場所の表現を[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムへの接続を確立するために使用します。</span><span class="sxs-lookup"><span data-stu-id="54515-106">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] expresses this location as a connection URI, which contains properties that the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] uses to establish a connection to the SAP system.</span></span> <span data-ttu-id="54515-107">接続 URI を指定する必要がありますとします。</span><span class="sxs-lookup"><span data-stu-id="54515-107">You must specify a connection URI when you:</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217418"
 ---
 # <a name="data-type-mapping-for-custom-rfcs"></a><span data-ttu-id="35d2c-102">カスタム Rfc のデータ型マッピング</span><span class="sxs-lookup"><span data-stu-id="35d2c-102">Data Type Mapping for Custom RFCs</span></span>
 <span data-ttu-id="35d2c-103">次の表は、SAP データ型との Z_EXTRACT_DATA_OO RFC .NET データ型にマップする方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="35d2c-103">The following table provides information about SAP data types and how they are mapped to .NET data types for the Z_EXTRACT_DATA_OO RFC.</span></span> <span data-ttu-id="35d2c-104">このカスタム RFC を使って、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="35d2c-104">This custom RFC is used by the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)].</span></span>  

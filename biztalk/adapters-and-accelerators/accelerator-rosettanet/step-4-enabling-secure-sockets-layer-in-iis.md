@@ -1,11 +1,11 @@
 ---
-title: "手順 4: IIS でレイヤーをソケット セキュリティで保護の有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: IIS でレイヤーをソケット セキュリティで保護の有効化 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Secure Socket Layers
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - double action tutorial, enabling SSL in IIS
 - SSL
 ms.assetid: 96109294-595a-46ac-974e-33123df79ed5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967000"
 ---
 # <a name="step-4-enabling-secure-sockets-layer-in-iis"></a><span data-ttu-id="7602d-102">手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にします。</span><span class="sxs-lookup"><span data-stu-id="7602d-102">Step 4: Enabling Secure Sockets Layer in IIS</span></span>
 <span data-ttu-id="7602d-103">SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の通信チャネルをセキュリティで保護するためのプロトコルです。</span><span class="sxs-lookup"><span data-stu-id="7602d-103">Secure Sockets Layer (SSL) is a protocol designed to secure the communication channel between a client and a server.</span></span> <span data-ttu-id="7602d-104">Contoso 組織と Fabrikam 組織は、Microsoft® インターネット インフォメーション サービス (IIS) 7.5 または 7.0 で SSL を有効にすることにより、すべてのデータ転送に認証と暗号化を使用して通信を行います。</span><span class="sxs-lookup"><span data-stu-id="7602d-104">By enabling SSL in Microsoft® Internet Information Services (IIS) 7.5/7.0, the Contoso and Fabrikam organizations communicate using authentication and encryption for all data transfers.</span></span> <span data-ttu-id="7602d-105">ここでは、IIS 7.5 または 7.0 で SSL を有効にする手順について学びます。</span><span class="sxs-lookup"><span data-stu-id="7602d-105">In this step, you learn how to enable SSL in IIS 7.5/7.0.</span></span>  
@@ -128,7 +129,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="7602d-156">をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="7602d-156">Click **Start**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-2.  <span data-ttu-id="7602d-157">インターネット インフォメーション サービスの左ペインでをクリックして**(ローカル コンピューター)**、ダブルクリックして**サーバー証明書**右側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="7602d-157">In the Internet Information Services left pane, click **(local computer)**, double click **Server Certificates** in the right pane.</span></span> <span data-ttu-id="7602d-158">選択**証明書要求の完全な**[操作] ウィンドウからです。</span><span class="sxs-lookup"><span data-stu-id="7602d-158">Select **Complete Certificate Request** from the Actions pane.</span></span>  
+2.  <span data-ttu-id="7602d-157">インターネット インフォメーション サービスの左ペインでをクリックして **(ローカル コンピューター)**、ダブルクリックして**サーバー証明書**右側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="7602d-157">In the Internet Information Services left pane, click **(local computer)**, double click **Server Certificates** in the right pane.</span></span> <span data-ttu-id="7602d-158">選択**証明書要求の完全な**[操作] ウィンドウからです。</span><span class="sxs-lookup"><span data-stu-id="7602d-158">Select **Complete Certificate Request** from the Actions pane.</span></span>  
   
 3.  <span data-ttu-id="7602d-159">証明機関の応答の指定 ダイアログ ボックスに「 **\<ドライブ\>: \Certs\SSLCert.cer**で**証明機関の応答を含むファイルの名前**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="7602d-159">In Specify Certificate Authority Response dialog box type **\<drive\>:\Certs\SSLCert.cer** in **File name containing the certification authority’s response** text box.</span></span> <span data-ttu-id="7602d-160">フレンドリ名テキスト ボックスに「 **ContosoSSLCert**です。</span><span class="sxs-lookup"><span data-stu-id="7602d-160">In Friendly name text box type **ContosoSSLCert**.</span></span>  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="7602d-162">をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="7602d-162">Click **Start**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-2.  <span data-ttu-id="7602d-163">インターネット インフォメーション サービスの左ペインで、展開**(ローカル コンピューター)**、展開**サイト**を右クリックして**既定の Web サイト**、クリックして**編集バインド**です。</span><span class="sxs-lookup"><span data-stu-id="7602d-163">In the Internet Information Services left pane, expand **(local computer)**, expand **Sites**, right-click **Default Web Site**, and then click **Edit Bindings**.</span></span>  
+2.  <span data-ttu-id="7602d-163">インターネット インフォメーション サービスの左ペインで、展開 **(ローカル コンピューター)**、展開**サイト**を右クリックして**既定の Web サイト**、クリックして**編集バインド**です。</span><span class="sxs-lookup"><span data-stu-id="7602d-163">In the Internet Information Services left pane, expand **(local computer)**, expand **Sites**, right-click **Default Web Site**, and then click **Edit Bindings**.</span></span>  
   
 3.  <span data-ttu-id="7602d-164">[サイト バインド] ダイアログ ボックス**追加**です。</span><span class="sxs-lookup"><span data-stu-id="7602d-164">In Site Bindings dialog box click **Add**.</span></span> <span data-ttu-id="7602d-165">サイト バインドの追加 ダイアログ ボックスで選択**https**型ドロップダウンから、次のように選択します**ContosoSSLCert** SSL 証明書ドロップダウンから、 をクリック**OK**、 をクリック**閉じる**。</span><span class="sxs-lookup"><span data-stu-id="7602d-165">In the Add Site Binding dialog box select **https** from Type drop down, select **ContosoSSLCert** from SSL certificate drop down, click **OK**, click **Close**.</span></span>  
   

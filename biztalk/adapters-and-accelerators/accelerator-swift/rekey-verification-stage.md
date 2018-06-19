@@ -1,17 +1,17 @@
 ---
-title: "検証ステージを鍵更新 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証ステージを鍵更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - rekey verification
 - stages, rekey verification
 ms.assetid: 8a2880b6-bb25-4af5-9f51-d0b090ca38c8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214202"
 ---
 # <a name="rekey-verification-stage"></a><span data-ttu-id="9b79b-102">検証ステージを鍵更新します。</span><span class="sxs-lookup"><span data-stu-id="9b79b-102">Rekey Verification Stage</span></span>
 <span data-ttu-id="9b79b-103">検証のトレイにステージが発生したワークフローでは、メッセージの修復、メッセージの修復および New Submission とメッセージの正確なコピーで、元のメッセージのコピーが保持される鍵更新の確認が送信されるときに検証を鍵更新します。</span><span class="sxs-lookup"><span data-stu-id="9b79b-103">When a Rekey Verification stage occurs in the message repair workflow, a copy of the original message is maintained by Message Repair and New Submission and an exact copy of the message is sent to the verifier's inbox for rekey verification.</span></span> <span data-ttu-id="9b79b-104">キーの再検証[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]Message Repair and New Submission 手動再登録の指定したフィールドをクリアします。</span><span class="sxs-lookup"><span data-stu-id="9b79b-104">In rekey verification, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] Message Repair and New Submission clears specified fields for manual re-entry.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "低い特権の環境 |Microsoft ドキュメント"
-ms.custom: 
+title: 低い特権の環境 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: abdc45d0-b63a-4b6c-80c4-1f8e87644cd9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298298"
 ---
 # <a name="low-privilege-environments"></a><span data-ttu-id="d72a4-102">低い特権の環境</span><span class="sxs-lookup"><span data-stu-id="d72a4-102">Low-Privilege Environments</span></span>
 <span data-ttu-id="d72a4-103">複数のワークフローに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、特定のアクションを実行する高度な権限を必要とします。</span><span class="sxs-lookup"><span data-stu-id="d72a4-103">Several workflows that are included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack require elevated permissions to perform certain actions.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="d72a4-104">管理パックでは、低特権の環境で基本的な監視機能を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="d72a4-104"> Management Pack enables you to perform basic monitoring functionalities in a low privilege environment.</span></span> <span data-ttu-id="d72a4-105">2 つの管理ロール: BizTalk Server 管理者と BizTalk Server Operator です。</span><span class="sxs-lookup"><span data-stu-id="d72a4-105">There are two Administrative Roles: the BizTalk Server Administrator, and the BizTalk Server Operator.</span></span> <span data-ttu-id="d72a4-106">BizTalk Server 管理者は権限レベルの高いロールで、構成データおよび追跡データにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d72a4-106">The BizTalk Server Administrator is a high privilege role with access to configuration and tracking data.</span></span> <span data-ttu-id="d72a4-107">BizTalk Server 管理者は、このような参加と成果物を開始、すべてのキー管理タスクを実行できます。</span><span class="sxs-lookup"><span data-stu-id="d72a4-107">The BizTalk Server Administrator can perform all key administrative tasks such enlisting and starting artifacts.</span></span> <span data-ttu-id="d72a4-108">BizTalk Server Operator は、監視とトラブルシューティング操作にのみアクセス権を持つ特権の低いロールです。</span><span class="sxs-lookup"><span data-stu-id="d72a4-108">The BizTalk Server Operator is a low privilege role with access only to monitoring and troubleshooting actions.</span></span> <span data-ttu-id="d72a4-109">詳細については、次を参照してください。[最低限のセキュリティ ユーザー権限](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx)です。</span><span class="sxs-lookup"><span data-stu-id="d72a4-109">For more information, see [Minimum Security User Rights](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx).</span></span>  

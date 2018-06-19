@@ -1,17 +1,17 @@
 ---
-title: "受信確認の既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信確認の既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - known issues, acknowledgements
 - acknowledgements, known issues
 ms.assetid: cb45f80e-ba89-4b3f-a770-4b1cf9b8e220
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204578"
 ---
 # <a name="acknowledgments-known-issues"></a><span data-ttu-id="0dc72-102">受信確認の既知の問題</span><span class="sxs-lookup"><span data-stu-id="0dc72-102">Acknowledgments Known Issues</span></span>
 <span data-ttu-id="0dc72-103">このセクションには、受信確認 (ACK) のエラーを回避するために役立つ有用な情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0dc72-103">This section contains useful information that may help you avoid acknowledgment (ACK) errors.</span></span>  

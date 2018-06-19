@@ -1,17 +1,17 @@
 ---
-title: "関数と、WCF サービス モデルを使用して Oracle データベースでプロシージャを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: 関数と、WCF サービス モデルを使用して Oracle データベースでプロシージャを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, invoke functions and procedures using the WCF service model
 - WCF service model, invoking functions and procedures
 ms.assetid: 806fc803-3640-42d6-bdf9-53b08f9c7c50
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966360"
 ---
 # <a name="invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="606e8-102">関数と、WCF サービス モデルを使用して Oracle データベースでプロシージャを呼び出す</span><span class="sxs-lookup"><span data-stu-id="606e8-102">Invoke Functions and Procedures in Oracle Database using the WCF Service Model</span></span>
 <span data-ttu-id="606e8-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]プロシージャ、関数、およびパッケージの操作を表示します。</span><span class="sxs-lookup"><span data-stu-id="606e8-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces procedures, functions, and packages as operations.</span></span> <span data-ttu-id="606e8-104">WCF サービス モデルでは、これらの操作は、WCF クライアントのメソッドとして表されます。</span><span class="sxs-lookup"><span data-stu-id="606e8-104">In the WCF service model these operations are represented as methods on a WCF client.</span></span> <span data-ttu-id="606e8-105">WCF サービス モデルと[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:</span><span class="sxs-lookup"><span data-stu-id="606e8-105">The WCF service model and the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:</span></span>  

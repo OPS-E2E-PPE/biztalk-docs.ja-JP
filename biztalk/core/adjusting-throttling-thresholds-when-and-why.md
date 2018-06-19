@@ -1,14 +1,14 @@
 ---
-title: "制限のしきい値の調整: タイミングと理由 |Microsoft ドキュメント"
-ms.custom: 
+title: '制限のしきい値の調整: タイミングと理由 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9afb26c8-e5f4-4b78-9a45-a1263e3cb6ab
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229930"
 ---
 # <a name="adjusting-throttling-thresholds-when-and-why"></a><span data-ttu-id="30eda-102">制限のしきい値の調整: タイミングと理由</span><span class="sxs-lookup"><span data-stu-id="30eda-102">Adjusting Throttling Thresholds: When and Why</span></span>
 <span data-ttu-id="30eda-103">制限に関しては、あらゆる状況に対応できる汎用の設定は存在しません。</span><span class="sxs-lookup"><span data-stu-id="30eda-103">When it comes to throttling, one size does not fit all.</span></span> <span data-ttu-id="30eda-104">最適な設定はさまざまな要因によって決まります。</span><span class="sxs-lookup"><span data-stu-id="30eda-104">There are a range of factors that will determine what the optimal settings should be.</span></span> <span data-ttu-id="30eda-105">BizTalk Server が提供する既定値は、バックログ過多などの問題からシステムを有効に保護することがテストを通じて実証されています。</span><span class="sxs-lookup"><span data-stu-id="30eda-105">Out of the box, BizTalk Server provides default values that have been proven through testing to effectively protect a system from things like backlog overages.</span></span> <span data-ttu-id="30eda-106">ただし、シナリオによっては、既定値を使用すると設定が厳しくなり過ぎる場合があります。</span><span class="sxs-lookup"><span data-stu-id="30eda-106">However, for some scenarios, this may be too aggressive.</span></span> <span data-ttu-id="30eda-107">この点について、次の各例で説明します。</span><span class="sxs-lookup"><span data-stu-id="30eda-107">The following examples illustrate this point.</span></span>  

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 71a1b75c9a602b196504fa9f06984f0ed9d52e05
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014305"
 ---
 # <a name="setting-jd-edwards-enterpriseone-transport-properties"></a><span data-ttu-id="61e18-101">JD Edwards EnterpriseOne トランスポートのプロパティの設定</span><span class="sxs-lookup"><span data-stu-id="61e18-101">Setting JD Edwards EnterpriseOne Transport Properties</span></span>
 <span data-ttu-id="61e18-102">JD Edwards EnterpriseOne トランスポートのプロパティは、デザイン時および実行時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="61e18-102">The JD Edwards EnterpriseOne Transport Properties are used for design and run time.</span></span> <span data-ttu-id="61e18-103">**トランスポートのプロパティ**ダイアログ ボックスで、パラメーターを設定する接続と資格情報を特定サーバーのシステムおよびアクセスしようとしているオブジェクトにします。</span><span class="sxs-lookup"><span data-stu-id="61e18-103">In the **Transport Properties** dialog box, you set the connection and credential parameters specific to the server system and the objects you are trying to access.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="61e18-115">**全般**で、**トランスポートの種類**ボックスで、 **JDE EnterpriseOne**ドロップダウン リストでします。</span><span class="sxs-lookup"><span data-stu-id="61e18-115">Under **General**, in the **Transport Type** box, select **JDE EnterpriseOne** in the drop-down list.</span></span>  
   
-5.  <span data-ttu-id="61e18-116">**アドレス (URI)**プロパティ、省略記号ボタン (**.**).</span><span class="sxs-lookup"><span data-stu-id="61e18-116">In the **Address (URI)** property, click the ellipsis (**…**).</span></span>  
+5.  <span data-ttu-id="61e18-116">**アドレス (URI)** プロパティ、省略記号ボタン (**.**).</span><span class="sxs-lookup"><span data-stu-id="61e18-116">In the **Address (URI)** property, click the ellipsis (**…**).</span></span>  
   
      <span data-ttu-id="61e18-117">**JDE EnterpriseOne トランスポートのプロパティ** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="61e18-117">The **JDE EnterpriseOne Transport Properties** dialog box appears.</span></span>  
   

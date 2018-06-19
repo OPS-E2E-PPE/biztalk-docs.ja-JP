@@ -1,17 +1,17 @@
 ---
-title: "SAP の SELECT コマンドを使用してクエリを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP の SELECT コマンドを使用してクエリを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SELECT command, performing a query
 - query, performing by using the SELECT command
 ms.assetid: 6f03243c-ef50-4a4a-8fe6-4e525bd7efe3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217802"
 ---
 # <a name="run-a-query-using-the-select-command-in-sap"></a><span data-ttu-id="38775-102">SAP の SELECT コマンドを使用して、クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="38775-102">Run a Query Using the SELECT Command in SAP</span></span>
 <span data-ttu-id="38775-103">[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ADO.NET データ ソースとしての SAP システムを公開します。</span><span class="sxs-lookup"><span data-stu-id="38775-103">The [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] exposes the SAP system as an ADO.NET data source.</span></span> <span data-ttu-id="38775-104">[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]、SELECT ステートメントを実行することによって SAP アイテムを照会することができます。</span><span class="sxs-lookup"><span data-stu-id="38775-104">With the [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)], you can query SAP artifacts by executing a SELECT statement.</span></span>  

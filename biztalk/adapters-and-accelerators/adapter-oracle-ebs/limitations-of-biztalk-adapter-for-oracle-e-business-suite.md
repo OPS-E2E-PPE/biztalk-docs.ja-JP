@@ -1,14 +1,14 @@
 ---
-title: "BizTalk adapter for Oracle E-business Suite の制限事項 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk adapter for Oracle E-business Suite の制限事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 149cee03-43cd-4cb3-a937-6565f5e96ce5
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216274"
 ---
 # <a name="limitations-of-biztalk-adapter-for-oracle-e-business-suite"></a><span data-ttu-id="d2913-102">BizTalk adapter for Oracle E-business Suite の制限事項</span><span class="sxs-lookup"><span data-stu-id="d2913-102">Limitations of BizTalk Adapter for Oracle E-Business Suite</span></span>
 ## <a name="general-limitations"></a><span data-ttu-id="d2913-103">一般的な制限事項</span><span class="sxs-lookup"><span data-stu-id="d2913-103">General Limitations</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "Oracle データベース アダプター サンプル |Microsoft ドキュメント"
-description: "BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる oracle DB WCF アダプタのサンプル"
-ms.custom: 
+title: Oracle データベース アダプター サンプル |Microsoft ドキュメント
+description: BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる oracle DB WCF アダプタのサンプル
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 744f19ce-3126-4745-92dd-4f68443180fc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013929"
 ---
 # <a name="samples-for-the-oracle-database-adapter"></a><span data-ttu-id="64e54-103">Oracle データベース アダプターのサンプル</span><span class="sxs-lookup"><span data-stu-id="64e54-103">Samples for the Oracle Database adapter</span></span>
 <span data-ttu-id="64e54-104">サンプルを[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]に分類されます。</span><span class="sxs-lookup"><span data-stu-id="64e54-104">Samples for [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] are categorized into:</span></span>  

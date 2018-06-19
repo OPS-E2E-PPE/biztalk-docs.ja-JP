@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で RosettaNet accelerator 用ソフトウェア開発キット |Microsoft ドキュメント"
-description: "BizTalk Server の BTARN SDK のユーティリティとサンプルの一覧"
-ms.custom: 
+title: BizTalk Server で RosettaNet accelerator 用ソフトウェア開発キット |Microsoft ドキュメント
+description: BizTalk Server の BTARN SDK のユーティリティとサンプルの一覧
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36a1b283-26e1-407e-afc4-8879ef0d1672
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211282"
 ---
 # <a name="software-development-kit"></a><span data-ttu-id="7a1cd-103">ソフトウェア開発キット</span><span class="sxs-lookup"><span data-stu-id="7a1cd-103">Software Development Kit</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="7a1cd-104">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]完全プログラマのリファレンスとガイドを含むソフトウェア開発キット (SDK) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7a1cd-104"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] includes a software development kit (SDK) that includes a full programmer's reference and guide.</span></span> <span data-ttu-id="7a1cd-105">さらに、SDK には、操作とバックエンド統合を容易にすることができるユーティリティとサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="7a1cd-105">Additionally, the SDK includes utilities and samples that could make your operations and back-end integration easier.</span></span>  

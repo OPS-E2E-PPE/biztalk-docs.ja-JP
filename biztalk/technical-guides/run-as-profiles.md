@@ -1,14 +1,14 @@
 ---
-title: "実行プロファイル |Microsoft ドキュメント"
-ms.custom: 
+title: 実行プロファイル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 98ac0a0c-91d8-4d12-aa40-2ad2e29ec784
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301978"
 ---
 # <a name="run-as-profiles"></a><span data-ttu-id="6c8d0-102">実行プロファイル</span><span class="sxs-lookup"><span data-stu-id="6c8d0-102">Run As Profiles</span></span>
 <span data-ttu-id="6c8d0-103">BizTalk Server コア ライブラリ管理パックが最初にインポートされると、2 つの新しい実行プロファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="6c8d0-103">When the BizTalk Server Core Library Management Pack is first imported, it creates two new Run As Profiles:</span></span>  

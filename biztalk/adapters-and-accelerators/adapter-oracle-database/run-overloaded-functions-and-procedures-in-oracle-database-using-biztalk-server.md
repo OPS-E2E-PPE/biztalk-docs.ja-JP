@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967160"
 ---
 # <a name="invoke-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server"></a><span data-ttu-id="df8c1-102">オーバー ロードされた関数および BizTalk Server を使用して Oracle データベースでプロシージャを呼び出す</span><span class="sxs-lookup"><span data-stu-id="df8c1-102">Invoke Overloaded Functions and Procedures in Oracle Database using BizTalk Server</span></span>
 <span data-ttu-id="df8c1-103">Oracle データベースでは、ストアド プロシージャと関数をオーバー ロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="df8c1-103">Stored procedures and functions can be overloaded in an Oracle database.</span></span> <span data-ttu-id="df8c1-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作のターゲットの名前空間を変更することでオーバー ロード関数およびプロシージャのサポート。</span><span class="sxs-lookup"><span data-stu-id="df8c1-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports overloaded functions and procedures by changing the target namespace of the operation.</span></span> <span data-ttu-id="df8c1-105">たとえば、2 つのオーバー ロードされたプロシージャのメッセージの構造は、ようになります。</span><span class="sxs-lookup"><span data-stu-id="df8c1-105">For example, the message structure for two overloaded procedures looks like:</span></span>  
@@ -164,7 +165,7 @@ Stored Procedure Overload 2:
   
 3.  <span data-ttu-id="df8c1-251">**関連付けのプロパティ** ダイアログ ボックスには、手順 1. で昇格させたプロパティが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="df8c1-251">The **Correlation Properties** dialog box lists the properties that you promoted in step 1.</span></span> <span data-ttu-id="df8c1-252">プロパティを選択し、をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="df8c1-252">Select a property, and then click **Add**.</span></span>  
   
-4.  <span data-ttu-id="df8c1-253">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="df8c1-253">Click **OK**.</span></span>  
+4.  <span data-ttu-id="df8c1-253">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="df8c1-253">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="df8c1-254">その他の昇格させたプロパティの関連付けの種類を作成するには、この手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="df8c1-254">To create correlation types for the other promoted property, repeat these steps.</span></span>  
   

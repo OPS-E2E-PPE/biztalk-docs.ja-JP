@@ -1,14 +1,14 @@
 ---
-title: "展開先の環境をクリーンアップ |Microsoft ドキュメント"
-ms.custom: 
+title: 展開先の環境をクリーンアップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8585853b-e625-48c3-a241-81ebf1be0e1e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299866"
 ---
 # <a name="cleaning-the-destination-environment"></a><span data-ttu-id="512fb-102">展開先の環境のクリーンアップ</span><span class="sxs-lookup"><span data-stu-id="512fb-102">Cleaning the Destination Environment</span></span>
 <span data-ttu-id="512fb-103">復元ジョブには、解決できないエラーが発生すると、空の環境からそれを開始するために、送信先の環境をクリーンアップします。</span><span class="sxs-lookup"><span data-stu-id="512fb-103">If the restore job encounters error conditions that cannot be resolved, clean the destination environment so that it can start from an empty environment.</span></span> <span data-ttu-id="512fb-104">ストアド プロシージャを実行している**sp_LogShippingClean** 、変換先の master データベースにある[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスは「クリーンアップ」送信先の環境。</span><span class="sxs-lookup"><span data-stu-id="512fb-104">Running the stored procedure **sp_LogShippingClean** located in the master database on the destination [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] instance will “clean” the destination environment.</span></span> <span data-ttu-id="512fb-105">この手順では、すべてのデータベースを削除し、指定されたソースの最後に復元されたデータ セットを削除します。</span><span class="sxs-lookup"><span data-stu-id="512fb-105">This procedure drops all databases and deletes the last restored data set for the specified source.</span></span>  

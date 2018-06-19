@@ -1,14 +1,14 @@
 ---
-title: "バックアップ ファイルが破損 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップ ファイルが破損 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc48197c-944a-4f0a-ba01-8e1d91c88ad3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299634"
 ---
 # <a name="corrupt-backup-files"></a><span data-ttu-id="9d37e-102">バックアップ ファイルが壊れています</span><span class="sxs-lookup"><span data-stu-id="9d37e-102">Corrupt Backup Files</span></span>
 <span data-ttu-id="9d37e-103">バックアップ ファイルには、破損している、壊れているか、または不足している可能性がありますになります。</span><span class="sxs-lookup"><span data-stu-id="9d37e-103">A backup file may become corrupt, damaged, or missing.</span></span> <span data-ttu-id="9d37e-104">このような場合に、少なくとも 1 つのファイルは復元できません。</span><span class="sxs-lookup"><span data-stu-id="9d37e-104">If this occurs, at least one file cannot be restored.</span></span> <span data-ttu-id="9d37e-105">エラーがあって、システム上の復元ジョブは、[次へ] の有効な完全バックアップ セットを検索します。</span><span class="sxs-lookup"><span data-stu-id="9d37e-105">The restore job on the system that suffered the failure searches for the next valid full backup set.</span></span> <span data-ttu-id="9d37e-106">ほとんどの場合、ソース システム上の完全バックアップを強制する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9d37e-106">In most cases it will be necessary to force a full backup on the source system.</span></span> <span data-ttu-id="9d37e-107">このようなセットが存在しない場合、復元ジョブが失敗して、以降の実行ごとは、有効な完全バックアップ セットが到着するまでにも失敗します。</span><span class="sxs-lookup"><span data-stu-id="9d37e-107">If no such set exists, the restore job fails and each subsequent run also fails until a valid full backup set arrives.</span></span> <span data-ttu-id="9d37e-108">セットが存在する場合、環境を修復に使用されます。</span><span class="sxs-lookup"><span data-stu-id="9d37e-108">If a set does exist, it is used to repair the environment.</span></span>  

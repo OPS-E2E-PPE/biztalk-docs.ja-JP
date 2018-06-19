@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Server を使用して SAP からの Idoc を受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SAP からの Idoc を受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IDOCs, sample (receiving)
 - IDOCs, business scenarios for receiving
 - IDOCs, receiving from SAP using BizTalk Server
 ms.assetid: b904bf07-1108-4ed3-8564-d83eaafff247
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968064"
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a><span data-ttu-id="b1435-102">BizTalk Server を使用して SAP からの Idoc を受信します。</span><span class="sxs-lookup"><span data-stu-id="b1435-102">Receive IDOCs from SAP using BizTalk Server</span></span>
 <span data-ttu-id="b1435-103">IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP からの特別な RFC 呼び出しを受信する RFC サーバーとして機能します。</span><span class="sxs-lookup"><span data-stu-id="b1435-103">Receiving an IDOC involves the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] to act as an RFC server to receive a special RFC call from SAP.</span></span> <span data-ttu-id="b1435-104">SAP アダプターは、RFC サーバーまたは tRFC サーバーとして機能する Idoc を受信できます。</span><span class="sxs-lookup"><span data-stu-id="b1435-104">The SAP adapter can receive IDOCs acting as an RFC server or a tRFC server.</span></span> <span data-ttu-id="b1435-105">TRFC サーバーとして動作して、アダプターによる IDOC の受信の詳細については、次を参照してください。[を使用して BizTalk Server でのトランザクション コンテキストでの SAP からの Idoc の受信](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="b1435-105">For more information about receiving an IDOC with the adapter behaving as a tRFC server, see [Receive IDOCs from SAP in a Transactional Context by Using BizTalk Server](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md).</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="b1435-182">*FlatFileSegmentIndicator* – を示す場合、IDOC スキーマ\<appinfo\>タグは、セグメントの定義名またはセグメントの型名を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1435-182">*FlatFileSegmentIndicator* – Indicates if the IDOC schema \<appinfo\> tags should contain segment definition names or segment type names.</span></span> <span data-ttu-id="b1435-183">これは、ときに/SAP からのフラット ファイル IDOC の送信/受信するのに使用されると適用されます。</span><span class="sxs-lookup"><span data-stu-id="b1435-183">This is applicable when a used wishes to send/receive a flat-file IDOC to/from SAP.</span></span> <span data-ttu-id="b1435-184">場合、 *GenerateFlatFileCompatibleIDoc*が false に設定し、 *FlatFileSegmentIndicator*バインディング プロパティは無視されます。</span><span class="sxs-lookup"><span data-stu-id="b1435-184">If the *GenerateFlatFileCompatibleIDoc* is set to false, then *FlatFileSegmentIndicator* binding property is ignored.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="b1435-185">着信 IDOC のスキーマを生成するためには、選択を確認してください**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b1435-185">Because you are generating the schema for an inbound IDOC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
+>  <span data-ttu-id="b1435-185">着信 IDOC のスキーマを生成するためには、選択を確認してください**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b1435-185">Because you are generating the schema for an inbound IDOC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
   
 ## <a name="defining-messages-and-message-types"></a><span data-ttu-id="b1435-186">メッセージとメッセージの種類を定義します。</span><span class="sxs-lookup"><span data-stu-id="b1435-186">Defining Messages and Message Types</span></span>  
  <span data-ttu-id="b1435-187">以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b1435-187">The schema that you generated earlier describes the "types" required for the messages in the orchestration.</span></span> <span data-ttu-id="b1435-188">メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。</span><span class="sxs-lookup"><span data-stu-id="b1435-188">A message is typically a variable, the type for which is defined by the corresponding schema.</span></span> <span data-ttu-id="b1435-189">BizTalk プロジェクトのオーケストレーションの種類からのメッセージに最初の手順で生成したスキーマをリンクする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1435-189">You must link the schema you generated in the first step to the messages from the Orchestration view of the BizTalk project.</span></span>  

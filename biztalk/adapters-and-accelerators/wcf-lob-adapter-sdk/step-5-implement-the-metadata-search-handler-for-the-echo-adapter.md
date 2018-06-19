@@ -1,14 +1,14 @@
 ---
-title: "手順 5: エコー アダプターのメタデータ検索ハンドラーを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: エコー アダプターのメタデータ検索ハンドラーを実装する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a133a99-1d6c-4634-b928-0f4f23c6f6e4
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226402"
 ---
 # <a name="step-5-implement-the-metadata-search-handler-for-the-echo-adapter"></a><span data-ttu-id="953ae-102">手順 5: エコー アダプターのメタデータの検索ハンドラーを実装します。</span><span class="sxs-lookup"><span data-stu-id="953ae-102">Step 5: Implement the Metadata Search Handler for the Echo Adapter</span></span>
 <span data-ttu-id="953ae-103">![手順 5. の 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")</span><span class="sxs-lookup"><span data-stu-id="953ae-103">![Step 5 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")</span></span>  
@@ -169,7 +170,7 @@ Echo/EchoGreetingFromFile, outbound operation
   
 7.  <span data-ttu-id="953ae-155">Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="953ae-155">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
   
-8.  <span data-ttu-id="953ae-156">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="953ae-156">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="953ae-157">プロジェクトを正常にコンパイルする必要があります。</span><span class="sxs-lookup"><span data-stu-id="953ae-157">You should successfully compiled the project.</span></span> <span data-ttu-id="953ae-158">以外の場合は、上記のすべてのステップに従っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="953ae-158">If not, ensure that you have followed every step above.</span></span>  
+8.  <span data-ttu-id="953ae-156">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="953ae-156">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="953ae-157">プロジェクトを正常にコンパイルする必要があります。</span><span class="sxs-lookup"><span data-stu-id="953ae-157">You should successfully compiled the project.</span></span> <span data-ttu-id="953ae-158">以外の場合は、上記のすべてのステップに従っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="953ae-158">If not, ensure that you have followed every step above.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="953ae-159">これで作業が保存されました。</span><span class="sxs-lookup"><span data-stu-id="953ae-159">You saved your work.</span></span> <span data-ttu-id="953ae-160">安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 6: エコー アダプターのメタデータを解決するハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="953ae-160">You can safely close Visual Studio at this time or go to the next step, [Step 6: Implement the Metadata Resolve Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md).</span></span>  

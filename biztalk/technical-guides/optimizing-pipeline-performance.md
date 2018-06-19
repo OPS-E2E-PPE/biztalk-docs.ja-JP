@@ -1,14 +1,14 @@
 ---
-title: "パイプラインのパフォーマンスの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: パイプラインのパフォーマンスの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5137747-0dcf-4c96-90a7-01afb92f56a6
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299554"
 ---
 # <a name="optimizing-pipeline-performance"></a><span data-ttu-id="cad3f-102">パイプラインのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="cad3f-102">Optimizing Pipeline Performance</span></span>
 <span data-ttu-id="cad3f-103">このトピックでのパイプラインのパフォーマンスを最適化するためのガイドラインを説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="cad3f-103">This topic describes guidelines for optimizing performance of pipelines in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="cad3f-112">**VirtualStream (Microsoft.BizTalk.Streaming.dll)** -このクラスのソース コードにある 2 つの場所、パイプラインの SDK の下にある次のように: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm です。</span><span class="sxs-lookup"><span data-stu-id="cad3f-112">**VirtualStream (Microsoft.BizTalk.Streaming.dll)** - The source code for this class is located in two locations under the Pipelines SDK as follows: SDK\Samples\Pipelines\ArbitraryXPathPropertyHandler and SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm.</span></span>  
   
-    -   <span data-ttu-id="cad3f-113">**ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)**です。</span><span class="sxs-lookup"><span data-stu-id="cad3f-113">**ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)**.</span></span>  
+    -   <span data-ttu-id="cad3f-113">**ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)** です。</span><span class="sxs-lookup"><span data-stu-id="cad3f-113">**ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)**.</span></span>  
   
     -   <span data-ttu-id="cad3f-114">**SeekAbleReadOnlyStream** -このクラスのソース コードにある 2 つの場所、パイプラインの SDK の下にある次のように: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm です。</span><span class="sxs-lookup"><span data-stu-id="cad3f-114">**SeekAbleReadOnlyStream** - The source code for this class is located in two locations under the Pipelines SDK as follows: SDK\Samples\Pipelines\ArbitraryXPathPropertyHandler and SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm.</span></span>  
   

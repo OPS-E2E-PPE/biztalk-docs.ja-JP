@@ -1,14 +1,14 @@
 ---
-title: "BAM を SQL Server Reporting Services と統合する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM を SQL Server Reporting Services と統合する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e2d66b7-c8eb-4871-8a47-544955ccd51e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970256"
 ---
 # <a name="how-to-integrate-bam-with-sql-server-reporting-services"></a><span data-ttu-id="68958-102">BAM と SQL Server Reporting Services を統合する方法</span><span class="sxs-lookup"><span data-stu-id="68958-102">How to Integrate BAM with SQL Server Reporting Services</span></span>
 <span data-ttu-id="68958-103">BAM インフラストラクチャに基づいてレポートを作成するには、SQL Server の他のデータ ソース用のレポートを作成するための一般的なタスクを使用します。</span><span class="sxs-lookup"><span data-stu-id="68958-103">Creating a report based on data in the BAM infrastructure use the typical tasks associated with creating a report for any other SQL Server data source.</span></span> <span data-ttu-id="68958-104">レポート デザイナーによるレポートの作成の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=82437](http://go.microsoft.com/fwlink/?LinkId=82437)です。</span><span class="sxs-lookup"><span data-stu-id="68958-104">For more information about creating a report with Report Designer, see [http://go.microsoft.com/fwlink/?LinkId=82437](http://go.microsoft.com/fwlink/?LinkId=82437).</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "手順 8: BizTalk マッパーでマップの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8: BizTalk マッパーでマップの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, maps
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - maps, creating
 - BizTalk Mapper
 ms.assetid: 785426c7-5651-48be-b3f4-7f9d8051ba23
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207074"
 ---
 # <a name="step-8-create-a-map-with-biztalk-mapper"></a><span data-ttu-id="08ab8-102">手順 8: BizTalk マッパーでマップを作成します。</span><span class="sxs-lookup"><span data-stu-id="08ab8-102">Step 8: Create a Map with BizTalk Mapper</span></span>
 <span data-ttu-id="08ab8-103">このステップでは、BizTalk マッパーを使用してマップを作成します。</span><span class="sxs-lookup"><span data-stu-id="08ab8-103">In this step, you use the BizTalk Mapper to create a map.</span></span> <span data-ttu-id="08ab8-104">データ (フィールド) に関連付けているリンクを作成するのにドキュメントを拒否された要求内のデータに補充要求ドキュメントでこのマップを使用するとします。</span><span class="sxs-lookup"><span data-stu-id="08ab8-104">You use this map to create links that associate the data (fields) in a replenishment request document to the data in a request denied document.</span></span>  

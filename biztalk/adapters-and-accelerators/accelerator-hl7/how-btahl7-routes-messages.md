@@ -1,11 +1,11 @@
 ---
-title: "BTAHL7 でメッセージをルーティングする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BTAHL7 でメッセージをルーティングする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - routing, about routing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, routing
 - BTAHL7, message routing
 ms.assetid: 555696c7-6023-44eb-b13d-cf7527bbc92f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205098"
 ---
 # <a name="how-btahl7-routes-messages"></a><span data-ttu-id="c8b69-102">BTAHL7 でメッセージをルーティングする方法</span><span class="sxs-lookup"><span data-stu-id="c8b69-102">How BTAHL7 Routes Messages</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="c8b69-103">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])、メッセージ処理の機能を活用して[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、HL7 メッセージング要件に固有のいくつかの方法で拡張することも、します。</span><span class="sxs-lookup"><span data-stu-id="c8b69-103"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) leverages the message processing capabilities of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], but also extends it in several ways that are specific to HL7 messaging requirements.</span></span>  

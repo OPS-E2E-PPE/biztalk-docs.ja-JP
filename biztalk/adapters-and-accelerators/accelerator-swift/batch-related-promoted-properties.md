@@ -1,17 +1,17 @@
 ---
-title: "バッチに関連する昇格させたプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: バッチに関連する昇格させたプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - promoted properties, batch related properties
 - batching, promoted properties
 ms.assetid: 00df1d8f-2f3f-4e3f-9983-37dcf3514fd8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210546"
 ---
 # <a name="batch-related-promoted-properties"></a><span data-ttu-id="9f04d-102">バッチに関連する昇格させたプロパティ</span><span class="sxs-lookup"><span data-stu-id="9f04d-102">Batch-Related Promoted Properties</span></span>
 <span data-ttu-id="9f04d-103">逆アセンブラーが特殊なメッセージをマーク SWIFT の逆アセンブラーを発行すると、メッセージ ボックス データベースに受信のバッチから発信されたメッセージ、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]バッチ メッセージに固有のプロパティを昇格します。</span><span class="sxs-lookup"><span data-stu-id="9f04d-103">When the SWIFT disassembler publishes a message that originated from an inbound batch to the MessageBox database, the disassembler marks the message with special [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] promoted properties that are specific to batch messages.</span></span> <span data-ttu-id="9f04d-104">これらのプロパティは、メッセージをどのような序数の位置から開始するバッチなど内にあったに A4SWIFT の部分が保持されると、バッチなどのコンテキスト情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="9f04d-104">These properties provide context information, such as which batch a message originated from, what ordinal position it was in within the batch, which parts A4SWIFT has preserved, and so forth.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="9f04d-110">**A4SWIFT_PosInBatch**</span><span class="sxs-lookup"><span data-stu-id="9f04d-110">**A4SWIFT_PosInBatch**</span></span>  
   
- <span data-ttu-id="9f04d-111">これらおよびその他の昇格させたプロパティについては、次を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="9f04d-111">For information about these and other promoted properties, see [A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
+ <span data-ttu-id="9f04d-111">これらおよびその他の昇格させたプロパティについては、次を参照してください。 [A4SWIFT_ \* 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="9f04d-111">For information about these and other promoted properties, see [A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
   
 ## <a name="failures-during-batch-processing"></a><span data-ttu-id="9f04d-112">バッチ処理中にエラー</span><span class="sxs-lookup"><span data-stu-id="9f04d-112">Failures During Batch Processing</span></span>  
  <span data-ttu-id="9f04d-113">バッチ処理中に SWIFT の逆アセンブラーがメッセージのエラー (解析または検証) を検出した場合 (**受信バッチ解除処理**'éý' **True**)、として、その動作がバッチ処理の構成によって異なります次に示します。</span><span class="sxs-lookup"><span data-stu-id="9f04d-113">When the SWIFT disassembler encounters message failures (parsing or validation) during batch processing (**Inbound Debatching** set to **True**), its behavior depends upon the batching configuration, as follows:</span></span>  

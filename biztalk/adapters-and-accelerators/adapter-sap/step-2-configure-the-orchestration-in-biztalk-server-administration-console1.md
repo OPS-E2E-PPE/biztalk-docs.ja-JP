@@ -1,18 +1,18 @@
 ---
-title: "手順 2: BizTalk Server 管理コンソール 1 で、オーケストレーションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: BizTalk Server 管理コンソール 1 で、オーケストレーションの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestration, configruing in BizTalk Server Administration console
 - WCF-Custom port, creating
 - migration
 ms.assetid: fb057bce-5702-4ea0-8ed5-e299d3a78a11
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,13 +21,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217714"
 ---
 # <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console"></a><span data-ttu-id="d5279-102">手順 2: BizTalk Server 管理コンソールでオーケストレーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="d5279-102">Step 2: Configure the Orchestration in BizTalk Server Administration Console</span></span>
 <span data-ttu-id="d5279-103">![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="d5279-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="d5279-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="d5279-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="d5279-105">**目標:**このステップでは、次のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="d5279-105">**Objective:** In this step, you perform the following tasks:</span></span>  
+ <span data-ttu-id="d5279-105">**目標:** このステップでは、次のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="d5279-105">**Objective:** In this step, you perform the following tasks:</span></span>  
   
 -   <span data-ttu-id="d5279-106">作成、Wcf-custom 送信-受信ポートを使用して SAP システムからメッセージを送受信、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="d5279-106">Create a WCF-Custom send-receive port to send and receive messages from the SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="d5279-107">前の手順で作成したマップを使用するには、このポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="d5279-107">Configure this port to use the maps that you created in the previous step.</span></span>  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="d5279-118">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスをクリックして、**資格情報**タブをクリックし、SAP システムへの接続に資格情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="d5279-118">In the **WCF-Custom Transport Properties** dialog box, click the **Credentials** tab, and specify the credentials to connect to an SAP system.</span></span>  
   
-6.  <span data-ttu-id="d5279-119">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5279-119">Click **OK**.</span></span>  
+6.  <span data-ttu-id="d5279-119">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5279-119">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="d5279-120">送信ポートのプロパティ ダイアログ ボックスの左ペインで、をクリックして**受信マップ**です。</span><span class="sxs-lookup"><span data-stu-id="d5279-120">From the left pane of the send port properties dialog box, click **Inbound Maps**.</span></span> <span data-ttu-id="d5279-121">右側のペインの下のフィールドをクリックして、**マップ**列で、ドロップダウン リストから選択して**ResponseMap**です。</span><span class="sxs-lookup"><span data-stu-id="d5279-121">From the right pane, click the field under the **Map** column, and from the drop-down, select **ResponseMap**.</span></span>  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="d5279-125">![WCF カスタム ポートで送信マップを構成する](../../adapters-and-accelerators/adapter-sap/media/4ffcb4cd-4f53-4b67-92e2-3225d15d97ee.gif "4ffcb4cd-4f53-4b67-92e2-3225d15d97ee")</span><span class="sxs-lookup"><span data-stu-id="d5279-125">![Configure the outbound map on the WCF custom port](../../adapters-and-accelerators/adapter-sap/media/4ffcb4cd-4f53-4b67-92e2-3225d15d97ee.gif "4ffcb4cd-4f53-4b67-92e2-3225d15d97ee")</span></span>  
   
-9. <span data-ttu-id="d5279-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5279-126">Click **OK**.</span></span>  
+9. <span data-ttu-id="d5279-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5279-126">Click **OK**.</span></span>  
   
 ### <a name="to-configure-the-biztalk-application"></a><span data-ttu-id="d5279-127">BizTalk アプリケーションを構成するには</span><span class="sxs-lookup"><span data-stu-id="d5279-127">To configure the BizTalk application</span></span>  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="d5279-136">このトピックの前半で作成した、wcf-custom 送信ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="d5279-136">Select the WCF-custom send port you created earlier in this topic.</span></span>  
   
-    4.  <span data-ttu-id="d5279-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5279-137">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="d5279-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5279-137">Click **OK**.</span></span>  
   
      <span data-ttu-id="d5279-138">アプリケーションの構成の詳細についてを参照してください「どのように構成するアプリケーションへ」 [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)です。</span><span class="sxs-lookup"><span data-stu-id="d5279-138">For more information about configuring an application, see "How to Configure an Application" at [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360).</span></span>  
   

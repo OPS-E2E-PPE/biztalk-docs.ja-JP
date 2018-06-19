@@ -1,14 +1,14 @@
 ---
-title: "アダプター サービスのアドインを使用して Visual Studio での Oracle E-business Suite への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター サービスのアドインを使用して Visual Studio での Oracle E-business Suite への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62d60216-5065-4048-b073-8618b7685e00
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217154"
 ---
 # <a name="connect-to-oracle-e-business-suite-in-visual-studio-using-consume-adapter-service-add-in"></a><span data-ttu-id="94d84-102">アダプター サービスのアドインを使用して Visual Studio での Oracle E-business Suite への接続します。</span><span class="sxs-lookup"><span data-stu-id="94d84-102">Connect to Oracle E-Business Suite in Visual Studio using Consume Adapter Service Add-in</span></span>
 <span data-ttu-id="94d84-103">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]をインストールするときにインストールされている[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="94d84-103">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] is installed when you install [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="94d84-104">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]コンピューターにインストールされているすべての WCF カスタム バインドを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="94d84-104">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] loads all the WCF-Custom bindings installed on the computer.</span></span> <span data-ttu-id="94d84-105">WCF ベースを使用して Oracle E-business Suite への接続に[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]BizTalk プロジェクトで使用する必要があります、 **oracleEBSBinding**です。</span><span class="sxs-lookup"><span data-stu-id="94d84-105">To connect to Oracle E-Business Suite using the WCF-based [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] in a BizTalk project, you must use the **oracleEBSBinding**.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="94d84-116">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="94d84-116">**Categories**</span></span>|<span data-ttu-id="94d84-117">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="94d84-117">Click **Consume Adapter Service**.</span></span>|  
         |<span data-ttu-id="94d84-118">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="94d84-118">**Templates**</span></span>|<span data-ttu-id="94d84-119">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="94d84-119">Click **Consume Adapter Service**.</span></span>|  
   
-    4.  <span data-ttu-id="94d84-120">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94d84-120">Click **Add**.</span></span> <span data-ttu-id="94d84-121">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="94d84-121">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
+    4.  <span data-ttu-id="94d84-120">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94d84-120">Click **Add**.</span></span> <span data-ttu-id="94d84-121">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="94d84-121">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
   
 2.  <span data-ttu-id="94d84-122">**バインディングを選択**ドロップダウン リスト、選択**oracleEBSBinding**  をクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="94d84-122">From the **Select a binding** drop-down list, select **oracleEBSBinding** and click **Configure**.</span></span>  
   
@@ -61,9 +62,9 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="94d84-140">クリックして、**バインド プロパティ**タブをクリックし、対象となる操作で、必要な場合、バインド プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="94d84-140">Click the **Binding Properties** tab, and then specify values for the binding properties, if any, required by the operations you want to target.</span></span> <span data-ttu-id="94d84-141">バインドのプロパティの詳細については、次を参照してください。 [Oracle E-business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="94d84-141">For more information about binding properties, see [Read about the BizTalk Adapter for Oracle E-Business Suite binding properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span>  
   
-6.  <span data-ttu-id="94d84-142">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94d84-142">Click **OK**.</span></span>  
+6.  <span data-ttu-id="94d84-142">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94d84-142">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="94d84-143">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94d84-143">Click **Connect**.</span></span> <span data-ttu-id="94d84-144">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="94d84-144">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="94d84-143">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94d84-143">Click **Connect**.</span></span> <span data-ttu-id="94d84-144">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="94d84-144">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="94d84-145">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="94d84-145">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span>  
   

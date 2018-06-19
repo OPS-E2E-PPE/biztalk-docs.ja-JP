@@ -1,17 +1,17 @@
 ---
-title: "静的な受信確認 |Microsoft ドキュメント"
-ms.custom: 
+title: 静的な受信確認 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - static acknowledgements
 - acknowledgements, static acknowledgements
 ms.assetid: 1cdd01fc-1dae-4851-917f-4f13a0f9595a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206282"
 ---
 # <a name="static-acknowledgments"></a><span data-ttu-id="cfe8e-102">静的な受信確認</span><span class="sxs-lookup"><span data-stu-id="cfe8e-102">Static Acknowledgments</span></span>
 <span data-ttu-id="cfe8e-103">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 元、強化された、遅延、および静的な受信確認 (ACK) モードをサポートします。</span><span class="sxs-lookup"><span data-stu-id="cfe8e-103">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) supports original, enhanced, deferred, and static acknowledgment (ACK) modes.</span></span> <span data-ttu-id="cfe8e-104">パーティの静的 ACK モードを選択するかどうかは[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラーで、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]を成功または失敗を示す値だけを含む静的 Ack が生成されます。</span><span class="sxs-lookup"><span data-stu-id="cfe8e-104">If you select static ACK mode for a party in [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] will generate static ACKs that contain only an indication of success or failure.</span></span> <span data-ttu-id="cfe8e-105">静的 ACK がエラー値で構成し、受信側のシステムが受信され、成功した場合に、メッセージを処理するかどうかを示す[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。</span><span class="sxs-lookup"><span data-stu-id="cfe8e-105">The static ACK indicates whether the receiving system received and processed the message, in success and failure values configured in [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.</span></span>  

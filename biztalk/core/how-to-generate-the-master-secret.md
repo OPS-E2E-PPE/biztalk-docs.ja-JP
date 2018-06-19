@@ -1,17 +1,17 @@
 ---
-title: "マスター シークレットを生成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレットを生成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, generating
 - managing [Master Secret server], generating
 ms.assetid: 5512a8ee-bc5b-4fe4-90c7-41e3baaa723b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25969520"
 ---
 # <a name="how-to-generate-the-master-secret"></a><span data-ttu-id="ca5c2-102">マスター シークレットを生成する方法</span><span class="sxs-lookup"><span data-stu-id="ca5c2-102">How to Generate the Master Secret</span></span>
 <span data-ttu-id="ca5c2-103">この作業を実行するには、マスター シークレット サーバーに対する管理者権限が必要です。</span><span class="sxs-lookup"><span data-stu-id="ca5c2-103">You must have administrator rights on the master secret server in order to perform this task.</span></span> <span data-ttu-id="ca5c2-104">また、この作業はマスター シークレット サーバーから実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca5c2-104">In addition, you must perform this task from the master secret server.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 01/17/2018
   
 2.  <span data-ttu-id="ca5c2-115">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="ca5c2-115">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="ca5c2-116">既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="ca5c2-116">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="ca5c2-117">型**ssoconfig – generateSecret \<*バックアップ ファイル*\>**ここで、 \<*バックアップ ファイル*\>の名前を指定しますマスター シークレットを含むファイルです。</span><span class="sxs-lookup"><span data-stu-id="ca5c2-117">Type **ssoconfig –generateSecret \<*backup file*\>**, where \<*backup file*\> is the name of the file that contains the master secret.</span></span>  
+3.  <span data-ttu-id="ca5c2-117">型**ssoconfig – generateSecret \<*バックアップ ファイル*\>** ここで、 \<*バックアップ ファイル*\>の名前を指定しますマスター シークレットを含むファイルです。</span><span class="sxs-lookup"><span data-stu-id="ca5c2-117">Type **ssoconfig –generateSecret \<*backup file*\>**, where \<*backup file*\> is the name of the file that contains the master secret.</span></span>  
   
      <span data-ttu-id="ca5c2-118">作成したファイルを保護するためのパスワードを入力するように求められます。</span><span class="sxs-lookup"><span data-stu-id="ca5c2-118">You will be prompted to enter a password to protect the file you just created.</span></span>  
   

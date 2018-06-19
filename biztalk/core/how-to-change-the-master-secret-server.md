@@ -1,11 +1,11 @@
 ---
-title: "マスター シークレット サーバーを変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット サーバーを変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, promoting
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, Master Secret server
 - Master Secret server, changing
 ms.assetid: 44a786ca-4645-44a8-b33e-d0019f0aeca9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969360"
 ---
 # <a name="how-to-change-the-master-secret-server"></a><span data-ttu-id="90c15-102">マスター シークレット サーバーを変更する方法</span><span class="sxs-lookup"><span data-stu-id="90c15-102">How to Change the Master Secret Server</span></span>
 <span data-ttu-id="90c15-103">マスター シークレット サーバーをセットアップして SSO データベースを構成した後、元のマスター シークレット サーバーで障害が発生して復旧できない場合は、マスター シークレット サーバーを変更できます。</span><span class="sxs-lookup"><span data-stu-id="90c15-103">After you set up the master secret server and configure the SSO database, you can change the master secret server if the original master secret server fails and cannot be recovered.</span></span> <span data-ttu-id="90c15-104">マスター シークレット サーバーを変更するには、SSO サーバーを、マスター シークレット サーバーに昇格させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="90c15-104">To change the master secret server, you need to promote an SSO server to become the master secret server.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="90c15-116">新しいマスター シークレット サーバーを再起動します。</span><span class="sxs-lookup"><span data-stu-id="90c15-116">Restart the new Master Secret Server.</span></span>  
   
-8.  <span data-ttu-id="90c15-117">型**ssoconfig – restoresecret と入力\<ファイルを復元\>**ここで、 **\<ファイルを復元\>**マスター シークレットがファイルの名前とパスには格納されています。</span><span class="sxs-lookup"><span data-stu-id="90c15-117">Type **ssoconfig –restoreSecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
+8.  <span data-ttu-id="90c15-117">型**ssoconfig – restoresecret と入力\<ファイルを復元\>** ここで、 **\<ファイルを復元\>** マスター シークレットがファイルの名前とパスには格納されています。</span><span class="sxs-lookup"><span data-stu-id="90c15-117">Type **ssoconfig –restoreSecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
   
      <span data-ttu-id="90c15-118">マスター シークレットがレジストリの次の場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="90c15-118">The master secret is stored in the registry at the following location:</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="90c15-131">マスター シークレット サーバーを再起動します。</span><span class="sxs-lookup"><span data-stu-id="90c15-131">Restart the Master Secret Server.</span></span>  
   
-6.  <span data-ttu-id="90c15-132">型**ssoconfig – restoresecret と入力\<ファイルを復元\>**ここで、 **\<ファイルを復元\>**マスター シークレットがファイルの名前とパスには格納されています。</span><span class="sxs-lookup"><span data-stu-id="90c15-132">Type **ssoconfig –restoresecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
+6.  <span data-ttu-id="90c15-132">型**ssoconfig – restoresecret と入力\<ファイルを復元\>** ここで、 **\<ファイルを復元\>** マスター シークレットがファイルの名前とパスには格納されています。</span><span class="sxs-lookup"><span data-stu-id="90c15-132">Type **ssoconfig –restoresecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
   
      <span data-ttu-id="90c15-133">マスター シークレットがレジストリの次の場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="90c15-133">The master secret is stored in the registry at the following location:</span></span>  
   

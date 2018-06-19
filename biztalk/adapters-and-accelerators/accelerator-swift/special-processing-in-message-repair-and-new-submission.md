@@ -1,11 +1,11 @@
 ---
-title: "特別な処理で、Message Repair and New Submission |Microsoft ドキュメント"
-ms.custom: 
+title: 特別な処理で、Message Repair and New Submission |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages, rekey verification
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - messages, process flow
 - BIC-11 data
 ms.assetid: 0ab729e3-4b67-47d3-84c9-f016318a4c41
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214418"
 ---
 # <a name="special-processing-in-message-repair-and-new-submission"></a><span data-ttu-id="e9a24-102">Message Repair and New Submission の特別な処理</span><span class="sxs-lookup"><span data-stu-id="e9a24-102">Special Processing in Message Repair and New Submission</span></span>
 <span data-ttu-id="e9a24-103">[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] Message Repair and New Submission の機能は、エンタープライズの実装計画を策定します。</span><span class="sxs-lookup"><span data-stu-id="e9a24-103">The [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] Message Repair and New Submission functionality enables customers to develop an enterprise implementation.</span></span> <span data-ttu-id="e9a24-104">機能には、次の特別な処理がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="e9a24-104">The functionality supports the following special processing:</span></span>  

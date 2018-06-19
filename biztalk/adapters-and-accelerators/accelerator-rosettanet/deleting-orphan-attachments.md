@@ -1,18 +1,18 @@
 ---
-title: "孤立した添付ファイルの削除 |Microsoft ドキュメント"
-ms.custom: 
+title: 孤立した添付ファイルの削除 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maintaining databases, deleting orphaned attachments
 - databases, deleting orphaned attachments
 - attachments
 ms.assetid: 38280464-9c9d-4890-9fc5-4b8031dd3f88
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209994"
 ---
 # <a name="deleting-orphan-attachments"></a><span data-ttu-id="5e804-102">孤立した添付ファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="5e804-102">Deleting Orphan Attachments</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="5e804-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]受信メッセージの添付ファイルを格納します。</span><span class="sxs-lookup"><span data-stu-id="5e804-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] stores attachments for received messages.</span></span> <span data-ttu-id="5e804-104">特定の状況で[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、添付ファイルを保存しますが、孤立した添付ファイルに結果として得られる、MessagesToLOB テーブルから関連するメッセージを削除します。</span><span class="sxs-lookup"><span data-stu-id="5e804-104">In certain circumstances, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] saves the attachment, but deletes the associated message from the MessagesToLOB table, resulting in an orphan attachment.</span></span> <span data-ttu-id="5e804-105">添付ファイルがある、マニフェストが無効な場合、メッセージ NumberOfAttachments に、マニフェストなどを送信するときに発生する可能性がこの 0 を = です。</span><span class="sxs-lookup"><span data-stu-id="5e804-105">This can occur when you submit a message that has an attachment and has a manifest that is not valid, for example, a manifest in which NumberOfAttachments = 0.</span></span> <span data-ttu-id="5e804-106">定期的に、システムのパフォーマンスを維持するために孤立した添付ファイルを削除することがあります。</span><span class="sxs-lookup"><span data-stu-id="5e804-106">Periodically, you may want to delete orphan attachments to maintain system performance.</span></span>  

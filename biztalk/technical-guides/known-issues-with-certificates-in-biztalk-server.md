@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server での証明書に関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server での証明書に関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab58264b-2475-4831-9f08-bfbaa293022f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297578"
 ---
 # <a name="known-issues-with-certificates-in-biztalk-server"></a><span data-ttu-id="52be1-102">BizTalk Server での証明書に関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="52be1-102">Known Issues with Certificates in BizTalk Server</span></span>
 <span data-ttu-id="52be1-103">このセクションで使用されるデジタル証明書の管理に関する既知の問題の説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="52be1-103">This section describes known issues with managing digital certificates used with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -98,7 +99,7 @@ at Microsoft.BizTalk.EdiInt.Reporting.AS2MessageActivity.Create()"
   
 4.  <span data-ttu-id="52be1-163">をクリックして、**ログオン**] タブで [**アカウント**、し分離ホスト インスタンスで使用するログオン名を入力します。</span><span class="sxs-lookup"><span data-stu-id="52be1-163">Click the **Log On** tab, select **This Account**, and then enter the logon name used for the isolated host instance.</span></span>  
   
-5.  <span data-ttu-id="52be1-164">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52be1-164">Click **OK**.</span></span>  
+5.  <span data-ttu-id="52be1-164">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52be1-164">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="52be1-165">手動でサービスを開始するログオン ユーザーのユーザー プロファイルを読み込めません。</span><span class="sxs-lookup"><span data-stu-id="52be1-165">Manually start the service to load the user profile for that logon user.</span></span>  
   

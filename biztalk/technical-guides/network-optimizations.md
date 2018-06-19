@@ -1,14 +1,14 @@
 ---
-title: "ネットワーク最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: ネットワーク最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9ff0392f-37ae-4ca6-8cc6-d53065de64c5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298762"
 ---
 # <a name="network-optimizations"></a><span data-ttu-id="f0134-102">ネットワークの最適化</span><span class="sxs-lookup"><span data-stu-id="f0134-102">Network Optimizations</span></span>
 <span data-ttu-id="f0134-103">BizTalk Server コンピューターは、SQL Server コンピューターから独立、BizTalk Server 環境で BizTalk Server によって処理される各メッセージには、ネットワーク経由で通信が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0134-103">In a BizTalk Server environment where the BizTalk Server computer(s) are separate from the SQL Server computer(s), each and every message processed by BizTalk Server requires communication over the network.</span></span> <span data-ttu-id="f0134-104">この通信には、BizTalk Server コンピューターと BizTalk メッセージ ボックス データベース、BizTalk 管理データベース、BAM データベースおよびその他のデータベース間のかなりのトラフィックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f0134-104">This communication includes considerable traffic between the BizTalk Server computers and the BizTalk Message Box database(s), the BizTalk Management database(s), the BAM databases, and other databases.</span></span> <span data-ttu-id="f0134-105">高負荷のシナリオで、この通信は大量のネットワーク トラフィックにより、ネットワーク設定が最適化されていない、十分なネットワーク インターフェイス カードがインストールされている、または十分なネットワーク帯域幅が場合は特に、ボトルネックになることができます。使用できます。</span><span class="sxs-lookup"><span data-stu-id="f0134-105">In high-load scenarios, this communication can result in considerable network traffic and can become a bottleneck, especially when network settings have not been optimized, not enough network interface cards are installed, or insufficient network bandwidth is available.</span></span>  
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]  
     >  <span data-ttu-id="f0134-142">Windows を設定する必要があります、**サブネット マスク**に入力した値に基づいて、適切な値を持つフィールド、 **IP アドレス**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="f0134-142">Windows should populate the **Subnet mask** field with an appropriate value based upon the value that you entered into the **IP address** field.</span></span>  
   
-5.  <span data-ttu-id="f0134-143">ままにして、**デフォルト ゲートウェイ**フィールドの空白をクリックして**[ok]**、順にクリック**閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="f0134-143">Leave the **Default gateway** field blank, click **OK**, and then click **Close**.</span></span>  
+5.  <span data-ttu-id="f0134-143">ままにして、**デフォルト ゲートウェイ**フィールドの空白をクリックして **[ok]**、順にクリック**閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="f0134-143">Leave the **Default gateway** field blank, click **OK**, and then click **Close**.</span></span>  
   
 6.  <span data-ttu-id="f0134-144">一意のプライベート IP アドレスを各仮想マシンを構成した後に、HYPER-V ホスト コンピューターで実行されている他の仮想マシンの NetBIOS 名と IP アドレスと各仮想マシン上の HOSTS ファイルを更新します。</span><span class="sxs-lookup"><span data-stu-id="f0134-144">After configuring each virtual machine with a unique private IP address, update the HOSTS file on each virtual machine with the IP address and NetBIOS name of the other virtual machines running on the Hyper-V host computer.</span></span> <span data-ttu-id="f0134-145">更新されたホスト ファイルは、各仮想マシンに %systemroot%\drivers\etc\ フォルダーに保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0134-145">The updated HOSTS file should be saved to the %systemroot%\drivers\etc\ folder on each virtual machine.</span></span>  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="f0134-167">プロトコルおよびサービスを現在インストールされているネットワーク クライアントを表示するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f0134-167">To see the currently installed network clients, protocols and services, follow these steps:</span></span>  
   
-1.  <span data-ttu-id="f0134-168">をクリックして**開始**、] をポイント**設定**、順にクリック**コントロール パネルの [**です。</span><span class="sxs-lookup"><span data-stu-id="f0134-168">Click **Start**, point to **Settings**, and then click **Control Panel**.</span></span>  
+1.  <span data-ttu-id="f0134-168">をクリックして**開始**、] をポイント**設定**、順にクリック**コントロール パネルの [** です。</span><span class="sxs-lookup"><span data-stu-id="f0134-168">Click **Start**, point to **Settings**, and then click **Control Panel**.</span></span>  
   
 2.  <span data-ttu-id="f0134-169">ダブルクリックして**ネットワーク接続**コンピューターのネットワーク接続を表示します。</span><span class="sxs-lookup"><span data-stu-id="f0134-169">Double-click **Network Connections** to display the network connections on the computer.</span></span>  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="f0134-191">**全般** タブで、をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="f0134-191">On the **General** tab, click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="f0134-192">クリックして、 **[詳細設定]**タブ プロパティにアクセスするネットワーク アダプターに構成することができます。</span><span class="sxs-lookup"><span data-stu-id="f0134-192">Click the **Advanced** tab to access properties that can be configured for the network adapter.</span></span>  
+5.  <span data-ttu-id="f0134-192">クリックして、 **[詳細設定]** タブ プロパティにアクセスするネットワーク アダプターに構成することができます。</span><span class="sxs-lookup"><span data-stu-id="f0134-192">Click the **Advanced** tab to access properties that can be configured for the network adapter.</span></span>  
   
  <span data-ttu-id="f0134-193">次のプロパティは、BizTalk Server 環境の各ネットワーク アダプターを構成してください。</span><span class="sxs-lookup"><span data-stu-id="f0134-193">The following properties should be configured for each network adapter in the BizTalk Server environment:</span></span>  
   

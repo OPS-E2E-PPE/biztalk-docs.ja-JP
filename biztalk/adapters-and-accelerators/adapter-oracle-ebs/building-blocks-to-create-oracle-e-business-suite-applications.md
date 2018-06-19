@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite アプリケーションを作成するビルド ブロック |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite アプリケーションを作成するビルド ブロック |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 483a52d4-1aaf-46b1-bb42-9f91bf678346
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216106"
 ---
 # <a name="building-blocks-to-create-oracle-e-business-suite-applications"></a><span data-ttu-id="4edfe-102">Oracle E-business Suite アプリケーションを作成する構成要素</span><span class="sxs-lookup"><span data-stu-id="4edfe-102">Building blocks to create Oracle E-Business Suite applications</span></span>
 <span data-ttu-id="4edfe-103">使用して Oracle E-business Suite での操作を実行する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、デザイン時および実行時のタスクのセットを実行する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールをそれぞれします。</span><span class="sxs-lookup"><span data-stu-id="4edfe-103">To perform operations on Oracle E-Business Suite by using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must perform a set of design-time and run-time tasks using [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console respectively.</span></span> <span data-ttu-id="4edfe-104">このセクションでは、これらのタスクの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="4edfe-104">This section provides an overview of these tasks.</span></span> <span data-ttu-id="4edfe-105">すべてトピックでは、ここでは、Oracle E-business Suite を使用して上の特定の操作を実行する方法を示す[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、これらの高度なタスクでは、モデル化します。</span><span class="sxs-lookup"><span data-stu-id="4edfe-105">All the topics in this section, which demonstrate how to perform specific operations on Oracle E-Business Suite using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], are modeled on these high-level tasks.</span></span>  

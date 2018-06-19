@@ -1,11 +1,11 @@
 ---
-title: "作成して、A4SWIFT パイプラインを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: 作成して、A4SWIFT パイプラインを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipelines, deploying
 - pipelines, creating
 ms.assetid: 2a614510-7e15-4e88-9012-fc019d3aefee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210954"
 ---
 # <a name="creating-and-deploying-a4swift-pipelines"></a><span data-ttu-id="a972b-102">作成して、A4SWIFT パイプラインを展開します。</span><span class="sxs-lookup"><span data-stu-id="a972b-102">Creating and Deploying A4SWIFT Pipelines</span></span>
 <span data-ttu-id="a972b-103">次の図に示すように作成し、メッセージ repair and new submission の SWIFT パイプラインを展開するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="a972b-103">Perform the following steps to create and deploy SWIFT pipelines for message repair and new submission, as shown in the following figure.</span></span>  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
 7.  <span data-ttu-id="a972b-128">**プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**です。</span><span class="sxs-lookup"><span data-stu-id="a972b-128">In **Properties**, verify that the **BRE Validation** and **XML Validation** properties are set to **True**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="a972b-129">SWIFT ヘッダー スキーマ プロパティを設定する必要があります**(なし)**です。</span><span class="sxs-lookup"><span data-stu-id="a972b-129">The SWIFT Header Schema property should be set to **(None)**.</span></span>  
+    >  <span data-ttu-id="a972b-129">SWIFT ヘッダー スキーマ プロパティを設定する必要があります **(なし)** です。</span><span class="sxs-lookup"><span data-stu-id="a972b-129">The SWIFT Header Schema property should be set to **(None)**.</span></span>  
   
 8.  <span data-ttu-id="a972b-130">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ファイル**、し**すべてを保存**です。</span><span class="sxs-lookup"><span data-stu-id="a972b-130">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], click **File**, and then **Save All**.</span></span>  
   

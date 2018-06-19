@@ -1,14 +1,14 @@
 ---
-title: "Microsoft BizTalk Adapter for SQL Server - 2016 のインストール |Microsoft ドキュメント"
-ms.custom: 
+title: Microsoft BizTalk Adapter for SQL Server - 2016 のインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bcc6b94e-1cac-4b90-8567-05b33caa9bf3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967912"
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2016"></a><span data-ttu-id="ce42e-102">Microsoft BizTalk Adapter for SQL Server - 2016 のインストールします。</span><span class="sxs-lookup"><span data-stu-id="ce42e-102">Install Microsoft BizTalk Adapter for SQL Server - 2016</span></span>
 <span data-ttu-id="ce42e-103">インストール、[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]に含まれている[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ce42e-103">Install the [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)] included with [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].</span></span>
@@ -141,7 +142,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="ce42e-222">読み取り、使用許諾契約書 (EULA) に同意し、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="ce42e-222">Read and accept the end-user license agreement (EULA), and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="ce42e-223">**コピー先フォルダー**  ダイアログ ボックスで、インストールする場所を指定、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、 をクリックして**[次へ]**、クリックして**インストール**です。</span><span class="sxs-lookup"><span data-stu-id="ce42e-223">In the **Destination Folder** dialog box, specify the location where you want to install the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], click **Next**, and then click **Install**.</span></span>  
+4.  <span data-ttu-id="ce42e-223">**コピー先フォルダー**  ダイアログ ボックスで、インストールする場所を指定、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、 をクリックして **[次へ]**、クリックして**インストール**です。</span><span class="sxs-lookup"><span data-stu-id="ce42e-223">In the **Destination Folder** dialog box, specify the location where you want to install the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], click **Next**, and then click **Install**.</span></span>  
   
 5.  <span data-ttu-id="ce42e-224">**カスタマー エクスペリエンス向上プログラム** ダイアログ ボックスで、カスタマー エクスペリエンス向上プログラム (CEIP) に登録するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="ce42e-224">In the **Customer Experience Improvement Program** dialog box, specify whether you would like to enroll for the Customer Experience Improvement Program (CEIP).</span></span> <span data-ttu-id="ce42e-225">CEIP 用の一部として[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、次のデータは、Microsoft と共有されます。</span><span class="sxs-lookup"><span data-stu-id="ce42e-225">As part of CEIP for [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], you will share the following data with Microsoft:</span></span>  
   
@@ -154,7 +155,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="ce42e-229">常に、基本設定を変更することができます修復モードで、コントロール パネルから、セットアップを実行して、CEIP の登録に関連します。</span><span class="sxs-lookup"><span data-stu-id="ce42e-229">You can always change your preference regarding enrolling for CEIP by running the Setup in Repair mode from the Control Panel.</span></span>  
   
-6.  <span data-ttu-id="ce42e-230">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce42e-230">Click **Finish**.</span></span>  
+6.  <span data-ttu-id="ce42e-230">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce42e-230">Click **Finish**.</span></span>  
   
 <a name="BKMK_SilentInst"></a>   
 ### <a name="install-the-sql-adapter-in-silent-mode"></a><span data-ttu-id="ce42e-231">サイレント モードでの SQL アダプターをインストールします。</span><span class="sxs-lookup"><span data-stu-id="ce42e-231">Install the SQL adapter in silent mode</span></span> 
@@ -275,7 +276,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="ce42e-283">必要に応じて、ユーザーの設定を変更に関して、CEIP を無効にして、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ce42e-283">If required, change your preferences regarding opting for CEIP, and then click **OK**.</span></span>  
   
-8.  <span data-ttu-id="ce42e-284">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce42e-284">Click **Finish**.</span></span>  
+8.  <span data-ttu-id="ce42e-284">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce42e-284">Click **Finish**.</span></span>  
   
 #### <a name="update-the-sql-adapter-installation-in-silent-mode"></a><span data-ttu-id="ce42e-285">更新プログラムのサイレント モードで SQL アダプターのインストール</span><span class="sxs-lookup"><span data-stu-id="ce42e-285">Update the SQL Adapter installation in silent mode</span></span>  
   

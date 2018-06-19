@@ -1,14 +1,14 @@
 ---
-title: ".NET プロジェクトで、WCF LOB Adapter SDK アダプターを使用する |Microsoft ドキュメント"
-ms.custom: 
+title: .NET プロジェクトで、WCF LOB Adapter SDK アダプターを使用する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6934b96d-5704-4f3c-b53f-4e36e352a338
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966832"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project"></a><span data-ttu-id="373c0-102">.NET プロジェクトで、WCF LOB Adapter SDK アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="373c0-102">Consume a WCF LOB Adapter SDK adapter in a .NET project</span></span>
 <span data-ttu-id="373c0-103">使用して構築されたアダプターを使用する、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクトにサービス参照を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="373c0-103">To consume an adapter built using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you must add a service reference to the project.</span></span> <span data-ttu-id="373c0-104">これを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="373c0-104">You can do this by:</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="373c0-115">URI を構成した場合にクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="373c0-115">When you have configured the URI, click **OK**.</span></span>  
   
-6.  <span data-ttu-id="373c0-116">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="373c0-116">Click **Connect**.</span></span> <span data-ttu-id="373c0-117">接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。</span><span class="sxs-lookup"><span data-stu-id="373c0-117">If the connection URI is valid and client credentials (if any) are accepted, the **Category** pane should be populated with the categories and operations provided by the adapter.</span></span>  
+6.  <span data-ttu-id="373c0-116">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="373c0-116">Click **Connect**.</span></span> <span data-ttu-id="373c0-117">接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。</span><span class="sxs-lookup"><span data-stu-id="373c0-117">If the connection URI is valid and client credentials (if any) are accepted, the **Category** pane should be populated with the categories and operations provided by the adapter.</span></span>  
   
 7.  <span data-ttu-id="373c0-118">アダプターは、検索をサポートする場合は、[検索] フィールドはアクティブになります。</span><span class="sxs-lookup"><span data-stu-id="373c0-118">If the adapter supports search, the search field will be active.</span></span> <span data-ttu-id="373c0-119">それ以外の場合、コントラクト型でフィルター処理、内のノードをクリックして、型、および操作を調べ、**カテゴリ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="373c0-119">Otherwise, you can filter by contract type, explore types, and operations by clicking nodes in the **Category** pane.</span></span>  
   
@@ -86,9 +87,9 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="373c0-190">プロジェクトを開く[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="373c0-190">Open your project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span>  
   
-    1.  <span data-ttu-id="373c0-191">**ソリューション エクスプ ローラー**プロジェクトを右クリックしをポイントし、**追加**、クリックして**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="373c0-191">In **Solution Explorer**, right-click the project, point to **Add**, and then click **New Item**.</span></span> <span data-ttu-id="373c0-192">**既存項目の追加** ダイアログ ボックスで、選択、.cs ファイルおよび app.config ファイルが以前に作成します。</span><span class="sxs-lookup"><span data-stu-id="373c0-192">In the **Add Existing Item** dialog box, select the .cs and app.config files created previously.</span></span>  <span data-ttu-id="373c0-193">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="373c0-193">Click **Add**.</span></span>  
+    1.  <span data-ttu-id="373c0-191">**ソリューション エクスプ ローラー**プロジェクトを右クリックしをポイントし、**追加**、クリックして**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="373c0-191">In **Solution Explorer**, right-click the project, point to **Add**, and then click **New Item**.</span></span> <span data-ttu-id="373c0-192">**既存項目の追加** ダイアログ ボックスで、選択、.cs ファイルおよび app.config ファイルが以前に作成します。</span><span class="sxs-lookup"><span data-stu-id="373c0-192">In the **Add Existing Item** dialog box, select the .cs and app.config files created previously.</span></span>  <span data-ttu-id="373c0-193">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="373c0-193">Click **Add**.</span></span>  
   
-    2.  <span data-ttu-id="373c0-194">**ソリューション エクスプ ローラー**を右クリックして**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="373c0-194">In **Solution Explorer**, right-click **References**, and then click **Add Reference**.</span></span> <span data-ttu-id="373c0-195">**.NET** ] タブで [ **System.ServiceModel**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="373c0-195">On the **.NET** tab, select **System.ServiceModel**, and then click **OK**.</span></span> <span data-ttu-id="373c0-196">アプリケーションで、プロキシを使用できます。</span><span class="sxs-lookup"><span data-stu-id="373c0-196">You can now use the proxy in your application.</span></span>  
+    2.  <span data-ttu-id="373c0-194">**ソリューション エクスプ ローラー**を右クリックして**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="373c0-194">In **Solution Explorer**, right-click **References**, and then click **Add Reference**.</span></span> <span data-ttu-id="373c0-195">**.NET** ] タブで [ **System.ServiceModel**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="373c0-195">On the **.NET** tab, select **System.ServiceModel**, and then click **OK**.</span></span> <span data-ttu-id="373c0-196">アプリケーションで、プロキシを使用できます。</span><span class="sxs-lookup"><span data-stu-id="373c0-196">You can now use the proxy in your application.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="373c0-197">参照</span><span class="sxs-lookup"><span data-stu-id="373c0-197">See Also</span></span>  
  <span data-ttu-id="373c0-198">[チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="373c0-198">[Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) </span></span>  

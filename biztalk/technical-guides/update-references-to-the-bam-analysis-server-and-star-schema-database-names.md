@@ -1,14 +1,14 @@
 ---
-title: "BAM Analysis Server およびスター スキーマ データベース名への参照の更新 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM Analysis Server およびスター スキーマ データベース名への参照の更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 319caa26-1292-4453-a316-efca4fbffdb6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302234"
 ---
 # <a name="update-references-to-the-bam-analysis-server-and-star-schema-database-names"></a><span data-ttu-id="e6fd3-102">BAM Analysis Server およびスター スキーマ データベース名への参照の更新</span><span class="sxs-lookup"><span data-stu-id="e6fd3-102">Update References to the BAM Analysis Server and Star Schema Database Names</span></span>
 <span data-ttu-id="e6fd3-103">BAM 分析データベースがバックアップされていれば、システムまたはデータに障害が発生したときには、別のコンピュータにバックアップを復元でき、さらにその名前を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="e6fd3-103">If you backed up your BAM Analysis database, in the event of a system or data failure you can restore that backup to a different computer and you can rename the backup.</span></span>  

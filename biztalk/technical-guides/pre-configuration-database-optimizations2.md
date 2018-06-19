@@ -1,14 +1,14 @@
 ---
-title: "事前構成データベース Optimizations2 |Microsoft ドキュメント"
-ms.custom: 
+title: 事前構成データベース Optimizations2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8c525c3a-249c-4694-b287-a8c35a6aa524
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015433"
 ---
 # <a name="pre-configuration-database-optimizations"></a><span data-ttu-id="6ebc5-102">事前構成データベースの最適化</span><span class="sxs-lookup"><span data-stu-id="6ebc5-102">Pre-Configuration Database Optimizations</span></span>
 <span data-ttu-id="6ebc5-103">SQL Server が BizTalk Server 環境で再生される重要な役割、ためことが最も重要 SQL Server では、パフォーマンスを最適に構成されているチューニングできることです。</span><span class="sxs-lookup"><span data-stu-id="6ebc5-103">Because of the critical role that SQL Server plays in any BizTalk Server environment, it is of paramount importance that SQL Server be configured/tuned for optimal performance.</span></span> <span data-ttu-id="6ebc5-104">SQL Server が正しく実行するチューニングされなかった場合は、BizTalk Server で使用するデータベースがボトルネックになり、BizTalk Server 環境の全体的なパフォーマンスが低下します。</span><span class="sxs-lookup"><span data-stu-id="6ebc5-104">If SQL Server is not tuned to perform well, then the databases used by BizTalk Server will become a bottleneck and the overall performance of the BizTalk Server environment will suffer.</span></span> <span data-ttu-id="6ebc5-105">このトピックでは、BizTalk Server をインストールして、BizTalk Server データベースを構成する前に従う必要があります複数の SQL Server パフォーマンス最適化機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="6ebc5-105">This topic describes several SQL Server performance optimizations that should be followed before installing BizTalk Server and configuring the BizTalk Server databases.</span></span>  

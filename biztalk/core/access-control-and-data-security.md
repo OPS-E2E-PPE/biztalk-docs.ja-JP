@@ -1,11 +1,11 @@
 ---
-title: "アクセス制御とデータのセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: アクセス制御とデータのセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - access control, BizTalk Server Operator role
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - user accounts, access control
 - BizTalk Server Operator role
 ms.assetid: f04fd4a3-0f8c-4170-934a-9cc77edd7f34
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225642"
 ---
 # <a name="access-control-and-data-security"></a><span data-ttu-id="ff1fc-102">アクセス制御とデータのセキュリティ</span><span class="sxs-lookup"><span data-stu-id="ff1fc-102">Access Control and Data Security</span></span>
 <span data-ttu-id="ff1fc-103">BizTalk Server では、ユーザー権限を最小限にすることでプロセスとデータベースへのアクセスを制限しています。システム内の重要なデータは、Microsoft Windows Server の機能を使用して、セキュリティで保護できます。</span><span class="sxs-lookup"><span data-stu-id="ff1fc-103">BizTalk Server limits access to its processes and databases by using minimum user rights; you can help secure important data in the system by using features from Microsoft Windows Server.</span></span> <span data-ttu-id="ff1fc-104">セキュリティ上の理由から、BizTalk Server 管理者および BizTalk ホストに対して、業務の遂行に不要なユーザー権限を設定しないでください。</span><span class="sxs-lookup"><span data-stu-id="ff1fc-104">For security reasons, BizTalk Server Administrators and BizTalk Hosts should not have more user rights than necessary to perform their jobs.</span></span>  

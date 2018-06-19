@@ -1,14 +1,14 @@
 ---
-title: "MX 送信ポートを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: MX 送信ポートを追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3ad5d2f-1fcb-49d4-9974-664733308f45
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208914"
 ---
 # <a name="adding-an-mx-send-port"></a><span data-ttu-id="5c9c0-102">MX 送信ポートを追加します。</span><span class="sxs-lookup"><span data-stu-id="5c9c0-102">Adding an MX Send Port</span></span>
 <span data-ttu-id="5c9c0-103">**MX 送信ポートを追加します。**</span><span class="sxs-lookup"><span data-stu-id="5c9c0-103">**To add an MX send port:**</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="5c9c0-109">フォルダ ダイアログ ボックスの参照、ファイルの場所を選択します。</span><span class="sxs-lookup"><span data-stu-id="5c9c0-109">In the Browse for Folder dialog box, select a file location.</span></span>  
   
-7.  <span data-ttu-id="5c9c0-110">ファイル名 ボックスに入力**%MessageID%.xml**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="5c9c0-110">In the File name box, type **%MessageID%.xml**, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="5c9c0-110">ファイル名 ボックスに入力 **%MessageID%.xml**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="5c9c0-110">In the File name box, type **%MessageID%.xml**, and then click **OK**.</span></span>  
   
 8.  <span data-ttu-id="5c9c0-111">送信ポートのプロパティ ダイアログ ボックスでは、送信パイプライン ボックスで、ドロップダウン リストをクリックし、パイプライン プロジェクトで展開して、送信パイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="5c9c0-111">In the Send Port Properties dialog box, click the drop-down list for the send pipeline box, and then select the send pipeline you have deployed in the pipeline project.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "Web サービスの計画を発行 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスの計画を発行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b571c3aa-874b-43f7-af2e-5a71113a93dd
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015425"
 ---
 # <a name="planning-for-publishing-web-services"></a><span data-ttu-id="c0be2-102">Web サービスを公開するための計画</span><span class="sxs-lookup"><span data-stu-id="c0be2-102">Planning for Publishing Web Services</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="c0be2-103">Web サービスを組み込みサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="c0be2-103"> provides built-in support for Web services.</span></span> <span data-ttu-id="c0be2-104">再利用し、オーケストレーション内の既存の Web サービスを集計することができます。</span><span class="sxs-lookup"><span data-stu-id="c0be2-104">It enables you to reuse and aggregate your existing Web services within your orchestrations.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "タスク一覧内のビルド エラー |Microsoft ドキュメント"
-ms.custom: 
+title: タスク一覧内のビルド エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - building, errors
 - errors, building
 ms.assetid: 05b36511-3031-4e13-ac2f-bfdbec0f48cb
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967224"
 ---
 # <a name="build-errors-in-the-task-list"></a><span data-ttu-id="abba7-102">タスク一覧内のビルド エラー</span><span class="sxs-lookup"><span data-stu-id="abba7-102">Build Errors in the Task List</span></span>
 <span data-ttu-id="abba7-103">プロジェクト (ソリューション) をビルドすると、個別のエラーおよび警告がタスク一覧に表示され、結果は出力ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="abba7-103">When you build your project, or solution, the results will appear in the Output window, while individual errors and warnings will appear in the task list.</span></span>  

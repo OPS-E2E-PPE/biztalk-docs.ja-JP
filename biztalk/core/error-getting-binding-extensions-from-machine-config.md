@@ -1,14 +1,14 @@
 ---
-title: "Machine.config からバインド拡張を取得中にエラー |Microsoft ドキュメント"
-ms.custom: 
+title: Machine.config からバインド拡張を取得中にエラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65ab48cf-575b-4db6-984a-880f7e286959
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968800"
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a><span data-ttu-id="130c0-102">machine.config からバインド拡張機能を取得中にエラーが発生しました</span><span class="sxs-lookup"><span data-stu-id="130c0-102">Error getting binding extensions from machine.config</span></span>
 ## <a name="details"></a><span data-ttu-id="130c0-103">詳細</span><span class="sxs-lookup"><span data-stu-id="130c0-103">Details</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="130c0-122">アセンブリを GAC にします。</span><span class="sxs-lookup"><span data-stu-id="130c0-122">GAC the assembly</span></span>  
   
-2.  <span data-ttu-id="130c0-123">Machine.config ファイルを変更 (で見つかった**%FrameworkDir%\v4.0.30319\CONFIG**)。</span><span class="sxs-lookup"><span data-stu-id="130c0-123">Modify your machine.config file (found in **%FrameworkDir%\v4.0.30319\CONFIG**).</span></span>  
+2.  <span data-ttu-id="130c0-123">Machine.config ファイルを変更 (で見つかった **%FrameworkDir%\v4.0.30319\CONFIG**)。</span><span class="sxs-lookup"><span data-stu-id="130c0-123">Modify your machine.config file (found in **%FrameworkDir%\v4.0.30319\CONFIG**).</span></span>  
   
     1.  <span data-ttu-id="130c0-124">動作のサービス構成エディター内の DLL を読み込む (**svcConfigEditor.exe**)。</span><span class="sxs-lookup"><span data-stu-id="130c0-124">Load your behavior DLL inside the Service Configuration Editor (**svcConfigEditor.exe**).</span></span>  
   

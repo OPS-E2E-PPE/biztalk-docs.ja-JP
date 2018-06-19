@@ -1,14 +1,14 @@
 ---
-title: "ホストとホスト インスタンスの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: ホストとホスト インスタンスの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a36a73a4-cc5f-47d6-b56f-7871684c4489
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300114"
 ---
 # <a name="configuring-hosts-and-host-instances"></a><span data-ttu-id="0510b-102">ホストとホスト インスタンスを構成します。</span><span class="sxs-lookup"><span data-stu-id="0510b-102">Configuring Hosts and Host Instances</span></span>
 <span data-ttu-id="0510b-103">BizTalk ホストを展開することができますを 0 個以上の実行時プロセスの論理セットを表します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]services との成果物 (アダプター ハンドラー、受信場所、オーケストレーション)。</span><span class="sxs-lookup"><span data-stu-id="0510b-103">A BizTalk Host represents a logical set of zero or more run-time processes in which you can deploy [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] services and artifacts (such as adapter handlers, receive locations, and orchestrations).</span></span> <span data-ttu-id="0510b-104">ホスト インスタンスを実行しているコンピューター上のホストの物理インスタンス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="0510b-104">A host instance is the physical instance of a host on a computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="0510b-105">BizTalk ホストとホスト インスタンスの詳細については、次を参照してください。[ホスト](http://go.microsoft.com/fwlink/?LinkId=154189)(http://go.microsoft.com/fwlink/?LinkId=154189) および[ホスト インスタンス](http://go.microsoft.com/fwlink/?LinkId=154190)(http://go.microsoft.com/fwlink/?LinkId=154190)。</span><span class="sxs-lookup"><span data-stu-id="0510b-105">For more information about BizTalk Hosts and host instances, see [Hosts](http://go.microsoft.com/fwlink/?LinkId=154189) (http://go.microsoft.com/fwlink/?LinkId=154189) and [Host Instances](http://go.microsoft.com/fwlink/?LinkId=154190) (http://go.microsoft.com/fwlink/?LinkId=154190).</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "BAM DTS パッケージ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM DTS パッケージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DTS packages, BAM
 - BAM, DTS packages
 ms.assetid: bba70d81-6ddf-4f1f-a1f7-d5a5bf453bae
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965064"
 ---
 # <a name="bam-dts-packages"></a><span data-ttu-id="a0541-102">BAM DTS パッケージ</span><span class="sxs-lookup"><span data-stu-id="a0541-102">BAM DTS Packages</span></span>
 <span data-ttu-id="a0541-103">管理者は、次の BAM DTS パッケージのパラメーターを更新できます。</span><span class="sxs-lookup"><span data-stu-id="a0541-103">An administrator can update parameters for the following BAM DTS packages:</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="a0541-128">**DataMaintenance** DTS パッケージ</span><span class="sxs-lookup"><span data-stu-id="a0541-128">**DataMaintenance** DTS package</span></span>  
   
-     <span data-ttu-id="a0541-129">**bam_dm _\<**   ***ActivityName* \>**ここで、アクティビティ名は、アクティビティの名前。</span><span class="sxs-lookup"><span data-stu-id="a0541-129">**bam_DM_\<** ***ActivityName* \>**, where ActivityName is the name of the activity.</span></span>  
+     <span data-ttu-id="a0541-129">**bam_dm _\<**   ***ActivityName* \>** ここで、アクティビティ名は、アクティビティの名前。</span><span class="sxs-lookup"><span data-stu-id="a0541-129">**bam_DM_\<** ***ActivityName* \>**, where ActivityName is the name of the activity.</span></span>  
   
  <span data-ttu-id="a0541-130">スケジュール済みの集計を集計するには、CubeUpdate DTS パッケージを実行します。</span><span class="sxs-lookup"><span data-stu-id="a0541-130">You run the CubeUpdate DTS package to aggregate the scheduled aggregation.</span></span> <span data-ttu-id="a0541-131">次のセクションでは、リアルタイムのデータ集計の時間帯を指定できます。</span><span class="sxs-lookup"><span data-stu-id="a0541-131">In the next section, you can specify the time window for real-time data aggregation.</span></span>  
   

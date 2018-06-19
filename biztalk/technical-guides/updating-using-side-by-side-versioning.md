@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22301970"
 ---
 # <a name="updating-using-side-by-side-versioning"></a><span data-ttu-id="e17f2-102">サイド バイ サイドのバージョン管理を使用して更新</span><span class="sxs-lookup"><span data-stu-id="e17f2-102">Updating Using Side-by-Side Versioning</span></span>
 <span data-ttu-id="e17f2-103">できない場合は、ダウンタイムをスケジュールまたは終了できません非常に長時間のオーケストレーション インスタンスがある、サイド バイ サイドのバージョン管理が必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="e17f2-103">If you are not able to schedule downtime, or have very long-running orchestration instances that cannot be terminated, side-by-side versioning may be required.</span></span> <span data-ttu-id="e17f2-104">この種類のアップグレードでは、同じアプリケーションまたはアプリケーションのアイテムの 2 つのバージョンは、サイド バイ サイドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e17f2-104">In this type of upgrade, two versions of the same application or application artifacts run side-by-side.</span></span> <span data-ttu-id="e17f2-105">.NET ランタイム本質的には、同じ名前が、異なるバージョンのアセンブリを展開して実行、および BizTalk Server もできます。</span><span class="sxs-lookup"><span data-stu-id="e17f2-105">The .NET runtime inherently allows for same-named but differently versioned assemblies to be deployed and running, and BizTalk Server also allows it.</span></span>  

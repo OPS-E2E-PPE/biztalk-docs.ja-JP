@@ -1,17 +1,17 @@
 ---
-title: "データ プロバイダーのプロパティの Siebel 接続文字列 |Microsoft ドキュメント"
-ms.custom: 
+title: データ プロバイダーのプロパティの Siebel 接続文字列 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - conncting, to the Siebel system
 - Data Provider for Siebel, connection string
 ms.assetid: 8ab0c29e-e06b-4e74-be4e-9aa862a05539
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222218"
 ---
 # <a name="data-provider-properties-for-the-siebel-connection-string"></a><span data-ttu-id="fdc9e-102">Siebel の接続文字列のデータ プロバイダーのプロパティ</span><span class="sxs-lookup"><span data-stu-id="fdc9e-102">Data provider properties for the Siebel connection string</span></span>
 <span data-ttu-id="fdc9e-103">[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) を使用して、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システムにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-103">The [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) uses the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to access the Siebel system.</span></span> <span data-ttu-id="fdc9e-104">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]順番 Siebel システムにアクセスする Siebel COM データ コントロール ライブラリを使用します。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-104">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] in turn uses the Siebel COM Data Control library to access the Siebel system.</span></span> <span data-ttu-id="fdc9e-105">Siebel COM データ コントロールは、Siebel Web クライアントに付属します。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-105">The Siebel COM Data Control comes bundled with the Siebel Web client.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="fdc9e-131">SiebelEnterpriseServer</span><span class="sxs-lookup"><span data-stu-id="fdc9e-131">SiebelEnterpriseServer</span></span>|<span data-ttu-id="fdc9e-132">Siebel エンタープライズ サーバーの名前。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-132">The name of the Siebel Enterprise Server.</span></span> <span data-ttu-id="fdc9e-133">このパラメーターは必須です。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-133">This parameter is required.</span></span>|  
 |<span data-ttu-id="fdc9e-134">SiebelGateway</span><span class="sxs-lookup"><span data-stu-id="fdc9e-134">SiebelGateway</span></span>|<span data-ttu-id="fdc9e-135">Siebel サーバーの IP とポートで構成されます。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-135">Consists of the Siebel server IP and port.</span></span> <span data-ttu-id="fdc9e-136">たとえば、Siebel_Server:1234 です。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-136">For example, Siebel_Server:1234.</span></span>|  
 |<span data-ttu-id="fdc9e-137">SiebelObjectManager</span><span class="sxs-lookup"><span data-stu-id="fdc9e-137">SiebelObjectManager</span></span>|<span data-ttu-id="fdc9e-138">エンタープライズ サーバー上の Siebel オブジェクト マネージャーの名前。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-138">The name of the Siebel object manager on the enterprise server.</span></span> <span data-ttu-id="fdc9e-139">このパラメーターは必須です。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-139">This parameter is required.</span></span>|  
-|<span data-ttu-id="fdc9e-140">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="fdc9e-140">SiebelRepository</span></span>|<span data-ttu-id="fdc9e-141">Siebel リポジトリ。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-141">The Siebel repository.</span></span> <span data-ttu-id="fdc9e-142">複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-142">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="fdc9e-143">**注:**サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-143">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
+|<span data-ttu-id="fdc9e-140">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="fdc9e-140">SiebelRepository</span></span>|<span data-ttu-id="fdc9e-141">Siebel リポジトリ。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-141">The Siebel repository.</span></span> <span data-ttu-id="fdc9e-142">複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-142">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="fdc9e-143">**注:** サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-143">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
 |<span data-ttu-id="fdc9e-144">SiebelServer</span><span class="sxs-lookup"><span data-stu-id="fdc9e-144">SiebelServer</span></span>|<span data-ttu-id="fdc9e-145">Siebel サーバーです。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-145">The Siebel server.</span></span> <span data-ttu-id="fdc9e-146">必要なすべての Siebel 7.5 サーバー接続です。それ以外の場合、このパラメーターを設定しません。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-146">Required for all Siebel 7.5 server connections; otherwise, do not set this parameter.</span></span>|  
 |<span data-ttu-id="fdc9e-147">[Transport]</span><span class="sxs-lookup"><span data-stu-id="fdc9e-147">Transport</span></span>|<span data-ttu-id="fdc9e-148">トランスポートです。のみ**tcpip**はサポートされています。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-148">The transport; only **tcpip** is supported.</span></span> <span data-ttu-id="fdc9e-149">このパラメーターはオプションです。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-149">This parameter is optional.</span></span> <span data-ttu-id="fdc9e-150">Siebel システムが既定値を提供することが指定されていない場合 (**tcpip**)。</span><span class="sxs-lookup"><span data-stu-id="fdc9e-150">If it is not specified, the Siebel system supplies a default value (**tcpip**).</span></span>|  
   

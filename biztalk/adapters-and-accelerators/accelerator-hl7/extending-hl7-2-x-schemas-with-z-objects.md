@@ -1,17 +1,17 @@
 ---
-title: "Z オブジェクトと HL7 2.X スキーマを拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: Z オブジェクトと HL7 2.X スキーマを拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, Z objects
 - Z objects, extending 2.X schemas
 ms.assetid: 0980d919-eb81-4c65-b0f7-f17f7cfef6b3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204658"
 ---
 # <a name="extending-hl7-2x-schemas-with-z-objects"></a><span data-ttu-id="84d52-102">Z オブジェクトと HL7 2.X スキーマを拡張します。</span><span class="sxs-lookup"><span data-stu-id="84d52-102">Extending HL7 2.X Schemas with Z Objects</span></span>
 <span data-ttu-id="84d52-103">HL7 組織定義 HL7 2.X スキーマを認識し、組織を定義すると、これらのスキーマを使用して、すべての送信者と受信者を想定します。</span><span class="sxs-lookup"><span data-stu-id="84d52-103">The HL7 organization defines HL7 2.X schemas, and expects all senders and receivers to recognize and use these schemas as the organization defines them.</span></span> <span data-ttu-id="84d52-104">相互運用性により、スキーマに準拠しています。</span><span class="sxs-lookup"><span data-stu-id="84d52-104">Conforming to the schemas ensures for interoperability.</span></span> <span data-ttu-id="84d52-105">HL7 標準では、既存の HL7 をカスタマイズすることできます、特定のローカルの目的の 2.X スキーマです。</span><span class="sxs-lookup"><span data-stu-id="84d52-105">However, the HL7 standard enables you to customize existing HL7 2.X schemas for your specific local purposes.</span></span> <span data-ttu-id="84d52-106">まったく新しいスキーマとオブジェクトを定義することもできます。</span><span class="sxs-lookup"><span data-stu-id="84d52-106">You can also define entirely new schemas and objects.</span></span> <span data-ttu-id="84d52-107">ためにはどのような HL7 標準呼び出し Z オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="84d52-107">You do so with what the HL7 standard calls Z objects.</span></span>  

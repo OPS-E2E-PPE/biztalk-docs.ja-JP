@@ -1,14 +1,14 @@
 ---
-title: "WCF Web サービスのパフォーマンスを最適化する |Microsoft ドキュメント"
-ms.custom: 
+title: WCF Web サービスのパフォーマンスを最適化する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93947cef-469c-4126-85a5-06456fa37443
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299418"
 ---
 # <a name="optimizing-wcf-web-service-performance"></a><span data-ttu-id="58db2-102">WCF Web サービスのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="58db2-102">Optimizing WCF Web Service Performance</span></span>
 <span data-ttu-id="58db2-103">WCF サービスは、パフォーマンスに影響するための多数の構成パラメーターを公開します。</span><span class="sxs-lookup"><span data-stu-id="58db2-103">WCF services expose numerous configuration parameters that affect performance.</span></span> <span data-ttu-id="58db2-104">このトピックでは、WCF サービスのパフォーマンスを向上させるためにこれらの構成パラメーターの最適な値の設定の一般的なガイダンスを提供します。</span><span class="sxs-lookup"><span data-stu-id="58db2-104">This topic provides general guidance for setting optimal values for these configuration parameters to improve performance of WCF services.</span></span>  
   
 ## <a name="implement-servicethrottling-behavior-for-backend-wcf-services"></a><span data-ttu-id="58db2-105">バックエンド WCF サービスの serviceThrottling 動作を実装します。</span><span class="sxs-lookup"><span data-stu-id="58db2-105">Implement serviceThrottling behavior for backend WCF services</span></span>  
- <span data-ttu-id="58db2-106">バックエンド WCF サービスの serviceThrottling 動作を実装します。</span><span class="sxs-lookup"><span data-stu-id="58db2-106">Implement serviceThrottling behavior for backend WCF services.</span></span> <span data-ttu-id="58db2-107">サービスの調整では、リソースの割り当てを適用して、バックエンド WCF サーバーの負荷を均等にできます。</span><span class="sxs-lookup"><span data-stu-id="58db2-107">Service throttling allows you to even out the load on your backend WCF servers and to enforce resource allocation.</span></span> <span data-ttu-id="58db2-108">バックエンド WCF サービスの serviceThrottling 動作がの値を変更することによって構成されて、 **maxConcurrentCalls**、 **maxConcurrentSessions**、および**maxConcurrentInstances** WCF サービスの構成ファイル内のパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="58db2-108">serviceThrottling behavior for backend WCF services is configured by modifying the values for the **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** parameters in the config file for the WCF service.</span></span> <span data-ttu-id="58db2-109">設定**maxConcurrentCalls**、 **maxConcurrentSessions**、および**maxConcurrentInstances** 16 より大きい値に * Cpu または CPU の数のコアです。</span><span class="sxs-lookup"><span data-stu-id="58db2-109">Set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 16 * the number of CPUs or CPU cores.</span></span> <span data-ttu-id="58db2-110">たとえば、8 の CPU コアを備えたコンピューターで次のように設定します**maxConcurrentCalls**、 **maxConcurrentSessions**、および**maxConcurrentInstances** 128 (16 * 8 = 128) より大きい値に。次のようにします。</span><span class="sxs-lookup"><span data-stu-id="58db2-110">For example, on a computer with 8 CPU cores, set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 128 (16 * 8 = 128) as follows:</span></span>  
+ <span data-ttu-id="58db2-106">バックエンド WCF サービスの serviceThrottling 動作を実装します。</span><span class="sxs-lookup"><span data-stu-id="58db2-106">Implement serviceThrottling behavior for backend WCF services.</span></span> <span data-ttu-id="58db2-107">サービスの調整では、リソースの割り当てを適用して、バックエンド WCF サーバーの負荷を均等にできます。</span><span class="sxs-lookup"><span data-stu-id="58db2-107">Service throttling allows you to even out the load on your backend WCF servers and to enforce resource allocation.</span></span> <span data-ttu-id="58db2-108">バックエンド WCF サービスの serviceThrottling 動作がの値を変更することによって構成されて、 **maxConcurrentCalls**、 **maxConcurrentSessions**、および**maxConcurrentInstances** WCF サービスの構成ファイル内のパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="58db2-108">serviceThrottling behavior for backend WCF services is configured by modifying the values for the **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** parameters in the config file for the WCF service.</span></span> <span data-ttu-id="58db2-109">設定**maxConcurrentCalls**、 **maxConcurrentSessions**、および**maxConcurrentInstances** 16 より大きい値に \* Cpu または CPU の数のコアです。</span><span class="sxs-lookup"><span data-stu-id="58db2-109">Set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 16 \* the number of CPUs or CPU cores.</span></span> <span data-ttu-id="58db2-110">たとえば、8 の CPU コアを備えたコンピューターで次のように設定します**maxConcurrentCalls**、 **maxConcurrentSessions**、および**maxConcurrentInstances** 128 (16 \* 8 = 128) より大きい値に。次のようにします。</span><span class="sxs-lookup"><span data-stu-id="58db2-110">For example, on a computer with 8 CPU cores, set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 128 (16 \* 8 = 128) as follows:</span></span>  
   
 ```  
 <serviceThrottling  

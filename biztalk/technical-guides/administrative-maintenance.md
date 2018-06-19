@@ -1,14 +1,14 @@
 ---
-title: "管理メンテナンス |Microsoft ドキュメント"
-ms.custom: 
+title: 管理メンテナンス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67cdf9d7-5448-40c5-8c5f-eae0e281d22c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299738"
 ---
 # <a name="administrative-maintenance"></a><span data-ttu-id="36c61-102">管理用のメンテナンス</span><span class="sxs-lookup"><span data-stu-id="36c61-102">Administrative Maintenance</span></span>
 <span data-ttu-id="36c61-103">このセクションでの管理に関する問題を解決する方法に関する情報を提供する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。</span><span class="sxs-lookup"><span data-stu-id="36c61-103">This section provides information about how you can resolve administration issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="36c61-104">実行される定期的なメンテナンス チェックでこれらの問題を検出する可能性があります、[ルーチン メンテナンス チェックリスト](../technical-guides/routine-maintenance-checklists.md)セクションです。</span><span class="sxs-lookup"><span data-stu-id="36c61-104">These issues may be discovered by the routine maintenance checks that are performed in the [Routine Maintenance Checklists](../technical-guides/routine-maintenance-checklists.md) section.</span></span>  

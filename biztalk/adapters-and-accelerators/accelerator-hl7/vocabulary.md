@@ -1,17 +1,17 @@
 ---
-title: "ボキャブラリ |Microsoft ドキュメント"
-ms.custom: 
+title: ボキャブラリ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, vocabulary
 - vocabularies
 ms.assetid: c5df05dd-4af8-4e48-8509-e692b04adf3c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206658"
 ---
 # <a name="vocabulary"></a><span data-ttu-id="7476e-102">ボキャブラリ</span><span class="sxs-lookup"><span data-stu-id="7476e-102">Vocabulary</span></span>
 <span data-ttu-id="7476e-103">HL7 バージョン 2 は、コード化された要素のボキャブラリのいくつかのサポートを提供しますが、ほとんどの場合、ローカル システムのコーディングから描画コードを送信する構造体を提供します。</span><span class="sxs-lookup"><span data-stu-id="7476e-103">HL7 Version 2 provides some support for vocabularies for coded elements, but for the most part, provides a structure that transmits codes drawn from local coding systems.</span></span>  

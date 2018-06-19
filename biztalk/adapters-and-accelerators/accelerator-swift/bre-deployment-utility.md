@@ -1,17 +1,17 @@
 ---
-title: "BRE 配置ユーティリティ |Microsoft ドキュメント"
-ms.custom: 
+title: BRE 配置ユーティリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BRE Deployment utility
 - deploying, BRE Deployment utility
 ms.assetid: 5b04592c-ea1e-4ded-8ca4-dcd051d6375e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966816"
 ---
 # <a name="bre-deployment-utility"></a><span data-ttu-id="df6c7-102">BRE 配置ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="df6c7-102">BRE Deployment Utility</span></span>
 <span data-ttu-id="df6c7-103">BRE 配置ユーティリティを使用を発行し、ビジネス ルール エンジン (BRE) ボキャブラリと SWIFT スキーマに必要なポリシーを展開することができます。</span><span class="sxs-lookup"><span data-stu-id="df6c7-103">You can use the BRE Deployment Utility to publish and deploy the Business Rule Engine (BRE) vocabularies and policies required for a SWIFT schema.</span></span> <span data-ttu-id="df6c7-104">メッセージの種類の BRE 検証を有効にするには、公開およびこれらのボキャブラリおよびポリシーの展開が必要です。</span><span class="sxs-lookup"><span data-stu-id="df6c7-104">Publishing and deploying these vocabularies and policies is required to enable BRE validation for the message type.</span></span>  

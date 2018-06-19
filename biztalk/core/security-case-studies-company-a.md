@@ -1,11 +1,11 @@
 ---
-title: "会社 A のセキュリティに関するケース スタディ: |Microsoft ドキュメント"
-ms.custom: 
+title: '会社 A のセキュリティに関するケース スタディ: |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - architecture, security
 - security, case studies
 ms.assetid: 9417ecf9-e340-479f-b120-552c62f3b189
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269946"
 ---
 # <a name="security-case-studies-company-a"></a><span data-ttu-id="e4cae-102">セキュリティに関するケース スタディ: 会社 A</span><span class="sxs-lookup"><span data-stu-id="e4cae-102">Security Case Studies: Company A</span></span>
 <span data-ttu-id="e4cae-103">会社 A は、原料供給業者の大手であり、工業部門にサービスを提供します。</span><span class="sxs-lookup"><span data-stu-id="e4cae-103">Company A is a major supplier of material and services to the industrial sector.</span></span> <span data-ttu-id="e4cae-104">この会社のビジネス モデルは、主要な顧客および業者との電子商取引に依存しています。</span><span class="sxs-lookup"><span data-stu-id="e4cae-104">Its business model relies on electronic transactions with key customers and suppliers.</span></span> <span data-ttu-id="e4cae-105">会社 A では、Microsoft BizTalk アプリケーションを使用して、トランザクションと内部および外部の環境間の通信を管理します。</span><span class="sxs-lookup"><span data-stu-id="e4cae-105">Company A uses Microsoft BizTalk Application to manage transactions and communications between internal and external environments.</span></span>  

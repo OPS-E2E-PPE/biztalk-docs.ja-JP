@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205186"
 ---
 # <a name="get-started-with-the-biztalk-accelerator-for-hl7"></a><span data-ttu-id="6bbc7-102">使い始める BizTalk Accelerator 用 HL7</span><span class="sxs-lookup"><span data-stu-id="6bbc7-102">Get started with the BizTalk Accelerator for HL7</span></span>
 <span data-ttu-id="6bbc7-103">使用して、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]、医療コンピューター システム間のビジネス プロセスを開発することができます。</span><span class="sxs-lookup"><span data-stu-id="6bbc7-103">Using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)], you can develop business processes between your health care computer systems.</span></span> <span data-ttu-id="6bbc7-104">使用して[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]開発者、IT 担当者、およびインターフェイス アナリストが医療アプリケーション間でエンド ツー エンド統合 BTAHL7 ベースのソリューションを開発するための一般的な環境で作業できます。</span><span class="sxs-lookup"><span data-stu-id="6bbc7-104">By using [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)], developers, IT professionals, and interface analysts can work in a common environment to develop end-to-end integrated BTAHL7-based solutions across health care applications.</span></span>  

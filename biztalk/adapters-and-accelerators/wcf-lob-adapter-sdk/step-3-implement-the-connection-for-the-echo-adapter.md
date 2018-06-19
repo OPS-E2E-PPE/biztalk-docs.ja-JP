@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc223901-3ad3-4e71-8672-fea6bb4efe65
-caps.latest.revision: ''
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22227266"
 ---
 # <a name="step-3-implement-the-connection-for-the-echo-adapter"></a><span data-ttu-id="26a1b-102">手順 3: エコー アダプターの接続を実装します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-102">Step 3: Implement the Connection for the Echo Adapter</span></span>
 <span data-ttu-id="26a1b-103">![手順 9 3](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")</span><span class="sxs-lookup"><span data-stu-id="26a1b-103">![Step 3 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")</span></span>  
@@ -264,13 +265,13 @@ ms.lasthandoff: 03/23/2018
   
 2.  <span data-ttu-id="26a1b-232">Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内のをポイント**アウトライン**、クリックして**アウトラインの中止**です。</span><span class="sxs-lookup"><span data-stu-id="26a1b-232">In the Visual Studio editor, right-click anywhere within the editor, in the context menu, point to **Outlining**, and then click **Stop Outlining**.</span></span>  
   
-3.  <span data-ttu-id="26a1b-233">Visual Studio エディターで、検索、**コンス トラクター**領域。</span><span class="sxs-lookup"><span data-stu-id="26a1b-233">In the Visual Studio editor, find the **Constructors** region.</span></span> <span data-ttu-id="26a1b-234">内部、 **EchoAdapterConnectionUri()**既定コンス トラクターで、次のステートメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-234">Inside the **EchoAdapterConnectionUri()** default constructor, add the following statement:</span></span>  
+3.  <span data-ttu-id="26a1b-233">Visual Studio エディターで、検索、**コンス トラクター**領域。</span><span class="sxs-lookup"><span data-stu-id="26a1b-233">In the Visual Studio editor, find the **Constructors** region.</span></span> <span data-ttu-id="26a1b-234">内部、 **EchoAdapterConnectionUri()** 既定コンス トラクターで、次のステートメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-234">Inside the **EchoAdapterConnectionUri()** default constructor, add the following statement:</span></span>  
   
     ```csharp  
     Uri = new Uri("echov2://lobhostname/lobapplication?enableauthentication=False");  
     ```  
   
-4.  <span data-ttu-id="26a1b-235">Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri uri)**コンス トラクターをオーバー ロードされ、次のステートメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-235">In the Visual Studio editor, inside the **EchoAdapterConnectionUri(Uri uri)** overloaded constructor, and add the following statement:</span></span>  
+4.  <span data-ttu-id="26a1b-235">Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri uri)** コンス トラクターをオーバー ロードされ、次のステートメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-235">In the Visual Studio editor, inside the **EchoAdapterConnectionUri(Uri uri)** overloaded constructor, and add the following statement:</span></span>  
   
     ```csharp  
     Uri = uri;  
@@ -321,7 +322,7 @@ ms.lasthandoff: 03/23/2018
   
 6.  <span data-ttu-id="26a1b-240">Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="26a1b-240">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
   
-7.  <span data-ttu-id="26a1b-241">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a1b-241">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="26a1b-242">プロジェクトを正常にコンパイルする必要があります。</span><span class="sxs-lookup"><span data-stu-id="26a1b-242">You should successfully compile the project.</span></span> <span data-ttu-id="26a1b-243">以外の場合は、上記のすべてのステップに従っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-243">If not, ensure that you have followed every step above.</span></span>  
+7.  <span data-ttu-id="26a1b-241">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26a1b-241">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="26a1b-242">プロジェクトを正常にコンパイルする必要があります。</span><span class="sxs-lookup"><span data-stu-id="26a1b-242">You should successfully compile the project.</span></span> <span data-ttu-id="26a1b-243">以外の場合は、上記のすべてのステップに従っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-243">If not, ensure that you have followed every step above.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="26a1b-244">これで作業が保存されました。</span><span class="sxs-lookup"><span data-stu-id="26a1b-244">You saved your work.</span></span> <span data-ttu-id="26a1b-245">安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 4: エコー アダプターのメタデータ参照ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="26a1b-245">You can safely close Visual Studio at this time or go to the next step, [Step 4: Implement the Metadata Browse Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md).</span></span>  

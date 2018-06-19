@@ -1,14 +1,14 @@
 ---
-title: "プロパティ スキーマを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティ スキーマを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24086dea-62b8-4ef6-8af8-eb4ab7c3c018
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970480"
 ---
 # <a name="how-to-create-property-schemas"></a><span data-ttu-id="323c3-102">プロパティ スキーマを作成する方法</span><span class="sxs-lookup"><span data-stu-id="323c3-102">How to Create Property Schemas</span></span>
 <span data-ttu-id="323c3-103">プロパティ フィールドとしてフィールドを昇格する場合、最初にプロパティ スキーマを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="323c3-103">If you choose to promote fields as property fields, you will need to define a property schema first.</span></span> <span data-ttu-id="323c3-104">このプロパティ スキーマでは、構造化されていないフィールドの集合を指定します。プロパティ スキーマに関連するスキーマで定義されるインスタンス メッセージから、構造化されていないフィールドの集合にフィールドを昇格できます。</span><span class="sxs-lookup"><span data-stu-id="323c3-104">This property schema specifies an unstructured collection of fields into which you can promote fields from within an instance message defined by a schema associated with your property schema.</span></span>  

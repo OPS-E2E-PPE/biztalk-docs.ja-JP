@@ -1,14 +1,14 @@
 ---
-title: "追跡データベースのボトルネックを特定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡データベースのボトルネックを特定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b72e726-6225-47a0-8e1d-0f5a9cf745d3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297986"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-tracking-database"></a><span data-ttu-id="a1dfd-102">追跡データベースのボトルネックを特定する方法</span><span class="sxs-lookup"><span data-stu-id="a1dfd-102">How to Identify Bottlenecks in the Tracking Database</span></span>
 <span data-ttu-id="a1dfd-103">BizTalk 追跡 (BizTalkDTADb) データベースのボトルネックを特定するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="a1dfd-103">To identify bottlenecks in the BizTalk Tracking (BizTalkDTADb) database, perform the following steps:</span></span>  

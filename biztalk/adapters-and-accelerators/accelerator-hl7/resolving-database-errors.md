@@ -1,17 +1,17 @@
 ---
-title: "データベース エラーの解決 |Microsoft ドキュメント"
-ms.custom: 
+title: データベース エラーの解決 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - databases
 - errors, databases
 ms.assetid: d7b1cc9f-3f3e-464a-8249-1fd03b2b4d76
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206010"
 ---
 # <a name="resolving-database-errors"></a><span data-ttu-id="04f44-102">データベース エラーの解決</span><span class="sxs-lookup"><span data-stu-id="04f44-102">Resolving Database Errors</span></span>
 <span data-ttu-id="04f44-103">HL7 組織が発行する HL7 Access データベースでの Dataitem と TableValues は table_id と hl7_version によってリンクされている 2 つのテーブルです。</span><span class="sxs-lookup"><span data-stu-id="04f44-103">In the HL7 Access database that the HL7 organization publishes, DataItems and TableValues are two tables linked by table_id and hl7_version.</span></span> <span data-ttu-id="04f44-104">次のデータベース間のクエリは、一部のデータ アイテムがテーブルに示された値がない、table_id を参照することを示しています。</span><span class="sxs-lookup"><span data-stu-id="04f44-104">The following database cross-query shows that some data items refer to a table_id, which has no values listed in the table:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1be376ba-ad4c-4fa7-b94b-82bfbc8f34cc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222538"
 ---
 # <a name="troubleshoot-the-sql-adapter"></a><span data-ttu-id="b3172-102">SQL アダプターをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="b3172-102">Troubleshoot the SQL adapter</span></span>
 <span data-ttu-id="b3172-103">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]を使用してまたはに限らずなど、いくつかの Microsoft テクノロジによって異なります、 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、Microsoft [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)]、および[!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b3172-103">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] uses or depends on several Microsoft technologies, including but not limited to the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)], Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], the Microsoft [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)], and [!INCLUDE[dotnet451](../../includes/dotnet451-md.md)].</span></span> <span data-ttu-id="b3172-104">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]の上に構築された、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、順番がありますが、[!INCLUDE[dotnet45](../../includes/dotnet45-md.md)]または[!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b3172-104">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] is built on top of the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], which in turn requires the [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)] or [!INCLUDE[dotnet451](../../includes/dotnet451-md.md)].</span></span> <span data-ttu-id="b3172-105">いずれかを使用してアプリケーションを作成して、アダプターを使用できる、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または BizTalk アプリケーションを作成しています。</span><span class="sxs-lookup"><span data-stu-id="b3172-105">The adapters can be consumed either by writing applications using the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] or by creating BizTalk applications.</span></span> <span data-ttu-id="b3172-106">これらのテクノロジと製品に関連する問題については、それぞれのドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3172-106">For issues related to each of these technologies and products, see the respective documentation.</span></span>  

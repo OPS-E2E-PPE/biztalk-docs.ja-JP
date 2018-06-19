@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c1ee402b-ffda-42c1-8d85-d7cbe073a307
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22224010"
 ---
 # <a name="understand-wcf-security-on-the-adapter-created-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="68d4b-102">WCF LOB Adapter SDK で作成されたアダプターで WCF のセキュリティを理解します。</span><span class="sxs-lookup"><span data-stu-id="68d4b-102">Understand WCF security on the adapter created with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="68d4b-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]拡張、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]アーキテクチャのチャネルし、は、メッセージング インフラストラクチャとで提供される API を使用します。</span><span class="sxs-lookup"><span data-stu-id="68d4b-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] extends the [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] channel architecture and relies on the messaging infrastructure and the API that it provides.</span></span>  <span data-ttu-id="68d4b-104">WCF LOB アダプターが、ターゲット システムに接続を確立する必要があるし、そのために認証とその他のセキュリティ情報がターゲット システムの接続を確立するために必要なアダプターを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="68d4b-104">A WCF LOB adapter needs to establish a connection to target systems, and hence it is necessary to configure the adapter with authentication and other security information required to make the target system connections.</span></span>  

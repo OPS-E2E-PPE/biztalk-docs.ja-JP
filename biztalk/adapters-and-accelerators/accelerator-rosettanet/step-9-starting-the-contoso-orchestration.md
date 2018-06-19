@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209450"
 ---
 # <a name="step-9-starting-the-contoso-orchestration"></a><span data-ttu-id="3b797-102">手順 9: Contoso オーケストレーションの開始</span><span class="sxs-lookup"><span data-stu-id="3b797-102">Step 9: Starting the Contoso Orchestration</span></span>
 <span data-ttu-id="3b797-103">ここでは、物理的な送信元と送信先の場所を定義して、ポートの構成プロセスを実行します。</span><span class="sxs-lookup"><span data-stu-id="3b797-103">In this step, you complete the port configuration process by defining the physical source and destination locations.</span></span> <span data-ttu-id="3b797-104">作成した論理ポートを物理ポートをバインドする[手順 7: ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)です。</span><span class="sxs-lookup"><span data-stu-id="3b797-104">You bind the physical ports to the logical ports you created in [Step 7: Creating and Configuring Ports](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md).</span></span> <span data-ttu-id="3b797-105">オーケストレーションで実行される物理環境と、オーケストレーションで設計したビジネス プロセスを関連付けるには、サービスを参加させます。</span><span class="sxs-lookup"><span data-stu-id="3b797-105">You then enlist the service to associate the business process that you designed in the orchestration with the physical environment that the orchestration will run in.</span></span> <span data-ttu-id="3b797-106">最後に、Fabrikam とのビジネス トランザクションに参加できるように、オーケストレーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="3b797-106">Finally, you start the orchestration so that it can participate in business transactions with Fabrikam.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="3b797-108">開いている**BizTalk エクスプ ローラー**です。</span><span class="sxs-lookup"><span data-stu-id="3b797-108">Open **BizTalk Explorer**.</span></span>  
   
-2.  <span data-ttu-id="3b797-109">BizTalk エクスプ ローラーで、 **BizTalk 構成データベース**、展開**オーケストレーション**を右クリックして**[contosopriceandavailability.privateresponderprocess]**、クリックして**バインド**です。</span><span class="sxs-lookup"><span data-stu-id="3b797-109">In BizTalk Explorer, expand **BizTalk Configuration Database**, expand **Orchestrations**, right-click **ContosoPriceAndAvailability.PrivateResponderProcess**, and then click **Bind**.</span></span>  
+2.  <span data-ttu-id="3b797-109">BizTalk エクスプ ローラーで、 **BizTalk 構成データベース**、展開**オーケストレーション**を右クリックして **[contosopriceandavailability.privateresponderprocess]**、クリックして**バインド**です。</span><span class="sxs-lookup"><span data-stu-id="3b797-109">In BizTalk Explorer, expand **BizTalk Configuration Database**, expand **Orchestrations**, right-click **ContosoPriceAndAvailability.PrivateResponderProcess**, and then click **Bind**.</span></span>  
   
 3.  <span data-ttu-id="3b797-110">[ポートのバインドのプロパティ] ページで、 **LOB_To_PrivateResponder**で、 **FromLOB**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="3b797-110">On the Port Bindings Properties page, select **LOB_To_PrivateResponder** in the **FromLOB** property.</span></span>  
   
@@ -51,9 +52,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="3b797-120">BizTalk 管理コンソールの左側のウィンドウで展開**アプリケーション**、展開**BizTalk アプリケーション 1**、クリックして**オーケストレーション**です。</span><span class="sxs-lookup"><span data-stu-id="3b797-120">In the left pane of the BizTalk Administration Console, expand **Applications**, expand **BizTalk Application 1**, and then click **Orchestrations**.</span></span>  
   
-2.  <span data-ttu-id="3b797-121">右側のペインで右クリックし、 **[contosopriceandavailability.privateresponderprocess]**オーケストレーション、およびクリック**Enlist**です。</span><span class="sxs-lookup"><span data-stu-id="3b797-121">In the right pane, right-click the **ContosoPriceAndAvailability.PrivateResponderProcess** orchestration, and then click **Enlist**.</span></span>  
+2.  <span data-ttu-id="3b797-121">右側のペインで右クリックし、 **[contosopriceandavailability.privateresponderprocess]** オーケストレーション、およびクリック**Enlist**です。</span><span class="sxs-lookup"><span data-stu-id="3b797-121">In the right pane, right-click the **ContosoPriceAndAvailability.PrivateResponderProcess** orchestration, and then click **Enlist**.</span></span>  
   
-3.  <span data-ttu-id="3b797-122">右クリックし、 **[contosopriceandavailability.privateresponderprocess]**オーケストレーション、およびクリック**開始**オーケストレーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="3b797-122">Right-click the **ContosoPriceAndAvailability.PrivateResponderProcess** orchestration, and then click **Start** to start the orchestration.</span></span>  
+3.  <span data-ttu-id="3b797-122">右クリックし、 **[contosopriceandavailability.privateresponderprocess]** オーケストレーション、およびクリック**開始**オーケストレーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="3b797-122">Right-click the **ContosoPriceAndAvailability.PrivateResponderProcess** orchestration, and then click **Start** to start the orchestration.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="3b797-123">参照</span><span class="sxs-lookup"><span data-stu-id="3b797-123">See Also</span></span>  
  [<span data-ttu-id="3b797-124">Fabrikam ソリューションの作成</span><span class="sxs-lookup"><span data-stu-id="3b797-124">Creating the Fabrikam Solution</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-fabrikam-solution.md)

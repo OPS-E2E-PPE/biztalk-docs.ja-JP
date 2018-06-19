@@ -1,18 +1,18 @@
 ---
-title: "モードをメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: モードをメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message modes, about message modes
 - messages, message modes
 - message modes, HL7 messages
 ms.assetid: 2d832b67-6f0e-45e1-95ac-cb80b74a7831
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205058"
 ---
 # <a name="message-modes"></a><span data-ttu-id="b0079-102">メッセージ モード</span><span class="sxs-lookup"><span data-stu-id="b0079-102">Message Modes</span></span>
 <span data-ttu-id="b0079-103">HL7 のすべてのメッセージの基になる 2 つの基本的な概念があります。</span><span class="sxs-lookup"><span data-stu-id="b0079-103">There are two basic concepts that underlie all HL7 messages.</span></span> <span data-ttu-id="b0079-104">これらの概念はアドレス データを交換する独立したシステムの相互作用し、分散医療システム内で時間の経過と共に相互運用性の要件をサポートする構造を提供する、さまざまな方法です。</span><span class="sxs-lookup"><span data-stu-id="b0079-104">These concepts address different ways in which independent systems that exchange data can interact, and provide a structure that supports the requirements of interoperability over time within a distributed health care system.</span></span> <span data-ttu-id="b0079-105">以下に示す概念は、HL7 デザインの背後にある、基になるテーマを定義します。</span><span class="sxs-lookup"><span data-stu-id="b0079-105">The concepts listed below define the underlying themes behind the HL7 design:</span></span>  

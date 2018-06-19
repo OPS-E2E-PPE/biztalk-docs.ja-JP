@@ -1,15 +1,15 @@
 ---
-title: "SQL Server の設定を変更できません |Microsoft ドキュメント"
-description: "Max Degree of Parallelism を自動作成統計の自動更新の統計、および BizTalk Server でのインデックスの再構築"
-ms.custom: 
+title: SQL Server の設定を変更できません |Microsoft ドキュメント
+description: Max Degree of Parallelism を自動作成統計の自動更新の統計、および BizTalk Server でのインデックスの再構築
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4b383bfb-c3d9-47d4-b294-f6be94302734
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015369"
 ---
 # <a name="sql-server-settings-that-should-not-be-changed"></a><span data-ttu-id="0a758-103">SQL Server の設定を変更しないでください。</span><span class="sxs-lookup"><span data-stu-id="0a758-103">SQL Server Settings That Should Not Be Changed</span></span>
 <span data-ttu-id="0a758-104">設定する場合に[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]の運用の準備手順の間に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、次の設定を変更しないようにします。</span><span class="sxs-lookup"><span data-stu-id="0a758-104">When setting up [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] during the operational readiness procedures for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you should not make changes to the following settings.</span></span>  

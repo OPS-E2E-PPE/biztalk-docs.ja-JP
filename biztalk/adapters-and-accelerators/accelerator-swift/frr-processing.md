@@ -1,18 +1,18 @@
 ---
-title: "FRR 処理 |Microsoft ドキュメント"
-ms.custom: 
+title: FRR 処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, processing
 - FRR, components
 - FRR, process flow
 ms.assetid: 8b064d18-5ee7-44fd-95d1-9a0d66f1ad1a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208970"
 ---
 # <a name="frr-processing"></a><span data-ttu-id="49618-102">FRR 処理</span><span class="sxs-lookup"><span data-stu-id="49618-102">FRR Processing</span></span>
 <span data-ttu-id="49618-103">[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN 対応調整 (FRR) 機能では関連付けるから元のメッセージの FIN メッセージ SWIFT Alliance アクセス (SAA) から[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SAA メッセージに応答します。</span><span class="sxs-lookup"><span data-stu-id="49618-103">The [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN Response Reconciliation (FRR) feature correlates FIN messages from the SWIFT Alliance Access (SAA) with the original message from [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] that the SAA message responds to.</span></span> <span data-ttu-id="49618-104">たびに[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]メッセージを送信元、FRR キャッシュ SWIFT およびにバインドされているすべてのメッセージのコピー処理は失敗していません。</span><span class="sxs-lookup"><span data-stu-id="49618-104">Whenever [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] sends an original message, FRR caches a copy of any message that is bound for SWIFT and that has not failed processing.</span></span> <span data-ttu-id="49618-105">SAA によって返される応答メッセージをメッセージ ボックス データベースを監視します[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]、し、キャッシュされたメッセージのコピーに対応するすべての ACK/NAK メッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="49618-105">It then monitors the MessageBox for response messages returned by SAA to [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)], and picks up any ACK/NAK messages that corresponds to the cached message copy.</span></span>  

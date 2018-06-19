@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214522"
 ---
 # <a name="swift-text"></a><span data-ttu-id="66981-102">SWIFT テキスト</span><span class="sxs-lookup"><span data-stu-id="66981-102">SWIFT Text</span></span>
 <span data-ttu-id="66981-103">メッセージ テキスト、財務 (FIN) メッセージのペイロードとすべての送信者、受信者、およびメッセージの種類を含むフィールドを除くデータ フィールドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="66981-103">The message text makes up the payload of the financial (FIN) message, and contains all of the data fields except the fields containing the sender, receiver, and message type.</span></span> <span data-ttu-id="66981-104">これら 3 つのフィールドは、ヘッダー部分に含まれます。</span><span class="sxs-lookup"><span data-stu-id="66981-104">These three fields are contained in the header portion.</span></span> <span data-ttu-id="66981-105">一部のメッセージには、処理情報も提供する、オプションのユーザー ヘッダーも含まれます。</span><span class="sxs-lookup"><span data-stu-id="66981-105">Some messages also contain an optional User Header, which may also provide processing information.</span></span>  

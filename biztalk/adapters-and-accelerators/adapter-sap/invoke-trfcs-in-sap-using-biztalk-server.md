@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967944"
 ---
 # <a name="invoke-trfcs-in-sap-using-biztalk-server"></a><span data-ttu-id="ca83a-102">BizTalk Server を使用して SAP で tRFCs を呼び出す</span><span class="sxs-lookup"><span data-stu-id="ca83a-102">Invoke tRFCs in SAP using BizTalk Server</span></span>
 <span data-ttu-id="ca83a-103">トランザクション リモート関数呼び出し (tRFCs) は、SAP システムの RFC の 1 つだけのランタイム実行を保証します。</span><span class="sxs-lookup"><span data-stu-id="ca83a-103">Transactional Remote Function Calls (tRFCs) guarantee a one and only one time execution of an RFC on a SAP system.</span></span> <span data-ttu-id="ca83a-104">いずれかの側に表示される、Rfc を呼び出すことができます、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC として。</span><span class="sxs-lookup"><span data-stu-id="ca83a-104">You can invoke any of the RFCs surfaced by the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] as a tRFC.</span></span> <span data-ttu-id="ca83a-105">RFC の呼び出しと似ています、tRFC の呼び出し (を参照してください[呼び出しを使用して BizTalk Server での SAP Rfc](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-biztalk-server.md))、次の点が異なります。</span><span class="sxs-lookup"><span data-stu-id="ca83a-105">Invoking a tRFC is similar to invoking an RFC (see [Invoke RFCs in SAP by Using BizTalk Server](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-biztalk-server.md)) with the following differences:</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "手順 2: パブリックおよびプライベート証明書の作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: パブリックおよびプライベート証明書の作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, creating certificates
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - creating, certificates
 - private certificates
 ms.assetid: 0a925d89-03d9-41fe-907b-85a6ae42362a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967600"
 ---
 # <a name="step-2-creating-public-and-private-certificates"></a><span data-ttu-id="53db6-102">手順 2: パブリックおよびプライベート証明書の作成</span><span class="sxs-lookup"><span data-stu-id="53db6-102">Step 2: Creating Public and Private Certificates</span></span>
 <span data-ttu-id="53db6-103">この手順で作成した証明機関を使用する[手順 1: 証明機関 &#91; を作成します。RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)を使用して、Contoso と Fabrikam 組織パブリックおよびプライベート証明書を生成します。</span><span class="sxs-lookup"><span data-stu-id="53db6-103">In this step, you use the Certification Authority created in [Step 1: Creating a Certification Authority &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md) to generate the public and private certificates that the Contoso and Fabrikam organizations use.</span></span>  
@@ -101,7 +102,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="53db6-178">スタンドアロン スナップインの追加 ダイアログ ボックスで、選択、**証明書**スナップインから、**利用できるスタンドアロン スナップイン**一覧をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-178">In the Add Standalone Snap-in dialog box, select the **Certificates** snap-in from the **Available Standalone Snap-ins** list, and then click **Add**.</span></span>  
   
-5.  <span data-ttu-id="53db6-179">証明書スナップイン] ダイアログ ボックスで選択**[ユーザー アカウント**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-179">In the Certificates snap-in dialog box, select **My user account**, and then click **Next**.</span></span>  
+5.  <span data-ttu-id="53db6-179">証明書スナップイン] ダイアログ ボックスで選択 **[ユーザー アカウント**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-179">In the Certificates snap-in dialog box, select **My user account**, and then click **Next**.</span></span>  
   
 6.  <span data-ttu-id="53db6-180">コンピューターの選択] ダイアログ ボックス [**完了**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-180">In the Select Computer dialog box, click **Finish**.</span></span>  
   
@@ -119,7 +120,7 @@ ms.lasthandoff: 11/28/2017
   
 13. <span data-ttu-id="53db6-187">**エクスポート ファイルの形式**ことを確認 ページで、 **Personal Information Exchange**唯一のオプションを選択するは、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-187">On the **Export File Format** page, make sure that **Personal Information Exchange** is the only option selected, and then click **Next**.</span></span>  
   
-14. <span data-ttu-id="53db6-188">**パスワード**] ページの [、**パスワード**と**パスワードの確認**ボックスに「 **mysecret**、クリックしてして**[次へ]**.</span><span class="sxs-lookup"><span data-stu-id="53db6-188">On the **Password** page, in the **Password** and **Confirm Password** boxes, type **mysecret**, and then click **Next**.</span></span>  
+14. <span data-ttu-id="53db6-188">**パスワード**] ページの [、**パスワード**と**パスワードの確認**ボックスに「 **mysecret**、クリックしてして **[次へ]**.</span><span class="sxs-lookup"><span data-stu-id="53db6-188">On the **Password** page, in the **Password** and **Confirm Password** boxes, type **mysecret**, and then click **Next**.</span></span>  
   
 15. <span data-ttu-id="53db6-189">**ファイルにエクスポート**] ページで [**参照**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-189">On the **File To Export** page, click **Browse**.</span></span>  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="53db6-199">**証明書のエクスポート ウィザードへようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-199">On the **Welcome to the Certificate Export Wizard** page, click **Next**.</span></span>  
   
-4.  <span data-ttu-id="53db6-200">**秘密キーのエクスポート**] ページで、[**いいえ、秘密キーをエクスポートしません**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-200">On the **Export Private Key** page, select **No, do not export the private key**, and then click **Next**.</span></span>  
+4.  <span data-ttu-id="53db6-200">**秘密キーのエクスポート**] ページで、[**いいえ、秘密キーをエクスポートしません**、クリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="53db6-200">On the **Export Private Key** page, select **No, do not export the private key**, and then click **Next**.</span></span>  
   
 5.  <span data-ttu-id="53db6-201">**エクスポート ファイルの形式**] ページで [**次**です。</span><span class="sxs-lookup"><span data-stu-id="53db6-201">On the **Export File Format** page, click **Next**.</span></span>  
   

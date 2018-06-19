@@ -1,17 +1,17 @@
 ---
-title: "SAP にポートのバインド ファイルを使用して物理ポートのバインドの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP にポートのバインド ファイルを使用して物理ポートのバインドの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - port binding file
 - physical port binding, configuring using a port binding file
 ms.assetid: c637971c-3ecd-4026-8f74-bd5173774438
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217594"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-sap"></a><span data-ttu-id="0d498-102">SAP にポートのバインド ファイルを使用して物理ポートのバインドを構成します。</span><span class="sxs-lookup"><span data-stu-id="0d498-102">Configure a physical port binding using a port binding file to SAP</span></span>
 <span data-ttu-id="0d498-103">使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]スキーマ ファイル以外、SAP アイテムのメタデータを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]もポートのバインド ファイルを生成します。</span><span class="sxs-lookup"><span data-stu-id="0d498-103">When you use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to generate metadata for an SAP artifact, other than the schema files, the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] also generates a port binding file.</span></span> <span data-ttu-id="0d498-104">作成する物理送信ポートまたは受信ポートを BizTalk アプリケーションにこのバインド ファイルをインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="0d498-104">You can import this binding file into your BizTalk application to create a physical send or receive port.</span></span> <span data-ttu-id="0d498-105">[SAP アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)バインド ファイルをインポートする手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0d498-105">[Reuse SAP adapter bindings](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md) includes steps to import binding files.</span></span> <span data-ttu-id="0d498-106">このバインド ファイルをインポートする場合、手動で作成する物理送信ポートまたは受信ポートをするはありません。</span><span class="sxs-lookup"><span data-stu-id="0d498-106">If you import this binding file, you do not have to manually create a physical send or receive port.</span></span>  

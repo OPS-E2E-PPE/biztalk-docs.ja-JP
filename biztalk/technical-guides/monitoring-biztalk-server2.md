@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server2 の監視 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server2 の監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11c7181e-6281-44f2-ac63-69b705df5545
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298498"
 ---
 # <a name="monitoring-biztalk-server"></a><span data-ttu-id="2b177-102">BizTalk Server の監視</span><span class="sxs-lookup"><span data-stu-id="2b177-102">Monitoring BizTalk Server</span></span>
 <span data-ttu-id="2b177-103">このセクションでは、BizTalk アプリケーションとインフラストラクチャを監視するための必須タスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2b177-103">This section describes essential tasks for monitoring BizTalk applications and infrastructure.</span></span> <span data-ttu-id="2b177-104">監視[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を定期的と、BizTalk アプリケーションがアクセスできるようにすることができますを検索する問題の解決でします。</span><span class="sxs-lookup"><span data-stu-id="2b177-104">Monitoring [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on a regular basis and resolving any issues that you find helps to keep your BizTalk applications accessible.</span></span> <span data-ttu-id="2b177-105">監視の目的は、時間を最小限に抑えるために、問題が検出されないし、そのため、未解決のことです。</span><span class="sxs-lookup"><span data-stu-id="2b177-105">The goal of monitoring is to minimize the amount of time that an issue goes undetected and therefore, unresolved.</span></span> <span data-ttu-id="2b177-106">さらに、監視を使用して問題を引き起こす可能性のある状況を検出できます。</span><span class="sxs-lookup"><span data-stu-id="2b177-106">Additionally, you can use monitoring to help detect situations that might cause an issue.</span></span>  

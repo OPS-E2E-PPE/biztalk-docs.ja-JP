@@ -1,15 +1,15 @@
 ---
-title: "メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマを |Microsoft ドキュメント"
-description: "BizTalk Server 用 mySAP アダプターによって使用されるメッセージとデータ型の XML 構造"
-ms.custom: 
+title: メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマを |Microsoft ドキュメント
+description: BizTalk Server 用 mySAP アダプターによって使用されるメッセージとデータ型の XML 構造
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75ea5c27-8297-47bf-bcfd-503870349189
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216346"
 ---
 # <a name="messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite"></a><span data-ttu-id="4daed-103">メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="4daed-103">Messages and Message Schemas for BizTalk Adapter for mySAP Business Suite</span></span>
 

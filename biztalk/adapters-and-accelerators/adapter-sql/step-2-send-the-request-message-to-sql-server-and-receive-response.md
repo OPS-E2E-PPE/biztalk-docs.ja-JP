@@ -1,14 +1,14 @@
 ---
-title: "手順 2: SQL Server に要求メッセージを送信し、応答を受信 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: SQL Server に要求メッセージを送信し、応答を受信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 864d2174-d54b-4383-92bf-f6808a2a904b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224802"
 ---
 # <a name="step-2-send-the-request-message-to-sql-server-and-receive-response"></a><span data-ttu-id="5a8e7-102">手順 2: SQL Server に要求メッセージを送信し、応答を受信</span><span class="sxs-lookup"><span data-stu-id="5a8e7-102">Step 2: Send the Request Message to SQL Server and Receive Response</span></span>
 <span data-ttu-id="5a8e7-103">![手順 2 の 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span><span class="sxs-lookup"><span data-stu-id="5a8e7-103">![Step 2 of 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span></span>  
   
  <span data-ttu-id="5a8e7-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="5a8e7-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="5a8e7-105">**目標:**を実行する要求メッセージを送信するこの手順で、 **UPDATE_EMPLOYEE**ストアド プロシージャと、応答を受信します。</span><span class="sxs-lookup"><span data-stu-id="5a8e7-105">**Objective:** In this step, you send the request message to execute the **UPDATE_EMPLOYEE** stored procedure and receive the response.</span></span>  
+ <span data-ttu-id="5a8e7-105">**目標:** を実行する要求メッセージを送信するこの手順で、 **UPDATE_EMPLOYEE**ストアド プロシージャと、応答を受信します。</span><span class="sxs-lookup"><span data-stu-id="5a8e7-105">**Objective:** In this step, you send the request message to execute the **UPDATE_EMPLOYEE** stored procedure and receive the response.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="5a8e7-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="5a8e7-106">Prerequisites</span></span>  
  <span data-ttu-id="5a8e7-107">完了する必要があります[手順 1: UPDATE_EMPLOYEE ストアド プロシージャ用の要求メッセージを作成する](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-update-employee-stored-procedure.md)です。</span><span class="sxs-lookup"><span data-stu-id="5a8e7-107">You must have completed [Step 1: Create the Request Message for UPDATE_EMPLOYEE Stored Procedure](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-update-employee-stored-procedure.md).</span></span>  

@@ -11,7 +11,7 @@ helpviewer_keywords:
 - pipeline components [custom], examples
 - examples, pipeline components [custom]
 ms.assetid: 4eb26c38-5ece-42b0-a28e-73214df1dc41
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966760"
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a><span data-ttu-id="9f9f7-102">任意の XPath プロパティ ハンドラ (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="9f9f7-102">Arbitrary XPath Property Handler (BizTalk Server Sample)</span></span>
 <span data-ttu-id="9f9f7-103">任意の XPath プロパティ ハンドラー ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サンプル) では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信される XML ドキュメント上で特定のプロパティを昇格させるためのカスタム パイプライン コンポーネントを記述する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-103">The Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample) demonstrates how to write a custom pipeline component to promote specific properties on an XML document that is submitted to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="9f9f7-104">サンプルに含まれる機能を使用して、XPath 式を評価する通常、アセンブラ、および逆アセンブラの各カスタム コンポーネントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-104">You can use functionality contained in the sample to create custom regular, assembler, and disassembler components to evaluate XPath expressions.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
 7.  <span data-ttu-id="9f9f7-115">新しい PO ドキュメントは、\Output ディレクトリのファイルに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-115">The new PO document is written to a file in the \Output directory.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="9f9f7-116">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="9f9f7-116">Where to Find This Sample</span></span>  
- <span data-ttu-id="9f9f7-117">*\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9f9f7-117">*\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler</span></span>  
+ <span data-ttu-id="9f9f7-117">*\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9f9f7-117">*\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler</span></span>  
   
  <span data-ttu-id="9f9f7-118">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-118">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -84,13 +85,13 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="9f9f7-159">コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーにします。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-159">In a command window, change directories (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="9f9f7-160">*\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9f9f7-160">*\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler</span></span>  
+     <span data-ttu-id="9f9f7-160">*\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9f9f7-160">*\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler</span></span>  
   
 2.  <span data-ttu-id="9f9f7-161">ファイル Setup.bat では、次の操作を実行しますが、実行します。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-161">Run the file Setup.bat, which performs the following actions:</span></span>  
   
     -   <span data-ttu-id="9f9f7-162">任意の XPath プロパティ ハンドラ パイプライン コンポーネントをビルドします。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-162">Builds the Arbitrary XPath Property Handler pipeline component.</span></span>  
   
-    -   <span data-ttu-id="9f9f7-163">構築されたコピーのパイプライン コンポーネントを*\<インストール パス\>*\Pipeline Components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-163">Copies built pipeline component to the *\<Installation Path\>*\Pipeline Components directory.</span></span>  
+    -   <span data-ttu-id="9f9f7-163">構築されたコピーのパイプライン コンポーネントを*\<インストール パス\>* \Pipeline Components ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-163">Copies built pipeline component to the *\<Installation Path\>* \Pipeline Components directory.</span></span>  
   
     -   <span data-ttu-id="9f9f7-164">送信ポートおよび受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="9f9f7-164">Creates the send and receive ports.</span></span>  
   

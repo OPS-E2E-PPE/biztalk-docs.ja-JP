@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204490"
 ---
 # <a name="batch-schedule-tab"></a><span data-ttu-id="e61c2-102">[バッチ スケジュール] タブ</span><span class="sxs-lookup"><span data-stu-id="e61c2-102">Batch Schedule Tab</span></span>
 <span data-ttu-id="e61c2-103">使用する、**バッチ スケジュール** タブをアクティブ化、要求、または送信バッチを終了します。</span><span class="sxs-lookup"><span data-stu-id="e61c2-103">You use the **Batch Schedule** tab to activate, request, or terminate an outbound batch.</span></span> <span data-ttu-id="e61c2-104">送信バッチをアクティブ化する 2 つの手順で構成されています: 時間ベースの構成またはメッセージが条件とし、送信バッチ処理オーケストレーションの開始をカウントします。</span><span class="sxs-lookup"><span data-stu-id="e61c2-104">Activating an outbound batch consists of two steps: configuring time-based or message count criteria and then starting the outbound batching orchestration.</span></span>  

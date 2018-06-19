@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite アダプターで WCF サービス モデルの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite アダプターで WCF サービス モデルの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aeeac8a4-a4bc-4963-951c-0c806e232f1e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216450"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="defa7-102">Oracle E-business Suite アダプターで WCF サービス モデルの概要</span><span class="sxs-lookup"><span data-stu-id="defa7-102">Overview of the WCF service model with the Oracle E-Business Suite adapter</span></span>
 <span data-ttu-id="defa7-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]を WCF サービスとして、Oracle E-business Suite システムを公開します。</span><span class="sxs-lookup"><span data-stu-id="defa7-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] exposes an Oracle E-Business Suite system as a WCF service.</span></span> <span data-ttu-id="defa7-104">ストアド プロシージャを呼び出す例については、Oracle E-business Suite アイテムに対して操作を実行するには、さらに、Oracle E-business Suite で操作を実行すると、アダプターでの操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="defa7-104">To perform operations on Oracle E-Business Suite artifacts, for example to invoke a stored procedure, you invoke an operation on the adapter, which, in turn, performs the operation on the Oracle E-Business Suite.</span></span> <span data-ttu-id="defa7-105">コードは、アダプターによって提示される WCF サービスのクライアントとして機能します。</span><span class="sxs-lookup"><span data-stu-id="defa7-105">Your code acts as a client to the WCF service presented by the adapter.</span></span>  

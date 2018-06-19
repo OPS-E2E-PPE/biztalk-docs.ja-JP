@@ -1,14 +1,14 @@
 ---
-title: "手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e3e22ac-126b-46ec-a6dc-3421ad721392
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216194"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-in-oracle-database"></a><span data-ttu-id="a2454-102">手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更します。</span><span class="sxs-lookup"><span data-stu-id="a2454-102">Step 1: Modify the vPrev BizTalk Project in Oracle Database</span></span>
 <span data-ttu-id="a2454-103">![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span><span class="sxs-lookup"><span data-stu-id="a2454-103">![Step 1 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span></span>  
   
  <span data-ttu-id="a2454-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="a2454-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="a2454-105">**目標:**このステップで、次を変更する既存の vPrev BizTalk プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="a2454-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
+ <span data-ttu-id="a2454-105">**目標:** このステップで、次を変更する既存の vPrev BizTalk プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="a2454-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
   
 -   <span data-ttu-id="a2454-106">SCOTT に対する挿入操作のメタデータを生成します。WCF ベースを使用して顧客テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="a2454-106">Generate metadata for the Insert operation on the SCOTT.CUSTOMER table using the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
   
@@ -49,17 +50,17 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="a2454-126">BizTalk マッパーは、BizTalk プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="a2454-126">Add a BizTalk mapper to the BizTalk project.</span></span> <span data-ttu-id="a2454-127">BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="a2454-127">Right-click the BizTalk project, point to **Add**, and click **New Item**.</span></span>  
   
-         <span data-ttu-id="a2454-128">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-128">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="a2454-129">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-129">From the right pane, select **Map**.</span></span> <span data-ttu-id="a2454-130">など、マップの名前を指定**RequestMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-130">Specify a name for the map, such as **RequestMap.btm**.</span></span> <span data-ttu-id="a2454-131">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-131">Click **Add**.</span></span>  
+         <span data-ttu-id="a2454-128">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-128">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="a2454-129">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-129">From the right pane, select **Map**.</span></span> <span data-ttu-id="a2454-130">など、マップの名前を指定**RequestMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-130">Specify a name for the map, such as **RequestMap.btm**.</span></span> <span data-ttu-id="a2454-131">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-131">Click **Add**.</span></span>  
   
     2.  <span data-ttu-id="a2454-132">送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-132">From the Source Schema pane, click **Open Source Schema**.</span></span>  
   
-    3.  <span data-ttu-id="a2454-133">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの要求メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="a2454-133">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the request message for the vPrev Oracle database adapter.</span></span> <span data-ttu-id="a2454-134">このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-134">For this tutorial, select *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*.</span></span> <span data-ttu-id="a2454-135">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-135">Click **OK**.</span></span>  
+    3.  <span data-ttu-id="a2454-133">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの要求メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="a2454-133">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the request message for the vPrev Oracle database adapter.</span></span> <span data-ttu-id="a2454-134">このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-134">For this tutorial, select *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*.</span></span> <span data-ttu-id="a2454-135">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-135">Click **OK**.</span></span>  
   
     4.  <span data-ttu-id="a2454-136">**送信元スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-136">In the **Root Node for Source Schema** dialog box, select *Insert* and click **OK**.</span></span>  
   
     5.  <span data-ttu-id="a2454-137">送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-137">From the Destination Schema pane, click **Open Destination Schema**.</span></span>  
   
-    6.  <span data-ttu-id="a2454-138">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの要求メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="a2454-138">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the request message for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="a2454-139">このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-139">For this tutorial, select *Oracle_Migration.OracleDBBindingSchema*.</span></span> <span data-ttu-id="a2454-140">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-140">Click **OK**.</span></span>  
+    6.  <span data-ttu-id="a2454-138">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの要求メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="a2454-138">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the request message for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="a2454-139">このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-139">For this tutorial, select *Oracle_Migration.OracleDBBindingSchema*.</span></span> <span data-ttu-id="a2454-140">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-140">Click **OK**.</span></span>  
   
     7.  <span data-ttu-id="a2454-141">**ターゲット スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-141">In the **Root Node for Target Schema** dialog box, select *Insert* and click **OK**.</span></span>  
   
@@ -73,17 +74,17 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="a2454-146">BizTalk マッパーは、BizTalk プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="a2454-146">Add a BizTalk mapper to the BizTalk project.</span></span> <span data-ttu-id="a2454-147">BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="a2454-147">Right-click the BizTalk project, point to **Add**, and click **New Item**.</span></span>  
   
-         <span data-ttu-id="a2454-148">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-148">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="a2454-149">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-149">From the right pane, select **Map**.</span></span> <span data-ttu-id="a2454-150">など、マップの名前を指定**ResponseMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-150">Specify a name for the map, such as **ResponseMap.btm**.</span></span> <span data-ttu-id="a2454-151">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-151">Click **Add**.</span></span>  
+         <span data-ttu-id="a2454-148">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-148">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="a2454-149">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-149">From the right pane, select **Map**.</span></span> <span data-ttu-id="a2454-150">など、マップの名前を指定**ResponseMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-150">Specify a name for the map, such as **ResponseMap.btm**.</span></span> <span data-ttu-id="a2454-151">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-151">Click **Add**.</span></span>  
   
     2.  <span data-ttu-id="a2454-152">送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-152">From the Source Schema pane, click **Open Source Schema**.</span></span>  
   
-    3.  <span data-ttu-id="a2454-153">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="a2454-153">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="a2454-154">このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-154">For this tutorial, select *Oracle_Migration.OracleDBBindingSchema*.</span></span> <span data-ttu-id="a2454-155">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-155">Click **OK**.</span></span>  
+    3.  <span data-ttu-id="a2454-153">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="a2454-153">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="a2454-154">このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-154">For this tutorial, select *Oracle_Migration.OracleDBBindingSchema*.</span></span> <span data-ttu-id="a2454-155">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-155">Click **OK**.</span></span>  
   
     4.  <span data-ttu-id="a2454-156">**送信元スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-156">In the **Root Node for Source Schema** dialog box, select *InsertResponse* and click **OK**.</span></span>  
   
     5.  <span data-ttu-id="a2454-157">送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-157">From the Destination Schema pane, click **Open Destination Schema**.</span></span>  
   
-    6.  <span data-ttu-id="a2454-158">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの応答メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="a2454-158">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the vPrev Oracle database adapter.</span></span> <span data-ttu-id="a2454-159">このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-159">For this tutorial, select *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*.</span></span> <span data-ttu-id="a2454-160">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-160">Click **OK**.</span></span>  
+    6.  <span data-ttu-id="a2454-158">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの応答メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="a2454-158">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the vPrev Oracle database adapter.</span></span> <span data-ttu-id="a2454-159">このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="a2454-159">For this tutorial, select *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*.</span></span> <span data-ttu-id="a2454-160">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a2454-160">Click **OK**.</span></span>  
   
     7.  <span data-ttu-id="a2454-161">**ターゲット スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a2454-161">In the **Root Node for Target Schema** dialog box, select *InsertResponse*, and then click **OK**.</span></span>  
   

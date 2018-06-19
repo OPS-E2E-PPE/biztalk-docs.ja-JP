@@ -1,14 +1,14 @@
 ---
-title: "NLB クラスターで機能する BAM ポータルを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: NLB クラスターで機能する BAM ポータルを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96c04fde-dc12-42fb-9193-aa74819fe880
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969688"
 ---
 # <a name="how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster"></a><span data-ttu-id="b26b4-102">NLB クラスターで機能する BAM ポータルを構成する方法</span><span class="sxs-lookup"><span data-stu-id="b26b4-102">How to Configure the BAM Portal to Work on an NLB Cluster</span></span>
 <span data-ttu-id="b26b4-103">BAM ポータルは、ネットワーク負荷分散 (NLB) クラスターで機能するように構成できます。</span><span class="sxs-lookup"><span data-stu-id="b26b4-103">The BAM portal can be configured to work in a network load balancing (NLB) cluster.</span></span>  
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
 1.  <span data-ttu-id="b26b4-137">web.config ファイルを、クラスターに追加した各コンピューターの [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="b26b4-137">Copy the web.config file to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal folder on each additional computer in the cluster.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="b26b4-138">次の手順をすべての参照を**Program Files**フォルダーになります**%program Files (x86)** 64 ビット コンピューター用です。</span><span class="sxs-lookup"><span data-stu-id="b26b4-138">In the following steps all references to the **Program Files** folder will be **Program Files (x86)** for 64 bit computers.</span></span>  
+    >  <span data-ttu-id="b26b4-138">次の手順をすべての参照を**Program Files**フォルダーになります **%program Files (x86)** 64 ビット コンピューター用です。</span><span class="sxs-lookup"><span data-stu-id="b26b4-138">In the following steps all references to the **Program Files** folder will be **Program Files (x86)** for 64 bit computers.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="b26b4-139">仮想ディレクトリを作成するときには、その設定が 1 台目のコンピューターの BizTalk Server 構成で作成した 3 つの BAM 仮想ディレクトリの設定と正確に同じかどうかを確認してください。これにはまず、</span><span class="sxs-lookup"><span data-stu-id="b26b4-139">In the following steps, when you are creating the virtual directories, check to make sure they have the exact settings as the three BAM virtual directories created by the BizTalk Server Configuration on first computer.</span></span> <span data-ttu-id="b26b4-140">ファイル パス、ASP.NET のバージョン、ディレクトリのアクセス許可、およびアプリケーション プールを確認します。</span><span class="sxs-lookup"><span data-stu-id="b26b4-140">Confirm your file paths, the ASP.NET version, your directory permissions, and application pool.</span></span>  <span data-ttu-id="b26b4-141">次に、1 台目のコンピューターの設定で使用したドメイン サービス アカウントと同じアカウントを使用して、設定するコンピューターで BAMAppPool を実行します。</span><span class="sxs-lookup"><span data-stu-id="b26b4-141">Use the same domain service account to run the BAMAppPool on the computer you are setting up as you used when setting up the first computer.</span></span> <span data-ttu-id="b26b4-142">BAMAppPool がすべてのコンピューターで稼働することを確認します。</span><span class="sxs-lookup"><span data-stu-id="b26b4-142">Make sure the BAMAppPool is running on all of the computers.</span></span> <span data-ttu-id="b26b4-143">コピーする必要がある web.config ファイルは 2 つです。</span><span class="sxs-lookup"><span data-stu-id="b26b4-143">There are two web.config files you must copy.</span></span>  
